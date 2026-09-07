@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Jurisdictional Boundary
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:jurisdictional-boundary:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:48c95e429f3fce654d32ca65ae3c3d2ca04824221a2cba8faa191cea7d7d62ca"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Virtual World Governance]]",
-      "resolved": "urn:visionflow:linked:virtual-world-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Legal Framework]]",
-      "resolved": "urn:visionflow:owl:class:legal-framework",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Legal and regulatory demarcations applicable to metaverse and virtual world governance, addressing the complex challenge of determining which laws apply when virtual activities span multiple physical jurisdictions with no clear territorial boundaries.

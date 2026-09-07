@@ -1,39 +1,122 @@
----
-public: true
----
-
-# Initial Dex Offering
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:initial-dex-offering", "@type":"Page", "title":"Initial Dex Offering", "vc:slug":"initial-dex-offering", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:initial-dex-offering",
+  "@type": "Page",
+  "title": "Initial Dex Offering",
+  "vc:slug": "initial-dex-offering",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:initial-dex-offering",
-  "@type":"Class",
-  "label":"Initial Dex Offering",
-  "definition":"An initial DEX offering (IDO) is a token fundraising and distribution model in which a new token is launched directly on a decentralised exchange, with liquidity provided into an automated market maker pool so trading begins immediately. Unlike centralised or regulated offerings, an IDO is permissionless and settled on-chain through smart contracts, often using launchpads that manage allocation and anti-bot measures. It contrasts with the initial coin offering and the regulated initial public offering by emphasising immediate liquidity and decentralised access.",
-  "domain":"blockchain",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:token-sale","label":"Token Sale"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:token-sale","label":"Token Sale"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:initial-public-offering","label":"Initial Public Offering"},{"@id":"urn:ngm:class:initial-coin-offering","label":"Initial Coin Offering"}],
-    "uses":[{"@id":"urn:ngm:class:decentralized-exchange","label":"Decentralized Exchange"},{"@id":"urn:ngm:class:automated-market-maker","label":"Automated Market Maker"}],
-    "requires":[{"@id":"urn:ngm:class:liquidity-pool","label":"Liquidity Pool"},{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "dependsOn":[{"@id":"urn:ngm:class:liquidity-pool","label":"Liquidity Pool"}],
-    "enables":[{"@id":"urn:ngm:class:decentralized-finance","label":"Decentralized Finance"}],
-    "relatedTo":[{"@id":"urn:ngm:class:blockchain-token","label":"Blockchain Token"},{"@id":"urn:ngm:class:yield-farming","label":"Yield Farming"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:security-token-offering","label":"Security Token Offering"}],
-    "implements":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "supports":[{"@id":"urn:ngm:class:decentralized-finance","label":"Decentralized Finance"}],
-    "settledOn":[{"@id":"urn:ngm:class:decentralized-exchange","label":"Decentralized Exchange"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:initial-dex-offering",
+  "@type": "Class",
+  "label": "Initial Dex Offering",
+  "definition": "An initial DEX offering (IDO) is a token fundraising and distribution model in which a new token is launched directly on a decentralised exchange, with liquidity provided into an automated market maker pool so trading begins immediately. Unlike centralised or regulated offerings, an IDO is permissionless and settled on-chain through smart contracts, often using launchpads that manage allocation and anti-bot measures. It contrasts with the initial coin offering and the regulated initial public offering by emphasising immediate liquidity and decentralised access.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:token-sale",
+      "label": "Token Sale"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:token-sale",
+        "label": "Token Sale"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:initial-public-offering",
+        "label": "Initial Public Offering"
+      },
+      {
+        "@id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-token",
+        "label": "Blockchain Token"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "settledOn": [
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

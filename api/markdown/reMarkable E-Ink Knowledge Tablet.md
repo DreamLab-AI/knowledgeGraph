@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Remarkable]]
-# reMarkable E-Ink Knowledge Tablet
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[Remarkable]]
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}
+      {
+        "@id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      }
     ]
   },
   "quality": 0.5,
@@ -67,26 +76,6 @@ elevatedFrom:: [[Remarkable]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:remarkable:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:74e1d28ec12cf8b453d18fef5b786392ffdb30ec45740198054027e99a215888"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The reMarkable is an e-ink tablet designed for distraction-free writing, note-taking, and document annotation, running a Linux-based OS that supports SSH access and a rich open-source ecosystem. Its platform enables handwriting recognition, LaTeX generation, AI-assisted prompt workflows, and integration with knowledge management systems such as Obsidian. The device serves as a digital-analogue bridge for researchers and knowledge workers seeking pen-on-paper fidelity with machine-readable output.

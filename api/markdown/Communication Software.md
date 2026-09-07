@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Communication Software
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:communication-software:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a4041eae290f22e267fe8963c7d24579ea8c18f5b25f645bc9f4ad532a6e1d6e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Audio Visual Systems]]",
-      "resolved": "urn:visionflow:linked:audio-visual-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Collaboration]]",
-      "resolved": "urn:visionflow:linked:real-time-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Meetings]]",
-      "resolved": "urn:visionflow:linked:virtual-meetings",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Collaboration Technology]]",
-      "resolved": "urn:visionflow:owl:class:collaboration-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:network-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Remote Communication]]",
-      "resolved": "urn:visionflow:owl:class:remote-communication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[User Interface]]",
-      "resolved": "urn:visionflow:owl:class:user-interface",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software applications and platforms that enable real-time interaction, collaboration, and social connection within virtual environments and metaverse spaces, including immersive video conferencing, spatial audio, avatar-based communication, and AI-enhanced translation and transcription services that bridge physical and digital worlds.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Soft Fork
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -119,6 +115,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - A Soft Fork is a backward-compatible change to a blockchain's consensus rules in which the set of valid blocks is tightened so that newly produced blocks remain acceptable to non-upgraded nodes. Because old nodes still recognise the stricter blocks as valid, the network does not split provided a majority of hash power or stake enforces the new rules. Soft forks are commonly used to deploy protocol upgrades such as new script types without requiring every participant to update.
   - Related concepts: [[Hard Fork]] [[Consensus Mechanism]] [[Backward Compatibility]] [[Taproot]] [[Validation Rules]]

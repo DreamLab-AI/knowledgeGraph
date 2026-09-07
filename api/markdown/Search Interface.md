@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Search Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:search-interface:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b74a0f43c8a8a7b0644ae18b38785ae9d9e40142f051654b8a9fab0dd1c21278"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[User Query Experience]]",
-      "resolved": "urn:visionflow:linked:user-query-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[User Interface]]",
-      "resolved": "urn:visionflow:owl:class:user-interface",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - User-facing components that enable query input, result presentation, and navigation through search results in metaverse platforms, including text fields, voice input, spatial gestures, and augmented reality overlays for asset and experience discovery.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Congestion Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Sustainability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,62 +176,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-sustainability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:deb1a7d04069ee28f10a35943c23f30b5f2dfddc87c0b4852b79138ab5018dfe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Energy Optimisation]]",
-      "resolved": "urn:visionflow:linked:ai-energy-optimisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Carbon Credit]]",
-      "resolved": "urn:visionflow:linked:carbon-credit",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ESG Compliance]]",
-      "resolved": "urn:visionflow:linked:esg-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Green Finance]]",
-      "resolved": "urn:visionflow:linked:green-finance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof-of-Stake]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof-of-Work]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-work",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies. Proof-of-Stake networks like Ethereum post-Merge achieve 99.9% energy reduction versus Proof-of-Work, while protocols like Algorand have achieved carbon-negative status.

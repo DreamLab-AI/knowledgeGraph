@@ -1,8 +1,3 @@
----
-public: true
----
-
-# zero-knowledge machine learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,7 +60,6 @@ public: true
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Cryptographic techniques enabling verification that a machine learning model executed correctly on specific inputs without revealing model weights, training data, or private inputs. ZKML bridges zero-knowledge proofs and machine learning, allowing on-chain verification of off-chain AI inference with privacy guarantees.

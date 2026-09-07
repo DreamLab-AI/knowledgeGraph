@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Responsible AI Unconference]]
-# Open-Space Responsible AI Gathering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[Responsible AI Unconference]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
     ]
   },
   "quality": 0.35,
@@ -67,26 +76,6 @@ elevatedFrom:: [[Responsible AI Unconference]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:responsible-ai-unconference:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0d5bbc1cfd7b23e28e50d03ddb7c93c46a9063564d04d8b0413463cf87c931fc"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Responsible AI Unconference is a participant-driven gathering that applies open-space technology to surface and negotiate ethical, social, and governance concerns around artificial intelligence. Unlike traditional conferences, the agenda is set on the day by attendees, enabling communities—artists, technologists, marginalised groups, and policymakers—to co-author discussions on topics such as bias, child-centric AI, feminist design, and the boundaries of acceptable automation. The format foregrounds perspectives historically excluded from mainstream AI discourse.

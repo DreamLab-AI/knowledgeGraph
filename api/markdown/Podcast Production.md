@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Podcast Production
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Podcast production is the end-to-end process of creating episodic audio programmes, encompassing recording, editing, mixing, mastering, and distribution. AI tools increasingly automate transcription, voice synthesis, noise removal, and chaptering. It is a key application domain for speech and audio machine-learning systems.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:speech-and-voice", "label": "Speech and Voice"},
-      {"@id": "urn:ngm:class:music-and-audio", "label": "Music and Audio"}
+      {
+        "@id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      },
+      {
+        "@id": "urn:ngm:class:music-and-audio",
+        "label": "Music and Audio"
+      }
     ]
   },
   "quality": 0.72

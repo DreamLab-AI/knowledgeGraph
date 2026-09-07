@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Delivery Versus Payment
----
-
-# Delivery-Versus-Payment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,21 +20,44 @@ aliases:
   "definition": "Delivery-Versus-Payment (DvP) is a securities settlement mechanism that links the transfer of a financial instrument to the simultaneous transfer of payment, ensuring that delivery occurs if and only if payment occurs, thereby eliminating principal risk in securities transactions. It is the standard settlement model mandated or strongly encouraged by financial market infrastructures globally.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:payment-system", "label": "Payment System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:payment-system",
+      "label": "Payment System"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"}
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
-      {"@id": "urn:ngm:class:custody-infrastructure", "label": "Custody Infrastructure"}
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:custody-infrastructure",
+        "label": "Custody Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"}
+      {
+        "@id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      }
     ]
   },
   "quality": 0.8
@@ -62,4 +78,3 @@ aliases:
   - The tokenisation wave of 2022-2025 has placed DvP at the centre of digital securities architecture. Blockchain-based DvP can be achieved on a single shared ledger by encoding both the security token and the payment token (e.g. a wholesale CBDC or tokenised money market fund) as smart contract primitives that settle atomically. Projects such as Project Guardian (MAS), Regulated Liability Network (UK), and multiple central bank experiments have demonstrated viable on-chain DvP for tokenised government bonds, fund units, and foreign exchange.
 
   - By 2024-2025, regulatory pressure to shorten settlement cycles to T+1 (achieved in the US) and eventual T+0 ambitions in Europe are accelerating DvP infrastructure investment. The tension between DvP atomicity guarantees and the architectural requirements of cross-chain or cross-ledger settlement remains an active engineering challenge, with hash-time-locked contracts and trusted execution environments among the solutions under evaluation. IOSCO and BIS continue to issue guidance emphasising that DvP equivalence must be demonstrably achieved even in novel tokenised settlement environments.
-

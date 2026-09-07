@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Log Management
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

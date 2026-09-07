@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Domain Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A Domain Model is a conceptual representation of the entities, attributes, relationships, and rules of a particular problem domain, independent of any specific software implementation. It captures the shared vocabulary and structural constraints that stakeholders agree describe the domain, serving as a blueprint for data schemas, APIs, and system behaviour. Standardised domain models enable interoperability by giving distinct systems a common semantic reference.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:etsi-metaverse-domain-model", "label": "Etsi Metaverse Domain Model"}, {"@id": "urn:ngm:class:data-layer", "label": "Data Layer"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-model",
+        "label": "Etsi Metaverse Domain Model"
+      },
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
+    ]
   },
   "quality": 0.72
 }

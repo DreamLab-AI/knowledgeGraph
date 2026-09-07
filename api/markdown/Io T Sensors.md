@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - IoT Sensors
----
-
-# Io T Sensors
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -109,67 +102,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:io-t-sensors:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8c914dbc1871d42c40fe9f3e8bbc7d7e2f9f423a68e1ee0b16e04cb06c421982"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[5G Networks]]",
-      "resolved": "urn:visionflow:linked:5-g-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Industrial Automation]]",
-      "resolved": "urn:visionflow:linked:industrial-automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Internet of Things]]",
-      "resolved": "urn:visionflow:linked:internet-of-things",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Smart Cities]]",
-      "resolved": "urn:visionflow:linked:smart-cities",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Smart Manufacturing]]",
-      "resolved": "urn:visionflow:linked:smart-manufacturing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:owl:class:edge-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Predictive Maintenance]]",
-      "resolved": "urn:visionflow:owl:class:predictive-maintenance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - IoT Sensors are networked sensing devices that collect physical and environmental data (temperature, pressure, motion, humidity, vibration, etc.) and transmit it via internet protocols to edge or cloud systems for processing and analysis. Modern IoT sensors increasingly incorporate on-device AI/ML accelerators enabling local inference, predictive analytics, and autonomous decision-making without cloud dependency.

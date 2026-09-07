@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sablier
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sablier:e49ec5f68827",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:edcf10f89104bf3e687fcef214010248fb0349df863d268dfe31faa178712fd5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token Economics]]",
-      "resolved": "urn:visionflow:linked:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Ethereum protocol for token streaming that pays a recipient continuously over time by releasing funds from a smart contract at a defined rate.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optical Flow
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -158,4 +153,3 @@ public: true
   - Applications span autonomous vehicles (segmenting static background from moving objects), medical imaging (tracking cardiac wall motion), film post-production (motion vector extraction for re-timing and compositing), and video compression (where flow informs inter-frame prediction). In robotics, visual odometry systems use sparse optical flow to estimate camera ego-motion without external sensors. Video game engines have incorporated optical flow-based frame interpolation (DLSS Frame Generation, AMD FSR 3) to generate synthetic intermediate frames and increase perceived frame rates.
 
   - Between 2023 and 2025, optical flow has become a standard intermediate representation in generative video models such as Stable Video Diffusion and Sora, where consistent motion across frames is enforced using flow supervision or flow-warped attention. Event cameras — which detect per-pixel brightness changes asynchronously at microsecond resolution — have spurred a new class of event-based optical flow algorithms capable of handling extremely high-speed motion that frame-based cameras cannot capture. Integration of flow estimation into neural radiance field and 3D Gaussian Splatting pipelines has enabled dynamic scene reconstruction from monocular video.
-

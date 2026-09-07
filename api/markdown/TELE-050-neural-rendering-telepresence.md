@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-050-neural-rendering-telepresence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,42 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-050-neural-rendering-telepresence:9e4f2c28ac45",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3d638c0d5cb4356cfb197786e8539895312966917553cb76e4fb3bb5c6e07a6e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Neural Rendering]]",
-      "resolved": "urn:visionflow:linked:neural-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Novel View Synthesis]]",
-      "resolved": "urn:visionflow:linked:novel-view-synthesis",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:linked:telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Neural rendering for telepresence is the application of learned, image-synthesis models to reconstruct and display remote people and scenes with photorealistic appearance and free viewpoint control.

@@ -1,59 +1,108 @@
----
-public: true
----
-
-# Stakeholder Participation
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:stakeholder-participation", "@type":"Page", "title":"Stakeholder Participation", "vc:slug":"stakeholder-participation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:stakeholder-participation",
+  "@type": "Page",
+  "title": "Stakeholder Participation",
+  "vc:slug": "stakeholder-participation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:stakeholder-participation",
-  "@type":"Class",
-  "label":"Stakeholder Participation",
-  "definition":"Stakeholder participation is the structured involvement of affected and interested parties in the deliberation, design, and decision-making processes that govern a system, organisation, or protocol. It encompasses mechanisms for consultation, representation, and shared authority that aim to surface diverse interests and confer legitimacy on collective decisions. In governance contexts it is a precondition for accountable, inclusive, and durable outcomes.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:stakeholder-engagement-in-ai","label":"Stakeholder Engagement in AI"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:governance-process","label":"Governance Process"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:stakeholder-participation",
+  "@type": "Class",
+  "label": "Stakeholder Participation",
+  "definition": "Stakeholder participation is the structured involvement of affected and interested parties in the deliberation, design, and decision-making processes that govern a system, organisation, or protocol. It encompasses mechanisms for consultation, representation, and shared authority that aim to surface diverse interests and confer legitimacy on collective decisions. In governance contexts it is a precondition for accountable, inclusive, and durable outcomes.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:stakeholder-engagement-in-ai",
+      "label": "Stakeholder Engagement in AI"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-process",
+        "label": "Governance Process"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:public-consultation","label":"Public Consultation"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:public-consultation",
+        "label": "Public Consultation"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:legitimacy","label":"Legitimacy"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:multi-stakeholder-governance","label":"Multi-Stakeholder Governance"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:decentralised-governance","label":"Decentralised Governance"},
-      {"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:public-consultation","label":"Public Consultation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:public-consultation",
+        "label": "Public Consultation"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:multi-stakeholder-governance","label":"Multi-Stakeholder Governance"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:stakeholder-engagement-in-ai","label":"Stakeholder Engagement in AI"},
-      {"@id":"urn:ngm:class:governance","label":"Governance"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement-in-ai",
+        "label": "Stakeholder Engagement in AI"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:decentralised-governance","label":"Decentralised Governance"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:legitimacy","label":"Legitimacy"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

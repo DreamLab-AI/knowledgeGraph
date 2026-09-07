@@ -1,36 +1,100 @@
----
-public: true
----
-
-# Seed Phrase
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:seed-phrase", "@type":"Page", "title":"Seed Phrase", "vc:slug":"seed-phrase", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:seed-phrase",
+  "@type": "Page",
+  "title": "Seed Phrase",
+  "vc:slug": "seed-phrase",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:seed-phrase",
-  "@type":"Class",
-  "label":"Seed Phrase",
-  "definition":"A seed phrase, also called a recovery or mnemonic phrase, is an ordered list of words, typically twelve or twenty-four, that encodes the master secret from which a cryptocurrency wallet derives all of its private keys. Generated from random entropy and mapped to words via a standard wordlist, it provides a human-readable backup that can fully restore a wallet on any compatible device. Because anyone holding the phrase controls the funds, its secrecy and secure storage are paramount to self-custody.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:digital-wallet","label":"Digital Wallet"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:entropy","label":"Entropy"}],
-    "requires":[{"@id":"urn:ngm:class:cold-storage","label":"Cold Storage"}],
-    "uses":[{"@id":"urn:ngm:class:cryptographic-key","label":"Cryptographic Key"}],
-    "enables":[{"@id":"urn:ngm:class:self-custody","label":"Self-Custody"},{"@id":"urn:ngm:class:hierarchical-deterministic-wallet","label":"Hierarchical Deterministic Wallet"}],
-    "supports":[{"@id":"urn:ngm:class:private-key","label":"Private Key"},{"@id":"urn:ngm:class:cryptocurrency-wallet","label":"Cryptocurrency Wallet"}],
-    "dependsOn":[{"@id":"urn:ngm:class:key-management","label":"Key Management"}],
-    "partOf":[{"@id":"urn:ngm:class:digital-wallet","label":"Digital Wallet"}],
-    "relatedTo":[{"@id":"urn:ngm:class:security","label":"Security"},{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:seed-phrase",
+  "@type": "Class",
+  "label": "Seed Phrase",
+  "definition": "A seed phrase, also called a recovery or mnemonic phrase, is an ordered list of words, typically twelve or twenty-four, that encodes the master secret from which a cryptocurrency wallet derives all of its private keys. Generated from random entropy and mapped to words via a standard wordlist, it provides a human-readable backup that can fully restore a wallet on any compatible device. Because anyone holding the phrase controls the funds, its secrecy and secure storage are paramount to self-custody.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-wallet",
+      "label": "Digital Wallet"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -41,7 +105,7 @@ public: true
   - Because anyone holding the phrase controls the funds, it is the linchpin of [[Self-Custody]] and demands rigorous [[Security]].
 - ### Overview
   - Seed phrases replace the impossible task of memorising or safely copying raw binary keys with a sequence of ordinary words.
-  - Standardised wordlists assign each word a fixed index, and a checksum word guards against transcription errors.
+  - Standardised wordlists assign each word a fixed [private], and a checksum word guards against transcription errors.
   - The phrase seeds a [[Hierarchical Deterministic Wallet]], from which an entire tree of keys is generated, so one backup protects all accounts.
   - Whoever possesses the phrase can recreate the wallet on any compatible device, which is both its great convenience and its central risk.
 - ### Key aspects

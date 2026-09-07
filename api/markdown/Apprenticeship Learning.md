@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Apprenticeship Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Apprenticeship Learning",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:imitation-learning", "vc:label": "Imitation Learning"},
-    {"@id": "urn:visionflow:linked:inverse-reinforcement-learning", "vc:label": "Inverse Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:reward-function", "vc:label": "Reward Function"}
+    {
+      "@id": "urn:visionflow:linked:imitation-learning",
+      "vc:label": "Imitation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:inverse-reinforcement-learning",
+      "vc:label": "Inverse Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-function",
+      "vc:label": "Reward Function"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,11 +50,20 @@ public: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:inverse-reinforcement-learning", "label": "Inverse Reinforcement Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"}
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
     ]
   },
   "quality": 0.8,

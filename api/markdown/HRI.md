@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HRI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hri:8146b5037c5d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2309035946dcc416c6a381e3c474e3e1695d5652fdaa8c15a13a477c2272cc07"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[User Experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Control]]",
-      "resolved": "urn:visionflow:linked:robot-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Conversational AI]]",
-      "resolved": "urn:visionflow:linked:conversational-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://humanrobotinteraction.org]]",
-      "resolved": "urn:visionflow:linked:https-humanrobotinteraction-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Human%E2%80%93robot_interaction]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-human-e-2-80-93-robot-interaction",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Human-Robot Interaction is the study and design of how people and robots communicate and work together. It draws on robotics, psychology, and human-computer interaction.

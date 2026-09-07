@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Platform Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,37 +200,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:platform-governance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0b33afac44368d6232221994db194b02c5ccaa8b941cf5e2fb5b812e3b6d51a4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralised Decision-Making]]",
-      "resolved": "urn:visionflow:linked:decentralised-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders. It includes on-chain mechanisms such as token-weighted voting and smart contract-executed decisions, as well as off-chain processes including community discussions, improvement proposals, and delegated representation structures.

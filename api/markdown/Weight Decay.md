@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Weight Decay
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,17 +55,32 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:optimiser", "label": "Optimiser"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:dropout", "label": "Dropout"}
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:training", "label": "Training"}
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
     ]
   },
   "quality": 0.5,
@@ -81,32 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:weight-decay:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d9bf9a28806b7494691e8c19d9ecb6c1155224d25d74b3559b94b424800ab740"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.

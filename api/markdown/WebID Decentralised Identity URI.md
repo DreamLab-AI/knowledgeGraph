@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[webid]]
-# WebID Decentralised Identity URI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,52 +52,62 @@ elevatedFrom:: [[webid]]
   },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:solid", "label": "Solid"},
-      {"@id": "urn:ngm:class:solid-pod", "label": "Solid Pod"},
-      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid"
+      },
+      {
+        "@id": "urn:ngm:class:solid-pod",
+        "label": "Solid Pod"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:webid:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c1c3d346cfa4774f69aa539187bda2c5750f25efe935b98245219b389f881b1d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Solid]]",
-      "resolved": "urn:visionflow:owl:class:solid",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - webid is a concept within the ngm domain.

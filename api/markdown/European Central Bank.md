@@ -1,39 +1,118 @@
----
-public: true
----
-
-# European Central Bank
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:european-central-bank", "@type":"Page", "title":"European Central Bank", "vc:slug":"european-central-bank", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:european-central-bank",
+  "@type": "Page",
+  "title": "European Central Bank",
+  "vc:slug": "european-central-bank",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:european-central-bank",
-  "@type":"Class",
-  "label":"European Central Bank",
-  "definition":"The European Central Bank (ECB) is the central bank for the euro and the monetary authority of the euro area, responsible for setting monetary policy with a primary mandate of price stability. It administers the single currency, supervises significant banks under the Single Supervisory Mechanism, and manages the Eurosystem alongside national central banks. The ECB is also developing a potential digital euro as a central bank digital currency.",
-  "domain":"finance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:central-bank","label":"Central Bank"}],
-  "relations":{
-    "contrastsWith":[{"@id":"urn:ngm:class:bank-of-england","label":"Bank of England"}],
-    "dependsOn":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}],
-    "implements":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}],
-    "uses":[{"@id":"urn:ngm:class:interest-rate","label":"Interest Rate"},{"@id":"urn:ngm:class:quantitative-easing","label":"Quantitative Easing"}],
-    "supports":[{"@id":"urn:ngm:class:price-stability","label":"Price Stability"},{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}],
-    "enables":[{"@id":"urn:ngm:class:digital-euro","label":"Digital Euro"}],
-    "partOf":[{"@id":"urn:ngm:class:central-bank","label":"Central Bank"}],
-    "relatedTo":[{"@id":"urn:ngm:class:fiat-currency","label":"Fiat Currency"},{"@id":"urn:ngm:class:inflation","label":"Inflation"}],
-    "requires":[{"@id":"urn:ngm:class:open-market-operations","label":"Open Market Operations"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:digital-euro","label":"Digital Euro"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:european-central-bank",
+  "@type": "Class",
+  "label": "European Central Bank",
+  "definition": "The European Central Bank (ECB) is the central bank for the euro and the monetary authority of the euro area, responsible for setting monetary policy with a primary mandate of price stability. It administers the single currency, supervises significant banks under the Single Supervisory Mechanism, and manages the Eurosystem alongside national central banks. The ECB is also developing a potential digital euro as a central bank digital currency.",
+  "domain": "finance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:central-bank",
+      "label": "Central Bank"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-euro",
+        "label": "Digital Euro"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-euro",
+        "label": "Digital Euro"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

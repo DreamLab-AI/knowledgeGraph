@@ -1,60 +1,114 @@
----
-public: true
----
-
-# Data Ingestion
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-ingestion", "@type":"Page", "title":"Data Ingestion", "vc:slug":"data-ingestion", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-ingestion",
+  "@type": "Page",
+  "title": "Data Ingestion",
+  "vc:slug": "data-ingestion",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:data-ingestion",
-  "@type":"Class",
-  "label":"Data Ingestion",
-  "definition":"Data ingestion is the process of acquiring data from heterogeneous sources and moving it into a target store or processing system for downstream use. It covers batch and streaming acquisition, format normalisation, validation and routing, and forms the entry stage of data pipelines. In spatial-computing contexts ingestion handles sensor streams and captured geometry before reconstruction and analysis.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:data-collection","label":"Data Collection"},
-      {"@id":"urn:ngm:class:sensor-fusion","label":"Sensor Fusion"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-ingestion",
+  "@type": "Class",
+  "label": "Data Ingestion",
+  "definition": "Data ingestion is the process of acquiring data from heterogeneous sources and moving it into a target store or processing system for downstream use. It covers batch and streaming acquisition, format normalisation, validation and routing, and forms the entry stage of data pipelines. In spatial-computing contexts ingestion handles sensor streams and captured geometry before reconstruction and analysis.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-pipeline",
+      "label": "Data Pipeline"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:data-engineering","label":"Data Engineering"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:data-quality","label":"Data Quality"},
-      {"@id":"urn:ngm:class:schema","label":"Schema"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:training-data","label":"Training Data"},
-      {"@id":"urn:ngm:class:feature-engineering","label":"Feature Engineering"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:data-integrity","label":"Data Integrity"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ],
-    "feedsInto":[
-      {"@id":"urn:ngm:class:database","label":"Database"}
+    "feedsInto": [
+      {
+        "@id": "urn:ngm:class:database",
+        "label": "Database"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:caching","label":"Caching"},
-      {"@id":"urn:ngm:class:observability","label":"Observability"},
-      {"@id":"urn:ngm:class:scalability","label":"Scalability"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# grouped query attention
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,23 +34,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"},
-      {"@id": "urn:ngm:class:flash-attention", "label": "Flash Attention"}
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Grouped Query Attention (GQA) is a transformer attention variant that partitions the set of query heads into G groups, each group sharing a single pair of key and value heads, thereby interpolating between Multi-Head Attention (MHA, where each query head has its own KV head) and Multi-Query Attention (MQA, where all query heads share one KV head). GQA reduces the key-value cache memory footprint during autoregressive inference—proportionally to the number of groups—while preserving model quality closer to MHA than MQA. It has been adopted in production LLMs including Llama 2, Mistral, and Gemma.
@@ -77,7 +89,7 @@ public: true
 
   Grouped Query Attention addresses this by reducing KV heads from H to G (where 1 ≤ G < H). For G groups, each of the G key-value head pairs is shared across H/G query heads. The effective KV cache size shrinks by a factor of H/G, directly reducing memory bandwidth requirements at inference time and enabling larger effective batch sizes on fixed GPU memory budgets.
 
-  The technique was introduced alongside uptraining experiments showing that existing MHA checkpoints could be converted to GQA by mean-pooling the H key-value projections into G groups, recovering near-original quality at a fraction of the cache cost. Flash Attention complements GQA by optimising the SRAM access pattern during the attention kernel itself, whereas GQA reduces the total data volume that must be loaded. Together they are key inference efficiency techniques in production LLM serving.
+  The technique was introduced alongside uptraining experiments showing that existing MHA checkpoints [private] be converted to GQA by mean-pooling the H key-value projections into G groups, recovering near-original quality at a fraction of the cache cost. Flash Attention complements GQA by optimising the SRAM access pattern during the attention kernel itself, whereas GQA reduces the total data volume that must be loaded. Together they are key inference efficiency techniques in production LLM serving.
 
   Speculative Decoding benefits from GQA because the draft model's KV cache is smaller, reducing memory pressure when running both draft and target models simultaneously. GQA is now standard in publicly released LLM families and is typically specified as a hyperparameter (number of KV heads) in model architecture cards.
 

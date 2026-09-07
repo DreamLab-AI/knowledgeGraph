@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ontology Definition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,17 +71,38 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:metaverse-ontology", "label": "Metaverse Ontology"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ]
   },
   "provenance": {
@@ -96,57 +112,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ontology-definition:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:799edfcb329741de2a3e2cb483c830eba5fe0a38c4458b5b57d972aa17380a3f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[InteroperabilityProtocol|interoperability]]",
-      "resolved": "urn:visionflow:linked:interoperability-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[JSON-LD]]",
-      "resolved": "urn:visionflow:linked:json-ld",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OWL]]",
-      "resolved": "urn:visionflow:linked:owl",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RDF]]",
-      "resolved": "urn:visionflow:linked:rdf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse|metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks (OWL, RDF, JSON-LD), defining entities through orthogonal dimensions (physicality, role) enabling semantic interoperability and automated classification across platforms—foundational for governance, identity, and asset management standardisation.
@@ -205,7 +170,7 @@ public: true
 
   1. Al-Jarrah, O., Al-Debei, M., & Al-Jarrah, A. (2022). MetaOntology: Toward developing an ontology for the metaverse. *Frontiers in Big Data*, 5, 998648. https://doi.org/10.3389/fdata.2022.998648
 
-  2. Johnson, M., & Patel, R. (2025). Metaverse Science, Society and Law. *SciFormat Publishing*, Vol. 1, Issue 1. https://sciformat.ca/journals/index.php/mssl/article/view/19
+  2. Johnson, M., & Patel, R. (2025). Metaverse Science, Society and Law. *SciFormat Publishing*, Vol. 1, Issue 1. https://sciformat.ca/journals/[private].php/mssl/article/view/19
 
   3. Smith, L., Chen, Y., & Kumar, S. (2025). Metaverse technology tree: a holistic view. *Frontiers in Artificial Intelligence*, 8, 1545144. https://doi.org/10.3389/frai.2025.1545144
 

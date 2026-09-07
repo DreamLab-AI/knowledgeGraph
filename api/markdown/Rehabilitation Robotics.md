@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rehabilitation Robotics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Rehabilitation robotics is the field of robotic devices that assist therapy and recovery of motor function, including exoskeletons, end-effector trainers, and assistive manipulators. These systems deliver repeatable, intensity-controlled movement while measuring patient progress, and rely on compliant, force-controlled actuation to interact safely with the body. They aim to improve outcomes and scale access to physical therapy.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:pneumatic-actuator", "label": "Pneumatic Actuator"}
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      }
     ]
   },
   "quality": 0.72

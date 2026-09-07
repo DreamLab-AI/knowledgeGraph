@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Asset Tokenization
-  - asset-tokenization
----
-
-# asset tokenisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

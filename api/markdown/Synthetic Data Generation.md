@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Synthetic Data Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,37 +186,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:synthetic-data-generation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4495cb964a1e9fc9845ed986159fd7e3f4f90205d94c66fbc18735a0598d5363"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - 0422 Synthetic Data Generation is a concept within the ai domain.

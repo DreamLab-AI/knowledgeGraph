@@ -1,9 +1,3 @@
----
-public: true
-aliases:
-  - AI Technique
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -40,24 +34,65 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"},
-      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ]
   },
   "qualityScore": 0.8,
   "maturity": "established"
 }
 ```
+
+

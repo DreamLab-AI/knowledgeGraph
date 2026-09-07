@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Strategic Bitcoin Reserve
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A strategic Bitcoin reserve is a holding of bitcoin maintained by a state, corporation, or institution as a long-term store of value and hedge against fiat debasement, analogous to gold or foreign-currency reserves. Proponents argue that bitcoin's fixed supply and censorship resistance make it a credible reserve asset, while critics cite volatility and custody risk. The concept gained prominence as governments and large treasuries began formal accumulation programmes.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution", "label": "Bitcoin Distribution"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution",
+        "label": "Bitcoin Distribution"
+      }
     ]
   },
   "quality": 0.72

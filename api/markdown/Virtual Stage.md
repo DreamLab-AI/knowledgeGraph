@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Stage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,23 +55,50 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:vr-rendering-engine", "label": "VR Rendering Engine"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:vr-rendering-engine",
+        "label": "VR Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-production-volume", "label": "Virtual Production Volume"},
-      {"@id": "urn:ngm:class:virtual-camera", "label": "Virtual Camera"}
+      {
+        "@id": "urn:ngm:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-camera",
+        "label": "Virtual Camera"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
-      {"@id": "urn:ngm:class:virtual-production-pipeline", "label": "Virtual Production Pipeline"}
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-pipeline",
+        "label": "Virtual Production Pipeline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:production-facility", "label": "Production Facility"}
+      {
+        "@id": "urn:ngm:class:production-facility",
+        "label": "Production Facility"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-stage:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a233cdff4f17fd339f47042a8bc58be0cb43bd2dd354370882f9f915ca9c794f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Production Facility]]",
-      "resolved": "urn:visionflow:owl:class:production-facility",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A production environment surrounded by LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects for film, television, and broadcast production where digital backgrounds react to camera movement and can be manipulated during live filming.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Bridge Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "An Open Bridge Standard is a publicly specified protocol for transferring assets and messages between independent blockchains in an interoperable, vendor-neutral way. It defines common formats for lock/mint, burn/release, and message-passing operations so that distinct bridge implementations can interoperate and be audited against shared security assumptions. Such standards aim to reduce fragmentation and the systemic risk associated with bespoke cross-chain bridges.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
     ]
   },
   "quality": 0.72

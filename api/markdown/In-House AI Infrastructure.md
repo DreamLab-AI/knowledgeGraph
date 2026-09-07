@@ -1,8 +1,3 @@
----
-public: true
----
-
-# In-House AI Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "in-house-ai-infrastructure",
   "title": "In-House AI Infrastructure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["API Deprecation", "Open-Source AI Adoption"],
+  "vc:outboundWikilinks": [
+    "API Deprecation",
+    "Open-Source AI Adoption"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hugging-face", "label": "Hugging Face"}, {"@id": "urn:ngm:class:open-source", "label": "Open Source"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

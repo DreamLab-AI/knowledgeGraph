@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Keccak-256
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,18 +78,42 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:collision-resistance", "label": "Collision Resistance"},
-      {"@id": "urn:ngm:class:preimage-resistance", "label": "Preimage Resistance"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:collision-resistance",
+        "label": "Collision Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:preimage-resistance",
+        "label": "Preimage Resistance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}
+      {
+        "@id": "urn:ngm:class:bc-cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
     ]
   },
   "quality": 0.8,
@@ -105,62 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:keccak-256:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7a2db9796039558eeef54e47740ce49c175c859431b5d129b54886bff776142f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicPrimitive]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - SHA-3 hash function variant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

@@ -1,37 +1,106 @@
----
-public: true
----
-
-# Integer Programming
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:integer-programming", "@type":"Page", "title":"Integer Programming", "vc:slug":"integer-programming", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:integer-programming",
+  "@type": "Page",
+  "title": "Integer Programming",
+  "vc:slug": "integer-programming",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:integer-programming",
-  "@type":"Class",
-  "label":"Integer Programming",
-  "definition":"Integer programming is a class of mathematical optimisation in which some or all decision variables are constrained to take integer values, while the objective and constraints are typically linear. The integrality requirement makes these problems NP-hard in general, yet it lets them model discrete decisions such as selection, assignment, and sequencing exactly. Solvers combine the linear-programming relaxation with branch-and-bound and cutting-plane techniques to find provably optimal solutions.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:combinatorial-optimisation","label":"Combinatorial Optimisation"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:linear-programming","label":"Linear Programming"},{"@id":"urn:ngm:class:constraint-satisfaction","label":"Constraint Satisfaction"}],
-    "relatedTo":[{"@id":"urn:ngm:class:convex-optimisation","label":"Convex Optimisation"},{"@id":"urn:ngm:class:operations-research","label":"Operations Research"},{"@id":"urn:ngm:class:algorithm","label":"Algorithm"}],
-    "requires":[{"@id":"urn:ngm:class:algorithm","label":"Algorithm"}],
-    "partOf":[{"@id":"urn:ngm:class:combinatorial-optimisation","label":"Combinatorial Optimisation"}],
-    "implements":[{"@id":"urn:ngm:class:linear-programming","label":"Linear Programming"}],
-    "enables":[{"@id":"urn:ngm:class:operations-research","label":"Operations Research"}],
-    "supports":[{"@id":"urn:ngm:class:operations-research","label":"Operations Research"}],
-    "dependsOn":[{"@id":"urn:ngm:class:linear-programming","label":"Linear Programming"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:convex-optimisation","label":"Convex Optimisation"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:integer-programming",
+  "@type": "Class",
+  "label": "Integer Programming",
+  "definition": "Integer programming is a class of mathematical optimisation in which some or all decision variables are constrained to take integer values, while the objective and constraints are typically linear. The integrality requirement makes these problems NP-hard in general, yet it lets them model discrete decisions such as selection, assignment, and sequencing exactly. Solvers combine the linear-programming relaxation with branch-and-bound and cutting-plane techniques to find provably optimal solutions.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

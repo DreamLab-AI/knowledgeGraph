@@ -1,37 +1,118 @@
----
-public: true
----
-
-# Triangulation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:triangulation", "@type":"Page", "title":"Triangulation", "vc:slug":"triangulation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:triangulation",
+  "@type": "Page",
+  "title": "Triangulation",
+  "vc:slug": "triangulation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:triangulation",
-  "@type":"Class",
-  "label":"Triangulation",
-  "definition":"Triangulation is the process of determining the 3D position of a point by intersecting lines of sight from two or more known viewpoints. Given calibrated cameras and corresponding image observations, it recovers depth and structure by solving for the point that best explains the rays. Triangulation is a core operation in stereo vision, photogrammetry, structure-from-motion, and positioning systems.",
-  "domain":"spatial-computing",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:epipolar-geometry","label":"Epipolar Geometry"},{"@id":"urn:ngm:class:feature-matching","label":"Feature Matching"}],
-    "requires":[{"@id":"urn:ngm:class:camera-calibration","label":"Camera Calibration"}],
-    "implements":[{"@id":"urn:ngm:class:projective-geometry","label":"Projective Geometry"}],
-    "hasPart":[{"@id":"urn:ngm:class:bundle-adjustment","label":"Bundle Adjustment"}],
-    "enables":[{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"},{"@id":"urn:ngm:class:3d-mapping","label":"3D Mapping"}],
-    "supports":[{"@id":"urn:ngm:class:stereo-vision","label":"Stereo Vision"},{"@id":"urn:ngm:class:photogrammetry","label":"Photogrammetry"},{"@id":"urn:ngm:class:slam","label":"SLAM"}],
-    "dependsOn":[{"@id":"urn:ngm:class:depth-sensing","label":"Depth Sensing"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:gps","label":"GPS"}],
-    "relatedTo":[{"@id":"urn:ngm:class:structured-light","label":"Structured Light"},{"@id":"urn:ngm:class:lidar","label":"LiDAR"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:triangulation",
+  "@type": "Class",
+  "label": "Triangulation",
+  "definition": "Triangulation is the process of determining the 3D position of a point by intersecting lines of sight from two or more known viewpoints. Given calibrated cameras and corresponding image observations, it recovers depth and structure by solving for the point that best explains the rays. Triangulation is a core operation in stereo vision, photogrammetry, structure-from-motion, and positioning systems.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:projective-geometry",
+        "label": "Projective Geometry"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:3d-mapping",
+        "label": "3D Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "GPS"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

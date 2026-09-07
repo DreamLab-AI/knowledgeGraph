@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Graph Representation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Graph representation is the encoding of a problem domain as a set of nodes (vertices) connected by edges, capturing entities and the relationships between them. It enables algorithmic reasoning over connectivity, distance, and structure, and underpins pathfinding, routing, and topological analysis. Common concrete forms include adjacency matrices, adjacency lists, and edge lists.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-data-structure", "label": "Distributed Data Structure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:topological-map", "label": "Topological Map"},
-      {"@id": "urn:ngm:class:dijkstra-algorithm", "label": "Dijkstra Algorithm"}
+      {
+        "@id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      },
+      {
+        "@id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Historical Research
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Historical research is the systematic investigation of past events, peoples, and material culture through the examination of primary and secondary sources. In digital contexts it increasingly draws on digitised archives, 3D reconstructions, and computational analysis to interpret and present the past. It provides the evidentiary and interpretive basis for cultural heritage applications such as site reconstruction and virtual museums.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-archive", "label": "Digital Archive"},
-      {"@id": "urn:ngm:class:archaeological-site-reconstruction", "label": "Archaeological Site Reconstruction"}
+      {
+        "@id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      },
+      {
+        "@id": "urn:ngm:class:archaeological-site-reconstruction",
+        "label": "Archaeological Site Reconstruction"
+      }
     ]
   },
   "quality": 0.72

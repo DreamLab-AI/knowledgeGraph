@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Inference Costs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-inference-costs",
   "title": "AI Inference Costs",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Enterprise AI Budgets", "Goldman Sachs"],
+  "vc:outboundWikilinks": [
+    "Enterprise AI Budgets",
+    "Goldman Sachs"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-inference",
+      "label": "AI Inference"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"}, {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"}, {"@id": "urn:ngm:class:mlops", "label": "MLOps"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

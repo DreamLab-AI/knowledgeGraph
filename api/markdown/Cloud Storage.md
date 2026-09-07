@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cloud Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,7 +191,7 @@ public: true
 
 - ### Applications / Use Cases
   - **[[Machine Learning]] dataset storage** — training corpora, feature stores, and model artefact repositories are commonly held in object storage, accessed by distributed training jobs across ephemeral compute clusters.
-  - **[[Vector Database]] backing store** — embedding vectors and index snapshots are checkpointed to object storage for durability and portability; services such as Pinecone and Weaviate use S3-compatible backends.
+  - **[[Vector Database]] backing store** — embedding vectors and [private] snapshots are checkpointed to object storage for durability and portability; services such as Pinecone and Weaviate use S3-compatible backends.
   - **Static web asset hosting** — S3/GCS buckets with public access or CDN fronting serve HTML, CSS, JavaScript, images, and video for web applications at low marginal cost.
   - **[[Backup and Recovery]]** — databases, virtual machine snapshots, and configuration state are archived to cloud storage, often with immutability (object lock) to protect against ransomware.
   - **[[Data Lake]] construction** — organisations centralise structured and unstructured data in object storage before querying via engines such as Apache Spark, AWS Athena, or Google BigQuery.

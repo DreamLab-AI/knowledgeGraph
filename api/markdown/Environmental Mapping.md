@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environmental Mapping
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,20 +21,41 @@ public: true
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:mapping", "label": "Mapping"}
+    {
+      "@id": "urn:ngm:class:mapping",
+      "label": "Mapping"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"},
-      {"@id": "urn:ngm:class:localisation", "label": "Localization"}
+      {
+        "@id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      }
     ]
   },
   "quality": 0.8

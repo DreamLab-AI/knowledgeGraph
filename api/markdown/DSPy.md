@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DSPy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,43 +7,154 @@ public: true
   "title": "DSPy",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:llm-application-framework", "vc:label": "LLM Application Framework"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:automatic-prompt-optimisation", "vc:label": "Automatic Prompt Optimisation"},
-    {"@id": "urn:visionflow:linked:llm-orchestration", "vc:label": "LLM Orchestration"},
-    {"@id": "urn:visionflow:linked:chain-of-thought-prompting", "vc:label": "Chain-of-Thought Prompting"},
-    {"@id": "urn:visionflow:linked:llm-agents", "vc:label": "LLM Agents"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval Augmented Generation"},
-    {"@id": "urn:visionflow:linked:few-shot-prompting", "vc:label": "Few-Shot Prompting"},
-    {"@id": "urn:visionflow:linked:in-context-learning", "vc:label": "In-Context Learning"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:bayesian-optimisation", "vc:label": "Bayesian Optimisation"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:training-and-fine-tuning", "vc:label": "Training and Fine Tuning"},
-    {"@id": "urn:visionflow:linked:instruction-following", "vc:label": "Instruction Following"},
-    {"@id": "urn:visionflow:linked:model-optimisation", "vc:label": "Model Optimisation and Performance"},
-    {"@id": "urn:visionflow:linked:hallucination", "vc:label": "Hallucination"},
-    {"@id": "urn:visionflow:linked:evaluation-benchmarks", "vc:label": "Evaluation Benchmarks and Leaderboards"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:ai-agents", "vc:label": "AI Agents"},
-    {"@id": "urn:visionflow:linked:langchain", "vc:label": "LangChain"},
-    {"@id": "urn:visionflow:linked:zero-shot-prompting", "vc:label": "Zero-Shot Prompting"},
-    {"@id": "urn:visionflow:linked:multi-step-reasoning", "vc:label": "Multi-Step Reasoning"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:code-generation", "vc:label": "Code Generation"},
-    {"@id": "urn:visionflow:linked:structured-output", "vc:label": "Structured Output"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:stanford-nlp-group", "vc:label": "Stanford NLP Group"},
-    {"@id": "urn:visionflow:linked:reasoning", "vc:label": "Reasoning"},
-    {"@id": "urn:visionflow:linked:ai-framework", "vc:label": "AI Framework"},
-    {"@id": "urn:visionflow:linked:meta-learning", "vc:label": "Meta-Learning"},
-    {"@id": "urn:visionflow:linked:self-consistency", "vc:label": "Self-Consistency"},
-    {"@id": "urn:visionflow:linked:re-act", "vc:label": "ReAct"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"}
+    {
+      "@id": "urn:visionflow:linked:llm-application-framework",
+      "vc:label": "LLM Application Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic-prompt-optimisation",
+      "vc:label": "Automatic Prompt Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-orchestration",
+      "vc:label": "LLM Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought-prompting",
+      "vc:label": "Chain-of-Thought Prompting"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-agents",
+      "vc:label": "LLM Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:few-shot-prompting",
+      "vc:label": "Few-Shot Prompting"
+    },
+    {
+      "@id": "urn:visionflow:linked:in-context-learning",
+      "vc:label": "In-Context Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-optimisation",
+      "vc:label": "Bayesian Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-and-fine-tuning",
+      "vc:label": "Training and Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:instruction-following",
+      "vc:label": "Instruction Following"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-optimisation",
+      "vc:label": "Model Optimisation and Performance"
+    },
+    {
+      "@id": "urn:visionflow:linked:hallucination",
+      "vc:label": "Hallucination"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-benchmarks",
+      "vc:label": "Evaluation Benchmarks and Leaderboards"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agents",
+      "vc:label": "AI Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:langchain",
+      "vc:label": "LangChain"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-shot-prompting",
+      "vc:label": "Zero-Shot Prompting"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-step-reasoning",
+      "vc:label": "Multi-Step Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:structured-output",
+      "vc:label": "Structured Output"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:stanford-nlp-group",
+      "vc:label": "Stanford NLP Group"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-framework",
+      "vc:label": "AI Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-learning",
+      "vc:label": "Meta-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-consistency",
+      "vc:label": "Self-Consistency"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act",
+      "vc:label": "ReAct"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -64,36 +170,90 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:llm-application-framework", "label": "LLM Application Framework"},
-    {"@id": "urn:ngm:class:automatic-prompt-optimisation", "label": "Automatic Prompt Optimisation"}
+    {
+      "@id": "urn:ngm:class:llm-application-framework",
+      "label": "LLM Application Framework"
+    },
+    {
+      "@id": "urn:ngm:class:automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few-Shot Prompting"},
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:llm-orchestration", "label": "LLM Orchestration"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval Augmented Generation"},
-      {"@id": "urn:ngm:class:multi-step-reasoning", "label": "Multi-Step Reasoning"},
-      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
-      {"@id": "urn:ngm:class:structured-output", "label": "Structured Output"}
+      {
+        "@id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:automatic-prompt-optimisation", "label": "Automatic Prompt Optimisation"}
+      {
+        "@id": "urn:ngm:class:automatic-prompt-optimisation",
+        "label": "Automatic Prompt Optimisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
-      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"},
-      {"@id": "urn:ngm:class:lang-chain", "label": "LangChain"},
-      {"@id": "urn:ngm:class:hallucination", "label": "Hallucination"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:lang-chain",
+        "label": "LangChain"
+      },
+      {
+        "@id": "urn:ngm:class:hallucination",
+        "label": "Hallucination"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -413,7 +573,7 @@ public: true
 
   **Classical Agent Architectures and DSPy**: Classical cognitive architectures (ACT-R, SOAR) formalised memory, perception, and action as distinct computational modules with well-defined interfaces. Modern [[AI Agents]] built on [[Large Language Models]] face the same architectural challenge but in a natural-language substrate. DSPy's module abstraction provides a partial answer: each module is a cognitive subcomponent with a declared input-output contract (Signature), and the composed program is the agent's cognitive architecture. The optimiser tunes the prompts governing each subcomponent to maximise a behavioural metric — an approach analogous to parameterising the connection weights in a neural cognitive architecture.
 
-  **Memory Integration in DSPy Agents**: [[AI Agents]] require multiple types of memory: working memory (the current context window, bounded by [[Context Window]] limits), episodic memory (records of past interactions, storable in vector databases and retrievable via `dspy.Retrieve`), and semantic memory (factual knowledge, accessible via [[Retrieval Augmented Generation]] or tool calls). DSPy's `dspy.ReAct` module implicitly implements a working memory through the accumulated Thought/Observation history in the current context. Episodic memory integration requires explicit `dspy.Retrieve` modules backed by vector stores that index past interaction embeddings. The optimiser can tune the retrieval query strategy — which aspects of the current question to use as retrieval keys — as part of the compilation process.
+  **Memory Integration in DSPy Agents**: [[AI Agents]] require multiple types of memory: working memory (the current context window, bounded by [[Context Window]] limits), episodic memory (records of past interactions, storable in vector databases and retrievable via `dspy.Retrieve`), and semantic memory (factual knowledge, accessible via [[Retrieval Augmented Generation]] or tool calls). DSPy's `dspy.ReAct` module implicitly implements a working memory through the accumulated Thought/Observation history in the current context. Episodic memory integration requires explicit `dspy.Retrieve` modules backed by vector stores that [private] past interaction embeddings. The optimiser can tune the retrieval query strategy — which aspects of the current question to use as retrieval keys — as part of the compilation process.
 
   **Multi-Agent Coordination with DSPy**: Complex tasks that exceed the capability of single-agent pipelines require multi-agent coordination. DSPy programs can serve as individual agents in a multi-agent system, with inter-agent communication mediated by [[Structured Output]] Pydantic models passed between agents. The ICLR 2026 compound AI systems paper explicitly addresses multi-agent compilation — optimising the prompts of multiple cooperating agents jointly against a shared task metric. This represents the frontier of DSPy's compilation paradigm: extending systematic optimisation from single-agent pipelines to multi-agent workflows where interaction patterns between agents are themselves optimisable.
 

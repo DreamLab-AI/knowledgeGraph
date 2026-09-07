@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Litecoin
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,57 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:litecoin:6ce9fe4549f0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3ba246d777e25966e24e5134132627df72cfbe4b196524e2ca8613b1aed2647d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Proof of Work]]",
-      "resolved": "urn:visionflow:linked:proof-of-work",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scrypt]]",
-      "resolved": "urn:visionflow:linked:scrypt",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Payments]]",
-      "resolved": "urn:visionflow:linked:digital-payments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Lightning Network]]",
-      "resolved": "urn:visionflow:linked:bitcoin-lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Litecoin is a peer-to-peer cryptocurrency created in 2011 by Charlie Lee as an early fork of the Bitcoin codebase. It was designed for faster confirmation, using a target block time of around 2.5 minutes, and it uses the Scrypt hashing algorithm for proof-of-work in place of Bitcoin's SHA-256. It is often described as a lighter complement to Bitcoin and has served as a testing ground for protocol changes such as Segregated Witness.

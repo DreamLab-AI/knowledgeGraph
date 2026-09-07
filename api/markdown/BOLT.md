@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BOLT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,62 +191,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bolt:d0b3cba71f72",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b9a874c8f94e3d269227e1c269ed1816e24edfe9226c0a43af1cdc13e713e0e9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Lightning]]",
-      "resolved": "urn:visionflow:linked:lightning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BOLT11]]",
-      "resolved": "urn:visionflow:linked:bolt-11",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BOLT12]]",
-      "resolved": "urn:visionflow:linked:bolt-12",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Payment Channel]]",
-      "resolved": "urn:visionflow:linked:payment-channel",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:linked:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://github.com/lightning/bolts]]",
-      "resolved": "urn:visionflow:linked:https-github-com-lightning-bolts",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://github.com/lightning/bolts/blob/master/00-introduction.md]]",
-      "resolved": "urn:visionflow:linked:https-github-com-lightning-bolts-blob-master-00-introduction-md",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - BOLT, the Basis of Lightning Technology, is the set of specifications that define how Lightning Network implementations interoperate. The documents cover channels, routing, and messaging.

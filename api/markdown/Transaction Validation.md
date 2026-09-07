@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transaction Validation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,57 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transaction-validation:189763f3f148",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:905f3743b7932010b162d4a5e9afa0b4dfda369af1afe74ca41eb75eaa5a47ae"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Network]]",
-      "resolved": "urn:visionflow:linked:bitcoin-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction]]",
-      "resolved": "urn:visionflow:linked:transaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus]]",
-      "resolved": "urn:visionflow:linked:consensus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://developer.bitcoin.org/devguide/transactions.html]]",
-      "resolved": "urn:visionflow:linked:https-developer-bitcoin-org-devguide-transactions-html",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.bitcoin.it/wiki/Protocol_rules]]",
-      "resolved": "urn:visionflow:linked:https-en-bitcoin-it-wiki-protocol-rules",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Transaction validation is the process by which network participants check that a blockchain transaction conforms to the protocol rules before accepting it. It ensures only valid transactions enter the ledger.

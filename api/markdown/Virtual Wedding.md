@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Wedding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,7 +60,10 @@ public: true
   },
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:virtual-event", "label": "Virtual Event"}
+      {
+        "@id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      }
     ],
     "requires": [
       {
@@ -110,37 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-wedding:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:561ec29e94668bbb770dc204f0a0e3c32a35d7edcff8e51aa1f8a083f4a18028"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Event]]",
-      "resolved": "urn:visionflow:owl:class:virtual-event",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A marriage ceremony conducted in virtual environments or metaverse platforms where participants are represented by digital avatars, enabling global attendance, customizable virtual venues, and unique digital elements like NFT wedding gifts, often requiring accompaniment by legal proceedings for official recognition.

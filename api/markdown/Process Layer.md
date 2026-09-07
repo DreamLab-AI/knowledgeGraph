@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Process Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:process-layer:0c021ad8f16f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1369533b604975e7c52aec9fec0dc75567d36cf221e8e3d72b25fc5355d53a13"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Organisational Layer]]",
-      "resolved": "urn:visionflow:linked:organisational-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Operational Layer]]",
-      "resolved": "urn:visionflow:linked:operational-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Coordination Layer]]",
-      "resolved": "urn:visionflow:linked:coordination-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Business Process Management]]",
-      "resolved": "urn:visionflow:linked:business-process-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Workflow]]",
-      "resolved": "urn:visionflow:linked:workflow",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Process Layer is the cross-cutting stratum that defines the ordered activities and workflows by which work is carried out. It sits above the Organisational structure that staffs it and supports operational execution. It contains process definitions, workflows, hand-offs, and the rules that sequence activity.

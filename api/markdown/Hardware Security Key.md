@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hardware Security Key
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

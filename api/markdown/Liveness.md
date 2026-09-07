@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Liveness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,16 +7,39 @@ public: true
   "title": "Liveness",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:temporal-logic", "vc:label": "Temporal Logic"},
-    {"@id": "urn:visionflow:linked:health-check", "vc:label": "Health Check"},
-    {"@id": "urn:visionflow:linked:quorum", "vc:label": "Quorum"},
-    {"@id": "urn:visionflow:linked:transaction-finality", "vc:label": "Transaction Finality"},
-    {"@id": "urn:visionflow:linked:consensus-mechanism", "vc:label": "Consensus Mechanism"},
-    {"@id": "urn:visionflow:linked:byzantine-fault-tolerance", "vc:label": "Byzantine Fault Tolerance"}
+    {
+      "@id": "urn:visionflow:linked:temporal-logic",
+      "vc:label": "Temporal Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:health-check",
+      "vc:label": "Health Check"
+    },
+    {
+      "@id": "urn:visionflow:linked:quorum",
+      "vc:label": "Quorum"
+    },
+    {
+      "@id": "urn:visionflow:linked:transaction-finality",
+      "vc:label": "Transaction Finality"
+    },
+    {
+      "@id": "urn:visionflow:linked:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:byzantine-fault-tolerance",
+      "vc:label": "Byzantine Fault Tolerance"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -40,13 +58,28 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:health-check", "label": "Health Check"}
+      {
+        "@id": "urn:ngm:class:health-check",
+        "label": "Health Check"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quorum", "label": "Quorum"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ]
   },
   "quality": 0.8,

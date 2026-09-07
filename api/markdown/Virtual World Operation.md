@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual World Operation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Virtual world operation is the ongoing technical and administrative running of a persistent virtual environment, including server orchestration, state synchronisation, content updates, moderation and economy management. It keeps the world available, consistent and safe for concurrent users across sessions. Operation is the runtime layer that realises the design encoded in a metaverse architecture or stack.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:metaverse-architecture", "label": "Metaverse Architecture"}, {"@id": "urn:ngm:class:metaverse-stack", "label": "Metaverse Stack"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-stack",
+        "label": "Metaverse Stack"
+      }
+    ]
   },
   "quality": 0.72
 }

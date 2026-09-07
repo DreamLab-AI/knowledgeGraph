@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decoder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,37 +173,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:decoder:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:29c35b823bb596b117dd64aec46ea1cdaee8da3abf9676bf65c7f5da4ad04f37"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The component in an encoder-decoder architecture that generates the output sequence autoregressively, using masked self-attention, cross-attention to encoder outputs, and feed-forward layers.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fair Adjudication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Fair adjudication is the principle and process by which disputes are decided impartially, with due process, transparent rules, and the absence of bias toward any party. In legal and decentralised-arbitration contexts it requires neutral decision-makers, equal opportunity to present evidence, and reasoned, consistent rulings. It is a foundational requirement for legitimate dispute-resolution and arbitration mechanisms, including those implemented on-chain.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:dispute-resolution-mechanism", "label": "Dispute Resolution Mechanism"},
-      {"@id": "urn:ngm:class:e-contract-arbitration", "label": "E-Contract Arbitration"}
+      {
+        "@id": "urn:ngm:class:dispute-resolution-mechanism",
+        "label": "Dispute Resolution Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:e-contract-arbitration",
+        "label": "E-Contract Arbitration"
+      }
     ]
   },
   "quality": 0.72

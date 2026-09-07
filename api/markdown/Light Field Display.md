@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Light Field Display
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,13 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:holographic-telepresence", "label": "Holographic Telepresence"}],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:holographic-telepresence",
+        "label": "Holographic Telepresence"
+      }
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:volumetric-video", "label": "Volumetric Video"},
-      {"@id": "urn:ngm:class:photorealistic-telepresence", "label": "Photorealistic Telepresence"}
+      {
+        "@id": "urn:ngm:class:volumetric-video",
+        "label": "Volumetric Video"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-telepresence",
+        "label": "Photorealistic Telepresence"
+      }
     ]
   },
   "quality": 0.7

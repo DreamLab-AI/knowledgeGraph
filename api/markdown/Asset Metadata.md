@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Metadata
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Asset Metadata is the structured descriptive, administrative, and technical information attached to a digital asset that contextualises it within a system without being the primary content of that asset. It encompasses identifiers, provenance records, format specifications, rights information, semantic tags, and dependency relationships, enabling discovery, validation, licensing, and lifecycle management.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:metadata", "label": "Metadata"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:metadata",
+      "label": "Metadata"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"},
-      {"@id": "urn:ngm:class:asset-management-system", "label": "Asset Management System"}
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management-system",
+        "label": "Asset Management System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"},
-      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"}
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - In NFT and blockchain contexts, token metadata is stored either on-chain (expensive but immutable) or off-chain with on-chain hash commitment (cheaper but dependent on storage availability). The ERC-721 and ERC-1155 standards define a JSON metadata schema with fields for name, description, image, and arbitrary attributes. Metadata completeness and correctness directly affects NFT marketplace display, search ranking, and resale value — poorly formed metadata is a common cause of NFTs failing to render on OpenSea and similar platforms. IPFS and Arweave are the preferred decentralised storage layers for off-chain NFT metadata.
 
   - As of 2024–2025, generative AI content pipelines have introduced new metadata obligations: model name, version, prompt hash, guidance scale, seed, and training data provenance are emerging as required fields under draft transparency frameworks (EU AI Act, C2PA content provenance standards). Vector embeddings of asset content are increasingly stored alongside textual metadata to support semantic search and clustering. Standardisation efforts (schema.org CreativeWork, W3C PROV ontology, SMPTE IMF) are converging towards interoperable metadata exchange formats for cross-organisation asset licensing and distribution.
-

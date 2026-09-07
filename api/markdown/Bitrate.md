@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Bitrate
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:bitrate", "@type":"Page", "title":"Bitrate", "vc:slug":"bitrate", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:bitrate",
+  "@type": "Page",
+  "title": "Bitrate",
+  "vc:slug": "bitrate",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

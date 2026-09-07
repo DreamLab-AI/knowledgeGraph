@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ray Marching
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,17 +50,38 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:global-illumination", "label": "Global Illumination"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"}
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
     ]
   },
   "provenance": {
@@ -75,26 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ray-marching:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b2912f8a2e0cf8ca72da18ea14bfa855484e4435053cd3d6dd979b4b865812e3"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Ray Marching is a rendering technique in which a ray is incrementally stepped through a scene, evaluating a signed distance field (SDF) at each step to determine proximity to geometry. The step size adapts to the SDF value (sphere tracing), enabling efficient rendering of implicit surfaces, volumetric effects, soft shadows, and ambient occlusion that are impractical with triangle-based rasterisation. It is widely implemented in GPU shader programs.

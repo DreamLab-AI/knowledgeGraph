@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Software-Defined Networking
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

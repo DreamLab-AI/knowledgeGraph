@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Institutional Investment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:institutional-investment:3f2c9e957a8d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:be2aeda1ef5174b425fa0fc01feabe4585e4e5de3ba0710ff5a897969404809d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Management]]",
-      "resolved": "urn:visionflow:linked:asset-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Institutional Economics]]",
-      "resolved": "urn:visionflow:linked:institutional-economics",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The investment of pooled funds by organisations such as pension funds, insurers, endowments and asset managers on behalf of their beneficiaries or clients.

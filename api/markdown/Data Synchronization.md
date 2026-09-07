@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Synchronization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Data synchronization is the process of keeping data consistent across multiple devices, replicas or systems by propagating changes and reconciling conflicts. It may be one-way or bidirectional, real-time or batch, and relies on change tracking, versioning and conflict-resolution strategies. It is essential wherever distributed copies of data must converge, from device sync to collective-intelligence systems aggregating many participants.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-domain-data-management", "label": "ETSI Domain: Data Management"},
-      {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-data-management",
+        "label": "ETSI Domain: Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      }
     ]
   },
   "quality": 0.72

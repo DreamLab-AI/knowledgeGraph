@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,21 +34,60 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
-      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
-      {"@id": "urn:ngm:class:service-robot", "label": "Service Robot"},
-      {"@id": "urn:ngm:class:aerial-robot", "label": "Aerial Robot"},
-      {"@id": "urn:ngm:class:surgical-robot", "label": "Surgical Robot"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"}
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:service-robot",
+        "label": "Service Robot"
+      },
+      {
+        "@id": "urn:ngm:class:aerial-robot",
+        "label": "Aerial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"},
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
-      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      },
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "@id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -60,3 +95,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

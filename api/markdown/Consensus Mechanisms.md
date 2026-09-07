@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Consensus Mechanisms
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,57 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:consensus-mechanisms:b0400ee6f47d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:195753e896ab80720df41d6d184d66437909058f4d91704c7b0c53bf334b9f97"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Consensus]]",
-      "resolved": "urn:visionflow:linked:consensus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tendermint]]",
-      "resolved": "urn:visionflow:linked:tendermint",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The family of protocols by which distributed participants agree on a single shared state or ordering of events without relying on a central authority.

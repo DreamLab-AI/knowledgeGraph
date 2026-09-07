@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Protocol Governance
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:protocol-governance", "@type":"Page", "title":"Protocol Governance", "vc:slug":"protocol-governance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:protocol-governance",
+  "@type": "Page",
+  "title": "Protocol Governance",
+  "vc:slug": "protocol-governance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,42 +20,104 @@ public: true
   "definition": "Protocol Governance encompasses the processes, structures, and decision-making mechanisms by which changes to communication or consensus protocols are proposed, evaluated, ratified, and implemented across a decentralised participant base. Unlike traditional software governance, protocol governance must achieve coordination among parties with heterogeneous interests and no central authority, often relying on off-chain social processes (improvement proposals, mailing lists, developer calls) and on-chain voting mechanisms (token-weighted ballots, validator multisig). The choice of governance model has direct consequences for protocol security, decentralisation, upgrade velocity, and stakeholder alignment.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"},
-      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"},
-      {"@id": "urn:ngm:class:stakeholder-coordination", "label": "Stakeholder Coordination"}
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-coordination",
+        "label": "Stakeholder Coordination"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposal", "label": "Bitcoin Improvement Proposal"},
-      {"@id": "urn:ngm:class:ethereum-improvement-proposal", "label": "Ethereum Improvement Proposal"},
-      {"@id": "urn:ngm:class:fork", "label": "Fork"},
-      {"@id": "urn:ngm:class:token-voting", "label": "Token Voting"}
+      {
+        "@id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "label": "Bitcoin Improvement Proposal"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      },
+      {
+        "@id": "urn:ngm:class:fork",
+        "label": "Fork"
+      },
+      {
+        "@id": "urn:ngm:class:token-voting",
+        "label": "Token Voting"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:social-consensus", "label": "Social Consensus"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:social-consensus",
+        "label": "Social Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:corporate-governance", "label": "Corporate Governance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:decentralisation", "label": "Decentralisation"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:internet-governance", "label": "Internet Governance"},
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
+      },
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ]
   },
   "quality": 0.62,

@@ -1,39 +1,122 @@
----
-public: true
----
-
-# Sequencer
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:sequencer", "@type":"Page", "title":"Sequencer", "vc:slug":"sequencer", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:sequencer",
+  "@type": "Page",
+  "title": "Sequencer",
+  "vc:slug": "sequencer",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:sequencer",
-  "@type":"Class",
-  "label":"Sequencer",
-  "definition":"A sequencer is a component in a blockchain rollup or layer-2 system that receives user transactions, orders them into a canonical sequence, and produces blocks or batches for execution and settlement. By fixing transaction order off-chain before posting to the base layer, the sequencer enables fast confirmations and low fees. Sequencer design directly governs liveness, fairness, and the centralisation risk of a rollup.",
-  "domain":"blockchain",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:layer-2-scaling","label":"Layer 2 Scaling"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:rollup","label":"Rollup"}],
-    "partOf":[{"@id":"urn:ngm:class:rollup","label":"Rollup"}],
-    "requires":[{"@id":"urn:ngm:class:ethereum","label":"Ethereum"}],
-    "enables":[{"@id":"urn:ngm:class:layer-2-scaling","label":"Layer 2 Scaling"},{"@id":"urn:ngm:class:censorship-resistance","label":"Censorship Resistance"}],
-    "dependsOn":[{"@id":"urn:ngm:class:ethereum","label":"Ethereum"},{"@id":"urn:ngm:class:data-availability","label":"Data Availability"}],
-    "uses":[{"@id":"urn:ngm:class:optimistic-rollup","label":"Optimistic Rollup"}],
-    "supports":[{"@id":"urn:ngm:class:optimism","label":"Optimism"},{"@id":"urn:ngm:class:arbitrum","label":"Arbitrum"}],
-    "implements":[{"@id":"urn:ngm:class:fraud-proof","label":"Fraud Proof"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:validator","label":"Validator"}],
-    "relatedTo":[{"@id":"urn:ngm:class:mev","label":"MEV"},{"@id":"urn:ngm:class:decentralization","label":"Decentralization"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:data-availability","label":"Data Availability"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:sequencer",
+  "@type": "Class",
+  "label": "Sequencer",
+  "definition": "A sequencer is a component in a blockchain rollup or layer-2 system that receives user transactions, orders them into a canonical sequence, and produces blocks or batches for execution and settlement. By fixing transaction order off-chain before posting to the base layer, the sequencer enables fast confirmations and low fees. Sequencer design directly governs liveness, fairness, and the centralisation risk of a rollup.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:layer-2-scaling",
+      "label": "Layer 2 Scaling"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

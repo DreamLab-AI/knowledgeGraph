@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Telethrone]]
-# Gaze Contingent Telepresence Display
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,17 +51,38 @@ elevatedFrom:: [[Telethrone]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:display-hardware", "label": "Display Hardware"}
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tele020virtualrealitytelepresence", "label": "TELE020virtualrealitytelepresence"},
-      {"@id": "urn:ngm:class:tele-050-neuralrenderingtelepresence", "label": "TELE 050 neuralrenderingtelepresence"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+      {
+        "@id": "urn:ngm:class:tele020virtualrealitytelepresence",
+        "label": "TELE020virtualrealitytelepresence"
+      },
+      {
+        "@id": "urn:ngm:class:tele-050-neuralrenderingtelepresence",
+        "label": "TELE 050 neuralrenderingtelepresence"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +92,6 @@ elevatedFrom:: [[Telethrone]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:telethrone:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a9867374f10a504b1123801453ac07f4879d82df4f5fb63d8269d9e5c6a9d6dc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MUST]]",
-      "resolved": "urn:visionflow:linked:must",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Telethrone is a research concept for a hyper-personal display and telepresence installation that resolves the challenge of rendering a spatially aware, photorealistic metahuman avatar for a single collocated viewer. It combines personalised 3D reconstruction from 2D imagery, gaze-contingent rendering, and situated display technology to achieve high-fidelity presence without requiring the viewer to wear head-mounted displays.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Evolutionary Algorithm
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

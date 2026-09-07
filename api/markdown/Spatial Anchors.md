@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Anchors
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,41 +185,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-anchors:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:55ebc0932a62ae15d9040a36fd815a838ad7a2e060497389d6648fbdbd609737"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AR Technology]]",
-      "resolved": "urn:visionflow:owl:class:ar-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Persistent AR Placement]]",
-      "resolved": "urn:visionflow:owl:class:persistent-ar-placement",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Spatial anchors are persistent, georeferenced coordinate frames that bind virtual content to specific physical locations, enabling [[Augmented Reality]] and [[Mixed Reality]] experiences to survive device handoffs, multi-user sessions, and temporal gaps between visits. They are produced by fusing visual feature maps, inertial measurements, and optional radio-frequency ranging signals to yield a stable six-degrees-of-freedom pose within a real-world coordinate system. The anchor state can be serialised, stored in the cloud, and retrieved later for relocalisation, making them foundational to [[Persistent AR Placement]], [[Indoor Navigation]], and cross-device [[Shared AR Experience]]. Platform SDKs such as [[ARKit]], [[ARCore]], and [[Azure Spatial Anchors]] expose the concept natively, while the [[OpenXR]] extension `XR_MSFT_spatial_anchor` provides a hardware-agnostic API path.
 
@@ -242,7 +202,7 @@ public: true
   - #### Sensor Fusion Pipeline
     - [[Sensor Fusion]] combines camera imagery, IMU data (accelerometer + gyroscope), barometric pressure, and optionally [[Global Positioning System]] or [[Ultra-Wideband]] ranging to continuously estimate device pose relative to the anchor. [[Visual-Inertial Odometry]] bridges gaps where camera-only tracking would fail.
   - #### Persistence and Cloud Synchronisation
-    - Anchor data is serialised and uploaded to a cloud service (e.g. [[Azure Spatial Anchors]], Google Cloud Anchors). Subsequent devices query the service, download the anchor descriptor, and run relocalisation locally or against a server-side feature index.
+    - Anchor data is serialised and uploaded to a cloud service (e.g. [[Azure Spatial Anchors]], Google Cloud Anchors). Subsequent devices query the service, download the anchor descriptor, and run relocalisation locally or against a server-side feature [private].
   - #### Relocalisation Engine
     - Given a new camera frame, the relocalisation engine queries the stored feature map and estimates the 6-DoF pose of the current camera relative to the anchor. This is the critical step that enables multi-user and cross-session persistence.
     - [[World Locking Tools]] (WLTs) provide a layer above the raw relocalisation to stabilise accumulated drift over large-scale tracking.

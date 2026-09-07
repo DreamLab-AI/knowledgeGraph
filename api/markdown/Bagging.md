@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bagging
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,37 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bagging:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:daa68d41d7c470b612c36697f95ce59222aa1fa0843eb601465a0d8f3e8b37ce"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Parallel Training]]",
-      "resolved": "urn:visionflow:linked:parallel-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ensemble Methods]]",
-      "resolved": "urn:visionflow:owl:class:ensemble-methods",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Bagging is a concept within the ai domain.
@@ -209,7 +173,7 @@ public: true
   | Outliers | Robust | Sensitive |
 
   ### Historical Note
-  Introduced by Leo Breiman in 1994, bagging laid the foundation for Random Forests and demonstrated that model diversity through randomization could significantly improve generalization.
+  Introduced by Leo Breiman in 1994, bagging laid the foundation for Random Forests and demonstrated that model diversity through randomization [private] significantly improve generalization.
 
   ### Algorithm Overview
   1. **Bootstrap Sampling:**

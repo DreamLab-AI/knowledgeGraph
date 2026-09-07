@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,21 +34,60 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:display-hardware", "label": "Display Hardware"},
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:vr-rendering-engine", "label": "VR Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:vr-rendering-engine",
+        "label": "VR Rendering Engine"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:ai-upscaling-and-super-resolution", "label": "AI Upscaling and Super-Resolution"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:ai-upscaling-and-super-resolution",
+        "label": "AI Upscaling and Super-Resolution"
+      }
     ]
   },
   "quality": 0.8,
@@ -60,3 +95,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Compression Function
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "A compression function is a fixed-input-length cryptographic primitive that maps two inputs (a chaining value and a message block) to a single shorter output. It is the core building block of iterated hash functions, where it is applied repeatedly under constructions such as Merkle-Damgard to process arbitrary-length messages. Its collision and preimage resistance directly determine the security of the hash function built on top of it.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}],
-    "partOf": [{"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ]
   },
   "quality": 0.72
 }

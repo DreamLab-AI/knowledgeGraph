@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Virtual_Economy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -236,18 +231,42 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
-      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:marketplace", "label": "Marketplace"},
-      {"@id": "urn:ngm:class:play-to-earn-p2-e", "label": "Play-to-Earn (P2E)"}
+      {
+        "@id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn (P2E)"
+      }
     ]
   },
   "provenance": {
@@ -257,257 +276,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-virtual-economy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1706cba0f698ab95f60e9628454030a6803768a04dc93bed1ed3c23a3e262e4b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NFT|NFTs]]",
-      "resolved": "urn:visionflow:linked:nft",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Carbon Credit Token]]",
-      "resolved": "urn:visionflow:owl:class:carbon-credit-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CarbonCreditToken|carbon credit tokenisation]]",
-      "resolved": "urn:visionflow:owl:class:carbon-credit-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CentralBankDigitalCurrency|CBDCs]]",
-      "resolved": "urn:visionflow:owl:class:central-bank-digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Central Bank Digital Currency (CBDC)]]",
-      "resolved": "urn:visionflow:owl:class:central-bank-digital-currency-cbdc",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Creator Economy]]",
-      "resolved": "urn:visionflow:owl:class:creator-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CreatorEconomy|creator economy]]",
-      "resolved": "urn:visionflow:owl:class:creator-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Creator Royalty Token]]",
-      "resolved": "urn:visionflow:owl:class:creator-royalty-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CreatorRoyaltyToken|creator royalty tokens]]",
-      "resolved": "urn:visionflow:owl:class:creator-royalty-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Crypto Token]]",
-      "resolved": "urn:visionflow:owl:class:crypto-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptoToken|crypto tokens]]",
-      "resolved": "urn:visionflow:owl:class:crypto-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:owl:class:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency|cryptocurrencies]]",
-      "resolved": "urn:visionflow:owl:class:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DecentralizedExchange|decentralised exchanges]]",
-      "resolved": "urn:visionflow:owl:class:decentralized-exchange",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Exchange (DEX)]]",
-      "resolved": "urn:visionflow:owl:class:decentralized-exchange-dex",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalAsset|digital assets]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Goods]]",
-      "resolved": "urn:visionflow:owl:class:digital-goods",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalGoods]]",
-      "resolved": "urn:visionflow:owl:class:digital-goods",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Goods Registry]]",
-      "resolved": "urn:visionflow:owl:class:digital-goods-registry",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Real Estate]]",
-      "resolved": "urn:visionflow:owl:class:digital-real-estate",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Tax Compliance Node]]",
-      "resolved": "urn:visionflow:owl:class:digital-tax-compliance-node",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fractionalized NFT]]",
-      "resolved": "urn:visionflow:owl:class:fractionalized-nft",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Industrial Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:industrial-metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Pool]]",
-      "resolved": "urn:visionflow:owl:class:liquidity-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Loyalty Token]]",
-      "resolved": "urn:visionflow:owl:class:loyalty-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Marketplace]]",
-      "resolved": "urn:visionflow:owl:class:marketplace",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Micropayment]]",
-      "resolved": "urn:visionflow:owl:class:micropayment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NFT Renting]]",
-      "resolved": "urn:visionflow:owl:class:nft-renting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NFT Swapping]]",
-      "resolved": "urn:visionflow:owl:class:nft-swapping",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NFT Wrapping]]",
-      "resolved": "urn:visionflow:owl:class:nft-wrapping",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Non-Fungible Token (NFT)]]",
-      "resolved": "urn:visionflow:owl:class:non-fungible-token-nft",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Play-to-Earn (P2E)]]",
-      "resolved": "urn:visionflow:owl:class:play-to-earn-p2-e",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Provenance Verification]]",
-      "resolved": "urn:visionflow:owl:class:provenance-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Royalty Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:royalty-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Royalties Ledger]]",
-      "resolved": "urn:visionflow:owl:class:smart-royalties-ledger",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Royalty Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-royalty-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social Token Economy]]",
-      "resolved": "urn:visionflow:owl:class:social-token-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:owl:class:stablecoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token Bonding Curve]]",
-      "resolved": "urn:visionflow:owl:class:token-bonding-curve",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tokenization]]",
-      "resolved": "urn:visionflow:owl:class:tokenization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Standard]]",
-      "resolved": "urn:visionflow:owl:class:transaction-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualAsset|virtual assets]]",
-      "resolved": "urn:visionflow:owl:class:virtual-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualEconomy|virtual economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through [[CryptoToken|crypto tokens]], [[Cryptocurrency|cryptocurrencies]], [[CentralBankDigitalCurrency|CBDCs]], and [[DigitalAsset|digital assets]] including [[DigitalGoods]], [[NFT|NFTs]], and [[VirtualAsset|virtual assets]]. Virtual economy infrastructure coordinates [[DecentralizedExchange|decentralised exchanges]], [[CreatorEconomy|creator economy]] mechanisms enabling direct creator-audience relationships, [[CreatorRoyaltyToken|creator royalty tokens]] automating compensation, and emerging [[CarbonCreditToken|carbon credit tokenisation]] for environmental accounting. Standards development addresses [[VirtualEconomy|virtual economy]] integration with traditional finance, regulatory compliance for tokenised assets, taxation frameworks for cross-border virtual transactions, and mechanisms ensuring sustainable economic value creation within persistent virtual worlds.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Filter Bubble
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -98,7 +93,7 @@ public: true
 
   ## Definition
 
-  A **filter bubble** is the informational enclosure produced when algorithmic curation systems learn a person's preferences and then optimise what they see against those learned preferences. Eli Pariser introduced the term in his 2011 book *The Filter Bubble*, observing that personalised Google results and Facebook feeds meant two people issuing the same query or following the same topics could inhabit entirely different information worlds — invisibly, involuntarily, and alone, since no two bubbles are identical.
+  A **filter bubble** is the informational enclosure produced when algorithmic curation systems learn a person's preferences and then optimise what they see against those learned preferences. Eli Pariser introduced the term in his 2011 book *The Filter Bubble*, observing that personalised Google results and Facebook feeds meant two people issuing the same query or following the same topics [private] inhabit entirely different information worlds — invisibly, involuntarily, and alone, since no two bubbles are identical.
 
   The mechanism is a feedback loop between user behaviour and the ranking objective. Engagement-optimised [[Recommendation Systems]] surface content similar to what a user previously clicked; the user, seeing mostly agreeable content, clicks in ways that confirm the model's estimate; the estimate sharpens and the window of exposure narrows further. Content-based filtering contributes through over-specialisation in feature space, collaborative filtering through homophily — amplifying what similar users consumed. The filter bubble is distinct from the related *echo chamber*: an echo chamber is socially self-selected (people choose like-minded communities), whereas a filter bubble is algorithmically imposed and largely invisible to its inhabitant.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hash Collision
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,26 +83,62 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:collision-resistance", "label": "Collision Resistance"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+      {
+        "@id": "urn:ngm:class:collision-resistance",
+        "label": "Collision Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"},
-      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"}
+      {
+        "@id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      },
+      {
+        "@id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"},
-      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}
+      {
+        "@id": "urn:ngm:class:bc-cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
     ]
   },
   "provenance": {
@@ -117,62 +148,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hash-collision:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d49056f5b31ed7f172a3fa7c108b7e4e10b4e987111e961248a73895e7773ef3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicPrimitive]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A hash collision occurs when two distinct inputs produce the same output from a cryptographic hash function, violating the collision-resistance property that is essential to blockchain data integrity. In blockchain systems, collision resistance ensures that no adversary can craft two different transactions or blocks yielding the same hash digest, making Merkle tree roots and block headers tamper-evident. While collisions are computationally infeasible for production-grade functions such as SHA-256, their theoretical possibility drives ongoing cryptographic research and post-quantum security planning.
@@ -260,7 +235,7 @@ public: true
 
   ### Impact on Blockchain Security
 
-  In blockchain systems, hash collision resistance is the property that protects block headers, transaction IDs, and Merkle tree roots from forgery. If an attacker could find collisions in the block header hash function, they could create two different blocks with identical hashes, enabling double-spend attacks and chain reorganisation. The SHA-256 function used in Bitcoin and many other chains has no publicly known practical collisions, but the MD5 and SHA-1 vulnerabilities demonstrate that even widely deployed hash functions can become exploitable with advances in cryptanalysis.
+  In blockchain systems, hash collision resistance is the property that protects block headers, transaction IDs, and Merkle tree roots from forgery. If an attacker [private] find collisions in the block header hash function, they [private] create two different blocks with identical hashes, enabling double-spend attacks and chain reorganisation. The SHA-256 function used in Bitcoin and many other chains has no publicly known practical collisions, but the MD5 and SHA-1 vulnerabilities demonstrate that even widely deployed hash functions can become exploitable with advances in cryptanalysis.
 
   ### Post-Quantum Considerations
 

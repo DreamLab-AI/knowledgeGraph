@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Logistics Optimization
----
-
-# Logistics Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,17 +20,239 @@ aliases:
   "definition": "Logistics optimisation is the application of mathematical optimisation and operations-research techniques to minimise cost or time across logistics operations such as routing, scheduling, and inventory placement. It formulates problems like vehicle routing, network flow, and bin packing, often solved with linear programming, heuristics, or machine learning. The goal is to extract maximal efficiency from constrained transport and storage resources.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}, {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}, {"@id": "urn:ngm:class:applied-machine-learning", "label": "Applied Machine Learning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "@id": "urn:ngm:class:applied-machine-learning",
+      "label": "Applied Machine Learning"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"}, {"@id": "urn:ngm:class:customs-trade-facilitation", "label": "Customs Trade Facilitation"}, {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}, {"@id": "urn:ngm:class:io-t-integration", "label": "IoT Integration"}, {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}, {"@id": "urn:ngm:class:carbon-credit-tracking", "label": "Carbon Credit Tracking"}, {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"}, {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"}, {"@id": "urn:ngm:class:robotics", "label": "Robotics"}, {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"}],
-    "hasPart": [{"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"}, {"@id": "urn:ngm:class:fleet-management", "label": "Fleet Management"}, {"@id": "urn:ngm:class:last-mile-delivery", "label": "Last-Mile Delivery"}, {"@id": "urn:ngm:class:supply-chain-visibility", "label": "Supply Chain Visibility"}, {"@id": "urn:ngm:class:warehouse-management-system", "label": "Warehouse Management System"}, {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}],
-    "requires": [{"@id": "urn:ngm:class:geospatial-data", "label": "Geospatial Data"}, {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"}, {"@id": "urn:ngm:class:mixed-integer-programming", "label": "Mixed Integer Programming"}, {"@id": "urn:ngm:class:operations-research", "label": "Operations Research"}, {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}, {"@id": "urn:ngm:class:io-t-sensors", "label": "IoT Sensors"}, {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}],
-    "enables": [{"@id": "urn:ngm:class:carbon-footprint-reduction", "label": "Carbon Footprint Reduction"}, {"@id": "urn:ngm:class:customer-experience", "label": "Customer Experience"}, {"@id": "urn:ngm:class:dynamic-pricing", "label": "Dynamic Pricing"}, {"@id": "urn:ngm:class:supply-chain", "label": "Resilient Supply Chains"}, {"@id": "urn:ngm:class:reverse-logistics", "label": "Reverse Logistics"}, {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}],
-    "implements": [{"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Model"}, {"@id": "urn:ngm:class:genetic-algorithm", "label": "Genetic Algorithm"}, {"@id": "urn:ngm:class:gradient-boosted-trees", "label": "Gradient Boosted Trees"}, {"@id": "urn:ngm:class:simulated-annealing", "label": "Simulated Annealing"}, {"@id": "urn:ngm:class:transformer", "label": "Transformer Networks"}, {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}, {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}],
-    "uses": [{"@id": "urn:ngm:class:apache-kafka", "label": "Apache Kafka"}, {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"}, {"@id": "urn:ngm:class:nvidia-corporation-jetson", "label": "NVIDIA Jetson"}, {"@id": "urn:ngm:class:py-torch", "label": "PyTorch"}, {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}],
-    "supports": [{"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce Fulfilment"}, {"@id": "urn:ngm:class:pharmaceutical-logistics", "label": "Pharmaceutical Logistics"}, {"@id": "urn:ngm:class:supply-chain", "label": "Retail Supply Chain"}, {"@id": "urn:ngm:class:reverse-logistics", "label": "Reverse Logistics"}, {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"}],
-    "standardizedBy": [{"@id": "urn:ngm:class:gri-standards", "label": "GRI Supply Chain Standards"}, {"@id": "urn:ngm:class:gs1", "label": "GS1"}, {"@id": "urn:ngm:class:iso-28000", "label": "ISO 28000"}],
-    "bridgesTo": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-integration",
+        "label": "IoT Integration"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "@id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-management-system",
+        "label": "Warehouse Management System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      },
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-integer-programming",
+        "label": "Mixed Integer Programming"
+      },
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-footprint-reduction",
+        "label": "Carbon Footprint Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-pricing",
+        "label": "Dynamic Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Resilient Supply Chains"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Model"
+      },
+      {
+        "@id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-boosted-trees",
+        "label": "Gradient Boosted Trees"
+      },
+      {
+        "@id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer Networks"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-corporation-jetson",
+        "label": "NVIDIA Jetson"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce Fulfilment"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-logistics",
+        "label": "Pharmaceutical Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Retail Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gri-standards",
+        "label": "GRI Supply Chain Standards"
+      },
+      {
+        "@id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      },
+      {
+        "@id": "urn:ngm:class:iso-28000",
+        "label": "ISO 28000"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-data-management",
+        "label": "Data Management"
+      }
+    ]
   },
   "quality": 0.72
 }

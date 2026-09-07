@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Webhook
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,9 +21,23 @@ public: true
   "vc:plainGloss": "An automatic alert one service sends to another the instant something happens — like your phone buzzing the moment a payment lands, rather than you checking your bank every five minutes. It lets your tools react to events straight away instead of constantly asking 'anything new yet?'.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}, {"@id": "urn:ngm:class:presence-indicator", "label": "Presence Indicator"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:presence-indicator",
+        "label": "Presence Indicator"
+      }
+    ]
   },
   "quality": 0.72
 }

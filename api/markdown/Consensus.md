@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Consensus
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,47 +195,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:consensus:c983c585ac3c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3ec222f71bcd60b0606afac7a5de306be3c02be0387caddd1d24165332081c70"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanisms]]",
-      "resolved": "urn:visionflow:linked:consensus-mechanisms",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tendermint]]",
-      "resolved": "urn:visionflow:linked:tendermint",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The general problem of getting distributed processes to agree on a common value or decision despite failures, communication delays or adversarial behaviour.

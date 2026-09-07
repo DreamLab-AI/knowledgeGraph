@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hash Time-Locked Contracts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,52 +195,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hash-time-locked-contracts:542bd04bb6f5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f47a8108d34ab8998ae72f108e920730fb7748442d176cc2e59a81d64b1e9f6f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptographic Hash]]",
-      "resolved": "urn:visionflow:linked:cryptographic-hash",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Timelock]]",
-      "resolved": "urn:visionflow:linked:timelock",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Atomic Swap]]",
-      "resolved": "urn:visionflow:linked:atomic-swap",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:linked:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:linked:smart-contracts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A type of smart contract that conditions a payment on the recipient revealing a cryptographic preimage before a deadline, enabling trustless conditional and cross-chain transfers.

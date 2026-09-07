@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environmental Verification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -99,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:environmental-verification:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2cfc270aac5628f448cc69cc4e8459e23108db8cdd585de389a9d1fc7c20c0e3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of validating that a physical or virtual environment meets defined safety, compliance, or operational standards before allowing XR interactions to proceed. Encompasses spatial boundary checks, hazard detection, and cross-referencing environment state against authoritative registries to ensure user safety and regulatory compliance.

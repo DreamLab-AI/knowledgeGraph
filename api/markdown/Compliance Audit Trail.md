@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Compliance Audit Trail
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,57 +7,197 @@ public: true
   "title": "Compliance Audit Trail",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:audit-automation", "vc:label": "Audit Automation" },
-    { "@id": "urn:visionflow:linked:compliance-event-log", "vc:label": "Compliance Event Log" },
-    { "@id": "urn:visionflow:linked:compliance-management-system", "vc:label": "Compliance Management System" },
-    { "@id": "urn:visionflow:linked:immutable-storage", "vc:label": "Immutable Storage" },
-    { "@id": "urn:visionflow:linked:iso-37301", "vc:label": "ISO 37301" },
-    { "@id": "urn:visionflow:linked:policy-document", "vc:label": "Policy Document" },
-    { "@id": "urn:visionflow:linked:regulatory-evidence", "vc:label": "Regulatory Evidence" },
-    { "@id": "urn:visionflow:linked:verification-record", "vc:label": "Verification Record" },
-    { "@id": "urn:visionflow:owl:class:access-control", "vc:label": "Access Control" },
-    { "@id": "urn:visionflow:owl:class:accountability", "vc:label": "Accountability" },
-    { "@id": "urn:visionflow:owl:class:blockchain", "vc:label": "Blockchain" },
-    { "@id": "urn:visionflow:owl:class:compliance-verification", "vc:label": "Compliance Verification" },
-    { "@id": "urn:visionflow:owl:class:cryptographic-hash", "vc:label": "Cryptographic Hash" },
-    { "@id": "urn:visionflow:owl:class:data-layer", "vc:label": "DataLayer" },
-    { "@id": "urn:visionflow:owl:class:data-provenance", "vc:label": "Data Provenance" },
-    { "@id": "urn:visionflow:owl:class:middleware-layer", "vc:label": "MiddlewareLayer" },
-    { "@id": "urn:visionflow:owl:class:policy-engine", "vc:label": "Policy Engine" },
-    { "@id": "urn:visionflow:owl:class:regulatory-framework", "vc:label": "Regulatory Framework" },
-    { "@id": "urn:visionflow:owl:class:regulatory-reporting", "vc:label": "Regulatory Reporting" },
-    { "@id": "urn:visionflow:owl:class:risk-assessment", "vc:label": "Risk Assessment" },
-    { "@id": "urn:visionflow:owl:class:timestamp", "vc:label": "Timestamp" },
-    { "@id": "urn:visionflow:owl:class:ai-governance-and-ethics", "vc:label": "TrustAndGovernanceDomain" },
-    { "@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance" },
-    { "@id": "urn:visionflow:linked:gdpr", "vc:label": "GDPR" },
-    { "@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act" },
-    { "@id": "urn:visionflow:linked:digital-operational-resilience-act", "vc:label": "Digital Operational Resilience Act" },
-    { "@id": "urn:visionflow:linked:mifid-ii", "vc:label": "MiFID II" },
-    { "@id": "urn:visionflow:linked:smart-contract", "vc:label": "Smart Contract" },
-    { "@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance" },
-    { "@id": "urn:visionflow:linked:explainability", "vc:label": "Explainability" },
-    { "@id": "urn:visionflow:linked:model-card", "vc:label": "Model Card" },
-    { "@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps" },
-    { "@id": "urn:visionflow:linked:risk-management", "vc:label": "Risk Management" },
-    { "@id": "urn:visionflow:linked:transparency", "vc:label": "Transparency" },
-    { "@id": "urn:visionflow:linked:human-oversight", "vc:label": "Human Oversight" },
-    { "@id": "urn:visionflow:linked:responsible-ai", "vc:label": "Responsible AI" },
-    { "@id": "urn:visionflow:linked:digital-signature", "vc:label": "Digital Signature" },
-    { "@id": "urn:visionflow:linked:zero-knowledge-proof", "vc:label": "Zero-Knowledge Proof" },
-    { "@id": "urn:visionflow:linked:iso-iec-42001", "vc:label": "ISO IEC 42001" },
-    { "@id": "urn:visionflow:linked:nist-ai-rmf", "vc:label": "NIST AI RMF" },
-    { "@id": "urn:visionflow:linked:algorithmic-auditing", "vc:label": "Algorithmic Auditing" },
-    { "@id": "urn:visionflow:linked:incident-management", "vc:label": "Incident Management" },
-    { "@id": "urn:visionflow:linked:change-management", "vc:label": "Change Management" }
+    {
+      "@id": "urn:visionflow:linked:audit-automation",
+      "vc:label": "Audit Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance-event-log",
+      "vc:label": "Compliance Event Log"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance-management-system",
+      "vc:label": "Compliance Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:immutable-storage",
+      "vc:label": "Immutable Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-37301",
+      "vc:label": "ISO 37301"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-document",
+      "vc:label": "Policy Document"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-evidence",
+      "vc:label": "Regulatory Evidence"
+    },
+    {
+      "@id": "urn:visionflow:linked:verification-record",
+      "vc:label": "Verification Record"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:access-control",
+      "vc:label": "Access Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compliance-verification",
+      "vc:label": "Compliance Verification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cryptographic-hash",
+      "vc:label": "Cryptographic Hash"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-provenance",
+      "vc:label": "Data Provenance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "MiddlewareLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:policy-engine",
+      "vc:label": "Policy Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-framework",
+      "vc:label": "Regulatory Framework"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-reporting",
+      "vc:label": "Regulatory Reporting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-assessment",
+      "vc:label": "Risk Assessment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:timestamp",
+      "vc:label": "Timestamp"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
+      "vc:label": "TrustAndGovernanceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-operational-resilience-act",
+      "vc:label": "Digital Operational Resilience Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:mifid-ii",
+      "vc:label": "MiFID II"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-card",
+      "vc:label": "Model Card"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:transparency",
+      "vc:label": "Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-signature",
+      "vc:label": "Digital Signature"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-knowledge-proof",
+      "vc:label": "Zero-Knowledge Proof"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001",
+      "vc:label": "ISO IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-auditing",
+      "vc:label": "Algorithmic Auditing"
+    },
+    {
+      "@id": "urn:visionflow:linked:incident-management",
+      "vc:label": "Incident Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:change-management",
+      "vc:label": "Change Management"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    { "vc:key": "legacy-term-id", "vc:value": "20219" },
-    { "vc:key": "preferred-term", "vc:value": "Compliance Audit Trail" }
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20219"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Compliance Audit Trail"
+    }
   ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:jjohare" },
-  "prov:generatedAtTime": { "@value": "2026-05-18T07:12:05Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -83,59 +218,167 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:timestamp", "label": "Timestamp" },
-      { "@id": "urn:ngm:class:compliance-event-log", "label": "Compliance Event Log" },
-      { "@id": "urn:ngm:class:verification-record", "label": "Verification Record" },
-      { "@id": "urn:ngm:class:regulatory-evidence", "label": "Regulatory Evidence" },
-      { "@id": "urn:ngm:class:policy-document", "label": "Policy Document" },
-      { "@id": "urn:ngm:class:digital-signature", "label": "Digital Signature" }
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-event-log",
+        "label": "Compliance Event Log"
+      },
+      {
+        "@id": "urn:ngm:class:verification-record",
+        "label": "Verification Record"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-evidence",
+        "label": "Regulatory Evidence"
+      },
+      {
+        "@id": "urn:ngm:class:policy-document",
+        "label": "Policy Document"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:immutable-storage", "label": "Immutable Storage" },
-      { "@id": "urn:ngm:class:access-control", "label": "Access Control" },
-      { "@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash" },
-      { "@id": "urn:ngm:class:policy-engine", "label": "Policy Engine" },
-      { "@id": "urn:ngm:class:timestamp", "label": "Timestamp" },
-      { "@id": "urn:ngm:class:data-provenance", "label": "Data Provenance" }
+      {
+        "@id": "urn:ngm:class:immutable-storage",
+        "label": "Immutable Storage"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:accountability", "label": "Accountability" },
-      { "@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification" },
-      { "@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting" },
-      { "@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment" },
-      { "@id": "urn:ngm:class:transparency", "label": "Transparency" },
-      { "@id": "urn:ngm:class:human-oversight", "label": "Human Oversight" },
-      { "@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing" }
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:compliance-management", "label": "Compliance Management System" }
+      {
+        "@id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management System"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework" },
-      { "@id": "urn:ngm:class:audit-automation", "label": "Audit Automation" },
-      { "@id": "urn:ngm:class:data-provenance", "label": "Data Provenance" },
-      { "@id": "urn:ngm:class:data-governance", "label": "Data Governance" }
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:audit-automation",
+        "label": "Audit Automation"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:iso-37301", "label": "ISO 37301" },
-      { "@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001" },
-      { "@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act" }
+      {
+        "@id": "urn:ngm:class:iso-37301",
+        "label": "ISO 37301"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:blockchain", "label": "Blockchain" },
-      { "@id": "urn:ngm:class:smart-contract", "label": "Smart Contract" },
-      { "@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof" }
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:gdpr", "label": "GDPR" },
-      { "@id": "urn:ngm:class:ai-governance", "label": "AI Governance" },
-      { "@id": "urn:ngm:class:mlops", "label": "MLOps" },
-      { "@id": "urn:ngm:class:model-cards", "label": "Model Card" },
-      { "@id": "urn:ngm:class:explainability", "label": "Explainability" },
-      { "@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI" }
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:model-cards",
+        "label": "Model Card"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -143,65 +386,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:compliance-audit-trail:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0530bb4860c09a4b3adabc00c11b9616696130ef7e5c92263ddd8993f352076b"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Audit Automation]]", "resolved": "urn:visionflow:linked:audit-automation", "kind": "StubLink" },
-    { "raw": "[[Compliance Event Log]]", "resolved": "urn:visionflow:linked:compliance-event-log", "kind": "StubLink" },
-    { "raw": "[[Compliance Management System]]", "resolved": "urn:visionflow:linked:compliance-management-system", "kind": "StubLink" },
-    { "raw": "[[Immutable Storage]]", "resolved": "urn:visionflow:linked:immutable-storage", "kind": "StubLink" },
-    { "raw": "[[ISO 37301]]", "resolved": "urn:visionflow:linked:iso-37301", "kind": "StubLink" },
-    { "raw": "[[Policy Document]]", "resolved": "urn:visionflow:linked:policy-document", "kind": "StubLink" },
-    { "raw": "[[Regulatory Evidence]]", "resolved": "urn:visionflow:linked:regulatory-evidence", "kind": "StubLink" },
-    { "raw": "[[Verification Record]]", "resolved": "urn:visionflow:linked:verification-record", "kind": "StubLink" },
-    { "raw": "[[Access Control]]", "resolved": "urn:visionflow:owl:class:access-control", "kind": "ResolvedLink" },
-    { "raw": "[[Accountability]]", "resolved": "urn:visionflow:owl:class:accountability", "kind": "ResolvedLink" },
-    { "raw": "[[Blockchain]]", "resolved": "urn:visionflow:owl:class:blockchain", "kind": "ResolvedLink" },
-    { "raw": "[[Compliance Verification]]", "resolved": "urn:visionflow:owl:class:compliance-verification", "kind": "ResolvedLink" },
-    { "raw": "[[Cryptographic Hash]]", "resolved": "urn:visionflow:owl:class:cryptographic-hash", "kind": "ResolvedLink" },
-    { "raw": "[[DataLayer]]", "resolved": "urn:visionflow:owl:class:data-layer", "kind": "ResolvedLink" },
-    { "raw": "[[Data Provenance]]", "resolved": "urn:visionflow:owl:class:data-provenance", "kind": "ResolvedLink" },
-    { "raw": "[[MiddlewareLayer]]", "resolved": "urn:visionflow:owl:class:middleware-layer", "kind": "ResolvedLink" },
-    { "raw": "[[Policy Engine]]", "resolved": "urn:visionflow:owl:class:policy-engine", "kind": "ResolvedLink" },
-    { "raw": "[[Regulatory Framework]]", "resolved": "urn:visionflow:owl:class:regulatory-framework", "kind": "ResolvedLink" },
-    { "raw": "[[Regulatory Reporting]]", "resolved": "urn:visionflow:owl:class:regulatory-reporting", "kind": "ResolvedLink" },
-    { "raw": "[[Risk Assessment]]", "resolved": "urn:visionflow:owl:class:risk-assessment", "kind": "ResolvedLink" },
-    { "raw": "[[Timestamp]]", "resolved": "urn:visionflow:owl:class:timestamp", "kind": "ResolvedLink" },
-    { "raw": "[[TrustAndGovernanceDomain]]", "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics", "kind": "ResolvedLink" },
-    { "raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "ResolvedLink" },
-    { "raw": "[[GDPR]]", "resolved": "urn:visionflow:linked:gdpr", "kind": "StubLink" },
-    { "raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "StubLink" },
-    { "raw": "[[Digital Operational Resilience Act]]", "resolved": "urn:visionflow:linked:digital-operational-resilience-act", "kind": "StubLink" },
-    { "raw": "[[MiFID II]]", "resolved": "urn:visionflow:linked:mifid-ii", "kind": "StubLink" },
-    { "raw": "[[Smart Contract]]", "resolved": "urn:visionflow:linked:smart-contract", "kind": "ResolvedLink" },
-    { "raw": "[[Data Governance]]", "resolved": "urn:visionflow:linked:data-governance", "kind": "StubLink" },
-    { "raw": "[[Explainability]]", "resolved": "urn:visionflow:linked:explainability", "kind": "StubLink" },
-    { "raw": "[[Model Card]]", "resolved": "urn:visionflow:linked:model-card", "kind": "StubLink" },
-    { "raw": "[[MLOps]]", "resolved": "urn:visionflow:linked:mlops", "kind": "StubLink" },
-    { "raw": "[[Risk Management]]", "resolved": "urn:visionflow:linked:risk-management", "kind": "ResolvedLink" },
-    { "raw": "[[Transparency]]", "resolved": "urn:visionflow:linked:transparency", "kind": "StubLink" },
-    { "raw": "[[Human Oversight]]", "resolved": "urn:visionflow:linked:human-oversight", "kind": "StubLink" },
-    { "raw": "[[Responsible AI]]", "resolved": "urn:visionflow:linked:responsible-ai", "kind": "StubLink" },
-    { "raw": "[[Digital Signature]]", "resolved": "urn:visionflow:linked:digital-signature", "kind": "StubLink" },
-    { "raw": "[[Zero-Knowledge Proof]]", "resolved": "urn:visionflow:linked:zero-knowledge-proof", "kind": "StubLink" },
-    { "raw": "[[ISO IEC 42001]]", "resolved": "urn:visionflow:linked:iso-iec-42001", "kind": "StubLink" },
-    { "raw": "[[NIST AI RMF]]", "resolved": "urn:visionflow:linked:nist-ai-rmf", "kind": "StubLink" },
-    { "raw": "[[Algorithmic Auditing]]", "resolved": "urn:visionflow:linked:algorithmic-auditing", "kind": "ResolvedLink" },
-    { "raw": "[[Incident Management]]", "resolved": "urn:visionflow:linked:incident-management", "kind": "StubLink" },
-    { "raw": "[[Change Management]]", "resolved": "urn:visionflow:linked:change-management", "kind": "StubLink" }
-  ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
-  "prov:generatedAtTime": { "@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime" }
-}
-```
-
 
 - ### Definition
   - A compliance audit trail is an immutable, chronologically ordered record system that demonstrates organisational adherence to applicable policies, laws, and regulations by capturing cryptographically sealed logs of every [[Compliance Verification|compliance verification]] activity, control operation, [[Policy Document|policy decision]], and [[Regulatory Evidence|evidentiary artefact]] throughout the lifecycle of a governed system or process. At its core, the compliance audit trail serves as the authoritative evidentiary backbone of any [[Compliance Management System]], providing regulators, internal auditors, and external assurance bodies with a tamper-evident, queryable record of what happened, when it happened, who authorised it, which [[Policy Document|policy]] it related to, and what the resulting outcome was. The foundational technical requirements are that each log entry carries a precise [[Timestamp]] (UTC-synchronised to a trusted time source), is uniquely identified, captures sufficient context to reconstruct the compliance-relevant decision or event, is linked cryptographically to preceding and subsequent entries via [[Cryptographic Hash|cryptographic hashing]] (preventing silent insertion, deletion, or modification), and is stored in [[Immutable Storage]] protected by [[Access Control|role-based access controls]] that prevent post-hoc alteration by any party including system administrators. The governance context is supplied by the [[Regulatory Framework]] to which the audit trail attests: [[ISO 37301]] (Compliance Management Systems) establishes the organisational programme requirements; [[ISO IEC 42001]] (AI Management Systems) specifies the AI-specific logging obligations; [[EU AI Act]] Article 12 mandates automatic log generation for all high-risk AI systems with a minimum six-month retention period (extended by Article 19(2) to five years for financial services entities under [[MiFID II]]); the [[Digital Operational Resilience Act]] (DORA, mandatory from 17 January 2025) requires tamper-proof ICT incident logs for EU-regulated financial entities; and [[GDPR]] Article 30 mandates records of processing activities as a foundational audit trail requirement. The [[Policy Engine]] evaluating each transaction against the applicable policy set generates the primary compliance event, which the audit trail captures together with the policy version consulted, the parameters evaluated, and the decision rendered, creating a replay-capable record of the [[Compliance Verification|verification process]] that can subsequently support [[Regulatory Reporting]], [[Risk Assessment]], [[Algorithmic Auditing]], and litigation defence. As AI systems have become embedded in high-stakes decision-making across finance, healthcare, and public administration, the compliance audit trail has evolved from a simple activity log into a sophisticated [[Data Provenance|data provenance]] and decision-tracing infrastructure: capturing not only human actions but model inference calls, prompt inputs, output tokens, model version identifiers, dataset hashes, and [[Model Card|model card]] attestations — forming the evidentiary substrate required for [[Accountability]] and [[Explainability]] under modern AI governance frameworks including the [[EU AI Act]], [[NIST AI RMF]], and the UK's sector-based AI oversight regime coordinated by the ICO, FCA, and MHRA.
@@ -322,7 +506,7 @@ public: true
     ```
 
   - ## About
-    - The compliance audit trail is one of the oldest governance instruments in organised human activity: the Venetian merchants of the thirteenth century maintained double-entry books precisely so that any transaction could be reconstructed, attributed, and audited. The modern information-systems instantiation of this ancient requirement — a sequentially numbered, tamper-evident, cryptographically linked log of every compliance-relevant event, decision, and control operation — has become the fundamental technical substrate of regulatory assurance in every heavily governed industry sector. Its importance has grown exponentially with the proliferation of automated decision systems, AI inference pipelines, and cloud-scale data processing: when a decision affecting a regulated person or organisation is made in milliseconds by a machine learning model rather than in minutes by a human, the audit trail is the only mechanism by which the decision can be reviewed, contested, or attributed after the fact. Without a compliance audit trail that captures the exact inputs presented to the model, the model version consulted, the inference outputs generated, and the subsequent action taken, the [[Accountability]] and [[Explainability]] required by modern governance frameworks is simply unachievable — there is nothing to audit.
+    - The compliance audit trail is one of the oldest governance instruments in organised human activity: the Venetian merchants of the thirteenth century maintained double-entry books precisely so that any transaction [private] be reconstructed, attributed, and audited. The modern information-systems instantiation of this ancient requirement — a sequentially numbered, tamper-evident, cryptographically linked log of every compliance-relevant event, decision, and control operation — has become the fundamental technical substrate of regulatory assurance in every heavily governed industry sector. Its importance has grown exponentially with the proliferation of automated decision systems, AI inference pipelines, and cloud-scale data processing: when a decision affecting a regulated person or organisation is made in milliseconds by a machine learning model rather than in minutes by a human, the audit trail is the only mechanism by which the decision can be reviewed, contested, or attributed after the fact. Without a compliance audit trail that captures the exact inputs presented to the model, the model version consulted, the inference outputs generated, and the subsequent action taken, the [[Accountability]] and [[Explainability]] required by modern governance frameworks is simply unachievable — there is nothing to audit.
     - The technical architecture of a compliance audit trail is structured around three guarantees: integrity (the record cannot be altered after creation), availability (the record is retrievable on demand by authorised parties within defined latency bounds), and authenticity (the record accurately represents the event it purports to document). Integrity is achieved through [[Cryptographic Hash|cryptographic hashing]] — typically SHA-256 or SHA-3 — linking each log entry to the hash of the preceding entry (forming a Merkle-chain or blockchain-like hash chain), so that any retrospective modification of an entry invalidates the hashes of all subsequent entries, making tampering detectable. [[Digital Signature|Digital signatures]] using asymmetric cryptography (ECDSA, or ML-DSA under NIST FIPS 204 for post-quantum resistance) sign each entry at point of creation, binding it to the signing key of the system or operator that generated it — providing non-repudiation as well as integrity. [[Immutable Storage]] prevents authorised parties from deleting or overwriting entries: implementations range from write-once-read-many (WORM) optical or tape storage for archival tiers, through append-only database structures (e.g., PostgreSQL audit-log tables with row-security preventing UPDATE/DELETE, or Apache Kafka log compaction), to [[Blockchain|distributed ledger storage]] where cryptographic consensus across multiple independent nodes prevents any single party from altering the record. [[Access Control|Role-based access controls]] ensure that only authorised processes can write to the trail, only authorised auditors can read it, and no party — including database administrators — can alter or delete entries without detection.
     - The regulatory landscape governing compliance audit trails has undergone radical expansion between 2020 and 2026. [[GDPR]] Article 30 requires organisations processing personal data to maintain records of processing activities — a foundational audit trail requirement — while Article 5(2)'s accountability principle implicitly demands evidence of compliance with all other GDPR principles, which audit trails supply. The [[EU AI Act]], which entered phased implementation in August 2025 with high-risk AI obligations taking full effect August 2026, imposes under Article 12 a mandatory obligation on providers of high-risk AI systems to ensure those systems automatically generate logs of their operations — specifically records of the operational period of each use, input data reference enabling verification, identification of natural persons involved in verification, and details of output data. Article 19 establishes a minimum six-month retention period for automatically generated logs for most high-risk AI, but explicitly defers to financial services law ([[MiFID II]], Solvency II, DORA) for regulated entities — meaning [[MiFID II]]'s five-year transaction log retention requirement takes precedence for financial services AI. The [[Digital Operational Resilience Act]] (DORA), mandatory from 17 January 2025, requires EU-regulated financial entities and their ICT third-party service providers to maintain tamper-proof logs of all significant ICT incidents, with major incidents reportable to regulators within hours of classification. [[ISO 37301]] (Compliance Management Systems, 2021) provides the organisational framework within which audit trails operate, specifying evidence collection, retention, and retrieval requirements as part of the compliance management process. [[ISO IEC 42001]] (AI Management Systems, 2023) includes specific requirements for AI-system audit trails as part of AI risk management and operational control, and the [[NIST AI RMF]] (2023) maps audit trail requirements to the Govern and Measure functions. The UK's sector-specific approach — coordinating the ICO, FCA, MHRA, Ofcom, and CMA as lead regulators for AI in their respective sectors rather than establishing a single horizontal AI regulator — means that UK compliance audit trail requirements are embedded within each sector's existing regulatory frameworks, with the FCA's Senior Managers and Certification Regime (SM&CR) demanding evidential audit trails of individual accountability for regulated financial activities and the ICO's October 2023 guidance on AI and data protection mandating recordkeeping for [[Explainability|explainability]] purposes.
 
@@ -356,7 +540,7 @@ public: true
     - **Blockchain Council analysis (2025)**: The Blockchain Council's detailed 2025 guide "Blockchain for AI Compliance With Immutable Logs" confirms enterprise adoption of permissioned blockchain audit trails for [[GDPR]], HIPAA, and [[EU AI Act]] compliance. The hybrid architecture — full logs in off-chain append-only databases with periodic Merkle root anchoring to blockchain — is emerging as the practical standard, balancing throughput requirements (millions of AI inference events per day) against blockchain storage costs.
     - **UK ICO AI guidance**: The ICO's October 2023 AI and data protection guidance, updated with supplementary AI Act compatibility advice in 2025, mandates that organisations using AI to make decisions about individuals maintain records sufficient to explain those decisions to the individuals concerned and to the ICO on demand — creating a practical compliance audit trail requirement under [[GDPR]]'s accountability principle for all UK AI deployments, regardless of [[EU AI Act]] applicability.
     - **LLM audit trail research (2026)**: arXiv:2601.20727v1 (January 2026) "Audit Trails for Accountability in Large Language Models" is the first systematic academic treatment of LLM-specific audit trail design. The paper identifies the stochastic nature of LLM inference, the privacy sensitivity of prompt content, and the multi-turn conversational context dependency as unique challenges for LLM audit trail architecture that existing compliance logging frameworks do not address. It proposes an LLM-specific audit log schema and argues for regulatory guidance specifically addressing LLM inference logging.
-    - **Post-quantum cryptography transition**: The NIST FIPS 204 (ML-DSA, formerly CRYSTALS-Dilithium, standardised August 2024) post-quantum digital signature standard is increasingly referenced in compliance audit trail contexts as the cryptographic basis for future-proof log signing — motivated by the "harvest now, decrypt later" threat model in which current RSA/ECDSA signatures on audit trail entries could be retroactively broken by quantum computers after sufficiently long retention periods. The VeritasChain VCP v1.1 (January 2026) specifically proposes ML-DSA for [[EU AI Act]] audit trail signing, positioning post-quantum signature as a compliance-grade requirement for audit trails with 5-10 year retention periods.
+    - **Post-quantum cryptography transition**: The NIST FIPS 204 (ML-DSA, formerly CRYSTALS-Dilithium, standardised August 2024) post-quantum digital signature standard is increasingly referenced in compliance audit trail contexts as the cryptographic basis for future-proof log signing — motivated by the "harvest now, decrypt later" threat model in which current RSA/ECDSA signatures on audit trail entries [private] be retroactively broken by quantum computers after sufficiently long retention periods. The VeritasChain VCP v1.1 (January 2026) specifically proposes ML-DSA for [[EU AI Act]] audit trail signing, positioning post-quantum signature as a compliance-grade requirement for audit trails with 5-10 year retention periods.
     - **MLOps tool integration**: The TESS Group UK guide "Why Every AI-Touched Workflow Needs an Audit Trail in 2026" identifies convergence between [[MLOps]] operational tooling (MLflow, Kubeflow, SageMaker) and compliance audit trail requirements, noting that MLOps platforms provide the data lineage and experiment tracking foundation but require compliance-layer augmentation for immutability, regulated access, and legal admissibility. The SparkCo.ai "AI Model Audit Trail Documentation Requirements" guide formalises the documentation artefacts — [[Model Card|model cards]], datasheets, factsheets, training run logs, evaluation reports — that together constitute the AI model compliance audit trail.
 
   - ## UK Context

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Inversion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -116,57 +111,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-inversion:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b9d9773099f892dd0eec4a98c52c61a3614ef8465bf539a1c1fbc9fa2fdb7cb7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RGB]]",
-      "resolved": "urn:visionflow:linked:rgb",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Nostr protocol]]",
-      "resolved": "urn:visionflow:owl:class:nostr-protocol",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An inference-time privacy attack that reconstructs sensitive training data or attributes from a trained model by exploiting model outputs, predictions, or internal representations, potentially revealing confidential information about individuals in the training dataset.

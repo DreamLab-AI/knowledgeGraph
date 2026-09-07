@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Shared Ownership Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:shared-ownership-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f166915e2fdacae869ea464d4c6d46c134346e702d0c6e809c5f661fb31f6863"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Democratized Investment]]",
-      "resolved": "urn:visionflow:linked:democratized-investment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asset Tokenisation]]",
-      "resolved": "urn:visionflow:owl:class:asset-tokenization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A blockchain-enabled framework for fractional ownership of high-value assets through tokenization, allowing multiple parties to hold proportional stakes in real estate, digital art, intellectual property, or virtual assets with automated governance via smart contracts.

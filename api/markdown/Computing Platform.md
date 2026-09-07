@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computing Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -103,37 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computing-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d48dec94d04c44678492db1d1d7df1ff66ed80097538cd030011a0a2e77b2976"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A computing platform is a hardware and software environment that provides the foundational execution context for applications, services, and AI workloads. It encompasses the combination of processor architecture, operating system, runtime libraries, and supporting infrastructure—such as cloud, edge, or on-premises nodes—that determines what software can run and how it performs.

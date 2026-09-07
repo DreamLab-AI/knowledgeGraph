@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Capital Formation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Capital formation is the economic and financial process by which savings are channelled into productive investment, raising the stock of capital goods and funding enterprises. In capital markets it refers specifically to the issuance and sale of securities — equity and debt — that allow firms to raise funds from investors. Efficient capital formation underpins economic growth and is a central policy objective of securities regulation, which balances investor protection against ease of raising capital.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
+      {
+        "@id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
     ]
   },
   "quality": 0.72

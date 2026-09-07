@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Cross Entropy Loss
----
-
-# Cross-Entropy Loss
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -14,34 +7,118 @@ aliases:
   "title": "Cross-Entropy Loss",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:owl:class:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:owl:class:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:owl:class:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:owl:class:language-modeling", "vc:label": "Language Modeling"},
-    {"@id": "urn:visionflow:owl:class:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:visionflow:owl:class:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:owl:class:softmax-function", "vc:label": "Softmax Function"},
-    {"@id": "urn:visionflow:owl:class:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:owl:class:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:owl:class:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:owl:class:kl-divergence", "vc:label": "KL Divergence"},
-    {"@id": "urn:visionflow:owl:class:information-theory", "vc:label": "Information Theory"},
-    {"@id": "urn:visionflow:owl:class:activation-function", "vc:label": "Activation Function"},
-    {"@id": "urn:visionflow:owl:class:stochastic-gradient-descent", "vc:label": "Stochastic Gradient Descent"},
-    {"@id": "urn:visionflow:owl:class:label-smoothing", "vc:label": "Label Smoothing"},
-    {"@id": "urn:visionflow:owl:class:focal-loss", "vc:label": "Focal Loss"},
-    {"@id": "urn:visionflow:owl:class:direct-preference-optimisation", "vc:label": "Direct Preference Optimisation"},
-    {"@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:owl:class:mean-squared-error", "vc:label": "Mean Squared Error"},
-    {"@id": "urn:visionflow:owl:class:contrastive-loss", "vc:label": "Contrastive Loss"},
-    {"@id": "urn:visionflow:owl:class:maximum-likelihood-estimation", "vc:label": "Maximum Likelihood Estimation"},
-    {"@id": "urn:visionflow:owl:class:perplexity", "vc:label": "Perplexity"},
-    {"@id": "urn:visionflow:owl:class:token-prediction", "vc:label": "Token Prediction"},
-    {"@id": "urn:visionflow:owl:class:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:owl:class:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:owl:class:fine-tuning", "vc:label": "Fine-Tuning"}
+    {
+      "@id": "urn:visionflow:owl:class:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:language-modeling",
+      "vc:label": "Language Modeling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:softmax-function",
+      "vc:label": "Softmax Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:kl-divergence",
+      "vc:label": "KL Divergence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:activation-function",
+      "vc:label": "Activation Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+      "vc:label": "Stochastic Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:label-smoothing",
+      "vc:label": "Label Smoothing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:focal-loss",
+      "vc:label": "Focal Loss"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:direct-preference-optimisation",
+      "vc:label": "Direct Preference Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mean-squared-error",
+      "vc:label": "Mean Squared Error"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:contrastive-loss",
+      "vc:label": "Contrastive Loss"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:maximum-likelihood-estimation",
+      "vc:label": "Maximum Likelihood Estimation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:perplexity",
+      "vc:label": "Perplexity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:token-prediction",
+      "vc:label": "Token Prediction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -56,36 +133,95 @@ aliases:
   "definition": "Cross-entropy loss is a differentiable scalar objective function that measures the dissimilarity between a model's predicted probability distribution and the true label distribution, computed as the negative log-likelihood of the correct class under the model's output. It is the canonical training objective for classification tasks and language modelling, directly optimising the model to assign maximum probability mass to correct outputs. Minimising cross-entropy is equivalent to maximising the likelihood of the training data under the model's parameterised distribution.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:loss-function",
+      "label": "Loss Function"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:softmax-function", "label": "Softmax Function"},
-      {"@id": "urn:ngm:class:maximum-likelihood-estimation", "label": "Maximum Likelihood Estimation"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      },
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:kl-divergence", "label": "KL Divergence"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"},
-      {"@id": "urn:ngm:class:perplexity", "label": "Perplexity"},
-      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:kl-divergence",
+        "label": "KL Divergence"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:perplexity",
+        "label": "Perplexity"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:mean-squared-error", "label": "Mean Squared Error"},
-      {"@id": "urn:ngm:class:contrastive-loss", "label": "Contrastive Loss"},
-      {"@id": "urn:ngm:class:focal-loss", "label": "Focal Loss"}
+      {
+        "@id": "urn:ngm:class:mean-squared-error",
+        "label": "Mean Squared Error"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-loss",
+        "label": "Contrastive Loss"
+      },
+      {
+        "@id": "urn:ngm:class:focal-loss",
+        "label": "Focal Loss"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -211,7 +347,7 @@ aliases:
 
   The algorithmic attractiveness of cross-entropy rests on two properties of its gradient. First, the gradient with respect to the pre-softmax logits zᵢ is simply (p̂ᵢ − yᵢ), the difference between predicted and one-hot true probability for class i. This eliminates the Jacobian of the [[Softmax Function]] from the [[Backpropagation]] chain, making the backward pass efficient and numerically stable. Second, the gradient scales with prediction error: when the model is confident and correct, the gradient is near zero; when it is confident and wrong, the gradient is large, providing a strong corrective signal. By contrast, the mean squared error (MSE) loss applied to probabilities suffers from gradient saturation when predictions are near zero or one, because the derivative of the sigmoid approaches zero in those regions. Cross-entropy's use of the logarithm avoids this saturation, making it far better conditioned for [[Deep Learning]] training than MSE for classification problems.
 
-  The dominance of cross-entropy as a training objective should be understood in the context of competing objectives that were evaluated and largely superseded. In the early neural network era (1980s–1990s), mean squared error was the default loss even for classification tasks, because the connection between neural network outputs and probabilities was not yet canonical. The seminal contribution of Rumelhart, Hinton, and Williams (1986) used MSE with the chain rule of calculus ([[Backpropagation]]) to demonstrate that multi-layer networks could learn useful representations, but the choice of loss function was not yet theoretically grounded. It was the probabilistic interpretation of neural network outputs — viewing the softmax-normalised output as a categorical probability distribution — that established cross-entropy as the theoretically motivated choice. This interpretation, formalised in Bishop's 1995 "Neural Networks for Pattern Recognition" and made mainstream by Goodfellow, Bengio, and Courville's 2016 textbook, grounds cross-entropy loss in [[Maximum Likelihood Estimation]], connecting it to the entire Bayesian probabilistic modelling tradition.
+  The dominance of cross-entropy as a training objective should be understood in the context of competing objectives that were evaluated and largely superseded. In the early neural network era (1980s–1990s), mean squared error was the default loss even for classification tasks, because the connection between neural network outputs and probabilities was not yet canonical. The seminal contribution of Rumelhart, Hinton, and Williams (1986) used MSE with the chain rule of calculus ([[Backpropagation]]) to demonstrate that multi-layer networks [private] learn useful representations, but the choice of loss function was not yet theoretically grounded. It was the probabilistic interpretation of neural network outputs — viewing the softmax-normalised output as a categorical probability distribution — that established cross-entropy as the theoretically motivated choice. This interpretation, formalised in Bishop's 1995 "Neural Networks for Pattern Recognition" and made mainstream by Goodfellow, Bengio, and Courville's 2016 textbook, grounds cross-entropy loss in [[Maximum Likelihood Estimation]], connecting it to the entire Bayesian probabilistic modelling tradition.
 
   For language modelling specifically, cross-entropy plays a dual role: it is both the training objective and the primary evaluation metric (via [[Perplexity]]). In autoregressive [[Transformer]] language models, the training procedure is teacher-forced next-token prediction: at each position t in a sequence, the model receives the true preceding tokens w₁, ..., wₜ₋₁ as input and computes a probability distribution over the vocabulary V. The cross-entropy loss at position t is -log P(wₜ | w₁, ..., wₜ₋₁; θ), and the total sequence loss is the average over all positions. This formulation has a clean information-theoretic interpretation: the per-token cross-entropy is the number of bits required by the model to encode the next token, given the context; lower perplexity (exp(cross-entropy)) means the model is more concentrated on the correct next token, having effectively learned the statistical regularities of the language. Pre-training [[Large Language Models]] such as GPT-4, LLaMA 3, and Gemini 1.5 on cross-entropy over trillions of tokens produces emergent capabilities — in-context learning, chain-of-thought reasoning, instruction-following — that were not explicitly trained but arise from the statistical structure captured by the cross-entropy objective at scale.
 
@@ -221,7 +357,7 @@ aliases:
   For a C-class classification problem, given logit vector z ∈ ℝᶜ and one-hot label y:
 
   - Softmax: p̂ᵢ = exp(zᵢ) / ∑ⱼ exp(zⱼ)
-  - Cross-entropy: L = -∑ᵢ yᵢ log(p̂ᵢ) = -log(p̂_y) (where y is the true class index)
+  - Cross-entropy: L = -∑ᵢ yᵢ log(p̂ᵢ) = -log(p̂_y) (where y is the true class [private])
   - Gradient: ∂L/∂zᵢ = p̂ᵢ - yᵢ
   - For language modelling over vocabulary V, at position t: Lₜ = -log(p̂(wₜ | w₁, ..., wₜ₋₁))
   - Per-sequence loss: L = -(1/T) ∑ₜ log p̂(wₜ | w<ₜ)
@@ -435,7 +571,7 @@ aliases:
   Vapnik's Statistical Learning Theory (1995) contextualised cross-entropy minimisation as empirical risk minimisation with the log-loss, providing PAC-learning guarantees. Bishop (1995) "Neural Networks for Pattern Recognition" provided the definitive textbook treatment connecting cross-entropy to MLE, the exponential family, and Bayesian inference. Hochreiter and Schmidhuber (1997) applied cross-entropy to train LSTMs for sequence modelling, demonstrating its applicability to temporal prediction tasks.
 
   **2000s: Large-Scale Classification and Deep Learning**
-  The ImageNet challenge (Russakovsky et al., 2015, but data available from 2009) made large-scale categorical cross-entropy (1000 classes) the canonical deep learning benchmark. Hinton et al. (2006) showed that deep belief networks pre-trained with unsupervised contrastive divergence could be fine-tuned with cross-entropy on labelled data, initiating the deep learning era. Nair and Hinton (2010) introduced ReLU activation functions that avoided the vanishing gradient problem with sigmoid+MSE combinations, making deep cross-entropy networks more trainable.
+  The ImageNet challenge (Russakovsky et al., 2015, but data available from 2009) made large-scale categorical cross-entropy (1000 classes) the canonical deep learning benchmark. Hinton et al. (2006) showed that deep belief networks pre-trained with unsupervised contrastive divergence [private] be fine-tuned with cross-entropy on labelled data, initiating the deep learning era. Nair and Hinton (2010) introduced ReLU activation functions that avoided the vanishing gradient problem with sigmoid+MSE combinations, making deep cross-entropy networks more trainable.
 
   **2010s: Transformers and Attention**
   The [[Transformer]] architecture (Vaswani et al., 2017) adopted cross-entropy with [[Label Smoothing]] (ε=0.1) as its standard training objective for neural machine translation, and this choice has persisted across all subsequent transformer-based models. GPT (Radford et al., 2018), BERT (Devlin et al., 2019), and GPT-2 (Radford et al., 2019) applied cross-entropy at unprecedented scale (billions of parameters, hundreds of billions of training tokens), revealing emergent capabilities not present in smaller models. The Focal Loss paper (Lin et al., 2017) from Facebook AI Research extended cross-entropy to the class-imbalanced object detection setting, triggering widespread adoption of loss function modifications across computer vision.

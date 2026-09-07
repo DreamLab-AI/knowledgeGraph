@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mediation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,7 +85,7 @@ public: true
 
   **Mediation** is assisted negotiation: a neutral mediator facilitates the parties' own search for settlement but, unlike a judge or arbitrator, decides nothing. The mediator's leverage is procedural and psychological rather than coercive — structuring the discussion, moving between parties in private caucuses, testing the realism of each side's position, and reframing entrenched demands into underlying interests that can be traded. This distinguishes mediation from direct [[Negotiation]], where the parties face each other without a neutral, and from adjudicative processes, where a third party imposes an outcome; on the [[Dispute Resolution]] spectrum it sits between the two, keeping outcome control with the parties while adding a third party's process control.
 
-  Three properties do most of the work. **Consent**: participation and settlement are voluntary, so agreements tend to hold — parties comply with terms they authored. **Confidentiality**: proceedings are private and "without prejudice", so parties can make concessions and disclose weaknesses without those admissions surfacing in later litigation. **Interest focus**: drawing on the Fisher-Ury tradition of principled negotiation, mediators move parties from positions ("I want £X") to interests (cash flow, reputation, a continuing relationship), which multiplies the settlement options beyond what a court could order — apologies, future contracts, restructured payments.
+  Three properties do most of the work. **Consent**: participation and settlement are voluntary, so agreements tend to hold — parties comply with terms they authored. **Confidentiality**: proceedings are private and "without prejudice", so parties can make concessions and disclose weaknesses without those admissions surfacing in later litigation. **Interest focus**: drawing on the Fisher-Ury tradition of principled negotiation, mediators move parties from positions ("I want £X") to interests (cash flow, reputation, a continuing relationship), which multiplies the settlement options beyond what a court [private] order — apologies, future contracts, restructured payments.
 
   Practice styles range from *facilitative* (the mediator manages process only) through *evaluative* (the mediator offers views on the merits, common in commercial disputes) to *transformative* and restorative approaches oriented to repairing the relationship itself, the territory mediation shares with broader [[Conflict Resolution]] practice in workplaces, communities, and peace processes.
 

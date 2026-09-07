@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Neural Processing Unit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,4 +185,3 @@ public: true
   - The ecosystem of NPU-equipped hardware has expanded across all device classes. Apple Silicon (M1, M2, M3, M4) integrates a Neural Engine rated at up to 38 TOPS (tera-operations per second) in the M4. Qualcomm's Snapdragon X Elite NPU delivers 45 TOPS for Windows AI PCs. Intel's Meteor Lake CPUs integrate an NPU for Windows 11 AI features, and AMD's Ryzen AI series follows suit. Microsoft's Copilot+ PC specification (2024) mandates a minimum 40 TOPS NPU, establishing NPU capability as a platform requirement for next-generation AI-enhanced computing experiences.
 
   - In 2024–2025 the NPU landscape is being reshaped by generative AI. Running quantised large language models (7–13B parameters) on-device is now within reach of high-end mobile and laptop NPUs, enabling private, offline LLM inference. Apple's on-device model running on M-series and A-series chips, Microsoft's Phi-3 models tuned for NPU execution, and Qualcomm's AI Hub SDK demonstrate active industry investment. The key constraint is memory bandwidth — NPUs are compute-fast but feeding large transformer models saturates on-chip SRAM, requiring careful model partitioning and prefetching. Research into in-memory computing and photonic neural processors points toward the post-silicon NPU horizon.
-

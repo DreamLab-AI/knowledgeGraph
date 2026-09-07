@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tokenised Real World Assets
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Tokenised real-world assets (RWAs) are blockchain tokens that represent ownership or economic rights in tangible or traditional financial assets such as property, bonds, equities, or commodities. By mapping off-chain value onto programmable tokens, they enable fractional ownership, continuous settlement, and integration with decentralised finance while still depending on legal frameworks and custodians for enforceability.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}, {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ]
   },
   "quality": 0.72
 }

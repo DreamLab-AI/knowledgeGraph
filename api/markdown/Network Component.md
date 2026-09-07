@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Component
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,15 +58,30 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ]
   },
   "quality": 0.35,
@@ -88,37 +98,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:network-component:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:efee90aeb001f60c852a64b8fd4c1e0cd4161b4cd06a91e6dfc221257af2ef5b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain Technology]]",
-      "resolved": "urn:visionflow:linked:blockchain-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Network Component represents the fundamental infrastructure elements that constitute blockchain networks, including different node types, network protocols, and communication layers. These components work together to enable distributed consensus, data replication, and peer-to-peer communication across the blockchain ecosystem.

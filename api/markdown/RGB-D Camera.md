@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RGB-D Camera
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "An RGB-D camera is a sensor that captures both colour (RGB) imagery and per-pixel depth (D) information in a single aligned frame. Depth is typically derived from structured light, time-of-flight, or stereo techniques, yielding a dense 3D representation of the scene. RGB-D cameras are widely used in robotics for perception, mapping, and manipulation because they combine appearance and geometry cheaply.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:robotics-platform", "label": "Robotics Platform"}, {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ]
   },
   "quality": 0.72
 }

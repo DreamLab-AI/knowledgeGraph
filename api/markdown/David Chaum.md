@@ -1,8 +1,3 @@
----
-public: true
----
-
-# David Chaum
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:david-chaum:bcccc3635a2f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bc0b467b02fd6ce04bf2667808dcac74881d4103702c02c9df169f134ed3cb8d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Public-Key Cryptography]]",
-      "resolved": "urn:visionflow:linked:public-key-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus]]",
-      "resolved": "urn:visionflow:linked:consensus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - American computer scientist and cryptographer who pioneered digital cash, blind signatures and anonymous communication, and is widely regarded as a founder of the cypherpunk and privacy technology fields.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - NetworkSlicing
----
-
-# Network Slicing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

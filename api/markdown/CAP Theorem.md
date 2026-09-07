@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CAP Theorem
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,57 +157,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cap-theorem:6764cb9f7b3e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:63468c27dee0c80fbc3878c4be8e410de2e2ad3301efa2080623986b3e9d1f51"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Distributed Database Design]]",
-      "resolved": "urn:visionflow:linked:distributed-database-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed Systems Domain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus]]",
-      "resolved": "urn:visionflow:linked:consensus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Eventual Consistency]]",
-      "resolved": "urn:visionflow:linked:eventual-consistency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gilbert and Lynch (2002)]]",
-      "resolved": "urn:visionflow:linked:gilbert-and-lynch-2002",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The CAP Theorem states that a distributed data store cannot simultaneously guarantee all three of consistency, availability and partition tolerance. When a network partition occurs and messages between nodes are lost or delayed, a system must choose between remaining available, by serving possibly stale data, and remaining consistent, by refusing requests it cannot safely satisfy. Formulated by Eric Brewer and later proved formally by Gilbert and Lynch, it frames a fundamental trade-off in distributed systems design.

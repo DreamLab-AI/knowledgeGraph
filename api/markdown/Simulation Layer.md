@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Simulation Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:simulation-layer:ed59b2240654",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:edc617ccecb9341b35f928f953d1e2a9b6c401f71d00df138d74f76a65cd61ba"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Compute Layer]]",
-      "resolved": "urn:visionflow:linked:compute-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Layer]]",
-      "resolved": "urn:visionflow:linked:model-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Research Layer]]",
-      "resolved": "urn:visionflow:linked:research-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Evaluation Layer]]",
-      "resolved": "urn:visionflow:linked:evaluation-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Monte Carlo Method]]",
-      "resolved": "urn:visionflow:linked:monte-carlo-method",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:linked:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Simulation Layer is the cross-cutting stratum that models system or environment behaviour to test and predict outcomes without acting on the real world. It sits above compute and model strata it uses and supports research, evaluation, and planning. It contains simulators, environment models, and the scenarios run within them.

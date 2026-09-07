@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Zero Convolution
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:zero-convolution", "@type":"Page", "title":"Zero Convolution", "vc:slug":"zero-convolution", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:zero-convolution",
+  "@type": "Page",
+  "title": "Zero Convolution",
+  "vc:slug": "zero-convolution",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

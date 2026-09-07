@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Classroom
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,16 +58,34 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"}
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
-      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:education-metaverse", "label": "Education Metaverse"},
-      {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"}
+      {
+        "@id": "urn:ngm:class:education-metaverse",
+        "label": "Education Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      }
     ]
   },
   "quality": 0.5,
@@ -83,37 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-classroom:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:592294371e4beca57bfad912c782657132efcb743e173837ad64dce75f8c687a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Environment]]",
-      "resolved": "urn:visionflow:owl:class:virtual-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An online learning environment that replicates a traditional classroom's interactive experience without physical boundaries, leveraging education technology to connect students and instructors through real-time engagement, collaboration tools, and shared learning materials.

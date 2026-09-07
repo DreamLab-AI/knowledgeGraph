@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bluetooth
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bluetooth:a828d1db82af",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9f14a080eecdaac838e7b7b0d77fe703c8bac1753bc68ca316b16a23825c154b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bluetooth Low Energy]]",
-      "resolved": "urn:visionflow:linked:bluetooth-low-energy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Internet of Things]]",
-      "resolved": "urn:visionflow:linked:internet-of-things",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A short-range wireless communication standard for exchanging data between devices over radio frequencies in the 2.4 gigahertz band. It is widely used for peripherals, audio, and low-power sensors.

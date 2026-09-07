@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Model Calibration
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

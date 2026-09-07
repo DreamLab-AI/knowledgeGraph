@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 1Hive
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:1-hive:5551dc3bd123",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b82f7b7212d41b4decc443e2c3dd1e81f069ea37fd51a1122cc706b17dde51a5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralized Autonomous Organization]]",
-      "resolved": "urn:visionflow:linked:decentralized-autonomous-organization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Token]]",
-      "resolved": "urn:visionflow:linked:governance-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quadratic Funding]]",
-      "resolved": "urn:visionflow:linked:quadratic-funding",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquid Democracy]]",
-      "resolved": "urn:visionflow:linked:liquid-democracy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A decentralised community and DAO that issues the Honey community currency and develops governance tooling such as the Gardens framework for conviction voting.

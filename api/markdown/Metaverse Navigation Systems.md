@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metaverse Navigation Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,23 +60,56 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:presence", "label": "Presence"},
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ]
   },
   "provenance": {
@@ -91,37 +119,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-navigation-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cfeebaf368e5c77d1c210a5ad656e5f2efdcd84d978d79863ea7b8639d41de40"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - [Generated from Gartner emerging tech analysis]

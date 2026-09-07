@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Melvin Carvalho]]
-# Melvin Carvalho Decentralised Web Advocate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,47 +79,6 @@ elevatedFrom:: [[Melvin Carvalho]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:melvin-carvalho:5a253a64ff38",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a49265f4447c913741dfcfbb1d3c3ef2c6a72d6ec7c4a23ba8b69c8db85efde5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Linked Data]]",
-      "resolved": "urn:visionflow:linked:linked-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Identity]]",
-      "resolved": "urn:visionflow:linked:decentralized-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Solid]]",
-      "resolved": "urn:visionflow:linked:solid",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Web Linked Data Standard]]",
-      "resolved": "urn:visionflow:linked:semantic-web",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Melvin Carvalho is a developer and advocate active in decentralised web and identity standards work, contributing to linked data, Solid and related semantic web technologies.

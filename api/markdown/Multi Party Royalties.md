@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Multi-Party Royalties
----
-
-# Multi Party Royalties
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +76,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:multi-party-royalties:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:df0842eeef90a7c1607ec32441047ce21fa77d6e1a6797e86f46ddc533670fcd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Creator Economy]]",
-      "resolved": "urn:visionflow:owl:class:creator-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Revenue Sharing]]",
-      "resolved": "urn:visionflow:owl:class:revenue-sharing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A blockchain-based revenue distribution mechanism that uses smart contracts to automatically split and distribute royalty payments among multiple stakeholders including creators, collaborators, developers, and brands based on predefined ownership percentages.

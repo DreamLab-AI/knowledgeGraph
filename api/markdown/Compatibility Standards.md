@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Compatibility Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -127,77 +122,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:compatibility-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1f29761c196312150bf85dab54a1c1b5bd3200981984eae428f69a30506db0b2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Portability]]",
-      "resolved": "urn:visionflow:linked:asset-portability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-Platform Experience]]",
-      "resolved": "urn:visionflow:linked:cross-platform-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
-      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Industry Collaboration]]",
-      "resolved": "urn:visionflow:linked:industry-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Protocol Development]]",
-      "resolved": "urn:visionflow:linked:protocol-development",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Standards Bodies]]",
-      "resolved": "urn:visionflow:linked:standards-bodies",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standards]]",
-      "resolved": "urn:visionflow:owl:class:technical-standards",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technical specifications and protocols that enable interoperability between different metaverse platforms, virtual environments, and digital systems, including asset formats, communication protocols, and interface standards that allow seamless user experiences across multiple platforms without vendor lock-in.

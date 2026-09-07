@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Statistics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,47 +171,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:statistics:49d4843163a7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1a57a2dc7fed8ea46a932f38c9333e961f4699394db4cb59c1e1abd0f3c8bcf9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Statistical Learning Theory]]",
-      "resolved": "urn:visionflow:linked:statistical-learning-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bayesian Inference]]",
-      "resolved": "urn:visionflow:linked:bayesian-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The discipline concerned with collecting, analysing, interpreting, and drawing conclusions from data under uncertainty.

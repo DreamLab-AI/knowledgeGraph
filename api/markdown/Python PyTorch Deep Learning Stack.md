@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Python and PyTorch]]
-# Python PyTorch Deep Learning Stack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,52 +182,6 @@ elevatedFrom:: [[Python and PyTorch]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:python-and-py-torch:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:89188ea2b705d209e05bb27f26a608d93e2c80293050f444dbed198c7218f9d1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
-      "resolved": "urn:visionflow:owl:class:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Nostr protocol]]",
-      "resolved": "urn:visionflow:owl:class:nostr-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Python PyTorch Deep Learning Stack]]",
-      "resolved": "urn:visionflow:owl:class:python-and-py-torch",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Python and PyTorch together form the dominant open-source stack for deep learning research and production. Python provides the high-level scripting environment and ecosystem (NumPy, Hugging Face, spaCy), whilst PyTorch supplies dynamic computational graph execution, autograd differentiation, and GPU acceleration via CUDA, enabling rapid prototyping and deployment of neural network models.

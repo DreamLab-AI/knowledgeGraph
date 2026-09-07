@@ -1,39 +1,229 @@
----
-public: true
-aliases:
-  - Behavioral Analytics
----
-
-# Behavioural Analytics
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:behavioural-analytics", "@type":"Page", "title":"Behavioural Analytics", "vc:slug":"behavioural-analytics", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:behavioural-analytics",
+  "@type": "Page",
+  "title": "Behavioural Analytics",
+  "vc:slug": "behavioural-analytics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:behavioural-analytics",
-  "@type":"Class",
-  "label":"Behavioural Analytics",
-  "definition":"Behavioural analytics is the security and analytics discipline that establishes baseline patterns of user, device and entity activity and detects meaningful deviations that may indicate threats, fraud or compromise. It applies statistical modelling and machine learning to telemetry such as login times, access sequences and transaction behaviour to surface anomalies that signature-based controls miss. The approach underpins user and entity behaviour analytics (UEBA) within modern security operations.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:security","label":"Security"},{"@id":"urn:ngm:class:ai-technique","label":"AI Technique"},{"@id":"urn:ngm:class:machine-learning-discipline","label":"Machine Learning Discipline"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}],
-    "hasPart":[{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"},{"@id":"urn:ngm:class:threat-detection","label":"Threat Detection"},{"@id":"urn:ngm:class:user-profiling","label":"User Profiling"}],
-    "uses":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"},{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"},{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"},{"@id":"urn:ngm:class:pattern-recognition","label":"Pattern Recognition"},{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"},{"@id":"urn:ngm:class:statistical-modelling","label":"Statistical Modelling"},{"@id":"urn:ngm:class:time-series-analysis","label":"Time Series Analysis"}],
-    "requires":[{"@id":"urn:ngm:class:monitoring","label":"Monitoring"},{"@id":"urn:ngm:class:data-collection","label":"Data Collection"},{"@id":"urn:ngm:class:feature-engineering","label":"Feature Engineering"}],
-    "enables":[{"@id":"urn:ngm:class:fraud-detection","label":"Fraud Detection"},{"@id":"urn:ngm:class:incident-response","label":"Incident Response"},{"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"},{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"},{"@id":"urn:ngm:class:personalisation","label":"Personalisation"},{"@id":"urn:ngm:class:recommendation-system","label":"Recommendation System"}],
-    "supports":[{"@id":"urn:ngm:class:risk-assessment","label":"Risk Assessment"}],
-    "dependsOn":[{"@id":"urn:ngm:class:siem","label":"SIEM"},{"@id":"urn:ngm:class:machine-learning-discipline","label":"Machine Learning Discipline"},{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"},{"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"},{"@id":"urn:ngm:class:stream-processing","label":"Event Stream Processing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:intrusion-detection-system","label":"Intrusion Detection System"},{"@id":"urn:ngm:class:access-control","label":"Access Control"},{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"},{"@id":"urn:ngm:class:neural-network","label":"Neural Network"},{"@id":"urn:ngm:class:federated-learning","label":"Federated Learning"},{"@id":"urn:ngm:class:user-and-entity-behaviour-analytics","label":"User and Entity Behaviour Analytics"},{"@id":"urn:ngm:class:digital-twin","label":"Digital Twin"},{"@id":"urn:ngm:class:privacy-preserving-machine-learning","label":"Privacy-Preserving Machine Learning"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:threat-detection","label":"Threat Detection"},{"@id":"urn:ngm:class:rule-based-systems","label":"Rule-Based System"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:security","label":"Security"},{"@id":"urn:ngm:class:finance","label":"Finance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:behavioural-analytics",
+  "@type": "Class",
+  "label": "Behavioural Analytics",
+  "definition": "Behavioural analytics is the security and analytics discipline that establishes baseline patterns of user, device and entity activity and detects meaningful deviations that may indicate threats, fraud or compromise. It applies statistical modelling and machine learning to telemetry such as login times, access sequences and transaction behaviour to surface anomalies that signature-based controls miss. The approach underpins user and entity behaviour analytics (UEBA) within modern security operations.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "@id": "urn:ngm:class:user-profiling",
+        "label": "User Profiling"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-analysis",
+        "label": "Time Series Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Event Stream Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:user-and-entity-behaviour-analytics",
+        "label": "User and Entity Behaviour Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:user-behaviour-analytics","label":"User Behaviour Analytics"},{"@id":"urn:ngm:class:behavioural-data-analysis","label":"Behavioural Data Analysis"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:user-behaviour-analytics",
+      "label": "User Behaviour Analytics"
+    },
+    {
+      "@id": "urn:ngm:class:behavioural-data-analysis",
+      "label": "Behavioural Data Analysis"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

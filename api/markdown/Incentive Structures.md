@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Incentive Structures
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Incentive structures are the systems of rewards and penalties that shape the behaviour of agents within an economic or protocol system, aligning individual self-interest with desired collective outcomes. In decentralised systems they encode rewards such as block subsidies, fees, and staking yields, alongside slashing or penalties, to make honest participation the rational choice. Well-designed incentive structures are central to mechanism design and the security of token economies.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}],
-    "supports": [{"@id": "urn:ngm:class:economics", "label": "Economics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
   },
   "quality": 0.72
 }

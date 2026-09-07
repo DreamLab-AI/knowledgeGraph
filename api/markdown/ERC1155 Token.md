@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ERC1155 Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,28 +59,70 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:erc1155-standard", "label": "ERC1155 Standard"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:erc1155-standard",
+        "label": "ERC1155 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:gas-optimization", "label": "Gas Optimization"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-gaming", "label": "Blockchain Gaming"},
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
-      {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"}
+      {
+        "@id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:erc721", "label": "ERC721"},
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"}
+      {
+        "@id": "urn:ngm:class:erc721",
+        "label": "ERC721"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
     ]
   },
   "provenance": {
@@ -95,37 +132,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:erc1155-token:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:195a330b7a502361b814aa6df64e5b7fe9c2d0fa017e0ba7fd614d6f91ae4607"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semi-Fungible Token]]",
-      "resolved": "urn:visionflow:owl:class:semi-fungible-token",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   ERC1155 is an Ethereum multi-token standard enabling a single smart contract to manage arbitrary numbers of fungible, non-fungible, and semi-fungible token classes simultaneously. Batch transfer operations drastically reduce gas costs versus deploying separate ERC-20 or ERC-721 contracts per asset class, making it the dominant standard for blockchain gaming, NFT collections, and on-chain item inventories.

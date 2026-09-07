@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Geopolitics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Geopolitics is the study and practice of how geography, resources, and national power shape relations and competition among states. In technology it frames how control over compute, semiconductors, data, and AI capability translates into strategic advantage and influences export controls, alliances, and standards-setting. It is a core lens for understanding international competition in AI.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:competition-in-ai", "label": "Competition in AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ]
   },
   "quality": 0.72
 }

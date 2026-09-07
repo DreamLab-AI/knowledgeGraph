@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fungible Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,37 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fungible-token:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1aff74057f0e8cb900d9931229477be400855e30c7aa48de90aa474952bc8fd5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token]]",
-      "resolved": "urn:visionflow:owl:class:token",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A token where each unit is identical and interchangeable with any other unit of the same token, like traditional currencies. Each token holds equal value to another token of the same type.

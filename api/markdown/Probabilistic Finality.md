@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Probabilistic Finality
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -101,72 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:probabilistic-finality:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0bca87033cb00ac3b39013eb28d861d7d4dd5087b881e4d9c687ec28ba7f4b8a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[51% Attack]]",
-      "resolved": "urn:visionflow:owl:class:51-attack",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deterministic Finality]]",
-      "resolved": "urn:visionflow:owl:class:deterministic-finality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Longest Chain Rule]]",
-      "resolved": "urn:visionflow:owl:class:longest-chain-rule",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Work]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-work",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Confirmation]]",
-      "resolved": "urn:visionflow:owl:class:transaction-confirmation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Finality]]",
-      "resolved": "urn:visionflow:owl:class:transaction-finality",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^k where q is attacker hashrate fraction and k is confirmation depth.

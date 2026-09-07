@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DALL-E 3
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,7 +114,7 @@ public: true
   "definition": "DALL-E 3 is a text-to-image generation model developed by OpenAI that produces images from natural language descriptions. It improves prompt adherence over earlier versions by reformulating user prompts with a language model.",
   "domain": "ai",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:text-to-image-generation",
@@ -174,7 +169,7 @@ public: true
       }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -182,117 +177,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dall-e-3:61a3bcef2d14",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a970720dbca87371ed034b48221be487b15162014045e95686368efcf40119bd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Diffusion Model]]",
-      "resolved": "urn:visionflow:linked:diffusion-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Language Model]]",
-      "resolved": "urn:visionflow:linked:language-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:linked:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenAI Research Organisation]]",
-      "resolved": "urn:visionflow:linked:open-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:linked:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text-to-Image Generation]]",
-      "resolved": "urn:visionflow:linked:text-to-image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CLIP]]",
-      "resolved": "urn:visionflow:linked:clip",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Latent Diffusion]]",
-      "resolved": "urn:visionflow:linked:latent-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Variational Autoencoder]]",
-      "resolved": "urn:visionflow:linked:variational-autoencoder",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vision Transformer]]",
-      "resolved": "urn:visionflow:linked:vision-transformer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Contrastive Learning]]",
-      "resolved": "urn:visionflow:linked:contrastive-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:linked:stable-diffusion-image-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Midjourney Text-to-Image Service]]",
-      "resolved": "urn:visionflow:linked:midjourney-text-to-image-service",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Generative Model]]",
-      "resolved": "urn:visionflow:linked:deep-generative-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CLIP Encoder]]",
-      "resolved": "urn:visionflow:linked:clip-encoder",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Latent Diffusion Model Training]]",
-      "resolved": "urn:visionflow:linked:latent-diffusion-model-training",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI Engineering]]",
-      "resolved": "urn:visionflow:linked:generative-ai-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Creative Tools]]",
-      "resolved": "urn:visionflow:linked:creative-tools",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - [[DALL-E 3]] is a text-to-image generation system developed by [[OpenAI Research Organisation]] and released in October 2023, representing the third generation of the DALL-E model family, distinguished from its predecessors by a fundamental architectural innovation: the systematic use of a large language model to rewrite and densify user-supplied prompts into richly descriptive synthetic captions before passing them to the [[Diffusion Model]] backbone for image synthesis. This prompt recaptioning approach — described in the OpenAI technical report "Improving Image Generation with Better Captions" (Betker et al., 2023) — directly addresses the chronic prompt-following failures observed in earlier text-to-image systems such as DALL-E 2, Stable Diffusion 1.x, and early versions of [[Midjourney Text-to-Image Service]], where models routinely ignored attribute bindings, miscounted objects, misplaced spatial relationships, and dropped minority concepts from complex multi-entity prompts. DALL-E 3 resolves these failures by training on a dataset in which almost all image-text pairs use synthetically generated descriptive captions produced by an image captioning model (CogVLM-style recaptioning pipeline), rather than the noisy alt-text captions scraped from the web that plagued earlier datasets. The image generation backbone is a [[Latent Diffusion]] architecture that operates in the compressed latent space of a [[Variational Autoencoder]], conditioned on text embeddings from a [[CLIP Encoder]] and the full token sequence from a transformer-based text encoder, with a [[Vision Transformer]] backbone (DiT — Diffusion Transformer) replacing the U-Net used in earlier DALL-E versions. The system integrates tightly with ChatGPT, allowing conversational prompt refinement via GPT-4 before images are generated, making it accessible to non-technical users who need not master prompt engineering idioms. DALL-E 3 incorporates explicit content safety guardrails that refuse generation of named real individuals, violence, adult content, and attempts to mimic living artists' styles — a more restrictive policy than open-weight competitors such as [[Stable Diffusion Image Model]]. By early 2025, OpenAI had replaced DALL-E 3 in ChatGPT with GPT-4o's native image generation capabilities (GPT Image 1.5), with DALL-E 3 formally deprecated via API on 12 May 2026, though the model's architectural innovations remain influential across the field of [[Generative AI]].
@@ -447,7 +331,7 @@ public: true
 
   ## About
 
-    DALL-E 3 represents a pivotal moment in the evolution of [[Text-to-Image Generation]] systems because it addressed the root cause of prompt-following failures rather than their symptoms. The fundamental insight from Betker et al. (2023) was deceptively simple but practically powerful: the chronic mismatch between user prompts and generated images in models like DALL-E 2 and [[Stable Diffusion Image Model]] 1.x could be traced to training data quality rather than architectural limitations. Web-scraped image-text pairs carry noisy, incomplete, and often misleading alt-text captions — a commercial photograph of a "red apple on a wooden table" might have alt-text that reads only "apple" or "fruit image," stripping all the compositional detail that distinguishes a well-specified prompt from an ambiguous one. When [[Deep Generative Model]] systems train on millions of such pairs, they learn statistical associations between surface-level concepts and visual outputs but cannot reliably bind attributes to objects, maintain spatial relationships, or reproduce counts of entities. This attribute-binding failure manifested in consistent patterns: "a red cube to the left of a blue sphere" would produce images with the colours swapped, the objects merged, or the spatial relationship ignored; requests for specific numbers of objects routinely produced incorrect counts; complex multi-clause prompts saw minority concepts dropped entirely. These were not architectural failures but data failures — the model had never seen training examples where alt-text faithfully captured compositional detail at sufficient granularity.
+    DALL-E 3 represents a pivotal moment in the evolution of [[Text-to-Image Generation]] systems because it addressed the root cause of prompt-following failures rather than their symptoms. The fundamental insight from Betker et al. (2023) was deceptively simple but practically powerful: the chronic mismatch between user prompts and generated images in models like DALL-E 2 and [[Stable Diffusion Image Model]] 1.x [private] be traced to training data quality rather than architectural limitations. Web-scraped image-text pairs carry noisy, incomplete, and often misleading alt-text captions — a commercial photograph of a "red apple on a wooden table" might have alt-text that reads only "apple" or "fruit image," stripping all the compositional detail that distinguishes a well-specified prompt from an ambiguous one. When [[Deep Generative Model]] systems train on millions of such pairs, they learn statistical associations between surface-level concepts and visual outputs but cannot reliably bind attributes to objects, maintain spatial relationships, or reproduce counts of entities. This attribute-binding failure manifested in consistent patterns: "a red cube to the left of a blue sphere" would produce images with the colours swapped, the objects merged, or the spatial relationship ignored; requests for specific numbers of objects routinely produced incorrect counts; complex multi-clause prompts saw minority concepts dropped entirely. These were not architectural failures but data failures — the model had never seen training examples where alt-text faithfully captured compositional detail at sufficient granularity.
 
     The solution introduced in DALL-E 3 was to retrain the entire text-image correspondence using synthetically generated captions. An image captioning model (analogous to large multimodal models of the LLaVA / CogVLM family) was applied to the full training corpus to produce long, descriptive, accurate captions that enumerate objects, attributes, spatial relationships, material properties, lighting conditions, and compositional details. The diffusion model then trained on these synthetic caption–image pairs, learning to generate images from the kind of rich, specific language that reflects what users actually mean when they describe an image. The Betker et al. (2023) technical report demonstrated that this recaptioning approach dramatically improved text-to-image correspondence across a battery of compositional reasoning benchmarks: object attribute binding, object counting, spatial relationship accuracy, and multi-concept composition each improved substantially compared to DALL-E 2 trained on equivalent-scale web-scraped data. Importantly, the approach also improved qualitative human preference ratings even for simple prompts, suggesting that the richer training signal from synthetic captions benefits all generation scenarios, not just compositionally complex ones.
 
@@ -455,7 +339,7 @@ public: true
 
     The architecture of DALL-E 3's image generation backbone evolved from DALL-E 2's prior-based hierarchical cascade. DALL-E 2 used a [[CLIP]] image embedding prior (a model that learns to predict CLIP image embeddings from text) followed by an unCLIP decoder to generate images from text prompts via the intermediate CLIP latent space — a two-step process that decomposed the text-to-image mapping into (1) text → CLIP image embedding and (2) CLIP image embedding → pixel image. DALL-E 3 transitions to a more direct [[Latent Diffusion]] architecture conditioned on full-sequence text embeddings from a T5-style encoder alongside [[CLIP Encoder]] embeddings, operating in the compressed latent space of a convolutional [[Variational Autoencoder]] for computational efficiency. The denoising backbone is a [[Vision Transformer]]-based Diffusion Transformer (DiT) rather than the convolutional U-Net used in earlier DALL-E versions and [[Stable Diffusion Image Model]], providing better scaling properties with model size and training compute and superior handling of global compositional coherence through self-attention over the full image patch sequence. Classifier-free guidance (CFG) is used at inference time, allowing the strength of text conditioning to be controlled by a guidance scale parameter: at guidance scale g=1, the model generates images from the unconditional distribution (without attending to the text prompt); at g=7-10 (typical production values), the model generates images that strongly match the prompt but with reduced diversity; at g=20+, images become over-saturated and artifact-prone. This guidance scale control enables operators to tune the precision/diversity tradeoff for specific use cases.
 
-    The broader context for DALL-E 3 is a rapid sequence of capability advances in [[Deep Generative Model]] systems for visual synthesis. DALL-E 3's October 2023 release came eighteen months after the open-source release of [[Stable Diffusion Image Model]] 1.4 (August 2022), which had democratised high-quality image generation by making capable models freely available for fine-tuning and deployment. The period between these releases saw an explosion of community-developed adaptations, fine-tunes (DreamBooth, Textual Inversion, LoRA), and specialised derivatives that collectively demonstrated the diversity of applications latent diffusion architectures could serve. DALL-E 3's innovation was to outcompete this entire ecosystem on the single dimension that most limited commercial adoption of open-source alternatives: reliable instruction following. For professional and commercial use cases where a specific output is required (not merely a high-quality output of some kind), DALL-E 3's superior prompt adherence represented a qualitative capability difference that justified the closed API access model over the flexibility of open-weight alternatives.
+    The broader context for DALL-E 3 is a rapid sequence of capability advances in [[Deep Generative Model]] systems for visual synthesis. DALL-E 3's October 2023 release came eighteen months after the open-source release of [[Stable Diffusion Image Model]] 1.4 (August 2022), which had democratised high-quality image generation by making capable models freely available for fine-tuning and deployment. The period between these releases saw an explosion of community-developed adaptations, fine-tunes (DreamBooth, Textual Inversion, LoRA), and specialised derivatives that collectively demonstrated the diversity of applications latent diffusion architectures [private] serve. DALL-E 3's innovation was to outcompete this entire ecosystem on the single dimension that most limited commercial adoption of open-source alternatives: reliable instruction following. For professional and commercial use cases where a specific output is required (not merely a high-quality output of some kind), DALL-E 3's superior prompt adherence represented a qualitative capability difference that justified the closed API access model over the flexibility of open-weight alternatives.
 
   ## Components / Architecture
 
@@ -524,7 +408,7 @@ public: true
     **Deepfake Detection and Misuse Concerns**
     - The system's realistic output quality and ease of conversational access generated significant concerns about misuse for disinformation (AI-generated fake news images), non-consensual intimate imagery (NCII), political manipulation (fabricated political scenarios), and intellectual property infringement
     - OpenAI's safety policies (prohibiting generation of named real individuals, violence, adult content, and explicit artist style mimicry) provide layered mitigation via input classifiers and output safety filters
-    - Jailbreak research demonstrated that policy enforcement via classifier-based filtering is imperfect: indirect prompting techniques, historical insertion attacks, and creative framing could circumvent safety filters in tested scenarios (Padolsey, 2023; Rando et al., 2022)
+    - Jailbreak research demonstrated that policy enforcement via classifier-based filtering is imperfect: indirect prompting techniques, historical insertion attacks, and creative framing [private] circumvent safety filters in tested scenarios (Padolsey, 2023; Rando et al., 2022)
     - The EU AI Act Article 50 requirement for machine-readable labelling of AI-generated content and C2PA provenance metadata embedding represents the regulatory response — requiring content provenance to be technically embedded rather than relying solely on policy-level restrictions
     - UK Online Safety Act 2023 provisions on illegal content (including NCII) impose obligations on platforms hosting AI-generated content, creating a regulatory compliance dimension for services using DALL-E 3 API in UK-facing products
 
@@ -554,7 +438,7 @@ public: true
 
     The [[Latent Diffusion]] extension that underpins DALL-E 3's efficiency was introduced by Rombach et al. (2022) — the foundational paper for [[Stable Diffusion Image Model]], [[DALL-E 3]], and most subsequent production text-to-image systems. The key insight was that operating the diffusion process in the compressed latent space of a pre-trained [[Variational Autoencoder]] (Kingma & Welling, 2014) reduces the spatial dimensionality by factors of 4-8x, cutting training compute by an order of magnitude while maintaining perceptual quality — because the VAE encoder/decoder pair handles the perceptually irrelevant high-frequency pixel detail while the diffusion model operates over the semantically meaningful latent structure.
 
-    The text conditioning literature traces to Ramesh et al. (2021) (DALL-E 1), which demonstrated that autoregressive transformer models could generate images from text prompts via a discrete [[Variational Autoencoder]] codebook — establishing the feasibility of text-conditional image generation at scale but producing lower-quality outputs than later diffusion-based systems. Ramesh et al. (2022) (DALL-E 2) introduced the [[CLIP]]-guided hierarchical prior–decoder architecture (unCLIP), demonstrating that [[CLIP]] embedding space provides a rich intermediate representation linking visual and textual semantics and enabling zero-shot compositionality and image editing via CLIP latent manipulation. Nichol et al. (2022) published GLIDE, demonstrating that classifier-free guidance with text conditioning outperformed CLIP-guided diffusion for text-to-image generation — a critical finding that shaped the conditioning approach in subsequent models including DALL-E 3. Saharia et al. (2022) (Imagen, Google Brain) showed that large pre-trained T5 text encoders dramatically outperform CLIP text encoders for text-to-image prompt following — because T5 is trained on text-only objectives and develops richer linguistic representations, including syntactic and semantic structure, that CLIP (trained on paired image-text) cannot capture from visual context alone. This finding directly influenced DALL-E 3's adoption of a dual-encoder conditioning design combining both [[CLIP Encoder]] and T5 representations.
+    The text conditioning literature traces to Ramesh et al. (2021) (DALL-E 1), which demonstrated that autoregressive transformer models [private] generate images from text prompts via a discrete [[Variational Autoencoder]] codebook — establishing the feasibility of text-conditional image generation at scale but producing lower-quality outputs than later diffusion-based systems. Ramesh et al. (2022) (DALL-E 2) introduced the [[CLIP]]-guided hierarchical prior–decoder architecture (unCLIP), demonstrating that [[CLIP]] embedding space provides a rich intermediate representation linking visual and textual semantics and enabling zero-shot compositionality and image editing via CLIP latent manipulation. Nichol et al. (2022) published GLIDE, demonstrating that classifier-free guidance with text conditioning outperformed CLIP-guided diffusion for text-to-image generation — a critical finding that shaped the conditioning approach in subsequent models including DALL-E 3. Saharia et al. (2022) (Imagen, Google Brain) showed that large pre-trained T5 text encoders dramatically outperform CLIP text encoders for text-to-image prompt following — because T5 is trained on text-only objectives and develops richer linguistic representations, including syntactic and semantic structure, that CLIP (trained on paired image-text) cannot capture from visual context alone. This finding directly influenced DALL-E 3's adoption of a dual-encoder conditioning design combining both [[CLIP Encoder]] and T5 representations.
 
     The Diffusion Transformer architecture used in DALL-E 3's denoising backbone was introduced by Peebles and Xie (2023) in "Scalable Diffusion Models with Transformers" (DiT), demonstrating that replacing the convolutional U-Net with a Vision Transformer backbone scales more predictably with compute and model size — following the established transformer scaling laws (Kaplan et al., 2020) rather than the less-understood scaling behaviour of convolutional architectures. This architectural contribution is one of DALL-E 3's most consequential, as DiT-based architectures have subsequently been adopted across the field, including in Stable Diffusion 3, Flux.1, and OpenAI's successor GPT Image systems.
 
@@ -566,9 +450,9 @@ public: true
 
   ## Current Landscape (2026)
 
-    DALL-E 3 occupied the leading position in text-to-image generation quality benchmarks from its release in October 2023 through approximately mid-2024, after which the competitive landscape shifted dramatically. Three developments reshaped the market: the release of Flux.1 (Black Forest Labs, mid-2024), which captured approximately 40% of open-source image generation traffic within months of release, demonstrating that the rectified flow transformer architecture could match DALL-E 3 quality with open weights; the emergence of Stable Diffusion 3.5 with an improved DiT architecture and multi-modal diffusion transformer (MMDiT) backbone; and — most significantly — OpenAI's own supersession of DALL-E 3 with GPT-4o's native image generation capabilities, which represented a categorical architectural shift rather than a routine model update.
+    DALL-E 3 occupied the leading position in text-to-image generation quality benchmarks from its release in October 2023 through approximately mid-2024, after which the competitive landscape shifted dramatically. Three developments reshaped the market: the release of Flux.1 (Black Forest Labs, mid-2024), which captured approximately 40% of open-source image generation traffic within months of release, demonstrating that the rectified flow transformer architecture [private] match DALL-E 3 quality with open weights; the emergence of Stable Diffusion 3.5 with an improved DiT architecture and multi-modal diffusion transformer (MMDiT) backbone; and — most significantly — OpenAI's own supersession of DALL-E 3 with GPT-4o's native image generation capabilities, which represented a categorical architectural shift rather than a routine model update.
 
-    In March 2025, OpenAI integrated native image generation directly into GPT-4o, eliminating the two-stage pipeline where ChatGPT called DALL-E 3 as a separate model. The GPT-4o image generation system — retrospectively branded GPT Image 1 and then GPT Image 1.5 — generates images within the same unified model context as text, video, and audio, enabling tighter cross-modal coherence. The unified architecture allows the model to maintain consistent semantic context across multi-turn conversations: referencing elements from earlier in the conversation, applying edits specified in natural language that preserve the semantic content of prior generations, and generating images that incorporate knowledge from attached documents or referenced web pages. This qualitative capability difference — cross-modal context coherence — represents the architectural leap beyond what DALL-E 3's two-stage pipeline could achieve. Users on ChatGPT Plus were transitioned to GPT-4o image generation by December 2025. The DALL-E 3 API endpoint remained operational through 12 May 2026, after which OpenAI formally deprecated it, directing developers to the GPT Image API using the gpt-image-1 model identifier.
+    In March 2025, OpenAI integrated native image generation directly into GPT-4o, eliminating the two-stage pipeline where ChatGPT called DALL-E 3 as a separate model. The GPT-4o image generation system — retrospectively branded GPT Image 1 and then GPT Image 1.5 — generates images within the same unified model context as text, video, and audio, enabling tighter cross-modal coherence. The unified architecture allows the model to maintain consistent semantic context across multi-turn conversations: referencing elements from earlier in the conversation, applying edits specified in natural language that preserve the semantic content of prior generations, and generating images that incorporate knowledge from attached documents or referenced web pages. This qualitative capability difference — cross-modal context coherence — represents the architectural leap beyond what DALL-E 3's two-stage pipeline [private] achieve. Users on ChatGPT Plus were transitioned to GPT-4o image generation by December 2025. The DALL-E 3 API endpoint remained operational through 12 May 2026, after which OpenAI formally deprecated it, directing developers to the GPT Image API using the gpt-image-1 model identifier.
 
     The competitive landscape in mid-2026 is dominated by four platforms, each serving distinct user needs. Midjourney V8 (launched March 2026, featuring a fully rewritten engine 5x faster with native 2K output) remains the aesthetic standard-bearer for creative professionals — its outputs consistently score highest on human preference evaluations for artistic quality and emotional resonance, maintaining its premium Discord-based community model. ChatGPT Images 2.0 (powered by GPT Image 2) achieves near-photographic realism with strong in-image text rendering and cross-context coherence, serving the mass-market commercial content creation segment. [[Stable Diffusion Image Model]] 3.5 (open-weight, fine-tunable, deployable on consumer hardware) dominates research applications, custom workflow integration, and commercial deployments requiring full control over the generation stack, serving the long tail of specialised applications that closed commercial APIs cannot address. Flux 2 by Black Forest Labs dominates open-source community adoption for general-purpose generation, having replaced earlier Stable Diffusion variants in most community-maintained tools and fine-tuning ecosystems.
 

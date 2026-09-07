@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Event Log
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -123,6 +119,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - An Event Log is an append-only record of discrete events emitted by a system, used to capture state changes for auditing, indexing and downstream processing. On blockchains, smart contracts emit events that are written to transaction receipts and stored in the log structure of each block, where they can be efficiently queried by off-chain services. Event logs provide an immutable, ordered history that decentralised applications use to reconstruct state and trigger reactions.
   - Related concepts: [[Append-Only Log]] [[Smart Contract]] [[Event Emission]] [[Observability]] [[Immutability]]

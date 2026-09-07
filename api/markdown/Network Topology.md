@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - NetworkTopology
----
-
-# Network Topology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -89,22 +82,58 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
-      {"@id": "urn:ngm:class:light-node", "label": "Light Node"},
-      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
-      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"},
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      },
+      {
+        "@id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "@id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ]
   },
   "quality": 0.8,
@@ -115,62 +144,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:network-topology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:63666614aacf65ff6dd946445bbffe298bcf80dac619388de210f09ab9f27ad8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NetworkComponent]]",
-      "resolved": "urn:visionflow:owl:class:network-component",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Node connection structure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

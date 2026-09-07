@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Regulatory Capture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,47 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:regulatory-capture:11d78da2e7a3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cfa27974f3239ff59eb70e1f785866a7fccdd2f140b46ebd6b0a3406ed8d4dbf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Frameworks]]",
-      "resolved": "urn:visionflow:linked:regulatory-frameworks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulation]]",
-      "resolved": "urn:visionflow:linked:regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Regulatory_capture]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-regulatory-capture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.oecd.org/gov/regulatory-policy/]]",
-      "resolved": "urn:visionflow:linked:https-www-oecd-org-gov-regulatory-policy",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Regulatory capture is a situation in which a regulator advances the interests of the entities it oversees rather than the public interest.

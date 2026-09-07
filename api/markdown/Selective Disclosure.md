@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SelectiveDisclosure
----
-
-# selective disclosure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

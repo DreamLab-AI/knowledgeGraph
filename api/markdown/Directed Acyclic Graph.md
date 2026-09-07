@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Directed Acyclic Graph
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Interaction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-interaction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2a59e2e108f9c85d9603c78d206093861ae69d0a01d893fc2b6da9601d2b0b0f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Immersive User Experience]]",
-      "resolved": "urn:visionflow:linked:immersive-user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human Computer Interaction]]",
-      "resolved": "urn:visionflow:owl:class:human-computer-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The design and implementation of user input methods within extended reality environments that enable natural manipulation of virtual objects through gestures, eye tracking, voice commands, and physical movement in three-dimensional space.

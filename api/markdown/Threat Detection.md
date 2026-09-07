@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Threat Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,4 +169,3 @@ public: true
   - Machine learning has transformed threat detection throughput: deep learning models process millions of network flow records per second to score lateral movement, data exfiltration, and command-and-control patterns that signature rules miss. Graph neural networks model entity relationships in Active Directory and cloud IAM configurations, detecting privilege escalation paths. Natural language processing applied to log data extracts attack narratives from unstructured text. However, adversarial attackers specifically craft attacks to evade ML models, driving a cat-and-mouse dynamic between detection model training and evasion research.
 
   - By 2024-2025, AI-native detection platforms (Crowdstrike Falcon, Microsoft Defender, SentinelOne) have displaced legacy SIEM-only approaches in most enterprise environments. Large language model integration enables natural-language threat hunting queries and automated triage narrative generation, reducing analyst cognitive load. The supply-chain attack surface (XZ Utils backdoor, SolarWinds-style campaigns) and AI system-specific threats (model poisoning, prompt injection attacks on LLM-integrated pipelines) have expanded the threat detection surface well beyond traditional network and endpoint domains.
-

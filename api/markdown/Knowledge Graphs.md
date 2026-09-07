@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Knowledge Graphs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -208,52 +203,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:knowledge-graphs:5223e4eab135",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b93ee167b182e4b1a4e6a340599c8ddd0bf3e9169cd3e71267e1181d4c66c14c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RDF]]",
-      "resolved": "urn:visionflow:linked:rdf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inference]]",
-      "resolved": "urn:visionflow:linked:inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Web Linked Data Standard]]",
-      "resolved": "urn:visionflow:linked:semantic-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graph Database]]",
-      "resolved": "urn:visionflow:linked:graph-database",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Structured representations of knowledge as entities and the relationships between them, typically expressed as a graph of nodes and labelled edges to support querying and inference.

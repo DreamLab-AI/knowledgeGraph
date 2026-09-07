@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rollback
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Rollback",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:error-recovery", "vc:label": "ErrorRecovery" },
-    { "@id": "urn:visionflow:linked:checkpointing", "vc:label": "Checkpointing" },
-    { "@id": "urn:visionflow:linked:version-control", "vc:label": "VersionControl" },
-    { "@id": "urn:visionflow:linked:fault-tolerance", "vc:label": "FaultTolerance" }
+    {
+      "@id": "urn:visionflow:linked:error-recovery",
+      "vc:label": "ErrorRecovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:checkpointing",
+      "vc:label": "Checkpointing"
+    },
+    {
+      "@id": "urn:visionflow:linked:version-control",
+      "vc:label": "VersionControl"
+    },
+    {
+      "@id": "urn:visionflow:linked:fault-tolerance",
+      "vc:label": "FaultTolerance"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,12 +44,35 @@ public: true
   "definition": "Rollback is the operation of restoring a system, workspace, or agent to a previously captured good state, discarding the changes made since that point after an error, failed action, or unwanted outcome. It depends on the earlier capture of restorable state — a checkpoint, a snapshot, or a version-control commit — and on the changes since being either reversible or discardable. In autonomous-agent orchestration, rollback lets a supervisor undo a subagent's destructive or incorrect edits and retry from a known-safe baseline, turning risky irreversible automation into a recoverable, bounded-blast-radius process.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": { "@id": "urn:ngm:class:error-recovery", "label": "Error Recovery" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:error-recovery",
+    "label": "Error Recovery"
+  },
   "relations": {
-    "uses": [ { "@id": "urn:ngm:class:checkpointing", "label": "Checkpointing" } ],
-    "requires": [ { "@id": "urn:ngm:class:version-control", "label": "Version Control" } ],
-    "relatedTo": [ { "@id": "urn:ngm:class:checkpoint-recovery", "label": "Checkpoint Recovery" } ],
-    "partOf": [ { "@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance" } ]
+    "uses": [
+      {
+        "@id": "urn:ngm:class:checkpointing",
+        "label": "Checkpointing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:checkpoint-recovery",
+        "label": "Checkpoint Recovery"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ]
   },
   "quality": 0.75,
   "provenance": {

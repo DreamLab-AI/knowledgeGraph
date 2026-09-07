@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Trust in Digital Platforms
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Trust in digital platforms is the confidence users place in online services to handle their data, transactions, and interactions safely, fairly, and reliably. It is shaped by security and privacy guarantees, transparent policies, dispute resolution, and consumer-protection measures, and is a prerequisite for sustained participation and economic activity in digital markets.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}, {"@id": "urn:ngm:class:participant-protection", "label": "Participant Protection"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:participant-protection",
+        "label": "Participant Protection"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GDPR Article 22 Compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "GDPR Article 22 compliance concerns adherence to the EU General Data Protection Regulation provision that grants individuals the right not to be subject to decisions based solely on automated processing, including profiling, that produce legal or similarly significant effects. Compliance requires lawful bases, human oversight, the ability to contest decisions, and meaningful information about the logic involved. It is a key constraint on automated decision-making and policy enforcement systems.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"}, {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
   },
   "quality": 0.72
 }

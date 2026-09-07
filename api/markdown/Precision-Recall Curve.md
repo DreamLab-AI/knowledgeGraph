@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Precision-Recall Curve
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,52 +183,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:precision-recall-curve:ad88a370066f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4b2c3db3472ee94e6395b38c727968d8d476017dd60afa7febd23f6d49fe68ac"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Precision]]",
-      "resolved": "urn:visionflow:linked:precision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Recall]]",
-      "resolved": "urn:visionflow:linked:recall",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ROC Curve]]",
-      "resolved": "urn:visionflow:linked:roc-curve",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[F1 Score]]",
-      "resolved": "urn:visionflow:linked:f-1-score",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Confusion Matrix]]",
-      "resolved": "urn:visionflow:linked:confusion-matrix",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A diagnostic plot that traces the trade-off between precision and recall across the decision thresholds of a binary classifier.

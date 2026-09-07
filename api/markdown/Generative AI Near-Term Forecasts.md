@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Predictions]]
-# Generative AI Near-Term Forecasts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[Predictions]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:ai-video", "label": "AI Video"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-generated-content-disclosure", "label": "AI-Generated Content Disclosure"}
+      {
+        "@id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI-Generated Content Disclosure"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proprietary-ai-video", "label": "Proprietary AI Video"}
+      {
+        "@id": "urn:ngm:class:proprietary-ai-video",
+        "label": "Proprietary AI Video"
+      }
     ]
   },
   "quality": 0.5,
@@ -67,26 +76,6 @@ elevatedFrom:: [[Predictions]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:predictions:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ff7d77d095e18002d5b1f96339f1d4f84078188e736b5448490fc0b2d62c3d37"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A curated set of near-term forecasts for the generative AI video and creative-tool landscape, covering model aggregators, story-level tooling, template ecosystems, real-time trend integration, open-source convergence, inference cost reduction, specialised models, and the social/legal challenges of AI-generated content. These predictions frame strategic planning for platforms operating in the AI creative economy.

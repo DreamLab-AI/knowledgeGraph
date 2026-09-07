@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Impact Metrics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Impact metrics are quantitative and qualitative indicators used to measure the social, environmental, or economic outcomes produced by an intervention, project, or organisation. They translate a theory of change into measurable outputs, outcomes, and longer-term impacts, enabling comparison, accountability, and decision-making. Standardised metric catalogues such as IRIS+ promote comparability across programmes.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
   "relations": {
-    "partOf": [{"@id": "urn:ngm:class:social-impact-assessment-sia", "label": "Social Impact Assessment (SIA)"}],
-    "relatedTo": [{"@id": "urn:ngm:class:climate-action-dao", "label": "Climate Action DAO"}]
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:social-impact-assessment-sia",
+        "label": "Social Impact Assessment (SIA)"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:climate-action-dao",
+        "label": "Climate Action DAO"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Belief Desire Intention
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,43 +20,106 @@ public: true
   "definition": "The Belief-Desire-Intention (BDI) model is a framework for designing rational software agents in which mental states are represented as beliefs (what the agent knows about the world), desires (goals the agent wishes to achieve), and intentions (committed plans of action). Originating from Bratman's philosophical work on practical reasoning, BDI has been formalised into agent programming languages such as AgentSpeak and frameworks such as JADE. It underpins many autonomous and multi-agent systems requiring deliberative reasoning.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-system",
+      "label": "Multi-Agent System"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:agent-architecture", "label": "Agent Architecture"},
-      {"@id": "urn:ngm:class:reasoning-engine", "label": "Reasoning Engine"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:agent-architecture",
+        "label": "Agent Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:rational-agent", "label": "Rational Agent"},
-      {"@id": "urn:ngm:class:deliberative-reasoning", "label": "Deliberative Reasoning"}
+      {
+        "@id": "urn:ngm:class:rational-agent",
+        "label": "Rational Agent"
+      },
+      {
+        "@id": "urn:ngm:class:deliberative-reasoning",
+        "label": "Deliberative Reasoning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:planning", "label": "Planning"},
-      {"@id": "urn:ngm:class:goal-directed-behaviour", "label": "Goal-Directed Behaviour"}
+      {
+        "@id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "@id": "urn:ngm:class:goal-directed-behaviour",
+        "label": "Goal-Directed Behaviour"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:reactive-agent", "label": "Reactive Agent"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:reactive-agent",
+        "label": "Reactive Agent"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fipa", "label": "FIPA"}
+      {
+        "@id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ]
   },
   "quality": 0.62,
@@ -540,7 +597,7 @@ public: true
     BDI systems are evaluated on a diverse set of benchmarks spanning from formal verification to application-level performance:
 
     - **Jason/AgentSpeak MAS Benchmarks**: Standard multi-agent programming competitions use Jason-based agent teams evaluated on task completion rate, communication overhead, and scalability. The MAPC (Multi-Agent Programming Contest) has run since 2005, providing standardised BDI agent evaluation in complex multi-agent environments involving city logistics, grid exploration, and dynamic task allocation.
-    - **Air Traffic Control Simulation**: The EUROCONTROL RAMS (Radar Approach Monitoring System) provided historical evaluation datasets for PRS-based ATC decision support tools, measuring adviser accuracy vs. human controller decisions. The PRS-based system demonstrated that BDI deliberation could maintain consistency with human expert decisions in over 90% of conflict scenarios.
+    - **Air Traffic Control Simulation**: The EUROCONTROL RAMS (Radar Approach Monitoring System) provided historical evaluation datasets for PRS-based ATC decision support tools, measuring adviser accuracy vs. human controller decisions. The PRS-based system demonstrated that BDI deliberation [private] maintain consistency with human expert decisions in over 90% of conflict scenarios.
     - **BDI-LLM Evaluation**: ChatBDI (AAMAS 2025) evaluates on naturalness of interaction (human judges), correctness of BDI plan invocation, and explanation quality vs. direct LLM baseline. The BDI-LLM human-robot interaction paper evaluates goal specification accuracy and explanation comprehensibility via controlled user studies. The Child Helpline Training BDI-LLM system (IVA 2025) evaluates on empathy protocol adherence rate, conversation coherence, and trainee learning outcomes vs. pure LLM and rule-based baselines.
     - **Social Simulation Benchmarks**: Bushfire evacuation models (Nguyen et al., 2019) evaluate BDI population behaviour against recorded evacuation statistics from real Australian bushfire events; food delivery scheduling (Haesaert et al., 2025, Nature Scientific Reports) evaluates against static and heuristic scheduling baselines on delivery latency and driver utilisation, demonstrating 15-20% efficiency gains with BDI-MCTS coordination.
     - **Formal Verification**: BDI model checking (BDICTL, nuSMV) is evaluated on property satisfaction completeness and verification time as BDI agent complexity scales, with benchmarks drawn from safety specifications for autonomous vehicle and aerospace domains. Verification times remain tractable for agents with up to hundreds of plan rules but grow exponentially with commitment depth, motivating compositional verification approaches.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Embodied Interaction
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

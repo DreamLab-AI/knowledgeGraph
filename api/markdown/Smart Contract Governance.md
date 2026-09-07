@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Smart Contract Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,26 @@ public: true
   "definition": "Smart contract governance is the set of mechanisms by which the rules, upgrades, and parameters of deployed on-chain contracts are proposed, decided, and applied, typically through token voting, multisig control, or upgrade proxies. It addresses how immutable code can nonetheless evolve safely and who holds authority to change protocol behaviour. Effective governance balances decentralisation against the need for timely security fixes and legal accountability.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao-legal-structures", "label": "DAO Legal Structures"},
-      {"@id": "urn:ngm:class:e-contract-arbitration", "label": "E-Contract Arbitration"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:dao-legal-structures",
+        "label": "DAO Legal Structures"
+      },
+      {
+        "@id": "urn:ngm:class:e-contract-arbitration",
+        "label": "E-Contract Arbitration"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ]
   },
   "quality": 0.72

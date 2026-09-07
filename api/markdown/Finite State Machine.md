@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Finite State Machine
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

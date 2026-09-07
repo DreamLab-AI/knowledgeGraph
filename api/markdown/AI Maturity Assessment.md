@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Maturity Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-maturity-assessment",
   "title": "AI Maturity Assessment",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Agent Readiness Framework", "Enterprise AI Benchmarking"],
+  "vc:outboundWikilinks": [
+    "Agent Readiness Framework",
+    "Enterprise AI Benchmarking"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise Ai"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:enterprise-ai",
+      "label": "Enterprise Ai"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise Ai"}, {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise Ai"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

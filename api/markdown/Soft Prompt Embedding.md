@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Soft Prompt Embedding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,32 +51,74 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:model-parameters", "label": "Model Parameters"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:model-parameters",
+        "label": "Model Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"},
-      {"@id": "urn:ngm:class:parameter", "label": "Parameter"}
+      {
+        "@id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:parameter",
+        "label": "Parameter"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:prompt-tuning", "label": "Prompt Tuning"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"}
+      {
+        "@id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ]
   },
   "provenance": {
@@ -91,32 +128,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:soft-prompt-embedding:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0f1d7be4df6e2668385b5673a95a2b4b7be36b678f20ef2aaf9bbd4a9e7d3e59"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Soft Prompt Embedding is a parameter-efficient fine-tuning technique in which a small set of continuous, learnable token vectors (soft prompts) are prepended to the model's input embedding sequence and optimised via gradient descent, conditioning a frozen large language model's behaviour without modifying its weights. Unlike discrete (hard) prompts composed of natural-language tokens, soft prompt embeddings exist solely in the continuous embedding space and have no direct human-interpretable form. This approach enables task-specific adaptation of large models at a fraction of the computational and storage cost of full fine-tuning.

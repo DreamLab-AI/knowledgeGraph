@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI System (EU Definition)
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,16 +63,34 @@ public: true
   ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-provider", "label": "AI Provider"},
-      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"},
-      {"@id": "urn:ngm:class:general-purpose-ai-model", "label": "General Purpose AI Model"}
+      {
+        "@id": "urn:ngm:class:ai-provider",
+        "label": "AI Provider"
+      },
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:general-purpose-ai-model",
+        "label": "General Purpose AI Model"
+      }
     ]
   },
   "quality": 0.5,
@@ -88,47 +101,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-system-eu-definition:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f4001b0704a2928dc525ea03f4015381076343dcfb21e8d8cebfec4d28c5a7b3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NIST AI Risk Management Framework]]",
-      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A machine-based system that can operate autonomously and adapt after deployment, generating outputs like predictions or decisions.

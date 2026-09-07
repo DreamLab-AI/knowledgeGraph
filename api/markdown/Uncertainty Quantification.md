@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Uncertainty Quantification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,32 +20,76 @@ public: true
   "definition": "Uncertainty Quantification (UQ) is a discipline concerned with characterising, propagating, and communicating the uncertainties inherent in computational models, predictions, and measurements. It distinguishes between aleatoric uncertainty (irreducible randomness in the data or system) and epistemic uncertainty (reducible uncertainty arising from limited knowledge or data), providing principled methods — including Bayesian inference, Monte Carlo sampling, conformal prediction, and ensemble methods — for producing calibrated probability estimates rather than point predictions. UQ is foundational to trustworthy AI, safety-critical systems engineering, and scientific computing.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:monte-carlo-methods", "label": "Monte Carlo Methods"},
-      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"}
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"}
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Section 508
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Section 508 is an amendment to the US Rehabilitation Act requiring federal agencies to make their electronic and information technology accessible to people with disabilities. Its 2017 refresh harmonised the technical requirements with the WCAG 2.0 Level AA success criteria. It functions as an enforceable procurement and compliance standard for accessibility in US government IT.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ]
   },
   "quality": 0.72

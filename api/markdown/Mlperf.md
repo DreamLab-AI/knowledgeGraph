@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Mlperf
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:mlperf", "@type":"Page", "title":"Mlperf", "vc:slug":"mlperf", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:mlperf",
+  "@type": "Page",
+  "title": "Mlperf",
+  "vc:slug": "mlperf",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -112,6 +117,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - MLPerf is a suite of standardised [[Benchmark]] tests, governed by [[MLCommons]], that measures [[Machine Learning]] system performance for both [[Training]] and [[Inference]]. It fixes reference models, datasets and quality targets so vendor results are reproducible and comparable.
 - ### Overview

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Benchmarking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "model-benchmarking",
   "title": "Model Benchmarking",
   "vc:public": true,
-  "vc:outboundWikilinks": ["GPT-5.2", "Gemini 3"],
+  "vc:outboundWikilinks": [
+    "GPT-5.2",
+    "Gemini 3"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}, {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

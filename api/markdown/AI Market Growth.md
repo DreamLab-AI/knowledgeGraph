@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Market Growth
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-market-growth",
   "title": "AI Market Growth",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Cloud Total Addressable Market", "Hyperscale Cloud"],
+  "vc:outboundWikilinks": [
+    "Cloud Total Addressable Market",
+    "Hyperscale Cloud"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-adoption",
+      "label": "AI Adoption"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}, {"@id": "urn:ngm:class:hyperscale-cloud", "label": "Hyperscale Cloud"}, {"@id": "urn:ngm:class:ai-market", "label": "AI Market"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:hyperscale-cloud",
+        "label": "Hyperscale Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:ai-market",
+        "label": "AI Market"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

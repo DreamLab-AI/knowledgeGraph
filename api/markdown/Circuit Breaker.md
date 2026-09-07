@@ -1,38 +1,116 @@
----
-public: true
----
-
-# Circuit Breaker
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:circuit-breaker", "@type":"Page", "title":"Circuit Breaker", "vc:slug":"circuit-breaker", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:circuit-breaker",
+  "@type": "Page",
+  "title": "Circuit Breaker",
+  "vc:slug": "circuit-breaker",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:circuit-breaker",
-  "@type":"Class",
-  "label":"Circuit Breaker",
-  "definition":"The circuit breaker is a fault-tolerance design pattern that monitors calls to a remote service or resource and, once failures exceed a threshold, trips open to fail fast and stop sending requests for a cooling-off period. After a timeout it allows a limited number of trial calls in a half-open state to test recovery before closing again. The pattern prevents cascading failures, protects struggling dependencies, and enables graceful degradation in distributed systems.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"},{"@id":"urn:ngm:class:resilience","label":"Resilience"}],
-    "hasPart":[{"@id":"urn:ngm:class:observability","label":"Observability"}],
-    "relatedTo":[{"@id":"urn:ngm:class:rate-limiting","label":"Rate Limiting"},{"@id":"urn:ngm:class:api-gateway","label":"API Gateway"},{"@id":"urn:ngm:class:service-mesh","label":"Service Mesh"}],
-    "partOf":[{"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"}],
-    "enables":[{"@id":"urn:ngm:class:resilience","label":"Resilience"}],
-    "supports":[{"@id":"urn:ngm:class:reliability-engineering","label":"Reliability Engineering"},{"@id":"urn:ngm:class:microservices","label":"Microservices"}],
-    "uses":[{"@id":"urn:ngm:class:observability","label":"Observability"}],
-    "requires":[{"@id":"urn:ngm:class:observability","label":"Observability"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:service-mesh","label":"Service Mesh"}],
-    "dependsOn":[{"@id":"urn:ngm:class:reliability-engineering","label":"Reliability Engineering"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:circuit-breaker",
+  "@type": "Class",
+  "label": "Circuit Breaker",
+  "definition": "The circuit breaker is a fault-tolerance design pattern that monitors calls to a remote service or resource and, once failures exceed a threshold, trips open to fail fast and stop sending requests for a cooling-off period. After a timeout it allows a limited number of trial calls in a half-open state to test recovery before closing again. The pattern prevents cascading failures, protects struggling dependencies, and enables graceful degradation in distributed systems.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

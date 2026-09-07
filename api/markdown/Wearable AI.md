@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wearable AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:wearable-ai:29758d504972",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dbc68f421713b4f4545cf16dac2f0388a67d3bad91d3593154d0fdf4aa5f9aa0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:linked:edge-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:linked:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Narrow AI]]",
-      "resolved": "urn:visionflow:linked:narrow-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Domain]]",
-      "resolved": "urn:visionflow:linked:spatial-computing-domain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Wearable AI refers to body-worn devices that run or stream machine learning to sense context, recognise speech and imagery, and present information, often through glasses, earbuds or wrist devices.

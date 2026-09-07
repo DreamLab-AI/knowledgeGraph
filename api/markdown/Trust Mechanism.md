@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Trust Mechanism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A trust mechanism is a system, protocol, or institution that allows parties who lack prior knowledge of one another to transact or cooperate with reasonable assurance of honest behaviour. Such mechanisms range from intermediaries and reputation systems to cryptographic and consensus protocols that replace interpersonal trust with verifiable, incentive-aligned guarantees.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:value-transfer", "label": "Value Transfer"}, {"@id": "urn:ngm:class:barter-system", "label": "Barter System"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:value-transfer",
+        "label": "Value Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      }
+    ]
   },
   "quality": 0.72
 }

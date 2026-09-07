@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Software Engineering Agents
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,38 @@ public: true
   "definition": "Software engineering agents are autonomous or semi-autonomous AI systems built on large language models that perform software development tasks — reading and editing codebases, running tests, debugging, and opening pull requests — by planning multi-step actions and invoking developer tools. They operate over real repositories using file navigation, shell execution, and version-control integration, and are evaluated on benchmarks such as SWE-bench that measure the rate at which they resolve genuine GitHub issues. They represent the application of agentic reasoning to the specific domain of writing and maintaining code.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:llm-agents",
+      "label": "LLM Agents"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"}
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:llm-orchestration", "label": "LLM Orchestration"},
-      {"@id": "urn:ngm:class:llm-application-framework", "label": "LLM Application Framework"}
+      {
+        "@id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:llm-application-framework",
+        "label": "LLM Application Framework"
+      }
     ]
   },
   "quality": 0.8

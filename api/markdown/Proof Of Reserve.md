@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Proof Of Reserve
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

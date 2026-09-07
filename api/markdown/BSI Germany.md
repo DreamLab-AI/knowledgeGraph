@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BSI Germany
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,45 @@ public: true
   "definition": "The Bundesamt für Sicherheit in der Informationstechnik (BSI), or Federal Office for Information Security, is Germany's national authority for cybersecurity, responsible for protecting digital infrastructure, certifying IT products, and developing security standards. It functions as a central advisory, regulatory, and technical body for both public administration and the private sector across Germany and the European Union.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
-    "standardizedBy": [{"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"}],
-    "enables": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:iso-27001", "label": "ISO 27001"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      }
     ],
-    "supports": [{"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}]
+    "enables": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -54,4 +78,3 @@ public: true
   - Within the broader European ecosystem, BSI is a co-author of many ENISA guidelines and a driving force behind the EU Cybersecurity Act's certification frameworks. It coordinates with the NIS2 Directive implementation, providing national-level transposition guidance to German critical-infrastructure operators in energy, transport, health, and digital infrastructure sectors. Its BSI-Standards (100-1 through 200-4) are widely adopted by organisations seeking recognised assurance beyond commercial standards alone.
 
   - In 2024–2025, BSI has expanded its remit to address AI system security, publishing initial guidance on large language model risk assessments and adversarial robustness. It is also taking a lead role in post-quantum cryptography migration, issuing algorithm recommendations aligned with NIST's finalised PQC standards. The agency's profile as a geopolitical actor increased following recommendations to phase out certain vendor components from national 5G infrastructure, placing it at the intersection of technical security assessment and strategic industrial policy.
-

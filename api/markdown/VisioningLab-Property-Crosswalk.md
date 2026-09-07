@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VisioningLab-Property-Crosswalk
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -59,10 +54,22 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "quality": 0.5,
@@ -73,37 +80,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:visioning-lab-property-crosswalk:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:52d492846a8cc9529b38ebd87998f011411b8d1f4681cd8ddd578920fd774a4a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Aliases]]",
-      "resolved": "urn:visionflow:linked:aliases",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A mapping framework that aligns VisioningLab's hybrid Logseq page properties with standard RDF, OWL, and SKOS predicates so that locally authored metadata can be published as valid linked data. The crosswalk records each property-to-predicate correspondence, supporting ontology interoperability and round-tripping between the knowledge graph and external semantic web tooling.

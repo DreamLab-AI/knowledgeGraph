@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Shared Virtual World
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:shared-virtual-world:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e1dd77201f50b3cf46140cc1dc4454c0a9c207b9b2200649a09cdf3f1cff1c77"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Social Presence]]",
-      "resolved": "urn:visionflow:linked:digital-social-presence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Environment]]",
-      "resolved": "urn:visionflow:owl:class:virtual-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A persistent, synchronous three-dimensional digital environment where unlimited users interact simultaneously through avatars, featuring continuous data persistence for identity, assets, and social relationships across sessions while supporting real-time rendering and cross-platform access.

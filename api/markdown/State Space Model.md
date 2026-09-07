@@ -1,8 +1,3 @@
----
-public: true
----
-
-# State Space Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,53 +178,13 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:state-space-model:8dbc67381924",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:73cbfefcd4d4bc1f5cc9907d818a1e542119bb349547e73892ca48357a5258af"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Probabilistic Model]]",
-      "resolved": "urn:visionflow:linked:probabilistic-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Language Model]]",
-      "resolved": "urn:visionflow:linked:language-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:linked:transformer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A State Space Model (SSM) is a mathematical framework representing a dynamical system through a hidden latent state vector that evolves over time according to linear (or learned) recurrence equations, with a separate output equation mapping that state to observable signals. Originally rooted in [[Control Theory]] and [[Signal Processing]] — with the [[Kalman Filter]] as the canonical Bayesian inference algorithm — SSMs have been re-parameterised as efficient deep-learning sequence layers that can model [[Long-Range Dependency Modelling]] at sub-quadratic cost. Modern structured variants such as S4, Mamba, and RWKV exploit [[Linear Algebra]] constraints on the transition matrix to enable hardware-efficient parallel training, positioning SSMs as a competitive alternative to [[Transformer]] architectures for [[Sequence Model]] tasks.
 
 - ### Overview
   - State space models formalise the idea that a time-evolving system can be fully characterised by a compact internal state, regardless of how much history has elapsed. This is powerful because it decouples the complexity of the past (represented in the state) from the cost of processing new observations.
   - **Classical origins**: SSMs emerged from the work of Rudolf Kálmán in the early 1960s as a general representation for linear dynamical systems. The [[Kalman Filter]] provides closed-form optimal Bayesian updates of the hidden state given noisy observations, and underpins navigation, econometrics, and engineering control loops to this day.
-  - **Deep learning adaptation**: Starting around 2021 with the S4 (Structured State Space for Sequences) paper, researchers discovered that SSMs could be parameterised and trained as neural layers. By constraining the state transition matrix to diagonal-plus-low-rank form and initialising it with the [[HiPPO Initialisation]] scheme (which captures polynomial projections of recent history), these layers can be efficiently implemented as a global [[Convolution]] during training and as a linear [[Recurrent Neural Network]] during inference.
+  - **Deep learning adaptation**: Starting around 2021 with the S4 (Structured State Space for Sequences) paper, researchers discovered that SSMs [private] be parameterised and trained as neural layers. By constraining the state transition matrix to diagonal-plus-low-rank form and initialising it with the [[HiPPO Initialisation]] scheme (which captures polynomial projections of recent history), these layers can be efficiently implemented as a global [[Convolution]] during training and as a linear [[Recurrent Neural Network]] during inference.
   - **Selective SSMs (Mamba)**: A key limitation of early SSMs was that the dynamics were input-independent — the same transition matrix applied to every token. Mamba (2023) introduced input-dependent selection, making the transition parameters functions of the current token. This added an inductive bias analogous to [[Self-Attention]]'s dynamic weighting, while retaining linear inference cost.
   - **Why it matters**: The quadratic memory and compute cost of [[Self-Attention]] in [[Transformer]] models becomes prohibitive for very long sequences (DNA, audio waveforms, video, long documents). SSMs offer a path to O(L) inference at sequence length L, making them attractive for production deployment where memory footprint and latency matter.
 

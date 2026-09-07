@@ -1,37 +1,110 @@
----
-public: true
----
-
-# Composability
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:composability", "@type":"Page", "title":"Composability", "vc:slug":"composability", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:composability",
+  "@type": "Page",
+  "title": "Composability",
+  "vc:slug": "composability",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:composability",
-  "@type":"Class",
-  "label":"Composability",
-  "definition":"Composability is the property by which independent components can be combined into larger systems whose behaviour is predictable from the behaviour of the parts. In blockchain and decentralised finance it describes how permissionless smart contracts can call and build upon one another so that protocols interlock like building blocks, often called money legos. Composability accelerates innovation but couples systems together, propagating both functionality and risk across the stack.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-  "relations":{
-    "supports":[{"@id":"urn:ngm:class:decentralized-finance","label":"Decentralized Finance"},{"@id":"urn:ngm:class:defi-protocol","label":"DeFi Protocol"}],
-    "enables":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"},{"@id":"urn:ngm:class:decentralized-finance","label":"Decentralized Finance"}],
-    "dependsOn":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "uses":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "partOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-    "requires":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "relatedTo":[{"@id":"urn:ngm:class:decentralized-exchange","label":"Decentralized Exchange"},{"@id":"urn:ngm:class:defi-protocol","label":"DeFi Protocol"},{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:decentralized-finance","label":"Decentralized Finance"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:composability",
+  "@type": "Class",
+  "label": "Composability",
+  "definition": "Composability is the property by which independent components can be combined into larger systems whose behaviour is predictable from the behaviour of the parts. In blockchain and decentralised finance it describes how permissionless smart contracts can call and build upon one another so that protocols interlock like building blocks, often called money legos. Composability accelerates innovation but couples systems together, propagating both functionality and risk across the stack.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "relations": {
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

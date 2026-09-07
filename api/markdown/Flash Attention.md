@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - FlashAttention
----
-
-# flash attention
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -42,52 +35,133 @@ aliases:
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:scaled-dot-product-attention", "label": "Scaled Dot Product Attention"},
-      {"@id": "urn:ngm:class:online-softmax", "label": "Online Softmax"}
+      {
+        "@id": "urn:ngm:class:scaled-dot-product-attention",
+        "label": "Scaled Dot Product Attention"
+      },
+      {
+        "@id": "urn:ngm:class:online-softmax",
+        "label": "Online Softmax"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:tiling", "label": "Tiling"},
-      {"@id": "urn:ngm:class:sram", "label": "SRAM"},
-      {"@id": "urn:ngm:class:kernel-fusion", "label": "Kernel Fusion"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"}
+      {
+        "@id": "urn:ngm:class:tiling",
+        "label": "Tiling"
+      },
+      {
+        "@id": "urn:ngm:class:sram",
+        "label": "SRAM"
+      },
+      {
+        "@id": "urn:ngm:class:kernel-fusion",
+        "label": "Kernel Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:long-context-modelling", "label": "Long Context Modelling"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"}
+      {
+        "@id": "urn:ngm:class:long-context-modelling",
+        "label": "Long Context Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High Bandwidth Memory"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:linear-attention", "label": "Linear Attention"},
-      {"@id": "urn:ngm:class:sparse-attention", "label": "Sparse Attention"},
-      {"@id": "urn:ngm:class:gradient-checkpointing", "label": "Gradient Checkpointing"}
+      {
+        "@id": "urn:ngm:class:linear-attention",
+        "label": "Linear Attention"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-attention",
+        "label": "Sparse Attention"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:kv-cache", "label": "KV Cache"},
-      {"@id": "urn:ngm:class:continuous-batching", "label": "Continuous Batching"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"}
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:memory-bandwidth-optimisation", "label": "Memory Bandwidth Optimisation"},
-      {"@id": "urn:ngm:class:paged-attention", "label": "Paged Attention"},
-      {"@id": "urn:ngm:class:rotary-position-embedding", "label": "Rotary Position Embedding"},
-      {"@id": "urn:ngm:class:tensor-parallelism", "label": "Tensor Parallelism"}
+      {
+        "@id": "urn:ngm:class:memory-bandwidth-optimisation",
+        "label": "Memory Bandwidth Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:paged-attention",
+        "label": "Paged Attention"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-position-embedding",
+        "label": "Rotary Position Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:hardware-accelerator-design", "label": "Hardware Accelerator Design"}
+      {
+        "@id": "urn:ngm:class:hardware-accelerator-design",
+        "label": "Hardware Accelerator Design"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:flashattention", "label": "FlashAttention"}
+    {
+      "@id": "urn:ngm:class:flashattention",
+      "label": "FlashAttention"
+    }
   ],
   "quality": 0.74,
   "provenance": {

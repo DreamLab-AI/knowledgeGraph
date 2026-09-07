@@ -1,8 +1,3 @@
----
-public: true
----
-
-# System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,23 +50,56 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {
+        "@id": "urn:ngm:class:ai-system-component",
+        "label": "AI System Component"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
-      {"@id": "urn:ngm:class:aisystem", "label": "AISystem"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:aisystem",
+        "label": "AISystem"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"},
-      {"@id": "urn:ngm:class:embedded-ai-frameworks", "label": "Embedded AI Frameworks"}
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
     ]
   },
   "quality": 0.8,
@@ -82,32 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9107e4859d2c61e25c205494e12ca35a748777c0bef473443ab5975ef6b89927"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - System is a concept within the ai domain.

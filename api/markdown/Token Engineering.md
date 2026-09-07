@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Token Engineering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:token-engineering:1e7495717281",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:069d59e7a26483d5819f799f0dcbdf9954d5222de54afb6b714c0e8e34043cab"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Mechanism Design]]",
-      "resolved": "urn:visionflow:linked:mechanism-design",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token Economics]]",
-      "resolved": "urn:visionflow:linked:token-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token]]",
-      "resolved": "urn:visionflow:linked:token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tokenomics]]",
-      "resolved": "urn:visionflow:linked:tokenomics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://tokenengineeringcommunity.github.io/website/]]",
-      "resolved": "urn:visionflow:linked:https-tokenengineeringcommunity-github-io-website",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The discipline of designing token systems and their incentive structures using methods from economics, control theory and systems engineering. It treats a token economy as a system to be specified, simulated and tested before deployment.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vector-index",
   "domain": "ai",
-  "definition": "A vector index is a data structure that organises high-dimensional embedding vectors to enable fast approximate nearest-neighbour search over large collections. Using methods such as HNSW graphs, IVF partitioning or product quantisation, it trades a small amount of recall for large gains in query latency and scalability. Vector indexes are the retrieval engine behind semantic search and retrieval-augmented generation.",
+  "definition": "A vector [private] is a data structure that organises high-dimensional embedding vectors to enable fast approximate nearest-neighbour search over large collections. Using methods such as HNSW graphs, IVF partitioning or product quantisation, it trades a small amount of recall for large gains in query latency and scalability. Vector indexes are the retrieval engine behind semantic search and retrieval-augmented generation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:information-retrieval",

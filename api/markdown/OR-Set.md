@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OR-Set
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "An OR-Set (Observed-Remove Set) is a conflict-free replicated data type (CRDT) that supports concurrent add and remove operations on a set while guaranteeing eventual consistency across replicas. Each added element is tagged with a unique identifier so that concurrent adds and removes resolve deterministically, with adds winning over concurrent removes of unobserved tags. It is a foundational structure for collaborative applications that must merge edits without central coordination.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-data-structure", "label": "Distributed Data Structure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:crdt", "label": "CRDT"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"}
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      }
     ]
   },
   "quality": 0.72

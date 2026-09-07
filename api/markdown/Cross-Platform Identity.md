@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Platform Identity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -217,67 +212,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cross-platform-identity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7ba924e6f43fa0a7c8caa17667dbf183c433e39da5f0b1a1f387c7accfdb4dee"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Core Technology]]",
-      "resolved": "urn:visionflow:linked:core-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Federated Access]]",
-      "resolved": "urn:visionflow:linked:federated-access",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Single Sign-On]]",
-      "resolved": "urn:visionflow:linked:single-sign-on",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Trust Relationships]]",
-      "resolved": "urn:visionflow:linked:trust-relationships",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Federation]]",
-      "resolved": "urn:visionflow:owl:class:identity-federation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:owl:class:identity-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries. It enables seamless authentication and authorisation across heterogeneous environments through federated identity management, allowing users to access resources across domains without maintaining separate credentials for each system.

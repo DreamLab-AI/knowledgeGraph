@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Skeletal Rig
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:skeletal-rig", "@type":"Page", "title":"Skeletal Rig", "vc:slug":"skeletal-rig", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:skeletal-rig",
+  "@type": "Page",
+  "title": "Skeletal Rig",
+  "vc:slug": "skeletal-rig",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

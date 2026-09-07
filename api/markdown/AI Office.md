@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Office
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,16 +67,34 @@ public: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
-      {"@id": "urn:ngm:class:ai-board", "label": "AI Board"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "@id": "urn:ngm:class:ai-board",
+        "label": "AI Board"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:general-purpose-ai-model", "label": "General Purpose AI Model"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+      {
+        "@id": "urn:ngm:class:general-purpose-ai-model",
+        "label": "General Purpose AI Model"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
     ]
   },
   "quality": 0.5,
@@ -92,52 +105,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-office:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:01af7158f9aa9beb9c67750352ac1433ddd1d34ebbd3350769ac3c5cc1596e73"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE P7009]]",
-      "resolved": "urn:visionflow:linked:ieee-p7009",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI RMF]]",
-      "resolved": "urn:visionflow:linked:nist-ai-rmf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Commission body established as the centre of AI expertise forming the foundation for a single European AI governance system, with primary responsibility for supervising general-purpose AI models and coordinating market surveillance.

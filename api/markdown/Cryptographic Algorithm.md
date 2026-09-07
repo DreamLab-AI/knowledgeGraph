@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cryptographic Algorithm
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,7 +168,7 @@ public: true
   - Cryptographic Algorithm is a specialisation of [[Cryptography]] and serves as the foundational primitive enabling [[Encryption]] for confidentiality, [[Digital Signature]] for authenticity and non-repudiation, and [[Zero-Knowledge Proof]] for privacy-preserving verification. It underpins [[Public-Key Cryptography]] as the mathematical basis for asymmetric schemes, and all practical deployments depend on [[Key Management]] systems to handle the lifecycle of cryptographic keys. Symmetric and hash algorithms are also related through the construction of message authentication codes (HMACs) and key derivation functions.
 
 - ### Content
-  - Cryptographic algorithms have roots in classical substitution and transposition ciphers, but modern algorithmic cryptography began with Shannon's 1949 paper establishing information-theoretic foundations of secrecy. The pivotal public-key revolution arrived with Diffie and Hellman's 1976 "New Directions in Cryptography" paper and Rivest, Shamir, and Adleman's RSA scheme (1977), which demonstrated that two parties could establish a shared secret over a public channel without prior key exchange—solving the key distribution problem that had constrained symmetric cryptography for centuries. National standardisation processes formalised AES (2001, Rijndael cipher selected from open competition) and SHA-2/3 families.
+  - Cryptographic algorithms have roots in classical substitution and transposition ciphers, but modern algorithmic cryptography began with Shannon's 1949 paper establishing information-theoretic foundations of secrecy. The pivotal public-key revolution arrived with Diffie and Hellman's 1976 "New Directions in Cryptography" paper and Rivest, Shamir, and Adleman's RSA scheme (1977), which demonstrated that two parties [private] establish a shared secret over a public channel without prior key exchange—solving the key distribution problem that had constrained symmetric cryptography for centuries. National standardisation processes formalised AES (2001, Rijndael cipher selected from open competition) and SHA-2/3 families.
 
   - The technical taxonomy of cryptographic algorithms includes: (1) Symmetric-key ciphers—block ciphers (AES-128/256 in CBC, GCM, CCM modes; ChaCha20-Poly1305) and stream ciphers; (2) Asymmetric schemes—RSA (2048/4096-bit), Elliptic Curve Cryptography (P-256, Curve25519, secp256k1), and lattice-based post-quantum algorithms (CRYSTALS-Kyber for key encapsulation, CRYSTALS-Dilithium for signatures); (3) Hash functions—SHA-256, SHA-3 (Keccak), BLAKE3; (4) Message authentication codes—HMAC, CMAC, Poly1305; (5) Digital signatures—ECDSA, EdDSA (Ed25519); (6) Zero-knowledge systems—zk-SNARKs (Groth16), zk-STARKs, Bulletproofs. Security proofs reduce algorithm security to hardness of underlying mathematical problems.
 

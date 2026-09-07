@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralised Authentication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -129,6 +125,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Decentralised authentication verifies the identity of a party without relying on a single central identity provider, instead using cryptographic keys, decentralised identifiers and verifiable credentials controlled by the user. The holder proves control of an identifier and presents credentials that a verifier checks against a distributed trust registry rather than a federated login service. This shifts control of identity from platforms to individuals while preserving cryptographic assurance.
   - Related concepts: [[Authentication Protocol]] [[Decentralised Identifiers]] [[Verifiable Credentials]] [[Self-Sovereign Identity (SSI)]] [[Decentralised Identity]]

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Streaming Payment
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:streaming-payment", "@type":"Page", "title":"Streaming Payment", "vc:slug":"streaming-payment", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:streaming-payment",
+  "@type": "Page",
+  "title": "Streaming Payment",
+  "vc:slug": "streaming-payment",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

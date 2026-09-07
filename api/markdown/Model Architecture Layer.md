@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Architecture Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-architecture-layer:a5f967fcc50e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:33af29676ebbbccfc1b67eb34b2dd0103f86f5b55b71271be9f35fb8c9d5ce9f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Algorithm Layer]]",
-      "resolved": "urn:visionflow:linked:algorithm-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Layer]]",
-      "resolved": "urn:visionflow:linked:model-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Training Layer]]",
-      "resolved": "urn:visionflow:linked:training-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:linked:transformer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Model Architecture Layer is the stratum that specifies the structural design of a machine learning model: its operators, connectivity, and parameterisation. It sits above the Algorithm Layer, which supplies the primitives it composes, and below the Model Layer, which holds trained instances of these architectures. It contains layer definitions, network topologies, and architectural hyperparameters.

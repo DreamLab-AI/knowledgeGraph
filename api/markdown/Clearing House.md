@@ -1,63 +1,127 @@
----
-public: true
----
-
-# Clearing House
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:clearing-house", "@type":"Page", "title":"Clearing House", "vc:slug":"clearing-house", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:clearing-house",
+  "@type": "Page",
+  "title": "Clearing House",
+  "vc:slug": "clearing-house",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:clearing-house",
-  "@type":"Class",
-  "label":"Clearing House",
-  "definition":"A clearing house is a financial market intermediary that stands between the buyers and sellers of a trade to guarantee its completion, most often acting as a central counterparty that legally interposes itself through novation. By collecting margin, mutualising risk across a default fund, and netting offsetting obligations, it reduces counterparty credit risk and systemic contagion in securities, derivatives, and payment markets. Clearing houses are critical financial market infrastructure, subject to stringent prudential supervision because their failure could propagate across the financial system.",
-  "domain":"finance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:financial-market-infrastructure","label":"Financial Market Infrastructure"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:central-counterparty","label":"Central Counterparty"},
-      {"@id":"urn:ngm:class:netting","label":"Netting"},
-      {"@id":"urn:ngm:class:margin","label":"Margin"},
-      {"@id":"urn:ngm:class:default-management","label":"Default Management"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:clearing-house",
+  "@type": "Class",
+  "label": "Clearing House",
+  "definition": "A clearing house is a financial market intermediary that stands between the buyers and sellers of a trade to guarantee its completion, most often acting as a central counterparty that legally interposes itself through novation. By collecting margin, mutualising risk across a default fund, and netting offsetting obligations, it reduces counterparty credit risk and systemic contagion in securities, derivatives, and payment markets. Clearing houses are critical financial market infrastructure, subject to stringent prudential supervision because their failure [private] propagate across the financial system.",
+  "domain": "finance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-market-infrastructure",
+      "label": "Financial Market Infrastructure"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:central-counterparty",
+        "label": "Central Counterparty"
+      },
+      {
+        "@id": "urn:ngm:class:netting",
+        "label": "Netting"
+      },
+      {
+        "@id": "urn:ngm:class:margin",
+        "label": "Margin"
+      },
+      {
+        "@id": "urn:ngm:class:default-management",
+        "label": "Default Management"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:financial-market-infrastructure","label":"Financial Market Infrastructure"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:settlement","label":"Settlement"},
-      {"@id":"urn:ngm:class:clearing","label":"Clearing"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:clearing",
+        "label": "Clearing"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:collateral","label":"Collateral"},
-      {"@id":"urn:ngm:class:risk-management","label":"Risk Management"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:settlement-finality","label":"Settlement Finality"},
-      {"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:settlement-finality",
+        "label": "Settlement Finality"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
-    "mitigates":[
-      {"@id":"urn:ngm:class:counterparty-risk","label":"Counterparty Risk"}
+    "mitigates": [
+      {
+        "@id": "urn:ngm:class:counterparty-risk",
+        "label": "Counterparty Risk"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:derivatives","label":"Derivatives"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:derivatives",
+        "label": "Derivatives"
+      }
     ],
-    "regulatedBy":[
-      {"@id":"urn:ngm:class:regulation","label":"Regulation"}
+    "regulatedBy": [
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:central-bank","label":"Central Bank"},
-      {"@id":"urn:ngm:class:institutional-trust","label":"Institutional Trust"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-trust",
+        "label": "Institutional Trust"
+      }
     ]
   },
-  "sameAs":[
-    {"@id":"urn:ngm:class:central-counterparty","label":"Central Counterparty"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:central-counterparty",
+      "label": "Central Counterparty"
+    }
   ],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

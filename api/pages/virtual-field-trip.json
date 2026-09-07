@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-field-trip",
   "domain": "spatial-computing",
-  "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom. Research indicates VR can improve knowledge acquisition and retention compared to traditional instruction; platforms such as Google Arts and Culture and Google Expeditions have demonstrated feasibility at scale across subjects including science, history, and geography.",
+  "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they [private] not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom. Research indicates VR can improve knowledge acquisition and retention compared to traditional instruction; platforms such as Google Arts and Culture and Google Expeditions have demonstrated feasibility at scale across subjects including science, history, and geography.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",

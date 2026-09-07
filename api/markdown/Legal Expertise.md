@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Legal Expertise
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Legal expertise is the specialised knowledge and professional judgement required to interpret statutes, regulations, contracts, and case law and to apply them to specific situations. In technology and blockchain settings it spans securities, data-protection, intellectual-property, and cross-border regulatory analysis. It is a prerequisite for designing compliant products and navigating multi-jurisdictional obligations.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:compliance-standards", "label": "Compliance Standards"}, {"@id": "urn:ngm:class:cross-border-compliance", "label": "Cross Border Compliance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      }
+    ]
   },
   "quality": 0.72
 }

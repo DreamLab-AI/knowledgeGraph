@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Reality Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,21 +51,48 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:room-scale", "label": "Room Scale"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:xr-meeting-space", "label": "XR Meeting Space"}
+      {
+        "@id": "urn:ngm:class:room-scale",
+        "label": "Room Scale"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:xr-meeting-space",
+        "label": "XR Meeting Space"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:haptics", "label": "Haptics"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-reality-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ffc662ad22f981d0d737e272a8909a0578325896c089108d0754b83b784bdf16"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An integrated hardware and software ecosystem that provides the compute, display, tracking, and runtime services required to deliver immersive virtual reality experiences. A VR platform encompasses the headset, motion controllers, inside-out or external tracking system, operating system, SDK, content store, and developer toolchain. Platforms differ in their openness to third-party applications, support for room-scale interaction, and adherence to interoperability standards such as OpenXR.

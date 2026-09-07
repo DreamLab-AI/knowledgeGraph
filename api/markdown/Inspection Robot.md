@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inspection Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"}
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
     ]
   },
   "provenance": {
@@ -82,37 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inspection-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:94f7c737f4f362d575803bf71353e78e942e28a8afcba81e00a5fa5304ecdb6e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Inspection Robot** - Inspection Robot in robotics systems

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Reprojection Error
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

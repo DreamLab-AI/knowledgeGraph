@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Performance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -270,132 +265,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-performance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3c022472ea8c6df887e0ed7e03db24243029b641e100d133a6cf10dbaa9fcbdc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitnet and the rise of the 1bit model]]",
-      "resolved": "urn:visionflow:linked:bitnet-and-the-rise-of-the-1bit-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Drift]]",
-      "resolved": "urn:visionflow:linked:data-drift",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Evaluation]]",
-      "resolved": "urn:visionflow:linked:model-evaluation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[open source]]",
-      "resolved": "urn:visionflow:linked:open-source",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[user experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accuracy]]",
-      "resolved": "urn:visionflow:owl:class:accuracy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Monitoring]]",
-      "resolved": "urn:visionflow:owl:class:ai-monitoring",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[artificial intelligence|AI]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
-      "resolved": "urn:visionflow:owl:class:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Confusion Matrix]]",
-      "resolved": "urn:visionflow:owl:class:confusion-matrix",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[F1 Score]]",
-      "resolved": "urn:visionflow:owl:class:f1-score",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fairness]]",
-      "resolved": "urn:visionflow:owl:class:fairness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Flux.1]]",
-      "resolved": "urn:visionflow:owl:class:flux-1",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Google AI Technology Corporation]]",
-      "resolved": "urn:visionflow:owl:class:google",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware and Edge]]",
-      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Precision]]",
-      "resolved": "urn:visionflow:owl:class:precision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Recall]]",
-      "resolved": "urn:visionflow:owl:class:recall",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ROC Curve]]",
-      "resolved": "urn:visionflow:owl:class:roc-curve",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[training]]",
-      "resolved": "urn:visionflow:owl:class:training",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The quantitative and qualitative measure of how effectively an artificial intelligence model accomplishes its designated tasks, typically assessed through statistical metrics evaluating prediction accuracy, reliability, generalisability, computational efficiency, and robustness, considered across different data distributions, operational conditions, and stakeholder requirements, serving as a critical basis for model selection, deployment decisions, ongoing monitoring, and continuous improvement throughout the AI lifecycle.
 
@@ -454,11 +323,11 @@ public: true
 	 - ### HD wallet encoding
 	 - ideas
 				- The BIP39 standard is designed to create a human-readable and easilyportable format for Bitcoin and other cryptographic wallet seeds. Byrepresenting these seeds as a series of colors in a 3D model, we add anew dimension of portability, visual appeal, and potential applications.
-					- **Easter Egg Hunts in Social Metaverses**: The color-based representation of BIP39 seeds opens up opportunities for creative and engaging experiences in metaverse environments. For instance, mnemonic seeds could be hidden within digital artifacts in the form of color sequences. These could be used as treasure hunts or easter eggs, potentially carrying real-world value in the form of Bitcoin or other cryptocurrencies. Recovery would mean some kind of sampling as in Fig <a href="#fig:HDwalletBlock" data-reference-type="ref" data-reference="fig:HDwalletBlock">3.12</a> and software.
-					- **Provenance Encoding in Digital Art**: The mnemonic color-coding could be embedded within digital art pieces, effectively encoding the provenance of the artwork directly into its visual representation. This could add an extra layer of security and uniqueness to the art piece, and also serve as a novel way of proving ownership or creatorship.
+					- **Easter Egg Hunts in Social Metaverses**: The color-based representation of BIP39 seeds opens up opportunities for creative and engaging experiences in metaverse environments. For instance, mnemonic seeds [private] be hidden within digital artifacts in the form of color sequences. These [private] be used as treasure hunts or easter eggs, potentially carrying real-world value in the form of Bitcoin or other cryptocurrencies. Recovery would mean some kind of sampling as in Fig <a href="#fig:HDwalletBlock" data-reference-type="ref" data-reference="fig:HDwalletBlock">3.12</a> and software.
+					- **Provenance Encoding in Digital Art**: The mnemonic color-coding [private] be embedded within digital art pieces, effectively encoding the provenance of the artwork directly into its visual representation. This [private] add an extra layer of security and uniqueness to the art piece, and also serve as a novel way of proving ownership or creatorship.
 					- **Steganographic Transfer of Funds**: By incorporating the color-encoded BIP39 seeds into various aspects of a metaverse or digital environment, they can serve as a form of steganography. This allows for the transfer of funds or sensitive information covertly within the visual and experiential components of the environment.
-					- **Gamification of Cryptographic Keys**: Cryptographic keys are typically represented as long, random strings of characters that are hard to remember and not very user-friendly. Representing these keys as a sequence of colors could make them more approachable and memorable. This could also introduce an aspect of gamification into the world of identity and value, possibly increasing their appeal to a broader audience.
-					- **Embedding in Physical Objects**: 3D printing technologies could be used to create physical representations of these 3D models (assuming some variance of the colour as the materials age), embedding BIP39 seeds into tangible, physical objects. These could serve as novel physical wallets, gift items, or physical tokens representing digital assets.
+					- **Gamification of Cryptographic Keys**: Cryptographic keys are typically represented as long, random strings of characters that are hard to remember and not very user-friendly. Representing these keys as a sequence of colors [private] make them more approachable and memorable. This [private] also introduce an aspect of gamification into the world of identity and value, possibly increasing their appeal to a broader audience.
+					- **Embedding in Physical Objects**: 3D printing technologies [private] be used to create physical representations of these 3D models (assuming some variance of the colour as the materials age), embedding BIP39 seeds into tangible, physical objects. These [private] serve as novel physical wallets, gift items, or physical tokens representing digital assets.
   - While this encoding scheme opens up numerous creative opportunities, itis important to be aware of potential security implications. The use ofmnemonic seeds in this way should be done with care and an understandingof the risks involved.
   - The GitHub repository for this book [has some examplecode](https://github.com/flossverse/bip39Geom) playing around with thisidea further, generating a color-based and a three-dimensional graphicalrepresentation of nostr addresses. Each mnemonic word is mapped to aunique color and a 3D model is created, in which each word of themnemonic is represented by a cube of the corresponding color arranged ina circle.
 	 - **BIP39Colors**: A class that contains a list of BIP39 words and methods to convert a hexadecimal seed to RGB colors and mnemonic words.
@@ -613,11 +482,11 @@ public: true
 	 - ### HD wallet encoding
 	 - ideas
 				- The BIP39 standard is designed to create a human-readable and easilyportable format for Bitcoin and other cryptographic wallet seeds. Byrepresenting these seeds as a series of colors in a 3D model, we add anew dimension of portability, visual appeal, and potential applications.
-					- **Easter Egg Hunts in Social Metaverses**: The color-based representation of BIP39 seeds opens up opportunities for creative and engaging experiences in metaverse environments. For instance, mnemonic seeds could be hidden within digital artifacts in the form of color sequences. These could be used as treasure hunts or easter eggs, potentially carrying real-world value in the form of Bitcoin or other cryptocurrencies. Recovery would mean some kind of sampling as in Fig <a href="#fig:HDwalletBlock" data-reference-type="ref" data-reference="fig:HDwalletBlock">3.12</a> and software.
-					- **Provenance Encoding in Digital Art**: The mnemonic color-coding could be embedded within digital art pieces, effectively encoding the provenance of the artwork directly into its visual representation. This could add an extra layer of security and uniqueness to the art piece, and also serve as a novel way of proving ownership or creatorship.
+					- **Easter Egg Hunts in Social Metaverses**: The color-based representation of BIP39 seeds opens up opportunities for creative and engaging experiences in metaverse environments. For instance, mnemonic seeds [private] be hidden within digital artifacts in the form of color sequences. These [private] be used as treasure hunts or easter eggs, potentially carrying real-world value in the form of Bitcoin or other cryptocurrencies. Recovery would mean some kind of sampling as in Fig <a href="#fig:HDwalletBlock" data-reference-type="ref" data-reference="fig:HDwalletBlock">3.12</a> and software.
+					- **Provenance Encoding in Digital Art**: The mnemonic color-coding [private] be embedded within digital art pieces, effectively encoding the provenance of the artwork directly into its visual representation. This [private] add an extra layer of security and uniqueness to the art piece, and also serve as a novel way of proving ownership or creatorship.
 					- **Steganographic Transfer of Funds**: By incorporating the color-encoded BIP39 seeds into various aspects of a metaverse or digital environment, they can serve as a form of steganography. This allows for the transfer of funds or sensitive information covertly within the visual and experiential components of the environment.
-					- **Gamification of Cryptographic Keys**: Cryptographic keys are typically represented as long, random strings of characters that are hard to remember and not very user-friendly. Representing these keys as a sequence of colors could make them more approachable and memorable. This could also introduce an aspect of gamification into the world of identity and value, possibly increasing their appeal to a broader audience.
-					- **Embedding in Physical Objects**: 3D printing technologies could be used to create physical representations of these 3D models (assuming some variance of the colour as the materials age), embedding BIP39 seeds into tangible, physical objects. These could serve as novel physical wallets, gift items, or physical tokens representing digital assets.
+					- **Gamification of Cryptographic Keys**: Cryptographic keys are typically represented as long, random strings of characters that are hard to remember and not very user-friendly. Representing these keys as a sequence of colors [private] make them more approachable and memorable. This [private] also introduce an aspect of gamification into the world of identity and value, possibly increasing their appeal to a broader audience.
+					- **Embedding in Physical Objects**: 3D printing technologies [private] be used to create physical representations of these 3D models (assuming some variance of the colour as the materials age), embedding BIP39 seeds into tangible, physical objects. These [private] serve as novel physical wallets, gift items, or physical tokens representing digital assets.
   - While this encoding scheme opens up numerous creative opportunities, itis important to be aware of potential security implications. The use ofmnemonic seeds in this way should be done with care and an understandingof the risks involved.
   - The GitHub repository for this book [has some examplecode](https://github.com/flossverse/bip39Geom) playing around with thisidea further, generating a color-based and a three-dimensional graphicalrepresentation of nostr addresses. Each mnemonic word is mapped to aunique color and a 3D model is created, in which each word of themnemonic is represented by a cube of the corresponding color arranged ina circle.
 	 - **BIP39Colors**: A class that contains a list of BIP39 words and methods to convert a hexadecimal seed to RGB colors and mnemonic words.

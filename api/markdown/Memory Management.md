@@ -1,38 +1,112 @@
----
-public: true
----
-
-# Memory Management
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:memory-management", "@type":"Page", "title":"Memory Management", "vc:slug":"memory-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:memory-management",
+  "@type": "Page",
+  "title": "Memory Management",
+  "vc:slug": "memory-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:memory-management",
-  "@type":"Class",
-  "label":"Memory Management",
-  "definition":"Memory management is the systematic allocation, tracking, and reclamation of a computer system's volatile memory resources across processes and runtimes. It encompasses allocation strategies, virtual memory abstraction, paging, and the reclamation of unused memory to prevent exhaustion and fragmentation. Effective memory management is foundational to system stability, performance, and the isolation guarantees that underpin multi-tenant infrastructure.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:resource-management","label":"Resource Management"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:operating-system","label":"Operating System"}],
-    "hasPart":[{"@id":"urn:ngm:class:data-compression","label":"Data Compression"}],
-    "requires":[{"@id":"urn:ngm:class:runtime-environment","label":"Runtime Environment"}],
-    "enables":[{"@id":"urn:ngm:class:scalability","label":"Scalability"},{"@id":"urn:ngm:class:reliability","label":"Reliability"}],
-    "dependsOn":[{"@id":"urn:ngm:class:operating-system","label":"Operating System"}],
-    "supports":[{"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"}],
-    "uses":[{"@id":"urn:ngm:class:resource-management","label":"Resource Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"},{"@id":"urn:ngm:class:observability","label":"Observability"},{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:data-management","label":"Data Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:gpu-computing","label":"GPU Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:memory-management",
+  "@type": "Class",
+  "label": "Memory Management",
+  "definition": "Memory management is the systematic allocation, tracking, and reclamation of a computer system's volatile memory resources across processes and runtimes. It encompasses allocation strategies, virtual memory abstraction, paging, and the reclamation of unused memory to prevent exhaustion and fragmentation. Effective memory management is foundational to system stability, performance, and the isolation guarantees that underpin multi-tenant infrastructure.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:resource-management",
+      "label": "Resource Management"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

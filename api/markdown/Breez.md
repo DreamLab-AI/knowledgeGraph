@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Breez
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -163,46 +158,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:breez:3fb1101c01cc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:82f126bfe64012bc1ed8d3be9827fd0aa14687b3640fb112e84563ee5adb9c66"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment Channel]]",
-      "resolved": "urn:visionflow:linked:payment-channel",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Custody]]",
-      "resolved": "urn:visionflow:linked:self-custody",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:linked:lightning-network",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

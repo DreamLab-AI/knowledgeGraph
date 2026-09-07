@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NVIDIA H100
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,46 +174,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nvidia-h-100:17e97e92d5b7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b2a8c7b07bb878e29ad81cd59f3f075a4515258269916dfb901582975235ed6e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GPU Cluster]]",
-      "resolved": "urn:visionflow:linked:gpu-cluster",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GPU Computing]]",
-      "resolved": "urn:visionflow:linked:gpu-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA Corporation]]",
-      "resolved": "urn:visionflow:linked:nvidia",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPU]]",
-      "resolved": "urn:visionflow:linked:gpu",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

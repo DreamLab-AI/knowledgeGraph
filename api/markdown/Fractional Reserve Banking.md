@@ -1,38 +1,112 @@
----
-public: true
----
-
-# Fractional Reserve Banking
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:fractional-reserve-banking", "@type":"Page", "title":"Fractional Reserve Banking", "vc:slug":"fractional-reserve-banking", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:fractional-reserve-banking",
+  "@type": "Page",
+  "title": "Fractional Reserve Banking",
+  "vc:slug": "fractional-reserve-banking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:fractional-reserve-banking",
-  "@type":"Class",
-  "label":"Fractional Reserve Banking",
-  "definition":"Fractional reserve banking is the standard banking system in which banks hold only a fraction of their deposit liabilities as reserves and lend out the remainder. Because lending creates new deposits that can be re-lent, the system expands the broad money supply far beyond the monetary base through the money multiplier. It enables credit creation and maturity transformation but exposes individual banks to liquidity risk and the possibility of bank runs.",
-  "domain":"finance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:money","label":"Money"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:fiat-currency","label":"Fiat Currency"}],
-    "partOf":[{"@id":"urn:ngm:class:financial-system","label":"Financial System"}],
-    "uses":[{"@id":"urn:ngm:class:interest-rate","label":"Interest Rate"}],
-    "dependsOn":[{"@id":"urn:ngm:class:central-bank","label":"Central Bank"}],
-    "supports":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}],
-    "relatedTo":[{"@id":"urn:ngm:class:money","label":"Money"},{"@id":"urn:ngm:class:fiat-currency","label":"Fiat Currency"},{"@id":"urn:ngm:class:economics","label":"Economics"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "implements":[{"@id":"urn:ngm:class:financial-system","label":"Financial System"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:bank-of-england","label":"Bank of England"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fractional-reserve-banking",
+  "@type": "Class",
+  "label": "Fractional Reserve Banking",
+  "definition": "Fractional reserve banking is the standard banking system in which banks hold only a fraction of their deposit liabilities as reserves and lend out the remainder. Because lending creates new deposits that can be re-lent, the system expands the broad money supply far beyond the monetary base through the money multiplier. It enables credit creation and maturity transformation but exposes individual banks to liquidity risk and the possibility of bank runs.",
+  "domain": "finance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:money",
+        "label": "Money"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:money",
+        "label": "Money"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

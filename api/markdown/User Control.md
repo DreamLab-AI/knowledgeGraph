@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "User control is the principle and set of mechanisms that give individuals meaningful authority over how their data, identity and experience are managed, including the ability to grant, review and revoke permissions. It is central to data-protection and consent frameworks, embodying user autonomy and self-determination over personal information. Strong user control is a prerequisite for trustworthy, ethically governed digital systems.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}, {"@id": "urn:ngm:class:etsi-domain-data-management-ethics", "label": "ETSI Domain: Data Management + Ethics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-data-management-ethics",
+        "label": "ETSI Domain: Data Management + Ethics"
+      }
+    ]
   },
   "quality": 0.72
 }

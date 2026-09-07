@@ -1,37 +1,122 @@
----
-public: true
----
-
-# Zero-Knowledge Rollup
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:zero-knowledge-rollup", "@type":"Page", "title":"Zero-Knowledge Rollup", "vc:slug":"zero-knowledge-rollup", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:zero-knowledge-rollup",
+  "@type": "Page",
+  "title": "Zero-Knowledge Rollup",
+  "vc:slug": "zero-knowledge-rollup",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:zero-knowledge-rollup",
-  "@type":"Class",
-  "label":"Zero-Knowledge Rollup",
-  "definition":"A zero-knowledge rollup (ZK-rollup) is a layer-2 scaling construction that executes transactions off-chain in batches and posts a succinct validity proof to a base chain attesting that the new state was computed correctly. Because the proof cryptographically guarantees correctness, the base chain need not re-execute the transactions, achieving high throughput while inheriting the security of the underlying ledger. ZK-rollups offer near-instant finality once a proof is verified, distinguishing them from optimistic designs that rely on challenge periods.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:rollup","label":"Rollup"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:rollup","label":"Rollup"}],
-    "hasPart":[{"@id":"urn:ngm:class:zero-knowledge-proof","label":"Zero-Knowledge Proof"},{"@id":"urn:ngm:class:data-availability","label":"Data Availability"}],
-    "implements":[{"@id":"urn:ngm:class:blockchain-scalability","label":"Blockchain Scalability"},{"@id":"urn:ngm:class:transaction-finality","label":"Transaction Finality"}],
-    "uses":[{"@id":"urn:ngm:class:zk-snark","label":"ZK-SNARK"},{"@id":"urn:ngm:class:plonk","label":"PLONK"},{"@id":"urn:ngm:class:zero-knowledge-proof","label":"Zero-Knowledge Proof"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data-availability","label":"Data Availability"},{"@id":"urn:ngm:class:ethereum","label":"Ethereum"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:optimistic-rollup","label":"Optimistic Rollup"}],
-    "enables":[{"@id":"urn:ngm:class:blockchain-scalability","label":"Blockchain Scalability"}],
-    "supports":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "relatedTo":[{"@id":"urn:ngm:class:polygon","label":"Polygon"},{"@id":"urn:ngm:class:starknet","label":"Starknet"},{"@id":"urn:ngm:class:gas-fee","label":"Gas Fee"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:zero-knowledge-rollup",
+  "@type": "Class",
+  "label": "Zero-Knowledge Rollup",
+  "definition": "A zero-knowledge rollup (ZK-rollup) is a layer-2 scaling construction that executes transactions off-chain in batches and posts a succinct validity proof to a base chain attesting that the new state was computed correctly. Because the proof cryptographically guarantees correctness, the base chain need not re-execute the transactions, achieving high throughput while inheriting the security of the underlying ledger. ZK-rollups offer near-instant finality once a proof is verified, distinguishing them from optimistic designs that rely on challenge periods.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rollup",
+      "label": "Rollup"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:plonk",
+        "label": "PLONK"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "@id": "urn:ngm:class:starknet",
+        "label": "Starknet"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

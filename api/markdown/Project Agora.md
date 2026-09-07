@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Project Agora
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Project Agora is a cross-border wholesale payments initiative led by the Bank for International Settlements with several central banks and private financial institutions. It explores integrating tokenised commercial-bank deposits with tokenised central-bank money on a unified programmable ledger to improve cross-border settlement. It is a flagship experiment in the tokenisation of the monetary and financial system.",
   "domain": "blockchain",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cbdc-frameworks", "label": "CBDC Frameworks"},
-      {"@id": "urn:ngm:class:hyperledger-iroha", "label": "Hyperledger Iroha"}
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-iroha",
+        "label": "Hyperledger Iroha"
+      }
     ]
   },
   "quality": 0.72

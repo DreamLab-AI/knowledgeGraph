@@ -1,58 +1,120 @@
----
-public: true
----
-
-# Context Management
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:context-management", "@type":"Page", "title":"Context Management", "vc:slug":"context-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:context-management",
+  "@type": "Page",
+  "title": "Context Management",
+  "vc:slug": "context-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:context-management",
-  "@type":"Class",
-  "label":"Context Management",
-  "definition":"Context management is the set of techniques for assembling, prioritising, compressing, and maintaining the information supplied to a language model within its bounded context window across a task or conversation. It governs what prompts, retrieved documents, prior turns, tool outputs, and state are placed in context, in what order, and at what fidelity, so that the model has the most relevant evidence without exceeding token limits. Effective context management is central to retrieval-augmented generation, long-running agents, and conversational systems, where it directly shapes coherence, accuracy, and cost.",
-  "domain":"ai",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"},{"@id":"urn:ngm:class:prompt-engineering","label":"Prompt Engineering"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:context-window","label":"Context Window"},
-      {"@id":"urn:ngm:class:memory-management","label":"Memory Management"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:context-management",
+  "@type": "Class",
+  "label": "Context Management",
+  "definition": "Context management is the set of techniques for assembling, prioritising, compressing, and maintaining the information supplied to a language model within its bounded context window across a task or conversation. It governs what prompts, retrieved documents, prior turns, tool outputs, and state are placed in context, in what order, and at what fidelity, so that the model has the most relevant evidence without exceeding token limits. Effective context management is central to retrieval-augmented generation, long-running agents, and conversational systems, where it directly shapes coherence, accuracy, and cost.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "@id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:context-window","label":"Context Window"},
-      {"@id":"urn:ngm:class:attention-mechanism","label":"Attention Mechanism"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:retrieval-augmented-generation","label":"Retrieval-Augmented Generation"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:prompt-engineering","label":"Prompt Engineering"},
-      {"@id":"urn:ngm:class:knowledge-retrieval","label":"Knowledge Retrieval"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:token","label":"Token"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:autonomous-agent","label":"Autonomous Agent"},
-      {"@id":"urn:ngm:class:conversational-ai","label":"Conversational AI"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:dialogue-system","label":"Dialogue System"},
-      {"@id":"urn:ngm:class:session-management","label":"Session Management"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:state-management","label":"State Management"},
-      {"@id":"urn:ngm:class:memory-management","label":"Memory Management"},
-      {"@id":"urn:ngm:class:prompt-engineering","label":"Prompt Engineering"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

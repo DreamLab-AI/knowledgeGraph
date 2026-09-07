@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Machine Learning Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -215,47 +210,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:machine-learning-pipeline:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3650529b0f27b1fb1c5998367196a1151101dfaa250ca384000014497c3c70e1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Experiment Tracking]]",
-      "resolved": "urn:visionflow:linked:experiment-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MLOps]]",
-      "resolved": "urn:visionflow:linked:mlops",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Deployment]]",
-      "resolved": "urn:visionflow:linked:model-deployment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Feature Engineering]]",
-      "resolved": "urn:visionflow:owl:class:feature-engineering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, evaluation, deployment, and continuous monitoring. Modern pipelines adopt MLOps practices with automated orchestration (Airflow, Kubeflow), versioning (DVC, MLflow), experiment tracking, A/B testing, and model retraining triggers. Pipelines ensure reproducibility, scalability, and maintainability of ML systems in production environments.

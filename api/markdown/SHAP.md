@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SHAP
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,67 +183,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:shap:ec098178cd82",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1da538899a01ba70168b399f5f2b3b49122ca5a355369565bd16a69fa79759c2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Shapley Value]]",
-      "resolved": "urn:visionflow:linked:shapley-value",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machine Learning Model]]",
-      "resolved": "urn:visionflow:linked:machine-learning-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Interpretability]]",
-      "resolved": "urn:visionflow:linked:model-interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feature Attribution]]",
-      "resolved": "urn:visionflow:linked:feature-attribution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:linked:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LIME]]",
-      "resolved": "urn:visionflow:linked:lime",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machine Learning Domain]]",
-      "resolved": "urn:visionflow:linked:machine-learning-domain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lundberg and Lee, A Unified Approach to Interpreting Model Predictions (2017)]]",
-      "resolved": "urn:visionflow:linked:lundberg-and-lee-a-unified-approach-to-interpreting-model-predictions-2017",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - SHAP, short for SHapley Additive exPlanations, is a method for explaining the output of machine-learning models by attributing each prediction to its input features. It is grounded in Shapley values from cooperative game theory, which fairly distribute a payoff among contributors, treating each feature as a player and the prediction as the payoff. SHAP provides locally accurate, consistent feature attributions and unifies several earlier explanation techniques under a common framework.

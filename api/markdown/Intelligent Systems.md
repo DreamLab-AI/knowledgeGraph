@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intelligent Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,14 +50,26 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ]
   },
   "quality": 0.35,
@@ -73,32 +80,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:intelligent-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6c7f61b198706d714f6d16cec76a5021513f831bce580bdcb668eef423b1cde7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Intelligent Systems are computational systems that exhibit goal-directed behaviour through perception, reasoning, learning, and action. They integrate machine learning, knowledge representation, planning, and autonomous decision-making to operate effectively in complex or uncertain environments. In spatial computing contexts, intelligent systems underpin adaptive avatars, AI-driven scene management, and autonomous agents within persistent virtual environments.

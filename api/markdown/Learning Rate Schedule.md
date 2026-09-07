@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Learning Rate Schedule
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -99,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:learning-rate-schedule:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:995a1fada28b25e1cecc88ad6ed79fa0b820a93d87c98c97770478311473a9cc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A strategy for adjusting the learning rate during training according to a predefined or adaptive schedule. Learning rate schedules improve convergence and final performance by using higher rates early for rapid progress and lower rates later for fine-tuning.

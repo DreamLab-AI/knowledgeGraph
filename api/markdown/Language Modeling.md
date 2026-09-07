@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Language Modeling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -258,132 +253,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:language-modeling:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:21fed56a01a327acef1c06e5e16bce33ce2369ee1f360d42de3b10a7cae9a94f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Large Language Model]]",
-      "resolved": "urn:visionflow:linked:large-language-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Omniverse]]",
-      "resolved": "urn:visionflow:linked:omniverse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OpenUSD]]",
-      "resolved": "urn:visionflow:linked:open-usd",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[presentation]]",
-      "resolved": "urn:visionflow:linked:presentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BERT]]",
-      "resolved": "urn:visionflow:owl:class:bert",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Diffusion Models]]",
-      "resolved": "urn:visionflow:owl:class:diffusion-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Google AI Technology Corporation]]",
-      "resolved": "urn:visionflow:owl:class:google",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPT]]",
-      "resolved": "urn:visionflow:owl:class:gpt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graphing]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Logseq]]",
-      "resolved": "urn:visionflow:owl:class:logseq",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse and Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA Omniverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenAI Research Organisation]]",
-      "resolved": "urn:visionflow:owl:class:open-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Open Generative AI tools]]",
-      "resolved": "urn:visionflow:owl:class:open-generative-ai-tools",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self Attention]]",
-      "resolved": "urn:visionflow:owl:class:self-attention",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text Generation]]",
-      "resolved": "urn:visionflow:owl:class:text-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:owl:class:transformer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.
 
@@ -573,7 +442,7 @@ public: true
 		- His is the only unified language and vision company in the world at this scale that can handle real world interactions.
 
 			- # [[Metaverse and Telecollaboration]]
-			- 🟢 I could go on all day about this, goods and bads. I literally wrote a book on it.
+			- 🟢 I [private] go on all day about this, goods and bads. I literally wrote a book on it.
 			- 🟢 A lot (for me) hinges on [[OpenUSD]] the universal scene language. It's been SO long since we have had something useful.
 			- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse Platform]]-aeco-demo-pack/) giving global instant models.
 			- ![1705423306024.mp4](assets/1705423306024_1705437842029_0.mp4)
@@ -597,7 +466,7 @@ public: true
 		- Potential challenges:
 			- Eventual "rotting" of internal states with extreme context lengths
 			- Need for state regularization or "pruning" to maintain performance
-		- Implications for biology: Foundation models could revolutionize drug discovery and biological research
+		- Implications for biology: Foundation models [private] revolutionize drug discovery and biological research
 
   - ### Models
 		- **[Llama 3.1, 3.2, and 4](https://yourstory.com/2025/02/meta-ai-llama-4-series-open-source-models)**: A series of powerful, open-source large language models.
@@ -769,7 +638,7 @@ public: true
 		- His is the only unified language and vision company in the world at this scale that can handle real world interactions.
 
 			- # [[Metaverse and Telecollaboration]]
-			- 🟢 I could go on all day about this, goods and bads. I literally wrote a book on it.
+			- 🟢 I [private] go on all day about this, goods and bads. I literally wrote a book on it.
 			- 🟢 A lot (for me) hinges on [[OpenUSD]] the universal scene language. It's been SO long since we have had something useful.
 			- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse Platform]]-aeco-demo-pack/) giving global instant models.
 			- ![1705423306024.mp4](assets/1705423306024_1705437842029_0.mp4)
@@ -793,7 +662,7 @@ public: true
 		- Potential challenges:
 			- Eventual "rotting" of internal states with extreme context lengths
 			- Need for state regularization or "pruning" to maintain performance
-		- Implications for biology: Foundation models could revolutionize drug discovery and biological research
+		- Implications for biology: Foundation models [private] revolutionize drug discovery and biological research
 
   - ### Research
 		- **[Phi-3 and Phi-4](https://msdynamicsworld.com/story/new-microsoft-dynamics-365-and-power-platform-features-2024-release-wave-1-plan)**: Powerful language models compact enough to run on a smartphone.

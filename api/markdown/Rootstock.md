@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rootstock
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rootstock:ec6cdc05cfff",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e2ba4167ea5051a4df369b45b7a6d204f27e7ce54496d7fe302e4e921a09a83b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sidechain]]",
-      "resolved": "urn:visionflow:linked:sidechain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Virtual Machine]]",
-      "resolved": "urn:visionflow:linked:ethereum-virtual-machine",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Bitcoin sidechain that supports Ethereum-compatible smart contracts, secured by merged mining with Bitcoin and connected through a two-way peg.

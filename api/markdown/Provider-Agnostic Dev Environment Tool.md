@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[devpod]]
-# Provider-Agnostic Dev Environment Tool
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,17 +42,38 @@ elevatedFrom:: [[devpod]]
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
     ]
   },
   "provenance": {
@@ -68,26 +83,6 @@ elevatedFrom:: [[devpod]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:devpod:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3d89c92d6f8bec6142db8eea5391fb7151c9cd9093db90a66abc4c88da96c978"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - DevPod is an open-source, provider-agnostic tool for creating reproducible cloud development environments defined by devcontainer specifications (the same standard used by VS Code Dev Containers). It supports multiple compute providers — Docker, Kubernetes, AWS, GCP, Azure, Coder, SSH remotes — through a plugin architecture, allowing teams to define workspace configuration once and provision it anywhere. Developers interact with DevPod through a CLI or desktop GUI, and workspaces are launched with pre-installed toolchains, dependencies, and editor extensions, eliminating "works on my machine" problems.

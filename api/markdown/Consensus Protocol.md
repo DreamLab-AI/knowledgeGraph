@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Consensus-Protocol
-  - ConsensusProtocol
----
-
-# Consensus Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,31 +173,6 @@ aliases:
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:consensus-protocol:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8edfcde8c6dfc18c8995b25b7db0d14d3606c27d661dea919aa2a70a138aba2f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

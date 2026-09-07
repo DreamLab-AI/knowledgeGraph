@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Productivity Impact
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-productivity-impact",
   "title": "AI Productivity Impact",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Berkeley Haas", "Work Intensification"],
+  "vc:outboundWikilinks": [
+    "Berkeley Haas",
+    "Work Intensification"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence"}, {"@id": "urn:ngm:class:ai-economics", "label": "AI Economics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-economics",
+        "label": "AI Economics"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

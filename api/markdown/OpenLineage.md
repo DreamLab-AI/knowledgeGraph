@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenLineage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "OpenLineage is an open standard and specification for collecting data-lineage metadata from data pipelines as they run. It defines a common event model describing jobs, runs, datasets, and their input/output relationships, emitted by instrumented orchestration and processing tools. This enables consistent tracking of how data is produced and transformed across heterogeneous platforms for governance, debugging, and impact analysis.",
   "domain": "data",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ]
   },
   "quality": 0.72
 }

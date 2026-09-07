@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Methane Abatement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Methane abatement is the set of techniques for capturing, destroying, or preventing the release of methane, a greenhouse gas with roughly 80 times the near-term warming potential of carbon dioxide. Approaches include flaring, combustion in engines or turbines, and conversion of otherwise-vented or flared gas into useful energy. In the Bitcoin context it underpins the use of stranded or waste methane to power mining as an emissions-reduction strategy.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:stranded-energy-monetisation", "label": "Stranded Energy Monetisation"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}
+      {
+        "@id": "urn:ngm:class:stranded-energy-monetisation",
+        "label": "Stranded Energy Monetisation"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Integration Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:integration-layer:b3218c6d5def",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:db10e5f3edd6b9a1c2b8bb5cd65af244a780a34f3b06b5692ca2a27536055c0c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Transport Layer]]",
-      "resolved": "urn:visionflow:linked:transport-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[APILayer]]",
-      "resolved": "urn:visionflow:linked:apilayer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Coordination Layer]]",
-      "resolved": "urn:visionflow:linked:coordination-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Enterprise Integration Patterns]]",
-      "resolved": "urn:visionflow:linked:enterprise-integration-patterns",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Message Queue]]",
-      "resolved": "urn:visionflow:linked:message-queue",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Integration Layer is the cross-cutting stratum that connects otherwise independent systems so they can exchange data and invoke each other's functions. It sits above transport and protocol concerns and below the applications that orchestrate combined behaviour. It contains adapters, connectors, message translation, and the routing that mediates between heterogeneous endpoints.

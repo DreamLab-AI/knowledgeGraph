@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inference Economics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "inference-economics",
   "title": "Inference Economics",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Pricing Strategy", "API Token Margins"],
+  "vc:outboundWikilinks": [
+    "AI Pricing Strategy",
+    "API Token Margins"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data", "label": "Data"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data", "label": "Data"}, {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

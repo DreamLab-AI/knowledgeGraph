@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gnosis Chain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,52 +85,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gnosis-chain:f2ca93edcc31",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b0746ee656d22790d215444e079c808cb0b25a0171bce893604d08adb1952ed9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[EVM]]",
-      "resolved": "urn:visionflow:linked:evm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gnosis Safe]]",
-      "resolved": "urn:visionflow:linked:gnosis-safe",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Ethereum-compatible blockchain secured by proof of stake, designed for low-cost transactions and used for payments, governance tooling, and application deployment.

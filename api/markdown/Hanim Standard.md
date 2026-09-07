@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hanim Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -78,47 +73,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hanim-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:52e75916ea52f86edfd9464f2194a4f957b5ec83e3c11b50ec041e78ca4d4bf6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross-Platform Avatars]]",
-      "resolved": "urn:visionflow:linked:cross-platform-avatars",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Animation Standard]]",
-      "resolved": "urn:visionflow:owl:class:animation-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Humanoid Animation (H-Anim) is an ISO/IEC approved international standard developed by the Web3D Consortium for interchangeable humanoid figures, defining specifications for articulated avatars, skeletal hierarchies, and animation systems that enable character portability across 3D games, simulations, and virtual environments.

@@ -1,38 +1,124 @@
----
-public: true
----
-
-# Data Quality Management
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-quality-management", "@type":"Page", "title":"Data Quality Management", "vc:slug":"data-quality-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-quality-management",
+  "@type": "Page",
+  "title": "Data Quality Management",
+  "vc:slug": "data-quality-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:data-quality-management",
-  "@type":"Class",
-  "label":"Data Quality Management",
-  "definition":"Data quality management is the discipline of measuring, monitoring, and improving the accuracy, completeness, consistency, and timeliness of data across its lifecycle. It combines profiling, validation, cleansing, and continuous monitoring with governance policies that define quality expectations. Reliable data quality is a precondition for trustworthy analytics, machine learning, and regulatory reporting.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-quality","label":"Data Quality"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:data-cleaning","label":"Data Cleaning"},{"@id":"urn:ngm:class:data-integrity","label":"Data Integrity"}],
-    "partOf":[{"@id":"urn:ngm:class:data-governance","label":"Data Governance"}],
-    "requires":[{"@id":"urn:ngm:class:metadata-management","label":"Metadata Management"},{"@id":"urn:ngm:class:data-lineage","label":"Data Lineage"}],
-    "enables":[{"@id":"urn:ngm:class:data-integrity","label":"Data Integrity"},{"@id":"urn:ngm:class:master-data-management","label":"Master Data Management"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data-governance","label":"Data Governance"}],
-    "implements":[{"@id":"urn:ngm:class:data-governance","label":"Data Governance"}],
-    "uses":[{"@id":"urn:ngm:class:data-observability","label":"Data Observability"},{"@id":"urn:ngm:class:data-catalog","label":"Data Catalog"}],
-    "supports":[{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"},{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}],
-    "relatedTo":[{"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"},{"@id":"urn:ngm:class:data-management","label":"Data Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:data-observability","label":"Data Observability"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-quality-management",
+  "@type": "Class",
+  "label": "Data Quality Management",
+  "definition": "Data quality management is the discipline of measuring, monitoring, and improving the accuracy, completeness, consistency, and timeliness of data across its lifecycle. It combines profiling, validation, cleansing, and continuous monitoring with governance policies that define quality expectations. Reliable data quality is a precondition for trustworthy analytics, machine learning, and regulatory reporting.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-quality",
+      "label": "Data Quality"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-observability",
+        "label": "Data Observability"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-observability",
+        "label": "Data Observability"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

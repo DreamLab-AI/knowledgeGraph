@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Signatures
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -223,72 +218,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-signatures:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0f99d9842bf3e1b2ae535ee90c11cd8001decddb34c0e9c2ff609838433e2fa7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Authentication]]",
-      "resolved": "urn:visionflow:linked:authentication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Integrity]]",
-      "resolved": "urn:visionflow:linked:data-integrity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Signature Algorithm]]",
-      "resolved": "urn:visionflow:linked:signature-algorithm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:owl:class:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Non-Repudiation]]",
-      "resolved": "urn:visionflow:owl:class:non-repudiation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Private Key]]",
-      "resolved": "urn:visionflow:owl:class:private-key",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cryptographic seals that confirm the authenticity and integrity of digital data using public-key cryptography, enabling transaction authorisation on blockchain networks, document authentication, and non-repudiation in metaverse and decentralised systems.

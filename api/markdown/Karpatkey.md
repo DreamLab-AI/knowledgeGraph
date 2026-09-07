@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Karpatkey
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:karpatkey:3ae4116400a1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1c6b08eb4cfe513c83423038cc0850919a9935849db485d73bde209400534057"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Treasury Management]]",
-      "resolved": "urn:visionflow:linked:treasury-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO]]",
-      "resolved": "urn:visionflow:linked:dao",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Yield Farming]]",
-      "resolved": "urn:visionflow:linked:yield-farming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Autonomous Organization]]",
-      "resolved": "urn:visionflow:linked:decentralized-autonomous-organization",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Karpatkey is an organisation that provides treasury management and financial strategy services to decentralised autonomous organisations, allocating on-chain assets across protocols.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Generative World Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "generative-world-models",
   "title": "Generative World Models",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Impact on Game Engines", "Gaming Industry Disruption"],
+  "vc:outboundWikilinks": [
+    "AI Impact on Game Engines",
+    "Gaming Industry Disruption"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

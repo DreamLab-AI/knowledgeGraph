@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Engineering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -214,72 +209,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-engineering:88108543befc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9e83cbde6aa29479ba7ea603edee466714ef269ea99cc80665845661237881c2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Pipeline]]",
-      "resolved": "urn:visionflow:linked:data-pipeline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETL]]",
-      "resolved": "urn:visionflow:linked:etl",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Warehouse]]",
-      "resolved": "urn:visionflow:linked:data-warehouse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed Systems Domain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Domain]]",
-      "resolved": "urn:visionflow:linked:machine-learning-domain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Business Intelligence]]",
-      "resolved": "urn:visionflow:linked:business-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Science]]",
-      "resolved": "urn:visionflow:linked:data-science",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stream Processing]]",
-      "resolved": "urn:visionflow:linked:stream-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Infrastructure Domain]]",
-      "resolved": "urn:visionflow:linked:infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Data Engineering is the discipline concerned with designing, building and operating the systems that collect, store, transform and serve data at scale. It covers data pipelines, storage architectures, batch and streaming processing, data modelling and the orchestration and monitoring of workflows. Its purpose is to make reliable, well-structured data available for analytics, reporting and machine learning.

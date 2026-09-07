@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Riot Platforms
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:riot-platforms:06c189ffe9d9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bfadbb573de9f14686303c0f69714c17dac43485e2aa2ffccbce0b6726a22f17"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ASIC]]",
-      "resolved": "urn:visionflow:linked:asic",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Validation]]",
-      "resolved": "urn:visionflow:linked:transaction-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitcoin Network]]",
-      "resolved": "urn:visionflow:linked:bitcoin-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Mining]]",
-      "resolved": "urn:visionflow:linked:bitcoin-mining",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.riotplatforms.com]]",
-      "resolved": "urn:visionflow:linked:https-www-riotplatforms-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.riotplatforms.com/investors]]",
-      "resolved": "urn:visionflow:linked:https-www-riotplatforms-com-investors",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Riot Platforms is a United States company that operates large-scale Bitcoin mining facilities. It is listed on a public stock exchange.

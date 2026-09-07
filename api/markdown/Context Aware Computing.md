@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Context-Aware Computing
----
-
-# Context Aware Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,17 +54,38 @@ aliases:
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
     ]
   },
   "quality": 0.35,
@@ -82,37 +96,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:context-aware-computing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5bd14843d9594fd5f8272fbb335d5c83b0e3357c8e6edd63c1e1eb4c8ee1f6c3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Context Aware Computing is a paradigm in which systems automatically adapt their behaviour based on contextual signals such as the user's location, activity, device state, social environment, and temporal cues. In spatial computing and XR applications, context awareness allows virtual overlays and services to respond intelligently to physical surroundings, enabling location-sensitive AR, adaptive user interfaces, and personalised immersive experiences.

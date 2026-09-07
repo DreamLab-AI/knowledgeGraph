@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Semantic Search
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -503,357 +498,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:semantic-search:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e27228372176476abc2dd87a92aa58296faccc66d583e2a90f0ee01670db214b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AlgorithmLayer]]",
-      "resolved": "urn:visionflow:linked:algorithm-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Approximate Nearest Neighbour]]",
-      "resolved": "urn:visionflow:linked:approximate-nearest-neighbour",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BEIR Benchmark]]",
-      "resolved": "urn:visionflow:linked:beir-benchmark",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bi-Encoder Architecture]]",
-      "resolved": "urn:visionflow:linked:bi-encoder-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Biomedical Information Retrieval]]",
-      "resolved": "urn:visionflow:linked:biomedical-information-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BM25]]",
-      "resolved": "urn:visionflow:linked:bm25",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Boolean Retrieval]]",
-      "resolved": "urn:visionflow:linked:boolean-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Chroma]]",
-      "resolved": "urn:visionflow:linked:chroma",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ColBERT Late Interaction]]",
-      "resolved": "urn:visionflow:linked:col-bert-late-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Conversational Search]]",
-      "resolved": "urn:visionflow:linked:conversational-search",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cosine Similarity]]",
-      "resolved": "urn:visionflow:linked:cosine-similarity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-Encoder Reranking]]",
-      "resolved": "urn:visionflow:linked:cross-encoder-reranking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dense Retrieval]]",
-      "resolved": "urn:visionflow:linked:dense-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Document Encoder]]",
-      "resolved": "urn:visionflow:linked:document-encoder",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Document Retrieval]]",
-      "resolved": "urn:visionflow:linked:document-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[E-Commerce Search]]",
-      "resolved": "urn:visionflow:linked:e-commerce-search",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Embedding Model]]",
-      "resolved": "urn:visionflow:linked:embedding-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Enterprise Search]]",
-      "resolved": "urn:visionflow:linked:enterprise-search",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Evaluation Benchmark]]",
-      "resolved": "urn:visionflow:linked:evaluation-benchmark",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Faiss]]",
-      "resolved": "urn:visionflow:linked:faiss",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[HNSW Index]]",
-      "resolved": "urn:visionflow:linked:hnsw-index",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hybrid Retrieval]]",
-      "resolved": "urn:visionflow:linked:hybrid-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InformationRetrievalDomain]]",
-      "resolved": "urn:visionflow:linked:information-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Inner Product]]",
-      "resolved": "urn:visionflow:linked:inner-product",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Inverted Index]]",
-      "resolved": "urn:visionflow:linked:inverted-index",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Inverted Index Search]]",
-      "resolved": "urn:visionflow:linked:inverted-index-search",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Keyword Search]]",
-      "resolved": "urn:visionflow:linked:keyword-search",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Base]]",
-      "resolved": "urn:visionflow:linked:knowledge-base",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Graph Query]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph-query",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Graphs]]",
-      "resolved": "urn:visionflow:linked:knowledge-graphs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Retrieval]]",
-      "resolved": "urn:visionflow:linked:knowledge-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Language Model]]",
-      "resolved": "urn:visionflow:linked:language-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Legal Document Retrieval]]",
-      "resolved": "urn:visionflow:linked:legal-document-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MS MARCO]]",
-      "resolved": "urn:visionflow:linked:ms-marco",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MTEB Benchmark]]",
-      "resolved": "urn:visionflow:linked:mteb-benchmark",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NaturalLanguageProcessingDomain]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Information Retrieval]]",
-      "resolved": "urn:visionflow:linked:neural-information-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST IR Evaluation]]",
-      "resolved": "urn:visionflow:linked:nist-ir-evaluation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ontology]]",
-      "resolved": "urn:visionflow:linked:ontology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[pgvector]]",
-      "resolved": "urn:visionflow:linked:pgvector",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pinecone]]",
-      "resolved": "urn:visionflow:linked:pinecone",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Qdrant]]",
-      "resolved": "urn:visionflow:linked:qdrant",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Query Encoder]]",
-      "resolved": "urn:visionflow:linked:query-encoder",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Query Understanding]]",
-      "resolved": "urn:visionflow:linked:query-understanding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reciprocal Rank Fusion]]",
-      "resolved": "urn:visionflow:linked:reciprocal-rank-fusion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reranker]]",
-      "resolved": "urn:visionflow:linked:reranker",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Retrieval-Augmented Generation]]",
-      "resolved": "urn:visionflow:linked:retrieval-augmented-generation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sentence Embeddings]]",
-      "resolved": "urn:visionflow:linked:sentence-embeddings",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Text Embeddings]]",
-      "resolved": "urn:visionflow:linked:text-embeddings",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TF-IDF Retrieval]]",
-      "resolved": "urn:visionflow:linked:tf-idf-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TREC]]",
-      "resolved": "urn:visionflow:linked:trec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vector Database]]",
-      "resolved": "urn:visionflow:linked:vector-database",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vector Index]]",
-      "resolved": "urn:visionflow:linked:vector-index",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Weaviate]]",
-      "resolved": "urn:visionflow:linked:weaviate",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-technique",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BERT]]",
-      "resolved": "urn:visionflow:owl:class:bert",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Contrastive Learning]]",
-      "resolved": "urn:visionflow:owl:class:contrastive-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Retrieval]]",
-      "resolved": "urn:visionflow:owl:class:information-retrieval",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureLayer]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multimodal AI]]",
-      "resolved": "urn:visionflow:owl:class:multimodal-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Question Answering]]",
-      "resolved": "urn:visionflow:owl:class:question-answering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Search Technology]]",
-      "resolved": "urn:visionflow:owl:class:search-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer Architecture]]",
-      "resolved": "urn:visionflow:owl:class:transformer-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Semantic search is a retrieval paradigm that understands the meaning and intent of queries and documents rather than relying solely on lexical keyword overlap, deploying continuous vector representations of text—produced by neural encoder models that compress sentences into dense embedding spaces of 384–4096 dimensions—to retrieve results whose semantics match the query regardless of whether surface-level vocabulary coincides, operating across five principal architectural families: (1) **bi-encoder dense retrieval** (dual-encoder architecture where query encoder fq and document encoder fd independently produce fixed-size embeddings q=fq(Q) and d=fd(D), retrieved by cosine similarity sim(q,d)=q·d/|q||d| or inner product via Hierarchical Navigable Small World graph HNSW or Inverted File Index IVF over billion-scale corpora; exemplified by DPR—Dense Passage Retriever, Karpukhin et al. ACL 2020—which demonstrated bi-encoder fine-tuned on Natural Questions outperformed BM25 by 9–21 percentage points in top-20 accuracy; and SBERT—Sentence-BERT, Reimers & Gurevych EMNLP 2019—which introduced siamese network fine-tuning of BERT with mean-pooling to produce semantically meaningful sentence embeddings, achieving 10×–500× speedup over cross-encoder inference whilst scoring 83.64% on STS Benchmark); (2) **cross-encoder reranking** (joint encoding of query-document pair through a transformer that attends across both sequences, scoring relevance with a single regression head; unable to pre-compute document embeddings but achieves superior accuracy at 50–200ms latency, typically applied to top-k=50–200 candidates from the bi-encoder first stage; exemplified by MS MARCO fine-tuned BERT-large cross-encoders reaching 0.95+ NDCG@10 on MSMARCO-Dev, and Cohere Rerank API deployed commercially); (3) **hybrid sparse-dense retrieval** (interpolation of BM25 lexical score and dense vector score via α·s_lex + (1-α)·s_dense with α∈[0.5,0.7] empirically optimal on BEIR, or reciprocal rank fusion RRF(d)=∑_k 1/(60+rank_k(d)) merging ranked lists; consistently outperforms either sparse or dense alone by 2–8% nDCG on out-of-domain evaluation, implemented in Elasticsearch 8.x, OpenSearch, and Vespa); (4) **ColBERT late interaction** (Khattab & Zaharia SIGIR 2020; represents query as bag of token embeddings Q=[q1,…,qm] and document as D=[d1,…,dn], scoring MaxSim(Q,D)=∑_i max_j q_i·d_j; ColBERT v2 with residual compression reduces storage to 24–32 bytes per token; PLAID indexing achieves 4,000 QPS on 40M Wikipedia passages); and (5) **knowledge-graph-augmented search** (entity linking resolving query mentions to Wikidata/DBpedia nodes, graph expansion retrieving neighbourhood subgraphs, and re-encoding with entity embeddings from TransE/RotatE; exemplified by GraphRAG Microsoft Research 2024 building local+global summaries from extracted entity graphs), assessed on standardised benchmarks—BEIR (Thakur et al. 2021; 18 heterogeneous IR tasks; baseline BM25 averages 36.1 nDCG@10; BM25+DPR ensemble 42.1; BGE-large-en-v1.5 54.3; Cohere Rerank ensemble 59.8) and MTEB (Muennighoff et al. 2022; 56 tasks, 8 categories; BGE-M3 and E5-mistral-7b-instruct top MTEB Retrieval in 2026 with 64–68 nDCG@10), deployed at population scale in Perplexity.ai (100M+ queries/month 2025, hybrid pipeline with grounded citations), Microsoft Bing Copilot (Turing-UNIv2 embedding model, 1B+ queries/month), Google AI Overviews (MUM-BERT-PaLM2 multimodal pipeline, 1T+ queries/year), and enterprise RAG stacks integrating with [[Large Language Models]] for context-grounded generation, fundamentally transforming information retrieval from statistical term-counting into a meaning-aware cognitive operation that resolves synonymy, polysemy, compositionality, world-knowledge, and pragmatic intent.
 
@@ -1042,21 +686,21 @@ public: true
 
 	  Semantic search operates within a metric space formalism over continuous embedding representations. Let Q denote the query text and D = {d₁, d₂, …, dN} denote the document corpus of size N (typical production: 10M–10B documents).
 
-	  **Bi-Encoder Dense Retrieval**: Define query encoder fq: text → ℝ^d and document encoder fd: text → ℝ^d (d = 768 for BERT-base, 1024 for BERT-large, 4096 for E5-mistral-7b). Retrieval score sim(Q, dᵢ) = fq(Q) · fd(dᵢ) / (|fq(Q)| |fd(dᵢ)|). Offline indexing pre-computes {fd(dᵢ)} for all documents; online retrieval requires only fq(Q) plus ANN search over the pre-computed index. This asymmetric architecture is the key practical insight: document encoding is done once offline at index time, reducing online retrieval to a single encoder forward pass (10–30ms on GPU) plus an approximate nearest-neighbour lookup. The asymmetry also permits different encoder sizes for query and document if query latency is the bottleneck—a 110M-parameter query encoder with a 340M-parameter document encoder is a common production pattern.
+	  **Bi-Encoder Dense Retrieval**: Define query encoder fq: text → ℝ^d and document encoder fd: text → ℝ^d (d = 768 for BERT-base, 1024 for BERT-large, 4096 for E5-mistral-7b). Retrieval score sim(Q, dᵢ) = fq(Q) · fd(dᵢ) / (|fq(Q)| |fd(dᵢ)|). Offline indexing pre-computes {fd(dᵢ)} for all documents; online retrieval requires only fq(Q) plus ANN search over the pre-computed [private]. This asymmetric architecture is the key practical insight: document encoding is done once offline at [private] time, reducing online retrieval to a single encoder forward pass (10–30ms on GPU) plus an approximate nearest-neighbour lookup. The asymmetry also permits different encoder sizes for query and document if query latency is the bottleneck—a 110M-parameter query encoder with a 340M-parameter document encoder is a common production pattern.
 
-	  **HNSW Index Performance**: Hierarchical Navigable Small World (Malkov & Yashunin 2018) achieves O(log N) expected query time with recall@100 > 97% at M=16 layers and efConstruction=200, supporting throughput of 1,000–10,000 QPS per CPU core on 768-dim vectors. The hierarchical graph structure creates a small-world network at each layer: the top layer is a coarse graph with long-range connections, and each successive layer increases density. At query time, the search begins at the top layer's entry point and greedily navigates to the nearest neighbour, descending layer by layer until reaching the bottom dense graph where the true approximate nearest neighbours are found. IVF (Inverted File Index) with product quantisation (PQ) reduces memory from 4N·d bytes for full float32 to 4N·m bytes for m sub-vectors (typical m=8–16), enabling billion-scale indexing on commodity hardware—a 1B×768-dim index requires 3TB at float32 but only 4GB with PQ-8 compression, at a recall@10 cost of approximately 3–7%.
+	  **HNSW Index Performance**: Hierarchical Navigable Small World (Malkov & Yashunin 2018) achieves O(log N) expected query time with recall@100 > 97% at M=16 layers and efConstruction=200, supporting throughput of 1,000–10,000 QPS per CPU core on 768-dim vectors. The hierarchical graph structure creates a small-world network at each layer: the top layer is a coarse graph with long-range connections, and each successive layer increases density. At query time, the search begins at the top layer's entry point and greedily navigates to the nearest neighbour, descending layer by layer until reaching the bottom dense graph where the true approximate nearest neighbours are found. IVF (Inverted File Index) with product quantisation (PQ) reduces memory from 4N·d bytes for full float32 to 4N·m bytes for m sub-vectors (typical m=8–16), enabling billion-scale indexing on commodity hardware—a 1B×768-dim [private] requires 3TB at float32 but only 4GB with PQ-8 compression, at a recall@10 cost of approximately 3–7%.
 
 	  **Training Objectives**: Contrastive fine-tuning via in-batch negatives maximises cosine similarity of positive (query, passage) pairs:
 
 	  L = -log[exp(sim(q,p+)/τ) / ∑_j exp(sim(q,pj)/τ)]
 
-	  where τ is temperature (0.01–0.07 typical) and the denominator sums over all in-batch passages including the positive. Larger batch sizes improve the quality of in-batch negatives: a batch of 1024 provides 1023 negatives per positive, which for random sampling is equivalent to 1023 random documents—generally poor negatives that the model easily dismisses. Multiple Negative Ranking Loss (Henderson et al. 2017) is the standard formulation across most production embedding models. Hard negative mining using BM25 or a prior dense model to retrieve plausible but incorrect passages significantly improves retrieval quality by 3–8 nDCG points (Xiong et al. 2021 ANCE). ANCE (Approximate Nearest Neighbour Contrastive Estimation) dynamically updates the hard negative set by periodically refreshing the ANN index with the current model, ensuring negatives remain challenging throughout training.
+	  where τ is temperature (0.01–0.07 typical) and the denominator sums over all in-batch passages including the positive. Larger batch sizes improve the quality of in-batch negatives: a batch of 1024 provides 1023 negatives per positive, which for random sampling is equivalent to 1023 random documents—generally poor negatives that the model easily dismisses. Multiple Negative Ranking Loss (Henderson et al. 2017) is the standard formulation across most production embedding models. Hard negative mining using BM25 or a prior dense model to retrieve plausible but incorrect passages significantly improves retrieval quality by 3–8 nDCG points (Xiong et al. 2021 ANCE). ANCE (Approximate Nearest Neighbour Contrastive Estimation) dynamically updates the hard negative set by periodically refreshing the ANN [private] with the current model, ensuring negatives remain challenging throughout training.
 
 	  **Cross-Encoder Reranking**: Joint model CER([CLS] Q [SEP] D [SEP]) → score ∈ ℝ attends across query-document pairs at every attention head in every transformer layer, producing a relevance score that accounts for all pairwise token interactions. This full cross-attention is what makes cross-encoders superior to bi-encoders for complex queries: the model can attend to exact phrase matches, negations, entity co-references, and nuanced semantic relationships that a bi-encoder's fixed-size bottleneck representation cannot fully capture. Cannot pre-compute document representations; O(k) inference passes required per query for k candidates. Applied as a second stage over k=50–500 bi-encoder candidates, trading 10–50× higher latency for 3–10% nDCG improvement. BERT-large cross-encoders fine-tuned on MS MARCO achieve 0.92–0.96 nDCG@10 on MSMARCO-Dev vs 0.85–0.90 for the best bi-encoders at the same scale.
 
 	  **Hybrid Retrieval and Score Fusion**: Linear interpolation α·BM25(q,d) + (1-α)·dense(q,d) requires score normalisation (min-max or Z-score normalisation across each retrieval system's score distribution on a held-out calibration set). Reciprocal Rank Fusion RRF(d) = ∑_k 1/(k+rank_k(d)), k=60, requires no score calibration—only the rank positions—and consistently matches or outperforms linear interpolation on BEIR. The k=60 offset prevents the very high-ranked documents from dominating; smaller k values increase the advantage of high-ranked documents. Both approaches exploit complementary strengths: BM25 precision on rare named entities, technical identifiers, and product codes where exact string matching is required; dense recall on semantic variants, paraphrases, and cross-lingual equivalents. On BEIR out-of-domain evaluation, hybrid approaches consistently outperform either component alone by 2–8 absolute nDCG@10 points, with the largest gains on datasets with high lexical diversity (TREC-COVID, NFCorpus, FiQA).
 
-	  **ColBERT MaxSim Scoring**: MaxSim(Q, D) = ∑_{i=1}^{|Q|} max_{j=1}^{|D|} qᵢ · dⱼ sums per-query-token maximum similarities across all document tokens, providing a score that decomposes into individual token-level contributions. This decomposability enables interpretability—one can visualise which query tokens matched which document tokens most strongly, providing an explanation layer absent from bi-encoder and cross-encoder scores. The per-token document embeddings are pre-computed offline and stored in the index; only query token embeddings are computed online. MaxSim computation over k candidate documents reduces to a series of matrix multiplications amenable to GPU acceleration: for |Q|=32 query tokens, |D|=128 document tokens, and k=1000 candidates, the computation is a 32×128 × 1000 tensor operation executable in under 5ms on a V100 GPU.
+	  **ColBERT MaxSim Scoring**: MaxSim(Q, D) = ∑_{i=1}^{|Q|} max_{j=1}^{|D|} qᵢ · dⱼ sums per-query-token maximum similarities across all document tokens, providing a score that decomposes into individual token-level contributions. This decomposability enables interpretability—one can visualise which query tokens matched which document tokens most strongly, providing an explanation layer absent from bi-encoder and cross-encoder scores. The per-token document embeddings are pre-computed offline and stored in the [private]; only query token embeddings are computed online. MaxSim computation over k candidate documents reduces to a series of matrix multiplications amenable to GPU acceleration: for |Q|=32 query tokens, |D|=128 document tokens, and k=1000 candidates, the computation is a 32×128 × 1000 tensor operation executable in under 5ms on a V100 GPU.
 
   - ## Components and Architecture
 
@@ -1082,7 +726,7 @@ public: true
 
 	  The vector database ecosystem matured significantly in 2022–2026, with the market growing from $245M (2022) to $1.5B (2025), projected at $4.3B by 2028.
 
-	  **Pinecone** (managed service, proprietary): pioneered serverless vector search with automatic scaling to billions of vectors; pod-based and serverless tiers; metadata filtering; namespace isolation. 2024 multi-tenancy improvements support 100,000+ namespaces per index. Typical latency: 10–50ms at p99 for 1B-vector indexes.
+	  **Pinecone** (managed service, proprietary): pioneered serverless vector search with automatic scaling to billions of vectors; pod-based and serverless tiers; metadata filtering; namespace isolation. 2024 multi-tenancy improvements support 100,000+ namespaces per [private]. Typical latency: 10–50ms at p99 for 1B-vector indexes.
 
 	  **Weaviate** (open-source, Go): combines vector search with BM25 hybrid, GraphQL API, built-in object storage, multi-modal support (CLIP for image-text), horizontal sharding to 10B+ objects, and tenant isolation. v1.24 (2024) adds async indexing for ingest at 10,000+ vectors/second.
 
@@ -1090,7 +734,7 @@ public: true
 
 	  **Chroma** (open-source, Python-native): targets developer experience and local prototyping; co-located with LangChain and LlamaIndex ecosystems. Not production-grade for >100M vectors but dominant in rapid RAG prototyping.
 
-	  **pgvector** (PostgreSQL extension, open-source): adds ivfflat and hnsw index types to PostgreSQL; v0.7.0 (2024) HNSW support achieves 4,000–20,000 QPS on 1M×1536-dim Amazon product embeddings on r6g.2xlarge. Enables semantic search within existing OLTP infrastructure without a separate service.
+	  **pgvector** (PostgreSQL extension, open-source): adds ivfflat and hnsw [private] types to PostgreSQL; v0.7.0 (2024) HNSW support achieves 4,000–20,000 QPS on 1M×1536-dim Amazon product embeddings on r6g.2xlarge. Enables semantic search within existing OLTP infrastructure without a separate service.
 
 	  **Elasticsearch dense_vector** (8.x): integrates ANN search with full BM25+filtering stack; knn query with hybrid bool+knn combination; widely adopted in enterprise settings because it replaces existing search infrastructure rather than adding a new database.
 
@@ -1103,7 +747,7 @@ public: true
 	  **Scoring Function**: MaxSim(Q, D) = ∑_i max_j qᵢ · dⱼ — summing per-query-token maximum similarity across all document tokens, capturing fine-grained token-level interaction without joint encoding. The MaxSim operation assigns each query token to its best-matching document token, then sums these per-token soft-alignment scores. This is closely related to Earth Mover's Distance (Wasserstein distance) between the query and document token distributions, providing a theoretically motivated similarity metric that captures partial matching—a query token about "neural networks" may not find an exact match in a document about "artificial synaptic connections," but the maximum similarity will be higher than if the document were entirely unrelated.
 
 	  **ColBERT v2 Improvements** (Santhanam et al. NAACL 2022):
-	  - Residual compression reduces storage from 128 bytes/token to 24–32 bytes/token (4–5× compression) by representing each token embedding as a centroid index (from k-means clustering) plus a residual vector quantised to 4 bits, reducing storage to approximately 24 bytes per token versus 3072 bytes (768-dim float32) in the naive case
+	  - Residual compression reduces storage from 128 bytes/token to 24–32 bytes/token (4–5× compression) by representing each token embedding as a centroid [private] (from k-means clustering) plus a residual vector quantised to 4 bits, reducing storage to approximately 24 bytes per token versus 3072 bytes (768-dim float32) in the naive case
 	  - Denoised supervision using cross-encoder soft labels as training targets, reducing noise from binary relevance labels and achieving 3–5% additional quality improvement
 	  - PLAID (Performance-optimised Late Interaction Driver, CIKM 2022) achieves 4,000 QPS on 40M Wikipedia passages via two-stage candidate generation (centroid-based coarse retrieval) plus pruning (MaxSim on centroid-only approximation), with a final exact MaxSim reranking stage
 
@@ -1113,7 +757,7 @@ public: true
 	  - Jina AI ColBERT-v3 (2024): multi-vector API support with managed cloud endpoint
 	  - ColBERT-XM (2024): cross-lingual late interaction across 100 languages via multilingual pre-training
 
-	  **XTR** (Lee et al. NeurIPS 2023): replaces MaxSim with softmax-based token retrieval. Instead of computing MaxSim at scoring time, XTR retrieves individual query tokens' top-k document tokens from the index, and scores by aggregating retrieved token similarities with a normalisation term. This enables even more aggressive storage compression: each token embedding is indexed as a separate point in an ANN index, and document scores are computed by aggregating retrieved hits, achieving 2–4× storage reduction versus ColBERT v2 with maintained quality on BEIR.
+	  **XTR** (Lee et al. NeurIPS 2023): replaces MaxSim with softmax-based token retrieval. Instead of computing MaxSim at scoring time, XTR retrieves individual query tokens' top-k document tokens from the [private], and scores by aggregating retrieved token similarities with a normalisation term. This enables even more aggressive storage compression: each token embedding is indexed as a separate point in an ANN [private], and document scores are computed by aggregating retrieved hits, achieving 2–4× storage reduction versus ColBERT v2 with maintained quality on BEIR.
 
   - ### RAG Integration Architecture
 
@@ -1139,13 +783,13 @@ public: true
 
 	  Google's deployment of BERT for query understanding (2019) marked the first semantic search deployment at consumer scale, affecting 10% of English queries on day one.
 
-	  **Google AI Overviews** (2023–2026): MUM-BERT-PaLM2 multimodal pipeline serving 1T+ annual queries. Dense retrieval over Google's web index combined with PaLM 2/Gemini generation for synthesised answers with source citations.
+	  **Google AI Overviews** (2023–2026): MUM-BERT-PaLM2 multimodal pipeline serving 1T+ annual queries. Dense retrieval over Google's web [private] combined with PaLM 2/Gemini generation for synthesised answers with source citations.
 
 	  **Microsoft Bing Copilot**: Turing-UNIv2 embedding model reranking over BM25+dense hybrid; 1B+ queries/month. Integration with GPT-4 for conversational follow-up and query expansion.
 
 	  **Perplexity.ai** (founded 2022): answer engine specifically built on semantic retrieval with citation grounding; 100M+ monthly queries in 2025; hybrid BM25+dense+reranker pipeline; 4× better citation accuracy than early ChatGPT browsing per internal evaluations.
 
-	  **Brave Search**: independent semantic index without Google/Bing API dependency; Mixtral-8x7B for summarisation; dedicated bi-encoders for passage retrieval; 25M+ monthly active users 2025.
+	  **Brave Search**: independent semantic [private] without Google/Bing API dependency; Mixtral-8x7B for summarisation; dedicated bi-encoders for passage retrieval; 25M+ monthly active users 2025.
 
   - ### Enterprise Knowledge Management
 
@@ -1195,7 +839,7 @@ public: true
 
 	  **Google Lens**: Vision-Language Model embeddings for visual search; 12B+ image searches per month in 2025.
 
-	  **Multimodal vector databases**: Pinecone multimodal index and Weaviate multi2vec-clip support joint text-image spaces; Qdrant multi-vector collections enable separate dense vectors per modality with late fusion scoring.
+	  **Multimodal vector databases**: Pinecone multimodal [private] and Weaviate multi2vec-clip support joint text-image spaces; Qdrant multi-vector collections enable separate dense vectors per modality with late fusion scoring.
 
 	  **Video semantic search**: 12Labs Marengo model indexes video at temporal clip granularity; "find the scene where the suspect enters the building" over CCTV archives; adopted by media monitoring companies and law enforcement analytics platforms.
 
@@ -1214,7 +858,7 @@ public: true
 	  - **Language Modelling for IR** (Ponte & Croft SIGIR 1998): generative LM over document terms using Dirichlet smoothing; competitive with BM25 on TREC benchmarks; provided probabilistic foundation for later neural language modelling approaches to IR
 
 	  **Neural IR pre-transformer (2013–2018)**:
-	  - **DSSM** (Huang et al. KDD 2013; Microsoft Research): word-hash letter-trigram feedforward network encoding query and document into 128-dim representations for scoring; first demonstration that deep learning could match BM25 on click-through prediction even if not on TREC benchmarks
+	  - **DSSM** (Huang et al. KDD 2013; Microsoft Research): word-hash letter-trigram feedforward network encoding query and document into 128-dim representations for scoring; first demonstration that deep learning [private] match BM25 on click-through prediction even if not on TREC benchmarks
 	  - **DRMM** (Guo et al. CIKM 2016): interaction matrices computing term-level similarity between query and document tokens, then aggregating via gating network; separated local exact-match from distributed semantic-match signals
 	  - **DUET** (Mitra et al. WWW 2017; Microsoft Research): combined local+distributed representation in a single model; first principled hybrid sparse-dense approach within a neural architecture; demonstrated that exact-match and semantic-match signals are complementary, foreshadowing modern hybrid BM25+dense retrieval
 
@@ -1224,13 +868,13 @@ public: true
 
 	  **BERT Reranking** (Nogueira & Cho 2019; monoBERT, duoBERT): first application of BERT to document reranking on MS MARCO, achieving 36.8 MRR@10 vs BM25 18.4—a 100% improvement demonstrating transformer language model potential for IR. The monoBERT reranker fine-tuned BERT-base as a binary classifier on query-passage pairs labelled relevant/non-relevant from the MS MARCO human annotation pool of 500K+ (query, passage, label) triples. At inference, it scores each of the top-1000 BM25 candidates by running BERT on [CLS] query [SEP] passage [SEP] and extracting the [CLS] logit for the relevant class. Despite requiring 1000 BERT forward passes per query (300ms+ on CPU), the quality improvement was dramatic enough to shift the research agenda definitively toward transformer-based IR.
 
-	  **SBERT** (Reimers & Gurevych EMNLP 2019; UKP Lab Darmstadt): resolved BERT's impracticality for sentence-level retrieval via siamese fine-tuning; enabled 10,000× faster semantic similarity search whilst preserving most accuracy. The key innovation was recognising that while BERT cross-encoders are accurate, the O(n²) computational requirement for pairwise sentence similarity—65 hours for 10,000 sentences versus 5 seconds with SBERT—makes cross-encoder similarity infeasible for retrieval. SBERT's siamese training with natural language inference (NLI) entailment/contradiction/neutral labels and STS regression targets produces embeddings where Euclidean and cosine distance reliably rank sentence pairs by semantic similarity, enabling the ANN index lookup pattern central to production semantic search.
+	  **SBERT** (Reimers & Gurevych EMNLP 2019; UKP Lab Darmstadt): resolved BERT's impracticality for sentence-level retrieval via siamese fine-tuning; enabled 10,000× faster semantic similarity search whilst preserving most accuracy. The key innovation was recognising that while BERT cross-encoders are accurate, the O(n²) computational requirement for pairwise sentence similarity—65 hours for 10,000 sentences versus 5 seconds with SBERT—makes cross-encoder similarity infeasible for retrieval. SBERT's siamese training with natural language inference (NLI) entailment/contradiction/neutral labels and STS regression targets produces embeddings where Euclidean and cosine distance reliably rank sentence pairs by semantic similarity, enabling the ANN [private] lookup pattern central to production semantic search.
 
-	  **DPR** (Karpukhin et al. ACL 2020; Facebook AI): end-to-end bi-encoder fine-tuning on QA pairs outperforming BM25 on Natural Questions (+9–21% top-20 accuracy) and TriviaQA; established the dense retrieval paradigm. DPR demonstrated that BM25's long dominance was contingent on lack of sufficiently large fine-tuning datasets, not an intrinsic advantage of sparse retrieval. With 79,168 QA training pairs from Wikipedia, DPR learned to retrieve the answer-containing passage for open-domain QA with significantly better accuracy than BM25. Critically, DPR showed that the same Wikipedia passage index could be shared across all downstream QA tasks, enabling amortisation of the one-time 21M-passage encoding cost.
+	  **DPR** (Karpukhin et al. ACL 2020; Facebook AI): end-to-end bi-encoder fine-tuning on QA pairs outperforming BM25 on Natural Questions (+9–21% top-20 accuracy) and TriviaQA; established the dense retrieval paradigm. DPR demonstrated that BM25's long dominance was contingent on lack of sufficiently large fine-tuning datasets, not an intrinsic advantage of sparse retrieval. With 79,168 QA training pairs from Wikipedia, DPR learned to retrieve the answer-containing passage for open-domain QA with significantly better accuracy than BM25. Critically, DPR showed that the same Wikipedia passage [private] [private] be shared across all downstream QA tasks, enabling amortisation of the one-time 21M-passage encoding cost.
 
-	  **ColBERT** (Khattab & Zaharia SIGIR 2020; Stanford): late-interaction scoring bridging bi-encoder efficiency with cross-encoder accuracy; introduced the MaxSim operator and the paradigm of storing per-token document representations in the index.
+	  **ColBERT** (Khattab & Zaharia SIGIR 2020; Stanford): late-interaction scoring bridging bi-encoder efficiency with cross-encoder accuracy; introduced the MaxSim operator and the paradigm of storing per-token document representations in the [private].
 
-	  **RAG** (Lewis et al. NeurIPS 2020; Facebook AI + UCL): formalised retrieval-augmented generation as a principled probabilistic model where p(y|x) = ∑_z p(y|x,z) p(z|x), marginalising over retrieved documents z. The RAG model jointly trained the retriever (initialised from DPR) and the generator (BART), showing that retrieval-augmented models could be fine-tuned end-to-end. RAG established the architectural template—retrieve, then generate—that became the dominant LLM grounding pattern by 2022–2026.
+	  **RAG** (Lewis et al. NeurIPS 2020; Facebook AI + UCL): formalised retrieval-augmented generation as a principled probabilistic model where p(y|x) = ∑_z p(y|x,z) p(z|x), marginalising over retrieved documents z. The RAG model jointly trained the retriever (initialised from DPR) and the generator (BART), showing that retrieval-augmented models [private] be fine-tuned end-to-end. RAG established the architectural template—retrieve, then generate—that became the dominant LLM grounding pattern by 2022–2026.
 
 	  **BEIR** (Thakur et al. NeurIPS Datasets 2021; UKP Darmstadt + Cohere): revealed dramatic out-of-domain generalisation failures in dense retrievers across 18 heterogeneous IR tasks, spurring hybrid retrieval and domain adaptation research. The BEIR finding—that DPR, fine-tuned on MS MARCO, achieved only 17.7 nDCG@10 on TREC-COVID (vs BM25 65.6) due to extreme domain shift from web news to scientific literature—was a significant result demonstrating that dense retrievers memorise domain-specific retrieval patterns rather than learning universally transferable semantic similarity. This spurred BM25+dense hybrid methods, domain adaptation via unsupervised contrastive pre-training (GPL, Generative Pseudo-Labelling; Wang et al. 2021), and the development of generalised embedding models like E5 and BGE trained on hundreds of diverse datasets.
 
@@ -1284,7 +928,7 @@ public: true
 
   - ### Major Cloud Platform Integrations (2025–2026)
 
-	  **Google Cloud Vertex AI Vector Search** (formerly Matching Engine): managed HNSW with global distribution; up to 10B vectors per index; 10ms p99 latency at billion-scale with GPU-accelerated ANN.
+	  **Google Cloud Vertex AI Vector Search** (formerly Matching Engine): managed HNSW with global distribution; up to 10B vectors per [private]; 10ms p99 latency at billion-scale with GPU-accelerated ANN.
 
 	  **AWS OpenSearch Serverless k-NN**: auto-scaling vector search integrated with OpenSearch query DSL; Amazon Bedrock Knowledge Bases use OpenSearch Serverless as the default vector backend for enterprise RAG.
 

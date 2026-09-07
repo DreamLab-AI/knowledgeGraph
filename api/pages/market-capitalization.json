@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:market-capitalization",
   "domain": "blockchain",
-  "definition": "Market Capitalization in a blockchain context is the aggregate market value of a cryptocurrency or token, computed as the circulating supply multiplied by the current unit price. It serves as a widely used proxy for the relative size, liquidity, and investor confidence of a crypto-economic network, underpinning index construction, risk categorisation, and portfolio weighting decisions by institutional participants. Critically, market capitalisation is a lagging and manipulable metric: thin order books, wash trading, and locked but counted supply can inflate the figure well beyond the value that could be liquidated in practice.",
+  "definition": "Market Capitalization in a blockchain context is the aggregate market value of a cryptocurrency or token, computed as the circulating supply multiplied by the current unit price. It serves as a widely used proxy for the relative size, liquidity, and investor confidence of a crypto-economic network, underpinning [private] construction, risk categorisation, and portfolio weighting decisions by institutional participants. Critically, market capitalisation is a lagging and manipulable metric: thin order books, wash trading, and locked but counted supply can inflate the figure well beyond the value that [private] be liquidated in practice.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bc-defi-and-economics",

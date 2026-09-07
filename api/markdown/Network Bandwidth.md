@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Bandwidth
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -101,6 +97,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Network bandwidth is the maximum rate at which data can be transferred across a network path, typically measured in bits per second. It defines the capacity of a communication channel rather than its current utilisation or the time taken for an individual message to traverse the path. Bandwidth interacts with latency and packet loss to determine the effective throughput experienced by applications.
   - Related concepts: [[Network Infrastructure]] [[Latency]] [[Quality of Service]] [[Congestion Control]]

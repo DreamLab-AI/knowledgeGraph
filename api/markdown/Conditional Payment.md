@@ -1,55 +1,106 @@
----
-public: true
----
-
-# Conditional Payment
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:conditional-payment", "@type":"Page", "title":"Conditional Payment", "vc:slug":"conditional-payment", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:conditional-payment",
+  "@type": "Page",
+  "title": "Conditional Payment",
+  "vc:slug": "conditional-payment",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:conditional-payment",
-  "@type":"Class",
-  "label":"Conditional Payment",
-  "definition":"A conditional payment is a transfer of value that is released only when one or more predefined conditions are met, rather than executing unconditionally on submission. On blockchains these conditions are enforced by smart contracts or scripts such as hash and time locks, removing the need for a trusted intermediary to adjudicate. Conditional payments are the foundation of escrow, payment channels and atomic cross-chain swaps.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-  "relations":{
-    "implements":[
-      {"@id":"urn:ngm:class:hash-time-locked-contract","label":"Hash Time-Locked Contract"},
-      {"@id":"urn:ngm:class:trustless-execution","label":"Trustless Execution"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:conditional-payment",
+  "@type": "Class",
+  "label": "Conditional Payment",
+  "definition": "A conditional payment is a transfer of value that is released only when one or more predefined conditions are met, rather than executing unconditionally on submission. On blockchains these conditions are enforced by smart contracts or scripts such as hash and time locks, removing the need for a trusted intermediary to adjudicate. Conditional payments are the foundation of escrow, payment channels and atomic cross-chain swaps.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-execution",
+        "label": "Trustless Execution"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:atomic-swap","label":"Atomic Swap"},
-      {"@id":"urn:ngm:class:payment-channel","label":"Payment Channel"},
-      {"@id":"urn:ngm:class:micropayment","label":"Micropayment"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:timelock","label":"Timelock"},
-      {"@id":"urn:ngm:class:oracle","label":"Oracle"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"},
-      {"@id":"urn:ngm:class:state-channel","label":"State Channel"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:lightning-network","label":"Lightning Network"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:bitcoin","label":"Bitcoin"},
-      {"@id":"urn:ngm:class:trustless-execution","label":"Trustless Execution"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-execution",
+        "label": "Trustless Execution"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:micropayment","label":"Micropayment"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

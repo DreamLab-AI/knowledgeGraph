@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stacks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:stacks:b4f4e6c4e52c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aea877a068348acdd730c3da947f43acd2d7e356bab53ae80dc992ece1035102"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Consensus Protocol]]",
-      "resolved": "urn:visionflow:linked:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin-protocol",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Bitcoin Layer that enables smart contracts and applications whose state is anchored to the Bitcoin blockchain through its proof-of-transfer consensus.

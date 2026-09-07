@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Privacy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,17 +50,38 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
     ]
   },
   "provenance": {
@@ -75,26 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:user-privacy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f80c49e5d87c11ca8890c4a30afecc0f8bab1bbc7e317c3a5a7f6bbecba52828"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   User Privacy encompasses the rights, technical mechanisms, and regulatory obligations protecting individuals from unwanted disclosure of their identity, transactions, and behavioural patterns within digital and blockchain systems. Protections span cryptographic techniques (zero-knowledge proofs, ring signatures, confidential transactions), network-layer obfuscation (Dandelion++, Tor), and compliance frameworks (GDPR, data minimisation principles).

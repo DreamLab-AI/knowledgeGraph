@@ -1,8 +1,3 @@
----
-public: true
----
-
-# H.264
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,30 @@ public: true
   "definition": "H.264, also known as AVC (Advanced Video Coding) or MPEG-4 Part 10, is a block-oriented, motion-compensated video compression standard jointly developed by the ITU-T and ISO/IEC and finalised in 2003. It achieves substantially better compression efficiency than its predecessors through advanced intra and inter prediction, variable block-size motion compensation, an in-loop deblocking filter, and context-adaptive entropy coding. For two decades it has been the most widely deployed video codec, used in streaming, broadcast, Blu-ray, video conferencing, and surveillance, with broad hardware acceleration.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:video-codec", "label": "Video Codec"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:video-codec",
+      "label": "Video Codec"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:video-compression", "label": "Video Compression"}
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:video-encoding", "label": "Video Encoding"}
+      {
+        "@id": "urn:ngm:class:video-encoding",
+        "label": "Video Encoding"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}
+      {
+        "@id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interchange Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -89,32 +84,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interchange-protocol:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a76a51013d8adc9c01df7d066c8f3227c7de41c3850e445f2914f506a9c2cc4e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An interchange protocol is an agreed set of rules and data formats for transferring assets, avatars, scenes and other content between platforms and applications. Such protocols enable interoperability across virtual environments and spatial computing systems, allowing content to move between implementations without loss of structure or meaning.

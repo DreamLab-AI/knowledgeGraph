@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise AI Strategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "enterprise-ai-strategy",
   "title": "Enterprise AI Strategy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["API Cost Optimization", "Open-Source LLMs"],
+  "vc:outboundWikilinks": [
+    "API Cost Optimization",
+    "Open-Source LLMs"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:open-source", "label": "Open Source"}, {"@id": "urn:ngm:class:model", "label": "Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

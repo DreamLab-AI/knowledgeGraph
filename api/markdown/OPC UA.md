@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - OPC-UA
----
-
-# OPC UA
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

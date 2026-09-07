@@ -1,8 +1,3 @@
----
-public: true
----
-
-# High Bandwidth Memory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "High Bandwidth Memory (HBM) is a 3D-stacked DRAM technology that places multiple memory dies on a silicon interposer adjacent to a processor, delivering very wide buses and high memory bandwidth at low power per bit. It is the standard memory for AI accelerators and GPUs where feeding compute units with data is the dominant bottleneck. HBM enables training and inference of large models that would otherwise be memory-bandwidth bound.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-processing-hardware", "label": "Data Processing Hardware"},
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}
+      {
+        "@id": "urn:ngm:class:data-processing-hardware",
+        "label": "Data Processing Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
     ]
   },
   "quality": 0.72

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Vibration Isolation
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:vibration-isolation", "@type": "Page", "title": "Vibration Isolation", "vc:slug": "vibration-isolation", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:vibration-isolation",
+  "@type": "Page",
+  "title": "Vibration Isolation",
+  "vc:slug": "vibration-isolation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

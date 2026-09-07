@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Continuous Training
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,51 +8,186 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:linked:data-drift", "vc:label": "Data Drift"},
-    {"@id": "urn:visionflow:linked:concept-drift", "vc:label": "Concept Drift"},
-    {"@id": "urn:visionflow:linked:model-monitoring", "vc:label": "Model Monitoring"},
-    {"@id": "urn:visionflow:linked:model-deployment", "vc:label": "Model Deployment"},
-    {"@id": "urn:visionflow:linked:model-serving", "vc:label": "Model Serving"},
-    {"@id": "urn:visionflow:linked:model-registry", "vc:label": "Model Registry"},
-    {"@id": "urn:visionflow:linked:feature-store", "vc:label": "Feature Store"},
-    {"@id": "urn:visionflow:linked:model-training-pipeline", "vc:label": "Model Training Pipeline"},
-    {"@id": "urn:visionflow:linked:ci-cd-automation", "vc:label": "CI-CD Automation"},
-    {"@id": "urn:visionflow:linked:continuous-deployment", "vc:label": "Continuous Deployment"},
-    {"@id": "urn:visionflow:linked:continuous-integration", "vc:label": "Continuous Integration"},
-    {"@id": "urn:visionflow:linked:model-governance", "vc:label": "Model Governance"},
-    {"@id": "urn:visionflow:linked:experiment-tracking", "vc:label": "Experiment Tracking"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:data-versioning", "vc:label": "Data Versioning"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:kubeflow", "vc:label": "Kubeflow"},
-    {"@id": "urn:visionflow:linked:mlflow", "vc:label": "MLflow"},
-    {"@id": "urn:visionflow:linked:apache-airflow", "vc:label": "Apache Airflow"},
-    {"@id": "urn:visionflow:linked:vertex-ai", "vc:label": "Vertex AI"},
-    {"@id": "urn:visionflow:linked:sagemaker", "vc:label": "SageMaker"},
-    {"@id": "urn:visionflow:linked:online-learning", "vc:label": "Online Learning"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:devops", "vc:label": "DevOps"},
-    {"@id": "urn:visionflow:linked:kubernetes", "vc:label": "Kubernetes"},
-    {"@id": "urn:visionflow:linked:shadow-mode-deployment", "vc:label": "Shadow Mode Deployment"},
-    {"@id": "urn:visionflow:linked:canary-deployment", "vc:label": "Canary Deployment"},
-    {"@id": "urn:visionflow:linked:a-b-testing", "vc:label": "A-B Testing"},
-    {"@id": "urn:visionflow:linked:model-validation", "vc:label": "Model Validation"},
-    {"@id": "urn:visionflow:linked:statistical-process-control", "vc:label": "Statistical Process Control"},
-    {"@id": "urn:visionflow:linked:evidently-ai", "vc:label": "Evidently AI"},
-    {"@id": "urn:visionflow:linked:seldon-core", "vc:label": "Seldon Core"},
-    {"@id": "urn:visionflow:linked:ai-lifecycle", "vc:label": "AI Lifecycle"},
-    {"@id": "urn:visionflow:linked:model-decay", "vc:label": "Model Decay"},
-    {"@id": "urn:visionflow:linked:production-ml", "vc:label": "Production ML"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:labelling-pipeline", "vc:label": "Labelling Pipeline"},
-    {"@id": "urn:visionflow:linked:continual-learning", "vc:label": "Continual Learning"},
-    {"@id": "urn:visionflow:linked:model-compression", "vc:label": "Model Compression"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"}
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-drift",
+      "vc:label": "Data Drift"
+    },
+    {
+      "@id": "urn:visionflow:linked:concept-drift",
+      "vc:label": "Concept Drift"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-monitoring",
+      "vc:label": "Model Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-deployment",
+      "vc:label": "Model Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-serving",
+      "vc:label": "Model Serving"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-registry",
+      "vc:label": "Model Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-store",
+      "vc:label": "Feature Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training-pipeline",
+      "vc:label": "Model Training Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:ci-cd-automation",
+      "vc:label": "CI-CD Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-deployment",
+      "vc:label": "Continuous Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-integration",
+      "vc:label": "Continuous Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-governance",
+      "vc:label": "Model Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:experiment-tracking",
+      "vc:label": "Experiment Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-versioning",
+      "vc:label": "Data Versioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubeflow",
+      "vc:label": "Kubeflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlflow",
+      "vc:label": "MLflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:apache-airflow",
+      "vc:label": "Apache Airflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertex-ai",
+      "vc:label": "Vertex AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:sagemaker",
+      "vc:label": "SageMaker"
+    },
+    {
+      "@id": "urn:visionflow:linked:online-learning",
+      "vc:label": "Online Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:devops",
+      "vc:label": "DevOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubernetes",
+      "vc:label": "Kubernetes"
+    },
+    {
+      "@id": "urn:visionflow:linked:shadow-mode-deployment",
+      "vc:label": "Shadow Mode Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:canary-deployment",
+      "vc:label": "Canary Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:a-b-testing",
+      "vc:label": "A-B Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-validation",
+      "vc:label": "Model Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-process-control",
+      "vc:label": "Statistical Process Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:evidently-ai",
+      "vc:label": "Evidently AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:seldon-core",
+      "vc:label": "Seldon Core"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-lifecycle",
+      "vc:label": "AI Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-decay",
+      "vc:label": "Model Decay"
+    },
+    {
+      "@id": "urn:visionflow:linked:production-ml",
+      "vc:label": "Production ML"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:labelling-pipeline",
+      "vc:label": "Labelling Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:continual-learning",
+      "vc:label": "Continual Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-compression",
+      "vc:label": "Model Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    }
   ]
 }
 ```
@@ -221,65 +350,6 @@ public: true
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "EnrichmentEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:continuous-training:a3f2b1c9d4e5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:continuous-training"
-  },
-  "vc:resolutions": [
-    {"raw": "[[MLOps]]", "resolved": "urn:visionflow:linked:mlops", "kind": "ResolvedLink"},
-    {"raw": "[[Model Training]]", "resolved": "urn:visionflow:linked:model-training", "kind": "ResolvedLink"},
-    {"raw": "[[Data Drift]]", "resolved": "urn:visionflow:linked:data-drift", "kind": "ResolvedLink"},
-    {"raw": "[[Concept Drift]]", "resolved": "urn:visionflow:linked:concept-drift", "kind": "StubLink"},
-    {"raw": "[[Model Monitoring]]", "resolved": "urn:visionflow:linked:model-monitoring", "kind": "ResolvedLink"},
-    {"raw": "[[Model Deployment]]", "resolved": "urn:visionflow:linked:model-deployment", "kind": "ResolvedLink"},
-    {"raw": "[[Model Serving]]", "resolved": "urn:visionflow:linked:model-serving", "kind": "ResolvedLink"},
-    {"raw": "[[Model Registry]]", "resolved": "urn:visionflow:linked:model-registry", "kind": "ResolvedLink"},
-    {"raw": "[[Feature Store]]", "resolved": "urn:visionflow:linked:feature-store", "kind": "ResolvedLink"},
-    {"raw": "[[Model Training Pipeline]]", "resolved": "urn:visionflow:linked:model-training-pipeline", "kind": "ResolvedLink"},
-    {"raw": "[[CI-CD Automation]]", "resolved": "urn:visionflow:linked:ci-cd-automation", "kind": "ResolvedLink"},
-    {"raw": "[[Continuous Deployment]]", "resolved": "urn:visionflow:linked:continuous-deployment", "kind": "ResolvedLink"},
-    {"raw": "[[Continuous Integration]]", "resolved": "urn:visionflow:linked:continuous-integration", "kind": "ResolvedLink"},
-    {"raw": "[[Model Governance]]", "resolved": "urn:visionflow:linked:model-governance", "kind": "ResolvedLink"},
-    {"raw": "[[Experiment Tracking]]", "resolved": "urn:visionflow:linked:experiment-tracking", "kind": "ResolvedLink"},
-    {"raw": "[[Data Pipeline]]", "resolved": "urn:visionflow:linked:data-pipeline", "kind": "ResolvedLink"},
-    {"raw": "[[Data Versioning]]", "resolved": "urn:visionflow:linked:data-versioning", "kind": "ResolvedLink"},
-    {"raw": "[[Model Evaluation]]", "resolved": "urn:visionflow:linked:model-evaluation", "kind": "ResolvedLink"},
-    {"raw": "[[Kubeflow]]", "resolved": "urn:visionflow:linked:kubeflow", "kind": "StubLink"},
-    {"raw": "[[MLflow]]", "resolved": "urn:visionflow:linked:mlflow", "kind": "StubLink"},
-    {"raw": "[[Apache Airflow]]", "resolved": "urn:visionflow:linked:apache-airflow", "kind": "StubLink"},
-    {"raw": "[[Vertex AI]]", "resolved": "urn:visionflow:linked:vertex-ai", "kind": "StubLink"},
-    {"raw": "[[SageMaker]]", "resolved": "urn:visionflow:linked:sagemaker", "kind": "StubLink"},
-    {"raw": "[[Online Learning]]", "resolved": "urn:visionflow:linked:online-learning", "kind": "StubLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Federated Learning]]", "resolved": "urn:visionflow:linked:federated-learning", "kind": "StubLink"},
-    {"raw": "[[DevOps]]", "resolved": "urn:visionflow:linked:devops", "kind": "StubLink"},
-    {"raw": "[[Kubernetes]]", "resolved": "urn:visionflow:linked:kubernetes", "kind": "StubLink"},
-    {"raw": "[[Shadow Mode Deployment]]", "resolved": "urn:visionflow:linked:shadow-mode-deployment", "kind": "StubLink"},
-    {"raw": "[[Canary Deployment]]", "resolved": "urn:visionflow:linked:canary-deployment", "kind": "StubLink"},
-    {"raw": "[[A-B Testing]]", "resolved": "urn:visionflow:linked:a-b-testing", "kind": "StubLink"},
-    {"raw": "[[Model Validation]]", "resolved": "urn:visionflow:linked:model-validation", "kind": "StubLink"},
-    {"raw": "[[Evidently AI]]", "resolved": "urn:visionflow:linked:evidently-ai", "kind": "StubLink"},
-    {"raw": "[[Seldon Core]]", "resolved": "urn:visionflow:linked:seldon-core", "kind": "StubLink"},
-    {"raw": "[[AI Lifecycle]]", "resolved": "urn:visionflow:linked:ai-lifecycle", "kind": "ResolvedLink"},
-    {"raw": "[[Model Decay]]", "resolved": "urn:visionflow:linked:model-decay", "kind": "StubLink"},
-    {"raw": "[[Production ML]]", "resolved": "urn:visionflow:linked:production-ml", "kind": "StubLink"},
-    {"raw": "[[Feature Engineering]]", "resolved": "urn:visionflow:linked:feature-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Labelling Pipeline]]", "resolved": "urn:visionflow:linked:labelling-pipeline", "kind": "StubLink"},
-    {"raw": "[[Continual Learning]]", "resolved": "urn:visionflow:linked:continual-learning", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "StubLink"},
-    {"raw": "[[Statistical Process Control]]", "resolved": "urn:visionflow:linked:statistical-process-control", "kind": "StubLink"},
-    {"raw": "[[Canary Release]]", "resolved": "urn:visionflow:linked:canary-deployment", "kind": "StubLink"},
-    {"raw": "[[Model Compression]]", "resolved": "urn:visionflow:linked:model-compression", "kind": "StubLink"}
-  ]
 }
 ```
 
@@ -498,7 +568,7 @@ public: true
 
     This framing leads to **adaptive retraining strategies** that modulate retraining frequency based on observed drift intensity: retrain more frequently during periods of rapid distribution change (e.g., during a fraud campaign, a market shock, or a cultural event that shifts language use) and less frequently during stable periods (weekends, seasonal off-peaks). Adaptive strategies require estimating the rate of [[Model Decay]] as a function of drift intensity and time — a meta-learning problem that requires data from multiple previous drift episodes. The 2024 meta-analysis (Nguyen et al.) found that adaptive retraining strategies consistently outperform fixed-period and data-volume strategies across 35 real-world datasets, with 15-30% higher model accuracy at equivalent compute budget.
 
-    The economics of continuous training for large [[Deep Learning]] models have been transformed by parameter-efficient fine-tuning methods. Full fine-tuning of a 7B-parameter model on an A100 GPU requires 60-80 GB VRAM and multiple hours per training run. LoRA fine-tuning of the same model requires as little as 16 GB VRAM and can complete in under an hour, reducing the cost per retraining cycle by approximately 10x. QLoRA (Dettmers et al., 2023) further reduces VRAM requirements to 8-12 GB via 4-bit weight quantisation, enabling continuous fine-tuning of 7B models on consumer-grade RTX 4090 GPUs at commodity hardware cost. This cost reduction is transformative for continuous training economics: retraining a 7B LLM weekly becomes economically viable for organisations with moderate-scale deployment (tens of thousands of users) that previously could not afford foundation model continuous training.
+    The economics of continuous training for large [[Deep Learning]] models have been transformed by parameter-efficient fine-tuning methods. Full fine-tuning of a 7B-parameter model on an A100 GPU requires 60-80 GB VRAM and multiple hours per training run. LoRA fine-tuning of the same model requires as little as 16 GB VRAM and can complete in under an hour, reducing the cost per retraining cycle by approximately 10x. QLoRA (Dettmers et al., 2023) further reduces VRAM requirements to 8-12 GB via 4-bit weight quantisation, enabling continuous fine-tuning of 7B models on consumer-grade RTX 4090 GPUs at commodity hardware cost. This cost reduction is transformative for continuous training economics: retraining a 7B LLM weekly becomes economically viable for organisations with moderate-scale deployment (tens of thousands of users) that previously [private] not afford foundation model continuous training.
 
   - ## Formal Analysis: The Three Pillars of MLOps
 
@@ -532,7 +602,7 @@ public: true
 
     - The University of Manchester's £120 million AI research hub (opened 2024), the largest university AI investment in UK history, includes embedded industry partnerships with advanced manufacturing, healthcare, and logistics companies in the Northern England cluster — all domains that demand continuous training for non-stationary data distributions. The Sheffield-Rotherham Advanced Manufacturing Innovation District (AMID) and the High Value Manufacturing Catapult operate collaborative AI deployments for quality inspection, predictive maintenance, and supply chain optimisation in which continuous retraining is essential: sensor calibration drift, equipment aging, and changing material compositions create genuine distribution shift that invalidates static model assumptions. UKRI Innovate UK funding (£50M+ in AI for manufacturing, 2023-2025) has supported continuous training deployments at SMEs in Sheffield, Leeds, and Newcastle operating in steel fabrication, textile manufacturing, and logistics.
 
-    - The University of Edinburgh's School of Informatics has a long track record in machine learning systems research; the Edinburgh DataShare infrastructure and collaborations with NHS Scotland create applied continuous training use cases in clinical risk modelling — sepsis prediction, deterioration scoring, frailty index computation — where patient demographics, clinical protocols, and [[Electronic Health Record]] data structures evolve continuously. NHS Greater Glasgow & Clyde and NHS Lothian have both piloted automated retraining pipelines for their clinical [[Deep Learning]] models using [[Kubeflow]] and [[MLflow]] on NHS Scotland's [[Kubernetes]] infrastructure, with the Turing Institute's public-sector [[Model Governance]] framework guiding their evaluation gating and rollback policies.
+    - The University of Edinburgh's School of Informatics has a long track record in machine learning systems research; the Edinburgh DataShare infrastructure and collaborations with NHS Scotland create applied continuous training use cases in clinical risk modelling — sepsis prediction, deterioration scoring, frailty [private] computation — where patient demographics, clinical protocols, and [[Electronic Health Record]] data structures evolve continuously. NHS Greater Glasgow & Clyde and NHS Lothian have both piloted automated retraining pipelines for their clinical [[Deep Learning]] models using [[Kubeflow]] and [[MLflow]] on NHS Scotland's [[Kubernetes]] infrastructure, with the Turing Institute's public-sector [[Model Governance]] framework guiding their evaluation gating and rollback policies.
 
     - University College London's DARK Lab and Centre for Artificial Intelligence have published work on concept drift in reinforcement learning agents operating under distribution shift — relevant to clinical decision support systems — and on sequential [[Model Evaluation]] under non-stationary test distributions. Imperial College London's Data Science Institute and Centre for Process Systems Engineering contribute continuous learning work in industrial monitoring and process control: chemical plant sensor drift and pharmaceutical batch-to-batch variability create genuine continuous training requirements for process anomaly detection models, directly relevant to the Thames Valley and Northern England chemical/pharmaceutical manufacturing clusters.
 

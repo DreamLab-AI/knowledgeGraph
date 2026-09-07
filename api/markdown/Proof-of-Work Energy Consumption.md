@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proof-of-Work Energy Consumption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Proof-of-work energy consumption is the electricity used by miners performing the computational hashing that secures proof-of-work blockchains such as Bitcoin. Because security scales with aggregate hashpower, energy use rises with price and competition, making it a central environmental and policy concern. It is tracked by indices that estimate network-wide power draw and carbon footprint.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"},
-      {"@id": "urn:ngm:class:cbeci", "label": "CBECI"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "@id": "urn:ngm:class:cbeci",
+        "label": "CBECI"
+      }
     ]
   },
   "quality": 0.72

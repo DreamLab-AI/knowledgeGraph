@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI CapEx Forecast
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-capex-forecast",
   "title": "AI CapEx Forecast",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Goldman Sachs AI Research", "Hyperscaler Spending"],
+  "vc:outboundWikilinks": [
+    "Goldman Sachs AI Research",
+    "Hyperscaler Spending"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data", "label": "Data"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data", "label": "Data"}, {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

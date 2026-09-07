@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Emotional Intelligence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,35 +59,92 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:emotion-aware-interaction", "label": "Emotion Aware Interaction"},
-      {"@id": "urn:ngm:class:emotional-analytics-engine", "label": "Emotional Analytics Engine"}
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:emotion-aware-interaction",
+        "label": "Emotion Aware Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-analytics-engine",
+        "label": "Emotional Analytics Engine"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:empathetic-ai", "label": "Empathetic AI"},
-      {"@id": "urn:ngm:class:emotional-immersion", "label": "Emotional Immersion"},
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
-      {"@id": "urn:ngm:class:personalized-virtual-experiences", "label": "Personalized Virtual Experiences"}
+      {
+        "@id": "urn:ngm:class:empathetic-ai",
+        "label": "Empathetic AI"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-immersion",
+        "label": "Emotional Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:digital-humans", "label": "Digital Humans"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:attention-aware-interaction", "label": "Attention Aware Interaction"},
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"}
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-humans",
+        "label": "Digital Humans"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:attention-aware-interaction",
+        "label": "Attention Aware Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-human-technology", "label": "Digital Human Technology"},
-      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"}
+      {
+        "@id": "urn:ngm:class:digital-human-technology",
+        "label": "Digital Human Technology"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      }
     ]
   },
   "provenance": {
@@ -102,42 +154,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:emotional-intelligence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1a79ec08a4d221bdac757d8e54715f47ed66fa1ce47a09983cb4e4f01717e28c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersive Entertainment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,47 +176,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:immersive-entertainment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:04fa85370a2cbff9176a5ed15ce27d68b6a06e0909480caf4c5f292dc4241f89"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Entertainment]]",
-      "resolved": "urn:visionflow:owl:class:digital-entertainment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interactive Storytelling]]",
-      "resolved": "urn:visionflow:owl:class:interactive-storytelling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Entertainment experiences leveraging VR, AR, and mixed reality technologies to create interactive, participatory content that transforms audiences from passive spectators into active participants within gaming, theme parks, live events, and digital experiences.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0045 acceleration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,42 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0044-velocity", "label": "rb 0044 velocity"},
-      {"@id": "urn:ngm:class:rb-0043-torque", "label": "rb 0043 torque"},
-      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"},
-      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"}
+      {
+        "@id": "urn:ngm:class:rb-0044-velocity",
+        "label": "rb 0044 velocity"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
-      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"}
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"},
-      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"}
+      {
+        "@id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0045-acceleration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8fda5f454604ca4002b6178336ba0186ab85437362875674fa8ac4f2344550a8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Acceleration** (RB-0045) is the rate of change of velocity with respect to time, expressed for each joint (joint-space acceleration, rad/s²) or for the robot's end-effector (task-space acceleration, m/s²). Acceleration profiles govern the dynamic forces and torques a manipulator must generate, and limiting acceleration is central to safety — reducing impact forces during unintended contact — and to trajectory smoothness in collaborative applications.

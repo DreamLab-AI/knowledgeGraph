@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Segregation of Duties
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Segregation of duties is an internal control principle that divides critical tasks among multiple people so that no single individual can both execute and conceal an error or fraud. It separates responsibilities such as authorisation, custody, recording, and reconciliation. It is a core requirement of financial, security, and compliance control frameworks.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:compliance-control", "label": "Compliance Control"}
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      }
     ]
   },
   "quality": 0.72

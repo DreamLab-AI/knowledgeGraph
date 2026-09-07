@@ -1,9 +1,3 @@
----
-public: true
----
-
-# User Profiling
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

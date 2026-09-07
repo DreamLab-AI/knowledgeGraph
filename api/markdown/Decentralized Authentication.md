@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Decentralized Authentication
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

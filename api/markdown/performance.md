@@ -1,8 +1,3 @@
----
-public: true
----
-
-# performance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,37 +57,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:performance:4a1898716ef6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3c883c528605d7b3f05271daac57ae8c35f660aaf39c3134fad928c7fa31927c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Observability]]",
-      "resolved": "urn:visionflow:linked:observability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Performance is a measure of how efficiently a system completes its work, commonly expressed through throughput, latency, and resource usage.

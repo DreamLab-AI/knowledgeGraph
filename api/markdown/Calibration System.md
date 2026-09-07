@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Calibration System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,47 @@ public: true
   "definition": "A Calibration System is an integrated assembly of hardware targets, measurement instruments, algorithms, and software workflows used to determine and correct systematic errors in sensors, cameras, and measurement devices, establishing a known and traceable relationship between a sensor's raw outputs and the physical quantities they represent. Calibration systems are essential preconditions for accurate spatial measurement, computer vision, robotics, and extended reality applications.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:calibration-equipment", "label": "Calibration Equipment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:calibration-equipment",
+      "label": "Calibration Equipment"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:sensor-calibration", "label": "Sensor Calibration"},
-      {"@id": "urn:ngm:class:optical-calibration-target", "label": "Optical Calibration Target"},
-      {"@id": "urn:ngm:class:imu", "label": "IMU"}
+      {
+        "@id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      },
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
     ],
-    "relatedTo": [{"@id": "urn:ngm:class:slam", "label": "SLAM"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -57,4 +80,3 @@ public: true
   - Calibration systems are deployed across robotics (autonomous vehicles require LiDAR-camera extrinsic calibration), extended reality (headset camera-to-display calibration determines geometric distortion correction), medical imaging (X-ray and CT geometric calibration for dosimetry accuracy), and industrial metrology (coordinate measuring machines, laser trackers). Commercial calibration systems include Leica's Absolute Tracker for large-volume coordinate measurement and Vicon's motion capture calibration wands. Open-source tools include Kalibr, OpenCV, and Basalt for visual-inertial calibration.
 
   - In 2024–2025, automatic and in-situ calibration is increasingly replacing offline laboratory calibration. Online self-calibration — where a system continuously estimates its own calibration parameters from production data — is becoming standard in autonomous vehicle stacks and extended reality headsets. Learning-based calibration methods use neural networks to estimate intrinsic and extrinsic parameters directly from image data, showing robustness to scenes that lack explicit calibration targets. Thermal drift compensation and environmental adaptation (accounting for temperature-induced focal length changes in space and high-temperature industrial settings) represent active research frontiers.
-

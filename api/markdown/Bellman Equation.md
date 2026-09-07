@@ -1,36 +1,108 @@
----
-public: true
----
-
-# Bellman Equation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:bellman-equation", "@type":"Page", "title":"Bellman Equation", "vc:slug":"bellman-equation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:bellman-equation",
+  "@type": "Page",
+  "title": "Bellman Equation",
+  "vc:slug": "bellman-equation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:bellman-equation",
-  "@type":"Class",
-  "label":"Bellman Equation",
-  "definition":"The Bellman equation is a recursive relationship that expresses the value of a state as the immediate reward plus the discounted value of successor states under a given policy. It is the mathematical foundation of dynamic programming and reinforcement learning, characterising optimal behaviour through the principle of optimality. Solving or approximating the Bellman equation yields value functions and optimal policies for sequential decision problems.",
-  "domain":"machine-learning",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:dynamic-programming","label":"Dynamic Programming"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:dynamic-programming","label":"Dynamic Programming"}],
-    "uses":[{"@id":"urn:ngm:class:value-function","label":"Value Function"},{"@id":"urn:ngm:class:reward-function","label":"Reward Function"}],
-    "partOf":[{"@id":"urn:ngm:class:markov-decision-process","label":"Markov Decision Process"}],
-    "enables":[{"@id":"urn:ngm:class:q-learning","label":"Q Learning"},{"@id":"urn:ngm:class:reinforcement-learning","label":"Reinforcement Learning"}],
-    "supports":[{"@id":"urn:ngm:class:optimal-control","label":"Optimal Control"},{"@id":"urn:ngm:class:planning","label":"Planning"}],
-    "relatedTo":[{"@id":"urn:ngm:class:value-function","label":"Value Function"},{"@id":"urn:ngm:class:policy","label":"Policy"},{"@id":"urn:ngm:class:state-space","label":"State Space"}],
-    "dependsOn":[{"@id":"urn:ngm:class:markov-decision-process","label":"Markov Decision Process"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:q-learning","label":"Q Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bellman-equation",
+  "@type": "Class",
+  "label": "Bellman Equation",
+  "definition": "The Bellman equation is a recursive relationship that expresses the value of a state as the immediate reward plus the discounted value of successor states under a given policy. It is the mathematical foundation of dynamic programming and reinforcement learning, characterising optimal behaviour through the principle of optimality. Solving or approximating the Bellman equation yields value functions and optimal policies for sequential decision problems.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dynamic-programming",
+      "label": "Dynamic Programming"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:q-learning",
+        "label": "Q Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "@id": "urn:ngm:class:planning",
+        "label": "Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "@id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:q-learning",
+        "label": "Q Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

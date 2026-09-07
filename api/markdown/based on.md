@@ -1,8 +1,3 @@
----
-public: true
----
-
-# based on
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,26 +55,62 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:quality-standard", "label": "Quality Standard"},
-      {"@id": "urn:ngm:class:iso-standards", "label": "Iso Standards"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:quality-standard",
+        "label": "Quality Standard"
+      },
+      {
+        "@id": "urn:ngm:class:iso-standards",
+        "label": "Iso Standards"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:standards-conformance", "label": "Standards Conformance"},
-      {"@id": "urn:ngm:class:compliance-standards", "label": "Compliance Standards"}
+      {
+        "@id": "urn:ngm:class:standards-conformance",
+        "label": "Standards Conformance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
-      {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"}
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:standardization-bodies", "label": "Standardization Bodies"},
-      {"@id": "urn:ngm:class:standards-documentation", "label": "Standards Documentation"}
+      {
+        "@id": "urn:ngm:class:standardization-bodies",
+        "label": "Standardization Bodies"
+      },
+      {
+        "@id": "urn:ngm:class:standards-documentation",
+        "label": "Standards Documentation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics-platform", "label": "Robotics Platform"},
-      {"@id": "urn:ngm:class:safety-standard", "label": "Safety Standard"}
+      {
+        "@id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      },
+      {
+        "@id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      }
     ]
   },
   "provenance": {
@@ -89,37 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:based-on:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6c9972aefe906bb4bb949e8b8cdc6ffa54bbb9fa375abc708f58e3fe0380d159"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Safety Standard]]",
-      "resolved": "urn:visionflow:linked:safety-standard",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   "Based on" is a provenance and derivation relation used in robotics standards and quality management frameworks to indicate that a system, design, or specification is derived from or conforms to an authoritative reference standard. Within the robotics domain it records the normative lineage of robot software architectures, safety certifications, and performance benchmarks relative to their governing standards such as ISO 9001 or IEC 61508.

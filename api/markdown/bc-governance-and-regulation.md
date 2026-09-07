@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,23 +34,61 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"},
-      {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"},
-      {"@id": "urn:ngm:class:regulatory-technology", "label": "Regulatory Technology"}
+      {
+        "@id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
     ]
   },
   "qualityScore": 0.8,
   "maturity": "established"
 }
 ```
+
+

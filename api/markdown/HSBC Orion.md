@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HSBC Orion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "HSBC Orion is HSBC's institutional tokenisation platform for issuing and managing digital bonds and other assets on a permissioned distributed ledger. It enables on-chain issuance, settlement, and custody of tokenised securities within a regulated banking framework, used for sovereign and corporate digital bond programmes. Orion exemplifies enterprise adoption of consortium blockchain for capital markets infrastructure.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:enterprise-token-standards", "label": "Enterprise Token Standards"},
-      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"}
+      {
+        "@id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      },
+      {
+        "@id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      }
     ]
   },
   "quality": 0.72

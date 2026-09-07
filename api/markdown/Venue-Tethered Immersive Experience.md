@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Location Based Experience]]
-# Venue-Tethered Immersive Experience
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,19 +55,40 @@ elevatedFrom:: [[Location Based Experience]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
-      {"@id": "urn:ngm:class:gps", "label": "Gps"}
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "Gps"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:performing-arts", "label": "Performing Arts"},
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"}
+      {
+        "@id": "urn:ngm:class:performing-arts",
+        "label": "Performing Arts"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse-venue", "label": "Metaverse Venue"}
+      {
+        "@id": "urn:ngm:class:metaverse-venue",
+        "label": "Metaverse Venue"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +98,6 @@ elevatedFrom:: [[Location Based Experience]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:location-based-experience:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dcea335499b329ce3f105ea9485a3a7581bc8650d632c545cc679a5ecfd2a5eb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Immersive]]",
-      "resolved": "urn:visionflow:linked:immersive",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An immersive or interactive experience tied to a specific physical venue or geographic location, combining real-world presence with digital or spatial computing overlays. Location-based experiences leverage spatial mapping, real-time content delivery, and user proximity to deliver contextually relevant narrative or interactive content that cannot be replicated remotely.

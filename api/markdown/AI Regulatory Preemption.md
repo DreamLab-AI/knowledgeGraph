@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Regulatory Preemption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "ai-regulatory-preemption",
   "title": "AI Regulatory Preemption",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Executive Order", "Federal vs State AI Policy", "Ron DeSantis", "State AI Legislation"],
+  "vc:outboundWikilinks": [
+    "Executive Order",
+    "Federal vs State AI Policy",
+    "Ron DeSantis",
+    "State AI Legislation"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}, {"@id": "urn:ngm:class:institutional-framework", "label": "Institutional Framework"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-framework",
+        "label": "Institutional Framework"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

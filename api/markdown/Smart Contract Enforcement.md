@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Smart Contract Enforcement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Smart contract enforcement is the property by which the terms encoded in a self-executing on-chain program are carried out automatically and irreversibly once predefined conditions are met, without requiring trust in a counterparty or intermediary. Enforcement derives from the deterministic execution of code on a distributed ledger and the immutability of recorded state. It reduces reliance on external legal recourse while raising questions of how code-based outcomes interact with conventional contract law.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"},
-      {"@id": "urn:ngm:class:arbitration-process", "label": "Arbitration Process"}
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:arbitration-process",
+        "label": "Arbitration Process"
+      }
     ]
   },
   "quality": 0.72

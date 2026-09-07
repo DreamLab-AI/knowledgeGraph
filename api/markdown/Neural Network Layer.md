@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Neural Network Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,32 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:neural-network-layer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f619daeaf1cab51561843eec1ee5ba95721fa56c49c66966292a5c34a3f60ea3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Neural Network Layer is a discrete computational stage in a neural network that applies a parameterised transformation to its input tensor, including operations such as linear projection, convolution, normalisation, or attention. Layers are composed sequentially or in parallel to form a complete neural network architecture.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Skos Vocabulary
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:skos-vocabulary:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e389cdf30dee4a4a1d9475cfd035769d53c2373f744d52417a3e4493f1701743"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Linked Vocabulary Publishing]]",
-      "resolved": "urn:visionflow:linked:linked-vocabulary-publishing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Organization System]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-organization-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A W3C recommendation providing an RDF-based data model for representing thesauri, taxonomies, classification schemes, and other structured controlled vocabularies, enabling publication and linking of knowledge organization systems on the semantic web through standardized concepts and relationships.

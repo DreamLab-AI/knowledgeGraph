@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Agent Communication Language
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

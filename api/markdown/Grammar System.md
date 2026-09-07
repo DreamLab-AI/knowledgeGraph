@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Grammar System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:grammar-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:55cac69e621a6d7ad4d32dc7193b1b3e59401120bfdf76739941b7e7195ebcbe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Multilingual Metaverse Experience]]",
-      "resolved": "urn:visionflow:linked:multilingual-metaverse-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Natural language processing components within metaverse platforms that interpret, process, and generate human language for user interactions, enabling AI-powered conversations with virtual avatars, real-time language translation, grammar correction, and adaptive dialogue systems that respond to user proficiency levels.

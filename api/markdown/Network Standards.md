@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:network-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:469a8d4eacf970b433267f633a6b860b88100b37b4c3ee9ee906680cfaa3934d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Interoperability]]",
-      "resolved": "urn:visionflow:linked:network-interoperability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standards]]",
-      "resolved": "urn:visionflow:owl:class:technical-standards",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technical specifications and protocols developed by standards bodies like IEEE, IETF, ITU, and ISO that define how network devices communicate, ensuring interoperability, security, and performance across telecommunications and internet infrastructure.

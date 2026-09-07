@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Graph Neural Networks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,52 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:graph-neural-networks:6bec174064a7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fd18558e6717f863b00f5358bf13ac671d4f7b1cf425928fcb7249a3aa9b92e1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Message Passing]]",
-      "resolved": "urn:visionflow:linked:message-passing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graph Theory]]",
-      "resolved": "urn:visionflow:linked:graph-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning Domain]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A family of neural network architectures that operate directly on graph-structured data, computing node, edge or graph representations by exchanging information along edges.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Optimization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,57 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-optimization:84552cc06649",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:92478159d64bd2cc56a5cac596b7bf3a0b3eccf7a6d0b428bafa8f9897748f1f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Knowledge Distillation]]",
-      "resolved": "urn:visionflow:linked:knowledge-distillation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Serving]]",
-      "resolved": "urn:visionflow:linked:model-serving",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inference Serving]]",
-      "resolved": "urn:visionflow:linked:inference-serving",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Model Inference Engine]]",
-      "resolved": "urn:visionflow:linked:ai-model-inference-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Latency]]",
-      "resolved": "urn:visionflow:linked:latency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Deployment]]",
-      "resolved": "urn:visionflow:linked:model-deployment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Model optimisation is the set of techniques that reduce the size or computational cost of a trained model while preserving accuracy. It includes quantisation, pruning and distillation to make deployment more efficient.

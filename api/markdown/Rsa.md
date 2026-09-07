@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rsa
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -106,6 +102,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - RSA is a public-key cryptosystem, named after Rivest, Shamir and Adleman, whose security rests on the computational difficulty of factoring the product of two large prime numbers. It supports both encryption — where a message encrypted with a public key can only be decrypted with the corresponding private key — and digital signatures, where a private key signs data that anyone can verify with the public key. As one of the earliest and most widely deployed asymmetric algorithms, RSA underpins much of the legacy public-key infrastructure, though it is gradually being supplemented by faster elliptic-curve schemes and, prospectively, post-quantum alternatives.
   - [[Public Key Cryptography]] [[Digital Signature]] [[Encryption]] [[Key Generation]] [[Hash Function]]

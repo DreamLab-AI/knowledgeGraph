@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Symbolic Object Library
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -66,20 +61,44 @@ public: true
       }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"},
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
-      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"}
+      {
+        "@id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      },
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-asset-workflow", "label": "Digital Asset Workflow"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:digital-asset-workflow",
+        "label": "Digital Asset Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
     ]
   },
   "provenance": {
@@ -89,37 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:symbolic-object-library:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:264542fff6f99151a6d4adaf1ac9fafdd17ad9b5fc496db6fc6451e4b54340a4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A collection or repository of standardized 3D digital objects, assets, and components designed for use across metaverse platforms, including models, textures, animations, and interactive elements that can be shared and reused in virtual environments.

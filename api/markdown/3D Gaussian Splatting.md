@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-051-3d-gaussian-splatting
----
-
-# 3D Gaussian Splatting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,62 +198,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-d-gaussian-splatting:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DifferentiableRendering]]",
-      "resolved": "urn:visionflow:linked:differentiable-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PhotorealisticTelepresence]]",
-      "resolved": "urn:visionflow:linked:photorealistic-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-020-virtual-reality-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-050-neural-rendering-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-052-neural-radiance-fields]]",
-      "resolved": "urn:visionflow:linked:tele-052-neural-radiance-fields",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-053-volumetric-video-conferencing]]",
-      "resolved": "urn:visionflow:linked:tele-053-volumetric-video-conferencing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-060-instant-ngp]]",
-      "resolved": "urn:visionflow:linked:tele-060-instant-ngp",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "A neural rendering technique that represents 3D scenes as collections of millions of 3D Gaussian primitives with learnable positions, colours, opacities, and covariances, enabling photorealistic real-time rendering at 100+ frames per second through GPU-accelerated rasterisation, revolutionising telepresence and immersive collaboration with unprecedented visual fidelity."

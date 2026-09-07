@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Proof-of-Publication
-  - Proof Of Publication
----
-
-# Proof of Publication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

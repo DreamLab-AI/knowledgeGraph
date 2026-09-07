@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pegasus Spyware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Pegasus is commercial surveillance spyware developed by the NSO Group that covertly compromises smartphones, often via zero-click exploits requiring no user interaction. Once installed it can exfiltrate messages, calls, location, microphone, and camera data, granting near-total device control. It is a prominent case study in state-level digital surveillance and the human-rights risks of the commercial intrusion-software market.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DigitalIdentity
----
-
-# Digital Identity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -229,72 +222,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-identity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:72e524c6383fe447ea9c31555ea22d5b18c67dae0a2c2d8b224e751e58b2719a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Authentication]]",
-      "resolved": "urn:visionflow:linked:authentication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Authorization]]",
-      "resolved": "urn:visionflow:linked:authorization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Credential Storage]]",
-      "resolved": "urn:visionflow:linked:credential-storage",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Presence]]",
-      "resolved": "urn:visionflow:linked:digital-presence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Privacy Controls]]",
-      "resolved": "urn:visionflow:linked:privacy-controls",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity]]",
-      "resolved": "urn:visionflow:owl:class:identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:owl:class:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metaverse platforms.

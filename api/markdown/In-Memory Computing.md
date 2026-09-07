@@ -1,56 +1,112 @@
----
-public: true
----
-
-# In-Memory Computing
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:in-memory-computing", "@type":"Page", "title":"In-Memory Computing", "vc:slug":"in-memory-computing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:in-memory-computing",
+  "@type": "Page",
+  "title": "In-Memory Computing",
+  "vc:slug": "in-memory-computing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:in-memory-computing",
-  "@type":"Class",
-  "label":"In-Memory Computing",
-  "definition":"In-memory computing is an architectural approach that holds working data sets in a system's main memory (RAM) rather than on disk, eliminating storage-layer I/O from the critical path of data access and processing. By keeping data resident in fast volatile memory, it delivers order-of-magnitude reductions in latency and supports high-throughput analytics, transaction processing, and real-time decisioning. It typically pairs with techniques such as columnar layouts, distributed caching, and durability mechanisms (logging, replication, persistence) to combine speed with resilience.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"},{"@id":"urn:ngm:class:infra-computing-and-cloud","label":"Computing and Cloud"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:memory-hierarchy","label":"Memory Hierarchy"},
-      {"@id":"urn:ngm:class:persistent-storage","label":"Persistent Storage"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:in-memory-computing",
+  "@type": "Class",
+  "label": "In-Memory Computing",
+  "definition": "In-memory computing is an architectural approach that holds working data sets in a system's main memory (RAM) rather than on disk, eliminating storage-layer I/O from the critical path of data access and processing. By keeping data resident in fast volatile memory, it delivers order-of-magnitude reductions in latency and supports high-throughput analytics, transaction processing, and real-time decisioning. It typically pairs with techniques such as columnar layouts, distributed caching, and durability mechanisms (logging, replication, persistence) to combine speed with resilience.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:memory-hierarchy",
+        "label": "Memory Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:memory-hierarchy","label":"Memory Hierarchy"},
-      {"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:memory-hierarchy",
+        "label": "Memory Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:high-performance-computing","label":"High Performance Computing"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:real-time-processing","label":"Real-Time Processing"},
-      {"@id":"urn:ngm:class:stream-processing","label":"Stream Processing"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:database","label":"Database"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:database",
+        "label": "Database"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:data-storage","label":"Data Storage"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:persistent-storage","label":"Persistent Storage"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:latency","label":"Latency"},
-      {"@id":"urn:ngm:class:data-storage","label":"Data Storage"},
-      {"@id":"urn:ngm:class:real-time-processing","label":"Real-Time Processing"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

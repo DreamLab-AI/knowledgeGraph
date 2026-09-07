@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Archive
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -225,72 +220,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-archive:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:72df96252a0e4c2947fd1dee1e5430daf0f8a2e1182c257d7438ba29b6d85e61"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cultural Heritage Access]]",
-      "resolved": "urn:visionflow:linked:cultural-heritage-access",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Historical Research]]",
-      "resolved": "urn:visionflow:linked:historical-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Preservation]]",
-      "resolved": "urn:visionflow:linked:knowledge-preservation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Access Control]]",
-      "resolved": "urn:visionflow:owl:class:access-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Preservation]]",
-      "resolved": "urn:visionflow:owl:class:digital-preservation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metadata Standards]]",
-      "resolved": "urn:visionflow:owl:class:metadata-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Storage Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:storage-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A systematic collection and preservation system for digital assets, cultural artifacts, documents, and media using distributed storage, metadata standards, and immersive access technologies to ensure long-term accessibility and discovery within virtual environments and knowledge management systems.

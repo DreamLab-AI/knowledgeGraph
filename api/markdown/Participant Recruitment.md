@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Participant Recruitment
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:participant-recruitment", "@type":"Page", "title":"Participant Recruitment", "vc:slug":"participant-recruitment", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:participant-recruitment",
+  "@type": "Page",
+  "title": "Participant Recruitment",
+  "vc:slug": "participant-recruitment",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

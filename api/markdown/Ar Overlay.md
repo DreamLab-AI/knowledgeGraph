@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ar Overlay
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,72 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ar-overlay:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:93e1dfa6756cf66e03c051e17c61fe397a222a28a89502d2075bebe9f7bf58a2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Display Layer]]",
-      "resolved": "urn:visionflow:linked:digital-display-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Environmental Understanding]]",
-      "resolved": "urn:visionflow:linked:environmental-understanding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Information Augmentation]]",
-      "resolved": "urn:visionflow:linked:information-augmentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Spatial Annotation]]",
-      "resolved": "urn:visionflow:linked:spatial-annotation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Object Placement]]",
-      "resolved": "urn:visionflow:linked:virtual-object-placement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:owl:class:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Anchoring]]",
-      "resolved": "urn:visionflow:owl:class:spatial-anchoring",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.

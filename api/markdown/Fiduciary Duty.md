@@ -1,37 +1,106 @@
----
-public: true
----
-
-# Fiduciary Duty
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:fiduciary-duty", "@type":"Page", "title":"Fiduciary Duty", "vc:slug":"fiduciary-duty", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:fiduciary-duty",
+  "@type": "Page",
+  "title": "Fiduciary Duty",
+  "vc:slug": "fiduciary-duty",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:fiduciary-duty",
-  "@type":"Class",
-  "label":"Fiduciary Duty",
-  "definition":"A fiduciary duty is a legal and ethical obligation requiring one party, the fiduciary, to act in the best interests of another, the beneficiary, with loyalty, prudence, and good faith. It typically encompasses a duty of loyalty that prohibits self-dealing and conflicts of interest, and a duty of care that demands competent, diligent management of the beneficiary's affairs. Fiduciary duties arise in relationships such as those between directors and shareholders, trustees and beneficiaries, and asset managers and clients.",
-  "domain":"governance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:corporate-governance","label":"Corporate Governance"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:accountability","label":"Accountability"},{"@id":"urn:ngm:class:trust","label":"Trust"}],
-    "dependsOn":[{"@id":"urn:ngm:class:legal-framework","label":"Legal Framework"}],
-    "enables":[{"@id":"urn:ngm:class:investor-protection","label":"Investor Protection"}],
-    "supports":[{"@id":"urn:ngm:class:corporate-governance","label":"Corporate Governance"}],
-    "implements":[{"@id":"urn:ngm:class:ethics","label":"Ethics"}],
-    "uses":[{"@id":"urn:ngm:class:compliance","label":"Compliance"}],
-    "partOf":[{"@id":"urn:ngm:class:corporate-governance","label":"Corporate Governance"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "relatedTo":[{"@id":"urn:ngm:class:asset-management","label":"Asset Management"},{"@id":"urn:ngm:class:ethics","label":"Ethics"},{"@id":"urn:ngm:class:governance","label":"Governance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fiduciary-duty",
+  "@type": "Class",
+  "label": "Fiduciary Duty",
+  "definition": "A fiduciary duty is a legal and ethical obligation requiring one party, the fiduciary, to act in the best interests of another, the beneficiary, with loyalty, prudence, and good faith. It typically encompasses a duty of loyalty that prohibits self-dealing and conflicts of interest, and a duty of care that demands competent, diligent management of the beneficiary's affairs. Fiduciary duties arise in relationships such as those between directors and shareholders, trustees and beneficiaries, and asset managers and clients.",
+  "domain": "governance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ethics",
+        "label": "Ethics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:ethics",
+        "label": "Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

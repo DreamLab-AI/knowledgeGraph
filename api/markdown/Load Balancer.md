@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Load Balancer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,47 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:load-balancer:e1977f0263b9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f47577df72766e2f59542c4ea99a1c6c4e0737e4e8bf5c86ab34b1db5db8b612"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Architecture]]",
-      "resolved": "urn:visionflow:linked:network-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scalability]]",
-      "resolved": "urn:visionflow:linked:scalability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[High Availability]]",
-      "resolved": "urn:visionflow:linked:high-availability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Microservices]]",
-      "resolved": "urn:visionflow:linked:microservices",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A component that distributes incoming network or application traffic across multiple servers to improve throughput, reliability and resource utilisation.

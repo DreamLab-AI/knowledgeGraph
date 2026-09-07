@@ -1,59 +1,110 @@
----
-public: true
----
-
-# Regression Testing
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:regression-testing", "@type":"Page", "title":"Regression Testing", "vc:slug":"regression-testing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:regression-testing",
+  "@type": "Page",
+  "title": "Regression Testing",
+  "vc:slug": "regression-testing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:regression-testing",
-  "@type":"Class",
-  "label":"Regression Testing",
-  "definition":"Regression testing is the practice of re-executing previously passing tests after a code change to confirm that existing behaviour has not been broken. It guards against regressions introduced by new features, bug fixes or refactoring by maintaining a suite of repeatable checks that are run automatically as part of integration and delivery pipelines. The discipline trades upfront test authoring and maintenance for sustained confidence in evolving systems.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:software-testing","label":"Software Testing"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:unit-testing","label":"Unit Testing"},
-      {"@id":"urn:ngm:class:integration-testing","label":"Integration Testing"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:regression-testing",
+  "@type": "Class",
+  "label": "Regression Testing",
+  "definition": "Regression testing is the practice of re-executing previously passing tests after a code change to confirm that existing behaviour has not been broken. It guards against regressions introduced by new features, bug fixes or refactoring by maintaining a suite of repeatable checks that are run automatically as part of integration and delivery pipelines. The discipline trades upfront test authoring and maintenance for sustained confidence in evolving systems.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-testing",
+      "label": "Software Testing"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      },
+      {
+        "@id": "urn:ngm:class:integration-testing",
+        "label": "Integration Testing"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:quality-assurance","label":"Quality Assurance"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:test-automation","label":"Test Automation"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"},
-      {"@id":"urn:ngm:class:continuous-delivery","label":"Continuous Delivery"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:quality-assurance","label":"Quality Assurance"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:unit-testing","label":"Unit Testing"},
-      {"@id":"urn:ngm:class:test-automation","label":"Test Automation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      },
+      {
+        "@id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:penetration-testing","label":"Penetration Testing"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:version-control","label":"Version Control"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"},
-      {"@id":"urn:ngm:class:observability","label":"Observability"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

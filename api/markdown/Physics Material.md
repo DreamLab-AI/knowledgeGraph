@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Physics Material
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,15 +75,30 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "provenance": {
@@ -98,57 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:physics-material:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:df544180e70bf586a4c9488dc00fcb05daeb0809658a8b69bcd976185fce9480"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Material System]]",
-      "resolved": "urn:visionflow:linked:material-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Collision Detection]]",
-      "resolved": "urn:visionflow:owl:class:collision-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physically-Based Rendering]]",
-      "resolved": "urn:visionflow:owl:class:physically-based-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physics Simulation]]",
-      "resolved": "urn:visionflow:owl:class:physics-simulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rigid Body Dynamics]]",
-      "resolved": "urn:visionflow:owl:class:rigid-body-dynamics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A data structure encoding surface interaction properties — friction coefficients, coefficient of restitution, density, and drag — that govern object behaviour within a physics simulation engine. Physics materials are distinct from visual rendering materials and are consumed by simulation solvers to produce physically plausible contact responses for metaverse avatars, props, and environments.

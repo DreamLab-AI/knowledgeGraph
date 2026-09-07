@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Industrial Inspection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,4 +167,3 @@ public: true
   - The strategic significance of automated industrial inspection is substantial. In semiconductor fabrication, wafer inspection tools (KLA-Tencor, Applied Materials) are a multi-billion-dollar market that directly gates chip yield — a 0.1% yield improvement on a leading-edge fab translates to hundreds of millions of dollars of recovered revenue annually. In automotive, battery cell inspection for EV production is a critical quality gate, with vision systems checking electrode coating uniformity, tab welding quality, and cell casing integrity at rates of hundreds of cells per minute. Infrastructure inspection — turbine blade inspection by drone, pipeline corrosion assessment, bridge deck condition mapping — extends the domain beyond factory settings.
 
   - In 2024-2025, several trends are reshaping industrial inspection practice. Foundation model approaches (adapting large vision-language models such as GPT-4V or fine-tuned SAM for defect segmentation) are reducing the labelled-data burden for deploying inspection on new product lines. Digital twin integration allows inspection data to update the virtual representation of a component or asset, enabling lifecycle-long quality tracking. Regulatory pressure — particularly in aerospace (EASA/FAA digital transformation) and medical device manufacturing (FDA's Quality Management System Regulation) — is driving inspection data traceability requirements that mandate machine-readable audit trails for every inspection decision.
-

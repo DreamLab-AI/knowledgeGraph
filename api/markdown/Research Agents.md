@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Research Agents
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Research agents are autonomous LLM-based systems that plan and execute multi-step information-gathering tasks, issuing searches, reading sources, and synthesising cited findings into reports. They combine tool use, memory, and reasoning to pursue an objective across many web or document queries with minimal supervision. They represent a leading application of agentic AI for knowledge work.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:context-engineering", "label": "Context Engineering"},
-      {"@id": "urn:ngm:class:agentic-internet", "label": "Agentic Internet"}
+      {
+        "@id": "urn:ngm:class:context-engineering",
+        "label": "Context Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
     ]
   },
   "quality": 0.72

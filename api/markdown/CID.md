@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CID
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "A Content Identifier (CID) is a self-describing, cryptographic label used in the InterPlanetary File System (IPFS) and related protocols to uniquely and permanently address a piece of content based on its cryptographic hash rather than its location. CIDs encode the hash function used, the hash digest, and the codec describing the data format, enabling content-addressed storage where identical content always produces the same identifier regardless of where it is stored. CIDs are the primary addressing primitive of the IPLD (InterPlanetary Linked Data) ecosystem.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:content-identifier", "label": "Content Identifier"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:content-identifier",
+      "label": "Content Identifier"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:multihash", "label": "Multihash"},
-      {"@id": "urn:ngm:class:ipld", "label": "IPLD"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "@id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"},
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"}
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"},
-      {"@id": "urn:ngm:class:merkle-dag", "label": "Merkle DAG"}
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - Within the [[IPFS]] ecosystem, CIDs are resolved by querying the [[Distributed Hash Table]] (Kademlia-based) to find providers, then fetching and verifying the content block against the CID's embedded hash. Filecoin uses CIDs to reference sealed sectors and piece commitments in its storage deals. NFT platforms (OpenSea, Foundation, Zora) rely on IPFS CIDs to store image assets and JSON metadata, though pinning reliability remains a community concern addressed by services such as Pinata, nft.storage, and web3.storage.
 
   - As of 2024–2025, CIDs underpin a growing body of decentralised infrastructure beyond simple file storage. The Interplanetary Virtual Machine (IPVM) uses CIDs to address deterministic computation results, enabling verifiable, content-addressed compute. IPLD schemas and ADLs (Advanced Data Layouts) enable structured data querying across CID-linked graphs, moving toward a decentralised knowledge graph vision. [[Decentralized Storage]] networks continue maturing, with Filecoin and Arweave both converging on CID-compatible addressing schemes.
-

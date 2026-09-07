@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cvss
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -117,6 +113,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - The Common Vulnerability Scoring System (CVSS) is an open, standardised framework for rating the severity of software vulnerabilities on a 0-10 scale. It decomposes severity into Base, Temporal and Environmental metric groups capturing intrinsic exploitability, real-world threat conditions and organisation-specific impact. CVSS provides a vendor-neutral common language so defenders can compare and prioritise remediation consistently across heterogeneous products.
   - Related core concepts: [[Vulnerability Management]] [[Vulnerability]] [[Risk Assessment]] [[Cybersecurity]] [[Threat Model]]

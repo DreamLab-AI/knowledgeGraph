@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Firmware
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:firmware", "@type":"Page", "title":"Firmware", "vc:slug":"firmware", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:firmware",
+  "@type": "Page",
+  "title": "Firmware",
+  "vc:slug": "firmware",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

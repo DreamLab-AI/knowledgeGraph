@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Procedural Animation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,68 +46,121 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:behaviour-tree", "label": "Behaviour Tree"},
-      {"@id": "urn:ngm:class:skeletal-mesh", "label": "Skeletal Mesh"},
-      {"@id": "urn:ngm:class:noise-function", "label": "Noise Function"}
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-mesh",
+        "label": "Skeletal Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:noise-function",
+        "label": "Noise Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:avatar-behavior", "label": "Avatar Behavior"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:crowd-simulation", "label": "Crowd Simulation"},
-      {"@id": "urn:ngm:class:non-player-character", "label": "Non Player Character"}
+      {
+        "@id": "urn:ngm:class:avatar-behavior",
+        "label": "Avatar Behavior"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:crowd-simulation",
+        "label": "Crowd Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:non-player-character",
+        "label": "Non Player Character"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"}
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:keyframe-animation", "label": "Keyframe Animation"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"},
-      {"@id": "urn:ngm:class:ragdoll-physics", "label": "Ragdoll Physics"},
-      {"@id": "urn:ngm:class:secondary-motion", "label": "Secondary Motion"},
-      {"@id": "urn:ngm:class:motion-matching", "label": "Motion Matching"}
+      {
+        "@id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:ragdoll-physics",
+        "label": "Ragdoll Physics"
+      },
+      {
+        "@id": "urn:ngm:class:secondary-motion",
+        "label": "Secondary Motion"
+      },
+      {
+        "@id": "urn:ngm:class:motion-matching",
+        "label": "Motion Matching"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:robot-locomotion", "label": "Robot Locomotion"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-locomotion",
+        "label": "Robot Locomotion"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:generative-animation", "label": "Generative Animation"},
-    {"@id": "urn:ngm:class:algorithmic-animation", "label": "Algorithmic Animation"}
+    {
+      "@id": "urn:ngm:class:generative-animation",
+      "label": "Generative Animation"
+    },
+    {
+      "@id": "urn:ngm:class:algorithmic-animation",
+      "label": "Algorithmic Animation"
+    }
   ],
   "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:procedural-animation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7f20ec896e6ce061320697cd0e1495b56c38aa6c50f7d6d198fe051dea40ba7c"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intelligent System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:intelligent-system:d1c9f9614a01",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ac6c5604862da5892db318b885e5da3d5b393feb558ae9916f2c9e718786f175"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Perception]]",
-      "resolved": "urn:visionflow:linked:robot-perception",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://plato.stanford.edu/entries/artificial-intelligence/]]",
-      "resolved": "urn:visionflow:linked:https-plato-stanford-edu-entries-artificial-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Intelligent_agent]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-intelligent-agent",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An intelligent system is a computational system that perceives its environment, reasons over data and takes actions to achieve defined objectives.

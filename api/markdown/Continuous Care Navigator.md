@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Continuous Care Navigator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "continuous-care-navigator",
   "title": "Continuous Care Navigator",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI-Enabled Healthcare", "Healthcare Employment", "Job Projection"],
+  "vc:outboundWikilinks": [
+    "AI-Enabled Healthcare",
+    "Healthcare Employment",
+    "Job Projection"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,31 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:healthcare", "label": "Healthcare"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:healthcare",
+      "label": "Healthcare"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-enabled-healthcare", "label": "AI-Enabled Healthcare"}, {"@id": "urn:ngm:class:healthcare-employment", "label": "Healthcare Employment"}, {"@id": "urn:ngm:class:continuous-preventative-healthcare", "label": "Continuous Preventative Healthcare"}, {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-enabled-healthcare",
+        "label": "AI-Enabled Healthcare"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-employment",
+        "label": "Healthcare Employment"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-preventative-healthcare",
+        "label": "Continuous Preventative Healthcare"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",
@@ -39,6 +60,6 @@ public: true
 ```
 
 - ### Overview
-  - **[Emerging signal]** The host estimates that a 'continuous care navigator' role in an AI-enabled healthcare system could support between 276,000 and 1.2 million jobs in the US, based on enrollment scenarios of 40 million to 120 million patients and caseloads of 150 to 100 patients per navigator. *(Source: AI Daily Brief Host, via AI Daily Brief, 2026-08-24)*
+  - **[Emerging signal]** The host estimates that a 'continuous care navigator' role in an AI-enabled healthcare system [private] support between 276,000 and 1.2 million jobs in the US, based on enrollment scenarios of 40 million to 120 million patients and caseloads of 150 to 100 patients per navigator. *(Source: AI Daily Brief Host, via AI Daily Brief, 2026-08-24)*
 - ### Relationships
 - ### Provenance

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Flexible Manufacturing
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:flexible-manufacturing", "@type":"Page", "title":"Flexible Manufacturing", "vc:slug":"flexible-manufacturing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:flexible-manufacturing",
+  "@type": "Page",
+  "title": "Flexible Manufacturing",
+  "vc:slug": "flexible-manufacturing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

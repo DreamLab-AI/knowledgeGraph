@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Visual Question Answering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Visual question answering (VQA) is a multimodal AI task in which a system produces a natural-language answer to a free-form question posed about an image or scene. It requires jointly grounding linguistic semantics in visual content, combining object recognition, spatial reasoning, and language understanding. VQA is a benchmark capability for vision-language models and a building block for assistive and augmented-reality interfaces.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:vision-language-model", "label": "Vision Language Model"}, {"@id": "urn:ngm:class:ar-frame", "label": "AR Frame"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vision-language-model",
+        "label": "Vision Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Terminal Coding Agents
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,47 +7,170 @@ public: true
   "title": "Terminal Coding Agents",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
-    {"@id": "urn:visionflow:linked:ide-coding-agents", "vc:label": "IDE Coding Agents"},
-    {"@id": "urn:visionflow:linked:harness-configuration-packs", "vc:label": "Harness Configuration Packs"},
-    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
-    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:agent-loop", "vc:label": "Agent Loop"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:sandboxed-code-execution", "vc:label": "Sandboxed Code Execution"},
-    {"@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:software-engineering-automation", "vc:label": "Software Engineering Automation"},
-    {"@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain of Thought"},
-    {"@id": "urn:visionflow:linked:react-pattern", "vc:label": "ReAct Pattern"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:progressive-disclosure-harnesses", "vc:label": "Progressive Disclosure Harnesses"},
-    {"@id": "urn:visionflow:linked:agent-development-sdks", "vc:label": "Agent Development SDKs"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:code-execution", "vc:label": "Code Execution"},
-    {"@id": "urn:visionflow:linked:file-system-access", "vc:label": "File System Access"},
-    {"@id": "urn:visionflow:linked:git", "vc:label": "Git"},
-    {"@id": "urn:visionflow:linked:process-isolation", "vc:label": "Process Isolation"},
-    {"@id": "urn:visionflow:linked:observability", "vc:label": "Observability"},
-    {"@id": "urn:visionflow:linked:state-persistence", "vc:label": "State Persistence"},
-    {"@id": "urn:visionflow:linked:workflow-orchestration", "vc:label": "Workflow Orchestration"},
-    {"@id": "urn:visionflow:linked:task-automation", "vc:label": "Task Automation"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:personal-agent-runtimes", "vc:label": "Personal Agent Runtimes"},
-    {"@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems"},
-    {"@id": "urn:visionflow:linked:open-source", "vc:label": "Open Source"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:compute-layer", "vc:label": "AgentLayer"},
-    {"@id": "urn:visionflow:owl:class:ai-research-area", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:ide-coding-agents",
+      "vc:label": "IDE Coding Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:harness-configuration-packs",
+      "vc:label": "Harness Configuration Packs"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-evaluation-benchmarks",
+      "vc:label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks",
+      "vc:label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-loop",
+      "vc:label": "Agent Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandboxed-code-execution",
+      "vc:label": "Sandboxed Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-engineering-automation",
+      "vc:label": "Software Engineering Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:react-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:progressive-disclosure-harnesses",
+      "vc:label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-development-sdks",
+      "vc:label": "Agent Development SDKs"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-execution",
+      "vc:label": "Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:file-system-access",
+      "vc:label": "File System Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:git",
+      "vc:label": "Git"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-isolation",
+      "vc:label": "Process Isolation"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability",
+      "vc:label": "Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-persistence",
+      "vc:label": "State Persistence"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-orchestration",
+      "vc:label": "Workflow Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-automation",
+      "vc:label": "Task Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:personal-agent-runtimes",
+      "vc:label": "Personal Agent Runtimes"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source",
+      "vc:label": "Open Source"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "AgentLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-research-area",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -75,27 +193,72 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ide-coding-agents", "label": "IDE Coding Agents"},
-      {"@id": "urn:ngm:class:harness-configuration-packs", "label": "Harness Configuration Packs"},
-      {"@id": "urn:ngm:class:agent-execution-sandboxes", "label": "Agent Execution Sandboxes"},
-      {"@id": "urn:ngm:class:multi-agent-orchestration-frameworks", "label": "Multi-Agent Orchestration Frameworks"},
-      {"@id": "urn:ngm:class:agent-evaluation-benchmarks", "label": "Agent Evaluation Benchmarks"}
+      {
+        "@id": "urn:ngm:class:ide-coding-agents",
+        "label": "IDE Coding Agents"
+      },
+      {
+        "@id": "urn:ngm:class:harness-configuration-packs",
+        "label": "Harness Configuration Packs"
+      },
+      {
+        "@id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agent-evaluation-benchmarks",
+        "label": "Agent Evaluation Benchmarks"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:agent-loop", "label": "Agent Loop"},
-      {"@id": "urn:ngm:class:sandboxed-code-execution", "label": "Sandboxed Code Execution"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxed-code-execution",
+        "label": "Sandboxed Code Execution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:software-engineering-automation", "label": "Software Engineering Automation"},
-      {"@id": "urn:ngm:class:task-automation", "label": "Task Automation"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
+      {
+        "@id": "urn:ngm:class:software-engineering-automation",
+        "label": "Software Engineering Automation"
+      },
+      {
+        "@id": "urn:ngm:class:task-automation",
+        "label": "Task Automation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:harness-configuration-packs", "label": "Harness Configuration Packs"}
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:harness-configuration-packs",
+        "label": "Harness Configuration Packs"
+      }
     ]
   },
   "quality": 0.91,
@@ -103,66 +266,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "FullEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:terminal-coding-agents:b5e2a8f1c3d9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:terminal-coding-agents"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Agent Harness]]", "resolved": "urn:visionflow:linked:agent-harness", "kind": "ResolvedLink"},
-    {"raw": "[[IDE Coding Agents]]", "resolved": "urn:visionflow:linked:ide-coding-agents", "kind": "ResolvedLink"},
-    {"raw": "[[Harness Configuration Packs]]", "resolved": "urn:visionflow:linked:harness-configuration-packs", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Execution Sandboxes]]", "resolved": "urn:visionflow:linked:agent-execution-sandboxes", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Evaluation Benchmarks]]", "resolved": "urn:visionflow:linked:agent-evaluation-benchmarks", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Agent Orchestration Frameworks]]", "resolved": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Tool Use]]", "resolved": "urn:visionflow:linked:tool-use", "kind": "StubLink"},
-    {"raw": "[[Function Calling]]", "resolved": "urn:visionflow:linked:function-calling", "kind": "StubLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
-    {"raw": "[[Agent Loop]]", "resolved": "urn:visionflow:linked:agent-loop", "kind": "StubLink"},
-    {"raw": "[[Human-in-the-Loop]]", "resolved": "urn:visionflow:linked:human-in-the-loop", "kind": "StubLink"},
-    {"raw": "[[Sandboxed Code Execution]]", "resolved": "urn:visionflow:linked:sandboxed-code-execution", "kind": "StubLink"},
-    {"raw": "[[Agent Memory]]", "resolved": "urn:visionflow:linked:agent-memory", "kind": "StubLink"},
-    {"raw": "[[Context Window]]", "resolved": "urn:visionflow:linked:context-window", "kind": "StubLink"},
-    {"raw": "[[Software Engineering Automation]]", "resolved": "urn:visionflow:linked:software-engineering-automation", "kind": "StubLink"},
-    {"raw": "[[Prompt Injection]]", "resolved": "urn:visionflow:linked:prompt-injection", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "StubLink"},
-    {"raw": "[[Chain of Thought]]", "resolved": "urn:visionflow:linked:chain-of-thought", "kind": "StubLink"},
-    {"raw": "[[ReAct Pattern]]", "resolved": "urn:visionflow:linked:react-pattern", "kind": "StubLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "StubLink"},
-    {"raw": "[[Progressive Disclosure Harnesses]]", "resolved": "urn:visionflow:linked:progressive-disclosure-harnesses", "kind": "StubLink"},
-    {"raw": "[[Agent Development SDKs]]", "resolved": "urn:visionflow:linked:agent-development-sdks", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[Autonomous Agent]]", "resolved": "urn:visionflow:linked:autonomous-agent", "kind": "StubLink"},
-    {"raw": "[[Code Execution]]", "resolved": "urn:visionflow:linked:code-execution", "kind": "StubLink"},
-    {"raw": "[[File System Access]]", "resolved": "urn:visionflow:linked:file-system-access", "kind": "StubLink"},
-    {"raw": "[[Git]]", "resolved": "urn:visionflow:linked:git", "kind": "StubLink"},
-    {"raw": "[[Process Isolation]]", "resolved": "urn:visionflow:linked:process-isolation", "kind": "StubLink"},
-    {"raw": "[[Observability]]", "resolved": "urn:visionflow:linked:observability", "kind": "StubLink"},
-    {"raw": "[[State Persistence]]", "resolved": "urn:visionflow:linked:state-persistence", "kind": "StubLink"},
-    {"raw": "[[Workflow Orchestration]]", "resolved": "urn:visionflow:linked:workflow-orchestration", "kind": "StubLink"},
-    {"raw": "[[Task Automation]]", "resolved": "urn:visionflow:linked:task-automation", "kind": "StubLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "StubLink"},
-    {"raw": "[[Personal Agent Runtimes]]", "resolved": "urn:visionflow:linked:personal-agent-runtimes", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent Systems]]", "resolved": "urn:visionflow:linked:multi-agent-systems", "kind": "StubLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-technique", "kind": "ResolvedLink"},
-    {"raw": "[[AgentLayer]]", "resolved": "urn:visionflow:owl:class:compute-layer", "kind": "ResolvedLink"},
-    {"raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:owl:class:ai-research-area", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -283,12 +386,12 @@ public: true
     - A Terminal Coding Agent can be characterised as a tuple TCA = ⟨M, T_code, G_dev, C_repo, S_git, O_test⟩ where M is the [[Large Language Models]] controller, T_code is the coding-specific [[Tool Use|tool set]] (read_file, write_file, apply_diff, run_shell, git_commit, run_tests, search_codebase), G_dev is the developer-calibrated approval gate policy, C_repo is the repository-context composition policy (repo map, CLAUDE.md, active file contents), S_git is the [[State Persistence|git-based state persistence]] mechanism treating commits as checkpoints, and O_test is the test-suite [[Observability|observation]] interface that provides the primary success signal for the [[Agent Loop]]. The terminal interface T_term connects developer goal specification (natural language, keyboard) to the agent's planning process, and agent progress observation (streaming output, diff display) back to the developer, providing the bidirectional human-agent communication channel that distinguishes interactive terminal agents from fully autonomous headless CI/CD agents. This formalism highlights the distinction from the general-purpose [[Agent Harness]]: the coding-specific tool set T_code, the git-based persistence S_git, and the test-driven observation O_test are specialisations that constrain the agent to the software engineering task domain while enabling higher-quality performance within that domain than a general-purpose harness achieves.
   - ## About
     - Terminal coding agents represent the convergence of three decades of command-line tooling culture with the reasoning and code-generation capabilities of frontier language models, producing a category of autonomous software engineering agent that operates entirely within the text-based terminal environment that experienced developers consider their most stable and expressive workspace. The intellectual precursor is the Unix philosophy of composable text-processing tools: shell pipelines, make, grep, git — each a single-purpose text-in/text-out tool, composable into arbitrarily complex workflows. Terminal coding agents invert this composition: rather than the developer composing tools, the agent autonomously selects and sequences them, with the terminal providing both the interface for the developer to specify goals and observe progress, and the execution environment where tool calls have real effects. This inversion is not cosmetic but architectural: the developer's role shifts from tool orchestrator (selecting and chaining tools) to goal specifier (defining success criteria and constraints), with the agent handling all intermediate decisions about which tools to invoke in what order to achieve the goal. This shift aligns the developer's attention with highest-value decision-making (what to build, whether it meets requirements, architectural tradeoffs) rather than implementation mechanics (which function to call, what parameter to pass, how to handle the edge case).
-    - The category crystallised around 2022–2023 with the emergence of Aider (Paul Gauthier, 2023), the first widely adopted terminal tool to implement a genuine [[Agent Loop]]: Aider connected GPT-4 to git-aware file editing and codebase mapping via a repository map computed with tree-sitter symbol extraction and PageRank-weighted file selection, enabling multi-file edits with automatic commit messages, establishing the fundamental architecture that subsequent tools have refined rather than reinvented. The repository map innovation was particularly significant: by compressing the codebase's structural information into a token-budget-respecting index of symbol relationships, Aider enabled the model to reason about large codebases (100,000+ lines of code) without exhaustively loading all source files into the [[Context Window]], solving the context budget problem that made naïve approaches to codebase-aware generation impractical. Claude Code (Anthropic, October 2024) pivoted the category toward explicitly autonomous operation: rather than presenting diffs for developer approval before applying (Aider's original mode), Claude Code reads CLAUDE.md project context, plans a multi-step execution trajectory, and applies changes directly — asking for approval only at configurable gate points. Claude Code's autonomous mode proved controversial in initial deployments but rapidly became the industry-standard operating mode as teams calibrated approval gates to their risk tolerance and built confidence in specific action categories. By February 2026, Claude Code was authoring approximately 4% of all public GitHub commits (~135,000 per day), with a single-day peak of 326,000 commits on March 15, 2026 — a metric that captures the category's transition from developer tool to autonomous production participant.
+    - The category crystallised around 2022–2023 with the emergence of Aider (Paul Gauthier, 2023), the first widely adopted terminal tool to implement a genuine [[Agent Loop]]: Aider connected GPT-4 to git-aware file editing and codebase mapping via a repository map computed with tree-sitter symbol extraction and PageRank-weighted file selection, enabling multi-file edits with automatic commit messages, establishing the fundamental architecture that subsequent tools have refined rather than reinvented. The repository map innovation was particularly significant: by compressing the codebase's structural information into a token-budget-respecting [private] of symbol relationships, Aider enabled the model to reason about large codebases (100,000+ lines of code) without exhaustively loading all source files into the [[Context Window]], solving the context budget problem that made naïve approaches to codebase-aware generation impractical. Claude Code (Anthropic, October 2024) pivoted the category toward explicitly autonomous operation: rather than presenting diffs for developer approval before applying (Aider's original mode), Claude Code reads CLAUDE.md project context, plans a multi-step execution trajectory, and applies changes directly — asking for approval only at configurable gate points. Claude Code's autonomous mode proved controversial in initial deployments but rapidly became the industry-standard operating mode as teams calibrated approval gates to their risk tolerance and built confidence in specific action categories. By February 2026, Claude Code was authoring approximately 4% of all public GitHub commits (~135,000 per day), with a single-day peak of 326,000 commits on March 15, 2026 — a metric that captures the category's transition from developer tool to autonomous production participant.
     - The open-source parallel to Claude Code's commercial trajectory is OpenCode (sst/opencode, launched June 2025), which crossed 150,000 GitHub stars and ~6.5 million monthly active developers by mid-2026 without a marketing team or subscription product, establishing itself as the de facto open-source choice through developer word-of-mouth. OpenCode's defining design choice — provider independence through support for 75+ [[Large Language Models|LLM]] providers via Models.dev — directly addresses the vendor-lock-in concern that prevents enterprise adoption of proprietary platform agents, and is fully compatible with CLAUDE.md project configuration files. This cross-agent compatibility is significant: an enterprise can adopt Claude Code for its highest-value production tasks (leveraging Opus 4.8's frontier performance) while using OpenCode backed by a local Llama model for routine tasks on codebases with data residency restrictions, with identical [[Harness Configuration Packs]] across both deployments. Goose (Block / Square, Apache 2.0) extends the open-source terminal agent category with native [[Model Context Protocol]] integration: any tool server implementing the MCP specification can be plugged into Goose without framework-specific adapter code, establishing MCP extensibility as a defining feature of second-generation terminal agents. gptme provides a minimalist, self-modifying agent architecture with git-backed memory via gptme-agent-template, enabling long-lived agents that accumulate project knowledge through versioned memory files rather than stateless session restarts — the most direct open-source implementation of the "self-evolving agent" architecture surveyed in arXiv:2508.07407.
     - Security and sandboxing have emerged as the most critical engineering challenges for production terminal coding agent deployments, precisely because the terminal's expressive power — direct filesystem access, arbitrary shell command execution, network calls — is simultaneously the source of its productivity advantage and its primary attack surface. A terminal coding agent operating autonomously in a developer's home directory or a CI/CD pipeline has essentially unlimited capability to modify code, exfiltrate credentials, install packages, or — in the case of a compromised tool output exploiting [[Prompt Injection]] — execute arbitrary attacker-controlled commands. Three sandboxing architectures have emerged in response: process-level isolation (running the agent's shell tools in a child process with restricted capabilities and filtered environment variables, providing lightweight isolation suitable for trusted local development); container isolation (running the entire agent session in a disposable Docker container or [[Agent Execution Sandboxes|E2B]] cloud sandbox, providing filesystem and network isolation with full VM-level cleanup, suitable for CI/CD pipeline deployments); and permission-based approval gating ([[Human-in-the-Loop]] confirmation requirements calibrated to action risk: read operations auto-approved, git commits confirm-once, shell commands confirm-always, network calls blocked by default, suitable for interactive development where human oversight is the primary safety mechanism). Pi (pi.dev) exemplifies the security-first terminal agent positioning, running in a sandboxed environment with granular filesystem permission rules where every [[Tool Use]] must be explicitly approved unless configured as trusted. Codex CLI (OpenAI) implements three configurable autonomy modes — suggest (all changes require approval), auto-edit (file edits auto-approved, shell commands require approval), and full-auto (all operations auto-approved within a Docker sandbox) — that allow teams to dial autonomy up incrementally as they build confidence. The community's emerging consensus is that container isolation plus approval gating are complementary rather than alternative: the container provides blast-radius containment for cases where the approval gate is miscalibrated or bypassed, while the approval gate provides human visibility into agent intentions before irreversible actions are taken.
   - ## Components / Architecture
     - **[[Agent Loop]] with Plan-Code-Test-Fix Cycle** — the core execution engine that repeatedly calls the [[Large Language Models]], parses its tool-call outputs (file write, shell exec, search, diff apply), dispatches calls to appropriate handlers, appends observations (file content, command output, test results) back to the model context, and iterates until completion. Unlike general-purpose agent harnesses, the coding-specific [[Agent Loop]] is tuned for the software engineering task structure: it recognises test failure as a signal to revise code rather than abandon the task, it commits successful work to [[Git]] incrementally to preserve a reversible checkpoint, and it applies [[Chain of Thought]] scratchpad reasoning explicitly about failing test cases before attempting a fix. The loop's exit conditions are carefully designed: completion is declared when all specified tests pass and any code-quality checks (linting, type-checking, formatting) are satisfied, not merely when the model generates a "done" assertion. This postcondition verification prevents the common failure mode of agents declaring completion while leaving failing tests or broken type signatures that only manifest when the code is run.
-    - **Codebase Context Engine** — maps the repository structure into a compressed representation suitable for injection into the [[Context Window]] at the start of a session. Aider's "repository map" (introduced 2023) uses `tree-sitter` to parse all source files and extract symbol definitions (function signatures, class names, import declarations) into a 2,000–8,000 token index that gives the agent immediate awareness of the full codebase structure without exhausting the context budget on full file contents. Claude Code loads CLAUDE.md project instructions, repository structure, and git status at session start. OpenCode uses the same CLAUDE.md format, ensuring project configuration is portable across agent implementations. This constitutes the primary form of [[Harness Configuration Packs]] for terminal agents: project memory files that persist architectural decisions and coding conventions across sessions.
+    - **Codebase Context Engine** — maps the repository structure into a compressed representation suitable for injection into the [[Context Window]] at the start of a session. Aider's "repository map" (introduced 2023) uses `tree-sitter` to parse all source files and extract symbol definitions (function signatures, class names, import declarations) into a 2,000–8,000 token [private] that gives the agent immediate awareness of the full codebase structure without exhausting the context budget on full file contents. Claude Code loads CLAUDE.md project instructions, repository structure, and git status at session start. OpenCode uses the same CLAUDE.md format, ensuring project configuration is portable across agent implementations. This constitutes the primary form of [[Harness Configuration Packs]] for terminal agents: project memory files that persist architectural decisions and coding conventions across sessions.
     - **Tool Execution Layer** — dispatches the model's tool calls to concrete implementations. Standard tool set for coding agents: `read_file(path)`, `write_file(path, content)`, `apply_diff(path, diff)`, `run_shell(command, timeout)`, `search_files(pattern, directory)`, `git_commit(message)`, `run_tests(test_path)`, `browse_url(url)`. Security-critical tools (`run_shell`, `write_file` to sensitive paths, network access) are routed through the approval gate system before execution. MCP-extensible agents (Goose, gptme, OpenCode) expose this tool layer through [[Model Context Protocol]] servers, enabling any MCP-compliant tool — including proprietary enterprise connectors, internal API wrappers, and specialised code analysis tools — to be registered and invoked without modifications to the agent core.
     - **Approval Gate System** — the configurable [[Human-in-the-Loop]] layer that intercepts tool calls before execution and evaluates them against risk policies. At the category level, all leading terminal agents implement some form of gate system, though implementations vary significantly: Aider originally required diff-review approval for every file edit; Claude Code implements `/approve` commands at configurable granularity; Codex uses explicit autonomy-level flags; Pi requires whitelisted trust rules for each tool. The 2026 consensus best practice is: auto-approve read-only operations, confirm-once for first invocation of potentially destructive operation categories in a session, and confirm-always for network operations to production endpoints and credential-touching commands. Gate calibration — too strict means slower than manual — is an active engineering concern documented in the O'Reilly harness engineering guide and Microsoft's BUILD 2026 agent harness materials.
     - **Project Memory and [[Harness Configuration Packs]]** — the persistent context layer that carries project-specific knowledge across sessions without consuming the live [[Context Window]]. CLAUDE.md (Anthropic convention, adopted by OpenCode and compatible agents) is a Markdown file at the repository root that encodes: architectural conventions ("this project uses React functional components with TypeScript, no class components"), testing requirements ("all new functions must have Jest unit tests covering edge cases"), deployment constraints ("never modify `./deploy/production.yml` without explicit confirmation"), and workflow patterns ("run `npm run lint` before every commit"). CLAUDE.md is read at session start and synthesised into the agent's system prompt, providing persistent behavioural shaping equivalent to onboarding a new developer to the project's conventions — without repeating the onboarding at every session.
@@ -313,7 +416,7 @@ public: true
     - **Terminal-Bench** — a terminal-specific benchmark that evaluates harness quality alongside model capability, covering terminal-native tasks (grep-based navigation, make-based builds, shell debugging) that complement SWE-bench's repository-patch focus.
     - **Provider independence** — the design philosophy (exemplified by OpenCode and Aider) of supporting multiple [[Large Language Models|LLM]] providers through a unified abstraction layer, enabling users to switch between cloud APIs and local models (Ollama, llama.cpp) without changing the agent harness configuration.
   - ## Academic Context
-    - Terminal coding agents sit at the intersection of software engineering automation research, human-computer interaction (specifically the long history of command-line interface design), and the emerging subfield of LLM-based autonomous agents. The foundational software engineering automation literature — from DeepMind's AlphaCode (2022), through Copilot's large-scale pair-programming study (Imai 2022), to the SWE-bench benchmark (Jimenez et al. 2024) — established that language models could produce syntactically and semantically correct code at scale, but left open the question of how to close the loop between generation, execution, and error correction. Terminal coding agents answer this question by embedding the language model inside a feedback loop that observes the consequences of generated code — compiler errors, test failures, runtime exceptions, linting warnings — and iterates autonomously until the code passes all required checks. The closed-loop architecture is categorically different from single-turn code generation: without execution feedback, the model has no signal distinguishing syntactically valid code that fails logically from syntactically invalid code, and cannot improve its output within a task. With the execution feedback loop, the agent converges on correct code through empirical testing rather than pure generation quality.
+    - Terminal coding agents sit at the intersection of software engineering automation research, human-computer interaction (specifically the long history of command-line interface design), and the emerging subfield of LLM-based autonomous agents. The foundational software engineering automation literature — from DeepMind's AlphaCode (2022), through Copilot's large-scale pair-programming study (Imai 2022), to the SWE-bench benchmark (Jimenez et al. 2024) — established that language models [private] produce syntactically and semantically correct code at scale, but left open the question of how to close the loop between generation, execution, and error correction. Terminal coding agents answer this question by embedding the language model inside a feedback loop that observes the consequences of generated code — compiler errors, test failures, runtime exceptions, linting warnings — and iterates autonomously until the code passes all required checks. The closed-loop architecture is categorically different from single-turn code generation: without execution feedback, the model has no signal distinguishing syntactically valid code that fails logically from syntactically invalid code, and cannot improve its output within a task. With the execution feedback loop, the agent converges on correct code through empirical testing rather than pure generation quality.
     - The SWE-bench benchmark (Jimenez et al. 2024, arXiv:2310.06770) established the standard evaluation protocol for coding agents: given a real GitHub issue and the associated repository snapshot, the agent must produce a patch that passes the issue's test suite. SWE-bench Verified (a curated subset with manually verified test suites) has become the primary capability metric for terminal coding agent harnesses. Performance progression on SWE-bench Verified charted the category's maturation: Claude 2 (1.96%, 2023), GPT-4 with basic tooling (3.97%, 2023), SWE-agent with GPT-4 (12.5%, 2024), Devin (13.86%, 2024), Claude 3.5 Sonnet with extended context (49%, 2025), Claude Code with Opus 4.5 extended thinking (80.9%, 2026) — a 40x improvement across three years representing the engineering maturation of the [[Agent Harness]] as much as advances in the underlying model. The parallel progression of harness sophistication and model capability makes causal attribution difficult: SWE-agent's ACI paper (Yang et al. 2024) demonstrated that switching from raw shell access to a structured file-editor ACI improved GPT-4's SWE-bench performance by 3x, suggesting that harness engineering contributes at least as much as model capability to real-world performance on complex software tasks.
     - Terminal-Bench 2.1 (introduced 2025, updated 2026) provides coding-agent-specific evaluation covering terminal-native task types not well represented in SWE-bench: understanding and acting on natural-language instructions delivered in the terminal, debugging from error output without visual IDE context, navigating large repositories using grep and find rather than IDE search, and integrating with shell tools (make, docker, cargo, npm) as part of the development workflow. Terminal-Bench more directly measures the terminal-native harness quality — approval gate design, context management, shell tool integration, [[Observability]] — rather than the underlying model's code generation capability, providing harness engineers with a benchmark metric that reflects production value more faithfully than SWE-bench alone.
     - Princeton NLP Group's SWE-agent paper (Yang et al., 2024, arXiv:2405.15793) introduced the Agent-Computer Interface (ACI) concept — a specialised tool interface for coding agents that is richer than raw shell access but more structured than an IDE API, including file-editor tools with line-numbering, unified diff application, and error-formatted output. The ACI paper identified that the harness's tool interface design — not just the underlying model — was a primary determinant of SWE-bench performance, providing the first systematic empirical evidence that harness engineering is a distinct engineering concern from model capability. The follow-up work "Building AI Coding Agents for the Terminal" (arXiv:2603.05344, 2026) extended this to document scaffolding, context engineering, and failure recovery patterns across 23 different terminal coding agent implementations, identifying five recurring failure modes: context exhaustion (the agent's history fills the [[Context Window]] before task completion), approval gate miscalibration (too-strict gates interrupt flow; too-permissive gates allow errors to propagate), tool specification ambiguity (underspecified tool schemas produce malformed calls), failure mode misclassification (the harness retries deterministic failures that require re-planning), and session state loss (infrastructure failures without [[State Persistence]] lose all intermediate work). Each failure mode has a corresponding harness engineering mitigation documented in the paper, providing a practical checklist for production terminal coding agent deployment.

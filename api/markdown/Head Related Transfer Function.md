@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Head Related Transfer Function
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:head-related-transfer-function", "@type": "Page", "title": "Head Related Transfer Function", "vc:slug": "head-related-transfer-function", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:head-related-transfer-function",
+  "@type": "Page",
+  "title": "Head Related Transfer Function",
+  "vc:slug": "head-related-transfer-function",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

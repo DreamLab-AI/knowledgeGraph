@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Online Certificate Status Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

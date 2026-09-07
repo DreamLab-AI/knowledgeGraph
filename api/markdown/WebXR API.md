@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WebXR API
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:xr-headset", "label": "XR Headset"},
-      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+      {
+        "@id": "urn:ngm:class:xr-headset",
+        "label": "XR Headset"
+      },
+      {
+        "@id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:web-technology", "label": "Web Technology"}
+      {
+        "@id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ]
   },
   "quality": 0.35,
@@ -83,37 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:web-xr-api:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:def08e2ec95e724faeee46549a5f494f328999e1ba5ba0d08ebb2855036629fa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[EWG/MSF taxonomy]]",
-      "resolved": "urn:visionflow:linked:ewg-msf-taxonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A W3C web standard providing browser-native interfaces for rendering stereoscopic 3D content and handling spatial input from XR headsets and controllers, enabling AR/VR experiences without native application installation. WebXR supersedes the earlier WebVR specification and is implemented in Chromium-based browsers (Chrome 79+, Edge 79+, Samsung Internet 12+), the Meta Quest Browser, and Safari on visionOS 2.0; Firefox and iOS Safari do not support it as of 2026, though WebXR is a focus area of the Interop 2026 initiative targeting broader cross-browser alignment.

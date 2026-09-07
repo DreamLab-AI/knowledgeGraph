@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Block Reward Halving
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "The block reward halving is the protocol rule in Bitcoin and similar proof-of-work chains that cuts the newly minted coin subsidy paid to miners in half at fixed block intervals, roughly every four years for Bitcoin. This geometric reduction enforces a predictable, disinflationary issuance schedule that converges on a fixed total supply of 21 million bitcoin. Halvings are central to Bitcoin's scarcity narrative and have historically been focal points for market and security-budget analysis.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      }
     ]
   },
   "quality": 0.72

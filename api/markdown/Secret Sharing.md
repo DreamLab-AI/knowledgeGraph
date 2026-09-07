@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Secret Sharing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

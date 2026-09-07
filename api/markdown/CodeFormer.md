@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CodeFormer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,24 +7,78 @@ public: true
   "title": "CodeFormer",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:visionflow:linked:ai-upscaling-and-super-resolution", "vc:label": "AI Upscaling and Super-Resolution"},
-    {"@id": "urn:visionflow:linked:super-resolution", "vc:label": "Super Resolution"},
-    {"@id": "urn:visionflow:linked:inpainting", "vc:label": "Inpainting"},
-    {"@id": "urn:visionflow:linked:image-processing", "vc:label": "Image Processing"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:film-vfx", "vc:label": "Film VFX"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:stable-diffusion", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:visionflow:linked:diffusion-transformer", "vc:label": "Diffusion Transformer"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:self-supervised-learning", "vc:label": "Self-Supervised Learning"}
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-upscaling-and-super-resolution",
+      "vc:label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:super-resolution",
+      "vc:label": "Super Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:inpainting",
+      "vc:label": "Inpainting"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-processing",
+      "vc:label": "Image Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:film-vfx",
+      "vc:label": "Film VFX"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-transformer",
+      "vc:label": "Diffusion Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-supervised-learning",
+      "vc:label": "Self-Supervised Learning"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -44,46 +93,117 @@ public: true
   "definition": "CodeFormer is a Transformer-based blind face restoration model that combines a discrete codebook prior — learned via a vector-quantised autoencoder — with a controllable fidelity-quality trade-off mechanism, allowing it to recover high-quality facial details from severely degraded inputs such as low-resolution, compressed, or heavily noisy images. Unlike earlier GAN-based restoration approaches, CodeFormer's codebook provides rich, semantically plausible facial priors that guide reconstruction without requiring clean reference images, and its fidelity weight parameter lets users tune the balance between realism and fidelity to the original degraded input. The model generalises to face enhancement tasks in AI-generated images, old photo restoration, and video face restoration.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-upscaling-and-super-resolution", "label": "AI Upscaling and Super-Resolution"},
-      {"@id": "urn:ngm:class:super-resolution", "label": "Super Resolution"},
-      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"}
+      {
+        "@id": "urn:ngm:class:ai-upscaling-and-super-resolution",
+        "label": "AI Upscaling and Super-Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-transformer", "label": "Diffusion Transformer"},
-      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"},
-      {"@id": "urn:ngm:class:vector-quantization", "label": "Vector Quantization"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {
+        "@id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:vector-quantization",
+        "label": "Vector Quantization"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:video-restoration", "label": "Video Restoration"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:video-restoration",
+        "label": "Video Restoration"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:film-vfx", "label": "Film VFX"},
-      {"@id": "urn:ngm:class:forensic-imaging", "label": "Forensic Imaging"},
-      {"@id": "urn:ngm:class:media-production", "label": "Media Production"}
+      {
+        "@id": "urn:ngm:class:film-vfx",
+        "label": "Film VFX"
+      },
+      {
+        "@id": "urn:ngm:class:forensic-imaging",
+        "label": "Forensic Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:media-production",
+        "label": "Media Production"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
     ],
     "isSubclassOf": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:image-restoration", "label": "Image Restoration"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:image-restoration",
+        "label": "Image Restoration"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
@@ -284,7 +404,7 @@ public: true
     23. Yu, F., et al. (2024). Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild (SUPIR). *CVPR 2024*. https://arxiv.org/abs/2401.13627
     24. NTIRE 2025 Challenge on Real-World Face Restoration: Methods and Results. *CVPR 2025 Workshop*. https://arxiv.org/abs/2504.14600
     25. He, J., Zhu, J., Li, K., Fu, R., & Liu, S. (2024). Towards Authentic Face Restoration with Iterative Diffusion Models and Beyond. *ICCV 2023 / TPAMI extension*.
-    26. Wang, Y., & Loy, C. C. (2024). FaceMe: Robust Blind Face Restoration with Personal Identification. *AAAI 2025*. https://ojs.aaai.org/index.php/AAAI/article/view/32593/34748
+    26. Wang, Y., & Loy, C. C. (2024). FaceMe: Robust Blind Face Restoration with Personal Identification. *AAAI 2025*. https://ojs.aaai.org/[private].php/AAAI/article/view/32593/34748
     27. sczhou / CodeFormer GitHub Repository (S-Lab, NTU). https://github.com/sczhou/CodeFormer (accessed June 2026)
     28. Stable Diffusion Art. (2025). CodeFormer: Enhancing facial detail in ComfyUI. https://stable-diffusion-art.com/codeformer/
     29. RunComfy. (2025). Facerestore CF (Code Former) detailed guide, ComfyUI node documentation. https://www.runcomfy.com/comfyui-nodes/facerestore_cf
@@ -404,7 +524,7 @@ public: true
 
     The problem of face restoration has a history extending well before deep learning. Early approaches (pre-2014) used hand-crafted priors such as facial symmetry, statistical face models (Active Appearance Models, PCA-based face spaces), and example-based super-resolution from face databases. These methods required accurate face alignment and performed poorly on non-frontal poses or under severe degradation. The deep learning era of face restoration began with the application of [[Convolutional Neural Network]] architectures to the super-resolution problem (SRCNN, 2014; EDSR, 2017) and their adaptation to face-specific settings via face-aware loss functions and training data strategies.
 
-    The GAN era of face restoration (2017–2021) was characterised by the adoption of adversarial training to produce photorealistic reconstructions beyond what pixel-level regression losses could achieve. SRGAN (Ledig et al., CVPR 2017) introduced the perceptual and adversarial loss combination that became standard; ESRGAN (Wang et al., ECCV 2018) improved on SRGAN's training stability and visual quality. Face-specific GAN-based methods emerged with GFPGAN (Wang et al., CVPR 2021), which exploited pre-trained [[StyleGAN]] generators as high-quality priors — essentially using the GAN's learned mapping from latent codes to high-fidelity faces as a structured search space for finding the highest-quality face consistent with the degraded input. Concurrent with GFPGAN, DFDNet (Li et al., ECCV 2020) introduced the dictionary approach — maintaining component-level dictionaries of eyes, noses, and mouths extracted from high-quality faces — that presaged the more flexible vocabulary of CodeFormer's codebook.
+    The GAN era of face restoration (2017–2021) was characterised by the adoption of adversarial training to produce photorealistic reconstructions beyond what pixel-level regression losses [private] achieve. SRGAN (Ledig et al., CVPR 2017) introduced the perceptual and adversarial loss combination that became standard; ESRGAN (Wang et al., ECCV 2018) improved on SRGAN's training stability and visual quality. Face-specific GAN-based methods emerged with GFPGAN (Wang et al., CVPR 2021), which exploited pre-trained [[StyleGAN]] generators as high-quality priors — essentially using the GAN's learned mapping from latent codes to high-fidelity faces as a structured search space for finding the highest-quality face consistent with the degraded input. Concurrent with GFPGAN, DFDNet (Li et al., ECCV 2020) introduced the dictionary approach — maintaining component-level dictionaries of eyes, noses, and mouths extracted from high-quality faces — that presaged the more flexible vocabulary of CodeFormer's codebook.
 
     The codebook era (2022–present) was initiated by VQFR (Gu et al., ECCV 2022) and CodeFormer (Zhou et al., NeurIPS 2022) simultaneously, independently discovering that the discrete codebook learned by VQGAN / VQVAE provides a superior prior for face restoration compared to StyleGAN's continuous latent space. The key advantages of the discrete codebook over the continuous StyleGAN latent space are: (1) the codebook tokens are semantically meaningful local facial features rather than global style codes, enabling compositional reconstruction; (2) the lookup mechanism via [[Transformer]] attention can contextually combine tokens from different codebook entries, enabling flexible reconstruction of diverse face types; (3) the discrete structure provides a natural framework for uncertainty quantification (ambiguous code selections reflect uncertainty about high-frequency face details).
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI CapEx Spend
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-capex-spend",
   "title": "AI CapEx Spend",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Google Equity Issuance", "Hyperscaler Funding"],
+  "vc:outboundWikilinks": [
+    "Google Equity Issuance",
+    "Hyperscaler Funding"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-economics", "label": "AI Economics"}, {"@id": "urn:ngm:class:big-tech-capex", "label": "Big Tech CapEx"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-economics",
+        "label": "AI Economics"
+      },
+      {
+        "@id": "urn:ngm:class:big-tech-capex",
+        "label": "Big Tech CapEx"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

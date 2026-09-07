@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Resolution Test Chart
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:resolution-test-chart:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:83b673a4940ea902d1fe1a9896da5b16a10480627a9421c31e131a54ec7ffd55"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Display Calibration]]",
-      "resolved": "urn:visionflow:linked:display-calibration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Calibration Tools]]",
-      "resolved": "urn:visionflow:owl:class:calibration-tools",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Standardized calibration patterns such as ISO 12233 charts used to measure and validate the optical resolution, colour accuracy, and image quality of displays in virtual reality and augmented reality headsets through computational analysis.

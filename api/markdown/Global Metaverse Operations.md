@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Global Metaverse Operations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:global-metaverse-operations:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:36a25008f46d045b50bc66df404d53f93e364861248e2bf804457b05ad446eb8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Unified Virtual Experience]]",
-      "resolved": "urn:visionflow:linked:unified-virtual-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The international coordination and management of metaverse platforms across jurisdictions, encompassing cross-border infrastructure deployment, regulatory compliance, interoperability standards, and unified user experiences that enable seamless virtual world access regardless of geographic location.

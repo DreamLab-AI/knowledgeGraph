@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reed Smith
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,47 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reed-smith:8e5122ce521d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:82bdf392883c2b45ade0f0538ff9654d40ca3598108416f601edd9b4da22b601"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.reedsmith.com]]",
-      "resolved": "urn:visionflow:linked:https-www-reedsmith-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.reedsmith.com/en/about]]",
-      "resolved": "urn:visionflow:linked:https-www-reedsmith-com-en-about",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Reed Smith is an international law firm headquartered in the United States with offices across several regions. It provides legal services to corporate and institutional clients.

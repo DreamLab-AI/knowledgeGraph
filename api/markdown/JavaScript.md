@@ -1,8 +1,3 @@
----
-public: true
----
-
-# JavaScript
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -169,31 +164,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:java-script:2d1ae8e7aa29",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c57050455ebb7fb5bf2774aedd6fdbcbe835b3832a6179a17d4a7429054cf27f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Programming Language]]",
-      "resolved": "urn:visionflow:linked:programming-language",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

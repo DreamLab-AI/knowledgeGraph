@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CAN Bus
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:can-bus:d615a5799cc2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e97ad1b0fa0e064d02e5503ed0462738b23f73e3747500a6a703723400994bb0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Embedded Systems]]",
-      "resolved": "urn:visionflow:linked:embedded-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Control]]",
-      "resolved": "urn:visionflow:linked:real-time-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motor Driver]]",
-      "resolved": "urn:visionflow:linked:motor-driver",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[micro-ROS]]",
-      "resolved": "urn:visionflow:linked:micro-ros",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Power Electronics]]",
-      "resolved": "urn:visionflow:linked:power-electronics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Communication Protocol]]",
-      "resolved": "urn:visionflow:linked:communication-protocol",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - CAN Bus (Controller Area Network) is a reliable serial communication standard that lets microcontrollers and devices exchange messages over a shared two-wire bus without a host computer, widely used in vehicles and robotics.

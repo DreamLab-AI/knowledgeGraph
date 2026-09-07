@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Informed Decision Making
----
-
-# Informed decision-making
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -28,25 +21,55 @@ aliases:
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"},
-    {"@id": "urn:ngm:class:decision-making", "label": "Decision Making"}
+    {
+      "@id": "urn:ngm:class:decision-support",
+      "label": "Decision Support"
+    },
+    {
+      "@id": "urn:ngm:class:decision-making",
+      "label": "Decision Making"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
-      {"@id": "urn:ngm:class:transparent-decision-making", "label": "Transparent Decision Making"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:transparent-decision-making",
+        "label": "Transparent Decision Making"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:distributed-decision-making", "label": "Distributed Decision Making"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-decision-making",
+        "label": "Distributed Decision Making"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ]
   },
   "quality": 0.8
@@ -62,6 +85,6 @@ aliases:
 
   - In clinical, policy, and business contexts, informed decision-making is often contrasted with heuristic or intuition-driven approaches. Evidence-based medicine, for example, requires that clinical choices be grounded in systematic reviews and randomised controlled trial data rather than individual clinician experience alone. [[Clinical Decision Support]] systems embody this principle in software, surfacing guideline-adherent recommendations at the point of care and flagging contraindications that human memory might miss.
 
-  - Digital transformation has both expanded the raw material available for informed decisions and introduced new challenges of information overload and algorithmic bias. [[Predictive Analytics]] tools can identify patterns in large datasets that no human analyst could discern, but their outputs are only valuable if decision-makers understand the confidence intervals, assumptions, and potential failure modes that accompany any prediction. This has driven interest in explainable AI and [[Transparent Decision Making]] frameworks that make the basis of automated recommendations auditable and contestable.
+  - Digital transformation has both expanded the raw material available for informed decisions and introduced new challenges of information overload and algorithmic bias. [[Predictive Analytics]] tools can identify patterns in large datasets that no human analyst [private] discern, but their outputs are only valuable if decision-makers understand the confidence intervals, assumptions, and potential failure modes that accompany any prediction. This has driven interest in explainable AI and [[Transparent Decision Making]] frameworks that make the basis of automated recommendations auditable and contestable.
 
   - At the organisational level, informed decision-making requires governance structures that ensure relevant expertise is included in deliberations, that dissenting evidence is not suppressed, and that decisions are documented with sufficient reasoning to enable retrospective evaluation. [[Distributed Decision Making]] architectures — whether in DAOs, federated governance structures, or decentralised AI systems — must address the same fundamental challenge: ensuring that the agents making choices have access to the information they need and the capacity to interpret it correctly.

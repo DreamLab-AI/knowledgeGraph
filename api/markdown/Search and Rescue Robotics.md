@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Search and Rescue Robotics
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:search-and-rescue-robotics", "@type": "Page", "title": "Search and Rescue Robotics", "vc:slug": "search-and-rescue-robotics", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:search-and-rescue-robotics",
+  "@type": "Page",
+  "title": "Search and Rescue Robotics",
+  "vc:slug": "search-and-rescue-robotics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

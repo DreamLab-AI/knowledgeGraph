@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hidden Hand
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hidden-hand:4abbaf25a8b6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4a541a32d6e868268299ae31b6f366345e987ca3a37ede8b69df5febcfd21afc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Gauge Voting]]",
-      "resolved": "urn:visionflow:linked:gauge-voting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Token]]",
-      "resolved": "urn:visionflow:linked:governance-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tokenomics]]",
-      "resolved": "urn:visionflow:linked:tokenomics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Votium]]",
-      "resolved": "urn:visionflow:linked:votium",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hidden Hand is a governance incentive marketplace operated by Redacted Cartel that lets protocols offer rewards to direct gauge votes across multiple DeFi systems. It generalises the bribery market model beyond a single protocol.

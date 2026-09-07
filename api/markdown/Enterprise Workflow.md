@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise Workflow
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -78,47 +73,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:enterprise-workflow:27a48497270c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:febf6c8896c6192b4ef87e9fa2945dbd027429babdf9fe9b3f2f1c659135e997"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Workflow Automation]]",
-      "resolved": "urn:visionflow:linked:workflow-automation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agent]]",
-      "resolved": "urn:visionflow:linked:ai-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Workflow]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-workflow",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.omg.org/spec/BPMN/]]",
-      "resolved": "urn:visionflow:linked:https-www-omg-org-spec-bpmn",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An enterprise workflow is a defined sequence of tasks and approvals that an organisation uses to carry out a business process. Software systems coordinate and automate these workflows.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Functional Safety
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,7 +83,7 @@ public: true
   "@id": "urn:ngm:class:functional-safety",
   "@type": "Class",
   "label": "Functional Safety",
-  "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure systems fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment, safety integrity levels, and redundancy in electrical, electronic, and programmable electronic systems.",
+  "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure systems fail safely and prevent hazardous failures that [private] harm humans, equipment, or processes through systematic risk assessment, safety integrity levels, and redundancy in electrical, electronic, and programmable electronic systems.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": {
@@ -202,89 +197,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:functional-safety:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8b2e8996bbf5418f585223b07ab1e43c19b32a6d47ad273842a84ae946556662"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Fault Tree Analysis]]",
-      "resolved": "urn:visionflow:linked:fault-tree-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hazard Analysis]]",
-      "resolved": "urn:visionflow:linked:hazard-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human-Robot Safety]]",
-      "resolved": "urn:visionflow:linked:human-robot-safety",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Liability Mitigation]]",
-      "resolved": "urn:visionflow:linked:liability-mitigation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Safe Operation Certification]]",
-      "resolved": "urn:visionflow:linked:safe-operation-certification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Safety Engineering]]",
-      "resolved": "urn:visionflow:linked:safety-engineering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Testing & Validation]]",
-      "resolved": "urn:visionflow:linked:testing-and-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - **Functional Safety** - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.
+  - **Functional Safety** - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that [private] harm humans, equipment, or processes through systematic risk assessment and redundancy.
 
 - ### Semantic Classification
   - owl-class:: robotics:FunctionalSafety

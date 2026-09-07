@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Talent War
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,42 +7,150 @@ public: true
   "title": "AI Talent War",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:ai-talent", "vc:label": "AI Talent"},
-    {"@id": "urn:visionflow:linked:frontier-ai", "vc:label": "Frontier AI"},
-    {"@id": "urn:visionflow:linked:frontier-model-training", "vc:label": "Frontier Model Training"},
-    {"@id": "urn:visionflow:linked:education-and-ai", "vc:label": "Education and AI"},
-    {"@id": "urn:visionflow:linked:ai-governance-framework", "vc:label": "AI Governance Framework"},
-    {"@id": "urn:visionflow:linked:competition-in-ai", "vc:label": "Competition in AI"},
-    {"@id": "urn:visionflow:linked:compute-infrastructure", "vc:label": "Compute Infrastructure"},
-    {"@id": "urn:visionflow:linked:ai-investment", "vc:label": "AI Investment"},
-    {"@id": "urn:visionflow:linked:geopolitics", "vc:label": "Geopolitics"},
-    {"@id": "urn:visionflow:linked:national-ai-strategies", "vc:label": "National AI Strategies"},
-    {"@id": "urn:visionflow:linked:ai-safety-research", "vc:label": "AI Safety Research"},
-    {"@id": "urn:visionflow:linked:ai-model-development", "vc:label": "AI Model Development"},
-    {"@id": "urn:visionflow:linked:export-controls", "vc:label": "Export Controls"},
-    {"@id": "urn:visionflow:linked:talent-concentration", "vc:label": "Talent Concentration"},
-    {"@id": "urn:visionflow:linked:innovation-ecosystems", "vc:label": "Innovation Ecosystems"},
-    {"@id": "urn:visionflow:linked:workforce-development", "vc:label": "Workforce Development"},
-    {"@id": "urn:visionflow:linked:open-source-ai", "vc:label": "Open Source AI"},
-    {"@id": "urn:visionflow:linked:ai-policy", "vc:label": "AI Policy"},
-    {"@id": "urn:visionflow:linked:economic-competitiveness", "vc:label": "Economic Competitiveness"},
-    {"@id": "urn:visionflow:linked:technological-leadership", "vc:label": "Technological Leadership"},
-    {"@id": "urn:visionflow:linked:national-security-advantage", "vc:label": "National Security Advantage"},
-    {"@id": "urn:visionflow:linked:ai-sovereignty", "vc:label": "AI Sovereignty"},
-    {"@id": "urn:visionflow:linked:gpu-supply-chain", "vc:label": "GPU Supply Chain"},
-    {"@id": "urn:visionflow:linked:acqui-hire", "vc:label": "Acqui-hire"},
-    {"@id": "urn:visionflow:linked:immigration-policy", "vc:label": "Immigration Policy"},
-    {"@id": "urn:visionflow:linked:ai-cooperation", "vc:label": "AI Cooperation"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:ai-regulation", "vc:label": "AI Regulation"},
-    {"@id": "urn:visionflow:linked:technology-race", "vc:label": "Technology Race"},
-    {"@id": "urn:visionflow:linked:ai-research-talent", "vc:label": "AI Research Talent"},
-    {"@id": "urn:visionflow:owl:class:anthropic", "vc:label": "Anthropic"},
-    {"@id": "urn:visionflow:owl:class:google-deep-mind", "vc:label": "Google DeepMind"},
-    {"@id": "urn:visionflow:owl:class:open-ai", "vc:label": "OpenAI Research Organisation"},
-    {"@id": "urn:visionflow:owl:class:meta-ai", "vc:label": "Meta AI"},
-    {"@id": "urn:visionflow:owl:class:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"}
+    {
+      "@id": "urn:visionflow:linked:ai-talent",
+      "vc:label": "AI Talent"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-ai",
+      "vc:label": "Frontier AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-model-training",
+      "vc:label": "Frontier Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance-framework",
+      "vc:label": "AI Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:competition-in-ai",
+      "vc:label": "Competition in AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:compute-infrastructure",
+      "vc:label": "Compute Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-investment",
+      "vc:label": "AI Investment"
+    },
+    {
+      "@id": "urn:visionflow:linked:geopolitics",
+      "vc:label": "Geopolitics"
+    },
+    {
+      "@id": "urn:visionflow:linked:national-ai-strategies",
+      "vc:label": "National AI Strategies"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety-research",
+      "vc:label": "AI Safety Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model-development",
+      "vc:label": "AI Model Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:export-controls",
+      "vc:label": "Export Controls"
+    },
+    {
+      "@id": "urn:visionflow:linked:talent-concentration",
+      "vc:label": "Talent Concentration"
+    },
+    {
+      "@id": "urn:visionflow:linked:innovation-ecosystems",
+      "vc:label": "Innovation Ecosystems"
+    },
+    {
+      "@id": "urn:visionflow:linked:workforce-development",
+      "vc:label": "Workforce Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source-ai",
+      "vc:label": "Open Source AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-policy",
+      "vc:label": "AI Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:economic-competitiveness",
+      "vc:label": "Economic Competitiveness"
+    },
+    {
+      "@id": "urn:visionflow:linked:technological-leadership",
+      "vc:label": "Technological Leadership"
+    },
+    {
+      "@id": "urn:visionflow:linked:national-security-advantage",
+      "vc:label": "National Security Advantage"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-sovereignty",
+      "vc:label": "AI Sovereignty"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-supply-chain",
+      "vc:label": "GPU Supply Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:acqui-hire",
+      "vc:label": "Acqui-hire"
+    },
+    {
+      "@id": "urn:visionflow:linked:immigration-policy",
+      "vc:label": "Immigration Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-cooperation",
+      "vc:label": "AI Cooperation"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-regulation",
+      "vc:label": "AI Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:technology-race",
+      "vc:label": "Technology Race"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research-talent",
+      "vc:label": "AI Research Talent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:anthropic",
+      "vc:label": "Anthropic"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google-deep-mind",
+      "vc:label": "Google DeepMind"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai",
+      "vc:label": "OpenAI Research Organisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:meta-ai",
+      "vc:label": "Meta AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -63,33 +166,81 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:competition-in-ai", "label": "Competition in AI"},
-    {"@id": "urn:ngm:class:technology-race", "label": "Technology Race"}
+    {
+      "@id": "urn:ngm:class:competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "@id": "urn:ngm:class:technology-race",
+      "label": "Technology Race"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:acqui-hire", "label": "Acqui-hire"},
-      {"@id": "urn:ngm:class:talent-concentration", "label": "Talent Concentration"},
-      {"@id": "urn:ngm:class:immigration-policy", "label": "Immigration Policy"},
-      {"@id": "urn:ngm:class:compensation-escalation", "label": "Compensation Escalation"}
+      {
+        "@id": "urn:ngm:class:acqui-hire",
+        "label": "Acqui-hire"
+      },
+      {
+        "@id": "urn:ngm:class:talent-concentration",
+        "label": "Talent Concentration"
+      },
+      {
+        "@id": "urn:ngm:class:immigration-policy",
+        "label": "Immigration Policy"
+      },
+      {
+        "@id": "urn:ngm:class:compensation-escalation",
+        "label": "Compensation Escalation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-talent", "label": "AI Talent"},
-      {"@id": "urn:ngm:class:frontier-ai", "label": "Frontier AI"},
-      {"@id": "urn:ngm:class:geopolitics", "label": "Geopolitics"}
+      {
+        "@id": "urn:ngm:class:ai-talent",
+        "label": "AI Talent"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "@id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:frontier-model-training", "label": "Frontier Model Training"},
-      {"@id": "urn:ngm:class:technological-leadership", "label": "Technological Leadership"}
+      {
+        "@id": "urn:ngm:class:frontier-model-training",
+        "label": "Frontier Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:technological-leadership",
+        "label": "Technological Leadership"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"},
-      {"@id": "urn:ngm:class:ai-investment", "label": "AI Investment"},
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:ai-cooperation", "label": "AI Cooperation"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-cooperation",
+        "label": "AI Cooperation"
+      }
     ]
   },
   "quality": 0.88,
@@ -98,57 +249,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "R1Explicit"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-talent-war:20260620",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ai-talent-war"
-  },
-  "vc:resolutions": [
-    {"raw": "[[AI Talent]]", "resolved": "urn:visionflow:linked:ai-talent", "kind": "StubLink"},
-    {"raw": "[[Frontier AI]]", "resolved": "urn:visionflow:linked:frontier-ai", "kind": "StubLink"},
-    {"raw": "[[Frontier Model Training]]", "resolved": "urn:visionflow:linked:frontier-model-training", "kind": "StubLink"},
-    {"raw": "[[Education and AI]]", "resolved": "urn:visionflow:linked:education-and-ai", "kind": "StubLink"},
-    {"raw": "[[AI Governance Framework]]", "resolved": "urn:visionflow:linked:ai-governance-framework", "kind": "StubLink"},
-    {"raw": "[[Competition in AI]]", "resolved": "urn:visionflow:linked:competition-in-ai", "kind": "StubLink"},
-    {"raw": "[[Compute Infrastructure]]", "resolved": "urn:visionflow:linked:compute-infrastructure", "kind": "StubLink"},
-    {"raw": "[[AI Investment]]", "resolved": "urn:visionflow:linked:ai-investment", "kind": "StubLink"},
-    {"raw": "[[Geopolitics]]", "resolved": "urn:visionflow:linked:geopolitics", "kind": "StubLink"},
-    {"raw": "[[National AI Strategies]]", "resolved": "urn:visionflow:linked:national-ai-strategies", "kind": "StubLink"},
-    {"raw": "[[AI Safety Research]]", "resolved": "urn:visionflow:linked:ai-safety-research", "kind": "StubLink"},
-    {"raw": "[[AI Model Development]]", "resolved": "urn:visionflow:linked:ai-model-development", "kind": "StubLink"},
-    {"raw": "[[Export Controls]]", "resolved": "urn:visionflow:linked:export-controls", "kind": "StubLink"},
-    {"raw": "[[Talent Concentration]]", "resolved": "urn:visionflow:linked:talent-concentration", "kind": "StubLink"},
-    {"raw": "[[Innovation Ecosystems]]", "resolved": "urn:visionflow:linked:innovation-ecosystems", "kind": "StubLink"},
-    {"raw": "[[Workforce Development]]", "resolved": "urn:visionflow:linked:workforce-development", "kind": "StubLink"},
-    {"raw": "[[Open Source AI]]", "resolved": "urn:visionflow:linked:open-source-ai", "kind": "StubLink"},
-    {"raw": "[[AI Policy]]", "resolved": "urn:visionflow:linked:ai-policy", "kind": "StubLink"},
-    {"raw": "[[Economic Competitiveness]]", "resolved": "urn:visionflow:linked:economic-competitiveness", "kind": "StubLink"},
-    {"raw": "[[Technological Leadership]]", "resolved": "urn:visionflow:linked:technological-leadership", "kind": "StubLink"},
-    {"raw": "[[National Security Advantage]]", "resolved": "urn:visionflow:linked:national-security-advantage", "kind": "StubLink"},
-    {"raw": "[[AI Sovereignty]]", "resolved": "urn:visionflow:linked:ai-sovereignty", "kind": "StubLink"},
-    {"raw": "[[GPU Supply Chain]]", "resolved": "urn:visionflow:linked:gpu-supply-chain", "kind": "StubLink"},
-    {"raw": "[[Acqui-hire]]", "resolved": "urn:visionflow:linked:acqui-hire", "kind": "StubLink"},
-    {"raw": "[[Immigration Policy]]", "resolved": "urn:visionflow:linked:immigration-policy", "kind": "StubLink"},
-    {"raw": "[[AI Cooperation]]", "resolved": "urn:visionflow:linked:ai-cooperation", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "StubLink"},
-    {"raw": "[[AI Regulation]]", "resolved": "urn:visionflow:linked:ai-regulation", "kind": "StubLink"},
-    {"raw": "[[Technology Race]]", "resolved": "urn:visionflow:linked:technology-race", "kind": "StubLink"},
-    {"raw": "[[AI Research Talent]]", "resolved": "urn:visionflow:linked:ai-research-talent", "kind": "StubLink"},
-    {"raw": "[[Anthropic]]", "resolved": "urn:visionflow:owl:class:anthropic", "kind": "ResolvedLink"},
-    {"raw": "[[Google DeepMind]]", "resolved": "urn:visionflow:owl:class:google-deep-mind", "kind": "ResolvedLink"},
-    {"raw": "[[OpenAI Research Organisation]]", "resolved": "urn:visionflow:owl:class:open-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Meta AI]]", "resolved": "urn:visionflow:owl:class:meta-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Models]]", "resolved": "urn:visionflow:owl:class:foundation-models", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -277,7 +377,7 @@ public: true
 
   **The AI Talent War** designates the intensifying global contest for the human expertise required to build, maintain, and advance artificial intelligence systems — in particular those operating at the frontier of capability. Unlike conventional labour market competitions, the AI talent war exhibits three structural peculiarities that give it geopolitical weight. First, the relevant talent pool is extraordinarily thin: the number of researchers worldwide capable of independently advancing the training methods and architectures underpinning frontier [[Foundation Models]] is estimated at fewer than 40,000, concentrated in a handful of metropolitan areas (San Francisco Bay Area, London, Paris, Beijing, Singapore). Second, the value produced by elite frontier researchers is non-linear and partially non-replicable: a single breakthrough insight about attention mechanisms, training stability, or data curation protocols may yield billions of dollars of commercial value and is not decomposable into the additive contributions of a larger workforce. Third, because AI capability has become a component of national power, the war for talent has merged with [[Geopolitics]] — governments now treat talent flows as strategic variables on par with [[Export Controls]], [[GPU Supply Chain]] access, and data governance.
 
-  The war began in earnest following the 2012 AlexNet result (Krizhevsky, Sutskever, and Hinton), which demonstrated that [[Deep Learning]] on GPU hardware could surpass classical computer vision at scale and had immediate commercial applications. Google's acquisition of Geoffrey Hinton's DNNresearch startup for approximately $44 million set a template for the [[Acqui-hire]] pattern that would be replicated hundreds of times over the following decade. By 2015, compensation for elite ML researchers at major technology companies reached levels comparable to professional athletes. The founding of [[Anthropic]] in 2021 as a breakaway from [[OpenAI Research Organisation]] over safety culture disagreements introduced an ideological dimension to lab-to-lab rivalry that pure compensation cannot resolve.
+  The war began in earnest following the 2012 AlexNet result (Krizhevsky, Sutskever, and Hinton), which demonstrated that [[Deep Learning]] on GPU hardware [private] surpass classical computer vision at scale and had immediate commercial applications. Google's acquisition of Geoffrey Hinton's DNNresearch startup for approximately $44 million set a template for the [[Acqui-hire]] pattern that would be replicated hundreds of times over the following decade. By 2015, compensation for elite ML researchers at major technology companies reached levels comparable to professional athletes. The founding of [[Anthropic]] in 2021 as a breakaway from [[OpenAI Research Organisation]] over safety culture disagreements introduced an ideological dimension to lab-to-lab rivalry that pure compensation cannot resolve.
 
   By 2025–2026, the intensity of competition has reached historically unprecedented levels. [[Meta AI]]'s formation of its Superintelligence Labs in 2025 triggered a compensation recalibration: Sam Altman publicly acknowledged that his rivals were extending "giant offers — like $100 million signing bonuses, more than that in compensation per year" (CNBC, September 2025). The Wall Street Journal reported one Meta hire — a co-founder of Mira Murati's Thinking Machines Lab — receiving a package reportedly worth approximately $1.5 billion over six years. In response, [[OpenAI Research Organisation]] extended retention bonuses of approximately $1.5 million per person, vesting over two years, to roughly 1,000 research and engineering staff (August 2025), and announced plans to double headcount to approximately 8,000 employees by end-2026.
 
@@ -391,7 +491,7 @@ public: true
 
   **Compensation normalisation via open-source democratisation**: As open-source models approach frontier capability on an increasing range of commercially relevant tasks, the marginal value of frontier-lab employment relative to well-funded academic or open-source positions may decline. Researchers who prioritise publication freedom, academic collaboration, and public-interest missions will find viable alternatives to closed frontier labs, particularly if those labs continue to restrict publication of safety-relevant capabilities research. DeepSeek's demonstration that a small, highly efficient team can achieve frontier-class reasoning performance at approximately $6 million training cost versus hundreds of millions for US frontier labs represents the leading indicator of this trajectory. However, the commercial advantages of closed frontier labs — enterprise distribution, API reliability, data flywheel effects, safety compliance infrastructure — are likely to sustain premium compensation for the foreseeable future.
 
-  **Supply expansion via AI-accelerated education**: AI-assisted learning platforms are beginning to compress the time required to develop ML competency from the traditional 5–7 year doctoral trajectory to 12–24 months for motivated learners targeting practitioner roles. Platforms combining adaptive curriculum with real-time AI mentorship, code execution environments, and peer learning communities have demonstrated 3–5× faster skill acquisition for specific ML engineering competencies compared to traditional university pathways. If this compression proves reliable and scalable, the 3:1 demand-to-supply ratio in the practitioner tier could close substantially by 2029. The frontier research tier will remain more resistant to educational acceleration — the tacit intuitions required for frontier training breakthroughs cannot be programmed into a curriculum — suggesting persistent stratification between the addressable and the unaddressable talent scarcity.
+  **Supply expansion via AI-accelerated education**: AI-assisted learning platforms are beginning to compress the time required to develop ML competency from the traditional 5–7 year doctoral trajectory to 12–24 months for motivated learners targeting practitioner roles. Platforms combining adaptive curriculum with real-time AI mentorship, code execution environments, and peer learning communities have demonstrated 3–5× faster skill acquisition for specific ML engineering competencies compared to traditional university pathways. If this compression proves reliable and scalable, the 3:1 demand-to-supply ratio in the practitioner tier [private] close substantially by 2029. The frontier research tier will remain more resistant to educational acceleration — the tacit intuitions required for frontier training breakthroughs cannot be programmed into a curriculum — suggesting persistent stratification between the addressable and the unaddressable talent scarcity.
 
   **Diversity-driven supply expansion**: The AI talent pool's demographic homogeneity is both a constraint on supply and a risk factor for the direction of AI development. The 78% male composition of the global AI/ML research workforce and significant underrepresentation of Global Majority researchers mean that roughly 60% of the potential talent pool has been structurally excluded from the ecosystem. Systematic diversity initiatives — including AI4ALL (targeting underrepresented US high schoolers), the Black in AI network's conference presence and mentorship programmes, LatinX in AI's academic workshop ecosystem, and government-funded widening participation programmes in the UK and EU — represent the highest-leverage long-term intervention available for expanding the effective talent pool. The time horizon is long (10–15 years to produce PhD-level researchers from high school entry-points) but the compounding effect of earlier pipeline investments is beginning to show: AI4ALL reports a 40% female participation rate in its programmes, and NeurIPS and ICML representation of Global Majority researchers has grown year-over-year since 2019.
 

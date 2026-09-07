@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bipedal Balance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Bipedal Balance is the set of sensing, computation, and actuation mechanisms that enable a two-legged robot or agent to maintain postural stability during standing, walking, and dynamic manoeuvres. It encompasses whole-body control strategies, inertial sensing, and real-time torque control to keep the centre of mass within a supportable base of support. The field integrates mechanics, control theory, and machine learning to achieve robust locomotion across uneven terrain.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:legged-locomotion",
+      "label": "Legged Locomotion"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole Body Control"},
-      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:whole-body-control",
+        "label": "Whole Body Control"
+      },
+      {
+        "@id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning-for-robotics", "label": "Reinforcement Learning for Robotics"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      }
     ]
   },
   "quality": 0.8

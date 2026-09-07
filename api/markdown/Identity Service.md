@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Identity Service
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "An identity service is a system component that manages the lifecycle of digital identities, providing authentication, authorisation, and identity data to other services within a platform architecture. It centralises functions such as user registration, credential issuance, session management, and federation so that applications can delegate trust decisions. Identity services are typically exposed via standard protocols such as OAuth 2.0, OpenID Connect, and SAML.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
   "relations": {
-    "partOf": [{"@id": "urn:ngm:class:service-layer", "label": "Service Layer"}],
-    "relatedTo": [{"@id": "urn:ngm:class:platform-layer", "label": "Platform Layer"}]
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:service-layer",
+        "label": "Service Layer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:platform-layer",
+        "label": "Platform Layer"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Memory Store
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A memory store is the persistence layer in an AI agent system that retains information across turns and sessions for later retrieval. It typically holds conversation history, facts, and learned context, often as embeddings in a vector database to enable semantic recall. The memory store is what allows agents to maintain continuity, personalise responses, and accumulate knowledge beyond a single context window.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"}, {"@id": "urn:ngm:class:context-engineering", "label": "Context Engineering"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:context-engineering",
+        "label": "Context Engineering"
+      }
+    ]
   },
   "quality": 0.72
 }

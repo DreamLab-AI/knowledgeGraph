@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Warmup
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,17 +51,32 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:training", "label": "Training"}
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"},
-      {"@id": "urn:ngm:class:optimiser", "label": "Optimiser"}
+      {
+        "@id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ]
   },
   "quality": 0.5,
@@ -77,32 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:warmup:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b5d952c00390f4dce83c1f3fd9fb4c8652fc3d3913947a7c15e92ceb02a670b4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A training technique where the learning rate starts small and gradually increases at the beginning of training to stabilise optimisation. Warmup is standard practice for training large transformer models, preventing instability from large gradients early in training.

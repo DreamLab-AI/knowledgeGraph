@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Benchmarks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-benchmarks",
   "title": "AI Benchmarks",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Data Center Infrastructure", "European Commission AI gigafactories", "GPU Deployment"],
+  "vc:outboundWikilinks": [
+    "AI Data Center Infrastructure",
+    "European Commission AI gigafactories",
+    "GPU Deployment"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:benchmarks",
+      "label": "Benchmarks"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}, {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

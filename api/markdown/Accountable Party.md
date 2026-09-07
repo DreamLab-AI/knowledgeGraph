@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Accountable Party
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -124,30 +119,72 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:ai-ethics-board", "label": "AI Ethics Board"}
+      {
+        "@id": "urn:ngm:class:ai-ethics-board",
+        "label": "AI Ethics Board"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:compliance-control", "label": "Compliance Control"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
     ]
   },
   "provenance": {
@@ -157,112 +194,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:accountable-party:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:058bcf26a8b147ba35a44424a27dc4d98a42ecf1cb02a76d61ffee53e37bba20"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Governance Principle]]",
-      "resolved": "urn:visionflow:linked:ai-governance-principle",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Algorithmic Accountability Principles]]",
-      "resolved": "urn:visionflow:linked:algorithmic-accountability-principles",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Algorithmic Auditor]]",
-      "resolved": "urn:visionflow:linked:algorithmic-auditor",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Chief AI Officer]]",
-      "resolved": "urn:visionflow:linked:chief-ai-officer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Provider]]",
-      "resolved": "urn:visionflow:linked:data-provider",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deploying Organization]]",
-      "resolved": "urn:visionflow:linked:deploying-organization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Governance Body]]",
-      "resolved": "urn:visionflow:linked:governance-body",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE 7000 Model Process]]",
-      "resolved": "urn:visionflow:linked:ieee-7000-model-process",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Developer]]",
-      "resolved": "urn:visionflow:linked:model-developer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD AI Principles]]",
-      "resolved": "urn:visionflow:linked:oecd-ai-principles",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Operator]]",
-      "resolved": "urn:visionflow:linked:system-operator",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Ethics Board]]",
-      "resolved": "urn:visionflow:owl:class:ai-ethics-board",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   An Accountable Party is an individual, organisation, or role bearing defined responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ethical standards. Accountability addresses the foundational question of who bears responsibility when AI systems cause harm, requiring that identifiable parties hold authority, resources, and monitoring capacity commensurate with their obligations. Parties span the AI value chain—data providers, model developers, deploying organisations, system operators, and governance bodies—each with lifecycle-specific duties enforced through formal reporting structures. Accountable parties span the AI lifecycle and value chain: data providers responsible for data quality and representativeness, model developers accountable for technical robustness and bias mitigation, deploying organizations responsible for appropriate use and human oversight, operators accountable for monitoring and maintenance, and governance bodies responsible for policy and compliance. Accountability requires more than merely identifying responsible parties—it demands establishing clear obligations, providing necessary authority and resources, implementing monitoring and reporting mechanisms, and enforcing consequences for failures. The complexity of AI systems creates accountability challenges: distributed development involving multiple organizations, automated decision-making obscuring human responsibility, emergent behaviors not explicitly programmed, and temporal gaps between development and deployment. Effective accountability frameworks must navigate these challenges while ensuring individuals and organizations cannot evade responsibility through complexity or distributed authorship.

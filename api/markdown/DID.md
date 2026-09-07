@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DID
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,52 +199,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:did:75ca3ca2ece2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:94b6a05674191914671c888525fb53c2c8adcba5db167ef98db7aeb253c9dbce"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Public Key]]",
-      "resolved": "urn:visionflow:linked:public-key",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verifiable Credentials]]",
-      "resolved": "urn:visionflow:linked:verifiable-credentials",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self Sovereign Identity]]",
-      "resolved": "urn:visionflow:linked:self-sovereign-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Identifiers]]",
-      "resolved": "urn:visionflow:linked:decentralized-identifiers",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A decentralised identifier, a type of globally unique identifier that enables verifiable, self-sovereign digital identity without reliance on a central registry.

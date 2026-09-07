@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -210,47 +205,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:network-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:32a908dba457e91db6b9052547210a626b669f5c88109de670a910f4d3a79c6d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Convolutional Neural Networks]]",
-      "resolved": "urn:visionflow:linked:convolutional-neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Architecture Search]]",
-      "resolved": "urn:visionflow:linked:neural-architecture-search",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:owl:class:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformers]]",
-      "resolved": "urn:visionflow:owl:class:transformers",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units. Key architectures include feedforward networks, convolutional neural networks (CNNs), recurrent neural networks (RNNs), transformers, and graph neural networks (GNNs). Architecture design involves selecting layer types, activation functions, skip connections, normalization methods, and attention mechanisms. Neural Architecture Search (NAS) automates architecture discovery through evolutionary algorithms or reinforcement learning, optimizing for accuracy, efficiency, and resource constraints.

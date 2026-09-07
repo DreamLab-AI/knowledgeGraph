@@ -1,36 +1,116 @@
----
-public: true
----
-
-# Self Service Analytics
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:self-service-analytics", "@type":"Page", "title":"Self Service Analytics", "vc:slug":"self-service-analytics", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:self-service-analytics",
+  "@type": "Page",
+  "title": "Self Service Analytics",
+  "vc:slug": "self-service-analytics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:self-service-analytics",
-  "@type":"Class",
-  "label":"Self Service Analytics",
-  "definition":"Self-service analytics is an approach that empowers business users to explore data, build reports, and answer their own questions through governed, accessible tools without depending on specialist data teams for every request. It combines intuitive interfaces, curated and trustworthy data sources, and embedded governance so that broad access does not compromise consistency or security. The aim is to accelerate decision-making and foster data literacy across an organisation.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:decision-support","label":"Decision Support"},{"@id":"urn:ngm:class:business-intelligence","label":"Business Intelligence"},{"@id":"urn:ngm:class:data-visualisation","label":"Data Visualisation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:data-catalog","label":"Data Catalog"},{"@id":"urn:ngm:class:metadata-management","label":"Metadata Management"},{"@id":"urn:ngm:class:olap","label":"Olap"}],
-    "requires":[{"@id":"urn:ngm:class:data-governance","label":"Data Governance"},{"@id":"urn:ngm:class:data-quality","label":"Data Quality"}],
-    "uses":[{"@id":"urn:ngm:class:data-visualisation","label":"Data Visualisation"},{"@id":"urn:ngm:class:sql","label":"SQL"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data-warehouse","label":"Data Warehouse"},{"@id":"urn:ngm:class:data-catalog","label":"Data Catalog"}],
-    "supports":[{"@id":"urn:ngm:class:data-engineering","label":"Data Engineering"}],
-    "partOf":[{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:data-governance","label":"Data Governance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:self-service-analytics",
+  "@type": "Class",
+  "label": "Self Service Analytics",
+  "definition": "Self-service analytics is an approach that empowers business users to explore data, build reports, and answer their own questions through governed, accessible tools without depending on specialist data teams for every request. It combines intuitive interfaces, curated and trustworthy data sources, and embedded governance so that broad access does not compromise consistency or security. The aim is to accelerate decision-making and foster data literacy across an organisation.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-analytics",
+      "label": "Data Analytics"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:olap",
+        "label": "Olap"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

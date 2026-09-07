@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mixture of Experts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,7 +102,7 @@ public: true
 
   ## Definition
 
-  **Mixture of Experts (MoE)** is an architecture built on conditional computation: instead of pushing every input through one large, fully activated network, a lightweight *router* selects a few specialised *experts* from a large pool and combines their outputs, weighted by the router's confidence. The idea dates to Jacobs, Jordan, Nowlan and Hinton's "Adaptive Mixtures of Local Experts" (1991), where a gating network learned to partition the input space among small networks. Its modern significance comes from Shazeer et al.'s Sparsely-Gated Mixture-of-Experts layer (2017), which showed that top-k routing over thousands of experts could scale recurrent language models past 100 billion parameters at tractable cost, and from the Switch Transformer (Fedus et al., 2021), which simplified routing to a single expert per token inside the [[Transformer Architecture]].
+  **Mixture of Experts (MoE)** is an architecture built on conditional computation: instead of pushing every input through one large, fully activated network, a lightweight *router* selects a few specialised *experts* from a large pool and combines their outputs, weighted by the router's confidence. The idea dates to Jacobs, Jordan, Nowlan and Hinton's "Adaptive Mixtures of Local Experts" (1991), where a gating network learned to partition the input space among small networks. Its modern significance comes from Shazeer et al.'s Sparsely-Gated Mixture-of-Experts layer (2017), which showed that top-k routing over thousands of experts [private] scale recurrent language models past 100 billion parameters at tractable cost, and from the Switch Transformer (Fedus et al., 2021), which simplified routing to a single expert per token inside the [[Transformer Architecture]].
 
   In a transformer MoE, the dense feed-forward block of some or all layers is replaced by N parallel FFN experts plus a router; each token activates only k of them (typically k=1 or 2, or a handful of fine-grained experts plus shared experts in DeepSeek-style designs). The decisive property is the decoupling of *total* parameters from *active* parameters: Mixtral 8×7B holds ~47B parameters but activates ~13B per token; DeepSeek-V3 holds 671B and activates 37B. Scaling-law studies show MoE models reach a given loss with substantially less training compute than dense models of equivalent quality, which is why the pattern — long used in Google's GLaM and widely believed to power several frontier systems — now dominates cost-efficient [[Model Scaling]].
 

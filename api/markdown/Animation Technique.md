@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Animation Technique
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -98,37 +93,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:animation-technique:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:92f920139ce10c4b22adbdce95b5413c6b74cfb3c724ec1e398566ec55c0050d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Animation Technique is a method or algorithm for generating the illusion of motion in digital content, encompassing keyframe interpolation, skeletal rigging, physics-based simulation, and procedural approaches. Animation techniques are fundamental to character representation, environmental dynamics, and interactive responsiveness in spatial computing environments.

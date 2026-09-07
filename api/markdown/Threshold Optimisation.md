@@ -1,37 +1,114 @@
----
-public: true
----
-
-# Threshold Optimisation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:threshold-optimisation", "@type":"Page", "title":"Threshold Optimisation", "vc:slug":"threshold-optimisation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:threshold-optimisation",
+  "@type": "Page",
+  "title": "Threshold Optimisation",
+  "vc:slug": "threshold-optimisation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:threshold-optimisation",
-  "@type":"Class",
-  "label":"Threshold Optimisation",
-  "definition":"Threshold optimisation is the process of selecting the decision boundary applied to a model's continuous scores so that discrete predictions best satisfy a chosen objective. By tuning where a probability or score is converted into a class label, practitioners trade off precision against recall, manage class imbalance, and satisfy fairness or cost constraints. It is a post-hoc technique that adjusts operating points without retraining the underlying model.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"},{"@id":"urn:ngm:class:performance-metrics","label":"Performance Metrics"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:fairness-metrics","label":"Fairness Metrics"},{"@id":"urn:ngm:class:bias-mitigation-techniques","label":"Bias Mitigation Techniques"}],
-    "hasPart":[{"@id":"urn:ngm:class:classification-threshold","label":"Classification Threshold"},{"@id":"urn:ngm:class:decision-threshold","label":"Decision Threshold"}],
-    "uses":[{"@id":"urn:ngm:class:roc-curve","label":"ROC Curve"},{"@id":"urn:ngm:class:model-calibration","label":"Model Calibration"}],
-    "supports":[{"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"}],
-    "implements":[{"@id":"urn:ngm:class:bias-mitigation-techniques","label":"Bias Mitigation Techniques"}],
-    "dependsOn":[{"@id":"urn:ngm:class:model-calibration","label":"Model Calibration"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:equalized-odds","label":"Equalized Odds"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:fairness-in-machine-learning","label":"Fairness In Machine Learning"}],
-    "relatedTo":[{"@id":"urn:ngm:class:machine-learning-model","label":"Machine Learning Model"},{"@id":"urn:ngm:class:classification-threshold","label":"Classification Threshold"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:threshold-optimisation",
+  "@type": "Class",
+  "label": "Threshold Optimisation",
+  "definition": "Threshold optimisation is the process of selecting the decision boundary applied to a model's continuous scores so that discrete predictions best satisfy a chosen objective. By tuning where a probability or score is converted into a class label, practitioners trade off precision against recall, manage class imbalance, and satisfy fairness or cost constraints. It is a post-hoc technique that adjusts operating points without retraining the underlying model.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:performance-metrics",
+      "label": "Performance Metrics"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:classification-threshold",
+        "label": "Classification Threshold"
+      },
+      {
+        "@id": "urn:ngm:class:decision-threshold",
+        "label": "Decision Threshold"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "@id": "urn:ngm:class:model-calibration",
+        "label": "Model Calibration"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:model-calibration",
+        "label": "Model Calibration"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:equalized-odds",
+        "label": "Equalized Odds"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness In Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:classification-threshold",
+        "label": "Classification Threshold"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

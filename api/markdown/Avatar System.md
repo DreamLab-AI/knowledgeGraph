@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Avatar System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -217,62 +212,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:avatar-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:087ef4a9334471dc730502af4210868687b8f887ec144814440ff993f66e32db"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Animation Controller]]",
-      "resolved": "urn:visionflow:linked:animation-controller",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Embodied Presence]]",
-      "resolved": "urn:visionflow:linked:embodied-presence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Input Processing]]",
-      "resolved": "urn:visionflow:linked:input-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Social Interaction]]",
-      "resolved": "urn:visionflow:linked:social-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Representation]]",
-      "resolved": "urn:visionflow:linked:user-representation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Character System]]",
-      "resolved": "urn:visionflow:linked:virtual-character-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Rendering Engine]]",
-      "resolved": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.

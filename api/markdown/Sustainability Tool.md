@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sustainability Tool
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,19 +46,40 @@ public: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"}
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:technology-ecosystem", "label": "Technology Ecosystem"},
-      {"@id": "urn:ngm:class:technology-infrastructure", "label": "Technology Infrastructure"}
+      {
+        "@id": "urn:ngm:class:technology-ecosystem",
+        "label": "Technology Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:technology-infrastructure",
+        "label": "Technology Infrastructure"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"}
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
     ]
   },
   "provenance": {
@@ -73,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sustainability-tool:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0455944192ff3c2ef46cb4275a0063eb2afb828cff6d00e59117155ada83920b"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Sustainability Tool is a software or analytical instrument used to measure, monitor, and optimise the environmental impact of digital systems, virtual environments, and technology infrastructure. In the metaverse context such tools address energy monitoring of rendering workloads, carbon footprint tracking for data-centre operations, and lifecycle assessment of hardware, enabling organisations to meet regulatory and voluntary environmental commitments.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Accessibility Tree
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,35 +198,89 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-    {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+    {
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    },
+    {
+      "@id": "urn:ngm:class:user-interface",
+      "label": "User Interface"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:aria-role", "label": "ARIA Role"},
-      {"@id": "urn:ngm:class:accessible-name", "label": "Accessible Name"},
-      {"@id": "urn:ngm:class:aria-state", "label": "ARIA State"},
-      {"@id": "urn:ngm:class:focus-management", "label": "Focus Management"}
+      {
+        "@id": "urn:ngm:class:aria-role",
+        "label": "ARIA Role"
+      },
+      {
+        "@id": "urn:ngm:class:accessible-name",
+        "label": "Accessible Name"
+      },
+      {
+        "@id": "urn:ngm:class:aria-state",
+        "label": "ARIA State"
+      },
+      {
+        "@id": "urn:ngm:class:focus-management",
+        "label": "Focus Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:document-object-model", "label": "Document Object Model"},
-      {"@id": "urn:ngm:class:wai-aria", "label": "WAI-ARIA"},
-      {"@id": "urn:ngm:class:semantic-html", "label": "Semantic HTML"}
+      {
+        "@id": "urn:ngm:class:document-object-model",
+        "label": "Document Object Model"
+      },
+      {
+        "@id": "urn:ngm:class:wai-aria",
+        "label": "WAI-ARIA"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-html",
+        "label": "Semantic HTML"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:assistive-technology", "label": "Assistive Technology"},
-      {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"},
-      {"@id": "urn:ngm:class:browser-automation", "label": "Browser Automation"},
-      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"}
+      {
+        "@id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      },
+      {
+        "@id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:core-accessibility-api-mappings", "label": "Core Accessibility API Mappings"},
-      {"@id": "urn:ngm:class:wcag-2-2", "label": "WCAG 2.2"}
+      {
+        "@id": "urn:ngm:class:core-accessibility-api-mappings",
+        "label": "Core Accessibility API Mappings"
+      },
+      {
+        "@id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG 2.2"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"},
-      {"@id": "urn:ngm:class:platform-accessibility-api", "label": "Platform Accessibility API"},
-      {"@id": "urn:ngm:class:chrome-devtools-protocol", "label": "Chrome DevTools Protocol"}
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      },
+      {
+        "@id": "urn:ngm:class:platform-accessibility-api",
+        "label": "Platform Accessibility API"
+      },
+      {
+        "@id": "urn:ngm:class:chrome-devtools-protocol",
+        "label": "Chrome DevTools Protocol"
+      }
     ]
   },
   "quality": 0.92,
@@ -239,201 +288,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:accessibility-tree:20260620",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:accessibility-tree"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Accessibility]]",
-      "resolved": "urn:visionflow:linked:accessibility",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Accessible Name Computation]]",
-      "resolved": "urn:visionflow:linked:accessible-name-computation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Alternative Text]]",
-      "resolved": "urn:visionflow:linked:alternative-text",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ARIA Role]]",
-      "resolved": "urn:visionflow:linked:aria-role",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ARIA State]]",
-      "resolved": "urn:visionflow:linked:aria-state",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Assistive Technology]]",
-      "resolved": "urn:visionflow:linked:assistive-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Assistive Technology Compatibility]]",
-      "resolved": "urn:visionflow:linked:assistive-technology-compatibility",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[axe-core]]",
-      "resolved": "urn:visionflow:linked:axe-core",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Browser Automation]]",
-      "resolved": "urn:visionflow:linked:browser-automation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Chrome DevTools Protocol]]",
-      "resolved": "urn:visionflow:linked:chrome-devtools-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Use and Browser Agents]]",
-      "resolved": "urn:visionflow:linked:computer-use-and-browser-agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Core Accessibility API Mappings]]",
-      "resolved": "urn:visionflow:linked:core-accessibility-api-mappings",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Document Object Model]]",
-      "resolved": "urn:visionflow:linked:document-object-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Focus Management]]",
-      "resolved": "urn:visionflow:linked:focus-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human Computer Interaction]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[HTML Accessibility API Mappings]]",
-      "resolved": "urn:visionflow:linked:html-accessibility-api-mappings",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Inclusive Design]]",
-      "resolved": "urn:visionflow:linked:inclusive-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[JAWS Screen Reader]]",
-      "resolved": "urn:visionflow:linked:jaws-screen-reader",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Keyboard Navigation]]",
-      "resolved": "urn:visionflow:linked:keyboard-navigation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Large Language Model]]",
-      "resolved": "urn:visionflow:linked:large-language-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Context Protocol]]",
-      "resolved": "urn:visionflow:linked:model-context-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NVDA Screen Reader]]",
-      "resolved": "urn:visionflow:linked:nvda-screen-reader",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Playwright MCP]]",
-      "resolved": "urn:visionflow:linked:playwright-mcp",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Semantic HTML]]",
-      "resolved": "urn:visionflow:linked:semantic-html",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Universal Design]]",
-      "resolved": "urn:visionflow:linked:universal-design",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VoiceOver]]",
-      "resolved": "urn:visionflow:linked:voiceover",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[WAI-ARIA]]",
-      "resolved": "urn:visionflow:linked:wai-aria",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[WCAG 2.2]]",
-      "resolved": "urn:visionflow:linked:wcag-2-2",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Web Accessibility Initiative]]",
-      "resolved": "urn:visionflow:linked:web-accessibility-initiative",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Web Agent]]",
-      "resolved": "urn:visionflow:linked:web-agent",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[WebDriver BiDi]]",
-      "resolved": "urn:visionflow:linked:webdriver-bidi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Windows UI Automation]]",
-      "resolved": "urn:visionflow:linked:windows-ui-automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agentic AI]]",
-      "resolved": "urn:visionflow:owl:class:agentic-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Task Execution]]",
-      "resolved": "urn:visionflow:linked:autonomous-task-execution",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Platform Accessibility API]]",
-      "resolved": "urn:visionflow:owl:class:platform-accessibility-api",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -562,7 +416,7 @@ public: true
         ObjectAllValuesFrom(ai:hasPart ai:SemanticNode))
       ```
   - ## About
-    - The Accessibility Tree is one of the most consequential data structures in modern web engineering, yet it remained largely invisible to practitioners outside disability technology until the mass deployment of [[Agentic AI]] systems in 2024–2026 brought it into mainstream engineering discourse. Its roots lie in the early 1990s, when Microsoft Research developed the MSAA (Microsoft Active Accessibility) protocol to expose Windows application state to external clients; subsequent generations of platform APIs — IAccessible2, [[Windows UI Automation]] on Windows, ATK/AT-SPI on Linux, and NSAccessibility/AXUIElement on macOS and iOS — generalised the concept to structured, queryable trees of semantic objects. The W3C Web Accessibility Initiative formalised the browser analogue through the [[WAI-ARIA]] specification (first published as a Recommendation in 2008, with WAI-ARIA 1.2 reaching Recommendation status in 2023 and WAI-ARIA 1.3 in active development as of 2026) together with the [[Core Accessibility API Mappings]] (Core-AAM) suite that specifies exactly how each ARIA role and property must be surfaced to each platform API. The decision to standardise AX tree semantics through an open W3C process rather than through platform-proprietary APIs was foundational: it meant that any conformant browser could expose a consistent semantic model to both [[Assistive Technology]] and programmatic automation clients, regardless of the underlying rendering engine's internal structure.
+    - The Accessibility Tree is one of the most consequential data structures in modern web engineering, yet it remained largely invisible to practitioners outside disability technology until the mass deployment of [[Agentic AI]] systems in 2024–2026 brought it into mainstream engineering discourse. Its roots lie in the early 1990s, when Microsoft Research developed the MSAA (Microsoft Active Accessibility) protocol to expose Windows application state to external clients; subsequent generations of platform APIs — IAccessible2, [[Windows UI Automation]] on Windows, ATK/AT-SPI on Linux, and NSAccessibility/AXUIElement on macOS and iOS — generalised the concept to structured, queryable trees of semantic objects. The W3C Web Accessibility Initiative formalised the browser analogue through the [[WAI-ARIA]] specification (first published as a Recommendation in 2008, with WAI-ARIA 1.2 reaching Recommendation status in 2023 and WAI-ARIA 1.3 in active development as of 2026) together with the [[Core Accessibility API Mappings]] (Core-AAM) suite that specifies exactly how each ARIA role and property must be surfaced to each platform API. The decision to standardise AX tree semantics through an open W3C process rather than through platform-proprietary APIs was foundational: it meant that any conformant browser [private] expose a consistent semantic model to both [[Assistive Technology]] and programmatic automation clients, regardless of the underlying rendering engine's internal structure.
 
     - In web browsers, the Accessibility Tree is constructed as a side-effect of the layout and render pipeline. Chrome's Blink rendering engine maintains a parallel AXObject tree that shadows the DOM; Firefox uses its own Gecko-based accessibility tree; Safari's WebKit exposes the tree through its NSAccessibility layer. The computation is non-trivial: browsers must resolve the `aria-hidden` attribute (which prunes entire subtrees from the tree), compute accessible names through the multi-step W3C Accessible Name and Description Computation algorithm (ANAM), infer implicit ARIA roles from native [[Semantic HTML]] semantics (a `<button>` element maps to role button even without an explicit aria-role attribute), and propagate live region semantics so that dynamic content changes fire appropriate platform accessibility events. WCAG 2.2, which became ISO/IEC 40500:2025, mandates through Success Criterion 4.1.2 that all interactive components expose a valid name, role, and state to the accessibility tree — failures here prevent screen reader users from perceiving or operating the element at all. The ANAM algorithm deserves particular attention: it implements a cascading priority sequence that first checks aria-labelledby (which can aggregate text from multiple DOM nodes), then aria-label (for inline string overrides), then native HTML label associations (via the `for` attribute or wrapping label element), then title attributes, then placeholder content (for text inputs), and finally falls back to the element's own text content — with separate computation paths for images (which check alt first), form controls (which check value), and group elements (which aggregate child names). This complexity means that a malformed or incomplete ANAM implementation in a browser can produce AX tree nodes with empty or misleading accessible names even when the developer has added ARIA attributes, creating subtle accessibility bugs that are difficult to diagnose without specialised tooling.
 
@@ -572,7 +426,7 @@ public: true
 
     - The relationship between the Accessibility Tree and [[Semantic HTML]] is one of progressive enhancement with computable fallbacks. Native HTML elements carry implicit ARIA roles and properties that browsers map to the AX tree automatically: `<button>` maps to role button with implicit focusable and interactive semantics; `<nav>` maps to role navigation; `<main>` maps to role main; `<input type="checkbox">` maps to role checkbox with a checked state reflecting the element's checked property. ARIA attributes serve two purposes: they can override implicit role mappings (allowing a `<div>` to function as a button by adding `role="button"`) and they can provide semantic enrichment that HTML alone cannot express (such as aria-expanded for disclosure widgets, aria-live for dynamic content regions, and aria-owns for non-hierarchical parent-child relationships). The developer guideline "use semantic HTML first, reach for ARIA only when HTML semantics are insufficient" reflects the fact that browser-computed implicit mappings are more reliable than manually authored ARIA attributes — human error in ARIA authoring is a major source of AX tree defects. The axe-core rule engine codifies over 100 such rules, running programmatically against the AX tree to identify common defects in CI pipelines and browser-based audit tools.
 
-    - The economic case for AX tree investment has shifted materially between 2022 and 2026. Prior to the mass adoption of [[Large Language Model]] agents, the primary business drivers for AX tree compliance were regulatory risk (accessibility law enforcement actions, which were relatively rare and typically resolved through remediation undertakings) and reputational risk (media coverage of inaccessible government services or high-profile brands, which had moderate but short-lived reputational impact). The emergence of AI agent ecosystems in 2023–2025 has added a third driver with immediate commercial impact: AI agent readiness. Organisations that deployed AI-powered customer service chatbots, shopping assistants, or productivity tools discovered that these agents could not reliably interact with their own web properties if those properties had poor AX tree coverage — a self-inflicted compatibility problem that affected AI agent task completion rates on commercial transactions. The IsAgentReady.com AI agent readiness scanning service (launched 2025) provided organisations with an AX tree completeness score specifically framed around AI agent compatibility, offering a business metric distinct from disability compliance that motivated investment from engineering teams not historically engaged with accessibility. This commercial alignment between accessibility compliance and AI agent readiness is expected to persist and strengthen as AI agents become mainstream interfaces for web commerce, healthcare portals, government services, and enterprise software — creating a durable second business case for AX tree investment that supplements (and in some commercial contexts eclipses) the original disability access mandate.
+    - The economic case for AX tree investment has shifted materially between 2022 and 2026. Prior to the mass adoption of [[Large Language Model]] agents, the primary business drivers for AX tree compliance were regulatory risk (accessibility law enforcement actions, which were relatively rare and typically resolved through remediation undertakings) and reputational risk (media coverage of inaccessible government services or high-profile brands, which had moderate but short-lived reputational impact). The emergence of AI agent ecosystems in 2023–2025 has added a third driver with immediate commercial impact: AI agent readiness. Organisations that deployed AI-powered customer service chatbots, shopping assistants, or productivity tools discovered that these agents [private] not reliably interact with their own web properties if those properties had poor AX tree coverage — a self-inflicted compatibility problem that affected AI agent task completion rates on commercial transactions. The IsAgentReady.com AI agent readiness scanning service (launched 2025) provided organisations with an AX tree completeness score specifically framed around AI agent compatibility, offering a business metric distinct from disability compliance that motivated investment from engineering teams not historically engaged with accessibility. This commercial alignment between accessibility compliance and AI agent readiness is expected to persist and strengthen as AI agents become mainstream interfaces for web commerce, healthcare portals, government services, and enterprise software — creating a durable second business case for AX tree investment that supplements (and in some commercial contexts eclipses) the original disability access mandate.
 
     - The information-theoretic properties of the AX tree make it a particularly efficient substrate for AI agent reasoning about user interfaces. A typical web page's visual render tree contains hundreds of thousands of style and layout nodes; its DOM tree contains thousands of structural nodes; but its AX tree — after pruning presentational nodes, hidden nodes, and nodes with role=none — typically contains between 50 and 500 semantically meaningful nodes even for complex applications. This compression from the full DOM (which may have 2,000–10,000 nodes) to the AX tree (50–500 nodes) is not lossy with respect to interaction semantics: all information needed to understand what the page presents and what actions are available is preserved in the AX tree, while layout, styling, and purely structural scaffolding are discarded. For [[Large Language Model]] agents operating under token constraints, this compression is practically significant: feeding an LLM an AX tree snapshot of a complex web application may consume 2,000–8,000 tokens, whereas an equivalent screenshot (encoded as a base64 PNG) might consume 20,000–100,000 tokens in the multimodal encoding — and the AX tree additionally provides structured, queryable information rather than requiring the model to perform visual understanding on pixel data. Research in 2024–2025 demonstrated that AX-tree-based agents consistently outperformed screenshot-based agents on text-heavy tasks (form filling, navigation, text search) while performing comparably on image-centric tasks (visual product selection, chart reading) — a finding that has driven the industry toward hybrid approaches that use AX trees as the primary representation and screenshots as supplementary visual context for image-centric interactions.
 
@@ -596,7 +450,7 @@ public: true
     - **XR and Spatial Interfaces**: The W3C XR Accessibility User Requirements (XAUR) document is extending AX tree concepts to WebXR and native spatial computing interfaces (Apple Vision Pro visionOS, Meta Horizon OS), where 3D objects require accessible names, roles, and spatial positions for both screen reader users (who need audio descriptions of 3D scenes) and AI navigation agents (who need to identify interactive objects in three-dimensional space by semantic identity). The emerging pattern serialises 3D accessibility nodes into AX tree format with spatial bounding box properties, enabling existing screen reader and agent tooling to operate in 3D environments.
 
   - ## Academic Context
-    - The theoretical foundations of the Accessibility Tree lie in Christopher Ganczarski and colleagues' 1992 Microsoft Active Accessibility (MSAA) design, which introduced the concept of an in-process proxy object (IAccessible) exposing UI elements' role, name, state, and value to external clients via COM interfaces. MSAA was created to address a fundamental asymmetry in graphical user interfaces: applications rendered their interfaces visually using painting APIs that produced pixel grids, but assistive technologies needed semantic information about what was painted — what a control was, what it was named, what state it was in — rather than its visual appearance. The IAccessible proxy pattern (object model overlaid on the application's own UI object tree) proved workable but insufficient: it relied on applications correctly implementing the IAccessible COM interface, which many did not, and it could not represent rich text, hierarchical structures, or the semantic complexity of modern web content. IBM's IAccessible2 (2006) addressed these gaps by extending MSAA with additional interfaces covering rich text, hyperlinks, and spreadsheet cells. The parallel development of the ATK (Accessibility Toolkit) and AT-SPI (Assistive Technology Service Provider Interface) stack on Linux, driven by the GNOME Foundation's Accessibility Programme and Sun Microsystems' StarOffice accessibility project in the late 1990s and early 2000s, established a cross-platform pattern demonstrating that a platform accessibility API could be designed as an open, bus-based inter-process communication system rather than an in-process COM interface. The W3C [[Web Accessibility Initiative]] systematised the browser-specific variant through the WAI-ARIA project (specification work began 2006, first Recommendation published 2008), with key contributors including Gregg Vanderheiden (University of Wisconsin-Madison Trace Center), Joanmarie Diggs (Igalia, core author of the ARIA Practices Guide and principal developer of NVDA's ARIA support), Michael Cooper (W3C Staff), and Richard Schwerdtfeger (IBM, who co-chaired the ARIA Working Group through its first decade). The University of Washington's Paul G. Allen School (particularly the CREATE lab led by Richard Ladner and the DO-IT programme for students with disabilities) has contributed foundational research on accessible computing interfaces and switch-access interaction design, both of which depend critically on AX tree structure and focus management.
+    - The theoretical foundations of the Accessibility Tree lie in Christopher Ganczarski and colleagues' 1992 Microsoft Active Accessibility (MSAA) design, which introduced the concept of an in-process proxy object (IAccessible) exposing UI elements' role, name, state, and value to external clients via COM interfaces. MSAA was created to address a fundamental asymmetry in graphical user interfaces: applications rendered their interfaces visually using painting APIs that produced pixel grids, but assistive technologies needed semantic information about what was painted — what a control was, what it was named, what state it was in — rather than its visual appearance. The IAccessible proxy pattern (object model overlaid on the application's own UI object tree) proved workable but insufficient: it relied on applications correctly implementing the IAccessible COM interface, which many did not, and it [private] not represent rich text, hierarchical structures, or the semantic complexity of modern web content. IBM's IAccessible2 (2006) addressed these gaps by extending MSAA with additional interfaces covering rich text, hyperlinks, and spreadsheet cells. The parallel development of the ATK (Accessibility Toolkit) and AT-SPI (Assistive Technology Service Provider Interface) stack on Linux, driven by the GNOME Foundation's Accessibility Programme and Sun Microsystems' StarOffice accessibility project in the late 1990s and early 2000s, established a cross-platform pattern demonstrating that a platform accessibility API [private] be designed as an open, bus-based inter-process communication system rather than an in-process COM interface. The W3C [[Web Accessibility Initiative]] systematised the browser-specific variant through the WAI-ARIA project (specification work began 2006, first Recommendation published 2008), with key contributors including Gregg Vanderheiden (University of Wisconsin-Madison Trace Center), Joanmarie Diggs (Igalia, core author of the ARIA Practices Guide and principal developer of NVDA's ARIA support), Michael Cooper (W3C Staff), and Richard Schwerdtfeger (IBM, who co-chaired the ARIA Working Group through its first decade). The University of Washington's Paul G. Allen School (particularly the CREATE lab led by Richard Ladner and the DO-IT programme for students with disabilities) has contributed foundational research on accessible computing interfaces and switch-access interaction design, both of which depend critically on AX tree structure and focus management.
     - The primary academic venues for AX tree research are ASSETS (ACM SIGACCESS Conference on Computers and Accessibility, annual since 1994) and CHI (ACM Conference on Human Factors in Computing Systems). ASSETS has published longitudinal studies of screen reader compatibility with web frameworks, empirical measurements of accessible name coverage defects across web platforms, and evaluation frameworks for AX tree quality metrics. The WebAIM community's annual Million analysis (published each February since 2019) has become the field's primary longitudinal dataset, tracking AX tree defect prevalence across the top 1,000,000 home pages. Key findings from the 2025 report: 94.8% of pages have WCAG failures; average 51 errors per page; most common failure types are missing alt text (24.4% of pages), absent form input labels (28.4% of pages), and empty links (27.2% of pages) — all AX tree accessible-name defects. The convergence of AI agent research and accessibility tree scholarship accelerated dramatically in 2023–2026: Mind2Web (Deng et al., 2023, Arxiv:2306.06070) used simplified AX tree snapshots as the primary web representation for training and evaluating web navigation agents, establishing AX-tree-as-agent-substrate as a research pattern that all subsequent major web agent benchmarks (WebArena, WorkArena, VisualWebArena) adopted. WebArena (Yao et al., 2023, Arxiv:2307.13854) provided a realistic browser task evaluation environment with a diverse set of websites spanning e-commerce, forum navigation, and software project management, in which AX tree fidelity was a latent variable affecting agent success rates. The 2026 CHI paper "A11y-CUA Dataset: Characterising the Accessibility Gap in Computer Use Agents" (Arxiv:2602.09310) made this relationship explicit and quantitative, measuring agent task completion rates across a controlled set of websites with varying WCAG compliance levels and demonstrating a near-linear relationship between accessible name coverage and agent task success — the first paper to empirically establish that accessibility compliance is a prerequisite for AI agent readiness, not merely a disability accommodation.
     - The W3C ARIA Working Group (re-chartered 2024, with participation from Apple, Google, Microsoft, Mozilla, Igalia, Deque Systems, TPGi, and university representatives) coordinates the WAI-ARIA specification, the Core Accessibility API Mappings suite (Core-AAM, DPUB-AAM for digital publishing, SVG-AAM for scalable vector graphics), the HTML Accessibility API Mappings document (HTML-AAM), the Accessible Name and Description Computation specification (ACCNAME), and the ARIA Practices Guide (APG). The WCAG Working Group is developing WCAG 3.0 (expected to reach Candidate Recommendation status 2027, Recommendation 2028) using a new outcome-based scoring model, Silver outcomes framework, that replaces the current binary pass/fail criterion model and introduces quantitative scoring with bronze/silver/gold conformance levels. WCAG 3.0 explicitly addresses dynamically rendered content, AI-generated and personalisable interfaces, and emerging input modalities — all of which have implications for AX tree construction that WCAG 2.x's static-page assumptions cannot fully accommodate. The W3C WebDriver Working Group is developing WebDriver BiDi's accessibility module (specification in active development 2025–2026), which will standardise bidirectional AX tree access using a browser-agnostic protocol — a development that will make AX-tree-based browser automation and assistive technology client development tractable without browser-specific CDP extensions, significantly lowering the barrier to cross-browser AX tree tooling.
     - Key academic-industry partnerships driving AX tree research and standards development include: Deque Systems' collaboration with university accessibility research groups (including Michigan State University's Usability/Accessibility Research and Consulting lab and the University of Illinois' Disability Resources and Educational Services programme) on axe-core rule development and empirical validation of automated accessibility testing heuristics; Microsoft Research's Playwright team collaboration with W3C's WebDriver and ARIA Working Groups on standardising AX tree access APIs; the Harvard Web Accessibility Research Group's longitudinal studies of AX tree quality trends across large web corpora; Google's Chrome Accessibility team's contributions to Core-AAM specification work and Chrome DevTools Lighthouse accessibility audit integration; and Apple's Voice Control and VoiceOver engineering teams' contributions to ARIA Practices Guide patterns for touch-based and voice-first interaction paradigms.
@@ -624,7 +478,7 @@ public: true
     - **Agent-specific ARIA extensions**: Proposals within the W3C ARIA WG (as of 2025–2026 discussion documents) explore agent-specific ARIA attributes that would allow web developers to annotate elements with machine-readable semantic signals specifically for AI agent consumption: `aria-agent-action` to declare what automated actions an element supports, `aria-agent-context` to provide machine-readable descriptions of element purpose beyond the accessible name, and `aria-agent-priority` to indicate which elements are most relevant for common task types. These extensions would extend the AX tree's role from an assistive technology substrate to a universal machine interface contract, enabling web developers to optimise their sites for both human and AI clients in a single markup layer.
     - **Semantic completeness as a quality metric**: Automated AX tree quality metrics — completeness ratio (percentage of interactive elements with non-empty accessible names), role coverage (percentage of structural elements using semantically correct roles), live-region coverage (percentage of dynamic content marked with aria-live), and focus-order integrity (percentage of focusable elements in logical reading sequence) — are expected to become tracked DevOps KPIs by 2028, monitored continuously alongside Lighthouse scores and Core Web Vitals. AI-agent-readiness benchmarking tools (such as IsAgentReady.com's scanner, launched 2025) are already offering AX tree completeness scoring as a commercial service targeting web teams who want to ensure their sites work with AI shopping assistants, voice agents, and automated task completion services.
     - **AX tree for spatial and XR interfaces**: The W3C XR Accessibility User Requirements (XAUR) specification is extending AX tree concepts to WebXR environments and native spatial computing platforms (Apple Vision Pro visionOS, Meta Horizon OS, Microsoft Mesh). In 3D interfaces, accessibility nodes require not just role, name, and state but also spatial bounding box coordinates, distance from viewer, and semantic location within a 3D scene graph. The emergent XAUR model serialises 3D accessibility nodes into an extended AX tree format that can be consumed by existing screen reader and AI agent tooling, enabling spatial computing environments to leverage the same tool ecosystem developed for web accessibility — a significant engineering efficiency that avoids reinventing the accessibility substrate for each new computing paradigm.
-    - **Foundation model integration for AX tree repair**: Research directions in 2026 include using LLMs to automatically repair AX tree defects at runtime: models trained on accessible HTML can infer appropriate accessible names for unlabelled buttons from visual context and surrounding text, suggest ARIA role corrections for elements with semantic role mismatches, and generate meaningful alt text for images using multimodal vision-language models. These automated repair capabilities could be deployed as browser extensions, development tools, or server-side proxies that improve AX tree quality for legacy web applications without requiring source code changes — significantly lowering the remediation cost for organisations with large accessible-name-coverage deficits in their existing web estates.
+    - **Foundation model integration for AX tree repair**: Research directions in 2026 include using LLMs to automatically repair AX tree defects at runtime: models trained on accessible HTML can infer appropriate accessible names for unlabelled buttons from visual context and surrounding text, suggest ARIA role corrections for elements with semantic role mismatches, and generate meaningful alt text for images using multimodal vision-language models. These automated repair capabilities [private] be deployed as browser extensions, development tools, or server-side proxies that improve AX tree quality for legacy web applications without requiring source code changes — significantly lowering the remediation cost for organisations with large accessible-name-coverage deficits in their existing web estates.
     - **AX tree standardisation for native and desktop applications**: While web accessibility trees are well-standardised through WAI-ARIA and Core-AAM, native desktop application AX trees (Windows UIA, macOS AXUIElement, Linux ATK/AT-SPI) remain less consistently implemented and less well-mapped to LLM-consumable formats. Research in 2025–2026 is developing desktop-application AX tree serialisation formats analogous to [[Playwright MCP]]'s web AX snapshot format, potentially enabling the same agent frameworks developed for web automation to operate on Windows, macOS, and Linux desktop applications — a prerequisite for the "autonomous computer use" agentic paradigm pioneered by Anthropic's Computer Use feature.
 
   - ## Research & Literature

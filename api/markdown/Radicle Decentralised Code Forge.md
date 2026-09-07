@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Radicle]]
-# Radicle Decentralised Code Forge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,18 +47,42 @@ elevatedFrom:: [[Radicle]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ]
   },
   "provenance": {
@@ -74,32 +92,6 @@ elevatedFrom:: [[Radicle]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:radicle:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1921fdf89adaed47eb0dc0300b4a4c31536cabf97acf218a396fb469847b4345"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[🤖]]",
-      "resolved": "urn:visionflow:linked:untitled",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Radicle is a decentralised, peer-to-peer code collaboration platform built on Git that eliminates dependence on centralised forges. It uses a content-addressed, cryptographically signed data model where repositories are identified by public keys rather than server-hosted URLs, enabling sovereign code hosting, offline collaboration, and censorship-resistant software development. Radicle integrates with Ethereum-based smart contracts for governance and funding.

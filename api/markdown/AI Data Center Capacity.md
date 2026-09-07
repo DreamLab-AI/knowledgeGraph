@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Data Center Capacity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-data-center-capacity",
   "title": "AI Data Center Capacity",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Training Cluster", "xAI Colossus 2"],
+  "vc:outboundWikilinks": [
+    "Training Cluster",
+    "xAI Colossus 2"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:computational-infrastructure", "label": "Computational Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computational-infrastructure",
+      "label": "Computational Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:computational-infrastructure", "label": "Computational Infrastructure"}, {"@id": "urn:ngm:class:training", "label": "Training"}, {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Spectrum Allocation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,42 +20,102 @@ public: true
   "definition": "Spectrum allocation is the regulatory and technical process by which electromagnetic frequency bands are assigned to specific services, operators, or technologies to enable wireless communication without harmful interference. Governments and international bodies define how the radio spectrum is divided, licensed, and managed across uses ranging from mobile broadband and satellite communication to broadcasting and scientific research. Efficient allocation balances competing commercial, public safety, and scientific demands while adapting to evolving technologies such as 5G and millimetre-wave systems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}, {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-      {"@id": "urn:ngm:class:interference-management", "label": "Interference Management"}
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:interference-management",
+        "label": "Interference Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:satellite-communication", "label": "Satellite Communication"},
-      {"@id": "urn:ngm:class:wireless-network", "label": "Wireless Network"},
-      {"@id": "urn:ngm:class:mobile-broadband", "label": "Mobile Broadband"}
+      {
+        "@id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-network",
+        "label": "Wireless Network"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-broadband",
+        "label": "Mobile Broadband"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:standards", "label": "Standards"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:frequency-band", "label": "Frequency Band"},
-      {"@id": "urn:ngm:class:spectrum-licensing", "label": "Spectrum Licensing"}
+      {
+        "@id": "urn:ngm:class:frequency-band",
+        "label": "Frequency Band"
+      },
+      {
+        "@id": "urn:ngm:class:spectrum-licensing",
+        "label": "Spectrum Licensing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:auction-mechanism", "label": "Auction Mechanism"},
-      {"@id": "urn:ngm:class:dynamic-spectrum-access", "label": "Dynamic Spectrum Access"}
+      {
+        "@id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-spectrum-access",
+        "label": "Dynamic Spectrum Access"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"},
-      {"@id": "urn:ngm:class:broadcasting", "label": "Broadcasting"}
+      {
+        "@id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "@id": "urn:ngm:class:broadcasting",
+        "label": "Broadcasting"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:itu", "label": "ITU"}
+      {
+        "@id": "urn:ngm:class:itu",
+        "label": "ITU"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:unlicensed-spectrum", "label": "Unlicensed Spectrum"}
+      {
+        "@id": "urn:ngm:class:unlicensed-spectrum",
+        "label": "Unlicensed Spectrum"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:cognitive-radio", "label": "Cognitive Radio"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-radio",
+        "label": "Cognitive Radio"
+      }
     ]
   },
   "sameAs": [],

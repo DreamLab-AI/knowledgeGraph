@@ -1,36 +1,124 @@
----
-public: true
----
-
-# Robot Programming
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:robot-programming", "@type":"Page", "title":"Robot Programming", "vc:slug":"robot-programming", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:robot-programming",
+  "@type": "Page",
+  "title": "Robot Programming",
+  "vc:slug": "robot-programming",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:robot-programming",
-  "@type":"Class",
-  "label":"Robot Programming",
-  "definition":"Robot programming is the discipline of specifying the tasks, motions, and decision logic that a robot executes, ranging from low-level joint commands to high-level behavioural goals. It encompasses textual programming languages, graphical and teach-by-demonstration interfaces, and middleware frameworks that connect perception, planning, and actuation. The aim is to translate human intent into reliable, repeatable robot behaviour while respecting safety, timing, and hardware constraints.",
-  "domain":"robotics",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:robotics","label":"Robotics"},{"@id":"urn:ngm:class:robot-operating-system","label":"Robot Operating System"}],
-  "relations":{
-    "supports":[{"@id":"urn:ngm:class:robot-control","label":"Robot Control"},{"@id":"urn:ngm:class:robotic-manipulation","label":"Robotic Manipulation"},{"@id":"urn:ngm:class:automation","label":"Automation"}],
-    "enables":[{"@id":"urn:ngm:class:trajectory-planning","label":"Trajectory Planning"},{"@id":"urn:ngm:class:motion-planning","label":"Motion Planning"},{"@id":"urn:ngm:class:industrial-robot","label":"Industrial Robot"}],
-    "relatedTo":[{"@id":"urn:ngm:class:robot-operating-system","label":"Robot Operating System"},{"@id":"urn:ngm:class:simulation","label":"Simulation"},{"@id":"urn:ngm:class:digital-twin","label":"Digital Twin"}],
-    "uses":[{"@id":"urn:ngm:class:programming-language","label":"Programming Language"},{"@id":"urn:ngm:class:robot-operating-system","label":"Robot Operating System"}],
-    "requires":[{"@id":"urn:ngm:class:forward-kinematics","label":"Forward Kinematics"},{"@id":"urn:ngm:class:robot-control","label":"Robot Control"}],
-    "dependsOn":[{"@id":"urn:ngm:class:sensor-fusion","label":"Sensor Fusion"}],
-    "partOf":[{"@id":"urn:ngm:class:robotics","label":"Robotics"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:autonomous-vehicle","label":"Autonomous Vehicle"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:robot-programming",
+  "@type": "Class",
+  "label": "Robot Programming",
+  "definition": "Robot programming is the discipline of specifying the tasks, motions, and decision logic that a robot executes, ranging from low-level joint commands to high-level behavioural goals. It encompasses textual programming languages, graphical and teach-by-demonstration interfaces, and middleware frameworks that connect perception, planning, and actuation. The aim is to translate human intent into reliable, repeatable robot behaviour while respecting safety, timing, and hardware constraints.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ],
+  "relations": {
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

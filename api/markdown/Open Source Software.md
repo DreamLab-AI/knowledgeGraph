@@ -29,57 +29,147 @@
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:open-source-licence", "label": "Open Source Licence"},
-      {"@id": "urn:ngm:class:software-repository", "label": "Software Repository"},
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"}
+      {
+        "@id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "@id": "urn:ngm:class:software-repository",
+        "label": "Software Repository"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:intellectual-property-licence-instrument", "label": "Intellectual Property Licence Instrument"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-licence-instrument",
+        "label": "Intellectual Property Licence Instrument"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:software-supply-chain", "label": "Software Supply Chain"},
-      {"@id": "urn:ngm:class:community-driven-innovation", "label": "Community-Driven Innovation"},
-      {"@id": "urn:ngm:class:reproducible-research", "label": "Reproducible Research"}
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:community-driven-innovation",
+        "label": "Community-Driven Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:software-library", "label": "Software Library"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:package-manager", "label": "Package Manager"}
+      {
+        "@id": "urn:ngm:class:software-library",
+        "label": "Software Library"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:package-manager",
+        "label": "Package Manager"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:open-source-definition", "label": "Open Source Definition"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-definition",
+        "label": "Open Source Definition"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"},
-      {"@id": "urn:ngm:class:open-source-framework", "label": "Open Source Framework"},
-      {"@id": "urn:ngm:class:digital-public-goods", "label": "Digital Public Goods"}
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-framework",
+        "label": "Open Source Framework"
+      },
+      {
+        "@id": "urn:ngm:class:digital-public-goods",
+        "label": "Digital Public Goods"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-source-initiative", "label": "Open Source Initiative"}
+      {
+        "@id": "urn:ngm:class:open-source-initiative",
+        "label": "Open Source Initiative"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proprietary-software", "label": "Proprietary Software"},
-      {"@id": "urn:ngm:class:closed-source-software", "label": "Closed-Source Software"}
+      {
+        "@id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      },
+      {
+        "@id": "urn:ngm:class:closed-source-software",
+        "label": "Closed-Source Software"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:inner-source", "label": "Inner Source"},
-      {"@id": "urn:ngm:class:free-software-movement", "label": "Free Software Movement"},
-      {"@id": "urn:ngm:class:software-commons", "label": "Software Commons"}
+      {
+        "@id": "urn:ngm:class:inner-source",
+        "label": "Inner Source"
+      },
+      {
+        "@id": "urn:ngm:class:free-software-movement",
+        "label": "Free Software Movement"
+      },
+      {
+        "@id": "urn:ngm:class:software-commons",
+        "label": "Software Commons"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:open-source", "label": "Open Source"},
-    {"@id": "urn:ngm:class:foss", "label": "FOSS"},
-    {"@id": "urn:ngm:class:floss", "label": "FLOSS"}
+    {
+      "@id": "urn:ngm:class:open-source",
+      "label": "Open Source"
+    },
+    {
+      "@id": "urn:ngm:class:foss",
+      "label": "FOSS"
+    },
+    {
+      "@id": "urn:ngm:class:floss",
+      "label": "FLOSS"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Archaeological Site Reconstruction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:archaeological-site-reconstruction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1520231202e0c3f48d783ec863d8d0dc04ad8683b0bde895f29677ca9c79a280"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Educational Experiences]]",
-      "resolved": "urn:visionflow:linked:educational-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Heritage Preservation]]",
-      "resolved": "urn:visionflow:linked:heritage-preservation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Historical Research]]",
-      "resolved": "urn:visionflow:linked:historical-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Modelling]]",
-      "resolved": "urn:visionflow:owl:class:3-d-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Heritage]]",
-      "resolved": "urn:visionflow:owl:class:digital-heritage",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Photogrammetry]]",
-      "resolved": "urn:visionflow:owl:class:photogrammetry",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Tourism]]",
-      "resolved": "urn:visionflow:owl:class:virtual-tourism",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Archaeological Site Reconstruction refers to the use of 3D modeling, photogrammetry, LiDAR, and virtual reality technologies to create accurate digital representations of ancient sites, enabling study, documentation, preservation, and immersive public access to cultural heritage through realistic simulations of historical environments.

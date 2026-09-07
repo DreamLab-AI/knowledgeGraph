@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI IPO
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-ipo",
   "title": "AI IPO",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Frontier AI Companies", "Public Markets"],
+  "vc:outboundWikilinks": [
+    "Frontier AI Companies",
+    "Public Markets"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:frontier-ai", "label": "Frontier AI"}, {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

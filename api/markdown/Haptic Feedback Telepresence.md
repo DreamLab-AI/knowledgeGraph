@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-203-haptic-feedback-telepresence
----
-
-# Haptic Feedback Telepresence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -75,30 +68,72 @@ aliases:
   "qualityScore": 0.75,
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:telecollaboration-and-telepresence", "label": "Telecollaboration and Telepresence"}
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration-and-telepresence",
+        "label": "Telecollaboration and Telepresence"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:haptics", "label": "Haptics"},
-      {"@id": "urn:ngm:class:exoskeleton-robot", "label": "Exoskeleton Robot"},
-      {"@id": "urn:ngm:class:tactile-sensor", "label": "Tactile Sensor"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "@id": "urn:ngm:class:exoskeleton-robot",
+        "label": "Exoskeleton Robot"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:guaranteed-bandwidth", "label": "Guaranteed Bandwidth"}
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:guaranteed-bandwidth",
+        "label": "Guaranteed Bandwidth"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robotic-telepresence", "label": "Robotic Telepresence"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+      {
+        "@id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:tele-001-telepresence", "label": "TELE 001 telepresence"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:tele-001-telepresence",
+        "label": "TELE 001 telepresence"
+      }
     ]
   },
   "provenance": {
@@ -108,52 +143,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:haptic-feedback-telepresence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:912ef84907d23f21e6048b431075e3406305897b4affff0b3780dbcaf1a59672"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Haptic Technology]]",
-      "resolved": "urn:visionflow:linked:haptic-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-020-virtual-reality-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-200-robotic-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-200-robotic-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-201-teleoperation-systems]]",
-      "resolved": "urn:visionflow:linked:tele-201-teleoperation-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-001-telepresence]]",
-      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "The integration of haptic (tactile and kinesthetic) feedback devices into telepresence systems, enabling remote operators to feel forces, textures, and vibrations from distant environments through force-feedback gloves, exoskeletons, or handheld controllers, creating bidirectional touch sensation for immersive remote interaction with physical or virtual objects."

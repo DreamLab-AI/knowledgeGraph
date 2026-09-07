@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Total Cost of Ownership
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "total-cost-of-ownership",
   "title": "Total Cost of Ownership",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Model Selection", "Token Efficiency"],
+  "vc:outboundWikilinks": [
+    "AI Model Selection",
+    "Token Efficiency"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-economics", "label": "AI Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-economics",
+      "label": "AI Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cost-effectiveness", "label": "Cost-Effectiveness"}, {"@id": "urn:ngm:class:token-efficiency", "label": "Token Efficiency"}, {"@id": "urn:ngm:class:ai-model", "label": "AI Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cost-effectiveness",
+        "label": "Cost-Effectiveness"
+      },
+      {
+        "@id": "urn:ngm:class:token-efficiency",
+        "label": "Token Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

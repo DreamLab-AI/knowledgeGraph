@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Currency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -219,72 +214,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-currency:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:315f40ff4ee75273a23922b4e4364602fad52e9cfc76305cff9de29686a7df67"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Programmable Money]]",
-      "resolved": "urn:visionflow:linked:programmable-money",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Security Infrastructure]]",
-      "resolved": "urn:visionflow:linked:security-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transaction Network]]",
-      "resolved": "urn:visionflow:linked:transaction-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Transactions]]",
-      "resolved": "urn:visionflow:linked:virtual-transactions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Payments]]",
-      "resolved": "urn:visionflow:owl:class:digital-payments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Wallet]]",
-      "resolved": "urn:visionflow:owl:class:digital-wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Technology]]",
-      "resolved": "urn:visionflow:owl:class:financial-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Any form of monetary value that exists purely in electronic format, encompassing central bank digital currencies, cryptocurrencies, stablecoins, and virtual currencies used within metaverse economies for transactions, payments, and value exchange without physical representation.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dimensionality Reduction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,67 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dimensionality-reduction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cbe08a893382a1fc002b6ab906c9a63c61973f326cb6b0e47908cf822de3efe9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computational Efficiency]]",
-      "resolved": "urn:visionflow:linked:computational-efficiency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Curse of Dimensionality]]",
-      "resolved": "urn:visionflow:linked:curse-of-dimensionality",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Visualization]]",
-      "resolved": "urn:visionflow:linked:data-visualization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Feature Selection]]",
-      "resolved": "urn:visionflow:linked:feature-selection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feature Engineering]]",
-      "resolved": "urn:visionflow:owl:class:feature-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Unsupervised Learning]]",
-      "resolved": "urn:visionflow:owl:class:unsupervised-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Dimensionality Reduction is a concept within the ai domain.

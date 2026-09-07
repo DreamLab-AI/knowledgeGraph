@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Backward Chaining
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -115,7 +110,7 @@ public: true
 
   **Backward chaining** is the goal-driven mode of inference in [[Rule-Based Systems]]: reasoning starts from the conclusion one wants to establish and works backwards towards supporting evidence. Given a goal `Q`, the [[Inference Engine]] finds rules of the form `P₁ ∧ … ∧ Pₙ → Q`, and recursively attempts to prove each antecedent `Pᵢ` as a subgoal. A branch succeeds when its subgoals bottom out in facts already known (or supplied by the user when asked); it fails when no rule or fact can discharge a subgoal, prompting backtracking to alternative rules.
 
-  This is the evaluation strategy of logic programming: Prolog executes definite-clause programs by SLD resolution, a depth-first backward-chaining search with unification, trying clauses in order and backtracking on failure. It is also the natural fit for consultation-style [[Expert Systems]]. MYCIN, the landmark 1970s medical system, backward-chained from candidate organism diagnoses to the laboratory findings that would support them — which meant it asked the clinician only for information relevant to the hypothesis under consideration, and could answer "why?" by displaying the rule chain it was trying to complete. That explanation capability remains a selling point of rule-based reasoning over opaque statistical models.
+  This is the evaluation strategy of logic programming: Prolog executes definite-clause programs by SLD resolution, a depth-first backward-chaining search with unification, trying clauses in order and backtracking on failure. It is also the natural fit for consultation-style [[Expert Systems]]. MYCIN, the landmark 1970s medical system, backward-chained from candidate organism diagnoses to the laboratory findings that would support them — which meant it asked the clinician only for information relevant to the hypothesis under consideration, and [private] answer "why?" by displaying the rule chain it was trying to complete. That explanation capability remains a selling point of rule-based reasoning over opaque statistical models.
 
   Compared with [[Forward Chaining]], backward chaining touches only the portion of the knowledge base relevant to the query, so its cost can be far below linear in the size of the rule base; the price is repeated subgoal derivation and potential non-termination on recursive rules, addressed by memoising strategies such as tabling (SLG resolution in XSB and modern Prologs) and by magic-sets rewriting, which transforms a query so that bottom-up evaluation simulates goal-directed search.
 

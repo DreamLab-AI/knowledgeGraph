@@ -1,58 +1,112 @@
----
-public: true
----
-
-# Software Supply Chain
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:software-supply-chain", "@type":"Page", "title":"Software Supply Chain", "vc:slug":"software-supply-chain", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:software-supply-chain",
+  "@type": "Page",
+  "title": "Software Supply Chain",
+  "vc:slug": "software-supply-chain",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:software-supply-chain",
-  "@type":"Class",
-  "label":"Software Supply Chain",
-  "definition":"The software supply chain is the full set of components, processes, tools and actors involved in producing and delivering software, encompassing source code, third-party and open-source dependencies, build systems, package registries and deployment pipelines. Because modern applications assemble large amounts of external code, the integrity of every link matters for security and reliability. Securing it relies on practices such as software bills of materials, provenance attestation and dependency management.",
-  "domain":"infrastructure",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:software-bill-of-materials","label":"Software Bill of Materials"},
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:software-supply-chain",
+  "@type": "Class",
+  "label": "Software Supply Chain",
+  "definition": "The software supply chain is the full set of components, processes, tools and actors involved in producing and delivering software, encompassing source code, third-party and open-source dependencies, build systems, package registries and deployment pipelines. Because modern applications assemble large amounts of external code, the integrity of every link matters for security and reliability. Securing it relies on practices such as software bills of materials, provenance attestation and dependency management.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:software-bill-of-materials",
+        "label": "Software Bill of Materials"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:software-development","label":"Software Development"},
-      {"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:supply-chain-security","label":"Supply Chain Security"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:provenance","label":"Provenance"},
-      {"@id":"urn:ngm:class:attestation","label":"Attestation"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"},
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:vulnerability","label":"Vulnerability"},
-      {"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"},
-      {"@id":"urn:ngm:class:supply-chain","label":"Supply Chain"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:supply-chain-security","label":"Supply Chain Security"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

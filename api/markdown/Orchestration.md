@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Orchestration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -167,26 +162,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:orchestration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fc3cd58d90b189bfd38f03bbf45ba912ea37bccfe7a493dd69654d215e2053c2"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The automated coordination, scheduling, and lifecycle management of containerised workloads, microservices, and distributed agents across heterogeneous infrastructure. In the context of metaverse and telecollaboration systems, orchestration—exemplified by Kubernetes—ensures that compute-intensive rendering, AI inference, and real-time communication services scale elastically and recover automatically from failures.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Healthcare Application Classification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:healthcare-application-classification:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:14c67a8e9f47bc7cf6aa8acb010d763a6cba852d7be9a7067919d8b53c316c7a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Structured Healthcare Innovation]]",
-      "resolved": "urn:visionflow:linked:structured-healthcare-innovation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Healthcare Technology]]",
-      "resolved": "urn:visionflow:owl:class:healthcare-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic evaluation and deployment of immersive medical technologies.

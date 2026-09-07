@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,21 +34,54 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
-      {"@id": "urn:ngm:class:synchronous-collaboration", "label": "Synchronous Collaboration"},
-      {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"},
-      {"@id": "urn:ngm:class:immersive-workspaces", "label": "Immersive Workspaces"},
-      {"@id": "urn:ngm:class:virtual-office-spaces", "label": "Virtual Office Spaces"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-workspaces",
+        "label": "Immersive Workspaces"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-office-spaces",
+        "label": "Virtual Office Spaces"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"},
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"}
+      {
+        "@id": "urn:ngm:class:dc-telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "quality": 0.8,

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SAML 2.0
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -165,41 +160,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:saml-2-0:12a16ce35004",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8f08cfe7e78db5b5b4ee1926fe4b5084166a5aace2d5771c816d7f2b1a6c1cb2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Authentication]]",
-      "resolved": "urn:visionflow:linked:authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Single Sign-On]]",
-      "resolved": "urn:visionflow:linked:single-sign-on",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:linked:identity-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sigma-Algebra
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A sigma-algebra is a collection of subsets of a sample space that contains the whole space and is closed under complementation and countable unions. It specifies exactly which sets are measurable, providing the domain on which measures and probability are rigorously defined. It is the structural foundation of measure theory, integration, and the theory of stochastic processes.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:measure-theory", "label": "Measure Theory"}, {"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ]
   },
   "quality": 0.72
 }

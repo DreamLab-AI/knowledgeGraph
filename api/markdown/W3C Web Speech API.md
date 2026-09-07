@@ -1,8 +1,3 @@
----
-public: true
----
-
-# W3C Web Speech API
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The W3C Web Speech API is a browser interface specification that exposes speech recognition (speech-to-text) and speech synthesis (text-to-speech) to web applications through standardised JavaScript objects. It lets pages capture spoken input and produce spoken output without bespoke plugins, underpinning voice-driven and accessibility features on the web. Implementation depth and recognition backends vary across browsers, with some delegating recognition to cloud services.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:speech-and-voice", "label": "Speech and Voice"}, {"@id": "urn:ngm:class:real-time-translation", "label": "Real-time Translation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-translation",
+        "label": "Real-time Translation"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Treatment Planning AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,19 +67,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:healthcare-records", "label": "Healthcare Records"},
-      {"@id": "urn:ngm:class:medical-diagnosis-ai", "label": "Medical Diagnosis AI"}
+      {
+        "@id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      },
+      {
+        "@id": "urn:ngm:class:medical-diagnosis-ai",
+        "label": "Medical Diagnosis AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:drug-discovery-ai", "label": "Drug Discovery AI"}
+      {
+        "@id": "urn:ngm:class:drug-discovery-ai",
+        "label": "Drug Discovery AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "provenance": {
@@ -94,47 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:treatment-planning-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0ccef13f497c7b0786c74a7ef4c269bc9a8c1d106115b93caa222124ee23230d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Radiation Therapy]]",
-      "resolved": "urn:visionflow:linked:radiation-therapy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Medical AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical Diagnosis AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-diagnosis-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans.

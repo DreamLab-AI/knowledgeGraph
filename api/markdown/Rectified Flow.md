@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rectified flow
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,22 +34,36 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:flow-matching", "label": "Flow Matching"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:sampling", "label": "Sampling"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Rectified Flow is a generative modelling framework that trains a velocity field to transport samples along straight-line trajectories in the ODE sense between a source noise distribution and a target data distribution. By reflow iterations—repeatedly pairing coupled samples and re-training—the learned trajectories become increasingly linear, minimising the number of function evaluations (NFEs) required at inference time. The approach unifies flow matching and score-based diffusion models, offering competitive image and video generation quality with substantially faster sampling compared to standard diffusion schedules.

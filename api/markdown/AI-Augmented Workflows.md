@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI-Augmented Workflows
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-augmented-workflows",
   "title": "AI-Augmented Workflows",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Job role transformation", "Organizational design"],
+  "vc:outboundWikilinks": [
+    "Job role transformation",
+    "Organizational design"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"}, {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

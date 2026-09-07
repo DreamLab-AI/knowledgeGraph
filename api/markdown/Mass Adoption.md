@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mass Adoption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Mass adoption is the stage at which a technology moves beyond early enthusiasts to be used by a large mainstream population. For blockchain and digital assets it implies usability, scalability, and trust sufficient for everyday consumers and enterprises. Reaching it typically requires solving cost, throughput, and user-experience barriers that gate the transition across the technology adoption lifecycle.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}, {"@id": "urn:ngm:class:network-effects", "label": "Network Effects"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:network-effects",
+        "label": "Network Effects"
+      }
+    ]
   },
   "quality": 0.72
 }

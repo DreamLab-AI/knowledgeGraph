@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Holographic Display
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -152,46 +147,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:holographic-display:51c26b8afd40",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:94a025ea4f813303847aa93ac454245fba45a7d12a9af4cd6ee011ab381c8322"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Holography]]",
-      "resolved": "urn:visionflow:linked:holography",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:linked:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Display Technology]]",
-      "resolved": "urn:visionflow:linked:display-technology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

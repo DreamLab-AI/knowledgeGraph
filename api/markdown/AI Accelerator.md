@@ -1,10 +1,14 @@
----
-public: true
----
-
-# AI Accelerator
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:ai-accelerator", "@type":"Page", "title":"AI Accelerator", "vc:slug":"ai-accelerator", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:ai-accelerator",
+  "@type": "Page",
+  "title": "AI Accelerator",
+  "vc:slug": "ai-accelerator",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,45 +21,100 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:hardware-accelerator", "label": "Hardware Accelerator" }
+    {
+      "@id": "urn:ngm:class:hardware-accelerator",
+      "label": "Hardware Accelerator"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:high-bandwidth-memory", "label": "High-Bandwidth Memory" },
-      { "@id": "urn:ngm:class:systolic-array", "label": "Systolic Array" }
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
+      },
+      {
+        "@id": "urn:ngm:class:systolic-array",
+        "label": "Systolic Array"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure" },
-      { "@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster" }
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:deep-learning", "label": "Deep Learning" },
-      { "@id": "urn:ngm:class:neural-network", "label": "Neural Network" },
-      { "@id": "urn:ngm:class:distributed-training", "label": "Distributed Training" }
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:matrix-multiplication", "label": "Matrix Multiplication" }
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:data-centre", "label": "Data Center" }
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing" }
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:gpu", "label": "GPU" },
-      { "@id": "urn:ngm:class:tpu", "label": "TPU" },
-      { "@id": "urn:ngm:class:nvidia-corporation", "label": "NVIDIA Corporation" },
-      { "@id": "urn:ngm:class:nvlink", "label": "NVLink" }
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:tpu",
+        "label": "TPU"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-corporation",
+        "label": "NVIDIA Corporation"
+      },
+      {
+        "@id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure" },
-      { "@id": "urn:ngm:class:machine-learning", "label": "Machine Learning" }
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

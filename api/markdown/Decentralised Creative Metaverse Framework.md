@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Agentic Metaverse for Global Creatives]]
-# Decentralised Creative Metaverse Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,17 +47,38 @@ elevatedFrom:: [[Agentic Metaverse for Global Creatives]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"}
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "provenance": {
@@ -73,32 +88,6 @@ elevatedFrom:: [[Agentic Metaverse for Global Creatives]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agentic-metaverse-for-global-creatives:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6fcdd04dbe02c0d97d2e051671b1e26745781f98a10d9efe56fd4194d163efee"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Agentic Metaverse for Global Creatives is a concept within the ngm domain.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Self-Organisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,19 +21,37 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:complex-systems", "label": "Complex Systems"}
+    {
+      "@id": "urn:ngm:class:complex-systems",
+      "label": "Complex Systems"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:emergence", "label": "Emergence"},
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"},
-      {"@id": "urn:ngm:class:chaos-theory", "label": "Chaos Theory"}
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:agent-based-modelling", "label": "Agent-Based Modelling"}
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
     ]
   },
   "quality": 0.8

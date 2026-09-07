@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Text Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -139,10 +134,6 @@ public: true
     {
       "@id": "urn:visionflow:owl:class:should",
       "vc:label": "SHOULD"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "vc:label": "Social contract and jobs"
     },
     {
       "@id": "urn:visionflow:owl:class:speech-and-voice",
@@ -328,207 +319,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:text-generation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:351a23b4b129a9a0fbd982a7a8993f45cddd2d34759bd0500d7ef1b109240a99"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[automation]]",
-      "resolved": "urn:visionflow:linked:automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Large Language Model]]",
-      "resolved": "urn:visionflow:linked:large-language-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[neural networks]]",
-      "resolved": "urn:visionflow:linked:neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[organisation]]",
-      "resolved": "urn:visionflow:linked:organisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vercel]]",
-      "resolved": "urn:visionflow:linked:vercel",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accessibility]]",
-      "resolved": "urn:visionflow:owl:class:accessibility",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agent Frameworks]]",
-      "resolved": "urn:visionflow:owl:class:agent-frameworks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[artificial intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Instruction-Following Conversational AI System]]",
-      "resolved": "urn:visionflow:owl:class:chat-gpt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Checkpoints]]",
-      "resolved": "urn:visionflow:owl:class:checkpoints",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
-      "resolved": "urn:visionflow:owl:class:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deepfakes and fraudulent content]]",
-      "resolved": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Google AI Technology Corporation]]",
-      "resolved": "urn:visionflow:owl:class:google",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPT]]",
-      "resolved": "urn:visionflow:owl:class:gpt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPT Engineer]]",
-      "resolved": "urn:visionflow:owl:class:gpt-engineer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graphing]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Language Modeling]]",
-      "resolved": "urn:visionflow:owl:class:language-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Latent Space]]",
-      "resolved": "urn:visionflow:owl:class:latent-space",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LoRA DoRA etc]]",
-      "resolved": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Microsoft Copilot]]",
-      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA Omniverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Open Webui and Pipelines]]",
-      "resolved": "urn:visionflow:owl:class:open-webui-and-pipelines",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[PlayerTwo]]",
-      "resolved": "urn:visionflow:owl:class:player-two",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Product Design]]",
-      "resolved": "urn:visionflow:owl:class:product-design",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real Time]]",
-      "resolved": "urn:visionflow:owl:class:real-time",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RFC 2119 SHOULD Normative Keyword]]",
-      "resolved": "urn:visionflow:owl:class:should",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Employment Social Contract Under Automation]]",
-      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech and Voice]]",
-      "resolved": "urn:visionflow:owl:class:speech-and-voice",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Translation]]",
-      "resolved": "urn:visionflow:owl:class:translation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production. Modern text generation employs transformer-based language models (GPT, T5, BLOOM) with autoregressive or sequence-to-sequence architectures, controllable generation techniques, and prompt engineering to produce human-quality text across diverse domains and styles.
 
@@ -587,7 +377,7 @@ public: true
   - The system offers control over object categories during generation, allowing users to specify the type of 3D shape produced.
   - The generated assets are compatible with standard rendering pipelines and can be readily integrated into existing 3D scenes.
   - The research demonstrates significant improvements in 3D shape quality and texture detail compared to previous generative models.
-  - This technology could be used for rapid prototyping, game development, and creation of virtual environments.
+  - This technology [private] be used for rapid prototyping, game development, and creation of virtual environments.
   - GET3D aims to democratise 3D content creation by simplifying the process and reducing reliance on expert 3D modellers.
 
   - ### **Dream Fields for Text-Guided 3D Object Generation**
@@ -790,7 +580,7 @@ public: true
   - Effective use of AI tools requires developing specialized skills around prompting, understanding system capabilities and limitations, and framing problems appropriately. Different AI systems have strengths in different domains.
   - Software development will transition towards more hybrid human-AI teams, with less focus on writing code line-by-line. AI can provide significant productivity gains by automating rote tasks.
   - There are open questions around whether to expose functionality through general chatbot interfaces vs company-specific products. There are strategic and technical considerations favouring bespoke solutions.
-  - Open source software tends to improve quickly over time and should not be underestimated. However, regulations could potentially suppress open source AI progress.
+  - Open source software tends to improve quickly over time and should not be underestimated. However, regulations [private] potentially suppress open source AI progress.
   - [gptengineer.app](https://gptengineer.app/) is a commercial offering built on [[GPT Engineer]]
   - [Understand a codebase in github with GPT](https://useadrenaline.com/app)
   - [Sourcegraph | Code AI platform](https://sourcegraph.com/)
@@ -1099,7 +889,7 @@ public: true
 		- [Face replace plugin for automatic](https://github.com/Gourieff/sd-webui-roop-nsfw)
 
   - ## Renderings from Plan Drawings
-		- **Vectorworks AI Visualizer** ([FAQ](https://forum.vectorworks.net/index.php?/articles.html/articles/faqs/ai-visualizer/))
+		- **Vectorworks AI Visualizer** ([FAQ](https://forum.vectorworks.net/[private].php?/articles.html/articles/faqs/ai-visualizer/))
 			- Works inside Vectorworks 2024+, using your active file or view plus a text prompt.
 			- Ideal for quick concept iterations (materials, lighting variations).
 			- Note: not CAD-accurate rendering but excellent for inspirational visuals.
@@ -1149,7 +939,7 @@ public: true
   - The system offers control over object categories during generation, allowing users to specify the type of 3D shape produced.
   - The generated assets are compatible with standard rendering pipelines and can be readily integrated into existing 3D scenes.
   - The research demonstrates significant improvements in 3D shape quality and texture detail compared to previous generative models.
-  - This technology could be used for rapid prototyping, game development, and creation of virtual environments.
+  - This technology [private] be used for rapid prototyping, game development, and creation of virtual environments.
   - GET3D aims to democratise 3D content creation by simplifying the process and reducing reliance on expert 3D modellers.
 
   - ### **Dream Fields for Text-Guided 3D Object Generation**
@@ -1352,7 +1142,7 @@ public: true
   - Effective use of AI tools requires developing specialized skills around prompting, understanding system capabilities and limitations, and framing problems appropriately. Different AI systems have strengths in different domains.
   - Software development will transition towards more hybrid human-AI teams, with less focus on writing code line-by-line. AI can provide significant productivity gains by automating rote tasks.
   - There are open questions around whether to expose functionality through general chatbot interfaces vs company-specific products. There are strategic and technical considerations favouring bespoke solutions.
-  - Open source software tends to improve quickly over time and should not be underestimated. However, regulations could potentially suppress open source AI progress.
+  - Open source software tends to improve quickly over time and should not be underestimated. However, regulations [private] potentially suppress open source AI progress.
   - [gptengineer.app](https://gptengineer.app/) is a commercial offering built on [[GPT Engineer]]
   - [Understand a codebase in github with GPT](https://useadrenaline.com/app)
   - [Sourcegraph | Code AI platform](https://sourcegraph.com/)
@@ -1661,7 +1451,7 @@ public: true
 		- [Face replace plugin for automatic](https://github.com/Gourieff/sd-webui-roop-nsfw)
 
   - ## Renderings from Plan Drawings
-		- **Vectorworks AI Visualizer** ([FAQ](https://forum.vectorworks.net/index.php?/articles.html/articles/faqs/ai-visualizer/))
+		- **Vectorworks AI Visualizer** ([FAQ](https://forum.vectorworks.net/[private].php?/articles.html/articles/faqs/ai-visualizer/))
 			- Works inside Vectorworks 2024+, using your active file or view plus a text prompt.
 			- Ideal for quick concept iterations (materials, lighting variations).
 			- Note: not CAD-accurate rendering but excellent for inspirational visuals.
@@ -1689,7 +1479,7 @@ public: true
   - The tool enables users to iterate quickly on design ideas by making adjustments to the text prompt and regenerating the model.
   - Imagine facilitates the creation of customised 3D models for various applications, including gaming, product visualisation and animation.
   - The platform encourages experimentation with different prompts to explore the creative potential of [[artificial intelligence]]-powered 3D generation.
-  - This technology could be used for rapid prototyping, game development, and creation of virtual environments.
+  - This technology [private] be used for rapid prototyping, game development, and creation of virtual environments.
   - GET3D aims to democratise 3D content creation by simplifying the process and reducing reliance on expert 3D modellers.
 
 		- ### Physically Based Textures from BIM (Revit)
@@ -1741,7 +1531,7 @@ public: true
 		- ![Screenshot 2024-01-18 103043.png](assets/Screenshot_2024-01-18_103043_1706020238116_0.png)
 		- ![Screenshot 2024-01-18 102807.png](assets/Screenshot_2024-01-18_102807_1706020247381_0.png)
   - [AI-Powered Search: Embedding-Based Retrieval and Retrieval-Augmented Generation (RAG) | by Daniel Tunkelang | Apr, 2024 | Medium](https://dtunkelang.medium.com/ai-powered-search-embedding-based-retrieval-and-retrieval-augmented-generation-rag-cabeaba26a8b)
-  - [AutoRAG documentation (marker-inc-korea.github.io)](https://marker-inc-korea.github.io/AutoRAG/index.html)
+  - [AutoRAG documentation (marker-inc-korea.github.io)](https://marker-inc-korea.github.io/AutoRAG/[private].html)
   - [llmware-ai/llmware: Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models. (github.com)](https://github.com/llmware-ai/llmware) [[Large Language Models]] [[Infrastructure]] [[Knowledge Graphing]]
   - [turbopuffer](https://turbopuffer.com/) [[Knowledge Graphing]] serverless vector database
   - Using [[agents]] over [[Knowledge Graphing]] [Forget RAG: Embrace agent design for a more intelligent grounded ChatGPT! | by James Nguyen | Nov, 2023 | Medium](https://james-tn.medium.com/forget-rag-embrace-agent-design-for-a-more-intelligent-grounded-chatgpt-6c562d903c61)
@@ -1775,7 +1565,7 @@ public: true
 
   - # Agents in Biological Research
   - AI agents have the potential to transform biological research by automating tasks such as literature review, hypothesis generation, experimental design, and data analysis. Companies like Future House are developing AI agents that can identify potential drug targets and design experiments, significantly accelerating the process of discovery. These agents, powered by large language models (LLMs) and other AI technologies, can review thousands of research papers, develop targets or hypotheses to test, and even drive autonomous labs.
-  - As these AI agents become more capable, they may play a crucial role in guiding research and helping humans navigate the complex landscape of biological data and interactions. The convergence of AI agents with specific tools for designing molecules, proteins, and nucleic acids could lead to rapid progress in solving challenging problems in biology and medicine.
+  - As these AI agents become more capable, they may play a crucial role in guiding research and helping humans navigate the complex landscape of biological data and interactions. The convergence of AI agents with specific tools for designing molecules, proteins, and nucleic acids [private] lead to rapid progress in solving challenging problems in biology and medicine.
 		- [Google DeepMind and Isomorphic Labs introduce AlphaFold 3 AI model (blog.google)](https://blog.google/technology/ai/google-deepmind-isomorphic-alphafold-3-ai-model/) [[Google AI Technology Corporation]]
 
   - ## Some software choices
@@ -2058,7 +1848,7 @@ public: true
 		- Difficulty with complex scenes or full-body shots
 		- Text in videos may appear garbled
 		- Anatomical issues like extra limbs or heads
-  - **Meta's Approach: Foundational World Modeling** Meta (formerly Facebook) is taking a distinct approach, focusing on the underlying world modeling needed for video encoding and generation. This emphasis on understanding the principles of physics and object interactions could contribute to  more realistic AI-generated videos.
+  - **Meta's Approach: Foundational World Modeling** Meta (formerly Facebook) is taking a distinct approach, focusing on the underlying world modeling needed for video encoding and generation. This emphasis on understanding the principles of physics and object interactions [private] contribute to  more realistic AI-generated videos.
   - **Technical Capabilities and Limitations**
 		- **Capabilities** Current AI video generators demonstrate proficiency in producing high-resolution images and videos. They are capable of style adaptation, simulating complex scenes with multiple elements, and handling variations in aspect ratio and resolution.
 		- **Limitations**  Despite their strengths, these models still struggle to accurately simulate physics and lack a complete understanding of cause and effect. Occasional errors regarding object permanence highlight the existing gap between pattern recognition and a comprehensive understanding of the world.

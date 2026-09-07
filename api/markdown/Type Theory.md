@@ -1,37 +1,106 @@
----
-public: true
----
-
-# Type Theory
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:type-theory", "@type":"Page", "title":"Type Theory", "vc:slug":"type-theory", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:type-theory",
+  "@type": "Page",
+  "title": "Type Theory",
+  "vc:slug": "type-theory",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:type-theory",
-  "@type":"Class",
-  "label":"Type Theory",
-  "definition":"Type theory is a branch of mathematical logic and theoretical computer science in which every term has an associated type, and well-formedness is governed by typing rules rather than by raw set membership. It serves both as a foundation for mathematics and as the formal basis for type systems in programming languages, where types constrain valid expressions. Through the propositions-as-types correspondence, proofs become programs and types become specifications, linking logic, computation and formal verification.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:mathematical-logic","label":"Mathematical Logic"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:type-system","label":"Type System"}],
-    "uses":[{"@id":"urn:ngm:class:mathematical-logic","label":"Mathematical Logic"}],
-    "enables":[{"@id":"urn:ngm:class:formal-verification","label":"Formal Verification"},{"@id":"urn:ngm:class:formal-methods","label":"Formal Methods"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:static-analysis","label":"Static Analysis"}],
-    "supports":[{"@id":"urn:ngm:class:compiler","label":"Compiler"}],
-    "hasPart":[{"@id":"urn:ngm:class:type-system","label":"Type System"}],
-    "requires":[{"@id":"urn:ngm:class:mathematical-logic","label":"Mathematical Logic"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:formal-verification","label":"Formal Verification"}],
-    "relatedTo":[{"@id":"urn:ngm:class:formal-methods","label":"Formal Methods"},{"@id":"urn:ngm:class:compiler","label":"Compiler"},{"@id":"urn:ngm:class:static-analysis","label":"Static Analysis"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:type-theory",
+  "@type": "Class",
+  "label": "Type Theory",
+  "definition": "Type theory is a branch of mathematical logic and theoretical computer science in which every term has an associated type, and well-formedness is governed by typing rules rather than by raw set membership. It serves both as a foundation for mathematics and as the formal basis for type systems in programming languages, where types constrain valid expressions. Through the propositions-as-types correspondence, proofs become programs and types become specifications, linking logic, computation and formal verification.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mathematical-logic",
+      "label": "Mathematical Logic"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

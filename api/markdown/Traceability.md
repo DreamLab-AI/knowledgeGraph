@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Traceability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,15 +20,32 @@ public: true
   "definition": "Traceability is the ability to verify the history, location, or application of an item or piece of information by means of recorded identification. It requires that each unit or event be uniquely identified and that the linkages between successive states be persistently recorded, enabling both forward tracking from origin to destination and backward tracing from any point to its provenance. Traceability is foundational to supply-chain integrity, regulatory compliance, food and pharmaceutical safety, and software and data provenance, and it is increasingly underpinned by tamper-evident ledgers.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:process", "label": "Process"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:process",
+      "label": "Process"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:traceability-mechanism", "label": "Traceability Mechanism"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:traceability-mechanism",
+        "label": "Traceability Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
     ]
   },
   "quality": 0.78

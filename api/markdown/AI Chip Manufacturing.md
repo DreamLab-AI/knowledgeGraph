@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Chip Manufacturing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-chip-manufacturing",
   "title": "AI Chip Manufacturing",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Google TPU", "Intel Foundry"],
+  "vc:outboundWikilinks": [
+    "Google TPU",
+    "Intel Foundry"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:computational-infrastructure", "label": "Computational Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computational-infrastructure",
+      "label": "Computational Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}, {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}, {"@id": "urn:ngm:class:data-processing", "label": "Data Processing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Engagement Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Engagement optimisation is the use of machine-learning models and feedback loops to maximise a user's interaction with a system, measured by signals such as session length, return frequency, and response rate. It typically learns from behavioural data to personalise content, timing, and prompts. While it can improve usefulness, it raises ethical concerns when optimisation targets attention or dependency rather than user benefit.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}, {"@id": "urn:ngm:class:ai-companions", "label": "AI companions"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      }
+    ]
   },
   "quality": 0.72
 }
@@ -208,7 +217,7 @@ public: true
 
   The EU AI Act's prohibition on subliminal manipulation techniques (Article 5, applicable from August 2024) is being interpreted by legal scholars, regulators, and platform compliance teams in ways that are expected to constrain the most psychologically targeted forms of engagement optimisation — precisely-timed push notifications, artificially created scarcity or social comparison signals, and notification language engineered to exploit loss aversion. The legal definitions of "subliminal" and "significant harm" remain contested and will be clarified through enforcement actions and court decisions over 2025–2027.
 
-  The UK Online Safety Act's Protection of Children Codes came into force on 25 July 2025, requiring platforms serving UK users to: configure recommender algorithms to deprioritise behavioural engagement signals for under-18 users and prioritise explicit preference signals instead; disable by default engagement-increasing features including autoplay, infinite scroll, push notifications for content, and streaks for child users; and carry out children's risk assessments before making any significant change to service design that could affect engagement with children. Ofcom opened investigations into TikTok, Reddit, and Imgur in 2024 under the children's data protection framework, with particular focus on recommender system design, establishing a UK enforcement precedent. The ICO confirmed in its 2024/25 business plan that children's recommender systems remained a priority enforcement area, with further investigations expected across social, gaming, and streaming platforms.
+  The UK Online Safety Act's Protection of Children Codes came into force on 25 July 2025, requiring platforms serving UK users to: configure recommender algorithms to deprioritise behavioural engagement signals for under-18 users and prioritise explicit preference signals instead; disable by default engagement-increasing features including autoplay, infinite scroll, push notifications for content, and streaks for child users; and carry out children's risk assessments before making any significant change to service design that [private] affect engagement with children. Ofcom opened investigations into TikTok, Reddit, and Imgur in 2024 under the children's data protection framework, with particular focus on recommender system design, establishing a UK enforcement precedent. The ICO confirmed in its 2024/25 business plan that children's recommender systems remained a priority enforcement area, with further investigations expected across social, gaming, and streaming platforms.
 
   Netflix's published research demonstrates that long-term member satisfaction objectives, operationalised through reward shaping that discounts binge-watching signals in favour of return-visit quality and stated satisfaction, produce better 12-month retention than raw engagement maximisation. This commercial evidence that welfare-aligned objectives produce better business outcomes — at least in subscription models — has been influential in shifting industry practice and is cited by regulatory discussions as evidence that the commercial-ethical tradeoff in engagement optimisation is not as acute as historically assumed. Meta's Integrity team has published research on "bridging-based ranking" that adds social cohesion objectives alongside engagement signals, attempting to reduce polarisation while maintaining commercial engagement levels.
 
@@ -216,7 +225,7 @@ public: true
 
   ## UK Context
 
-  UK engagement optimisation practice and regulation is shaped by an unusually active and early regulatory environment relative to other jurisdictions. The ICO operationalised the Age Appropriate Design Code (Children's Code) in 2021 — the world's first comprehensive regulatory framework specifically addressing engagement design for minors — establishing requirements including that "design features aimed at increased engagement, such as streaks, read receipts, autoplay and push notifications, should be disabled by default" for services used by children. This requirement predates and has influenced subsequent EU regulatory approaches. Ofcom's enforcement of the Online Safety Act's Protection of Children Codes from July 2025 extends these requirements further and with higher penalties: non-compliant platforms serving UK users risk enforcement action that could include fines and, ultimately, blocking orders.
+  UK engagement optimisation practice and regulation is shaped by an unusually active and early regulatory environment relative to other jurisdictions. The ICO operationalised the Age Appropriate Design Code (Children's Code) in 2021 — the world's first comprehensive regulatory framework specifically addressing engagement design for minors — establishing requirements including that "design features aimed at increased engagement, such as streaks, read receipts, autoplay and push notifications, should be disabled by default" for services used by children. This requirement predates and has influenced subsequent EU regulatory approaches. Ofcom's enforcement of the Online Safety Act's Protection of Children Codes from July 2025 extends these requirements further and with higher penalties: non-compliant platforms serving UK users risk enforcement action that [private] include fines and, ultimately, blocking orders.
 
   The Centre for Data Ethics and Innovation (CDEI), now absorbed into the Department for Science, Innovation and Technology's AI safety work, published a 2020 review of "Online Targeting: What it is and how it Works" and subsequent guidance on algorithmic transparency that influenced both the ICO Children's Code and the Online Safety Act's provisions on recommendation systems. The UK's Competition and Markets Authority (CMA) has examined engagement optimisation practices under consumer protection and competition law, including an ongoing review of digital advertising markets and their relationship to engagement-optimising recommendation systems. The CMA's Market Study into mobile ecosystems (2022) examined how Apple and Google's platform policies affect the deployment of engagement-optimising applications.
 

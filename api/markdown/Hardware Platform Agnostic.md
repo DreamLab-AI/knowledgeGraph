@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Hardware-/Platform-Agnostic
----
-
-# Hardware Platform Agnostic
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,19 +51,40 @@ aliases:
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:xr-framework", "label": "XR Framework"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:xr-framework",
+        "label": "XR Framework"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:metaverse-architecture", "label": "Metaverse Architecture"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+      {
+        "@id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +94,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hardware-platform-agnostic:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:915431e8835894eb154595d8a83a7889bba5eab7409bcb2180c67ebd0820d1fb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations. Hardware-agnostic systems achieve portability through abstraction layers—such as virtual machines, containers, or cross-platform runtimes—that decouple application logic from underlying physical or operating-system constraints.

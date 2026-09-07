@@ -1,8 +1,3 @@
----
-public: true
----
-
-# XR Accessibility Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -73,37 +68,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:xr-accessibility-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aac0046fe3c05adeadb539141152c646972ce695e9f8f5b6149df1b72ecc2f1e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Accessibility]]",
-      "resolved": "urn:visionflow:owl:class:accessibility",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Guidelines, best practices, and technical specifications for making extended reality experiences accessible to users with disabilities, addressing visual, auditory, motor, cognitive, and vestibular impairments through inclusive design principles and assistive technology compatibility.

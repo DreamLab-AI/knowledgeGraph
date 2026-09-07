@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Polycentric Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,7 +152,6 @@ public: true
 
   - A polycentric system has three structural features: multiple decision centres, each with a degree of autonomy to make rules within its sphere; mechanisms for conflict resolution that allow disputes between centres to be adjudicated without resort to unilateral dominance; and meta-level rules that constrain and coordinate the centres while preserving their distinctiveness. Redundancy is a strength, not a flaw: overlapping jurisdictions provide fallback capacity and enable experimentation. The Ostroms argued that complex adaptive systems managed by diverse, overlapping institutions are more resilient to shocks than those managed by monolithic hierarchies prone to correlated failure.
 
-  - Polycentric governance has become a central concept in discussions of internet architecture and platform regulation, where the interplay of national legal systems, industry self-regulation, technical standards bodies, and civil society produces outcomes that no single actor could determine alone. It is also prominent in climate governance scholarship, which analyses how municipal, national, and international climate commitments form an overlapping patchwork that—while incoherent from a planning perspective—adapts more rapidly to political and scientific changes than a single treaty regime could. The Nobel Memorial Prize in Economic Sciences was awarded to Elinor Ostrom in 2009 in part for this body of work.
+  - Polycentric governance has become a central concept in discussions of internet architecture and platform regulation, where the interplay of national legal systems, industry self-regulation, technical standards bodies, and civil society produces outcomes that no single actor [private] determine alone. It is also prominent in climate governance scholarship, which analyses how municipal, national, and international climate commitments form an overlapping patchwork that—while incoherent from a planning perspective—adapts more rapidly to political and scientific changes than a single treaty regime [private]. The Nobel Memorial Prize in Economic Sciences was awarded to Elinor Ostrom in 2009 in part for this body of work.
 
   - From 2024 to 2025, polycentric governance gained practical traction in AI governance debates as policymakers struggled with the inadequacy of any single regulatory locus for managing AI systems that are developed in one jurisdiction, deployed in another, and affect third-party interests globally. The EU AI Act, the G7 Hiroshima AI Process, and national AI safety institutes collectively constitute an embryonic polycentric structure for AI oversight. Blockchain DAO designers increasingly draw on polycentric theory to justify delegating specific governance functions to on-chain mechanisms, off-chain forums, and legal wrapper entities in parallel, rather than concentrating authority in a single token-weighted vote.
-

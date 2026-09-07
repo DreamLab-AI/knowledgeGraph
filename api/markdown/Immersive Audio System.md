@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersive Audio System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:immersive-audio-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:182606c6ce239a6e52c230214eb77c6976180071ad0800df0128b19986419f0d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Audio Technology]]",
-      "resolved": "urn:visionflow:owl:class:audio-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Presence]]",
-      "resolved": "urn:visionflow:owl:class:spatial-presence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Audio technologies enabling three-dimensional soundscapes in virtual environments through spatial audio processing, binaural rendering, and head-related transfer functions (HRTF), creating realistic acoustic experiences that respond to user position and movement within VR, AR, and metaverse applications.

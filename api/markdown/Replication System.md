@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Replication System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,26 +85,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:replication-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:60751b0b70dada97d41620130d34db9031b0dca47c56f85302d01310e70a8edd"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A replication system maintains synchronised copies of data or state across multiple nodes in a distributed environment, ensuring consistency, availability, and fault tolerance. It coordinates state propagation through protocols such as leader-based or leaderless replication, supporting both synchronous and asynchronous update strategies in blockchain, database, and metaverse infrastructure contexts.

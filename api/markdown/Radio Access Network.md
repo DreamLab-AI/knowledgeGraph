@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Radio Access Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A radio access network (RAN) is the part of a mobile telecommunications system that connects user devices to the core network over the air interface via base stations and antennas. It manages radio resource allocation, modulation, and handover across cells. Modern architectures such as Open RAN disaggregate hardware and software to enable multi-vendor, virtualised deployments.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"},
-      {"@id": "urn:ngm:class:wireless-radio", "label": "Wireless Radio"}
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-radio",
+        "label": "Wireless Radio"
+      }
     ]
   },
   "quality": 0.72

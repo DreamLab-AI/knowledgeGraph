@@ -1,54 +1,106 @@
----
-public: true
----
-
-# Open Source Governance
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:open-source-governance", "@type":"Page", "title":"Open Source Governance", "vc:slug":"open-source-governance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:open-source-governance",
+  "@type": "Page",
+  "title": "Open Source Governance",
+  "vc:slug": "open-source-governance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:open-source-governance",
-  "@type":"Class",
-  "label":"Open Source Governance",
-  "definition":"Open source governance is the set of processes, roles and norms by which an open source project makes decisions about its direction, accepts contributions, resolves disputes and manages releases. Models range from benevolent-dictator and meritocratic maintainer structures to elected steering committees and foundation stewardship, each balancing openness against the need for coordination. It determines who may merge changes, how proposals are reviewed, and how the project sustains trust and continuity across a distributed, often volunteer, community.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:decentralised-governance","label":"Decentralised Governance"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:governance","label":"Governance"},
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:open-source-governance",
+  "@type": "Class",
+  "label": "Open Source Governance",
+  "definition": "Open source governance is the set of processes, roles and norms by which an open source project makes decisions about its direction, accepts contributions, resolves disputes and manages releases. Models range from benevolent-dictator and meritocratic maintainer structures to elected steering committees and foundation stewardship, each balancing openness against the need for coordination. It determines who may merge changes, how proposals are reviewed, and how the project sustains trust and continuity across a distributed, often volunteer, community.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralised-governance",
+      "label": "Decentralised Governance"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:trust","label":"Trust"},
-      {"@id":"urn:ngm:class:consensus","label":"Consensus"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:git","label":"Git"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:collaboration","label":"Collaboration"},
-      {"@id":"urn:ngm:class:transparency","label":"Transparency"},
-      {"@id":"urn:ngm:class:accountability","label":"Accountability"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:ethereum-smart-contract-platform-foundation","label":"Ethereum Foundation"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
+        "label": "Ethereum Foundation"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:community-governance","label":"Community Governance"},
-      {"@id":"urn:ngm:class:stakeholder-engagement","label":"Stakeholder Engagement"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals","label":"Bitcoin Improvement Proposals"},
-      {"@id":"urn:ngm:class:governance-model","label":"Governance Model"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "@id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

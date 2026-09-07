@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Graph Embedding
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

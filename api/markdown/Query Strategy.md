@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Query Strategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A query strategy is the policy by which an active-learning system selects which unlabelled instances to request labels for, aiming to maximise model improvement per labelling cost. Common strategies include uncertainty sampling, query-by-committee, and expected model change. It is the decision-making core that makes active learning more label-efficient than passive supervised learning.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:learning-algorithm", "label": "Learning Algorithm"}
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:learning-algorithm",
+        "label": "Learning Algorithm"
+      }
     ]
   },
   "quality": 0.72

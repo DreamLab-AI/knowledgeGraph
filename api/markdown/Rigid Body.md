@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - RigidBody
----
-
-# Rigid Body
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,17 +51,32 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"}
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot-component", "label": "Robot Component"}
+      {
+        "@id": "urn:ngm:class:robot-component",
+        "label": "Robot Component"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
     ]
   },
   "quality": 0.35,
@@ -79,32 +87,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rigid-body:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cb0256d1bc22599ae43eef770fb6bfae8cb71ff4963a59459b98540ba5a66253"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Rigid Body is an idealised mechanical object whose internal distances between all constituent points remain constant regardless of applied forces, making it the foundational abstraction for classical mechanics, robotic kinematics, and physics simulation. In robotics, links of a kinematic chain are modelled as rigid bodies connected by joints; their mass, centre of gravity, and inertia tensor parameterise the dynamics equations used for motion planning, control, and simulation. Rigid body assumptions break down for flexible or soft-robotic systems.

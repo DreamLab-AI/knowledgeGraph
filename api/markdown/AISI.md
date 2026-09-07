@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AISI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,57 +85,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aisi:efa98ef1e586",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dd21c0d551244224be34530977c043d768baa35bf54fc44983cc097cf7b3086a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:linked:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Regulation]]",
-      "resolved": "urn:visionflow:linked:ai-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Frontier AI]]",
-      "resolved": "urn:visionflow:linked:frontier-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Safety]]",
-      "resolved": "urn:visionflow:linked:ai-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.aisi.gov.uk]]",
-      "resolved": "urn:visionflow:linked:https-www-aisi-gov-uk",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.gov.uk/government/organisations/ai-safety-institute]]",
-      "resolved": "urn:visionflow:linked:https-www-gov-uk-government-organisations-ai-safety-institute",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The AI Safety Institute is a UK government body that evaluates advanced AI systems for safety and security risks. It was established to test frontier models and inform policy.

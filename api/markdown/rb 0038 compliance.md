@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0038 compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0039-stiffness", "label": "rb 0039 stiffness"}
+      {
+        "@id": "urn:ngm:class:rb-0039-stiffness",
+        "label": "rb 0039 stiffness"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"},
-      {"@id": "urn:ngm:class:rb-0057-admittance-control", "label": "rb 0057 admittance control"},
-      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"},
-      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"}
+      {
+        "@id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0057-admittance-control",
+        "label": "rb 0057 admittance control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:rb-0053-force-control", "label": "rb 0053 force control"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0053-force-control",
+        "label": "rb 0053 force control"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"}
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      }
     ]
   },
   "provenance": {
@@ -83,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0038-compliance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:18c5eff2d77b539728d895e9e3bdec1b013cf042bf000307e4c56fe6885426c9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Open Source]]",
-      "resolved": "urn:visionflow:linked:open-source",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ### Primary Definition

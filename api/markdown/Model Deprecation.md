@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Deprecation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "model-deprecation",
   "title": "Model Deprecation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["GPT-4o", "OpenAI Model Deprecation", "User Sentiment Analysis"],
+  "vc:outboundWikilinks": [
+    "GPT-4o",
+    "OpenAI Model Deprecation",
+    "User Sentiment Analysis"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

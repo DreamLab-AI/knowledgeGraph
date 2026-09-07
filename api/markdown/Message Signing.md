@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Message Signing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -93,4 +88,3 @@ public: true
   - Message signing is the mechanism by which blockchain wallets authorise transactions, proving ownership of a private key without revealing it. It also underpins SSH authentication, code-signing pipelines, JWT token authenticity, and decentralised identity (DID) document ownership proofs. In multi-party computation and threshold signature schemes, signing authority can be distributed across multiple parties so no single holder holds a complete key.
 
   - As of 2024-2025, post-quantum cryptography standards (NIST FIPS 204, ML-DSA) are redefining signing algorithm choices to resist lattice and other quantum attacks. Threshold signature schemes combining ECDSA with multi-party computation are gaining adoption in custody and governance protocols. Hardware security modules and secure enclaves increasingly handle signing operations to prevent key exfiltration, and key delegation frameworks are emerging to allow granular, time-limited signing authority in enterprise and agent-based systems.
-

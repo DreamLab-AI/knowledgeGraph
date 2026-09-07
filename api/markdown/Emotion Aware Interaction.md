@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Emotion-Aware Interaction
----
-
-# Emotion Aware Interaction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -79,42 +72,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:emotion-aware-interaction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:27f23d8f8de169a2e790acdf14f1c69e825b4bd89f14d5ba58b667208585f280"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Emotionally Intelligent Metaverse]]",
-      "resolved": "urn:visionflow:linked:emotionally-intelligent-metaverse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human-Computer Interaction]]",
-      "resolved": "urn:visionflow:owl:class:human-computer-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Affective computing technologies integrated into metaverse systems that identify users emotional cues through facial expressions, body language, and voice tones, enabling context-aware, meaningful interactions that enhance genuine human-like experiences in virtual environments.

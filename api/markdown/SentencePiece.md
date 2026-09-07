@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SentencePiece
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,36 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte Pair Encoding"},
-      {"@id": "urn:ngm:class:subword-tokenisation", "label": "Subword Tokenisation"}
+      {
+        "@id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:subword-tokenisation",
+        "label": "Subword Tokenisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:word-piece", "label": "WordPiece"}
+      {
+        "@id": "urn:ngm:class:word-piece",
+        "label": "WordPiece"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"}
+      {
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      }
     ]
   },
   "quality": 0.7,
@@ -82,32 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sentence-piece:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a028837713d6b63b3fab97ccd87c49afdd8facfea2a4dad27b1a747c3e6dfdf2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - SentencePiece is a language-independent subword tokenisation library that processes raw Unicode text without language-specific pre-tokenisation, learning vocabulary units via Byte-Pair Encoding or the Unigram Language Model directly from corpora. It produces fully reversible, fixed-vocabulary tokenisations widely used in multilingual large language models such as T5, mT5, and ALBERT, and is particularly valuable for languages lacking explicit word boundaries.
@@ -125,18 +112,18 @@ public: true
 		- ## Definition
 			- The term agent is contested, and has been for years. The simplest definition is a piece of software that does something on your behalf, **using AI**.
 			- ##### Decentralised automated royalty payments
-				- Traditionally if a piece of art is sold, the first sale may (but notalways) benefit the artist financially, however secondary and anysubsequent sales would only ever financially benefit thebuyer/collector; the original artist would rarely benefit. However If awork of art is minted into an NFT, royalty payments can be predeterminedand automated in perpetuity directly by the use of a ‘smart contract’.Smart contracts are small, automated scripts/programs that runautomatically and independently of a buyer/seller; pre-determinedconditions are set by the buyer; these trigger when certain conditionsare met i.e. These cannot yet be enforced “on chain” and the NFT auctionhouses online have engaged in a race to the bottom and stopped enforcingroyalty payments through their systems. This element might not even bepossible, though there is some hope that we could enable this in thecomplex logic offered by the RGB protocol.
+				- Traditionally if a piece of art is sold, the first sale may (but notalways) benefit the artist financially, however secondary and anysubsequent sales would only ever financially benefit thebuyer/collector; the original artist would rarely benefit. However If awork of art is minted into an NFT, royalty payments can be predeterminedand automated in perpetuity directly by the use of a ‘smart contract’.Smart contracts are small, automated scripts/programs that runautomatically and independently of a buyer/seller; pre-determinedconditions are set by the buyer; these trigger when certain conditionsare met i.e. These cannot yet be enforced “on chain” and the NFT auctionhouses online have engaged in a race to the bottom and stopped enforcingroyalty payments through their systems. This element might not even bepossible, though there is some hope that we [private] enable this in thecomplex logic offered by the RGB protocol.
 		- ## Definition
 			- The term agent is contested, and has been for years. The simplest definition is a piece of software that does something on your behalf, **using AI**.
 			- ##### Decentralised automated royalty payments
-				- Traditionally if a piece of art is sold, the first sale may (but notalways) benefit the artist financially, however secondary and anysubsequent sales would only ever financially benefit thebuyer/collector; the original artist would rarely benefit. However If awork of art is minted into an NFT, royalty payments can be predeterminedand automated in perpetuity directly by the use of a ‘smart contract’.Smart contracts are small, automated scripts/programs that runautomatically and independently of a buyer/seller; pre-determinedconditions are set by the buyer; these trigger when certain conditionsare met i.e. These cannot yet be enforced “on chain” and the NFT auctionhouses online have engaged in a race to the bottom and stopped enforcingroyalty payments through their systems. This element might not even bepossible, though there is some hope that we could enable this in thecomplex logic offered by the RGB protocol.
+				- Traditionally if a piece of art is sold, the first sale may (but notalways) benefit the artist financially, however secondary and anysubsequent sales would only ever financially benefit thebuyer/collector; the original artist would rarely benefit. However If awork of art is minted into an NFT, royalty payments can be predeterminedand automated in perpetuity directly by the use of a ‘smart contract’.Smart contracts are small, automated scripts/programs that runautomatically and independently of a buyer/seller; pre-determinedconditions are set by the buyer; these trigger when certain conditionsare met i.e. These cannot yet be enforced “on chain” and the NFT auctionhouses online have engaged in a race to the bottom and stopped enforcingroyalty payments through their systems. This element might not even bepossible, though there is some hope that we [private] enable this in thecomplex logic offered by the RGB protocol.
 		- ## Definition
 			- The term agent is contested, and has been for years. The simplest definition is a piece of software that does something on your behalf, **using AI**.
   - # The future of agents
   - This reflections piece from W3C shows the trajectory.
   - [Godmode AI](https://godmode.space/) is a web platform that provides access to a variety of AI agents.
 			- ##### Decentralised automated royalty payments
-				- Traditionally if a piece of art is sold, the first sale may (but notalways) benefit the artist financially, however secondary and anysubsequent sales would only ever financially benefit thebuyer/collector; the original artist would rarely benefit. However If awork of art is minted into an NFT, royalty payments can be predeterminedand automated in perpetuity directly by the use of a ‘smart contract’.Smart contracts are small, automated scripts/programs that runautomatically and independently of a buyer/seller; pre-determinedconditions are set by the buyer; these trigger when certain conditionsare met i.e. These cannot yet be enforced “on chain” and the NFT auctionhouses online have engaged in a race to the bottom and stopped enforcingroyalty payments through their systems. This element might not even bepossible, though there is some hope that we could enable this in thecomplex logic offered by the RGB protocol.
+				- Traditionally if a piece of art is sold, the first sale may (but notalways) benefit the artist financially, however secondary and anysubsequent sales would only ever financially benefit thebuyer/collector; the original artist would rarely benefit. However If awork of art is minted into an NFT, royalty payments can be predeterminedand automated in perpetuity directly by the use of a ‘smart contract’.Smart contracts are small, automated scripts/programs that runautomatically and independently of a buyer/seller; pre-determinedconditions are set by the buyer; these trigger when certain conditionsare met i.e. These cannot yet be enforced “on chain” and the NFT auctionhouses online have engaged in a race to the bottom and stopped enforcingroyalty payments through their systems. This element might not even bepossible, though there is some hope that we [private] enable this in thecomplex logic offered by the RGB protocol.
   - # The future of agents
   - This reflections piece from W3C shows the trajectory.
   - # The future of agents

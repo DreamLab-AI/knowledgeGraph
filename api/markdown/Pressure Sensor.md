@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pressure Sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,7 +56,10 @@ public: true
   },
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ],
     "uses": [
       {
@@ -72,32 +70,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pressure-sensor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:79183ce9ec0ee97eaf4d81102bcb4f0a203e861a2851fa157f4c79f24edc3a71"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Pressure Sensor is a transducer that converts applied mechanical force per unit area into an electrical signal, enabling robotic systems and autonomous platforms to detect contact forces, monitor fluid or gas pressure, and implement tactile feedback for safe human-robot interaction and process control.

@@ -1,9 +1,3 @@
----
-public: true
-aliases:
-  - AI Model Architecture
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -40,26 +34,67 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture-of-Experts Architecture"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
-      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture-of-Experts Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ]
   },
   "qualityScore": 0.8,
   "maturity": "established"
 }
 ```
+
+

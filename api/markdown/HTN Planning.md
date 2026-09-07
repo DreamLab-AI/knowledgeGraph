@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HTN Planning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "HTN (Hierarchical Task Network) planning is an automated planning approach that solves problems by recursively decomposing high-level compound tasks into ordered subtasks using a library of methods, until only directly executable primitive actions remain. Unlike classical goal-state planning, it encodes domain knowledge as task decompositions, yielding efficient, human-interpretable plans. HTN planning is widely used in robotics, game AI, and workflow automation.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"},
-      {"@id": "urn:ngm:class:ai-in-games", "label": "AI in Games"}
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      }
     ]
   },
   "quality": 0.72

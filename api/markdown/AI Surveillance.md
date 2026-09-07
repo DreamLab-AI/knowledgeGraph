@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Surveillance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

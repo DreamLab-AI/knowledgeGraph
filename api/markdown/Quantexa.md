@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quantexa
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:quantexa:c3d2fc7362f6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:62b621f2d78c491bf01f38f3eb8341cdfa631ce11631909f430c3c50f88ae53a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Analytics]]",
-      "resolved": "urn:visionflow:linked:data-analytics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fraud Detection]]",
-      "resolved": "urn:visionflow:linked:fraud-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Anti-Money Laundering]]",
-      "resolved": "urn:visionflow:linked:anti-money-laundering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Quantexa is a company that provides data analytics software for connecting and analysing data to support decision intelligence, including fraud and financial crime detection.

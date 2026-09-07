@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environmental Sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "An environmental sensor is a device that measures ambient physical conditions of its surroundings, such as temperature, humidity, pressure, light level, air quality, or sound. As an exteroceptive sensor it perceives the external world rather than a system's internal state. These sensors supply the contextual data used by robots, augmented-reality systems, and smart-environment applications to adapt their behaviour.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:exteroceptive-sensor", "label": "Exteroceptive Sensor"}, {"@id": "urn:ngm:class:augmented-reality-ar", "label": "Augmented Reality (AR)"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:exteroceptive-sensor",
+        "label": "Exteroceptive Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-ar",
+        "label": "Augmented Reality (AR)"
+      }
+    ]
   },
   "quality": 0.72
 }

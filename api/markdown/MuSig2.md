@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MuSig2
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,52 +172,12 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mu-sig-2:4cec89920522",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:744515476e155384699c796ed40329585dabfe9b9c46379cb8c08424590ef86a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Schnorr Signatures]]",
-      "resolved": "urn:visionflow:linked:schnorr-signatures",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Taproot]]",
-      "resolved": "urn:visionflow:linked:taproot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Schnorr Signature]]",
-      "resolved": "urn:visionflow:linked:schnorr-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multisignature]]",
-      "resolved": "urn:visionflow:linked:multisignature",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - MuSig2 is a two-round interactive [[Multisignature]] protocol based on [[Schnorr Signatures]], designed to allow a group of independent signers to collaboratively generate a single aggregate [[Digital Signature]] and a single aggregate public key. The protocol was proposed by Jonas Nick, Tim Ruffing, and Yannick Seurin in 2020 as a successor to the original [[MuSig]] scheme, reducing the required communication rounds from three to two by introducing a technique of committing to two nonces per signer and computing a linear combination of those nonces post-commitment. The resulting signature is cryptographically identical to a standard single-signer Schnorr signature, making it compatible with [[Taproot]] and enabling substantial on-chain privacy improvements for [[Bitcoin]] multi-party arrangements.
 
 - ### Overview
   - MuSig2 addresses the fundamental problem of distributing signing authority across multiple parties while maintaining on-chain efficiency and privacy. In traditional [[ECDSA Multisig]] schemes (such as Bitcoin's native OP_CHECKMULTISIG), each signer's public key and signature is visible on-chain, revealing the multisig structure and increasing transaction size and cost. MuSig2 eliminates this exposure by producing output that is indistinguishable from a single-signer [[Schnorr Signature]].
-  - The protocol builds on [[Key Aggregation]] using the MuSig coefficient technique (also called the KeyAgg algorithm), which assigns each signer a hash-derived coefficient to prevent [[Rogue-Key Attack]]s. In a rogue-key attack, a malicious participant could claim a public key crafted to cancel out other participants' keys, effectively seizing sole control of the aggregate key.
+  - The protocol builds on [[Key Aggregation]] using the MuSig coefficient technique (also called the KeyAgg algorithm), which assigns each signer a hash-derived coefficient to prevent [[Rogue-Key Attack]]s. In a rogue-key attack, a malicious participant [private] claim a public key crafted to cancel out other participants' keys, effectively seizing sole control of the aggregate key.
   - Two-round structure: the protocol requires only two communication rounds (nonce exchange, then partial signature exchange), as opposed to the three rounds (commitment, nonce, signature) needed by the original [[MuSig]]. This makes MuSig2 compatible with a broader range of hardware security modules and [[Hardware Wallet]] implementations where stateful multi-round protocols are difficult.
   - Security proof: MuSig2 is proven secure in the random oracle model (ROM) under the [[Discrete Logarithm]] assumption. A subsequent analysis also provided security proofs in the algebraic group model (AGM), giving stronger confidence in the construction. The proofs account for concurrent session attacks and handle the two-nonce technique rigorously.
   - Standardisation: MuSig2 was formally standardised as [[BIP-327]] within the [[Bitcoin Improvement Proposal]] process, providing a complete specification for implementers including key aggregation, nonce generation, signing, and verification algorithms.

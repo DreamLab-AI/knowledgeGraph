@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Dreamlab]]
-# DreamLab Creative Technology Collective
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,17 +42,38 @@ elevatedFrom:: [[Dreamlab]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "provenance": {
@@ -68,26 +83,6 @@ elevatedFrom:: [[Dreamlab]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dreamlab:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:977580db1bc671e8762d4530cea1166b067189279872a14714a8f7a76259c67d"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Dreamlab is a UK-based creative technologist collective offering multidisciplinary services spanning AI and machine learning, virtual production, immersive XR experiences, generative media, spatial computing, and strategic R&D partnerships. It operates at the intersection of advanced AI infrastructure, real-time rendering, and immersive storytelling for creative and enterprise clients.

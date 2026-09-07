@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Base
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,52 +195,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:base:cae662172fd4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:94986893bd166cb1e399755ddf7c3439f3986456df51f19cff0a2c233f2b9516"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimism]]",
-      "resolved": "urn:visionflow:linked:optimism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Coinbase]]",
-      "resolved": "urn:visionflow:linked:coinbase",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 2 Scaling]]",
-      "resolved": "urn:visionflow:linked:layer-2-scaling",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Ethereum Layer 2 network built by Coinbase using the Optimism OP Stack, providing low-cost transactions secured by the Ethereum mainnet.

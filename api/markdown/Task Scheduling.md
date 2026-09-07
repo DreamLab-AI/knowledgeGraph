@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Task Scheduling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Task Scheduling",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:resource-allocation", "vc:label": "Resource Allocation"},
-    {"@id": "urn:visionflow:linked:operating-system", "vc:label": "Operating System"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:priority-queue", "vc:label": "Priority Queue"},
-    {"@id": "urn:visionflow:linked:real-time-control", "vc:label": "Real-Time Control"}
+    {
+      "@id": "urn:visionflow:linked:resource-allocation",
+      "vc:label": "Resource Allocation"
+    },
+    {
+      "@id": "urn:visionflow:linked:operating-system",
+      "vc:label": "Operating System"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:priority-queue",
+      "vc:label": "Priority Queue"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-control",
+      "vc:label": "Real-Time Control"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -33,23 +48,50 @@ public: true
   "definition": "The process of deciding which tasks run on which computational resources and when, subject to constraints such as priorities, deadlines, dependencies, and resource capacity. Task scheduling appears at every scale of computing: operating-system schedulers multiplex threads across CPU cores, real-time schedulers such as rate-monotonic and earliest-deadline-first guarantee that control loops meet hard deadlines, cluster orchestrators place jobs across machines, and workflow engines order dependent steps expressed as directed acyclic graphs. Because optimal scheduling is NP-hard in most general formulations, practical schedulers rely on priority-based heuristics, often implemented over priority queues, trading strict optimality for predictability, fairness, and low overhead.",
   "domain": "distributed-systems",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:resource-allocation", "label": "Resource Allocation"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:resource-allocation",
+    "label": "Resource Allocation"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:priority-queue", "label": "Priority Queue"}
+      {
+        "@id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
-      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"}
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time-systems", "label": "Real-Time Systems"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
-      {"@id": "urn:ngm:class:concurrency", "label": "Concurrency"}
+      {
+        "@id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
     ]
   },
   "quality": 0.8,

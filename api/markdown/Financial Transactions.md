@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Financial Transactions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,17 +51,38 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:de-fi-services", "label": "De Fi Services"},
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"}
+      {
+        "@id": "urn:ngm:class:de-fi-services",
+        "label": "De Fi Services"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
     ]
   },
   "provenance": {
@@ -76,32 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:financial-transactions:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:16a7dc90f7dfa150f69a3c2745eae98c7ca5d83bf1d6bcd0f19ffea1d1f24fc5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Financial Transactions is a concept within the metaverse domain. Further enrichment pending.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[PDF]]
-# Portable Document Format Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,16 +42,34 @@ elevatedFrom:: [[PDF]]
   "qualityScore": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "provenance": {
@@ -67,26 +79,6 @@ elevatedFrom:: [[PDF]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pdf:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3d55e4598f26fbc23ffeb73b55ff253531c9f58314b0d85697645f23242e047f"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Portable Document Format: an ISO-standardised file format (ISO 32000) that encodes documents with fixed layout, fonts, graphics, and metadata in a device-independent, platform-agnostic representation. In AI and knowledge-graph contexts, PDFs serve as primary carriers of academic papers, technical specifications, and legal documents that are ingested via extraction pipelines for training, retrieval-augmented generation, and knowledge-base construction.

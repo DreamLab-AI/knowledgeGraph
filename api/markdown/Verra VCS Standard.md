@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Verra VCS Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:verra-vcs-standard:cf94dc6720a1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:25068757fd02f0f58fb2b608b9439b41c9bb3a710ab66041611c8deaea43266b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Carbon Markets]]",
-      "resolved": "urn:visionflow:linked:carbon-markets",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Registry]]",
-      "resolved": "urn:visionflow:linked:carbon-registry",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainability Domain]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Verra Verified Carbon Standard is a widely used programme for certifying voluntary carbon credits, setting rules for quantifying, verifying and issuing emission reductions and removals.

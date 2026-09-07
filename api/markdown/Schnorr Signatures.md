@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Schnorr Signatures
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,52 +175,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:schnorr-signatures:796a9ff7c98f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9c2cfa64bdefb697cc1b63a1a18287d7564815123f466e51dd60bfee9d63527d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Elliptic Curve Cryptography]]",
-      "resolved": "urn:visionflow:linked:elliptic-curve-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MuSig2]]",
-      "resolved": "urn:visionflow:linked:mu-sig-2",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Taproot]]",
-      "resolved": "urn:visionflow:linked:taproot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Schnorr Signature]]",
-      "resolved": "urn:visionflow:linked:schnorr-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:linked:digital-signature",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital signature scheme based on the discrete logarithm problem, producing compact signatures with linear key and signature aggregation properties.

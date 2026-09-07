@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Frontier Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,4 +186,3 @@ public: true
   - Frontier models are trained on trillions of tokens using thousands of specialised accelerators for weeks to months. Techniques such as RLHF (Reinforcement Learning from Human Feedback), constitutional AI, and DPO (Direct Preference Optimisation) are applied post-pretraining to align outputs. Architectures are predominantly transformer-based with context windows ranging from 128k to over 1M tokens. Mixture-of-Experts (MoE) variants activate only a fraction of parameters per token, enabling larger parameter counts within the same compute budget.
   - Frontier models underpin commercial AI products (coding assistants, scientific discovery tools, autonomous agents) while also driving the urgency of AI safety research. Their capability elicitation benchmarks—MMLU, GPQA, SWE-bench, ARC-AGI—shape regulatory frameworks. Governments mandate pre-deployment evaluations above specific compute thresholds (the EU AI Act uses 10^25 FLOPs as a provisional marker for frontier-level training runs).
   - As of 2024–2025, the leading frontier models include GPT-4o, Claude 3.5/3.7, Gemini 1.5/2.0, Llama 3.x, and DeepSeek V3/R1. Inference-time compute scaling (chain-of-thought, extended thinking) has partially decoupled capability from training compute, with models such as OpenAI o3 and Claude 3.7 Sonnet demonstrating that reasoning at inference time can unlock performance on tasks previously considered out of reach. Safety evaluation infrastructure—red-teaming, model cards, responsible scaling policies—has matured but remains contested in methodology.
-

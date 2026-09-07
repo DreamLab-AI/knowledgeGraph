@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Creative Software
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:creative-software:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:390238c6f7a9859126fea3e38058abd5949ce1ff3f8226a3f983a12b52c94cc3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Application software designed to support artistic, design, and content production workflows, including 3D modelling, animation, compositing, generative art, and interactive experience authoring. In spatial computing contexts, creative software bridges concept and deployment by enabling artists to produce assets compatible with real-time rendering engines and metaverse platforms.

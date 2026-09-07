@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mesh Data
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,54 +20,143 @@ public: true
   "definition": "Mesh data is a structured representation of a three-dimensional surface or volume as a collection of vertices, edges, and polygonal faces — most commonly triangles or quads — that together define the geometry of a shape. It encodes both topological connectivity (which vertices form which faces) and geometric attributes (positions, normals, UV coordinates, vertex colours) required for rendering, simulation, and analysis. Mesh data serves as the primary interchange format between 3D modelling software, real-time engines, and spatial computing pipelines. It is produced by processes such as photogrammetry, structured-light scanning, LiDAR capture, and procedural generation.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:spatial-mesh", "label": "Spatial Mesh"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-mesh",
+      "label": "Spatial Mesh"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:vertex-buffer", "label": "Vertex Buffer"},
-      {"@id": "urn:ngm:class:index-buffer", "label": "Index Buffer"},
-      {"@id": "urn:ngm:class:surface-normal", "label": "Surface Normal"}
+      {
+        "@id": "urn:ngm:class:vertex-buffer",
+        "label": "Vertex Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:index-buffer",
+        "label": "Index Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:surface-normal",
+        "label": "Surface Normal"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:coordinate-system", "label": "Coordinate System"},
-      {"@id": "urn:ngm:class:topology", "label": "Topology"}
+      {
+        "@id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      },
+      {
+        "@id": "urn:ngm:class:topology",
+        "label": "Topology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
-      {"@id": "urn:ngm:class:3-d-rendering", "label": "3D Rendering"},
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:finite-element-analysis", "label": "Finite Element Analysis"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:vertex-shader", "label": "Vertex Shader"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"}
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"}
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:voxel-grid", "label": "Voxel Grid"},
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:implicit-surface", "label": "Implicit Surface"}
+      {
+        "@id": "urn:ngm:class:voxel-grid",
+        "label": "Voxel Grid"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:implicit-surface",
+        "label": "Implicit Surface"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:three-dimensional-graphics", "label": "Three Dimensional Graphics"},
-      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"},
-      {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"},
-      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"}
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:three-dimensional-graphics",
+        "label": "Three Dimensional Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:polygon-mesh", "label": "Polygon Mesh"},
-    {"@id": "urn:ngm:class:triangle-mesh", "label": "Triangle Mesh"}
+    {
+      "@id": "urn:ngm:class:polygon-mesh",
+      "label": "Polygon Mesh"
+    },
+    {
+      "@id": "urn:ngm:class:triangle-mesh",
+      "label": "Triangle Mesh"
+    }
   ],
   "quality": 0.72,
   "provenance": {
@@ -92,7 +176,7 @@ public: true
 - ### Content
   - Mesh data has been fundamental to computer graphics since the late 1960s, when polygon-based models replaced analytical surface descriptions. The triangle mesh became the canonical primitive after the widespread adoption of GPU rasterisation pipelines in the 1990s, as the triangle is the simplest polygon guaranteed to be planar and therefore directly rasterisable. File formats such as OBJ, STL, PLY, FBX, and USD standardised the interchange of mesh data across tools.
 
-  - A mesh is defined by at minimum a vertex buffer — an ordered list of 3D positions — and an index buffer specifying how vertices are grouped into faces. Additional vertex attributes such as surface normals, tangent vectors, texture coordinates (UVs), and per-vertex colour extend the base representation to support shading, texturing, and physics. The mesh topology — the connectivity graph of vertices and faces — governs smoothness, subdivision, and deformation behaviour. Level-of-detail (LOD) systems reduce polygon count at distance to maintain real-time performance.
+  - A mesh is defined by at minimum a vertex buffer — an ordered list of 3D positions — and an [private] buffer specifying how vertices are grouped into faces. Additional vertex attributes such as surface normals, tangent vectors, texture coordinates (UVs), and per-vertex colour extend the base representation to support shading, texturing, and physics. The mesh topology — the connectivity graph of vertices and faces — governs smoothness, subdivision, and deformation behaviour. Level-of-detail (LOD) systems reduce polygon count at distance to maintain real-time performance.
 
   - Mesh data is central to virtually every 3D application domain: game engines consume meshes for real-time rendering; CAD and simulation tools use them for finite element analysis; medical imaging reconstructs anatomical meshes from CT/MRI voxel data; robotics uses environment meshes for collision detection and path planning; and spatial computing platforms stream meshes to XR headsets for mixed-reality scene understanding. The rise of neural 3D representations (NeRF, 3D Gaussian Splatting) has introduced hybrid pipelines where implicit neural fields are converted to explicit meshes for downstream use.
 

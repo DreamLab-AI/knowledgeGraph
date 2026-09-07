@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collision Resistance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,19 +78,46 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:preimage-resistance", "label": "Preimage Resistance"},
-      {"@id": "urn:ngm:class:keccak-256", "label": "Keccak-256"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:preimage-resistance",
+        "label": "Preimage Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:keccak-256",
+        "label": "Keccak-256"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}
+      {
+        "@id": "urn:ngm:class:bc-cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
     ]
   },
   "quality": 0.8,
@@ -106,62 +128,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:collision-resistance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:48095ed4dc9c36453180fa83321aac18fd1650b4157048bc82d48075a19d2529"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicPrimitive]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hash function security property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

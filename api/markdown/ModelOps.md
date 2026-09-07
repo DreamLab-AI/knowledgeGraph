@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Model Ops
----
-
-# ModelOps
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,32 +55,74 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
-      {"@id": "urn:ngm:class:feature-store", "label": "Feature Store"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "provenance": {
@@ -97,37 +132,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-ops:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0bd160066d2ae0f7ee6f9a31e241c75034aa7591fb5e5f3109645fc2effd06b2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gartner Prediction]]",
-      "resolved": "urn:visionflow:owl:class:gartner-prediction",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   ModelOps is the discipline of industrialising the end-to-end governance and operational lifecycle of AI and machine learning models, encompassing the processes, tooling, and organisational practices required to reliably build, validate, deploy, monitor, and retire models in production environments. It extends MLOps beyond technical pipeline automation to include regulatory compliance, risk management, model lineage tracking, and cross-functional accountability.

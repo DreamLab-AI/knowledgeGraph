@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Non Maximum Suppression
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,37 +20,84 @@ public: true
   "definition": "Non-Maximum Suppression (NMS) is a post-processing algorithm used in object detection to eliminate redundant overlapping bounding box proposals by retaining only the highest-confidence detection and discarding lower-confidence boxes that exceed a predefined intersection-over-union (IoU) threshold. The procedure iteratively selects the detection with the highest class score, suppresses all remaining boxes that sufficiently overlap with it, and repeats until no candidates remain. NMS is a critical component of single-stage and two-stage detectors including YOLO, SSD, and Faster R-CNN families. Soft-NMS and class-agnostic variants address edge cases where multiple legitimate objects are densely packed.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:object-detection",
+      "label": "Object Detection"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bounding-box-regression", "label": "Bounding Box Regression"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:bounding-box-regression",
+        "label": "Bounding Box Regression"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:bounding-box-regression", "label": "Bounding Box Regression"}
+      {
+        "@id": "urn:ngm:class:bounding-box-regression",
+        "label": "Bounding Box Regression"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:computer-vision-task", "label": "Computer Vision Task"}
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-task",
+        "label": "Computer Vision Task"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"},
-      {"@id": "urn:ngm:class:real-time-ai-inference", "label": "Real-Time AI Inference"}
+      {
+        "@id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:heatmap-regression", "label": "Heatmap Regression"},
-      {"@id": "urn:ngm:class:bounding-volume", "label": "Bounding Volume"},
-      {"@id": "urn:ngm:class:bounding-volume-hierarchy", "label": "Bounding Volume Hierarchy"}
+      {
+        "@id": "urn:ngm:class:heatmap-regression",
+        "label": "Heatmap Regression"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:object-detection-and-tracking", "label": "Object Detection and Tracking"}
+      {
+        "@id": "urn:ngm:class:object-detection-and-tracking",
+        "label": "Object Detection and Tracking"
+      }
     ]
   },
   "sameAs": [],

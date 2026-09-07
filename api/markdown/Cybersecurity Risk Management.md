@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Cybersecurity Risk Management
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,38 +8,134 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:governance", "vc:label": "Governance"},
-    {"@id": "urn:visionflow:linked:security", "vc:label": "Security"},
-    {"@id": "urn:visionflow:linked:risk-management", "vc:label": "Risk Management"},
-    {"@id": "urn:visionflow:linked:information-security-management", "vc:label": "Information Security Management"},
-    {"@id": "urn:visionflow:linked:threat-modelling", "vc:label": "Threat Modelling"},
-    {"@id": "urn:visionflow:linked:vulnerability-assessment", "vc:label": "Vulnerability Assessment"},
-    {"@id": "urn:visionflow:linked:continuous-monitoring", "vc:label": "Continuous Monitoring"},
-    {"@id": "urn:visionflow:linked:security-framework", "vc:label": "Security Framework"},
-    {"@id": "urn:visionflow:linked:risk-assessment", "vc:label": "Risk Assessment"},
-    {"@id": "urn:visionflow:linked:incident-response", "vc:label": "Incident Response"},
-    {"@id": "urn:visionflow:linked:compliance-monitoring", "vc:label": "Compliance Monitoring"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:supply-chain-security", "vc:label": "Supply Chain Security"},
-    {"@id": "urn:visionflow:linked:penetration-testing", "vc:label": "Penetration Testing"},
-    {"@id": "urn:visionflow:linked:nist-cybersecurity-framework", "vc:label": "NIST Cybersecurity Framework"},
-    {"@id": "urn:visionflow:linked:iso-27001", "vc:label": "ISO 27001"},
-    {"@id": "urn:visionflow:linked:resilience", "vc:label": "Resilience"},
-    {"@id": "urn:visionflow:linked:accountability", "vc:label": "Accountability"},
-    {"@id": "urn:visionflow:linked:security-operations", "vc:label": "Security Operations"},
-    {"@id": "urn:visionflow:linked:zero-trust-architecture", "vc:label": "Zero Trust Architecture"},
-    {"@id": "urn:visionflow:linked:risk-register", "vc:label": "Risk Register"},
-    {"@id": "urn:visionflow:linked:siem", "vc:label": "SIEM"},
-    {"@id": "urn:visionflow:linked:soar", "vc:label": "SOAR"},
-    {"@id": "urn:visionflow:linked:ai-risk-management", "vc:label": "AI Risk Management"},
-    {"@id": "urn:visionflow:linked:cyber-resilience", "vc:label": "Cyber Resilience"},
-    {"@id": "urn:visionflow:linked:threat-actor", "vc:label": "Threat Actor"},
-    {"@id": "urn:visionflow:linked:threat-detection", "vc:label": "Threat Detection"},
-    {"@id": "urn:visionflow:linked:security-operations-centre", "vc:label": "Security Operations Centre"},
-    {"@id": "urn:visionflow:linked:compliance-framework", "vc:label": "Compliance Framework"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:operational-resilience", "vc:label": "Operational Resilience"},
-    {"@id": "urn:visionflow:linked:risk-assessment-methodology", "vc:label": "Risk Assessment Methodology"}
+    {
+      "@id": "urn:visionflow:linked:governance",
+      "vc:label": "Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:security",
+      "vc:label": "Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-security-management",
+      "vc:label": "Information Security Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:threat-modelling",
+      "vc:label": "Threat Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:vulnerability-assessment",
+      "vc:label": "Vulnerability Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-monitoring",
+      "vc:label": "Continuous Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-framework",
+      "vc:label": "Security Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-assessment",
+      "vc:label": "Risk Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:incident-response",
+      "vc:label": "Incident Response"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance-monitoring",
+      "vc:label": "Compliance Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-security",
+      "vc:label": "Supply Chain Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:penetration-testing",
+      "vc:label": "Penetration Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-cybersecurity-framework",
+      "vc:label": "NIST Cybersecurity Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-27001",
+      "vc:label": "ISO 27001"
+    },
+    {
+      "@id": "urn:visionflow:linked:resilience",
+      "vc:label": "Resilience"
+    },
+    {
+      "@id": "urn:visionflow:linked:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-operations",
+      "vc:label": "Security Operations"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-trust-architecture",
+      "vc:label": "Zero Trust Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-register",
+      "vc:label": "Risk Register"
+    },
+    {
+      "@id": "urn:visionflow:linked:siem",
+      "vc:label": "SIEM"
+    },
+    {
+      "@id": "urn:visionflow:linked:soar",
+      "vc:label": "SOAR"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-risk-management",
+      "vc:label": "AI Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:cyber-resilience",
+      "vc:label": "Cyber Resilience"
+    },
+    {
+      "@id": "urn:visionflow:linked:threat-actor",
+      "vc:label": "Threat Actor"
+    },
+    {
+      "@id": "urn:visionflow:linked:threat-detection",
+      "vc:label": "Threat Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-operations-centre",
+      "vc:label": "Security Operations Centre"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance-framework",
+      "vc:label": "Compliance Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:operational-resilience",
+      "vc:label": "Operational Resilience"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-assessment-methodology",
+      "vc:label": "Risk Assessment Methodology"
+    }
   ]
 }
 ```

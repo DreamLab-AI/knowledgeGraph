@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy Preservation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Privacy preservation is the practice and set of techniques for protecting personal or sensitive information against unauthorised access, inference, or disclosure while still permitting useful processing. It spans cryptographic methods, data minimisation, anonymisation, and policy controls. It is foundational to compliant data systems and to trust in digital services.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:privacy-filter", "label": "Privacy Filter"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-filter",
+        "label": "Privacy Filter"
+      }
     ]
   },
   "quality": 0.72

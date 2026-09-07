@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Naive Bayes Classifier
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:naive-bayes-classifier", "@type":"Page", "title":"Naive Bayes Classifier", "vc:slug":"naive-bayes-classifier", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:naive-bayes-classifier",
+  "@type": "Page",
+  "title": "Naive Bayes Classifier",
+  "vc:slug": "naive-bayes-classifier",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

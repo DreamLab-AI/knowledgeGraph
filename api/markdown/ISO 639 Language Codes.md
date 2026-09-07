@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ISO 639 Language Codes
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:iso-639-language-codes:b1d1f51963a9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7f886262c8a8fef47abf2e8f96b32a7e71058ba8d41e587c3e1a9c51548b11f6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO]]",
-      "resolved": "urn:visionflow:linked:iso",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An ISO standard, in multiple parts, defining codes for the representation of names of languages. It is widely used to identify languages in data and software.

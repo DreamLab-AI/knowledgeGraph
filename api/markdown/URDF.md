@@ -1,8 +1,3 @@
----
-public: true
----
-
-# urdf
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,23 +34,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gazebo-simulator", "label": "Gazebo Simulator"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
-      {"@id": "urn:ngm:class:robot-link", "label": "RobotLink"}
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "@id": "urn:ngm:class:robot-link",
+        "label": "RobotLink"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Unified Robot Description Format (URDF) is an XML-based schema used within the Robot Operating System (ROS) ecosystem to fully specify a robot's physical structure, including its kinematic chain of links and joints, collision geometries, inertial properties, and sensor placements. URDF files serve as the authoritative model consumed by simulation environments such as Gazebo, motion planners, and visualisation tools like RViz, enabling consistent robot representation across software components. Each joint element declares its type (fixed, revolute, prismatic, continuous) along with axis, limits, and damping parameters, while link elements reference mesh geometry and material definitions.

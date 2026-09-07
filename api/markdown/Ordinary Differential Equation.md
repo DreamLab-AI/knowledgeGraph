@@ -1,37 +1,118 @@
----
-public: true
----
-
-# Ordinary Differential Equation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:ordinary-differential-equation", "@type":"Page", "title":"Ordinary Differential Equation", "vc:slug":"ordinary-differential-equation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:ordinary-differential-equation",
+  "@type": "Page",
+  "title": "Ordinary Differential Equation",
+  "vc:slug": "ordinary-differential-equation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:ordinary-differential-equation",
-  "@type":"Class",
-  "label":"Ordinary Differential Equation",
-  "definition":"An ordinary differential equation (ODE) is a mathematical equation relating a function of a single independent variable to its derivatives. It describes how a quantity changes continuously with respect to that variable, and its solution is the function or family of functions satisfying the relation, often determined by initial conditions. ODEs are foundational tools for modelling dynamical systems in physics, biology, engineering, and increasingly in machine learning.",
-  "domain":"machine-learning",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:numerical-methods","label":"Numerical Methods"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:numerical-integration","label":"Numerical Integration"}],
-    "uses":[{"@id":"urn:ngm:class:numerical-integration","label":"Numerical Integration"},{"@id":"urn:ngm:class:interpolation","label":"Interpolation"}],
-    "requires":[{"@id":"urn:ngm:class:numerical-methods","label":"Numerical Methods"}],
-    "enables":[{"@id":"urn:ngm:class:dynamical-systems","label":"Dynamical Systems"},{"@id":"urn:ngm:class:simulation","label":"Simulation"},{"@id":"urn:ngm:class:neural-ordinary-differential-equation","label":"Neural Ordinary Differential Equation"}],
-    "supports":[{"@id":"urn:ngm:class:scientific-computing","label":"Scientific Computing"},{"@id":"urn:ngm:class:simulation","label":"Simulation"}],
-    "implements":[{"@id":"urn:ngm:class:numerical-integration","label":"Numerical Integration"}],
-    "relatedTo":[{"@id":"urn:ngm:class:dynamical-systems","label":"Dynamical Systems"},{"@id":"urn:ngm:class:scientific-computing","label":"Scientific Computing"},{"@id":"urn:ngm:class:optimisation","label":"Optimisation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:stochastic-differential-equation","label":"Stochastic Differential Equation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:neural-ordinary-differential-equation","label":"Neural Ordinary Differential Equation"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ordinary-differential-equation",
+  "@type": "Class",
+  "label": "Ordinary Differential Equation",
+  "definition": "An ordinary differential equation (ODE) is a mathematical equation relating a function of a single independent variable to its derivatives. It describes how a quantity changes continuously with respect to that variable, and its solution is the function or family of functions satisfying the relation, often determined by initial conditions. ODEs are foundational tools for modelling dynamical systems in physics, biology, engineering, and increasingly in machine learning.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:numerical-methods",
+      "label": "Numerical Methods"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "@id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dynamical-systems",
+        "label": "Dynamical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-ordinary-differential-equation",
+        "label": "Neural Ordinary Differential Equation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dynamical-systems",
+        "label": "Dynamical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:neural-ordinary-differential-equation",
+        "label": "Neural Ordinary Differential Equation"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

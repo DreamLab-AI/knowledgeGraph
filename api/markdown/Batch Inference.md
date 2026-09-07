@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Batch Inference
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,39 +8,138 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:model-serving", "vc:label": "Model Serving"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:gpu-computing", "vc:label": "GPU Computing"},
-    {"@id": "urn:visionflow:linked:tensor-processing", "vc:label": "Tensor Processing"},
-    {"@id": "urn:visionflow:linked:embedding-generation", "vc:label": "Embedding Generation"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:online-inference", "vc:label": "Online Inference"},
-    {"@id": "urn:visionflow:linked:streaming-inference", "vc:label": "Streaming Inference"},
-    {"@id": "urn:visionflow:linked:throughput-optimisation", "vc:label": "Throughput Optimisation"},
-    {"@id": "urn:visionflow:linked:model-quantisation", "vc:label": "Model Quantisation"},
-    {"@id": "urn:visionflow:linked:distributed-training", "vc:label": "Distributed Training"},
-    {"@id": "urn:visionflow:linked:machine-learning-infrastructure", "vc:label": "Machine Learning Infrastructure"},
-    {"@id": "urn:visionflow:linked:scalability", "vc:label": "Scalability"},
-    {"@id": "urn:visionflow:linked:inference-pipeline", "vc:label": "Inference Pipeline"},
-    {"@id": "urn:visionflow:linked:deep-learning-framework", "vc:label": "Deep Learning Framework"},
-    {"@id": "urn:visionflow:linked:distributed-inference", "vc:label": "Distributed Inference"},
-    {"@id": "urn:visionflow:linked:flash-attention", "vc:label": "Flash Attention"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:neural-network-quantisation", "vc:label": "Neural Network Quantisation"},
-    {"@id": "urn:visionflow:linked:edge-inference", "vc:label": "Edge Inference"},
-    {"@id": "urn:visionflow:linked:gpu-architecture", "vc:label": "GPU Architecture"},
-    {"@id": "urn:visionflow:linked:tensor-parallelism", "vc:label": "Tensor Parallelism"},
-    {"@id": "urn:visionflow:linked:model-deployment", "vc:label": "Model Deployment"},
-    {"@id": "urn:visionflow:linked:kv-cache", "vc:label": "KV Cache"},
-    {"@id": "urn:visionflow:linked:speculative-decoding", "vc:label": "Speculative Decoding"},
-    {"@id": "urn:visionflow:linked:continuous-batching", "vc:label": "Continuous Batching"},
-    {"@id": "urn:visionflow:linked:cost-optimisation", "vc:label": "Cost Optimisation"},
-    {"@id": "urn:visionflow:linked:latency", "vc:label": "Latency"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:machine-learning-infrastructure-layer", "vc:label": "MachineLearningInfrastructureLayer"}
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-serving",
+      "vc:label": "Model Serving"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-computing",
+      "vc:label": "GPU Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-processing",
+      "vc:label": "Tensor Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding-generation",
+      "vc:label": "Embedding Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:online-inference",
+      "vc:label": "Online Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:streaming-inference",
+      "vc:label": "Streaming Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:throughput-optimisation",
+      "vc:label": "Throughput Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-quantisation",
+      "vc:label": "Model Quantisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-training",
+      "vc:label": "Distributed Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-infrastructure",
+      "vc:label": "Machine Learning Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalability",
+      "vc:label": "Scalability"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-pipeline",
+      "vc:label": "Inference Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning-framework",
+      "vc:label": "Deep Learning Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-inference",
+      "vc:label": "Distributed Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:flash-attention",
+      "vc:label": "Flash Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network-quantisation",
+      "vc:label": "Neural Network Quantisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-inference",
+      "vc:label": "Edge Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-architecture",
+      "vc:label": "GPU Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-parallelism",
+      "vc:label": "Tensor Parallelism"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-deployment",
+      "vc:label": "Model Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:kv-cache",
+      "vc:label": "KV Cache"
+    },
+    {
+      "@id": "urn:visionflow:linked:speculative-decoding",
+      "vc:label": "Speculative Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-batching",
+      "vc:label": "Continuous Batching"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-optimisation",
+      "vc:label": "Cost Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:latency",
+      "vc:label": "Latency"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-infrastructure-layer",
+      "vc:label": "MachineLearningInfrastructureLayer"
+    }
   ]
 }
 ```

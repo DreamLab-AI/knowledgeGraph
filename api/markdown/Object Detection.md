@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ObjectDetection
----
-
-# Object Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,47 +198,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:object-detection:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4ff047b7ff62192cebe74c1ea257a2e3a478531b42aa58fdf4c6996ea2bcfcdf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Classification]]",
-      "resolved": "urn:visionflow:owl:class:image-classification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Instance Segmentation]]",
-      "resolved": "urn:visionflow:owl:class:instance-segmentation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Object Detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance. Object detectors (YOLO, Faster R-CNN, DETR) combine classification and localisation, outputting spatial coordinates and class probabilities for all objects of interest in real-time or near-real-time performance.

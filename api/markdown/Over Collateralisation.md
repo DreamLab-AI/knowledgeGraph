@@ -1,37 +1,118 @@
----
-public: true
----
-
-# Over Collateralisation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:over-collateralisation", "@type":"Page", "title":"Over Collateralisation", "vc:slug":"over-collateralisation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:over-collateralisation",
+  "@type": "Page",
+  "title": "Over Collateralisation",
+  "vc:slug": "over-collateralisation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:over-collateralisation",
-  "@type":"Class",
-  "label":"Over Collateralisation",
-  "definition":"Over-collateralisation is a risk-management practice in which the value of assets pledged as collateral exceeds the value of the obligation they secure. In decentralised finance it is the standard requirement for permissionless lending and for backing stablecoins, where borrowers must deposit more value than they draw to absorb price volatility. The surplus margin protects lenders and protocols against default by ensuring that collateral can be liquidated for at least the amount owed even when prices move adversely.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:decentralised-finance","label":"Decentralised Finance"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:price-oracle","label":"Price Oracle"},{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "enables":[{"@id":"urn:ngm:class:lending-protocol","label":"Lending Protocol"},{"@id":"urn:ngm:class:stablecoin","label":"Stablecoin"},{"@id":"urn:ngm:class:liquidation-mechanism","label":"Liquidation Mechanism"}],
-    "partOf":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "uses":[{"@id":"urn:ngm:class:oracle","label":"Oracle"}],
-    "supports":[{"@id":"urn:ngm:class:yield-farming","label":"Yield Farming"},{"@id":"urn:ngm:class:decentralised-exchange","label":"Decentralised Exchange"}],
-    "dependsOn":[{"@id":"urn:ngm:class:price-oracle","label":"Price Oracle"}],
-    "relatedTo":[{"@id":"urn:ngm:class:aave","label":"Aave"},{"@id":"urn:ngm:class:interest-rate","label":"Interest Rate"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "implements":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:interest-rate","label":"Interest Rate"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:over-collateralisation",
+  "@type": "Class",
+  "label": "Over Collateralisation",
+  "definition": "Over-collateralisation is a risk-management practice in which the value of assets pledged as collateral exceeds the value of the obligation they secure. In decentralised finance it is the standard requirement for permissionless lending and for backing stablecoins, where borrowers must deposit more value than they draw to absorb price volatility. The surplus margin protects lenders and protocols against default by ensuring that collateral can be liquidated for at least the amount owed even when prices move adversely.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:liquidation-mechanism",
+        "label": "Liquidation Mechanism"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aave",
+        "label": "Aave"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

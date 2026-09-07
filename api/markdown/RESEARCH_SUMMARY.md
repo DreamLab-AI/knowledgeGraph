@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RESEARCH_SUMMARY
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,19 +67,46 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:metaverse-ontology", "label": "Metaverse Ontology"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      }
     ]
   },
   "provenance": {
@@ -94,52 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:research-summary:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c9e86f541eda44ec5b12dadfd38556064721b45d1df7a28633ed3136b28f713b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A comprehensive synthesis document aggregating research findings, literature reviews, and academic insights across [[Metaverse]], [[Blockchain]], [[ArtificialIntelligence]], and [[Robotics]] domains. This summary distils empirical evidence, theoretical frameworks, and future research directions for stakeholders.
@@ -191,7 +167,7 @@ public: true
   - Academic institutions have contributed substantially to virtual worlds research, particularly during the 2005–2013 period when UK universities published significant volumes on immersive digital environments
   - North England innovation hubs
   - Whilst specific North England metaverse implementations are not extensively documented in current literature, the region's established technology clusters (particularly in Manchester, Leeds, and Sheffield) represent potential growth areas for spatial computing and XR development
-  - Regional universities and technology parks could position themselves within the emerging enterprise XR market, particularly in training and industrial applications[4]
+  - Regional universities and technology parks [private] position themselves within the emerging enterprise XR market, particularly in training and industrial applications[4]
   ## Future Directions
   - Emerging trends and developments
   - Rapid scaling of consumer-grade smart glasses (already mainstream in 2026) toward fully immersive display integration and sub-100g headset form factors

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Layoff tracker and threatened roles]]
-# AI-Driven Workforce Displacement Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,13 +42,28 @@ elevatedFrom:: [[Layoff tracker and threatened roles]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:economics", "label": "Economics"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ]
   },
   "quality": 0.5,
@@ -65,26 +74,6 @@ elevatedFrom:: [[Layoff tracker and threatened roles]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:layoff-tracker-and-threatened-roles:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3b4516c8f4d86c6300b4674f79d89c17224fec7b3a4370f577c3fb33a870de12"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A curated record of mass layoffs in the technology sector from 2023 onwards, cataloguing headcount reductions at major firms alongside UK government estimates that AI automation may displace 10–30% of existing jobs. The tracker contextualises how AI adoption—particularly large language models and agentic AI—is accelerating workforce restructuring across white-collar roles.

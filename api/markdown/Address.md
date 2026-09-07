@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Address
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -163,67 +158,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:address:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:05db31fa66e9b71ed791deb5bf987635be7862b20eb540604e6a345b10a150a0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicPrimitive]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A blockchain Address is a compact, human-transmissible identifier derived from a public key via cryptographic hashing (typically SHA-256 followed by RIPEMD-160 for Bitcoin, or Keccak-256 for Ethereum), designating the recipient or controller of blockchain funds or smart-contract state. Addresses function as pseudonymous identifiers: they reveal nothing about the owner's real identity while allowing cryptographic proof of ownership through digital signature with the corresponding private key.

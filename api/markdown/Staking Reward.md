@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Staking Reward
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

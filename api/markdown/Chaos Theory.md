@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Chaos Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Chaos theory is the study of deterministic dynamical systems whose long-term behaviour is highly sensitive to initial conditions, making them practically unpredictable despite obeying fixed deterministic rules. It characterises phenomena such as strange attractors, bifurcations, and the exponential divergence of nearby trajectories measured by Lyapunov exponents. It matters because it explains how simple nonlinear rules can produce complex, aperiodic behaviour, bridging deterministic dynamics and apparent randomness in physical, biological, and economic systems.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:emergence", "label": "Emergence"},
-      {"@id": "urn:ngm:class:self-organisation", "label": "Self-Organisation"}
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      }
     ]
   },
   "quality": 0.72

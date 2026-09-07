@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Neutrality Planning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,72 +198,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:carbon-neutrality-planning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:275f8246a3677c4b5e873d7f675254f59ddc9de43e034b4607e384bdeb732610"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Climate Action]]",
-      "resolved": "urn:visionflow:linked:climate-action",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decarbonization]]",
-      "resolved": "urn:visionflow:linked:decarbonization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GHG Baseline]]",
-      "resolved": "urn:visionflow:linked:ghg-baseline",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Implementation Strategy]]",
-      "resolved": "urn:visionflow:linked:implementation-strategy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Net Zero Achievement]]",
-      "resolved": "urn:visionflow:linked:net-zero-achievement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reduction Targets]]",
-      "resolved": "urn:visionflow:linked:reduction-targets",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Strategic Planning]]",
-      "resolved": "urn:visionflow:owl:class:strategic-planning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The strategic process of developing a comprehensive roadmap to achieve net-zero greenhouse gas emissions, encompassing emission measurement, science-based reduction targets, interim milestones, decarbonization actions, and residual emission neutralization through permanent carbon removal.

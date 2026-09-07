@@ -1,61 +1,122 @@
----
-public: true
----
-
-# Inter-Blockchain Communication
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:inter-blockchain-communication", "@type":"Page", "title":"Inter-Blockchain Communication", "vc:slug":"inter-blockchain-communication", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:inter-blockchain-communication",
+  "@type": "Page",
+  "title": "Inter-Blockchain Communication",
+  "vc:slug": "inter-blockchain-communication",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:inter-blockchain-communication",
-  "@type":"Class",
-  "label":"Inter-Blockchain Communication",
-  "definition":"Inter-Blockchain Communication (IBC) is a standardised protocol that enables independent, sovereign blockchains to exchange data and transfer tokens trustlessly by verifying each other's consensus state. It defines transport, authentication and ordering semantics in which light clients on each chain verify the counterparty's headers, and relayers carry packets and acknowledgements between them. Originating in the Cosmos ecosystem, IBC provides a general-purpose interoperability layer for token transfers, cross-chain messaging and composable multi-chain applications.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cross-chain-interoperability","label":"Cross-Chain Interoperability"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:cosmos","label":"Cosmos"},
-      {"@id":"urn:ngm:class:interoperability","label":"Interoperability"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:inter-blockchain-communication",
+  "@type": "Class",
+  "label": "Inter-Blockchain Communication",
+  "definition": "Inter-Blockchain Communication (IBC) is a standardised protocol that enables independent, sovereign blockchains to exchange data and transfer tokens trustlessly by verifying each other's consensus state. It defines transport, authentication and ordering semantics in which light clients on each chain verify the counterparty's headers, and relayers carry packets and acknowledgements between them. Originating in the Cosmos ecosystem, IBC provides a general-purpose interoperability layer for token transfers, cross-chain messaging and composable multi-chain applications.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cross-chain-interoperability",
+      "label": "Cross-Chain Interoperability"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:light-client","label":"Light Client"},
-      {"@id":"urn:ngm:class:message-passing","label":"Message Passing"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"},
-      {"@id":"urn:ngm:class:light-client","label":"Light Client"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:cross-chain-interoperability","label":"Cross-Chain Interoperability"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:atomic-swap","label":"Atomic Swap"},
-      {"@id":"urn:ngm:class:decentralized-finance","label":"Decentralised Finance"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralised Finance"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:tendermint","label":"Tendermint"},
-      {"@id":"urn:ngm:class:cosmos-sdk","label":"Cosmos SDK"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:cosmos-sdk",
+        "label": "Cosmos SDK"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:cross-chain-bridge","label":"Cross-Chain Bridge"},
-      {"@id":"urn:ngm:class:polkadot","label":"Polkadot"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:validator-set","label":"Validator Set"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:on-chain-governance","label":"On-Chain Governance"},
-      {"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

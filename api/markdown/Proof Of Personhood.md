@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Proof Of Personhood
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:proof-of-personhood", "@type": "Page", "title": "Proof Of Personhood", "vc:slug": "proof-of-personhood", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:proof-of-personhood",
+  "@type": "Page",
+  "title": "Proof Of Personhood",
+  "vc:slug": "proof-of-personhood",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

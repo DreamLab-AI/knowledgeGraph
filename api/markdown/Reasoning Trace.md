@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reasoning Trace
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A reasoning trace is the recorded sequence of intermediate thoughts, tool calls, and decisions a model produces while solving a task, distinct from its final output. It serves as both a working scratchpad that improves accuracy and an audit artefact for inspecting how an agent reached a conclusion. Traces underpin debugging, evaluation, and self-correction in agentic systems.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:agents", "label": "Agents"},
-      {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"}
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
     ]
   },
   "quality": 0.72

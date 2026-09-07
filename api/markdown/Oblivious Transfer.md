@@ -1,63 +1,116 @@
----
-public: true
----
-
-# Oblivious Transfer
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:oblivious-transfer", "@type":"Page", "title":"Oblivious Transfer", "vc:slug":"oblivious-transfer", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:oblivious-transfer",
+  "@type": "Page",
+  "title": "Oblivious Transfer",
+  "vc:slug": "oblivious-transfer",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:oblivious-transfer",
-  "@type":"Class",
-  "label":"Oblivious Transfer",
-  "definition":"Oblivious transfer is a foundational cryptographic protocol in which a sender transmits one of several pieces of information to a receiver, but remains oblivious to which piece was received, while the receiver learns nothing about the other pieces. The canonical 1-out-of-2 variant lets a receiver choose one of two sender messages without revealing the choice and without learning the unchosen message. Oblivious transfer is complete for secure two-party computation and underpins protocols such as garbled circuits and private set intersection.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:secure-multi-party-computation","label":"Secure Multi-Party Computation"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:secure-multi-party-computation","label":"Secure Multi-Party Computation"}],
-    "hasPart":[
-      {"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:oblivious-transfer",
+  "@type": "Class",
+  "label": "Oblivious Transfer",
+  "definition": "Oblivious transfer is a foundational cryptographic protocol in which a sender transmits one of several pieces of information to a receiver, but remains oblivious to which piece was received, while the receiver learns nothing about the other pieces. The canonical 1-out-of-2 variant lets a receiver choose one of two sender messages without revealing the choice and without learning the unchosen message. Oblivious transfer is complete for secure two-party computation and underpins protocols such as garbled circuits and private set intersection.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"},
-      {"@id":"urn:ngm:class:key-exchange","label":"Key Exchange"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:secure-multi-party-computation","label":"Secure Multi-Party Computation"},
-      {"@id":"urn:ngm:class:secure-aggregation","label":"Secure Aggregation"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:secure-aggregation",
+        "label": "Secure Aggregation"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:differential-privacy","label":"Differential Privacy"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:zero-knowledge-proof","label":"Zero-Knowledge Proof"},
-      {"@id":"urn:ngm:class:homomorphic-encryption","label":"Homomorphic Encryption"},
-      {"@id":"urn:ngm:class:federated-learning","label":"Federated Learning"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:homomorphic-encryption","label":"Homomorphic Encryption"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:security","label":"Security"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
 - ### Definition
 - Oblivious transfer lets a sender deliver one selected item to a receiver while staying oblivious to the selection, and prevents the receiver from learning the items it did not choose. It is a building block of [[Secure Multi-Party Computation]] that relies on [[Public-Key Cryptography]] and [[Key Exchange]].
-- The protocol balances two privacy guarantees simultaneously: sender privacy over unchosen messages and receiver privacy over the choice index.
+- The protocol balances two privacy guarantees simultaneously: sender privacy over unchosen messages and receiver privacy over the choice [private].
 - ### Overview
 - Oblivious transfer is a deceptively simple primitive that turns out to be cryptographically complete: given oblivious transfer, any two-party computation can be carried out securely. This makes it a cornerstone of practical secure computation.
 - The most common form is 1-out-of-2 oblivious transfer, generalised to 1-out-of-n and k-out-of-n variants. Modern constructions use OT extension to derive many cheap transfers from a small number of expensive base transfers.

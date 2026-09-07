@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SWIFT Messaging
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,41 +183,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:swift-messaging:48da57dfec41",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c94b378e886cce913123e2ca6b02faca2c74b148f95c3c59f54642e3fe7ec037"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[SWIFT]]",
-      "resolved": "urn:visionflow:linked:swift",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment System]]",
-      "resolved": "urn:visionflow:linked:payment-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CPMI-IOSCO PFMI]]",
-      "resolved": "urn:visionflow:linked:cpmi-iosco-pfmi",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - SWIFT Messaging is the standardised, structured financial message exchange system operated over the [[SWIFT]] cooperative network, enabling banks, custodians, brokers, and other financial institutions to communicate instructions for [[Cross-Border Payment]], [[Securities Settlement]], [[Trade Finance]], and [[Treasury Management]]. Messages are governed by two principal format families — the legacy MT (Message Type) standards and the modern [[ISO 20022]] MX messages encoded in XML — with the network relying on [[Financial Cryptography]] and [[Public Key Infrastructure]] to ensure integrity and authenticity across every transmission.
 
@@ -324,8 +284,8 @@ public: true
 - ### Competitive and Complementary Landscape
   - [[Ripple Network]] (RippleNet / XRPL) and other [[Blockchain Payment]] rails have been positioned as potential successors or complements for cross-border settlement, offering near-instant finality without correspondent chains.
   - [[Fedwire]] (US Federal Reserve) and CHAPS (Bank of England) are domestic RTGS systems that settle the US-dollar and sterling legs of SWIFT-initiated correspondent payments.
-  - [[Central Bank Digital Currency]] pilots (e.g. Project mBridge, Project Jura) are exploring whether central bank money on distributed ledgers could bypass SWIFT-dependent correspondent chains for certain cross-border corridors, with SWIFT itself conducting interoperability experiments with CBDC networks.
-  - [[Distributed Ledger Technology]] experiments by the Monetary Authority of Singapore (Project Ubin), Banque de France, and others have tested settlement netting that could reduce reliance on SWIFT-based correspondent messaging.
+  - [[Central Bank Digital Currency]] pilots (e.g. Project mBridge, Project Jura) are exploring whether central bank money on distributed ledgers [private] bypass SWIFT-dependent correspondent chains for certain cross-border corridors, with SWIFT itself conducting interoperability experiments with CBDC networks.
+  - [[Distributed Ledger Technology]] experiments by the Monetary Authority of Singapore (Project Ubin), Banque de France, and others have tested settlement netting that [private] reduce reliance on SWIFT-based correspondent messaging.
 
 - ### Provenance
   - sources:: SWIFT official documentation; ISO 20022 standard; CPMI-IOSCO PFMIs (2012); FSB reports on cross-border payments; BIS CPMI studies on correspondent banking

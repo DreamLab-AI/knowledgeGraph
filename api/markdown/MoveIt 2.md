@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MoveIt 2
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "MoveIt 2 is the open-source motion-planning framework for ROS 2, providing manipulation capabilities including inverse kinematics, collision-aware path planning, trajectory generation, and execution for robotic arms and mobile manipulators. It integrates planners, perception, and control through a plugin architecture and is the de facto standard for arm motion planning in the ROS ecosystem. The ROS 2 version adds real-time and lifecycle improvements over the original MoveIt.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotics-platform", "label": "Robotics Platform"},
-      {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"}
+      {
+        "@id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
     ]
   },
   "quality": 0.72

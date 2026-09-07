@@ -1,57 +1,116 @@
----
-public: true
----
-
-# Experimental Design
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:experimental-design", "@type":"Page", "title":"Experimental Design", "vc:slug":"experimental-design", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:experimental-design",
+  "@type": "Page",
+  "title": "Experimental Design",
+  "vc:slug": "experimental-design",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:experimental-design",
-  "@type":"Class",
-  "label":"Experimental Design",
-  "definition":"Experimental design is the systematic planning of investigations so that the resulting data can support valid, efficient, and unbiased inferences about cause and effect. It specifies the treatments, controls, randomisation, replication, and blocking that isolate the effect of manipulated variables from confounders and noise. Grounded in the scientific method and statistical theory, it governs how hypotheses are tested, how sample sizes and power are determined, and how variability is controlled, and it underpins disciplined experimentation from laboratory trials to large-scale online A/B tests.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:scientific-method","label":"Scientific Method"},{"@id":"urn:ngm:class:ai-research-area","label":"AI Research Area"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:scientific-method","label":"Scientific Method"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:experimental-design",
+  "@type": "Class",
+  "label": "Experimental Design",
+  "definition": "Experimental design is the systematic planning of investigations so that the resulting data can support valid, efficient, and unbiased inferences about cause and effect. It specifies the treatments, controls, randomisation, replication, and blocking that isolate the effect of manipulated variables from confounders and noise. Grounded in the scientific method and statistical theory, it governs how hypotheses are tested, how sample sizes and power are determined, and how variability is controlled, and it underpins disciplined experimentation from laboratory trials to large-scale online A/B tests.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:scientific-method",
+      "label": "Scientific Method"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:hypothesis-testing","label":"Hypothesis Testing"},
-      {"@id":"urn:ngm:class:sampling","label":"Sampling"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      },
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:statistics","label":"Statistics"},
-      {"@id":"urn:ngm:class:data-collection","label":"Data Collection"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:causal-inference","label":"Causal Inference"},
-      {"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:a-b-testing","label":"A/B Testing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:data-analysis","label":"Data Analysis"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:scientific-method","label":"Scientific Method"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:statistics","label":"Statistics"},
-      {"@id":"urn:ngm:class:causal-inference","label":"Causal Inference"},
-      {"@id":"urn:ngm:class:a-b-testing","label":"A/B Testing"},
-      {"@id":"urn:ngm:class:data-analysis","label":"Data Analysis"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "@id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      },
+      {
+        "@id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

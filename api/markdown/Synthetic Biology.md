@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Synthetic Biology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,47 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:synthetic-biology:533a38f4ae48",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:620303ec6c07337de2347000a1ef0b0abd6d17b085c8e4016a65a4282e0bdb5f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[FDA]]",
-      "resolved": "urn:visionflow:linked:fda",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Synthetic_biology]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-synthetic-biology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.genome.gov/genetics-glossary/Synthetic-Biology]]",
-      "resolved": "urn:visionflow:linked:https-www-genome-gov-genetics-glossary-synthetic-biology",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Synthetic biology is a field that applies engineering principles to design and construct biological systems and organisms. It combines biology, genetics, and engineering.

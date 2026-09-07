@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Making Available
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,16 +51,34 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:placing-on-the-market", "label": "Placing on the Market"},
-      {"@id": "urn:ngm:class:distributor", "label": "Distributor"},
-      {"@id": "urn:ngm:class:provider", "label": "Provider"}
+      {
+        "@id": "urn:ngm:class:placing-on-the-market",
+        "label": "Placing on the Market"
+      },
+      {
+        "@id": "urn:ngm:class:distributor",
+        "label": "Distributor"
+      },
+      {
+        "@id": "urn:ngm:class:provider",
+        "label": "Provider"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "quality": 0.5,
@@ -76,32 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:making-available:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6a24e789c37135721b732a73e44c0de5403b5b4d7ec7e7b0d3888c93d22fe2f1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge.

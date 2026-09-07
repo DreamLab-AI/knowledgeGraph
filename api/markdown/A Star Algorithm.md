@@ -1,9 +1,3 @@
----
-public: true
----
-
-# A Star Algorithm
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,47 +8,170 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:search-algorithm", "vc:label": "Search Algorithm"},
-    {"@id": "urn:visionflow:linked:pathfinding", "vc:label": "Pathfinding"},
-    {"@id": "urn:visionflow:linked:dijkstra-algorithm", "vc:label": "Dijkstra Algorithm"},
-    {"@id": "urn:visionflow:linked:cost-function", "vc:label": "Cost Function"},
-    {"@id": "urn:visionflow:linked:graph-search", "vc:label": "Graph Search"},
-    {"@id": "urn:visionflow:linked:informed-search", "vc:label": "Informed Search"},
-    {"@id": "urn:visionflow:linked:heuristic-methods", "vc:label": "Heuristic Methods"},
-    {"@id": "urn:visionflow:linked:priority-queue", "vc:label": "Priority Queue"},
-    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:game-ai", "vc:label": "Game AI"},
-    {"@id": "urn:visionflow:linked:autonomous-navigation", "vc:label": "Autonomous Navigation"},
-    {"@id": "urn:visionflow:linked:path-planning", "vc:label": "Path Planning"},
-    {"@id": "urn:visionflow:linked:state-space", "vc:label": "State Space"},
-    {"@id": "urn:visionflow:linked:graph-theory", "vc:label": "Graph Theory"},
-    {"@id": "urn:visionflow:linked:weighted-graph", "vc:label": "Weighted Graph"},
-    {"@id": "urn:visionflow:linked:shortest-path", "vc:label": "Shortest Path"},
-    {"@id": "urn:visionflow:linked:dynamic-programming", "vc:label": "Dynamic Programming"},
-    {"@id": "urn:visionflow:linked:ida-star", "vc:label": "IDA*"},
-    {"@id": "urn:visionflow:linked:jump-point-search", "vc:label": "Jump Point Search"},
-    {"@id": "urn:visionflow:linked:theta-star", "vc:label": "Theta*"},
-    {"@id": "urn:visionflow:linked:d-star", "vc:label": "D*"},
-    {"@id": "urn:visionflow:linked:bidirectional-search", "vc:label": "Bidirectional Search"},
-    {"@id": "urn:visionflow:linked:monte-carlo-tree-search", "vc:label": "Monte Carlo Tree Search"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:navigation", "vc:label": "Navigation"},
-    {"@id": "urn:visionflow:linked:logistics", "vc:label": "Logistics"},
-    {"@id": "urn:visionflow:linked:network-routing", "vc:label": "Network Routing"},
-    {"@id": "urn:visionflow:linked:spatial-computing", "vc:label": "Spatial Computing"},
-    {"@id": "urn:visionflow:linked:graph-representation", "vc:label": "Graph Representation"},
-    {"@id": "urn:visionflow:linked:admissibility", "vc:label": "Admissibility"},
-    {"@id": "urn:visionflow:linked:consistency", "vc:label": "Consistency"},
-    {"@id": "urn:visionflow:linked:completeness", "vc:label": "Completeness"},
-    {"@id": "urn:visionflow:linked:optimality", "vc:label": "Optimality"},
-    {"@id": "urn:visionflow:linked:occupancy-grid", "vc:label": "Occupancy Grid"},
-    {"@id": "urn:visionflow:linked:motion-planning", "vc:label": "Motion Planning"},
-    {"@id": "urn:visionflow:linked:rrt-algorithm", "vc:label": "RRT Algorithm"},
-    {"@id": "urn:visionflow:linked:gps-systems", "vc:label": "GPS Systems"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:search-algorithm",
+      "vc:label": "Search Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:pathfinding",
+      "vc:label": "Pathfinding"
+    },
+    {
+      "@id": "urn:visionflow:linked:dijkstra-algorithm",
+      "vc:label": "Dijkstra Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-function",
+      "vc:label": "Cost Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-search",
+      "vc:label": "Graph Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:informed-search",
+      "vc:label": "Informed Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-methods",
+      "vc:label": "Heuristic Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:priority-queue",
+      "vc:label": "Priority Queue"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation",
+      "vc:label": "Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-ai",
+      "vc:label": "Game AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-navigation",
+      "vc:label": "Autonomous Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:path-planning",
+      "vc:label": "Path Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-space",
+      "vc:label": "State Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-theory",
+      "vc:label": "Graph Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:weighted-graph",
+      "vc:label": "Weighted Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:shortest-path",
+      "vc:label": "Shortest Path"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-programming",
+      "vc:label": "Dynamic Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:ida-star",
+      "vc:label": "IDA*"
+    },
+    {
+      "@id": "urn:visionflow:linked:jump-point-search",
+      "vc:label": "Jump Point Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:theta-star",
+      "vc:label": "Theta*"
+    },
+    {
+      "@id": "urn:visionflow:linked:d-star",
+      "vc:label": "D*"
+    },
+    {
+      "@id": "urn:visionflow:linked:bidirectional-search",
+      "vc:label": "Bidirectional Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:monte-carlo-tree-search",
+      "vc:label": "Monte Carlo Tree Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:navigation",
+      "vc:label": "Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:logistics",
+      "vc:label": "Logistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-routing",
+      "vc:label": "Network Routing"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-representation",
+      "vc:label": "Graph Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:admissibility",
+      "vc:label": "Admissibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:consistency",
+      "vc:label": "Consistency"
+    },
+    {
+      "@id": "urn:visionflow:linked:completeness",
+      "vc:label": "Completeness"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimality",
+      "vc:label": "Optimality"
+    },
+    {
+      "@id": "urn:visionflow:linked:occupancy-grid",
+      "vc:label": "Occupancy Grid"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:rrt-algorithm",
+      "vc:label": "RRT Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:gps-systems",
+      "vc:label": "GPS Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ]
 }
 ```
@@ -69,129 +186,196 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"},
-    {"@id": "urn:ngm:class:informed-search", "label": "Informed Search"},
-    {"@id": "urn:ngm:class:graph-search", "label": "Graph Search"}
+    {
+      "@id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "@id": "urn:ngm:class:informed-search",
+      "label": "Informed Search"
+    },
+    {
+      "@id": "urn:ngm:class:graph-search",
+      "label": "Graph Search"
+    }
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:informed-search", "label": "Informed Search"},
-      {"@id": "urn:ngm:class:graph-search", "label": "Graph Search"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"}
+      {
+        "@id": "urn:ngm:class:informed-search",
+        "label": "Informed Search"
+      },
+      {
+        "@id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:cost-function", "label": "Cost Function"},
-      {"@id": "urn:ngm:class:priority-queue", "label": "Priority Queue"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
-      {"@id": "urn:ngm:class:admissibility", "label": "Admissibility"},
-      {"@id": "urn:ngm:class:consistency", "label": "Consistency"}
+      {
+        "@id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "@id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "@id": "urn:ngm:class:admissibility",
+        "label": "Admissibility"
+      },
+      {
+        "@id": "urn:ngm:class:consistency",
+        "label": "Consistency"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cost-function", "label": "Cost Function"},
-      {"@id": "urn:ngm:class:graph-search", "label": "Graph Search"},
-      {"@id": "urn:ngm:class:priority-queue", "label": "Priority Queue"},
-      {"@id": "urn:ngm:class:weighted-graph", "label": "Weighted Graph"},
-      {"@id": "urn:ngm:class:dynamic-programming", "label": "Dynamic Programming"}
+      {
+        "@id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "@id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "@id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      },
+      {
+        "@id": "urn:ngm:class:weighted-graph",
+        "label": "Weighted Graph"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:pathfinding", "label": "Pathfinding"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:shortest-path", "label": "Shortest Path"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:shortest-path",
+        "label": "Shortest Path"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:game-ai", "label": "Game AI"},
-      {"@id": "urn:ngm:class:logistics", "label": "Logistics"},
-      {"@id": "urn:ngm:class:network-routing", "label": "Network Routing"},
-      {"@id": "urn:ngm:class:gps-systems", "label": "GPS Systems"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      },
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:network-routing",
+        "label": "Network Routing"
+      },
+      {
+        "@id": "urn:ngm:class:gps-systems",
+        "label": "GPS Systems"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:dijkstra-algorithm", "label": "Dijkstra Algorithm"},
-      {"@id": "urn:ngm:class:rrt-algorithm", "label": "RRT Algorithm"},
-      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"}
+      {
+        "@id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:rrt-algorithm",
+        "label": "RRT Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:state-space", "label": "State Space"},
-      {"@id": "urn:ngm:class:graph-representation", "label": "Graph Representation"},
-      {"@id": "urn:ngm:class:weighted-graph", "label": "Weighted Graph"}
+      {
+        "@id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      },
+      {
+        "@id": "urn:ngm:class:graph-representation",
+        "label": "Graph Representation"
+      },
+      {
+        "@id": "urn:ngm:class:weighted-graph",
+        "label": "Weighted Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},
-      {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:ida-star", "label": "IDA*"},
-      {"@id": "urn:ngm:class:jump-point-search", "label": "Jump Point Search"},
-      {"@id": "urn:ngm:class:theta-star", "label": "Theta*"},
-      {"@id": "urn:ngm:class:d-star", "label": "D*"},
-      {"@id": "urn:ngm:class:bidirectional-search", "label": "Bidirectional Search"},
-      {"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"}
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ida-star",
+        "label": "IDA*"
+      },
+      {
+        "@id": "urn:ngm:class:jump-point-search",
+        "label": "Jump Point Search"
+      },
+      {
+        "@id": "urn:ngm:class:theta-star",
+        "label": "Theta*"
+      },
+      {
+        "@id": "urn:ngm:class:d-star",
+        "label": "D*"
+      },
+      {
+        "@id": "urn:ngm:class:bidirectional-search",
+        "label": "Bidirectional Search"
+      },
+      {
+        "@id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      }
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "OntologyEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:a-star-algorithm:b2c3d4e5f6a7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a-star-algorithm"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Search Algorithm]]", "resolved": "urn:visionflow:linked:search-algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Pathfinding]]", "resolved": "urn:visionflow:linked:pathfinding", "kind": "ResolvedLink"},
-    {"raw": "[[Dijkstra Algorithm]]", "resolved": "urn:visionflow:linked:dijkstra-algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Cost Function]]", "resolved": "urn:visionflow:linked:cost-function", "kind": "StubLink"},
-    {"raw": "[[Graph Search]]", "resolved": "urn:visionflow:linked:graph-search", "kind": "StubLink"},
-    {"raw": "[[Informed Search]]", "resolved": "urn:visionflow:linked:informed-search", "kind": "StubLink"},
-    {"raw": "[[Heuristic Methods]]", "resolved": "urn:visionflow:linked:heuristic-methods", "kind": "ResolvedLink"},
-    {"raw": "[[Priority Queue]]", "resolved": "urn:visionflow:linked:priority-queue", "kind": "StubLink"},
-    {"raw": "[[Optimisation]]", "resolved": "urn:visionflow:linked:optimisation", "kind": "StubLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "ResolvedLink"},
-    {"raw": "[[Game AI]]", "resolved": "urn:visionflow:linked:game-ai", "kind": "StubLink"},
-    {"raw": "[[Autonomous Navigation]]", "resolved": "urn:visionflow:linked:autonomous-navigation", "kind": "StubLink"},
-    {"raw": "[[Path Planning]]", "resolved": "urn:visionflow:linked:path-planning", "kind": "ResolvedLink"},
-    {"raw": "[[State Space]]", "resolved": "urn:visionflow:linked:state-space", "kind": "StubLink"},
-    {"raw": "[[Graph Theory]]", "resolved": "urn:visionflow:linked:graph-theory", "kind": "StubLink"},
-    {"raw": "[[Weighted Graph]]", "resolved": "urn:visionflow:linked:weighted-graph", "kind": "StubLink"},
-    {"raw": "[[Shortest Path]]", "resolved": "urn:visionflow:linked:shortest-path", "kind": "StubLink"},
-    {"raw": "[[Dynamic Programming]]", "resolved": "urn:visionflow:linked:dynamic-programming", "kind": "StubLink"},
-    {"raw": "[[IDA*]]", "resolved": "urn:visionflow:linked:ida-star", "kind": "StubLink"},
-    {"raw": "[[Jump Point Search]]", "resolved": "urn:visionflow:linked:jump-point-search", "kind": "StubLink"},
-    {"raw": "[[Theta*]]", "resolved": "urn:visionflow:linked:theta-star", "kind": "StubLink"},
-    {"raw": "[[D*]]", "resolved": "urn:visionflow:linked:d-star", "kind": "StubLink"},
-    {"raw": "[[Bidirectional Search]]", "resolved": "urn:visionflow:linked:bidirectional-search", "kind": "StubLink"},
-    {"raw": "[[Monte Carlo Tree Search]]", "resolved": "urn:visionflow:linked:monte-carlo-tree-search", "kind": "ResolvedLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "StubLink"},
-    {"raw": "[[Navigation]]", "resolved": "urn:visionflow:linked:navigation", "kind": "StubLink"},
-    {"raw": "[[Logistics]]", "resolved": "urn:visionflow:linked:logistics", "kind": "StubLink"},
-    {"raw": "[[Network Routing]]", "resolved": "urn:visionflow:linked:network-routing", "kind": "StubLink"},
-    {"raw": "[[Spatial Computing]]", "resolved": "urn:visionflow:linked:spatial-computing", "kind": "StubLink"},
-    {"raw": "[[Graph Representation]]", "resolved": "urn:visionflow:linked:graph-representation", "kind": "StubLink"},
-    {"raw": "[[Admissibility]]", "resolved": "urn:visionflow:linked:admissibility", "kind": "StubLink"},
-    {"raw": "[[Consistency]]", "resolved": "urn:visionflow:linked:consistency", "kind": "StubLink"},
-    {"raw": "[[Completeness]]", "resolved": "urn:visionflow:linked:completeness", "kind": "ResolvedLink"},
-    {"raw": "[[Optimality]]", "resolved": "urn:visionflow:linked:optimality", "kind": "ResolvedLink"},
-    {"raw": "[[Occupancy Grid]]", "resolved": "urn:visionflow:linked:occupancy-grid", "kind": "StubLink"},
-    {"raw": "[[Motion Planning]]", "resolved": "urn:visionflow:linked:motion-planning", "kind": "StubLink"},
-    {"raw": "[[RRT Algorithm]]", "resolved": "urn:visionflow:linked:rrt-algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[GPS Systems]]", "resolved": "urn:visionflow:linked:gps-systems", "kind": "StubLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:linked:ai-grounded-domain", "kind": "ResolvedLink"},
-    {"raw": "[[AlgorithmLayer]]", "resolved": "urn:visionflow:linked:algorithm-layer", "kind": "ResolvedLink"},
-    {"raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:linked:computation-and-intelligence-domain", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -299,7 +483,7 @@ public: true
   ## About
   **The A* Algorithm** is the most widely deployed optimal [[Search Algorithm]] in [[Artificial Intelligence]], routinely forming the backbone of [[Pathfinding]] systems in games, the global planning layer in [[Robotics]] [[Motion Planning]] stacks, route-calculation engines in [[Navigation]] and [[Logistics]] software, and combinatorial puzzle solvers. Its enduring dominance — nearly six decades after its 1968 introduction — rests on a powerful combination of provable optimality guarantees, practical efficiency through [[Heuristic Methods]] guidance, and straightforward implementation over any [[Weighted Graph]] with non-negative edge costs. Unlike uninformed algorithms such as [[Dijkstra Algorithm]] (which explores uniformly in all directions from the source) or breadth-first search (which ignores costs altogether), A* focuses its search toward the goal using heuristic knowledge, dramatically reducing the number of nodes evaluated in practice.
 
-  The algorithm was born out of research on Shakey the Robot at the Stanford Research Institute (SRI), one of the first autonomous mobile robots. Nils Nilsson proposed an algorithm for planning routes through obstacle-filled rooms; Bertram Raphael suggested a modification — adding a path-cost term g(n) to the pure greedy heuristic estimate h(n) — that he believed would both expand fewer nodes and guarantee optimality; Peter Hart then formally proved that the modification was not merely faster in practice but was provably optimal under an admissibility condition on h, and moreover that no other algorithm using the same heuristic information could expand a strictly smaller set of nodes while still guaranteeing optimality (this "optimally efficient" property). The trio published the result in 1968 in IEEE Transactions on Systems Science and Cybernetics as "A Formal Basis for the Heuristic Determination of Minimum Cost Paths." The paper has since accumulated over 15,000 citations on Semantic Scholar, placing it among the most-cited works in the history of computer science. Communicating the significance of the result to a wider audience, Peter Hart and Nils Nilsson published a retrospective piece in the Communications of the ACM discussing the algorithm's history and its continuing relevance to AI.
+  The algorithm was born out of research on Shakey the Robot at the Stanford Research Institute (SRI), one of the first autonomous mobile robots. Nils Nilsson proposed an algorithm for planning routes through obstacle-filled rooms; Bertram Raphael suggested a modification — adding a path-cost term g(n) to the pure greedy heuristic estimate h(n) — that he believed would both expand fewer nodes and guarantee optimality; Peter Hart then formally proved that the modification was not merely faster in practice but was provably optimal under an admissibility condition on h, and moreover that no other algorithm using the same heuristic information [private] expand a strictly smaller set of nodes while still guaranteeing optimality (this "optimally efficient" property). The trio published the result in 1968 in IEEE Transactions on Systems Science and Cybernetics as "A Formal Basis for the Heuristic Determination of Minimum Cost Paths." The paper has since accumulated over 15,000 citations on Semantic Scholar, placing it among the most-cited works in the history of computer science. Communicating the significance of the result to a wider audience, Peter Hart and Nils Nilsson published a retrospective piece in the Communications of the ACM discussing the algorithm's history and its continuing relevance to AI.
 
   Mathematically, A* builds a [[Shortest Path]] tree rooted at the start node by maintaining two data structures: an **open list** of discovered but unexpanded nodes ordered by the evaluation function f(n) = g(n) + h(n), and a **closed list** (visited set) of fully expanded nodes. Each node n on the open list carries three values: (1) g(n) — the cost of the best currently known path from the start to n; (2) h(n) — the heuristic estimate of the remaining cost from n to the goal; and (3) f(n) = g(n) + h(n) — the total estimated cost of the best complete path through n. The [[Priority Queue]] ensures expansion of the minimum-f node first. When a node is expanded, each successor n' is tentatively assigned g(n') = g(n) + c(n,n') where c is the edge cost; if this tentative cost beats any previously known g(n'), the successor's estimate is updated and the node re-queued with its new lower f-value (relaxation). This relaxation principle connects A* to [[Dynamic Programming]] and Bellman's principle of optimality: the optimal subpath property guarantees that if the optimal path from start to goal passes through node n, then the subpath from start to n is also optimal.
 
@@ -361,7 +545,7 @@ public: true
   - Return p (optimal path from start to goal)
 
   **Correctness Proof Sketch**
-  Invariant: when a node n is extracted from the open list for the first time, g[n] = g*(n) (the true optimal cost from start to n). This follows from: (1) the first extraction of n has the minimum f-value in the open list; (2) by admissibility, h(n) ≤ h*(n), so f(n) ≤ g*(n) + h*(n) = f*(n); (3) any path that could improve on g[n] would require passing through some node n'' on the open list with g[n''] + h(n'') ≤ g*(n) + h*(n) ≤ g(n) + h(n) — a contradiction with n being the minimum-f node. Thus when the goal is extracted, g[goal] = g*(goal).
+  Invariant: when a node n is extracted from the open list for the first time, g[n] = g*(n) (the true optimal cost from start to n). This follows from: (1) the first extraction of n has the minimum f-value in the open list; (2) by admissibility, h(n) ≤ h*(n), so f(n) ≤ g*(n) + h*(n) = f*(n); (3) any path that [private] improve on g[n] would require passing through some node n'' on the open list with g[n''] + h(n'') ≤ g*(n) + h*(n) ≤ g(n) + h(n) — a contradiction with n being the minimum-f node. Thus when the goal is extracted, g[goal] = g*(goal).
 
   **Complexity Analysis**
   - Time: O(|E| log |V|) with binary heap; O(|E| + |V| log |V|) with Fibonacci heap

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Border Remittances
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Cross-border remittances are transfers of money by individuals—typically migrant workers—to recipients in another country, often family members. Traditionally routed through banks and money-transfer operators with high fees and slow settlement, they are increasingly served by stablecoins and crypto rails that lower cost and latency. They represent a major global financial flow and a key driver of crypto payment adoption.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:stable-coins", "label": "Stable Coins"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:stable-coins",
+        "label": "Stable Coins"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Task Execution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:task-execution:3bf1436a70b8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cb15234628816d99e7c029ed6e5c6f534b570383552de3bd9db3b1dabd0c90cc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Task Planning]]",
-      "resolved": "urn:visionflow:linked:task-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automation]]",
-      "resolved": "urn:visionflow:linked:automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of carrying out a defined unit of work, including scheduling, resource allocation, and tracking of completion. In computing and robotics it covers running operations in response to plans or requests.

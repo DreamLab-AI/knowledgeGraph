@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Set Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,52 +159,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:set-theory:d31e6ad1febe",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4489cba90bd90295d90817752bd3c8cd61149bdcbc18c77321051ff210769d6e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Description Logic]]",
-      "resolved": "urn:visionflow:linked:description-logic",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graph Theory]]",
-      "resolved": "urn:visionflow:linked:graph-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ontology]]",
-      "resolved": "urn:visionflow:linked:ontology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The branch of mathematical logic that studies collections of objects called sets, providing a foundational language for most of modern mathematics.

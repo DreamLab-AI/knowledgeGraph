@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Classification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,80 +7,302 @@ public: true
   "title": "Classification",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:object-detection", "vc:label": "Object Detection"},
-    {"@id": "urn:visionflow:linked:statistical-learning-theory", "vc:label": "Statistical Learning Theory"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:pattern-recognition", "vc:label": "Pattern Recognition"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:regression", "vc:label": "Regression"},
-    {"@id": "urn:visionflow:linked:clustering", "vc:label": "Clustering"},
-    {"@id": "urn:visionflow:linked:anomaly-detection", "vc:label": "Anomaly Detection"},
-    {"@id": "urn:visionflow:linked:support-vector-machine", "vc:label": "Support Vector Machine"},
-    {"@id": "urn:visionflow:linked:decision-tree", "vc:label": "Decision Tree"},
-    {"@id": "urn:visionflow:linked:random-forest", "vc:label": "Random Forest"},
-    {"@id": "urn:visionflow:linked:gradient-boosted-trees", "vc:label": "Gradient Boosted Trees"},
-    {"@id": "urn:visionflow:linked:logistic-regression", "vc:label": "Logistic Regression"},
-    {"@id": "urn:visionflow:linked:naive-bayes", "vc:label": "Naive Bayes"},
-    {"@id": "urn:visionflow:linked:k-nearest-neighbours", "vc:label": "K-Nearest Neighbours"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:labelled-dataset", "vc:label": "Labelled Dataset"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:cross-validation", "vc:label": "Cross Validation"},
-    {"@id": "urn:visionflow:linked:hyperparameter-tuning", "vc:label": "Hyperparameter Tuning"},
-    {"@id": "urn:visionflow:linked:probabilistic-inference", "vc:label": "Probabilistic Inference"},
-    {"@id": "urn:visionflow:linked:pac-learning", "vc:label": "PAC Learning"},
-    {"@id": "urn:visionflow:linked:statistical-decision-theory", "vc:label": "Statistical Decision Theory"},
-    {"@id": "urn:visionflow:linked:empirical-risk-minimisation", "vc:label": "Empirical Risk Minimisation"},
-    {"@id": "urn:visionflow:linked:representation-learning", "vc:label": "Representation Learning"},
-    {"@id": "urn:visionflow:linked:meta-learning", "vc:label": "Meta-Learning"},
-    {"@id": "urn:visionflow:linked:zero-shot-learning", "vc:label": "Zero-Shot Learning"},
-    {"@id": "urn:visionflow:linked:few-shot-learning", "vc:label": "Few-Shot Learning"},
-    {"@id": "urn:visionflow:linked:class-imbalance", "vc:label": "Class Imbalance"},
-    {"@id": "urn:visionflow:linked:confusion-matrix", "vc:label": "Confusion Matrix"},
-    {"@id": "urn:visionflow:linked:roc-curve", "vc:label": "ROC Curve"},
-    {"@id": "urn:visionflow:linked:classification-threshold", "vc:label": "Classification Threshold"},
-    {"@id": "urn:visionflow:linked:probability-calibration", "vc:label": "Probability Calibration"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:binary-classification", "vc:label": "Binary Classification"},
-    {"@id": "urn:visionflow:linked:multi-class-classification", "vc:label": "Multi-Class Classification"},
-    {"@id": "urn:visionflow:linked:multi-label-classification", "vc:label": "Multi-Label Classification"},
-    {"@id": "urn:visionflow:linked:hierarchical-classification", "vc:label": "Hierarchical Classification"},
-    {"@id": "urn:visionflow:linked:ordinal-classification", "vc:label": "Ordinal Classification"},
-    {"@id": "urn:visionflow:linked:sentiment-analysis", "vc:label": "Sentiment Analysis"},
-    {"@id": "urn:visionflow:linked:image-recognition", "vc:label": "Image Recognition"},
-    {"@id": "urn:visionflow:linked:spam-filtering", "vc:label": "Spam Filtering"},
-    {"@id": "urn:visionflow:linked:fraud-detection", "vc:label": "Fraud Detection"},
-    {"@id": "urn:visionflow:linked:medical-diagnosis-ai", "vc:label": "Medical Diagnosis AI"},
-    {"@id": "urn:visionflow:linked:robotic-perception", "vc:label": "Robotic Perception"},
-    {"@id": "urn:visionflow:linked:text-classification", "vc:label": "Text Classification"},
-    {"@id": "urn:visionflow:linked:named-entity-recognition", "vc:label": "Named Entity Recognition"},
-    {"@id": "urn:visionflow:linked:intent-detection", "vc:label": "Intent Detection"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:bioinformatics", "vc:label": "Bioinformatics"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:generative-model", "vc:label": "Generative Model"},
-    {"@id": "urn:visionflow:linked:ai-fairness", "vc:label": "AI Fairness"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:autonomous-systems", "vc:label": "Autonomous Systems"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:nist-ai-rmf", "vc:label": "NIST AI RMF"},
-    {"@id": "urn:visionflow:linked:precision-recall-curve", "vc:label": "Precision-Recall Curve"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:semi-supervised-learning", "vc:label": "Semi-Supervised Learning"},
-    {"@id": "urn:visionflow:linked:ensemble-method", "vc:label": "Ensemble Method"},
-    {"@id": "urn:visionflow:linked:automl", "vc:label": "AutoML"},
-    {"@id": "urn:visionflow:linked:continual-learning", "vc:label": "Continual Learning"},
-    {"@id": "urn:visionflow:linked:conformal-prediction", "vc:label": "Conformal Prediction"}
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:object-detection",
+      "vc:label": "Object Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-learning-theory",
+      "vc:label": "Statistical Learning Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:pattern-recognition",
+      "vc:label": "Pattern Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:regression",
+      "vc:label": "Regression"
+    },
+    {
+      "@id": "urn:visionflow:linked:clustering",
+      "vc:label": "Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:support-vector-machine",
+      "vc:label": "Support Vector Machine"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-tree",
+      "vc:label": "Decision Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:random-forest",
+      "vc:label": "Random Forest"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-boosted-trees",
+      "vc:label": "Gradient Boosted Trees"
+    },
+    {
+      "@id": "urn:visionflow:linked:logistic-regression",
+      "vc:label": "Logistic Regression"
+    },
+    {
+      "@id": "urn:visionflow:linked:naive-bayes",
+      "vc:label": "Naive Bayes"
+    },
+    {
+      "@id": "urn:visionflow:linked:k-nearest-neighbours",
+      "vc:label": "K-Nearest Neighbours"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:labelled-dataset",
+      "vc:label": "Labelled Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-validation",
+      "vc:label": "Cross Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-inference",
+      "vc:label": "Probabilistic Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:pac-learning",
+      "vc:label": "PAC Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-decision-theory",
+      "vc:label": "Statistical Decision Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:empirical-risk-minimisation",
+      "vc:label": "Empirical Risk Minimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-learning",
+      "vc:label": "Meta-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-shot-learning",
+      "vc:label": "Zero-Shot Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:few-shot-learning",
+      "vc:label": "Few-Shot Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:class-imbalance",
+      "vc:label": "Class Imbalance"
+    },
+    {
+      "@id": "urn:visionflow:linked:confusion-matrix",
+      "vc:label": "Confusion Matrix"
+    },
+    {
+      "@id": "urn:visionflow:linked:roc-curve",
+      "vc:label": "ROC Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:classification-threshold",
+      "vc:label": "Classification Threshold"
+    },
+    {
+      "@id": "urn:visionflow:linked:probability-calibration",
+      "vc:label": "Probability Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:binary-classification",
+      "vc:label": "Binary Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-class-classification",
+      "vc:label": "Multi-Class Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-label-classification",
+      "vc:label": "Multi-Label Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:hierarchical-classification",
+      "vc:label": "Hierarchical Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:ordinal-classification",
+      "vc:label": "Ordinal Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-recognition",
+      "vc:label": "Image Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:spam-filtering",
+      "vc:label": "Spam Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:fraud-detection",
+      "vc:label": "Fraud Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-diagnosis-ai",
+      "vc:label": "Medical Diagnosis AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-perception",
+      "vc:label": "Robotic Perception"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-classification",
+      "vc:label": "Text Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:named-entity-recognition",
+      "vc:label": "Named Entity Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:intent-detection",
+      "vc:label": "Intent Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:bioinformatics",
+      "vc:label": "Bioinformatics"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-fairness",
+      "vc:label": "AI Fairness"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-recall-curve",
+      "vc:label": "Precision-Recall Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:semi-supervised-learning",
+      "vc:label": "Semi-Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ensemble-method",
+      "vc:label": "Ensemble Method"
+    },
+    {
+      "@id": "urn:visionflow:linked:automl",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:visionflow:linked:continual-learning",
+      "vc:label": "Continual Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:conformal-prediction",
+      "vc:label": "Conformal Prediction"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
@@ -113,7 +330,7 @@ public: true
   "definition": "Classification is a supervised machine learning task in which a model learns a mapping from input features to a discrete set of predefined category labels, using labelled training examples to optimise decision boundaries or probabilistic scoring rules. At inference time the model assigns each unseen input to one or more categories by applying a learned discriminant function or probabilistic scoring rule. The task encompasses binary, multi-class, and multi-label variants, and underpins applications ranging from image recognition and natural language understanding to medical diagnosis and fraud detection. Performance is evaluated with metrics such as accuracy, precision, recall, F1-score, and the area under the receiver-operating-characteristic curve, selected according to class imbalance and the relative cost of false positives versus false negatives.",
   "domain": "machine-learning",
   "maturity": "mature",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:supervised-learning",
@@ -242,105 +459,11 @@ public: true
       "label": "Categorical Prediction"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:classification:9f0c8aa52657",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b5c45178c43b76c30317ddc6d0694a249aea4ed273e14741b63fe7d4cea56655"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Supervised Learning]]", "resolved": "urn:visionflow:linked:supervised-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Object Detection]]", "resolved": "urn:visionflow:linked:object-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Statistical Learning Theory]]", "resolved": "urn:visionflow:linked:statistical-learning-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Pattern Recognition]]", "resolved": "urn:visionflow:linked:pattern-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Regression]]", "resolved": "urn:visionflow:linked:regression", "kind": "ResolvedLink"},
-    {"raw": "[[Clustering]]", "resolved": "urn:visionflow:linked:clustering", "kind": "ResolvedLink"},
-    {"raw": "[[Anomaly Detection]]", "resolved": "urn:visionflow:linked:anomaly-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Support Vector Machine]]", "resolved": "urn:visionflow:linked:support-vector-machine", "kind": "ResolvedLink"},
-    {"raw": "[[Decision Tree]]", "resolved": "urn:visionflow:linked:decision-tree", "kind": "ResolvedLink"},
-    {"raw": "[[Random Forest]]", "resolved": "urn:visionflow:linked:random-forest", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Boosted Trees]]", "resolved": "urn:visionflow:linked:gradient-boosted-trees", "kind": "ResolvedLink"},
-    {"raw": "[[Logistic Regression]]", "resolved": "urn:visionflow:linked:logistic-regression", "kind": "ResolvedLink"},
-    {"raw": "[[Naive Bayes]]", "resolved": "urn:visionflow:linked:naive-bayes", "kind": "ResolvedLink"},
-    {"raw": "[[K-Nearest Neighbours]]", "resolved": "urn:visionflow:linked:k-nearest-neighbours", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Feature Engineering]]", "resolved": "urn:visionflow:linked:feature-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Labelled Dataset]]", "resolved": "urn:visionflow:linked:labelled-dataset", "kind": "ResolvedLink"},
-    {"raw": "[[Training Data]]", "resolved": "urn:visionflow:linked:training-data", "kind": "ResolvedLink"},
-    {"raw": "[[Cross Validation]]", "resolved": "urn:visionflow:linked:cross-validation", "kind": "ResolvedLink"},
-    {"raw": "[[Hyperparameter Tuning]]", "resolved": "urn:visionflow:linked:hyperparameter-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Probabilistic Inference]]", "resolved": "urn:visionflow:linked:probabilistic-inference", "kind": "ResolvedLink"},
-    {"raw": "[[PAC Learning]]", "resolved": "urn:visionflow:linked:pac-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Statistical Decision Theory]]", "resolved": "urn:visionflow:linked:statistical-decision-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Empirical Risk Minimisation]]", "resolved": "urn:visionflow:linked:empirical-risk-minimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Representation Learning]]", "resolved": "urn:visionflow:linked:representation-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Meta-Learning]]", "resolved": "urn:visionflow:linked:meta-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Zero-Shot Learning]]", "resolved": "urn:visionflow:linked:zero-shot-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Few-Shot Learning]]", "resolved": "urn:visionflow:linked:few-shot-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Class Imbalance]]", "resolved": "urn:visionflow:linked:class-imbalance", "kind": "ResolvedLink"},
-    {"raw": "[[Confusion Matrix]]", "resolved": "urn:visionflow:linked:confusion-matrix", "kind": "ResolvedLink"},
-    {"raw": "[[ROC Curve]]", "resolved": "urn:visionflow:linked:roc-curve", "kind": "ResolvedLink"},
-    {"raw": "[[Classification Threshold]]", "resolved": "urn:visionflow:linked:classification-threshold", "kind": "ResolvedLink"},
-    {"raw": "[[Probability Calibration]]", "resolved": "urn:visionflow:linked:probability-calibration", "kind": "ResolvedLink"},
-    {"raw": "[[Model Evaluation]]", "resolved": "urn:visionflow:linked:model-evaluation", "kind": "ResolvedLink"},
-    {"raw": "[[Binary Classification]]", "resolved": "urn:visionflow:linked:binary-classification", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Class Classification]]", "resolved": "urn:visionflow:linked:multi-class-classification", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Label Classification]]", "resolved": "urn:visionflow:linked:multi-label-classification", "kind": "ResolvedLink"},
-    {"raw": "[[Hierarchical Classification]]", "resolved": "urn:visionflow:linked:hierarchical-classification", "kind": "ResolvedLink"},
-    {"raw": "[[Ordinal Classification]]", "resolved": "urn:visionflow:linked:ordinal-classification", "kind": "ResolvedLink"},
-    {"raw": "[[Sentiment Analysis]]", "resolved": "urn:visionflow:linked:sentiment-analysis", "kind": "ResolvedLink"},
-    {"raw": "[[Image Recognition]]", "resolved": "urn:visionflow:linked:image-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Spam Filtering]]", "resolved": "urn:visionflow:linked:spam-filtering", "kind": "ResolvedLink"},
-    {"raw": "[[Fraud Detection]]", "resolved": "urn:visionflow:linked:fraud-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Medical Diagnosis AI]]", "resolved": "urn:visionflow:linked:medical-diagnosis-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Robotic Perception]]", "resolved": "urn:visionflow:linked:robotic-perception", "kind": "ResolvedLink"},
-    {"raw": "[[Text Classification]]", "resolved": "urn:visionflow:linked:text-classification", "kind": "ResolvedLink"},
-    {"raw": "[[Named Entity Recognition]]", "resolved": "urn:visionflow:linked:named-entity-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Intent Detection]]", "resolved": "urn:visionflow:linked:intent-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:linked:knowledge-graph", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Bioinformatics]]", "resolved": "urn:visionflow:linked:bioinformatics", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Model]]", "resolved": "urn:visionflow:linked:generative-model", "kind": "ResolvedLink"},
-    {"raw": "[[AI Fairness]]", "resolved": "urn:visionflow:linked:ai-fairness", "kind": "ResolvedLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Autonomous Systems]]", "resolved": "urn:visionflow:linked:autonomous-systems", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[NIST AI RMF]]", "resolved": "urn:visionflow:linked:nist-ai-rmf", "kind": "ResolvedLink"},
-    {"raw": "[[Precision-Recall Curve]]", "resolved": "urn:visionflow:linked:precision-recall-curve", "kind": "ResolvedLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:visionflow:linked:active-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Semi-Supervised Learning]]", "resolved": "urn:visionflow:linked:semi-supervised-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Ensemble Method]]", "resolved": "urn:visionflow:linked:ensemble-method", "kind": "ResolvedLink"},
-    {"raw": "[[AutoML]]", "resolved": "urn:visionflow:linked:automl", "kind": "ResolvedLink"},
-    {"raw": "[[Continual Learning]]", "resolved": "urn:visionflow:linked:continual-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Conformal Prediction]]", "resolved": "urn:visionflow:linked:conformal-prediction", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -588,7 +711,7 @@ public: true
 
     The statistical learning theory that provides theoretical underpinnings for modern classification was developed by Vapnik and Chervonenkis (1971), whose VC-dimension concept characterises the complexity of hypothesis classes and bounds generalisation error. Valiant's (1984) PAC (Probably Approximately Correct) learning framework provided a computational complexity account of learnability. Bartlett and Mendelson (2002) extended the theory to neural networks through Rademacher complexity bounds. These theoretical frameworks were synthesised in the canonical textbooks: Duda, Hart, and Stork (2001) *Pattern Classification*, Vapnik (1995) *The Nature of Statistical Learning Theory*, Schölkopf and Smola (2002) *Learning with Kernels*, and Bishop (2006) *Pattern Recognition and Machine Learning*.
 
-    The shift to deep learning was catalysed by Krizhevsky, Sutskever, and Hinton (2012) at the University of Toronto, whose AlexNet demonstrated that GPU-trained deep CNNs dramatically outperformed hand-crafted feature methods on ImageNet classification. Simonyan and Zisserman (2014, VGGNet, Oxford), He et al. (2016, ResNet, Microsoft Research Asia), and Huang et al. (2017, DenseNet) progressively deepened architectures. Dosovitskiy et al. (2021, ViT, Google Brain) showed that pure Transformer architectures could match CNNs on image classification at scale. The multimodal era was opened by Radford et al. (2021, CLIP, OpenAI), which enabled zero-shot image classification via natural language descriptions.
+    The shift to deep learning was catalysed by Krizhevsky, Sutskever, and Hinton (2012) at the University of Toronto, whose AlexNet demonstrated that GPU-trained deep CNNs dramatically outperformed hand-crafted feature methods on ImageNet classification. Simonyan and Zisserman (2014, VGGNet, Oxford), He et al. (2016, ResNet, Microsoft Research Asia), and Huang et al. (2017, DenseNet) progressively deepened architectures. Dosovitskiy et al. (2021, ViT, Google Brain) showed that pure Transformer architectures [private] match CNNs on image classification at scale. The multimodal era was opened by Radford et al. (2021, CLIP, OpenAI), which enabled zero-shot image classification via natural language descriptions.
 
     Key UK academic contributions include: John Platt (Cambridge PhD, inventor of Platt scaling for probability calibration); Christopher Bishop (Edinburgh, then Microsoft Research Cambridge — *Pattern Recognition and Machine Learning*); Zoubin Ghahramani (Cambridge, Bayesian nonparametric approaches to classification); Carl Rasmussen (Cambridge, Gaussian processes for classification); Nello Cristianini (Bristol, then UCL — kernel methods); and the Oxford Visual Geometry Group (Simonyan, Zisserman — VGGNet).
 

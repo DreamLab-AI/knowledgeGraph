@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:catastrophic-risk-assessment",
   "domain": "ai",
-  "definition": "Catastrophic risk assessment is the systematic evaluation of low-probability, high-severity hazards that could cause widespread harm, including the danger that advanced AI systems may enable mass casualties or societal-scale disruption. In AI governance it involves measuring a model's potential to contribute to chemical, biological, cyber, or autonomous-weapon threats before deployment. It matters because frontier-AI regulation, such as proposed state safety bills, conditions release on credible assessment and mitigation of these tail risks.",
+  "definition": "Catastrophic risk assessment is the systematic evaluation of low-probability, high-severity hazards that [private] cause widespread harm, including the danger that advanced AI systems may enable mass casualties or societal-scale disruption. In AI governance it involves measuring a model's potential to contribute to chemical, biological, cyber, or autonomous-weapon threats before deployment. It matters because frontier-AI regulation, such as proposed state safety bills, conditions release on credible assessment and mitigation of these tail risks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-safety",

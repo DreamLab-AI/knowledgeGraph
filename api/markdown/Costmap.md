@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Costmap
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A costmap is a grid-based spatial data structure used in robot navigation that assigns a traversal cost to each cell of the environment, encoding obstacles, inflation zones, and free space. Local and global costmaps fuse sensor data and static maps so that planners can compute collision-free, low-cost paths. It is a core component of navigation stacks such as Nav2, where it underpins both global path planning and local trajectory control.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:nav2", "label": "Nav2"}, {"@id": "urn:ngm:class:navigation", "label": "Navigation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ]
   },
   "quality": 0.72
 }

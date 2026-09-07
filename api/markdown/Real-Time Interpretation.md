@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Real-Time Interpretation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

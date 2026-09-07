@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Conformal Prediction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,51 +7,186 @@ public: true
   "title": "Conformal Prediction",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:probabilistic-model", "vc:label": "Probabilistic Model"},
-    {"@id": "urn:visionflow:linked:uncertainty-quantification", "vc:label": "Uncertainty Quantification"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:statistical-learning", "vc:label": "Statistical Learning"},
-    {"@id": "urn:visionflow:linked:calibration", "vc:label": "Calibration"},
-    {"@id": "urn:visionflow:linked:nonconformity-score", "vc:label": "Nonconformity Score"},
-    {"@id": "urn:visionflow:linked:exchangeability", "vc:label": "Exchangeability"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:frequentist-statistics", "vc:label": "Frequentist Statistics"},
-    {"@id": "urn:visionflow:linked:gaussian-process", "vc:label": "Gaussian Process"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:classification", "vc:label": "Classification"},
-    {"@id": "urn:visionflow:linked:regression", "vc:label": "Regression"},
-    {"@id": "urn:visionflow:linked:prediction-interval", "vc:label": "Prediction Interval"},
-    {"@id": "urn:visionflow:linked:coverage-guarantee", "vc:label": "Coverage Guarantee"},
-    {"@id": "urn:visionflow:linked:hypothesis-testing", "vc:label": "Hypothesis Testing"},
-    {"@id": "urn:visionflow:linked:anomaly-detection", "vc:label": "Anomaly Detection"},
-    {"@id": "urn:visionflow:linked:drug-discovery", "vc:label": "Drug Discovery"},
-    {"@id": "urn:visionflow:linked:medical-imaging", "vc:label": "Medical Imaging"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:autonomous-systems", "vc:label": "Autonomous Systems"},
-    {"@id": "urn:visionflow:linked:trustworthy-ai", "vc:label": "Trustworthy AI"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:model-calibration", "vc:label": "Model Calibration"},
-    {"@id": "urn:visionflow:linked:ensemble-methods", "vc:label": "Ensemble Methods"},
-    {"@id": "urn:visionflow:linked:bayesian-deep-learning", "vc:label": "Bayesian Deep Learning"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:probability-theory", "vc:label": "Probability Theory"},
-    {"@id": "urn:visionflow:linked:monte-carlo-methods", "vc:label": "Monte Carlo Methods"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:time-series-forecasting", "vc:label": "Time Series Forecasting"},
-    {"@id": "urn:visionflow:linked:risk-assessment", "vc:label": "Risk Assessment"},
-    {"@id": "urn:visionflow:linked:interpretability", "vc:label": "Interpretability"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:cross-validation", "vc:label": "Cross Validation"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:distribution-shift", "vc:label": "Distribution Shift"},
-    {"@id": "urn:visionflow:linked:selective-prediction", "vc:label": "Selective Prediction"},
-    {"@id": "urn:visionflow:linked:fairness-in-machine-learning", "vc:label": "Fairness in Machine Learning"},
-    {"@id": "urn:visionflow:linked:information-theory", "vc:label": "Information Theory"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"}
+    {
+      "@id": "urn:visionflow:linked:probabilistic-model",
+      "vc:label": "Probabilistic Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:uncertainty-quantification",
+      "vc:label": "Uncertainty Quantification"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-learning",
+      "vc:label": "Statistical Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:calibration",
+      "vc:label": "Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:nonconformity-score",
+      "vc:label": "Nonconformity Score"
+    },
+    {
+      "@id": "urn:visionflow:linked:exchangeability",
+      "vc:label": "Exchangeability"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:frequentist-statistics",
+      "vc:label": "Frequentist Statistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-process",
+      "vc:label": "Gaussian Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:classification",
+      "vc:label": "Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:regression",
+      "vc:label": "Regression"
+    },
+    {
+      "@id": "urn:visionflow:linked:prediction-interval",
+      "vc:label": "Prediction Interval"
+    },
+    {
+      "@id": "urn:visionflow:linked:coverage-guarantee",
+      "vc:label": "Coverage Guarantee"
+    },
+    {
+      "@id": "urn:visionflow:linked:hypothesis-testing",
+      "vc:label": "Hypothesis Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-imaging",
+      "vc:label": "Medical Imaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:trustworthy-ai",
+      "vc:label": "Trustworthy AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-calibration",
+      "vc:label": "Model Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:ensemble-methods",
+      "vc:label": "Ensemble Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-deep-learning",
+      "vc:label": "Bayesian Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:probability-theory",
+      "vc:label": "Probability Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:monte-carlo-methods",
+      "vc:label": "Monte Carlo Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-series-forecasting",
+      "vc:label": "Time Series Forecasting"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-assessment",
+      "vc:label": "Risk Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:interpretability",
+      "vc:label": "Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-validation",
+      "vc:label": "Cross Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:distribution-shift",
+      "vc:label": "Distribution Shift"
+    },
+    {
+      "@id": "urn:visionflow:linked:selective-prediction",
+      "vc:label": "Selective Prediction"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness-in-machine-learning",
+      "vc:label": "Fairness in Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -72,113 +202,133 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"},
-    {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"}
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    },
+    {
+      "@id": "urn:ngm:class:uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:nonconformity-score", "label": "Nonconformity Score"},
-      {"@id": "urn:ngm:class:calibration-set", "label": "Calibration Set"},
-      {"@id": "urn:ngm:class:prediction-interval", "label": "Prediction Interval"},
-      {"@id": "urn:ngm:class:coverage-guarantee", "label": "Coverage Guarantee"}
+      {
+        "@id": "urn:ngm:class:nonconformity-score",
+        "label": "Nonconformity Score"
+      },
+      {
+        "@id": "urn:ngm:class:calibration-set",
+        "label": "Calibration Set"
+      },
+      {
+        "@id": "urn:ngm:class:prediction-interval",
+        "label": "Prediction Interval"
+      },
+      {
+        "@id": "urn:ngm:class:coverage-guarantee",
+        "label": "Coverage Guarantee"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:exchangeability", "label": "Exchangeability"},
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"},
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"}
+      {
+        "@id": "urn:ngm:class:exchangeability",
+        "label": "Exchangeability"
+      },
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:selective-prediction", "label": "Selective Prediction"}
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:selective-prediction",
+        "label": "Selective Prediction"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:frequentist-statistics", "label": "Frequentist Statistics"},
-      {"@id": "urn:ngm:class:hypothesis-testing", "label": "Hypothesis Testing"}
+      {
+        "@id": "urn:ngm:class:frequentist-statistics",
+        "label": "Frequentist Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:bayesian-deep-learning", "label": "Bayesian Deep Learning"},
-      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"},
-      {"@id": "urn:ngm:class:model-calibration", "label": "Model Calibration"}
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "@id": "urn:ngm:class:model-calibration",
+        "label": "Model Calibration"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous Systems"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:conformal-prediction:enrichment-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:conformal-prediction"},
-  "vc:resolutions": [
-    {"raw": "[[Probabilistic Model]]", "resolved": "urn:visionflow:linked:probabilistic-model", "kind": "ResolvedLink"},
-    {"raw": "[[Uncertainty Quantification]]", "resolved": "urn:visionflow:linked:uncertainty-quantification", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Statistical Learning]]", "resolved": "urn:visionflow:linked:statistical-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Calibration]]", "resolved": "urn:visionflow:linked:calibration", "kind": "ResolvedLink"},
-    {"raw": "[[Nonconformity Score]]", "resolved": "urn:visionflow:linked:nonconformity-score", "kind": "StubLink"},
-    {"raw": "[[Exchangeability]]", "resolved": "urn:visionflow:linked:exchangeability", "kind": "StubLink"},
-    {"raw": "[[Bayesian Inference]]", "resolved": "urn:visionflow:linked:bayesian-inference", "kind": "ResolvedLink"},
-    {"raw": "[[Frequentist Statistics]]", "resolved": "urn:visionflow:linked:frequentist-statistics", "kind": "ResolvedLink"},
-    {"raw": "[[Gaussian Process]]", "resolved": "urn:visionflow:linked:gaussian-process", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Classification]]", "resolved": "urn:visionflow:linked:classification", "kind": "StubLink"},
-    {"raw": "[[Regression]]", "resolved": "urn:visionflow:linked:regression", "kind": "StubLink"},
-    {"raw": "[[Prediction Interval]]", "resolved": "urn:visionflow:linked:prediction-interval", "kind": "StubLink"},
-    {"raw": "[[Coverage Guarantee]]", "resolved": "urn:visionflow:linked:coverage-guarantee", "kind": "StubLink"},
-    {"raw": "[[Hypothesis Testing]]", "resolved": "urn:visionflow:linked:hypothesis-testing", "kind": "StubLink"},
-    {"raw": "[[Anomaly Detection]]", "resolved": "urn:visionflow:linked:anomaly-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Drug Discovery]]", "resolved": "urn:visionflow:linked:drug-discovery", "kind": "ResolvedLink"},
-    {"raw": "[[Medical Imaging]]", "resolved": "urn:visionflow:linked:medical-imaging", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Autonomous Systems]]", "resolved": "urn:visionflow:linked:autonomous-systems", "kind": "ResolvedLink"},
-    {"raw": "[[Trustworthy AI]]", "resolved": "urn:visionflow:linked:trustworthy-ai", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[Model Calibration]]", "resolved": "urn:visionflow:linked:model-calibration", "kind": "ResolvedLink"},
-    {"raw": "[[Ensemble Methods]]", "resolved": "urn:visionflow:linked:ensemble-methods", "kind": "StubLink"},
-    {"raw": "[[Bayesian Deep Learning]]", "resolved": "urn:visionflow:linked:bayesian-deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "StubLink"},
-    {"raw": "[[Probability Theory]]", "resolved": "urn:visionflow:linked:probability-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Monte Carlo Methods]]", "resolved": "urn:visionflow:linked:monte-carlo-methods", "kind": "ResolvedLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:visionflow:linked:active-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "StubLink"},
-    {"raw": "[[Time Series Forecasting]]", "resolved": "urn:visionflow:linked:time-series-forecasting", "kind": "StubLink"},
-    {"raw": "[[Risk Assessment]]", "resolved": "urn:visionflow:linked:risk-assessment", "kind": "ResolvedLink"},
-    {"raw": "[[Interpretability]]", "resolved": "urn:visionflow:linked:interpretability", "kind": "ResolvedLink"},
-    {"raw": "[[Model Evaluation]]", "resolved": "urn:visionflow:linked:model-evaluation", "kind": "StubLink"},
-    {"raw": "[[Cross Validation]]", "resolved": "urn:visionflow:linked:cross-validation", "kind": "StubLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "StubLink"},
-    {"raw": "[[Distribution Shift]]", "resolved": "urn:visionflow:linked:distribution-shift", "kind": "StubLink"},
-    {"raw": "[[Selective Prediction]]", "resolved": "urn:visionflow:linked:selective-prediction", "kind": "StubLink"},
-    {"raw": "[[Fairness in Machine Learning]]", "resolved": "urn:visionflow:linked:fairness-in-machine-learning", "kind": "StubLink"},
-    {"raw": "[[Information Theory]]", "resolved": "urn:visionflow:linked:information-theory", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -514,7 +664,7 @@ public: true
     - **ConformalCI** (2024): scikit-learn-compatible coverage testing and calibration library with built-in integration for MLflow experiment tracking; designed for [[MLOps]] deployment pipelines.
     - **CREPES** (Conformal Regressors and Predictors for [[Ensemble Methods|Ensembles]]): specialised conformal library wrapping ensemble models to produce calibrated [[Prediction Interval|prediction intervals]] from random forests and gradient-boosted trees.
     - **Vendor integrations**: AWS SageMaker Clarify (added conformal calibration step in 2025 preview), Azure Machine Learning (conformal prediction set as a pipeline component), and Databricks MLflow (conformal threshold logging in experiment tracking) are incorporating conformal steps natively into the ML deployment pipeline, signalling enterprise maturation of the technique.
-    - **awesome-conformal-prediction** (Valeriy Manokhin, GitHub): A community-maintained curated list of papers, software, and tutorials; grew from a few dozen resources in 2022 to hundreds by mid-2025, reflecting the explosion of research activity. Serves as the de facto community hub and literature index for the field.
+    - **awesome-conformal-prediction** (Valeriy Manokhin, GitHub): A community-maintained curated list of papers, software, and tutorials; grew from a few dozen resources in 2022 to hundreds by mid-2025, reflecting the explosion of research activity. Serves as the de facto community hub and literature [private] for the field.
 
   ## Interaction with MLOps and Model Deployment
 

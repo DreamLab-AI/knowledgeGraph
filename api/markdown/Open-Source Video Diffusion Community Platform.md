@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Banodoco]]
-# Open-Source Video Diffusion Community Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,17 +55,32 @@ elevatedFrom:: [[Banodoco]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"}
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "quality": 0.35,
@@ -82,37 +91,6 @@ elevatedFrom:: [[Banodoco]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:banodoco:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e4ca09740e7dd1217624da5b054df1b0dcf336eacd3483bfbf221cd3f3c2ec62"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Banodoco is a community platform focused on open-source AI video generation, bringing together model architects, fine-tuners, engineers, and artists to advance controllable creative AI. It serves as a coordination space for collaborative development of video diffusion models and related tooling under a shared artistic mission.

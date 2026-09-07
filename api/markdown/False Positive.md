@@ -1,55 +1,114 @@
----
-public: true
----
-
-# False Positive
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:false-positive", "@type":"Page", "title":"False Positive", "vc:slug":"false-positive", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:false-positive",
+  "@type": "Page",
+  "title": "False Positive",
+  "vc:slug": "false-positive",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:false-positive",
-  "@type":"Class",
-  "label":"False Positive",
-  "definition":"A false positive is an outcome in which a classifier or detection system reports the positive class for an instance that actually belongs to the negative class. It is one of the four cells of a confusion matrix and corresponds to a Type I error in statistical terms. The rate of false positives directly shapes precision and specificity and is traded off against false negatives when a decision threshold is tuned.",
-  "domain":"machine-learning",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:confusion-matrix","label":"Confusion Matrix"},{"@id":"urn:ngm:class:ai-technique","label":"AI Technique"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:classification","label":"Classification"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:false-positive",
+  "@type": "Class",
+  "label": "False Positive",
+  "definition": "A false positive is an outcome in which a classifier or detection system reports the positive class for an instance that actually belongs to the negative class. It is one of the four cells of a confusion matrix and corresponds to a Type I error in statistical terms. The rate of false positives directly shapes precision and specificity and is traded off against false negatives when a decision threshold is tuned.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:confusion-matrix","label":"Confusion Matrix"},
-      {"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:classification","label":"Classification"},
-      {"@id":"urn:ngm:class:confusion-matrix","label":"Confusion Matrix"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:sensitivity","label":"Sensitivity"},
-      {"@id":"urn:ngm:class:specificity","label":"Specificity"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      },
+      {
+        "@id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:classification","label":"Classification"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:precision","label":"Precision"},
-      {"@id":"urn:ngm:class:recall","label":"Recall"},
-      {"@id":"urn:ngm:class:specificity","label":"Specificity"},
-      {"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"},
-      {"@id":"urn:ngm:class:intrusion-detection-system","label":"Intrusion Detection System"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "@id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "@id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

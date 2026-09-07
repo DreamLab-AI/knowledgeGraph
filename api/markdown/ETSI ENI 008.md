@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI ENI 008
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-eni-008:6e5fa0862537",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d8eea33911cce969aa4ea449d219865a3594200bb13c0b2d10c98f1ebdda1808"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ETSI]]",
-      "resolved": "urn:visionflow:linked:etsi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ETSI ENI 008 is a deliverable of the ETSI Experiential Networked Intelligence group, which works on AI-based network management and optimisation.

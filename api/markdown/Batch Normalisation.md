@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Batch Normalisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,42 +176,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:batch-normalisation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:29613fb636e48d0e684bf41a1ee33196dfd3b50374fe0e5e2d6a571ccc280aa0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST (National Institute of Standards and Technology)]]",
-      "resolved": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ### Primary Definition

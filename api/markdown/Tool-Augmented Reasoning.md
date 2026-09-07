@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tool-Augmented Reasoning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tool-augmented-reasoning:b94d49d570db",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d4c9e12380acc7e5369eb0e7f9c669b50751c218e1c719782937e7c6455fdd19"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Tool Use]]",
-      "resolved": "urn:visionflow:linked:tool-use",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reasoning]]",
-      "resolved": "urn:visionflow:linked:reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agentic AI]]",
-      "resolved": "urn:visionflow:linked:agentic-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hallucination]]",
-      "resolved": "urn:visionflow:linked:hallucination",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Tool-augmented reasoning is an approach in which a language model invokes external tools such as calculators, search or code execution to solve tasks beyond its parametric knowledge. The model interleaves reasoning steps with tool calls.

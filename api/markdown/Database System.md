@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Database System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,62 +198,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:database-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f657c37aac4d058ae68fa62a8c511a8fbd831bc3b187491474e4902770549960"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Persistence]]",
-      "resolved": "urn:visionflow:linked:data-persistence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Query Processing]]",
-      "resolved": "urn:visionflow:linked:query-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transaction Management]]",
-      "resolved": "urn:visionflow:linked:transaction-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Domain: Data Management]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-data-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data. Modern database systems encompass relational databases using SQL for structured table-based data, and NoSQL databases supporting flexible schemas for document, key-value, graph, and wide-column data models.

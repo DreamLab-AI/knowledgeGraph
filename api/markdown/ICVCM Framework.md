@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ICVCM Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "The ICVCM Framework is the governance framework established by the Integrity Council for the Voluntary Carbon Market to set quality benchmarks for carbon credits. Centred on the Core Carbon Principles and an associated Assessment Framework, it defines criteria for additionality, permanence, robust quantification, and transparent governance. The framework aims to restore trust and comparability across voluntary carbon-credit issuers.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:icvcm-core-carbon-principles", "label": "ICVCM Core Carbon Principles"}],
-    "supports": [{"@id": "urn:ngm:class:green-blockchain-initiatives", "label": "Green Blockchain Initiatives"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:icvcm-core-carbon-principles",
+        "label": "ICVCM Core Carbon Principles"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:green-blockchain-initiatives",
+        "label": "Green Blockchain Initiatives"
+      }
+    ]
   },
   "quality": 0.72
 }

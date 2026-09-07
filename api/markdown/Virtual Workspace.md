@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Workspace
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,17 +50,38 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"}
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
     ]
   },
   "quality": 0.35,
@@ -76,32 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-workspace:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:90250d1bc57a558aa9266c6949c6af3871e81c7f7cbbe40c794c889cd349077a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Virtual Workspace is a spatially organised digital environment — typically experienced through XR headsets or desktop 3D interfaces — that replicates or enhances the collaborative and cognitive functions of a physical office. It supports remote collaboration, persistent shared artefacts, spatial audio, and embodied presence, addressing the limitations of flat video-conferencing for complex knowledge work.

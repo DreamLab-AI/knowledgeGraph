@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Raid
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

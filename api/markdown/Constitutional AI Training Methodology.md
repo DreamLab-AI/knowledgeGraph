@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Constitutional AI]]
-# Constitutional AI Training Methodology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,42 +176,6 @@ elevatedFrom:: [[Constitutional AI]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:constitutional-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:62b22f6e15fc73a479f8372fea623058b2d359e3cd4035e7a10f311da71a117f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Constitutional AI Training Methodology]]",
-      "resolved": "urn:visionflow:owl:class:constitutional-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A method for training AI assistants to be harmless through self-improvement, using a set of principles or "constitution" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).

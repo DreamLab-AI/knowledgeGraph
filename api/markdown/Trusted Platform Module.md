@@ -1,58 +1,116 @@
----
-public: true
----
-
-# Trusted Platform Module
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:trusted-platform-module", "@type":"Page", "title":"Trusted Platform Module", "vc:slug":"trusted-platform-module", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:trusted-platform-module",
+  "@type": "Page",
+  "title": "Trusted Platform Module",
+  "vc:slug": "trusted-platform-module",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:trusted-platform-module",
-  "@type":"Class",
-  "label":"Trusted Platform Module",
-  "definition":"A Trusted Platform Module (TPM) is a dedicated, tamper-resistant hardware component that provides cryptographic functions and secure storage of keys and platform measurements. It generates and protects keys that never leave the chip in plaintext, records integrity measurements in platform configuration registers, and supports operations such as secure boot and remote attestation. Defined by an open Trusted Computing Group specification, the TPM acts as a hardware root of trust on personal computers, servers and embedded devices.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:hardware-security-module","label":"Hardware Security Module"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:cryptographic-key","label":"Cryptographic Key"},
-      {"@id":"urn:ngm:class:non-volatile-memory","label":"Non-Volatile Memory"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trusted-platform-module",
+  "@type": "Class",
+  "label": "Trusted Platform Module",
+  "definition": "A Trusted Platform Module (TPM) is a dedicated, tamper-resistant hardware component that provides cryptographic functions and secure storage of keys and platform measurements. It generates and protects keys that never leave the chip in plaintext, records integrity measurements in platform configuration registers, and supports operations such as secure boot and remote attestation. Defined by an open Trusted Computing Group specification, the TPM acts as a hardware root of trust on personal computers, servers and embedded devices.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware-security-module",
+      "label": "Hardware Security Module"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "@id": "urn:ngm:class:non-volatile-memory",
+        "label": "Non-Volatile Memory"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:secure-boot","label":"Secure Boot"},
-      {"@id":"urn:ngm:class:remote-attestation","label":"Remote Attestation"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      },
+      {
+        "@id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:root-of-trust","label":"Root of Trust"},
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:root-of-trust",
+        "label": "Root of Trust"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:tamper-resistance","label":"Tamper Resistance"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tamper-resistance",
+        "label": "Tamper Resistance"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"},
-      {"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:key-management","label":"Key Management"},
-      {"@id":"urn:ngm:class:confidential-computing","label":"Confidential Computing"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:trusted-execution-environment","label":"Trusted Execution Environment"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:hardware-security-module","label":"Hardware Security Module"},
-      {"@id":"urn:ngm:class:fido-alliance","label":"FIDO Alliance"},
-      {"@id":"urn:ngm:class:secure-enclave","label":"Secure Enclave"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

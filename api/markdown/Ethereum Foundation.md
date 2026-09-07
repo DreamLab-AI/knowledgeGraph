@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ethereum Foundation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,52 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ethereum-foundation:9d260e2a409a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b80a4d30cab542037a225aa835273faf8ed27559a141f98bc875f830a1cea38a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Domain]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Ethereum Foundation is a non-profit organisation, registered in Switzerland, that supports the development of the Ethereum protocol and its surrounding research and developer community. It funds core protocol research, client development, security audits and educational initiatives, but does not control the network, which is maintained by a decentralised set of clients, validators and contributors. The Foundation was established around the 2014 to 2015 launch of Ethereum.

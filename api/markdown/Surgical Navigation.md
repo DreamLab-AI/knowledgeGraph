@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Surgical Navigation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "Surgical Navigation is the intraoperative technology and methodology that provides surgeons with real-time spatial guidance by registering preoperative imaging data (CT, MRI) with the patient's anatomy and continuously tracking the position of surgical instruments relative to that registered model. It is analogous to GPS navigation but for the operating room, enabling submillimetre accuracy in procedures where anatomical landmarks are obscured, such as orthopaedic, neurosurgery, and spinal operations.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:navigation-system", "label": "Navigation System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:navigation-system",
+      "label": "Navigation System"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"},
-      {"@id": "urn:ngm:class:tracking-system", "label": "Tracking System"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:surgical-robotics", "label": "Surgical Robotics"},
-      {"@id": "urn:ngm:class:surgical-robot", "label": "Surgical Robot"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:precision-medicine", "label": "Precision Medicine"},
-      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"}
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
     ]
   },
   "quality": 0.8

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Canary Deployment
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:canary-deployment", "@type": "Page", "title": "Canary Deployment", "vc:slug": "canary-deployment", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:canary-deployment",
+  "@type": "Page",
+  "title": "Canary Deployment",
+  "vc:slug": "canary-deployment",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -284,7 +287,7 @@ public: true
 
     **LLM API gateway canary promotion**: As organisations in 2025-2026 deploy large language model inference through API gateways, canary deployment has extended to the model selection layer. An LLM API gateway may serve a mix of inference requests to a production model version and a candidate fine-tuned variant, measuring response quality via an LLM-as-judge evaluator, latency distribution, and refusal rate. This pattern is used by organisations deploying custom fine-tunes of open-weight models (Llama 3, Mistral, Qwen) alongside externally hosted foundation models, allowing iterative improvement cycles with production-quality validation before each version promotion.
 
-    **Infrastructure change validation**: Database query plan changes, CDN configuration updates, Kubernetes node pool version upgrades, and kernel version rollouts can all be validated using canary deployment principles applied at the infrastructure layer. A database administrator might route ten percent of query traffic through a new PostgreSQL version or a modified index strategy, monitoring query latency and error rate before migrating the remaining fleet. This approach has become standard practice in platform engineering teams that manage infrastructure changes with the same rigour applied to application deployments.
+    **Infrastructure change validation**: Database query plan changes, CDN configuration updates, Kubernetes node pool version upgrades, and kernel version rollouts can all be validated using canary deployment principles applied at the infrastructure layer. A database administrator might route ten percent of query traffic through a new PostgreSQL version or a modified [private] strategy, monitoring query latency and error rate before migrating the remaining fleet. This approach has become standard practice in platform engineering teams that manage infrastructure changes with the same rigour applied to application deployments.
 
     **Configuration change canary**: Infrastructure-as-code changes — modifications to Terraform configurations, Kubernetes manifests, or Ansible playbooks — can be applied to a canary subset of the infrastructure before fleet-wide rollout. GitOps tools such as ArgoCD support "application set" patterns that allow a configuration change to be deployed to a canary cluster or namespace first, with human or automated approval required before propagation to all environments.
 

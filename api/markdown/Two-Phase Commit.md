@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Two-Phase Commit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,4 +167,3 @@ public: true
   - The protocol's fundamental limitation is that it is blocking: if the coordinator fails after participants have voted COMMIT but before broadcasting the final decision, participants are stuck in a prepared state — holding locks and unable to proceed — until the coordinator recovers. This can cause minutes-long outages in systems with hardware failures. Three-Phase Commit (3PC) adds a pre-commit phase to eliminate this blocking behaviour in a synchronous network, though it cannot tolerate network partitions. Practical systems typically add coordinator redundancy via Paxos or Raft to achieve non-blocking distributed transactions.
 
   - By 2024-2025, 2PC underpins distributed transaction support in cloud-native databases (Google Spanner uses Paxos-enhanced 2PC across globally distributed nodes), microservice choreography via the saga pattern as a 2PC alternative, and blockchain cross-chain atomic swaps that adapt its two-phase logic to smart-contract lock-and-release mechanisms. Google Spanner's TrueTime demonstrates that correct 2PC with external consistency is achievable at global scale using hardware-assisted clock synchronisation, achieving sub-10ms commit latency across continents.
-

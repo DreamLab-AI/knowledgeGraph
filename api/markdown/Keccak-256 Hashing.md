@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Keccak-256 Hashing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Keccak-256 is a cryptographic hash function from the Keccak family, producing a fixed 256-bit digest using a sponge construction. It is the specific variant adopted by Ethereum, distinct from the later NIST-standardised SHA3-256 due to a difference in padding. Keccak-256 provides collision and preimage resistance for addresses, transaction hashes and message commitments in blockchain systems.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"}
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
     ]
   },
   "quality": 0.72

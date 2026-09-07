@@ -1,8 +1,3 @@
----
-public: true
----
-
-# W3C 2022 DID Core 1.0 Recommendation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:w-3-c-2022-did-core-1-0-recommendation:bbbeadd05054",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:14d8036f18d86765c45e87f94b8a8388d0692889f4e596e220d3eb4a2d5b3e54"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[W3C]]",
-      "resolved": "urn:visionflow:linked:w-3-c",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The W3C Recommendation for Decentralized Identifiers (DIDs) version 1.0, published in 2022, defining the core DID data model, syntax and resolution architecture. It establishes DIDs as a standard type of verifiable identifier.

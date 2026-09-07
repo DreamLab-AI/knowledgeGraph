@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Heritage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,37 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-heritage:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3a4c229455919bafb5c15ce887790f64c2256904acdf452bec8cb3d3deb7ec30"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The digitisation, preservation, and interactive presentation of cultural artefacts, historical sites, and intangible heritage through spatial computing technologies such as 3D reconstruction, AR, and VR. Digital heritage enables remote access, scholarly analysis, and public engagement with cultural memory that may otherwise be physically inaccessible or at risk of loss.

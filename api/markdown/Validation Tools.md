@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Validation Tools
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Validation tools are software utilities that verify whether data, documents or implementations conform to a defined specification, schema or interoperability profile. They automate conformance checking, report violations, and support certification and compatibility testing across standards-based ecosystems. By catching errors early they reduce integration risk and ensure data and formats interoperate as intended.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"}, {"@id": "urn:ngm:class:compatibility-process", "label": "Compatibility Process"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      },
+      {
+        "@id": "urn:ngm:class:compatibility-process",
+        "label": "Compatibility Process"
+      }
+    ]
   },
   "quality": 0.72
 }

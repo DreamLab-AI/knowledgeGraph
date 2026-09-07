@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Zcash
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,57 +177,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:zcash:fee58d27c3e6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9958d600c435a3dac02be53d485dde51fad9cda39d08fa86509209766fed7502"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Zero Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Proof of Work]]",
-      "resolved": "urn:visionflow:linked:proof-of-work",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Monero]]",
-      "resolved": "urn:visionflow:linked:monero",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[zkSync]]",
-      "resolved": "urn:visionflow:linked:zk-sync",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ben-Sasson et al. 2014, Zerocash: Decentralized Anonymous Payments from Bitcoin]]",
-      "resolved": "urn:visionflow:linked:ben-sasson-et-al-2014-zerocash-decentralized-anonymous-payments-from-bitcoin",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Zcash is a privacy-oriented cryptocurrency launched in 2016 that uses zero-knowledge proofs to allow transactions to be verified without revealing the sender, recipient or amount. It was the first widespread deployment of zk-SNARKs, succinct non-interactive arguments of knowledge, in a public blockchain. Zcash supports both transparent addresses, similar to Bitcoin, and shielded addresses that conceal transaction details, giving users a choice of privacy level. The protocol derives from the Zerocash academic proposal and is developed by the Electric Coin Company.

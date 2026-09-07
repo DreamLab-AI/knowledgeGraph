@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Watermarking Service
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:watermarking-service:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:10c7f9373938c2f02722e28963e6bf990d0c2d81f5e8ab25e682275758d51bda"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Content Authentication]]",
-      "resolved": "urn:visionflow:owl:class:content-authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital infrastructure that embeds imperceptible markers into media content to establish provenance, authenticate ownership, detect tampering, and identify AI-generated content, supporting content credentials standards like C2PA for verifiable digital asset tracking.

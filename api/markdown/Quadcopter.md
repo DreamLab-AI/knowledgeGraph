@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quadcopter
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,23 +59,56 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
-      {"@id": "urn:ngm:class:imu", "label": "IMU"},
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"}
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:aerial-robot", "label": "Aerial Robot"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:aerial-robot",
+        "label": "Aerial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ]
   },
   "provenance": {
@@ -90,37 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:quadcopter:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:435750509c95bec998c0bfc45ee42edba69e03ecc77d5b27f900a2ef33311d82"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Multirotor UAV]]",
-      "resolved": "urn:visionflow:owl:class:multirotor-uav",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A VTOL aerial robot with four fixed-pitch rotors arranged symmetrically around a central frame, controlling attitude and thrust by differentially varying rotor speeds. Mechanically simple, highly manoeuvrable, and statically stable in hover — the dominant platform for consumer UAVs, autonomous aerial research, and inspection.

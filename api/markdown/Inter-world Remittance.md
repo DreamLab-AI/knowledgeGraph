@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inter-world Remittance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,19 +63,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtual-currency", "label": "Virtual Currency"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {
+        "@id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "provenance": {
@@ -90,52 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inter-world-remittance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aebc2b884c7343eca8e6463899afc78af971b200fa4da89b88d1432258820801"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Currency]]",
-      "resolved": "urn:visionflow:owl:class:virtual-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Inter-world Remittance is a concept within the bc domain.

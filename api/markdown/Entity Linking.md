@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Entity Linking
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:entity-linking", "@type":"Page", "title":"Entity Linking", "vc:slug":"entity-linking", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:entity-linking",
+  "@type": "Page",
+  "title": "Entity Linking",
+  "vc:slug": "entity-linking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,43 +21,95 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:information-extraction", "label": "Information Extraction" }
+    {
+      "@id": "urn:ngm:class:information-extraction",
+      "label": "Information Extraction"
+    }
   ],
   "relations": {
     "partOf": [
-      { "@id": "urn:ngm:class:information-extraction", "label": "Information Extraction" }
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition" },
-      { "@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph" }
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:coreference-resolution", "label": "Coreference Resolution" },
-      { "@id": "urn:ngm:class:embedding", "label": "Embedding" },
-      { "@id": "urn:ngm:class:wikidata", "label": "Wikidata" }
+      {
+        "@id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph" },
-      { "@id": "urn:ngm:class:entity-resolution", "label": "Entity Resolution" }
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing" },
-      { "@id": "urn:ngm:class:text-mining", "label": "Text Mining" }
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:text-mining",
+        "label": "Text Mining"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:semantic-web", "label": "Semantic Web" },
-      { "@id": "urn:ngm:class:linked-data", "label": "Linked Data" }
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:record-linkage", "label": "Record Linkage" },
-      { "@id": "urn:ngm:class:ontology", "label": "Ontology" }
+      {
+        "@id": "urn:ngm:class:record-linkage",
+        "label": "Record Linkage"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:named-entity-disambiguation", "label": "Named Entity Disambiguation" }
+    {
+      "@id": "urn:ngm:class:named-entity-disambiguation",
+      "label": "Named Entity Disambiguation"
+    }
   ],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -179,16 +236,16 @@ public: true
 
     Entity linking (also called named entity disambiguation, NED, or "wikification" when the target is Wikipedia) is the problem of grounding free-text entity mentions to canonical entries in a structured [[Knowledge Base]]. The discipline emerged from early research on word-sense disambiguation in the 1990s and was crystalised as a distinct NLP task by the TAC Knowledge Base Population (KBP) shared tasks from 2009 onwards. Unlike [[Named Entity Recognition]], which merely labels a span as PERSON, ORGANISATION, LOCATION, or similar, entity linking must select the specific unique identifier — such as `Q7251` in [[Wikidata]] for Alan Turing — from potentially millions of candidates. The challenge is compounded by surface form variation: an entity may appear under its canonical name, an abbreviation, a pronoun, or a colloquial alias, while the same surface form may be genuinely ambiguous between many distinct entities in the [[Knowledge Graph]]. Early entity linking systems in the 2000s used Wikipedia anchor statistics: anchor text hyperlinks in Wikipedia articles provide a natural mapping from surface forms to the articles they link to, and the prior probability P(entity | surface form), estimated from anchor counts, proved to be a strong baseline. Milne and Witten (2008) formulated entity linking as a machine learning problem combining surface-form priors, contextual similarity (based on the bag-of-words overlap between context and Wikipedia article text), and graph-based coherence signals (relatedness between candidate entities estimated from their Wikipedia link co-occurrence). Their approach, published in CIKM 2008, remained competitive for several years and demonstrated the value of combining local and global signals.
 
-    The introduction of distributed word representations dramatically changed the landscape. Yamada et al. (2016) trained entity embeddings jointly with word embeddings such that the embeddings of entity names were close to embeddings of contexts in which they appear, enabling purely distributional disambiguation without explicit feature engineering. Deep learning architectures — convolutional neural networks initially, then bidirectional LSTMs and attention mechanisms — improved mention detection and candidate ranking further. The real paradigm shift, however, came with the [[Transformer Architecture]] and the rise of pre-trained language models. Wu et al. (2020) introduced BLINK, a [[Bi-Encoder]] architecture built on BERT that encodes mentions and entity descriptions independently into a shared dense vector space. Candidate retrieval is performed via approximate nearest-neighbour search over a dense index (using FAISS), and a cross-encoder then re-ranks the top-64 candidates. BLINK demonstrated that scalable entity linking to millions of entities was achievable with BERT-level representations, and established the retrieve-then-rerank paradigm as the dominant architecture for several subsequent years.
+    The introduction of distributed word representations dramatically changed the landscape. Yamada et al. (2016) trained entity embeddings jointly with word embeddings such that the embeddings of entity names were close to embeddings of contexts in which they appear, enabling purely distributional disambiguation without explicit feature engineering. Deep learning architectures — convolutional neural networks initially, then bidirectional LSTMs and attention mechanisms — improved mention detection and candidate ranking further. The real paradigm shift, however, came with the [[Transformer Architecture]] and the rise of pre-trained language models. Wu et al. (2020) introduced BLINK, a [[Bi-Encoder]] architecture built on BERT that encodes mentions and entity descriptions independently into a shared dense vector space. Candidate retrieval is performed via approximate nearest-neighbour search over a dense [private] (using FAISS), and a cross-encoder then re-ranks the top-64 candidates. BLINK demonstrated that scalable entity linking to millions of entities was achievable with BERT-level representations, and established the retrieve-then-rerank paradigm as the dominant architecture for several subsequent years.
 
-    De Cao et al. (2021) fundamentally reframed the problem with GENRE (Generalised Autoregressive Entity Retrieval), which treats entity linking as a sequence-to-sequence generation task. Instead of indexing all entities and performing retrieval, GENRE autoregressively generates the entity name character-by-character using a constrained beam search over a prefix trie, guaranteeing that only valid entity names in the target base can be output. This eliminates the need for any pre-built index and enables zero-shot transfer to new domains or languages simply by changing the entity name set. The multilingual extension mGENRE (De Cao et al., 2022) applies the same approach across 100+ languages, demonstrating remarkable cross-lingual transfer. As of 2024–2025, the dominant approaches are either generative (GENRE-style), retrieve-and-rerank (BLINK-style), or hybrid frameworks that combine retrieval candidates with generative reranking. The OneNet framework (EMNLP 2024) demonstrated that combining contextual priors and knowledge base statistics through few-shot LLM prompting can outperform prior state-of-the-art across seven benchmark datasets without task-specific fine-tuning, pointing toward a future where entity linking is an emergent capability of large language models rather than a specialist pipeline stage.
+    De Cao et al. (2021) fundamentally reframed the problem with GENRE (Generalised Autoregressive Entity Retrieval), which treats entity linking as a sequence-to-sequence generation task. Instead of indexing all entities and performing retrieval, GENRE autoregressively generates the entity name character-by-character using a constrained beam search over a prefix trie, guaranteeing that only valid entity names in the target base can be output. This eliminates the need for any pre-built [private] and enables zero-shot transfer to new domains or languages simply by changing the entity name set. The multilingual extension mGENRE (De Cao et al., 2022) applies the same approach across 100+ languages, demonstrating remarkable cross-lingual transfer. As of 2024–2025, the dominant approaches are either generative (GENRE-style), retrieve-and-rerank (BLINK-style), or hybrid frameworks that combine retrieval candidates with generative reranking. The OneNet framework (EMNLP 2024) demonstrated that combining contextual priors and knowledge base statistics through few-shot LLM prompting can outperform prior state-of-the-art across seven benchmark datasets without task-specific fine-tuning, pointing toward a future where entity linking is an emergent capability of large language models rather than a specialist pipeline stage.
 
   ## Components / Architecture
 
     A complete entity linking system consists of the following components, which may be implemented as separate modules in a pipeline or jointly in an end-to-end model:
 
     - **Mention Detection**: Identifies entity-bearing spans in text. Can be a dedicated [[Named Entity Recognition]] module producing (start, end, type) tuples, a span proposal network that scores all possible spans, or an integrated model that jointly detects and links. Mention detection quality directly bounds recall: missed mentions cannot be linked. Recent end-to-end models (ELQ, ReFinED) perform mention detection and disambiguation in a single forward pass, with cross-attention between all spans and all entity descriptions.
-    - **Alias Dictionary and Entity Index**: A pre-built lookup table mapping surface forms and aliases to candidate entity identifiers. For Wikipedia-based systems, article titles, redirect page titles, and anchor text provide the alias vocabulary. For [[Wikidata]], aliases, labels, and description strings in all supported languages are crawled and indexed. The alias dictionary is typically stored as an inverted index mapping surface form → {(entity_id, prior_prob), …} sorted by prior probability.
+    - **Alias Dictionary and Entity Index**: A pre-built lookup table mapping surface forms and aliases to candidate entity identifiers. For Wikipedia-based systems, article titles, redirect page titles, and anchor text provide the alias vocabulary. For [[Wikidata]], aliases, labels, and description strings in all supported languages are crawled and indexed. The alias dictionary is typically stored as an inverted [private] mapping surface form → {(entity_id, prior_prob), …} sorted by prior probability.
     - **Dense Retrieval / Bi-Encoder**: A dual-tower [[Transformer Architecture]] (based on [[BERT]] or similar encoders) that maps mentions-in-context and entity descriptions to the same dense vector space, enabling fast approximate nearest-neighbour retrieval with FAISS or ScaNN. The mention encoder takes the mention span and its surrounding context tokens as input; the entity encoder takes the entity title and description text. During inference, the entity side is pre-encoded and indexed; only the mention side is computed dynamically. This is the dominant candidate generation mechanism in systems such as BLINK, DPR-EL, and ZESHEL.
     - **Cross-Encoder Re-ranker**: A single [[Transformer Architecture]] model that concatenates the mention context with each candidate entity description and produces a compatibility score. Cross-encoders achieve higher accuracy than bi-encoders because they model interactions between mention and entity tokens via full self-attention, but they cannot scale to full-base retrieval: typically applied only to the top-64 or top-100 bi-encoder candidates. Cross-encoders can be implemented as BERT-based binary classifiers (mention-entity pair is / is not the correct link) or as sequence-to-sequence models scoring entity names.
     - **Generative Decoder with Trie Decoding**: A seq2seq model (BART, T5, or GPT-style decoder) that autoregressively generates the canonical entity name or identifier. Constrained decoding via a prefix trie guarantees that intermediate generation prefixes are always consistent with at least one valid entity name, preventing hallucination of non-existent entities. GENRE uses BART fine-tuned with constrained beam search over a Wikidata/Wikipedia title trie. Generative models naturally handle zero-shot settings where no candidate dictionary exists.
@@ -215,8 +272,8 @@ public: true
 
   ## Major Families and Variants
 
-    - **Retrieval-based (Bi-Encoder + Cross-Encoder)**: BLINK (Wu et al., 2020), DPR-EL, ZESHEL. Fast retrieval-then-rerank. Current state-of-the-art on CoNLL-AIDA and TAC-KBP. Weakness: requires a pre-built entity index; weaker at long-tail entities with sparse description text.
-    - **Generative (Autoregressive)**: GENRE (De Cao et al., 2021), mGENRE (De Cao et al., 2022), EntGPT (2024). No candidate index needed; naturally zero-shot; slower inference than retrieval but stronger on cross-lingual and zero-shot benchmarks. Trie decoding prevents invalid outputs.
+    - **Retrieval-based (Bi-Encoder + Cross-Encoder)**: BLINK (Wu et al., 2020), DPR-EL, ZESHEL. Fast retrieval-then-rerank. Current state-of-the-art on CoNLL-AIDA and TAC-KBP. Weakness: requires a pre-built entity [private]; weaker at long-tail entities with sparse description text.
+    - **Generative (Autoregressive)**: GENRE (De Cao et al., 2021), mGENRE (De Cao et al., 2022), EntGPT (2024). No candidate [private] needed; naturally zero-shot; slower inference than retrieval but stronger on cross-lingual and zero-shot benchmarks. Trie decoding prevents invalid outputs.
     - **Retrieve-and-Generate (Hybrid)**: OneNet (EMNLP 2024), combining retrieval-based prior knowledge with generative LLM prompting; achieves best results across seven benchmarks without any task-specific fine-tuning. SynCABEL (2025) is a hybrid that uses synthetic data augmentation for biomedical EL.
     - **End-to-End**: ELQ (Li et al., 2020), GENRE-end2end, ReFinED (Ayoola et al., 2022) — jointly model mention detection and disambiguation in a single forward pass. ReFinED additionally introduces fine-grained entity typing as an auxiliary task to improve disambiguation.
     - **Collective / Global**: AIDA (Hoffart et al., 2011), ELMO (global EL via graph neural message-passing). These approaches jointly resolve all mentions in a document using coherence constraints, bridging to [[Coreference Resolution]].
@@ -242,7 +299,7 @@ public: true
 
   ## Current Landscape (2026)
 
-    As of mid-2026, entity linking has been substantially reshaped by the rise of large language models ([[Large Language Models]]). GPT-4, Claude 3, Llama 3, and Gemini can perform entity linking in zero-shot settings via structured prompting, delivering reasonable performance without any EL-specific training. While these approaches do not yet uniformly outperform fine-tuned specialist models on standard benchmarks, they offer remarkable flexibility: no alias dictionary, no entity index, and no training data are required for a new domain or language — only entity descriptions. The OneNet framework (EMNLP 2024) formalised this prompt-based approach, combining contextual cues and entity prior knowledge in a structured LLM prompt, and outperforming prior state-of-the-art across seven benchmark datasets without fine-tuning. SynCABEL (arXiv:2601.19667, 2025) addresses the persistent challenge of limited annotated biomedical EL data by generating synthetic contextualised training examples, achieving state-of-the-art performance on MedMentions with less than 5% of original annotated data. The Guiding LLMs for Biomedical Entity Linking paper (EMNLP Findings 2025) showed that targeted prompting strategies that leverage ontology structure outperform generic LLM prompting for clinical entity linking. Commercial entity linking APIs — Google Natural Language API, AWS Comprehend (DetectEntities), Microsoft Azure AI Language (recognise entities with knowledge base links) — are now standard components of enterprise data ingestion pipelines. In the NHS and UK biomedical sector, SNOMED CT entity linking is being automated through the NHS Federated Data Platform and the NHS England AI Lab. The integration of EL with retrieval-augmented generation (RAG) pipelines represents the most active commercial direction: linking extracted entities to KB descriptions and then using those descriptions to augment LLM context windows enables more factual, hallucination-resistant responses.
+    As of mid-2026, entity linking has been substantially reshaped by the rise of large language models ([[Large Language Models]]). GPT-4, Claude 3, Llama 3, and Gemini can perform entity linking in zero-shot settings via structured prompting, delivering reasonable performance without any EL-specific training. While these approaches do not yet uniformly outperform fine-tuned specialist models on standard benchmarks, they offer remarkable flexibility: no alias dictionary, no entity [private], and no training data are required for a new domain or language — only entity descriptions. The OneNet framework (EMNLP 2024) formalised this prompt-based approach, combining contextual cues and entity prior knowledge in a structured LLM prompt, and outperforming prior state-of-the-art across seven benchmark datasets without fine-tuning. SynCABEL (arXiv:2601.19667, 2025) addresses the persistent challenge of limited annotated biomedical EL data by generating synthetic contextualised training examples, achieving state-of-the-art performance on MedMentions with less than 5% of original annotated data. The Guiding LLMs for Biomedical Entity Linking paper (EMNLP Findings 2025) showed that targeted prompting strategies that leverage ontology structure outperform generic LLM prompting for clinical entity linking. Commercial entity linking APIs — Google Natural Language API, AWS Comprehend (DetectEntities), Microsoft Azure AI Language (recognise entities with knowledge base links) — are now standard components of enterprise data ingestion pipelines. In the NHS and UK biomedical sector, SNOMED CT entity linking is being automated through the NHS Federated Data Platform and the NHS England AI Lab. The integration of EL with retrieval-augmented generation (RAG) pipelines represents the most active commercial direction: linking extracted entities to KB descriptions and then using those descriptions to augment LLM context windows enables more factual, hallucination-resistant responses.
 
   ## UK Context
 
@@ -252,12 +309,12 @@ public: true
 
   ## Future Directions (2026-2030)
 
-    - **LLM-native EL with Implicit KB**: Large language models trained on Wikipedia and [[Wikidata]] text implicitly learn entity representations; future fine-tuning approaches will enable EL as a direct structured generation capability without a separate entity index, maintained through continual learning updates as the knowledge base evolves.
-    - **Streaming Knowledge Bases and Real-Time Linking**: Current EL systems link to static snapshots of [[Wikidata]] or Wikipedia; production systems in news and financial analytics need EL against continuously updated knowledge graphs, requiring streaming retrieval index updates and online adaptation of disambiguation models.
-    - **Multi-KB Disambiguation**: Enterprise deployments require linking to internal proprietary knowledge bases alongside public ones, raising challenges around disambiguation when mentions could plausibly refer to entities in different bases, and privacy-preserving federated learning for cross-enterprise EL.
+    - **LLM-native EL with Implicit KB**: Large language models trained on Wikipedia and [[Wikidata]] text implicitly learn entity representations; future fine-tuning approaches will enable EL as a direct structured generation capability without a separate entity [private], maintained through continual learning updates as the knowledge base evolves.
+    - **Streaming Knowledge Bases and Real-Time Linking**: Current EL systems link to static snapshots of [[Wikidata]] or Wikipedia; production systems in news and financial analytics need EL against continuously updated knowledge graphs, requiring streaming retrieval [private] updates and online adaptation of disambiguation models.
+    - **Multi-KB Disambiguation**: Enterprise deployments require linking to internal proprietary knowledge bases alongside public ones, raising challenges around disambiguation when mentions [private] plausibly refer to entities in different bases, and privacy-preserving federated learning for cross-enterprise EL.
     - **Cross-Modal and Multimodal EL**: Extending entity linking to images, audio, and video — grounding visual entity mentions (faces, logos, locations visible in images) to the same [[Knowledge Graph]] identifiers used for text — enabling truly multimodal knowledge graph construction. Early work on visual entity linking (linking faces to person entities, logos to company entities) is progressing through 2025–2026.
     - **Explainable and Auditable Linking**: As EL feeds downstream decision-making in clinical, legal, and financial domains, regulatory requirements (EU AI Act, UK AI Liability Directive in prospect) will mandate that disambiguation decisions can be explained and audited. Future models will surface supporting evidence for each linking decision, including the specific context passages and entity description fragments that drove the choice.
-    - **Quantum-Accelerated Retrieval**: Quantum nearest-neighbour algorithms could dramatically accelerate the dense retrieval step for web-scale knowledge bases containing hundreds of millions of entities, a direction being explored at UK quantum computing centres including the National Quantum Computing Centre at Harwell and in IBM's quantum network partnerships with UK universities.
+    - **Quantum-Accelerated Retrieval**: Quantum nearest-neighbour algorithms [private] dramatically accelerate the dense retrieval step for web-scale knowledge bases containing hundreds of millions of entities, a direction being explored at UK quantum computing centres including the National Quantum Computing Centre at Harwell and in IBM's quantum network partnerships with UK universities.
 
   ## Research and Literature
 
@@ -266,7 +323,7 @@ public: true
     3. Ratinov, L. et al. (2011). "Local and global algorithms for disambiguation to Wikipedia." *ACL 2011*, 1375–1384.
     4. Shen, W., Wang, J. & Han, J. (2015). "Entity linking with a knowledge base: Issues, techniques, and solutions." *IEEE Transactions on Knowledge and Data Engineering*, 27(2), 443–460.
     5. Yamada, I. et al. (2016). "Joint learning of the embedding of words and entities for named entity disambiguation." *CoNLL 2016*, 250–259.
-    6. Phan, M. C. et al. (2019). "Pair-linking for collective entity disambiguation: Two could be better than all." *IEEE Transactions on Knowledge and Data Engineering*, 31(7), 1383–1396.
+    6. Phan, M. C. et al. (2019). "Pair-linking for collective entity disambiguation: Two [private] be better than all." *IEEE Transactions on Knowledge and Data Engineering*, 31(7), 1383–1396.
     7. Wu, L. et al. (2020). "Scalable zero-shot entity linking with dense entity retrieval (BLINK)." *EMNLP 2020*, 6397–6407. https://arxiv.org/abs/1911.03814
     8. De Cao, N. et al. (2021). "Autoregressive entity retrieval (GENRE)." *ICLR 2021*. https://arxiv.org/abs/2010.00904
     9. De Cao, N. et al. (2022). "Multilingual autoregressive entity linking (mGENRE)." *Transactions of the ACL*, 10, 274–290.

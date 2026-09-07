@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DistributedSystems
----
-
-# Distributed Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,37 +184,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:distributed-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5952bebc458b4e205ce792ef0357d265073e54de128fb3e926fded2771836482"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Collections of independent computing nodes that coordinate through message passing to present a unified service, providing fault tolerance, horizontal scalability, and geographic distribution. Distributed systems are foundational to metaverse platforms, blockchain networks, and large-scale AI inference pipelines, where no single node holds all state and consistency guarantees (CAP theorem trade-offs) govern design choices.

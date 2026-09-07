@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Liquidity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,62 +181,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:liquidity:59b47e9ec520",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:496854887b543626702438f4225e9aa97c3de85445004aa25f575b33ed5025a6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Liquidity Pool]]",
-      "resolved": "urn:visionflow:linked:liquidity-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Market Maker]]",
-      "resolved": "urn:visionflow:linked:automated-market-maker",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Exchange]]",
-      "resolved": "urn:visionflow:linked:decentralized-exchange",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Market Making]]",
-      "resolved": "urn:visionflow:linked:market-making",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Order Book]]",
-      "resolved": "urn:visionflow:linked:order-book",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.investopedia.com/terms/l/liquidity.asp]]",
-      "resolved": "urn:visionflow:linked:https-www-investopedia-com-terms-l-liquidity-asp",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The degree to which an asset can be bought or sold quickly without causing a large change in its price. In decentralised markets liquidity is supplied by participants who deposit assets into pools or order books.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0044 velocity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,55 +64,48 @@ public: true
   },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0045-acceleration", "label": "rb 0045 acceleration"},
-      {"@id": "urn:ngm:class:rb-0043-torque", "label": "rb 0043 torque"},
-      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"},
-      {"@id": "urn:ngm:class:differential-kinematics", "label": "Differential Kinematics"}
+      {
+        "@id": "urn:ngm:class:rb-0045-acceleration",
+        "label": "rb 0045 acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      },
+      {
+        "@id": "urn:ngm:class:differential-kinematics",
+        "label": "Differential Kinematics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"}
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0055-velocity-control", "label": "rb 0055 velocity control"},
-      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"}
+      {
+        "@id": "urn:ngm:class:rb-0055-velocity-control",
+        "label": "rb 0055 velocity control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"}
+      {
+        "@id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0044-velocity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:44fd8975a9ad4b3b02a04a6f98e86a5b173a0cc860139df2aa60caa18f5c5d93"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Velocity in robotics is the vector quantity describing the rate of change of position (linear velocity) and orientation (angular velocity) of a robot body, joint, or end-effector. In the context of differential kinematics, the Jacobian matrix provides the instantaneous linear map between joint-space velocities and Cartesian task-space velocities. Velocity is therefore the key quantity for trajectory planning, motion control, and safety monitoring in both industrial and collaborative robots.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Signal Amplifier
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A signal amplifier is an electronic circuit that increases the power, voltage, or current of a weak signal while ideally preserving its waveform. In sensing applications it boosts low-amplitude transducer outputs above the noise floor so they can be digitised, with gain, bandwidth, noise figure, and linearity as key parameters. It is an essential front-end component of sensors and biosignal acquisition systems.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:infrared-sensor", "label": "InfraredSensor"}, {"@id": "urn:ngm:class:brain-computer-interfaces", "label": "Brain Computer Interfaces"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:infrared-sensor",
+        "label": "InfraredSensor"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      }
+    ]
   },
   "quality": 0.72
 }

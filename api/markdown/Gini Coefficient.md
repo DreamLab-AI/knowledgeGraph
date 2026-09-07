@@ -1,8 +1,3 @@
----
-public: true
----
-
-# gini coefficient
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,22 +34,36 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - The Gini coefficient is a scalar summary statistic derived from the Lorenz curve that measures the degree of inequality in a distribution, yielding 0 for perfect equality and 1 for maximum concentration in a single entity. Originally developed by statistician Corrado Gini to measure income and wealth inequality, it has been applied in blockchain analytics to quantify the concentration of token holdings, staking power, or validator stake across on-chain addresses. High Gini values in a proof-of-stake network signal plutocratic tendencies that may undermine decentralisation claims.

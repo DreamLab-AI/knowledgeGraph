@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Digital Watermarking
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:digital-watermarking", "@type":"Page", "title":"Digital Watermarking", "vc:slug":"digital-watermarking", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:digital-watermarking",
+  "@type": "Page",
+  "title": "Digital Watermarking",
+  "vc:slug": "digital-watermarking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -24,31 +28,70 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:robustness", "label": "Robustness" },
-      { "@id": "urn:ngm:class:imperceptibility", "label": "Imperceptibility" }
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:imperceptibility",
+        "label": "Imperceptibility"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:content-authentication", "label": "Content Authentication" },
-      { "@id": "urn:ngm:class:copyright-protection", "label": "Copyright Protection" }
+      {
+        "@id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:copyright-protection",
+        "label": "Copyright Protection"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:ai-origin-declaration", "label": "AI Origin Declaration" },
-      { "@id": "urn:ngm:class:deepfake-detection", "label": "Deepfake Detection" }
+      {
+        "@id": "urn:ngm:class:ai-origin-declaration",
+        "label": "AI Origin Declaration"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:metadata", "label": "Metadata" }
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:steganography", "label": "Steganography" }
+      {
+        "@id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media" },
-      { "@id": "urn:ngm:class:generative-ai", "label": "Generative AI" },
-      { "@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management" }
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:c2-pa", "label": "C2PA" },
-      { "@id": "urn:ngm:class:data-provenance", "label": "Data Provenance" }
+      {
+        "@id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
     ]
   },
   "sameAs": [],

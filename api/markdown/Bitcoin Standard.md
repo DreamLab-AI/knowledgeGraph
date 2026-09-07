@@ -1,8 +1,3 @@
----
-public: true
----
-
-# bitcoin standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,7 +188,7 @@ public: true
   - **[[Bitcoin ETF]] Products**: The maturation of regulated Bitcoin spot and futures ETFs in multiple jurisdictions from 2024 onward gave institutional investors a compliant route to gain exposure consistent with a Bitcoin Standard portfolio allocation thesis.
   - **[[Bitcoin Mining]] Economics**: The thesis informs analysis of mining industry sustainability — evaluating whether transaction fee revenue will supply sufficient security incentive after the block subsidy becomes negligible, a central long-run challenge for any Bitcoin-standard world.
   - **Savings and Self-Custody Frameworks**: The Bitcoin Standard's emphasis on [[Sound Money]] as savings technology promotes [[Self-Custody]] wallet adoption and long-duration holding strategies (colloquially, "HODLing"), influencing wallet design, custody solutions, and estate-planning instruments.
-  - **International Settlement**: Proponents argue that a Bitcoin Standard could facilitate international settlement outside legacy correspondent banking networks such as SWIFT, bypassing [[Capital Controls]] and reducing geopolitical financial leverage.
+  - **International Settlement**: Proponents argue that a Bitcoin Standard [private] facilitate international settlement outside legacy correspondent banking networks such as SWIFT, bypassing [[Capital Controls]] and reducing geopolitical financial leverage.
   - **Monetary Policy Research**: Academic and central-bank research departments study the Bitcoin Standard thesis as a stress-test scenario for fiat monetary systems, informing debate on [[Central Bank Digital Currency]] design and the future of [[Digital Asset Governance]].
 
 - ### Critiques and Counterarguments

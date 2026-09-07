@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Image Captioning
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:image-captioning", "@type": "Page", "title": "Image Captioning", "vc:slug": "image-captioning", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:image-captioning",
+  "@type": "Page",
+  "title": "Image Captioning",
+  "vc:slug": "image-captioning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

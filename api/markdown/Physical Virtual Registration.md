@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Physical-Virtual Registration
----
-
-# Physical Virtual Registration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -79,42 +72,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:physical-virtual-registration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:05f42e95501c23f7ddf8cd9a692a206c5d70ba1df9026e4ff5174d0680434803"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Accurate AR Overlay]]",
-      "resolved": "urn:visionflow:linked:accurate-ar-overlay",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of aligning and synchronizing virtual content with physical world coordinates using spatial tracking, computer vision, and sensor fusion to ensure accurate overlay of digital objects in augmented reality environments.

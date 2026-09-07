@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI Domain Security and Privacy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -112,18 +107,42 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
-      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
-      {"@id": "urn:ngm:class:threat-surface-map", "label": "Threat Surface Map"},
-      {"@id": "urn:ngm:class:security-layer", "label": "Security Layer"}
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:threat-surface-map",
+        "label": "Threat Surface Map"
+      },
+      {
+        "@id": "urn:ngm:class:security-layer",
+        "label": "Security Layer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:zero-trust-architecture-zta", "label": "Zero-Trust Architecture (ZTA)"},
-      {"@id": "urn:ngm:class:privacy-enhancing-computation-pec", "label": "Privacy-Enhancing Computation (PEC)"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture-zta",
+        "label": "Zero-Trust Architecture (ZTA)"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-computation-pec",
+        "label": "Privacy-Enhancing Computation (PEC)"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-domain-identity-and-trust", "label": "ETSI Domain Identity and Trust"},
-      {"@id": "urn:ngm:class:digital-evidence-chain-of-custody", "label": "Digital Evidence Chain of Custody"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-identity-and-trust",
+        "label": "ETSI Domain Identity and Trust"
+      },
+      {
+        "@id": "urn:ngm:class:digital-evidence-chain-of-custody",
+        "label": "Digital Evidence Chain of Custody"
+      }
     ]
   },
   "provenance": {
@@ -133,97 +152,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-security-and-privacy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f3eca0779763e75d4a01ebc72d001ad6ddb36e37b2f156c1aa6aaa003e95de77"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Privacy-Enhancing Computation]]",
-      "resolved": "urn:visionflow:linked:privacy-enhancing-computation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-Border Data Transfer Rule]]",
-      "resolved": "urn:visionflow:owl:class:cross-border-data-transfer-rule",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Evidence Chain of Custody]]",
-      "resolved": "urn:visionflow:owl:class:digital-evidence-chain-of-custody",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Psychology Profile]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-psychology-profile",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Post-Quantum Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:post-quantum-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy-Enhancing Computation (PEC)]]",
-      "resolved": "urn:visionflow:owl:class:privacy-enhancing-computation-pec",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy Impact Assessment]]",
-      "resolved": "urn:visionflow:owl:class:privacy-impact-assessment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy Impact Assessment (PIA)]]",
-      "resolved": "urn:visionflow:owl:class:privacy-impact-assessment-pia",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Security Layer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Threat Surface Map]]",
-      "resolved": "urn:visionflow:owl:class:threat-surface-map",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token Custody Service]]",
-      "resolved": "urn:visionflow:owl:class:token-custody-service",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Zero-Trust Architecture (ZTA)]]",
-      "resolved": "urn:visionflow:owl:class:zero-trust-architecture-zta",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ETSI security and privacy framework protecting metaverse ecosystems through comprehensive controls spanning cryptography, access management, data governance, and compliance measures. Security domains address threat surface mapping, [[Post-Quantum Cryptography]] for long-term resilience, [[Privacy-Enhancing Computation]] enabling computation on encrypted data, and [[Digital Evidence Chain of Custody]] ensuring forensic integrity for virtual-world incidents. Privacy controls include [[Privacy Impact Assessment]] methodologies, cross-border data transfer restrictions aligned with [[GDPR]], token custody security preventing unauthorised access to digital assets, and psychological profiling safeguards protecting user behaviour data from exploitation in immersive environments with heightened vulnerability concerns.

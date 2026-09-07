@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Standard Format Support
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:standard-format-support:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a50de7139514401b51f19fe90eb79968c2de474f62edba42191534352b2f1d91"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross Platform Asset Exchange]]",
-      "resolved": "urn:visionflow:linked:cross-platform-asset-exchange",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:data-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Implementation of standardized data formats enabling interoperability across metaverse platforms, including 3D asset formats like glTF (ISO/IEC 12113:2022), Universal Scene Description (USD), and 3D Tiles for seamless exchange of geometry, materials, animations, and scene descriptions between diverse systems.

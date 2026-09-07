@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SelfSupervisedLearning
----
-
-# Self-Supervised Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

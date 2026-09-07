@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FID Benchmark Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,40 +7,142 @@ public: true
   "title": "FID Benchmark Protocol",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:diffusion-models", "vc:label": "Diffusion Models"},
-    {"@id": "urn:visionflow:linked:generative-adversarial-networks", "vc:label": "Generative Adversarial Networks"},
-    {"@id": "urn:visionflow:linked:evaluation-metric", "vc:label": "Evaluation Metric"},
-    {"@id": "urn:visionflow:linked:inception-v3", "vc:label": "Inception v3"},
-    {"@id": "urn:visionflow:linked:frechet-distance", "vc:label": "Fréchet Distance"},
-    {"@id": "urn:visionflow:linked:image-synthesis", "vc:label": "Image Synthesis"},
-    {"@id": "urn:visionflow:linked:generative-model", "vc:label": "Generative Model"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-networks", "vc:label": "Convolutional Neural Networks"},
-    {"@id": "urn:visionflow:linked:inception-score", "vc:label": "Inception Score"},
-    {"@id": "urn:visionflow:linked:clip-encoder", "vc:label": "CLIP Encoder"},
-    {"@id": "urn:visionflow:linked:clean-fid", "vc:label": "Clean-FID"},
-    {"@id": "urn:visionflow:linked:precision-recall", "vc:label": "Precision-Recall"},
-    {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:linked:image-net", "vc:label": "ImageNet"},
-    {"@id": "urn:visionflow:linked:cifar-10", "vc:label": "CIFAR-10"},
-    {"@id": "urn:visionflow:linked:frechet-audio-distance", "vc:label": "Fréchet Audio Distance"},
-    {"@id": "urn:visionflow:linked:frechet-video-distance", "vc:label": "Fréchet Video Distance"},
-    {"@id": "urn:visionflow:linked:cmmd", "vc:label": "CMMD"},
-    {"@id": "urn:visionflow:linked:text-to-image", "vc:label": "Text-to-Image"},
-    {"@id": "urn:visionflow:linked:stable-diffusion", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:representation-learning", "vc:label": "Representation Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:probability-theory", "vc:label": "Probability Theory"},
-    {"@id": "urn:visionflow:linked:wasserstein-distance", "vc:label": "Wasserstein Distance"},
-    {"@id": "urn:visionflow:linked:feature-extraction", "vc:label": "Feature Extraction"},
-    {"@id": "urn:visionflow:linked:benchmark", "vc:label": "Benchmark"},
-    {"@id": "urn:visionflow:linked:synthetic-data-generation", "vc:label": "Synthetic Data Generation"},
-    {"@id": "urn:visionflow:linked:medical-image-synthesis", "vc:label": "Medical Image Synthesis"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:cvpr", "vc:label": "CVPR"},
-    {"@id": "urn:visionflow:linked:neur-ips", "vc:label": "NeurIPS"}
+    {
+      "@id": "urn:visionflow:linked:diffusion-models",
+      "vc:label": "Diffusion Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-networks",
+      "vc:label": "Generative Adversarial Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-metric",
+      "vc:label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:inception-v3",
+      "vc:label": "Inception v3"
+    },
+    {
+      "@id": "urn:visionflow:linked:frechet-distance",
+      "vc:label": "Fréchet Distance"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-synthesis",
+      "vc:label": "Image Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-networks",
+      "vc:label": "Convolutional Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:inception-score",
+      "vc:label": "Inception Score"
+    },
+    {
+      "@id": "urn:visionflow:linked:clip-encoder",
+      "vc:label": "CLIP Encoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:clean-fid",
+      "vc:label": "Clean-FID"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-recall",
+      "vc:label": "Precision-Recall"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-net",
+      "vc:label": "ImageNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:cifar-10",
+      "vc:label": "CIFAR-10"
+    },
+    {
+      "@id": "urn:visionflow:linked:frechet-audio-distance",
+      "vc:label": "Fréchet Audio Distance"
+    },
+    {
+      "@id": "urn:visionflow:linked:frechet-video-distance",
+      "vc:label": "Fréchet Video Distance"
+    },
+    {
+      "@id": "urn:visionflow:linked:cmmd",
+      "vc:label": "CMMD"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:probability-theory",
+      "vc:label": "Probability Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasserstein-distance",
+      "vc:label": "Wasserstein Distance"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark",
+      "vc:label": "Benchmark"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-data-generation",
+      "vc:label": "Synthetic Data Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-image-synthesis",
+      "vc:label": "Medical Image Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:cvpr",
+      "vc:label": "CVPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:neur-ips",
+      "vc:label": "NeurIPS"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -61,110 +158,179 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-    {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"}
+    {
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:ngm:class:benchmarks",
+      "label": "Benchmarks"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:inception-v3", "label": "Inception v3"},
-      {"@id": "urn:ngm:class:frechet-distance", "label": "Fréchet Distance"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:clean-fid", "label": "Clean-FID"},
-      {"@id": "urn:ngm:class:precision-recall", "label": "Precision-Recall"}
+      {
+        "@id": "urn:ngm:class:inception-v3",
+        "label": "Inception v3"
+      },
+      {
+        "@id": "urn:ngm:class:frechet-distance",
+        "label": "Fréchet Distance"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:clean-fid",
+        "label": "Clean-FID"
+      },
+      {
+        "@id": "urn:ngm:class:precision-recall",
+        "label": "Precision-Recall"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:inception-v3", "label": "Inception v3"},
-      {"@id": "urn:ngm:class:image-net", "label": "ImageNet"},
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Networks"}
+      {
+        "@id": "urn:ngm:class:inception-v3",
+        "label": "Inception v3"
+      },
+      {
+        "@id": "urn:ngm:class:image-net",
+        "label": "ImageNet"
+      },
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Networks"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:image-synthesis", "label": "Image Synthesis"},
-      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"},
-      {"@id": "urn:ngm:class:medical-image-synthesis", "label": "Medical Image Synthesis"}
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "@id": "urn:ngm:class:medical-image-synthesis",
+        "label": "Medical Image Synthesis"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:frechet-distance", "label": "Fréchet Distance"},
-      {"@id": "urn:ngm:class:wasserstein-distance", "label": "Wasserstein Distance"}
+      {
+        "@id": "urn:ngm:class:frechet-distance",
+        "label": "Fréchet Distance"
+      },
+      {
+        "@id": "urn:ngm:class:wasserstein-distance",
+        "label": "Wasserstein Distance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:inception-v3", "label": "Inception v3"},
-      {"@id": "urn:ngm:class:clip-encoder", "label": "CLIP Encoder"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:inception-v3",
+        "label": "Inception v3"
+      },
+      {
+        "@id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
-      {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"}
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:inception-score", "label": "Inception Score"},
-      {"@id": "urn:ngm:class:cmmd", "label": "CMMD"}
+      {
+        "@id": "urn:ngm:class:inception-score",
+        "label": "Inception Score"
+      },
+      {
+        "@id": "urn:ngm:class:cmmd",
+        "label": "CMMD"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
-      {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:frechet-audio-distance", "label": "Fréchet Audio Distance"},
-      {"@id": "urn:ngm:class:frechet-video-distance", "label": "Fréchet Video Distance"}
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:frechet-audio-distance",
+        "label": "Fréchet Audio Distance"
+      },
+      {
+        "@id": "urn:ngm:class:frechet-video-distance",
+        "label": "Fréchet Video Distance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:cvpr", "label": "CVPR"},
-      {"@id": "urn:ngm:class:neur-ips", "label": "NeurIPS"}
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:frechet-inception-distance", "label": "Fréchet Inception Distance"},
-    {"@id": "urn:ngm:class:fid-score", "label": "FID Score"}
+    {
+      "@id": "urn:ngm:class:frechet-inception-distance",
+      "label": "Fréchet Inception Distance"
+    },
+    {
+      "@id": "urn:ngm:class:fid-score",
+      "label": "FID Score"
+    }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "FullEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fid-benchmark-protocol:b7e4f921c5d3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fid-benchmark-protocol"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Diffusion Models]]", "resolved": "urn:ngm:class:diffusion-models", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Adversarial Networks]]", "resolved": "urn:ngm:class:generative-adversarial-networks", "kind": "ResolvedLink"},
-    {"raw": "[[Evaluation Metric]]", "resolved": "urn:ngm:class:evaluation-metric", "kind": "ResolvedLink"},
-    {"raw": "[[Inception v3]]", "resolved": "urn:visionflow:linked:inception-v3", "kind": "StubLink"},
-    {"raw": "[[Fréchet Distance]]", "resolved": "urn:visionflow:linked:frechet-distance", "kind": "StubLink"},
-    {"raw": "[[Image Synthesis]]", "resolved": "urn:ngm:class:image-synthesis", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Model]]", "resolved": "urn:ngm:class:generative-model", "kind": "ResolvedLink"},
-    {"raw": "[[Inception Score]]", "resolved": "urn:visionflow:linked:inception-score", "kind": "StubLink"},
-    {"raw": "[[CLIP Encoder]]", "resolved": "urn:ngm:class:clip-encoder", "kind": "ResolvedLink"},
-    {"raw": "[[Clean-FID]]", "resolved": "urn:visionflow:linked:clean-fid", "kind": "StubLink"},
-    {"raw": "[[Precision-Recall]]", "resolved": "urn:visionflow:linked:precision-recall", "kind": "StubLink"},
-    {"raw": "[[ImageNet]]", "resolved": "urn:visionflow:linked:image-net", "kind": "StubLink"},
-    {"raw": "[[CIFAR-10]]", "resolved": "urn:visionflow:linked:cifar-10", "kind": "StubLink"},
-    {"raw": "[[Fréchet Audio Distance]]", "resolved": "urn:visionflow:linked:frechet-audio-distance", "kind": "StubLink"},
-    {"raw": "[[Fréchet Video Distance]]", "resolved": "urn:visionflow:linked:frechet-video-distance", "kind": "StubLink"},
-    {"raw": "[[CMMD]]", "resolved": "urn:visionflow:linked:cmmd", "kind": "StubLink"},
-    {"raw": "[[Text-to-Image]]", "resolved": "urn:ngm:class:text-to-image", "kind": "ResolvedLink"},
-    {"raw": "[[Wasserstein Distance]]", "resolved": "urn:visionflow:linked:wasserstein-distance", "kind": "StubLink"},
-    {"raw": "[[Stable Diffusion]]", "resolved": "urn:visionflow:linked:stable-diffusion", "kind": "StubLink"},
-    {"raw": "[[Medical Image Synthesis]]", "resolved": "urn:ngm:class:medical-image-synthesis", "kind": "ResolvedLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-technique", "kind": "ResolvedLink"},
-    {"raw": "[[AlgorithmLayer]]", "resolved": "urn:visionflow:linked:algorithm-layer", "kind": "StubLink"},
-    {"raw": "[[CVPR]]", "resolved": "urn:visionflow:linked:cvpr", "kind": "StubLink"},
-    {"raw": "[[NeurIPS]]", "resolved": "urn:visionflow:linked:neur-ips", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -316,9 +482,9 @@ public: true
     - **CMMD Formula.** CMMD (Jayasumana et al., CVPR 2024) defines: CMMD(p_data, p_gen) = MMD²(φ_CLIP(x), φ_CLIP(x̂)) = E_{x,x'}[k(φ(x), φ(x'))] − 2 E_{x, x̂}[k(φ(x), φ(x̂))] + E_{x̂, x̂'}[k(φ(x̂), φ(x̂'))], using a Gaussian kernel k(u, v) = exp(−||u − v||² / (2σ²)) on CLIP visual embeddings. The estimator is computed in O(N²) time but is unbiased at any N ≥ 100 and requires far fewer samples than FID for statistically reliable comparison.
     - **Fréchet Distance in High Dimensions.** The Fréchet distance between two Gaussians is equivalent to the optimal transport (OT) distance W_2 under the Gaussian marginal constraint. Its sensitivity to covariance structure means it penalises diversity loss (Σ_g small) more strongly than mean shift (||μ_r − μ_g|| large), making it a better probe of mode coverage than the [[Inception Score]], which measures only marginal sharpness.
   - ## Academic Context
-    - FID was introduced by Heusel, Ramsauer, Unterthiner, Nessler, and Hochreiter at Johannes Kepler University Linz in the paper "GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium" (arXiv:1706.08500, NeurIPS 2017). The paper's primary contribution was the TTUR training algorithm for GANs, and FID was proposed as a supplementary evaluation metric to replace the [[Inception Score]] (IS, Salimans et al., 2016). The original IS had a significant flaw: it measured the sharpness and diversity of generated images without comparing to real images at all, meaning it could be trivially improved by memorising training data or by generating a few very distinct sharp images. Heusel et al. argued that comparing the distributional statistics of generated and real images in a semantically meaningful feature space was more faithful to the perceptual quality that human evaluators assess. The [[Fréchet Distance]] between Gaussian distributions — previously used in statistics and econometrics to compare time-series distributions — was imported to the image synthesis context as a computationally tractable measure of W_2 distance in high-dimensional feature space.
+    - FID was introduced by Heusel, Ramsauer, Unterthiner, Nessler, and Hochreiter at Johannes Kepler University Linz in the paper "GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium" (arXiv:1706.08500, NeurIPS 2017). The paper's primary contribution was the TTUR training algorithm for GANs, and FID was proposed as a supplementary evaluation metric to replace the [[Inception Score]] (IS, Salimans et al., 2016). The original IS had a significant flaw: it measured the sharpness and diversity of generated images without comparing to real images at all, meaning it [private] be trivially improved by memorising training data or by generating a few very distinct sharp images. Heusel et al. argued that comparing the distributional statistics of generated and real images in a semantically meaningful feature space was more faithful to the perceptual quality that human evaluators assess. The [[Fréchet Distance]] between Gaussian distributions — previously used in statistics and econometrics to compare time-series distributions — was imported to the image synthesis context as a computationally tractable measure of W_2 distance in high-dimensional feature space.
     - The key theoretical limitation — the Gaussian assumption — was noted almost immediately. Binkowski et al. (2018, ICLR) proposed the Kernel Inception Distance (KID) as an unbiased alternative using the Maximum Mean Discrepancy with a polynomial kernel on [[Inception v3]] features. KID has no Gaussian assumption and is statistically unbiased at any sample count, enabling confidence intervals and hypothesis tests. The trade-off is that KID is O(N²) to compute naively and has no analytical solution like FID's matrix square root; in practice, mini-batch MMD estimators make it tractable. Chong and Forsyth (2020, CVPR) derived an analytical de-biasing correction for FID that allows reliable comparison with as few as 5,000 samples, partially addressing the sample-count sensitivity issue without changing the feature extractor or the Gaussian assumption.
-    - The [[Clean-FID]] paper (Parmar, Zhang, and Zhu, CVPR 2022, arXiv:2104.11222) made the single most impactful practical contribution to FID methodology by demonstrating that standard implementations using PyTorch's default resize function (nearest-neighbour interpolation) introduced systematic biases of 2–10 FID points compared to the PIL bicubic protocol used in the original Heusel et al. implementation. This meant that papers could rank two models in opposite order depending purely on which FID implementation they used, not which model was genuinely better. The [[Clean-FID]] library standardised preprocessing and released pre-computed reference statistics for major benchmarks, enabling reproducible cross-paper comparison. Kynkäänniemi et al. (NeurIPS 2019) introduced the [[Precision-Recall]] decomposition to complement FID's aggregate quality-diversity tradeoff: precision measures the fraction of generated images that fall within the real data manifold (fidelity), and recall measures the fraction of the real manifold covered by generated samples (diversity). This decomposition revealed that many GAN improvements in FID were primarily precision improvements (sharper outputs) with recall (diversity) stagnating or declining — an important insight for understanding the mode coverage behaviour of different generative architectures.
+    - The [[Clean-FID]] paper (Parmar, Zhang, and Zhu, CVPR 2022, arXiv:2104.11222) made the single most impactful practical contribution to FID methodology by demonstrating that standard implementations using PyTorch's default resize function (nearest-neighbour interpolation) introduced systematic biases of 2–10 FID points compared to the PIL bicubic protocol used in the original Heusel et al. implementation. This meant that papers [private] rank two models in opposite order depending purely on which FID implementation they used, not which model was genuinely better. The [[Clean-FID]] library standardised preprocessing and released pre-computed reference statistics for major benchmarks, enabling reproducible cross-paper comparison. Kynkäänniemi et al. (NeurIPS 2019) introduced the [[Precision-Recall]] decomposition to complement FID's aggregate quality-diversity tradeoff: precision measures the fraction of generated images that fall within the real data manifold (fidelity), and recall measures the fraction of the real manifold covered by generated samples (diversity). This decomposition revealed that many GAN improvements in FID were primarily precision improvements (sharper outputs) with recall (diversity) stagnating or declining — an important insight for understanding the mode coverage behaviour of different generative architectures.
     - The CMMD paper (Jayasumana et al., CVPR 2024) provided the most comprehensive published critique of FID's limitations and proposed [[CMMD]] as a CLIP-based replacement. The paper showed that FID produces incorrect orderings of model quality in 30–40% of head-to-head comparisons on modern text-to-image benchmarks when compared to human preference judgements, with the misalignment attributable primarily to Inception-v3's [[ImageNet]] bias and the Gaussian assumption's inadequacy for high-dimensional, semantically complex image distributions.
     - The metric's historical trajectory mirrors [[Diffusion Models]]' rise to dominance in generative image modelling: FID on [[CIFAR-10]] improved from approximately 28 for DCGAN in 2016 to 2.92 for DDPM in 2020, to 1.97 for Improved DDPM in 2021, to below 1.5 for score SDE and flow-matching models in 2023–24. Each of these milestones was first established and verified through the FID Benchmark Protocol, cementing its role as the community's primary measuring instrument for generative model progress over a decade of research.
   - ## Benchmarks and Score Milestones

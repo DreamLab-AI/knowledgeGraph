@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,22 +55,46 @@ public: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
-      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"}
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+      {
+        "@id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      }
     ]
   },
   "provenance": {
@@ -85,37 +104,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:55190617cf03a97c835458d1cb0bde448a5c9d6d0f1315edb639b313aea32b51"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Asset]]",
-      "resolved": "urn:visionflow:linked:3-d-asset",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital 3D representation of objects, characters, environments, or systems created using computer graphics software for use in metaverse platforms, simulations, games, and virtual production, including static assets, animated models, and procedurally generated content.

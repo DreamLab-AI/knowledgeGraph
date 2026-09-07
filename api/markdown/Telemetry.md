@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Telemetry
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

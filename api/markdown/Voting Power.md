@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Voting Power
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Voting Power",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:governance", "vc:label": "Governance"},
-    {"@id": "urn:visionflow:linked:governance-token", "vc:label": "Governance Token"},
-    {"@id": "urn:visionflow:linked:on-chain-governance", "vc:label": "On-chain Governance"},
-    {"@id": "urn:visionflow:linked:snapshot-governance", "vc:label": "Snapshot Governance"},
-    {"@id": "urn:visionflow:linked:quorum", "vc:label": "Quorum"}
+    {
+      "@id": "urn:visionflow:linked:governance",
+      "vc:label": "Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-token",
+      "vc:label": "Governance Token"
+    },
+    {
+      "@id": "urn:visionflow:linked:on-chain-governance",
+      "vc:label": "On-chain Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:snapshot-governance",
+      "vc:label": "Snapshot Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:quorum",
+      "vc:label": "Quorum"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -39,16 +54,34 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:token", "label": "Token"}
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:snapshot-governance", "label": "Snapshot Governance"},
-      {"@id": "urn:ngm:class:quorum", "label": "Quorum"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-governance",
+        "label": "Snapshot Governance"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
     ]
   },
   "quality": 0.8,

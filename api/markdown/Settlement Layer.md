@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Settlement Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:settlement-layer:e247e6705952",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f88396b8b5beb7a37a557ffc47e6a4e4dd873ec1bf8ad00ef3a2d30d633a5616"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Consensus Layer]]",
-      "resolved": "urn:visionflow:linked:consensus-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract Layer]]",
-      "resolved": "urn:visionflow:linked:smart-contract-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network Layer]]",
-      "resolved": "urn:visionflow:linked:lightning-network-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Atomic Settlement]]",
-      "resolved": "urn:visionflow:linked:atomic-settlement",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Double-Spending]]",
-      "resolved": "urn:visionflow:linked:double-spending",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Settlement Layer is the stratum that achieves final, irreversible transfer of value or state between parties. In layered ledger systems it sits beneath faster execution and netting strata and above the Consensus Layer that secures finality. It contains the records, accounts, and finality conditions under which obligations are discharged.

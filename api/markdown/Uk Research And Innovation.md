@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Uk Research And Innovation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

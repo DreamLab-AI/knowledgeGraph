@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Surveillance Capitalism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,7 +180,6 @@ public: true
 
   - The logic spread from search to social media (Facebook's social graph and emotional reaction data), mobile platforms (app telemetry and location data), and the physical world (smart speakers, fitness trackers, retail loyalty programmes, smart-city sensors). Each domain contributes a different dimension of behavioural data — social graphs, biometrics, mobility patterns, consumption habits — that, when combined, allow the construction of remarkably detailed and actionable individual profiles. Data brokers aggregate and re-sell these profiles, creating secondary markets largely invisible to the subjects.
 
-  - The political economy of surveillance capitalism produces structural harms beyond individual privacy violations. Platform epistemic power — the ability to shape what information users encounter through ranking and recommendation algorithms — has been implicated in political polarisation, radicalisation, and manipulation of democratic processes. The Cambridge Analytica scandal demonstrated that behavioural data profiles could be weaponised for targeted political messaging at scale, blurring the line between advertising and manipulation.
+  - The political economy of surveillance capitalism produces structural harms beyond individual privacy violations. Platform epistemic power — the ability to shape what information users encounter through ranking and recommendation algorithms — has been implicated in political polarisation, radicalisation, and manipulation of democratic processes. The Cambridge Analytica scandal demonstrated that behavioural data profiles [private] be weaponised for targeted political messaging at scale, blurring the line between advertising and manipulation.
 
   - Regulatory responses have evolved from the EU's GDPR (2018), which constrains processing bases and consent requirements, to the Digital Markets Act (2022), which targets platform gatekeeping behaviours, and proposed algorithmic transparency and adtech reform legislation in multiple jurisdictions. Technical countermeasures include browser privacy sandbox proposals to replace third-party cookies, privacy-preserving attribution measurement, and differential-privacy mechanisms that allow aggregate analytics without individual tracking. Scholars debate whether these reforms are sufficient or whether structural remedies — data ownership rights, platform interoperability mandates — are needed to displace the surveillance capitalist business model.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Verifiable Computation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,47 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:verifiable-computation:a10bf0a9ab72",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fbc14cf315fc4929bacab41d8b0fc9852f795ee39e642f114588520c50c97f22"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptographic Proof]]",
-      "resolved": "urn:visionflow:linked:cryptographic-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scalability]]",
-      "resolved": "urn:visionflow:linked:scalability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trusted Execution Environments]]",
-      "resolved": "urn:visionflow:linked:trusted-execution-environments",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Techniques that let a party outsource a computation and receive a proof that the result is correct, allowing efficient verification without redoing the work.

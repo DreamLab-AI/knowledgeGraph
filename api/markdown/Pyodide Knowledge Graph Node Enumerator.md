@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Python to list nodes]]
-# Pyodide Knowledge Graph Node Enumerator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,18 +42,36 @@ elevatedFrom:: [[Python to list nodes]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ]
   },
   "provenance": {
@@ -69,26 +81,6 @@ elevatedFrom:: [[Python to list nodes]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:python-to-list-nodes:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:557fa44843510c8a1347f39cc0d676791016c0af649ae68ebfc8990bbedd9c81"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Python to list nodes is a Logseq Pyodide script that iterates over all knowledge-graph pages, filters those with the `public:: true` metadata property, and returns a comma-separated inventory of public page names. It demonstrates direct Python integration with the Logseq Plugin API for programmatic graph introspection.

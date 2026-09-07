@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adaptive Virtual World
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,72 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adaptive-virtual-world:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:69e256596a9f75d58a08e4a7371adadd1eecc5b3924ed92599a7452ac004e548"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Emergent Gameplay]]",
-      "resolved": "urn:visionflow:linked:emergent-gameplay",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Networks]]",
-      "resolved": "urn:visionflow:linked:neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Persistent World Evolution]]",
-      "resolved": "urn:visionflow:linked:persistent-world-evolution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Personalized Environments]]",
-      "resolved": "urn:visionflow:linked:personalized-environments",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:owl:class:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Procedural Generation]]",
-      "resolved": "urn:visionflow:owl:class:procedural-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual World]]",
-      "resolved": "urn:visionflow:owl:class:virtual-world",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Adaptive Virtual World describes a metaverse environment that uses procedural generation, AI-driven content creation, and real-time user behavior analysis to dynamically evolve landscapes, structures, weather patterns, NPCs, and game mechanics in response to collective and individual user actions.

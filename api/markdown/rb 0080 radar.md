@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0080 radar
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,21 +51,48 @@ public: true
   "quality": 0.7,
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"},
-      {"@id": "urn:ngm:class:rb-0075-range-finder", "label": "rb 0075 range finder"},
-      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0075-range-finder",
+        "label": "rb 0075 range finder"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0052-collision-avoidance", "label": "rb 0052 collision avoidance"},
-      {"@id": "urn:ngm:class:proximity-detection", "label": "Proximity Detection"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {
+        "@id": "urn:ngm:class:rb-0052-collision-avoidance",
+        "label": "rb 0052 collision avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:proximity-detection",
+        "label": "Proximity Detection"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0077-depth-camera", "label": "rb 0077 depth camera"}
+      {
+        "@id": "urn:ngm:class:rb-0077-depth-camera",
+        "label": "rb 0077 depth camera"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0080-radar:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c3fd95f1d5013233a6f25384f173dae838286340ce55744846d2efd3d0a77a5d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Radar (Radio Detection and Ranging) is an active sensing technology that emits radio-frequency electromagnetic pulses and detects reflected returns to measure range, velocity, and bearing of objects. In robotics, radar sensors operate reliably in fog, rain, dust, and darkness where cameras and LiDAR performance degrades significantly. Modern FMCW (frequency-modulated continuous-wave) radar modules used in robotics can simultaneously measure range and Doppler velocity at high update rates, enabling both static obstacle detection and dynamic object tracking.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Emission Schedule
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,23 +83,56 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:halving", "label": "Halving"}
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:halving",
+        "label": "Halving"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:total-supply", "label": "Total Supply"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:total-supply",
+        "label": "Total Supply"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"}
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:inflation", "label": "Inflation"},
-      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"},
-      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:circulating-supply", "label": "Circulating Supply"}
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "@id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      }
     ]
   },
   "provenance": {
@@ -114,62 +142,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:emission-schedule:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:deb458a72e4691694c91652190f5669453dcd13da2a113c7a3755b7c8be3a0b4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

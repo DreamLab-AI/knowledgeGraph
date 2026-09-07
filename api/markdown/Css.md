@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Css
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:css", "@type": "Page", "title": "Css", "vc:slug": "css", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:css",
+  "@type": "Page",
+  "title": "Css",
+  "vc:slug": "css",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

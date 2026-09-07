@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Interface Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,42 +103,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:user-interface-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2706e26700542d1ddb62ed3028469b83958c4cac4d4de02659d1c63a0aa92d8e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Standards]]",
-      "resolved": "urn:visionflow:owl:class:standards",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Specifications and guidelines that define consistent patterns, components, and interactions for user interfaces in metaverse and XR environments, ensuring usability, accessibility, and cross-platform consistency.

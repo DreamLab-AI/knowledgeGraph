@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ERC-20 Token
----
-
-# ERC20 Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,29 +58,74 @@ aliases:
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
-      {"@id": "urn:ngm:class:wallet", "label": "Wallet"}
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gas", "label": "Gas"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:stablecoin-token", "label": "Stablecoin Token"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:utility-token", "label": "Utility Token"},
-      {"@id": "urn:ngm:class:security-token", "label": "Security Token"},
-      {"@id": "urn:ngm:class:payment-token", "label": "Payment Token"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"}
+      {
+        "@id": "urn:ngm:class:stablecoin-token",
+        "label": "Stablecoin Token"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "@id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "@id": "urn:ngm:class:payment-token",
+        "label": "Payment Token"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -98,37 +136,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:erc20-token:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:51c6b58fe01e3812001281ef5b2824e77115772e69d04bb19d1e25c5620c5bd0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fungible Token]]",
-      "resolved": "urn:visionflow:owl:class:fungible-token",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A fungible token implementing the ERC-20 standard on Ethereum blockchain. The most widely used Ethereum token standard providing uniform API for token operations within smart contracts.

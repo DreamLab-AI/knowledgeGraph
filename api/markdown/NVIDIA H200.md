@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NVIDIA H200
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hop Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hop-protocol:2297381d743a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:af24dbeb3d07382756c78baba9fd2a63c74feb3377af84a091ec563752d4ae55"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Token]]",
-      "resolved": "urn:visionflow:linked:token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:linked:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web3 Infrastructure]]",
-      "resolved": "urn:visionflow:linked:web-3-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://hop.exchange/]]",
-      "resolved": "urn:visionflow:linked:https-hop-exchange",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.hop.exchange/]]",
-      "resolved": "urn:visionflow:linked:https-docs-hop-exchange",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hop Protocol is a cross-chain bridge that enables the transfer of tokens between Ethereum and its layer-two rollup networks.

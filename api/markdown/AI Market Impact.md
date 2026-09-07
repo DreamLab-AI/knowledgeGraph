@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Market Impact
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-market-impact",
   "title": "AI Market Impact",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Equity Market Volatility", "Software Industry Disruption"],
+  "vc:outboundWikilinks": [
+    "Equity Market Volatility",
+    "Software Industry Disruption"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,19 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

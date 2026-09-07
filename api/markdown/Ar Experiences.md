@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ar Experiences
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,72 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ar-experiences:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d8d3bdc61f3d8c7e3a9ae010e7072b79e254d9c4621ee4e7a0bd12752750f58b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AR Display Devices]]",
-      "resolved": "urn:visionflow:linked:ar-display-devices",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Contextual Information]]",
-      "resolved": "urn:visionflow:linked:contextual-information",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Enhanced Visualization]]",
-      "resolved": "urn:visionflow:linked:enhanced-visualization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Immersive Technology Applications]]",
-      "resolved": "urn:visionflow:linked:immersive-technology-applications",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interactive Learning]]",
-      "resolved": "urn:visionflow:owl:class:interactive-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Mapping]]",
-      "resolved": "urn:visionflow:owl:class:spatial-mapping",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in real environments.

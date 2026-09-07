@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Art Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -223,40 +218,109 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-    {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"}
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "@id": "urn:ngm:class:creative-ai",
+      "label": "Creative AI"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:gan", "label": "GAN"},
-      {"@id": "urn:ngm:class:image-synthesis", "label": "Image Synthesis"},
-      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"},
-      {"@id": "urn:ngm:class:image-editing", "label": "Image Editing"},
-      {"@id": "urn:ngm:class:vae", "label": "VAE"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:gan",
+        "label": "GAN"
+      },
+      {
+        "@id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:image-editing",
+        "label": "Image Editing"
+      },
+      {
+        "@id": "urn:ngm:class:vae",
+        "label": "VAE"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Latent Space"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Latent Space"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:u-net", "label": "U-Net"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:creative-expression", "label": "Creative Expression"}
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:creative-expression",
+        "label": "Creative Expression"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "KOHYA Dreambooth and similar"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {
+        "@id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "KOHYA Dreambooth and similar"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
     ]
   },
   "quality": 0.89,

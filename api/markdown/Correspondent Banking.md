@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Correspondent Banking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -140,36 +135,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:correspondent-banking:849f6e58f465",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:64687a445a7dbf34424eb38bf98240aa5541208248dccc8251c963e7ec5d7697"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross-Border Payments]]",
-      "resolved": "urn:visionflow:linked:cross-border-payments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SWIFT]]",
-      "resolved": "urn:visionflow:linked:swift",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

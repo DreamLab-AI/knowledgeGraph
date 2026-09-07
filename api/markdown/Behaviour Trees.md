@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Behaviour Trees
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:behaviour-trees:c11a624581e2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:36a43dc2f06561bd000885132ae82c677ee74084b66d5f04a0f33149f68e02f8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Task and Motion Planning]]",
-      "resolved": "urn:visionflow:linked:task-and-motion-planning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Behaviour Tree]]",
-      "resolved": "urn:visionflow:linked:behaviour-tree",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Control]]",
-      "resolved": "urn:visionflow:linked:robot-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Behavior_tree_(artificial_intelligence,_robotics_and_control)]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-behavior-tree-artificial-intelligence-robotics-and-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.behaviortree.dev]]",
-      "resolved": "urn:visionflow:linked:https-www-behaviortree-dev",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Behaviour trees are a model for organising the decision logic of autonomous agents and robots into a tree of tasks and control nodes. They are used in robotics and game artificial intelligence.

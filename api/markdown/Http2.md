@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Http2
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - VirtualCurrency
----
-
-# Virtual Currency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,37 +172,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-currency:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b16c2d65b485c5fcd5e0e697d9c5056202084664f65da71ed29c78e9d6e2bffa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital representation of value that is typically unregulated, issued and controlled by its developers, used and accepted electronically among members of a specific virtual community, including in-game currencies, platform tokens, and convertible digital currencies.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersive Experiences
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,42 +176,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:immersive-experiences:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5a1f10fca3617303eb98dfc43923dee12a66e46832ab551eaef417a776e43c83"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Experience]]",
-      "resolved": "urn:visionflow:owl:class:digital-experience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Presence]]",
-      "resolved": "urn:visionflow:owl:class:virtual-presence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital interactions utilising VR, AR, and mixed reality technologies to create engaging, interactive environments that generate a sense of presence and participation, spanning gaming, education, enterprise collaboration, and consumer applications within metaverse platforms.

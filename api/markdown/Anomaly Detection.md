@@ -1,8 +1,3 @@
----
-public: true
----
-
-# anomaly detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,50 +7,175 @@ public: true
   "title": "anomaly detection",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:owl:class:machine-learning-discipline", "vc:label": "Machine Learning" },
-    { "@id": "urn:visionflow:owl:class:statistical-modelling", "vc:label": "Statistical Modelling" },
-    { "@id": "urn:visionflow:owl:class:pattern-recognition", "vc:label": "Pattern Recognition" },
-    { "@id": "urn:visionflow:owl:class:deep-learning", "vc:label": "Deep Learning" },
-    { "@id": "urn:visionflow:owl:class:autoencoder", "vc:label": "Autoencoder" },
-    { "@id": "urn:visionflow:owl:class:supervised-learning", "vc:label": "Supervised Learning" },
-    { "@id": "urn:visionflow:owl:class:classification", "vc:label": "Classification" },
-    { "@id": "urn:visionflow:owl:class:feature-engineering", "vc:label": "Feature Engineering" },
-    { "@id": "urn:visionflow:owl:class:data-preprocessing", "vc:label": "Data Preprocessing" },
-    { "@id": "urn:visionflow:owl:class:fraud-detection", "vc:label": "Fraud Detection" },
-    { "@id": "urn:visionflow:owl:class:cybersecurity", "vc:label": "Cybersecurity" },
-    { "@id": "urn:visionflow:owl:class:predictive-maintenance", "vc:label": "Predictive Maintenance" },
-    { "@id": "urn:visionflow:owl:class:intrusion-detection-system", "vc:label": "Intrusion Detection System" },
-    { "@id": "urn:visionflow:owl:class:time-series-forecasting", "vc:label": "Time Series Forecasting" },
-    { "@id": "urn:visionflow:owl:class:concept-drift", "vc:label": "Concept Drift" },
-    { "@id": "urn:visionflow:owl:class:model-monitoring", "vc:label": "Model Monitoring" },
-    { "@id": "urn:visionflow:owl:class:graph-neural-networks", "vc:label": "Graph Neural Network" },
-    { "@id": "urn:visionflow:owl:class:lstm", "vc:label": "LSTM" },
-    { "@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture" },
-    { "@id": "urn:visionflow:owl:class:variational-autoencoder", "vc:label": "Variational Autoencoder" },
-    { "@id": "urn:visionflow:owl:class:data-mining", "vc:label": "Data Mining" },
-    { "@id": "urn:visionflow:owl:class:network-security", "vc:label": "Network Security" },
-    { "@id": "urn:visionflow:linked:isolation-forest", "vc:label": "Isolation Forest" },
-    { "@id": "urn:visionflow:linked:local-outlier-factor", "vc:label": "Local Outlier Factor" },
-    { "@id": "urn:visionflow:linked:gaussian-mixture-model", "vc:label": "Gaussian Mixture Model" },
-    { "@id": "urn:visionflow:linked:dbscan", "vc:label": "DBSCAN" },
-    { "@id": "urn:visionflow:linked:normalising-flows", "vc:label": "Normalising Flows" },
-    { "@id": "urn:visionflow:linked:one-class-svm", "vc:label": "One-Class SVM" },
-    { "@id": "urn:visionflow:linked:change-point-detection", "vc:label": "Change Point Detection" },
-    { "@id": "urn:visionflow:linked:outlier-detection", "vc:label": "Outlier Detection" },
-    { "@id": "urn:visionflow:linked:precision-recall-curve", "vc:label": "Precision-Recall Curve" },
-    { "@id": "urn:visionflow:linked:shap-values", "vc:label": "SHAP Values" },
-    { "@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning" },
-    { "@id": "urn:visionflow:linked:iot-sensor-data", "vc:label": "IoT Sensor Data" },
-    { "@id": "urn:visionflow:linked:threshold-calibration", "vc:label": "Threshold Calibration" },
-    { "@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model" },
-    { "@id": "urn:visionflow:linked:time-series", "vc:label": "Time Series" },
-    { "@id": "urn:visionflow:linked:point-anomaly-detection", "vc:label": "Point Anomaly Detection" },
-    { "@id": "urn:visionflow:linked:contextual-anomaly-detection", "vc:label": "Contextual Anomaly Detection" },
-    { "@id": "urn:visionflow:linked:collective-anomaly-detection", "vc:label": "Collective Anomaly Detection" }
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-discipline",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:statistical-modelling",
+      "vc:label": "Statistical Modelling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pattern-recognition",
+      "vc:label": "Pattern Recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autoencoder",
+      "vc:label": "Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:classification",
+      "vc:label": "Classification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-preprocessing",
+      "vc:label": "Data Preprocessing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fraud-detection",
+      "vc:label": "Fraud Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cybersecurity",
+      "vc:label": "Cybersecurity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:predictive-maintenance",
+      "vc:label": "Predictive Maintenance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intrusion-detection-system",
+      "vc:label": "Intrusion Detection System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:time-series-forecasting",
+      "vc:label": "Time Series Forecasting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:concept-drift",
+      "vc:label": "Concept Drift"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-monitoring",
+      "vc:label": "Model Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graph-neural-networks",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lstm",
+      "vc:label": "LSTM"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-mining",
+      "vc:label": "Data Mining"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:network-security",
+      "vc:label": "Network Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:isolation-forest",
+      "vc:label": "Isolation Forest"
+    },
+    {
+      "@id": "urn:visionflow:linked:local-outlier-factor",
+      "vc:label": "Local Outlier Factor"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-mixture-model",
+      "vc:label": "Gaussian Mixture Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:dbscan",
+      "vc:label": "DBSCAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:normalising-flows",
+      "vc:label": "Normalising Flows"
+    },
+    {
+      "@id": "urn:visionflow:linked:one-class-svm",
+      "vc:label": "One-Class SVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:change-point-detection",
+      "vc:label": "Change Point Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:outlier-detection",
+      "vc:label": "Outlier Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-recall-curve",
+      "vc:label": "Precision-Recall Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:shap-values",
+      "vc:label": "SHAP Values"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:iot-sensor-data",
+      "vc:label": "IoT Sensor Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:threshold-calibration",
+      "vc:label": "Threshold Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-series",
+      "vc:label": "Time Series"
+    },
+    {
+      "@id": "urn:visionflow:linked:point-anomaly-detection",
+      "vc:label": "Point Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:contextual-anomaly-detection",
+      "vc:label": "Contextual Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:collective-anomaly-detection",
+      "vc:label": "Collective Anomaly Detection"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:jjohare" },
-  "prov:generatedAtTime": { "@value": "2026-05-19T21:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-19T21:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -69,58 +189,154 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline" },
-    { "@id": "urn:ngm:class:ai-technique", "label": "AI Technique" }
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:point-anomaly-detection", "label": "Point Anomaly Detection" },
-      { "@id": "urn:ngm:class:contextual-anomaly-detection", "label": "Contextual Anomaly Detection" },
-      { "@id": "urn:ngm:class:collective-anomaly-detection", "label": "Collective Anomaly Detection" }
+      {
+        "@id": "urn:ngm:class:point-anomaly-detection",
+        "label": "Point Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:contextual-anomaly-detection",
+        "label": "Contextual Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:collective-anomaly-detection",
+        "label": "Collective Anomaly Detection"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:statistical-modelling", "label": "Statistical Modelling" },
-      { "@id": "urn:ngm:class:threshold-calibration", "label": "Threshold Calibration" },
-      { "@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering" },
-      { "@id": "urn:ngm:class:data-preprocessing", "label": "Data Preprocessing" }
+      {
+        "@id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-calibration",
+        "label": "Threshold Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection" },
-      { "@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity" },
-      { "@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance" },
-      { "@id": "urn:ngm:class:intrusion-detection-system", "label": "Intrusion Detection System" }
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning" },
-      { "@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition" },
-      { "@id": "urn:ngm:class:deep-learning", "label": "Deep Learning" },
-      { "@id": "urn:ngm:class:autoencoder", "label": "Autoencoder" },
-      { "@id": "urn:ngm:class:graph-neural-networks", "label": "Graph Neural Network" },
-      { "@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture" }
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-networks",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering" },
-      { "@id": "urn:ngm:class:data-preprocessing", "label": "Data Preprocessing" }
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning" },
-      { "@id": "urn:ngm:class:classification", "label": "Classification" }
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting" },
-      { "@id": "urn:ngm:class:concept-drift", "label": "Concept Drift" },
-      { "@id": "urn:ngm:class:model-monitoring", "label": "Model Monitoring" },
-      { "@id": "urn:ngm:class:outlier-detection", "label": "Outlier Detection" },
-      { "@id": "urn:ngm:class:change-point-detection", "label": "Change Point Detection" }
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:concept-drift",
+        "label": "Concept Drift"
+      },
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:outlier-detection",
+        "label": "Outlier Detection"
+      },
+      {
+        "@id": "urn:ngm:class:change-point-detection",
+        "label": "Change Point Detection"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:network-security", "label": "Network Security" },
-      { "@id": "urn:ngm:class:sensor-data", "label": "IoT Sensor Data" }
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "IoT Sensor Data"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:outlier-detection", "label": "Outlier Detection" },
-    { "@id": "urn:ngm:class:novelty-detection", "label": "Novelty Detection" }
+    {
+      "@id": "urn:ngm:class:outlier-detection",
+      "label": "Outlier Detection"
+    },
+    {
+      "@id": "urn:ngm:class:novelty-detection",
+      "label": "Novelty Detection"
+    }
   ],
   "quality": 0.92,
   "provenance": {
@@ -128,61 +344,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:anomaly-detection:enrichment-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4da08aa825f42afd5e35f6ba90108e56ca4416e0109fa552ab28d74993e55b19"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Machine Learning]]", "resolved": "urn:visionflow:owl:class:machine-learning-discipline", "kind": "ResolvedLink" },
-    { "raw": "[[Statistical Modelling]]", "resolved": "urn:visionflow:owl:class:statistical-modelling", "kind": "ResolvedLink" },
-    { "raw": "[[Pattern Recognition]]", "resolved": "urn:visionflow:owl:class:pattern-recognition", "kind": "ResolvedLink" },
-    { "raw": "[[Deep Learning]]", "resolved": "urn:visionflow:owl:class:deep-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Autoencoder]]", "resolved": "urn:visionflow:owl:class:autoencoder", "kind": "ResolvedLink" },
-    { "raw": "[[Supervised Learning]]", "resolved": "urn:visionflow:owl:class:supervised-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Classification]]", "resolved": "urn:visionflow:owl:class:classification", "kind": "ResolvedLink" },
-    { "raw": "[[Feature Engineering]]", "resolved": "urn:visionflow:owl:class:feature-engineering", "kind": "ResolvedLink" },
-    { "raw": "[[Data Preprocessing]]", "resolved": "urn:visionflow:owl:class:data-preprocessing", "kind": "ResolvedLink" },
-    { "raw": "[[Fraud Detection]]", "resolved": "urn:visionflow:owl:class:fraud-detection", "kind": "ResolvedLink" },
-    { "raw": "[[Cybersecurity]]", "resolved": "urn:visionflow:owl:class:cybersecurity", "kind": "ResolvedLink" },
-    { "raw": "[[Predictive Maintenance]]", "resolved": "urn:visionflow:owl:class:predictive-maintenance", "kind": "ResolvedLink" },
-    { "raw": "[[Intrusion Detection System]]", "resolved": "urn:visionflow:owl:class:intrusion-detection-system", "kind": "ResolvedLink" },
-    { "raw": "[[Time Series Forecasting]]", "resolved": "urn:visionflow:owl:class:time-series-forecasting", "kind": "ResolvedLink" },
-    { "raw": "[[Concept Drift]]", "resolved": "urn:visionflow:owl:class:concept-drift", "kind": "ResolvedLink" },
-    { "raw": "[[Model Monitoring]]", "resolved": "urn:visionflow:owl:class:model-monitoring", "kind": "ResolvedLink" },
-    { "raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:owl:class:graph-neural-networks", "kind": "ResolvedLink" },
-    { "raw": "[[LSTM]]", "resolved": "urn:visionflow:owl:class:lstm", "kind": "ResolvedLink" },
-    { "raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:owl:class:transformer-architecture", "kind": "ResolvedLink" },
-    { "raw": "[[Variational Autoencoder]]", "resolved": "urn:visionflow:owl:class:variational-autoencoder", "kind": "ResolvedLink" },
-    { "raw": "[[Data Mining]]", "resolved": "urn:visionflow:owl:class:data-mining", "kind": "ResolvedLink" },
-    { "raw": "[[Network Security]]", "resolved": "urn:visionflow:owl:class:network-security", "kind": "ResolvedLink" },
-    { "raw": "[[Isolation Forest]]", "resolved": "urn:visionflow:linked:isolation-forest", "kind": "StubLink" },
-    { "raw": "[[Local Outlier Factor]]", "resolved": "urn:visionflow:linked:local-outlier-factor", "kind": "StubLink" },
-    { "raw": "[[Gaussian Mixture Model]]", "resolved": "urn:visionflow:linked:gaussian-mixture-model", "kind": "StubLink" },
-    { "raw": "[[DBSCAN]]", "resolved": "urn:visionflow:linked:dbscan", "kind": "StubLink" },
-    { "raw": "[[Normalising Flows]]", "resolved": "urn:visionflow:linked:normalising-flows", "kind": "StubLink" },
-    { "raw": "[[One-Class SVM]]", "resolved": "urn:visionflow:linked:one-class-svm", "kind": "StubLink" },
-    { "raw": "[[Change Point Detection]]", "resolved": "urn:visionflow:linked:change-point-detection", "kind": "StubLink" },
-    { "raw": "[[Outlier Detection]]", "resolved": "urn:visionflow:linked:outlier-detection", "kind": "StubLink" },
-    { "raw": "[[Precision-Recall Curve]]", "resolved": "urn:visionflow:linked:precision-recall-curve", "kind": "StubLink" },
-    { "raw": "[[SHAP Values]]", "resolved": "urn:visionflow:linked:shap-values", "kind": "StubLink" },
-    { "raw": "[[Active Learning]]", "resolved": "urn:visionflow:linked:active-learning", "kind": "StubLink" },
-    { "raw": "[[IoT Sensor Data]]", "resolved": "urn:visionflow:linked:iot-sensor-data", "kind": "StubLink" },
-    { "raw": "[[Threshold Calibration]]", "resolved": "urn:visionflow:linked:threshold-calibration", "kind": "StubLink" },
-    { "raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "StubLink" },
-    { "raw": "[[Time Series]]", "resolved": "urn:visionflow:linked:time-series", "kind": "StubLink" },
-    { "raw": "[[Point Anomaly Detection]]", "resolved": "urn:visionflow:linked:point-anomaly-detection", "kind": "StubLink" },
-    { "raw": "[[Contextual Anomaly Detection]]", "resolved": "urn:visionflow:linked:contextual-anomaly-detection", "kind": "StubLink" },
-    { "raw": "[[Collective Anomaly Detection]]", "resolved": "urn:visionflow:linked:collective-anomaly-detection", "kind": "StubLink" }
-  ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
-  "prov:generatedAtTime": { "@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime" }
 }
 ```
 
@@ -323,7 +484,7 @@ public: true
   Network anomaly detection identifies malicious traffic, lateral movement, and command-and-control (C2) communications by comparing real-time network behaviour against baselines of legitimate traffic established during a profiling period. [[Graph Neural Network]] models represent network hosts as nodes and communications as directed edges, detecting graph-structural anomalies — unusual connection patterns between hosts, novel communication paths to external IP ranges, unexpected protocol combinations — with performance substantially superior to packet-inspection classifiers on lateral movement scenarios: a 2025 Springer systematic review documented GNN-based detectors achieving AUC of 0.96–0.99 on UNSW-NB15 and CIC-IDS benchmark datasets versus 0.89–0.94 for random forest classifiers on the same benchmarks. User and Entity Behaviour Analytics (UEBA) builds statistical profiles of each user's normal access patterns — which resources they access, at what times, from which devices and locations, at what data volumes — and flags sessions that deviate from the established profile; [[Isolation Forest]] and [[LSTM]] anomaly models are commonly deployed for UEBA given their ability to learn complex normal behaviour patterns without requiring labelled intrusion examples. Log anomaly detection applies sequence models ([[LSTM]], [[Transformer Architecture]]) to system log streams (Windows Event Logs, Linux syslog, application logs, database audit logs) to surface unusual process chains, authentication failure sequences, and API call patterns; the HDFS and BGL log benchmark datasets are standard evaluation targets, and the DeepLog model (Du et al., SIGSAC 2017) established LSTM-based log anomaly detection as a practical alternative to rule-based SIEM correlation. The MITRE ATT&CK framework provides a structured taxonomy of adversary tactics (Initial Access, Execution, Persistence, Privilege Escalation, Defence Evasion, Credential Access, Discovery, Lateral Movement, Collection, Exfiltration, Command and Control, Impact) and techniques that guides what behaviour patterns anomaly detectors should prioritise surfacing, enabling alignment between anomaly detection engineering decisions and threat intelligence priorities. Adversarial robustness of anomaly detectors is a growing concern: attackers who understand the detection mechanism can craft adversarial examples that stay within the decision boundary by embedding malicious activity within the normal behaviour envelope or by gradually shifting the reference distribution through a series of small, individually innocuous changes that collectively move the baseline in an attacker-favourable direction.
 
   **Industrial and IoT — [[Predictive Maintenance]] and quality control:**
-  Bearing fault detection in rotating machinery (motors, turbines, compressors, pumps) from vibration signatures detects early-stage wear that manifests as changes in harmonic frequency content at integer multiples of the bearing pass frequency weeks or months before mechanical failure causes unplanned downtime. The vibration signal is typically sampled at 25–50 kHz, processed via Fast Fourier Transform to extract spectral features (bearing defect frequencies, sidebands, harmonics), and compared against reference spectra for the healthy machine; [[Autoencoder]] reconstruction error over the spectral features provides a continuous health index that drifts upward as faults develop. Production deployments demonstrate maintenance cost reductions of 10–20% and unplanned downtime reductions of 30–40% relative to scheduled time-based preventive maintenance, representing ROI periods of 12–24 months for typical industrial facilities at 2025 energy and downtime costs. Vision-based surface defect detection on production lines trains one-class models on images of defect-free products and flags reconstruction anomalies corresponding to scratches, cracks, voids, delaminations, and surface contamination without requiring an exhaustive defect catalogue; the MVTec AD dataset (Bergmann et al., CVPR 2019 — 5,354 images across 15 texture and object categories with pixel-level anomaly masks) is the primary benchmark, with 2025–2026 [[Transformer Architecture]]-based methods achieving mean per-class AUROC of 0.97–0.99 on MVTec AD. [[IoT Sensor Data]] monitoring applies streaming anomaly detection to high-frequency telemetry from manufacturing lines, smart grids, oil and gas pipelines, and building management systems; with internet-connected device populations projected to exceed 41 billion by 2026, the data generation rates in industrial IoT settings exceed the capacity for human review, making automated anomaly detection essential infrastructure rather than an optional enhancement. Edge deployment constraints — battery-powered IoT sensors, low-bandwidth communication, limited compute — motivate model compression and quantisation; scikit-learn [[Isolation Forest]] implementations processing 50,000 samples per second on modern edge hardware provide a practical baseline that satisfies real-time requirements while running on resource-constrained devices.
+  Bearing fault detection in rotating machinery (motors, turbines, compressors, pumps) from vibration signatures detects early-stage wear that manifests as changes in harmonic frequency content at integer multiples of the bearing pass frequency weeks or months before mechanical failure causes unplanned downtime. The vibration signal is typically sampled at 25–50 kHz, processed via Fast Fourier Transform to extract spectral features (bearing defect frequencies, sidebands, harmonics), and compared against reference spectra for the healthy machine; [[Autoencoder]] reconstruction error over the spectral features provides a continuous health [private] that drifts upward as faults develop. Production deployments demonstrate maintenance cost reductions of 10–20% and unplanned downtime reductions of 30–40% relative to scheduled time-based preventive maintenance, representing ROI periods of 12–24 months for typical industrial facilities at 2025 energy and downtime costs. Vision-based surface defect detection on production lines trains one-class models on images of defect-free products and flags reconstruction anomalies corresponding to scratches, cracks, voids, delaminations, and surface contamination without requiring an exhaustive defect catalogue; the MVTec AD dataset (Bergmann et al., CVPR 2019 — 5,354 images across 15 texture and object categories with pixel-level anomaly masks) is the primary benchmark, with 2025–2026 [[Transformer Architecture]]-based methods achieving mean per-class AUROC of 0.97–0.99 on MVTec AD. [[IoT Sensor Data]] monitoring applies streaming anomaly detection to high-frequency telemetry from manufacturing lines, smart grids, oil and gas pipelines, and building management systems; with internet-connected device populations projected to exceed 41 billion by 2026, the data generation rates in industrial IoT settings exceed the capacity for human review, making automated anomaly detection essential infrastructure rather than an optional enhancement. Edge deployment constraints — battery-powered IoT sensors, low-bandwidth communication, limited compute — motivate model compression and quantisation; scikit-learn [[Isolation Forest]] implementations processing 50,000 samples per second on modern edge hardware provide a practical baseline that satisfies real-time requirements while running on resource-constrained devices.
 
   **Healthcare:**
   Clinical deterioration detection from vital signs streams (heart rate, blood pressure, SpO2, respiratory rate, temperature) in intensive care units deploys [[LSTM]] sequence models with anomaly scoring to provide early warning of sepsis, respiratory failure, cardiac arrest, and clinical deterioration hours before clinical staff would typically recognise the pattern from periodic manual observations; the National Early Warning Score 2 (NEWS2) system deployed across UK NHS hospitals provides a rules-based baseline against which ML-based anomaly detectors are evaluated, with validated studies showing ML models providing 2–6 hour earlier deterioration warnings compared to NEWS2 triggers. The NHS AI Lab's AIDE framework mandates that clinical AI systems including deterioration detectors demonstrate equitable performance across age, sex, ethnicity, and socioeconomic patient subgroups before deployment — a requirement driven by documented biases in early commercial deterioration scoring algorithms that performed less accurately on Black and Asian patient populations due to training dataset imbalances. Medical imaging anomaly detection trains one-class models on large datasets of healthy tissue images (chest X-rays, retinal scans, brain MRIs, cardiac echo images) and flags reconstruction anomalies corresponding to tumours, lesions, and rare pathologies as outliers from the normal manifold; the NHS Lung Cancer Screening Programme deploys AI-assisted nodule detection that screens approximately 150,000 high-risk individuals annually as of 2025, flagging suspicious lung nodules for radiologist review — a system where the anomaly detector's recall performance (sensitivity for true cancer nodules) is the safety-critical metric while precision determines the downstream radiologist workload. Genomics anomaly detection flags unusual mutation patterns, structural variants, copy-number variations, and rare germline variants deviating from population-level baselines in clinical sequencing pipelines; one-class learning is essential because the universe of pathogenic variants is both incompletely catalogued and continuously expanding as new variant-disease associations are discovered.

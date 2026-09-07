@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Risk Treatment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,36 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"}
+      {
+        "@id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:responsible-ai-principles", "label": "Responsible AI Principles"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      }
     ]
   },
   "quality": 0.5,
@@ -78,32 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:risk-treatment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e994edc25a4ade2487441b10fe96c4001cf8f0c8962253e778b3587942e1ba7c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of selecting and implementing measures to modify AI risk, including risk avoidance, risk reduction (mitigation), risk sharing (transfer), and risk retention, based on risk assessment outcomes and organisational risk appetite. Grounded in ISO/IEC 23894:2023 and the NIST AI RMF MANAGE function, risk treatment produces a treatment plan, residual risk documentation, and an ongoing monitoring regime. Options are evaluated for feasibility, cost, effectiveness, and stakeholder acceptability before selection.

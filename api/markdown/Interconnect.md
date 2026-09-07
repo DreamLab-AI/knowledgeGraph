@@ -1,56 +1,110 @@
----
-public: true
----
-
-# Interconnect
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:interconnect", "@type":"Page", "title":"Interconnect", "vc:slug":"interconnect", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:interconnect",
+  "@type": "Page",
+  "title": "Interconnect",
+  "vc:slug": "interconnect",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:interconnect",
-  "@type":"Class",
-  "label":"Interconnect",
-  "definition":"An interconnect is the network fabric that links compute nodes, processors, accelerators and memory within or across systems, providing the high-bandwidth, low-latency communication paths required for parallel and distributed workloads. In high-performance computing and data centres, interconnects determine how efficiently many processors can exchange data and synchronise. Examples include on-chip buses, PCIe links between devices, and cluster fabrics such as InfiniBand or high-speed Ethernet.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:computing-infrastructure","label":"Computing Infrastructure"}],
-  "relations":{
-    "enables":[
-      {"@id":"urn:ngm:class:parallel-processing","label":"Parallel Processing"},
-      {"@id":"urn:ngm:class:high-performance-computing","label":"High-Performance Computing"},
-      {"@id":"urn:ngm:class:collective-communication","label":"Collective Communication"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:interconnect",
+  "@type": "Class",
+  "label": "Interconnect",
+  "definition": "An interconnect is the network fabric that links compute nodes, processors, accelerators and memory within or across systems, providing the high-bandwidth, low-latency communication paths required for parallel and distributed workloads. In high-performance computing and data centres, interconnects determine how efficiently many processors can exchange data and synchronise. Examples include on-chip buses, PCIe links between devices, and cluster fabrics such as InfiniBand or high-speed Ethernet.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:ethernet","label":"Ethernet"},
-      {"@id":"urn:ngm:class:network-topology","label":"Network Topology"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:network-topology","label":"Network Topology"},
-      {"@id":"urn:ngm:class:networking","label":"Networking"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:message-passing","label":"Message Passing"},
-      {"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"},
-      {"@id":"urn:ngm:class:scalability","label":"Scalability"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:high-performance-computing","label":"High-Performance Computing"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:gpu","label":"GPU"},
-      {"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:networking","label":"Networking"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

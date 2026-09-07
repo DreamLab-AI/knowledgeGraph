@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RDF Schema
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rdf-schema:936a09d21a81",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:65014d0100d75aa2edeb3420107f98f27992f5a3ea2fd51fc24d4f48556baec9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RDF]]",
-      "resolved": "urn:visionflow:linked:rdf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reasoning]]",
-      "resolved": "urn:visionflow:linked:reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OWL 2 Web Ontology Language]]",
-      "resolved": "urn:visionflow:linked:owl-2-web-ontology-language",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vocabulary]]",
-      "resolved": "urn:visionflow:linked:vocabulary",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.w3.org/TR/rdf-schema/]]",
-      "resolved": "urn:visionflow:linked:https-www-w-3-org-tr-rdf-schema",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A World Wide Web Consortium vocabulary that extends the Resource Description Framework with the means to describe classes, properties and their hierarchies. It provides a lightweight modelling layer for typing resources and defining property domains and ranges.

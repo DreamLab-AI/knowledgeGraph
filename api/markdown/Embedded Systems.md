@@ -10,7 +10,6 @@
   "vc:outboundWikilinks": []
 }
 ```
-alias:: EmbeddedSystems
 
 ```json-ld
 {

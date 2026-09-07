@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Java
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Java is a class-based, object-oriented, statically typed programming language designed to run on the Java Virtual Machine, enabling write-once-run-anywhere portability across platforms. It compiles to bytecode executed by the JVM and emphasises strong typing, automatic memory management and a vast standard library. Java is widely used in enterprise back-end systems, Android development and permissioned blockchain platforms.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:kotlin", "label": "Kotlin"},
-      {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:kotlin",
+        "label": "Kotlin"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MITRE ATLAS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mitre-atlas:d4d2d323b375",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:91de33e19cc5c50f075f98ef1964b6b104b009c91b610f6fc5109b9f463f5315"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Adversarial Machine Learning]]",
-      "resolved": "urn:visionflow:linked:adversarial-machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Safety]]",
-      "resolved": "urn:visionflow:linked:ai-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Security Framework]]",
-      "resolved": "urn:visionflow:linked:security-framework",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://atlas.mitre.org]]",
-      "resolved": "urn:visionflow:linked:https-atlas-mitre-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://github.com/mitre-atlas]]",
-      "resolved": "urn:visionflow:linked:https-github-com-mitre-atlas",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - MITRE ATLAS is a knowledge base of adversary tactics and techniques against machine learning systems. It is modelled on the MITRE ATT&CK framework and curated by MITRE.

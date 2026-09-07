@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inference
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,32 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inference:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:54f91e381e8ff1bc1fb43cc856ae5b8c74cc25e68bbfa0db5e18c678f893c295"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Inference is the process of applying a trained AI model to new, unseen data to produce predictions, classifications, or generated outputs. It is distinct from training in that model parameters are fixed; the computational objective is throughput, latency, and memory efficiency. Inference is the primary execution path in production deployments and is governed by ISO/IEC 22989:2022 clause 3.3.4.

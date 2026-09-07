@@ -858,7 +858,7 @@
     },
     {
       "slug": "complete-ontology-index",
-      "label": "COMPLETE ONTOLOGY INDEX"
+      "label": "COMPLETE ONTOLOGY [private]"
     },
     {
       "slug": "complete-hri-terms-reference",
@@ -2978,7 +2978,7 @@
     },
     {
       "slug": "term-index",
-      "label": "TERM INDEX"
+      "label": "TERM [private]"
     },
     {
       "slug": "task-specific-head",

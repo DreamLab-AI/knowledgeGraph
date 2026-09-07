@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Qualified Electronic Signature
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:qualified-electronic-signature", "@type": "Page", "title": "Qualified Electronic Signature", "vc:slug": "qualified-electronic-signature", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:qualified-electronic-signature",
+  "@type": "Page",
+  "title": "Qualified Electronic Signature",
+  "vc:slug": "qualified-electronic-signature",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

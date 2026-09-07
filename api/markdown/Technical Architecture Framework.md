@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TechnicalArchitectureFramework
----
-
-# Technical Architecture Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,19 +55,40 @@ aliases:
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:technology-infrastructure", "label": "Technology Infrastructure"},
-      {"@id": "urn:ngm:class:technology-ecosystem", "label": "Technology Ecosystem"}
+      {
+        "@id": "urn:ngm:class:technology-infrastructure",
+        "label": "Technology Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:technology-ecosystem",
+        "label": "Technology Ecosystem"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"},
-      {"@id": "urn:ngm:class:distributed-system-architecture", "label": "Distributed System Architecture"}
+      {
+        "@id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system-architecture",
+        "label": "Distributed System Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-metaverse-domain-model", "label": "Etsi Metaverse Domain Model"},
-      {"@id": "urn:ngm:class:technical-architecture", "label": "Technical Architecture"}
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-model",
+        "label": "Etsi Metaverse Domain Model"
+      },
+      {
+        "@id": "urn:ngm:class:technical-architecture",
+        "label": "Technical Architecture"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ]
   },
   "provenance": {
@@ -84,32 +98,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:technical-architecture-framework:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:beb34c79cc579d1ad8c933aace2288fabb854c5f950642a82a9ea50154c1b63e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Technical Architecture Framework is a structured methodology or reference model that defines the components, interfaces, and integration patterns needed to design and evaluate complex technology systems — such as metaverse platforms, distributed applications, or spatial-computing stacks. Frameworks such as ETSI's metaverse domain model or IEEE P2874 provide vocabulary, layered decompositions, and conformance criteria that guide architectural decision-making and interoperability.

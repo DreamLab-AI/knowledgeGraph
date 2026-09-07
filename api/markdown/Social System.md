@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Social System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A social system, in the context of virtual worlds, is the combination of features and rules that enable users to find, communicate with, and form relationships with one another, including presence, friend graphs, groups, voice and text chat, and reputation. It provides the connective fabric that turns a rendered space into an inhabited community. The design of these systems shapes safety, belonging, and the network effects that sustain a persistent virtual environment.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "quality": 0.72

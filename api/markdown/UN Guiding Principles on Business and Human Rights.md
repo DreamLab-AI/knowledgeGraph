@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UN Guiding Principles on Business and Human Rights
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "The UN Guiding Principles on Business and Human Rights (UNGPs) are a set of 31 principles endorsed by the UN Human Rights Council in 2011 that establish a global standard for preventing and addressing adverse human rights impacts linked to business activity. They rest on three pillars: the state duty to protect, the corporate responsibility to respect, and access to remedy. The framework underpins human-rights due diligence across supply chains, including ethical sourcing of materials and labour.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ]
   },
   "quality": 0.72
 }

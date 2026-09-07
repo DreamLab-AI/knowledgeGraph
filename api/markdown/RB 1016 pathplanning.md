@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RB 1016 pathplanning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,23 +51,56 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
-      {"@id": "urn:ngm:class:rrt-algorithm", "label": "RRT Algorithm"},
-      {"@id": "urn:ngm:class:graph-search", "label": "Graph Search"},
-      {"@id": "urn:ngm:class:dijkstra-algorithm", "label": "Dijkstra Algorithm"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "@id": "urn:ngm:class:rrt-algorithm",
+        "label": "RRT Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "@id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-1016-pathplanning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aa9f40469a0948163be220c1a7a811a1743619c3681994868796f2b0b894929b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - RB 1016 Path Planning is the superclass of algorithms that compute collision-free trajectories from a start configuration to a goal configuration in a robot's configuration space. It encompasses graph-search methods (A*, Dijkstra), sampling-based planners (RRT, PRM), and reactive local-planning strategies (DWA, potential fields), underpinning autonomous navigation in structured and unstructured environments.

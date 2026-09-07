@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DoRA
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "DoRA (Weight-Decomposed Low-Rank Adaptation) is a parameter-efficient fine-tuning method that decomposes pretrained weights into separate magnitude and direction components, applying low-rank updates only to the directional component while learning the magnitude independently. By separating these two degrees of freedom, DoRA more closely mirrors the learning dynamics of full fine-tuning than standard LoRA, improving accuracy on many tasks at comparable parameter cost and without added inference latency once merged. It is used to adapt large language and vision models efficiently.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:low-rank-adaptation", "label": "Low-Rank Adaptation"}
+      {
+        "@id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Adaptation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ]
   },
   "quality": 0.8
@@ -194,7 +206,7 @@ public: true
 
   ### Text-to-Image and Diffusion Model Fine-Tuning
 
-  DoRA applied to diffusion model U-Net weight matrices (Stable Diffusion, SDXL) has demonstrated improved subject fidelity and style consistency relative to LoRA at matched parameter budgets. This application domain is commercially significant: virtually all commercial LORA-based style transfer, character customisation (DreamBooth-LoRA), and aesthetic fine-tuning workflows could in principle be improved by substituting DoRA for LoRA, provided the training toolchain supports DoRA. The Hugging Face Diffusers library DoRA integration is progressing following the PEFT library native support.
+  DoRA applied to diffusion model U-Net weight matrices (Stable Diffusion, SDXL) has demonstrated improved subject fidelity and style consistency relative to LoRA at matched parameter budgets. This application domain is commercially significant: virtually all commercial LORA-based style transfer, character customisation (DreamBooth-LoRA), and aesthetic fine-tuning workflows [private] in principle be improved by substituting DoRA for LoRA, provided the training toolchain supports DoRA. The Hugging Face Diffusers library DoRA integration is progressing following the PEFT library native support.
 
   ### Low-Data and Resource-Constrained Settings
 
@@ -314,7 +326,7 @@ public: true
 
   DoRA introduces one practical consideration that does not arise in standard LoRA training: the column-norm recomputation in the forward pass. At each forward step, the column-wise L2 norms of the dynamically updated weight matrix W_0 + BA must be computed before the normalisation and magnitude scaling. For a weight matrix of shape d×k = 4096×4096 with bfloat16 precision, this column-norm computation requires a reduction over 4096 elements for each of 4096 columns — approximately 16 million FLOPs per weight matrix. For a 7B parameter LLaMA model with approximately 200 adapted weight matrices, this adds roughly 3.2 billion FLOPs per forward pass, compared to approximately 14 trillion FLOPs for the full transformer forward pass at typical sequence lengths — a computational overhead below 0.025%, effectively zero from a throughput perspective.
 
-  Training stability with DoRA is generally reported as equal to or better than LoRA at the same hyperparameters. The separation of magnitude and direction provides more independent gradient signals to the two sets of parameters, which can reduce gradient interference. One potential numerical concern is column-norm collapse: if BA causes some column directions to become very small in magnitude during early training, the normalisation step could amplify small numerical errors. Empirically, this is avoided by the initialisation convention (B=0 at start, so W_0 + BA = W_0 at step 0 with healthy column norms) and by standard weight decay and learning rate schedules.
+  Training stability with DoRA is generally reported as equal to or better than LoRA at the same hyperparameters. The separation of magnitude and direction provides more independent gradient signals to the two sets of parameters, which can reduce gradient interference. One potential numerical concern is column-norm collapse: if BA causes some column directions to become very small in magnitude during early training, the normalisation step [private] amplify small numerical errors. Empirically, this is avoided by the initialisation convention (B=0 at start, so W_0 + BA = W_0 at step 0 with healthy column norms) and by standard weight decay and learning rate schedules.
 
   The optimal learning rate for DoRA may differ from the optimal LoRA learning rate because m and BA have different gradient scales and different effective parameterisation. The DoRA paper found that standard LoRA hyperparameters (learning rate 1e-4 to 3e-4, α=r, batch size 128 sequences, rank r=16 to 64) transferred well to DoRA without additional tuning. However, the LoRA+ finding (Hayou et al., 2024) that different learning rates for A and B matrices improve performance is likely to apply to DoRA as well, and practitioners experimenting with DoRA may benefit from treating m as a third parameter group with its own learning rate multiplier.
 
@@ -476,7 +488,7 @@ public: true
 
   Model watermarking for DoRA-fine-tuned models is an emerging concern: if a fine-tuned adapter is shared publicly (e.g., on the Hugging Face Hub) and an adversary downloads the adapter, merges it with the base model, and deploys the merged model commercially, proving that the deployed model is derived from your fine-tuning without inspecting its weights is difficult. Research on post-hoc adapter watermarking (embedding a detectable signal in the adapter weights that survives the merge operation) is an active area directly motivated by the proliferation of PEFT adapters on model sharing platforms.
 
-  UK AI safety evaluation frameworks (UK AI Safety Institute, DSIT) apply to fine-tuned models as well as base models: a DoRA-adapted model used in a safety-critical application must be evaluated for harmful capability uplift introduced by the fine-tuning. The UK AI Safety Institute's model evaluation protocols include fine-tuning red-teaming assessments that specifically test whether domain adaptation via PEFT methods can bypass safety refusals trained into the base model — a documented concern since early 2024 demonstrations that even small LoRA adapters could partially remove safety training.
+  UK AI safety evaluation frameworks (UK AI Safety Institute, DSIT) apply to fine-tuned models as well as base models: a DoRA-adapted model used in a safety-critical application must be evaluated for harmful capability uplift introduced by the fine-tuning. The UK AI Safety Institute's model evaluation protocols include fine-tuning red-teaming assessments that specifically test whether domain adaptation via PEFT methods can bypass safety refusals trained into the base model — a documented concern since early 2024 demonstrations that even small LoRA adapters [private] partially remove safety training.
 
   ## Comparative Evaluation Framework
 
@@ -556,7 +568,7 @@ public: true
 
   ## Connections to Continual Learning and Catastrophic Forgetting
 
-  Fine-tuning large pretrained models on task-specific data creates the risk of catastrophic forgetting: the adapted model improves on the target task but degrades on the general capabilities encoded during pretraining. This trade-off is particularly acute for PEFT methods because the limited parameter budget constrains how much the model can specialise to the task without modifying the pretrained knowledge representation. DoRA's weight decomposition offers a potential mechanism for mitigating catastrophic forgetting: the magnitude vector m can be regularised to stay close to its initialisation (the column norms of W_0), while the directional update BA is given more latitude to adapt. This asymmetric regularisation strategy — loose on direction, tight on magnitude — could preserve the scale of pretrained weight features while allowing directional specialisation, a potentially better trade-off than symmetric L2 regularisation on ΔW applied indiscriminately to all components.
+  Fine-tuning large pretrained models on task-specific data creates the risk of catastrophic forgetting: the adapted model improves on the target task but degrades on the general capabilities encoded during pretraining. This trade-off is particularly acute for PEFT methods because the limited parameter budget constrains how much the model can specialise to the task without modifying the pretrained knowledge representation. DoRA's weight decomposition offers a potential mechanism for mitigating catastrophic forgetting: the magnitude vector m can be regularised to stay close to its initialisation (the column norms of W_0), while the directional update BA is given more latitude to adapt. This asymmetric regularisation strategy — loose on direction, tight on magnitude — [private] preserve the scale of pretrained weight features while allowing directional specialisation, a potentially better trade-off than symmetric L2 regularisation on ΔW applied indiscriminately to all components.
 
   Elastic Weight Consolidation (EWC, Kirkpatrick et al., 2017) and progressive neural networks address catastrophic forgetting in continual learning by penalising changes to weights deemed important for previously learned tasks. Applied to DoRA, an EWC-inspired approach would estimate Fisher information for the magnitude vector m and the directional component separately, applying stronger penalties to the component carrying more pretrained information. Research at Edinburgh's School of Informatics (in collaboration with the Alan Turing Institute continual learning programme) is exploring this direction for NHS clinical AI applications where a foundation model must be continually adapted to new clinical protocols without forgetting established clinical reasoning capabilities.
 
@@ -574,7 +586,7 @@ public: true
 
   The interaction of DoRA with model quantisation at inference time (post-training quantisation of the merged DoRA-adapted weight) has not been comprehensively studied. The column-wise magnitude normalisation in DoRA may produce merged weight matrices with better quantisation properties than equivalent LoRA-merged weights, because the normalisation ensures that column vectors have unit norm before magnitude scaling, potentially reducing outlier values that degrade quantisation accuracy. Empirical validation of this hypothesis across GPTQ, AWQ, SmoothQuant, and GGUF quantisation methods applied to DoRA-merged models would be practically valuable for deployment engineers targeting low-bit deployment.
 
-  Research into mechanistic interpretability of DoRA-adapted models — understanding which circuits and attention head behaviours change as a result of the DoRA adaptation, and whether the directional versus magnitude decomposition corresponds to interpretable distinctions in model behaviour — is an emerging area. Anthropic's mechanistic interpretability work (sparse autoencoders, circuit analysis) provides tools that could in principle be applied to compare DoRA-adapted versus LoRA-adapted versus full-fine-tuned models, with the hypothesis that DoRA's decoupled update geometry produces circuits that are more cleanly interpretable or that differ from pretrained circuits in more structured ways than LoRA adaptations.
+  Research into mechanistic interpretability of DoRA-adapted models — understanding which circuits and attention head behaviours change as a result of the DoRA adaptation, and whether the directional versus magnitude decomposition corresponds to interpretable distinctions in model behaviour — is an emerging area. Anthropic's mechanistic interpretability work (sparse autoencoders, circuit analysis) provides tools that [private] in principle be applied to compare DoRA-adapted versus LoRA-adapted versus full-fine-tuned models, with the hypothesis that DoRA's decoupled update geometry produces circuits that are more cleanly interpretable or that differ from pretrained circuits in more structured ways than LoRA adaptations.
 
   ## Summary of Advantages and Limitations
 

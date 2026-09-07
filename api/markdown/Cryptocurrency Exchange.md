@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Cryptocurrency Exchange
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

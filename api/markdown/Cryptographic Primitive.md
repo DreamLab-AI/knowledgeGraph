@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Cryptographic Primitives
-  - CryptographicPrimitive
----
-
-# Cryptographic Primitive
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,67 +169,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cryptographic-primitive:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:07d395b56a94e66166db3b8d0bf2f58eb81ae1a600bf107b343a1f724a323276"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asymmetric Encryption]]",
-      "resolved": "urn:visionflow:owl:class:asymmetric-encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Protocol]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:owl:class:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:owl:class:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Symmetric Encryption]]",
-      "resolved": "urn:visionflow:owl:class:symmetric-encryption",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The fundamental building blocks of cryptography upon which more complex cryptographic algorithms, protocols, and systems are constructed. Primitives include hash functions, encryption algorithms, digital signatures, message authentication codes, and key exchange protocols, each providing specific security properties but requiring combination in security protocols to address multiple security requirements.

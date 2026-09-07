@@ -1,36 +1,120 @@
----
-public: true
----
-
-# Skinning
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:skinning", "@type":"Page", "title":"Skinning", "vc:slug":"skinning", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:skinning",
+  "@type": "Page",
+  "title": "Skinning",
+  "vc:slug": "skinning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:skinning",
-  "@type":"Class",
-  "label":"Skinning",
-  "definition":"Skinning is the process of binding a deformable surface mesh to an underlying skeleton so that the mesh deforms naturally as the skeleton is animated. Each vertex is assigned weights that determine how strongly it follows each influencing bone, and these weights drive the deformation during playback. Skinning is essential to character animation, allowing a single rigged model to be posed and animated across many motions.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:character-rigging","label":"Character Rigging"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:polygon-mesh","label":"Polygon Mesh"},{"@id":"urn:ngm:class:blend-shape","label":"Blend Shape"}],
-    "requires":[{"@id":"urn:ngm:class:character-rigging","label":"Character Rigging"},{"@id":"urn:ngm:class:character-model","label":"Character Model"}],
-    "uses":[{"@id":"urn:ngm:class:geometry-processing","label":"Geometry Processing"},{"@id":"urn:ngm:class:shader","label":"Shader"}],
-    "enables":[{"@id":"urn:ngm:class:character-animation","label":"Character Animation"},{"@id":"urn:ngm:class:animation","label":"Animation"}],
-    "supports":[{"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"},{"@id":"urn:ngm:class:game-engine","label":"Game Engine"}],
-    "dependsOn":[{"@id":"urn:ngm:class:topology","label":"Topology"}],
-    "relatedTo":[{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"},{"@id":"urn:ngm:class:uv-mapping","label":"UV Mapping"},{"@id":"urn:ngm:class:fbx","label":"FBX"},{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:rendering-pipeline","label":"Rendering Pipeline"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:skinning",
+  "@type": "Class",
+  "label": "Skinning",
+  "definition": "Skinning is the process of binding a deformable surface mesh to an underlying skeleton so that the mesh deforms naturally as the skeleton is animated. Each vertex is assigned weights that determine how strongly it follows each influencing bone, and these weights drive the deformation during playback. Skinning is essential to character animation, allowing a single rigged model to be posed and animated across many motions.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:character-rigging",
+      "label": "Character Rigging"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:blend-shape",
+        "label": "Blend Shape"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:geometry-processing",
+        "label": "Geometry Processing"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:topology",
+        "label": "Topology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:fbx",
+        "label": "FBX"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

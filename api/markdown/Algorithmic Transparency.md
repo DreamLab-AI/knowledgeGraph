@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Algorithmic Transparency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "The principle and practice of making the logic, data inputs, decision criteria, and outputs of algorithmic systems sufficiently accessible and comprehensible to affected stakeholders, oversight bodies, and the general public. It encompasses both technical disclosure—publishing model architectures, training data provenance, and evaluation results—and process-level disclosure of how algorithms are developed, audited, and governed. Algorithmic transparency is recognised as a foundational requirement for accountability and trust in automated decision-making systems.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:explainability", "label": "Explainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:explainability",
+      "label": "Explainability"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:algorithmic-transparency-index", "label": "Algorithmic Transparency Index"},
-      {"@id": "urn:ngm:class:algorithmic-transparency-reports", "label": "Algorithmic Transparency Reports"},
-      {"@id": "urn:ngm:class:decision-transparency", "label": "Decision Transparency"}
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency-reports",
+        "label": "Algorithmic Transparency Reports"
+      },
+      {
+        "@id": "urn:ngm:class:decision-transparency",
+        "label": "Decision Transparency"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - The ecosystem includes civil society organisations that rate and benchmark platform transparency, regulatory mandates requiring algorithmic impact assessments, and industry-led initiatives such as the Partnership on AI's transparency guidelines. The [[Algorithmic Transparency Index]] provides comparative assessments of major platforms' disclosure practices. Regulators in the EU and United States have issued guidance specifying what disclosures are required for high-risk automated systems.
 
   - By 2024–2025, algorithmic transparency is an active area of regulatory development. The EU AI Act mandates transparency obligations tiered by system risk level, including requirements to inform users when interacting with AI systems and to publish summaries of training data for general-purpose AI models. The tension between transparency and intellectual property protection remains unresolved, and jurisdictions differ on whether the right to explanation extends to algorithmic logic as well as individual decisions.
-

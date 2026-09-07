@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI ARF 010
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,36 +174,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-arf-010:5b78fa879d32",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1a497f63be2abd01e84f0c0778ee66a020f458d51c341c0ac8e7d15be2a72fc0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ETSI]]",
-      "resolved": "urn:visionflow:linked:etsi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

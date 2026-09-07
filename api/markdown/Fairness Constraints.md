@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fairness Constraints
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,34 +75,82 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:bias", "label": "Bias"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-ethics-checklist", "label": "AI Ethics Checklist"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics-checklist",
+        "label": "AI Ethics Checklist"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
-      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"}
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
-      {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:fairness-oecd", "label": "Fairness (OECD)"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:fairness-oecd",
+        "label": "Fairness (OECD)"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
     ]
   },
   "provenance": {
@@ -117,62 +160,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fairness-constraints:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4c44e64c482c158e3c33e90fb395229049753f0feffddd28956a93891274149b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Barocas et al. (2019)]]",
-      "resolved": "urn:visionflow:linked:barocas-et-al-2019",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Chouldechova (2017)]]",
-      "resolved": "urn:visionflow:linked:chouldechova-2017",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hardt et al. (2016)]]",
-      "resolved": "urn:visionflow:linked:hardt-et-al-2016",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Fairness Constraints are mathematical formalizations of equitable treatment in AI systems, expressed as conditions that predictions must satisfy relative to protected attributes. These constraints are categorized into three fundamental types based on independence criteria: Independence (demographic parity) requires predictions to be independent of protected attributes (Ŷ ⊥ A), meaning P(Ŷ|A=0) = P(Ŷ|A=1); Separation (equalized odds) requires predictions to be independent of protected attributes conditional on true labels (Ŷ ⊥ A | Y), ensuring equal true positive and false positive rates across groups; and Sufficiency (predictive parity) requires true labels to be independent of protected attributes conditional on predictions (Y ⊥ A | Ŷ), ensuring equal precision and calibration across groups. These constraints formalize fairness concepts like demographic parity, equalized odds, equal opportunity (separation for positive class only), and calibration into optimization problems during model training. However, impossibility theorems (Chouldechova 2017, Kleinberg et al. 2017) prove that when base rates differ between groups, certain combinations of fairness constraints cannot be simultaneously satisfied, necessitating context-dependent tradeoffs. Implementation typically involves constrained optimization with Lagrange multipliers, where accuracy loss is balanced against fairness violations through tunable regularization parameters, as formalized in foundational research by Hardt et al. (2016) and Barocas et al. (2019).

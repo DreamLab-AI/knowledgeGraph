@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,25 +34,64 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:robotic-telepresence", "label": "Robotic Telepresence"},
-      {"@id": "urn:ngm:class:haptic-feedback-telepresence", "label": "Haptic Feedback Telepresence"},
-      {"@id": "urn:ngm:class:teleoperation-systems", "label": "Teleoperation Systems"},
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:spatial-presence", "label": "Spatial Presence"},
-      {"@id": "urn:ngm:class:presence", "label": "Presence"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+      {
+        "@id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation-systems",
+        "label": "Teleoperation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"},
-      {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"},
-      {"@id": "urn:ngm:class:robotics-telepresence-bridge", "label": "Robotics-Telepresence Bridge"}
+      {
+        "@id": "urn:ngm:class:dc-workspace-tools",
+        "label": "Workspace Tools"
+      },
+      {
+        "@id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-telepresence-bridge",
+        "label": "Robotics-Telepresence Bridge"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:haptics", "label": "Haptics"},
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse-telepresence-bridge", "label": "Metaverse-Telepresence Bridge"}
+      {
+        "@id": "urn:ngm:class:metaverse-telepresence-bridge",
+        "label": "Metaverse-Telepresence Bridge"
+      }
     ]
   },
   "quality": 0.8,

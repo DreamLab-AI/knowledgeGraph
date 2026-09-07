@@ -1,12 +1,3 @@
----
-public: true
-aliases:
-  - webcontracts
-  - Web Contract
-  - WebContracts
----
-
-# Web Contracts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

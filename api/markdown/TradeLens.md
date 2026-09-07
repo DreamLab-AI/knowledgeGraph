@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TradeLens
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:trade-lens:27d34693a5cf",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cbda6dadecb39e174f2b27685d068fe69c359aebee5911cecbe27a1539d4df1d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Distributed Ledger]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Supply Chain]]",
-      "resolved": "urn:visionflow:linked:supply-chain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A blockchain-based supply chain platform for the shipping industry, jointly developed by IBM and Maersk, that aimed to digitise and share trade documentation among participants. It was discontinued in 2023.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Byzantine Agreement
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,38 +20,82 @@ public: true
   "definition": "Byzantine Agreement is a class of distributed consensus protocols that guarantee correct operation even when a subset of participating nodes behave arbitrarily — sending conflicting, malicious, or unpredictable messages. Originating from the Byzantine Generals Problem formalised by Lamport, Shostak, and Pease in 1982, these protocols ensure that all honest nodes reach the same decision provided the number of faulty nodes does not exceed one-third of the total. Byzantine Agreement is foundational to blockchain consensus mechanisms and safety-critical distributed systems.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-data", "label": "Blockchain Data"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain-data",
+        "label": "Blockchain Data"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:crash-fault-tolerance", "label": "Crash Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:voting-round", "label": "Voting Round"}
+      {
+        "@id": "urn:ngm:class:voting-round",
+        "label": "Voting Round"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:distributed-computing-research", "label": "Distributed Computing Research"}
+      {
+        "@id": "urn:ngm:class:distributed-computing-research",
+        "label": "Distributed Computing Research"
+      }
     ]
   },
   "quality": 0.62,

@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Post-Processing
-  - Post-processing
----
-
-# Post Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,30 +173,11 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:post-processing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cdb85a8afe786a2d6c57457d73ffbbc95f5e22ffc9a838bf6da825ea21b34532"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Post processing refers to the collection of image-space operations applied to a fully rasterised or ray-traced [[Framebuffer]] after the primary 3D rendering pass and before the final image is presented to the display. These operations are executed as one or more full-screen [[Shader]] passes—reading from [[Render Target]] textures and writing results into successor buffers—and encompass effects such as [[Bloom]], [[Depth of Field]], [[Motion Blur]], [[Tone Mapping]], [[Colour Grading]], [[Screen Space Ambient Occlusion]], and [[Anti-Aliasing]]. By confining work to screen space rather than world geometry, the post-processing stage can dramatically improve perceived [[Visual Fidelity]] at a fraction of the cost of in-scene geometry complexity, making it a cornerstone of modern [[Rendering Pipeline]] design.
 
 - ### Overview
-  - Post processing emerged as a formal pipeline stage alongside programmable [[Shader]] hardware in the early 2000s, when GPU vendors exposed full-screen blit operations that could apply arbitrary fragment programs to a completed scene image.
+  - Post processing emerged as a formal pipeline stage alongside programmable [[Shader]] hardware in the early 2000s, when GPU vendors exposed full-screen blit operations that [private] apply arbitrary fragment programs to a completed scene image.
   - The stage typically sits between the main scene render pass (which writes a depth, colour, and optionally normal/material [[G-Buffer]]) and the final swapchain present call.
   - In [[Deferred Rendering]] architectures the G-Buffer data is already separated by function, making it straightforward to feed material properties into screen-space occlusion or reflections passes.
   - Modern engines—such as [[Unreal Engine]], [[Unity]], and [[Godot]]—ship configurable post-processing volumes that let artists blend between effect sets depending on camera location, without requiring programmer intervention.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Taxation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Taxation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:fiscal-policy", "vc:label": "Fiscal Policy"},
-    {"@id": "urn:visionflow:linked:hm-treasury", "vc:label": "HM Treasury"},
-    {"@id": "urn:visionflow:linked:financial-reporting", "vc:label": "Financial Reporting"},
-    {"@id": "urn:visionflow:linked:crypto-regulation", "vc:label": "Crypto Regulation"},
-    {"@id": "urn:visionflow:linked:compliance", "vc:label": "Compliance"}
+    {
+      "@id": "urn:visionflow:linked:fiscal-policy",
+      "vc:label": "Fiscal Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:hm-treasury",
+      "vc:label": "HM Treasury"
+    },
+    {
+      "@id": "urn:visionflow:linked:financial-reporting",
+      "vc:label": "Financial Reporting"
+    },
+    {
+      "@id": "urn:visionflow:linked:crypto-regulation",
+      "vc:label": "Crypto Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance",
+      "vc:label": "Compliance"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -39,14 +54,26 @@ public: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:financial-reporting", "label": "Financial Reporting"}
+      {
+        "@id": "urn:ngm:class:financial-reporting",
+        "label": "Financial Reporting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:crypto-regulation", "label": "Crypto Regulation"},
-      {"@id": "urn:ngm:class:hm-treasury", "label": "HM Treasury"}
+      {
+        "@id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:hm-treasury",
+        "label": "HM Treasury"
+      }
     ]
   },
   "quality": 0.8,

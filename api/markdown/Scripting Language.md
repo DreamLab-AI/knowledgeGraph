@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scripting Language
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -86,26 +81,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:scripting-language:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:082e06d88c8c4d9956794713aa0c1b8de33778107f6e550110d89db6586a8cb4"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A scripting language is an interpreted or dynamically compiled programming language used to automate tasks, define interactive behaviours, and extend the capabilities of host applications or game engines without modifying core engine code. In metaverse contexts, scripting languages such as JavaScript, Lua, Python, and C# enable content creators to author custom gameplay mechanics, NPC behaviour, and dynamic environment logic with rapid iteration cycles.

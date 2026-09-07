@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Difficulty
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,29 +87,68 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
-      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"}
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
-      {"@id": "urn:ngm:class:block-height", "label": "Block Height"},
-      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
-      {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"}
+      {
+        "@id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "@id": "urn:ngm:class:block-height",
+        "label": "Block Height"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ]
   },
   "provenance": {
@@ -124,67 +158,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:difficulty:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:56e0f20648eb8644e3e054b62f0e595fe65c73230a7f7f593dbe139ee10edc7b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicPrimitive]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Difficulty is a dynamic parameter in proof-of-work blockchain systems expressing the computational effort required to find a valid block hash. The value is adjusted periodically based on observed block production rate relative to the target interval, ensuring predictable block times regardless of network hash rate fluctuations. Difficulty is the primary self-regulation mechanism for proof-of-work blockchains.

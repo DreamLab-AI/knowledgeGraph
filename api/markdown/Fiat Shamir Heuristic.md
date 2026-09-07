@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Fiat Shamir Heuristic
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

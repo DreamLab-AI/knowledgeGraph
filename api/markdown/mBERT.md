@@ -1,8 +1,3 @@
----
-public: true
----
-
-# mBERT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,22 +51,52 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:albert", "label": "ALBERT"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:albert",
+        "label": "ALBERT"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:m-bert:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:583d7d99ea208ee0ae7253a5ca54d96eeaad3b1bdff05de965ca47fad2305908"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Multilingual BERT: a variant of BERT pre-trained on Wikipedia in 104 languages, enabling cross-lingual transfer and multilingual understanding without language-specific modifications.
@@ -258,7 +257,7 @@ public: true
   - Multilingual BERT (mBERT) represents a foundational advancement in cross-lingual natural language processing
   - Originally pre-trained on Wikipedia across 104 languages, enabling transfer learning without language-specific architectural modifications
   - Emerged as a critical bridge between monolingual and truly multilingual language understanding
-  - Established the encoder-only paradigm for multilingual tasks, proving that shared representations could capture linguistic phenomena across typologically diverse languages
+  - Established the encoder-only paradigm for multilingual tasks, proving that shared representations [private] capture linguistic phenomena across typologically diverse languages
 
   ## Current Landscape (2025)
 

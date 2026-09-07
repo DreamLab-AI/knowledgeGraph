@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Computational Linguistics
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,50 +8,182 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:language-model", "vc:label": "Language Model"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:information-retrieval", "vc:label": "Information Retrieval"},
-    {"@id": "urn:visionflow:linked:linguistics", "vc:label": "Linguistics"},
-    {"@id": "urn:visionflow:linked:tokenization", "vc:label": "Tokenization"},
-    {"@id": "urn:visionflow:linked:named-entity-recognition", "vc:label": "Named Entity Recognition"},
-    {"@id": "urn:visionflow:linked:word-embedding", "vc:label": "Word Embedding"},
-    {"@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:visionflow:linked:machine-translation", "vc:label": "Machine Translation"},
-    {"@id": "urn:visionflow:linked:sentiment-analysis", "vc:label": "Sentiment Analysis"},
-    {"@id": "urn:visionflow:linked:question-answering", "vc:label": "Question Answering"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:text-mining", "vc:label": "Text Mining"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:semantic-parsing", "vc:label": "Semantic Parsing"},
-    {"@id": "urn:visionflow:linked:natural-language-understanding", "vc:label": "Natural Language Understanding"},
-    {"@id": "urn:visionflow:linked:natural-language-generation", "vc:label": "Natural Language Generation"},
-    {"@id": "urn:visionflow:linked:dependency-parsing", "vc:label": "Dependency Parsing"},
-    {"@id": "urn:visionflow:linked:part-of-speech-tagging", "vc:label": "Part-of-Speech Tagging"},
-    {"@id": "urn:visionflow:linked:coreference-resolution", "vc:label": "Coreference Resolution"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:grammar", "vc:label": "Grammar"},
-    {"@id": "urn:visionflow:linked:corpus-linguistics", "vc:label": "Corpus Linguistics"},
-    {"@id": "urn:visionflow:linked:statistical-language-model", "vc:label": "Statistical Language Model"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:pre-trained-language-model", "vc:label": "Pre Trained Language Model"},
-    {"@id": "urn:visionflow:linked:text-classification", "vc:label": "Text Classification"},
-    {"@id": "urn:visionflow:linked:relation-extraction", "vc:label": "Relation Extraction"},
-    {"@id": "urn:visionflow:linked:word-sense-disambiguation", "vc:label": "Word Sense Disambiguation"},
-    {"@id": "urn:visionflow:linked:discourse-analysis", "vc:label": "Discourse Analysis"},
-    {"@id": "urn:visionflow:linked:phonology", "vc:label": "Phonology"},
-    {"@id": "urn:visionflow:linked:morphology", "vc:label": "Morphology"},
-    {"@id": "urn:visionflow:linked:syntax", "vc:label": "Syntax"},
-    {"@id": "urn:visionflow:linked:semantics", "vc:label": "Semantics"},
-    {"@id": "urn:visionflow:linked:pragmatics", "vc:label": "Pragmatics"},
-    {"@id": "urn:visionflow:linked:neural-machine-translation", "vc:label": "Neural Machine Translation"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:sequence-to-sequence-model", "vc:label": "Sequence-to-Sequence Model"},
-    {"@id": "urn:visionflow:linked:automatic-speech-recognition", "vc:label": "Automatic Speech Recognition"},
-    {"@id": "urn:visionflow:linked:psycholinguistics", "vc:label": "Psycholinguistics"}
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:language-model",
+      "vc:label": "Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-retrieval",
+      "vc:label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:linguistics",
+      "vc:label": "Linguistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:tokenization",
+      "vc:label": "Tokenization"
+    },
+    {
+      "@id": "urn:visionflow:linked:named-entity-recognition",
+      "vc:label": "Named Entity Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:word-embedding",
+      "vc:label": "Word Embedding"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-translation",
+      "vc:label": "Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-mining",
+      "vc:label": "Text Mining"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-parsing",
+      "vc:label": "Semantic Parsing"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-understanding",
+      "vc:label": "Natural Language Understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-generation",
+      "vc:label": "Natural Language Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:dependency-parsing",
+      "vc:label": "Dependency Parsing"
+    },
+    {
+      "@id": "urn:visionflow:linked:part-of-speech-tagging",
+      "vc:label": "Part-of-Speech Tagging"
+    },
+    {
+      "@id": "urn:visionflow:linked:coreference-resolution",
+      "vc:label": "Coreference Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:grammar",
+      "vc:label": "Grammar"
+    },
+    {
+      "@id": "urn:visionflow:linked:corpus-linguistics",
+      "vc:label": "Corpus Linguistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-language-model",
+      "vc:label": "Statistical Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:pre-trained-language-model",
+      "vc:label": "Pre Trained Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-classification",
+      "vc:label": "Text Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:relation-extraction",
+      "vc:label": "Relation Extraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:word-sense-disambiguation",
+      "vc:label": "Word Sense Disambiguation"
+    },
+    {
+      "@id": "urn:visionflow:linked:discourse-analysis",
+      "vc:label": "Discourse Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:phonology",
+      "vc:label": "Phonology"
+    },
+    {
+      "@id": "urn:visionflow:linked:morphology",
+      "vc:label": "Morphology"
+    },
+    {
+      "@id": "urn:visionflow:linked:syntax",
+      "vc:label": "Syntax"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantics",
+      "vc:label": "Semantics"
+    },
+    {
+      "@id": "urn:visionflow:linked:pragmatics",
+      "vc:label": "Pragmatics"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-machine-translation",
+      "vc:label": "Neural Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequence-to-sequence-model",
+      "vc:label": "Sequence-to-Sequence Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic-speech-recognition",
+      "vc:label": "Automatic Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:psycholinguistics",
+      "vc:label": "Psycholinguistics"
+    }
   ]
 }
 ```
@@ -194,67 +320,12 @@ public: true
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "OntologyEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:annotation:computational-linguistics:link-resolutions",
-  "@type": "LinkResolutionsAnnotation",
-  "forClass": "urn:ngm:class:computational-linguistics",
-  "resolutions": [
-    {"wikilink": "Natural Language Processing", "@id": "urn:ngm:class:natural-language-processing"},
-    {"wikilink": "Machine Learning", "@id": "urn:ngm:class:machine-learning"},
-    {"wikilink": "Language Model", "@id": "urn:ngm:class:language-model"},
-    {"wikilink": "Large Language Model", "@id": "urn:ngm:class:large-language-model"},
-    {"wikilink": "Information Retrieval", "@id": "urn:ngm:class:information-retrieval"},
-    {"wikilink": "Tokenization", "@id": "urn:ngm:class:tokenization"},
-    {"wikilink": "Named Entity Recognition", "@id": "urn:ngm:class:named-entity-recognition"},
-    {"wikilink": "Word Embedding", "@id": "urn:ngm:class:word-embedding"},
-    {"wikilink": "Transformer", "@id": "urn:ngm:class:transformer"},
-    {"wikilink": "Machine Translation", "@id": "urn:ngm:class:machine-translation"},
-    {"wikilink": "Sentiment Analysis", "@id": "urn:ngm:class:sentiment-analysis"},
-    {"wikilink": "Question Answering", "@id": "urn:ngm:class:question-answering"},
-    {"wikilink": "Speech Recognition", "@id": "urn:ngm:class:speech-recognition"},
-    {"wikilink": "Text Mining", "@id": "urn:ngm:class:text-mining"},
-    {"wikilink": "Artificial Intelligence", "@id": "urn:ngm:class:artificial-intelligence"},
-    {"wikilink": "Semantic Parsing", "@id": "urn:ngm:class:semantic-parsing"},
-    {"wikilink": "Natural Language Understanding", "@id": "urn:ngm:class:natural-language-understanding"},
-    {"wikilink": "Natural Language Generation", "@id": "urn:ngm:class:natural-language-generation"},
-    {"wikilink": "Dependency Parsing", "@id": "urn:ngm:class:dependency-parsing"},
-    {"wikilink": "Part-of-Speech Tagging", "@id": "urn:ngm:class:part-of-speech-tagging"},
-    {"wikilink": "Coreference Resolution", "@id": "urn:ngm:class:coreference-resolution"},
-    {"wikilink": "Knowledge Graph", "@id": "urn:ngm:class:knowledge-graph"},
-    {"wikilink": "Grammar", "@id": "urn:ngm:class:grammar"},
-    {"wikilink": "Corpus Linguistics", "@id": "urn:ngm:class:corpus-linguistics"},
-    {"wikilink": "Statistical Language Model", "@id": "urn:ngm:class:statistical-language-model"},
-    {"wikilink": "Attention Mechanism", "@id": "urn:ngm:class:attention-mechanism"},
-    {"wikilink": "Pre Trained Language Model", "@id": "urn:ngm:class:pre-trained-language-model"},
-    {"wikilink": "Text Classification", "@id": "urn:ngm:class:text-classification"},
-    {"wikilink": "Relation Extraction", "@id": "urn:ngm:class:relation-extraction"},
-    {"wikilink": "Word Sense Disambiguation", "@id": "urn:ngm:class:word-sense-disambiguation"},
-    {"wikilink": "Discourse Analysis", "@id": "urn:ngm:class:discourse-analysis"},
-    {"wikilink": "Phonology", "@id": "urn:ngm:class:phonology"},
-    {"wikilink": "Morphology", "@id": "urn:ngm:class:morphology"},
-    {"wikilink": "Syntax", "@id": "urn:ngm:class:syntax"},
-    {"wikilink": "Semantics", "@id": "urn:ngm:class:semantics"},
-    {"wikilink": "Pragmatics", "@id": "urn:ngm:class:pragmatics"},
-    {"wikilink": "Neural Machine Translation", "@id": "urn:ngm:class:neural-machine-translation"},
-    {"wikilink": "Transfer Learning", "@id": "urn:ngm:class:transfer-learning"},
-    {"wikilink": "Deep Learning", "@id": "urn:ngm:class:deep-learning"},
-    {"wikilink": "Sequence-to-Sequence Model", "@id": "urn:ngm:class:sequence-to-sequence-model"},
-    {"wikilink": "Automatic Speech Recognition", "@id": "urn:ngm:class:automatic-speech-recognition"},
-    {"wikilink": "Psycholinguistics", "@id": "urn:ngm:class:psycholinguistics"},
-    {"wikilink": "Fine-Tuning", "@id": "urn:ngm:class:fine-tuning"},
-    {"wikilink": "Linguistics", "@id": "urn:ngm:class:linguistics"}
-  ]
 }
 ```
 
@@ -364,7 +435,7 @@ public: true
         ObjectSomeValuesFrom(ai:supports ai:KnowledgeGraph))
   - ## Formal Foundations and Theoretical Contributions
     - Computational Linguistics rests on a mathematical foundation that spans formal language theory, probability theory, information theory, and logic. The Chomsky hierarchy — with regular grammars (Type 3) recognised by finite automata, context-free grammars (Type 2) recognised by pushdown automata, context-sensitive grammars (Type 1) requiring linear bounded automata, and recursively enumerable languages (Type 0) requiring Turing machines — provides the complexity-theoretic framework for classifying natural language phenomena. Natural language [[Syntax]] is broadly context-free in its phrase-structure properties (efficiently parseable with CYK in O(n³) time) but requires mild context-sensitivity for cross-serial dependencies in languages like Dutch and Swiss German (Shieber 1985), motivating the development of mildly context-sensitive grammar formalisms: Tree-Adjoining Grammar (TAG; Joshi 1985), Combinatory Categorial Grammar (CCG; Steedman 2000), and Linear Context-Free Rewriting Systems (LCFRS) that can handle these dependencies while remaining polynomially parseable. These formalisms are still used as the basis of high-precision syntactic analysers for computational linguistic theory testing, and CCG in particular has been applied to wide-coverage [[Semantic Parsing]] (CCGBank; Hockenmaier & Steedman 2007).
-    - Formal [[Semantics]] in Computational Linguistics is rooted in model-theoretic semantics following Montague (1970), who demonstrated that natural language could be given a rigorous compositional semantics using typed lambda calculus and intensional logic, mapping syntactic derivations to logical formula denotations via a principle of compositionality: the meaning of an expression is determined by the meanings of its parts and the rules combining them. Montague semantics underpins semantic parsing systems that map natural language to executable logical forms — SQL, SPARQL, or lambda calculus expressions — enabling natural language interfaces to databases and [[Knowledge Graph]] systems. Abstract Meaning Representation (AMR; Banarescu et al. 2013) provides a broad-coverage practical [[Semantics]] formalism representing sentence meanings as directed acyclic graphs, abstracting away from [[Syntax]] to capture propositional content. Frame [[Semantics]] (FrameNet; Fillmore 1976–2001) represents meaning in terms of conceptual frames and the semantic roles of participants, providing the theoretical grounding for [[Semantic Role Labelling]] systems that identify who did what to whom, when, where, and how.
+    - Formal [[Semantics]] in Computational Linguistics is rooted in model-theoretic semantics following Montague (1970), who demonstrated that natural language [private] be given a rigorous compositional semantics using typed lambda calculus and intensional logic, mapping syntactic derivations to logical formula denotations via a principle of compositionality: the meaning of an expression is determined by the meanings of its parts and the rules combining them. Montague semantics underpins semantic parsing systems that map natural language to executable logical forms — SQL, SPARQL, or lambda calculus expressions — enabling natural language interfaces to databases and [[Knowledge Graph]] systems. Abstract Meaning Representation (AMR; Banarescu et al. 2013) provides a broad-coverage practical [[Semantics]] formalism representing sentence meanings as directed acyclic graphs, abstracting away from [[Syntax]] to capture propositional content. Frame [[Semantics]] (FrameNet; Fillmore 1976–2001) represents meaning in terms of conceptual frames and the semantic roles of participants, providing the theoretical grounding for [[Semantic Role Labelling]] systems that identify who did what to whom, when, where, and how.
     - Probabilistic formal grammars extend classical grammar formalisms with probability distributions over derivations, enabling statistical parsing that identifies the most probable parse given observed string evidence. Probabilistic context-free grammars (PCFGs) assign probability to each production rule; lexicalised PCFGs (Collins 1997; Charniak 1997) condition rule probabilities on head words, capturing syntactic-lexical dependencies critical for PP-attachment and coordination disambiguation. Probabilistic tree-substitution grammars (PTSGs) and tree-fragment probabilistic models (Bod 1998, Data-Oriented Parsing) directly capture recurrent syntactic patterns as non-compositional wholes. Bayesian non-parametric approaches (Dirichlet process PCFGs; Johnson et al. 2007) enable unsupervised grammar induction from raw text, an important tool for low-resource Computational Linguistics where treebank annotation is unavailable. These formal probabilistic models provide the theoretical bridge between classical [[Formal Grammar]] theory and the statistical and neural paradigms that dominate practical [[Natural Language Processing]] today.
     - Information theory provides Computational Linguistics with the concept of perplexity — the exponentiated per-word cross-entropy of a [[Language Model]] on held-out text, measuring the model's average uncertainty per word — and with mutual information and pointwise mutual information (PMI) measures used in distributional [[Semantics]] and collocation extraction. The cross-entropy between a [[Language Model]] distribution and the true language distribution bounds the achievable [[Machine Translation]] quality (Shannon 1948; Brown et al. 1993); minimising cross-entropy is the standard [[Language Model]] pretraining objective. Shannon's source-channel theorem grounds the classical noisy channel model of [[Machine Translation]] (the target language model as the channel prior, the translation model as the noisy channel) that underpinned IBM Models 1–5 and phrase-based statistical MT.
   - ## About

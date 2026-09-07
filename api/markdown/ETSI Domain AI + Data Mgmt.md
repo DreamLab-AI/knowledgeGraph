@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ETSI Domain AI Data Mgmt
----
-
-# ETSI Domain AI + Data Mgmt
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -106,71 +99,6 @@ aliases:
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-ai-data-mgmt:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:235ff84fb1cdf9469f9fcf06ebd45bc22bfe2f7ce9ff50be02cfba8581be4049"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ETSI Domain Taxonomy]]",
-      "resolved": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GS MEC]]",
-      "resolved": "urn:visionflow:linked:etsi-gs-mec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Intelligent Analytics Categorization]]",
-      "resolved": "urn:visionflow:linked:intelligent-analytics-categorization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ML Pipeline Classification]]",
-      "resolved": "urn:visionflow:linked:ml-pipeline-classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-research-area",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Domain AI]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -309,7 +237,7 @@ aliases:
     The domain's regulatory context is shaped by the [[EU AI Act]]'s documentation and transparency requirements for AI systems. Systems classified as high-risk under the Act must maintain technical documentation including descriptions of training data, data processing methodologies, and data governance measures — effectively mandating the adoption of [[Data Lineage]] tracking and [[ML Bill of Materials]] (ML-BOM) tooling. ETSI's standards work in this domain therefore addresses not only the technical architecture of AI data pipelines but the documentation, audit trail, and transparency infrastructure required for regulatory compliance. ETSI TS 104 008, which introduces a framework for Continuous Auditing-Based Conformity Assessment aligned with the EU AI Act, is directly relevant to AI + Data Mgmt standardisation, providing the conformity assessment framework within which data governance and pipeline documentation standards operate.
 
   ## Historical Development and Context
-    The emergence of ETSI Domain AI + Data Mgmt as a distinct cross-domain classification reflects the historical trajectory of intelligent network management standards at ETSI, which progressively incorporated data-driven and AI-powered approaches to network operations automation over the period 2014–2026. The foundational work was established by ETSI's ENI (Experiential Networked Intelligence) ISG, created in 2017 with a mandate to define AI-driven network management architectures that could replace manual and rule-based network operations with closed-loop autonomous systems. ENI's initial work identified the data management challenge as fundamental: building an AI engine capable of driving network policy management decisions required not merely an inference capability but a complete data pipeline ecosystem — ingestion, normalisation, feature extraction, model training, evaluation, deployment, and continuous monitoring — all operating in the demanding telecommunications network management context of high availability, low latency, and regulatory accountability.
+    The emergence of ETSI Domain AI + Data Mgmt as a distinct cross-domain classification reflects the historical trajectory of intelligent network management standards at ETSI, which progressively incorporated data-driven and AI-powered approaches to network operations automation over the period 2014–2026. The foundational work was established by ETSI's ENI (Experiential Networked Intelligence) ISG, created in 2017 with a mandate to define AI-driven network management architectures that [private] replace manual and rule-based network operations with closed-loop autonomous systems. ENI's initial work identified the data management challenge as fundamental: building an AI engine capable of driving network policy management decisions required not merely an inference capability but a complete data pipeline ecosystem — ingestion, normalisation, feature extraction, model training, evaluation, deployment, and continuous monitoring — all operating in the demanding telecommunications network management context of high availability, low latency, and regulatory accountability.
 
     The parallel development of the [[ETSI ISG MEC]] (Multi-Access Edge Computing) framework from 2014 onward established the compute substrate within which AI data pipelines in the domain operate. MEC Phase 1 and Phase 2 established the fundamental edge hosting environment and service APIs. Phase 3 (completed April 2024) addressed the complex heterogeneous cloud ecosystem that characterises modern network edge deployments, introducing federation, multi-domain, and multi-tenancy capabilities that enable AI services to operate across organisational and infrastructure boundaries. Phase 4 (current) explicitly incorporates AI-native edge operations as a priority, addressing the AI inference service exposure and AI data pipeline management requirements that the AI + Data Mgmt domain captures.
 

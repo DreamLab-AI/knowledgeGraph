@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Verifiable Random Function
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,4 +165,3 @@ public: true
   - Chainlink VRF brings on-chain randomness to smart contracts. A requester contract emits an event with a request ID and a random seed; a Chainlink node computes VRF(node_secret_key, seed) off-chain and submits the output and proof to a coordinator contract that verifies the proof on-chain before delivering the random value to the consumer contract. This pattern ensures that neither the requesting contract nor the Chainlink node can predict or manipulate the randomness after the request is submitted. VRF v2.5 adds subscription billing and batched fulfilment.
 
   - Distributed VRF (dVRF) and threshold VRF protocols distribute the private key across a committee of nodes using secret sharing, so the VRF output can only be computed when a threshold fraction of nodes cooperate. No single node can produce or bias the output alone, removing centralised trust in oracle randomness. These constructions are used by decentralised randomness beacons (drand, DFINITY's BLS threshold signatures) and are the preferred architecture for high-value on-chain randomness in DeFi and gaming applications.
-

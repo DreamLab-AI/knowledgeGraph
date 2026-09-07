@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Compliance Dashboard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -223,72 +218,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:compliance-dashboard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0d242a219ca1f647e8594fbab94ef248bda82070d97fd8530bdc1ab5a83909ea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Analytics Engine]]",
-      "resolved": "urn:visionflow:linked:analytics-engine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Monitoring]]",
-      "resolved": "urn:visionflow:linked:real-time-monitoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Risk Visualization]]",
-      "resolved": "urn:visionflow:linked:risk-visualization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Network]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Integration]]",
-      "resolved": "urn:visionflow:owl:class:data-integration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Reporting]]",
-      "resolved": "urn:visionflow:owl:class:regulatory-reporting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Technology]]",
-      "resolved": "urn:visionflow:owl:class:regulatory-technology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compliance to regulators through transparent reporting.

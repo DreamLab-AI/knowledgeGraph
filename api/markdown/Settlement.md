@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Settlement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,46 +179,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:settlement:a75c433ab2ae",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c8e21698f4fcf6ca2e243b4ca512a65c4409cc99ff64abed0e192028ac7ee212"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Atomic Settlement]]",
-      "resolved": "urn:visionflow:linked:atomic-settlement",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment System]]",
-      "resolved": "urn:visionflow:linked:payment-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Border Settlement]]",
-      "resolved": "urn:visionflow:linked:cross-border-settlement",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Infrastructure Domain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

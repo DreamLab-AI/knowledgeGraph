@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gnss
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -121,6 +117,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - A Global Navigation Satellite System (GNSS) is a constellation of satellites that broadcast timed signals enabling receivers to compute their absolute position, velocity and time anywhere on Earth. GPS, Galileo, GLONASS and BeiDou are the principal systems, with receivers trilaterating position from signal travel times across multiple satellites. In robotics, GNSS provides global geo-referenced localisation that anchors local sensor-based estimates to an absolute coordinate frame.
   - Related core concepts: [[Localisation]] [[GPS]] [[Autonomous Navigation]] [[Sensor Fusion]] [[Kalman Filter]]

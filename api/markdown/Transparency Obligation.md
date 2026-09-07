@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transparency Obligation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transparency-obligation:798a62e9e62a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3b1daca0bbfa53b0e50462ba9923aad54f5fb6090d870fc7ada472ed47aad702"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Regulation]]",
-      "resolved": "urn:visionflow:linked:ai-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:linked:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A transparency obligation is a regulatory duty to disclose how a system works or that it is in use, such as informing people when they interact with an AI system or with generated content.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Low Energy Consumption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,23 +55,56 @@ public: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:high-energy-consumption", "label": "High Energy Consumption"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:mining", "label": "Mining"}
+      {
+        "@id": "urn:ngm:class:high-energy-consumption",
+        "label": "High Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-sustainability", "label": "Blockchain Sustainability"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}
+      {
+        "@id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:proof-of-stake-sustainability", "label": "Proof Of Stake Sustainability"},
-      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake-sustainability",
+        "label": "Proof Of Stake Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:esg-investing", "label": "ESG Investing"}
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      }
     ]
   },
   "provenance": {
@@ -86,32 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:low-energy-consumption:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:37be8ac994f26f057f693f2f32327408af55c3e690f7f8c95716ad4a15888244"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Low Energy Consumption characterises blockchain consensus mechanisms, particularly Proof-of-Stake and BFT variants, that achieve network security through economic staking rather than computational work, consuming orders of magnitude less electricity than Proof-of-Work systems. This property is a primary driver of blockchain sustainability assessments and ESG compliance, enabling networks to operate at scale without significant environmental impact.

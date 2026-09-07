@@ -1,8 +1,3 @@
----
-public: true
----
-
-# THORChain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,67 +103,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:thorchain:61c2182f89d6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e9cf94d980ed71cdb9fa69423d0a3a34f4eb3617132d6ddff92362b44f2181ac"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Liquidity Pool]]",
-      "resolved": "urn:visionflow:linked:liquidity-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Validator]]",
-      "resolved": "urn:visionflow:linked:validator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Atomic Swap]]",
-      "resolved": "urn:visionflow:linked:atomic-swap",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:linked:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Exchange]]",
-      "resolved": "urn:visionflow:linked:decentralized-exchange",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Market Maker]]",
-      "resolved": "urn:visionflow:linked:automated-market-maker",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Bridge]]",
-      "resolved": "urn:visionflow:linked:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://thorchain.org/]]",
-      "resolved": "urn:visionflow:linked:https-thorchain-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A decentralised cross-chain liquidity protocol that lets users swap native assets across different blockchains without wrapping them or relying on a single custodian. It uses bonded validators and liquidity pools denominated in its native asset.

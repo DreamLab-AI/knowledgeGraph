@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sustainable Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,21 +52,54 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
-      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
-      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:carbon-neutral-blockchain", "label": "Carbon Neutral Blockchain"},
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
-      {"@id": "urn:ngm:class:environmental-accounting", "label": "Environmental Accounting"}
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-accounting",
+        "label": "Environmental Accounting"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +109,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sustainable-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:000a94e0918a6d834b58098cf67bc878b0bca73fc428bb6e2f6cef7cbeb7304c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - [Generated from Gartner emerging tech analysis]

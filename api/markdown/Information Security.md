@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Information Security
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -219,47 +214,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:information-security:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:383607a8d68da310da4004e1554040bdd86cb00b9decfbea6ea49d0b5c4446cd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Adversarial Machine Learning]]",
-      "resolved": "urn:visionflow:linked:adversarial-machine-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Secure Computation]]",
-      "resolved": "urn:visionflow:linked:secure-computation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Differential Privacy]]",
-      "resolved": "urn:visionflow:owl:class:differential-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Federated Learning]]",
-      "resolved": "urn:visionflow:owl:class:federated-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Information Security in AI addresses the protection of data, models, and AI systems from unauthorised access, adversarial attacks, privacy breaches, and malicious exploitation. Security measures encompass differential privacy, federated learning, robust training methods, secure multi-party computation, and encryption to ensure confidentiality, integrity, and availability of AI systems as critical infrastructure.

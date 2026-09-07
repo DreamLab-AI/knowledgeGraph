@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE 050 neuralrenderingtelepresence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,17 +55,38 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"}
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"},
-      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"}
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tele020virtualrealitytelepresence", "label": "TELE020virtualrealitytelepresence"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:tele020virtualrealitytelepresence",
+        "label": "TELE020virtualrealitytelepresence"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-050-neuralrenderingtelepresence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5114be99912c63cd006da3635fb6c7c94f18a2b37fe632cfddc0e6dc23b8e11e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Neural Rendering Telepresence (TELE 050) is a class of telepresence systems that replace conventional rasterisation pipelines with neural rendering techniques — including neural radiance fields, Gaussian splatting, and differentiable rendering — to reconstruct and transmit photorealistic volumetric representations of remote participants in real time. These approaches substantially reduce capture hardware requirements while improving perceptual fidelity and supporting free-viewpoint synthesis.

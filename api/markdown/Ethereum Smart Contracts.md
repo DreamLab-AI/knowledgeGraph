@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ethereum Smart Contracts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,52 +199,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ethereum-smart-contracts:1020d2482994",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d25911f56450f1c42d190cb87565f623b945a855b136ff9efea9aa876d792b6b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Virtual Machine]]",
-      "resolved": "urn:visionflow:linked:ethereum-virtual-machine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Solidity]]",
-      "resolved": "urn:visionflow:linked:solidity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ERC-20]]",
-      "resolved": "urn:visionflow:linked:erc-20",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Programs deployed to the Ethereum blockchain that execute deterministically on the Ethereum Virtual Machine and maintain state enforced by network consensus.

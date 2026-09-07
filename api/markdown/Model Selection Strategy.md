@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Selection Strategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "model-selection-strategy",
   "title": "Model Selection Strategy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Cost Optimization", "Agentic Workflows"],
+  "vc:outboundWikilinks": [
+    "AI Cost Optimization",
+    "Agentic Workflows"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}, {"@id": "urn:ngm:class:ai-inference-costs", "label": "AI Inference Costs"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference-costs",
+        "label": "AI Inference Costs"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

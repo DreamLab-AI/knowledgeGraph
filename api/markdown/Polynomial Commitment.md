@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Polynomial Commitment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -115,6 +111,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - A Polynomial Commitment is a cryptographic scheme that lets a prover commit to a polynomial with a short, binding value and later open the commitment at chosen evaluation points without revealing the whole polynomial. Verification of an opening is succinct and the commitment hides the polynomial until opened. Polynomial commitments are a core building block of modern succinct proof systems such as zk-SNARKs and zk-STARKs.
   - Related concepts: [[Cryptographic Commitment]] [[Commitment Scheme]] [[KZG Commitment]] [[Zero-Knowledge Proof]] [[Finite Field]]

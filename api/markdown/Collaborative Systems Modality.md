@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[collaborative]]
-# Collaborative Systems Modality
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,46 +47,56 @@ elevatedFrom:: [[collaborative]]
   },
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-operation", "label": "Collaborative Operation"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-operation",
+        "label": "Collaborative Operation"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"},
-      {"@id": "urn:ngm:class:realtime-collaboration", "label": "Realtime Collaboration"}
+      {
+        "@id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      },
+      {
+        "@id": "urn:ngm:class:realtime-collaboration",
+        "label": "Realtime Collaboration"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:collaborative:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:428b8c2492ddf10af2895951ac2aad0d608fa15c49128a400b4a27b8c3736795"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Collaborative describes the property of a system, tool, or process that is specifically designed for coordinated participation by multiple agents. In robotics this has a precise technical meaning: a collaborative robot (cobot) is one certified to operate in direct proximity with humans under the provisions of ISO/TS 15066, using speed-and-separation monitoring, power-and-force limiting, or hand-guiding modes rather than fixed perimeter guarding. In software and knowledge work, collaborative tools support concurrent editing, shared state, version control, and communication overlays.

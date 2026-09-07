@@ -1,58 +1,112 @@
----
-public: true
----
-
-# File Storage
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:file-storage", "@type":"Page", "title":"File Storage", "vc:slug":"file-storage", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:file-storage",
+  "@type": "Page",
+  "title": "File Storage",
+  "vc:slug": "file-storage",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:file-storage",
-  "@type":"Class",
-  "label":"File Storage",
-  "definition":"File storage is a storage model that organises data as named files within a hierarchical directory tree, accessed through file-system semantics such as open, read, write and seek. It presents a familiar path-based namespace and is typically shared over network protocols for concurrent access. File storage contrasts with block storage, which exposes raw volumes, and object storage, which uses a flat namespace of objects addressed by key.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:storage-infrastructure","label":"Storage Infrastructure"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:file-system","label":"File System"},
-      {"@id":"urn:ngm:class:data-storage-layer","label":"Data Storage Layer"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:file-storage",
+  "@type": "Class",
+  "label": "File Storage",
+  "definition": "File storage is a storage model that organises data as named files within a hierarchical directory tree, accessed through file-system semantics such as open, read, write and seek. It presents a familiar path-based namespace and is typically shared over network protocols for concurrent access. File storage contrasts with block storage, which exposes raw volumes, and object storage, which uses a flat namespace of objects addressed by key.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:block-storage","label":"Block Storage"},
-      {"@id":"urn:ngm:class:object-storage","label":"Object Storage"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:file-system","label":"File System"},
-      {"@id":"urn:ngm:class:distributed-storage","label":"Distributed Storage"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:data-persistence","label":"Data Persistence"},
-      {"@id":"urn:ngm:class:cloud-storage","label":"Cloud Storage"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:backup-and-recovery","label":"Backup and Recovery"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:data-storage-layer","label":"Data Storage Layer"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:storage-infrastructure","label":"Storage Infrastructure"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:object-storage","label":"Object Storage"},
-      {"@id":"urn:ngm:class:block-storage","label":"Block Storage"},
-      {"@id":"urn:ngm:class:cloud-storage","label":"Cloud Storage"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "@id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

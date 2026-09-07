@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Production Workflow
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:design-software", "label": "Design Software"},
-      {"@id": "urn:ngm:class:content-production-workflow", "label": "Content Production Workflow"}
+      {
+        "@id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      },
+      {
+        "@id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:film-production", "label": "Film Production"},
-      {"@id": "urn:ngm:class:world-building", "label": "World Building"}
+      {
+        "@id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "@id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "provenance": {
@@ -87,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-production-workflow:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:13190b890fc8aa05792d6e1e01667c4cc0bda3412a8eb8cc9840348319965ad0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Production Pipeline]]",
-      "resolved": "urn:visionflow:owl:class:production-pipeline",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The end-to-end process for creating film and television content using virtual production techniques, integrating pre-visualization, virtual art department asset creation, real-time game engine rendering, LED volume shooting, and post-production refinement in a non-linear pipeline where VFX work begins in pre-production rather than post-production.

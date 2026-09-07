@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proteus Effect
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,18 +75,42 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:vr-psychology", "label": "VR Psychology"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
-      {"@id": "urn:ngm:class:avatar-customization", "label": "Avatar Customization"}
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:vr-psychology",
+        "label": "VR Psychology"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      }
     ]
   },
   "provenance": {
@@ -101,57 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:proteus-effect:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:beba138e7f6fb7010d25a63784525a1780b8a5e7f0e261b1ab0520fc8d7e6c80"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar Identity]]",
-      "resolved": "urn:visionflow:linked:avatar-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Embodiment]]",
-      "resolved": "urn:visionflow:linked:digital-embodiment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Psychology]]",
-      "resolved": "urn:visionflow:linked:virtual-psychology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social Presence]]",
-      "resolved": "urn:visionflow:owl:class:social-presence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Group Dynamics]]",
-      "resolved": "urn:visionflow:owl:class:virtual-group-dynamics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Proteus Effect is the phenomenon whereby the visual characteristics of a user's digital avatar unconsciously shape that user's own behaviour, attitudes, and self-perception within virtual environments. Users assigned taller or more attractive avatars exhibit corresponding shifts in confidence and social openness, while users embodying outgroup avatars show reduced implicit bias. The effect arises through self-perception theory, stereotype activation, and embodied cognition, with direct implications for therapeutic applications, metaverse platform design, and ethical avatar-assignment practices.

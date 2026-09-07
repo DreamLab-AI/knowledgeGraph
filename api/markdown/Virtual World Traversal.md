@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual World Traversal
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,21 +50,54 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse-technology", "label": "Metaverse Technology"}
+      {
+        "@id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:navigation", "label": "Navigation"},
-      {"@id": "urn:ngm:class:virtual-presence", "label": "Virtual Presence"},
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-presence",
+        "label": "Virtual Presence"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
-      {"@id": "urn:ngm:class:open-world", "label": "Open World"},
-      {"@id": "urn:ngm:class:world-building", "label": "World Building"},
-      {"@id": "urn:ngm:class:scene-management", "label": "Scene Management"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:open-world",
+        "label": "Open World"
+      },
+      {
+        "@id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      },
+      {
+        "@id": "urn:ngm:class:scene-management",
+        "label": "Scene Management"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ]
   },
   "quality": 0.8,
@@ -80,32 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-world-traversal:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b26ef48f3095382442651b4c5db06961ac68bba8ac4208dfac4c15e8fa2476ed"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Virtual World Traversal is a concept within the mv domain.

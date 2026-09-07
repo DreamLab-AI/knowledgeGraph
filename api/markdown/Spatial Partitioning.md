@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Partitioning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -119,6 +115,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Spatial partitioning is the technique of subdividing a space into non-overlapping or hierarchically nested regions so that objects can be organised by location and queried efficiently. By grouping nearby objects and pruning regions that cannot contain a query result, it reduces the cost of operations such as collision detection, ray casting, nearest-neighbour search and visibility culling from quadratic toward logarithmic or linear scaling. Common structures include grids, quadtrees, octrees, k-d trees, binary space partitioning trees and bounding-volume hierarchies, each trading construction cost against query performance for particular workloads.
   - Related core concepts: [[Spatial Data Structure]] [[Collision Detection]] [[Bounding Volume Hierarchy]] [[Computational Geometry]]

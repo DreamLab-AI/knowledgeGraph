@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Land Parcel
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:land-parcel:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1444276b0129e09658cc436f9d975dde0cbab5d614ee5238995a202302a2647b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaverse Development]]",
-      "resolved": "urn:visionflow:linked:metaverse-development",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Asset]]",
-      "resolved": "urn:visionflow:owl:class:virtual-asset",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Discrete units of virtual real estate within metaverse platforms, represented as NFTs that provide proof of ownership for programmable digital spaces where users can build, socialise, host events, and conduct commercial activities.

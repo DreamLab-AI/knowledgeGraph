@@ -1,8 +1,3 @@
----
-public: true
----
-
-# End-to-End Encrypted Collaboration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,15 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-protocol-and-infra", "label": "Protocol and Infrastructure"}
+    {
+      "@id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:matrix-protocol", "label": "Matrix Protocol"},
-      {"@id": "urn:ngm:class:local-first-software", "label": "Local-First Software"}
+      {
+        "@id": "urn:ngm:class:matrix-protocol",
+        "label": "Matrix Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:local-first-software",
+        "label": "Local-First Software"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time-synchronisation", "label": "Real-Time Synchronisation"}
+      {
+        "@id": "urn:ngm:class:real-time-synchronisation",
+        "label": "Real-Time Synchronisation"
+      }
     ]
   },
   "quality": 0.7

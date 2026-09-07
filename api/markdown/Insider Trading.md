@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Insider Trading
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,7 +103,7 @@ public: true
 
   **Insider trading** is the trading of a company's shares, bonds, or derivatives by people who possess material, non-public information about that company — directors, officers, employees, advisers, or anyone who receives such information in breach of a duty of confidence. The conduct is unlawful when the information would be expected to move the security's price and the trader either owes a fiduciary duty to shareholders or has misappropriated the information from its source. Tipping — passing inside information to others who then trade — is equally prohibited.
 
-  The prohibition rests on the premise that fair markets require broadly equal access to price-sensitive information. When insiders trade ahead of announcements such as merger negotiations, earnings surprises, or regulatory decisions, they extract value from counterparties who could not have known what the insider knew. This corrodes [[Market Integrity]] and weakens [[Investor Protection]], raising the cost of capital as ordinary investors demand compensation for the risk of trading against better-informed parties.
+  The prohibition rests on the premise that fair markets require broadly equal access to price-sensitive information. When insiders trade ahead of announcements such as merger negotiations, earnings surprises, or regulatory decisions, they extract value from counterparties who [private] not have known what the insider knew. This corrodes [[Market Integrity]] and weakens [[Investor Protection]], raising the cost of capital as ordinary investors demand compensation for the risk of trading against better-informed parties.
 
   Not all trading by insiders is illegal. Executives may lawfully buy and sell their own company's shares provided they do not hold inside information at the time, disclose their dealings, and, in many jurisdictions, trade only within scheduled windows or under pre-arranged plans such as the SEC's Rule 10b5-1 arrangements. The legal line is drawn at the informational advantage, not at the identity of the trader.
 

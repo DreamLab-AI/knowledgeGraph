@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Climate Scenario Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

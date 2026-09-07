@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Audit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -245,127 +240,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-audit:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:671e78a943261a09cfc203f08524d77d6692f6f4ed3bc854379780a62a2d6d68"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[access to systems and personnel]]",
-      "resolved": "urn:visionflow:linked:access-to-systems-and-personnel",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI documentation]]",
-      "resolved": "urn:visionflow:linked:ai-documentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Conformity Assessment]]",
-      "resolved": "urn:visionflow:linked:conformity-assessment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Internal Audit]]",
-      "resolved": "urn:visionflow:linked:internal-audit",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 19011]]",
-      "resolved": "urn:visionflow:linked:iso-19011",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23894:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 5338:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-5338-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI Risk Management Framework]]",
-      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Third-Party Certification]]",
-      "resolved": "urn:visionflow:linked:third-party-certification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:owl:class:accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Impact Assessment]]",
-      "resolved": "urn:visionflow:owl:class:ai-impact-assessment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Monitoring]]",
-      "resolved": "urn:visionflow:owl:class:ai-monitoring",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quality Assurance]]",
-      "resolved": "urn:visionflow:owl:class:quality-assurance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transparency]]",
-      "resolved": "urn:visionflow:owl:class:transparency",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A systematic, independent examination and evaluation of an artificial intelligence system's design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify conformity with specified standards, regulations, ethical principles, or organisational policies, and to identify deficiencies, risks, or opportunities for improvement, producing documented findings and recommendations that support accountability, transparency, and continuous enhancement of AI system trustworthiness.
@@ -620,7 +494,7 @@ public: true
 
 		  **ISO/IEC 42001:2023**, the AI management systems standard, experienced rapid adoption throughout 2024-2025, with major certification bodies (BSI, TÜV, SGS, CSA) certifying hundreds of organisations. This created substantial demand for **ISO 42001 auditors** capable of conducting certification audits.
 
-		  **IAF MD 4:2023** explicitly included AI under information and communication technology (ICT), establishing that AI systems fell within the scope of conformity assessment and could be audited both locally and remotely. Auditors assessing ISO 42001 compliance evaluated:
+		  **IAF MD 4:2023** explicitly included AI under information and communication technology (ICT), establishing that AI systems fell within the scope of conformity assessment and [private] be audited both locally and remotely. Auditors assessing ISO 42001 compliance evaluated:
 
 		  - **Clause 4**: Organisational context and stakeholder needs understanding
 		  - **Clause 5**: Leadership commitment and AI policy establishment
@@ -704,7 +578,7 @@ public: true
 
 		  However, automated tools addressed only **technical audit dimensions**. Process audit (development procedures), governance audit (oversight mechanisms), and impact audit (real-world effects) required human judgement resistant to automation.
 
-		  Paradoxically, using AI to audit AI raised **second-order questions**: Were audit tools themselves fair, robust, and transparent? Tool bugs or biases could produce misleading audit findings, creating certification risks.
+		  Paradoxically, using AI to audit AI raised **second-order questions**: Were audit tools themselves fair, robust, and transparent? Tool bugs or biases [private] produce misleading audit findings, creating certification risks.
 
 		  ### Cost and Accessibility Challenges
 

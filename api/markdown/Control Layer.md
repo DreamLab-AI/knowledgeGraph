@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Control Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:control-layer:2204f8019ac4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:de17278f132e9b74050a21a825b67bb18f7628fca6d9d5a278406c55b51c098f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Perception Layer]]",
-      "resolved": "urn:visionflow:linked:perception-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agent Layer]]",
-      "resolved": "urn:visionflow:linked:agent-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Coordination Layer]]",
-      "resolved": "urn:visionflow:linked:coordination-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Control Theory]]",
-      "resolved": "urn:visionflow:linked:control-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feedback Loop]]",
-      "resolved": "urn:visionflow:linked:feedback-loop",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Control Layer is the stratum that issues commands to actuators or subsystems to drive a system toward desired states. It sits above the Perception Layer, on whose estimates it acts, and below planning and agent strata that set goals. It contains controllers, feedback loops, set-point logic, and the actuation interfaces that effect change.

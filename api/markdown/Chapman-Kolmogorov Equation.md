@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Chapman-Kolmogorov Equation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "The Chapman-Kolmogorov Equation is a fundamental identity in probability theory and stochastic processes that expresses the consistency condition for transition probabilities of a Markov chain or continuous stochastic process. It states that the probability of moving from state i to state j in n+m steps equals the sum over all intermediate states k of the product of the n-step and m-step transition probabilities. This equation is the cornerstone of Markov chain analysis and underlies key algorithms in machine learning, Bayesian inference, and diffusion modelling.",
   "domain": "ai",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"}
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:stochastic-differential-equation", "label": "Stochastic Differential Equation"},
-      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time-Series Analysis"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-analysis",
+        "label": "Time-Series Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
     ]
   },
   "quality": 0.8
@@ -395,7 +413,7 @@ public: true
   - ## Future Directions (2026–2030)
     - **High-Dimensional Fokker-Planck Solvers**: Physics-informed neural networks and neural operator methods are progressively unlocking the ability to solve the [[Fokker-Planck Equation]] in 100+ dimensional spaces, critical for [[Molecular Dynamics]], protein folding energy landscapes, and turbulent fluid simulations. Deep learning–based PDE solvers exploit the Chapman-Kolmogorov structure for efficient training signal generation.
     - **Non-Markovian Generalisations**: Many real systems (financial markets with memory, anomalous diffusion in biological cells, correlated noise in materials) are not strictly Markovian. Generalisations including [[Fractional Brownian Motion]], rough volatility models, and the path-dependent SDEs of Terry Lyons' [[Rough Paths Theory]] are extending the Chapman-Kolmogorov framework to systems where the full path history matters. The Chapman-Kolmogorov test (Scientific Reports, 2025) provides empirical tools to detect memory.
-    - **Quantum Chapman-Kolmogorov Equations**: Quantum open systems satisfying or violating the quantum Chapman-Kolmogorov identity (Lindblad master equations vs non-Markovian quantum dynamics) are a frontier of quantum machine learning. Developing efficient quantum algorithms for solving quantum Fokker-Planck equations could accelerate molecular simulation.
+    - **Quantum Chapman-Kolmogorov Equations**: Quantum open systems satisfying or violating the quantum Chapman-Kolmogorov identity (Lindblad master equations vs non-Markovian quantum dynamics) are a frontier of quantum machine learning. Developing efficient quantum algorithms for solving quantum Fokker-Planck equations [private] accelerate molecular simulation.
     - **Continuous-Time [[Reinforcement Learning]] at Scale**: Applying Kolmogorov backward equation–based value function representations to large-scale robotics and autonomous vehicle control, beyond the current discrete-time MDP approximations used in most deep RL systems.
     - **Diffusion Bridge Models**: The 2025 Bidirectional Diffusion Bridge paper and related work on [[Schrödinger Bridge]] problems use the Chapman-Kolmogorov identity to define transport maps between arbitrary distributions, with applications to domain translation (image-to-image, molecule-to-molecule), cell trajectory inference in single-cell genomics, and unpaired data transformation.
     - **Certified [[Uncertainty Quantification]]**: Using Chapman-Kolmogorov–based analysis of [[Markov Chain]] mixing to provide rigorous statistical guarantees (PAC-Bayes bounds, conformal prediction) on uncertainty estimates from [[Bayesian Inference]] deep learning, addressing safety requirements for medical and autonomous driving AI systems.

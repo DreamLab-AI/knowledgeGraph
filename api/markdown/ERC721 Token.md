@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ERC721 Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -66,34 +61,88 @@ public: true
       }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:nft-ownership-proof", "label": "NFT Ownership Proof"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:nft-ownership-proof",
+        "label": "NFT Ownership Proof"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:erc721-standard", "label": "ERC721 Standard"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"}
+      {
+        "@id": "urn:ngm:class:erc721-standard",
+        "label": "ERC721 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
-      {"@id": "urn:ngm:class:nft-minting", "label": "NFT Minting"},
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
-      {"@id": "urn:ngm:class:fractionalized-nft", "label": "Fractionalized NFT"}
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:fractionalized-nft",
+        "label": "Fractionalized NFT"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
-      {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"},
-      {"@id": "urn:ngm:class:erc1155-token", "label": "ERC1155 Token"}
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "@id": "urn:ngm:class:erc1155-token",
+        "label": "ERC1155 Token"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenization"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:erc721", "label": "ERC721"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+      {
+        "@id": "urn:ngm:class:erc721",
+        "label": "ERC721"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
     ]
   },
   "provenance": {
@@ -103,37 +152,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:erc721-token:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2780a532b4dc920b658dbcd520d4ef1f3f5290b1a9603747dce6d8492e0d2da8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Non Fungible Token]]",
-      "resolved": "urn:visionflow:linked:non-fungible-token",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   An ERC721 Token is a non-fungible token (NFT) on the Ethereum blockchain that implements the ERC-721 open standard, which assigns each token a unique integer identifier and tracks ownership via the ownerOf(tokenId) function. Unlike fungible ERC-20 tokens, every ERC-721 token is distinct and non-interchangeable, enabling verifiable digital ownership of unique assets such as digital art, collectibles, in-game items, and real-world asset representations on decentralised marketplaces.

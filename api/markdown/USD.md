@@ -1,8 +1,3 @@
----
-public: true
----
-
-# USD
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,52 +157,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:usd:d60fbd8718ec",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9ed502365827686d514aa52ce992b07e9f2d44d2815eb01066a947c94b2f5b42"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[USDC]]",
-      "resolved": "urn:visionflow:linked:usdc",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[USDT]]",
-      "resolved": "urn:visionflow:linked:usdt",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Store of Value]]",
-      "resolved": "urn:visionflow:linked:store-of-value",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Currency]]",
-      "resolved": "urn:visionflow:linked:digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Money]]",
-      "resolved": "urn:visionflow:linked:money",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The United States dollar, the fiat currency issued by the United States and the dominant unit against which most digital assets and stablecoins are quoted and redeemed.

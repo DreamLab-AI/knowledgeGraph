@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sustainable Development
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,47 +167,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sustainable-development:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f60801a6cf1694e4c33e710286ae507dc969033a5f23927684bdb626fb994d8a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[computational sustainability]]",
-      "resolved": "urn:visionflow:linked:computational-sustainability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Green AI]]",
-      "resolved": "urn:visionflow:linked:green-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[sustainable AI operations]]",
-      "resolved": "urn:visionflow:linked:sustainable-ai-operations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - AI should contribute to the United Nations Sustainable Development Goals by addressing global challenges including climate change, resource depletion, biodiversity loss, and environmental degradation whilst ensuring development meets present needs without compromising future generations' ability to meet their own needs.
 
@@ -252,7 +206,7 @@ public: true
 
   - ### Study Details
   - **Publication**: The study, titled "From Mining to Mitigation: How Bitcoin Can Support Renewable Energy Development and Climate Action," was published in ACS Sustainable Chemistry & Engineering.
-		- The Aktina Solar and Roseland Solar Projects, each with 250 MW capacities, could gain a maximum profit of $3.23 million.
+		- The Aktina Solar and Roseland Solar Projects, each with 250 MW capacities, [private] gain a maximum profit of $3.23 million.
   - **Emission Mitigation**: The Bitcoin network mitigated 7.3% of its emissions without relying on offsets, a notable achievement across industries.
   - **Expansion of Renewable Mining**: The expansion includes Tether’s hydro mining in Latin America and more methane-mitigating mining sites.
   - [Link to the article](https://crypto.news/bitcoin-mining-reaches-new-all-time-high-of-54-renewable-use/)
@@ -267,7 +221,7 @@ public: true
 
   - ### Study Details
   - **Publication**: The study, titled "From Mining to Mitigation: How Bitcoin Can Support Renewable Energy Development and Climate Action," was published in ACS Sustainable Chemistry & Engineering.
-		- The Aktina Solar and Roseland Solar Projects, each with 250 MW capacities, could gain a maximum profit of $3.23 million.
+		- The Aktina Solar and Roseland Solar Projects, each with 250 MW capacities, [private] gain a maximum profit of $3.23 million.
   - **Emission Mitigation**: The Bitcoin network mitigated 7.3% of its emissions without relying on offsets, a notable achievement across industries.
   - **Expansion of Renewable Mining**: The expansion includes Tether’s hydro mining in Latin America and more methane-mitigating mining sites.
   - [Link to the article](https://crypto.news/bitcoin-mining-reaches-new-all-time-high-of-54-renewable-use/)

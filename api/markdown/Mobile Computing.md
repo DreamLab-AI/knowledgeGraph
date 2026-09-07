@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Mobile Computing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

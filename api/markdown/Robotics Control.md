@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robotics Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,47 +186,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robotics-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:508f14ad3f03ac4f1d294fa70a80657e5f8bfaec4a29913e9be340fc2a717498"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Planning]]",
-      "resolved": "urn:visionflow:owl:class:motion-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:owl:class:sensor-fusion",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Robotics Control integrates artificial intelligence with robotic systems to enable autonomous navigation, manipulation, perception, and task execution. AI-driven control employs reinforcement learning for policy optimization, computer vision for perception, motion planning algorithms, and sensor fusion. Key challenges include real-time decision-making, handling uncertainty, sim-to-real transfer, and safety assurance. Modern approaches leverage deep learning for visuomotor control, imitation learning from demonstrations, and meta-learning for rapid adaptation to new tasks and environments.

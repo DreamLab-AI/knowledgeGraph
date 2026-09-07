@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ai safety research
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -210,57 +205,165 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:corrigibility", "label": "Corrigibility"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:mechanistic-interpretability", "label": "Mechanistic Interpretability"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
-      {"@id": "urn:ngm:class:adversarial-machine-learning", "label": "Adversarial Machine Learning"},
-      {"@id": "urn:ngm:class:value-learning", "label": "Value Learning"},
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"}
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:value-learning",
+        "label": "Value Learning"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:decision-theory", "label": "Decision Theory"},
-      {"@id": "urn:ngm:class:robustness", "label": "Robustness"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
-      {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"},
-      {"@id": "urn:ngm:class:fairness-in-machine-learning", "label": "Fairness in Machine Learning"},
-      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"},
-      {"@id": "urn:ngm:class:reward-hacking", "label": "Reward Hacking"},
-      {"@id": "urn:ngm:class:specification-gaming", "label": "Specification Gaming"},
-      {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"}
+      {
+        "@id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "@id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness in Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "@id": "urn:ngm:class:specification-gaming",
+        "label": "Specification Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-capabilities-research", "label": "AI Capabilities Research"}
+      {
+        "@id": "urn:ngm:class:ai-capabilities-research",
+        "label": "AI Capabilities Research"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous Systems"}
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-    {"@id": "urn:ngm:class:safe-ai-development", "label": "Safe AI Development"}
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "@id": "urn:ngm:class:safe-ai-development",
+      "label": "Safe AI Development"
+    }
   ],
   "quality": 0.88,
   "provenance": {
@@ -497,7 +600,7 @@ public: true
 
   AI Safety Research has accumulated a substantial body of empirical findings that characterise the magnitude and nature of key safety challenges. These findings provide the quantitative basis for risk assessments in AI governance frameworks, including [[AI Risk Register]] entries for safety-relevant failure modes.
 
-  On **adversarial robustness**: Goodfellow et al.'s (2014) original adversarial examples work demonstrated that imperceptible perturbations to image inputs could cause state-of-the-art classifiers to fail with near-100% success rate. This fundamental vulnerability has been confirmed across modalities — text, audio, and multimodal inputs — and across model architectures. Certified defence methods (randomised smoothing) provide worst-case robustness guarantees but typically reduce clean accuracy by 5-15 percentage points, representing an explicit safety-performance trade-off that must be documented in risk registers for adversarial robustness risk entries.
+  On **adversarial robustness**: Goodfellow et al.'s (2014) original adversarial examples work demonstrated that imperceptible perturbations to image inputs [private] cause state-of-the-art classifiers to fail with near-100% success rate. This fundamental vulnerability has been confirmed across modalities — text, audio, and multimodal inputs — and across model architectures. Certified defence methods (randomised smoothing) provide worst-case robustness guarantees but typically reduce clean accuracy by 5-15 percentage points, representing an explicit safety-performance trade-off that must be documented in risk registers for adversarial robustness risk entries.
 
   On **distributional shift and model drift**: studies of deployed clinical AI systems have documented performance degradation of 5-20% on key metrics as deployment populations diverge from training populations over 12-24 month periods. A 2024 study of cardiac surgery risk prediction models documented both dataset drift and performance drift within 18 months of deployment, highlighting the requirement for continuous monitoring with defined retraining thresholds — quantitative evidence that feeds directly into [[Model Drift]] risk entries in AI risk registers.
 

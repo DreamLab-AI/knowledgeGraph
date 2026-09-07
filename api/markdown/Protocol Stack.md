@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Protocol Stack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A protocol stack is the layered set of network protocols that cooperate to provide communication services, where each layer offers services to the layer above and uses services of the layer below. Canonical examples are the OSI seven-layer model and the TCP/IP suite. Layering isolates concerns such as physical transmission, routing, transport reliability, and application semantics, enabling modular interoperable networking.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-communication", "label": "Network Communication"},
-      {"@id": "urn:ngm:class:network-layer", "label": "Network Layer"}
+      {
+        "@id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
     ]
   },
   "quality": 0.72

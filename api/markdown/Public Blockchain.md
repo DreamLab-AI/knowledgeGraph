@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - PublicBlockchain
----
-
-# Public Blockchain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -229,77 +222,6 @@ aliases:
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:public-blockchain:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8d9d5fd1b78c2959638c769d97645ada9c9319be4a9f79b3040144f9656cf77f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[User Sovereignty]]",
-      "resolved": "urn:visionflow:linked:user-sovereignty",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UserSovereignty]]",
-      "resolved": "urn:visionflow:linked:user-sovereignty",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cardano]]",
-      "resolved": "urn:visionflow:owl:class:cardano",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Censorship Resistance]]",
-      "resolved": "urn:visionflow:owl:class:censorship-resistance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CensorshipResistance]]",
-      "resolved": "urn:visionflow:owl:class:censorship-resistance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:owl:class:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Immutability]]",
-      "resolved": "urn:visionflow:owl:class:immutability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[PermissionedBlockchain|permissioned alternatives]]",
-      "resolved": "urn:visionflow:owl:class:permissioned-blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority, including [[Bitcoin Proof-of-Work Protocol]], [[Ethereum Smart Contract Platform]], and [[Cardano]], providing [[Censorship Resistance]], [[Immutability]], and [[User Sovereignty]] whilst sacrificing scalability and energy efficiency compared to private alternatives.

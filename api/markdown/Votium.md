@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Votium
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:votium:7fb6d0f4fabb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:feea43a0255384610ceb105c83bea1acd41397f99135e1aa5d4f97ae743038f3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Gauge Voting]]",
-      "resolved": "urn:visionflow:linked:gauge-voting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Convex Finance]]",
-      "resolved": "urn:visionflow:linked:convex-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tokenomics]]",
-      "resolved": "urn:visionflow:linked:tokenomics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Curve Finance]]",
-      "resolved": "urn:visionflow:linked:curve-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hidden Hand]]",
-      "resolved": "urn:visionflow:linked:hidden-hand",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Votium is a marketplace on Ethereum where protocols pay holders of vote-escrowed CRV to direct Curve gauge emissions. It operates as a bribery market for governance influence.

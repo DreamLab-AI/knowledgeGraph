@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Model Debugging
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:model-debugging", "@type":"Page", "title":"Model Debugging", "vc:slug":"model-debugging", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:model-debugging",
+  "@type": "Page",
+  "title": "Model Debugging",
+  "vc:slug": "model-debugging",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -120,6 +125,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - Model debugging is the disciplined practice of finding and fixing why a [[Machine Learning Model]] behaves incorrectly. It draws on [[Error Analysis]], [[Explainable AI]] and [[Model Interpretability]] to convert opaque statistical failures into actionable diagnoses, and it sits inside the broader practice of [[Model Evaluation]].
 - ### Overview

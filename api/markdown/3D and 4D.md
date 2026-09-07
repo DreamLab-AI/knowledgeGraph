@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D and 4D
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,19 +159,46 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ]
   },
   "quality": 0.5,
@@ -187,167 +209,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-d-and-4-d:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ef4e7b461971847dc31569f579e052b5132c284c6fa8a396fbaf72a735cabe6b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[automation]]",
-      "resolved": "urn:visionflow:linked:automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[community]]",
-      "resolved": "urn:visionflow:linked:community",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[decision making]]",
-      "resolved": "urn:visionflow:linked:decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[design thinking]]",
-      "resolved": "urn:visionflow:linked:design-thinking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[documentation]]",
-      "resolved": "urn:visionflow:linked:documentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[innovation]]",
-      "resolved": "urn:visionflow:linked:innovation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[modeling]]",
-      "resolved": "urn:visionflow:linked:modeling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[neural networks]]",
-      "resolved": "urn:visionflow:linked:neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[open source]]",
-      "resolved": "urn:visionflow:linked:open-source",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[optimization]]",
-      "resolved": "urn:visionflow:linked:optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[organisation]]",
-      "resolved": "urn:visionflow:linked:organisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[performance]]",
-      "resolved": "urn:visionflow:linked:performance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[research]]",
-      "resolved": "urn:visionflow:linked:research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[scalability]]",
-      "resolved": "urn:visionflow:linked:scalability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[skills development]]",
-      "resolved": "urn:visionflow:linked:skills-development",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[user experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[visualization]]",
-      "resolved": "urn:visionflow:linked:visualization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[artificial intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[bias]]",
-      "resolved": "urn:visionflow:owl:class:bias",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[collaboration]]",
-      "resolved": "urn:visionflow:owl:class:collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[computer vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[data management]]",
-      "resolved": "urn:visionflow:owl:class:data-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[deep learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[machine learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[natural language processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[software engineering]]",
-      "resolved": "urn:visionflow:owl:class:software-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[training]]",
-      "resolved": "urn:visionflow:owl:class:training",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The domain of three-dimensional and four-dimensional content creation, covering AI-powered pipelines for generating, editing, and rendering 3D assets and temporally dynamic (4D) representations. Encompasses text-to-3D systems, neural radiance fields, Gaussian splatting, diffusion-based mesh generation, 6D pose estimation, and scene-scale generation integrated with AR/VR workflows.
@@ -561,7 +422,7 @@ public: true
   - The system offers control over object categories during generation, allowing users to specify the type of 3D shape produced.
   - The generated assets are compatible with standard rendering pipelines and can be readily integrated into existing 3D scenes.
   - The research demonstrates significant improvements in 3D shape quality and texture detail compared to previous generative models.
-  - This technology could be used for rapid prototyping, game development, and creation of virtual environments.
+  - This technology [private] be used for rapid prototyping, game development, and creation of virtual environments.
   - GET3D aims to democratise 3D content creation by simplifying the process and reducing reliance on expert 3D modellers.
 		- [Point·E GitHub](https://github.com/openai/point-e) - - Point-E is a system developed by OpenAI for efficiently creating 3D point clouds from text prompts.
   - It offers a fast and direct method for 3D object generation, bypassing the slower and more complex process of first creating a mesh and then rendering.
@@ -705,7 +566,7 @@ public: true
   - The 3D room models are represented as occupancy grids, indicating whether a space is occupied or empty.
   - The system's performance is judged on its ability to generate realistic and textually accurate 3D rooms.
   - The project explores the potential of [[artificial intelligence]] to interpret and visualise text in three dimensions.
-  - Future work could involve improving the resolution and detail of generated rooms, incorporating colour, and adding more interactive elements.
+  - Future work [private] involve improving the resolution and detail of generated rooms, incorporating colour, and adding more interactive elements.
 		- [VMesh](https://bennyguo.github.io/vmesh/) - //bennyguo.github.io/vmesh/ and formatting as requested:
   -   Vmesh is a programmable service mesh built with Cilium, focusing on enhanced visibility, control, and security for microservice architectures.
   -   It allows users to programme the data plane of their service mesh using WebAssembly (Wasm) filters, offering flexibility in customising network traffic processing.

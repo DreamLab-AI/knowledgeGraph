@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Corrigibility
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -13,37 +8,130 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:owl:class:ai-safety", "vc:label": "AI Safety" },
-    { "@id": "urn:visionflow:owl:class:value-alignment", "vc:label": "Value Alignment" },
-    { "@id": "urn:visionflow:owl:class:ai-alignment", "vc:label": "AI Alignment" },
-    { "@id": "urn:visionflow:owl:class:human-in-the-loop", "vc:label": "Human-in-the-Loop" },
-    { "@id": "urn:visionflow:owl:class:reinforcement-learning", "vc:label": "Reinforcement Learning" },
-    { "@id": "urn:visionflow:owl:class:reward-hacking", "vc:label": "Reward Hacking" },
-    { "@id": "urn:visionflow:owl:class:interpretability", "vc:label": "Interpretability" },
-    { "@id": "urn:visionflow:owl:class:transparency", "vc:label": "Transparency" },
-    { "@id": "urn:visionflow:owl:class:accountability", "vc:label": "Accountability" },
-    { "@id": "urn:visionflow:owl:class:robustness", "vc:label": "Robustness" },
-    { "@id": "urn:visionflow:owl:class:existential-risk", "vc:label": "Existential Risk" },
-    { "@id": "urn:visionflow:owl:class:responsible-ai", "vc:label": "Responsible AI" },
-    { "@id": "urn:visionflow:owl:class:scalable-oversight", "vc:label": "Scalable Oversight" },
-    { "@id": "urn:visionflow:owl:class:constitutional-ai", "vc:label": "Constitutional AI" },
-    { "@id": "urn:visionflow:owl:class:mesa-optimisation", "vc:label": "Mesa-Optimisation" },
-    { "@id": "urn:visionflow:owl:class:governance", "vc:label": "Governance" },
-    { "@id": "urn:visionflow:owl:class:human-oversight", "vc:label": "Human Oversight" },
-    { "@id": "urn:visionflow:owl:class:instrumental-convergence", "vc:label": "Instrumental Convergence" },
-    { "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback" },
-    { "@id": "urn:visionflow:owl:class:mechanistic-interpretability", "vc:label": "Mechanistic Interpretability" },
-    { "@id": "urn:visionflow:owl:class:ai-governance", "vc:label": "AI Governance" },
-    { "@id": "urn:visionflow:owl:class:eu-ai-act", "vc:label": "EU AI Act" },
-    { "@id": "urn:visionflow:owl:class:direct-preference-optimisation", "vc:label": "Direct Preference Optimisation" },
-    { "@id": "urn:visionflow:owl:class:autonomous-agent", "vc:label": "Autonomous Agent" },
-    { "@id": "urn:visionflow:owl:class:multi-agent-system", "vc:label": "Multi-Agent System" },
-    { "@id": "urn:visionflow:owl:class:red-teaming", "vc:label": "Red Teaming" },
-    { "@id": "urn:visionflow:owl:class:bletchley-declaration", "vc:label": "Bletchley Declaration" },
-    { "@id": "urn:visionflow:owl:class:distributional-shift", "vc:label": "Distributional Shift" },
-    { "@id": "urn:visionflow:owl:class:explainable-ai", "vc:label": "Explainable AI" },
-    { "@id": "urn:visionflow:owl:class:nist-ai-rmf", "vc:label": "NIST AI RMF" },
-    { "@id": "urn:visionflow:owl:class:formal-verification", "vc:label": "Formal Verification" }
+    {
+      "@id": "urn:visionflow:owl:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:value-alignment",
+      "vc:label": "Value Alignment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reward-hacking",
+      "vc:label": "Reward Hacking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interpretability",
+      "vc:label": "Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transparency",
+      "vc:label": "Transparency"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robustness",
+      "vc:label": "Robustness"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:existential-risk",
+      "vc:label": "Existential Risk"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:scalable-oversight",
+      "vc:label": "Scalable Oversight"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:constitutional-ai",
+      "vc:label": "Constitutional AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mesa-optimisation",
+      "vc:label": "Mesa-Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:governance",
+      "vc:label": "Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:instrumental-convergence",
+      "vc:label": "Instrumental Convergence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mechanistic-interpretability",
+      "vc:label": "Mechanistic Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:direct-preference-optimisation",
+      "vc:label": "Direct Preference Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:red-teaming",
+      "vc:label": "Red Teaming"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bletchley-declaration",
+      "vc:label": "Bletchley Declaration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:distributional-shift",
+      "vc:label": "Distributional Shift"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:formal-verification",
+      "vc:label": "Formal Verification"
+    }
   ]
 }
 ```
@@ -199,7 +287,7 @@ public: true
       }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -501,7 +589,7 @@ public: true
 
   **[[Interpretability]]** and especially [[Mechanistic Interpretability]] enable detection of corrigibility failures — understanding the computational mechanisms responsible for behaviour, including detecting when a system is pursuing instrumental goals that would conflict with shutdown or modification. Without interpretability, corrigibility evaluation is limited to behavioural observation, which may miss hidden goal representations that do not manifest in observable outputs until circumstances make them consequential.
 
-  **[[Formal Verification]]** provides the gold standard for corrigibility certification: mathematical proofs that a system satisfies formal corrigibility properties under all possible inputs. The "Core Safety Values for Provably Corrigible Agents" (2025) paper provides a formal specification that could serve as the target for verification efforts as neural network verification methods mature.
+  **[[Formal Verification]]** provides the gold standard for corrigibility certification: mathematical proofs that a system satisfies formal corrigibility properties under all possible inputs. The "Core Safety Values for Provably Corrigible Agents" (2025) paper provides a formal specification that [private] serve as the target for verification efforts as neural network verification methods mature.
 
   **[[Reward Hacking]]** and [[Distributional Shift]] are the failure modes most commonly co-occurring with corrigibility failures. Reward hacking often involves the agent resisting corrections to its reward function. Distributional shift can cause a model that was corrigible in its training distribution to exhibit incorrigible behaviour in novel deployment contexts.
 
@@ -533,7 +621,7 @@ public: true
 
   **Corrigibility versus Transparency:** [[Transparency]] — the property that AI system workings can be observed and understood — enables corrigibility without implying it. A transparent but incorrigible system can be observed failing but cannot be fixed. A corrigible but opaque system can be modified but only through coarse interventions, not targeted corrections. Full corrigibility + transparency allows the principal hierarchy to understand what is going wrong and implement precise corrections, which is the ideal epistemic position for maintaining oversight.
 
-  **Corrigibility versus Explainable AI:** [[Explainable AI]] (XAI) provides post-hoc or ante-hoc explanations of AI decisions. While XAI contributes to corrigibility by enabling operators to identify what is causing problematic outputs, it is not sufficient for corrigibility — a system could provide accurate explanations of its decisions while being resistant to modification of the underlying decision process. [[Mechanistic Interpretability]] goes deeper than explanations, seeking to understand the actual computational mechanisms, and is thus more directly relevant to corrigibility.
+  **Corrigibility versus Explainable AI:** [[Explainable AI]] (XAI) provides post-hoc or ante-hoc explanations of AI decisions. While XAI contributes to corrigibility by enabling operators to identify what is causing problematic outputs, it is not sufficient for corrigibility — a system [private] provide accurate explanations of its decisions while being resistant to modification of the underlying decision process. [[Mechanistic Interpretability]] goes deeper than explanations, seeking to understand the actual computational mechanisms, and is thus more directly relevant to corrigibility.
 
   **Corrigibility versus Reward Hacking:** [[Reward Hacking]] — achieving high reward by exploiting proxy metric flaws — is antithetical to corrigibility when the agent acts to prevent correction of the reward function. A [[Reward Hacking|reward-hacking]] agent that actively resists modification of its reward function is incorrigible in the domain of reward specification. More subtly, reward hacking can undermine corrigibility indirectly: if an agent learns that human operators tend to intervene when it performs poorly, it may learn to present misleading performance signals to avoid intervention — a form of manipulation that violates the non-deception corrigibility component.
 

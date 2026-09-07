@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Depth Sensing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,47 +53,125 @@ public: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:range-sensing", "label": "Range Sensing"},
-    {"@id": "urn:ngm:class:depth-imaging", "label": "Depth Imaging"}
+    {
+      "@id": "urn:ngm:class:range-sensing",
+      "label": "Range Sensing"
+    },
+    {
+      "@id": "urn:ngm:class:depth-imaging",
+      "label": "Depth Imaging"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
-      {"@id": "urn:ngm:class:time-of-flight-sensor", "label": "Time-of-Flight Sensor"},
-      {"@id": "urn:ngm:class:structured-light", "label": "Structured Light"},
-      {"@id": "urn:ngm:class:infrared-sensor", "label": "InfraredSensor"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "@id": "urn:ngm:class:time-of-flight-sensor",
+        "label": "Time-of-Flight Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "@id": "urn:ngm:class:infrared-sensor",
+        "label": "InfraredSensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:gesture-recognition", "label": "Gesture Recognition"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-input", "label": "Sensor Input"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"}
+      {
+        "@id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"}
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monocular-depth-estimation", "label": "Monocular Depth Estimation"}
+      {
+        "@id": "urn:ngm:class:monocular-depth-estimation",
+        "label": "Monocular Depth Estimation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
     ]
   },
   "quality": 0.72,
@@ -106,36 +179,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:depth-sensing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2a969e21e19aa81cd23e7e5adb4520206e594d1fd06bf06ba1b98012a092b8b4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

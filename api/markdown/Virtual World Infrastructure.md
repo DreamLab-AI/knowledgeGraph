@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual World Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -199,37 +194,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-world-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aa19f35f2377477f08e17b4363b6d20097217966899e5f0ce5ec0ce914a5b29b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:digital-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that together enable persistent, scalable virtual environments with low-latency user interactions.

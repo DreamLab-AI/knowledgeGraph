@@ -1,8 +1,3 @@
----
-public: true
----
-
-# financial stability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,7 +165,7 @@ public: true
 
 - ### Key Components
   - #### Systemic Risk Assessment
-    - [[Systemic Risk]] monitoring tracks vulnerabilities that could trigger cascading failures across financial institutions and markets.
+    - [[Systemic Risk]] monitoring tracks vulnerabilities that [private] trigger cascading failures across financial institutions and markets.
     - Key metrics include credit-to-GDP gaps, asset price deviations from fundamentals, interbank market stress indicators, and cross-border capital flow volatility.
     - [[Stress Testing]] frameworks (e.g. the EBA stress tests, the Fed's DFAST/CCAR) simulate adverse macroeconomic scenarios to assess institutional resilience.
   - #### Capital and Liquidity Buffers
@@ -179,7 +174,7 @@ public: true
     - [[Deposit Insurance]] schemes (e.g. the UK FSCS, the US FDIC) protect retail depositors and reduce the incentive for bank runs.
   - #### Macroprudential Policy
     - [[Macroprudential Policy]] instruments are calibrated to the financial cycle rather than individual firm risk: countercyclical capital buffers are released during downturns to support credit supply.
-    - Systemically Important Financial Institution (SIFI) surcharges impose additional capital on entities whose failure could destabilise the broader system.
+    - Systemically Important Financial Institution (SIFI) surcharges impose additional capital on entities whose failure [private] destabilise the broader system.
     - [[Central Banking]] authorities (e.g. Bank of England Financial Policy Committee, ECB Systemic Risk Board) exercise macroprudential mandates.
   - #### Resolution and Safety Nets
     - Recovery and resolution planning (living wills) ensures that large institutions can fail in an orderly manner without taxpayer bailouts.

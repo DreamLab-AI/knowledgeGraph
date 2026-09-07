@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Model Scaling
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

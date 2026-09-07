@@ -1,56 +1,104 @@
----
-public: true
----
-
-# Open Source Initiative
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:open-source-initiative", "@type":"Page", "title":"Open Source Initiative", "vc:slug":"open-source-initiative", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:open-source-initiative",
+  "@type": "Page",
+  "title": "Open Source Initiative",
+  "vc:slug": "open-source-initiative",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:open-source-initiative",
-  "@type":"Class",
-  "label":"Open Source Initiative",
-  "definition":"The Open Source Initiative is a non-profit organisation that stewards the Open Source Definition and maintains the authoritative process for reviewing and approving software licences as conforming to it. By certifying which licences qualify as open source, it provides a stable, community-recognised standard that distinguishes genuine open-source terms from merely source-available ones. The organisation also advocates for open-source software and educates on licensing and policy.",
-  "domain":"distributed-collaboration",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:standards-organization","label":"Standards Organization"}],
-  "relations":{
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:open-standard","label":"Open Standard"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:open-source-initiative",
+  "@type": "Class",
+  "label": "Open Source Initiative",
+  "definition": "The Open Source Initiative is a non-profit organisation that stewards the Open Source Definition and maintains the authoritative process for reviewing and approving software licences as conforming to it. By certifying which licences qualify as open source, it provides a stable, community-recognised standard that distinguishes genuine open-source terms from merely source-available ones. The organisation also advocates for open-source software and educates on licensing and policy.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-organization",
+      "label": "Standards Organization"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"},
-      {"@id":"urn:ngm:class:community","label":"Community"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:community",
+        "label": "Community"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:open-source-licence","label":"Open Source Licence"},
-      {"@id":"urn:ngm:class:licensing","label":"Licensing"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:open-standard","label":"Open Standard"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:proprietary-software","label":"Proprietary Software"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"},
-      {"@id":"urn:ngm:class:open-source-licence","label":"Open Source Licence"},
-      {"@id":"urn:ngm:class:distributed-collaboration","label":"Distributed Collaboration"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:licensing","label":"Licensing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:standards","label":"Standards"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safety System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "A safety system is an engineered arrangement of hardware, software, and procedural controls designed to prevent, detect, and mitigate hazards in industrial, transport, robotic, or cyber-physical environments, ensuring that a process or machine reaches a safe state when faults or dangerous conditions are detected. Safety systems are defined by their Safety Integrity Level (SIL) or Performance Level (PL) ratings under standards such as IEC 61508 and ISO 26262, which quantify the required probability of failure on demand. They encompass emergency shutdown systems, safety PLCs, watchdog timers, interlocks, redundant sensors, and AI-based anomaly detection.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"},
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
-      {"@id": "urn:ngm:class:safety-plc", "label": "Safety PLC"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:safety-plc",
+        "label": "Safety PLC"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
-      {"@id": "urn:ngm:class:safety-measure", "label": "Safety Measure"},
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "@id": "urn:ngm:class:safety-measure",
+        "label": "Safety Measure"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
     ]
   },
   "quality": 0.8
@@ -62,4 +92,3 @@ public: true
   - Safety systems protect against hazards in nuclear power plants (reactor scram systems), railways (automatic train protection), manufacturing robotics (collaborative robot speed and force limiting, safety-rated monitored stop), oil and gas processing (emergency shutdown), aviation (flight envelope protection), and automotive systems (ABS, electronic stability control, autonomous emergency braking). The IEC 61508 SIL 4 rating (highest) requires a probability of dangerous failure on demand below 10^-5 per hour for continuous-mode functions.
 
   - As of 2024-2025, the integration of AI and machine learning into safety-critical systems is the dominant challenge. ISO/PAS 8800 (2024) addresses AI safety in automotive systems, while IEC TC 65 is developing standards for AI-based safety functions. Formal verification of neural network safety properties using abstract interpretation and satisfiability solvers is an active research area. Functional safety certification for autonomous mobile robots and collaborative robots is accelerating under IEC 63327 and ISO 10218-2 revisions, and safety assurance cases for AI-augmented monitoring systems are being trialled by aerospace regulators.
-

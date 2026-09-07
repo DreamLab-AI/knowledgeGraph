@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Animation Controller
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,4 +165,3 @@ public: true
   - The controller's significance lies in separating animation authorship from game logic. Artists can iterate on motion without recompiling, while programmers expose a narrow API of float/bool parameters. This separation of concerns is critical in large productions where animation and engineering teams work in parallel. Controllers also expose hooks for inverse kinematics solvers — foot-planting, look-at, reach — that adapt pre-authored clips to dynamic world geometry at runtime.
 
   - In 2024-2025, animation controllers are increasingly driven by machine-learning-generated motion. Neural motion matching and reinforcement-learning locomotion replace hand-crafted blend trees with latent-space traversal, yet the controller abstraction persists as the interface layer that feeds pose vectors from ML models into the engine's skeletal pipeline. Engine integrations such as Unreal's Motion Matching and Unity's Motion Matching preview expose the same parameter API as classical state machines, preserving tooling compatibility while enabling far richer motion diversity.
-

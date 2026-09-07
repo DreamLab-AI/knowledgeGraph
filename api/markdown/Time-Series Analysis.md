@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Time Series Analysis
----
-
-# Time-Series Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -28,23 +21,47 @@ aliases:
   "domain": "artificial-intelligence",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:data-analysis", "label": "Data Analysis"}
+    {
+      "@id": "urn:ngm:class:data-analysis",
+      "label": "Data Analysis"
+    }
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
-      {"@id": "urn:ngm:class:prediction-markets", "label": "Prediction Markets"}
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Markets"
+      }
     ]
   },
   "quality": 0.8
@@ -62,4 +79,3 @@ aliases:
   - Modern time-series analysis decomposes a series into trend, seasonal, cyclical, and irregular components. Autocorrelation and partial autocorrelation functions guide model identification. ARIMA models capture linear dependencies; GARCH models capture heteroscedasticity in financial series. State-space models (including structural time series and dynamic linear models) handle missing data and structural breaks via Kalman filtering. Deep learning approaches—recurrent networks (LSTM, GRU), temporal convolutional networks, and transformer-based models (Informer, Autoformer, PatchTST, TimesNet)—directly learn temporal patterns from data at scale without manual feature engineering.
   - Time-series analysis is central to financial risk management (volatility forecasting, VaR), energy grid balancing (load prediction), epidemiological surveillance (outbreak detection), industrial IoT (predictive maintenance, sensor anomaly detection), climate modelling, and econometric policy analysis. The M-series forecasting competitions have benchmarked hundreds of methods across diverse real-world series, driving methodological advances and establishing that ensemble and hybrid methods consistently outperform individual models.
   - As of 2024–2025, foundation models for time series—pre-trained on large collections of diverse temporal data—have emerged as a new paradigm. Models such as TimesFM (Google), Moirai (Salesforce), and Chronos (Amazon) achieve competitive zero-shot and few-shot forecasting, challenging the traditional workflow of fitting bespoke models per series. Simultaneously, probabilistic forecasting has matured, with conformal prediction and deep probabilistic models (TFT, DeepAR) providing calibrated uncertainty estimates essential for high-stakes decisions. The intersection of time-series analysis and large language models is producing multimodal systems that reason over both numerical series and textual context.
-

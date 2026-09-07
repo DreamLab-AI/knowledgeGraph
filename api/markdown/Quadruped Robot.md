@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quadruped Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,20 +58,50 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
-      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {
+        "@id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole Body Control"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:whole-body-control",
+        "label": "Whole Body Control"
+      }
     ]
   },
   "quality": 0.8,
@@ -87,37 +112,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:quadruped-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:746bfe70e1a0c0d722952b4ee92deec99dee46d5099586ab2bf0bb969678712e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Legged Robot]]",
-      "resolved": "urn:visionflow:owl:class:legged-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Quadruped robot walks on four legs with gaits inspired by mammals like dogs or cats.

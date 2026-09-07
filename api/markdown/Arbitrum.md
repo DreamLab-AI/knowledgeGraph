@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Arbitrum
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,67 +199,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:arbitrum:143b9b70edf7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:94f78bf12e5c8627c90f6d955e94cd5339ac5de4454d1ed41056c46ca4d080da"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rollup]]",
-      "resolved": "urn:visionflow:linked:rollup",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fraud Proof]]",
-      "resolved": "urn:visionflow:linked:fraud-proof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimism]]",
-      "resolved": "urn:visionflow:linked:optimism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[zkSync]]",
-      "resolved": "urn:visionflow:linked:zk-sync",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Polygon]]",
-      "resolved": "urn:visionflow:linked:polygon",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Arbitrum is a family of Ethereum layer-2 scaling solutions developed by Offchain Labs that use optimistic rollup technology to increase transaction throughput and reduce fees. Its flagship network, Arbitrum One, launched on mainnet in 2021 and executes transactions in a custom virtual machine while posting transaction data and state commitments to Ethereum. Arbitrum's interactive multi-round fraud-proof protocol distinguishes it from other optimistic rollups by narrowing disputes to a single instruction before on-chain resolution. The ARB token governs the network through the Arbitrum DAO, and Arbitrum Nitro and Orbit extend the technology to custom chains.

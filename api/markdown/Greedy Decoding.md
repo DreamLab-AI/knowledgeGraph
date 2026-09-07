@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Greedy Decoding
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

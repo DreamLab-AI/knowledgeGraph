@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Edge Deployment
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:edge-deployment", "@type":"Page", "title":"Edge Deployment", "vc:slug":"edge-deployment", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:edge-deployment",
+  "@type": "Page",
+  "title": "Edge Deployment",
+  "vc:slug": "edge-deployment",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -29,38 +32,92 @@ public: true
   ],
   "relations": {
     "enables": [
-      { "@id": "urn:ngm:class:on-device-ai", "label": "On-Device AI" },
-      { "@id": "urn:ngm:class:edge-ai", "label": "Edge AI" },
-      { "@id": "urn:ngm:class:ultra-low-latency", "label": "Ultra-Low Latency" }
+      {
+        "@id": "urn:ngm:class:on-device-ai",
+        "label": "On-Device AI"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:ultra-low-latency",
+        "label": "Ultra-Low Latency"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:tiny-ml", "label": "TinyML" },
-      { "@id": "urn:ngm:class:inference", "label": "Inference" },
-      { "@id": "urn:ngm:class:federated-learning", "label": "Federated Learning" }
+      {
+        "@id": "urn:ngm:class:tiny-ml",
+        "label": "TinyML"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:model-compression", "label": "Model Compression" },
-      { "@id": "urn:ngm:class:pruning", "label": "Pruning" },
-      { "@id": "urn:ngm:class:model-quantization", "label": "Model Quantization" }
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "@id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      },
+      {
+        "@id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:edge-computing", "label": "Edge Computing" },
-      { "@id": "urn:ngm:class:mobile-edge-computing", "label": "Mobile Edge Computing" }
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-edge-computing",
+        "label": "Mobile Edge Computing"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:onnx", "label": "ONNX" },
-      { "@id": "urn:ngm:class:mlops", "label": "MLOps" }
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:model-serving", "label": "Model Serving" }
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model" },
-      { "@id": "urn:ngm:class:latency", "label": "Latency" },
-      { "@id": "urn:ngm:class:mobile-computing", "label": "Mobile Computing" }
+      {
+        "@id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-computing",
+        "label": "Mobile Computing"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:io-t", "label": "Internet of Things" }
+      {
+        "@id": "urn:ngm:class:io-t",
+        "label": "Internet of Things"
+      }
     ]
   },
   "sameAs": [],

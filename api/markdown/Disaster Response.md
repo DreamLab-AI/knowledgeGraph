@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Disaster Response
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -123,6 +119,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Disaster response is the coordinated use of sensing, mapping and robotic systems to assess damage, locate survivors and direct relief in the aftermath of natural or human-made catastrophes. Spatial-computing techniques fuse aerial imagery, LiDAR, satellite remote sensing and ground-robot telemetry into situational maps that guide responders. Speed, robustness under degraded conditions, and accurate geospatial localisation are the defining requirements.
   - Related concepts: [[Spatial Computing]] [[Remote Sensing]] [[Search and Rescue Robotics]] [[Geospatial Data]] [[Drone Navigation]]

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Everledger
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:everledger:91eb90f6be6a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e6e3dbd4f83fe339d793b67402c1148014bf69b45f19e6a696a42c33ffd53396"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Distributed Ledger Technology]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Provenance]]",
-      "resolved": "urn:visionflow:linked:provenance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Permissioned Blockchain]]",
-      "resolved": "urn:visionflow:linked:permissioned-blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Supply Chain]]",
-      "resolved": "urn:visionflow:linked:supply-chain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://everledger.io/]]",
-      "resolved": "urn:visionflow:linked:https-everledger-io",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A technology company that built a blockchain-based registry for tracking the provenance of high-value physical assets such as diamonds and gemstones. The registry links a unique digital record to each physical item to support authenticity and ownership claims.

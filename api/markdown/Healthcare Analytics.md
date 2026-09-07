@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Healthcare Analytics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,52 +198,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:healthcare-analytics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:936e14cb2cd5100427192eaa28dc25737b37e26357e6c03b2931d626e56f835a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Population Health]]",
-      "resolved": "urn:visionflow:linked:population-health",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Analytics]]",
-      "resolved": "urn:visionflow:owl:class:data-analytics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Artefact Update Cycle]]",
-      "resolved": "urn:visionflow:owl:class:update-cycle",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Healthcare Analytics applies artificial intelligence and data science to healthcare data for population health management, operational efficiency optimisation, clinical outcome prediction, resource allocation, and healthcare policy decision-making. These systems analyse electronic health records, claims data, public health data, and operational metrics to derive actionable insights for healthcare improvement.

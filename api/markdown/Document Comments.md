@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Document Comments
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,15 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
-      {"@id": "urn:ngm:class:peer-review", "label": "Peer Review"}
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:live-co-authoring", "label": "Live Co-authoring"}
+      {
+        "@id": "urn:ngm:class:live-co-authoring",
+        "label": "Live Co-authoring"
+      }
     ]
   },
   "quality": 0.7

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Non-Linear Storytelling
----
-
-# Non Linear Storytelling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,47 +73,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:non-linear-storytelling:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:68cf335075b9062694fc0b9abd1aebc4857673c1ab01a0bbc42c09ec971718b3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Multiple Endings]]",
-      "resolved": "urn:visionflow:linked:multiple-endings",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Storytelling]]",
-      "resolved": "urn:visionflow:owl:class:storytelling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The craft and practice of creating narratives where story events can be experienced in multiple sequences through branching paths, player choices, or temporal manipulation, commonly used in video games, interactive fiction, and immersive experiences.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Career Strategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "career-strategy",
   "title": "Career Strategy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Industry Sentiment", "Practical AI Adoption"],
+  "vc:outboundWikilinks": [
+    "Industry Sentiment",
+    "Practical AI Adoption"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-adoption",
+      "label": "AI Adoption"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-talent", "label": "AI Talent"}, {"@id": "urn:ngm:class:change-management", "label": "Change Management"}, {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-talent",
+        "label": "AI Talent"
+      },
+      {
+        "@id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

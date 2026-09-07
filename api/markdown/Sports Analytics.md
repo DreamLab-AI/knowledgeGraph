@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sports Analytics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Sports analytics is the application of data capture, statistical modelling, and machine learning to athletic performance, tactics, and injury prevention, drawing on tracking data, biomechanics, and event logs. Computer-vision pipelines increasingly supply the underlying movement data by extracting player positions and body pose from video. It informs coaching decisions, talent evaluation, broadcast insight, and load management.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
     ]
   },
   "quality": 0.72

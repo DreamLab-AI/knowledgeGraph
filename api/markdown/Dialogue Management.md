@@ -1,57 +1,106 @@
----
-public: true
----
-
-# Dialogue Management
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:dialogue-management", "@type":"Page", "title":"Dialogue Management", "vc:slug":"dialogue-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:dialogue-management",
+  "@type": "Page",
+  "title": "Dialogue Management",
+  "vc:slug": "dialogue-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:dialogue-management",
-  "@type":"Class",
-  "label":"Dialogue Management",
-  "definition":"Dialogue management is the component of a conversational system that tracks the evolving state of an interaction and decides the system's next action at each turn. It maintains context across utterances, integrates recognised user intents and slots, and selects responses or operations that move the conversation toward the user's goal. It is the control layer that connects language understanding to language generation in a dialogue agent.",
-  "domain":"ai",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:conversational-ai","label":"Conversational AI"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:state-tracking","label":"State Tracking"},
-      {"@id":"urn:ngm:class:context-management","label":"Context Management"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dialogue-management",
+  "@type": "Class",
+  "label": "Dialogue Management",
+  "definition": "Dialogue management is the component of a conversational system that tracks the evolving state of an interaction and decides the system's next action at each turn. It maintains context across utterances, integrates recognised user intents and slots, and selects responses or operations that move the conversation toward the user's goal. It is the control layer that connects language understanding to language generation in a dialogue agent.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:state-tracking",
+        "label": "State Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:natural-language-understanding","label":"Natural Language Understanding"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:intent-recognition","label":"Intent Recognition"},
-      {"@id":"urn:ngm:class:slot-filling","label":"Slot Filling"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:chatbot","label":"Chatbot"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:conversational-ai","label":"Conversational AI"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:reinforcement-learning","label":"Reinforcement Learning"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:natural-language-processing","label":"Natural Language Processing"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:context-management","label":"Context Management"},
-      {"@id":"urn:ngm:class:chatbot","label":"Chatbot"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      },
+      {
+        "@id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:natural-language-understanding","label":"Natural Language Understanding"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

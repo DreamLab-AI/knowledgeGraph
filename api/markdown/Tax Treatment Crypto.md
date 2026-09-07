@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tax Treatment Crypto
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,19 +118,46 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"}
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
     ]
   },
   "quality": 0.8,
@@ -146,112 +168,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tax-treatment-crypto:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6f3018d8ecd79b210d02b49f6012f2e08fce736f514edb7e28e09ad4dec8c117"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[26 USC Internal Revenue Code]]",
-      "resolved": "urn:visionflow:linked:26-usc-internal-revenue-code",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Council Directive 2006/112/EC VAT]]",
-      "resolved": "urn:visionflow:linked:council-directive-2006-112-ec-vat",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralised Finance]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ECJ Skatteverket v Hedqvist C-264/14]]",
-      "resolved": "urn:visionflow:linked:ecj-skatteverket-v-hedqvist-c-264-14",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU DAC8 Directive]]",
-      "resolved": "urn:visionflow:linked:eu-dac8-directive",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[HMRC]]",
-      "resolved": "urn:visionflow:linked:hmrc",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[HMRC Cryptoassets Manual]]",
-      "resolved": "urn:visionflow:linked:hmrc-cryptoassets-manual",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Infrastructure Investment and Jobs Act 2021]]",
-      "resolved": "urn:visionflow:linked:infrastructure-investment-and-jobs-act-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Internal Revenue Service]]",
-      "resolved": "urn:visionflow:linked:internal-revenue-service",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IRS Notice 2014-21]]",
-      "resolved": "urn:visionflow:linked:irs-notice-2014-21",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IRS Revenue Ruling 2019-24]]",
-      "resolved": "urn:visionflow:linked:irs-revenue-ruling-2019-24",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD]]",
-      "resolved": "urn:visionflow:linked:oecd",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD Crypto-Asset Reporting Framework CARF]]",
-      "resolved": "urn:visionflow:linked:oecd-crypto-asset-reporting-framework-carf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TCGA 1992 UK Taxation of Chargeable Gains Act]]",
-      "resolved": "urn:visionflow:linked:tcga-1992-uk-taxation-of-chargeable-gains-act",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:owl:class:cryptocurrency",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation (wherein cryptocurrency dispositions generate capital gains or losses calculated as fair market value at disposition minus cost basis, with long-term holdings exceeding 12 months taxed at preferential rates 0-20% in the United States compared to ordinary income rates up to 37% for short-term holdings), income taxation (treating cryptocurrency received through mining as ordinary income at fair market value when successfully mined with miners potentially subject to self-employment tax at 15.3%, staking rewards as income when received, airdrops as ordinary income when dominion and control is established per IRS Revenue Ruling 2019-24, and payment for services as compensation), value-added tax and goods-and-services tax treatment (with the European Court of Justice in Skatteverket v. David Hedqvist C-264/14 2015 establishing VAT exemption for cryptocurrency-to-fiat exchanges as exempt financial services under Council Directive 2006/112/EC Article 135(1)(e), whilst purchases of goods using cryptocurrency attract VAT on the transaction value), cross-border reporting obligations (including OECD Crypto-Asset Reporting Framework CARF approved October 2022 requiring reporting entities to collect customer information on cryptocurrency transactions with automatic exchange between over 50 participating jurisdictions beginning 2027, EU DAC8 Directive on Administrative Cooperation extending tax information exchange to crypto-assets requiring transaction reporting beginning 2026, and United States Infrastructure Investment and Jobs Act 2021 requiring broker reporting on Forms 1099-B for customer cryptocurrency transactions beginning 2025 tax year), enforcement mechanisms (utilizing blockchain analytics platforms such as Chainalysis, Elliptic, and CipherTrace to trace transactions and identify wallet ownership, IRS John Doe summonses requiring exchanges including Coinbase to provide customer lists exceeding specified transaction thresholds, data-matching programmes comparing exchange-reported information to tax returns, and criminal prosecutions for willful evasion including United States v. Frank Ahlgren 2020 for failure to report $4 million in cryptocurrency gains), jurisdiction-specific frameworks (US IRS Notice 2014-21 classifying virtual currency as property subject to general tax principles with every disposition potentially constituting taxable event, UK HMRC distinguishing capital gains tax 10-20% for investors from income tax up to 45% plus National Insurance for traders based on frequency and commercial characteristics, Japan treating cryptocurrency gains as miscellaneous income subject to progressive rates reaching 55% combined national and local taxation, Germany exempting holdings exceeding one year from taxation whilst taxing gains on dispositions within twelve months as private sale transactions at progressive rates reaching 45%, Singapore applying no capital gains tax to individual investors whilst taxing business trading income at 22% corporate or progressive individual rates), and decentralised finance DeFi-specific challenges (including timing questions for automated yield farming rewards earned algorithmically through smart contracts, valuation difficulties for illiquid governance tokens, classification uncertainties between income and capital treatment for liquidity provision returns, and tax treatment of wrapping/unwrapping tokens across blockchains potentially constituting taxable exchanges).

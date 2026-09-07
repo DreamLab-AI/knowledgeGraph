@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,42 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8503151b6ddd55a3649f93fa0022367dbad643f7304fc4768c97e78101f5078d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Established tools, protocols, formats, services, and specifications that support the creation, operation, continuous improvement, and common use of metaverse technologies, enabling interoperability between disparate systems, platforms, and applications.

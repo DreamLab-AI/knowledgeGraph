@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Capability Scaling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,13 @@ public: true
   "vc:slug": "agent-capability-scaling",
   "title": "Agent Capability Scaling",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Capability Trajectory", "Agent Capability", "GPT-5.1 Codex Max", "Long-Horizon Task Benchmark", "Time Horizon"],
+  "vc:outboundWikilinks": [
+    "AI Capability Trajectory",
+    "Agent Capability",
+    "GPT-5.1 Codex Max",
+    "Long-Horizon Task Benchmark",
+    "Time Horizon"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +27,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:agent", "label": "Agent"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agent",
+      "label": "Agent"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agent", "label": "Agent"}, {"@id": "urn:ngm:class:scaling-laws", "label": "Scaling Laws"}, {"@id": "urn:ngm:class:autonomous-decision-making", "label": "Autonomous Decision Making"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision Making"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

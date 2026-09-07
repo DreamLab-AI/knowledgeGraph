@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Temporary Asset Access
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,7 +60,10 @@ public: true
   },
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
     ],
     "requires": [
       {
@@ -102,37 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:temporary-asset-access:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0fb217dd19d5e6e1440c22a0e3578a7706f8a4889a4dbd21d2f55a73dd79bdb5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Asset Management]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A mechanism enabling time-limited usage rights to digital assets in the metaverse without transferring ownership, implemented through smart contracts that separate user roles from owner roles with automatic expiration.

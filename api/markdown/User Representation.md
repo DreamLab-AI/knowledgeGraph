@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Representation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "User representation is the visual and behavioural embodiment of a person within a virtual environment, encompassing avatars, presence indicators and the mapping of real movement onto a digital persona. It conveys identity, expression and social presence, allowing others to perceive and interact with the user in shared spaces. It is a defining element of avatar systems and virtual worlds.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}, {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AIOps
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,33 +55,84 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"},
-      {"@id": "urn:ngm:class:ai-incident", "label": "AI Incident"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:ai-incident",
+        "label": "AI Incident"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:operational-resilience", "label": "Operational Resilience"},
-      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:monitoring-dashboard", "label": "Monitoring Dashboard"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
     ]
   },
   "provenance": {
@@ -96,37 +142,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aiops:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1fef797ecc620c1dc485f12a786c808132cbd059c853773dcc2fc7f4d90f1d82"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:owl:class:edge-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   AIOps (Artificial Intelligence for IT Operations) applies machine learning, natural language processing, and big data analytics to automate and enhance IT operational tasks including event correlation, anomaly detection, root-cause analysis, incident management, and capacity planning. By continuously ingesting telemetry streams — logs, metrics, and traces — from complex distributed systems, AIOps platforms surface actionable insights that would be impossible for human operators to detect at scale, progressively shifting operations from reactive incident response towards predictive and autonomous self-healing.

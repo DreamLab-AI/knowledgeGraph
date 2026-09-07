@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Trust Building
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Trust building is the deliberate process of establishing confidence among participants in a digital system through transparency, accountability, reliable behaviour, and clear communication. In online communities and AI-mediated platforms it is fostered by practices such as content provenance, disclosure of automated generation, and enforced community standards that make actors and outputs verifiable.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-generated-content-disclosure", "label": "AI-Generated Content Disclosure"}, {"@id": "urn:ngm:class:community-standards", "label": "Community Standards"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI-Generated Content Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:community-standards",
+        "label": "Community Standards"
+      }
+    ]
   },
   "quality": 0.72
 }

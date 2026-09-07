@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adaptive Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,65 +7,235 @@ public: true
   "title": "Adaptive Learning",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:intelligent-tutoring-system", "vc:label": "Intelligent Tutoring System"},
-    {"@id": "urn:visionflow:linked:learning-management-system", "vc:label": "Learning Management System"},
-    {"@id": "urn:visionflow:linked:bayesian-knowledge-tracing", "vc:label": "Bayesian Knowledge Tracing"},
-    {"@id": "urn:visionflow:linked:item-response-theory", "vc:label": "Item Response Theory"},
-    {"@id": "urn:visionflow:linked:spaced-repetition", "vc:label": "Spaced Repetition"},
-    {"@id": "urn:visionflow:linked:personalised-learning", "vc:label": "Personalised Learning"},
-    {"@id": "urn:visionflow:linked:learning-analytics", "vc:label": "Learning Analytics"},
-    {"@id": "urn:visionflow:linked:mastery-learning", "vc:label": "Mastery Learning"},
-    {"@id": "urn:visionflow:linked:formative-assessment", "vc:label": "Formative Assessment"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:real-time-data-processing", "vc:label": "Real-Time Data Processing"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:content-repository", "vc:label": "Content Repository"},
-    {"@id": "urn:visionflow:linked:differentiated-instruction", "vc:label": "Differentiated Instruction"},
-    {"@id": "urn:visionflow:linked:curriculum-learning", "vc:label": "Curriculum Learning"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:cognitive-load-theory", "vc:label": "Cognitive Load Theory"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:education-technology", "vc:label": "Education Technology"},
-    {"@id": "urn:visionflow:linked:deep-knowledge-tracing", "vc:label": "Deep Knowledge Tracing"},
-    {"@id": "urn:visionflow:linked:recommendation-system", "vc:label": "Recommendation System"},
-    {"@id": "urn:visionflow:linked:adaptive-behaviour", "vc:label": "Adaptive Behaviour"},
-    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:psychometrics", "vc:label": "Psychometrics"},
-    {"@id": "urn:visionflow:linked:computerised-adaptive-testing", "vc:label": "Computerised Adaptive Testing"},
-    {"@id": "urn:visionflow:linked:zone-of-proximal-development", "vc:label": "Zone of Proximal Development"},
-    {"@id": "urn:visionflow:linked:affective-computing", "vc:label": "Affective Computing"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:data-privacy", "vc:label": "Data Privacy"},
-    {"@id": "urn:visionflow:linked:open-learner-model", "vc:label": "Open Learner Model"},
-    {"@id": "urn:visionflow:linked:multi-modal-learning", "vc:label": "Multi-Modal Learning"},
-    {"@id": "urn:visionflow:linked:gamification", "vc:label": "Gamification"},
-    {"@id": "urn:visionflow:linked:cognitive-science", "vc:label": "Cognitive Science"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:seq2seq-model", "vc:label": "Seq2Seq Model"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:application-layer", "vc:label": "ApplicationLayer"},
-    {"@id": "urn:visionflow:linked:machine-learning-domain", "vc:label": "MachineLearningDomain"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"},
-    {"@id": "urn:visionflow:linked:knowledge-component-model", "vc:label": "Knowledge Component Model"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:open-edx", "vc:label": "OpenEdX"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:two-sigma-problem", "vc:label": "Two-Sigma Problem"},
-    {"@id": "urn:visionflow:linked:learner-model", "vc:label": "Learner Model"},
-    {"@id": "urn:visionflow:linked:scaffolding", "vc:label": "Scaffolding"},
-    {"@id": "urn:visionflow:linked:domain-model", "vc:label": "Domain Model"},
-    {"@id": "urn:visionflow:linked:feedback-loop", "vc:label": "Feedback Loop"},
-    {"@id": "urn:visionflow:linked:metacognition", "vc:label": "Metacognition"}
+    {
+      "@id": "urn:visionflow:linked:intelligent-tutoring-system",
+      "vc:label": "Intelligent Tutoring System"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-management-system",
+      "vc:label": "Learning Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-knowledge-tracing",
+      "vc:label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "@id": "urn:visionflow:linked:item-response-theory",
+      "vc:label": "Item Response Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:spaced-repetition",
+      "vc:label": "Spaced Repetition"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalised-learning",
+      "vc:label": "Personalised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-analytics",
+      "vc:label": "Learning Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:mastery-learning",
+      "vc:label": "Mastery Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:formative-assessment",
+      "vc:label": "Formative Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-data-processing",
+      "vc:label": "Real-Time Data Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-repository",
+      "vc:label": "Content Repository"
+    },
+    {
+      "@id": "urn:visionflow:linked:differentiated-instruction",
+      "vc:label": "Differentiated Instruction"
+    },
+    {
+      "@id": "urn:visionflow:linked:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-load-theory",
+      "vc:label": "Cognitive Load Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:education-technology",
+      "vc:label": "Education Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-knowledge-tracing",
+      "vc:label": "Deep Knowledge Tracing"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-system",
+      "vc:label": "Recommendation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-behaviour",
+      "vc:label": "Adaptive Behaviour"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:psychometrics",
+      "vc:label": "Psychometrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:computerised-adaptive-testing",
+      "vc:label": "Computerised Adaptive Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:zone-of-proximal-development",
+      "vc:label": "Zone of Proximal Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:affective-computing",
+      "vc:label": "Affective Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-privacy",
+      "vc:label": "Data Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-learner-model",
+      "vc:label": "Open Learner Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-modal-learning",
+      "vc:label": "Multi-Modal Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:gamification",
+      "vc:label": "Gamification"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-science",
+      "vc:label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:seq2seq-model",
+      "vc:label": "Seq2Seq Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-domain",
+      "vc:label": "MachineLearningDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-component-model",
+      "vc:label": "Knowledge Component Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-edx",
+      "vc:label": "OpenEdX"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:two-sigma-problem",
+      "vc:label": "Two-Sigma Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:learner-model",
+      "vc:label": "Learner Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:scaffolding",
+      "vc:label": "Scaffolding"
+    },
+    {
+      "@id": "urn:visionflow:linked:domain-model",
+      "vc:label": "Domain Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedback-loop",
+      "vc:label": "Feedback Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:metacognition",
+      "vc:label": "Metacognition"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-20T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -84,66 +249,186 @@ public: true
   "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"},
-    {"@id": "urn:ngm:class:personalised-learning", "label": "Personalised Learning"}
+    {
+      "@id": "urn:ngm:class:education-technology",
+      "label": "Education Technology"
+    },
+    {
+      "@id": "urn:ngm:class:personalised-learning",
+      "label": "Personalised Learning"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:intelligent-tutoring-system", "label": "Intelligent Tutoring System"},
-      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
-      {"@id": "urn:ngm:class:bayesian-knowledge-tracing", "label": "Bayesian Knowledge Tracing"},
-      {"@id": "urn:ngm:class:item-response-theory", "label": "Item Response Theory"},
-      {"@id": "urn:ngm:class:spaced-repetition", "label": "Spaced Repetition"},
-      {"@id": "urn:ngm:class:deep-knowledge-tracing", "label": "Deep Knowledge Tracing"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"}
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-knowledge-tracing",
+        "label": "Bayesian Knowledge Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
+      },
+      {
+        "@id": "urn:ngm:class:spaced-repetition",
+        "label": "Spaced Repetition"
+      },
+      {
+        "@id": "urn:ngm:class:deep-knowledge-tracing",
+        "label": "Deep Knowledge Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:personalised-learning", "label": "Personalised Learning"},
-      {"@id": "urn:ngm:class:learning-analytics", "label": "Learning Analytics"},
-      {"@id": "urn:ngm:class:mastery-learning", "label": "Mastery Learning"},
-      {"@id": "urn:ngm:class:formative-assessment", "label": "Formative Assessment"},
-      {"@id": "urn:ngm:class:computerised-adaptive-testing", "label": "Computerised Adaptive Testing"}
+      {
+        "@id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
+      },
+      {
+        "@id": "urn:ngm:class:formative-assessment",
+        "label": "Formative Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:computerised-adaptive-testing",
+        "label": "Computerised Adaptive Testing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:real-time-data-processing", "label": "Real-Time Data Processing"},
-      {"@id": "urn:ngm:class:learner-model", "label": "Learner Model"},
-      {"@id": "urn:ngm:class:content-repository", "label": "Content Repository"},
-      {"@id": "urn:ngm:class:domain-model", "label": "Domain Model"},
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-processing",
+        "label": "Real-Time Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:learner-model",
+        "label": "Learner Model"
+      },
+      {
+        "@id": "urn:ngm:class:content-repository",
+        "label": "Content Repository"
+      },
+      {
+        "@id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:item-response-theory", "label": "Item Response Theory"},
-      {"@id": "urn:ngm:class:bayesian-knowledge-tracing", "label": "Bayesian Knowledge Tracing"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-knowledge-tracing",
+        "label": "Bayesian Knowledge Tracing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:content-repository", "label": "Content Repository"},
-      {"@id": "urn:ngm:class:knowledge-component-model", "label": "Knowledge Component Model"},
-      {"@id": "urn:ngm:class:psychometrics", "label": "Psychometrics"}
+      {
+        "@id": "urn:ngm:class:content-repository",
+        "label": "Content Repository"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-component-model",
+        "label": "Knowledge Component Model"
+      },
+      {
+        "@id": "urn:ngm:class:psychometrics",
+        "label": "Psychometrics"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mastery-learning", "label": "Mastery Learning"},
-      {"@id": "urn:ngm:class:metacognition", "label": "Metacognition"}
+      {
+        "@id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
+      },
+      {
+        "@id": "urn:ngm:class:metacognition",
+        "label": "Metacognition"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:cognitive-load-theory", "label": "Cognitive Load Theory"},
-      {"@id": "urn:ngm:class:adaptive-behaviour", "label": "Adaptive Behaviour"},
-      {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"},
-      {"@id": "urn:ngm:class:open-learner-model", "label": "Open Learner Model"},
-      {"@id": "urn:ngm:class:gamification", "label": "Gamification"}
+      {
+        "@id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-load-theory",
+        "label": "Cognitive Load Theory"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-behaviour",
+        "label": "Adaptive Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "@id": "urn:ngm:class:open-learner-model",
+        "label": "Open Learner Model"
+      },
+      {
+        "@id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:adaptive-instruction", "label": "Adaptive Instruction"},
-    {"@id": "urn:ngm:class:intelligent-adaptive-learning", "label": "Intelligent Adaptive Learning"}
+    {
+      "@id": "urn:ngm:class:adaptive-instruction",
+      "label": "Adaptive Instruction"
+    },
+    {
+      "@id": "urn:ngm:class:intelligent-adaptive-learning",
+      "label": "Intelligent Adaptive Learning"
+    }
   ],
   "quality": 0.91,
   "provenance": {
@@ -151,73 +436,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adaptive-learning:20260620",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:adaptive-learning"},
-  "vc:resolutions": [
-    {"raw": "[[Intelligent Tutoring System]]", "resolved": "urn:visionflow:linked:intelligent-tutoring-system", "kind": "ResolvedLink"},
-    {"raw": "[[Learning Management System]]", "resolved": "urn:visionflow:linked:learning-management-system", "kind": "StubLink"},
-    {"raw": "[[Bayesian Knowledge Tracing]]", "resolved": "urn:visionflow:linked:bayesian-knowledge-tracing", "kind": "StubLink"},
-    {"raw": "[[Item Response Theory]]", "resolved": "urn:visionflow:linked:item-response-theory", "kind": "StubLink"},
-    {"raw": "[[Spaced Repetition]]", "resolved": "urn:visionflow:linked:spaced-repetition", "kind": "StubLink"},
-    {"raw": "[[Personalised Learning]]", "resolved": "urn:visionflow:linked:personalised-learning", "kind": "StubLink"},
-    {"raw": "[[Learning Analytics]]", "resolved": "urn:visionflow:linked:learning-analytics", "kind": "StubLink"},
-    {"raw": "[[Mastery Learning]]", "resolved": "urn:visionflow:linked:mastery-learning", "kind": "StubLink"},
-    {"raw": "[[Formative Assessment]]", "resolved": "urn:visionflow:linked:formative-assessment", "kind": "StubLink"},
-    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:linked:knowledge-graph", "kind": "StubLink"},
-    {"raw": "[[Real-Time Data Processing]]", "resolved": "urn:visionflow:linked:real-time-data-processing", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Content Repository]]", "resolved": "urn:visionflow:linked:content-repository", "kind": "StubLink"},
-    {"raw": "[[Differentiated Instruction]]", "resolved": "urn:visionflow:linked:differentiated-instruction", "kind": "StubLink"},
-    {"raw": "[[Curriculum Learning]]", "resolved": "urn:visionflow:linked:curriculum-learning", "kind": "StubLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:visionflow:linked:active-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Cognitive Load Theory]]", "resolved": "urn:visionflow:linked:cognitive-load-theory", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Education Technology]]", "resolved": "urn:visionflow:linked:education-technology", "kind": "StubLink"},
-    {"raw": "[[Deep Knowledge Tracing]]", "resolved": "urn:visionflow:linked:deep-knowledge-tracing", "kind": "StubLink"},
-    {"raw": "[[Recommendation System]]", "resolved": "urn:visionflow:linked:recommendation-system", "kind": "StubLink"},
-    {"raw": "[[Adaptive Behaviour]]", "resolved": "urn:visionflow:linked:adaptive-behaviour", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "StubLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "StubLink"},
-    {"raw": "[[Psychometrics]]", "resolved": "urn:visionflow:linked:psychometrics", "kind": "StubLink"},
-    {"raw": "[[Computerised Adaptive Testing]]", "resolved": "urn:visionflow:linked:computerised-adaptive-testing", "kind": "StubLink"},
-    {"raw": "[[Zone of Proximal Development]]", "resolved": "urn:visionflow:linked:zone-of-proximal-development", "kind": "StubLink"},
-    {"raw": "[[Affective Computing]]", "resolved": "urn:visionflow:linked:affective-computing", "kind": "StubLink"},
-    {"raw": "[[Federated Learning]]", "resolved": "urn:visionflow:linked:federated-learning", "kind": "StubLink"},
-    {"raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Data Privacy]]", "resolved": "urn:visionflow:linked:data-privacy", "kind": "StubLink"},
-    {"raw": "[[Open Learner Model]]", "resolved": "urn:visionflow:linked:open-learner-model", "kind": "StubLink"},
-    {"raw": "[[Multi-Modal Learning]]", "resolved": "urn:visionflow:linked:multi-modal-learning", "kind": "StubLink"},
-    {"raw": "[[Gamification]]", "resolved": "urn:visionflow:linked:gamification", "kind": "StubLink"},
-    {"raw": "[[Cognitive Science]]", "resolved": "urn:visionflow:linked:cognitive-science", "kind": "StubLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "StubLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:linked:ai-grounded-domain", "kind": "ResolvedLink"},
-    {"raw": "[[AlgorithmLayer]]", "resolved": "urn:visionflow:linked:algorithm-layer", "kind": "ResolvedLink"},
-    {"raw": "[[ApplicationLayer]]", "resolved": "urn:visionflow:linked:application-layer", "kind": "ResolvedLink"},
-    {"raw": "[[MachineLearningDomain]]", "resolved": "urn:visionflow:linked:machine-learning-domain", "kind": "ResolvedLink"},
-    {"raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:linked:computation-and-intelligence-domain", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Component Model]]", "resolved": "urn:visionflow:linked:knowledge-component-model", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "StubLink"},
-    {"raw": "[[OpenEdX]]", "resolved": "urn:visionflow:linked:open-edx", "kind": "StubLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "StubLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "StubLink"},
-    {"raw": "[[Learner Model]]", "resolved": "urn:visionflow:linked:learner-model", "kind": "StubLink"},
-    {"raw": "[[Scaffolding]]", "resolved": "urn:visionflow:linked:scaffolding", "kind": "StubLink"},
-    {"raw": "[[Domain Model]]", "resolved": "urn:visionflow:linked:domain-model", "kind": "StubLink"},
-    {"raw": "[[Feedback Loop]]", "resolved": "urn:visionflow:linked:feedback-loop", "kind": "StubLink"},
-    {"raw": "[[Metacognition]]", "resolved": "urn:visionflow:linked:metacognition", "kind": "StubLink"},
-    {"raw": "[[Two-Sigma Problem]]", "resolved": "urn:visionflow:linked:two-sigma-problem", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -338,7 +556,7 @@ public: true
         ObjectSomeValuesFrom(edu:bridgesTo edu:ExplainableAI))
 
   ## About
-  - **Adaptive learning** is the computational operationalisation of the oldest aspiration in pedagogy: that each student should receive instruction calibrated precisely to their individual state of knowledge, rate of learning, and motivational engagement. Benjamin Bloom's landmark 1984 research quantified the magnitude of this aspiration with the [[Two-Sigma Problem]]: students receiving one-to-one human tutoring achieved learning outcomes two full standard deviations above classroom-taught peers — placing the average tutored student at the 98th percentile of the conventionally-taught distribution. The implication was stark: if the benefits of individual tutoring could be delivered at scale, educational outcomes would be transformed. Adaptive learning systems are the computational attempt to close this gap, using data-driven [[Learner Model]]s, algorithmic content sequencing, and — increasingly — [[Large Language Model]]-powered natural-language tutoring to replicate and distribute the pedagogical intelligence of an expert one-to-one tutor.
+  - **Adaptive learning** is the computational operationalisation of the oldest aspiration in pedagogy: that each student should receive instruction calibrated precisely to their individual state of knowledge, rate of learning, and motivational engagement. Benjamin Bloom's landmark 1984 research quantified the magnitude of this aspiration with the [[Two-Sigma Problem]]: students receiving one-to-one human tutoring achieved learning outcomes two full standard deviations above classroom-taught peers — placing the average tutored student at the 98th percentile of the conventionally-taught distribution. The implication was stark: if the benefits of individual tutoring [private] be delivered at scale, educational outcomes would be transformed. Adaptive learning systems are the computational attempt to close this gap, using data-driven [[Learner Model]]s, algorithmic content sequencing, and — increasingly — [[Large Language Model]]-powered natural-language tutoring to replicate and distribute the pedagogical intelligence of an expert one-to-one tutor.
 
   - The mechanism underlying all adaptive learning systems is a closed [[Feedback Loop]] between assessment and instruction. Learner responses to assessment items (correct/incorrect, response time, help-seeking behaviour, affective signals) update a probabilistic [[Learner Model]] that estimates the current mastery state for each skill in a [[Knowledge Component Model]]. The updated mastery estimates feed into a recommendation engine — implemented via [[Reinforcement Learning]] policies, handcrafted pedagogical rules, or increasingly, neural recommendation architectures — that selects the next instructional content unit or practice problem. The selected content is then delivered, generating new response data that closes the loop. This architecture is structurally analogous to the [[Adaptive Behaviour]] feedback loop in reinforcement learning agents, with the learner's knowledge state as the environment state, instructional content units as the action space, and learning gain (or proxies like assessment performance) as the reward signal. The parallel is not accidental: [[Curriculum Learning]] in machine learning, where training examples are sequenced from easy to hard to accelerate convergence, was directly inspired by educational sequencing research.
 
@@ -347,7 +565,7 @@ public: true
   ## Knowledge Tracing: Mathematical Foundations
   - **[[Bayesian Knowledge Tracing]] (BKT)**: the canonical learner model, introduced by Corbett & Anderson (1994/1995), represents the latent mastery state L_t of each knowledge component k at time t as a binary Bernoulli random variable. The model has four parameters: P(L₀) = prior probability of initial mastery; P(T) = probability of transitioning from unmastered to mastered after a practice opportunity (learn rate); P(S) = probability of slipping (performing incorrectly despite mastery); P(G) = probability of guessing correctly (performing correctly despite non-mastery). The update equations are: P(L_t | correct) = [P(L_{t-1})(1-P(S))] / [P(L_{t-1})(1-P(S)) + (1-P(L_{t-1}))P(G)]; then P(L_{t+1}) = P(L_t|obs_t) + (1 - P(L_t|obs_t)) × P(T). Mastery is declared when P(L_t) exceeds a threshold (typically 0.95), triggering advancement to the next skill in the [[Knowledge Component Model]]. BKT's interpretability has kept it in production use in Carnegie Learning's MATHia system, deployed in over 4,000 US schools, despite its independence assumptions across skills.
 
-  - **[[Deep Knowledge Tracing]] (DKT)**: Piech et al. (2015) replaced BKT with an LSTM sequence model that processes the interaction history {(k_1,c_1), (k_2,c_2), ..., (k_t,c_t)} — pairs of knowledge component index and correctness — to predict the probability of correctness p(c_{t+1}=1 | k_{t+1}) for any future skill. DKT learns skill representations and temporal dynamics jointly from data, outperforming BKT by 6–25% AUC on benchmark datasets (ASSISTments, KDD Cup 2010) by capturing cross-skill transfer effects that BKT's per-skill independence assumption ignores. Dynamic Key-Value Memory Networks (DKVMN, Zhang et al. 2017) augmented DKT with an external memory matrix separating concept representations (keys) from mastery state estimates (values), achieving a further 2–5% AUC improvement by explicitly modelling knowledge concept relationships.
+  - **[[Deep Knowledge Tracing]] (DKT)**: Piech et al. (2015) replaced BKT with an LSTM sequence model that processes the interaction history {(k_1,c_1), (k_2,c_2), ..., (k_t,c_t)} — pairs of knowledge component [private] and correctness — to predict the probability of correctness p(c_{t+1}=1 | k_{t+1}) for any future skill. DKT learns skill representations and temporal dynamics jointly from data, outperforming BKT by 6–25% AUC on benchmark datasets (ASSISTments, KDD Cup 2010) by capturing cross-skill transfer effects that BKT's per-skill independence assumption ignores. Dynamic Key-Value Memory Networks (DKVMN, Zhang et al. 2017) augmented DKT with an external memory matrix separating concept representations (keys) from mastery state estimates (values), achieving a further 2–5% AUC improvement by explicitly modelling knowledge concept relationships.
 
   - **[[Item Response Theory]] and [[Computerised Adaptive Testing]]**: Classical Test Theory treats test score as observed score = true score + error; IRT replaces this with probabilistic item-level models characterising item characteristics and latent ability θ jointly. The 3-Parameter Logistic (3-PL) IRT model defines P(correct|θ,a,b,c) = c + (1-c) / [1 + exp(-a(θ-b))], where a is discrimination (slope at inflection), b is difficulty (θ value where P=0.5 in 2-PL), and c is guessing asymptote. In [[Computerised Adaptive Testing]], items are selected at each step to maximise the Fisher information I(θ) = [P'(θ)]² / [P(θ)(1-P(θ))], targeting items at the estimated ability level where the test is most informative. This converges to a precise ability estimate with 40–60% fewer items than fixed-length tests at equivalent measurement precision, with major testing programmes (GRE, GMAT, NAEP) reporting 30–40 item reduction without loss of reliability.
 
@@ -393,7 +611,7 @@ public: true
   ## Historical Development and Intellectual Lineage
   - Adaptive learning's intellectual lineage traces through multiple converging traditions. In educational psychology, Thorndike's (1913) Law of Effect — that behaviours followed by satisfying outcomes are more likely to recur — established the trial-and-error feedback loop that underlies all adaptive instructional systems. Pressey (1926) built the first mechanical teaching machine that tested and corrected learners' responses; Skinner's programmed instruction (1958) extended this via branching text frames that adapted content sequence to response accuracy; these analogue systems were the mechanical precursors of computational adaptive learning. The PLATO system (1960–1990s) implemented early computer-assisted adaptive instruction on mainframes, serving over 1,000 users daily by the late 1970s.
 
-  - The formalisation of [[Intelligent Tutoring System]]s at Carnegie Mellon under John Anderson in the 1980s–1990s represented a qualitative leap: rather than branching pre-authored frames, the ACT-R Cognitive Tutor modelled student cognition explicitly using production rules derived from cognitive task analysis of expert performance, generated novel feedback dynamically, and tracked skill mastery item-by-item using [[Bayesian Knowledge Tracing]]. The LISP Tutor (1985), Geometry Tutor (1988), and Algebra Cognitive Tutor (1992) demonstrated that this approach could be deployed in real school settings and produce measurable gains. Parallel work at MIT (discourse-level tutoring systems), Pittsburgh (learning by doing), and the Interactive Learning Environments lab (STELLA, MOLE) contributed diverse ITS architectures.
+  - The formalisation of [[Intelligent Tutoring System]]s at Carnegie Mellon under John Anderson in the 1980s–1990s represented a qualitative leap: rather than branching pre-authored frames, the ACT-R Cognitive Tutor modelled student cognition explicitly using production rules derived from cognitive task analysis of expert performance, generated novel feedback dynamically, and tracked skill mastery item-by-item using [[Bayesian Knowledge Tracing]]. The LISP Tutor (1985), Geometry Tutor (1988), and Algebra Cognitive Tutor (1992) demonstrated that this approach [private] be deployed in real school settings and produce measurable gains. Parallel work at MIT (discourse-level tutoring systems), Pittsburgh (learning by doing), and the Interactive Learning Environments lab (STELLA, MOLE) contributed diverse ITS architectures.
 
   - The rise of educational data mining (EDM) as a distinct discipline — formalised by the founding of the Journal of Educational Data Mining (2009) and the International Conference on Educational Data Mining (2008) — introduced statistical and machine learning methods to the analysis of large-scale learner interaction logs. Early EDM work (Baker & Corbett 2004–2010) characterised off-task behaviour, gaming-the-system, and help-seeking patterns from clickstream data; this behavioural data became a new input modality for adaptive systems beyond correctness alone. The availability of massive open online course (MOOC) datasets from Coursera (launched 2012), edX (launched 2012), and Khan Academy (launched 2008) provided millions of learner interaction records that enabled training of far more data-hungry [[Neural Network]] learner models than previously possible.
 

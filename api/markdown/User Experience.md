@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - UserExperience
----
-
-# user experience
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

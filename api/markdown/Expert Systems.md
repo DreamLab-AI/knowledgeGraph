@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Expert Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,47 +184,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:expert-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ff7b82b996e8a5301231668161ede8fe9997d5f32ce58c77bc8e98dc6769c221"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decision Support]]",
-      "resolved": "urn:visionflow:linked:decision-support",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-representation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Expert Systems is a concept within the ai domain.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Competency Based Education
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,59 +8,214 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:education-technology", "vc:label": "Education Technology"},
-    {"@id": "urn:visionflow:linked:adaptive-learning", "vc:label": "Adaptive Learning"},
-    {"@id": "urn:visionflow:linked:learning-management-system", "vc:label": "Learning Management System"},
-    {"@id": "urn:visionflow:linked:learning-analytics", "vc:label": "Learning Analytics"},
-    {"@id": "urn:visionflow:linked:mastery-learning", "vc:label": "Mastery Learning"},
-    {"@id": "urn:visionflow:linked:formative-assessment", "vc:label": "Formative Assessment"},
-    {"@id": "urn:visionflow:linked:summative-assessment", "vc:label": "Summative Assessment"},
-    {"@id": "urn:visionflow:linked:personalised-learning", "vc:label": "Personalised Learning"},
-    {"@id": "urn:visionflow:linked:intelligent-tutoring-system", "vc:label": "Intelligent Tutoring System"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:micro-credential", "vc:label": "Micro-Credential"},
-    {"@id": "urn:visionflow:linked:digital-badge", "vc:label": "Digital Badge"},
-    {"@id": "urn:visionflow:linked:open-badges", "vc:label": "Open Badges"},
-    {"@id": "urn:visionflow:linked:credential-framework", "vc:label": "Credential Framework"},
-    {"@id": "urn:visionflow:linked:prior-learning-assessment", "vc:label": "Prior Learning Assessment"},
-    {"@id": "urn:visionflow:linked:rubric-based-assessment", "vc:label": "Rubric-Based Assessment"},
-    {"@id": "urn:visionflow:linked:bloom-taxonomy", "vc:label": "Bloom's Taxonomy"},
-    {"@id": "urn:visionflow:linked:self-paced-learning", "vc:label": "Self-Paced Learning"},
-    {"@id": "urn:visionflow:linked:curriculum-design", "vc:label": "Curriculum Design"},
-    {"@id": "urn:visionflow:linked:competency-framework", "vc:label": "Competency Framework"},
-    {"@id": "urn:visionflow:linked:skills-gap-analysis", "vc:label": "Skills Gap Analysis"},
-    {"@id": "urn:visionflow:linked:workforce-development", "vc:label": "Workforce Development"},
-    {"@id": "urn:visionflow:linked:lifelong-learning", "vc:label": "Lifelong Learning"},
-    {"@id": "urn:visionflow:linked:open-educational-resources", "vc:label": "Open Educational Resources"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:visionflow:linked:bayesian-knowledge-tracing", "vc:label": "Bayesian Knowledge Tracing"},
-    {"@id": "urn:visionflow:linked:item-response-theory", "vc:label": "Item Response Theory"},
-    {"@id": "urn:visionflow:linked:feedback-loop", "vc:label": "Feedback Loop"},
-    {"@id": "urn:visionflow:linked:learner-model", "vc:label": "Learner Model"},
-    {"@id": "urn:visionflow:linked:open-learner-model", "vc:label": "Open Learner Model"},
-    {"@id": "urn:visionflow:linked:cognitive-load-theory", "vc:label": "Cognitive Load Theory"},
-    {"@id": "urn:visionflow:linked:zone-of-proximal-development", "vc:label": "Zone of Proximal Development"},
-    {"@id": "urn:visionflow:linked:scaffolding", "vc:label": "Scaffolding"},
-    {"@id": "urn:visionflow:linked:data-privacy", "vc:label": "Data Privacy"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:curriculum-learning", "vc:label": "Curriculum Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:deep-knowledge-tracing", "vc:label": "Deep Knowledge Tracing"},
-    {"@id": "urn:visionflow:linked:knowledge-component-model", "vc:label": "Knowledge Component Model"},
-    {"@id": "urn:visionflow:linked:open-edx", "vc:label": "OpenEdX"},
-    {"@id": "urn:visionflow:linked:gamification", "vc:label": "Gamification"},
-    {"@id": "urn:visionflow:linked:metacognition", "vc:label": "Metacognition"},
-    {"@id": "urn:visionflow:linked:differentiated-instruction", "vc:label": "Differentiated Instruction"},
-    {"@id": "urn:visionflow:linked:time-based-education", "vc:label": "Time-Based Education"},
-    {"@id": "urn:visionflow:linked:apprenticeship", "vc:label": "Apprenticeship"},
-    {"@id": "urn:visionflow:linked:higher-education", "vc:label": "Higher Education"},
-    {"@id": "urn:visionflow:linked:professional-development", "vc:label": "Professional Development"}
+    {
+      "@id": "urn:visionflow:linked:education-technology",
+      "vc:label": "Education Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-learning",
+      "vc:label": "Adaptive Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-management-system",
+      "vc:label": "Learning Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-analytics",
+      "vc:label": "Learning Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:mastery-learning",
+      "vc:label": "Mastery Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:formative-assessment",
+      "vc:label": "Formative Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:summative-assessment",
+      "vc:label": "Summative Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalised-learning",
+      "vc:label": "Personalised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-tutoring-system",
+      "vc:label": "Intelligent Tutoring System"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:micro-credential",
+      "vc:label": "Micro-Credential"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-badge",
+      "vc:label": "Digital Badge"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-badges",
+      "vc:label": "Open Badges"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-framework",
+      "vc:label": "Credential Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:prior-learning-assessment",
+      "vc:label": "Prior Learning Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:rubric-based-assessment",
+      "vc:label": "Rubric-Based Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:bloom-taxonomy",
+      "vc:label": "Bloom's Taxonomy"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-paced-learning",
+      "vc:label": "Self-Paced Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:curriculum-design",
+      "vc:label": "Curriculum Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:competency-framework",
+      "vc:label": "Competency Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:skills-gap-analysis",
+      "vc:label": "Skills Gap Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:workforce-development",
+      "vc:label": "Workforce Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:lifelong-learning",
+      "vc:label": "Lifelong Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-educational-resources",
+      "vc:label": "Open Educational Resources"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-knowledge-tracing",
+      "vc:label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "@id": "urn:visionflow:linked:item-response-theory",
+      "vc:label": "Item Response Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedback-loop",
+      "vc:label": "Feedback Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:learner-model",
+      "vc:label": "Learner Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-learner-model",
+      "vc:label": "Open Learner Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-load-theory",
+      "vc:label": "Cognitive Load Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:zone-of-proximal-development",
+      "vc:label": "Zone of Proximal Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:scaffolding",
+      "vc:label": "Scaffolding"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-privacy",
+      "vc:label": "Data Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-knowledge-tracing",
+      "vc:label": "Deep Knowledge Tracing"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-component-model",
+      "vc:label": "Knowledge Component Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-edx",
+      "vc:label": "OpenEdX"
+    },
+    {
+      "@id": "urn:visionflow:linked:gamification",
+      "vc:label": "Gamification"
+    },
+    {
+      "@id": "urn:visionflow:linked:metacognition",
+      "vc:label": "Metacognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:differentiated-instruction",
+      "vc:label": "Differentiated Instruction"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-based-education",
+      "vc:label": "Time-Based Education"
+    },
+    {
+      "@id": "urn:visionflow:linked:apprenticeship",
+      "vc:label": "Apprenticeship"
+    },
+    {
+      "@id": "urn:visionflow:linked:higher-education",
+      "vc:label": "Higher Education"
+    },
+    {
+      "@id": "urn:visionflow:linked:professional-development",
+      "vc:label": "Professional Development"
+    }
   ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-21T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -222,77 +371,12 @@ public: true
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:competency-based-education:e91a34b7cc02",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:competency-based-education"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Education Technology]]", "resolved": "urn:visionflow:linked:education-technology", "kind": "ResolvedLink"},
-    {"raw": "[[Adaptive Learning]]", "resolved": "urn:visionflow:linked:adaptive-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Learning Management System]]", "resolved": "urn:visionflow:linked:learning-management-system", "kind": "StubLink"},
-    {"raw": "[[Learning Analytics]]", "resolved": "urn:visionflow:linked:learning-analytics", "kind": "StubLink"},
-    {"raw": "[[Mastery Learning]]", "resolved": "urn:visionflow:linked:mastery-learning", "kind": "StubLink"},
-    {"raw": "[[Formative Assessment]]", "resolved": "urn:visionflow:linked:formative-assessment", "kind": "StubLink"},
-    {"raw": "[[Summative Assessment]]", "resolved": "urn:visionflow:linked:summative-assessment", "kind": "StubLink"},
-    {"raw": "[[Personalised Learning]]", "resolved": "urn:visionflow:linked:personalised-learning", "kind": "StubLink"},
-    {"raw": "[[Intelligent Tutoring System]]", "resolved": "urn:visionflow:linked:intelligent-tutoring-system", "kind": "StubLink"},
-    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:linked:knowledge-graph", "kind": "StubLink"},
-    {"raw": "[[Micro-Credential]]", "resolved": "urn:visionflow:linked:micro-credential", "kind": "StubLink"},
-    {"raw": "[[Digital Badge]]", "resolved": "urn:visionflow:linked:digital-badge", "kind": "StubLink"},
-    {"raw": "[[Open Badges]]", "resolved": "urn:visionflow:linked:open-badges", "kind": "StubLink"},
-    {"raw": "[[Credential Framework]]", "resolved": "urn:visionflow:linked:credential-framework", "kind": "StubLink"},
-    {"raw": "[[Prior Learning Assessment]]", "resolved": "urn:visionflow:linked:prior-learning-assessment", "kind": "StubLink"},
-    {"raw": "[[Rubric-Based Assessment]]", "resolved": "urn:visionflow:linked:rubric-based-assessment", "kind": "StubLink"},
-    {"raw": "[[Bloom's Taxonomy]]", "resolved": "urn:visionflow:linked:bloom-taxonomy", "kind": "StubLink"},
-    {"raw": "[[Self-Paced Learning]]", "resolved": "urn:visionflow:linked:self-paced-learning", "kind": "StubLink"},
-    {"raw": "[[Curriculum Design]]", "resolved": "urn:visionflow:linked:curriculum-design", "kind": "StubLink"},
-    {"raw": "[[Competency Framework]]", "resolved": "urn:visionflow:linked:competency-framework", "kind": "StubLink"},
-    {"raw": "[[Skills Gap Analysis]]", "resolved": "urn:visionflow:linked:skills-gap-analysis", "kind": "StubLink"},
-    {"raw": "[[Workforce Development]]", "resolved": "urn:visionflow:linked:workforce-development", "kind": "StubLink"},
-    {"raw": "[[Lifelong Learning]]", "resolved": "urn:visionflow:linked:lifelong-learning", "kind": "StubLink"},
-    {"raw": "[[Open Educational Resources]]", "resolved": "urn:visionflow:linked:open-educational-resources", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "StubLink"},
-    {"raw": "[[Bayesian Knowledge Tracing]]", "resolved": "urn:visionflow:linked:bayesian-knowledge-tracing", "kind": "StubLink"},
-    {"raw": "[[Item Response Theory]]", "resolved": "urn:visionflow:linked:item-response-theory", "kind": "StubLink"},
-    {"raw": "[[Feedback Loop]]", "resolved": "urn:visionflow:linked:feedback-loop", "kind": "StubLink"},
-    {"raw": "[[Learner Model]]", "resolved": "urn:visionflow:linked:learner-model", "kind": "StubLink"},
-    {"raw": "[[Open Learner Model]]", "resolved": "urn:visionflow:linked:open-learner-model", "kind": "StubLink"},
-    {"raw": "[[Cognitive Load Theory]]", "resolved": "urn:visionflow:linked:cognitive-load-theory", "kind": "StubLink"},
-    {"raw": "[[Zone of Proximal Development]]", "resolved": "urn:visionflow:linked:zone-of-proximal-development", "kind": "StubLink"},
-    {"raw": "[[Scaffolding]]", "resolved": "urn:visionflow:linked:scaffolding", "kind": "StubLink"},
-    {"raw": "[[Data Privacy]]", "resolved": "urn:visionflow:linked:data-privacy", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Federated Learning]]", "resolved": "urn:visionflow:linked:federated-learning", "kind": "StubLink"},
-    {"raw": "[[Curriculum Learning]]", "resolved": "urn:visionflow:linked:curriculum-learning", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Deep Knowledge Tracing]]", "resolved": "urn:visionflow:linked:deep-knowledge-tracing", "kind": "StubLink"},
-    {"raw": "[[Knowledge Component Model]]", "resolved": "urn:visionflow:linked:knowledge-component-model", "kind": "StubLink"},
-    {"raw": "[[OpenEdX]]", "resolved": "urn:visionflow:linked:open-edx", "kind": "StubLink"},
-    {"raw": "[[Gamification]]", "resolved": "urn:visionflow:linked:gamification", "kind": "StubLink"},
-    {"raw": "[[Metacognition]]", "resolved": "urn:visionflow:linked:metacognition", "kind": "StubLink"},
-    {"raw": "[[Differentiated Instruction]]", "resolved": "urn:visionflow:linked:differentiated-instruction", "kind": "StubLink"},
-    {"raw": "[[Time-Based Education]]", "resolved": "urn:visionflow:linked:time-based-education", "kind": "StubLink"},
-    {"raw": "[[Apprenticeship]]", "resolved": "urn:visionflow:linked:apprenticeship", "kind": "StubLink"},
-    {"raw": "[[Higher Education]]", "resolved": "urn:visionflow:linked:higher-education", "kind": "StubLink"},
-    {"raw": "[[Professional Development]]", "resolved": "urn:visionflow:linked:professional-development", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 

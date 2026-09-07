@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Step Reasoning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -159,7 +154,7 @@ public: true
 - ### Content
   - Many tasks cannot be solved by a single associative leap: a multi-hop question, a multi-stage arithmetic word problem, or a plan with dependencies requires deriving and combining intermediate conclusions. Multi-step reasoning names this capability and distinguishes it from the shallow pattern completion that suffices for simpler tasks. The key difficulty is that errors compound — a mistake in an early step propagates, so accuracy on a ten-step problem can collapse even when each individual step is usually correct.
 
-  - In large language models, the breakthrough observation was that explicitly generating intermediate steps — "thinking out loud" — dramatically improves accuracy on reasoning tasks. By producing a chain of thought before the final answer, the model allocates more computation to the problem and conditions each step on the previous ones, turning a single forward pass into a structured derivation. This simple prompting change unlocked capabilities that the same models could not exhibit when asked to answer directly.
+  - In large language models, the breakthrough observation was that explicitly generating intermediate steps — "thinking out loud" — dramatically improves accuracy on reasoning tasks. By producing a chain of thought before the final answer, the model allocates more computation to the problem and conditions each step on the previous ones, turning a single forward pass into a structured derivation. This simple prompting change unlocked capabilities that the same models [private] not exhibit when asked to answer directly.
 
   - Robust multi-step reasoning increasingly relies on more than free-form generation. Self-consistency samples many reasoning paths and takes a majority vote; tree- and graph-of-thought methods explore and prune alternative paths; and tool use offloads steps that language models do poorly — exact arithmetic, code execution, retrieval — to reliable external systems. Verification, where a separate process checks intermediate steps, counters the compounding-error problem by catching mistakes before they propagate.
 

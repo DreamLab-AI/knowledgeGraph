@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ETSI Domain Reality Capture
----
-
-# ETSI_Domain_Reality_Capture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -86,18 +79,42 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:motion-capture-rig", "label": "Motion Capture Rig"},
-      {"@id": "urn:ngm:class:reality-capture-system", "label": "Reality Capture System"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture-rig",
+        "label": "Motion Capture Rig"
+      },
+      {
+        "@id": "urn:ngm:class:reality-capture-system",
+        "label": "Reality Capture System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
     ]
   },
   "provenance": {
@@ -107,67 +124,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-reality-capture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:96f92ad99ee179be4ab8ad64d5c8ec833a090a3c9d45a2ade0196796d7e83504"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalTwin|digital twins]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Capture & Recognition]]",
-      "resolved": "urn:visionflow:owl:class:human-capture-and-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Capture & Recognition|human capture and recognition]]",
-      "resolved": "urn:visionflow:owl:class:human-capture-and-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Capture Rig]]",
-      "resolved": "urn:visionflow:owl:class:motion-capture-rig",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Photogrammetry]]",
-      "resolved": "urn:visionflow:owl:class:photogrammetry",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reality Capture System]]",
-      "resolved": "urn:visionflow:owl:class:reality-capture-system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic [[DigitalTwin|digital twins]] for metaverse and immersive environments. Reality capture integrates real-time mesh generation, semantic labelling of captured objects, and [[Human Capture & Recognition|human capture and recognition]] systems enabling accurate representation of physical spaces with precise geometric, textural, and dynamic properties. Technical capabilities span volumetric video coding standards (ISO V3C/V-PCC, V3C/MIV), immersive audio (MPEG-H 3D), and spatial data intelligence enabling seamless physical-to-virtual integration for virtual collaboration, digital preservation, and immersive training across academic and commercial applications.
@@ -226,7 +182,7 @@ aliases:
   - North England innovation potential
   - Manchester's digital and technology sector, coupled with academic research at University of Manchester and Manchester Metropolitan University, represents potential innovation hub for reality capture applications in urban planning and heritage documentation
   - Leeds and Sheffield universities maintain strong computer science and engineering programmes with capacity for reality capture research, though current project portfolios lack prominent reality capture initiatives in published outputs
-  - Newcastle's digital innovation ecosystem could benefit from reality capture applications in smart city infrastructure and industrial heritage preservation
+  - Newcastle's digital innovation ecosystem [private] benefit from reality capture applications in smart city infrastructure and industrial heritage preservation
   - Regional case studies
   - Specific documented case studies of North England reality capture implementations are currently unavailable; however, opportunities exist for heritage site digitisation (e.g., industrial archaeology in Sheffield and Manchester) and urban regeneration projects utilising reality capture for planning visualisation
   ## Future Directions

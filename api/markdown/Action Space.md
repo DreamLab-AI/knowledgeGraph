@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Action Space
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Action Space",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:state-space", "vc:label": "State Space"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:markov-decision-process", "vc:label": "Markov Decision Process"},
-    {"@id": "urn:visionflow:linked:reward-function", "vc:label": "Reward Function"},
-    {"@id": "urn:visionflow:linked:policy-optimisation", "vc:label": "Policy Optimisation"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-algorithm", "vc:label": "Reinforcement Learning Algorithm"},
-    {"@id": "urn:visionflow:linked:environment-model", "vc:label": "Environment Model"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-for-robotics", "vc:label": "Reinforcement Learning for Robotics"},
-    {"@id": "urn:visionflow:linked:deep-reinforcement-learning", "vc:label": "Deep Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:policy-gradient-methods", "vc:label": "Policy Gradient Methods"},
-    {"@id": "urn:visionflow:linked:proximal-policy-optimisation", "vc:label": "Proximal Policy Optimisation"},
-    {"@id": "urn:visionflow:linked:value-function", "vc:label": "Value Function"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:multi-agent-reinforcement-learning", "vc:label": "Multi-Agent Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:simulation-environment", "vc:label": "Simulation Environment"},
-    {"@id": "urn:visionflow:linked:autonomous-robot", "vc:label": "Autonomous Robot"},
-    {"@id": "urn:visionflow:linked:game-ai", "vc:label": "Game AI"},
-    {"@id": "urn:visionflow:linked:combinatorial-optimisation", "vc:label": "Combinatorial Optimisation"},
-    {"@id": "urn:visionflow:linked:exploration-exploitation", "vc:label": "Exploration-Exploitation"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:control-theory", "vc:label": "Control Theory"},
-    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
-    {"@id": "urn:visionflow:linked:hierarchical-reinforcement-learning", "vc:label": "Hierarchical Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:domain-randomisation", "vc:label": "Domain Randomisation"},
-    {"@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration"},
-    {"@id": "urn:visionflow:linked:sample-efficiency", "vc:label": "Sample Efficiency"},
-    {"@id": "urn:visionflow:linked:reward-shaping", "vc:label": "Reward Shaping"},
-    {"@id": "urn:visionflow:linked:curriculum-learning", "vc:label": "Curriculum Learning"},
-    {"@id": "urn:visionflow:linked:autonomous-vehicle", "vc:label": "Autonomous Vehicle"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:temporal-difference", "vc:label": "Temporal Difference"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:model-based-reinforcement-learning", "vc:label": "Model-Based Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:inverse-reinforcement-learning", "vc:label": "Inverse Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:safe-reinforcement-learning", "vc:label": "Safe Reinforcement Learning"}
+    {
+      "@id": "urn:visionflow:linked:state-space",
+      "vc:label": "State Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:markov-decision-process",
+      "vc:label": "Markov Decision Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-function",
+      "vc:label": "Reward Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-optimisation",
+      "vc:label": "Policy Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-algorithm",
+      "vc:label": "Reinforcement Learning Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:environment-model",
+      "vc:label": "Environment Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-for-robotics",
+      "vc:label": "Reinforcement Learning for Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-reinforcement-learning",
+      "vc:label": "Deep Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-gradient-methods",
+      "vc:label": "Policy Gradient Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:proximal-policy-optimisation",
+      "vc:label": "Proximal Policy Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:value-function",
+      "vc:label": "Value Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-reinforcement-learning",
+      "vc:label": "Multi-Agent Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation-environment",
+      "vc:label": "Simulation Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-ai",
+      "vc:label": "Game AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:combinatorial-optimisation",
+      "vc:label": "Combinatorial Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:exploration-exploitation",
+      "vc:label": "Exploration-Exploitation"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-theory",
+      "vc:label": "Control Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation",
+      "vc:label": "Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hierarchical-reinforcement-learning",
+      "vc:label": "Hierarchical Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:domain-randomisation",
+      "vc:label": "Domain Randomisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-acceleration",
+      "vc:label": "GPU Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:linked:sample-efficiency",
+      "vc:label": "Sample Efficiency"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-shaping",
+      "vc:label": "Reward Shaping"
+    },
+    {
+      "@id": "urn:visionflow:linked:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicle",
+      "vc:label": "Autonomous Vehicle"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal-difference",
+      "vc:label": "Temporal Difference"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-based-reinforcement-learning",
+      "vc:label": "Model-Based Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:inverse-reinforcement-learning",
+      "vc:label": "Inverse Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-reinforcement-learning",
+      "vc:label": "Safe Reinforcement Learning"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -67,33 +182,81 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:state-space", "label": "State Space"}
+    {
+      "@id": "urn:ngm:class:state-space",
+      "label": "State Space"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"},
-      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"},
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
-      {"@id": "urn:ngm:class:exploration-exploitation", "label": "Exploration-Exploitation"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:exploration-exploitation",
+        "label": "Exploration-Exploitation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:policy-optimisation", "label": "Policy Optimisation"},
-      {"@id": "urn:ngm:class:reinforcement-learning-algorithm", "label": "Reinforcement Learning Algorithm"},
-      {"@id": "urn:ngm:class:deep-reinforcement-learning", "label": "Deep Reinforcement Learning"},
-      {"@id": "urn:ngm:class:safe-reinforcement-learning", "label": "Safe Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:policy-optimisation",
+        "label": "Policy Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-algorithm",
+        "label": "Reinforcement Learning Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:safe-reinforcement-learning",
+        "label": "Safe Reinforcement Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:environment-model", "label": "Environment Model"},
-      {"@id": "urn:ngm:class:simulation-environment", "label": "Simulation Environment"}
+      {
+        "@id": "urn:ngm:class:environment-model",
+        "label": "Environment Model"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning-for-robotics", "label": "Reinforcement Learning for Robotics"},
-      {"@id": "urn:ngm:class:policy-gradient-methods", "label": "Policy Gradient Methods"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient Methods"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:discrete-action", "label": "Discrete Action"},
-      {"@id": "urn:ngm:class:continuous-action", "label": "Continuous Action"}
+      {
+        "@id": "urn:ngm:class:discrete-action",
+        "label": "Discrete Action"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-action",
+        "label": "Continuous Action"
+      }
     ]
   },
   "quality": 0.87,
@@ -102,57 +265,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ontology-augment-v2"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:annotation:action-space:link-resolutions",
-  "@type": "LinkResolutionsAnnotation",
-  "forClass": "urn:ngm:class:action-space",
-  "resolutions": [
-    {"raw": "State Space", "@id": "urn:visionflow:linked:state-space", "kind": "ResolvedLink"},
-    {"raw": "Reinforcement Learning", "@id": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "Markov Decision Process", "@id": "urn:visionflow:linked:markov-decision-process", "kind": "ResolvedLink"},
-    {"raw": "Reward Function", "@id": "urn:visionflow:linked:reward-function", "kind": "ResolvedLink"},
-    {"raw": "Policy Optimisation", "@id": "urn:visionflow:linked:policy-optimisation", "kind": "ResolvedLink"},
-    {"raw": "Reinforcement Learning Algorithm", "@id": "urn:visionflow:linked:reinforcement-learning-algorithm", "kind": "ResolvedLink"},
-    {"raw": "Environment Model", "@id": "urn:visionflow:linked:environment-model", "kind": "ResolvedLink"},
-    {"raw": "Reinforcement Learning for Robotics", "@id": "urn:visionflow:linked:reinforcement-learning-for-robotics", "kind": "ResolvedLink"},
-    {"raw": "Deep Reinforcement Learning", "@id": "urn:visionflow:linked:deep-reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "Policy Gradient Methods", "@id": "urn:visionflow:linked:policy-gradient-methods", "kind": "ResolvedLink"},
-    {"raw": "Proximal Policy Optimisation", "@id": "urn:visionflow:linked:proximal-policy-optimisation", "kind": "ResolvedLink"},
-    {"raw": "Value Function", "@id": "urn:visionflow:linked:value-function", "kind": "ResolvedLink"},
-    {"raw": "Neural Network", "@id": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "Multi-Agent Reinforcement Learning", "@id": "urn:visionflow:linked:multi-agent-reinforcement-learning", "kind": "StubLink"},
-    {"raw": "Simulation Environment", "@id": "urn:visionflow:linked:simulation-environment", "kind": "ResolvedLink"},
-    {"raw": "Autonomous Robot", "@id": "urn:visionflow:linked:autonomous-robot", "kind": "ResolvedLink"},
-    {"raw": "Game AI", "@id": "urn:visionflow:linked:game-ai", "kind": "ResolvedLink"},
-    {"raw": "Combinatorial Optimisation", "@id": "urn:visionflow:linked:combinatorial-optimisation", "kind": "StubLink"},
-    {"raw": "Exploration-Exploitation", "@id": "urn:visionflow:linked:exploration-exploitation", "kind": "StubLink"},
-    {"raw": "Deep Learning", "@id": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "Natural Language Processing", "@id": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "Large Language Models", "@id": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "Control Theory", "@id": "urn:visionflow:linked:control-theory", "kind": "ResolvedLink"},
-    {"raw": "Optimisation", "@id": "urn:visionflow:linked:optimisation", "kind": "ResolvedLink"},
-    {"raw": "Hierarchical Reinforcement Learning", "@id": "urn:visionflow:linked:hierarchical-reinforcement-learning", "kind": "StubLink"},
-    {"raw": "Reinforcement Learning from Human Feedback", "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"},
-    {"raw": "Domain Randomisation", "@id": "urn:visionflow:linked:domain-randomisation", "kind": "ResolvedLink"},
-    {"raw": "GPU Acceleration", "@id": "urn:visionflow:linked:gpu-acceleration", "kind": "ResolvedLink"},
-    {"raw": "Sample Efficiency", "@id": "urn:visionflow:linked:sample-efficiency", "kind": "StubLink"},
-    {"raw": "Reward Shaping", "@id": "urn:visionflow:linked:reward-shaping", "kind": "StubLink"},
-    {"raw": "Curriculum Learning", "@id": "urn:visionflow:linked:curriculum-learning", "kind": "StubLink"},
-    {"raw": "Autonomous Vehicle", "@id": "urn:visionflow:linked:autonomous-vehicle", "kind": "ResolvedLink"},
-    {"raw": "Computer Vision", "@id": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "Agentic AI", "@id": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "Temporal Difference", "@id": "urn:visionflow:linked:temporal-difference", "kind": "ResolvedLink"},
-    {"raw": "Transfer Learning", "@id": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "Model-Based Reinforcement Learning", "@id": "urn:visionflow:linked:model-based-reinforcement-learning", "kind": "StubLink"},
-    {"raw": "Graph Neural Network", "@id": "urn:visionflow:linked:graph-neural-network", "kind": "ResolvedLink"},
-    {"raw": "Inverse Reinforcement Learning", "@id": "urn:visionflow:linked:inverse-reinforcement-learning", "kind": "StubLink"},
-    {"raw": "Safe Reinforcement Learning", "@id": "urn:visionflow:linked:safe-reinforcement-learning", "kind": "StubLink"}
-  ]
 }
 ```
 
@@ -371,10 +483,10 @@ public: true
     - Silver et al. (2014) on deterministic policy gradients established the off-policy gradient estimator for deterministic continuous policies, enabling data-efficient continuous action space learning; this result spawned DDPG, TD3, and SAC.
     - Mnih et al. (2015) on DQN demonstrated deep Q-networks across Atari's 18-action discrete space, achieving human-level performance on 49 out of 57 games and establishing the benchmark ecosystem for discrete action space RL research.
     - Schulman et al. (2017) on PPO provided a practical, stable algorithm covering both discrete and continuous action spaces using a clipped surrogate objective; PPO remains the most widely deployed policy gradient method as of 2025, used in RLHF for all major LLMs.
-    - Haarnoja et al. (2018) on SAC introduced entropy-regularised continuous action space learning with automatic temperature tuning, demonstrating that a single algorithm with default hyperparameters could match or exceed specialised methods across 6 continuous control benchmarks.
+    - Haarnoja et al. (2018) on SAC introduced entropy-regularised continuous action space learning with automatic temperature tuning, demonstrating that a single algorithm with default hyperparameters [private] match or exceed specialised methods across 6 continuous control benchmarks.
     - Vinyals et al. (2019) on AlphaStar demonstrated autoregressive decomposition of multi-discrete action spaces at the level of the world's best StarCraft II players, with an action space of ~570 discrete types combined with spatial and entity pointer selections.
-    - Nachum et al. (2018) HIRO introduced hierarchical action spaces for robot navigation with significant improvements in sparse-reward settings, showing that a 3-dimensional sub-goal action space for the high-level policy could reduce the effective planning horizon from hundreds to tens of steps.
-    - Chi et al. (2023) on diffusion policy established that multi-modal continuous action distributions trained via denoising score matching could outperform Gaussian policy baselines on 11/12 real robot manipulation tasks, opening the diffusion-as-policy research direction.
+    - Nachum et al. (2018) HIRO introduced hierarchical action spaces for robot navigation with significant improvements in sparse-reward settings, showing that a 3-dimensional sub-goal action space for the high-level policy [private] reduce the effective planning horizon from hundreds to tens of steps.
+    - Chi et al. (2023) on diffusion policy established that multi-modal continuous action distributions trained via denoising score matching [private] outperform Gaussian policy baselines on 11/12 real robot manipulation tasks, opening the diffusion-as-policy research direction.
 
     UK academic contributions are significant and geographically distributed: David Silver (UCL, Google DeepMind) co-developed deterministic policy gradients, AlphaGo's action space representation, and AlphaStar's multi-discrete decomposition; UCL's Centre for Artificial Intelligence continues publishing on continuous action space theory. The Edinburgh Centre for Robotics (a partnership between Edinburgh and Heriot-Watt Universities) publishes on safe exploration in continuous action spaces for physical outdoor service robots, with field trials in Scottish hillside and urban environments. Imperial College London's Aerial Robotics Lab and Hamlyn Centre for Medical Robotics address continuous action space control for UAV formation flight and minimally invasive surgical tool manipulation respectively. The FAIR-SPACE Hub, led by Surrey with Imperial and Edinburgh as key partners, explores hierarchical action spaces for autonomous planetary robotics, with results on sample-efficient grasping in unstructured terrain presented at ICRA 2024 and IROS 2025. The University of Cambridge's Computational and Biological Learning Lab (CBL) has contributed theoretical analysis of action-conditioned sequence models relevant to discrete action space language generation. The Alan Turing Institute's Programme on Safe and Ethical AI, with nodes at Manchester, Leeds, and Edinburgh, funds research on action space constraint satisfaction with formal safety guarantees.
 
@@ -515,7 +627,7 @@ public: true
 
     The action space does not exist in isolation; its design must be co-designed with the other MDP components:
 
-    - **Action space ↔ State space**: The state space must contain sufficient information for the policy to select appropriate actions. If the state omits information needed to distinguish when action A is better than action B, the resulting policy will be stochastic (randomising between A and B), inflating entropy and reducing performance. For robotics, this often means including proprioceptive state (joint angles, velocities) even when task completion could theoretically be assessed from camera alone. Partial observability (POMDPs) further complicates action selection, since the policy cannot observe the true state directly; recurrent or memory-augmented policies (LSTMs, Transformers with context windows) must infer effective states from observation histories before mapping to actions.
+    - **Action space ↔ State space**: The state space must contain sufficient information for the policy to select appropriate actions. If the state omits information needed to distinguish when action A is better than action B, the resulting policy will be stochastic (randomising between A and B), inflating entropy and reducing performance. For robotics, this often means including proprioceptive state (joint angles, velocities) even when task completion [private] theoretically be assessed from camera alone. Partial observability (POMDPs) further complicates action selection, since the policy cannot observe the true state directly; recurrent or memory-augmented policies (LSTMs, Transformers with context windows) must infer effective states from observation histories before mapping to actions.
 
     - **Action space ↔ Reward function**: The [[Reward Function]] must provide a gradient signal distinguishing good from bad actions at the resolution of the action space. If the reward function cannot distinguish between two nearby actions in a continuous space, the policy gradient provides no useful signal for choosing between them. This coupling motivates [[Reward Shaping]] as a tool to amplify reward signal in regions of the action space where the task reward is sparse. [[Curriculum Learning]] complements reward shaping by initially restricting the agent to a restricted sub-region of A where the reward landscape is more favourable, then progressively expanding access to the full action space as the policy matures.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DevSecOps
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,33 +21,87 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:agile-software-development", "label": "Agile Software Development"},
-    {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-    {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+    {
+      "@id": "urn:ngm:class:agile-software-development",
+      "label": "Agile Software Development"
+    },
+    {
+      "@id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    },
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ci-cd-automation", "label": "CI-CD Automation"},
-      {"@id": "urn:ngm:class:vulnerability-scanner", "label": "Vulnerability Scanner"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:cloud-security", "label": "Cloud Security"}
+      {
+        "@id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI-CD Automation"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-scanner",
+        "label": "Vulnerability Scanner"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:security-testing", "label": "Security Testing"},
-      {"@id": "urn:ngm:class:penetration-testing", "label": "Penetration Testing"},
-      {"@id": "urn:ngm:class:continuous-monitoring", "label": "Continuous Monitoring"},
-      {"@id": "urn:ngm:class:policy-as-code", "label": "Policy as Code"}
+      {
+        "@id": "urn:ngm:class:security-testing",
+        "label": "Security Testing"
+      },
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-monitoring",
+        "label": "Continuous Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:policy-as-code",
+        "label": "Policy as Code"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"},
-      {"@id": "urn:ngm:class:supply-chain-security", "label": "Supply Chain Security"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:ai-security", "label": "AI Security"},
-      {"@id": "urn:ngm:class:cybersecurity-risk-management", "label": "Cybersecurity Risk Management"}
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-risk-management",
+        "label": "Cybersecurity Risk Management"
+      }
     ]
   },
   "quality": 0.95,
@@ -464,7 +513,7 @@ public: true
   The Agile Manifesto (Beck et al., 2001) established the foundational principle of iterative, feedback-driven software delivery that DevSecOps inherits. At the same time, Microsoft's Trustworthy Computing initiative (2002) — launched by Bill Gates after the Code Red and Nimda worm incidents of 2001 — produced the Security Development Lifecycle (SDL), the first systematic attempt to embed security into a commercial software development process. The SDL's practices (threat modelling, security code review, penetration testing, incident response planning) became the conceptual precursors of DevSecOps pipeline stages. The PCI-DSS standard (first version, 2004) created the first major regulatory demand for formal software security practices in commercial organisations.
 
   **2008-2012: DevOps and Security Culture Convergence**
-  Patrick Debois's 2008 Agile Conference talk "Agile Infrastructure and Operations" and John Allspaw and Paul Hammond's 2009 Velocity Conference presentation "10+ Deploys Per Day: Dev and Ops Cooperation at Flickr" established the DevOps movement's intellectual foundations. Meanwhile, the security community was grappling with the incompatibility of annual penetration tests and periodic code reviews with continuous delivery: by 2010, organisations practising Continuous Integration were releasing software faster than security teams could review it. The term "DevSecOps" emerged around 2012 as the synthesis: bring security into the DevOps pipeline rather than treating it as a separate parallel process.
+  Patrick Debois's 2008 Agile Conference talk "Agile Infrastructure and Operations" and John Allspaw and Paul Hammond's 2009 Velocity Conference presentation "10+ Deploys Per Day: Dev and Ops Cooperation at Flickr" established the DevOps movement's intellectual foundations. Meanwhile, the security community was grappling with the incompatibility of annual penetration tests and periodic code reviews with continuous delivery: by 2010, organisations practising Continuous Integration were releasing software faster than security teams [private] review it. The term "DevSecOps" emerged around 2012 as the synthesis: bring security into the DevOps pipeline rather than treating it as a separate parallel process.
 
   **2012-2017: Pipeline Integration Tooling Matures**
   OWASP ZAP (Zed Attack Proxy) became the first widely adopted open-source DAST tool (2010, mature by 2013). Anchore, Clair, and Trivy established the container scanning category following Docker's 2013 rise to prominence. GitHub's acquisition of Dependabot (2019) brought automated dependency vulnerability tracking to the mass market. The 2017 Equifax breach — a textbook failure of SCA tooling adoption — became the seminal case study demonstrating the cost of inadequate dependency management, driving widespread adoption of SCA in CI pipelines.

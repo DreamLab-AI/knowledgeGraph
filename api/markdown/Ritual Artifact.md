@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ritual Artifact
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ritual-artifact:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a767ee9904729064d56fc56d8aae132f7aa86adac7c12ffa7ed8f20b23537c9b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Cultural Heritage]]",
-      "resolved": "urn:visionflow:linked:digital-cultural-heritage",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Heritage]]",
-      "resolved": "urn:visionflow:owl:class:digital-heritage",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital objects within virtual worlds that hold cultural, spiritual, or ceremonial significance, often represented as NFTs enabling communities to preserve and share cultural heritage through blockchain-verified authenticity and ownership.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Affordability Unlock
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "affordability-unlock",
   "title": "Affordability Unlock",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Cost Reduction", "Long-tail Market", "Service Accessibility"],
+  "vc:outboundWikilinks": [
+    "Cost Reduction",
+    "Long-tail Market",
+    "Service Accessibility"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,31 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:economic-impact-of-ai", "label": "Economic Impact of AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-impact-of-ai",
+      "label": "Economic Impact of AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:long-tail-market", "label": "Long-tail Market"}, {"@id": "urn:ngm:class:cost-reduction", "label": "Cost Reduction"}, {"@id": "urn:ngm:class:service-accessibility", "label": "Service Accessibility"}, {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:long-tail-market",
+        "label": "Long-tail Market"
+      },
+      {
+        "@id": "urn:ngm:class:cost-reduction",
+        "label": "Cost Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:service-accessibility",
+        "label": "Service Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

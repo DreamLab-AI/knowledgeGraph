@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safety Filter
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A safety filter is a content-moderation component placed around a generative AI model that screens inputs and outputs to block disallowed, harmful, or policy-violating content. It typically combines classifiers, keyword and pattern rules, and policy thresholds to detect unsafe prompts or generations and refuse, redact, or regenerate them. It is a core safeguard in deployed image and conversational AI products.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-companions", "label": "AI companions"}, {"@id": "urn:ngm:class:proprietary-image-generation", "label": "Proprietary Image Generation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "@id": "urn:ngm:class:proprietary-image-generation",
+        "label": "Proprietary Image Generation"
+      }
+    ]
   },
   "quality": 0.72
 }

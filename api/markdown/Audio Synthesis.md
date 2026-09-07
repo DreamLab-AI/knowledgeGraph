@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Audio Synthesis
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,58 +8,214 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI" },
-    { "@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model" },
-    { "@id": "urn:visionflow:linked:diffusion-models", "vc:label": "Diffusion Models" },
-    { "@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning" },
-    { "@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network" },
-    { "@id": "urn:visionflow:linked:text-to-speech", "vc:label": "Text-to-Speech" },
-    { "@id": "urn:visionflow:linked:speech-synthesis", "vc:label": "Speech Synthesis" },
-    { "@id": "urn:visionflow:linked:music-generation", "vc:label": "Music Generation" },
-    { "@id": "urn:visionflow:linked:audio-processing", "vc:label": "Audio Processing" },
-    { "@id": "urn:visionflow:linked:gan", "vc:label": "GAN" },
-    { "@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation" },
-    { "@id": "urn:visionflow:linked:content-generation", "vc:label": "Content Generation" },
-    { "@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer" },
-    { "@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing" },
-    { "@id": "urn:visionflow:linked:audio-signal-processing", "vc:label": "Audio Signal Processing" },
-    { "@id": "urn:visionflow:linked:neural-audio-codec", "vc:label": "Neural Audio Codec" },
-    { "@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder" },
-    { "@id": "urn:visionflow:linked:mel-spectrogram", "vc:label": "Mel-Spectrogram" },
-    { "@id": "urn:visionflow:linked:autoregressive-model", "vc:label": "Autoregressive Model" },
-    { "@id": "urn:visionflow:linked:flow-matching", "vc:label": "Flow Matching" },
-    { "@id": "urn:visionflow:linked:recurrent-neural-network", "vc:label": "Recurrent Neural Network" },
-    { "@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network" },
-    { "@id": "urn:visionflow:linked:speaker-verification", "vc:label": "Speaker Verification" },
-    { "@id": "urn:visionflow:linked:voice-cloning", "vc:label": "Voice Cloning" },
-    { "@id": "urn:visionflow:linked:audio-codec", "vc:label": "Audio Codec" },
-    { "@id": "urn:visionflow:linked:source-separation", "vc:label": "Source Separation" },
-    { "@id": "urn:visionflow:linked:feature-extraction", "vc:label": "Feature Extraction" },
-    { "@id": "urn:visionflow:linked:audio-generation", "vc:label": "Audio Generation" },
-    { "@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network" },
-    { "@id": "urn:visionflow:linked:latent-diffusion", "vc:label": "Latent Diffusion" },
-    { "@id": "urn:visionflow:linked:deep-generative-model", "vc:label": "Deep Generative Model" },
-    { "@id": "urn:visionflow:linked:score-based-model", "vc:label": "Score-Based Model" },
-    { "@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI" },
-    { "@id": "urn:visionflow:linked:adaptive-music", "vc:label": "Adaptive Music" },
-    { "@id": "urn:visionflow:linked:audio-technology", "vc:label": "Audio Technology" },
-    { "@id": "urn:visionflow:linked:zero-shot-learning", "vc:label": "Zero-Shot Learning" },
-    { "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback" },
-    { "@id": "urn:visionflow:linked:audio-deepfake", "vc:label": "Audio Deepfake" },
-    { "@id": "urn:visionflow:linked:mean-opinion-score", "vc:label": "Mean Opinion Score" },
-    { "@id": "urn:visionflow:linked:binaural-audio", "vc:label": "Binaural Audio" },
-    { "@id": "urn:visionflow:linked:spatial-audio", "vc:label": "Spatial Audio" },
-    { "@id": "urn:visionflow:linked:content-delivery", "vc:label": "Content Delivery" },
-    { "@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration" },
-    { "@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model" },
-    { "@id": "urn:visionflow:linked:noise-schedule", "vc:label": "Noise Schedule" },
-    { "@id": "urn:visionflow:linked:psychoacoustics", "vc:label": "Psychoacoustics" },
-    { "@id": "urn:visionflow:linked:audio-spatialization", "vc:label": "Audio Spatialization" },
-    { "@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI" },
-    { "@id": "urn:visionflow:linked:audio-system", "vc:label": "Audio System" },
-    { "@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data" },
-    { "@id": "urn:visionflow:owl:class:ai-grounded-domain", "vc:label": "AI-GroundedDomain" },
-    { "@id": "urn:visionflow:owl:class:algorithm-layer", "vc:label": "AlgorithmLayer" }
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-models",
+      "vc:label": "Diffusion Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-speech",
+      "vc:label": "Text-to-Speech"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-synthesis",
+      "vc:label": "Speech Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-generation",
+      "vc:label": "Music Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-processing",
+      "vc:label": "Audio Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:gan",
+      "vc:label": "GAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-generation",
+      "vc:label": "Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-signal-processing",
+      "vc:label": "Audio Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-audio-codec",
+      "vc:label": "Neural Audio Codec"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:mel-spectrogram",
+      "vc:label": "Mel-Spectrogram"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoregressive-model",
+      "vc:label": "Autoregressive Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:flow-matching",
+      "vc:label": "Flow Matching"
+    },
+    {
+      "@id": "urn:visionflow:linked:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:speaker-verification",
+      "vc:label": "Speaker Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:voice-cloning",
+      "vc:label": "Voice Cloning"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-codec",
+      "vc:label": "Audio Codec"
+    },
+    {
+      "@id": "urn:visionflow:linked:source-separation",
+      "vc:label": "Source Separation"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-generation",
+      "vc:label": "Audio Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion",
+      "vc:label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-generative-model",
+      "vc:label": "Deep Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:score-based-model",
+      "vc:label": "Score-Based Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-music",
+      "vc:label": "Adaptive Music"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-technology",
+      "vc:label": "Audio Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-shot-learning",
+      "vc:label": "Zero-Shot Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-deepfake",
+      "vc:label": "Audio Deepfake"
+    },
+    {
+      "@id": "urn:visionflow:linked:mean-opinion-score",
+      "vc:label": "Mean Opinion Score"
+    },
+    {
+      "@id": "urn:visionflow:linked:binaural-audio",
+      "vc:label": "Binaural Audio"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-audio",
+      "vc:label": "Spatial Audio"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-delivery",
+      "vc:label": "Content Delivery"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-acceleration",
+      "vc:label": "GPU Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:noise-schedule",
+      "vc:label": "Noise Schedule"
+    },
+    {
+      "@id": "urn:visionflow:linked:psychoacoustics",
+      "vc:label": "Psychoacoustics"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-spatialization",
+      "vc:label": "Audio Spatialization"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-system",
+      "vc:label": "Audio System"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    }
   ]
 }
 ```
@@ -209,70 +359,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:audio-synthesis:b4c72d19f953",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:audio-synthesis"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink" },
-    { "raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink" },
-    { "raw": "[[Diffusion Models]]", "resolved": "urn:visionflow:linked:diffusion-models", "kind": "ResolvedLink" },
-    { "raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink" },
-    { "raw": "[[Text-to-Speech]]", "resolved": "urn:visionflow:linked:text-to-speech", "kind": "StubLink" },
-    { "raw": "[[Speech Synthesis]]", "resolved": "urn:visionflow:linked:speech-synthesis", "kind": "StubLink" },
-    { "raw": "[[Music Generation]]", "resolved": "urn:visionflow:linked:music-generation", "kind": "StubLink" },
-    { "raw": "[[Audio Processing]]", "resolved": "urn:visionflow:linked:audio-processing", "kind": "ResolvedLink" },
-    { "raw": "[[GAN]]", "resolved": "urn:visionflow:linked:gan", "kind": "ResolvedLink" },
-    { "raw": "[[Model Evaluation]]", "resolved": "urn:visionflow:linked:model-evaluation", "kind": "StubLink" },
-    { "raw": "[[Content Generation]]", "resolved": "urn:visionflow:linked:content-generation", "kind": "StubLink" },
-    { "raw": "[[Transformer]]", "resolved": "urn:visionflow:linked:transformer", "kind": "ResolvedLink" },
-    { "raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink" },
-    { "raw": "[[Audio Signal Processing]]", "resolved": "urn:visionflow:linked:audio-signal-processing", "kind": "ResolvedLink" },
-    { "raw": "[[Neural Audio Codec]]", "resolved": "urn:visionflow:linked:neural-audio-codec", "kind": "StubLink" },
-    { "raw": "[[Variational Autoencoder]]", "resolved": "urn:visionflow:linked:variational-autoencoder", "kind": "StubLink" },
-    { "raw": "[[Mel-Spectrogram]]", "resolved": "urn:visionflow:linked:mel-spectrogram", "kind": "StubLink" },
-    { "raw": "[[Autoregressive Model]]", "resolved": "urn:visionflow:linked:autoregressive-model", "kind": "StubLink" },
-    { "raw": "[[Flow Matching]]", "resolved": "urn:visionflow:linked:flow-matching", "kind": "StubLink" },
-    { "raw": "[[Recurrent Neural Network]]", "resolved": "urn:visionflow:linked:recurrent-neural-network", "kind": "ResolvedLink" },
-    { "raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink" },
-    { "raw": "[[Speaker Verification]]", "resolved": "urn:visionflow:linked:speaker-verification", "kind": "StubLink" },
-    { "raw": "[[Voice Cloning]]", "resolved": "urn:visionflow:linked:voice-cloning", "kind": "StubLink" },
-    { "raw": "[[Audio Codec]]", "resolved": "urn:visionflow:linked:audio-codec", "kind": "ResolvedLink" },
-    { "raw": "[[Source Separation]]", "resolved": "urn:visionflow:linked:source-separation", "kind": "StubLink" },
-    { "raw": "[[Feature Extraction]]", "resolved": "urn:visionflow:linked:feature-extraction", "kind": "StubLink" },
-    { "raw": "[[Audio Generation]]", "resolved": "urn:visionflow:linked:audio-generation", "kind": "ResolvedLink" },
-    { "raw": "[[Generative Adversarial Network]]", "resolved": "urn:visionflow:linked:generative-adversarial-network", "kind": "ResolvedLink" },
-    { "raw": "[[Latent Diffusion]]", "resolved": "urn:visionflow:linked:latent-diffusion", "kind": "StubLink" },
-    { "raw": "[[Deep Generative Model]]", "resolved": "urn:visionflow:linked:deep-generative-model", "kind": "ResolvedLink" },
-    { "raw": "[[Score-Based Model]]", "resolved": "urn:visionflow:linked:score-based-model", "kind": "StubLink" },
-    { "raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:linked:multimodal-ai", "kind": "StubLink" },
-    { "raw": "[[Adaptive Music]]", "resolved": "urn:visionflow:linked:adaptive-music", "kind": "ResolvedLink" },
-    { "raw": "[[Audio Technology]]", "resolved": "urn:visionflow:linked:audio-technology", "kind": "ResolvedLink" },
-    { "raw": "[[Zero-Shot Learning]]", "resolved": "urn:visionflow:linked:zero-shot-learning", "kind": "StubLink" },
-    { "raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "StubLink" },
-    { "raw": "[[Audio Deepfake]]", "resolved": "urn:visionflow:linked:audio-deepfake", "kind": "StubLink" },
-    { "raw": "[[Mean Opinion Score]]", "resolved": "urn:visionflow:linked:mean-opinion-score", "kind": "StubLink" },
-    { "raw": "[[Binaural Audio]]", "resolved": "urn:visionflow:linked:binaural-audio", "kind": "ResolvedLink" },
-    { "raw": "[[Spatial Audio]]", "resolved": "urn:visionflow:linked:spatial-audio", "kind": "StubLink" },
-    { "raw": "[[GPU Acceleration]]", "resolved": "urn:visionflow:linked:gpu-acceleration", "kind": "StubLink" },
-    { "raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "ResolvedLink" },
-    { "raw": "[[Noise Schedule]]", "resolved": "urn:visionflow:linked:noise-schedule", "kind": "StubLink" },
-    { "raw": "[[Psychoacoustics]]", "resolved": "urn:visionflow:linked:psychoacoustics", "kind": "StubLink" },
-    { "raw": "[[Audio Spatialization]]", "resolved": "urn:visionflow:linked:audio-spatialization", "kind": "ResolvedLink" },
-    { "raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink" },
-    { "raw": "[[Training Data]]", "resolved": "urn:visionflow:linked:training-data", "kind": "StubLink" },
-    { "raw": "[[Audio System]]", "resolved": "urn:visionflow:linked:audio-system", "kind": "ResolvedLink" },
-    { "raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-grounded-domain", "kind": "StubLink" },
-    { "raw": "[[AlgorithmLayer]]", "resolved": "urn:visionflow:owl:class:algorithm-layer", "kind": "StubLink" }
-  ]
-}
-```
-
 - ### Definition
   - [[Audio Synthesis]] is the computational generation of acoustic waveforms — encompassing speech, music, environmental sounds, and sound effects — from symbolic, textual, semantic, or latent representations using [[Deep Learning]]-based [[Generative AI]] architectures. Unlike [[Audio Signal Processing]], which transforms existing recorded signals, audio synthesis creates novel acoustic content from learned distributions over acoustic data. The pipeline typically separates two concerns: a content model that predicts an intermediate acoustic representation such as a [[Mel-Spectrogram]] or discrete [[Neural Audio Codec]] token sequence from a conditioning input, and a waveform synthesiser (neural vocoder) that converts the intermediate representation to raw PCM audio at 22.05-48 kHz. Generative model families employed include [[Autoregressive Model]]s (WaveNet, SampleRNN, AudioLM), [[Generative Adversarial Network]]s (MelGAN, HiFi-GAN, BigVGAN), [[Diffusion Models]] (DiffWave, AudioLDM 2, Stable Audio), [[Variational Autoencoder]]s, and [[Flow Matching]] approaches. The conditioning signal may be a phoneme or text sequence for [[Text-to-Speech]], a natural language description for text-to-audio generation, a musical score or style token for [[Music Generation]], or a speaker embedding for [[Voice Cloning]]. Quality is assessed through subjective [[Mean Opinion Score]] (MOS) tests and objective metrics including Fréchet Audio Distance (FAD), Kullback-Leibler divergence on acoustic features, and CLAP (Contrastive Language-Audio Pre-training) score. [[Audio Synthesis]] bridges [[Natural Language Processing]], [[Audio Processing]], and [[Generative AI]], and its rapid maturation since 2016 has displaced rule-based and statistical parametric synthesis across virtually all commercial applications, while simultaneously creating novel risks around [[Audio Deepfake]]s and [[Voice Cloning]] that are now subject to regulatory attention.
 
@@ -391,7 +477,7 @@ public: true
     - The deep learning era began with WaveNet (van den Oord et al., DeepMind, 2016), a dilated causal [[Convolutional Neural Network]] with gated activation units that models the raw audio waveform at the level of individual samples (24 kHz, 16-bit μ-law companded), using an [[Autoregressive Model]] that predicts each sample conditioned on all previous samples via masked convolutions. With 30 layers of dilated causal convolutions, the receptive field spans several hundred milliseconds of audio context. WaveNet conditioned on mel-spectrograms achieved [[Mean Opinion Score]] ratings of 4.21 on a 5-point scale, statistically indistinguishable from human natural speech in blind listening tests — a landmark result that demonstrated the feasibility of raw waveform generative models. However, WaveNet's sequential sample-by-sample generation ran at approximately 0.02× real time (50 seconds of inference to synthesise 1 second of audio) on a GPU, making it impractical for production [[Text-to-Speech]]. Distillation strategies (Parallel WaveNet, 2017) and compact recurrent architectures (WaveRNN, 2018; LPCNet, 2019) reduced inference to real-time and sub-real-time on modest hardware. Flow-based generative models (WaveGlow, 2018; Glow-TTS, 2020) enabled parallel generation by inverting a normalising flow, achieving 25× real-time on a V100 GPU. The Tacotron architecture (Wang et al., Google Brain, 2017) introduced end-to-end TTS directly from character sequences to mel-spectrograms using a sequence-to-sequence model with attention, trained on 24 hours of single-speaker speech; Tacotron 2 (2018) paired an LSTM acoustic model with a WaveNet vocoder, producing a landmark end-to-end TTS pipeline.
     - The subsequent transition to non-autoregressive architectures based on [[Generative Adversarial Network]]s revolutionised neural vocoder inference speed. MelGAN (Kumar et al., 2019) replaced WaveNet's sequential generation with a fully convolutional GAN conditioned on [[Mel-Spectrogram]]s, achieving 512× real-time generation with comparable MOS. HiFi-GAN (Kong et al., 2020) improved quality through multi-period and multi-scale discriminator architectures and multi-resolution STFT loss, achieving MOS surpassing WaveNet at 167× real-time on CPU. BigVGAN (Lee et al., 2022) scaled HiFi-GAN to 112M parameters using periodic activation functions (snake activations), achieving universal vocoder performance with strong generalisation to unseen speakers and styles. GAN-based vocoders trained in two to four hours on a single GPU remain the practical production choice for real-time, resource-constrained [[Text-to-Speech]] deployment in edge devices and web applications.
     - The [[Diffusion Models]] paradigm, pioneered for images by Ho et al. (DDPM, 2020) and extended to continuous score matching by Song et al. (Score-SDE, 2020), translated rapidly to audio. DiffWave (Kong et al., 2020) and WaveGrad (Chen et al., 2020) applied score-based diffusion directly to raw waveforms at 22.05 kHz, achieving competitive MOS with WaveNet while enabling parallel generation via 6-50 denoising iterations. [[Latent Diffusion]] — operating in a compressed latent space encoded by a [[Variational Autoencoder]] or [[Neural Audio Codec]] rather than on high-dimensional raw waveforms — dramatically reduced the computational cost of the denoising process. AudioLDM (Liu et al., 2023) applied [[Latent Diffusion]] to text-conditioned audio generation using CLAP audio-text embeddings as conditioning signals, enabling generation of diverse sound effects from natural language prompts. AudioLDM 2 (Liu et al., 2024) extended the paradigm with a unified latent representation ("language of audio", AudioMAE self-supervised features) covering speech, music, and environmental sounds, achieving competitive Fréchet Audio Distance (FAD) scores across all three audio domains from a single model. Stable Audio Open (Evans et al., ICASSP 2025) uses a latent diffusion [[Transformer]] conditioned on CLAP embeddings, demonstrating competitive MusicCaps FAD scores comparable to MusicGen-Large while being trained on entirely Creative Commons-licensed data. The [[Noise Schedule]] — the variance-preserving forward diffusion process parameterisation — critically affects both training stability and the number of sampling steps required for high-quality generation; cosine schedules (Nichol & Dhariwal, 2021) and flow matching formulations (Lipman et al., 2022) have largely replaced the original linear schedule.
-    - The most transformative architectural shift from 2022 onward has been the codec language model paradigm, which reconceptualises [[Audio Synthesis]] as a sequence modelling problem over discrete acoustic tokens. [[Neural Audio Codec]]s (EnCodec, SoundStream, Descript Audio Codec) compress audio at 24 kHz to a sequence of RVQ codebook indices at 75 Hz (SoundStream at 3 kbps: 75 × 8 codebook indices per second = 600 tokens/second), enabling audio to be modelled by the same [[Large Language Model]] architectures that drove the NLP revolution. AudioLM (Borsos et al., Google Research, 2022) demonstrated that a hierarchical [Autoregressive Model]] — first predicting semantic tokens from w2v-BERT, then acoustic tokens from SoundStream conditioned on semantic tokens — could generate temporally coherent long-form piano music and speech continuations that are perceptually indistinguishable from real recordings in a forced-choice listening test. MusicLM (Agostinelli et al., 2023) extended AudioLM to text-conditioned music generation using MuLan music-text joint embeddings as conditioning signals, achieving MusicCaps FAD of 4.0 compared to 36.7 for the baseline. VALL-E (Wang et al., Microsoft, 2023) fine-tuned a codec language model on 60,000 hours of English speech (LibriLight), achieving zero-shot voice cloning from 3-second prompts with speaker similarity metrics of 0.93 (human: 0.96) on SECS evaluation, effectively demonstrating that high-quality [[Voice Cloning]] requires only seconds of reference audio from an unseen speaker. These results raised substantial ethical concerns about audio identity fraud and accelerated regulatory responses in the UK, EU, and USA regarding synthetic voice consent and disclosure.
+    - The most transformative architectural shift from 2022 onward has been the codec language model paradigm, which reconceptualises [[Audio Synthesis]] as a sequence modelling problem over discrete acoustic tokens. [[Neural Audio Codec]]s (EnCodec, SoundStream, Descript Audio Codec) compress audio at 24 kHz to a sequence of RVQ codebook indices at 75 Hz (SoundStream at 3 kbps: 75 × 8 codebook indices per second = 600 tokens/second), enabling audio to be modelled by the same [[Large Language Model]] architectures that drove the NLP revolution. AudioLM (Borsos et al., Google Research, 2022) demonstrated that a hierarchical [Autoregressive Model]] — first predicting semantic tokens from w2v-BERT, then acoustic tokens from SoundStream conditioned on semantic tokens — [private] generate temporally coherent long-form piano music and speech continuations that are perceptually indistinguishable from real recordings in a forced-choice listening test. MusicLM (Agostinelli et al., 2023) extended AudioLM to text-conditioned music generation using MuLan music-text joint embeddings as conditioning signals, achieving MusicCaps FAD of 4.0 compared to 36.7 for the baseline. VALL-E (Wang et al., Microsoft, 2023) fine-tuned a codec language model on 60,000 hours of English speech (LibriLight), achieving zero-shot voice cloning from 3-second prompts with speaker similarity metrics of 0.93 (human: 0.96) on SECS evaluation, effectively demonstrating that high-quality [[Voice Cloning]] requires only seconds of reference audio from an unseen speaker. These results raised substantial ethical concerns about audio identity fraud and accelerated regulatory responses in the UK, EU, and USA regarding synthetic voice consent and disclosure.
 
   - ## Components / Architecture
     - **Content Model (front-end)**: Processes the conditioning input and predicts an intermediate acoustic representation. For [[Text-to-Speech]], a grapheme-to-phoneme (G2P) module converts text to phoneme or BPE token sequences; the acoustic model then predicts a [[Mel-Spectrogram]] (80-128 mel bins at 22.05 kHz, hop size 256 samples, ~85 frame/second) or discrete [[Neural Audio Codec]] token sequence. Classical two-stage TTS (Tacotron → WaveNet, FastSpeech 2 → HiFi-GAN) separates phoneme-to-spectrogram prediction from spectrogram-to-waveform generation; modern end-to-end architectures (VITS, Matcha-TTS, Kokoro-82M) jointly model acoustic and linguistic features in a single network using [[Flow Matching]] (continuous normalising flows) or variational inference with adversarial training, removing the two-stage information bottleneck. Non-autoregressive duration predictors (FastSpeech 2, JETS) enable parallel acoustic model inference, achieving 50-200× real-time content model throughput. For text-to-audio and [[Music Generation]], CLAP text encoder or T5 / FLAN-T5 [[Large Language Model]] encoder maps text prompts to conditioning embeddings that modulate the generative model via cross-attention or classifier-free guidance.

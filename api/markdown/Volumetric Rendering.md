@@ -1,56 +1,110 @@
----
-public: true
----
-
-# Volumetric Rendering
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:volumetric-rendering", "@type":"Page", "title":"Volumetric Rendering", "vc:slug":"volumetric-rendering", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:volumetric-rendering",
+  "@type": "Page",
+  "title": "Volumetric Rendering",
+  "vc:slug": "volumetric-rendering",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:volumetric-rendering",
-  "@type":"Class",
-  "label":"Volumetric Rendering",
-  "definition":"Volumetric rendering is the process of producing images of three-dimensional density fields where light is absorbed, emitted, and scattered as it travels through a participating medium. Rather than rendering surfaces, it integrates radiance along rays passing through a volume, capturing effects such as smoke, clouds, fog, and translucent materials. The technique underlies medical visualisation, visual effects, and neural scene representations that store the world as a continuous volumetric function.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:rendering","label":"Rendering"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:ray-marching","label":"Ray Marching"},
-      {"@id":"urn:ngm:class:voxel","label":"Voxel"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:volumetric-rendering",
+  "@type": "Class",
+  "label": "Volumetric Rendering",
+  "definition": "Volumetric rendering is the process of producing images of three-dimensional density fields where light is absorbed, emitted, and scattered as it travels through a participating medium. Rather than rendering surfaces, it integrates radiance along rays passing through a volume, capturing effects such as smoke, clouds, fog, and translucent materials. The technique underlies medical visualisation, visual effects, and neural scene representations that store the world as a continuous volumetric function.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering",
+      "label": "Rendering"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ray-marching",
+        "label": "Ray Marching"
+      },
+      {
+        "@id": "urn:ngm:class:voxel",
+        "label": "Voxel"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:ray-tracing","label":"Ray Tracing"},
-      {"@id":"urn:ngm:class:global-illumination","label":"Global Illumination"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"},
-      {"@id":"urn:ngm:class:gpu","label":"GPU"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:neural-radiance-fields","label":"Neural Radiance Fields"},
-      {"@id":"urn:ngm:class:medical-imaging","label":"Medical Imaging"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"},
-      {"@id":"urn:ngm:class:cloud-rendering","label":"Cloud Rendering"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-rendering",
+        "label": "Cloud Rendering"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:gaussian-splatting","label":"Gaussian Splatting"},
-      {"@id":"urn:ngm:class:neural-radiance-fields","label":"Neural Radiance Fields"},
-      {"@id":"urn:ngm:class:ray-tracing","label":"Ray Tracing"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

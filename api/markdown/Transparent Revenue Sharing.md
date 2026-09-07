@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transparent Revenue Sharing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transparency-metrics", "label": "Transparency Metrics"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"}
+      {
+        "@id": "urn:ngm:class:transparency-metrics",
+        "label": "Transparency Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
     ]
   },
   "provenance": {
@@ -87,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transparent-revenue-sharing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b668757afd374bc4651593d707103ef9ea8b1c86372f4300a1f5f8e7e76c888e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Revenue Distribution]]",
-      "resolved": "urn:visionflow:owl:class:revenue-distribution",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A financial distribution model where revenue allocation, payment calculations, and disbursements are openly visible and verifiable by all stakeholders, often implemented through smart contracts that automatically distribute earnings according to predefined rules.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multirotor UAV
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,20 +58,50 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:state-space-control", "label": "State Space Control"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:3-d-li-dar", "label": "3D LiDAR"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"}
+      {
+        "@id": "urn:ngm:class:state-space-control",
+        "label": "State Space Control"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-li-dar",
+        "label": "3D LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:odometry", "label": "Odometry"}
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      }
     ]
   },
   "quality": 0.8,
@@ -87,37 +112,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:multirotor-uav:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7827c6af2fcc320fd0d219254e899b64b284c8b45976995b7ba88c3c1ee6837d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Aerial Robot]]",
-      "resolved": "urn:visionflow:owl:class:aerial-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Multirotor UAV achieves lift through multiple propellers driven by motors.

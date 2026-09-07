@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sprint Planning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Sprint planning is the Scrum event in which a development team selects items from the product backlog and defines a goal and plan for the upcoming time-boxed iteration. The team negotiates scope against capacity, decomposes chosen items into actionable work, and commits to a realistic sprint backlog. It establishes shared understanding of what will be delivered and how, anchoring the iteration's focus.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
-      {"@id": "urn:ngm:class:software-development", "label": "Software Development"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Explanation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,27 +59,66 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:feature-importance", "label": "Feature Importance"},
-      {"@id": "urn:ngm:class:post-hoc-explanation", "label": "Post Hoc Explanation"}
+      {
+        "@id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "@id": "urn:ngm:class:post-hoc-explanation",
+        "label": "Post Hoc Explanation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transparency-and-explainability", "label": "Transparency and Explainability"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:decision-transparency", "label": "Decision Transparency"}
+      {
+        "@id": "urn:ngm:class:transparency-and-explainability",
+        "label": "Transparency and Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:decision-transparency",
+        "label": "Decision Transparency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:intrinsic-interpretability", "label": "Intrinsic Interpretability"}
+      {
+        "@id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      }
     ]
   },
   "provenance": {
@@ -94,42 +128,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:explanation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fcfe4bf3a0a2d7fb013bb7568feeb5a3b005f8051053bd400666b69f262dd3e9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   An Explanation in the context of AI systems is a human-interpretable account of why a model produced a particular output, which features influenced the prediction, and how the system would behave differently under alternative inputs. Explanations may be global (describing overall model behaviour), local (accounting for a single prediction), or contrastive (answering why outcome A rather than outcome B). They are the primary instrument through which AI Transparency and Explainability is operationalised for regulators, domain experts, and affected individuals.

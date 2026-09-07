@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Enterprise Resource Planning
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

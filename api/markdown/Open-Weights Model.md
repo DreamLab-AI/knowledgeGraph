@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open-Weights Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "open-weights-model",
   "title": "Open-Weights Model",
   "vc:public": true,
-  "vc:outboundWikilinks": ["GLM 5.2", "Model Performance Comparison"],
+  "vc:outboundWikilinks": [
+    "GLM 5.2",
+    "Model Performance Comparison"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

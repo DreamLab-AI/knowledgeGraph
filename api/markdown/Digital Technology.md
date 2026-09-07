@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,16 +55,34 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computing-hardware", "label": "Computing Hardware"},
-      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
+      {
+        "@id": "urn:ngm:class:computing-hardware",
+        "label": "Computing Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:disruptive-technology", "label": "Disruptive Technology"},
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+      {
+        "@id": "urn:ngm:class:disruptive-technology",
+        "label": "Disruptive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
     ]
   },
   "provenance": {
@@ -79,37 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4be3138a29bcd5579a933bceb5f2f206a691b5077bf1c679882456fbaf3e1ebf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital Technology refers to electronic tools, systems, and platforms that generate, store, or process information in binary or digital form. It encompasses computing hardware, software, networks, and embedded systems that collectively enable the creation, transformation, and distribution of digital content and services, forming the foundational layer of the modern digital economy.

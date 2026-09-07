@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mining Reward
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,24 +75,60 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:miner", "label": "Miner"},
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:high-energy-consumption", "label": "High Energy Consumption"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:high-energy-consumption",
+        "label": "High Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-entity", "label": "Blockchain Entity"}
+      {
+        "@id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      }
     ]
   },
   "provenance": {
@@ -107,62 +138,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mining-reward:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:751e139c632d3833fcb44b5253cc713ad29b0293c825739e02aaeec4689d4349"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-protocol-and-consensus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusProtocol]]",
-      "resolved": "urn:visionflow:owl:class:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ProtocolLayer]]",
-      "resolved": "urn:visionflow:owl:class:protocol-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Mining Reward is the economic incentive awarded to the miner who produces a valid block, comprising a block subsidy of newly minted cryptocurrency plus the aggregate transaction fees of all transactions included in that block. The subsidy follows a pre-programmed halving schedule until fees become the sole compensation.

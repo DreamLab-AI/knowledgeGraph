@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Energy Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "energy-infrastructure",
   "title": "Energy Infrastructure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Grid Demand Forecast", "PJM Interconnection"],
+  "vc:outboundWikilinks": [
+    "Grid Demand Forecast",
+    "PJM Interconnection"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}, {"@id": "urn:ngm:class:networking", "label": "Networking"}, {"@id": "urn:ngm:class:data-center-sustainability", "label": "Data Center Sustainability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:networking",
+        "label": "Networking"
+      },
+      {
+        "@id": "urn:ngm:class:data-center-sustainability",
+        "label": "Data Center Sustainability"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

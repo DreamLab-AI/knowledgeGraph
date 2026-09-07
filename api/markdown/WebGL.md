@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WebGL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,46 +175,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:web-gl:57f7cff16f31",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c9c0641ffb79c0a0aa28f27a4650757e288878d12409bb3aca1c4eebd64b6150"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GPU]]",
-      "resolved": "urn:visionflow:linked:gpu",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graphics API]]",
-      "resolved": "urn:visionflow:linked:graphics-api",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

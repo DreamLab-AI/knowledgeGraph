@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Trusted Execution Environments
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,46 +180,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:trusted-execution-environments:ab02f3ae0427",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eac4b6f1fe01cdf3f049701b91fae8bdc44a12239f21f92c8f81d3a223319375"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Confidential Computing]]",
-      "resolved": "urn:visionflow:linked:confidential-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verifiable Computation]]",
-      "resolved": "urn:visionflow:linked:verifiable-computation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Secure Enclave]]",
-      "resolved": "urn:visionflow:linked:secure-enclave",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ARM TrustZone]]",
-      "resolved": "urn:visionflow:linked:arm-trust-zone",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

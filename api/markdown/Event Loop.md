@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Event Loop
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

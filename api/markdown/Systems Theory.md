@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Systems Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,37 +57,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:systems-theory:44ba4c3f2786",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a61dda12352b01cb0b2a12c3194473431a9d1ff39ef852e83b081cc96b6c1e50"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cybernetics]]",
-      "resolved": "urn:visionflow:linked:cybernetics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Systems theory is an interdisciplinary study of systems as sets of interrelated components, focusing on the relationships, feedback, and emergent behaviour that arise from interaction.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interactive Storytelling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,17 +50,38 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ]
   },
   "quality": 0.35,
@@ -76,32 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interactive-storytelling:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5abce354eea99954d4f81c0c12afab0a505eae98c4d0f70b4e4722adec73613c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Interactive Storytelling is a narrative form in which user choices, actions, or presence dynamically shape the progression, branching structure, or emotional arc of a story. In spatial computing contexts, it encompasses XR experiences, virtual worlds, and location-based entertainment where embodied interaction and spatial presence deepen narrative immersion beyond passive media consumption.

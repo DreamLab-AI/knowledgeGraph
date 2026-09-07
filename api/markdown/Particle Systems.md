@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Particle Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,42 +82,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:particle-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:69a22fc7923c8a5e2de5752a70cf941c6723f77b4f7fee86696f907f895c2aa5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Real Time VFX]]",
-      "resolved": "urn:visionflow:linked:real-time-vfx",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VFX Tools]]",
-      "resolved": "urn:visionflow:owl:class:vfx-tools",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The collective infrastructure and tooling for creating and managing particle-based visual effects in game engines and VFX software, encompassing emitter configuration, physics integration, and real-time or offline rendering pipelines.

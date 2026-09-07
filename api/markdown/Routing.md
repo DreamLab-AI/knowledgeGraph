@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Routing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,10 +20,18 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communications"}
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communications"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ]
   },
   "quality": 0.7
 }

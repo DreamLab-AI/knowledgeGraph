@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Border Payment Transparency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Cross-border payment transparency is the requirement and practice of making the originator, beneficiary, fees, and routing of international payments visible to counterparties and regulators. It supports anti-money-laundering controls and consumer protection by exposing hidden costs and identifying parties to a transfer. In crypto it is advanced through measures such as the FATF Travel Rule and on-chain settlement traceability.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:travel-rule", "label": "Travel Rule"}, {"@id": "urn:ngm:class:cross-border-settlement", "label": "Cross-Border Settlement"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      }
+    ]
   },
   "quality": 0.72
 }

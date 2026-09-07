@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Key Management System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A key management system (KMS) is a service or appliance that generates, stores, rotates, distributes and revokes cryptographic keys over their full lifecycle. It enforces access policies and isolates key material, often backed by hardware security modules, so that applications can perform cryptographic operations without directly handling private keys. A KMS is foundational to secure identity, encryption and digital-asset custody.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
-      {"@id": "urn:ngm:class:custody-infrastructure", "label": "Custody Infrastructure"}
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:custody-infrastructure",
+        "label": "Custody Infrastructure"
+      }
     ]
   },
   "quality": 0.72

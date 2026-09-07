@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tendermint Consensus
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,28 +59,64 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cosmos-ibc", "label": "Cosmos IBC"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {
+        "@id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:low-energy-consumption", "label": "Low Energy Consumption"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:low-energy-consumption",
+        "label": "Low Energy Consumption"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ]
   },
   "provenance": {
@@ -95,37 +126,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tendermint-consensus:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6d4e48e384e533c6036537d6b879ee757867e47441d1b9433190bafb85c8fd5e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Byzantine Fault Tolerance]]",
-      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Tendermint Consensus is a Byzantine Fault Tolerant consensus engine combining Practical Byzantine Fault Tolerance (PBFT) with Proof-of-Stake validator sets to achieve immediate block finality and high transaction throughput. It underpins the Cosmos ecosystem and enables inter-blockchain communication by guaranteeing committed blocks are never reverted, eliminating probabilistic finality found in Proof-of-Work chains.

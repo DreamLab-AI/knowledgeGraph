@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenGL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,57 +187,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:open-gl:8ce0b6fe5b87",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:86cb3b335eae6f7ea90793d62e5deb0babf0f312863a06ca53c79237a29558fa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GPU]]",
-      "resolved": "urn:visionflow:linked:gpu",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Shader Language]]",
-      "resolved": "urn:visionflow:linked:shader-language",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Rendering]]",
-      "resolved": "urn:visionflow:linked:3-d-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rasterization]]",
-      "resolved": "urn:visionflow:linked:rasterization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vulkan]]",
-      "resolved": "urn:visionflow:linked:vulkan",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graphics API]]",
-      "resolved": "urn:visionflow:linked:graphics-api",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - OpenGL is a cross-platform graphics API for rendering 2D and 3D vector graphics, providing a standardised interface to the rendering capabilities of graphics hardware.

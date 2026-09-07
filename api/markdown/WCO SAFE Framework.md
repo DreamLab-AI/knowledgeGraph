@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WCO SAFE Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The WCO SAFE Framework of Standards is a World Customs Organization instrument that sets out principles and standards to secure and facilitate global supply chains. It establishes customs-to-customs network arrangements, customs-to-business partnerships through Authorised Economic Operator (AEO) programmes, and risk-based advance electronic cargo data exchange. SAFE balances trade facilitation with security against terrorism and illicit trade.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:customs-trade-facilitation", "label": "Customs Trade Facilitation"}, {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      },
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ]
   },
   "quality": 0.72
 }

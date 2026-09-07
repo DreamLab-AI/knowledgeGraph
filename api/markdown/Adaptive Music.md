@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adaptive Music
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Adaptive music is a compositional and audio-engineering approach in which a musical soundtrack modifies its structure, instrumentation, tempo, or emotional register dynamically in response to real-time contextual signals such as player actions, narrative state, or environmental parameters within interactive media. It replaces the static looping of pre-composed tracks with a system that maintains musical coherence while reflecting the moment-to-moment state of an interactive experience. The technique is foundational to game audio design and is increasingly applied in extended reality, therapeutic, and generative AI contexts.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:audio-system", "label": "Audio System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:audio-system",
+      "label": "Audio System"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:audio-engine", "label": "Audio Engine"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-audio", "label": "Immersive Audio"},
-      {"@id": "urn:ngm:class:emergent-gameplay", "label": "Emergent Gameplay"}
+      {
+        "@id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-gameplay",
+        "label": "Emergent Gameplay"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"},
-      {"@id": "urn:ngm:class:game-ai", "label": "Game AI"}
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "@id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - Adaptive music is standard practice in AAA game development, with middleware adoption widespread across studios. Beyond games, it is applied in theme park experiences, interactive narrative film, and therapeutic contexts where real-time biometric feedback (heart rate, EEG) drives musical parameters to influence listener arousal or relaxation. In XR, spatialized adaptive audio anchors users in virtual environments and provides informational cues about unseen objects or agents.
 
   - As of 2024–2025, AI-driven adaptive music systems are maturing rapidly. Models such as Google's MusicLM and Meta's AudioCraft have demonstrated text-conditioned and context-conditioned music generation. Platforms including Endel and Mubert offer real-time generative music APIs. Integration challenges remain around latency, musical quality consistency, and the creative control requirements of professional composers who collaborate with AI tools rather than being replaced by them. Standards work on interactive audio within MPEG and W3C is expanding the definition of what adaptive music systems can express.
-

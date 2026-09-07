@@ -1,55 +1,106 @@
----
-public: true
----
-
-# GitOps
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:gitops", "@type":"Page", "title":"GitOps", "vc:slug":"gitops", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:gitops",
+  "@type": "Page",
+  "title": "GitOps",
+  "vc:slug": "gitops",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:gitops",
-  "@type":"Class",
-  "label":"GitOps",
-  "definition":"GitOps is an operational model in which the desired state of infrastructure and applications is declared in version-controlled repositories and continuously reconciled into running systems by automated agents. Git becomes the single source of truth, so changes flow through pull requests and merges while reconcilers detect and correct drift. It applies software-delivery practices, review, audit and rollback, to operations.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure-as-code","label":"Infrastructure as Code"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:version-control","label":"Version Control"},
-      {"@id":"urn:ngm:class:git","label":"Git"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gitops",
+  "@type": "Class",
+  "label": "GitOps",
+  "definition": "GitOps is an operational model in which the desired state of infrastructure and applications is declared in version-controlled repositories and continuously reconciled into running systems by automated agents. Git becomes the single source of truth, so changes flow through pull requests and merges while reconcilers detect and correct drift. It applies software-delivery practices, review, audit and rollback, to operations.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure-as-code",
+      "label": "Infrastructure as Code"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:continuous-delivery","label":"Continuous Delivery"},
-      {"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:continuous-delivery","label":"Continuous Delivery"},
-      {"@id":"urn:ngm:class:disaster-recovery","label":"Disaster Recovery"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:container-orchestration","label":"Container Orchestration"},
-      {"@id":"urn:ngm:class:observability","label":"Observability"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:infrastructure-as-code","label":"Infrastructure as Code"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:kubernetes","label":"Kubernetes"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"},
-      {"@id":"urn:ngm:class:containerisation","label":"Containerisation"},
-      {"@id":"urn:ngm:class:audit-logging","label":"Audit Logging"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

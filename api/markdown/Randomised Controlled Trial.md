@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Randomised Controlled Trial
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

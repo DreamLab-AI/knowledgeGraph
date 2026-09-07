@@ -1,11 +1,14 @@
----
-public: true
----
-
-# CPU
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:cpu", "@type": "Page", "title": "CPU", "vc:slug": "cpu", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cpu",
+  "@type": "Page",
+  "title": "CPU",
+  "vc:slug": "cpu",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

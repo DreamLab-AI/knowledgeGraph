@@ -18,12 +18,7 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:self-hosted-ai-server-infrastructure",
-        "label": "Self-Hosted AI Server Infrastructure"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
@@ -343,7 +338,7 @@
       "label": "OnDeviceInference"
     },
     {
-      "slug": "self-hosted-ai-server-infrastructure",
+      "slug": "[private]",
       "label": "SelfHostedAIServerInfrastructure"
     },
     {

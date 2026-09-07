@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Threat Intelligence Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A threat intelligence platform (TIP) is a security system that aggregates, normalises, and correlates indicators of compromise and adversary intelligence from multiple feeds into an actionable, queryable repository. It enriches and scores indicators, manages their lifecycle, and distributes them to detection and response tooling. A TIP turns raw threat data into context that defenders can use to anticipate, detect, and block attacks.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cyber-security-and-cryptography", "label": "Cyber Security and Cryptography"},
-      {"@id": "urn:ngm:class:threat-surface-map", "label": "Threat Surface Map"}
+      {
+        "@id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:threat-surface-map",
+        "label": "Threat Surface Map"
+      }
     ]
   },
   "quality": 0.72

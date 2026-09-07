@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Asset Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-asset-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3c745ef582fddf653bb99e59e9578b71d769e2e75a824947482927c6f7db309a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Custody]]",
-      "resolved": "urn:visionflow:linked:asset-custody",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptographic Systems]]",
-      "resolved": "urn:visionflow:linked:cryptographic-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Key Management]]",
-      "resolved": "urn:visionflow:linked:key-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Node Network]]",
-      "resolved": "urn:visionflow:linked:node-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Storage Solutions]]",
-      "resolved": "urn:visionflow:linked:storage-solutions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:digital-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Processing]]",
-      "resolved": "urn:visionflow:owl:class:transaction-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The foundational technology stack comprising blockchain networks, node infrastructure, custody systems, key management solutions, and integration APIs that enable secure creation, storage, transfer, and management of digital assets across institutional and retail applications.

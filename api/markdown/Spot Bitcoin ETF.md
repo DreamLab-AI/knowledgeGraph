@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spot Bitcoin ETF
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,15 +20,32 @@ public: true
   "definition": "A spot Bitcoin ETF is an exchange-traded fund that holds actual bitcoin and tracks its price directly, allowing investors to gain exposure through ordinary brokerage accounts without holding the asset or managing private keys. Approved by the US SEC in January 2024 after years of rejection, spot Bitcoin ETFs differ from earlier futures-based products by holding the underlying coin in regulated custody. They have channelled substantial institutional and retail capital into bitcoin and are widely regarded as a milestone in the asset's mainstream financial integration.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:exchange-traded-fund", "label": "Exchange-Traded Fund"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:exchange-traded-fund",
+      "label": "Exchange-Traded Fund"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:institutional-investment", "label": "Institutional Investment"}
+      {
+        "@id": "urn:ngm:class:institutional-investment",
+        "label": "Institutional Investment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin Proof-of-Work Protocol"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
     ]
   },
   "quality": 0.8

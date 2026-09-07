@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - MachineLearningModel
----
-
-# Machine Learning Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -217,42 +210,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:machine-learning-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c5b276955ed0529ffdf31612ce77bf327366b2788ab5034d4ce351728ba6f528"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Intelligent Metaverse Systems]]",
-      "resolved": "urn:visionflow:linked:intelligent-metaverse-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Computational algorithms trained on data to recognise patterns, make predictions, and perform tasks in metaverse applications, including neural networks for content generation, NPC behaviour, computer vision, and natural language processing.

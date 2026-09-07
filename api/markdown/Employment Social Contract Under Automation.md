@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Social contract and jobs]]
-# Employment Social Contract Under Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -33,8 +27,7 @@ elevatedFrom:: [[Social contract and jobs]]
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
     {
-      "vc:key": "preferred-term",
-      "vc:value": "Social contract and jobs"
+      "vc:key": "preferred-term"
     }
   ],
   "prov:wasAttributedTo": {
@@ -131,7 +124,7 @@ elevatedFrom:: [[Social contract and jobs]]
   },
   "sameAs": [
     {
-      "@id": "urn:ngm:class:social-contract-and-jobs",
+      "@id": "urn:ngm:class:[private]",
       "label": "Social Contract and Jobs"
     },
     {
@@ -144,46 +137,6 @@ elevatedFrom:: [[Social contract and jobs]]
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:social-contract-and-jobs:ba3e04535836",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:448447430db1db8ddc01fd19f88cda47c8e95d484e8457db86ebebda2cc626a6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Adoption]]",
-      "resolved": "urn:visionflow:linked:ai-adoption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Domain]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DigitalArt
----
-
-# Digital Art
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -165,7 +158,7 @@ aliases:
 - ### Content
   - Digital art has existed since the 1960s—early computer graphics artists such as Vera Molnár and Harold Cohen pioneered algorithmic drawing—but it entered mainstream cultural consciousness through the rise of generative AI tools, NFT markets, and digital art platforms in the 2020s. What distinguishes it from traditional art is both its medium (pixels, vectors, code, or machine-learning latent space) and its distribution modality (screens, interactive environments, blockchain-registered tokens).
 
-  - The NFT breakthrough of 2020–2021 solved a longstanding problem of digital scarcity: previously, digital artworks could be copied infinitely at zero cost, undermining collector markets. Smart contract–based NFTs encoded provenance, edition limits, and automatic royalty flows on-chain, enabling auction houses such as Christie's to sell purely digital works for millions of dollars. This legitimised digital art as a collectible asset class alongside painting and sculpture.
+  - The NFT breakthrough of 2020–2021 solved a longstanding problem of digital scarcity: previously, digital artworks [private] be copied infinitely at zero cost, undermining collector markets. Smart contract–based NFTs encoded provenance, edition limits, and automatic royalty flows on-chain, enabling auction houses such as Christie's to sell purely digital works for millions of dollars. This legitimised digital art as a collectible asset class alongside painting and sculpture.
 
   - AI-generated digital art has introduced new aesthetic vocabulary and democratised production: creators who lack traditional drawing skills can now produce sophisticated visuals through prompt engineering and model fine-tuning. This has provoked debate about artistic authorship and the definition of creativity, whilst simultaneously expanding participation in creative culture globally.
 

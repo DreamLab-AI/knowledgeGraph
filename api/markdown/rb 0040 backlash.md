@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0040 backlash
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,42 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0039-stiffness", "label": "rb 0039 stiffness"},
-      {"@id": "urn:ngm:class:rb-0038-compliance", "label": "rb 0038 compliance"},
-      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"},
-      {"@id": "urn:ngm:class:rb-0043-torque", "label": "rb 0043 torque"},
-      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"}
+      {
+        "@id": "urn:ngm:class:rb-0039-stiffness",
+        "label": "rb 0039 stiffness"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0038-compliance",
+        "label": "rb 0038 compliance"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0034-repeatability", "label": "rb 0034 repeatability"},
-      {"@id": "urn:ngm:class:rb-0035-accuracy", "label": "rb 0035 accuracy"}
+      {
+        "@id": "urn:ngm:class:rb-0034-repeatability",
+        "label": "rb 0034 repeatability"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0035-accuracy",
+        "label": "rb 0035 accuracy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0040-backlash:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fb630d81b592f9d7e8e25775841bfad98db95dd8dc8c29f1f435c2ddd35bf39a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Backlash** (RB-0040) is the lost angular or linear motion in a robot joint's mechanical transmission when the direction of motion reverses, caused by clearance gaps between gear teeth or drive components. It directly degrades accuracy and repeatability, and introduces nonlinearity that complicates feedback control design. Harmonic drives and cycloidal reducers are widely used in collaborative robots specifically because they have near-zero backlash.

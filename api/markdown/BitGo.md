@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BitGo
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bit-go:ada684adac21",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:37af839b916080653798a1429c807be2444c13a92726cd64ef69c459ff69d698"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Multisignature]]",
-      "resolved": "urn:visionflow:linked:multisignature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Institutional Custody]]",
-      "resolved": "urn:visionflow:linked:institutional-custody",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Key Management]]",
-      "resolved": "urn:visionflow:linked:key-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - BitGo is a company that provides digital asset custody, wallet, and security services, including multi-signature wallet technology, for institutional clients.

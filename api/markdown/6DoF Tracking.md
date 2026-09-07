@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 6DoF Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +21,53 @@ public: true
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
+    {
+      "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:imu", "label": "IMU"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:xr-applications", "label": "XR Applications"},
-      {"@id": "urn:ngm:class:ar-registration", "label": "AR Registration"},
-      {"@id": "urn:ngm:class:3-d-perception", "label": "3D Perception"}
+      {
+        "@id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      },
+      {
+        "@id": "urn:ngm:class:ar-registration",
+        "label": "AR Registration"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-perception",
+        "label": "3D Perception"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:camera-tracking", "label": "Camera Tracking"},
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:camera-tracking",
+        "label": "Camera Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +88,3 @@ public: true
   - Performance requirements for comfortable XR are stringent: motion-to-photon latency (the delay from physical movement to display update) must remain below 20 ms to avoid motion sickness, requiring the entire tracking, rendering, and display pipeline to operate within that budget. Reprojection techniques (asynchronous timewarp, asynchronous spacewarp) extrapolate the most recent pose estimate to correct for the final few milliseconds, but accurate 6DoF tracking remains the primary latency bottleneck. Predictive algorithms using Kalman filtering and learning-based methods anticipate future pose from motion history to pre-render frames.
 
   - In 2024–2025, 6DoF tracking is standard on all major standalone XR platforms (Meta Quest, Apple Vision Pro, Pico, HTC Vive XR Elite). Accuracy improvements are coming from neural visual odometry — deep-learned feature matching replacing hand-crafted ORB/SIFT descriptors — and from tighter integration with semantic scene understanding that provides stable anchor points even in texture-poor environments. Persistent AR anchors that survive headset removal and environment changes are enabling shared spatial experiences across sessions and devices. Robotics is increasingly adopting the same SLAM-based 6DoF tracking stack for mobile manipulation and autonomous navigation.
-

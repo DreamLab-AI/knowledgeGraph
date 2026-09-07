@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-302-shared-whiteboards
----
-
-# Shared Whiteboards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,22 +63,52 @@ aliases:
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
-      {"@id": "urn:ngm:class:synchronous-collaboration", "label": "Synchronous Collaboration"},
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"}
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:virtual-office-spaces", "label": "Virtual Office Spaces"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-office-spaces",
+        "label": "Virtual Office Spaces"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ]
   },
   "provenance": {
@@ -95,42 +118,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:shared-whiteboards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:472d5ad603e2963eb98293438d13b6c1668216c103ca9a4c31fff1f39ea055a2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[TELE-002-telecollaboration]]",
-      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-028-horizon-workrooms]]",
-      "resolved": "urn:visionflow:linked:tele-028-horizon-workrooms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-301-virtual-office-spaces]]",
-      "resolved": "urn:visionflow:linked:tele-301-virtual-office-spaces",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Digital canvases in telepresence and collaboration platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content in real time. They replicate physical whiteboard dynamics through multi-user synchronisation and persistent artefact storage, supporting brainstorming and visual sensemaking across geographic distances.

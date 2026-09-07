@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hugging Face Accelerate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Hugging Face Accelerate is an open-source Python library that lets PyTorch training code run unchanged across CPUs, single or multiple GPUs, and TPUs by abstracting device placement and distributed launch. It handles mixed precision, gradient accumulation, and sharded data/model parallelism with minimal boilerplate. Accelerate lowers the barrier to scaling deep-learning training and inference across hardware configurations.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-speed", "label": "DeepSpeed"},
-      {"@id": "urn:ngm:class:fast-ai", "label": "fast.ai"}
+      {
+        "@id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "@id": "urn:ngm:class:fast-ai",
+        "label": "fast.ai"
+      }
     ]
   },
   "quality": 0.72

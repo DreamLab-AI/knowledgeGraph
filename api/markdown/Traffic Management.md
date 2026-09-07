@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Traffic Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

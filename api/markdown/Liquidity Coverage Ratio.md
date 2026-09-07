@@ -1,38 +1,108 @@
----
-public: true
----
-
-# Liquidity Coverage Ratio
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:liquidity-coverage-ratio", "@type":"Page", "title":"Liquidity Coverage Ratio", "vc:slug":"liquidity-coverage-ratio", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:liquidity-coverage-ratio",
+  "@type": "Page",
+  "title": "Liquidity Coverage Ratio",
+  "vc:slug": "liquidity-coverage-ratio",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:liquidity-coverage-ratio",
-  "@type":"Class",
-  "label":"Liquidity Coverage Ratio",
-  "definition":"The Liquidity Coverage Ratio (LCR) is a prudential regulatory standard requiring banks to hold a stock of high-quality liquid assets sufficient to cover their projected net cash outflows over a thirty-day stress scenario. Introduced under Basel III, it is expressed as the ratio of the liquidity buffer to stressed net outflows and must equal or exceed one hundred per cent. The measure is designed to ensure short-term resilience to acute liquidity shocks.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:banking-regulation","label":"Banking Regulation"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:capital-adequacy","label":"Capital Adequacy"}],
-    "requires":[{"@id":"urn:ngm:class:stress-testing","label":"Stress Testing"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:basel-iii","label":"Basel III"},{"@id":"urn:ngm:class:basel-committee","label":"Basel Committee"}],
-    "supports":[{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}],
-    "implements":[{"@id":"urn:ngm:class:prudential-regulation","label":"Prudential Regulation"}],
-    "dependsOn":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "partOf":[{"@id":"urn:ngm:class:basel-iii","label":"Basel III"}],
-    "relatedTo":[{"@id":"urn:ngm:class:capital-adequacy","label":"Capital Adequacy"},{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:capital-adequacy","label":"Capital Adequacy"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:regulatory-framework","label":"Regulatory Framework"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:liquidity-coverage-ratio",
+  "@type": "Class",
+  "label": "Liquidity Coverage Ratio",
+  "definition": "The Liquidity Coverage Ratio (LCR) is a prudential regulatory standard requiring banks to hold a stock of high-quality liquid assets sufficient to cover their projected net cash outflows over a thirty-day stress scenario. Introduced under Basel III, it is expressed as the ratio of the liquidity buffer to stressed net outflows and must equal or exceed one hundred per cent. The measure is designed to ensure short-term resilience to acute liquidity shocks.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:banking-regulation",
+      "label": "Banking Regulation"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "@id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

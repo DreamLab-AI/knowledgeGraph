@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Communication Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,54 +7,198 @@ public: true
   "title": "Agent Communication Protocol",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
-    {"@id": "urn:visionflow:linked:inter-agent-communication", "vc:label": "Inter-Agent Communication"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:autonomous-task-execution", "vc:label": "Autonomous Task Execution"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:task-delegation", "vc:label": "Task Delegation"},
-    {"@id": "urn:visionflow:linked:message-passing", "vc:label": "Message Passing"},
-    {"@id": "urn:visionflow:linked:speech-act-theory", "vc:label": "Speech Act Theory"},
-    {"@id": "urn:visionflow:linked:json-ld", "vc:label": "JSON-LD"},
-    {"@id": "urn:visionflow:linked:websocket", "vc:label": "WebSocket"},
-    {"@id": "urn:visionflow:linked:ontology", "vc:label": "Ontology"},
-    {"@id": "urn:visionflow:linked:fipa-acl", "vc:label": "FIPA ACL"},
-    {"@id": "urn:visionflow:linked:contract-net-protocol", "vc:label": "Contract Net Protocol"},
-    {"@id": "urn:visionflow:linked:capability-advertisement", "vc:label": "Capability Advertisement"},
-    {"@id": "urn:visionflow:linked:error-handling", "vc:label": "Error Handling"},
-    {"@id": "urn:visionflow:linked:negotiation", "vc:label": "Negotiation"},
-    {"@id": "urn:visionflow:linked:remote-procedure-call", "vc:label": "Remote Procedure Call"},
-    {"@id": "urn:visionflow:linked:distributed-collaboration", "vc:label": "Distributed Collaboration"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:agent-to-agent-protocol", "vc:label": "Agent-to-Agent Protocol"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:kqml", "vc:label": "KQML"},
-    {"@id": "urn:visionflow:linked:interoperability", "vc:label": "Interoperability"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:coordination-protocol", "vc:label": "Coordination Protocol"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems"},
-    {"@id": "urn:visionflow:linked:http-protocol", "vc:label": "HTTP Protocol"},
-    {"@id": "urn:visionflow:linked:json-rpc-2-0", "vc:label": "JSON-RPC 2.0"},
-    {"@id": "urn:visionflow:linked:agent-network-protocol", "vc:label": "Agent Network Protocol"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol-acp", "vc:label": "ACP (IBM)"},
-    {"@id": "urn:visionflow:linked:linux-foundation", "vc:label": "Linux Foundation"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:multi-agent-reinforcement-learning", "vc:label": "Multi-Agent Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:game-theory", "vc:label": "Game Theory"},
-    {"@id": "urn:visionflow:linked:semantic-web", "vc:label": "Semantic Web"},
-    {"@id": "urn:visionflow:linked:bdi-architecture", "vc:label": "BDI Architecture"},
-    {"@id": "urn:visionflow:linked:task-planning", "vc:label": "Task Planning"},
-    {"@id": "urn:visionflow:linked:trust-management", "vc:label": "Trust Management"},
-    {"@id": "urn:visionflow:linked:oauth-2-0", "vc:label": "OAuth 2.0"},
-    {"@id": "urn:visionflow:linked:microservices", "vc:label": "Microservices"},
-    {"@id": "urn:visionflow:linked:event-driven-architecture", "vc:label": "Event-Driven Architecture"},
-    {"@id": "urn:visionflow:linked:warehouse-automation", "vc:label": "Warehouse Automation"},
-    {"@id": "urn:visionflow:linked:algorithmic-trading", "vc:label": "Algorithmic Trading"},
-    {"@id": "urn:visionflow:linked:smart-grid", "vc:label": "Smart Grid"},
-    {"@id": "urn:visionflow:linked:decentralised-identifier", "vc:label": "Decentralised Identifier"},
-    {"@id": "urn:visionflow:linked:open-agent-standard", "vc:label": "OpenAgent Standard"},
-    {"@id": "urn:visionflow:linked:concurrent-programming", "vc:label": "Concurrent Programming"}
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol",
+      "vc:label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:inter-agent-communication",
+      "vc:label": "Inter-Agent Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-task-execution",
+      "vc:label": "Autonomous Task Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-delegation",
+      "vc:label": "Task Delegation"
+    },
+    {
+      "@id": "urn:visionflow:linked:message-passing",
+      "vc:label": "Message Passing"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-act-theory",
+      "vc:label": "Speech Act Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld",
+      "vc:label": "JSON-LD"
+    },
+    {
+      "@id": "urn:visionflow:linked:websocket",
+      "vc:label": "WebSocket"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:fipa-acl",
+      "vc:label": "FIPA ACL"
+    },
+    {
+      "@id": "urn:visionflow:linked:contract-net-protocol",
+      "vc:label": "Contract Net Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:capability-advertisement",
+      "vc:label": "Capability Advertisement"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-handling",
+      "vc:label": "Error Handling"
+    },
+    {
+      "@id": "urn:visionflow:linked:negotiation",
+      "vc:label": "Negotiation"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-procedure-call",
+      "vc:label": "Remote Procedure Call"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-collaboration",
+      "vc:label": "Distributed Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-to-agent-protocol",
+      "vc:label": "Agent-to-Agent Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:kqml",
+      "vc:label": "KQML"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:coordination-protocol",
+      "vc:label": "Coordination Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:http-protocol",
+      "vc:label": "HTTP Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-rpc-2-0",
+      "vc:label": "JSON-RPC 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-network-protocol",
+      "vc:label": "Agent Network Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol-acp",
+      "vc:label": "ACP (IBM)"
+    },
+    {
+      "@id": "urn:visionflow:linked:linux-foundation",
+      "vc:label": "Linux Foundation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-reinforcement-learning",
+      "vc:label": "Multi-Agent Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-theory",
+      "vc:label": "Game Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-web",
+      "vc:label": "Semantic Web"
+    },
+    {
+      "@id": "urn:visionflow:linked:bdi-architecture",
+      "vc:label": "BDI Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-planning",
+      "vc:label": "Task Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust-management",
+      "vc:label": "Trust Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:oauth-2-0",
+      "vc:label": "OAuth 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:microservices",
+      "vc:label": "Microservices"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-driven-architecture",
+      "vc:label": "Event-Driven Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:warehouse-automation",
+      "vc:label": "Warehouse Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-trading",
+      "vc:label": "Algorithmic Trading"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-grid",
+      "vc:label": "Smart Grid"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-identifier",
+      "vc:label": "Decentralised Identifier"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-agent-standard",
+      "vc:label": "OpenAgent Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:concurrent-programming",
+      "vc:label": "Concurrent Programming"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -82,66 +221,189 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:inter-agent-communication", "label": "Inter-Agent Communication"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:task-delegation", "label": "Task Delegation"},
-      {"@id": "urn:ngm:class:negotiation", "label": "Negotiation"},
-      {"@id": "urn:ngm:class:capability-advertisement", "label": "Capability Advertisement"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      },
+      {
+        "@id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      },
+      {
+        "@id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:speech-act-theory", "label": "Speech Act Theory"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:web-socket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0", "label": "JSON-RPC 2.0"}
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:speech-act-theory",
+        "label": "Speech Act Theory"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
+        "label": "JSON-RPC 2.0"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:trust-management", "label": "Trust Management"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:trust-management",
+        "label": "Trust Management"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:fipa-acl", "label": "FIPA ACL"},
-      {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"},
-      {"@id": "urn:ngm:class:kqml", "label": "KQML"}
+      {
+        "@id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA ACL"
+      },
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:kqml",
+        "label": "KQML"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:capability-advertisement", "label": "Capability Advertisement"},
-      {"@id": "urn:ngm:class:error-handling", "label": "Error Handling"},
-      {"@id": "urn:ngm:class:negotiation", "label": "Negotiation"},
-      {"@id": "urn:ngm:class:warehouse-automation", "label": "Warehouse Automation"},
-      {"@id": "urn:ngm:class:algorithmic-trading", "label": "Algorithmic Trading"},
-      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"}
+      {
+        "@id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      },
+      {
+        "@id": "urn:ngm:class:error-handling",
+        "label": "Error Handling"
+      },
+      {
+        "@id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"}
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent-to-agent-protocol", "label": "Agent-to-Agent Protocol"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:kqml", "label": "KQML"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:bdi-architecture", "label": "BDI Architecture"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:kqml",
+        "label": "KQML"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:bdi-architecture",
+        "label": "BDI Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:concurrent-programming", "label": "Concurrent Programming"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:concurrent-programming",
+        "label": "Concurrent Programming"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:agent-messaging-protocol", "label": "Agent Messaging Protocol"},
-    {"@id": "urn:ngm:class:multi-agent-communication-protocol", "label": "Multi-Agent Communication Protocol"}
+    {
+      "@id": "urn:ngm:class:agent-messaging-protocol",
+      "label": "Agent Messaging Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-communication-protocol",
+      "label": "Multi-Agent Communication Protocol"
+    }
   ],
   "quality": 0.91,
   "provenance": {
@@ -279,11 +541,11 @@ public: true
 
   Agent communication protocols address one of the oldest problems in distributed artificial intelligence: if autonomous software agents are to collaborate on tasks that no single agent can accomplish alone, they must share a common language for expressing not just information content but the pragmatics of how that content should be received and acted upon. A protocol that specifies only message format — that says "an agent message is a JSON object with sender and receiver fields and a content field" — is insufficient. The receiving agent also needs to know what the sender intends by sending the message: is this information to be believed and stored, a request to be acted upon, an offer to be accepted or rejected, or a notification to be forwarded? These distinctions — the illocutionary force of a communicative act — are precisely what speech act theory, developed by J. L. Austin (*How to Do Things with Words*, 1962) and John Searle (*Speech Acts*, 1969) in ordinary-language philosophy, was designed to illuminate. Searle's five-category taxonomy of illocutionary acts maps naturally onto the performative vocabulary of agent communication: assertives (the agent commits to the truth of a proposition — the INFORM performative in FIPA-ACL) represent the agent's epistemic commitment to shared world knowledge; directives (the agent attempts to get the receiver to perform an action — the REQUEST performative) represent goal-directed task initiation; commissives (the agent commits itself to a future course of action — the PROPOSE and AGREE performatives) represent negotiation and commitment-tracking; expressives (the agent expresses psychological states — THANK, SORRY, APOLOGISE) support social and trust-building communication; and declarations (the agent brings about the state of affairs described — few in agent systems, though contract awards approximate this category) represent authoritative acts that change the state of the multi-agent system.
 
-  The practical consequences of having a rigorous performative semantics are profound for multi-agent coordination. Without it, an agent receiving a message bearing the same syntactic form cannot distinguish whether another agent is informing it of a fact (and thus should update its beliefs), requesting it to perform an action (and thus should enter that action into its goal agenda), or proposing a deal contingent on certain conditions (and thus should reason about whether the conditions are acceptable before committing). The early multi-agent systems of the 1980s used ad hoc message formats, which worked within homogeneous, single-vendor systems but created combinatorial integration problems as the number of agent types grew. The DARPA Knowledge Sharing Effort (1990–1993) produced [[KQML]] to address this, defining a standardised performative vocabulary and a transport-neutral envelope format. KQML's performatives — ask-one, tell, achieve, subscribe, broker-all, recommend-one, and approximately 30 others — provided a shared vocabulary for knowledge-level agent communication, abstracting above the specific knowledge representation language used by each agent. KQML's weakness was its informal semantics: different implementors interpreted performative meanings differently, leading to interoperability failures between ostensibly KQML-compliant systems from different research groups. Singh's influential 1998 critique in *IEEE Computer* identified the core problem: without a formal model of agent mental states (beliefs, desires, intentions), the semantics of performatives could not be defined rigorously enough to specify what it means for an implementation to be correct.
+  The practical consequences of having a rigorous performative semantics are profound for multi-agent coordination. Without it, an agent receiving a message bearing the same syntactic form cannot distinguish whether another agent is informing it of a fact (and thus should update its beliefs), requesting it to perform an action (and thus should enter that action into its goal agenda), or proposing a deal contingent on certain conditions (and thus should reason about whether the conditions are acceptable before committing). The early multi-agent systems of the 1980s used ad hoc message formats, which worked within homogeneous, single-vendor systems but created combinatorial integration problems as the number of agent types grew. The DARPA Knowledge Sharing Effort (1990–1993) produced [[KQML]] to address this, defining a standardised performative vocabulary and a transport-neutral envelope format. KQML's performatives — ask-one, tell, achieve, subscribe, broker-all, recommend-one, and approximately 30 others — provided a shared vocabulary for knowledge-level agent communication, abstracting above the specific knowledge representation language used by each agent. KQML's weakness was its informal semantics: different implementors interpreted performative meanings differently, leading to interoperability failures between ostensibly KQML-compliant systems from different research groups. Singh's influential 1998 critique in *IEEE Computer* identified the core problem: without a formal model of agent mental states (beliefs, desires, intentions), the semantics of performatives [private] not be defined rigorously enough to specify what it means for an implementation to be correct.
 
-  The historical trajectory of agent communication protocols moves through three clearly delineated eras, each defined by the dominant agent architecture and the standardisation landscape. The first era (1980s–early 1990s) was characterised by ad hoc message passing in closed systems: blackboard architectures (Hearsay-II, CAGE, REACT), distributed problem-solving networks with application-specific protocols, and procedural message-handling code embedded in individual agent implementations. The second era (early 1990s–2020s) was defined by the [[KQML]]/[[FIPA ACL]] standardisation movement. The FIPA Foundation for Intelligent Physical Agents (established 1996) produced the FIPA ACL specification (ratified 2000) with rigorously defined pre- and post-conditions on 22 communicative act types (ACCEPT-PROPOSAL, AGREE, CANCEL, CFP, CONFIRM, DISCONFIRM, FAILURE, INFORM, INFORM-IF, INFORM-REF, NOT-UNDERSTOOD, PROPOSE, QUERY-IF, QUERY-REF, REFUSE, REJECT-PROPOSAL, REQUEST, REQUEST-WHEN, REQUEST-WHENEVER, SUBSCRIBE, PROXY, PROPAGATE) grounded in a formal model of agent Beliefs, Desires, and Intentions (the BDI architecture formalised by Bratman's intention-based planning theory and operationalised by Rao and Georgeff's agent-oriented programming languages). FIPA also standardised interaction protocol templates — the FIPA Contract Net Interaction Protocol, FIPA Iterated Contract Net, FIPA Request, FIPA Subscribe, FIPA Brokering, FIPA English Auction, FIPA Dutch Auction, FIPA Recruiting — that agents could instantiate for common coordination patterns without designing conversation state machines from scratch. The [[Contract Net Protocol]], originally proposed by Reid Smith in 1980 for distributed task allocation in computing systems, was canonised within FIPA and became the dominant mechanism for market-based resource and task allocation: a manager agent announces a task via a Call-For-Proposals message; participant agents evaluate the task and respond with proposals that specify their capability to perform the task and the cost they would require; the manager awards the contract to the optimal bidder with an ACCEPT-PROPOSAL message; the winner acknowledges with an AGREE and subsequently reports completion or failure; losing bidders receive REJECT-PROPOSAL. The JADE (Java Agent DEvelopment Framework, 1999) open-source platform provided a FIPA-compliant MAS middleware that was used in hundreds of academic and industrial deployments across logistics, telecommunications network management, e-commerce, supply chain management, and air traffic control simulation.
+  The historical trajectory of agent communication protocols moves through three clearly delineated eras, each defined by the dominant agent architecture and the standardisation landscape. The first era (1980s–early 1990s) was characterised by ad hoc message passing in closed systems: blackboard architectures (Hearsay-II, CAGE, REACT), distributed problem-solving networks with application-specific protocols, and procedural message-handling code embedded in individual agent implementations. The second era (early 1990s–2020s) was defined by the [[KQML]]/[[FIPA ACL]] standardisation movement. The FIPA Foundation for Intelligent Physical Agents (established 1996) produced the FIPA ACL specification (ratified 2000) with rigorously defined pre- and post-conditions on 22 communicative act types (ACCEPT-PROPOSAL, AGREE, CANCEL, CFP, CONFIRM, DISCONFIRM, FAILURE, INFORM, INFORM-IF, INFORM-REF, NOT-UNDERSTOOD, PROPOSE, QUERY-IF, QUERY-REF, REFUSE, REJECT-PROPOSAL, REQUEST, REQUEST-WHEN, REQUEST-WHENEVER, SUBSCRIBE, PROXY, PROPAGATE) grounded in a formal model of agent Beliefs, Desires, and Intentions (the BDI architecture formalised by Bratman's intention-based planning theory and operationalised by Rao and Georgeff's agent-oriented programming languages). FIPA also standardised interaction protocol templates — the FIPA Contract Net Interaction Protocol, FIPA Iterated Contract Net, FIPA Request, FIPA Subscribe, FIPA Brokering, FIPA English Auction, FIPA Dutch Auction, FIPA Recruiting — that agents [private] instantiate for common coordination patterns without designing conversation state machines from scratch. The [[Contract Net Protocol]], originally proposed by Reid Smith in 1980 for distributed task allocation in computing systems, was canonised within FIPA and became the dominant mechanism for market-based resource and task allocation: a manager agent announces a task via a Call-For-Proposals message; participant agents evaluate the task and respond with proposals that specify their capability to perform the task and the cost they would require; the manager awards the contract to the optimal bidder with an ACCEPT-PROPOSAL message; the winner acknowledges with an AGREE and subsequently reports completion or failure; losing bidders receive REJECT-PROPOSAL. The JADE (Java Agent DEvelopment Framework, 1999) open-source platform provided a FIPA-compliant MAS middleware that was used in hundreds of academic and industrial deployments across logistics, telecommunications network management, e-commerce, supply chain management, and air traffic control simulation.
 
-  The third and current era began around 2023–2024 with the explosive emergence of [[Large Language Model]]-based agents as the dominant paradigm for autonomous software task execution. LLM agents differ architecturally from classical FIPA BDI agents in four fundamental ways: (1) they do not maintain explicit symbolic BDI mental state representations but rather encode agent context implicitly in neural network activations and conversation history; (2) their "communication" occurs through natural language prompts and structured JSON tool-call schemas rather than formal speech act performatives; (3) their coordination happens through orchestration frameworks — AutoGen's ConversableAgent graph, LangGraph's DAG-based control flow, CrewAI's role-based task assignment — rather than through standards-compliant ACL message exchange; and (4) their capabilities are not described in formal ontology terms but in natural-language tool descriptions and system prompt summaries that the LLM is expected to reason about. This architectural shift created urgent demand for new lightweight, LLM-native communication protocols that provide enough structure for reliable multi-agent coordination without requiring the full formal apparatus of FIPA — protocols that could bridge the gap between the unstructured natural language that LLMs excel at and the structured, verifiable message exchange that production multi-agent systems require. Anthropic's [[Model Context Protocol]] (MCP, November 2024) addressed the most pressing sub-problem: a standardised protocol for LLM-agent-to-tool communication, defining how an LLM agent host (MCP client) discovers available tools from a tool provider (MCP server), invokes tools with type-validated inputs, and receives structured results. MCP uses JSON-RPC 2.0 as its wire protocol and supports stdio, HTTP/SSE, and WebSocket transports. Google's [[Agent-to-Agent Protocol]] (A2A, April 2025) addressed the complementary problem of agent-to-agent delegation: how one LLM-based agent (a client agent) discovers another agent's capabilities, creates a task delegation request, monitors execution progress, and retrieves task artifacts, using HTTP/SSE transport and Agent Card JSON capability manifests. In June 2025, Google transferred A2A to [[Linux Foundation]] governance as the Agent2Agent project, with over 50 founding technology partners expanding to over 150 by April 2026. IBM's ACP (open-sourced to Linux Foundation AI in 2024–2025) provides a REST-native brokered architecture where an ACP Server acts as registry and router, with multipart MIME supporting multimodal agent responses. The community [[Agent Network Protocol]] uses W3C [[Decentralised Identifier]]s and [[JSON-LD]] messages for trustless cross-organisation agent identity and communication, targeting the open, permissionless "agentic internet" where agents from different organisations can discover, authenticate, and transact with each other without central registry dependency.
+  The third and current era began around 2023–2024 with the explosive emergence of [[Large Language Model]]-based agents as the dominant paradigm for autonomous software task execution. LLM agents differ architecturally from classical FIPA BDI agents in four fundamental ways: (1) they do not maintain explicit symbolic BDI mental state representations but rather encode agent context implicitly in neural network activations and conversation history; (2) their "communication" occurs through natural language prompts and structured JSON tool-call schemas rather than formal speech act performatives; (3) their coordination happens through orchestration frameworks — AutoGen's ConversableAgent graph, LangGraph's DAG-based control flow, CrewAI's role-based task assignment — rather than through standards-compliant ACL message exchange; and (4) their capabilities are not described in formal ontology terms but in natural-language tool descriptions and system prompt summaries that the LLM is expected to reason about. This architectural shift created urgent demand for new lightweight, LLM-native communication protocols that provide enough structure for reliable multi-agent coordination without requiring the full formal apparatus of FIPA — protocols that [private] bridge the gap between the unstructured natural language that LLMs excel at and the structured, verifiable message exchange that production multi-agent systems require. Anthropic's [[Model Context Protocol]] (MCP, November 2024) addressed the most pressing sub-problem: a standardised protocol for LLM-agent-to-tool communication, defining how an LLM agent host (MCP client) discovers available tools from a tool provider (MCP server), invokes tools with type-validated inputs, and receives structured results. MCP uses JSON-RPC 2.0 as its wire protocol and supports stdio, HTTP/SSE, and WebSocket transports. Google's [[Agent-to-Agent Protocol]] (A2A, April 2025) addressed the complementary problem of agent-to-agent delegation: how one LLM-based agent (a client agent) discovers another agent's capabilities, creates a task delegation request, monitors execution progress, and retrieves task artifacts, using HTTP/SSE transport and Agent Card JSON capability manifests. In June 2025, Google transferred A2A to [[Linux Foundation]] governance as the Agent2Agent project, with over 50 founding technology partners expanding to over 150 by April 2026. IBM's ACP (open-sourced to Linux Foundation AI in 2024–2025) provides a REST-native brokered architecture where an ACP Server acts as registry and router, with multipart MIME supporting multimodal agent responses. The community [[Agent Network Protocol]] uses W3C [[Decentralised Identifier]]s and [[JSON-LD]] messages for trustless cross-organisation agent identity and communication, targeting the open, permissionless "agentic internet" where agents from different organisations can discover, authenticate, and transact with each other without central registry dependency.
 
   ## Components and Architecture
 
@@ -434,7 +696,7 @@ public: true
 
   **Decentralised Agent Network (ANP Pattern)**
   - Agent identity: each agent holds a W3C [[Decentralised Identifier]] (DID), resolvable to a DID Document containing public keys and service endpoints.
-  - Agent discovery: agents publish their DID and capability profile to a discovery index (comparable to a public DNS); other agents resolve DIDs and fetch capability documents.
+  - Agent discovery: agents publish their DID and capability profile to a discovery [private] (comparable to a public DNS); other agents resolve DIDs and fetch capability documents.
   - Authenticated channel establishment: agents use DID-based asymmetric key exchange (analogous to TLS mutual authentication) to establish an encrypted, authenticated communication channel.
   - Message structure: [[JSON-LD]] messages with semantic context linking capability terms to shared [[Ontology]] definitions; enables machine-readable intent beyond informal natural-language descriptions.
   - Trust without central authority: agents evaluate trust by verifying DID document integrity (cryptographic signature chain), checking verifiable credentials issued by trusted credential authorities, and consulting a distributed reputation ledger.
@@ -469,7 +731,7 @@ public: true
   **Agent-to-Agent Protocol (A2A) Message Primitives**
   - Task: `{id, sessionId, status: "submitted", message: {role: "user", parts: [{type: "text", text: "…"}]}}`; initiates a new agent task; client-generated UUID id for correlation.
   - TaskStatus: `{id, status: "working"|"completed"|"failed"|"canceled"|"input-required", message: {role: "agent", parts: [...]}}` ; streaming or polled progress updates from server agent.
-  - TaskArtifact: `{taskId, index, name, mimeType, parts: [{type: "text"|"file"|"data", …}]}` ; output fragments from agent execution; may be streamed as partial results during long-running tasks.
+  - TaskArtifact: `{taskId, [private], name, mimeType, parts: [{type: "text"|"file"|"data", …}]}` ; output fragments from agent execution; may be streamed as partial results during long-running tasks.
   - AgentMessage: `{role: "user"|"agent", parts: [{type: "text", text: "…"}, {type: "image", mimeType: "image/png", data: "base64…"}]}` ; multi-modal message content supporting text, inline data, and file references.
   - AgentCard: JSON document at `/.well-known/agent.json`; fields include `name`, `description`, `url` (task creation endpoint), `version`, `capabilities: {streaming: true, pushNotifications: false}`, `authentication: {schemes: ["bearer"]}`, `skills: [{id, name, description, inputModes, outputModes}]`.
 
@@ -562,7 +824,7 @@ public: true
   - `working`: agent is actively processing the task; may emit intermediate TaskArtifact messages
   - `input-required`: agent requires additional user input or clarification before proceeding
   - `completed`: task successfully finished; final TaskArtifact(s) available
-  - `failed`: task could not be completed; error details provided in status message
+  - `failed`: task [private] not be completed; error details provided in status message
   - `canceled`: task was canceled by client request before completion
 
   ## Research and Literature

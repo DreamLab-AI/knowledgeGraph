@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Autoencoder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,47 +174,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:autoencoder:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5791e10f4ac8b0b7c262375223e67bb652c1c1deb3ba9b6f54d0d01338446227"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO/IEC 22989:2022]]",
-      "resolved": "urn:visionflow:linked:iso-iec-22989-2022",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI RMF]]",
-      "resolved": "urn:visionflow:linked:nist-ai-rmf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Autoencoder is a neural network trained to reconstruct its input by learning a compressed latent representation. The encoder maps input to a lower-dimensional latent space; the decoder reconstructs the original from this representation. Variants including VAEs, denoising autoencoders, and convolutional autoencoders extend this to generative modelling, anomaly detection, and feature extraction.

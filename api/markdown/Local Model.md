@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Local Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Local Model",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:language-model", "vc:label": "LanguageModel" },
-    { "@id": "urn:visionflow:linked:on-device-inference", "vc:label": "OnDeviceInference" },
-    { "@id": "urn:visionflow:linked:self-hosted-ai-server-infrastructure", "vc:label": "SelfHostedAIServerInfrastructure" },
-    { "@id": "urn:visionflow:linked:cloud-computing", "vc:label": "CloudComputing" }
+    {
+      "@id": "urn:visionflow:linked:language-model",
+      "vc:label": "LanguageModel"
+    },
+    {
+      "@id": "urn:visionflow:linked:on-device-inference",
+      "vc:label": "OnDeviceInference"
+    },
+    {
+      "@id": "urn:visionflow:linked:[private]",
+      "vc:label": "SelfHostedAIServerInfrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-computing",
+      "vc:label": "CloudComputing"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,17 +44,27 @@ public: true
   "definition": "A machine-learning model, typically a language model, whose weights are downloaded and run on hardware controlled by the operator — a personal device, a workstation, or a private server — so that inference happens without sending data to a third-party API. Local models trade the ceiling capability and elastic scale of hosted frontier systems for data locality, predictable per-token cost, offline availability, and full control over versioning and privacy, and they are commonly used as the cheap or confidential tier in a model-routing strategy.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": { "@id": "urn:ngm:class:language-model", "label": "Language Model" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:language-model",
+    "label": "Language Model"
+  },
   "relations": {
     "uses": [
-      { "@id": "urn:ngm:class:on-device-inference", "label": "On-Device Inference" },
-      { "@id": "urn:ngm:class:model-quantization", "label": "Model Quantization" }
+      {
+        "@id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      }
     ],
-    "enables": [
-      { "@id": "urn:ngm:class:self-hosted-ai-server-infrastructure", "label": "Self-Hosted AI Server Infrastructure" }
-    ],
+    "enables": [],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing" }
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ]
   },
   "quality": 0.75,

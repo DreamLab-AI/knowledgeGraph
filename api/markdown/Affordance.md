@@ -1,52 +1,113 @@
----
-public: true
----
-
-# Affordance
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:affordance", "@type":"Page", "title":"Affordance", "vc:slug":"affordance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:affordance",
-  "@type":"Class",
-  "label":"Affordance",
-  "definition":"An affordance is a property of an object or environment that signals the actions it makes possible to a perceiving agent, mediating the relationship between the agent's capabilities and the world. Originating in ecological psychology, the concept was adapted to design to describe how the perceptible features of an interface or physical artefact suggest how it can be used. In spatial and interactive computing, affordances guide users towards available actions, and perceived affordances are deliberately engineered so that controls and gestures feel discoverable and natural.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:interaction-design","label":"Interaction Design"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:perception","label":"Perception"},
-      {"@id":"urn:ngm:class:usability","label":"Usability"}
-    ],
-    "partOf":[{"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"}],
-    "enables":[
-      {"@id":"urn:ngm:class:user-experience","label":"User Experience"},
-      {"@id":"urn:ngm:class:gesture-recognition","label":"Gesture Recognition"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:accessibility","label":"Accessibility"},
-      {"@id":"urn:ngm:class:user-interface","label":"User Interface"}
-    ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:perception","label":"Perception"},
-      {"@id":"urn:ngm:class:scene-understanding","label":"Scene Understanding"}
-    ],
-    "uses":[{"@id":"urn:ngm:class:user-centred-design","label":"User-Centred Design"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"},
-      {"@id":"urn:ngm:class:virtual-reality","label":"Virtual Reality"},
-      {"@id":"urn:ngm:class:ergonomics","label":"Ergonomics"},
-      {"@id":"urn:ngm:class:cognitive-load","label":"Cognitive Load"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:affordance",
+  "@type": "Page",
+  "title": "Affordance",
+  "vc:slug": "affordance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:affordance",
+  "@type": "Class",
+  "label": "Affordance",
+  "definition": "An affordance is a property of an object or environment that signals the actions it makes possible to a perceiving agent, mediating the relationship between the agent's capabilities and the world. Originating in ecological psychology, the concept was adapted to design to describe how the perceptible features of an interface or physical artefact suggest how it can be used. In spatial and interactive computing, affordances guide users towards available actions, and perceived affordances are deliberately engineered so that controls and gestures feel discoverable and natural.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:interaction-design",
+      "label": "Interaction Design"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:user-centred-design",
+        "label": "User-Centred Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - An affordance is the relationship between an agent and an artefact whereby the artefact's features signal what actions are possible. It is central to [[Interaction Design]] and [[Human-Computer Interaction]], shaping how [[User Interface]] elements communicate their use and how [[Perception]] drives action.
 - ### Overview

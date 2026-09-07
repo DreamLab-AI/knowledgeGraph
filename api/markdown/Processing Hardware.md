@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Processing Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:processing-hardware:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eb1613395675b182d867cc522517d6c1efa0f82a30293698556a5f4e3e559f89"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[High Performance Computing]]",
-      "resolved": "urn:visionflow:linked:high-performance-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physical Hardware]]",
-      "resolved": "urn:visionflow:owl:class:physical-hardware",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Specialized computing components including CPUs, GPUs, and accelerators that execute computational operations for graphics rendering, artificial intelligence workloads, and real-time data processing in immersive digital environments.

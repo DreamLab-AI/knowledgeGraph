@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Board
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,16 +59,34 @@ public: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:ai-office", "label": "AI Office"},
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
+      {
+        "@id": "urn:ngm:class:ai-office",
+        "label": "AI Office"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:general-purpose-ai-model", "label": "General Purpose AI Model"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:general-purpose-ai-model",
+        "label": "General Purpose AI Model"
+      }
     ]
   },
   "quality": 0.5,
@@ -84,42 +97,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-board:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:501126f127b4f117bcacd872af4e4df222761bf5597ca1c47642d3d631fdfb1c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[EU AI Act Articles 65-67]]",
-      "resolved": "urn:visionflow:linked:eu-ai-act-articles-65-67",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Advisory body composed of representatives from EU Member States, supported by the AI Office, with the mission of coordinating uniform AI Act implementation, issuing guidelines, and facilitating cooperation among national authorities.

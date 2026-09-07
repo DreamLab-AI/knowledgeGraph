@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Validator Selection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Validator selection is the consensus mechanism by which a proof-of-stake blockchain chooses which staked participants are eligible to propose and attest to blocks in a given slot or epoch. It typically uses stake-weighted, often pseudo-randomised sampling to assign block production while preserving security and decentralisation. The design directly affects fairness, finality, energy efficiency and resistance to manipulation.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:testnet", "label": "Testnet"}, {"@id": "urn:ngm:class:proof-of-stake-sustainability", "label": "Proof Of Stake Sustainability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:testnet",
+        "label": "Testnet"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake-sustainability",
+        "label": "Proof Of Stake Sustainability"
+      }
+    ]
   },
   "quality": 0.72
 }

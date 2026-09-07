@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mobile Manipulator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,28 +59,70 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
-      {"@id": "urn:ngm:class:manipulator-arm", "label": "Manipulator Arm"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:manipulator-arm",
+        "label": "Manipulator Arm"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
-      {"@id": "urn:ngm:class:wheeled-mobile-robot", "label": "Wheeled Mobile Robot"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {
+        "@id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "@id": "urn:ngm:class:wheeled-mobile-robot",
+        "label": "Wheeled Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
     ]
   },
   "provenance": {
@@ -95,37 +132,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mobile-manipulator:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:95584807369b2d96fe5633c3e51f35816879960133aa9fe51e3d4dae0da4a7a7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hybrid Robot]]",
-      "resolved": "urn:visionflow:owl:class:hybrid-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Mobile Manipulator is a robotic system that integrates a mobile base — wheeled, legged, or tracked — with one or more articulated manipulator arms, enabling it to navigate through unstructured environments and perform dexterous manipulation tasks at arbitrary locations. This combination resolves the fundamental trade-off between workspace reach and precision, making mobile manipulators suitable for logistics, inspection, surgery assistance, and domestic service applications. Effective operation requires tight coordination between navigation, motion planning, perception, and manipulation subsystems.

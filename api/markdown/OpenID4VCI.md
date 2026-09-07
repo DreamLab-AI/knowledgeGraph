@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenID4VCI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

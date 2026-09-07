@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0101 performance level
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,20 +51,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0100-safety-integrity-level", "label": "rb 0100 safety integrity level"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"}
+      {
+        "@id": "urn:ngm:class:rb-0100-safety-integrity-level",
+        "label": "rb 0100 safety integrity level"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"},
-      {"@id": "urn:ngm:class:rb-0090-emergency-stop", "label": "rb 0090 emergency stop"}
+      {
+        "@id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0090-emergency-stop",
+        "label": "rb 0090 emergency stop"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"}
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0096-safeguarding", "label": "rb 0096 safeguarding"}
+      {
+        "@id": "urn:ngm:class:rb-0096-safeguarding",
+        "label": "rb 0096 safeguarding"
+      }
     ]
   },
   "provenance": {
@@ -79,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0101-performance-level:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1e7480b0292a741283bf7ce99f00bcf103828f70325cda623a7a63912732f169"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Performance Level (PL) is a discrete safety metric defined in ISO 13849-1 that quantifies the ability of a safety-related control system to perform a safety function under foreseeable conditions. Levels range from PLa (lowest) to PLe (highest), each corresponding to a target probability of dangerous failure per hour (PFHd). PL is determined through a structured risk assessment and verified against the required PL (PLr) derived from hazard analysis, considering parameters such as category, mean time to dangerous failure (MTTFd), diagnostic coverage (DC), and common-cause failure (CCF).

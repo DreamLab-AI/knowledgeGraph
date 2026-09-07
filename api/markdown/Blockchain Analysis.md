@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,38 @@ public: true
   "definition": "Blockchain analysis is the systematic examination of distributed ledger transaction data to identify patterns, trace fund flows, attribute addresses to entities, and detect illicit activity. It applies graph analytics, heuristic clustering, and machine-learning techniques to publicly available on-chain records to support compliance, law enforcement, and financial intelligence functions.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-forensics", "label": "Digital Forensics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-forensics",
+      "label": "Digital Forensics"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"}
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:kyc-aml", "label": "KYC/AML"}
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-analytics-platform", "label": "Blockchain Analytics Platform"}
+      {
+        "@id": "urn:ngm:class:blockchain-analytics-platform",
+        "label": "Blockchain Analytics Platform"
+      }
     ]
   },
   "quality": 0.8
@@ -57,4 +72,3 @@ public: true
   - The practical value of blockchain analysis spans regulatory compliance, criminal investigation, and market intelligence. Virtual asset service providers use it to satisfy FATF Travel Rule obligations, screening counterparty wallets before processing withdrawals. Law-enforcement agencies apply it to ransomware attribution, darknet market disruption, and sanction-evasion detection. The 2022 seizure of 94,636 BTC linked to the 2016 Bitfinex hack demonstrated the technique's capability to trace funds across seven years and hundreds of hops.
 
   - By 2024–2025, blockchain analysis has matured into a regulated professional service with global adoption. Privacy-enhancing technologies—coinjoin, zero-knowledge proofs, and cross-chain bridges—present growing analytical challenges. In response, firms are deploying graph neural networks and probabilistic de-mixing algorithms. Regulatory pressure is intensifying: the EU's Transfer of Funds Regulation (2023) mandates Travel Rule compliance for all crypto transfers, sustaining demand for analysis infrastructure. AI-assisted entity attribution is reducing manual analyst workload and enabling near-real-time screening at scale.
-

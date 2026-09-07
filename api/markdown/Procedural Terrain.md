@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Procedural Terrain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -89,26 +84,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:procedural-terrain:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6d7ac3da279b99e0f3b5014c3f796c7171a58dbef7e87427208ab51ed5e74567"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Procedural Terrain refers to algorithmically generated landscape geometry, typically based on noise functions such as Perlin or simplex noise, fractals, hydraulic erosion simulation, and rule-based placement of features. It enables scalable, varied, and believable virtual worlds without manual authoring of every surface element, supporting open-world game environments and simulation scenarios.

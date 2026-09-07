@@ -1,8 +1,3 @@
----
-public: true
----
-
-# blockchain core concepts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,19 +175,46 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"},
-      {"@id": "urn:ngm:class:layer2-scaling", "label": "Layer2Scaling"}
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      },
+      {
+        "@id": "urn:ngm:class:layer2-scaling",
+        "label": "Layer2Scaling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ]
   },
   "quality": 0.4,
@@ -203,187 +225,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-core-concepts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1121dbbc946cec157189fcc3c1998a490a5fdbb1db2313ec5fd0a803fda43122"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Consensus|consensus mechanisms]]",
-      "resolved": "urn:visionflow:linked:consensus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CryptographyFundamentals|cryptographic primitives]]",
-      "resolved": "urn:visionflow:linked:cryptography-fundamentals",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DecentralisedFinance|DeFi]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[LayerTwo|Layer 2s]]",
-      "resolved": "urn:visionflow:linked:layer-two",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseEconomy|metaverse economies]]",
-      "resolved": "urn:visionflow:linked:metaverse-economy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NFT]]",
-      "resolved": "urn:visionflow:linked:nft",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NFT|NFTs]]",
-      "resolved": "urn:visionflow:linked:nft",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PrivacyEnhancements|privacy enhancements]]",
-      "resolved": "urn:visionflow:linked:privacy-enhancements",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PublicKeyEncryption|PKC]]",
-      "resolved": "urn:visionflow:linked:public-key-encryption",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scalability|scalability]]",
-      "resolved": "urn:visionflow:linked:scalability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainGovernance|governance mechanisms]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Oracle]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-oracle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusAlgorithm]]",
-      "resolved": "urn:visionflow:owl:class:consensus-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CrossChainBridge]]",
-      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:owl:class:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO]]",
-      "resolved": "urn:visionflow:owl:class:dao",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DataStructure|data structures]]",
-      "resolved": "urn:visionflow:owl:class:data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DecentralizedStorage]]",
-      "resolved": "urn:visionflow:owl:class:decentralized-storage",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalSignature|signatures]]",
-      "resolved": "urn:visionflow:owl:class:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[HashFunction|hash functions]]",
-      "resolved": "urn:visionflow:owl:class:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability|cross-chain interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer2Scaling]]",
-      "resolved": "urn:visionflow:owl:class:layer2-scaling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MerkleTree|Merkle trees]]",
-      "resolved": "urn:visionflow:owl:class:merkle-tree",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ProofOfStake|PoS]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ProofOfWork|PoW]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-work",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RegulatoryCompliance|regulatory compliance]]",
-      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SmartContract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SmartContract|smart contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token|tokens]]",
-      "resolved": "urn:visionflow:owl:class:token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction|transactions]]",
-      "resolved": "urn:visionflow:owl:class:transaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ZeroKnowledge]]",
-      "resolved": "urn:visionflow:owl:class:zero-knowledge",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Core blockchain concepts encompass distributed ledger technology fundamentals including [[Consensus|consensus mechanisms]] ([[ProofOfWork|PoW]], [[ProofOfStake|PoS]]), [[CryptographyFundamentals|cryptographic primitives]] ([[PublicKeyEncryption|PKC]], [[DigitalSignature|signatures]]), and [[DataStructure|data structures]] ([[MerkleTree|Merkle trees]], [[HashFunction|hash functions]]). Essential components include [[Transaction|transactions]], [[SmartContract|smart contracts]], [[Token|tokens]], and [[BlockchainGovernance|governance mechanisms]], with application frameworks spanning [[DecentralisedFinance|DeFi]], [[NFT|NFTs]], and [[MetaverseEconomy|metaverse economies]]. Broader considerations encompass [[Scalability|scalability]] solutions ([[LayerTwo|Layer 2s]]), [[Interoperability|cross-chain interoperability]], [[PrivacyEnhancements|privacy enhancements]], and [[RegulatoryCompliance|regulatory compliance]] across jurisdictions.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Biometric Data
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,40 +20,90 @@ public: true
   "definition": "Biometric data is a category of personal data comprising unique physiological or behavioural characteristics of an individual — such as fingerprints, facial geometry, iris patterns, voice prints, gait, and keystroke dynamics — that can be used to identify or authenticate that person. Under data protection frameworks such as GDPR, biometric data processed for identification purposes is classified as a special category of personal data subject to heightened protection. Its irrevocable nature (an individual cannot change their biometrics) makes breaches particularly consequential.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:personal-data", "label": "Personal Data"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:personal-data",
+      "label": "Personal Data"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:statistical-analysis", "label": "Statistical Analysis"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:policy-information-point", "label": "Policy Information Point"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:policy-information-point",
+        "label": "Policy Information Point"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:policy-administration-point", "label": "Policy Administration Point"},
-      {"@id": "urn:ngm:class:session-management", "label": "Session Management"}
+      {
+        "@id": "urn:ngm:class:policy-administration-point",
+        "label": "Policy Administration Point"
+      },
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:session-key", "label": "Session Key"}
+      {
+        "@id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:personal-data", "label": "Personal Data"}
+      {
+        "@id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      }
     ]
   },
   "quality": 0.62,

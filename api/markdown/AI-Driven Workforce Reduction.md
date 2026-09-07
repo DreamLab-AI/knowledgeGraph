@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI-Driven Workforce Reduction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-driven-workforce-reduction",
   "title": "AI-Driven Workforce Reduction",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI-related layoffs", "Atlassian", "Workforce reduction"],
+  "vc:outboundWikilinks": [
+    "AI-related layoffs",
+    "Atlassian",
+    "Workforce reduction"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:automation", "label": "Automation"}, {"@id": "urn:ngm:class:macroeconomics", "label": "Macroeconomics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "@id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

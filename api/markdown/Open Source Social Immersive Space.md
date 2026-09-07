@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[flossverse]]
-# Open Source Social Immersive Space
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,19 +47,46 @@ elevatedFrom:: [[flossverse]]
   "quality": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-creative-metaverse-framework", "label": "Decentralised Creative Metaverse Framework"},
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:decentralised-creative-metaverse-framework",
+        "label": "Decentralised Creative Metaverse Framework"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ]
   },
   "provenance": {
@@ -76,34 +97,8 @@ elevatedFrom:: [[flossverse]]
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:flossverse:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f0b772884468e43b119c00ab276d88d527174035e84bc51fa20552bc6ce4aded"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[jones2008trust]]",
-      "resolved": "urn:visionflow:linked:jones2008trust",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - The Flossverse is a research and product framework for an open-source social immersive space that combines free/libre open-source software (FLOSS), trust-minimised value transfer via Bitcoin and the Lightning Network, generative AI, and open XR standards to enable economic participation in virtual and mixed-reality environments. The project was developed to explore how the convergence of decentralised identity, programmable money, AI-driven content creation, and collaborative mixed reality could create inclusive platforms accessible to creators in emerging markets who are currently excluded by proprietary gatekeepers.
+  - The Flossverse is a research and product framework for an open-source social immersive space that combines free/libre open-source software (FLOSS), trust-minimised value transfer via Bitcoin and the Lightning Network, generative AI, and open XR standards to enable economic participation in virtual and mixed-reality environments. The project was developed to explore how the convergence of decentralised identity, programmable money, AI-driven content creation, and collaborative mixed reality [private] create inclusive platforms accessible to creators in emerging markets who are currently excluded by proprietary gatekeepers.
   - The framework targets B2B, B2C, and creator-to-consumer (C2C/social commerce) models, aiming for a minimum viable product capable of trustless value exchange within a social VR context. It draws on the observation that traditional village-scale trust relationships cannot scale to a global internet and that decentralised cryptographic primitives, combined with AI actors that seem subjectively real, require new governance and economic models.
 
 - ### Semantic Classification

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Robot Navigation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

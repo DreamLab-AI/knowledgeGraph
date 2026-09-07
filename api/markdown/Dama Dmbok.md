@@ -1,37 +1,118 @@
----
-public: true
----
-
-# Dama Dmbok
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:dama-dmbok", "@type":"Page", "title":"Dama Dmbok", "vc:slug":"dama-dmbok", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:dama-dmbok",
+  "@type": "Page",
+  "title": "Dama Dmbok",
+  "vc:slug": "dama-dmbok",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:dama-dmbok",
-  "@type":"Class",
-  "label":"Dama Dmbok",
-  "definition":"The DAMA Data Management Body of Knowledge (DAMA-DMBOK) is a reference framework published by DAMA International that codifies the principles, functions, and best practices of enterprise data management. It organises the discipline into knowledge areas such as data governance, data quality, metadata, master data, and data architecture, arranged around a central data governance function. DAMA-DMBOK provides a common vocabulary and standard structure for establishing and assessing data management programmes.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-management","label":"Data Management"}],
-  "relations":{
-    "standardizedBy":[{"@id":"urn:ngm:class:best-practice","label":"Best Practice"}],
-    "hasPart":[{"@id":"urn:ngm:class:data-governance","label":"Data Governance"},{"@id":"urn:ngm:class:data-quality","label":"Data Quality"},{"@id":"urn:ngm:class:metadata-management","label":"Metadata Management"}],
-    "supports":[{"@id":"urn:ngm:class:master-data-management","label":"Master Data Management"},{"@id":"urn:ngm:class:data-stewardship","label":"Data Stewardship"}],
-    "enables":[{"@id":"urn:ngm:class:data-architecture","label":"Data Architecture"},{"@id":"urn:ngm:class:compliance","label":"Compliance"}],
-    "requires":[{"@id":"urn:ngm:class:governance-framework","label":"Governance Framework"}],
-    "uses":[{"@id":"urn:ngm:class:data-catalog","label":"Data Catalog"},{"@id":"urn:ngm:class:data-lineage","label":"Data Lineage"}],
-    "implements":[{"@id":"urn:ngm:class:knowledge-management","label":"Knowledge Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:data-security","label":"Data Security"}],
-    "relatedTo":[{"@id":"urn:ngm:class:data-infrastructure","label":"Data Infrastructure"},{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dama-dmbok",
+  "@type": "Class",
+  "label": "Dama Dmbok",
+  "definition": "The DAMA Data Management Body of Knowledge (DAMA-DMBOK) is a reference framework published by DAMA International that codifies the principles, functions, and best practices of enterprise data management. It organises the discipline into knowledge areas such as data governance, data quality, metadata, master data, and data architecture, arranged around a central data governance function. DAMA-DMBOK provides a common vocabulary and standard structure for establishing and assessing data management programmes.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:best-practice",
+        "label": "Best Practice"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-stewardship",
+        "label": "Data Stewardship"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-infrastructure",
+        "label": "Data Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

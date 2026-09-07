@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Imaging Parameters
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,15 +50,30 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:camera", "label": "Camera"}
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:camera-parameters", "label": "Camera Parameters"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+      {
+        "@id": "urn:ngm:class:camera-parameters",
+        "label": "Camera Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ]
   },
   "quality": 0.35,
@@ -74,32 +84,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:imaging-parameters:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0cd495a4bda28dc20de04bcb01cd3926fbcc4963da3eddb3a24e8ec0b0b59667"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Imaging Parameters are the configurable settings—such as exposure time, aperture, ISO, focal length, white balance, and sensor gain—that govern how a camera or depth sensor captures light and produces a digital image. In spatial computing pipelines, correct imaging parameter calibration is essential for photogrammetric reconstruction, volumetric capture, and computer-vision model accuracy across varying lighting conditions.

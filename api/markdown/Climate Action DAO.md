@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Climate Action DAO
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -228,157 +223,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:climate-action-dao:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f666888f5aba00e1d85678b4678ea8f70daf1c4331fb0b652aff6fce0d9d2ef4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CarbonCreditRetirement]]",
-      "resolved": "urn:visionflow:linked:carbon-credit-retirement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Celo Climate Collective]]",
-      "resolved": "urn:visionflow:linked:celo-climate-collective",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ClimateFinance]]",
-      "resolved": "urn:visionflow:linked:climate-finance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ClimateProjectFunding]]",
-      "resolved": "urn:visionflow:linked:climate-project-funding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CollectiveGovernance]]",
-      "resolved": "urn:visionflow:linked:collective-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CommunityCoordination]]",
-      "resolved": "urn:visionflow:linked:community-coordination",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CommunityParticipation]]",
-      "resolved": "urn:visionflow:linked:community-participation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DAOGovernance]]",
-      "resolved": "urn:visionflow:linked:daogovernance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EnvironmentalDomain]]",
-      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Gitcoin]]",
-      "resolved": "urn:visionflow:linked:gitcoin",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ImpactInvestment]]",
-      "resolved": "urn:visionflow:linked:impact-investment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ImpactMetrics]]",
-      "resolved": "urn:visionflow:linked:impact-metrics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ImpactVerification]]",
-      "resolved": "urn:visionflow:linked:impact-verification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[KlimaDAO]]",
-      "resolved": "urn:visionflow:linked:klima-dao",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ReFi DAO]]",
-      "resolved": "urn:visionflow:linked:re-fi-dao",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regen Network]]",
-      "resolved": "urn:visionflow:linked:regen-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RegenerativeFinance]]",
-      "resolved": "urn:visionflow:linked:regenerative-finance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[VotingMechanism]]",
-      "resolved": "urn:visionflow:linked:voting-mechanism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DecentralizedAutonomousOrganization]]",
-      "resolved": "urn:visionflow:owl:class:decentralized-autonomous-organization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GovernanceToken]]",
-      "resolved": "urn:visionflow:owl:class:governance-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ProposalSystem]]",
-      "resolved": "urn:visionflow:owl:class:proposal-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SmartContracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomics]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TransparentGovernance]]",
-      "resolved": "urn:visionflow:owl:class:transparent-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TreasuryManagement]]",
-      "resolved": "urn:visionflow:owl:class:treasury-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A decentralized autonomous organization (DAO) governed by blockchain-based smart contracts and token-weighted voting that coordinates collective action toward climate change mitigation, adaptation, and environmental sustainability through transparent, democratic mechanisms for funding climate projects, purchasing and retiring carbon credits, managing regenerative finance (ReFi) portfolios, and distributing climate impact rewards, with notable examples including KlimaDAO (carbon market liquidity), Gitcoin Climate Solutions ($10M+ distributed), and Regen Network (ecological data marketplace).
 
@@ -569,17 +413,17 @@ public: true
 
   **Hybrid DAO-NGO Structures** emerge as compromise between blockchain transparency and regulatory compliance. Organizations like **Regen Foundation** (DAO + Swiss foundation hybrid) and **Gitcoin Holdings** (US for-profit entity + DAO coordination) demonstrate viable models: off-chain legal entities handle fiat banking, employment contracts, and regulatory filings, whilst on-chain DAOs manage community governance, treasury allocation, and impact verification. This separation allows regulatory compliance whilst preserving decentralized decision-making.
 
-  **Real-World Asset (RWA) Tokenization** expands climate DAO scope beyond digital carbon credits to physical assets: reforestation land rights, renewable energy installations, conservation easements. **Centrifuge** and **Goldfinch** pioneered RWA lending markets; climate DAOs could similarly tokenize forestry projects, enabling fractional ownership and automated revenue distribution. However, legal challenges persist: property rights recognition, bankruptcy procedures, jurisdictional enforcement of smart contracts.
+  **Real-World Asset (RWA) Tokenization** expands climate DAO scope beyond digital carbon credits to physical assets: reforestation land rights, renewable energy installations, conservation easements. **Centrifuge** and **Goldfinch** pioneered RWA lending markets; climate DAOs [private] similarly tokenize forestry projects, enabling fractional ownership and automated revenue distribution. However, legal challenges persist: property rights recognition, bankruptcy procedures, jurisdictional enforcement of smart contracts.
 
   **Impact Measurement and Verification** remains critical bottleneck. Current carbon credit systems rely on manual audits (annual site visits, paper documentation), vulnerable to fraud and delays. **Hypercerts protocol** proposes impact certificates encoding verifiable outcomes (tonnes CO₂e sequestered, hectares reforested) with retroactive funding mechanisms: projects deliver impact first, DAOs reward afterwards based on verified results. This flips traditional grant-making (upfront funding, uncertain outcomes) to output-based financing, reducing moral hazard.
 
-  **Interoperability with Traditional Climate Finance** unlocks scaling potential. **World Bank Climate Warehouse** (blockchain platform for carbon credit tracking) demonstrates institutional adoption, whilst **BIS Innovation Hub Project Genesis** explores tokenized green bonds. Climate DAOs could serve as on-chain liquidity providers for institutional carbon buyers, bridging DeFi efficiency with traditional finance capital depth.
+  **Interoperability with Traditional Climate Finance** unlocks scaling potential. **World Bank Climate Warehouse** (blockchain platform for carbon credit tracking) demonstrates institutional adoption, whilst **BIS Innovation Hub Project Genesis** explores tokenized green bonds. Climate DAOs [private] serve as on-chain liquidity providers for institutional carbon buyers, bridging DeFi efficiency with traditional finance capital depth.
 
   ### Challenges and Open Questions
 
   **Governance Centralization**: Despite decentralized rhetoric, most DAOs exhibit oligarchic control—KlimaDAO's top 10 wallets controlled 40% of supply (2024), Gitcoin's GTC concentrated among early insiders. Solutions include **progressive decentralization** (gradual token distribution over years), **reputation-weighted voting** (combine holdings with expertise), and **rage-quit mechanisms** (minorities exit with proportional treasury share).
 
-  **Carbon Credit Quality**: Blockchain transparency doesn't guarantee environmental integrity—tokenized carbon credits inherit quality of underlying offsets. DAOs must implement rigorous due diligence, excluding projects with high reversal risk (forestry in politically unstable regions), non-additional baselines (renewable energy in countries with zero fossil fuel alternatives), or social harms (forced displacement for conservation). **On-chain reputation systems** (Verra project ratings, community reviews) could crowdsource quality assessment.
+  **Carbon Credit Quality**: Blockchain transparency doesn't guarantee environmental integrity—tokenized carbon credits inherit quality of underlying offsets. DAOs must implement rigorous due diligence, excluding projects with high reversal risk (forestry in politically unstable regions), non-additional baselines (renewable energy in countries with zero fossil fuel alternatives), or social harms (forced displacement for conservation). **On-chain reputation systems** (Verra project ratings, community reviews) [private] crowdsource quality assessment.
 
   **Regulatory Arbitrage Risks**: DAOs register in permissive jurisdictions (Cayman, Panama, Marshall Islands) to avoid securities regulation, potentially enabling money laundering or tax evasion under climate impact veneer. **Know Your Customer (KYC)** requirements conflict with blockchain pseudonymity; climate DAOs must balance privacy rights with anti-financial crime compliance. Expect regulatory crackdown on unregistered token offerings marketed as climate investments.
 

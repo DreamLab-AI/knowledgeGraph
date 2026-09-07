@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -165,7 +160,7 @@ public: true
 - ### Relationships
   - Decentralisation is the foundational concept behind [[Blockchain Governance]] and [[Decentralized Governance]], enabling [[Censorship Resistance]] by removing the ability of any single party to unilaterally alter records or deny service. It provides the structural basis for [[Decentralised Finance]] and [[Decentralised Identity]], and is implemented at the network layer through [[Peer-to-Peer Network]] topologies and [[Distributed Ledger Technology]].
 - ### Content
-  - Decentralisation as an architectural principle gained widespread attention with the publication of the Bitcoin whitepaper in 2008, which demonstrated that a trustless, permissionless payment system could operate without a central clearing authority. The core insight is that Byzantine fault tolerance and economic incentive alignment can substitute for institutional trust when nodes are geographically and jurisdictionally distributed. This framework has since been generalised to smart contract platforms, decentralised storage, and autonomous organisations.
+  - Decentralisation as an architectural principle gained widespread attention with the publication of the Bitcoin whitepaper in 2008, which demonstrated that a trustless, permissionless payment system [private] operate without a central clearing authority. The core insight is that Byzantine fault tolerance and economic incentive alignment can substitute for institutional trust when nodes are geographically and jurisdictionally distributed. This framework has since been generalised to smart contract platforms, decentralised storage, and autonomous organisations.
 
   - The degree of decentralisation is not binary. Nakamoto decentralisation measures the minimum fraction of network participants required to collude and compromise the system. In practice, mining pool concentration, client software monoculture, and infrastructure dependencies on cloud providers introduce hidden centralisation. Critics argue that many systems marketed as decentralised exhibit significant practical centralisation at the infrastructure or governance layer, prompting research into more robust decentralisation metrics.
 

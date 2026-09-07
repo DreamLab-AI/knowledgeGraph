@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dialogue State Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dialogue-state-tracking:7c4cf1758b11",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d4416c7e00f87e5b2f29caacb4fcdc917b0c1fed51fb2e4d3b4e90de5e1b810d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Conversational AI]]",
-      "resolved": "urn:visionflow:linked:conversational-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Dialogue System]]",
-      "resolved": "urn:visionflow:linked:dialogue-system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Dialogue State Tracking (DST) is the core inference module within [[Task-Oriented Dialogue Systems]] responsible for maintaining a structured, continuously updated representation of a user's goals, intentions, and contextual constraints throughout a multi-turn conversation. At each dialogue turn, DST ingests the system's previous response and the user's latest utterance — processed through [[Natural Language Understanding]] and [[Intent Recognition]] — and updates a formal belief state, conventionally expressed as a set of (domain, slot, value) triples that encode what the user wants and what constraints they have placed upon it. For example, in a hotel-booking dialogue, the belief state might contain {hotel.area="centre", hotel.price="cheap", hotel.parking="yes"} after three user turns. DST must handle phenomena that make this tracking non-trivial: implicit corrections (the user modifying earlier constraints without explicitly flagging the change), coreference to entities mentioned earlier in the conversation, carry-over of unfilled slots across domains (e.g., the date mentioned during a restaurant booking being implicitly inherited into a subsequent taxi booking), and outright contradictions caused by automatic speech recognition errors in voice-first interfaces. Architecturally, DST methods range from ontology-constrained classifiers that select slot values from a predefined candidate list, through open-vocabulary generative models that predict arbitrary string values conditioned on dialogue history, to [[Large Language Models]] operating via zero-shot function calling or in-context learning that treat dialogue state inference as a [[Named Entity Recognition]] or question-answering task over the conversational context window. The belief state output by the DST module is consumed downstream by the [[Dialogue Policy]] component — which decides what the system should do next — and, in pipeline architectures, by the database query layer that retrieves relevant entities (hotels, restaurants, trains) before [[Natural Language Generation]] produces the system's response. Modern DST research is dominated by the [[MultiWOZ]] benchmark, a large-scale multi-domain dataset covering seven domains (hotel, restaurant, taxi, train, attraction, hospital, police), with Joint Goal Accuracy (JGA) — requiring all slot-value predictions to be exactly correct simultaneously across all active domains — as the standard evaluation metric. State-of-the-art systems based on [[Large Language Models]] with in-context prompting have boosted JGA on MultiWOZ 2.1 to above 55% as of 2025, representing a dramatic improvement over the 25-30% achieved by early neural systems in 2019.

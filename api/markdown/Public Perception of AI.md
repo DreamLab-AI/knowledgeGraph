@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Public Perception of AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "public-perception-of-ai",
   "title": "Public Perception of AI",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Job displacement sentiment", "YouGov"],
+  "vc:outboundWikilinks": [
+    "Job displacement sentiment",
+    "YouGov"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:ai-risks", "label": "AI Risks"}, {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

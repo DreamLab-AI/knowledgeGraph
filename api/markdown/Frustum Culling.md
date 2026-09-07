@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Frustum Culling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:frustum-culling",
   "@type": "Class",
   "label": "Frustum Culling",
-  "definition": "Frustum culling is a real-time rendering visibility optimisation technique that discards scene objects whose bounding volumes lie entirely outside the camera's view frustum—the truncated pyramid defined by the near and far clipping planes and the four side planes corresponding to the viewport edges. By testing object bounding spheres or axis-aligned bounding boxes against the six frustum planes before submitting draw calls, the GPU receives only geometry that could potentially contribute to the final image, dramatically reducing vertex processing and rasterisation work. It is a foundational stage in all production scene management pipelines.",
+  "definition": "Frustum culling is a real-time rendering visibility optimisation technique that discards scene objects whose bounding volumes lie entirely outside the camera's view frustum—the truncated pyramid defined by the near and far clipping planes and the four side planes corresponding to the viewport edges. By testing object bounding spheres or axis-aligned bounding boxes against the six frustum planes before submitting draw calls, the GPU receives only geometry that [private] potentially contribute to the final image, dramatically reducing vertex processing and rasterisation work. It is a foundational stage in all production scene management pipelines.",
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [

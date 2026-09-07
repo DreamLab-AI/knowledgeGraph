@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Noise Function Library
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:noise-function-library:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:775e8f19d7ccb93cf536d8598f1e5fe2cc362a8b7c9fb6d14e12a7c78ad78ae0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Graphics Library]]",
-      "resolved": "urn:visionflow:owl:class:graphics-library",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Procedural Content]]",
-      "resolved": "urn:visionflow:owl:class:procedural-content",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A software library providing coherent noise generation algorithms like Perlin, simplex, value, and Voronoi noise for procedural content generation in computer graphics, enabling the creation of natural-looking textures, terrain, and visual effects without manual authoring.

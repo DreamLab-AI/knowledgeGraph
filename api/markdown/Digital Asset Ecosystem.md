@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Asset Ecosystem
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -221,72 +216,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-asset-ecosystem:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:82fcc4e5f4fb5aac912c8c8084df38bb4f0488edb555fd6077f725c7bafb9696"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Exchange Platforms]]",
-      "resolved": "urn:visionflow:linked:exchange-platforms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Wallet Infrastructure]]",
-      "resolved": "urn:visionflow:linked:wallet-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asset Tokenisation]]",
-      "resolved": "urn:visionflow:owl:class:asset-tokenization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Network]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi Services]]",
-      "resolved": "urn:visionflow:owl:class:de-fi-services",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Economy]]",
-      "resolved": "urn:visionflow:owl:class:digital-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Ownership]]",
-      "resolved": "urn:visionflow:owl:class:digital-ownership",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The interconnected network of platforms, protocols, services, and participants that collectively enable the creation, storage, exchange, and utilization of blockchain-based digital assets including cryptocurrencies, tokens, NFTs, and tokenized real-world assets across decentralized and centralized infrastructure.

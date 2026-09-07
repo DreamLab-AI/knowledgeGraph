@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Momentum Contrast
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:momentum-contrast:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7bffa41eb28fefc3b9667e62aaa95fa7f8b42ee730bc58f03bedcd2d9fb9a267"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pedersen Commitment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -161,41 +156,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pedersen-commitment:ca23ea684f43",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c3d57a51ea2305882bfe0c69b4d9ee256a8d4b650ee1404e1e5ff5d6e7aa685f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Elliptic Curve Cryptography]]",
-      "resolved": "urn:visionflow:linked:elliptic-curve-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Commitment]]",
-      "resolved": "urn:visionflow:linked:cryptographic-commitment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

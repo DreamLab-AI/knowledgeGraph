@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Tourism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,37 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-tourism:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dd7f6c90cb1b124090598e0689dd3fa83655bd82180697c64f926bdedf1cd7f8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tourism Industry]]",
-      "resolved": "urn:visionflow:owl:class:tourism-industry",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The use of VR, AR, and metaverse technologies to explore travel destinations remotely, enabling users to experience locations, hotels, and attractions virtually before booking or as an alternative to physical travel, particularly for those with physical, economic, or accessibility constraints.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Low-Latency Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "Low-latency computing is an architectural discipline concerned with minimising the end-to-end delay between a request and its response, typically targeting sub-millisecond to single-digit-millisecond budgets. It combines hardware proximity, kernel-bypass networking, lock-free data structures, cache-aware memory layouts, and predictable scheduling to eliminate sources of jitter. Application domains include high-frequency trading, real-time multiplayer rendering, industrial control, telecommunications signalling, and interactive AI inference, where tail latency rather than average throughput is the governing performance metric.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ]
   },
   "quality": 0.8

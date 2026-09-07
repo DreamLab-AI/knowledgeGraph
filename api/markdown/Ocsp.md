@@ -1,35 +1,103 @@
----
-public: true
----
-
-# Ocsp
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:ocsp", "@type":"Page", "title":"Ocsp", "vc:slug":"ocsp", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:ocsp",
+  "@type": "Page",
+  "title": "Ocsp",
+  "vc:slug": "ocsp",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:ocsp",
-  "@type":"Class",
-  "label":"Ocsp",
-  "definition":"The Online Certificate Status Protocol (OCSP) is an internet protocol for obtaining the real-time revocation status of a digital certificate from a responder operated by or on behalf of the issuing certificate authority. A client queries the responder for a specific certificate and receives a signed reply stating whether it is good, revoked, or unknown. OCSP offers a more immediate and bandwidth-efficient alternative to downloading full certificate revocation lists, and OCSP stapling lets servers present a recent status to avoid client-side lookups.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:certificate-revocation","label":"Certificate Revocation"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:public-key-infrastructure","label":"Public Key Infrastructure"},{"@id":"urn:ngm:class:public-key-cryptography","label":"Public Key Cryptography"}],
-    "requires":[{"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}],
-    "supports":[{"@id":"urn:ngm:class:tls","label":"Transport Layer Security"},{"@id":"urn:ngm:class:trust-model","label":"Trust Model"}],
-    "enables":[{"@id":"urn:ngm:class:mutual-tls","label":"Mutual TLS"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:certificate-revocation-list","label":"Certificate Revocation List"}],
-    "implements":[{"@id":"urn:ngm:class:certificate-revocation","label":"Certificate Revocation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:online-certificate-status-protocol","label":"Online Certificate Status Protocol"},{"@id":"urn:ngm:class:security","label":"Security"},{"@id":"urn:ngm:class:privacy","label":"Privacy"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ocsp",
+  "@type": "Class",
+  "label": "Ocsp",
+  "definition": "The Online Certificate Status Protocol (OCSP) is an internet protocol for obtaining the real-time revocation status of a digital certificate from a responder operated by or on behalf of the issuing certificate authority. A client queries the responder for a specific certificate and receives a signed reply stating whether it is good, revoked, or unknown. OCSP offers a more immediate and bandwidth-efficient alternative to downloading full certificate revocation lists, and OCSP stapling lets servers present a recent status to avoid client-side lookups.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:certificate-revocation",
+      "label": "Certificate Revocation"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "Transport Layer Security"
+      },
+      {
+        "@id": "urn:ngm:class:trust-model",
+        "label": "Trust Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:certificate-revocation",
+        "label": "Certificate Revocation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:online-certificate-status-protocol",
+        "label": "Online Certificate Status Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:online-certificate-status-protocol","label":"Online Certificate Status Protocol"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:online-certificate-status-protocol",
+      "label": "Online Certificate Status Protocol"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

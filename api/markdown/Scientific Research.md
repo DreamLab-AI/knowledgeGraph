@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scientific Research
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Scientific research is the systematic investigation of phenomena through observation, hypothesis, experiment, and analysis to produce reproducible knowledge. As an application domain for AI, it spans literature review, data analysis, modelling, and experiment automation. Modern AI systems and autonomous agents increasingly support researchers across the discovery, verification, and dissemination stages.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-companies", "label": "AI Companies"},
-      {"@id": "urn:ngm:class:agents", "label": "Agents"}
+      {
+        "@id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      }
     ]
   },
   "quality": 0.72

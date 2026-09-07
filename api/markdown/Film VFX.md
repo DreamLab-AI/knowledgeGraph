@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Film VFX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "Film VFX (Visual Effects) encompasses the full suite of techniques used to create, augment, or manipulate imagery in cinematic productions that cannot be practically achieved through conventional photography, including computer-generated imagery (CGI), digital compositing, motion capture-driven character animation, photorealistic simulation of natural phenomena, and digital environment creation. Modern film VFX pipelines integrate real-time rendering engines, deep learning-based tools for rotoscoping, denoising, and face replacement, and virtual production stages using LED volume displays to blend physical and digital environments in-camera rather than in post-production. VFX is distinct from practical effects (pyrotechnics, prosthetics) and from colour grading, though all three coexist within the broader post-production discipline.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:visual-effects", "label": "Visual Effects"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:visual-effects",
+      "label": "Visual Effects"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:vfx-tools", "label": "VFX Tools"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
-      {"@id": "urn:ngm:class:film-production", "label": "Film Production"}
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:vfx-tools",
+        "label": "VFX Tools"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-content", "label": "Generative Content"}
+      {
+        "@id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      }
     ]
   },
   "quality": 0.8

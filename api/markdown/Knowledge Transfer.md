@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Knowledge Transfer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Knowledge transfer is the movement of expertise, skills and understanding from one person, team or system to another. In collaborative work it occurs through mentoring, shared practice and direct interaction, allowing tacit know-how to spread across an organisation. It is a key outcome of practices such as remote pair programming.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:remote-pair-programming", "label": "Remote Pair Programming"}
+      {
+        "@id": "urn:ngm:class:remote-pair-programming",
+        "label": "Remote Pair Programming"
+      }
     ]
   },
   "quality": 0.72

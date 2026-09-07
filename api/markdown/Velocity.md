@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Velocity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,36 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
     ]
   },
   "provenance": {
@@ -81,37 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:velocity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b8f3dfdc86320f8fdfefde117fa1e1b2f7cf661fdb624e325cb66466108948fe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Velocity** is the vector quantity expressing rate of change of position with respect to time (v = dx/dt). In robotics and autonomous systems, it is a fundamental parameter governing motion planning, collision avoidance, and control. Algorithms such as Velocity Obstacle (VO) and Reciprocal Velocity Obstacle (RVO) are built directly upon velocity representations to enable safe multi-agent navigation.

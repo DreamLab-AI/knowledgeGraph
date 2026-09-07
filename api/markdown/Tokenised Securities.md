@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tokenised Securities
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Tokenised securities are regulated financial instruments such as equities, bonds, or fund units issued and transferred as blockchain tokens that carry the same legal rights as their traditional counterparts. They embed compliance logic, including transfer restrictions and investor accreditation checks, directly into smart contracts so that securities laws are enforced programmatically at the point of transaction.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}, {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
+    ]
   },
   "quality": 0.72
 }

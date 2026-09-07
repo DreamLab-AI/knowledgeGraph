@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Autonomous Driving Perception
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,25 +7,82 @@ public: true
   "title": "Autonomous Driving Perception",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:sensor-fusion", "vc:label": "Sensor Fusion"},
-    {"@id": "urn:visionflow:owl:class:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:owl:class:lidar", "vc:label": "Lidar"},
-    {"@id": "urn:visionflow:owl:class:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:owl:class:autonomous-driving", "vc:label": "Autonomous Driving"},
-    {"@id": "urn:visionflow:owl:class:object-detection", "vc:label": "Object Detection"},
-    {"@id": "urn:visionflow:owl:class:semantic-segmentation", "vc:label": "Semantic Segmentation"},
-    {"@id": "urn:visionflow:owl:class:point-cloud", "vc:label": "Point Cloud"},
-    {"@id": "urn:visionflow:owl:class:depth-estimation", "vc:label": "Depth Estimation"},
-    {"@id": "urn:visionflow:owl:class:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:owl:class:simultaneous-localisation-and-mapping", "vc:label": "Simultaneous Localisation and Mapping"},
-    {"@id": "urn:visionflow:owl:class:object-tracking", "vc:label": "Object Tracking"},
-    {"@id": "urn:visionflow:owl:class:bird-eye-view", "vc:label": "Bird's Eye View"},
-    {"@id": "urn:visionflow:owl:class:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:owl:class:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:visionflow:owl:class:functional-safety", "vc:label": "Functional Safety"},
-    {"@id": "urn:visionflow:owl:class:motion-planning", "vc:label": "Motion Planning"},
-    {"@id": "urn:visionflow:owl:class:hd-maps", "vc:label": "HD Maps"}
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lidar",
+      "vc:label": "Lidar"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-driving",
+      "vc:label": "Autonomous Driving"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:object-detection",
+      "vc:label": "Object Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-segmentation",
+      "vc:label": "Semantic Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:point-cloud",
+      "vc:label": "Point Cloud"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:depth-estimation",
+      "vc:label": "Depth Estimation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:simultaneous-localisation-and-mapping",
+      "vc:label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:object-tracking",
+      "vc:label": "Object Tracking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bird-eye-view",
+      "vc:label": "Bird's Eye View"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:functional-safety",
+      "vc:label": "Functional Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hd-maps",
+      "vc:label": "HD Maps"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -45,37 +97,102 @@ public: true
   "definition": "The subsystem of an autonomous vehicle responsible for interpreting sensor data to construct a structured understanding of the vehicle's immediate environment, including the detection, classification, and tracking of objects, lane geometry, road surfaces, traffic signage, and dynamic actors. Autonomous driving perception fuses inputs from cameras, LiDAR, radar, and ultrasonic sensors to produce a real-time scene representation sufficient for safe navigation decisions.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:perception-system", "label": "Perception System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:perception-system",
+      "label": "Perception System"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:hd-maps", "label": "HD Maps"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:hd-maps",
+        "label": "HD Maps"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:object-tracking", "label": "Object Tracking"},
-      {"@id": "urn:ngm:class:bird-eye-view", "label": "Bird's Eye View"}
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:object-tracking",
+        "label": "Object Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:bird-eye-view",
+        "label": "Bird's Eye View"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ]
   },
   "quality": 0.85
@@ -185,13 +302,13 @@ public: true
 
   ## About
 
-  Autonomous driving perception is the technical discipline that bridges raw sensor physics and the high-level scene representations required for safe vehicle navigation. The field emerged from classical [[Computer Vision]] and [[Robotics]] in the 1980s, when the DARPA Autonomous Land Vehicle programme and Carnegie Mellon's ALVINN neural-network steering controller (Pomerleau, 1989) demonstrated that [[Neural Network]] models could learn sensorimotor associations from camera images entirely from [[Training Data]] without hand-coded feature detectors. These pioneering systems were fragile, operating only in highly constrained environments at low speeds, but they established the paradigm of learned perceptual policies that would dominate the field three decades later. The ALVINN architecture — a single 3-layer network mapping 30×32 pixel camera images to 30 discrete steering commands — was the direct intellectual ancestor of the end-to-end systems shipped by [[Autonomous Driving]] companies such as Tesla and Wayve in 2024–2026.
+  Autonomous driving perception is the technical discipline that bridges raw sensor physics and the high-level scene representations required for safe vehicle navigation. The field emerged from classical [[Computer Vision]] and [[Robotics]] in the 1980s, when the DARPA Autonomous Land Vehicle programme and Carnegie Mellon's ALVINN neural-network steering controller (Pomerleau, 1989) demonstrated that [[Neural Network]] models [private] learn sensorimotor associations from camera images entirely from [[Training Data]] without hand-coded feature detectors. These pioneering systems were fragile, operating only in highly constrained environments at low speeds, but they established the paradigm of learned perceptual policies that would dominate the field three decades later. The ALVINN architecture — a single 3-layer network mapping 30×32 pixel camera images to 30 discrete steering commands — was the direct intellectual ancestor of the end-to-end systems shipped by [[Autonomous Driving]] companies such as Tesla and Wayve in 2024–2026.
 
-  The DARPA Grand Challenge (2004–2005) and Urban Challenge (2007) catalysed a generation of academic and industry teams combining [[GNSS]], laser range finders, probabilistic localisation (simultaneously developed as [[Simultaneous Localisation and Mapping]] algorithms), and early [[Machine Learning]] for obstacle detection. Stanford's Stanley and CMU's Boss demonstrated that GPS-guided planning augmented by obstacle-avoidance perception could navigate tens of kilometres of unprepared terrain and structured urban streets respectively. These competitions established the modular sense-plan-act pipeline — a separate [[Autonomous Driving Perception]] module produces structured scene descriptions, a [[Motion Planning]] module selects safe manoeuvres, and a [[Model Predictive Control]] or PID controller executes them — an architecture that remained dominant until approximately 2022 and that is still used by Waymo, Mobileye, and most ADAS suppliers.
+  The DARPA Grand Challenge (2004–2005) and Urban Challenge (2007) catalysed a generation of academic and industry teams combining [[GNSS]], laser range finders, probabilistic localisation (simultaneously developed as [[Simultaneous Localisation and Mapping]] algorithms), and early [[Machine Learning]] for obstacle detection. Stanford's Stanley and CMU's Boss demonstrated that GPS-guided planning augmented by obstacle-avoidance perception [private] navigate tens of kilometres of unprepared terrain and structured urban streets respectively. These competitions established the modular sense-plan-act pipeline — a separate [[Autonomous Driving Perception]] module produces structured scene descriptions, a [[Motion Planning]] module selects safe manoeuvres, and a [[Model Predictive Control]] or PID controller executes them — an architecture that remained dominant until approximately 2022 and that is still used by Waymo, Mobileye, and most ADAS suppliers.
 
-  The [[Deep Learning]] revolution transformed AV perception dramatically after 2012. The ImageNet moment (Krizhevsky, Sutskever, Hinton 2012) demonstrated that deep [[Convolutional Neural Network]] architectures could surpass human-level accuracy on large-scale [[Image Classification]], and within two years research groups were applying CNNs to pedestrian [[Object Detection]], lane marking [[Semantic Segmentation]], and traffic sign recognition with similar gains. The KITTI benchmark (Geiger et al., Karlsruhe Institute of Technology, 2012) established standardised evaluation protocols for stereo depth estimation, 3D object detection, tracking, and segmentation that enabled rapid progress through open comparison. By 2017–2018, the combination of large annotated driving datasets (KITTI, nuScenes, Waymo Open Dataset), high-performance rotating [[Lidar]] sensors (Velodyne HDL-64E at $75,000/unit in 2016, falling to sub-$1,000 for solid-state units by 2024), and [[GPU Compute]]-accelerated training had produced [[Autonomous Driving Perception]] systems competitive with human-level performance in standard driving scenarios. Today, perception remains the most research-intensive component of the AV stack, with thousands of annual publications advancing detection accuracy, cross-modal [[Sensor Fusion]] architectures, robustness to adverse weather conditions, and uncertainty quantification for [[Functional Safety]].
+  The [[Deep Learning]] revolution transformed AV perception dramatically after 2012. The ImageNet moment (Krizhevsky, Sutskever, Hinton 2012) demonstrated that deep [[Convolutional Neural Network]] architectures [private] surpass human-level accuracy on large-scale [[Image Classification]], and within two years research groups were applying CNNs to pedestrian [[Object Detection]], lane marking [[Semantic Segmentation]], and traffic sign recognition with similar gains. The KITTI benchmark (Geiger et al., Karlsruhe Institute of Technology, 2012) established standardised evaluation protocols for stereo depth estimation, 3D object detection, tracking, and segmentation that enabled rapid progress through open comparison. By 2017–2018, the combination of large annotated driving datasets (KITTI, nuScenes, Waymo Open Dataset), high-performance rotating [[Lidar]] sensors (Velodyne HDL-64E at $75,000/unit in 2016, falling to sub-$1,000 for solid-state units by 2024), and [[GPU Compute]]-accelerated training had produced [[Autonomous Driving Perception]] systems competitive with human-level performance in standard driving scenarios. Today, perception remains the most research-intensive component of the AV stack, with thousands of annual publications advancing detection accuracy, cross-modal [[Sensor Fusion]] architectures, robustness to adverse weather conditions, and uncertainty quantification for [[Functional Safety]].
 
-  The transition from modular 2D camera-based perception to unified 3D multi-modal representations was driven by two parallel developments: the maturation of automotive [[Lidar]] (falling from $75,000 to below $500 per unit between 2016 and 2024 for solid-state designs such as Luminar Iris and Innoviz Pro), and the discovery that [[Transformer Architecture]] cross-attention layers could fuse camera and LiDAR features in a shared Bird's Eye View (BEV) representation space without alignment loss. The BEV paradigm — projecting all sensor data into a unified ego-centric top-down metric grid — resolved a long-standing problem: 2D camera detections and 3D LiDAR point clouds had previously been fused only at the object-list level (late fusion), discarding complementary information. Feature-level BEV fusion (BEVFusion, MIT CSAIL, 2022) achieves substantially higher accuracy by allowing the network to learn which sensor modality is most reliable for each spatial region and object class. The same BEV representation is directly consumed by [[Motion Planning]] modules as a probabilistic occupancy map, eliminating the need for explicit coordinate transforms between perception and planning stages.
+  The transition from modular 2D camera-based perception to unified 3D multi-modal representations was driven by two parallel developments: the maturation of automotive [[Lidar]] (falling from $75,000 to below $500 per unit between 2016 and 2024 for solid-state designs such as Luminar Iris and Innoviz Pro), and the discovery that [[Transformer Architecture]] cross-attention layers [private] fuse camera and LiDAR features in a shared Bird's Eye View (BEV) representation space without alignment loss. The BEV paradigm — projecting all sensor data into a unified ego-centric top-down metric grid — resolved a long-standing problem: 2D camera detections and 3D LiDAR point clouds had previously been fused only at the object-list level (late fusion), discarding complementary information. Feature-level BEV fusion (BEVFusion, MIT CSAIL, 2022) achieves substantially higher accuracy by allowing the network to learn which sensor modality is most reliable for each spatial region and object class. The same BEV representation is directly consumed by [[Motion Planning]] modules as a probabilistic occupancy map, eliminating the need for explicit coordinate transforms between perception and planning stages.
 
   ## Components / Architecture
 
@@ -277,11 +394,11 @@ public: true
 
   ## Academic Context
 
-  The intellectual heritage of [[Autonomous Driving Perception]] spans classical [[Computer Vision]], probabilistic [[Robotics]], and modern [[Deep Learning]]. The seminal reference architecture for learned [[Point Cloud]] processing is the PointNet series (Qi et al., Stanford, 2017), which demonstrated that [[Deep Learning]] networks could directly process unordered 3D point sets via symmetric functions (max-pooling across points) without voxelisation or handcrafted feature engineering — solving the [[Object Detection]] problem from a purely geometric representation. PointNet++ (2017) introduced hierarchical local neighbourhood grouping, enabling sensitivity to fine-grained geometric structure.
+  The intellectual heritage of [[Autonomous Driving Perception]] spans classical [[Computer Vision]], probabilistic [[Robotics]], and modern [[Deep Learning]]. The seminal reference architecture for learned [[Point Cloud]] processing is the PointNet series (Qi et al., Stanford, 2017), which demonstrated that [[Deep Learning]] networks [private] directly process unordered 3D point sets via symmetric functions (max-pooling across points) without voxelisation or handcrafted feature engineering — solving the [[Object Detection]] problem from a purely geometric representation. PointNet++ (2017) introduced hierarchical local neighbourhood grouping, enabling sensitivity to fine-grained geometric structure.
 
   The subsequent voxelisation-based approaches dominated the [[Lidar]] [[Object Detection]] literature: VoxelNet (Zhou and Tuia, Apple, 2018) introduced end-to-end voxel-based [[Deep Learning]] for 3D object detection from [[Point Cloud]] inputs; SECOND (Yan et al., 2018) applied sparse 3D [[Convolutional Neural Network]] via hash-based indexing to make VoxelNet tractable at automotive inference speeds; PointPillars (Lang et al., nuTonomy/Motional, 2019) further simplified the representation to 2D columnar pillars enabling a standard 2D [[Convolutional Neural Network]] processing path at 62 Hz on a single GPU — this speed made PointPillars the backbone of choice for production [[Autonomous Driving Perception]] stacks requiring high frame rates. CenterPoint (Yin et al., UT Austin, 2021) reformulated 3D [[Object Detection]] as a heatmap center-point detection task using PointPillars features, achieving rotation-invariant detections with state-of-the-art accuracy on the nuScenes [[Object Detection]] benchmark.
 
-  The BEV paradigm crystallised with Lift-Splat-Shoot (Philion and Fidler, NVIDIA / University of Toronto, 2020), which addressed the fundamental geometry problem of camera-to-3D lifting by predicting per-pixel depth distributions and scattering image features into a 3D frustum before pooling onto a BEV grid. BEVFormer (Li et al., Shanghai AI Lab, 2022) showed that [[Transformer Architecture]] deformable attention could learn the spatial correspondence between camera image regions and BEV grid locations jointly, achieving 56.9% NDS on the nuScenes test set — 9 points above the prior state of the art and matching [[Lidar]]-based baselines using cameras alone. BEVFusion (Liu et al., MIT CSAIL, 2022; and independently Liang et al., Baidu ADLab, 2022) demonstrated that fusing camera and [[Lidar]] features in a shared BEV channel space via simple concatenation outperforms either modality alone on 3D [[Object Detection]] and BEV [[Semantic Segmentation]], establishing the camera-LiDAR-BEV-fusion architecture as the dominant paradigm for production [[Autonomous Driving Perception]].
+  The BEV paradigm crystallised with Lift-Splat-Shoot (Philion and Fidler, NVIDIA / University of Toronto, 2020), which addressed the fundamental geometry problem of camera-to-3D lifting by predicting per-pixel depth distributions and scattering image features into a 3D frustum before pooling onto a BEV grid. BEVFormer (Li et al., Shanghai AI Lab, 2022) showed that [[Transformer Architecture]] deformable attention [private] learn the spatial correspondence between camera image regions and BEV grid locations jointly, achieving 56.9% NDS on the nuScenes test set — 9 points above the prior state of the art and matching [[Lidar]]-based baselines using cameras alone. BEVFusion (Liu et al., MIT CSAIL, 2022; and independently Liang et al., Baidu ADLab, 2022) demonstrated that fusing camera and [[Lidar]] features in a shared BEV channel space via simple concatenation outperforms either modality alone on 3D [[Object Detection]] and BEV [[Semantic Segmentation]], establishing the camera-LiDAR-BEV-fusion architecture as the dominant paradigm for production [[Autonomous Driving Perception]].
 
   UniAD (Hu et al., Shanghai AI Lab, CVPR 2023 Best Paper) extended the BEV perception paradigm to a unified end-to-end [[Deep Learning]] network jointly addressing [[Object Detection]], [[Object Tracking]], trajectory [[Behaviour Prediction]], occupancy prediction, and [[Motion Planning]] — demonstrating that joint optimisation across all tasks substantially improves each individual task compared to modular pipelines. The information fusion perspective on 3D occupancy methods was surveyed comprehensively by Xu et al. (2025), cataloguing 150+ methods across voxel resolution, [[Sensor Fusion]] modality, temporal modelling approach, and computational efficiency.
 
@@ -379,7 +496,7 @@ public: true
 
   **Cooperative Perception via [[V2X Communication]]**
 
-  Vehicle-to-everything [[V2X Communication]] (5G NR-V2X, C-V2X, DSRC) will enable cooperative [[Autonomous Driving Perception]] — sharing raw [[Sensor Fusion]] feature maps, compressed [[Point Cloud]] representations, or [[Object Detection]] lists between vehicles and roadside infrastructure. Cooperative perception dramatically extends effective perception range beyond individual vehicle line-of-sight: vehicles approaching a dangerous blind bend could receive [[Autonomous Driving Perception]] data from a vehicle 200m ahead via V2X, enabling braking well before the hazard becomes visible. The latency requirements are stringent — cooperative [[Autonomous Driving Perception]] requires end-to-end V2X latency below 20ms for safety-critical applications — making [[5G Networks]] C-V2X the preferred technology over earlier DSRC (802.11p).
+  Vehicle-to-everything [[V2X Communication]] (5G NR-V2X, C-V2X, DSRC) will enable cooperative [[Autonomous Driving Perception]] — sharing raw [[Sensor Fusion]] feature maps, compressed [[Point Cloud]] representations, or [[Object Detection]] lists between vehicles and roadside infrastructure. Cooperative perception dramatically extends effective perception range beyond individual vehicle line-of-sight: vehicles approaching a dangerous blind bend [private] receive [[Autonomous Driving Perception]] data from a vehicle 200m ahead via V2X, enabling braking well before the hazard becomes visible. The latency requirements are stringent — cooperative [[Autonomous Driving Perception]] requires end-to-end V2X latency below 20ms for safety-critical applications — making [[5G Networks]] C-V2X the preferred technology over earlier DSRC (802.11p).
 
   **Adversarial Robustness Certification**
 
@@ -512,7 +629,7 @@ public: true
 
   **[[ISO/SAE PAS 21448]] — Safety Of The Intended Functionality (SOTIF, 2022)**
 
-  Addresses safety risks from [[Autonomous Driving Perception]] performance limitations and foreseeable misuse that fall outside [[ISO 26262]]'s electrical/electronic fault model. SOTIF requires explicit cataloguing and mitigation of "triggering conditions" — input scenarios where [[Autonomous Driving Perception]] output error (false detection, missed detection, incorrect classification) could cause an accident even when all hardware is functioning correctly. Examples: [[Object Detection]] of a pedestrian wearing a reflective vest in direct sunlight (camera overexposure); [[Lidar]] [[Point Cloud]] corruption from retroreflective road sign returns; [[Semantic Segmentation]] confusion between a red light and a distant brake light. SOTIF compliance requires [[Autonomous Driving Perception]] to demonstrate quantified performance bounds across the operational design domain rather than only in nominal conditions.
+  Addresses safety risks from [[Autonomous Driving Perception]] performance limitations and foreseeable misuse that fall outside [[ISO 26262]]'s electrical/electronic fault model. SOTIF requires explicit cataloguing and mitigation of "triggering conditions" — input scenarios where [[Autonomous Driving Perception]] output error (false detection, missed detection, incorrect classification) [private] cause an accident even when all hardware is functioning correctly. Examples: [[Object Detection]] of a pedestrian wearing a reflective vest in direct sunlight (camera overexposure); [[Lidar]] [[Point Cloud]] corruption from retroreflective road sign returns; [[Semantic Segmentation]] confusion between a red light and a distant brake light. SOTIF compliance requires [[Autonomous Driving Perception]] to demonstrate quantified performance bounds across the operational design domain rather than only in nominal conditions.
 
   **[[SAE J3016]] — Driving Automation Levels (2021)**
 

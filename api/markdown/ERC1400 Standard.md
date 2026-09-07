@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ERC1400 Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -91,32 +86,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:erc1400-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cf2bb2e9ced3e494a669da241a719e43118ef2a5600b3fe6b33ddd09464faca1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Ethereum security token standard (ERC-1400) combining fungible token behaviour with regulatory compliance controls, including partitioned balances, transfer restrictions, forced transfers for legal recovery, and on-chain document attachment, enabling the issuance and lifecycle management of regulated securities on public blockchains.

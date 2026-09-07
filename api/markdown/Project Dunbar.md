@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Project Dunbar
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,47 +80,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:project-dunbar:27fb422282a0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c76f52af94288dab849f91dc03a05f0ce705920e053e7e6559368e62609cf97a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Central Bank Digital Currency]]",
-      "resolved": "urn:visionflow:linked:central-bank-digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Border Payments]]",
-      "resolved": "urn:visionflow:linked:cross-border-payments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment Network]]",
-      "resolved": "urn:visionflow:linked:payment-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:linked:stablecoin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Project Dunbar was a multi-central-bank experiment exploring a shared platform for multiple central bank digital currencies to settle cross-border transactions directly.
 
@@ -140,7 +94,7 @@ public: true
   - enables:: [[Cross-Border Payments]]
 
 - ### Content
-  - Project Dunbar tested whether several central banks could issue digital currencies onto a common platform, allowing institutions to transact in multiple currencies without intermediary correspondent banks. The aim was to shorten settlement chains and reduce cost in cross-border payments.
+  - Project Dunbar tested whether several central banks [private] issue digital currencies onto a common platform, allowing institutions to transact in multiple currencies without intermediary correspondent banks. The aim was to shorten settlement chains and reduce cost in cross-border payments.
   - The work examined governance and access models for a shared multi-CBDC ledger, including how to reconcile differing national rules on a single platform. It sits in the broader effort to modernise cross-border payment infrastructure.
 
 - ### Provenance

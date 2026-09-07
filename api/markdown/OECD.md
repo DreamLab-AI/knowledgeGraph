@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OECD
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -159,41 +154,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:oecd:6b1c64c81e67",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:035ec2e3e8e191ef7e131ae83c5b7e2df07ec9c2d6d907f8685305f8299d29d1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MiCA]]",
-      "resolved": "urn:visionflow:linked:mi-ca",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Domain]]",
-      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Domain]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

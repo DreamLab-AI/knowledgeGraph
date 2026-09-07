@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Babylon Js
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:babylon-js", "@type":"Page", "title":"Babylon Js", "vc:slug":"babylon-js", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:babylon-js",
+  "@type": "Page",
+  "title": "Babylon Js",
+  "vc:slug": "babylon-js",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

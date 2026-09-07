@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:progressive-disclosure-harnesses",
   "domain": "ai",
-  "definition": "Formats, runtimes, and patterns that reveal context, tools, or instructions to agents in layers \u2014 index first, details on demand \u2014 to control token usage and improve agent focus \u2014 includes MCP-Zero, ToolGen, ToolRAG, langgraph-bigtool, agents.md, and awesome-cursorrules.",
+  "definition": "Formats, runtimes, and patterns that reveal context, tools, or instructions to agents in layers \u2014 [private] first, details on demand \u2014 to control token usage and improve agent focus \u2014 includes MCP-Zero, ToolGen, ToolRAG, langgraph-bigtool, agents.md, and awesome-cursorrules.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:agent-harness",

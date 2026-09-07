@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gaze Awareness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,13 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:social-presence", "label": "Social Presence"}],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:eye-contact-correction", "label": "Eye Contact Correction"},
-      {"@id": "urn:ngm:class:immersive-collaboration", "label": "Immersive Collaboration"}
+      {
+        "@id": "urn:ngm:class:eye-contact-correction",
+        "label": "Eye Contact Correction"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-collaboration",
+        "label": "Immersive Collaboration"
+      }
     ]
   },
   "quality": 0.7

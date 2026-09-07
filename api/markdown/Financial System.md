@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Financial System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,32 +185,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:financial-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c714b48f5fa637461856abe03de3db9819b8af0fec6dfda78283dfd43779f190"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The network of institutions, markets, instruments, and infrastructure that facilitate the creation, transfer, and management of financial value. In the context of the metaverse and blockchain ecosystems, financial systems include both traditional payment rails and decentralised protocols enabling programmable value exchange, digital asset custody, and cross-border settlement.
 
@@ -256,7 +225,7 @@ public: true
 - ### References
   - 1. PwC (2026). GENIUS Act implementation proposal – February 27, 2026. https://www.pwc.com/us/en/industries/financial-services/library/our-take/genius-act-implementation-proposal-feb-27-2026.html
   - 2. Freshfields (2026). 2025 Bank Regulatory Roundup and What to Look for in 2026. https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/2025-bank-regulatory-roundup-and-what-to-look-for-in-2026-102lymd
-  - 3. Rousseau, S. (2026). Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Treasury. https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026/index.html
+  - 3. Rousseau, S. (2026). Cross-Border 2026: ISO 20022, Open Finance and Tokenised Deposits in Treasury. https://sebastienrousseau.com/2026-06-24-cross-border-iso-20022-open-finance-tokenised-deposits-treasury-2026/[private].html
   - 4. Bank for International Settlements (2025). The next-generation monetary and financial system (Annual Economic Report 2025, Chapter III). https://www.bis.org/publ/arpdf/ar2025e3.pdf
   - 5. TRM Labs (2025). Global Crypto Policy Review & Outlook 2025/26. https://www.trmlabs.com/reports-and-whitepapers/global-crypto-policy-review-outlook-2025-26
   - 6. Cambridge Centre for Alternative Finance (2026). Tokenised money: Use cases, interoperability and regulation. https://www.jbs.cam.ac.uk/wp-content/uploads/2026/02/2026-ccaf-tokenised-money-use-cases-interoperability-and-regulation.pdf

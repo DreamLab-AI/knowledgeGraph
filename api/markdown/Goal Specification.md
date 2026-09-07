@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Goal Specification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Goal specification is the formal description of what an autonomous agent or planner is meant to achieve, expressed as target states, conditions, objectives, or reward functions. It translates high-level intent into a representation that planning and reasoning systems can evaluate and pursue. Clear goal specification is essential for task planning and avoiding misaligned or unsafe agent behaviour.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}, {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ]
   },
   "quality": 0.72
 }

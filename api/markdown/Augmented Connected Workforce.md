@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Augmented Connected Workforce
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,55 +64,54 @@ public: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-computing-platform",
+        "label": "Wearable Computing Platform"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:immersive-workspaces", "label": "Immersive Workspaces"},
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:digital-workplace-platform", "label": "Digital Workplace Platform"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-workspaces",
+        "label": "Immersive Workspaces"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:augmented-connected-workforce:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:17947a2e8d7b5b4e4cb4367f4677c1f41cf7c62e045868f087da879d5c25d0b7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - [Generated from Gartner emerging tech analysis]

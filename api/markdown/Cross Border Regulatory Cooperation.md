@@ -1,39 +1,126 @@
----
-public: true
----
-
-# Cross Border Regulatory Cooperation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cross-border-regulatory-cooperation", "@type":"Page", "title":"Cross Border Regulatory Cooperation", "vc:slug":"cross-border-regulatory-cooperation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cross-border-regulatory-cooperation",
+  "@type": "Page",
+  "title": "Cross Border Regulatory Cooperation",
+  "vc:slug": "cross-border-regulatory-cooperation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:cross-border-regulatory-cooperation",
-  "@type":"Class",
-  "label":"Cross Border Regulatory Cooperation",
-  "definition":"Cross-border regulatory cooperation is the coordination of financial supervision, rule-making and enforcement across national jurisdictions to manage activities and risks that span borders. It operates through memoranda of understanding, supervisory colleges, information-sharing arrangements, mutual recognition and common standards set by international bodies. By aligning approaches to systemic risk, anti-money-laundering and cross-border payments, it reduces regulatory arbitrage and supports consistent oversight of globally active firms and markets.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:standards-organization","label":"Standards Organization"}],
-    "enables":[{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"},{"@id":"urn:ngm:class:cross-border-payments","label":"Cross-Border Payments"}],
-    "supports":[{"@id":"urn:ngm:class:anti-money-laundering","label":"Anti-Money Laundering"},{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "requires":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-    "dependsOn":[{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}],
-    "implements":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:fsb","label":"FSB"},{"@id":"urn:ngm:class:g20","label":"G20"}],
-    "partOf":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:basel-committee","label":"Basel Committee"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:prudential-regulation","label":"Prudential Regulation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:fsb","label":"FSB"},{"@id":"urn:ngm:class:compliance","label":"Compliance"},{"@id":"urn:ngm:class:central-bank","label":"Central Bank"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-border-regulatory-cooperation",
+  "@type": "Class",
+  "label": "Cross Border Regulatory Cooperation",
+  "definition": "Cross-border regulatory cooperation is the coordination of financial supervision, rule-making and enforcement across national jurisdictions to manage activities and risks that span borders. It operates through memoranda of understanding, supervisory colleges, information-sharing arrangements, mutual recognition and common standards set by international bodies. By aligning approaches to systemic risk, anti-money-laundering and cross-border payments, it reduces regulatory arbitrage and supports consistent oversight of globally active firms and markets.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      },
+      {
+        "@id": "urn:ngm:class:g20",
+        "label": "G20"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

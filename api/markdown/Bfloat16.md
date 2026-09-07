@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Bfloat16
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:bfloat16", "@type":"Page", "title":"Bfloat16", "vc:slug":"bfloat16", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:bfloat16",
+  "@type": "Page",
+  "title": "Bfloat16",
+  "vc:slug": "bfloat16",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gas Limit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,29 +83,74 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"},
-      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"}
+      {
+        "@id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      },
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:mev", "label": "MEV"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
-      {"@id": "urn:ngm:class:block-size", "label": "Block Size"}
+      {
+        "@id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ]
   },
   "provenance": {
@@ -120,62 +160,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gas-limit:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:57bc0a296181389878b1a7b3074f5349a55da138c7eb1adc0e7d14109c1799b8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 
@@ -189,7 +173,7 @@ Gas Limit **requires** Blockchain Transaction (as the entity to which limits app
 
 Gas as a concept was introduced by Ethereum to decouple the cost of computation from the volatile market price of Ether. Every EVM opcode carries a fixed gas cost reflecting its relative computational and storage burden; the sum of opcode costs for a transaction must not exceed the sender's stated gas limit. If a transaction runs out of gas mid-execution, all state changes revert and the sender still pays for gas consumed — a design that discourages spam while preventing loss of miner/validator work.
 
-The block gas limit governs throughput at the network layer. In Ethereum's pre-EIP-1559 model miners could vote to adjust the block gas limit by ±0.1% per block, giving a slow but responsive feedback loop between demand and capacity. EIP-1559, deployed in the London upgrade (2021), introduced a target block size of half the gas limit and a protocol-calculated base fee that rises when blocks are fuller than target, providing more predictable fees while preserving the outer block gas limit as an absolute cap.
+The block gas limit governs throughput at the network layer. In Ethereum's pre-EIP-1559 model miners [private] vote to adjust the block gas limit by ±0.1% per block, giving a slow but responsive feedback loop between demand and capacity. EIP-1559, deployed in the London upgrade (2021), introduced a target block size of half the gas limit and a protocol-calculated base fee that rises when blocks are fuller than target, providing more predictable fees while preserving the outer block gas limit as an absolute cap.
 
 The interaction between Gas Limit and the Fee Market is critical for Blockchain Economics. When network congestion is high, the Mempool fills with pending transactions and users raise gas prices (or priority fees post-EIP-1559) to increase the probability of inclusion. MEV actors, including block builders under proposer-builder separation, optimise transaction ordering within gas-limit constraints to capture arbitrage and liquidation revenue. Validator Nodes on proof-of-stake Ethereum now vote on the gas limit through a similar gradual-adjustment mechanism, balancing demand for block space against the hardware requirements of running full nodes.
 

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - OrganisationalTheory
----
-
-# Organisational Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,16 +51,34 @@ aliases:
   "qualityScore": 0.7,
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"},
-      {"@id": "urn:ngm:class:governance-model", "label": "Governance Model"}
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +88,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:organisational-theory:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c455946ca6f02a13e56f172269b034b7e3c42a5e137e41916a4890e0398daa79"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The study of structural, behavioural, and governance patterns within organisations as they adopt distributed collaboration and immersive technologies. Organisational theory examines how hierarchies, communication channels, decision-making processes, and incentive structures must adapt to support decentralised, asynchronous, and spatially distributed teams operating within metaverse and mixed-reality workspaces.

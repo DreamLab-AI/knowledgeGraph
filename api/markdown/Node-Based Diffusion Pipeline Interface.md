@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[ComfyUI]]
-# Node-Based Diffusion Pipeline Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

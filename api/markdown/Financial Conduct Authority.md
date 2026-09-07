@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Financial Conduct Authority
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -155,41 +150,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:financial-conduct-authority:bcd7abd8bfba",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4ceb261b46e0285f07625d15d2b5ba218ef6123856482a0f007768f737edb280"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Securities Regulation]]",
-      "resolved": "urn:visionflow:linked:securities-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Regulation]]",
-      "resolved": "urn:visionflow:linked:financial-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[FCA]]",
-      "resolved": "urn:visionflow:linked:fca",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

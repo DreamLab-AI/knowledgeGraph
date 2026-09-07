@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Canonical JSON
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,22 +21,43 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:data-format", "label": "Data Format"}
+    {
+      "@id": "urn:ngm:class:data-format",
+      "label": "Data Format"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {
+        "@id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ]
   },
   "quality": 0.8

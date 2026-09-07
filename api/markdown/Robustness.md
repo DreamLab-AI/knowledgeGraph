@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robustness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,32 +173,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robustness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:168775027f6f38a99d911cb7fb3249da33eaac1e80665a931a9a53c2e688b714"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The ability of an AI system to maintain consistent, correct, and safe performance across diverse operating conditions, including unexpected inputs, environmental variations, and adversarial perturbations, without catastrophic failure or significant degradation.
 - ### Semantic Classification
@@ -367,7 +336,7 @@ public: true
   - ### TrustLLM Benchmark Framework
   - The **TrustLLM benchmark** provided a comprehensive framework spanning six dimensions: truthfulness, safety, fairness, **robustness**, privacy, and machine ethics. The robustness dimension included over 30 datasets across more than 18 subcategories, enabling systematic evaluation of model resilience across diverse perturbation types.
   - ### Testing Challenges and Coverage
-  - Research highlighted fundamental testing challenges for robustness: the impossibility of testing all perturbations required sophisticated sampling strategies and coverage metrics. Unknown unknowns remained problematic, as emergent behaviours and black swan events could not be anticipated through systematic testing alone.
+  - Research highlighted fundamental testing challenges for robustness: the impossibility of testing all perturbations required sophisticated sampling strategies and coverage metrics. Unknown unknowns remained problematic, as emergent behaviours and black swan events [private] not be anticipated through systematic testing alone.
   - ### Adaptive and Multi-Perturbation Defenses
   - Research frontiers in 2024-2025 focused on **adaptive robustness** with dynamic defences learning from attacks, **multi-perturbation robustness** providing unified defence frameworks, and **causal robustness** ensuring invariance to spurious correlations rather than merely surface-level perturbations.
   - ## Academic Context

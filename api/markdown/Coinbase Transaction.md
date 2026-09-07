@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Coinbase Transaction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,24 +83,54 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+      {
+        "@id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ]
   },
   "provenance": {
@@ -115,62 +140,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:coinbase-transaction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1968c2883f9894d4f1b7128dc83ad1f0a139f1f0b832673bef116fdfc373c7bd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-protocol-and-consensus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusProtocol]]",
-      "resolved": "urn:visionflow:owl:class:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ProtocolLayer]]",
-      "resolved": "urn:visionflow:owl:class:protocol-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   The first transaction in every blockchain block, created by the miner or block producer with no inputs, that issues the block reward plus accumulated transaction fees to the miner's address. The coinbase transaction is the sole mechanism by which new cryptocurrency enters circulation according to protocol-defined issuance rules.

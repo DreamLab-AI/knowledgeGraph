@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Job Creation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-job-creation",
   "title": "AI Job Creation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Labor Market Impact", "LinkedIn"],
+  "vc:outboundWikilinks": [
+    "Labor Market Impact",
+    "LinkedIn"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:labor-market-impact", "label": "Labor Market Impact"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:labor-market-impact",
+        "label": "Labor Market Impact"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

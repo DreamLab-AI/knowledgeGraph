@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Supply Chain Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,26 @@ public: true
   "definition": "Supply chain tracking is the end-to-end recording of a product's movement, custody, and condition as it passes through producers, logistics, and retailers. Blockchain-based approaches anchor these events to an immutable, shared ledger so that participants can verify provenance and detect tampering without trusting a single intermediary. It enables traceability for food safety, anti-counterfeiting, and regulatory compliance.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}, {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:supply-chain-traceability",
+      "label": "Supply Chain Traceability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ve-chain", "label": "VeChain"},
-      {"@id": "urn:ngm:class:asset-registry", "label": "Asset Registry"}
+      {
+        "@id": "urn:ngm:class:ve-chain",
+        "label": "VeChain"
+      },
+      {
+        "@id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      }
     ]
   },
   "quality": 0.72

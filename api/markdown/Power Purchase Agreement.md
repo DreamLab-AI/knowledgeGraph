@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Power Purchase Agreement
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fault Tolerance System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,31 +103,76 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:replication-system", "label": "Replication System"},
-      {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:replication-system",
+        "label": "Replication System"
+      },
+      {
+        "@id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:operational-resilience", "label": "Operational Resilience"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:practical-byzantine-fault-tolerance", "label": "Practical Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:federated-byzantine-fault-tolerance", "label": "Federated Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:federated-byzantine-fault-tolerance",
+        "label": "Federated Byzantine Fault Tolerance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-architecture", "label": "Distributed Architecture"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerant-system", "label": "Byzantine Fault Tolerant System"}
+      {
+        "@id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerant-system",
+        "label": "Byzantine Fault Tolerant System"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ]
   },
   "provenance": {
@@ -142,92 +182,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fault-tolerance-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c46e1fc597829039ad94a73e9470e8693f28a3a70ffd7b716c3b2ed3d93b3f1f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Byzantine Fault Tolerant System]]",
-      "resolved": "urn:visionflow:linked:byzantine-fault-tolerant-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Checkpoint System]]",
-      "resolved": "urn:visionflow:linked:checkpoint-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Crash Fault Tolerant System]]",
-      "resolved": "urn:visionflow:linked:crash-fault-tolerant-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dependable Computing Systems]]",
-      "resolved": "urn:visionflow:linked:dependable-computing-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fault-Tolerant Systems]]",
-      "resolved": "urn:visionflow:linked:fault-tolerant-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Byzantine Fault Tolerance]]",
-      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Replication System]]",
-      "resolved": "urn:visionflow:owl:class:replication-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[State Machine Replication]]",
-      "resolved": "urn:visionflow:owl:class:state-machine-replication",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Fault Tolerance System is a design framework enabling a distributed system to continue correct operation despite the occurrence of component failures, network disruptions, or malicious behavior by subset of participants. Fault tolerance is essential for blockchain systems that must maintain availability and consistency across geographically distributed nodes operating in adversarial environments without centralized recovery mechanisms. These systems employ redundancy (replicating data and computation across multiple nodes), error detection (identifying when failures occur), error recovery (restoring correct state after failures), and failure masking (hiding failures from users through automatic compensation). Fault tolerance systems are classified by failure models: crash faults (nodes stop operating but don't send incorrect information), omission faults (nodes fail to send or receive messages), timing faults (nodes operate correctly but too slowly), and Byzantine faults (nodes exhibit arbitrary malicious behavior including sending conflicting information). Blockchain fault tolerance systems must typically handle Byzantine failures since blockchain operates in adversarial environments where economic incentives may motivate misbehavior, requiring protocols that maintain correctness when up to one-third of nodes behave arbitrarily.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - StandardsBasedTaxonomy
----
-
-# Standards Based Taxonomy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,15 +50,30 @@ aliases:
       }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:standards-organization", "label": "Standards Organization"}
+      {
+        "@id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:classification-system", "label": "Classification System"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:web-standards", "label": "Web Standards"}
+      {
+        "@id": "urn:ngm:class:classification-system",
+        "label": "Classification System"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ]
   },
   "quality": 0.35,
@@ -82,32 +90,6 @@ aliases:
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:standards-based-taxonomy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:504ddb8666352f074fabc0575ab35c7bbdffaf38388a791ae047931df4febd45"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A standards-based taxonomy is a hierarchical classification scheme whose categories, labels, and relationships are drawn from published technical standards rather than ad hoc convention. Within spatial computing it organises concepts using vocabularies from bodies such as the W3C, ISO, and the Khronos Group, supporting consistent categorisation and semantic interoperability across platforms.

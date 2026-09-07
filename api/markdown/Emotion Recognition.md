@@ -1,38 +1,116 @@
----
-public: true
----
-
-# Emotion Recognition
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:emotion-recognition", "@type":"Page", "title":"Emotion Recognition", "vc:slug":"emotion-recognition", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:emotion-recognition",
+  "@type": "Page",
+  "title": "Emotion Recognition",
+  "vc:slug": "emotion-recognition",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:emotion-recognition",
-  "@type":"Class",
-  "label":"Emotion Recognition",
-  "definition":"Emotion recognition is the computational task of inferring a person's affective state from signals such as facial expressions, voice prosody, language and physiological measurements. It draws on affective computing and machine learning to classify or estimate emotions along discrete categories or continuous dimensions. The technology raises significant accuracy, bias and privacy concerns that constrain responsible deployment.",
-  "domain":"ai",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:affective-computing","label":"Affective Computing"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:facial-recognition","label":"Facial Recognition"},{"@id":"urn:ngm:class:sentiment-analysis","label":"Sentiment Analysis"}],
-    "requires":[{"@id":"urn:ngm:class:speech-recognition","label":"Speech Recognition"}],
-    "uses":[{"@id":"urn:ngm:class:natural-language-processing","label":"Natural Language Processing"},{"@id":"urn:ngm:class:speaker-diarisation","label":"Speaker Diarisation"}],
-    "enables":[{"@id":"urn:ngm:class:empathetic-ai","label":"Empathetic AI"},{"@id":"urn:ngm:class:social-robotics","label":"Social Robotics"}],
-    "supports":[{"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"}],
-    "implements":[{"@id":"urn:ngm:class:affective-computing","label":"Affective Computing"}],
-    "dependsOn":[{"@id":"urn:ngm:class:facial-recognition","label":"Facial Recognition"}],
-    "relatedTo":[{"@id":"urn:ngm:class:sentiment-analysis","label":"Sentiment Analysis"},{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:facial-recognition","label":"Facial Recognition"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:emotion-recognition",
+  "@type": "Class",
+  "label": "Emotion Recognition",
+  "definition": "Emotion recognition is the computational task of inferring a person's affective state from signals such as facial expressions, voice prosody, language and physiological measurements. It draws on affective computing and machine learning to classify or estimate emotions along discrete categories or continuous dimensions. The technology raises significant accuracy, bias and privacy concerns that constrain responsible deployment.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:affective-computing",
+      "label": "Affective Computing"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:empathetic-ai",
+        "label": "Empathetic AI"
+      },
+      {
+        "@id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

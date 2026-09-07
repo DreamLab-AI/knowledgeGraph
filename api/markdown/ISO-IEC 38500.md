@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ISO/IEC 38500
----
-
-# ISO-IEC 38500
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,32 +53,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:iso-iec-38500:cb0b21dbf789",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:174941127dc5c4f83e67e2162547fe412b88e64b5c0137fd8bf1747bc4dc0c6f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An ISO/IEC standard providing principles and guidance for the corporate governance of information technology. It addresses the responsibilities of governing bodies for the use of IT.

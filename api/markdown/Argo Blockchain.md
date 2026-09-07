@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Argo Blockchain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:argo-blockchain:d1c20fcdf71e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:251195a51c3578d2228d52f13e07c6f097fdbb0c6f40bb6251eb3077bb898e39"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Mining]]",
-      "resolved": "urn:visionflow:linked:bitcoin-mining",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainability Domain]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Argo Blockchain is a publicly listed cryptocurrency mining company that operates data centres performing the hashing that secures proof-of-work networks, chiefly Bitcoin.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:octree-spatial-index",
   "domain": "metaverse",
-  "definition": "An octree spatial index is a tree data structure that recursively subdivides 3D space into eight octants, organising objects by their spatial location for efficient querying. It accelerates operations such as range queries, nearest-neighbour search, collision detection, and visibility culling by pruning regions that cannot contain relevant objects. It is a core building block for spatial partitioning in 3D engines and virtual worlds.",
+  "definition": "An octree spatial [private] is a tree data structure that recursively subdivides 3D space into eight octants, organising objects by their spatial location for efficient querying. It accelerates operations such as range queries, nearest-neighbour search, collision detection, and visibility culling by pruning regions that cannot contain relevant objects. It is a core building block for spatial partitioning in 3D engines and virtual worlds.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",

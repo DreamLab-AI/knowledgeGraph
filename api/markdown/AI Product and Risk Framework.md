@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Product and Risk Management]]
-# AI Product and Risk Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,18 +55,36 @@ elevatedFrom:: [[Product and Risk Management]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+      {
+        "@id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"}
+      {
+        "@id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "quality": 0.5,
@@ -83,42 +95,6 @@ elevatedFrom:: [[Product and Risk Management]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:product-and-risk-management:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:42929c364b1f6fa03da1595de6daeb04dd7562a911c51786c0039c784b7069c0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Product Design]]",
-      "resolved": "urn:visionflow:owl:class:product-design",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Safety and alignment]]",
-      "resolved": "urn:visionflow:owl:class:safety-and-alignment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A framework mapping the scientific method onto lean product development, guiding AI product decisions through vision setting, market analysis, and strategic planning. It addresses SWOT evaluation, moat assessment, and risk mitigation for AI products—particularly the legal, privacy, and safety risks introduced by generative AI and the EU regulatory landscape.
@@ -195,7 +171,7 @@ elevatedFrom:: [[Product and Risk Management]]
 			- If an AI product already has $100M+ valuation, you should think:
 			- Can it continue to grow and (more importantly) retain users?
 			- In a crowded space like AI copywriting and productivity
-		- that could get hard.
+		- that [private] get hard.
 		- To recap, here are 5 questions to ask to evaluate AI products and companies:
 			- 1. Without "AI", is it still solving a problem?
 			  2. How accurate does the solution need to be?

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gas Fee
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -195,48 +190,13 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gas-fee:cb89cb0e927a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f12270ce08a004c74291bf426e8187079b2f0ffa64c4defe726b13972915bb7a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Fee]]",
-      "resolved": "urn:visionflow:linked:transaction-fee",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A **gas fee** is the cost a user pays to a [[Blockchain Network]] to have a [[Transaction]] or [[Smart Contract]] operation processed and recorded on-chain. The term "gas" abstracts the computational effort required by each operation into a discrete unit, enabling fine-grained pricing: each EVM opcode on [[Ethereum]] has a fixed gas cost, and the total fee equals the gas units consumed multiplied by the prevailing [[Gas Price]]. Gas fees economically compensate [[Validator|validators]] for expending real compute, storage, and bandwidth resources, while simultaneously functioning as a [[Spam Prevention]] mechanism that makes artificially expensive on-chain activity economically infeasible.
 
 - ### Overview
   - Gas fees are a foundational economic primitive in [[Ethereum]] and compatible networks ([[Polygon]], [[Arbitrum]], [[Optimism]], [[BNB Smart Chain]]).
   - They arise from a fundamental scarcity: block space is finite, so fees create a market that rationally allocates a shared resource.
-  - Without gas fees, a single actor could trivially spam the network with computationally intensive transactions at negligible cost, undermining [[Network Security]].
+  - Without gas fees, a single actor [private] trivially spam the network with computationally intensive transactions at negligible cost, undermining [[Network Security]].
   - The amount of gas a transaction consumes is deterministic and determined by the EVM opcodes it executes; the price paid per gas unit is set by market supply and demand via the [[Mempool]].
   - Gas fees are denominated in the network's [[Native Token]] (ETH on [[Ethereum]], MATIC on [[Polygon]], etc.) but often discussed in smaller sub-units (Gwei = 10⁻⁹ ETH on Ethereum).
   - High gas fees have been a principal driver of [[Layer-2 Scaling]] solutions, which batch or compress transactions before settling on the base layer to amortise costs.

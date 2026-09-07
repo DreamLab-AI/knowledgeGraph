@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Law Commission
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:law-commission:a0fb829baea1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d6659c6598887e53efd67bc265382f7089b1cc7b796444af41e87eece67365a1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Frameworks]]",
-      "resolved": "urn:visionflow:linked:regulatory-frameworks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulation]]",
-      "resolved": "urn:visionflow:linked:regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.lawcom.gov.uk/]]",
-      "resolved": "urn:visionflow:linked:https-www-lawcom-gov-uk",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.legislation.gov.uk/ukpga/1965/22]]",
-      "resolved": "urn:visionflow:linked:https-www-legislation-gov-uk-ukpga-1965-22",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Law Commission is the statutory independent body for England and Wales that reviews the law and recommends reform to government.

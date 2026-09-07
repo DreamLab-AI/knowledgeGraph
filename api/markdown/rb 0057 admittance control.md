@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0057 admittance control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,51 +60,52 @@ public: true
   },
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"}
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"},
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"}
+      {
+        "@id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0053-force-control", "label": "rb 0053 force control"},
-      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"},
-      {"@id": "urn:ngm:class:compliance-control", "label": "Compliance Control"},
-      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"}
+      {
+        "@id": "urn:ngm:class:rb-0053-force-control",
+        "label": "rb 0053 force control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0057-admittance-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:79b3fe66ad79b97009bb96ec62c31dc73ebb77d73a67bb5ff024313df0efbc2c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Admittance control is an interaction-control strategy in which a robot measures contact forces and torques and converts them into corresponding desired motion (position or velocity) using a virtual mass-spring-damper model. It is the dual of impedance control: the robot senses force input and renders motion output, enabling compliant, safe physical human-robot interaction in collaborative tasks.

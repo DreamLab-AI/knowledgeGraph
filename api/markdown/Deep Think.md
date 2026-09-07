@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Deep Think
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,13 @@ public: true
   "vc:slug": "deep-think",
   "title": "Deep Think",
   "vc:public": true,
-  "vc:outboundWikilinks": ["ARKG I2 Benchmark", "Alethea Agent", "Autonomous Proof Generation", "Humanities Last Exam", "Opus 4.6"],
+  "vc:outboundWikilinks": [
+    "ARKG I2 Benchmark",
+    "Alethea Agent",
+    "Autonomous Proof Generation",
+    "Humanities Last Exam",
+    "Opus 4.6"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +27,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:arkg-i2-benchmark", "label": "ARKG I2 Benchmark"}, {"@id": "urn:ngm:class:alethea-agent", "label": "Alethea Agent"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:arkg-i2-benchmark",
+        "label": "ARKG I2 Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:alethea-agent",
+        "label": "Alethea Agent"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

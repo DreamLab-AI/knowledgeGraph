@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transaction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -91,25 +86,64 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
-      {"@id": "urn:ngm:class:gas", "label": "Gas"}
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:block", "label": "Block"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:block-time", "label": "Block Time"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:digital-payments", "label": "Digital Payments"},
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:bc-cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
     ]
   },
   "quality": 0.8,
@@ -120,67 +154,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transaction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a19859198644f87c8320063d42bbe03489f865a5b38a365ae161c10a186ea8b1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DistributedDataStructure]]",
-      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - State-changing operation on blockchain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

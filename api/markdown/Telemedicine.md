@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Telemedicine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "Telemedicine is the delivery of clinical healthcare services — including diagnosis, consultation, monitoring, and treatment guidance — at a distance using telecommunications technology such as video conferencing, secure messaging, and remote sensing devices. It encompasses synchronous consultations (live video visits), asynchronous store-and-forward exchanges (images, test results), and remote patient monitoring (RPM) using wearable sensors and IoT devices. Telemedicine dramatically expands access to specialist care for patients in rural, underserved, or mobility-constrained situations.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:healthcare-technology", "label": "Healthcare Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:healthcare-technology",
+      "label": "Healthcare Technology"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"}
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:remote-work", "label": "Remote Work"},
-      {"@id": "urn:ngm:class:precision-medicine", "label": "Precision Medicine"},
-      {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"}
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
-      {"@id": "urn:ngm:class:wearable-device-integration", "label": "Wearable Device Integration"},
-      {"@id": "urn:ngm:class:healthcare-records", "label": "Healthcare Records"}
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-device-integration",
+        "label": "Wearable Device Integration"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +88,3 @@ public: true
   - The significance of telemedicine lies in its ability to address fundamental geographic and workforce constraints in healthcare delivery. Rural patients facing multi-hour drives to specialist care, homebound elderly patients, workers who cannot take time off for in-person visits, and patients in low-income countries without specialist density all benefit dramatically from remote clinical services. Telemedicine also reduces infectious disease transmission risk in waiting rooms, reduces carbon emissions from healthcare-related travel, and can improve care continuity through more frequent touchpoints with lower friction.
 
   - In 2024-2025, post-pandemic telemedicine reimbursement policy has stabilised at permanently elevated levels in most OECD countries, ending the temporary waivers but codifying expanded telehealth coverage. AI-driven ambient clinical documentation has become widely deployed, with companies like Nuance (Microsoft), Suki, and Abridge reducing clinician administrative burden substantially. Remote patient monitoring for chronic disease management (heart failure, COPD, diabetes) has demonstrated cost-effective hospitalisation reduction in randomised trials. The emerging frontier is AI-first asynchronous care — diagnostic AI models triaging patient-submitted data (photos, symptom descriptions, wearable readings) and routing to clinicians only when necessary.
-

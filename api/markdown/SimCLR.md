@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SimCLR
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,42 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
-      {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation-strategies",
+        "label": "Data Augmentation Strategies"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sim-clr:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e46ea7d70bb2197feaa3e6ff8f04389a28f48915bad7b37375923ac2ee6e33a9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A self-supervised learning framework that learns visual representations through contrastive learning with data augmentation. A linear classifier on SimCLR representations achieves 76.5% top-1 accuracy, matching supervised ResNet-50 performance.

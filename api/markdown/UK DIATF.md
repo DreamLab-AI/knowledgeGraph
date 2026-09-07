@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UK DIATF
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The UK Digital Identity and Attributes Trust Framework (DIATF) is a government-published set of rules and standards that digital-identity providers must meet to be certified as trustworthy. It defines requirements for security, privacy, fraud management, and inclusion so that certified identity and attribute services can be relied upon across public and private sectors.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}, {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
+    ]
   },
   "quality": 0.72
 }

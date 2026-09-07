@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0041 inertia
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,48 +60,46 @@ public: true
   },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"},
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"},
-      {"@id": "urn:ngm:class:rb-0043-torque", "label": "rb 0043 torque"},
-      {"@id": "urn:ngm:class:rb-0045-acceleration", "label": "rb 0045 acceleration"}
+      {
+        "@id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0045-acceleration",
+        "label": "rb 0045 acceleration"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0033-payload", "label": "rb 0033 payload"}
+      {
+        "@id": "urn:ngm:class:rb-0033-payload",
+        "label": "rb 0033 payload"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"},
-      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"}
+      {
+        "@id": "urn:ngm:class:rb-0064-computed-torque-control",
+        "label": "rb 0064 computed torque control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0041-inertia:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4e23cdbbc7e2be17bbbbedda4f388917b619ca787295d005e5508345d4eaeb73"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Inertia** (RB-0041) is the resistance of a robot's links and payload to changes in motion, quantified by the inertia tensor for rotational dynamics and mass for translational dynamics. Accurate inertia modelling is essential for dynamic control, trajectory planning, and compliance with power-and-force-limiting safety requirements, because high inertia directly increases the impact forces during unintended contact.

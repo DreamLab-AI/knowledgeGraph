@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Minimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,7 +55,7 @@ public: true
   "@id": "urn:ngm:class:data-minimisation",
   "@type": "Class",
   "label": "Data Minimisation",
-  "definition": "Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for specified purposes, reducing privacy risks by avoiding accumulation of excessive data that could be misused, breached, or enable function creep.",
+  "definition": "Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for specified purposes, reducing privacy risks by avoiding accumulation of excessive data that [private] be misused, breached, or enable function creep.",
   "domain": "data",
   "maturity": "established",
   "subClassOf": {
@@ -220,54 +215,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-minimisation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:269cac29188bac335fbadcdbece5a144d4e232ae929bdcec59144a30330237b8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GDPR Article 25]]",
-      "resolved": "urn:visionflow:linked:gdpr-article-25",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR Article 5(1)(c)]]",
-      "resolved": "urn:visionflow:linked:gdpr-article-5-1-c",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 29100]]",
-      "resolved": "urn:visionflow:linked:iso-29100",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for specified purposes, reducing privacy risks by avoiding accumulation of excessive data that could be misused, breached, or enable function creep. This principle implements practical strategies including purpose-bound collection where data requirements are determined by explicitly defined processing purposes with only necessary attributes collected, feature selection applying machine learning techniques identifying minimal feature sets achieving acceptable model performance without extraneous predictors, dimensionality reduction using methods like principal component analysis or autoencoders compressing high-dimensional data while preserving essential information, data aggregation combining detailed records into summary statistics suitable for analysis without individual-level granularity, statistical sampling training models on representative subsets rather than entire populations when full datasets unnecessary, and retention limitation automatically deleting data when no longer needed for original purposes or legal obligations. Implementation in AI systems involves analyzing feature importance to identify and remove low-contribution attributes, applying regularization techniques (L1 lasso) that inherently perform feature selection by driving irrelevant coefficients to zero, using early stopping in training to prevent models from learning unnecessarily complex patterns requiring excessive data, and implementing privacy-preserving alternatives like federated learning avoiding data centralization or differential privacy enabling aggregate statistics without raw data collection. Benefits include reduced privacy risk with smaller attack surface for breaches or misuse, compliance demonstration satisfying GDPR data minimization requirements, storage savings from reduced data volumes particularly for large-scale AI applications, processing efficiency with smaller datasets enabling faster training and inference, and improved model generalization as minimization reduces overfitting risks from irrelevant features. Challenges include tension with AI performance where models often improve with more data across more dimensions creating direct conflict with minimization principle, difficulty predicting future uses as strictly minimized data may preclude valuable secondary analyses, and technical complexity of feature selection requiring domain expertise and careful validation that minimization doesn't eliminate critical predictive information, though techniques like model distillation and knowledge transfer enable training on comprehensive data then compressing to minimal representations for deployment.
+  - Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for specified purposes, reducing privacy risks by avoiding accumulation of excessive data that [private] be misused, breached, or enable function creep. This principle implements practical strategies including purpose-bound collection where data requirements are determined by explicitly defined processing purposes with only necessary attributes collected, feature selection applying machine learning techniques identifying minimal feature sets achieving acceptable model performance without extraneous predictors, dimensionality reduction using methods like principal component analysis or autoencoders compressing high-dimensional data while preserving essential information, data aggregation combining detailed records into summary statistics suitable for analysis without individual-level granularity, statistical sampling training models on representative subsets rather than entire populations when full datasets unnecessary, and retention limitation automatically deleting data when no longer needed for original purposes or legal obligations. Implementation in AI systems involves analyzing feature importance to identify and remove low-contribution attributes, applying regularization techniques (L1 lasso) that inherently perform feature selection by driving irrelevant coefficients to zero, using early stopping in training to prevent models from learning unnecessarily complex patterns requiring excessive data, and implementing privacy-preserving alternatives like federated learning avoiding data centralization or differential privacy enabling aggregate statistics without raw data collection. Benefits include reduced privacy risk with smaller attack surface for breaches or misuse, compliance demonstration satisfying GDPR data minimization requirements, storage savings from reduced data volumes particularly for large-scale AI applications, processing efficiency with smaller datasets enabling faster training and inference, and improved model generalization as minimization reduces overfitting risks from irrelevant features. Challenges include tension with AI performance where models often improve with more data across more dimensions creating direct conflict with minimization principle, difficulty predicting future uses as strictly minimized data may preclude valuable secondary analyses, and technical complexity of feature selection requiring domain expertise and careful validation that minimization doesn't eliminate critical predictive information, though techniques like model distillation and knowledge transfer enable training on comprehensive data then compressing to minimal representations for deployment.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:DataMinimisation
@@ -283,7 +232,7 @@ public: true
   0426 Data Minimisation — content pending enrichment.
 
 - ### Current Landscape (2026)
-  - Data minimisation has become the pivotal battleground for AI training: the EDPB's Opinion 28/2024 (adopted 17-18 December 2024) held that models trained on personal data cannot always be treated as anonymous, and required that training data be adequate, relevant and necessary — checking first whether synthetic or anonymised data could achieve the purpose.
+  - Data minimisation has become the pivotal battleground for AI training: the EDPB's Opinion 28/2024 (adopted 17-18 December 2024) held that models trained on personal data cannot always be treated as anonymous, and required that training data be adequate, relevant and necessary — checking first whether synthetic or anonymised data [private] achieve the purpose.
   - National regulators have softened the operational reading for large models: the CNIL's two AI-and-GDPR recommendations (7 February 2025) confirmed that minimisation "does not prevent the use of large training datasets", provided data is selected and cleaned to strip unnecessary personal data, while the EDPS issued revised Generative AI orientations for EU institutions on 28 October 2025.
   - The EU's Digital Omnibus package, unveiled 19 November 2025, proposes the most consequential shift: a new Article 88c GDPR putting ML training on a legitimate-interests footing (with documented LIAs, right to object and minimisation safeguards), a relative/entity-specific redefinition of "personal data" in Article 4(1), an Article 41a pseudonymisation mechanism, and extension of the breach-notification deadline to 96 hours.
   - The EDPB and EDPS pushed back in Joint Opinion 2/2026 (adopted February 2026), recommending that the strict-necessity standard be retained for processing special-category data used in bias detection and correction for high-risk AI systems.

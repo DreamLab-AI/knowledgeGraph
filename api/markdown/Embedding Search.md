@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Embedding Search
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,21 +21,39 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+    {
+      "@id": "urn:ngm:class:semantic-search",
+      "label": "Semantic Search"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:vector-embedding", "label": "Vector Embedding"},
-      {"@id": "urn:ngm:class:vector-store", "label": "Vector Store"}
+      {
+        "@id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:vector-store",
+        "label": "Vector Store"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:vector-search", "label": "Vector Search"}
+      {
+        "@id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dense-retrieval", "label": "Dense Retrieval"}
+      {
+        "@id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      }
     ]
   },
   "quality": 0.8
@@ -48,7 +61,7 @@ public: true
 ```
 
 - ### Definition
-  - Embedding search is a retrieval paradigm in which both queries and corpus items are encoded by a neural [[Embedding Model]] into dense [[Vector Embedding]] representations living in a shared high-dimensional [[Latent Space]], so that semantic similarity in the original domain corresponds to geometric proximity in that space. Retrieval then operates by computing distances — most commonly [[Cosine Similarity]] or dot product — between the query vector and all indexed item vectors, returning the closest neighbours as the most relevant results. Unlike [[Keyword Search]] and [[BM25]], which rank documents by counting exact lexical overlaps and inverse-document-frequency weighted term statistics, embedding search captures synonymy, paraphrase, compositional meaning, and cross-lingual equivalence: a query for "myocardial infarction" will retrieve a document about "heart attack" without any shared tokens, because both phrases map to geometrically proximate vectors in a well-trained embedding space. The query and document encoders may be the same model (single-encoder) or trained separately in a [[Bi-Encoder Architecture]] (dual-encoder), where the document index is pre-computed offline — storing pre-computed [[Vector Embedding]] representations in a [[Vector Store]] or [[Vector Database]] — so that online retrieval requires only a single encoder forward pass for the query, followed by an [[Approximate Nearest Neighbour]] lookup via an [[HNSW Index]], [[Faiss]], or similar [[Vector Index]] structure to return the top-k results in milliseconds at billion-scale corpora. In production systems, embedding search is typically deployed as a first-stage recall component in a multi-stage pipeline that also includes [[Cross-Encoder Reranking]] for precision-oriented re-scoring of the top-k candidates, [[Hybrid Retrieval]] via [[Reciprocal Rank Fusion]] with sparse [[BM25]] signals to handle exact-match entities and rare terms, and [[Metadata Filtering]] to apply access-control or temporal constraints before vector lookup. The paradigm is the direct descendant of the [[Dense Retrieval]] research programme, formalised by Dense Passage Retrieval (Karpukhin et al., ACL 2020) and Sentence-BERT (Reimers and Gurevych, EMNLP 2019), and constitutes the retrieval backbone of [[Retrieval-Augmented Generation]] pipelines and modern [[Enterprise Search]] platforms. Benchmarking is standardised through the [[BEIR Benchmark]] and [[MTEB Benchmark]], both of which evaluate embedding models across dozens of heterogeneous retrieval tasks covering scientific, legal, medical, conversational, and web domains. As of 2026, the leading models on MTEB — including Alibaba's Qwen3-Embedding-8B (MTEB score 70.6), Google Gemini Embedding 001 (68.32), and open-source alternatives E5-mistral-7b-instruct and BGE-M3 — substantially outperform BM25 baselines (36.1 nDCG@10 on BEIR) and continue to extend capabilities to multilingual, long-document, and multimodal retrieval scenarios where a single embedding space jointly represents text, images, audio, video, and PDF content.
+  - Embedding search is a retrieval paradigm in which both queries and corpus items are encoded by a neural [[Embedding Model]] into dense [[Vector Embedding]] representations living in a shared high-dimensional [[Latent Space]], so that semantic similarity in the original domain corresponds to geometric proximity in that space. Retrieval then operates by computing distances — most commonly [[Cosine Similarity]] or dot product — between the query vector and all indexed item vectors, returning the closest neighbours as the most relevant results. Unlike [[Keyword Search]] and [[BM25]], which rank documents by counting exact lexical overlaps and inverse-document-frequency weighted term statistics, embedding search captures synonymy, paraphrase, compositional meaning, and cross-lingual equivalence: a query for "myocardial infarction" will retrieve a document about "heart attack" without any shared tokens, because both phrases map to geometrically proximate vectors in a well-trained embedding space. The query and document encoders may be the same model (single-encoder) or trained separately in a [[Bi-Encoder Architecture]] (dual-encoder), where the document [private] is pre-computed offline — storing pre-computed [[Vector Embedding]] representations in a [[Vector Store]] or [[Vector Database]] — so that online retrieval requires only a single encoder forward pass for the query, followed by an [[Approximate Nearest Neighbour]] lookup via an [[HNSW Index]], [[Faiss]], or similar [[Vector Index]] structure to return the top-k results in milliseconds at billion-scale corpora. In production systems, embedding search is typically deployed as a first-stage recall component in a multi-stage pipeline that also includes [[Cross-Encoder Reranking]] for precision-oriented re-scoring of the top-k candidates, [[Hybrid Retrieval]] via [[Reciprocal Rank Fusion]] with sparse [[BM25]] signals to handle exact-match entities and rare terms, and [[Metadata Filtering]] to apply access-control or temporal constraints before vector lookup. The paradigm is the direct descendant of the [[Dense Retrieval]] research programme, formalised by Dense Passage Retrieval (Karpukhin et al., ACL 2020) and Sentence-BERT (Reimers and Gurevych, EMNLP 2019), and constitutes the retrieval backbone of [[Retrieval-Augmented Generation]] pipelines and modern [[Enterprise Search]] platforms. Benchmarking is standardised through the [[BEIR Benchmark]] and [[MTEB Benchmark]], both of which evaluate embedding models across dozens of heterogeneous retrieval tasks covering scientific, legal, medical, conversational, and web domains. As of 2026, the leading models on MTEB — including Alibaba's Qwen3-Embedding-8B (MTEB score 70.6), Google Gemini Embedding 001 (68.32), and open-source alternatives E5-mistral-7b-instruct and BGE-M3 — substantially outperform BM25 baselines (36.1 nDCG@10 on BEIR) and continue to extend capabilities to multilingual, long-document, and multimodal retrieval scenarios where a single embedding space jointly represents text, images, audio, video, and PDF content.
 
 - ### Semantic Classification
   - owl-class:: ai:EmbeddingSearch
@@ -152,16 +165,16 @@ public: true
         ObjectSomeValuesFrom(ai:reduces ai:QueryReformulationBurden))
 
   ## About
-    Embedding search emerged from the confluence of two strands of machine learning research: distributional semantics and scalable nearest-neighbour retrieval. The distributional hypothesis — that words appearing in similar contexts have similar meanings — was given algorithmic form by Bengio et al.'s neural language model (2003) and then operationalised at scale by word2vec (Mikolov et al., 2013) and GloVe (Pennington et al., 2014), which produced static word vectors that captured analogy structure and enabled early semantic similarity tasks. However, these word-level vectors were unsuitable for passage-level retrieval because they could not represent sentence or paragraph meaning in a single fixed-length vector that supported fast similarity lookup.
+    Embedding search emerged from the confluence of two strands of machine learning research: distributional semantics and scalable nearest-neighbour retrieval. The distributional hypothesis — that words appearing in similar contexts have similar meanings — was given algorithmic form by Bengio et al.'s neural language model (2003) and then operationalised at scale by word2vec (Mikolov et al., 2013) and GloVe (Pennington et al., 2014), which produced static word vectors that captured analogy structure and enabled early semantic similarity tasks. However, these word-level vectors were unsuitable for passage-level retrieval because they [private] not represent sentence or paragraph meaning in a single fixed-length vector that supported fast similarity lookup.
 
-    The transition to passage-level embedding search was catalysed by two innovations. First, the Universal Sentence Encoder (Cer et al., 2018) and Sentence-BERT (Reimers and Gurevych, 2019) fine-tuned transformer models to produce single fixed-length sentence or passage embeddings that could be compared directly by cosine similarity, enabling semantic textual similarity at scale. Sentence-BERT's siamese network architecture — two BERT encoders sharing weights, trained on natural language inference triplets — demonstrated that meaningful sentence-level embeddings could be produced in 10–500× less inference time than cross-encoder models. Second, Dense Passage Retrieval (Karpukhin et al., ACL 2020) showed that a dual-encoder BERT architecture, trained with in-batch negative sampling on open-domain question-answering data, could outperform BM25 keyword search by 9–21 percentage points in top-20 retrieval accuracy on Natural Questions and TriviaQA, definitively establishing that dense embedding search was a viable production alternative to sparse retrieval for knowledge-intensive tasks.
+    The transition to passage-level embedding search was catalysed by two innovations. First, the Universal Sentence Encoder (Cer et al., 2018) and Sentence-BERT (Reimers and Gurevych, 2019) fine-tuned transformer models to produce single fixed-length sentence or passage embeddings that [private] be compared directly by cosine similarity, enabling semantic textual similarity at scale. Sentence-BERT's siamese network architecture — two BERT encoders sharing weights, trained on natural language inference triplets — demonstrated that meaningful sentence-level embeddings [private] be produced in 10–500× less inference time than cross-encoder models. Second, Dense Passage Retrieval (Karpukhin et al., ACL 2020) showed that a dual-encoder BERT architecture, trained with in-batch negative sampling on open-domain question-answering data, [private] outperform BM25 keyword search by 9–21 percentage points in top-20 retrieval accuracy on Natural Questions and TriviaQA, definitively establishing that dense embedding search was a viable production alternative to sparse retrieval for knowledge-intensive tasks.
 
-    The scalability challenge was addressed in parallel by approximate nearest-neighbour (ANN) libraries. FAISS (Johnson et al., 2019), developed at Facebook AI Research, introduced GPU-accelerated inverted file indexes with product quantisation (IVF-PQ) that could search one billion 128-dimensional vectors in under 50ms. The Hierarchical Navigable Small World (HNSW) algorithm (Malkov and Yashunin, 2018) provided a graph-based index with O(log N) expected query time and recall@100 above 97% at standard settings, becoming the default index structure in purpose-built vector databases. ScaNN (Guo et al., 2020) from Google introduced anisotropic quantisation that prioritised direction over magnitude, improving recall for cosine-similarity workloads. These libraries made billion-scale embedding search feasible on commodity hardware, enabling the subsequent explosion in production deployment.
+    The scalability challenge was addressed in parallel by approximate nearest-neighbour (ANN) libraries. FAISS (Johnson et al., 2019), developed at Facebook AI Research, introduced GPU-accelerated inverted file indexes with product quantisation (IVF-PQ) that [private] search one billion 128-dimensional vectors in under 50ms. The Hierarchical Navigable Small World (HNSW) algorithm (Malkov and Yashunin, 2018) provided a graph-based [private] with O(log N) expected query time and recall@100 above 97% at standard settings, becoming the default [private] structure in purpose-built vector databases. ScaNN (Guo et al., 2020) from Google introduced anisotropic quantisation that prioritised direction over magnitude, improving recall for cosine-similarity workloads. These libraries made billion-scale embedding search feasible on commodity hardware, enabling the subsequent explosion in production deployment.
 
   ## Historical Development and Formal Foundations
     Embedding search operates within the framework of metric space retrieval. Given a corpus D = {d₁, d₂, …, dN} and a neural encoder fθ: text → ℝ^k mapping each document to a k-dimensional vector, and a separate query encoder fφ: text → ℝ^k, the retrieval problem is to find the top-m documents by score sim(q, dᵢ) = fφ(Q) · fθ(dᵢ) / (|fφ(Q)| |fθ(dᵢ)|) — cosine similarity — or sim(Q, dᵢ) = fφ(Q) · fθ(dᵢ) — inner product — where the dot-product form supports maximum inner product search (MIPS) algorithms.
 
-    Offline indexing pre-computes {fθ(dᵢ)}_{i=1}^N and stores them in an ANN index. Online retrieval requires only fφ(Q) — one encoder forward pass taking 10–30ms on GPU — followed by an ANN query returning top-m vectors in 1–10ms. This asymmetry — expensive offline pre-computation, cheap online retrieval — is the key architectural insight that makes embedding search viable at production scale. Documents are indexed once; queries arrive continuously at low latency.
+    Offline indexing pre-computes {fθ(dᵢ)}_{i=1}^N and stores them in an ANN [private]. Online retrieval requires only fφ(Q) — one encoder forward pass taking 10–30ms on GPU — followed by an ANN query returning top-m vectors in 1–10ms. This asymmetry — expensive offline pre-computation, cheap online retrieval — is the key architectural insight that makes embedding search viable at production scale. Documents are indexed once; queries arrive continuously at low latency.
 
     Training the encoders uses contrastive objectives. The Multiple Negative Ranking Loss (MNRL) maximises the similarity of a positive (query, passage) pair while using all other passages in the batch as negatives: L = -log(e^{sim(q,p+)/τ} / ∑_{j} e^{sim(q,pj)/τ}), where τ is a temperature hyperparameter (0.05 is common) and the sum runs over one positive and B-1 in-batch negatives. Hard negative mining — selecting difficult negatives using BM25 or a previous retriever checkpoint — substantially improves retrieval quality above random or in-batch negatives alone.
 
@@ -187,7 +200,7 @@ public: true
     - **API-Hosted Proprietary Models:** OpenAI text-embedding-3-large (1536/3072 dim, MTEB 64.6), Cohere Embed v4 (multimodal, supports text and images natively), Voyage AI voyage-3-large (MTEB ~70 text retrieval), Google Gemini Embedding 001 (MTEB English 68.32). All support MRL dimension truncation.
     - **Multimodal Embedding Models:** CLIP (OpenAI, 2021), Gemini Embedding 2 (Google, March 2026, 5-modality text/image/video/audio/PDF, 3072 dim), Voyage MM-3.5 (text+image+video, MRL support), Jina CLIP v2 (text+image). These align multiple modalities in a single vector space enabling cross-modal retrieval.
     - **Specialised Domain Encoders:** BioBERT, SciBERT, LegalBERT, CodeBERT — domain-adapted encoders for biomedical, scientific, legal, and code retrieval tasks where general-purpose models underperform due to domain vocabulary distribution shift.
-    - **ColBERT Late-Interaction Models:** ColBERTv2, PLAID index. Rather than a single vector per document, ColBERT stores per-token embeddings and scores MaxSim(Q,D)=∑_i max_j qᵢ·dⱼ, achieving higher accuracy at the cost of increased index storage. PLAID compression reduces storage to 24–32 bytes per token.
+    - **ColBERT Late-Interaction Models:** ColBERTv2, PLAID [private]. Rather than a single vector per document, ColBERT stores per-token embeddings and scores MaxSim(Q,D)=∑_i max_j qᵢ·dⱼ, achieving higher accuracy at the cost of increased [private] storage. PLAID compression reduces storage to 24–32 bytes per token.
 
   ## Use Cases
     Embedding search underpins a diverse range of production applications:
@@ -206,7 +219,7 @@ public: true
   ## Academic Context
     The research foundations of embedding search span distributional semantics, information retrieval, and deep learning. The distributional hypothesis (Harris, 1954) provides the theoretical basis for the approach. Key milestones include:
 
-    - **Bengio et al. (2003)** — Neural probabilistic language model: the first demonstration that neural networks could learn distributed word representations.
+    - **Bengio et al. (2003)** — Neural probabilistic language model: the first demonstration that neural networks [private] learn distributed word representations.
     - **Mikolov et al. (2013)** — word2vec skip-gram and CBOW: efficient shallow networks producing distributed word vectors at scale; analogy tasks demonstrated algebraic structure.
     - **Pennington et al. (2014)** — GloVe: global vectors from co-occurrence statistics, combining global corpus statistics with local context windows.
     - **Kiros et al. (2015)** — Skip-Thought Vectors: extending word2vec's skip-gram idea to sentence-level prediction.
@@ -233,7 +246,7 @@ public: true
 
     **Hybrid Retrieval as Default:** Production systems have largely converged on hybrid retrieval (dense vector search + BM25 sparse) as the default architecture. BM25 retains its advantages on exact-match queries for product codes, person names, and rare entities that may fall outside the embedding model's training distribution, while dense retrieval handles semantic variation. Reciprocal Rank Fusion with k=60 is the standard fusion method, with Elasticsearch 8.x, OpenSearch, and Vespa all providing native hybrid retrieval combining dense and sparse search in a single query path.
 
-    **Vector Database Infrastructure:** Qdrant (Rust-based, Series B funding March 2026) leads for production workloads requiring low-latency HNSW with excellent predicate-filtered search. Weaviate provides native hybrid search with GraphQL-based schema. pgvector is the default for PostgreSQL deployments with corpora under ~10M vectors. Milvus and Pinecone serve extreme-scale deployments with billions of vectors. All production vector databases now support multi-tenancy, real-time index updates, and payload-filtered ANN search.
+    **Vector Database Infrastructure:** Qdrant (Rust-based, Series B funding March 2026) leads for production workloads requiring low-latency HNSW with excellent predicate-filtered search. Weaviate provides native hybrid search with GraphQL-based schema. pgvector is the default for PostgreSQL deployments with corpora under ~10M vectors. Milvus and Pinecone serve extreme-scale deployments with billions of vectors. All production vector databases now support multi-tenancy, real-time [private] updates, and payload-filtered ANN search.
 
     **Long-Context Models:** Embedding models supporting 8k–128k token context windows (LongEmbed models, GTE-Qwen2-7B-instruct at 131k tokens) have improved retrieval for lengthy legal documents, technical manuals, and scientific papers that do not chunk cleanly at the passage level.
 
@@ -244,7 +257,7 @@ public: true
 
     In industry, UK financial services firms — concentrated in London, with significant presence in Manchester, Leeds, and Edinburgh — deploy embedding search for regulatory compliance document retrieval, anti-money-laundering entity matching, and analyst research tools. Manchester's startup ecosystem has grown substantially, attracting £1.5 billion in funding in 2025 (a 47% year-over-year increase), with AI and search technology companies among the beneficiaries. NHS England's digital transformation programme includes semantic search over clinical guidelines, drug formularies, and electronic health records to support clinical decision support; embedding search approaches are central to these deployments because clinical terminology mismatch between lay queries and technical documentation is acute.
 
-    Sheffield's Natural Language Processing group at the University of Sheffield (GATE project, Professor Hamish Cunningham's team) has long-standing work in information extraction and retrieval for biomedical applications, directly relevant to embedding-based document retrieval. Arm Holdings (Cambridge) and Graphcore (Bristol) develop custom silicon that accelerates both the transformer inference required for query encoding and the matrix operations underlying ANN index construction, contributing UK-origin hardware to the embedding search stack.
+    Sheffield's Natural Language Processing group at the University of Sheffield (GATE project, Professor Hamish Cunningham's team) has long-standing work in information extraction and retrieval for biomedical applications, directly relevant to embedding-based document retrieval. Arm Holdings (Cambridge) and Graphcore (Bristol) develop custom silicon that accelerates both the transformer inference required for query encoding and the matrix operations underlying ANN [private] construction, contributing UK-origin hardware to the embedding search stack.
 
   ## Future Directions (2026–2030)
     Several trajectories are reshaping embedding search:
@@ -253,7 +266,7 @@ public: true
     - **Universal Multimodal Embeddings:** Models like Gemini Embedding 2 and successors will align text, image, video, audio, graph, and structured data in a single vector space, enabling unified retrieval across all modalities without modality-specific indexes.
     - **Semantic Caching:** Embedding similarity is used to detect near-duplicate queries and return cached results, reducing redundant LLM inference calls in agentic systems. This requires embedding search to be fast enough to serve as a caching layer for LLM calls themselves.
     - **Privacy-Preserving Embeddings:** Concept-aware perturbation methods (e.g., Concept-Aware Privacy Mechanisms, arxiv 2602.07090) protect against embedding inversion attacks while preserving retrieval utility, driven by GDPR enforcement and EU AI Act requirements effective August 2026.
-    - **Streaming and Incremental Indexing:** Real-time index updates at millions-per-second insert rates (using delta indexes and background compaction) will enable embedding search over live data streams without indexing downtime windows.
+    - **Streaming and Incremental Indexing:** Real-time [private] updates at millions-per-second insert rates (using delta indexes and background compaction) will enable embedding search over live data streams without indexing downtime windows.
     - **Long-Context Native Encoders:** Models with context windows matching or exceeding document lengths (128k+ tokens) reduce the need for chunking strategies, enabling whole-document embeddings that capture global coherence rather than passage-local context.
     - **Benchmark Evolution:** MTEB v2 (2026) introduces cross-lingual, long-document, and multimodal retrieval tasks alongside the original English text-only suite, driving models to optimise for a broader capability profile.
 

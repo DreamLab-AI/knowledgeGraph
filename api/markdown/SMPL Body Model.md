@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SMPL Body Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "SMPL (Skinned Multi-Person Linear model) is a parametric 3D human body model that represents body shape and pose with a low-dimensional set of parameters driving a deformable triangle mesh. It separates identity-dependent shape blend shapes from pose-dependent corrective deformations, enabling realistic articulated bodies that fit motion capture and image data. It is a foundational representation in human pose and shape estimation pipelines.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ]
   },
   "quality": 0.72

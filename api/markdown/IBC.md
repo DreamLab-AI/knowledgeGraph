@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IBC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ibc:3263c2fa0903",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d8101d7e093c686817756b534c19fe12ba24f92912a16581fdb4e3f1a34449bc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cosmos SDK]]",
-      "resolved": "urn:visionflow:linked:cosmos-sdk",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Merkle Tree]]",
-      "resolved": "urn:visionflow:linked:merkle-tree",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Bridge]]",
-      "resolved": "urn:visionflow:linked:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tendermint]]",
-      "resolved": "urn:visionflow:linked:tendermint",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Interoperability]]",
-      "resolved": "urn:visionflow:linked:blockchain-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.ibcprotocol.dev]]",
-      "resolved": "urn:visionflow:linked:https-www-ibcprotocol-dev",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://github.com/cosmos/ibc]]",
-      "resolved": "urn:visionflow:linked:https-github-com-cosmos-ibc",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Inter-Blockchain Communication is a protocol for relaying authenticated data and tokens between independent blockchains. It is the native interoperability standard of the Cosmos ecosystem.

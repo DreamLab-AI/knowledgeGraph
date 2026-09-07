@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Player Two code]]
-# Player Two Platform Implementation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,18 +42,36 @@ elevatedFrom:: [[Player Two code]]
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:player-two", "label": "Player Two"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:player-two",
+        "label": "Player Two"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ]
   },
   "quality": 0.5,
@@ -70,26 +82,6 @@ elevatedFrom:: [[Player Two code]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:player-two-code:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d6e8bc45878db97fbcd7be8e81c6d7c63e27d1282a0cea4c3bce239f367064b7"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Player Two code is the technical implementation layer of the Player Two platform, comprising a Vue.js front-end, BIP85-derived key management for trustless authentication, a Nostr-relay-based messaging architecture, and middleware whitelist logic. It enables encrypted group collaboration without server-held keys, using derivation path m/44'/1237 for per-user identity.
@@ -159,7 +151,7 @@ elevatedFrom:: [[Player Two code]]
     Root --> tsconfig["tsconfig.json"]
     Root --> viteConfig["vite.config.ts"]
     Root --> playertwoConfig["playertwo.config.ts"]
-    Root --> indexHtml["index.html"]
+    Root --> indexHtml["[private].html"]
     Root --> keys["keys"]
     keys --> firebaseExample["firebase_example.json"]
     Root --> src["src"]
@@ -194,7 +186,7 @@ elevatedFrom:: [[Player Two code]]
 		- Each user of a system has a self generated bip85 master key.
 		- From that we can get access to all of the usual derivation paths.
 		- The path that they are using for their ID to authenticate with the server is m/44'/1237
-		- The users client creates a 32 byte private key from the 0 index of path 1237
+		- The users client creates a 32 byte private key from the 0 [private] of path 1237
 		- A public key is created from that.
 		- The public key is used as part of a webjson token to auth with a payment server, and the public key is added as hex to the whitelist for the server side
 		- The client can then communicate with "middleware" server which contains the whitelist.

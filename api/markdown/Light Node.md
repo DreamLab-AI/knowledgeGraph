@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Light Node
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,27 +75,60 @@ public: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
-      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"}
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"}
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
     ]
   },
   "provenance": {
@@ -110,62 +138,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:light-node:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8ef88e8de03f7749a9e30d0248e6fd9c45bc8d14e48ef7b53d8f2708fd5019e1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NetworkComponent]]",
-      "resolved": "urn:visionflow:owl:class:network-component",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Light Node is a blockchain network participant that downloads and verifies only block headers rather than the full transaction history, using Simplified Payment Verification (SPV) to confirm transaction inclusion via Merkle proofs. This design allows resource-constrained devices—mobile wallets, IoT devices, embedded clients—to interact securely with a blockchain without the storage and bandwidth demands of a Full Node.
@@ -181,7 +153,7 @@ public: true
 
   From a network-topology perspective, light nodes are consumers rather than contributors: they do not relay unconfirmed transactions, do not store historical blocks for other peers, and do not participate in block propagation. This means large populations of light nodes add negligible load to the peer-to-peer network while still benefiting from its security guarantees—a key scalability property supporting mass consumer adoption of blockchain-based payments.
 
-  Implementation variants include compact block filters (BIP 157/158), which allow light clients to download compressed summaries of block contents and determine locally whether any transactions are relevant, reducing privacy leakage compared to classical Bloom-filter SPV (BIP 37). This evolution addresses a recognised weakness wherein BIP-37 light clients could reveal their wallet addresses to the full nodes they queried.
+  Implementation variants include compact block filters (BIP 157/158), which allow light clients to download compressed summaries of block contents and determine locally whether any transactions are relevant, reducing privacy leakage compared to classical Bloom-filter SPV (BIP 37). This evolution addresses a recognised weakness wherein BIP-37 light clients [private] reveal their wallet addresses to the full nodes they queried.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

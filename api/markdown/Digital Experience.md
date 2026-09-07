@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Experience
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,37 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-experience:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:98e87483c71f55a44924d797112778d2365b4e91e7c55ae91bc3004974a6213b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital Experience encompasses the totality of interactions a user has with digital products, services, and environments — spanning web, mobile, and immersive (XR) surfaces. It integrates user interface design, content delivery, personalisation, and spatial computing to shape how users perceive and engage with digital platforms.

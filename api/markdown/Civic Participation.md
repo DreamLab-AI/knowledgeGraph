@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Civic Participation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:civic-participation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dc187a19e10d1bf7958a25b79ecbb27c639254e59780103bba44ccad8bcbda71"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collective Governance]]",
-      "resolved": "urn:visionflow:linked:collective-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Democracy]]",
-      "resolved": "urn:visionflow:linked:digital-democracy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Public Deliberation]]",
-      "resolved": "urn:visionflow:linked:public-deliberation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accessibility]]",
-      "resolved": "urn:visionflow:owl:class:accessibility",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Democratic Engagement]]",
-      "resolved": "urn:visionflow:owl:class:democratic-engagement",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Platform]]",
-      "resolved": "urn:visionflow:owl:class:digital-platform",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trust Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:trust-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.

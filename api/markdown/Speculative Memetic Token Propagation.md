@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Financialised Agentic Memetics]]
-# Speculative Memetic Token Propagation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,19 +47,40 @@ elevatedFrom:: [[Financialised Agentic Memetics]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:crypto-token", "label": "Crypto Token"},
-      {"@id": "urn:ngm:class:social-token-economy", "label": "Social Token Economy"}
+      {
+        "@id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "@id": "urn:ngm:class:social-token-economy",
+        "label": "Social Token Economy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:carbon-credit-token", "label": "Carbon Credit Token"}
+      {
+        "@id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "provenance": {
@@ -75,32 +90,6 @@ elevatedFrom:: [[Financialised Agentic Memetics]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:financialised-agentic-memetics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1fc01d8033cf8cb1e8bbef65d8a26f15a99d717736e7167f87b88fcfae2f7525"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Financial Nihilism]]",
-      "resolved": "urn:visionflow:linked:financial-nihilism",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The phenomenon in which AI agents and autonomous social actors propagate memetic content—ideas, tokens, political positions—tied to speculative financial instruments (memecoins, programmatically-aligned tokens) that derive value from attention and community adoption rather than underlying utility. This creates feedback loops between AI terminal outputs, social media virality, and tokenised capital allocation with tangible real-world effects.
@@ -127,9 +116,9 @@ elevatedFrom:: [[Financialised Agentic Memetics]]
 		- Tokens representing political candidates
 		- Biden and Trump tokens reached $700 million combined market cap
 		- These products led the  "betting markets" craze which accumulated far more attention
-		- Financialisation of opinion could lead governance policies in internet spaces
+		- Financialisation of opinion [private] lead governance policies in internet spaces
 		- Two-way dialogue between agents, formal governance structures, and external entities like policy makers
-		- Arguably could incentivises deeper understanding of policy mechanisms
+		- Arguably [private] incentivises deeper understanding of policy mechanisms
 		- Originated from AI terminal's environmental concern
 		- Raised capital for tangible environmental actions
 			- Donated to charities

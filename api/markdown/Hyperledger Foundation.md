@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - HyperledgerFoundation
----
-
-# hyperledger foundation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

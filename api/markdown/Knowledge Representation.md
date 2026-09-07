@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Knowledge Representation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,52 +200,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:knowledge-representation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2610607495987874185a2fe856c2c73f5d12cec16ed825e0d8b0305202098b94"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ontology]]",
-      "resolved": "urn:visionflow:linked:ontology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reasoning Systems]]",
-      "resolved": "urn:visionflow:linked:reasoning-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Web Linked Data Standard]]",
-      "resolved": "urn:visionflow:owl:class:semantic-web",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making. Approaches include symbolic systems (first-order logic, description logics, semantic networks), graph-based representations (knowledge graphs, ontologies), probabilistic models (Bayesian networks, Markov logic networks), and distributed representations (embeddings, neural symbolic integration). Modern knowledge representation combines symbolic and subsymbolic methods, enabling systems to perform logical reasoning while learning from data.

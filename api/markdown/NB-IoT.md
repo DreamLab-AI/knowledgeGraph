@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NB-IoT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "NB-IoT (Narrowband Internet of Things) is a 3GPP low-power wide-area cellular standard designed to connect large numbers of simple, battery-powered devices over licensed spectrum. It trades bandwidth and latency for deep indoor coverage, long battery life, and low module cost, operating within or alongside existing LTE deployments. It is widely used for metering, asset tracking, and environmental sensing where devices transmit small amounts of data infrequently.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"}
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
     ]
   },
   "quality": 0.72

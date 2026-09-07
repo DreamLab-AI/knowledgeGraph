@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,16 +55,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:digital-modeling", "label": "Digital Modeling"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-modeling",
+        "label": "Digital Modeling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:digital-twin-infrastructure", "label": "Digital Twin Infrastructure"}
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-infrastructure",
+        "label": "Digital Twin Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ]
   },
   "provenance": {
@@ -79,37 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0cfaa2c93db0215c5b6383860795cbf21bad6a03d663cd41d48e01e987393efe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Digital Model is a structured computational representation of a real-world or conceptual entity, capturing geometry, behaviour, and semantic attributes for use in simulation, visualisation, or analysis. Digital models underpin virtual environments, digital twins, and spatial computing applications by providing machine-readable, interoperable representations of physical or abstract objects.

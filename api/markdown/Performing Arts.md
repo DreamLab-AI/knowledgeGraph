@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Performing Arts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,17 +51,38 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Venue-Tethered Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:venue-tethered-immersive-experience",
+        "label": "Venue-Tethered Immersive Experience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:music-and-audio", "label": "Music and Audio"},
-      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}
+      {
+        "@id": "urn:ngm:class:music-and-audio",
+        "label": "Music and Audio"
+      },
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
     ]
   },
   "provenance": {
@@ -76,32 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:performing-arts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0068a5a6188d27e254e418b9d615c283839f735b2353f186441c2cec3902f190"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Time-based artistic disciplines—including theatre, dance, music, and live performance—that occur in shared space between performers and audience. In spatial computing contexts, performing arts intersect with virtual production, motion capture, and location-based experiences to create hybrid physical-digital performances that extend audience reach and deepen narrative immersion.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Participant Coordination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:participant-coordination:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3a61ea5efdfc21417027f58264d549497396c16436c4f23b2dd0de8978453216"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Shared Virtual Experiences]]",
-      "resolved": "urn:visionflow:linked:shared-virtual-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-User Systems]]",
-      "resolved": "urn:visionflow:owl:class:multi-user-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.

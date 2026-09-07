@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI Domain Application + Health
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -103,67 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-application-health:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f01f9ea97cf3f59002d6661383b7211175fd8f31caa9106972f2edc82e0a6f02"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ETSI Domain Taxonomy]]",
-      "resolved": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GS MEC]]",
-      "resolved": "urn:visionflow:linked:etsi-gs-mec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Medical Platform Categorization]]",
-      "resolved": "urn:visionflow:linked:medical-platform-categorization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Healthcare Application Classification]]",
-      "resolved": "urn:visionflow:owl:class:healthcare-application-classification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualSocietyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-society",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cross-domain marker for metaverse application components focused on healthcare and wellness including telemedicine platforms, medical training simulations, therapeutic VR applications, and health monitoring systems.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ArcFace
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,47 +7,170 @@ public: true
   "title": "ArcFace",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:facial-recognition", "vc:label": "Facial Recognition"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:embedding", "vc:label": "Embedding"},
-    {"@id": "urn:visionflow:linked:cosine-similarity", "vc:label": "Cosine Similarity"},
-    {"@id": "urn:visionflow:linked:biometric-verification", "vc:label": "Biometric Verification"},
-    {"@id": "urn:visionflow:linked:identity-verification", "vc:label": "Identity Verification"},
-    {"@id": "urn:visionflow:linked:feature-extraction", "vc:label": "Feature Extraction"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:neural-network-architecture", "vc:label": "Neural Network Architecture"},
-    {"@id": "urn:visionflow:linked:contrastive-learning", "vc:label": "Contrastive Learning"},
-    {"@id": "urn:visionflow:linked:representation-learning", "vc:label": "Representation Learning"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:batch-normalisation", "vc:label": "Batch Normalisation"},
-    {"@id": "urn:visionflow:linked:dropout", "vc:label": "Dropout"},
-    {"@id": "urn:visionflow:linked:liveness-detection", "vc:label": "Liveness Detection"},
-    {"@id": "urn:visionflow:linked:face-swap", "vc:label": "Face Swap"},
-    {"@id": "urn:visionflow:linked:biometric-authentication", "vc:label": "Biometric Authentication"},
-    {"@id": "urn:visionflow:linked:access-control", "vc:label": "Access Control"},
-    {"@id": "urn:visionflow:linked:image-processing", "vc:label": "Image Processing"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:cross-entropy-loss", "vc:label": "Cross-Entropy Loss"},
-    {"@id": "urn:visionflow:linked:deep-neural-network", "vc:label": "Deep Neural Network"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:biometric-data", "vc:label": "Biometric Data"},
-    {"@id": "urn:visionflow:linked:surveillance", "vc:label": "Surveillance"},
-    {"@id": "urn:visionflow:linked:data-protection", "vc:label": "Data Protection"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:anomaly-detection", "vc:label": "Anomaly Detection"},
-    {"@id": "urn:visionflow:linked:fraud-detection", "vc:label": "Fraud Detection"},
-    {"@id": "urn:visionflow:linked:know-your-customer", "vc:label": "Know Your Customer"},
-    {"@id": "urn:visionflow:linked:digital-identity-verification", "vc:label": "Digital Identity Verification"},
-    {"@id": "urn:visionflow:linked:hyperparameter-tuning", "vc:label": "Hyperparameter Tuning"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:self-supervised-learning", "vc:label": "Self-Supervised Learning"}
+    {
+      "@id": "urn:visionflow:linked:facial-recognition",
+      "vc:label": "Facial Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding",
+      "vc:label": "Embedding"
+    },
+    {
+      "@id": "urn:visionflow:linked:cosine-similarity",
+      "vc:label": "Cosine Similarity"
+    },
+    {
+      "@id": "urn:visionflow:linked:biometric-verification",
+      "vc:label": "Biometric Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:identity-verification",
+      "vc:label": "Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network-architecture",
+      "vc:label": "Neural Network Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:contrastive-learning",
+      "vc:label": "Contrastive Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-normalisation",
+      "vc:label": "Batch Normalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:dropout",
+      "vc:label": "Dropout"
+    },
+    {
+      "@id": "urn:visionflow:linked:liveness-detection",
+      "vc:label": "Liveness Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:face-swap",
+      "vc:label": "Face Swap"
+    },
+    {
+      "@id": "urn:visionflow:linked:biometric-authentication",
+      "vc:label": "Biometric Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:access-control",
+      "vc:label": "Access Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-processing",
+      "vc:label": "Image Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-entropy-loss",
+      "vc:label": "Cross-Entropy Loss"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-neural-network",
+      "vc:label": "Deep Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:biometric-data",
+      "vc:label": "Biometric Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:surveillance",
+      "vc:label": "Surveillance"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-protection",
+      "vc:label": "Data Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:fraud-detection",
+      "vc:label": "Fraud Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:know-your-customer",
+      "vc:label": "Know Your Customer"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-identity-verification",
+      "vc:label": "Digital Identity Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-supervised-learning",
+      "vc:label": "Self-Supervised Learning"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -68,54 +186,159 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:facial-recognition", "label": "Facial Recognition"},
-    {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+    {
+      "@id": "urn:ngm:class:facial-recognition",
+      "label": "Facial Recognition"
+    },
+    {
+      "@id": "urn:ngm:class:loss-function",
+      "label": "Loss Function"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
-      {"@id": "urn:ngm:class:cosine-similarity", "label": "Cosine Similarity"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:cross-entropy-loss", "label": "Cross-Entropy Loss"},
-      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:biometric-verification", "label": "Biometric Verification"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:digital-identity-verification", "label": "Digital Identity Verification"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"}
+      {
+        "@id": "urn:ngm:class:biometric-verification",
+        "label": "Biometric Verification"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"}
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
-      {"@id": "urn:ngm:class:cross-entropy-loss", "label": "Cross-Entropy Loss"}
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"},
-      {"@id": "urn:ngm:class:liveness-detection", "label": "Liveness Detection"},
-      {"@id": "urn:ngm:class:face-swap", "label": "Face Swap"},
-      {"@id": "urn:ngm:class:biometric-data", "label": "Biometric Data"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      },
+      {
+        "@id": "urn:ngm:class:face-swap",
+        "label": "Face Swap"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-data",
+        "label": "Biometric Data"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:surveillance", "label": "Surveillance"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {
+        "@id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ]
   },
   "quality": 0.92,
@@ -124,61 +347,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "R1Explicit"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:arc-face:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:arc-face"},
-  "vc:resolutions": [
-    {"raw": "[[Facial Recognition]]", "resolved": "urn:visionflow:linked:facial-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "ResolvedLink"},
-    {"raw": "[[Embedding]]", "resolved": "urn:visionflow:linked:embedding", "kind": "ResolvedLink"},
-    {"raw": "[[Cosine Similarity]]", "resolved": "urn:visionflow:linked:cosine-similarity", "kind": "ResolvedLink"},
-    {"raw": "[[Biometric Verification]]", "resolved": "urn:visionflow:linked:biometric-verification", "kind": "ResolvedLink"},
-    {"raw": "[[Identity Verification]]", "resolved": "urn:visionflow:linked:identity-verification", "kind": "ResolvedLink"},
-    {"raw": "[[Feature Extraction]]", "resolved": "urn:visionflow:linked:feature-extraction", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network Architecture]]", "resolved": "urn:visionflow:linked:neural-network-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Contrastive Learning]]", "resolved": "urn:visionflow:linked:contrastive-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Representation Learning]]", "resolved": "urn:visionflow:linked:representation-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Backpropagation]]", "resolved": "urn:visionflow:linked:backpropagation", "kind": "ResolvedLink"},
-    {"raw": "[[Batch Normalisation]]", "resolved": "urn:visionflow:linked:batch-normalisation", "kind": "ResolvedLink"},
-    {"raw": "[[Dropout]]", "resolved": "urn:visionflow:linked:dropout", "kind": "ResolvedLink"},
-    {"raw": "[[Liveness Detection]]", "resolved": "urn:visionflow:linked:liveness-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Face Swap]]", "resolved": "urn:visionflow:linked:face-swap", "kind": "ResolvedLink"},
-    {"raw": "[[Biometric Authentication]]", "resolved": "urn:visionflow:linked:biometric-authentication", "kind": "ResolvedLink"},
-    {"raw": "[[Access Control]]", "resolved": "urn:visionflow:linked:access-control", "kind": "ResolvedLink"},
-    {"raw": "[[Image Processing]]", "resolved": "urn:visionflow:linked:image-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Model Training]]", "resolved": "urn:visionflow:linked:model-training", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Cross-Entropy Loss]]", "resolved": "urn:visionflow:linked:cross-entropy-loss", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Neural Network]]", "resolved": "urn:visionflow:linked:deep-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[Biometric Data]]", "resolved": "urn:visionflow:linked:biometric-data", "kind": "ResolvedLink"},
-    {"raw": "[[Surveillance]]", "resolved": "urn:visionflow:linked:surveillance", "kind": "ResolvedLink"},
-    {"raw": "[[Data Protection]]", "resolved": "urn:visionflow:linked:data-protection", "kind": "ResolvedLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Anomaly Detection]]", "resolved": "urn:visionflow:linked:anomaly-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Fraud Detection]]", "resolved": "urn:visionflow:linked:fraud-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Know Your Customer]]", "resolved": "urn:visionflow:linked:know-your-customer", "kind": "ResolvedLink"},
-    {"raw": "[[Digital Identity Verification]]", "resolved": "urn:visionflow:linked:digital-identity-verification", "kind": "ResolvedLink"},
-    {"raw": "[[Hyperparameter Tuning]]", "resolved": "urn:visionflow:linked:hyperparameter-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "ResolvedLink"},
-    {"raw": "[[Self-Supervised Learning]]", "resolved": "urn:visionflow:linked:self-supervised-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "StubLink"},
-    {"raw": "[[Dropout]]", "resolved": "urn:visionflow:linked:dropout", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -314,7 +482,7 @@ public: true
     - **Scale factor s**: A scalar (typically 64) multiplies all logits before softmax to sharpen the probability distribution, compensating for the unit-sphere constraint that would otherwise produce very low-entropy distributions. The scale factor is a [[Hyperparameter Tuning]] decision; values of 32 (smaller datasets) and 128 (very large datasets with many identities) are also used.
     - **[[Cross-Entropy Loss]]**: The standard cross-entropy is applied to the scaled, margin-modified logits, yielding a single scalar training signal that propagates through [[Backpropagation]] to all backbone weights. The total loss is purely cross-entropy — there is no auxiliary metric learning objective, no regularisation term beyond weight decay, and no hard-negative mining. This simplicity is one of ArcFace's practical advantages over triplet-based approaches.
     - **[[Gradient Descent]] and optimiser**: ArcFace is trained with SGD + momentum (momentum 0.9, weight decay 5e-4) with a cosine or step learning rate schedule, decaying from 0.1 to 0. The Adam optimiser can also be used but SGD with momentum is reported to give slightly better generalisation on large face datasets. Mixed-precision training (FP16 for backbone activations, FP32 for the ArcFace weight matrix and loss) is standard for [[GPU Compute]] efficiency.
-    - **Inference protocol**: At inference, the final classification head is discarded. The normalised 512-d [[Embedding]] of a probe face is compared against gallery embeddings using [[Cosine Similarity]]; a threshold (calibrated per operating point) determines accept/reject for [[Biometric Verification]], or ranked similarity over a FAISS or ScaNN index yields top-K candidates for identification. The threshold calibration typically targets a specific FAR operating point (e.g. FAR=1e-4 for mobile unlock, FAR=1e-6 for border control) using a held-out calibration set.
+    - **Inference protocol**: At inference, the final classification head is discarded. The normalised 512-d [[Embedding]] of a probe face is compared against gallery embeddings using [[Cosine Similarity]]; a threshold (calibrated per operating point) determines accept/reject for [[Biometric Verification]], or ranked similarity over a FAISS or ScaNN [private] yields top-K candidates for identification. The threshold calibration typically targets a specific FAR operating point (e.g. FAR=1e-4 for mobile unlock, FAR=1e-6 for border control) using a held-out calibration set.
 
     **Mathematical formulation summary**:
     Given input feature x_i (L2-normalised, dim 512), class weight W_j (L2-normalised, dim 512), scale s, margin m:
@@ -367,7 +535,7 @@ public: true
 
     **Border Control and Immigration**: The UK Home Office began a proof-of-concept deployment of live [[Facial Recognition]] at ports of entry in late 2025, comparing travellers' faces against deported-person watchlists. The Electronic Travel Authorisation (ETA) system introduced in 2023–2024 relies on face-to-document verification using ArcFace-class embeddings for 100% of applicants. Entrust's document verification platform, used by the UK Home Office for ETA processing, integrates face-matching via hyperspherical embedding comparison.
 
-    **Law Enforcement Watchlist Search**: One-to-many identification against watchlists — the higher-risk mode regulated under the [[EU AI Act]] as a prohibited practice in most real-time public-space deployments — uses ArcFace embeddings with approximate nearest-neighbour index structures (FAISS, ScaNN) over gallery databases of millions of enrolled identities. UK police use has been subject to ICO scrutiny and a parliamentary committee review in 2026.
+    **Law Enforcement Watchlist Search**: One-to-many identification against watchlists — the higher-risk mode regulated under the [[EU AI Act]] as a prohibited practice in most real-time public-space deployments — uses ArcFace embeddings with approximate nearest-neighbour [private] structures (FAISS, ScaNN) over gallery databases of millions of enrolled identities. UK police use has been subject to ICO scrutiny and a parliamentary committee review in 2026.
 
     **Access Control and Physical Security**: Mobile-phone face unlock, enterprise building access, and ATM authentication all use ArcFace-derived models deployed on-device for [[Access Control]]. InsightFace provides MobileNet-based ArcFace models that run at 30+ fps on ARM processors, enabling real-time [[Biometric Verification]] without cloud round-trips.
 
@@ -381,7 +549,7 @@ public: true
     - **Face detection and alignment**: RetinaFace or SCRFD detects face bounding boxes and five landmark points; affine transformation aligns the face to the canonical 112×112 frontal template. Multiple detected faces trigger an anti-spoofing policy (are multiple simultaneous faces expected in this application?).
     - **[[Liveness Detection]] module**: Passive or active PAD assessment (ISO/IEC 30107-3) is applied to the captured face before or concurrently with embedding extraction. Passive methods analyse texture patterns, frequency spectrum, and motion consistency; active methods issue a challenge (blink, turn head) and verify compliance.
     - **ArcFace embedding extraction**: The aligned face chip passes through the pretrained backbone network to produce a 512-dimensional embedding vector, which is L2-normalised to unit length before storage or comparison.
-    - **Gallery management**: Enrolled identity embeddings are stored in an indexed gallery. For 1:1 verification, a single stored template is compared; for 1:N identification, an approximate nearest-neighbour index (FAISS IVF-PQ, ScaNN, Annoy) enables sub-linear search over millions of enrolled identities.
+    - **Gallery management**: Enrolled identity embeddings are stored in an indexed gallery. For 1:1 verification, a single stored template is compared; for 1:N identification, an approximate nearest-neighbour [private] (FAISS IVF-PQ, ScaNN, Annoy) enables sub-linear search over millions of enrolled identities.
     - **Score normalisation and threshold application**: The raw [[Cosine Similarity]] score is passed through a calibrated threshold (or sigmoid-transformed score normalisation function) to produce a calibrated probability of genuine match. The threshold is set per operating point (FAR target) using a held-out calibration set representative of the operational population.
     - **[[Anomaly Detection]] and audit logging**: Score distributions are monitored in production for drift (e.g., increasing proportion of borderline scores that might indicate embedding space shift after model update) and all match/non-match decisions are logged for regulatory audit compliance under UK GDPR Article 22's right to explanation for automated decisions.
 
@@ -403,7 +571,7 @@ public: true
 
     Research into making ArcFace embeddings themselves more resistant to deepfakes has produced the NullSwap (2025, arXiv:2503.18678) approach, which applies proactive protective perturbations to face images before they are processed by face-swap architectures, disrupting the ArcFace identity signal that face-swap models rely upon while preserving the appearance to human observers. This technique — protective perturbation against deepfake face swapping — represents a fundamentally different threat model to passive detection: rather than detecting that a swap has occurred, it prevents the swap from carrying the target's ArcFace identity in the first place.
 
-    Privacy-preserving variants have emerged as a significant research direction. DuetFace (2022) splits the recognition pipeline across client and server using frequency-domain channel splitting, preventing either party from reconstructing the face image while enabling accurate ArcFace-based matching. The client retains high-frequency channels (which encode texture details from which the face could be reconstructed) and the server processes only low-frequency channels that are insufficient for visual reconstruction but sufficient for identity-discriminative ArcFace matching. Synthetic training data is becoming a serious alternative to privacy-sensitive web-crawled datasets: the VariFace (2024, arXiv:2412.06235) and SFace lines of work show synthetic face datasets can achieve recognition performance competitive with MS-Celeb-1M on IJB-C while eliminating the consent and scraping ethics concerns that caused MS-Celeb-1M to be taken offline in 2019. VariFace generates fair and diverse face datasets using identity-conditioned diffusion models, directly addressing the demographic imbalance in scraped datasets that drives ArcFace accuracy disparities.
+    Privacy-preserving variants have emerged as a significant research direction. DuetFace (2022) splits the recognition pipeline across client and server using frequency-domain channel splitting, preventing either party from reconstructing the face image while enabling accurate ArcFace-based matching. The client retains high-frequency channels (which encode texture details from which the face [private] be reconstructed) and the server processes only low-frequency channels that are insufficient for visual reconstruction but sufficient for identity-discriminative ArcFace matching. Synthetic training data is becoming a serious alternative to privacy-sensitive web-crawled datasets: the VariFace (2024, arXiv:2412.06235) and SFace lines of work show synthetic face datasets can achieve recognition performance competitive with MS-Celeb-1M on IJB-C while eliminating the consent and scraping ethics concerns that caused MS-Celeb-1M to be taken offline in 2019. VariFace generates fair and diverse face datasets using identity-conditioned diffusion models, directly addressing the demographic imbalance in scraped datasets that drives ArcFace accuracy disparities.
 
     The UK government launched the Deepfake Detection Challenge in December 2025 with DSIT commissioning PUBLIC to map 59 UK and global deepfake detection providers; six teams — including IBM, Oxford Wave Research, and Open Origins — developed solutions undergoing benchmark testing and user trials by 2026. The UK Home Office's proof-of-concept live [[Facial Recognition]] deployment at ports (announced November 2025) drew regulatory scrutiny from the ICO and the Biometrics and Surveillance Camera Commissioner, who in May 2026 criticised the patchwork of UK policy for law enforcement [[Facial Recognition]], calling for a consolidated statutory framework that harmonises police, immigration, and commercial-sector biometric use under a single regulatory regime. The [[EU AI Act]]'s prohibitions on real-time remote biometric identification in public spaces have created regulatory divergence between EU and UK deployments, with UK vendors increasingly targeting non-EU markets and the UK government's pro-innovation stance attracting facial recognition vendors to redomicile their compliance activities to the UK. The [[Data Protection]] obligations under UK GDPR Article 9 — which treats biometric [[Biometric Data]] used for identification as a special category requiring explicit consent or a lawful basis — constrain but do not prohibit ArcFace-based [[Facial Recognition]] in the UK, creating a complex compliance landscape managed through the ICO's published guidance on biometric data in the workplace and public spaces.
 

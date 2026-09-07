@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Curve Wars
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,46 +173,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:curve-wars:f04f15390615",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6c5e6b7f43599a31fce3ccbe4a4f557132c3e4b9419c427c4b8a67eb6b3239bc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Vote-Escrow Model]]",
-      "resolved": "urn:visionflow:linked:vote-escrow-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convex Finance]]",
-      "resolved": "urn:visionflow:linked:convex-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Pool]]",
-      "resolved": "urn:visionflow:linked:liquidity-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Provision]]",
-      "resolved": "urn:visionflow:linked:liquidity-provision",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - The Curve Wars is the competitive dynamic in [[Decentralised Finance]] in which protocols race to accumulate vote-escrowed governance power over [[Curve Finance]] in order to redirect its [[Token Emission]] rewards (via [[Gauge Weight Voting]]) toward liquidity pools that benefit their own assets. The contest created a layered meta-economy of bribery, aggregated voting, and derivative tokens on top of the foundational [[Vote-Escrow Model]], illustrating how [[Tokenomics]] design choices can produce emergent, game-theoretic arms races among autonomous protocols.
 
@@ -302,7 +257,7 @@ public: true
     - [[Game Theory]] analyses of the equilibrium suggest that bribing is often cheaper than direct CRV acquisition in the short run, but the equilibrium collapses if bribe demand exceeds protocol token budgets.
     - The emergence of a dominant aggregator ([[Convex Finance]]) reflects a coordination equilibrium where depositing with the largest aggregator maximises individual returns, concentrating power further.
   - #### Security and Risk Dimensions
-    - Concentrated veCRV in a single aggregator creates systemic risk: a governance attack on Convex could cascade to Curve gauge weights and destabilise dependent pools.
+    - Concentrated veCRV in a single aggregator creates systemic risk: a governance attack on Convex [private] cascade to Curve gauge weights and destabilise dependent pools.
     - Smart contract risks in [[Smart Contract]] aggregator code represent an additional attack surface; several Curve-adjacent protocols have suffered exploits.
     - The model underscores that [[Security]] in DeFi is not purely a code-auditing problem but also a governance-design problem.
   - #### Relationship to MEV

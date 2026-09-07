@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy Protection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

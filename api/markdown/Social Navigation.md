@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Social Navigation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,24 +64,60 @@ public: true
   "qualityScore": 0.75,
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:proxemics", "label": "Proxemics"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:proxemics",
+        "label": "Proxemics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"},
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"}
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
     ]
   },
   "provenance": {
@@ -96,47 +127,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:social-navigation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:82c986b34ddd2168b9bb34f34b048d53395952e1edf8fcbe1f5377fb06830b12"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[HRI]]",
-      "resolved": "urn:visionflow:linked:hri",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mobile Robotics]]",
-      "resolved": "urn:visionflow:linked:mobile-robotics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.

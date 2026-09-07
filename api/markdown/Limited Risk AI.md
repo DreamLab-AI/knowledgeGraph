@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Limited Risk AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bias", "label": "Bias"}
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ]
   },
   "quality": 0.5,
@@ -79,32 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:limited-risk-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:73866c6e048636fd0be313204c5ccc81cd5d5d4ef06ed8e327274536eb734114"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI systems subject only to transparency obligations, requiring users to be informed they are interacting with AI. These systems include chatbots, emotion recognition, biometric categorisation, and deepfake generation.

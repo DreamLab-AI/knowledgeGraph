@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Symbolic AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -209,47 +204,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:symbolic-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:165d3ae7770f44216740199936f318141ff02ae649cc559b7b5831b2cc063239"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AAAI]]",
-      "resolved": "urn:visionflow:linked:aaai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Academic AI Research]]",
-      "resolved": "urn:visionflow:linked:academic-ai-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Artificial intelligence based on symbolic representations of problems, logic, and search algorithms, also known as Good Old-Fashioned AI (GOFAI).

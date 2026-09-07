@@ -1,37 +1,125 @@
----
-public: true
----
-
-# Hardware Accelerator
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:hardware-accelerator", "@type":"Page", "title":"Hardware Accelerator", "vc:slug":"hardware-accelerator", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:hardware-accelerator",
-  "@type":"Class",
-  "label":"Hardware Accelerator",
-  "definition":"A hardware accelerator is a specialised electronic device designed to perform a particular class of computation far more efficiently than a general-purpose central processing unit. By dedicating silicon to highly parallel arithmetic such as matrix multiplication, accelerators dramatically increase throughput and energy efficiency for workloads like neural network training and inference. Common forms include graphics processing units, tensor processing units, field-programmable gate arrays and application-specific integrated circuits.",
-  "domain":"machine-learning",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:compute-infrastructure","label":"Compute Infrastructure"}],
-    "implements":[{"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"},{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}],
-    "enables":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"},{"@id":"urn:ngm:class:model-training","label":"Model Training"}],
-    "dependsOn":[{"@id":"urn:ngm:class:compute-infrastructure","label":"Compute Infrastructure"}],
-    "requires":[{"@id":"urn:ngm:class:energy-efficiency","label":"Energy Efficiency"}],
-    "supports":[{"@id":"urn:ngm:class:inference-engine","label":"Inference Engine"},{"@id":"urn:ngm:class:neural-network","label":"Neural Network"}],
-    "hasPart":[{"@id":"urn:ngm:class:gpu","label":"GPU"},{"@id":"urn:ngm:class:tpu","label":"TPU"},{"@id":"urn:ngm:class:fpga","label":"FPGA"},{"@id":"urn:ngm:class:asic","label":"ASIC"}],
-    "relatedTo":[{"@id":"urn:ngm:class:graphics-processing-unit","label":"Graphics Processing Unit"},{"@id":"urn:ngm:class:inference","label":"Inference"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:hardware-accelerator",
+  "@type": "Page",
+  "title": "Hardware Accelerator",
+  "vc:slug": "hardware-accelerator",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hardware-accelerator",
+  "@type": "Class",
+  "label": "Hardware Accelerator",
+  "definition": "A hardware accelerator is a specialised electronic device designed to perform a particular class of computation far more efficiently than a general-purpose central processing unit. By dedicating silicon to highly parallel arithmetic such as matrix multiplication, accelerators dramatically increase throughput and energy efficiency for workloads like neural network training and inference. Common forms include graphics processing units, tensor processing units, field-programmable gate arrays and application-specific integrated circuits.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware-acceleration",
+      "label": "Hardware Acceleration"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:tpu",
+        "label": "TPU"
+      },
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - A hardware accelerator is specialised silicon that performs a class of computation more efficiently than a general CPU. It implements [[Hardware Acceleration]] and [[Parallel Computing]] to drive [[Deep Learning]], enabling fast [[Model Training]] and [[Inference]] while improving [[Energy Efficiency]].
 - ### Overview

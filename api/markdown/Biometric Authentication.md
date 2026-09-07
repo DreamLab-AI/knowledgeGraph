@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - BiometricAuthentication
----
-
-# Biometric Authentication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

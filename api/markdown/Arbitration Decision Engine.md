@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Arbitration Decision Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,72 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:arbitration-decision-engine:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a2cd5c61fedffce2e2e28f2f115dfe9bfdb5cce7b38636f381ef639f7993a96a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Automated Dispute Resolution]]",
-      "resolved": "urn:visionflow:linked:automated-dispute-resolution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Integration]]",
-      "resolved": "urn:visionflow:linked:blockchain-integration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralized Arbitration]]",
-      "resolved": "urn:visionflow:linked:decentralized-arbitration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Evidence Authentication]]",
-      "resolved": "urn:visionflow:linked:evidence-authentication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Rule Encoding]]",
-      "resolved": "urn:visionflow:linked:rule-encoding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Self-Enforcing Awards]]",
-      "resolved": "urn:visionflow:linked:self-enforcing-awards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Smart Contract Resolution]]",
-      "resolved": "urn:visionflow:linked:smart-contract-resolution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Arbitration Decision Engine is an AI-powered or smart contract-based automated system that evaluates evidence, applies predetermined rules, and renders decisions in dispute resolution processes, functioning as an oracle that can trigger smart contract modifications and enable self-enforcing arbitral outcomes.

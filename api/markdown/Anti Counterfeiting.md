@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Anti Counterfeiting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,19 +95,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:luxury-goods-authentication", "label": "Luxury Goods Authentication"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:luxury-goods-authentication",
+        "label": "Luxury Goods Authentication"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
     ]
   },
   "quality": 0.5,
@@ -123,82 +139,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:anti-counterfeiting:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dbef4932ee6261bbbad3cbafdd749069a5a9023c21e79470d9700db010eebeb0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BC-0426-hyperledger-fabric]]",
-      "resolved": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0432-consortium-blockchain]]",
-      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0441-provenance-tracking]]",
-      "resolved": "urn:visionflow:linked:bc-0441-provenance-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0442-pharmaceutical-traceability]]",
-      "resolved": "urn:visionflow:linked:bc-0442-pharmaceutical-traceability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0444-luxury-goods-authentication]]",
-      "resolved": "urn:visionflow:linked:bc-0444-luxury-goods-authentication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0446-supply-chain-traceability]]",
-      "resolved": "urn:visionflow:linked:bc-0446-supply-chain-traceability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0476-aml-kyc-compliance]]",
-      "resolved": "urn:visionflow:linked:bc-0476-aml-kyc-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 20248]]",
-      "resolved": "urn:visionflow:linked:iso-iec-20248",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD]]",
-      "resolved": "urn:visionflow:linked:oecd",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, electronics, and consumer products.
@@ -262,11 +202,11 @@ public: true
 
 		- **Food and Beverage**: Carrefour extends IBM Food Trust across **12,000 stores in 33 countries** for poultry, tomato, and honey tracking, planning expansion to all Carrefour brands through partnerships with Unilever and Nestlé. Penfolds' VeChain implementation addresses Chinese counterfeit alcohol markets where **30% of all alcohol and 70% of wine** are fake, following police seizures of **14,000-50,000 fake bottles** in single incidents. The NFC tag integration enables customer verification of tamper-proof product details.
 
-		- **Tobacco Industry**: Philip Morris International's blockchain tax stamp tracking on cigarette boxes could save **up to £20 million** by reducing paperwork and fraud in an industry facing **£100 million annual** tax stamp fraud costs, with individual packet stamps worth **~£5.50** representing significant revenue protection opportunities.
+		- **Tobacco Industry**: Philip Morris International's blockchain tax stamp tracking on cigarette boxes [private] save **up to £20 million** by reducing paperwork and fraud in an industry facing **£100 million annual** tax stamp fraud costs, with individual packet stamps worth **~£5.50** representing significant revenue protection opportunities.
 
   - ### Cost-Benefit Analysis
 
-		- **Direct Cost Savings**: Major pharmaceutical companies report **£200 million annual** fraud loss reductions through blockchain authentication, with one company saving **£500,000 annually** in intellectual property enforcement costs. Supply chains implementing blockchain demonstrate **50% efficiency improvements** through faster transactions, reduced paperwork, and real-time tracking capabilities. Electronics companies deploying blockchain with IoT could reduce fraudulent sales by **60-80%**, whilst complaint rates decrease by **50%** in implementations.
+		- **Direct Cost Savings**: Major pharmaceutical companies report **£200 million annual** fraud loss reductions through blockchain authentication, with one company saving **£500,000 annually** in intellectual property enforcement costs. Supply chains implementing blockchain demonstrate **50% efficiency improvements** through faster transactions, reduced paperwork, and real-time tracking capabilities. Electronics companies deploying blockchain with IoT [private] reduce fraudulent sales by **60-80%**, whilst complaint rates decrease by **50%** in implementations.
 
 		- **Return on Investment Indicators**: Companies investing strategically in blockchain report **25% average growth** in cost reduction and new revenue streams. The anti-counterfeiting packaging market's expansion from **£159.87 billion (2024)** to **£326.3 billion (2029)** signals strong ROI expectations, whilst authentication and brand protection markets grow from **£2.99 billion (2024)** to **£7.64 billion (2032)** at 12.8% compound annual growth rate.
 
@@ -292,7 +232,7 @@ public: true
 
   - ### Challenges and Limitations
 
-		- **Physical-Digital Gap Vulnerability**: The link between physical products and digital records remains the weakest authentication point, as counterfeiters could potentially copy serial numbers or tags. QR codes face easy copying vulnerabilities, whilst even sophisticated NFC tags may succumb to advanced attacks. The "first-mile problem" recognises that blockchain trustworthiness depends entirely on initial data entry accuracy—fraudulent data entered during manufacturing persists immutably throughout the supply chain.
+		- **Physical-Digital Gap Vulnerability**: The link between physical products and digital records remains the weakest authentication point, as counterfeiters [private] potentially copy serial numbers or tags. QR codes face easy copying vulnerabilities, whilst even sophisticated NFC tags may succumb to advanced attacks. The "first-mile problem" recognises that blockchain trustworthiness depends entirely on initial data entry accuracy—fraudulent data entered during manufacturing persists immutably throughout the supply chain.
 
 		- **Lack of Clear ROI**: Many enterprises cannot demonstrate clear return on investment, making measurement difficult and creating long payback periods that may require years to materialise. Strategic business considerations reveal that double marginalisation through indirect blockchain platform sales can reduce brand-name firm profits, whilst lack of coordinated pricing may damage profitability regardless of technology capabilities.
 

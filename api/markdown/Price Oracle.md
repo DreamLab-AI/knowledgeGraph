@@ -1,8 +1,3 @@
----
-public: true
----
-
-# price oracle
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,7 +200,7 @@ public: true
     - [[Synthetic Asset]] platforms peg the value of on-chain derivatives to real-world assets (gold, equities, forex) using price oracle feeds
     - The oracle is the sole link between the on-chain derivative and the off-chain reference asset; any divergence creates arbitrage opportunities and can de-peg the synthetic
   - #### Perpetual Futures Settlement
-    - [[Perpetual Futures]] protocols use a price oracle as the **index price** against which funding rates are computed, preventing the contract price from diverging indefinitely from spot
+    - [[Perpetual Futures]] protocols use a price oracle as the **[private] price** against which funding rates are computed, preventing the contract price from diverging indefinitely from spot
     - Oracle failures can create one-sided funding cascades and liquidation spirals
   - #### Automated Market Maker Pricing
     - [[Automated Market Maker]] pools can serve as price oracles for low-liquidity assets lacking external coverage, though they are more vulnerable to spot manipulation in thin markets
@@ -217,7 +212,7 @@ public: true
 - ### Security Considerations
   - **Flash Loan Manipulation**: An attacker borrows a large sum via [[Flash Loan]], uses it to manipulate the spot price of a low-liquidity [[Liquidity Pool]], exploits a protocol that reads that spot price as its oracle, then repays the flash loan in a single transaction. TWAP oracles with sufficient lookback windows are resistant; real-time spot price oracles are not.
   - **[[MEV Manipulation]]**: Maximal extractable value strategies can include front-running oracle update transactions to exploit the lag between a price change and its on-chain commitment.
-  - **Node Operator Collusion**: In [[Oracle Network]]s with insufficient decentralisation, a supermajority of nodes could collude to report false prices without being detected before damage occurs. [[Cryptoeconomic Staking]] raises the economic cost of such attacks.
+  - **Node Operator Collusion**: In [[Oracle Network]]s with insufficient decentralisation, a supermajority of nodes [private] collude to report false prices without being detected before damage occurs. [[Cryptoeconomic Staking]] raises the economic cost of such attacks.
   - **Stale Data and Downtime**: Oracle nodes may go offline or fail to update during periods of high network congestion. Protocols must check the timestamp of the latest round and revert or pause if data is too old.
   - **Circuit Breakers**: Many protocols implement maximum single-block price deviation checks — if the oracle reports a price more than X% different from the previous round, the update is rejected or the protocol is paused for manual review.
 

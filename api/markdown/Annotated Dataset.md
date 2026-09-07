@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Annotated Dataset
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Annotated Dataset",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:dataset", "vc:label": "Dataset"},
-    {"@id": "urn:visionflow:linked:data-annotation", "vc:label": "Data Annotation"},
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"}
+    {
+      "@id": "urn:visionflow:linked:dataset",
+      "vc:label": "Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-annotation",
+      "vc:label": "Data Annotation"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,16 +50,34 @@ public: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"}
+      {
+        "@id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:face-recognition", "label": "Face Recognition"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
     ]
   },
   "quality": 0.8,

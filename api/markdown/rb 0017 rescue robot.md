@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0017 rescue robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,52 +60,56 @@ public: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:rb-0077-depth-camera", "label": "rb 0077 depth camera"},
-      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0077-depth-camera",
+        "label": "rb 0077 depth camera"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0008-autonomous-robot", "label": "rb 0008 autonomous robot"},
-      {"@id": "urn:ngm:class:rb-0018-inspection-robot", "label": "rb 0018 inspection robot"},
-      {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"}
+      {
+        "@id": "urn:ngm:class:rb-0008-autonomous-robot",
+        "label": "rb 0008 autonomous robot"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0018-inspection-robot",
+        "label": "rb 0018 inspection robot"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rescue-robot", "label": "Rescue Robot"},
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"}
+      {
+        "@id": "urn:ngm:class:rescue-robot",
+        "label": "Rescue Robot"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0017-rescue-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e48d45aca5bfba3d7e0cf0a973c4984eb9c9716cd90b9c3d796aafda0153990f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A rescue robot is a specialised mobile robot deployed in emergency scenarios—collapsed structures, fires, chemical spills, and nuclear incidents—where sending human responders entails unacceptable risk. These systems must combine robust locomotion on unstructured terrain, reliable communications over intermittent links, multi-modal sensing for victim detection (thermal imaging, audio, CO2), and sufficient autonomy to navigate when teleoperation bandwidth is constrained.

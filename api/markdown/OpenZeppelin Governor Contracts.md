@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenZeppelin Governor Contracts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "OpenZeppelin Governor Contracts are a modular on-chain governance framework that lets DAOs run proposal, voting, and execution workflows tied to governance tokens. The Governor base contract integrates with token-based voting power (including delegation and timelock execution) and is configurable for quorum, voting periods, and vote-counting strategies. It is a widely adopted standard for implementing token-weighted decentralized governance.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:delegate-democracy", "label": "Delegate Democracy"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:delegate-democracy",
+        "label": "Delegate Democracy"
+      }
     ]
   },
   "quality": 0.72

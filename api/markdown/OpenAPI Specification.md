@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Open API Specification
----
-
-# OpenAPI Specification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,4 +165,3 @@ aliases:
   - The significance of OAS lies in its role as the contract layer of API-first development. Teams that design the specification before writing code can parallelise front-end, back-end, and testing workstreams. Mock servers generated from OAS documents allow consumers to develop integrations before the real API is built. Contract testing frameworks such as Pact and Dredd validate that implementations conform to the published specification, catching breaking changes before deployment. In the enterprise, OAS is the primary input to API governance processes that enforce naming conventions, versioning policies, and security standards.
 
   - OpenAPI 3.1.0, released in 2021, achieved full alignment with JSON Schema 2020-12, resolving years of subtle incompatibilities between OAS Schema Objects and the JSON Schema standard. By 2024–2025, OAS is being extended to describe asynchronous APIs (alongside AsyncAPI), AI tool interfaces for LLM function-calling, and event-driven architectures. The specification is also being integrated into AI coding assistants and API design copilots that generate OAS documents from natural-language descriptions, lowering the barrier to well-documented API design.
-

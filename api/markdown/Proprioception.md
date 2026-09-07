@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Proprioception
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

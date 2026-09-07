@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Healthcare Records
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -224,67 +219,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:healthcare-records:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:951e9b5242e29dbd55149e7bc2b3d99f8902ce786f17ad6a6d62a4cc0070dc2d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BC-0426-hyperledger-fabric]]",
-      "resolved": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0456-self-sovereign-identity]]",
-      "resolved": "urn:visionflow:linked:bc-0456-self-sovereign-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0457-decentralized-identifiers]]",
-      "resolved": "urn:visionflow:linked:bc-0457-decentralized-identifiers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0458-verifiable-credentials]]",
-      "resolved": "urn:visionflow:linked:bc-0458-verifiable-credentials",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0459-digital-identity-wallet]]",
-      "resolved": "urn:visionflow:linked:bc-0459-digital-identity-wallet",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0476-aml-kyc-compliance]]",
-      "resolved": "urn:visionflow:linked:bc-0476-aml-kyc-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0492-clinical-trials]]",
-      "resolved": "urn:visionflow:linked:bc-0492-clinical-trials",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintaining HIPAA and GDPR compliance through hybrid on-chain/off-chain architectures.
 
@@ -301,14 +235,14 @@ public: true
 
 - ### Content
   - Blockchain-based electronic health record (EHR) systems address critical healthcare data fragmentation challenges where nearly **20% of organisational patient records are duplicates** and provider directory inaccuracies affect **52.2% of locations**, creating inefficiencies costing the U.S. healthcare system **over £30 billion annually**. By employing distributed ledger technology with patient-controlled consent management through smart contracts, blockchain implementations enable secure data sharing across healthcare providers whilst maintaining regulatory compliance and reducing the staggering costs of data breaches that reached **275-277 million records** compromised in 2024 alone.
-  - The technology creates agnostic platforms where health information from disparate systems connects seamlessly, presenting patients and providers with consistent, comprehensive medical records through standards-based integration combining HL7 Fast Healthcare Interoperability Resources (FHIR) with blockchain-verified consent and access control. This architecture addresses medical errors that cost **£17-29 billion annually** and cause nearly **100,000 deaths** whilst simultaneously enabling interoperability that could save **£77.8 billion annually** through reduced administrative costs, eliminated duplicate testing, and improved care coordination.
+  - The technology creates agnostic platforms where health information from disparate systems connects seamlessly, presenting patients and providers with consistent, comprehensive medical records through standards-based integration combining HL7 Fast Healthcare Interoperability Resources (FHIR) with blockchain-verified consent and access control. This architecture addresses medical errors that cost **£17-29 billion annually** and cause nearly **100,000 deaths** whilst simultaneously enabling interoperability that [private] save **£77.8 billion annually** through reduced administrative costs, eliminated duplicate testing, and improved care coordination.
   - ### Global Healthcare Data Challenges
 
 		- **Interoperability Crisis**: Healthcare data fragmentation creates critical barriers to effective care delivery, with raw data scattered across numerous non-operable EHR systems both within single hospitals and spanning geographic ranges. The CMS discovered that **52.2% of provider directory locations** contained at least one inaccuracy, with individual directory inaccuracy rates ranging from 11.20% to 97.82%. This fragmentation prevents cardiologists in Boston from immediately accessing imaging from primary care doctors in Atlanta—scenarios that blockchain technology resolves through secure, consent-based immediate access.
 
 		- **Data Breach Epidemic**: The 2024 healthcare data breach crisis saw **275-277 million records** compromised in the United States, representing **81.38% of the 2024 U.S. population**. With **725 data breaches** of 500 or more records—a **64.1% increase from 2023**—2024 became the worst year on record. Ransomware and hacking accounted for **83.78% of all breaches** in 2023, compromising **99.79% of affected records**. Healthcare breach costs averaged **£10.22 million** per incident in 2025, making it the costliest industry for **14 consecutive years**, with individual healthcare records costing **£408** per breach—more than triple the average across other industries (£148).
 
-		- **Fragmentation Costs**: The lack of healthcare interoperability imposes massive economic burdens, with inefficiencies consuming **over £30 billion annually** across the U.S. health system. Achieving full interoperability could save **£77.8 billion annually** through reduced administrative costs, eliminated duplicate testing (currently costing **£12 billion annually** on 2.3 duplicate imaging studies per year), improved care coordination, and better population health management. Medical device interoperability failures add **£30 billion annually** in costs, whilst duplicate and erroneous claims consume **8-12% of U.S. payer outlays**, inflating administrative costs by **£68 billion annually**.
+		- **Fragmentation Costs**: The lack of healthcare interoperability imposes massive economic burdens, with inefficiencies consuming **over £30 billion annually** across the U.S. health system. Achieving full interoperability [private] save **£77.8 billion annually** through reduced administrative costs, eliminated duplicate testing (currently costing **£12 billion annually** on 2.3 duplicate imaging studies per year), improved care coordination, and better population health management. Medical device interoperability failures add **£30 billion annually** in costs, whilst duplicate and erroneous claims consume **8-12% of U.S. payer outlays**, inflating administrative costs by **£68 billion annually**.
 
   - ### Major Real-World Implementations
 
@@ -350,7 +284,7 @@ public: true
 
   - ### Cost Savings and Efficiency Improvements
 
-		- **Projected Annual Savings**: Blockchain could save healthcare **£100-150 billion annually by 2025** by addressing data breaches, IT operations, support functions, and fraud prevention. Full interoperability could save **£77.8 billion annually** through reduced administrative costs, eliminated duplicate testing, improved care coordination, and better population health management. In 2022, blockchain technology saved healthcare approximately **£100 billion** by reducing fraud, streamlining administrative processes, and enhancing data security.
+		- **Projected Annual Savings**: Blockchain [private] save healthcare **£100-150 billion annually by 2025** by addressing data breaches, IT operations, support functions, and fraud prevention. Full interoperability [private] save **£77.8 billion annually** through reduced administrative costs, eliminated duplicate testing, improved care coordination, and better population health management. In 2022, blockchain technology saved healthcare approximately **£100 billion** by reducing fraud, streamlining administrative processes, and enhancing data security.
 
 		- **Provider Directory Management**: Synaptic Health Alliance pilot studies demonstrated potential savings of **over £2 billion annually** through revolutionised record keeping, addressing current costs of **£2.1 billion annually** to maintain provider directories with **52.2% inaccuracy rates**.
 

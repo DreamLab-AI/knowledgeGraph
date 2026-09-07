@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BC-0120-consensus-mechanism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "BC-0120-consensus-mechanism is an ontology catalogue entry representing the knowledge domain of blockchain consensus mechanisms — the family of distributed protocols by which a peer-to-peer network of nodes agrees on a canonical ordering of transactions and the current state of a shared ledger without a trusted central authority. It serves as an organising concept node within a blockchain knowledge graph taxonomy.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"}
+      {
+        "@id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - In practice, consensus mechanisms are selected based on trade-offs across the security-decentralisation-performance trilemma. Permissioned enterprise blockchains commonly use PBFT or Raft for throughput and finality; public networks use PoW or PoS with varying degrees of decentralisation and finality guarantees. Validator set size, message complexity, and network assumptions (synchrony vs. partial synchrony) are critical design parameters.
 
   - By 2024–2025, the consensus mechanism landscape has consolidated around PoS variants for new public blockchain deployments following Ethereum's Merge (2022). Research focus has shifted toward data availability sampling, sharded consensus (allowing parallel sub-committee consensus), and single-slot finality for Ethereum. The Avalanche consensus family has demonstrated that leaderless, random-sampling approaches can achieve high throughput and fast probabilistic finality, influencing new protocol designs.
-

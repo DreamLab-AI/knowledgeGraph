@@ -1,57 +1,108 @@
----
-public: true
----
-
-# Copyright
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:copyright", "@type":"Page", "title":"Copyright", "vc:slug":"copyright", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:copyright",
+  "@type": "Page",
+  "title": "Copyright",
+  "vc:slug": "copyright",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:copyright",
-  "@type":"Class",
-  "label":"Copyright",
-  "definition":"Copyright is a legal right that grants the creator of an original work exclusive control over its reproduction, distribution, adaptation and public performance for a limited term. It arises automatically upon fixation of an expressive work and may be licensed, assigned or waived by the rights holder. Within governance it anchors how digital content, software and creative outputs are owned, shared and monetised.",
-  "domain":"governance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:intellectual-property-rights-framework","label":"Intellectual Property Rights Framework"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:intellectual-property-rights-framework","label":"Intellectual Property Rights Framework"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:copyright",
+  "@type": "Class",
+  "label": "Copyright",
+  "definition": "Copyright is a legal right that grants the creator of an original work exclusive control over its reproduction, distribution, adaptation and public performance for a limited term. It arises automatically upon fixation of an expressive work and may be licensed, assigned or waived by the rights holder. Within governance it anchors how digital content, software and creative outputs are owned, shared and monetised.",
+  "domain": "governance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:intellectual-property-rights-framework",
+      "label": "Intellectual Property Rights Framework"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property Rights Framework"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:licensing","label":"Licensing"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:provenance","label":"Provenance"},
-      {"@id":"urn:ngm:class:regulation","label":"Regulation"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
     ],
-    "enforcedBy":[
-      {"@id":"urn:ngm:class:digital-rights-management","label":"Digital Rights Management"}
+    "enforcedBy": [
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:open-source-licence","label":"Open Source Licence"},
-      {"@id":"urn:ngm:class:creative-commons","label":"Creative Commons"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "@id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:patent","label":"Patent"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:patent",
+        "label": "Patent"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:licensing","label":"Licensing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:non-fungible-token","label":"Non-Fungible Token"},
-      {"@id":"urn:ngm:class:content-moderation","label":"Content Moderation"},
-      {"@id":"urn:ngm:class:compliance","label":"Compliance"},
-      {"@id":"urn:ngm:class:governance","label":"Governance"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

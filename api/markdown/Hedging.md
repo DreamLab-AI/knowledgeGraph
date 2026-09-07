@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hedging
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Hedging",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:risk-management", "vc:label": "Risk Management"},
-    {"@id": "urn:visionflow:linked:market-making", "vc:label": "Market Making"},
-    {"@id": "urn:visionflow:linked:synthetic-asset", "vc:label": "Synthetic Asset"},
-    {"@id": "urn:visionflow:linked:exchange-rate", "vc:label": "Exchange Rate"}
+    {
+      "@id": "urn:visionflow:linked:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-making",
+      "vc:label": "Market Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-asset",
+      "vc:label": "Synthetic Asset"
+    },
+    {
+      "@id": "urn:visionflow:linked:exchange-rate",
+      "vc:label": "Exchange Rate"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,11 +50,20 @@ public: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:synthetic-asset", "label": "Synthetic Asset"}
+      {
+        "@id": "urn:ngm:class:synthetic-asset",
+        "label": "Synthetic Asset"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:market-making", "label": "Market Making"},
-      {"@id": "urn:ngm:class:exchange-rate", "label": "Exchange Rate"}
+      {
+        "@id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      },
+      {
+        "@id": "urn:ngm:class:exchange-rate",
+        "label": "Exchange Rate"
+      }
     ]
   },
   "quality": 0.8,

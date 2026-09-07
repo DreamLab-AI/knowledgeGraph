@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Bid Ask Spread
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

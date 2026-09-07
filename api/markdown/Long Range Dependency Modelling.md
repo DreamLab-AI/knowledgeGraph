@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Long Range Dependency Modelling
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

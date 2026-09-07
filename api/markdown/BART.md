@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BART
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:attention-mask", "label": "Attention Mask"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mask",
+        "label": "Attention Mask"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:albert", "label": "ALBERT"},
-      {"@id": "urn:ngm:class:ro-berta", "label": "RoBERTa"}
+      {
+        "@id": "urn:ngm:class:albert",
+        "label": "ALBERT"
+      },
+      {
+        "@id": "urn:ngm:class:ro-berta",
+        "label": "RoBERTa"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "quality": 0.5,
@@ -79,32 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bart:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2d4b4ce5aefc5748296e52139a2892241f4ce91340a6b88abcec6169f1b3a857"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Bidirectional and Auto-Regressive Transformers: a denoising autoencoder for pre-training sequence-to-sequence models, combining bidirectional encoding (like BERT) with autoregressive decoding (like GPT).

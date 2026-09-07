@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Analogue To Digital Conversion
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

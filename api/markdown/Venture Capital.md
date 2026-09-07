@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Venture Capital
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

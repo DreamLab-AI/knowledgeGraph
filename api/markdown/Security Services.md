@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Security Services
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,16 +50,34 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "quality": 0.35,
@@ -75,32 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:security-services:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7dd2cac3ace9faa03f69b76ab76066d21f75f13bc06aae52626c9d7d7176c9eb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Security Services are the technical and organisational mechanisms that protect spatial computing platforms from unauthorised access, data breaches, and malicious activity, encompassing authentication, encryption, access control, and identity management.

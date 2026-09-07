@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UCL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ucl:43c34ee9af7b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f110604ec31a99501fcd84d8b2cb496e180eb82b479d22aa8ef9c25bfc30e640"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[University College London]]",
-      "resolved": "urn:visionflow:linked:university-college-london",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Alan Turing Institute]]",
-      "resolved": "urn:visionflow:linked:alan-turing-institute",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The common abbreviation for University College London, a major research university in London active in computing and artificial intelligence research.

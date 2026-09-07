@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Detailed Balance
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -381,7 +375,7 @@ public: true
 
     **Connections to diffusion-based generative models** — score-based diffusion models (Denoising Diffusion Probabilistic Models, Song et al., 2021) use forward noising processes and reverse denoising processes connected by the Fokker-Planck equation. These are related to non-reversible Langevin diffusions and detailed balance in continuous-time Markov processes. Understanding this connection more deeply will enable principled Bayesian inference using the reverse process of diffusion models as a sampler, with theoretical guarantees derived from generalised detailed balance conditions for the diffusion.
 
-    **Quantum MCMC** — quantum computers can implement quantum detailed balance conditions (QDB) for Gibbs state preparation exponentially faster than classical algorithms in certain cases. Quantum Metropolis algorithms (Yung & Aspuru-Guzik, 2012) and quantum Gibbs samplers (Rall et al., 2023) satisfy quantum versions of detailed balance and could enable sampling from otherwise intractable distributions in chemistry, materials science, and drug discovery. Near-term (2026–2028) quantum advantage demonstrations may emerge for small molecule Boltzmann distribution sampling.
+    **Quantum MCMC** — quantum computers can implement quantum detailed balance conditions (QDB) for Gibbs state preparation exponentially faster than classical algorithms in certain cases. Quantum Metropolis algorithms (Yung & Aspuru-Guzik, 2012) and quantum Gibbs samplers (Rall et al., 2023) satisfy quantum versions of detailed balance and [private] enable sampling from otherwise intractable distributions in chemistry, materials science, and drug discovery. Near-term (2026–2028) quantum advantage demonstrations may emerge for small molecule Boltzmann distribution sampling.
 
     **Certified and verified MCMC** — just as the VEL project formally verified an OWL reasoner, future work will develop formally verified MCMC kernels whose satisfaction of detailed balance is machine-checked rather than hand-proved, enabling safety-critical deployments (medical AI, autonomous vehicles) to rely on formally certified posterior inference.
 

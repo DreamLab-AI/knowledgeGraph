@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AutoGen
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,53 +7,181 @@ public: true
   "title": "AutoGen",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:language-model", "vc:label": "Language Model" },
-    { "@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use" },
-    { "@id": "urn:visionflow:linked:multi-agent-coordination", "vc:label": "Multi-Agent Coordination" },
-    { "@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow" },
-    { "@id": "urn:visionflow:linked:ai-agent", "vc:label": "AI Agent" },
-    { "@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling" },
-    { "@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems" },
-    { "@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models" },
-    { "@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks" },
-    { "@id": "urn:visionflow:linked:orchestration", "vc:label": "Orchestration" },
-    { "@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent" },
-    { "@id": "urn:visionflow:linked:code-execution", "vc:label": "Code Execution" },
-    { "@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop" },
-    { "@id": "urn:visionflow:linked:task-planning", "vc:label": "Task Planning" },
-    { "@id": "urn:visionflow:linked:crewai", "vc:label": "CrewAI" },
-    { "@id": "urn:visionflow:linked:langgraph", "vc:label": "LangGraph" },
-    { "@id": "urn:visionflow:linked:openai-agents-sdk", "vc:label": "OpenAI Agents SDK" },
-    { "@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol" },
-    { "@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation" },
-    { "@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain of Thought" },
-    { "@id": "urn:visionflow:linked:autonomous-coding", "vc:label": "Autonomous Coding" },
-    { "@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety" },
-    { "@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection" },
-    { "@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI" },
-    { "@id": "urn:visionflow:linked:semantic-kernel", "vc:label": "Semantic Kernel" },
-    { "@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems" },
-    { "@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory" },
-    { "@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning" },
-    { "@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation" },
-    { "@id": "urn:visionflow:linked:software-engineering", "vc:label": "Software Engineering" },
-    { "@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing" },
-    { "@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window" },
-    { "@id": "urn:visionflow:linked:swe-bench", "vc:label": "SWE-bench" },
-    { "@id": "urn:visionflow:linked:metagpt", "vc:label": "MetaGPT" },
-    { "@id": "urn:visionflow:linked:single-agent-systems", "vc:label": "Single-Agent Systems" },
-    { "@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act" },
-    { "@id": "urn:visionflow:linked:api-integration", "vc:label": "API Integration" },
-    { "@id": "urn:visionflow:linked:microsoft-azure", "vc:label": "Microsoft Azure" },
-    { "@id": "urn:visionflow:linked:re-act-pattern", "vc:label": "ReAct Pattern" },
-    { "@id": "urn:visionflow:linked:actor-model", "vc:label": "Actor Model" }
+    {
+      "@id": "urn:visionflow:linked:language-model",
+      "vc:label": "Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-coordination",
+      "vc:label": "Multi-Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent",
+      "vc:label": "AI Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration",
+      "vc:label": "Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-execution",
+      "vc:label": "Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-planning",
+      "vc:label": "Task Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:crewai",
+      "vc:label": "CrewAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:langgraph",
+      "vc:label": "LangGraph"
+    },
+    {
+      "@id": "urn:visionflow:linked:openai-agents-sdk",
+      "vc:label": "OpenAI Agents SDK"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-coding",
+      "vc:label": "Autonomous Coding"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-kernel",
+      "vc:label": "Semantic Kernel"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-engineering",
+      "vc:label": "Software Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:swe-bench",
+      "vc:label": "SWE-bench"
+    },
+    {
+      "@id": "urn:visionflow:linked:metagpt",
+      "vc:label": "MetaGPT"
+    },
+    {
+      "@id": "urn:visionflow:linked:single-agent-systems",
+      "vc:label": "Single-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-integration",
+      "vc:label": "API Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:microsoft-azure",
+      "vc:label": "Microsoft Azure"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:actor-model",
+      "vc:label": "Actor Model"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    { "vc:key": "preferred-term", "vc:value": "AutoGen" }
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AutoGen"
+    }
   ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:jjohare" },
-  "prov:generatedAtTime": { "@value": "2026-05-29T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -73,33 +196,81 @@ public: true
   "maturity": "established",
   "qualityScore": 0.87,
   "subClassOf": [
-    { "@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems" },
-    { "@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks" }
+    {
+      "@id": "urn:ngm:class:multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:ngm:class:agent-frameworks",
+      "label": "Agent Frameworks"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:conversable-agent", "label": "Conversable Agent" },
-      { "@id": "urn:ngm:class:group-chat", "label": "Group Chat" },
-      { "@id": "urn:ngm:class:code-executor", "label": "Code Executor" }
+      {
+        "@id": "urn:ngm:class:conversable-agent",
+        "label": "Conversable Agent"
+      },
+      {
+        "@id": "urn:ngm:class:group-chat",
+        "label": "Group Chat"
+      },
+      {
+        "@id": "urn:ngm:class:code-executor",
+        "label": "Code Executor"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:language-model", "label": "Language Model" },
-      { "@id": "urn:ngm:class:tool-use", "label": "Tool Use" },
-      { "@id": "urn:ngm:class:function-calling", "label": "Function Calling" }
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:multi-agent-coordination", "label": "Multi-Agent Coordination" },
-      { "@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow" },
-      { "@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding" },
-      { "@id": "urn:ngm:class:task-planning", "label": "Task Planning" }
+      {
+        "@id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:lang-graph", "label": "LangGraph" },
-      { "@id": "urn:ngm:class:crew-ai", "label": "CrewAI" }
+      {
+        "@id": "urn:ngm:class:lang-graph",
+        "label": "LangGraph"
+      },
+      {
+        "@id": "urn:ngm:class:crew-ai",
+        "label": "CrewAI"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:semantic-kernel", "label": "Semantic Kernel" },
-      { "@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol" }
+      {
+        "@id": "urn:ngm:class:semantic-kernel",
+        "label": "Semantic Kernel"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ]
   },
   "quality": 0.87,
@@ -110,62 +281,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:auto-gen:c13155c197f7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fdfae3b111eba7caa003037ec66843a4aa28054a6e319fa06058fd04e124ca3a"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Language Model]]", "resolved": "urn:visionflow:linked:language-model", "kind": "ResolvedLink" },
-    { "raw": "[[Tool Use]]", "resolved": "urn:visionflow:linked:tool-use", "kind": "ResolvedLink" },
-    { "raw": "[[Multi-Agent Coordination]]", "resolved": "urn:visionflow:linked:multi-agent-coordination", "kind": "StubLink" },
-    { "raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "ResolvedLink" },
-    { "raw": "[[AI Agent]]", "resolved": "urn:visionflow:linked:ai-agent", "kind": "ResolvedLink" },
-    { "raw": "[[Function Calling]]", "resolved": "urn:visionflow:linked:function-calling", "kind": "ResolvedLink" },
-    { "raw": "[[Multi-Agent Systems]]", "resolved": "urn:visionflow:linked:multi-agent-systems", "kind": "ResolvedLink" },
-    { "raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink" },
-    { "raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "ResolvedLink" },
-    { "raw": "[[Orchestration]]", "resolved": "urn:visionflow:linked:orchestration", "kind": "ResolvedLink" },
-    { "raw": "[[Autonomous Agent]]", "resolved": "urn:visionflow:linked:autonomous-agent", "kind": "ResolvedLink" },
-    { "raw": "[[Code Execution]]", "resolved": "urn:visionflow:linked:code-execution", "kind": "StubLink" },
-    { "raw": "[[Human-in-the-Loop]]", "resolved": "urn:visionflow:linked:human-in-the-loop", "kind": "ResolvedLink" },
-    { "raw": "[[Task Planning]]", "resolved": "urn:visionflow:linked:task-planning", "kind": "ResolvedLink" },
-    { "raw": "[[CrewAI]]", "resolved": "urn:visionflow:linked:crewai", "kind": "StubLink" },
-    { "raw": "[[LangGraph]]", "resolved": "urn:visionflow:linked:langgraph", "kind": "StubLink" },
-    { "raw": "[[OpenAI Agents SDK]]", "resolved": "urn:visionflow:linked:openai-agents-sdk", "kind": "StubLink" },
-    { "raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "ResolvedLink" },
-    { "raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink" },
-    { "raw": "[[Chain of Thought]]", "resolved": "urn:visionflow:linked:chain-of-thought", "kind": "ResolvedLink" },
-    { "raw": "[[Autonomous Coding]]", "resolved": "urn:visionflow:linked:autonomous-coding", "kind": "ResolvedLink" },
-    { "raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "ResolvedLink" },
-    { "raw": "[[Prompt Injection]]", "resolved": "urn:visionflow:linked:prompt-injection", "kind": "ResolvedLink" },
-    { "raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "ResolvedLink" },
-    { "raw": "[[Semantic Kernel]]", "resolved": "urn:visionflow:linked:semantic-kernel", "kind": "StubLink" },
-    { "raw": "[[Distributed Systems]]", "resolved": "urn:visionflow:linked:distributed-systems", "kind": "ResolvedLink" },
-    { "raw": "[[Agent Memory]]", "resolved": "urn:visionflow:linked:agent-memory", "kind": "ResolvedLink" },
-    { "raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Workflow Automation]]", "resolved": "urn:visionflow:linked:workflow-automation", "kind": "ResolvedLink" },
-    { "raw": "[[Software Engineering]]", "resolved": "urn:visionflow:linked:software-engineering", "kind": "StubLink" },
-    { "raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink" },
-    { "raw": "[[Context Window]]", "resolved": "urn:visionflow:linked:context-window", "kind": "ResolvedLink" },
-    { "raw": "[[SWE-bench]]", "resolved": "urn:visionflow:linked:swe-bench", "kind": "StubLink" },
-    { "raw": "[[MetaGPT]]", "resolved": "urn:visionflow:linked:metagpt", "kind": "StubLink" },
-    { "raw": "[[Single-Agent Systems]]", "resolved": "urn:visionflow:linked:single-agent-systems", "kind": "StubLink" },
-    { "raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "ResolvedLink" },
-    { "raw": "[[API Integration]]", "resolved": "urn:visionflow:linked:api-integration", "kind": "StubLink" },
-    { "raw": "[[Microsoft Azure]]", "resolved": "urn:visionflow:linked:microsoft-azure", "kind": "StubLink" },
-    { "raw": "[[ReAct Pattern]]", "resolved": "urn:visionflow:linked:re-act-pattern", "kind": "ResolvedLink" },
-    { "raw": "[[Actor Model]]", "resolved": "urn:visionflow:linked:actor-model", "kind": "StubLink" }
-  ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
-  "prov:generatedAtTime": { "@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime" }
-}
-```
-
 
 - ### Definition
   - AutoGen is an open-source [[Multi-Agent Systems]] framework originating from Microsoft Research that defines the conversable-agent abstraction — a unified primitive in which an [[Autonomous Agent]] may be backed by a [[Large Language Models]], a deterministic tool, human input, or any combination thereof — and coordinates such agents through structured message exchange to decompose and complete tasks of arbitrary complexity. First published in August 2023 (arXiv:2308.08155) by Wu, Bansal, Zhang et al. at Microsoft, AutoGen established the group-chat metaphor as the dominant interaction pattern for orchestrating multi-agent pipelines: agents participate in a shared conversation thread, a configurable selector determines turn order, each participant may generate natural-language replies, invoke [[Function Calling]] schemas, or emit code for external execution, and the conversation continues until a task termination condition is met. The framework's defining design choice — making every participant in a multi-agent system a first-class conversable entity capable of adaptive participation — eliminated the rigid producer-consumer distinctions that characterised earlier pipeline approaches and enabled flexible hybrid patterns in which [[AI Agent]] entities hand off sub-tasks, critique each other's outputs, execute and verify code, and escalate specific decisions to [[Human-in-the-Loop]] review within a single unified conversation graph. AutoGen gained rapid adoption across academic benchmarks and enterprise pilots, reaching over 38,000 GitHub stars by early 2025 and accumulating over 20,000 citations in the year following its release. In late 2024 and early 2025, the framework underwent a significant governance and architectural bifurcation: the original creators Chi Wang and Qingyun Wu departed Microsoft to establish AG2 — a community-governed fork maintaining the familiar conversable-agent architecture of AutoGen 0.2 with backward compatibility as a primary goal — while Microsoft pursued a complete architectural reimagining in AutoGen 0.4 built on the [[Actor Model]] for distributed, event-driven, async-first execution with enterprise-grade observability, subsequently merging AutoGen's agent abstractions with [[Semantic Kernel]]'s session management and middleware infrastructure into the Microsoft Agent Framework. Both branches continue active development in 2026, with AG2's v0.9 release introducing a unified Group Chat pattern that consolidates previously separate swarm, group-chat, and sequential-chat primitives into a single extensible orchestration substrate.

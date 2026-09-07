@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Write-Ahead Logging
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

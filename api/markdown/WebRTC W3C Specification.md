@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WebRTC W3C Specification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:web-rtc-w-3-c-specification:9e5f111c5930",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ca5d1477daab058759788f9ccc448e23bb709b057877083ec1a3ebca6b23c1d9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[W3C]]",
-      "resolved": "urn:visionflow:linked:w-3-c",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A W3C specification defining WebRTC, an API enabling real-time peer-to-peer audio, video and data communication between browsers. It defines the JavaScript interfaces for media and data transport.

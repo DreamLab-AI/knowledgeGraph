@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Photorealistic Synthesis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Photorealistic synthesis is the generation of images or scenes that are visually indistinguishable from real photographs. It is achieved with generative models such as diffusion networks and GANs, or with physically based rendering, that reproduce accurate lighting, materials, geometry, and texture detail. It underpins high-fidelity image generation and the creation of realistic 4D and procedural content.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:proprietary-image-generation", "label": "Proprietary Image Generation"}, {"@id": "urn:ngm:class:procedural-and-hybrid-4-d", "label": "Procedural and Hybrid 4D"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:proprietary-image-generation",
+        "label": "Proprietary Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-and-hybrid-4-d",
+        "label": "Procedural and Hybrid 4D"
+      }
+    ]
   },
   "quality": 0.72
 }

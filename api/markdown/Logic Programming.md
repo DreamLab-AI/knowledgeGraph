@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Logic Programming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,24 +67,60 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:expert-systems", "label": "Expert Systems"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:database-query", "label": "Database Query"}
+      {
+        "@id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ]
   },
   "provenance": {
@@ -99,47 +130,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:logic-programming:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:acdc529f68e13fafe528dd88b57a3c33bb7f0bbba44022f74abf9d5abed3d38e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Academic AI Research]]",
-      "resolved": "urn:visionflow:linked:academic-ai-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Prolog]]",
-      "resolved": "urn:visionflow:linked:prolog",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

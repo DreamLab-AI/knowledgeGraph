@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[List Of Agent Projects]]
-# Autonomous Agent Framework Catalogue
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,16 +42,34 @@ elevatedFrom:: [[List Of Agent Projects]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "quality": 0.5,
@@ -68,26 +80,6 @@ elevatedFrom:: [[List Of Agent Projects]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:list-of-agent-projects:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9cab062d8041eda2463b6fdeebc5f0abcdd195f726e3f7f6703b2890d98553a2"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A curated catalogue of open-source and commercial autonomous agent frameworks and projects, spanning general-purpose agents (AutoGPT, BabyAGI, CAMEL), coding agents (GPT Engineer, SWE-Agent), productivity agents, research agents, and DIY framework scaffolds (CrewAI, MetaGPT, AutoGen). The list provides practitioners with an entry point into the rapidly expanding agentic AI ecosystem.

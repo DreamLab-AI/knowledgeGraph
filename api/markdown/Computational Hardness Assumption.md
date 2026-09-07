@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computational Hardness Assumption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A computational hardness assumption is a conjecture that a particular mathematical problem cannot be solved efficiently by any probabilistic polynomial-time algorithm. Such assumptions, including integer factorisation, the discrete logarithm, and learning-with-errors, are the foundations on which provable security of cryptographic schemes is reduced. If an assumption is broken, every construction whose security reduces to it is compromised.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}, {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise AI Cost Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "enterprise-ai-cost-management",
   "title": "Enterprise AI Cost Management",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Agentic Workload Economics", "Token Budgeting"],
+  "vc:outboundWikilinks": [
+    "Agentic Workload Economics",
+    "Token Budgeting"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-capacity", "label": "Model Capacity"}, {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

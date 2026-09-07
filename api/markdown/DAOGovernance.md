@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DAOGovernance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:daogovernance:181edf85f56b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c37c9f9a2f837b24881dbba8be4b9ad9b839d478b094ac7ec703d10b8c1a92bc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quadratic Voting]]",
-      "resolved": "urn:visionflow:linked:quadratic-voting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Governance]]",
-      "resolved": "urn:visionflow:linked:decentralized-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token]]",
-      "resolved": "urn:visionflow:linked:token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Autonomous Organization]]",
-      "resolved": "urn:visionflow:linked:decentralized-autonomous-organization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://ethereum.org/en/dao/]]",
-      "resolved": "urn:visionflow:linked:https-ethereum-org-en-dao",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The set of on-chain and off-chain processes by which a decentralised autonomous organisation makes and enforces collective decisions. It covers proposal submission, voting and execution of approved actions through smart contracts.

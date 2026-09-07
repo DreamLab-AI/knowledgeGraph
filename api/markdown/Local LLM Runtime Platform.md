@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[ollama]]
-# Local LLM Runtime Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,15 +78,30 @@ elevatedFrom:: [[ollama]]
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:open-webui-and-pipelines", "label": "Open Webui and Pipelines"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:open-webui-and-pipelines",
+        "label": "Open Webui and Pipelines"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      }
     ]
   },
   "quality": 0.7,
@@ -103,72 +112,6 @@ elevatedFrom:: [[ollama]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ollama:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5d7177486a53d18210dacb33b92289396b5eb215e04c292ea66a91547a8eec78"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Meta Llama Model Family]]",
-      "resolved": "urn:visionflow:linked:llama",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
-      "resolved": "urn:visionflow:owl:class:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Function Calling]]",
-      "resolved": "urn:visionflow:owl:class:function-calling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graphing]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ollama]]",
-      "resolved": "urn:visionflow:owl:class:ollama",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Open Webui and Pipelines]]",
-      "resolved": "urn:visionflow:owl:class:open-webui-and-pipelines",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Prompt Engineering]]",
-      "resolved": "urn:visionflow:owl:class:prompt-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Python PyTorch Deep Learning Stack]]",
-      "resolved": "urn:visionflow:owl:class:python-and-py-torch",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An open-source runtime and model management platform that allows users to download, serve, and interact with large language models locally on macOS, Windows, and Linux. Ollama provides an OpenAI-compatible REST API, enabling integration with tools such as Open WebUI, ComfyUI, and agent frameworks, making local LLM inference accessible without cloud dependencies.

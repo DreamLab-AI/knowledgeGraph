@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[copyright]]
-# Intellectual Property Rights Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -159,25 +153,6 @@ elevatedFrom:: [[copyright]]
         "label": "Regulatory Compliance"
       }
     ]
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:copyright:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a19b5332b7c86308a2b8dcd6f11a02ff41d2317b613ed43d7f34dcb9ce9a6be7"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

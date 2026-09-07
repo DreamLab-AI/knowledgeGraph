@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI-Driven Efficiency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-driven-efficiency",
   "title": "AI-Driven Efficiency",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Corporate Downsizing Trends", "Labor Market Displacement"],
+  "vc:outboundWikilinks": [
+    "Corporate Downsizing Trends",
+    "Labor Market Displacement"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}, {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

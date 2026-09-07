@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Behavior Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,35 +59,92 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
-      {"@id": "urn:ngm:class:behavioural-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"}
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:predictive-personalization", "label": "Predictive Personalization"}
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:behavioral-learning", "label": "Behavioral Learning"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"}
+      {
+        "@id": "urn:ngm:class:behavioral-learning",
+        "label": "Behavioral Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:avatar-behavior", "label": "Avatar Behavior"}
+      {
+        "@id": "urn:ngm:class:avatar-behavior",
+        "label": "Avatar Behavior"
+      }
     ]
   },
   "provenance": {
@@ -102,37 +154,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:behavior-analysis:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f9a79b97c045912ca0f219c798fcd111d624782ac5699146de819c08adf5110f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

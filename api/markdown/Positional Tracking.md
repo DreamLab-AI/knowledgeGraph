@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Positional Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,10 +20,18 @@ public: true
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:sc-interaction", "label": "Spatial Computing Interaction"}
+    {
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "Spatial Computing Interaction"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
+    ]
   },
   "quality": 0.7
 }

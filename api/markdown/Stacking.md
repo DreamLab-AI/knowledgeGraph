@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stacking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -95,32 +90,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:stacking:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e6123f64d04b8e0a9e0d40963b3bc95fe0ef7117242806a56c5e5ee4f2d25664"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ensemble Methods]]",
-      "resolved": "urn:visionflow:owl:class:ensemble-methods",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Stacking (stacked generalisation) is a hierarchical ensemble method that trains multiple diverse base models then combines their predictions using a meta-model, which learns the optimal weighting of base model outputs. Unlike bagging and boosting, stacking uses cross-validated out-of-fold predictions to train the meta-model, reducing information leakage and typically achieving superior predictive performance over any single base learner.

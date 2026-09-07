@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ISO/IEC 27701
----
-
-# ISO-IEC 27701
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,32 +53,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:iso-iec-27701:1691d03b3692",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f4419496578744fffc8957b230cab2302e2c435d26a3d923bd8ae96af5de1afd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ISO/IEC 27701 specifies requirements and guidance for a privacy information management system as an extension to ISO/IEC 27001 and ISO/IEC 27002.

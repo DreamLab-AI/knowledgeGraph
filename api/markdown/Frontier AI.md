@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Frontier AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -251,7 +246,7 @@ public: true
   - **[[Compute Governance]]** — export controls on advanced semiconductors (particularly NVIDIA H100/H200-class GPUs), cloud compute restrictions, and know-your-customer requirements for large-scale AI compute are the primary tools states use to influence frontier AI development geography.
   - **Capability thresholds and triggers** — a contested but operationally important policy concept: defining compute or capability thresholds above which additional safety requirements are triggered, as in the EU AI Act's 10^25 FLOP threshold for systemic-risk models.
   - **Race dynamics** — competitive pressure between major labs and between national programs creates tension between safety timelines and deployment schedules; a central concern of [[AI Alignment]] researchers is that race dynamics may compress alignment work to inadequate timescales.
-  - **[[Existential Risk]]** — a minority but influential strand of safety research argues that sufficiently capable misaligned frontier systems could pose catastrophic or existential risks; this argument motivates both technical alignment research and governance urgency.
+  - **[[Existential Risk]]** — a minority but influential strand of safety research argues that sufficiently capable misaligned frontier systems [private] pose catastrophic or existential risks; this argument motivates both technical alignment research and governance urgency.
 
 - ### Standards and Specifications
   - EU AI Act (2024) — General-Purpose AI provisions apply to models trained above 10^25 FLOPs; systemic-risk designation above 10^25 FLOPs triggers enhanced obligations including red-teaming, incident reporting, and information sharing.
@@ -267,8 +262,8 @@ public: true
   - Frontier safety frameworks became a statutory filing rather than a voluntary gesture: California's SB 53 took effect on 1 January 2026 requiring large frontier developers to publish and annually review a frontier AI framework, with New York's RAISE Act following on 1 January 2027.
   - Each major lab now differentiates on a named safety framework layered over raw capability: Anthropic's Responsible Scaling Policy and ASL tiers (Opus 4.5 deployed under ASL-3), OpenAI's Preparedness and Frontier Governance Frameworks, and Google DeepMind's Frontier Safety Framework.
   - Capability leadership stayed tightly contested through late 2025 and into 2026, with Google's Gemini 3 Pro and Anthropic's Claude Opus 4.5 (released within a week of each other in November 2025) trading the top of general-capability benchmarks, though safety scores varied widely between them.
-  - Open-weight models closed much of the capability gap while widening the safety gap: SaferAI reported in August 2026 that Z.ai's open-weight GLM-5.2 trailed leading closed models on cyber and bio capability by only a few months yet refused none of the offensive tasks it was set, whereas Claude Opus refused so consistently that some cyber benchmarks could not be completed.
-  - External evaluation matured into an ecosystem: bodies such as METR, the UK AI Safety Institute and US CAISI now run pre-deployment assessments, with METR's 2026 frontier risk reporting finding that agents as of early 2026 still lacked the capability to sustain a hidden rogue deployment against active investigation, while warning that margin could erode quickly.
+  - Open-weight models closed much of the capability gap while widening the safety gap: SaferAI reported in August 2026 that Z.ai's open-weight GLM-5.2 trailed leading closed models on cyber and bio capability by only a few months yet refused none of the offensive tasks it was set, whereas Claude Opus refused so consistently that some cyber benchmarks [private] not be completed.
+  - External evaluation matured into an ecosystem: bodies such as METR, the UK AI Safety Institute and US CAISI now run pre-deployment assessments, with METR's 2026 frontier risk reporting finding that agents as of early 2026 still lacked the capability to sustain a hidden rogue deployment against active investigation, while warning that margin [private] erode quickly.
   - Open challenges as of 2026 centre on robustness rather than raw refusal: red-team and universal-jailbreak research (Far.ai) continues to collapse safety scores under attack, agentic misalignment, honesty and shutdown-resistance metrics show little improvement, and benchmark contamination (e.g. SWE-bench) is eroding trust in headline capability numbers.
 
 - ### References

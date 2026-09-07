@@ -1,8 +1,3 @@
----
-public: true
----
-
-# industrial iot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -40,50 +35,125 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:programmable-logic-controller", "label": "Programmable Logic Controller"},
-      {"@id": "urn:ngm:class:edge-gateway", "label": "Edge Gateway"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-logic-controller",
+        "label": "Programmable Logic Controller"
+      },
+      {
+        "@id": "urn:ngm:class:edge-gateway",
+        "label": "Edge Gateway"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:opc-ua", "label": "OPC UA"},
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:time-sensitive-networking", "label": "Time-Sensitive Networking"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:condition-monitoring", "label": "Condition Monitoring"}
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:condition-monitoring",
+        "label": "Condition Monitoring"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:operational-technology", "label": "Operational Technology"},
-      {"@id": "urn:ngm:class:scada", "label": "SCADA"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {
+        "@id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      },
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-62443", "label": "IEC 62443"},
-      {"@id": "urn:ngm:class:iec-62541", "label": "IEC 62541"}
+      {
+        "@id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      },
+      {
+        "@id": "urn:ngm:class:iec-62541",
+        "label": "IEC 62541"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:consumer-iot", "label": "Consumer IoT"}
+      {
+        "@id": "urn:ngm:class:consumer-iot",
+        "label": "Consumer IoT"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-      {"@id": "urn:ngm:class:industry-4-0", "label": "Industry 4.0"}
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:iiot", "label": "IIoT"}
+    {
+      "@id": "urn:ngm:class:iiot",
+      "label": "IIoT"
+    }
   ],
   "quality": 0.72,
   "provenance": {

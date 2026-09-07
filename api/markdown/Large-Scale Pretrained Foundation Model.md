@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Foundation Model
-elevatedFrom: "[[Foundation Models]]"
----
-
-# Large-Scale Pretrained Foundation Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -28,28 +20,76 @@ elevatedFrom: "[[Foundation Models]]"
   "definition": "Foundation models are large-scale neural networks trained on broad, diverse datasets via self-supervised learning that acquire general-purpose representations transferable to a wide range of downstream tasks. They are characterised by massive parameter counts, emergent capabilities not explicitly trained for, and the ability to be fine-tuned or prompted for specialised applications. Prominent examples include GPT-4, BERT, CLIP, and Stable Diffusion, spanning language, vision, and multimodal domains. Their scale and generality make them qualitatively distinct from narrow task-specific models.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}, {"@id": "urn:ngm:class:ai-model-architecture", "label": "AI Model Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-model",
+      "label": "Machine Learning Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:parameter-count", "label": "Parameter Count"},
-      {"@id": "urn:ngm:class:scaling-laws", "label": "Scaling Laws"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      },
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
     ]
   },
   "quality": 0.8

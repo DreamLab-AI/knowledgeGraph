@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Adoption Rates
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-adoption-rates",
   "title": "AI Adoption Rates",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Consumer AI Usage", "Quinnipiac Poll"],
+  "vc:outboundWikilinks": [
+    "Consumer AI Usage",
+    "Quinnipiac Poll"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:intelligent-automation", "label": "Intelligent Automation"}, {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

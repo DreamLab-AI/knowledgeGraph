@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Ultra Wideband
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BIP Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "The Bitcoin Improvement Proposal (BIP) process is the standardised social and technical workflow by which proposed changes to the Bitcoin protocol, best practices, and informational standards are drafted, reviewed, debated, and either accepted or rejected by the Bitcoin developer community. It defines the lifecycle of a proposal from Draft through Proposed, Final, Active, Withdrawn, or Rejected, providing a structured mechanism for decentralised protocol governance without a centralised authority.",
   "domain": "blockchain",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals", "label": "Bitcoin Improvement Proposals"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core", "label": "Bitcoin Core"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
+        "label": "Bitcoin Core"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bip-327", "label": "BIP-327"},
-      {"@id": "urn:ngm:class:bip-342", "label": "BIP-342"},
-      {"@id": "urn:ngm:class:nakamoto-coefficient", "label": "Nakamoto Coefficient"}
+      {
+        "@id": "urn:ngm:class:bip-327",
+        "label": "BIP-327"
+      },
+      {
+        "@id": "urn:ngm:class:bip-342",
+        "label": "BIP-342"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-coefficient",
+        "label": "Nakamoto Coefficient"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - The ecosystem supporting the BIP process consists of the bitcoin-dev mailing list (now hosted on groups.io after the Linux Foundation discontinued hosting), the BIP repository on GitHub (github.com/bitcoin/bips), and informal coordination through IRC (Libera.chat #bitcoin-core-dev), Twitter/X, and developer conferences. BIP editors (historically Gavin Andresen, Luke Dashjr, and currently a rotating set of contributors) are responsible for assigning numbers and maintaining metadata but do not gate proposals on technical merit.
 
   - As of 2024–2025 the BIP process faces tensions between its deliberately slow, consensus-requiring nature and market pressure for new features. High-profile proposals including OP_CHECKTEMPLATEVERIFY (BIP-119), OP_CAT (BIP-347), and LNHANCE (a bundle of opcodes for Lightning improvements) have been in extended community debate, illustrating the difficulty of achieving soft-fork consensus without a central arbiter. Some contributors advocate for a more structured evaluation framework, whilst others consider the current resistance to change a safety feature. The process remains the central legitimising mechanism for Bitcoin protocol development.
-

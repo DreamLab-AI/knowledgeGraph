@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[PEOPLE]]
-# Domain Expert Contact Index
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -13,10 +7,6 @@ elevatedFrom:: [[PEOPLE]]
   "title": "Domain Expert Contact Index",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {
-      "@id": "urn:visionflow:owl:class:could",
-      "vc:label": "Could"
-    },
     {
       "@id": "urn:visionflow:owl:class:education-and-ai",
       "vc:label": "Education and AI"
@@ -49,7 +39,7 @@ elevatedFrom:: [[PEOPLE]]
   "@id": "urn:ngm:class:domain-expert-contact-index",
   "@type": "Class",
   "label": "Domain Expert Contact Index",
-  "definition": "A curated personal contact and collaboration index tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.",
+  "definition": "A curated personal contact and collaboration [private] tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.",
   "domain": "distributed-collaboration",
   "maturity": "emerging",
   "subClassOf": {
@@ -163,44 +153,8 @@ elevatedFrom:: [[PEOPLE]]
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:people:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:915a945fcae09fe3f3d5d79cfbadc724a3db20e85c0cab78089f28adbbcc9094"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Epistemic Modality Marker]]",
-      "resolved": "urn:visionflow:owl:class:could",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - A curated personal contact and collaboration index tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.
+  - A curated personal contact and collaboration [private] tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:PEOPLE

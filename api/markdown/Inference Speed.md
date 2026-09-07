@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inference Speed
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "inference-speed",
   "title": "Inference Speed",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Model Race", "Artificial Analysis", "Gemini 3.7 Flash", "Strategic Positioning"],
+  "vc:outboundWikilinks": [
+    "AI Model Race",
+    "Artificial Analysis",
+    "Gemini 3.7 Flash",
+    "Strategic Positioning"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-performance",
+      "label": "Model Performance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}, {"@id": "urn:ngm:class:inference", "label": "Inference"}, {"@id": "urn:ngm:class:ai-model", "label": "AI Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

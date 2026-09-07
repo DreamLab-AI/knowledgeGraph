@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Product Adoption Metrics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,9 @@ public: true
   "vc:slug": "product-adoption-metrics",
   "title": "Product Adoption Metrics",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Claude Co-work"],
+  "vc:outboundWikilinks": [
+    "Claude Co-work"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +23,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-adoption",
+      "label": "AI Adoption"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}, {"@id": "urn:ngm:class:claude", "label": "Claude"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:claude",
+        "label": "Claude"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

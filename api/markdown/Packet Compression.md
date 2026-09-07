@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Packet Compression
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,15 +46,30 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
-      {"@id": "urn:ngm:class:metaverse-infrastructure", "label": "Metaverse Infrastructure"}
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
     ]
   },
   "provenance": {
@@ -69,26 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:packet-compression:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e6da2433c2f54941577e0412fb677a989a7c87820f23c6726258f1c0161cae11"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The application of lossless or lossy compression algorithms to network packets to reduce transmission bandwidth and latency in real-time data pipelines. In metaverse and spatial computing contexts, packet compression is critical for streaming 3D scene state, avatar motion data, and sensor telemetry with minimal perceptual degradation at constrained network bandwidths.

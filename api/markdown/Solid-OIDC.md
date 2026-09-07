@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Solid-OIDC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Solid-OIDC is the authentication specification for the Solid ecosystem, extending OpenID Connect with decentralised identity so a user authenticates with their own WebID and identity provider rather than a centralised platform. It issues DPoP-bound access tokens that resource servers (Solid Pods) verify, enabling a user to control which applications access their personal data store. It is the identity layer that makes Solid's separation of identity, data, and application possible.",
   "domain": "data",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication", "label": "Authentication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:solid", "label": "Solid"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ]
   },
   "quality": 0.72

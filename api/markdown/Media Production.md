@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Media Production
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Media production is the end-to-end process of creating audiovisual content, spanning pre-production planning, capture, editing, and post-production finishing. It increasingly integrates generative AI, virtual production, and automated voice and speech tools to accelerate and personalise output. As a workflow it coordinates creative, technical, and asset-management activities across a content pipeline.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:content-creation-pipeline", "label": "Content Creation Pipeline"}, {"@id": "urn:ngm:class:speech-and-voice", "label": "Speech and Voice"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      }
+    ]
   },
   "quality": 0.72
 }

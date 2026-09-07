@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Global Explanation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -128,18 +123,36 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:feature-importance", "label": "Feature Importance"},
-      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"}
+      {
+        "@id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "@id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:local-explanation", "label": "Local Explanation"}
+      {
+        "@id": "urn:ngm:class:local-explanation",
+        "label": "Local Explanation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-transparency", "label": "Model Transparency"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+      {
+        "@id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
     ]
   },
   "provenance": {
@@ -149,117 +162,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:global-explanation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cbd3ea861985c7d6460623dce45b46ef358e7e0122e19a5df50c6b2d490db84a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[caballero2008financial; @spiro2019hidden]]",
-      "resolved": "urn:visionflow:linked:caballero2008financial-spiro2019hidden",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[carney2019growing; @piffaretti2009reshaping]]",
-      "resolved": "urn:visionflow:linked:carney2019growing-piffaretti2009reshaping",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[grewal2020struggling]]",
-      "resolved": "urn:visionflow:linked:grewal2020struggling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Individual Conditional Expectation]]",
-      "resolved": "urn:visionflow:linked:individual-conditional-expectation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Partial Dependence Plot]]",
-      "resolved": "urn:visionflow:linked:partial-dependence-plot",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Permutation Importance]]",
-      "resolved": "urn:visionflow:linked:permutation-importance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SHAP]]",
-      "resolved": "urn:visionflow:linked:shap",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Srinivasan2022]]",
-      "resolved": "urn:visionflow:linked:srinivasan2022",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[stoeferle2018gold]]",
-      "resolved": "urn:visionflow:linked:stoeferle2018gold",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Surrogate Models]]",
-      "resolved": "urn:visionflow:linked:surrogate-models",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[tomlinson2003third]]",
-      "resolved": "urn:visionflow:linked:tomlinson2003third",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:owl:class:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feature Importance]]",
-      "resolved": "urn:visionflow:owl:class:feature-importance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Local Explanation]]",
-      "resolved": "urn:visionflow:owl:class:local-explanation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Interpretability]]",
-      "resolved": "urn:visionflow:owl:class:model-interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Transparency]]",
-      "resolved": "urn:visionflow:owl:class:model-transparency",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions. Global explanations—such as feature importance rankings, partial dependence plots, and surrogate model trees—reveal systematic model tendencies and support auditing, debugging, and regulatory compliance.

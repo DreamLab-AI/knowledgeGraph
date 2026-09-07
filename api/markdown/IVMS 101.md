@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IVMS 101
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,25 +21,55 @@ public: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    {
+      "@id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:fatf-travel-rule", "label": "FATF Travel Rule"},
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:virtual-asset", "label": "Virtual Asset"}
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-border-compliance", "label": "Cross Border Compliance"},
-      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"}
+      {
+        "@id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-identity-standards", "label": "Digital Identity Standards"}
+      {
+        "@id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ]
   },
   "quality": 0.8

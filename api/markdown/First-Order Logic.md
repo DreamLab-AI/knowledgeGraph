@@ -1,8 +1,3 @@
----
-public: true
----
-
-# First-Order Logic
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -126,6 +122,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - First-Order Logic (FOL), also called predicate logic, is a formal system that extends propositional logic with quantifiers, variables, predicates and functions, allowing statements about objects and their relationships. It can express assertions such as "every X has some Y" through universal and existential quantification over a domain of discourse. FOL provides a precise syntax and model-theoretic semantics that underpin automated reasoning, knowledge representation and the foundations of mathematics.
   - Related concepts: [[Formal Logic]] [[Propositional Logic]] [[Predicate Logic]] [[Automated Reasoning]] [[Knowledge Representation]]

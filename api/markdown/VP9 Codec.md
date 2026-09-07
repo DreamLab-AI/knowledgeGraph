@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VP9 Codec
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "VP9 is an open, royalty-free video compression codec developed by Google as the successor to VP8, achieving roughly half the bitrate of H.264 at comparable quality. It supports resolutions up to 8K, 10/12-bit colour depth, and is widely deployed for streaming on YouTube and within WebRTC real-time communication. VP9's open licensing made it a key building block for browser-native video before AV1 succeeded it.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:screen-sharing", "label": "Screen Sharing"}, {"@id": "urn:ngm:class:av1-codec", "label": "AV1 Codec"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:av1-codec",
+        "label": "AV1 Codec"
+      }
+    ]
   },
   "quality": 0.72
 }

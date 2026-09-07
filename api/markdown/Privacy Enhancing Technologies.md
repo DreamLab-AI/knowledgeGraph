@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy Enhancing Technologies
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,4 +179,3 @@ public: true
   - Homomorphic Encryption (HE) allows a cloud server to compute functions (addition, multiplication) directly on encrypted data and return an encrypted result that the data owner can decrypt. While fully homomorphic encryption (FHE) is computationally intensive, levelled and bootstrapping techniques continue to reduce overheads. Secure Multi-Party Computation (MPC) achieves similar goals via a different mechanism: multiple parties jointly evaluate a function using secret shares, with no party learning another's input. MPC is used in privacy-preserving analytics consortia, confidential auctions, and threshold signature schemes.
 
   - The UK Information Commissioner's Office (ICO) and the European Data Protection Board have both published guidance explicitly endorsing PETs as means of compliance with GDPR obligations, particularly data-minimisation and purpose-limitation principles. Regulatory sandboxes for PET deployment (e.g. the UK Digital Sandbox) allow financial institutions to pilot PET-based data-sharing arrangements under supervisory oversight, accelerating adoption in health, financial crime prevention, and transport planning.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collaboration Tools
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,52 +191,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:collaboration-tools:d22f6c103ecc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:690accc3f5bf277fc4a206acfdab6d6488f13ab88dd5d57ce412393bca22ae5b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Architecture]]",
-      "resolved": "urn:visionflow:linked:network-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Operational Transformation]]",
-      "resolved": "urn:visionflow:linked:operational-transformation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CRDT]]",
-      "resolved": "urn:visionflow:linked:crdt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Version Control]]",
-      "resolved": "urn:visionflow:linked:version-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Development]]",
-      "resolved": "urn:visionflow:linked:software-development",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software that supports people working together on shared tasks or documents, including communication, coordination and concurrent editing features.

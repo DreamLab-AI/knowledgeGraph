@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Training Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:training-layer:89119c35c30f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aa51285de6edb628cd9664fc7724096709b3e8d876521e62541ec5cd7488e337"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Compute Layer]]",
-      "resolved": "urn:visionflow:linked:compute-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Layer]]",
-      "resolved": "urn:visionflow:linked:data-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Layer]]",
-      "resolved": "urn:visionflow:linked:model-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Foundation Model Layer]]",
-      "resolved": "urn:visionflow:linked:foundation-model-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gradient Descent]]",
-      "resolved": "urn:visionflow:linked:gradient-descent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Backpropagation]]",
-      "resolved": "urn:visionflow:linked:backpropagation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Training Layer is the stratum that fits model parameters from data using optimisation procedures. It sits above the Compute and Data strata it consumes and below the Model and Foundation Model strata that hold its results. It contains training loops, optimisers, loss functions, and the orchestration of large-scale learning runs.

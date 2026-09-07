@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Bilinear Pairing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,41 +20,100 @@ public: true
   "definition": "A bilinear pairing is a mathematical map between two groups to a third group that is linear in each argument separately, commonly realised as the Weil or Tate pairing on elliptic curves over finite fields. Bilinear pairings enable advanced cryptographic constructions including identity-based encryption, short signature schemes (BLS), and zero-knowledge proof systems. They form the algebraic foundation of pairing-based cryptography, which underpins threshold signatures and SNARKs used in modern blockchain protocols.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:finite-field-arithmetic", "label": "Finite Field Arithmetic"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:finite-field-arithmetic",
+        "label": "Finite Field Arithmetic"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pairing-based-cryptography", "label": "Pairing-Based Cryptography"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:pairing-based-cryptography",
+        "label": "Pairing-Based Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:identity-based-encryption", "label": "Identity-Based Encryption"},
-      {"@id": "urn:ngm:class:bls-signature", "label": "BLS Signature"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero Knowledge Proof"},
-      {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"}
+      {
+        "@id": "urn:ngm:class:identity-based-encryption",
+        "label": "Identity-Based Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:weil-pairing", "label": "Weil Pairing"},
-      {"@id": "urn:ngm:class:ate-pairing", "label": "Ate Pairing"}
+      {
+        "@id": "urn:ngm:class:weil-pairing",
+        "label": "Weil Pairing"
+      },
+      {
+        "@id": "urn:ngm:class:ate-pairing",
+        "label": "Ate Pairing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:snark", "label": "SNARK"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:snark",
+        "label": "SNARK"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-accumulator", "label": "Cryptographic Accumulator"},
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:cryptographic-accumulator",
+        "label": "Cryptographic Accumulator"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rsa", "label": "RSA"}
+      {
+        "@id": "urn:ngm:class:rsa",
+        "label": "RSA"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bn254-curve", "label": "BN254 Curve"},
-      {"@id": "urn:ngm:class:bls12-381-curve", "label": "BLS12-381 Curve"}
+      {
+        "@id": "urn:ngm:class:bn254-curve",
+        "label": "BN254 Curve"
+      },
+      {
+        "@id": "urn:ngm:class:bls12-381-curve",
+        "label": "BLS12-381 Curve"
+      }
     ]
   },
   "quality": 0.62,

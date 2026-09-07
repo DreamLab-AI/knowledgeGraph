@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Research University
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:research-university", "@type":"Page", "title":"Research University", "vc:slug":"research-university", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:research-university",
+  "@type": "Page",
+  "title": "Research University",
+  "vc:slug": "research-university",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,44 +21,96 @@ public: true
   "domain": "ai",
   "maturity": "mature",
   "subClassOf": [
-    { "@id": "urn:ngm:class:research-institution", "label": "Research Institution" }
+    {
+      "@id": "urn:ngm:class:research-institution",
+      "label": "Research Institution"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:laboratory", "label": "Laboratory" },
-      { "@id": "urn:ngm:class:phd-programme", "label": "PhD Programme" }
+      {
+        "@id": "urn:ngm:class:laboratory",
+        "label": "Laboratory"
+      },
+      {
+        "@id": "urn:ngm:class:phd-programme",
+        "label": "PhD Programme"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:academic-research", "label": "Academic Research" },
-      { "@id": "urn:ngm:class:technology-transfer", "label": "Technology Transfer" },
-      { "@id": "urn:ngm:class:talent-pipeline", "label": "Talent Pipeline" }
+      {
+        "@id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      },
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:talent-pipeline",
+        "label": "Talent Pipeline"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:innovation-ecosystem", "label": "Innovation Ecosystem" },
-      { "@id": "urn:ngm:class:scientific-publication", "label": "Scientific Publication" }
+      {
+        "@id": "urn:ngm:class:innovation-ecosystem",
+        "label": "Innovation Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-publication",
+        "label": "Scientific Publication"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:grant-funding", "label": "Grant Funding" },
-      { "@id": "urn:ngm:class:peer-review", "label": "Peer Review" }
+      {
+        "@id": "urn:ngm:class:grant-funding",
+        "label": "Grant Funding"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:research-and-development", "label": "Research and Development" }
+      {
+        "@id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
     ],
     "produces": [
-      { "@id": "urn:ngm:class:academic-conference", "label": "Academic Conference" }
+      {
+        "@id": "urn:ngm:class:academic-conference",
+        "label": "Academic Conference"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence" },
-      { "@id": "urn:ngm:class:research-institution", "label": "Research Institution" }
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:technology-transfer", "label": "Technology Transfer" },
-      { "@id": "urn:ngm:class:innovation-ecosystem", "label": "Innovation Ecosystem" }
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:innovation-ecosystem",
+        "label": "Innovation Ecosystem"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

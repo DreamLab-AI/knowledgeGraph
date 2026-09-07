@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SIEM
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "SIEM (Security Information and Event Management) is a platform that aggregates, normalises, and correlates log and event data from across an organisation's IT estate to detect threats and support compliance. It combines real-time alerting, anomaly detection, and historical search with dashboards and audit reporting. It is a foundational tool of security operations centres and regulatory compliance programmes.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:compliance-control", "label": "Compliance Control"}, {"@id": "urn:ngm:class:cyber-security-and-cryptography", "label": "Cyber Security and Cryptography"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      }
+    ]
   },
   "quality": 0.72
 }

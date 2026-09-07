@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Design Thinking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "Design Thinking is a human-centred, iterative problem-solving methodology that prioritises deep empathy with end users, rapid ideation, and prototype-driven experimentation to arrive at innovative solutions. Originating in industrial design and formalised at Stanford's d.school, it proceeds through five non-linear phases: empathise, define, ideate, prototype, and test. The approach deliberately suspends assumptions and defers judgement during divergent thinking stages, producing a rich solution space before converging on testable prototypes. Design Thinking is now applied widely in product development, service design, organisational strategy, and technology innovation contexts.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:user-research", "label": "User Research"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-design", "label": "Collaborative Design"},
-      {"@id": "urn:ngm:class:design-software", "label": "Design Software"}
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-design",
+        "label": "Collaborative Design"
+      },
+      {
+        "@id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"}
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:information-architecture", "label": "Information Architecture"},
-      {"@id": "urn:ngm:class:accessible-design", "label": "Accessible Design"},
-      {"@id": "urn:ngm:class:etsi-domain-human-interface-ux", "label": "ETSI_Domain_Human_Interface___UX"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:accessible-design",
+        "label": "Accessible Design"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-human-interface-ux",
+        "label": "ETSI_Domain_Human_Interface___UX"
+      }
     ]
   },
   "quality": 0.8

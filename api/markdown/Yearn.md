@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Yearn
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:yearn:56306cdfba08",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:80390f20922896cd7aaa9b13937a59b5b877570c7ce300990aaf4a77fba6f11d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:linked:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Yield Farming]]",
-      "resolved": "urn:visionflow:linked:yield-farming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Pool]]",
-      "resolved": "urn:visionflow:linked:liquidity-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Treasury Management]]",
-      "resolved": "urn:visionflow:linked:treasury-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Yearn is a decentralised finance protocol that automates the allocation of deposited assets across yield-generating strategies, abstracting away manual position management for users.

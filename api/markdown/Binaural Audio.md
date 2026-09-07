@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Binaural Audio
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:binaural-audio", "@type": "Page", "title": "Binaural Audio", "vc:slug": "binaural-audio", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:binaural-audio",
+  "@type": "Page",
+  "title": "Binaural Audio",
+  "vc:slug": "binaural-audio",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

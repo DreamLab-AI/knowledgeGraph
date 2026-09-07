@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Term Definitions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Term definitions are the authoritative, machine-readable descriptions that bind a label or identifier to its precise meaning within a controlled vocabulary, glossary, or ontology. Each definition fixes the intension of a term so that data producers and consumers interpret it consistently. They are the atomic content of glossaries and semantic registries and are essential for interoperability across systems.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-metadata-registry", "label": "Semantic Metadata Registry"},
-      {"@id": "urn:ngm:class:glossary-index", "label": "Glossary Index"}
+      {
+        "@id": "urn:ngm:class:semantic-metadata-registry",
+        "label": "Semantic Metadata Registry"
+      },
+      {
+        "@id": "urn:ngm:class:glossary-index",
+        "label": "Glossary Index"
+      }
     ]
   },
   "quality": 0.72

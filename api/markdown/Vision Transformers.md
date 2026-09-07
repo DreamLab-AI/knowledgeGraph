@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vision Transformers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,52 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vision-transformers:b6c88dba2d79",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c76f80c7acd7ff92d0b99a31166022eaea0b8e9f3e55c777c0c2096b360b9a69"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:linked:transformer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Attention Mechanism]]",
-      "resolved": "urn:visionflow:linked:attention-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Segmentation]]",
-      "resolved": "urn:visionflow:linked:image-segmentation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vision Transformer]]",
-      "resolved": "urn:visionflow:linked:vision-transformer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Transformer-based neural network architectures applied to images by splitting an image into patches and treating the patches as a sequence of tokens for self-attention.

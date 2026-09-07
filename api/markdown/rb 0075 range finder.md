@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0075 range finder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,18 +56,42 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"},
-      {"@id": "urn:ngm:class:rb-0078-infrared-sensor", "label": "rb 0078 infrared sensor"},
-      {"@id": "urn:ngm:class:rb-0080-radar", "label": "rb 0080 radar"},
-      {"@id": "urn:ngm:class:proximity-sensor", "label": "Proximity Sensor"}
+      {
+        "@id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0078-infrared-sensor",
+        "label": "rb 0078 infrared sensor"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0080-radar",
+        "label": "rb 0080 radar"
+      },
+      {
+        "@id": "urn:ngm:class:proximity-sensor",
+        "label": "Proximity Sensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0095-safety-zone", "label": "rb 0095 safety zone"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+      {
+        "@id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +101,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0075-range-finder:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9b8bb9137e62ea4e888444c01a6af94a61a42a50e20455f5454487de69df5fe8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A **range finder** measures the distance from a robot to objects in its environment using time-of-flight or phase-shift techniques with laser, infrared, or ultrasonic signals. Range finders span from single-beam infrared distance sensors to multi-layer laser scanners (LiDAR), providing the raw distance data that feeds obstacle detection, safety zone enforcement, and SLAM algorithms.

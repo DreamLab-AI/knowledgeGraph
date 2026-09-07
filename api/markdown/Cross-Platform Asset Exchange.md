@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Platform Asset Exchange
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Cross-platform asset exchange is the capability to move 3D models, textures, and other digital assets between different metaverse platforms, engines, and tools while preserving fidelity and usability. It depends on shared 3D file formats and import/export pipelines that map assets onto each platform's runtime. It is a prerequisite for interoperable virtual worlds and portable user content.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"}, {"@id": "urn:ngm:class:standard-format-support", "label": "Standard Format Support"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "@id": "urn:ngm:class:standard-format-support",
+        "label": "Standard Format Support"
+      }
+    ]
   },
   "quality": 0.72
 }

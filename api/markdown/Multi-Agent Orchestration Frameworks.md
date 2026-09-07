@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Agent Orchestration Frameworks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Multi-Agent Orchestration Frameworks",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
-    {"@id": "urn:visionflow:linked:personal-agent-runtimes", "vc:label": "Personal Agent Runtimes"},
-    {"@id": "urn:visionflow:linked:agent-development-sdks", "vc:label": "Agent Development SDKs"},
-    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
-    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
-    {"@id": "urn:visionflow:linked:multi-agent-coordination", "vc:label": "Multi-Agent Coordination"},
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:agent-memory-layers", "vc:label": "Agent Memory Layers"},
-    {"@id": "urn:visionflow:linked:ai-agent-system", "vc:label": "AI Agent System"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:graph-theory", "vc:label": "Graph Theory"},
-    {"@id": "urn:visionflow:linked:state-machine", "vc:label": "State Machine"},
-    {"@id": "urn:visionflow:linked:directed-acyclic-graph", "vc:label": "Directed Acyclic Graph"},
-    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
-    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:code-execution", "vc:label": "Code Execution"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:software-engineering", "vc:label": "Software Engineering"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
-    {"@id": "urn:visionflow:linked:agent2agent-protocol", "vc:label": "Agent2Agent Protocol"},
-    {"@id": "urn:visionflow:linked:terminal-coding-agents", "vc:label": "Terminal Coding Agents"},
-    {"@id": "urn:visionflow:linked:ai-infrastructure", "vc:label": "AI Infrastructure"},
-    {"@id": "urn:visionflow:linked:microservices-architecture", "vc:label": "Microservices Architecture"},
-    {"@id": "urn:visionflow:linked:event-driven-architecture", "vc:label": "Event-Driven Architecture"},
-    {"@id": "urn:visionflow:linked:role-based-access-control", "vc:label": "Role-Based Access Control"},
-    {"@id": "urn:visionflow:linked:checkpointing", "vc:label": "Checkpointing"},
-    {"@id": "urn:visionflow:linked:agent-event-stream", "vc:label": "Agent Event Stream"},
-    {"@id": "urn:visionflow:linked:progressive-disclosure-harnesses", "vc:label": "Progressive Disclosure Harnesses"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:llm-inference", "vc:label": "LLM Inference"},
-    {"@id": "urn:visionflow:linked:agent-layer", "vc:label": "AgentLayer"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:personal-agent-runtimes",
+      "vc:label": "Personal Agent Runtimes"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-development-sdks",
+      "vc:label": "Agent Development SDKs"
+    },
+    {
+      "@id": "urn:visionflow:linked:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-coordination",
+      "vc:label": "Multi-Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory-layers",
+      "vc:label": "Agent Memory Layers"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-theory",
+      "vc:label": "Graph Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-machine",
+      "vc:label": "State Machine"
+    },
+    {
+      "@id": "urn:visionflow:linked:directed-acyclic-graph",
+      "vc:label": "Directed Acyclic Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-evaluation-benchmarks",
+      "vc:label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-execution",
+      "vc:label": "Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-engineering",
+      "vc:label": "Software Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol",
+      "vc:label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent2agent-protocol",
+      "vc:label": "Agent2Agent Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:terminal-coding-agents",
+      "vc:label": "Terminal Coding Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-infrastructure",
+      "vc:label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:microservices-architecture",
+      "vc:label": "Microservices Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-driven-architecture",
+      "vc:label": "Event-Driven Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:role-based-access-control",
+      "vc:label": "Role-Based Access Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:checkpointing",
+      "vc:label": "Checkpointing"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-event-stream",
+      "vc:label": "Agent Event Stream"
+    },
+    {
+      "@id": "urn:visionflow:linked:progressive-disclosure-harnesses",
+      "vc:label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-inference",
+      "vc:label": "LLM Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-layer",
+      "vc:label": "AgentLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -67,98 +182,94 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:agent-harness", "label": "Agent Harness"}
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:agent-orchestrator", "label": "Agent Orchestrator"},
-      {"@id": "urn:ngm:class:multi-agent-coordination", "label": "Multi-Agent Coordination"},
-      {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"},
-      {"@id": "urn:ngm:class:agent-event-stream", "label": "Agent Event Stream"},
-      {"@id": "urn:ngm:class:checkpointing", "label": "Checkpointing"}
+      {
+        "@id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "@id": "urn:ngm:class:checkpointing",
+        "label": "Checkpointing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:agent-execution-sandboxes", "label": "Agent Execution Sandboxes"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"}
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:agent2-agent-protocol", "label": "Agent2Agent Protocol"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:personal-agent-runtimes", "label": "Personal Agent Runtimes"},
-      {"@id": "urn:ngm:class:agent-development-sdks", "label": "Agent Development SDKs"}
+      {
+        "@id": "urn:ngm:class:personal-agent-runtimes",
+        "label": "Personal Agent Runtimes"
+      },
+      {
+        "@id": "urn:ngm:class:agent-development-sdks",
+        "label": "Agent Development SDKs"
+      }
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "OntologyEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:multi-agent-orchestration-frameworks:b2c3d4e5f6a7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:multi-agent-orchestration-frameworks"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Agent Harness]]", "resolved": "urn:visionflow:linked:agent-harness", "kind": "ResolvedLink"},
-    {"raw": "[[Personal Agent Runtimes]]", "resolved": "urn:visionflow:linked:personal-agent-runtimes", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Development SDKs]]", "resolved": "urn:visionflow:linked:agent-development-sdks", "kind": "ResolvedLink"},
-    {"raw": "[[Internal AI Harness]]", "resolved": "urn:visionflow:linked:internal-ai-harness", "kind": "ResolvedLink"},
-    {"raw": "[[External AI Harness]]", "resolved": "urn:visionflow:linked:external-ai-harness", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Agent Coordination]]", "resolved": "urn:visionflow:linked:multi-agent-coordination", "kind": "StubLink"},
-    {"raw": "[[Agent Orchestrator]]", "resolved": "urn:visionflow:linked:agent-orchestrator", "kind": "ResolvedLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Tool Use]]", "resolved": "urn:visionflow:linked:tool-use", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Memory Layers]]", "resolved": "urn:visionflow:linked:agent-memory-layers", "kind": "ResolvedLink"},
-    {"raw": "[[AI Agent System]]", "resolved": "urn:visionflow:linked:ai-agent-system", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[Workflow Automation]]", "resolved": "urn:visionflow:linked:workflow-automation", "kind": "StubLink"},
-    {"raw": "[[Graph Theory]]", "resolved": "urn:visionflow:linked:graph-theory", "kind": "StubLink"},
-    {"raw": "[[State Machine]]", "resolved": "urn:visionflow:linked:state-machine", "kind": "StubLink"},
-    {"raw": "[[Directed Acyclic Graph]]", "resolved": "urn:visionflow:linked:directed-acyclic-graph", "kind": "StubLink"},
-    {"raw": "[[Agent Evaluation Benchmarks]]", "resolved": "urn:visionflow:linked:agent-evaluation-benchmarks", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Execution Sandboxes]]", "resolved": "urn:visionflow:linked:agent-execution-sandboxes", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "ResolvedLink"},
-    {"raw": "[[Code Execution]]", "resolved": "urn:visionflow:linked:code-execution", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Software Engineering]]", "resolved": "urn:visionflow:linked:software-engineering", "kind": "StubLink"},
-    {"raw": "[[Human-in-the-Loop]]", "resolved": "urn:visionflow:linked:human-in-the-loop", "kind": "StubLink"},
-    {"raw": "[[Agent Communication Protocol]]", "resolved": "urn:visionflow:linked:agent-communication-protocol", "kind": "ResolvedLink"},
-    {"raw": "[[Agent2Agent Protocol]]", "resolved": "urn:visionflow:linked:agent2agent-protocol", "kind": "ResolvedLink"},
-    {"raw": "[[Terminal Coding Agents]]", "resolved": "urn:visionflow:linked:terminal-coding-agents", "kind": "ResolvedLink"},
-    {"raw": "[[AI Infrastructure]]", "resolved": "urn:visionflow:linked:ai-infrastructure", "kind": "StubLink"},
-    {"raw": "[[Microservices Architecture]]", "resolved": "urn:visionflow:linked:microservices-architecture", "kind": "StubLink"},
-    {"raw": "[[Event-Driven Architecture]]", "resolved": "urn:visionflow:linked:event-driven-architecture", "kind": "StubLink"},
-    {"raw": "[[Role-Based Access Control]]", "resolved": "urn:visionflow:linked:role-based-access-control", "kind": "StubLink"},
-    {"raw": "[[Checkpointing]]", "resolved": "urn:visionflow:linked:checkpointing", "kind": "StubLink"},
-    {"raw": "[[Agent Event Stream]]", "resolved": "urn:visionflow:linked:agent-event-stream", "kind": "ResolvedLink"},
-    {"raw": "[[Progressive Disclosure Harnesses]]", "resolved": "urn:visionflow:linked:progressive-disclosure-harnesses", "kind": "StubLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "StubLink"},
-    {"raw": "[[LLM Inference]]", "resolved": "urn:visionflow:linked:llm-inference", "kind": "StubLink"},
-    {"raw": "[[AgentLayer]]", "resolved": "urn:visionflow:linked:agent-layer", "kind": "ResolvedLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:linked:ai-grounded-domain", "kind": "ResolvedLink"},
-    {"raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:linked:computation-and-intelligence-domain", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OMA3
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,46 +179,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:oma-3:7e34084d61fd",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8dd58bf34bc05c237f0afe6a83c57e50a27b049dc564f685efc47520ece14ea9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Interoperability Standards]]",
-      "resolved": "urn:visionflow:linked:interoperability-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:linked:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web3]]",
-      "resolved": "urn:visionflow:linked:web-3",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Standards Body]]",
-      "resolved": "urn:visionflow:linked:standards-body",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

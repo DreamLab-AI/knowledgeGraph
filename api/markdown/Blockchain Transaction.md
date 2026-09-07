@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Transaction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -198,36 +193,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-transaction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:878ffdd88a80fa9e38e3367b1ef01ca82b5fa7eebb7a59af75ef45cef2071e73"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
-      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A Blockchain Transaction is the fundamental unit of state change in a [[Blockchain]] network — an atomic, cryptographically signed instruction broadcast to a [[Peer-to-Peer Network]] that encodes a transfer of digital assets, invocation of a [[Smart Contract]], or mutation of on-chain data. Transactions are verified by network participants using a [[Consensus Algorithm]], ordered into [[Block]]s, and made practically irreversible through the cumulative work or stake secured in the chain. The structure and semantics of transactions differ materially between [[UTXO (Unspent Transaction Output)]]-based systems (such as [[Bitcoin]]) and account-model chains (such as [[Ethereum]]), with direct consequences for privacy, parallelism, and [[Decentralised Finance]] composability.
 
@@ -240,7 +205,7 @@ public: true
 - ### Key Components
   - #### UTXO Model (Bitcoin et al.)
     - [[UTXO (Unspent Transaction Output)]] — each transaction consumes one or more unspent outputs from prior transactions and creates new outputs, forming a directed acyclic graph of value flows.
-    - [[Transaction Input]] — references a previous output (txid + output index) and supplies an unlocking script (scriptSig or witness) proving the right to spend.
+    - [[Transaction Input]] — references a previous output (txid + output [private]) and supplies an unlocking script (scriptSig or witness) proving the right to spend.
     - [[Transaction Output]] — specifies amount and a locking script (scriptPubKey, e.g. P2PKH, P2SH, P2WPKH) defining conditions for future spending.
     - Enables deterministic verification and natural parallelism; state of every UTXO can be checked independently.
   - #### Account Model (Ethereum et al.)

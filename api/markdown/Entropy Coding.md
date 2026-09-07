@@ -1,38 +1,124 @@
----
-public: true
----
-
-# Entropy Coding
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:entropy-coding", "@type":"Page", "title":"Entropy Coding", "vc:slug":"entropy-coding", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:entropy-coding",
+  "@type": "Page",
+  "title": "Entropy Coding",
+  "vc:slug": "entropy-coding",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:entropy-coding",
-  "@type":"Class",
-  "label":"Entropy Coding",
-  "definition":"Entropy coding is a class of lossless data-compression techniques that assign shorter codewords to more frequent symbols and longer codewords to rarer ones, approaching the information-theoretic entropy limit of a source. Methods such as Huffman coding and arithmetic coding form the final, lossless stage of most image, audio, and video codecs, packing quantised data into a compact bitstream. Because it discards no information, entropy coding can be perfectly reversed during decoding.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:lossless-compression","label":"Lossless Compression"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:data-compression","label":"Data Compression"},{"@id":"urn:ngm:class:video-compression","label":"Video Compression"}],
-    "hasPart":[{"@id":"urn:ngm:class:data-encoding","label":"Data Encoding"}],
-    "uses":[{"@id":"urn:ngm:class:entropy","label":"Entropy"},{"@id":"urn:ngm:class:statistics","label":"Statistics"}],
-    "enables":[{"@id":"urn:ngm:class:video-compression","label":"Video Compression"},{"@id":"urn:ngm:class:image-compression","label":"Image Compression"}],
-    "supports":[{"@id":"urn:ngm:class:video-codec","label":"Video Codec"},{"@id":"urn:ngm:class:bitrate","label":"Bitrate"}],
-    "requires":[{"@id":"urn:ngm:class:entropy","label":"Entropy"}],
-    "implements":[{"@id":"urn:ngm:class:lossless-compression","label":"Lossless Compression"}],
-    "relatedTo":[{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"},{"@id":"urn:ngm:class:codec","label":"Codec"},{"@id":"urn:ngm:class:data-encoding","label":"Data Encoding"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:lossy-compression","label":"Lossy Compression"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:image-compression","label":"Image Compression"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:entropy-coding",
+  "@type": "Class",
+  "label": "Entropy Coding",
+  "definition": "Entropy coding is a class of lossless data-compression techniques that assign shorter codewords to more frequent symbols and longer codewords to rarer ones, approaching the information-theoretic entropy limit of a source. Methods such as Huffman coding and arithmetic coding form the final, lossless stage of most image, audio, and video codecs, packing quantised data into a compact bitstream. Because it discards no information, entropy coding can be perfectly reversed during decoding.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:lossless-compression",
+      "label": "Lossless Compression"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-encoding",
+        "label": "Data Encoding"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "@id": "urn:ngm:class:image-compression",
+        "label": "Image Compression"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "@id": "urn:ngm:class:bitrate",
+        "label": "Bitrate"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:codec",
+        "label": "Codec"
+      },
+      {
+        "@id": "urn:ngm:class:data-encoding",
+        "label": "Data Encoding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:lossy-compression",
+        "label": "Lossy Compression"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:image-compression",
+        "label": "Image Compression"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

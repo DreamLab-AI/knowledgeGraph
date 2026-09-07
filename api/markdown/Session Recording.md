@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Session Recording
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,39 +20,98 @@ public: true
   "definition": "Session Recording is the systematic capture of a user's interaction with a digital system during a defined session, including screen state, input events (mouse, keyboard, touch), audio, video, and network activity. In security contexts it provides an audit trail of privileged access for forensic and compliance purposes. In UX research it enables replay analysis of usability test sessions. In digital forensics it constitutes primary evidence of user actions on a system. Robust implementations mask sensitive data fields to balance observability with privacy requirements.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:audit-log", "label": "Audit Log"},
-      {"@id": "urn:ngm:class:event-stream", "label": "Event Stream"},
-      {"@id": "urn:ngm:class:screen-capture", "label": "Screen Capture"}
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:event-stream",
+        "label": "Event Stream"
+      },
+      {
+        "@id": "urn:ngm:class:screen-capture",
+        "label": "Screen Capture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:forensic-analysis", "label": "Forensic Analysis"},
-      {"@id": "urn:ngm:class:usability-testing", "label": "Usability Testing"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
+      {
+        "@id": "urn:ngm:class:forensic-analysis",
+        "label": "Forensic Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privileged-access-management", "label": "Privileged Access Management"},
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:think-aloud-protocol", "label": "Think Aloud Protocol"}
+      {
+        "@id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:think-aloud-protocol",
+        "label": "Think Aloud Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-encryption", "label": "Data Encryption"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:time-series-data", "label": "Time Series Data"}
+      {
+        "@id": "urn:ngm:class:data-encryption",
+        "label": "Data Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-data",
+        "label": "Time Series Data"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:security-information-and-event-management", "label": "Security Information And Event Management"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information And Event Management"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:log-aggregation", "label": "Log Aggregation"}
+      {
+        "@id": "urn:ngm:class:log-aggregation",
+        "label": "Log Aggregation"
+      }
     ]
   },
   "sameAs": [],

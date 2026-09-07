@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Database Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -225,51 +220,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:database-systems:065ba54f9b0a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1d215c8cfe9e7281e74f10091e642b7d9ca34508282e8a036b25757bac439cec"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Graph Databases]]",
-      "resolved": "urn:visionflow:linked:graph-databases",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Microservices]]",
-      "resolved": "urn:visionflow:linked:microservices",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Database]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-database",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.postgresql.org/docs/]]",
-      "resolved": "urn:visionflow:linked:https-www-postgresql-org-docs",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A **database system** (also called a [[Database Management Systems|DBMS]]) is an organised software stack that persistently stores, retrieves, and manipulates [[Data Management|managed data]] on behalf of one or more applications. It combines a storage engine, query processor, transaction manager, and access-control layer to deliver reliable, concurrent, multi-user access to shared information. ACID-compliant systems — such as [[Relational Databases|relational databases]] — guarantee Atomicity, Consistency, Isolation, and Durability; loosely consistent [[NoSQL Databases]] trade some guarantees for horizontal scale and schema flexibility. Database systems underpin virtually every layer of modern digital infrastructure, from mobile apps to [[Data Warehousing|enterprise data warehouses]].
 
@@ -283,7 +233,7 @@ public: true
 
 - ### Key Components
   - **Storage Engine** — manages on-disk layout of pages, rows, and indexes; examples include InnoDB (MySQL), WiredTiger (MongoDB), and RocksDB (many key-value stores). Uses [[Indexing]] structures such as B-trees and LSM-trees.
-  - **Query Processor** — parses, plans, and optimises declarative queries ([[Structured Query Language|SQL]], Cypher, MQL). The query optimiser selects join order, index usage, and execution strategy via cost-based or rule-based planning.
+  - **Query Processor** — parses, plans, and optimises declarative queries ([[Structured Query Language|SQL]], Cypher, MQL). The query optimiser selects join order, [private] usage, and execution strategy via cost-based or rule-based planning.
   - **Transaction Manager** — enforces [[ACID Transactions]] via logging (write-ahead log, WAL), locking, and isolation levels (Read Committed, Repeatable Read, Serialisable).
   - **Buffer Manager** — coordinates [[Caching]] of hot data pages in memory to reduce I/O latency; interacts with the OS page cache.
   - **Replication and High Availability** — synchronous or asynchronous [[Replication]] to standby nodes; failover managed by tools such as Patroni (PostgreSQL) or replica sets (MongoDB).
@@ -359,7 +309,7 @@ public: true
 
 - ### Current Landscape (2026)
   - PostgreSQL cemented its dominance, shipping v18 in September 2025 with an asynchronous I/O subsystem (io_uring on Linux, up to ~3x faster scan-heavy queries), native UUIDv7, skip scans, virtual generated columns and OAuth 2.0; v19 is on track for September 2026 with a planner-advisor framework and rumoured 64-bit transaction IDs. It topped Stack Overflow's 2025 survey as most-used database (~55.6%).
-  - Vectors shifted from a database category to a data type: pgvector 0.8 added iterative HNSW index scans, and Timescale's pgvectorscale (StreamingDiskANN) benchmarked ~471 QPS at 99% recall on 50M 1536-dim vectors versus ~41 QPS for Qdrant, with roughly 28x lower p95 latency than Pinecone's storage-optimised index.
+  - Vectors shifted from a database category to a data type: pgvector 0.8 added iterative HNSW [private] scans, and Timescale's pgvectorscale (StreamingDiskANN) benchmarked ~471 QPS at 99% recall on 50M 1536-dim vectors versus ~41 QPS for Qdrant, with roughly 28x lower p95 latency than Pinecone's storage-optimised [private].
   - Enterprise incumbents folded vector search into their engines for free: Oracle rebranded to AI Database 26ai (AI Vector Search at no extra charge, RAFT-based global replication, quantum-resistant encryption, Iceberg lakehouse), and Microsoft SQL Server 2025 reached GA with a native vector data type, DiskANN indexes and in-SQL REST calls to Azure AI/OpenAI/Ollama.
   - The Postgres-first consolidation wave saw Databricks acquire Neon for ~$1B (May 2025), Snowflake acquire Crunchy Data for ~$250M (June 2025), Microsoft launch its HorizonDB DBaaS, and Supabase raise large rounds at a multi-billion valuation, pressuring standalone vector vendors (PostgresML, Hydra and Voltron Data struggled or shut down).
   - Anthropic's Model Context Protocol became the year's interoperability standard: after OpenAI's March 2025 adoption, essentially every DBMS vendor shipped MCP servers across OLAP (ClickHouse, Snowflake), SQL (Oracle, YugabyteDB, PlanetScale) and NoSQL (MongoDB, Neo4j, Redis) categories.

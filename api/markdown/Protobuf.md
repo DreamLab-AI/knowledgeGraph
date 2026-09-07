@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Protobuf
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:protobuf", "@type":"Page", "title":"Protobuf", "vc:slug":"protobuf", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:protobuf",
+  "@type": "Page",
+  "title": "Protobuf",
+  "vc:slug": "protobuf",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

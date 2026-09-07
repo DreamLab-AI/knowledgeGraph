@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Coordinate Transformation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,19 +21,37 @@ public: true
   "domain": "robotics",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:coordinate-system", "label": "Coordinate System"}
+    {
+      "@id": "urn:ngm:class:coordinate-system",
+      "label": "Coordinate System"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:reference-frames", "label": "Reference Frames"},
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"}
+      {
+        "@id": "urn:ngm:class:reference-frames",
+        "label": "Reference Frames"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:quaternion-math", "label": "Quaternion Math"}
+      {
+        "@id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion Math"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ]
   },
   "quality": 0.8

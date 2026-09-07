@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Notified Body
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,36 @@ public: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:national-competent-authority", "label": "National Competent Authority"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:national-competent-authority",
+        "label": "National Competent Authority"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:notified-body:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8c92a79391f6738839a189b911fd4caed160c21f13e5316432514bc9f6b85c87"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A conformity assessment body notified under the AI Act and other relevant EU harmonisation legislation, responsible for performing third-party conformity assessment of certain high-risk AI systems.

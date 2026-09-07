@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Infrared Led Illuminator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:infrared-led-illuminator:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:017c7f1c76ec1e3c3c686b0a14e5a39cb472f5cb0e118c5561b1b7954f95b79f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hand Tracking Enhancement]]",
-      "resolved": "urn:visionflow:linked:hand-tracking-enhancement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Infrared Illuminator]]",
-      "resolved": "urn:visionflow:owl:class:infrared-illuminator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - LED-based infrared light sources integrated into or used alongside VR/AR headsets to provide illumination for tracking systems, featuring compact form factors, low power consumption, and wavelengths optimised for camera sensor detection.

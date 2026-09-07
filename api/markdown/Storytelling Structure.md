@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Storytelling Structure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,16 +51,34 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:game-narratives", "label": "Game Narratives"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:immersive-entertainment", "label": "Immersive Entertainment"}
+      {
+        "@id": "urn:ngm:class:game-narratives",
+        "label": "Game Narratives"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:character-model", "label": "Character Model"},
-      {"@id": "urn:ngm:class:game-mechanics", "label": "Game Mechanics"}
+      {
+        "@id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      },
+      {
+        "@id": "urn:ngm:class:game-mechanics",
+        "label": "Game Mechanics"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"}
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
     ]
   },
   "provenance": {
@@ -75,32 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:storytelling-structure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4a0971dd84319dca304b31d59631cabf6d01a3347c623a14016b6aacab0d58fb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Storytelling Structure is a formal organisation of narrative elements — acts, arcs, beats, and character relationships — that governs the temporal and causal progression of events in interactive and immersive experiences. In spatial computing contexts it shapes how virtual environments present branching narrative paths, cinematic sequences, and player-driven story arcs.

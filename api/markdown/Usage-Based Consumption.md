@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Usage-Based Consumption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "usage-based-consumption",
   "title": "Usage-Based Consumption",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Economics", "Seat-Based Pricing"],
+  "vc:outboundWikilinks": [
+    "AI Economics",
+    "Seat-Based Pricing"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-economics", "label": "AI Economics"}, {"@id": "urn:ngm:class:ai-pricing-models", "label": "AI Pricing Models"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-economics",
+        "label": "AI Economics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-pricing-models",
+        "label": "AI Pricing Models"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

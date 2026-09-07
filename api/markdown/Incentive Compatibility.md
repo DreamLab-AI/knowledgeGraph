@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Incentive Compatibility
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "A property of a mechanism or protocol in which every participant's dominant strategy is to act truthfully, such that honest reporting of private information is individually rational. Incentive compatibility ensures that the designed rules align agents' self-interest with socially desirable outcomes, eliminating the benefit of strategic misrepresentation.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mechanism-design",
+      "label": "Mechanism Design"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - In decentralised systems, incentive compatibility manifests in consensus protocols, oracle designs, and liquidity mechanisms. Blockchain validators are incentivised to behave honestly through block rewards and slashing conditions. [[Automated Market Maker]] protocols such as Uniswap embed price-path incentives that discourage certain forms of front-running. [[Tokenomics]] token emission schedules are constructed to align long-term holder behaviour with network security. [[DAO Governance]] proposals must also account for plutocratic gaming, where large token holders might extract private benefits, requiring additional mechanism constraints.
 
   - As of 2024–2025, incentive compatibility research is intensifying in AI agent economics, where autonomous agents acting on behalf of humans must be designed to avoid collusion and value misalignment. Multi-agent reinforcement learning contexts surface novel compatibility failures that classical mechanism design did not anticipate. Fee market redesigns — such as Ethereum's EIP-1559 — have been formally analysed for their incentive properties, and future layer-2 sequencer designs are evaluated against compatibility criteria. The convergence of AI and decentralised finance places incentive compatibility at the frontier of both fields.
-

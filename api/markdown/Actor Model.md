@@ -1,52 +1,108 @@
----
-public: true
----
-
-# Actor Model
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:actor-model", "@type":"Page", "title":"Actor Model", "vc:slug":"actor-model", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:actor-model",
+  "@type": "Page",
+  "title": "Actor Model",
+  "vc:slug": "actor-model",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:actor-model",
-  "@type":"Class",
-  "label":"Actor Model",
-  "definition":"The actor model is a mathematical model of concurrent computation in which the universal primitive is the actor, an independent entity that has private state and communicates only by sending asynchronous messages. In response to a message an actor can update its state, send messages to other actors and create new actors. Because actors share nothing and process one message at a time, the model avoids shared-memory data races and provides a foundation for scalable, fault-tolerant distributed systems.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:concurrency","label":"Concurrency"},{"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"}],
-  "relations":{
-    "implements":[
-      {"@id":"urn:ngm:class:message-passing","label":"Message Passing"},
-      {"@id":"urn:ngm:class:asynchronous-messaging","label":"Asynchronous Messaging"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:actor-model",
+  "@type": "Class",
+  "label": "Actor Model",
+  "definition": "The actor model is a mathematical model of concurrent computation in which the universal primitive is the actor, an independent entity that has private state and communicates only by sending asynchronous messages. In response to a message an actor can update its state, send messages to other actors and create new actors. Because actors share nothing and process one message at a time, the model avoids shared-memory data races and provides a foundation for scalable, fault-tolerant distributed systems.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:concurrency",
+      "label": "Concurrency"
+    },
+    {
+      "@id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-messaging",
+        "label": "Asynchronous Messaging"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:concurrency-model","label":"Concurrency Model"},
-      {"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"},
-      {"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:concurrency-model",
+        "label": "Concurrency Model"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:message-passing","label":"Message Passing"},
-      {"@id":"urn:ngm:class:event-driven-architecture","label":"Event Driven Architecture"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"},
-      {"@id":"urn:ngm:class:load-balancing","label":"Load Balancing"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:shared-nothing-architecture","label":"Shared Nothing Architecture"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:shared-nothing-architecture",
+        "label": "Shared Nothing Architecture"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:reactive-systems","label":"Reactive Systems"},
-      {"@id":"urn:ngm:class:flow-control","label":"Flow Control"},
-      {"@id":"urn:ngm:class:distributed-system","label":"Distributed System"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:reactive-systems",
+        "label": "Reactive Systems"
+      },
+      {
+        "@id": "urn:ngm:class:flow-control",
+        "label": "Flow Control"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

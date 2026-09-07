@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Econometrics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Econometrics is the application of statistical and mathematical methods to economic data in order to test hypotheses, estimate relationships, and forecast economic phenomena. It combines economic theory with regression analysis, time-series modelling, and causal-inference techniques to quantify effects such as elasticities and policy impacts. Econometrics is foundational to empirical economics and increasingly overlaps with machine learning for prediction.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"}, {"@id": "urn:ngm:class:economics", "label": "Economics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
   },
   "quality": 0.72
 }

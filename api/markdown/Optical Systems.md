@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optical Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Optical Systems are arrangements of lenses, mirrors, waveguides, and combiners that direct and form light to project or relay images. In display hardware they govern how rendered content is delivered to the eye, including focus, field of view, and image clarity. Augmented- and virtual-reality headsets depend on compact optical systems such as pancake lenses and waveguide combiners to merge virtual imagery with the real world.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ar-display-device", "label": "Ar Display Device"},
-      {"@id": "urn:ngm:class:display-hardware", "label": "Display Hardware"}
+      {
+        "@id": "urn:ngm:class:ar-display-device",
+        "label": "Ar Display Device"
+      },
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
     ]
   },
   "quality": 0.72

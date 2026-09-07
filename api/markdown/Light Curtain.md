@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Light Curtain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -94,32 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:light-curtain:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:73a5f28ab90f4f2ad6cb8361a0d7ec6a2a168698382854e187646b8983d1658b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Light Curtain is an optoelectronic safety device that creates an invisible infrared detection zone around hazardous machinery or robot work cells. When an object or person interrupts the beam matrix, the curtain triggers an emergency stop, enforcing compliance with ISO 8373 and IEC 61496 safety standards.

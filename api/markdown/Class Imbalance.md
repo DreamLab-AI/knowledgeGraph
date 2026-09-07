@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Class Imbalance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

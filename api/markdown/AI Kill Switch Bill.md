@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Kill Switch Bill
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-kill-switch-bill",
   "title": "AI Kill Switch Bill",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Safety Regulation", "Ted Lieu"],
+  "vc:outboundWikilinks": [
+    "AI Safety Regulation",
+    "Ted Lieu"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety-research",
+      "label": "AI Safety Research"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:responsible-scaling-policy", "label": "Responsible Scaling Policy"}, {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

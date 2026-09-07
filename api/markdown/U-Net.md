@@ -1,8 +1,3 @@
----
-public: true
----
-
-# U-Net
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,57 +181,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:u-net:52cfa960e085",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:20c285e2f48fc9f5c8d0f1b9c9a25055a6f8b69b78d8f7f452e5bcf90c04b274"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Convolution]]",
-      "resolved": "urn:visionflow:linked:convolution",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Encoder]]",
-      "resolved": "urn:visionflow:linked:encoder",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decoder]]",
-      "resolved": "urn:visionflow:linked:decoder",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Segmentation]]",
-      "resolved": "urn:visionflow:linked:image-segmentation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Segmentation]]",
-      "resolved": "urn:visionflow:linked:semantic-segmentation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Network]]",
-      "resolved": "urn:visionflow:linked:convolutional-neural-network",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A convolutional neural network architecture with a symmetric encoder-decoder structure and skip connections, originally designed for biomedical image segmentation.

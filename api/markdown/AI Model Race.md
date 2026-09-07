@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Model Race
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-model-race",
   "title": "AI Model Race",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Inference Speed", "Strategic Positioning"],
+  "vc:outboundWikilinks": [
+    "Inference Speed",
+    "Strategic Positioning"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-strategy", "label": "AI Strategy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-strategy",
+      "label": "AI Strategy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:strategic-positioning", "label": "Strategic Positioning"}, {"@id": "urn:ngm:class:inference-speed", "label": "Inference Speed"}, {"@id": "urn:ngm:class:ai-model", "label": "AI Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:strategic-positioning",
+        "label": "Strategic Positioning"
+      },
+      {
+        "@id": "urn:ngm:class:inference-speed",
+        "label": "Inference Speed"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

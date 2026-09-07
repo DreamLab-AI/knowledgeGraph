@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rb-0052-collision-avoidance",
   "domain": "robotics",
-  "definition": "Collision avoidance in robotics is the capability of a robot system to detect and react to obstacles \u2014 including other robots, infrastructure, and human operators \u2014 so as to prevent physical contact that could cause damage or injury. It encompasses both reactive techniques (e.g. potential field methods, velocity obstacles) and proactive planning approaches that embed free-space constraints into the trajectory from the outset. It is a prerequisite for safe autonomous navigation and collaborative operation.",
+  "definition": "Collision avoidance in robotics is the capability of a robot system to detect and react to obstacles \u2014 including other robots, infrastructure, and human operators \u2014 so as to prevent physical contact that [private] cause damage or injury. It encompasses both reactive techniques (e.g. potential field methods, velocity obstacles) and proactive planning approaches that embed free-space constraints into the trajectory from the outset. It is a prerequisite for safe autonomous navigation and collaborative operation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robo-navigation-and-planning",

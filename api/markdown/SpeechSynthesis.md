@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Speech Synthesis
-  - Speech synthesis
----
-
-# SpeechSynthesis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -28,21 +20,50 @@ aliases:
   "definition": "Speech synthesis, or text-to-speech (TTS), is the artificial generation of human speech from text or linguistic representations using computational models that map phonetic, prosodic, and acoustic features to waveform output. Modern neural TTS systems use end-to-end deep learning pipelines—typically a text front-end, an acoustic model (Tacotron, FastSpeech, or diffusion-based), and a neural vocoder (WaveNet, HiFi-GAN, Vocos)—to produce speech that is perceptually natural, expressive, and stylistically controllable. Speech synthesis underpins screen readers, virtual assistants, navigation systems, voice cloning tools, and interactive conversational agents, and its quality is now at or approaching human parity on standard benchmarks for many languages.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:text-to-speech",
+      "label": "Text-to-Speech"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:voice-cloning", "label": "Voice Cloning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"},
-      {"@id": "urn:ngm:class:speech-and-voice", "label": "Speech and Voice"}
+      {
+        "@id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      }
     ]
   },
   "quality": 0.8

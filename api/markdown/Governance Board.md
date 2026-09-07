@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Governance Board
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:governance-board:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:97127706e7c07e72db62515e5d6027d38c869953e48ef7d490afb4ebbf76ed44"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collective Decision Making]]",
-      "resolved": "urn:visionflow:linked:collective-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Governance Architecture]]",
-      "resolved": "urn:visionflow:owl:class:governance-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An oversight body responsible for strategic decision-making and policy enforcement within metaverse organisations, evolving from traditional corporate board structures to decentralised autonomous organisation (DAO) models where token holders collectively govern through transparent on-chain voting mechanisms.

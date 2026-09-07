@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenAI Agents SDK
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:open-ai-agents-sdk:ea5a2eb8ce7e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8287aa3b51c9c5185241e6792e137644f25a83833a0a3111c9db21b9805c9df8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Language Model]]",
-      "resolved": "urn:visionflow:linked:language-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Function Calling]]",
-      "resolved": "urn:visionflow:linked:function-calling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Agent Coordination]]",
-      "resolved": "urn:visionflow:linked:multi-agent-coordination",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tool Use]]",
-      "resolved": "urn:visionflow:linked:tool-use",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenAI Research Organisation]]",
-      "resolved": "urn:visionflow:linked:open-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agent]]",
-      "resolved": "urn:visionflow:linked:ai-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agentic Workflow]]",
-      "resolved": "urn:visionflow:linked:agentic-workflow",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The OpenAI Agents SDK is a software development kit for building agentic applications on OpenAI models, providing primitives for agents, tools and handoffs. It supports orchestrating one or more agents that call functions and pass control between each other.

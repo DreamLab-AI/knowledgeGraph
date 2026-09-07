@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Text-to-3D
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,26 +58,68 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -93,37 +130,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:text-to-3-d:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2c00f717e8db8f5557984d16622f20b6312b6d20eaf74c8dbbb00bdbd4850e05"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Ai]]",
-      "resolved": "urn:visionflow:owl:class:generative-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Text-to-3D is a concept within the ai domain.

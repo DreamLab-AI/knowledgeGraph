@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Attention Mechanisms
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,51 +7,186 @@ public: true
   "title": "Attention Mechanisms",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:multi-head-attention", "vc:label": "Multi-Head Attention"},
-    {"@id": "urn:visionflow:linked:self-attention", "vc:label": "Self Attention"},
-    {"@id": "urn:visionflow:linked:cross-attention", "vc:label": "Cross Attention"},
-    {"@id": "urn:visionflow:linked:causal-attention", "vc:label": "Causal Attention"},
-    {"@id": "urn:visionflow:linked:flash-attention", "vc:label": "Flash Attention"},
-    {"@id": "urn:visionflow:linked:scaled-dot-product-attention", "vc:label": "Scaled Dot Product Attention"},
-    {"@id": "urn:visionflow:linked:grouped-query-attention", "vc:label": "Grouped Query Attention"},
-    {"@id": "urn:visionflow:linked:attention-head", "vc:label": "Attention Head"},
-    {"@id": "urn:visionflow:linked:attention-weight", "vc:label": "Attention Weight"},
-    {"@id": "urn:visionflow:linked:attention-mask", "vc:label": "Attention Mask"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:vision-transformer", "vc:label": "Vision Transformer"},
-    {"@id": "urn:visionflow:linked:diffusion-transformer", "vc:label": "Diffusion Transformer"},
-    {"@id": "urn:visionflow:linked:graph-attention-network", "vc:label": "Graph Attention Network"},
-    {"@id": "urn:visionflow:linked:lstm", "vc:label": "LSTM"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:multimodal-ai-architecture", "vc:label": "Multimodal AI Architecture"},
-    {"@id": "urn:visionflow:linked:multimodal-learning", "vc:label": "Multimodal Learning"},
-    {"@id": "urn:visionflow:linked:multimodal-understanding", "vc:label": "Multimodal Understanding"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:machine-translation", "vc:label": "Machine Translation"},
-    {"@id": "urn:visionflow:linked:positional-encoding", "vc:label": "Positional Encoding"},
-    {"@id": "urn:visionflow:linked:feed-forward-network", "vc:label": "Feed Forward Network"},
-    {"@id": "urn:visionflow:linked:softmax-function", "vc:label": "Softmax Function"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:mixture-of-experts", "vc:label": "Mixture of Experts"},
-    {"@id": "urn:visionflow:linked:speculative-decoding", "vc:label": "Speculative Decoding"},
-    {"@id": "urn:visionflow:linked:paged-attention", "vc:label": "Paged Attention"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:knowledge-distillation", "vc:label": "Knowledge Distillation"},
-    {"@id": "urn:visionflow:linked:neural-network-component", "vc:label": "Neural Network Component"},
-    {"@id": "urn:visionflow:linked:recurrent-neural-network", "vc:label": "Recurrent Neural Network"},
-    {"@id": "urn:visionflow:linked:query-key-value", "vc:label": "Query Key Value"},
-    {"@id": "urn:visionflow:linked:ai-model-architecture", "vc:label": "AI Model Architecture"},
-    {"@id": "urn:visionflow:linked:gemini-multimodal-language-model", "vc:label": "Gemini Multimodal Language Model"},
-    {"@id": "urn:visionflow:linked:multimodal-reasoning", "vc:label": "Multimodal Reasoning"},
-    {"@id": "urn:visionflow:linked:attention-aware-interaction", "vc:label": "Attention Aware Interaction"}
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-head-attention",
+      "vc:label": "Multi-Head Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-attention",
+      "vc:label": "Self Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-attention",
+      "vc:label": "Cross Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:causal-attention",
+      "vc:label": "Causal Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:flash-attention",
+      "vc:label": "Flash Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:scaled-dot-product-attention",
+      "vc:label": "Scaled Dot Product Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:grouped-query-attention",
+      "vc:label": "Grouped Query Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-head",
+      "vc:label": "Attention Head"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-weight",
+      "vc:label": "Attention Weight"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mask",
+      "vc:label": "Attention Mask"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:vision-transformer",
+      "vc:label": "Vision Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-transformer",
+      "vc:label": "Diffusion Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-attention-network",
+      "vc:label": "Graph Attention Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:lstm",
+      "vc:label": "LSTM"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai-architecture",
+      "vc:label": "Multimodal AI Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-learning",
+      "vc:label": "Multimodal Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-understanding",
+      "vc:label": "Multimodal Understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-translation",
+      "vc:label": "Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:positional-encoding",
+      "vc:label": "Positional Encoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:feed-forward-network",
+      "vc:label": "Feed Forward Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:softmax-function",
+      "vc:label": "Softmax Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:mixture-of-experts",
+      "vc:label": "Mixture of Experts"
+    },
+    {
+      "@id": "urn:visionflow:linked:speculative-decoding",
+      "vc:label": "Speculative Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:paged-attention",
+      "vc:label": "Paged Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network-component",
+      "vc:label": "Neural Network Component"
+    },
+    {
+      "@id": "urn:visionflow:linked:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:query-key-value",
+      "vc:label": "Query Key Value"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model-architecture",
+      "vc:label": "AI Model Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:gemini-multimodal-language-model",
+      "vc:label": "Gemini Multimodal Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-reasoning",
+      "vc:label": "Multimodal Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-aware-interaction",
+      "vc:label": "Attention Aware Interaction"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
@@ -96,45 +226,132 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
-      {"@id": "urn:ngm:class:causal-attention", "label": "Causal Attention"},
-      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"},
-      {"@id": "urn:ngm:class:scaled-dot-product-attention", "label": "Scaled Dot Product Attention"},
-      {"@id": "urn:ngm:class:attention-weight", "label": "Attention Weight"},
-      {"@id": "urn:ngm:class:attention-mask", "label": "Attention Mask"},
-      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"}
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "@id": "urn:ngm:class:causal-attention",
+        "label": "Causal Attention"
+      },
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "@id": "urn:ngm:class:scaled-dot-product-attention",
+        "label": "Scaled Dot Product Attention"
+      },
+      {
+        "@id": "urn:ngm:class:attention-weight",
+        "label": "Attention Weight"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mask",
+        "label": "Attention Mask"
+      },
+      {
+        "@id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:softmax-function", "label": "Softmax Function"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture", "label": "Multimodal AI Architecture"},
-      {"@id": "urn:ngm:class:graph-attention-network", "label": "Graph Attention Network"},
-      {"@id": "urn:ngm:class:diffusion-transformer", "label": "Diffusion Transformer"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal AI Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:graph-attention-network",
+        "label": "Graph Attention Network"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ai-model-architecture", "label": "AI Model Architecture"}
+      {
+        "@id": "urn:ngm:class:ai-model-architecture",
+        "label": "AI Model Architecture"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
-      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed Forward Network"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed Forward Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:flash-attention", "label": "Flash Attention"},
-      {"@id": "urn:ngm:class:grouped-query-attention", "label": "Grouped Query Attention"},
-      {"@id": "urn:ngm:class:paged-attention", "label": "Paged Attention"},
-      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "@id": "urn:ngm:class:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "@id": "urn:ngm:class:paged-attention",
+        "label": "Paged Attention"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
     ]
   },
   "quality": 0.93,
@@ -142,71 +359,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:attention-mechanisms:f2722cb13a10",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d4c5b5378ddb05c1f5b25b415587e315f237a62f1d509caa4faa920ab382e3d5"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer]]", "resolved": "urn:visionflow:linked:transformer", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Head Attention]]", "resolved": "urn:visionflow:linked:multi-head-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Self Attention]]", "resolved": "urn:visionflow:linked:self-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Cross Attention]]", "resolved": "urn:visionflow:linked:cross-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Causal Attention]]", "resolved": "urn:visionflow:linked:causal-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Flash Attention]]", "resolved": "urn:visionflow:linked:flash-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Scaled Dot Product Attention]]", "resolved": "urn:visionflow:linked:scaled-dot-product-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Grouped Query Attention]]", "resolved": "urn:visionflow:linked:grouped-query-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Head]]", "resolved": "urn:visionflow:linked:attention-head", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Weight]]", "resolved": "urn:visionflow:linked:attention-weight", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mask]]", "resolved": "urn:visionflow:linked:attention-mask", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Backpropagation]]", "resolved": "urn:visionflow:linked:backpropagation", "kind": "ResolvedLink"},
-    {"raw": "[[Vision Transformer]]", "resolved": "urn:visionflow:linked:vision-transformer", "kind": "ResolvedLink"},
-    {"raw": "[[Diffusion Transformer]]", "resolved": "urn:visionflow:linked:diffusion-transformer", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Attention Network]]", "resolved": "urn:visionflow:linked:graph-attention-network", "kind": "ResolvedLink"},
-    {"raw": "[[LSTM]]", "resolved": "urn:visionflow:linked:lstm", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Multimodal AI Architecture]]", "resolved": "urn:visionflow:linked:multimodal-ai-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Multimodal Learning]]", "resolved": "urn:visionflow:linked:multimodal-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Multimodal Understanding]]", "resolved": "urn:visionflow:linked:multimodal-understanding", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Machine Translation]]", "resolved": "urn:visionflow:linked:machine-translation", "kind": "StubLink"},
-    {"raw": "[[Positional Encoding]]", "resolved": "urn:visionflow:linked:positional-encoding", "kind": "StubLink"},
-    {"raw": "[[Feed Forward Network]]", "resolved": "urn:visionflow:linked:feed-forward-network", "kind": "StubLink"},
-    {"raw": "[[Softmax Function]]", "resolved": "urn:visionflow:linked:softmax-function", "kind": "StubLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Mixture of Experts]]", "resolved": "urn:visionflow:linked:mixture-of-experts", "kind": "StubLink"},
-    {"raw": "[[Speculative Decoding]]", "resolved": "urn:visionflow:linked:speculative-decoding", "kind": "StubLink"},
-    {"raw": "[[Paged Attention]]", "resolved": "urn:visionflow:linked:paged-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "StubLink"},
-    {"raw": "[[Speech Recognition]]", "resolved": "urn:visionflow:linked:speech-recognition", "kind": "StubLink"},
-    {"raw": "[[Recurrent Neural Network]]", "resolved": "urn:visionflow:linked:recurrent-neural-network", "kind": "StubLink"},
-    {"raw": "[[Query Key Value]]", "resolved": "urn:visionflow:linked:query-key-value", "kind": "StubLink"},
-    {"raw": "[[AI Model Architecture]]", "resolved": "urn:visionflow:linked:ai-model-architecture", "kind": "StubLink"},
-    {"raw": "[[Gemini Multimodal Language Model]]", "resolved": "urn:visionflow:linked:gemini-multimodal-language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Multimodal Reasoning]]", "resolved": "urn:visionflow:linked:multimodal-reasoning", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Aware Interaction]]", "resolved": "urn:visionflow:linked:attention-aware-interaction", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "StubLink"},
-    {"raw": "[[Knowledge Distillation]]", "resolved": "urn:visionflow:linked:knowledge-distillation", "kind": "StubLink"},
-    {"raw": "[[Neural Network Component]]", "resolved": "urn:visionflow:linked:neural-network-component", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -546,7 +698,7 @@ public: true
   ## Interpretability and Safety Implications of Attention
     Attention mechanisms have become central to AI interpretability and safety research because their attention weights — the probability distributions alpha_{ij} computed by softmax(QK^T/sqrt(d_k)) — provide a human-readable proxy for "what the model is attending to" when producing each output token.
 
-    Attention weights as explanations: Early work (Jain & Wallace 2019, "Attention is not Explanation") empirically showed that attention weights in LSTM+attention models could be adversarially perturbed without changing model predictions, and do not correlate reliably with gradient-based feature importance scores. Wiegreffe & Pinter (2019, "Attention is not Not Explanation") partially refuted this, showing that in some architectures attention weights do provide faithful explanations. The consensus as of 2026 is that attention weights are plausible but not faithful explanations: they reflect the model's routing of information but not the causal chain from input features to output predictions.
+    Attention weights as explanations: Early work (Jain & Wallace 2019, "Attention is not Explanation") empirically showed that attention weights in LSTM+attention models [private] be adversarially perturbed without changing model predictions, and do not correlate reliably with gradient-based feature importance scores. Wiegreffe & Pinter (2019, "Attention is not Not Explanation") partially refuted this, showing that in some architectures attention weights do provide faithful explanations. The consensus as of 2026 is that attention weights are plausible but not faithful explanations: they reflect the model's routing of information but not the causal chain from input features to output predictions.
     Attention head functional roles (Elhage et al. 2021, Anthropic): systematic ablation and attention-pattern analysis in 2-layer transformers identified three functional head types: (1) previous-token heads (attend to immediately preceding token); (2) induction heads (attend to token following previous occurrence of the current token — implementing "copy and continue" patterns critical to in-context learning); (3) backup attention heads (provide redundant coverage of induction-head function in case of ablation, a form of functional redundancy). Induction heads explain ~50% of in-context learning loss improvement from 1 to 2 layers.
     Superposition and polysemanticity (Elhage et al. 2022, "Toy Models of Superposition"): attention layers in large transformers represent more features than they have dimensions by encoding multiple features per neuron in superposition (quasi-orthogonal directions in high-dimensional space), with interference proportional to feature co-occurrence frequency. This "polysemanticity" — single attention heads implementing multiple functions depending on context — is a fundamental obstacle to mechanistic interpretability and a key research target for Anthropic's interpretability programme through 2026.
     Circuit-level analysis of attention (Wang et al. 2022, "Interpretability in the Wild"): identified the complete "indirect object identification circuit" in GPT-2 Small (12 heads across 3 layers cooperating to identify grammatical indirect objects), the first full mechanistic circuit explanation for a linguistic NLP task. This work demonstrated that attention heads form composable functional circuits analogous to computational logic gates, providing a foundation for formal verification of model behaviour.
@@ -619,6 +771,6 @@ public: true
     28. DeepSeek AI. (2024). DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model. arXiv:2405.04434.
 
 - ### Provenance
-  - sources:: https://arxiv.org/pdf/2511.11571, https://arxiv.org/pdf/2502.20766, https://arxiv.org/pdf/2410.02367, https://research.colfax-intl.com/flashattention-3-for-inference-int8-quantization-and-query-head-packing-for-mqa-gqa-external/, https://www.emergentmind.com/topics/flash-attention, https://medium.com/@jakubstrawadev/why-cross-attention-is-the-secret-sauce-of-multimodal-models-f8ec77fc089b, https://ojs.bbwpublisher.com/index.php/JERA/article/view/10597, https://arxiv.org/pdf/2204.13154, https://arxiv.org/html/2407.01548v1
+  - sources:: https://arxiv.org/pdf/2511.11571, https://arxiv.org/pdf/2502.20766, https://arxiv.org/pdf/2410.02367, https://research.colfax-intl.com/flashattention-3-for-inference-int8-quantization-and-query-head-packing-for-mqa-gqa-external/, https://www.emergentmind.com/topics/flash-attention, https://medium.com/@jakubstrawadev/why-cross-attention-is-the-secret-sauce-of-multimodal-models-f8ec77fc089b, https://ojs.bbwpublisher.com/[private].php/JERA/article/view/10597, https://arxiv.org/pdf/2204.13154, https://arxiv.org/html/2407.01548v1
   - migration-date:: 2026-06-20T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

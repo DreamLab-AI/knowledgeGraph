@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automated Dispute Resolution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "A class of system that applies algorithmic, rule-based, or machine-learning-driven processes to adjudicate disputes between parties without requiring direct human arbitrator involvement for each case. Automated dispute resolution mechanisms ingest evidence and contractual terms, apply predefined or learned decision rules, and produce binding or advisory outcomes, typically operating within a blockchain or smart-contract execution environment.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:dispute-resolution", "label": "Dispute Resolution"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dispute-resolution",
+      "label": "Dispute Resolution"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:arbitration-decision-engine", "label": "Arbitration Decision Engine"},
-      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:arbitration-decision-engine",
+        "label": "Arbitration Decision Engine"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:enforcement-mechanism", "label": "Enforcement Mechanism"},
-      {"@id": "urn:ngm:class:conflict-resolution", "label": "Conflict Resolution"}
+      {
+        "@id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"},
-      {"@id": "urn:ngm:class:arbitration-process", "label": "Arbitration Process"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "@id": "urn:ngm:class:arbitration-process",
+        "label": "Arbitration Process"
+      }
     ]
   },
   "quality": 0.8

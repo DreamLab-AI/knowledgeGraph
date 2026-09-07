@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environmental Certificate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,17 +51,32 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:environmental-k-p-i", "label": "Environmental K P I"},
-      {"@id": "urn:ngm:class:carbon-credit-token", "label": "Carbon Credit Token"}
+      {
+        "@id": "urn:ngm:class:environmental-k-p-i",
+        "label": "Environmental K P I"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"}
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
     ]
   },
   "provenance": {
@@ -76,32 +86,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:environmental-certificate:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6a5d06aa5f758b0964ecdff1a2bda3740f6be61f0b6f3141b5b84ce585b5cb12"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A verifiable credential or token attesting that a digital platform, virtual environment, or computational process meets defined environmental sustainability thresholds. Environmental certificates underpin accountability frameworks for metaverse and spatial computing infrastructure by providing tamper-evident proof of carbon offset, renewable energy use, or compliance with environmental KPIs.

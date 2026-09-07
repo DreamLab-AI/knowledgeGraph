@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ONNX Operator Set
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:onnx-operator-set:e7b1f42ecae8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6ac7e20b9cb428e2ff900d48cacf8ba39c0c642fae05660d8ae11be2f6220e54"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ONNX]]",
-      "resolved": "urn:visionflow:linked:onnx",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An ONNX operator set is a versioned collection of the computational operators defined by the Open Neural Network Exchange format, fixing the operators and their semantics that a model may use.

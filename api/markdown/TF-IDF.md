@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TF-IDF
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,7 +102,7 @@ public: true
 
   Representing each document as a sparse vector of TF-IDF weights over the vocabulary — the vector space model of Salton and colleagues — turns retrieval and similarity into geometry: a query becomes a vector in the same space, and documents are ranked by [[Cosine Similarity]], which normalises away document length. The same representation serves as a feature extractor for clustering, classification, and keyword extraction, and remains the default baseline vectoriser in libraries such as scikit-learn (`TfidfVectorizer`) and Lucene-derived search engines.
 
-  TF-IDF's probabilistic successor is [[BM25]], which adds saturating term frequency and tuned length normalisation and generally ranks better in practice; both are *lexical* (exact-match) methods and thus contrast with [[Dense Retrieval]], which matches by embedding semantics and can bridge vocabulary mismatch at the cost of index size, training data, and interpretability. Production systems frequently combine the two families in hybrid ranking.
+  TF-IDF's probabilistic successor is [[BM25]], which adds saturating term frequency and tuned length normalisation and generally ranks better in practice; both are *lexical* (exact-match) methods and thus contrast with [[Dense Retrieval]], which matches by embedding semantics and can bridge vocabulary mismatch at the cost of [private] size, training data, and interpretability. Production systems frequently combine the two families in hybrid ranking.
 
   ## Technical Details
 

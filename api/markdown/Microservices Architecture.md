@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - MicroservicesArchitecture
----
-
-# Microservices Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,42 +186,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:microservices-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bd21afd6b47499c69ed60333042df3f05f48cc7c6d12b61d37d4345002d5aadf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Scalable Applications]]",
-      "resolved": "urn:visionflow:linked:scalable-applications",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Architecture]]",
-      "resolved": "urn:visionflow:owl:class:system-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A distributed software architecture pattern that decomposes applications into independent, loosely coupled services communicating via APIs, enabling high concurrency, scalability, and resilience through containerisation technologies like Docker and orchestration platforms like Kubernetes.

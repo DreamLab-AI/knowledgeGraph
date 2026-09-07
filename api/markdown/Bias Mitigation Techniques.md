@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bias Mitigation Techniques
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -288,51 +283,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bias-mitigation-techniques:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0c1126d0248cd5722320d63a95026916ff3dd44bd739ab4e2738df8c1700995c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIF360]]",
-      "resolved": "urn:visionflow:linked:aif360",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fairlearn]]",
-      "resolved": "urn:visionflow:linked:fairlearn",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE P7003-2021]]",
-      "resolved": "urn:visionflow:linked:ieee-p7003-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Bias Mitigation Techniques are the systematic methods, algorithms, and process interventions designed to detect, reduce, and eliminate [[Algorithmic Bias]] in [[Machine Learning]] and [[Automated Decision-Making]] systems, enabling those systems to satisfy one or more [[Fairness Metrics]] across demographic groups defined by [[Protected Attributes]] such as race, gender, age, disability, and socioeconomic status. These techniques are classified by their position in the [[Machine Learning]] pipeline into three primary intervention stages. Pre-processing methods transform [[Training Data]] before model fitting: reweighting assigns differential sample importance to under-represented instances so the empirical loss reflects a fairer distribution; resampling oversamples minority-group positive instances (via SMOTE, ADASYN, or random oversampling) or undersamples majority-group instances; disparate impact removal (Feldman et al., 2015) transforms feature distributions to reduce correlation with the protected attribute while preserving within-group rank ordering; and learning fair representations (Zemel et al., 2013) encodes data into a latent space that retains task-predictive information while removing group-membership signal. In-processing methods modify the model training objective: adversarial debiasing (Zhang et al., 2018) adds a discriminator network trained to predict the protected attribute from internal representations, with the primary classifier optimised to maximise task performance while minimising the adversary's success; constrained optimisation via Lagrangian relaxation (as implemented in [[Fairlearn]]'s ExponentiatedGradient algorithm, Agarwal et al., 2018) reformulates the learning problem with fairness as a hard or soft constraint solved by reduction to a sequence of cost-sensitive learning problems; prejudice remover (Kamishima et al., 2012) adds mutual-information-based fairness regularisation directly to the loss function; and meta-fair classifiers (Celis et al., 2019) reduce fairness-constrained classification to iterative cost-sensitive learning. Post-processing methods adjust model outputs after training: threshold optimisation (Hardt et al., 2016) applies group-specific decision thresholds to satisfy equalised odds for any calibrated classifier; reject option classification (Kamiran et al., 2012) applies a fairness-correcting rule for borderline predictions of disadvantaged-group instances; and calibrated equalised odds post-processing (Pleiss et al., 2017) solves a linear programme to find group-specific thresholds that minimise error subject to calibration constraints. The choice of stage involves fundamental tradeoffs: pre-processing is model-agnostic and preserves flexibility but may discard useful information; in-processing directly optimises the [[Fairness Accuracy Tradeoffs|fairness-accuracy frontier]] but requires algorithmic modification; post-processing is model-agnostic and auditable but may violate within-group calibration and requires protected attributes at inference time — a requirement increasingly constrained by privacy regulation including [[Differential Privacy]] frameworks and the EU GDPR. Causal fairness methods, emerging as the theoretically most principled approach, represent a fourth paradigm: they use causal graphs (Pearl's do-calculus framework) to distinguish legitimate from illegitimate pathways through which protected attributes influence predictions, enabling path-specific fairness constraints that account for mediating variables such as education or employment history. The practical application of Bias Mitigation Techniques is now mandated by [[EU AI Act]] Article 10 for high-risk systems and structured by standards including [[IEEE P7003-2021]], [[ISO/IEC TR 24027]], and [[NIST AI RMF]], making the choice and documentation of mitigation strategy a legal compliance requirement rather than merely a technical best practice. Open-source toolkits [[AIF360]] (IBM, 70+ metrics and 12+ algorithms) and [[Fairlearn]] (Microsoft, ExponentiatedGradient and GridSearch reductions) provide the dominant implementation infrastructure, supplemented by OxonFair (Oxford, 2024) and FairX for benchmarking.
 
@@ -456,7 +406,7 @@ public: true
   ## About
     Bias Mitigation Techniques are the practical operationalisation of [[AI Fairness]] commitments in [[Machine Learning]] systems. Where [[Algorithmic Bias]] describes the phenomenon of systematic unfairness in model outputs, and [[Fairness Metrics]] provide the mathematical criteria by which fairness is measured, Bias Mitigation Techniques are the engineering interventions that shift a system's behaviour toward satisfying those criteria. Their importance derives from the convergence of two powerful forces: the empirical evidence of real-world harm from biased AI systems (demonstrated in recidivism scoring, facial recognition, healthcare risk stratification, and credit underwriting), and the hardening of regulatory requirements that transform bias reduction from a voluntary best practice into a legal obligation.
 
-    The field traces its origins to the discrimination-aware data mining work of Pedreshi, Ruggieri, and Turini (ACM SIGKDD, 2008), which introduced the concept of alpha-discrimination and demonstrated that classifiers trained on historical data could amplify existing societal inequities. Early approaches were predominantly pre-processing: Kamiran and Calders (2012) demonstrated that reweighting training samples could significantly reduce disparate impact without requiring modification of the learning algorithm itself — an important practical advantage because it preserved model-agnosticism. The [[Fairness Accuracy Tradeoffs]] literature, formalised by Hardt, Price, and Srebro (NeurIPS, 2016) and Chouldechova (2017) in the form of impossibility theorems, established that certain combinations of fairness criteria cannot simultaneously be satisfied when group base rates differ, motivating a shift from naive debiasing toward principled, constraint-aware mitigation that explicitly navigates the fairness-accuracy frontier rather than assuming it can be eliminated. This mathematical maturation drove the development of in-processing approaches that directly optimise constrained objectives rather than attempting to pre-process away all bias signal before training.
+    The field traces its origins to the discrimination-aware data mining work of Pedreshi, Ruggieri, and Turini (ACM SIGKDD, 2008), which introduced the concept of alpha-discrimination and demonstrated that classifiers trained on historical data [private] amplify existing societal inequities. Early approaches were predominantly pre-processing: Kamiran and Calders (2012) demonstrated that reweighting training samples [private] significantly reduce disparate impact without requiring modification of the learning algorithm itself — an important practical advantage because it preserved model-agnosticism. The [[Fairness Accuracy Tradeoffs]] literature, formalised by Hardt, Price, and Srebro (NeurIPS, 2016) and Chouldechova (2017) in the form of impossibility theorems, established that certain combinations of fairness criteria cannot simultaneously be satisfied when group base rates differ, motivating a shift from naive debiasing toward principled, constraint-aware mitigation that explicitly navigates the fairness-accuracy frontier rather than assuming it can be eliminated. This mathematical maturation drove the development of in-processing approaches that directly optimise constrained objectives rather than attempting to pre-process away all bias signal before training.
 
     The emergence of large language models and [[Bias in Large Language Models|foundation models]] as general-purpose AI infrastructure has substantially expanded the domain of Bias Mitigation Techniques beyond supervised classification into generative settings, retrieval-augmented generation, and instruction-following systems. Pre-training data curation (balanced demographic representation, deduplication, toxicity filtering), instruction tuning on diverse task distributions, and Reinforcement Learning from Human Feedback (RLHF) with demographically diverse annotator pools constitute the primary mitigation approaches for foundation models, supplemented by red-teaming and adversarial evaluation using benchmarks such as BBQ (Parrish et al., 2021) and WinoBias. The domain is further complicated by the absence of well-defined protected attributes and ground-truth labels in generative settings, requiring proxy-based evaluation and qualitative audit methodologies that complement quantitative fairness metrics.
 
@@ -502,7 +452,7 @@ public: true
     Bias Mitigation Techniques have been applied across a wide range of high-stakes domains where [[Algorithmic Bias]] causes legally and ethically significant harm:
 
     **Criminal Justice and Risk Assessment**
-    COMPAS recidivism scoring (Equivant/Northpointe) has been the most publicly scrutinised bias case. Post-processing threshold optimisation has been applied to published COMPAS predictions to demonstrate achievability of equalised odds constraints, though at the cost of reduced predictive accuracy. Pretrial risk assessment tools in US jurisdictions now routinely include bias audits; the Arnold Foundation's Public Safety Assessment uses demographic-stratified calibration. The UK's Durham Constabulary HART system, challenged under the Equality Act 2010, illustrated how pre-processing via data subset restriction could reduce protected-attribute correlation at the cost of reduced coverage.
+    COMPAS recidivism scoring (Equivant/Northpointe) has been the most publicly scrutinised bias case. Post-processing threshold optimisation has been applied to published COMPAS predictions to demonstrate achievability of equalised odds constraints, though at the cost of reduced predictive accuracy. Pretrial risk assessment tools in US jurisdictions now routinely include bias audits; the Arnold Foundation's Public Safety Assessment uses demographic-stratified calibration. The UK's Durham Constabulary HART system, challenged under the Equality Act 2010, illustrated how pre-processing via data subset restriction [private] reduce protected-attribute correlation at the cost of reduced coverage.
 
     **Credit and Financial Services**
     The US Equal Credit Opportunity Act and EU AI Act's designation of credit scoring as high-risk mandates bias testing. Banks deploying ML credit models routinely apply post-processing threshold optimisation to satisfy disparate impact requirements under the four-fifths rule. In-processing approaches (ExponentiatedGradient with demographic parity constraints) are increasingly adopted for mortgage underwriting models subject to Home Mortgage Disclosure Act reporting requirements. UK lenders deploying AI under FCA model governance requirements must document mitigation choices in model risk frameworks.

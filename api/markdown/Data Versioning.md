@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Versioning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -137,177 +132,138 @@ public: true
       "label": "Data Management"
     }
   ],
-  "quality": 0.90,
-  "qualityScore": 0.90,
+  "quality": 0.9,
+  "qualityScore": 0.9,
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:artifact-metadata", "label": "Artifact Metadata"},
-      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"},
-      {"@id": "urn:ngm:class:dvc", "label": "DVC"}
+      {
+        "@id": "urn:ngm:class:artifact-metadata",
+        "label": "Artifact Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "@id": "urn:ngm:class:dvc",
+        "label": "DVC"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:empirical-experimental-design", "label": "Empirical Experimental Design"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"},
-      {"@id": "urn:ngm:class:empirical-experimental-design-tracking", "label": "Experiment Tracking"},
-      {"@id": "urn:ngm:class:continuous-training", "label": "Continuous Training"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:empirical-experimental-design",
+        "label": "Empirical Experimental Design"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:empirical-experimental-design-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-training",
+        "label": "Continuous Training"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:artifact-metadata", "label": "Artifact Metadata"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:artifact-metadata",
+        "label": "Artifact Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:feature-store", "label": "Feature Store"},
-      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:static-dataset", "label": "Static Dataset"}
+      {
+        "@id": "urn:ngm:class:static-dataset",
+        "label": "Static Dataset"
+      }
     ]
   },
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "R1Explicit"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-versioning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:262696b6233e92391f926fec582ef8ac2b97336cc741ebbcb2fea34459c49f41"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Engineering]]",
-      "resolved": "urn:visionflow:linked:data-engineering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DVC]]",
-      "resolved": "urn:visionflow:linked:dvc",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MLOps]]",
-      "resolved": "urn:visionflow:linked:mlops",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Pipeline]]",
-      "resolved": "urn:visionflow:linked:machine-learning-pipeline",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Experiment Tracking]]",
-      "resolved": "urn:visionflow:linked:experiment-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Feature Store]]",
-      "resolved": "urn:visionflow:linked:feature-store",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Registry]]",
-      "resolved": "urn:visionflow:linked:model-registry",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Pipeline]]",
-      "resolved": "urn:visionflow:linked:data-pipeline",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Management]]",
-      "resolved": "urn:visionflow:linked:data-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Version Control]]",
-      "resolved": "urn:visionflow:linked:version-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artifact Metadata]]",
-      "resolved": "urn:visionflow:linked:artifact-metadata",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Feature Engineering]]",
-      "resolved": "urn:visionflow:linked:feature-engineering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Training]]",
-      "resolved": "urn:visionflow:linked:model-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reproducibility]]",
-      "resolved": "urn:visionflow:linked:reproducibility",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Lineage]]",
-      "resolved": "urn:visionflow:linked:data-lineage",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Governance]]",
-      "resolved": "urn:visionflow:linked:data-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Workflow Automation]]",
-      "resolved": "urn:visionflow:linked:workflow-automation",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -509,7 +465,7 @@ public: true
   ## Future Directions (2026-2030)
     The near-term trajectory of data versioning is towards tighter integration with the AI governance and compliance stack. As the EU AI Act's technical documentation requirements take full effect for high-risk systems (August 2026), data versioning tooling will need to produce structured, machine-readable compliance artefacts — not just human-readable commit histories — linking dataset versions to risk assessments, bias evaluations, and conformity declarations. The Act's Article 10 requirements for data governance and management effectively codify data versioning as a legal requirement for high-risk AI systems in the EU. The UK's AI Safety Institute is developing analogous guidance for high-risk AI deployment in the UK market post-Brexit, creating parallel compliance drivers for British organisations.
 
-    Semantic versioning for datasets (the "major.minor.patch" framework formalised by Sansone et al. in 2024 in Scientific Data) is expected to gain adoption as a shared vocabulary between data producers and consumers, allowing downstream consumers to programmatically assess the impact of dataset changes before updating their dependent [[Model Training]] pipelines. This could enable automated dependency management analogous to npm or pip for software packages, but applied to dataset dependencies — alerting model training pipelines when their training dataset has been patched (safe to update automatically), extended (update after review), or restructurally changed (manual migration required). The [[Experiment Tracking]] infrastructure would log dataset version identifiers using semantic versioning notation alongside model performance metrics, enabling causal analysis of the relationship between dataset version changes and model quality changes.
+    Semantic versioning for datasets (the "major.minor.patch" framework formalised by Sansone et al. in 2024 in Scientific Data) is expected to gain adoption as a shared vocabulary between data producers and consumers, allowing downstream consumers to programmatically assess the impact of dataset changes before updating their dependent [[Model Training]] pipelines. This [private] enable automated dependency management analogous to npm or pip for software packages, but applied to dataset dependencies — alerting model training pipelines when their training dataset has been patched (safe to update automatically), extended (update after review), or restructurally changed (manual migration required). The [[Experiment Tracking]] infrastructure would log dataset version identifiers using semantic versioning notation alongside model performance metrics, enabling causal analysis of the relationship between dataset version changes and model quality changes.
 
     Data contracts — formal specifications of the expected schema, statistical distribution properties (feature means, ranges, null rates), and quality guarantees of a dataset version — are emerging as a complementary mechanism to version history, making explicit what a dataset version promises to its consumers. Tools like Soda Core, Great Expectations, and dbt Contracts provide data contract infrastructure; the connection to data versioning is that each published version of a dataset should be accompanied by its contract, and consumers should validate their expectations against the contract before accepting a new version. This contractual model introduces a formal quality gate into the data versioning workflow that goes beyond content-addressed integrity verification to include statistical and semantic correctness guarantees.
 

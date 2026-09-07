@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[nostr relay list]]
-# Nostr Relay Endpoint Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,17 +42,38 @@ elevatedFrom:: [[nostr relay list]]
   "quality": 0.7,
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"}
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:web-socket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+      {
+        "@id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:did-nostr-identity", "label": "DID Nostr Identity"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"},
-      {"@id": "urn:ngm:class:relayer", "label": "Relayer"}
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "@id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      }
     ]
   },
   "provenance": {
@@ -68,26 +83,6 @@ elevatedFrom:: [[nostr relay list]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nostr-relay-list:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3006ff436222da04129b9a33b51c6f085ea4baea7856de77e5f0358fbe718080"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Nostr relay list is a curated set of WebSocket relay server endpoints that a Nostr client uses to publish and retrieve signed events. In the Nostr protocol, there is no central server: instead, clients broadcast events (notes, reactions, metadata) to a chosen set of relays and subscribe to feeds by connecting to the same relays where their contacts post. Because relay connectivity is the sole routing mechanism, the relay list directly governs a user's social-graph reach and censorship-resistance posture.

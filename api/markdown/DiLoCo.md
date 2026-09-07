@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DiLoCo
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,31 +21,79 @@ public: true
   "domain": "ai",
   "maturity": "active-research",
   "subClassOf": [
-    {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-    {"@id": "urn:ngm:class:distributed-ai-training", "label": "Distributed AI Training"},
-    {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+    {
+      "@id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "@id": "urn:ngm:class:distributed-ai-training",
+      "label": "Distributed AI Training"
+    },
+    {
+      "@id": "urn:ngm:class:federated-learning",
+      "label": "Federated Learning"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:local-sgd", "label": "Local SGD"},
-      {"@id": "urn:ngm:class:pseudo-gradient-aggregation", "label": "Pseudo-Gradient Aggregation"},
-      {"@id": "urn:ngm:class:collective-communication", "label": "Collective Communication"}
+      {
+        "@id": "urn:ngm:class:local-sgd",
+        "label": "Local SGD"
+      },
+      {
+        "@id": "urn:ngm:class:pseudo-gradient-aggregation",
+        "label": "Pseudo-Gradient Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:adam-optimiser", "label": "Adam Optimiser"},
-      {"@id": "urn:ngm:class:collective-communication", "label": "Collective Communication"},
-      {"@id": "urn:ngm:class:checkpoint-recovery", "label": "Checkpoint Recovery"}
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      },
+      {
+        "@id": "urn:ngm:class:checkpoint-recovery",
+        "label": "Checkpoint Recovery"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-ai", "label": "Decentralised AI"},
-      {"@id": "urn:ngm:class:compute-democratisation", "label": "Compute Democratisation"},
-      {"@id": "urn:ngm:class:collaborative-model-ownership", "label": "Collaborative Model Ownership"}
+      {
+        "@id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "@id": "urn:ngm:class:compute-democratisation",
+        "label": "Compute Democratisation"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-model-ownership",
+        "label": "Collaborative Model Ownership"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:prime-intellect", "label": "Prime Intellect"},
-      {"@id": "urn:ngm:class:distributed-ai-training", "label": "Distributed AI Training"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:bittensor", "label": "Bittensor"}
+      {
+        "@id": "urn:ngm:class:prime-intellect",
+        "label": "Prime Intellect"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:bittensor",
+        "label": "Bittensor"
+      }
     ]
   },
   "quality": 0.95,
@@ -175,7 +218,7 @@ public: true
 
   ## About
 
-  **DiLoCo** originated as a systematic exploration of whether the federated learning paradigm — where data remains local to clients that synchronise only model updates — could be scaled to the regime of large language model pre-training if the inner optimiser were strong enough and the inner step count were long enough. The key insight of Douillard et al. (2023) was that replacing the weak SGD inner optimiser used in Federated Averaging (McMahan et al., 2017) with AdamW, and running that inner optimiser for H = 100 to 500 steps rather than the handful of local steps typical in federated learning, produced convergence trajectories that, when pseudo-gradient-averaged and outer-Nesterov-updated, closely tracked the convergence of fully synchronous AdamW training despite synchronising 500 times less often. This was a non-obvious result: the existing theoretical literature on local SGD predicted that long inner loops would cause "client drift" — the divergence of worker weights from the global optimum as each worker adapts to its local data shard — that would degrade convergence. DiLoCo demonstrated empirically that the AdamW inner optimiser combined with Nesterov outer updates suppressed this drift sufficiently to maintain convergence quality.
+  **DiLoCo** originated as a systematic exploration of whether the federated learning paradigm — where data remains local to clients that synchronise only model updates — [private] be scaled to the regime of large language model pre-training if the inner optimiser were strong enough and the inner step count were long enough. The key insight of Douillard et al. (2023) was that replacing the weak SGD inner optimiser used in Federated Averaging (McMahan et al., 2017) with AdamW, and running that inner optimiser for H = 100 to 500 steps rather than the handful of local steps typical in federated learning, produced convergence trajectories that, when pseudo-gradient-averaged and outer-Nesterov-updated, closely tracked the convergence of fully synchronous AdamW training despite synchronising 500 times less often. This was a non-obvious result: the existing theoretical literature on local SGD predicted that long inner loops would cause "client drift" — the divergence of worker weights from the global optimum as each worker adapts to its local data shard — that would degrade convergence. DiLoCo demonstrated empirically that the AdamW inner optimiser combined with Nesterov outer updates suppressed this drift sufficiently to maintain convergence quality.
 
   The Nesterov outer optimiser proved to be a critical and somewhat surprising element of the algorithm. Ablations showed that replacing Nesterov SGD with vanilla SGD or Adam in the outer loop degraded convergence quality substantially. The pseudo-gradient — defined as the signed difference between the global starting weights and the locally-updated weights after H inner steps — carries implicit momentum and curvature information from the entire inner epoch, far richer than a single gradient vector. When Nesterov momentum is applied to these accumulated trajectory pseudo-gradients, it acts as a second-order correction that partially compensates for the approximation error introduced by averaging heterogeneous per-worker trajectories. Subsequent analysis in the SNOO paper (Peng et al., 2025, arXiv:2510.15830) showed that this produces a beneficial implicit regularisation effect: DiLoCo-trained models exhibit smaller weight norms and stronger overfitting resistance than synchronously trained equivalents, suggesting that the infrequent averaging acts as a form of noise injection that helps the model escape sharp minima.
 
@@ -187,7 +230,7 @@ public: true
 
   ## Formal Algorithm
 
-  Let θ^(0) be the initial global model weights, shared identically across K workers. Define the outer step index t = 0, 1, 2, ..., the inner step count H (hyperparameter, typically 100-500), the inner optimiser as AdamW with learning rate η_in and weight decay λ, and the outer optimiser as SGD with Nesterov momentum (momentum coefficient β, outer learning rate η_out).
+  Let θ^(0) be the initial global model weights, shared identically across K workers. Define the outer step [private] t = 0, 1, 2, ..., the inner step count H (hyperparameter, typically 100-500), the inner optimiser as AdamW with learning rate η_in and weight decay λ, and the outer optimiser as SGD with Nesterov momentum (momentum coefficient β, outer learning rate η_out).
 
   **Step 1 — Broadcast**: At outer step t, broadcast θ^(t) to all K workers. Each worker k initialises its local copy: θ_k^(t,0) ← θ^(t). Reset inner AdamW state (first and second moment estimates) to those accumulated at the end of the previous epoch; some implementations carry Adam state across outer steps to avoid cold-start inefficiency.
 
@@ -340,7 +383,7 @@ public: true
   Organisations deploying AI models in regulated sectors (finance, healthcare, critical infrastructure) face increasing requirements to demonstrate training data provenance, model development governance, and reproducibility. For DiLoCo-trained models, provenance documentation must account for: which data shards were processed by which workers, which workers participated in which outer synchronisation rounds, what pseudo-gradient values were contributed by each worker, and how the outer optimiser state evolved across rounds. None of the current DiLoCo implementations provide this level of provenance documentation as a standard output. Creating standardised "training manifests" — machine-readable records of distributed training runs analogous to SPDX SBOMs for software — is an open engineering and standardisation challenge for the 2026-2028 period.
 
   **Compute Sovereignty and Geopolitical Implications**
-  The enabling of AI training over geographically distributed commodity internet infrastructure has strategic implications beyond pure efficiency. For UK and European AI actors, DiLoCo provides a technical path toward training competitive models without exclusive dependency on US hyperscaler cloud infrastructure — addressing a concern raised explicitly in the DSIT AI Opportunities Action Plan (2025) and in EU AI policy discussions. For less well-resourced national AI programmes (Southeast Asian countries, African research institutions), DiLoCo's internet-scale training capability could enable meaningful AI model development on national compute pools that could not individually sustain frontier training runs. The governance implications of this democratisation — both the positive (more diverse global participation in AI development) and potentially negative (reduced oversight of training runs) — are being actively discussed in AI governance forums.
+  The enabling of AI training over geographically distributed commodity internet infrastructure has strategic implications beyond pure efficiency. For UK and European AI actors, DiLoCo provides a technical path toward training competitive models without exclusive dependency on US hyperscaler cloud infrastructure — addressing a concern raised explicitly in the DSIT AI Opportunities Action Plan (2025) and in EU AI policy discussions. For less well-resourced national AI programmes (Southeast Asian countries, African research institutions), DiLoCo's internet-scale training capability [private] enable meaningful AI model development on national compute pools that [private] not individually sustain frontier training runs. The governance implications of this democratisation — both the positive (more diverse global participation in AI development) and potentially negative (reduced oversight of training runs) — are being actively discussed in AI governance forums.
 
   ## Historical Context and Motivation
 
@@ -387,7 +430,7 @@ public: true
 
   DiLoCo builds on a lineage of distributed and federated optimisation research spanning two decades. McMahan et al.'s FedAvg (2017, AISTATS, "Communication-Efficient Learning of Deep Networks from Decentralised Data") established the client-update-then-average paradigm that DiLoCo inherits, but FedAvg used SGD inner optimisers and small local step counts (1-5 local steps), far from DiLoCo's regime of AdamW with H = 100-500. Stich (2018, "Local SGD Converges Fast and Communicates Little", ICLR 2019) provided the first convergence theory for local SGD, establishing sublinear convergence bounds and identifying the inner step count as the key bandwidth-convergence tradeoff parameter. Li et al. (2019, "Convergence of Federated Learning on Non-IID Data") identified client drift as the central pathology that limits inner loop length under heterogeneous data distributions.
 
-  Karimireddy et al. (2020, SCAFFOLD, ICML) and Reddi et al. (2020, FedOpt, ICLR 2021) addressed client drift with variance reduction and adaptive momentum correction techniques, establishing that drift could be partially corrected through modified aggregation schemes. DiLoCo's empirical finding that AdamW inner loops suppress drift sufficiently for H = 100-500 — without any explicit drift correction — was therefore surprising and not predicted by the existing theory. The closest prior algorithm is SlowMo (Lin et al., 2020, ICLR), which introduces a slow momentum term in distributed training using SGD outer updates; DiLoCo's key innovations over SlowMo are the AdamW inner optimiser (enabling much longer inner loops) and the Nesterov (rather than SGD) outer optimiser.
+  Karimireddy et al. (2020, SCAFFOLD, ICML) and Reddi et al. (2020, FedOpt, ICLR 2021) addressed client drift with variance reduction and adaptive momentum correction techniques, establishing that drift [private] be partially corrected through modified aggregation schemes. DiLoCo's empirical finding that AdamW inner loops suppress drift sufficiently for H = 100-500 — without any explicit drift correction — was therefore surprising and not predicted by the existing theory. The closest prior algorithm is SlowMo (Lin et al., 2020, ICLR), which introduces a slow momentum term in distributed training using SGD outer updates; DiLoCo's key innovations over SlowMo are the AdamW inner optimiser (enabling much longer inner loops) and the Nesterov (rather than SGD) outer optimiser.
 
   The 2024-2026 theoretical literature on DiLoCo has focused on four questions: (1) why does Nesterov outer momentum suppress client drift? (addressed in SNOO); (2) what is the optimal outer learning rate schedule? (addressed in Smoothing DiLoCo); (3) what is the optimal inner optimiser? (addressed in MuLoCo); and (4) how does convergence scale with model size and worker count? (partially addressed in OpenDiLoCo and DiLoCoX scaling experiments). A unified theoretical framework that answers all four questions remains an open problem in 2026.
 
@@ -409,7 +452,7 @@ public: true
 
   The UK's national AI research infrastructure provides the compute environment in which DiLoCo-class protocols are practically relevant. JADE2 (Joint Academic Data Science Endeavour) consists of GPU clusters at Oxford, Warwick, Durham, Bristol, Southampton, and other universities connected by the JANET national research network at 10-100 Gbps inter-site bandwidth. The JADE2 topology — multiple GPU clusters with good internal NVLink connectivity but only WAN links between sites — exactly matches DiLoCo's assumed deployment model: strong inner-loop compute (sufficient GPU memory and bandwidth for AdamW inner steps) with high-latency, limited-bandwidth inter-site links (compatible with infrequent outer synchronisation). Baskerville (University of Birmingham) and the Edinburgh EPCC ARCHER2 supercomputer are additional national compute facilities with similar characteristics.
 
-  The DSIT AI Opportunities Action Plan (2025) explicitly identifies distributed training infrastructure as a strategic priority and includes recommendations to build compute capacity outside the hyperscaler model, pointing toward cooperative institutional training arrangements for which DiLoCo provides the technical protocol. The Alan Turing Institute's national AI Research Resources (AIRR) programme includes funding for distributed training infrastructure experiments. UK AI Safety Institute (AISI, established 2023) interest in training provenance and model auditability for AI safety purposes creates demand for DiLoCo-compatible training attestation standards. Northern England industrial relevance includes the potential for DiLoCo-based consortium training among UK university-industry research partnerships in Manchester, Leeds, Sheffield, and Newcastle, where GPU-equipped university clusters and corporate AI teams could pool compute for shared model training without requiring shared data or centralised infrastructure.
+  The DSIT AI Opportunities Action Plan (2025) explicitly identifies distributed training infrastructure as a strategic priority and includes recommendations to build compute capacity outside the hyperscaler model, pointing toward cooperative institutional training arrangements for which DiLoCo provides the technical protocol. The Alan Turing Institute's national AI Research Resources (AIRR) programme includes funding for distributed training infrastructure experiments. UK AI Safety Institute (AISI, established 2023) interest in training provenance and model auditability for AI safety purposes creates demand for DiLoCo-compatible training attestation standards. Northern England industrial relevance includes the potential for DiLoCo-based consortium training among UK university-industry research partnerships in Manchester, Leeds, Sheffield, and Newcastle, where GPU-equipped university clusters and corporate AI teams [private] pool compute for shared model training without requiring shared data or centralised infrastructure.
 
   ## Future Directions (2026-2030)
 

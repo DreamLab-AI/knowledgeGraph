@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[perplexity]]
-# Perplexity AI Search Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,7 +47,10 @@ elevatedFrom:: [[perplexity]]
   },
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
     ],
     "relatedTo": [
       {
@@ -76,26 +73,6 @@ elevatedFrom:: [[perplexity]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:perplexity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:58f79508e988421186a0ec3806c21caa8a3c7369077245fb7a6467cffec7d712"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Perplexity AI is a conversational search platform that combines large language models with live web retrieval to produce cited, synthesised answers to natural-language queries. Offered through consumer applications and an API, it applies retrieval-augmented generation to web-scale content, sitting between traditional search engines and generative AI assistants.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decision Transparency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,7 +174,7 @@ public: true
   "definition": "Decision transparency is the property of an AI system whereby the basis, logic, and contributing factors of its outputs are made accessible and comprehensible to relevant stakeholders. It requires that decision processes be traceable — from input data through model architecture to final output — and that explanations be appropriate to the audience, whether technical developers, domain experts, or affected individuals. Decision transparency is a foundational prerequisite for meaningful accountability, contestability, and regulatory compliance in AI deployments.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -188,228 +183,118 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:feature-importance", "label": "Feature Importance"},
-      {"@id": "urn:ngm:class:post-hoc-explanation", "label": "Post Hoc Explanation"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "@id": "urn:ngm:class:post-hoc-explanation",
+        "label": "Post Hoc Explanation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
-      {"@id": "urn:ngm:class:contestability", "label": "Contestability"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:contestability",
+        "label": "Contestability"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"},
-      {"@id": "urn:ngm:class:algorithmic-transparency-index", "label": "Algorithmic Transparency Index"},
-      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"},
-      {"@id": "urn:ngm:class:stakeholder-engagement-in-ai", "label": "Stakeholder Engagement in AI"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:automated-decision-making", "label": "Automated Decision-Making"},
-      {"@id": "urn:ngm:class:counterfactual-explanation", "label": "Counterfactual Explanation"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement-in-ai",
+        "label": "Stakeholder Engagement in AI"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:automated-decision-making",
+        "label": "Automated Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:counterfactual-explanation",
+        "label": "Counterfactual Explanation"
+      }
     ]
   },
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:decision-transparency:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eacb7b3a2789339d048aa861adfd3c557eaf43590f6188d9a6d9d55e101ebae2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:linked:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interpretability]]",
-      "resolved": "urn:visionflow:linked:interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Audit Trail]]",
-      "resolved": "urn:visionflow:linked:audit-trail",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:linked:accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Algorithmic Accountability]]",
-      "resolved": "urn:visionflow:linked:algorithmic-accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Trustworthiness]]",
-      "resolved": "urn:visionflow:linked:ai-trustworthiness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Responsible AI]]",
-      "resolved": "urn:visionflow:linked:responsible-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:linked:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Ethics]]",
-      "resolved": "urn:visionflow:linked:ai-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Fairness]]",
-      "resolved": "urn:visionflow:linked:ai-fairness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Oversight]]",
-      "resolved": "urn:visionflow:linked:human-oversight",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Interpretability]]",
-      "resolved": "urn:visionflow:linked:model-interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Algorithmic Transparency Index]]",
-      "resolved": "urn:visionflow:linked:algorithmic-transparency-index",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Model Card]]",
-      "resolved": "urn:visionflow:linked:ai-model-card",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stakeholder Engagement in AI]]",
-      "resolved": "urn:visionflow:linked:stakeholder-engagement-in-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act]]",
-      "resolved": "urn:visionflow:linked:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SHAP]]",
-      "resolved": "urn:visionflow:linked:shap",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LIME]]",
-      "resolved": "urn:visionflow:linked:lime",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Post Hoc Explanation]]",
-      "resolved": "urn:visionflow:linked:post-hoc-explanation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Contestability]]",
-      "resolved": "urn:visionflow:linked:contestability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Counterfactual Explanation]]",
-      "resolved": "urn:visionflow:linked:counterfactual-explanation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feature Importance]]",
-      "resolved": "urn:visionflow:linked:feature-importance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Governance]]",
-      "resolved": "urn:visionflow:linked:data-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:linked:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decision Tree]]",
-      "resolved": "urn:visionflow:linked:decision-tree",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Decision-Making]]",
-      "resolved": "urn:visionflow:linked:automated-decision-making",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

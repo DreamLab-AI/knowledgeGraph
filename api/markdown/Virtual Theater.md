@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Theater
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-theater:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dec676d2a5b16c6cd2a773df0495fdbcf8e9bede082d9abc9ebbeca54c6d731c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Performing Arts]]",
-      "resolved": "urn:visionflow:owl:class:performing-arts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A form of immersive performing arts that uses VR headsets and virtual environments to present theatrical productions, enabling audiences to experience performances as silent observers within the scene, with some productions featuring interactive narratives where story outcomes depend on audience decisions.

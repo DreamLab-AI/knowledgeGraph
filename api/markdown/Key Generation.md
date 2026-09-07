@@ -1,61 +1,128 @@
----
-public: true
----
-
-# Key Generation
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:key-generation", "@type":"Page", "title":"Key Generation", "vc:slug":"key-generation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:key-generation",
+  "@type": "Page",
+  "title": "Key Generation",
+  "vc:slug": "key-generation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:key-generation",
-  "@type":"Class",
-  "label":"Key Generation",
-  "definition":"Key generation is the cryptographic process of creating the keys used by symmetric and asymmetric algorithms, deriving them from high-quality randomness so that they are unpredictable to an adversary. For symmetric schemes it produces a single secret value, while for public-key schemes it produces a mathematically linked private and public key pair. The security of every downstream cryptographic operation rests on the entropy and correctness of this step.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:cryptographic-key-management","label":"Cryptographic Key Management"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:random-number-generation","label":"Random Number Generation"},
-      {"@id":"urn:ngm:class:entropy","label":"Entropy"},
-      {"@id":"urn:ngm:class:key-derivation-function","label":"Key Derivation Function"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:key-generation",
+  "@type": "Class",
+  "label": "Key Generation",
+  "definition": "Key generation is the cryptographic process of creating the keys used by symmetric and asymmetric algorithms, deriving them from high-quality randomness so that they are unpredictable to an adversary. For symmetric schemes it produces a single secret value, while for public-key schemes it produces a mathematically linked private and public key pair. The security of every downstream cryptographic operation rests on the entropy and correctness of this step.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:cryptographic-key-management","label":"Cryptographic Key Management"},
-      {"@id":"urn:ngm:class:public-key-infrastructure","label":"Public Key Infrastructure"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:entropy","label":"Entropy"},
-      {"@id":"urn:ngm:class:random-number-generation","label":"Random Number Generation"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:encryption","label":"Encryption"},
-      {"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"},
-      {"@id":"urn:ngm:class:key-exchange","label":"Key Exchange"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:random-number-generation","label":"Random Number Generation"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:elliptic-curve-cryptography","label":"Elliptic Curve Cryptography"},
-      {"@id":"urn:ngm:class:hardware-security-module","label":"Hardware Security Module"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"},
-      {"@id":"urn:ngm:class:symmetric-encryption","label":"Symmetric Encryption"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:private-key","label":"Private Key"},
-      {"@id":"urn:ngm:class:public-key","label":"Public Key"},
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

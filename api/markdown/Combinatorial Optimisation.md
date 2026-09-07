@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Combinatorial Optimisation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,46 +8,166 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
-    {"@id": "urn:visionflow:linked:mathematical-optimisation", "vc:label": "Mathematical Optimisation"},
-    {"@id": "urn:visionflow:linked:operations-research", "vc:label": "Operations Research"},
-    {"@id": "urn:visionflow:linked:graph-theory", "vc:label": "Graph Theory"},
-    {"@id": "urn:visionflow:linked:algorithm", "vc:label": "Algorithm"},
-    {"@id": "urn:visionflow:linked:integer-programming", "vc:label": "Integer Programming"},
-    {"@id": "urn:visionflow:linked:linear-programming", "vc:label": "Linear Programming"},
-    {"@id": "urn:visionflow:linked:genetic-algorithm", "vc:label": "Genetic Algorithm"},
-    {"@id": "urn:visionflow:linked:convex-optimisation", "vc:label": "Convex Optimisation"},
-    {"@id": "urn:visionflow:linked:constraint-satisfaction", "vc:label": "Constraint Satisfaction"},
-    {"@id": "urn:visionflow:linked:logistics", "vc:label": "Logistics"},
-    {"@id": "urn:visionflow:linked:decision-making", "vc:label": "Decision Making"},
-    {"@id": "urn:visionflow:linked:np-hardness", "vc:label": "NP-Hardness"},
-    {"@id": "urn:visionflow:linked:computational-complexity", "vc:label": "Computational Complexity"},
-    {"@id": "urn:visionflow:linked:branch-and-bound", "vc:label": "Branch and Bound"},
-    {"@id": "urn:visionflow:linked:simulated-annealing", "vc:label": "Simulated Annealing"},
-    {"@id": "urn:visionflow:linked:local-search", "vc:label": "Local Search"},
-    {"@id": "urn:visionflow:linked:approximation-algorithm", "vc:label": "Approximation Algorithm"},
-    {"@id": "urn:visionflow:linked:travelling-salesman-problem", "vc:label": "Travelling Salesman Problem"},
-    {"@id": "urn:visionflow:linked:vehicle-routing-problem", "vc:label": "Vehicle Routing Problem"},
-    {"@id": "urn:visionflow:linked:knapsack-problem", "vc:label": "Knapsack Problem"},
-    {"@id": "urn:visionflow:linked:graph-colouring", "vc:label": "Graph Colouring"},
-    {"@id": "urn:visionflow:linked:scheduling", "vc:label": "Scheduling"},
-    {"@id": "urn:visionflow:linked:network-design", "vc:label": "Network Design"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:dynamic-programming", "vc:label": "Dynamic Programming"},
-    {"@id": "urn:visionflow:linked:heuristic-search", "vc:label": "Heuristic Search"},
-    {"@id": "urn:visionflow:linked:metaheuristic", "vc:label": "Metaheuristic"},
-    {"@id": "urn:visionflow:linked:tabu-search", "vc:label": "Tabu Search"},
-    {"@id": "urn:visionflow:linked:swarm-intelligence", "vc:label": "Swarm Intelligence"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:supply-chain", "vc:label": "Supply Chain"},
-    {"@id": "urn:visionflow:linked:planning-and-scheduling", "vc:label": "Planning and Scheduling"},
-    {"@id": "urn:visionflow:linked:hyperparameter-optimisation", "vc:label": "Hyperparameter Optimisation"},
-    {"@id": "urn:visionflow:linked:neural-architecture-search", "vc:label": "Neural Architecture Search"},
-    {"@id": "urn:visionflow:linked:quantum-computing", "vc:label": "Quantum Computing"},
-    {"@id": "urn:visionflow:linked:multi-objective-optimisation", "vc:label": "Multi Objective Optimisation"},
-    {"@id": "urn:visionflow:linked:constraint-solver", "vc:label": "Constraint Solver"},
-    {"@id": "urn:visionflow:linked:bayesian-optimisation", "vc:label": "Bayesian Optimisation"}
+    {
+      "@id": "urn:visionflow:linked:optimisation",
+      "vc:label": "Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:mathematical-optimisation",
+      "vc:label": "Mathematical Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:operations-research",
+      "vc:label": "Operations Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-theory",
+      "vc:label": "Graph Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm",
+      "vc:label": "Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:integer-programming",
+      "vc:label": "Integer Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-programming",
+      "vc:label": "Linear Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:genetic-algorithm",
+      "vc:label": "Genetic Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:convex-optimisation",
+      "vc:label": "Convex Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-satisfaction",
+      "vc:label": "Constraint Satisfaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:logistics",
+      "vc:label": "Logistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-making",
+      "vc:label": "Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:np-hardness",
+      "vc:label": "NP-Hardness"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-complexity",
+      "vc:label": "Computational Complexity"
+    },
+    {
+      "@id": "urn:visionflow:linked:branch-and-bound",
+      "vc:label": "Branch and Bound"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulated-annealing",
+      "vc:label": "Simulated Annealing"
+    },
+    {
+      "@id": "urn:visionflow:linked:local-search",
+      "vc:label": "Local Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:approximation-algorithm",
+      "vc:label": "Approximation Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:travelling-salesman-problem",
+      "vc:label": "Travelling Salesman Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:vehicle-routing-problem",
+      "vc:label": "Vehicle Routing Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:knapsack-problem",
+      "vc:label": "Knapsack Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-colouring",
+      "vc:label": "Graph Colouring"
+    },
+    {
+      "@id": "urn:visionflow:linked:scheduling",
+      "vc:label": "Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-design",
+      "vc:label": "Network Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-programming",
+      "vc:label": "Dynamic Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-search",
+      "vc:label": "Heuristic Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaheuristic",
+      "vc:label": "Metaheuristic"
+    },
+    {
+      "@id": "urn:visionflow:linked:tabu-search",
+      "vc:label": "Tabu Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:swarm-intelligence",
+      "vc:label": "Swarm Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain",
+      "vc:label": "Supply Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-and-scheduling",
+      "vc:label": "Planning and Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-optimisation",
+      "vc:label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-architecture-search",
+      "vc:label": "Neural Architecture Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-computing",
+      "vc:label": "Quantum Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-objective-optimisation",
+      "vc:label": "Multi Objective Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-solver",
+      "vc:label": "Constraint Solver"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-optimisation",
+      "vc:label": "Bayesian Optimisation"
+    }
   ]
 }
 ```
@@ -75,112 +189,158 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},
-      {"@id": "urn:ngm:class:operations-research", "label": "Operations Research"},
-      {"@id": "urn:ngm:class:mathematical-optimisation", "label": "Mathematical Optimisation"}
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-optimisation",
+        "label": "Mathematical Optimisation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:branch-and-bound", "label": "Branch and Bound"},
-      {"@id": "urn:ngm:class:approximation-algorithm", "label": "Approximation Algorithm"},
-      {"@id": "urn:ngm:class:metaheuristic", "label": "Metaheuristic"},
-      {"@id": "urn:ngm:class:local-search", "label": "Local Search"},
-      {"@id": "urn:ngm:class:dynamic-programming", "label": "Dynamic Programming"}
+      {
+        "@id": "urn:ngm:class:branch-and-bound",
+        "label": "Branch and Bound"
+      },
+      {
+        "@id": "urn:ngm:class:approximation-algorithm",
+        "label": "Approximation Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:metaheuristic",
+        "label": "Metaheuristic"
+      },
+      {
+        "@id": "urn:ngm:class:local-search",
+        "label": "Local Search"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"},
-      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
-      {"@id": "urn:ngm:class:computational-complexity", "label": "Computational Complexity"}
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:computational-complexity",
+        "label": "Computational Complexity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:constraint-satisfaction", "label": "Constraint Satisfaction"},
-      {"@id": "urn:ngm:class:logistics", "label": "Logistics"},
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:network-design", "label": "Network Design"}
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:network-design",
+        "label": "Network Design"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:integer-programming", "label": "Integer Programming"},
-      {"@id": "urn:ngm:class:linear-programming", "label": "Linear Programming"},
-      {"@id": "urn:ngm:class:genetic-algorithm", "label": "Genetic Algorithm"},
-      {"@id": "urn:ngm:class:simulated-annealing", "label": "Simulated Annealing"},
-      {"@id": "urn:ngm:class:tabu-search", "label": "Tabu Search"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"}
+      {
+        "@id": "urn:ngm:class:integer-programming",
+        "label": "Integer Programming"
+      },
+      {
+        "@id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "@id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      },
+      {
+        "@id": "urn:ngm:class:tabu-search",
+        "label": "Tabu Search"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:convex-optimisation", "label": "Convex Optimisation"},
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"}
+      {
+        "@id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mathematical-optimisation", "label": "Mathematical Optimisation"},
-      {"@id": "urn:ngm:class:multi-objective-optimisation", "label": "Multi Objective Optimisation"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"}
+      {
+        "@id": "urn:ngm:class:mathematical-optimisation",
+        "label": "Mathematical Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi Objective Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decision-making", "label": "Decision Making"},
-      {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"},
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"}
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:link-resolution:combinatorial-optimisation",
-  "@type": "LinkResolutionsAnnotation",
-  "resolves": [
-    {"wikilink": "Optimisation", "@id": "urn:ngm:class:optimisation"},
-    {"wikilink": "Mathematical Optimisation", "@id": "urn:ngm:class:mathematical-optimisation"},
-    {"wikilink": "Operations Research", "@id": "urn:ngm:class:operations-research"},
-    {"wikilink": "Graph Theory", "@id": "urn:ngm:class:graph-theory"},
-    {"wikilink": "Algorithm", "@id": "urn:ngm:class:algorithm"},
-    {"wikilink": "Integer Programming", "@id": "urn:ngm:class:integer-programming"},
-    {"wikilink": "Linear Programming", "@id": "urn:ngm:class:linear-programming"},
-    {"wikilink": "Genetic Algorithm", "@id": "urn:ngm:class:genetic-algorithm"},
-    {"wikilink": "Convex Optimisation", "@id": "urn:ngm:class:convex-optimisation"},
-    {"wikilink": "Constraint Satisfaction", "@id": "urn:ngm:class:constraint-satisfaction"},
-    {"wikilink": "Logistics", "@id": "urn:ngm:class:logistics"},
-    {"wikilink": "Decision Making", "@id": "urn:ngm:class:decision-making"},
-    {"wikilink": "NP-Hardness", "@id": "urn:ngm:class:np-hardness"},
-    {"wikilink": "Computational Complexity", "@id": "urn:ngm:class:computational-complexity"},
-    {"wikilink": "Branch and Bound", "@id": "urn:ngm:class:branch-and-bound"},
-    {"wikilink": "Simulated Annealing", "@id": "urn:ngm:class:simulated-annealing"},
-    {"wikilink": "Local Search", "@id": "urn:ngm:class:local-search"},
-    {"wikilink": "Approximation Algorithm", "@id": "urn:ngm:class:approximation-algorithm"},
-    {"wikilink": "Travelling Salesman Problem", "@id": "urn:ngm:class:travelling-salesman-problem"},
-    {"wikilink": "Vehicle Routing Problem", "@id": "urn:ngm:class:vehicle-routing-problem"},
-    {"wikilink": "Knapsack Problem", "@id": "urn:ngm:class:knapsack-problem"},
-    {"wikilink": "Graph Colouring", "@id": "urn:ngm:class:graph-colouring"},
-    {"wikilink": "Scheduling", "@id": "urn:ngm:class:scheduling"},
-    {"wikilink": "Network Design", "@id": "urn:ngm:class:network-design"},
-    {"wikilink": "Reinforcement Learning", "@id": "urn:ngm:class:reinforcement-learning"},
-    {"wikilink": "Graph Neural Network", "@id": "urn:ngm:class:graph-neural-network"},
-    {"wikilink": "Dynamic Programming", "@id": "urn:ngm:class:dynamic-programming"},
-    {"wikilink": "Heuristic Search", "@id": "urn:ngm:class:heuristic-search"},
-    {"wikilink": "Metaheuristic", "@id": "urn:ngm:class:metaheuristic"},
-    {"wikilink": "Tabu Search", "@id": "urn:ngm:class:tabu-search"},
-    {"wikilink": "Swarm Intelligence", "@id": "urn:ngm:class:swarm-intelligence"},
-    {"wikilink": "Machine Learning", "@id": "urn:ngm:class:machine-learning"},
-    {"wikilink": "Supply Chain", "@id": "urn:ngm:class:supply-chain"},
-    {"wikilink": "Planning and Scheduling", "@id": "urn:ngm:class:planning-and-scheduling"},
-    {"wikilink": "Hyperparameter Optimisation", "@id": "urn:ngm:class:hyperparameter-optimisation"},
-    {"wikilink": "Neural Architecture Search", "@id": "urn:ngm:class:neural-architecture-search"},
-    {"wikilink": "Quantum Computing", "@id": "urn:ngm:class:quantum-computing"},
-    {"wikilink": "Multi Objective Optimisation", "@id": "urn:ngm:class:multi-objective-optimisation"},
-    {"wikilink": "Constraint Solver", "@id": "urn:ngm:class:constraint-solver"},
-    {"wikilink": "Bayesian Optimisation", "@id": "urn:ngm:class:bayesian-optimisation"}
-  ]
 }
 ```
 
@@ -515,7 +675,7 @@ public: true
 
   The polyhedral approach to combinatorial optimisation — studying the facial structure of integer feasible sets viewed as polytopes in continuous space — is among the most powerful theoretical tools in the field, providing both algorithmic insights (tight LP relaxations) and structural understanding (which problems are "easy" vs "hard" at the level of linear programming geometry):
 
-  The **integer hull** of a combinatorial problem is the convex hull of all feasible integer solutions: conv({x ∈ {0,1}^n | x feasible}). If we could formulate the integer hull with a compact set of inequalities, LP optimisation over it would solve the integer problem exactly in polynomial time. The fundamental challenge is that integer hulls typically require exponentially many facet-defining inequalities to describe compactly, making such complete descriptions impractical for NP-hard problems. However, partial descriptions — particularly tight families of valid inequalities — dramatically improve LP relaxation bounds and accelerate [[Branch and Bound]].
+  The **integer hull** of a combinatorial problem is the convex hull of all feasible integer solutions: conv({x ∈ {0,1}^n | x feasible}). If we [private] formulate the integer hull with a compact set of inequalities, LP optimisation over it would solve the integer problem exactly in polynomial time. The fundamental challenge is that integer hulls typically require exponentially many facet-defining inequalities to describe compactly, making such complete descriptions impractical for NP-hard problems. However, partial descriptions — particularly tight families of valid inequalities — dramatically improve LP relaxation bounds and accelerate [[Branch and Bound]].
 
   Key polyhedral results by problem:
   - **Perfect matching polytope** (Edmonds, 1965): the convex hull of perfect matchings in a graph is described by a polynomial-size system (degree constraints + odd-set constraints), proving bipartite matching and general matching are polynomially solvable as LP problems and enabling the polynomial Blossom algorithm.

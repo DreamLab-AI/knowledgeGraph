@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Crypto Legal from DigiSoc]]
-# Cryptoasset Regulatory Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,18 +47,36 @@ elevatedFrom:: [[Crypto Legal from DigiSoc]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-commerce", "label": "Digital Commerce"}
+      {
+        "@id": "urn:ngm:class:digital-commerce",
+        "label": "Digital Commerce"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ]
   },
   "provenance": {
@@ -74,32 +86,6 @@ elevatedFrom:: [[Crypto Legal from DigiSoc]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:crypto-legal-from-digi-soc:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1ac92660b801eae66f47090894431ee291b7212fe94a958c4560fca02052d972"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Crypto Legal from DigiSoc is a concept within the ngm domain.
@@ -122,7 +108,7 @@ elevatedFrom:: [[Crypto Legal from DigiSoc]]
   Of their recent investments KPMG global said: ["We've invested in a strong cryptoassets practice and we will continue to enhance and build on our capabilities across Decentralized Finance (DeFi), Non-Fungible Tokens (NFTs) and the Metaverse, to name a few"] . This is not to say that all fund managers are so positive. PGIM who manage over a trillion pounds globally have come out very strongly against the technology, with a [slew of reports](https://www.pgim.com/megatrends/cryptocurrency-investing/bitcoin?) to warn off investors (Figure [1.5](https://arxiv.org/html/2207.09460v11/#Ch1.F5 "Figure 1.5 ‣ 1.2.1 The view of big business and governments ‣ 1.2 Introduction ‣ Chapter 1 Introduction ‣ Part I State of the art")).
   ![Figure 1.5: PGIM cite 'digiconomist', a prominent critic.](pgim.jpg) 
   It's possible that for such huge organisations it makes better business sense to take a punt on hype bubbles like this, than to do a proper due diligence with a team of internal staff who understand their business. These endorsements should be taken with a large pinch of salt. As [Alex Johnson says](https://newsletter.fintechtakes.com/p/metaverse-branches?s=r): ["At some point in the future, it's possible that the digital worlds being built today will have aggregated sufficient user attention and engagement that financial services companies will need to invest in the metaverse as an acquisition and customer service channel. But we're not there yet. Until the metaverse is a little less empty, resist the temptation to colonize it with branches and billboards."] 
-  Meanwhile, Meta (ex Facebook) are launching their own [META Web3 and metaverse](https://archive.ph/coyp2) token after abandoning Libre, their global cryptocurrency. Libre became Diem, then was quietly acquired by Silvergate bank, who likely integrated it into their SEN settlement network. Following the collase of Silvergate the bank was sold on without the SEN network, marking an ignominious end to the technology which possibly started the the rush to central bank digital currencies. [Google have formed a strategic partnership](https://www.coinbase.com/blog/announcing-coinbase-google-cloud) with Coinbase, and [recently blogged](https://blog.youtube/inside-youtube/innovations-for-2022-at-youtube/): ["Web3 also opens up new opportunities for creators. We believe new technologies like blockchain and NFTs can allow creators to build deeper relationships with their fans. Together, they'll be able to collaborate on new projects and make money in ways not previously possible. For example, giving a verifiable way for fans to own unique videos, photos, art, and even experiences from their favourite creators could be a compelling prospect for creators and their audiences. There's a lot to consider in making sure we approach these new technologies responsibly, but we think there's incredible potential as well. Finally, we couldn't have a piece about innovation without touching on the metaverse! We're thinking big about how to make viewing more immersive. "] 
+  Meanwhile, Meta (ex Facebook) are launching their own [META Web3 and metaverse](https://archive.ph/coyp2) token after abandoning Libre, their global cryptocurrency. Libre became Diem, then was quietly acquired by Silvergate bank, who likely integrated it into their SEN settlement network. Following the collase of Silvergate the bank was sold on without the SEN network, marking an ignominious end to the technology which possibly started the the rush to central bank digital currencies. [Google have formed a strategic partnership](https://www.coinbase.com/blog/announcing-coinbase-google-cloud) with Coinbase, and [recently blogged](https://blog.youtube/inside-youtube/innovations-for-2022-at-youtube/): ["Web3 also opens up new opportunities for creators. We believe new technologies like blockchain and NFTs can allow creators to build deeper relationships with their fans. Together, they'll be able to collaborate on new projects and make money in ways not previously possible. For example, giving a verifiable way for fans to own unique videos, photos, art, and even experiences from their favourite creators [private] be a compelling prospect for creators and their audiences. There's a lot to consider in making sure we approach these new technologies responsibly, but we think there's incredible potential as well. Finally, we couldn't have a piece about innovation without touching on the metaverse! We're thinking big about how to make viewing more immersive. "] 
   It's already the case that the recent bubble of [hype is dwindling](https://www.forbes.com/sites/paultassi/2022/03/10/interest-in-nfts-and-the-metaverse-is-falling-fast/?), but the enormous investment into teams and startups will potentially bear fruit in the next couple of years, and this perhaps has implications for small and medium-sized enterprises.
   It's fortunate timing for this book that the UK government has signalled enthusiasm for so called 'stablecoins' at the same time that the Bitcoin network is being upgraded to transmit these GBP equivalent tokens around. This gives us a very good idea what it is we can build into our application stack. In the UK the government has stated it's ambition to be a [global cryptoasset technology hub](https://www.gov.uk/government/news/government-sets-out-plan-to-make-uk-a-global-cryptoasset-technology-hub), and announced, then scrapped plans for the Royal Mint to issue a (novelty) NFT. Fuller, Economic Secretary to the Treasury [said in a speech](https://drive.google.com/file/d/19ZYKLeT-ds3TueTpqSM22MUqB4gmN_Pl/view): ["We want to become the country of choice for those looking to create, innovate and build in the crypto space \[...\] By making this country a hospitable place for crypto technologies, we can attract investment, generate new jobs, benefit from tax revenues, create a wave of ground breaking new products and services, and bridge the current position of UK financial services into a new era."] 
   Their outline plans for ['robust regulation'](https://www.gov.uk/government/news/uk-sets-out-plans-to-regulate-crypto-and-protect-consumers) were published after these seemingly supportive moves, and with the public consultation drawing to a close they have signalled their willingness to differentiate from Europe [within a year](https://www.cnbc.com/2023/04/18/britain-could-see-crypto-regulation-in-12-months-lawmaker-says.html). Like the assertion by major global businesses it is too early to tell how 'sticky' these claims are. Indeed the findings of a recent treasury committee looking at the sector suggest that there is much work to do, with [85% of companies](https://committees.parliament.uk/committee/158/treasury-committee/news/175634/treasury-committee-85-of-crypto-firms-failed-to-meet-minimum-standards-according-to-fca/) failing to comply with [existing]  law. The UK legal system is clear in it's view that all crypto assets [are 'property'](https://blockchain.bakermckenzie.com/2020/02/03/uk-court-confirms-bitcoins-status-as-property/).

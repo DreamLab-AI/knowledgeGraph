@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenAI API
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "The OpenAI API is a hosted programming interface that gives developers access to OpenAI's models for text generation, reasoning, embeddings, image generation, speech, and tool use over HTTP. Exposing capabilities through endpoints such as chat completions, responses, and embeddings, it abstracts model hosting, scaling, and inference behind a usage-priced REST interface with structured outputs, function calling, and streaming. Its conventions have become a de facto standard widely emulated by other providers and compatible open-source serving stacks.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:api", "label": "API"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:api",
+      "label": "API"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:llm-application-framework", "label": "LLM Application Framework"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:llm-application-framework",
+        "label": "LLM Application Framework"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"}
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      }
     ]
   },
   "quality": 0.8

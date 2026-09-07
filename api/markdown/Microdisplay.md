@@ -1,39 +1,122 @@
----
-public: true
----
-
-# Microdisplay
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:microdisplay", "@type":"Page", "title":"Microdisplay", "vc:slug":"microdisplay", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:microdisplay",
+  "@type": "Page",
+  "title": "Microdisplay",
+  "vc:slug": "microdisplay",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:microdisplay",
-  "@type":"Class",
-  "label":"Microdisplay",
-  "definition":"A microdisplay is a miniature display panel, typically under an inch diagonal, with very high pixel density, used in near-eye optical systems such as headsets, viewfinders and projectors. Built on technologies including micro-OLED, liquid-crystal-on-silicon (LCoS) and microLED, it produces a small bright image that magnifying or waveguide optics expand into a large virtual image for the eye. Microdisplays are a critical enabling component for augmented and virtual reality head-mounted displays, where size, brightness, resolution and power efficiency are paramount.",
-  "domain":"spatial-computing",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:display-hardware","label":"Display Hardware"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:head-mounted-display","label":"Head-Mounted Display"},{"@id":"urn:ngm:class:display-technology","label":"Display Technology"}],
-    "enables":[{"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"},{"@id":"urn:ngm:class:virtual-reality","label":"Virtual Reality"}],
-    "supports":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}],
-    "uses":[{"@id":"urn:ngm:class:display-hardware","label":"Display Hardware"}],
-    "requires":[{"@id":"urn:ngm:class:display-hardware","label":"Display Hardware"}],
-    "implements":[{"@id":"urn:ngm:class:display-technology","label":"Display Technology"}],
-    "dependsOn":[{"@id":"urn:ngm:class:display-technology","label":"Display Technology"}],
-    "hasPart":[{"@id":"urn:ngm:class:display-hardware","label":"Display Hardware"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:head-mounted-display","label":"Head-Mounted Display"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:display-technology","label":"Display Technology"}],
-    "relatedTo":[{"@id":"urn:ngm:class:head-mounted-display","label":"Head-Mounted Display"},{"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:microdisplay",
+  "@type": "Class",
+  "label": "Microdisplay",
+  "definition": "A microdisplay is a miniature display panel, typically under an inch diagonal, with very high pixel density, used in near-eye optical systems such as headsets, viewfinders and projectors. Built on technologies including micro-OLED, liquid-crystal-on-silicon (LCoS) and microLED, it produces a small bright image that magnifying or waveguide optics expand into a large virtual image for the eye. Microdisplays are a critical enabling component for augmented and virtual reality head-mounted displays, where size, brightness, resolution and power efficiency are paramount.",
+  "domain": "spatial-computing",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:display-hardware",
+      "label": "Display Hardware"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

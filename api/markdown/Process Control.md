@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Process Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Process control is the discipline of regulating continuous industrial processes, such as chemical reactions, temperature, flow, and pressure, to maintain outputs at desired setpoints despite disturbances. It relies on sensors, controllers, and actuators arranged in feedback loops, using techniques from PID control to model predictive control. It is fundamental to manufacturing, energy, and process-industry automation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-based-control", "label": "Model Based Control"},
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}
+      {
+        "@id": "urn:ngm:class:model-based-control",
+        "label": "Model Based Control"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
     ]
   },
   "quality": 0.72

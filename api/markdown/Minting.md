@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Minting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,22 +83,52 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"},
-      {"@id": "urn:ngm:class:nft-minting", "label": "NFT Minting"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
-      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:inflation", "label": "Inflation"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"}
+      {
+        "@id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      }
     ]
   },
   "provenance": {
@@ -113,62 +138,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:minting:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:71c84e50b6ac7c90d1f23797048c389ff0b8b70700c68719a42e89cdfcf38742"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   The protocol-governed creation of new tokens on a blockchain — fungible (ERC-20) or non-fungible (ERC-721) — increasing total supply according to defined issuance rules. Minting may be permissioned (restricted to authorised contracts), algorithmic (triggered by staking rewards or block production), or demand-driven (NFT drops), directly determining the token's inflation schedule.

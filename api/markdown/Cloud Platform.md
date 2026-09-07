@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cloud Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -208,7 +203,7 @@ public: true
   - A **cloud platform** is an internet-delivered ecosystem of managed infrastructure, runtime services, and developer tooling enabling organisations to build, deploy, scale, and operate applications without owning physical hardware. Cloud platforms span [[Infrastructure as a Service]], [[Platform as a Service]], and [[Software as a Service]] delivery models, abstracting away hardware provisioning, OS patching, and capacity planning. They depend on hyperscale [[Data Centre]] networks, advanced [[Virtualisation]] techniques, and software-defined [[Network Infrastructure]] to provide elasticity, global reach, and the [[Distributed Computing]] fabric that underpins modern digital services.
 
 - ### Overview
-  - Cloud platforms emerged from the observation — pioneered commercially by [[Amazon Web Services]] in 2006 — that commodity hardware pooled at hyperscale could be offered as utility services with superior economics to per-enterprise data centre builds.
+  - Cloud platforms emerged from the observation — pioneered commercially by [[Amazon Web Services]] in 2006 — that commodity hardware pooled at hyperscale [private] be offered as utility services with superior economics to per-enterprise data centre builds.
   - The dominant public cloud platforms (AWS, [[Microsoft Azure]], [[Google Cloud Platform]]) offer hundreds of discrete services across compute, storage, networking, databases, analytics, AI/ML, security, and developer tooling.
   - The fundamental value proposition is elastic, on-demand resource consumption: organisations pay only for what they use, scale instantaneously in response to demand, and benefit from continuous infrastructure investment by the provider.
   - Cloud platforms have become the primary substrate for AI and [[Machine Learning Infrastructure]], driven by managed access to GPU and TPU accelerators (H100, A100, TPU v5) that would be prohibitively expensive to procure and operate independently.

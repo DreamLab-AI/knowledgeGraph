@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Feature Map
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -389,7 +383,7 @@ public: true
 
     The concept of feature maps emerged from the early convolutional network literature. LeCun et al.'s seminal LeNet-5 (1998) introduced the term and demonstrated that convolutional feature maps enable weight-shared local feature detection for handwritten digit recognition. The field lay relatively dormant until Krizhevsky, Sutskever, and Hinton demonstrated at ILSVRC 2012 (ImageNet challenge) that deep CNN feature maps pretrained on large-scale image data dramatically outperform hand-engineered features, catalysing the deep learning revolution. Zeiler and Fergus (ECCV 2014) provided the first systematic visualisation of CNN feature maps using deconvolution, revealing the hierarchical feature composition that underpins CNN generalisation.
 
-    Subsequent architectural work refined feature map construction: VGGNet (Simonyan and Zisserman, 2014) demonstrated that deep stacks of 3×3 kernels could achieve competitive results with simple feature map configurations. ResNet (He et al., CVPR 2016) introduced residual connections that add input feature maps to output feature maps, solving the vanishing gradient problem in very deep networks and becoming the dominant backbone for a decade. Szegedy et al.'s Inception architectures used multi-scale parallel convolutions producing concatenated feature maps at multiple receptive field sizes simultaneously.
+    Subsequent architectural work refined feature map construction: VGGNet (Simonyan and Zisserman, 2014) demonstrated that deep stacks of 3×3 kernels [private] achieve competitive results with simple feature map configurations. ResNet (He et al., CVPR 2016) introduced residual connections that add input feature maps to output feature maps, solving the vanishing gradient problem in very deep networks and becoming the dominant backbone for a decade. Szegedy et al.'s Inception architectures used multi-scale parallel convolutions producing concatenated feature maps at multiple receptive field sizes simultaneously.
 
     The [[Feature Pyramid Network]] (Lin, Dollar, Girshick, He, Hariharan, Belongie, CVPR 2017) addressed the scale-variance problem by constructing pyramids of feature maps from a single CNN backbone, enabling simultaneous multi-scale detection. This architecture is now a standard component in virtually all production object detection systems. Attention mechanisms that operate on feature maps — spatial attention (CBAM, Woo et al., 2018) and channel attention (SE-Net, Hu et al., 2018) — adaptively reweight feature map channels and spatial positions, integrating global context into locally computed feature maps.
 
@@ -451,7 +445,7 @@ public: true
 
     **Convolution operation**: Given input feature map X ∈ ℝ^{H×W×Cᵢₙ} and filter W ∈ ℝ^{k×k×Cᵢₙ×Cₒᵤₜ}, output feature map Y ∈ ℝ^{H'×W'×Cₒᵤₜ} is:
       Y[h,w,c] = σ( Σᵢ₌₀^{k-1} Σⱼ₌₀^{k-1} Σₛ₌₀^{Cᵢₙ-1} X[hs+i, ws+j, s] · W[i,j,s,c] + b[c] )
-    where σ is a non-linear activation function (e.g., ReLU), h,w index spatial positions, c indexes output channels, s is stride.
+    where σ is a non-linear activation function (e.g., ReLU), h,w [private] spatial positions, c indexes output channels, s is stride.
 
     **Output spatial dimensions**: H' = ⌊(H + 2p − k)/s⌋ + 1; W' = ⌊(W + 2p − k)/s⌋ + 1, where p is padding.
 

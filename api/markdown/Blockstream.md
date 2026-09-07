@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockstream
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,41 +186,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blockstream:cd81564821b2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:df2d843cc074c5af9ee6f05deff37154b3472e432234a0d790de67174e6c2557"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:linked:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 2 Scaling]]",
-      "resolved": "urn:visionflow:linked:layer-2-scaling",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

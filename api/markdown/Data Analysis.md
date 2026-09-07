@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,15 +20,32 @@ public: true
   "definition": "Data analysis is the systematic process of inspecting, cleaning, transforming, and modelling data to extract useful information, support decision-making, and test hypotheses. It encompasses descriptive summarisation, exploratory analysis to surface structure and anomalies, inferential statistics to generalise from samples, and predictive modelling. Data analysis spans manual statistical work through to automated analytics pipelines, and it is the disciplinary core from which data science, business intelligence, and machine-learning workflows draw. Rigorous analysis attends to data quality, sampling bias, and the validity of inferential assumptions.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:process", "label": "Process"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:process",
+      "label": "Process"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:statistics", "label": "Statistics"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time-Series Analysis"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
+      {
+        "@id": "urn:ngm:class:time-series-analysis",
+        "label": "Time-Series Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
     ]
   },
   "quality": 0.78

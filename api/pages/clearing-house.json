@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:clearing-house",
   "domain": "finance",
-  "definition": "A clearing house is a financial market intermediary that stands between the buyers and sellers of a trade to guarantee its completion, most often acting as a central counterparty that legally interposes itself through novation. By collecting margin, mutualising risk across a default fund, and netting offsetting obligations, it reduces counterparty credit risk and systemic contagion in securities, derivatives, and payment markets. Clearing houses are critical financial market infrastructure, subject to stringent prudential supervision because their failure could propagate across the financial system.",
+  "definition": "A clearing house is a financial market intermediary that stands between the buyers and sellers of a trade to guarantee its completion, most often acting as a central counterparty that legally interposes itself through novation. By collecting margin, mutualising risk across a default fund, and netting offsetting obligations, it reduces counterparty credit risk and systemic contagion in securities, derivatives, and payment markets. Clearing houses are critical financial market infrastructure, subject to stringent prudential supervision because their failure [private] propagate across the financial system.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-market-infrastructure",

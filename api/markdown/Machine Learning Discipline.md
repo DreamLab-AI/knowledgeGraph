@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - MachineLearning
-elevatedFrom: "[[Machine Learning]]"
----
-
-# Machine Learning Discipline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -218,62 +210,6 @@ elevatedFrom: "[[Machine Learning]]"
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:machine-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:411cc8f3aefb1d0684f2a17d9ceb9af18a3cd306df63bdba125acfd948f7ff07"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[decision making]]",
-      "resolved": "urn:visionflow:linked:decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[collaboration]]",
-      "resolved": "urn:visionflow:owl:class:collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Latent Space]]",
-      "resolved": "urn:visionflow:owl:class:latent-space",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[machine learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Techniques Survey]]",
-      "resolved": "urn:visionflow:owl:class:overview-of-machine-learning-techniques",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gaze Contingent Telepresence Display]]",
-      "resolved": "urn:visionflow:owl:class:telethrone",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Machine Learning is the branch of artificial intelligence in which systems learn predictive or generative models directly from data, without being explicitly programmed with domain rules. It encompasses supervised, unsupervised, and reinforcement learning paradigms, and forms the foundation for deep learning, natural language processing, and computer vision applications.

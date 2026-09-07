@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Conflict Free Replicated Data Type
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

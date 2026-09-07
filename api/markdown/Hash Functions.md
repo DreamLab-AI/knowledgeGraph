@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hash Functions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,57 +85,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hash-functions:949aaccc30b0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ccb14b95b19ee307e220c674de40d11ab79866f6e02c85ee3cd9bb639f0ad551"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Merkle Tree]]",
-      "resolved": "urn:visionflow:linked:merkle-tree",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Validation]]",
-      "resolved": "urn:visionflow:linked:transaction-validation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:linked:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://csrc.nist.gov/projects/hash-functions]]",
-      "resolved": "urn:visionflow:linked:https-csrc-nist-gov-projects-hash-functions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Cryptographic_hash_function]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-cryptographic-hash-function",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hash functions are algorithms that map data of arbitrary size to a fixed-size output, with cryptographic hash functions designed to be one-way and collision resistant. They are central to security and blockchains.

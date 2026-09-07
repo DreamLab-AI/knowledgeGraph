@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - HashRate
----
-
-# Hash Rate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,4 +169,3 @@ aliases:
   - Hash rate exhibits strong correlation with mining economics. When Bitcoin's price rises, marginal mining becomes profitable for operators with higher electricity costs, causing new hardware to come online and hash rate to increase. Conversely, price drops or electricity cost spikes cause marginal miners to exit, reducing hash rate. The difficulty adjustment algorithm — which recalculates every 2016 blocks (~2 weeks for Bitcoin) — ensures that block times remain near the 10-minute target regardless of hash rate fluctuations. ASIC hardware generations also create step-changes in hash rate: the introduction of a new, more efficient miner can simultaneously increase total hash rate and reduce the operational profitability of previous-generation hardware.
 
   - As of 2024–2025, Bitcoin's hash rate reached new all-time highs following the April 2024 halving, despite the block reward dropping from 6.25 to 3.125 BTC, reflecting a combination of new-generation ASIC deployment, access to cheap stranded energy sources, and elevated Bitcoin price. The geographic distribution of hash rate has diversified significantly from the 2021 period when China's mining ban displaced approximately 50% of global hash rate; the USA, Kazakhstan, Russia, and various energy-surplus regions now each contribute significant fractions. Ethereum, having transitioned to proof-of-stake in September 2022, no longer has a hash rate, and its former GPU mining hash rate partially migrated to Ethereum Classic and other GPU-mineable chains.
-

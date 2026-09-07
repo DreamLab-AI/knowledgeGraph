@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - EnterpriseArchitecture
----
-
-# Enterprise Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,42 +194,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:enterprise-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a4295451cc3a8ae1491a3d83b41b4cf28e5798a76378aaf8912019c1592dc7c2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Enterprise Metaverse]]",
-      "resolved": "urn:visionflow:linked:enterprise-metaverse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Architecture]]",
-      "resolved": "urn:visionflow:owl:class:system-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A strategic framework for aligning business processes, information systems, and technology infrastructure with organisational goals, increasingly incorporating metaverse technologies such as XR, digital twins, and AI to enable digital transformation and persistent virtual work environments.

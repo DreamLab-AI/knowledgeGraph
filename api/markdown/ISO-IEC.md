@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - ISO IEC
-  - ISO/IEC
----
-
-# ISO/IEC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -28,21 +20,50 @@ aliases:
   "definition": "ISO/IEC refers to the joint technical committee structure formed by the International Organisation for Standardisation (ISO) and the International Electrotechnical Commission (IEC) to develop international standards in information technology and related fields. The primary body is ISO/IEC JTC 1, which oversees standards in areas including software engineering, cybersecurity, artificial intelligence, and biometrics. ISO/IEC standards are developed through consensus among national standardisation bodies and carry significant weight in regulatory compliance, procurement, and international trade agreements. Landmark outputs include ISO/IEC 27001 for information security management and ISO/IEC 42001 for AI management systems.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
-      {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"},
-      {"@id": "urn:ngm:class:compliance-standards", "label": "Compliance Standards"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"},
-      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"}
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "@id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
     ]
   },
   "quality": 0.8

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Soc 2
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,42 +20,104 @@ public: true
   "definition": "SOC 2 (System and Organisation Controls 2) is an auditing standard developed by the American Institute of Certified Public Accountants (AICPA) that evaluates the controls of service organisations relevant to security, availability, processing integrity, confidentiality, and privacy. A SOC 2 report, issued by an independent CPA, is widely used by cloud service providers and SaaS companies to demonstrate trustworthiness to enterprise customers. Type I reports assess design at a point in time; Type II reports assess operating effectiveness over a period.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:iso-27001", "label": "ISO 27001"},
-      {"@id": "urn:ngm:class:soc-1", "label": "SOC 1"},
-      {"@id": "urn:ngm:class:pci-dss", "label": "PCI DSS"}
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "@id": "urn:ngm:class:soc-1",
+        "label": "SOC 1"
+      },
+      {
+        "@id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:aicpa", "label": "AICPA"},
-      {"@id": "urn:ngm:class:trust-services-criteria", "label": "Trust Services Criteria"}
+      {
+        "@id": "urn:ngm:class:aicpa",
+        "label": "AICPA"
+      },
+      {
+        "@id": "urn:ngm:class:trust-services-criteria",
+        "label": "Trust Services Criteria"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:security-audit", "label": "Security Audit"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
+      {
+        "@id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:vendor-trust", "label": "Vendor Trust"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:vendor-trust",
+        "label": "Vendor Trust"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cloud-security", "label": "Cloud Security"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:saas", "label": "SaaS"},
-      {"@id": "urn:ngm:class:enterprise-software", "label": "Enterprise Software"}
+      {
+        "@id": "urn:ngm:class:saas",
+        "label": "SaaS"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-software",
+        "label": "Enterprise Software"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:trust-services-criteria", "label": "Trust Services Criteria"},
-      {"@id": "urn:ngm:class:control-environment", "label": "Control Environment"}
+      {
+        "@id": "urn:ngm:class:trust-services-criteria",
+        "label": "Trust Services Criteria"
+      },
+      {
+        "@id": "urn:ngm:class:control-environment",
+        "label": "Control Environment"
+      }
     ],
     "relatedTo_2": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ]
   },
   "quality": 0.62,

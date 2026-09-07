@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Third-Party Auditor
----
-
-# Third Party Auditor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,16 +58,34 @@ aliases:
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ]
   },
   "quality": 0.5,
@@ -85,37 +96,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:third-party-auditor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2d72b001bdf9a56b52c90a2c8ce776d9f4a5031ebf522f0a997124f29a9df11e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Security Services]]",
-      "resolved": "urn:visionflow:owl:class:security-services",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An independent security firm or organization that conducts comprehensive reviews of smart contracts, blockchain protocols, and digital systems to identify vulnerabilities, ensure code quality, and verify compliance before deployment.

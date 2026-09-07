@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Event Emission
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Event emission is the act by which a smart contract or software component publishes a structured log entry recording that something notable occurred during execution. On blockchains, emitted events are written to transaction logs that off-chain applications and indexers subscribe to, since contracts cannot push data outward directly. Events provide a cheap, queryable record of state changes and are the primary bridge between on-chain logic and external systems.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agent-event-stream", "label": "Agent Event Stream"}, {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
   },
   "quality": 0.72
 }

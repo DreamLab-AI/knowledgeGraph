@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WD14 Tagger
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "WD14 Tagger is an automatic image-tagging model and tool that predicts Danbooru-style descriptive tags for images, widely used to caption training datasets for diffusion-model fine-tuning. Built on convolutional or transformer backbones trained on large tagged anime/illustration corpora, it outputs ranked tag confidences that captioning pipelines threshold and assemble into prompts. It is a standard preprocessing step in DreamBooth and LoRA training workflows.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "KOHYA Dreambooth and similar"}, {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "KOHYA Dreambooth and similar"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
   "quality": 0.72
 }

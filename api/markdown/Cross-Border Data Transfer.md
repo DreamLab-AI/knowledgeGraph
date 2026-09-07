@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Border Data Transfer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Cross-border data transfer is the movement of personal or regulated data across national jurisdictions, governed by data-protection laws that restrict where and how such data may be processed. Compliance mechanisms include adequacy decisions, standard contractual clauses, binding corporate rules, and localisation requirements. It is a central concern of privacy regimes such as GDPR and various Asia-Pacific frameworks.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:asia-pacific-regulation", "label": "Asia Pacific Regulation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia Pacific Regulation"
+      }
+    ]
   },
   "quality": 0.72
 }

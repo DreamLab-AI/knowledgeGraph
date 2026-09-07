@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Image Synthesis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -212,52 +207,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:image-synthesis:d155188daca3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7c69014b4555532d7f24d731f59bade76a8aceb6628c03afd06908587bfc6ae2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Generative Model]]",
-      "resolved": "urn:visionflow:linked:generative-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Diffusion Model]]",
-      "resolved": "urn:visionflow:linked:diffusion-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Adversarial Network]]",
-      "resolved": "urn:visionflow:linked:generative-adversarial-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:linked:image-generation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The generation of images from models or descriptions rather than direct capture, including rendering from scene data and machine learning models that produce images from learned distributions.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CRM Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "CRM integration is the connection of customer-relationship-management software with other business systems—such as telephony, email, marketing, and AI assistants—so that customer data and interactions flow automatically across tools. It typically uses APIs, webhooks, and event syncs to keep contact records, activity logs, and pipelines consistent. It is essential for unified customer views and automated sales and support workflows.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:crm", "label": "CRM"}, {"@id": "urn:ngm:class:call-centres", "label": "Call Centres"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:crm",
+        "label": "CRM"
+      },
+      {
+        "@id": "urn:ngm:class:call-centres",
+        "label": "Call Centres"
+      }
+    ]
   },
   "quality": 0.72
 }

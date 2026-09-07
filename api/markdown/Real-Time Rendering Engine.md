@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time Rendering Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A real-time rendering engine generates images from 3D scene descriptions fast enough to sustain interactive frame rates, typically 30 to 120+ frames per second. It coordinates GPU rasterisation or ray tracing, shading, lighting, and post-processing within a fixed per-frame time budget. It is the visual core of game engines, virtual production, and immersive metaverse experiences.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse-content-pipeline", "label": "Metaverse Content Pipeline"},
-      {"@id": "urn:ngm:class:virtual-production-volume", "label": "Virtual Production Volume"}
+      {
+        "@id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      }
     ]
   },
   "quality": 0.72

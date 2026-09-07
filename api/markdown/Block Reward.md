@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Block Reward
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,26 +87,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"}
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
     ]
   },
   "provenance": {
@@ -121,67 +152,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:block-reward:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e808ef98af6b25bc2bc288c0683152a97eccbbf1193f5c906ef84b0a649178c9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DistributedDataStructure]]",
-      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Block Reward is the cryptoeconomic incentive paid to the producer of a valid block—comprising a protocol-specified subsidy (newly minted tokens) plus the aggregate transaction fees included in that block—which compensates validators or miners for expending resources to extend the canonical chain and maintain network security. Block reward schedules are a core parameter of a blockchain's monetary policy, directly governing token inflation, miner revenue, and the long-run security budget of the network.

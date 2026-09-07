@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Local Planner
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Local Planner",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:motion-planning", "vc:label": "Motion Planning"},
-    {"@id": "urn:visionflow:linked:navigation", "vc:label": "Navigation"},
-    {"@id": "urn:visionflow:linked:ros-navigation-stack", "vc:label": "ROS Navigation Stack"},
-    {"@id": "urn:visionflow:linked:obstacle-avoidance", "vc:label": "Obstacle Avoidance"}
+    {
+      "@id": "urn:visionflow:linked:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:navigation",
+      "vc:label": "Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ros-navigation-stack",
+      "vc:label": "ROS Navigation Stack"
+    },
+    {
+      "@id": "urn:visionflow:linked:obstacle-avoidance",
+      "vc:label": "Obstacle Avoidance"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,22 +44,46 @@ public: true
   "definition": "The component of a robot navigation system that converts a global route into safe, kinematically feasible velocity commands over a short horizon, reacting in real time to obstacles detected by onboard sensors. Operating at control rates of five to twenty hertz over a rolling window of a few metres, a local planner evaluates candidate trajectories against a local costmap and the robot's kinodynamic limits, selecting commands that make progress along the global path while avoiding collisions. Classic realisations include the Dynamic Window Approach, Timed Elastic Bands, and sampling-based controllers such as MPPI; in sampling-based roadmap methods the same term names the routine that checks whether two configurations can be connected by a simple collision-free motion.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:motion-planning",
+    "label": "Motion Planning"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:navigation", "label": "Navigation"},
-      {"@id": "urn:ngm:class:ros-navigation-stack", "label": "ROS Navigation Stack"}
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:localisation", "label": "Localization"}
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
-      {"@id": "urn:ngm:class:probabilistic-roadmap", "label": "Probabilistic Roadmap"},
-      {"@id": "urn:ngm:class:velocity-control", "label": "Velocity Control"}
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-roadmap",
+        "label": "Probabilistic Roadmap"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-control",
+        "label": "Velocity Control"
+      }
     ]
   },
   "quality": 0.8,

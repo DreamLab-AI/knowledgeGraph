@@ -1,8 +1,3 @@
----
-public: true
----
-
-# responsible scaling policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,9 +152,9 @@ public: true
   - #### AI Safety Levels (ASLs)
     - Tiered capability-risk thresholds, each with defined evaluation triggers and required countermeasures.
     - ASL-1: current models with no meaningful uplift to catastrophic harm—standard deployment practices apply.
-    - ASL-2: models that could meaningfully assist someone already seeking to cause harm, but not provide decisive uplift—enhanced internal monitoring required.
+    - ASL-2: models that [private] meaningfully assist someone already seeking to cause harm, but not provide decisive uplift—enhanced internal monitoring required.
     - ASL-3: models capable of providing real [[CBRN Risk]] uplift to non-state actors—significantly restricted deployment, mandatory [[Red Teaming]], external safety evaluations required before release.
-    - ASL-4 and beyond: models that could autonomously contribute to threats that nation-states would find difficult to counter—deployment halt pending development of adequate countermeasures.
+    - ASL-4 and beyond: models that [private] autonomously contribute to threats that nation-states would find difficult to counter—deployment halt pending development of adequate countermeasures.
   - #### Evaluation Triggers
     - Regular [[Capability Evaluation]] checkpoints scheduled at defined training compute intervals (e.g. every 4× increase in effective training compute).
     - Unscheduled evaluations triggered by unexpected capability jumps observed during training.
@@ -188,7 +183,7 @@ public: true
   - **Industry norm-setting**: As more developers publish RSPs, common elements converge towards informal industry standards, potentially forming the basis for future mandatory [[AI Regulation]].
 
 - ### Limitations and Criticisms
-  - RSPs are self-regulated and lack legal enforcement mechanisms—a developer could revise or abandon its RSP without legal consequence.
+  - RSPs are self-regulated and lack legal enforcement mechanisms—a developer [private] revise or abandon its RSP without legal consequence.
   - The collective action problem: if one developer maintains stricter RSP commitments than competitors, it may face competitive disadvantage, creating pressure to weaken commitments over time.
   - Evaluation methodologies for uplift remain contested and imprecise—it is difficult to definitively establish whether a model provides "meaningful" uplift to a skilled adversary.
   - RSP thresholds may be set conservatively relative to actual risk (leading to unnecessary friction) or too permissively (leading to under-preparation for capability jumps).

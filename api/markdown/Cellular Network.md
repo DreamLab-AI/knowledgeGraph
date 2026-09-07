@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Cellular Network
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

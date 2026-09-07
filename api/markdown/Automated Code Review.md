@@ -1,37 +1,118 @@
----
-public: true
----
-
-# Automated Code Review
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:automated-code-review", "@type":"Page", "title":"Automated Code Review", "vc:slug":"automated-code-review", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:automated-code-review",
+  "@type": "Page",
+  "title": "Automated Code Review",
+  "vc:slug": "automated-code-review",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:automated-code-review",
-  "@type":"Class",
-  "label":"Automated Code Review",
-  "definition":"Automated code review is the use of software tools, static analysis and, increasingly, large language models to inspect source code for defects, style violations, security weaknesses and maintainability issues without requiring manual reading of every change. It augments or partially replaces human review by surfacing actionable findings directly in pull requests and continuous integration pipelines. Modern systems combine rule-based linters with learned models that reason about code intent and propose fixes.",
-  "domain":"artificial-intelligence",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:code-review","label":"Code Review"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"},{"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:static-analysis","label":"Static Analysis"},{"@id":"urn:ngm:class:code-generation","label":"Code Generation"}],
-    "uses":[{"@id":"urn:ngm:class:static-analysis","label":"Static Analysis"},{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}],
-    "partOf":[{"@id":"urn:ngm:class:code-review","label":"Code Review"}],
-    "implements":[{"@id":"urn:ngm:class:code-review","label":"Code Review"}],
-    "supports":[{"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"},{"@id":"urn:ngm:class:devops","label":"DevOps"}],
-    "requires":[{"@id":"urn:ngm:class:version-control","label":"Version Control"}],
-    "reduces":[{"@id":"urn:ngm:class:technical-debt","label":"Technical Debt"}],
-    "relatedTo":[{"@id":"urn:ngm:class:static-analysis","label":"Static Analysis"},{"@id":"urn:ngm:class:code-generation","label":"Code Generation"},{"@id":"urn:ngm:class:technical-debt","label":"Technical Debt"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:automated-code-review",
+  "@type": "Class",
+  "label": "Automated Code Review",
+  "definition": "Automated code review is the use of software tools, static analysis and, increasingly, large language models to inspect source code for defects, style violations, security weaknesses and maintainability issues without requiring manual reading of every change. It augments or partially replaces human review by surfacing actionable findings directly in pull requests and continuous integration pipelines. Modern systems combine rule-based linters with learned models that reason about code intent and propose fixes.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:code-review",
+      "label": "Code Review"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "reduces": [
+      {
+        "@id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

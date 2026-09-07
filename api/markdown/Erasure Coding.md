@@ -1,8 +1,3 @@
----
-public: true
----
-
-# erasure coding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

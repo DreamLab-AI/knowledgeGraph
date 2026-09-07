@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Policy Simulation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:policy-simulation", "@type":"Page", "title":"Policy Simulation", "vc:slug":"policy-simulation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:policy-simulation",
+  "@type": "Page",
+  "title": "Policy Simulation",
+  "vc:slug": "policy-simulation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -14,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:policy-simulation",
   "@type": "Class",
   "label": "Policy Simulation",
-  "definition": "Policy simulation is the use of computational models \u2014 typically agent-based or system-dynamics models \u2014 to project the likely outcomes of a proposed policy before it is enacted, allowing decision-makers to compare interventions under varying assumptions. It represents a population of heterogeneous actors and the rules governing their interactions, then runs the model forward to observe emergent, aggregate effects such as economic output, public health or resource use. Policy simulation is widely used in government, urban planning and public health to reduce the risk of costly real-world policy failures.",
+  "definition": "Policy simulation is the use of computational models — typically agent-based or system-dynamics models — to project the likely outcomes of a proposed policy before it is enacted, allowing decision-makers to compare interventions under varying assumptions. It represents a population of heterogeneous actors and the rules governing their interactions, then runs the model forward to observe emergent, aggregate effects such as economic output, public health or resource use. Policy simulation is widely used in government, urban planning and public health to reduce the risk of costly real-world policy failures.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

@@ -1,35 +1,102 @@
----
-public: true
----
-
-# Anycast Routing
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:anycast-routing", "@type":"Page", "title":"Anycast Routing", "vc:slug":"anycast-routing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:anycast-routing",
+  "@type": "Page",
+  "title": "Anycast Routing",
+  "vc:slug": "anycast-routing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:anycast-routing",
-  "@type":"Class",
-  "label":"Anycast Routing",
-  "definition":"Anycast routing is a network addressing and routing technique in which a single IP address is advertised from multiple geographically distributed locations, and packets are delivered to whichever instance is nearest by the routing metric. It uses standard internet routing to steer each client to the closest available node, reducing latency and distributing load without client awareness. Anycast underpins resilient DNS, content delivery, and DDoS mitigation by enabling automatic failover and traffic absorption across many sites.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:routing","label":"Routing"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:ip-addressing","label":"IP Addressing"},{"@id":"urn:ngm:class:routing","label":"Routing"}],
-    "requires":[{"@id":"urn:ngm:class:geographic-distribution","label":"Geographic Distribution"}],
-    "supports":[{"@id":"urn:ngm:class:cdn","label":"Content Delivery Network"},{"@id":"urn:ngm:class:dns","label":"DNS"}],
-    "enables":[{"@id":"urn:ngm:class:failover","label":"Failover"},{"@id":"urn:ngm:class:high-availability","label":"High Availability"}],
-    "dependsOn":[{"@id":"urn:ngm:class:load-balancing","label":"Load Balancing"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:edge-computing","label":"Edge Computing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:latency","label":"Latency"},{"@id":"urn:ngm:class:load-balancer","label":"Load Balancer"},{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:anycast-routing",
+  "@type": "Class",
+  "label": "Anycast Routing",
+  "definition": "Anycast routing is a network addressing and routing technique in which a single IP address is advertised from multiple geographically distributed locations, and packets are delivered to whichever instance is nearest by the routing metric. It uses standard internet routing to steer each client to the closest available node, reducing latency and distributing load without client awareness. Anycast underpins resilient DNS, content delivery, and DDoS mitigation by enabling automatic failover and traffic absorption across many sites.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:routing",
+      "label": "Routing"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ip-addressing",
+        "label": "IP Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:routing",
+        "label": "Routing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:geographic-distribution",
+        "label": "Geographic Distribution"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cdn",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:failover",
+        "label": "Failover"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

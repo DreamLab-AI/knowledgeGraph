@@ -1,38 +1,132 @@
----
-public: true
----
-
-# Broadcast Television
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:broadcast-television", "@type":"Page", "title":"Broadcast Television", "vc:slug":"broadcast-television", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:broadcast-television",
+  "@type": "Page",
+  "title": "Broadcast Television",
+  "vc:slug": "broadcast-television",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:broadcast-television",
-  "@type":"Class",
-  "label":"Broadcast Television",
-  "definition":"Broadcast television is the distribution of moving-image and audio content to a general audience over terrestrial, satellite, or cable channels, in which a single signal is transmitted simultaneously to many passive receivers. It evolved from analogue standards such as PAL and NTSC to digital systems like DVB and ATSC that carry compressed video over the same spectrum. As a one-to-many medium with scheduled programming, it contrasts with on-demand internet streaming.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"},{"@id":"urn:ngm:class:infra-network-and-comms","label":"Network and Communication"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:video-codec","label":"Video Codec"},{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}],
-    "uses":[{"@id":"urn:ngm:class:video-compression","label":"Video Compression"},{"@id":"urn:ngm:class:video-codec","label":"Video Codec"},{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}],
-    "enables":[{"@id":"urn:ngm:class:bitrate","label":"Bitrate"}],
-    "requires":[{"@id":"urn:ngm:class:video-compression","label":"Video Compression"},{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
-    "dependsOn":[{"@id":"urn:ngm:class:hevc","label":"HEVC"},{"@id":"urn:ngm:class:video-compression","label":"Video Compression"}],
-    "supports":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "relatedTo":[{"@id":"urn:ngm:class:codec","label":"Codec"},{"@id":"urn:ngm:class:bitrate","label":"Bitrate"},{"@id":"urn:ngm:class:motion-estimation","label":"Motion Estimation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:metaverse","label":"Metaverse"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:entropy-coding","label":"Entropy Coding"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:broadcast-television",
+  "@type": "Class",
+  "label": "Broadcast Television",
+  "definition": "Broadcast television is the distribution of moving-image and audio content to a general audience over terrestrial, satellite, or cable channels, in which a single signal is transmitted simultaneously to many passive receivers. It evolved from analogue standards such as PAL and NTSC to digital systems like DVB and ATSC that carry compressed video over the same spectrum. As a one-to-many medium with scheduled programming, it contrasts with on-demand internet streaming.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "@id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bitrate",
+        "label": "Bitrate"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:hevc",
+        "label": "HEVC"
+      },
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:codec",
+        "label": "Codec"
+      },
+      {
+        "@id": "urn:ngm:class:bitrate",
+        "label": "Bitrate"
+      },
+      {
+        "@id": "urn:ngm:class:motion-estimation",
+        "label": "Motion Estimation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:entropy-coding",
+        "label": "Entropy Coding"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

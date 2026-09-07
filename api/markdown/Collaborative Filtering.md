@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collaborative Filtering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,49 +7,178 @@ public: true
   "title": "Collaborative Filtering",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:recommendation-system", "vc:label": "Recommendation System"},
-    {"@id": "urn:visionflow:linked:recommendation-engine", "vc:label": "Recommendation Engine"},
-    {"@id": "urn:visionflow:linked:recommendation-systems", "vc:label": "Recommendation Systems"},
-    {"@id": "urn:visionflow:linked:machine-learning-technique", "vc:label": "Machine Learning Technique"},
-    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:visionflow:linked:matrix-factorisation", "vc:label": "Matrix Factorisation"},
-    {"@id": "urn:visionflow:linked:embeddings", "vc:label": "Embeddings"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:differential-privacy", "vc:label": "Differential Privacy"},
-    {"@id": "urn:visionflow:linked:data-privacy", "vc:label": "Data Privacy"},
-    {"@id": "urn:visionflow:linked:privacy-preserving-data-mining", "vc:label": "Privacy Preserving Data Mining"},
-    {"@id": "urn:visionflow:linked:hyper-personalisation", "vc:label": "Hyper personalisation"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:stochastic-gradient-descent", "vc:label": "Stochastic Gradient Descent"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:vector-database", "vc:label": "Vector Database"},
-    {"@id": "urn:visionflow:linked:approximate-nearest-neighbour-search", "vc:label": "Approximate Nearest Neighbour Search"},
-    {"@id": "urn:visionflow:linked:information-retrieval", "vc:label": "Information Retrieval"},
-    {"@id": "urn:visionflow:linked:user-behaviour-data", "vc:label": "User Behaviour Data"},
-    {"@id": "urn:visionflow:linked:content-based-filtering", "vc:label": "Content-Based Filtering"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
-    {"@id": "urn:visionflow:linked:sparse-data", "vc:label": "Sparse Data"},
-    {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:cold-start-problem", "vc:label": "Cold-Start Problem"},
-    {"@id": "urn:visionflow:linked:filter-bubble", "vc:label": "Filter Bubble"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:e-commerce", "vc:label": "E-Commerce"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:drug-discovery", "vc:label": "Drug Discovery"},
-    {"@id": "urn:visionflow:linked:gdpr", "vc:label": "GDPR"},
-    {"@id": "urn:visionflow:linked:a-b-testing", "vc:label": "A/B Testing"},
-    {"@id": "urn:visionflow:linked:alternating-least-squares", "vc:label": "Alternating Least Squares"},
-    {"@id": "urn:visionflow:linked:machine-learning-model", "vc:label": "Machine Learning Model"},
-    {"@id": "urn:visionflow:linked:search-engine", "vc:label": "Search Engine"},
-    {"@id": "urn:visionflow:linked:social-media-platform-infrastructure", "vc:label": "Social Media Platform Infrastructure"}
+    {
+      "@id": "urn:visionflow:linked:recommendation-system",
+      "vc:label": "Recommendation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-engine",
+      "vc:label": "Recommendation Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-systems",
+      "vc:label": "Recommendation Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-technique",
+      "vc:label": "Machine Learning Technique"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:matrix-factorisation",
+      "vc:label": "Matrix Factorisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:embeddings",
+      "vc:label": "Embeddings"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:differential-privacy",
+      "vc:label": "Differential Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-privacy",
+      "vc:label": "Data Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-preserving-data-mining",
+      "vc:label": "Privacy Preserving Data Mining"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyper-personalisation",
+      "vc:label": "Hyper personalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-gradient-descent",
+      "vc:label": "Stochastic Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:approximate-nearest-neighbour-search",
+      "vc:label": "Approximate Nearest Neighbour Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-retrieval",
+      "vc:label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-behaviour-data",
+      "vc:label": "User Behaviour Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-based-filtering",
+      "vc:label": "Content-Based Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularisation",
+      "vc:label": "Regularisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:sparse-data",
+      "vc:label": "Sparse Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:cold-start-problem",
+      "vc:label": "Cold-Start Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:filter-bubble",
+      "vc:label": "Filter Bubble"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:e-commerce",
+      "vc:label": "E-Commerce"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:a-b-testing",
+      "vc:label": "A/B Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:alternating-least-squares",
+      "vc:label": "Alternating Least Squares"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-model",
+      "vc:label": "Machine Learning Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:search-engine",
+      "vc:label": "Search Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-media-platform-infrastructure",
+      "vc:label": "Social Media Platform Infrastructure"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -69,103 +193,112 @@ public: true
   "definition": "Collaborative filtering is a machine learning technique for building recommendation systems that generates predictions about user preferences by aggregating the behaviour or ratings of many users, without requiring explicit knowledge of item content. Memory-based approaches compute similarity between users (user-based) or items (item-based) using rating vectors; model-based approaches such as matrix factorisation decompose the user-item interaction matrix into latent factor spaces. The method operates on the assumption that users who agreed in the past will agree in the future, and is the foundational algorithm behind recommendation engines at Netflix, Spotify, and Amazon.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:matrix-factorisation", "label": "Matrix Factorisation"},
-      {"@id": "urn:ngm:class:user-item-interaction-matrix", "label": "User-Item Interaction Matrix"},
-      {"@id": "urn:ngm:class:latent-factor-model", "label": "Latent Factor Model"},
-      {"@id": "urn:ngm:class:neighbourhood-method", "label": "Neighbourhood Method"}
+      {
+        "@id": "urn:ngm:class:matrix-factorisation",
+        "label": "Matrix Factorisation"
+      },
+      {
+        "@id": "urn:ngm:class:user-item-interaction-matrix",
+        "label": "User-Item Interaction Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:latent-factor-model",
+        "label": "Latent Factor Model"
+      },
+      {
+        "@id": "urn:ngm:class:neighbourhood-method",
+        "label": "Neighbourhood Method"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}
+      {
+        "@id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:user-behaviour-data", "label": "User Behaviour Data"},
-      {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"},
-      {"@id": "urn:ngm:class:sparse-data", "label": "Sparse Data"}
+      {
+        "@id": "urn:ngm:class:user-behaviour-data",
+        "label": "User Behaviour Data"
+      },
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-data",
+        "label": "Sparse Data"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour-search", "label": "Approximate Nearest Neighbour Search"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:approximate-nearest-neighbour-search",
+        "label": "Approximate Nearest Neighbour Search"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:content-based-filtering", "label": "Content-Based Filtering"},
-      {"@id": "urn:ngm:class:search-engine", "label": "Search Engine"}
+      {
+        "@id": "urn:ngm:class:content-based-filtering",
+        "label": "Content-Based Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:recommendation-systems", "label": "Recommendation Systems"},
-      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"},
-      {"@id": "urn:ngm:class:privacy-preserving-data-mining", "label": "Privacy Preserving Data Mining"},
-      {"@id": "urn:ngm:class:filter-bubble", "label": "Filter Bubble"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-data-mining",
+        "label": "Privacy Preserving Data Mining"
+      },
+      {
+        "@id": "urn:ngm:class:filter-bubble",
+        "label": "Filter Bubble"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "PhaseEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:collaborative-filtering:e2a91fc7d30b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:collaborative-filtering"},
-  "vc:resolutions": [
-    {"raw": "[[Recommendation System]]", "resolved": "urn:visionflow:linked:recommendation-system", "kind": "ResolvedLink"},
-    {"raw": "[[Recommendation Engine]]", "resolved": "urn:visionflow:linked:recommendation-engine", "kind": "ResolvedLink"},
-    {"raw": "[[Recommendation Systems]]", "resolved": "urn:visionflow:linked:recommendation-systems", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Technique]]", "resolved": "urn:visionflow:linked:machine-learning-technique", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "ResolvedLink"},
-    {"raw": "[[Matrix Factorisation]]", "resolved": "urn:visionflow:linked:matrix-factorisation", "kind": "StubLink"},
-    {"raw": "[[Embeddings]]", "resolved": "urn:visionflow:linked:embeddings", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "StubLink"},
-    {"raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "StubLink"},
-    {"raw": "[[Federated Learning]]", "resolved": "urn:visionflow:linked:federated-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Differential Privacy]]", "resolved": "urn:visionflow:linked:differential-privacy", "kind": "ResolvedLink"},
-    {"raw": "[[Data Privacy]]", "resolved": "urn:visionflow:linked:data-privacy", "kind": "ResolvedLink"},
-    {"raw": "[[Privacy Preserving Data Mining]]", "resolved": "urn:visionflow:linked:privacy-preserving-data-mining", "kind": "StubLink"},
-    {"raw": "[[Hyper personalisation]]", "resolved": "urn:visionflow:linked:hyper-personalisation", "kind": "StubLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "StubLink"},
-    {"raw": "[[Stochastic Gradient Descent]]", "resolved": "urn:visionflow:linked:stochastic-gradient-descent", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Vector Database]]", "resolved": "urn:visionflow:linked:vector-database", "kind": "StubLink"},
-    {"raw": "[[Approximate Nearest Neighbour Search]]", "resolved": "urn:visionflow:linked:approximate-nearest-neighbour-search", "kind": "StubLink"},
-    {"raw": "[[Information Retrieval]]", "resolved": "urn:visionflow:linked:information-retrieval", "kind": "StubLink"},
-    {"raw": "[[User Behaviour Data]]", "resolved": "urn:visionflow:linked:user-behaviour-data", "kind": "StubLink"},
-    {"raw": "[[Content-Based Filtering]]", "resolved": "urn:visionflow:linked:content-based-filtering", "kind": "StubLink"},
-    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:linked:knowledge-graph", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "StubLink"},
-    {"raw": "[[Regularisation]]", "resolved": "urn:visionflow:linked:regularisation", "kind": "StubLink"},
-    {"raw": "[[Sparse Data]]", "resolved": "urn:visionflow:linked:sparse-data", "kind": "StubLink"},
-    {"raw": "[[Variational Autoencoder]]", "resolved": "urn:visionflow:linked:variational-autoencoder", "kind": "StubLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "StubLink"},
-    {"raw": "[[Cold-Start Problem]]", "resolved": "urn:visionflow:linked:cold-start-problem", "kind": "StubLink"},
-    {"raw": "[[Filter Bubble]]", "resolved": "urn:visionflow:linked:filter-bubble", "kind": "StubLink"},
-    {"raw": "[[Data Pipeline]]", "resolved": "urn:visionflow:linked:data-pipeline", "kind": "StubLink"},
-    {"raw": "[[E-Commerce]]", "resolved": "urn:visionflow:linked:e-commerce", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Drug Discovery]]", "resolved": "urn:visionflow:linked:drug-discovery", "kind": "StubLink"},
-    {"raw": "[[GDPR]]", "resolved": "urn:visionflow:linked:gdpr", "kind": "StubLink"},
-    {"raw": "[[A/B Testing]]", "resolved": "urn:visionflow:linked:a-b-testing", "kind": "StubLink"},
-    {"raw": "[[Alternating Least Squares]]", "resolved": "urn:visionflow:linked:alternating-least-squares", "kind": "StubLink"},
-    {"raw": "[[Machine Learning Model]]", "resolved": "urn:visionflow:linked:machine-learning-model", "kind": "ResolvedLink"},
-    {"raw": "[[Search Engine]]", "resolved": "urn:visionflow:linked:search-engine", "kind": "StubLink"},
-    {"raw": "[[Social Media Platform Infrastructure]]", "resolved": "urn:visionflow:linked:social-media-platform-infrastructure", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -284,7 +417,7 @@ public: true
 
     The fundamental challenge of collaborative filtering is that observed interactions are not a random sample of all user-item pairs — they are heavily censored by the recommendation system itself, by item popularity, and by user preferences already partially revealed through prior recommendations. This creates circular bias: a [[Recommendation System]] trained on data generated by a previous recommender inherits its biases, amplifying popular items and suppressing long-tail content independent of its intrinsic quality. [[Graph Neural Network]]-based CF has been shown to particularly amplify this popularity bias: the message-passing aggregation mechanism gives popular items — which appear in more users' neighbourhoods — systematically larger gradient signals, causing their [[Embeddings]] to be pushed further from the origin and thus to receive higher dot-product scores against more user [[Embeddings]] than their actual quality warrants. Post-hoc correction methods (arXiv:2510.12959, 2025) operate on pre-trained GNN [[Embeddings]] by identifying and removing the dominant popularity direction vector without retraining; directional decomposition approaches (arXiv:2512.10688, 2025) address the problem at training time by decomposing gradients into popularity and preference components and applying asymmetric corrections. Causal inference approaches (Schnabel et al., 2016; Inverse Propensity Scoring with propensity weights estimated from item exposure rates) provide a theoretically grounded framework for unbiased estimation, treating recommendation exposure as a treatment assignment problem and applying doubly robust estimators that remain consistent if either the propensity model or the outcome model is correctly specified.
 
-    Collaborative filtering's relationship with [[Privacy Preserving Data Mining]] and [[Data Privacy]] regulation has evolved from a secondary concern to a primary architectural constraint. The seminal 2007 re-identification attack by Narayanan and Shmatikoff on the Netflix Prize dataset — demonstrating that 87% of users with as few as 8 movie ratings could be re-identified from anonymised interaction data against public IMDb profiles — established that sparse interaction matrices leak private information at the individual level. This finding directly influenced the withdrawal of the Netflix Prize dataset from public availability and catalysed the academic subfield of privacy-preserving recommender systems. The [[GDPR]]'s "right to be forgotten" (Article 17) is operationally challenging for collaborative CF systems: erasing a user's interactions requires re-training or approximate unlearning procedures, as the user's preferences are encoded in the shared [[Embeddings]] of item factors and in the latent factor vectors of users with similar tastes. Machine unlearning methods for CF (SISA — Sharded, Isolated, Sliced, and Aggregated training; influence-function-based approximate unlearning) address this requirement without full model retraining, enabling GDPR-compliant user deletion at production scale.
+    Collaborative filtering's relationship with [[Privacy Preserving Data Mining]] and [[Data Privacy]] regulation has evolved from a secondary concern to a primary architectural constraint. The seminal 2007 re-identification attack by Narayanan and Shmatikoff on the Netflix Prize dataset — demonstrating that 87% of users with as few as 8 movie ratings [private] be re-identified from anonymised interaction data against public IMDb profiles — established that sparse interaction matrices leak private information at the individual level. This finding directly influenced the withdrawal of the Netflix Prize dataset from public availability and catalysed the academic subfield of privacy-preserving recommender systems. The [[GDPR]]'s "right to be forgotten" (Article 17) is operationally challenging for collaborative CF systems: erasing a user's interactions requires re-training or approximate unlearning procedures, as the user's preferences are encoded in the shared [[Embeddings]] of item factors and in the latent factor vectors of users with similar tastes. Machine unlearning methods for CF (SISA — Sharded, Isolated, Sliced, and Aggregated training; influence-function-based approximate unlearning) address this requirement without full model retraining, enabling GDPR-compliant user deletion at production scale.
 
     The convergence of collaborative filtering with [[Natural Language Processing]] has opened new modalities for preference elicitation and recommendation. Conversational recommendation systems elicit user preferences through natural language dialogue — "I liked the pacing of that thriller but found the protagonist unrelatable; what else might I enjoy?" — and map these expressed preferences into the collaborative latent space by identifying users whose behavioural patterns match the expressed characteristics. [[Large Language Model]]-based conversational recommenders (Microsoft Copilot, Google Assistant, Amazon Alexa) blend dialogue management and preference modelling with retrieval from collaborative [[Embeddings]] stores, generating natural language recommendations with explanations grounded in collaborative signals. The reasoning-guided CF framework (arXiv:2602.05544, 2026) traces multi-hop reasoning paths through the user-item graph to generate explanations of the form "we recommend this because users with similar taste to you — who also enjoyed X and Y — found this compelling; specifically, its characteristic Z resonates with your demonstrated preference for A" — a qualitative advance over the opaque preference predictions of classical [[Matrix Factorisation]].
 

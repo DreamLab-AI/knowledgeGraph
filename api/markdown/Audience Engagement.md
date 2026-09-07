@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Audience Engagement
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,53 +8,194 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:ngm:class:user-engagement", "vc:label": "User Engagement"},
-    {"@id": "urn:ngm:class:content-creation", "vc:label": "Content Creation"},
-    {"@id": "urn:ngm:class:live-streaming", "vc:label": "Live Streaming"},
-    {"@id": "urn:ngm:class:gamification", "vc:label": "Gamification"},
-    {"@id": "urn:ngm:class:live-polls-and-qanda", "vc:label": "Live Polls and QandA"},
-    {"@id": "urn:ngm:class:creator-economy", "vc:label": "Creator Economy"},
-    {"@id": "urn:ngm:class:content-distribution", "vc:label": "Content Distribution"},
-    {"@id": "urn:ngm:class:virtual-event", "vc:label": "Virtual Event"},
-    {"@id": "urn:ngm:class:recommendation-systems", "vc:label": "Recommendation Systems"},
-    {"@id": "urn:ngm:class:hyper-personalisation", "vc:label": "Hyper personalisation"},
-    {"@id": "urn:ngm:class:social-platform", "vc:label": "Social Platform"},
-    {"@id": "urn:ngm:class:digital-content", "vc:label": "Digital Content"},
-    {"@id": "urn:ngm:class:natural-interaction", "vc:label": "Natural Interaction"},
-    {"@id": "urn:ngm:class:reward-function", "vc:label": "Reward Function"},
-    {"@id": "urn:ngm:class:user-interface", "vc:label": "User Interface"},
-    {"@id": "urn:ngm:class:user-experience", "vc:label": "User Experience"},
-    {"@id": "urn:ngm:class:loyalty-programs", "vc:label": "Loyalty Programs"},
-    {"@id": "urn:ngm:class:video-streaming", "vc:label": "Video Streaming"},
-    {"@id": "urn:ngm:class:content-delivery-network", "vc:label": "Content Delivery Network"},
-    {"@id": "urn:ngm:class:real-time-communication", "vc:label": "Real-Time Communication"},
-    {"@id": "urn:ngm:class:digital-marketplace", "vc:label": "Digital Marketplace"},
-    {"@id": "urn:ngm:class:metaverse-content-pipeline", "vc:label": "Metaverse Content Pipeline"},
-    {"@id": "urn:ngm:class:augmented-reality", "vc:label": "Augmented Reality"},
-    {"@id": "urn:ngm:class:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:ngm:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:ngm:class:sentiment-analysis", "vc:label": "Sentiment Analysis"},
-    {"@id": "urn:ngm:class:data-analytics", "vc:label": "Data Analytics"},
-    {"@id": "urn:ngm:class:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:ngm:class:blockchain", "vc:label": "Blockchain"},
-    {"@id": "urn:ngm:class:moderation", "vc:label": "Moderation"},
-    {"@id": "urn:ngm:class:advertising-technology", "vc:label": "Advertising Technology"},
-    {"@id": "urn:ngm:class:subscription-model", "vc:label": "Subscription Model"},
-    {"@id": "urn:ngm:class:content-monetisation", "vc:label": "Content Monetisation"},
-    {"@id": "urn:ngm:class:token-economy", "vc:label": "Token Economy"},
-    {"@id": "urn:ngm:class:creator-royalty-token", "vc:label": "Creator Royalty Token"},
-    {"@id": "urn:ngm:class:parasocial-relationship", "vc:label": "Parasocial Relationship"},
-    {"@id": "urn:ngm:class:watch-time", "vc:label": "Watch Time"},
-    {"@id": "urn:ngm:class:interaction-rate", "vc:label": "Interaction Rate"},
-    {"@id": "urn:ngm:class:network-effects", "vc:label": "Network Effects"},
-    {"@id": "urn:ngm:class:digital-identity", "vc:label": "Digital Identity"},
-    {"@id": "urn:ngm:class:virtual-reality", "vc:label": "Virtual Reality"},
-    {"@id": "urn:ngm:class:online-safety-act", "vc:label": "Online Safety Act"},
-    {"@id": "urn:ngm:class:digital-services-act", "vc:label": "Digital Services Act"},
-    {"@id": "urn:ngm:class:creator-economy-platform", "vc:label": "Creator Economy Platform"},
-    {"@id": "urn:ngm:class:short-form-video", "vc:label": "Short-Form Video"},
-    {"@id": "urn:ngm:class:esports", "vc:label": "Esports"},
-    {"@id": "urn:ngm:class:collaborative-systems-modality-filtering", "vc:label": "Collaborative Filtering"}
+    {
+      "@id": "urn:ngm:class:user-engagement",
+      "vc:label": "User Engagement"
+    },
+    {
+      "@id": "urn:ngm:class:content-creation",
+      "vc:label": "Content Creation"
+    },
+    {
+      "@id": "urn:ngm:class:live-streaming",
+      "vc:label": "Live Streaming"
+    },
+    {
+      "@id": "urn:ngm:class:gamification",
+      "vc:label": "Gamification"
+    },
+    {
+      "@id": "urn:ngm:class:live-polls-and-qanda",
+      "vc:label": "Live Polls and QandA"
+    },
+    {
+      "@id": "urn:ngm:class:creator-economy",
+      "vc:label": "Creator Economy"
+    },
+    {
+      "@id": "urn:ngm:class:content-distribution",
+      "vc:label": "Content Distribution"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-event",
+      "vc:label": "Virtual Event"
+    },
+    {
+      "@id": "urn:ngm:class:recommendation-systems",
+      "vc:label": "Recommendation Systems"
+    },
+    {
+      "@id": "urn:ngm:class:hyper-personalisation",
+      "vc:label": "Hyper personalisation"
+    },
+    {
+      "@id": "urn:ngm:class:social-platform",
+      "vc:label": "Social Platform"
+    },
+    {
+      "@id": "urn:ngm:class:digital-content",
+      "vc:label": "Digital Content"
+    },
+    {
+      "@id": "urn:ngm:class:natural-interaction",
+      "vc:label": "Natural Interaction"
+    },
+    {
+      "@id": "urn:ngm:class:reward-function",
+      "vc:label": "Reward Function"
+    },
+    {
+      "@id": "urn:ngm:class:user-interface",
+      "vc:label": "User Interface"
+    },
+    {
+      "@id": "urn:ngm:class:user-experience",
+      "vc:label": "User Experience"
+    },
+    {
+      "@id": "urn:ngm:class:loyalty-programs",
+      "vc:label": "Loyalty Programs"
+    },
+    {
+      "@id": "urn:ngm:class:video-streaming",
+      "vc:label": "Video Streaming"
+    },
+    {
+      "@id": "urn:ngm:class:content-delivery-network",
+      "vc:label": "Content Delivery Network"
+    },
+    {
+      "@id": "urn:ngm:class:real-time-communication",
+      "vc:label": "Real-Time Communication"
+    },
+    {
+      "@id": "urn:ngm:class:digital-marketplace",
+      "vc:label": "Digital Marketplace"
+    },
+    {
+      "@id": "urn:ngm:class:metaverse-content-pipeline",
+      "vc:label": "Metaverse Content Pipeline"
+    },
+    {
+      "@id": "urn:ngm:class:augmented-reality",
+      "vc:label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:ngm:class:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    },
+    {
+      "@id": "urn:ngm:class:data-analytics",
+      "vc:label": "Data Analytics"
+    },
+    {
+      "@id": "urn:ngm:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:moderation",
+      "vc:label": "Moderation"
+    },
+    {
+      "@id": "urn:ngm:class:advertising-technology",
+      "vc:label": "Advertising Technology"
+    },
+    {
+      "@id": "urn:ngm:class:subscription-model",
+      "vc:label": "Subscription Model"
+    },
+    {
+      "@id": "urn:ngm:class:content-monetisation",
+      "vc:label": "Content Monetisation"
+    },
+    {
+      "@id": "urn:ngm:class:token-economy",
+      "vc:label": "Token Economy"
+    },
+    {
+      "@id": "urn:ngm:class:creator-royalty-token",
+      "vc:label": "Creator Royalty Token"
+    },
+    {
+      "@id": "urn:ngm:class:parasocial-relationship",
+      "vc:label": "Parasocial Relationship"
+    },
+    {
+      "@id": "urn:ngm:class:watch-time",
+      "vc:label": "Watch Time"
+    },
+    {
+      "@id": "urn:ngm:class:interaction-rate",
+      "vc:label": "Interaction Rate"
+    },
+    {
+      "@id": "urn:ngm:class:network-effects",
+      "vc:label": "Network Effects"
+    },
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "vc:label": "Digital Identity"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-reality",
+      "vc:label": "Virtual Reality"
+    },
+    {
+      "@id": "urn:ngm:class:online-safety-act",
+      "vc:label": "Online Safety Act"
+    },
+    {
+      "@id": "urn:ngm:class:digital-services-act",
+      "vc:label": "Digital Services Act"
+    },
+    {
+      "@id": "urn:ngm:class:creator-economy-platform",
+      "vc:label": "Creator Economy Platform"
+    },
+    {
+      "@id": "urn:ngm:class:short-form-video",
+      "vc:label": "Short-Form Video"
+    },
+    {
+      "@id": "urn:ngm:class:esports",
+      "vc:label": "Esports"
+    },
+    {
+      "@id": "urn:ngm:class:collaborative-systems-modality-filtering",
+      "vc:label": "Collaborative Filtering"
+    }
   ]
 }
 ```
@@ -82,51 +217,138 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:user-engagement", "label": "User Engagement"},
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
-      {"@id": "urn:ngm:class:content-monetisation", "label": "Content Monetisation"},
-      {"@id": "urn:ngm:class:loyalty-programs", "label": "Loyalty Programs"}
+      {
+        "@id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
+      },
+      {
+        "@id": "urn:ngm:class:loyalty-programs",
+        "label": "Loyalty Programs"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"},
-      {"@id": "urn:ngm:class:digital-content", "label": "Digital Content"},
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"}
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:live-polls-and-qanda", "label": "Live Polls and QandA"},
-      {"@id": "urn:ngm:class:gamification", "label": "Gamification"},
-      {"@id": "urn:ngm:class:recommendation-systems", "label": "Recommendation Systems"},
-      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
+      {
+        "@id": "urn:ngm:class:live-polls-and-qanda",
+        "label": "Live Polls and QandA"
+      },
+      {
+        "@id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:live-streaming", "label": "Live Streaming"},
-      {"@id": "urn:ngm:class:virtual-event", "label": "Virtual Event"},
-      {"@id": "urn:ngm:class:social-platform", "label": "Social Platform"}
+      {
+        "@id": "urn:ngm:class:live-streaming",
+        "label": "Live Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      },
+      {
+        "@id": "urn:ngm:class:social-platform",
+        "label": "Social Platform"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:user-engagement", "label": "User Engagement"},
-      {"@id": "urn:ngm:class:content-distribution", "label": "Content Distribution"},
-      {"@id": "urn:ngm:class:advertising-technology", "label": "Advertising Technology"},
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
-      {"@id": "urn:ngm:class:subscription-model", "label": "Subscription Model"}
+      {
+        "@id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:content-distribution",
+        "label": "Content Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:advertising-technology",
+        "label": "Advertising Technology"
+      },
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:subscription-model",
+        "label": "Subscription Model"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"},
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
-      {"@id": "urn:ngm:class:metaverse-content-pipeline", "label": "Metaverse Content Pipeline"}
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:gamification", "label": "Gamification"},
-      {"@id": "urn:ngm:class:natural-interaction", "label": "Natural Interaction"}
+      {
+        "@id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "@id": "urn:ngm:class:natural-interaction",
+        "label": "Natural Interaction"
+      }
     ]
   },
   "quality": 0.88,
@@ -276,13 +498,13 @@ public: true
 
   Audience engagement occupies a central position in the contemporary media economy as the measurable output of the relationship between content and community — the bridge between creative production and the monetisation models that sustain it. Its conceptual roots lie in traditional broadcasting theory, where audience measurement was dominated by reach and frequency metrics (GRPs — gross rating points; TVRs — television ratings) that treated viewers as passive recipients of broadcast signals arriving at scheduled times. Audience research in this era was conducted through meter-based panels (BARB in the UK, Nielsen in the US), telephone recall surveys, and diary studies — all capturing aggregate viewership statistics with no visibility into the moment-by-moment engagement quality of individual viewers. The fundamental assumption was one-to-many communication: a broadcaster produced content and transmitted it to an undifferentiated mass audience whose only active choice was whether to tune in or switch channels.
 
-  The digital transformation of media distribution, beginning with web portals and RSS aggregators in the late 1990s and accelerating sharply through the rise of [[Social Platform]] infrastructure (Facebook 2004, YouTube 2005, Twitter 2006) and streaming services (Netflix streaming 2007, Twitch 2011, YouTube Live 2011), introduced persistent bidirectional communication channels that fundamentally altered the audience-creator relationship. Viewers could now respond in real time — commenting, rating, sharing, and increasingly creating derivative content — while creators received immediate signal about what resonated. This transformed the audience from a passive mass into an active community whose participation could be instrumented, optimised, and monetised. The rise of the [[Creator Economy]] formalised this transformation: by 2025, over 200 million individuals globally identify as content creators, and the market for creator economy tools, platforms, and services is valued at approximately $250 billion.
+  The digital transformation of media distribution, beginning with web portals and RSS aggregators in the late 1990s and accelerating sharply through the rise of [[Social Platform]] infrastructure (Facebook 2004, YouTube 2005, Twitter 2006) and streaming services (Netflix streaming 2007, Twitch 2011, YouTube Live 2011), introduced persistent bidirectional communication channels that fundamentally altered the audience-creator relationship. Viewers [private] now respond in real time — commenting, rating, sharing, and increasingly creating derivative content — while creators received immediate signal about what resonated. This transformed the audience from a passive mass into an active community whose participation [private] be instrumented, optimised, and monetised. The rise of the [[Creator Economy]] formalised this transformation: by 2025, over 200 million individuals globally identify as content creators, and the market for creator economy tools, platforms, and services is valued at approximately $250 billion.
 
   This shift has been quantified most starkly in [[Live Streaming]] contexts. Academic and industry research consistently demonstrates that the live format creates qualitatively different engagement dynamics from pre-recorded on-demand content. The shared temporal experience of watching an event simultaneously with others — even strangers — activates social presence effects studied extensively in telepresence research (Biocca, 1997; Lombard and Ditton, 1997): the sense of being co-present with others amplifies emotional investment, lowers inhibitions to participation, and increases the perceived importance of the content. GetStream's 2026 industry data shows live streams generate approximately six times more interactions (comments, reactions, shares, poll responses) per view than equivalent on-demand content, and sustain average viewing sessions of around 40 minutes versus 10 minutes for pre-recorded video. Facebook Live peaks engagement between 30–40 minutes into a stream; Twitch shows engagement metrics that increase with streamer response frequency to individual viewer comments. The parasocial relationship between creator and audience — the simulated intimacy theorised by Horton and Wohl (1956) — is dramatically intensified in live interactive formats where creators directly address individual viewer comments by username, creating the subjective experience of personal recognition within what may be a concurrent audience of millions.
 
   The application of [[Artificial Intelligence]] — specifically [[Recommendation Systems]], [[Sentiment Analysis]], [[Natural Language Processing]], and predictive [[Data Analytics]] — to audience engagement has transformed the field from a craft discipline reliant on editorial instinct into a data-driven engineering practice. Modern platforms train recommendation models on engagement signals (watch-time completions, click-through rates, replays, shares, return visits) to surface content to users whose behavioural fingerprints match those of prior high-engagement viewers for similar content. These recommendation systems effectively amplify engagement at scale: a creator with 10,000 subscribers can achieve 1 million views if their content's engagement signal matches what the recommendation algorithm identifies as broadly appealing within a niche. Real-time [[Sentiment Analysis]] of comment streams enables AI-assisted [[Moderation]] that removes toxic content before it degrades community quality — a prerequisite for maintaining the psychological safety that encourages genuine participation. Sentiment dashboards allow creators and brands to understand emotional audience responses at per-minute granularity during live events, enabling in-stream content adjustments. Predictive engagement scoring — estimating the likely interaction rate for a new piece of content before publication, based on creator history, topic trend signals, and platform contextual data — has become a standard feature in creator analytics dashboards from YouTube Studio, TikTok Studio, and third-party tools by 2026, giving creators and brands pre-publication intelligence about expected engagement performance.
 
-  The ethical dimensions of audience engagement design have come to the foreground as platforms have acknowledged the psychological mechanisms their engagement mechanics exploit. Variable reward schedules — the "slot machine" pattern of unpredictable social validation through likes, comments, and follower gains — are among the most potent engagement retention mechanisms, sustaining compulsive checking behaviour by operating on the same intermittent reinforcement principles that drive gambling addiction. Notification systems, streak mechanics (Duolingo's daily streak, Snapchat's Snapstreak), social leaderboards, and algorithm-amplified social comparison all exploit well-documented cognitive biases — commitment and consistency, social proof, loss aversion — to maximise time-on-platform metrics at potential cost to user wellbeing. These design patterns have attracted significant regulatory scrutiny: the UK Online Safety Act 2023 includes provisions specifically targeting "harmful" engagement features for minors, including algorithm-driven content recommendation that could expose under-18s to harmful material or create addictive usage patterns. Ofcom's enforcement framework and codes of practice developed through 2024–2025 require platforms to conduct children's safety risk assessments, provide robust age verification, and design default settings that minimise engagement-driven harm exposure for younger users.
+  The ethical dimensions of audience engagement design have come to the foreground as platforms have acknowledged the psychological mechanisms their engagement mechanics exploit. Variable reward schedules — the "slot machine" pattern of unpredictable social validation through likes, comments, and follower gains — are among the most potent engagement retention mechanisms, sustaining compulsive checking behaviour by operating on the same intermittent reinforcement principles that drive gambling addiction. Notification systems, streak mechanics (Duolingo's daily streak, Snapchat's Snapstreak), social leaderboards, and algorithm-amplified social comparison all exploit well-documented cognitive biases — commitment and consistency, social proof, loss aversion — to maximise time-on-platform metrics at potential cost to user wellbeing. These design patterns have attracted significant regulatory scrutiny: the UK Online Safety Act 2023 includes provisions specifically targeting "harmful" engagement features for minors, including algorithm-driven content recommendation that [private] expose under-18s to harmful material or create addictive usage patterns. Ofcom's enforcement framework and codes of practice developed through 2024–2025 require platforms to conduct children's safety risk assessments, provide robust age verification, and design default settings that minimise engagement-driven harm exposure for younger users.
 
   ## Components and Architecture
 
@@ -306,7 +528,7 @@ public: true
   - Audience retention curves: second-by-second completion percentage plots showing at which moments viewers disengage, enabling creators to identify and improve weak segments. YouTube's retention curve analysis is among the most widely used content optimisation tools in the creator ecosystem.
   - Core engagement metrics: watch time (absolute minutes and average session duration), completion rate (% of content watched per initiation), interaction rate (comments + reactions + shares per 1,000 views), return rate (% of viewers returning within 7 days), click-through rate (impressions to starts conversion).
   - Community health metrics: ratio of constructive to total comments (proxy for community quality); amplification coefficient (organic shares per published piece, indicating virality potential); contributor conversion rate (% of consumers who create any content, indicating community vitality).
-  - Longitudinal engagement metrics: subscriber retention curve (% of subscribers still active at 30/90/180 days post-subscription); cohort engagement index (comparing engagement depth across viewer acquisition cohorts); lifetime value estimation for subscribed versus non-subscribed audience segments.
+  - Longitudinal engagement metrics: subscriber retention curve (% of subscribers still active at 30/90/180 days post-subscription); cohort engagement [private] (comparing engagement depth across viewer acquisition cohorts); lifetime value estimation for subscribed versus non-subscribed audience segments.
 
   **Moderation and Safety Layer**
   - [[Moderation]] systems using [[Natural Language Processing]] (toxicity classifiers, hate speech detectors, spam filters) and computer vision (image moderation, thumbnail safety) to identify and action policy-violating content in near-real-time, with graduated response workflows (warn → remove → shadow-ban → account-ban) calibrated to violation severity and creator/user history.
@@ -345,7 +567,7 @@ public: true
 
   Mihaly Csikszentmihalyi's flow theory (1990) provides the psychological model for peak engagement states: characterised by challenge-skill balance (difficulty is neither too easy nor too frustrating), clear goals, immediate feedback, loss of self-consciousness, and distorted time perception — the subjective sense that hours have passed in minutes. Interactive content designs explicitly attempt to induce flow states: games calibrate difficulty adaptively; interactive live streams insert participation moments at optimal intervals to maintain the challenge-response loop; educational platforms (like FutureLearn) sequence content modules to build skills progressively, maintaining the challenge-skill balance as learner competence grows. Flow engagement is qualitatively different from — and more valuable than — habitual or addictive engagement: it represents genuine absorption driven by intrinsic motivation rather than psychological dependency on variable rewards.
 
-  The rise of platform media studies as a scholarly discipline has produced systematic empirical research on algorithmic engagement amplification and its consequences. Studies of YouTube's recommendation system (Ribeiro et al. 2020; Hosseinmardi et al. 2021) demonstrated that watch-time maximisation objectives could drive recommendations toward increasingly extreme or emotionally provocative content — not because the algorithm was optimising for extremism, but because extreme content's higher engagement metrics (completion rate, comment rate, share rate) caused the recommendation system to surface it more widely. YouTube subsequently modified its recommendation objectives to incorporate quality signals (third-party human rater assessments) and diversity measures alongside raw engagement metrics, an adjustment that reduced algorithmic amplification of borderline content by approximately 70% according to internal YouTube data cited in academic literature. This episode directly shaped regulatory debate about algorithmic [[Recommendation Systems]] and their accountability under the EU Digital Services Act and UK Online Safety Act.
+  The rise of platform media studies as a scholarly discipline has produced systematic empirical research on algorithmic engagement amplification and its consequences. Studies of YouTube's recommendation system (Ribeiro et al. 2020; Hosseinmardi et al. 2021) demonstrated that watch-time maximisation objectives [private] drive recommendations toward increasingly extreme or emotionally provocative content — not because the algorithm was optimising for extremism, but because extreme content's higher engagement metrics (completion rate, comment rate, share rate) caused the recommendation system to surface it more widely. YouTube subsequently modified its recommendation objectives to incorporate quality signals (third-party human rater assessments) and diversity measures alongside raw engagement metrics, an adjustment that reduced algorithmic amplification of borderline content by approximately 70% according to internal YouTube data cited in academic literature. This episode directly shaped regulatory debate about algorithmic [[Recommendation Systems]] and their accountability under the EU Digital Services Act and UK Online Safety Act.
 
   Interaction design research proposed the Engagement Process Model (O'Brien and Toms, 2008) characterising engagement as a temporal arc: point of engagement (initial attention capture, driven by novelty, relevance, and aesthetic appeal), sustained engagement (maintained through challenge, interactivity, and feedback), disengagement (triggered by boredom, confusion, or interruption), and re-engagement (the return to sustained engagement, enabled by memory of prior value and accessibility of content). Platform analytics now instrument this arc in real time at millisecond granularity: per-second completion curve analysis, hover behaviour on thumbnails, replay patterns, and pause points all contribute to a continuous engagement signal stream that informs both recommendation decisions and content production feedback to creators. The platform's recommendation system effectively acts as an evolutionary selection pressure on content — rewarding the content designs that maintain engagement curves and filtering out those that trigger early disengagement — creating a market dynamic where engagement-optimised formats proliferate.
 
@@ -391,13 +613,13 @@ public: true
 
   **Spatial computing and ambient engagement**: [[Augmented Reality]] overlays delivered via consumer AR devices — Apple Vision Pro successors (Vision Pro 2 expected 2026–2027), Meta Orion glasses, and Android XR-compatible hardware — enable ambient engagement with broadcast content without requiring dedicated screen attention. A user cooking dinner can have a live sports match overlaid on their kitchen counter; an office worker can have a news feed scrolling in peripheral vision while working. This fundamentally changes the attention economics of engagement: ambient viewing involves fractional attention that may produce minimal explicit interaction but significant passive exposure. Engagement measurement frameworks will need to distinguish between focused engagement (high attention, active interaction) and ambient engagement (background consumption, passive presence) as qualitatively different modes requiring different metrics and monetisation models.
 
-  **Decentralised engagement economies**: [[Blockchain]]-native creator platforms — including Nostr-based social networks, Lens Protocol, Farcaster, and NFT-gated community platforms — enable transparent on-chain tracking of engagement contributions. Creator token economies that distribute platform revenue to active community members (not just to creators) represent a potential structural shift: rather than platform-monetised attention (where the platform captures most of the economic value generated by audience engagement), community-owned engagement value could accrue directly to participants. The $250 billion creator economy projected for 2025 is predominantly platform-mediated; a shift to decentralised models would redistribute significant economic value from platform operators toward community participants. Implementation challenges include on-chain identity verification, sybil resistance for engagement rewards, and regulatory clarity on whether engagement tokens constitute securities.
+  **Decentralised engagement economies**: [[Blockchain]]-native creator platforms — including Nostr-based social networks, Lens Protocol, Farcaster, and NFT-gated community platforms — enable transparent on-chain tracking of engagement contributions. Creator token economies that distribute platform revenue to active community members (not just to creators) represent a potential structural shift: rather than platform-monetised attention (where the platform captures most of the economic value generated by audience engagement), community-owned engagement value [private] accrue directly to participants. The $250 billion creator economy projected for 2025 is predominantly platform-mediated; a shift to decentralised models would redistribute significant economic value from platform operators toward community participants. Implementation challenges include on-chain identity verification, sybil resistance for engagement rewards, and regulatory clarity on whether engagement tokens constitute securities.
 
   **Regulatory tightening and algorithmic accountability**: The UK Online Safety Act 2023 is being implemented through 2024–2026 via Ofcom's codes of practice. By 2027, designated very large online platforms (those with over 7 million UK users) will face annual algorithmic transparency reports, mandatory user controls over recommendation personalisation, and age assurance requirements that constrain engagement-addictive feature design for under-18s. The EU Digital Services Act independently imposes similar requirements on platforms with over 45 million EU monthly active users, including mandatory risk assessments of "systemic risks" — including algorithmic amplification of harmful content and engagement addiction. The 2026 AI Act provisions on general purpose AI systems (GPAI) introduce additional oversight requirements for the large language models underlying AI-powered engagement tools. Collectively, these regulatory frameworks will significantly increase the compliance cost of engagement-optimised platform design and may structurally alter the economics of the creator economy by reducing the algorithmic amplification available to engagement-maximi sing content.
 
   **Engagement-wellbeing integration**: Platform design will increasingly incorporate wellbeing metrics alongside engagement metrics — partly from regulatory pressure (Online Safety Act duty-of-care requirements), partly from reputational risk management, and partly from genuine product strategy evolution as platforms recognise that unsustainable engagement mechanics drive churn. Time-well-spent frameworks (pioneered by the Center for Humane Technology), usage awareness prompts (mandatory under UK Online Safety Act for under-18s), engagement diversity scoring (ensuring recommendations expose users to varied content rather than homogeneous filter bubble content), and emotional regulation features (enabling users to indicate they want calmer content when distress is detected) will migrate from optional add-ons to standard platform features. The BBC's mission-driven engagement design — where engagement must serve public value rather than maximise time-on-platform — provides a governance model increasingly relevant for commercial platforms facing regulatory pressure.
 
-  **Multimodal and emotionally responsive engagement**: [[Artificial Intelligence]] advances in affective computing — combining [[Natural Language Processing]] of comment text, computer vision of viewer facial expressions (in consented, opt-in contexts), acoustic analysis of voice tone (in voice-interactive formats), and physiological signal integration (heart rate via wearables) — will enable engagement systems that adapt content pacing, difficulty, and interactivity in real time based on inferred viewer emotional state. A live education platform could detect that a student's attention is flagging (via eye-tracking and response latency data) and automatically insert an interaction prompt or change pacing. A live sports broadcast could detect collective audience frustration (via comment sentiment) and trigger commentator tone adjustments. These emotionally responsive systems represent both an engagement optimisation opportunity and a significant ethical challenge, requiring careful consent frameworks and regulatory oversight to avoid exploitation of emotional states.
+  **Multimodal and emotionally responsive engagement**: [[Artificial Intelligence]] advances in affective computing — combining [[Natural Language Processing]] of comment text, computer vision of viewer facial expressions (in consented, opt-in contexts), acoustic analysis of voice tone (in voice-interactive formats), and physiological signal integration (heart rate via wearables) — will enable engagement systems that adapt content pacing, difficulty, and interactivity in real time based on inferred viewer emotional state. A live education platform [private] detect that a student's attention is flagging (via eye-tracking and response latency data) and automatically insert an interaction prompt or change pacing. A live sports broadcast [private] detect collective audience frustration (via comment sentiment) and trigger commentator tone adjustments. These emotionally responsive systems represent both an engagement optimisation opportunity and a significant ethical challenge, requiring careful consent frameworks and regulatory oversight to avoid exploitation of emotional states.
 
   **Creator AI co-creation**: The integration of [[Artificial Intelligence]] as a direct co-creator in audience engagement content — not merely as a backend optimisation tool — is accelerating. By 2028, it will be routine for live creators to use AI to generate real-time infographics, answer factual questions from viewers using RAG-enhanced LLMs, produce alternative versions of key moments in different languages or for different audience segments, and synthesise audience questions into structured Q&A segments. Channel 4's October 2025 experiment with an AI-generated presenter signals mainstream acceptance of synthetic personas in public-facing engagement formats. The line between "creator" and "AI-assisted creator" is dissolving, with significant implications for authenticity premiums, intellectual property frameworks, and the basis of parasocial relationships — which have historically been grounded in the assumption of human persona behind the screen.
 

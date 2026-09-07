@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Room State Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Room state tracking is the mechanism in real-time collaboration and conferencing systems that maintains an authoritative, synchronised record of a virtual room's membership, media status, and shared state. It tracks who is present, their roles, mute and stream states, and assignments such as breakout-room placement. Reliable state tracking ensures all participants and the server share a consistent view of the session.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:breakout-room", "label": "Breakout Room"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      }
+    ]
   },
   "quality": 0.72
 }

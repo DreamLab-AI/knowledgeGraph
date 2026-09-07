@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Legged Robotics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Legged robotics is the field concerned with robots that locomote using articulated legs rather than wheels or tracks, enabling traversal of rough, discontinuous terrain. Designs span bipeds, quadrupeds, and hexapods and rely on dynamic balance, gait planning, and high-bandwidth force control. The approach trades mechanical and control complexity for superior mobility over obstacles and stairs.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"}, {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      }
+    ]
   },
   "quality": 0.72
 }

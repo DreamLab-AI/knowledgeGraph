@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,12 +18,6 @@ public: true
 }
 ```
 
-## Legal and Regulatory
-
-The legal and regulatory infrastructure surrounding technology encompasses data protection law (GDPR, UK GDPR), AI-specific regulation (EU AI Act), cybersecurity obligations (NIS2 Directive), intellectual property frameworks (copyright, patent, trade secrets), and sector-specific compliance requirements across finance, health, and critical infrastructure.
-
-For AI and blockchain systems, this category covers the governance structures, compliance frameworks, and legal mechanisms that organisations must implement to deploy technology lawfully. Key concerns include cross-jurisdictional data flows, liability allocation for algorithmic decisions, and mandatory impact assessments for high-risk processing activities.
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -44,23 +34,62 @@ For AI and blockchain systems, this category covers the governance structures, c
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-      {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"},
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "Intellectual Property Rights Framework"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property Rights Framework"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"},
-      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
     ]
   },
   "quality": 0.8,
@@ -68,3 +97,5 @@ For AI and blockchain systems, this category covers the governance structures, c
   "maturity": "established"
 }
 ```
+
+

@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Pulse Width Modulation
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:pulse-width-modulation", "@type": "Page", "title": "Pulse Width Modulation", "vc:slug": "pulse-width-modulation", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:pulse-width-modulation",
+  "@type": "Page",
+  "title": "Pulse Width Modulation",
+  "vc:slug": "pulse-width-modulation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

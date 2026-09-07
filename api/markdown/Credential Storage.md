@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Credential Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Credential storage is the secure persistence of authentication secrets and verifiable credentials—such as passwords, keys, tokens, and signed attestations—so they can be protected at rest and retrieved for verification. It employs encryption, hardware-backed enclaves, and access controls to resist theft and tampering. It is a required capability of any digital identity management system.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-identity-management", "label": "Digital Identity Management"}, {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
   },
   "quality": 0.72
 }

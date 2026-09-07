@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Infrastructure___Interop
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:digital-twin-interop-protocol", "label": "Digital Twin Interop Protocol"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-interop-protocol",
+        "label": "Digital Twin Interop Protocol"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"}
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-domain-interoperability", "label": "ETSI_Domain_Interoperability"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-interoperability",
+        "label": "ETSI_Domain_Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "provenance": {
@@ -86,42 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-infrastructure-interop:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3c86b313a41247c94dab15fac013cd678dc9241dcb3f50471b09d98daa0674c3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NGSI-LD]]",
-      "resolved": "urn:visionflow:linked:ngsi-ld",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hardware-/Platform-Agnostic]]",
-      "resolved": "urn:visionflow:owl:class:hardware-platform-agnostic",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ETSI infrastructure interoperability framework enabling disparate systems and domains to exchange data and operate cohesively through cross-domain models, standardised data exchange protocols, and linked data principles (RDF, RDFS, OWL). Infrastructure interoperability addresses systematic integration challenges through [[NGSI-LD]] interfaces supporting cross-domain data integration, intent-based management systems integrating network capabilities with application functions, and spectrum sharing frameworks (evolved Licensed Shared Access, CBRS) enabling technical interoperability for local private networks. Standards including the European Interoperability Framework (EIF) and EU Data Act Article 35 mandate interoperable specifications whilst addressing accessibility through ETSI ES 204 009 specifying total conversation services combining voice, real-time text, and sign language video.

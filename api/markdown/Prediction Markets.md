@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Prediction Markets
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:prediction-markets:0be2e25ccaad",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fccd79dff4d2c345f0c7f577ecf16cabd29458eca46797f1b8ffff247a6896ab"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Order Book]]",
-      "resolved": "urn:visionflow:linked:order-book",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:linked:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Market Maker]]",
-      "resolved": "urn:visionflow:linked:automated-market-maker",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Economics Domain]]",
-      "resolved": "urn:visionflow:linked:economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Prediction markets are exchanges where participants trade contracts whose payoff depends on the outcome of future events, so the market price reflects an aggregated probability estimate.

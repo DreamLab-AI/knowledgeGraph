@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Order Book Exchange
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

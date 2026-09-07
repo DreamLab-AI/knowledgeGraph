@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Private Smart Contract
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:private-smart-contract", "@type": "Page", "title": "Private Smart Contract", "vc:slug": "private-smart-contract", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:private-smart-contract",
+  "@type": "Page",
+  "title": "Private Smart Contract",
+  "vc:slug": "private-smart-contract",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

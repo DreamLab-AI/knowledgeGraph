@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Semiconductor Manufacturing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

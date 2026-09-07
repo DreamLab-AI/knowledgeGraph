@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ISO/IEC 30170
----
-
-# ISO-IEC 30170
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,32 +65,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:iso-iec-30170:c9cc8cafb745",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d9e147b965a7e3dae109970b3f8cdc31f2ce75d00413eedeec51f58f7ff83f15"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ISO/IEC 30170 is the international standard specifying the syntax and semantics of the Ruby programming language. Published in 2012 and derived from the Japanese standard JIS X 3017, it defines Ruby's object model, execution behaviour and core language constructs so that independent implementations can conform to a common specification.

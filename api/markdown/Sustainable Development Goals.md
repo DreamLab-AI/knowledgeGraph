@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sustainable Development Goals
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

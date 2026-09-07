@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CAD Software
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,4 +169,3 @@ public: true
   - The CAD ecosystem divides broadly into mechanical/industrial design tools (SolidWorks, Siemens NX, PTC Creo, Autodesk Fusion 360), architectural and building design tools (Autodesk Revit, ArchiCAD, Vectorworks), electronic design automation (Altium Designer, KiCAD), and emerging generative design platforms. Interoperability is handled by neutral formats: STEP (ISO 10303) for solid geometry, IGES for curve/surface exchange, and IFC (Industry Foundation Classes) for architectural models. Open-source alternatives including FreeCAD and OpenSCAD serve educational and maker communities.
 
   - From 2024–2025, CAD software is undergoing transformation through AI integration, cloud-native architectures, and additive manufacturing support. Generative design — where topology optimisation algorithms explore design spaces constrained by load conditions and manufacturing methods — has moved from research to production in Fusion 360 and Siemens NX. Cloud-based CAD (Onshape, natively web-based) enables real-time collaborative design and eliminates local installation. AI copilot features can auto-generate parametric features from natural language descriptions or infer standard part dimensions from sketches. Simulation-driven design, where FEA and CFD results feed back into parametric model adjustments, is increasingly automated through AI surrogate models.
-

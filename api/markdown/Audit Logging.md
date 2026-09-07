@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Audit Logging
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -165,4 +160,4 @@ public: true
 
   - Audit logging is a cornerstone compliance requirement under regulations such as SOX, PCI-DSS, HIPAA, and the EU AI Act's transparency obligations. In cloud environments, services like AWS CloudTrail, Azure Monitor, and Google Cloud Audit Logs provide managed audit logging at infrastructure scale. Application-level audit logs complement infrastructure logs by capturing business-logic events (record reads, approvals, configuration changes) that have no corresponding infrastructure event.
 
-  - By 2024–2025 audit logging is evolving under several pressures: the volume of microservice and serverless architectures generates enormous log throughput requiring streaming ingestion pipelines; AI Act obligations are driving demand for audit trails of model decisions and training data provenance; and zero-trust architectures mandate continuous verification that produces rich audit event streams. Immutable audit logs stored on blockchain or content-addressed storage are being explored for highest-assurance environments where the logging infrastructure itself could be compromised.
+  - By 2024–2025 audit logging is evolving under several pressures: the volume of microservice and serverless architectures generates enormous log throughput requiring streaming ingestion pipelines; AI Act obligations are driving demand for audit trails of model decisions and training data provenance; and zero-trust architectures mandate continuous verification that produces rich audit event streams. Immutable audit logs stored on blockchain or content-addressed storage are being explored for highest-assurance environments where the logging infrastructure itself [private] be compromised.

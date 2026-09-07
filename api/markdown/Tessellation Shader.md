@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Tessellation Shader
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:tessellation-shader", "@type": "Page", "title": "Tessellation Shader", "vc:slug": "tessellation-shader", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:tessellation-shader",
+  "@type": "Page",
+  "title": "Tessellation Shader",
+  "vc:slug": "tessellation-shader",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

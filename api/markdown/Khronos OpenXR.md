@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Khronos OpenXR
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,57 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:khronos-open-xr:40b8bbd1bab5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6837385f8a4d8e39c2ccfa26b12631d735d9865a46771ed81fa87235f51bcec8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[OpenXR]]",
-      "resolved": "urn:visionflow:linked:open-xr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Reality]]",
-      "resolved": "urn:visionflow:linked:virtual-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:linked:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[WebXR]]",
-      "resolved": "urn:visionflow:linked:web-xr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Khronos Group]]",
-      "resolved": "urn:visionflow:linked:khronos-group",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Domain]]",
-      "resolved": "urn:visionflow:linked:spatial-computing-domain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Khronos OpenXR is an open, royalty-free standard that defines a common application interface for virtual and augmented reality devices, decoupling XR applications from specific runtimes and hardware.

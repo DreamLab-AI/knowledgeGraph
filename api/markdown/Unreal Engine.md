@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Unreal Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,72 +177,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:unreal-engine:75dd5240e4ff",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eded4bf26967be95e460085f0b8f5201477f636a8ba9030889b2bd56d95f2d96"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Nanite]]",
-      "resolved": "urn:visionflow:linked:nanite",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Lumen]]",
-      "resolved": "urn:visionflow:linked:lumen",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GPU Rendering]]",
-      "resolved": "urn:visionflow:linked:gpu-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Production]]",
-      "resolved": "urn:visionflow:linked:virtual-production",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:linked:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Domain]]",
-      "resolved": "urn:visionflow:linked:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision Domain]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Reconstruction]]",
-      "resolved": "urn:visionflow:linked:3-d-reconstruction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Creative Media Domain]]",
-      "resolved": "urn:visionflow:linked:ai-application",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Unreal Engine is a real-time three-dimensional creation tool and game engine developed by Epic Games. It provides rendering, physics, animation, audio and scripting systems used to build games, virtual production environments, architectural visualisations and simulations. The engine is widely adopted for its high-fidelity rendering, its visual scripting system Blueprints, and its use in film and television virtual production with LED volume stages.

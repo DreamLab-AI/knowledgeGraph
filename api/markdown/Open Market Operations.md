@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Market Operations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -117,6 +113,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Open market operations (OMO) are the purchase and sale of government securities and other eligible assets by a central bank in the open market to steer short-term interest rates and the supply of reserves in the banking system. By adding or draining reserves, OMO move the policy rate toward its target and transmit monetary policy to the wider economy. They are the principal day-to-day tool of monetary-policy implementation in most advanced economies.
   - Related concepts: [[Monetary Policy Implementation]] [[Central Bank]] [[Monetary Policy]] [[Liquidity Management]] [[Interest Rate]]

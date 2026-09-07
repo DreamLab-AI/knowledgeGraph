@@ -1,39 +1,118 @@
----
-public: true
----
-
-# Real Time Graphics
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:real-time-graphics", "@type":"Page", "title":"Real Time Graphics", "vc:slug":"real-time-graphics", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:real-time-graphics",
+  "@type": "Page",
+  "title": "Real Time Graphics",
+  "vc:slug": "real-time-graphics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:real-time-graphics",
-  "@type":"Class",
-  "label":"Real Time Graphics",
-  "definition":"Real-time graphics is the field of computer graphics concerned with generating and displaying images fast enough to produce interactive, continuously updating visuals, typically at frame rates of sixty frames per second or higher. It prioritises low and predictable latency over photorealistic fidelity, relying on hardware acceleration and approximate rendering techniques. It is the foundation for games, simulations and immersive spatial computing experiences.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:virtual-reality","label":"Virtual Reality"},{"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"}],
-    "uses":[{"@id":"urn:ngm:class:rendering-pipeline","label":"Rendering Pipeline"},{"@id":"urn:ngm:class:graphics-processing-unit","label":"Graphics Processing Unit"}],
-    "requires":[{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "hasPart":[{"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"}],
-    "implements":[{"@id":"urn:ngm:class:rendering","label":"Rendering"}],
-    "dependsOn":[{"@id":"urn:ngm:class:latency","label":"Latency"}],
-    "supports":[{"@id":"urn:ngm:class:game-engine","label":"Game Engine"},{"@id":"urn:ngm:class:interactive-rendering","label":"Interactive Rendering"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:vulkan","label":"Vulkan"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:ray-tracing","label":"Ray Tracing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:graphics-pipeline","label":"Graphics Pipeline"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-time-graphics",
+  "@type": "Class",
+  "label": "Real Time Graphics",
+  "definition": "Real-time graphics is the field of computer graphics concerned with generating and displaying images fast enough to produce interactive, continuously updating visuals, typically at frame rates of sixty frames per second or higher. It prioritises low and predictable latency over photorealistic fidelity, relying on hardware acceleration and approximate rendering techniques. It is the foundation for games, simulations and immersive spatial computing experiences.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-rendering",
+        "label": "Interactive Rendering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

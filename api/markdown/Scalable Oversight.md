@@ -1,35 +1,106 @@
----
-public: true
----
-
-# Scalable Oversight
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:scalable-oversight", "@type":"Page", "title":"Scalable Oversight", "vc:slug":"scalable-oversight", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:scalable-oversight",
+  "@type": "Page",
+  "title": "Scalable Oversight",
+  "vc:slug": "scalable-oversight",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:scalable-oversight",
-  "@type":"Class",
-  "label":"Scalable Oversight",
-  "definition":"Scalable oversight is the AI-safety research problem of reliably supervising, evaluating, and steering AI systems whose capabilities approach or exceed human ability on the tasks being judged. It seeks mechanisms that let limited human supervisors provide accurate training signal and verification even when they cannot directly check a model's outputs. Approaches decompose hard judgements, amplify human judgement with AI assistance, and use adversarial or recursive structures to surface errors.",
-  "domain":"artificial-intelligence",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:ai-alignment","label":"AI Alignment"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:ai-alignment","label":"AI Alignment"}],
-    "hasPart":[{"@id":"urn:ngm:class:task-decomposition","label":"Task Decomposition"},{"@id":"urn:ngm:class:human-in-the-loop","label":"Human-in-the-Loop"}],
-    "uses":[{"@id":"urn:ngm:class:human-feedback","label":"Human Feedback"},{"@id":"urn:ngm:class:reinforcement-learning-from-human-feedback","label":"RLHF"},{"@id":"urn:ngm:class:red-teaming","label":"Red Teaming"}],
-    "requires":[{"@id":"urn:ngm:class:interpretability","label":"Interpretability"}],
-    "enables":[{"@id":"urn:ngm:class:value-alignment","label":"Value Alignment"},{"@id":"urn:ngm:class:quality-assurance","label":"Quality Assurance"}],
-    "supports":[{"@id":"urn:ngm:class:ai-safety","label":"AI Safety"}],
-    "relatedTo":[{"@id":"urn:ngm:class:superintelligence","label":"Superintelligence"},{"@id":"urn:ngm:class:agentic-ai","label":"Agentic AI"},{"@id":"urn:ngm:class:ai-governance","label":"AI Governance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:scalable-oversight",
+  "@type": "Class",
+  "label": "Scalable Oversight",
+  "definition": "Scalable oversight is the AI-safety research problem of reliably supervising, evaluating, and steering AI systems whose capabilities approach or exceed human ability on the tasks being judged. It seeks mechanisms that let limited human supervisors provide accurate training signal and verification even when they cannot directly check a model's outputs. Approaches decompose hard judgements, amplify human judgement with AI assistance, and use adversarial or recursive structures to surface errors.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-alignment",
+      "label": "AI Alignment"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:superintelligence",
+        "label": "Superintelligence"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

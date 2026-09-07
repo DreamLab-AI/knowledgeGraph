@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Destination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:virtual-world-platform", "label": "Virtual World Platform"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:virtual-world-platform",
+        "label": "Virtual World Platform"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-tourism", "label": "Virtual Tourism"},
-      {"@id": "urn:ngm:class:virtual-field-trip", "label": "Virtual Field Trip"}
+      {
+        "@id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-field-trip",
+        "label": "Virtual Field Trip"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-tour", "label": "Virtual Tour"}
+      {
+        "@id": "urn:ngm:class:virtual-tour",
+        "label": "Virtual Tour"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-destination:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:55214cb6b9b758cc0ddc2b54259dac898cd206f41d7e7d71be9156e3b383297f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Environment]]",
-      "resolved": "urn:visionflow:owl:class:virtual-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.

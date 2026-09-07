@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Legged Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,20 +51,44 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "quality": 0.5,
@@ -80,32 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:legged-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:53c80e719520ac49967f815052fb42608c38a165f46f983e8f39193dfcc5648f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Legged Robot is a mobile robotic system that achieves locomotion via articulated limbs rather than wheels or tracks, drawing on bio-inspired design and gait control algorithms to navigate complex, unstructured terrain. Contemporary platforms combine reinforcement learning, sensor fusion, and compliant actuators to achieve robust autonomous operation across search-and-rescue, logistics, and infrastructure inspection scenarios.

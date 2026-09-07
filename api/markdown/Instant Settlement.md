@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Instant Settlement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Instant settlement is the near-immediate, final transfer of value between parties, eliminating the multi-day clearing and settlement delays of traditional banking and card networks. In blockchain and payment-channel systems it is achieved through cryptographic finality or off-chain channel updates that make funds usable within seconds. It reduces counterparty and credit risk, frees up working capital, and is a defining property of digital money.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network", "label": "Bitcoin Lightning Network"},
-      {"@id": "urn:ngm:class:digital-money", "label": "Digital Money"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network",
+        "label": "Bitcoin Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-money",
+        "label": "Digital Money"
+      }
     ]
   },
   "quality": 0.72

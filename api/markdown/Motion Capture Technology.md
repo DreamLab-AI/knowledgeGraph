@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Motion Capture Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -94,32 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:motion-capture-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eed358cbd85f52ef4dfd48361ae5134eda32d8c6b9770713dfa2727b459fdfea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Motion Capture Technology refers to systems that record the position and orientation of physical bodies—human performers, objects, or camera rigs—in three-dimensional space, producing skeletal or marker-based data streams used to animate digital avatars, create realistic character performances, and drive real-time spatial computing applications.

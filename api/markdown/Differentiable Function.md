@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Differentiable Function
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

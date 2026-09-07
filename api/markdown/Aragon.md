@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Aragon
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,57 +175,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aragon:626e57b7df39",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e7c04479cde0e5a245fc94928ec043e437a2e784ad18759a5bad8a55890f58fb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralised Autonomous Organisation]]",
-      "resolved": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:linked:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO]]",
-      "resolved": "urn:visionflow:linked:dao",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO Tooling]]",
-      "resolved": "urn:visionflow:linked:dao-tooling",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A framework and set of smart contracts for creating and operating decentralised autonomous organisations on Ethereum, providing modular governance, treasury and permission components.

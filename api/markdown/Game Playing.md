@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Game Playing
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:game-playing", "@type": "Page", "title": "Game Playing", "vc:slug": "game-playing", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:game-playing",
+  "@type": "Page",
+  "title": "Game Playing",
+  "vc:slug": "game-playing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

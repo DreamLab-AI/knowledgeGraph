@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[relighting]]
-# Computational Image Relighting Technique
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,18 +63,42 @@ elevatedFrom:: [[relighting]]
   "quality": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-video", "label": "AI Video"},
-      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
-      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"}
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"}
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+        "label": "ComfyUI Workflows"
+      }
     ]
   },
   "provenance": {
@@ -90,52 +108,6 @@ elevatedFrom:: [[relighting]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:relighting:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5163e231edf5d5258c8dd8052504ef6191e022a0d17f397db601e936ac83e9fb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Global lighting | Image Based Lighting]]",
-      "resolved": "urn:visionflow:linked:global-lighting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Video]]",
-      "resolved": "urn:visionflow:owl:class:ai-video",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Apple Inc Technology Corporation]]",
-      "resolved": "urn:visionflow:owl:class:apple",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
-      "resolved": "urn:visionflow:owl:class:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computational Image Relighting Technique]]",
-      "resolved": "urn:visionflow:owl:class:relighting",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Relighting is a computer graphics and generative AI technique that computationally repositions or replaces light sources in an existing image or video without re-capturing the scene. Neural methods, including diffusion-based pipelines like IC-Light, learn to decompose a scene into intrinsic components (albedo, normals, shading) and then synthesise a relit version conditioned on a new lighting environment. Open-source implementations in ComfyUI now match or exceed commercial tools such as Magnific Relight, enabling portrait, object, and full-scene relighting for film, XR, and generative media workflows.

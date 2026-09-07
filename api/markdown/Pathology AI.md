@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pathology AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,47 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pathology-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e3a2b90b61d19ae2459ec105c31fae4dc28e7baac2f011077629306da3f8092e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical Imaging AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-imaging-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Radiology AI]]",
-      "resolved": "urn:visionflow:owl:class:radiology-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images. These systems perform tasks including cancer detection, grading, biomarker quantification, and morphological analysis using whole slide imaging and deep learning architectures tailored for gigapixel pathology images.

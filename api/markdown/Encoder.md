@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Encoder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -214,37 +209,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:encoder:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f8ef6ff99e202f1935cdfe1d54375499d8f0efb8ac848b3a0eb073b7cc5c6c34"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[artificial intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The component in an encoder-decoder architecture that processes the input sequence and produces contextualised representations, using self-attention and feed-forward layers.
 
@@ -276,7 +240,7 @@ public: true
   - The 3D room models are represented as occupancy grids, indicating whether a space is occupied or empty.
   - The system's performance is judged on its ability to generate realistic and textually accurate 3D rooms.
   - The project explores the potential of [[artificial intelligence]] to interpret and visualise text in three dimensions.
-  - Future work could involve improving the resolution and detail of generated rooms, incorporating colour, and adding more interactive elements.
+  - Future work [private] involve improving the resolution and detail of generated rooms, incorporating colour, and adding more interactive elements.
 
   - ### **Text2Room**
 		- [Text2Room](https://lukashoel.github.io/text-to-room/) - //lukashoel.github.io/text-to-room/, and formatting as requested:
@@ -290,7 +254,7 @@ public: true
   - The 3D room models are represented as occupancy grids, indicating whether a space is occupied or empty.
   - The system's performance is judged on its ability to generate realistic and textually accurate 3D rooms.
   - The project explores the potential of [[artificial intelligence]] to interpret and visualise text in three dimensions.
-  - Future work could involve improving the resolution and detail of generated rooms, incorporating colour, and adding more interactive elements.
+  - Future work [private] involve improving the resolution and detail of generated rooms, incorporating colour, and adding more interactive elements.
 
   ## Characteristics
 

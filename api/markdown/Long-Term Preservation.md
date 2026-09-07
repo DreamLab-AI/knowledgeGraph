@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Long-Term Preservation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,56 @@ public: true
   "definition": "Long-term preservation is the set of policies, strategies, and technical practices that ensure digital assets, records, and information objects remain accessible, authentic, and usable across decades or centuries. It encompasses format migration, bit-level integrity monitoring, metadata stewardship, and provenance documentation to guard against technological obsolescence, media decay, and institutional discontinuity. The field draws on archival science, information management, and computer science to maintain the evidential and informational value of materials well beyond the lifespan of their originating systems. Standards such as OAIS (ISO 14721) provide reference models that underpin most compliant preservation programmes.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-preservation", "label": "Digital Preservation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-preservation",
+      "label": "Digital Preservation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:archival-standards", "label": "Archival Standards"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"}
+      {
+        "@id": "urn:ngm:class:archival-standards",
+        "label": "Archival Standards"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
-      {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"}
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
-      {"@id": "urn:ngm:class:digital-archive", "label": "Digital Archive"}
+      {
+        "@id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "@id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:long-term-archival", "label": "Long Term Archival"},
-      {"@id": "urn:ngm:class:cultural-heritage-preservation", "label": "Cultural Heritage Preservation"}
+      {
+        "@id": "urn:ngm:class:long-term-archival",
+        "label": "Long Term Archival"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      }
     ]
   },
   "quality": 0.8

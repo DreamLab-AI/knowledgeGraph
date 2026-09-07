@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Copper.co
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:copper-co:fd2a8b5e13ee",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6b4ed806e24e823d582ab00a987544467f262c70884034dc5c9767a2deac1f74"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Services]]",
-      "resolved": "urn:visionflow:linked:financial-services",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Custody]]",
-      "resolved": "urn:visionflow:linked:custody",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Copper.co is a digital asset custody and infrastructure company serving institutional clients. It provides secure storage, settlement and prime services for cryptocurrencies.

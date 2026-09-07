@@ -1,62 +1,126 @@
----
-public: true
----
-
-# Web Application Firewall
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:web-application-firewall", "@type":"Page", "title":"Web Application Firewall", "vc:slug":"web-application-firewall", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:web-application-firewall",
+  "@type": "Page",
+  "title": "Web Application Firewall",
+  "vc:slug": "web-application-firewall",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:web-application-firewall",
-  "@type":"Class",
-  "label":"Web Application Firewall",
-  "definition":"A web application firewall is a security control that inspects and filters HTTP and HTTPS traffic between clients and a web application to detect and block application-layer attacks. Operating at layer seven, it applies signature, rule and behavioural policies to mitigate threats such as injection, cross-site scripting and automated abuse that traditional network firewalls cannot see. It is commonly deployed as a reverse proxy, an inline appliance or a cloud service in front of the protected application.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:network-security","label":"Network Security"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:access-control","label":"Access Control"},
-      {"@id":"urn:ngm:class:reverse-proxy","label":"Reverse Proxy"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:web-application-firewall",
+  "@type": "Class",
+  "label": "Web Application Firewall",
+  "definition": "A web application firewall is a security control that inspects and filters HTTP and HTTPS traffic between clients and a web application to detect and block application-layer attacks. Operating at layer seven, it applies signature, rule and behavioural policies to mitigate threats such as injection, cross-site scripting and automated abuse that traditional network firewalls cannot see. It is commonly deployed as a reverse proxy, an inline appliance or a cloud service in front of the protected application.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:network-security","label":"Network Security"},
-      {"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:http","label":"HTTP"},
-      {"@id":"urn:ngm:class:access-control","label":"Access Control"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:reverse-proxy","label":"Reverse Proxy"},
-      {"@id":"urn:ngm:class:http","label":"HTTP"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      },
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"},
-      {"@id":"urn:ngm:class:intrusion-detection-system","label":"Intrusion Detection System"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:network-security","label":"Network Security"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:firewall","label":"Firewall"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:api-gateway","label":"API Gateway"},
-      {"@id":"urn:ngm:class:content-delivery-network","label":"Content Delivery Network"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:firewall","label":"Firewall"},
-      {"@id":"urn:ngm:class:load-balancer","label":"Load Balancer"},
-      {"@id":"urn:ngm:class:intrusion-detection-system","label":"Intrusion Detection System"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

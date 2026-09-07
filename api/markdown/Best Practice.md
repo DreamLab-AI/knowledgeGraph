@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Best Practice
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Best Practice",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:knowledge-management", "vc:label": "Knowledge Management"},
-    {"@id": "urn:visionflow:linked:technical-standard", "vc:label": "Technical Standard"},
-    {"@id": "urn:visionflow:linked:reference-architecture", "vc:label": "Reference Architecture"},
-    {"@id": "urn:visionflow:linked:governance-framework", "vc:label": "Governance Framework"},
-    {"@id": "urn:visionflow:linked:interoperability", "vc:label": "Interoperability"}
+    {
+      "@id": "urn:visionflow:linked:knowledge-management",
+      "vc:label": "Knowledge Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:technical-standard",
+      "vc:label": "Technical Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:reference-architecture",
+      "vc:label": "Reference Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:governance-framework",
+      "vc:label": "Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability",
+      "vc:label": "Interoperability"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -39,14 +54,26 @@ public: true
   },
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}
+      {
+        "@id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reference-architecture", "label": "Reference Architecture"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {
+        "@id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
     ]
   },
   "quality": 0.8,

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Acid Transactions
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

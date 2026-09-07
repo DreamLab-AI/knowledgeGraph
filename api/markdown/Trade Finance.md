@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Trade Finance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,36 +20,98 @@ public: true
   "definition": "Trade finance encompasses the financial instruments, products, and mechanisms that facilitate domestic and international commercial transactions by managing the payment, credit, and risk gap between exporter shipment and importer receipt. Core instruments include letters of credit, bank guarantees, documentary collections, supply chain financing, factoring, and forfaiting, all structured to give exporters payment certainty and importers time to generate revenue from goods before settling. Trade finance is a foundational segment of global banking, representing approximately $9 trillion in annual transaction volume, and is undergoing significant digitisation through blockchain-based platforms, electronic bills of lading, and smart contract automation.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
-      {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:financial-instruments", "label": "Financial Instruments"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-application",
+        "label": "Blockchain Application"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:importer", "label": "Importer"},
-      {"@id": "urn:ngm:class:customs-trade-facilitation", "label": "Customs Trade Facilitation"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:importer",
+        "label": "Importer"
+      },
+      {
+        "@id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"},
-      {"@id": "urn:ngm:class:digital-asset-standards", "label": "Digital Asset Standards"}
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-standards",
+        "label": "Digital Asset Standards"
+      }
     ]
   },
   "quality": 0.8

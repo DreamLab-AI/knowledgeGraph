@@ -1,63 +1,120 @@
----
-public: true
----
-
-# Data Labelling
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-labelling", "@type":"Page", "title":"Data Labelling", "vc:slug":"data-labelling", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-labelling",
+  "@type": "Page",
+  "title": "Data Labelling",
+  "vc:slug": "data-labelling",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:data-labelling",
-  "@type":"Class",
-  "label":"Data Labelling",
-  "definition":"Data labelling is the process of annotating raw data, such as images, text, audio or sensor readings, with the target outputs or categories a supervised model is expected to predict. It produces the ground-truth signal that links inputs to desired outputs and largely determines the achievable accuracy of trained models. Labelling combines human annotators, guidelines, tooling and quality control, increasingly augmented by model-assisted and active-learning workflows.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-annotation","label":"Data Annotation"}],
-  "relations":{
-    "requires":[
-      {"@id":"urn:ngm:class:human-in-the-loop","label":"Human In The Loop"},
-      {"@id":"urn:ngm:class:training-data","label":"Training Data"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-labelling",
+  "@type": "Class",
+  "label": "Data Labelling",
+  "definition": "Data labelling is the process of annotating raw data, such as images, text, audio or sensor readings, with the target outputs or categories a supervised model is expected to predict. It produces the ground-truth signal that links inputs to desired outputs and largely determines the achievable accuracy of trained models. Labelling combines human annotators, guidelines, tooling and quality control, increasingly augmented by model-assisted and active-learning workflows.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-annotation",
+      "label": "Data Annotation"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human In The Loop"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:ground-truth","label":"Ground Truth"},
-      {"@id":"urn:ngm:class:dataset-curation","label":"Dataset Curation"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      },
+      {
+        "@id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:data-quality","label":"Data Quality"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"},
-      {"@id":"urn:ngm:class:model-training","label":"Model Training"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:active-learning","label":"Active Learning"},
-      {"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:human-in-the-loop","label":"Human In The Loop"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human In The Loop"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:training-data","label":"Training Data"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:active-learning","label":"Active Learning"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:dataset-curation","label":"Dataset Curation"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:data-quality","label":"Data Quality"},
-      {"@id":"urn:ngm:class:ground-truth","label":"Ground Truth"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

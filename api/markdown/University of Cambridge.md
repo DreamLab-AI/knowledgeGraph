@@ -1,8 +1,3 @@
----
-public: true
----
-
-# University of Cambridge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,46 +152,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:university-of-cambridge:47a9db1cc719",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d274b3bbddc468d12c0e56992a19186aa4c7b4876e202f3f2b60dd52cde49a67"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Imperial College London]]",
-      "resolved": "urn:visionflow:linked:imperial-college-london",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[University of Edinburgh]]",
-      "resolved": "urn:visionflow:linked:university-of-edinburgh",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[University of Manchester]]",
-      "resolved": "urn:visionflow:linked:university-of-manchester",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

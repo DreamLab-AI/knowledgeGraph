@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Text Summarisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,19 +167,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:bart", "label": "BART"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:bart",
+        "label": "BART"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ]
   },
   "provenance": {
@@ -194,177 +210,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:text-summarisation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9ba6da6403e75df49de2ffeb56a19fa59cae2cfc8630a0bf73c15e1a4854bf7c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[chen2011leet]]",
-      "resolved": "urn:visionflow:linked:chen2011leet",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[cole2013call]]",
-      "resolved": "urn:visionflow:linked:cole2013call",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ComfyWorkFlows]]",
-      "resolved": "urn:visionflow:linked:comfy-work-flows",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[flux]]",
-      "resolved": "urn:visionflow:linked:flux",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[glas2013battlefields]]",
-      "resolved": "urn:visionflow:linked:glas2013battlefields",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[iser1993fictive]]",
-      "resolved": "urn:visionflow:linked:iser1993fictive",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[serapis2008coming]]",
-      "resolved": "urn:visionflow:linked:serapis2008coming",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[taylor2009play]]",
-      "resolved": "urn:visionflow:linked:taylor2009play",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[visionflow]]",
-      "resolved": "urn:visionflow:linked:visionflow",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Video]]",
-      "resolved": "urn:visionflow:owl:class:ai-video",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BART]]",
-      "resolved": "urn:visionflow:owl:class:bart",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
-      "resolved": "urn:visionflow:owl:class:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ControlNet and Similar Spatial Conditioning Systems]]",
-      "resolved": "urn:visionflow:owl:class:control-net-and-similar-spatial-conditioning-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Face Swap]]",
-      "resolved": "urn:visionflow:owl:class:face-swap",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Flux.1]]",
-      "resolved": "urn:visionflow:owl:class:flux-1",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[KOHYA Dreambooth and similar]]",
-      "resolved": "urn:visionflow:owl:class:kohya-dreambooth-and-similar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI-Driven Workforce Displacement Registry]]",
-      "resolved": "urn:visionflow:owl:class:layoff-tracker-and-threatened-roles",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LoRA]]",
-      "resolved": "urn:visionflow:owl:class:lo-ra",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LoRA DoRA etc]]",
-      "resolved": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Optimisation and Performance]]",
-      "resolved": "urn:visionflow:owl:class:model-optimisation-and-performance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Open Webui and Pipelines]]",
-      "resolved": "urn:visionflow:owl:class:open-webui-and-pipelines",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Prompt Engineering]]",
-      "resolved": "urn:visionflow:owl:class:prompt-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Segmentation and Identification]]",
-      "resolved": "urn:visionflow:owl:class:segmentation-and-identification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[style transfer]]",
-      "resolved": "urn:visionflow:owl:class:style-transfer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text Generation]]",
-      "resolved": "urn:visionflow:owl:class:text-generation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Text Summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or document collections. Summarisation systems employ extractive methods (selecting key sentences) or abstractive methods (generating new summary text) using transformer models to enable applications in news aggregation, document analysis, and information retrieval.

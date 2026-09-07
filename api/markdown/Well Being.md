@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Well Being
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,19 +75,40 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:inclusive-growth", "label": "Inclusive Growth"},
-      {"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"},
-      {"@id": "urn:ngm:class:social-impact", "label": "Social Impact"}
+      {
+        "@id": "urn:ngm:class:inclusive-growth",
+        "label": "Inclusive Growth"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "@id": "urn:ngm:class:social-impact",
+        "label": "Social Impact"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:human-centred-values", "label": "Human Centred Values"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:human-centred-values",
+        "label": "Human Centred Values"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-well-being-index", "label": "Digital Well-Being Index"}
+      {
+        "@id": "urn:ngm:class:digital-well-being-index",
+        "label": "Digital Well-Being Index"
+      }
     ]
   },
   "provenance": {
@@ -102,62 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:well-being:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4fbd05c9a4c87d0e79fd5017ef03593804ef9baa0884758859874e752e718530"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cook1977; @Kleinke1986; @Fagel2010]]",
-      "resolved": "urn:visionflow:linked:cook1977-kleinke1986-fagel2010",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Kendon1967]]",
-      "resolved": "urn:visionflow:linked:kendon1967",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Kleinke1986; @Nguyen2009]]",
-      "resolved": "urn:visionflow:linked:kleinke1986-nguyen2009",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Otsuka2005]]",
-      "resolved": "urn:visionflow:linked:otsuka2005",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[torok2017cascading]]",
-      "resolved": "urn:visionflow:linked:torok2017cascading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse and Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI should enhance human and societal well-being by augmenting human capabilities, enriching quality of life, supporting physical and mental health, enabling meaningful work, strengthening social connections, and contributing to flourishing individuals and communities.
@@ -169,7 +129,7 @@ public: true
   - **relatedTo**: Inclusive Growth, Sustainable Development, Social Impact — well-being is a component of the OECD's foundational AI principle alongside inclusive growth and sustainability.
   - **requires**: Human Centred Values, AI Governance — achieving well-being outcomes requires that AI is designed around human priorities and governed to prevent harms.
   - **supports**: Accessibility — systems that improve well-being must be accessible across diverse populations to avoid exacerbating inequalities.
-  - **contrastsWith**: Digital Well-Being Index — the index provides measurable operationalisation of the qualitative concept of digital well-being.
+  - **contrastsWith**: Digital Well-Being Index — the [private] provides measurable operationalisation of the qualitative concept of digital well-being.
 - ### Content
   - AI should enhance human and societal well-being by augmenting human capabilities, enriching quality of life, supporting physical and mental health, enabling meaningful work, strengthening social connections, and contributing to flourishing individuals and communities.
   - ## Funding and Organisational Changes
@@ -204,7 +164,7 @@ public: true
 		- Of particular importance is interpersonal gaze.[[Cook1977; @Kleinke1986; @Fagel2010]] Non-verbal cues are also important across multiple modalities of sight, sound,[[Otsuka2005]] and position of interlocutors,[[Kendon1967]] extending to the whole body.[[Kleinke1986; @Nguyen2009]]
 		- While formal meeting paradigms are pretty well supported by commercially deployed systems, such ICT can be expensive, may need to be professionally managed, and high end equipment in board rooms are generally booked well in advance. These meetings seem to demand many 
 		  smaller supporting meetings between parties or groups of parties. The pressure here is clearly toward the now ubiquitous Teams and Zoom style formats, and these offer very poor support for social cues, and incur additional fatigue. These are known and well researched problems, and it is possible that the [strategic pairing of Meta Horizons and Microsoft Teams](https://www.oculus.com/blog/future-of-work-meta-connect-2022-quest-pro-microsoft-accenture/?) will succeed where previous attempted have failed, or that somehow [Microsoft Mesh for Teams will find and audience](https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh). They both seem to finally have the right assets and opportunity in principle. Apple also seem well positioned now, though how many users they can expect to own and work in their heavy spatial computing headset is unclear.
-		- The ‘problem’ is a supporting technology for small less formal groups,or ad-hoc groups meeting to add clarity or context to formal meetings.Metaverse allows this kind of interaction, while not seeming to replaceformal meeting utility. Metaverse also may connect home and work spaceswithout bringing in those backgrouds, creating a level playing field. Amore advanced metaverse interface could also allow dynamism andmovement, connection of natural non vocal cues, without too muchencumbering technology overhead.
+		- The ‘problem’ is a supporting technology for small less formal groups,or ad-hoc groups meeting to add clarity or context to formal meetings.Metaverse allows this kind of interaction, while not seeming to replaceformal meeting utility. Metaverse also may connect home and work spaceswithout bringing in those backgrouds, creating a level playing field. Amore advanced metaverse interface [private] also allow dynamism andmovement, connection of natural non vocal cues, without too muchencumbering technology overhead.
 		- ##### Mozilla Hubs
 			- Hubs is a great option for this proposal, and might be worth integratinglater. It runs well in a browser and on VR hardware.
 				- Open source, bigger scale, more complex
@@ -227,8 +187,8 @@ public: true
   - **Use Cases**: ActivityPub powers decentralized social networks like Mastodon, enabling them to interoperate and share data without a central authority.
 				- ### Beautiful.ai survey of 3,000 managers
 					- 41% hoped to replace employees with AI tools in 2024
-					- 48% said their businesses would benefit financially if they could replace a large number of employees
-					- 40% said multiple employees could be replaced by AI tools and the team would operate well without them
+					- 48% said their businesses would benefit financially if they [private] replace a large number of employees
+					- 40% said multiple employees [private] be replaced by AI tools and the team would operate well without them
 					- 45% viewed AI as an opportunity to lower employee salaries
 					- 12% hoped to use AI to downsize and save money on worker salaries
 					- 50% were worried AI tools would result in lower pay for themselves
@@ -266,7 +226,7 @@ public: true
 		- Of particular importance is interpersonal gaze.[[Cook1977; @Kleinke1986; @Fagel2010]] Non-verbal cues are also important across multiple modalities of sight, sound,[[Otsuka2005]] and position of interlocutors,[[Kendon1967]] extending to the whole body.[[Kleinke1986; @Nguyen2009]]
 		- While formal meeting paradigms are pretty well supported by commercially deployed systems, such ICT can be expensive, may need to be professionally managed, and high end equipment in board rooms are generally booked well in advance. These meetings seem to demand many 
 		  smaller supporting meetings between parties or groups of parties. The pressure here is clearly toward the now ubiquitous Teams and Zoom style formats, and these offer very poor support for social cues, and incur additional fatigue. These are known and well researched problems, and it is possible that the [strategic pairing of Meta Horizons and Microsoft Teams](https://www.oculus.com/blog/future-of-work-meta-connect-2022-quest-pro-microsoft-accenture/?) will succeed where previous attempted have failed, or that somehow [Microsoft Mesh for Teams will find and audience](https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh). They both seem to finally have the right assets and opportunity in principle. Apple also seem well positioned now, though how many users they can expect to own and work in their heavy spatial computing headset is unclear.
-		- The ‘problem’ is a supporting technology for small less formal groups,or ad-hoc groups meeting to add clarity or context to formal meetings.Metaverse allows this kind of interaction, while not seeming to replaceformal meeting utility. Metaverse also may connect home and work spaceswithout bringing in those backgrouds, creating a level playing field. Amore advanced metaverse interface could also allow dynamism andmovement, connection of natural non vocal cues, without too muchencumbering technology overhead.
+		- The ‘problem’ is a supporting technology for small less formal groups,or ad-hoc groups meeting to add clarity or context to formal meetings.Metaverse allows this kind of interaction, while not seeming to replaceformal meeting utility. Metaverse also may connect home and work spaceswithout bringing in those backgrouds, creating a level playing field. Amore advanced metaverse interface [private] also allow dynamism andmovement, connection of natural non vocal cues, without too muchencumbering technology overhead.
 		- ##### Mozilla Hubs
 			- Hubs is a great option for this proposal, and might be worth integratinglater. It runs well in a browser and on VR hardware.
 				- Open source, bigger scale, more complex
@@ -289,8 +249,8 @@ public: true
   - **Use Cases**: ActivityPub powers decentralized social networks like Mastodon, enabling them to interoperate and share data without a central authority.
 				- ### Beautiful.ai survey of 3,000 managers
 					- 41% hoped to replace employees with AI tools in 2024
-					- 48% said their businesses would benefit financially if they could replace a large number of employees
-					- 40% said multiple employees could be replaced by AI tools and the team would operate well without them
+					- 48% said their businesses would benefit financially if they [private] replace a large number of employees
+					- 40% said multiple employees [private] be replaced by AI tools and the team would operate well without them
 					- 45% viewed AI as an opportunity to lower employee salaries
 					- 12% hoped to use AI to downsize and save money on worker salaries
 					- 50% were worried AI tools would result in lower pay for themselves
@@ -316,7 +276,7 @@ public: true
   - Crypto firms must be licensed by the EU and comply with money laundering and terrorism finance safeguards to serve EU customers
   - Concerns about weakened privacy due to reporting standards in the name of customer safety and national security
   - Binance CEO supports MiCA, calling it a pragmatic solution
-  - EU’s MiCA could become a global template for international companies
+  - EU’s MiCA [private] become a global template for international companies
   - UK, now outside the EU, is setting similar stablecoin and crypto asset service rules
   - Germany is bringing forward legislation allowing the ‘tokenisation’ oflegacy instruments such as stocks, though it’s far from clear what thevalue of this would be, except perhaps lowering risk for custodians. Itseems that this EU position has prompted the UK government to seize thepotential competitive advantage offered, and there will be more on thislater. Japan meanwhile has gone so far as to [make anannouncement](https://cointelegraph.com/news/japanese-prime-minister-says-gov-t-investment-in-digital-transformation-will-include-metaverse-nfts)about supporting the technologies at a national level.
   - It’s a complex evolving narrative, and clearly contradictions arecommon. Right now there seems little appeal for stepping into Web3. Intothe confusion, this book advances a narrow take, and toolset, whichmight extract some value from the technologies, while maintaining a lowbarrier to entry.

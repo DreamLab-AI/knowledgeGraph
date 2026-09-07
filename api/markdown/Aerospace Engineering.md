@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Aerospace Engineering
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,38 +20,92 @@ public: true
   "definition": "Aerospace Engineering is the branch of engineering concerned with the design, development, testing, and operation of aircraft, spacecraft, satellites, and related systems. It encompasses aerodynamics, propulsion, structural mechanics, avionics, guidance systems, and materials science. As an application domain it drives requirements for high-integrity embedded systems, real-time control, fault tolerance, and increasingly autonomous operation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}, {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous Systems"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:satellite-communication", "label": "Satellite Communication"},
-      {"@id": "urn:ngm:class:remote-sensing", "label": "Remote Sensing"}
+      {
+        "@id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      },
+      {
+        "@id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:standards", "label": "Standards"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:avionics", "label": "Avionics"}
+      {
+        "@id": "urn:ngm:class:avionics",
+        "label": "Avionics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "quality": 0.62,

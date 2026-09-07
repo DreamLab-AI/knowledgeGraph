@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Renderer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A renderer is the software or hardware component that converts a scene description, such as geometry, materials, lights, or a markup specification, into a final image or visual output. Renderers range from real-time rasterisers and ray tracers to text-and-diagram engines that draw from declarative source. The choice of renderer determines visual fidelity, performance, and the formats a system can produce.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
-      {"@id": "urn:ngm:class:diagrams-as-code", "label": "Diagrams as Code"}
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:diagrams-as-code",
+        "label": "Diagrams as Code"
+      }
     ]
   },
   "quality": 0.72

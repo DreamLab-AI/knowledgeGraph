@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI-Driven Software Development
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-driven-software-development",
   "title": "AI-Driven Software Development",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Claude Code", "Collaborative AI Workflows"],
+  "vc:outboundWikilinks": [
+    "Claude Code",
+    "Collaborative AI Workflows"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

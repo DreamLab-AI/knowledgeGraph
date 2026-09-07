@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Human in the Loop
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -67,10 +62,6 @@ public: true
     {
       "@id": "urn:visionflow:owl:class:risk-management",
       "vc:label": "Risk Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "vc:label": "Social contract and jobs"
     }
   ],
   "vc:schemaVersion": 2,
@@ -233,102 +224,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:human-in-the-loop:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6b3f09998bec25381920cf658d6b30024af2c84ef6ef1e8d8265f9393ee3e0ea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Automation Bias]]",
-      "resolved": "urn:visionflow:linked:automation-bias",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decision Support]]",
-      "resolved": "urn:visionflow:linked:decision-support",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[error correction]]",
-      "resolved": "urn:visionflow:linked:error-correction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ethical alignment]]",
-      "resolved": "urn:visionflow:linked:ethical-alignment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human-on-the-Loop]]",
-      "resolved": "urn:visionflow:linked:human-on-the-loop",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:owl:class:accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Operator]]",
-      "resolved": "urn:visionflow:owl:class:ai-operator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convergence]]",
-      "resolved": "urn:visionflow:owl:class:convergence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Disruption Dynamics]]",
-      "resolved": "urn:visionflow:owl:class:disruption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainability]]",
-      "resolved": "urn:visionflow:owl:class:explainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Oversight]]",
-      "resolved": "urn:visionflow:owl:class:human-oversight",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Employment Social Contract Under Automation]]",
-      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A design pattern and operational approach for artificial intelligence systems in which human judgment, decision-making, or validation is integrated as an essential component of the AI system's decision cycle, requiring active human participation at critical points before AI-generated outputs are finalised or actions are executed, thereby ensuring meaningful human control, accountability, and the application of human values and contextual understanding to consequential AI-assisted decisions.
 - ### In Plain Terms
@@ -344,7 +239,7 @@ public: true
   ## Context and Significance
   Human-in-the-loop (HITL) represents the most direct form of human oversight, placing humans as active participants rather than passive monitors in AI-driven processes. This approach is particularly critical for high-stakes decisions where errors carry significant consequences, where ethical considerations require human judgment, where legal accountability demands human decision-makers, or where contextual factors exceed AI system capabilities.
   HITL systems embody the principle that certain decisions should never be fully automated, regardless of AI technical capabilities. The EU AI Act explicitly requires HITL for many high-risk AI applications, reflecting the policy judgment that meaningful human control is both an ethical imperative and a practical safeguard. ISO/IEC 42001 recognises HITL as a key mechanism for maintaining accountability and ensuring appropriate human agency in AI-assisted decision-making.
-  The effectiveness of HITL depends critically on system design—humans must receive adequate information, possess sufficient time and competence to make informed judgments, maintain practical authority to reject AI recommendations, and avoid automation bias that could render their participation perfunctory.
+  The effectiveness of HITL depends critically on system design—humans must receive adequate information, possess sufficient time and competence to make informed judgments, maintain practical authority to reject AI recommendations, and avoid automation bias that [private] render their participation perfunctory.
   #### Key Characteristics
   - **Active participation**: Human actively engaged in each decision instance
 		  - **Decision authority**: Human retains final decision-making power

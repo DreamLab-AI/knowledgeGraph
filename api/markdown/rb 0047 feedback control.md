@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0047 feedback control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -103,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0047-feedback-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e150b3bd2e8b0cf69098ad169e8d6503040807e1f3f9f3328d421f53f4745342"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A closed-loop control strategy in which sensor measurements of a system's output are continuously compared to a reference setpoint, and the resulting error signal drives corrective actuator commands. Feedback control is the foundational mechanism for stable, accurate robotic motion, enabling autonomous robots and telerobotic systems to compensate for disturbances, model uncertainty, and environmental variation.

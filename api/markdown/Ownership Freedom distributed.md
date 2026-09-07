@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ownership Freedom distributed
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,44 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:nft-ownership-proof", "label": "NFT Ownership Proof"}
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:nft-ownership-proof",
+        "label": "NFT Ownership Proof"
+      }
     ]
   },
-  "maturity": "emerging",
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -82,32 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ownership-freedom-distributed:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7b24b33784750021c3fab2d659a16b3a2b4e56f55821633fe68483b5c73f4513"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A socio-technical paradigm establishing user sovereignty through decentralized control mechanisms, cryptographic ownership proofs, and distributed governance models. Distributed ownership and freedom principles ensure individuals retain control over digital assets, personal data, and participation rights without reliance on centralized authorities or intermediaries.

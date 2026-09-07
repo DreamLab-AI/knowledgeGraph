@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mixup
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:robustness", "label": "Robustness"},
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"}
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:label-smoothing", "label": "Label Smoothing"}
+      {
+        "@id": "urn:ngm:class:label-smoothing",
+        "label": "Label Smoothing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mixup:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4399fff3265f47adad98f39762a8cf2cfade1eb75f4b1cc2ab2f1c79f0b81865"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A data augmentation technique that creates virtual training examples by linearly interpolating pairs of examples and their labels. Mixup improves generalisation, calibration, and robustness by training on convex combinations of training samples.

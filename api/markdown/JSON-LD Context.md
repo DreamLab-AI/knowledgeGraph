@@ -1,8 +1,3 @@
----
-public: true
----
-
-# JSON-LD Context
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,25 +20,60 @@ public: true
   "definition": "A JSON-LD Context is the machine-readable document or inline object that maps the shorthand terms and prefixes used in a JSON-LD document to their fully qualified IRIs in a target vocabulary or ontology. It serves as the bridge between the compact, human-readable JSON representation and the globally unambiguous RDF data model, enabling semantic interoperability across disparate systems. Contexts may be embedded inline within a document, referenced by URL, or composed from multiple context documents. The JSON-LD 1.1 specification extends context capabilities with scoped contexts, type-scoped and property-scoped contexts, and protected terms that resist accidental overriding. Correct context design is foundational to knowledge graph compilation and Linked Data publication.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:json-data-interchange-format-ld",
+      "label": "JSON-LD"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld-1-1", "label": "JSON-LD 1.1"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
+        "label": "JSON-LD 1.1"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:schema-registry", "label": "Schema Registry"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
     ]
   },
   "quality": 0.8

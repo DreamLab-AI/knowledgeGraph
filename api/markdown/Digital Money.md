@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Money
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -125,72 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-money:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4baed414191e63dfe34f4939895abd824a6461682942fa5dc18b9b0ca08e8766"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Electronic Payments]]",
-      "resolved": "urn:visionflow:linked:electronic-payments",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Instant Settlement]]",
-      "resolved": "urn:visionflow:linked:instant-settlement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Payment Network]]",
-      "resolved": "urn:visionflow:linked:payment-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Programmable Money]]",
-      "resolved": "urn:visionflow:linked:programmable-money",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Security Infrastructure]]",
-      "resolved": "urn:visionflow:linked:security-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Wallet]]",
-      "resolved": "urn:visionflow:owl:class:digital-wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Instruments]]",
-      "resolved": "urn:visionflow:owl:class:financial-instruments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Any form of monetary value existing purely in electronic format, encompassing e-money, central bank digital currencies, cryptocurrencies, and stablecoins, that can be stored, transferred, and transacted electronically across payment networks, metaverse economies, and blockchain systems.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transaction Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,18 +52,42 @@ public: true
       }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"}
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"}
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      }
     ]
   },
   "provenance": {
@@ -78,26 +97,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transaction-processing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b77485ecffdf14dff31efaa65b591bac908d65d14e499fc106817a02323e8690"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Transaction Processing encompasses the end-to-end lifecycle of blockchain transactions — from cryptographic signing and mempool propagation through validation, deterministic state execution, and finality confirmation. It includes parallelisation strategies, layer-2 scaling (state channels, rollups), and cross-chain atomic operations, with MEV mitigation and encrypted mempools addressing ordering fairness.

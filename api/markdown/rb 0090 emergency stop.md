@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0090 emergency stop
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop", "label": "rb 0091 safety rated monitored stop"},
-      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
-      {"@id": "urn:ngm:class:rb-0095-safety-zone", "label": "rb 0095 safety zone"},
-      {"@id": "urn:ngm:class:rb-0096-safeguarding", "label": "rb 0096 safeguarding"}
+      {
+        "@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0096-safeguarding",
+        "label": "rb 0096 safeguarding"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"}
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"}
+      {
+        "@id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0090-emergency-stop:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5b8a03436224ff61745021029e8954e850e618732d3f0b8d17aa4d0a3fa50368"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Emergency Stop (E-stop) is a mandatory safety function that immediately removes power or arrests robot motion upon activation, preventing injury to personnel or damage to equipment. Specified in ISO 10218-1/-2 and IEC 60204-1, it is a hardwired, independently monitored circuit classified as Stop Category 0 (immediate power removal) or Category 1 (controlled deceleration then power removal). The actuator must be clearly identifiable, readily accessible, and self-latching so the system cannot resume operation without a deliberate reset action.

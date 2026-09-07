@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - LoRA
-  - LoRa
----
-
-# Lo RA
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,18 +54,36 @@ aliases:
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
     ]
   },
   "quality": 0.5,
@@ -84,32 +94,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lo-ra:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:67005892b28abb2da57e9653bf807996504d429f1ac3a201287ebe0efe23a529"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A parameter-efficient fine-tuning method that freezes pre-trained weights and injects trainable low-rank decomposition matrices into each layer of the transformer, dramatically reducing trainable parameters whilst maintaining performance. LoRA represents weight updates as the product of two low-rank matrices.
@@ -265,7 +249,7 @@ aliases:
 
 		  ## Significance
 
-		  LoRA revolutionised efficient fine-tuning by demonstrating that low-rank adaptations could match full fine-tuning performance whilst requiring minimal resources, democratising access to large model customisation.
+		  LoRA revolutionised efficient fine-tuning by demonstrating that low-rank adaptations [private] match full fine-tuning performance whilst requiring minimal resources, democratising access to large model customisation.
 
 		  ## OWL Functional Syntax
 

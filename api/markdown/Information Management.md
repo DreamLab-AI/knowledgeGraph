@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Information Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Information Management",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:data-management", "vc:label": "Data Management"},
-    {"@id": "urn:visionflow:linked:knowledge-management", "vc:label": "Knowledge Management"},
-    {"@id": "urn:visionflow:linked:records-management", "vc:label": "Records Management"},
-    {"@id": "urn:visionflow:linked:information-governance", "vc:label": "Information Governance"}
+    {
+      "@id": "urn:visionflow:linked:data-management",
+      "vc:label": "Data Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-management",
+      "vc:label": "Knowledge Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:records-management",
+      "vc:label": "Records Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-governance",
+      "vc:label": "Information Governance"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,16 +50,34 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:records-management", "label": "Records Management"},
-      {"@id": "urn:ngm:class:content-curation", "label": "Content Curation"}
+      {
+        "@id": "urn:ngm:class:records-management",
+        "label": "Records Management"
+      },
+      {
+        "@id": "urn:ngm:class:content-curation",
+        "label": "Content Curation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:metadata", "label": "Metadata"},
-      {"@id": "urn:ngm:class:information-architecture", "label": "Information Architecture"}
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:information-governance", "label": "Information Governance"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:information-governance",
+        "label": "Information Governance"
+      }
     ]
   },
   "quality": 0.8,

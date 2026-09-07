@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - CollaborativeSimulation
----
-
-# Collaborative Simulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,19 +20,42 @@ aliases:
   "definition": "A computational environment in which multiple participants — human or agent — share, manipulate, and observe a common simulation state in real time. It combines networked synchronisation with physics or behavioural modelling to support joint exploration, training, or design activities across distributed locations.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:collaborative-systems-modality-technology", "label": "Collaborative Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:collaborative-systems-modality-technology",
+      "label": "Collaborative Technology"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin-collaboration", "label": "Digital Twin Collaboration"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-design", "label": "Collaborative Design"}
+      {
+        "@id": "urn:ngm:class:digital-twin-collaboration",
+        "label": "Digital Twin Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-design",
+        "label": "Collaborative Design"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
     ]
   },
   "quality": 0.8

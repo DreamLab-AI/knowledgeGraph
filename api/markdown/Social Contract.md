@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Social Contract
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -89,52 +84,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:social-contract:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7838501f5cd34701a814d470651761ba3e48cabd08e2306e3725aa8290d0fe99"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Civil Society]]",
-      "resolved": "urn:visionflow:linked:civil-society",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Constitutional Law]]",
-      "resolved": "urn:visionflow:linked:constitutional-law",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Political Philosophy]]",
-      "resolved": "urn:visionflow:linked:political-philosophy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Democratic Governance]]",
-      "resolved": "urn:visionflow:owl:class:democratic-governance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A philosophical and political theory positing that individuals consent, either explicitly or tacitly, to surrender certain freedoms and submit to authority in exchange for protection of their remaining rights and maintenance of social order. The concept establishes that legitimate political authority derives from agreement among rational individuals rather than divine right or natural hierarchy.

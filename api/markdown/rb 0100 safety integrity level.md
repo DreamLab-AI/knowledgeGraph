@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0100 safety integrity level
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"},
-      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0090-emergency-stop", "label": "rb 0090 emergency stop"},
-      {"@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop", "label": "rb 0091 safety rated monitored stop"},
-      {"@id": "urn:ngm:class:rb-0096-safeguarding", "label": "rb 0096 safeguarding"}
+      {
+        "@id": "urn:ngm:class:rb-0090-emergency-stop",
+        "label": "rb 0090 emergency stop"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0096-safeguarding",
+        "label": "rb 0096 safeguarding"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"}
+      {
+        "@id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0100-safety-integrity-level:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:88c0c2c9b99e5ed7984bd09c196eadd4175bd20f08552b20482a8169485fab50"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Safety Integrity Level (SIL) is a four-tier classification (SIL 1 = lowest, SIL 4 = highest) specifying the required probability of failure on demand for a safety-instrumented function. It is the foundational metric used in IEC 61508 and derived sector standards (IEC 62061 for machinery, ISO 13849 Performance Level) to specify, design, and verify safety functions in robotic and automated systems.

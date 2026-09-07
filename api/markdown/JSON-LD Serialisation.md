@@ -1,8 +1,3 @@
----
-public: true
----
-
-# JSON-LD Serialisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "JSON-LD Serialisation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:serialisation-format", "vc:label": "Serialisation Format"},
-    {"@id": "urn:visionflow:linked:linked-data", "vc:label": "Linked Data"},
-    {"@id": "urn:visionflow:linked:rdf", "vc:label": "RDF"},
-    {"@id": "urn:visionflow:linked:w3c-recommendation", "vc:label": "W3C Recommendation"}
+    {
+      "@id": "urn:visionflow:linked:serialisation-format",
+      "vc:label": "Serialisation Format"
+    },
+    {
+      "@id": "urn:visionflow:linked:linked-data",
+      "vc:label": "Linked Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf",
+      "vc:label": "RDF"
+    },
+    {
+      "@id": "urn:visionflow:linked:w3c-recommendation",
+      "vc:label": "W3C Recommendation"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,21 +50,42 @@ public: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:json", "label": "JSON"}
+      {
+        "@id": "urn:ngm:class:json",
+        "label": "JSON"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:w3c-recommendation", "label": "W3C Recommendation"},
-      {"@id": "urn:ngm:class:schema-org", "label": "Schema.org"}
+      {
+        "@id": "urn:ngm:class:w3c-recommendation",
+        "label": "W3C Recommendation"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
     ]
   },
   "quality": 0.8,

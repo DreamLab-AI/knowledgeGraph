@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collision Detection System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "A computational subsystem that continuously tests whether geometric objects in a simulation or physical environment intersect or are about to intersect, enabling physics engines, robotics planners, and interactive applications to respond to contact events. It combines spatial partitioning structures with narrow-phase geometry tests to balance accuracy against performance.",
   "domain": "spatial-computing",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:collision-detection",
+      "label": "Collision Detection"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:bullet-physics", "label": "Bullet Physics"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:bullet-physics",
+        "label": "Bullet Physics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-simulation", "label": "Collaborative Simulation"},
-      {"@id": "urn:ngm:class:cloth-simulation", "label": "Cloth Simulation"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-simulation",
+        "label": "Collaborative Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:cloth-simulation",
+        "label": "Cloth Simulation"
+      }
     ]
   },
   "quality": 0.8

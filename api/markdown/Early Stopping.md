@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Early Stopping
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,36 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:epoch", "label": "Epoch"}
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
-      {"@id": "urn:ngm:class:batch-size", "label": "Batch Size"}
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "@id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      }
     ]
   },
   "provenance": {
@@ -81,37 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:early-stopping:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7c6ca826ba0cb439e852b4f5aec6374c3b73f1ed3e5b330cf2fb9c6c71bba486"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Gaussian Splatting]]",
-      "resolved": "urn:visionflow:owl:class:gaussian-splatting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A regularisation technique that terminates training when validation performance stops improving, preventing overfitting by avoiding overtraining on the training set. Early stopping balances training progress against generalisation to unseen data.

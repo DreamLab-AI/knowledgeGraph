@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Camera Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Camera Tracking is the process of continuously estimating the position and orientation (pose) of a camera in 3D space relative to a fixed reference frame or scene, typically using image feature analysis, optical flow, or fiducial marker detection. It underpins augmented reality, visual effects compositing, robotic navigation, and autonomous vehicle perception by enabling virtual or computed elements to be correctly registered to the physical world as the camera moves.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:motion-tracking",
+      "label": "Motion Tracking"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:feature-detection", "label": "Feature Detection"},
-      {"@id": "urn:ngm:class:optical-flow", "label": "Optical Flow"},
-      {"@id": "urn:ngm:class:marker-based-tracking", "label": "Marker Based Tracking"}
+      {
+        "@id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "@id": "urn:ngm:class:marker-based-tracking",
+        "label": "Marker Based Tracking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:epipolar-geometry", "label": "Epipolar Geometry"}
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - In the extended reality industry, camera tracking is the enabling technology for inside-out positional tracking — used by Meta Quest, HTC Vive Pro, and Apple Vision Pro — where outward-facing cameras on the headset track natural scene features to localise the device without external base stations. This replaced earlier outside-in approaches requiring fixed infrared emitter grids. In the autonomous vehicle domain, camera tracking contributes to the visual front-end of multi-sensor SLAM systems, complementing LiDAR odometry and GPS localisation. In live broadcast sports production, robotic camera systems use vision-based tracking to enable automated cinematography with AI-directed framing.
 
   - From 2024–2025, neural scene representations (NeRF, Gaussian Splatting) are creating new hybrid camera tracking paradigms where the tracking problem is solved jointly with scene reconstruction using gradient-based optimisation. Foundation model-based feature extractors (DINOv2, Segment Anything features) provide more robust and generalisable sparse correspondence than handcrafted descriptors, improving tracking under illumination change, motion blur, and textureless surfaces. Real-time Gaussian Splatting SLAM systems demonstrated in 2024 achieve camera tracking accuracy competitive with LiDAR-based approaches on handheld RGB-D sequences, signalling a potential paradigm shift in spatial tracking for XR and robotics.
-

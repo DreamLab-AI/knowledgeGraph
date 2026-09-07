@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cosine Similarity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,30 +7,102 @@ public: true
   "title": "Cosine Similarity",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:owl:class:semantic-search", "vc:label": "Semantic Search" },
-    { "@id": "urn:visionflow:owl:class:information-retrieval", "vc:label": "Information Retrieval" },
-    { "@id": "urn:visionflow:owl:class:embedding", "vc:label": "Embedding" },
-    { "@id": "urn:visionflow:owl:class:vector-database", "vc:label": "Vector Database" },
-    { "@id": "urn:visionflow:owl:class:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation" },
-    { "@id": "urn:visionflow:owl:class:nearest-neighbour-search", "vc:label": "Nearest Neighbour Search" },
-    { "@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing" },
-    { "@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture" },
-    { "@id": "urn:visionflow:owl:class:cross-encoder-reranking", "vc:label": "Cross-Encoder Reranking" },
-    { "@id": "urn:visionflow:owl:class:bi-encoder", "vc:label": "Bi-Encoder" },
-    { "@id": "urn:visionflow:owl:class:euclidean-distance", "vc:label": "Euclidean Distance" },
-    { "@id": "urn:visionflow:owl:class:dot-product", "vc:label": "Dot Product" },
-    { "@id": "urn:visionflow:owl:class:tf-idf", "vc:label": "TF-IDF" },
-    { "@id": "urn:visionflow:owl:class:bm25", "vc:label": "BM25" },
-    { "@id": "urn:visionflow:owl:class:representation-learning", "vc:label": "Representation Learning" },
-    { "@id": "urn:visionflow:owl:class:knowledge-graph-embedding", "vc:label": "Knowledge Graph Embedding" },
-    { "@id": "urn:visionflow:owl:class:recommendation-system", "vc:label": "Recommendation System" },
-    { "@id": "urn:visionflow:owl:class:sentence-bert", "vc:label": "Sentence-BERT" },
-    { "@id": "urn:visionflow:owl:class:faiss", "vc:label": "FAISS" },
-    { "@id": "urn:visionflow:owl:class:approximate-nearest-neighbour", "vc:label": "Approximate Nearest Neighbour" },
-    { "@id": "urn:visionflow:owl:class:dense-retrieval", "vc:label": "Dense Retrieval" },
-    { "@id": "urn:visionflow:owl:class:hybrid-search", "vc:label": "Hybrid Search" },
-    { "@id": "urn:visionflow:owl:class:matryoshka-representation-learning", "vc:label": "Matryoshka Representation Learning" },
-    { "@id": "urn:visionflow:owl:class:contrastive-learning", "vc:label": "Contrastive Learning" }
+    {
+      "@id": "urn:visionflow:owl:class:semantic-search",
+      "vc:label": "Semantic Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:information-retrieval",
+      "vc:label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:embedding",
+      "vc:label": "Embedding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:nearest-neighbour-search",
+      "vc:label": "Nearest Neighbour Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-encoder-reranking",
+      "vc:label": "Cross-Encoder Reranking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bi-encoder",
+      "vc:label": "Bi-Encoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:euclidean-distance",
+      "vc:label": "Euclidean Distance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dot-product",
+      "vc:label": "Dot Product"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:tf-idf",
+      "vc:label": "TF-IDF"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bm25",
+      "vc:label": "BM25"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graph-embedding",
+      "vc:label": "Knowledge Graph Embedding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recommendation-system",
+      "vc:label": "Recommendation System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sentence-bert",
+      "vc:label": "Sentence-BERT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:faiss",
+      "vc:label": "FAISS"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:approximate-nearest-neighbour",
+      "vc:label": "Approximate Nearest Neighbour"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dense-retrieval",
+      "vc:label": "Dense Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hybrid-search",
+      "vc:label": "Hybrid Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:matryoshka-representation-learning",
+      "vc:label": "Matryoshka Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:contrastive-learning",
+      "vc:label": "Contrastive Learning"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -164,7 +231,7 @@ public: true
       "label": "Normalised Dot Product Similarity"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -298,20 +365,20 @@ public: true
 
   The transition from sparse [[TF-IDF]] representations to dense neural embeddings, accelerated by the Sentence-BERT paper (Reimers and Gurevych, 2019) and subsequent work on [[Bi-Encoder|bi-encoder architectures]], dramatically expanded the scope of cosine similarity as a retrieval primitive. Sentence-BERT ([[Sentence-BERT]]) demonstrated that BERT sentence embeddings optimised with a cosine similarity objective on natural language inference (NLI) and semantic textual similarity (STS) benchmarks outperformed previous state-of-the-art methods by orders of magnitude, while being computationally feasible for corpus-scale retrieval. The BEIR benchmark (Thakur et al., 2021) systematised evaluation of bi-encoder + cosine similarity retrieval across 18 heterogeneous retrieval tasks, becoming the standard for comparing [[Embedding]] models. MTEB (Massive Text Embedding Benchmark, Muennighoff et al., 2023) extended this to 56 datasets across 8 tasks, covering [[Semantic Search|semantic search]], classification, clustering, and retrieval. On MTEB, state-of-the-art models (text-embedding-3-large from OpenAI, E5-mistral-7B, NV-Embed from NVIDIA) achieve cosine similarity-based retrieval performance in the 65–75% NDCG@10 range on average across tasks, with substantial variation by domain.
 
-  The [[Retrieval-Augmented Generation]] (RAG) architecture, popularised by the Lewis et al. (2020) NeurIPS paper, placed cosine similarity at the heart of production AI systems. In a RAG pipeline, a user query is encoded by a [[Bi-Encoder|bi-encoder model]], the resulting embedding is compared against a pre-indexed corpus of document chunk embeddings using cosine similarity (or equivalently, inner product on normalised vectors), and the top-k most similar chunks are retrieved and prepended to the language model's context window. This architecture separates knowledge storage (the vector index, updated continuously) from reasoning (the language model, updated through expensive retraining), making cosine similarity the bridge between dynamic knowledge and frozen model weights. As of 2026, RAG has become the dominant enterprise AI deployment pattern, with virtually every major [[Vector Database]] offering cosine similarity as a native distance metric and major cloud providers (AWS Bedrock, Azure OpenAI Service, Google Vertex AI) providing managed RAG services built on cosine similarity retrieval.
+  The [[Retrieval-Augmented Generation]] (RAG) architecture, popularised by the Lewis et al. (2020) NeurIPS paper, placed cosine similarity at the heart of production AI systems. In a RAG pipeline, a user query is encoded by a [[Bi-Encoder|bi-encoder model]], the resulting embedding is compared against a pre-indexed corpus of document chunk embeddings using cosine similarity (or equivalently, inner product on normalised vectors), and the top-k most similar chunks are retrieved and prepended to the language model's context window. This architecture separates knowledge storage (the vector [private], updated continuously) from reasoning (the language model, updated through expensive retraining), making cosine similarity the bridge between dynamic knowledge and frozen model weights. As of 2026, RAG has become the dominant enterprise AI deployment pattern, with virtually every major [[Vector Database]] offering cosine similarity as a native distance metric and major cloud providers (AWS Bedrock, Azure OpenAI Service, Google Vertex AI) providing managed RAG services built on cosine similarity retrieval.
 
   ## Components / Architecture
 
   The cosine similarity computation pipeline in a modern retrieval system comprises several interdependent components, each contributing to the overall retrieval quality and efficiency:
 
-  - **Encoder model (query and document encoders):** A [[Bi-Encoder]] architecture uses a [[Transformer Architecture|transformer encoder model]] — typically a fine-tuned BERT variant, or models in the E5, BGE, or GTE families — to produce fixed-size [[Embedding|embeddings]] for both queries and documents. The encoder applies mean pooling or CLS token extraction over the final [[Transformer Architecture|transformer layer]]. [[Contrastive Learning|Contrastive training]] with in-batch negatives and hard negative mining optimises the embeddings specifically for cosine similarity retrieval. The choice of encoder model is the most important factor affecting cosine similarity retrieval quality — even with the same index and retrieval strategy, switching from a BERT-base model to a state-of-the-art E5-large model typically improves NDCG@10 by 8-15 percentage points.
+  - **Encoder model (query and document encoders):** A [[Bi-Encoder]] architecture uses a [[Transformer Architecture|transformer encoder model]] — typically a fine-tuned BERT variant, or models in the E5, BGE, or GTE families — to produce fixed-size [[Embedding|embeddings]] for both queries and documents. The encoder applies mean pooling or CLS token extraction over the final [[Transformer Architecture|transformer layer]]. [[Contrastive Learning|Contrastive training]] with in-batch negatives and hard negative mining optimises the embeddings specifically for cosine similarity retrieval. The choice of encoder model is the most important factor affecting cosine similarity retrieval quality — even with the same [private] and retrieval strategy, switching from a BERT-base model to a state-of-the-art E5-large model typically improves NDCG@10 by 8-15 percentage points.
   - **L2 normalisation:** Before storage and comparison, [[Embedding|embeddings]] are L2-normalised: v̂ = v / ‖v‖₂. This projects all vectors onto the unit hypersphere, converting cosine similarity to [[Dot Product|dot product]] and enabling [[Approximate Nearest Neighbour|ANN]] inner-product search. Some systems omit explicit normalisation when the encoder model already outputs approximately unit-norm vectors, though explicit normalisation is always safer. The normalisation step can be fused with the encoding step in production pipelines.
-  - **Vector index (ANN structure):** Production systems use approximate nearest-neighbour indices rather than exact cosine search because exact cosine search (flat L2 search over all vectors) scales as O(N·d) per query, which is prohibitive for N > 1M documents. The dominant ANN structures are:
-    - **HNSW (Hierarchical Navigable Small World graphs):** Graph-based index providing O(log N) approximate search with high recall (>0.95 at top-10). Used by HNSWlib, Weaviate, Qdrant, and Milvus. Best for high-quality retrieval with moderate memory usage.
-    - **IVF (Inverted File Index) + PQ (Product Quantisation):** [[FAISS]]-style index that clusters vectors into Voronoi cells and applies lossy [[Embedding|embedding]] compression, trading recall for memory efficiency. Suitable for billion-scale corpora where HNSW memory requirements are prohibitive.
-    - **SCANN (Scalable Approximate Nearest Neighbors):** Google's tree-based [[Approximate Nearest Neighbour|ANN index]] with anisotropic quantisation optimised for inner product search. Achieves the best recall-latency trade-off for many large-scale retrieval tasks.
-    - **Flat index (exact search):** Exact cosine similarity computation without approximation, providing perfect recall at O(N·d) latency. Practical for N < 10k documents; infeasible for large corpora. [[FAISS]] provides flat index implementations optimised for GPU batch computation.
-  - **Query-time retrieval:** At inference time, the query is encoded, L2-normalised, and compared against the indexed corpus using the [[Approximate Nearest Neighbour|ANN index]], returning the top-k most similar documents measured by cosine similarity. The speed of this step depends on index type, hardware (CPU vs. GPU), and corpus size.
+  - **Vector [private] (ANN structure):** Production systems use approximate nearest-neighbour indices rather than exact cosine search because exact cosine search (flat L2 search over all vectors) scales as O(N·d) per query, which is prohibitive for N > 1M documents. The dominant ANN structures are:
+    - **HNSW (Hierarchical Navigable Small World graphs):** Graph-based [private] providing O(log N) approximate search with high recall (>0.95 at top-10). Used by HNSWlib, Weaviate, Qdrant, and Milvus. Best for high-quality retrieval with moderate memory usage.
+    - **IVF (Inverted File Index) + PQ (Product Quantisation):** [[FAISS]]-style [private] that clusters vectors into Voronoi cells and applies lossy [[Embedding|embedding]] compression, trading recall for memory efficiency. Suitable for billion-scale corpora where HNSW memory requirements are prohibitive.
+    - **SCANN (Scalable Approximate Nearest Neighbors):** Google's tree-based [[Approximate Nearest Neighbour|ANN [private]]] with anisotropic quantisation optimised for inner product search. Achieves the best recall-latency trade-off for many large-scale retrieval tasks.
+    - **Flat [private] (exact search):** Exact cosine similarity computation without approximation, providing perfect recall at O(N·d) latency. Practical for N < 10k documents; infeasible for large corpora. [[FAISS]] provides flat [private] implementations optimised for GPU batch computation.
+  - **Query-time retrieval:** At inference time, the query is encoded, L2-normalised, and compared against the indexed corpus using the [[Approximate Nearest Neighbour|ANN [private]]], returning the top-k most similar documents measured by cosine similarity. The speed of this step depends on [private] type, hardware (CPU vs. GPU), and corpus size.
   - **Reranking stage:** Retrieved candidates are passed to a [[Cross-Encoder Reranking|cross-encoder reranker]] that processes the full query-document pair through a [[Transformer Architecture|transformer]] with cross-attention, providing substantially more accurate relevance scores at higher computational cost. This two-stage architecture (bi-encoder cosine recall + cross-encoder precision) is the dominant production pattern for high-quality [[Retrieval-Augmented Generation|RAG]] and [[Semantic Search]] applications.
   - **Hybrid retrieval integration:** Many production systems combine cosine similarity over dense [[Embedding|embeddings]] with [[BM25]] keyword matching via Reciprocal Rank Fusion (RRF) or learned fusion, producing [[Hybrid Search]] that captures both semantic (cosine) and lexical ([[BM25]]) relevance. The hybrid approach consistently outperforms either dense cosine or sparse BM25 alone on BEIR benchmarks.
   - **Caching and batching:** Production cosine similarity pipelines cache frequently-queried embeddings, batch multiple query embedding computations, and pre-compute document [[Embedding|embeddings]] offline. These engineering optimisations can reduce effective per-query latency by 10–100x relative to naive implementations.
@@ -320,7 +387,7 @@ public: true
 
   Cosine similarity is deployed across a broad spectrum of retrieval and similarity tasks, with each domain exploiting the magnitude-invariant directional similarity property for different purposes:
 
-  - **[[Retrieval-Augmented Generation]] (RAG):** The core retrieval operation in RAG pipelines: query embeddings are compared against chunk embeddings in a [[Vector Database]] (Pinecone, Weaviate, Milvus, Qdrant, Chroma) to retrieve context passages for language model conditioning. As of 2026, RAG has become the dominant enterprise AI deployment pattern, making cosine similarity one of the most-executed mathematical operations in production AI systems. Typical enterprise RAG deployments index hundreds of millions of document chunks and process millions of cosine similarity queries daily.
+  - **[[Retrieval-Augmented Generation]] (RAG):** The core retrieval operation in RAG pipelines: query embeddings are compared against chunk embeddings in a [[Vector Database]] (Pinecone, Weaviate, Milvus, Qdrant, Chroma) to retrieve context passages for language model conditioning. As of 2026, RAG has become the dominant enterprise AI deployment pattern, making cosine similarity one of the most-executed mathematical operations in production AI systems. Typical enterprise RAG deployments [private] hundreds of millions of document chunks and process millions of cosine similarity queries daily.
   - **[[Semantic Search]] engines:** Enterprise search products (Microsoft Azure AI Search, Google Vertex AI Search, Elasticsearch with [[Dense Retrieval|dense retrieval]], OpenSearch with k-NN plugin) use cosine similarity over dense [[Embedding|embeddings]] as the primary semantic relevance signal, replacing or supplementing [[BM25]] keyword matching. The semantic search capability allows users to find relevant documents using natural language questions rather than precise keywords, substantially improving retrieval recall for novice users.
   - **[[Recommendation System|Recommendation systems]]:** Collaborative filtering and content-based recommendation encode items and users as [[Embedding|embeddings]]; cosine similarity retrieves the most relevant items for a given user state. Spotify's audio2vec, Netflix's embedding-based recommendation, and Amazon's product recommendation systems all use cosine similarity at scale, with item-to-item similarity computed offline and user-to-item similarity computed at query time.
   - **De-duplication and clustering:** Cosine similarity identifies near-duplicate documents, sentences, or code fragments, enabling large-scale corpus de-duplication (used in LLM pre-training data pipelines to reduce training data redundancy) and [[Representation Learning|semantic clustering]] of large document collections. MinHash with cosine approximate matching is used for fuzzy de-duplication at web scale.
@@ -524,7 +591,7 @@ public: true
   - **L2 normalisation:** Division of a vector by its Euclidean norm (‖v‖₂ = √(Σᵢ vᵢ²)), projecting it onto the unit hypersphere, which converts cosine similarity to [[Dot Product|dot product]] and enables BLAS-optimised inner-product search.
   - **[[Dot Product]] (inner product):** The sum Σᵢ AᵢBᵢ; equals cosine similarity when both vectors are unit-normalised. The algebraic identity cos(A, B) = A · B for unit vectors is the computational foundation of production cosine similarity search.
   - **Anisotropy:** The geometric property of a set of [[Embedding|embedding]] vectors concentrated in a narrow cone rather than distributed across the full unit hypersphere; reduces cosine similarity's discriminative power by causing unrelated items to share high cosine similarity due to shared directional bias.
-  - **HNSW (Hierarchical Navigable Small World):** A graph-based [[Approximate Nearest Neighbour|approximate nearest-neighbour index]] that supports efficient cosine/inner-product search in high-dimensional spaces, providing O(log N) search with high recall. Used by HNSWlib, Weaviate, Qdrant, and Milvus.
+  - **HNSW (Hierarchical Navigable Small World):** A graph-based [[Approximate Nearest Neighbour|approximate nearest-neighbour [private]]] that supports efficient cosine/inner-product search in high-dimensional spaces, providing O(log N) search with high recall. Used by HNSWlib, Weaviate, Qdrant, and Milvus.
   - **[[Bi-Encoder]]:** A retrieval architecture using two encoder models (one for queries, one for documents) that produces embeddings compared by cosine similarity; contrasts with [[Cross-Encoder Reranking|cross-encoders]] that process query-document pairs jointly through cross-attention.
   - **MaxSim:** The ColBERT late-interaction operator that takes the maximum cosine similarity between each query token [[Embedding|embedding]] and all document token embeddings, then sums these maxima as the overall relevance score. Provides better retrieval quality than single-vector cosine at higher storage cost.
   - **[[Matryoshka Representation Learning|Matryoshka embeddings]]:** Embeddings trained so that prefix sub-vectors at multiple dimensionalities (e.g., 64, 128, 256) retain cosine similarity ordering, enabling adaptive-size retrieval and quality-latency trade-offs without reindexing.
@@ -540,9 +607,9 @@ public: true
 
   Understanding the computational complexity of cosine similarity retrieval is essential for production system design:
 
-  **Exact cosine similarity:** Computing cosine similarity between a single query and N document vectors of dimension d requires O(N·d) multiply-accumulate operations. For N=1M documents and d=768 dimensions, this is 768M operations per query — about 0.25ms on a modern GPU. For N=1B, this becomes 0.25 seconds per query, which is infeasible for interactive applications. GPU-accelerated FAISS flat index achieves approximately 100ms for exact cosine search over 1B 768-dimensional vectors using multiple A100 GPUs, making exact search practical only for specialised very-low-latency requirements with massive GPU clusters.
+  **Exact cosine similarity:** Computing cosine similarity between a single query and N document vectors of dimension d requires O(N·d) multiply-accumulate operations. For N=1M documents and d=768 dimensions, this is 768M operations per query — about 0.25ms on a modern GPU. For N=1B, this becomes 0.25 seconds per query, which is infeasible for interactive applications. GPU-accelerated FAISS flat [private] achieves approximately 100ms for exact cosine search over 1B 768-dimensional vectors using multiple A100 GPUs, making exact search practical only for specialised very-low-latency requirements with massive GPU clusters.
 
-  **Approximate cosine similarity (HNSW):** HNSW achieves O(log N · M · d) search complexity where M is the graph degree (typically 16-48 edges per node). For N=1M and d=768, this reduces per-query operations to approximately 100k–300k, enabling sub-millisecond search on CPU. The HNSW index requires approximately 8 bytes × d × N bytes of memory (float32 vectors), plus graph overhead of approximately 4 bytes × M × N bytes. For N=10M and d=768, total memory is approximately 30GB + 2GB overhead = 32GB, fitting in a modern server's RAM.
+  **Approximate cosine similarity (HNSW):** HNSW achieves O(log N · M · d) search complexity where M is the graph degree (typically 16-48 edges per node). For N=1M and d=768, this reduces per-query operations to approximately 100k–300k, enabling sub-millisecond search on CPU. The HNSW [private] requires approximately 8 bytes × d × N bytes of memory (float32 vectors), plus graph overhead of approximately 4 bytes × M × N bytes. For N=10M and d=768, total memory is approximately 30GB + 2GB overhead = 32GB, fitting in a modern server's RAM.
 
   **Approximate cosine similarity (IVF+PQ):** FAISS IVF with 4096 clusters and PQ8 (8-byte per-vector quantisation) reduces memory to approximately 8 bytes × N plus cluster centroids, enabling billion-scale cosine retrieval in 50–100GB RAM. The query requires probing nprobe clusters (typically 64-256) and computing approximate inner products within each cluster. Recall@100 of 90%+ is achievable with appropriate nprobe settings at 5-10x less memory than HNSW.
 
@@ -550,7 +617,7 @@ public: true
 
   ## Performance Benchmarks and Evaluation
 
-  Evaluating cosine similarity retrieval quality requires standardised benchmarks that enable comparison across embedding models, index configurations, and retrieval strategies:
+  Evaluating cosine similarity retrieval quality requires standardised benchmarks that enable comparison across embedding models, [private] configurations, and retrieval strategies:
 
   **BEIR (Benchmarking IR):** The gold standard for zero-shot retrieval evaluation, covering 18 diverse datasets including MS MARCO, TREC-COVID, NFCorpus, NQ, HotpotQA, FiQA, ArguAna, Touché-2020, CQADupStack, Quora, DBPedia, SCIDOCS, FEVER, Climate-FEVER, and SciFact. The standard metric is NDCG@10 (Normalised Discounted Cumulative Gain at rank 10). State-of-the-art single-vector cosine similarity models (as of 2026) achieve approximately 52-58% average NDCG@10 on BEIR zero-shot, with late-interaction models achieving 60-65% and cross-encoder rerankers achieving 65-72%.
 
@@ -560,9 +627,9 @@ public: true
 
   **STS Benchmarks:** For evaluating sentence-level cosine similarity on semantically graded pairs, the STS (Semantic Textual Similarity) benchmark from SemEval and the STS-B dataset (part of GLUE and SuperGLUE) use Spearman and Pearson correlation between cosine similarity scores and human similarity ratings as metrics. State-of-the-art models achieve Pearson correlations above 0.92 on STS-B.
 
-  **ANN Benchmarks (ann-benchmarks.com):** For evaluating the efficiency of cosine similarity ANN search, ann-benchmarks.com provides standardised recall-latency trade-off curves for different index configurations (HNSW, IVF+PQ, ScaNN) on standard datasets. Results guide production system design by quantifying the engineering trade-offs between recall, latency, throughput, and memory.
+  **ANN Benchmarks (ann-benchmarks.com):** For evaluating the efficiency of cosine similarity ANN search, ann-benchmarks.com provides standardised recall-latency trade-off curves for different [private] configurations (HNSW, IVF+PQ, ScaNN) on standard datasets. Results guide production system design by quantifying the engineering trade-offs between recall, latency, throughput, and memory.
 
-  These benchmarks collectively define the empirical landscape of cosine similarity retrieval, enabling practitioners to select embedding models, index configurations, and retrieval architectures appropriate for their requirements. The continued evolution of evaluation methodology — particularly toward domain-specific benchmarks and multimodal evaluation — reflects the broadening scope of cosine similarity applications in 2026 production systems.
+  These benchmarks collectively define the empirical landscape of cosine similarity retrieval, enabling practitioners to select embedding models, [private] configurations, and retrieval architectures appropriate for their requirements. The continued evolution of evaluation methodology — particularly toward domain-specific benchmarks and multimodal evaluation — reflects the broadening scope of cosine similarity applications in 2026 production systems.
 
   ## Cross-References to Related Ontology Pages
 

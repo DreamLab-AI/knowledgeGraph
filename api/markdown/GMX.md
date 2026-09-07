@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GMX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -212,67 +207,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gmx:600637a5a091",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b19b7f7b5afcf3c9479161ba366a80b6201fe6256fe5e9f4a1333b43d4347882"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Oracle]]",
-      "resolved": "urn:visionflow:linked:oracle",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Arbitrum]]",
-      "resolved": "urn:visionflow:linked:arbitrum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Pool]]",
-      "resolved": "urn:visionflow:linked:liquidity-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Perpetual Futures]]",
-      "resolved": "urn:visionflow:linked:perpetual-futures",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Leveraged Trading]]",
-      "resolved": "urn:visionflow:linked:leveraged-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dYdX]]",
-      "resolved": "urn:visionflow:linked:d-yd-x",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Automated Market Maker]]",
-      "resolved": "urn:visionflow:linked:automated-market-maker",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - GMX is a decentralised spot and perpetual-futures exchange deployed on the Arbitrum and Avalanche networks. It allows traders to take leveraged positions against a shared multi-asset liquidity pool rather than a traditional order book, with prices supplied by external oracles. Liquidity providers deposit assets into the pool and earn a share of trading fees while acting as the counterparty to traders.

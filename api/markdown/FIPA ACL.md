@@ -1,9 +1,3 @@
----
-public: true
----
-
-# FIPA ACL
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,26 +8,86 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-communication-language", "vc:label": "Agent Communication Language"},
-    {"@id": "urn:visionflow:linked:inter-agent-communication", "vc:label": "Inter-Agent Communication"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:ontology", "vc:label": "Ontology"},
-    {"@id": "urn:visionflow:linked:speech-act-theory", "vc:label": "Speech Act Theory"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:multi-agent-coordination", "vc:label": "Multi-Agent Coordination"},
-    {"@id": "urn:visionflow:linked:communication-protocol", "vc:label": "Communication Protocol"},
-    {"@id": "urn:visionflow:linked:kqml", "vc:label": "KQML"},
-    {"@id": "urn:visionflow:linked:interoperability", "vc:label": "Interoperability"},
-    {"@id": "urn:visionflow:linked:contract-net-protocol", "vc:label": "Contract Net Protocol"},
-    {"@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems"},
-    {"@id": "urn:visionflow:linked:agent-platform", "vc:label": "Agent Platform"},
-    {"@id": "urn:visionflow:linked:semantic-web", "vc:label": "Semantic Web"},
-    {"@id": "urn:visionflow:linked:message-passing", "vc:label": "Message Passing"},
-    {"@id": "urn:visionflow:linked:knowledge-interchange-format", "vc:label": "Knowledge Interchange Format"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:agent2agent-protocol", "vc:label": "Agent2Agent Protocol"},
-    {"@id": "urn:visionflow:linked:cli-multi-agent-systems", "vc:label": "CLI Multi-Agent Systems"},
-    {"@id": "urn:visionflow:linked:distributed-decision-making", "vc:label": "Distributed Decision Making"}
+    {
+      "@id": "urn:visionflow:linked:agent-communication-language",
+      "vc:label": "Agent Communication Language"
+    },
+    {
+      "@id": "urn:visionflow:linked:inter-agent-communication",
+      "vc:label": "Inter-Agent Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-act-theory",
+      "vc:label": "Speech Act Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-coordination",
+      "vc:label": "Multi-Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:communication-protocol",
+      "vc:label": "Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:kqml",
+      "vc:label": "KQML"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:contract-net-protocol",
+      "vc:label": "Contract Net Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-platform",
+      "vc:label": "Agent Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-web",
+      "vc:label": "Semantic Web"
+    },
+    {
+      "@id": "urn:visionflow:linked:message-passing",
+      "vc:label": "Message Passing"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-interchange-format",
+      "vc:label": "Knowledge Interchange Format"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent2agent-protocol",
+      "vc:label": "Agent2Agent Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:cli-multi-agent-systems",
+      "vc:label": "CLI Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-decision-making",
+      "vc:label": "Distributed Decision Making"
+    }
   ]
 }
 ```
@@ -196,39 +250,6 @@ public: true
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fipa-acl:enriched2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:fipa-acl"},
-  "vc:resolutions": [
-    {"raw": "[[Agent Communication Language]]", "resolved": "urn:visionflow:linked:agent-communication-language", "kind": "StubLink"},
-    {"raw": "[[Inter-Agent Communication]]", "resolved": "urn:visionflow:linked:inter-agent-communication", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent System]]", "resolved": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
-    {"raw": "[[Ontology]]", "resolved": "urn:visionflow:linked:ontology", "kind": "StubLink"},
-    {"raw": "[[Speech Act Theory]]", "resolved": "urn:visionflow:linked:speech-act-theory", "kind": "StubLink"},
-    {"raw": "[[Autonomous Agent]]", "resolved": "urn:visionflow:linked:autonomous-agent", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent Coordination]]", "resolved": "urn:visionflow:linked:multi-agent-coordination", "kind": "StubLink"},
-    {"raw": "[[Communication Protocol]]", "resolved": "urn:visionflow:linked:communication-protocol", "kind": "StubLink"},
-    {"raw": "[[KQML]]", "resolved": "urn:visionflow:linked:kqml", "kind": "StubLink"},
-    {"raw": "[[Interoperability]]", "resolved": "urn:visionflow:linked:interoperability", "kind": "StubLink"},
-    {"raw": "[[Contract Net Protocol]]", "resolved": "urn:visionflow:linked:contract-net-protocol", "kind": "StubLink"},
-    {"raw": "[[Distributed Systems]]", "resolved": "urn:visionflow:linked:distributed-systems", "kind": "StubLink"},
-    {"raw": "[[Agent Platform]]", "resolved": "urn:visionflow:linked:agent-platform", "kind": "StubLink"},
-    {"raw": "[[Semantic Web]]", "resolved": "urn:visionflow:linked:semantic-web", "kind": "StubLink"},
-    {"raw": "[[Message Passing]]", "resolved": "urn:visionflow:linked:message-passing", "kind": "StubLink"},
-    {"raw": "[[Knowledge Interchange Format]]", "resolved": "urn:visionflow:linked:knowledge-interchange-format", "kind": "StubLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
-    {"raw": "[[Agent2Agent Protocol]]", "resolved": "urn:visionflow:linked:agent2agent-protocol", "kind": "StubLink"},
-    {"raw": "[[CLI Multi-Agent Systems]]", "resolved": "urn:visionflow:linked:cli-multi-agent-systems", "kind": "StubLink"},
-    {"raw": "[[Distributed Decision Making]]", "resolved": "urn:visionflow:linked:distributed-decision-making", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -408,7 +429,7 @@ public: true
 
   The academic foundations of FIPA ACL span philosophy of language, formal logic, distributed computing, and AI. The core Speech Act Theory lineage — Austin (1962), Searle (1969), Grice (1975, Cooperative Principle and implicature) — was translated into computational terms by Barbara Grosz, Candace Sidner, and Allen (1981) in the discourse structure and computational dialogue literature. The first computational agent communication language, KQML, emerged from the DARPA Knowledge Sharing Effort: Neches et al. (1991) introduced the KSE framework; Finin, Fritzson, McKay, and McEntire formalised KQML (1994); Labrou and Finin (1997) provided the first rigorous critique of KQML's semantic deficiencies that directly motivated the FIPA ACL design.
 
-  The formal semantics of FIPA ACL was developed by the FIPA Semantic Framework Working Group, led by Fabio Bellifemine (Telecom Italia) and colleagues from the IRIT laboratory in Toulouse (including Laurent Vercouter and Gauthier Picard). The semantic model is built on the SL2 modal logic with operators for agent beliefs, uncertainties, desires, and intentions, providing a formal account of the conditions under which each performative is rationally appropriate and the effects it produces. Pitt and Mamdani (1999) at Imperial College London provided influential formal analyses of FIPA ACL semantics, showing that the interaction protocols could be verified for correctness properties using model checking.
+  The formal semantics of FIPA ACL was developed by the FIPA Semantic Framework Working Group, led by Fabio Bellifemine (Telecom Italia) and colleagues from the IRIT laboratory in Toulouse (including Laurent Vercouter and Gauthier Picard). The semantic model is built on the SL2 modal logic with operators for agent beliefs, uncertainties, desires, and intentions, providing a formal account of the conditions under which each performative is rationally appropriate and the effects it produces. Pitt and Mamdani (1999) at Imperial College London provided influential formal analyses of FIPA ACL semantics, showing that the interaction protocols [private] be verified for correctness properties using model checking.
 
   The debate between Labrou and Finin's KQML defenders and the FIPA ACL advocates is extensively documented in the AAMAS and AAAI proceedings from 1997–2004 and remains instructive for understanding the trade-offs between formal semantic precision and implementation pragmatism in protocol design. The Agent Communication Language Workshop series (1998–2003) provided the primary forum for this debate.
 

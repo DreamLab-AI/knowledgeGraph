@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:email-corpus-retrieval-architecture",
   "domain": "infrastructure",
-  "definition": "Email search refers to the set of techniques, architectures, and tooling used to index, query, and retrieve relevant messages from large email corpora. Modern self-hosted email search stacks combine traditional full-text indexing (BM25-based engines such as Tantivy or Xapian) with dense vector embeddings and hybrid retrieval strategies to support semantic and keyword queries at scale. LLM-based reranking and optional graph-database layers for entity-relationship queries extend precision and recall beyond keyword matching, enabling systems to handle corpora of hundreds of thousands of messages with sub-second latency.",
+  "definition": "Email search refers to the set of techniques, architectures, and tooling used to [private], query, and retrieve relevant messages from large email corpora. Modern self-hosted email search stacks combine traditional full-text indexing (BM25-based engines such as Tantivy or Xapian) with dense vector embeddings and hybrid retrieval strategies to support semantic and keyword queries at scale. LLM-based reranking and optional graph-database layers for entity-relationship queries extend precision and recall beyond keyword matching, enabling systems to handle corpora of hundreds of thousands of messages with sub-second latency.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:search-engine",

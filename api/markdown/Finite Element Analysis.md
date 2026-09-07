@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Finite Element Analysis
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

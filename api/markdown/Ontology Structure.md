@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ontology Structure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,16 +51,34 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ontology-definition", "label": "Ontology Definition"},
-      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"},
-      {"@id": "urn:ngm:class:ontology-property-definitions", "label": "Ontology Property Definitions"}
+      {
+        "@id": "urn:ngm:class:ontology-definition",
+        "label": "Ontology Definition"
+      },
+      {
+        "@id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-property-definitions",
+        "label": "Ontology Property Definitions"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"}
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
     ]
   },
   "provenance": {
@@ -75,32 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ontology-structure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f30ae378c8f55bae14721651e5e15a96af9567d3a79e3a3f211a2598d2a514b0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The formal organisation of an ontology into classes, properties, axioms, and inter-concept relationships expressed in a logic-based language such as OWL or RDFS. Ontology Structure defines the hierarchy and constraint patterns that make machine-readable knowledge graphs queryable, inferable, and interoperable across domains.

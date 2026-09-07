@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Licensing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,41 @@ public: true
   "definition": "Content Licensing is the legal and commercial framework through which rights holders grant third parties permission to use, reproduce, distribute, or monetise creative or informational works under defined conditions, terms, and compensation structures. It governs the relationship between creators, intermediary platforms, and end consumers across media, software, data, and digital asset categories.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-rights-management",
+      "label": "Digital Rights Management"
+    }
+  ],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}],
-    "enables": [{"@id": "urn:ngm:class:royalty-distribution", "label": "Royalty Distribution"}],
-    "relatedTo": [{"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "Intellectual Property Rights Framework"}, {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}],
-    "requires": [{"@id": "urn:ngm:class:asset-management", "label": "Asset Management"}]
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:royalty-distribution",
+        "label": "Royalty Distribution"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property Rights Framework"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ]
   },
   "quality": 0.8
 }

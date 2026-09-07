@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Off Chain Governance
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,39 +20,86 @@ public: true
   "definition": "Off-chain governance refers to blockchain protocol governance processes conducted outside the ledger itself — through social consensus, developer forums, BIPs/EIPs, foundation decisions, and miner or validator coordination — rather than through on-chain voting mechanisms. Changes are agreed informally or through established processes, then implemented via software upgrades adopted voluntarily by network participants. This approach prioritises flexibility and expert deliberation but relies on social coordination and may lack the transparency of on-chain mechanisms.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain-identity", "label": "Blockchain Identity"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:externally-owned-account", "label": "Externally Owned Account"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:externally-owned-account",
+        "label": "Externally Owned Account"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-wallet", "label": "Blockchain Wallet"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:personal-data", "label": "Personal Data"}
+      {
+        "@id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:finance", "label": "Finance"}
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ]
   },
   "quality": 0.62,

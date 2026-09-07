@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[EU AI Act]]
-# EU AI Act Regulatory Instrument
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

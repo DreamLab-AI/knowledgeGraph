@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Medication Safety
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

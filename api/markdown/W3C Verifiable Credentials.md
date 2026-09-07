@@ -1,8 +1,3 @@
----
-public: true
----
-
-# W3C Verifiable Credentials
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -239,7 +234,7 @@ public: true
     - Verification begins by resolving the issuer's DID to a [[DID Document]] that contains public key material and service endpoints. Supported DID methods include `did:web`, `did:key`, `did:ion`, `did:ebsi`, and others registered in the W3C DID Spec Registries.
     - For HTTPS-based issuers, key material is retrieved from a `/.well-known/did.json` document or JWT issuer metadata endpoint.
   - **Revocation**
-    - StatusList2021 (now Bitstring Status List v1.0) encodes a compressed bitstring where each credential is assigned a bit position; verifiers fetch the list and check the bit corresponding to their credential's index.
+    - StatusList2021 (now Bitstring Status List v1.0) encodes a compressed bitstring where each credential is assigned a bit position; verifiers fetch the list and check the bit corresponding to their credential's [private].
     - Token Status List (IETF RFC draft) provides a JWT-encoded equivalent for JWT VC ecosystems.
   - **Selective Disclosure**
     - SD-JWT allows issuers to create a credential with hashed claim disclosures; the holder selects which claims to reveal when presenting, and the verifier can verify only those revealed values.

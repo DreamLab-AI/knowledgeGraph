@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Semantic HTML
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Semantic HTML is the practice of using HTML elements according to their intended meaning rather than for presentation alone. Elements such as header, nav, main, article, and button convey document structure and role to browsers and assistive technologies. It is a foundational requirement for accessible, machine-interpretable web content.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ]
   },
   "quality": 0.72

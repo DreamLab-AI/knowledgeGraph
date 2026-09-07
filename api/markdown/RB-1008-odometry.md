@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RB-1008-odometry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "RB-1008-odometry refers to the odometric positioning subsystem of the RB-1008 wheeled mobile robot platform, encompassing the encoder-based wheel odometry algorithms, sensor fusion pipelines, and ROS navigation stack integration used to estimate the robot's pose (position and orientation) relative to a starting frame. The system computes incremental displacement from differential or omnidirectional wheel encoders, corrects for wheel slip and encoder quantisation errors, and fuses encoder data with inertial measurement unit (IMU) readings to produce a continuous odometric estimate used as the prior for simultaneous localisation and mapping (SLAM) and autonomous navigation. Accurate odometry is essential for maintaining coherent map frames and for the navigation stack's local cost-map updates between LIDAR scan matches.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:odometry", "label": "Odometry"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:odometry",
+      "label": "Odometry"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:wheeled-mobile-robot", "label": "Wheeled Mobile Robot"},
-      {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"}
+      {
+        "@id": "urn:ngm:class:wheeled-mobile-robot",
+        "label": "Wheeled Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:ros-navigation-stack", "label": "ROS Navigation Stack"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ]
   },
   "quality": 0.8

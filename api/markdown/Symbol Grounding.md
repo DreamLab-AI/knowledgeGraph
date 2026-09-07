@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Symbol Grounding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,11 +21,22 @@ public: true
   "vc:plainGloss": "The question of whether an AI's words are genuinely connected to real things in the world, or are just symbols defined by other symbols. It sits at the heart of the debate over whether a model that has only ever read text truly \"understands\" what it is talking about.",
   "domain": "ai",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"},
-      {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
     ]
   },
   "quality": 0.72

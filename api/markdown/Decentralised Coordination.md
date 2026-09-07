@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralised Coordination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,4 +155,3 @@ public: true
   - Decentralised coordination matters beyond crypto because it offers a template for organising global contributors without corporate overhead. Open-source software projects, Wikipedia, and creative commons networks are pre-blockchain examples. DAOs formalise financial coordination among these contributors: protocol DAOs allocate hundreds of millions of dollars in treasury funds for development grants; investment DAOs pool capital without a fund manager; social DAOs coordinate community membership and privileges. The MolochDAO framework, designed to minimise governance overhead and include rage-quit provisions, influenced dozens of subsequent designs.
 
   - In 2024–2025, decentralised coordination is grappling with participation failures—most token holders never vote—and governance attacks where well-capitalised adversaries acquire enough tokens to pass self-serving proposals. Delegation systems that route voting power to engaged specialists are gaining traction. The intersection with AI is intensifying: autonomous AI agents are beginning to participate in DAO votes, manage treasury positions, and execute coordination tasks on behalf of human token holders. This raises questions about accountability, manipulation resistance, and the legal standing of AI-initiated on-chain actions within [[Algorithmic Governance]] frameworks.
-

@@ -1,39 +1,119 @@
----
-public: true
----
-
-# Polkadot XCM
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:polkadot-xcm", "@type":"Page", "title":"Polkadot XCM", "vc:slug":"polkadot-xcm", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:polkadot-xcm",
+  "@type": "Page",
+  "title": "Polkadot XCM",
+  "vc:slug": "polkadot-xcm",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:polkadot-xcm",
-  "@type":"Class",
-  "label":"Polkadot XCM",
-  "definition":"Polkadot XCM (Cross-Consensus Messaging) is a format and language for communicating intent between consensus systems within and beyond the Polkadot network. Rather than transferring assets directly, XCM expresses instructions that a receiving chain interprets and executes locally, enabling asset transfers, remote calls and governance actions across parachains and the relay chain. It is transport-agnostic, relying on underlying delivery layers such as XCMP and HRMP, and is designed to be extensible and version-negotiated.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cross-chain-communication","label":"Cross-Chain Communication"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:polkadot","label":"Polkadot"}],
-    "implements":[{"@id":"urn:ngm:class:cross-chain-communication","label":"Cross-Chain Communication"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:interoperability-protocol","label":"Interoperability Protocol"}],
-    "uses":[{"@id":"urn:ngm:class:message-passing","label":"Message Passing"},{"@id":"urn:ngm:class:web-assembly","label":"WebAssembly"}],
-    "requires":[{"@id":"urn:ngm:class:polkadot","label":"Polkadot"}],
-    "enables":[{"@id":"urn:ngm:class:cross-chain-interoperability","label":"Cross-Chain Interoperability"}],
-    "dependsOn":[{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}],
-    "supports":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:cosmos-ibc","label":"Cosmos IBC"},{"@id":"urn:ngm:class:layer-zero","label":"LayerZero"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:cross-chain-bridge","label":"Cross-Chain Bridge"}],
-    "relatedTo":[{"@id":"urn:ngm:class:distributed-ledger","label":"Distributed Ledger"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:polkadot-xcm",
+  "@type": "Class",
+  "label": "Polkadot XCM",
+  "definition": "Polkadot XCM (Cross-Consensus Messaging) is a format and language for communicating intent between consensus systems within and beyond the Polkadot network. Rather than transferring assets directly, XCM expresses instructions that a receiving chain interprets and executes locally, enabling asset transfers, remote calls and governance actions across parachains and the relay chain. It is transport-agnostic, relying on underlying delivery layers such as XCMP and HRMP, and is designed to be extensible and version-negotiated.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cross-chain-communication",
+      "label": "Cross-Chain Communication"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cross-chain-communication",
+        "label": "Cross-Chain Communication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "@id": "urn:ngm:class:layer-zero",
+        "label": "LayerZero"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:cross-consensus-messaging","label":"Cross-Consensus Messaging"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cross-consensus-messaging",
+      "label": "Cross-Consensus Messaging"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

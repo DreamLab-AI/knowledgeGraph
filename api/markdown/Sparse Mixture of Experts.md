@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sparse Mixture of Experts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -102,32 +97,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sparse-mixture-of-experts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9cc5bbdd5454ee580f79e90be4ea9b234eea38517327cae1784af3dd7b7256ee"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An MoE variant with a trainable gating network that selects only a sparse combination of experts for each example, dramatically increasing model capacity whilst maintaining computational efficiency. Sparsely-gated MoE enables models with up to 137 billion parameters with manageable inference costs.

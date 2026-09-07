@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Research Tools]]
-# AI-Augmented Research Tooling Suite
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,15 +51,30 @@ elevatedFrom:: [[Research Tools]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "quality": 0.5,
@@ -76,37 +85,6 @@ elevatedFrom:: [[Research Tools]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:research-tools:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ae633c49662932a44349b31c455ab885b5485ef410418b4565d78b962306359e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[🤖]]",
-      "resolved": "urn:visionflow:linked:untitled",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI-Augmented Research Tooling Suite]]",
-      "resolved": "urn:visionflow:owl:class:research-tools",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Research Tools are software applications and platforms that augment the academic and professional research process, encompassing AI-powered literature assistants (e.g. Elicit, Undermind), systematic review automation, citation management, and natural language interfaces to scientific corpora. They accelerate information retrieval, evidence synthesis, and knowledge organisation, and increasingly leverage large language models and retrieval-augmented generation to surface relevant findings across heterogeneous sources.

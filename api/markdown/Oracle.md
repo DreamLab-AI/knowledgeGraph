@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Oracle
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -216,57 +211,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:oracle:9202af6ce925",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:35dc61fea3cf79782819482db05ba38a7326f7e12a6f6b3b9884ef3a477f9a69"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Price Oracle]]",
-      "resolved": "urn:visionflow:linked:price-oracle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Chainlink]]",
-      "resolved": "urn:visionflow:linked:chainlink",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://ethereum.org/en/developers/docs/oracles/]]",
-      "resolved": "urn:visionflow:linked:https-ethereum-org-en-developers-docs-oracles",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - In blockchain systems, a mechanism that brings external information onto the chain so that smart contracts can act on data they cannot observe directly. Oracles are the boundary between deterministic on-chain logic and the variable outside world.

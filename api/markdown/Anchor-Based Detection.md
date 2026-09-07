@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Anchor-Based Detection
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

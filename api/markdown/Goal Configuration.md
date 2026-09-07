@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Goal Configuration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A goal configuration is the desired target state of a robot or articulated system, expressed in its configuration space as a set of joint angles or a pose. Motion planners search for a collision-free path from the start configuration to this goal. Specifying it precisely is a prerequisite for path planning and trajectory generation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:path-planning", "label": "Path Planning"}, {"@id": "urn:ngm:class:trajectory-generation", "label": "Trajectory Generation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      }
+    ]
   },
   "quality": 0.72
 }

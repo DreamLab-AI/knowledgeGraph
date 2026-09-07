@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NIST SP 800-63
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nist-sp-800-63:f5fe30fcb29c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d39f224b31aa6b4b05d565d0690decdf576d8f6f0010876876b3e1c79b1a5fd0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NIST]]",
-      "resolved": "urn:visionflow:linked:nist",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A NIST Special Publication providing digital identity guidelines, covering enrolment, identity proofing, authentication and federation. It defines assurance levels for identity systems.

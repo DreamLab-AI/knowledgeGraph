@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Narrative Theme
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:narrative-theme:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9eb5f60aca64f96de441bd12478d476946a09f91227150c7504c80e29150c156"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Narrative Structure]]",
-      "resolved": "urn:visionflow:owl:class:narrative-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Storytelling]]",
-      "resolved": "urn:visionflow:owl:class:storytelling",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The underlying message, central idea, or motif that pervades a story and shapes public perception, constructed through selective framing, language choices, and emphasis on particular details to guide audience interpretation of events, characters, and meaning.

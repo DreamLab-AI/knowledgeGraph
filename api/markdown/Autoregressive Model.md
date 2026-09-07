@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Autoregressive Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -271,46 +266,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:autoregressive-model:fcc227515c0f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b6f0cecc5184d5dda9bdea6049fcb6b58ad6cd3e792003f96f57b5f9130c525e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Probabilistic Model]]",
-      "resolved": "urn:visionflow:linked:probabilistic-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Language Model]]",
-      "resolved": "urn:visionflow:linked:language-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:linked:transformer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Model]]",
-      "resolved": "urn:visionflow:linked:generative-model",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - An autoregressive model is a [[Generative Model]] that produces sequences by predicting each element conditioned on all previously generated elements, factorising the joint probability over a sequence into an ordered product of conditionals via the [[Chain Rule of Probability]]. This foundational decomposition — P(x) = ∏ᵢ P(xᵢ | x₁, …, xᵢ₋₁) — is always valid without any independence assumptions, making autoregressive models principled generative frameworks that provide exact log-likelihoods under a single tractable [[Maximum Likelihood Estimation]] objective. The autoregressive paradigm is the computational backbone of [[Large Language Model]] architectures such as GPT-series, LLaMA, Mistral, and Claude, as well as systems for neural audio synthesis (WaveNet, SoundStream), image generation (PixelCNN, DALL-E v1), code synthesis (Codex, StarCoder), and protein sequence design. Training exploits [[Teacher Forcing]] — ground-truth tokens are fed as context — enabling full parallelism across positions via [[Masked Self-Attention]] in [[Transformer]] decoders, while inference remains strictly sequential: token tᵢ cannot be drawn until tᵢ₋₁ is committed. This sequential bottleneck motivates a family of inference-time optimisations including [[Key-Value Cache]], grouped-query attention, [[Speculative Decoding]], and continuous batching. The autoregressive objective scales extraordinarily well: the empirical [[Scaling Laws]] established by Kaplan et al. (2020) and Hoffmann et al. (2022) show validation loss decreasing as a power-law in model size, training tokens, and compute, underpinning the decade-long trend of increasingly capable decoder-only models. Autoregressive models contrast sharply with [[Diffusion Model]] approaches that denoise sequences in parallel across many refinement steps, [[Masked Language Model]] architectures (BERT-family) that predict masked tokens in bidirectional context without a generation order, [[Variational Autoencoder]] frameworks that maximise evidence lower bounds, and [[Generative Adversarial Network]] methods that lack an explicit likelihood. Recent hybrid research (Masked Autoregressive Diffusion, AR-Diffusion, MAR from Li et al. 2024) explores unifying the parallelism of diffusion with the exact likelihood and KV-cache-friendliness of autoregressive decoding, signalling that the boundary between paradigms is actively dissolving as of 2025-2026.
 
@@ -431,13 +386,13 @@ public: true
       ObjectSomeValuesFrom(ai:supports ai:AgenticBehaviour))
     ```
   - ## About
-    - Autoregressive modelling is one of the oldest and most theoretically principled paradigms in statistical machine learning, with roots in classical time-series analysis — the Box-Jenkins ARIMA framework from the 1970s formalised autoregressive (AR) processes for linear stationary series. The deep-learning era transformed this into a non-linear, high-dimensional paradigm: Sutskever et al. (2011) applied RNNs to sequence modelling autoregressively; Graves (2013) demonstrated character-level language modelling with LSTMs; and van den Oord et al. (2016) introduced WaveNet and PixelCNN, establishing that deep convolutional autoregressive models could generate perceptually convincing audio and images pixel-by-pixel. The pivotal architectural shift came with Vaswani et al.'s Transformer (2017), which replaced the sequential hidden-state computation of RNNs with parallel self-attention, enabling training on the massive corpora needed to achieve human-competitive language understanding while preserving the causal left-to-right generation structure at inference time.
+    - Autoregressive modelling is one of the oldest and most theoretically principled paradigms in statistical machine learning, with roots in classical time-series analysis — the Box-Jenkins ARIMA framework from the 1970s formalised autoregressive (AR) processes for linear stationary series. The deep-learning era transformed this into a non-linear, high-dimensional paradigm: Sutskever et al. (2011) applied RNNs to sequence modelling autoregressively; Graves (2013) demonstrated character-level language modelling with LSTMs; and van den Oord et al. (2016) introduced WaveNet and PixelCNN, establishing that deep convolutional autoregressive models [private] generate perceptually convincing audio and images pixel-by-pixel. The pivotal architectural shift came with Vaswani et al.'s Transformer (2017), which replaced the sequential hidden-state computation of RNNs with parallel self-attention, enabling training on the massive corpora needed to achieve human-competitive language understanding while preserving the causal left-to-right generation structure at inference time.
     - The GPT series (Radford et al. 2018, 2019; Brown et al. 2020; OpenAI 2023) demonstrated that decoder-only autoregressive pre-training on internet-scale text, followed by lightweight fine-tuning or prompting, constitutes a unified approach to natural language understanding and generation. GPT-3's 175B-parameter model (2020) shocked the community with few-shot learning capabilities that emerged purely from scale, sparking the scaling law research programme of Kaplan et al. (2020) and Hoffmann et al. (2022) — the latter's Chinchilla work showing that compute-optimal training requires roughly equal token and parameter scaling, overturning the prior assumption that larger models trained on fixed data budgets were uniformly better. By 2023-2025, the ecosystem included LLaMA (Meta), Mistral, Falcon, Gemini (Google DeepMind), Claude (Anthropic), and a proliferating family of open-weight models, all built on the decoder-only autoregressive Transformer architecture with refinements including grouped-query attention, sliding-window attention, and rotary positional encodings (RoPE).
     - The defining strength of the autoregressive paradigm — exact likelihood evaluation under maximum likelihood training — carries a structural weakness: inference is fundamentally serial. Each generated token requires a full forward pass through the model (or a KV-cache lookup), making throughput proportional to the inverse of model depth and width. Production deployments in 2024-2026 address this through speculative decoding (a small draft model proposes batches of tokens verified in parallel by the main model, achieving 2-4x throughput gains), continuous batching, PagedAttention, and Flash Attention kernel optimisations. The 2026 research frontier explores whether truly parallel generation — either via diffusion-based or masked autoregressive hybrid approaches — can close the quality gap with sequential autoregressive decoding while eliminating its latency bottleneck.
   - ## Components and Architecture
     - **Chain-rule factorisation** — the joint sequence probability P(x₁, …, xₙ) = ∏ᵢ P(xᵢ | x<ᵢ) requires no independence assumption; any distribution over sequences has such a factorisation.
     - **[[Tokenisation]]** — raw input (text, audio waveform samples, image patches) is converted to discrete vocabulary tokens via [[Byte-Pair Encoding]] (BPE), WordPiece, or SentencePiece; the model learns embeddings for each token in a high-dimensional space (typically 2048–8192 dimensions).
-    - **[[Embedding Layer]]** — each token index is mapped to a dense vector; positional encodings (absolute, rotary RoPE, or ALiBi) are added to encode sequence order.
+    - **[[Embedding Layer]]** — each token [private] is mapped to a dense vector; positional encodings (absolute, rotary RoPE, or ALiBi) are added to encode sequence order.
     - **[[Decoder Stack]]** — a stack of L Transformer decoder layers, each comprising a [[Masked Self-Attention]] sublayer (causal mask prevents attending to future positions), a Feed-Forward Network sublayer, and residual connections with layer normalisation (pre-LN is standard in modern models).
     - **[[Masked Self-Attention]]** — scaled dot-product attention with a causal mask; enables O(n²) pairwise interactions but is parallelised across all training positions simultaneously; at inference, a [[Key-Value Cache]] stores computed K and V projections for all prior tokens.
     - **Language Model Head** — a linear projection from hidden dimension to vocabulary size V, followed by [[Softmax]] to produce token probabilities; at training, [[Cross-Entropy Loss]] against the ground-truth next token is backpropagated.
@@ -505,8 +460,8 @@ public: true
   - ## Future Directions (2026-2030)
     - **Test-time compute scaling** — the most immediate trajectory: allocating more autoregressive decoding steps for reasoning (chain-of-thought, internal monologue, self-correction) systematically improves output quality without additional training; process reward models and outcome reward models guide this search. The paradigm may eventually blur the boundary between training and inference.
     - **Hybrid autoregressive-diffusion** — models such as MAR, MDLM, and Block Diffusion aim to provide the tractable likelihood and KV-cache efficiency of autoregressive models with the parallel generation of diffusion; if successful this would fundamentally alter the latency profile of generation.
-    - **State Space Model competition** — Mamba-architecture models scale favourably in memory and compute for long sequences; if quality at 100B+ parameters matches Transformers, autoregressive SSMs could partially displace attention-based models for specific applications (streaming speech, long genomic sequences).
-    - **Long-context and infinite-context models** — context lengths of 1M-10M tokens are becoming feasible (Gemini 1.5 at 1M, Phi-3 at 128K); models that approach truly infinite context via hierarchical autoregressive architectures or memory-augmented generation could eliminate the need for separate retrieval systems.
+    - **State Space Model competition** — Mamba-architecture models scale favourably in memory and compute for long sequences; if quality at 100B+ parameters matches Transformers, autoregressive SSMs [private] partially displace attention-based models for specific applications (streaming speech, long genomic sequences).
+    - **Long-context and infinite-context models** — context lengths of 1M-10M tokens are becoming feasible (Gemini 1.5 at 1M, Phi-3 at 128K); models that approach truly infinite context via hierarchical autoregressive architectures or memory-augmented generation [private] eliminate the need for separate retrieval systems.
     - **Multimodal unification** — autoregressive models over unified vocabularies spanning text, image, audio, video, action, and code tokens (GPT-4o, Gemini 2.0, Chameleon) will deepen, likely converging on world-model-style autoregressive prediction over sensorimotor token streams.
     - **Efficient open models** — the Llama, Phi, Mistral, and Qwen families demonstrate that models with 3-14B parameters can approach frontier quality on many tasks; quantisation (GGUF, AWQ, GPTQ) enables deployment on consumer hardware. By 2028, edge-deployable autoregressive models with 7B parameters and 4-bit quantisation may handle most personal-device AI tasks.
     - **Formal verification and safety** — as autoregressive models are deployed in high-stakes domains (medical, legal, critical infrastructure), methods for bounding hallucination rates, provably constraining output spaces, and formally verifying factual claims will become essential research directions.

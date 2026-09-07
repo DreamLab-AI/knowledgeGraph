@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lumen
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Lumen is Unreal Engine's fully dynamic global illumination and reflections system that computes indirect lighting in real time without precomputed lightmaps. It uses a combination of screen-space tracing, software ray tracing against signed distance fields, and optional hardware ray tracing to produce diffuse interreflection and reflections that update as scenes and lights change. Lumen enables physically plausible lighting in interactive applications and games.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"}, {"@id": "urn:ngm:class:unreal-engine", "label": "Unreal Engine"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
+    ]
   },
   "quality": 0.72
 }

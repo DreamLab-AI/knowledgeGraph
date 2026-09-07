@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Operational Risk
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

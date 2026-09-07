@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agentic Harness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "agentic-harness",
   "title": "Agentic Harness",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Antigravity 2.0", "Software Development Tools"],
+  "vc:outboundWikilinks": [
+    "Antigravity 2.0",
+    "Software Development Tools"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:agent-layer", "label": "Agent Layer"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agent-layer",
+      "label": "Agent Layer"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agent-layer", "label": "Agent Layer"}, {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-layer",
+        "label": "Agent Layer"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

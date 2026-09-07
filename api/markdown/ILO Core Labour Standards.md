@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ILO Core Labour Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "The ILO Core Labour Standards are the fundamental principles and rights at work codified by the International Labour Organization, covering freedom of association and collective bargaining, the elimination of forced and child labour, non-discrimination, and a safe and healthy working environment. They are expressed through ratifiable conventions that member states commit to uphold. The standards form the baseline against which ethical sourcing and labour due-diligence are assessed.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"}],
-    "supports": [{"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
+    ]
   },
   "quality": 0.72
 }

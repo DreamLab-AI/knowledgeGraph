@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inventory Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -123,6 +119,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Inventory Management is the discipline of ordering, storing, tracking and controlling the stock of goods, components and materials an organisation holds across its supply chain. It seeks to balance the cost of holding stock against the risk of stock-outs, using forecasting, reorder policies and real-time visibility of quantities and locations. Modern implementations integrate barcodes, RFID and digital identifiers so that physical items can be reconciled against system records continuously.
   - Related concepts: [[Supply Chain Management]] [[Logistics]] [[Demand Forecasting]] [[Asset Tracking]] [[Traceability]]

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Energy Consumption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -159,36 +154,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:energy-consumption:5ee6f4ddf8e9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0092e7c9c96b36a05a567163fe02ee5765af741c80a15c051dee650af7a28946"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainability]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

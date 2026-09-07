@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Signed Distance Function
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,15 +20,32 @@ public: true
   "definition": "A signed distance function (SDF) is a scalar field that returns, for any point in space, the distance to the nearest surface of a shape, with the sign indicating whether the point is inside (negative) or outside (positive). The surface itself is the zero level set where the function equals zero. SDFs provide a compact implicit representation of geometry that supports efficient ray marching, smooth shape blending, and analytic normals, and they underpin procedural rendering, collision queries, and learned 3D reconstruction in neural networks.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:gpu", "label": "GPU"}
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
     ]
   },
   "quality": 0.8

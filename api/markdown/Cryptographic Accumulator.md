@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cryptographic Accumulator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "A cryptographic accumulator is a primitive that compresses a large set of elements into a single short value while still permitting compact proofs that a given element is (or is not) a member of the set. Constructions based on RSA groups, bilinear pairings, or Merkle trees allow membership witnesses whose size is independent of the set's cardinality, and dynamic accumulators support efficient addition and removal of elements. Accumulators underpin scalable membership proofs in anonymous credentials, certificate revocation, and stateless blockchain clients.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asymmetric Cryptography
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,4 +171,3 @@ public: true
   - In blockchain systems, asymmetric cryptography is the foundational primitive: every wallet address is derived from a public key, and every transaction is authorised by a digital signature produced with the corresponding private key. Bitcoin uses secp256k1 ECDSA; Ethereum uses the same curve; newer chains (Solana, Cardano) use Ed25519. Certificate transparency logs, SSH, code-signing pipelines, hardware security modules (HSMs), and secure enclave attestation all depend critically on asymmetric primitives. The FIDO2/WebAuthn standard for passwordless authentication exposes asymmetric key pairs via hardware authenticators.
 
   - As of 2024–2025, the cryptographic community is actively transitioning towards post-quantum cryptography (PQC) in anticipation of sufficiently capable quantum computers breaking RSA and ECC via Shor's algorithm. NIST finalised its PQC standards in 2024, standardising ML-KEM (Kyber) for key encapsulation and ML-DSA (Dilithium) and SLH-DSA (SPHINCS+) for digital signatures. Major cloud providers (AWS, Google, Cloudflare) and TLS implementations are deploying hybrid classic/PQC handshakes to provide harvest-now-decrypt-later protection, while blockchain ecosystems are exploring quantum-resistant signature schemes for future migration.
-

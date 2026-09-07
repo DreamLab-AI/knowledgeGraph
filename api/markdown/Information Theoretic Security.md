@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Information Theoretic Security
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

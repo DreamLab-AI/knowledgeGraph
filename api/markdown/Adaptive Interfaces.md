@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - AdaptiveInterfaces
----
-
-# Adaptive Interfaces
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,19 +20,42 @@ aliases:
   "definition": "Adaptive interfaces are user interface systems that dynamically reconfigure their layout, content, modality, or interaction style in response to the current user's context, behaviour, preferences, or inferred cognitive state. They employ user modelling, machine learning, and context-aware computing to personalise the interaction layer without requiring manual configuration. The goal is to optimise usability, accessibility, and task performance across diverse user populations and situational conditions.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:context-awareness", "label": "Context Awareness"}
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:context-awareness",
+        "label": "Context Awareness"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:personalised-learning", "label": "Personalised Learning"},
-      {"@id": "urn:ngm:class:accessible-experience", "label": "Accessible Experience"}
+      {
+        "@id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:accessible-experience",
+        "label": "Accessible Experience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
-      {"@id": "urn:ngm:class:attention-aware-interaction", "label": "Attention Aware Interaction"}
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:attention-aware-interaction",
+        "label": "Attention Aware Interaction"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +76,3 @@ aliases:
   - In practice, adaptive interfaces appear across domains: intelligent tutoring systems that adjust problem difficulty, enterprise dashboards that surface relevant KPIs based on role and recent queries, mobile applications that simplify layouts under low-attention conditions, and accessibility tools that switch modality for users with situational impairments. Frameworks such as W3C WCAG and ETSI accessibility standards provide normative baselines that adaptive interfaces must meet or exceed, creating a floor beneath which personalisation cannot descend.
 
   - As of 2024–2025, large language models and multimodal foundation models are enabling a new generation of conversational adaptive interfaces that negotiate interface state through natural language. Research challenges include privacy-preserving adaptation (balancing personalisation against data minimisation), cross-device continuity, and evaluation methodologies that capture long-term utility rather than immediate engagement metrics. The proliferation of spatial computing platforms is extending adaptive interface principles into three-dimensional interaction spaces.
-

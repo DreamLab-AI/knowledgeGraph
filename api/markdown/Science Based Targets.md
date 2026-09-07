@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Science-Based Targets
----
-
-# Science Based Targets
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,12 +20,45 @@ aliases:
   "definition": "Science Based Targets (SBTs) are greenhouse gas emission reduction targets set by companies in alignment with the level of decarbonisation required by climate science to limit global warming to 1.5°C above pre-industrial levels, as defined by the Science Based Targets initiative (SBTi). Targets are validated by the SBTi against approved methods including absolute contraction, sectoral decarbonisation approach, and economy-wide linear regression, and must cover Scope 1 and Scope 2 emissions with a growing requirement to include Scope 3.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability-framework", "label": "Sustainability Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability-framework",
+      "label": "Sustainability Framework"
+    }
+  ],
   "relations": {
-    "standardizedBy": [{"@id": "urn:ngm:class:sbti", "label": "SBTi"}],
-    "requires": [{"@id": "urn:ngm:class:ghg-protocol-corporate-standard", "label": "GHG Protocol Corporate Standard"}, {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"}],
-    "enables": [{"@id": "urn:ngm:class:net-zero-targets", "label": "Net Zero Targets"}, {"@id": "urn:ngm:class:decarbonisation", "label": "Decarbonisation"}],
-    "relatedTo": [{"@id": "urn:ngm:class:paris-agreement", "label": "Paris Agreement"}]
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:sbti",
+        "label": "SBTi"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ghg-protocol-corporate-standard",
+        "label": "GHG Protocol Corporate Standard"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      },
+      {
+        "@id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
+    ]
   },
   "quality": 0.8
 }

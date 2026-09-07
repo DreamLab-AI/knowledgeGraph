@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-060-instant-ngp
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-060-instant-ngp:0273f1481602",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4c6a522df4fb9c02ca8d361e1521c6f275f2e3324934e6272afeecaa1b893b32"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Neural Radiance Fields]]",
-      "resolved": "urn:visionflow:linked:neural-radiance-fields",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Differentiable Rendering]]",
-      "resolved": "urn:visionflow:linked:differentiable-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Novel View Synthesis]]",
-      "resolved": "urn:visionflow:linked:novel-view-synthesis",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NeRF]]",
-      "resolved": "urn:visionflow:linked:ne-rf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Rendering]]",
-      "resolved": "urn:visionflow:linked:neural-rendering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Instant-NGP (Instant Neural Graphics Primitives) is a method that uses a multi-resolution hash encoding to train and evaluate neural graphics representations such as neural radiance fields far faster than earlier approaches.

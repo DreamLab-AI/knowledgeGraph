@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Harness Configuration Packs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,45 +7,162 @@ public: true
   "title": "Harness Configuration Packs",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
-    {"@id": "urn:visionflow:linked:ide-coding-agents", "vc:label": "IDE Coding Agents"},
-    {"@id": "urn:visionflow:linked:terminal-coding-agents", "vc:label": "Terminal Coding Agents"},
-    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
-    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:autonomous-coding", "vc:label": "Autonomous Coding"},
-    {"@id": "urn:visionflow:linked:hook-system", "vc:label": "Hook System"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks"},
-    {"@id": "urn:visionflow:linked:plan-and-execute-pattern", "vc:label": "Plan-and-Execute Pattern"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:multi-agent-collaboration", "vc:label": "Multi-Agent Collaboration"},
-    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
-    {"@id": "urn:visionflow:linked:prompt-template", "vc:label": "Prompt Template"},
-    {"@id": "urn:visionflow:linked:structured-output", "vc:label": "Structured Output"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain-of-Thought"},
-    {"@id": "urn:visionflow:linked:observability-stack", "vc:label": "Observability Stack"},
-    {"@id": "urn:visionflow:linked:software-engineering", "vc:label": "Software Engineering"},
-    {"@id": "urn:visionflow:linked:tool-registry", "vc:label": "Tool Registry"},
-    {"@id": "urn:visionflow:linked:re-act-pattern", "vc:label": "ReAct Pattern"},
-    {"@id": "urn:visionflow:linked:code-review", "vc:label": "Code Review"},
-    {"@id": "urn:visionflow:linked:browser-automation", "vc:label": "Browser Automation"},
-    {"@id": "urn:visionflow:linked:ai-agent-coordination", "vc:label": "AI Agent Coordination"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:tree-of-thoughts", "vc:label": "Tree of Thoughts"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:autonomous-coding", "vc:label": "Autonomous Coding"},
-    {"@id": "urn:visionflow:linked:agent-memory-layers", "vc:label": "Agent Memory Layers"},
-    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"}
+    {
+      "@id": "urn:visionflow:linked:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:ide-coding-agents",
+      "vc:label": "IDE Coding Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:terminal-coding-agents",
+      "vc:label": "Terminal Coding Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-coding",
+      "vc:label": "Autonomous Coding"
+    },
+    {
+      "@id": "urn:visionflow:linked:hook-system",
+      "vc:label": "Hook System"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks",
+      "vc:label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:plan-and-execute-pattern",
+      "vc:label": "Plan-and-Execute Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-collaboration",
+      "vc:label": "Multi-Agent Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-evaluation-benchmarks",
+      "vc:label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-template",
+      "vc:label": "Prompt Template"
+    },
+    {
+      "@id": "urn:visionflow:linked:structured-output",
+      "vc:label": "Structured Output"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain-of-Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability-stack",
+      "vc:label": "Observability Stack"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-engineering",
+      "vc:label": "Software Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-registry",
+      "vc:label": "Tool Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-review",
+      "vc:label": "Code Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:browser-automation",
+      "vc:label": "Browser Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-coordination",
+      "vc:label": "AI Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:tree-of-thoughts",
+      "vc:label": "Tree of Thoughts"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-coding",
+      "vc:label": "Autonomous Coding"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory-layers",
+      "vc:label": "Agent Memory Layers"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-evaluation-benchmarks",
+      "vc:label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -73,60 +185,91 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:prompt-template", "label": "Prompt Template"},
-      {"@id": "urn:ngm:class:hook-system", "label": "Hook System"},
-      {"@id": "urn:ngm:class:tool-registry", "label": "Tool Registry"},
-      {"@id": "urn:ngm:class:slash-command-library", "label": "Slash Command Library"}
+      {
+        "@id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      },
+      {
+        "@id": "urn:ngm:class:hook-system",
+        "label": "Hook System"
+      },
+      {
+        "@id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "@id": "urn:ngm:class:slash-command-library",
+        "label": "Slash Command Library"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:agent-harness", "label": "Agent Harness"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:agent-harness",
+        "label": "Agent Harness"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding"},
-      {"@id": "urn:ngm:class:multi-agent-collaboration", "label": "Multi-Agent Collaboration"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:code-review", "label": "Code Review"},
-      {"@id": "urn:ngm:class:browser-automation", "label": "Browser Automation"}
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-collaboration",
+        "label": "Multi-Agent Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan-and-Execute Pattern"},
-      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain-of-Thought"}
+      {
+        "@id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:terminal-coding-agents", "label": "Terminal Coding Agents"},
-      {"@id": "urn:ngm:class:ide-coding-agents", "label": "IDE Coding Agents"},
-      {"@id": "urn:ngm:class:multi-agent-orchestration-frameworks", "label": "Multi-Agent Orchestration Frameworks"}
+      {
+        "@id": "urn:ngm:class:terminal-coding-agents",
+        "label": "Terminal Coding Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ide-coding-agents",
+        "label": "IDE Coding Agents"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "vc:termId": "AI-9912",
   "vc:schemaVersion": 2
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:harness-configuration-packs:b2c3d4e5f6a1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:harness-configuration-packs"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Agent Harness]]", "resolved": "urn:visionflow:linked:agent-harness", "kind": "ResolvedLink"},
-    {"raw": "[[IDE Coding Agents]]", "resolved": "urn:visionflow:linked:ide-coding-agents", "kind": "ResolvedLink"},
-    {"raw": "[[Terminal Coding Agents]]", "resolved": "urn:visionflow:linked:terminal-coding-agents", "kind": "ResolvedLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
-    {"raw": "[[Prompt Engineering]]", "resolved": "urn:visionflow:linked:prompt-engineering", "kind": "StubLink"},
-    {"raw": "[[Hook System]]", "resolved": "urn:visionflow:linked:hook-system", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent Orchestration Frameworks]]", "resolved": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "kind": "StubLink"},
-    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "ResolvedLink"},
-    {"raw": "[[Autonomous Coding]]", "resolved": "urn:visionflow:linked:autonomous-coding", "kind": "StubLink"},
-    {"raw": "[[Plan-and-Execute Pattern]]", "resolved": "urn:visionflow:linked:plan-and-execute-pattern", "kind": "StubLink"}
-  ]
 }
 ```
 
@@ -252,7 +395,7 @@ public: true
       ObjectSomeValuesFrom(ai:uses ai:FunctionCalling))
     ```
   - ## About
-    Harness configuration packs emerged as a distinct engineering practice in the second half of 2025, when developers discovered that the performance delta between a raw coding agent and a carefully configured one was often larger than the performance delta between frontier models. The foundational insight — that [[Prompt Engineering]] applied systematically as versioned, modular configuration files could turn a general-purpose AI assistant into a disciplined virtual team — predates the term "harness configuration pack" but crystallised around the Claude Code ecosystem from mid-2025 onward. The category is characterised by operating entirely above the agent runtime layer: unlike [[IDE Coding Agents]] (which extend the IDE with new panels and approval workflows) or [[Agent Frameworks]] (which provide new runtimes and tool orchestration infrastructure), harness configuration packs work exclusively through the configuration interfaces that existing agents already expose — CLAUDE.md files, skill directories, slash-command registries, hook definitions, and [[Model Context Protocol]] server lists — and thus compose cleanly with any conforming agent without requiring code changes. This zero-runtime-change composability is what distinguishes harness configuration packs from [[Agent Frameworks]] proper: a pack author does not need to distribute a binary, maintain a dependency tree, or manage API compatibility across agent version upgrades; they need only maintain Markdown files and shell scripts.
+    Harness configuration packs emerged as a distinct engineering practice in the second half of 2025, when developers discovered that the performance delta between a raw coding agent and a carefully configured one was often larger than the performance delta between frontier models. The foundational insight — that [[Prompt Engineering]] applied systematically as versioned, modular configuration files [private] turn a general-purpose AI assistant into a disciplined virtual team — predates the term "harness configuration pack" but crystallised around the Claude Code ecosystem from mid-2025 onward. The category is characterised by operating entirely above the agent runtime layer: unlike [[IDE Coding Agents]] (which extend the IDE with new panels and approval workflows) or [[Agent Frameworks]] (which provide new runtimes and tool orchestration infrastructure), harness configuration packs work exclusively through the configuration interfaces that existing agents already expose — CLAUDE.md files, skill directories, slash-command registries, hook definitions, and [[Model Context Protocol]] server lists — and thus compose cleanly with any conforming agent without requiring code changes. This zero-runtime-change composability is what distinguishes harness configuration packs from [[Agent Frameworks]] proper: a pack author does not need to distribute a binary, maintain a dependency tree, or manage API compatibility across agent version upgrades; they need only maintain Markdown files and shell scripts.
 
     The technical core of all harness configuration packs is a two-tier progressive disclosure architecture. At session start, the harness injects into the agent's context a bootstrap file (typically a CLAUDE.md or `using-superpowers` meta-skill) that instructs the [[Large Language Model]] that a skill library exists and that it should pattern-match incoming user intent against each skill's name and short description — a process that consumes only a handful of tokens per skill rather than the full skill body. When the model determines a skill is relevant (or the user invokes it explicitly via a slash command), the full SKILL.md body is read into the conversation context on demand. This progressive disclosure mechanism keeps harness overhead negligible for simple tasks while making the full configuration depth available for complex ones. Hooks provide the enforcement layer that pure instruction cannot: a PreToolUse hook can veto a `rm -rf` command, a PostToolUse hook can run a formatter after every file write, and a UserPromptSubmit hook can prepend global quality standards to every user message — actions that fire deterministically regardless of whether the model "remembers" to follow the corresponding instruction. This distinction between instructed behaviour and enforced behaviour is fundamental to harness engineering: any safety or quality requirement that must be met even when the model is distracted, misled, or operating under a long [[Context Window]] should be implemented as a hook, not as an instruction in CLAUDE.md.
 
@@ -309,11 +452,11 @@ public: true
     - **Test-Driven Development Enforcement**: Packs implementing TDFlow (arxiv:2510.23761) and TDAD (arxiv:2603.17973) patterns install hooks that enforce the test-before-implementation discipline: a PreToolUse(file-write) hook verifies that a test file for the target implementation file has been written or updated in the current session before allowing the implementation file write to proceed. This enforcement converts the TDD discipline from an instruction ("you should write tests first") into a runtime constraint that the agent cannot bypass, even under pressure to produce working code quickly.
 
   - ## Security Implications of Harness Configuration Packs
-    Harness configuration packs that include hook-based enforcement provide a significant security advantage over unaugmented coding agents, but they also introduce new risk surfaces. CLAUDE.md files are read into the [[Large Language Model]]'s context and therefore susceptible to indirect prompt injection: a maliciously crafted repository file that the agent reads as context could instruct the model to ignore or override rules stated in CLAUDE.md. Hooks, being executed outside the model's context by the harness process, are not susceptible to this attack — they enforce their constraints regardless of what the model "believes" it has been instructed to do. The security implication is that safety-critical constraints (no credential exfiltration, no command injection, no push to production without multi-party approval) must be implemented as hooks rather than CLAUDE.md instructions.
+    Harness configuration packs that include hook-based enforcement provide a significant security advantage over unaugmented coding agents, but they also introduce new risk surfaces. CLAUDE.md files are read into the [[Large Language Model]]'s context and therefore susceptible to indirect prompt injection: a maliciously crafted repository file that the agent reads as context [private] instruct the model to ignore or override rules stated in CLAUDE.md. Hooks, being executed outside the model's context by the harness process, are not susceptible to this attack — they enforce their constraints regardless of what the model "believes" it has been instructed to do. The security implication is that safety-critical constraints (no credential exfiltration, no command injection, no push to production without multi-party approval) must be implemented as hooks rather than CLAUDE.md instructions.
 
     Everything Claude Code's security-reviewer instinct provides a practitioner blueprint: it fires automatically on every file-write tool call and analyses the written content against OWASP Top 10 patterns (SQL injection, cross-site scripting, insecure deserialisation, hard-coded credentials, etc.) before the write is committed to disk. This is structurally analogous to a lint-on-save workflow, but operating at semantic rather than syntactic level and invoked by the harness hook rather than by the developer's editor configuration. For UK organisations subject to Cyber Essentials, ISO 27001, or NCSC Supply Chain Security guidance, this pattern provides a documented, auditable control point for AI-generated code security that can be cited in certification evidence.
 
-    Harness packs that register [[Model Context Protocol]] servers also expand the attack surface: a compromised MCP server that injects malicious tool results into the agent's context could steer the agent's subsequent actions. Pack authors should document MCP server trust levels and practitioners should apply the principle of least privilege — an MCP server that provides read-only database query access should not also have write access, even if the underlying database supports it. The Paradime harness engineering guide (2026) provides a permissions matrix template for MCP server trust configuration that has been adopted as a best-practice reference in the practitioner community.
+    Harness packs that register [[Model Context Protocol]] servers also expand the attack surface: a compromised MCP server that injects malicious tool results into the agent's context [private] steer the agent's subsequent actions. Pack authors should document MCP server trust levels and practitioners should apply the principle of least privilege — an MCP server that provides read-only database query access should not also have write access, even if the underlying database supports it. The Paradime harness engineering guide (2026) provides a permissions matrix template for MCP server trust configuration that has been adopted as a best-practice reference in the practitioner community.
 
   - ## Academic Context
     Harness configuration packs as a formal category have limited dedicated academic literature, having emerged primarily from engineering practice. The closest academic antecedents are meta-prompting (Reynolds & McDonell, 2021; Suzgun & Kalai, 2024), which studied prompt templates that instruct models how to decompose and approach tasks; and [[Chain-of-Thought]] prompting (Wei et al., 2022), which established that structured reasoning traces in the prompt improve model performance on complex tasks. The systematic application of these techniques at harness-configuration level — rather than single-prompt level — represents an engineering contribution that predates formal academic study of the phenomenon. Suzgun and Kalai (2024)'s meta-prompting framework is the closest academic predecessor to skill-library design: like SKILL.md skills, meta-prompts instruct the model about when and how to engage specific reasoning strategies, rather than providing the strategy directly in the system prompt.
@@ -322,7 +465,7 @@ public: true
 
     The Claw-SWE-Bench benchmark (arxiv:2606.12344, 2026) implicitly evaluates harness adapter quality by demonstrating that the same backbone model (GLM 5.1) scores 19.1% with a minimal adapter and 73.4% with a full adapter on 350 multilingual issue-resolution instances, quantifying the performance contribution of harness configuration independent of model capability. This result — a 3.8x performance ratio attributable to adapter and harness design rather than model capability — is the strongest empirical evidence to date for the claim that harness engineering is as important as model selection for practical coding-agent performance. The TDAD paper (arxiv:2603.17973, 2026) formalises test-driven agentic development as a workflow discipline, providing a graph-based impact analysis framework that quantifies regression risk from agent-generated patches — a pattern that sophisticated harness packs now encode as default workflow discipline.
 
-    The [[Retrieval-Augmented Generation]] literature (Lewis et al., 2020 and subsequent work) provides the theoretical basis for harness packs that include semantic memory layers: by pre-populating the [[Context Window]] with retrieved architectural context at session start, memory-augmented harness packs enable the agent to reason about project history without requiring the developer to re-explain it. The MCP-connected vector database pattern (agent retrieves relevant code snippets from a vector search index via MCP tool call before beginning file edits) is the harness-engineering realisation of RAG within the coding-agent domain.
+    The [[Retrieval-Augmented Generation]] literature (Lewis et al., 2020 and subsequent work) provides the theoretical basis for harness packs that include semantic memory layers: by pre-populating the [[Context Window]] with retrieved architectural context at session start, memory-augmented harness packs enable the agent to reason about project history without requiring the developer to re-explain it. The MCP-connected vector database pattern (agent retrieves relevant code snippets from a vector search [private] via MCP tool call before beginning file edits) is the harness-engineering realisation of RAG within the coding-agent domain.
 
   - ## Historical Timeline
     - **2024 H2**: Early CLAUDE.md configurations circulate in the Claude Code community; developers share project-specific configuration files on GitHub and forums. The concept is rudimentary: a single markdown file with project context and a few conventions.

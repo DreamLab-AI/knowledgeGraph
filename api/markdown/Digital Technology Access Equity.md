@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Equity]]
-# Digital Technology Access Equity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -175,31 +169,6 @@ elevatedFrom:: [[Equity]]
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:equity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8f3936a2e1e13ceb15705a468607358fd111755bb4745a7d11bcb3a54175a9cd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

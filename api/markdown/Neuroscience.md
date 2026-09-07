@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Neuroscience
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

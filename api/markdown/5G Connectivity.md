@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 5G Connectivity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +21,53 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:5-g", "label": "5G"}
+    {
+      "@id": "urn:ngm:class:5-g",
+      "label": "5G"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:xr-applications", "label": "XR Applications"},
-      {"@id": "urn:ngm:class:io-t-infrastructure", "label": "IoT Infrastructure"},
-      {"@id": "urn:ngm:class:low-latency", "label": "Low Latency"}
+      {
+        "@id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:5-g-network", "label": "5G Network"},
-      {"@id": "urn:ngm:class:multi-access-edge-computing", "label": "MultiAccessEdgeComputing"},
-      {"@id": "urn:ngm:class:network-function-virtualization", "label": "Network Function Virtualization"}
+      {
+        "@id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "@id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      },
+      {
+        "@id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:guaranteed-bandwidth", "label": "Guaranteed Bandwidth"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:3-gpp", "label": "3GPP"}
+      {
+        "@id": "urn:ngm:class:guaranteed-bandwidth",
+        "label": "Guaranteed Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +88,3 @@ public: true
   - The practical impact of 5G connectivity is most visible in fixed wireless access (providing home broadband via 5G radio rather than fixed fibre), enterprise private networks for Industry 4.0 manufacturing and logistics, and emerging cloud XR applications where headset rendering is offloaded to edge servers. V2X (vehicle-to-everything) communications use 5G's low latency for cooperative driving applications. Smart city infrastructure connects environmental sensors, traffic management systems, and public safety networks over 5G.
 
   - In 2024–2025, 5G connectivity is maturing from coverage-building to capability-differentiation. Network slicing is being commercialised by operators for vertical industries; neutral-host deployments extend indoor 5G coverage; and AI-driven radio resource management (introduced in 3GPP Release 18) optimises spectrum usage dynamically. XR headset manufacturers are partnering with operators to validate split-rendering architectures that exploit 5G edge compute, targeting sub-20 ms total glass-to-glass latency for immersive spatial experiences. Satellite-terrestrial integration under Release 17 NTN specifications extends 5G connectivity to remote and maritime environments.
-

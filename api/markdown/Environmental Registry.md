@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environmental Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -99,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:environmental-registry:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5d9d2e2288661ed59bbc49cd6573038dd08ff2c289435d6796438d48dd5723e9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A catalogued, authoritative store of descriptors for physical or virtual environments, recording their spatial bounds, safety parameters, hazard zones, and compliance status. XR systems query the environmental registry during session initialisation to validate that the current space meets operational and safety requirements before permitting immersive interactions.

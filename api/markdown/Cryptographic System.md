@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cryptographic System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,102 +173,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cryptographic-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e8a56cbdc90beb3dc8539c8a916c1ca18d9fb113b88c85dfa65462e7ee51571d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptographic Hash Function]]",
-      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FIPS 140-3 Security Requirements]]",
-      "resolved": "urn:visionflow:linked:fips-140-3-security-requirements",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Homomorphic Encryption]]",
-      "resolved": "urn:visionflow:linked:homomorphic-encryption",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 18033 Encryption Algorithms]]",
-      "resolved": "urn:visionflow:linked:iso-iec-18033-encryption-algorithms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST Cryptographic Standards]]",
-      "resolved": "urn:visionflow:linked:nist-cryptographic-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Threshold Cryptography]]",
-      "resolved": "urn:visionflow:linked:threshold-cryptography",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:owl:class:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Merkle Tree]]",
-      "resolved": "urn:visionflow:owl:class:merkle-tree",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Public Key Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:public-key-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments. In blockchain contexts, cryptographic systems form the foundational security layer enabling trustless operation through mathematical guarantees rather than trusted intermediaries. These systems encompass cryptographic hash functions for data integrity verification, digital signature schemes for authentication and authorization, encryption mechanisms for confidentiality, and advanced protocols like zero-knowledge proofs for privacy-preserving verification. Blockchain cryptographic systems must satisfy rigorous security requirements including collision resistance for hash functions, computational infeasibility of private key recovery from public keys, and resistance to quantum computing attacks in next-generation systems. The security guarantees provided by cryptographic systems enable blockchain's core properties: immutability through hash chaining, ownership verification through digital signatures, and transaction validity through cryptographic proofs, all without requiring trust in central authorities.
 
@@ -374,7 +273,7 @@ public: true
 
   - Blockchain cryptographic systems integrate three primary primitive types: hash functions transform arbitrary data into fixed-size digests with collision resistance and preimage resistance properties critical for block linking and Merkle tree verification; digital signatures enable provable authorship and authorization through public-key cryptography where private keys sign messages and corresponding public keys verify signatures without revealing the private key; and advanced protocols like zero-knowledge proofs allow verification of statements (e.g., "I have sufficient balance") without revealing underlying data (e.g., the actual balance), enabling privacy-preserving transactions.
 
-  - The security strength of cryptographic systems is measured in "bits of security" representing the computational effort required to break the system—modern blockchain systems typically require 128-256 bits of security, meaning attackers would need 2^128 to 2^256 operations to compromise the system. However, quantum computing threatens current cryptographic assumptions: Shor's algorithm could break RSA and elliptic curve signatures, driving research into post-quantum cryptographic systems using lattice-based, hash-based, or code-based algorithms resistant to quantum attacks.
+  - The security strength of cryptographic systems is measured in "bits of security" representing the computational effort required to break the system—modern blockchain systems typically require 128-256 bits of security, meaning attackers would need 2^128 to 2^256 operations to compromise the system. However, quantum computing threatens current cryptographic assumptions: Shor's algorithm [private] break RSA and elliptic curve signatures, driving research into post-quantum cryptographic systems using lattice-based, hash-based, or code-based algorithms resistant to quantum attacks.
 
   - ### Key Characteristics
     - **Mathematical Security**: Security derived from computational hardness rather than secrecy

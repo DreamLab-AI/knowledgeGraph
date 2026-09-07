@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Processing Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-processing-hardware:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d442c028a064e55bb8f6834c82d517ecf10de46c24a468576a19e7cefbace2e2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Processing]]",
-      "resolved": "urn:visionflow:linked:ai-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cooling Systems]]",
-      "resolved": "urn:visionflow:linked:cooling-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[High-Bandwidth Memory]]",
-      "resolved": "urn:visionflow:linked:high-bandwidth-memory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Immersive Computing]]",
-      "resolved": "urn:visionflow:linked:immersive-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Power Infrastructure]]",
-      "resolved": "urn:visionflow:linked:power-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computing Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:computing-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:owl:class:real-time-rendering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The computing infrastructure including GPUs, CPUs, specialized accelerators, and edge computing devices that power metaverse applications, virtual reality experiences, and immersive environments, providing the massive processing capabilities required for real-time 3D rendering, AI inference, and distributed computing.

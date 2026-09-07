@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ISO/IEC 24760
----
-
-# ISO-IEC 24760
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,32 +53,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:iso-iec-24760:e0becb537130",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b37cb4c616b0d3f28c80ca01d815866045a57ce859835a94fbfc688a25d9d5ee"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An ISO/IEC standard, in multiple parts, providing a framework for identity management, including terminology and concepts. It defines core concepts for managing identity information.

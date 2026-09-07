@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Training Dataset Metadata
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,57 +56,70 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"}
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"}
+      {
+        "@id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-transparency", "label": "Model Transparency"},
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"}
+      {
+        "@id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:provenance-standard", "label": "Provenance Standard"},
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}
+      {
+        "@id": "urn:ngm:class:provenance-standard",
+        "label": "Provenance Standard"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:training-dataset-metadata:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:58ad47761f710e84368e70a7bd8fee20ddfdce06c718f31dc1faa17b6727d03a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ModelArchitecture]]",
-      "resolved": "urn:visionflow:owl:class:model-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A training dataset metadata component in the Artificial Intelligence domain that required by AiModelCard.

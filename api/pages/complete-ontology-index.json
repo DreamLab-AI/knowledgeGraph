@@ -1,11 +1,11 @@
 {
   "id": "urn:visionflow:page:28c729f4dfe35badc87d9e73376ba77bbe08836d3fc95a68ff4f5e1b331191ee",
-  "title": "COMPLETE ONTOLOGY INDEX",
+  "title": "COMPLETE ONTOLOGY [private]",
   "slug": "complete-ontology-index",
   "public": true,
   "classIri": "urn:ngm:class:complete-ontology-index",
   "domain": "spatial-computing",
-  "definition": "A comprehensive reference catalogue documenting and interconnecting all ontology terms, semantic classifications, and knowledge relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire knowledge base, serving as the master pointer for all class hierarchies and inter-domain relations.",
+  "definition": "A comprehensive reference catalogue documenting and interconnecting all ontology terms, semantic classifications, and knowledge relationships across multiple domains and knowledge graphs. This [private] enables discovery, navigation, and semantic reasoning across the entire knowledge base, serving as the master pointer for all class hierarchies and inter-domain relations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",

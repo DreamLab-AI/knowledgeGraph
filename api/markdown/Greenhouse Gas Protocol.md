@@ -1,37 +1,123 @@
----
-public: true
----
-
-# Greenhouse Gas Protocol
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:greenhouse-gas-protocol", "@type":"Page", "title":"Greenhouse Gas Protocol", "vc:slug":"greenhouse-gas-protocol", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:greenhouse-gas-protocol",
+  "@type": "Page",
+  "title": "Greenhouse Gas Protocol",
+  "vc:slug": "greenhouse-gas-protocol",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:greenhouse-gas-protocol",
-  "@type":"Class",
-  "label":"Greenhouse Gas Protocol",
-  "definition":"The Greenhouse Gas Protocol is the most widely used set of standards for measuring and reporting greenhouse gas emissions across organisations and value chains. It defines the categorisation of emissions into Scope 1 direct emissions, Scope 2 purchased energy and Scope 3 value-chain emissions, and provides accounting and reporting principles. Developed by the World Resources Institute and the World Business Council for Sustainable Development, it underpins corporate carbon accounting and disclosure.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}],
-  "relations":{
-    "standardizedBy":[{"@id":"urn:ngm:class:disclosure","label":"Disclosure"}],
-    "requires":[{"@id":"urn:ngm:class:scope-3-emissions","label":"Scope 3 Emissions"},{"@id":"urn:ngm:class:materiality-assessment","label":"Materiality Assessment"}],
-    "dependsOn":[{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}],
-    "enables":[{"@id":"urn:ngm:class:sustainability-reporting","label":"Sustainability Reporting"},{"@id":"urn:ngm:class:esg-reporting","label":"ESG Reporting"}],
-    "supports":[{"@id":"urn:ngm:class:net-zero","label":"Net Zero"},{"@id":"urn:ngm:class:carbon-credits","label":"Carbon Credits"}],
-    "implements":[{"@id":"urn:ngm:class:tcfd","label":"TCFD"}],
-    "relatedTo":[{"@id":"urn:ngm:class:issb","label":"ISSB"},{"@id":"urn:ngm:class:climate-change","label":"Climate Change"},{"@id":"urn:ngm:class:emissions-trading-scheme","label":"Emissions Trading Scheme"},{"@id":"urn:ngm:class:esg","label":"ESG"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:climate-risk","label":"Climate Risk"}],
-    "partOf":[{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:greenhouse-gas-protocol",
+  "@type": "Class",
+  "label": "Greenhouse Gas Protocol",
+  "definition": "The Greenhouse Gas Protocol is the most widely used set of standards for measuring and reporting greenhouse gas emissions across organisations and value chains. It defines the categorisation of emissions into Scope 1 direct emissions, Scope 2 purchased energy and Scope 3 value-chain emissions, and provides accounting and reporting principles. Developed by the World Resources Institute and the World Business Council for Sustainable Development, it underpins corporate carbon accounting and disclosure.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:carbon-accounting",
+      "label": "Carbon Accounting"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "@id": "urn:ngm:class:climate-change",
+        "label": "Climate Change"
+      },
+      {
+        "@id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:ghg-protocol","label":"GHG Protocol"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ghg-protocol",
+      "label": "GHG Protocol"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

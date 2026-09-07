@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Neuromorphic Chip
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -79,22 +74,52 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"},
-      {"@id": "urn:ngm:class:neuromorphic-computing", "label": "Neuromorphic Computing"}
+      {
+        "@id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
-      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"}
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
-      {"@id": "urn:ngm:class:on-device-learning", "label": "On-Device Learning"},
-      {"@id": "urn:ngm:class:tiny-ml", "label": "TinyML"}
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-learning",
+        "label": "On-Device Learning"
+      },
+      {
+        "@id": "urn:ngm:class:tiny-ml",
+        "label": "TinyML"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"}
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
     ]
   },
   "provenance": {
@@ -104,52 +129,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:neuromorphic-chip:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8cef11300256e9adc1000d91063fff9175be3ff8fa86bfc96950f3d129013c29"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IBM TrueNorth]]",
-      "resolved": "urn:visionflow:linked:ibm-true-north",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Intel Loihi]]",
-      "resolved": "urn:visionflow:linked:intel-loihi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Hardware]]",
-      "resolved": "urn:visionflow:owl:class:ai-hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.

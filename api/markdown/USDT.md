@@ -1,8 +1,3 @@
----
-public: true
----
-
-# USDT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,52 +177,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:usdt:cd1634ef55b1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:30cd874c5683afbbfb655184ed229c165f02a4155d25476c43f4f4b4afff6b6d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[USD]]",
-      "resolved": "urn:visionflow:linked:usd",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Custody Infrastructure]]",
-      "resolved": "urn:visionflow:linked:custody-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[USDC]]",
-      "resolved": "urn:visionflow:linked:usdc",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment System]]",
-      "resolved": "urn:visionflow:linked:payment-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:linked:stablecoin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A fiat-backed stablecoin pegged to the United States dollar, issued across multiple ledgers and intended to be redeemable for dollar value held in reserve.

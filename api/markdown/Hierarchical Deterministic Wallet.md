@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Hierarchical Deterministic Wallet
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

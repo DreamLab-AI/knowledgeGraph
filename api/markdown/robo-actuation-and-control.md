@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,23 +34,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
-      {"@id": "urn:ngm:class:servo-control", "label": "Servo Control"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "@id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
     ]
   },
   "quality": 0.8,
@@ -62,3 +97,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

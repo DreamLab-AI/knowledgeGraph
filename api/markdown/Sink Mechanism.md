@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sink Mechanism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,18 +71,36 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"}
+      {
+        "@id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:virtual-currency", "label": "Virtual Currency"},
-      {"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}
+      {
+        "@id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      },
+      {
+        "@id": "urn:ngm:class:economic-mechanism",
+        "label": "Economic Mechanism"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:inflation", "label": "Inflation"}
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
     ]
   },
   "quality": 0.7,
@@ -98,57 +111,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sink-mechanism:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:46da2fe2cf1574b6617e474c79e21ecb1e6c98239bbd12e44f6a45d735e2cc03"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Economic Balance]]",
-      "resolved": "urn:visionflow:linked:economic-balance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Game Economy]]",
-      "resolved": "urn:visionflow:linked:game-economy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tokenomics]]",
-      "resolved": "urn:visionflow:owl:class:tokenomics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Currency]]",
-      "resolved": "urn:visionflow:owl:class:virtual-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Sink Mechanism is an economic design pattern that permanently removes virtual currency, tokens, or items from circulation in order to counterbalance sources of supply and maintain economic equilibrium, preventing hyperinflation in metaverse economies, play-to-earn platforms, and DeFi protocols. Effective sinks are integrated into desirable activities — such as cosmetic purchases, crafting costs, or transaction fees — so that value removal feels voluntary and rewarding to participants.

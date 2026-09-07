@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Synchronous Execution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,21 +85,48 @@ public: true
       }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:asynchronous-execution", "label": "Asynchronous Execution"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:asynchronous-execution",
+        "label": "Asynchronous Execution"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transaction-processing", "label": "Transaction Processing"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"}
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"}
+      {
+        "@id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
     ]
   },
   "provenance": {
@@ -114,67 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:synchronous-execution:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6cbf98099a1e2770f1811579fc8af228b4dd08f5d42cae0ceeebbc969babf249"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[API Request-Response]]",
-      "resolved": "urn:visionflow:linked:api-request-response",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blocking Operation]]",
-      "resolved": "urn:visionflow:linked:blocking-operation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Database Operations]]",
-      "resolved": "urn:visionflow:linked:database-operations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Execution Model]]",
-      "resolved": "urn:visionflow:linked:execution-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Thread Management]]",
-      "resolved": "urn:visionflow:linked:thread-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asynchronous Execution]]",
-      "resolved": "urn:visionflow:owl:class:asynchronous-execution",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:owl:class:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Processing]]",
-      "resolved": "urn:visionflow:owl:class:transaction-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Synchronous Execution is a computational model where operations are performed sequentially, with each operation blocking until completion before the next operation begins. The caller waits for the result before proceeding, establishing a direct temporal dependency between operations and enabling predictable, deterministic execution flow.

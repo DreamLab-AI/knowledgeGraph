@@ -1,8 +1,3 @@
----
-public: true
----
-
-# PSNR Metric
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,26 @@ public: true
   "definition": "Peak Signal-to-Noise Ratio (PSNR) is an objective image- and video-quality metric expressing the ratio between the maximum possible signal power and the power of distorting noise, computed from the mean squared error between a reference and a degraded signal. Measured in decibels, higher PSNR values indicate closer fidelity to the original. It is widely used to benchmark lossy compression, restoration, and reconstruction algorithms despite its known weak correlation with perceived quality.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:ngm:class:model-performance",
+      "label": "Model Performance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:image-and-video-restoration", "label": "Image and Video Restoration"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"}
+      {
+        "@id": "urn:ngm:class:image-and-video-restoration",
+        "label": "Image and Video Restoration"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Khronos OpenXR 1.1 Specification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,52 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:khronos-open-xr-1-1-specification:d9713f4c85f7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:86dddd9df8bf919253374897c845b503d40b67c9f9b8c2d58f39e3fa206d6183"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Khronos OpenXR]]",
-      "resolved": "urn:visionflow:linked:khronos-open-xr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Reality]]",
-      "resolved": "urn:visionflow:linked:virtual-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:linked:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenXR]]",
-      "resolved": "urn:visionflow:linked:open-xr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Open Standards]]",
-      "resolved": "urn:visionflow:linked:open-standards",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The OpenXR 1.1 specification is a revision of the OpenXR standard that consolidates widely adopted extensions into the core and refines the cross-vendor XR application interface.

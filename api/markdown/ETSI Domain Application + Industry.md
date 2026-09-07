@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI Domain Application + Industry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -97,67 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-application-industry:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e8233b79e371b6f64bfcb86578a1ddb58d73e8498bdd1f9da60c57a7bce2735d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ETSI Domain Taxonomy]]",
-      "resolved": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GS MEC]]",
-      "resolved": "urn:visionflow:linked:etsi-gs-mec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Industrial Application Classification]]",
-      "resolved": "urn:visionflow:linked:industrial-application-classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Manufacturing Platform Categorization]]",
-      "resolved": "urn:visionflow:linked:manufacturing-platform-categorization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualEconomyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cross-domain marker for metaverse application components focused on industrial applications including manufacturing simulations, industrial digital twins, predictive maintenance, remote operations, and industrial training systems.

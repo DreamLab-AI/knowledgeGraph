@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Bounding Box Regression
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,60 +20,170 @@ public: true
   "definition": "Bounding Box Regression is the supervised learning task within object detection of predicting the precise coordinates of axis-aligned rectangular boxes that tightly enclose detected objects. A model outputs four continuous values — typically centre x, centre y, width, and height relative to an anchor — and is trained using smooth-L1 or IoU-based loss functions that penalise deviation from ground-truth boxes. It is jointly trained with an object classification head and combined with [[Non Maximum Suppression]] to produce the final detections. Accurate regression is critical for downstream tasks such as instance segmentation and 3-D pose estimation that consume the predicted boxes.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:object-detection",
+      "label": "Object Detection"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:non-maximum-suppression", "label": "Non Maximum Suppression"},
-      {"@id": "urn:ngm:class:heatmap-regression", "label": "Heatmap Regression"},
-      {"@id": "urn:ngm:class:feature-pyramid-network", "label": "Feature Pyramid Network"},
-      {"@id": "urn:ngm:class:anchor-box", "label": "Anchor Box"},
-      {"@id": "urn:ngm:class:iou-loss", "label": "IoU Loss"}
+      {
+        "@id": "urn:ngm:class:non-maximum-suppression",
+        "label": "Non Maximum Suppression"
+      },
+      {
+        "@id": "urn:ngm:class:heatmap-regression",
+        "label": "Heatmap Regression"
+      },
+      {
+        "@id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "@id": "urn:ngm:class:anchor-box",
+        "label": "Anchor Box"
+      },
+      {
+        "@id": "urn:ngm:class:iou-loss",
+        "label": "IoU Loss"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:regression", "label": "Regression"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:benchmark-dataset", "label": "Benchmark Dataset"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:object-detection-and-tracking", "label": "Object Detection and Tracking"},
-      {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"},
-      {"@id": "urn:ngm:class:instance-segmentation", "label": "Instance Segmentation"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"}
+      {
+        "@id": "urn:ngm:class:object-detection-and-tracking",
+        "label": "Object Detection and Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "@id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:regression", "label": "Regression"},
-      {"@id": "urn:ngm:class:computer-vision-task", "label": "Computer Vision Task"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-task",
+        "label": "Computer Vision Task"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:real-time-ai-inference", "label": "Real-Time AI Inference"},
-      {"@id": "urn:ngm:class:real-time-ai", "label": "Real-Time AI"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:medical-image-analysis", "label": "Medical Image Analysis"}
+      {
+        "@id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-ai",
+        "label": "Real-Time AI"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bounding-volume", "label": "Bounding Volume"},
-      {"@id": "urn:ngm:class:bounding-volume-hierarchy", "label": "Bounding Volume Hierarchy"},
-      {"@id": "urn:ngm:class:gaussian-process-regression", "label": "Gaussian Process Regression"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"}
+      {
+        "@id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process-regression",
+        "label": "Gaussian Process Regression"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:regression-testing", "label": "Regression Testing"},
-      {"@id": "urn:ngm:class:heatmap-regression", "label": "Heatmap Regression"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"}
+      {
+        "@id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      },
+      {
+        "@id": "urn:ngm:class:heatmap-regression",
+        "label": "Heatmap Regression"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
     ]
   },
   "sameAs": [],
@@ -193,7 +297,7 @@ public: true
         ObjectSomeValuesFrom(ai:contrastsWith ai:RegressionTesting))
 
   ## About
-    Bounding box regression emerged as a formalised subtask with the R-CNN family of detectors introduced by Ross Girshick and colleagues at UC Berkeley in 2014. The original R-CNN paper applied a post-hoc linear regression correction to region proposals generated by selective search, demonstrating that even a simple linear transformation of CNN features could substantially improve localisation accuracy beyond what classification-oriented CNNs produced by default. Fast R-CNN (Girshick, 2015) folded both the regression and classification into a single end-to-end trained network using RoI pooling, and introduced the smooth-L1 loss function — a hybrid loss that transitions from L2 (squared error) for small residuals to L1 (absolute error) for large residuals, providing outlier robustness without sacrificing gradient magnitude near zero. Faster R-CNN (Ren et al., 2015) replaced selective search with a Region Proposal Network (RPN) that itself performs bounding box regression to propose candidate regions, making the entire detection pipeline end-to-end differentiable for the first time.
+    Bounding box regression emerged as a formalised subtask with the R-CNN family of detectors introduced by Ross Girshick and colleagues at UC Berkeley in 2014. The original R-CNN paper applied a post-hoc linear regression correction to region proposals generated by selective search, demonstrating that even a simple linear transformation of CNN features [private] substantially improve localisation accuracy beyond what classification-oriented CNNs produced by default. Fast R-CNN (Girshick, 2015) folded both the regression and classification into a single end-to-end trained network using RoI pooling, and introduced the smooth-L1 loss function — a hybrid loss that transitions from L2 (squared error) for small residuals to L1 (absolute error) for large residuals, providing outlier robustness without sacrificing gradient magnitude near zero. Faster R-CNN (Ren et al., 2015) replaced selective search with a Region Proposal Network (RPN) that itself performs bounding box regression to propose candidate regions, making the entire detection pipeline end-to-end differentiable for the first time.
 
     The subsequent evolution of bounding box regression has been driven by the recognition that coordinate-based losses — smooth-L1, L2 — do not directly optimise the evaluation metric (IoU) and may produce perverse gradients when predicted and ground-truth boxes do not overlap. IoU-based losses address this by computing the geometric overlap directly: GIoU (Rezatofighi et al., 2019) adds a penalty for the smallest enclosing box to provide gradients when boxes do not overlap; DIoU (Zheng et al., 2020) additionally penalises the distance between box centres; CIoU further adds an aspect-ratio consistency term; and subsequent work has proposed SIoU, EIoU, WIoU, and Powerful-IoU (Neural Networks, 2024), each targeting specific failure modes. As of 2025–2026, CIoU has been adopted as the default in YOLOv8 and YOLO11, while the YOLO26 release (Ultralytics, October 2025) introduced Distribution Focal Loss (DFL) removal in favour of cleaner coordinate regression combined with the Progressive Loss (ProgLoss) and Spatial Token Alignment Loss (STAL) for improved small-object detection accuracy.
 
@@ -240,7 +344,7 @@ public: true
 
     The deep learning era was inaugurated by Girshick et al.'s R-CNN (CVPR 2014), which demonstrated that CNN features with post-hoc box regression dramatically outperformed DPM on PASCAL VOC. Fast R-CNN (Girshick, ICCV 2015) introduced smooth-L1 loss and end-to-end training. Faster R-CNN (Ren, He, Girshick, Sun, NeurIPS 2015) achieved real-time proposal generation with the RPN. He et al.'s Mask R-CNN (ICCV 2017) unified detection, instance segmentation, and keypoint estimation in a single framework, winning the COCO 2017 detection and segmentation challenges.
 
-    The YOLO lineage (Redmon et al., CVPR 2016; Redmon & Farhadi, CVPR 2017, 2018) demonstrated that single-stage direct regression could approach two-stage accuracy at an order-of-magnitude speedup, enabling real-time deployment. RetinaNet (Lin et al., ICCV 2017) and the Focal Loss resolved the class-imbalance problem that had limited single-stage accuracy.
+    The YOLO lineage (Redmon et al., CVPR 2016; Redmon & Farhadi, CVPR 2017, 2018) demonstrated that single-stage direct regression [private] approach two-stage accuracy at an order-of-magnitude speedup, enabling real-time deployment. RetinaNet (Lin et al., ICCV 2017) and the Focal Loss resolved the class-imbalance problem that had limited single-stage accuracy.
 
     IoU-based losses were pioneered by Yu et al. (IoU Loss, 2016), followed by GIoU (Rezatofighi et al., CVPR 2019), DIoU/CIoU (Zheng et al., AAAI 2020), EIoU (Zhang et al., 2022), SIoU (Gevorgyan, 2022), and Powerful-IoU (Neural Networks, 2024). Each generation addressed residual failure modes: non-overlapping box gradients, centre distance convergence, aspect ratio consistency, and outlier-sensitive focusing.
 

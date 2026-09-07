@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Legal System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A legal system is the institutional framework of laws, courts, enforcement bodies, and procedures through which a jurisdiction creates, interprets, and applies binding rules. Major traditions include common law, civil law, and religious or customary systems, each differing in sources of authority and precedent. Legal systems define the jurisdictional context within which digital and property rights are recognised and enforced.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-jurisdiction", "label": "Digital Jurisdiction"}, {"@id": "urn:ngm:class:virtual-property-right", "label": "Virtual Property Right"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-jurisdiction",
+        "label": "Digital Jurisdiction"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-property-right",
+        "label": "Virtual Property Right"
+      }
+    ]
   },
   "quality": 0.72
 }

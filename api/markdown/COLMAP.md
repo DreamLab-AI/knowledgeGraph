@@ -1,8 +1,3 @@
----
-public: true
----
-
-# COLMAP
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "COLMAP is an open-source general-purpose Structure-from-Motion and multi-view stereo pipeline used to reconstruct three-dimensional scenes from unordered collections of photographs. It performs feature extraction, image matching, incremental camera pose estimation, triangulation, and dense point-cloud generation. COLMAP is widely used as a preprocessing step for neural radiance fields and 3D Gaussian Splatting pipelines. Its modular architecture supports both GPU-accelerated and CPU-only execution, making it accessible across a range of hardware configurations.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:structure-from-motion",
+      "label": "Structure-from-Motion"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
-      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"}
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Executive Accountability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-executive-accountability",
   "title": "AI Executive Accountability",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Business Value from AI", "Corporate AI Strategy"],
+  "vc:outboundWikilinks": [
+    "Business Value from AI",
+    "Corporate AI Strategy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}, {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

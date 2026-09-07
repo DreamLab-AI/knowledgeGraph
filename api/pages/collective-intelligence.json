@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:collective-intelligence",
   "domain": "distributed-collaboration",
-  "definition": "Collective intelligence is the shared or group intelligence that emerges from the collaboration, competition, and collective decision-making of many individuals or agents, producing cognitive capacities \u2014 prediction accuracy, problem-solving breadth, creative output \u2014 that exceed what any individual participant could achieve alone. It manifests in biological systems such as ant colonies and immune networks, human social institutions, and engineered multi-agent systems, and is characterised by distributed information processing, diversity of perspective, and aggregation mechanisms.",
+  "definition": "Collective intelligence is the shared or group intelligence that emerges from the collaboration, competition, and collective decision-making of many individuals or agents, producing cognitive capacities \u2014 prediction accuracy, problem-solving breadth, creative output \u2014 that exceed what any individual participant [private] achieve alone. It manifests in biological systems such as ant colonies and immune networks, human social institutions, and engineered multi-agent systems, and is characterised by distributed information processing, diversity of perspective, and aggregation mechanisms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:collective-intelligence-system",

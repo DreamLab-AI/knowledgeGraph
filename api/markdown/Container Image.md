@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Container Image
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -115,7 +110,7 @@ public: true
 
   ## Technical Details
 
-  - **Anatomy**: manifest (points to config and layers by digest) → config JSON (execution parameters, layer diff IDs, history) → gzip/zstd-compressed tar layers; an image index (manifest list) groups per-platform manifests under one reference.
+  - **Anatomy**: manifest (points to config and layers by digest) → config JSON (execution parameters, layer diff IDs, history) → gzip/zstd-compressed tar layers; an image [private] (manifest list) groups per-platform manifests under one reference.
   - **Building**: Dockerfiles remain the dominant recipe format; each instruction produces a layer, so ordering and multi-stage builds control cache hits and final size. Distroless and Alpine bases, static linking, and layer squashing are standard size and attack-surface reductions.
   - **Tags vs digests**: tags (`app:1.4.2`) are mutable pointers; digests (`app@sha256:...`) are immutable. Production deployment pins digests to guarantee that what was tested is what runs.
   - **Immutability contract**: images are never patched in place — a fix means building and shipping a new image, which is what makes rollbacks trivial and configuration drift impossible at the filesystem level.

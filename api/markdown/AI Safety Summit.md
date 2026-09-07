@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Safety Summit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "AI Safety Summit",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:international-ai-cooperation", "vc:label": "International AI Cooperation"},
-    {"@id": "urn:visionflow:linked:bletchley-declaration", "vc:label": "Bletchley Declaration"},
-    {"@id": "urn:visionflow:linked:ai-safety-institute", "vc:label": "AI Safety Institute"},
-    {"@id": "urn:visionflow:linked:frontier-ai", "vc:label": "Frontier AI"}
+    {
+      "@id": "urn:visionflow:linked:international-ai-cooperation",
+      "vc:label": "International AI Cooperation"
+    },
+    {
+      "@id": "urn:visionflow:linked:bletchley-declaration",
+      "vc:label": "Bletchley Declaration"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety-institute",
+      "vc:label": "AI Safety Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-ai",
+      "vc:label": "Frontier AI"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,13 +50,28 @@ public: true
   },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:bletchley-declaration", "label": "Bletchley Declaration"},
-      {"@id": "urn:ngm:class:ai-safety-institute", "label": "AI Safety Institute"}
+      {
+        "@id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:frontier-ai", "label": "Frontier AI"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ]
   },
   "quality": 0.8,

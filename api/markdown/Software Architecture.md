@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Software Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,47 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:software-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:270d8f44655f173e68f6d51a230c88c17572bfd7e7c775ba855996a7f1cdc634"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Microservices]]",
-      "resolved": "urn:visionflow:linked:microservices",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MLOps]]",
-      "resolved": "urn:visionflow:linked:mlops",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Design]]",
-      "resolved": "urn:visionflow:linked:system-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:owl:class:distributed-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software Architecture for AI systems defines high-level structural patterns, component interactions, and design principles for building scalable, maintainable, and robust artificial intelligence applications. Architectural patterns include microservices (decoupled AI components), serverless (event-driven inference), model-view-controller (MVC) for AI applications, and lambda architecture (batch and stream processing). AI-specific concerns include model versioning, A/B testing infrastructure, feature stores, model registries, and monitoring systems. Modern architectures emphasize modularity, reproducibility, and operational excellence.

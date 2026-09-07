@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Multimodal Interaction
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

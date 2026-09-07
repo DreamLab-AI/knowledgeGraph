@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ISA-95
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,32 +53,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:isa-95:e47abab1b43b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cfb0f5d73956416791c08c0e184c997a52cb6f8ba33124b4be3190eb42685fc4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[OPC UA]]",
-      "resolved": "urn:visionflow:linked:opc-ua",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ISA-95 is an international standard for integrating enterprise and control systems in manufacturing, defining models for the interface between business and production operations.

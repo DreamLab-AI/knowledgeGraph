@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Tracking Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -103,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-tracking-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7b17413ebdc7cdc5c4b72a05521f996f365ef54ee55416895c0b607f19ff4eca"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hardware and software systems that determine the position and orientation of physical objects, users, or devices in three-dimensional space in real time. Spatial tracking underpins head-mounted display tracking, hand and eye tracking, and room-scale boundary definition in virtual and mixed reality systems, enabling accurate registration between physical movement and virtual scene response.

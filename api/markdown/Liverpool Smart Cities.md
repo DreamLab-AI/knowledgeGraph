@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Liverpool Smart Cities
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,27 +59,66 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
-      {"@id": "urn:ngm:class:edge-ai-for-smart-cities", "label": "Edge AI for Smart Cities"}
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-for-smart-cities",
+        "label": "Edge AI for Smart Cities"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"},
-      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"}
+      {
+        "@id": "urn:ngm:class:north-england-innovation-corridor",
+        "label": "North England Innovation Corridor"
+      },
+      {
+        "@id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:manchester-tech-cluster", "label": "Manchester Tech Cluster"},
-      {"@id": "urn:ngm:class:leeds-digital-hub", "label": "Leeds Digital Hub"},
-      {"@id": "urn:ngm:class:newcastle-ai-and-health-innovation", "label": "Newcastle AI & Health Innovation"},
-      {"@id": "urn:ngm:class:sheffield-advanced-manufacturing", "label": "Sheffield Advanced Manufacturing"}
+      {
+        "@id": "urn:ngm:class:manchester-tech-cluster",
+        "label": "Manchester Tech Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:leeds-digital-hub",
+        "label": "Leeds Digital Hub"
+      },
+      {
+        "@id": "urn:ngm:class:newcastle-ai-and-health-innovation",
+        "label": "Newcastle AI & Health Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:sheffield-advanced-manufacturing",
+        "label": "Sheffield Advanced Manufacturing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:io-t-sensors", "label": "Io T Sensors"},
-      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"}
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "Io T Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"}
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      }
     ]
   },
   "provenance": {
@@ -94,42 +128,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:liverpool-smart-cities:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5a2038a6574999ad18a1fbe5cc444b436115a9ad5cddf0530454c1db904c7885"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Northern Powerhouse]]",
-      "resolved": "urn:visionflow:linked:northern-powerhouse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[North England Innovation Corridor]]",
-      "resolved": "urn:visionflow:owl:class:north-england-innovation-corridor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[UK Tech Ecosystem]]",
-      "resolved": "urn:visionflow:owl:class:uk-tech-ecosystem",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Liverpool Smart Cities refers to the Merseyside city region's integrated programme of digital innovation, IoT deployment, and sustainable urban infrastructure targeting net-zero carbon status by 2030 and 100,000 new jobs by 2040. It encompasses city council strategy, university-led research (University of Liverpool, LJMU, Edge Hill), the Horizons innovation programme backed by the UK Shared Prosperity Fund, and partnerships driving smart transport, digital health, and climate technology.

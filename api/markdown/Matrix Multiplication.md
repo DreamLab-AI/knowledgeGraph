@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Matrix Multiplication
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

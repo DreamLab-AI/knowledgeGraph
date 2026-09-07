@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Control Law
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A control law is the mathematical rule that maps measured system state and reference signals to the control inputs applied to a plant. It is the algorithmic core of a feedback controller, expressed as functions such as PID, state feedback, or impedance laws. The choice of control law determines stability, tracking accuracy, and disturbance rejection of the closed-loop system.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:position-control", "label": "PositionControl"}, {"@id": "urn:ngm:class:force-control", "label": "Force Control"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ]
   },
   "quality": 0.72
 }

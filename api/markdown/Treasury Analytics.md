@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Treasury Analytics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Treasury analytics is the analysis of an organisation's or DAO's financial holdings, cash flows, and asset allocation to inform liquidity, runway, and risk-management decisions. In the on-chain context it aggregates wallet balances, token positions, and protocol revenues into dashboards and metrics that support transparent, data-driven treasury governance.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:dao-analytics", "label": "DAO Analytics"}, {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dao-analytics",
+        "label": "DAO Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ]
   },
   "quality": 0.72
 }

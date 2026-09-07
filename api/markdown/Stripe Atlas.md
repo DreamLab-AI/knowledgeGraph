@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stripe Atlas
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "stripe-atlas",
   "title": "Stripe Atlas",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Entrepreneurship", "Startup Formation"],
+  "vc:outboundWikilinks": [
+    "AI Entrepreneurship",
+    "Startup Formation"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:stripe", "label": "Stripe"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:stripe",
+      "label": "Stripe"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:stripe", "label": "Stripe"}, {"@id": "urn:ngm:class:startup-formation", "label": "Startup Formation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:stripe",
+        "label": "Stripe"
+      },
+      {
+        "@id": "urn:ngm:class:startup-formation",
+        "label": "Startup Formation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

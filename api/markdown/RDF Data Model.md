@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RDF Data Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rdf-data-model:eb72a41551b2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8520a32402ed7c79655e896118dc56b63f575f95d42b74ccd948eb6db76f729e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Semantic Web Linked Data Standard]]",
-      "resolved": "urn:visionflow:linked:semantic-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Linked Data]]",
-      "resolved": "urn:visionflow:linked:linked-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SPARQL]]",
-      "resolved": "urn:visionflow:linked:sparql",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ontology]]",
-      "resolved": "urn:visionflow:linked:ontology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The RDF data model represents information as triples of subject, predicate and object, forming a directed labelled graph. It is the foundation of the Resource Description Framework used to publish structured data on the web.

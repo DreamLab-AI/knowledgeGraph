@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Feedback Sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A feedback sensor is a transducer that measures the actual state of an actuator or controlled system, such as position, velocity, force, or current, and reports it back to a controller to close the control loop. By comparing the measured value with the commanded reference, the controller can correct errors and reject disturbances. Encoders, resolvers, tachometers, and load cells are common feedback sensors in servo and motion-control systems.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:dc-servo-motor", "label": "DC Servo Motor"},
-      {"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"}
+      {
+        "@id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      }
     ]
   },
   "quality": 0.72

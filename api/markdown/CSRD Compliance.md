@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CSRD Compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "CSRD compliance is the practice of meeting the reporting obligations of the European Union's Corporate Sustainability Reporting Directive, which mandates standardised disclosure of environmental, social and governance impacts. It requires in-scope companies to report under the European Sustainability Reporting Standards (ESRS), including double-materiality assessments and audited climate and carbon metrics. Compliance underpins demonstrable carbon accounting for sectors such as energy-intensive computing and blockchain.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:carbon-neutral-blockchain", "label": "Carbon Neutral Blockchain"},
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"}
+      {
+        "@id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
     ]
   },
   "quality": 0.72

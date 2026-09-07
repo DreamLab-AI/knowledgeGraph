@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Aptos
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -161,46 +156,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aptos:83ca6d000a92",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e7ab4ac4d63b20916a45124bb26d5f9a7cf11c48d4282d258994000c9e71d47a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 1]]",
-      "resolved": "urn:visionflow:linked:layer-1",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Network]]",
-      "resolved": "urn:visionflow:linked:blockchain-network",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

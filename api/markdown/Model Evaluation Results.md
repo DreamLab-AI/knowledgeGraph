@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Evaluation Results
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,24 +51,60 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"}
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
-      {"@id": "urn:ngm:class:f1-score", "label": "F1 Score"},
-      {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"},
-      {"@id": "urn:ngm:class:auc", "label": "AUC"}
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:auc",
+        "label": "AUC"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"},
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
-      {"@id": "urn:ngm:class:performance-benchmarks", "label": "Performance Benchmarks"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-evaluation-results:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c52ce19217be2cb5780b86c85a2236d99aa5030c77d4ec30137fc8807b4255fb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ModelArchitecture]]",
-      "resolved": "urn:visionflow:owl:class:model-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A model evaluation results component in the Artificial Intelligence domain that required by AiModelCard.

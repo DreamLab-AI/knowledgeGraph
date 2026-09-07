@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0024 workspace
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,16 +51,40 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0023-degrees-of-freedom", "label": "rb 0023 degrees of freedom"},
-      {"@id": "urn:ngm:class:rb-0037-dexterity", "label": "rb 0037 dexterity"},
-      {"@id": "urn:ngm:class:rb-0031-singularity", "label": "rb 0031 singularity"},
-      {"@id": "urn:ngm:class:rb-0095-safety-zone", "label": "rb 0095 safety zone"},
-      {"@id": "urn:ngm:class:rb-0033-payload", "label": "rb 0033 payload"},
-      {"@id": "urn:ngm:class:manipulator-arm", "label": "Manipulator Arm"}
+      {
+        "@id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "rb 0023 degrees of freedom"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0037-dexterity",
+        "label": "rb 0037 dexterity"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0031-singularity",
+        "label": "rb 0031 singularity"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0033-payload",
+        "label": "rb 0033 payload"
+      },
+      {
+        "@id": "urn:ngm:class:manipulator-arm",
+        "label": "Manipulator Arm"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
-      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"}
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      }
     ]
   },
   "provenance": {
@@ -75,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0024-workspace:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:048e394ebc5457c5ab1fcee75da06462811c9df72f273408831fff3397b6be14"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The workspace of a robot manipulator is the total volumetric region that the tool-centre-point (TCP) can reach given all joint travel limits. The reachable workspace encompasses every point attainable in at least one joint configuration, while the dexterous workspace is the smaller subset reachable in every orientation — a critical distinction for tasks requiring precise approach angles. Workspace geometry is computed analytically or by Monte Carlo sampling of the joint space and is a primary criterion when selecting or designing a robot for a given cell layout.

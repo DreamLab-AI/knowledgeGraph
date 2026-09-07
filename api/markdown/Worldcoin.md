@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Worldcoin
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,52 +175,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:worldcoin:61a0095fc92f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:234191a67f1725f08278562ec10d0c0395bf07511899c7dccaf43a8b556d12e2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Biometric Authentication]]",
-      "resolved": "urn:visionflow:linked:biometric-authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Facial Recognition]]",
-      "resolved": "urn:visionflow:linked:facial-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sybil Resistance]]",
-      "resolved": "urn:visionflow:linked:sybil-resistance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Identity]]",
-      "resolved": "urn:visionflow:linked:digital-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:linked:identity-verification",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital identity and cryptocurrency project that uses iris biometrics to issue a unique identifier intended to distinguish individual humans online.

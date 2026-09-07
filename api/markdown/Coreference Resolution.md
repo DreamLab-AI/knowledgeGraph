@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Coreference Resolution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -13,32 +8,110 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:owl:class:natural-language-understanding", "vc:label": "Natural Language Understanding"},
-    {"@id": "urn:visionflow:owl:class:named-entity-recognition", "vc:label": "Named Entity Recognition"},
-    {"@id": "urn:visionflow:owl:class:information-extraction", "vc:label": "Information Extraction"},
-    {"@id": "urn:visionflow:owl:class:question-answering", "vc:label": "Question Answering"},
-    {"@id": "urn:visionflow:owl:class:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:owl:class:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:owl:class:machine-translation", "vc:label": "Machine Translation"},
-    {"@id": "urn:visionflow:owl:class:entity-resolution", "vc:label": "Entity Resolution"},
-    {"@id": "urn:visionflow:owl:class:semantic-parsing", "vc:label": "Semantic Parsing"},
-    {"@id": "urn:visionflow:owl:class:text-mining", "vc:label": "Text Mining"},
-    {"@id": "urn:visionflow:owl:class:relation-extraction", "vc:label": "Relation Extraction"},
-    {"@id": "urn:visionflow:owl:class:document-summarisation", "vc:label": "Document Summarisation"},
-    {"@id": "urn:visionflow:owl:class:bert", "vc:label": "BERT"},
-    {"@id": "urn:visionflow:owl:class:anaphora-resolution", "vc:label": "Anaphora Resolution"},
-    {"@id": "urn:visionflow:owl:class:word-embeddings", "vc:label": "Word Embeddings"},
-    {"@id": "urn:visionflow:owl:class:mention-detection", "vc:label": "Mention Detection"},
-    {"@id": "urn:visionflow:owl:class:span-representation", "vc:label": "Span Representation"},
-    {"@id": "urn:visionflow:owl:class:retrieval-augmented-generation", "vc:label": "Retrieval Augmented Generation"},
-    {"@id": "urn:visionflow:owl:class:slot-filling", "vc:label": "Slot Filling"},
-    {"@id": "urn:visionflow:owl:class:dependency-parsing", "vc:label": "Dependency Parsing"},
-    {"@id": "urn:visionflow:owl:class:part-of-speech-tagging", "vc:label": "Part-of-Speech Tagging"},
-    {"@id": "urn:visionflow:owl:class:entity-linking", "vc:label": "Entity Linking"},
-    {"@id": "urn:visionflow:owl:class:knowledge-graph-construction", "vc:label": "Knowledge Graph Construction"},
-    {"@id": "urn:visionflow:owl:class:sentiment-analysis", "vc:label": "Sentiment Analysis"}
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-understanding",
+      "vc:label": "Natural Language Understanding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:named-entity-recognition",
+      "vc:label": "Named Entity Recognition"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:information-extraction",
+      "vc:label": "Information Extraction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-translation",
+      "vc:label": "Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:entity-resolution",
+      "vc:label": "Entity Resolution"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-parsing",
+      "vc:label": "Semantic Parsing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:text-mining",
+      "vc:label": "Text Mining"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:relation-extraction",
+      "vc:label": "Relation Extraction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:document-summarisation",
+      "vc:label": "Document Summarisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bert",
+      "vc:label": "BERT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:anaphora-resolution",
+      "vc:label": "Anaphora Resolution"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:word-embeddings",
+      "vc:label": "Word Embeddings"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mention-detection",
+      "vc:label": "Mention Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:span-representation",
+      "vc:label": "Span Representation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation",
+      "vc:label": "Retrieval Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:slot-filling",
+      "vc:label": "Slot Filling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dependency-parsing",
+      "vc:label": "Dependency Parsing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:part-of-speech-tagging",
+      "vc:label": "Part-of-Speech Tagging"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:entity-linking",
+      "vc:label": "Entity Linking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graph-construction",
+      "vc:label": "Knowledge Graph Construction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    }
   ]
 }
 ```
@@ -60,50 +133,140 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
-      {"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"}
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:mention-detection", "label": "Mention Detection"},
-      {"@id": "urn:ngm:class:antecedent-scoring", "label": "Antecedent Scoring"},
-      {"@id": "urn:ngm:class:mention-clustering", "label": "Mention Clustering"},
-      {"@id": "urn:ngm:class:anaphora-resolution", "label": "Anaphora Resolution"}
+      {
+        "@id": "urn:ngm:class:mention-detection",
+        "label": "Mention Detection"
+      },
+      {
+        "@id": "urn:ngm:class:antecedent-scoring",
+        "label": "Antecedent Scoring"
+      },
+      {
+        "@id": "urn:ngm:class:mention-clustering",
+        "label": "Mention Clustering"
+      },
+      {
+        "@id": "urn:ngm:class:anaphora-resolution",
+        "label": "Anaphora Resolution"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
-      {"@id": "urn:ngm:class:semantic-parsing", "label": "Semantic Parsing"},
-      {"@id": "urn:ngm:class:dependency-parsing", "label": "Dependency Parsing"},
-      {"@id": "urn:ngm:class:span-representation", "label": "Span Representation"}
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-parsing",
+        "label": "Semantic Parsing"
+      },
+      {
+        "@id": "urn:ngm:class:dependency-parsing",
+        "label": "Dependency Parsing"
+      },
+      {
+        "@id": "urn:ngm:class:span-representation",
+        "label": "Span Representation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:bert", "label": "BERT"},
-      {"@id": "urn:ngm:class:word-embeddings", "label": "Word Embeddings"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:document-summarisation", "label": "Document Summarisation"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:document-summarisation",
+        "label": "Document Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:entity-resolution", "label": "Entity Resolution"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:slot-filling", "label": "Slot Filling"}
+      {
+        "@id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
-      {"@id": "urn:ngm:class:text-mining", "label": "Text Mining"},
-      {"@id": "urn:ngm:class:entity-linking", "label": "Entity Linking"}
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:text-mining",
+        "label": "Text Mining"
+      },
+      {
+        "@id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
-      {"@id": "urn:ngm:class:relation-extraction", "label": "Relation Extraction"},
-      {"@id": "urn:ngm:class:part-of-speech-tagging", "label": "Part-of-Speech Tagging"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:part-of-speech-tagging",
+        "label": "Part-of-Speech Tagging"
+      }
     ]
   },
   "sameAs": [],
@@ -557,7 +720,7 @@ public: true
   - Cluster 2: {CEO Tim Cook, Cook, He}
   - Cluster 3: {the new product line, the devices} (nominal coreference based on context)
 
-  The first cluster illustrates nominal-pronominal coreference across four mentions spanning three sentences. The second cluster illustrates that "Cook" (a surname) coreferring with "CEO Tim Cook" (a title-plus-full-name) requires the model to match both surface forms and to recognise that "He" (which could plausibly refer to any male entity mentioned) is more likely to corefer with the most recently mentioned male singular entity (Cook, per Centering Theory's backward-looking centre prediction).
+  The first cluster illustrates nominal-pronominal coreference across four mentions spanning three sentences. The second cluster illustrates that "Cook" (a surname) coreferring with "CEO Tim Cook" (a title-plus-full-name) requires the model to match both surface forms and to recognise that "He" (which [private] plausibly refer to any male entity mentioned) is more likely to corefer with the most recently mentioned male singular entity (Cook, per Centering Theory's backward-looking centre prediction).
 
   ### Common Error Types
 

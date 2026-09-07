@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BC-0482-eu-mica-regulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bc-0482-eu-mica-regulation:d8b57c171e04",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:652240e4af324d1a3a3ef9bbae761811179c68fafc176b2c727a1c9e46f26697"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Securities Regulation]]",
-      "resolved": "urn:visionflow:linked:securities-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MiCA Regulation]]",
-      "resolved": "urn:visionflow:linked:mi-ca-regulation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The EU MiCA regulation is the European Union's Markets in Crypto-Assets framework, which establishes harmonised rules for the issuance, offering and provision of services relating to crypto-assets across member states.

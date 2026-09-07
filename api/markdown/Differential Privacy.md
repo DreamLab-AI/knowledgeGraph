@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Differential Privacy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,61 +185,6 @@ public: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:differential-privacy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aac2b536196c1883b0e2379617f252c66b0a6864e4c0344ab24257eb6d4d3e9a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Apple Differential Privacy]]",
-      "resolved": "urn:visionflow:linked:apple-differential-privacy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dwork et al. (2006)]]",
-      "resolved": "urn:visionflow:linked:dwork-et-al-2006",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[U.S. Census 2020]]",
-      "resolved": "urn:visionflow:linked:u-s-census-2020",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ar Display Device
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -127,72 +122,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ar-display-device:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9d97c22fcb5899dd7ecfcce514acc3190c278910cf7420e25582ec1b44a8b7e9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Augmented Reality Experiences]]",
-      "resolved": "urn:visionflow:linked:augmented-reality-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Display Technology]]",
-      "resolved": "urn:visionflow:linked:display-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mixed Reality Interaction]]",
-      "resolved": "urn:visionflow:linked:mixed-reality-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Optical Systems]]",
-      "resolved": "urn:visionflow:linked:optical-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pose Tracking]]",
-      "resolved": "urn:visionflow:linked:pose-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Display Hardware]]",
-      "resolved": "urn:visionflow:owl:class:display-hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AR Display Device encompasses hardware systems including smart glasses, headsets, and head-mounted displays that superimpose computer-generated imagery onto the user's view of the real world through optical technologies such as waveguides, birdbath optics, holographic displays, and metasurfaces.

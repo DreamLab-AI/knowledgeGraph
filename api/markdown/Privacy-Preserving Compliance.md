@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy-Preserving Compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Privacy-preserving compliance is the use of cryptographic and selective-disclosure techniques to satisfy regulatory requirements such as KYC, AML, and audit without exposing the underlying personal data. It lets a party prove a fact (e.g. age, jurisdiction, sanction-list status) to a regulator or counterparty while revealing nothing more. It is central to reconciling decentralised identity and digital-currency systems with financial regulation.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:hyperledger-indy", "label": "Hyperledger Indy"},
-      {"@id": "urn:ngm:class:cbdc-frameworks", "label": "CBDC Frameworks"}
+      {
+        "@id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# System Interoperability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,62 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:system-interoperability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4fd79ea17a54a0cd154299d3b5849ab3a769d53abc51daff97b7aefc9c7ff2b6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Common Data Formats]]",
-      "resolved": "urn:visionflow:linked:common-data-formats",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Core Technology]]",
-      "resolved": "urn:visionflow:linked:core-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Enterprise Connectivity]]",
-      "resolved": "urn:visionflow:linked:enterprise-connectivity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Standard Protocols]]",
-      "resolved": "urn:visionflow:linked:standard-protocols",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Capability]]",
-      "resolved": "urn:visionflow:linked:system-capability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Sharing]]",
-      "resolved": "urn:visionflow:owl:class:data-sharing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Integration]]",
-      "resolved": "urn:visionflow:owl:class:system-integration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.

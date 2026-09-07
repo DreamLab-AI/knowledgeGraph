@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sliding Mode Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Sliding mode control is a nonlinear, robust control method that drives a system's state onto a designed sliding surface and constrains it there using high-frequency switching of the control input. Once on the surface, the closed-loop dynamics become insensitive to matched disturbances and parameter uncertainty, giving strong robustness. It is a control-theory technique widely applied to robotic actuators and power electronics, though it can induce chattering.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}, {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ]
   },
   "quality": 0.72
 }

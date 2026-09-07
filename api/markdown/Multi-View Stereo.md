@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-View Stereo
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -166,4 +161,3 @@ public: true
   - In production, MVS is embedded within platforms such as RealityCapture, Agisoft Metashape, and open-source tools like OpenMVS and COLMAP. It underpins cultural heritage digitisation, construction site monitoring, film visual-effects pipelines, and autonomous vehicle map generation. Integration with [[Lidar]] sensors has become standard: LiDAR provides sparse but metrically accurate geometry that guides and corrects MVS depth estimates.
 
   - Between 2023 and 2025, neural approaches — particularly those inspired by NeRF and [[3D Gaussian Splatting]] — have begun to supplant classical MVS for novel-view synthesis tasks, offering superior handling of view-dependent effects. However, classical MVS retains advantages in metric accuracy and interpretability for engineering and geospatial applications. Hybrid pipelines combining learned depth priors with classical geometric consistency checks represent the current frontier, narrowing the gap between photorealistic synthesis and metrically reliable reconstruction.
-

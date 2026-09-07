@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adaptive Manipulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Adaptive manipulation is a subfield of robotics concerned with enabling robotic systems to grasp, move, and interact with objects in unstructured environments by continuously adapting grasp strategies, force application, and motion trajectories based on sensory feedback. It combines perception, planning, and control to handle variability in object geometry, material properties, and placement that defeats fixed pre-programmed approaches. Applications span industrial automation, surgical robotics, and service robots operating in human-centred spaces.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:manipulation", "label": "Manipulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:deep-reinforcement-learning", "label": "Deep Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"},
-      {"@id": "urn:ngm:class:compliant-manipulation", "label": "Compliant Manipulation"}
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:compliant-manipulation",
+        "label": "Compliant Manipulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - Industrial applications include bin-picking systems capable of handling randomly oriented parts in logistics and electronics assembly, surgical robots that adapt cutting forces to tissue heterogeneity, and agricultural robots that grasp fruit with varying ripeness and fragility. Service robotics—domestic assistants that handle diverse household items—represents a particularly demanding frontier because the variety of object types, sizes, and materials far exceeds what can be anticipated at design time.
 
   - By 2024–2025, diffusion-model-based manipulation policies (e.g., Diffusion Policy, ACT) trained via imitation learning from human demonstrations are achieving robust generalisation across novel object instances. Foundation models for robot manipulation are emerging that provide broad manipulation priors transferable across embodiments. Key open challenges include manipulation in highly cluttered environments, recovery from grasp failure, and the safe co-existence of adaptive manipulation systems alongside human workers under evolving safety standards.
-

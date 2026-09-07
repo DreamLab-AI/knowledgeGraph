@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ethical Review Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,27 +75,66 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ai-ethics-board", "label": "AI Ethics Board"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+      {
+        "@id": "urn:ngm:class:ai-ethics-board",
+        "label": "AI Ethics Board"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ai-ethics-checklist", "label": "AI Ethics Checklist"},
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"}
+      {
+        "@id": "urn:ngm:class:ai-ethics-checklist",
+        "label": "AI Ethics Checklist"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ]
   },
   "provenance": {
@@ -110,62 +144,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ethical-review-process:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:59127f1a3315446241a9d4024033d7197427f71b16df633f7a042f7e1f7d2fb3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE P7000]]",
-      "resolved": "urn:visionflow:linked:ieee-p7000",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   An Ethical Review Process is a structured methodology for evaluating AI systems against ethical frameworks, organisational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure responsible AI development and deployment. It applies consequentialist, deontological, and virtue-ethics frameworks to assess fairness, privacy, autonomy, safety, and accountability dimensions, producing approval, conditional approval, deferral, or rejection outcomes with documented rationale.

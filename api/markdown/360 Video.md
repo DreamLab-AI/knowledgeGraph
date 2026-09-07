@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 360 Video
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "360 Video",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:immersive-media", "vc:label": "Immersive Media"},
-    {"@id": "urn:visionflow:linked:vr-experiences", "vc:label": "VR Experiences"},
-    {"@id": "urn:visionflow:linked:volumetric-video", "vc:label": "Volumetric Video"},
-    {"@id": "urn:visionflow:linked:virtual-reality", "vc:label": "Virtual Reality"}
+    {
+      "@id": "urn:visionflow:linked:immersive-media",
+      "vc:label": "Immersive Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:vr-experiences",
+      "vc:label": "VR Experiences"
+    },
+    {
+      "@id": "urn:visionflow:linked:volumetric-video",
+      "vc:label": "Volumetric Video"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-reality",
+      "vc:label": "Virtual Reality"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,17 +50,32 @@ public: true
   },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:vr-experiences", "label": "VR Experiences"}
+      {
+        "@id": "urn:ngm:class:vr-experiences",
+        "label": "VR Experiences"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:video-streaming", "label": "Video Streaming"}
+      {
+        "@id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:volumetric-video", "label": "Volumetric Video"},
-      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"}
+      {
+        "@id": "urn:ngm:class:volumetric-video",
+        "label": "Volumetric Video"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
     ]
   },
   "quality": 0.8,

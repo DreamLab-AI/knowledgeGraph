@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Polygon
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,62 +195,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:polygon:2b3b18120924",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f8f58647742e8cca5fe188731b0862d68bd74efe4d45948e70906f3f38535112"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rollup]]",
-      "resolved": "urn:visionflow:linked:rollup",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[zkSync]]",
-      "resolved": "urn:visionflow:linked:zk-sync",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Arbitrum]]",
-      "resolved": "urn:visionflow:linked:arbitrum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Polygon is a set of Ethereum scaling protocols and a development platform, originally launched as Matic Network in 2017 and rebranded to Polygon in 2021. It began as a proof-of-stake sidechain that runs in parallel to Ethereum and has expanded into zero-knowledge rollup technology, notably Polygon zkEVM, which executes Ethereum-compatible transactions with validity proofs. The architecture aims to offer lower fees and higher throughput while keeping compatibility with Ethereum tooling. The network's token, originally MATIC and migrating to POL, is used for staking and fees across Polygon chains.

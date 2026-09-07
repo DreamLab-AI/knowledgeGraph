@@ -1,55 +1,104 @@
----
-public: true
----
-
-# Fast Fourier Transform
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:fast-fourier-transform", "@type":"Page", "title":"Fast Fourier Transform", "vc:slug":"fast-fourier-transform", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:fast-fourier-transform",
+  "@type": "Page",
+  "title": "Fast Fourier Transform",
+  "vc:slug": "fast-fourier-transform",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:fast-fourier-transform",
-  "@type":"Class",
-  "label":"Fast Fourier Transform",
-  "definition":"The Fast Fourier Transform (FFT) is a family of efficient algorithms for computing the discrete Fourier transform and its inverse, reducing the cost from quadratic to log-linear time in the number of samples. By exploiting symmetry and recursive divide-and-conquer factorisation, such as the Cooley-Tukey scheme, the FFT makes spectral analysis of large signals computationally practical. It is a foundational primitive in digital signal processing, communications, numerical methods and many machine learning and scientific computing workloads.",
-  "domain":"ai",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:digital-signal-processing","label":"Digital Signal Processing"},
-      {"@id":"urn:ngm:class:numerical-methods","label":"Numerical Methods"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fast-fourier-transform",
+  "@type": "Class",
+  "label": "Fast Fourier Transform",
+  "definition": "The Fast Fourier Transform (FFT) is a family of efficient algorithms for computing the discrete Fourier transform and its inverse, reducing the cost from quadratic to log-linear time in the number of samples. By exploiting symmetry and recursive divide-and-conquer factorisation, such as the Cooley-Tukey scheme, the FFT makes spectral analysis of large signals computationally practical. It is a foundational primitive in digital signal processing, communications, numerical methods and many machine learning and scientific computing workloads.",
+  "domain": "ai",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:algorithm","label":"Algorithm"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:algorithm","label":"Algorithm"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:convolution","label":"Convolution"},
-      {"@id":"urn:ngm:class:data-compression","label":"Data Compression"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:matrix-multiplication","label":"Matrix Multiplication"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:audio-processing","label":"Audio Processing"},
-      {"@id":"urn:ngm:class:image-processing","label":"Image Processing"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:convolutional-neural-network","label":"Convolutional Neural Network"},
-      {"@id":"urn:ngm:class:gpu-acceleration","label":"GPU Acceleration"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

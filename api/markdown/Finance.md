@@ -1,62 +1,126 @@
----
-public: true
----
-
-# Finance
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:finance", "@type":"Page", "title":"Finance", "vc:slug":"finance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:finance",
+  "@type": "Page",
+  "title": "Finance",
+  "vc:slug": "finance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:finance",
-  "@type":"Class",
-  "label":"Finance",
-  "definition":"Finance is the discipline concerned with the management, creation, and study of money, investments, and other financial instruments across individuals, organisations, and markets. It encompasses how capital is raised, allocated, priced, and risk-managed over time, spanning corporate finance, public finance, and personal finance. In the context of distributed systems, finance increasingly intersects with blockchain-based instruments and decentralised protocols that reimagine settlement, custody, and intermediation.",
-  "domain":"blockchain",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:economics","label":"Economics"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:capital-markets","label":"Capital Markets"},
-      {"@id":"urn:ngm:class:investment-management","label":"Investment Management"},
-      {"@id":"urn:ngm:class:asset-management","label":"Asset Management"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:finance",
+  "@type": "Class",
+  "label": "Finance",
+  "definition": "Finance is the discipline concerned with the management, creation, and study of money, investments, and other financial instruments across individuals, organisations, and markets. It encompasses how capital is raised, allocated, priced, and risk-managed over time, spanning corporate finance, public finance, and personal finance. In the context of distributed systems, finance increasingly intersects with blockchain-based instruments and decentralised protocols that reimagine settlement, custody, and intermediation.",
+  "domain": "blockchain",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "@id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:economics","label":"Economics"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:financial-system","label":"Financial System"},
-      {"@id":"urn:ngm:class:banking-system","label":"Banking System"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "@id": "urn:ngm:class:banking-system",
+        "label": "Banking System"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:fintech","label":"FinTech"},
-      {"@id":"urn:ngm:class:payment-processing","label":"Payment Processing"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fintech",
+        "label": "FinTech"
+      },
+      {
+        "@id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:risk","label":"Risk"},
-      {"@id":"urn:ngm:class:financial-services","label":"Financial Services"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:risk",
+        "label": "Risk"
+      },
+      {
+        "@id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:financial-inclusion","label":"Financial Inclusion"},
-      {"@id":"urn:ngm:class:banking","label":"Banking"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:banking",
+        "label": "Banking"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:decentralised-finance","label":"Decentralised Finance"},
-      {"@id":"urn:ngm:class:token-economy","label":"Token Economy"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:token-economy",
+        "label": "Token Economy"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"},
-      {"@id":"urn:ngm:class:open-banking","label":"Open Banking"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

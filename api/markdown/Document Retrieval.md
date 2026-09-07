@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Document Retrieval
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,39 +20,86 @@ public: true
   "definition": "Document Retrieval is the process of identifying and returning relevant documents from a corpus in response to an information need expressed as a query. It forms the foundational layer of search engines, question-answering systems, and retrieval-augmented generation pipelines. Retrieval methods range from sparse keyword matching to dense neural embedding approaches that encode semantic similarity. Effectiveness is typically measured using metrics such as precision, recall, mean reciprocal rank, and normalised discounted cumulative gain.",
   "domain": "artificial-intelligence",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:dense-retrieval", "label": "Dense Retrieval"},
-      {"@id": "urn:ngm:class:hybrid-retrieval", "label": "Hybrid Retrieval"}
+      {
+        "@id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-retrieval",
+        "label": "Hybrid Retrieval"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:zero-knowledge-machine-learning", "label": "Zero-Knowledge Machine Learning"},
-      {"@id": "urn:ngm:class:embedding-search", "label": "Embedding Search"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-machine-learning",
+        "label": "Zero-Knowledge Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cross-modal-retrieval", "label": "Cross Modal Retrieval"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:cross-modal-retrieval",
+        "label": "Cross Modal Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
-      {"@id": "urn:ngm:class:embedding-space", "label": "Embedding Space"}
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:embedding-layer", "label": "Embedding Layer"}
+      {
+        "@id": "urn:ngm:class:embedding-layer",
+        "label": "Embedding Layer"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:dense-passage-retrieval", "label": "Dense Passage Retrieval"}
+      {
+        "@id": "urn:ngm:class:dense-passage-retrieval",
+        "label": "Dense Passage Retrieval"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:graph-embedding", "label": "Graph Embedding"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:graph-embedding",
+        "label": "Graph Embedding"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:email-corpus-retrieval-architecture", "label": "Email Corpus Retrieval Architecture"}
+      {
+        "@id": "urn:ngm:class:email-corpus-retrieval-architecture",
+        "label": "Email Corpus Retrieval Architecture"
+      }
     ]
   },
   "sameAs": [],
@@ -185,22 +226,22 @@ public: true
       ObjectSomeValuesFrom(ai:reducesTo ai:SemanticSimilarityComputation))
     ```
   - ## About
-    Document Retrieval addresses the fundamental challenge of matching a user's expressed information need — a query — against a potentially vast, heterogeneous corpus of text documents to return those items most likely to satisfy that need. The field emerged from library science and bibliographic indexing in the mid-20th century, with Gerard Salton's SMART system at Cornell in the 1960s introducing the vector space model and cosine similarity that remained canonical for two decades. Salton's SMART (System for the Mechanical Analysis and Retrieval of Text) system formalised the document-query relevance problem as a geometric problem: represent documents and queries as weighted term vectors in a high-dimensional space and rank documents by cosine similarity to the query vector. This insight — that retrieval could be reduced to vector algebra — has proven extraordinarily durable, persisting through the transition from sparse TF-IDF vectors to dense neural embedding vectors half a century later.
+    Document Retrieval addresses the fundamental challenge of matching a user's expressed information need — a query — against a potentially vast, heterogeneous corpus of text documents to return those items most likely to satisfy that need. The field emerged from library science and bibliographic indexing in the mid-20th century, with Gerard Salton's SMART system at Cornell in the 1960s introducing the vector space model and cosine similarity that remained canonical for two decades. Salton's SMART (System for the Mechanical Analysis and Retrieval of Text) system formalised the document-query relevance problem as a geometric problem: represent documents and queries as weighted term vectors in a high-dimensional space and rank documents by cosine similarity to the query vector. This insight — that retrieval [private] be reduced to vector algebra — has proven extraordinarily durable, persisting through the transition from sparse TF-IDF vectors to dense neural embedding vectors half a century later.
 
     The seminal work of Robertson and Spärck Jones at City, University of London through the 1970s and 1980s established the probabilistic relevance model, culminating in [[BM25]] — the Best Match 25 ranking function that remains the dominant sparse retrieval baseline and default in Elasticsearch and Apache Solr through 2026. Karen Spärck Jones's 1972 paper introducing Inverse Document Frequency as a measure of term specificity provided the observational foundation: rare terms are more informative about relevance than common terms. Robertson's 1977 Probability Ranking Principle formalised the theoretical justification: ranking documents by estimated probability of relevance is optimal under independence assumptions. The synthesis of these insights in BM25's saturation-clipped term-frequency and length-normalised IDF weighting produced a ranking function that has proven robust across five decades of retrieval research, resisting displacement by even the most sophisticated neural approaches in out-of-domain generalisation settings. The entire BM ranking function family was developed using British Library Research and Development Division funding, making the algorithmic bedrock of modern document retrieval a direct product of UK public science investment.
 
-    The field was transformed from the late 2010s onward by the introduction of transformer-based language models that encode semantic content into dense low-dimensional vectors, enabling [[Dense Retrieval]] systems capable of matching semantically equivalent queries and documents even when they share no vocabulary. The key enabler was the pre-training paradigm: BERT (Devlin et al., 2019) demonstrated that a transformer encoder pre-trained on masked language modelling over billions of tokens produced contextualised token representations that captured semantic relationships with unprecedented richness. Applied to document retrieval, this meant that query-document similarity could be computed in a semantic embedding space rather than a vocabulary space, overcoming the vocabulary mismatch problem that had constrained lexical retrieval for decades. Karpukhin et al.'s 2020 Dense Passage Retrieval (DPR) paper demonstrated that bi-encoder dense retrieval trained on Natural Questions question-answer pairs substantially outperformed BM25 for open-domain question answering (Top-20 accuracy 78.4% vs 59.1% for BM25 on Natural Questions), initiating a decade of intense dense-vs-sparse research. The critical finding was that dense retrieval's advantages were training-data-dependent: with sufficient in-domain labelled data, dense retrievers substantially outperformed BM25; without domain-specific training, BM25 frequently matched or outperformed dense retrievers on out-of-domain benchmarks.
+    The field was transformed from the late 2010s onward by the introduction of transformer-based language models that encode semantic content into dense low-dimensional vectors, enabling [[Dense Retrieval]] systems capable of matching semantically equivalent queries and documents even when they share no vocabulary. The key enabler was the pre-training paradigm: BERT (Devlin et al., 2019) demonstrated that a transformer encoder pre-trained on masked language modelling over billions of tokens produced contextualised token representations that captured semantic relationships with unprecedented richness. Applied to document retrieval, this meant that query-document similarity [private] be computed in a semantic embedding space rather than a vocabulary space, overcoming the vocabulary mismatch problem that had constrained lexical retrieval for decades. Karpukhin et al.'s 2020 Dense Passage Retrieval (DPR) paper demonstrated that bi-encoder dense retrieval trained on Natural Questions question-answer pairs substantially outperformed BM25 for open-domain question answering (Top-20 accuracy 78.4% vs 59.1% for BM25 on Natural Questions), initiating a decade of intense dense-vs-sparse research. The critical finding was that dense retrieval's advantages were training-data-dependent: with sufficient in-domain labelled data, dense retrievers substantially outperformed BM25; without domain-specific training, BM25 frequently matched or outperformed dense retrievers on out-of-domain benchmarks.
 
     By 2026 the field has converged on a three-stage architecture that dominates both research benchmarks and production deployments: a fast first-stage retriever (BM25, dense bi-encoder, or [[Hybrid Retrieval]] combination) generates a candidate set of 50-200 documents; a second stage fuses multiple ranked lists via [[Reciprocal Rank Fusion]] or weighted score combination; and an optional third stage applies a [[Cross-Encoder Reranking]] cross-encoder to rescore the final shortlist with high precision using full bidirectional attention over query-document pairs. This architecture is the retrieval backbone for [[Retrieval-Augmented Generation]] (RAG) pipelines, where retrieved documents are provided as grounding context to [[Large Language Models]] to reduce hallucination. The RAG paradigm has driven explosive growth in document retrieval infrastructure: the global RAG market reached USD 2.33 billion in 2025 growing at 38.4% CAGR toward USD 9.86 billion by 2030, with enterprise document retrieval as its most costly and critical engineering component. Across enterprise RAG deployments, 80.5% rely on standard retrieval frameworks such as FAISS or Elasticsearch, and production studies consistently show that hybrid BM25+dense retrieval more than halves hallucination rates compared to dense-only baselines, attributable to BM25's exact-match precision for entity names, product identifiers, and technical terms that dense models tend to conflate with semantically similar but contextually distinct content. The rise of agentic AI systems further expands the scope of document retrieval, as AI agents autonomously issue retrieval queries across multiple corpora as sub-steps in complex reasoning chains — searching legal databases, scientific literature, company knowledge bases, and real-time web sources in parallel, synthesising the retrieved evidence into structured analytical outputs.
 
-    The research community has also explored new retrieval paradigms beyond the bi-encoder/cross-encoder dichotomy. Late-interaction models such as ColBERT (Khattab and Zaharia, SIGIR 2020) store per-token embeddings for every document and compute the MaxSim operator — the sum of maximum inner products between each query token embedding and all passage token embeddings — at query time, achieving richer fine-grained interaction than single-vector similarity at the cost of higher storage (30-50× more than bi-encoder models) and query latency. ColBERT-v2 with knowledge distillation achieves BEIR average nDCG@10 of 0.464, substantially outperforming DPR's 0.348 and approaching BM25's 0.428, while maintaining the efficient separate query/document encoding that makes ColBERT deployable at scale via pre-computed per-token document index. Learned sparse models such as SPLADE (Formal et al., SIGIR 2021) and SPLADE++ combine inverted-index efficiency with neural query/document term expansion: a BERT encoder with log-saturation activation learns to produce vocabulary-wide token weight distributions resembling BM25's IDF-weighted term vectors but encoding semantic synonyms and conceptually related terms absent from the original text. SPLADE++ achieves BEIR average nDCG@10 of 0.504 — the current state of the art among retrieval models without cross-encoder reranking — while retaining inverted-index-based inference 10-50× faster than bi-encoder ANN search. [[Hybrid Retrieval]] combinations of BM25 and dense retrievers via [[Reciprocal Rank Fusion]] achieve 0.480-0.510 BEIR average with simpler deployment, confirming that the complementary failure modes of sparse and dense retrieval make their combination consistently stronger than either alone. By 2026 the leading embedding models on the MTEB v2 benchmark include NVIDIA NV-Embed-v2 (72.31 average score, 4096 dimensions, 7.85B parameters), Qwen3-Embedding-8B (leading multilingual at 70.58), and BGE-M3, which uniquely supports dense, sparse, and ColBERT-style multi-vector retrieval from a single model across 100+ languages with 8K context length. Google released a breakthrough multimodal embedding model in early 2026 that encodes text, images, video, audio, and PDFs into a shared vector space, extending [[Document Retrieval]] to full enterprise multimedia [[Cross Modal Retrieval]] at scale and potentially replacing domain-specific vision encoders with a unified retrieval infrastructure.
+    The research community has also explored new retrieval paradigms beyond the bi-encoder/cross-encoder dichotomy. Late-interaction models such as ColBERT (Khattab and Zaharia, SIGIR 2020) store per-token embeddings for every document and compute the MaxSim operator — the sum of maximum inner products between each query token embedding and all passage token embeddings — at query time, achieving richer fine-grained interaction than single-vector similarity at the cost of higher storage (30-50× more than bi-encoder models) and query latency. ColBERT-v2 with knowledge distillation achieves BEIR average nDCG@10 of 0.464, substantially outperforming DPR's 0.348 and approaching BM25's 0.428, while maintaining the efficient separate query/document encoding that makes ColBERT deployable at scale via pre-computed per-token document [private]. Learned sparse models such as SPLADE (Formal et al., SIGIR 2021) and SPLADE++ combine inverted-index efficiency with neural query/document term expansion: a BERT encoder with log-saturation activation learns to produce vocabulary-wide token weight distributions resembling BM25's IDF-weighted term vectors but encoding semantic synonyms and conceptually related terms absent from the original text. SPLADE++ achieves BEIR average nDCG@10 of 0.504 — the current state of the art among retrieval models without cross-encoder reranking — while retaining inverted-index-based inference 10-50× faster than bi-encoder ANN search. [[Hybrid Retrieval]] combinations of BM25 and dense retrievers via [[Reciprocal Rank Fusion]] achieve 0.480-0.510 BEIR average with simpler deployment, confirming that the complementary failure modes of sparse and dense retrieval make their combination consistently stronger than either alone. By 2026 the leading embedding models on the MTEB v2 benchmark include NVIDIA NV-Embed-v2 (72.31 average score, 4096 dimensions, 7.85B parameters), Qwen3-Embedding-8B (leading multilingual at 70.58), and BGE-M3, which uniquely supports dense, sparse, and ColBERT-style multi-vector retrieval from a single model across 100+ languages with 8K context length. Google released a breakthrough multimodal embedding model in early 2026 that encodes text, images, video, audio, and PDFs into a shared vector space, extending [[Document Retrieval]] to full enterprise multimedia [[Cross Modal Retrieval]] at scale and potentially replacing domain-specific vision encoders with a unified retrieval infrastructure.
 
   - ## Components / Architecture
     A complete document retrieval system comprises the following core components operating in sequence:
 
     - **Document Ingestion and Pre-processing Pipeline**: Raw documents are ingested, parsed (PDF, HTML, Word, structured data), segmented into retrieval-unit chunks (passages of 128-512 tokens or document-level), and pre-processed via tokenisation, normalisation (lowercasing, stemming, lemmatisation for sparse retrieval; subword tokenisation via BPE for dense encoders), and metadata extraction. Chunking strategy significantly affects retrieval quality — sentence-window chunking, recursive paragraph splitting, and semantic chunking based on embedding similarity each offer different precision-recall trade-offs for different document types.
     - **[[Inverted Index]] (Sparse Retrieval Layer)**: For [[BM25]] and keyword-based retrieval, each term is mapped to a posting list of (document-id, term-frequency) pairs. Term statistics (document frequencies, corpus size, average document length) are pre-computed for IDF weighting. Elasticsearch and Apache Lucene implement this with WAND early termination for sub-10ms query latency over hundreds of millions of documents.
-    - **Dense [[Embedding]] Index (Dense Retrieval Layer)**: Documents are encoded into dense vectors (768-4096 dimensions) using a bi-encoder [[Embedding Model]] (E5, BGE, Cohere Embed, OpenAI text-embedding-3) and stored in an approximate nearest-neighbour index such as FAISS HNSW, Weaviate, Qdrant, or Pinecone. Query-time retrieval is a nearest-neighbour search over the dense [[Embedding Space]].
+    - **Dense [[Embedding]] Index (Dense Retrieval Layer)**: Documents are encoded into dense vectors (768-4096 dimensions) using a bi-encoder [[Embedding Model]] (E5, BGE, Cohere Embed, OpenAI text-embedding-3) and stored in an approximate nearest-neighbour [private] such as FAISS HNSW, Weaviate, Qdrant, or Pinecone. Query-time retrieval is a nearest-neighbour search over the dense [[Embedding Space]].
     - **[[Hybrid Retrieval]] Fusion Layer**: Ranked lists from sparse and dense retrievers are fused via Reciprocal Rank Fusion (RRF) or normalised linear combination. Native RRF support exists in Elasticsearch 8.x (`rrf` retriever), OpenSearch, Weaviate, and Qdrant. The fused ranked list provides complementary coverage — [[BM25]] precision for exact keyword queries, dense recall for semantic queries.
     - **[[Cross-Encoder Reranking]] Layer**: The top-k (50-200) fused candidates are re-scored by a cross-encoder model that processes (query, document) pairs jointly with full bidirectional attention, achieving the highest retrieval precision at the cost of higher latency. Popular cross-encoders include ms-marco-MiniLM and Cohere Rerank.
     - **Query Processing**: Spelling correction, query expansion (pseudo-relevance feedback, LLM-based expansion), multi-query generation (generating multiple paraphrase queries and merging results), and intent classification improve query quality before retrieval.
@@ -229,7 +270,7 @@ public: true
 
     The theoretical foundations of document retrieval were established through the Robertson-Spärck Jones probabilistic relevance framework (1976-1994) discussed under the [[BM25]] entry. The language modelling approach to IR (Ponte and Croft, SIGIR 1998; Zhai and Lafferty, SIGIR 2001) provided an alternative theoretical foundation treating retrieval as estimating the probability that a document language model generated the query, with Dirichlet smoothing addressing zero-probability query terms. The field remained dominated by unsupervised lexical methods until 2013-2015, when neural learning-to-rank approaches (Cao et al., ICML 2007; RankSVM; LambdaMART) began demonstrating machine-learned ranking improvements over hand-crafted BM25 features. Word2Vec embeddings (Mikolov et al., 2013) and GloVe (Pennington et al., 2014) enabled early embedding-based query expansion and soft matching, but without the contextualisation that BERT would later provide.
 
-    The neural IR revolution was initiated by Dai and Callan's CEDR (2019) and Nogueira and Cho's Passage Reranking with BERT (2019), which demonstrated transformer cross-encoding for reranking and established the first-stage-retrieve/second-stage-rerank two-stage pipeline that now dominates production systems. Karpukhin et al.'s DPR (EMNLP 2020) showed that dense bi-encoder retrieval could outperform BM25 on semantic QA datasets when trained on sufficient labelled data, initiating the dense retrieval era. Khattab and Zaharia's ColBERT (SIGIR 2020) introduced late interaction as an efficiency-accuracy compromise between bi-encoders and cross-encoders. Formal et al.'s SPLADE (SIGIR 2021) demonstrated that neural models could produce sparse representations competitive with dense retrieval while retaining inverted-index efficiency. The BEIR benchmark (Thakur et al., NeurIPS 2021) was a watershed: testing 9 neural retrieval methods on 18 heterogeneous datasets in zero-shot evaluation revealed systematic domain generalisation failures, showing BM25 achieving comparable or superior average nDCG@10 to DPR across diverse out-of-domain tasks, triggering research into generalisation-focused dense retrieval (E5, Wang et al. 2022; DRAGON+, Lin et al. 2023; RepLLaMA, Ma et al. 2023). Lewis et al.'s RAG paper (NeurIPS 2020) establishing retrieval-augmented generation as a paradigm for knowledge-intensive NLP drove the most significant expansion in document retrieval deployment in the field's history.
+    The neural IR revolution was initiated by Dai and Callan's CEDR (2019) and Nogueira and Cho's Passage Reranking with BERT (2019), which demonstrated transformer cross-encoding for reranking and established the first-stage-retrieve/second-stage-rerank two-stage pipeline that now dominates production systems. Karpukhin et al.'s DPR (EMNLP 2020) showed that dense bi-encoder retrieval [private] outperform BM25 on semantic QA datasets when trained on sufficient labelled data, initiating the dense retrieval era. Khattab and Zaharia's ColBERT (SIGIR 2020) introduced late interaction as an efficiency-accuracy compromise between bi-encoders and cross-encoders. Formal et al.'s SPLADE (SIGIR 2021) demonstrated that neural models [private] produce sparse representations competitive with dense retrieval while retaining inverted-index efficiency. The BEIR benchmark (Thakur et al., NeurIPS 2021) was a watershed: testing 9 neural retrieval methods on 18 heterogeneous datasets in zero-shot evaluation revealed systematic domain generalisation failures, showing BM25 achieving comparable or superior average nDCG@10 to DPR across diverse out-of-domain tasks, triggering research into generalisation-focused dense retrieval (E5, Wang et al. 2022; DRAGON+, Lin et al. 2023; RepLLaMA, Ma et al. 2023). Lewis et al.'s RAG paper (NeurIPS 2020) establishing retrieval-augmented generation as a paradigm for knowledge-intensive NLP drove the most significant expansion in document retrieval deployment in the field's history.
 
     UK academic contributions to the field span its entire history. Robertson at City, University of London and Spärck Jones at Cambridge are the field's most cited researchers in the probabilistic framework. The University of Glasgow IR group — led by Professor Iadh Ounis (Chair of IR, former SIGIR chair) and Craig Macdonald — maintains PyTerrier (github.com/terrier-org/pyterrier), the primary Python research platform for IR experimentation used by research groups worldwide, and has contributed TREC evaluation runs using BM25-based systems for over two decades. Glasgow publishes consistently at SIGIR, ECIR, and ICTIR. The EdinburghNLP group at the University of Edinburgh, supported by UKRI CDT in NLP (grant EP/S022481/1) and ELIAI (Edinburgh Laboratory for Integrated Artificial Intelligence), conducts active research on document retrieval, long-document encoding, knowledge-enhanced IR, and conversational search. KEIR@ECIR 2024 (the First Workshop on Knowledge-Enhanced Information Retrieval) featured work from Edinburgh researchers including Shubham Chatterjee and Iain Mackie on entity-centric neural retrieval. UCL Computer Science teaches [[Information Retrieval]] as a mandatory module (COMP0084 Information Retrieval and Data Mining), covering BM25 implementation, BEIR evaluation, and dense retrieval architectures. Imperial College London's NLP group contributes to scientific and biomedical neural IR research.
 
@@ -252,7 +293,7 @@ public: true
   - ## Future Directions (2026–2030)
     Document retrieval will continue to evolve along several convergent directions through 2030. The BM25/dense retrieval dichotomy is giving way to unified learned sparse-dense models (BGE-M3, SPLADE++) that train a single model capable of both paradigms, simplifying deployment architecture while improving performance. End-to-end trainable RAG systems (REALM, Atlas) that jointly optimise the retrieval and generation stages through a single gradient signal represent the frontier of retrieval integration into [[Large Language Models]]; differentiable retrieval over discrete inverted indexes remains an open research problem.
 
-    Multi-vector and structured retrieval architectures — ColBERT late interaction, knowledge graph-augmented retrieval, and structured document retrieval incorporating tables, figures, and metadata — will expand the scope of what "document retrieval" addresses. [[Cross Modal Retrieval]] unifying text, image, audio, video, and structured data in shared embedding spaces will become the standard for enterprise multimedia content management. Agentic retrieval, where AI agents iteratively issue retrieval queries, evaluate relevance, and adaptively reformulate queries in multi-step reasoning chains, will move from research prototype to production standard across legal, medical, and scientific knowledge work. Continual learning retrieval systems that update document representations incrementally as corpora evolve — without full re-indexing — will address the index staleness problem critical for news, social media, and e-commerce applications. Regulatory requirements for retrieval transparency and traceability (EU AI Act Article 13 requirements for explainability) will drive demand for hybrid BM25+dense architectures that provide interpretable per-term score contributions alongside semantic similarity signals.
+    Multi-vector and structured retrieval architectures — ColBERT late interaction, knowledge graph-augmented retrieval, and structured document retrieval incorporating tables, figures, and metadata — will expand the scope of what "document retrieval" addresses. [[Cross Modal Retrieval]] unifying text, image, audio, video, and structured data in shared embedding spaces will become the standard for enterprise multimedia content management. Agentic retrieval, where AI agents iteratively issue retrieval queries, evaluate relevance, and adaptively reformulate queries in multi-step reasoning chains, will move from research prototype to production standard across legal, medical, and scientific knowledge work. Continual learning retrieval systems that update document representations incrementally as corpora evolve — without full re-indexing — will address the [private] staleness problem critical for news, social media, and e-commerce applications. Regulatory requirements for retrieval transparency and traceability (EU AI Act Article 13 requirements for explainability) will drive demand for hybrid BM25+dense architectures that provide interpretable per-term score contributions alongside semantic similarity signals.
 
   - ## Formal Retrieval Algorithms
     Document retrieval at query time follows distinct computational paths depending on the retrieval paradigm:
@@ -266,7 +307,7 @@ public: true
 
     **Dense Bi-Encoder Retrieval (Query Time)**:
     1. Encode the query Q into a dense vector q_vec = Encoder_Q(Q) ∈ ℝᵈ using the query encoder (same architecture as the document encoder, potentially with separate weights).
-    2. Execute approximate nearest-neighbour (ANN) search over the pre-built HNSW or IVF-PQ index of document vectors {d_vec₁, ..., d_vecₙ}.
+    2. Execute approximate nearest-neighbour (ANN) search over the pre-built HNSW or IVF-PQ [private] of document vectors {d_vec₁, ..., d_vecₙ}.
     3. Return top-k documents by maximum inner product (MIPS) or cosine similarity between q_vec and each document vector.
     4. ANN approximation may miss a small fraction (1-5%) of exact top-k results; exact search is more accurate but O(N·d) per query.
 
@@ -302,7 +343,7 @@ public: true
     - **Posting List**: The list of (document-id, term-frequency) pairs associated with a term in the [[Inverted Index]].
     - **Bi-Encoder**: A dense retrieval architecture with two independent encoders (one for queries, one for documents) that project text into a shared [[Embedding Space]] for nearest-neighbour similarity search.
     - **Cross-Encoder**: A reranking model that jointly encodes a (query, document) pair via full bidirectional attention, producing a relevance score. Accurate but slow; applied to a shortlist of candidates.
-    - **ANN (Approximate Nearest Neighbour)**: An index structure (HNSW, IVF-PQ, ScaNN) that returns the k most similar vectors to a query vector in sub-linear time, with a small probability of missing exact top-k results.
+    - **ANN (Approximate Nearest Neighbour)**: An [private] structure (HNSW, IVF-PQ, ScaNN) that returns the k most similar vectors to a query vector in sub-linear time, with a small probability of missing exact top-k results.
     - **BM25**: Best Match 25 — the dominant sparse probabilistic ranking function combining TF saturation, IDF weighting, and document-length normalisation.
     - **RRF (Reciprocal Rank Fusion)**: A rank combination function merging multiple ranked lists: RRF(d) = Σ_r 1/(60 + rank_r(d)).
     - **Chunking**: The process of splitting long documents into shorter retrieval units (passages, paragraphs) to fit within model context windows and improve retrieval granularity.
@@ -320,7 +361,7 @@ public: true
 
     **Ambiguous Queries**: Short, ambiguous queries ("python") may be satisfied by multiple different user intents (programming language documentation, the snake species, the comedy group). Single-vector dense retrieval collapses these intents into a single embedding, potentially averaging across intents. Query understanding, intent classification, and multi-query generation (expanding the query into multiple specific reformulations) mitigate this.
 
-    **Retrieval Latency at Scale**: Dense ANN search over 100M+ vectors with HNSW requires significant RAM (100-400 GB for typical 768-dim vectors at 100M docs) and CPU/GPU resources. BM25 inverted index traversal is 10-100× more memory-efficient but may be slower for very long queries. Sharding, GPU acceleration, and product quantisation (PQ compression reducing vector size 4-32×) are production engineering responses.
+    **Retrieval Latency at Scale**: Dense ANN search over 100M+ vectors with HNSW requires significant RAM (100-400 GB for typical 768-dim vectors at 100M docs) and CPU/GPU resources. BM25 inverted [private] traversal is 10-100× more memory-efficient but may be slower for very long queries. Sharding, GPU acceleration, and product quantisation (PQ compression reducing vector size 4-32×) are production engineering responses.
 
   - ## Research & Literature
     1. Salton, G., & Lesk, M. E. (1968). Computer Evaluation of Indexing and Text Processing. *Journal of the ACM*, 15(1), 8–36.

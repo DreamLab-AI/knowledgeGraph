@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metadata Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -221,42 +216,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metadata-registry:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c28390e09f329a0015903cd135b284749cd904b3a502b0b9482fc8fb53cbdc9c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Enterprise Data Consistency]]",
-      "resolved": "urn:visionflow:linked:enterprise-data-consistency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Governance]]",
-      "resolved": "urn:visionflow:owl:class:data-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Centralised systems for managing metadata according to standards like ISO/IEC 11179, providing authoritative definitions, usage rules, and data element descriptions to ensure consistency, interoperability, and governance across enterprise data systems.

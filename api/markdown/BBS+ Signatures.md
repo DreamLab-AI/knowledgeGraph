@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BBS+ Signatures
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,4 +157,3 @@ public: true
   - In deployment, BBS+ Signatures are implemented in libraries including the Mattrglobal bbs-signatures TypeScript library, the Hyperledger AnonCreds Rust library, and the W3C vc-di-bbs JavaScript library. These are integrated into SSI wallets (Trinsic, Esatus, Lissi) and government identity programmes including the EU EUDI Wallet pilot. The BBS cryptosuite for W3C Verifiable Credentials has reached Candidate Recommendation status.
 
   - By 2024–2025, BBS+ Signatures are positioned as the preferred cryptographic method for large-scale digital identity deployments requiring both interoperability and user privacy. The EUDI Wallet's selective disclosure requirements have driven substantial implementation work across EU member states. Open research questions include post-quantum security — pairing-based schemes are vulnerable to Shor's algorithm — and hardware security module (HSM) support for issuer signing operations, which most HSM vendors do not yet natively support for BLS12-381 curve operations.
-

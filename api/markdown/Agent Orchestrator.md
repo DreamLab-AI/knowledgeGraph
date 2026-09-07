@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Orchestrator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,73 +7,274 @@ public: true
   "title": "Agent Orchestrator",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:ai-agent-system", "vc:label": "AI Agent System"},
-    {"@id": "urn:visionflow:linked:task-planning", "vc:label": "Task Planning"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:autonomous-task-execution", "vc:label": "Autonomous Task Execution"},
-    {"@id": "urn:visionflow:linked:coordination-mechanisms", "vc:label": "Coordination Mechanisms"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:agent-to-agent-protocol", "vc:label": "Agent-to-Agent Protocol"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain-of-Thought"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:lang-graph", "vc:label": "LangGraph"},
-    {"@id": "urn:visionflow:linked:autogen", "vc:label": "AutoGen"},
-    {"@id": "urn:visionflow:linked:crew-ai", "vc:label": "CrewAI"},
-    {"@id": "urn:visionflow:linked:openai-agents-sdk", "vc:label": "OpenAI Agents SDK"},
-    {"@id": "urn:visionflow:linked:task-decomposition", "vc:label": "Task Decomposition"},
-    {"@id": "urn:visionflow:linked:directed-acyclic-graph", "vc:label": "Directed Acyclic Graph"},
-    {"@id": "urn:visionflow:linked:error-recovery", "vc:label": "Error Recovery"},
-    {"@id": "urn:visionflow:linked:plan-and-execute-pattern", "vc:label": "Plan-and-Execute Pattern"},
-    {"@id": "urn:visionflow:linked:react-pattern", "vc:label": "ReAct Pattern"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:workflow-engine", "vc:label": "Workflow Engine"},
-    {"@id": "urn:visionflow:linked:fipa-acl", "vc:label": "FIPA ACL"},
-    {"@id": "urn:visionflow:linked:contract-net-protocol", "vc:label": "Contract Net Protocol"},
-    {"@id": "urn:visionflow:linked:aws-bedrock-agents", "vc:label": "AWS Bedrock Agents"},
-    {"@id": "urn:visionflow:linked:google-vertex-ai", "vc:label": "Google Vertex AI"},
-    {"@id": "urn:visionflow:linked:azure-ai-studio", "vc:label": "Azure AI Studio"},
-    {"@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:result-validation", "vc:label": "Result Validation"},
-    {"@id": "urn:visionflow:linked:scheduling", "vc:label": "Scheduling"},
-    {"@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems"},
-    {"@id": "urn:visionflow:linked:capability-advertisement", "vc:label": "Capability Advertisement"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:research-agent", "vc:label": "Research Agent"},
-    {"@id": "urn:visionflow:linked:customer-support", "vc:label": "Customer Support"},
-    {"@id": "urn:visionflow:linked:software-development-automation", "vc:label": "Software Development Automation"},
-    {"@id": "urn:visionflow:linked:planning-algorithm", "vc:label": "Planning Algorithm"},
-    {"@id": "urn:visionflow:linked:reasoning-model", "vc:label": "Reasoning Model"},
-    {"@id": "urn:visionflow:linked:goal-planner", "vc:label": "Goal Planner"},
-    {"@id": "urn:visionflow:linked:message-passing", "vc:label": "Message Passing"},
-    {"@id": "urn:visionflow:linked:structured-output", "vc:label": "Structured Output"},
-    {"@id": "urn:visionflow:linked:code-generation", "vc:label": "Code Generation"},
-    {"@id": "urn:visionflow:linked:hallucination", "vc:label": "Hallucination"},
-    {"@id": "urn:visionflow:linked:bdi-architecture", "vc:label": "BDI Architecture"},
-    {"@id": "urn:visionflow:linked:orchester-ai", "vc:label": "OrchestralAI"},
-    {"@id": "urn:visionflow:linked:agentorchestra", "vc:label": "AgentOrchestra"},
-    {"@id": "urn:visionflow:linked:polaris-framework", "vc:label": "POLARIS Framework"},
-    {"@id": "urn:visionflow:linked:software-engineering-automation", "vc:label": "Software Engineering Automation"},
-    {"@id": "urn:visionflow:linked:it-operations", "vc:label": "IT Operations"},
-    {"@id": "urn:visionflow:linked:agent-layer", "vc:label": "AgentLayer"},
-    {"@id": "urn:visionflow:linked:autonomous-coding", "vc:label": "Autonomous Coding"},
-    {"@id": "urn:visionflow:linked:evaluation", "vc:label": "Evaluation"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:intelligent-system", "vc:label": "Intelligent System"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:owl:class:ai-agent-system", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:compute-layer", "vc:label": "AgentLayer"},
-    {"@id": "urn:visionflow:owl:class:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing"}
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-planning",
+      "vc:label": "Task Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol",
+      "vc:label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-task-execution",
+      "vc:label": "Autonomous Task Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:coordination-mechanisms",
+      "vc:label": "Coordination Mechanisms"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-to-agent-protocol",
+      "vc:label": "Agent-to-Agent Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain-of-Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-graph",
+      "vc:label": "LangGraph"
+    },
+    {
+      "@id": "urn:visionflow:linked:autogen",
+      "vc:label": "AutoGen"
+    },
+    {
+      "@id": "urn:visionflow:linked:crew-ai",
+      "vc:label": "CrewAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:openai-agents-sdk",
+      "vc:label": "OpenAI Agents SDK"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-decomposition",
+      "vc:label": "Task Decomposition"
+    },
+    {
+      "@id": "urn:visionflow:linked:directed-acyclic-graph",
+      "vc:label": "Directed Acyclic Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-recovery",
+      "vc:label": "Error Recovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:plan-and-execute-pattern",
+      "vc:label": "Plan-and-Execute Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:react-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-engine",
+      "vc:label": "Workflow Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:fipa-acl",
+      "vc:label": "FIPA ACL"
+    },
+    {
+      "@id": "urn:visionflow:linked:contract-net-protocol",
+      "vc:label": "Contract Net Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:aws-bedrock-agents",
+      "vc:label": "AWS Bedrock Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-vertex-ai",
+      "vc:label": "Google Vertex AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:azure-ai-studio",
+      "vc:label": "Azure AI Studio"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:result-validation",
+      "vc:label": "Result Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:scheduling",
+      "vc:label": "Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:capability-advertisement",
+      "vc:label": "Capability Advertisement"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:research-agent",
+      "vc:label": "Research Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-support",
+      "vc:label": "Customer Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-development-automation",
+      "vc:label": "Software Development Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-algorithm",
+      "vc:label": "Planning Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning-model",
+      "vc:label": "Reasoning Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-planner",
+      "vc:label": "Goal Planner"
+    },
+    {
+      "@id": "urn:visionflow:linked:message-passing",
+      "vc:label": "Message Passing"
+    },
+    {
+      "@id": "urn:visionflow:linked:structured-output",
+      "vc:label": "Structured Output"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hallucination",
+      "vc:label": "Hallucination"
+    },
+    {
+      "@id": "urn:visionflow:linked:bdi-architecture",
+      "vc:label": "BDI Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchester-ai",
+      "vc:label": "OrchestralAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentorchestra",
+      "vc:label": "AgentOrchestra"
+    },
+    {
+      "@id": "urn:visionflow:linked:polaris-framework",
+      "vc:label": "POLARIS Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-engineering-automation",
+      "vc:label": "Software Engineering Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:it-operations",
+      "vc:label": "IT Operations"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-layer",
+      "vc:label": "AgentLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-coding",
+      "vc:label": "Autonomous Coding"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation",
+      "vc:label": "Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-system",
+      "vc:label": "Intelligent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "AgentLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -94,61 +290,169 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
-    {"@id": "urn:ngm:class:intelligent-system", "label": "Intelligent System"}
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "@id": "urn:ngm:class:intelligent-system",
+      "label": "Intelligent System"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:task-decomposition", "label": "Task Decomposition"},
-      {"@id": "urn:ngm:class:goal-planner", "label": "Goal Planner"},
-      {"@id": "urn:ngm:class:result-validation", "label": "Result Validation"},
-      {"@id": "urn:ngm:class:error-recovery", "label": "Error Recovery"},
-      {"@id": "urn:ngm:class:scheduling", "label": "Scheduling"}
+      {
+        "@id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:goal-planner",
+        "label": "Goal Planner"
+      },
+      {
+        "@id": "urn:ngm:class:result-validation",
+        "label": "Result Validation"
+      },
+      {
+        "@id": "urn:ngm:class:error-recovery",
+        "label": "Error Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:scheduling",
+        "label": "Scheduling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"},
-      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"},
-      {"@id": "urn:ngm:class:agent-runtime", "label": "Agent Runtime"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain-of-Thought"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "@id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:agent-runtime", "label": "Agent Runtime"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:agent-memory", "label": "Agent Memory"},
-      {"@id": "urn:ngm:class:capability-advertisement", "label": "Capability Advertisement"}
+      {
+        "@id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "@id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan-and-Execute Pattern"},
-      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"},
-      {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"}
+      {
+        "@id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      }
     ],
     "depends-on": [
-      {"@id": "urn:ngm:class:directed-acyclic-graph", "label": "Directed Acyclic Graph"},
-      {"@id": "urn:ngm:class:structured-output", "label": "Structured Output"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"}
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      },
+      {
+        "@id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:coordination-mechanisms", "label": "Coordination Mechanisms"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:workflow-engine", "label": "Workflow Engine"},
-      {"@id": "urn:ngm:class:bdi-architecture", "label": "BDI Architecture"},
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"}
+      {
+        "@id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Engine"
+      },
+      {
+        "@id": "urn:ngm:class:bdi-architecture",
+        "label": "BDI Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:single-agent-system", "label": "Single-Agent System"},
-      {"@id": "urn:ngm:class:workflow-engine", "label": "Classical Workflow Engine"}
+      {
+        "@id": "urn:ngm:class:single-agent-system",
+        "label": "Single-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-engine",
+        "label": "Classical Workflow Engine"
+      }
     ]
   },
   "quality": 0.91,
@@ -157,69 +461,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agent-orchestrator:a3f2c9d7b1e4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:agent-orchestrator"
-  },
-  "vc:resolutions": [
-    {"raw": "[[AI Agent System]]", "resolved": "urn:visionflow:linked:ai-agent-system", "kind": "StubLink"},
-    {"raw": "[[Task Planning]]", "resolved": "urn:visionflow:linked:task-planning", "kind": "StubLink"},
-    {"raw": "[[Agent Communication Protocol]]", "resolved": "urn:visionflow:linked:agent-communication-protocol", "kind": "StubLink"},
-    {"raw": "[[Agent Runtime]]", "resolved": "urn:visionflow:linked:agent-runtime", "kind": "StubLink"},
-    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "StubLink"},
-    {"raw": "[[Autonomous Task Execution]]", "resolved": "urn:visionflow:linked:autonomous-task-execution", "kind": "StubLink"},
-    {"raw": "[[Coordination Mechanisms]]", "resolved": "urn:visionflow:linked:coordination-mechanisms", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent System]]", "resolved": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
-    {"raw": "[[Agent-to-Agent Protocol]]", "resolved": "urn:visionflow:linked:agent-to-agent-protocol", "kind": "StubLink"},
-    {"raw": "[[Chain-of-Thought]]", "resolved": "urn:visionflow:linked:chain-of-thought", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:owl:class:model-context-protocol", "kind": "ResolvedLink"},
-    {"raw": "[[Tool Use]]", "resolved": "urn:visionflow:linked:tool-use", "kind": "StubLink"},
-    {"raw": "[[LangGraph]]", "resolved": "urn:visionflow:linked:lang-graph", "kind": "StubLink"},
-    {"raw": "[[AutoGen]]", "resolved": "urn:visionflow:linked:autogen", "kind": "StubLink"},
-    {"raw": "[[CrewAI]]", "resolved": "urn:visionflow:linked:crew-ai", "kind": "StubLink"},
-    {"raw": "[[Task Decomposition]]", "resolved": "urn:visionflow:linked:task-decomposition", "kind": "StubLink"},
-    {"raw": "[[Directed Acyclic Graph]]", "resolved": "urn:visionflow:linked:directed-acyclic-graph", "kind": "StubLink"},
-    {"raw": "[[Error Recovery]]", "resolved": "urn:visionflow:linked:error-recovery", "kind": "StubLink"},
-    {"raw": "[[Plan-and-Execute Pattern]]", "resolved": "urn:visionflow:linked:plan-and-execute-pattern", "kind": "StubLink"},
-    {"raw": "[[ReAct Pattern]]", "resolved": "urn:visionflow:linked:react-pattern", "kind": "StubLink"},
-    {"raw": "[[Function Calling]]", "resolved": "urn:visionflow:linked:function-calling", "kind": "StubLink"},
-    {"raw": "[[Human-in-the-Loop]]", "resolved": "urn:visionflow:linked:human-in-the-loop", "kind": "StubLink"},
-    {"raw": "[[Prompt Injection]]", "resolved": "urn:visionflow:linked:prompt-injection", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[Workflow Engine]]", "resolved": "urn:visionflow:linked:workflow-engine", "kind": "StubLink"},
-    {"raw": "[[FIPA ACL]]", "resolved": "urn:visionflow:linked:fipa-acl", "kind": "StubLink"},
-    {"raw": "[[Contract Net Protocol]]", "resolved": "urn:visionflow:linked:contract-net-protocol", "kind": "StubLink"},
-    {"raw": "[[AWS Bedrock Agents]]", "resolved": "urn:visionflow:linked:aws-bedrock-agents", "kind": "StubLink"},
-    {"raw": "[[Google Vertex AI]]", "resolved": "urn:visionflow:linked:google-vertex-ai", "kind": "StubLink"},
-    {"raw": "[[Azure AI Studio]]", "resolved": "urn:visionflow:linked:azure-ai-studio", "kind": "StubLink"},
-    {"raw": "[[Agent Memory]]", "resolved": "urn:visionflow:linked:agent-memory", "kind": "StubLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "StubLink"},
-    {"raw": "[[Distributed Systems]]", "resolved": "urn:visionflow:linked:distributed-systems", "kind": "StubLink"},
-    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[Research Agent]]", "resolved": "urn:visionflow:linked:research-agent", "kind": "StubLink"},
-    {"raw": "[[Autonomous Coding]]", "resolved": "urn:visionflow:linked:autonomous-coding", "kind": "StubLink"},
-    {"raw": "[[Hallucination]]", "resolved": "urn:visionflow:linked:hallucination", "kind": "StubLink"},
-    {"raw": "[[BDI Architecture]]", "resolved": "urn:visionflow:linked:bdi-architecture", "kind": "StubLink"},
-    {"raw": "[[Workflow Automation]]", "resolved": "urn:visionflow:linked:workflow-automation", "kind": "StubLink"},
-    {"raw": "[[Context Window]]", "resolved": "urn:visionflow:linked:context-window", "kind": "StubLink"},
-    {"raw": "[[Reasoning Model]]", "resolved": "urn:visionflow:linked:reasoning-model", "kind": "StubLink"},
-    {"raw": "[[Planning Algorithm]]", "resolved": "urn:visionflow:linked:planning-algorithm", "kind": "StubLink"},
-    {"raw": "[[Structured Output]]", "resolved": "urn:visionflow:linked:structured-output", "kind": "StubLink"},
-    {"raw": "[[Scheduling]]", "resolved": "urn:visionflow:linked:scheduling", "kind": "StubLink"},
-    {"raw": "[[Code Generation]]", "resolved": "urn:visionflow:owl:class:code-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:owl:class:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-agent-system", "kind": "ResolvedLink"},
-    {"raw": "[[AgentLayer]]", "resolved": "urn:visionflow:owl:class:compute-layer", "kind": "ResolvedLink"}
-  ]
 }
 ```
 
@@ -393,7 +634,7 @@ public: true
     The trajectory of Agent Orchestrator research and engineering over the 2026–2030 period is shaped by six convergent pressures. First, formal verification of orchestration logic: as orchestrators handle safety-critical workflows (medical diagnosis, infrastructure management, financial trading), there is growing demand for formally verified planning algorithms and interaction protocols that provide correctness guarantees analogous to those applied to safety-critical control software. Initial work on formally specified orchestration contracts (arXiv:2601.08815) defines resource-bounded autonomous agent systems with formal interaction semantics, providing a foundation for runtime verification. Second, adaptive meta-orchestration: systems where meta-orchestrators learn from past workflow executions to improve agent selection, task routing, and scheduling decisions, moving beyond static capability registries toward dynamic skill discovery and capability learning from execution history. Third, economic agent models: orchestrators that model token cost, latency, and quality trade-offs explicitly, optimising agent selection under budget constraints — initial work on this appears in the COALESCE paper (arXiv:2506.01900) on skill-based task outsourcing economics among LLM agents, treating the orchestrator as a principal allocating tasks to agent sub-contractors under a budget constraint. Fourth, [[Prompt Injection]] hardening: as orchestrators consume increasingly diverse tool outputs from web, database, and user-provided sources, structured defences against indirect prompt injection — including tool-call output sandboxing, signed provenance attestation, and multi-agent verification chains — will become standard practice, driven by regulatory pressure following high-profile prompt injection incidents. Fifth, interoperability standardisation: the [[Agent-to-Agent Protocol]] (Google, 2025) and [[Model Context Protocol]] (Anthropic, 2024) are the leading candidates for cross-vendor orchestration standards; consolidation around a small number of open specifications is expected by 2027–2028, enabling orchestrators built on different frameworks to dispatch tasks to agents from any provider. Sixth, regulatory compliance integration: the EU AI Act (Regulation 2024/1689) classifies certain orchestrated AI deployments as high-risk systems requiring conformity assessment, transparency documentation, and audit logging; orchestrator frameworks will need built-in compliance modules to address this by 2027, with UK equivalents following the AI Opportunities Action Plan commitments.
 
   ## Evaluation and Benchmarks
-    The evaluation of agent orchestrators presents methodological challenges absent from single-model evaluation. Standard NLP benchmarks assess the performance of a single model on a single input-output pair; orchestrator evaluation requires assessing the end-to-end outcome of a multi-step, multi-agent process that may involve dozens of intermediate decisions, each of which could fail independently or in combination.
+    The evaluation of agent orchestrators presents methodological challenges absent from single-model evaluation. Standard NLP benchmarks assess the performance of a single model on a single input-output pair; orchestrator evaluation requires assessing the end-to-end outcome of a multi-step, multi-agent process that may involve dozens of intermediate decisions, each of which [private] fail independently or in combination.
 
     The primary benchmarks for orchestrated agent systems are: GAIA (General AI Assistants benchmark, 2023) which tests multi-step reasoning, tool use, and information synthesis on realistic assistant tasks, with AgentOrchestra (Zhang et al., 2025) achieving 89.04% — placing orchestrated multi-agent systems substantially above the performance of single-agent approaches that achieved ~30% on the same benchmark in 2023. SWE-Bench Verified assesses end-to-end software engineering capability by requiring agents to resolve real GitHub issues in real repositories, with leading orchestrated systems exceeding 50% resolution rate by Q4 2025. WebArena tests web navigation and task completion in realistic browser environments; TAU-bench evaluates tool-augmented agentic behaviour in customer service scenarios; and the newly introduced MULTI-AGENT-BENCH (2026) specifically targets multi-agent coordination quality, evaluating sub-agent assignment efficiency, error propagation rates, and recovery quality.
 

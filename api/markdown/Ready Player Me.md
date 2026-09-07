@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ready Player Me
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,41 +165,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ready-player-me:59cd1f0c108c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6c380ca49d001b6b2a8b0e751e53a3139a077813123c2cd062293a52c2377d19"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar]]",
-      "resolved": "urn:visionflow:linked:avatar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:linked:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Identity]]",
-      "resolved": "urn:visionflow:linked:digital-identity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Ready Player Me (RPM) is a cross-application [[Avatar]] creation and hosting platform that provides users with a single persistent 3D humanoid avatar deployable across hundreds of games, [[Social VR]] spaces, and [[Metaverse]] environments. Built on [[glTF]] open standards and distributed via a REST API and Unity/Unreal SDK, RPM decouples [[Digital Identity]] from individual platform silos, establishing a shared avatar layer for the spatial internet. Operated by [[Wolf3D]], it occupies a position analogous to OAuth in web identity — a neutral third-party credential service, but for embodied presence rather than authentication tokens.
 
@@ -293,7 +253,7 @@ public: true
   - **OAuth 2.0** — the authorisation framework used by RPM's identity layer, enabling partner applications to request scoped access to a user's avatar without storing credentials.
   - **Open Metaverse Interoperability (OMI) Group** — community standards body working on avatar and asset portability specs; RPM's cross-platform model aligns with OMI's goals even where formal membership varies.
   - **VRM standard** — a competing avatar interoperability format popular in Japan (used by VRoid Studio); RPM and VRM represent parallel approaches to the same portability problem, with RPM targeting Western game developers and VRM targeting anime-styled virtual YouTuber (VTuber) communities.
-  - **W3C Decentralised Identifiers (DIDs)** — emerging standard that could eventually underpin RPM-style avatar identity in a self-sovereign manner, bridging RPM's centralised OAuth approach towards [[Self-Sovereign Identity]].
+  - **W3C Decentralised Identifiers (DIDs)** — emerging standard that [private] eventually underpin RPM-style avatar identity in a self-sovereign manner, bridging RPM's centralised OAuth approach towards [[Self-Sovereign Identity]].
 
 - ### Competitive Landscape
   - [[MetaHuman Creator]] (Epic Games) — high-fidelity photorealistic avatars tightly integrated with Unreal Engine; not cross-platform by design.

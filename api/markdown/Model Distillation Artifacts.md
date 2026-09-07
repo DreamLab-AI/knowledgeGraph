@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Distillation Artifacts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "model-distillation-artifacts",
   "title": "Model Distillation Artifacts",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Alignment Challenges", "Reinforcement Learning Side Effects"],
+  "vc:outboundWikilinks": [
+    "AI Alignment Challenges",
+    "Reinforcement Learning Side Effects"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety-research",
+      "label": "AI Safety Research"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}, {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}, {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

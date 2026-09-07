@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Traditional Banking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,41 +171,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:traditional-banking:b84c6a3a1493",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:31b6cf3e8f000416f0418f481016eb9237dfaf3863a5916545f36af0ef7cb6a6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Financial Regulation]]",
-      "resolved": "urn:visionflow:linked:financial-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment System]]",
-      "resolved": "urn:visionflow:linked:payment-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Traditional Finance]]",
-      "resolved": "urn:visionflow:linked:traditional-finance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Traditional banking is the long-established system by which licensed [[Deposit-Taking Institution]]s accept customer funds, extend credit through loans and mortgages, and operate payment and settlement services under prudential regulatory oversight. As financial intermediaries, banks transform short-term deposits into longer-term loans, profiting from the interest-rate spread while managing [[Liquidity Risk]] and [[Credit Risk]]. The sector is subject to capital-adequacy frameworks including [[Basel III]], deposit-insurance schemes, and [[Central Bank]] lender-of-last-resort facilities, distinguishing it from [[Shadow Banking]], [[Decentralised Finance]], and [[Neobank]] alternatives that operate outside or at the margin of the regulated balance-sheet model.
 
@@ -334,14 +294,14 @@ public: true
 
 - ### Systemic Importance and Risks
   - Traditional banking is tightly coupled to sovereign and economic stability; bank failures can propagate as [[Systemic Risk]] through interbank exposures, payment-system disruption, and confidence crises
-  - The 2007–2009 Global Financial Crisis demonstrated how concentrated credit risk (subprime mortgages), excessive leverage, and opaque securitisation could cascade into a global banking crisis requiring unprecedented public intervention
+  - The 2007–2009 Global Financial Crisis demonstrated how concentrated credit risk (subprime mortgages), excessive leverage, and opaque securitisation [private] cascade into a global banking crisis requiring unprecedented public intervention
   - Stress testing (e.g. EBA stress tests in Europe, Fed DFAST/CCAR in the USA) has become a standard supervisory tool since the crisis
   - The rise of [[Decentralised Finance]] and stablecoins poses novel risks to traditional banks' deposit franchises and [[Payment System]] revenues, prompting regulatory attention to [[Central Bank Digital Currency]] as a public infrastructure response
 
 - ### Relationship to Emerging Technologies
   - **[[Open Banking]]** — API mandates force traditional banks to act as data platforms, enabling third-party innovation while preserving the regulated deposit base
   - **[[Blockchain]] and [[Distributed Ledger Technology]]** — explored by banks for trade-finance digitisation (e.g. Marco Polo, Contour), interbank settlement (Project Jura, Project Dunbar), and tokenised bonds
-  - **[[Central Bank Digital Currency]]** — proposed digital forms of central-bank money that could bypass commercial-bank intermediation or co-exist through a two-tier model with traditional banks as distributors
+  - **[[Central Bank Digital Currency]]** — proposed digital forms of central-bank money that [private] bypass commercial-bank intermediation or co-exist through a two-tier model with traditional banks as distributors
   - **[[Machine Learning]]** in credit and fraud — banks increasingly deploy ML models for credit underwriting, fraud detection, and AML transaction monitoring, raising model-risk governance challenges
   - **Cloud and [[Digital Infrastructure]]** — core banking modernisation via cloud migration is underway across global banks, with regulatory expectations on operational resilience and third-party risk management
 

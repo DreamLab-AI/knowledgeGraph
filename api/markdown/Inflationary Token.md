@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inflationary Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,27 +82,66 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"},
-      {"@id": "urn:ngm:class:stablecoin-token", "label": "Stablecoin Token"}
+      {
+        "@id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-token",
+        "label": "Stablecoin Token"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:miner", "label": "Miner"},
-      {"@id": "urn:ngm:class:token", "label": "Token"},
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -118,62 +152,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inflationary-token:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9a0d491e5790693ba7990cc29740f0131d4bfe8db701d35ed421062deb4b32a6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Increasing supply token within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

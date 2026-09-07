@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rollup
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,67 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rollup:45fb8b4d6731",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2f7082ae04f0ac70cb83b7c8aa6e23343df70b7a6660aea9ec8c1618544f2ce5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Fraud Proof]]",
-      "resolved": "urn:visionflow:linked:fraud-proof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Zero Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimism]]",
-      "resolved": "urn:visionflow:linked:optimism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Arbitrum]]",
-      "resolved": "urn:visionflow:linked:arbitrum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[zkSync]]",
-      "resolved": "urn:visionflow:linked:zk-sync",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Polygon]]",
-      "resolved": "urn:visionflow:linked:polygon",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Rollup is a blockchain scaling technique that executes transactions off a base layer such as Ethereum while posting compressed transaction data and state commitments back to it for settlement and data availability. By batching many transactions and proving or asserting their validity on the main chain, rollups increase throughput and reduce fees while inheriting much of the base layer's security. Two main types exist: optimistic rollups, which assume validity and rely on fraud proofs during a challenge window, and zero-knowledge rollups, which post validity proofs verifying each batch. Rollups are central to Ethereum's layer-2 scaling strategy.

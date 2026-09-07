@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Remote Education
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Remote education is the delivery of teaching and learning to geographically dispersed participants over digital networks, spanning live virtual classrooms, recorded content, and immersive metaverse environments. It depends on collaboration tools such as breakout rooms, shared media, and presence to recreate interactive instruction. Immersive variants add spatial co-presence to improve engagement over flat video.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:education-metaverse", "label": "Education Metaverse"},
-      {"@id": "urn:ngm:class:breakout-room", "label": "Breakout Room"}
+      {
+        "@id": "urn:ngm:class:education-metaverse",
+        "label": "Education Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      }
     ]
   },
   "quality": 0.72

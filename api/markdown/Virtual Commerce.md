@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Commerce
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -59,21 +54,42 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-marketplace", "label": "Digital Marketplace"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+      {
+        "@id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce"}
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
     ]
   },
   "quality": 0.35,
@@ -84,37 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-commerce:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:19a34000dfa458546dcd75c61f42ac431defcca28f13708e0d7132d3da4b76d5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An emerging form of e-commerce (V-commerce) that enables buying and selling of goods and services within virtual reality environments, including virtual storefronts, enhanced product visualization, social shopping experiences, and immersive customer-product interactions in metaverse platforms.
@@ -136,7 +121,7 @@ public: true
 - ### Content
 
   - ## Overview
-  - Virtual commerce (V-commerce) redefines shopping experiences by enabling immersive customer-product interactions within metaverse platforms. The market was valued at USD 12.63 billion in 2023 and is projected to reach USD 368.73 billion by 2032, growing at 44.32% CAGR. McKinsey estimates the metaverse could drive $5 trillion in value creation by 2030 as consumers increasingly seek immersive purchasing experiences.
+  - Virtual commerce (V-commerce) redefines shopping experiences by enabling immersive customer-product interactions within metaverse platforms. The market was valued at USD 12.63 billion in 2023 and is projected to reach USD 368.73 billion by 2032, growing at 44.32% CAGR. McKinsey estimates the metaverse [private] drive $5 trillion in value creation by 2030 as consumers increasingly seek immersive purchasing experiences.
   - ## Technical Details
   - ### Key Technologies
 		- **Augmented Reality (AR)**: Virtual try-ons and product visualization

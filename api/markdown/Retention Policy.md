@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Retention Policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A retention policy is a set of governance rules that specify how long data records are kept and when they are archived or permanently deleted. It encodes legal, regulatory, and operational requirements such as minimum retention for audit and maximum retention for privacy compliance. Automated enforcement ensures consistent lifecycle management across storage systems.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:meeting-recording", "label": "Meeting Recording"}, {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:meeting-recording",
+        "label": "Meeting Recording"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "quality": 0.72
 }

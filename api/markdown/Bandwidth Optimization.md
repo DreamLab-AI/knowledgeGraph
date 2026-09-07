@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bandwidth Optimization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Bandwidth Optimisation is the set of techniques and algorithms that maximise the effective throughput of network links by reducing unnecessary data transmission, prioritising critical traffic, and intelligently managing congestion. It encompasses data compression, deduplication, caching, traffic shaping, protocol selection, and adaptive bitrate strategies applied across local, wide-area, and wireless network infrastructures.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:quality-of-service",
+      "label": "Quality Of Service"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:low-latency", "label": "Low Latency"},
-      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"}
+      {
+        "@id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "@id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
-      {"@id": "urn:ngm:class:cdn", "label": "CDN"}
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "@id": "urn:ngm:class:cdn",
+        "label": "CDN"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - In modern cloud and edge environments, bandwidth optimisation is implemented at multiple layers simultaneously. Content delivery networks cache static assets at edge nodes to reduce origin-to-user bandwidth. Software-defined WAN (SD-WAN) platforms intelligently route traffic across multiple links — MPLS, broadband, 5G — selecting paths based on real-time performance measurements. HTTP/3 with QUIC reduces head-of-line blocking and handshake overhead compared with HTTP/2 over TCP.
 
   - By 2024–2025, machine learning is increasingly applied to predictive bandwidth management — forecasting congestion and pre-positioning content before demand peaks. 5G network slicing allows bandwidth guarantees to be negotiated per application. Video traffic, which comprises over 80% of global internet bandwidth, drives continued innovation in perceptual compression and neural video codecs that achieve equivalent quality at 30–50% lower bitrates than H.265.
-

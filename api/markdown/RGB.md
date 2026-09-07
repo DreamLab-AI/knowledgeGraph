@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RGB
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rgb:89d41a198cfc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2c2eb6555cd9e6b4e19ae51c8a8dcb816bd61be35ddf6514535cdf136168ebf7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Client-Side Validation]]",
-      "resolved": "urn:visionflow:linked:client-side-validation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[UTXO]]",
-      "resolved": "urn:visionflow:linked:utxo",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:linked:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A protocol for issuing and transferring assets and running smart contracts on Bitcoin using client-side validation and single-use seals anchored to the chain.

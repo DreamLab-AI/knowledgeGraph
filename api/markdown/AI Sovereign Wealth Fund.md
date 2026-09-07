@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Sovereign Wealth Fund
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "ai-sovereign-wealth-fund",
   "title": "AI Sovereign Wealth Fund",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Policy Discourse", "Equity Distribution", "Partial Nationalization", "US Government AI Policy"],
+  "vc:outboundWikilinks": [
+    "AI Policy Discourse",
+    "Equity Distribution",
+    "Partial Nationalization",
+    "US Government AI Policy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}, {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

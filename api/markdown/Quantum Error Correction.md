@@ -1,56 +1,125 @@
----
-public: true
----
-
-# Quantum Error Correction
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:quantum-error-correction", "@type":"Page", "title":"Quantum Error Correction", "vc:slug":"quantum-error-correction", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:quantum-error-correction",
-  "@type":"Class",
-  "label":"Quantum Error Correction",
-  "definition":"Quantum error correction is the set of techniques that protect quantum information against decoherence and operational noise by encoding a logical qubit redundantly across many physical qubits. Stabiliser measurements detect errors without collapsing the encoded state, allowing the system to diagnose and reverse bit-flip and phase-flip faults. It is the central prerequisite for fault-tolerant quantum computation, where logical error rates can be driven arbitrarily low provided physical error rates fall below a threshold.",
-  "domain":"infrastructure",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:quantum-computation-paradigm","label":"Quantum Computation Paradigm"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:qubit","label":"Qubit"},
-      {"@id":"urn:ngm:class:quantum-gate","label":"Quantum Gate"},
-      {"@id":"urn:ngm:class:error-correction","label":"Error Correction"}
-    ],
-    "partOf":[{"@id":"urn:ngm:class:quantum-computation-paradigm","label":"Quantum Computation Paradigm"}],
-    "requires":[
-      {"@id":"urn:ngm:class:qubit","label":"Qubit"},
-      {"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:quantum-computation-paradigm","label":"Quantum Computation Paradigm"},
-      {"@id":"urn:ngm:class:quantum-cryptography","label":"Quantum Cryptography"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:quantum-gate","label":"Quantum Gate"},
-      {"@id":"urn:ngm:class:error-correction","label":"Error Correction"}
-    ],
-    "dependsOn":[{"@id":"urn:ngm:class:qubit","label":"Qubit"}],
-    "uses":[{"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"}],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:post-quantum-cryptography","label":"Post-Quantum Cryptography"},
-      {"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:quantum-computation-paradigm","label":"Quantum Computation Paradigm"},
-      {"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:quantum-error-correction",
+  "@type": "Page",
+  "title": "Quantum Error Correction",
+  "vc:slug": "quantum-error-correction",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:quantum-error-correction",
+  "@type": "Class",
+  "label": "Quantum Error Correction",
+  "definition": "Quantum error correction is the set of techniques that protect quantum information against decoherence and operational noise by encoding a logical qubit redundantly across many physical qubits. Stabiliser measurements detect errors without collapsing the encoded state, allowing the system to diagnose and reverse bit-flip and phase-flip faults. It is the central prerequisite for fault-tolerant quantum computation, where logical error rates can be driven arbitrarily low provided physical error rates fall below a threshold.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-gate",
+        "label": "Quantum Gate"
+      },
+      {
+        "@id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-cryptography",
+        "label": "Quantum Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:quantum-gate",
+        "label": "Quantum Gate"
+      },
+      {
+        "@id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Quantum error correction protects fragile quantum information by encoding a logical [[Qubit]] redundantly across many physical qubits and measuring stabilisers to detect faults without destroying the encoded state. It generalises classical [[Error Correction]] to the constraints of quantum mechanics.
 - ### Overview

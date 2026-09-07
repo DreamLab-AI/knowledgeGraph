@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -260,87 +255,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fd8fddc8648f1f51e0e5528fb2528ce0a0c2ce12725f55200c02c9eaabeb1f4a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Energy Optimisation]]",
-      "resolved": "urn:visionflow:linked:ai-energy-optimisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Node]]",
-      "resolved": "urn:visionflow:linked:blockchain-node",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed Systems Infrastructure]]",
-      "resolved": "urn:visionflow:linked:distributed-systems-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Layer 2 Scaling]]",
-      "resolved": "urn:visionflow:linked:layer-2-scaling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Web3 Infrastructure]]",
-      "resolved": "urn:visionflow:linked:web3-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Application]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-application",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Bridge]]",
-      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Peer-to-Peer Network]]",
-      "resolved": "urn:visionflow:owl:class:peer-to-peer-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The foundational technical components enabling blockchain networks to operate, including nodes, networking protocols, consensus mechanisms, storage systems, and cryptographic primitives that together provide the physical and logical substrate for distributed ledger operation and decentralized application execution.
 
@@ -564,7 +478,7 @@ public: true
   - 1. ethereum.org (2026). Building on Ethereum in 2026: what has changed. https://ethereum.org/latest/building-on-ethereum-in-2026/
   - 2. Ethereum Foundation (2026). Protocol Priorities Update for 2026. https://blog.ethereum.org/2026/02/18/protocol-priorities-update-2026
   - 3. Everstake (2026). Pectra Upgrade One Year On: Impact on Ethereum Staking. https://everstake.one/resources/blog/pectra-anniversary-how-ethereum-changed-2026
-  - 4. AMINA Group (2026). Why 2026 Could Be Crypto's Most Important Year Yet. https://aminagroup.com/research/why-2026-could-be-cryptos-most-important-year-yet/
+  - 4. AMINA Group (2026). Why 2026 [private] Be Crypto's Most Important Year Yet. https://aminagroup.com/research/why-2026-could-be-cryptos-most-important-year-yet/
   - 5. Latham & Watkins (2025). The GENIUS Act of 2025 Stablecoin Legislation Adopted in the US. https://www.lw.com/en/insights/the-genius-act-of-2025-stablecoin-legislation-adopted-in-the-us
   - 6. Binance Square (2026). Layer 2 Heading into 2026: The End of Promises, the Start of Delivery. https://www.binance.com/en/square/post/35596680327793
 

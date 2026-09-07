@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0033 payload
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0034-repeatability", "label": "rb 0034 repeatability"},
-      {"@id": "urn:ngm:class:rb-0035-accuracy", "label": "rb 0035 accuracy"},
-      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"},
-      {"@id": "urn:ngm:class:rb-0043-torque", "label": "rb 0043 torque"}
+      {
+        "@id": "urn:ngm:class:rb-0034-repeatability",
+        "label": "rb 0034 repeatability"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0035-accuracy",
+        "label": "rb 0035 accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"},
-      {"@id": "urn:ngm:class:rb-0039-stiffness", "label": "rb 0039 stiffness"}
+      {
+        "@id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0039-stiffness",
+        "label": "rb 0039 stiffness"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot", "label": "Robot"}
+      {
+        "@id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0033-payload:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cb7ea40482a24fc149a9c7f648b9192c54a720a902ccfc886cfdbb2d4f051cb9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Payload is the maximum mass a robot can carry or manipulate at its end-effector whilst maintaining its specified performance characteristics including accuracy, repeatability, and speed. It is a primary specification parameter for industrial and collaborative robots, directly constraining the tools, workpieces, and sensors the robot can accommodate. Payload is typically quoted as a static value but dynamic payload — accounting for inertial forces during acceleration — is often lower than the static figure, particularly at high speeds or with extended reach configurations.

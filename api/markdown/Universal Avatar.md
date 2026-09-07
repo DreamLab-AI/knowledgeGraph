@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Universal Avatar
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -103,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:universal-avatar:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7002ab79e5074394f497f1b1ee49bde8ec2d43601b8f27f86eee122ad58a4f80"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar]]",
-      "resolved": "urn:visionflow:owl:class:avatar",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A cross-platform digital representation of a user that maintains consistent identity, appearance, and customizations across multiple metaverse applications, games, and virtual environments through interoperability standards and shared formats.

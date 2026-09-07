@@ -1,36 +1,128 @@
----
-public: true
----
-
-# Digital Health
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:digital-health", "@type":"Page", "title":"Digital Health", "vc:slug":"digital-health", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:digital-health",
+  "@type": "Page",
+  "title": "Digital Health",
+  "vc:slug": "digital-health",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:digital-health",
-  "@type":"Class",
-  "label":"Digital Health",
-  "definition":"Digital health is the use of information and communications technology, sensors, data, and artificial intelligence to deliver, manage, and improve healthcare and wellbeing. It spans telemedicine, remote patient monitoring, electronic health records, wearable biosensors, clinical decision support, and AI-assisted diagnostics. The field aims to widen access, personalise care, and improve outcomes while raising acute requirements for patient privacy, data security, and regulatory oversight.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"},{"@id":"urn:ngm:class:ai-application","label":"AI Application"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:telemedicine","label":"Telemedicine"},{"@id":"urn:ngm:class:clinical-decision-support","label":"Clinical Decision Support"},{"@id":"urn:ngm:class:medical-imaging","label":"Medical Imaging"}],
-    "enables":[{"@id":"urn:ngm:class:telemedicine","label":"Telemedicine"},{"@id":"urn:ngm:class:clinical-decision-support","label":"Clinical Decision Support"}],
-    "supports":[{"@id":"urn:ngm:class:drug-discovery","label":"Drug Discovery"},{"@id":"urn:ngm:class:clinical-decision-support","label":"Clinical Decision Support"}],
-    "uses":[{"@id":"urn:ngm:class:medical-imaging","label":"Medical Imaging"},{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}],
-    "requires":[{"@id":"urn:ngm:class:privacy","label":"Privacy"},{"@id":"urn:ngm:class:security","label":"Security"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data","label":"Data"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"},{"@id":"urn:ngm:class:drug-discovery","label":"Drug Discovery"}],
-    "relatedTo":[{"@id":"urn:ngm:class:medical-imaging","label":"Medical Imaging"},{"@id":"urn:ngm:class:telemedicine","label":"Telemedicine"},{"@id":"urn:ngm:class:privacy","label":"Privacy"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-health",
+  "@type": "Class",
+  "label": "Digital Health",
+  "definition": "Digital health is the use of information and communications technology, sensors, data, and artificial intelligence to deliver, manage, and improve healthcare and wellbeing. It spans telemedicine, remote patient monitoring, electronic health records, wearable biosensors, clinical decision support, and AI-assisted diagnostics. The field aims to widen access, personalise care, and improve outcomes while raising acute requirements for patient privacy, data security, and regulatory oversight.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

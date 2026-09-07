@@ -1,55 +1,114 @@
----
-public: true
----
-
-# Model Quantization
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:model-quantization", "@type":"Page", "title":"Model Quantization", "vc:slug":"model-quantization", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:model-quantization",
+  "@type": "Page",
+  "title": "Model Quantization",
+  "vc:slug": "model-quantization",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:model-quantization",
-  "@type":"Class",
-  "label":"Model Quantization",
-  "definition":"Model quantization is a model-compression technique that reduces the numerical precision of a neural network's weights and activations, typically converting 32-bit floating-point values to lower-precision integer or float formats such as INT8, INT4 or FP8. By shrinking the memory footprint and exploiting cheaper integer arithmetic, quantization lowers latency, energy use and storage cost, usually at a small and controllable loss in accuracy. It is applied either after training (post-training quantization) or during training (quantization-aware training) to deploy large models on constrained inference hardware.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-compression","label":"Model Compression"},{"@id":"urn:ngm:class:ai-technique","label":"AI Technique"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:model-optimization","label":"Model Optimization"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-quantization",
+  "@type": "Class",
+  "label": "Model Quantization",
+  "definition": "Model quantization is a model-compression technique that reduces the numerical precision of a neural network's weights and activations, typically converting 32-bit floating-point values to lower-precision integer or float formats such as INT8, INT4 or FP8. By shrinking the memory footprint and exploiting cheaper integer arithmetic, quantization lowers latency, energy use and storage cost, usually at a small and controllable loss in accuracy. It is applied either after training (post-training quantization) or during training (quantization-aware training) to deploy large models on constrained inference hardware.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:inference-hardware","label":"Inference Hardware"},
-      {"@id":"urn:ngm:class:gpu","label":"GPU"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:edge-computing","label":"Edge Computing"},
-      {"@id":"urn:ngm:class:model-deployment","label":"Model Deployment"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:ai-model","label":"AI Model"},
-      {"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"},
-      {"@id":"urn:ngm:class:model-serving","label":"Model Serving"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:neural-network","label":"Neural Network"},
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:knowledge-distillation","label":"Knowledge Distillation"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:fine-tuning","label":"Fine Tuning"},
-      {"@id":"urn:ngm:class:deep-speed","label":"DeepSpeed"},
-      {"@id":"urn:ngm:class:model-optimization","label":"Model Optimization"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "@id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

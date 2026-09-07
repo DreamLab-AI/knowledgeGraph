@@ -1,8 +1,3 @@
----
-public: true
----
-
-# State Space Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,22 +58,52 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"}
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multirotor-uav", "label": "Multirotor UAV"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:multirotor-uav",
+        "label": "Multirotor UAV"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:state-space-sequence-models", "label": "State Space Sequence Models"}
+      {
+        "@id": "urn:ngm:class:state-space-sequence-models",
+        "label": "State Space Sequence Models"
+      }
     ]
   },
   "quality": 0.8,
@@ -89,37 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:state-space-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a6d40b917fe59ed8fd3ee261cfe56132199e2e6d4b57a1f78c1615976ec4aae1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Feedback Control]]",
-      "resolved": "urn:visionflow:owl:class:feedback-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - State space control uses modern control theory with state feedback.

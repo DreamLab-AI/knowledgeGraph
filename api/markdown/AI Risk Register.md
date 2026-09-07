@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Risk Register
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -208,269 +203,158 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:impact-assessment", "label": "Impact Assessment"},
-      {"@id": "urn:ngm:class:risk-appetite", "label": "Risk Appetite"}
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-appetite",
+        "label": "Risk Appetite"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:model-governance", "label": "Model Governance"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"},
-      {"@id": "urn:ngm:class:continuous-monitoring", "label": "Continuous Monitoring"},
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection"}
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-monitoring",
+        "label": "Continuous Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:iso-31000", "label": "ISO 31000"},
-      {"@id": "urn:ngm:class:iso-iec-23894", "label": "ISO/IEC 23894:2023"},
-      {"@id": "urn:ngm:class:nist-ai-risk-management-framework", "label": "NIST AI Risk Management Framework"}
+      {
+        "@id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO/IEC 23894:2023"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      }
     ],
     "depends-on": [
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:enterprise-risk-management", "label": "Enterprise Risk Management"},
-      {"@id": "urn:ngm:class:model-drift", "label": "Model Drift"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:model-drift",
+        "label": "Model Drift"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
     ]
   },
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-risk-register:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:31e94f647b29938388a199e0c7d7d647f86577da08b1f97065058713335cb4c6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO 31000]]",
-      "resolved": "urn:visionflow:linked:iso-31000",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23894:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Risk Management]]",
-      "resolved": "urn:visionflow:linked:ai-risk-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Audit Trail]]",
-      "resolved": "urn:visionflow:linked:audit-trail",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Risk Assessment]]",
-      "resolved": "urn:visionflow:linked:risk-assessment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compliance Monitoring]]",
-      "resolved": "urn:visionflow:linked:compliance-monitoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Safety]]",
-      "resolved": "urn:visionflow:linked:ai-safety",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transparency]]",
-      "resolved": "urn:visionflow:linked:transparency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Governance Framework]]",
-      "resolved": "urn:visionflow:linked:ai-governance-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fairness]]",
-      "resolved": "urn:visionflow:linked:fairness",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bias]]",
-      "resolved": "urn:visionflow:linked:bias",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Explainability]]",
-      "resolved": "urn:visionflow:linked:explainability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:linked:risk-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:linked:accountability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:linked:ai-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compliance Framework]]",
-      "resolved": "urn:visionflow:linked:compliance-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Drift]]",
-      "resolved": "urn:visionflow:linked:model-drift",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Governance]]",
-      "resolved": "urn:visionflow:linked:data-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Red Teaming]]",
-      "resolved": "urn:visionflow:linked:red-teaming",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Incident Response]]",
-      "resolved": "urn:visionflow:linked:incident-response",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Threat Modelling]]",
-      "resolved": "urn:visionflow:linked:threat-modelling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Responsible AI]]",
-      "resolved": "urn:visionflow:linked:responsible-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Trustworthy AI]]",
-      "resolved": "urn:visionflow:linked:trustworthy-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Algorithmic Auditing]]",
-      "resolved": "urn:visionflow:linked:algorithmic-auditing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Continuous Monitoring]]",
-      "resolved": "urn:visionflow:linked:continuous-monitoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Risk Appetite]]",
-      "resolved": "urn:visionflow:linked:risk-appetite",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Impact Assessment]]",
-      "resolved": "urn:visionflow:linked:impact-assessment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Enterprise Risk Management]]",
-      "resolved": "urn:visionflow:linked:enterprise-risk-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Impact Assessment]]",
-      "resolved": "urn:visionflow:linked:ai-impact-assessment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Governance]]",
-      "resolved": "urn:visionflow:linked:model-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bias Detection]]",
-      "resolved": "urn:visionflow:linked:bias-detection-methods",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI Risk Management Framework]]",
-      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001]]",
-      "resolved": "urn:visionflow:linked:iso-42001",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

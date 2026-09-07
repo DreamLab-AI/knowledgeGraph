@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Backdoor Attack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:data-poisoning", "label": "Data Poisoning"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
+      {
+        "@id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"},
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+      {
+        "@id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ]
   },
   "quality": 0.5,
@@ -79,32 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:backdoor-attack:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f93b4cece1420c9af8de6dcda5a2248414934ae926059773541849f3ea9c37b2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A training-time attack that embeds a hidden trigger pattern into an AI model, causing the model to behave normally on standard inputs but produce attacker-chosen outputs when the trigger is present, creating a covert vulnerability exploitable post-deployment.

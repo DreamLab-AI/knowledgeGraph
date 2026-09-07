@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:domain-expert-contact-index",
   "domain": "distributed-collaboration",
-  "definition": "A curated personal contact and collaboration index tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.",
+  "definition": "A curated personal contact and collaboration [private] tracking domain experts, industry practitioners, and potential collaborators relevant to AI, immersive technology, and spatial computing initiatives. Entries record relationship context, project overlap, and follow-up actions to support relationship management and opportunity development.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:knowledge-management",
@@ -325,10 +325,6 @@
     ]
   },
   "wikilinks": [
-    {
-      "slug": "could",
-      "label": "Could"
-    },
     {
       "slug": "education-and-ai",
       "label": "Education and AI"

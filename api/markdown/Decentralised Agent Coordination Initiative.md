@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Agentic Alliance]]
-# Decentralised Agent Coordination Initiative
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,20 +75,44 @@ elevatedFrom:: [[Agentic Alliance]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
-      {"@id": "urn:ngm:class:distributed-identity", "label": "Distributed Identity"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:agents", "label": "Agents"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ]
   },
   "quality": 0.5,
@@ -105,67 +123,6 @@ elevatedFrom:: [[Agentic Alliance]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agentic-alliance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:18e88cffc5255af8833f08c14100ed43b793913a4ca00bfa0c70cb998155d06f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Computing]]",
-      "resolved": "urn:visionflow:owl:class:distributed-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Identity]]",
-      "resolved": "urn:visionflow:owl:class:distributed-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Melvin Carvalho Decentralised Web Advocate]]",
-      "resolved": "urn:visionflow:owl:class:melvin-carvalho",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Nostr protocol]]",
-      "resolved": "urn:visionflow:owl:class:nostr-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Active Research Projects Registry]]",
-      "resolved": "urn:visionflow:owl:class:projects",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An open collaborative initiative advancing decentralised agent frameworks that integrate Nostr relays, Bitcoin Lightning micropayments, distributed identity, and open data connectors to enable trustless, economically-incentivised multi-agent coordination.

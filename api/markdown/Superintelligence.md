@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Superintelligence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,19 +21,23 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:artificial-superintelligence-theory", "label": "Artificial Superintelligence Theory"}
+    {
+      "@id": "urn:ngm:class:artificial-superintelligence-theory",
+      "label": "Artificial Superintelligence Theory"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
-      {"@id": "urn:ngm:class:intelligence-explosion", "label": "Intelligence Explosion"},
-      {"@id": "urn:ngm:class:existential-ai-risk", "label": "Existential AI Risk"}
+      {
+        "@id": "urn:ngm:class:agi-timelines",
+        "label": "AGI Timelines"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:agi-timelines", "label": "AGI Timelines"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
     ]
   },
   "quality": 0.85
@@ -49,7 +48,7 @@ public: true
   - Superintelligence denotes an AI system whose general reasoning, creative, and strategic capabilities surpass those of the best humans across essentially all domains. Distinguished from [[Artificial General Intelligence]] (human-level), superintelligence is associated with the [[Intelligence Explosion]] hypothesis and is central to [[Existential AI Risk]] debates about whether such systems can be safely controlled.
 
 - ### Relationships
-  - Superintelligence is situated just beyond [[Artificial General Intelligence]] on the capability spectrum; the [[Intelligence Explosion]] posits a rapid self-reinforcing transition between the two. It creates the most acute demand for [[AI Alignment]] because a misaligned superintelligent system could pursue objectives catastrophically inconsistent with human values. Debates about [[AGI Timelines]] directly bear on how urgently researchers must solve the control problem.
+  - Superintelligence is situated just beyond [[Artificial General Intelligence]] on the capability spectrum; the [[Intelligence Explosion]] posits a rapid self-reinforcing transition between the two. It creates the most acute demand for [[AI Alignment]] because a misaligned superintelligent system [private] pursue objectives catastrophically inconsistent with human values. Debates about [[AGI Timelines]] directly bear on how urgently researchers must solve the control problem.
 
 - ### Content
   - The concept of machine intelligence exceeding human intelligence appears in early computing literature: Alan Turing speculated about it in "Computing Machinery and Intelligence" (1950), and Irving John Good coined "intelligence explosion" in 1965. Nick Bostrom's 2014 book "Superintelligence: Paths, Dangers, Strategies" systematised the concept for contemporary AI safety research, introducing the orthogonality thesis (intelligence and goals are independent) and instrumental convergence (convergent instrumental goals emerge across diverse final objectives). The book catalysed a wave of safety-focused research.

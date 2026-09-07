@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Financial Stability Board
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,4 +171,3 @@ public: true
   - The FSB plays a central role in the global governance of digital assets and fintech. From 2018 onwards it expanded its work programme to address crypto-asset markets, stable coins, and decentralised finance (DeFi), publishing cross-border regulatory frameworks for global stablecoin arrangements. It collaborates closely with the [[Basel Committee on Banking Supervision]] on prudential standards for banks' exposures to crypto-assets, and with [[Securities Regulation|securities regulators]] on market integrity. Its 2023 high-level recommendations on the regulation of crypto-asset activities have been widely adopted by jurisdictions worldwide.
 
   - In 2024–2025 the FSB intensified focus on artificial intelligence risks in finance, publishing guidance on model risk, data governance, and third-party dependencies introduced by large-scale AI deployments in financial services. It continues to assess systemic implications of tokenised assets, central bank digital currencies, and the proliferation of non-bank financial intermediaries, remaining the principal global forum for coordinating systemic financial risk mitigation across an increasingly complex and interconnected landscape.
-

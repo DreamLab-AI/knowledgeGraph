@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Visual Place Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Visual place recognition (VPR) is the task of identifying whether a currently observed scene corresponds to a previously visited location by matching image content against a database of geotagged or topologically indexed images. It underpins loop closure in SLAM and global re-localisation for autonomous systems, relying on appearance- and condition-invariant descriptors. Robustness to viewpoint, illumination, and seasonal change is the central research challenge.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:topological-map", "label": "Topological Map"}, {"@id": "urn:ngm:class:visual-slam", "label": "Visual SLAM"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      },
+      {
+        "@id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      }
+    ]
   },
   "quality": 0.72
 }

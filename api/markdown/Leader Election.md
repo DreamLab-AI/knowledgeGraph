@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Leader Election
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -146,4 +141,3 @@ public: true
   - The Raft consensus algorithm, developed by Diego Ongaro and John Ousterhout and published in 2014, was explicitly designed to be understandable as a teaching alternative to Paxos while remaining production-grade. Raft decomposes consensus into leader election, log replication, and safety sub-problems. Leader election in Raft uses randomised election timeouts: followers wait a random interval before transitioning to candidate state and requesting votes; the first candidate to receive a majority of votes in the current term wins and broadcasts heartbeat messages to assert leadership. This randomised approach resolves the livelock problem where multiple candidates split votes indefinitely. etcd (the distributed key-value store used by Kubernetes) and CockroachDB implement Raft-based leader election as their core coordination primitive.
 
   - In 2024-2025, leader election remains a critical concern for cloud-native infrastructure at scale. Kubernetes uses etcd with Raft-based leader election for its control plane components (scheduler, controller-manager), and Kubernetes operator frameworks surface leader election as a first-class API for implementing highly available controllers. Emerging consensus protocols such as HotStuff (used in Diem/Libra) and its derivatives separate leader identity from the consensus log more cleanly than Paxos/Raft, enabling faster leader rotation and improved throughput under churn. In the blockchain context, delegated proof-of-stake systems implement on-chain leader election schedules — essentially rotating the block producer role among a fixed set of elected validators — blending traditional distributed systems leader election with cryptoeconomic incentive design.
-

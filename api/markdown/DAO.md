@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DAOs
----
-
-# DAO
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -216,67 +209,6 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dao:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:05fb6ce015b4e111a3052a28bc1be048ec1d6b7d083b01739f7c43a0b65d58d1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain-Based Records]]",
-      "resolved": "urn:visionflow:linked:blockchain-based-records",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Consensus Voting]]",
-      "resolved": "urn:visionflow:linked:consensus-voting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DAOs]]",
-      "resolved": "urn:visionflow:linked:daos",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed Consensus]]",
-      "resolved": "urn:visionflow:linked:distributed-consensus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Decentralised Autonomous Organisation operating through transparent code-based rules and distributed governance rather than hierarchical management, enabling community coordination at scale. [[DAOs]] employ [[Smart Contracts]], [[Consensus Voting]], and [[Blockchain-Based Records]] for transparent decision-making and treasury management.
 
@@ -304,7 +236,7 @@ aliases:
   - ##### Problems experienced to date
   DAOs exist in a gray area with unclear legal recognition, leading to challenges in fitting into existing legal frameworks and regulatory systems. This lack of clarity raises concerns about how DAOs can comply with laws and regulations, potentially leading to legal disputes or conflicts with regulatory authorities. Security Risks and Technological Vulnerabilities:
   Given their reliance on blockchain technology and smart contracts, DAOs are vulnerable to cyber threats, such as hacking and exploitation of code weaknesses. The decentralized nature of DAOs can further complicate security management and responses to breaches, raising concerns about the safety of assets and data managed by DAOs. Governance Inefficiencies and Democratic Deficiencies:
-  The non-hierarchical structure of DAOs, while innovative, may lead to governance challenges, including potential inefficiencies in decision-making processes. There's also a risk of DAOs deviating from democratic principles, possibly leading to control by a limited group of technologically adept individuals (technocracy) or oligarchic tendencies, which could marginalize participants who are less tech-savvy. Fragmentation and Complexity in Governance Models:
+  The non-hierarchical structure of DAOs, while innovative, may lead to governance challenges, including potential inefficiencies in decision-making processes. There's also a risk of DAOs deviating from democratic principles, possibly leading to control by a limited group of technologically adept individuals (technocracy) or oligarchic tendencies, which [private] marginalize participants who are less tech-savvy. Fragmentation and Complexity in Governance Models:
   The existence of multiple, simultaneous governance models within DAOs can lead to fragmentation, resulting in a lack of coherent and unified governance. This complexity can create confusion among participants and hinder effective decision-making, posing challenges to the democratic functioning and overall effectiveness of DAOs.
   - #### 5.5.1 DAOs on Bitcoin
   - ##### Bisq DAO

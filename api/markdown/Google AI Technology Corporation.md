@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Google]]
-# Google AI Technology Corporation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,46 +179,6 @@ elevatedFrom:: [[Google]]
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:google:bbdefa2950f4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e57d4a6b4f8011ca6e87e583076f2462fd1c18160f8a64b71f3beff26871b68b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:linked:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:linked:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

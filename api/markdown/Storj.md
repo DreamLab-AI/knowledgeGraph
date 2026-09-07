@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Storj
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,37 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:storj:c059c8035bbd",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5d6dfd6bda599b582e0ca267123f6b4dd97cc33beb5f4e5a72a3286fd4fb2a6f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Storage]]",
-      "resolved": "urn:visionflow:linked:decentralised-storage",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Storj is a decentralised cloud storage network in which files are encrypted, split into pieces, and distributed across independent node operators who are paid for storage and bandwidth.

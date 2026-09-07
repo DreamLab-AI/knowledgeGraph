@@ -1,8 +1,3 @@
----
-public: true
----
-
-# agentic ai
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,54 +7,198 @@ public: true
   "title": "agentic ai",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:memory-management", "vc:label": "Memory Management"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:conversational-ai", "vc:label": "Conversational AI"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:linked:agent-loop", "vc:label": "Agent Loop"},
-    {"@id": "urn:visionflow:linked:task-planning", "vc:label": "Task Planning"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain of Thought"},
-    {"@id": "urn:visionflow:linked:orchestration", "vc:label": "Orchestration"},
-    {"@id": "urn:visionflow:linked:tool-registry", "vc:label": "Tool Registry"},
-    {"@id": "urn:visionflow:linked:working-memory", "vc:label": "Working Memory"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:vector-database", "vc:label": "Vector Database"},
-    {"@id": "urn:visionflow:linked:ai-agents", "vc:label": "AI Agents"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:software-engineering-automation", "vc:label": "Software Engineering Automation"},
-    {"@id": "urn:visionflow:linked:robotic-process-automation", "vc:label": "Robotic Process Automation"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:agentic-rag", "vc:label": "Agentic RAG"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:react-pattern", "vc:label": "ReAct Pattern"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection"},
-    {"@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory"},
-    {"@id": "urn:visionflow:linked:cognitive-architecture", "vc:label": "Cognitive Architecture"},
-    {"@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:swe-bench", "vc:label": "SWE-Bench"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:embedding-model", "vc:label": "Embedding Model"},
-    {"@id": "urn:visionflow:linked:reactive-system", "vc:label": "Reactive System"},
-    {"@id": "urn:visionflow:linked:agent-identity", "vc:label": "Agent Identity"},
-    {"@id": "urn:visionflow:linked:agent-based-modelling", "vc:label": "Agent-Based Modelling"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:ai-agent-payments", "vc:label": "AI Agent Payments"}
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:memory-management",
+      "vc:label": "Memory Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:conversational-ai",
+      "vc:label": "Conversational AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-loop",
+      "vc:label": "Agent Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-planning",
+      "vc:label": "Task Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration",
+      "vc:label": "Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-registry",
+      "vc:label": "Tool Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:working-memory",
+      "vc:label": "Working Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agents",
+      "vc:label": "AI Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-engineering-automation",
+      "vc:label": "Software Engineering Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-process-automation",
+      "vc:label": "Robotic Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-rag",
+      "vc:label": "Agentic RAG"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:react-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-architecture",
+      "vc:label": "Cognitive Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol",
+      "vc:label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:swe-bench",
+      "vc:label": "SWE-Bench"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding-model",
+      "vc:label": "Embedding Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:reactive-system",
+      "vc:label": "Reactive System"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-identity",
+      "vc:label": "Agent Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-based-modelling",
+      "vc:label": "Agent-Based Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-payments",
+      "vc:label": "AI Agent Payments"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -100,57 +239,162 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:memory-management", "label": "Memory Management"},
-      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:agent-loop", "label": "Agent Loop"},
-      {"@id": "urn:ngm:class:tool-registry", "label": "Tool Registry"},
-      {"@id": "urn:ngm:class:working-memory", "label": "Working Memory"},
-      {"@id": "urn:ngm:class:agent-orchestrator", "label": "Agent Orchestrator"},
-      {"@id": "urn:ngm:class:agent-runtime", "label": "Agent Runtime"}
+      {
+        "@id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      },
+      {
+        "@id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "@id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "@id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "@id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:software-development-automation", "label": "Software Engineering Automation"},
-      {"@id": "urn:ngm:class:agentic-rag", "label": "Agentic RAG"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:software-development-automation",
+        "label": "Software Engineering Automation"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Models"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"}
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:reactive-systems", "label": "Reactive System"}
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:reactive-systems",
+        "label": "Reactive System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
-      {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:agent-based-modelling", "label": "Agent-Based Modelling"}
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
     ]
   },
   "quality": 0.92,
@@ -159,63 +403,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:link-resolution:agentic-ai",
-  "@type": "LinkResolutionsAnnotation",
-  "resolutions": [
-    {"vc:raw": "Large Language Models", "@id": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"vc:raw": "Memory Management", "@id": "urn:visionflow:linked:memory-management", "kind": "ResolvedLink"},
-    {"vc:raw": "Tool Use", "@id": "urn:visionflow:linked:tool-use", "kind": "ResolvedLink"},
-    {"vc:raw": "Conversational AI", "@id": "urn:visionflow:linked:conversational-ai", "kind": "ResolvedLink"},
-    {"vc:raw": "Multi-Agent System", "@id": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
-    {"vc:raw": "Foundation Models", "@id": "urn:visionflow:linked:foundation-models", "kind": "ResolvedLink"},
-    {"vc:raw": "Agent Loop", "@id": "urn:visionflow:linked:agent-loop", "kind": "StubLink"},
-    {"vc:raw": "Task Planning", "@id": "urn:visionflow:linked:task-planning", "kind": "StubLink"},
-    {"vc:raw": "Chain of Thought", "@id": "urn:visionflow:linked:chain-of-thought", "kind": "ResolvedLink"},
-    {"vc:raw": "Orchestration", "@id": "urn:visionflow:linked:orchestration", "kind": "ResolvedLink"},
-    {"vc:raw": "Tool Registry", "@id": "urn:visionflow:linked:tool-registry", "kind": "StubLink"},
-    {"vc:raw": "Working Memory", "@id": "urn:visionflow:linked:working-memory", "kind": "StubLink"},
-    {"vc:raw": "Function Calling", "@id": "urn:visionflow:linked:function-calling", "kind": "ResolvedLink"},
-    {"vc:raw": "Model Context Protocol", "@id": "urn:visionflow:linked:model-context-protocol", "kind": "ResolvedLink"},
-    {"vc:raw": "Retrieval-Augmented Generation", "@id": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"vc:raw": "Vector Database", "@id": "urn:visionflow:linked:vector-database", "kind": "ResolvedLink"},
-    {"vc:raw": "AI Agents", "@id": "urn:visionflow:linked:ai-agents", "kind": "ResolvedLink"},
-    {"vc:raw": "Prompt Engineering", "@id": "urn:visionflow:linked:prompt-engineering", "kind": "ResolvedLink"},
-    {"vc:raw": "AI Alignment", "@id": "urn:visionflow:linked:ai-alignment", "kind": "ResolvedLink"},
-    {"vc:raw": "AI Safety", "@id": "urn:visionflow:linked:ai-safety", "kind": "ResolvedLink"},
-    {"vc:raw": "Human-in-the-Loop", "@id": "urn:visionflow:linked:human-in-the-loop", "kind": "ResolvedLink"},
-    {"vc:raw": "Reinforcement Learning", "@id": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"vc:raw": "Workflow Automation", "@id": "urn:visionflow:linked:workflow-automation", "kind": "ResolvedLink"},
-    {"vc:raw": "Software Engineering Automation", "@id": "urn:visionflow:linked:software-engineering-automation", "kind": "StubLink"},
-    {"vc:raw": "Robotic Process Automation", "@id": "urn:visionflow:linked:robotic-process-automation", "kind": "StubLink"},
-    {"vc:raw": "Digital Twin", "@id": "urn:visionflow:linked:digital-twin", "kind": "ResolvedLink"},
-    {"vc:raw": "Autonomous Agent", "@id": "urn:visionflow:linked:autonomous-agent", "kind": "StubLink"},
-    {"vc:raw": "Agentic RAG", "@id": "urn:visionflow:linked:agentic-rag", "kind": "ResolvedLink"},
-    {"vc:raw": "Agentic Workflow", "@id": "urn:visionflow:linked:agentic-workflow", "kind": "ResolvedLink"},
-    {"vc:raw": "ReAct Pattern", "@id": "urn:visionflow:linked:react-pattern", "kind": "StubLink"},
-    {"vc:raw": "Agent Frameworks", "@id": "urn:visionflow:linked:agent-frameworks", "kind": "ResolvedLink"},
-    {"vc:raw": "Prompt Injection", "@id": "urn:visionflow:linked:prompt-injection", "kind": "ResolvedLink"},
-    {"vc:raw": "Agent Memory", "@id": "urn:visionflow:linked:agent-memory", "kind": "ResolvedLink"},
-    {"vc:raw": "Cognitive Architecture", "@id": "urn:visionflow:linked:cognitive-architecture", "kind": "StubLink"},
-    {"vc:raw": "Multi-Agent Systems", "@id": "urn:visionflow:linked:multi-agent-systems", "kind": "StubLink"},
-    {"vc:raw": "Agent Communication Protocol", "@id": "urn:visionflow:linked:agent-communication-protocol", "kind": "ResolvedLink"},
-    {"vc:raw": "Agent Orchestrator", "@id": "urn:visionflow:linked:agent-orchestrator", "kind": "ResolvedLink"},
-    {"vc:raw": "Agent Runtime", "@id": "urn:visionflow:linked:agent-runtime", "kind": "ResolvedLink"},
-    {"vc:raw": "EU AI Act", "@id": "urn:visionflow:linked:eu-ai-act", "kind": "StubLink"},
-    {"vc:raw": "Knowledge Graph", "@id": "urn:visionflow:linked:knowledge-graph", "kind": "ResolvedLink"},
-    {"vc:raw": "Embedding Model", "@id": "urn:visionflow:linked:embedding-model", "kind": "ResolvedLink"},
-    {"vc:raw": "Reactive System", "@id": "urn:visionflow:linked:reactive-system", "kind": "StubLink"},
-    {"vc:raw": "Agent Identity", "@id": "urn:visionflow:linked:agent-identity", "kind": "ResolvedLink"},
-    {"vc:raw": "Agent-Based Modelling", "@id": "urn:visionflow:linked:agent-based-modelling", "kind": "ResolvedLink"},
-    {"vc:raw": "Natural Language Processing", "@id": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"vc:raw": "Computer Vision", "@id": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"vc:raw": "AI Agent Payments", "@id": "urn:visionflow:linked:ai-agent-payments", "kind": "ResolvedLink"}
-  ]
 }
 ```
 
@@ -391,7 +578,7 @@ public: true
   ## Academic Context
     The theoretical foundations of agentic AI draw from several intellectual traditions spanning five decades. **Classical AI planning** — STRIPS (Fikes and Nilsson 1971), PDDL (McDermott et al. 1998), Hierarchical Task Networks (Erol et al. 1994) — established the formal vocabulary of goals, states, operators, and plan-space search that modern LLM-based planners implicitly recapitulate in natural language. The BDI (Belief-Desire-Intention) agent architecture (Rao and Georgeff 1995) provided the philosophical grounding for distinguishing an agent's model of the world from its motivational and deliberative states — a distinction that maps onto the perception, planning, and action components of the modern agentic loop. **Multi-agent systems** research (FIPA standards 2001, auction-based coordination, Nash equilibria in agent interaction) provides the theoretical basis for inter-agent communication, role assignment, and incentive compatibility that is directly relevant to multi-agent [[AI Agents]] topologies. **Reinforcement learning** (Sutton and Barto 1998; Mnih et al. 2015 DQN; Schulman et al. 2017 PPO) underpins agents that improve from environmental feedback, and is increasingly applied to fine-tune the reasoning and action-selection components of LLM agents through techniques like RLHF, RLAIF, and model-based RL over agent trajectories. **Cognitive science** — in particular the ACT-R (Anderson et al.) and SOAR (Laird) cognitive architectures — informs the four-layer memory model (working/episodic/semantic/procedural) that has become standard in agentic AI design, with explicit analogies between cognitive science memory systems and their LLM implementation counterparts.
 
-    The modern era of LLM-based agentic AI opened with the **ReAct paper** (Yao et al., ICLR 2023), which demonstrated that interleaving chain-of-thought reasoning traces with tool-call actions produced dramatically better multi-step task completion — 34% relative gain on HotpotQA, 64% relative gain on FEVER — than either reasoning or acting alone. The central insight was that externalising reasoning steps in the prompt (chain-of-thought) gave the model the ability to plan the next action using its full parametric knowledge, while tool calls grounded that reasoning in external state that the model's parametric knowledge could not reliably retrieve. The simultaneous release of AutoGPT (Significant Gravitas, March 2023) demonstrated that GPT-4 could, with suitable scaffolding, pursue goals autonomously over many steps — triggering explosive research and engineering interest, and establishing the open-source agentic AI ecosystem. Subsequent landmark papers establish the field's empirical breadth: Reflexion (Shinn et al., NeurIPS 2023) demonstrated verbal reinforcement through self-critique without gradient updates; Toolformer (Schick et al., NeurIPS 2023) showed that models could be trained via self-supervised objectives to invoke tools only when beneficial; Generative Agents (Park et al., UIST 2023) demonstrated that populations of LLM agents in a simulated social environment exhibited emergent behaviours analogous to human social dynamics; MetaGPT (Hong et al., arXiv 2023) organised multi-agent teams around software engineering role assignments. The comprehensive evaluation frameworks WebArena (Zhou et al., ICLR 2024, 812 tasks on self-hosted websites) and AgentBench (Liu et al., ICLR 2024, 8 environments including OS, database, knowledge graphs, and embodied AI) established standardised measurement of agentic capability. SWE-Bench (Jimenez et al., ICLR 2024) specifically targets real-world software engineering, becoming the de facto benchmark for coding agents by 2025. By 2025–2026, agentic AI had become the dominant research direction in applied ML, with multiple large-scale survey papers cataloguing hundreds of distinct architectures, the first textbooks appearing in draft form, and dedicated workshops at NeurIPS, ICML, and ICLR attracting hundreds of submissions.
+    The modern era of LLM-based agentic AI opened with the **ReAct paper** (Yao et al., ICLR 2023), which demonstrated that interleaving chain-of-thought reasoning traces with tool-call actions produced dramatically better multi-step task completion — 34% relative gain on HotpotQA, 64% relative gain on FEVER — than either reasoning or acting alone. The central insight was that externalising reasoning steps in the prompt (chain-of-thought) gave the model the ability to plan the next action using its full parametric knowledge, while tool calls grounded that reasoning in external state that the model's parametric knowledge [private] not reliably retrieve. The simultaneous release of AutoGPT (Significant Gravitas, March 2023) demonstrated that GPT-4 [private], with suitable scaffolding, pursue goals autonomously over many steps — triggering explosive research and engineering interest, and establishing the open-source agentic AI ecosystem. Subsequent landmark papers establish the field's empirical breadth: Reflexion (Shinn et al., NeurIPS 2023) demonstrated verbal reinforcement through self-critique without gradient updates; Toolformer (Schick et al., NeurIPS 2023) showed that models [private] be trained via self-supervised objectives to invoke tools only when beneficial; Generative Agents (Park et al., UIST 2023) demonstrated that populations of LLM agents in a simulated social environment exhibited emergent behaviours analogous to human social dynamics; MetaGPT (Hong et al., arXiv 2023) organised multi-agent teams around software engineering role assignments. The comprehensive evaluation frameworks WebArena (Zhou et al., ICLR 2024, 812 tasks on self-hosted websites) and AgentBench (Liu et al., ICLR 2024, 8 environments including OS, database, knowledge graphs, and embodied AI) established standardised measurement of agentic capability. SWE-Bench (Jimenez et al., ICLR 2024) specifically targets real-world software engineering, becoming the de facto benchmark for coding agents by 2025. By 2025–2026, agentic AI had become the dominant research direction in applied ML, with multiple large-scale survey papers cataloguing hundreds of distinct architectures, the first textbooks appearing in draft form, and dedicated workshops at NeurIPS, ICML, and ICLR attracting hundreds of submissions.
 
     The **evaluation challenge** for agentic systems is qualitatively harder than for single-inference systems. Standard NLP benchmarks (GLUE, SuperGLUE, MMLU) measure single-step response quality; agentic benchmarks must measure multi-step goal achievement, side-effect avoidance, efficiency (steps and tokens to completion), and robustness to environmental perturbation. The community is still converging on evaluation methodology: WebArena and AgentBench use deterministic task-completion scoring, but this misses nuanced failures like correct final answers via incorrect reasoning paths, or agents that succeed on the benchmark by exploiting shortcuts that would not generalise to real deployment. The AURA (Agent Autonomy Risk Assessment Framework, arXiv 2510.15739) proposes a risk-orthogonal evaluation dimension — measuring not just task success but the safety characteristics of the trajectory taken — which is increasingly demanded by enterprise procurement and regulatory frameworks.
 
@@ -435,7 +622,7 @@ public: true
     UK corporate adoption is led by financial services, professional services, and media. **HSBC**, **Barclays**, and **Lloyds Banking Group** have deployed agentic AI for compliance automation, fraud detection, and customer communication workflows. **Deloitte UK**, **KPMG UK**, and **PwC UK** are deploying agentic AI for audit, tax, and advisory workflows. **The BBC** and **Guardian Media Group** are exploring agentic AI for journalism assistance and content personalisation. The UK defence sector — through DSTL (Defence Science and Technology Laboratory) and BAE Systems Applied Intelligence — is investing in agentic AI for intelligence analysis and autonomous systems coordination, subject to separate procurement and governance frameworks.
 
   ## Future Directions (2026-2030)
-    By 2027, single-step inference will be relegated to simple Q&A; complex enterprise workflows will default to multi-agent systems where specialist agents handle different aspects of knowledge work in parallel. The **multi-agent economy** — agents discovering, evaluating, and compensating other agents for services via micropayments — is already being prototyped on the A2A Protocol (Google, 2025) and x402 payment channels; research papers from 2026 (arXiv:2507.19550) describe ledger-anchored identity and micropayment protocols for fully autonomous agent economies where AI systems contract with each other without human intermediation. The AI Agents market is projected to grow from USD 7.84 billion in 2025 to USD 52.62 billion by 2030 at a CAGR of 46.3%, with economic modelling suggesting that generative and agentic AI combined could add USD 2.6–4.4 trillion annually to global productivity by 2030.
+    By 2027, single-step inference will be relegated to simple Q&A; complex enterprise workflows will default to multi-agent systems where specialist agents handle different aspects of knowledge work in parallel. The **multi-agent economy** — agents discovering, evaluating, and compensating other agents for services via micropayments — is already being prototyped on the A2A Protocol (Google, 2025) and x402 payment channels; research papers from 2026 (arXiv:2507.19550) describe ledger-anchored identity and micropayment protocols for fully autonomous agent economies where AI systems contract with each other without human intermediation. The AI Agents market is projected to grow from USD 7.84 billion in 2025 to USD 52.62 billion by 2030 at a CAGR of 46.3%, with economic modelling suggesting that generative and agentic AI combined [private] add USD 2.6–4.4 trillion annually to global productivity by 2030.
 
     **Computer-use agents** — systems that control graphical interfaces directly via screenshot analysis and mouse/keyboard actions rather than via structured API calls — are moving from research to production; Anthropic's Computer Use capability and OpenAI's Operator (launched December 2024) exemplify this trajectory, enabling agents to work with legacy software systems that lack APIs. By 2028, computer-use agents are projected to reach sufficient reliability for unattended enterprise deployment on well-defined task classes, substantially expanding the addressable market for automation beyond API-accessible systems. **Long-context memory** innovations — A-Mem (arXiv:2502.12110), TeleMem, and AMIE-style persistent state management — will reduce the cost of cross-session agent continuity, allowing agents to maintain coherent task state over days or weeks without expensive full-context reconstruction at each session start. **Multimodal agency** — agents that perceive images, audio, video, and structured data as well as text — will expand the task space to [[Computer Vision]]-intensive domains such as medical imaging analysis, industrial quality inspection, and autonomous laboratory operation by 2028; Google's Project Astra (multi-modal, always-on personal assistant) is the consumer-facing vanguard of this trajectory. **[[AI Agent Payments]]** — agents that can autonomously hold, spend, and receive digital currency for task completion — will enable the fully autonomous subcontracting chains that constitute the agentic economy; this requires identity infrastructure ([[Agent Identity]]), payment rails, and legal frameworks that are still emerging.
 

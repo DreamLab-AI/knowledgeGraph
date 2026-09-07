@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Behavioural Economics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,4 +171,3 @@ public: true
   - The field's ecosystem spans academic departments of economics, business schools, and government "nudge units" such as the UK Behavioural Insights Team (founded 2010) and the US Social and Behavioural Sciences Team. Major technology platforms deploy behavioural insights to shape user engagement, pricing, and default settings. Development economics applies the field to savings behaviour and health adoption in low-income populations.
 
   - By 2024–2025 behavioural economics increasingly intersects with AI systems: recommendation algorithms exploit known biases such as variable reward schedules and social proof, raising ethical questions about manipulation. Researchers are developing frameworks to audit algorithmic nudges and align them with user welfare. The field is also being applied to explain and correct AI alignment failures, linking bounded human rationality to challenges in specifying reward functions for machine learning agents.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Medical Diagnosis AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -110,47 +105,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:medical-diagnosis-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0568a78019883114e75f26e1ec4b35ad9678728d1b4a7bb0bb00f2072badf4e4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Clinical Decision Support]]",
-      "resolved": "urn:visionflow:owl:class:clinical-decision-support",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Treatment Planning AI]]",
-      "resolved": "urn:visionflow:owl:class:treatment-planning-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Shared Spatial Anchors
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,47 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:shared-spatial-anchors:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d8536fbcd46c9dc4cc0031c82b91bab55be9571e6a6663e9b4049a9e4a9c9f01"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collaborative AR Experiences]]",
-      "resolved": "urn:visionflow:linked:collaborative-ar-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cloud-based reference points that lock virtual objects to specific physical locations, enabling multiple users across different devices to perceive digital content in the same position and orientation relative to the real-world environment for collaborative mixed reality experiences.

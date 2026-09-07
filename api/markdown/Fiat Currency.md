@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fiat Currency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,52 +192,12 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fiat-currency:44cedc008256",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:63e98d6e81eac3eb817d8e298a18c404fae4f2b7acb9a4dcbcdc742a5c2275fd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:linked:stablecoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[USD]]",
-      "resolved": "urn:visionflow:linked:usd",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Central Bank Digital Currency]]",
-      "resolved": "urn:visionflow:linked:central-bank-digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Money]]",
-      "resolved": "urn:visionflow:linked:money",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Fiat currency is [[Money]] issued and declared [[Legal Tender]] by a sovereign government or [[Central Bank]], whose value derives from state authority, institutional trust, and collective acceptance rather than from an intrinsic commodity such as gold. Its purchasing power is maintained through [[Monetary Policy]] instruments — interest rates, reserve requirements, and open-market operations — and is subject to [[Inflation]], deflation, and [[Exchange Rate]] dynamics. Fiat currency forms the foundational settlement layer for modern banking, [[International Trade]], and the off-chain reserve benchmarks against which [[Cryptocurrency]] and [[Stablecoin]] assets are priced.
 
 - ### Overview
   - Fiat currency represents the dominant form of [[Money]] in virtually every contemporary national economy. The word "fiat" derives from Latin for "let it be done," reflecting that value is conferred by governmental decree rather than by any physical backing.
-  - Prior to the 20th century, many currencies operated under a [[Gold Standard]] or [[Commodity Money]] arrangement, where each unit could be redeemed for a fixed quantity of precious metal. The transition away from commodity backing culminated globally in 1971, when the United States abandoned Bretton Woods convertibility, allowing the [[USD]] to float freely — a change that generalised to nearly all major currencies.
+  - Prior to the 20th century, many currencies operated under a [[Gold Standard]] or [[Commodity Money]] arrangement, where each unit [private] be redeemed for a fixed quantity of precious metal. The transition away from commodity backing culminated globally in 1971, when the United States abandoned Bretton Woods convertibility, allowing the [[USD]] to float freely — a change that generalised to nearly all major currencies.
   - Modern fiat systems rely on a hierarchy of institutions: [[Central Bank]] at the apex sets the monetary base and interest rate corridor; commercial banks create broad money through [[Fractional Reserve Banking]]; and interbank settlement occurs via [[Real-Time Gross Settlement]] systems such as Fedwire, CHAPS, and TARGET2.
   - The legitimacy of fiat currency rests on three pillars:
     - **Legal authority** — governments mandate its acceptance for settling debts and tax obligations.

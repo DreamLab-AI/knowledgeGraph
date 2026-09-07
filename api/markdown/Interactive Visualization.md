@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interactive Visualization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Interactive visualization is the graphical presentation of data or models that users can manipulate in real time through navigation, filtering, selection, and parameter adjustment to explore and understand information. It couples rendering with responsive input handling so that views update immediately as the user probes the underlying data or 3D scene. It supports analysis, design review, and decision-making across scientific, engineering, and immersive contexts.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ]
   },
   "quality": 0.72

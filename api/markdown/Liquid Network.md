@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Liquid Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -198,62 +193,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:liquid-network:50c5068b5460",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:08db2cd5ba086000f42340eaf2240c38c9da92b7d4c5d957b091c8861cd35a86"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Federation]]",
-      "resolved": "urn:visionflow:linked:federation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Confidential Transactions]]",
-      "resolved": "urn:visionflow:linked:confidential-transactions",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asset Issuance]]",
-      "resolved": "urn:visionflow:linked:asset-issuance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitcoin Lightning Network]]",
-      "resolved": "urn:visionflow:linked:bitcoin-lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset Domain]]",
-      "resolved": "urn:visionflow:linked:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Liquid Network is a Bitcoin sidechain developed by Blockstream that provides faster settlement and confidential transactions for exchanges, traders and institutions. Bitcoin is moved onto the network by locking it on the main chain and issuing an equivalent pegged asset, Liquid Bitcoin, which can later be redeemed. The network is operated by a federation of functionaries who produce blocks and manage the peg, trading some decentralisation for performance and privacy features.

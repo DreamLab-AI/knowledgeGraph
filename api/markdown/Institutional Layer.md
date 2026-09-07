@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Institutional Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:institutional-layer:b940f0bad79c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8dbb0c4647934f713c479ac0e2bfa46c32af0fb18c08b8e333b70b5a5d1d440d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Governance Layer]]",
-      "resolved": "urn:visionflow:linked:governance-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Layer]]",
-      "resolved": "urn:visionflow:linked:regulatory-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Organisational Layer]]",
-      "resolved": "urn:visionflow:linked:organisational-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Social Layer]]",
-      "resolved": "urn:visionflow:linked:social-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Institutional Economics]]",
-      "resolved": "urn:visionflow:linked:institutional-economics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Principal-Agent Problem]]",
-      "resolved": "urn:visionflow:linked:principal-agent-problem",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Institutional Layer is the cross-cutting stratum that represents the organisations, roles, and durable arrangements through which a system operates in the wider world. It sits above the Governance Layer, embodying its decisions in standing bodies, and depends on regulatory and compliance structures. It contains organisational entities, mandates, and the relationships between them.

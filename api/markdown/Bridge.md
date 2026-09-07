@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bridge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,52 +183,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bridge:17f29b073143",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c95303974dee8b3bd6885cc6e8a0dccc9a14e5a6b0a4ca171203625c2827ae52"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross Chain Asset Transfer]]",
-      "resolved": "urn:visionflow:linked:cross-chain-asset-transfer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Bridge]]",
-      "resolved": "urn:visionflow:linked:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Messaging]]",
-      "resolved": "urn:visionflow:linked:cross-chain-messaging",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Interoperability]]",
-      "resolved": "urn:visionflow:linked:blockchain-interoperability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A protocol that transfers assets or messages between separate ledgers by locking, burning, or attesting value on one chain and reproducing a representation on another.

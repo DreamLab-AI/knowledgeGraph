@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sentiment Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,52 +159,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sentiment-analysis:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ebba25dda3a3daabc3cc35c0a26ebf688a205e61045a3dbfd73734e1d641c90c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Opinion Mining]]",
-      "resolved": "urn:visionflow:linked:opinion-mining",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Text Classification]]",
-      "resolved": "urn:visionflow:linked:text-classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Technology Sector Landscape Analysis]]",
-      "resolved": "urn:visionflow:owl:class:landscape",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes. Sentiment analysis employs transformer-based classifiers to enable applications in social media monitoring, customer feedback analysis, market research, and brand reputation management.
 
@@ -365,8 +314,8 @@ public: true
 				- This direct communication loop would facilitate rapid iterations, as changes can be implemented and reviewed in real-time or near-real-time.
 			- **4. Automated Testing and Validation:**
 				- The system would incorporate sophisticated automated testing mechanisms.
-				- As soon as the bytecode is generated or modified, a series of automated tests could run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
-				- Product owners could also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
+				- As soon as the bytecode is generated or modified, a series of automated tests [private] run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
+				- Product owners [private] also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
 
   - ## AI landscape
   - a16z market analysis [[Technology Sector Landscape Analysis]] [market analysis](https://a16z.com/2023/05/25/ai-canon/)

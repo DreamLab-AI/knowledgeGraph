@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Message Format
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A message format is the agreed structure, encoding, and field schema for data exchanged between systems over a protocol. It specifies headers, payload layout, data types, and serialisation so that senders and receivers can unambiguously parse and validate messages. Standardised message formats are essential to interoperability in communication protocols and transaction standards.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}, {"@id": "urn:ngm:class:transaction-standard", "label": "Transaction Standard"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-standard",
+        "label": "Transaction Standard"
+      }
+    ]
   },
   "quality": 0.72
 }

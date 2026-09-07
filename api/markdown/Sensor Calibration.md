@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sensor Calibration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,5 +174,4 @@ public: true
 
   - The robotics ecosystem provides mature calibration toolboxes: Kalibr for camera-IMU multi-sensor calibration, MATLAB Camera Calibrator, ROS camera_calibration, and lidar_camera_calibration. Automated, target-free calibration methods using natural scene structure are increasingly deployed on mobile platforms where manual target placement is impractical. Self-calibration routines running onboard autonomous vehicles periodically re-estimate extrinsic parameters to compensate for mechanical drift from vibration and thermal expansion.
 
-  - In 2024–2025, calibration has been automated within continuous integration pipelines for autonomous vehicle fleets: vehicles perform drive-by calibration checks against roadside infrastructure, and factory calibration data is refined via fleet-scale online learning. Neural calibration approaches use self-supervised losses to jointly estimate calibration parameters and scene geometry without explicit targets. Calibration quality monitoring has emerged as a safety-critical subsystem, detecting parameter drift that could compromise perception reliability before it propagates into planning and control errors.
-
+  - In 2024–2025, calibration has been automated within continuous integration pipelines for autonomous vehicle fleets: vehicles perform drive-by calibration checks against roadside infrastructure, and factory calibration data is refined via fleet-scale online learning. Neural calibration approaches use self-supervised losses to jointly estimate calibration parameters and scene geometry without explicit targets. Calibration quality monitoring has emerged as a safety-critical subsystem, detecting parameter drift that [private] compromise perception reliability before it propagates into planning and control errors.

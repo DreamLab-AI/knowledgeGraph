@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Authentication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,56 @@ public: true
   "definition": "User authentication is the process of verifying that a person claiming a digital identity is who they assert to be, by validating one or more authentication factors: something they know (password, PIN), something they have (hardware token, mobile device), or something they are (biometric). It is the gateway control between unauthenticated network access and authorised use of a system or resource, and its assurance level — defined by standards such as NIST SP 800-63 — must be calibrated to the sensitivity of protected resources. Modern implementations favour phishing-resistant factors (passkeys, hardware security keys) over knowledge-based authentication.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication", "label": "Authentication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:passwordless-authentication", "label": "Passwordless Authentication"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:fido2", "label": "FIDO2"},
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:web-authn", "label": "WebAuthn"}
+      {
+        "@id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:web-authn",
+        "label": "WebAuthn"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"}
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
     ]
   },
   "quality": 0.8

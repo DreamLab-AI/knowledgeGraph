@@ -1,8 +1,3 @@
----
-public: true
----
-
-# US-China AI Competition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "us-china-ai-competition",
   "title": "US-China AI Competition",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Market Impact", "Equity Market Volatility", "Software Industry Disruption"],
+  "vc:outboundWikilinks": [
+    "AI Market Impact",
+    "Equity Market Volatility",
+    "Software Industry Disruption"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,19 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

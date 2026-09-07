@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-110-spatial-audio-processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-110-spatial-audio-processing:d3af05251026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c89effa89bebb1d681f6406ce4fcc965766664088c249318128da721249e6f34"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Binaural Rendering]]",
-      "resolved": "urn:visionflow:linked:binaural-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:linked:telepresence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Audio]]",
-      "resolved": "urn:visionflow:linked:spatial-audio",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Spatial audio processing is the set of signal-processing techniques that position sound sources in three-dimensional space for a listener, using cues such as direction, distance and room acoustics.

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-minimisation",
   "domain": "data",
-  "definition": "Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for specified purposes, reducing privacy risks by avoiding accumulation of excessive data that could be misused, breached, or enable function creep.",
+  "definition": "Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for specified purposes, reducing privacy risks by avoiding accumulation of excessive data that [private] be misused, breached, or enable function creep.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:privacy-and-data-governance",

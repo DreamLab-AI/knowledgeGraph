@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GGUF Format
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "GGUF (GPT-Generated Unified Format) is a binary file format for storing large language model weights, metadata, and tokenizer data in a single self-contained file optimised for fast loading and local inference. Developed in the llama.cpp ecosystem as a successor to GGML, it supports a range of quantization schemes and embeds the metadata needed to run a model without external configuration. It is the de facto format for running quantized LLMs on consumer hardware.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-optimisation-and-performance", "label": "Model Optimisation and Performance"}, {"@id": "urn:ngm:class:open-generative-ai-tools", "label": "Open Generative AI tools"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      },
+      {
+        "@id": "urn:ngm:class:open-generative-ai-tools",
+        "label": "Open Generative AI tools"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NIST AI RMF
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

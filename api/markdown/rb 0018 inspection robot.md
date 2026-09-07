@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0018 inspection robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,42 @@ public: true
   "quality": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"},
-      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"},
-      {"@id": "urn:ngm:class:rb-0078-infrared-sensor", "label": "rb 0078 infrared sensor"},
-      {"@id": "urn:ngm:class:rb-0068-vision-system", "label": "rb 0068 vision system"}
+      {
+        "@id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0078-infrared-sensor",
+        "label": "rb 0078 infrared sensor"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0068-vision-system",
+        "label": "rb 0068 vision system"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0017-rescue-robot", "label": "rb 0017 rescue robot"},
-      {"@id": "urn:ngm:class:rb-0012-wheeled-mobile-robot", "label": "rb 0012 wheeled mobile robot"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {
+        "@id": "urn:ngm:class:rb-0017-rescue-robot",
+        "label": "rb 0017 rescue robot"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0012-wheeled-mobile-robot",
+        "label": "rb 0012 wheeled mobile robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"}
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0018-inspection-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cd51caf4246d16aabaef26f3786c54575ab8c523dbb44075b7a5e5f0c043d304"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ### Primary Definition

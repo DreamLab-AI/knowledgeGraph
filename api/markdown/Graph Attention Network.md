@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Graph Attention Network
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

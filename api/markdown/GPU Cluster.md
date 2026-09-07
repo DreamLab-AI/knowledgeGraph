@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GPU Cluster
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gpu-cluster:18de4c857a95",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:41000a7306cc0c992faa9c0a3f7f417279af32f654381c8c3825b83abdfbacbd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GPU]]",
-      "resolved": "urn:visionflow:linked:gpu",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA H100]]",
-      "resolved": "urn:visionflow:linked:nvidia-h-100",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPU Computing]]",
-      "resolved": "urn:visionflow:linked:gpu-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A GPU cluster is a group of interconnected computers each equipped with graphics processing units, used together for parallel computation. Such clusters are central to training large AI models and high-performance computing.

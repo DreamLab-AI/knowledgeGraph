@@ -1,8 +1,3 @@
----
-public: true
----
-
-# cost function
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,61 +7,226 @@ public: true
   "title": "cost function",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:objective-function", "vc:label": "Objective Function"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:optimal-control", "vc:label": "Optimal Control"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:mean-squared-error", "vc:label": "Mean Squared Error"},
-    {"@id": "urn:visionflow:linked:cross-entropy-loss", "vc:label": "Cross-Entropy Loss"},
-    {"@id": "urn:visionflow:linked:maximum-likelihood-estimation", "vc:label": "Maximum Likelihood Estimation"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:convex-optimisation", "vc:label": "Convex Optimisation"},
-    {"@id": "urn:visionflow:linked:overfitting", "vc:label": "Overfitting"},
-    {"@id": "urn:visionflow:linked:reward-function", "vc:label": "Reward Function"},
-    {"@id": "urn:visionflow:linked:automatic-differentiation", "vc:label": "Automatic Differentiation"},
-    {"@id": "urn:visionflow:linked:loss-landscape", "vc:label": "Loss Landscape"},
-    {"@id": "urn:visionflow:linked:kullback-leibler-divergence", "vc:label": "Kullback-Leibler Divergence"},
-    {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:linked:rlhf", "vc:label": "RLHF"},
-    {"@id": "urn:visionflow:linked:model-predictive-control", "vc:label": "Model Predictive Control"},
-    {"@id": "urn:visionflow:linked:inverse-reinforcement-learning", "vc:label": "Inverse Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:stochastic-gradient-descent", "vc:label": "Stochastic Gradient Descent"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:huber-loss", "vc:label": "Huber Loss"},
-    {"@id": "urn:visionflow:linked:hinge-loss", "vc:label": "Hinge Loss"},
-    {"@id": "urn:visionflow:linked:wasserstein-distance", "vc:label": "Wasserstein Distance"},
-    {"@id": "urn:visionflow:linked:pytorch", "vc:label": "PyTorch"},
-    {"@id": "urn:visionflow:linked:tensorflow", "vc:label": "TensorFlow"},
-    {"@id": "urn:visionflow:linked:jax", "vc:label": "JAX"},
-    {"@id": "urn:visionflow:linked:control-theory", "vc:label": "Control Theory"},
-    {"@id": "urn:visionflow:linked:motion-planning", "vc:label": "Motion Planning"},
-    {"@id": "urn:visionflow:linked:linear-quadratic-regulator", "vc:label": "Linear-Quadratic Regulator"},
-    {"@id": "urn:visionflow:linked:hyperparameter-tuning", "vc:label": "Hyperparameter Tuning"},
-    {"@id": "urn:visionflow:linked:neural-architecture-search", "vc:label": "Neural Architecture Search"},
-    {"@id": "urn:visionflow:linked:reward-hacking", "vc:label": "Reward Hacking"},
-    {"@id": "urn:visionflow:linked:focal-loss", "vc:label": "Focal Loss"},
-    {"@id": "urn:visionflow:linked:contrastive-loss", "vc:label": "Contrastive Loss"},
-    {"@id": "urn:visionflow:linked:utility-function", "vc:label": "Utility Function"},
-    {"@id": "urn:visionflow:linked:mechanism-design", "vc:label": "Mechanism Design"},
-    {"@id": "urn:visionflow:linked:activation-function", "vc:label": "Activation Function"},
-    {"@id": "urn:visionflow:linked:batch-normalisation", "vc:label": "Batch Normalisation"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:variational-inference", "vc:label": "Variational Inference"},
-    {"@id": "urn:visionflow:linked:covariance-matrix", "vc:label": "Covariance Matrix"},
-    {"@id": "urn:visionflow:linked:penalty-term", "vc:label": "Penalty Term"},
-    {"@id": "urn:visionflow:linked:softmax", "vc:label": "Softmax"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"}
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:objective-function",
+      "vc:label": "Objective Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimal-control",
+      "vc:label": "Optimal Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularisation",
+      "vc:label": "Regularisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:mean-squared-error",
+      "vc:label": "Mean Squared Error"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-entropy-loss",
+      "vc:label": "Cross-Entropy Loss"
+    },
+    {
+      "@id": "urn:visionflow:linked:maximum-likelihood-estimation",
+      "vc:label": "Maximum Likelihood Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:convex-optimisation",
+      "vc:label": "Convex Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:overfitting",
+      "vc:label": "Overfitting"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-function",
+      "vc:label": "Reward Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic-differentiation",
+      "vc:label": "Automatic Differentiation"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-landscape",
+      "vc:label": "Loss Landscape"
+    },
+    {
+      "@id": "urn:visionflow:linked:kullback-leibler-divergence",
+      "vc:label": "Kullback-Leibler Divergence"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:rlhf",
+      "vc:label": "RLHF"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-predictive-control",
+      "vc:label": "Model Predictive Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:inverse-reinforcement-learning",
+      "vc:label": "Inverse Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-gradient-descent",
+      "vc:label": "Stochastic Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:huber-loss",
+      "vc:label": "Huber Loss"
+    },
+    {
+      "@id": "urn:visionflow:linked:hinge-loss",
+      "vc:label": "Hinge Loss"
+    },
+    {
+      "@id": "urn:visionflow:linked:wasserstein-distance",
+      "vc:label": "Wasserstein Distance"
+    },
+    {
+      "@id": "urn:visionflow:linked:pytorch",
+      "vc:label": "PyTorch"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensorflow",
+      "vc:label": "TensorFlow"
+    },
+    {
+      "@id": "urn:visionflow:linked:jax",
+      "vc:label": "JAX"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-theory",
+      "vc:label": "Control Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-quadratic-regulator",
+      "vc:label": "Linear-Quadratic Regulator"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-architecture-search",
+      "vc:label": "Neural Architecture Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-hacking",
+      "vc:label": "Reward Hacking"
+    },
+    {
+      "@id": "urn:visionflow:linked:focal-loss",
+      "vc:label": "Focal Loss"
+    },
+    {
+      "@id": "urn:visionflow:linked:contrastive-loss",
+      "vc:label": "Contrastive Loss"
+    },
+    {
+      "@id": "urn:visionflow:linked:utility-function",
+      "vc:label": "Utility Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:mechanism-design",
+      "vc:label": "Mechanism Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:activation-function",
+      "vc:label": "Activation Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-normalisation",
+      "vc:label": "Batch Normalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-inference",
+      "vc:label": "Variational Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:covariance-matrix",
+      "vc:label": "Covariance Matrix"
+    },
+    {
+      "@id": "urn:visionflow:linked:penalty-term",
+      "vc:label": "Penalty Term"
+    },
+    {
+      "@id": "urn:visionflow:linked:softmax",
+      "vc:label": "Softmax"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -96,58 +256,148 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:penalty-term", "label": "Penalty Term"},
-      {"@id": "urn:ngm:class:data-fidelity-term", "label": "Data-Fidelity Term"}
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:penalty-term",
+        "label": "Penalty Term"
+      },
+      {
+        "@id": "urn:ngm:class:data-fidelity-term",
+        "label": "Data-Fidelity Term"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:differentiability", "label": "Differentiability"},
-      {"@id": "urn:ngm:class:parametric-model", "label": "Parametric Model"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:differentiability",
+        "label": "Differentiability"
+      },
+      {
+        "@id": "urn:ngm:class:parametric-model",
+        "label": "Parametric Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
-      {"@id": "urn:ngm:class:inverse-reinforcement-learning", "label": "Inverse Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:loss-landscape", "label": "Loss Landscape"},
-      {"@id": "urn:ngm:class:parametric-model", "label": "Parametric Model"}
+      {
+        "@id": "urn:ngm:class:loss-landscape",
+        "label": "Loss Landscape"
+      },
+      {
+        "@id": "urn:ngm:class:parametric-model",
+        "label": "Parametric Model"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:maximum-likelihood-estimation", "label": "Maximum Likelihood Estimation"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"},
-      {"@id": "urn:ngm:class:utility-function", "label": "Utility Function"}
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "@id": "urn:ngm:class:utility-function",
+        "label": "Utility Function"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:convex-optimisation", "label": "Convex Optimisation"},
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:covariance-matrix", "label": "Covariance Matrix"}
+      {
+        "@id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:covariance-matrix",
+        "label": "Covariance Matrix"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:inverse-reinforcement-learning", "label": "Inverse Reinforcement Learning"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}
+      {
+        "@id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-    {"@id": "urn:ngm:class:objective-loss", "label": "Objective Loss"}
+    {
+      "@id": "urn:ngm:class:loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "@id": "urn:ngm:class:objective-loss",
+      "label": "Objective Loss"
+    }
   ],
-  "quality": 0.90,
-  "qualityScore": 0.90,
+  "quality": 0.9,
+  "qualityScore": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -157,7 +407,7 @@ public: true
 ```
 
 - ### Definition
-  - A **cost function** (also termed a [[Loss Function]], [[Objective Function]], or performance index) is a scalar-valued mathematical mapping from a model's parameters or a system's state space to a real number that quantifies divergence from a desired outcome. The concept unifies two historically separate traditions: in [[Supervised Learning]] and [[Deep Learning]], a cost function aggregates a per-sample prediction error across the entire training dataset, furnishing the signal that [[Gradient Descent]] and its variants use to update model parameters through [[Backpropagation]]; in [[Control Theory]] and [[Robotics]], a cost function encodes trajectory quality criteria — path length, energy consumption, time to goal, and collision risk — enabling planners to compute optimal policies via the algebraic Riccati equation in the [[Linear-Quadratic Regulator]], or via receding-horizon optimisation in [[Model Predictive Control]]. The function typically decomposes into a data-fidelity term measuring fit to observations, a [[Regularisation]] term penalising excessive model complexity to guard against [[Overfitting]], and one or more [[Penalty Term]] components encoding hard or soft constraints on parameters or outputs. The geometry of the cost function — its [[Loss Landscape]] — is the decisive factor in whether optimisation is tractable: convex cost surfaces guarantee a unique global minimum reachable by any gradient method, while the highly non-convex surfaces induced by large [[Neural Network]] architectures demand adaptive optimisers (Adam, RMSProp), careful weight initialisation, and [[Batch Normalisation]]. In [[Reinforcement Learning]] the cost function appears as the negated cumulative reward, connecting both paradigms under a unified [[Convex Optimisation]] view. Critically, misspecified cost functions produce [[Reward Hacking]], mode collapse in generative models, or discriminatory system behaviour, which is why responsible AI guidelines including the EU AI Act now require explicit documentation of cost function design in high-risk systems.
+  - A **cost function** (also termed a [[Loss Function]], [[Objective Function]], or performance [private]) is a scalar-valued mathematical mapping from a model's parameters or a system's state space to a real number that quantifies divergence from a desired outcome. The concept unifies two historically separate traditions: in [[Supervised Learning]] and [[Deep Learning]], a cost function aggregates a per-sample prediction error across the entire training dataset, furnishing the signal that [[Gradient Descent]] and its variants use to update model parameters through [[Backpropagation]]; in [[Control Theory]] and [[Robotics]], a cost function encodes trajectory quality criteria — path length, energy consumption, time to goal, and collision risk — enabling planners to compute optimal policies via the algebraic Riccati equation in the [[Linear-Quadratic Regulator]], or via receding-horizon optimisation in [[Model Predictive Control]]. The function typically decomposes into a data-fidelity term measuring fit to observations, a [[Regularisation]] term penalising excessive model complexity to guard against [[Overfitting]], and one or more [[Penalty Term]] components encoding hard or soft constraints on parameters or outputs. The geometry of the cost function — its [[Loss Landscape]] — is the decisive factor in whether optimisation is tractable: convex cost surfaces guarantee a unique global minimum reachable by any gradient method, while the highly non-convex surfaces induced by large [[Neural Network]] architectures demand adaptive optimisers (Adam, RMSProp), careful weight initialisation, and [[Batch Normalisation]]. In [[Reinforcement Learning]] the cost function appears as the negated cumulative reward, connecting both paradigms under a unified [[Convex Optimisation]] view. Critically, misspecified cost functions produce [[Reward Hacking]], mode collapse in generative models, or discriminatory system behaviour, which is why responsible AI guidelines including the EU AI Act now require explicit documentation of cost function design in high-risk systems.
 
 - ### Semantic Classification
   - owl-class:: ai:CostFunction
@@ -306,7 +556,7 @@ public: true
     ### Control and Planning Losses
     Control cost functions formalise the notion of trajectory quality, enabling the computation of optimal policies through mathematical programming.
 
-    - **Quadratic performance index (LQR)** — J = ∫₀^∞ (xᵀQx + uᵀRu)dt where Q ≥ 0 penalises state deviation and R > 0 penalises control effort. For a linear system ẋ = Ax + Bu, minimising J yields a closed-form optimal gain matrix K = R⁻¹BᵀP where P solves the algebraic Riccati equation AᵀP + PA - PBR⁻¹BᵀP + Q = 0. The relative weighting Q/R trades off state precision against control economy; large Q/R produces aggressive control, small Q/R produces sluggish control.
+    - **Quadratic performance [private] (LQR)** — J = ∫₀^∞ (xᵀQx + uᵀRu)dt where Q ≥ 0 penalises state deviation and R > 0 penalises control effort. For a linear system ẋ = Ax + Bu, minimising J yields a closed-form optimal gain matrix K = R⁻¹BᵀP where P solves the algebraic Riccati equation AᵀP + PA - PBR⁻¹BᵀP + Q = 0. The relative weighting Q/R trades off state precision against control economy; large Q/R produces aggressive control, small Q/R produces sluggish control.
     - **Receding-horizon cost (MPC)** — J_N(x(t), u(·)) = Σₖ₌₀^{N-1} [xₖᵀQxₖ + uₖᵀRuₖ] + xₙᵀPxₙ. Finite-horizon quadratic or nonlinear cost minimised at each timestep in [[Model Predictive Control]]; the terminal cost P stabilises the closed-loop system. Solved as a quadratic programme (for linear systems) or nonlinear programme (for nonlinear MPC) at each timestep; powerful for constrained control, autonomous driving, and chemical process optimisation where safety constraints must be enforced explicitly.
     - **Trajectory smoothness costs** — Σₜ ||xᵢ₊₁ - 2xᵢ + xᵢ₋₁||² (acceleration penalty) or higher-order jerk/snap penalties along a planned path. Used in CHOMP (Covariant Hamiltonian Optimisation for Motion Planning) and TrajOpt planners for [[Motion Planning]] in [[Robotics]]. Smooth trajectories are mechanically less stressful, consume less energy, and are more predictable to surrounding agents; balancing smoothness against obstacle avoidance defines the characteristic cost structure of motion planning.
     - **Energy-optimal cost** — J = ∫ uᵀ(t)u(t) dt minimises total actuator effort; critical for battery-constrained mobile robots, spacecraft manoeuvring, and humanoid locomotion where energy budget is a primary constraint.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NIST AI Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nist-ai-standards:a979fca70a69",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cce284e0e72f5b751b9228d312183f942f9535e101f6cc34fb318f7b3b36557f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NIST]]",
-      "resolved": "urn:visionflow:linked:nist",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A general reference to NIST work and publications relating to artificial intelligence standards and guidance. No single specific standard is identified by this label alone.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Liquid Cooling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Liquid cooling is a thermal-management technique that removes heat from compute hardware using a circulating liquid coolant, which has far higher heat capacity than air. Implementations include direct-to-chip cold plates and full immersion in dielectric fluid, both enabling higher power densities and lower energy overhead. It is increasingly essential for cooling dense GPU clusters used in AI training and high-performance computing.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}, {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ]
   },
   "quality": 0.72
 }

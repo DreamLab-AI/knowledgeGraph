@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Memory-Efficient Training
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:memory-efficient-training", "@type": "Page", "title": "Memory-Efficient Training", "vc:slug": "memory-efficient-training", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:memory-efficient-training",
+  "@type": "Page",
+  "title": "Memory-Efficient Training",
+  "vc:slug": "memory-efficient-training",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

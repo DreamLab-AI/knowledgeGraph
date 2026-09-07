@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transparency (OECD)
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,47 +80,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transparency-oecd:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3dfe0e008b7138a04ec001f558962891adabb1b5ab4a72483c4b1ab6a573d992"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[contestability]]",
-      "resolved": "urn:visionflow:linked:contestability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Informed decision-making]]",
-      "resolved": "urn:visionflow:linked:informed-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[trust]]",
-      "resolved": "urn:visionflow:linked:trust",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI actors should commit to transparency and responsible disclosure regarding AI systems, providing sufficient information to enable people to understand AI outcomes, challenge decisions and participate meaningfully in AI-influenced processes.

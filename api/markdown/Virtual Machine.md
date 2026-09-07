@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Machine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,67 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-machine:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b82f3c99fcb792e20f0350a58b8527b84b90fd44d91bdfa1ec838c4eb92226e1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CairoVM|Cairo VM]]",
-      "resolved": "urn:visionflow:linked:cairo-vm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EVM|Ethereum Virtual Machine]]",
-      "resolved": "urn:visionflow:linked:evm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MoveVM|Move VM]]",
-      "resolved": "urn:visionflow:linked:move-vm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SolanaSVM|Solana's Sealevel VM]]",
-      "resolved": "urn:visionflow:linked:solana-svm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Solidity|Solidity]]",
-      "resolved": "urn:visionflow:linked:solidity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[WASM|WebAssembly]]",
-      "resolved": "urn:visionflow:linked:wasm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SmartContract|smart contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A virtual machine in blockchain contexts is a runtime environment executing [[SmartContract|smart contracts]] deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications. The [[EVM|Ethereum Virtual Machine]] dominates as the reference implementation, executing [[Solidity|Solidity]] bytecode across thousands of nodes globally, with alternatives including [[WASM|WebAssembly]]-based [[SolanaSVM|Solana's Sealevel VM]], [[MoveVM|Move VM]], and [[CairoVM|Cairo VM]] providing specialised optimisations for specific use cases. Deterministic execution is paramount—identical contract invocations across decentralised networks must produce identical results, enabling consensus formation without relying on centralised authorities.

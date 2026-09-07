@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Elliptic
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -153,41 +148,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:elliptic:8198cf44658b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:746da9604d61bb0533e3015cd38db7551c5577e9b582532fd3f06a47093adc92"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain Analytics]]",
-      "resolved": "urn:visionflow:linked:blockchain-analytics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Anti-Money Laundering]]",
-      "resolved": "urn:visionflow:linked:anti-money-laundering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Monitoring]]",
-      "resolved": "urn:visionflow:linked:transaction-monitoring",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

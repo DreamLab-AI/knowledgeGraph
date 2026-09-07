@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ADAS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,62 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adas:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3cdb5aed544443d8300ee00e1cc07da27cef70df54c460c4e74ec55513d300f9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO 26262]]",
-      "resolved": "urn:visionflow:linked:iso-26262",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SAE J3016]]",
-      "resolved": "urn:visionflow:linked:sae-j3016",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Vehicle]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-vehicle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Perception System]]",
-      "resolved": "urn:visionflow:owl:class:perception-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:owl:class:sensor-fusion",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Advanced Driver Assistance Systems (ADAS) are electronic systems that assist vehicle operators with driving and parking functions through automated technologies including adaptive cruise control, lane keeping assist, automatic emergency braking, blind spot detection, and parking assistance. ADAS represents SAE Level 1-2 automation, providing driver support whilst requiring continuous driver supervision and intervention capability.

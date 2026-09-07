@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - MiddlewareLayer
----
-
-# Middleware Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,30 +198,11 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:middleware-layer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:febc6e5d529dbca8acf159943b63f0a4c2470d0001bd2b496819f2268669132d"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - The **Middleware Layer** is a stratum of [[Software Architecture]] that occupies the space between low-level [[Protocol Layer]] services and the [[Application Layer]] that ultimately serves end users. It provides integration, abstraction, orchestration, and translation services that allow heterogeneous subsystems to communicate and cooperate without tight coupling. In enterprise computing, middleware includes [[Message Broker]] systems, [[Enterprise Service Bus]] platforms, and [[Remote Procedure Call]] frameworks; in decentralised ecosystems it extends to [[Oracle Network]] infrastructure, [[Cross-Chain Bridge]] systems, and [[API Gateway]] services that mediate access to [[Smart Contract]] execution environments. The layer is foundational to modern [[Distributed System]] design because no single subsystem can or should shoulder the full complexity of cross-boundary communication.
 
 - ### Overview
-  - Middleware emerged as a distinct engineering concern in the late 1980s when enterprise IT began interconnecting disparate mainframes, minicomputers, and workstations that had no shared communication standard. The insight was that rather than building point-to-point adapters between every pair of systems, a reusable middle tier could absorb translation, routing, and reliability concerns once and expose a consistent contract to consumers. This hub-and-spoke or bus model became the backbone of [[Service-Oriented Architecture]] and later [[Microservices]] patterns.
+  - Middleware emerged as a distinct engineering concern in the late 1980s when enterprise IT began interconnecting disparate mainframes, minicomputers, and workstations that had no shared communication standard. The insight was that rather than building point-to-point adapters between every pair of systems, a reusable middle tier [private] absorb translation, routing, and reliability concerns once and expose a consistent contract to consumers. This hub-and-spoke or bus model became the backbone of [[Service-Oriented Architecture]] and later [[Microservices]] patterns.
   - In the context of [[Distributed System]] design the Middleware Layer fulfils several architectural roles simultaneously:
     - **Decoupling** — producers and consumers of data need not know each other's internal structure; they agree only on the middleware interface.
     - **Abstraction** — low-level protocol complexity (encoding formats, retries, circuit-breaking) is hidden behind higher-level APIs.

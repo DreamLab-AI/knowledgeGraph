@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Real Time Control
----
-
-# Real-Time Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

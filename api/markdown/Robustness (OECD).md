@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robustness (OECD)
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,36 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:trustworthy-ai-framework", "label": "Trustworthy AI Framework"}
+      {
+        "@id": "urn:ngm:class:trustworthy-ai-framework",
+        "label": "Trustworthy AI Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:safety-oecd", "label": "Safety (OECD)"},
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+      {
+        "@id": "urn:ngm:class:safety-oecd",
+        "label": "Safety (OECD)"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"}
+      {
+        "@id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai-principles", "label": "Responsible AI Principles"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "quality": 0.5,
@@ -78,32 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robustness-oecd:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2511092498fed37687ebf4c9b60a2de66ecf6b1c111fcdd626ceedae75ce9924"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI systems should function reliably and securely throughout their lifecycle, demonstrating resilience against errors, faults, inconsistencies and attempts to alter system use or performance, with continuous assessment and management of potential risks.

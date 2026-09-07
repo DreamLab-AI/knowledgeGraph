@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ROS Navigation Stack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -163,7 +158,7 @@ public: true
   - [[ROS Navigation Stack]] sits atop the [[Robot Operating System]] middleware layer, using its publish-subscribe messaging to connect sensor drivers (providing [[Lidar]] scans and wheel odometry), the [[Sensor Fusion]] layer (robot_localization package providing EKF-based pose estimates), map server, and planner nodes. [[Localisation]] is performed by AMCL using Monte Carlo particle filtering against a known occupancy map. Global [[Path Planning]] (navfn, global_planner) produces a collision-free trajectory using A* or Dijkstra over the static costmap, while local [[Obstacle Avoidance]] planners react to dynamic obstacles in real time. The [[Gazebo Simulator]] ecosystem provides the standard simulation environment for testing navigation configurations before deployment on [[Autonomous Robot]] hardware. [[ROS 2]] introduced the Navigation2 (Nav2) successor with action-server architecture, lifecycle management, and improved real-time performance.
 
 - ### Content
-  - The ROS Navigation Stack was developed at Willow Garage around 2009–2010 alongside the foundational ROS framework itself, drawing on prior robotics navigation research to produce a reusable, sensor-agnostic system. The initial design was driven by the PR2 mobile manipulation robot and its need to move through office environments reliably. The navigation stack abstracted over sensor types by defining a common sensor message interface (sensor_msgs/LaserScan, nav_msgs/Odometry) so the same planning and localisation algorithms could work with laser scanners, sonar, or depth cameras.
+  - The ROS Navigation Stack was developed at Willow Garage around 2009–2010 alongside the foundational ROS framework itself, drawing on prior robotics navigation research to produce a reusable, sensor-agnostic system. The initial design was driven by the PR2 mobile manipulation robot and its need to move through office environments reliably. The navigation stack abstracted over sensor types by defining a common sensor message interface (sensor_msgs/LaserScan, nav_msgs/Odometry) so the same planning and localisation algorithms [private] work with laser scanners, sonar, or depth cameras.
 
   - The stack's architecture is built around a costmap hierarchy. The static map costmap layer represents the known floor plan obtained from SLAM (Simultaneous Localisation and Mapping). Dynamic layers add inflation radii around obstacles, footprint constraints, and sensor-updated obstacle data. The global planner queries the static costmap to compute a full path from start to goal. The local planner then executes this path in a receding-horizon fashion, evaluating candidate velocity commands for safety and progress using the Dynamic Window Approach (DWA) which samples from dynamically feasible velocity space. The move_base action server coordinates all components and handles recovery behaviours (clearing costmaps, in-place rotation) when the robot becomes stuck.
 

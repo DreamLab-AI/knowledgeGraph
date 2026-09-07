@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Agent Misalignment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-agent-misalignment",
   "title": "AI Agent Misalignment",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Cybersecurity Evaluation", "Social Engineering Attack"],
+  "vc:outboundWikilinks": [
+    "Cybersecurity Evaluation",
+    "Social Engineering Attack"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety-research",
+      "label": "AI Safety Research"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}, {"@id": "urn:ngm:class:cybersecurity-evaluation", "label": "Cybersecurity Evaluation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-evaluation",
+        "label": "Cybersecurity Evaluation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

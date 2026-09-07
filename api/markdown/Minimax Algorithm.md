@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Minimax Algorithm
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:minimax-algorithm:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d9e1ec6f3323eba996d79c85a30ff26a9090223ba061defd0eb921e4733e93f4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Adversarial Search]]",
-      "resolved": "urn:visionflow:linked:adversarial-search",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Search Algorithms]]",
-      "resolved": "urn:visionflow:owl:class:search-algorithms",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Minimax Algorithm is a concept within the ai domain.

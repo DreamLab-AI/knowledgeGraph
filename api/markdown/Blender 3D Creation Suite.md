@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Blender]]
-# Blender 3D Creation Suite
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +75,6 @@ elevatedFrom:: [[Blender]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blender:5a80e4ba8e6d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c9520118c9723e579af605085fb70bafe5027520752544b465da3782c4927e74"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Open Source Software]]",
-      "resolved": "urn:visionflow:linked:open-source-software",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Animation]]",
-      "resolved": "urn:visionflow:linked:animation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Game Engine]]",
-      "resolved": "urn:visionflow:linked:game-engine",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blender is a free and open-source 3D creation suite supporting modelling, animation, rendering, and related workflows.

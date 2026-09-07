@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Logistics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,14 +20,28 @@ public: true
   "definition": "Logistics is the planning, execution, and control of the efficient movement and storage of goods, services, and related information between points of origin and consumption. It encompasses transportation, warehousing, inventory management, order fulfilment, and reverse flows, with the objective of meeting demand at the required service level and lowest total cost. Logistics is a constituent function of supply-chain management and is increasingly mediated by sensor data, real-time tracking, and optimisation algorithms that coordinate multimodal networks under uncertainty.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:process", "label": "Process"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:process",
+      "label": "Process"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"},
-      {"@id": "urn:ngm:class:reverse-logistics", "label": "Reverse Logistics"}
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      }
     ]
   },
   "quality": 0.78

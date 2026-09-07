@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bayesian Knowledge Tracing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -13,50 +8,182 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:adaptive-learning", "vc:label": "Adaptive Learning"},
-    {"@id": "urn:visionflow:linked:intelligent-tutoring-system", "vc:label": "Intelligent Tutoring System"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:personalised-learning", "vc:label": "Personalised Learning"},
-    {"@id": "urn:visionflow:linked:cognitive-science", "vc:label": "Cognitive Science"},
-    {"@id": "urn:visionflow:linked:hidden-markov-model", "vc:label": "Hidden Markov Model"},
-    {"@id": "urn:visionflow:linked:probabilistic-inference", "vc:label": "Probabilistic Inference"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:educational-technology", "vc:label": "Educational Technology"},
-    {"@id": "urn:visionflow:linked:item-response-theory", "vc:label": "Item Response Theory"},
-    {"@id": "urn:visionflow:linked:spaced-repetition", "vc:label": "Spaced Repetition"},
-    {"@id": "urn:visionflow:linked:deep-knowledge-tracing", "vc:label": "Deep Knowledge Tracing"},
-    {"@id": "urn:visionflow:linked:knowledge-component-model", "vc:label": "Knowledge Component Model"},
-    {"@id": "urn:visionflow:linked:mastery-learning", "vc:label": "Mastery Learning"},
-    {"@id": "urn:visionflow:linked:formative-assessment", "vc:label": "Formative Assessment"},
-    {"@id": "urn:visionflow:linked:learner-model", "vc:label": "Learner Model"},
-    {"@id": "urn:visionflow:linked:expectation-maximisation", "vc:label": "Expectation-Maximisation"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:computerised-adaptive-testing", "vc:label": "Computerised Adaptive Testing"},
-    {"@id": "urn:visionflow:linked:learning-analytics", "vc:label": "Learning Analytics"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:data-privacy", "vc:label": "Data Privacy"},
-    {"@id": "urn:visionflow:linked:psychometrics", "vc:label": "Psychometrics"},
-    {"@id": "urn:visionflow:linked:probabilistic-model", "vc:label": "Probabilistic Model"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:two-sigma-problem", "vc:label": "Two-Sigma Problem"},
-    {"@id": "urn:visionflow:linked:open-learner-model", "vc:label": "Open Learner Model"},
-    {"@id": "urn:visionflow:linked:affective-computing", "vc:label": "Affective Computing"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:curriculum-learning", "vc:label": "Curriculum Learning"},
-    {"@id": "urn:visionflow:linked:domain-model", "vc:label": "Domain Model"},
-    {"@id": "urn:visionflow:linked:content-repository", "vc:label": "Content Repository"},
-    {"@id": "urn:visionflow:linked:gamification", "vc:label": "Gamification"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:machine-learning-domain", "vc:label": "MachineLearningDomain"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"},
-    {"@id": "urn:visionflow:linked:application-layer", "vc:label": "ApplicationLayer"}
+    {
+      "@id": "urn:visionflow:linked:adaptive-learning",
+      "vc:label": "Adaptive Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-tutoring-system",
+      "vc:label": "Intelligent Tutoring System"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalised-learning",
+      "vc:label": "Personalised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-science",
+      "vc:label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:hidden-markov-model",
+      "vc:label": "Hidden Markov Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-inference",
+      "vc:label": "Probabilistic Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:educational-technology",
+      "vc:label": "Educational Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:item-response-theory",
+      "vc:label": "Item Response Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:spaced-repetition",
+      "vc:label": "Spaced Repetition"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-knowledge-tracing",
+      "vc:label": "Deep Knowledge Tracing"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-component-model",
+      "vc:label": "Knowledge Component Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:mastery-learning",
+      "vc:label": "Mastery Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:formative-assessment",
+      "vc:label": "Formative Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:learner-model",
+      "vc:label": "Learner Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:expectation-maximisation",
+      "vc:label": "Expectation-Maximisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:computerised-adaptive-testing",
+      "vc:label": "Computerised Adaptive Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-analytics",
+      "vc:label": "Learning Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-privacy",
+      "vc:label": "Data Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:psychometrics",
+      "vc:label": "Psychometrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-model",
+      "vc:label": "Probabilistic Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:two-sigma-problem",
+      "vc:label": "Two-Sigma Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-learner-model",
+      "vc:label": "Open Learner Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:affective-computing",
+      "vc:label": "Affective Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:domain-model",
+      "vc:label": "Domain Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-repository",
+      "vc:label": "Content Repository"
+    },
+    {
+      "@id": "urn:visionflow:linked:gamification",
+      "vc:label": "Gamification"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-domain",
+      "vc:label": "MachineLearningDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:application-layer",
+      "vc:label": "ApplicationLayer"
+    }
   ]
 }
 ```
@@ -71,68 +198,182 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"},
-    {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-    {"@id": "urn:ngm:class:learner-model", "label": "Learner Model"}
+    {
+      "@id": "urn:ngm:class:adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "@id": "urn:ngm:class:probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "@id": "urn:ngm:class:learner-model",
+      "label": "Learner Model"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"},
-      {"@id": "urn:ngm:class:intelligent-tutoring-system", "label": "Intelligent Tutoring System"}
+      {
+        "@id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:hidden-markov-model", "label": "Hidden Markov Model"},
-      {"@id": "urn:ngm:class:probabilistic-inference", "label": "Probabilistic Inference"},
-      {"@id": "urn:ngm:class:knowledge-component-model", "label": "Knowledge Component Model"}
+      {
+        "@id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-component-model",
+        "label": "Knowledge Component Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:expectation-maximisation", "label": "Expectation-Maximisation"},
-      {"@id": "urn:ngm:class:hidden-markov-model", "label": "Hidden Markov Model"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation-Maximisation"
+      },
+      {
+        "@id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"},
-      {"@id": "urn:ngm:class:mastery-learning", "label": "Mastery Learning"}
+      {
+        "@id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:personalised-learning", "label": "Personalised Learning"},
-      {"@id": "urn:ngm:class:intelligent-tutoring-system", "label": "Intelligent Tutoring System"},
-      {"@id": "urn:ngm:class:mastery-learning", "label": "Mastery Learning"},
-      {"@id": "urn:ngm:class:formative-assessment", "label": "Formative Assessment"},
-      {"@id": "urn:ngm:class:learning-analytics", "label": "Learning Analytics"},
-      {"@id": "urn:ngm:class:computerised-adaptive-testing", "label": "Computerised Adaptive Testing"}
+      {
+        "@id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "@id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
+      },
+      {
+        "@id": "urn:ngm:class:formative-assessment",
+        "label": "Formative Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:computerised-adaptive-testing",
+        "label": "Computerised Adaptive Testing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"},
-      {"@id": "urn:ngm:class:knowledge-component-model", "label": "Knowledge Component Model"}
+      {
+        "@id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-component-model",
+        "label": "Knowledge Component Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:personalised-learning", "label": "Personalised Learning"},
-      {"@id": "urn:ngm:class:computerised-adaptive-testing", "label": "Computerised Adaptive Testing"},
-      {"@id": "urn:ngm:class:learner-model", "label": "Learner Model"}
+      {
+        "@id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computerised-adaptive-testing",
+        "label": "Computerised Adaptive Testing"
+      },
+      {
+        "@id": "urn:ngm:class:learner-model",
+        "label": "Learner Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:item-response-theory", "label": "Item Response Theory"},
-      {"@id": "urn:ngm:class:deep-knowledge-tracing", "label": "Deep Knowledge Tracing"}
+      {
+        "@id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
+      },
+      {
+        "@id": "urn:ngm:class:deep-knowledge-tracing",
+        "label": "Deep Knowledge Tracing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:item-response-theory", "label": "Item Response Theory"},
-      {"@id": "urn:ngm:class:spaced-repetition", "label": "Spaced Repetition"},
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:psychometrics", "label": "Psychometrics"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
+      },
+      {
+        "@id": "urn:ngm:class:spaced-repetition",
+        "label": "Spaced Repetition"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:psychometrics",
+        "label": "Psychometrics"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:deep-knowledge-tracing", "label": "Deep Knowledge Tracing"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:deep-knowledge-tracing",
+        "label": "Deep Knowledge Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bkt", "label": "BKT"}
+    {
+      "@id": "urn:ngm:class:bkt",
+      "label": "BKT"
+    }
   ],
   "quality": 0.91,
   "provenance": {
@@ -363,11 +604,11 @@ public: true
   28. Luckin, R. et al. (2016). *Intelligence Unleashed: An Argument for AI in Education*. Pearson Education.
 
   ## Historical Development and Intellectual Lineage
-  Bayesian Knowledge Tracing's intellectual lineage traces through converging traditions in educational psychology, cognitive science, and mathematical statistics. The underlying pedagogical vision originates with Benjamin Bloom's (1984) identification of the [[Two-Sigma Problem]]: that one-to-one human tutoring produces learning outcomes two full standard deviations above conventional classroom instruction, placing the average tutored student at the 98th percentile of conventionally-taught peers. The implication for computational [[Adaptive Learning]] was clear — if the mastery-checking and pacing intelligence of an expert tutor could be automated, it could be delivered to every learner simultaneously. This vision shaped the whole Cognitive Tutor programme at CMU.
+  Bayesian Knowledge Tracing's intellectual lineage traces through converging traditions in educational psychology, cognitive science, and mathematical statistics. The underlying pedagogical vision originates with Benjamin Bloom's (1984) identification of the [[Two-Sigma Problem]]: that one-to-one human tutoring produces learning outcomes two full standard deviations above conventional classroom instruction, placing the average tutored student at the 98th percentile of conventionally-taught peers. The implication for computational [[Adaptive Learning]] was clear — if the mastery-checking and pacing intelligence of an expert tutor [private] be automated, it [private] be delivered to every learner simultaneously. This vision shaped the whole Cognitive Tutor programme at CMU.
 
-  The immediate precursor to BKT was the ACT* (Adaptive Control of Thought) theory developed by John Anderson in the 1970s–1980s, which proposed that procedural skills are acquired as production rules through a three-stage process: declarative knowledge (knowing that), compilation (converting declarative knowledge into procedural rules through practice), and tuning (strengthening and specialising rules through error-driven correction). This cognitive architecture provided the theoretical basis for the Cognitive Tutor's component-level skill modelling: each production rule in the expert model corresponded to a skill that could be independently mastered, directly analogous to the BKT per-knowledge-component independence assumption.
+  The immediate precursor to BKT was the ACT* (Adaptive Control of Thought) theory developed by John Anderson in the 1970s–1980s, which proposed that procedural skills are acquired as production rules through a three-stage process: declarative knowledge (knowing that), compilation (converting declarative knowledge into procedural rules through practice), and tuning (strengthening and specialising rules through error-driven correction). This cognitive architecture provided the theoretical basis for the Cognitive Tutor's component-level skill modelling: each production rule in the expert model corresponded to a skill that [private] be independently mastered, directly analogous to the BKT per-knowledge-component independence assumption.
 
-  The statistical innovation that Corbett and Anderson made in 1994–1995 was recognising that ACT*-inspired skill acquisition could be modelled as a [[Hidden Markov Model]] — a well-established probabilistic framework for systems with latent states generating observable outputs — and that Bayesian updating on the posterior over this latent mastery state provided a principled, online, computationally efficient mechanism for tracking the cognitive state of an individual learner from their response history. This was not the first use of Bayesian inference in education (Item Response Theory dates to Lord's 1980 formalisation), but it was the first application of sequential [[Bayesian Inference]] with a dynamical learning model to the real-time tutoring context, producing a genuinely adaptive system that updated its beliefs after every single response rather than requiring a batch assessment.
+  The statistical innovation that Corbett and Anderson made in 1994–1995 was recognising that ACT*-inspired skill acquisition [private] be modelled as a [[Hidden Markov Model]] — a well-established probabilistic framework for systems with latent states generating observable outputs — and that Bayesian updating on the posterior over this latent mastery state provided a principled, online, computationally efficient mechanism for tracking the cognitive state of an individual learner from their response history. This was not the first use of Bayesian inference in education (Item Response Theory dates to Lord's 1980 formalisation), but it was the first application of sequential [[Bayesian Inference]] with a dynamical learning model to the real-time tutoring context, producing a genuinely adaptive system that updated its beliefs after every single response rather than requiring a batch assessment.
 
   The deployment of BKT in the CMU Algebra Cognitive Tutor beginning in the early 1990s — and the subsequent large-scale controlled evaluation by Koedinger and Anderson (1997) demonstrating statistically significant learning gains in a school-based study of 470 Pittsburgh students — provided the first empirical validation of BKT-informed [[Adaptive Learning]] at classroom scale. Carnegie Learning's commercialisation of the Cognitive Tutor beginning in 1998, and the subsequent adoption by over 4,000 US schools, made BKT the most widely deployed [[Machine Learning]] model in K-12 education by an order of magnitude. The availability of the resulting large-scale response datasets — tens of millions of student–skill interactions logged with millisecond temporal resolution — then enabled the Educational Data Mining (EDM) research community, when it formalised in 2008, to use Carnegie Learning's data for rigorous retrospective analysis that deepened understanding of BKT's properties, limitations, and alternatives.
 
@@ -397,7 +638,7 @@ public: true
   On interpretability and governance: BKT is the uniquely interpretable option when deployed in regulated educational contexts requiring explanation, contestability, and teacher oversight. A BKT-based system can explain its mastery decision as "Your student has answered 12 questions on algebraic fractions; our model estimates 87% probability of mastery but is holding the student for 2 more practice opportunities due to 3 recent slip errors — click here to override" in a way that supports informed teacher judgment. DKT or [[Transformer Architecture]]-based models cannot provide this explanation without additional post-hoc interpretability layers that may not faithfully represent the model's actual decision logic.
 
   ## Empirical Evidence Base
-  The evidence base for BKT-informed [[Adaptive Learning]] effectiveness spans controlled laboratory studies, classroom randomised controlled trials, and large-scale platform data analysis. Bloom's (1984) [[Two-Sigma Problem]] paper — the foundational empirical reference for the entire field — demonstrated the upper bound of what mastery-based individualised tutoring could achieve in controlled university psychology experiments, providing the aspirational target against which all adaptive tutoring systems are evaluated. Koedinger and Anderson's (1997) 3-year longitudinal study of 470 Pittsburgh secondary school students using the Algebra Cognitive Tutor found statistically significant gains (effect size d = 0.4–1.0) vs. comparison conditions, providing the first classroom-scale validation of BKT-informed tutoring. A meta-analysis by Ma et al. (2014) across 107 controlled studies of [[Intelligent Tutoring System]]s found a mean effect size of d = 0.66 vs. traditional instruction, consistent with Bloom's predictions and attributable substantially to the mastery-tracking and pacing component that BKT provides.
+  The evidence base for BKT-informed [[Adaptive Learning]] effectiveness spans controlled laboratory studies, classroom randomised controlled trials, and large-scale platform data analysis. Bloom's (1984) [[Two-Sigma Problem]] paper — the foundational empirical reference for the entire field — demonstrated the upper bound of what mastery-based individualised tutoring [private] achieve in controlled university psychology experiments, providing the aspirational target against which all adaptive tutoring systems are evaluated. Koedinger and Anderson's (1997) 3-year longitudinal study of 470 Pittsburgh secondary school students using the Algebra Cognitive Tutor found statistically significant gains (effect size d = 0.4–1.0) vs. comparison conditions, providing the first classroom-scale validation of BKT-informed tutoring. A meta-analysis by Ma et al. (2014) across 107 controlled studies of [[Intelligent Tutoring System]]s found a mean effect size of d = 0.66 vs. traditional instruction, consistent with Bloom's predictions and attributable substantially to the mastery-tracking and pacing component that BKT provides.
 
   Platform-scale evidence is more recent and methodologically more complex. Carnegie Learning published results from a large-scale quasi-experimental study (Ritter et al., 2007; VanLehn, 2011) showing that students using MATHia for the equivalent of one semester of algebra achieved 15–20% better post-test scores than comparison students. DreamBox Learning published a 2024 RCT with 12,000 K-5 students (n = 6,000 treatment, 6,000 control) demonstrating 0.26 SD gains in mathematics over one academic year attributable to the adaptive platform's BKT-driven content selection. Century Tech (UK) published RCT evidence of 15–35% additional learning gain for UK secondary school students using the platform 3× per week for one term vs. matched controls, attributed primarily to the system's granular [[Knowledge Component Model]]-based mastery tracking that identifies and targets specific misconceptions within skills rather than treating topics as monolithic units.
 

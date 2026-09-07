@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dune Analytics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dune-analytics:73a87cd70b31",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4522cdd052165caa8ca667c328a4d92468c728c74668e6420ed8529dd1aefc17"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain Analytics]]",
-      "resolved": "urn:visionflow:linked:blockchain-analytics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Visualisation]]",
-      "resolved": "urn:visionflow:linked:data-visualisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Dune Analytics is a platform for querying and visualising blockchain data through user-created dashboards and shared queries.

@@ -1,56 +1,108 @@
----
-public: true
----
-
-# Routing Algorithm
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:routing-algorithm", "@type":"Page", "title":"Routing Algorithm", "vc:slug":"routing-algorithm", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:routing-algorithm",
+  "@type": "Page",
+  "title": "Routing Algorithm",
+  "vc:slug": "routing-algorithm",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:routing-algorithm",
-  "@type":"Class",
-  "label":"Routing Algorithm",
-  "definition":"A routing algorithm is a procedure that determines the path along which data, messages, or value should travel from a source to a destination across a network of interconnected nodes. It typically models the network as a graph and selects routes by optimising criteria such as shortest path, lowest cost, available capacity, or reliability, while adapting to changing topology and link state. In blockchain payment networks such as the Lightning Network, routing algorithms find viable multi-hop paths across payment channels, balancing fees, liquidity, and privacy through techniques like source routing and onion encryption.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:routing-algorithm",
+  "@type": "Class",
+  "label": "Routing Algorithm",
+  "definition": "A routing algorithm is a procedure that determines the path along which data, messages, or value should travel from a source to a destination across a network of interconnected nodes. It typically models the network as a graph and selects routes by optimising criteria such as shortest path, lowest cost, available capacity, or reliability, while adapting to changing topology and link state. In blockchain payment networks such as the Lightning Network, routing algorithms find viable multi-hop paths across payment channels, balancing fees, liquidity, and privacy through techniques like source routing and onion encryption.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:network-topology","label":"Network Topology"},
-      {"@id":"urn:ngm:class:graph-theory","label":"Graph Theory"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:payment-routing","label":"Payment Routing"},
-      {"@id":"urn:ngm:class:dijkstra-algorithm","label":"Dijkstra Algorithm"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      },
+      {
+        "@id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:gossip-protocol","label":"Gossip Protocol"},
-      {"@id":"urn:ngm:class:onion-routing","label":"Onion Routing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:lightning-network","label":"Lightning Network"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:payment-channel","label":"Payment Channel"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:hashed-timelock-contract","label":"Hashed Timelock Contract"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:hashed-timelock-contract",
+        "label": "Hashed Timelock Contract"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:mesh-network","label":"Mesh Network"},
-      {"@id":"urn:ngm:class:peer-to-peer-network","label":"Peer-to-Peer Network"},
-      {"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mesh-network",
+        "label": "Mesh Network"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

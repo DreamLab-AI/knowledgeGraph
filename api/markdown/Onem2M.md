@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Onem2M
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:oneM2M", "@type":"Page", "title":"Onem2M", "vc:slug":"oneM2M", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:oneM2M",
+  "@type": "Page",
+  "title": "Onem2M",
+  "vc:slug": "oneM2M",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

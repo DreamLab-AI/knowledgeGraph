@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spacefaring Data Centers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "spacefaring-data-centers",
   "title": "Spacefaring Data Centers",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Compute Power", "SpaceX IPO"],
+  "vc:outboundWikilinks": [
+    "Compute Power",
+    "SpaceX IPO"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-training-infrastructure", "label": "AI Training Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-training-infrastructure",
+      "label": "AI Training Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-training-infrastructure", "label": "AI Training Infrastructure"}, {"@id": "urn:ngm:class:compute-power", "label": "Compute Power"}, {"@id": "urn:ngm:class:spacex", "label": "SpaceX"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-training-infrastructure",
+        "label": "AI Training Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:compute-power",
+        "label": "Compute Power"
+      },
+      {
+        "@id": "urn:ngm:class:spacex",
+        "label": "SpaceX"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

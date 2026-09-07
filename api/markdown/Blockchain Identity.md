@@ -1,38 +1,128 @@
----
-public: true
----
-
-# Blockchain Identity
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:blockchain-identity", "@type":"Page", "title":"Blockchain Identity", "vc:slug":"blockchain-identity", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:blockchain-identity",
+  "@type": "Page",
+  "title": "Blockchain Identity",
+  "vc:slug": "blockchain-identity",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:blockchain-identity",
-  "@type":"Class",
-  "label":"Blockchain Identity",
-  "definition":"Blockchain Identity is an approach to digital identity in which identifiers, credentials and attestations are anchored to a distributed ledger rather than a single central authority. It gives users cryptographic control over their identity through key pairs, enables verifiable claims that any party can check against on-chain or anchored data, and underpins self-sovereign identity models. By decentralising the registry of identifiers, it reduces reliance on intermediaries and supports portable, tamper-evident identity across services.",
-  "domain":"security",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:decentralized-identity","label":"Decentralized Identity"}],
-  "relations":{
-    "bridgesTo":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-    "partOf":[{"@id":"urn:ngm:class:decentralized-identity","label":"Decentralized Identity"}],
-    "hasPart":[{"@id":"urn:ngm:class:decentralized-identifier","label":"Decentralized Identifier"},{"@id":"urn:ngm:class:verifiable-credentials","label":"Verifiable Credentials"}],
-    "requires":[{"@id":"urn:ngm:class:public-key-infrastructure","label":"Public Key Infrastructure"},{"@id":"urn:ngm:class:distributed-ledger","label":"Distributed Ledger"}],
-    "enables":[{"@id":"urn:ngm:class:self-sovereign-identity","label":"Self-Sovereign Identity"},{"@id":"urn:ngm:class:single-sign-on","label":"Single Sign-On"}],
-    "dependsOn":[{"@id":"urn:ngm:class:did","label":"DID"}],
-    "uses":[{"@id":"urn:ngm:class:zero-knowledge-proof","label":"Zero-Knowledge Proof"},{"@id":"urn:ngm:class:digital-certificate","label":"Digital Certificate"},{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "supports":[{"@id":"urn:ngm:class:authentication","label":"Authentication"},{"@id":"urn:ngm:class:access-control","label":"Access Control"},{"@id":"urn:ngm:class:privacy","label":"Privacy"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:identity-management","label":"Identity Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:digital-identity","label":"Digital Identity"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-identity",
+  "@type": "Class",
+  "label": "Blockchain Identity",
+  "definition": "Blockchain Identity is an approach to digital identity in which identifiers, credentials and attestations are anchored to a distributed ledger rather than a single central authority. It gives users cryptographic control over their identity through key pairs, enables verifiable claims that any party can check against on-chain or anchored data, and underpins self-sovereign identity models. By decentralising the registry of identifiers, it reduces reliance on intermediaries and supports portable, tamper-evident identity across services.",
+  "domain": "security",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralized-identity",
+      "label": "Decentralized Identity"
+    }
+  ],
+  "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:did",
+        "label": "DID"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

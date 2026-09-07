@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computational Photography
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,50 +7,182 @@ public: true
   "title": "Computational Photography",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:camera", "vc:label": "Camera"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:image-processing", "vc:label": "Image Processing"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:signal-processing", "vc:label": "Signal Processing"},
-    {"@id": "urn:visionflow:linked:hdr-imaging", "vc:label": "HDR Imaging"},
-    {"@id": "urn:visionflow:linked:semantic-segmentation", "vc:label": "Semantic Segmentation"},
-    {"@id": "urn:visionflow:linked:depth-estimation", "vc:label": "Depth Estimation"},
-    {"@id": "urn:visionflow:linked:multi-frame-fusion", "vc:label": "Multi-Frame Fusion"},
-    {"@id": "urn:visionflow:linked:image-noise-reduction", "vc:label": "Image Noise Reduction"},
-    {"@id": "urn:visionflow:linked:optical-flow", "vc:label": "Optical Flow"},
-    {"@id": "urn:visionflow:linked:light-field-camera", "vc:label": "Light Field Camera"},
-    {"@id": "urn:visionflow:linked:image-sensor", "vc:label": "Image Sensor"},
-    {"@id": "urn:visionflow:linked:neural-image-signal-processor", "vc:label": "Neural Image Signal Processor"},
-    {"@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:visionflow:linked:super-resolution", "vc:label": "Super Resolution"},
-    {"@id": "urn:visionflow:linked:panorama-stitching", "vc:label": "Panorama Stitching"},
-    {"@id": "urn:visionflow:linked:bokeh-simulation", "vc:label": "Bokeh Simulation"},
-    {"@id": "urn:visionflow:linked:night-mode-photography", "vc:label": "Night Mode Photography"},
-    {"@id": "urn:visionflow:linked:smartphone", "vc:label": "Smartphone"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:real-time-rendering", "vc:label": "Real-Time Rendering"},
-    {"@id": "urn:visionflow:linked:image-segmentation", "vc:label": "Image Segmentation"},
-    {"@id": "urn:visionflow:linked:3d-reconstruction", "vc:label": "3D Reconstruction"},
-    {"@id": "urn:visionflow:linked:nerf", "vc:label": "NeRF"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:colour-science", "vc:label": "Colour Science"},
-    {"@id": "urn:visionflow:linked:optics", "vc:label": "Optics"},
-    {"@id": "urn:visionflow:linked:image-formation-model", "vc:label": "Image Formation Model"},
-    {"@id": "urn:visionflow:linked:exposure-fusion", "vc:label": "Exposure Fusion"},
-    {"@id": "urn:visionflow:linked:tone-mapping", "vc:label": "Tone Mapping"},
-    {"@id": "urn:visionflow:linked:augmented-reality", "vc:label": "Augmented Reality"},
-    {"@id": "urn:visionflow:linked:medical-imaging", "vc:label": "Medical Imaging"},
-    {"@id": "urn:visionflow:linked:satellite-imagery", "vc:label": "Satellite Imagery"},
-    {"@id": "urn:visionflow:linked:video-stabilisation", "vc:label": "Video Stabilisation"},
-    {"@id": "urn:visionflow:linked:face-detection", "vc:label": "Face Detection"},
-    {"@id": "urn:visionflow:linked:scene-understanding", "vc:label": "Scene Understanding"},
-    {"@id": "urn:visionflow:linked:computational-imaging", "vc:label": "Computational Imaging"},
-    {"@id": "urn:visionflow:linked:plenoptic-camera", "vc:label": "Plenoptic Camera"},
-    {"@id": "urn:visionflow:linked:demosaicing", "vc:label": "Demosaicing"},
-    {"@id": "urn:visionflow:linked:raw-image-pipeline", "vc:label": "Raw Image Pipeline"}
+    {
+      "@id": "urn:visionflow:linked:camera",
+      "vc:label": "Camera"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-processing",
+      "vc:label": "Image Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:signal-processing",
+      "vc:label": "Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:hdr-imaging",
+      "vc:label": "HDR Imaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-segmentation",
+      "vc:label": "Semantic Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:depth-estimation",
+      "vc:label": "Depth Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-frame-fusion",
+      "vc:label": "Multi-Frame Fusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-noise-reduction",
+      "vc:label": "Image Noise Reduction"
+    },
+    {
+      "@id": "urn:visionflow:linked:optical-flow",
+      "vc:label": "Optical Flow"
+    },
+    {
+      "@id": "urn:visionflow:linked:light-field-camera",
+      "vc:label": "Light Field Camera"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-sensor",
+      "vc:label": "Image Sensor"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-image-signal-processor",
+      "vc:label": "Neural Image Signal Processor"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:super-resolution",
+      "vc:label": "Super Resolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:panorama-stitching",
+      "vc:label": "Panorama Stitching"
+    },
+    {
+      "@id": "urn:visionflow:linked:bokeh-simulation",
+      "vc:label": "Bokeh Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:night-mode-photography",
+      "vc:label": "Night Mode Photography"
+    },
+    {
+      "@id": "urn:visionflow:linked:smartphone",
+      "vc:label": "Smartphone"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-rendering",
+      "vc:label": "Real-Time Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-segmentation",
+      "vc:label": "Image Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:3d-reconstruction",
+      "vc:label": "3D Reconstruction"
+    },
+    {
+      "@id": "urn:visionflow:linked:nerf",
+      "vc:label": "NeRF"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:colour-science",
+      "vc:label": "Colour Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:optics",
+      "vc:label": "Optics"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-formation-model",
+      "vc:label": "Image Formation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:exposure-fusion",
+      "vc:label": "Exposure Fusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:tone-mapping",
+      "vc:label": "Tone Mapping"
+    },
+    {
+      "@id": "urn:visionflow:linked:augmented-reality",
+      "vc:label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-imaging",
+      "vc:label": "Medical Imaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:satellite-imagery",
+      "vc:label": "Satellite Imagery"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-stabilisation",
+      "vc:label": "Video Stabilisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:face-detection",
+      "vc:label": "Face Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:scene-understanding",
+      "vc:label": "Scene Understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-imaging",
+      "vc:label": "Computational Imaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:plenoptic-camera",
+      "vc:label": "Plenoptic Camera"
+    },
+    {
+      "@id": "urn:visionflow:linked:demosaicing",
+      "vc:label": "Demosaicing"
+    },
+    {
+      "@id": "urn:visionflow:linked:raw-image-pipeline",
+      "vc:label": "Raw Image Pipeline"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
@@ -80,10 +207,10 @@ public: true
   "@id": "urn:ngm:class:computational-photography",
   "@type": "Class",
   "label": "Computational Photography",
-  "definition": "A discipline that extends or supplants the optical and electromechanical capabilities of a camera system through digital computation, combining multiple sensor readings, learned priors, and algorithmic inference to produce images that no single physical exposure could yield. The field integrates optics, signal processing, machine learning, and human visual perception to reconstruct scene radiance, estimate scene geometry, and synthesise perceptually superior final images.",
+  "definition": "A discipline that extends or supplants the optical and electromechanical capabilities of a camera system through digital computation, combining multiple sensor readings, learned priors, and algorithmic inference to produce images that no single physical exposure [private] yield. The field integrates optics, signal processing, machine learning, and human visual perception to reconstruct scene radiance, estimate scene geometry, and synthesise perceptually superior final images.",
   "domain": "ai",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:image-processing",
@@ -96,57 +223,174 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:multi-frame-fusion", "label": "Multi-Frame Fusion"},
-      {"@id": "urn:ngm:class:hdr-imaging", "label": "HDR Imaging"},
-      {"@id": "urn:ngm:class:neural-image-signal-processor", "label": "Neural Image Signal Processor"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:super-resolution", "label": "Super Resolution"},
-      {"@id": "urn:ngm:class:panorama-stitching", "label": "Panorama Stitching"},
-      {"@id": "urn:ngm:class:bokeh-simulation", "label": "Bokeh Simulation"},
-      {"@id": "urn:ngm:class:night-mode-photography", "label": "Night Mode Photography"},
-      {"@id": "urn:ngm:class:exposure-fusion", "label": "Exposure Fusion"},
-      {"@id": "urn:ngm:class:tone-mapping", "label": "Tone Mapping"},
-      {"@id": "urn:ngm:class:demosaicing", "label": "Demosaicing"}
+      {
+        "@id": "urn:ngm:class:multi-frame-fusion",
+        "label": "Multi-Frame Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:hdr-imaging",
+        "label": "HDR Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:neural-image-signal-processor",
+        "label": "Neural Image Signal Processor"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:panorama-stitching",
+        "label": "Panorama Stitching"
+      },
+      {
+        "@id": "urn:ngm:class:bokeh-simulation",
+        "label": "Bokeh Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:night-mode-photography",
+        "label": "Night Mode Photography"
+      },
+      {
+        "@id": "urn:ngm:class:exposure-fusion",
+        "label": "Exposure Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:tone-mapping",
+        "label": "Tone Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:demosaicing",
+        "label": "Demosaicing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:camera", "label": "Camera"},
-      {"@id": "urn:ngm:class:image-sensor", "label": "Image Sensor"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:image-formation-model", "label": "Image Formation Model"},
-      {"@id": "urn:ngm:class:raw-image-pipeline", "label": "Raw Image Pipeline"}
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "@id": "urn:ngm:class:image-sensor",
+        "label": "Image Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:image-formation-model",
+        "label": "Image Formation Model"
+      },
+      {
+        "@id": "urn:ngm:class:raw-image-pipeline",
+        "label": "Raw Image Pipeline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"},
-      {"@id": "urn:ngm:class:satellite-imagery", "label": "Satellite Imagery"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-imagery",
+        "label": "Satellite Imagery"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:optical-flow", "label": "Optical Flow"},
-      {"@id": "urn:ngm:class:colour-science", "label": "Colour Science"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "@id": "urn:ngm:class:colour-science",
+        "label": "Colour Science"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:optics", "label": "Optics"},
-      {"@id": "urn:ngm:class:traditional-film-photography", "label": "Traditional Film Photography"}
+      {
+        "@id": "urn:ngm:class:optics",
+        "label": "Optics"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-film-photography",
+        "label": "Traditional Film Photography"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:light-field-camera", "label": "Light Field Camera"},
-      {"@id": "urn:ngm:class:plenoptic-camera", "label": "Plenoptic Camera"},
-      {"@id": "urn:ngm:class:ne-rf", "label": "NeRF"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
-      {"@id": "urn:ngm:class:video-stabilisation", "label": "Video Stabilisation"},
-      {"@id": "urn:ngm:class:face-detection", "label": "Face Detection"}
+      {
+        "@id": "urn:ngm:class:light-field-camera",
+        "label": "Light Field Camera"
+      },
+      {
+        "@id": "urn:ngm:class:plenoptic-camera",
+        "label": "Plenoptic Camera"
+      },
+      {
+        "@id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:video-stabilisation",
+        "label": "Video Stabilisation"
+      },
+      {
+        "@id": "urn:ngm:class:face-detection",
+        "label": "Face Detection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:smartphone", "label": "Smartphone"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:smartphone",
+        "label": "Smartphone"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ]
   },
   "provenance": {
@@ -157,72 +401,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computational-photography:08154070a170",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:28b1c598ddabee92696abc238f4a386a13fb9bbc463c4ce452c248c4b045fed7"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Camera]]", "resolved": "urn:visionflow:linked:camera", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Image Processing]]", "resolved": "urn:visionflow:linked:image-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Signal Processing]]", "resolved": "urn:visionflow:linked:signal-processing", "kind": "ResolvedLink"},
-    {"raw": "[[HDR Imaging]]", "resolved": "urn:visionflow:linked:hdr-imaging", "kind": "ResolvedLink"},
-    {"raw": "[[Semantic Segmentation]]", "resolved": "urn:visionflow:linked:semantic-segmentation", "kind": "ResolvedLink"},
-    {"raw": "[[Depth Estimation]]", "resolved": "urn:visionflow:linked:depth-estimation", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Frame Fusion]]", "resolved": "urn:visionflow:linked:multi-frame-fusion", "kind": "ResolvedLink"},
-    {"raw": "[[Image Noise Reduction]]", "resolved": "urn:visionflow:linked:image-noise-reduction", "kind": "ResolvedLink"},
-    {"raw": "[[Optical Flow]]", "resolved": "urn:visionflow:linked:optical-flow", "kind": "ResolvedLink"},
-    {"raw": "[[Light Field Camera]]", "resolved": "urn:visionflow:linked:light-field-camera", "kind": "ResolvedLink"},
-    {"raw": "[[Image Sensor]]", "resolved": "urn:visionflow:linked:image-sensor", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Image Signal Processor]]", "resolved": "urn:visionflow:linked:neural-image-signal-processor", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Adversarial Network]]", "resolved": "urn:visionflow:linked:generative-adversarial-network", "kind": "ResolvedLink"},
-    {"raw": "[[Super Resolution]]", "resolved": "urn:visionflow:linked:super-resolution", "kind": "ResolvedLink"},
-    {"raw": "[[Panorama Stitching]]", "resolved": "urn:visionflow:linked:panorama-stitching", "kind": "ResolvedLink"},
-    {"raw": "[[Bokeh Simulation]]", "resolved": "urn:visionflow:linked:bokeh-simulation", "kind": "ResolvedLink"},
-    {"raw": "[[Night Mode Photography]]", "resolved": "urn:visionflow:linked:night-mode-photography", "kind": "ResolvedLink"},
-    {"raw": "[[Smartphone]]", "resolved": "urn:visionflow:linked:smartphone", "kind": "ResolvedLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "ResolvedLink"},
-    {"raw": "[[Real-Time Rendering]]", "resolved": "urn:visionflow:linked:real-time-rendering", "kind": "ResolvedLink"},
-    {"raw": "[[3D Reconstruction]]", "resolved": "urn:visionflow:linked:3d-reconstruction", "kind": "ResolvedLink"},
-    {"raw": "[[NeRF]]", "resolved": "urn:visionflow:linked:nerf", "kind": "ResolvedLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Colour Science]]", "resolved": "urn:visionflow:linked:colour-science", "kind": "ResolvedLink"},
-    {"raw": "[[Optics]]", "resolved": "urn:visionflow:linked:optics", "kind": "ResolvedLink"},
-    {"raw": "[[Image Formation Model]]", "resolved": "urn:visionflow:linked:image-formation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Exposure Fusion]]", "resolved": "urn:visionflow:linked:exposure-fusion", "kind": "ResolvedLink"},
-    {"raw": "[[Tone Mapping]]", "resolved": "urn:visionflow:linked:tone-mapping", "kind": "ResolvedLink"},
-    {"raw": "[[Augmented Reality]]", "resolved": "urn:visionflow:linked:augmented-reality", "kind": "ResolvedLink"},
-    {"raw": "[[Medical Imaging]]", "resolved": "urn:visionflow:linked:medical-imaging", "kind": "ResolvedLink"},
-    {"raw": "[[Satellite Imagery]]", "resolved": "urn:visionflow:linked:satellite-imagery", "kind": "ResolvedLink"},
-    {"raw": "[[Video Stabilisation]]", "resolved": "urn:visionflow:linked:video-stabilisation", "kind": "ResolvedLink"},
-    {"raw": "[[Face Detection]]", "resolved": "urn:visionflow:linked:face-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Scene Understanding]]", "resolved": "urn:visionflow:linked:scene-understanding", "kind": "ResolvedLink"},
-    {"raw": "[[Computational Imaging]]", "resolved": "urn:visionflow:linked:computational-imaging", "kind": "ResolvedLink"},
-    {"raw": "[[Plenoptic Camera]]", "resolved": "urn:visionflow:linked:plenoptic-camera", "kind": "ResolvedLink"},
-    {"raw": "[[Demosaicing]]", "resolved": "urn:visionflow:linked:demosaicing", "kind": "ResolvedLink"},
-    {"raw": "[[Raw Image Pipeline]]", "resolved": "urn:visionflow:linked:raw-image-pipeline", "kind": "ResolvedLink"},
-    {"raw": "[[Image Segmentation]]", "resolved": "urn:visionflow:linked:image-segmentation", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
-  - Computational photography is the discipline that extends or supplants the optical and electromechanical capabilities of a [[Camera]] system through digital computation, combining multiple [[Image Sensor]] readings, learned priors, and algorithmic inference to produce images that no single physical exposure could yield — deployed at scale in hundreds of millions of [[Smartphone]] devices (Apple iPhone, Google Pixel, Samsung Galaxy, Xiaomi, Huawei) where software sophistication compensates for the physical constraints of small-aperture miniaturised optics, and extending into automotive ADAS cameras, [[Medical Imaging]] systems, [[Satellite Imagery]] platforms, and industrial machine vision. Rooted in the convergence of [[Optics]], [[Signal Processing]], and [[Deep Learning]], the field replaces or augments each stage of the classical [[Raw Image Pipeline]] — from [[Demosaicing]] of the Bayer colour filter array through white balance, tone reproduction, noise suppression, and sharpening — with learned transformations implemented by [[Convolutional Neural Network]]s processing batches of raw sensor data at 30–120 frames per second on dedicated [[GPU Compute]] and neural processing unit (NPU) silicon, and, increasingly, [[Transformer Architecture]]-based [[Neural Network]]s that attend across spatial, temporal, and spectral dimensions simultaneously. Core techniques include [[Multi-Frame Fusion]] (HDR+, Night Sight, Burst HDR), in which 4–64 short exposures captured in 20–500 ms are aligned via [[Optical Flow]] dense motion estimation or feature-point homography and merged using Wiener filtering, learned fusion networks, or weighted Gaussian averaging to suppress photon shot noise by sqrt(N) and recover spatial detail from temporal dithering; [[HDR Imaging]] through [[Exposure Fusion]] and [[Tone Mapping]] operators (Mantiuk, Reinhard, or learned tone curves) that bring high dynamic range scene radiance spanning 12–20 stops of exposure into display-compatible SDR or HDR10/Dolby Vision gamuts; [[Bokeh Simulation]] that mimics large-aperture shallow depth-of-field effects using [[Depth Estimation]] maps from dual-pixel PDAF sensors, binocular stereo pair cameras, time-of-flight sensors, or monocular neural networks to perform learned foreground/background alpha matting and defocus disc convolution rendering; and [[Night Mode Photography]] that recovers colour and spatial detail from severely photon-starved captures at sub-lux illuminance levels through adaptive exposure bracketing (1/30s–2s), motion-tolerant alignment, and per-pixel learned denoising, achieving usable images in ambient illuminances below 0.1 lux that conventional single-exposure photography cannot render. [[Semantic Segmentation]] networks operating in the camera ISP enable spatially adaptive enhancement — brightening detected faces while separately boosting sky saturation and sharpening foliage texture — and [[Super Resolution]] networks synthesise fine spatial detail beyond the physical Nyquist limit of the [[Image Sensor]] pixel pitch by learning the prior distribution of natural image textures. The modern [[Neural Image Signal Processor]] (Neural ISP) replaces entirely the classical hand-crafted ISP chain with end-to-end learned pipelines trained on tens of millions of paired RAW/ground-truth frames, achieving state-of-the-art quality scores on standard benchmarks (PSNR, SSIM, LPIPS) across all lighting and scene conditions. At the frontier, [[NeRF]] and [[Diffusion Model]]-based methods push computational photography into fully synthesised novel-view imagery where the boundary between captured and generated content approaches invisibility — raising fundamental questions about photographic authenticity that regulators, journalism ethics bodies, and forensic scientists are actively addressing. [[Light Field Camera]] and [[Plenoptic Camera]] architectures sample the four-dimensional light field for post-capture refocus, synthetic aperture control, and dense [[Depth Estimation]] without active illumination. The field directly enables [[Computer Vision]], [[Augmented Reality]], [[Medical Imaging]], [[Satellite Imagery]], and [[3D Reconstruction]] by delivering higher-quality, geometry-aware scene representations from consumer-grade optics that would otherwise be inadequate for these demanding downstream tasks.
+  - Computational photography is the discipline that extends or supplants the optical and electromechanical capabilities of a [[Camera]] system through digital computation, combining multiple [[Image Sensor]] readings, learned priors, and algorithmic inference to produce images that no single physical exposure [private] yield — deployed at scale in hundreds of millions of [[Smartphone]] devices (Apple iPhone, Google Pixel, Samsung Galaxy, Xiaomi, Huawei) where software sophistication compensates for the physical constraints of small-aperture miniaturised optics, and extending into automotive ADAS cameras, [[Medical Imaging]] systems, [[Satellite Imagery]] platforms, and industrial machine vision. Rooted in the convergence of [[Optics]], [[Signal Processing]], and [[Deep Learning]], the field replaces or augments each stage of the classical [[Raw Image Pipeline]] — from [[Demosaicing]] of the Bayer colour filter array through white balance, tone reproduction, noise suppression, and sharpening — with learned transformations implemented by [[Convolutional Neural Network]]s processing batches of raw sensor data at 30–120 frames per second on dedicated [[GPU Compute]] and neural processing unit (NPU) silicon, and, increasingly, [[Transformer Architecture]]-based [[Neural Network]]s that attend across spatial, temporal, and spectral dimensions simultaneously. Core techniques include [[Multi-Frame Fusion]] (HDR+, Night Sight, Burst HDR), in which 4–64 short exposures captured in 20–500 ms are aligned via [[Optical Flow]] dense motion estimation or feature-point homography and merged using Wiener filtering, learned fusion networks, or weighted Gaussian averaging to suppress photon shot noise by sqrt(N) and recover spatial detail from temporal dithering; [[HDR Imaging]] through [[Exposure Fusion]] and [[Tone Mapping]] operators (Mantiuk, Reinhard, or learned tone curves) that bring high dynamic range scene radiance spanning 12–20 stops of exposure into display-compatible SDR or HDR10/Dolby Vision gamuts; [[Bokeh Simulation]] that mimics large-aperture shallow depth-of-field effects using [[Depth Estimation]] maps from dual-pixel PDAF sensors, binocular stereo pair cameras, time-of-flight sensors, or monocular neural networks to perform learned foreground/background alpha matting and defocus disc convolution rendering; and [[Night Mode Photography]] that recovers colour and spatial detail from severely photon-starved captures at sub-lux illuminance levels through adaptive exposure bracketing (1/30s–2s), motion-tolerant alignment, and per-pixel learned denoising, achieving usable images in ambient illuminances below 0.1 lux that conventional single-exposure photography cannot render. [[Semantic Segmentation]] networks operating in the camera ISP enable spatially adaptive enhancement — brightening detected faces while separately boosting sky saturation and sharpening foliage texture — and [[Super Resolution]] networks synthesise fine spatial detail beyond the physical Nyquist limit of the [[Image Sensor]] pixel pitch by learning the prior distribution of natural image textures. The modern [[Neural Image Signal Processor]] (Neural ISP) replaces entirely the classical hand-crafted ISP chain with end-to-end learned pipelines trained on tens of millions of paired RAW/ground-truth frames, achieving state-of-the-art quality scores on standard benchmarks (PSNR, SSIM, LPIPS) across all lighting and scene conditions. At the frontier, [[NeRF]] and [[Diffusion Model]]-based methods push computational photography into fully synthesised novel-view imagery where the boundary between captured and generated content approaches invisibility — raising fundamental questions about photographic authenticity that regulators, journalism ethics bodies, and forensic scientists are actively addressing. [[Light Field Camera]] and [[Plenoptic Camera]] architectures sample the four-dimensional light field for post-capture refocus, synthetic aperture control, and dense [[Depth Estimation]] without active illumination. The field directly enables [[Computer Vision]], [[Augmented Reality]], [[Medical Imaging]], [[Satellite Imagery]], and [[3D Reconstruction]] by delivering higher-quality, geometry-aware scene representations from consumer-grade optics that would otherwise be inadequate for these demanding downstream tasks.
 
 - ### Semantic Classification
   - owl-class:: computer-vision:ComputationalPhotography
@@ -356,7 +536,7 @@ public: true
 
   ## About
 
-  Computational photography represents the convergence of physical imaging science with the full toolkit of modern [[Deep Learning]] and classical [[Signal Processing]]. The term was coined by Steve Mann in 1995 and re-defined with broader scope by Marc Levoy in his 2004 Stanford course and the 2005 IEEE International Symposium on Computational Photography. Where traditional imaging design asks "what lens and sensor configuration will capture a desired image?", computational photography reframes the question as "what [[Image Formation Model]] and reconstruction algorithm will produce the best result from the available light?" This shift decouples image quality from optics budget: a small-aperture [[Smartphone]] [[Camera]] can achieve dynamic range and resolution previously exclusive to studio equipment, through [[Multi-Frame Fusion]] of dozens of raw frames, [[Neural Network]]-based denoising, and [[Super Resolution]] upsampling. The economic consequences are profound: a smartphone costing under £500 now routinely produces images in low-light conditions that exceed what a £3,000 DSLR with a £1,000 fast prime lens could produce from a single exposure. This capability democratisation has compressed the professional imaging market while simultaneously creating a mass-market user base for computational photography that is orders of magnitude larger than the professional photography market ever was.
+  Computational photography represents the convergence of physical imaging science with the full toolkit of modern [[Deep Learning]] and classical [[Signal Processing]]. The term was coined by Steve Mann in 1995 and re-defined with broader scope by Marc Levoy in his 2004 Stanford course and the 2005 IEEE International Symposium on Computational Photography. Where traditional imaging design asks "what lens and sensor configuration will capture a desired image?", computational photography reframes the question as "what [[Image Formation Model]] and reconstruction algorithm will produce the best result from the available light?" This shift decouples image quality from optics budget: a small-aperture [[Smartphone]] [[Camera]] can achieve dynamic range and resolution previously exclusive to studio equipment, through [[Multi-Frame Fusion]] of dozens of raw frames, [[Neural Network]]-based denoising, and [[Super Resolution]] upsampling. The economic consequences are profound: a smartphone costing under £500 now routinely produces images in low-light conditions that exceed what a £3,000 DSLR with a £1,000 fast prime lens [private] produce from a single exposure. This capability democratisation has compressed the professional imaging market while simultaneously creating a mass-market user base for computational photography that is orders of magnitude larger than the professional photography market ever was.
 
   The critical enabling infrastructure is the [[Neural Image Signal Processor]] (Neural ISP), an end-to-end learned replacement for the classical hand-crafted camera ISP chain. Classical ISPs perform fixed-point arithmetic on the raw Bayer mosaic, applying [[Demosaicing]], white balance, tone curves, and sharpening in a fixed sequence tuned by imaging scientists through laborious manual calibration against test charts and scene categories. Neural ISPs instead train on paired RAW/reference datasets — typically millions of RAW frames paired with reference exposures from high-end cameras with fast lenses in controlled conditions — to jointly optimise all these steps end-to-end, achieving superior performance on difficult scenes that defeat hand-tuned pipelines: underexposed interiors with mixed colour temperature illumination, fast-moving subjects in dim environments, high-frequency texture in scenes with extreme luminance range. Qualcomm's Snapdragon 8 Gen 3 ISP (2024) integrates dedicated neural processing units enabling real-time on-device inference for computational photography tasks at up to 4K resolution, processing at sustained 30fps with total power budgets under 2W. The competitive landscape among chipset vendors — Qualcomm, MediaTek, Samsung Exynos, and Apple's own silicon — is now substantially defined by the quality of each vendor's neural ISP implementation, making computational photography a key differentiator in a smartphone hardware market where sensor and optics improvements have reached diminishing returns.
 
@@ -364,7 +544,7 @@ public: true
 
   The global computational photography market was valued at approximately USD 15.2 billion in 2024 and is projected to reach USD 48.4 billion by 2032 (Fortune Business Insights, 2025), growing at a compound annual growth rate of approximately 15.5%. Growth is driven primarily by smartphone adoption across all price tiers — mid-range devices have adopted computational [[HDR Imaging]], [[Night Mode Photography]], and portrait [[Bokeh Simulation]] features previously exclusive to flagship devices — and is expanding into automotive ADAS perception, [[Medical Imaging]] reconstruction, [[Satellite Imagery]] analysis, and industrial inspection. The automotive segment is particularly significant: every Level 2+ ADAS system now includes multiple computational photography processing stages to handle the range of illumination, weather, and scene conditions encountered in real-world driving, and Level 4 autonomous vehicles require multiple camera ISPs running in parallel at very high frame rates with safety-certified deterministic performance.
 
-  The historical development of the field falls into three recognisable phases. The first phase (1995–2010) was characterised by algorithmic breakthroughs in well-posed sub-problems: [[HDR Imaging]] (Debevec and Malik, 1997), light field rendering (Levoy and Hanrahan, 1996), [[Panorama Stitching]] (Brown and Lowe, 2007), and computational [[Bokeh Simulation]] (Bae and Durand, 2007). These algorithms operated on principled analytical models of the imaging process and were implemented in classical signal processing pipelines. The second phase (2010–2020) was characterised by the introduction of [[Deep Learning]] — initially for individual stages (learned [[Demosaicing]], learned [[Super Resolution]], learned [[Depth Estimation]]) and progressively expanding to full pipeline replacement. The seminal "Learning to See in the Dark" (Chen et al., 2018) demonstrated that a [[Convolutional Neural Network]] trained on paired RAW/clean datasets could outperform all hand-crafted pipelines on extreme low-light photography, marking the decisive shift to neural approaches. The third phase (2020–present) is characterised by system-level integration of neural pipelines into production hardware, the emergence of [[Diffusion Model]]-based generative restoration, and the frontier challenge of managing authenticity as synthetic content becomes indistinguishable from optically captured imagery.
+  The historical development of the field falls into three recognisable phases. The first phase (1995–2010) was characterised by algorithmic breakthroughs in well-posed sub-problems: [[HDR Imaging]] (Debevec and Malik, 1997), light field rendering (Levoy and Hanrahan, 1996), [[Panorama Stitching]] (Brown and Lowe, 2007), and computational [[Bokeh Simulation]] (Bae and Durand, 2007). These algorithms operated on principled analytical models of the imaging process and were implemented in classical signal processing pipelines. The second phase (2010–2020) was characterised by the introduction of [[Deep Learning]] — initially for individual stages (learned [[Demosaicing]], learned [[Super Resolution]], learned [[Depth Estimation]]) and progressively expanding to full pipeline replacement. The seminal "Learning to See in the Dark" (Chen et al., 2018) demonstrated that a [[Convolutional Neural Network]] trained on paired RAW/clean datasets [private] outperform all hand-crafted pipelines on extreme low-light photography, marking the decisive shift to neural approaches. The third phase (2020–present) is characterised by system-level integration of neural pipelines into production hardware, the emergence of [[Diffusion Model]]-based generative restoration, and the frontier challenge of managing authenticity as synthetic content becomes indistinguishable from optically captured imagery.
 
   ## Components / Architecture
 
@@ -428,7 +608,7 @@ public: true
 
   ## Authenticity, Forensics, and the Ethics of Computational Capture
 
-  The progressive replacement of physical optical capture with computational synthesis has introduced a range of authenticity and forensic integrity challenges that are attracting both regulatory and technical attention. Traditional photographic evidence was considered reliable because the physical optics constrained what could appear in the image: a given lens, aperture, shutter speed, and sensor configuration could only produce a specific range of images from a given scene. Computational photography progressively undermines this constraint. [[Multi-Frame Fusion]] averages over many actual exposures, which is broadly trustworthy; but [[Generative AI]]-assisted restoration inpaints missing data from a learned model of natural images, introducing synthesised detail with no ground-truth physical basis. [[Bokeh Simulation]] renders out-of-focus regions that were never captured in focus — the computational system invents plausible texture rather than preserving uncertainty. [[Night Mode Photography]] produces colourful, detailed images from scenes where the unaided eye would see near-darkness — the image is accurate in a statistical sense (it represents the most probable clean image given the noisy captures) but does not correspond to any single physical exposure.
+  The progressive replacement of physical optical capture with computational synthesis has introduced a range of authenticity and forensic integrity challenges that are attracting both regulatory and technical attention. Traditional photographic evidence was considered reliable because the physical optics constrained what [private] appear in the image: a given lens, aperture, shutter speed, and sensor configuration [private] only produce a specific range of images from a given scene. Computational photography progressively undermines this constraint. [[Multi-Frame Fusion]] averages over many actual exposures, which is broadly trustworthy; but [[Generative AI]]-assisted restoration inpaints missing data from a learned model of natural images, introducing synthesised detail with no ground-truth physical basis. [[Bokeh Simulation]] renders out-of-focus regions that were never captured in focus — the computational system invents plausible texture rather than preserving uncertainty. [[Night Mode Photography]] produces colourful, detailed images from scenes where the unaided eye would see near-darkness — the image is accurate in a statistical sense (it represents the most probable clean image given the noisy captures) but does not correspond to any single physical exposure.
 
   These issues are not merely philosophical. The UK courts have begun to grapple with computational photography in the context of photographic evidence: the Law Commission's 2022 review of digital evidence considered how processing operations should be disclosed when smartphone photographs are produced as evidence, and the Crown Prosecution Service guidance on digital material acknowledges that modern smartphone photographs may reflect significant post-capture processing. Photojournalism's professional standards bodies — the World Press Photo Foundation and the National Press Photographers Association — have updated their ethics codes to address AI-enhanced photography, prohibiting AI-generated content from photojournalism submissions whilst permitting traditional darkroom-equivalent enhancements.
 

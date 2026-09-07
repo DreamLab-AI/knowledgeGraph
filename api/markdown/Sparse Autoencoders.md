@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sparse Autoencoders
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Sparse autoencoders are neural networks trained to reconstruct their input through a wide hidden layer subject to a sparsity penalty, so that only a small number of latent units activate for any given input. In mechanistic interpretability they are applied to the activations of large language models to decompose dense, polysemantic representations into more monosemantic, human-interpretable features. They have become a leading tool for understanding what concepts a model internally represents.",
   "domain": "ai",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ]
   },
   "quality": 0.72

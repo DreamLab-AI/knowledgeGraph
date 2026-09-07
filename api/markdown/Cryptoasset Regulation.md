@@ -1,59 +1,114 @@
----
-public: true
----
-
-# Cryptoasset Regulation
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cryptoasset-regulation", "@type":"Page", "title":"Cryptoasset Regulation", "vc:slug":"cryptoasset-regulation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cryptoasset-regulation",
+  "@type": "Page",
+  "title": "Cryptoasset Regulation",
+  "vc:slug": "cryptoasset-regulation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:cryptoasset-regulation",
-  "@type":"Class",
-  "label":"Cryptoasset Regulation",
-  "definition":"Cryptoasset regulation is the body of laws, supervisory rules, and policy frameworks governing the issuance, custody, trading, and use of digital assets such as cryptocurrencies, stablecoins, and tokenised securities. It applies traditional financial-services objectives, consumer protection, market integrity, financial stability, and the prevention of money laundering and terrorist financing, to crypto-native business models. Landmark regimes include the EU Markets in Crypto-Assets regulation and the UK's phased approach led by the Financial Conduct Authority and HM Treasury, alongside global standards from the Financial Action Task Force such as the travel rule.",
-  "domain":"finance",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:regulation","label":"Regulation"}],
-  "relations":{
-    "governs":[
-      {"@id":"urn:ngm:class:stablecoin","label":"Stablecoin"},
-      {"@id":"urn:ngm:class:digital-asset","label":"Digital Asset"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cryptoasset-regulation",
+  "@type": "Class",
+  "label": "Cryptoasset Regulation",
+  "definition": "Cryptoasset regulation is the body of laws, supervisory rules, and policy frameworks governing the issuance, custody, trading, and use of digital assets such as cryptocurrencies, stablecoins, and tokenised securities. It applies traditional financial-services objectives, consumer protection, market integrity, financial stability, and the prevention of money laundering and terrorist financing, to crypto-native business models. Landmark regimes include the EU Markets in Crypto-Assets regulation and the UK's phased approach led by the Financial Conduct Authority and HM Treasury, alongside global standards from the Financial Action Task Force such as the travel rule.",
+  "domain": "finance",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulation",
+      "label": "Regulation"
+    }
+  ],
+  "relations": {
+    "governs": [
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:markets-in-crypto-assets","label":"Markets in Crypto-Assets"},
-      {"@id":"urn:ngm:class:travel-rule","label":"Travel Rule"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:markets-in-crypto-assets",
+        "label": "Markets in Crypto-Assets"
+      },
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:anti-money-laundering","label":"Anti-Money Laundering"},
-      {"@id":"urn:ngm:class:kyc","label":"Know Your Customer"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:kyc",
+        "label": "Know Your Customer"
+      }
     ],
-    "enforcedBy":[
-      {"@id":"urn:ngm:class:financial-conduct-authority","label":"Financial Conduct Authority"}
+    "enforcedBy": [
+      {
+        "@id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"},
-      {"@id":"urn:ngm:class:risk-management","label":"Risk Management"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:governance","label":"Governance"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:central-bank","label":"Central Bank"},
-      {"@id":"urn:ngm:class:institutional-trust","label":"Institutional Trust"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-trust",
+        "label": "Institutional Trust"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:blockchain","label":"Blockchain"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

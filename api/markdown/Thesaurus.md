@@ -1,37 +1,120 @@
----
-public: true
----
-
-# Thesaurus
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:thesaurus", "@type":"Page", "title":"Thesaurus", "vc:slug":"thesaurus", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:thesaurus",
+  "@type": "Page",
+  "title": "Thesaurus",
+  "vc:slug": "thesaurus",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:thesaurus",
-  "@type":"Class",
-  "label":"Thesaurus",
-  "definition":"A thesaurus is a controlled vocabulary that organises preferred terms together with their synonyms and structured semantic relationships, principally broader, narrower and related-term links. By mapping non-preferred synonyms onto a single preferred descriptor, it enforces consistent indexing and improves retrieval by reconciling the many ways people express the same concept. Thesauri underpin information retrieval, library cataloguing and knowledge organisation, and are formalised by standards such as ISO 25964 and expressible in SKOS.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:controlled-vocabulary","label":"Controlled Vocabulary"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:knowledge-organization","label":"Knowledge Organization"}],
-    "uses":[{"@id":"urn:ngm:class:vocabulary","label":"Vocabulary"},{"@id":"urn:ngm:class:classification","label":"Classification"}],
-    "supports":[{"@id":"urn:ngm:class:information-retrieval","label":"Information Retrieval"},{"@id":"urn:ngm:class:indexing","label":"Indexing"}],
-    "enables":[{"@id":"urn:ngm:class:information-retrieval","label":"Information Retrieval"},{"@id":"urn:ngm:class:search-engine","label":"Search Engine"}],
-    "requires":[{"@id":"urn:ngm:class:vocabulary","label":"Vocabulary"}],
-    "implements":[{"@id":"urn:ngm:class:controlled-vocabulary","label":"Controlled Vocabulary"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:ontology","label":"Ontology"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:semantic-web","label":"Semantic Web"}],
-    "relatedTo":[{"@id":"urn:ngm:class:ontology","label":"Ontology"},{"@id":"urn:ngm:class:indexing","label":"Indexing"},{"@id":"urn:ngm:class:metadata","label":"Metadata"}],
-    "dependsOn":[{"@id":"urn:ngm:class:knowledge-organization","label":"Knowledge Organization"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:thesaurus",
+  "@type": "Class",
+  "label": "Thesaurus",
+  "definition": "A thesaurus is a controlled vocabulary that organises preferred terms together with their synonyms and structured semantic relationships, principally broader, narrower and related-term links. By mapping non-preferred synonyms onto a single preferred descriptor, it enforces consistent indexing and improves retrieval by reconciling the many ways people express the same concept. Thesauri underpin information retrieval, library cataloguing and knowledge organisation, and are formalised by standards such as ISO 25964 and expressible in SKOS.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:controlled-vocabulary",
+      "label": "Controlled Vocabulary"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:knowledge-organization",
+        "label": "Knowledge Organization"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:knowledge-organization",
+        "label": "Knowledge Organization"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

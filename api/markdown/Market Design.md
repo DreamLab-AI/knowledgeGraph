@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Market Design
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,45 +20,110 @@ public: true
   "definition": "Market design is the applied economics discipline concerned with constructing, analysing, and improving the rules, mechanisms, and institutions that govern the exchange of goods, services, and assets in real-world markets. Drawing on game theory, mechanism design, and matching theory, market designers identify failures in existing markets — such as the absence of money in matching markets, thickness problems, or congestion — and engineer interventions that produce efficient, stable, and fair outcomes. Prominent applications include kidney exchange programmes, school choice systems, spectrum auctions, and electricity markets.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:auction-theory", "label": "Auction Theory"},
-      {"@id": "urn:ngm:class:matching-theory", "label": "Matching Theory"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      },
+      {
+        "@id": "urn:ngm:class:matching-theory",
+        "label": "Matching Theory"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:auction-mechanism", "label": "Auction Mechanism"},
-      {"@id": "urn:ngm:class:clearing-mechanism", "label": "Clearing Mechanism"},
-      {"@id": "urn:ngm:class:price-discovery", "label": "Price Discovery"}
+      {
+        "@id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:clearing-mechanism",
+        "label": "Clearing Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spectrum-allocation", "label": "Spectrum Allocation"},
-      {"@id": "urn:ngm:class:carbon-markets", "label": "Carbon Market"},
-      {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"}
+      {
+        "@id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"},
-      {"@id": "urn:ngm:class:strategyproof-mechanism", "label": "Strategyproof Mechanism"}
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:strategyproof-mechanism",
+        "label": "Strategyproof Mechanism"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-      {"@id": "urn:ngm:class:platform-economics", "label": "Platform Economics"}
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:platform-economics",
+        "label": "Platform Economics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"},
-      {"@id": "urn:ngm:class:behavioural-economics", "label": "Behavioural Economics"}
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:central-planning", "label": "Central Planning"}
+      {
+        "@id": "urn:ngm:class:central-planning",
+        "label": "Central Planning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:de-fi", "label": "Defi"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "Defi"
+      }
     ]
   },
   "sameAs": [],

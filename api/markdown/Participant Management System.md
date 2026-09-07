@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Participant Management System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:participant-management-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5212f56e6512730e152d5789388bc7dd76daf0bf2225a5c1537f5f4bcabeb124"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Event Analytics]]",
-      "resolved": "urn:visionflow:linked:event-analytics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Event Management]]",
-      "resolved": "urn:visionflow:owl:class:event-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A platform for organizing event attendees through registration, invitation management, check-in tracking, and real-time attendance monitoring, providing tools for ticketing, payment processing, and post-event analytics.

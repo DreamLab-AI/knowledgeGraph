@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Floating-Point Arithmetic
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Floating-point arithmetic is a method of representing and computing with real numbers on digital hardware using a sign, a fixed-precision significand, and an exponent, most commonly standardised by IEEE 754. It trades exactness for a wide dynamic range, so operations introduce rounding error, and properties such as associativity no longer hold exactly. Understanding its precision limits, rounding modes, and special values is essential for numerically reliable simulation, graphics, and machine learning.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:model-optimisation-and-performance", "label": "Model Optimisation and Performance"}
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      }
     ]
   },
   "quality": 0.72

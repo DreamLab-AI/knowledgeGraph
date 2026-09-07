@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Climate Commitments
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Climate commitments are formal pledges by governments, companies, or coalitions to achieve specified greenhouse-gas reduction or removal outcomes by defined dates, such as net-zero or science-based emissions targets. They typically combine a headline goal with interim milestones, accounting boundaries, and reporting obligations to make progress verifiable. They matter as the governance mechanism that translates climate ambition into measurable, accountable action and that shapes corporate sustainability and offsetting strategies.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:carbon-neutral-blockchain", "label": "Carbon Neutral Blockchain"},
-      {"@id": "urn:ngm:class:net-zero-targets", "label": "Net Zero Targets"}
+      {
+        "@id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      }
     ]
   },
   "quality": 0.72

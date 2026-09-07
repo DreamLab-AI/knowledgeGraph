@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Task Specific Head
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
+      {
+        "@id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
     ]
   },
   "provenance": {
@@ -86,42 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:task-specific-head:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fb02d247e89d95bda3267c7e444555e443292166b834ee8ccc4cd66af3816c4d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware and Edge]]",
-      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[software engineering]]",
-      "resolved": "urn:visionflow:owl:class:software-engineering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Task-Specific Head is a shallow neural network module appended to a frozen or fine-tuned pre-trained model to adapt its representations for a particular downstream task. Architecturally it may be a single linear projection for classification, start/end span predictors for question answering, or a lightweight decoder for generation; it is randomly initialised and optimised during fine-tuning whilst the shared base model provides task-agnostic representations.

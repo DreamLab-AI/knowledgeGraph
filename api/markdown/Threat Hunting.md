@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Threat Hunting
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,42 +20,104 @@ public: true
   "definition": "Threat hunting is a proactive cybersecurity practice in which analysts iteratively search through networks, endpoints, and data repositories for hidden adversarial activity that has evaded automated detection. Unlike reactive incident response, threat hunting is hypothesis-driven, combining threat intelligence, behavioural analytics, and expert intuition to identify indicators of compromise or attack techniques before they manifest as confirmed incidents. The discipline reduces dwell time and surfaces novel attacker tradecraft for which signatures do not yet exist.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:threat-intelligence", "label": "Threat Intelligence"},
-      {"@id": "urn:ngm:class:cyber-resilience", "label": "Cyber Resilience"}
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-resilience",
+        "label": "Cyber Resilience"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:security-information-and-event-management", "label": "Security Information and Event Management"},
-      {"@id": "urn:ngm:class:intrusion-detection-system", "label": "Intrusion Detection System"}
+      {
+        "@id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:red-team", "label": "Red Team"},
-      {"@id": "urn:ngm:class:penetration-testing", "label": "Penetration Testing"},
-      {"@id": "urn:ngm:class:mitre-attack", "label": "MITRE ATT&CK"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {
+        "@id": "urn:ngm:class:red-team",
+        "label": "Red Team"
+      },
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:mitre-attack",
+        "label": "MITRE ATT&CK"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:behavioural-analytics", "label": "Behavioural Analytics"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:endpoint-detection-and-response", "label": "Endpoint Detection and Response"}
+      {
+        "@id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:endpoint-detection-and-response",
+        "label": "Endpoint Detection and Response"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:security-operations-centre", "label": "Security Operations Centre"},
-      {"@id": "urn:ngm:class:log-management", "label": "Log Management"}
+      {
+        "@id": "urn:ngm:class:security-operations-centre",
+        "label": "Security Operations Centre"
+      },
+      {
+        "@id": "urn:ngm:class:log-management",
+        "label": "Log Management"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:hypothesis-generation", "label": "Hypothesis Generation"},
-      {"@id": "urn:ngm:class:indicator-of-compromise", "label": "Indicator of Compromise"}
+      {
+        "@id": "urn:ngm:class:hypothesis-generation",
+        "label": "Hypothesis Generation"
+      },
+      {
+        "@id": "urn:ngm:class:indicator-of-compromise",
+        "label": "Indicator of Compromise"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:threat-intelligence-platform", "label": "Threat Intelligence Platform"},
-      {"@id": "urn:ngm:class:network-traffic-analysis", "label": "Network Traffic Analysis"}
+      {
+        "@id": "urn:ngm:class:threat-intelligence-platform",
+        "label": "Threat Intelligence Platform"
+      },
+      {
+        "@id": "urn:ngm:class:network-traffic-analysis",
+        "label": "Network Traffic Analysis"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ]
   },
   "quality": 0.62,

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IPFS Content Addressing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ipfs-content-addressing:e7781a2b2fa7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0f7d3bfecc17faa60b01c89c7e59de612d6ed9fb8f3223277b52aec4529e8d08"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptographic Hash]]",
-      "resolved": "urn:visionflow:linked:cryptographic-hash",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Storage]]",
-      "resolved": "urn:visionflow:linked:distributed-storage",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[IPFS]]",
-      "resolved": "urn:visionflow:linked:ipfs",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The addressing scheme used by the InterPlanetary File System, in which content is identified by a cryptographic hash of its data rather than by location. The resulting content identifier changes if the content changes.

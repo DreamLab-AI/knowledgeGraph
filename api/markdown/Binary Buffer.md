@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Binary Buffer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -109,67 +104,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:binary-buffer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d7fb671a874e3042b3de9332edb5aff9b0518f8cac47a5d0ea0a2d37e9501775"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Buffer Management]]",
-      "resolved": "urn:visionflow:linked:buffer-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Formatting]]",
-      "resolved": "urn:visionflow:linked:data-formatting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Transfer]]",
-      "resolved": "urn:visionflow:linked:data-transfer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Graphics Rendering]]",
-      "resolved": "urn:visionflow:linked:graphics-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Memory Allocation]]",
-      "resolved": "urn:visionflow:linked:memory-allocation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stream Processing]]",
-      "resolved": "urn:visionflow:linked:stream-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Structure]]",
-      "resolved": "urn:visionflow:owl:class:data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A contiguous region of memory used to temporarily store binary data during transfer, processing, or rendering operations, serving as an intermediary between data sources and destinations in graphics pipelines, network communications, and computational workflows.

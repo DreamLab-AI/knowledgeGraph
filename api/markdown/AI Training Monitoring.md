@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Training Monitoring
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-training-monitoring",
   "title": "AI Training Monitoring",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Neptune AI", "OpenAI Acquisition"],
+  "vc:outboundWikilinks": [
+    "Neptune AI",
+    "OpenAI Acquisition"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agents",
+      "label": "AI Agents"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

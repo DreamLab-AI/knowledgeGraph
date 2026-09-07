@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safety PLC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,36 @@ public: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cobot-safety-levels", "label": "Cobot Safety Levels"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
+      {
+        "@id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:servo-control", "label": "Servo Control"}
+      {
+        "@id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      }
     ]
   },
   "quality": 0.7,
@@ -78,32 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:safety-plc:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cc92f7a7509aeeddec3183893962999249b6a1c4c136ce5885bcf09891061356"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Safety Programmable Logic Controller (Safety PLC) is a specialised industrial controller certified to IEC 61511 or IEC 62061 safety integrity levels, designed to execute safety instrumented functions that bring a process to a safe state upon detecting hazardous conditions. Unlike standard PLCs, Safety PLCs implement redundant processing, self-diagnostics, and rigorous failure-mode analysis to achieve the high diagnostic coverage required for safety-critical robotics and industrial automation.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# National Income
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "National Income",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:macroeconomics", "vc:label": "Macroeconomics"},
-    {"@id": "urn:visionflow:linked:gross-domestic-product", "vc:label": "Gross Domestic Product"},
-    {"@id": "urn:visionflow:linked:inflation", "vc:label": "Inflation"},
-    {"@id": "urn:visionflow:linked:economics", "vc:label": "Economics"}
+    {
+      "@id": "urn:visionflow:linked:macroeconomics",
+      "vc:label": "Macroeconomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:gross-domestic-product",
+      "vc:label": "Gross Domestic Product"
+    },
+    {
+      "@id": "urn:visionflow:linked:inflation",
+      "vc:label": "Inflation"
+    },
+    {
+      "@id": "urn:visionflow:linked:economics",
+      "vc:label": "Economics"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,11 +50,20 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:economics", "label": "Economics"}
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gross-domestic-product", "label": "Gross Domestic Product"},
-      {"@id": "urn:ngm:class:inflation", "label": "Inflation"}
+      {
+        "@id": "urn:ngm:class:gross-domestic-product",
+        "label": "Gross Domestic Product"
+      },
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
     ]
   },
   "quality": 0.8,
@@ -78,7 +99,7 @@ public: true
 
   ## Technical Details
 
-  Measurement proceeds by three routes that should agree: the income approach (summing factor incomes from tax and survey data), the production approach (value added by industry), and the expenditure approach (consumption, investment, government spending, net exports). Real national income is obtained by deflating nominal figures with an appropriate price index, since [[Inflation]] otherwise overstates growth in the income aggregate. Known limitations mirror those of GDP: household and informal production are undercounted, environmental depletion is not netted off (motivating adjusted measures such as green NNI and the UN's inclusive wealth accounts), and distribution is invisible in the aggregate — prompting the distributional national accounts programme, which allocates national income across the household distribution to link macro totals with inequality statistics.
+  Measurement proceeds by three routes that should agree: the income approach (summing factor incomes from tax and survey data), the production approach (value added by industry), and the expenditure approach (consumption, investment, government spending, net exports). Real national income is obtained by deflating nominal figures with an appropriate price [private], since [[Inflation]] otherwise overstates growth in the income aggregate. Known limitations mirror those of GDP: household and informal production are undercounted, environmental depletion is not netted off (motivating adjusted measures such as green NNI and the UN's inclusive wealth accounts), and distribution is invisible in the aggregate — prompting the distributional national accounts programme, which allocates national income across the household distribution to link macro totals with inequality statistics.
 
   ## Current Landscape
 

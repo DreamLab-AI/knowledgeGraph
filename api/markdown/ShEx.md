@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ShEx
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "ShEx (Shape Expressions) is a language for describing and validating the structure of RDF graphs, specifying which properties a node must have, their cardinalities, and value constraints. It serves a role for linked data analogous to schemas for XML or JSON, enabling data producers and consumers to agree on graph shapes. It is widely used to validate Solid pods and Wikidata-style knowledge graphs.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:solid", "label": "Solid"}, {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid"
+      },
+      {
+        "@id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      }
+    ]
   },
   "quality": 0.72
 }

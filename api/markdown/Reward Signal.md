@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Reward Signal
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

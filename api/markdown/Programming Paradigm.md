@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Programming Paradigm
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,66 +72,38 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:programming-paradigm:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d7db6dcabad03593eaf7dd124ee4734e289d5830e7d2f488fc33a570cafbf178"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Differentiable Programming]]",
-      "resolved": "urn:visionflow:linked:differentiable-programming",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Functional Programming]]",
-      "resolved": "urn:visionflow:linked:functional-programming",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Engineering]]",
-      "resolved": "urn:visionflow:owl:class:software-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Symbolic AI]]",
-      "resolved": "urn:visionflow:owl:class:symbolic-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming. Functional programming (Haskell, Lisp) emphasizes immutability and higher-order functions, suited for mathematical ML algorithms. Differentiable programming treats entire programs as differentiable functions, enabling end-to-end gradient-based optimization. Modern AI development combines paradigms: object-oriented for software engineering, functional for mathematical rigor, and differentiable for learning.

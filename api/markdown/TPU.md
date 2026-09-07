@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TPU
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -71,19 +66,46 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
-      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
-      {"@id": "urn:ngm:class:npu", "label": "NPU"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "@id": "urn:ngm:class:npu",
+        "label": "NPU"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "quality": 0.8,
@@ -94,47 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tpu:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:02c19b1a9b6d3879ec3afd8b904a60e40b3370e26c807f593061029d6ce70541"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Google Cloud]]",
-      "resolved": "urn:visionflow:linked:google-cloud",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Hardware]]",
-      "resolved": "urn:visionflow:owl:class:ai-hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Tensor Processing Unit, Google's custom-developed application-specific integrated circuit (ASIC) optimized for neural network machine learning workloads.

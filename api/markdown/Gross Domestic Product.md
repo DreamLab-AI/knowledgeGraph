@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Gross Domestic Product
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

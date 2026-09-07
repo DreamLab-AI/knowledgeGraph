@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Long-Horizon Task Benchmark
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "long-horizon-task-benchmark",
   "title": "Long-Horizon Task Benchmark",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Agent Capability", "GPT-5.1 Codex Max"],
+  "vc:outboundWikilinks": [
+    "Agent Capability",
+    "GPT-5.1 Codex Max"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpt",
+      "label": "GPT"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}, {"@id": "urn:ngm:class:agent", "label": "Agent"}, {"@id": "urn:ngm:class:autonomous-decision-making", "label": "Autonomous Decision Making"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision Making"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

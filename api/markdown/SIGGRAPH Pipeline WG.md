@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SIGGRAPH Pipeline WG
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:siggraph-pipeline-wg:ce61531f806e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:880c4036305a94d434d8f78d6b16ae9ba0fa7e81c592a67564b50acffdcdb062"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Asset Standard]]",
-      "resolved": "urn:visionflow:linked:3-d-asset-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asset Interoperability]]",
-      "resolved": "urn:visionflow:linked:asset-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Content Pipeline]]",
-      "resolved": "urn:visionflow:linked:3-d-content-pipeline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MaterialX]]",
-      "resolved": "urn:visionflow:linked:material-x",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SIGGRAPH]]",
-      "resolved": "urn:visionflow:linked:siggraph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Standards Body]]",
-      "resolved": "urn:visionflow:linked:standards-body",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The SIGGRAPH Pipeline Working Group is an industry effort associated with the SIGGRAPH community that addresses interoperability and best practice across the stages of 3D content production pipelines.

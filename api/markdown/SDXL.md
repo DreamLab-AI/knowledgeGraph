@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SDXL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,56 @@ public: true
   "definition": "SDXL (Stable Diffusion XL) is a large-scale latent diffusion model released by Stability AI in 2023, comprising a 3.5-billion-parameter UNet and an ensemble of two CLIP text encoders that condition image generation at native 1024×1024 resolution. It introduces a two-stage architecture — a base model followed by a refinement model — and supports advanced conditioning mechanisms including aesthetic scoring and crop coordinates.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"}, {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:ngm:class:diffusion-models",
+      "label": "Diffusion Models"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:vae", "label": "VAE"},
-      {"@id": "urn:ngm:class:clip-encoder", "label": "CLIP Encoder"},
-      {"@id": "urn:ngm:class:classifier-free-guidance", "label": "Classifier-Free Guidance"}
+      {
+        "@id": "urn:ngm:class:vae",
+        "label": "VAE"
+      },
+      {
+        "@id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:lo-ra-fine-tuning", "label": "LoRA Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:hugging-face-diffusers", "label": "Hugging Face Diffusers"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"}
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Image Model"
+      }
     ]
   },
   "quality": 0.8
@@ -62,4 +90,3 @@ public: true
   - The open-weights release catalysed a large ecosystem of fine-tuned checkpoints, LoRA adaptors, ControlNet ports, and ComfyUI workflows. Platforms such as Automatic1111 and ComfyUI added SDXL support within weeks of release, and Hugging Face hosted hundreds of community fine-tunes within months. SDXL Turbo (a distilled variant using Adversarial Diffusion Distillation) later enabled single-step generation.
 
   - By 2024–2025 SDXL remains widely deployed in commercial and hobbyist contexts despite newer models (SD3, Flux.1). Its permissive licence (with some restrictions) and large community mean it is still the baseline for many fine-tuning and research pipelines. Hardware requirements — roughly 8 GB VRAM for inference at full resolution — have become feasible on consumer GPUs, sustaining adoption.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VERIFICATION REPORT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,15 +91,30 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:standards-validation", "label": "Standards Validation"},
-      {"@id": "urn:ngm:class:standards-compliance", "label": "Standards Compliance"}
+      {
+        "@id": "urn:ngm:class:standards-validation",
+        "label": "Standards Validation"
+      },
+      {
+        "@id": "urn:ngm:class:standards-compliance",
+        "label": "Standards Compliance"
+      }
     ]
   },
   "provenance": {
@@ -114,82 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:verification-report:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:09d75f0e036a58c5121ffabaf6d5e6567788a987f963c1652e864451bfe2ace8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DataIntegrity|data integrity]]",
-      "resolved": "urn:visionflow:linked:data-integrity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DataQualityMetrics|data quality assessments]]",
-      "resolved": "urn:visionflow:linked:data-quality-metrics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OntologyAssets|ontologies]]",
-      "resolved": "urn:visionflow:linked:ontology-assets",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OntologyStandards|ontology standards]]",
-      "resolved": "urn:visionflow:linked:ontology-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OWLAxioms|OWL axioms]]",
-      "resolved": "urn:visionflow:linked:owlaxioms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[QualityMetrics|quality metrics]]",
-      "resolved": "urn:visionflow:linked:quality-metrics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RDFTriples|RDF triples]]",
-      "resolved": "urn:visionflow:linked:rdftriples",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SchemaCompliance|schema validation]]",
-      "resolved": "urn:visionflow:linked:schema-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SemanticConsistency|semantic consistency]]",
-      "resolved": "urn:visionflow:linked:semantic-consistency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[KnowledgeGraph|knowledge graphs]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A verification report documents systematic assessment results confirming that [[OntologyAssets|ontologies]], [[KnowledgeGraph|knowledge graphs]], and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures. These reports provide transparent documentation of [[DataQualityMetrics|data quality assessments]], [[SchemaCompliance|schema validation]], [[SemanticConsistency|semantic consistency]] checks, and testing results covering [[RDFTriples|RDF triples]], [[OWLAxioms|OWL axioms]], and [[DataIntegrity|data integrity]]. Comprehensive verification reporting with detailed defect categorisation, remediation progress tracking, and [[QualityMetrics|quality metrics]] enables stakeholders to assess production readiness and compliance with [[OntologyStandards|ontology standards]] before deployment.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Relayer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,62 +206,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:relayer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cfcada562c4361d988eedbce718729f50ec24004fdb6d80705308388af8bb793"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Interoperability Protocol]]",
-      "resolved": "urn:visionflow:linked:interoperability-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Message Passing]]",
-      "resolved": "urn:visionflow:linked:message-passing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Oracle]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-oracle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Bridge]]",
-      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Light Client]]",
-      "resolved": "urn:visionflow:owl:class:light-client",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains. Relayers provide non-custodial connectivity for interoperability protocols like IBC, LayerZero, and Chainlink CCIP without holding user assets.

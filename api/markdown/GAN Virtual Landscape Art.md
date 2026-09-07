@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Virscapes]]
-# GAN Virtual Landscape Art
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[Virscapes]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"}
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
     ]
   },
   "provenance": {
@@ -66,26 +75,6 @@ elevatedFrom:: [[Virscapes]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virscapes:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:465ac8a91e0d124833f008965565e5f46f8686117b49aa168245075929766f66"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Virscapes** are AI-generated virtual landscape images produced by training generative adversarial networks (StyleGAN) on a curated dataset of digital game landscapes collected over seven years, exploring latent space to create emotionally resonant synthetic environments. The practice investigates questions of landscape identity, simulacra, and the distinction between human aesthetic curation and algorithmic generation in digital art.
@@ -104,7 +93,7 @@ elevatedFrom:: [[Virscapes]]
   - Light lit survey of praxis artists and movements
 		- The term Landvættir is an old Nordic phrase used to describe the souls/spirits that inhabit and protect the natural landscapes; the soul of a landscape so to speak. Whilst our physical landscapes and presence will eventually diminish, our interpretations and experiences of these ‘places’ albeit virtual will endure. Landvættir  is an attempt to manifest the Greek aphorism; *Ars longa, vita brevis*
 		- Many still feel virtual worlds, are just that, a cheap imitation of reality, a replica of the ‘real’ thing, nothing more than a *simulacra*, a fake copy that as Plato argued was a distortion and a deviation of truth. The word *Simulacra  *has long been a focal point for philosophers, with its roots stemming from classical Greek philosophy, in particular Plato’s dialogues to the modern day as Jean Baudrillard, the postmodern social theorist, who unlike Plato argued the simulacra was not a copy but in fact a truth, in its own right:* “The simulacrum is never that which conceals the truth--it is the truth which conceals that there is none…..The simulacrum is true*.” (Poster & Mourrain, 2002, pp.166-184)
-		- We have witnessed  the birth not only a new epoch of artistic practice but perhaps something far more deeper a new intelligence, not artificial but evolutionary intelligence; one that threatens as much as it promises. The embryonic precursor digital landscapes we ‘play’ and create today are far more fragile that we could ever comprehend; undermined by the notion that there are simple digital entities can be replicated and saved with ease…..however how we experienced them, as individuals and the grater collective, the impact on our every evolving and transient *collective unconscious*, all the spaces inbetween cannot.
+		- We have witnessed  the birth not only a new epoch of artistic practice but perhaps something far more deeper a new intelligence, not artificial but evolutionary intelligence; one that threatens as much as it promises. The embryonic precursor digital landscapes we ‘play’ and create today are far more fragile that we [private] ever comprehend; undermined by the notion that there are simple digital entities can be replicated and saved with ease…..however how we experienced them, as individuals and the grater collective, the impact on our every evolving and transient *collective unconscious*, all the spaces inbetween cannot.
 		- Landvættir explores notions of latent space  (the space in between the generated data) as it in ways reflects the experience and perceptions of digital landscape art; beyond the digital/binary representation there is a another layer; fleeting
 		- **If the generations of A.I to follow dream of the first virtual places, will they dream of Turner, Constable and Monet? Or would they dream of the precursor virtual landscapes where the seeds of their intelligence took hold and began to grow?**
 		- Landvættir explores an alternative approach to generative  A.I art. Contemporary approaches to generative adversarial network art heavily utilize image scrapping to form the foundation of the dataset’s used to train generative models; however Landvættir ‘virscapes’ are perhaps the world first that use a curated dataset of digital landscapes (created as part of a 7 year doctoral study project) thousands of virtual game landscapes were collected and used to generate the digital Landvættir ‘virscapes’. The virscapes are not simply generated from a ‘mass farming’ of images; but one that has been curated, not driven by metadata alone but from the individual and collective  emotional responses of players and virtual landscape inhabitants driving the selection of virtual landscapes to include across three decades.
@@ -186,10 +175,10 @@ elevatedFrom:: [[Virscapes]]
   - # Transcript summary
   - **Introduction to the Project:**
 		- Originating in the early excitement around NFTs in 2021, the project aimed to bridge digital artists and new media artists into the burgeoning NFT market. This period saw a proliferation of NFT exchanges, with a wide spectrum from the open, non-curated platforms reminiscent of eBay, to the more selective and artistically rigorous ones like Super Rare.
-		- The project's inception was marked by a fascination with the ways in which digital and virtual spaces could be curated, owned, and traded, sparking a deep exploration into the possibilities of NFT technology as a medium for artistic expression.
+		- The project's inception was marked by a fascination with the ways in which digital and virtual spaces [private] be curated, owned, and traded, sparking a deep exploration into the possibilities of NFT technology as a medium for artistic expression.
   - **Technological Exploration and Artistic Intent:**
 		- The transition from traditional digital platforms to NFT-based exchanges offered a unique lens through which the project explored the digital art landscape. Special attention was given to how these platforms enabled or constrained artistic expression.
-		- Influential works and artists, such as "Dark Castles" by Anne Speelter, served as touchstones for the project, inspiring a deeper investigation into how virtual landscapes could be rendered, experienced, and owned through the lens of NFTs and AI-generated art.
+		- Influential works and artists, such as "Dark Castles" by Anne Speelter, served as touchstones for the project, inspiring a deeper investigation into how virtual landscapes [private] be rendered, experienced, and owned through the lens of NFTs and AI-generated art.
 		- A significant portion of the discussion was dedicated to generative AI technologies, particularly StyleGAN, which was utilized to produce complex, emotionally resonant landscapes. This exploration was not just technical but deeply intertwined with artistic intent, aiming to push the boundaries of what AI can create.
   - **Methodological Approach:**
 		- A deliberate decision was made to strip away pre-existing structures and conventions in digital art to allow for an uninhibited exploration of new landscapes. This approach was both a philosophical stance and a practical method to encourage innovation.
@@ -212,9 +201,9 @@ elevatedFrom:: [[Virscapes]]
   - **Adapting to Technical Challenges**: The project also involved innovative solutions to technical challenges, such as adapting image aspect ratios for optimal AI processing. Tools like Runway ML were utilized to explore the latent space of images, enabling the creation of landscapes that pushed the boundaries of traditional digital art forms.
 	  Looking ahead, the project anticipates several future directions and opportunities for growth:
   - **Deepening AI Integration**: Future work aims to deepen the integration of AI in the creative process, exploring more advanced AI models and training techniques to generate increasingly sophisticated and nuanced landscapes. This includes leveraging advancements in AI to better interpret artistic intent and emotional subtleties.
-  - **Expanding the NFT Ecosystem**: The project seeks to explore new ways to engage with and expand the NFT ecosystem, looking at innovative models for artist remuneration, ownership, and interaction within digital spaces. This could involve creating more interactive and immersive NFT experiences that go beyond static images.
-  - **Cross-disciplinary Collaborations**: There's an interest in fostering cross-disciplinary collaborations that merge art, technology, and other fields such as environmental science or urban planning. These collaborations could lead to projects that not only push artistic boundaries but also engage with pressing global issues.
-  - **Public Engagement and Education**: Another future direction involves greater public engagement and educational efforts. This could include workshops, exhibitions, and discussions that demystify AI and NFT technologies, fostering a broader understanding and appreciation of digital art.
+  - **Expanding the NFT Ecosystem**: The project seeks to explore new ways to engage with and expand the NFT ecosystem, looking at innovative models for artist remuneration, ownership, and interaction within digital spaces. This [private] involve creating more interactive and immersive NFT experiences that go beyond static images.
+  - **Cross-disciplinary Collaborations**: There's an interest in fostering cross-disciplinary collaborations that merge art, technology, and other fields such as environmental science or urban planning. These collaborations [private] lead to projects that not only push artistic boundaries but also engage with pressing global issues.
+  - **Public Engagement and Education**: Another future direction involves greater public engagement and educational efforts. This [private] include workshops, exhibitions, and discussions that demystify AI and NFT technologies, fostering a broader understanding and appreciation of digital art.
   - **Exploring New Themes and Narratives**: The project is also keen on exploring new themes and narratives within digital landscapes, pushing into uncharted territories that challenge conventional perceptions of space, identity, and reality in the digital age.
 
   - ### Future Scope:

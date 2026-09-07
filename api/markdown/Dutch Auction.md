@@ -1,37 +1,106 @@
----
-public: true
----
-
-# Dutch Auction
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:dutch-auction", "@type":"Page", "title":"Dutch Auction", "vc:slug":"dutch-auction", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:dutch-auction",
+  "@type": "Page",
+  "title": "Dutch Auction",
+  "vc:slug": "dutch-auction",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:dutch-auction",
-  "@type":"Class",
-  "label":"Dutch Auction",
-  "definition":"A Dutch auction is a descending-price auction mechanism in which the offered price starts high and falls over time until a bidder accepts, with the first acceptance determining the clearing price. In blockchain and token markets it is implemented in smart contracts to distribute tokens or NFTs, set initial offering prices, and liquidate collateral, with the falling-price schedule encoded on-chain. Variants include single-item and multi-unit uniform-price formats used for fairer price discovery.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:auction-mechanism","label":"Auction Mechanism"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "hasPart":[{"@id":"urn:ngm:class:price-discovery","label":"Price Discovery"}],
-    "partOf":[{"@id":"urn:ngm:class:auction-mechanism","label":"Auction Mechanism"}],
-    "enables":[{"@id":"urn:ngm:class:price-discovery","label":"Price Discovery"}],
-    "implements":[{"@id":"urn:ngm:class:auction-mechanism","label":"Auction Mechanism"}],
-    "supports":[{"@id":"urn:ngm:class:initial-coin-offering","label":"Initial Coin Offering"},{"@id":"urn:ngm:class:nft-marketplace","label":"NFT Marketplace"}],
-    "requires":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "relatedTo":[{"@id":"urn:ngm:class:decentralized-exchange","label":"Decentralized Exchange"},{"@id":"urn:ngm:class:price-discovery","label":"Price Discovery"},{"@id":"urn:ngm:class:nft-marketplace","label":"NFT Marketplace"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:decentralized-finance","label":"Decentralized Finance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dutch-auction",
+  "@type": "Class",
+  "label": "Dutch Auction",
+  "definition": "A Dutch auction is a descending-price auction mechanism in which the offered price starts high and falls over time until a bidder accepts, with the first acceptance determining the clearing price. In blockchain and token markets it is implemented in smart contracts to distribute tokens or NFTs, set initial offering prices, and liquidate collateral, with the falling-price schedule encoded on-chain. Variants include single-item and multi-unit uniform-price formats used for fairer price discovery.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:auction-mechanism",
+      "label": "Auction Mechanism"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,55 +1,106 @@
----
-public: true
----
-
-# Qualified Custodian
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:qualified-custodian", "@type":"Page", "title":"Qualified Custodian", "vc:slug":"qualified-custodian", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:qualified-custodian",
+  "@type": "Page",
+  "title": "Qualified Custodian",
+  "vc:slug": "qualified-custodian",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:qualified-custodian",
-  "@type":"Class",
-  "label":"Qualified Custodian",
-  "definition":"A qualified custodian is a regulated financial institution authorised to hold client assets, including digital assets, under fiduciary and supervisory standards set by securities regulators. It provides segregated accounts, independent audit and statutory protections that distinguish it from informal custody arrangements. For institutional investors, using a qualified custodian is often a regulatory precondition for holding crypto assets.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:digital-asset-custody","label":"Digital Asset Custody"}],
-  "relations":{
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:self-custody","label":"Self-Custody"},
-      {"@id":"urn:ngm:class:custodial-wallet","label":"Custodial Wallet"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:qualified-custodian",
+  "@type": "Class",
+  "label": "Qualified Custodian",
+  "definition": "A qualified custodian is a regulated financial institution authorised to hold client assets, including digital assets, under fiduciary and supervisory standards set by securities regulators. It provides segregated accounts, independent audit and statutory protections that distinguish it from informal custody arrangements. For institutional investors, using a qualified custodian is often a regulatory precondition for holding crypto assets.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-asset-custody",
+      "label": "Digital Asset Custody"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"},
-      {"@id":"urn:ngm:class:securities-regulation","label":"Securities Regulation"},
-      {"@id":"urn:ngm:class:know-your-customer","label":"Know Your Customer"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:asset-management","label":"Asset Management"},
-      {"@id":"urn:ngm:class:custody","label":"Custody"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:cold-storage","label":"Cold Storage"},
-      {"@id":"urn:ngm:class:proof-of-reserve","label":"Proof of Reserve"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:audit-trail","label":"Audit Trail"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:compliance","label":"Compliance"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:digital-asset-custody","label":"Digital Asset Custody"},
-      {"@id":"urn:ngm:class:custodial-exchange","label":"Custodial Exchange"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "@id": "urn:ngm:class:custodial-exchange",
+        "label": "Custodial Exchange"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

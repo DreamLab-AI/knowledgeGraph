@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quorum System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

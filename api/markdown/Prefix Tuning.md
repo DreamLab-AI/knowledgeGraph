@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Prefix Tuning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,32 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:prefix-tuning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bbdba1d117e1d35b485f3ec95cdd6113b050035705822e2bd5a424cb15742dd6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A parameter-efficient fine-tuning technique that prepends trainable continuous vectors (prefixes) to the key and value matrices at each transformer layer, whilst keeping the pre-trained model parameters frozen. Unlike prompt tuning which only modifies input embeddings, prefix tuning affects attention computation at every layer.

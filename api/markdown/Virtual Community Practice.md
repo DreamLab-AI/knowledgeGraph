@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Community Practice
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -105,37 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-community-practice:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b67bc7ec8bba453093d8d35f566e17ef60670e9077e7f3ca41381e08ad3cc501"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Community Governance]]",
-      "resolved": "urn:visionflow:owl:class:community-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The methodologies, norms, and behaviors that govern how members interact, collaborate, and build relationships within virtual community platforms, including governance structures, social conventions, and collective practices that shape online community culture.

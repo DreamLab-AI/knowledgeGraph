@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Miner Extractable Value
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

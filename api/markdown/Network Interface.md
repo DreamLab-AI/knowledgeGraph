@@ -1,37 +1,116 @@
----
-public: true
----
-
-# Network Interface
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:network-interface", "@type":"Page", "title":"Network Interface", "vc:slug":"network-interface", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:network-interface",
+  "@type": "Page",
+  "title": "Network Interface",
+  "vc:slug": "network-interface",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:network-interface",
-  "@type":"Class",
-  "label":"Network Interface",
-  "definition":"A network interface is the hardware or software point at which a computing device connects to a network, mediating the transmission and reception of data frames. In hardware it is realised as a network interface controller bearing a unique MAC address; in software it appears as a named, addressable endpoint that the operating system binds to a protocol stack. The interface bridges the physical and data-link layers to the network layer, allowing higher-level protocols to send and receive packets without managing the underlying medium.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:hardware-component","label":"Hardware Component"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:hardware-component","label":"Hardware Component"}],
-    "hasPart":[{"@id":"urn:ngm:class:network-layer","label":"Network Layer"}],
-    "requires":[{"@id":"urn:ngm:class:operating-system","label":"Operating System"},{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "uses":[{"@id":"urn:ngm:class:ethernet","label":"Ethernet"},{"@id":"urn:ngm:class:tcp","label":"TCP"}],
-    "enables":[{"@id":"urn:ngm:class:packet-switching","label":"Packet Switching"}],
-    "supports":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "implements":[{"@id":"urn:ngm:class:osi-model","label":"OSI Model"}],
-    "dependsOn":[{"@id":"urn:ngm:class:operating-system","label":"Operating System"}],
-    "relatedTo":[{"@id":"urn:ngm:class:osi-model","label":"OSI Model"},{"@id":"urn:ngm:class:ethernet","label":"Ethernet"},{"@id":"urn:ngm:class:packet-switching","label":"Packet Switching"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:network-layer","label":"Network Layer"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:network-interface",
+  "@type": "Class",
+  "label": "Network Interface",
+  "definition": "A network interface is the hardware or software point at which a computing device connects to a network, mediating the transmission and reception of data frames. In hardware it is realised as a network interface controller bearing a unique MAC address; in software it appears as a named, addressable endpoint that the operating system binds to a protocol stack. The interface bridges the physical and data-link layers to the network layer, allowing higher-level protocols to send and receive packets without managing the underlying medium.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "@id": "urn:ngm:class:tcp",
+        "label": "TCP"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "@id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "@id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[State of the art in AI]]
-# AI Frontier Capability Survey
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -44,10 +38,6 @@ elevatedFrom:: [[State of the art in AI]]
     {
       "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
       "vc:label": "Proprietary Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "vc:label": "Social contract and jobs"
     },
     {
       "@id": "urn:visionflow:owl:class:trust-and-safety",
@@ -93,20 +83,44 @@ elevatedFrom:: [[State of the art in AI]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:proprietary-large-language-models", "label": "Proprietary Large Language Models"},
-      {"@id": "urn:ngm:class:open-generative-ai-tools", "label": "Open Generative AI tools"},
-      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"}
+      {
+        "@id": "urn:ngm:class:proprietary-large-language-models",
+        "label": "Proprietary Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:open-generative-ai-tools",
+        "label": "Open Generative AI tools"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-capability-temporal-horizon-framework", "label": "AI Capability Temporal Horizon Framework"},
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}
+      {
+        "@id": "urn:ngm:class:ai-capability-temporal-horizon-framework",
+        "label": "AI Capability Temporal Horizon Framework"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"}
+      {
+        "@id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"},
-      {"@id": "urn:ngm:class:knowledge-artefact-update-cycle", "label": "Knowledge Artefact Update Cycle"}
+      {
+        "@id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-artefact-update-cycle",
+        "label": "Knowledge Artefact Update Cycle"
+      }
     ]
   },
   "provenance": {
@@ -116,82 +130,6 @@ elevatedFrom:: [[State of the art in AI]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:state-of-the-art-in-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e31b241a272d8474591d3a3f6368cc5b8bbed53874118b71bdd19faf1b331bb1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[presentation]]",
-      "resolved": "urn:visionflow:linked:presentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[rework based on gpt]]",
-      "resolved": "urn:visionflow:linked:rework-based-on-gpt",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware and Edge]]",
-      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Employment Social Contract Under Automation]]",
-      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trust and Safety]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Artefact Update Cycle]]",
-      "resolved": "urn:visionflow:owl:class:update-cycle",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - State of the Art in AI is a curated survey of the current frontier of artificial intelligence capability, covering large language models, generative AI, multimodal systems, hardware advances, and sociotechnical implications. It synthesises emerging research directions, benchmark performance milestones, and near-term deployment trajectories across proprietary and open-source AI ecosystems.

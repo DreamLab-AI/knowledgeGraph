@@ -1,8 +1,3 @@
----
-public: true
----
-
-# APILayer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:apilayer:d8205bea56fc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a740eb528a189c92d77fcead0dfe59e8563df9c6296a8e51b7a74b3823801c35"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Integration Layer]]",
-      "resolved": "urn:visionflow:linked:integration-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interface Layer]]",
-      "resolved": "urn:visionflow:linked:interface-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[REST]]",
-      "resolved": "urn:visionflow:linked:rest",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OpenAPI Specification]]",
-      "resolved": "urn:visionflow:linked:open-api-specification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The API Layer is the stratum that exposes a system's capabilities as callable, contractually defined endpoints. It sits above the application logic it fronts and below integration and interface strata that connect consumers. It contains endpoint definitions, request and response schemas, authentication hooks, and versioning.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Encryption Service
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:encryption-service:8ff653759b4e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:49095f1b97c4168d2cfe1a52cf42e55cebb4ab2114b45883a5e37dbe717249e8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Symmetric Encryption]]",
-      "resolved": "urn:visionflow:linked:symmetric-encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:linked:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://csrc.nist.gov/glossary/term/encryption]]",
-      "resolved": "urn:visionflow:linked:https-csrc-nist-gov-glossary-term-encryption",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.nist.gov/cryptography]]",
-      "resolved": "urn:visionflow:linked:https-www-nist-gov-cryptography",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An encryption service is a system or component that provides cryptographic protection of data, typically offering key management and encryption operations through an interface. It supports confidentiality of stored and transmitted data.

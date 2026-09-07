@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersive Experience Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:immersive-experience-pipeline:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:45319ef00213cd8de93695d3781e53616a2411bb82ee64474054870d037bada2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[XR Content Delivery]]",
-      "resolved": "urn:visionflow:linked:xr-content-delivery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Content Production Workflow]]",
-      "resolved": "urn:visionflow:owl:class:content-production-workflow",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The end-to-end workflow for creating, processing, and delivering XR content, encompassing concept design, 3D asset creation, game engine integration, optimisation, platform deployment, and cloud streaming to produce immersive virtual experiences for metaverse applications.

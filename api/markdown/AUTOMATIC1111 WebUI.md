@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AUTOMATIC1111 WebUI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -319,211 +314,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:automatic-1111-web-ui:1359084fd9c6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9790fc4dbe262eace3bf01a952d8b4d01da6cc6b3fc6f74ac78051fee57bb44d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:linked:stable-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image-to-Image]]",
-      "resolved": "urn:visionflow:linked:image-to-image",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Inpainting]]",
-      "resolved": "urn:visionflow:linked:inpainting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:linked:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Diffusion Model]]",
-      "resolved": "urn:visionflow:linked:diffusion-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:linked:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text-to-Image]]",
-      "resolved": "urn:visionflow:linked:text-to-image",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComfyUI]]",
-      "resolved": "urn:visionflow:linked:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Prompt Engineering]]",
-      "resolved": "urn:visionflow:linked:prompt-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ControlNet]]",
-      "resolved": "urn:visionflow:linked:control-net",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Variational Autoencoder]]",
-      "resolved": "urn:visionflow:linked:variational-autoencoder",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Latent Diffusion Model]]",
-      "resolved": "urn:visionflow:linked:latent-diffusion-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Open-Source Software]]",
-      "resolved": "urn:visionflow:linked:open-source-software",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GPU Compute]]",
-      "resolved": "urn:visionflow:linked:gpu-compute",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LoRA]]",
-      "resolved": "urn:visionflow:linked:lora",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Textual Inversion]]",
-      "resolved": "urn:visionflow:linked:textual-inversion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Upscaling]]",
-      "resolved": "urn:visionflow:linked:upscaling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sampler]]",
-      "resolved": "urn:visionflow:linked:sampler",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Classifier-Free Guidance]]",
-      "resolved": "urn:visionflow:linked:classifier-free-guidance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion XL]]",
-      "resolved": "urn:visionflow:linked:stable-diffusion-xl",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Flux.1]]",
-      "resolved": "urn:visionflow:linked:flux-1",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CivitAI]]",
-      "resolved": "urn:visionflow:linked:civitai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hugging Face]]",
-      "resolved": "urn:visionflow:linked:hugging-face",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Python]]",
-      "resolved": "urn:visionflow:linked:python",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Gradio]]",
-      "resolved": "urn:visionflow:linked:gradio",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Outpainting]]",
-      "resolved": "urn:visionflow:linked:outpainting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DreamBooth]]",
-      "resolved": "urn:visionflow:linked:dreambooth",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hypernetwork]]",
-      "resolved": "urn:visionflow:linked:hypernetwork",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Open Generative AI tools]]",
-      "resolved": "urn:visionflow:linked:open-generative-ai-tools",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Adversarial Network]]",
-      "resolved": "urn:visionflow:linked:generative-adversarial-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Local AI]]",
-      "resolved": "urn:visionflow:linked:local-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Attention Mechanism]]",
-      "resolved": "urn:visionflow:linked:attention-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CLIP]]",
-      "resolved": "urn:visionflow:linked:clip",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[U-Net]]",
-      "resolved": "urn:visionflow:linked:u-net",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InvokeAI]]",
-      "resolved": "urn:visionflow:linked:invoke-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stable Video Diffusion]]",
-      "resolved": "urn:visionflow:linked:stable-video-diffusion",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - AUTOMATIC1111 WebUI (commonly abbreviated A1111 or sd-webui) is an open-source, community-maintained browser-based graphical interface for running [[Stable Diffusion Image Model]] latent [[Diffusion Model]] pipelines locally on consumer GPU hardware. Written in [[Python]] and served via a [[Gradio]] web front end, it wraps the [[Latent Diffusion Model]] inference engine in a point-and-click UI that exposes [[Text-to-Image]] generation, [[Image-to-Image]] transformation, [[Inpainting]], [[Outpainting]], [[Upscaling]], and fine-tuning workflows including [[DreamBooth]] and [[Textual Inversion]], all within a unified tabbed interface accessible at localhost in any web browser. First released publicly by the pseudonymous developer AUTOMATIC1111 in August 2022 alongside Stable Diffusion's open-weights release, the repository accumulated over 160,000 GitHub stars by 2025, placing it among the most-starred [[Open-Source Software]] projects in AI history. Its extension system catalysed an ecosystem of hundreds of community plugins integrating [[ControlNet]] spatial conditioning, [[LoRA]] adapter stacks, aesthetic scorers, video generation bridges, and API connectivity, making A1111 the dominant entry point for local [[Generative AI]] image generation from 2022 through approximately 2024. In 2025–2026, the project matured into a reference platform: its last major release was v1.10.1 in February 2025, with active development having shifted to performance-optimised forks such as Stable Diffusion WebUI Forge (lllyasviel/stable-diffusion-webui-forge) and to the node-graph alternative [[ComfyUI]], while A1111 itself remains the tutorial standard and the installation of choice for operators prioritising breadth of extension compatibility over raw throughput on next-generation model architectures such as [[Flux.1]] and Stable Diffusion 3.5.
 
@@ -685,7 +475,7 @@ public: true
 
   ## About
     AUTOMATIC1111 WebUI, hosted at github.com/AUTOMATIC1111/stable-diffusion-webui, is the foundational open-source graphical interface for local [[Stable Diffusion Image Model]] inference.
-    Its release in August 2022 coincided precisely with Stability AI's open-weights release of Stable Diffusion 1.4, and the tool's accessibility — requiring only a single `webui.bat` or `webui.sh` launch script after a straightforward [[Python]] and CUDA setup — catalysed a global wave of grassroots experimentation that cloud-based APIs could not match in iteration speed or creative latitude.
+    Its release in August 2022 coincided precisely with Stability AI's open-weights release of Stable Diffusion 1.4, and the tool's accessibility — requiring only a single `webui.bat` or `webui.sh` launch script after a straightforward [[Python]] and CUDA setup — catalysed a global wave of grassroots experimentation that cloud-based APIs [private] not match in iteration speed or creative latitude.
     The interface exposes the full parameter space of [[Latent Diffusion Model]] inference: prompt and negative prompt text fields with attention weighting syntax (`(token:1.4)` style), sampling method selection across DDIM, PLMS, Euler, DPM++ 2M, and DPM++ SDE samplers (each with distinct quality-speed tradeoffs), [[Classifier-Free Guidance]] scale, seed control for reproducibility, image dimensions up to the training resolution of each checkpoint, batch size, and step count — typically 20–50 denoising steps for quality outputs.
     The speed-quality tradeoff at inference is a central user consideration: DDIM at 50 steps is the historical reference; DPM++ 2M Karras at 20–25 steps is the practical production standard achieving equivalent quality at half the compute; DPM++ SDE Karras at 15–20 steps with higher CFG adds stochastic sampling diversity; Euler a at 30 steps remains a widely preferred general-purpose choice.
     Understanding these tradeoffs — and the impact of CFG scale on detail vs. over-saturation — constitutes the core practitioner knowledge that made A1111 an educational gateway to [[Diffusion Model]] mechanics for millions of users.
@@ -707,7 +497,7 @@ public: true
     The Deforum extension adds temporal consistency mechanisms for generating video sequences from SD, enabling coherent frame-to-frame animation.
     Regional Prompter enables applying different prompt weights to different spatial regions of the image, extending spatial control beyond ControlNet.
     The Impact Pack (ComfyUI-inspired node system for A1111) and UltimateSD Upscale extend upscaling to tile-based generation for very high-resolution outputs without VRAM overflow.
-    By 2024, the A1111 extension index listed over 400 community-maintained extensions, covering safety filters, aesthetic scoring, API integrations with downstream tools, custom sampling algorithms, and specialised workflows for specific model architectures.
+    By 2024, the A1111 extension [private] listed over 400 community-maintained extensions, covering safety filters, aesthetic scoring, API integrations with downstream tools, custom sampling algorithms, and specialised workflows for specific model architectures.
 
     **img2img workflow mechanics:**
     The img2img tab provides an [[Image-to-Image]] transformation workflow in which an input image is partially noised and then denoised according to the text prompt, with the denoising strength parameter (0.0–1.0) controlling the degree of departure from the original.

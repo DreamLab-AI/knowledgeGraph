@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mesh Routing Software
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mesh-routing-software:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:16c9ac93b5bba2f44e16b5c432ab90001ccfc7aa9615c7f9909942afad18f8e2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralised Networks]]",
-      "resolved": "urn:visionflow:linked:decentralised-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:network-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Network protocol software that enables decentralised, self-healing communication in mesh networks through dynamic routing algorithms, supporting IoT deployments, distributed systems, and metaverse infrastructure connectivity.

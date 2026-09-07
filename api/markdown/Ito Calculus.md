@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Itô Calculus
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Itô calculus is a branch of mathematical analysis that extends the methods of calculus to stochastic processes such as Brownian motion. Its central result, Itô's lemma, provides the chain rule for functions of stochastic integrals, accounting for the non-zero quadratic variation of random paths. It is the foundational toolkit for stochastic differential equations and continuous-time probabilistic modelling.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"},
-      {"@id": "urn:ngm:class:stochastic-differential-equation", "label": "Stochastic Differential Equation"}
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      }
     ]
   },
   "quality": 0.72

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Agentic Workshop]]
-# Agentic AI Practitioner Training Programme
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,19 +47,40 @@ elevatedFrom:: [[Agentic Workshop]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:generative-ai-development-methodology", "label": "Generative AI Development Methodology"}
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai-development-methodology",
+        "label": "Generative AI Development Methodology"
+      }
     ]
   },
   "quality": 0.5,
@@ -76,32 +91,6 @@ elevatedFrom:: [[Agentic Workshop]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agentic-workshop:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:74ed87aa01dc571e1d68b50ae9b8e7f96b3c12f916f71911f55afba716212e32"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A structured training programme introducing practitioners to agentic AI systems: context engineering, memory management, agent orchestration tools, and practical case studies across project management, data visualisation, and academic research via phased multi-session instruction.

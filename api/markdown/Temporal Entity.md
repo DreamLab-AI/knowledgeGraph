@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Temporal Entity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A temporal entity is an ontological category for anything that exists in or is defined by time, such as an instant, an interval, an event, or a process. In knowledge representation it serves as a shared superclass that anchors time-bearing concepts so they can be related by ordering, duration, and containment. The notion follows established time ontologies like the W3C OWL-Time vocabulary.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:entity", "label": "Entity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:entity",
+      "label": "Entity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:process", "label": "Process"},
-      {"@id": "urn:ngm:class:event", "label": "Event"}
+      {
+        "@id": "urn:ngm:class:process",
+        "label": "Process"
+      },
+      {
+        "@id": "urn:ngm:class:event",
+        "label": "Event"
+      }
     ]
   },
   "quality": 0.72

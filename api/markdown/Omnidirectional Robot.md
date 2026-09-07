@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Omnidirectional Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,18 +58,42 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:mecanum-wheel-robot", "label": "Mecanum Wheel Robot"},
-      {"@id": "urn:ngm:class:differential-drive-robot", "label": "Differential Drive Robot"},
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
-      {"@id": "urn:ngm:class:wheeled-mobile-robot", "label": "Wheeled Mobile Robot"},
-      {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"}
+      {
+        "@id": "urn:ngm:class:mecanum-wheel-robot",
+        "label": "Mecanum Wheel Robot"
+      },
+      {
+        "@id": "urn:ngm:class:differential-drive-robot",
+        "label": "Differential Drive Robot"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:wheeled-mobile-robot",
+        "label": "Wheeled Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
-      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "@id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"}
+      {
+        "@id": "urn:ngm:class:robo-robot-type",
+        "label": "Robot Type"
+      }
     ]
   },
   "quality": 0.8,
@@ -85,37 +104,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:omnidirectional-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2ead0039f60059513184d25371bdeaed581db8880e873ac8fd109ac2856d5e5d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Wheeled Robot]]",
-      "resolved": "urn:visionflow:owl:class:wheeled-robot",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Omnidirectional robot uses mecanum wheels or omniwheels for holonomic motion.

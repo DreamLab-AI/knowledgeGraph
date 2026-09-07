@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Local Explanation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,20 +87,38 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:global-explanation", "label": "Global Explanation"}
+      {
+        "@id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:feature-importance", "label": "Feature Importance"}
+      {
+        "@id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}
+      {
+        "@id": "urn:ngm:class:sc-content-and-assets",
+        "label": "Content and Assets"
+      }
     ]
   },
   "provenance": {
@@ -115,77 +128,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:local-explanation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8cf00a254498d68ddf48450c31f016ec211c197803798ef73657bd15e105f8fa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Counterfactual Explanation]]",
-      "resolved": "urn:visionflow:linked:counterfactual-explanation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Feature Attribution]]",
-      "resolved": "urn:visionflow:linked:feature-attribution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Instance-Level Analysis]]",
-      "resolved": "urn:visionflow:linked:instance-level-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Integrated Gradients]]",
-      "resolved": "urn:visionflow:linked:integrated-gradients",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[LIME]]",
-      "resolved": "urn:visionflow:linked:lime",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SHAP]]",
-      "resolved": "urn:visionflow:linked:shap",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:owl:class:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Global Explanation]]",
-      "resolved": "urn:visionflow:owl:class:global-explanation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Interpretability]]",
-      "resolved": "urn:visionflow:owl:class:model-interpretability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour. Methods such as LIME and SHAP generate feature-attribution scores scoped to the neighbourhood of a single query point.

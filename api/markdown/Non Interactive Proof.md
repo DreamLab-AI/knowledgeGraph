@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Non Interactive Proof
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,44 +20,106 @@ public: true
   "definition": "A Non-Interactive Proof (NIP) is a cryptographic proof system in which the prover transmits a single message to the verifier, without any back-and-forth challenge-response rounds, allowing verification of a claim without ongoing interaction. Non-interactive proofs are typically constructed from interactive protocols via the Fiat-Shamir heuristic, replacing the verifier's random challenge with a hash of the prover's first message, binding the proof to the statement. The resulting proof string can be broadcast publicly, stored on-chain, or verified asynchronously by any party possessing the verification key. Non-interactive zero-knowledge proofs (NIZKs) additionally guarantee that the proof reveals nothing beyond the truth of the statement, and form the foundation of [[ZK-SNARK]] and [[ZK-STARKs]] schemes used in blockchain privacy and scalability applications.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-proof",
+      "label": "Cryptographic Proof"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:cryptographic-proof-system", "label": "Cryptographic Proof System"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof-system",
+        "label": "Cryptographic Proof System"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:zk-snark", "label": "ZK-SNARK"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:zk-snarks", "label": "ZK-SNARKs"},
-      {"@id": "urn:ngm:class:zk-starks", "label": "ZK-STARKs"},
-      {"@id": "urn:ngm:class:zero-knowledge-rollup", "label": "Zero-Knowledge Rollup"}
+      {
+        "@id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      },
+      {
+        "@id": "urn:ngm:class:zk-starks",
+        "label": "ZK-STARKs"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:interactive-proof-system", "label": "Interactive Proof System"},
-      {"@id": "urn:ngm:class:cryptographic-proofs", "label": "Cryptographic Proofs"},
-      {"@id": "urn:ngm:class:bulletproofs", "label": "Bulletproofs"},
-      {"@id": "urn:ngm:class:stark", "label": "STARK"}
+      {
+        "@id": "urn:ngm:class:interactive-proof-system",
+        "label": "Interactive Proof System"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:bulletproofs",
+        "label": "Bulletproofs"
+      },
+      {
+        "@id": "urn:ngm:class:stark",
+        "label": "STARK"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:interactive-proof-system", "label": "Interactive Proof System"}
+      {
+        "@id": "urn:ngm:class:interactive-proof-system",
+        "label": "Interactive Proof System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-machine-learning", "label": "Zero-Knowledge Machine Learning"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-machine-learning",
+        "label": "Zero-Knowledge Machine Learning"
+      }
     ]
   },
   "sameAs": [],

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Runes Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,46 +159,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:runes-protocol:0410f8c75f98",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:725ebe8351b2e6392117fe2e7d38acf90e0f2ea23893c6359f80efe71a602754"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[UTXO]]",
-      "resolved": "urn:visionflow:linked:utxo",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fungible Token]]",
-      "resolved": "urn:visionflow:linked:fungible-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token Standard]]",
-      "resolved": "urn:visionflow:linked:token-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Runes Protocol is a [[Token Standard]] for [[Bitcoin Proof-of-Work Protocol]] that enables [[Fungible Token]] issuance and transfer natively on the Bitcoin base layer. It encodes protocol messages called Runestones inside [[OP_RETURN]] outputs of [[Bitcoin Transaction]]s, assigning token balances to [[UTXO]] outputs so that ownership tracks through the existing unspent output model rather than a separate account ledger. Designed by Casey Rodarmor (creator of [[Ordinals Protocol]]), it launched at the Bitcoin halving block in April 2024 as a more UTXO-efficient alternative to the [[BRC-20]] fungible token convention. The protocol preserves Bitcoin's base-layer settlement security while enabling [[Tokenisation]] of arbitrary fungible assets.
 
@@ -228,7 +183,7 @@ public: true
     - Names are globally unique and encoded as integers in the protocol to save space. Shorter names were initially reserved for a 4-year unlock schedule to reward early adopters who wait.
   - #### Minting
     - Runes can be **open-mint** (anyone can mint up to a cap) or **pre-minted** (fixed supply at etch). Open-mint allows permissionless [[Token Minting]] within the parameters set by the etcher.
-    - Each mint operation is a [[Bitcoin Transaction]] carrying a Runestone that references the rune by ID (block:tx index).
+    - Each mint operation is a [[Bitcoin Transaction]] carrying a Runestone that references the rune by ID (block:tx [private]).
   - #### Indexer Architecture
     - Because Bitcoin nodes do not natively interpret Runes, wallets and explorers rely on **Runes indexers** — software that replays the blockchain, interpreting every Runestone to maintain a current balance state.
     - The reference implementation is `ord` (the same binary used for [[Ordinals Protocol]]), which implements the canonical indexing rules.

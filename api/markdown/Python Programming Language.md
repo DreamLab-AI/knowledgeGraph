@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Python Programming Language
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,38 +20,88 @@ public: true
   "definition": "Python is a high-level, interpreted, general-purpose programming language emphasising code readability and a clean syntax. It has become the dominant language for machine learning and data science due to its extensive ecosystem of numerical and scientific libraries. Python supports multiple programming paradigms including procedural, object-oriented, and functional styles, and its dynamic typing and interactive REPL accelerate experimentation.",
   "domain": "machine-learning",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:tensor-computation", "label": "Tensor Computation"},
-      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"}
+      {
+        "@id": "urn:ngm:class:tensor-computation",
+        "label": "Tensor Computation"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:statistical-analysis", "label": "Statistical Analysis"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:data-modelling", "label": "Data Modelling"}
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:tensor", "label": "Tensor"},
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}
+      {
+        "@id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      },
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
-      {"@id": "urn:ngm:class:euclidean-distance", "label": "Euclidean Distance"},
-      {"@id": "urn:ngm:class:fourier-transform", "label": "Fourier Transform"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      },
+      {
+        "@id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:statistical-analysis", "label": "Statistical Analysis"}
+      {
+        "@id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
     ]
   },
   "quality": 0.62,
@@ -83,7 +127,7 @@ public: true
 - ### Key Aspects
   - Dynamic typing and duck typing enable rapid prototyping without verbose type declarations.
   - The Global Interpreter Lock (GIL) in CPython constrains true thread-level parallelism for CPU-bound tasks, driving adoption of multiprocessing and async patterns.
-  - The PyPI package index hosts over half a million packages spanning domains from [[Data Modelling]] to cryptography.
+  - The PyPI package [private] hosts over half a million packages spanning domains from [[Data Modelling]] to cryptography.
   - Type hints (PEP 484 onwards) allow optional static analysis without sacrificing runtime flexibility.
 
 - ### Mechanisms

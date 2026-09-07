@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Education Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -519,7 +514,7 @@ public: true
   Coursera and edX launched 2012 (Stanford AI course attracting 160,000 students established the scale of MOOC potential). Knewton (2008–2019) pioneered adaptive learning at LMS scale, licensing to Pearson, Houghton Mifflin, and Cengage. DreamBox Learning achieved rigorous RCT evidence for adaptive maths platform efficacy. Duolingo launched 2011, applying gamification and spaced repetition at consumer scale; IPO 2021 at $3.7B valuation. COVID-19 pandemic (2020) forced mass adoption: Zoom Education daily users grew from 10M to 300M in three months; Microsoft Teams for Education deployed to 75M students within weeks.
 
   **2020s: AI-Native EdTech and LLM Integration**
-  GPT-3 (2020) demonstrated that generative language models could produce pedagogically plausible tutoring dialogue; GPT-4 (2023) enabled Khanmigo and similar systems to engage in subject-matter Socratic dialogue. ChatGPT's release (November 2022) created acute academic integrity challenges for written assessment, accelerating institutional AI policy development. By 2025–2026, purpose-built LLM-powered tutoring is present in all major EdTech platforms; the field is shifting from narrowly adaptive content sequencing to open-ended conversational instruction at scale.
+  GPT-3 (2020) demonstrated that generative language models [private] produce pedagogically plausible tutoring dialogue; GPT-4 (2023) enabled Khanmigo and similar systems to engage in subject-matter Socratic dialogue. ChatGPT's release (November 2022) created acute academic integrity challenges for written assessment, accelerating institutional AI policy development. By 2025–2026, purpose-built LLM-powered tutoring is present in all major EdTech platforms; the field is shifting from narrowly adaptive content sequencing to open-ended conversational instruction at scale.
 
   ## Key Terminology
 
@@ -573,7 +568,7 @@ public: true
   CAT dynamically selects test items based on running estimate of learner ability using IRT, converging on precise ability estimate with fewer items than fixed-form tests. Graduate Record Examination (GRE), GMAT, and Cambridge Assessment English proficiency tests use CAT. Key algorithms: Maximum Information Criterion (selects item providing maximum Fisher information at current ability estimate), Shadow Testing (selects items subject to content and exposure rate constraints). Exposure rate management prevents item bank over-use and security breaches.
 
   **Academic Integrity in the LLM Era**
-  ChatGPT's release (November 2022) created an acute academic integrity crisis: students could generate plausible essays, code, and problem solutions at zero marginal cost. Institutional responses included:
+  ChatGPT's release (November 2022) created an acute academic integrity crisis: students [private] generate plausible essays, code, and problem solutions at zero marginal cost. Institutional responses included:
   - *AI detection tools*: Turnitin's AI Writing Indicator (claimed 98% detection accuracy at 1% false positive rate in internal testing; independent research shows performance degrades on non-native English writing); GPTZero; Copyleaks — all remain statistically unreliable as standalone integrity tools.
   - *Assessment redesign*: Shift toward in-person assessments, oral vivas, portfolio-based assessment, and process documentation (showing work, annotated drafts) that are harder to delegate to AI than final product submission.
   - *Permitted AI use frameworks*: UK universities increasingly specify permitted AI assistance levels (OfQual-aligned levels 0–4: from no AI use to AI-generated draft revised by student), requiring attribution of AI assistance in assessment submissions.

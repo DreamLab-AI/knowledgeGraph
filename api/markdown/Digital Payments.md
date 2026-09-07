@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Payments
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,72 +200,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-payments:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5ac681ce5a2667bf986c9404f1bc277263dc61a9b92d27bb56325ec1fcb1adc0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross-Border Transfer]]",
-      "resolved": "urn:visionflow:linked:cross-border-transfer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Payment Processor]]",
-      "resolved": "urn:visionflow:linked:payment-processor",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Purchases]]",
-      "resolved": "urn:visionflow:linked:virtual-purchases",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Wallet]]",
-      "resolved": "urn:visionflow:owl:class:digital-wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[E-Commerce]]",
-      "resolved": "urn:visionflow:owl:class:e-commerce",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Transactions]]",
-      "resolved": "urn:visionflow:owl:class:financial-transactions",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:network-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.

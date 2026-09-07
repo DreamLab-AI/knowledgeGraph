@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Healthcare Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,32 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:healthcare-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a01ec4edb528a6bcd5ef5bc53f0aded6fc3fdb86b0b093c50df5701563a148dd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Healthcare Technology encompasses the digital tools, software systems, and AI-driven applications deployed in clinical and health management contexts, including medical imaging, electronic health records, clinical decision support, and telemedicine platforms. It bridges spatial computing, data analytics, and AI to improve diagnostic accuracy, treatment outcomes, and health system efficiency.

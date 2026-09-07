@@ -1,8 +1,3 @@
----
-public: true
----
-
-# python
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -247,5 +242,5 @@ public: true
   - **IEEE / ISO**: Python is referenced in various IEEE software-engineering and AI-ethics standards as an example of high-level interpreted language use in safety-critical and AI systems.
 
 - ### Provenance
-  - sources:: Python Documentation (docs.python.org); Python Software Foundation (python.org); PSF PEP index; NumPy, PyTorch, TensorFlow, Hugging Face official documentation
+  - sources:: Python Documentation (docs.python.org); Python Software Foundation (python.org); PSF PEP [private]; NumPy, PyTorch, TensorFlow, Hugging Face official documentation
   - updated:: 2026-06-13

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - PersistentStorage
----
-
-# Persistent Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,4 +173,3 @@ aliases:
   - In cloud-native environments, persistent storage is a first-class architectural concern because containerised workloads are ephemeral by design. Kubernetes Persistent Volumes and the Container Storage Interface standardise how stateful applications attach durable storage to transient pods. The challenge of providing low-latency persistent storage to containerised stateful services — databases, message queues, ML model stores — drives significant investment in local NVMe storage, storage-class memory, and disaggregated storage fabrics that decouple compute from storage tiers.
 
   - By 2024–2025, the boundaries between persistent storage tiers are blurring. Serverless databases such as Amazon Aurora Serverless and PlanetScale automatically scale storage independently of compute. Vector databases optimised for AI embedding search have become a critical persistent storage category, underpinning retrieval-augmented generation systems. Storage tiering — automatically migrating data between NVMe, HDD, and object storage based on access frequency — is increasingly managed by AI-driven data lifecycle systems. The rise of large language model training at scale has renewed focus on high-throughput distributed file systems and checkpointing strategies that enable fault-tolerant training across thousands of GPUs.
-

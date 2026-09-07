@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tourism Industry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,16 +51,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:virtual-tourism", "label": "Virtual Tourism"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cultural-heritage-xr-experience", "label": "Cultural Heritage XR Experience"},
-      {"@id": "urn:ngm:class:etsi-domain-application-tourism", "label": "ETSI Domain Application + Tourism"}
+      {
+        "@id": "urn:ngm:class:cultural-heritage-xr-experience",
+        "label": "Cultural Heritage XR Experience"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-application-tourism",
+        "label": "ETSI Domain Application + Tourism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Venue-Tethered Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:venue-tethered-immersive-experience",
+        "label": "Venue-Tethered Immersive Experience"
+      }
     ]
   },
   "provenance": {
@@ -75,32 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tourism-industry:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f27b4b1778244ae648206fcdc59f47464d73e4f21ae23f02875b728002291117"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   The Tourism Industry encompasses the businesses, infrastructure, and services facilitating recreational and business travel, including accommodation, transport, attraction management, and destination marketing. In spatial computing contexts, it is a primary adopter of XR, virtual tourism, and location-based immersive experiences to enhance visitor engagement and extend reach beyond physical access.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Self Presence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,28 +63,70 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:presence", "label": "Presence"},
-      {"@id": "urn:ngm:class:immersion", "label": "Immersion"}
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "@id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:spatial-presence", "label": "Spatial Presence"},
-      {"@id": "urn:ngm:class:virtual-presence", "label": "Virtual Presence"},
-      {"@id": "urn:ngm:class:emotional-immersion", "label": "Emotional Immersion"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-presence",
+        "label": "Virtual Presence"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-immersion",
+        "label": "Emotional Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:digital-avatar", "label": "Digital Avatar"}
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:digital-avatar",
+        "label": "Digital Avatar"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
     ]
   },
   "provenance": {
@@ -99,47 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:self-presence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d16e2f16c96e1750007bff39dabd13c47a781adce6432b7d19549e5ef7b6b361"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar Psychology]]",
-      "resolved": "urn:visionflow:linked:avatar-psychology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Presence Research]]",
-      "resolved": "urn:visionflow:linked:presence-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Presence]]",
-      "resolved": "urn:visionflow:owl:class:presence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TelecollaborationDomain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Subjective experience of embodiment and self-location in a mediated environment, feeling that one's virtual representation is an extension of oneself.

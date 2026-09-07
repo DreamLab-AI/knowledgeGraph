@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Narrative Content
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:narrative-content:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9dbd5fac2a0d14909be1292835e35cdeeaa603bb802643f7a5180607cf732cfc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Content]]",
-      "resolved": "urn:visionflow:owl:class:digital-content",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Personalized Virtual Experiences]]",
-      "resolved": "urn:visionflow:owl:class:personalized-virtual-experiences",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital storytelling material that combines video, audio, images, text, and interactive elements to create immersive narrative experiences, enabling audiences to engage with stories through multiple media formats and increasingly through participatory technologies like VR, AR, and interactive video.

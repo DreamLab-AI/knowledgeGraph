@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy Requirements
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Privacy requirements are the documented obligations and constraints a system must satisfy to protect personal data, derived from law, regulation, contracts, and organisational policy. They specify what data may be collected, how it is processed and retained, and the rights afforded to data subjects. They drive system design, data-flow controls, and privacy impact assessments.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"},
-      {"@id": "urn:ngm:class:privacy-impact-assessment-pia", "label": "Privacy Impact Assessment (PIA)"}
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment-pia",
+        "label": "Privacy Impact Assessment (PIA)"
+      }
     ]
   },
   "quality": 0.72

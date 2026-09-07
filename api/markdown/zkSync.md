@@ -1,8 +1,3 @@
----
-public: true
----
-
-# zkSync
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -236,67 +231,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:zk-sync:5dd5631330aa",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e704b7567069cb6cabdc2b757a9a6dad6fb32032e7a8c1ba22d9e43e15438929"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rollup]]",
-      "resolved": "urn:visionflow:linked:rollup",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Zero Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimism]]",
-      "resolved": "urn:visionflow:linked:optimism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Arbitrum]]",
-      "resolved": "urn:visionflow:linked:arbitrum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Polygon]]",
-      "resolved": "urn:visionflow:linked:polygon",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - zkSync is an Ethereum layer-2 scaling network developed by Matter Labs that uses zero-knowledge rollup technology to settle transactions on Ethereum with validity proofs. Its main network, zkSync Era, is a zk-rollup with an EVM-compatible execution environment, allowing many Ethereum smart contracts and tools to be used with minimal changes. By posting succinct proofs that each batch of transactions is valid, the network achieves Ethereum-level settlement security without an optimistic challenge period. zkSync is part of a broader effort to scale Ethereum through zero-knowledge cryptography.

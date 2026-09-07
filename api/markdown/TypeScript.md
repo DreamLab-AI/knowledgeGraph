@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TypeScript
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -153,36 +148,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:type-script:6348933a3b3c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4ce5e3912e70101a60f278a73b4d30f085d209b152de076da4280a75b9085e94"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Programming Language]]",
-      "resolved": "urn:visionflow:linked:programming-language",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Engineering]]",
-      "resolved": "urn:visionflow:linked:software-engineering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

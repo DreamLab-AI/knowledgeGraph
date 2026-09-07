@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Heuristic Methods
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,47 +174,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:heuristic-methods:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d6505ba320905f65e5ff23b3bac8d306cdec820f7bdb3d5ea674b20a18b0c029"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaheuristics]]",
-      "resolved": "urn:visionflow:linked:metaheuristics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Optimization]]",
-      "resolved": "urn:visionflow:linked:optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Planning]]",
-      "resolved": "urn:visionflow:linked:planning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Search Algorithms]]",
-      "resolved": "urn:visionflow:owl:class:search-algorithms",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Heuristic Methods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible. These methods include search heuristics (A*, hill climbing, simulated annealing), rule-of-thumb strategies, and metaheuristics (genetic algorithms, particle swarm optimization). Heuristics trade completeness and optimality for efficiency, making them essential for combinatorial optimization, planning, and decision-making in large search spaces. Modern applications integrate heuristics with learning algorithms, creating adaptive heuristic systems that improve through experience.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Time-Series Database
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

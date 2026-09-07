@@ -1,36 +1,120 @@
----
-public: true
----
-
-# Dead Reckoning
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:dead-reckoning", "@type":"Page", "title":"Dead Reckoning", "vc:slug":"dead-reckoning", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:dead-reckoning",
+  "@type": "Page",
+  "title": "Dead Reckoning",
+  "vc:slug": "dead-reckoning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:dead-reckoning",
-  "@type":"Class",
-  "label":"Dead Reckoning",
-  "definition":"Dead reckoning is a navigation technique that estimates an entity's current position by applying its known speed, heading, and elapsed time to a previously determined position. It relies on relative motion measurements from sensors such as inertial measurement units and wheel encoders rather than external position fixes. Because errors accumulate over time as drift, dead reckoning is typically fused with absolute references like GPS to maintain accuracy.",
-  "domain":"robotics",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:localisation","label":"Localisation"}],
-  "relations":{
-    "dependsOn":[{"@id":"urn:ngm:class:inertial-measurement-unit","label":"Inertial Measurement Unit"},{"@id":"urn:ngm:class:odometry","label":"Odometry"}],
-    "uses":[{"@id":"urn:ngm:class:accelerometer","label":"Accelerometer"},{"@id":"urn:ngm:class:gyroscope","label":"Gyroscope"},{"@id":"urn:ngm:class:velocity","label":"Velocity"}],
-    "enables":[{"@id":"urn:ngm:class:autonomous-navigation","label":"Autonomous Navigation"},{"@id":"urn:ngm:class:pose-estimation","label":"Pose Estimation"}],
-    "requires":[{"@id":"urn:ngm:class:state-estimation","label":"State Estimation"}],
-    "supports":[{"@id":"urn:ngm:class:simultaneous-localisation-and-mapping","label":"Simultaneous Localisation and Mapping"},{"@id":"urn:ngm:class:mobile-robot","label":"Mobile Robot"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:gps","label":"GPS"}],
-    "relatedTo":[{"@id":"urn:ngm:class:sensor-fusion","label":"Sensor Fusion"},{"@id":"urn:ngm:class:kalman-filter","label":"Kalman Filter"},{"@id":"urn:ngm:class:navigation","label":"Navigation"},{"@id":"urn:ngm:class:imu","label":"IMU"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:sensor-fusion","label":"Sensor Fusion"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dead-reckoning",
+  "@type": "Class",
+  "label": "Dead Reckoning",
+  "definition": "Dead reckoning is a navigation technique that estimates an entity's current position by applying its known speed, heading, and elapsed time to a previously determined position. It relies on relative motion measurements from sensors such as inertial measurement units and wheel encoders rather than external position fixes. Because errors accumulate over time as drift, dead reckoning is typically fused with absolute references like GPS to maintain accuracy.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:localisation",
+      "label": "Localisation"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:accelerometer",
+        "label": "Accelerometer"
+      },
+      {
+        "@id": "urn:ngm:class:gyroscope",
+        "label": "Gyroscope"
+      },
+      {
+        "@id": "urn:ngm:class:velocity",
+        "label": "Velocity"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "GPS"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

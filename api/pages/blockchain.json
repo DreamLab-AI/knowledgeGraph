@@ -262,10 +262,6 @@
       "label": "AML KYC Compliance"
     },
     {
-      "slug": "api-integration-health-dashboard",
-      "label": "api-integration-health-dashboard"
-    },
-    {
       "slug": "account-abstraction",
       "label": "Account Abstraction"
     },
@@ -678,16 +674,8 @@
       "label": "Clinical Trials"
     },
     {
-      "slug": "cloud-api-provisioning-process",
-      "label": "cloud-api-provisioning-process"
-    },
-    {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
-    },
-    {
-      "slug": "comfy-ui-for-fashion-and-brands",
-      "label": "comfy-ui-for-fashion-and-brands"
     },
     {
       "slug": "community-governance-model",
@@ -812,10 +800,6 @@
     {
       "slug": "creator-royalty-token",
       "label": "Creator Royalty Token"
-    },
-    {
-      "slug": "credential-gated-presentation-system",
-      "label": "credential-gated-presentation-system"
     },
     {
       "slug": "cross-domain-bridge",
@@ -1812,10 +1796,6 @@
     {
       "slug": "layer-zero",
       "label": "LayerZero"
-    },
-    {
-      "slug": "leopold-aschenbrenner-situational-awareness",
-      "label": "leopold-aschenbrenner-situational-awareness"
     },
     {
       "slug": "licensing-requirements",

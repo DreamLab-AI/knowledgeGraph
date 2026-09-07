@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-107-ai-meeting-assistants
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-107-ai-meeting-assistants:21f07a816f8e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0a966a9c92601d82533eca4631338b3722a69f9f30ac859dad1ccf28a300d6f8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:linked:speech-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:linked:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Meeting Transcription]]",
-      "resolved": "urn:visionflow:linked:meeting-transcription",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Conversational AI]]",
-      "resolved": "urn:visionflow:linked:conversational-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:linked:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI meeting assistants are software agents that join or process meetings to provide transcription, summarisation, action-item extraction and live support using speech recognition and language models.

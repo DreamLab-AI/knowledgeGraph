@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:purchasing-power",
   "domain": "finance",
-  "definition": "Purchasing power is the quantity of goods and services that a unit of currency can buy at a given point in time. It declines as prices rise, so it is inversely related to inflation and is commonly tracked through price indices such as the consumer price index. Real purchasing power, adjusted for price changes, is central to comparing incomes, wages and asset values across time and between economies.",
+  "definition": "Purchasing power is the quantity of goods and services that a unit of currency can buy at a given point in time. It declines as prices rise, so it is inversely related to inflation and is commonly tracked through price indices such as the consumer price [private]. Real purchasing power, adjusted for price changes, is central to comparing incomes, wages and asset values across time and between economies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:finance",

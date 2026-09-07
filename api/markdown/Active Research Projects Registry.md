@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Projects]]
-# Active Research Projects Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -36,7 +30,7 @@ elevatedFrom:: [[Projects]]
   "@id": "urn:ngm:class:active-research-projects-registry",
   "@type": "Class",
   "label": "Active Research Projects Registry",
-  "definition": "An Active Research Projects Registry is a structured, queryable catalogue that maintains authoritative records of ongoing research initiatives, development workstreams, and collaborative projects within an organisation or knowledge graph, capturing metadata such as status, ownership, objectives, dependencies, and timelines. It serves as a single source of truth for portfolio governance, enabling stakeholders to discover, track, and coordinate active work without duplicating effort or losing context across distributed teams. Unlike a static document index, a living registry integrates with project management workflows, version control systems, and knowledge management platforms to reflect real-time project state. It supports prioritisation, resource allocation, and strategic alignment by surfacing the relationships between concurrent initiatives and shared infrastructure.",
+  "definition": "An Active Research Projects Registry is a structured, queryable catalogue that maintains authoritative records of ongoing research initiatives, development workstreams, and collaborative projects within an organisation or knowledge graph, capturing metadata such as status, ownership, objectives, dependencies, and timelines. It serves as a single source of truth for portfolio governance, enabling stakeholders to discover, track, and coordinate active work without duplicating effort or losing context across distributed teams. Unlike a static document [private], a living registry integrates with project management workflows, version control systems, and knowledge management platforms to reflect real-time project state. It supports prioritisation, resource allocation, and strategic alignment by surfacing the relationships between concurrent initiatives and shared infrastructure.",
   "domain": "infrastructure",
   "maturity": "emerging",
   "subClassOf": [
@@ -168,25 +162,6 @@ elevatedFrom:: [[Projects]]
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:projects:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0d194c1e8c634a5980f9bf91e5259882162e0b673d484142179860c7c69a027f"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

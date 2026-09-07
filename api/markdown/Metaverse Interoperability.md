@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Metaverse Interoperability
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:metaverse-interoperability", "@type":"Page", "title":"Metaverse Interoperability", "vc:slug":"metaverse-interoperability", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:metaverse-interoperability",
+  "@type": "Page",
+  "title": "Metaverse Interoperability",
+  "vc:slug": "metaverse-interoperability",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

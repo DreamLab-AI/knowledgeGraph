@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Basel Committee
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -166,4 +161,3 @@ public: true
   - The Committee's influence extends well beyond its 28 member jurisdictions through mutual evaluation processes, peer review, and IMF/World Bank Financial Sector Assessment Programmes that assess compliance with Basel standards. Non-member jurisdictions voluntarily adopt Basel standards to maintain correspondent banking relationships and access to international capital markets.
 
   - By 2024–2025, the Basel Committee's primary attention has turned to three frontier areas: cryptoasset exposures (SCO60, requiring the highest prudential treatment for unbacked cryptoassets held by banks), operational resilience (building on sound practices guidance and DORA alignment), and the use of AI and machine learning in bank risk modelling (consultation papers examining model risk and governance). The transition to the Basel III output floors — being phased in from 2025 to 2030 in most jurisdictions — represents the most significant capital framework change in a decade.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Agent Acquisition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-agent-acquisition",
   "title": "AI Agent Acquisition",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Manus AI", "Meta Platforms"],
+  "vc:outboundWikilinks": [
+    "Manus AI",
+    "Meta Platforms"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-venture-capital", "label": "AI Venture Capital"}, {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-venture-capital",
+        "label": "AI Venture Capital"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

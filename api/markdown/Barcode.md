@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Barcode
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:barcode", "@type":"Page", "title":"Barcode", "vc:slug":"barcode", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:barcode",
+  "@type": "Page",
+  "title": "Barcode",
+  "vc:slug": "barcode",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

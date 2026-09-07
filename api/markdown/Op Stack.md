@@ -1,37 +1,110 @@
----
-public: true
----
-
-# Op Stack
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:op-stack", "@type":"Page", "title":"Op Stack", "vc:slug":"op-stack", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:op-stack",
+  "@type": "Page",
+  "title": "Op Stack",
+  "vc:slug": "op-stack",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:op-stack",
-  "@type":"Class",
-  "label":"Op Stack",
-  "definition":"The OP Stack is an open-source, modular software framework, originally developed for Optimism, used to deploy and operate Ethereum layer-2 networks built on the optimistic rollup model. It standardises the components of a rollup chain, including the sequencer, derivation pipeline, fault-proof system, and bridge contracts, so that many independent chains can share a common technical foundation. Chains built on it interoperate as a federation often described as a superchain.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:optimistic-rollup","label":"Optimistic Rollup"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:sequencer","label":"Sequencer"},{"@id":"urn:ngm:class:fraud-proof","label":"Fraud Proof"}],
-    "uses":[{"@id":"urn:ngm:class:data-availability","label":"Data Availability"},{"@id":"urn:ngm:class:evm-compatibility","label":"EVM Compatibility"}],
-    "dependsOn":[{"@id":"urn:ngm:class:ethereum","label":"Ethereum"}],
-    "requires":[{"@id":"urn:ngm:class:rollup","label":"Rollup"},{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "implements":[{"@id":"urn:ngm:class:layer-2-scaling","label":"Layer-2 Scaling"}],
-    "enables":[{"@id":"urn:ngm:class:optimism","label":"Optimism"},{"@id":"urn:ngm:class:cross-chain-bridge","label":"Cross-Chain Bridge"}],
-    "supports":[{"@id":"urn:ngm:class:modular-blockchain","label":"Modular Blockchain"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:gas-optimization","label":"Gas Optimization"}],
-    "relatedTo":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:op-stack",
+  "@type": "Class",
+  "label": "Op Stack",
+  "definition": "The OP Stack is an open-source, modular software framework, originally developed for Optimism, used to deploy and operate Ethereum layer-2 networks built on the optimistic rollup model. It standardises the components of a rollup chain, including the sequencer, derivation pipeline, fault-proof system, and bridge contracts, so that many independent chains can share a common technical foundation. Chains built on it interoperate as a federation often described as a superchain.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimistic-rollup",
+      "label": "Optimistic Rollup"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:evm-compatibility",
+        "label": "EVM Compatibility"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer-2 Scaling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:modular-blockchain",
+        "label": "Modular Blockchain"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

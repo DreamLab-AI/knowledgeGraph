@@ -1,57 +1,112 @@
----
-public: true
----
-
-# Net Zero
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:net-zero", "@type":"Page", "title":"Net Zero", "vc:slug":"net-zero", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:net-zero",
+  "@type": "Page",
+  "title": "Net Zero",
+  "vc:slug": "net-zero",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:net-zero",
-  "@type":"Class",
-  "label":"Net Zero",
-  "definition":"Net zero is the state in which the greenhouse gases added to the atmosphere by human activity are balanced by an equivalent amount removed, so that net emissions over a given scope and timeframe are zero. Achieving it combines deep decarbonisation across energy, industry, transport, and land use with carbon removal to neutralise residual emissions that cannot yet be eliminated. Net zero is the central organising target of contemporary climate policy, codified in commitments such as the Paris Agreement, and is operationalised by governments and organisations through science-based pathways and reporting.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:sustainability","label":"Sustainability"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:sustainability","label":"Sustainability"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:net-zero",
+  "@type": "Class",
+  "label": "Net Zero",
+  "definition": "Net zero is the state in which the greenhouse gases added to the atmosphere by human activity are balanced by an equivalent amount removed, so that net emissions over a given scope and timeframe are zero. Achieving it combines deep decarbonisation across energy, industry, transport, and land use with carbon removal to neutralise residual emissions that cannot yet be eliminated. Net zero is the central organising target of contemporary climate policy, codified in commitments such as the Paris Agreement, and is operationalised by governments and organisations through science-based pathways and reporting.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:decarbonisation","label":"Decarbonisation"},
-      {"@id":"urn:ngm:class:carbon-offset","label":"Carbon Offset"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:climate-change","label":"Climate Change"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:climate-change",
+        "label": "Climate Change"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:circular-economy","label":"Circular Economy"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:renewable-energy","label":"Renewable Energy"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:paris-agreement","label":"Paris Agreement"},
-      {"@id":"urn:ngm:class:esg","label":"ESG"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
     ],
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:sustainability-reporting","label":"Sustainability Reporting"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:climate-change","label":"Climate Change"},
-      {"@id":"urn:ngm:class:decarbonisation","label":"Decarbonisation"},
-      {"@id":"urn:ngm:class:renewable-energy","label":"Renewable Energy"},
-      {"@id":"urn:ngm:class:carbon-offset","label":"Carbon Offset"},
-      {"@id":"urn:ngm:class:circular-economy","label":"Circular Economy"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:climate-change",
+        "label": "Climate Change"
+      },
+      {
+        "@id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,39 +1,123 @@
----
-public: true
----
-
-# Computation Graph
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:computation-graph", "@type":"Page", "title":"Computation Graph", "vc:slug":"computation-graph", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:computation-graph",
+  "@type": "Page",
+  "title": "Computation Graph",
+  "vc:slug": "computation-graph",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:computation-graph",
-  "@type":"Class",
-  "label":"Computation Graph",
-  "definition":"A Computation Graph is a directed graph in which nodes represent operations or variables and edges represent the flow of data (typically tensors) between them. It is the central abstraction in modern machine learning frameworks, where a model's forward pass is expressed as a graph and gradients are computed by traversing it in reverse via automatic differentiation. Graphs may be built statically ahead of execution or dynamically as code runs, and they enable optimisation, scheduling and hardware acceleration.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:directed-acyclic-graph","label":"Directed Acyclic Graph"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:tensor","label":"Tensor"}],
-    "requires":[{"@id":"urn:ngm:class:automatic-differentiation","label":"Automatic Differentiation"}],
-    "enables":[{"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"},{"@id":"urn:ngm:class:gpu-acceleration","label":"GPU Acceleration"}],
-    "supports":[{"@id":"urn:ngm:class:model-training","label":"Model Training"},{"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"}],
-    "uses":[{"@id":"urn:ngm:class:directed-acyclic-graph","label":"Directed Acyclic Graph"}],
-    "partOf":[{"@id":"urn:ngm:class:deep-learning-framework","label":"Deep Learning Framework"}],
-    "implements":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:onnx","label":"ONNX"}],
-    "dependsOn":[{"@id":"urn:ngm:class:machine-learning-discipline-framework","label":"Machine Learning Framework"}],
-    "relatedTo":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:tensor-flow","label":"TensorFlow"},{"@id":"urn:ngm:class:py-torch","label":"PyTorch"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:computation-graph",
+  "@type": "Class",
+  "label": "Computation Graph",
+  "definition": "A Computation Graph is a directed graph in which nodes represent operations or variables and edges represent the flow of data (typically tensors) between them. It is the central abstraction in modern machine learning frameworks, where a model's forward pass is expressed as a graph and gradients are computed by traversing it in reverse via automatic differentiation. Graphs may be built statically ahead of execution or dynamically as code runs, and they enable optimisation, scheduling and hardware acceleration.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:directed-acyclic-graph",
+      "label": "Directed Acyclic Graph"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:tensor-flow",
+        "label": "TensorFlow"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:dataflow-graph","label":"Dataflow Graph"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:dataflow-graph",
+      "label": "Dataflow Graph"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

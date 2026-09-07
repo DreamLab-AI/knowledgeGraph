@@ -1,38 +1,116 @@
----
-public: true
----
-
-# Exchange Custody
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:exchange-custody", "@type":"Page", "title":"Exchange Custody", "vc:slug":"exchange-custody", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:exchange-custody",
+  "@type": "Page",
+  "title": "Exchange Custody",
+  "vc:slug": "exchange-custody",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:exchange-custody",
-  "@type":"Class",
-  "label":"Exchange Custody",
-  "definition":"Exchange custody is the model in which a cryptocurrency exchange or platform holds and controls the private keys to users' digital assets on their behalf, rather than users self-custodying their own keys. The custodian operates wallets, manages security and reconciles internal ledgers crediting customers' balances. This arrangement simplifies user experience and trading but concentrates risk, since users rely on the exchange's solvency, controls and honesty rather than holding their keys directly.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:institutional-custody","label":"Institutional Custody"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:cryptocurrency-exchange","label":"Cryptocurrency Exchange"}],
-    "uses":[{"@id":"urn:ngm:class:hot-wallet","label":"Hot Wallet"},{"@id":"urn:ngm:class:cold-storage","label":"Cold Storage"},{"@id":"urn:ngm:class:multi-signature-wallet","label":"Multi-Signature Wallet"}],
-    "requires":[{"@id":"urn:ngm:class:key-management","label":"Key Management"}],
-    "supports":[{"@id":"urn:ngm:class:cryptocurrency-exchange","label":"Cryptocurrency Exchange"}],
-    "enables":[{"@id":"urn:ngm:class:digital-asset","label":"Digital Asset"}],
-    "dependsOn":[{"@id":"urn:ngm:class:key-management","label":"Key Management"}],
-    "implements":[{"@id":"urn:ngm:class:institutional-custody","label":"Institutional Custody"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:self-custody","label":"Self Custody"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:multi-signature-wallet","label":"Multi-Signature Wallet"}],
-    "relatedTo":[{"@id":"urn:ngm:class:institutional-custody","label":"Institutional Custody"},{"@id":"urn:ngm:class:cryptocurrency-exchange","label":"Cryptocurrency Exchange"},{"@id":"urn:ngm:class:digital-asset","label":"Digital Asset"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:exchange-custody",
+  "@type": "Class",
+  "label": "Exchange Custody",
+  "definition": "Exchange custody is the model in which a cryptocurrency exchange or platform holds and controls the private keys to users' digital assets on their behalf, rather than users self-custodying their own keys. The custodian operates wallets, manages security and reconciles internal ledgers crediting customers' balances. This arrangement simplifies user experience and trading but concentrates risk, since users rely on the exchange's solvency, controls and honesty rather than holding their keys directly.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:institutional-custody",
+      "label": "Institutional Custody"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hot-wallet",
+        "label": "Hot Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self Custody"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

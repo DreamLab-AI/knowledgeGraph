@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ETSI Domain AI Human Interface
----
-
-# ETSI Domain AI + Human Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,71 +93,6 @@ aliases:
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-ai-human-interface:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:685b0907b0977c4b94716b0da2100a80f73f7244fcd2075ef99ebd715162b27f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Conversational AI Classification]]",
-      "resolved": "urn:visionflow:linked:conversational-ai-classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI Domain Taxonomy]]",
-      "resolved": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GS MEC]]",
-      "resolved": "urn:visionflow:linked:etsi-gs-mec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Intelligent UX Categorization]]",
-      "resolved": "urn:visionflow:linked:intelligent-ux-categorization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-research-area",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Domain AI]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InteractionDomain]]",
-      "resolved": "urn:visionflow:owl:class:sc-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

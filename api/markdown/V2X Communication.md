@@ -1,10 +1,14 @@
----
-public: true
----
-
-# V2X Communication
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:v2x-communication", "@type":"Page", "title":"V2X Communication", "vc:slug":"v2x-communication", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:v2x-communication",
+  "@type": "Page",
+  "title": "V2X Communication",
+  "vc:slug": "v2x-communication",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -121,7 +125,7 @@ public: true
 	- It extends an [[Autonomous Vehicle]]'s perception beyond onboard [[Sensor Fusion]] by sharing position, intent, and hazard information.
 	- It is a key enabler of cooperative [[Autonomous Driving]] and intelligent transport within the [[Smart City]].
 - ### Overview
-	- Onboard sensors see only line of sight; V2X adds a non-line-of-sight channel so a vehicle can learn about a hidden hazard, a stopped car around a bend, or a changing signal phase before its own sensors could.
+	- Onboard sensors see only line of sight; V2X adds a non-line-of-sight channel so a vehicle can learn about a hidden hazard, a stopped car around a bend, or a changing signal phase before its own sensors [private].
 	- It spans several link types: vehicle-to-vehicle, vehicle-to-infrastructure, vehicle-to-pedestrian, and vehicle-to-network, collectively abbreviated V2X.
 	- Two technology families compete and coexist: cellular C-V2X (evolving with 5G) and dedicated short-range radio. Both broadcast standardised safety messages with low latency.
 	- Edge computing nodes aggregate and redistribute V2X data, enabling cooperative manoeuvres and city-scale traffic optimisation.

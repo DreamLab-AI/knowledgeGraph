@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hidden Dimension
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:parameter-count", "label": "Parameter Count"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hidden-dimension:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0b42c43ff930cdef89be8fb732f257f08d1c18cb7f187b542deb762751f48392"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The dimensionality of the internal representations in a neural network, determining the capacity of each layer to encode information, typically denoted as d_model in transformers.

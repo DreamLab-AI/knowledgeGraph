@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Engagement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "User Engagement is the set of qualitative and quantitative dimensions that characterise the depth, frequency, and quality of a person's interaction with a digital product, service, or community. High engagement reflects meaningful value exchange: users return voluntarily, invest attention and effort, and develop lasting behaviours around the product. Engagement metrics—session duration, interaction depth, return rate, and social sharing—serve as proxies for value delivered and are key inputs to product development prioritisation and business model viability. Ethical engagement design balances compelling interaction patterns against the risk of exploiting psychological vulnerabilities through addictive mechanics or manipulative nudging.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:user-experience", "label": "User Experience"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:user-experience",
+      "label": "User Experience"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
-      {"@id": "urn:ngm:class:social-platform", "label": "Social Platform"},
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:social-platform",
+        "label": "Social Platform"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:loyalty-programs", "label": "Loyalty Programs"},
-      {"@id": "urn:ngm:class:recommendation-systems", "label": "Recommendation Systems"},
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}
+      {
+        "@id": "urn:ngm:class:loyalty-programs",
+        "label": "Loyalty Programs"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-content", "label": "Digital Content"},
-      {"@id": "urn:ngm:class:natural-interaction", "label": "Natural Interaction"},
-      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"}
+      {
+        "@id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "@id": "urn:ngm:class:natural-interaction",
+        "label": "Natural Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
     ]
   },
   "quality": 0.8

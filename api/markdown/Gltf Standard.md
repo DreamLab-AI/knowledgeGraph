@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gltf Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,42 +206,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gltf-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:846c88a8c22ae4a3e9bca2678364be22268b9a2ef5f6c80d43ea0b424ab025b2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Asset Standard]]",
-      "resolved": "urn:visionflow:linked:3-d-asset-standard",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-Platform 3D Content]]",
-      "resolved": "urn:visionflow:linked:cross-platform-3-d-content",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Graphics Library Transmission Format (glTF) is a royalty-free, open interoperable 3D asset format developed by Khronos Group, designed for efficient runtime transmission and loading of 3D scenes across native and web-based engines, serving as a foundational standard for metaverse asset interoperability.

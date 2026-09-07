@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Navigation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "User navigation is the set of interaction techniques and interface affordances that let people move through and orient themselves within a digital or spatial environment, from menus and links to locomotion in 3D space. In immersive contexts it covers teleportation, smooth locomotion and wayfinding cues, while in 2D it covers information architecture and discovery flows. Effective navigation reduces cognitive load and supports search and content discovery.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:search-discovery", "label": "Search Discovery"}, {"@id": "urn:ngm:class:3-d-user-interface", "label": "3D User Interface"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:search-discovery",
+        "label": "Search Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      }
+    ]
   },
   "quality": 0.72
 }

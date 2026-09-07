@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Application-Specific Blockchain
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:application-specific-blockchain", "@type":"Page", "title":"Application-Specific Blockchain", "vc:slug":"application-specific-blockchain", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:application-specific-blockchain",
+  "@type": "Page",
+  "title": "Application-Specific Blockchain",
+  "vc:slug": "application-specific-blockchain",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

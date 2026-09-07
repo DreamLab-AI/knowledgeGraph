@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Parametric Insurance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -122,13 +117,13 @@ public: true
   - Core related concepts: [[Decentralized Finance]], [[Blockchain Oracle]], [[Smart Contract]], [[Insurance]], [[Oracle]].
 
 - ### Overview
-  - Parametric insurance separates the payout decision from loss verification by tying it to an objective, externally measurable index. This makes it well suited to perils that are hard or slow to assess individually, and to on-chain automation where smart contracts cannot themselves observe the physical world. The model trades basis risk, the gap between actual loss and the parameter-driven payout, for speed, transparency, and low administrative cost.
+  - Parametric insurance separates the payout decision from loss verification by tying it to an objective, externally measurable [private]. This makes it well suited to perils that are hard or slow to assess individually, and to on-chain automation where smart contracts cannot themselves observe the physical world. The model trades basis risk, the gap between actual loss and the parameter-driven payout, for speed, transparency, and low administrative cost.
 
 - ### Mechanisms
-  - Trigger definition: a measurable index and threshold are agreed in advance, removing ambiguity and the need for post-event loss adjustment.
+  - Trigger definition: a measurable [private] and threshold are agreed in advance, removing ambiguity and the need for post-event loss adjustment.
   - Oracle integration: smart contracts rely on blockchain oracles to deliver trustworthy external data such as weather, seismic, or flight feeds.
   - Automated settlement: when the oracle reports a trigger breach, the contract disburses the agreed payout immediately and verifiably.
-  - Basis risk: payouts may diverge from real losses because they track a proxy index rather than individual circumstances.
+  - Basis risk: payouts may diverge from real losses because they track a proxy [private] rather than individual circumstances.
 
 - ### Applications
   - Crop and weather cover that pays farmers when rainfall or temperature crosses agreed bounds.

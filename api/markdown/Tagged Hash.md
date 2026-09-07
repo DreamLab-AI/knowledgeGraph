@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Tagged Hash
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:tagged-hash", "@type":"Page", "title":"Tagged Hash", "vc:slug":"tagged-hash", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:tagged-hash",
+  "@type": "Page",
+  "title": "Tagged Hash",
+  "vc:slug": "tagged-hash",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,42 +20,108 @@ public: true
   "definition": "A Tagged Hash is a domain-separated hash construction formalised in BIP-340 and used throughout Bitcoin's Taproot/Schnorr signature ecosystem, computed as SHA256(SHA256(tag) || SHA256(tag) || msg), where tag is a human-readable string identifying the protocol context. The double-hashing of the tag prefix creates a unique domain separator that prevents cross-protocol hash collisions — ensuring that a hash computed in one context (e.g. key tweaking) cannot be misinterpreted or replayed in another context (e.g. signature nonce generation). Tagged hashes improve security proofs and simplify protocol composition by making each domain's hash computationally distinct.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}, {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:domain-separation", "label": "Domain Separation"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:domain-separation",
+        "label": "Domain Separation"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"}
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collision-resistance", "label": "Collision Resistance"},
-      {"@id": "urn:ngm:class:security-proof", "label": "Security Proof"},
-      {"@id": "urn:ngm:class:protocol-composition", "label": "Protocol Composition"}
+      {
+        "@id": "urn:ngm:class:collision-resistance",
+        "label": "Collision Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:security-proof",
+        "label": "Security Proof"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-composition",
+        "label": "Protocol Composition"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bip-340-schnorr-keypair", "label": "BIP-340 Schnorr Keypair"},
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"}
+      {
+        "@id": "urn:ngm:class:bip-340-schnorr-keypair",
+        "label": "BIP-340 Schnorr Keypair"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"}
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:hmac", "label": "HMAC"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:key-tweaking", "label": "Key Tweaking"},
-      {"@id": "urn:ngm:class:tapscript", "label": "Tapscript"}
+      {
+        "@id": "urn:ngm:class:key-tweaking",
+        "label": "Key Tweaking"
+      },
+      {
+        "@id": "urn:ngm:class:tapscript",
+        "label": "Tapscript"
+      }
     ]
   },
   "quality": 0.62,

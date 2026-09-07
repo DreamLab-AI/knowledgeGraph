@@ -1,8 +1,3 @@
----
-public: true
----
-
-# retroactive public goods funding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -217,7 +212,7 @@ public: true
     - Anticipated RetroPGF income cannot be easily collateralised or discounted, though [[DeFi]] lending protocols have explored RetroPGF-backed loans.
   - **Round capture and governance risk**
     - Repeated rounds create incumbent advantages as established projects learn to optimise for evaluation criteria rather than genuine impact.
-    - Governance capture of the badge holder selection process could direct funds toward insider networks.
+    - Governance capture of the badge holder selection process [private] direct funds toward insider networks.
 
 - ### Relationships
   - partOf:: [[Public Goods Funding]]

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robot RB-0001
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Robot RB-0001 is an identifier-class for a reference mobile-manipulator robot platform that combines a mobile base with an articulated manipulator arm. As a composite robot, it integrates locomotion and manipulation subsystems so the system can both navigate an environment and perform physical tasks within it. It serves as a canonical example linking mobile-robot and manipulator capabilities.",
   "domain": "robotics",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}, {"@id": "urn:ngm:class:manipulator", "label": "Manipulator"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      }
+    ]
   },
   "quality": 0.72
 }

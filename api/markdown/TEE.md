@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TEE
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tee:c4b8650808fd",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0f03366df69de0d6258a5dac8edd1088701a791eca6486ecedf55da0d5153a84"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware]]",
-      "resolved": "urn:visionflow:linked:hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Confidentiality]]",
-      "resolved": "urn:visionflow:linked:data-confidentiality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trusted Execution Environment]]",
-      "resolved": "urn:visionflow:linked:trusted-execution-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A trusted execution environment, a secure area of a processor that isolates code and data so that they are protected from the rest of the system, including a compromised operating system. It provides confidentiality and integrity for sensitive computation.

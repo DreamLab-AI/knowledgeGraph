@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Splicing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

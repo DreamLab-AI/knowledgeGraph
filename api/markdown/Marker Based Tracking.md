@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Marker-Based Tracking
----
-
-# Marker Based Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,42 +69,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:marker-based-tracking:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0f21abf55c6f0a06b63efe2c82f44b7cbf0e0c0f27ba733c0321dabca25e72f2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AR Content Positioning]]",
-      "resolved": "urn:visionflow:linked:ar-content-positioning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Tracking Technology]]",
-      "resolved": "urn:visionflow:owl:class:spatial-tracking-technology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AR and VR tracking technique that uses predefined visual patterns such as QR codes, April tags, ArUco markers, and fiducial markers to determine device position and orientation for accurate digital content overlay.

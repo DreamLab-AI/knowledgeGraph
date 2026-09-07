@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Service Robotics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,27 @@ public: true
   "definition": "Service robotics is the branch of robotics concerned with robots that perform useful tasks for humans outside industrial manufacturing, including cleaning, logistics, hospitality, healthcare, and domestic assistance. These systems emphasise autonomous navigation in unstructured human environments, safe interaction, and task planning under uncertainty. It is a rapidly growing application domain of mobile and collaborative robots.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}, {"@id": "urn:ngm:class:service-robot", "label": "Service Robot"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:service-robot",
+      "label": "Service Robot"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:robotics-core-concepts", "label": "RoboticsCoreConcepts"}, {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robotics-core-concepts",
+        "label": "RoboticsCoreConcepts"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
+    ]
   },
   "quality": 0.72
 }

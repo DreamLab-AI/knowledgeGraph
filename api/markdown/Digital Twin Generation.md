@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Twin Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -127,72 +122,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-twin-generation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:afc29d05df3253a1fb4e1e2d4c5d9423dbfcfaa44acadaebaba3690be4133cb9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Capture]]",
-      "resolved": "urn:visionflow:linked:3-d-capture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Training]]",
-      "resolved": "urn:visionflow:linked:ai-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mass Digitization]]",
-      "resolved": "urn:visionflow:linked:mass-digitization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Rapid Prototyping]]",
-      "resolved": "urn:visionflow:linked:rapid-prototyping",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Automated Modeling]]",
-      "resolved": "urn:visionflow:owl:class:automated-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:owl:class:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications.

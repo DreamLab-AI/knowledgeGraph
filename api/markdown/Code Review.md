@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Code Review
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -154,46 +149,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:code-review:717d32bb32db",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fc7e4360ef4a816d38ac6ee676f5dd3ab7736a5f43c4e1de94a763f4d24c417c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Version Control]]",
-      "resolved": "urn:visionflow:linked:version-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Development]]",
-      "resolved": "urn:visionflow:linked:software-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Testing]]",
-      "resolved": "urn:visionflow:linked:software-testing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Engineering]]",
-      "resolved": "urn:visionflow:linked:software-engineering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

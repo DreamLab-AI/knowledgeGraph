@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DAO Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,37 +186,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dao-governance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:71aa001af0ef7f09506e4e57f429194b7d9cd7fd42e07b050e6a55aee8c27d63"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralised Decision-Making]]",
-      "resolved": "urn:visionflow:linked:decentralised-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - DAO governance refers to the decision-making structures and voting mechanisms within Decentralised Autonomous Organisations, enabling token holders to collectively govern protocol parameters, treasury allocations, and organisational direction through on-chain and off-chain processes. DAOs are non-hierarchical organisations that perform and record routine tasks on peer-to-peer, cryptographically secure networks, with governance rules encoded as smart contracts that automatically execute approved decisions.

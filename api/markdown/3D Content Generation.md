@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Content Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -208,57 +203,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-d-content-generation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:51c0e5ef7591702c8c4d472804e65247217bbef62b25f4282a5fbd57bc733afc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:owl:class:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Rendering]]",
-      "resolved": "urn:visionflow:owl:class:neural-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Procedural Generation]]",
-      "resolved": "urn:visionflow:owl:class:procedural-generation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - 3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven methods. This encompasses procedural generation techniques, neural rendering, generative adversarial networks (GANs) for 3D model synthesis, and automated texture mapping. Modern approaches leverage deep learning architectures such as NeRF (Neural Radiance Fields) and 3D GANs to generate photorealistic 3D scenes, objects, and environments from minimal input data. Applications span game development, virtual reality, digital twins, and automated CAD design systems.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Time Of Flight
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,40 +20,100 @@ public: true
   "definition": "Time of Flight (ToF) is a sensing technique that determines the distance to an object by measuring the elapsed time between the emission of a signal — typically light, sound, or radio waves — and the detection of its reflection. In depth sensing, ToF cameras emit pulsed or modulated infrared light and record the per-pixel round-trip delay to construct a dense depth map. ToF sensors are widely deployed in robotics, autonomous vehicles, augmented reality, and gesture recognition due to their ability to produce real-time depth data without ambient light dependency.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}, {"@id": "urn:ngm:class:proximity-sensor", "label": "Proximity Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:proximity-sensor",
+      "label": "Proximity Sensor"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:infrared-sensing", "label": "Infrared Sensing"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"}
+      {
+        "@id": "urn:ngm:class:infrared-sensing",
+        "label": "Infrared Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:obstacle-detection", "label": "Obstacle Detection"}
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-detection",
+        "label": "Obstacle Detection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:gesture-recognition", "label": "Gesture Recognition"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"},
-      {"@id": "urn:ngm:class:structured-light", "label": "Structured Light"}
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "@id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:depth-map", "label": "Depth Map"}
+      {
+        "@id": "urn:ngm:class:depth-map",
+        "label": "Depth Map"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "quality": 0.62,

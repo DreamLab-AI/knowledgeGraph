@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mobile Robotics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,50 +20,137 @@ public: true
   "definition": "Mobile robotics is the engineering and scientific discipline concerned with the design, construction, and programming of robots capable of autonomous locomotion through unstructured or semi-structured physical environments. It integrates mechanical locomotion systems (wheeled, tracked, legged, aerial, aquatic), onboard sensor suites, simultaneous localisation and mapping (SLAM) for spatial state estimation, motion planning for collision-free trajectory generation, and control systems for execution — all without continuous human tele-operation. The field is fundamentally interdisciplinary, drawing on computer science, control theory, mechanical engineering, and artificial intelligence, and underpins major commercial domains including warehouse automation, autonomous vehicles, agricultural robotics, and planetary exploration.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}, {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:logistics-automation", "label": "Logistics Automation"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:precision-agriculture", "label": "Precision Agriculture"},
-      {"@id": "urn:ngm:class:search-and-rescue-robotics", "label": "Search and Rescue Robotics"},
-      {"@id": "urn:ngm:class:planetary-exploration", "label": "Planetary Exploration"}
+      {
+        "@id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      },
+      {
+        "@id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:planetary-exploration",
+        "label": "Planetary Exploration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:localisation", "label": "Localisation"},
-      {"@id": "urn:ngm:class:occupancy-mapping", "label": "Occupancy Mapping"},
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"}
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:occupancy-mapping",
+        "label": "Occupancy Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning-for-robotics", "label": "Reinforcement Learning for Robotics"},
-      {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
-      {"@id": "urn:ngm:class:drone", "label": "Drone"},
-      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:drone",
+        "label": "Drone"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-3691-4", "label": "ISO 3691-4"},
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"}
+      {
+        "@id": "urn:ngm:class:iso-3691-4",
+        "label": "ISO 3691-4"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:autonomous-mobile-robot", "label": "Autonomous Mobile Robot"}
+    {
+      "@id": "urn:ngm:class:autonomous-mobile-robot",
+      "label": "Autonomous Mobile Robot"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Centrifuge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -78,42 +73,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:centrifuge:0e0103a79148",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:49509427107791eed6039a96410932e838fe09a74fc79f83d804474bd3d113ff"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Tokenisation]]",
-      "resolved": "urn:visionflow:linked:asset-tokenisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Centrifuge is a decentralised finance protocol that brings real-world assets such as invoices and loans on chain so they can be used as collateral for financing.

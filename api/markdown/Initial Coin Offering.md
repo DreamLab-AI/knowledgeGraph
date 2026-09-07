@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Initial Coin Offering
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:initial-coin-offering", "@type":"Page", "title":"Initial Coin Offering", "vc:slug":"initial-coin-offering", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:initial-coin-offering",
+  "@type": "Page",
+  "title": "Initial Coin Offering",
+  "vc:slug": "initial-coin-offering",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,52 +21,113 @@ public: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:cryptocurrency-token", "label": "Cryptocurrency Token" }
+    {
+      "@id": "urn:ngm:class:cryptocurrency-token",
+      "label": "Cryptocurrency Token"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:token-sale", "label": "Token Sale" },
-      { "@id": "urn:ngm:class:whitepaper", "label": "Whitepaper" }
+      {
+        "@id": "urn:ngm:class:token-sale",
+        "label": "Token Sale"
+      },
+      {
+        "@id": "urn:ngm:class:whitepaper",
+        "label": "Whitepaper"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:token-economics", "label": "Token Economics" }
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:smart-contract", "label": "Smart Contract" },
-      { "@id": "urn:ngm:class:erc-20", "label": "ERC-20" }
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:decentralised-fundraising", "label": "Decentralised Fundraising" },
-      { "@id": "urn:ngm:class:capital-formation", "label": "Capital Formation" }
+      {
+        "@id": "urn:ngm:class:decentralised-fundraising",
+        "label": "Decentralised Fundraising"
+      },
+      {
+        "@id": "urn:ngm:class:capital-formation",
+        "label": "Capital Formation"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:utility-token", "label": "Utility Token" },
-      { "@id": "urn:ngm:class:protocol-bootstrapping", "label": "Protocol Bootstrapping" }
+      {
+        "@id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-bootstrapping",
+        "label": "Protocol Bootstrapping"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:ethereum", "label": "Ethereum" }
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:cryptocurrency-wallet", "label": "Cryptocurrency Wallet" }
+      {
+        "@id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:initial-public-offering", "label": "Initial Public Offering" },
-      { "@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering" }
+      {
+        "@id": "urn:ngm:class:initial-public-offering",
+        "label": "Initial Public Offering"
+      },
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:initial-exchange-offering", "label": "Initial Exchange Offering" },
-      { "@id": "urn:ngm:class:initial-dex-offering", "label": "Initial DEX Offering" }
+      {
+        "@id": "urn:ngm:class:initial-exchange-offering",
+        "label": "Initial Exchange Offering"
+      },
+      {
+        "@id": "urn:ngm:class:initial-dex-offering",
+        "label": "Initial DEX Offering"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:crowdfunding", "label": "Crowdfunding" },
-      { "@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation" }
+      {
+        "@id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:ico", "label": "ICO" }
+    {
+      "@id": "urn:ngm:class:ico",
+      "label": "ICO"
+    }
   ],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

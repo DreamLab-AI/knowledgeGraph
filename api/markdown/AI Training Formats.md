@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Training Formats
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-training-formats",
   "title": "AI Training Formats",
   "vc:public": true,
-  "vc:outboundWikilinks": ["DataCamp Survey", "Enterprise Leadership"],
+  "vc:outboundWikilinks": [
+    "DataCamp Survey",
+    "Enterprise Leadership"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-adoption-metrics", "label": "AI Adoption Metrics"}, {"@id": "urn:ngm:class:enterprise-leadership", "label": "Enterprise Leadership"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption-metrics",
+        "label": "AI Adoption Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-leadership",
+        "label": "Enterprise Leadership"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

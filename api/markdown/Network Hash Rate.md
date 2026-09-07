@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - NetworkHashRate
----
-
-# Network Hash Rate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -89,19 +82,46 @@ aliases:
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"},
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
-      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "@id": "urn:ngm:class:selfish-mining",
+        "label": "Selfish Mining"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:mining", "label": "Mining"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
     ]
   },
   "quality": 0.8,
@@ -112,62 +132,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:network-hash-rate:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c4fe42b641ea208515e24ec62291f67992ecdd444f309eb5881929f28301a416"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-protocol-and-consensus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusProtocol]]",
-      "resolved": "urn:visionflow:owl:class:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ProtocolLayer]]",
-      "resolved": "urn:visionflow:owl:class:protocol-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Total computational power within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

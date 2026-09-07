@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Base64URL Encoding
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

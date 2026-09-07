@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Authentication Service
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -219,67 +214,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:authentication-service:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:41bcf27bb47e46dbb940f3e2e4f7b52e7e2fcf5bf64f1908983041b5e64994a1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Authorisation]]",
-      "resolved": "urn:visionflow:linked:authorisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Core Technology]]",
-      "resolved": "urn:visionflow:linked:core-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Credential Validation]]",
-      "resolved": "urn:visionflow:linked:credential-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Security Service]]",
-      "resolved": "urn:visionflow:linked:security-service",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Single Sign-On]]",
-      "resolved": "urn:visionflow:linked:single-sign-on",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:owl:class:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Session Management]]",
-      "resolved": "urn:visionflow:owl:class:session-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An authentication service is a system component that verifies the identity of users, devices, or applications attempting to access protected resources. It validates credentials against stored identity information and issues tokens or assertions that enable authorised access across applications and services, forming the foundation of secure identity management in enterprise systems.

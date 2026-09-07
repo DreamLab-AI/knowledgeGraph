@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:metaverse-core-concepts",
   "domain": "spatial-computing",
-  "definition": "Metaverse core concepts is an index class grouping the foundational building blocks of persistent shared virtual spaces: immersive rendering technologies (Augmented Reality, Spatial Computing, Haptic Feedback), virtual environments (Virtual World, Social VR, Digital Twin), digital identity and economic primitives (Digital Avatar, Virtual Asset, Virtual Economy), and cross-platform integration enablers (Interoperability). Together these concepts define the design space for metaverse platforms and standards such as those developed by the Metaverse Standards Forum.",
+  "definition": "Metaverse core concepts is an [private] class grouping the foundational building blocks of persistent shared virtual spaces: immersive rendering technologies (Augmented Reality, Spatial Computing, Haptic Feedback), virtual environments (Virtual World, Social VR, Digital Twin), digital identity and economic primitives (Digital Avatar, Virtual Asset, Virtual Economy), and cross-platform integration enablers (Interoperability). Together these concepts define the design space for metaverse platforms and standards such as those developed by the Metaverse Standards Forum.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-platform-and-environment",

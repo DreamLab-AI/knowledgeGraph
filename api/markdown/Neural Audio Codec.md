@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Neural Audio Codec
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,22 @@ public: true
   "definition": "A neural audio codec is a learned compression model that encodes audio into a compact discrete or latent representation and decodes it back to a waveform using neural networks. Unlike hand-designed codecs, it is trained end-to-end with reconstruction and adversarial objectives to maximise perceptual quality at very low bitrates. The discrete tokens it produces also serve as a representation for generative audio and speech models.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}, {"@id": "urn:ngm:class:ai-model-architecture", "label": "AI Model Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:music-and-audio", "label": "Music and Audio"}
+      {
+        "@id": "urn:ngm:class:music-and-audio",
+        "label": "Music and Audio"
+      }
     ]
   },
   "quality": 0.72

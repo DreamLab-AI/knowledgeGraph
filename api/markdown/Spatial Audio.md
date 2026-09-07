@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SpatialAudio
----
-
-# Spatial Audio
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,42 +180,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-audio:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dd2e5ef1f1bb719b2f158bc8267a21bb5f471765f9c1d7fe7cbe905664ef8c72"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Audio Technology]]",
-      "resolved": "urn:visionflow:owl:class:audio-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Immersive Experiences]]",
-      "resolved": "urn:visionflow:owl:class:immersive-experiences",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Three-dimensional sound technology that uses head-related transfer functions (HRTF) and object-based mixing to position audio sources in 3D space around the listener, creating immersive auditory experiences that replicate natural sound perception.

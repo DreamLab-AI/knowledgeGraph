@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safetensors Format
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,14 +20,28 @@ public: true
   "definition": "Safetensors is a file format for storing tensors — the weight matrices of machine-learning models — designed to be safe, fast, and simple. Unlike Python pickle-based formats, safetensors stores only raw tensor data and a JSON header describing shapes, dtypes, and offsets, so loading a file cannot execute arbitrary code. The layout supports zero-copy and memory-mapped loading, enabling rapid model initialisation and lazy access to individual tensors. Developed by Hugging Face, it has become a de facto standard for distributing open model weights.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-format", "label": "Data Format"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-format",
+      "label": "Data Format"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:safetensors", "label": "Safetensors"},
-      {"@id": "urn:ngm:class:data-serialization", "label": "Data Serialization"}
+      {
+        "@id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "@id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"}
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
     ]
   },
   "quality": 0.78
@@ -44,6 +53,6 @@ public: true
 - ### Relationships
   - The format is the serialisation defined by the [[Safetensors]] library and is a specialised form of [[Data Serialization]] for numeric tensors. Its zero-copy memory-mapped loading directly enables fast, secure [[Model Deployment]].
 - ### Content
-  - The format's safety guarantee derives from its refusal to embed executable objects: a safetensors file is a header plus a contiguous binary buffer, parsed without invoking any deserialisation machinery that could run code. This eliminates the arbitrary-code-execution risk inherent in pickle-based checkpoints.
+  - The format's safety guarantee derives from its refusal to embed executable objects: a safetensors file is a header plus a contiguous binary buffer, parsed without invoking any deserialisation machinery that [private] run code. This eliminates the arbitrary-code-execution risk inherent in pickle-based checkpoints.
 
   - Performance comes from the offset-indexed layout, which permits memory-mapping the file and loading individual tensors lazily and without copying. This makes safetensors particularly well suited to large models and to environments where only a subset of weights is needed at a time.

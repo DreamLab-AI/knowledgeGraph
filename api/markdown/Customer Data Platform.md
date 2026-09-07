@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Customer Data Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,41 +152,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:customer-data-platform:050f71489820",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e64264581dae9869f02c24faa75a7b26aa1a7351922f87f84b21f870dcedfe2f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Integration]]",
-      "resolved": "urn:visionflow:linked:data-integration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Management]]",
-      "resolved": "urn:visionflow:linked:data-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

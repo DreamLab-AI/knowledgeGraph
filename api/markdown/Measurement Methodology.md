@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Measurement Methodology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A measurement methodology is a defined, repeatable procedure for quantifying a property or performance characteristic, specifying scope, units, data sources, and calculation rules. It ensures that results are consistent, comparable, and auditable across observers and over time. Rigorous methodology is the precondition for trustworthy indicators, benchmarks, and standards-based reporting.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:carbon-footprint-indicator", "label": "Carbon Footprint Indicator"}, {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:carbon-footprint-indicator",
+        "label": "Carbon Footprint Indicator"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      }
+    ]
   },
   "quality": 0.72
 }

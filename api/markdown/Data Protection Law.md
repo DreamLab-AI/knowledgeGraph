@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Protection Law
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -210,52 +205,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-protection-law:bd5b0eb82a6f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e974beb252bea38aa4e34ae7c8629d5db05e79c6974fed8b226cd5187278c715"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Protection]]",
-      "resolved": "urn:visionflow:linked:data-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Privacy]]",
-      "resolved": "urn:visionflow:linked:data-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CCPA]]",
-      "resolved": "urn:visionflow:linked:ccpa",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The body of law governing how personal data may be collected, processed, stored and shared, and the rights afforded to individuals over their personal information.

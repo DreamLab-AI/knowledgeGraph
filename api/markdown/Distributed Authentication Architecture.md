@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Distributed Authentication Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,47 +80,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:distributed-authentication-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2120d0250fac9d1eb1985730b8479938d72ca8fcdf71373db64da05e393fb4de"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross-Platform Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:cross-platform-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:owl:class:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A decentralised identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.

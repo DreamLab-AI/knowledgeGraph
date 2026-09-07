@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Image to Image Translation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -67,16 +62,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ]
   },
   "quality": 0.5,
@@ -87,47 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:image-to-image-translation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cda48941ec1dc07b6084a16c5e73e2f4f6fe9e4e8990e3f923c73140276ae96e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Generative Adversarial Network]]",
-      "resolved": "urn:visionflow:owl:class:generative-adversarial-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:owl:class:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Style Transfer]]",
-      "resolved": "urn:visionflow:owl:class:style-transfer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Image-to-Image Translation transforms images from one visual domain to another whilst preserving content structure, converting between image modalities such as sketch-to-photo, day-to-night, satellite-to-map, or style transfer between artistic styles. Image translation models (Pix2Pix, CycleGAN, StyleGAN) employ conditional generation and adversarial learning to learn mappings between paired or unpaired image domains.

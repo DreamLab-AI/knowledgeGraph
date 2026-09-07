@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Evaluation Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:evaluation-layer:0840a8232ab1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:62d0429be2fb515968c303068b1c729edbb075eedbc53fe9e3b50c3880cacb1b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Model Layer]]",
-      "resolved": "urn:visionflow:linked:model-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inference Layer]]",
-      "resolved": "urn:visionflow:linked:inference-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Research Layer]]",
-      "resolved": "urn:visionflow:linked:research-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Governance Layer]]",
-      "resolved": "urn:visionflow:linked:governance-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Benchmark]]",
-      "resolved": "urn:visionflow:linked:benchmark",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Statistical Significance]]",
-      "resolved": "urn:visionflow:linked:statistical-significance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Evaluation Layer is the cross-cutting stratum that measures the quality, safety, and performance of system components against defined criteria. It sits alongside training and inference, drawing on their outputs to produce judgements that feed governance and research strata. It contains benchmarks, metrics, test harnesses, and the scoring procedures that quantify behaviour.

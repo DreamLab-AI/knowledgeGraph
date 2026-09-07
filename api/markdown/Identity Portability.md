@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Identity Portability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Identity portability is the capacity for a user to move their digital identity, credentials, and associated reputation across platforms, services, or virtual worlds without re-establishing them from scratch. It relies on interoperable identity standards and user-controlled wallets so that authentication and verified attributes remain valid across boundaries. Portability is a cornerstone of self-sovereign identity and an open metaverse.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"}],
-    "relatedTo": [{"@id": "urn:ngm:class:credential-format-standard", "label": "Credential Format Standard"}]
+    "enables": [
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:credential-format-standard",
+        "label": "Credential Format Standard"
+      }
+    ]
   },
   "quality": 0.72
 }

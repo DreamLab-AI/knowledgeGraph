@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[today presentation 2]]
-# Knowledge Graph Presentation Session Artefact
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,17 +42,38 @@ elevatedFrom:: [[today presentation 2]]
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:dreamlab-creative-technology-collective", "label": "DreamLab Creative Technology Collective"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:presentation-concluding-synthesis-slide", "label": "Presentation: Conclusion"},
-      {"@id": "urn:ngm:class:open-space-responsible-ai-gathering", "label": "Open-Space Responsible AI Gathering"}
+      {
+        "@id": "urn:ngm:class:dreamlab-creative-technology-collective",
+        "label": "DreamLab Creative Technology Collective"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:presentation-concluding-synthesis-slide",
+        "label": "Presentation: Conclusion"
+      },
+      {
+        "@id": "urn:ngm:class:open-space-responsible-ai-gathering",
+        "label": "Open-Space Responsible AI Gathering"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"}
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "provenance": {
@@ -68,26 +83,6 @@ elevatedFrom:: [[today presentation 2]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:today-presentation-2:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:16cc162304f1a0954a4ee695515e49d8cd6565131518f988a26ca8090e2a60a0"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Today Presentation 2** is a working session artefact within the DreamLab knowledge graph, serving as a container node for embedded presentation content. It bridges applied AI and immersive technology demonstration with knowledge representation practices, and connects to broader DreamLab themes of responsible AI governance and spatial computing.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Networking Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,19 +46,40 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:multi-user-systems", "label": "Multi User Systems"},
-      {"@id": "urn:ngm:class:real-time", "label": "Real Time"}
+      {
+        "@id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi User Systems"
+      },
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:network-quality-metric", "label": "Network Quality Metric"},
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:network-quality-metric",
+        "label": "Network Quality Metric"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "provenance": {
@@ -73,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:networking-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bd78f37f5de175acfe64e91963e3bd081b868db5b8be26835e0ef561bb63ce61"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The protocols, hardware, and software frameworks that enable real-time data transmission, synchronisation, and communication between distributed participants. In spatial computing contexts this encompasses WebRTC, QUIC, UDP/TCP stacks, adaptive bitrate streaming, and delta-compression techniques supporting low-latency avatar synchronisation and shared world-state updates.

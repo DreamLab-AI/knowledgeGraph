@@ -1,11 +1,14 @@
----
-public: true
----
-
-# University of London
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:university-of-london", "@type": "Page", "title": "University of London", "vc:slug": "university-of-london", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:university-of-london",
+  "@type": "Page",
+  "title": "University of London",
+  "vc:slug": "university-of-london",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

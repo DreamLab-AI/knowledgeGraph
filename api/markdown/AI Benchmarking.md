@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Benchmarking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-benchmarking",
   "title": "AI Benchmarking",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Agent Quality Evaluation", "Anthropic Managed Agents"],
+  "vc:outboundWikilinks": [
+    "Agent Quality Evaluation",
+    "Anthropic Managed Agents"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:frontier-model-evaluation", "label": "Frontier Model Evaluation"}, {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:frontier-model-evaluation",
+        "label": "Frontier Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

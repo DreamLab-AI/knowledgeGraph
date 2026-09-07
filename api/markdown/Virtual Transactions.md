@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Transactions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Virtual transactions are exchanges of value conducted entirely within digital environments, transferring virtual currency, tokens or digital goods between participants. They power in-world economies in games and metaverse platforms and rely on digital payment systems and currencies for settlement. Their integrity depends on secure accounting, fraud prevention and clear ownership semantics.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:virtual-economy",
+      "label": "Virtual Economy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-payment-system", "label": "Digital Payment System"}, {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
+    ]
   },
   "quality": 0.72
 }

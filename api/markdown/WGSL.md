@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WGSL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "WGSL (WebGPU Shading Language) is the shader programming language of the WebGPU API, used to write vertex, fragment, and compute shaders that run on the GPU from web applications. Designed for safety and portability, it maps cleanly onto native backends (Vulkan, Metal, Direct3D) while avoiding the platform-specific behaviours of older shading languages. WGSL is central to high-performance graphics and GPU compute on the modern web.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:graphics-api", "label": "Graphics API"}, {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
   },
   "quality": 0.72
 }

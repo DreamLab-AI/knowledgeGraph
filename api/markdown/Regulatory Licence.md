@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Regulatory Licence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A regulatory licence is a specific, often named permission issued by a financial supervisor that authorises an entity to carry out a defined regulated activity such as issuing e-money or operating as a payment institution. It binds the holder to ongoing conditions including capital adequacy, reporting, and conduct rules. For stablecoin issuers, the appropriate licence determines whether the token may legally be offered to the public.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:stablecoin-regulation", "label": "Stablecoin Regulation"},
-      {"@id": "urn:ngm:class:stable-coins", "label": "Stable Coins"}
+      {
+        "@id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:stable-coins",
+        "label": "Stable Coins"
+      }
     ]
   },
   "quality": 0.72

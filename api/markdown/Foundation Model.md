@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Foundation Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -301,7 +296,7 @@ public: true
   - The competitive field broadened and Chinese labs reached near parity: US institutions produced 40 notable models in 2024 to China's 15, yet benchmark gaps (MMLU, MATH, HumanEval) shrank to low single digits, and around 90% of notable 2024 models came from industry rather than academia.
   - Regulation moved from principle to obligation: the EU AI Act's general-purpose AI (GPAI) provider obligations took effect on 2 August 2025 (technical documentation, copyright policy, published training-data summaries; systemic-risk duties above 10^25 FLOP), the voluntary GPAI Code of Practice was finalised on 10 July 2025, and the Commission's enforcement powers and fines apply from 2 August 2026.
   - Labs are recalibrating their openness strategies: OpenAI shipped gpt-oss-20b/120b in August 2025, its first open-weight release since GPT-2, while several previously open-first providers have begun keeping their most capable flagships proprietary, and 2025-26 releases increasingly optimise for agentic, long-horizon tool-use and multi-hundred-thousand to million-token context windows.
-  - Open challenges as of 2026 centre on the looming data wall (Epoch AI projects the usable stock of public training text could be exhausted between 2026 and 2032, pushing synthetic data), the rising energy and carbon footprint of training (Llama 3.1 405B at roughly 8,930 tons CO2), and durable gaps in reliability on long-running autonomous tasks, provenance and copyright compliance, and systemic-risk evaluation.
+  - Open challenges as of 2026 centre on the looming data wall (Epoch AI projects the usable stock of public training text [private] be exhausted between 2026 and 2032, pushing synthetic data), the rising energy and carbon footprint of training (Llama 3.1 405B at roughly 8,930 tons CO2), and durable gaps in reliability on long-running autonomous tasks, provenance and copyright compliance, and systemic-risk evaluation.
 
 - ### References
   - 1. Stanford HAI (2025). The 2025 AI Index Report — Technical Performance and R&D chapters. https://hai.stanford.edu/ai-index/2025-ai-index-report

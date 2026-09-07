@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Participatory Policy Making
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:participatory-policy-making:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:00b4ca7dcf84e926768ef819265267196face8223321bf35cfcb92b8241244e0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Policy Legitimacy]]",
-      "resolved": "urn:visionflow:linked:policy-legitimacy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Democratic Governance]]",
-      "resolved": "urn:visionflow:owl:class:democratic-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A governance approach that involves citizens and stakeholders directly in the formulation, design, and evaluation of public policies through mechanisms such as citizen advisory boards, deliberative assemblies, and digital participation platforms.

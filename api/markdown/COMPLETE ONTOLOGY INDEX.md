@@ -1,15 +1,10 @@
----
-public: true
----
-
-# COMPLETE ONTOLOGY INDEX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:page:28c729f4dfe35badc87d9e73376ba77bbe08836d3fc95a68ff4f5e1b331191ee",
   "@type": "Page",
   "vc:slug": "complete-ontology-index",
-  "title": "COMPLETE ONTOLOGY INDEX",
+  "title": "COMPLETE ONTOLOGY [private]",
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
@@ -61,7 +56,7 @@ public: true
     },
     {
       "vc:key": "preferred-term",
-      "vc:value": "COMPLETE ONTOLOGY INDEX"
+      "vc:value": "COMPLETE ONTOLOGY [private]"
     }
   ],
   "prov:wasAttributedTo": {
@@ -79,8 +74,8 @@ public: true
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@id": "urn:ngm:class:complete-ontology-index",
   "@type": "Class",
-  "label": "COMPLETE ONTOLOGY INDEX",
-  "definition": "A comprehensive reference catalogue documenting and interconnecting all ontology terms, semantic classifications, and knowledge relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire knowledge base, serving as the master pointer for all class hierarchies and inter-domain relations.",
+  "label": "COMPLETE ONTOLOGY [private]",
+  "definition": "A comprehensive reference catalogue documenting and interconnecting all ontology terms, semantic classifications, and knowledge relationships across multiple domains and knowledge graphs. This [private] enables discovery, navigation, and semantic reasoning across the entire knowledge base, serving as the master pointer for all class hierarchies and inter-domain relations.",
   "domain": "spatial-computing",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -96,16 +91,34 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ontology-structure", "label": "Ontology Structure"},
-      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"}
+      {
+        "@id": "urn:ngm:class:ontology-structure",
+        "label": "Ontology Structure"
+      },
+      {
+        "@id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ]
   },
   "quality": 0.4,
@@ -117,79 +130,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:complete-ontology-index:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:28c729f4dfe35badc87d9e73376ba77bbe08836d3fc95a68ff4f5e1b331191ee"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
-      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IETF (Internet Engineering Task Force)]]",
-      "resolved": "urn:visionflow:linked:ietf-internet-engineering-task-force",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Base]]",
-      "resolved": "urn:visionflow:linked:knowledge-base",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Relationships]]",
-      "resolved": "urn:visionflow:linked:knowledge-relationships",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST (National Institute of Standards and Technology)]]",
-      "resolved": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ontology]]",
-      "resolved": "urn:visionflow:linked:ontology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RFC (Request for Comments)]]",
-      "resolved": "urn:visionflow:linked:rfc-request-for-comments",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Semantic Classifications]]",
-      "resolved": "urn:visionflow:linked:semantic-classifications",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - A comprehensive reference catalogue documenting and interconnecting all ontology terms, semantic classifications, and knowledge relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire knowledge base, serving as the master pointer for all class hierarchies and inter-domain relations.
+  - A comprehensive reference catalogue documenting and interconnecting all ontology terms, semantic classifications, and knowledge relationships across multiple domains and knowledge graphs. This [private] enables discovery, navigation, and semantic reasoning across the entire knowledge base, serving as the master pointer for all class hierarchies and inter-domain relations.
 - ### Semantic Classification
   - owl-class:: spatial-computing:COMPLETEONTOLOGYINDEX
   - owl-role:: Concept

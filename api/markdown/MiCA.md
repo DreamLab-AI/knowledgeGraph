@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MiCA
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -213,46 +208,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mi-ca:06bc1f0efe06",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aa3b4580e17b77c569feccf581c44b78382c27b6e22b56b24c9f131b67920d45"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:linked:stablecoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OECD]]",
-      "resolved": "urn:visionflow:linked:oecd",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulatory Domain]]",
-      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulation (EU) 2023/1114 on Markets in Crypto-Assets]]",
-      "resolved": "urn:visionflow:linked:regulation-eu-2023-1114-on-markets-in-crypto-assets",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

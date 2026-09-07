@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Online Identity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,19 +46,40 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ]
   },
   "provenance": {
@@ -73,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:online-identity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c8e802b60edc1f609fbf63a8a30a293504bb4c867c6c270f8cf193476cb613c1"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The digital representation and persistent persona that an individual constructs and maintains across online platforms and virtual environments, encompassing usernames, avatars, credentials, reputation data, and linked digital assets. Online identity management raises questions of authentication, portability, privacy, and the mapping between real-world and digital personas.

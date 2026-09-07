@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Climate Policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -66,42 +61,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:climate-policy:2629a1a07803",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1c457ce32460c2914a89fdaedb5e54f4d60548c221be3eb96d886528bded43c5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Greenwashing]]",
-      "resolved": "urn:visionflow:linked:greenwashing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Energy Consumption]]",
-      "resolved": "urn:visionflow:linked:energy-consumption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainability]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Climate policy is the set of government measures, regulations, and commitments intended to reduce greenhouse gas emissions and address the effects of climate change.

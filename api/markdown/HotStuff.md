@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HotStuff
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "HotStuff is a leader-based Byzantine fault-tolerant consensus protocol that achieves linear communication complexity and responsiveness through a pipelined, three-phase voting structure with threshold signatures. Its linear view-change cost and rotating leadership make it well suited to large validator sets. HotStuff influenced modern BFT systems and underpins protocols such as Libra/Diem's consensus.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ]
   },
   "quality": 0.72

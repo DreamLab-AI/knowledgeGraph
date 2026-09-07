@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rapid AI Deployment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,28 +51,64 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "provenance": {
@@ -87,32 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rapid-ai-deployment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:76f5a817674f18187159f4a17447e9e341060ec5fd9e13cbbdf641ff90d87620"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Rapid AI Deployment refers to accelerated processes for taking AI models from development into production, prioritising speed-to-market through streamlined MLOps pipelines, automated testing, and pre-built infrastructure. It encompasses continuous delivery of model updates, containerised inference serving, and automated monitoring to minimise time between model training and live operation while managing associated risks.

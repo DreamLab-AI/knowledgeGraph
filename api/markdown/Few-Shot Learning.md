@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Few-Shot Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,52 +159,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:few-shot-learning:0e41d9c819c1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3082005ae1a690760d384a0f99881c07ac96507f82ae5f7faf8e4db6fa8cb063"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Meta-Learning]]",
-      "resolved": "urn:visionflow:linked:meta-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[In-Context Learning]]",
-      "resolved": "urn:visionflow:linked:in-context-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large-Scale Pretrained Foundation Model]]",
-      "resolved": "urn:visionflow:linked:foundation-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A learning setting in which a model is required to generalise to a new task or class from only a small number of labelled examples.

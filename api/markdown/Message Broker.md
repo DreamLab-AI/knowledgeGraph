@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Message Broker
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,4 +152,3 @@ public: true
   - A message broker accepts messages from one or more producer applications, stores them in queues or topics, and forwards them to subscriber or consumer applications according to configured routing rules. Core capabilities include: durable persistence (messages survive broker restart), routing (content-based, topic-based, or header-based), protocol translation (AMQP ↔ STOMP ↔ MQTT), flow control and back-pressure, and dead-letter queuing for undeliverable messages. Brokers may support point-to-point (queue), publish-subscribe (topic), or hybrid topologies.
   - Message brokers are foundational to microservices architectures, enabling services to communicate asynchronously without synchronous HTTP calls. Use cases span financial transaction processing (order routing), IoT sensor ingestion, e-commerce event pipelines, and real-time analytics. They improve system resilience: producers can continue publishing even when consumers are offline, and spike loads are absorbed by the queue rather than overwhelming downstream services. Enterprise Service Buses (ESBs) extended broker capabilities with orchestration and business-process integration.
   - In 2024-2025, the distinction between traditional message brokers (RabbitMQ, ActiveMQ Artemis) and distributed log platforms (Apache Kafka, Apache Pulsar, Redpanda) has sharpened. Kafka's append-only log model enables event sourcing and long-term replay, which classical brokers do not support efficiently. Cloud-managed offerings (AWS SQS/SNS, Google Pub/Sub, Azure Service Bus) now dominate for new workloads, while AI-driven systems increasingly use message brokers as the backbone for agent-to-agent communication in multi-agent frameworks.
-

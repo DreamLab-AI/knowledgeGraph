@@ -1,54 +1,106 @@
----
-public: true
----
-
-# Asynchronous Programming
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:asynchronous-programming", "@type":"Page", "title":"Asynchronous Programming", "vc:slug":"asynchronous-programming", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:asynchronous-programming",
+  "@type": "Page",
+  "title": "Asynchronous Programming",
+  "vc:slug": "asynchronous-programming",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:asynchronous-programming",
-  "@type":"Class",
-  "label":"Asynchronous Programming",
-  "definition":"Asynchronous programming is a concurrency model in which operations that would otherwise block — such as input/output, network calls or timers — are initiated without halting the executing thread, allowing other work to proceed until results become available. It uses constructs such as callbacks, promises, futures and async/await to express continuations cleanly. The approach improves responsiveness and throughput for input/output-bound workloads without the overhead of one thread per task.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:concurrency","label":"Concurrency"},{"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:python","label":"Python"},
-      {"@id":"urn:ngm:class:multithreading","label":"Multithreading"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:asynchronous-programming",
+  "@type": "Class",
+  "label": "Asynchronous Programming",
+  "definition": "Asynchronous programming is a concurrency model in which operations that would otherwise block — such as input/output, network calls or timers — are initiated without halting the executing thread, allowing other work to proceed until results become available. It uses constructs such as callbacks, promises, futures and async/await to express continuations cleanly. The approach improves responsiveness and throughput for input/output-bound workloads without the overhead of one thread per task.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:concurrency",
+      "label": "Concurrency"
+    },
+    {
+      "@id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:multithreading",
+        "label": "Multithreading"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:scalability","label":"Scalability"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"},
-      {"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:parallel-processing","label":"Parallel Processing"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:concurrency","label":"Concurrency"},
-      {"@id":"urn:ngm:class:multithreading","label":"Multithreading"},
-      {"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"},
-      {"@id":"urn:ngm:class:software-development","label":"Software Development"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      },
+      {
+        "@id": "urn:ngm:class:multithreading",
+        "label": "Multithreading"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

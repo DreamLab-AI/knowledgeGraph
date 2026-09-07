@@ -1,8 +1,3 @@
----
-public: true
----
-
-# W3C Cognitive AI Community Group
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:w-3-c-cognitive-ai-community-group:eaa8f2b8d6dc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:19e91ee564a3106b7dcfed3f1f9723f502ef1a46f4c02ad3af3b2edaaf4ff0a9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[W3C]]",
-      "resolved": "urn:visionflow:linked:w-3-c",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The W3C Cognitive AI Community Group is a W3C community group that explores approaches to cognitive artificial intelligence and related Web technologies.

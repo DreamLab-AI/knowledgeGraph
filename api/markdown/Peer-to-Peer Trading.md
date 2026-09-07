@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Peer-to-Peer Trading
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Peer-to-peer trading is the direct exchange of assets between two parties without a centralised intermediary holding or matching the order. On blockchains it is typically mediated by smart contracts that escrow assets and enforce settlement atomically, removing custodial risk. It enables markets for tokens, NFTs, and goods to operate trustlessly through code rather than a central exchange.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:nft-swapping", "label": "NFT Swapping"}, {"@id": "urn:ngm:class:barter-system", "label": "Barter System"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:nft-swapping",
+        "label": "NFT Swapping"
+      },
+      {
+        "@id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      }
+    ]
   },
   "quality": 0.72
 }

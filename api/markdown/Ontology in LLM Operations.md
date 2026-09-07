@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ontology in LLM Operations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -47,16 +42,34 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:metaverse-ontology", "label": "Metaverse Ontology"}
+      {
+        "@id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      }
     ]
   },
   "provenance": {
@@ -66,26 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ontology-in-llm-operations:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5c855345c1de4cf9281034fec646748e8a704e101a1d6458505c0e0cd28e61c0"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The application of formal ontological structures to guide, constrain, and enrich large language model inference and retrieval pipelines. Ontologies supply typed entity schemas, relation vocabularies, and axioms that reduce hallucination, improve structured output consistency, and enable semantic grounding of LLM responses within knowledge-graph-backed retrieval-augmented generation systems.

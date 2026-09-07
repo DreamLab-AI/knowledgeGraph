@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Policy Gradient Methods
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

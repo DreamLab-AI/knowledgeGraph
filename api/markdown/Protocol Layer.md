@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ProtocolLayer
----
-
-# Protocol Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,26 +55,6 @@ aliases:
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:protocol-layer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4022ac53d277e7a77147071daf699b368764d85d558847ea4a103ae14afc9ce3"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The ProtocolLayer represents the abstraction level of protocol specifications, implementations, communication standards, distributed algorithms, and coordination mechanisms that define how system components interact in blockchain and distributed systems. This layer encompasses consensus protocol implementations (Proof-of-Work mining protocols, Proof-of-Stake validation protocols, Byzantine Fault Tolerance protocol instances like PBFT and Tendermint), network protocols (peer-to-peer gossip, block propagation, transaction relay), data format specifications (transaction formats, block structures, serialization schemes), communication standards (RPC interfaces, message formats, network handshakes), smart contract execution protocols (EVM execution, gas metering, state transitions), interoperability protocols (cross-chain bridges, atomic swaps, inter-blockchain communication), and layer-2 protocols (Lightning Network, rollups, state channels). Unlike ConceptualLayer which addresses abstract protocol concepts, ProtocolLayer focuses on concrete protocol specifications and implementations. Unlike SecurityLayer which emphasizes security mechanisms, ProtocolLayer addresses the full scope of protocol behaviors, message flows, state machines, and coordination algorithms. Protocols in this layer define the rules by which distributed systems achieve coordination: how nodes discover peers, how transactions propagate through networks, how blocks are proposed and validated, how consensus is achieved, and how state is maintained consistently across distributed participants.

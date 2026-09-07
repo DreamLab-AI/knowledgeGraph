@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual City Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,18 +59,36 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin-technology", "label": "Digital Twin Technology"},
-      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"}
+      {
+        "@id": "urn:ngm:class:digital-twin-technology",
+        "label": "Digital Twin Technology"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ]
   },
   "provenance": {
@@ -85,37 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-city-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:819568b10862d9f5391d3cbeed3afc41c574469036aa04574820c39e694ff31b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital representation of an urban environment including buildings, infrastructure, terrain, and dynamic elements, used for urban planning, simulation, gaming, and metaverse world-building based on real or imagined cities.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -221,7 +216,7 @@ public: true
       "label": "3D Object"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",
@@ -229,92 +224,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-d-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0bd264303fc3ce01603d67dd2fcc53b898655b91b7a02a7b82d083e2a526b9f6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Rendering]]",
-      "resolved": "urn:visionflow:linked:3-d-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interactive Visualization]]",
-      "resolved": "urn:visionflow:linked:interactive-visualization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Material Definition]]",
-      "resolved": "urn:visionflow:linked:material-definition",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mesh Data]]",
-      "resolved": "urn:visionflow:linked:mesh-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Environment Design]]",
-      "resolved": "urn:visionflow:linked:virtual-environment-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Development]]",
-      "resolved": "urn:visionflow:owl:class:3-d-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D File Format]]",
-      "resolved": "urn:visionflow:owl:class:3-d-file-format",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Modelling]]",
-      "resolved": "urn:visionflow:owl:class:3-d-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Animation Retargeting]]",
-      "resolved": "urn:visionflow:owl:class:animation-retargeting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Texture Mapping]]",
-      "resolved": "urn:visionflow:owl:class:texture-mapping",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as [[3D File Format]]. Models serve as foundational assets in [[3D Development]], enabling visualisation, simulation, and interaction within virtual spaces, games, and [[Metaverse]] applications.

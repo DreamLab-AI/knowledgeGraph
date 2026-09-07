@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Issue Tracking
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:issue-tracking", "@type":"Page", "title":"Issue Tracking", "vc:slug":"issue-tracking", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:issue-tracking",
+  "@type": "Page",
+  "title": "Issue Tracking",
+  "vc:slug": "issue-tracking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

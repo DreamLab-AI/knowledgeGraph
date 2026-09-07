@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Token Metadata
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Token metadata is the structured descriptive data associated with a blockchain token, typically including attributes such as name, description, image references, traits, and provenance. For non-fungible tokens it is commonly stored as a JSON document referenced by a tokenURI and often hosted on decentralised storage such as IPFS to preserve immutability and addressability.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-token-and-asset", "label": "Token and Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"}, {"@id": "urn:ngm:class:nft-minting", "label": "NFT Minting"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      },
+      {
+        "@id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AIApplications
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -105,52 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aiapplications:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:befd85f49a23293fe9ce611589bd86294d7a371992519deafd1eff776a52fb13"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Capability]]",
-      "resolved": "urn:visionflow:linked:ai-capability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Application Domain]]",
-      "resolved": "urn:visionflow:linked:application-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Industry Vertical]]",
-      "resolved": "urn:visionflow:linked:industry-vertical",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A domain classification encompassing the practical deployment and use cases of artificial intelligence systems across industries, including autonomous systems, decision support, content generation, predictive analytics, and intelligent automation.

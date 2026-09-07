@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Maximum Likelihood Estimation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bayesian Decision Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -24,33 +19,114 @@ public: true
       "@id": "urn:visionflow:linked:machine-learning",
       "vc:label": "Machine Learning"
     },
-    {"@id": "urn:visionflow:linked:bayes-theorem", "vc:label": "Bayes Theorem"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:decision-theory", "vc:label": "Decision Theory"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:utility-function", "vc:label": "Utility Function"},
-    {"@id": "urn:visionflow:linked:posterior-distribution", "vc:label": "Posterior Distribution"},
-    {"@id": "urn:visionflow:linked:prior-distribution", "vc:label": "Prior Distribution"},
-    {"@id": "urn:visionflow:linked:risk-minimisation", "vc:label": "Risk Minimisation"},
-    {"@id": "urn:visionflow:linked:optimal-classifier", "vc:label": "Optimal Classifier"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:markov-decision-process", "vc:label": "Markov Decision Process"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:bayesian-optimisation", "vc:label": "Bayesian Optimisation"},
-    {"@id": "urn:visionflow:linked:uncertainty-quantification", "vc:label": "Uncertainty Quantification"},
-    {"@id": "urn:visionflow:linked:statistical-decision-theory", "vc:label": "Statistical Decision Theory"},
-    {"@id": "urn:visionflow:linked:game-theory", "vc:label": "Game Theory"},
-    {"@id": "urn:visionflow:linked:operations-research", "vc:label": "Operations Research"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:frequentist-statistics", "vc:label": "Frequentist Statistics"},
-    {"@id": "urn:visionflow:linked:naive-bayes-classifier", "vc:label": "Naive Bayes Classifier"},
-    {"@id": "urn:visionflow:linked:gaussian-process", "vc:label": "Gaussian Process"},
-    {"@id": "urn:visionflow:linked:expected-utility-theory", "vc:label": "Expected Utility Theory"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:hypothesis-testing", "vc:label": "Hypothesis Testing"},
-    {"@id": "urn:visionflow:linked:information-theory", "vc:label": "Information Theory"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:probabilistic-reasoning-layer", "vc:label": "ProbabilisticReasoningLayer"}
+    {
+      "@id": "urn:visionflow:linked:bayes-theorem",
+      "vc:label": "Bayes Theorem"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-theory",
+      "vc:label": "Decision Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:utility-function",
+      "vc:label": "Utility Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:posterior-distribution",
+      "vc:label": "Posterior Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:prior-distribution",
+      "vc:label": "Prior Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-minimisation",
+      "vc:label": "Risk Minimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimal-classifier",
+      "vc:label": "Optimal Classifier"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:markov-decision-process",
+      "vc:label": "Markov Decision Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-optimisation",
+      "vc:label": "Bayesian Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:uncertainty-quantification",
+      "vc:label": "Uncertainty Quantification"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-decision-theory",
+      "vc:label": "Statistical Decision Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-theory",
+      "vc:label": "Game Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:operations-research",
+      "vc:label": "Operations Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:frequentist-statistics",
+      "vc:label": "Frequentist Statistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:naive-bayes-classifier",
+      "vc:label": "Naive Bayes Classifier"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-process",
+      "vc:label": "Gaussian Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:expected-utility-theory",
+      "vc:label": "Expected Utility Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:hypothesis-testing",
+      "vc:label": "Hypothesis Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-reasoning-layer",
+      "vc:label": "ProbabilisticReasoningLayer"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
@@ -91,53 +167,152 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
-      {"@id": "urn:ngm:class:statistics", "label": "Statistics"},
-      {"@id": "urn:ngm:class:bayes-theorem", "label": "Bayes Theorem"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:posterior-distribution", "label": "Posterior Distribution"}
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:risk-minimisation", "label": "Risk Minimisation"},
-      {"@id": "urn:ngm:class:prior-distribution", "label": "Prior Distribution"},
-      {"@id": "urn:ngm:class:posterior-distribution", "label": "Posterior Distribution"},
-      {"@id": "urn:ngm:class:utility-function", "label": "Utility Function"},
-      {"@id": "urn:ngm:class:optimal-classifier", "label": "Optimal Classifier"}
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:risk-minimisation",
+        "label": "Risk Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:utility-function",
+        "label": "Utility Function"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-classifier",
+        "label": "Optimal Classifier"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:naive-bayes-classifier", "label": "Naive Bayes Classifier"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
-      {"@id": "urn:ngm:class:hypothesis-testing", "label": "Hypothesis Testing"}
+      {
+        "@id": "urn:ngm:class:naive-bayes-classifier",
+        "label": "Naive Bayes Classifier"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:operations-research", "label": "Operations Research"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:expected-utility-theory", "label": "Expected Utility Theory"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:expected-utility-theory",
+        "label": "Expected Utility Theory"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:frequentist-statistics", "label": "Frequentist Statistics"},
-      {"@id": "urn:ngm:class:minimax-decision-theory", "label": "Minimax Decision Theory"}
+      {
+        "@id": "urn:ngm:class:frequentist-statistics",
+        "label": "Frequentist Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:minimax-decision-theory",
+        "label": "Minimax Decision Theory"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"},
-      {"@id": "urn:ngm:class:statistical-decision-theory", "label": "Statistical Decision Theory"},
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"}
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-decision-theory",
+        "label": "Statistical Decision Theory"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:operations-research", "label": "Operations Research"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
     ]
   },
   "quality": 0.6,
@@ -148,42 +323,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bayesian-decision-theory:468c17460254",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ce9dc031316659a8b16130862d1c0299a6007d1fb7b9679b39ac8e7f25d9fdb8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Statistics]]",
-      "resolved": "urn:visionflow:linked:statistics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Bayesian decision theory is a mathematically rigorous framework for selecting actions under uncertainty that synthesises two foundational disciplines: the [[Bayes Theorem]]-driven machinery of [[Bayesian Inference]], which maintains calibrated probability distributions over unknown states of the world, and the normative calculus of [[Decision Theory]] and [[Expected Utility Theory]], which translates probabilistic beliefs into preferences over actions by means of a [[Loss Function]] or utility function. The central quantity is the posterior expected risk — the expected cost of choosing action a given observations x — computed as R(a|x) = ∫ L(a, θ) · P(θ|x) dθ, where L(a, θ) specifies the loss incurred by taking action a when the true state is θ, and P(θ|x) is the posterior distribution over states given evidence x. The Bayes-optimal action a* is the one that minimises this posterior expected loss: a* = argmin_a R(a|x). In the binary classification setting this reduces to the famous Bayes decision rule — assign x to the class with lower posterior expected cost, recovering the Bayes error rate as the theoretical minimum achievable misclassification probability. The framework treats [[Prior Distribution]]s over states as encoding domain knowledge or subjective beliefs updated to [[Posterior Distribution]]s via Bayes' theorem as evidence accumulates, making it epistemically coherent across sequential observations. Bayesian decision theory encompasses and unifies a rich array of specialised problem formulations: classification with asymmetric class costs (medical screening, fraud detection), parameter estimation under [[Risk Minimisation]] with quadratic or absolute-error loss, hypothesis testing via Bayes factors, experimental design via expected information gain (which becomes an [[Active Learning]] acquisition function), sequential decision problems modelled as [[Markov Decision Process]]es, and black-box function optimisation via [[Bayesian Optimisation]] acquisition functions (Expected Improvement, Thompson Sampling). It contrasts sharply with [[Frequentist Statistics]] approaches such as minimax decision theory, which pessimistically minimises worst-case risk without incorporating prior beliefs, and with classical null hypothesis significance testing, which ignores the cost structure of decisions entirely. As AI systems face increasingly consequential and uncertain environments, Bayesian decision theory provides formal foundations for [[AI Safety]], enabling agents to reason about the expected cost of mistakes and to express principled uncertainty, key requirements for trustworthy autonomous systems under emerging regulatory frameworks such as the EU AI Act.

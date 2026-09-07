@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Corporate Sustainability Reporting Directive
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:corporate-sustainability-reporting-directive", "@type": "Page", "title": "Corporate Sustainability Reporting Directive", "vc:slug": "corporate-sustainability-reporting-directive", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:corporate-sustainability-reporting-directive",
+  "@type": "Page",
+  "title": "Corporate Sustainability Reporting Directive",
+  "vc:slug": "corporate-sustainability-reporting-directive",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

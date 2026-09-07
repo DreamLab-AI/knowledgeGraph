@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Payment Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:payment-protocol:5b9a3b221eec",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f0915fc92aca02c58873302973fa6c2a7f7943832a70831c92823a2f7928c525"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptographic Protocols]]",
-      "resolved": "urn:visionflow:linked:cryptographic-protocols",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:linked:stablecoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Communication Protocols]]",
-      "resolved": "urn:visionflow:linked:communication-protocols",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Payment_system]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-payment-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.bis.org/cpmi/]]",
-      "resolved": "urn:visionflow:linked:https-www-bis-org-cpmi",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A payment protocol is a defined set of rules and message formats governing how value transfer is initiated, authorised and settled between parties.

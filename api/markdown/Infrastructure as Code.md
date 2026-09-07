@@ -1,62 +1,120 @@
----
-public: true
----
-
-# Infrastructure as Code
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:infrastructure-as-code", "@type":"Page", "title":"Infrastructure as Code", "vc:slug":"infrastructure-as-code", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:infrastructure-as-code",
+  "@type": "Page",
+  "title": "Infrastructure as Code",
+  "vc:slug": "infrastructure-as-code",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:infrastructure-as-code",
-  "@type":"Class",
-  "label":"Infrastructure as Code",
-  "definition":"Infrastructure as Code (IaC) is the practice of defining and provisioning computing infrastructure through machine-readable definition files rather than manual configuration. Declarative or imperative specifications describe the desired state of servers, networks, and services, which tooling then realises idempotently and reproducibly. Treating infrastructure like software allows version control, peer review, automated testing, and consistent deployment across environments, eliminating configuration drift.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:automation","label":"Automation"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:infrastructure-as-code",
+  "@type": "Class",
+  "label": "Infrastructure as Code",
+  "definition": "Infrastructure as Code (IaC) is the practice of defining and provisioning computing infrastructure through machine-readable definition files rather than manual configuration. Declarative or imperative specifications describe the desired state of servers, networks, and services, which tooling then realises idempotently and reproducibly. Treating infrastructure like software allows version control, peer review, automated testing, and consistent deployment across environments, eliminating configuration drift.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:automation",
+      "label": "Automation"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:devops","label":"DevOps"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:version-control","label":"Version Control"},
-      {"@id":"urn:ngm:class:cloud-infrastructure","label":"Cloud Infrastructure"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:idempotency","label":"Idempotency"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:immutable-infrastructure","label":"Immutable Infrastructure"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:immutable-infrastructure",
+        "label": "Immutable Infrastructure"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:continuous-deployment","label":"Continuous Deployment"},
-      {"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"},
-      {"@id":"urn:ngm:class:auto-scaling","label":"Auto-Scaling"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:auto-scaling",
+        "label": "Auto-Scaling"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:terraform","label":"Terraform"},
-      {"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:terraform",
+        "label": "Terraform"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:gitops","label":"GitOps"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:gitops",
+        "label": "GitOps"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:cloud-native","label":"Cloud Native"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:azure","label":"Azure Cloud"},
-      {"@id":"urn:ngm:class:containerisation","label":"Containerisation"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:azure",
+        "label": "Azure Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

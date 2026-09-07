@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Methane Mitigation Mining
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Methane mitigation mining is the practice of siting Bitcoin mining hardware at sources of vented or flared methane, such as oil wellheads and landfills, to combust the gas in generators that power the miners. The mining load creates a continuous, location-flexible demand for energy that would otherwise be wasted, converting a potent greenhouse gas into electricity and revenue. It is promoted as a way to reduce net emissions while monetising stranded hydrocarbons.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:stranded-energy-monetisation", "label": "Stranded Energy Monetisation"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}
+      {
+        "@id": "urn:ngm:class:stranded-energy-monetisation",
+        "label": "Stranded Energy Monetisation"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
     ]
   },
   "quality": 0.72

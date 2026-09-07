@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fault Tree Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,7 +114,7 @@ public: true
   - Fault Tree Analysis is a subclass of [[Risk Assessment]] and supports [[Reliability Engineering]] by quantifying how component failures combine into system-level hazards. It relates to broader [[Safety Evaluation]] practice, complementing bottom-up methods such as failure modes and effects analysis.
 
 - ### Content
-  - Fault Tree Analysis begins with the outcome to be prevented — a "top event" such as loss of an aircraft control surface or a reactor coolant failure — and reasons backward to the combinations of lower-level events that could produce it. This top-down, deductive orientation distinguishes it from bottom-up techniques: rather than enumerating every possible component failure and tracing its effects, FTA focuses analytical effort on the specific catastrophic outcomes that matter most.
+  - Fault Tree Analysis begins with the outcome to be prevented — a "top event" such as loss of an aircraft control surface or a reactor coolant failure — and reasons backward to the combinations of lower-level events that [private] produce it. This top-down, deductive orientation distinguishes it from bottom-up techniques: rather than enumerating every possible component failure and tracing its effects, FTA focuses analytical effort on the specific catastrophic outcomes that matter most.
 
   - The tree is built from events connected by logic gates. An OR gate propagates the failure if any input occurs; an AND gate requires all inputs to occur simultaneously, capturing the redundancy that makes systems robust. Decomposition continues until reaching basic events — primary component failures or external conditions whose probabilities are known or estimable — yielding a structured Boolean model of how local failures escalate into the system-level hazard.
 

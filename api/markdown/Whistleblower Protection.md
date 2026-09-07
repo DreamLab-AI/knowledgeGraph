@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Whistleblower Protection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Whistleblower protection comprises legal and procedural safeguards that shield individuals who report wrongdoing, safety risks, or legal violations from retaliation such as dismissal, demotion, or harassment. In the AI-governance context, it empowers employees of AI developers to disclose information about unmitigated risks from frontier models to regulators or the public. Such provisions appear in legislation like California's frontier-AI safety bills, creating accountability channels beyond internal controls.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:california-ai-bill", "label": "California AI bill"}, {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
   "quality": 0.72
 }

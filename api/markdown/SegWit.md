@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SegWit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,52 +183,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:seg-wit:b3e29ae57aef",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e64efc54617e9cce559e60a9977a50758f974e31555c9c282a2770f589159eae"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Script]]",
-      "resolved": "urn:visionflow:linked:bitcoin-script",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:linked:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Taproot]]",
-      "resolved": "urn:visionflow:linked:taproot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin-protocol",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Segregated Witness is a Bitcoin protocol upgrade that moves signature data into a separate witness structure, fixing transaction malleability and increasing block capacity.

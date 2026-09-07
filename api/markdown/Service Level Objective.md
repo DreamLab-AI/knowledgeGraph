@@ -1,37 +1,113 @@
----
-public: true
----
-
-# Service Level Objective
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:service-level-objective", "@type":"Page", "title":"Service Level Objective", "vc:slug":"service-level-objective", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:service-level-objective",
-  "@type":"Class",
-  "label":"Service Level Objective",
-  "definition":"A service level objective (SLO) is a target value or range for a measurable property of a service, such as availability or latency, that defines the acceptable level of reliability over a stated time window. SLOs are expressed against service level indicators and provide the quantitative basis for engineering decisions, error budgets and the contractual commitments of service level agreements. They are a cornerstone practice of site reliability engineering, balancing reliability against the pace of change.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:site-reliability-engineering","label":"Site Reliability Engineering"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:site-reliability-engineering","label":"Site Reliability Engineering"}],
-    "dependsOn":[{"@id":"urn:ngm:class:observability","label":"Observability"},{"@id":"urn:ngm:class:monitoring","label":"Monitoring"}],
-    "enables":[{"@id":"urn:ngm:class:reliability","label":"Reliability"}],
-    "supports":[{"@id":"urn:ngm:class:reliability-engineering","label":"Reliability Engineering"},{"@id":"urn:ngm:class:capacity-planning","label":"Capacity Planning"}],
-    "hasPart":[{"@id":"urn:ngm:class:latency","label":"Latency"}],
-    "uses":[{"@id":"urn:ngm:class:monitoring","label":"Monitoring"}],
-    "requires":[{"@id":"urn:ngm:class:observability","label":"Observability"}],
-    "relatedTo":[{"@id":"urn:ngm:class:devops","label":"DevOps"},{"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"},{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:reliability","label":"Reliability"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:service-level-objective",
+  "@type": "Page",
+  "title": "Service Level Objective",
+  "vc:slug": "service-level-objective",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:service-level-objective",
+  "@type": "Class",
+  "label": "Service Level Objective",
+  "definition": "A service level objective (SLO) is a target value or range for a measurable property of a service, such as availability or latency, that defines the acceptable level of reliability over a stated time window. SLOs are expressed against service level indicators and provide the quantitative basis for engineering decisions, error budgets and the contractual commitments of service level agreements. They are a cornerstone practice of site reliability engineering, balancing reliability against the pace of change.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:site-reliability-engineering",
+      "label": "Site Reliability Engineering"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - A service level objective is a measurable target for a service property such as availability or [[Latency]], defining acceptable [[Reliability]] over a time window. It is a core practice of [[Site Reliability Engineering]], depending on [[Observability]] and [[Monitoring]] to verify whether the target is being met.
 - ### Overview

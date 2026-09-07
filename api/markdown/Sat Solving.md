@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sat Solving
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Export Controls
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Export controls are government-imposed legal restrictions on the cross-border transfer of specified goods, software, technology, and technical knowledge, typically for national-security, foreign-policy, or non-proliferation reasons. In the AI domain they increasingly govern advanced semiconductors, high-performance compute, and associated design tools, restricting which jurisdictions and entities may receive cutting-edge hardware. Compliance regimes such as the US EAR and the Wassenaar Arrangement define controlled-item lists, licensing requirements, and end-use screening.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:competition-in-ai", "label": "Competition in AI"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "quality": 0.72

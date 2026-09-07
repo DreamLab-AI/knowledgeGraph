@@ -1,8 +1,3 @@
----
-public: true
----
-
-# External AI Harness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,57 +7,210 @@ public: true
   "title": "External AI Harness",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
-    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
-    {"@id": "urn:visionflow:linked:model-serving", "vc:label": "Model Serving"},
-    {"@id": "urn:visionflow:linked:api-gateway", "vc:label": "API Gateway"},
-    {"@id": "urn:visionflow:linked:microservices-architecture", "vc:label": "Microservices Architecture"},
-    {"@id": "urn:visionflow:linked:container-orchestration", "vc:label": "Container Orchestration"},
-    {"@id": "urn:visionflow:linked:kubernetes", "vc:label": "Kubernetes"},
-    {"@id": "urn:visionflow:linked:ai-agent-coordination", "vc:label": "AI Agent Coordination"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "Multi-Agent Orchestration"},
-    {"@id": "urn:visionflow:linked:llm-orchestration", "vc:label": "LLM Orchestration"},
-    {"@id": "urn:visionflow:linked:inference-serving", "vc:label": "Inference Serving"},
-    {"@id": "urn:visionflow:linked:ai-inference", "vc:label": "AI Inference"},
-    {"@id": "urn:visionflow:linked:model-inference", "vc:label": "Model Inference"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:agent-to-agent-protocol", "vc:label": "Agent-to-Agent Protocol"},
-    {"@id": "urn:visionflow:linked:rest-api", "vc:label": "REST API"},
-    {"@id": "urn:visionflow:linked:grpc", "vc:label": "gRPC"},
-    {"@id": "urn:visionflow:linked:message-queue", "vc:label": "Message Queue"},
-    {"@id": "urn:visionflow:linked:service-mesh", "vc:label": "Service Mesh"},
-    {"@id": "urn:visionflow:linked:load-balancing", "vc:label": "Load Balancing"},
-    {"@id": "urn:visionflow:linked:autoscaling", "vc:label": "Autoscaling"},
-    {"@id": "urn:visionflow:linked:fault-tolerance", "vc:label": "Fault Tolerance"},
-    {"@id": "urn:visionflow:linked:process-isolation", "vc:label": "Process Isolation"},
-    {"@id": "urn:visionflow:linked:security", "vc:label": "Security"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:sandboxing", "vc:label": "Sandboxing"},
-    {"@id": "urn:visionflow:linked:observability", "vc:label": "Observability"},
-    {"@id": "urn:visionflow:linked:rate-limiting", "vc:label": "Rate Limiting"},
-    {"@id": "urn:visionflow:linked:human-oversight", "vc:label": "Human Oversight"},
-    {"@id": "urn:visionflow:linked:autonomous-agents", "vc:label": "Autonomous Agents"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:evaluation-harness", "vc:label": "Evaluation Harness"},
-    {"@id": "urn:visionflow:linked:ai-infrastructure", "vc:label": "AI Infrastructure"},
-    {"@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:tool-registry", "vc:label": "Tool Registry"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:approval-gate", "vc:label": "Approval Gate"},
-    {"@id": "urn:visionflow:linked:multi-tenant", "vc:label": "Multi-Tenant"},
-    {"@id": "urn:visionflow:linked:canary-deployment", "vc:label": "Canary Deployment"},
-    {"@id": "urn:visionflow:linked:ab-testing", "vc:label": "A/B Testing"},
-    {"@id": "urn:visionflow:linked:model-versioning", "vc:label": "Model Versioning"},
-    {"@id": "urn:visionflow:linked:cost-management", "vc:label": "Cost Management"},
-    {"@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration"}
+    {
+      "@id": "urn:visionflow:linked:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-serving",
+      "vc:label": "Model Serving"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-gateway",
+      "vc:label": "API Gateway"
+    },
+    {
+      "@id": "urn:visionflow:linked:microservices-architecture",
+      "vc:label": "Microservices Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:container-orchestration",
+      "vc:label": "Container Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubernetes",
+      "vc:label": "Kubernetes"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-coordination",
+      "vc:label": "AI Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "Multi-Agent Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-orchestration",
+      "vc:label": "LLM Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-serving",
+      "vc:label": "Inference Serving"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-inference",
+      "vc:label": "AI Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-inference",
+      "vc:label": "Model Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-to-agent-protocol",
+      "vc:label": "Agent-to-Agent Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:rest-api",
+      "vc:label": "REST API"
+    },
+    {
+      "@id": "urn:visionflow:linked:grpc",
+      "vc:label": "gRPC"
+    },
+    {
+      "@id": "urn:visionflow:linked:message-queue",
+      "vc:label": "Message Queue"
+    },
+    {
+      "@id": "urn:visionflow:linked:service-mesh",
+      "vc:label": "Service Mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:load-balancing",
+      "vc:label": "Load Balancing"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoscaling",
+      "vc:label": "Autoscaling"
+    },
+    {
+      "@id": "urn:visionflow:linked:fault-tolerance",
+      "vc:label": "Fault Tolerance"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-isolation",
+      "vc:label": "Process Isolation"
+    },
+    {
+      "@id": "urn:visionflow:linked:security",
+      "vc:label": "Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandboxing",
+      "vc:label": "Sandboxing"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability",
+      "vc:label": "Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:rate-limiting",
+      "vc:label": "Rate Limiting"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agents",
+      "vc:label": "Autonomous Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-harness",
+      "vc:label": "Evaluation Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-infrastructure",
+      "vc:label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-registry",
+      "vc:label": "Tool Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:approval-gate",
+      "vc:label": "Approval Gate"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-tenant",
+      "vc:label": "Multi-Tenant"
+    },
+    {
+      "@id": "urn:visionflow:linked:canary-deployment",
+      "vc:label": "Canary Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:ab-testing",
+      "vc:label": "A/B Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-versioning",
+      "vc:label": "Model Versioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-management",
+      "vc:label": "Cost Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-acceleration",
+      "vc:label": "GPU Acceleration"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -77,72 +225,204 @@ public: true
   "definition": "An external AI harness is an out-of-process orchestration framework that manages AI model inference via network APIs, message queues, or service meshes, providing process-boundary isolation, horizontal scalability, multi-model routing, fault tolerance, and multi-tenant governance at the cost of additional serialisation latency and inter-process communication overhead, making it the preferred architecture for enterprise-scale agentic deployments requiring auditability, model versioning, and independent component scaling.",
   "domain": "ai",
   "maturity": "emerging",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
-    {"@id": "urn:ngm:class:agent-harness", "label": "Agent Harness"},
-    {"@id": "urn:ngm:class:evaluation-harness", "label": "Evaluation Harness"}
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "@id": "urn:ngm:class:evaluation-harness",
+      "label": "Evaluation Harness"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
-      {"@id": "urn:ngm:class:inference-serving", "label": "Inference Serving"},
-      {"@id": "urn:ngm:class:tool-registry", "label": "Tool Registry"},
-      {"@id": "urn:ngm:class:approval-gate", "label": "Approval Gate"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
-      {"@id": "urn:ngm:class:autoscaling", "label": "Autoscaling"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      },
+      {
+        "@id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "@id": "urn:ngm:class:approval-gate",
+        "label": "Approval Gate"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:g-rpc", "label": "gRPC"},
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration"},
-      {"@id": "urn:ngm:class:ai-agent-coordination", "label": "AI Agent Coordination"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:model-versioning", "label": "Model Versioning"},
-      {"@id": "urn:ngm:class:canary-deployment", "label": "Canary Deployment"}
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-coordination",
+        "label": "AI Agent Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:canary-deployment",
+        "label": "Canary Deployment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:process-isolation", "label": "Process Isolation"}
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:process-isolation",
+        "label": "Process Isolation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:agent-to-agent-protocol", "label": "Agent-to-Agent Protocol"},
-      {"@id": "urn:ngm:class:llm-orchestration", "label": "LLM Orchestration"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:cost-management", "label": "Cost Management"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:cost-management",
+        "label": "Cost Management"
+      }
     ],
     "contrasts-with": [
-      {"@id": "urn:ngm:class:internal-ai-harness", "label": "Internal AI Harness"}
+      {
+        "@id": "urn:ngm:class:internal-ai-harness",
+        "label": "Internal AI Harness"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:agent-execution-sandboxes", "label": "Agent Execution Sandboxes"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Animation Retargeting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,72 +184,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:animation-retargeting:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e6ad1e5697a4c811f34a31ce45d268a0e2ca5bc40ff10a7c9d3d2ce99f0bfd1a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Animation Technology]]",
-      "resolved": "urn:visionflow:linked:animation-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Avatar Animation]]",
-      "resolved": "urn:visionflow:linked:avatar-animation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Character Animation Reuse]]",
-      "resolved": "urn:visionflow:linked:character-animation-reuse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Motion Capture Workflows]]",
-      "resolved": "urn:visionflow:linked:motion-capture-workflows",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pose Matching]]",
-      "resolved": "urn:visionflow:linked:pose-matching",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Skeleton Mapping]]",
-      "resolved": "urn:visionflow:linked:skeleton-mapping",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inverse Kinematics]]",
-      "resolved": "urn:visionflow:owl:class:inverse-kinematics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Animation Retargeting is the process of transferring motion capture or animation data from one character skeleton to another with different proportions, joint configurations, or bone structures, enabling reuse of animation assets across diverse character models in games, film, and virtual environments.

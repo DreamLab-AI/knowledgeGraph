@@ -1,8 +1,3 @@
----
-public: true
----
-
-# JAX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,52 +169,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:jax:72345e06ed6f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7d2edcdc11232c191a98693ae70bebdf5d5fb4c528e49117d512ffe625c1591b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Automatic Differentiation]]",
-      "resolved": "urn:visionflow:linked:automatic-differentiation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware Acceleration]]",
-      "resolved": "urn:visionflow:linked:hardware-acceleration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Backpropagation]]",
-      "resolved": "urn:visionflow:linked:backpropagation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[PyTorch]]",
-      "resolved": "urn:visionflow:linked:py-torch",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning Domain]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Python library from Google for high-performance numerical computing and machine learning research, combining NumPy-style array operations with automatic differentiation and just-in-time compilation.

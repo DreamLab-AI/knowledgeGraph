@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Task Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:task-automation:3cdd8b7c2f24",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d61d1471e92a36ae0c9c324ac278c0276fc015503ab2d73084c570b5ea1cb9d4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Automation]]",
-      "resolved": "urn:visionflow:linked:automation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Business Process Automation]]",
-      "resolved": "urn:visionflow:linked:business-process-automation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Workflow Automation]]",
-      "resolved": "urn:visionflow:linked:workflow-automation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The automation of individual, often repetitive tasks so that they run without manual effort. It addresses discrete actions rather than coordinating entire business processes.

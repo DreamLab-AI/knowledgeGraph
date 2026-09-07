@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Price Discovery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,72 +186,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:price-discovery:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ecea5b1c1940c0e4f5999ee262f61c7b670be6d8a98a4d8f7785d215caf4a721"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Arbitrage]]",
-      "resolved": "urn:visionflow:linked:arbitrage",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fair Valuation]]",
-      "resolved": "urn:visionflow:linked:fair-valuation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FinancialDomain]]",
-      "resolved": "urn:visionflow:linked:financial-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Liquidity]]",
-      "resolved": "urn:visionflow:linked:liquidity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Market Efficiency]]",
-      "resolved": "urn:visionflow:linked:market-efficiency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Market Microstructure]]",
-      "resolved": "urn:visionflow:linked:market-microstructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Order Book]]",
-      "resolved": "urn:visionflow:linked:order-book",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Price Transparency]]",
-      "resolved": "urn:visionflow:linked:price-transparency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MEV]]",
-      "resolved": "urn:visionflow:owl:class:mev",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.

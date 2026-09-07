@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open-Source LLMs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "open-source-llms",
   "title": "Open-Source LLMs",
   "vc:public": true,
-  "vc:outboundWikilinks": ["API Cost Optimization", "Enterprise AI Strategy"],
+  "vc:outboundWikilinks": [
+    "API Cost Optimization",
+    "Enterprise AI Strategy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:open-source", "label": "Open Source"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

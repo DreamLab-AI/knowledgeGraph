@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Motion Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,57 +176,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:motion-tracking:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c5eb977950ea4a99f857a08454dbfb7cf477cc113fc85d0333ed191352d81f58"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar Animation]]",
-      "resolved": "urn:visionflow:linked:avatar-animation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Embodied Presence]]",
-      "resolved": "urn:visionflow:linked:embodied-presence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Gesture Control]]",
-      "resolved": "urn:visionflow:linked:gesture-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Identification]]",
-      "resolved": "urn:visionflow:linked:user-identification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[XR Input Technologies]]",
-      "resolved": "urn:visionflow:linked:xr-input-technologies",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Motion tracking is a technology that captures and records the movement of objects, bodies, or body parts in physical space, translating this data into digital representations for use in VR/AR systems, animation, and metaverse applications. In XR contexts, motion tracking is fundamental to creating embodied presence by translating user movements into avatar animations and enabling natural interaction with virtual environments.

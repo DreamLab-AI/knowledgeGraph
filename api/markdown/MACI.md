@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MACI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:maci:c3c6337510e0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:807d06aa928b51a37b21ab5239373ece1db06e8aff8315ceac89fdfaf2add1ed"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Autonomous Organization]]",
-      "resolved": "urn:visionflow:linked:decentralized-autonomous-organization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quadratic Voting]]",
-      "resolved": "urn:visionflow:linked:quadratic-voting",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Minimal Anti-Collusion Infrastructure, a set of smart contracts and zero-knowledge techniques designed to reduce bribery and collusion in on-chain voting. It hides individual votes from coercers while allowing public verification of results.

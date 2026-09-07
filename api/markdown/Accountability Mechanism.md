@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Accountability Mechanism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +21,47 @@ public: true
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+    {
+      "@id": "urn:ngm:class:accountability",
+      "label": "Accountability"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:accountability-framework", "label": "Accountability Framework"}
+      {
+        "@id": "urn:ngm:class:accountability-framework",
+        "label": "Accountability Framework"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:audit-log", "label": "Audit Log"}
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collective Action
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:collective-action",
   "@type": "Class",
   "label": "Collective Action",
-  "definition": "Coordinated behaviour by a group of individuals or organisations toward a shared goal that no single actor could achieve unilaterally. It is characterised by interdependence, the risk of free-riding, and the need for mechanisms — such as incentives, norms, or contracts — to align individual contributions with the group objective.",
+  "definition": "Coordinated behaviour by a group of individuals or organisations toward a shared goal that no single actor [private] achieve unilaterally. It is characterised by interdependence, the risk of free-riding, and the need for mechanisms — such as incentives, norms, or contracts — to align individual contributions with the group objective.",
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [

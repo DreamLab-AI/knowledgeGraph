@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Impermanent Loss
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -135,4 +130,3 @@ public: true
   - In a constant-product AMM (x*y = k), the pool automatically rebalances when prices move by buying the depreciating asset and selling the appreciating one. This rebalancing means that when a liquidity provider withdraws, they receive more of the asset that fell in price and less of the one that rose. The impermanent loss formula is: IL = 2*sqrt(r)/(1+r) - 1, where r is the price ratio change. A 2x price move produces approximately 5.7% impermanent loss; a 5x move produces 25.5% loss. The loss is "impermanent" only in the sense that price reversion to the original ratio eliminates it; in practice, for volatile asset pairs, the loss is often permanent upon withdrawal.
   - Understanding impermanent loss is essential for rational liquidity provision decisions. Providers must compare expected fee revenue against expected impermanent loss given anticipated price volatility. For stable-stable pairs (e.g. USDC/DAI), impermanent loss is negligible, making stablecoin AMMs highly attractive to liquidity providers. For volatile pairs, providers effectively write a short-volatility position, similar to options selling. Concentrated liquidity AMMs (Uniswap v3) amplify both fee earnings and impermanent loss within a specified price range, intensifying this trade-off.
   - As of 2024–2025, research and protocol design have produced several mechanisms to mitigate impermanent loss. Dynamic fee AMMs (Uniswap v4 hooks, Maverick Protocol) adjust fees based on volatility to better compensate providers. Geometric mean market makers (Balancer) and correlated asset AMMs (Curve v2) have lower inherent IL for specific asset types. Single-sided liquidity provision (Bancor v3's IL protection, Maverick's boosted pools) attempts to eliminate or insure against IL. Despite these innovations, impermanent loss remains the central risk disclosure for AMM liquidity providers and a key input to DeFi yield calculations.
-

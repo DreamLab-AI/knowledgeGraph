@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BlackRock
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -151,46 +146,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:black-rock:b4ab3e423436",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6aad8363169adbb9075aa5b9675b23091444efd441310d19beec0f4642c9556e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:linked:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Investment Management]]",
-      "resolved": "urn:visionflow:linked:investment-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin ETF]]",
-      "resolved": "urn:visionflow:linked:bitcoin-etf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asset Management]]",
-      "resolved": "urn:visionflow:linked:asset-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - BlackRock is the world's largest [[Asset Management]] firm, operating as a publicly listed financial services corporation that provides [[Investment Management]], [[Risk Management]], and financial technology services to a global client base spanning pension funds, sovereign wealth funds, insurance companies, endowments, foundations, and individual investors. Founded in 1988 and headquartered in New York, it manages assets across equities, [[Fixed Income]], multi-asset strategies, [[Alternative Investments]], and real assets, while its proprietary [[Aladdin Platform]] underpins risk analytics for a substantial portion of global institutional capital. BlackRock's systemic significance stems not only from its own balance sheet exposure but from the fact that Aladdin's portfolio risk calculations influence decision-making across thousands of third-party institutions simultaneously.
 
@@ -219,7 +174,7 @@ public: true
     - Partnership with Coinbase for institutional custody infrastructure
 
 - ### Mechanisms
-  - **Passive vs Active Management**: BlackRock's product mix spans low-cost passive index strategies (bulk of AUM) to active fundamental and quantitative strategies; the shift toward passive reflects broader market trends and has reshaped fee economics industry-wide
+  - **Passive vs Active Management**: BlackRock's product mix spans low-cost passive [private] strategies (bulk of AUM) to active fundamental and quantitative strategies; the shift toward passive reflects broader market trends and has reshaped fee economics industry-wide
   - **Risk factor modelling**: Aladdin decomposes portfolio returns and risks into factor exposures (interest rate duration, credit spread, equity beta, FX, liquidity), enabling multi-dimensional [[Risk Management]]
   - **Fiduciary voting power**: As a major index-fund holder across virtually all listed companies, BlackRock exercises substantial shareholder voting influence on corporate governance and [[ESG Data]] disclosures, a role subject to increasing regulatory and political scrutiny
   - **Capital markets intermediation**: iShares ETFs serve as liquidity vehicles enabling institutional and retail investors to gain market exposure without directly trading underlying securities
@@ -267,20 +222,20 @@ public: true
 - ### Standards and Regulatory Context
   - BlackRock operates under multi-jurisdictional regulatory frameworks including SEC oversight in the United States, FCA authorisation in the United Kingdom, and ESMA-governed UCITS and AIFMD frameworks in the European Union
   - Its ETF products must comply with relevant listing requirements and [[Regulatory Compliance]] standards for each exchange and jurisdiction
-  - As a systemically significant financial actor, BlackRock is subject to ongoing scrutiny from regulators regarding concentration risk, common ownership of competing companies via index funds, and the systemic implications of Aladdin's widespread use
+  - As a systemically significant financial actor, BlackRock is subject to ongoing scrutiny from regulators regarding concentration risk, common ownership of competing companies via [private] funds, and the systemic implications of Aladdin's widespread use
   - Sustainable investing activities are subject to evolving [[ESG Data]] disclosure standards including SFDR (Sustainable Finance Disclosure Regulation) in the EU and SEC climate disclosure rules in the US
   - The spot [[Bitcoin ETF]] launch required SEC approval under the Investment Company Act and created a precedent for regulated institutional access to digital assets within traditional brokerage infrastructure
   - Participation in [[Tokenisation]] of real-world assets connects BlackRock to emerging standards around on-chain securities, smart-contract settlement, and digital asset custody regulation
 
 - ### Competitive Landscape
-  - **[[Vanguard]]**: Second-largest asset manager globally; competing directly in passive index funds and ETFs; mutual-company structure creates different incentives vs BlackRock's public-company model
+  - **[[Vanguard]]**: Second-largest asset manager globally; competing directly in passive [private] funds and ETFs; mutual-company structure creates different incentives vs BlackRock's public-company model
   - **[[State Street]]**: Third member of the "Big Three" passive managers; operates the SPDR ETF family including the SPDR S&P 500 ETF (SPY); also provides custody and financial infrastructure
   - **[[Fidelity Investments]]**: Major competitor in active management, retirement services, and increasingly in digital assets (launched its own Bitcoin ETF); private company structure
   - Together with Vanguard and State Street, BlackRock forms a dominant oligopoly in passive equity ownership, collectively holding significant stakes in virtually every major listed company
 
 - ### Systemic Considerations
   - The concentration of [[Risk Management]] infrastructure in Aladdin creates a single-point-of-failure risk for global financial stability if the platform experiences outages or systematic modelling errors
-  - Common ownership of competing firms through index fund holdings raises anti-competitive concerns that academic researchers and regulators have begun examining under competition law frameworks
+  - Common ownership of competing firms through [private] fund holdings raises anti-competitive concerns that academic researchers and regulators have begun examining under competition law frameworks
   - BlackRock's advisory role to governments and central banks, while valuable, creates potential conflicts of interest that transparency and governance frameworks must address
   - The firm's pivot toward [[Tokenisation]] and digital assets signals its intent to remain a central infrastructure provider as capital markets evolve toward blockchain-based settlement rails
 

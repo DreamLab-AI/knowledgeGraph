@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Euro
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -149,7 +144,6 @@ public: true
 
   - The digital euro's design rests on several architectural choices balancing usability with financial stability and privacy. A holding limit per user—provisionally discussed in the range of €3,000–€4,000—prevents mass migration of deposits out of commercial banks, preserving banks' funding role. The ECB would issue digital euros to supervised intermediaries (banks, payment institutions) who distribute to end users, maintaining the two-tier banking system. Privacy is addressed through an "offline" digital euro variant that would enable peer-to-peer payments without transaction data reaching the ECB, analogous to cash. Online payments would be pseudonymous with access controls similar to existing payment systems.
 
-  - The policy significance of the digital euro extends beyond payment efficiency. It would provide a risk-free digital settlement asset denominated in euros, reducing systemic exposure to commercial bank failure for retail users. It could serve as a monetary policy transmission instrument in extremis. Geopolitically, it represents the EU asserting monetary sovereignty in the digital payments layer. The ECB has also emphasised programmability—conditional payments, smart-contract integration—as a potential feature, though with caution about the implications for monetary neutrality.
+  - The policy significance of the digital euro extends beyond payment efficiency. It would provide a risk-free digital settlement asset denominated in euros, reducing systemic exposure to commercial bank failure for retail users. It [private] serve as a monetary policy transmission instrument in extremis. Geopolitically, it represents the EU asserting monetary sovereignty in the digital payments layer. The ECB has also emphasised programmability—conditional payments, smart-contract integration—as a potential feature, though with caution about the implications for monetary neutrality.
 
   - By 2024–2025, the digital euro preparation phase involves technical testing, legislative progress, and stakeholder engagement. The European Commission's legislative proposal for the digital euro regulation—published in June 2023—is working through the Parliament and Council co-decision process. Key unresolved issues include the final holding limit, legal tender status obligations for merchants, and the offline privacy architecture's implementation. The ECB has indicated a possible issuance decision in the 2026–2027 timeframe if the legislative framework is in place. Global peers—China's e-CNY, Sweden's e-krona pilot, and the Bahamas' Sand Dollar—provide comparative evidence on design trade-offs and adoption challenges.
-

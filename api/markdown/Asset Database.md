@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Database
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,45 @@ public: true
   "definition": "An Asset Database is a structured, queryable repository that stores descriptive records, binary references, version histories, and relational metadata for digital assets within a production or distribution system. It provides the persistent backbone enabling discovery, retrieval, provenance tracking, and lifecycle management of assets across teams and pipelines.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:database-system", "label": "Database System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:database-system",
+      "label": "Database System"
+    }
+  ],
   "relations": {
-    "hasPart": [{"@id": "urn:ngm:class:metadata", "label": "Metadata"}],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
     "supports": [
-      {"@id": "urn:ngm:class:asset-management-system", "label": "Asset Management System"},
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+      {
+        "@id": "urn:ngm:class:asset-management-system",
+        "label": "Asset Management System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"},
-      {"@id": "urn:ngm:class:search-engine", "label": "Search Engine"}
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
     ],
-    "relatedTo": [{"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -56,4 +78,3 @@ public: true
   - In the game and film industries, pipeline integration is the critical integration point: the asset database must expose APIs consumed by DCC tools (Maya, Houdini, Blender), build systems, and streaming runtimes. Middleware vendors (ShotGrid/Autodesk Flow, Ftrack, NukeStudio) package asset databases with project management and review tooling. Cloud-hosted variants — AWS Nimble Studio, Google Cloud's media pipeline offerings — shift storage and compute to elastic infrastructure, enabling geographically distributed teams to share a single authoritative database.
 
   - As of 2024–2025, asset databases are increasingly expected to store vector embeddings alongside traditional metadata, enabling semantic similarity search over large content libraries using neural retrieval models. Integration with generative AI workflows requires tracking the provenance of AI-generated assets — which model, which prompt, which seed — as a first-class metadata concern. Decentralised and blockchain-anchored variants are emerging to support cross-studio licensing and royalty tracking, though adoption remains early and fragmented.
-

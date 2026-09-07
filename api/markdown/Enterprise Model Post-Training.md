@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise Model Post-Training
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "enterprise-model-post-training",
   "title": "Enterprise Model Post-Training",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Custom AI Solutions", "Microsoft AI Models"],
+  "vc:outboundWikilinks": [
+    "Custom AI Solutions",
+    "Microsoft AI Models"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model-training", "label": "Model Training"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-training",
+      "label": "Model Training"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

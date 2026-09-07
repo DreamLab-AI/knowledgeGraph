@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Score-Based Generative Model
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

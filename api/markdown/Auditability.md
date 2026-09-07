@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Auditability
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

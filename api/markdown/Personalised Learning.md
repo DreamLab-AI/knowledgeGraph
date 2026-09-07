@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Personalised Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -166,4 +161,3 @@ public: true
   - The EdTech industry has deployed personalised learning at scale through platforms such as Khan Academy, Coursera, Duolingo, Carnegie Learning's MATHia, and DreamBox Learning, serving tens of millions of learners. Assessments in adaptive platforms continuously update the learner model rather than occurring as discrete events. The COVID-19 pandemic accelerated adoption of these platforms globally, generating unprecedented datasets on learner behaviour that are now being used to train more sophisticated adaptive models. Learning management systems (Moodle, Canvas, Blackboard) are integrating AI recommendation and analytics layers.
 
   - In 2024–2025 [[Large Language Models]] are transforming personalised learning by enabling natural language tutoring at scale — Khanmigo (Khan Academy), Microsoft's education Copilot, and numerous startups provide LLM-powered tutors that can answer questions, explain concepts at multiple levels of abstraction, generate worked examples, and provide Socratic guidance without prescripted content trees. Multimodal capabilities allow tutors to interpret student work (handwritten maths, diagrams) and respond visually. Privacy and equity concerns centre on data governance for learner profiles, algorithmic bias in recommendation, and the digital divide affecting access to high-quality personalised learning tools in low-resource educational contexts.
-

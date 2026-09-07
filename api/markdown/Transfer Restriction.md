@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Transfer Restriction
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

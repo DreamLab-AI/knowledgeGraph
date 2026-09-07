@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sequential Monte Carlo
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,52 +191,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sequential-monte-carlo:f62965b3b95a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8ffe8b4556a074fe9fbfce5317c57128401772b55106377cf5fbc1e91dddecfe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Monte Carlo Integration]]",
-      "resolved": "urn:visionflow:linked:monte-carlo-integration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Particle Filter]]",
-      "resolved": "urn:visionflow:linked:particle-filter",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bayesian Inference]]",
-      "resolved": "urn:visionflow:linked:bayesian-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Importance Sampling]]",
-      "resolved": "urn:visionflow:linked:importance-sampling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Numerical Methods]]",
-      "resolved": "urn:visionflow:linked:numerical-methods",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Sequential Monte Carlo is a family of methods that approximate evolving probability distributions using a set of weighted samples updated recursively as new observations arrive.

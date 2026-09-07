@@ -1,9 +1,3 @@
----
-public: true
-aliases:
-  - AI Governance and Ethics
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -40,23 +34,61 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:ai-transparency-framework", "label": "Ai Transparency Framework"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-transparency-framework",
+        "label": "Ai Transparency Framework"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ]
   },
   "qualityScore": 0.8,
   "maturity": "established"
 }
 ```
+
+

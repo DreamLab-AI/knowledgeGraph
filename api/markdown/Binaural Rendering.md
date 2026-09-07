@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Binaural Rendering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Binaural rendering is the audio signal processing technique that synthesises a three-dimensional sound field deliverable over standard headphones by convolving audio sources with head-related transfer functions (HRTFs) that model the acoustic filtering imposed by the human head, pinnae, and torso. The result is the perceptual illusion of sounds emanating from specific spatial locations outside the headphones, enabling immersive audio experiences in virtual and augmented reality environments.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-audio",
+      "label": "Spatial Audio"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:convolution", "label": "Convolution"},
-      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"}
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-audio", "label": "Immersive Audio"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
-      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialization"}
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - The spatial audio ecosystem has expanded substantially with the rise of consumer VR headsets. Platforms including Meta's Audio SDK, Apple's AUSpatialMixer, Microsoft's Spatial Sound for Windows, and Sony's 360 Reality Audio incorporate binaural rendering engines. Ambisonics (first- and higher-order) is frequently used as an intermediate representation that is decoded to binaural at runtime. Standards from the W3C Web Audio API and MPEG-H 3D Audio specify binaural rendering interfaces for browser and streaming delivery.
 
   - By 2024–2025 machine learning is reshaping binaural rendering through personalised HRTF estimation from anthropometric measurements or photographs of the listener's ears, eliminating the need for costly individual HRTF measurement sessions. Neural network-based binaural rendering can generate plausible HRTFs for novel directions not present in measured datasets and has shown improved externalisation over generic HRTFs. Apple's AirPods Pro with personalised spatial audio (introduced 2022) represents the first mass-market deployment of personalised binaural rendering.
-

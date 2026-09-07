@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Osmosis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,52 +187,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:osmosis:a08ebfb6519e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2073c4c4348d4dd3e16fb3540334dcc9d487b204f7f419bc98b1355de51f1ee0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cosmos]]",
-      "resolved": "urn:visionflow:linked:cosmos",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Market Maker]]",
-      "resolved": "urn:visionflow:linked:automated-market-maker",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Pool]]",
-      "resolved": "urn:visionflow:linked:liquidity-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Exchange]]",
-      "resolved": "urn:visionflow:linked:decentralized-exchange",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A decentralised exchange and automated market maker built in the Cosmos ecosystem that allows cross-chain token swaps and customisable liquidity pools using the Inter-Blockchain Communication protocol.

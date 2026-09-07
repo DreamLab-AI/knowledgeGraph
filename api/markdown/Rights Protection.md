@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rights Protection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,56 @@ public: true
   "definition": "Rights protection encompasses the institutional, legal, and technical mechanisms through which individual and collective entitlements—civil liberties, digital rights, property rights, privacy rights, and human rights—are identified, defended, and remedied when violated. It spans constitutional and statutory safeguards, judicial and administrative enforcement, technical privacy-by-design measures, and advocacy infrastructure. In digital and AI contexts, rights protection addresses algorithmic discrimination, surveillance overreach, automated decision-making without human review, and the erosion of informational self-determination. Effective rights protection requires both upstream prevention and downstream accountability pathways.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:human-rights", "label": "Human Rights"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:human-rights",
+      "label": "Human Rights"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
-      {"@id": "urn:ngm:class:privacy-protection", "label": "Privacy Protection"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-protection",
+        "label": "Privacy Protection"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
-      {"@id": "urn:ngm:class:participant-protection", "label": "Participant Protection"}
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:participant-protection",
+        "label": "Participant Protection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:enforcement-mechanism", "label": "Enforcement Mechanism"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+      {
+        "@id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
     ]
   },
   "quality": 0.8
@@ -62,5 +89,4 @@ public: true
 
   - The intersection of AI systems and rights protection generates distinctive challenges. Automated decision-making in credit scoring, criminal risk assessment, and content moderation can embed and amplify discriminatory patterns at scale and velocity that human adjudicators cannot review individually. Facial recognition deployed in public spaces effectively ends spatial anonymity. Behavioural profiling aggregates innocuous data points into sensitive inferences about health, sexuality, and political views never voluntarily disclosed. Rights protection responses include mandatory explainability requirements, prohibition on real-time biometric surveillance in public, and rights to human review of consequential automated decisions.
 
-  - From 2024 to 2025, rights protection institutions confronted the rapid proliferation of generative AI systems that could produce synthetic media of real individuals without consent, enable voice cloning for fraud, and generate non-consensual intimate imagery at scale. Legislative responses included the UK's Online Safety Act provisions on synthetic intimate content, proposed EU rules on deepfake disclosure, and several US state laws on AI voice cloning. Technical standards for content provenance—C2PA content credentials and watermarking—emerged as a complementary technical layer. Rights protection advocates argued that voluntary technical measures were insufficient absent binding enforcement and meaningful remedy for affected individuals.
-
+  - From 2024 to 2025, rights protection institutions confronted the rapid proliferation of generative AI systems that [private] produce synthetic media of real individuals without consent, enable voice cloning for fraud, and generate non-consensual intimate imagery at scale. Legislative responses included the UK's Online Safety Act provisions on synthetic intimate content, proposed EU rules on deepfake disclosure, and several US state laws on AI voice cloning. Technical standards for content provenance—C2PA content credentials and watermarking—emerged as a complementary technical layer. Rights protection advocates argued that voluntary technical measures were insufficient absent binding enforcement and meaningful remedy for affected individuals.

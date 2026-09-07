@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Whisper
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:whisper:ba7955598f20",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3853591d81ca2fb6034cc9696fa693e545a6e7b40b1cab4ae91f43c4e05ff775"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:linked:transformer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Attention Mechanism]]",
-      "resolved": "urn:visionflow:linked:attention-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:linked:speech-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Translation]]",
-      "resolved": "urn:visionflow:linked:translation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech Processing]]",
-      "resolved": "urn:visionflow:linked:speech-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenAI Research Organisation]]",
-      "resolved": "urn:visionflow:linked:open-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automatic Speech Recognition]]",
-      "resolved": "urn:visionflow:linked:automatic-speech-recognition",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Whisper is an automatic speech recognition model from OpenAI trained on a large multilingual dataset. It transcribes and translates speech across many languages and is released as open source.

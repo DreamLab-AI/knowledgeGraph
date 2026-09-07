@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual World Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,21 +59,48 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-world-building", "label": "Virtual World Building"},
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+      {
+        "@id": "urn:ngm:class:virtual-world-building",
+        "label": "Virtual World Building"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-asset-trading", "label": "Virtual Asset Trading"},
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
-      {"@id": "urn:ngm:class:virtual-event", "label": "Virtual Event"}
+      {
+        "@id": "urn:ngm:class:virtual-asset-trading",
+        "label": "Virtual Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:vr-rendering-engine", "label": "VR Rendering Engine"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:vr-rendering-engine",
+        "label": "VR Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
-      {"@id": "urn:ngm:class:virtual-world-infrastructure", "label": "Virtual World Infrastructure"}
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-infrastructure",
+        "label": "Virtual World Infrastructure"
+      }
     ]
   },
   "provenance": {
@@ -88,37 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-world-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:18b652c1ed7d37f619ee19b9f091267814f6e1b2690e5603bad9431ea488415b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Platform]]",
-      "resolved": "urn:visionflow:owl:class:digital-platform",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A software ecosystem that enables users to create, explore, and interact within persistent 3D virtual environments, encompassing both centralized platforms like Roblox and Fortnite, and blockchain-based decentralized platforms like Decentraland and The Sandbox that feature user-owned digital assets and governance.

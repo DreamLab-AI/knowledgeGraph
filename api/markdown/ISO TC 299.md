@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ISO/TC 299
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "ISO/TC 299 is the ISO technical committee responsible for standardization in the field of robotics, excluding toys and military applications. It develops international standards covering robot terminology, safety requirements, performance criteria and modularity for industrial, service and collaborative robots. Its work underpins the regulatory and interoperability framework for robot deployment worldwide.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:robot-standard", "label": "Robot Standard"}
+      {
+        "@id": "urn:ngm:class:robot-standard",
+        "label": "Robot Standard"
+      }
     ]
   },
   "quality": 0.72

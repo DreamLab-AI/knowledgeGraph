@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Secure Data Sharing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:secure-data-sharing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d384c9bf313d068005e16a67deb5ae4f6baadc7b2db5b1063fc019033489a89a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Confidential Collaboration]]",
-      "resolved": "urn:visionflow:linked:confidential-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Security]]",
-      "resolved": "urn:visionflow:owl:class:data-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cryptographic and access control mechanisms that enable controlled exchange of sensitive information between parties in metaverse environments while maintaining confidentiality, integrity, and regulatory compliance through encryption and permissioned access.

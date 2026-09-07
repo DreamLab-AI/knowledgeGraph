@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quantum Key Distribution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:quantum-key-distribution:c5dfa24eeab6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9114e6a5b85f5f691f49c3e9f8205bd05d843eae7d6fcb5f8d79b476ea00254d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Quantum Computation Paradigm]]",
-      "resolved": "urn:visionflow:linked:quantum-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Post-Quantum Cryptography]]",
-      "resolved": "urn:visionflow:linked:post-quantum-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A method of securely sharing cryptographic keys using the principles of quantum mechanics, such that any eavesdropping disturbs the transmission and can be detected. It provides key exchange whose security rests on physics rather than computational hardness.

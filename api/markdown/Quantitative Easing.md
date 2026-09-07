@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Quantitative Easing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

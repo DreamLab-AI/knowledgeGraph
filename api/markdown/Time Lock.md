@@ -1,36 +1,133 @@
----
-public: true
----
-
-# Time Lock
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:time-lock", "@type":"Page", "title":"Time Lock", "vc:slug":"time-lock", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:time-lock",
-  "@type":"Class",
-  "label":"Time Lock",
-  "definition":"A time lock is a cryptographic and protocol-level constraint that prevents the spending or execution of funds, transactions, or governance actions until a specified time or block height has been reached. Implemented on blockchains through absolute and relative locktime fields and dedicated script opcodes, time locks enforce delayed settlement, contestation windows, and staged execution without trusting a third party. They are foundational to payment channels, atomic swaps, vesting schedules, and the safety delays in DAO governance, where they give participants time to react before irreversible actions occur.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:bitcoin-script","label":"Bitcoin Script"}],
-    "uses":[{"@id":"urn:ngm:class:bitcoin-script","label":"Bitcoin Script"},{"@id":"urn:ngm:class:transaction","label":"Transaction"}],
-    "supports":[{"@id":"urn:ngm:class:hashed-timelock-contract","label":"Hashed Timelock Contract"},{"@id":"urn:ngm:class:lightning-network","label":"Lightning Network"},{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "enables":[{"@id":"urn:ngm:class:atomic-swap","label":"Atomic Swap"}],
-    "requires":[{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-    "dependsOn":[{"@id":"urn:ngm:class:consensus","label":"Consensus"},{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-    "implements":[{"@id":"urn:ngm:class:timelock","label":"Timelock"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:hashed-timelock-contract","label":"Hashed Timelock Contract"},{"@id":"urn:ngm:class:dao","label":"DAO"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:multisignature","label":"Multisignature"}],
-    "relatedTo":[{"@id":"urn:ngm:class:lightning-network","label":"Lightning Network"},{"@id":"urn:ngm:class:atomic-swap","label":"Atomic Swap"},{"@id":"urn:ngm:class:governance","label":"Governance"}]
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:time-lock",
+  "@type": "Page",
+  "title": "Time Lock",
+  "vc:slug": "time-lock",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:time-lock",
+  "@type": "Class",
+  "label": "Time Lock",
+  "definition": "A time lock is a cryptographic and protocol-level constraint that prevents the spending or execution of funds, transactions, or governance actions until a specified time or block height has been reached. Implemented on blockchains through absolute and relative locktime fields and dedicated script opcodes, time locks enforce delayed settlement, contestation windows, and staged execution without trusting a third party. They are foundational to payment channels, atomic swaps, vesting schedules, and the safety delays in DAO governance, where they give participants time to react before irreversible actions occur.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:hashed-timelock-contract",
+        "label": "Hashed Timelock Contract"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:hashed-timelock-contract",
+        "label": "Hashed Timelock Contract"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:timelock","label":"Timelock"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:timelock",
+      "label": "Timelock"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

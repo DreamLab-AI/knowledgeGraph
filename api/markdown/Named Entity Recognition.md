@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Named Entity Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,47 +183,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:named-entity-recognition:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9af3c3dd60ccd5abfc45fd590ea83ce04ff18e26056846c18e01f8dde1fa6858"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Information Extraction]]",
-      "resolved": "urn:visionflow:linked:information-extraction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BERT]]",
-      "resolved": "urn:visionflow:owl:class:bert",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Named Entity Recognition (NER) is the NLP task of identifying and classifying named entities (persons, organisations, locations, dates, quantities) within unstructured text into predefined categories. NER systems employ transformer-based models (BERT, RoBERTa) with sequence labelling architectures (CRF, BiLSTM-CRF) to extract structured information from documents, enabling information extraction, knowledge graph construction, and semantic search.
 
@@ -256,7 +210,7 @@ public: true
 		- **Coohom Floor Plan to 3D** ([overview](https://www.coohom.com/article/floor-plan-to-3d-ai))
 			- One-click conversion with auto-furnished interiors; ideal for rapid prototyping and client approvals.
 		- Other services (GetFloorPlan, RoomSketcher) offer similar AI-assisted conversions for sketches or scanned plans.
-  - Start with a simple RAG setup in Logseq or Obsidian linked to your Vectorworks export folder so that every time you update a client plan, your AI system can index it.
+  - Start with a simple RAG setup in Logseq or Obsidian linked to your Vectorworks export folder so that every time you update a client plan, your AI system can [private] it.
   - Use the AI Visualizer for rapid concept boards, then refine chosen options in Veras or Enscape for client review.
   - Incorporate AR with Vectorworks Nomad on site visits—clients love seeing designs overlaid in real space.
   - Keep stylistic consistency by choosing one illustration pipeline (for example, Stable Diffusion plus a ControlNet line-art workflow) and training a small set of prompts or custom LoRAs so that your presentations always look cohesive.
@@ -269,7 +223,7 @@ public: true
 		- **Coohom Floor Plan to 3D** ([overview](https://www.coohom.com/article/floor-plan-to-3d-ai))
 			- One-click conversion with auto-furnished interiors; ideal for rapid prototyping and client approvals.
 		- Other services (GetFloorPlan, RoomSketcher) offer similar AI-assisted conversions for sketches or scanned plans.
-  - Start with a simple RAG setup in Logseq or Obsidian linked to your Vectorworks export folder so that every time you update a client plan, your AI system can index it.
+  - Start with a simple RAG setup in Logseq or Obsidian linked to your Vectorworks export folder so that every time you update a client plan, your AI system can [private] it.
   - Use the AI Visualizer for rapid concept boards, then refine chosen options in Veras or Enscape for client review.
   - Incorporate AR with Vectorworks Nomad on site visits—clients love seeing designs overlaid in real space.
   - Keep stylistic consistency by choosing one illustration pipeline (for example, Stable Diffusion plus a ControlNet line-art workflow) and training a small set of prompts or custom LoRAs so that your presentations always look cohesive.

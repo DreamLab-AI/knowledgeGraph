@@ -1,55 +1,109 @@
----
-public: true
----
-
-# Academic Research
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:academic-research", "@type":"Page", "title":"Academic Research", "vc:slug":"academic-research", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:academic-research",
-  "@type":"Class",
-  "label":"Academic Research",
-  "definition":"Academic research is the systematic, disciplined inquiry conducted within universities and research institutions to generate, validate, and disseminate new knowledge. It proceeds through formulating questions, reviewing prior literature, designing and executing studies under the scientific method, and subjecting findings to peer review before publication. Its outputs include papers, datasets, and theories that are cited and built upon by the wider scholarly community. Governance norms such as reproducibility, transparency, and research integrity distinguish it from informal or commercial knowledge production.",
-  "domain":"governance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-  "relations":{
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:knowledge-graph","label":"Knowledge Graph"},
-      {"@id":"urn:ngm:class:open-access","label":"Open Access"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:academia","label":"Academia"},
-      {"@id":"urn:ngm:class:scientific-method","label":"Scientific Method"},
-      {"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:open-access","label":"Open Access"},
-      {"@id":"urn:ngm:class:knowledge-graph","label":"Knowledge Graph"}
-    ],
-    "uses":[
-      {"@id":"urn:ngm:class:scientific-method","label":"Scientific Method"},
-      {"@id":"urn:ngm:class:peer-review","label":"Peer Review"}
-    ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:peer-review","label":"Peer Review"},
-      {"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"}
-    ],
-    "requires":[
-      {"@id":"urn:ngm:class:scientific-method","label":"Scientific Method"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:governance","label":"Governance"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:academic-research",
+  "@type": "Page",
+  "title": "Academic Research",
+  "vc:slug": "academic-research",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:academic-research",
+  "@type": "Class",
+  "label": "Academic Research",
+  "definition": "Academic research is the systematic, disciplined inquiry conducted within universities and research institutions to generate, validate, and disseminate new knowledge. It proceeds through formulating questions, reviewing prior literature, designing and executing studies under the scientific method, and subjecting findings to peer review before publication. Its outputs include papers, datasets, and theories that are cited and built upon by the wider scholarly community. Governance norms such as reproducibility, transparency, and research integrity distinguish it from informal or commercial knowledge production.",
+  "domain": "governance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:open-access",
+        "label": "Open Access"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:academia",
+        "label": "Academia"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:open-access",
+        "label": "Open Access"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Academic research is disciplined inquiry within scholarly institutions that generates and validates knowledge through the [[Scientific Method]], [[Peer Review]], and norms of [[Reproducibility]]. Its outputs feed [[Open Access]] dissemination and structured [[Knowledge Graph]] representations.
 - ### Overview

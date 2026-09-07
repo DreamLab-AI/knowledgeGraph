@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Risk-Based Approach
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A risk-based approach is a regulatory and compliance methodology that allocates scrutiny and controls in proportion to assessed risk, rather than applying uniform requirements to all cases. In anti-money-laundering and cross-border compliance it directs enhanced due diligence at higher-risk customers and transactions while streamlining low-risk ones. It improves effectiveness and efficiency by focusing limited resources where harm is most likely.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cross-border-compliance", "label": "Cross Border Compliance"}, {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ]
   },
   "quality": 0.72
 }

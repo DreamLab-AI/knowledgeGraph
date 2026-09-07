@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BC-0456-virtual-asset-service-providers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bc-0456-virtual-asset-service-providers:46343093b8d8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:594a777faaf417b0f7d4fe1d7249015ffcfdb196d286bf6487bb9bf66fefae95"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AML KYC Compliance]]",
-      "resolved": "urn:visionflow:linked:aml-kyc-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Travel Rule]]",
-      "resolved": "urn:visionflow:linked:travel-rule",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[FATF]]",
-      "resolved": "urn:visionflow:linked:fatf",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Virtual asset service providers are businesses that conduct activities such as exchange, transfer, custody or issuance of crypto-assets on behalf of others, and that are subject to financial regulation.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time Computation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,56 @@ public: true
   "definition": "Real-time computation refers to computational processes that must produce correct outputs within specified, externally imposed time constraints—where the correctness of a result depends not only on its logical accuracy but on its delivery before a deadline. Hard real-time systems guarantee deadline satisfaction under all conditions, soft real-time systems tolerate occasional deadline misses, and firm real-time systems discard late results as worthless. Applications span industrial control, autonomous vehicles, robotics, financial trading, and interactive media. Real-time computation requires deterministic execution paths, bounded memory allocation, and often specialised hardware or operating system schedulers.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:real-time", "label": "Real Time"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:real-time",
+      "label": "Real Time"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time-ai", "label": "Real-Time AI"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:real-time-ai",
+        "label": "Real-Time AI"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"}
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
     ]
   },
   "quality": 0.8
@@ -62,5 +89,4 @@ public: true
 
   - The significance of real-time computation extends across any application where physical processes evolve faster than human reaction and demand automated closed-loop control: engine management in automobiles, flight control in aircraft, servo control in industrial robots, and frequency regulation in power grids. Financial high-frequency trading systems operate at nanosecond latency, making hardware co-location and kernel-bypass networking as important as algorithmic efficiency. In interactive media, real-time rendering systems such as game engines treat frame-time budgets as soft deadlines, trading visual fidelity for frame-rate consistency under varying scene complexity.
 
-  - By 2024 and 2025, real-time computation requirements intensified as autonomous vehicle stacks, surgical robots, and drone swarms demanded AI inference at millisecond latency. This drove the development of dedicated neural processing units (NPUs) with deterministic execution models and the adaptation of RTOS concepts for AI accelerator scheduling. The AUTOSAR Adaptive Platform and ROS 2 incorporated real-time executor patterns for automotive and robotic AI pipelines. Concurrently, research into model pruning, quantisation, and early-exit architectures sought to reduce worst-case neural network inference time to meet hard real-time bounds that classical deep learning deployments could not reliably satisfy.
-
+  - By 2024 and 2025, real-time computation requirements intensified as autonomous vehicle stacks, surgical robots, and drone swarms demanded AI inference at millisecond latency. This drove the development of dedicated neural processing units (NPUs) with deterministic execution models and the adaptation of RTOS concepts for AI accelerator scheduling. The AUTOSAR Adaptive Platform and ROS 2 incorporated real-time executor patterns for automotive and robotic AI pipelines. Concurrently, research into model pruning, quantisation, and early-exit architectures sought to reduce worst-case neural network inference time to meet hard real-time bounds that classical deep learning deployments [private] not reliably satisfy.

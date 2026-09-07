@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mean Squared Error
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,52 +167,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mean-squared-error:299c0b5f7107",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ccbef70a9a1d70e093884a49ffc460301b65d3825c7d0fd0a7523430da44d315"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Statistics]]",
-      "resolved": "urn:visionflow:linked:statistics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Supervised Learning]]",
-      "resolved": "urn:visionflow:linked:supervised-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gradient Descent]]",
-      "resolved": "urn:visionflow:linked:gradient-descent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Loss Function]]",
-      "resolved": "urn:visionflow:linked:loss-function",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A measure of the average squared difference between predicted values and observed values, widely used to quantify estimation and prediction error.

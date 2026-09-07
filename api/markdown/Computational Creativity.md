@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computational Creativity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,48 +7,174 @@ public: true
   "title": "Computational Creativity",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:creative-ai", "vc:label": "Creative AI"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:deep-generative-model", "vc:label": "Deep Generative Model"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:cognitive-science", "vc:label": "Cognitive Science"},
-    {"@id": "urn:visionflow:linked:cognitive-ai", "vc:label": "Cognitive AI"},
-    {"@id": "urn:visionflow:linked:procedural-content-generation", "vc:label": "Procedural Content Generation"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:music-generation", "vc:label": "Music Generation"},
-    {"@id": "urn:visionflow:linked:content-generation", "vc:label": "Content Generation"},
-    {"@id": "urn:visionflow:linked:human-ai-collaboration", "vc:label": "Human-AI Collaboration"},
-    {"@id": "urn:visionflow:linked:intellectual-property", "vc:label": "Intellectual Property"},
-    {"@id": "urn:visionflow:linked:ai-in-games", "vc:label": "AI in Games"},
-    {"@id": "urn:visionflow:linked:computational-intelligence", "vc:label": "Computational Intelligence"},
-    {"@id": "urn:visionflow:linked:evolutionary-algorithm", "vc:label": "Evolutionary Algorithm"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:creative-industries", "vc:label": "Creative Industries"},
-    {"@id": "urn:visionflow:linked:creative-software", "vc:label": "Creative Software"},
-    {"@id": "urn:visionflow:linked:creative-expression", "vc:label": "Creative Expression"},
-    {"@id": "urn:visionflow:linked:game-development", "vc:label": "Game Development"},
-    {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:linked:representation-learning", "vc:label": "Representation Learning"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:ai-research-area", "vc:label": "AI Research Area"},
-    {"@id": "urn:visionflow:linked:rule-based-systems", "vc:label": "Rule-Based Systems"},
-    {"@id": "urn:visionflow:linked:autonomous-systems", "vc:label": "Autonomous Systems"},
-    {"@id": "urn:visionflow:linked:constraint-satisfaction", "vc:label": "Constraint Satisfaction"},
-    {"@id": "urn:visionflow:linked:search-algorithm", "vc:label": "Search Algorithm"},
-    {"@id": "urn:visionflow:linked:synthetic-data", "vc:label": "Synthetic Data"},
-    {"@id": "urn:visionflow:linked:education-and-ai", "vc:label": "Education and AI"},
-    {"@id": "urn:visionflow:linked:metaverse", "vc:label": "Metaverse"},
-    {"@id": "urn:visionflow:linked:augmented-reality", "vc:label": "Augmented Reality"}
+    {
+      "@id": "urn:visionflow:linked:creative-ai",
+      "vc:label": "Creative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-generative-model",
+      "vc:label": "Deep Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-science",
+      "vc:label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-ai",
+      "vc:label": "Cognitive AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:procedural-content-generation",
+      "vc:label": "Procedural Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-generation",
+      "vc:label": "Music Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-generation",
+      "vc:label": "Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-ai-collaboration",
+      "vc:label": "Human-AI Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:intellectual-property",
+      "vc:label": "Intellectual Property"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-in-games",
+      "vc:label": "AI in Games"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-intelligence",
+      "vc:label": "Computational Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-algorithm",
+      "vc:label": "Evolutionary Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-industries",
+      "vc:label": "Creative Industries"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-software",
+      "vc:label": "Creative Software"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-expression",
+      "vc:label": "Creative Expression"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-development",
+      "vc:label": "Game Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research-area",
+      "vc:label": "AI Research Area"
+    },
+    {
+      "@id": "urn:visionflow:linked:rule-based-systems",
+      "vc:label": "Rule-Based Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-satisfaction",
+      "vc:label": "Constraint Satisfaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:search-algorithm",
+      "vc:label": "Search Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-data",
+      "vc:label": "Synthetic Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:linked:augmented-reality",
+      "vc:label": "Augmented Reality"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -69,109 +190,133 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"},
-    {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"},
-      {"@id": "urn:ngm:class:music-generation", "label": "Music Generation"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:content-generation", "label": "Content Generation"}
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:content-generation",
+        "label": "Content Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"}
+      {
+        "@id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"},
-      {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"},
-      {"@id": "urn:ngm:class:creative-industries", "label": "Creative Industries"},
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"}
+      {
+        "@id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:creative-industries",
+        "label": "Creative Industries"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based Systems"},
-      {"@id": "urn:ngm:class:discriminative-ai", "label": "Discriminative AI"}
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "@id": "urn:ngm:class:discriminative-ai",
+        "label": "Discriminative AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:computational-intelligence", "label": "Computational Intelligence"},
-      {"@id": "urn:ngm:class:ai-in-games", "label": "AI in Games"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:computational-intelligence",
+        "label": "Computational Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:creative-expression", "label": "Creative Expression"},
-      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:creative-expression",
+        "label": "Creative Expression"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computational-creativity:a7f3c9b2d1e4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:computational-creativity"},
-  "vc:resolutions": [
-    {"raw": "[[Creative AI]]", "resolved": "urn:ngm:class:creative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:ngm:class:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:ngm:class:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Generative Model]]", "resolved": "urn:ngm:class:deep-generative-model", "kind": "ResolvedLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:ngm:class:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Adversarial Network]]", "resolved": "urn:ngm:class:generative-adversarial-network", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:ngm:class:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer]]", "resolved": "urn:ngm:class:transformer", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:ngm:class:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:ngm:class:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:ngm:class:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:ngm:class:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Cognitive Science]]", "resolved": "urn:ngm:class:cognitive-science", "kind": "ResolvedLink"},
-    {"raw": "[[Cognitive AI]]", "resolved": "urn:ngm:class:cognitive-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Procedural Content Generation]]", "resolved": "urn:ngm:class:procedural-content-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:ngm:class:image-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Music Generation]]", "resolved": "urn:ngm:class:music-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Content Generation]]", "resolved": "urn:ngm:class:content-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Human-AI Collaboration]]", "resolved": "urn:ngm:class:human-ai-collaboration", "kind": "ResolvedLink"},
-    {"raw": "[[Intellectual Property]]", "resolved": "urn:ngm:class:intellectual-property", "kind": "StubLink"},
-    {"raw": "[[AI in Games]]", "resolved": "urn:ngm:class:ai-in-games", "kind": "StubLink"},
-    {"raw": "[[Computational Intelligence]]", "resolved": "urn:ngm:class:computational-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Evolutionary Algorithm]]", "resolved": "urn:ngm:class:evolutionary-algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:ngm:class:knowledge-representation", "kind": "StubLink"},
-    {"raw": "[[Training Data]]", "resolved": "urn:ngm:class:training-data", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:ngm:class:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[Creative Industries]]", "resolved": "urn:ngm:class:creative-industries", "kind": "ResolvedLink"},
-    {"raw": "[[Creative Software]]", "resolved": "urn:ngm:class:creative-software", "kind": "ResolvedLink"},
-    {"raw": "[[Creative Expression]]", "resolved": "urn:ngm:class:creative-expression", "kind": "ResolvedLink"},
-    {"raw": "[[Game Development]]", "resolved": "urn:ngm:class:game-development", "kind": "StubLink"},
-    {"raw": "[[Variational Autoencoder]]", "resolved": "urn:ngm:class:variational-autoencoder", "kind": "ResolvedLink"},
-    {"raw": "[[Representation Learning]]", "resolved": "urn:ngm:class:representation-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:ngm:class:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[AI Research Area]]", "resolved": "urn:ngm:class:ai-research-area", "kind": "StubLink"},
-    {"raw": "[[Rule-Based Systems]]", "resolved": "urn:ngm:class:rule-based-systems", "kind": "StubLink"},
-    {"raw": "[[Constraint Satisfaction]]", "resolved": "urn:ngm:class:constraint-satisfaction", "kind": "StubLink"},
-    {"raw": "[[Search Algorithm]]", "resolved": "urn:ngm:class:search-algorithm", "kind": "StubLink"},
-    {"raw": "[[Synthetic Data]]", "resolved": "urn:ngm:class:synthetic-data", "kind": "ResolvedLink"},
-    {"raw": "[[Education and AI]]", "resolved": "urn:ngm:class:education-and-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Metaverse]]", "resolved": "urn:ngm:class:metaverse", "kind": "ResolvedLink"},
-    {"raw": "[[Augmented Reality]]", "resolved": "urn:ngm:class:augmented-reality", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -285,7 +430,7 @@ public: true
       SubClassOf(ai:ComputationalCreativity
         ObjectSomeValuesFrom(ai:reducesTo ai:ConstraintOptimisation))
   ## About
-    - Computational Creativity (CC) emerged as a recognised research community in the early 1990s, formalising the longstanding ambition within [[Artificial Intelligence]] to produce systems whose outputs could be evaluated against human standards of creative achievement. The conceptual underpinning comes primarily from Margaret Boden's philosophical analysis of creativity (1990, 2004), which defines creative products as ideas or artefacts that are new, surprising, and valuable. Boden's tripartite taxonomy — exploratory, combinational, and transformational creativity — provided CC researchers with operational vocabulary for categorising what a computational system achieves.
+    - Computational Creativity (CC) emerged as a recognised research community in the early 1990s, formalising the longstanding ambition within [[Artificial Intelligence]] to produce systems whose outputs [private] be evaluated against human standards of creative achievement. The conceptual underpinning comes primarily from Margaret Boden's philosophical analysis of creativity (1990, 2004), which defines creative products as ideas or artefacts that are new, surprising, and valuable. Boden's tripartite taxonomy — exploratory, combinational, and transformational creativity — provided CC researchers with operational vocabulary for categorising what a computational system achieves.
     - A jazz improvisation system exploring a harmonic space exercises exploratory creativity; a poem generator that draws analogies between disparate conceptual domains exercises combinational creativity; a system that invents a new genre or disrupts existing aesthetic conventions aspires to transformational creativity. These three modes are not mutually exclusive and many deployed CC systems exhibit aspects of all three simultaneously.
     - Early CC systems operated through explicit [[Rule-Based Systems]] and symbolic mechanisms: Harold Cohen's AARON painting programme (operational from 1973, updated through the 1990s) used production rules encoding Cohen's aesthetic judgements to generate visual art autonomously; David Cope's Experiments in Musical Intelligence (EMI, 1980s–1990s) recombined structural fragments extracted from a corpus of classical music to produce stylistically consistent new compositions; Douglas Hofstadter's Copycat architecture (1984, with Melanie Mitchell) modelled analogy-making as a parallel terraced scan of a conceptual microworld, producing emergent creative analogical leaps from structural re-description. These systems operated within highly constrained representational spaces and their outputs were interpretable precisely because the creative logic was explicit and auditable.
     - The contemporary CC landscape is defined by the fusion of classical CC research goals with the generative power of [[Deep Generative Model]]s. [[Diffusion Model]]s, [[Generative Adversarial Network]]s, [[Variational Autoencoder]]s, and [[Large Language Models]] provide CC systems with unprecedented generative capability across modalities — photorealistic images, coherent long-form prose, harmonically complex music, protein molecular structures. However, this generative power surfaces persistent evaluation problems: statistical generation from a learned distribution does not trivially constitute creativity in Boden's sense.
@@ -319,7 +464,7 @@ public: true
     - **Memory and Learning Module** — maintains a record of previously generated and evaluated artefacts for self-appraisal and identity development.
       - Population archive (evolutionary systems): stores best solutions across generations; novelty archive stores structurally diverse solutions even if lower-fitness, preventing premature convergence to a single creative style
       - Context window (LLM-based systems): maintains working memory of the current creative session; limits are a practical constraint on creative coherence for long-form generation
-      - Retrieval-augmented episodic memory: semantic embedding index of prior creative outputs enables efficient novelty comparison across large collections; used in systems that maintain a persistent creative portfolio
+      - Retrieval-augmented episodic memory: semantic embedding [private] of prior creative outputs enables efficient novelty comparison across large collections; used in systems that maintain a persistent creative portfolio
       - Aesthetic style memory: extracted statistical summaries of the system's prior outputs that constitute its "creative identity" or aesthetic signature; enables self-consistency checks on new outputs
     - **Intentionality / Framing Layer** — a meta-level component establishing the system's creative goal and context.
       - Internal goal generation (autonomous systems): the system generates its own creative objectives from higher-level drives (e.g., maximise novelty subject to quality constraints); requires meta-learning or intrinsic motivation mechanisms
@@ -374,12 +519,12 @@ public: true
       - Monash University (Australia): CC theory, automated game design; Simon Colton
       - Queen Mary gameplay AI lab: generative AI for game content; contributed to Nature study on gameplay creativity (2025)
     - Key theoretical contributions span four decades. Margaret Boden's The Creative Mind (1990, revised 2004) provides the foundational philosophical framework. Tony Veale and Diarmuid O'Donoghue's work on conceptual blending (building on Fauconnier & Turner's cognitive linguistics framework) has produced CC systems that generate novel conceptual combinations through structure-mapping between source and target domains. Pablo Gervás (Universidad Complutense Madrid) has made foundational contributions to narrative generation, figurative language production, and the formal representation of creative processes as planning problems. Geraint Wiggins (QMUL, later Vrije Universiteit Brussel) developed a mathematical formalisation of Boden's conceptual spaces using information theory and computational search, providing a rigorous basis for evaluating claims about exploratory versus transformational creativity.
-    - Simon Colton's work at Goldsmiths (2000–2015), Imperial College London, Queen Mary University of London, and later Monash University (Australia) has been particularly influential. The Creative Tripod framework — framing creativity as requiring the simultaneous presence of skill (the ability to produce technically competent artefacts), appreciation (the ability to evaluate one's own outputs aesthetically), and imagination (the ability to generate novel ideas) — has become a standard evaluation scaffold. Colton's Painting Fool system instantiated these three properties in a visual art CC system that could explain its creative choices, express emotional states through painting style selection, and respond to newspaper articles by generating thematically appropriate images.
+    - Simon Colton's work at Goldsmiths (2000–2015), Imperial College London, Queen Mary University of London, and later Monash University (Australia) has been particularly influential. The Creative Tripod framework — framing creativity as requiring the simultaneous presence of skill (the ability to produce technically competent artefacts), appreciation (the ability to evaluate one's own outputs aesthetically), and imagination (the ability to generate novel ideas) — has become a standard evaluation scaffold. Colton's Painting Fool system instantiated these three properties in a visual art CC system that [private] explain its creative choices, express emotional states through painting style selection, and respond to newspaper articles by generating thematically appropriate images.
     - Mark Riedl and colleagues at Georgia Tech (Boyang Li, Lara Martin, Rogelio Cardona-Rivera) have produced foundational work on story generation as planning under narrative constraints, exploring the interface between [[Machine Learning]] and classical planning in the [[Cognitive AI]] tradition. The applied experimental strand is further represented by work on computational poetry generation (Gervás, Colton, Veale), algorithmic music composition (Cope, Pachet, Eigenfeldt), and computational design (Oh, Kang, Camburn).
     - Interdisciplinary connections run through [[Cognitive Science]] — particularly divergent thinking research from Guilford (1950) and Torrance (1966), whose creativity tests have been adapted for machine evaluation; aesthetic philosophy from Dewey and Goodman, whose theories of art as symbol system inform how CC systems represent aesthetic meaning; and design theory from Cross and Schön, whose reflective practice model of design thinking shapes how CC systems engage with open-ended creative problems. The philosophy of creativity (Ryle, Warnock, Currie) provides conceptual resources for debating whether computational systems can genuinely create or merely simulate creativity, a debate that CC research has consistently engaged rather than avoided.
     - The broader context of [[Cognitive Science]] is important: CC is a synthetic discipline that aims both to model human creativity computationally (with implications for understanding creativity as a cognitive phenomenon) and to produce systems that are creative in their own right (regardless of how they compare to human creative processes). This dual aim creates productive tension: models that closely mirror human creative cognition may not be computationally efficient, while computationally powerful generative systems may achieve creative outputs through mechanisms bearing no resemblance to human creative processes.
     - Key theoretical contributions span four decades. Margaret Boden's The Creative Mind (1990, revised 2004) provides the foundational philosophical framework. Tony Veale and Diarmuid O'Donoghue's work on conceptual blending (building on Fauconnier & Turner's cognitive linguistics framework) has produced CC systems that generate novel conceptual combinations through structure-mapping between source and target domains. Pablo Gervás (Universidad Complutense Madrid) has made foundational contributions to narrative generation, figurative language production, and the formal representation of creative processes as planning problems. Geraint Wiggins (Queen Mary University of London, later Vrije Universiteit Brussel) developed a mathematical formalisation of Boden's conceptual spaces using information theory and computational search, providing a rigorous basis for evaluating claims about exploratory versus transformational creativity.
-    - Simon Colton's work at Goldsmiths (2000–2015), Imperial College London, Queen Mary University of London, and later Monash University (Australia) has been particularly influential. The Creative Tripod framework — framing creativity as requiring the simultaneous presence of skill (the ability to produce technically competent artefacts), appreciation (the ability to evaluate one's own outputs aesthetically), and imagination (the ability to generate novel ideas) — has become a standard evaluation scaffold. Colton's Painting Fool system instantiated these three properties in a visual art CC system that could explain its creative choices, express emotional states through painting style selection, and respond to newspaper articles by generating thematically appropriate images.
+    - Simon Colton's work at Goldsmiths (2000–2015), Imperial College London, Queen Mary University of London, and later Monash University (Australia) has been particularly influential. The Creative Tripod framework — framing creativity as requiring the simultaneous presence of skill (the ability to produce technically competent artefacts), appreciation (the ability to evaluate one's own outputs aesthetically), and imagination (the ability to generate novel ideas) — has become a standard evaluation scaffold. Colton's Painting Fool system instantiated these three properties in a visual art CC system that [private] explain its creative choices, express emotional states through painting style selection, and respond to newspaper articles by generating thematically appropriate images.
     - Mark Riedl and colleagues at Georgia Tech (Boyang Li, Lara Martin, Rogelio Cardona-Rivera) have produced foundational work on story generation as planning under narrative constraints, exploring the interface between [[Machine Learning]] and classical planning in the [[Cognitive AI]] tradition. Pablo Picasso once said that good artists borrow, great artists steal — Riedl's work on the Scheherazade and Quixote systems explores the computational analogue: learning narrative schemas from human-authored stories by generalising across structural commonalities. The applied experimental strand is further represented by work on computational poetry generation (Gervás, Colton, Veale), algorithmic music composition (Cope, Pachet, Eigenfeldt), and computational design (Oh, Kang, Camburn).
     - Interdisciplinary connections run through [[Cognitive Science]] — particularly divergent thinking research from Guilford (1950) and Torrance (1966), whose creativity tests have been adapted for machine evaluation; aesthetic philosophy from Dewey and Goodman, whose theories of art as symbol system inform how CC systems represent aesthetic meaning; and design theory from Cross and Schön, whose reflective practice model of design thinking shapes how CC systems engage with open-ended creative problems. The philosophy of creativity (Ryle, Warnock, Currie) provides conceptual resources for debating whether computational systems can genuinely create or merely simulate creativity, a debate that CC research has consistently engaged rather than avoided.
     - The broader context of [[Cognitive Science]] is important: CC is a synthetic discipline that aims both to model human creativity computationally (with implications for understanding creativity as a cognitive phenomenon) and to produce systems that are creative in their own right (regardless of how they compare to human creative processes). This dual aim creates productive tension: models that closely mirror human creative cognition may not be computationally efficient, while computationally powerful generative systems may achieve creative outputs through mechanisms bearing no resemblance to human creative processes.
@@ -429,7 +574,7 @@ public: true
     - How should creative attribution be distributed in multi-agent CC systems where no single agent is responsible for the complete creative output?
     - What training data licensing and compensation models are commercially viable and ethically sound for the training of CC systems that will generate commercial value from creative works?
     - How can CC systems be designed to augment rather than homogenise cultural diversity at the population level, given the demonstrated tendency of large-scale CC deployment to narrow collective stylistic diversity?
-    - Is there a formal complexity-theoretic characterisation of the computational hardness of transformational creativity, and does it provide any guidance on what architectures or training procedures could in principle achieve it?
+    - Is there a formal complexity-theoretic characterisation of the computational hardness of transformational creativity, and does it provide any guidance on what architectures or training procedures [private] in principle achieve it?
     - Can CC systems for embodied creative practice (robotic painting, robotic music performance) achieve the real-time adaptive creativity demonstrated by human improvisers in ensemble performance contexts?
 
   ## Future Directions (2026–2030)

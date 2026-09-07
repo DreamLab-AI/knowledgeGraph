@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Polygon AggLayer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The Polygon AggLayer (Aggregation Layer) is a cross-chain settlement protocol that unifies liquidity and state across independent Polygon and zk-based chains. It uses zero-knowledge proofs to aggregate proofs from connected chains and enable near-atomic cross-chain transactions while preserving each chain's sovereignty. It aims to make a network of L1s and L2s feel like a single unified chain.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-layer", "label": "Data Layer"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monetary System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,42 +178,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:monetary-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:37e96ced371d2c295791a9808fb3a373ab1d149a03d03ecd2c2ef668959c9c37"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Economic Exchange]]",
-      "resolved": "urn:visionflow:linked:economic-exchange",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Financial System]]",
-      "resolved": "urn:visionflow:owl:class:financial-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The comprehensive framework of institutions, regulations, and mechanisms governing money creation, distribution, and management within an economy, now evolving to incorporate digital currencies, CBDCs, and blockchain-based financial systems.

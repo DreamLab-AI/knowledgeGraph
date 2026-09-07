@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Market Surveillance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Market surveillance is the ongoing monitoring of trading venues and participant activity by exchanges and regulators to detect manipulation, abuse, and systemic risk. It ingests order, trade, and reference data in real time, applies alerting logic, and escalates suspected violations for enforcement. It underpins fair and orderly markets and is mandated by securities regulation.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}, {"@id": "urn:ngm:class:ai-liability", "label": "AI Liability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      }
+    ]
   },
   "quality": 0.72
 }

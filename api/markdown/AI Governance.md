@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -209,62 +204,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-governance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8aab130536a9733253205f56d33c4ce36b588b12fd67d438942e162a4f0ff3f5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Ethics]]",
-      "resolved": "urn:visionflow:owl:class:ai-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Responsible AI]]",
-      "resolved": "urn:visionflow:owl:class:responsible-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies. This includes regulatory compliance (GDPR, AI Act), organizational policies for ethical AI, risk management protocols, accountability structures, and stakeholder engagement processes. AI governance addresses concerns around algorithmic transparency, human oversight, impact assessments, and the establishment of AI ethics boards. Effective governance balances innovation with risk mitigation, ensuring AI systems align with societal values and legal requirements.

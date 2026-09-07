@@ -1,8 +1,3 @@
----
-public: true
----
-
-# drug discovery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -40,34 +35,85 @@ public: true
   ],
   "relations": {
     "uses": [
-      { "@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network" },
-      { "@id": "urn:ngm:class:generative-model", "label": "Generative Model" },
-      { "@id": "urn:ngm:class:transformer", "label": "Transformer" },
-      { "@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning" },
-      { "@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder" }
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:clinical-trials", "label": "Clinical Trials" },
-      { "@id": "urn:ngm:class:precision-medicine", "label": "Personalised Medicine" },
-      { "@id": "urn:ngm:class:biomarker-discovery", "label": "Biomarker Discovery" }
+      {
+        "@id": "urn:ngm:class:clinical-trials",
+        "label": "Clinical Trials"
+      },
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Personalised Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:biomarker-discovery",
+        "label": "Biomarker Discovery"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:active-learning", "label": "Active Learning" },
-      { "@id": "urn:ngm:class:protein-structure-prediction", "label": "Protein Structure Prediction" }
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:simulation", "label": "Simulation" },
-      { "@id": "urn:ngm:class:genomics", "label": "Genomics" },
-      { "@id": "urn:ngm:class:digital-twin", "label": "Digital Twin" }
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:genomics",
+        "label": "Genomics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance" },
-      { "@id": "urn:ngm:class:federated-learning", "label": "Federated Learning" }
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:ai-drug-discovery", "label": "AI Drug Discovery" },
-    { "@id": "urn:ngm:class:computer-aided-drug-design", "label": "Computer-Aided Drug Design" }
+    {
+      "@id": "urn:ngm:class:ai-drug-discovery",
+      "label": "AI Drug Discovery"
+    },
+    {
+      "@id": "urn:ngm:class:computer-aided-drug-design",
+      "label": "Computer-Aided Drug Design"
+    }
   ],
   "quality": 0.92,
   "provenance": {

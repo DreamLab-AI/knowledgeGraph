@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Chain-of-Thought Prompting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -587,7 +582,7 @@ public: true
     18. Turpin, M., Michael, J., Perez, E., & Bowman, S. R. (2023). Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting. *NeurIPS 2023*. arXiv:2305.04388.
     19. Schaeffer, R., Miranda, B., & Koyejo, S. (2023). Are Emergent Abilities of Large Language Models a Mirage? *NeurIPS 2023*. arXiv:2304.15004.
     20. DeepSeek-AI (2025). DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning. arXiv:2501.12948.
-    21. OpenAI (2024). Learning to Reason with LLMs. OpenAI Technical Blog. https://openai.com/index/learning-to-reason-with-llms/.
+    21. OpenAI (2024). Learning to Reason with LLMs. OpenAI Technical Blog. https://openai.com/[private]/learning-to-reason-with-llms/.
     22. Anthropic (2025). Claude 3.7 Sonnet Extended Thinking Mode. Anthropic Technical Documentation. https://www.anthropic.com/news/claude-3-7-sonnet.
     23. Sprague, Z., Yin, F., Rodriguez, J. D., Bhatt, U., Bhatt, D., Pezeshkpour, P., Ye, X., & Durrett, G. (2024). To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning. arXiv:2409.12183.
     24. Liao, L., Tian, Y., & Barber, D. (2024). Verifying Chain-of-Thought Reasoning via Its Computational Graph. arXiv:2510.09312.
@@ -597,6 +592,6 @@ public: true
     28. Shao, Z. et al. (2024). DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models. arXiv:2402.03300.
 
 - ### Provenance
-  - sources:: https://arxiv.org/abs/2201.11903, https://arxiv.org/abs/2205.11916, https://arxiv.org/abs/2203.11171, https://arxiv.org/abs/2305.10601, https://arxiv.org/abs/2305.20050, https://arxiv.org/abs/2501.12948, https://openai.com/index/learning-to-reason-with-llms/, https://www.adaline.ai/blog/chain-of-thought-prompting-in-2025, https://sureprompts.com/blog/ai-reasoning-models-prompting-complete-guide-2026, https://www.unite.ai/how-openais-o3-grok-3-deepseek-r1-gemini-2-0-and-claude-3-7-differ-in-their-reasoning-approaches/, https://blockchain.news/ainews/evaluating-chain-of-thought-monitorability-in-ai-openai-s-new-framework-for-enhanced-model-transparency-and-safety
+  - sources:: https://arxiv.org/abs/2201.11903, https://arxiv.org/abs/2205.11916, https://arxiv.org/abs/2203.11171, https://arxiv.org/abs/2305.10601, https://arxiv.org/abs/2305.20050, https://arxiv.org/abs/2501.12948, https://openai.com/[private]/learning-to-reason-with-llms/, https://www.adaline.ai/blog/chain-of-thought-prompting-in-2025, https://sureprompts.com/blog/ai-reasoning-models-prompting-complete-guide-2026, https://www.unite.ai/how-openais-o3-grok-3-deepseek-r1-gemini-2-0-and-claude-3-7-differ-in-their-reasoning-approaches/, https://blockchain.news/ainews/evaluating-chain-of-thought-monitorability-in-ai-openai-s-new-framework-for-enhanced-model-transparency-and-safety
   - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

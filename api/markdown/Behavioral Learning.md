@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Behavioral Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -117,67 +112,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:behavioral-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e6bcf27c688e16b6d9ad502905433d020416890323e407d5de9e328fdeb042fc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Collection]]",
-      "resolved": "urn:visionflow:linked:data-collection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Personalization]]",
-      "resolved": "urn:visionflow:linked:personalization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Experience Optimization]]",
-      "resolved": "urn:visionflow:linked:user-experience-optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Models]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pattern Recognition]]",
-      "resolved": "urn:visionflow:owl:class:pattern-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Predictive Analytics]]",
-      "resolved": "urn:visionflow:owl:class:predictive-analytics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An AI-driven approach that analyzes and predicts user behavior patterns from digital interactions including clicks, browsing patterns, movement trajectories, and gaze tracking, enabling automated decision-making and personalized experiences through machine learning and pattern recognition.

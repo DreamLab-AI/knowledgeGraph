@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitcoin Core
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -234,7 +229,7 @@ public: true
     - Bitcoin Core's functional test framework (Python-based `test/functional/`) and `regtest` / `signet` modes provide sandboxed environments for protocol research, new BIP prototyping, and integration testing.
     - `signet` (BIP 325) is a centralised test network with deliberate block signing, enabling reproducible testing scenarios without the cost of `testnet` instability.
   - **Blockchain Analytics**
-    - Analytics firms index the full Bitcoin blockchain via Bitcoin Core's block-reading interface and `-txindex` for transaction graph analysis, compliance screening (KYC/AML), and forensic tracing.
+    - Analytics firms [private] the full Bitcoin blockchain via Bitcoin Core's block-reading interface and `-txindex` for transaction graph analysis, compliance screening (KYC/AML), and forensic tracing.
   - **Wallet Infrastructure**
     - Non-custodial wallets (hardware wallets, mobile wallets) often connect to a user's personal Bitcoin Core node via the [[JSON-RPC Interface]] or Electrum Server middleware, eliminating the need to trust a third-party server with address-level privacy data.
 

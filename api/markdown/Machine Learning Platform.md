@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Machine Learning Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:machine-learning-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b41fc0c7924f15cd4160647e7e4ae8e689ef20ce02a7b14220d819f219fd39df"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Enterprise AI Adoption]]",
-      "resolved": "urn:visionflow:linked:enterprise-ai-adoption",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:owl:class:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Comprehensive cloud-based or enterprise software systems that provide integrated tools for building, training, deploying, and managing machine learning models, including AutoML capabilities, model registries, and MLOps features.

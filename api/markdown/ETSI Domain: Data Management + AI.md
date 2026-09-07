@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI Domain: Data Management + AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,106 +165,6 @@ public: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-data-management-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cb93146f6e22ee5d540fcb40a52ffb4bd14ea4a9403e90ec336a414e712a48e9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI & Machine Learning]]",
-      "resolved": "urn:visionflow:linked:ai-and-machine-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Pipelines]]",
-      "resolved": "urn:visionflow:linked:data-pipelines",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR MEC 032]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Experiment Tracking]]",
-      "resolved": "urn:visionflow:linked:experiment-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ML Operations]]",
-      "resolved": "urn:visionflow:linked:ml-operations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MLOps Infrastructure]]",
-      "resolved": "urn:visionflow:linked:mlops-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Deployment]]",
-      "resolved": "urn:visionflow:linked:model-deployment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Registry]]",
-      "resolved": "urn:visionflow:linked:model-registry",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Management]]",
-      "resolved": "urn:visionflow:owl:class:data-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Versioning]]",
-      "resolved": "urn:visionflow:owl:class:data-versioning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Metaverse Domain Taxonomy]]",
-      "resolved": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feature Store]]",
-      "resolved": "urn:visionflow:owl:class:feature-store",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data Repository]]",
-      "resolved": "urn:visionflow:owl:class:training-data-repository",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -515,7 +410,7 @@ public: true
     - **Standardised model and data cards**: Building on Google's model card (Mitchell et al., 2019) and Gebru et al.'s datasheet for datasets (2018) frameworks, standardised machine-readable documentation formats for training data and model artefacts will become normative requirements under [[EU AI Act]] conformity assessment (Article 11 technical documentation), driving tool support in [[Model Registry]] and [[Training Data Repository]] platforms.
     - **Edge-native MLOps**: As inference moves further toward the network edge (5G [[Multi-access Edge Computing]], on-device inference on XR headsets), MLOps infrastructure must extend to manage model artefacts deployed on heterogeneous edge hardware, including weight quantisation metadata, hardware capability metadata, battery consumption budgets, and over-the-air model update mechanisms — extending the [[Model Registry]] and [[Inference Serving]] components to a distributed edge deployment topology.
     - **Synthetic data integration**: Increasing use of synthetically generated training data — using VAEs, diffusion models, and neural radiance fields for spatial data synthesis — will require [[Feature Store]]s and [[Training Data Repository|Training Data Repositories]] to manage provenance and quality metadata of synthetic datasets alongside real datasets, with ICO-aligned documentation of statistical fidelity to the original data.
-    - **Foundation model management**: As pre-trained foundation models (LLMs, vision-language models, multimodal models) become the basis for metaverse AI through fine-tuning and retrieval augmentation, the [[Model Registry]] component must evolve to manage fine-tuned adapter weights, retrieval index versions, and prompt template versions alongside full model weights — extending model versioning to the compound artefact graph of a foundation model deployment.
+    - **Foundation model management**: As pre-trained foundation models (LLMs, vision-language models, multimodal models) become the basis for metaverse AI through fine-tuning and retrieval augmentation, the [[Model Registry]] component must evolve to manage fine-tuned adapter weights, retrieval [private] versions, and prompt template versions alongside full model weights — extending model versioning to the compound artefact graph of a foundation model deployment.
     - **Lakehouse convergence**: The architectural convergence of data lakes and data warehouses (lakehouse architectures using Delta Lake, Apache Iceberg, or Apache Hudi) will become the dominant [[Training Data Repository]] pattern, providing ACID transaction semantics, time-travel queries, and schema evolution for petabyte-scale metaverse training datasets within a unified storage infrastructure.
     - **Continuous integration for ML (CI4ML)**: Automated testing pipelines that validate data quality, feature definitions, model evaluations, and deployment contracts on every commit will become standard practice, integrating [[Experiment Tracking]] and [[Model Registry]] governance with [[Data Pipelines]] automation through CI/CD systems such as GitHub Actions, GitLab CI, and Kubeflow Pipelines.
 

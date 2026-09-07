@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Action Executor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,56 +7,206 @@ public: true
   "title": "Action Executor",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:orchestration", "vc:label": "Orchestration"},
-    {"@id": "urn:visionflow:linked:orchestration-layer", "vc:label": "Orchestration Layer"},
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:runtime-environment", "vc:label": "Runtime Environment"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:automated-planning", "vc:label": "Automated Planning"},
-    {"@id": "urn:visionflow:linked:task-planning", "vc:label": "Task Planning"},
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:re-act-pattern", "vc:label": "ReAct Pattern"},
-    {"@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "Multi-Agent Orchestration"},
-    {"@id": "urn:visionflow:linked:observability", "vc:label": "Observability"},
-    {"@id": "urn:visionflow:linked:sandbox-environment", "vc:label": "Sandbox Environment"},
-    {"@id": "urn:visionflow:linked:security-architecture", "vc:label": "Security Architecture"},
-    {"@id": "urn:visionflow:linked:error-handling", "vc:label": "Error Handling"},
-    {"@id": "urn:visionflow:linked:behaviour-tree", "vc:label": "Behaviour Tree"},
-    {"@id": "urn:visionflow:linked:action-space", "vc:label": "Action Space"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain of Thought"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:memory-management", "vc:label": "Memory Management"},
-    {"@id": "urn:visionflow:linked:tool-schema", "vc:label": "Tool Schema"},
-    {"@id": "urn:visionflow:linked:json-schema", "vc:label": "JSON Schema"},
-    {"@id": "urn:visionflow:linked:code-execution", "vc:label": "Code Execution"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:multi-step-reasoning", "vc:label": "Multi-Step Reasoning"},
-    {"@id": "urn:visionflow:linked:human-oversight", "vc:label": "Human Oversight"},
-    {"@id": "urn:visionflow:linked:digital-infrastructure", "vc:label": "Digital Infrastructure"},
-    {"@id": "urn:visionflow:linked:cloud-native", "vc:label": "Cloud Native Computing"},
-    {"@id": "urn:visionflow:linked:containerisation", "vc:label": "Containerisation"},
-    {"@id": "urn:visionflow:linked:anthropic", "vc:label": "Anthropic"},
-    {"@id": "urn:visionflow:linked:openai", "vc:label": "OpenAI"},
-    {"@id": "urn:visionflow:linked:microsoft", "vc:label": "Microsoft"},
-    {"@id": "urn:visionflow:linked:aws-bedrock", "vc:label": "AWS Bedrock"},
-    {"@id": "urn:visionflow:linked:google-vertex-ai", "vc:label": "Google Vertex AI"},
-    {"@id": "urn:visionflow:linked:langgraph", "vc:label": "LangGraph"},
-    {"@id": "urn:visionflow:linked:crewai", "vc:label": "CrewAI"},
-    {"@id": "urn:visionflow:linked:autogen", "vc:label": "AutoGen"},
-    {"@id": "urn:visionflow:linked:agent-event-stream", "vc:label": "Agent Event Stream"},
-    {"@id": "urn:visionflow:linked:agent-loop", "vc:label": "Agent Loop"},
-    {"@id": "urn:visionflow:linked:planning-and-scheduling", "vc:label": "Planning and Scheduling"},
-    {"@id": "urn:visionflow:linked:ai-application", "vc:label": "AgenticSystemsDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"}
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration",
+      "vc:label": "Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration-layer",
+      "vc:label": "Orchestration Layer"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:runtime-environment",
+      "vc:label": "Runtime Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-planning",
+      "vc:label": "Automated Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-planning",
+      "vc:label": "Task Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "Multi-Agent Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability",
+      "vc:label": "Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandbox-environment",
+      "vc:label": "Sandbox Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-architecture",
+      "vc:label": "Security Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-handling",
+      "vc:label": "Error Handling"
+    },
+    {
+      "@id": "urn:visionflow:linked:behaviour-tree",
+      "vc:label": "Behaviour Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:action-space",
+      "vc:label": "Action Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol",
+      "vc:label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:memory-management",
+      "vc:label": "Memory Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-schema",
+      "vc:label": "Tool Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-schema",
+      "vc:label": "JSON Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-execution",
+      "vc:label": "Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-step-reasoning",
+      "vc:label": "Multi-Step Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-infrastructure",
+      "vc:label": "Digital Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-native",
+      "vc:label": "Cloud Native Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:containerisation",
+      "vc:label": "Containerisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:anthropic",
+      "vc:label": "Anthropic"
+    },
+    {
+      "@id": "urn:visionflow:linked:openai",
+      "vc:label": "OpenAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:microsoft",
+      "vc:label": "Microsoft"
+    },
+    {
+      "@id": "urn:visionflow:linked:aws-bedrock",
+      "vc:label": "AWS Bedrock"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-vertex-ai",
+      "vc:label": "Google Vertex AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:langgraph",
+      "vc:label": "LangGraph"
+    },
+    {
+      "@id": "urn:visionflow:linked:crewai",
+      "vc:label": "CrewAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:autogen",
+      "vc:label": "AutoGen"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-event-stream",
+      "vc:label": "Agent Event Stream"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-loop",
+      "vc:label": "Agent Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-and-scheduling",
+      "vc:label": "Planning and Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-application",
+      "vc:label": "AgenticSystemsDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -76,31 +221,84 @@ public: true
   "definition": "An Action Executor is a software component within an agentic AI system responsible for translating high-level instructions or plans into concrete, observable operations in an environment. It serves as the effector layer that bridges planning and execution by dispatching tool calls, API requests, file operations, or process invocations. Action Executors typically implement sandboxing, retry logic, and side-effect isolation to ensure safe and predictable operation. They are central to autonomous agent architectures where multiple sequential or parallel actions must be managed reliably.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agentic-ai",
+      "label": "Agentic AI"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"},
-      {"@id": "urn:ngm:class:tool-schema", "label": "Tool Schema"}
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "@id": "urn:ngm:class:tool-schema",
+        "label": "Tool Schema"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:sandbox-environment", "label": "Sandbox Environment"},
-      {"@id": "urn:ngm:class:error-handling", "label": "Error Handling"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:sandbox-environment",
+        "label": "Sandbox Environment"
+      },
+      {
+        "@id": "urn:ngm:class:error-handling",
+        "label": "Error Handling"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
-      {"@id": "urn:ngm:class:multi-step-reasoning", "label": "Multi-Step Reasoning"},
-      {"@id": "urn:ngm:class:code-execution", "label": "Code Execution"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:code-execution",
+        "label": "Code Execution"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent", "label": "Agent"},
-      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"},
-      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ]
   },
   "quality": 0.88,
@@ -108,273 +306,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ontology-augment-v2"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:visionflow:page:action-executor",
-  "@type": "LinkResolutionsAnnotation",
-  "vc:resolutions": [
-    {
-      "raw": "[[Agentic AI]]",
-      "resolved": "urn:visionflow:linked:agentic-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tool Use]]",
-      "resolved": "urn:visionflow:linked:tool-use",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Function Calling]]",
-      "resolved": "urn:visionflow:linked:function-calling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Orchestration]]",
-      "resolved": "urn:visionflow:linked:orchestration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Orchestration Layer]]",
-      "resolved": "urn:visionflow:linked:orchestration-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agent Orchestrator]]",
-      "resolved": "urn:visionflow:linked:agent-orchestrator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Runtime Environment]]",
-      "resolved": "urn:visionflow:linked:runtime-environment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agentic Workflow]]",
-      "resolved": "urn:visionflow:linked:agentic-workflow",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Planning]]",
-      "resolved": "urn:visionflow:linked:automated-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Task Planning]]",
-      "resolved": "urn:visionflow:linked:task-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agent Runtime]]",
-      "resolved": "urn:visionflow:linked:agent-runtime",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agent Frameworks]]",
-      "resolved": "urn:visionflow:linked:agent-frameworks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ReAct Pattern]]",
-      "resolved": "urn:visionflow:linked:re-act-pattern",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Agent Systems]]",
-      "resolved": "urn:visionflow:linked:multi-agent-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Agent Orchestration]]",
-      "resolved": "urn:visionflow:linked:multi-agent-orchestration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Observability]]",
-      "resolved": "urn:visionflow:linked:observability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sandbox Environment]]",
-      "resolved": "urn:visionflow:linked:sandbox-environment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Security Architecture]]",
-      "resolved": "urn:visionflow:linked:security-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Error Handling]]",
-      "resolved": "urn:visionflow:linked:error-handling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Behaviour Tree]]",
-      "resolved": "urn:visionflow:linked:behaviour-tree",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Action Space]]",
-      "resolved": "urn:visionflow:linked:action-space",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:linked:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Context Protocol]]",
-      "resolved": "urn:visionflow:linked:model-context-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agent Communication Protocol]]",
-      "resolved": "urn:visionflow:linked:agent-communication-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Chain of Thought]]",
-      "resolved": "urn:visionflow:linked:chain-of-thought",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Prompt Engineering]]",
-      "resolved": "urn:visionflow:linked:prompt-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Memory Management]]",
-      "resolved": "urn:visionflow:linked:memory-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tool Schema]]",
-      "resolved": "urn:visionflow:linked:tool-schema",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[JSON Schema]]",
-      "resolved": "urn:visionflow:linked:json-schema",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Code Execution]]",
-      "resolved": "urn:visionflow:linked:code-execution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Agent]]",
-      "resolved": "urn:visionflow:linked:autonomous-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Retrieval-Augmented Generation]]",
-      "resolved": "urn:visionflow:linked:retrieval-augmented-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Step Reasoning]]",
-      "resolved": "urn:visionflow:linked:multi-step-reasoning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human Oversight]]",
-      "resolved": "urn:visionflow:linked:human-oversight",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Infrastructure]]",
-      "resolved": "urn:visionflow:linked:digital-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cloud Native Computing]]",
-      "resolved": "urn:visionflow:linked:cloud-native",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Containerisation]]",
-      "resolved": "urn:visionflow:linked:containerisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[LangGraph]]",
-      "resolved": "urn:visionflow:linked:langgraph",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CrewAI]]",
-      "resolved": "urn:visionflow:linked:crewai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AutoGen]]",
-      "resolved": "urn:visionflow:linked:autogen",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agent Event Stream]]",
-      "resolved": "urn:visionflow:linked:agent-event-stream",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agent Loop]]",
-      "resolved": "urn:visionflow:linked:agent-loop",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Planning and Scheduling]]",
-      "resolved": "urn:visionflow:linked:planning-and-scheduling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AgenticSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:ai-application",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AlgorithmLayer]]",
-      "resolved": "urn:visionflow:linked:algorithm-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:linked:ai-agent-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OpenAI]]",
-      "resolved": "urn:visionflow:linked:openai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Microsoft]]",
-      "resolved": "urn:visionflow:linked:microsoft",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AWS Bedrock]]",
-      "resolved": "urn:visionflow:linked:aws-bedrock",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Google Vertex AI]]",
-      "resolved": "urn:visionflow:linked:google-vertex-ai",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -512,7 +443,7 @@ public: true
   ## Use Cases / Major Families
     Action Executors span a wide spectrum of deployment contexts, each imposing different requirements on isolation strength, latency tolerance, tool diversity, and compliance rigour:
 
-    - **Software Engineering Agents** — coding agents (GitHub Copilot Workspace, Cursor, Devin, Claude Code) use Action Executors to write files, run tests, invoke the compiler, open pull requests, search documentation, and execute arbitrary shell commands. Sandboxing is critical here: coding agents execute shell commands with the same permissions as the developer, so a compromised or runaway agent could delete the repository, exfiltrate credentials from environment variables, or install malicious packages. The canonical mitigation is full Firecracker microVM or container isolation, with the repository mounted read-only and a writeable overlay for the working directory. Benchmark evaluations on SWE-bench (software engineering benchmark) in 2024-2025 show that agents with well-designed executors supporting parallel test execution and structured diff feedback outperform agents with naive sequential executors by 15-25% on issue resolution rate.
+    - **Software Engineering Agents** — coding agents (GitHub Copilot Workspace, Cursor, Devin, Claude Code) use Action Executors to write files, run tests, invoke the compiler, open pull requests, search documentation, and execute arbitrary shell commands. Sandboxing is critical here: coding agents execute shell commands with the same permissions as the developer, so a compromised or runaway agent [private] delete the repository, exfiltrate credentials from environment variables, or install malicious packages. The canonical mitigation is full Firecracker microVM or container isolation, with the repository mounted read-only and a writeable overlay for the working directory. Benchmark evaluations on SWE-bench (software engineering benchmark) in 2024-2025 show that agents with well-designed executors supporting parallel test execution and structured diff feedback outperform agents with naive sequential executors by 15-25% on issue resolution rate.
     - **Customer-Service Automation** — enterprise deployments route customer queries through retrieval, summarisation, and CRM-update agents; the Action Executor calls knowledge-base search APIs, CRM write APIs (Salesforce, ServiceNow), ticketing system APIs (Zendesk, JIRA), and email dispatch APIs in sequence, with audit logs satisfying GDPR Article 22 (automated decision-making) and sector-specific data regulations. The executor's confirmation-gate pattern is widely used here: certain action categories (closing a ticket, issuing a refund, updating a customer's personal data) require a structured human-approval step before the executor will dispatch the write call, even if the planner requests it.
     - **Scientific Research Assistance** — agents performing literature search, hypothesis generation, and data analysis dispatch tool calls to PubMed and Semantic Scholar APIs, code execution sandboxes (running Python statistical analyses using pandas, scipy, and matplotlib), database query interfaces (SQL against institutional data warehouses), and instrument-control APIs in laboratory automation settings. The executor's result coercion logic is critical here: it must handle large API response payloads (PubMed returning thousands of abstracts), extract structured metadata, and truncate intelligently so that the planner receives actionable information within its context window. Research-agent benchmarks (e.g., ResearchBench, 2025) evaluate the executor's ability to handle heterogeneous tool outputs correctly.
     - **IT Operations and AIOps** — alert-triage agents call monitoring APIs (Datadog, Grafana, Prometheus), log-search tools (Elasticsearch, Splunk), infrastructure management APIs (Kubernetes control plane, AWS EC2), and runbook-execution endpoints to diagnose and remediate incidents. The executor enforces approval gates before invoking destructive operations (pod restart, scaling down a deployment, rolling back a release), with every remediation action immutably logged for post-incident review. Run-books for common failure modes are registered as composite tools in the executor's registry, abstracting multi-step remediation sequences into single callable operations.
@@ -562,7 +493,7 @@ public: true
   ## Academic Context
     The Action Executor concept unifies several classical AI sub-fields. Classical automated planning (STRIPS, PDDL) produced plan-executor pairs where a planner synthesised an action sequence and a separate execution module monitored plan execution and handled plan repair after unexpected outcomes (Wilkins 1988; Muscettola et al. 1998). PDDL (Planning Domain Definition Language) defines operators with explicit Preconditions and Effects — directly analogous to the Input/Precondition/Postcondition schema of modern tool definitions. Plan execution monitoring systems (Firby 1989; Ambros-Ingerson and Steel 1988) developed the early theory of detecting when a plan's expected state transitions do not occur, triggering plan repair — the precursor of modern retry and replanning logic in LLM agents. The Soar cognitive architecture (Laird et al. 1987) and the BDI agent model (Bratman 1987; Rao and Georgeff 1995) formalised the distinction between deliberation and action, with the architecture's effector layer handling the mapping from intentions to environment operations. In robotics, the subsumption architecture (Brooks 1986) and later behaviour-based approaches generated action selection mechanisms that sit between high-level planning and motor primitives — precursors of today's Action Executor abstraction in agentic stacks. [[Behaviour Tree]]s (Colledanchise and Ögren 2018) provide a compositional alternative to explicit plan-then-execute separation, with leaf nodes (Action and Condition nodes) serving as atomic executor interfaces that the BT ticks in real time.
 
-    The contemporary LLM-agent framing was crystallised by Yao et al. (2022/2023) in the ReAct paper (NeurIPS 2022 workshop, ICLR 2023), which showed that interleaving reasoning traces ("Thought") with action steps ("Action") — where actions are executed by a surrounding executor and observations ("Observation") fed back — dramatically improves task completion on AlfWorld (72% vs 34% without actions) and WebShop (40.6% vs 28.7%) benchmarks compared to single-pass inference and chain-of-thought-only approaches. This work established the Thought-Action-Observation (TAO) loop as the dominant execution pattern, with the action step operationalised by what practitioners now call the Action Executor. HuggingGPT / Jarvis (Shen et al. 2023) extended the TAO pattern to multi-model agents where the executor dispatches to specialised ML models (image generation, object detection, speech synthesis) rather than deterministic APIs, establishing the pattern of heterogeneous tool ecosystems. Nakano et al. (2021) demonstrated WebGPT, where a browsing executor enabled GPT-3 to retrieve and synthesise web content, anticipating the modern Action Executor's role in grounding LLM outputs in verifiable external information. Schick et al. (2023, Toolformer) showed models could learn to invoke external tools through training rather than prompting alone — a critical result motivating the shift from hard-coded tool dispatch to learned tool use — training a 6.7B parameter model to invoke APIs for calculators, calendars, search engines, and question answering systems by inserting API calls into training text and fine-tuning on successful calls. The OpenAI Function Calling API (June 2023) and Anthropic's Tool Use API (November 2023, expanded 2024) operationalised these findings at scale, providing the schema-based dispatch mechanism that underpins virtually all production Action Executor implementations.
+    The contemporary LLM-agent framing was crystallised by Yao et al. (2022/2023) in the ReAct paper (NeurIPS 2022 workshop, ICLR 2023), which showed that interleaving reasoning traces ("Thought") with action steps ("Action") — where actions are executed by a surrounding executor and observations ("Observation") fed back — dramatically improves task completion on AlfWorld (72% vs 34% without actions) and WebShop (40.6% vs 28.7%) benchmarks compared to single-pass inference and chain-of-thought-only approaches. This work established the Thought-Action-Observation (TAO) loop as the dominant execution pattern, with the action step operationalised by what practitioners now call the Action Executor. HuggingGPT / Jarvis (Shen et al. 2023) extended the TAO pattern to multi-model agents where the executor dispatches to specialised ML models (image generation, object detection, speech synthesis) rather than deterministic APIs, establishing the pattern of heterogeneous tool ecosystems. Nakano et al. (2021) demonstrated WebGPT, where a browsing executor enabled GPT-3 to retrieve and synthesise web content, anticipating the modern Action Executor's role in grounding LLM outputs in verifiable external information. Schick et al. (2023, Toolformer) showed models [private] learn to invoke external tools through training rather than prompting alone — a critical result motivating the shift from hard-coded tool dispatch to learned tool use — training a 6.7B parameter model to invoke APIs for calculators, calendars, search engines, and question answering systems by inserting API calls into training text and fine-tuning on successful calls. The OpenAI Function Calling API (June 2023) and Anthropic's Tool Use API (November 2023, expanded 2024) operationalised these findings at scale, providing the schema-based dispatch mechanism that underpins virtually all production Action Executor implementations.
 
     Research into formal verification of agentic execution (Chalupka and Perona 2016 on causal agent models; recent work on AGENTSAFE framework, 2024) is establishing theoretical foundations for proving safety properties of Action Executor designs. Adversarial studies of prompt injection through tool outputs (Greshake et al. 2023) and the broader SoK on the attack surface of agentic AI tools (2025 preprint) have informed the security engineering practices now standard in sandboxing platforms. The Policy-as-Prompt framework (2025, arXiv:2509.23994) investigates encoding governance policies directly into the agent's execution context as structured prompts, creating a programmable compliance layer that the Action Executor enforces at dispatch time without requiring separate policy-engine infrastructure.
 
@@ -599,7 +530,7 @@ public: true
   ## Research & Literature
     1. Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., and Cao, Y. (2023). "ReAct: Synergizing Reasoning and Acting in Language Models." ICLR 2023 (originally NeurIPS 2022 Workshop). arXiv:2210.03629. Introduced the Thought-Action-Observation loop; established the experimental baseline on AlfWorld (72% vs 34%) and WebShop (40.6% vs 28.7%) that motivated the Action Executor pattern.
     2. Nakano, R., Hilton, J., Balwit, A., Wu, J., Ouyang, L., Kim, C., Hesse, C., Jain, S., Kosaraju, V., Saunders, W., Jiang, X., Slama, K., Ray, A., Schulman, J., Hilton, J., and OpenAI (2021). "WebGPT: Browser-assisted question-answering with human feedback." arXiv:2112.09332. First large-scale demonstration of an LLM agent using a browsing executor to retrieve and synthesise web content for question answering.
-    3. Schick, T., Dwivedi-Yu, J., Dessì, R., Raileanu, R., Lomeli, M., Zettlemoyer, L., Cancedda, N., and Scialom, T. (2023). "Toolformer: Language Models Can Teach Themselves to Use Tools." NeurIPS 2023. Showed that a 6.7B parameter model could learn to invoke tool APIs through self-supervised training on examples of successful tool use, motivating learned rather than hard-coded tool dispatch.
+    3. Schick, T., Dwivedi-Yu, J., Dessì, R., Raileanu, R., Lomeli, M., Zettlemoyer, L., Cancedda, N., and Scialom, T. (2023). "Toolformer: Language Models Can Teach Themselves to Use Tools." NeurIPS 2023. Showed that a 6.7B parameter model [private] learn to invoke tool APIs through self-supervised training on examples of successful tool use, motivating learned rather than hard-coded tool dispatch.
     4. Patil, S. G., Zhang, T., Wang, X., and Gonzalez, J. E. (2023). "Gorilla: Large Language Model Connected with Massive APIs." arXiv:2305.15334. Demonstrated that LLMs can be fine-tuned to generate accurate API calls across 1,645 API calls from 3 major providers, with a retrieval-augmented approach that reduces hallucinated API parameters.
     5. Greshake, K., Abdelnabi, S., Mishra, S., Endres, C., Holz, T., and Fritz, M. (2023). "Not what you've signed up for: Compromising real-world LLM-integrated applications with indirect prompt injection." arXiv:2302.12173. Systematic analysis of prompt injection via tool outputs; defined the attack surface that Action Executor output sanitisation must defend.
     6. Wang, L., Ma, C., Feng, X., Zhang, Z., Yang, H., Zhang, J., Chen, Z., Tang, J., Chen, X., Lin, Y., Zhao, W. X., Wei, Z., and Wen, J. R. (2024). "A Survey on Large Language Model based Autonomous Agents." Frontiers of Computer Science. Comprehensive survey covering agent architectures including planner-executor separation, tool use, memory, and multi-agent patterns.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lido DAO
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -86,52 +81,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lido-dao:daf2bc7e694d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:df417b5c349223249e3cd4131165f81513f2eea1b561a215b3d46055300a4cb2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Governance Token]]",
-      "resolved": "urn:visionflow:linked:governance-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Treasury Management]]",
-      "resolved": "urn:visionflow:linked:treasury-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lido]]",
-      "resolved": "urn:visionflow:linked:lido",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[On-chain Governance]]",
-      "resolved": "urn:visionflow:linked:on-chain-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Autonomous Organisation]]",
-      "resolved": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The decentralised organisation that governs the Lido liquid staking protocol, setting node operator policy, fees, and treasury decisions through token-holder voting.

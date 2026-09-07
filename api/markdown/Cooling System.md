@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cooling System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cooling-system:acfedf2a7149",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6b8a6901ec9fb677b77cfe0a7fbe764ef81d4072fcc7bf30251b5f9ea7ef2c45"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware]]",
-      "resolved": "urn:visionflow:linked:hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Renewable Energy]]",
-      "resolved": "urn:visionflow:linked:renewable-energy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A system that removes heat from equipment to keep it within safe operating temperatures. In computing it covers air, liquid, and immersion methods used in servers and data centres.

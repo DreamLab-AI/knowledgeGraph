@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Two Heads Are Better Than One]]
-# Ensemble Collaborative Intelligence Principle
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[Two Heads Are Better Than One]]
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
-      {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"}
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
+        "label": "Collaborative Learning"
+      }
     ]
   },
   "provenance": {
@@ -66,26 +75,6 @@ elevatedFrom:: [[Two Heads Are Better Than One]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:two-heads-are-better-than-one:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a31d15f7bd3681c246b27cc34775dbfa59cdc2fed2615388c26ed96f9929652d"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Two Heads Are Better Than One is the principle that collaborative or ensemble approaches to problem-solving outperform individual effort, applied in AI contexts to multi-agent systems, ensemble methods, and human-in-the-loop architectures. It underpins debate-based reasoning, peer-review agent patterns, and consensus mechanisms where diverse model outputs are aggregated to improve accuracy and reduce error.

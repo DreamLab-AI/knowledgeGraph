@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Self Driving Car
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,47 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:self-driving-car:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:979b4cddf634faee03f598962584c7aa8fa4c2fabf05ee3f85c69ed0515ece58"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ADAS]]",
-      "resolved": "urn:visionflow:owl:class:adas",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Vehicle]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-vehicle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Perception System]]",
-      "resolved": "urn:visionflow:owl:class:perception-system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3-5 automation in urban and highway environments.

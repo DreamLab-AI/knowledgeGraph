@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Anoma
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:anoma:72e97b1c07ad",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:03c75ef1b745274c2243e85b380899064f5589c1e198c1df2c8bda0bd73689c0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://anoma.net]]",
-      "resolved": "urn:visionflow:linked:https-anoma-net",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://specs.anoma.net]]",
-      "resolved": "urn:visionflow:linked:https-specs-anoma-net",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Anoma is a protocol and architecture for intent-centric and privacy-preserving decentralised applications. It allows users to express desired outcomes that the network matches and settles.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Real-time Synchronization
----
-
-# Real-Time Synchronisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,22 +20,54 @@ aliases:
   "definition": "Real-time synchronisation is the continuous propagation of state changes across distributed participants so that all observers converge on a consistent, up-to-date view with minimal delay. It combines low-latency transport, conflict resolution, and clock or causal ordering to keep replicas aligned. It is essential for collaborative tools, multiplayer environments, and digital-twin mirroring.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:state-synchronisation", "label": "State Synchronization"},
-      {"@id": "urn:ngm:class:crdt", "label": "CRDT"},
-      {"@id": "urn:ngm:class:real-time-digital-twin-synchronization", "label": "Real Time Digital Twin Synchronization"},
-      {"@id": "urn:ngm:class:network-synchronization", "label": "Network Synchronization"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:state-synchronisation",
+        "label": "State Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-digital-twin-synchronization",
+        "label": "Real Time Digital Twin Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:web-socket-protocol", "label": "WebSocket Protocol"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+      {
+        "@id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-user-systems", "label": "Multi User Systems"}
+      {
+        "@id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi User Systems"
+      }
     ]
   },
   "quality": 0.72

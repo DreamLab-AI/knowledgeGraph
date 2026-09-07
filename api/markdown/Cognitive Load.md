@@ -1,40 +1,124 @@
----
-public: true
----
-
-# Cognitive Load
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cognitive-load", "@type":"Page", "title":"Cognitive Load", "vc:slug":"cognitive-load", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cognitive-load",
+  "@type": "Page",
+  "title": "Cognitive Load",
+  "vc:slug": "cognitive-load",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:cognitive-load",
-  "@type":"Class",
-  "label":"Cognitive Load",
-  "definition":"Cognitive load is the total amount of working-memory resource demanded by a task, interface, or learning activity at a given moment. It is commonly decomposed into intrinsic load (inherent task difficulty), extraneous load (imposed by poor presentation), and germane load (effort devoted to building durable mental schemas). Managing cognitive load is a central goal of user-experience and interaction design, since exceeding a user's capacity degrades comprehension, accuracy, and satisfaction.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:user-experience","label":"User Experience"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:user-experience","label":"User Experience"}],
-    "dependsOn":[{"@id":"urn:ngm:class:working-memory","label":"Working Memory"},{"@id":"urn:ngm:class:attention","label":"Attention"}],
-    "relatedTo":[{"@id":"urn:ngm:class:mental-model","label":"Mental Model"},{"@id":"urn:ngm:class:usability","label":"Usability"},{"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"}],
-    "affects":[{"@id":"urn:ngm:class:interaction-design","label":"Interaction Design"}],
-    "supports":[{"@id":"urn:ngm:class:usability","label":"Usability"}],
-    "enables":[{"@id":"urn:ngm:class:user-research","label":"User Research"}],
-    "requires":[{"@id":"urn:ngm:class:attention","label":"Attention"}],
-    "uses":[{"@id":"urn:ngm:class:mental-model","label":"Mental Model"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:affordance","label":"Affordance"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:ergonomics","label":"Ergonomics"}],
-    "supportedBy":[{"@id":"urn:ngm:class:cognitive-walkthrough","label":"Cognitive Walkthrough"}],
-    "informedBy":[{"@id":"urn:ngm:class:user-research","label":"User Research"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cognitive-load",
+  "@type": "Class",
+  "label": "Cognitive Load",
+  "definition": "Cognitive load is the total amount of working-memory resource demanded by a task, interface, or learning activity at a given moment. It is commonly decomposed into intrinsic load (inherent task difficulty), extraneous load (imposed by poor presentation), and germane load (effort devoted to building durable mental schemas). Managing cognitive load is a central goal of user-experience and interaction design, since exceeding a user's capacity degrades comprehension, accuracy, and satisfaction.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:user-experience",
+      "label": "User Experience"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "@id": "urn:ngm:class:attention",
+        "label": "Attention"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      },
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "affects": [
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:attention",
+        "label": "Attention"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      }
+    ],
+    "supportedBy": [
+      {
+        "@id": "urn:ngm:class:cognitive-walkthrough",
+        "label": "Cognitive Walkthrough"
+      }
+    ],
+    "informedBy": [
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

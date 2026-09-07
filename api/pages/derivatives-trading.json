@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:derivatives-trading",
   "domain": "blockchain",
-  "definition": "Derivatives trading is the buying and selling of financial contracts whose value is derived from an underlying asset, index or rate, such as futures, options, swaps and perpetual contracts. Traders use these instruments to hedge exposure, gain leveraged directional exposure or speculate on price movements without holding the underlying. In decentralised finance, derivatives are implemented through smart contracts that handle margin, settlement and liquidation on-chain.",
+  "definition": "Derivatives trading is the buying and selling of financial contracts whose value is derived from an underlying asset, [private] or rate, such as futures, options, swaps and perpetual contracts. Traders use these instruments to hedge exposure, gain leveraged directional exposure or speculate on price movements without holding the underlying. In decentralised finance, derivatives are implemented through smart contracts that handle margin, settlement and liquidation on-chain.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-asset-trading",

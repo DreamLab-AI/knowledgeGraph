@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Compliance Testing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Compliance testing is the systematic verification that a product, system, or process conforms to a defined standard, specification, or regulatory requirement. It produces objective, repeatable measurements that are compared against documented acceptance criteria to determine pass or fail status. It is a core component of validation and certification workflows, providing the evidentiary basis for conformity claims.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:validation-process", "label": "Validation Process"}, {"@id": "urn:ngm:class:display-metrology", "label": "Display Metrology"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:validation-process",
+        "label": "Validation Process"
+      },
+      {
+        "@id": "urn:ngm:class:display-metrology",
+        "label": "Display Metrology"
+      }
+    ]
   },
   "quality": 0.72
 }

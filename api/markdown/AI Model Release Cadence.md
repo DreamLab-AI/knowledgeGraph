@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Model Release Cadence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,14 @@ public: true
   "vc:slug": "ai-model-release-cadence",
   "title": "AI Model Release Cadence",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Governance Frameworks", "Applied AI Layer", "Claude Fable 5.1", "Competitive Strategy", "GPT-6", "Model Release"],
+  "vc:outboundWikilinks": [
+    "AI Governance Frameworks",
+    "Applied AI Layer",
+    "Claude Fable 5.1",
+    "Competitive Strategy",
+    "GPT-6",
+    "Model Release"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +28,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-safety-preparedness-framework", "label": "AI Safety Preparedness Framework"}, {"@id": "urn:ngm:class:competitive-strategy", "label": "Competitive Strategy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-safety-preparedness-framework",
+        "label": "AI Safety Preparedness Framework"
+      },
+      {
+        "@id": "urn:ngm:class:competitive-strategy",
+        "label": "Competitive Strategy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Replication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,7 +152,7 @@ public: true
 - ### Content
   - Replication is the most direct answer to the question of how a system survives the failure of any single component: keep more than one copy. By placing copies on independent machines, racks, or regions, a system can continue serving reads and writes when a node crashes, a disk fails, or an entire data centre goes offline. The same copies that provide durability also enable scaling reads, since queries can be spread across replicas rather than funnelled to one master.
 
-  - The central tension is keeping copies consistent. Synchronous replication confirms a write only once all (or a quorum of) replicas have applied it, guaranteeing that any subsequent read sees the latest data — at the cost of higher write latency and reduced availability if replicas are unreachable. Asynchronous replication acknowledges the write immediately and propagates it in the background, minimising latency but admitting a window in which replicas diverge and a failure could lose recent writes.
+  - The central tension is keeping copies consistent. Synchronous replication confirms a write only once all (or a quorum of) replicas have applied it, guaranteeing that any subsequent read sees the latest data — at the cost of higher write latency and reduced availability if replicas are unreachable. Asynchronous replication acknowledges the write immediately and propagates it in the background, minimising latency but admitting a window in which replicas diverge and a failure [private] lose recent writes.
 
   - Topology shapes behaviour. Single-leader replication routes all writes through one primary and streams them to followers, simple to reason about but bottlenecked and exposed to failover complexity. Multi-leader and leaderless designs accept writes anywhere for higher availability and lower latency, but must then resolve concurrent conflicting updates — through last-writer-wins, version vectors, application-level merge, or conflict-free replicated data types whose algebraic structure guarantees automatic convergence.
 

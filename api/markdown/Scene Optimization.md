@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scene Optimization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,18 +50,36 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:occlusion-culling", "label": "Occlusion Culling"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:scene-management", "label": "Scene Management"}
+      {
+        "@id": "urn:ngm:class:scene-management",
+        "label": "Scene Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"}
+      {
+        "@id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      }
     ]
   },
   "quality": 0.7,
@@ -77,26 +90,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:scene-optimization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:57dabb066feb213796b662f97e48d47d303c8548cc435e34465bded6ca85213b"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Scene Optimization is the set of techniques applied to 3D environments to reduce computational and bandwidth overhead while preserving perceptual fidelity, encompassing polygon reduction, texture compression and atlasing, draw call batching, occlusion culling, and level-of-detail management. These techniques are essential for achieving real-time frame rates on resource-constrained XR hardware and for supporting large concurrent user counts in metaverse platforms.

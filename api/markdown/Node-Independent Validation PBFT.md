@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Node-Independent Validation PBFT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,22 +59,52 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tendermint-consensus", "label": "Tendermint Consensus"},
-      {"@id": "urn:ngm:class:gasper-consensus", "label": "Gasper Consensus"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerant-system", "label": "Byzantine Fault Tolerant System"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+      {
+        "@id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:gasper-consensus",
+        "label": "Gasper Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerant-system",
+        "label": "Byzantine Fault Tolerant System"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
     ]
   },
   "provenance": {
@@ -89,37 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:node-independent-validation-pbft:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:59b22ed5c5ad722df63d332b05b4999652e69cb55ca133cfcfcccb463446a90b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Practical Byzantine Fault Tolerance]]",
-      "resolved": "urn:visionflow:owl:class:practical-byzantine-fault-tolerance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

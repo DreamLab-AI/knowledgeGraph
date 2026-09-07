@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Governance Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:governance-layer:4ce895d32977",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bfefb99da3ba3665bd7e8987598884ad166760e4b36881cb3f700f5571747856"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Policy Layer]]",
-      "resolved": "urn:visionflow:linked:policy-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Layer]]",
-      "resolved": "urn:visionflow:linked:identity-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Institutional Layer]]",
-      "resolved": "urn:visionflow:linked:institutional-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compliance Layer]]",
-      "resolved": "urn:visionflow:linked:compliance-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralised Governance]]",
-      "resolved": "urn:visionflow:linked:decentralised-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mechanism Design]]",
-      "resolved": "urn:visionflow:linked:mechanism-design",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Governance Layer is the cross-cutting stratum where human and institutional intent over a system is decided, recorded, and amended. It sits above the Policy Layer, which it parameterises, and draws on identity and economic structures to allocate decision rights. It contains decision processes, voting mechanisms, charters, and the records of who may change what.

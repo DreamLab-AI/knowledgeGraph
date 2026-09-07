@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Snapshot Block
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A snapshot block is a specific block height at which token balances are recorded to determine voting weight in a governance proposal, freezing eligibility so that votes reflect holdings at one fixed moment rather than fluctuating balances. Using a past block prevents vote-buying or borrowing tokens after a proposal opens. It is a core primitive in off-chain and on-chain DAO voting systems.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ]
   },
   "quality": 0.72

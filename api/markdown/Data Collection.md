@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Collection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,4 +171,3 @@ public: true
   - In the machine learning era, data collection has taken on strategic importance beyond its traditional role as a cost of research. Proprietary training datasets — derived from years of user interaction — represent significant competitive moats for AI developers. Simultaneously, the legal and ethical dimensions of collection have intensified: copyright challenges to web-scraped training data, GDPR enforcement actions against behavioural tracking, and emerging AI governance requirements for training data transparency are reshaping what organisations can collect and how.
 
   - In 2024-2025, three trends are reshaping data collection practice. First, synthetic data generation is displacing some real-world collection, particularly for rare events, safety-critical scenarios, and privacy-sensitive domains. Second, data-centric AI methodologies have shifted focus from model architecture to collection quality, with systematic collection auditing and active learning loops becoming standard practice at leading labs. Third, regulatory requirements for AI training data provenance — embedded in the EU AI Act and proposed US legislation — are pushing organisations to instrument collection pipelines with provenance metadata from first capture.
-

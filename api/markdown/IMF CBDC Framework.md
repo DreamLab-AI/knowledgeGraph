@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IMF CBDC Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "The IMF CBDC Framework is the International Monetary Fund's analytical and policy guidance for the design, adoption, and macro-financial implications of central bank digital currencies. It addresses monetary-policy transmission, financial stability, cross-border interoperability, and capacity development for member-state central banks. The framework helps jurisdictions evaluate whether and how to issue a CBDC.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:imf", "label": "IMF"}],
-    "supports": [{"@id": "urn:ngm:class:cbdcs", "label": "CBDCs"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:imf",
+        "label": "IMF"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ]
   },
   "quality": 0.72
 }

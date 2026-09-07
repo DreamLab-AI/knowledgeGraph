@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Calculus
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -611,6 +605,6 @@ public: true
     - Adam update: θₜ₊₁ ← θₜ - α m̂ₜ / (√v̂ₜ + ε)
 
 - ### Provenance
-  - sources:: arxiv.org/abs/2409.04707; arxiv.org/pdf/2310.20360; arxiv.org/html/2603.08824; arxiv.org/pdf/2503.13795; geeksforgeeks.org/mastering-calculus-for-machine-learning-key-concepts-and-applications/; global-sci.com/index.php/jml/article/download/13210/26336; willett.psd.uchicago.edu/teaching/mathematical-foundations-of-machine-learning/; link.springer.com/article/10.1007/s00158-026-04299-6; arxiv.org/pdf/2602.15538
+  - sources:: arxiv.org/abs/2409.04707; arxiv.org/pdf/2310.20360; arxiv.org/html/2603.08824; arxiv.org/pdf/2503.13795; geeksforgeeks.org/mastering-calculus-for-machine-learning-key-concepts-and-applications/; global-sci.com/[private].php/jml/article/download/13210/26336; willett.psd.uchicago.edu/teaching/mathematical-foundations-of-machine-learning/; link.springer.com/article/10.1007/s00158-026-04299-6; arxiv.org/pdf/2602.15538
   - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Securitize
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:securitize:6198a999cd7a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b3af4ca06b5798f54827e4b79ec5c0f301c08aacfc073bfc9b9beede58c21e48"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Securities Regulation]]",
-      "resolved": "urn:visionflow:linked:securities-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Security Token]]",
-      "resolved": "urn:visionflow:linked:security-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Text Tokenisation]]",
-      "resolved": "urn:visionflow:linked:tokenisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asset Tokenisation]]",
-      "resolved": "urn:visionflow:linked:asset-tokenisation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A financial technology company providing infrastructure for issuing, managing and trading tokenised securities on blockchain networks.

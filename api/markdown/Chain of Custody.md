@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Chain of Custody
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -175,7 +170,7 @@ public: true
   - Chain of Custody is a form of [[Provenance Tracking]] that intersects with [[Digital Evidence Chain of Custody]] in criminal and civil litigation contexts, and with [[Data Provenance]] in AI and data science workflows. It relies on [[Audit Logging]] systems to create immutable records and depends on [[Compliance Verification]] processes to confirm the chain has not been broken. In supply chain contexts it directly supports [[Supply Chain Traceability]] by ensuring that goods and raw materials can be traced back to verified sources. Blockchain-based implementations are increasingly used to make chain-of-custody records tamper-resistant.
 
 - ### Content
-  - The chain of custody concept originated in legal and forensic contexts, where courts required prosecutors to demonstrate that physical evidence—fingerprints, biological samples, digital media—had not been contaminated or substituted between crime scene collection and courtroom presentation. Formalised procedures emerged in law enforcement agencies during the twentieth century, specifying sealed evidence bags, witness signatures, evidence locker access logs, and laboratory receipt confirmations. Failure to maintain an unbroken chain could render evidence inadmissible regardless of its probative value.
+  - The chain of custody concept originated in legal and forensic contexts, where courts required prosecutors to demonstrate that physical evidence—fingerprints, biological samples, digital media—had not been contaminated or substituted between crime scene collection and courtroom presentation. Formalised procedures emerged in law enforcement agencies during the twentieth century, specifying sealed evidence bags, witness signatures, evidence locker access logs, and laboratory receipt confirmations. Failure to maintain an unbroken chain [private] render evidence inadmissible regardless of its probative value.
 
   - The mechanism works by requiring documentation at every transfer event: who gave the item, who received it, under what conditions, and in what state. In physical forensics this involves tamper-evident packaging and hash values of digital copies. In digital forensics the chain extends to computing hash checksums of disk images, logging who accessed analysis workstations, and recording every tool run against the evidence. The goal is to enable any third party—defence counsel, expert witnesses, appellate courts—to independently verify the provenance of every finding.
 

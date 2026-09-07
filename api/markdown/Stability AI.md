@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stability AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,46 +167,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:stability-ai:b279a57bb53d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cfc535350b6ba0836a3cc59ef3942d504b62a3dbc6b6e979204314082f62d129"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:linked:stable-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text-to-Image]]",
-      "resolved": "urn:visionflow:linked:text-to-image",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:linked:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:linked:generative-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

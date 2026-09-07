@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Device Drivers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A device driver is a software component that mediates between an operating system and a specific hardware device, translating generic OS calls into the device's command and register protocol. Drivers expose a uniform interface so applications can use peripherals without knowing their internal details, and they handle interrupts, buffering, and power state. They are the foundation of the hardware abstraction layer that makes hardware portable to software.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-interface-device", "label": "Human Interface Device"},
-      {"@id": "urn:ngm:class:hardware-abstraction-layer-hal", "label": "Hardware Abstraction Layer (HAL)"}
+      {
+        "@id": "urn:ngm:class:human-interface-device",
+        "label": "Human Interface Device"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer-hal",
+        "label": "Hardware Abstraction Layer (HAL)"
+      }
     ]
   },
   "quality": 0.72

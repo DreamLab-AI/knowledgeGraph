@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LlamaIndex
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,7 +168,7 @@ public: true
   - [[LlamaIndex]] belongs to the [[Agent Frameworks]] category alongside [[LangChain]], with a complementary focus on data ingestion and retrieval rather than agent orchestration. It uses [[Embeddings]] to represent document chunks in high-dimensional vector space, stores them in [[Vector Database]] backends (Pinecone, Weaviate, Chroma, pgvector), and retrieves relevant chunks at query time to ground [[Large Language Models]] responses in accurate, current information—the core [[Retrieval-Augmented Generation]] pattern. [[Semantic Search]] is the retrieval mechanism, comparing query embeddings to document embeddings by cosine similarity. LlamaIndex also provides [[Knowledge Graph Construction]] utilities for building graph-structured indices. [[Information Retrieval]] theory informs its reranking and query decomposition strategies that improve multi-hop reasoning across document sets.
 
 - ### Content
-  - LlamaIndex was created by Jerry Liu and released in October 2022 as GPT Index, a minimal library abstracting the pattern of loading documents, splitting them into chunks, embedding them, and storing them in a vector index for later retrieval by GPT-3/4 queries. The initial implementation was a direct response to the context window limitations of early GPT-3 API deployments: because the model could only process a few thousand tokens, external data had to be retrieved and injected selectively rather than provided in full. The project renamed to LlamaIndex in early 2023 and rapidly attracted community contributions as RAG became the dominant architectural pattern for enterprise LLM applications. LlamaIndex Inc. raised $8.5 million in a seed round in 2023 to commercialise the open-source framework.
+  - LlamaIndex was created by Jerry Liu and released in October 2022 as GPT Index, a minimal library abstracting the pattern of loading documents, splitting them into chunks, embedding them, and storing them in a vector [private] for later retrieval by GPT-3/4 queries. The initial implementation was a direct response to the context window limitations of early GPT-3 API deployments: because the model [private] only process a few thousand tokens, external data had to be retrieved and injected selectively rather than provided in full. The project renamed to LlamaIndex in early 2023 and rapidly attracted community contributions as RAG became the dominant architectural pattern for enterprise LLM applications. LlamaIndex Inc. raised $8.5 million in a seed round in 2023 to commercialise the open-source framework.
 
   - The framework's core abstraction is the Index, a data structure that pre-processes source documents for efficient retrieval. The VectorStoreIndex stores embedding vectors and performs approximate nearest-neighbour search; the SummaryIndex summarises document chunks hierarchically; the KnowledgeGraphIndex extracts entities and relations into a graph structure; and the PropertyGraphIndex (introduced 2024) stores typed property graphs enabling structured traversal alongside vector retrieval. Query pipelines compose retrievers, rerankers (using cross-encoder models), and response synthesisers into declarative DAG pipelines. LlamaIndex's RouterQueryEngine intelligently routes queries to different indices or agents based on query semantics, enabling multi-domain RAG systems over heterogeneous data sources.
 

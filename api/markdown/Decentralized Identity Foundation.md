@@ -1,8 +1,3 @@
----
-public: true
----
-
-# decentralized identity foundation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ACL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,52 @@ public: true
   "definition": "An Access Control List (ACL) is a data structure attached to a resource — such as a file, directory, or network interface — that enumerates which subjects (users, groups, or processes) are permitted to perform which operations on that resource. Each entry in the list is called an Access Control Entry (ACE) and specifies a principal, a set of permissions (read, write, execute, delete), and whether those permissions are granted or denied. ACLs originated in file-system security (POSIX, NTFS) and were subsequently extended to networking, where routers and firewalls use IP-level ACLs to filter packets by source address, destination port, and protocol. In distributed and cloud environments ACLs underpin fine-grained authorisation that complements role-based and attribute-based access-control models.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:access-control", "label": "Access Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:access-control-system", "label": "Access Control System"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:policy-enforcement-point", "label": "Policy Enforcement Point"}
+      {
+        "@id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - In networking contexts, IP ACLs are applied to router interfaces or firewall rule sets to filter traffic by source and destination IP address, TCP/UDP port, and protocol type. Standard ACLs filter on source address alone, while extended ACLs inspect both source and destination as well as protocol metadata. Network ACLs are stateless by default — each packet is evaluated independently — making them complementary to stateful firewall inspection rather than a replacement.
 
   - Modern cloud and distributed systems have extended ACL concepts to object storage (bucket policies), API gateways, Kubernetes RBAC, and smart-contract permission systems. Despite the growth of role-based and attribute-based access control, ACLs remain important for per-resource granularity that role models alone cannot express. They are routinely audited for privilege creep, and automated tooling increasingly generates and validates ACL entries against declared security policies to reduce misconfiguration risk.
-

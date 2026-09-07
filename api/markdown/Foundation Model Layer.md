@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Foundation Model Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:foundation-model-layer:af4a70856126",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:459a9fba5b35d3f47cb88a9c5fd1cb8a8004849d1dd02306c952affb45a3cfd5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Training Layer]]",
-      "resolved": "urn:visionflow:linked:training-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Architecture Layer]]",
-      "resolved": "urn:visionflow:linked:model-architecture-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Layer]]",
-      "resolved": "urn:visionflow:linked:model-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inference Layer]]",
-      "resolved": "urn:visionflow:linked:inference-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Supervised Learning]]",
-      "resolved": "urn:visionflow:linked:self-supervised-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Foundation Model Layer is the stratum that holds large, broadly pretrained models intended for adaptation to many downstream tasks. It sits above the Training Layer that produced it and below the Model and Inference Layers that specialise and serve it. It contains base model weights, pretraining configurations, and adaptation interfaces.

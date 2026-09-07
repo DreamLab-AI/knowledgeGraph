@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Record-Keeping System
----
-
-# Record Keeping System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,19 +51,46 @@ aliases:
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"}
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +100,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:record-keeping-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8ca7b2b852d4cb492bb9467a15aae9d8398c9e9a635c89e88025f3261a08c30b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Record Keeping System, in the blockchain domain, is an immutable, append-only ledger in which transactions are cryptographically hashed, linked via Merkle trees, and validated by a consensus mechanism to provide a tamper-evident audit trail. It replaces or augments centralised databases in applications requiring transparent provenance, non-repudiation, and multi-party data integrity—including asset registries, supply-chain tracking, and compliance logging.

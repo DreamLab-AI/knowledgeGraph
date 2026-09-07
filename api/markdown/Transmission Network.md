@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transmission Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "A transmission network is the high-voltage infrastructure that carries bulk electrical power over long distances from generation sites to distribution substations near consumers. Comprising transmission lines, transformers, and switching stations, it minimises resistive losses through high voltages and is operated as a synchronised grid balancing supply and demand in real time.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      }
+    ]
   },
   "quality": 0.72
 }

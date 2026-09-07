@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - WebDev and Consumer Tooling
----
-
-# Web Dev and Consumer Tooling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,15 +51,30 @@ aliases:
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:web-technology", "label": "Web Technology"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ]
   },
   "quality": 0.35,
@@ -77,37 +85,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:web-dev-and-consumer-tooling:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:411a49ebb03deaccbcc9a6f5bcebdbcc2e34aeecbff4af2beaaa0170e21f8843"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:owl:class:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RFC 2119 SHOULD Normative Keyword]]",
-      "resolved": "urn:visionflow:owl:class:should",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The ecosystem of frameworks, deployment platforms, low-code builders, and developer utilities used to construct and ship web applications and AI-assisted consumer products. Encompasses front-end frameworks (React Three Fiber, Streamlit, FastHTML), deployment pipelines (Vercel), and no-code/low-code AI builders enabling rapid product prototyping.

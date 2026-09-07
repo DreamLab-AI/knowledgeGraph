@@ -1,37 +1,106 @@
----
-public: true
----
-
-# Capital Allocation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:capital-allocation", "@type":"Page", "title":"Capital Allocation", "vc:slug":"capital-allocation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:capital-allocation",
+  "@type": "Page",
+  "title": "Capital Allocation",
+  "vc:slug": "capital-allocation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:capital-allocation",
-  "@type":"Class",
-  "label":"Capital Allocation",
-  "definition":"Capital allocation is the process by which firms, investors and markets distribute scarce financial resources across competing uses to maximise risk-adjusted return or strategic value. It spans corporate decisions about investing, returning capital and funding, as well as investor decisions about deploying funds across assets and opportunities. Effective allocation channels capital towards its most productive uses, making it central to both firm performance and the efficiency of the wider financial system.",
-  "domain":"finance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:investment-management","label":"Investment Management"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:capital-efficiency","label":"Capital Efficiency"},{"@id":"urn:ngm:class:price-discovery","label":"Price Discovery"}],
-    "requires":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"},{"@id":"urn:ngm:class:portfolio-management","label":"Portfolio Management"}],
-    "uses":[{"@id":"urn:ngm:class:resource-allocation","label":"Resource Allocation"}],
-    "supports":[{"@id":"urn:ngm:class:capital-markets","label":"Capital Markets"}],
-    "dependsOn":[{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "partOf":[{"@id":"urn:ngm:class:investment-management","label":"Investment Management"}],
-    "implements":[{"@id":"urn:ngm:class:portfolio-management","label":"Portfolio Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:financial-services","label":"Financial Services"}],
-    "relatedTo":[{"@id":"urn:ngm:class:financial-system","label":"Financial System"},{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:capital-allocation",
+  "@type": "Class",
+  "label": "Capital Allocation",
+  "definition": "Capital allocation is the process by which firms, investors and markets distribute scarce financial resources across competing uses to maximise risk-adjusted return or strategic value. It spans corporate decisions about investing, returning capital and funding, as well as investor decisions about deploying funds across assets and opportunities. Effective allocation channels capital towards its most productive uses, making it central to both firm performance and the efficiency of the wider financial system.",
+  "domain": "finance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:investment-management",
+      "label": "Investment Management"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:capital-efficiency",
+        "label": "Capital Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:portfolio-management",
+        "label": "Portfolio Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:portfolio-management",
+        "label": "Portfolio Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

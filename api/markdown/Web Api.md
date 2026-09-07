@@ -1,37 +1,116 @@
----
-public: true
----
-
-# Web Api
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:web-api", "@type":"Page", "title":"Web Api", "vc:slug":"web-api", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:web-api",
+  "@type": "Page",
+  "title": "Web Api",
+  "vc:slug": "web-api",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:web-api",
-  "@type":"Class",
-  "label":"Web Api",
-  "definition":"A web API is an application programming interface exposed over the web using HTTP, allowing programs to request and exchange data with a remote service rather than rendering pages for humans. It defines a contract of endpoints, request and response formats, authentication and error semantics, commonly returning structured data such as JSON. Web APIs are the backbone of integration between applications, mobile clients, microservices and third-party platforms, with REST and GraphQL being two prevailing architectural styles.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:api-design","label":"API Design"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:api-design","label":"API Design"}],
-    "hasPart":[{"@id":"urn:ngm:class:http","label":"HTTP"}],
-    "uses":[{"@id":"urn:ngm:class:http","label":"HTTP"}],
-    "enables":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"},{"@id":"urn:ngm:class:microservices","label":"Microservices"}],
-    "requires":[{"@id":"urn:ngm:class:client-server-architecture","label":"Client-Server Architecture"}],
-    "supports":[{"@id":"urn:ngm:class:microservices","label":"Microservices"},{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "implements":[{"@id":"urn:ngm:class:rest","label":"REST"}],
-    "dependsOn":[{"@id":"urn:ngm:class:web-standards","label":"Web Standards"}],
-    "relatedTo":[{"@id":"urn:ngm:class:rest","label":"REST"},{"@id":"urn:ngm:class:client-server-architecture","label":"Client-Server Architecture"},{"@id":"urn:ngm:class:web-standards","label":"Web Standards"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:microservices","label":"Microservices"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:web-api",
+  "@type": "Class",
+  "label": "Web Api",
+  "definition": "A web API is an application programming interface exposed over the web using HTTP, allowing programs to request and exchange data with a remote service rather than rendering pages for humans. It defines a contract of endpoints, request and response formats, authentication and error semantics, commonly returning structured data such as JSON. Web APIs are the backbone of integration between applications, mobile clients, microservices and third-party platforms, with REST and GraphQL being two prevailing architectural styles.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:api-design",
+      "label": "API Design"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "@id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

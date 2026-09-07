@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Satellite Communication
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,42 +20,108 @@ public: true
   "definition": "Satellite communication is the use of artificial Earth-orbiting satellites as relay stations to transmit signals — including voice, data, video, and telemetry — between ground terminals separated by large distances or challenging terrain. Signals are uplinked from a ground station to a satellite transponder, which amplifies and retransmits them on a different frequency to one or more receiving terminals. Different orbital regimes (GEO, MEO, LEO) offer distinct trade-offs between coverage footprint, latency, and capacity.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}, {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:telecommunications",
+      "label": "Telecommunications"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:gps-navigation", "label": "Gps Navigation"},
-      {"@id": "urn:ngm:class:remote-sensing", "label": "Remote Sensing"},
-      {"@id": "urn:ngm:class:global-connectivity", "label": "Global Connectivity"},
-      {"@id": "urn:ngm:class:broadcasting", "label": "Broadcasting"}
+      {
+        "@id": "urn:ngm:class:gps-navigation",
+        "label": "Gps Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:global-connectivity",
+        "label": "Global Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:broadcasting",
+        "label": "Broadcasting"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:spectrum-allocation", "label": "Spectrum Allocation"},
-      {"@id": "urn:ngm:class:frequency-band", "label": "Frequency Band"},
-      {"@id": "urn:ngm:class:orbital-mechanics", "label": "Orbital Mechanics"}
+      {
+        "@id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:frequency-band",
+        "label": "Frequency Band"
+      },
+      {
+        "@id": "urn:ngm:class:orbital-mechanics",
+        "label": "Orbital Mechanics"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:ground-station", "label": "Ground Station"},
-      {"@id": "urn:ngm:class:transponder", "label": "Transponder"},
-      {"@id": "urn:ngm:class:satellite-link", "label": "Satellite Link"}
+      {
+        "@id": "urn:ngm:class:ground-station",
+        "label": "Ground Station"
+      },
+      {
+        "@id": "urn:ngm:class:transponder",
+        "label": "Transponder"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-link",
+        "label": "Satellite Link"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spectrum-allocation", "label": "Spectrum Allocation"},
-      {"@id": "urn:ngm:class:launch-vehicle", "label": "Launch Vehicle"}
+      {
+        "@id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:launch-vehicle",
+        "label": "Launch Vehicle"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"},
-      {"@id": "urn:ngm:class:disaster-response", "label": "Disaster Response"}
+      {
+        "@id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-response",
+        "label": "Disaster Response"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fibre-optic-network", "label": "Fibre Optic Network"}
+      {
+        "@id": "urn:ngm:class:fibre-optic-network",
+        "label": "Fibre Optic Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:low-earth-orbit", "label": "Low Earth Orbit"},
-      {"@id": "urn:ngm:class:geostationary-orbit", "label": "Geostationary Orbit"}
+      {
+        "@id": "urn:ngm:class:low-earth-orbit",
+        "label": "Low Earth Orbit"
+      },
+      {
+        "@id": "urn:ngm:class:geostationary-orbit",
+        "label": "Geostationary Orbit"
+      }
     ]
   },
   "sameAs": [],

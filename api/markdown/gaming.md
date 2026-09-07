@@ -1,8 +1,3 @@
----
-public: true
----
-
-# gaming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gaming:8517b64a7dfa",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:df0e67b478dd30079cb4337ddb51d25164423d2799aaa86292aeef9876aea201"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Game Engine]]",
-      "resolved": "urn:visionflow:linked:game-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GameFi]]",
-      "resolved": "urn:visionflow:linked:game-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual World]]",
-      "resolved": "urn:visionflow:linked:virtual-world",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Game Development]]",
-      "resolved": "urn:visionflow:linked:game-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Video_game]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-video-game",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Video_game_industry]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-video-game-industry",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Gaming is the activity of playing electronic games and the industry that produces them. It spans hardware, software, online services, and competitive play.

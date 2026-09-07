@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Try-On
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -78,42 +73,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-try-on:22c709f6f01d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7cd914f40ec391703bffcda827d89a513dcdb1f3c37eb9e8422eb390d5f46ec1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:linked:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[E-Commerce]]",
-      "resolved": "urn:visionflow:linked:e-commerce",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Virtual try-on is a computer vision and graphics technique that overlays clothing, accessories, or cosmetics onto an image or video of a person so they can preview how an item would look.

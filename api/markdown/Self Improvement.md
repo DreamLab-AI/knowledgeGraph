@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Self Improvement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,19 +50,46 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:recursive-self-improvement", "label": "Recursive Self-Improvement"},
-      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:recursive-self-improvement",
+        "label": "Recursive Self-Improvement"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"}
+      {
+        "@id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      }
     ]
   },
   "quality": 0.8,
@@ -78,32 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:self-improvement:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c1dfe1e72ad1cea4e779d42ab8821efe0dba3a25212ddc1ca50606f91841196e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Capability for autonomous self-improvement.

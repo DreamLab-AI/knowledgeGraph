@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Affective Computing System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,54 +7,198 @@ public: true
   "title": "Affective Computing System",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:affective-computing", "vc:label": "Affective Computing"},
-    {"@id": "urn:visionflow:linked:emotion-recognition", "vc:label": "Emotion Recognition"},
-    {"@id": "urn:visionflow:linked:facial-recognition", "vc:label": "Facial Recognition"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:behavioral-modeling", "vc:label": "Behavioral Modeling"},
-    {"@id": "urn:visionflow:linked:adaptive-interfaces", "vc:label": "Adaptive Interfaces"},
-    {"@id": "urn:visionflow:linked:adaptive-learning", "vc:label": "Adaptive Learning"},
-    {"@id": "urn:visionflow:linked:cognitive-science", "vc:label": "Cognitive Science"},
-    {"@id": "urn:visionflow:linked:sentiment-analysis", "vc:label": "Sentiment Analysis"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:physiological-signal-processing", "vc:label": "Physiological Signal Processing"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:recurrent-neural-network", "vc:label": "Recurrent Neural Network"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:wearable-computing", "vc:label": "Wearable Computing"},
-    {"@id": "urn:visionflow:linked:human-computer-interaction", "vc:label": "Human-Computer Interaction"},
-    {"@id": "urn:visionflow:linked:emotion-aware-interaction", "vc:label": "Emotion Aware Interaction"},
-    {"@id": "urn:visionflow:linked:emotional-analytics-engine", "vc:label": "Emotional Analytics Engine"},
-    {"@id": "urn:visionflow:linked:cognitive-feedback-interface", "vc:label": "Cognitive Feedback Interface"},
-    {"@id": "urn:visionflow:linked:mental-health-monitoring", "vc:label": "Mental Health Monitoring"},
-    {"@id": "urn:visionflow:linked:digital-health", "vc:label": "Digital Health"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:social-robotics", "vc:label": "Social Robotics"},
-    {"@id": "urn:visionflow:linked:autonomous-vehicle", "vc:label": "Autonomous Vehicle"},
-    {"@id": "urn:visionflow:linked:extended-reality", "vc:label": "Extended Reality"},
-    {"@id": "urn:visionflow:linked:user-experience-design", "vc:label": "User Experience Design"},
-    {"@id": "urn:visionflow:linked:emotional-intelligence", "vc:label": "Emotional Intelligence"},
-    {"@id": "urn:visionflow:linked:empathetic-ai", "vc:label": "Empathetic AI"},
-    {"@id": "urn:visionflow:linked:rational-agent", "vc:label": "Rational Agent"},
-    {"@id": "urn:visionflow:linked:symbolic-ai", "vc:label": "Symbolic AI"},
-    {"@id": "urn:visionflow:linked:facial-action-coding-system", "vc:label": "Facial Action Coding System"},
-    {"@id": "urn:visionflow:linked:cognitive-load", "vc:label": "Cognitive Load"},
-    {"@id": "urn:visionflow:linked:annotated-training-data", "vc:label": "Annotated Dataset"},
-    {"@id": "urn:visionflow:linked:data-labelling", "vc:label": "Data Labelling"},
-    {"@id": "urn:visionflow:linked:multimodal-fusion", "vc:label": "Multimodal Fusion"},
-    {"@id": "urn:visionflow:linked:ai-regulation", "vc:label": "AI Regulation"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:intelligent-tutoring", "vc:label": "Intelligent Tutoring"},
-    {"@id": "urn:visionflow:linked:sensor-fusion", "vc:label": "Sensor Fusion"},
-    {"@id": "urn:visionflow:linked:eeg", "vc:label": "EEG"},
-    {"@id": "urn:visionflow:linked:cognitive-ai", "vc:label": "Cognitive AI"},
-    {"@id": "urn:visionflow:linked:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:visionflow:linked:privacy-by-design", "vc:label": "Privacy by Design"}
+    {
+      "@id": "urn:visionflow:linked:affective-computing",
+      "vc:label": "Affective Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:emotion-recognition",
+      "vc:label": "Emotion Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:facial-recognition",
+      "vc:label": "Facial Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:behavioral-modeling",
+      "vc:label": "Behavioral Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-interfaces",
+      "vc:label": "Adaptive Interfaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-learning",
+      "vc:label": "Adaptive Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-science",
+      "vc:label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:physiological-signal-processing",
+      "vc:label": "Physiological Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:wearable-computing",
+      "vc:label": "Wearable Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:emotion-aware-interaction",
+      "vc:label": "Emotion Aware Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:emotional-analytics-engine",
+      "vc:label": "Emotional Analytics Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-feedback-interface",
+      "vc:label": "Cognitive Feedback Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:mental-health-monitoring",
+      "vc:label": "Mental Health Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-health",
+      "vc:label": "Digital Health"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-robotics",
+      "vc:label": "Social Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicle",
+      "vc:label": "Autonomous Vehicle"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-reality",
+      "vc:label": "Extended Reality"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience-design",
+      "vc:label": "User Experience Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:emotional-intelligence",
+      "vc:label": "Emotional Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:empathetic-ai",
+      "vc:label": "Empathetic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:rational-agent",
+      "vc:label": "Rational Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:facial-action-coding-system",
+      "vc:label": "Facial Action Coding System"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-load",
+      "vc:label": "Cognitive Load"
+    },
+    {
+      "@id": "urn:visionflow:linked:annotated-training-data",
+      "vc:label": "Annotated Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-labelling",
+      "vc:label": "Data Labelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-fusion",
+      "vc:label": "Multimodal Fusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-regulation",
+      "vc:label": "AI Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-tutoring",
+      "vc:label": "Intelligent Tutoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:eeg",
+      "vc:label": "EEG"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-ai",
+      "vc:label": "Cognitive AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-by-design",
+      "vc:label": "Privacy by Design"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -75,72 +214,210 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"},
-    {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+    {
+      "@id": "urn:ngm:class:affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:emotion-recognition", "label": "Emotion Recognition"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:multimodal-fusion", "label": "Multimodal Fusion"},
-      {"@id": "urn:ngm:class:affective-response-module", "label": "Affective Response Module"},
-      {"@id": "urn:ngm:class:cognitive-feedback-interface", "label": "Cognitive Feedback Interface"}
+      {
+        "@id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-fusion",
+        "label": "Multimodal Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:affective-response-module",
+        "label": "Affective Response Module"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-feedback-interface",
+        "label": "Cognitive Feedback Interface"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:facial-recognition", "label": "Facial Recognition"},
-      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:physiological-signal-processing", "label": "Physiological Signal Processing"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:wearable-computing", "label": "Wearable Computing"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:physiological-signal-processing",
+        "label": "Physiological Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:adaptive-interfaces", "label": "Adaptive Interfaces"},
-      {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"},
-      {"@id": "urn:ngm:class:emotion-aware-interaction", "label": "Emotion Aware Interaction"},
-      {"@id": "urn:ngm:class:emotional-analytics-engine", "label": "Emotional Analytics Engine"},
-      {"@id": "urn:ngm:class:mental-health-monitoring", "label": "Mental Health Monitoring"},
-      {"@id": "urn:ngm:class:empathetic-ai", "label": "Empathetic AI"},
-      {"@id": "urn:ngm:class:intelligent-tutoring", "label": "Intelligent Tutoring"}
+      {
+        "@id": "urn:ngm:class:adaptive-interfaces",
+        "label": "Adaptive Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:emotion-aware-interaction",
+        "label": "Emotion Aware Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-analytics-engine",
+        "label": "Emotional Analytics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:mental-health-monitoring",
+        "label": "Mental Health Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:empathetic-ai",
+        "label": "Empathetic AI"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring",
+        "label": "Intelligent Tutoring"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:annotated-training-data", "label": "Annotated Dataset"},
-      {"@id": "urn:ngm:class:data-labelling", "label": "Data Labelling"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:annotated-training-data",
+        "label": "Annotated Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:data-labelling",
+        "label": "Data Labelling"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "depends-on": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:data-labelling", "label": "Data Labelling"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-labelling",
+        "label": "Data Labelling"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"},
-      {"@id": "urn:ngm:class:digital-health", "label": "Digital Health"},
-      {"@id": "urn:ngm:class:emotional-intelligence", "label": "Emotional Intelligence"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:cognitive-load", "label": "Cognitive Load"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "@id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-intelligence",
+        "label": "Emotional Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rational-agent", "label": "Rational Agent"},
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"}
+      {
+        "@id": "urn:ngm:class:rational-agent",
+        "label": "Rational Agent"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:digital-health", "label": "Digital Health"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:emotion-ai-system", "label": "Emotion AI System"},
-    {"@id": "urn:ngm:class:affective-hci-system", "label": "Affective HCI System"}
+    {
+      "@id": "urn:ngm:class:emotion-ai-system",
+      "label": "Emotion AI System"
+    },
+    {
+      "@id": "urn:ngm:class:affective-hci-system",
+      "label": "Affective HCI System"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
@@ -148,64 +425,6 @@ public: true
     "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.87
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:annotation:affective-computing-system-link-resolutions",
-  "@type": "LinkResolutionsAnnotation",
-  "resolutions": [
-    {"raw": "Affective Computing", "@id": "urn:visionflow:linked:affective-computing", "kind": "ResolvedLink"},
-    {"raw": "Emotion Recognition", "@id": "urn:visionflow:linked:emotion-recognition", "kind": "ResolvedLink"},
-    {"raw": "Facial Recognition", "@id": "urn:visionflow:linked:facial-recognition", "kind": "ResolvedLink"},
-    {"raw": "Natural Language Processing", "@id": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "Behavioral Modeling", "@id": "urn:visionflow:linked:behavioral-modeling", "kind": "ResolvedLink"},
-    {"raw": "Adaptive Interfaces", "@id": "urn:visionflow:linked:adaptive-interfaces", "kind": "StubLink"},
-    {"raw": "Adaptive Learning", "@id": "urn:visionflow:linked:adaptive-learning", "kind": "ResolvedLink"},
-    {"raw": "Cognitive Science", "@id": "urn:visionflow:linked:cognitive-science", "kind": "ResolvedLink"},
-    {"raw": "Sentiment Analysis", "@id": "urn:visionflow:linked:sentiment-analysis", "kind": "ResolvedLink"},
-    {"raw": "Computer Vision", "@id": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "Deep Learning", "@id": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "Speech Recognition", "@id": "urn:visionflow:linked:speech-recognition", "kind": "ResolvedLink"},
-    {"raw": "Physiological Signal Processing", "@id": "urn:visionflow:linked:physiological-signal-processing", "kind": "ResolvedLink"},
-    {"raw": "Convolutional Neural Network", "@id": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "Recurrent Neural Network", "@id": "urn:visionflow:linked:recurrent-neural-network", "kind": "ResolvedLink"},
-    {"raw": "Transformer Architecture", "@id": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "Multimodal AI", "@id": "urn:visionflow:linked:multimodal-ai", "kind": "ResolvedLink"},
-    {"raw": "Wearable Computing", "@id": "urn:visionflow:linked:wearable-computing", "kind": "StubLink"},
-    {"raw": "Human-Computer Interaction", "@id": "urn:visionflow:linked:human-computer-interaction", "kind": "ResolvedLink"},
-    {"raw": "Emotion Aware Interaction", "@id": "urn:visionflow:linked:emotion-aware-interaction", "kind": "ResolvedLink"},
-    {"raw": "Emotional Analytics Engine", "@id": "urn:visionflow:linked:emotional-analytics-engine", "kind": "ResolvedLink"},
-    {"raw": "Cognitive Feedback Interface", "@id": "urn:visionflow:linked:cognitive-feedback-interface", "kind": "ResolvedLink"},
-    {"raw": "Mental Health Monitoring", "@id": "urn:visionflow:linked:mental-health-monitoring", "kind": "StubLink"},
-    {"raw": "Digital Health", "@id": "urn:visionflow:linked:digital-health", "kind": "StubLink"},
-    {"raw": "Machine Learning", "@id": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "Federated Learning", "@id": "urn:visionflow:linked:federated-learning", "kind": "ResolvedLink"},
-    {"raw": "Transfer Learning", "@id": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "Social Robotics", "@id": "urn:visionflow:linked:social-robotics", "kind": "ResolvedLink"},
-    {"raw": "Autonomous Vehicle", "@id": "urn:visionflow:linked:autonomous-vehicle", "kind": "ResolvedLink"},
-    {"raw": "Extended Reality", "@id": "urn:visionflow:linked:extended-reality", "kind": "ResolvedLink"},
-    {"raw": "User Experience Design", "@id": "urn:visionflow:linked:user-experience-design", "kind": "StubLink"},
-    {"raw": "Emotional Intelligence", "@id": "urn:visionflow:linked:emotional-intelligence", "kind": "ResolvedLink"},
-    {"raw": "Empathetic AI", "@id": "urn:visionflow:linked:empathetic-ai", "kind": "ResolvedLink"},
-    {"raw": "Rational Agent", "@id": "urn:visionflow:linked:rational-agent", "kind": "StubLink"},
-    {"raw": "Symbolic AI", "@id": "urn:visionflow:linked:symbolic-ai", "kind": "StubLink"},
-    {"raw": "Facial Action Coding System", "@id": "urn:visionflow:linked:facial-action-coding-system", "kind": "ResolvedLink"},
-    {"raw": "Cognitive Load", "@id": "urn:visionflow:linked:cognitive-load", "kind": "ResolvedLink"},
-    {"raw": "Annotated Dataset", "@id": "urn:visionflow:linked:annotated-training-data", "kind": "StubLink"},
-    {"raw": "Data Labelling", "@id": "urn:visionflow:linked:data-labelling", "kind": "StubLink"},
-    {"raw": "Multimodal Fusion", "@id": "urn:visionflow:linked:multimodal-fusion", "kind": "StubLink"},
-    {"raw": "AI Regulation", "@id": "urn:visionflow:linked:ai-regulation", "kind": "StubLink"},
-    {"raw": "Explainable AI", "@id": "urn:visionflow:linked:explainable-ai", "kind": "ResolvedLink"},
-    {"raw": "Intelligent Tutoring", "@id": "urn:visionflow:linked:intelligent-tutoring", "kind": "StubLink"},
-    {"raw": "Sensor Fusion", "@id": "urn:visionflow:linked:sensor-fusion", "kind": "StubLink"},
-    {"raw": "EEG", "@id": "urn:visionflow:linked:eeg", "kind": "StubLink"},
-    {"raw": "Cognitive AI", "@id": "urn:visionflow:linked:cognitive-ai", "kind": "ResolvedLink"},
-    {"raw": "Edge Computing", "@id": "urn:visionflow:linked:edge-computing", "kind": "StubLink"},
-    {"raw": "Privacy by Design", "@id": "urn:visionflow:linked:privacy-by-design", "kind": "StubLink"}
-  ]
 }
 ```
 
@@ -427,7 +646,7 @@ public: true
 
     The evolution of Affective Computing Systems from theoretical construct to deployed technology traces a trajectory shaped by successive waves of machine learning capability that each unlocked new practical possibilities. Picard's 1997 formulation at MIT Media Lab was necessarily prescient rather than immediately implementable: the computational resources and learning algorithms available in the late 1990s were insufficient to reliably decode the complexity of multi-channel affective signals in real-time settings. Early experimental systems of the 1990s and early 2000s typically operated on single modalities under tightly controlled laboratory conditions — face-front, consistent illumination, cooperative subjects performing acted emotional expressions — yielding classification accuracies that looked impressive on laboratory benchmarks but fell dramatically in naturalistic deployment.
 
-    The support vector machine (SVM) era (approximately 2000–2012) brought the first genuinely functional Affective Computing Systems operating on real physiological signals. Systems such as those developed by Healey and Picard (2005) for driver stress detection demonstrated that galvanic skin response, heart rate, and respiration signals captured from wearable sensors could reliably distinguish low, medium, and high stress states during urban driving, achieving approximately 97.4% accuracy under binary stress classification in an early deployment study. The DEAP dataset construction (Koelstra et al., 2012) canonised the multimodal physiological affect benchmark paradigm, enabling systematic comparison of feature engineering and classification approaches across EEG, skin conductance, plethysmography, skin temperature, and respiration channels.
+    The support vector machine (SVM) era (approximately 2000–2012) brought the first genuinely functional Affective Computing Systems operating on real physiological signals. Systems such as those developed by Healey and Picard (2005) for driver stress detection demonstrated that galvanic skin response, heart rate, and respiration signals captured from wearable sensors [private] reliably distinguish low, medium, and high stress states during urban driving, achieving approximately 97.4% accuracy under binary stress classification in an early deployment study. The DEAP dataset construction (Koelstra et al., 2012) canonised the multimodal physiological affect benchmark paradigm, enabling systematic comparison of feature engineering and classification approaches across EEG, skin conductance, plethysmography, skin temperature, and respiration channels.
 
     [[Deep Learning]] transformed the field from approximately 2014 onward in two phases. The first phase (2014–2018) applied [[Convolutional Neural Network]] architectures to facial expression recognition, progressively overtaking hand-crafted Action Unit detectors on FER benchmark datasets and enabling mobile deployment of face-based affect sensing through model compression. The AffectNet dataset (Mollahosseini et al., 2017, released publicly 2019) provided one million facial images with both categorical and dimensional (valence–arousal) annotations collected in the wild, enabling training of large-scale CNN models that generalised beyond laboratory conditions. The second phase (2018–present) brought [[Transformer Architecture]] attention mechanisms and pre-training at scale. wav2vec 2.0 and HuBERT transformed speech emotion recognition by pre-training self-supervised acoustic representations on large unlabelled speech corpora, dramatically reducing the amount of labelled emotional speech required to train effective classifiers. Multimodal [[Transformer Architecture]] models — learning cross-modal alignments between audio, video, and text — enabled the hybrid fusion architectures that now dominate benchmark results.
 
@@ -497,7 +716,7 @@ public: true
 
     All three patterns require careful consideration of transparency and informed consent in system design. [[Explainable AI]] requirements are increasingly explicit in the EU AI Act's High-Risk AI System provisions: systems must provide documentation of their inferential logic and failure modes, enable human oversight of automated decisions, and support user rights to explanation of AI-generated assessments. For Affective Computing Systems operating under the monitoring and alerting pattern, this means that when a driver drowsiness alert fires or a clinical deterioration flag is raised, the system must be capable of providing an interpretable account of which signals triggered the decision — not merely a black-box probability score. This interpretability requirement motivates architectural choices that maintain a layer of human-readable intermediate representation (action unit activations, valence–arousal coordinates, specific signal features exceeding thresholds) rather than operating entirely through uninterpretable end-to-end deep learning pipelines.
 
-    The longer-term integration of Affective Computing Systems with large conversational AI models — where the affect inference pipeline feeds into a language model that generates contextually appropriate emotional responses — is an emerging architectural pattern that blurs the boundary between affect sensing and [[Empathetic AI]] generation. Systems of this type, illustrated by the MER 2025 LLM-integration experiments, treat the language model as a semantic fusion component that not only classifies affect but also generates an interpretive narrative ("the user appears frustrated because the task difficulty may be too high and they have been working for 45 minutes without a break"). This richer, contextual affect understanding supports more nuanced application-layer responses but also raises sharper questions about the accuracy and accountability of AI emotional interpretation, particularly in high-stakes therapeutic or educational contexts where an incorrect affective interpretation could compound rather than mitigate distress. The field's trajectory toward affective language model integration will make these questions increasingly central to both system design and regulatory compliance in the 2026–2030 horizon.
+    The longer-term integration of Affective Computing Systems with large conversational AI models — where the affect inference pipeline feeds into a language model that generates contextually appropriate emotional responses — is an emerging architectural pattern that blurs the boundary between affect sensing and [[Empathetic AI]] generation. Systems of this type, illustrated by the MER 2025 LLM-integration experiments, treat the language model as a semantic fusion component that not only classifies affect but also generates an interpretive narrative ("the user appears frustrated because the task difficulty may be too high and they have been working for 45 minutes without a break"). This richer, contextual affect understanding supports more nuanced application-layer responses but also raises sharper questions about the accuracy and accountability of AI emotional interpretation, particularly in high-stakes therapeutic or educational contexts where an incorrect affective interpretation [private] compound rather than mitigate distress. The field's trajectory toward affective language model integration will make these questions increasingly central to both system design and regulatory compliance in the 2026–2030 horizon.
 
   ## Key Technical Parameters and Performance Benchmarks
 

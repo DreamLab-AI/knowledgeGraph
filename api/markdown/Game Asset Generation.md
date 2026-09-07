@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Game Asset Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,53 @@ public: true
   "definition": "Game asset generation is the automated or semi-automated production of digital resources — including 3D meshes, textures, animations, sound effects, and narrative content — used in interactive entertainment, employing procedural algorithms, machine learning models, or generative AI to reduce manual authoring costs, accelerate iteration cycles, and enable content scale impossible through purely human workflows.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:procedural-content-generation",
+      "label": "Procedural Content Generation"
+    }
+  ],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}, {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"}, {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"}],
-    "enables": [{"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}, {"@id": "urn:ngm:class:asset-pipeline", "label": "Asset Pipeline"}],
-    "relatedTo": [{"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}, {"@id": "urn:ngm:class:text-to-image-generation", "label": "Text-to-Image Generation"}],
-    "dependsOn": [{"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}]
+    "uses": [
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -50,4 +86,3 @@ public: true
   - In the game development ecosystem, asset generation tools are integrated into content creation pipelines via plugins for Blender, Unreal Engine, and Unity. Middleware vendors including Houdini (SideFX), SpeedTree (Interactive Data Visualization), and Substance (Adobe) provide the generation scaffolding, whilst cloud services from NVIDIA Picasso and AWS GameLift handle compute-intensive inference. This ecosystem lowers the entry barrier for indie studios that cannot afford large art teams.
 
   - In 2024–2025, multi-modal foundation models capable of generating consistent 3D characters, environments, and animations from text descriptions are maturing from research prototypes to commercially viable tools. Studios are navigating intellectual-property questions around training data provenance, with several industry bodies (IGDA, BAFTA Games) developing guidelines. Simultaneously, real-time neural texture compression and level-of-detail generation are becoming feasible on consumer GPUs, enabling generative asset streaming directly to players.
-

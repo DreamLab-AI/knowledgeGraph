@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scalability Pattern
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,16 +46,34 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:technology-infrastructure-domain-architecture", "label": "Infrastructure Architecture"},
-      {"@id": "urn:ngm:class:performance-benchmarks", "label": "Performance Benchmarks"}
+      {
+        "@id": "urn:ngm:class:technology-infrastructure-domain-architecture",
+        "label": "Infrastructure Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      }
     ]
   },
   "provenance": {
@@ -70,26 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:scalability-pattern:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b420399899546297abe8cf73d3952a4bcc351c480923e7912df1e6ca5aa82cac"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Scalability Pattern is a reusable architectural strategy that enables a system to handle increasing load by adding resources or restructuring components without degrading performance or reliability. Patterns include horizontal scaling (adding parallel instances), vertical scaling (increasing instance capacity), sharding, caching, and event-driven decomposition, each suited to different bottleneck profiles.

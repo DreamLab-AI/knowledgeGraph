@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Infrastructure Inspection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Infrastructure inspection is the robotic application of surveying and assessing physical assets such as power lines, pipelines, bridges, wind turbines, and buildings to detect defects, corrosion, and structural risk. Robots equipped with cameras, thermal and LiDAR sensors capture data in environments that are hazardous, remote, or costly for human crews. It improves safety and inspection frequency while generating quantitative condition records for predictive maintenance.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:aerial-robot", "label": "Aerial Robot"},
-      {"@id": "urn:ngm:class:ground-robot", "label": "Ground Robot"}
+      {
+        "@id": "urn:ngm:class:aerial-robot",
+        "label": "Aerial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      }
     ]
   },
   "quality": 0.72

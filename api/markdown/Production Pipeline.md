@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Production Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,36 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:digital-asset-workflow", "label": "Digital Asset Workflow"}
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-workflow",
+        "label": "Digital Asset Workflow"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:asset-format-standards", "label": "Asset Format Standards"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:asset-format-standards",
+        "label": "Asset Format Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +90,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:production-pipeline:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ca5264bd1d387eb6eadca714b9e83bce7bb79ff7a387f5c115fee7015ff756ea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The end-to-end sequence of tools, processes, and automated stages that transform raw creative or data assets into finished, deployable outputs. In spatial computing contexts a production pipeline typically spans asset creation, format conversion, quality assurance, rendering, and deployment to target platforms (game engines, XR runtimes, or streaming services).

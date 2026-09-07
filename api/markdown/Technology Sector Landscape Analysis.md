@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Landscape]]
-# Technology Sector Landscape Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,14 +47,26 @@ elevatedFrom:: [[Landscape]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}
+      {
+        "@id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      }
     ]
   },
   "quality": 0.35,
@@ -71,32 +77,6 @@ elevatedFrom:: [[Landscape]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:landscape:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:686e4195f3663261deb52dfc2d9e8276d7b6e1141f183961d78518576baf1d9e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Technology Sector Landscape Analysis]]",
-      "resolved": "urn:visionflow:owl:class:landscape",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Landscape, in the context of this knowledge graph, is a structured market-analysis overview of the current state of an AI or technology sector, mapping key players, technology stacks, investment flows, and emerging patterns. Landscape analyses such as those from a16z or Cowboy Ventures provide practitioners with orientation in rapidly shifting fields and inform infrastructure strategy.

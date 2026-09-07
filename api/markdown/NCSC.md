@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NCSC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ncsc:cc7ca1d22133",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f183660d4fd911d45a448b54e3d4b97f355bf050d456094c6c27b02cf21924d2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cybersecurity]]",
-      "resolved": "urn:visionflow:linked:cybersecurity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Incident Response]]",
-      "resolved": "urn:visionflow:linked:incident-response",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Security]]",
-      "resolved": "urn:visionflow:linked:information-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:linked:risk-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The National Cyber Security Centre, the United Kingdom's national technical authority for cyber security, providing guidance and incident response support.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Human_Interface___UX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,18 +95,36 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:etsi-domain-human-interface", "label": "ETSI_Domain_Human_Interface"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-human-interface",
+        "label": "ETSI_Domain_Human_Interface"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:accessibility-standards", "label": "Accessibility Standards"}
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:inclusive-xr-design", "label": "Inclusive Xr Design"}
+      {
+        "@id": "urn:ngm:class:inclusive-xr-design",
+        "label": "Inclusive Xr Design"
+      }
     ]
   },
   "provenance": {
@@ -121,87 +134,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-human-interface-ux:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:51e3c92943d0c2021e9211d62a43171eb150875d3b49645ebe867926414d14d0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AccessibilityCompliance]]",
-      "resolved": "urn:visionflow:linked:accessibility-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DesignPrinciples]]",
-      "resolved": "urn:visionflow:linked:design-principles",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI]]",
-      "resolved": "urn:visionflow:linked:etsi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR ARF 007]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-arf-007",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR ARF 010]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR MEC 032]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InclusiveUXDesign]]",
-      "resolved": "urn:visionflow:linked:inclusive-uxdesign",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 9241-110]]",
-      "resolved": "urn:visionflow:linked:iso-9241-110",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UsabilityTesting]]",
-      "resolved": "urn:visionflow:linked:usability-testing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualEnvironment|immersive digital environments]]",
-      "resolved": "urn:visionflow:owl:class:virtual-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An [[ETSI]] subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in [[VirtualEnvironment|immersive digital environments]]. This specialisation covers [[DesignPrinciples]], [[UsabilityTesting]], [[AccessibilityCompliance]], and [[InclusiveUXDesign]] ensuring equitable digital participation.

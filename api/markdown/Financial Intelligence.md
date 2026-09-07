@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Financial Intelligence
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:financial-intelligence", "@type":"Page", "title":"Financial Intelligence", "vc:slug":"financial-intelligence", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:financial-intelligence",
+  "@type": "Page",
+  "title": "Financial Intelligence",
+  "vc:slug": "financial-intelligence",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,39 +21,88 @@ public: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics" }
+    {
+      "@id": "urn:ngm:class:blockchain-analytics",
+      "label": "Blockchain Analytics"
+    }
   ],
   "relations": {
     "uses": [
-      { "@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics" },
-      { "@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring" },
-      { "@id": "urn:ngm:class:graph-analytics", "label": "Graph Analytics" },
-      { "@id": "urn:ngm:class:chainalysis", "label": "Chainalysis" }
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:chainalysis",
+        "label": "Chainalysis"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering" },
-      { "@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening" },
-      { "@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection" }
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance" },
-      { "@id": "urn:ngm:class:suspicious-activity-report", "label": "Suspicious Activity Report" }
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:suspicious-activity-report",
+        "label": "Suspicious Activity Report"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer" },
-      { "@id": "urn:ngm:class:data-fusion", "label": "Data Fusion" }
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:data-fusion",
+        "label": "Data Fusion"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:fatf-travel-rule", "label": "FATF Travel Rule" },
-      { "@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics" }
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:regtech", "label": "RegTech" }
+      {
+        "@id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

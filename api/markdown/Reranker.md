@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reranker
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,23 +17,49 @@ public: true
   "@id": "urn:ngm:class:reranker",
   "@type": "Class",
   "label": "Reranker",
-  "definition": "A reranker is a second-stage scoring model in information retrieval and retrieval-augmented generation pipelines that reorders a set of candidate documents or passages — initially retrieved by a fast first-stage retriever such as a dense vector index — using a more computationally intensive cross-encoder or LLM-based relevance model that jointly encodes the query and each candidate together, producing a higher-precision relevance score than bi-encoder similarity alone. Rerankers trade retrieval speed for ranking quality, operating on a reduced candidate set (typically 50-200 passages) rather than the full corpus, thereby making deep transformer inference tractable at query time.",
+  "definition": "A reranker is a second-stage scoring model in information retrieval and retrieval-augmented generation pipelines that reorders a set of candidate documents or passages — initially retrieved by a fast first-stage retriever such as a dense vector [private] — using a more computationally intensive cross-encoder or LLM-based relevance model that jointly encodes the query and each candidate together, producing a higher-precision relevance score than bi-encoder similarity alone. Rerankers trade retrieval speed for ranking quality, operating on a reduced candidate set (typically 50-200 passages) rather than the full corpus, thereby making deep transformer inference tractable at query time.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-technique",
+        "label": "Machine Learning Technique"
+      }
     ]
   },
   "quality": 0.8

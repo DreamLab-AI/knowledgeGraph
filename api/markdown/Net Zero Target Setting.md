@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Net Zero Target Setting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Net zero target setting is the structured process by which an organisation or jurisdiction defines, scopes, and commits to balancing its greenhouse-gas emissions with removals by a stated date. It involves establishing a baseline, defining the emission scopes covered, setting interim milestones, and aligning the trajectory with a science-based decarbonisation pathway. Credible targets specify boundaries and the role of offsets to avoid greenwashing.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:net-zero-targets", "label": "Net Zero Targets"},
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"}
+      {
+        "@id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Capability Overhang
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,9 @@ public: true
   "vc:slug": "capability-overhang",
   "title": "Capability Overhang",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Legal AI Adoption"],
+  "vc:outboundWikilinks": [
+    "Legal AI Adoption"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +23,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:enterprise-ai",
+      "label": "Enterprise AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"}, {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Normalising Flows
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -165,4 +160,3 @@ public: true
   - Modern flow architectures include autoregressive flows (MAF, IAF) where each output dimension conditions on all previous ones — yielding expressive density estimators but slower sampling or evaluation in one direction; continuous normalising flows (CNF/FFJORD) that parameterise the transformation as an ODE and compute the log-determinant via Hutchinson's trace estimator; and Glow, which extends RealNVP with invertible 1x1 convolutions for image generation. The key property distinguishing flows from VAEs and GANs is exact, tractable likelihood: the loss function is the average negative log-likelihood under the flow, computed without approximation.
   - Normalising flows matter for applications requiring reliable density estimates, not just samples. In scientific computing they serve as fast emulators for Bayesian posteriors, replacing expensive MCMC; in particle physics they accelerate simulation of detector responses; in finance they model joint return distributions with correct tail behaviour. For generative tasks, flows pioneered high-fidelity speech synthesis (WaveGlow) and musical audio (Glow-TTS), and they remain competitive in small-to-medium data regimes where the exact likelihood is more useful than raw sample quality.
   - In 2024–2025, normalising flows have been partially eclipsed in image generation by diffusion models but have found a robust niche in scientific machine learning and probabilistic programming. Neural spline flows, using piecewise-rational-quadratic transformations, have become a standard reference architecture. Flow matching (Lipman et al., 2022) and consistency models have emerged as efficient bridges between flows and diffusion, training continuous flows without ODE simulation during training. Integration with JAX (Distrax, Flowjax) enables JIT-compiled, GPU-vectorised inference over thousands of posterior samples simultaneously.
-

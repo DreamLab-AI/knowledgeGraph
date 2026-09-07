@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SMPTE ST 2128
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:smpte-st-2128:827654fe0472",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:593aa1a4187aa5298cb31299b67ab14c6c4ea181d2605bd0763b4ca55844328a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Content Delivery]]",
-      "resolved": "urn:visionflow:linked:content-delivery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Video Compression]]",
-      "resolved": "urn:visionflow:linked:video-compression",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - SMPTE ST 2128 is a standard from the Society of Motion Picture and Television Engineers in the area of professional media and video signalling. It forms part of the SMPTE family of broadcast and production standards.

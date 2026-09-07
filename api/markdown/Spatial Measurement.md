@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Measurement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-measurement:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c09a4daae951f561b39673b4ea1fb4e3eefa1a750e68ff28d166f780573629c1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Environment Mapping]]",
-      "resolved": "urn:visionflow:linked:3-d-environment-mapping",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Depth Sensing]]",
-      "resolved": "urn:visionflow:owl:class:depth-sensing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technology for determining distances, depths, and dimensional properties in physical and virtual environments using sensors such as Time-of-Flight cameras, structured light sensors, and LiDAR, enabling accurate 3D surface mapping, obstacle detection, and gesture tracking in AR/VR applications.

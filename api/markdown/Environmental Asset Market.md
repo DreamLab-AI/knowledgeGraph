@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environmental Asset Market
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:environmental-asset-market:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ab0e8defb62a8497a7cfe0e8498d64d6fc0927af1f20b061deb9a50ed85eaef1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sustainable Finance]]",
-      "resolved": "urn:visionflow:linked:sustainable-finance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Asset Market]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset-market",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blockchain-enabled trading platforms for environmental assets including carbon credits, renewable energy certificates, and biodiversity offsets, utilising tokenisation and smart contracts to enhance transparency, prevent double-counting, and enable fractional ownership of sustainability instruments.

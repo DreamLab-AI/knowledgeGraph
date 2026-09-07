@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Autoregressive Decoding
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:autoregressive-decoding", "@type":"Page", "title":"Autoregressive Decoding", "vc:slug":"autoregressive-decoding", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:autoregressive-decoding",
+  "@type": "Page",
+  "title": "Autoregressive Decoding",
+  "vc:slug": "autoregressive-decoding",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Physics Simulation Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,57 +191,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:physics-simulation-engine:40b1ddcd27f7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dff4093d4b9fbbc882c744886bfd99d22a0474fc1cc2b4942e9de4449049486e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Rigid Body Dynamics]]",
-      "resolved": "urn:visionflow:linked:rigid-body-dynamics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Simulation Environment]]",
-      "resolved": "urn:visionflow:linked:simulation-environment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Engine]]",
-      "resolved": "urn:visionflow:linked:3-d-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Simulation]]",
-      "resolved": "urn:visionflow:linked:simulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Physics_engine]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-physics-engine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://pybullet.org]]",
-      "resolved": "urn:visionflow:linked:https-pybullet-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A physics simulation engine is software that computes the motion and interaction of objects according to physical laws, such as rigid body dynamics and collisions. It is used in games, robotics, and engineering.

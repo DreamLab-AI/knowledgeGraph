@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IBM Food Trust
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,46 +180,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ibm-food-trust:8fc91dc9b7a7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:72d4c86ee380ebd6b8f9dd87f39c049dd9714c07825834a0d1ed793d1171e107"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hyperledger Fabric]]",
-      "resolved": "urn:visionflow:linked:hyperledger-fabric",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Food Safety]]",
-      "resolved": "urn:visionflow:linked:food-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Supply Chain]]",
-      "resolved": "urn:visionflow:linked:supply-chain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

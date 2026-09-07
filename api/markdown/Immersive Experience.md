@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ImmersiveExperience
----
-
-# Immersive Experience
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,32 +182,6 @@ aliases:
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:immersive-experience:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:95ed5ffe5caedf174169b99cb9d21629e8facc0be8a0f7d4e49083652adeaffb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Immersive Experience is a deeply engaging interaction or environment that induces a compelling sense of presence by combining high-fidelity multi-sensory stimulation, responsive interaction, and narrative coherence across visual, auditory, and haptic channels. Underpinned by virtual reality, augmented reality, and spatial audio technologies, immersive experiences span VR training simulations, therapeutic applications, collaborative virtual workspaces, and entertainment.

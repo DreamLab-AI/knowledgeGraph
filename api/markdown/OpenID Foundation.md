@@ -1,8 +1,3 @@
----
-public: true
----
-
-# openid foundation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -242,7 +237,7 @@ public: true
 
 - ### Historical Context
   - OpenID 1.0 and 2.0 (2005–2007) were decentralised identity protocols predating the Foundation, allowing user-controlled URIs as identity handles — an early experiment in [[Self-Sovereign Identity]].
-  - The shift to OAuth 2.0 + OpenID Connect (2014) marked a pragmatic pivot toward provider-mediated identity that could scale to consumer internet deployments.
+  - The shift to OAuth 2.0 + OpenID Connect (2014) marked a pragmatic pivot toward provider-mediated identity that [private] scale to consumer internet deployments.
   - The OIDF has progressively broadened its scope from pure authentication into high-assurance financial APIs (FAPI), mobile network identity (MODRNA), and now verifiable digital credentials, tracking the evolution of the broader [[Digital Identity]] landscape.
 
 - ### Provenance

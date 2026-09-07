@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Amd Sev
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

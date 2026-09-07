@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Statistical Learning Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,57 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:statistical-learning-theory:67d1fa130b82",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4324963022783b628b2bb44f4c37059e8aa60055aaa796461176c171e1ebb514"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Statistics]]",
-      "resolved": "urn:visionflow:linked:statistics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Supervised Learning]]",
-      "resolved": "urn:visionflow:linked:supervised-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Overfitting]]",
-      "resolved": "urn:visionflow:linked:overfitting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A framework that studies the conditions under which algorithms can generalise from finite training data to unseen data, providing theoretical bounds on prediction error.

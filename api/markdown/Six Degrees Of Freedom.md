@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Six Degrees Of Freedom
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

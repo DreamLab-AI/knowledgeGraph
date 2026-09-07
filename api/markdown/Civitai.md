@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Civitai
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Civitai is a community-driven online platform for sharing, discovering, and downloading fine-tuned generative AI image models, primarily Stable Diffusion checkpoints, LoRA adaptors, embeddings, and VAEs, enabling practitioners and artists to distribute specialised model weights trained on specific styles, characters, or concepts without requiring the infrastructure overhead of operating their own model registry. It functions as both a social network for AI artists and a technical marketplace for model artefacts.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"}
+      {
+        "@id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
     ]
   },
   "quality": 0.8
@@ -159,7 +183,7 @@ public: true
         ObjectSomeValuesFrom(ai:enables ai:ThreeDAssetGeneration))
 
   ## About
-    Civitai was founded in November 2022 by Justin Maier, emerging days after the public open-weight release of Stable Diffusion 1.4 by Stability AI. That release — the first capable text-to-image system whose weights could be legally downloaded, hosted, and fine-tuned on consumer-grade GPU hardware — immediately catalysed a community of practitioners building specialised model adaptations. Prior to Civitai, the only distribution channels for community fine-tunes were Discord attachments and informal Google Drive links, creating fragmentation and quality ambiguity. Civitai imposed structure: mandatory model cards, version-numbered uploads, sample image galleries, generation parameter disclosure (seed, steps, sampler, CFG scale, negative prompt), and a community review system. These conventions, though informal, spread rapidly and became the implicit standard for community-generated [[Diffusion Model]] artefacts. The platform's name is a portmanteau of "civics" and "AI" — reflecting the founding ethos that open-source generative AI is a civic resource, a shared commons whose value is produced collectively rather than by any single organisation.
+    Civitai was founded in November 2022 by Justin Maier, emerging days after the public open-weight release of Stable Diffusion 1.4 by Stability AI. That release — the first capable text-to-image system whose weights [private] be legally downloaded, hosted, and fine-tuned on consumer-grade GPU hardware — immediately catalysed a community of practitioners building specialised model adaptations. Prior to Civitai, the only distribution channels for community fine-tunes were Discord attachments and informal Google Drive links, creating fragmentation and quality ambiguity. Civitai imposed structure: mandatory model cards, version-numbered uploads, sample image galleries, generation parameter disclosure (seed, steps, sampler, CFG scale, negative prompt), and a community review system. These conventions, though informal, spread rapidly and became the implicit standard for community-generated [[Diffusion Model]] artefacts. The platform's name is a portmanteau of "civics" and "AI" — reflecting the founding ethos that open-source generative AI is a civic resource, a shared commons whose value is produced collectively rather than by any single organisation.
 
     The platform's significance extends beyond file hosting. Civitai functions as a real-time ecosystem sensor: when Stability AI releases a new base architecture — whether SDXL in 2023, Stable Diffusion 3 in 2024, or when Black Forest Labs released the Flux architecture family — Civitai captures the rate of community adoption through the speed and volume of fine-tune uploads within 48 hours of each release. This makes it an invaluable proxy for practitioner interest in new architectures. The creator economy built around Buzz, the platform's internal credit system, constitutes an informal marketplace where model quality is signalled through download counts, rating distributions, and tip volume. Top creators have earned sufficient Buzz to fund continuous on-platform generation and training, effectively monetising the open-source [[Generative AI]] ecosystem without requiring users to leave the platform. The bounty system — where users post Buzz rewards for specific model types they desire, and creators compete to fulfil them — creates a demand-signal mechanism absent from traditional academic model repositories, orienting community production towards user needs rather than purely creator preference.
 
@@ -167,7 +191,7 @@ public: true
 
     Understanding Civitai's position in the broader ecosystem requires contrasting it with its nearest peer, [[Hugging Face Model Hub]]. Hugging Face serves a broader research and enterprise audience: its model card standards are more formal, its evaluation tooling is richer, and its community is oriented towards reproducible research. Civitai by contrast is optimised for creative practitioners: its discovery UX privileges visual sample browsing, its model taxonomy is production-workflow-oriented, and its community norms prioritise aesthetic quality over scientific rigour. The two platforms are genuinely complementary — research-grade architectures announced through Hugging Face Hub tend to spawn community derivatives distributed through Civitai within days — but they are not interchangeable. Civitai's catalogue of specialised fine-tunes represents a layer of value that does not exist on Hugging Face, just as Hugging Face's model card transparency and evaluation suites serve needs that Civitai's community-review system cannot fully substitute.
 
-    Civitai's role in democratising [[Creative AI]] has been substantive. Before open-source diffusion models and Civitai's distribution layer, professional AI image generation required access to closed-API commercial services (Midjourney, DALL-E) with per-generation pricing and style constraints imposed by the provider. Civitai's emergence enabled any practitioner with a consumer GPU to download specialised models, run them locally with complete privacy, and achieve quality comparable to or exceeding commercial offerings for specific aesthetic domains. This shift democratised not only consumption of AI-generated imagery but production of model artefacts: thousands of creators with no prior research credentials have trained and distributed models used by millions of downstream users. The resulting community-produced diversity of specialised models constitutes a form of distributed [[Fine Tuning]] R&D that no single commercial laboratory could match in breadth.
+    Civitai's role in democratising [[Creative AI]] has been substantive. Before open-source diffusion models and Civitai's distribution layer, professional AI image generation required access to closed-API commercial services (Midjourney, DALL-E) with per-generation pricing and style constraints imposed by the provider. Civitai's emergence enabled any practitioner with a consumer GPU to download specialised models, run them locally with complete privacy, and achieve quality comparable to or exceeding commercial offerings for specific aesthetic domains. This shift democratised not only consumption of AI-generated imagery but production of model artefacts: thousands of creators with no prior research credentials have trained and distributed models used by millions of downstream users. The resulting community-produced diversity of specialised models constitutes a form of distributed [[Fine Tuning]] R&D that no single commercial laboratory [private] match in breadth.
 
   ## Components / Architecture
     The Civitai technical stack encompasses several distinct layers:

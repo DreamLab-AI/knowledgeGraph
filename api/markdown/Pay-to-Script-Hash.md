@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Pay-to-Script-Hash
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

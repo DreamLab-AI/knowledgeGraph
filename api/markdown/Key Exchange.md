@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Key Exchange
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:key-exchange:7206a7eaf387",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b0af3401543579535326e5922de9eacef629bc040e86691c0d15b15d999ea99e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Symmetric Encryption]]",
-      "resolved": "urn:visionflow:linked:symmetric-encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Protocol]]",
-      "resolved": "urn:visionflow:linked:cryptographic-protocol",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Key exchange is a cryptographic procedure by which two parties establish a shared secret over an insecure channel for use in subsequent encrypted communication.

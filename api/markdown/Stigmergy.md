@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stigmergy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,18 +64,42 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"},
-      {"@id": "urn:ngm:class:swarm-robot", "label": "Swarm Robot"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}
+      {
+        "@id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-robot",
+        "label": "Swarm Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      }
     ]
   },
   "provenance": {
@@ -90,47 +109,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:stigmergy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a87e8403abbd843bfa0344b3c26f23f25105adf1774030d0b73d86c77acfa419"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics Research]]",
-      "resolved": "urn:visionflow:linked:robotics-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Swarm Intelligence]]",
-      "resolved": "urn:visionflow:linked:swarm-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Indirect coordination mechanism in swarm robotics where agents communicate through environmental modifications, enabling emergent collective behavior without direct communication.

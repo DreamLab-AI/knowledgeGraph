@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transport Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -230,62 +225,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transport-layer:281d0eef6210",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3a29b26b4663a589cccceda0db7036d0742a9df0e30ac7737ddfe70e576e9bae"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Layer]]",
-      "resolved": "urn:visionflow:linked:network-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Protocol Layer]]",
-      "resolved": "urn:visionflow:linked:protocol-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Integration Layer]]",
-      "resolved": "urn:visionflow:linked:integration-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transmission Control Protocol]]",
-      "resolved": "urn:visionflow:linked:transmission-control-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Congestion Control]]",
-      "resolved": "urn:visionflow:linked:congestion-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[IETF (Internet Engineering Task Force)]]",
-      "resolved": "urn:visionflow:linked:ietf-internet-engineering-task-force",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Transport Layer is the stratum that provides end-to-end delivery of data between endpoints over a network. It sits above the Network Layer that routes packets and below the protocol and integration strata that rely on reliable channels. It contains segmentation, flow and congestion control, and connection management.

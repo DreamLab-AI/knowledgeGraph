@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IFRS S1
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,13 +17,28 @@ public: true
   "@id": "urn:ngm:class:ifrs-s1",
   "@type": "Class",
   "label": "IFRS S1",
-  "definition": "IFRS S1 is the inaugural sustainability-disclosure standard issued by the International Sustainability Standards Board, setting general requirements for disclosing sustainability-related financial information. It requires entities to report material risks and opportunities across governance, strategy, risk management, and metrics that could affect their prospects. IFRS S1 establishes the common baseline on which topic-specific standards such as IFRS S2 build.",
+  "definition": "IFRS S1 is the inaugural sustainability-disclosure standard issued by the International Sustainability Standards Board, setting general requirements for disclosing sustainability-related financial information. It requires entities to report material risks and opportunities across governance, strategy, risk management, and metrics that [private] affect their prospects. IFRS S1 establishes the common baseline on which topic-specific standards such as IFRS S2 build.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ifrs-s2", "label": "IFRS S2"}],
-    "supports": [{"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Virtual_Society
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -544,35 +539,86 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:etsi-domain-taxonomy", "label": "ETSI Domain Taxonomy"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
-      {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"}
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-society", "label": "Virtual Society"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"}
+      {
+        "@id": "urn:ngm:class:virtual-society",
+        "label": "Virtual Society"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
-      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:digital-citizenship", "label": "Digital Citizenship"}
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:digital-citizenship",
+        "label": "Digital Citizenship"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:etsi-domain-identity-and-trust", "label": "ETSI Domain Identity and Trust"},
-      {"@id": "urn:ngm:class:etsi-domain-security-and-privacy", "label": "ETSI Domain Security and Privacy"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-identity-and-trust",
+        "label": "ETSI Domain Identity and Trust"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-security-and-privacy",
+        "label": "ETSI Domain Security and Privacy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
     ]
   },
   "provenance": {
@@ -582,642 +628,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-virtual-society:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7f11ca5983d4911b202c0d3ad93fc393b84588692e6d44e7e7837fb8dcce4bed"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D assets]]",
-      "resolved": "urn:visionflow:linked:3-d-assets",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Audio]]",
-      "resolved": "urn:visionflow:linked:3-d-audio",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Web Interoperability]]",
-      "resolved": "urn:visionflow:linked:3-d-web-interoperability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3GPP]]",
-      "resolved": "urn:visionflow:linked:3-gpp",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[5G/6G]]",
-      "resolved": "urn:visionflow:linked:5-g-6-g",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[advanced audio coding (AAC)]]",
-      "resolved": "urn:visionflow:linked:advanced-audio-coding-aac",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI]]",
-      "resolved": "urn:visionflow:linked:ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI-enhanced AR/VR]]",
-      "resolved": "urn:visionflow:linked:ai-enhanced-ar-vr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AR/VR interfaces]]",
-      "resolved": "urn:visionflow:linked:ar-vr-interfaces",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[avatar standards]]",
-      "resolved": "urn:visionflow:linked:avatar-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[avatars]]",
-      "resolved": "urn:visionflow:linked:avatars",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain-based solutions]]",
-      "resolved": "urn:visionflow:linked:blockchain-based-solutions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain integration]]",
-      "resolved": "urn:visionflow:linked:blockchain-integration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[blockchain technology]]",
-      "resolved": "urn:visionflow:linked:blockchain-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[cloud streaming]]",
-      "resolved": "urn:visionflow:linked:cloud-streaming",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cyber Resilience Act]]",
-      "resolved": "urn:visionflow:linked:cyber-resilience-act",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DAOs]]",
-      "resolved": "urn:visionflow:linked:daos",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentraland]]",
-      "resolved": "urn:visionflow:linked:decentraland",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralized Identity]]",
-      "resolved": "urn:visionflow:linked:decentralized-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[decentralized identity]]",
-      "resolved": "urn:visionflow:linked:decentralized-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital health]]",
-      "resolved": "urn:visionflow:linked:digital-health",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[digital rights management (DRM)]]",
-      "resolved": "urn:visionflow:linked:digital-rights-management-drm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Single Market]]",
-      "resolved": "urn:visionflow:linked:digital-single-market",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI]]",
-      "resolved": "urn:visionflow:linked:etsi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI ARF]]",
-      "resolved": "urn:visionflow:linked:etsi-arf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR ARF 007]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-arf-007",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR ARF 007 V1.1.1]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-arf-007-v1-1-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR ARF 010]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR ARF 010 V1.1.1]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-arf-010-v1-1-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI Work Programme 2024-2025]]",
-      "resolved": "urn:visionflow:linked:etsi-work-programme-2024-2025",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU Digital Identity]]",
-      "resolved": "urn:visionflow:linked:eu-digital-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU Digital Identity Initiative]]",
-      "resolved": "urn:visionflow:linked:eu-digital-identity-initiative",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU Standardisation Strategy]]",
-      "resolved": "urn:visionflow:linked:eu-standardisation-strategy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[European Digital Strategy]]",
-      "resolved": "urn:visionflow:linked:european-digital-strategy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Extended Reality]]",
-      "resolved": "urn:visionflow:linked:extended-reality",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GameFi]]",
-      "resolved": "urn:visionflow:linked:game-fi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Immersive Media]]",
-      "resolved": "urn:visionflow:linked:immersive-media",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[immersive media]]",
-      "resolved": "urn:visionflow:linked:immersive-media",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[immersive training simulations]]",
-      "resolved": "urn:visionflow:linked:immersive-training-simulations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interoperable Anchoring]]",
-      "resolved": "urn:visionflow:linked:interoperable-anchoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IPSME]]",
-      "resolved": "urn:visionflow:linked:ipsme",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IPSME (Inter-Platform Semantic Messaging Environment)]]",
-      "resolved": "urn:visionflow:linked:ipsme-inter-platform-semantic-messaging-environment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC]]",
-      "resolved": "urn:visionflow:linked:iso-iec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC Standards]]",
-      "resolved": "urn:visionflow:linked:iso-iec-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ITU-T Focus Group on Metaverse]]",
-      "resolved": "urn:visionflow:linked:itu-t-focus-group-on-metaverse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ITU-T Focus Group on Metaverse (FG-MV)]]",
-      "resolved": "urn:visionflow:linked:itu-t-focus-group-on-metaverse-fg-mv",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Khronos Group]]",
-      "resolved": "urn:visionflow:linked:khronos-group",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[medical training simulations]]",
-      "resolved": "urn:visionflow:linked:medical-training-simulations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Meta Horizon Worlds]]",
-      "resolved": "urn:visionflow:linked:meta-horizon-worlds",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse events]]",
-      "resolved": "urn:visionflow:linked:metaverse-events",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse Standards Forum]]",
-      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse Standards Forum (MSF)]]",
-      "resolved": "urn:visionflow:linked:metaverse-standards-forum-msf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MPEG-H 3D audio]]",
-      "resolved": "urn:visionflow:linked:mpeg-h-3-d-audio",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NFT]]",
-      "resolved": "urn:visionflow:linked:nft",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NFTs]]",
-      "resolved": "urn:visionflow:linked:nfts",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Open Metaverse Interoperability Group (OMI)]]",
-      "resolved": "urn:visionflow:linked:open-metaverse-interoperability-group-omi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Privacy-preserving Identity]]",
-      "resolved": "urn:visionflow:linked:privacy-preserving-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Privacy-preserving identity]]",
-      "resolved": "urn:visionflow:linked:privacy-preserving-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[privacy-preserving identity frameworks]]",
-      "resolved": "urn:visionflow:linked:privacy-preserving-identity-frameworks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Self-Sovereign Identity (SSI)]]",
-      "resolved": "urn:visionflow:linked:self-sovereign-identity-ssi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[self-sovereign identity (SSI)]]",
-      "resolved": "urn:visionflow:linked:self-sovereign-identity-ssi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Economies]]",
-      "resolved": "urn:visionflow:linked:virtual-economies",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[virtual economies]]",
-      "resolved": "urn:visionflow:linked:virtual-economies",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual worlds]]",
-      "resolved": "urn:visionflow:linked:virtual-worlds",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[virtual worlds]]",
-      "resolved": "urn:visionflow:linked:virtual-worlds",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Volumetric Video]]",
-      "resolved": "urn:visionflow:linked:volumetric-video",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[volumetric video]]",
-      "resolved": "urn:visionflow:linked:volumetric-video",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[VRChat]]",
-      "resolved": "urn:visionflow:linked:vrchat",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Web 4.0]]",
-      "resolved": "urn:visionflow:linked:web-4-0",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[World Graph]]",
-      "resolved": "urn:visionflow:linked:world-graph",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[world graph]]",
-      "resolved": "urn:visionflow:linked:world-graph",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[XR]]",
-      "resolved": "urn:visionflow:linked:xr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[XR accessibility guidelines]]",
-      "resolved": "urn:visionflow:linked:xr-accessibility-guidelines",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[XR (Extended Reality)]]",
-      "resolved": "urn:visionflow:linked:xr-extended-reality",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Zero-Knowledge Proofs]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proofs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[zero-knowledge proofs]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proofs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accessibility Standard]]",
-      "resolved": "urn:visionflow:owl:class:accessibility-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:owl:class:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Avatar]]",
-      "resolved": "urn:visionflow:owl:class:avatar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Collective Intelligence System]]",
-      "resolved": "urn:visionflow:owl:class:collective-intelligence-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO]]",
-      "resolved": "urn:visionflow:owl:class:dao",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Citizenship]]",
-      "resolved": "urn:visionflow:owl:class:digital-citizenship",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital citizenship]]",
-      "resolved": "urn:visionflow:owl:class:digital-citizenship",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Identity]]",
-      "resolved": "urn:visionflow:owl:class:digital-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[digital identity]]",
-      "resolved": "urn:visionflow:owl:class:digital-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[digital rights management]]",
-      "resolved": "urn:visionflow:owl:class:digital-rights-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Ritual]]",
-      "resolved": "urn:visionflow:owl:class:digital-ritual",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[digital twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin of Society (DToS)]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin-of-society-dto-s",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge computing]]",
-      "resolved": "urn:visionflow:owl:class:edge-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[identity management]]",
-      "resolved": "urn:visionflow:owl:class:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mixed Reality]]",
-      "resolved": "urn:visionflow:owl:class:mixed-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NFT Standards]]",
-      "resolved": "urn:visionflow:owl:class:nft-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NFT standards]]",
-      "resolved": "urn:visionflow:owl:class:nft-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenXR]]",
-      "resolved": "urn:visionflow:owl:class:open-xr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Play-to-Earn (P2E)]]",
-      "resolved": "urn:visionflow:owl:class:play-to-earn-p2-e",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[privacy]]",
-      "resolved": "urn:visionflow:owl:class:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scene Graph]]",
-      "resolved": "urn:visionflow:owl:class:scene-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[self-sovereign identity]]",
-      "resolved": "urn:visionflow:owl:class:self-sovereign-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[smart contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Anchors]]",
-      "resolved": "urn:visionflow:owl:class:spatial-anchors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial anchors]]",
-      "resolved": "urn:visionflow:owl:class:spatial-anchors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[spatial anchors]]",
-      "resolved": "urn:visionflow:owl:class:spatial-anchors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tokenomics]]",
-      "resolved": "urn:visionflow:owl:class:tokenomics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[tokenomics]]",
-      "resolved": "urn:visionflow:owl:class:tokenomics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verifiable Credentials]]",
-      "resolved": "urn:visionflow:owl:class:verifiable-credentials",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[verifiable credentials]]",
-      "resolved": "urn:visionflow:owl:class:verifiable-credentials",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Reality]]",
-      "resolved": "urn:visionflow:owl:class:virtual-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[XR Accessibility Guideline]]",
-      "resolved": "urn:visionflow:owl:class:xr-accessibility-guideline",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   ETSI_Domain_Virtual_Society is a standardisation domain within the European Telecommunications Standards Institute (ETSI) that addresses technical foundations and interoperability requirements for virtual society infrastructures, including metaverse ecosystems, Extended Reality (XR) environments, decentralised digital identity, virtual economies, and interoperable virtual worlds. It coordinates work across ETSI bodies and with ISO/IEC, ITU-T, 3GPP, and the Metaverse Standards Forum.

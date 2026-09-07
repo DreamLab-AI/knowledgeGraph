@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Audio Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,37 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:audio-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0a227c390314a3128b7acc92749fe01359c9c486cd28ca8273b238824f182c14"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:owl:class:telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The hardware, software, and signal-processing techniques used to capture, synthesise, spatialise, and reproduce sound within spatial computing and metaverse environments. Audio technology in immersive contexts encompasses spatial audio rendering, binaural processing, voice interaction, and real-time acoustic simulation to enhance presence and communication fidelity.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OECD Due Diligence Guidance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "The OECD Due Diligence Guidance is an internationally recognised framework that sets out how companies should identify, prevent, and mitigate human-rights and ethical risks in their supply chains, most notably for minerals from conflict-affected and high-risk areas. It defines a five-step, risk-based process for responsible sourcing and reporting. It serves as the reference standard underpinning many corporate and regulatory responsible-sourcing requirements.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"}
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
     ]
   },
   "quality": 0.72

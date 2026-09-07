@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Emergent Behavior
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Emergent Behavior is complex, system-level behaviour that arises from the interactions of many simpler components or agents and is not explicitly programmed into any individual part. In AI-driven game agents and open-world simulations it produces lifelike, unscripted dynamics from local rules and agent decisions. Emergence is valued for richness and replayability but can be hard to predict, test, and control.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-game-agent", "label": "AI Game Agent"}, {"@id": "urn:ngm:class:open-world", "label": "Open World"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      },
+      {
+        "@id": "urn:ngm:class:open-world",
+        "label": "Open World"
+      }
+    ]
   },
   "quality": 0.72
 }

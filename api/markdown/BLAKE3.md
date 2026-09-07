@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BLAKE3
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "BLAKE3 is a cryptographic hash function released in 2020 that achieves exceptional speed through a tree-hashing construction enabling unlimited parallelism across SIMD lanes and CPU cores, while simultaneously functioning as a keyed hash, a key derivation function, and an extendable-output function (XOF). It is derived from the BLAKE2 family, inheriting its ARX (add-rotate-XOR) ChaCha-based compression function, and extends it with a Bao-style binary tree that allows verified streaming and incremental hashing. BLAKE3 produces digests of arbitrary length (defaulting to 256 bits), is formally specified under a Creative Commons public-domain dedication, and is designed to be faster than SHA-256 on modern hardware by factors of five to ten on multi-core systems. Its unified API replaces the need for separate HMAC, HKDF, or KDF constructions.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:blake2", "label": "BLAKE2"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+      {
+        "@id": "urn:ngm:class:blake2",
+        "label": "BLAKE2"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - BLAKE3's significance lies in its consolidation of multiple cryptographic roles at speeds that remove hashing as a bottleneck in high-throughput systems. Content-addressed storage systems, package managers, and file synchronisation tools benefit from near-disk-speed hashing. The Iroh project (IPFS successor) adopted BLAKE3 as its default hash; several key derivation frameworks have migrated from HKDF-SHA-256; and post-quantum signature schemes that require fast hash-based MACs find BLAKE3 a natural fit. Its verified streaming property — where any portion of a large file can be verified against the root hash without fetching the entire file — is particularly valuable for distributed systems and incremental downloads.
 
   - As of 2024-2025, BLAKE3 has achieved broad adoption in the Rust ecosystem (via the `blake3` crate), Python, C, and WebAssembly bindings. It is the default hash in the Zig language's standard library and is used by Cloudflare's Workers runtime. While not yet an NIST standard, its security is considered sound under the same analytical framework as BLAKE2, which has withstood a decade of cryptanalysis. Active research targets its integration into post-quantum hybrid schemes and its use as the underlying hash in hash-based signature systems where performance is paramount.
-

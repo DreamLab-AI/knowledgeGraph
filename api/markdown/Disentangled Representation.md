@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Disentangled Representation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:disentangled-representation", "@type":"Page", "title":"Disentangled Representation", "vc:slug":"disentangled-representation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:disentangled-representation",
+  "@type": "Page",
+  "title": "Disentangled Representation",
+  "vc:slug": "disentangled-representation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -14,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:disentangled-representation",
   "@type": "Class",
   "label": "Disentangled Representation",
-  "definition": "A disentangled representation is a learned representation in which distinct, semantically meaningful factors of variation in the data \u2014 such as an object's shape, colour and pose \u2014 are captured by separate, largely independent dimensions of the latent space, so that changing one factor leaves the others unaffected. It is a goal of representation learning that improves interpretability and enables controlled generation, since manipulating a single latent dimension produces a predictable, isolated change in the output. Variational autoencoders and related generative models are commonly used to encourage disentanglement, for example through additional regularisation terms that penalise correlation between latent dimensions.",
+  "definition": "A disentangled representation is a learned representation in which distinct, semantically meaningful factors of variation in the data — such as an object's shape, colour and pose — are captured by separate, largely independent dimensions of the latent space, so that changing one factor leaves the others unaffected. It is a goal of representation learning that improves interpretability and enables controlled generation, since manipulating a single latent dimension produces a predictable, isolated change in the output. Variational autoencoders and related generative models are commonly used to encourage disentanglement, for example through additional regularisation terms that penalise correlation between latent dimensions.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

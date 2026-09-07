@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UN Global Compact
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The UN Global Compact is a voluntary United Nations initiative encouraging businesses worldwide to adopt sustainable and socially responsible policies aligned with ten principles covering human rights, labour, environment, and anti-corruption. Signatory companies commit to embedding these principles in their operations and to reporting annual progress, making it the world's largest corporate sustainability initiative.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"}, {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ]
   },
   "quality": 0.72
 }

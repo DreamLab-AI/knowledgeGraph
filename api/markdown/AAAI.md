@@ -1,65 +1,231 @@
----
-public: true
----
-
-# AAAI
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:aaai", "@type":"Page", "title":"AAAI", "vc:slug":"aaai", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[
-  {"@id":"urn:visionflow:linked:artificial-intelligence","vc:label":"Artificial Intelligence"},
-  {"@id":"urn:visionflow:linked:machine-learning","vc:label":"Machine Learning"},
-  {"@id":"urn:visionflow:linked:academic-conference","vc:label":"Academic Conference"},
-  {"@id":"urn:visionflow:linked:aaai-conference","vc:label":"AAAI Conference"},
-  {"@id":"urn:visionflow:linked:peer-review","vc:label":"Peer Review"},
-  {"@id":"urn:visionflow:linked:neur-ips","vc:label":"NeurIPS"},
-  {"@id":"urn:visionflow:linked:icml","vc:label":"ICML"},
-  {"@id":"urn:visionflow:linked:iclr","vc:label":"ICLR"},
-  {"@id":"urn:visionflow:linked:cvpr","vc:label":"CVPR"},
-  {"@id":"urn:visionflow:linked:ijcai","vc:label":"IJCAI"},
-  {"@id":"urn:visionflow:linked:research-publication","vc:label":"Research Publication"},
-  {"@id":"urn:visionflow:linked:scientific-conference","vc:label":"Scientific Conference"},
-  {"@id":"urn:visionflow:linked:research-institution","vc:label":"Research Institution"},
-  {"@id":"urn:visionflow:linked:deep-learning","vc:label":"Deep Learning"},
-  {"@id":"urn:visionflow:linked:natural-language-processing","vc:label":"Natural Language Processing"},
-  {"@id":"urn:visionflow:linked:computer-vision","vc:label":"Computer Vision"},
-  {"@id":"urn:visionflow:linked:knowledge-representation","vc:label":"Knowledge Representation"},
-  {"@id":"urn:visionflow:linked:planning-and-scheduling","vc:label":"Planning and Scheduling"},
-  {"@id":"urn:visionflow:linked:reasoning","vc:label":"Reasoning"},
-  {"@id":"urn:visionflow:linked:symbolic-ai","vc:label":"Symbolic AI"},
-  {"@id":"urn:visionflow:linked:ai-ethics","vc:label":"AI Ethics"},
-  {"@id":"urn:visionflow:linked:ai-safety","vc:label":"AI Safety"},
-  {"@id":"urn:visionflow:linked:responsible-ai","vc:label":"Responsible AI"},
-  {"@id":"urn:visionflow:linked:reinforcement-learning","vc:label":"Reinforcement Learning"},
-  {"@id":"urn:visionflow:linked:multi-agent-system","vc:label":"Multi-Agent System"},
-  {"@id":"urn:visionflow:linked:ai-research","vc:label":"AI Research"},
-  {"@id":"urn:visionflow:linked:large-language-model","vc:label":"Large Language Model"},
-  {"@id":"urn:visionflow:linked:generative-ai","vc:label":"Generative AI"},
-  {"@id":"urn:visionflow:linked:explainability","vc:label":"Explainability"},
-  {"@id":"urn:visionflow:linked:robotics","vc:label":"Robotics"},
-  {"@id":"urn:visionflow:linked:ai-magazine","vc:label":"AI Magazine"},
-  {"@id":"urn:visionflow:linked:open-science","vc:label":"Open Science"},
-  {"@id":"urn:visionflow:linked:double-blind-review","vc:label":"Double-Blind Review"},
-  {"@id":"urn:visionflow:linked:workshop","vc:label":"Workshop"},
-  {"@id":"urn:visionflow:linked:tutorial","vc:label":"Tutorial"},
-  {"@id":"urn:visionflow:linked:poster-session","vc:label":"Poster Session"},
-  {"@id":"urn:visionflow:linked:ai-governance","vc:label":"AI Governance"},
-  {"@id":"urn:visionflow:linked:ai-alignment","vc:label":"AI Alignment"},
-  {"@id":"urn:visionflow:linked:fairness-in-machine-learning","vc:label":"Fairness in Machine Learning"},
-  {"@id":"urn:visionflow:linked:human-computer-interaction","vc:label":"Human-Computer Interaction"},
-  {"@id":"urn:visionflow:linked:benchmark-standard","vc:label":"Benchmark Standard"},
-  {"@id":"urn:visionflow:linked:research-dissemination","vc:label":"Research Dissemination"},
-  {"@id":"urn:visionflow:linked:ai-policy","vc:label":"AI Policy"},
-  {"@id":"urn:visionflow:linked:agentic-ai","vc:label":"Agentic AI"},
-  {"@id":"urn:visionflow:linked:multimodal-ai","vc:label":"Multimodal AI"},
-  {"@id":"urn:visionflow:linked:aaai-fellows-program","vc:label":"AAAI Fellows Program"},
-  {"@id":"urn:visionflow:linked:retrieval-augmented-generation","vc:label":"Retrieval-Augmented Generation"},
-  {"@id":"urn:visionflow:linked:causal-inference","vc:label":"Causal Inference"},
-  {"@id":"urn:visionflow:linked:ai-for-social-good","vc:label":"AI for Social Good"},
-  {"@id":"urn:visionflow:linked:neural-network","vc:label":"Neural Network"},
-  {"@id":"urn:visionflow:linked:programme-committee","vc:label":"Programme Committee"},
-  {"@id":"urn:visionflow:linked:ai-research-area","vc:label":"AI Research Area"},
-  {"@id":"urn:visionflow:linked:open-review","vc:label":"Open Review"},
-  {"@id":"urn:visionflow:linked:ai-domain","vc:label":"AI Domain"}
-] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:aaai",
+  "@type": "Page",
+  "title": "AAAI",
+  "vc:slug": "aaai",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:academic-conference",
+      "vc:label": "Academic Conference"
+    },
+    {
+      "@id": "urn:visionflow:linked:aaai-conference",
+      "vc:label": "AAAI Conference"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-review",
+      "vc:label": "Peer Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:neur-ips",
+      "vc:label": "NeurIPS"
+    },
+    {
+      "@id": "urn:visionflow:linked:icml",
+      "vc:label": "ICML"
+    },
+    {
+      "@id": "urn:visionflow:linked:iclr",
+      "vc:label": "ICLR"
+    },
+    {
+      "@id": "urn:visionflow:linked:cvpr",
+      "vc:label": "CVPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:ijcai",
+      "vc:label": "IJCAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:research-publication",
+      "vc:label": "Research Publication"
+    },
+    {
+      "@id": "urn:visionflow:linked:scientific-conference",
+      "vc:label": "Scientific Conference"
+    },
+    {
+      "@id": "urn:visionflow:linked:research-institution",
+      "vc:label": "Research Institution"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-and-scheduling",
+      "vc:label": "Planning and Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research",
+      "vc:label": "AI Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-magazine",
+      "vc:label": "AI Magazine"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-science",
+      "vc:label": "Open Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:double-blind-review",
+      "vc:label": "Double-Blind Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:workshop",
+      "vc:label": "Workshop"
+    },
+    {
+      "@id": "urn:visionflow:linked:tutorial",
+      "vc:label": "Tutorial"
+    },
+    {
+      "@id": "urn:visionflow:linked:poster-session",
+      "vc:label": "Poster Session"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness-in-machine-learning",
+      "vc:label": "Fairness in Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-standard",
+      "vc:label": "Benchmark Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:research-dissemination",
+      "vc:label": "Research Dissemination"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-policy",
+      "vc:label": "AI Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:aaai-fellows-program",
+      "vc:label": "AAAI Fellows Program"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:causal-inference",
+      "vc:label": "Causal Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-for-social-good",
+      "vc:label": "AI for Social Good"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:programme-committee",
+      "vc:label": "Programme Committee"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research-area",
+      "vc:label": "AI Research Area"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-review",
+      "vc:label": "Open Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    }
+  ]
+}
 ```
 
 ```json-ld
@@ -72,139 +238,189 @@ public: true
   "domain": "ai",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"},
-    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+    {
+      "@id": "urn:ngm:class:academic-conference",
+      "label": "Academic Conference"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:association-for-the-advancement-of-artificial-intelligence", "label": "Association for the Advancement of Artificial Intelligence"},
-    {"@id": "urn:ngm:class:american-association-for-artificial-intelligence", "label": "American Association for Artificial Intelligence"}
+    {
+      "@id": "urn:ngm:class:association-for-the-advancement-of-artificial-intelligence",
+      "label": "Association for the Advancement of Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:american-association-for-artificial-intelligence",
+      "label": "American Association for Artificial Intelligence"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:aaai-conference", "label": "AAAI Conference"},
-      {"@id": "urn:ngm:class:peer-review", "label": "Peer Review"},
-      {"@id": "urn:ngm:class:ai-magazine", "label": "AI Magazine"},
-      {"@id": "urn:ngm:class:aaai-fellows-program", "label": "AAAI Fellows Program"},
-      {"@id": "urn:ngm:class:workshop", "label": "Workshop"},
-      {"@id": "urn:ngm:class:tutorial", "label": "Tutorial"},
-      {"@id": "urn:ngm:class:poster-session", "label": "Poster Session"},
-      {"@id": "urn:ngm:class:programme-committee", "label": "Programme Committee"}
+      {
+        "@id": "urn:ngm:class:aaai-conference",
+        "label": "AAAI Conference"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "@id": "urn:ngm:class:ai-magazine",
+        "label": "AI Magazine"
+      },
+      {
+        "@id": "urn:ngm:class:aaai-fellows-program",
+        "label": "AAAI Fellows Program"
+      },
+      {
+        "@id": "urn:ngm:class:workshop",
+        "label": "Workshop"
+      },
+      {
+        "@id": "urn:ngm:class:tutorial",
+        "label": "Tutorial"
+      },
+      {
+        "@id": "urn:ngm:class:poster-session",
+        "label": "Poster Session"
+      },
+      {
+        "@id": "urn:ngm:class:programme-committee",
+        "label": "Programme Committee"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:open-science", "label": "Open Science"},
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:research-dissemination", "label": "Research Dissemination"},
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:ai-research", "label": "AI Research"},
-      {"@id": "urn:ngm:class:ai-for-social-good", "label": "AI for Social Good"}
+      {
+        "@id": "urn:ngm:class:research-dissemination",
+        "label": "Research Dissemination"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "@id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "@id": "urn:ngm:class:ai-for-social-good",
+        "label": "AI for Social Good"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:peer-review", "label": "Peer Review"},
-      {"@id": "urn:ngm:class:double-blind-review", "label": "Double-Blind Review"}
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "@id": "urn:ngm:class:double-blind-review",
+        "label": "Double-Blind Review"
+      }
     ],
     "produces": [
-      {"@id": "urn:ngm:class:research-publication", "label": "Research Publication"}
+      {
+        "@id": "urn:ngm:class:research-publication",
+        "label": "Research Publication"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:neur-ips", "label": "NeurIPS"},
-      {"@id": "urn:ngm:class:icml", "label": "ICML"},
-      {"@id": "urn:ngm:class:iclr", "label": "ICLR"},
-      {"@id": "urn:ngm:class:cvpr", "label": "CVPR"},
-      {"@id": "urn:ngm:class:ijcai", "label": "IJCAI"}
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:ijcai",
+        "label": "IJCAI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:scientific-conference", "label": "Scientific Conference"},
-      {"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"},
-      {"@id": "urn:ngm:class:research-institution", "label": "Research Institution"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}
+      {
+        "@id": "urn:ngm:class:scientific-conference",
+        "label": "Scientific Conference"
+      },
+      {
+        "@id": "urn:ngm:class:academic-conference",
+        "label": "Academic Conference"
+      },
+      {
+        "@id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aaai:20260620",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:aaai"},
-  "vc:resolutions": [
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink"},
-    {"raw": "[[Academic Conference]]", "resolved": "urn:visionflow:linked:academic-conference", "kind": "StubLink"},
-    {"raw": "[[AAAI Conference]]", "resolved": "urn:visionflow:linked:aaai-conference", "kind": "StubLink"},
-    {"raw": "[[Peer Review]]", "resolved": "urn:visionflow:linked:peer-review", "kind": "StubLink"},
-    {"raw": "[[NeurIPS]]", "resolved": "urn:visionflow:linked:neur-ips", "kind": "StubLink"},
-    {"raw": "[[ICML]]", "resolved": "urn:visionflow:linked:icml", "kind": "StubLink"},
-    {"raw": "[[ICLR]]", "resolved": "urn:visionflow:linked:iclr", "kind": "StubLink"},
-    {"raw": "[[CVPR]]", "resolved": "urn:visionflow:linked:cvpr", "kind": "StubLink"},
-    {"raw": "[[IJCAI]]", "resolved": "urn:visionflow:linked:ijcai", "kind": "StubLink"},
-    {"raw": "[[Research Publication]]", "resolved": "urn:visionflow:linked:research-publication", "kind": "StubLink"},
-    {"raw": "[[Scientific Conference]]", "resolved": "urn:visionflow:linked:scientific-conference", "kind": "StubLink"},
-    {"raw": "[[Research Institution]]", "resolved": "urn:visionflow:linked:research-institution", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "StubLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "StubLink"},
-    {"raw": "[[Planning and Scheduling]]", "resolved": "urn:visionflow:linked:planning-and-scheduling", "kind": "StubLink"},
-    {"raw": "[[Reasoning]]", "resolved": "urn:visionflow:linked:reasoning", "kind": "StubLink"},
-    {"raw": "[[Symbolic AI]]", "resolved": "urn:visionflow:linked:symbolic-ai", "kind": "StubLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:linked:ai-ethics", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[Responsible AI]]", "resolved": "urn:visionflow:linked:responsible-ai", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent System]]", "resolved": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
-    {"raw": "[[AI Research]]", "resolved": "urn:visionflow:linked:ai-research", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "StubLink"},
-    {"raw": "[[Explainability]]", "resolved": "urn:visionflow:linked:explainability", "kind": "StubLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "StubLink"},
-    {"raw": "[[AI Magazine]]", "resolved": "urn:visionflow:linked:ai-magazine", "kind": "StubLink"},
-    {"raw": "[[Open Science]]", "resolved": "urn:visionflow:linked:open-science", "kind": "StubLink"},
-    {"raw": "[[Double-Blind Review]]", "resolved": "urn:visionflow:linked:double-blind-review", "kind": "StubLink"},
-    {"raw": "[[Workshop]]", "resolved": "urn:visionflow:linked:workshop", "kind": "StubLink"},
-    {"raw": "[[Tutorial]]", "resolved": "urn:visionflow:linked:tutorial", "kind": "StubLink"},
-    {"raw": "[[Poster Session]]", "resolved": "urn:visionflow:linked:poster-session", "kind": "StubLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "StubLink"},
-    {"raw": "[[AI Alignment]]", "resolved": "urn:visionflow:linked:ai-alignment", "kind": "StubLink"},
-    {"raw": "[[Fairness in Machine Learning]]", "resolved": "urn:visionflow:linked:fairness-in-machine-learning", "kind": "StubLink"},
-    {"raw": "[[Human-Computer Interaction]]", "resolved": "urn:visionflow:linked:human-computer-interaction", "kind": "StubLink"},
-    {"raw": "[[Benchmark Standard]]", "resolved": "urn:visionflow:linked:benchmark-standard", "kind": "StubLink"},
-    {"raw": "[[Research Dissemination]]", "resolved": "urn:visionflow:linked:research-dissemination", "kind": "StubLink"},
-    {"raw": "[[AI Policy]]", "resolved": "urn:visionflow:linked:ai-policy", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:linked:multimodal-ai", "kind": "StubLink"},
-    {"raw": "[[AAAI Fellows Program]]", "resolved": "urn:visionflow:linked:aaai-fellows-program", "kind": "StubLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "StubLink"},
-    {"raw": "[[Causal Inference]]", "resolved": "urn:visionflow:linked:causal-inference", "kind": "StubLink"},
-    {"raw": "[[AI for Social Good]]", "resolved": "urn:visionflow:linked:ai-for-social-good", "kind": "StubLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "StubLink"},
-    {"raw": "[[Programme Committee]]", "resolved": "urn:visionflow:linked:programme-committee", "kind": "StubLink"},
-    {"raw": "[[AI Research Area]]", "resolved": "urn:visionflow:linked:ai-research-area", "kind": "StubLink"},
-    {"raw": "[[Open Review]]", "resolved": "urn:visionflow:linked:open-review", "kind": "StubLink"},
-    {"raw": "[[AI Domain]]", "resolved": "urn:visionflow:linked:ai-domain", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 

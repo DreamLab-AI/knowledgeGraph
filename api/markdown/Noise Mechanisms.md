@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Noise Mechanisms
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

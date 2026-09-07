@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Z Wave
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:z-wave", "@type":"Page", "title":"Z Wave", "vc:slug":"z-wave", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:z-wave",
+  "@type": "Page",
+  "title": "Z Wave",
+  "vc:slug": "z-wave",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

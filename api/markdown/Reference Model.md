@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reference Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A reference model is an abstract, authoritative description of the desired behaviour or structure of a system, used as the standard against which an actual implementation is measured or controlled. In control theory it specifies the ideal closed-loop response that a model-reference adaptive controller drives the plant to follow. In evaluation it serves as the baseline whose outputs define the expected target.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"},
-      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"}
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      }
     ]
   },
   "quality": 0.72

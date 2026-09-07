@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Post Hoc Explanation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,18 +103,36 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:intrinsic-interpretability", "label": "Intrinsic Interpretability"}
+      {
+        "@id": "urn:ngm:class:intrinsic-interpretability",
+        "label": "Intrinsic Interpretability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"}
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      }
     ]
   },
   "provenance": {
@@ -129,92 +142,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:post-hoc-explanation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7f249215697b629ff1b771ed9b42f40129e4c27ffc3c3d6a0f972a3d45b9dba0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Counterfactual Explanation]]",
-      "resolved": "urn:visionflow:linked:counterfactual-explanation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Feature Attribution]]",
-      "resolved": "urn:visionflow:linked:feature-attribution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Grad-CAM]]",
-      "resolved": "urn:visionflow:linked:grad-cam",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[LIME]]",
-      "resolved": "urn:visionflow:linked:lime",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model-Agnostic Explanations]]",
-      "resolved": "urn:visionflow:linked:model-agnostic-explanations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Saliency Map]]",
-      "resolved": "urn:visionflow:linked:saliency-map",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SHAP]]",
-      "resolved": "urn:visionflow:linked:shap",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Companies]]",
-      "resolved": "urn:visionflow:owl:class:ai-companies",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:owl:class:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Intrinsic Interpretability]]",
-      "resolved": "urn:visionflow:owl:class:intrinsic-interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Interpretability]]",
-      "resolved": "urn:visionflow:owl:class:model-interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Prompt Engineering]]",
-      "resolved": "urn:visionflow:owl:class:prompt-engineering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.

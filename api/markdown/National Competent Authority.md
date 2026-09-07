@@ -1,8 +1,3 @@
----
-public: true
----
-
-# National Competent Authority
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:ai-office", "label": "AI Office"},
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+      {
+        "@id": "urn:ngm:class:ai-office",
+        "label": "AI Office"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:market-surveillance-authority", "label": "Market Surveillance Authority"},
-      {"@id": "urn:ngm:class:notified-body", "label": "Notified Body"}
+      {
+        "@id": "urn:ngm:class:market-surveillance-authority",
+        "label": "Market Surveillance Authority"
+      },
+      {
+        "@id": "urn:ngm:class:notified-body",
+        "label": "Notified Body"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:national-competent-authority:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6631a23a3996415c132471d512dac2a080214be6435a0b664c7665bfaeb92c86"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A notifying authority, a market surveillance authority, or any other authority designated by a Member State to supervise the application and implementation of the AI Act, including national data protection authorities where relevant.

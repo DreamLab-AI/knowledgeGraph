@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Quality
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,46 +173,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-quality:87e600d3def6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e47bd45c8a61fe23a1eca640d215cef57ecf5ebf550f8f0c63d5563df0283a2f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Governance]]",
-      "resolved": "urn:visionflow:linked:data-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Master Data Management]]",
-      "resolved": "urn:visionflow:linked:master-data-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Integration]]",
-      "resolved": "urn:visionflow:linked:data-integration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Management]]",
-      "resolved": "urn:visionflow:linked:data-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Precision Agriculture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Precision agriculture is a farming-management approach that uses sensing, geolocation, and data analytics to observe and respond to variability within fields at fine spatial resolution. It applies inputs such as water, fertiliser, and pesticide only where and when needed, improving yield and reducing waste. It integrates IoT sensors, satellite and drone imagery, and increasingly autonomous ground robots.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:ground-robot", "label": "Ground Robot"}
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      }
     ]
   },
   "quality": 0.72

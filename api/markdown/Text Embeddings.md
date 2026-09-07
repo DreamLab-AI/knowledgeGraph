@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Text Embeddings
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Text embeddings are dense numerical vector representations of words, sentences, or documents that place semantically similar text close together in a high-dimensional space. They are produced by neural models trained so that distance or cosine similarity in the vector space reflects meaning rather than surface form. Embeddings are the foundation of semantic search, clustering, and retrieval-augmented generation.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
     ]
   },
   "quality": 0.72

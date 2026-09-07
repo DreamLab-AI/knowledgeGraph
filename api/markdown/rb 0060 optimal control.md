@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0060 optimal control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,20 +56,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0062-model-predictive-control", "label": "rb 0062 model predictive control"},
-      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:rb-0062-model-predictive-control",
+        "label": "rb 0062 model predictive control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"},
-      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"}
+      {
+        "@id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
-      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"}
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"}
+      {
+        "@id": "urn:ngm:class:rb-0064-computed-torque-control",
+        "label": "rb 0064 computed torque control"
+      }
     ]
   },
   "provenance": {
@@ -84,32 +103,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0060-optimal-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5d1aa3b70e533af00a207c56ed0a70067568f0c774a79bc44ad494b3e42a1870"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Optimal control** formulates robot motion and actuation as an optimisation problem: find a control trajectory that drives the system from an initial to a goal state while minimising a cost functional (e.g., joint torques, execution time, or deviation from a reference). Classical methods include Pontryagin's minimum principle and dynamic programming; practical implementations in robotics use model predictive control (rb 0062) and computed-torque control (rb 0064).

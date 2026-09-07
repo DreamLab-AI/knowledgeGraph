@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Manufacturing Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "A manufacturing process is a structured sequence of physical transformations — including machining, assembly, forming, joining, heat treatment, surface finishing, and inspection — applied to raw materials or sub-components to produce finished goods meeting specified tolerances, material properties, and functional requirements. Manufacturing processes are characterised by their tooling, cycle time, throughput, waste profile, and quality control mechanisms.",
   "domain": "robotics",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"}
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:logistics-automation", "label": "Logistics Automation"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:industrial-inspection", "label": "Industrial Inspection"}
+      {
+        "@id": "urn:ngm:class:industrial-inspection",
+        "label": "Industrial Inspection"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - Additive manufacturing (AM) has emerged as a complementary process for low-volume, high-complexity components. Selective Laser Sintering (SLS), Direct Metal Laser Sintering (DMLS), and Electron Beam Melting (EBM) produce near-net-shape metal parts with internal geometries impossible by subtractive means, enabling lightweighting through topology-optimised structures. Hybrid manufacturing — combining additive deposition with CNC machining in a single machine — addresses surface finish limitations of AM. Industry 4.0 frameworks integrate IoT sensor streams, [[Machine Learning Discipline]] anomaly detection, and digital twin models of individual machines into a cyber-physical production system architecture.
 
   - As of 2024–2025, AI is transforming manufacturing process control through predictive quality systems that correlate in-process sensor signatures with final dimensional outcomes, enabling real-time process adjustment. Computer vision inspection systems — trained on synthetic defect datasets — replace or augment manual visual inspection on high-speed production lines. Collaborative robots (cobots) from Universal Robots, FANUC, and Kuka are being deployed in assembly tasks requiring dexterous force control alongside human operators. Digital thread initiatives — tracing each component from raw material through all process steps to service life — are becoming regulatory requirements in aerospace (FAA) and defence manufacturing, demanding data integration across previously siloed process records.
-

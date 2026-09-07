@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Microphone Array
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:microphone-array", "@type": "Page", "title": "Microphone Array", "vc:slug": "microphone-array", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:microphone-array",
+  "@type": "Page",
+  "title": "Microphone Array",
+  "vc:slug": "microphone-array",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

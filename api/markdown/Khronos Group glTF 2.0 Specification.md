@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Khronos Group glTF 2.0 Specification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:khronos-group-gl-tf-2-0-specification:a11a665e5c02",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:919011fe5396dff660dab48499986fed39f9b9010e6c7b6aed4f9ee3109d87eb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Asset]]",
-      "resolved": "urn:visionflow:linked:3-d-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[glTF]]",
-      "resolved": "urn:visionflow:linked:gl-tf",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The glTF 2.0 specification is the Khronos Group standard defining the GL Transmission Format for efficient transmission and loading of 3D scenes and models. It uses JSON for structure with binary buffers for geometry and a physically based material model.

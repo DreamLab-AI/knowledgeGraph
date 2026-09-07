@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Medical Image Synthesis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,47 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:medical-image-synthesis:d76c79cd8e52",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a65fc29caf5e66b81fdcb6deabc2bfdcf3701404c5537bbb5fb63dc155091e75"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Generative Model]]",
-      "resolved": "urn:visionflow:linked:generative-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical Imaging]]",
-      "resolved": "urn:visionflow:linked:medical-imaging",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Adversarial Network]]",
-      "resolved": "urn:visionflow:linked:generative-adversarial-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Synthesis]]",
-      "resolved": "urn:visionflow:linked:image-synthesis",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Medical image synthesis is the use of generative models to produce artificial medical images, such as scans, for training data augmentation, modality translation, or privacy-preserving sharing.

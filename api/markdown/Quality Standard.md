@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quality Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,28 +59,64 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:testing-process", "label": "Testing Process"},
-      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"}
+      {
+        "@id": "urn:ngm:class:testing-process",
+        "label": "Testing Process"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:compliance-standards", "label": "Compliance Standards"},
-      {"@id": "urn:ngm:class:compliance-control", "label": "Compliance Control"}
+      {
+        "@id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:iso-standards", "label": "Iso Standards"},
-      {"@id": "urn:ngm:class:testing-infrastructure", "label": "Testing Infrastructure"}
+      {
+        "@id": "urn:ngm:class:iso-standards",
+        "label": "Iso Standards"
+      },
+      {
+        "@id": "urn:ngm:class:testing-infrastructure",
+        "label": "Testing Infrastructure"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"},
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
-      {"@id": "urn:ngm:class:compliance-dashboard", "label": "Compliance Dashboard"}
+      {
+        "@id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-dashboard",
+        "label": "Compliance Dashboard"
+      }
     ]
   },
   "provenance": {
@@ -95,37 +126,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:quality-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b5cd4598ec9d28632c1fefb08b4f4ae5d61528dc9c253521742070b391b3dfef"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robot Standard]]",
-      "resolved": "urn:visionflow:owl:class:robot-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Quality Standard is a formally published specification defining measurable requirements for quality management, process control, testing methodology, and conformance verification in robot manufacturing and deployment. It provides normative benchmarks against which robotic systems are assessed for reliability, safety, and fitness for purpose.

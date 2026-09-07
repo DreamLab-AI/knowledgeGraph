@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rack and Pinion Actuator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,34 +59,82 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:stepper-motor", "label": "Stepper Motor"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:stepper-motor",
+        "label": "Stepper Motor"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:electric-actuator", "label": "Electric Actuator"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:torque", "label": "Torque"}
+      {
+        "@id": "urn:ngm:class:electric-actuator",
+        "label": "Electric Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:torque",
+        "label": "Torque"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"}
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:dc-servo-motor", "label": "DC Servo Motor"},
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"}
+      {
+        "@id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:manipulator", "label": "Manipulator"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+      {
+        "@id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:lead-screw-actuator", "label": "Lead Screw Actuator"},
-      {"@id": "urn:ngm:class:pneumatic-actuator", "label": "Pneumatic Actuator"},
-      {"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"}
+      {
+        "@id": "urn:ngm:class:lead-screw-actuator",
+        "label": "Lead Screw Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"}
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
     ]
   },
   "provenance": {
@@ -101,37 +144,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rack-and-pinion-actuator:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:35b20d8b445b6f405d1a8e3440b78a271dd3978587a730a921bf02c7922779e6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Electric Linear Actuator]]",
-      "resolved": "urn:visionflow:owl:class:electric-linear-actuator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A rack and pinion actuator is a mechanical transmission mechanism that converts rotary motion from a pinion gear into linear motion along a toothed rack, commonly used in robotics and industrial automation for precise linear positioning. The pinion rotates against the rack to produce controlled translational displacement, with speed and force determined by gear ratio and motor torque. It offers high stiffness, repeatability, and scalability for long-stroke linear axes in robotic manipulators and CNC systems.

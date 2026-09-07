@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Obstacle Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -135,6 +131,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Obstacle Detection is the robotics perception task of identifying and localising physical objects in a robot's surroundings that may impede or endanger its motion. It fuses data from sensors such as lidar, cameras, radar and ultrasonic rangefinders to build a representation of free and occupied space. Reliable obstacle detection is a prerequisite for safe autonomous navigation, collision avoidance and motion planning.
   - Related core concepts: [[Perception]] [[Sensor Fusion]] [[Collision Avoidance]] [[Autonomous Navigation]] [[Lidar]]

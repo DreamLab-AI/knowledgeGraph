@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gradient Clipping
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,20 +51,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:optimiser", "label": "Optimiser"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "provenance": {
@@ -79,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gradient-clipping:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:60312e78af664b8d7063c81f3803b8b27b6004bab7cc18c5666c6f1c688351cb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A technique that limits the magnitude of gradients during backpropagation to prevent exploding gradients and training instability. Gradient clipping rescales gradients when their norm exceeds a threshold, enabling stable training of deep networks, especially recurrent architectures.

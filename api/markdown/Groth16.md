@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Groth16
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:groth-16:d39617a29849",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e2068b1bf960e9321948580fc9c60bdd5e3ceb0bf187a7541abd1cf907c160d7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Elliptic Curve Cryptography]]",
-      "resolved": "urn:visionflow:linked:elliptic-curve-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ZK-SNARK]]",
-      "resolved": "urn:visionflow:linked:zk-snark",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Primitive]]",
-      "resolved": "urn:visionflow:linked:cryptographic-primitive",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A pairing-based zk-SNARK proving system that produces constant-size proofs verifiable with a few elliptic curve pairing operations, at the cost of a per-circuit trusted setup.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Wallet
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,67 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-wallet:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6402dc919a240baac8ade7024c5598fc92dcad1db552e42aecf098b456d3f2ef"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DeFi Access]]",
-      "resolved": "urn:visionflow:linked:de-fi-access",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transaction Signing]]",
-      "resolved": "urn:visionflow:linked:transaction-signing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asset Management]]",
-      "resolved": "urn:visionflow:owl:class:asset-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Network]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency Storage]]",
-      "resolved": "urn:visionflow:owl:class:cryptocurrency-storage",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Security]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Private Key]]",
-      "resolved": "urn:visionflow:owl:class:private-key",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A software application or hardware device that stores private keys and enables users to manage, send, and receive cryptocurrencies and digital assets on blockchain networks, with self-custody wallets providing complete user control over private keys without third-party intermediaries.

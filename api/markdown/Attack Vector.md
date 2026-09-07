@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Attack Vector
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,72 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:attack-vector:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0ddb504bfb4cc25a16292a7c3c655d32db3fa74a575bbcdfde3df7c1e88a8134"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO]]",
-      "resolved": "urn:visionflow:linked:iso",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST]]",
-      "resolved": "urn:visionflow:linked:nist",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Resilience]]",
-      "resolved": "urn:visionflow:owl:class:resilience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk]]",
-      "resolved": "urn:visionflow:owl:class:risk",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Security]]",
-      "resolved": "urn:visionflow:owl:class:security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Threat Actor]]",
-      "resolved": "urn:visionflow:owl:class:threat-actor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vulnerability]]",
-      "resolved": "urn:visionflow:owl:class:vulnerability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Attack Vector is a concept within the ai domain.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Democratic Engagement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:democratic-governance", "label": "Democratic Governance"},
-      {"@id": "urn:ngm:class:democratic-participation", "label": "Democratic Participation"}
+      {
+        "@id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Governance"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-participation",
+        "label": "Democratic Participation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:digital-platform", "label": "Digital Platform"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:digital-platform",
+        "label": "Digital Platform"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:democratic-values", "label": "Democratic Values"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:democratic-values",
+        "label": "Democratic Values"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"}
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:democratic-engagement:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d3df8f92adf032011c8f9e646114b3a1b8a0701bde790768be5f12117bb4b7de"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Democratic Engagement refers to the mechanisms and practices through which citizens participate in governance decisions via digital and virtual channels. In metaverse and telecollaboration contexts this encompasses online deliberation tools, DAO-based governance, participatory spatial environments, and AI-assisted facilitation of civic participation.

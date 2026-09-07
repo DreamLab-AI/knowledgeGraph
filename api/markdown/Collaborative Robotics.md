@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collaborative Robotics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -169,7 +164,7 @@ public: true
 
 - ### Overview
   - Collaborative Robotics emerged as a distinct engineering discipline in the mid-1990s, formalised by J. Edward Colgate and Michael Peshkin at Northwestern University who coined the term "cobot" in 1996. The concept was a direct response to the rigidity of classical [[Industrial Robot]] deployments, which required expensive safety guarding, extensive integration, and high volumes to justify investment.
-  - The core insight was that a robot designed to be inherently safe through mechanical compliance and sensing — rather than through physical isolation — could operate alongside human workers, combining robotic repeatability and strength with human dexterity and judgement.
+  - The core insight was that a robot designed to be inherently safe through mechanical compliance and sensing — rather than through physical isolation — [private] operate alongside human workers, combining robotic repeatability and strength with human dexterity and judgement.
   - Cobots have become a mainstream category within [[Manufacturing Automation]], occupying deployments in small and medium enterprises, research laboratories, healthcare facilities, and logistics centres.
 
 - ### Key Components

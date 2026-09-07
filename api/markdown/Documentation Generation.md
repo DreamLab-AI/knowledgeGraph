@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Documentation Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -71,21 +66,48 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"}
+      {
+        "@id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      }
     ]
   },
   "quality": 0.8,
@@ -93,46 +115,6 @@ public: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:documentation-generation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:631ecee3eb2c0487a20ae172bd7aa2cc67634d79d820b1677b26034e9c5982b3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Ai]]",
-      "resolved": "urn:visionflow:owl:class:generative-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -251,7 +233,7 @@ public: true
   ## About
     Documentation Generation refers to the automated construction of technical documentation from software artefacts — source code, schemas, configurations, and runtime traces — using AI and natural language processing techniques. Historically, documentation was written entirely by hand, a labour-intensive process that consistently lagged code development: studies repeatedly confirm that a majority of open-source codebases are poorly documented or out-of-date, and that developer time spent reading and understanding undocumented code constitutes the single largest category of wasted engineering effort. A 2024 GitHub study found that developers spend approximately 58% of their time reading and understanding code rather than writing it, a proportion that AI-assisted documentation generation can directly reduce by surfacing intent and behaviour inline.
 
-    The field began its modern trajectory in the early 2010s with information-retrieval approaches that matched code tokens to similar, already-documented snippets, using lexical overlap to rank and adapt retrieved descriptions. These early systems — exemplified by Portfolio (McMillan et al., 2011) and HN (Horn et al., 2013) — demonstrated that even naive similarity-based documentation could be useful, but they were brittle against vocabulary mismatch and failed to capture semantic rather than lexical relatedness. The graduated to statistical sequence-to-sequence models that learned to summarise method bodies into short English descriptions, with Iyer et al.'s CODE-NN (2016) establishing the first attention-based neural baseline and Hu et al.'s SBT (2018) encoding Abstract Syntax Tree paths to capture structural semantics. The decisive inflection arrived with the introduction of large pre-trained code-language models — CodeBERT (2020), Codex (2021, GitHub Copilot), CodeT5 (2021), UniXcoder (2022), and StarCoder (2023) — which enabled fluent, contextually grounded docstring and prose generation at scale, with BLEU scores on CodeSearchNet doubling within two years of pre-trained model introduction.
+    The field began its modern trajectory in the early 2010s with information-retrieval approaches that matched code tokens to similar, already-documented snippets, using lexical overlap to rank and adapt retrieved descriptions. These early systems — exemplified by Portfolio (McMillan et al., 2011) and HN (Horn et al., 2013) — demonstrated that even naive similarity-based documentation [private] be useful, but they were brittle against vocabulary mismatch and failed to capture semantic rather than lexical relatedness. The graduated to statistical sequence-to-sequence models that learned to summarise method bodies into short English descriptions, with Iyer et al.'s CODE-NN (2016) establishing the first attention-based neural baseline and Hu et al.'s SBT (2018) encoding Abstract Syntax Tree paths to capture structural semantics. The decisive inflection arrived with the introduction of large pre-trained code-language models — CodeBERT (2020), Codex (2021, GitHub Copilot), CodeT5 (2021), UniXcoder (2022), and StarCoder (2023) — which enabled fluent, contextually grounded docstring and prose generation at scale, with BLEU scores on CodeSearchNet doubling within two years of pre-trained model introduction.
 
     The architecture of contemporary documentation generation systems is layered and modular. At the syntactic layer, language-specific parsers (tree-sitter for multi-language support, ANTLR-based grammars, Roslyn for C#, JavaParser for Java) build [[Abstract Syntax Tree]] representations of source files, extracting the structural skeleton of classes, methods, parameters, return types, decorators, exception specifications, and type annotations regardless of surface formatting or whitespace conventions. This AST representation is language-agnostic in form, enabling documentation pipelines to operate uniformly across Python, Java, TypeScript, JavaScript, C++, Go, Rust, and other languages without language-specific prompting logic. At the semantic layer, call-graph and control-flow analysis tools (CodeQL, pyan, Understand) build inter-procedural dependency graphs revealing how functions compose and which callers invoke a given method, providing the wider context that isolated method-level summarisation misses: a function named `process_batch` generates very different documentation when its callers reveal it is processing HTTP request payloads rather than database rows. At the discourse layer, [[Large Language Models]] receive explicitly constructed prompts encoding AST metadata, inlined code snippets, adjacent documentation from enclosing classes and called functions, and project-level dependency graph context, then generate descriptive prose constrained to match the signature's type annotations, inferred postconditions, and applicable docstring style conventions (Google Python style, NumPy, reST/Sphinx, JSDoc, Rustdoc).
 
@@ -391,7 +373,7 @@ public: true
     - **Multi-modal documentation** — combining generated prose with auto-generated architecture diagrams (Mermaid, D2, PlantUML), sequence diagrams derived from execution traces, data flow diagrams generated from call-graph analysis, and screencast-style video walkthroughs generated by multimodal LLMs from code execution demos. Tools like Mintlify already support Mermaid diagram embedding; the research frontier is generating the diagram markup automatically from code structure analysis.
     - **Causal documentation** — going beyond "what this function does" to "why this design decision was made", drawing on git history (commit messages, PR descriptions, review comments), RFC threads, ADRs, and issue tracker context to surface design rationale alongside API signatures. This form of documentation captures institutional knowledge that is currently lost when original authors leave a project.
     - **Domain-adapted documentation models** — fine-tuning specialised documentation LLMs per programming language ecosystem to respect ecosystem-specific conventions: Rust documentation must discuss ownership, borrowing, and lifetime semantics; Haskell documentation involves type-level programming concepts; CUDA kernel documentation requires discussion of thread hierarchy, shared memory, and synchronisation primitives; Erlang/OTP documentation must address supervision trees and message passing. General-purpose LLMs hallucinate ecosystem-specific conventions at rates that specialised models can substantially reduce.
-    - **Bidirectional doc-code consistency enforcement** — systems that not only generate documentation from code but bidirectionally flag when code drifts from its documented contract, treating the docstring as an executable specification. Integration with property-based testing frameworks (Hypothesis, QuickCheck) could automatically validate that generated usage examples actually produce the documented outputs.
+    - **Bidirectional doc-code consistency enforcement** — systems that not only generate documentation from code but bidirectionally flag when code drifts from its documented contract, treating the docstring as an executable specification. Integration with property-based testing frameworks (Hypothesis, QuickCheck) [private] automatically validate that generated usage examples actually produce the documented outputs.
     - **Standards convergence** — anticipated convergence around MCP-native documentation endpoints, `llms.txt`, and OpenAPI 4.0 as an integrated developer-documentation ecosystem for agentic AI where documentation sites are first-class citizens of the AI coding assistant's tool registry rather than passive web pages.
     - **Low-resource programming language support** — extending documentation generation to under-documented programming languages (Coq, Agda, Idris, Lean, K Framework DSLs, domain-specific languages for hardware description, query languages) using few-shot adaptation of multilingual code models. This is particularly relevant for formal verification tools where the proof assistant's documentation is the primary interface for new users.
     - **Self-updating documentation at deployment time** — documentation generation systems that monitor production telemetry (API call patterns, error rates, common parameter combinations) and automatically annotate documentation with empirically observed usage patterns, correcting discrepancies between the documented "typical use case" and the actual observed usage in production.

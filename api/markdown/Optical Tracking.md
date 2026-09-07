@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optical Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,26 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:optical-tracking:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:48cefb208b67c38507cd1b1d37d82970c69e10d06180df0fe2da955dc7944d03"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A sensing technology that uses camera-based systems and computer vision algorithms to determine the position and orientation of objects or users within physical space. Implementations range from marker-based infrared systems achieving sub-millimetre accuracy to markerless inside-out tracking using SLAM, enabling motion capture, hand tracking, and environmental mapping for XR applications.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Video Understanding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -106,6 +102,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Video understanding is the field of artificial intelligence concerned with extracting semantic meaning from video, including recognising objects, actions, events, and their temporal relationships across frames. Unlike single-image analysis, it must model motion, temporal context, and long-range dependencies to interpret what is happening over time. Modern approaches combine spatial feature extraction with temporal modelling using recurrent, 3D-convolutional, and transformer-based architectures, increasingly fused with language for captioning, retrieval, and question answering.
   - [[Computer Vision]] [[Optical Flow]] [[Convolutional Neural Network]] [[Transformer]] [[Attention Mechanism]]

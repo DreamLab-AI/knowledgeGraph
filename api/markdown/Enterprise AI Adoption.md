@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise AI Adoption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Enterprise AI adoption is the organisational process of integrating artificial-intelligence capabilities into business operations, products, and decision-making at scale. It spans strategy, data readiness, platform selection, governance, change management, and measurement of return on investment. Successful adoption depends as much on workflow redesign, skills, and executive sponsorship as on the underlying models.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-companies", "label": "AI Companies"}, {"@id": "urn:ngm:class:machine-learning-discipline-platform", "label": "Machine Learning Platform"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-platform",
+        "label": "Machine Learning Platform"
+      }
+    ]
   },
   "quality": 0.72
 }

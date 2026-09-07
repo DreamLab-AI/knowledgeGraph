@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Hybrid Work
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:hybrid-work", "@type": "Page", "title": "Hybrid Work", "vc:slug": "hybrid-work", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:hybrid-work",
+  "@type": "Page",
+  "title": "Hybrid Work",
+  "vc:slug": "hybrid-work",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

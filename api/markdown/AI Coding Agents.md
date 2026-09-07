@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Coding Agents
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-coding-agents",
   "title": "AI Coding Agents",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Software Downloads", "Tailwind CSS"],
+  "vc:outboundWikilinks": [
+    "Software Downloads",
+    "Tailwind CSS"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

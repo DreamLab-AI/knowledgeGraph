@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robot Controller
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -131,6 +127,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - A Robot Controller is the computational subsystem that governs a robot's behaviour by reading sensor data, computing control commands and driving actuators to achieve desired motion or tasks. It runs control loops in real time, coordinating kinematics, trajectory execution and safety logic while interfacing with higher-level planning software. Controllers range from embedded microcontrollers on a single joint to industrial cabinets coordinating an entire articulated arm.
   - Related concepts: [[Control System]] [[Robotic System]] [[Actuator]] [[Sensor]] [[Feedback Control]]

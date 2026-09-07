@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Authentication Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,57 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:authentication-protocol:445a306d40ff",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b4e41fb9e0b0540239ade30ec1bb022a0104f12ec08a1b9f4e2364991972b29d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Authentication]]",
-      "resolved": "urn:visionflow:linked:authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Access Control]]",
-      "resolved": "urn:visionflow:linked:access-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Factor Authentication]]",
-      "resolved": "urn:visionflow:linked:multi-factor-authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OAuth]]",
-      "resolved": "urn:visionflow:linked:oauth",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Protocol]]",
-      "resolved": "urn:visionflow:linked:cryptographic-protocol",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A defined sequence of exchanges through which one party proves its identity to another over a communication channel.

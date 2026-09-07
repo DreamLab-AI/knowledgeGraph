@@ -1,54 +1,118 @@
----
-public: true
----
-
-# Lifecycle Assessment
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:lifecycle-assessment", "@type":"Page", "title":"Lifecycle Assessment", "vc:slug":"lifecycle-assessment", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:lifecycle-assessment",
-  "@type":"Class",
-  "label":"Lifecycle Assessment",
-  "definition":"Lifecycle assessment is a systematic method for evaluating the environmental impacts of a product, process or service across its entire life, from raw-material extraction through manufacture, distribution, use and end-of-life disposal or recycling. By accounting for inputs and outputs such as energy, materials, emissions and waste at every stage, it identifies where the greatest impacts occur and prevents burden-shifting between life-cycle phases. It underpins eco-design, carbon accounting and credible sustainability claims, and is governed by international standards to ensure comparability.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:environmental-sustainability","label":"Environmental Sustainability"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"},
-      {"@id":"urn:ngm:class:carbon-footprint","label":"Carbon Footprint"}
-    ],
-    "partOf":[{"@id":"urn:ngm:class:sustainability","label":"Sustainability"}],
-    "requires":[
-      {"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"},
-      {"@id":"urn:ngm:class:supply-chain","label":"Supply Chain"}
-    ],
-    "uses":[
-      {"@id":"urn:ngm:class:carbon-footprint","label":"Carbon Footprint"},
-      {"@id":"urn:ngm:class:supply-chain","label":"Supply Chain"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:circular-economy","label":"Circular Economy"},
-      {"@id":"urn:ngm:class:green-computing","label":"Green Computing"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:esg","label":"ESG"},
-      {"@id":"urn:ngm:class:sustainable-development","label":"Sustainable Development"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:climate-action","label":"Climate Action"},
-      {"@id":"urn:ngm:class:renewable-energy","label":"Renewable Energy"},
-      {"@id":"urn:ngm:class:carbon-neutrality","label":"Carbon Neutrality"}
-    ]
-  },
-  "sameAs":[{"@id":"urn:ngm:class:life-cycle-assessment","label":"Life Cycle Assessment"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:lifecycle-assessment",
+  "@type": "Page",
+  "title": "Lifecycle Assessment",
+  "vc:slug": "lifecycle-assessment",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:lifecycle-assessment",
+  "@type": "Class",
+  "label": "Lifecycle Assessment",
+  "definition": "Lifecycle assessment is a systematic method for evaluating the environmental impacts of a product, process or service across its entire life, from raw-material extraction through manufacture, distribution, use and end-of-life disposal or recycling. By accounting for inputs and outputs such as energy, materials, emissions and waste at every stage, it identifies where the greatest impacts occur and prevents burden-shifting between life-cycle phases. It underpins eco-design, carbon accounting and credible sustainability claims, and is governed by international standards to ensure comparability.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:environmental-sustainability",
+      "label": "Environmental Sustainability"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:green-computing",
+        "label": "Green Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:climate-action",
+        "label": "Climate Action"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      }
+    ]
+  },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:life-cycle-assessment",
+      "label": "Life Cycle Assessment"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Lifecycle assessment evaluates the environmental impact of a product or service across its whole life, from raw materials to disposal. A method within [[Environmental Sustainability]] and [[Sustainability]], it underpins [[Carbon Accounting]] and credible [[ESG]] claims by quantifying impacts at every stage.
 - ### Overview

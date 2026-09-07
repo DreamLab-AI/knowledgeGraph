@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UNESCO Recommendation on the Ethics of AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,30 +59,72 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:human-rights", "label": "Human Rights"}
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ethical-ai", "label": "Ethical AI"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai-principles", "label": "Responsible AI Principles"}
+      {
+        "@id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"}
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
     ]
   },
   "provenance": {
@@ -97,42 +134,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:unesco-recommendation-on-the-ethics-of-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:311e0e36507571093bc8d0a8e8bab19b28ccc4b194f5384e8061d96fbec54535"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[UNESCO Recommendation on the Ethics of AI (2021)]]",
-      "resolved": "urn:visionflow:linked:unesco-recommendation-on-the-ethics-of-ai-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The UNESCO Recommendation on the Ethics of Artificial Intelligence is the first global normative framework establishing ethical principles and policy actions for responsible AI development and deployment, adopted by UNESCO's 193 Member States in November 2021. This comprehensive instrument provides shared values, principles, and actionable policy recommendations to ensure AI technologies respect human rights, protect human dignity, promote diversity and inclusion, and contribute to peaceful and just societies living in harmony with the environment. The Recommendation establishes four core values (human rights and dignity, living in peaceful just and interconnected societies, ensuring diversity and inclusiveness, environment and ecosystem flourishing) and ten foundational principles including proportionality, safety and security, fairness and non-discrimination, sustainability, right to privacy and data protection, human oversight and determination, transparency and explainability, responsibility and accountability, awareness and literacy, and multi-stakeholder and adaptive governance. Unlike legally binding treaties, UNESCO Recommendations establish normative standards that guide national legislation, institutional policies, and international cooperation, providing a foundation for ethical AI governance frameworks worldwide.

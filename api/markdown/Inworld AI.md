@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inworld AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,57 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inworld-ai:2b2c136e8f48",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b0be6b353b0aab69ce8ec59d246276b646677fc18f965f9b3038aa64b16a91d0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Language Model]]",
-      "resolved": "urn:visionflow:linked:language-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text-to-Speech]]",
-      "resolved": "urn:visionflow:linked:text-to-speech",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Game AI]]",
-      "resolved": "urn:visionflow:linked:game-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Avatar]]",
-      "resolved": "urn:visionflow:linked:avatar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Conversational AI]]",
-      "resolved": "urn:visionflow:linked:conversational-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:linked:speech-recognition",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Inworld AI is a company providing tools for building interactive AI-driven characters for games and virtual experiences. Its platform combines language models, speech and behaviour controls to drive non-player characters and avatars.

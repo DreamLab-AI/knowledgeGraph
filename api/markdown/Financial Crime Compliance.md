@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Financial Crime Compliance
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

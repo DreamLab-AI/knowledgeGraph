@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rendering Technique
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,25 +187,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rendering-technique:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:41fde639e50630d6345ca7d91097de7544562661987df80d6e180254fa183c30"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A **rendering technique** is a specific algorithm or computational methodology for transforming a three-dimensional scene description into a two-dimensional pixel image, always trading image fidelity against computational cost and latency. The landscape spans [[Rasterization]] (real-time triangle projection), [[Ray Tracing]] (physically accurate light transport), [[Path Tracing]] (Monte Carlo global illumination), and increasingly [[Neural Rendering]] (learned scene representations). Modern [[Real-Time 3D Graphics]] engines layer multiple techniques into hybrid pipelines that target explicit quality budgets across diverse hardware tiers, from mobile SoCs to dedicated ray-tracing silicon.
 
@@ -320,7 +296,7 @@ public: true
   - 2. MPEG (2026). Explorations Part 45 - Gaussian Splat Coding (use cases, requirements, common test conditions). https://www.mpeg.org/standards/Explorations/45/
   - 3. Strayspark Studio (2026). Gaussian Splatting in Unreal Engine 5: The Capture-to-Game Pipeline. https://www.strayspark.studio/blog/gaussian-splatting-unreal-engine-5-capture-to-game-pipeline
   - 4. NVIDIA (2025). 3D Gaussian Splatting for Realistic Physical AI Simulations - 3D Gaussian Ray Tracing, 3DGUT and NuRec. https://www.nvidia.com/en-us/on-demand/session/siggraph25-s07/
-  - 5. Advances in Real-Time Rendering in Games, SIGGRAPH 2025 (2025). Course programme - real-time path tracing, subsurface scattering, MegaLights. https://advances.realtimerendering.com/s2025/index.html
+  - 5. Advances in Real-Time Rendering in Games, SIGGRAPH 2025 (2025). Course programme - real-time path tracing, subsurface scattering, MegaLights. https://advances.realtimerendering.com/s2025/[private].html
   - 6. Emergent Mind (2025). Neural Rendering Techniques - survey of NeRF, 3DGS, radiance caching and hardware-algorithm co-design (Lumina, MetaSapiens). https://www.emergentmind.com/topics/neural-rendering-techniques
 
 - ### Provenance

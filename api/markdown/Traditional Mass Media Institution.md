@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[legacy media]]
-# Traditional Mass Media Institution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,26 +76,6 @@ elevatedFrom:: [[legacy media]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:legacy-media:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6e04c1aa9e6444998868a9a69dcf8729da805604934e54874e87a7fe1c59f75e"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Legacy media refers to established, traditional forms of mass communication — including print, broadcast television, and radio — that preceded the digital internet era. These institutions hold significant cultural authority and are undergoing structural disruption as AI-driven platforms alter content distribution and audience economics.

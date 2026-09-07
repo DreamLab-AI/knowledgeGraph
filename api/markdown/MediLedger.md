@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MediLedger
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:medi-ledger:7574bef7448b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:21971f3947477832dc1f0d764d46aa62a02944929bd920d938cad9b6d760327b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Permissioned Blockchain]]",
-      "resolved": "urn:visionflow:linked:permissioned-blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GS1]]",
-      "resolved": "urn:visionflow:linked:gs-1",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Provenance]]",
-      "resolved": "urn:visionflow:linked:provenance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger Technology]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Supply Chain]]",
-      "resolved": "urn:visionflow:linked:supply-chain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pharmaceutical Supply Chain]]",
-      "resolved": "urn:visionflow:linked:pharmaceutical-supply-chain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.mediledger.com/]]",
-      "resolved": "urn:visionflow:linked:https-www-mediledger-com",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A permissioned blockchain network for the pharmaceutical industry that records product provenance and verifies the legitimacy of drug transactions between trading partners. It was built to support compliance with United States drug supply chain security regulations.

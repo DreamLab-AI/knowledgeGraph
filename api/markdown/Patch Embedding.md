@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Patch Embedding
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,41 +20,104 @@ public: true
   "definition": "Patch embedding is the mechanism by which a Vision Transformer (ViT) converts a 2D image into a sequence of fixed-size vector representations suitable for processing by a self-attention mechanism. The image is divided into non-overlapping rectangular patches; each patch is flattened and projected to a latent dimension via a learnable linear transformation, yielding a sequence of token embeddings analogous to word embeddings in language models. Positional embeddings are added to encode spatial location, and a classification token is prepended to aggregate global information.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}, {"@id": "urn:ngm:class:embedding", "label": "Embedding"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:embedding",
+      "label": "Embedding"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
-      {"@id": "urn:ngm:class:linear-projection", "label": "Linear Projection"},
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:linear-projection",
+        "label": "Linear Projection"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:image-patch", "label": "Image Patch"},
-      {"@id": "urn:ngm:class:embedding-layer", "label": "Embedding Layer"},
-      {"@id": "urn:ngm:class:classification-token", "label": "Classification Token"}
+      {
+        "@id": "urn:ngm:class:image-patch",
+        "label": "Image Patch"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-layer",
+        "label": "Embedding Layer"
+      },
+      {
+        "@id": "urn:ngm:class:classification-token",
+        "label": "Classification Token"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:visual-question-answering", "label": "Visual Question Answering"}
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "label": "Multimodal Learning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:token-generation", "label": "Token Generation"},
-      {"@id": "urn:ngm:class:image-tokenisation", "label": "Image Tokenisation"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:token-generation",
+        "label": "Token Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-tokenisation",
+        "label": "Image Tokenisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:convolutional-feature-extraction", "label": "Convolutional Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:convolutional-feature-extraction",
+        "label": "Convolutional Feature Extraction"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"}
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      }
     ]
   },
   "sameAs": [],

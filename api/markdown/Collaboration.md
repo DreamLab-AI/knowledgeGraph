@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collaboration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,41 +191,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:collaboration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b07b58df0c9861c722812df883634690ac30bc753838c61e47bb07028bee089a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
-      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C (World Wide Web Consortium)]]",
-      "resolved": "urn:visionflow:linked:w3-c-world-wide-web-consortium",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

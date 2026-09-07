@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[SHOULD]]
-# RFC 2119 SHOULD Normative Keyword
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,14 +42,26 @@ elevatedFrom:: [[SHOULD]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:standards-conformance", "label": "Standards Conformance"}
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:standards-conformance",
+        "label": "Standards Conformance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:compliance-standards", "label": "Compliance Standards"}
+      {
+        "@id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:standards-conformance-testing", "label": "Standards Conformance Testing"}
+      {
+        "@id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Standards Conformance Testing"
+      }
     ]
   },
   "quality": 0.35,
@@ -66,26 +72,6 @@ elevatedFrom:: [[SHOULD]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:should:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:09a43a5bbcef12d5e3fce0ed0f42d387663fe70792d769c11f7b6f0dbba39a25"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - SHOULD is an RFC 2119 normative keyword indicating that a particular behaviour or implementation choice is strongly recommended but not absolutely required. Valid reasons may exist in particular circumstances to deviate from the guidance, but the implementer must understand the implications and weigh trade-offs carefully. It contrasts with MUST (mandatory) and MAY (optional), and is essential vocabulary in specifications governing interoperability, security, and conformance.

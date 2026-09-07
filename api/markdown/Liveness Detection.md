@@ -1,54 +1,106 @@
----
-public: true
----
-
-# Liveness Detection
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:liveness-detection", "@type":"Page", "title":"Liveness Detection", "vc:slug":"liveness-detection", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:liveness-detection",
+  "@type": "Page",
+  "title": "Liveness Detection",
+  "vc:slug": "liveness-detection",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:liveness-detection",
-  "@type":"Class",
-  "label":"Liveness Detection",
-  "definition":"Liveness detection is a set of techniques used during biometric capture to verify that the presented sample originates from a live, present human rather than a spoof such as a photograph, mask, recording or deepfake. It distinguishes genuine presentations from presentation attacks by analysing physiological signals, motion, texture and challenge responses, and is standardised under ISO/IEC 30107 as presentation attack detection. Liveness detection is essential to the integrity of remote identity verification, biometric authentication and onboarding flows.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:biometric-verification","label":"Biometric Verification"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:biometric-authentication","label":"Biometric Authentication"},
-      {"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:liveness-detection",
+  "@type": "Class",
+  "label": "Liveness Detection",
+  "definition": "Liveness detection is a set of techniques used during biometric capture to verify that the presented sample originates from a live, present human rather than a spoof such as a photograph, mask, recording or deepfake. It distinguishes genuine presentations from presentation attacks by analysing physiological signals, motion, texture and challenge responses, and is standardised under ISO/IEC 30107 as presentation attack detection. Liveness detection is essential to the integrity of remote identity verification, biometric authentication and onboarding flows.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:biometric-verification",
+      "label": "Biometric Verification"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:facial-recognition","label":"Facial Recognition"},
-      {"@id":"urn:ngm:class:image-processing","label":"Image Processing"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"},
-      {"@id":"urn:ngm:class:fraud-detection","label":"Fraud Detection"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"},
-      {"@id":"urn:ngm:class:convolutional-neural-network","label":"Convolutional Neural Network"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:kyc","label":"Know Your Customer"},
-      {"@id":"urn:ngm:class:multi-factor-authentication","label":"Multi-Factor Authentication"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:kyc",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:access-control","label":"Access Control"},
-      {"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

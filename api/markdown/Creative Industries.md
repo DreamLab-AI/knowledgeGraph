@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Creative Industries
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,51 +7,186 @@ public: true
   "title": "Creative Industries",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:fashion", "vc:label": "Fashion"},
-    {"@id": "urn:visionflow:linked:ai-companies", "vc:label": "AI Companies"},
-    {"@id": "urn:visionflow:linked:creative-ai", "vc:label": "Creative AI"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:copyright", "vc:label": "Copyright"},
-    {"@id": "urn:visionflow:linked:intellectual-property-rights-framework", "vc:label": "Intellectual Property Rights Framework"},
-    {"@id": "urn:visionflow:linked:film-production", "vc:label": "Film Production"},
-    {"@id": "urn:visionflow:linked:game-development", "vc:label": "Game Development"},
-    {"@id": "urn:visionflow:linked:music-generation", "vc:label": "Music Generation"},
-    {"@id": "urn:visionflow:linked:digital-content-creation", "vc:label": "Digital Content Creation"},
-    {"@id": "urn:visionflow:linked:content-creation", "vc:label": "Content Creation"},
-    {"@id": "urn:visionflow:linked:human-ai-collaboration", "vc:label": "Human-AI Collaboration"},
-    {"@id": "urn:visionflow:linked:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:synthetic-media", "vc:label": "Synthetic Media"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:text-to-image", "vc:label": "Text-to-Image"},
-    {"@id": "urn:visionflow:linked:procedural-content-generation", "vc:label": "Procedural Content Generation"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:augmented-reality", "vc:label": "Augmented Reality"},
-    {"@id": "urn:visionflow:linked:metaverse", "vc:label": "Metaverse"},
-    {"@id": "urn:visionflow:linked:advertising", "vc:label": "Advertising"},
-    {"@id": "urn:visionflow:linked:publishing", "vc:label": "Publishing"},
-    {"@id": "urn:visionflow:linked:design", "vc:label": "Design"},
-    {"@id": "urn:visionflow:linked:nft", "vc:label": "NFT"},
-    {"@id": "urn:visionflow:linked:platform-economy", "vc:label": "Platform Economy"},
-    {"@id": "urn:visionflow:linked:knowledge-economy", "vc:label": "Knowledge Economy"},
-    {"@id": "urn:visionflow:linked:cultural-heritage", "vc:label": "Cultural Heritage"},
-    {"@id": "urn:visionflow:linked:ai-regulation", "vc:label": "AI Regulation"},
-    {"@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance"},
-    {"@id": "urn:visionflow:linked:economics", "vc:label": "Economics"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:automated-design", "vc:label": "Automated Design"},
-    {"@id": "urn:visionflow:linked:ai-art", "vc:label": "AI Art"},
-    {"@id": "urn:visionflow:linked:film-vfx", "vc:label": "Film VFX"},
-    {"@id": "urn:visionflow:linked:creative-software", "vc:label": "Creative Software"},
-    {"@id": "urn:visionflow:linked:freelance-economy", "vc:label": "Freelance Economy"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:text-to-speech", "vc:label": "Text-to-Speech"},
-    {"@id": "urn:visionflow:linked:comfyui", "vc:label": "ComfyUI"},
-    {"@id": "urn:visionflow:linked:digital-fashion", "vc:label": "Digital Fashion"},
-    {"@id": "urn:visionflow:linked:licensing", "vc:label": "Licensing"},
-    {"@id": "urn:visionflow:owl:class:ai-application", "vc:label": "CreativeMediaDomain"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"}
+    {
+      "@id": "urn:visionflow:linked:fashion",
+      "vc:label": "Fashion"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-companies",
+      "vc:label": "AI Companies"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-ai",
+      "vc:label": "Creative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:copyright",
+      "vc:label": "Copyright"
+    },
+    {
+      "@id": "urn:visionflow:linked:intellectual-property-rights-framework",
+      "vc:label": "Intellectual Property Rights Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:film-production",
+      "vc:label": "Film Production"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-development",
+      "vc:label": "Game Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-generation",
+      "vc:label": "Music Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-content-creation",
+      "vc:label": "Digital Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-creation",
+      "vc:label": "Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-ai-collaboration",
+      "vc:label": "Human-AI Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-media",
+      "vc:label": "Synthetic Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:visionflow:linked:procedural-content-generation",
+      "vc:label": "Procedural Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:augmented-reality",
+      "vc:label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:linked:advertising",
+      "vc:label": "Advertising"
+    },
+    {
+      "@id": "urn:visionflow:linked:publishing",
+      "vc:label": "Publishing"
+    },
+    {
+      "@id": "urn:visionflow:linked:design",
+      "vc:label": "Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:nft",
+      "vc:label": "NFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:platform-economy",
+      "vc:label": "Platform Economy"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-economy",
+      "vc:label": "Knowledge Economy"
+    },
+    {
+      "@id": "urn:visionflow:linked:cultural-heritage",
+      "vc:label": "Cultural Heritage"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-regulation",
+      "vc:label": "AI Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:economics",
+      "vc:label": "Economics"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-design",
+      "vc:label": "Automated Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-art",
+      "vc:label": "AI Art"
+    },
+    {
+      "@id": "urn:visionflow:linked:film-vfx",
+      "vc:label": "Film VFX"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-software",
+      "vc:label": "Creative Software"
+    },
+    {
+      "@id": "urn:visionflow:linked:freelance-economy",
+      "vc:label": "Freelance Economy"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-speech",
+      "vc:label": "Text-to-Speech"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfyui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-fashion",
+      "vc:label": "Digital Fashion"
+    },
+    {
+      "@id": "urn:visionflow:linked:licensing",
+      "vc:label": "Licensing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-application",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -72,120 +202,165 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:economics", "label": "Economics"},
-    {"@id": "urn:ngm:class:knowledge-economy", "label": "Knowledge Economy"}
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    },
+    {
+      "@id": "urn:ngm:class:knowledge-economy",
+      "label": "Knowledge Economy"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fashion", "label": "Fashion"},
-      {"@id": "urn:ngm:class:film-production", "label": "Film Production"},
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"},
-      {"@id": "urn:ngm:class:music-generation", "label": "Music Generation"},
-      {"@id": "urn:ngm:class:design", "label": "Design"},
-      {"@id": "urn:ngm:class:advertising", "label": "Advertising"},
-      {"@id": "urn:ngm:class:publishing", "label": "Publishing"},
-      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"}
+      {
+        "@id": "urn:ngm:class:fashion",
+        "label": "Fashion"
+      },
+      {
+        "@id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      },
+      {
+        "@id": "urn:ngm:class:design",
+        "label": "Design"
+      },
+      {
+        "@id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:publishing",
+        "label": "Publishing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:creative-software", "label": "Creative Software"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:creative-software",
+        "label": "Creative Software"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:copyright", "label": "Copyright"},
-      {"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "Intellectual Property Rights Framework"},
-      {"@id": "urn:ngm:class:licensing", "label": "Licensing"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property Rights Framework"
+      },
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"},
-      {"@id": "urn:ngm:class:cultural-heritage", "label": "Cultural Heritage"},
-      {"@id": "urn:ngm:class:platform-economy", "label": "Platform Economy"}
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-heritage",
+        "label": "Cultural Heritage"
+      },
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-companies", "label": "AI Companies"},
-      {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:freelance-economy", "label": "Freelance Economy"}
+      {
+        "@id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:freelance-economy",
+        "label": "Freelance Economy"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-economy", "label": "Knowledge Economy"}
+      {
+        "@id": "urn:ngm:class:knowledge-economy",
+        "label": "Knowledge Economy"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:creative-industries:enrichment-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:creative-industries"},
-  "vc:resolutions": [
-    {"raw": "[[Fashion]]", "resolved": "urn:visionflow:linked:fashion", "kind": "StubLink"},
-    {"raw": "[[AI Companies]]", "resolved": "urn:visionflow:linked:ai-companies", "kind": "StubLink"},
-    {"raw": "[[Creative AI]]", "resolved": "urn:visionflow:linked:creative-ai", "kind": "StubLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "StubLink"},
-    {"raw": "[[Copyright]]", "resolved": "urn:visionflow:linked:copyright", "kind": "StubLink"},
-    {"raw": "[[Intellectual Property Rights Framework]]", "resolved": "urn:visionflow:linked:intellectual-property-rights-framework", "kind": "StubLink"},
-    {"raw": "[[Film Production]]", "resolved": "urn:visionflow:linked:film-production", "kind": "StubLink"},
-    {"raw": "[[Game Development]]", "resolved": "urn:visionflow:linked:game-development", "kind": "StubLink"},
-    {"raw": "[[Music Generation]]", "resolved": "urn:visionflow:linked:music-generation", "kind": "StubLink"},
-    {"raw": "[[Digital Content Creation]]", "resolved": "urn:visionflow:linked:digital-content-creation", "kind": "StubLink"},
-    {"raw": "[[Content Creation]]", "resolved": "urn:visionflow:linked:content-creation", "kind": "StubLink"},
-    {"raw": "[[Human-AI Collaboration]]", "resolved": "urn:visionflow:linked:human-ai-collaboration", "kind": "StubLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:linked:ai-ethics", "kind": "StubLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Synthetic Media]]", "resolved": "urn:visionflow:linked:synthetic-media", "kind": "StubLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:visionflow:linked:image-generation", "kind": "StubLink"},
-    {"raw": "[[Text-to-Image]]", "resolved": "urn:visionflow:linked:text-to-image", "kind": "StubLink"},
-    {"raw": "[[Procedural Content Generation]]", "resolved": "urn:visionflow:linked:procedural-content-generation", "kind": "StubLink"},
-    {"raw": "[[Digital Twin]]", "resolved": "urn:visionflow:linked:digital-twin", "kind": "StubLink"},
-    {"raw": "[[Augmented Reality]]", "resolved": "urn:visionflow:linked:augmented-reality", "kind": "StubLink"},
-    {"raw": "[[Metaverse]]", "resolved": "urn:visionflow:linked:metaverse", "kind": "StubLink"},
-    {"raw": "[[Advertising]]", "resolved": "urn:visionflow:linked:advertising", "kind": "StubLink"},
-    {"raw": "[[Publishing]]", "resolved": "urn:visionflow:linked:publishing", "kind": "StubLink"},
-    {"raw": "[[Design]]", "resolved": "urn:visionflow:linked:design", "kind": "StubLink"},
-    {"raw": "[[NFT]]", "resolved": "urn:visionflow:linked:nft", "kind": "StubLink"},
-    {"raw": "[[Platform Economy]]", "resolved": "urn:visionflow:linked:platform-economy", "kind": "StubLink"},
-    {"raw": "[[Knowledge Economy]]", "resolved": "urn:visionflow:linked:knowledge-economy", "kind": "StubLink"},
-    {"raw": "[[Cultural Heritage]]", "resolved": "urn:visionflow:linked:cultural-heritage", "kind": "StubLink"},
-    {"raw": "[[AI Regulation]]", "resolved": "urn:visionflow:linked:ai-regulation", "kind": "StubLink"},
-    {"raw": "[[Data Governance]]", "resolved": "urn:visionflow:linked:data-governance", "kind": "StubLink"},
-    {"raw": "[[Economics]]", "resolved": "urn:visionflow:linked:economics", "kind": "StubLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "StubLink"},
-    {"raw": "[[Automated Design]]", "resolved": "urn:visionflow:linked:automated-design", "kind": "StubLink"},
-    {"raw": "[[AI Art]]", "resolved": "urn:visionflow:linked:ai-art", "kind": "StubLink"},
-    {"raw": "[[Film VFX]]", "resolved": "urn:visionflow:linked:film-vfx", "kind": "StubLink"},
-    {"raw": "[[Creative Software]]", "resolved": "urn:visionflow:linked:creative-software", "kind": "StubLink"},
-    {"raw": "[[Freelance Economy]]", "resolved": "urn:visionflow:linked:freelance-economy", "kind": "StubLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "StubLink"},
-    {"raw": "[[Text-to-Speech]]", "resolved": "urn:visionflow:linked:text-to-speech", "kind": "StubLink"},
-    {"raw": "[[Digital Fashion]]", "resolved": "urn:visionflow:linked:digital-fashion", "kind": "StubLink"},
-    {"raw": "[[Licensing]]", "resolved": "urn:visionflow:linked:licensing", "kind": "StubLink"},
-    {"raw": "[[CreativeMediaDomain]]", "resolved": "urn:visionflow:owl:class:ai-application", "kind": "ResolvedLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-technique", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -325,7 +500,7 @@ public: true
   ## Governance, Copyright, and the Training Data Controversy
     The single most consequential governance challenge for the creative industries in the 2024–2026 period has been the question of whether using copyrighted creative works to train commercial AI systems without authorisation constitutes copyright infringement. The legal analysis is complex and jurisdiction-dependent. Under UK copyright law (Copyright, Designs and Patents Act 1988), the text and data mining exception that exists for non-commercial research does not extend to commercial AI training. The EU's Copyright in the Digital Single Market (DSM) Directive includes a text and data mining exception (Article 4) with a rights reservation opt-out, which the EU Commission's guidance has confirmed applies to AI training. The US situation is governed by fair use analysis, with the question of whether AI training constitutes transformative use actively being litigated in multiple concurrent cases.
 
-    The UK Government's 2025 consultation on AI and copyright explored three policy options: maintaining the status quo (existing law applies to AI training as to any other activity); introducing a broad exception for AI training with no opt-out; and introducing a broad exception with a rights reservation opt-out. The creative industries lobbied forcefully against any exception, arguing that the UK's world-leading creative sector — worth £124 billion annually — would be fundamentally undermined if AI companies could freely use creative works to train systems that then competed with those works' creators. The government's March 2026 Report on Copyright and Artificial Intelligence confirmed the creative sector's preferred outcome: maintenance of the status quo, with no exception introduced. An Information and Transparency working group was established to develop transparency mechanisms — training data disclosure, web crawler identification requirements — that might address creator concerns without legislative action.
+    The UK Government's 2025 consultation on AI and copyright explored three policy options: maintaining the status quo (existing law applies to AI training as to any other activity); introducing a broad exception for AI training with no opt-out; and introducing a broad exception with a rights reservation opt-out. The creative industries lobbied forcefully against any exception, arguing that the UK's world-leading creative sector — worth £124 billion annually — would be fundamentally undermined if AI companies [private] freely use creative works to train systems that then competed with those works' creators. The government's March 2026 Report on Copyright and Artificial Intelligence confirmed the creative sector's preferred outcome: maintenance of the status quo, with no exception introduced. An Information and Transparency working group was established to develop transparency mechanisms — training data disclosure, web crawler identification requirements — that might address creator concerns without legislative action.
 
     The legal landscape is further complicated by the international dimension. The US-UK bilateral AI governance dialogue, ongoing through 2025–2026, has sought to align approaches to AI transparency and copyright without creating divergent regulatory regimes that would fragment the global market for both AI tools and creative works. The EU AI Act's requirements for disclosure of AI-generated content (Article 50) and high-risk AI system transparency are coming into enforcement through 2025–2026, requiring creative AI platforms operating in the EU to implement disclosure mechanisms for synthetic and AI-generated outputs. The C2PA standard, increasingly embedded in major platforms, provides a technical mechanism for implementing these disclosure requirements.
 
@@ -354,7 +529,7 @@ public: true
 
     AI adoption across subsectors is highly uneven: 60% in IT and software, 53% in design, 44% in film and TV, versus 22% in music and performing arts. Animation studios are notable for maintaining explicit boundaries between AI use in early-stage ideation and final client-facing output, reflecting IP and ethical considerations. The [[Human-AI Collaboration]] model — where AI proposes and humans select, refine, and direct — is becoming the dominant workflow pattern in subsectors with higher adoption.
 
-    On the legal front, the March 2026 UK Copyright and AI Report's maintenance of the status quo has extended uncertainty for both AI developers and creative rights holders. An Information and Transparency working group established under the Data (Use and Access) Act is exploring transparency mechanisms — training data summaries, web crawler disclosures — that could address creator concerns without imposing excessive compliance burden on AI developers. The outcome of this process is expected to influence a subsequent legislative update before 2028.
+    On the legal front, the March 2026 UK Copyright and AI Report's maintenance of the status quo has extended uncertainty for both AI developers and creative rights holders. An Information and Transparency working group established under the Data (Use and Access) Act is exploring transparency mechanisms — training data summaries, web crawler disclosures — that [private] address creator concerns without imposing excessive compliance burden on AI developers. The outcome of this process is expected to influence a subsequent legislative update before 2028.
 
   ## UK Context
     The UK occupies a uniquely central position in global creative industries and in the AI-creative industries policy intersection. As host to one of the world's largest and most internationally traded creative economies, the UK government's policy choices on copyright, training data, and AI disclosure have global significance, with other jurisdictions watching the UK-EU regulatory divergence closely. The sector's geographic concentration in London coexists with significant regional creative clusters.
@@ -376,12 +551,12 @@ public: true
 
     **[[Human-AI Collaboration]] professionalisation**: AI direction — the skill set of specifying, guiding, iterating, and curating generative AI outputs within professional creative and commercial briefs — will emerge as a distinct professional competency within creative industries, with implications for education curricula, professional certification, and rates of pay. Creative arts education institutions (Central Saint Martins, the Royal College of Art, the London Film School, the Royal Conservatoire of Scotland, Leeds Arts University, Sheffield Hallam University, Manchester Metropolitan University) are developing AI-integration modules and AI creative direction courses. The distinction between AI-direction capability and raw generative model capability — the recognition that directing AI well requires the same creative intelligence as directing human collaborators — will underpin a new professional identity and value proposition for trained creative practitioners in an AI-augmented market.
 
-    **Regional creative economy growth and levelling up**: UK Government investment in regional CoSTAR hubs, Innovate UK creative industries clusters, and regional development programmes will continue supporting non-London creative economy development. The Creative PEC's research has documented significant unmet creative economy potential outside London, with regional cities showing strong cultural assets and lower cost bases that could support creative industry growth if access to finance, digital infrastructure, and skills pipelines can be developed. AI tools may partially level the playing field between London and regional creative clusters by reducing the geographic friction of access to high-quality production capabilities — a Manchester-based game studio using AI texture generation competes more effectively with a London-based studio if both have access to the same AI tooling at equivalent cost.
+    **Regional creative economy growth and levelling up**: UK Government investment in regional CoSTAR hubs, Innovate UK creative industries clusters, and regional development programmes will continue supporting non-London creative economy development. The Creative PEC's research has documented significant unmet creative economy potential outside London, with regional cities showing strong cultural assets and lower cost bases that [private] support creative industry growth if access to finance, digital infrastructure, and skills pipelines can be developed. AI tools may partially level the playing field between London and regional creative clusters by reducing the geographic friction of access to high-quality production capabilities — a Manchester-based game studio using AI texture generation competes more effectively with a London-based studio if both have access to the same AI tooling at equivalent cost.
 
     **New creative forms, genres, and economic models**: AI-native creative forms — personalised narrative experiences that adapt to individual readers in real time, AI-directed procedural art that generates unique pieces for each viewer, interactive generative music that responds to listener context, and AI-augmented live performance — will emerge as distinct commercial categories within the creative industries. These new forms require new IP frameworks (who owns an AI-generated artwork that is unique for each viewer?), new distribution models (how do you distribute an experience rather than a product?), and new critical and curatorial vocabularies (how do you review a work that is different for every viewer?). The economic model of the cultural industries — historically based on production of scarcity (a limited run of albums, a single print of a film) — will require fundamental reimagining in an environment where creative AI enables infinite personalised variation at near-zero marginal cost.
 
   ## Economic Analysis: Value Chains, IP, and the AI Disruption
-    The economics of the creative industries are distinctive in several ways that bear directly on understanding the AI disruption. Creative goods are characterised by high fixed costs (producing a song, writing a novel, or developing a game requires substantial upfront investment) and low marginal costs of reproduction (distributing a digital file costs almost nothing). This cost structure historically created economies of scale in distribution — major labels, major publishers, and major studios could amortise high production costs over large audiences — while also creating barriers to entry for independent creators who lacked distribution infrastructure. Digital distribution (streaming, app stores, YouTube) partially lowered these barriers while simultaneously concentrating platform power.
+    The economics of the creative industries are distinctive in several ways that bear directly on understanding the AI disruption. Creative goods are characterised by high fixed costs (producing a song, writing a novel, or developing a game requires substantial upfront investment) and low marginal costs of reproduction (distributing a digital file costs almost nothing). This cost structure historically created economies of scale in distribution — major labels, major publishers, and major studios [private] amortise high production costs over large audiences — while also creating barriers to entry for independent creators who lacked distribution infrastructure. Digital distribution (streaming, app stores, YouTube) partially lowered these barriers while simultaneously concentrating platform power.
 
     Creative AI introduces a radical reduction in the variable and fixed costs of creative production — not just of distribution. An AI image generator can produce a thousand variations of a campaign visual in the time it would take a human illustrator to produce one. An AI music system can generate hours of contextually appropriate background music instantly. An AI language model can produce hundreds of variations of product copy for A/B testing in minutes. This cost collapse fundamentally alters the economics of creative production, but it does so asymmetrically: it collapses the cost of commodity creative output while leaving the cost of high-quality, culturally-embedded, relationship-intensive creative work largely unchanged.
 

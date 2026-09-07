@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Sparse Representation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

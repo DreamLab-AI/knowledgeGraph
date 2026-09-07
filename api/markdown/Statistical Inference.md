@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Statistical Inference
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

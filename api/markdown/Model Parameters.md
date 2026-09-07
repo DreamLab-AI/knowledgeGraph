@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Parameters
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,62 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-parameters:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7890754026b303f0cfac64877eda5e982ddd8236222ab72926b4ff9be58b6768"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[automation]]",
-      "resolved": "urn:visionflow:linked:automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[research]]",
-      "resolved": "urn:visionflow:linked:research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[artificial intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[machine learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[natural language processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[training]]",
-      "resolved": "urn:visionflow:owl:class:training",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The learnable internal variables — weights and biases — of a neural network that are adjusted during training to minimise a loss function. Parameter count determines model capacity; foundation models commonly operate with billions to trillions of parameters, making parameter-efficient fine-tuning and management a central concern in contemporary AI development.

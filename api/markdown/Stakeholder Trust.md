@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stakeholder Trust
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,4 +165,3 @@ public: true
   - Stakeholder trust is not monolithic: different groups assign different weights to ability, benevolence, and integrity. Healthcare patients may prioritise safety and explainability; financial regulators prioritise auditability and systemic risk controls; environmental advocates may emphasise energy consumption; marginalised communities may focus on bias and equitable impact. Effective stakeholder trust management therefore requires segmented engagement strategies and continuous feedback loops, particularly as AI system capabilities and deployments evolve.
 
   - By 2024-2025, stakeholder trust has become a central concept in AI governance frameworks globally. The EU AI Act mandates transparency and human oversight for high-risk AI systems specifically to maintain user and regulator trust. Corporate AI ethics boards, public model cards, and algorithmic impact assessments are institutionalising trust-building practices. Research on trust calibration — ensuring users neither over-trust nor under-trust AI recommendations — has emerged as a human-AI interaction design discipline, recognising that misplaced trust in either direction produces harmful outcomes.
-

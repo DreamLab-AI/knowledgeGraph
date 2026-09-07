@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Stable Diffusion Training]]
-# Latent Diffusion Model Training
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

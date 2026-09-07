@@ -1,59 +1,116 @@
----
-public: true
----
-
-# Model Validation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:model-validation", "@type":"Page", "title":"Model Validation", "vc:slug":"model-validation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:model-validation",
+  "@type": "Page",
+  "title": "Model Validation",
+  "vc:slug": "model-validation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:model-validation",
-  "@type":"Class",
-  "label":"Model Validation",
-  "definition":"Model validation is the process of assessing whether a trained model meets its intended requirements for accuracy, robustness, fairness and generalisation before it is trusted in practice. It uses held-out data, cross-validation and stress tests to estimate performance on unseen inputs and to detect overfitting, bias or specification gaps. Distinct from evaluation metrics alone, validation judges fitness for purpose within the model lifecycle.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:ai-lifecycle","label":"AI Lifecycle"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:cross-validation","label":"Cross-Validation"},
-      {"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-validation",
+  "@type": "Class",
+  "label": "Model Validation",
+  "definition": "Model validation is the process of assessing whether a trained model meets its intended requirements for accuracy, robustness, fairness and generalisation before it is trusted in practice. It uses held-out data, cross-validation and stress tests to estimate performance on unseen inputs and to detect overfitting, bias or specification gaps. Distinct from evaluation metrics alone, validation judges fitness for purpose within the model lifecycle.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-lifecycle",
+      "label": "AI Lifecycle"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:ai-lifecycle","label":"AI Lifecycle"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
     ],
-    "detects":[
-      {"@id":"urn:ngm:class:overfitting","label":"Overfitting"},
-      {"@id":"urn:ngm:class:underfitting","label":"Underfitting"}
+    "detects": [
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:data-quality","label":"Data Quality"},
-      {"@id":"urn:ngm:class:model-training","label":"Model Training"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:model-selection","label":"Model Selection"},
-      {"@id":"urn:ngm:class:model-deployment","label":"Model Deployment"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:confusion-matrix","label":"Confusion Matrix"},
-      {"@id":"urn:ngm:class:sensitivity-analysis","label":"Sensitivity Analysis"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:model-monitoring","label":"Model Monitoring"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:interpretability","label":"Interpretability"},
-      {"@id":"urn:ngm:class:explainability","label":"Explainability"},
-      {"@id":"urn:ngm:class:hyperparameter-tuning","label":"Hyperparameter Tuning"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SIOPv2
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "SIOPv2 (Self-Issued OpenID Provider v2) is an OpenID Foundation specification that extends OpenID Connect so a user's own wallet acts as the identity provider, authenticating with self-issued and decentralised identifiers rather than a third-party server. It lets relying parties verify a subject controls a DID and, paired with OpenID for Verifiable Presentations, accept verifiable credentials. It is a key protocol for decentralised, wallet-centric digital identity.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}, {"@id": "urn:ngm:class:distributed-identity", "label": "Distributed Identity"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      }
+    ]
   },
   "quality": 0.72
 }

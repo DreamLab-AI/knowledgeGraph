@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ONNX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -148,7 +143,7 @@ public: true
   - [[ONNX]] (Open Neural Network Exchange) is a vendor-neutral [[Interoperability Standard]] and file format for serialising [[Neural Network]] computation graphs, enabling models trained in any major [[Deep Learning Framework]] — such as [[PyTorch]], [[TensorFlow]], or [[MXNet]] — to be executed by any compatible [[Inference Engine]] on heterogeneous hardware without framework-specific runtime dependencies. The format uses [[Protocol Buffers]] for binary serialisation of directed acyclic graphs composed of typed operators, tensor weights, and metadata, providing a common [[Model Serialisation]] substrate that decouples training environments from deployment targets.
 
 - ### Overview
-  - ONNX was co-created by Meta (then Facebook) and Microsoft in September 2017 as a direct response to deep learning framework fragmentation, where models trained in Caffe2 or [[PyTorch]] could not easily cross into [[TensorFlow]] Serving or hardware-vendor runtimes.
+  - ONNX was co-created by Meta (then Facebook) and Microsoft in September 2017 as a direct response to deep learning framework fragmentation, where models trained in Caffe2 or [[PyTorch]] [private] not easily cross into [[TensorFlow]] Serving or hardware-vendor runtimes.
   - [[Linux Foundation AI and Data]] adopted ONNX governance in 2019, transforming it from a bilateral collaboration into a community-stewarded [[Open Standard]] with broad industry participation.
   - The central design principle is a portable [[Computation Graph]] IR: nodes are named typed operators (defined in the [[ONNX Operator Set]]), edges are typed tensors, and graph inputs/outputs have declared shapes and data types.
   - The versioned opset scheme (opset 1 through 21+ as of 2025) allows backward-compatible evolution of supported operations, so older models remain valid as new operators are added.

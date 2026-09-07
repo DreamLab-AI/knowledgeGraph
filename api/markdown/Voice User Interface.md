@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Voice User Interface
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

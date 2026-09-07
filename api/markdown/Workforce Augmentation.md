@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Workforce Augmentation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,21 +50,48 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
-      {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"}
+      {
+        "@id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
     ]
   },
   "quality": 0.8,
@@ -80,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:workforce-augmentation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1bc54073989e4c69c5973b63648420c1895b935b6ab1388ceab473b934a76211"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Workforce Augmentation is a concept within the ai domain.

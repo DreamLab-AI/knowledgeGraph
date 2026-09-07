@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Random Number Generator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A random number generator (RNG) produces sequences of numbers that lack predictable pattern, either through deterministic algorithms seeded from an initial state (pseudo-random) or from physical entropy sources (true random). RNGs are essential to stochastic sampling, Monte Carlo methods, simulation, and cryptographic key generation. Quality is judged by statistical uniformity, period length, and, for security uses, unpredictability.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sampling", "label": "Sampling"},
-      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"}
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
     ]
   },
   "quality": 0.72

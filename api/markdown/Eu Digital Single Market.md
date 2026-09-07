@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Eu Digital Single Market
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

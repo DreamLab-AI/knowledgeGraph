@@ -1,36 +1,124 @@
----
-public: true
----
-
-# Capability Evaluation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:capability-evaluation", "@type":"Page", "title":"Capability Evaluation", "vc:slug":"capability-evaluation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:capability-evaluation",
+  "@type": "Page",
+  "title": "Capability Evaluation",
+  "vc:slug": "capability-evaluation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:capability-evaluation",
-  "@type":"Class",
-  "label":"Capability Evaluation",
-  "definition":"Capability evaluation is the systematic measurement of what an AI model can do, especially the elicitation and assessment of potentially dangerous capabilities such as autonomous replication, cyber-offence, or assistance with weapons. It combines benchmarks, structured tasks, and adversarial elicitation (including red-teaming) to establish upper bounds on model behaviour under best-effort prompting and tooling. Results feed safety cases and trigger the thresholds defined in responsible scaling and preparedness frameworks.",
-  "domain":"artificial-intelligence",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:ai-evaluation","label":"AI Evaluation"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:ai-evaluation","label":"AI Evaluation"},{"@id":"urn:ngm:class:ai-safety","label":"AI Safety"}],
-    "requires":[{"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"},{"@id":"urn:ngm:class:red-teaming","label":"Red Teaming"}],
-    "uses":[{"@id":"urn:ngm:class:red-teaming","label":"Red Teaming"},{"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"},{"@id":"urn:ngm:class:safety-evaluation","label":"Safety Evaluation"}],
-    "enables":[{"@id":"urn:ngm:class:responsible-scaling-policy","label":"Responsible Scaling Policy"},{"@id":"urn:ngm:class:ai-safety","label":"AI Safety"}],
-    "supports":[{"@id":"urn:ngm:class:alignment","label":"Alignment"},{"@id":"urn:ngm:class:interpretability","label":"Interpretability"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:responsible-scaling-policy","label":"Responsible Scaling Policy"},{"@id":"urn:ngm:class:safety-evaluation","label":"Safety Evaluation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"},{"@id":"urn:ngm:class:ai-agent","label":"AI Agent"},{"@id":"urn:ngm:class:alignment","label":"Alignment"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:safety-evaluation","label":"Safety Evaluation"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:capability-evaluation",
+  "@type": "Class",
+  "label": "Capability Evaluation",
+  "definition": "Capability evaluation is the systematic measurement of what an AI model can do, especially the elicitation and assessment of potentially dangerous capabilities such as autonomous replication, cyber-offence, or assistance with weapons. It combines benchmarks, structured tasks, and adversarial elicitation (including red-teaming) to establish upper bounds on model behaviour under best-effort prompting and tooling. Results feed safety cases and trigger the thresholds defined in responsible scaling and preparedness frameworks.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-evaluation",
+      "label": "AI Evaluation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-evaluation",
+        "label": "AI Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -40,7 +128,7 @@ public: true
 - Findings feed a [[Responsible Scaling Policy]] and broader [[AI Safety]] decision-making, complementing [[Safety Evaluation]].
 - It is most consequential for frontier [[Large Language Model]] and [[AI Agent]] systems.
 - ### Overview
-- Capability evaluation asks not whether a model is safe by default but what it could be made to do given strong prompting, fine-tuning, scaffolding, and tools.
+- Capability evaluation asks not whether a model is safe by default but what it [private] be made to do given strong prompting, fine-tuning, scaffolding, and tools.
 - Because under-elicitation can hide latent capability, evaluators invest in adversarial elicitation, agentic harnesses, and expert-designed task suites.
 - Evaluations are calibrated to thresholds: crossing a capability level triggers heightened safeguards under preparedness and responsible-scaling commitments.
 - ### Key aspects

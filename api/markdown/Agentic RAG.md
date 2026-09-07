@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agentic RAG
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,53 +7,194 @@ public: true
   "title": "Agentic RAG",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:rag-pipeline", "vc:label": "RAG Pipeline"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:information-retrieval", "vc:label": "Information Retrieval"},
-    {"@id": "urn:visionflow:linked:agent-loop", "vc:label": "Agent Loop"},
-    {"@id": "urn:visionflow:linked:vector-database", "vc:label": "Vector Database"},
-    {"@id": "urn:visionflow:linked:embedding-model", "vc:label": "Embedding Model"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain of Thought"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:query-rewriting", "vc:label": "Query Rewriting"},
-    {"@id": "urn:visionflow:linked:hallucination-mitigation", "vc:label": "Hallucination Mitigation"},
-    {"@id": "urn:visionflow:linked:question-answering", "vc:label": "Question Answering"},
-    {"@id": "urn:visionflow:linked:semantic-search", "vc:label": "Semantic Search"},
-    {"@id": "urn:visionflow:linked:dense-retrieval", "vc:label": "Dense Retrieval"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:orchestration", "vc:label": "Orchestration"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory"},
-    {"@id": "urn:visionflow:linked:context-window-management", "vc:label": "Context Window Management"},
-    {"@id": "urn:visionflow:linked:knowledge-base", "vc:label": "Knowledge Base"},
-    {"@id": "urn:visionflow:linked:source-attribution", "vc:label": "Source Attribution"},
-    {"@id": "urn:visionflow:linked:document-chunking", "vc:label": "Document Chunking"},
-    {"@id": "urn:visionflow:linked:approximate-nearest-neighbour-search", "vc:label": "Approximate Nearest Neighbour Search"},
-    {"@id": "urn:visionflow:linked:reranking", "vc:label": "Reranking"},
-    {"@id": "urn:visionflow:linked:graph-rag", "vc:label": "GraphRAG"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:task-planning", "vc:label": "Task Planning"},
-    {"@id": "urn:visionflow:linked:knowledge-grounding", "vc:label": "Knowledge Grounding"},
-    {"@id": "urn:visionflow:linked:ai-agents", "vc:label": "AI Agents"},
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:self-rag", "vc:label": "Self-RAG"},
-    {"@id": "urn:visionflow:linked:corrective-rag", "vc:label": "Corrective RAG"},
-    {"@id": "urn:visionflow:linked:enterprise-search", "vc:label": "Enterprise Search"},
-    {"@id": "urn:visionflow:linked:multi-hop-reasoning", "vc:label": "Multi-Hop Reasoning"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:linked:embedding-search", "vc:label": "Embedding Search"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:hybrid-retrieval", "vc:label": "Hybrid Retrieval"},
-    {"@id": "urn:visionflow:linked:streaming-rag", "vc:label": "Streaming RAG"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"}
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:rag-pipeline",
+      "vc:label": "RAG Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-retrieval",
+      "vc:label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-loop",
+      "vc:label": "Agent Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding-model",
+      "vc:label": "Embedding Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:query-rewriting",
+      "vc:label": "Query Rewriting"
+    },
+    {
+      "@id": "urn:visionflow:linked:hallucination-mitigation",
+      "vc:label": "Hallucination Mitigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-search",
+      "vc:label": "Semantic Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:dense-retrieval",
+      "vc:label": "Dense Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration",
+      "vc:label": "Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window-management",
+      "vc:label": "Context Window Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:source-attribution",
+      "vc:label": "Source Attribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:document-chunking",
+      "vc:label": "Document Chunking"
+    },
+    {
+      "@id": "urn:visionflow:linked:approximate-nearest-neighbour-search",
+      "vc:label": "Approximate Nearest Neighbour Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:reranking",
+      "vc:label": "Reranking"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-rag",
+      "vc:label": "GraphRAG"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-planning",
+      "vc:label": "Task Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-grounding",
+      "vc:label": "Knowledge Grounding"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agents",
+      "vc:label": "AI Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-rag",
+      "vc:label": "Self-RAG"
+    },
+    {
+      "@id": "urn:visionflow:linked:corrective-rag",
+      "vc:label": "Corrective RAG"
+    },
+    {
+      "@id": "urn:visionflow:linked:enterprise-search",
+      "vc:label": "Enterprise Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-hop-reasoning",
+      "vc:label": "Multi-Hop Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding-search",
+      "vc:label": "Embedding Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:hybrid-retrieval",
+      "vc:label": "Hybrid Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:streaming-rag",
+      "vc:label": "Streaming RAG"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -74,57 +210,165 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-    {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+    {
+      "@id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:ngm:class:retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:agent-loop", "label": "Agent Loop"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:query-rewriting", "label": "Query Rewriting"},
-      {"@id": "urn:ngm:class:retrieval-grader", "label": "Retrieval Grader"},
-      {"@id": "urn:ngm:class:agent-orchestrator", "label": "Agent Orchestrator"},
-      {"@id": "urn:ngm:class:self-rag", "label": "Self-RAG"},
-      {"@id": "urn:ngm:class:corrective-rag", "label": "Corrective RAG"}
+      {
+        "@id": "urn:ngm:class:query-rewriting",
+        "label": "Query Rewriting"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-grader",
+        "label": "Retrieval Grader"
+      },
+      {
+        "@id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "@id": "urn:ngm:class:self-rag",
+        "label": "Self-RAG"
+      },
+      {
+        "@id": "urn:ngm:class:corrective-rag",
+        "label": "Corrective RAG"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-hop-reasoning", "label": "Multi-Hop Reasoning"},
-      {"@id": "urn:ngm:class:hallucination-mitigation", "label": "Hallucination Mitigation"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:knowledge-grounding", "label": "Knowledge Grounding"},
-      {"@id": "urn:ngm:class:source-attribution", "label": "Source Attribution"}
+      {
+        "@id": "urn:ngm:class:multi-hop-reasoning",
+        "label": "Multi-Hop Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:hallucination-mitigation",
+        "label": "Hallucination Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-grounding",
+        "label": "Knowledge Grounding"
+      },
+      {
+        "@id": "urn:ngm:class:source-attribution",
+        "label": "Source Attribution"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipeline"},
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:dense-retrieval", "label": "Dense Retrieval"},
-      {"@id": "urn:ngm:class:reranking", "label": "Reranking"},
-      {"@id": "urn:ngm:class:hybrid-retrieval", "label": "Hybrid Retrieval"}
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:reranking",
+        "label": "Reranking"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-retrieval",
+        "label": "Hybrid Retrieval"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipeline"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipeline"},
-      {"@id": "urn:ngm:class:graph-rag", "label": "GraphRAG"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:graph-rag",
+        "label": "GraphRAG"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ]
   },
   "quality": 0.91,
@@ -133,63 +377,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:link-resolution:agentic-rag",
-  "@type": "LinkResolutionsAnnotation",
-  "resolutions": [
-    {"vc:raw": "Retrieval-Augmented Generation", "@id": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"vc:raw": "RAG Pipeline", "@id": "urn:visionflow:linked:rag-pipeline", "kind": "ResolvedLink"},
-    {"vc:raw": "Agentic AI", "@id": "urn:visionflow:linked:agentic-ai", "kind": "ResolvedLink"},
-    {"vc:raw": "Large Language Models", "@id": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"vc:raw": "Information Retrieval", "@id": "urn:visionflow:linked:information-retrieval", "kind": "ResolvedLink"},
-    {"vc:raw": "Agent Loop", "@id": "urn:visionflow:linked:agent-loop", "kind": "StubLink"},
-    {"vc:raw": "Vector Database", "@id": "urn:visionflow:linked:vector-database", "kind": "ResolvedLink"},
-    {"vc:raw": "Embedding Model", "@id": "urn:visionflow:linked:embedding-model", "kind": "ResolvedLink"},
-    {"vc:raw": "Knowledge Graph", "@id": "urn:visionflow:linked:knowledge-graph", "kind": "ResolvedLink"},
-    {"vc:raw": "Chain of Thought", "@id": "urn:visionflow:linked:chain-of-thought", "kind": "ResolvedLink"},
-    {"vc:raw": "Function Calling", "@id": "urn:visionflow:linked:function-calling", "kind": "ResolvedLink"},
-    {"vc:raw": "Tool Use", "@id": "urn:visionflow:linked:tool-use", "kind": "ResolvedLink"},
-    {"vc:raw": "Query Rewriting", "@id": "urn:visionflow:linked:query-rewriting", "kind": "StubLink"},
-    {"vc:raw": "Hallucination Mitigation", "@id": "urn:visionflow:linked:hallucination-mitigation", "kind": "ResolvedLink"},
-    {"vc:raw": "Question Answering", "@id": "urn:visionflow:linked:question-answering", "kind": "ResolvedLink"},
-    {"vc:raw": "Semantic Search", "@id": "urn:visionflow:linked:semantic-search", "kind": "ResolvedLink"},
-    {"vc:raw": "Dense Retrieval", "@id": "urn:visionflow:linked:dense-retrieval", "kind": "ResolvedLink"},
-    {"vc:raw": "Multi-Agent System", "@id": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
-    {"vc:raw": "Orchestration", "@id": "urn:visionflow:linked:orchestration", "kind": "ResolvedLink"},
-    {"vc:raw": "Prompt Engineering", "@id": "urn:visionflow:linked:prompt-engineering", "kind": "ResolvedLink"},
-    {"vc:raw": "Natural Language Processing", "@id": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"vc:raw": "Agent Memory", "@id": "urn:visionflow:linked:agent-memory", "kind": "ResolvedLink"},
-    {"vc:raw": "Context Window Management", "@id": "urn:visionflow:linked:context-window-management", "kind": "StubLink"},
-    {"vc:raw": "Knowledge Base", "@id": "urn:visionflow:linked:knowledge-base", "kind": "ResolvedLink"},
-    {"vc:raw": "Source Attribution", "@id": "urn:visionflow:linked:source-attribution", "kind": "StubLink"},
-    {"vc:raw": "Document Chunking", "@id": "urn:visionflow:linked:document-chunking", "kind": "ResolvedLink"},
-    {"vc:raw": "Approximate Nearest Neighbour Search", "@id": "urn:visionflow:linked:approximate-nearest-neighbour-search", "kind": "ResolvedLink"},
-    {"vc:raw": "Reranking", "@id": "urn:visionflow:linked:reranking", "kind": "ResolvedLink"},
-    {"vc:raw": "GraphRAG", "@id": "urn:visionflow:linked:graph-rag", "kind": "StubLink"},
-    {"vc:raw": "Fine-Tuning", "@id": "urn:visionflow:linked:fine-tuning", "kind": "ResolvedLink"},
-    {"vc:raw": "Model Context Protocol", "@id": "urn:visionflow:linked:model-context-protocol", "kind": "ResolvedLink"},
-    {"vc:raw": "Task Planning", "@id": "urn:visionflow:linked:task-planning", "kind": "StubLink"},
-    {"vc:raw": "Knowledge Grounding", "@id": "urn:visionflow:linked:knowledge-grounding", "kind": "StubLink"},
-    {"vc:raw": "AI Agents", "@id": "urn:visionflow:linked:ai-agents", "kind": "ResolvedLink"},
-    {"vc:raw": "Agent Orchestrator", "@id": "urn:visionflow:linked:agent-orchestrator", "kind": "ResolvedLink"},
-    {"vc:raw": "Self-RAG", "@id": "urn:visionflow:linked:self-rag", "kind": "StubLink"},
-    {"vc:raw": "Corrective RAG", "@id": "urn:visionflow:linked:corrective-rag", "kind": "StubLink"},
-    {"vc:raw": "Enterprise Search", "@id": "urn:visionflow:linked:enterprise-search", "kind": "StubLink"},
-    {"vc:raw": "Multi-Hop Reasoning", "@id": "urn:visionflow:linked:multi-hop-reasoning", "kind": "StubLink"},
-    {"vc:raw": "EU AI Act", "@id": "urn:visionflow:linked:eu-ai-act", "kind": "StubLink"},
-    {"vc:raw": "Agentic Workflow", "@id": "urn:visionflow:linked:agentic-workflow", "kind": "ResolvedLink"},
-    {"vc:raw": "Foundation Models", "@id": "urn:visionflow:linked:foundation-models", "kind": "ResolvedLink"},
-    {"vc:raw": "Embedding Search", "@id": "urn:visionflow:linked:embedding-search", "kind": "ResolvedLink"},
-    {"vc:raw": "Transformer Architecture", "@id": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"vc:raw": "Hybrid Retrieval", "@id": "urn:visionflow:linked:hybrid-retrieval", "kind": "StubLink"},
-    {"vc:raw": "Streaming RAG", "@id": "urn:visionflow:linked:streaming-rag", "kind": "StubLink"},
-    {"vc:raw": "Multimodal AI", "@id": "urn:visionflow:linked:multimodal-ai", "kind": "ResolvedLink"}
-  ]
 }
 ```
 
@@ -363,7 +550,7 @@ public: true
     **Code generation with documentation retrieval** is a rapidly growing use case where an agent retrieves from API reference documentation, GitHub issue histories, Stack Overflow, and internal code repositories before generating code completions or answering developer questions. GitHub Copilot's workspace feature, Amazon Q Developer, and Cursor AI all implement variants of this pattern. The Agentic RAG dimension — iterating retrieval as code errors surface during execution — is particularly valuable for complex library integrations where the correct usage pattern requires synthesising information from multiple documentation sources.
 
   ## Academic Context
-    The intellectual lineage of Agentic RAG traces through three intersecting research communities: information retrieval (IR), natural language processing (NLP), and multi-agent systems. From IR, the key contributions are the transition from BM25 sparse retrieval (Robertson and Zaragoza, BM25 formalisation 2009) to neural dense retrieval — DPR (Karpukhin et al. 2020) using dual-encoder bi-encoders with FAISS indexing; GTR (Ni et al. 2021) scaling to larger encoders; ColBERT (Khattab and Zaharia 2020) with late interaction — and the subsequent adoption of approximate nearest-neighbour index structures: FAISS (Johnson et al. 2019, billion-scale similarity search); HNSW (Malkov and Yashunin 2018, hierarchical navigable small world graphs, now the default index in Qdrant, Weaviate, and Pinecone); and DiskANN (Jayaram et al. 2019, disk-based graph indexing for datasets too large for RAM). These index innovations transformed theoretical RAG into practical production systems by enabling sub-10ms retrieval over billion-document corpora.
+    The intellectual lineage of Agentic RAG traces through three intersecting research communities: information retrieval (IR), natural language processing (NLP), and multi-agent systems. From IR, the key contributions are the transition from BM25 sparse retrieval (Robertson and Zaragoza, BM25 formalisation 2009) to neural dense retrieval — DPR (Karpukhin et al. 2020) using dual-encoder bi-encoders with FAISS indexing; GTR (Ni et al. 2021) scaling to larger encoders; ColBERT (Khattab and Zaharia 2020) with late interaction — and the subsequent adoption of approximate nearest-neighbour [private] structures: FAISS (Johnson et al. 2019, billion-scale similarity search); HNSW (Malkov and Yashunin 2018, hierarchical navigable small world graphs, now the default [private] in Qdrant, Weaviate, and Pinecone); and DiskANN (Jayaram et al. 2019, disk-based graph indexing for datasets too large for RAM). These [private] innovations transformed theoretical RAG into practical production systems by enabling sub-10ms retrieval over billion-document corpora.
 
     From NLP, the foundational work is the RAG paper itself (Lewis et al. 2020 NeurIPS), introducing the retrieve-then-read paradigm for open-domain [[Question Answering]], followed by the FiD (Fusion-in-Decoder, Izacard and Grave, EACL 2021) architecture that concatenated all retrieved passages as input to a seq2seq model for superior multi-document reading comprehension; Atlas (Izacard et al., JMLR 2022) that jointly trained retriever and reader at scale; and RETRO (Borgeaud et al., ICML 2022) that integrated retrieval into the Transformer architecture itself via chunked cross-attention. These systems established retrieval as a first-class component of language model inference, not just a pre-processing step.
 
@@ -393,9 +580,9 @@ public: true
     **Chunking and indexing strategy** — the quality of [[Document Chunking]] and [[Embedding Model]] selection critically affects retrieval quality:
     - *Semantic chunking* — split documents at natural semantic boundaries (paragraphs, sections) rather than fixed character counts; preserves coherent evidence units.
     - *Overlapping chunks* — apply 10–20% overlap between consecutive chunks to prevent evidence loss at boundaries.
-    - *Parent-child chunking* — index small chunks (150–300 tokens) for precise retrieval, but return the parent chunk (600–1200 tokens) as context to preserve surrounding information.
+    - *Parent-child chunking* — [private] small chunks (150–300 tokens) for precise retrieval, but return the parent chunk (600–1200 tokens) as context to preserve surrounding information.
     - *Domain-adapted embeddings* — fine-tune [[Embedding Model]] on in-domain query-document pairs for 5–15% retrieval quality improvement over general-purpose encoders.
-    - *Multi-vector indexing* — index each document with multiple embeddings representing different aspects (topic, entities, sentiment) for richer retrieval.
+    - *Multi-vector indexing* — [private] each document with multiple embeddings representing different aspects (topic, entities, sentiment) for richer retrieval.
 
     **Hallucination mitigation beyond retrieval** — retrieval grounds generation but does not eliminate hallucination:
     - *Source-constrained generation* — instruct the generator to only make claims that are directly supported by retrieved passages; penalise extrapolation from parametric knowledge.
@@ -444,13 +631,13 @@ public: true
     - *Tool timeout cascades* — slow retrieval tool causes downstream agents to wait indefinitely; mitigation: timeout enforcement at tool invocation level, parallel retrieval with deadline-based result selection.
 
   ## Future Directions (2026-2030)
-    The trajectory of Agentic RAG through 2030 is shaped by five converging developments. First, **streaming RAG** — retrieving from evolving knowledge streams in real time and maintaining continuously updated evidence graphs rather than static indexed corpora — will move from prototype (StreamingRAG builds evolving knowledge graphs from streaming inputs; Neuromem, arXiv:2602.13967, proposes granular decomposition of the streaming lifecycle in external LLM memory) to production by 2027, enabling applications like live financial market analysis, real-time regulatory change monitoring, and continuous threat intelligence for cybersecurity. The key technical challenge is maintaining index consistency under high-velocity updates without incurring the full re-indexing cost of static corpora.
+    The trajectory of Agentic RAG through 2030 is shaped by five converging developments. First, **streaming RAG** — retrieving from evolving knowledge streams in real time and maintaining continuously updated evidence graphs rather than static indexed corpora — will move from prototype (StreamingRAG builds evolving knowledge graphs from streaming inputs; Neuromem, arXiv:2602.13967, proposes granular decomposition of the streaming lifecycle in external LLM memory) to production by 2027, enabling applications like live financial market analysis, real-time regulatory change monitoring, and continuous threat intelligence for cybersecurity. The key technical challenge is maintaining [private] consistency under high-velocity updates without incurring the full re-indexing cost of static corpora.
 
     Second, **multimodal Agentic RAG** — retrieval across text, images, audio, video, and structured tables within a single agentic loop — will expand the applicable task space to domains like medical imaging interpretation (retrieving relevant prior case images alongside text notes), industrial inspection (retrieving equipment manuals and failure mode databases alongside sensor readings), and scientific discovery (retrieving molecular structure databases alongside text literature) by 2028. CollEX (arXiv:2504.07643) provides an early multimodal Agentic RAG system for interactive scientific collection exploration. The survey "Ask in Any Modality" (arXiv:2502.08826) maps the emerging landscape of multimodal RAG architectures. The primary barrier is the lack of standardised multimodal embedding spaces that allow cross-modal retrieval (finding images relevant to a text query and vice versa) at the scale required for enterprise deployments.
 
     Third, **long-horizon [[Agent Memory]]** systems will enable cross-session evidence accumulation, letting an Agentic RAG system build incrementally on previous research sessions rather than starting from scratch on each query. AMA-Bench (arXiv:2602.22769) specifically targets long-horizon memory evaluation for agentic applications. A-Mem (arXiv:2502.12110) proposes dynamic memory organisation modelled on the human Zettelkasten note-taking system. TeleMem and LiCoMemory address lightweight persistent memory for efficient long-term reasoning. These innovations collectively address the most significant limitation of current Agentic RAG: that each query starts without knowledge of previous related queries, leading to redundant retrieval work and inability to leverage insights accumulated over a research programme.
 
-    Fourth, **on-device Agentic RAG** — running retrieval and generation on edge hardware for data-sovereign applications where cloud retrieval is prohibited by regulatory or security constraints — is projected to reach production quality by 2027–2028, driven by small language model (SLM) advances (Phi-4, Gemma 3, Llama 4 Scout at 3–7B parameters), efficient neural index structures like DiskANN, and quantised embedding models that fit in 2GB of RAM. This will be particularly relevant for NHS clinical deployments, defence applications, and financial institutions with strict data residency requirements.
+    Fourth, **on-device Agentic RAG** — running retrieval and generation on edge hardware for data-sovereign applications where cloud retrieval is prohibited by regulatory or security constraints — is projected to reach production quality by 2027–2028, driven by small language model (SLM) advances (Phi-4, Gemma 3, Llama 4 Scout at 3–7B parameters), efficient neural [private] structures like DiskANN, and quantised embedding models that fit in 2GB of RAM. This will be particularly relevant for NHS clinical deployments, defence applications, and financial institutions with strict data residency requirements.
 
     Fifth, successful enterprise deployments will treat Agentic RAG as a **knowledge runtime**: a persistent orchestration layer that manages retrieval, verification, reasoning, access control (attribute-based retrieval filtering by user role and data classification), audit trails (complete provenance from query to retrieved chunk to generated answer), and compliance gates as integrated, governed operations — analogous to how an enterprise data warehouse treats SQL queries. The NStarX analysis (2026) projects that by 2030, Agentic RAG knowledge runtimes will be as fundamental to enterprise AI infrastructure as SQL databases are to transactional systems, with the query planner (the LLM agent) taking on the role played by the SQL query optimiser: translating high-level information needs into efficient, access-controlled retrieval plans across heterogeneous data stores. The **SOPRAG** paper (arXiv:2602.01858) demonstrates this direction for industrial standard operating procedure retrieval, using multi-view graph experts to navigate complex procedural knowledge — a model for domain-specific Agentic RAG knowledge runtimes.
 
@@ -471,7 +658,7 @@ public: true
     - *Pinecone* — serverless managed vector database; strong enterprise SLAs; used in Harvey AI and Salesforce Agentforce deployments.
     - *pgvector* — PostgreSQL extension for vector storage; allows combining RAG retrieval with SQL queries in a single database; popular for UK financial and public-sector deployments with strict data residency requirements.
     - *MongoDB Atlas Vector Search* — vector search integrated into the MongoDB document store; widely adopted in content management and CMS-backed Agentic RAG applications.
-    - *Elasticsearch / OpenSearch* — traditional inverted index search with vector search extensions; the dominant platform for hybrid sparse-dense retrieval in enterprise deployments with existing Elasticsearch infrastructure.
+    - *Elasticsearch / OpenSearch* — traditional inverted [private] search with vector search extensions; the dominant platform for hybrid sparse-dense retrieval in enterprise deployments with existing Elasticsearch infrastructure.
 
     **Retrieval quality metrics and evaluation tools**
     - *RAGAS* — automated reference-free evaluation of RAG pipelines; metrics: faithfulness (answer supported by context), answer relevance, context precision, context recall.
@@ -539,7 +726,7 @@ public: true
     - Hierarchical chunking: section-level (800–1200 tokens) and paragraph-level (150–300 tokens) chunks
     - Metadata extraction: document date, source, jurisdiction, document type, access classification
     - Embedding generation: domain-adapted legal text bi-encoder (e.g., LegalBERT fine-tuned on in-domain pairs)
-    - Dual indexing: HNSW vector index in Qdrant; BM25 inverted index in Elasticsearch
+    - Dual indexing: HNSW vector [private] in Qdrant; BM25 inverted [private] in Elasticsearch
     - Knowledge graph extraction: entity recognition (parties, courts, legislation, dates) with spaCy / BERT-NER; relationship extraction into Neo4j
     - Access control tagging: documents tagged with data classification labels that will filter retrieval at query time
 

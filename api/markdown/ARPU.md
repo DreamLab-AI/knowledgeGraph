@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ARPU
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,14 @@ public: true
   "vc:slug": "arpu",
   "title": "ARPU",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Interface", "Advertising Model", "Advertising Revenue", "Meta", "Social Media", "User Intent"],
+  "vc:outboundWikilinks": [
+    "AI Interface",
+    "Advertising Model",
+    "Advertising Revenue",
+    "Meta",
+    "Social Media",
+    "User Intent"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +28,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:advertising", "label": "Advertising"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:advertising",
+      "label": "Advertising"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:advertising", "label": "Advertising"}, {"@id": "urn:ngm:class:programmatic-advertising", "label": "Programmatic Advertising"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

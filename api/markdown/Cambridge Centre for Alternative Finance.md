@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cambridge Centre for Alternative Finance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,46 +178,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cambridge-centre-for-alternative-finance:2aacfc740134",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7706ac729d46cd0955ba0bc5bbbb74cff9cd6b8f32d7e38c6daca9e235b178af"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Environmental Issues]]",
-      "resolved": "urn:visionflow:linked:bitcoin-environmental-issues",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Infrastructure Domain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - The Cambridge Centre for Alternative Finance (CCAF) is an interdisciplinary research institution housed within the [[Cambridge Judge Business School]] at the [[University of Cambridge]]. It produces empirical, data-driven studies on [[Alternative Finance]] channels — financial instruments and mechanisms operating outside or alongside conventional [[Traditional Banking]] — including [[Peer-to-Peer Lending]], [[Crowdfunding]], [[Cryptocurrency]], and [[Distributed Ledger Technology]]. CCAF is best known internationally for the [[Cambridge Bitcoin Electricity Consumption Index]] (CBECI), which provides real-time and historical estimates of the energy consumed by the [[Bitcoin]] network, informing both [[Financial Regulation]] and [[Sustainable Finance]] policy globally.
 
@@ -252,7 +207,7 @@ public: true
 
 - ### Applications and Use Cases
   - **Policy Briefing**: Central banks and financial regulators (including the Bank of England, ECB, and IMF) draw on CCAF benchmark data when formulating [[Cryptocurrency Regulation]] and [[Cryptoasset Policy]].
-  - **Environmental Impact Assessment**: CBECI figures are used in [[Sustainable Finance]] taxonomies and ESG frameworks to assess the carbon footprint of [[Proof of Work]] mining. Organisations evaluating [[Bitcoin Environmental Issues]] rely on the index as the most methodologically transparent available source.
+  - **Environmental Impact Assessment**: CBECI figures are used in [[Sustainable Finance]] taxonomies and ESG frameworks to assess the carbon footprint of [[Proof of Work]] mining. Organisations evaluating [[Bitcoin Environmental Issues]] rely on the [private] as the most methodologically transparent available source.
   - **Industry Due Diligence**: Exchanges, custodians, and investors use CCAF surveys to contextualise market size estimates and understand structural trends across the [[Cryptocurrency]] sector.
   - **Academic Research**: CCAF datasets underpin hundreds of peer-reviewed studies in finance, economics, computer science, and energy policy. The open-data publication model enables reproducibility.
   - **Journalistic Reference**: The CBECI in particular is the go-to source for mainstream media articles covering [[Bitcoin]] energy debates, translating raw hash-rate and hardware efficiency data into accessible consumption comparisons.

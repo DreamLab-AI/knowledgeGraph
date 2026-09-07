@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Project BroBots]]
-# Toxic Content Counter-Narrative System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,19 +59,40 @@ elevatedFrom:: [[Project BroBots]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:agents", "label": "Agents"},
-      {"@id": "urn:ngm:class:decentralised-agent-coordination-initiative", "label": "Decentralised Agent Coordination Initiative"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-agent-coordination-initiative",
+        "label": "Decentralised Agent Coordination Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-society-harms", "label": "Digital Society Harms"},
-      {"@id": "urn:ngm:class:death-of-the-internet", "label": "Death of the Internet"}
+      {
+        "@id": "urn:ngm:class:digital-society-harms",
+        "label": "Digital Society Harms"
+      },
+      {
+        "@id": "urn:ngm:class:death-of-the-internet",
+        "label": "Death of the Internet"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:active-research-projects-registry", "label": "Active Research Projects Registry"}
+      {
+        "@id": "urn:ngm:class:active-research-projects-registry",
+        "label": "Active Research Projects Registry"
+      }
     ]
   },
   "quality": 0.35,
@@ -88,47 +103,6 @@ elevatedFrom:: [[Project BroBots]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:project-bro-bots:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3b49dda1fae03e41e5a73235e2ce6700093d10090bee0d01d0f2262176b0e443"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralised Agent Coordination Initiative]]",
-      "resolved": "urn:visionflow:owl:class:agentic-alliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Society Harms]]",
-      "resolved": "urn:visionflow:owl:class:digital-society-harms",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Project BroBots is a multi-agent research initiative to identify, classify, and counter toxic online content using NLP-based harm detection and counter-narrative generation. It employs fine-tuned large language models on social media corpora, the Agentic Alliance tech stack, and is motivated by the harms of automated bot-driven misinformation and harassment across internet platforms.

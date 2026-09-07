@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Security Breach
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-security-breach",
   "title": "AI Security Breach",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Claude Mythos", "Third-Party Vendor"],
+  "vc:outboundWikilinks": [
+    "Claude Mythos",
+    "Third-Party Vendor"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "security",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}, {"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:third-party-vendor", "label": "Third-Party Vendor"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-vendor",
+        "label": "Third-Party Vendor"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

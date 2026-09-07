@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sharding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -155,7 +150,7 @@ public: true
   - [[Sharding]] is a subclass of [[Blockchain Scalability]] strategies and relates closely to general [[Distributed System]] design and [[Distributed Data Structure]] techniques. Each shard requires its own [[Consensus Protocol]] and often uses a [[Distributed Hash Table]] to route transactions to the correct shard. Cross-shard communication requires careful architectural design to prevent double-spending and ensure atomicity. Sharding is often compared with [[Layer 2 Scaling]] as an alternative or complementary scaling approach. It directly enables larger [[Blockchain Network]] and [[Distributed Computing]] deployments that would be impractical with every node processing all transactions.
 
 - ### Content
-  - Sharding as a database concept dates to large-scale web systems in the late 1990s and 2000s, when companies such as eBay, Google, and Facebook horizontally partitioned relational databases across multiple servers to handle growth beyond what a single machine could sustain. The sharding key — a value such as user ID or geographic region — determines which shard stores and processes each record, ensuring that related data co-locates for efficient query processing. MongoDB, Cassandra, and Vitess popularised database sharding in the 2010s.
+  - Sharding as a database concept dates to large-scale web systems in the late 1990s and 2000s, when companies such as eBay, Google, and Facebook horizontally partitioned relational databases across multiple servers to handle growth beyond what a single machine [private] sustain. The sharding key — a value such as user ID or geographic region — determines which shard stores and processes each record, ensuring that related data co-locates for efficient query processing. MongoDB, Cassandra, and Vitess popularised database sharding in the 2010s.
 
   - In blockchain, sharding attempts to solve the scalability trilemma: the observation that it is difficult to simultaneously achieve decentralisation, security, and high throughput. A traditional blockchain requires every full node to process every transaction, bounding throughput to what a single node can handle (approximately 15–30 TPS for Ethereum pre-Merge). In a sharded blockchain, the validator set is divided into committees, each responsible for one shard. Transactions are routed to the appropriate shard based on the sender's or contract's address. The beacon chain or coordination layer maintains cross-shard state roots and handles finality. Cross-shard transactions require a receipt-based protocol: the originating shard creates a receipt that the destination shard can redeem in a subsequent block.
 

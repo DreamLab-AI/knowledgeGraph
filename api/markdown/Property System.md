@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Property System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,18 +46,36 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:avatar-customization", "label": "Avatar Customization"},
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+      {
+        "@id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "quality": 0.35,
@@ -73,26 +86,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:property-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:acc32eb13f272e77e7c2c2ac57d1fd2a96babef6c8a02d7d082d9982e8448c23"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Property System is a software architecture pattern for attaching typed key-value attributes to entities within a metaverse or game engine context, enabling data binding, runtime configuration, and dynamic object behaviour without hard-coded class inheritance. It underpins avatar customisation, world-object state management, and reactive UI data flows in spatial computing platforms.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Price Discovery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Carbon price discovery is the process by which market participants collectively determine the equilibrium price of carbon emission allowances or credits through the interaction of supply and demand in regulated compliance markets and voluntary carbon markets. It encompasses the mechanisms, venues, and information flows that translate abatement costs, regulatory constraints, and economic activity into observable carbon prices. Transparent price signals are essential for directing investment towards emissions reduction and for evaluating the economic cost of decarbonisation.",
   "domain": "finance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:carbon-markets", "label": "Carbon Markets"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:carbon-markets",
+      "label": "Carbon Markets"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"}
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:carbon-offset-trading", "label": "Carbon Offset Trading"},
-      {"@id": "urn:ngm:class:environmental-asset-market", "label": "Environmental Asset Market"}
+      {
+        "@id": "urn:ngm:class:carbon-offset-trading",
+        "label": "Carbon Offset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-asset-market",
+        "label": "Environmental Asset Market"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
-      {"@id": "urn:ngm:class:environmental-trading", "label": "Environmental Trading"},
-      {"@id": "urn:ngm:class:asset-liquidity", "label": "Asset Liquidity"}
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-trading",
+        "label": "Environmental Trading"
+      },
+      {
+        "@id": "urn:ngm:class:asset-liquidity",
+        "label": "Asset Liquidity"
+      }
     ]
   },
   "quality": 0.8
@@ -58,5 +79,4 @@ public: true
 
   - The voluntary carbon market ecosystem relies on registries — Verra, Gold Standard, American Carbon Registry — to certify the environmental integrity of credits. Aggregators and brokers intermediate between project developers and corporate buyers, but opacity in bilateral pricing historically impeded true price discovery. Initiatives such as XPANSIV CBL and AirCarbon Exchange introduced centralised order books for standardised vintages, markedly improving transparency. Blockchain-based platforms (Toucan, Regen Network) further tokenise credits to enable composable liquidity pools and on-chain price discovery, though methodological diversity across credit types limits fungibility.
 
-  - As of 2024–2025, the EU ETS carbon price has traded in the €50–80 per tonne CO₂ range following significant structural reforms. Voluntary market prices remain fragmented, with high-quality nature-based credits commanding premiums while lower-quality offsets trade at steep discounts. Integrity initiatives such as the Integrity Council for the Voluntary Carbon Market (ICVCM) and the Voluntary Carbon Markets Integrity Initiative (VCMI) are converging on core carbon principles that should support more homogeneous price discovery. AI-driven analytics and real-time satellite verification are emerging as tools to narrow quality uncertainty, and their adoption could materially improve price signal reliability through the late 2020s.
-
+  - As of 2024–2025, the EU ETS carbon price has traded in the €50–80 per tonne CO₂ range following significant structural reforms. Voluntary market prices remain fragmented, with high-quality nature-based credits commanding premiums while lower-quality offsets trade at steep discounts. Integrity initiatives such as the Integrity Council for the Voluntary Carbon Market (ICVCM) and the Voluntary Carbon Markets Integrity Initiative (VCMI) are converging on core carbon principles that should support more homogeneous price discovery. AI-driven analytics and real-time satellite verification are emerging as tools to narrow quality uncertainty, and their adoption [private] materially improve price signal reliability through the late 2020s.

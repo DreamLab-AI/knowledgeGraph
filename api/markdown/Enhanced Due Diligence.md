@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Enhanced Due Diligence
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:enhanced-due-diligence", "@type":"Page", "title":"Enhanced Due Diligence", "vc:slug":"enhanced-due-diligence", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:enhanced-due-diligence",
+  "@type": "Page",
+  "title": "Enhanced Due Diligence",
+  "vc:slug": "enhanced-due-diligence",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -104,6 +109,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - Enhanced due diligence is the heightened scrutiny that regulated firms apply to higher-risk customers and transactions, going beyond standard [[Customer Due Diligence]]. It is a pillar of the [[Risk-Based Approach]] in [[AML]] and [[KYC]] regimes.
 - It deepens identity and ownership verification, probes source of funds, and intensifies ongoing monitoring.

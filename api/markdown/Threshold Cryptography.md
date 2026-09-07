@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Threshold Cryptography
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

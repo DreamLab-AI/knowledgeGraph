@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Bubble Narrative
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-bubble-narrative",
   "title": "AI Bubble Narrative",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Skepticism", "Goodhart's Law"],
+  "vc:outboundWikilinks": [
+    "AI Skepticism",
+    "Goodhart's Law"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:venture-capital",
+      "label": "Venture Capital"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"}, {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

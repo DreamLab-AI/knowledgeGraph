@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Backpropagation Through Time
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:backpropagation-through-time", "@type":"Page", "title":"Backpropagation Through Time", "vc:slug":"backpropagation-through-time", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:backpropagation-through-time",
+  "@type": "Page",
+  "title": "Backpropagation Through Time",
+  "vc:slug": "backpropagation-through-time",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

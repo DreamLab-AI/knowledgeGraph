@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hidden State
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,36 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"}
+      {
+        "@id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +90,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hidden-state:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0f68ad851f6f7a16cfdc8abdbfc251232bb2c2062d336a80250d48f54c5e72c3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The vector representation of a token or sequence at any layer in a neural network, encoding contextualised information learned by the model. Hidden states are progressively refined through self-attention and feed-forward transformations, with deeper layers capturing increasingly abstract semantic features used in downstream tasks.

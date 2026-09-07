@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hallucination Reduction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Hallucination reduction is the set of techniques used to decrease the rate at which large language models generate fluent but factually incorrect or unsupported output. Approaches include grounding generation in retrieved evidence, fact-checking against trusted sources, calibrated abstention, and fine-tuning for faithfulness. It is central to deploying generative AI in high-stakes domains where accuracy is critical.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"},
-      {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      },
+      {
+        "@id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
     ]
   },
   "quality": 0.72

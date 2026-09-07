@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Dataset
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -14,68 +8,254 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:data-quality", "vc:label": "Data Quality"},
-    {"@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance"},
-    {"@id": "urn:visionflow:linked:data-curation", "vc:label": "Data Curation"},
-    {"@id": "urn:visionflow:linked:data-annotation", "vc:label": "Data Annotation"},
-    {"@id": "urn:visionflow:linked:data-labelling", "vc:label": "Data Labelling"},
-    {"@id": "urn:visionflow:linked:benchmark-dataset", "vc:label": "Benchmark Dataset"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:unsupervised-learning", "vc:label": "Unsupervised Learning"},
-    {"@id": "urn:visionflow:linked:data-augmentation", "vc:label": "Data Augmentation"},
-    {"@id": "urn:visionflow:linked:data-lineage", "vc:label": "Data Lineage"},
-    {"@id": "urn:visionflow:linked:data-catalogue", "vc:label": "Data Catalogue"},
-    {"@id": "urn:visionflow:linked:data-collection", "vc:label": "Data Collection"},
-    {"@id": "urn:visionflow:linked:data-cleaning", "vc:label": "Data Cleaning"},
-    {"@id": "urn:visionflow:linked:bias", "vc:label": "Bias"},
-    {"@id": "urn:visionflow:linked:fairness", "vc:label": "Fairness"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:overfitting", "vc:label": "Overfitting"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:data-augmentation-strategies", "vc:label": "Data Augmentation Strategies"},
-    {"@id": "urn:visionflow:linked:cross-validation", "vc:label": "Cross-Validation"},
-    {"@id": "urn:visionflow:linked:reproducibility", "vc:label": "Reproducibility"},
-    {"@id": "urn:visionflow:linked:data-governance-framework", "vc:label": "Data Governance Framework"},
-    {"@id": "urn:visionflow:linked:privacy", "vc:label": "Privacy"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:synthetic-data", "vc:label": "Synthetic Data"},
-    {"@id": "urn:visionflow:linked:data-architecture", "vc:label": "Data Architecture"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:computational-modelling", "vc:label": "Computational Modelling"},
-    {"@id": "urn:visionflow:linked:evaluation-metric", "vc:label": "Evaluation Metric"},
-    {"@id": "urn:visionflow:linked:ground-truth-labels", "vc:label": "Ground Truth Labels"},
-    {"@id": "urn:visionflow:linked:data-management", "vc:label": "Data Management"},
-    {"@id": "urn:visionflow:linked:benchmarking", "vc:label": "Benchmarking"},
-    {"@id": "urn:visionflow:linked:data-lake", "vc:label": "Data Lake"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:data-analysis", "vc:label": "Data Analysis"},
-    {"@id": "urn:visionflow:linked:ai-infrastructure", "vc:label": "AI Infrastructure"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:regulation", "vc:label": "Regulation"},
-    {"@id": "urn:visionflow:linked:data-management-system", "vc:label": "Data Management System"},
-    {"@id": "urn:visionflow:linked:metadata", "vc:label": "Metadata"},
-    {"@id": "urn:visionflow:linked:data-schema", "vc:label": "Data Schema"},
-    {"@id": "urn:visionflow:linked:data-split", "vc:label": "Data Split"},
-    {"@id": "urn:visionflow:linked:imbalanced-data", "vc:label": "Imbalanced Data"},
-    {"@id": "urn:visionflow:linked:data-versioning", "vc:label": "Data Versioning"},
-    {"@id": "urn:visionflow:linked:ai-act", "vc:label": "AI Act"},
-    {"@id": "urn:visionflow:linked:data-provenance", "vc:label": "Data Provenance"},
-    {"@id": "urn:visionflow:linked:open-data", "vc:label": "Open Data"},
-    {"@id": "urn:visionflow:linked:data-ethics", "vc:label": "Data Ethics"},
-    {"@id": "urn:visionflow:linked:differential-privacy", "vc:label": "Differential Privacy"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:data-centric-ai", "vc:label": "Data-Centric AI"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:data-layer", "vc:label": "DataLayer"}
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-quality",
+      "vc:label": "Data Quality"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-curation",
+      "vc:label": "Data Curation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-annotation",
+      "vc:label": "Data Annotation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-labelling",
+      "vc:label": "Data Labelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-dataset",
+      "vc:label": "Benchmark Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:unsupervised-learning",
+      "vc:label": "Unsupervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-augmentation",
+      "vc:label": "Data Augmentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-lineage",
+      "vc:label": "Data Lineage"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-catalogue",
+      "vc:label": "Data Catalogue"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-collection",
+      "vc:label": "Data Collection"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-cleaning",
+      "vc:label": "Data Cleaning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias",
+      "vc:label": "Bias"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:overfitting",
+      "vc:label": "Overfitting"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-augmentation-strategies",
+      "vc:label": "Data Augmentation Strategies"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-validation",
+      "vc:label": "Cross-Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducibility",
+      "vc:label": "Reproducibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance-framework",
+      "vc:label": "Data Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy",
+      "vc:label": "Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-data",
+      "vc:label": "Synthetic Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-architecture",
+      "vc:label": "Data Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-modelling",
+      "vc:label": "Computational Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-metric",
+      "vc:label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:ground-truth-labels",
+      "vc:label": "Ground Truth Labels"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-management",
+      "vc:label": "Data Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmarking",
+      "vc:label": "Benchmarking"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-lake",
+      "vc:label": "Data Lake"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-analysis",
+      "vc:label": "Data Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-infrastructure",
+      "vc:label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulation",
+      "vc:label": "Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-management-system",
+      "vc:label": "Data Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:metadata",
+      "vc:label": "Metadata"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-schema",
+      "vc:label": "Data Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-split",
+      "vc:label": "Data Split"
+    },
+    {
+      "@id": "urn:visionflow:linked:imbalanced-data",
+      "vc:label": "Imbalanced Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-versioning",
+      "vc:label": "Data Versioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-act",
+      "vc:label": "AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-provenance",
+      "vc:label": "Data Provenance"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-data",
+      "vc:label": "Open Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-ethics",
+      "vc:label": "Data Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:differential-privacy",
+      "vc:label": "Differential Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-centric-ai",
+      "vc:label": "Data-Centric AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    }
   ]
 }
 ```
@@ -90,53 +270,152 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:cat-ai-infrastructure", "label": "AI Infrastructure"},
-    {"@id": "urn:ngm:class:data-architecture", "label": "Data Architecture"}
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:data-architecture",
+      "label": "Data Architecture"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-record", "label": "Data Record"},
-      {"@id": "urn:ngm:class:schema", "label": "Schema"},
-      {"@id": "urn:ngm:class:ground-truth-labels", "label": "Ground Truth Labels"},
-      {"@id": "urn:ngm:class:metadata", "label": "Metadata"},
-      {"@id": "urn:ngm:class:data-split", "label": "Data Split"},
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}
+      {
+        "@id": "urn:ngm:class:data-record",
+        "label": "Data Record"
+      },
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:data-split",
+        "label": "Data Split"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"},
-      {"@id": "urn:ngm:class:data-cleaning", "label": "Data Cleaning"},
-      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"},
-      {"@id": "urn:ngm:class:data-labelling", "label": "Data Labelling"}
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      },
+      {
+        "@id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "@id": "urn:ngm:class:data-labelling",
+        "label": "Data Labelling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
-      {"@id": "urn:ngm:class:benchmarking", "label": "Benchmarking"},
-      {"@id": "urn:ngm:class:data-analysis", "label": "Data Analysis"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "@id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computational-modelling", "label": "Computational Modelling"},
-      {"@id": "urn:ngm:class:data-quality", "label": "Data Quality"},
-      {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:regulation", "label": "Regulation"}
+      {
+        "@id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -406,7 +685,7 @@ public: true
 
   **Consent and participation**: The people whose text, images, and voices constitute training datasets rarely gave explicit consent for this use. Scraping public social media posts, web pages, and image repositories creates training data without the knowledge of the people whose expressions are captured. This is particularly acute for medical data, where patients have strong expectations of privacy and data protection law requires explicit consent or lawful basis for processing. The Data Provenance Initiative (Longpre et al., 2023) found that the majority of widely used NLP datasets lack clear consent documentation for their source content.
 
-  **[[Data Ethics]] and harm**: Training datasets may contain hate speech, misinformation, harassment, and content that could teach models harmful behaviours or reinforce stereotypes. Birhane et al. (2021) found disturbing content in LAION-400M including non-consensual intimate imagery and stereotyping. Removing such content requires clear ethical frameworks for what constitutes harmful content—which are themselves contested—and creates trade-offs between comprehensiveness and safety. The field is moving toward explicit harm taxonomies and red-teaming processes that systematically test dataset content for the presence of defined harm categories.
+  **[[Data Ethics]] and harm**: Training datasets may contain hate speech, misinformation, harassment, and content that [private] teach models harmful behaviours or reinforce stereotypes. Birhane et al. (2021) found disturbing content in LAION-400M including non-consensual intimate imagery and stereotyping. Removing such content requires clear ethical frameworks for what constitutes harmful content—which are themselves contested—and creates trade-offs between comprehensiveness and safety. The field is moving toward explicit harm taxonomies and red-teaming processes that systematically test dataset content for the presence of defined harm categories.
 
   **Worker welfare in annotation**: Many large annotated datasets are produced through crowdsourcing platforms (Amazon Mechanical Turk, Scale AI, Sama, Appen) using workers in developing countries paid below living wages for cognitively and emotionally demanding annotation work. Reviewing content moderation datasets for social media, medical imaging datasets for pathology, and instruction-following datasets for alignment training frequently exposes annotators to disturbing material without adequate psychological support. The ethical obligations of dataset creators toward annotation workers are an emerging area of research and advocacy.
 
@@ -445,7 +724,7 @@ public: true
 
   **Data protection law**: Personal data processed for model training is subject to GDPR (EU), UK GDPR (UK), and equivalent legislation in other jurisdictions. Key obligations include identifying a lawful basis for processing (Article 6, e.g., legitimate interests, consent, public task), ensuring that special category data (health, biometric, racial/ethnic origin) meets the higher threshold of Article 9 lawful bases, implementing data minimisation and purpose limitation, and providing transparency to data subjects about how their data is used. The use of web-scraped personal data for model training has been challenged by data protection authorities: Italy's Garante blocked ChatGPT in March 2023; France's CNIL investigated several AI companies; the ICO has published guidance on the lawful bases for scraping and training.
 
-  **AI-specific regulation**: The EU AI Act (2024) introduces the first comprehensive regulation specifically addressing AI training data quality. Article 10 (Data and Data Governance) applies to providers of high-risk AI systems and requires: (a) training, validation, and test datasets meeting "appropriate data governance and management practices" including examination for biases and errors; (b) characterisation of the datasets with respect to their purpose, geographic, functional, or behavioural setting; (c) assessment of the availability, quantity, and suitability of the data; and (d) examination of the datasets for possible biases that could affect health, safety, or fundamental rights. The EU AI Act's GPAI provisions additionally require that foundation model providers publish detailed summaries of their training data including copyright compliance measures.
+  **AI-specific regulation**: The EU AI Act (2024) introduces the first comprehensive regulation specifically addressing AI training data quality. Article 10 (Data and Data Governance) applies to providers of high-risk AI systems and requires: (a) training, validation, and test datasets meeting "appropriate data governance and management practices" including examination for biases and errors; (b) characterisation of the datasets with respect to their purpose, geographic, functional, or behavioural setting; (c) assessment of the availability, quantity, and suitability of the data; and (d) examination of the datasets for possible biases that [private] affect health, safety, or fundamental rights. The EU AI Act's GPAI provisions additionally require that foundation model providers publish detailed summaries of their training data including copyright compliance measures.
 
   **Research exemptions and open data policies**: Many jurisdictions provide research exemptions from data protection law (GDPR Article 89, UK GDPR Schedule 2 para 27) enabling processing of personal data for scientific research without individual consent, subject to appropriate safeguards. These exemptions underpin the academic research datasets in health (UK Biobank, MIMIC) and social science (UK Data Service, UK Data Archive). Government [[Open Data]] policies—the G8 Open Data Charter, the UK's National Data Strategy, the EU Open Data Directive—require public sector organisations to publish datasets as open data by default, creating a significant resource for AI research and innovation.
 

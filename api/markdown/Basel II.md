@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Basel II
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,7 +106,7 @@ public: true
 
   ## Technical Details
 
-  Under Pillar 1, credit-risk capital could be computed via the standardised approach, using external ratings and fixed risk weights, or via foundation and advanced internal-ratings-based approaches in which banks estimate probability of default, loss given default, and exposure at default. Operational risk introduced the basic-indicator, standardised, and advanced-measurement approaches. The framework retained the 8% minimum ratio of capital to risk-weighted assets from Basel I but changed how those risk-weighted assets were computed. Its reliance on banks' internal models and on external credit ratings became a central criticism after the crisis, as both were shown to understate tail risk. Basel III responded with higher and better-quality capital, a leverage ratio backstop independent of risk weights, capital conservation and counter-cyclical buffers, and new liquidity standards — the liquidity coverage ratio and net stable funding ratio — that Basel II had lacked entirely.
+  Under Pillar 1, credit-risk capital [private] be computed via the standardised approach, using external ratings and fixed risk weights, or via foundation and advanced internal-ratings-based approaches in which banks estimate probability of default, loss given default, and exposure at default. Operational risk introduced the basic-indicator, standardised, and advanced-measurement approaches. The framework retained the 8% minimum ratio of capital to risk-weighted assets from Basel I but changed how those risk-weighted assets were computed. Its reliance on banks' internal models and on external credit ratings became a central criticism after the crisis, as both were shown to understate tail risk. Basel III responded with higher and better-quality capital, a leverage ratio backstop independent of risk weights, capital conservation and counter-cyclical buffers, and new liquidity standards — the liquidity coverage ratio and net stable funding ratio — that Basel II had lacked entirely.
 
   ## Current Landscape
 

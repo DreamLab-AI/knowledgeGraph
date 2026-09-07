@@ -1,37 +1,122 @@
----
-public: true
----
-
-# Issb
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:issb", "@type":"Page", "title":"Issb", "vc:slug":"issb", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:issb",
+  "@type": "Page",
+  "title": "Issb",
+  "vc:slug": "issb",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:issb",
-  "@type":"Class",
-  "label":"Issb",
-  "definition":"The International Sustainability Standards Board (ISSB) is a standard-setting body established under the IFRS Foundation to develop a global baseline of sustainability-related financial disclosure standards. Its inaugural standards, IFRS S1 and IFRS S2, set out general sustainability and climate-specific disclosure requirements for capital markets. The ISSB consolidated earlier voluntary frameworks to reduce fragmentation and improve the comparability of corporate sustainability information.",
-  "domain":"governance",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:sustainability-reporting","label":"Sustainability Reporting"}],
-  "relations":{
-    "standardizedBy":[{"@id":"urn:ngm:class:disclosure-requirements","label":"Disclosure Requirements"}],
-    "implements":[{"@id":"urn:ngm:class:tcfd","label":"TCFD"},{"@id":"urn:ngm:class:climate-scenario-analysis","label":"Climate Scenario Analysis"}],
-    "requires":[{"@id":"urn:ngm:class:materiality-assessment","label":"Materiality Assessment"},{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}],
-    "supports":[{"@id":"urn:ngm:class:esg-reporting","label":"ESG Reporting"},{"@id":"urn:ngm:class:sustainable-finance","label":"Sustainable Finance"}],
-    "enables":[{"@id":"urn:ngm:class:disclosure-requirements","label":"Disclosure Requirements"},{"@id":"urn:ngm:class:financial-materiality","label":"Financial Materiality"}],
-    "uses":[{"@id":"urn:ngm:class:ghg-protocol","label":"GHG Protocol"}],
-    "relatedTo":[{"@id":"urn:ngm:class:esg","label":"ESG"},{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"},{"@id":"urn:ngm:class:corporate-governance","label":"Corporate Governance"},{"@id":"urn:ngm:class:audit","label":"Audit"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:climate-risk","label":"Climate Risk"}],
-    "partOf":[{"@id":"urn:ngm:class:sustainability-reporting","label":"Sustainability Reporting"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:issb",
+  "@type": "Class",
+  "label": "Issb",
+  "definition": "The International Sustainability Standards Board (ISSB) is a standard-setting body established under the IFRS Foundation to develop a global baseline of sustainability-related financial disclosure standards. Its inaugural standards, IFRS S1 and IFRS S2, set out general sustainability and climate-specific disclosure requirements for capital markets. The ISSB consolidated earlier voluntary frameworks to reduce fragmentation and improve the comparability of corporate sustainability information.",
+  "domain": "governance",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability-reporting",
+      "label": "Sustainability Reporting"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "@id": "urn:ngm:class:climate-scenario-analysis",
+        "label": "Climate Scenario Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:financial-materiality",
+        "label": "Financial Materiality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ISO/IEC 23894
----
-
-# ISO-IEC 23894
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,32 +53,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:iso-iec-23894:62cdf716bc29",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:50ca174fad0305597b848ac4a9ac8bbed06a3b68895a25a9df028755381df62d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An ISO/IEC standard providing guidance on managing risk related to artificial intelligence for organisations that develop or use AI. It applies risk management principles to the AI context.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Temperature Sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,16 +51,34 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"},
-      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"}
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-technology", "label": "Sensor Technology"}
+      {
+        "@id": "urn:ngm:class:sensor-technology",
+        "label": "Sensor Technology"
+      }
     ]
   },
   "provenance": {
@@ -75,32 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:temperature-sensor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b2010acfb51c63731d7c4bb9cd82b841522a883601db9d7fcfc708c81934331e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A temperature sensor is a transducer that converts thermal energy into an electrical signal, enabling robotic and autonomous systems to monitor ambient, surface, or internal temperatures. Common types include thermocouples, RTDs, and infrared sensors, each suited to different accuracy, range, and response-time requirements in industrial, healthcare, and field robotics.

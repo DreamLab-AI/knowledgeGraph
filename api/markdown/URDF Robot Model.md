@@ -1,8 +1,3 @@
----
-public: true
----
-
-# URDF Robot Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

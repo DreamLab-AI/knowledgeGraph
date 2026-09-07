@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Travel Rule Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A travel rule protocol is a technical standard that lets virtual asset service providers securely exchange the originator and beneficiary information required by the FATF Travel Rule when transferring crypto-assets. Implementations such as the IVMS101 data model and the TRP and OpenVASP messaging schemes define how counterparty identity data is formatted, transmitted, and verified between regulated entities.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:travel-rule", "label": "Travel Rule"}, {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ]
   },
   "quality": 0.72
 }

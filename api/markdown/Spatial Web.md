@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Spatial Web
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

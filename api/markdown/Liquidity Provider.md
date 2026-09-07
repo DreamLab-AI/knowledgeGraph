@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Liquidity Provider
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,4 +171,3 @@ public: true
   - Concentrated liquidity — introduced by Uniswap v3 (2021) — allows LPs to allocate capital within user-specified price ranges, dramatically improving capital efficiency relative to full-range positions. This shifted LP management toward active strategies resembling traditional market making, where positions must be rebalanced as prices move. [[Yield Farming]] programmes from protocols including Curve, Balancer, and SushiSwap offer token incentives layered atop fee income, enabling LPs to earn above-market returns during emission phases. Stableswap invariants (Curve) and weighted pools (Balancer) extend the AMM design space beyond constant-product.
 
   - By 2024–2025, on-chain liquidity provision is maturing with institutional-grade products including vaults that automate LP rebalancing (Gamma, Arrakis), intent-based settlement that routes trades across LP positions without direct AMM interaction, and real-world asset (RWA) pools that bring fixed-income liquidity on-chain. Regulatory clarity is emerging in multiple jurisdictions regarding whether LP activity constitutes securities market-making, with MiCA in the EU and SEC guidance in the US creating new compliance considerations. Total value locked (TVL) in DeFi liquidity pools stabilised in the $60–100 billion range through 2024, with fee revenue increasingly driven by professional LPs deploying concentrated positions.
-

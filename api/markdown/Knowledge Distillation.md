@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Knowledge Distillation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,52 +175,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:knowledge-distillation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:82261876e7b50e0720d64870d0f5042006520811a7483cc416ebae06915a7406"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Nostr]]",
-      "resolved": "urn:visionflow:linked:nostr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hyper personalisation]]",
-      "resolved": "urn:visionflow:owl:class:hyper-personalisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graphing]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Logseq]]",
-      "resolved": "urn:visionflow:owl:class:logseq",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A model compression technique where a smaller "student" model is trained to mimic the behaviour of a larger "teacher" model, transferring knowledge through soft targets. Knowledge distillation enables simple student networks with few parameters to achieve comparable performance to deep teacher networks.
 
@@ -249,7 +198,7 @@ public: true
   - This interface is an example of [[Knowledge Graphing]].
 		- [[Logseq]] is a knowledge management and note-taking tool, integrated with AI capabilities.
 		- This is updated a couple of times a week, but you WILL need to hit CTRL-R as I didn't code a refresh into it.
-		- Below is the [graph](https://www.visionflow.info/680a51ea177aecc8cafb7003e146622b7ca13257/index.html#/graph) view of about 1/6 of my current research base.
+		- Below is the [graph](https://www.visionflow.info/680a51ea177aecc8cafb7003e146622b7ca13257/[private].html#/graph) view of about 1/6 of my current research base.
 		- **You can find it as "Graph" top right of this page.**
 		- You should probably stop reading this page and go click graph and find something you like.
 		- ![Screenshot 2024-01-30 093017.png](assets/Screenshot_2024-01-30_093017_1706607172633_0.png)
@@ -283,7 +232,7 @@ public: true
   - This interface is an example of [[Knowledge Graphing]].
 		- [[Logseq]] is a knowledge management and note-taking tool, integrated with AI capabilities.
 		- This is updated a couple of times a week, but you WILL need to hit CTRL-R as I didn't code a refresh into it.
-		- Below is the [graph](https://www.visionflow.info/680a51ea177aecc8cafb7003e146622b7ca13257/index.html#/graph) view of about 1/6 of my current research base.
+		- Below is the [graph](https://www.visionflow.info/680a51ea177aecc8cafb7003e146622b7ca13257/[private].html#/graph) view of about 1/6 of my current research base.
 		- **You can find it as "Graph" top right of this page.**
 		- You should probably stop reading this page and go click graph and find something you like.
 		- ![Screenshot 2024-01-30 093017.png](assets/Screenshot_2024-01-30_093017_1706607172633_0.png)
@@ -492,7 +441,7 @@ public: true
   - UK-based research institutions have contributed substantially to fairness-aware machine learning, including recent work examining bias propagation through distillation processes[7]
   - North England innovation hubs
   - Manchester's strong computational research community and Leeds' machine learning initiatives represent potential centres for applied distillation research, though specific regional implementations remain undocumented in current literature
-  - The region's growing AI sector could benefit from distillation techniques for deploying models on edge devices across manufacturing and healthcare applications
+  - The region's growing AI sector [private] benefit from distillation techniques for deploying models on edge devices across manufacturing and healthcare applications
 
   ## Future Directions
 

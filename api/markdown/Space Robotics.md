@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Space Robotics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,24 +21,37 @@ public: true
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    {
+      "@id": "urn:ngm:class:autonomous-robot",
+      "label": "Autonomous Robot"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}
+      {
+        "@id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
     ]
   },
   "quality": 0.8

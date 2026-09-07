@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Heatmap Regression
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Heatmap regression is a computer-vision technique for keypoint localisation in which a network predicts a 2D probability map per landmark rather than directly regressing coordinates. The peak of each predicted heatmap indicates the most likely location, and Gaussian-blurred ground-truth targets make training spatially smooth and robust. It is the dominant approach for human pose estimation and facial landmark detection.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
     ]
   },
   "quality": 0.72

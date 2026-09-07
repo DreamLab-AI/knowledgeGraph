@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,67 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-storage:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8b1d08a9237792138ac13435652682dfc07b6ea113f4c67edc0b20accff5ec7f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Backup and Recovery]]",
-      "resolved": "urn:visionflow:linked:backup-and-recovery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Core Technology]]",
-      "resolved": "urn:visionflow:linked:core-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Persistence]]",
-      "resolved": "urn:visionflow:linked:data-persistence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Redundancy]]",
-      "resolved": "urn:visionflow:linked:data-redundancy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Storage Architecture]]",
-      "resolved": "urn:visionflow:linked:storage-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Retrieval]]",
-      "resolved": "urn:visionflow:owl:class:information-retrieval",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Infrastructure Component]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-component",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Data storage encompasses the systems, technologies, and architectures used to capture, retain, and retrieve digital information for ongoing and future use. It includes various storage types such as file, block, and object storage, along with the hardware and software infrastructure that ensures data persistence, accessibility, availability, and protection against loss or corruption.

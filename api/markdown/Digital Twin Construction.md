@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Twin Construction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,72 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-twin-construction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c7f23018ae27ab58b22f3440e8f7117edfeee43665e79f37e13079cc4b71a69d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BIM]]",
-      "resolved": "urn:visionflow:linked:bim",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Building Lifecycle Management]]",
-      "resolved": "urn:visionflow:linked:building-lifecycle-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cloud Platform]]",
-      "resolved": "urn:visionflow:linked:cloud-platform",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Construction Optimization]]",
-      "resolved": "urn:visionflow:linked:construction-optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[IoT Sensors]]",
-      "resolved": "urn:visionflow:owl:class:io-t-sensors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Predictive Maintenance]]",
-      "resolved": "urn:visionflow:owl:class:predictive-maintenance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The application of digital twin technology within the architecture, engineering, and construction (AEC) industry, extending BIM capabilities through real-time sensor integration and IoT connectivity to create dynamic virtual replicas of buildings and infrastructure throughout their lifecycle.

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Yield Optimisation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:yield-optimisation", "@type":"Page", "title":"Yield Optimisation", "vc:slug":"yield-optimisation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:yield-optimisation",
+  "@type": "Page",
+  "title": "Yield Optimisation",
+  "vc:slug": "yield-optimisation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

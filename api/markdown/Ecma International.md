@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Ecma International
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

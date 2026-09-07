@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Idempotency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Idempotency is the property of an operation whereby applying it multiple times produces the same result as applying it once. In distributed systems and APIs it is essential for safe retries, ensuring that duplicated requests caused by network failures do not corrupt state or cause unintended side effects. Idempotency is commonly enforced via idempotency keys, deterministic merge functions, or naturally commutative state updates.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}],
-    "relatedTo": [{"@id": "urn:ngm:class:crdt", "label": "CRDT"}]
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ]
   },
   "quality": 0.72
 }

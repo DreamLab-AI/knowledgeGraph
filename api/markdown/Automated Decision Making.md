@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Automated Decision Making
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:automated-decision-making", "@type":"Page", "title":"Automated Decision Making", "vc:slug":"automated-decision-making", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:automated-decision-making",
+  "@type": "Page",
+  "title": "Automated Decision Making",
+  "vc:slug": "automated-decision-making",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -110,6 +115,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - Automated decision making uses algorithms and [[Machine Learning]] models to reach decisions about individuals without meaningful human involvement. It draws on [[Predictive Analytics]] and a [[Model]], and is governed by [[Transparency]], [[Accountability]] and [[Algorithmic Fairness]] safeguards.
 - ### Overview

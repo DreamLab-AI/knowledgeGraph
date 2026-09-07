@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Leeds Digital Hub
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"},
-      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"}
+      {
+        "@id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:north-england-innovation-corridor",
+        "label": "North England Innovation Corridor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"},
-      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"},
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
+      {
+        "@id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:north-england-innovation-corridor",
+        "label": "North England Innovation Corridor"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
     ]
   },
   "provenance": {
@@ -86,42 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:leeds-digital-hub:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c6e8aa63119600258d4a95efd3eebe8377685e8667737d95debb6341ffcbc270"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Northern Powerhouse]]",
-      "resolved": "urn:visionflow:linked:northern-powerhouse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[North England Innovation Corridor]]",
-      "resolved": "urn:visionflow:owl:class:north-england-innovation-corridor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[UK Tech Ecosystem]]",
-      "resolved": "urn:visionflow:owl:class:uk-tech-ecosystem",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Leeds Digital Hub is a regional technology cluster in Leeds city centre that concentrates collaborative workspace, mentoring, and innovation infrastructure for digital startups and established technology companies in healthtech, fintech, and digital creative sectors. It is a node within the broader UK Tech Ecosystem and North England Innovation Corridor, anchored by the University of Leeds and Leeds Teaching Hospitals NHS Trust.

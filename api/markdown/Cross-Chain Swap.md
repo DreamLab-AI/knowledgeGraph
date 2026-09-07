@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Cross-Chain Swap
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cross-chain-swap", "@type":"Page", "title":"Cross-Chain Swap", "vc:slug":"cross-chain-swap", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cross-chain-swap",
+  "@type": "Page",
+  "title": "Cross-Chain Swap",
+  "vc:slug": "cross-chain-swap",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

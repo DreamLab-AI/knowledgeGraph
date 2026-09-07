@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Runtime Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:runtime-layer:0227c8dbc5a4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:98d8b72dcbdd836df63665507b7acd22d7e13a1453706a03058ca94d9d3e18a0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Compute Layer]]",
-      "resolved": "urn:visionflow:linked:compute-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inference Layer]]",
-      "resolved": "urn:visionflow:linked:inference-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Machine]]",
-      "resolved": "urn:visionflow:linked:virtual-machine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Garbage Collection]]",
-      "resolved": "urn:visionflow:linked:garbage-collection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Runtime Layer is the stratum that provides the execution environment in which higher-level code and models actually run. It sits above the Compute Layer that allocates resources and below the application and inference strata it hosts. It contains process and memory management, schedulers, sandboxes, and the libraries that support running programmes.

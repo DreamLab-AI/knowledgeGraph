@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Classifier Free Guidance
----
-
-# classifier-free guidance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -14,53 +7,194 @@ aliases:
   "title": "classifier-free guidance",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:latent-diffusion", "vc:label": "Latent Diffusion"},
-    {"@id": "urn:visionflow:linked:score-function", "vc:label": "Score Function"},
-    {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:linked:text-to-image", "vc:label": "Text-to-Image"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:text-to-video-generation", "vc:label": "Text-to-Video Generation"},
-    {"@id": "urn:visionflow:linked:audio-generation", "vc:label": "Audio Generation"},
-    {"@id": "urn:visionflow:linked:denoising-diffusion-probabilistic-model", "vc:label": "Denoising Diffusion Probabilistic Model"},
-    {"@id": "urn:visionflow:linked:conditioning-signal", "vc:label": "Conditioning Signal"},
-    {"@id": "urn:visionflow:linked:score-based-generative-model", "vc:label": "Score-Based Generative Model"},
-    {"@id": "urn:visionflow:linked:dropout", "vc:label": "Dropout"},
-    {"@id": "urn:visionflow:linked:generative-model", "vc:label": "Generative Model"},
-    {"@id": "urn:visionflow:linked:stable-diffusion", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:visionflow:linked:controlnet", "vc:label": "ControlNet"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:sampling", "vc:label": "Sampling"},
-    {"@id": "urn:visionflow:linked:clip", "vc:label": "CLIP"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:reward-model", "vc:label": "Reward Model"},
-    {"@id": "urn:visionflow:linked:classifier-guidance", "vc:label": "Classifier Guidance"},
-    {"@id": "urn:visionflow:linked:unconditional-generation", "vc:label": "Unconditional Generation"},
-    {"@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:visionflow:linked:flow-matching", "vc:label": "Flow Matching"},
-    {"@id": "urn:visionflow:linked:autoregressive-model", "vc:label": "Autoregressive Model"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:stochastic-differential-equation", "vc:label": "Stochastic Differential Equation"},
-    {"@id": "urn:visionflow:linked:markov-chain", "vc:label": "Markov Chain"},
-    {"@id": "urn:visionflow:linked:diffusion-transformer", "vc:label": "Diffusion Transformer"},
-    {"@id": "urn:visionflow:linked:dall-e-3", "vc:label": "DALL-E 3"},
-    {"@id": "urn:visionflow:linked:guidance-scale", "vc:label": "Guidance Scale"},
-    {"@id": "urn:visionflow:linked:null-conditioning", "vc:label": "Null Conditioning"},
-    {"@id": "urn:visionflow:linked:noise-schedule", "vc:label": "Noise Schedule"},
-    {"@id": "urn:visionflow:linked:negative-prompting", "vc:label": "Negative Prompting"},
-    {"@id": "urn:visionflow:linked:conditional-generation", "vc:label": "Conditional Generation"},
-    {"@id": "urn:visionflow:linked:spatial-computing", "vc:label": "Spatial Computing"},
-    {"@id": "urn:visionflow:linked:u-net", "vc:label": "U-Net"},
-    {"@id": "urn:visionflow:linked:knowledge-distillation", "vc:label": "Knowledge Distillation"},
-    {"@id": "urn:visionflow:linked:score-distillation-sampling", "vc:label": "Score Distillation Sampling"},
-    {"@id": "urn:visionflow:linked:neural-radiance-field", "vc:label": "Neural Radiance Field"},
-    {"@id": "urn:visionflow:linked:multimodal-learning", "vc:label": "Multimodal Learning"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:energy-based-model", "vc:label": "Energy-Based Model"},
-    {"@id": "urn:visionflow:linked:image-editing", "vc:label": "Image Editing"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:content-authentication", "vc:label": "Content Authentication"}
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion",
+      "vc:label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:score-function",
+      "vc:label": "Score Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-video-generation",
+      "vc:label": "Text-to-Video Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-generation",
+      "vc:label": "Audio Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:denoising-diffusion-probabilistic-model",
+      "vc:label": "Denoising Diffusion Probabilistic Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:conditioning-signal",
+      "vc:label": "Conditioning Signal"
+    },
+    {
+      "@id": "urn:visionflow:linked:score-based-generative-model",
+      "vc:label": "Score-Based Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:dropout",
+      "vc:label": "Dropout"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:controlnet",
+      "vc:label": "ControlNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:sampling",
+      "vc:label": "Sampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:clip",
+      "vc:label": "CLIP"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-model",
+      "vc:label": "Reward Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:classifier-guidance",
+      "vc:label": "Classifier Guidance"
+    },
+    {
+      "@id": "urn:visionflow:linked:unconditional-generation",
+      "vc:label": "Unconditional Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:flow-matching",
+      "vc:label": "Flow Matching"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoregressive-model",
+      "vc:label": "Autoregressive Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-differential-equation",
+      "vc:label": "Stochastic Differential Equation"
+    },
+    {
+      "@id": "urn:visionflow:linked:markov-chain",
+      "vc:label": "Markov Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-transformer",
+      "vc:label": "Diffusion Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:dall-e-3",
+      "vc:label": "DALL-E 3"
+    },
+    {
+      "@id": "urn:visionflow:linked:guidance-scale",
+      "vc:label": "Guidance Scale"
+    },
+    {
+      "@id": "urn:visionflow:linked:null-conditioning",
+      "vc:label": "Null Conditioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:noise-schedule",
+      "vc:label": "Noise Schedule"
+    },
+    {
+      "@id": "urn:visionflow:linked:negative-prompting",
+      "vc:label": "Negative Prompting"
+    },
+    {
+      "@id": "urn:visionflow:linked:conditional-generation",
+      "vc:label": "Conditional Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:u-net",
+      "vc:label": "U-Net"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:score-distillation-sampling",
+      "vc:label": "Score Distillation Sampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-radiance-field",
+      "vc:label": "Neural Radiance Field"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-learning",
+      "vc:label": "Multimodal Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:energy-based-model",
+      "vc:label": "Energy-Based Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-editing",
+      "vc:label": "Image Editing"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-authentication",
+      "vc:label": "Content Authentication"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -198,78 +332,11 @@ aliases:
       "label": "Guidance Without a Classifier"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:classifier-free-guidance:a3b7f9c12e40",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2357c26d415fb946894daa60ac98ec65e9f86a56b04c5461c492744c22bde967"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[Latent Diffusion]]", "resolved": "urn:visionflow:linked:latent-diffusion", "kind": "ResolvedLink"},
-    {"raw": "[[Score Function]]", "resolved": "urn:visionflow:linked:score-function", "kind": "ResolvedLink"},
-    {"raw": "[[Variational Autoencoder]]", "resolved": "urn:visionflow:linked:variational-autoencoder", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Image]]", "resolved": "urn:visionflow:linked:text-to-image", "kind": "ResolvedLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:visionflow:linked:image-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Video Generation]]", "resolved": "urn:visionflow:linked:text-to-video-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Audio Generation]]", "resolved": "urn:visionflow:linked:audio-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Denoising Diffusion Probabilistic Model]]", "resolved": "urn:visionflow:linked:denoising-diffusion-probabilistic-model", "kind": "ResolvedLink"},
-    {"raw": "[[Conditioning Signal]]", "resolved": "urn:visionflow:linked:conditioning-signal", "kind": "ResolvedLink"},
-    {"raw": "[[Score-Based Generative Model]]", "resolved": "urn:visionflow:linked:score-based-generative-model", "kind": "ResolvedLink"},
-    {"raw": "[[Dropout]]", "resolved": "urn:visionflow:linked:dropout", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Model]]", "resolved": "urn:visionflow:linked:generative-model", "kind": "ResolvedLink"},
-    {"raw": "[[Stable Diffusion]]", "resolved": "urn:visionflow:linked:stable-diffusion", "kind": "ResolvedLink"},
-    {"raw": "[[ControlNet]]", "resolved": "urn:visionflow:linked:controlnet", "kind": "ResolvedLink"},
-    {"raw": "[[Prompt Engineering]]", "resolved": "urn:visionflow:linked:prompt-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Sampling]]", "resolved": "urn:visionflow:linked:sampling", "kind": "ResolvedLink"},
-    {"raw": "[[CLIP]]", "resolved": "urn:visionflow:linked:clip", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"},
-    {"raw": "[[Reward Model]]", "resolved": "urn:visionflow:linked:reward-model", "kind": "ResolvedLink"},
-    {"raw": "[[Classifier Guidance]]", "resolved": "urn:visionflow:linked:classifier-guidance", "kind": "ResolvedLink"},
-    {"raw": "[[Unconditional Generation]]", "resolved": "urn:visionflow:linked:unconditional-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Adversarial Network]]", "resolved": "urn:visionflow:linked:generative-adversarial-network", "kind": "ResolvedLink"},
-    {"raw": "[[Flow Matching]]", "resolved": "urn:visionflow:linked:flow-matching", "kind": "ResolvedLink"},
-    {"raw": "[[Autoregressive Model]]", "resolved": "urn:visionflow:linked:autoregressive-model", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Stochastic Differential Equation]]", "resolved": "urn:visionflow:linked:stochastic-differential-equation", "kind": "ResolvedLink"},
-    {"raw": "[[Markov Chain]]", "resolved": "urn:visionflow:linked:markov-chain", "kind": "ResolvedLink"},
-    {"raw": "[[Diffusion Transformer]]", "resolved": "urn:visionflow:linked:diffusion-transformer", "kind": "ResolvedLink"},
-    {"raw": "[[DALL-E 3]]", "resolved": "urn:visionflow:linked:dall-e-3", "kind": "ResolvedLink"},
-    {"raw": "[[Guidance Scale]]", "resolved": "urn:visionflow:linked:guidance-scale", "kind": "ResolvedLink"},
-    {"raw": "[[Null Conditioning]]", "resolved": "urn:visionflow:linked:null-conditioning", "kind": "ResolvedLink"},
-    {"raw": "[[Noise Schedule]]", "resolved": "urn:visionflow:linked:noise-schedule", "kind": "ResolvedLink"},
-    {"raw": "[[Negative Prompting]]", "resolved": "urn:visionflow:linked:negative-prompting", "kind": "ResolvedLink"},
-    {"raw": "[[Conditional Generation]]", "resolved": "urn:visionflow:linked:conditional-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Spatial Computing]]", "resolved": "urn:visionflow:linked:spatial-computing", "kind": "ResolvedLink"},
-    {"raw": "[[U-Net]]", "resolved": "urn:visionflow:linked:u-net", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Distillation]]", "resolved": "urn:visionflow:linked:knowledge-distillation", "kind": "ResolvedLink"},
-    {"raw": "[[Score Distillation Sampling]]", "resolved": "urn:visionflow:linked:score-distillation-sampling", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Radiance Field]]", "resolved": "urn:visionflow:linked:neural-radiance-field", "kind": "ResolvedLink"},
-    {"raw": "[[Multimodal Learning]]", "resolved": "urn:visionflow:linked:multimodal-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Bayesian Inference]]", "resolved": "urn:visionflow:linked:bayesian-inference", "kind": "ResolvedLink"},
-    {"raw": "[[Energy-Based Model]]", "resolved": "urn:visionflow:linked:energy-based-model", "kind": "ResolvedLink"},
-    {"raw": "[[Image Editing]]", "resolved": "urn:visionflow:linked:image-editing", "kind": "ResolvedLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[Content Authentication]]", "resolved": "urn:visionflow:linked:content-authentication", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -401,7 +468,7 @@ aliases:
 
   ## About
 
-  Classifier-Free Guidance was introduced in Jonathan Ho and Tim Salimans's NeurIPS 2021 Deep Generative Models Workshop paper "Classifier-Free Diffusion Guidance," circulated on arXiv (arXiv:2207.12598) in July 2022. The work responded to a practical limitation of [[Classifier Guidance]] (Dhariwal and Nichol, 2021), which required training a separate noise-corrupted image classifier alongside the generative model — a pipeline that was cumbersome to scale, prone to adversarial attacks on the classifier, and required separate training infrastructure for different conditioning modalities. Ho and Salimans observed that if the same [[Diffusion Model]] was trained jointly to produce both conditional predictions `p(x | c)` and unconditional predictions `p(x)` (achieved by randomly replacing the conditioning input `c` with a null embedding during training with probability `p ≈ 0.1–0.2`), then the difference between these two predictions at inference time was mathematically equivalent to the score gradient that a Bayesian classifier would provide — the key insight from [[Score-Based Generative Model]] theory that the log-likelihood gradient of a classifier equals the conditional score minus the unconditional score. By linearly extrapolating beyond the conditional prediction in the direction away from the unconditional prediction, the method could amplify conditioning adherence far beyond what standard conditional sampling achieves, without ever training an explicit classifier.
+  Classifier-Free Guidance was introduced in Jonathan Ho and Tim Salimans's NeurIPS 2021 Deep Generative Models Workshop paper "Classifier-Free Diffusion Guidance," circulated on arXiv (arXiv:2207.12598) in July 2022. The work responded to a practical limitation of [[Classifier Guidance]] (Dhariwal and Nichol, 2021), which required training a separate noise-corrupted image classifier alongside the generative model — a pipeline that was cumbersome to scale, prone to adversarial attacks on the classifier, and required separate training infrastructure for different conditioning modalities. Ho and Salimans observed that if the same [[Diffusion Model]] was trained jointly to produce both conditional predictions `p(x | c)` and unconditional predictions `p(x)` (achieved by randomly replacing the conditioning input `c` with a null embedding during training with probability `p ≈ 0.1–0.2`), then the difference between these two predictions at inference time was mathematically equivalent to the score gradient that a Bayesian classifier would provide — the key insight from [[Score-Based Generative Model]] theory that the log-likelihood gradient of a classifier equals the conditional score minus the unconditional score. By linearly extrapolating beyond the conditional prediction in the direction away from the unconditional prediction, the method [private] amplify conditioning adherence far beyond what standard conditional sampling achieves, without ever training an explicit classifier.
 
   The timing of the paper's widespread adoption was perfect: it appeared just as [[Stable Diffusion]] (Rombach et al., CVPR 2022, released publicly August 2022 via CompVis and Stability AI) was becoming the first open-source latent diffusion model capable of high-quality text-to-image generation. Stable Diffusion embedded CFG as a first-class inference parameter — the `guidance_scale` argument, defaulting to 7.5 — exposed in every major inference library and user interface. This made CFG the technique most users first encountered when exploring generative image models, and its trade-off between "creativity" (low `w`) and "prompt adherence" (high `w`) became central to the vocabulary of [[Prompt Engineering]] practice. Within eighteen months of Stable Diffusion's release, virtually every competing text-to-image system — DALL-E 2, Imagen, Midjourney, DeepFloyd IF, Kandinsky, and their successors — had adopted CFG or a variant as their conditioning mechanism.
 

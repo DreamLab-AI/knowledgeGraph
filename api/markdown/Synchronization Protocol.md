@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Synchronization Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "A synchronization protocol is a set of rules by which distributed parties bring their state, clocks, or data into agreement despite operating independently and communicating over unreliable channels. It encompasses clock-synchronisation protocols (NTP, PTP) that align time across machines, and data-synchronisation protocols that reconcile divergent replicas using version vectors, operational transforms, or conflict-free replicated data types. Synchronization protocols are foundational to distributed databases, collaborative editing, mobile offline-first applications, and any system where multiple nodes must converge on a consistent view.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:clock-synchronization", "label": "Clock Synchronization"}
+      {
+        "@id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronization"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:replication", "label": "Replication"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "quality": 0.8

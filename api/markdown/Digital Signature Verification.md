@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Signature Verification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,72 +198,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-signature-verification:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eece5ec84af5ed25aec0f96874f198aeedb5a9d5900f3f835018d3c872e0d77a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Document Integrity]]",
-      "resolved": "urn:visionflow:linked:document-integrity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hash Algorithm]]",
-      "resolved": "urn:visionflow:linked:hash-algorithm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Signature Algorithm]]",
-      "resolved": "urn:visionflow:linked:signature-algorithm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transaction Authentication]]",
-      "resolved": "urn:visionflow:linked:transaction-authentication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Verification]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Non-Repudiation]]",
-      "resolved": "urn:visionflow:owl:class:non-repudiation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Public Key]]",
-      "resolved": "urn:visionflow:owl:class:public-key",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The cryptographic process of validating the authenticity and integrity of digitally signed data by applying the signer's public key to confirm that the signature was created by the corresponding private key and that the signed content has not been modified.

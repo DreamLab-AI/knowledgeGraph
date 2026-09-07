@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitcoin ETF Custody
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Bitcoin ETF custody is the institutional safekeeping of the bitcoin backing a spot exchange-traded fund, performed by qualified custodians under regulatory and audit requirements. It typically uses cold storage with multi-signature or multi-party-computation key management, segregation of client assets, insurance, and proof-of-reserves attestation. This custody model bridges traditional regulated finance and on-chain asset control, and is central to the integrity of spot Bitcoin ETFs.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"}
+      {
+        "@id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      }
     ]
   },
   "quality": 0.72

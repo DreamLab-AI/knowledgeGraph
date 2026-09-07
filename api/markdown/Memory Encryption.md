@@ -1,38 +1,112 @@
----
-public: true
----
-
-# Memory Encryption
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:memory-encryption", "@type":"Page", "title":"Memory Encryption", "vc:slug":"memory-encryption", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:memory-encryption",
+  "@type": "Page",
+  "title": "Memory Encryption",
+  "vc:slug": "memory-encryption",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:memory-encryption",
-  "@type":"Class",
-  "label":"Memory Encryption",
-  "definition":"Memory encryption is the protection of data held in a system's volatile memory (RAM) by encrypting it transparently between the processor and the memory controller. It defends against physical attacks such as cold-boot extraction and bus snooping, and underpins confidential computing by keeping a workload's working set unreadable to other tenants, the hypervisor, or anyone with physical access. Modern implementations apply per-page or per-VM keys managed within the CPU package so that plaintext never leaves the trust boundary of the silicon.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:encryption","label":"Encryption"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:confidential-computing","label":"Confidential Computing"}],
-    "requires":[{"@id":"urn:ngm:class:key-management","label":"Key Management"},{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "enables":[{"@id":"urn:ngm:class:data-protection","label":"Data Protection"}],
-    "uses":[{"@id":"urn:ngm:class:hardware-security-module","label":"Hardware Security Module"}],
-    "dependsOn":[{"@id":"urn:ngm:class:trusted-execution-environment","label":"Trusted Execution Environment"}],
-    "implements":[{"@id":"urn:ngm:class:encryption","label":"Encryption"}],
-    "supports":[{"@id":"urn:ngm:class:secure-enclave","label":"Secure Enclave"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:homomorphic-encryption","label":"Homomorphic Encryption"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:trusted-execution-environment","label":"Trusted Execution Environment"}],
-    "relatedTo":[{"@id":"urn:ngm:class:side-channel-attack","label":"Side-Channel Attack"},{"@id":"urn:ngm:class:cryptography","label":"Cryptography"},{"@id":"urn:ngm:class:security","label":"Security"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:memory-encryption",
+  "@type": "Class",
+  "label": "Memory Encryption",
+  "definition": "Memory encryption is the protection of data held in a system's volatile memory (RAM) by encrypting it transparently between the processor and the memory controller. It defends against physical attacks such as cold-boot extraction and bus snooping, and underpins confidential computing by keeping a workload's working set unreadable to other tenants, the hypervisor, or anyone with physical access. Modern implementations apply per-page or per-VM keys managed within the CPU package so that plaintext never leaves the trust boundary of the silicon.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:encryption",
+      "label": "Encryption"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

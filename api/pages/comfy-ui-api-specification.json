@@ -58,10 +58,6 @@
         "label": "Content Creation Pipeline"
       },
       {
-        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-for-fashion-and-brands",
-        "label": "ComfyUI for Fashion and Brands"
-      },
-      {
         "id": "urn:ngm:class:agentic-workflow",
         "label": "Agentic Workflow"
       },
@@ -756,8 +752,8 @@
       "label": "Civitai Workflow Sharing"
     },
     {
-      "slug": "comfy-ui-for-fashion-and-brands",
-      "label": "ComfyUI for Fashion and Brands"
+      "slug": "[private]",
+      "label": "[private]"
     }
   ],
   "backlinks": [

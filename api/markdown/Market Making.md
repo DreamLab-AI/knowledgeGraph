@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Market Making
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -169,46 +164,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:market-making:43cd5230a56e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:53a50ea792773ca23f9fc5b93abb67b12b957cf20d472709f6df84fa492f958a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Price Discovery]]",
-      "resolved": "urn:visionflow:linked:price-discovery",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Order Book]]",
-      "resolved": "urn:visionflow:linked:order-book",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Market Maker]]",
-      "resolved": "urn:visionflow:linked:automated-market-maker",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Provision]]",
-      "resolved": "urn:visionflow:linked:liquidity-provision",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

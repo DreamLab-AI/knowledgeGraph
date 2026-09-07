@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Logistics Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Logistics automation is the application of robotics, software, and AI to the physical and informational tasks of moving, storing, and tracking goods across supply chains — including goods-to-person fulfilment, autonomous transport, and intelligent route optimisation — with the goal of reducing labour costs, improving throughput, and increasing reliability.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:supply-chain-management",
+      "label": "Supply Chain Management"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:warehouse-automation", "label": "Warehouse Automation"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mobile-robotics", "label": "Mobile Robotics"}
+      {
+        "@id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - The e-commerce fulfilment model pioneered by Amazon has been adopted by logistics operators globally — DHL, Ocado, JD.com, Alibaba — each deploying proprietary or licensed automation systems. Ocado's Customer Fulfilment Centres feature dense robotic grids where thousands of autonomous bots retrieve totes at high speed, achieving grocery pick rates impractical with human pickers. Autonomous forklifts (Seegrid, Balyo) operate in heavy manufacturing and distribution centres. Drone delivery programmes (Amazon Prime Air, Wing, Zipline) are scaling in specific geographies after regulatory approvals in the US, UK, and Sub-Saharan Africa.
 
   - By 2024–2025, the penetration of robotics in logistics is accelerating under dual pressures of e-commerce volume growth and tightening labour markets in major economies. Humanoid robots (Agility Robotics' Digit, Figure, 1X) are entering warehouse trials, targeting the long tail of tasks — unloading trailers, placing items on shelves — that traditional automation cannot cost-effectively address due to environment variability. AI-driven freight matching and dynamic pricing platforms are displacing traditional broker intermediaries. Regulatory frameworks for autonomous delivery on public roads and in airspace are maturing, with BVLOS (beyond visual line of sight) drone operations now permitted in selected jurisdictions under risk-based approval processes.
-

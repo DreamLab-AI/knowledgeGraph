@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,23 +34,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"},
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:navigation", "label": "Navigation"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
     ]
   },
   "quality": 0.8,
@@ -62,3 +97,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

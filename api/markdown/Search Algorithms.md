@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Search Algorithms
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,52 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:search-algorithms:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:15a27798de0dad813309c1f63fcea0f48aa874f4109eede7c56b4cbaad56b01d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Graph Theory]]",
-      "resolved": "urn:visionflow:linked:graph-theory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Optimization]]",
-      "resolved": "urn:visionflow:linked:optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pathfinding]]",
-      "resolved": "urn:visionflow:linked:pathfinding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Planning and Scheduling]]",
-      "resolved": "urn:visionflow:owl:class:planning-and-scheduling",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Search Algorithms is a concept within the ai domain.

@@ -1,52 +1,100 @@
----
-public: true
-title: ISO/IEC 9075 SQL Standard
----
-
-# ISO/IEC 9075 SQL Standard
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:iso-iec-9075", "@type":"Page", "title":"ISO/IEC 9075 SQL Standard", "vc:slug":"iso-iec-9075", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:iso-iec-9075",
+  "@type": "Page",
+  "title": "ISO/IEC 9075 SQL Standard",
+  "vc:slug": "iso-iec-9075",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:iso-iec-9075",
-  "@type":"Class",
-  "label":"ISO/IEC 9075 SQL Standard",
-  "definition":"ISO/IEC 9075 is the international standard that defines SQL, the Structured Query Language used to define, query and manipulate data in relational database systems. Published jointly by ISO and IEC and revised across multiple editions, it specifies the language's data model, syntax, semantics and conformance levels through a series of parts covering the core framework, foundation, call-level interface and extensions such as JSON and property-graph queries. It provides the common reference that lets relational databases interoperate and that vendors extend with proprietary dialects.",
-  "domain":"data",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:data-management","label":"Data Management"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:iso-iec-9075",
+  "@type": "Class",
+  "label": "ISO/IEC 9075 SQL Standard",
+  "definition": "ISO/IEC 9075 is the international standard that defines SQL, the Structured Query Language used to define, query and manipulate data in relational database systems. Published jointly by ISO and IEC and revised across multiple editions, it specifies the language's data model, syntax, semantics and conformance levels through a series of parts covering the core framework, foundation, call-level interface and extensions such as JSON and property-graph queries. It provides the common reference that lets relational databases interoperate and that vendors extend with proprietary dialects.",
+  "domain": "data",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:iso","label":"ISO"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:sql","label":"SQL"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:relational-database","label":"Relational Database"},
-      {"@id":"urn:ngm:class:database-query","label":"Database Query"},
-      {"@id":"urn:ngm:class:data-integrity","label":"Data Integrity"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "@id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:database-system","label":"Database System"},
-      {"@id":"urn:ngm:class:interoperability","label":"Interoperability"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:centralised-database","label":"Centralised Database"},
-      {"@id":"urn:ngm:class:data-layer","label":"Data Layer"},
-      {"@id":"urn:ngm:class:database-systems","label":"Database Systems"},
-      {"@id":"urn:ngm:class:data-management","label":"Data Management"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "@id": "urn:ngm:class:database-systems",
+        "label": "Database Systems"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

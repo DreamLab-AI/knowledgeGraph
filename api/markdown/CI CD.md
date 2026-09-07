@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CI/CD
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

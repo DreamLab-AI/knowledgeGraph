@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NFT Marketplace
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,25 +50,64 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:nft-minting", "label": "NFT Minting"},
-      {"@id": "urn:ngm:class:nft-standard", "label": "NFT Standard"},
-      {"@id": "urn:ngm:class:creator-royalty-token", "label": "Creator Royalty Token"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      },
+      {
+        "@id": "urn:ngm:class:nft-standard",
+        "label": "NFT Standard"
+      },
+      {
+        "@id": "urn:ngm:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
-      {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
-      {"@id": "urn:ngm:class:digital-marketplace", "label": "Digital Marketplace"},
-      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"}
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fractionalized-nft", "label": "Fractionalized NFT"},
-      {"@id": "urn:ngm:class:nft-renting", "label": "NFT Renting"}
+      {
+        "@id": "urn:ngm:class:fractionalized-nft",
+        "label": "Fractionalized NFT"
+      },
+      {
+        "@id": "urn:ngm:class:nft-renting",
+        "label": "NFT Renting"
+      }
     ]
   },
   "quality": 0.8,
@@ -84,32 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nft-marketplace:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:02574053f23436eeab43ed7461cd8265b724bd99e55fe919a9651752e5ed6d91"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Platform for trading NFTs.

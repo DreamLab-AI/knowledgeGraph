@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stable Diffusion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -115,7 +110,7 @@ public: true
 
   **Stable Diffusion** is the open-weights text-to-image model family that brought diffusion-based image synthesis to consumer hardware. Built on the [[Latent Diffusion]] architecture of Rombach et al. (CVPR 2022), it avoids the prohibitive cost of denoising in pixel space by first compressing images roughly 8× per side with a variational autoencoder, then running the iterative denoising process — a U-Net (later a diffusion transformer) predicting noise at each timestep — entirely in that latent space. Text conditioning enters through cross-attention over CLIP (later T5) embeddings of the prompt, and classifier-free guidance steers samples towards prompt fidelity.
 
-  The August 2022 release of v1.4 under a permissive licence was a watershed for [[Generative AI]]: unlike closed contemporaries such as DALL-E 2 and Midjourney, anyone could download the ~860M-parameter checkpoint and generate 512×512 images on a single ~4 GB GPU. Successive versions — v1.5, v2.x, SDXL (2023, ~2.6B parameters, 1024×1024), SD3 and SD3.5 (2024, multimodal diffusion transformer with rectified flow) — improved resolution, prompt adherence, and typography, whilst the community built an enormous ecosystem around the weights: DreamBooth and LoRA fine-tuning, ControlNet spatial conditioning, textual inversion embeddings, and front-ends such as [[Automatic1111]] and ComfyUI.
+  The August 2022 release of v1.4 under a permissive licence was a watershed for [[Generative AI]]: unlike closed contemporaries such as DALL-E 2 and Midjourney, anyone [private] download the ~860M-parameter checkpoint and generate 512×512 images on a single ~4 GB GPU. Successive versions — v1.5, v2.x, SDXL (2023, ~2.6B parameters, 1024×1024), SD3 and SD3.5 (2024, multimodal diffusion transformer with rectified flow) — improved resolution, prompt adherence, and typography, whilst the community built an enormous ecosystem around the weights: DreamBooth and LoRA fine-tuning, ControlNet spatial conditioning, textual inversion embeddings, and front-ends such as [[Automatic1111]] and ComfyUI.
 
   In this graph Stable Diffusion anchors the open image-generation cluster: it is the model that captioning systems such as BLIP-2 prepare training data for, the backbone that [[Concept Art]] workflows build upon, and the reference point against which proprietary text-to-image services are contrasted.
 

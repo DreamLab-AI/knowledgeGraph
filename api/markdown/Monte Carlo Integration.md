@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monte Carlo Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,52 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:monte-carlo-integration:259cd4c3fcc7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4aabb683b6211e0c81eae5f69664987831f68b7180b45487b6292104fc9ce0be"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Random Number Generation]]",
-      "resolved": "urn:visionflow:linked:random-number-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Volume Rendering]]",
-      "resolved": "urn:visionflow:linked:volume-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Importance Sampling]]",
-      "resolved": "urn:visionflow:linked:importance-sampling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sequential Monte Carlo]]",
-      "resolved": "urn:visionflow:linked:sequential-monte-carlo",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Numerical Methods]]",
-      "resolved": "urn:visionflow:linked:numerical-methods",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Monte Carlo integration estimates the value of an integral by averaging the integrand over randomly sampled points, with error that decreases with the square root of the sample count regardless of dimension.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Export Controls
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-export-controls",
   "title": "AI Export Controls",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Anthropic Mythos", "SK Telecom", "US AI Export Controls"],
+  "vc:outboundWikilinks": [
+    "Anthropic Mythos",
+    "SK Telecom",
+    "US AI Export Controls"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-regulation",
+      "label": "AI Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}, {"@id": "urn:ngm:class:european-commission", "label": "European Commission"}, {"@id": "urn:ngm:class:governance", "label": "Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

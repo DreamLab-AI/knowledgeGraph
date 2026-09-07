@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Concerts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,7 +60,10 @@ public: true
   },
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:virtual-event", "label": "Virtual Event"}
+      {
+        "@id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      }
     ],
     "requires": [
       {
@@ -104,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-concerts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eac76cd937fb247f28a457fcd1b2412aace9d90320c27e263066dfd4b68b4b9a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Event]]",
-      "resolved": "urn:visionflow:owl:class:virtual-event",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.

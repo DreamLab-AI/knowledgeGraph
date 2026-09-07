@@ -1,12 +1,3 @@
----
-public: true
-aliases:
-  - Git-mark
-  - git-mark
-  - Gitmark
----
-
-# Git Mark
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

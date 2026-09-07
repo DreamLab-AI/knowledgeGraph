@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - BC-0445-conflict-mineral-tracking
----
-
-# Conflict Mineral Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -122,25 +115,64 @@ aliases:
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
-      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
-      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+      {
+        "@id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
     ]
   },
   "provenance": {
@@ -150,112 +182,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:conflict-mineral-tracking:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:261db8079ac7f735aedb4ad50f51a5d58d3a6da97817f10f36bf42eab1a0ef39"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BC-0013-smart-contracts]]",
-      "resolved": "urn:visionflow:linked:bc-0013-smart-contracts",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0029-permissioned-blockchain]]",
-      "resolved": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0044-supply-chain-management]]",
-      "resolved": "urn:visionflow:linked:bc-0044-supply-chain-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0066-ethereum]]",
-      "resolved": "urn:visionflow:linked:bc-0066-ethereum",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0067-hyperledger-fabric]]",
-      "resolved": "urn:visionflow:linked:bc-0067-hyperledger-fabric",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0214-environmental-sustainability]]",
-      "resolved": "urn:visionflow:linked:bc-0214-environmental-sustainability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0432-consortium-blockchain]]",
-      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0434-blockchain-as-a-service]]",
-      "resolved": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0441-provenance-tracking]]",
-      "resolved": "urn:visionflow:linked:bc-0441-provenance-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Circulor]]",
-      "resolved": "urn:visionflow:linked:circulor",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Everledger]]",
-      "resolved": "urn:visionflow:linked:everledger",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Internet of Things]]",
-      "resolved": "urn:visionflow:linked:internet-of-things",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RCS Global]]",
-      "resolved": "urn:visionflow:linked:rcs-global",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:owl:class:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hyperledger Fabric]]",
-      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Conflict Mineral Tracking denotes the use of blockchain technology to record and verify the provenance of 3TG minerals (tin, tantalum, tungsten, gold) through complex supply chains, ensuring they do not finance armed conflict or human rights abuses in the Democratic Republic of Congo and adjoining regions. Implementations combine immutable custody chains, cryptographic material fingerprinting, and smart-contract-enforced compliance checks to satisfy Dodd-Frank Section 1502 and EU Conflict Minerals Regulation while enabling premium pricing for verified responsible sourcing.

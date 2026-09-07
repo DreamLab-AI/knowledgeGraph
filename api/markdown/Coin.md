@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Coin
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,27 +83,66 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"}
+      {
+        "@id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"},
-      {"@id": "urn:ngm:class:stablecoin-token", "label": "Stablecoin Token"},
-      {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"}
+      {
+        "@id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-token",
+        "label": "Stablecoin Token"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cryptocurrency-token", "label": "Cryptocurrency Token"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency-token",
+        "label": "Cryptocurrency Token"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"},
-      {"@id": "urn:ngm:class:economic-layer", "label": "Economic Layer"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:economic-layer",
+        "label": "Economic Layer"
+      }
     ]
   },
   "provenance": {
@@ -118,62 +152,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:coin:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ad4792ac12011d1a37c5d86616f148b92baa3c7a59f0a354a2e927f451e5ca40"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Coin is a native cryptographic asset issued by a blockchain protocol itself, distinct from smart-contract tokens deployed on top of an existing chain. Coins serve as the primary medium of exchange for transaction fees, validator rewards, and network participation incentives, and may also function as stores of value, monetary reserves, or DeFi collateral.
@@ -299,7 +277,7 @@ public: true
     - **EU Markets in Crypto-Assets (MiCA) Regulation** (effective mid-2024): Established **comprehensive standards** for stablecoin issuers operating in European Union:
       - **Full reserve requirements**: Stablecoin issuers must hold **1:1 reserves** in cash or liquid equivalents for every token issued
       - **Transparency obligations**: Regular third-party audits and public reserve disclosures
-      - **Authorised issuer requirements**: Only EU-licensed entities or equivalent foreign entities could offer stablecoins to EU users
+      - **Authorised issuer requirements**: Only EU-licensed entities or equivalent foreign entities [private] offer stablecoins to EU users
       - **Market impact**: On **March 3, 2025**, Binance (world's largest cryptocurrency exchange) **delisted multiple prominent stablecoins** including USDT, TrueUSD (TUSD), Pax Dollar (USDP), Dai (DAI), and First Digital USD (FDUSD) for European users due to non-compliance with MiCA, effectively forcing migration to **MiCA-compliant alternatives**, primarily **USDC**. This regulatory-driven market restructuring represented the most dramatic stablecoin market shift since the 2022 TerraUSD (UST) collapse
 
     - **U.S. GENIUS Act** (passed U.S. House **July 17, 2025**): Implemented the **first federal regulatory framework** for U.S. dollar stablecoins, establishing:
@@ -314,7 +292,7 @@ public: true
     - **Ethereum** maintained dominance for stablecoin issuance (approximately **60-65%** of total supply), reflecting its **smart contract maturity** and institutional preference for battle-tested infrastructure
     - **Tron** hosted approximately **45-50% of USDT supply** by mid-2025, driven by **near-zero transaction fees** making it preferred for **peer-to-peer remittances** in Asia and Africa (Tron fees ~$0.01 vs. Ethereum ~$0.50-2.00 for stablecoin transfers)
     - **Solana** emerged as **fastest-growing stablecoin network**, expanding from **1.6% to 5.4% market share** through 2024-2025, driven by **high-frequency trading** and **meme coin speculation** requiring fast, cheap settlements
-    - **Base** (Coinbase's Layer 2) grew from **0.2% to 1.8%**, reflecting **institutional on-ramp integration** (Coinbase users could seamlessly transfer USDC to Base for DeFi/Web3 applications)
+    - **Base** (Coinbase's Layer 2) grew from **0.2% to 1.8%**, reflecting **institutional on-ramp integration** (Coinbase users [private] seamlessly transfer USDC to Base for DeFi/Web3 applications)
 
     #### Meme Coin Mania: Speculation as Social Coordination
 

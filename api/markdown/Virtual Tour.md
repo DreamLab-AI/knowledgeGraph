@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Tour
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,18 +59,36 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:3-d-li-dar", "label": "3D LiDAR"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+      {
+        "@id": "urn:ngm:class:3-d-li-dar",
+        "label": "3D LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:education-metaverse", "label": "Education Metaverse"},
-      {"@id": "urn:ngm:class:digital-real-estate", "label": "Digital Real Estate"}
+      {
+        "@id": "urn:ngm:class:education-metaverse",
+        "label": "Education Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:digital-real-estate",
+        "label": "Digital Real Estate"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "provenance": {
@@ -85,37 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-tour:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:53b6abce1251f0078207f17be8d754e1a80535bc2b941fc0f7c8569b32c841eb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Immersive Experience]]",
-      "resolved": "urn:visionflow:owl:class:immersive-experience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An interactive 360-degree digital representation of a physical location that enables remote exploration through web browsers or VR headsets, commonly used in real estate, museums, hospitality, and education to provide immersive walkthroughs without physical presence.

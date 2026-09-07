@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dialogue System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -215,57 +210,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dialogue-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4d832cb308dec9f4f45a321a331d5714f2fcb96a49931babee5f4657f8dbda16"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[cashu]]",
-      "resolved": "urn:visionflow:owl:class:cashu",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Chatbot]]",
-      "resolved": "urn:visionflow:owl:class:chatbot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Question Answering]]",
-      "resolved": "urn:visionflow:owl:class:question-answering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Dialogue System (conversational AI system) is an AI application that engages in natural language conversations with users through text or speech, managing multi-turn interactions, maintaining conversational context, and executing task-oriented or open-domain dialogues. Modern dialogue systems employ transformer-based language models, dialogue state tracking, and reinforcement learning to power virtual assistants, customer service chatbots, and conversational interfaces.

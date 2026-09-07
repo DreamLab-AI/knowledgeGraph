@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WebSocket Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,7 +184,7 @@ public: true
 
 - ### Security Considerations
   - **Origin Policy**: Browsers enforce WebSocket origin checks via the `Origin` header sent in the opening handshake. Servers must validate this header to prevent [[Cross-Site WebSocket Hijacking]], where a malicious page on a different origin establishes a WebSocket connection using the victim's cookies.
-  - **Masking**: Client-to-server frame masking prevents adversarial clients from injecting data that could be misinterpreted by intermediate [[HTTP Proxy]] caches as valid HTTP responses, a class of attack known as [[Cache Poisoning]].
+  - **Masking**: Client-to-server frame masking prevents adversarial clients from injecting data that [private] be misinterpreted by intermediate [[HTTP Proxy]] caches as valid HTTP responses, a class of attack known as [[Cache Poisoning]].
   - **TLS Requirement (WSS)**: Production deployments must use WSS (WebSocket Secure), which tunnels the WebSocket connection over [[Transport Layer Security]], preventing eavesdropping and man-in-the-middle attacks. The WSS URI scheme uses port 443 by default.
   - **Denial of Service**: WebSocket servers are susceptible to connection-exhaustion attacks; each persistent connection consumes a file descriptor and memory. Server-side connection limits, per-IP rate limiting, and authentication-before-upgrade patterns are standard mitigations.
   - **Authentication**: WebSocket itself has no built-in authentication. Applications typically pass credentials in the initial HTTP handshake via cookies, query parameters, or custom headers, then validate server-side before completing the upgrade.

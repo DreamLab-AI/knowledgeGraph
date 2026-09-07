@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Corporate Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-corporate-governance",
   "title": "AI Corporate Governance",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Data Center Capacity", "Training Cluster", "xAI Colossus 2"],
+  "vc:outboundWikilinks": [
+    "AI Data Center Capacity",
+    "Training Cluster",
+    "xAI Colossus 2"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}, {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}, {"@id": "urn:ngm:class:ai-investment", "label": "AI Investment"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

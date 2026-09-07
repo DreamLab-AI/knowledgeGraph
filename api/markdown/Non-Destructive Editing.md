@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Non-Destructive Editing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Non-destructive editing is a content-authoring approach in which modifications are recorded as separate, reversible operations or layers rather than overwriting the original source data. The source remains intact, and the final result is computed by composing the edit stack, so any change can be re-ordered, adjusted, or removed. It is fundamental to layered 3D scene description and modern media pipelines.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
-      {"@id": "urn:ngm:class:3-d-scene-exchange-protocol-sxp", "label": "3D Scene Exchange Protocol (SXP)"}
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-scene-exchange-protocol-sxp",
+        "label": "3D Scene Exchange Protocol (SXP)"
+      }
     ]
   },
   "quality": 0.72

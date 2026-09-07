@@ -1,46 +1,116 @@
----
-public: true
----
-
-# Bearer Token
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:bearer-token", "@type":"Page", "title":"Bearer Token", "vc:slug":"bearer-token", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:bearer-token",
+  "@type": "Page",
+  "title": "Bearer Token",
+  "vc:slug": "bearer-token",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:bearer-token",
-  "@type":"Class",
-  "label":"Bearer Token",
-  "definition":"A bearer token is a security credential that grants access to a protected resource to any party that presents it, without requiring the holder to prove possession of an associated cryptographic key. Commonly issued by authorisation servers and transmitted in an HTTP Authorization header, it is simple to use but must be protected in transit and at rest because anyone who obtains it can use it. Bearer tokens are central to modern API authorisation flows such as OAuth.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:token","label":"Token"}],
-  "relations":{
-    "contrastsWith":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "implements":[{"@id":"urn:ngm:class:authorization","label":"Authorization"}],
-    "uses":[
-      {"@id":"urn:ngm:class:oauth","label":"OAuth"},
-      {"@id":"urn:ngm:class:tls","label":"TLS"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bearer-token",
+  "@type": "Class",
+  "label": "Bearer Token",
+  "definition": "A bearer token is a security credential that grants access to a protected resource to any party that presents it, without requiring the holder to prove possession of an associated cryptographic key. Commonly issued by authorisation servers and transmitted in an HTTP Authorization header, it is simple to use but must be protected in transit and at rest because anyone who obtains it can use it. Bearer tokens are central to modern API authorisation flows such as OAuth.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:token",
+      "label": "Token"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
-    "requires":[{"@id":"urn:ngm:class:tls","label":"TLS"}],
-    "enables":[{"@id":"urn:ngm:class:api","label":"API"}],
-    "supports":[{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-    "dependsOn":[{"@id":"urn:ngm:class:authorization","label":"Authorization"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:identity","label":"Identity"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:token","label":"Token"},
-      {"@id":"urn:ngm:class:oauth","label":"OAuth"},
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"},
-      {"@id":"urn:ngm:class:identity","label":"Identity"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:identity",
+        "label": "Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity",
+        "label": "Identity"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

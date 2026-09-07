@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Threat Actor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,20 +67,44 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"},
-      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"}
+      {
+        "@id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:resilience", "label": "Resilience"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:risk", "label": "Risk"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {
+        "@id": "urn:ngm:class:risk",
+        "label": "Risk"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:security-framework", "label": "Security Framework"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ]
   },
   "provenance": {
@@ -95,57 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:threat-actor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ad1bde4085076714db13f8095a6b9d11eeada83925f3f1e261976d3252f5d66b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Attack Vector]]",
-      "resolved": "urn:visionflow:owl:class:attack-vector",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Resilience]]",
-      "resolved": "urn:visionflow:owl:class:resilience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk]]",
-      "resolved": "urn:visionflow:owl:class:risk",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Security]]",
-      "resolved": "urn:visionflow:owl:class:security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vulnerability]]",
-      "resolved": "urn:visionflow:owl:class:vulnerability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Threat Actor is an individual, organised group, or nation-state entity that possesses the intent, capability, and opportunity to exploit vulnerabilities in digital systems. Actors are classified by motivation (financial, ideological, strategic, personal) and sophistication tier (opportunistic script-kiddies through state-sponsored APTs), with attribution performed via TTPs, infrastructure patterns, and targeting behaviour.

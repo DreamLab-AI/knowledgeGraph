@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Domain Name System
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

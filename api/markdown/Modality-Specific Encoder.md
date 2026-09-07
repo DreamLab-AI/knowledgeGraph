@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Modality-Specific Encoder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,17 +7,43 @@ public: true
   "title": "Modality-Specific Encoder",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:encoder", "vc:label": "Encoder"},
-    {"@id": "urn:visionflow:linked:cross-modal-conditioning", "vc:label": "Cross-Modal Conditioning"},
-    {"@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:visionflow:linked:vision-transformer", "vc:label": "Vision Transformer"},
-    {"@id": "urn:visionflow:linked:embedding", "vc:label": "Embedding"},
-    {"@id": "urn:visionflow:linked:contrastive-learning", "vc:label": "Contrastive Learning"},
-    {"@id": "urn:visionflow:linked:clip", "vc:label": "CLIP"}
+    {
+      "@id": "urn:visionflow:linked:encoder",
+      "vc:label": "Encoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-modal-conditioning",
+      "vc:label": "Cross-Modal Conditioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:vision-transformer",
+      "vc:label": "Vision Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding",
+      "vc:label": "Embedding"
+    },
+    {
+      "@id": "urn:visionflow:linked:contrastive-learning",
+      "vc:label": "Contrastive Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:clip",
+      "vc:label": "CLIP"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -41,20 +62,44 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:cross-modal-conditioning", "label": "Cross-Modal Conditioning"}
+      {
+        "@id": "urn:ngm:class:cross-modal-conditioning",
+        "label": "Cross-Modal Conditioning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"}
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      }
     ]
   },
   "quality": 0.8,

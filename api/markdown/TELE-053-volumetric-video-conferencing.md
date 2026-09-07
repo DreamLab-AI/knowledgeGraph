@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-053-volumetric-video-conferencing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,47 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-053-volumetric-video-conferencing:7b3e02eab177",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d53702ad723fe56479f283ae9e371d668205431a4a741f27c2f220f725ae7c1d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Volumetric Capture]]",
-      "resolved": "urn:visionflow:linked:volumetric-capture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Point Cloud]]",
-      "resolved": "urn:visionflow:linked:point-cloud",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:linked:telepresence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Video Conferencing]]",
-      "resolved": "urn:visionflow:linked:video-conferencing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Volumetric video conferencing is real-time meeting communication in which participants are captured as three-dimensional representations and rendered so others can view them from arbitrary angles.

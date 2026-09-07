@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Policy Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,37 +178,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:policy-engine:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5135182b3e66ce0827c10b46fc2612729a13772a2d5df04bdd5115e81b9e2498"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ETSI + OMA3]]",
-      "resolved": "urn:visionflow:linked:etsi-oma3",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Policy Engine is an automated software component that evaluates, enforces, and logs governance, access-control, and behavioural rules within a metaverse or spatial computing system. It interprets declarative policy specifications and applies them at runtime to user actions, asset transactions, and inter-platform communications, enabling consistent compliance across distributed virtual environments.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Safety
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -59,16 +54,34 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
     ]
   },
   "quality": 0.35,
@@ -79,37 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-safety:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bc897b37019bdebe518663390b585ce4e930498b58af264d9a6f1e6e6cceeb0b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital Safety encompasses the policies, technical controls, and design practices that protect individuals from harm in digital and spatial computing environments, including cybersecurity threats, privacy violations, online harassment, and misuse of immersive technologies.

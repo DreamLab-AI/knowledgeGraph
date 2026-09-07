@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Development SDKs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,53 +7,194 @@ public: true
   "title": "Agent Development SDKs",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks"},
-    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:tool-calling-api", "vc:label": "Tool Calling API"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
-    {"@id": "urn:visionflow:linked:a2-a-protocol", "vc:label": "A2A Protocol"},
-    {"@id": "urn:visionflow:linked:claude-agent-sdk", "vc:label": "Claude Agent SDK"},
-    {"@id": "urn:visionflow:linked:google-adk", "vc:label": "Google ADK"},
-    {"@id": "urn:visionflow:linked:pydantic-ai", "vc:label": "Pydantic AI"},
-    {"@id": "urn:visionflow:linked:swe-agent", "vc:label": "SWE-agent"},
-    {"@id": "urn:visionflow:linked:openai-agents-sdk", "vc:label": "OpenAI Agents SDK"},
-    {"@id": "urn:visionflow:linked:strands-agents", "vc:label": "Strands Agents"},
-    {"@id": "urn:visionflow:linked:mastra", "vc:label": "Mastra"},
-    {"@id": "urn:visionflow:linked:lang-graph", "vc:label": "LangGraph"},
-    {"@id": "urn:visionflow:linked:composio", "vc:label": "Composio"},
-    {"@id": "urn:visionflow:linked:autonomous-coding", "vc:label": "Autonomous Coding"},
-    {"@id": "urn:visionflow:linked:browser-automation", "vc:label": "Browser Automation"},
-    {"@id": "urn:visionflow:linked:computer-use", "vc:label": "Computer Use"},
-    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
-    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:memory-store", "vc:label": "Memory Store"},
-    {"@id": "urn:visionflow:linked:re-act-pattern", "vc:label": "ReAct Pattern"},
-    {"@id": "urn:visionflow:linked:plan-and-execute-pattern", "vc:label": "Plan-and-Execute Pattern"},
-    {"@id": "urn:visionflow:linked:tool-registry", "vc:label": "Tool Registry"},
-    {"@id": "urn:visionflow:linked:observability-stack", "vc:label": "Observability Stack"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:prompt-template", "vc:label": "Prompt Template"},
-    {"@id": "urn:visionflow:linked:structured-output", "vc:label": "Structured Output"},
-    {"@id": "urn:visionflow:linked:persistence-layer", "vc:label": "Persistence Layer"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain-of-Thought"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:agent-to-agent-protocol", "vc:label": "Agent-to-Agent Protocol"},
-    {"@id": "urn:visionflow:linked:ai-agent-payments", "vc:label": "AI Agent Payments"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:ai-research-area", "vc:label": "ComputationAndIntelligenceDomain"},
-    {"@id": "urn:visionflow:owl:class:application-layer", "vc:label": "ApplicationLayer"}
+    {
+      "@id": "urn:visionflow:linked:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks",
+      "vc:label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-evaluation-benchmarks",
+      "vc:label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-calling-api",
+      "vc:label": "Tool Calling API"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol",
+      "vc:label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:a2-a-protocol",
+      "vc:label": "A2A Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:claude-agent-sdk",
+      "vc:label": "Claude Agent SDK"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-adk",
+      "vc:label": "Google ADK"
+    },
+    {
+      "@id": "urn:visionflow:linked:pydantic-ai",
+      "vc:label": "Pydantic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:swe-agent",
+      "vc:label": "SWE-agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:openai-agents-sdk",
+      "vc:label": "OpenAI Agents SDK"
+    },
+    {
+      "@id": "urn:visionflow:linked:strands-agents",
+      "vc:label": "Strands Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:mastra",
+      "vc:label": "Mastra"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-graph",
+      "vc:label": "LangGraph"
+    },
+    {
+      "@id": "urn:visionflow:linked:composio",
+      "vc:label": "Composio"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-coding",
+      "vc:label": "Autonomous Coding"
+    },
+    {
+      "@id": "urn:visionflow:linked:browser-automation",
+      "vc:label": "Browser Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-use",
+      "vc:label": "Computer Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:memory-store",
+      "vc:label": "Memory Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:plan-and-execute-pattern",
+      "vc:label": "Plan-and-Execute Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-registry",
+      "vc:label": "Tool Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability-stack",
+      "vc:label": "Observability Stack"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-template",
+      "vc:label": "Prompt Template"
+    },
+    {
+      "@id": "urn:visionflow:linked:structured-output",
+      "vc:label": "Structured Output"
+    },
+    {
+      "@id": "urn:visionflow:linked:persistence-layer",
+      "vc:label": "Persistence Layer"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain-of-Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-to-agent-protocol",
+      "vc:label": "Agent-to-Agent Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-payments",
+      "vc:label": "AI Agent Payments"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-research-area",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -74,54 +210,108 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-      {
-            "@id": "urn:ngm:class:agent-harness",
-            "label": "Agent Harness"
-      },
-      {
-            "@id": "urn:ngm:class:agent-frameworks",
-            "label": "Agent Frameworks"
-      }
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "@id": "urn:ngm:class:agent-frameworks",
+      "label": "Agent Frameworks"
+    }
   ],
   "relations": {
-      "hasPart": [
-            {"@id": "urn:ngm:class:claude-agent-sdk", "label": "Claude Agent SDK"},
-            {"@id": "urn:ngm:class:google-adk", "label": "Google ADK"},
-            {"@id": "urn:ngm:class:strands-agents", "label": "Strands Agents"},
-            {"@id": "urn:ngm:class:openai-research-organisation-agents-sdk", "label": "OpenAI Agents SDK"},
-            {"@id": "urn:ngm:class:pydantic-ai", "label": "Pydantic AI"},
-            {"@id": "urn:ngm:class:tool-registry", "label": "Tool Registry"},
-            {"@id": "urn:ngm:class:memory-store", "label": "Memory Store"}
-      ],
-      "requires": [
-            {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-            {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-            {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-            {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
-      ],
-      "enables": [
-            {"@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding"},
-            {"@id": "urn:ngm:class:browser-automation", "label": "Browser Automation"},
-            {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-            {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"}
-      ],
-      "implements": [
-            {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"},
-            {"@id": "urn:ngm:class:a2-a-protocol", "label": "A2A Protocol"},
-            {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"}
-      ],
-      "relatedTo": [
-            {
-                  "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
-                  "label": "Multi-Agent Orchestration Frameworks"
-            },
-            {
-                  "@id": "urn:ngm:class:agent-execution-sandboxes",
-                  "label": "Agent Execution Sandboxes"
-            }
-      ]
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:claude-agent-sdk",
+        "label": "Claude Agent SDK"
+      },
+      {
+        "@id": "urn:ngm:class:google-adk",
+        "label": "Google ADK"
+      },
+      {
+        "@id": "urn:ngm:class:strands-agents",
+        "label": "Strands Agents"
+      },
+      {
+        "@id": "urn:ngm:class:openai-research-organisation-agents-sdk",
+        "label": "OpenAI Agents SDK"
+      },
+      {
+        "@id": "urn:ngm:class:pydantic-ai",
+        "label": "Pydantic AI"
+      },
+      {
+        "@id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "@id": "urn:ngm:class:memory-store",
+        "label": "Memory Store"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "@id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:a2-a-protocol",
+        "label": "A2A Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      }
+    ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "vc:termId": "AI-9918",
   "vc:schemaVersion": 2
 }
@@ -243,7 +433,7 @@ public: true
 
   ### The Problem That Agent Development SDKs Solve
 
-  The category of Agent Development SDKs emerged from a transition in the AI industry: as frontier models became reliably capable of multi-step [[Tool Use]] and long-horizon task execution, the friction point shifted from model capability to infrastructure. Early agent builders, from roughly 2022 to 2024, constructed bespoke scaffolds around raw model APIs — hand-written prompt engineering loops, custom tool dispatch code, ad-hoc state management, informal retry logic, and hard-coded context truncation strategies. This approach was simultaneously functional and brittle: each model API update could break the scaffold in subtle ways, tool schemas drifted as providers updated their function-calling specifications, there was no standardised way to compose agents across providers or share tool definitions between teams, and testing was largely manual because no reproducible evaluation framework existed. The first generation of orchestration libraries (LangChain, 2022) addressed composability but remained so provider-agnostic that they imposed a significant abstraction overhead, and their rapidly changing internal APIs frustrated engineering teams trying to maintain production deployments.
+  The category of Agent Development SDKs emerged from a transition in the AI industry: as frontier models became reliably capable of multi-step [[Tool Use]] and long-horizon task execution, the friction point shifted from model capability to infrastructure. Early agent builders, from roughly 2022 to 2024, constructed bespoke scaffolds around raw model APIs — hand-written prompt engineering loops, custom tool dispatch code, ad-hoc state management, informal retry logic, and hard-coded context truncation strategies. This approach was simultaneously functional and brittle: each model API update [private] break the scaffold in subtle ways, tool schemas drifted as providers updated their function-calling specifications, there was no standardised way to compose agents across providers or share tool definitions between teams, and testing was largely manual because no reproducible evaluation framework existed. The first generation of orchestration libraries (LangChain, 2022) addressed composability but remained so provider-agnostic that they imposed a significant abstraction overhead, and their rapidly changing internal APIs frustrated engineering teams trying to maintain production deployments.
 
   The second generation — proper first-party SDKs — represents a different design philosophy entirely: the model provider owns the loop from inference to tool execution, provides a stable API surface versioned alongside the model, and co-designs deployment infrastructure with the SDK. This means that when Anthropic adds computer-use capability to Claude, the computer-use API is exposed through the [[Claude Agent SDK]] as a first-class primitive rather than requiring SDK consumers to reverse-engineer the raw API changes. When AWS improves Amazon Bedrock's streaming performance, [[Strands Agents]] automatically benefits. When OpenAI extends the Responses API with new state management capabilities, the [[OpenAI Agents SDK]] exposes them immediately. The SDK relationship also carries an implicit support contract: enterprise customers buying Claude Agent SDK credits through Anthropic's billing relationship can expect Anthropic's support team to own the full stack from model to agent loop, rather than debugging at the seam between a third-party orchestration library and the provider API.
 
@@ -388,7 +578,7 @@ public: true
   [[Strands Agents]] multi-agent pipelines for document processing, approval routing, and cross-system data synchronisation, deployed on AWS AgentCore. A typical pipeline: a document intake agent extracts key fields from uploaded PDFs, a classification agent routes them to the appropriate processing queue, a compliance check agent verifies regulatory requirements, and an approval routing agent determines whether the request can be auto-approved or requires human review via [[Human-in-the-Loop]] gate. The structured nature of enterprise workflows makes Strands's Pipeline and GraphAgent primitives particularly well-suited.
 
   **SRE and Operations Agents**
-  Alert triage and root-cause analysis agents that integrate with monitoring systems (Datadog, PagerDuty), Kubernetes APIs, and cloud provider consoles. Built on [[Claude Agent SDK]] for its strong approval gate primitives and audit logging. These agents ingest alert context, query metrics, inspect logs, check recent deployments, and suggest (or with appropriate approval, implement) remediation actions. The irreversibility concern (a misguided remediation could exacerbate an outage) makes the approval gate layer especially critical.
+  Alert triage and root-cause analysis agents that integrate with monitoring systems (Datadog, PagerDuty), Kubernetes APIs, and cloud provider consoles. Built on [[Claude Agent SDK]] for its strong approval gate primitives and audit logging. These agents ingest alert context, query metrics, inspect logs, check recent deployments, and suggest (or with appropriate approval, implement) remediation actions. The irreversibility concern (a misguided remediation [private] exacerbate an outage) makes the approval gate layer especially critical.
 
   **[[Computer Use]] Automation**
   Agents that control a desktop GUI environment via screenshot observation and simulated mouse/keyboard actions, used for automating legacy enterprise systems without APIs. Built on the Claude computer-use API through the [[Claude Agent SDK]], or through OSWorld-inspired open-source scaffolding. Primary targets: legacy ERP systems, healthcare clinical information systems, government portals, and any enterprise software too old or too expensive to provide an API. OSWorld SOTA of 73% (mid-2026) suggests sufficient reliability for many routine automation tasks, though human supervision remains important for high-stakes actions.
@@ -402,9 +592,9 @@ public: true
 
   **The ReAct Paradigm**: The [[ReAct Pattern]] paper (Yao et al., 2023) established the alternating reason-act paradigm — model generates a thought about what to do, then acts using a tool, then observes the result, then reasons again — that all modern SDKs implement as their core loop. ReAct's empirical demonstration that interleaving reasoning traces with tool calls produced significantly better multi-step task performance than either pure reasoning or pure tool use motivated the tight integration of [[Chain-of-Thought]] thinking with tool dispatch that characterises production SDKs.
 
-  **Toolformer and the Self-Teaching Paradigm**: Toolformer (Schick et al., 2023) showed that language models could learn to call tools during fine-tuning by generating their own training examples of useful tool invocations, motivating the subsequent wave of instruction-tuning for tool use that made GPT-4, Claude 3, and Gemini 1.5 reliably capable tool users. The fundamental insight — that tool use is a learnable skill that can be trained through self-supervised objectives — underpins the capability on which all SDKs depend.
+  **Toolformer and the Self-Teaching Paradigm**: Toolformer (Schick et al., 2023) showed that language models [private] learn to call tools during fine-tuning by generating their own training examples of useful tool invocations, motivating the subsequent wave of instruction-tuning for tool use that made GPT-4, Claude 3, and Gemini 1.5 reliably capable tool users. The fundamental insight — that tool use is a learnable skill that can be trained through self-supervised objectives — underpins the capability on which all SDKs depend.
 
-  **MemGPT and Memory Architecture**: MemGPT (Packer et al., 2023) demonstrated that an agent could manage its own memory hierarchy by treating the [[Context Window]] as a CPU cache and external storage as RAM, using self-generated memory management commands to decide what to move in and out of context. This conceptual framework directly influenced the tiered memory architectures (ephemeral context, session persistence, vector-indexed long-term memory) that all mature SDKs now provide.
+  **MemGPT and Memory Architecture**: MemGPT (Packer et al., 2023) demonstrated that an agent [private] manage its own memory hierarchy by treating the [[Context Window]] as a CPU cache and external storage as RAM, using self-generated memory management commands to decide what to move in and out of context. This conceptual framework directly influenced the tiered memory architectures (ephemeral context, session persistence, vector-indexed long-term memory) that all mature SDKs now provide.
 
   **SWE-agent and the Agent-Computer Interface**: Yang et al. (2024) introduced the ACI concept that formalised the insight that the design of the tool interface matters as much as the model capability. By providing a bash shell interface with careful command history management and file viewing tools optimised for the model's context organisation, SWE-agent substantially improved performance over baselines using the same model with poorly designed interfaces. This insight influenced tool design in production SDKs, particularly for coding and system administration use cases.
 

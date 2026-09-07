@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sustainability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -161,25 +156,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sustainability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7ca6d7b692695e123c5f44c1b0cc42644d3ae2790ac4a14b177c0baaed2b1d96"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Sustainability is the normative and operational principle that systems — technological, organisational, social, and ecological — must be designed and governed so that their capacity to function is preserved across time. Originating in the Brundtland Commission's 1987 framing ("meeting the needs of the present without compromising the ability of future generations to meet their own needs"), sustainability in digital infrastructure integrates [[Environmental Sustainability]], [[Social Sustainability]], and [[Economic Sustainability]] into a coherent framework. It is applied through instruments such as [[ESG Reporting]], [[Life Cycle Assessment]], and [[Carbon Footprint Measurement]], and is operationalised at the technical level via [[Green Computing]], [[Carbon-Aware Computing]], and [[Energy Efficiency]].
 
@@ -207,7 +183,7 @@ public: true
     - **Psychological Wellbeing**: designing systems to avoid addictive patterns, dark UX, and harmful engagement metrics.
   - #### Economic Dimension
     - **Viable Business Models**: long-term revenue structures that do not depend on user exploitation, surveillance capitalism, or speculative asset inflation.
-    - **Creator Economy Resilience**: protecting independent creators from arbitrary platform policy changes that could eliminate their livelihoods overnight.
+    - **Creator Economy Resilience**: protecting independent creators from arbitrary platform policy changes that [private] eliminate their livelihoods overnight.
     - **Systemic Risk Avoidance**: avoiding over-concentration, monopolistic lock-in, and fragile financial structures in digital ecosystems.
   - #### Measurement and Reporting
     - **Life Cycle Assessment (LCA)**: systematic quantification of environmental inputs and outputs across a product's or system's full lifecycle. See [[Life Cycle Assessment]].

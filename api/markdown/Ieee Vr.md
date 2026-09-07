@@ -1,55 +1,112 @@
----
-public: true
----
-
-# Ieee Vr
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:ieee-vr", "@type":"Page", "title":"Ieee Vr", "vc:slug":"ieee-vr", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:ieee-vr",
+  "@type": "Page",
+  "title": "Ieee Vr",
+  "vc:slug": "ieee-vr",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:ieee-vr",
-  "@type":"Class",
-  "label":"Ieee Vr",
-  "definition":"IEEE VR is the IEEE Conference on Virtual Reality and 3D User Interfaces, the leading international academic venue for research in virtual, augmented and mixed reality. Sponsored by the IEEE, it publishes peer-reviewed work on immersive display, tracking, interaction techniques, perception and applications, and shapes the technical agenda of the field. It functions as both a standardising community and a dissemination channel for spatial-computing research.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:academic-conference","label":"Academic Conference"}],
-  "relations":{
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:ieee","label":"IEEE"},
-      {"@id":"urn:ngm:class:standards-body","label":"Standards Body"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ieee-vr",
+  "@type": "Class",
+  "label": "Ieee Vr",
+  "definition": "IEEE VR is the IEEE Conference on Virtual Reality and 3D User Interfaces, the leading international academic venue for research in virtual, augmented and mixed reality. Sponsored by the IEEE, it publishes peer-reviewed work on immersive display, tracking, interaction techniques, perception and applications, and shapes the technical agenda of the field. It functions as both a standardising community and a dissemination channel for spatial-computing research.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:academic-conference",
+      "label": "Academic Conference"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:virtual-reality","label":"Virtual Reality"},
-      {"@id":"urn:ngm:class:immersive-technology","label":"Immersive Technology"},
-      {"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"},
-      {"@id":"urn:ngm:class:mixed-reality","label":"Mixed Reality"},
-      {"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:immersive-technology","label":"Immersive Technology"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:head-mounted-display","label":"Head-Mounted Display"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:head-mounted-display","label":"Head-Mounted Display"},
-      {"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"},
-      {"@id":"urn:ngm:class:academic-conference","label":"Academic Conference"},
-      {"@id":"urn:ngm:class:tracking-system","label":"Tracking System"},
-      {"@id":"urn:ngm:class:perception","label":"Perception"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:academic-conference",
+        "label": "Academic Conference"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

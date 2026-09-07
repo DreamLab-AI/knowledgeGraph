@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bootstrap Node
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,24 +79,54 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:light-node", "label": "Light Node"},
-      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+      {
+        "@id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      },
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ]
   },
   "provenance": {
@@ -111,67 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bootstrap-node:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dea1753d4e1c2addec620bedbb7729d693b3af75d55b6670ea208cc8c9ba6742"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Energy Optimisation]]",
-      "resolved": "urn:visionflow:linked:ai-energy-optimisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NetworkComponent]]",
-      "resolved": "urn:visionflow:owl:class:network-component",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Bootstrap Node is a well-known, stable network entry point that newly joining peers contact to obtain their initial list of active participants in a peer-to-peer blockchain network. By providing a curated, long-lived set of peer addresses, bootstrap nodes solve the cold-start problem: without them a new client would have no means of discovering the network.

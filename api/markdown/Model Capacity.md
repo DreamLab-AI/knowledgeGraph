@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Capacity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,17 +55,38 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:underfitting", "label": "Underfitting"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "provenance": {
@@ -80,37 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-capacity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:94881e4a663d8d7a5fd8a1dc5b004c2ecbd0706ca566d60d89f86eadb8623ae7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The measure of a machine learning model's ability to represent a wide variety of functions, determined by parameter count, architecture depth and width, and representational power. Models with insufficient capacity underfit the data; those with excessive capacity risk overfitting. Capacity is formally bounded by concepts such as the Vapnik–Chervonenkis dimension, and is managed in practice through regularisation, pruning, and architecture search.

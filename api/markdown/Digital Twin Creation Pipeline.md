@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Twin Creation Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -129,72 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-twin-creation-pipeline:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4e5fe12b12a856a6e78ec4b034d412d1068789b0fb67c58ed53ad141520b0696"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Content Pipeline]]",
-      "resolved": "urn:visionflow:linked:3-d-content-pipeline",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Scanning]]",
-      "resolved": "urn:visionflow:linked:3-d-scanning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asset Digitization]]",
-      "resolved": "urn:visionflow:linked:asset-digitization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Point Cloud Processing]]",
-      "resolved": "urn:visionflow:linked:point-cloud-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Monitoring]]",
-      "resolved": "urn:visionflow:linked:real-time-monitoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Replica Creation]]",
-      "resolved": "urn:visionflow:linked:virtual-replica-creation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Photogrammetry]]",
-      "resolved": "urn:visionflow:owl:class:photogrammetry",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems.

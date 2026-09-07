@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Convolution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,33 +7,114 @@ public: true
   "title": "Convolution",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:signal-processing", "vc:label": "Signal Processing"},
-    {"@id": "urn:visionflow:owl:class:image-processing", "vc:label": "Image Processing"},
-    {"@id": "urn:visionflow:owl:class:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:owl:class:feature-extraction", "vc:label": "Feature Extraction"},
-    {"@id": "urn:visionflow:owl:class:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:owl:class:fourier-analysis", "vc:label": "Fourier Analysis"},
-    {"@id": "urn:visionflow:owl:class:fast-fourier-transform", "vc:label": "Fast Fourier Transform"},
-    {"@id": "urn:visionflow:owl:class:linear-algebra", "vc:label": "Linear Algebra"},
-    {"@id": "urn:visionflow:owl:class:matrix-multiplication", "vc:label": "Matrix Multiplication"},
-    {"@id": "urn:visionflow:owl:class:gpu-acceleration", "vc:label": "GPU Acceleration"},
-    {"@id": "urn:visionflow:owl:class:object-detection", "vc:label": "Object Detection"},
-    {"@id": "urn:visionflow:owl:class:image-segmentation", "vc:label": "Image Segmentation"},
-    {"@id": "urn:visionflow:owl:class:self-attention", "vc:label": "Self Attention"},
-    {"@id": "urn:visionflow:owl:class:recurrent-neural-network", "vc:label": "Recurrent Neural Network"},
-    {"@id": "urn:visionflow:owl:class:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:owl:class:batch-normalisation", "vc:label": "Batch Normalisation"},
-    {"@id": "urn:visionflow:owl:class:audio-processing", "vc:label": "Audio Processing"},
-    {"@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:owl:class:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:owl:class:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:owl:class:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:owl:class:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:owl:class:pooling-layer", "vc:label": "Pooling Layer"},
-    {"@id": "urn:visionflow:owl:class:activation-function", "vc:label": "Activation Function"},
-    {"@id": "urn:visionflow:owl:class:stochastic-gradient-descent", "vc:label": "Stochastic Gradient Descent"},
-    {"@id": "urn:visionflow:owl:class:computer-vision", "vc:label": "Computer Vision"}
+    {
+      "@id": "urn:visionflow:owl:class:signal-processing",
+      "vc:label": "Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-processing",
+      "vc:label": "Image Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fourier-analysis",
+      "vc:label": "Fourier Analysis"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fast-fourier-transform",
+      "vc:label": "Fast Fourier Transform"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:linear-algebra",
+      "vc:label": "Linear Algebra"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:matrix-multiplication",
+      "vc:label": "Matrix Multiplication"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpu-acceleration",
+      "vc:label": "GPU Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:object-detection",
+      "vc:label": "Object Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-segmentation",
+      "vc:label": "Image Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-attention",
+      "vc:label": "Self Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:batch-normalisation",
+      "vc:label": "Batch Normalisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:audio-processing",
+      "vc:label": "Audio Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:pooling-layer",
+      "vc:label": "Pooling Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:activation-function",
+      "vc:label": "Activation Function"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+      "vc:label": "Stochastic Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -59,47 +135,119 @@ public: true
   },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
-      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:fast-fourier-transform", "label": "Fast Fourier Transform"},
-      {"@id": "urn:ngm:class:matrix-multiplication", "label": "Matrix Multiplication"}
+      {
+        "@id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:fourier-analysis", "label": "Fourier Analysis"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"},
-      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:radar-signal-processing", "label": "Radar Signal Processing"}
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:radar-signal-processing",
+        "label": "Radar Signal Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:discrete-convolution", "label": "Discrete Convolution"},
-    {"@id": "urn:ngm:class:cross-correlation", "label": "Cross-Correlation"}
+    {
+      "@id": "urn:ngm:class:discrete-convolution",
+      "label": "Discrete Convolution"
+    },
+    {
+      "@id": "urn:ngm:class:cross-correlation",
+      "label": "Cross-Correlation"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
@@ -231,7 +379,7 @@ public: true
 
   The transition of convolution from signal processing into machine learning began with Kunihiko Fukushima's Neocognitron (1980), a hierarchical neural network explicitly modelled on the visual cortex's organisation of simple cells (detecting oriented edges) and complex cells (providing local translation invariance), both of which implement forms of convolution over their input fields. Fukushima's architecture introduced the key ideas of local receptive fields, weight sharing (the same kernel applied at all positions), and subsampling between layers — the three pillars of modern CNNs.
 
-  Yann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner formalised gradient-based training of convolutional networks with [[Backpropagation]] in 1989 (LeCun et al., "Backpropagation applied to handwritten zip code recognition," Neural Computation), demonstrating that convolution kernels could be learned from data rather than hand-crafted. The LeNet-5 architecture (1998) applied this to cheque digit recognition at scale for US banks, processing millions of items per day and demonstrating industrial viability. However, the computational demands of larger convolutional networks on 1990s hardware limited widespread adoption; SVMs and other kernel methods dominated the field through the 2000s.
+  Yann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner formalised gradient-based training of convolutional networks with [[Backpropagation]] in 1989 (LeCun et al., "Backpropagation applied to handwritten zip code recognition," Neural Computation), demonstrating that convolution kernels [private] be learned from data rather than hand-crafted. The LeNet-5 architecture (1998) applied this to cheque digit recognition at scale for US banks, processing millions of items per day and demonstrating industrial viability. However, the computational demands of larger convolutional networks on 1990s hardware limited widespread adoption; SVMs and other kernel methods dominated the field through the 2000s.
 
   The paradigm shifted irrevocably with AlexNet at ILSVRC 2012. Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton's deep convolutional network achieved 15.3% top-5 error on ImageNet (vs 26.2% for the best non-CNN entrant), a gap so large it convinced the computer vision community to abandon hand-crafted features. Two key enabling factors distinguished AlexNet from prior work: the use of rectified linear units (ReLU) instead of sigmoid activations (accelerating training by eliminating the vanishing gradient problem in shallow activations), and the use of NVIDIA GPUs (GTX 580, 3GB) to parallelise the convolution operations, achieving practical training times of ~6 days instead of months. The AlexNet paper has been cited over 100,000 times and is arguably the most impactful paper in the history of AI.
 

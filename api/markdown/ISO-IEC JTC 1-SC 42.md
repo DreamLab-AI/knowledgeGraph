@@ -1,12 +1,3 @@
----
-public: true
-aliases:
-  - ISO IEC JTC 1 SC 42
-  - ISO/IEC JTC 1/SC 42
-  - ISO/IEC JTC1 SC42
----
-
-# ISO/IEC JTC 1/SC 42
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -29,22 +20,54 @@ aliases:
   "definition": "ISO/IEC JTC 1/SC 42 (Artificial Intelligence) is the international standardisation subcommittee within the ISO/IEC Joint Technical Committee 1 responsible for developing and maintaining global standards for artificial intelligence. Established in 2017, it coordinates with national bodies across more than 40 participating countries to produce standards covering AI terminology, foundational concepts, trustworthiness, bias, risk management, data lifecycle, governance frameworks, and AI system evaluation. Its publications inform regulatory frameworks worldwide, including the EU AI Act, and provide the shared vocabulary necessary for interoperability of AI governance instruments across jurisdictions.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-regulation",
+      "label": "AI Regulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
-      {"@id": "urn:ngm:class:ai-accountability", "label": "AI Accountability"}
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      }
     ]
   },
   "quality": 0.8

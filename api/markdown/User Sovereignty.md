@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Sovereignty
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:user-sovereignty:d80058f2890d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:64dcaeb85be3d2fd0752ffdc272b44bcf6dcaff4904a333002d2c09115c8aa14"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web3]]",
-      "resolved": "urn:visionflow:linked:web-3",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Rights]]",
-      "resolved": "urn:visionflow:linked:digital-rights",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Self-sovereign_identity]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-self-sovereign-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.w3.org/TR/did-core/]]",
-      "resolved": "urn:visionflow:linked:https-www-w-3-org-tr-did-core",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - User sovereignty is the principle that individuals should control their own data, identity, and assets rather than depending on intermediaries. It is associated with decentralised systems and privacy advocacy.

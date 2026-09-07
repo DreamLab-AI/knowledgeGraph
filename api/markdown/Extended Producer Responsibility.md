@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Extended Producer Responsibility
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Extended Producer Responsibility (EPR) is an environmental policy principle that makes manufacturers financially and operationally responsible for the entire lifecycle of their products, especially the take-back, recycling, and final disposal stages. By internalising end-of-life costs, EPR incentivises producers to design for durability, repairability, and recyclability. It is implemented through schemes such as packaging levies, electronic-waste recovery obligations, and deposit-return systems.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
-      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
     ]
   },
   "quality": 0.72

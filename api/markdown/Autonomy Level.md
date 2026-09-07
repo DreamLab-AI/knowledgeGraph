@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Autonomy Level
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,22 +95,46 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:agent", "label": "Agent"}
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
-      {"@id": "urn:ngm:class:safety", "label": "Safety"}
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
-      {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"}
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:bdi-model",
+        "label": "BDI Model"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:goal", "label": "Goal"},
-      {"@id": "urn:ngm:class:objective", "label": "Objective"}
+      {
+        "@id": "urn:ngm:class:goal",
+        "label": "Goal"
+      },
+      {
+        "@id": "urn:ngm:class:objective",
+        "label": "Objective"
+      }
     ]
   },
   "quality": 0.5,
@@ -126,92 +145,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:autonomy-level:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bd61407ad8657bd1118ac265be609bcc72c44ab782aa8da5840020b0c568f46a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Agent Property]]",
-      "resolved": "urn:visionflow:linked:agent-property",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Alignment]]",
-      "resolved": "urn:visionflow:linked:alignment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 21448]]",
-      "resolved": "urn:visionflow:linked:iso-21448",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Trust]]",
-      "resolved": "urn:visionflow:linked:trust",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agent]]",
-      "resolved": "urn:visionflow:owl:class:agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BDI Model]]",
-      "resolved": "urn:visionflow:owl:class:bdi-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Goal]]",
-      "resolved": "urn:visionflow:owl:class:goal",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human in the Loop]]",
-      "resolved": "urn:visionflow:owl:class:human-in-the-loop",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Objective]]",
-      "resolved": "urn:visionflow:owl:class:objective",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Safety]]",
-      "resolved": "urn:visionflow:owl:class:safety",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A graded classification (typically 0–5) quantifying the degree to which an agent perceives, decides, and acts without human intervention, ranging from fully manual operation through conditional autonomy to full self-governance, with domain-specific scales for AI agents, robotics, blockchain DAOs, and multi-agent systems.

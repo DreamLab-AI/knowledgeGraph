@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Revolut
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:revolut:a5c1835f2f1f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e8a47e5cb7d553bae5df0a9ae1368c70e34c1557150a2d4840756a074426c06d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Payment System]]",
-      "resolved": "urn:visionflow:linked:payment-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Services]]",
-      "resolved": "urn:visionflow:linked:financial-services",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Revolut is a British financial technology company offering banking, payments, currency exchange and investment services through a mobile app. It holds banking licences in several jurisdictions.

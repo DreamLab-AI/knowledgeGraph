@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Plan and Execute Pattern
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The plan-and-execute pattern is an agent-architecture design in which a dedicated planner component produces a structured task plan that an executor component then realises step by step using tools. Formalising the strategy as a reusable pattern lets agent frameworks separate high-level reasoning from low-level tool invocation, enabling re-planning and observability. It is widely implemented through function-calling pipelines in LLM agent frameworks.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"}, {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ]
   },
   "quality": 0.72
 }

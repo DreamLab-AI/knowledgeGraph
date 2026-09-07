@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Synchronization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,19 +82,46 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
-      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
-      {"@id": "urn:ngm:class:distributed-data-structure", "label": "Distributed Data Structure"},
-      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
-      {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"}
+      {
+        "@id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-data-structure",
+        "label": "Distributed Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      }
     ]
   },
   "quality": 0.8,
@@ -110,62 +132,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:network-synchronization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:54553d4f6329c70d5fa66d6ea3499bc65897447074336872524aee7a3b9988e5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-protocol-and-consensus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusProtocol]]",
-      "resolved": "urn:visionflow:owl:class:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ProtocolLayer]]",
-      "resolved": "urn:visionflow:owl:class:protocol-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Node state alignment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

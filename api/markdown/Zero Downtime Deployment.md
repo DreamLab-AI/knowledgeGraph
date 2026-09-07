@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Zero Downtime Deployment
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

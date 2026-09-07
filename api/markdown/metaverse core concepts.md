@@ -1,8 +1,3 @@
----
-public: true
----
-
-# metaverse core concepts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -128,7 +123,7 @@ public: true
   "@id": "urn:ngm:class:metaverse-core-concepts",
   "@type": "Class",
   "label": "metaverse core concepts",
-  "definition": "Metaverse core concepts is an index class grouping the foundational building blocks of persistent shared virtual spaces: immersive rendering technologies (Augmented Reality, Spatial Computing, Haptic Feedback), virtual environments (Virtual World, Social VR, Digital Twin), digital identity and economic primitives (Digital Avatar, Virtual Asset, Virtual Economy), and cross-platform integration enablers (Interoperability). Together these concepts define the design space for metaverse platforms and standards such as those developed by the Metaverse Standards Forum.",
+  "definition": "Metaverse core concepts is an [private] class grouping the foundational building blocks of persistent shared virtual spaces: immersive rendering technologies (Augmented Reality, Spatial Computing, Haptic Feedback), virtual environments (Virtual World, Social VR, Digital Twin), digital identity and economic primitives (Digital Avatar, Virtual Asset, Virtual Economy), and cross-platform integration enablers (Interoperability). Together these concepts define the design space for metaverse platforms and standards such as those developed by the Metaverse Standards Forum.",
   "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [
@@ -140,20 +135,50 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
-      {"@id": "urn:ngm:class:digital-avatar", "label": "Digital Avatar"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:digital-avatar",
+        "label": "Digital Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:virtual-asset", "label": "Virtual Asset"}
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      }
     ]
   },
   "provenance": {
@@ -163,137 +188,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-core-concepts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:27b445551bc08aa0a17e186546eaade2b392316f12da0f6131ea8e439dcc8bb0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentraland]]",
-      "resolved": "urn:visionflow:linked:decentraland",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[The Sandbox]]",
-      "resolved": "urn:visionflow:linked:the-sandbox",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:owl:class:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AugmentedReality]]",
-      "resolved": "urn:visionflow:owl:class:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Avatar]]",
-      "resolved": "urn:visionflow:owl:class:digital-avatar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalAvatar]]",
-      "resolved": "urn:visionflow:owl:class:digital-avatar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalTwin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Haptic Feedback]]",
-      "resolved": "urn:visionflow:owl:class:haptic-feedback",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[HapticFeedback]]",
-      "resolved": "urn:visionflow:owl:class:haptic-feedback",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social VR]]",
-      "resolved": "urn:visionflow:owl:class:social-vr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SocialVR]]",
-      "resolved": "urn:visionflow:owl:class:social-vr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SpatialComputing]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Asset]]",
-      "resolved": "urn:visionflow:owl:class:virtual-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualAsset]]",
-      "resolved": "urn:visionflow:owl:class:virtual-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualEconomy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual World]]",
-      "resolved": "urn:visionflow:owl:class:virtual-world",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualWorld]]",
-      "resolved": "urn:visionflow:owl:class:virtual-world",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing Paradigm]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ([[Digital Avatar]], [[Virtual Asset]], [[Virtual Economy]]), and cross-domain integration with AI (intelligent NPCs, content generation), blockchain (NFT ownership, decentralised governance), and robotics (physical-virtual interfaces), with standards development through the Metaverse Standards Forum and implementation by major technology firms (NVIDIA Omniverse, and historically Meta Horizon Worlds and Microsoft Mesh, both of which were wound down or pivoted in 2025–2026) and blockchain platforms ([[Decentraland]], [[The Sandbox]]) addressing interoperability, scalability, and user-centric design challenges.

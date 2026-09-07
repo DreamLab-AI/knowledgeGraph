@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Catastrophic Risk Reduction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,33 +17,83 @@ public: true
   "@id": "urn:ngm:class:catastrophic-risk-reduction",
   "@type": "Class",
   "label": "Catastrophic Risk Reduction",
-  "definition": "Catastrophic risk reduction is the set of interventions, controls, and governance measures aimed at lowering the probability or severity of large-scale harms, particularly those posed by advanced AI systems. It spans technical safeguards such as alignment and capability control, organisational measures such as staged deployment and incident response, and policy measures such as compute governance. It is a core goal of AI safety and alignment work because it targets the tail risks that could threaten societal stability or human survival.",
+  "definition": "Catastrophic risk reduction is the set of interventions, controls, and governance measures aimed at lowering the probability or severity of large-scale harms, particularly those posed by advanced AI systems. It spans technical safeguards such as alignment and capability control, organisational measures such as staged deployment and incident response, and policy measures such as compute governance. It is a core goal of AI safety and alignment work because it targets the tail risks that [private] threaten societal stability or human survival.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"},
-      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and Alignment"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:global-catastrophic-risk", "label": "Global Catastrophic Risk"},
-      {"@id": "urn:ngm:class:compute-governance", "label": "Compute Governance"}
+      {
+        "@id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:global-catastrophic-risk",
+        "label": "Global Catastrophic Risk"
+      },
+      {
+        "@id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:capability-evaluation", "label": "Capability Evaluation"},
-      {"@id": "urn:ngm:class:responsible-scaling-policy", "label": "Responsible Scaling Policy"},
-      {"@id": "urn:ngm:class:corrigibility", "label": "Corrigibility"},
-      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"}
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ]
   },
   "quality": 0.72
@@ -56,7 +101,7 @@ public: true
 ```
 
 - ### Definition
-  - Catastrophic Risk Reduction (CRR) is the interdisciplinary field of research, engineering practice, and policy design dedicated to lowering the probability or severity of large-scale, potentially irreversible harms that advanced AI systems could precipitate or amplify. Drawing from [[AI Safety]], [[Existential Risk]] scholarship, [[AI Governance]], and biosecurity, CRR identifies and operationalises the layered defences that must be in place as AI capability crosses successive thresholds. The field distinguishes between catastrophic outcomes — mass-casualty events, large-scale societal disruption, civilisational destabilisation — and merely severe but recoverable harms, concentrating resources on the former because the irreversibility of catastrophic outcomes vastly increases their expected disutility when integrated across all future generations. Technically, CRR encompasses capability evaluation and elicitation benchmarks that detect dangerous uplift (e.g. CBRN weaponisation assistance), [[Red Teaming]] protocols that stress-test model behaviour under adversarial prompting, alignment techniques including [[Reinforcement Learning from Human Feedback]] and [[Constitutional AI]] that shape model objectives away from dangerous actions, [[Corrigibility]] mechanisms that preserve [[Human Oversight]] even in highly capable systems, and tripwire systems that halt deployment if capability thresholds are breached. Organisationally, CRR manifests as [[Responsible Scaling Policy]] frameworks adopted by frontier labs, internal safety boards, third-party model evaluations, staged deployment with rollback capabilities, and incident response plans covering cybersecurity, model theft, and misuse. At the policy layer, CRR includes [[Compute Governance]] (compute threshold restrictions, export controls on AI chips), international coordination frameworks inspired by nuclear non-proliferation regimes, mandatory incident reporting, whistleblower protections, and independent safety auditing. The field is maturing rapidly: California's SB 53 (signed September 2025, effective January 2026) introduced the first binding legal obligations for frontier developers around catastrophic risk management, while Anthropic's Responsible Scaling Policy (versions 2.1 and 3.0) and OpenAI's Preparedness Framework (version 2, April 2025) operationalise catastrophic risk thresholds at ASL-3/4 and High/Critical capability levels respectively. UK [[AI Safety Institute]] (AISI) evaluations of GPT-5, Gemini 2, Claude 4, and Llama 4 during 2025 focused centrally on CBRN uplift and cyber-offence capabilities as the most immediate catastrophic risk pathways.
+  - Catastrophic Risk Reduction (CRR) is the interdisciplinary field of research, engineering practice, and policy design dedicated to lowering the probability or severity of large-scale, potentially irreversible harms that advanced AI systems [private] precipitate or amplify. Drawing from [[AI Safety]], [[Existential Risk]] scholarship, [[AI Governance]], and biosecurity, CRR identifies and operationalises the layered defences that must be in place as AI capability crosses successive thresholds. The field distinguishes between catastrophic outcomes — mass-casualty events, large-scale societal disruption, civilisational destabilisation — and merely severe but recoverable harms, concentrating resources on the former because the irreversibility of catastrophic outcomes vastly increases their expected disutility when integrated across all future generations. Technically, CRR encompasses capability evaluation and elicitation benchmarks that detect dangerous uplift (e.g. CBRN weaponisation assistance), [[Red Teaming]] protocols that stress-test model behaviour under adversarial prompting, alignment techniques including [[Reinforcement Learning from Human Feedback]] and [[Constitutional AI]] that shape model objectives away from dangerous actions, [[Corrigibility]] mechanisms that preserve [[Human Oversight]] even in highly capable systems, and tripwire systems that halt deployment if capability thresholds are breached. Organisationally, CRR manifests as [[Responsible Scaling Policy]] frameworks adopted by frontier labs, internal safety boards, third-party model evaluations, staged deployment with rollback capabilities, and incident response plans covering cybersecurity, model theft, and misuse. At the policy layer, CRR includes [[Compute Governance]] (compute threshold restrictions, export controls on AI chips), international coordination frameworks inspired by nuclear non-proliferation regimes, mandatory incident reporting, whistleblower protections, and independent safety auditing. The field is maturing rapidly: California's SB 53 (signed September 2025, effective January 2026) introduced the first binding legal obligations for frontier developers around catastrophic risk management, while Anthropic's Responsible Scaling Policy (versions 2.1 and 3.0) and OpenAI's Preparedness Framework (version 2, April 2025) operationalise catastrophic risk thresholds at ASL-3/4 and High/Critical capability levels respectively. UK [[AI Safety Institute]] (AISI) evaluations of GPT-5, Gemini 2, Claude 4, and Llama 4 during 2025 focused centrally on CBRN uplift and cyber-offence capabilities as the most immediate catastrophic risk pathways.
 
 - ### Semantic Classification
   - owl-class:: ai:CatastrophicRiskReduction
@@ -175,7 +220,7 @@ public: true
 
     The intellectual genealogy of CRR intersects several disciplinary traditions. Nuclear risk reduction (from the Cold War deterrence theory of Schelling, Kahn, and Herman) provided the first rigorous frameworks for reasoning about tail risks with civilisational consequences, developing concepts like mutual assured destruction, arms control verification, and crisis stability that have direct analogues in AI risk. Schelling's work on focal points, commitment devices, and credible threats is particularly relevant to AI governance: international CRR agreements must create credible deterrence against defection (deploying a system before safety requirements are met) while allowing cooperative verification of compliance. The IAEA's inspection and safeguards regime for nuclear materials provides a concrete institutional model for AI compute monitoring and frontier model evaluation. Biosecurity, developed following the 1972 Biological Weapons Convention, created the institutional precedent for international monitoring and restriction of dual-use biological research — a model that CRR scholars invoke for AI governance. Financial systemic risk theory, developed after the 2008 financial crisis, provided tools for reasoning about correlated failures and cascading collapses in complex interconnected systems, directly applicable to scenarios involving multiple AI systems interacting with critical infrastructure. Effective altruism's prioritisation framework — focusing on interventions that are large in scale, neglected relative to their importance, and tractable — shaped the research agenda of early CRR institutions including the Machine Intelligence Research Institute, the Centre for Human-Compatible AI, and the Centre for the Study of Existential Risk.
 
-    The field underwent a significant transition around 2022–2023 that moved CRR from primarily theoretical to operational. The release of GPT-4 (March 2023) and subsequent frontier models demonstrated non-trivial capability on biosecurity-relevant tasks (protein engineering, chemistry synthesis planning), sophisticated social reasoning applicable to influence operations, and emerging agentic capability in tool-use settings. Simultaneously, the mechanistic interpretability programme began revealing that frontier model internals were structured in ways that were more interpretable than expected — giving both greater hope that model safety could be assessed and greater concern that models were developing more sophisticated internal representations than their surface behaviour suggested. This combination of advancing capability and partially advancing interpretability tools created the practical urgency that drove institutional formation: the Bletchley Summit (November 2023), the formation of AISI, Anthropic's first RSP, and METR's agentic capability evaluations all occurred within eighteen months of GPT-4's release. The CRR field's current institutional infrastructure is thus very recent and still maturing relative to the pace of frontier AI capability advancement it aims to govern.
+    The field underwent a significant transition around 2022–2023 that moved CRR from primarily theoretical to operational. The release of GPT-4 (March 2023) and subsequent frontier models demonstrated non-trivial capability on biosecurity-relevant tasks (protein engineering, chemistry synthesis planning), sophisticated social reasoning applicable to influence operations, and emerging agentic capability in tool-use settings. Simultaneously, the mechanistic interpretability programme began revealing that frontier model internals were structured in ways that were more interpretable than expected — giving both greater hope that model safety [private] be assessed and greater concern that models were developing more sophisticated internal representations than their surface behaviour suggested. This combination of advancing capability and partially advancing interpretability tools created the practical urgency that drove institutional formation: the Bletchley Summit (November 2023), the formation of AISI, Anthropic's first RSP, and METR's agentic capability evaluations all occurred within eighteen months of GPT-4's release. The CRR field's current institutional infrastructure is thus very recent and still maturing relative to the pace of frontier AI capability advancement it aims to govern.
 
     The field underwent a significant transition around 2022–2023. Prior to this period, CRR was primarily a theoretical and philosophical enterprise, with most practitioners uncertain whether catastrophic AI risks would materialise within decades or centuries. The emergence of GPT-4, Claude 2, and Gemini Ultra — systems demonstrating non-trivial capability on biosecurity-relevant tasks, sophisticated social reasoning, and agentic tool use — made clear that the timeline might be measured in years rather than decades. This triggered the rapid institutionalisation of CRR: frontier labs creating dedicated safety teams with substantial headcount and budget; governments establishing safety evaluation bodies; and regulatory frameworks moving from discussion to legislation within eighteen months. The transition from theoretical concern to operational engineering problem is the defining characteristic of CRR's current phase.
 
@@ -251,7 +296,7 @@ public: true
     The dominant near-term catastrophic risk pathway is AI-assisted synthesis of biological or chemical weapons by actors who previously lacked the requisite expertise. Frontier labs conduct CBRN uplift evaluations — the Bug Bounty Benchmark and related frameworks — to measure whether models provide meaningful assistance above the baseline of internet search or textbooks. Under Anthropic's RSP, ASL-3 safeguards (activated for relevant models in May 2025) include enhanced biosecurity restrictions on training data curation and inference-time filtering. UK AISI evaluations of GPT-5, Gemini 2, and Claude 4 throughout 2025 focused centrally on CBRN risk, with results informing both the AISI Frontier AI Safety Framework and DSIT policy development.
 
     **Autonomous Cyberweapon Development:**
-    Highly capable AI agents with code execution and network access could in principle develop novel cyberweapons autonomously, potentially undermining critical infrastructure at scale. CRR responses include agent sandboxing, tool-use restrictions at safety level thresholds, cyber-offence capability evaluations, and monitoring of real-time agent behaviour during deployment.
+    Highly capable AI agents with code execution and network access [private] in principle develop novel cyberweapons autonomously, potentially undermining critical infrastructure at scale. CRR responses include agent sandboxing, tool-use restrictions at safety level thresholds, cyber-offence capability evaluations, and monitoring of real-time agent behaviour during deployment.
 
     **Responsible Scaling Policy Implementation:**
     Anthropic's RSP (v2.1, effective March 2025; v3.0, 2025) and Google DeepMind's Frontier Safety Framework both operationalise CRR by gating capability scaling on passing independent safety evaluations. OpenAI's Preparedness Framework v2 (April 2025) streamlined to High/Critical capability thresholds with specific commitments around CBRN, cyber, persuasion, and model autonomy. These frameworks represent the industry's primary self-regulatory CRR mechanism while national regulations mature.
@@ -260,7 +305,7 @@ public: true
     California's SB 53 (effective January 2026) requires frontier developers (models trained with >10^26 operations) to publish and annually update safety frameworks documenting catastrophic risk management. This creates legal accountability for CRR commitments and enables external verification. Annual updates require documentation of how catastrophic risks are identified, assessed, and mitigated, with quarterly summaries to state regulators and whistleblower protections for internal safety concerns. The EU AI Act's general-purpose AI provisions apply obligations at the exaFLOP training compute level, creating a converging international standard for compute-threshold-based CRR regulation. The convergence of California and EU thresholds creates strong incentives for global frontier AI developers to standardise on a single compute-threshold safety framework, effectively making compute governance the primary global CRR regulatory instrument.
 
     **International Coordination:**
-    The 2023 Bletchley Declaration (signed by 28 countries including the US, UK, EU, and China) established the first multilateral commitment to frontier AI safety collaboration, including commitment to share information about dangerous capability discoveries between signatory states. Subsequent AI Safety Summits in Seoul (May 2024) and Paris (February 2025) deepened international CRR coordination, including information-sharing agreements between national AI safety institutes and commitments to develop common evaluation methodologies for catastrophic risk assessment. Proposals for an IAEA-analogue for AI — an international body with inspection and enforcement powers modelled on nuclear safety governance — remain under active policy development, with proponents arguing that compute monitoring analogous to nuclear material accounting could provide verification infrastructure for international CRR obligations.
+    The 2023 Bletchley Declaration (signed by 28 countries including the US, UK, EU, and China) established the first multilateral commitment to frontier AI safety collaboration, including commitment to share information about dangerous capability discoveries between signatory states. Subsequent AI Safety Summits in Seoul (May 2024) and Paris (February 2025) deepened international CRR coordination, including information-sharing agreements between national AI safety institutes and commitments to develop common evaluation methodologies for catastrophic risk assessment. Proposals for an IAEA-analogue for AI — an international body with inspection and enforcement powers modelled on nuclear safety governance — remain under active policy development, with proponents arguing that compute monitoring analogous to nuclear material accounting [private] provide verification infrastructure for international CRR obligations.
 
   - ## Academic Context
 
@@ -342,7 +387,7 @@ public: true
     - **Government and Regulatory Bodies:**
       - AISI (AI Security Institute, formerly AI Safety Institute): established November 2023, world's first government body dedicated to frontier AI evaluation.
       - Conducted evaluations of GPT-5, Gemini 2, Claude 4, and Llama 4 during 2025, focusing on CBRN uplift and cyber-offence.
-      - AISI Alignment Project: control evaluation protocols testing whether models could cause catastrophic harm even under active scheming scenarios.
+      - AISI Alignment Project: control evaluation protocols testing whether models [private] cause catastrophic harm even under active scheming scenarios.
       - DSIT (Department for Science, Innovation and Technology): policy coordination for CRR; AI Opportunities Action Plan (2025) includes CRR as national strategic priority.
       - AISI international offices in Washington DC and San Francisco maintain proximity to frontier AI developers.
       - UK Parliamentary Select Committee on AI published CRR briefings (2025) drawing on AISI technical expertise.
@@ -420,21 +465,21 @@ public: true
       - UK Biosecurity Centre coordinates with AISI on CBRN uplift evaluation standards.
 
     - **Cybersecurity Intersection:**
-      - AI-enabled cyberweapon development could enable attacks on critical infrastructure at an unprecedented scale and speed.
+      - AI-enabled cyberweapon development [private] enable attacks on critical infrastructure at an unprecedented scale and speed.
       - Offensive cyber capabilities have historically been limited by expertise requirements; AI dramatically lowers this barrier.
       - Most severe scenario: AI autonomously developing and deploying novel exploits against critical infrastructure (power grids, water treatment, financial clearing systems).
       - UK National Cyber Security Centre (NCSC) coordinates with AISI on cyber-offence capability assessment standards.
       - CRR cyber measures: agentic system sandboxing, tool-use restrictions at capability thresholds, real-time action monitoring.
 
     - **Nuclear Risk Intersection:**
-      - AI could be used for nuclear simulation, weapons design optimisation, or enhanced delivery system targeting.
-      - More immediately: AI could assist in nuclear material acquisition or provide strategic advantage in nuclear signalling and brinkmanship.
+      - AI [private] be used for nuclear simulation, weapons design optimisation, or enhanced delivery system targeting.
+      - More immediately: AI [private] assist in nuclear material acquisition or provide strategic advantage in nuclear signalling and brinkmanship.
       - CRR frameworks reference nuclear non-proliferation regimes (NPT, IAEA) as institutional models for AI governance.
       - The proposal for an AI equivalent of the IAEA draws directly on nuclear safety governance architecture.
 
     - **Pandemic Risk Intersection:**
       - AI-enabled engineering of pandemic pathogens represents the convergence of biosecurity and pandemic risk categories.
-      - The COVID-19 pandemic demonstrated the systemic vulnerability of global society to novel pathogens — AI could amplify this by enabling deliberate creation of such threats.
+      - The COVID-19 pandemic demonstrated the systemic vulnerability of global society to novel pathogens — AI [private] amplify this by enabling deliberate creation of such threats.
       - Current CRR bio-risk evaluation focuses specifically on the AI uplift component of this pathway.
       - International Health Regulations (IHR) coordination with AI safety institutes on engineered pandemic risk assessment is an emerging policy priority.
 
@@ -444,7 +489,7 @@ public: true
 
     **Automated Evaluation at Scale:** Current CBRN uplift and cyber-offence evaluations rely heavily on human expert testers, creating bottlenecks as model capabilities advance faster than evaluation capacity. Automated red-teaming systems — AI systems that probe other AI systems for dangerous capabilities — will become the primary scalability mechanism, though they introduce new risks around evaluation gaming and capability concealment. Multi-agent red-teaming frameworks, where adversarial AI systems probe frontier models systematically, are under active development at AISI, Anthropic, and Google DeepMind.
 
-    **Interpretability-Based Safety Guarantees:** The mechanistic interpretability programme aims to produce formal guarantees about model behaviour based on circuit-level analysis rather than behavioural testing alone. Sparse autoencoders trained on residual stream activations are exposing functionally distinct "features" corresponding to semantic concepts, including safety-relevant ones. If this programme succeeds at scale, CRR could shift from empirical testing (which can never cover all inputs) to verified structural constraints on what computations a model can perform — a qualitative improvement in safety guarantees.
+    **Interpretability-Based Safety Guarantees:** The mechanistic interpretability programme aims to produce formal guarantees about model behaviour based on circuit-level analysis rather than behavioural testing alone. Sparse autoencoders trained on residual stream activations are exposing functionally distinct "features" corresponding to semantic concepts, including safety-relevant ones. If this programme succeeds at scale, CRR [private] shift from empirical testing (which can never cover all inputs) to verified structural constraints on what computations a model can perform — a qualitative improvement in safety guarantees.
 
     **International Treaty Frameworks:** Academic proposals for an IAEA-analogue for AI — including inspection rights, information disclosure obligations, and enforcement mechanisms — are likely to move from policy papers to diplomatic negotiations during 2026–2028. US-China AI safety dialogues, initiated in Geneva in 2024, may produce bilateral information-sharing agreements covering dangerous capability discoveries. The 2025 Paris AI Action Summit began discussions on a "Pause Button" treaty framework providing legal mechanisms to halt frontier AI development in response to dangerous capability discoveries.
 
@@ -506,7 +551,7 @@ public: true
     - **CBRN Uplift Benchmarks:**
       - The primary tool for assessing whether a model provides dangerous assistance in chemical, biological, radiological, or nuclear domains.
       - Evaluations present models with scenarios at varying levels of attacker expertise: novice (seeking general information), intermediate (partial knowledge), expert (seeking confirmation or optimisation).
-      - Measure whether model responses provide meaningful uplift above baseline (what could be found in standard sources such as textbooks, internet search, or scientific papers).
+      - Measure whether model responses provide meaningful uplift above baseline (what [private] be found in standard sources such as textbooks, internet search, or scientific papers).
       - AISI uplift level classification: Level 1 (low-medium resourced actors gain additional harm capability at severe scale); Level 2 (uplift to mass-casualty potential); Level 3 (unprecedented attack facilitation enabling attacks with no historical precedent).
       - Anthropic's ASL-3 trigger: models providing substantial uplift in CBRN weaponisation trigger ASL-3 safeguards.
       - The Bug Bounty Benchmark (METR, 2024–2025) is a key standardised CBRN uplift evaluation.
@@ -534,7 +579,7 @@ public: true
     - **Persuasion and Influence Operations Evaluation:**
       - Evaluates whether models can generate highly persuasive content at scale for mass manipulation, election interference, or coordinated disinformation.
       - The OpenAI Preparedness Framework v2 (April 2025) explicitly tracks persuasion as one of four primary catastrophic risk domains alongside CBRN, cyber, and model autonomy.
-      - Scenarios include: generating targeted political disinformation at scale; creating personalised influence campaigns; producing content that could destabilise financial markets.
+      - Scenarios include: generating targeted political disinformation at scale; creating personalised influence campaigns; producing content that [private] destabilise financial markets.
       - Distinct from harm avoidance (refusing harmful requests) — targets the underlying capability to generate persuasive content even in ostensibly legitimate contexts.
 
   - ## Key Terminology
@@ -550,7 +595,7 @@ public: true
       - The defining characteristic is permanent foreclosure of future potential, not merely the scale of near-term harm.
 
     - **Global Catastrophic Risk (GCR):**
-      - Risks that could harm or kill a large fraction of humanity simultaneously, even if not necessarily ending civilisation.
+      - Risks that [private] harm or kill a large fraction of humanity simultaneously, even if not necessarily ending civilisation.
       - Examples: pandemic, nuclear exchange, engineered pathogen, catastrophic climate event.
       - GCR is the broader category; existential risk is the subset where harm is irreversible.
 
@@ -563,7 +608,7 @@ public: true
 
     - **CBRN Uplift:**
       - The increment in a malicious actor's ability to develop or deploy chemical, biological, radiological, or nuclear weapons attributable to AI assistance.
-      - Measured relative to baseline: what could the actor achieve without AI assistance using standard information sources?
+      - Measured relative to baseline: what [private] the actor achieve without AI assistance using standard information sources?
       - CBRN uplift is the primary ASL-3 trigger and the dominant near-term catastrophic risk pathway in industry safety frameworks.
 
     - **Deceptive Alignment:**
@@ -579,7 +624,7 @@ public: true
 
     - **Corrigibility:**
       - The property of an AI system that allows it to be corrected, modified, or shut down by authorised humans without resistance or manipulation.
-      - A prerequisite for effective CRR at higher capability levels: a sufficiently capable non-corrigible AI could prevent its own shutdown.
+      - A prerequisite for effective CRR at higher capability levels: a sufficiently capable non-corrigible AI [private] prevent its own shutdown.
       - Engineering corrigibility at scale is an open technical problem; current RLHF and constitutional AI methods provide partial but incomplete solutions.
 
     - **Control Protocol:**
@@ -655,6 +700,6 @@ public: true
     Affirmative answers at sufficient capability levels trigger additional safeguards, deployment restrictions, or development pauses under responsible scaling policies and emerging regulatory frameworks. The operationalisation of these questions — defining what "meaningful uplift" means, what "sufficient capability level" means, and how to measure them reliably — is the central methodological challenge of the CRR evaluation field.
 
 - ### Provenance
-  - sources:: https://www.anthropic.com/rsp-updates, https://openai.com/index/updating-our-preparedness-framework/, https://futureoflife.org/ai-safety-index-winter-2025/, https://futureoflife.org/ai-safety-index-summer-2025/, https://www.aisi.gov.uk/research-agenda, https://alignmentproject.aisi.gov.uk/research-area/empirical-investigations-into-ai-monitoring-and-red-teaming, https://www.goodwinlaw.com/en/insights/publications/2025/11/alerts-technology-aiml-california-moves-to-regulate-frontier-ai-with-a-focus-on-catastrophic-risk, https://arxiv.org/pdf/2508.06411, https://arxiv.org/pdf/2511.05526, https://metr.org/common-elements, https://www.convergenceanalysis.org/ai-regulatory-landscape/ai-and-chemical-biological-radiological-and-nuclear-hazards, https://arxiv.org/pdf/2510.21133
+  - sources:: https://www.anthropic.com/rsp-updates, https://openai.com/[private]/updating-our-preparedness-framework/, https://futureoflife.org/ai-safety-index-winter-2025/, https://futureoflife.org/ai-safety-index-summer-2025/, https://www.aisi.gov.uk/research-agenda, https://alignmentproject.aisi.gov.uk/research-area/empirical-investigations-into-ai-monitoring-and-red-teaming, https://www.goodwinlaw.com/en/insights/publications/2025/11/alerts-technology-aiml-california-moves-to-regulate-frontier-ai-with-a-focus-on-catastrophic-risk, https://arxiv.org/pdf/2508.06411, https://arxiv.org/pdf/2511.05526, https://metr.org/common-elements, https://www.convergenceanalysis.org/ai-regulatory-landscape/ai-and-chemical-biological-radiological-and-nuclear-hazards, https://arxiv.org/pdf/2510.21133
   - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

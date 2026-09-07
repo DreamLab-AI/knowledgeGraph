@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transfer Function
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,52 @@ public: true
   "definition": "A transfer function is the Laplace-domain (continuous-time) or Z-domain (discrete-time) ratio of output to input for a linear time-invariant (LTI) system with zero initial conditions, expressed as a ratio of polynomials whose roots yield the poles and zeros that determine the system's frequency response, stability, and transient behaviour. Transfer functions provide a frequency-domain characterisation of systems ranging from electronic filters and mechanical actuators to feedback control loops.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"}
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:bode-plot", "label": "Bode Plot"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:bode-plot",
+        "label": "Bode Plot"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
     ]
   },
   "quality": 0.8
@@ -62,4 +86,3 @@ public: true
   - In [[Digital Signal Processing]], the Z-transform transfer function H(z) = B(z)/A(z) describes IIR and FIR digital filters implemented in DSP chips, microcontrollers, and software. Audio equalisation, anti-aliasing filters, and communications channel equalisers are all specified and implemented as Z-domain transfer functions. MATLAB's Control Toolbox and Signal Processing Toolbox, SciPy's `signal` module, and Julia's ControlSystems.jl all provide transfer function objects for analysis and design.
 
   - Contemporary relevance of transfer functions extends into machine learning: neural network activation functions influence the frequency content of learned representations, and convolutional neural networks can be analysed through a transfer function lens for understanding their frequency selectivity. Model predictive control (MPC) implementations, increasingly deployed on industrial and automotive embedded systems, often begin with transfer function identification before constructing state space predictors for the optimisation step.
-

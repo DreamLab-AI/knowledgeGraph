@@ -1,36 +1,124 @@
----
-public: true
----
-
-# Schema Management
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:schema-management", "@type":"Page", "title":"Schema Management", "vc:slug":"schema-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:schema-management",
+  "@type": "Page",
+  "title": "Schema Management",
+  "vc:slug": "schema-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:schema-management",
-  "@type":"Class",
-  "label":"Schema Management",
-  "definition":"Schema management is the practice of defining, versioning, evolving, and enforcing the structure of data across systems and over time. It governs how data schemas change without breaking producers and consumers, using compatibility rules, schema registries, and validation to keep pipelines reliable. As a discipline within data governance, it ensures that interfaces between services and analytical stores remain consistent and trustworthy as requirements evolve.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-governance","label":"Data Governance"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:data-schema","label":"Data Schema"},{"@id":"urn:ngm:class:version-control","label":"Version Control"},{"@id":"urn:ngm:class:data-validation","label":"Data Validation"}],
-    "uses":[{"@id":"urn:ngm:class:schema-registry","label":"Schema Registry"},{"@id":"urn:ngm:class:data-validation","label":"Data Validation"}],
-    "hasPart":[{"@id":"urn:ngm:class:data-schema","label":"Data Schema"},{"@id":"urn:ngm:class:data-validation","label":"Data Validation"}],
-    "enables":[{"@id":"urn:ngm:class:data-integration","label":"Data Integration"},{"@id":"urn:ngm:class:data-quality","label":"Data Quality"}],
-    "supports":[{"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"},{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "partOf":[{"@id":"urn:ngm:class:data-governance","label":"Data Governance"},{"@id":"urn:ngm:class:data-management","label":"Data Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:metadata-management","label":"Metadata Management"},{"@id":"urn:ngm:class:master-data-management","label":"Master Data Management"},{"@id":"urn:ngm:class:data-catalog","label":"Data Catalog"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:data-architecture","label":"Data Architecture"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:schema-management",
+  "@type": "Class",
+  "label": "Schema Management",
+  "definition": "Schema management is the practice of defining, versioning, evolving, and enforcing the structure of data across systems and over time. It governs how data schemas change without breaking producers and consumers, using compatibility rules, schema registries, and validation to keep pipelines reliable. As a discipline within data governance, it ensures that interfaces between services and analytical stores remain consistent and trustworthy as requirements evolve.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

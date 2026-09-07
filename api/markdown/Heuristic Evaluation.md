@@ -1,40 +1,124 @@
----
-public: true
----
-
-# Heuristic Evaluation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:heuristic-evaluation", "@type":"Page", "title":"Heuristic Evaluation", "vc:slug":"heuristic-evaluation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:heuristic-evaluation",
+  "@type": "Page",
+  "title": "Heuristic Evaluation",
+  "vc:slug": "heuristic-evaluation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:heuristic-evaluation",
-  "@type":"Class",
-  "label":"Heuristic Evaluation",
-  "definition":"Heuristic evaluation is a usability inspection method in which a small number of expert evaluators judge an interface against a set of recognised usability principles, or heuristics, to identify usability problems. It is a discount technique that requires no test participants, producing a ranked list of issues with severity estimates. Because it depends on evaluator expertise rather than observed user behaviour, it complements, rather than replaces, empirical usability testing.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:usability","label":"Usability"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:usability","label":"Usability"}],
-    "implements":[{"@id":"urn:ngm:class:usability","label":"Usability"}],
-    "uses":[{"@id":"urn:ngm:class:mental-model","label":"Mental Model"},{"@id":"urn:ngm:class:cognitive-walkthrough","label":"Cognitive Walkthrough"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:usability-testing","label":"Usability Testing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:user-experience","label":"User Experience"},{"@id":"urn:ngm:class:interaction-design","label":"Interaction Design"},{"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"}],
-    "supports":[{"@id":"urn:ngm:class:interaction-design","label":"Interaction Design"}],
-    "requires":[{"@id":"urn:ngm:class:user-research","label":"User Research"}],
-    "enables":[{"@id":"urn:ngm:class:usability-testing","label":"Usability Testing"}],
-    "dependsOn":[{"@id":"urn:ngm:class:affordance","label":"Affordance"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:design-thinking","label":"Design Thinking"}],
-    "evaluates":[{"@id":"urn:ngm:class:cognitive-load","label":"Cognitive Load"}],
-    "informs":[{"@id":"urn:ngm:class:user-experience","label":"User Experience"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:heuristic-evaluation",
+  "@type": "Class",
+  "label": "Heuristic Evaluation",
+  "definition": "Heuristic evaluation is a usability inspection method in which a small number of expert evaluators judge an interface against a set of recognised usability principles, or heuristics, to identify usability problems. It is a discount technique that requires no test participants, producing a ranked list of issues with severity estimates. Because it depends on evaluator expertise rather than observed user behaviour, it complements, rather than replaces, empirical usability testing.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:usability",
+      "label": "Usability"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-walkthrough",
+        "label": "Cognitive Walkthrough"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      }
+    ],
+    "evaluates": [
+      {
+        "@id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      }
+    ],
+    "informs": [
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

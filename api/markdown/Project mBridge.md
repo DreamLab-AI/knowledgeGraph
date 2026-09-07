@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Project mBridge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -86,52 +81,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:project-m-bridge:451adef6cec8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d464eb8b27ca8ce76d1a84b6aa526eb140bb637262303a0da445a2ae77e961ec"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Wholesale CBDC]]",
-      "resolved": "urn:visionflow:linked:wholesale-cbdc",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Atomic Settlement]]",
-      "resolved": "urn:visionflow:linked:atomic-settlement",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BIS]]",
-      "resolved": "urn:visionflow:linked:bis",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Border Payments]]",
-      "resolved": "urn:visionflow:linked:cross-border-payments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Border Settlement]]",
-      "resolved": "urn:visionflow:linked:cross-border-settlement",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A multi-central-bank initiative testing a shared distributed ledger platform for cross-border payments settled in central bank digital currencies.

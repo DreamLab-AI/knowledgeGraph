@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cultural Heritage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,16 +7,39 @@ public: true
   "title": "Cultural Heritage",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:creative-industries", "vc:label": "Creative Industries"},
-    {"@id": "urn:visionflow:linked:digital-preservation", "vc:label": "Digital Preservation"},
-    {"@id": "urn:visionflow:linked:virtual-tourism", "vc:label": "Virtual Tourism"},
-    {"@id": "urn:visionflow:linked:digital-objects", "vc:label": "Digital Objects"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:immersive-experience", "vc:label": "Immersive Experience"}
+    {
+      "@id": "urn:visionflow:linked:creative-industries",
+      "vc:label": "Creative Industries"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-preservation",
+      "vc:label": "Digital Preservation"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-tourism",
+      "vc:label": "Virtual Tourism"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-objects",
+      "vc:label": "Digital Objects"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:immersive-experience",
+      "vc:label": "Immersive Experience"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -40,16 +58,34 @@ public: true
   },
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:digital-preservation", "label": "Digital Preservation"}
+      {
+        "@id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-tourism", "label": "Virtual Tourism"},
-      {"@id": "urn:ngm:class:education", "label": "Education"}
+      {
+        "@id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      },
+      {
+        "@id": "urn:ngm:class:education",
+        "label": "Education"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-objects", "label": "Digital Objects"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:digital-objects",
+        "label": "Digital Objects"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ]
   },
   "quality": 0.8,

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LLM Token Expenditure Index
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "llm-token-expenditure-index",
   "title": "LLM Token Expenditure Index",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Silicon Data", "Token Pricing"],
+  "vc:outboundWikilinks": [
+    "Silicon Data",
+    "Token Pricing"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data", "label": "Data"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data", "label": "Data"}, {"@id": "urn:ngm:class:metadata", "label": "Metadata"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

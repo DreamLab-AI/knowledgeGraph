@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pool Share
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,24 +83,54 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:mining", "label": "Mining"}
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"}
+      {
+        "@id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ]
   },
   "provenance": {
@@ -115,62 +140,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pool-share:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:68db87bfbea2c0a482bfbeabf4fd559e2f45178c7fd48a4860aabaf8d5bd0a3a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-protocol-and-consensus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusProtocol]]",
-      "resolved": "urn:visionflow:owl:class:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ProtocolLayer]]",
-      "resolved": "urn:visionflow:owl:class:protocol-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A proof-of-work unit submitted by an individual miner to a mining pool server demonstrating bounded computational work toward finding a valid block hash. Pool shares have a lower difficulty target than the network block target, enabling the pool to credit proportional work and distribute block rewards fairly across contributors.

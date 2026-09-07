@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Shape Memory Alloy Actuator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -73,67 +68,56 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"}
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pneumatic-actuator", "label": "Pneumatic Actuator"},
-      {"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"},
-      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"},
-      {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:surgical-robot", "label": "Surgical Robot"},
-      {"@id": "urn:ngm:class:exoskeleton-robot", "label": "Exoskeleton Robot"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {
+        "@id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      },
+      {
+        "@id": "urn:ngm:class:exoskeleton-robot",
+        "label": "Exoskeleton Robot"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:tactile-sensor", "label": "Tactile Sensor"}
+      {
+        "@id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:shape-memory-alloy-actuator:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:08e0ad201e95f918d025fc55091de1f197b7ae82237fbeec49dbc39ade422836"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Materials Science]]",
-      "resolved": "urn:visionflow:linked:materials-science",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Soft Robotics]]",
-      "resolved": "urn:visionflow:owl:class:soft-robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Soft robotics actuator using shape memory alloys that change shape when heated, enabling lightweight and compact actuation for compliant robots.

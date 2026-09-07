@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Serverless Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -52,18 +47,36 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:software-infrastructure", "label": "Software Infrastructure"}
+      {
+        "@id": "urn:ngm:class:software-infrastructure",
+        "label": "Software Infrastructure"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
     ]
   },
   "quality": 0.7,
@@ -74,26 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:serverless-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:01f3fbd687bbb03bb6aa18c899798da98953eb39a1f1c7d76bdfd71753bf322c"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Serverless Architecture is a cloud execution model in which application logic is deployed as discrete, stateless functions that are provisioned and scaled automatically by the cloud provider in response to events, with billing proportional to actual execution time. By abstracting away server provisioning and capacity management, serverless architectures reduce operational overhead and enable fine-grained, event-driven compute patterns suited to metaverse backends, AI inference endpoints, and IoT data pipelines.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monetary Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:monetary-theory:f9bba7c1d3ff",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6235881c40e1adebd55c51e9d25182ba943e5697211d05335f9b81b8357b5813"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Economics]]",
-      "resolved": "urn:visionflow:linked:economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Central Bank Digital Currency]]",
-      "resolved": "urn:visionflow:linked:central-bank-digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fiat Currency]]",
-      "resolved": "urn:visionflow:linked:fiat-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inflation]]",
-      "resolved": "urn:visionflow:linked:inflation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Economics Domain]]",
-      "resolved": "urn:visionflow:linked:economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Monetary theory studies the nature of money, how its supply is created and managed, and how monetary conditions affect prices, output and financial stability.

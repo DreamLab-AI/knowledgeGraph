@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI TRiSM
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,26 +60,68 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:ai-security", "label": "AI Security"},
-      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
-      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ]
   },
   "provenance": {
@@ -94,42 +131,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-tri-sm:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a0f961d633e3314ef5fc55e592f50dc8007810d901d105921525b38390092d4f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - [Generated from Gartner emerging tech analysis]

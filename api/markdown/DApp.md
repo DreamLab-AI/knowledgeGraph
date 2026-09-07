@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DApp
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dapp:c7e7d9f7ef45",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4fa731e9486ca703f454dd6c839185f868da1eca9b92da6ef46538e097ac431e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web3]]",
-      "resolved": "urn:visionflow:linked:web-3",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Application]]",
-      "resolved": "urn:visionflow:linked:decentralized-application",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A decentralised application whose backend logic runs on a blockchain or other decentralised network rather than on centrally controlled servers. It typically combines smart contracts with a conventional user interface.

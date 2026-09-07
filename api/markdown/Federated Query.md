@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Federated Query
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:federated-query", "@type":"Page", "title":"Federated Query", "vc:slug":"federated-query", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:federated-query",
+  "@type": "Page",
+  "title": "Federated Query",
+  "vc:slug": "federated-query",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,40 +21,86 @@ public: true
   "domain": "data",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:data-integration", "label": "Data Integration" }
+    {
+      "@id": "urn:ngm:class:data-integration",
+      "label": "Data Integration"
+    }
   ],
   "relations": {
     "partOf": [
-      { "@id": "urn:ngm:class:data-integration", "label": "Data Integration" }
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:sparql", "label": "SPARQL" },
-      { "@id": "urn:ngm:class:sparql-endpoint", "label": "SPARQL Endpoint" },
-      { "@id": "urn:ngm:class:rdf", "label": "RDF" }
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:data-federation", "label": "Data Federation" },
-      { "@id": "urn:ngm:class:linked-data", "label": "Linked Data" },
-      { "@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph" }
+      {
+        "@id": "urn:ngm:class:data-federation",
+        "label": "Data Federation"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:sparql-endpoint", "label": "SPARQL Endpoint" }
+      {
+        "@id": "urn:ngm:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:wikidata", "label": "Wikidata" },
-      { "@id": "urn:ngm:class:data-virtualization", "label": "Data Virtualization" }
+      {
+        "@id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      },
+      {
+        "@id": "urn:ngm:class:data-virtualization",
+        "label": "Data Virtualization"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:semantic-web", "label": "Semantic Web" }
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:graph-database", "label": "Graph Database" },
-      { "@id": "urn:ngm:class:data-catalog", "label": "Data Catalog" }
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

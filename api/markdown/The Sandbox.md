@@ -1,8 +1,3 @@
----
-public: true
----
-
-# The Sandbox
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,57 +177,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:the-sandbox:b5127f74421e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d397d96211af654b1dc591b369349d93740f73c1e7f33db2c5e690eba7a80230"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asset Tokenisation]]",
-      "resolved": "urn:visionflow:linked:asset-tokenisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Gaming]]",
-      "resolved": "urn:visionflow:linked:blockchain-gaming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:linked:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Platform]]",
-      "resolved": "urn:visionflow:linked:metaverse-platform",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Sandbox is a blockchain-based virtual world and game-creation platform where users build, own and monetise voxel-based experiences and assets recorded as tokens.

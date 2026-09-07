@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Resilience Metric
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -86,18 +81,36 @@ public: true
       }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:reliability", "label": "Reliability"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
     ]
   },
   "quality": 0.4,
@@ -108,62 +121,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:resilience-metric:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:21458daa80a5a1463e0f5eee8a9d1964e090f795e54931c5ac418bf35481b691"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BlockchainNetworks|blockchain networks]]",
-      "resolved": "urn:visionflow:linked:blockchain-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IncidentResponse|incident management]]",
-      "resolved": "urn:visionflow:linked:incident-response",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaversePlatforms|metaverse services]]",
-      "resolved": "urn:visionflow:linked:metaverse-platforms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RecoveryTimeObjective|recovery time objectives]]",
-      "resolved": "urn:visionflow:linked:recovery-time-objective",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SLAVerification|SLA compliance verification]]",
-      "resolved": "urn:visionflow:linked:slaverification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CloudInfrastructure|cloud platforms]]",
-      "resolved": "urn:visionflow:owl:class:cloud-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, [[RecoveryTimeObjective|recovery time objectives]], and failure rates that determine operational continuity. These metrics enable proactive [[IncidentResponse|incident management]] and [[SLAVerification|SLA compliance verification]] across [[CloudInfrastructure|cloud platforms]], [[MetaversePlatforms|metaverse services]], and [[BlockchainNetworks|blockchain networks]]. Effective resilience measurement combines real-time monitoring, predictive analytics, and automated remediation to maintain service quality during adverse conditions.

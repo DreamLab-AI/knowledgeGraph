@@ -1,37 +1,106 @@
----
-public: true
----
-
-# Finite Field
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:finite-field", "@type":"Page", "title":"Finite Field", "vc:slug":"finite-field", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:finite-field",
+  "@type": "Page",
+  "title": "Finite Field",
+  "vc:slug": "finite-field",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:finite-field",
-  "@type":"Class",
-  "label":"Finite Field",
-  "definition":"A finite field, also called a Galois field, is an algebraic structure containing a finite number of elements on which addition, subtraction, multiplication, and division (excluding by zero) are defined and obey the field axioms. Every finite field has a number of elements equal to a prime power, and fields of a given size are unique up to isomorphism. Finite fields are central to cryptography, error-correcting codes, and many computational algorithms because they support exact arithmetic over bounded sets.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:modular-arithmetic","label":"Modular Arithmetic"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:modular-arithmetic","label":"Modular Arithmetic"}],
-    "uses":[{"@id":"urn:ngm:class:number-theory","label":"Number Theory"}],
-    "dependsOn":[{"@id":"urn:ngm:class:number-theory","label":"Number Theory"}],
-    "enables":[{"@id":"urn:ngm:class:elliptic-curve-cryptography","label":"Elliptic Curve Cryptography"},{"@id":"urn:ngm:class:zero-knowledge-proof","label":"Zero-Knowledge Proof"}],
-    "supports":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "implements":[{"@id":"urn:ngm:class:modular-arithmetic","label":"Modular Arithmetic"}],
-    "partOf":[{"@id":"urn:ngm:class:number-theory","label":"Number Theory"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "relatedTo":[{"@id":"urn:ngm:class:elliptic-curve-cryptography","label":"Elliptic Curve Cryptography"},{"@id":"urn:ngm:class:zero-knowledge-proof","label":"Zero-Knowledge Proof"},{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:finite-field",
+  "@type": "Class",
+  "label": "Finite Field",
+  "definition": "A finite field, also called a Galois field, is an algebraic structure containing a finite number of elements on which addition, subtraction, multiplication, and division (excluding by zero) are defined and obey the field axioms. Every finite field has a number of elements equal to a prime power, and fields of a given size are unique up to isomorphism. Finite fields are central to cryptography, error-correcting codes, and many computational algorithms because they support exact arithmetic over bounded sets.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:modular-arithmetic",
+      "label": "Modular Arithmetic"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

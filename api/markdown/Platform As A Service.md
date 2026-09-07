@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Platform As A Service
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:platform-as-a-service", "@type":"Page", "title":"Platform As A Service", "vc:slug":"platform-as-a-service", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:platform-as-a-service",
+  "@type": "Page",
+  "title": "Platform As A Service",
+  "vc:slug": "platform-as-a-service",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,42 +20,104 @@ public: true
   "definition": "Platform as a Service (PaaS) is a cloud computing service model that provides a managed execution environment — including runtime, middleware, databases, and development tools — over the internet, allowing developers to build, deploy, and scale applications without managing underlying infrastructure. PaaS abstracts operating system and server management from the development team, enabling faster iteration cycles and lower operational overhead. Examples include Heroku, Google App Engine, Microsoft Azure App Service, and AWS Elastic Beanstalk.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"},
-      {"@id": "urn:ngm:class:database", "label": "Database"},
-      {"@id": "urn:ngm:class:middleware", "label": "Middleware"}
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "@id": "urn:ngm:class:database",
+        "label": "Database"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:application-development", "label": "Application Development"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:scalability", "label": "Scalability"}
+      {
+        "@id": "urn:ngm:class:application-development",
+        "label": "Application Development"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:infrastructure-as-a-service", "label": "Infrastructure As A Service"},
-      {"@id": "urn:ngm:class:software-as-a-service", "label": "Software As A Service"},
-      {"@id": "urn:ngm:class:serverless-architecture", "label": "Serverless Architecture"}
+      {
+        "@id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:software-as-a-service",
+        "label": "Software As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Architecture"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:infrastructure-as-a-service", "label": "Infrastructure As A Service"},
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualisation"}
+      {
+        "@id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:api", "label": "API"}
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:automation", "label": "Automation"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"}
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
     ]
   },
   "quality": 0.62,

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Self-Service Portal
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:self-service-portal", "@type": "Page", "title": "Self-Service Portal", "vc:slug": "self-service-portal", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:self-service-portal",
+  "@type": "Page",
+  "title": "Self-Service Portal",
+  "vc:slug": "self-service-portal",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

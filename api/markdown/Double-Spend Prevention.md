@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Double-Spend Prevention
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,56 @@ public: true
   "definition": "Double-spend prevention refers to the set of cryptographic, consensus-based, and protocol-level mechanisms that ensure a given unit of digital value cannot be spent more than once within a payment or transaction system. This problem is fundamental to digital money because, unlike physical currency, digital data can be trivially copied; preventing double-spending without a trusted central authority was the key unsolved challenge that Satoshi Nakamoto's Bitcoin whitepaper addressed through the combination of a public transaction ledger and proof-of-work consensus.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-security",
+      "label": "Blockchain Security"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:distributed-consensus", "label": "Distributed Consensus"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +90,3 @@ public: true
   - Proof-of-stake systems address double-spending through slashing — the automatic forfeiture of staked collateral by any validator detected signing conflicting blocks. This transforms the attack cost from external energy expenditure to internal capital destruction, and when combined with BFT-style finality gadgets (as in Ethereum's Casper/Gasper), achieves deterministic irreversibility after a supermajority of validators attest to a checkpoint. Layer 2 networks — payment channels, rollups, state channels — inherit their double-spend security from the base layer's settlement guarantees, with challenge periods providing the window for fraud proofs on optimistic systems.
 
   - In 2024-2025, double-spend prevention remains an active research frontier in contexts extending beyond base-layer cryptocurrencies. Cross-chain bridges have emerged as a novel attack surface, where double-spending across chains — exploiting the latency between source-chain finality and destination-chain credit — has caused several high-profile bridge hacks exceeding hundreds of millions of dollars. Solutions including light-client verification, ZK-proof-of-state, and economic bonding are being deployed to close these gaps. Fast-finality chains such as Solana and Avalanche advertise sub-second transaction confirmation, yet must carefully balance throughput against the rigour of their double-spend prevention guarantees under network partition and Byzantine validator scenarios.
-

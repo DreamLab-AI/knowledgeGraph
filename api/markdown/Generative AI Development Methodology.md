@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Advice for developing GenAI]]
-# Generative AI Development Methodology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,20 +79,44 @@ elevatedFrom:: [[Advice for developing GenAI]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:ai-video", "label": "AI Video"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:lo-ra-do-ra-etc", "label": "LoRA DoRA etc"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:music-and-audio", "label": "Music and Audio"},
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+      {
+        "@id": "urn:ngm:class:music-and-audio",
+        "label": "Music and Audio"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
     ]
   },
   "quality": 0.5,
@@ -109,72 +127,6 @@ elevatedFrom:: [[Advice for developing GenAI]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:advice-for-developing-gen-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b81219ae10f30dd35ba8192cd01dac43744d0575731907b3abeab8fcb38bd74e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[qLoRA]]",
-      "resolved": "urn:visionflow:linked:q-lo-ra",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Runway]]",
-      "resolved": "urn:visionflow:linked:runway",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vercel]]",
-      "resolved": "urn:visionflow:linked:vercel",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Video]]",
-      "resolved": "urn:visionflow:owl:class:ai-video",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LoRA DoRA etc]]",
-      "resolved": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Midjourney Text-to-Image Service]]",
-      "resolved": "urn:visionflow:owl:class:midjourney",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Music and Audio]]",
-      "resolved": "urn:visionflow:owl:class:music-and-audio",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenAI Whisper]]",
-      "resolved": "urn:visionflow:owl:class:open-ai-whisper",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A practitioner's phased methodology for building generative AI applications: start with the best available model, prototype rapidly, validate with stakeholders, then build robustly—deferring fine-tuning and legal risk until each phase is proven.

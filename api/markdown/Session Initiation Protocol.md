@@ -1,40 +1,116 @@
----
-public: true
----
-
-# Session Initiation Protocol
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:session-initiation-protocol", "@type":"Page", "title":"Session Initiation Protocol", "vc:slug":"session-initiation-protocol", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:session-initiation-protocol",
+  "@type": "Page",
+  "title": "Session Initiation Protocol",
+  "vc:slug": "session-initiation-protocol",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:session-initiation-protocol",
-  "@type":"Class",
-  "label":"Session Initiation Protocol",
-  "definition":"The Session Initiation Protocol (SIP) is an application-layer signalling protocol used to establish, modify and terminate real-time communication sessions such as voice and video calls over IP networks. It handles user location, session setup negotiation and call control, delegating the actual media transport to companion protocols. SIP is text-based and request-response oriented, modelled on HTTP, and underpins much of modern internet telephony and unified communications.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:communication-protocol","label":"Communication Protocol"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:real-time-communication","label":"Real-Time Communication"}],
-    "hasPart":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "requires":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "enables":[{"@id":"urn:ngm:class:video-conferencing","label":"Video Conferencing"}],
-    "uses":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "dependsOn":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
-    "supports":[{"@id":"urn:ngm:class:real-time-communication","label":"Real-Time Communication"}],
-    "implements":[{"@id":"urn:ngm:class:communication-protocol","label":"Communication Protocol"}],
-    "relatedTo":[{"@id":"urn:ngm:class:video-conferencing","label":"Video Conferencing"},{"@id":"urn:ngm:class:communication-protocol","label":"Communication Protocol"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:real-time-communication","label":"Real-Time Communication"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:session-initiation-protocol",
+  "@type": "Class",
+  "label": "Session Initiation Protocol",
+  "definition": "The Session Initiation Protocol (SIP) is an application-layer signalling protocol used to establish, modify and terminate real-time communication sessions such as voice and video calls over IP networks. It handles user location, session setup negotiation and call control, delegating the actual media transport to companion protocols. SIP is text-based and request-response oriented, modelled on HTTP, and underpins much of modern internet telephony and unified communications.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

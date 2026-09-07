@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Schema Validation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:schema-validation", "@type":"Page", "title":"Schema Validation", "vc:slug":"schema-validation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:schema-validation",
+  "@type": "Page",
+  "title": "Schema Validation",
+  "vc:slug": "schema-validation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

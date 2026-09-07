@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Manchester Tech Cluster
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,22 +59,46 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"}
+      {
+        "@id": "urn:ngm:class:north-england-innovation-corridor",
+        "label": "North England Innovation Corridor"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"}
+      {
+        "@id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-development", "label": "AI Development"},
-      {"@id": "urn:ngm:class:research-methods", "label": "Research Methods"}
+      {
+        "@id": "urn:ngm:class:ai-development",
+        "label": "AI Development"
+      },
+      {
+        "@id": "urn:ngm:class:research-methods",
+        "label": "Research Methods"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:investment-management", "label": "Investment Management"}
+      {
+        "@id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      }
     ]
   },
   "provenance": {
@@ -89,42 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:manchester-tech-cluster:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f561b7802c40e10b26f0d2ae02eba6c4c4fd2f60f8dd43e188626c2fe875ab02"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Northern Powerhouse]]",
-      "resolved": "urn:visionflow:linked:northern-powerhouse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[North England Innovation Corridor]]",
-      "resolved": "urn:visionflow:owl:class:north-england-innovation-corridor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[UK Tech Ecosystem]]",
-      "resolved": "urn:visionflow:owl:class:uk-tech-ecosystem",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Manchester's thriving technology ecosystem centred on MediaCityUK, including AI, digital innovation, and financial technology sectors.

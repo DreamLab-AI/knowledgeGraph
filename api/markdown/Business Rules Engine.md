@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Business Rules Engine
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,45 +20,110 @@ public: true
   "definition": "A Business Rules Engine (BRE) is a software component that externalises and executes business logic as declarative rules separate from application code. Rules are authored by domain experts in natural-language-like syntax and evaluated against facts at runtime using algorithms such as the Rete network. BREs enable non-technical stakeholders to modify organisational policies without redeploying software, making them a key enabler of agile governance and compliance automation.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rule-repository", "label": "Rule Repository"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:fact-model", "label": "Fact Model"}
+      {
+        "@id": "urn:ngm:class:rule-repository",
+        "label": "Rule Repository"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:fact-model",
+        "label": "Fact Model"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:reasoning-engine", "label": "Reasoning Engine"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-automation", "label": "Compliance Automation"},
-      {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"},
-      {"@id": "urn:ngm:class:decision-management", "label": "Decision Management"}
+      {
+        "@id": "urn:ngm:class:compliance-automation",
+        "label": "Compliance Automation"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:decision-management",
+        "label": "Decision Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rete-algorithm", "label": "Rete Algorithm"},
-      {"@id": "urn:ngm:class:decision-table", "label": "Decision Table"}
+      {
+        "@id": "urn:ngm:class:rete-algorithm",
+        "label": "Rete Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:decision-table",
+        "label": "Decision Table"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:dmn", "label": "DMN"},
-      {"@id": "urn:ngm:class:drools", "label": "Drools"}
+      {
+        "@id": "urn:ngm:class:dmn",
+        "label": "DMN"
+      },
+      {
+        "@id": "urn:ngm:class:drools",
+        "label": "Drools"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:hardcoded-logic", "label": "Hardcoded Logic"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:hardcoded-logic",
+        "label": "Hardcoded Logic"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-decision-system", "label": "AI Decision System"}
+      {
+        "@id": "urn:ngm:class:ai-decision-system",
+        "label": "AI Decision System"
+      }
     ]
   },
   "quality": 0.62,

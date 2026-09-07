@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Learning Resources
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:learning-resources:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8fa616b1c7adc42a261350b172514a6241ccc5b6dedd9d31f11b71eb54bb7bb2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Immersive Education]]",
-      "resolved": "urn:visionflow:linked:immersive-education",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Educational Technology]]",
-      "resolved": "urn:visionflow:owl:class:educational-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Educational materials and content designed for delivery through VR, AR, and metaverse platforms, including 3D models, interactive simulations, virtual environments, and AI-generated adaptive content for immersive learning experiences.

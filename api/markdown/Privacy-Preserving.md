@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy-Preserving
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:privacy-preserving:1d88511cda6f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c120c7252dfd4d3e664a764006c6b2a3710e618a86f7956201fa942d127030fa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy-Preserving AI]]",
-      "resolved": "urn:visionflow:linked:privacy-preserving-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Federated Learning]]",
-      "resolved": "urn:visionflow:linked:federated-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Privacy-preserving describes methods and systems designed to perform useful computation or data analysis while limiting exposure of the underlying personal or sensitive data.

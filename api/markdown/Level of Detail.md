@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Level of Detail
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -165,57 +160,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:level-of-detail:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a42b841f00b5f680fd0185c567eb94fbd929c84ba1834065a17a8673501ef670"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Culling]]",
-      "resolved": "urn:visionflow:linked:culling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Instancing]]",
-      "resolved": "urn:visionflow:linked:instancing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Occlusion Culling]]",
-      "resolved": "urn:visionflow:owl:class:occlusion-culling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Performance Optimization]]",
-      "resolved": "urn:visionflow:owl:class:performance-optimization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rasterization]]",
-      "resolved": "urn:visionflow:owl:class:rasterization",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Level of Detail (LOD) is a rendering optimisation technique that dynamically adjusts the geometric complexity, texture resolution, and shader fidelity of 3D objects based on viewing distance or screen-space coverage, trading visual precision for computational efficiency. LOD is essential for maintaining real-time frame rates in large-scale metaverse and spatial computing scenes.

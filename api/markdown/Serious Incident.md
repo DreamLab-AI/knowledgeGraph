@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Serious Incident
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,36 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:market-surveillance-authority", "label": "Market Surveillance Authority"}
+      {
+        "@id": "urn:ngm:class:market-surveillance-authority",
+        "label": "Market Surveillance Authority"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"},
-      {"@id": "urn:ngm:class:ai-incident", "label": "AI Incident"},
-      {"@id": "urn:ngm:class:safety-oecd", "label": "Safety (OECD)"}
+      {
+        "@id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      },
+      {
+        "@id": "urn:ngm:class:ai-incident",
+        "label": "AI Incident"
+      },
+      {
+        "@id": "urn:ngm:class:safety-oecd",
+        "label": "Safety (OECD)"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
     ]
   },
   "quality": 0.7,
@@ -82,32 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:serious-incident:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:21846605cb82bfe4fa5343122f04a5b484623bbacfbdf762e6235f4d08698154"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An incident or malfunctioning of an AI system that directly or indirectly leads to death, serious health damage, serious disruption of critical infrastructure, or serious fundamental rights infringements.

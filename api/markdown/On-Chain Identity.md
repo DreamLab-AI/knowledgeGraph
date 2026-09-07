@@ -1,8 +1,3 @@
----
-public: true
----
-
-# On-Chain Identity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "On-chain identity is a persistent, cryptographically controlled identifier recorded on a blockchain that an entity uses to accumulate verifiable attributes, history, and reputation. Anchored to an address or smart contract and controlled by private keys, it can hold credentials, tokens, and attestations that other applications read trustlessly. It enables portable reputation and access control across decentralised applications.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"},
-      {"@id": "urn:ngm:class:nft-minting", "label": "NFT Minting"}
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "@id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
     ]
   },
   "quality": 0.72

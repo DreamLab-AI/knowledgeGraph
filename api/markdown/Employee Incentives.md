@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Employee Incentives
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "employee-incentives",
   "title": "Employee Incentives",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Meta", "Token Maxing"],
+  "vc:outboundWikilinks": [
+    "Meta",
+    "Token Maxing"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:venture-capital",
+      "label": "Venture Capital"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"}, {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,40 +1,116 @@
----
-public: true
----
-
-# Animation State Machine
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:animation-state-machine", "@type":"Page", "title":"Animation State Machine", "vc:slug":"animation-state-machine", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:animation-state-machine",
+  "@type": "Page",
+  "title": "Animation State Machine",
+  "vc:slug": "animation-state-machine",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:animation-state-machine",
-  "@type":"Class",
-  "label":"Animation State Machine",
-  "definition":"An animation state machine is a graph of discrete animation states and the transitions between them, used in real-time engines to drive a character or object's motion based on game logic, input and parameters. Each state references a clip or blend tree, and transitions carry conditions, blend durations and interruption rules that govern how one motion flows into another. It separates high-level behaviour authoring from low-level pose evaluation, making locomotion and action systems tractable to build and tune.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:state-machine","label":"State Machine"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:character-animation","label":"Character Animation"}],
-    "hasPart":[{"@id":"urn:ngm:class:blend-tree","label":"Blend Tree"}],
-    "requires":[{"@id":"urn:ngm:class:skeletal-animation","label":"Skeletal Animation"}],
-    "enables":[{"@id":"urn:ngm:class:character-animation","label":"Character Animation"}],
-    "uses":[{"@id":"urn:ngm:class:blend-tree","label":"Blend Tree"}],
-    "dependsOn":[{"@id":"urn:ngm:class:game-engine","label":"Game Engine"}],
-    "supports":[{"@id":"urn:ngm:class:game-engine","label":"Game Engine"}],
-    "implements":[{"@id":"urn:ngm:class:finite-state-machine","label":"Finite State Machine"}],
-    "relatedTo":[{"@id":"urn:ngm:class:skeletal-animation","label":"Skeletal Animation"},{"@id":"urn:ngm:class:finite-state-machine","label":"Finite State Machine"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:unreal-engine","label":"Unreal Engine"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:blend-tree","label":"Blend Tree"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:game-engine","label":"Game Engine"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:animation-state-machine",
+  "@type": "Class",
+  "label": "Animation State Machine",
+  "definition": "An animation state machine is a graph of discrete animation states and the transitions between them, used in real-time engines to drive a character or object's motion based on game logic, input and parameters. Each state references a clip or blend tree, and transitions carry conditions, blend durations and interruption rules that govern how one motion flows into another. It separates high-level behaviour authoring from low-level pose evaluation, making locomotion and action systems tractable to build and tune.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:state-machine",
+      "label": "State Machine"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

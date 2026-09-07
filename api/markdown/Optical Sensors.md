@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optical Sensors
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Optical Sensors are devices that detect and convert light, across visible, infrared, or other wavelengths, into electrical signals for measurement or imaging. They include cameras, photodiodes, depth sensors, and structured-light or time-of-flight units used to capture scene geometry and motion. In capture and recognition systems they provide the primary visual input from which 3D structure, pose, and identity are inferred.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-performance-capture", "label": "Digital Performance Capture"},
-      {"@id": "urn:ngm:class:human-capture-and-recognition", "label": "Human Capture & Recognition"}
+      {
+        "@id": "urn:ngm:class:digital-performance-capture",
+        "label": "Digital Performance Capture"
+      },
+      {
+        "@id": "urn:ngm:class:human-capture-and-recognition",
+        "label": "Human Capture & Recognition"
+      }
     ]
   },
   "quality": 0.72

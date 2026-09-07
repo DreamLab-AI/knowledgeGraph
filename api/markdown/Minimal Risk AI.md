@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Minimal Risk AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"}
+      {
+        "@id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:minimal-risk-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b34a3238d2e4750f9dc3534b497888088c7b906389eb745e89cc6704d01461bb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI systems not classified as prohibited, high-risk, or limited-risk. These systems face no specific AI Act obligations beyond the general legal framework applicable to all products and services.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Creative Commons
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Creative Commons is a family of standardised public copyright licences that let creators grant defined reuse, attribution, and sharing permissions to the public. The licences (e.g. CC BY, CC BY-SA, CC0) provide machine-readable and human-readable terms that promote legal reuse of content. They are widely used to license training data, open educational resources, and open media corpora.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:training-data", "label": "Training Data"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ]
   },
   "quality": 0.72
 }

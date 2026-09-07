@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hydraulic Motor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,26 +59,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hydraulic-cylinder", "label": "Hydraulic Cylinder"},
-      {"@id": "urn:ngm:class:servo-control", "label": "Servo Control"}
+      {
+        "@id": "urn:ngm:class:hydraulic-cylinder",
+        "label": "Hydraulic Cylinder"
+      },
+      {
+        "@id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
-      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}
+      {
+        "@id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:electric-motor", "label": "Electric Motor"},
-      {"@id": "urn:ngm:class:pneumatic-motor", "label": "Pneumatic Motor"},
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
-      {"@id": "urn:ngm:class:electric-actuator", "label": "Electric Actuator"}
+      {
+        "@id": "urn:ngm:class:electric-motor",
+        "label": "Electric Motor"
+      },
+      {
+        "@id": "urn:ngm:class:pneumatic-motor",
+        "label": "Pneumatic Motor"
+      },
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:electric-actuator",
+        "label": "Electric Actuator"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"},
-      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"},
-      {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"}
+      {
+        "@id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      }
     ]
   },
   "provenance": {
@@ -93,37 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hydraulic-motor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:db90f6da2987994e72123ff664ed945725a9ad93cd50d946b8d28d0a3c8d81f1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hydraulic Actuator]]",
-      "resolved": "urn:visionflow:owl:class:hydraulic-actuator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Hydraulic Motor is an actuation device that converts pressurised hydraulic fluid flow into continuous rotational mechanical torque, functioning as the rotary counterpart to the hydraulic cylinder. It is distinguished by extremely high power-to-weight ratio and the ability to sustain high torques at low rotational speeds without gearbox inefficiencies, making it the preferred actuator for heavy robotic joints, industrial manipulators, and mobile machinery operating in harsh environments. Common design types include gear motors, vane motors, and axial-piston motors.

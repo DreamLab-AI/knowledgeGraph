@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BrightID
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -171,46 +166,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bright-id:5932c86ff2e4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2b884387a5b29105e7756c74adc3f7f5dc023cbc84fe5d5d06804edc30944db2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sybil Resistance]]",
-      "resolved": "urn:visionflow:linked:sybil-resistance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reputation System]]",
-      "resolved": "urn:visionflow:linked:reputation-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Identity]]",
-      "resolved": "urn:visionflow:linked:digital-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sybil Attack]]",
-      "resolved": "urn:visionflow:linked:sybil-attack",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

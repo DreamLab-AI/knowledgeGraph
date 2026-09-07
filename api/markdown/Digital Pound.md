@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Pound
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-pound:eb2a34954550",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cd1ae895983abd4c65b9cf01c07c4e5afaea2ea479fbf035777fa65ee9a86171"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bank of England]]",
-      "resolved": "urn:visionflow:linked:bank-of-england",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment System]]",
-      "resolved": "urn:visionflow:linked:payment-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CBDC Cross-Border Settlement]]",
-      "resolved": "urn:visionflow:linked:cbdc-cross-border-settlement",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Central Bank Digital Currency]]",
-      "resolved": "urn:visionflow:linked:central-bank-digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.bankofengland.co.uk/the-digital-pound]]",
-      "resolved": "urn:visionflow:linked:https-www-bankofengland-co-uk-the-digital-pound",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.bankofengland.co.uk/paper/2023/the-digital-pound-consultation-paper]]",
-      "resolved": "urn:visionflow:linked:https-www-bankofengland-co-uk-paper-2023-the-digital-pound-consultation-paper",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Digital Pound is a proposed central bank digital currency for the United Kingdom issued by the Bank of England. It is intended for retail payments and remains under design and consultation.

@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Perimeter Security
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:perimeter-security", "@type": "Page", "title": "Perimeter Security", "vc:slug": "perimeter-security", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:perimeter-security",
+  "@type": "Page",
+  "title": "Perimeter Security",
+  "vc:slug": "perimeter-security",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

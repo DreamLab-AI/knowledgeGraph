@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI-Driven Unemployment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-driven-unemployment",
   "title": "AI-Driven Unemployment",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Labor Market Disruption", "ServiceNow CEO Prediction"],
+  "vc:outboundWikilinks": [
+    "Labor Market Disruption",
+    "ServiceNow CEO Prediction"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:labor-market-disruption", "label": "Labor Market Disruption"}, {"@id": "urn:ngm:class:ai-impact-on-employment", "label": "AI Impact on Employment"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:labor-market-disruption",
+        "label": "Labor Market Disruption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-on-employment",
+        "label": "AI Impact on Employment"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",
@@ -39,6 +51,6 @@ public: true
 ```
 
 - ### Overview
-  - **[Industry analysis]** ServiceNow CEO Bill McDermott warned that unemployment for college graduates could easily go into the mid-30s in the next couple of years due to AI agents. *(Source: Bill McDermott, via AI Daily Brief, 2026-08-25)*
+  - **[Industry analysis]** ServiceNow CEO Bill McDermott warned that unemployment for college graduates [private] easily go into the mid-30s in the next couple of years due to AI agents. *(Source: Bill McDermott, via AI Daily Brief, 2026-08-25)*
 - ### Relationships
 - ### Provenance

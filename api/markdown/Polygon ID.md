@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Polygon ID
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:polygon-id:c90beb03b435",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:95e531c91beb94f14ef7c49acf52a00a5af93887d919270c1c99eb827e32c1dd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:linked:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Polygon]]",
-      "resolved": "urn:visionflow:linked:polygon",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Identity]]",
-      "resolved": "urn:visionflow:linked:decentralized-identity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A decentralised identity framework that uses zero-knowledge proofs to let users present verifiable credentials without revealing the underlying data.

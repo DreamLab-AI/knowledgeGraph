@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[ChatGPT]]
-# Instruction-Following Conversational AI System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,7 +179,7 @@ elevatedFrom:: [[ChatGPT]]
 - ### Overview
   - Instruction-following conversational AI systems emerged as the productive synthesis of three prior research threads: large-scale [[Pre Training]] on internet corpora, [[Fine Tuning]] on curated task demonstrations, and preference-based alignment via [[Reinforcement Learning from Human Feedback]].
   - The defining characteristic is generalisation: a single model trained on diverse instructions can answer factual questions, write and debug code, analyse documents, and engage in extended multi-turn dialogue without mode-switching or specialised modules.
-  - Consumer deployment — exemplified by [[ChatGPT]]'s release in November 2022 — demonstrated that general-purpose [[Conversational AI]] could operate at internet scale, fundamentally shifting public and enterprise expectations of AI capability.
+  - Consumer deployment — exemplified by [[ChatGPT]]'s release in November 2022 — demonstrated that general-purpose [[Conversational AI]] [private] operate at internet scale, fundamentally shifting public and enterprise expectations of AI capability.
   - The practical utility of these systems is inseparable from [[Prompt Engineering]]: the skill of formulating instructions that reliably elicit desired model behaviour, a discipline that emerged as a direct consequence of this class's flexibility.
   - Latent risks — including [[Hallucination in Language Models]], susceptibility to adversarial prompt injection, and potential for misuse — drove parallel research into [[AI Safety]] and triggered regulatory attention, most notably from the [[EU AI Act Regulatory Instrument]].
 

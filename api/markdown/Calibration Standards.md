@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Calibration Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,67 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:calibration-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:093a66b40194df24248125be041d4f97cb6d69e1ae4764d3a14377b98edcec89"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Device Alignment]]",
-      "resolved": "urn:visionflow:linked:device-alignment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Measurement Accuracy]]",
-      "resolved": "urn:visionflow:linked:measurement-accuracy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reference Materials]]",
-      "resolved": "urn:visionflow:linked:reference-materials",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Traceability Chain]]",
-      "resolved": "urn:visionflow:linked:traceability-chain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Validation Procedures]]",
-      "resolved": "urn:visionflow:linked:validation-procedures",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quality Assurance]]",
-      "resolved": "urn:visionflow:owl:class:quality-assurance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:owl:class:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.

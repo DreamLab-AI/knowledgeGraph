@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BIM Virtual Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -115,72 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bim-virtual-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f34276247e9d10c5ddf7c74900704f8649629dfe4e5da7203626248d11b40313"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Clash Detection]]",
-      "resolved": "urn:visionflow:linked:clash-detection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Construction Simulation]]",
-      "resolved": "urn:visionflow:linked:construction-simulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Design Data]]",
-      "resolved": "urn:visionflow:linked:design-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Design Visualization]]",
-      "resolved": "urn:visionflow:linked:design-visualization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Modeling Standards]]",
-      "resolved": "urn:visionflow:linked:modeling-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Model]]",
-      "resolved": "urn:visionflow:owl:class:3-d-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BIM Software]]",
-      "resolved": "urn:visionflow:owl:class:bim-software",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection throughout the construction lifecycle.

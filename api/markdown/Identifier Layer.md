@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Identifier Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,67 +103,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:identifier-layer:0b50ecb111a3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d8e237dc19e3eb1f2923a1814c544fb1f0c88ef0b5344a09ef7d09cdc9289378"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Layer]]",
-      "resolved": "urn:visionflow:linked:data-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Layer]]",
-      "resolved": "urn:visionflow:linked:cryptographic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Layer]]",
-      "resolved": "urn:visionflow:linked:identity-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Custody Layer]]",
-      "resolved": "urn:visionflow:linked:custody-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Uniform Resource Identifier]]",
-      "resolved": "urn:visionflow:linked:uniform-resource-identifier",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Namespace]]",
-      "resolved": "urn:visionflow:linked:namespace",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[W3C (World Wide Web Consortium)]]",
-      "resolved": "urn:visionflow:linked:w-3-c-world-wide-web-consortium",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Identifier Layer is the stratum that defines and manages the names and references used to denote entities unambiguously. It sits above the data and cryptographic primitives that make identifiers durable and verifiable and below the Identity Layer that binds meaning to them. It contains naming schemes, resolution mechanisms, and uniqueness guarantees.

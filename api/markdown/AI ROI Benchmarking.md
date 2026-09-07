@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI ROI Benchmarking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-roi-benchmarking",
   "title": "AI ROI Benchmarking",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Enterprise AI Value", "Use Case Performance"],
+  "vc:outboundWikilinks": [
+    "Enterprise AI Value",
+    "Use Case Performance"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:enterprise-ai",
+      "label": "Enterprise AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"}, {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}, {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

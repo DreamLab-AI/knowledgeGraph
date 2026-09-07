@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Clearing And Settlement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -121,6 +117,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Clearing and settlement are the post-trade processes that finalise a financial transaction: clearing reconciles, nets and confirms the obligations between counterparties, while settlement effects the actual transfer of securities and funds to discharge those obligations. Central counterparties and securities depositories reduce counterparty risk by interposing themselves and managing margin. The integrity of these processes underpins the stability of payment and securities markets.
   - Related concepts: [[Financial Infrastructure]] [[Settlement]] [[Payment System]] [[Securities Settlement]] [[Real-Time Gross Settlement]]

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Context Awareness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,18 +59,36 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:context-awareness", "label": "Context Awareness"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:context-awareness",
+        "label": "Context Awareness"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:personalized-virtual-experiences", "label": "Personalized Virtual Experiences"},
-      {"@id": "urn:ngm:class:predictive-personalization", "label": "Predictive Personalization"}
+      {
+        "@id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"}
+      {
+        "@id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
     ]
   },
   "provenance": {
@@ -85,37 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:user-context-awareness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0e86cfc449d345e9b2b42057999acf911de17a01c78489d71bc81e12e8e86f2d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Context-Aware Computing]]",
-      "resolved": "urn:visionflow:owl:class:context-aware-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The capability of digital systems to understand and adapt to a user's current situation, including their location, activity, preferences, device capabilities, and environmental factors to provide personalized and relevant experiences.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Edge Gateway
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "An edge gateway is a network device or software component deployed at the boundary between a local edge environment and wider network infrastructure—such as the internet or a cloud backend—that performs protocol translation, security enforcement, traffic routing, and local data preprocessing before forwarding selected data to upstream systems. Edge gateways aggregate data from IoT devices, sensors, and local compute nodes, filter and normalise it, enforce access control policies, and reduce bandwidth consumption by processing and compressing data at the point of collection rather than transmitting raw streams to the cloud. They are essential components of edge computing architectures in industrial IoT, smart cities, autonomous systems, and distributed XR infrastructure.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:edge-computing-node", "label": "Edge Computing Node"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:edge-computing-node",
+      "label": "Edge Computing Node"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:edge-orchestration", "label": "Edge Orchestration"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:edge-network", "label": "Edge Network"},
-      {"@id": "urn:ngm:class:edge-computing-architecture", "label": "Edge Computing Architecture"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:edge-network",
+        "label": "Edge Network"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing-architecture",
+        "label": "Edge Computing Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ]
   },
   "quality": 0.8

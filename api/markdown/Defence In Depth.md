@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Defence In Depth
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,41 +20,100 @@ public: true
   "definition": "Defence in Depth is a cybersecurity strategy that layers multiple independent security controls such that the failure of any single control does not expose the system to compromise. Originating from military doctrine, it applies redundancy and diversity across physical, technical, and administrative security dimensions. The strategy reduces the probability of successful attack by requiring adversaries to defeat multiple independent barriers sequentially.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:security-architecture", "label": "Security Architecture"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:resilience", "label": "Resilience"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:intrusion-detection-system", "label": "Intrusion Detection System"},
-      {"@id": "urn:ngm:class:firewall", "label": "Firewall"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      },
+      {
+        "@id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:security-policy", "label": "Security Policy"},
-      {"@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling"}
+      {
+        "@id": "urn:ngm:class:security-policy",
+        "label": "Security Policy"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-segmentation", "label": "Network Segmentation"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"}
+      {
+        "@id": "urn:ngm:class:network-segmentation",
+        "label": "Network Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:perimeter-security", "label": "Perimeter Security"}
+      {
+        "@id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:cloud-security", "label": "Cloud Security"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"}
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
     ]
   },
   "quality": 0.62,

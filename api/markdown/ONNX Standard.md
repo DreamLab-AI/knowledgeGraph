@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ONNX Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:onnx-standard:30d8628d516e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7c0af9bcd6ce2c8e1f6f9a0171dad1a5bd9f189151a85e03435e393940d22ae3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ONNX]]",
-      "resolved": "urn:visionflow:linked:onnx",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Rendering]]",
-      "resolved": "urn:visionflow:linked:neural-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Open Standards]]",
-      "resolved": "urn:visionflow:linked:open-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The ONNX standard defines an open format for representing machine learning models as a computation graph of typed operators, enabling models to move between training and inference frameworks.

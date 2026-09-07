@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Workforce Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,52 @@ public: true
   "definition": "Workforce Management (WFM) encompasses the integrated set of processes, technologies, and practices that organisations use to optimise employee productivity, schedule labour resources, track attendance and time, manage compliance with labour regulations, and forecast staffing requirements. Modern WFM systems combine real-time data on demand, skill availability, and operational constraints to generate optimised schedules, and increasingly incorporate AI-driven forecasting and adaptive scheduling algorithms. The field is undergoing significant transformation as AI automation shifts skill requirements, gig economy models create more fluid workforce composition, and remote and hybrid working patterns demand new coordination approaches.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:workforce-development", "label": "Workforce Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:workforce-development",
+      "label": "Workforce Development"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:workforce-augmentation", "label": "Workforce Augmentation"},
-      {"@id": "urn:ngm:class:augmented-connected-workforce", "label": "Augmented Connected Workforce"},
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"}
+      {
+        "@id": "urn:ngm:class:workforce-augmentation",
+        "label": "Workforce Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
+      },
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:automated-compliance", "label": "Automated Compliance"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:automated-compliance",
+        "label": "Automated Compliance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-driven-workforce-displacement-registry", "label": "AI-Driven Workforce Displacement Registry"}
+      {
+        "@id": "urn:ngm:class:ai-driven-workforce-displacement-registry",
+        "label": "AI-Driven Workforce Displacement Registry"
+      }
     ]
   },
   "quality": 0.8

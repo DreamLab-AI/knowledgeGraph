@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Investment Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,17 +55,38 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:investment-management:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b63a987575e9b678a506e9db6aeed1a8fe03c15b81be7738b85dcc23ed93d837"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Investment Management is a concept within the metaverse domain. Further enrichment pending.

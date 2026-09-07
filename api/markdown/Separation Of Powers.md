@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Separation Of Powers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,47 +82,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:separation-of-powers:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:22090cced5f0bc5190bf785464da370aacff6a9ee6e7fde24687ce2813420a00"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralized Control]]",
-      "resolved": "urn:visionflow:linked:decentralized-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO Governance]]",
-      "resolved": "urn:visionflow:owl:class:dao-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Governance design patterns in decentralized autonomous organizations that distribute authority across distinct functional roles, preventing concentration of control through checks and balances between proposal creation, voting, execution, and oversight functions.

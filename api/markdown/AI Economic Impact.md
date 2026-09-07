@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Economic Impact
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-economic-impact",
   "title": "AI Economic Impact",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Labor Capital Balance", "Sam Altman"],
+  "vc:outboundWikilinks": [
+    "Labor Capital Balance",
+    "Sam Altman"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:economics", "label": "Economics"}, {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

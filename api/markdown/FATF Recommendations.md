@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FATF Recommendations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fatf-recommendations:8b6b0174e171",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ab23fc7695fe1e306ce76cd6a688e162604605ce64d601a0c8f3d35990f2e03b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Frameworks]]",
-      "resolved": "urn:visionflow:linked:regulatory-frameworks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Travel Rule]]",
-      "resolved": "urn:visionflow:linked:travel-rule",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Know Your Customer]]",
-      "resolved": "urn:visionflow:linked:know-your-customer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Anti-Money Laundering]]",
-      "resolved": "urn:visionflow:linked:anti-money-laundering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html]]",
-      "resolved": "urn:visionflow:linked:https-www-fatf-gafi-org-en-publications-fatfrecommendations-fatf-recommendations-html",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.fatf-gafi.org/]]",
-      "resolved": "urn:visionflow:linked:https-www-fatf-gafi-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The FATF Recommendations are international standards on combating money laundering, terrorist financing and proliferation financing issued by the Financial Action Task Force.

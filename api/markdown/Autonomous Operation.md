@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Autonomous Operation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,42 +7,150 @@ public: true
   "title": "Autonomous Operation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:autonomous-behavior", "vc:label": "Autonomous Behavior"},
-    {"@id": "urn:visionflow:linked:feedback-control", "vc:label": "Feedback Control"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:autonomous-mobile-robots", "vc:label": "Autonomous Mobile Robots"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:functional-safety", "vc:label": "Functional Safety"},
-    {"@id": "urn:visionflow:linked:monitoring-system", "vc:label": "Monitoring System"},
-    {"@id": "urn:visionflow:linked:autonomous-system", "vc:label": "Autonomous System"},
-    {"@id": "urn:visionflow:linked:autonomic-computing", "vc:label": "Autonomic Computing"},
-    {"@id": "urn:visionflow:linked:self-healing-system", "vc:label": "Self-Healing System"},
-    {"@id": "urn:visionflow:linked:fault-tolerant-control", "vc:label": "Fault-Tolerant Control"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:operational-design-domain", "vc:label": "Operational Design Domain"},
-    {"@id": "urn:visionflow:linked:decision-engine", "vc:label": "Decision Engine"},
-    {"@id": "urn:visionflow:linked:perception-module", "vc:label": "Perception Module"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "Multi-Agent Orchestration"},
-    {"@id": "urn:visionflow:linked:autonomous-task-execution", "vc:label": "Autonomous Task Execution"},
-    {"@id": "urn:visionflow:linked:robotic-process-automation", "vc:label": "Robotic Process Automation"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:nist-ai-rmf", "vc:label": "NIST AI RMF"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:process-automation", "vc:label": "Process Automation"},
-    {"@id": "urn:visionflow:linked:distributed-control-system", "vc:label": "Distributed Control System"},
-    {"@id": "urn:visionflow:linked:aiops", "vc:label": "AIOps"},
-    {"@id": "urn:visionflow:linked:cognitive-architecture", "vc:label": "Cognitive Architecture"},
-    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection"},
-    {"@id": "urn:visionflow:linked:agent-loop", "vc:label": "Agent Loop"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"}
+    {
+      "@id": "urn:visionflow:linked:autonomous-behavior",
+      "vc:label": "Autonomous Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedback-control",
+      "vc:label": "Feedback Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-mobile-robots",
+      "vc:label": "Autonomous Mobile Robots"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:functional-safety",
+      "vc:label": "Functional Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:monitoring-system",
+      "vc:label": "Monitoring System"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-system",
+      "vc:label": "Autonomous System"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomic-computing",
+      "vc:label": "Autonomic Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-healing-system",
+      "vc:label": "Self-Healing System"
+    },
+    {
+      "@id": "urn:visionflow:linked:fault-tolerant-control",
+      "vc:label": "Fault-Tolerant Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:operational-design-domain",
+      "vc:label": "Operational Design Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-engine",
+      "vc:label": "Decision Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:perception-module",
+      "vc:label": "Perception Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "Multi-Agent Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-task-execution",
+      "vc:label": "Autonomous Task Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-process-automation",
+      "vc:label": "Robotic Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-automation",
+      "vc:label": "Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-control-system",
+      "vc:label": "Distributed Control System"
+    },
+    {
+      "@id": "urn:visionflow:linked:aiops",
+      "vc:label": "AIOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-architecture",
+      "vc:label": "Cognitive Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-loop",
+      "vc:label": "Agent Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -62,53 +165,148 @@ public: true
   "definition": "The sustained execution of a system's core functions without ongoing human intervention, encompassing self-monitoring, self-configuration, self-healing, and self-optimisation capabilities that allow the system to maintain operational objectives across varying environmental conditions and failure states. Autonomous operation represents the highest level of system self-sufficiency on the automation continuum.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous System"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:autonomous-behavior", "label": "Autonomous Behavior"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:perception-module", "label": "Perception Module"},
-      {"@id": "urn:ngm:class:decision-engine", "label": "Decision Engine"},
-      {"@id": "urn:ngm:class:fault-tolerant-control", "label": "Fault-Tolerant Control"}
+      {
+        "@id": "urn:ngm:class:autonomous-behavior",
+        "label": "Autonomous Behavior"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:perception-module",
+        "label": "Perception Module"
+      },
+      {
+        "@id": "urn:ngm:class:decision-engine",
+        "label": "Decision Engine"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerant-control",
+        "label": "Fault-Tolerant Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:autonomous-mobile-robots", "label": "Autonomous Mobile Robots"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"},
-      {"@id": "urn:ngm:class:process-automation", "label": "Process Automation"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:self-healing-system", "label": "Self-Healing System"},
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:decision-engine", "label": "Decision Engine"}
+      {
+        "@id": "urn:ngm:class:self-healing-system",
+        "label": "Self-Healing System"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:decision-engine",
+        "label": "Decision Engine"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:autonomic-computing", "label": "Autonomic Computing"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"}
+      {
+        "@id": "urn:ngm:class:autonomic-computing",
+        "label": "Autonomic Computing"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:aiops", "label": "AIOps"},
-      {"@id": "urn:ngm:class:distributed-control-system", "label": "Distributed Control System"},
-      {"@id": "urn:ngm:class:operational-design-domain", "label": "Operational Design Domain"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:aiops",
+        "label": "AIOps"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-control-system",
+        "label": "Distributed Control System"
+      },
+      {
+        "@id": "urn:ngm:class:operational-design-domain",
+        "label": "Operational Design Domain"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"}
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ]
   },
   "quality": 0.9,
@@ -230,18 +428,18 @@ public: true
         ObjectSomeValuesFrom(ai:standardizedBy ai:FunctionalSafety))
 
   ## About
-    The concept of autonomous operation emerged from two parallel intellectual traditions that converged in the early 21st century: industrial control engineering and computer science's autonomic computing movement. In process industry, the 1950s–1980s saw progressive automation of chemical plants, oil refineries, and power stations using programmable logic controllers (PLCs) and [[Distributed Control System]] (DCS) architectures that automated the execution of defined procedures and responded to sensor-based alarms. The aviation industry developed autopilot systems that could maintain cruise altitude, heading, and speed without pilot input, demonstrating that complex physical systems could operate autonomously within bounded conditions while reserving human oversight for high-level decisions and anomalies. These physical-domain systems shared a common architecture: sense (measure current state), compare (evaluate against reference or goal), and act (apply corrective input) — the classical feedback control loop that remains the architectural primitive of all autonomous operation systems.
+    The concept of autonomous operation emerged from two parallel intellectual traditions that converged in the early 21st century: industrial control engineering and computer science's autonomic computing movement. In process industry, the 1950s–1980s saw progressive automation of chemical plants, oil refineries, and power stations using programmable logic controllers (PLCs) and [[Distributed Control System]] (DCS) architectures that automated the execution of defined procedures and responded to sensor-based alarms. The aviation industry developed autopilot systems that [private] maintain cruise altitude, heading, and speed without pilot input, demonstrating that complex physical systems [private] operate autonomously within bounded conditions while reserving human oversight for high-level decisions and anomalies. These physical-domain systems shared a common architecture: sense (measure current state), compare (evaluate against reference or goal), and act (apply corrective input) — the classical feedback control loop that remains the architectural primitive of all autonomous operation systems.
 
-    The software and computing domain developed its own parallel tradition. Paul Horn's 2001 IBM keynote at the National Academy of Engineers at Harvard articulated the autonomic computing vision in response to a looming complexity crisis: software systems had grown so complex — tens of millions of lines of code, thousands of interdependent services — that human administrators could no longer manage them effectively. Inspired by the autonomic nervous system's capacity to regulate bodily functions without conscious attention, Horn proposed that computing systems should develop analogous self-managing capabilities. Kephart and Chess's 2003 IEEE Computer paper "The Vision of Autonomic Computing" formalised the framework: self-configuration (automatic installation, configuration, and integration of components); self-healing (detection, diagnosis, and repair of software and hardware problems); self-optimisation (monitoring and tuning of performance); and self-protection (anticipation and defence against attacks). This CHOP (Configure, Heal, Optimise, Protect) framing has remained the standard taxonomy for autonomous operation capabilities across both computing and physical-system domains for over two decades.
+    The software and computing domain developed its own parallel tradition. Paul Horn's 2001 IBM keynote at the National Academy of Engineers at Harvard articulated the autonomic computing vision in response to a looming complexity crisis: software systems had grown so complex — tens of millions of lines of code, thousands of interdependent services — that human administrators [private] no longer manage them effectively. Inspired by the autonomic nervous system's capacity to regulate bodily functions without conscious attention, Horn proposed that computing systems should develop analogous self-managing capabilities. Kephart and Chess's 2003 IEEE Computer paper "The Vision of Autonomic Computing" formalised the framework: self-configuration (automatic installation, configuration, and integration of components); self-healing (detection, diagnosis, and repair of software and hardware problems); self-optimisation (monitoring and tuning of performance); and self-protection (anticipation and defence against attacks). This CHOP (Configure, Heal, Optimise, Protect) framing has remained the standard taxonomy for autonomous operation capabilities across both computing and physical-system domains for over two decades.
 
-    The integration of artificial intelligence into autonomous operation systems deepened progressively through the 2010s and accelerated dramatically in 2024–2026. The first generation of intelligent autonomous operation used rule-based expert systems and model-based control: fault detection and isolation (FDI) algorithms applied statistical process monitoring to detect anomalies, model-predictive control (MPC) algorithms optimised system trajectories, and case-based reasoning systems retrieved prior incident responses. The second generation added machine learning for anomaly detection, predictive maintenance, and adaptive control: neural network-based anomaly detectors trained on normal operational data could detect subtle deviations invisible to threshold-based alerts, gradient-boosted classifiers could predict equipment failures hours or days before they occurred from vibration, temperature, and electrical signatures. The third generation — now emerging in 2024–2026 — adds [[Large Language Models]] and [[Agentic AI]] capabilities: language-capable reasoning systems that can interpret natural-language fault descriptions, query technical documentation, generate remediation plans, and execute multi-step recovery procedures without operator direction. Nearly 71% of large enterprises are expected to deploy AI agents to support self-healing operations by 2026, with organisations already deploying self-healing mechanisms reporting USD 2–5 million in annual savings from reduced incidents and up to 50% reduction in IT operational workload.
+    The integration of artificial intelligence into autonomous operation systems deepened progressively through the 2010s and accelerated dramatically in 2024–2026. The first generation of intelligent autonomous operation used rule-based expert systems and model-based control: fault detection and isolation (FDI) algorithms applied statistical process monitoring to detect anomalies, model-predictive control (MPC) algorithms optimised system trajectories, and case-based reasoning systems retrieved prior incident responses. The second generation added machine learning for anomaly detection, predictive maintenance, and adaptive control: neural network-based anomaly detectors trained on normal operational data [private] detect subtle deviations invisible to threshold-based alerts, gradient-boosted classifiers [private] predict equipment failures hours or days before they occurred from vibration, temperature, and electrical signatures. The third generation — now emerging in 2024–2026 — adds [[Large Language Models]] and [[Agentic AI]] capabilities: language-capable reasoning systems that can interpret natural-language fault descriptions, query technical documentation, generate remediation plans, and execute multi-step recovery procedures without operator direction. Nearly 71% of large enterprises are expected to deploy AI agents to support self-healing operations by 2026, with organisations already deploying self-healing mechanisms reporting USD 2–5 million in annual savings from reduced incidents and up to 50% reduction in IT operational workload.
 
     The governance dimension of autonomous operation has become a primary concern as AI systems extend autonomous operation to high-stakes domains. The EU AI Act (2024) does not prohibit fully automated operation but requires high-risk AI systems — including those used as safety components in critical infrastructure management — to be designed so that human operators can oversee their functioning, intervene when necessary, and ensure they do not cause harm. In the EU framework, the degree of human oversight is a primary determinant of risk classification: systems that take consequential actions without per-step human approval are subject to conformity assessment, mandatory audit trails, and capability disclosure requirements that simpler automation is exempt from. This creates a structural tension in autonomous operation design: the efficiency benefits of increased autonomy must be balanced against the accountability obligations that autonomy triggers.
 
   ## Components / Architecture
     **Sensing and Situation Awareness ([[Perception Module]])**
 
-    All autonomous operation systems begin with a comprehensive, reliable picture of current state. In industrial systems, this means a sensor network providing real-time readings of temperatures, pressures, flows, vibration spectra, electrical parameters, and equipment states, aggregated into a digital plant model. In cloud computing, it means telemetry streams from thousands of service instances, network flows, storage throughput, and application-level metrics aggregated in an [[AIOps]] platform. In [[Agentic AI]] systems, it means tool-retrieved observations from APIs, databases, file systems, and web sources that constitute the agent's current understanding of task state. The common architectural requirement is that the autonomous system must have higher-quality situation awareness than a human operator could maintain, because unlike a human who can ask colleagues or consult documentation when uncertain, the autonomous system must make decisions from its current sensor picture alone (or retrieve additional data through defined tool calls). Gaps or errors in situation awareness are the most common root cause of autonomous operation failures.
+    All autonomous operation systems begin with a comprehensive, reliable picture of current state. In industrial systems, this means a sensor network providing real-time readings of temperatures, pressures, flows, vibration spectra, electrical parameters, and equipment states, aggregated into a digital plant model. In cloud computing, it means telemetry streams from thousands of service instances, network flows, storage throughput, and application-level metrics aggregated in an [[AIOps]] platform. In [[Agentic AI]] systems, it means tool-retrieved observations from APIs, databases, file systems, and web sources that constitute the agent's current understanding of task state. The common architectural requirement is that the autonomous system must have higher-quality situation awareness than a human operator [private] maintain, because unlike a human who can ask colleagues or consult documentation when uncertain, the autonomous system must make decisions from its current sensor picture alone (or retrieve additional data through defined tool calls). Gaps or errors in situation awareness are the most common root cause of autonomous operation failures.
 
     **[[Decision Engine]] and Control Logic**
 
@@ -266,7 +464,7 @@ public: true
   ## Use Cases / Major Families
     **Industrial Process Control** is the original and largest domain of autonomous operation. Chemical plants, oil refineries, cement kilns, paper mills, and semiconductor fabs operate continuously with advanced process control (APC) systems that autonomously optimise yield, energy consumption, and product quality by adjusting hundreds of control variables simultaneously within defined safety constraints. Real-time optimisation (RTO) algorithms solve constrained optimisation problems at each control cycle. The defining characteristic is that shutting down these processes even briefly for human decision-making would cost tens or hundreds of thousands of pounds per hour; autonomous operation is an economic necessity. The UK has major deployments at Humber Refineries (Phillips 66), Grangemouth (INEOS), and ExxonMobil Fawley.
 
-    **Power Grid Management** relies on autonomous operation for the millisecond-to-minute timescales at which grid stability is maintained. Automatic generation control (AGC) balances supply and demand in real time. Protection relays detect faults on transmission lines and disconnect them within milliseconds — far faster than any human could respond. Energy management systems (EMS) autonomously schedule generation dispatch, coordinate reactive power compensation, and manage grid interconnections. The National Grid ESO in the UK operates the GB electricity grid largely autonomously at the control level, with human operators providing strategic oversight and responding to system events flagged by automated alerting. The transition to renewable energy (wind and solar with variable output) is increasing the complexity and the importance of autonomous grid operation.
+    **Power Grid Management** relies on autonomous operation for the millisecond-to-minute timescales at which grid stability is maintained. Automatic generation control (AGC) balances supply and demand in real time. Protection relays detect faults on transmission lines and disconnect them within milliseconds — far faster than any human [private] respond. Energy management systems (EMS) autonomously schedule generation dispatch, coordinate reactive power compensation, and manage grid interconnections. The National Grid ESO in the UK operates the GB electricity grid largely autonomously at the control level, with human operators providing strategic oversight and responding to system events flagged by automated alerting. The transition to renewable energy (wind and solar with variable output) is increasing the complexity and the importance of autonomous grid operation.
 
     **Cloud Computing and [[AIOps]]** represents the fastest-growing autonomous operation domain. Cloud platforms automatically scale compute resources up and down in response to load signals, redeploy failed workloads, rotate credentials, apply security patches, and reroute traffic around failures — all autonomously. [[AIOps]] platforms such as ServiceNow AI Operations, Dynatrace, and PagerDuty apply machine learning to correlate alerts from thousands of monitoring sources, identify root causes, and trigger automated remediation workflows. In 2025–2026, AI agents augment these platforms with natural-language reasoning: agents can read post-incident reports, query documentation, and generate novel remediation scripts for fault types the existing playbook library does not cover.
 

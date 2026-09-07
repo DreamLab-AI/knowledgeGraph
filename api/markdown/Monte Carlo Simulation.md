@@ -1,62 +1,126 @@
----
-public: true
----
-
-# Monte Carlo Simulation
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:monte-carlo-simulation", "@type":"Page", "title":"Monte Carlo Simulation", "vc:slug":"monte-carlo-simulation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:monte-carlo-simulation",
+  "@type": "Page",
+  "title": "Monte Carlo Simulation",
+  "vc:slug": "monte-carlo-simulation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:monte-carlo-simulation",
-  "@type":"Class",
-  "label":"Monte Carlo Simulation",
-  "definition":"Monte Carlo simulation is a computational technique that estimates the behaviour of a system or the value of a quantity by repeatedly sampling random inputs from probability distributions and aggregating the resulting outcomes. By running many random trials it approximates expectations, distributions and tail risks that are difficult to derive analytically. It is widely used for numerical integration, risk analysis and uncertainty quantification.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:simulation","label":"Simulation"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:simulation","label":"Simulation"},
-      {"@id":"urn:ngm:class:numerical-methods","label":"Numerical Methods"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:monte-carlo-simulation",
+  "@type": "Class",
+  "label": "Monte Carlo Simulation",
+  "definition": "Monte Carlo simulation is a computational technique that estimates the behaviour of a system or the value of a quantity by repeatedly sampling random inputs from probability distributions and aggregating the resulting outcomes. By running many random trials it approximates expectations, distributions and tail risks that are difficult to derive analytically. It is widely used for numerical integration, risk analysis and uncertainty quantification.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:random-sampling","label":"Random Sampling"},
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:uncertainty-quantification","label":"Uncertainty Quantification"},
-      {"@id":"urn:ngm:class:risk-assessment-methodology","label":"Risk Assessment Methodology"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"},
-      {"@id":"urn:ngm:class:central-limit-theorem","label":"Central Limit Theorem"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:central-limit-theorem",
+        "label": "Central Limit Theorem"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:random-sampling","label":"Random Sampling"},
-      {"@id":"urn:ngm:class:variance-reduction","label":"Variance Reduction"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:sensitivity-analysis","label":"Sensitivity Analysis"},
-      {"@id":"urn:ngm:class:financial-modelling","label":"Financial Modelling"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:financial-modelling",
+        "label": "Financial Modelling"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:numerical-methods","label":"Numerical Methods"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:risk-assessment-methodology","label":"Risk Assessment Methodology"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:simulation","label":"Simulation"},
-      {"@id":"urn:ngm:class:sensitivity-analysis","label":"Sensitivity Analysis"},
-      {"@id":"urn:ngm:class:bayesian-inference","label":"Bayesian Inference"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

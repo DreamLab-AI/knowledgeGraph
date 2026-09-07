@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Material System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -220,41 +215,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:material-system:b98aebaa74c0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bd31c4bfda095f70a778fc845de98bc4d5518fbc9bc6e5c301d116156d3e9236"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Material Science]]",
-      "resolved": "urn:visionflow:linked:material-science",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Simulation]]",
-      "resolved": "urn:visionflow:linked:simulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Complex Systems]]",
-      "resolved": "urn:visionflow:linked:complex-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A **Material System** is an engineered assembly of two or more distinct materials — together with their [[Interface]], interphases, and boundary conditions — designed and optimised as a coherent unit to deliver specified combinations of mechanical, thermal, electrical, optical, or biological properties. Unlike the study of isolated constituents in [[Material Science]], a material system treats the ensemble and its emergent behaviour as the primary object of analysis. Performance arises from interactions across scales: atomic bonding at interfaces, grain-level stress transfer, and macro-scale deformation, all governed by [[Thermodynamics]], [[Mechanics of Materials]], and processing history. The field underpins modern [[Engineering Design]] in aerospace, biomedical, energy, and electronic applications.
 
@@ -316,7 +276,7 @@ public: true
     - Solid oxide fuel cells integrate ceramic electrolyte membranes with metallic interconnects — a material system defined by simultaneous ionic conductivity, gas-tightness, and thermal compatibility requirements.
   - **Smart and Adaptive Systems**
     - [[Smart Material]] systems couple structural and functional materials: piezoelectric actuators embedded in composite host structures enable active vibration control and structural health monitoring.
-    - [[Metamaterial]] architectures engineer effective properties (negative Poisson ratio, negative refractive index) through geometric design at sub-wavelength scales, extending material system design into the realm of architected matter.
+    - [[Metamaterial]] architectures engineer effective properties (negative Poisson ratio, negative refractive [private]) through geometric design at sub-wavelength scales, extending material system design into the realm of architected matter.
 
 - ### Relationships
   - hasPart:: [[Composite Material]]

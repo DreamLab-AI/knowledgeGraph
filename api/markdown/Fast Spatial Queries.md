@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fast Spatial Queries
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,42 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fast-spatial-queries:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d601892dc395a78b9394b45e0d8b948d201bd59f0da8fc77650db2d8ecc85961"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Real-Time Metaverse Interactions]]",
-      "resolved": "urn:visionflow:linked:real-time-metaverse-interactions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Optimised algorithms and data structures enabling rapid retrieval and processing of three-dimensional location-based data in metaverse environments, supporting real-time collision detection, proximity searches, visibility calculations, and spatial indexing for interactive virtual world experiences.

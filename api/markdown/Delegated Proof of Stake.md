@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DelegatedProofOfStake
----
-
-# Delegated Proof of Stake
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -73,24 +66,60 @@ aliases:
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:nominated-proof-of-stake", "label": "Nominated Proof of Stake"},
-      {"@id": "urn:ngm:class:liquid-proof-of-stake", "label": "Liquid Proof of Stake"},
-      {"@id": "urn:ngm:class:delegate-democracy", "label": "Delegate Democracy"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:nominated-proof-of-stake",
+        "label": "Nominated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-proof-of-stake",
+        "label": "Liquid Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:delegate-democracy",
+        "label": "Delegate Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
-      {"@id": "urn:ngm:class:epoch", "label": "Epoch"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
     ]
   },
   "quality": 0.8,
@@ -101,47 +130,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:delegated-proof-of-stake:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ac6365140b4cfefd91a80ab425d376a29dcc63a2a6014663c178344d102b4eae"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A PoS variant where network participants have the right to delegate the production of new blocks to a fixed number of delegates (witnesses), with users determining delegates via democratic voting mechanism weighted by locked tokens.

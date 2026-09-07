@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - VirtualIdentity
----
-
-# Virtual Identity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,37 +100,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-identity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:910a040d4018e353fd693b5036240e68b3faa24a792228f7944b455024bec8e8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Identity]]",
-      "resolved": "urn:visionflow:owl:class:digital-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital representation encompassing behaviours, preferences, movements, actions, and decisions made in digital spaces, extending beyond 3D avatars to include representation, data, and identification across AR, VR, MR, and web platforms using decentralized identity technologies.

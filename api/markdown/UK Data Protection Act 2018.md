@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UK Data Protection Act 2018
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The UK Data Protection Act 2018 is the primary UK legislation governing the processing of personal data, implementing and supplementing the UK GDPR and providing the legal framework for data subjects' rights and controllers' obligations. It sets lawful bases for processing, principles such as data minimisation and purpose limitation, and is enforced by the Information Commissioner's Office.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"}, {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      }
+    ]
   },
   "quality": 0.72
 }

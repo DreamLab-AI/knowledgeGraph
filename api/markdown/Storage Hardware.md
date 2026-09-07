@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Storage Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,25 +52,58 @@ public: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:hardware-component", "label": "Hardware Component"}
+      {
+        "@id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"},
-      {"@id": "urn:ngm:class:computing-hardware", "label": "Computing Hardware"}
+      {
+        "@id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "@id": "urn:ngm:class:computing-hardware",
+        "label": "Computing Hardware"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:data-storage-layer", "label": "Data Storage Layer"},
-      {"@id": "urn:ngm:class:storage-layer", "label": "Storage Layer"}
+      {
+        "@id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      },
+      {
+        "@id": "urn:ngm:class:storage-layer",
+        "label": "Storage Layer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
-      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"}
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:processing-hardware", "label": "Processing Hardware"},
-      {"@id": "urn:ngm:class:training-hardware", "label": "Training Hardware"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
-      {"@id": "urn:ngm:class:data-processing-hardware", "label": "Data Processing Hardware"}
+      {
+        "@id": "urn:ngm:class:processing-hardware",
+        "label": "Processing Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:training-hardware",
+        "label": "Training Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:data-processing-hardware",
+        "label": "Data Processing Hardware"
+      }
     ]
   },
   "provenance": {
@@ -85,32 +113,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:storage-hardware:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fa6ea870e942376ee4b0d335fbabdabf70e09e2b35211d56e7099ff7505625c7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware Component]]",
-      "resolved": "urn:visionflow:owl:class:hardware-component",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A storage hardware component in the Metaverse domain that required by DataStorageLayer.

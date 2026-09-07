@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Algorithmic Complexity
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:algorithmic-complexity", "@type":"Page", "title":"Algorithmic Complexity", "vc:slug":"algorithmic-complexity", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:algorithmic-complexity",
+  "@type": "Page",
+  "title": "Algorithmic Complexity",
+  "vc:slug": "algorithmic-complexity",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Constraint Solver
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Constraint Solver",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:constraint-satisfaction", "vc:label": "Constraint Satisfaction"},
-    {"@id": "urn:visionflow:linked:constraint-propagation", "vc:label": "Constraint Propagation"},
-    {"@id": "urn:visionflow:linked:backtracking-search", "vc:label": "Backtracking Search"},
-    {"@id": "urn:visionflow:linked:arc-consistency", "vc:label": "Arc Consistency"},
-    {"@id": "urn:visionflow:linked:search-algorithm", "vc:label": "Search Algorithm"},
-    {"@id": "urn:visionflow:linked:automated-planning", "vc:label": "Automated Planning"},
-    {"@id": "urn:visionflow:linked:motion-planning", "vc:label": "Motion Planning"},
-    {"@id": "urn:visionflow:linked:planning-and-scheduling", "vc:label": "Planning and Scheduling"},
-    {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"},
-    {"@id": "urn:visionflow:linked:combinatorial-optimisation", "vc:label": "Combinatorial Optimisation"},
-    {"@id": "urn:visionflow:linked:logic-programming", "vc:label": "Logic Programming"},
-    {"@id": "urn:visionflow:linked:satisfiability", "vc:label": "Satisfiability"},
-    {"@id": "urn:visionflow:linked:smt-solving", "vc:label": "SMT Solving"},
-    {"@id": "urn:visionflow:linked:linear-programming", "vc:label": "Linear Programming"},
-    {"@id": "urn:visionflow:linked:physics-simulation", "vc:label": "Physics Simulation"},
-    {"@id": "urn:visionflow:linked:computer-aided-design", "vc:label": "Computer-Aided Design"},
-    {"@id": "urn:visionflow:linked:heuristic-search", "vc:label": "Heuristic Search"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:constraint-based-design", "vc:label": "Constraint Based Design"},
-    {"@id": "urn:visionflow:linked:trajectory-planning", "vc:label": "Trajectory Planning"},
-    {"@id": "urn:visionflow:linked:mixed-integer-programming", "vc:label": "Mixed-Integer Programming"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:spatial-computing", "vc:label": "Spatial Computing"},
-    {"@id": "urn:visionflow:linked:symbolic-ai", "vc:label": "Symbolic AI"},
-    {"@id": "urn:visionflow:linked:branch-and-bound", "vc:label": "Branch and Bound"},
-    {"@id": "urn:visionflow:linked:operations-research", "vc:label": "Operations Research"},
-    {"@id": "urn:visionflow:linked:neuro-symbolic-ai", "vc:label": "Neuro-Symbolic AI"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:quantum-computing", "vc:label": "Quantum Computing"},
-    {"@id": "urn:visionflow:linked:gpu-computing", "vc:label": "GPU Computing"},
-    {"@id": "urn:visionflow:linked:propositional-logic", "vc:label": "Propositional Logic"},
-    {"@id": "urn:visionflow:linked:supply-chain-optimisation", "vc:label": "Supply Chain Optimisation"},
-    {"@id": "urn:visionflow:linked:decision-making", "vc:label": "Decision Making"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:interval-arithmetic", "vc:label": "Interval Arithmetic"},
-    {"@id": "urn:visionflow:linked:local-search", "vc:label": "Local Search"},
-    {"@id": "urn:visionflow:linked:graph-theory", "vc:label": "Graph Theory"},
-    {"@id": "urn:visionflow:linked:variable-ordering-heuristic", "vc:label": "Variable Ordering Heuristic"}
+    {
+      "@id": "urn:visionflow:linked:constraint-satisfaction",
+      "vc:label": "Constraint Satisfaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-propagation",
+      "vc:label": "Constraint Propagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:backtracking-search",
+      "vc:label": "Backtracking Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:arc-consistency",
+      "vc:label": "Arc Consistency"
+    },
+    {
+      "@id": "urn:visionflow:linked:search-algorithm",
+      "vc:label": "Search Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-planning",
+      "vc:label": "Automated Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-and-scheduling",
+      "vc:label": "Planning and Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-verification",
+      "vc:label": "Formal Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:combinatorial-optimisation",
+      "vc:label": "Combinatorial Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:logic-programming",
+      "vc:label": "Logic Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:satisfiability",
+      "vc:label": "Satisfiability"
+    },
+    {
+      "@id": "urn:visionflow:linked:smt-solving",
+      "vc:label": "SMT Solving"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-programming",
+      "vc:label": "Linear Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:physics-simulation",
+      "vc:label": "Physics Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-aided-design",
+      "vc:label": "Computer-Aided Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-search",
+      "vc:label": "Heuristic Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-based-design",
+      "vc:label": "Constraint Based Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:trajectory-planning",
+      "vc:label": "Trajectory Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:mixed-integer-programming",
+      "vc:label": "Mixed-Integer Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:branch-and-bound",
+      "vc:label": "Branch and Bound"
+    },
+    {
+      "@id": "urn:visionflow:linked:operations-research",
+      "vc:label": "Operations Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:neuro-symbolic-ai",
+      "vc:label": "Neuro-Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-computing",
+      "vc:label": "Quantum Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-computing",
+      "vc:label": "GPU Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:propositional-logic",
+      "vc:label": "Propositional Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-optimisation",
+      "vc:label": "Supply Chain Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-making",
+      "vc:label": "Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:interval-arithmetic",
+      "vc:label": "Interval Arithmetic"
+    },
+    {
+      "@id": "urn:visionflow:linked:local-search",
+      "vc:label": "Local Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-theory",
+      "vc:label": "Graph Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:variable-ordering-heuristic",
+      "vc:label": "Variable Ordering Heuristic"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -66,7 +181,7 @@ public: true
   "definition": "A constraint solver is a computational engine that finds assignments of values to variables such that all specified constraints — mathematical relationships, logical predicates, or physical laws — are simultaneously satisfied, drawing on techniques from constraint programming, SAT/SMT solving, linear programming, and numerical methods. Solvers operate by propagating constraint implications to prune the search space, applying backtracking or branch-and-bound search, and invoking domain-specific inference procedures that make the infeasibility of partial assignments detectable early. They are applied across planning and scheduling, combinatorial optimisation, formal verification, physics simulation, computer-aided design, and robotic motion planning.",
   "domain": "ai",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:optimisation-algorithm",
@@ -79,60 +194,180 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:constraint-propagation", "label": "Constraint Propagation"},
-      {"@id": "urn:ngm:class:backtracking-search", "label": "Backtracking Search"},
-      {"@id": "urn:ngm:class:arc-consistency", "label": "Arc Consistency"},
-      {"@id": "urn:ngm:class:variable-ordering-heuristic", "label": "Variable Ordering Heuristic"},
-      {"@id": "urn:ngm:class:branch-and-bound", "label": "Branch and Bound"},
-      {"@id": "urn:ngm:class:local-search", "label": "Local Search"}
+      {
+        "@id": "urn:ngm:class:constraint-propagation",
+        "label": "Constraint Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:backtracking-search",
+        "label": "Backtracking Search"
+      },
+      {
+        "@id": "urn:ngm:class:arc-consistency",
+        "label": "Arc Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:variable-ordering-heuristic",
+        "label": "Variable Ordering Heuristic"
+      },
+      {
+        "@id": "urn:ngm:class:branch-and-bound",
+        "label": "Branch and Bound"
+      },
+      {
+        "@id": "urn:ngm:class:local-search",
+        "label": "Local Search"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:constraint-satisfaction", "label": "Constraint Satisfaction"},
-      {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"},
-      {"@id": "urn:ngm:class:propositional-logic", "label": "Propositional Logic"}
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:combinatorial-optimisation", "label": "Combinatorial Optimisation"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:supply-chain-optimisation", "label": "Supply Chain Optimisation"}
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"},
-      {"@id": "urn:ngm:class:satisfiability", "label": "Satisfiability"},
-      {"@id": "urn:ngm:class:smt-solving", "label": "SMT Solving"},
-      {"@id": "urn:ngm:class:linear-programming", "label": "Linear Programming"},
-      {"@id": "urn:ngm:class:interval-arithmetic", "label": "Interval Arithmetic"},
-      {"@id": "urn:ngm:class:heuristic-search", "label": "Heuristic Search"}
+      {
+        "@id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
+      },
+      {
+        "@id": "urn:ngm:class:smt-solving",
+        "label": "SMT Solving"
+      },
+      {
+        "@id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "@id": "urn:ngm:class:interval-arithmetic",
+        "label": "Interval Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:computer-aided-design", "label": "Computer-Aided Design"},
-      {"@id": "urn:ngm:class:constraint-based-design", "label": "Constraint Based Design"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:decision-making", "label": "Decision Making"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-aided-design",
+        "label": "Computer-Aided Design"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-based-design",
+        "label": "Constraint Based Design"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:heuristic-search", "label": "Heuristic Search"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:local-search", "label": "Local Search"}
+      {
+        "@id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:local-search",
+        "label": "Local Search"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:constraint-based-design", "label": "Constraint Based Design"},
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
-      {"@id": "urn:ngm:class:mixed-integer-programming", "label": "Mixed-Integer Programming"},
-      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neuro-Symbolic AI"},
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"}
+      {
+        "@id": "urn:ngm:class:constraint-based-design",
+        "label": "Constraint Based Design"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-integer-programming",
+        "label": "Mixed-Integer Programming"
+      },
+      {
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:operations-research", "label": "Operations Research"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
     ]
   },
   "sameAs": [
@@ -141,71 +376,11 @@ public: true
       "label": "Constraint Satisfaction Solver"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:constraint-solver:7f3b2c891045",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:constraint-solver"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Constraint Satisfaction]]", "resolved": "urn:visionflow:linked:constraint-satisfaction", "kind": "ResolvedLink"},
-    {"raw": "[[Constraint Propagation]]", "resolved": "urn:visionflow:linked:constraint-propagation", "kind": "ResolvedLink"},
-    {"raw": "[[Backtracking Search]]", "resolved": "urn:visionflow:linked:backtracking-search", "kind": "ResolvedLink"},
-    {"raw": "[[Arc Consistency]]", "resolved": "urn:visionflow:linked:arc-consistency", "kind": "ResolvedLink"},
-    {"raw": "[[Search Algorithm]]", "resolved": "urn:visionflow:linked:search-algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Automated Planning]]", "resolved": "urn:visionflow:linked:automated-planning", "kind": "ResolvedLink"},
-    {"raw": "[[Motion Planning]]", "resolved": "urn:visionflow:linked:motion-planning", "kind": "ResolvedLink"},
-    {"raw": "[[Planning and Scheduling]]", "resolved": "urn:visionflow:linked:planning-and-scheduling", "kind": "ResolvedLink"},
-    {"raw": "[[Formal Verification]]", "resolved": "urn:visionflow:linked:formal-verification", "kind": "ResolvedLink"},
-    {"raw": "[[Combinatorial Optimisation]]", "resolved": "urn:visionflow:linked:combinatorial-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Logic Programming]]", "resolved": "urn:visionflow:linked:logic-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Satisfiability]]", "resolved": "urn:visionflow:linked:satisfiability", "kind": "ResolvedLink"},
-    {"raw": "[[SMT Solving]]", "resolved": "urn:visionflow:linked:smt-solving", "kind": "ResolvedLink"},
-    {"raw": "[[Linear Programming]]", "resolved": "urn:visionflow:linked:linear-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Physics Simulation]]", "resolved": "urn:visionflow:linked:physics-simulation", "kind": "ResolvedLink"},
-    {"raw": "[[Computer-Aided Design]]", "resolved": "urn:visionflow:linked:computer-aided-design", "kind": "ResolvedLink"},
-    {"raw": "[[Heuristic Search]]", "resolved": "urn:visionflow:linked:heuristic-search", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Constraint Based Design]]", "resolved": "urn:visionflow:linked:constraint-based-design", "kind": "ResolvedLink"},
-    {"raw": "[[Trajectory Planning]]", "resolved": "urn:visionflow:linked:trajectory-planning", "kind": "ResolvedLink"},
-    {"raw": "[[Mixed-Integer Programming]]", "resolved": "urn:visionflow:linked:mixed-integer-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "ResolvedLink"},
-    {"raw": "[[Spatial Computing]]", "resolved": "urn:visionflow:linked:spatial-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Symbolic AI]]", "resolved": "urn:visionflow:linked:symbolic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Branch and Bound]]", "resolved": "urn:visionflow:linked:branch-and-bound", "kind": "ResolvedLink"},
-    {"raw": "[[Operations Research]]", "resolved": "urn:visionflow:linked:operations-research", "kind": "ResolvedLink"},
-    {"raw": "[[Neuro-Symbolic AI]]", "resolved": "urn:visionflow:linked:neuro-symbolic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Quantum Computing]]", "resolved": "urn:visionflow:linked:quantum-computing", "kind": "ResolvedLink"},
-    {"raw": "[[GPU Computing]]", "resolved": "urn:visionflow:linked:gpu-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Propositional Logic]]", "resolved": "urn:visionflow:linked:propositional-logic", "kind": "ResolvedLink"},
-    {"raw": "[[Supply Chain Optimisation]]", "resolved": "urn:visionflow:linked:supply-chain-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Decision Making]]", "resolved": "urn:visionflow:linked:decision-making", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "ResolvedLink"},
-    {"raw": "[[Interval Arithmetic]]", "resolved": "urn:visionflow:linked:interval-arithmetic", "kind": "ResolvedLink"},
-    {"raw": "[[Local Search]]", "resolved": "urn:visionflow:linked:local-search", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Theory]]", "resolved": "urn:visionflow:linked:graph-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Variable Ordering Heuristic]]", "resolved": "urn:visionflow:linked:variable-ordering-heuristic", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,23 +34,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
-      {"@id": "urn:ngm:class:gaze-control", "label": "Gaze Control"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"},
-      {"@id": "urn:ngm:class:vr-controllers", "label": "VR Controllers"},
-      {"@id": "urn:ngm:class:3-d-user-interface", "label": "3D User Interface"},
-      {"@id": "urn:ngm:class:haptics", "label": "Haptics"}
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:gaze-control",
+        "label": "Gaze Control"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:vr-controllers",
+        "label": "VR Controllers"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"},
-      {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"},
-      {"@id": "urn:ngm:class:immersive-interface", "label": "Immersive Interface"}
+      {
+        "@id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:sc-platform-and-environment",
+        "label": "Platform and Environment"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-interface",
+        "label": "Immersive Interface"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:augmented-reality-collaboration", "label": "Augmented Reality Collaboration"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-collaboration",
+        "label": "Augmented Reality Collaboration"
+      }
     ]
   },
   "quality": 0.8,

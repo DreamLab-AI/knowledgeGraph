@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Apache Iceberg
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,15 +20,24 @@ public: true
   "definition": "Apache Iceberg is an open table format for large analytic datasets stored in data lakes, adding database-like guarantees on top of object storage. It provides ACID transactions, schema and partition evolution, snapshot isolation, and time-travel queries by maintaining immutable metadata layers that track data files. Iceberg decouples the table format from the compute engine, letting Spark, Trino, Flink, and others operate consistently on the same tables.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"}
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
     ]
   },
   "quality": 0.72
 }
 ```
+
 - ### Definition
   - Apache Iceberg is an open table format that brings ACID transactions, schema evolution, and time travel to data-lake files on [[Storage Infrastructure]]. It turns raw object storage into reliable, engine-agnostic tables.
 - ### Content

@@ -1,56 +1,108 @@
----
-public: true
----
-
-# Process Mining
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:process-mining", "@type":"Page", "title":"Process Mining", "vc:slug":"process-mining", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:process-mining",
+  "@type": "Page",
+  "title": "Process Mining",
+  "vc:slug": "process-mining",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:process-mining",
-  "@type":"Class",
-  "label":"Process Mining",
-  "definition":"Process mining is a family of data-driven techniques that reconstruct, analyse, and improve real business processes by extracting knowledge from event logs recorded in enterprise information systems. It encompasses process discovery, which infers a process model from observed event sequences; conformance checking, which compares the discovered behaviour against a reference model; and enhancement, which enriches models with performance and frequency data. By grounding analysis in actual recorded execution rather than idealised documentation, it reveals bottlenecks, deviations, and automation opportunities.",
-  "domain":"ai",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:business-process-management","label":"Business Process Management"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:event-log","label":"Event Log"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:process-mining",
+  "@type": "Class",
+  "label": "Process Mining",
+  "definition": "Process mining is a family of data-driven techniques that reconstruct, analyse, and improve real business processes by extracting knowledge from event logs recorded in enterprise information systems. It encompasses process discovery, which infers a process model from observed event sequences; conformance checking, which compares the discovered behaviour against a reference model; and enhancement, which enriches models with performance and frequency data. By grounding analysis in actual recorded execution rather than idealised documentation, it reveals bottlenecks, deviations, and automation opportunities.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:business-process-management",
+      "label": "Business Process Management"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:business-process-management","label":"Business Process Management"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:event-log","label":"Event Log"},
-      {"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"},
-      {"@id":"urn:ngm:class:business-intelligence","label":"Business Intelligence"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:event-log","label":"Event Log"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:process-automation","label":"Process Automation"},
-      {"@id":"urn:ngm:class:robotic-process-automation","label":"Robotic Process Automation"},
-      {"@id":"urn:ngm:class:hyperautomation","label":"Hyperautomation"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:intelligent-automation","label":"Intelligent Automation"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:workflow-automation","label":"Workflow Automation"},
-      {"@id":"urn:ngm:class:business-intelligence","label":"Business Intelligence"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:robotic-process-automation","label":"Robotic Process Automation"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

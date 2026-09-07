@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Perception Module
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A perception module is the component of an autonomous or cognitive agent that transforms raw sensory input into structured representations of the environment. It performs sensing, filtering, feature extraction, object detection, and state estimation to produce a world model usable by planning and control. As the agent's interface to reality, its accuracy bounds the quality of all downstream decisions.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}, {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      }
+    ]
   },
   "quality": 0.72
 }

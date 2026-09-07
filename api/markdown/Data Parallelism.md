@@ -1,11 +1,65 @@
----
-public: true
----
-
-# Data Parallelism
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-parallelism", "@type":"Page", "title":"Data Parallelism", "vc:slug":"data-parallelism", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":["Parallel Processing","Distributed Training","Deep Learning","Neural Network Training","Stochastic Gradient Descent","Gradient Aggregation","All-Reduce","Collective Communication","GPU Cluster","Synchronisation","Network Bandwidth","Model Parallelism","Pipeline Parallelism","Tensor Parallelism","Sharded Data Parallel","High-Performance Computing","Large-Scale Training","Parameter Server","Gradient Descent","Batch Size","Learning Rate","Mini-Batch","NCCL","Ring All-Reduce","ZeRO Optimizer","Fully Sharded Data Parallel","DeepSpeed","Megatron-LM","Distributed Computing","GPU Compute","TPU","Transformer Architecture","Large Language Models","Convolutional Neural Network","Optimiser","Loss Function","Backpropagation","Gradient Compression","Mixed Precision Training","Checkpoint","AI Infrastructure","Expert Parallelism","3D Parallelism","DiLoCo","Asynchronous SGD","Federated Learning","Bandwidth","Latency"] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-parallelism",
+  "@type": "Page",
+  "title": "Data Parallelism",
+  "vc:slug": "data-parallelism",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": [
+    "Parallel Processing",
+    "Distributed Training",
+    "Deep Learning",
+    "Neural Network Training",
+    "Stochastic Gradient Descent",
+    "Gradient Aggregation",
+    "All-Reduce",
+    "Collective Communication",
+    "GPU Cluster",
+    "Synchronisation",
+    "Network Bandwidth",
+    "Model Parallelism",
+    "Pipeline Parallelism",
+    "Tensor Parallelism",
+    "Sharded Data Parallel",
+    "High-Performance Computing",
+    "Large-Scale Training",
+    "Parameter Server",
+    "Gradient Descent",
+    "Batch Size",
+    "Learning Rate",
+    "Mini-Batch",
+    "NCCL",
+    "Ring All-Reduce",
+    "ZeRO Optimizer",
+    "Fully Sharded Data Parallel",
+    "DeepSpeed",
+    "Megatron-LM",
+    "Distributed Computing",
+    "GPU Compute",
+    "TPU",
+    "Transformer Architecture",
+    "Large Language Models",
+    "Convolutional Neural Network",
+    "Optimiser",
+    "Loss Function",
+    "Backpropagation",
+    "Gradient Compression",
+    "Mixed Precision Training",
+    "Checkpoint",
+    "AI Infrastructure",
+    "Expert Parallelism",
+    "3D Parallelism",
+    "DiLoCo",
+    "Asynchronous SGD",
+    "Federated Learning",
+    "Bandwidth",
+    "Latency"
+  ]
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,68 +70,177 @@ public: true
   "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing" }
+    {
+      "@id": "urn:ngm:class:parallel-processing",
+      "label": "Parallel Processing"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:gradient-aggregation", "label": "Gradient Aggregation" },
-      { "@id": "urn:ngm:class:all-reduce", "label": "All-Reduce" },
-      { "@id": "urn:ngm:class:mini-batch", "label": "Mini-Batch" },
-      { "@id": "urn:ngm:class:ring-all-reduce", "label": "Ring All-Reduce" },
-      { "@id": "urn:ngm:class:gradient-compression", "label": "Gradient Compression" }
+      {
+        "@id": "urn:ngm:class:gradient-aggregation",
+        "label": "Gradient Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:all-reduce",
+        "label": "All-Reduce"
+      },
+      {
+        "@id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      },
+      {
+        "@id": "urn:ngm:class:ring-all-reduce",
+        "label": "Ring All-Reduce"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-compression",
+        "label": "Gradient Compression"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:distributed-training", "label": "Distributed Training" },
-      { "@id": "urn:ngm:class:3d-parallelism", "label": "3D Parallelism" }
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:3d-parallelism",
+        "label": "3D Parallelism"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:collective-communication", "label": "Collective Communication" },
-      { "@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster" },
-      { "@id": "urn:ngm:class:synchronisation", "label": "Synchronisation" },
-      { "@id": "urn:ngm:class:network-bandwidth", "label": "Network Bandwidth" },
-      { "@id": "urn:ngm:class:nccl", "label": "NCCL" }
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:network-bandwidth",
+        "label": "Network Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:nccl",
+        "label": "NCCL"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:large-scale-training", "label": "Large-Scale Training" },
-      { "@id": "urn:ngm:class:throughput-scaling", "label": "Throughput Scaling" },
-      { "@id": "urn:ngm:class:llm-pretraining", "label": "LLM Pre-training" }
+      {
+        "@id": "urn:ngm:class:large-scale-training",
+        "label": "Large-Scale Training"
+      },
+      {
+        "@id": "urn:ngm:class:throughput-scaling",
+        "label": "Throughput Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:llm-pretraining",
+        "label": "LLM Pre-training"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent" },
-      { "@id": "urn:ngm:class:backpropagation", "label": "Backpropagation" },
-      { "@id": "urn:ngm:class:loss-function", "label": "Loss Function" }
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent" },
-      { "@id": "urn:ngm:class:parameter-server", "label": "Parameter Server" },
-      { "@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training" }
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-server",
+        "label": "Parameter Server"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:deep-learning", "label": "Deep Learning" },
-      { "@id": "urn:ngm:class:neural-network-training", "label": "Neural Network Training" },
-      { "@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture" }
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:model-parallelism", "label": "Model Parallelism" },
-      { "@id": "urn:ngm:class:pipeline-parallelism", "label": "Pipeline Parallelism" },
-      { "@id": "urn:ngm:class:federated-learning", "label": "Federated Learning" }
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:tensor-parallelism", "label": "Tensor Parallelism" },
-      { "@id": "urn:ngm:class:expert-parallelism", "label": "Expert Parallelism" }
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:expert-parallelism",
+        "label": "Expert Parallelism"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:sharded-data-parallel", "label": "Sharded Data Parallel" },
-      { "@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing" },
-      { "@id": "urn:ngm:class:zero-optimizer", "label": "ZeRO Optimizer" },
-      { "@id": "urn:ngm:class:deep-speed", "label": "DeepSpeed" }
+      {
+        "@id": "urn:ngm:class:sharded-data-parallel",
+        "label": "Sharded Data Parallel"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:zero-optimizer",
+        "label": "ZeRO Optimizer"
+      },
+      {
+        "@id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:ddp", "label": "Distributed Data Parallel" }
+    {
+      "@id": "urn:ngm:class:ddp",
+      "label": "Distributed Data Parallel"
+    }
   ],
-  "quality": 0.90,
-  "provenance": { "attributedTo": "did:nostr:enrichment-swarm", "generatedAt": "2026-06-21T00:00:00Z", "inferenceRule": "OntologyEnrichment" }
+  "quality": 0.9,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-21T00:00:00Z",
+    "inferenceRule": "OntologyEnrichment"
+  }
 }
 ```
 
@@ -233,8 +396,8 @@ public: true
     - **Continual and lifelong learning**: Incrementally updating models on streaming data streams requires maintaining data-parallel training infrastructure that can efficiently process new data shards while preserving previously learned representations, with replay buffers for catastrophic forgetting mitigation distributed data-parallelly.
 
   - ## Academic Context
-    - The theoretical foundations of data-parallel gradient descent trace to Robbins and Monro (1951) on stochastic approximation and to Bottou (1998) on online learning and the dynamics of SGD. The first explicit demonstration of distributed gradient averaging for neural network training appeared in Seide et al. (2014) with 1-bit SGD on speech models, which showed that aggressive gradient quantisation could reduce communication volume 64-fold with minimal accuracy loss. Dean et al. (2012) introduced DistBelief, the first industrial-scale parameter server architecture, demonstrating distributed SGD over 1,000 machines on speech recognition tasks at Google. Zinkevich et al. (2010) provided theoretical convergence guarantees for parallel SGD with gradient averaging, establishing the rate O(1/√(NT)) for convex objectives with N workers and T steps. Li et al. (2014) formalised the parameter server framework with more flexible consistency models and demonstrated scalability to billions of parameters.
-    - Goyal et al. (2017, "Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour") established the linear scaling rule: to preserve the statistical behaviour of SGD when multiplying the mini-batch size by k, multiply the learning rate by k and employ a linear warm-up schedule for the first 5 epochs. This insight enabled synchronous DDP training of ResNet-50 on ImageNet in under one hour across 256 NVIDIA P100 GPUs, proving that data parallelism could achieve state-of-the-art accuracy at industrial scale without approximation. Rajbhandari et al. (2020) introduced ZeRO (Zero Redundancy Optimizer) at Supercomputing 2020, demonstrating training of 17B-, 40B-, and 100B-parameter models by eliminating the redundant storage of model states in classical DDP. The three ZeRO stages progressively partition optimiser states, gradients, and parameters across ranks, achieving 16-fold memory reduction at full ZeRO-3 with modest communication overhead. Ren et al. (2021) extended ZeRO to CPU and NVMe storage with ZeRO-Offload, enabling billion-parameter model training on a single GPU by offloading optimiser states to CPU memory. Zhao et al. (2023) introduced PyTorch FSDP as a production-grade open-source implementation, reporting throughput parity with DeepSpeed ZeRO-3 on GPT-3-scale models while providing a more Pythonic API. Douillard et al. (2023) proposed DiLoCo (Distributed Low-Communication training) from Google DeepMind, demonstrating that performing H=500 inner SGD steps between outer gradient synchronisations reduces communication volume by 500-fold with only 1–2% degradation on language modelling benchmarks, enabling cross-datacenter training without the latency sensitivity of synchronous DDP. The May 2025 empirical study (arXiv:2505.12832) provided systematic benchmarking of DDP, FSDP, and parameter server approaches across GPU cluster configurations, finding FSDP2 optimal for models with 1B–100B parameters and standard DDP optimal for models that fit within a single GPU's memory.
+    - The theoretical foundations of data-parallel gradient descent trace to Robbins and Monro (1951) on stochastic approximation and to Bottou (1998) on online learning and the dynamics of SGD. The first explicit demonstration of distributed gradient averaging for neural network training appeared in Seide et al. (2014) with 1-bit SGD on speech models, which showed that aggressive gradient quantisation [private] reduce communication volume 64-fold with minimal accuracy loss. Dean et al. (2012) introduced DistBelief, the first industrial-scale parameter server architecture, demonstrating distributed SGD over 1,000 machines on speech recognition tasks at Google. Zinkevich et al. (2010) provided theoretical convergence guarantees for parallel SGD with gradient averaging, establishing the rate O(1/√(NT)) for convex objectives with N workers and T steps. Li et al. (2014) formalised the parameter server framework with more flexible consistency models and demonstrated scalability to billions of parameters.
+    - Goyal et al. (2017, "Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour") established the linear scaling rule: to preserve the statistical behaviour of SGD when multiplying the mini-batch size by k, multiply the learning rate by k and employ a linear warm-up schedule for the first 5 epochs. This insight enabled synchronous DDP training of ResNet-50 on ImageNet in under one hour across 256 NVIDIA P100 GPUs, proving that data parallelism [private] achieve state-of-the-art accuracy at industrial scale without approximation. Rajbhandari et al. (2020) introduced ZeRO (Zero Redundancy Optimizer) at Supercomputing 2020, demonstrating training of 17B-, 40B-, and 100B-parameter models by eliminating the redundant storage of model states in classical DDP. The three ZeRO stages progressively partition optimiser states, gradients, and parameters across ranks, achieving 16-fold memory reduction at full ZeRO-3 with modest communication overhead. Ren et al. (2021) extended ZeRO to CPU and NVMe storage with ZeRO-Offload, enabling billion-parameter model training on a single GPU by offloading optimiser states to CPU memory. Zhao et al. (2023) introduced PyTorch FSDP as a production-grade open-source implementation, reporting throughput parity with DeepSpeed ZeRO-3 on GPT-3-scale models while providing a more Pythonic API. Douillard et al. (2023) proposed DiLoCo (Distributed Low-Communication training) from Google DeepMind, demonstrating that performing H=500 inner SGD steps between outer gradient synchronisations reduces communication volume by 500-fold with only 1–2% degradation on language modelling benchmarks, enabling cross-datacenter training without the latency sensitivity of synchronous DDP. The May 2025 empirical study (arXiv:2505.12832) provided systematic benchmarking of DDP, FSDP, and parameter server approaches across GPU cluster configurations, finding FSDP2 optimal for models with 1B–100B parameters and standard DDP optimal for models that fit within a single GPU's memory.
     - Key research groups advancing data parallelism theory and practice include: the Microsoft Research AI team (ZeRO, DeepSpeed), NVIDIA's Megatron team (3D parallelism, NCCL), the PyTorch distributed team (DDP, FSDP2, DTensor), Google DeepMind (DiLoCo, Pathways), Meta AI Research (FairScale, OPT training), and academic groups at CMU (MLSys), Berkeley (Ray/ICSI), ETH Zürich (scaling theory), and the Edinburgh Parallel Computing Centre (EPCC, distributed scientific ML).
 
   - ## Current Landscape (2026)
@@ -281,7 +444,7 @@ public: true
   - ## Challenges and Limitations
     - **Straggler sensitivity**: In synchronous data parallelism, the global step time is bounded by the slowest worker. Hardware variability (thermal throttling, memory errors causing retry overhead), OS jitter (garbage collection, CPU scheduling preemption), and network congestion can make any worker a transient straggler. Straggler mitigation techniques include backup (redundant) workers (as in TensorFlow's BarrierSyncSGD), dropping the slowest fraction of workers per step, and gradient timeout mechanisms that advance the step with whatever gradients have arrived.
     - **Effective batch size and convergence**: Data parallelism inherently increases the effective batch size proportionally to the number of workers. Very large batches (beyond 16k–32k images or 4M tokens per step) are known to generalise poorly — the gradient noise at large batch sizes loses the regularisation effect that small-batch SGD provides through its implicit annealing of noisy updates. This is the "large-batch training problem" (Keskar et al., 2017), which motivates the use of learning rate warm-up, learning rate decay, layer-wise adaptive rate scaling (LARS, You et al., 2017), and ultimately bounds the linear scalability of data parallelism: beyond a critical batch size, adding more data-parallel workers improves throughput but degrades per-sample efficiency.
-    - **Memory pressure at extreme scale**: Even FSDP2 and ZeRO-3 face memory pressure from activation memory (the intermediate tensors stored during the forward pass for use in backpropagation). For a 70B-parameter transformer with 4096-token sequence length and 96 layers, activation memory can exceed parameter memory. Gradient checkpointing (selective recomputation) trades compute for memory by discarding and recomputing activations, but introduces 30–40% compute overhead. Activation quantisation (storing activations in INT8 during the forward pass) is an active research area that could reduce activation memory by 4-fold without recomputation overhead.
+    - **Memory pressure at extreme scale**: Even FSDP2 and ZeRO-3 face memory pressure from activation memory (the intermediate tensors stored during the forward pass for use in backpropagation). For a 70B-parameter transformer with 4096-token sequence length and 96 layers, activation memory can exceed parameter memory. Gradient checkpointing (selective recomputation) trades compute for memory by discarding and recomputing activations, but introduces 30–40% compute overhead. Activation quantisation (storing activations in INT8 during the forward pass) is an active research area that [private] reduce activation memory by 4-fold without recomputation overhead.
     - **Heterogeneous hardware**: Cloud GPU clusters are rarely perfectly homogeneous — mixed GPU generations (A100 + H100), mixed networking (InfiniBand + Ethernet), and variable-speed storage create performance heterogeneity that the all-reduce collective treats as stragglers. Adaptive scheduling strategies and topology-aware collective libraries mitigate this but cannot fully eliminate the throughput penalty from the slowest link in the communication ring.
 
   - ## Research and Literature

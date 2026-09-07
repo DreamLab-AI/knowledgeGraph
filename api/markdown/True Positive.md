@@ -1,8 +1,3 @@
----
-public: true
----
-
-# True Positive
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -121,6 +117,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - A True Positive is an outcome in binary classification where the model correctly predicts the positive class for an instance that genuinely belongs to that class. It is one of the four cells of the confusion matrix, alongside false positives, true negatives and false negatives. Counts of true positives are central to evaluation metrics such as precision, recall and the F1 score.
   - Related concepts: [[Confusion Matrix]] [[False Positive]] [[True Negative]] [[Precision]] [[Recall]]

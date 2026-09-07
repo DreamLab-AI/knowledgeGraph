@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Matrix Factorisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Matrix factorisation is a family of techniques that decompose a matrix into a product of lower-dimensional factor matrices, revealing latent structure in the data. In machine learning it is widely used for collaborative-filtering recommendation, where a sparse user-item rating matrix is approximated by user and item embedding factors. Variants include singular value decomposition, non-negative matrix factorisation, and low-rank adaptation methods.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:lo-ra-do-ra-etc", "label": "LoRA DoRA etc"}, {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      },
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      }
+    ]
   },
   "quality": 0.72
 }

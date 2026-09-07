@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Real World Asset Tokenisation
----
-
-# real-world asset tokenisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

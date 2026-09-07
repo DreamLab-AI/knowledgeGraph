@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Denavit-Hartenberg Parameters
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Denavit-Hartenberg (DH) parameters are a standardised four-parameter convention for describing the relative geometry between consecutive links of a robotic manipulator. Each joint is characterised by link length, link twist, link offset, and joint angle, yielding a homogeneous transformation matrix per joint. Chaining these matrices gives a compact, systematic model of the arm's kinematics.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:kinematics-model", "label": "Kinematics Model"}
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics-model",
+        "label": "Kinematics Model"
+      }
     ]
   },
   "quality": 0.72

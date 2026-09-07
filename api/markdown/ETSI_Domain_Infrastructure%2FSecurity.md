@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Infrastructure___Security
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
-      {"@id": "urn:ngm:class:quantum-network-node", "label": "Quantum Network Node"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-network-node",
+        "label": "Quantum Network Node"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:security-framework", "label": "Security Framework"}
+      {
+        "@id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "provenance": {
@@ -82,37 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-infrastructure-security:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6db4899690154f635930a7ff478bfbc191f36ba397899ea54af4f9a9193a7f03"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quantum Network Node]]",
-      "resolved": "urn:visionflow:owl:class:quantum-network-node",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications. Infrastructure security integrates NFV architectural frameworks (ETSI NFV v6.1.1), cross-domain authentication standards (ETSI GS PDL 027) promoting multi-party trust models, and decentralised identity systems addressing ultra-edge and terminal-edge deployment requirements. Coordination with 3GPP and ITU-T ensures alignment on metaverse infrastructure security requirements whilst addressing challenges in standardising interoperability across platforms, automating security lifecycle management, and balancing decentralised identity privacy with regulatory compliance under UK and EU data protection frameworks.

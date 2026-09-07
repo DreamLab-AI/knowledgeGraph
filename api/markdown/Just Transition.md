@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Just Transition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A just transition is a framework for shifting economies toward low-carbon and sustainable production while ensuring that the burdens and benefits of that shift are distributed fairly. It seeks to protect workers, communities and developing regions dependent on carbon-intensive industries through retraining, social support and inclusive planning. The concept links climate policy with social equity and labour rights.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:global-inequality", "label": "Global Inequality"},
-      {"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"}
+      {
+        "@id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
     ]
   },
   "quality": 0.72

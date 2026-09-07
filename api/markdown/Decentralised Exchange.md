@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralised Exchange
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,57 +191,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:decentralised-exchange:8d4565a2c48c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:99a655de862d5053aefa52c83b9b8e20be4c3e14458258dd37546dbdcf6b214b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Pool]]",
-      "resolved": "urn:visionflow:linked:liquidity-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Permissionless Trading]]",
-      "resolved": "urn:visionflow:linked:permissionless-trading",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Market Maker]]",
-      "resolved": "urn:visionflow:linked:automated-market-maker",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Order Book]]",
-      "resolved": "urn:visionflow:linked:order-book",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Exchange Mechanism]]",
-      "resolved": "urn:visionflow:linked:exchange-mechanism",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A trading venue that allows users to swap digital assets directly through smart contracts, without a central operator holding custody of funds or matching orders off-chain.

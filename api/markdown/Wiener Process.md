@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wiener Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The Wiener process, also called standard Brownian motion, is a continuous-time stochastic process characterised by independent, stationary, normally distributed increments starting at zero, with continuous but nowhere-differentiable sample paths. It is the canonical mathematical model of random continuous motion and the foundational driver of stochastic calculus and diffusion equations. The Wiener process underpins models in finance, physics, and the noise schedules of diffusion generative models.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"}, {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ]
   },
   "quality": 0.72
 }

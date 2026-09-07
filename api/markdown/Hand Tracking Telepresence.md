@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hand Tracking Telepresence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,13 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:immersive-collaboration", "label": "Immersive Collaboration"}],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-collaboration",
+        "label": "Immersive Collaboration"
+      }
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:avatar-embodiment", "label": "Avatar Embodiment"},
-      {"@id": "urn:ngm:class:shared-virtual-space", "label": "Shared Virtual Space"}
+      {
+        "@id": "urn:ngm:class:avatar-embodiment",
+        "label": "Avatar Embodiment"
+      },
+      {
+        "@id": "urn:ngm:class:shared-virtual-space",
+        "label": "Shared Virtual Space"
+      }
     ]
   },
   "quality": 0.7

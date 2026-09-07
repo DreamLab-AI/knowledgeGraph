@@ -1,8 +1,3 @@
----
-public: true
----
-
-# sovereign ai
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,7 +58,6 @@ public: true
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - National strategies for building indigenous AI capabilities—foundational models trained on sovereign data using domestically controlled compute infrastructure—to reduce dependence on foreign hyperscaler platforms. Encompasses government investment in national AI compute clusters, local language models, and data governance frameworks.

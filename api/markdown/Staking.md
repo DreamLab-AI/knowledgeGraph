@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Staking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,57 +195,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:staking:d9a998cac660",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2c9ae4bee5dd5fb1f115974c5ce3fcacb636f0d72944ab7f54f168897cddfc3e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Validator]]",
-      "resolved": "urn:visionflow:linked:validator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Security]]",
-      "resolved": "urn:visionflow:linked:network-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:linked:consensus-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Yield Farming]]",
-      "resolved": "urn:visionflow:linked:yield-farming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://ethereum.org/en/staking/]]",
-      "resolved": "urn:visionflow:linked:https-ethereum-org-en-staking",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The act of locking cryptocurrency as a stake to participate in a proof-of-stake network's validation process, earning rewards and risking penalties for misbehaviour. The staked amount aligns a validator's incentives with the network's correct operation.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Creation Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -232,5 +227,5 @@ public: true
   - Regulatory context includes the EU AI Act provisions on transparency for AI-generated content, platform-specific policies requiring watermarking of synthetic media, and copyright frameworks (UK, US, EU) currently in flux regarding AI-generated asset ownership.
 
 - ### Provenance
-  - sources:: VFX pipeline engineering literature; Adobe, Pixar, NVIDIA Omniverse technical documentation; C2PA specification (contentauthenticity.org); Apache Airflow documentation; SMPTE standards index; Khronos glTF specification.
+  - sources:: VFX pipeline engineering literature; Adobe, Pixar, NVIDIA Omniverse technical documentation; C2PA specification (contentauthenticity.org); Apache Airflow documentation; SMPTE standards [private]; Khronos glTF specification.
   - updated:: 2026-06-13

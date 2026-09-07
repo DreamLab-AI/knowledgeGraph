@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Open AI
-elevatedFrom: "[[OpenAI]]"
----
-
-# OpenAI Research Organisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

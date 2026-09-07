@@ -1,8 +1,3 @@
----
-public: true
----
-
-# China Tech Export Controls
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "china-tech-export-controls",
   "title": "China Tech Export Controls",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Manas", "Meta"],
+  "vc:outboundWikilinks": [
+    "Manas",
+    "Meta"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:china", "label": "China"}, {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}, {"@id": "urn:ngm:class:tech-policy", "label": "Tech Policy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:china",
+        "label": "China"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:tech-policy",
+        "label": "Tech Policy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

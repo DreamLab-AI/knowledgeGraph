@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - AvatarCustomization
----
-
-# Avatar Customization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,67 +178,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:avatar-customization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cdf2691320b6253fe2c1d9a375de71988b04a832fdca1426b967f3d89834ee38"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Libraries]]",
-      "resolved": "urn:visionflow:linked:asset-libraries",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Customization Tools]]",
-      "resolved": "urn:visionflow:linked:customization-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Personalization]]",
-      "resolved": "urn:visionflow:linked:digital-personalization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Identity Representation]]",
-      "resolved": "urn:visionflow:linked:identity-representation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Preview]]",
-      "resolved": "urn:visionflow:linked:real-time-preview",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Self-Expression]]",
-      "resolved": "urn:visionflow:linked:self-expression",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Social Distinction]]",
-      "resolved": "urn:visionflow:linked:social-distinction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Avatar Customization is the practice of modifying and personalizing digital avatar attributes including physical features, clothing, accessories, animations, and expressions to create unique virtual representations that reflect user identity and preferences in metaverse environments.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - AI-inference
----
-
-# AI Inference
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -14,53 +7,194 @@ aliases:
   "title": "AI Inference",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration"},
-    {"@id": "urn:visionflow:linked:ai-model", "vc:label": "AI Model"},
-    {"@id": "urn:visionflow:linked:ai-model-architecture", "vc:label": "AI Model Architecture"},
-    {"@id": "urn:visionflow:linked:tensor-parallelism", "vc:label": "Tensor Parallelism"},
-    {"@id": "urn:visionflow:linked:quantisation", "vc:label": "Quantisation"},
-    {"@id": "urn:visionflow:linked:real-time-ai-inference", "vc:label": "Real-Time AI Inference"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:autonomous-agents", "vc:label": "Autonomous Agents"},
-    {"@id": "urn:visionflow:linked:model-weights", "vc:label": "Model Weights"},
-    {"@id": "urn:visionflow:linked:inference-runtime", "vc:label": "Inference Runtime"},
-    {"@id": "urn:visionflow:linked:hardware-accelerator", "vc:label": "Hardware Accelerator"},
-    {"@id": "urn:visionflow:linked:kv-cache", "vc:label": "KV Cache"},
-    {"@id": "urn:visionflow:linked:speculative-decoding", "vc:label": "Speculative Decoding"},
-    {"@id": "urn:visionflow:linked:continuous-batching", "vc:label": "Continuous Batching"},
-    {"@id": "urn:visionflow:linked:prefix-caching", "vc:label": "Prefix Caching"},
-    {"@id": "urn:visionflow:linked:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:model-serving", "vc:label": "Model Serving"},
-    {"@id": "urn:visionflow:linked:on-device-ai", "vc:label": "On-Device AI"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:cloud-computing", "vc:label": "Cloud Computing"},
-    {"@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:flash-attention", "vc:label": "Flash Attention"},
-    {"@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain-of-Thought"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:security", "vc:label": "Security"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:data", "vc:label": "Data"},
-    {"@id": "urn:visionflow:linked:inference-optimisation", "vc:label": "Inference Optimisation"},
-    {"@id": "urn:visionflow:linked:model-compression", "vc:label": "Model Compression"},
-    {"@id": "urn:visionflow:linked:knowledge-distillation", "vc:label": "Knowledge Distillation"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:onnx", "vc:label": "ONNX"},
-    {"@id": "urn:visionflow:linked:mixture-of-experts", "vc:label": "Mixture-of-Experts"},
-    {"@id": "urn:visionflow:linked:inference-compute", "vc:label": "Inference Compute"},
-    {"@id": "urn:visionflow:linked:inference-hardware", "vc:label": "Inference Hardware"},
-    {"@id": "urn:visionflow:linked:batch-inference", "vc:label": "Batch Inference"},
-    {"@id": "urn:visionflow:linked:edge-inference", "vc:label": "Edge Inference"},
-    {"@id": "urn:visionflow:linked:distributed-inference", "vc:label": "Distributed Inference"},
-    {"@id": "urn:visionflow:linked:model-inference", "vc:label": "Model Inference"}
+    {
+      "@id": "urn:visionflow:linked:gpu-acceleration",
+      "vc:label": "GPU Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model",
+      "vc:label": "AI Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model-architecture",
+      "vc:label": "AI Model Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-parallelism",
+      "vc:label": "Tensor Parallelism"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantisation",
+      "vc:label": "Quantisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-ai-inference",
+      "vc:label": "Real-Time AI Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agents",
+      "vc:label": "Autonomous Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-weights",
+      "vc:label": "Model Weights"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-runtime",
+      "vc:label": "Inference Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-accelerator",
+      "vc:label": "Hardware Accelerator"
+    },
+    {
+      "@id": "urn:visionflow:linked:kv-cache",
+      "vc:label": "KV Cache"
+    },
+    {
+      "@id": "urn:visionflow:linked:speculative-decoding",
+      "vc:label": "Speculative Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-batching",
+      "vc:label": "Continuous Batching"
+    },
+    {
+      "@id": "urn:visionflow:linked:prefix-caching",
+      "vc:label": "Prefix Caching"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-serving",
+      "vc:label": "Model Serving"
+    },
+    {
+      "@id": "urn:visionflow:linked:on-device-ai",
+      "vc:label": "On-Device AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:flash-attention",
+      "vc:label": "Flash Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain-of-Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:security",
+      "vc:label": "Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:data",
+      "vc:label": "Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-optimisation",
+      "vc:label": "Inference Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-compression",
+      "vc:label": "Model Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:onnx",
+      "vc:label": "ONNX"
+    },
+    {
+      "@id": "urn:visionflow:linked:mixture-of-experts",
+      "vc:label": "Mixture-of-Experts"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-compute",
+      "vc:label": "Inference Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-hardware",
+      "vc:label": "Inference Hardware"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-inference",
+      "vc:label": "Batch Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-inference",
+      "vc:label": "Edge Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-inference",
+      "vc:label": "Distributed Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-inference",
+      "vc:label": "Model Inference"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -242,68 +376,6 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-inference:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ai-inference"
-  },
-  "vc:resolutions": [
-    {"raw": "[[AI Model]]", "resolved": "urn:visionflow:linked:ai-model", "kind": "StubLink"},
-    {"raw": "[[Model Training]]", "resolved": "urn:visionflow:linked:model-training", "kind": "StubLink"},
-    {"raw": "[[GPU Acceleration]]", "resolved": "urn:visionflow:linked:gpu-acceleration", "kind": "StubLink"},
-    {"raw": "[[Quantisation]]", "resolved": "urn:visionflow:linked:quantisation", "kind": "StubLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "StubLink"},
-    {"raw": "[[On-Device AI]]", "resolved": "urn:visionflow:linked:on-device-ai", "kind": "StubLink"},
-    {"raw": "[[Model Weights]]", "resolved": "urn:visionflow:linked:model-weights", "kind": "StubLink"},
-    {"raw": "[[Inference Runtime]]", "resolved": "urn:visionflow:linked:inference-runtime", "kind": "StubLink"},
-    {"raw": "[[KV Cache]]", "resolved": "urn:visionflow:linked:kv-cache", "kind": "StubLink"},
-    {"raw": "[[Continuous Batching]]", "resolved": "urn:visionflow:linked:continuous-batching", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Speculative Decoding]]", "resolved": "urn:visionflow:linked:speculative-decoding", "kind": "StubLink"},
-    {"raw": "[[Prefix Caching]]", "resolved": "urn:visionflow:linked:prefix-caching", "kind": "StubLink"},
-    {"raw": "[[Tensor Parallelism]]", "resolved": "urn:visionflow:linked:tensor-parallelism", "kind": "StubLink"},
-    {"raw": "[[Hardware Accelerator]]", "resolved": "urn:visionflow:linked:hardware-accelerator", "kind": "StubLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "StubLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "StubLink"},
-    {"raw": "[[Autonomous Agents]]", "resolved": "urn:visionflow:linked:autonomous-agents", "kind": "StubLink"},
-    {"raw": "[[Chain-of-Thought]]", "resolved": "urn:visionflow:linked:chain-of-thought", "kind": "StubLink"},
-    {"raw": "[[Transformer]]", "resolved": "urn:visionflow:linked:transformer", "kind": "StubLink"},
-    {"raw": "[[Flash Attention]]", "resolved": "urn:visionflow:linked:flash-attention", "kind": "StubLink"},
-    {"raw": "[[AI Model Architecture]]", "resolved": "urn:visionflow:linked:ai-model-architecture", "kind": "StubLink"},
-    {"raw": "[[Mixture-of-Experts]]", "resolved": "urn:visionflow:linked:mixture-of-experts", "kind": "StubLink"},
-    {"raw": "[[Edge Computing]]", "resolved": "urn:visionflow:linked:edge-computing", "kind": "StubLink"},
-    {"raw": "[[MLOps]]", "resolved": "urn:visionflow:linked:mlops", "kind": "StubLink"},
-    {"raw": "[[Model Serving]]", "resolved": "urn:visionflow:linked:model-serving", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Real-Time AI Inference]]", "resolved": "urn:visionflow:linked:real-time-ai-inference", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "StubLink"},
-    {"raw": "[[Fine-Tuning]]", "resolved": "urn:visionflow:linked:fine-tuning", "kind": "StubLink"},
-    {"raw": "[[Cloud Computing]]", "resolved": "urn:visionflow:linked:cloud-computing", "kind": "StubLink"},
-    {"raw": "[[Distributed Systems]]", "resolved": "urn:visionflow:linked:distributed-systems", "kind": "StubLink"},
-    {"raw": "[[Security]]", "resolved": "urn:visionflow:linked:security", "kind": "StubLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "StubLink"},
-    {"raw": "[[Data]]", "resolved": "urn:visionflow:linked:data", "kind": "StubLink"},
-    {"raw": "[[Inference Optimisation]]", "resolved": "urn:visionflow:linked:inference-optimisation", "kind": "StubLink"},
-    {"raw": "[[Model Compression]]", "resolved": "urn:visionflow:linked:model-compression", "kind": "StubLink"},
-    {"raw": "[[Knowledge Distillation]]", "resolved": "urn:visionflow:linked:knowledge-distillation", "kind": "StubLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "StubLink"},
-    {"raw": "[[ONNX]]", "resolved": "urn:visionflow:linked:onnx", "kind": "StubLink"},
-    {"raw": "[[Inference Compute]]", "resolved": "urn:visionflow:linked:inference-compute", "kind": "StubLink"},
-    {"raw": "[[Inference Hardware]]", "resolved": "urn:visionflow:linked:inference-hardware", "kind": "StubLink"},
-    {"raw": "[[Batch Inference]]", "resolved": "urn:visionflow:linked:batch-inference", "kind": "StubLink"},
-    {"raw": "[[Edge Inference]]", "resolved": "urn:visionflow:linked:edge-inference", "kind": "StubLink"},
-    {"raw": "[[Distributed Inference]]", "resolved": "urn:visionflow:linked:distributed-inference", "kind": "StubLink"},
-    {"raw": "[[Model Inference]]", "resolved": "urn:visionflow:linked:model-inference", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
-}
-```
-
 - ### Definition
   - [[AI Inference]] is the computational process of applying a trained [[AI Model]] to new input data to produce outputs — text, images, classifications, embeddings, or actions — using learned parameters that are fixed at the end of [[Model Training]]. Unlike training, which requires large compute clusters and gradient computation over datasets, inference can be performed on a wide range of hardware, from data-centre accelerators ([[GPU Acceleration]], TPUs, AI ASICs) to consumer devices (CPUs, NPUs in mobile SoCs). The inference serving stack must balance latency (time to first token, end-to-end response time), throughput (requests per second), cost (compute and memory per token), and accuracy (preserving model quality despite [[Quantisation]] and other compression techniques). AI Inference is the dominant runtime cost for production [[Generative AI]] deployments: by 2026, inference workloads account for approximately two-thirds of all AI compute consumed globally, up from one-third in 2023 and one-half in 2025 — a structural shift driven by the proliferation of deployed [[Large Language Models]] serving billions of daily requests across consumer and enterprise applications. The field has matured to encompass a rich stack of [[Inference Optimisation]] techniques — [[Speculative Decoding]], [[Continuous Batching]], [[KV Cache]] management, [[Prefix Caching]], [[Flash Attention]], and kernel fusion — alongside hardware innovation in purpose-built inference silicon, and a growing ecosystem of open-source serving frameworks (vLLM, SGLang, TGI, llama.cpp) that have democratised high-performance inference deployment from specialised infrastructure teams to individual practitioners.
 
@@ -479,7 +551,7 @@ aliases:
 
     **Diffusion models** (Stable Diffusion, FLUX, DALL-E 3) for image generation invert the inference paradigm: rather than autoregressive left-to-right generation, they execute many iterative denoising steps, each a full forward pass through the denoising [[Neural Network]]. Inference latency scales with step count (typically 20–50 steps); distillation techniques (SDXL-Lightning, LCM-LoRA) reduce steps to 4–8 while preserving quality, achieving 5–10× latency reduction. ONNX Runtime and TensorRT compilation achieve 3–4× throughput improvement over PyTorch eager mode for diffusion inference.
 
-    **Embedding models** (BERT-class, sentence-transformers, text-embedding-3-large) are the most computationally efficient inference workload: forward-pass only (no autoregressive decode), fixed output size (embedding vector), and highly batch-parallelisable. Embedding inference runs at near-peak GPU arithmetic utilisation with batch sizes above 128; the dominant use case is [[Retrieval-Augmented Generation]] where millions of documents must be embedded at index time and thousands of queries embedded at serving time.
+    **Embedding models** (BERT-class, sentence-transformers, text-embedding-3-large) are the most computationally efficient inference workload: forward-pass only (no autoregressive decode), fixed output size (embedding vector), and highly batch-parallelisable. Embedding inference runs at near-peak GPU arithmetic utilisation with batch sizes above 128; the dominant use case is [[Retrieval-Augmented Generation]] where millions of documents must be embedded at [private] time and thousands of queries embedded at serving time.
 
   ## Infrastructure and Deployment Patterns
     - **Inference-as-a-Service** — cloud-hosted endpoints (AWS Bedrock, Google Vertex AI, Azure AI Studio, Hugging Face Inference Endpoints) abstract hardware management; pay-per-token pricing with automatic scaling. Market growing at 19.2% CAGR to 2030.

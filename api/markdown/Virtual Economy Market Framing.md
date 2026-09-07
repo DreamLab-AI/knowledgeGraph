@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Metaverse as Markets]]
-# Virtual Economy Market Framing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,19 +51,40 @@ elevatedFrom:: [[Metaverse as Markets]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:digital-goods", "label": "Digital Goods"},
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"}
+      {
+        "@id": "urn:ngm:class:digital-goods",
+        "label": "Digital Goods"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"}
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
     ]
   },
   "provenance": {
@@ -79,32 +94,6 @@ elevatedFrom:: [[Metaverse as Markets]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-as-markets:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:476915cc9713f3e6a514f140de062afbcffe565cf1b4f934a2f566a586af2304"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Knowledge Artefact Update Cycle]]",
-      "resolved": "urn:visionflow:owl:class:update-cycle",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A conceptual framing of metaverse platforms as economic ecosystems in which virtual goods, services, experiences, and digital assets are produced, traded, and consumed. This view foregrounds creator economies, digital ownership, interoperable asset standards, and market dynamics including adoption curves, pricing models, and regulatory challenges specific to virtual worlds.
@@ -153,8 +142,8 @@ elevatedFrom:: [[Metaverse as Markets]]
 	 - 24% of US adult internet users say “that lower-priced VR headsets were a very important factor when deciding whether to try using the metaverse,” per a recent Statista survey. On the other hand, 54% say that their workplace using the metaverse would “not \[be\] important at all” in their decision to give the metaverse a try
 	 - 15% of gen Zs’ “fun budget” is spent in the metaverse, per a report from Razorfish and Vice Media Group. In five years that number is projected to climb to 20%
 	 - Nearly 77% believe that the metaverse “can cause serious harm to modern society,” per a recent survey from customer service platform Tidio. The survey, which received feedback from 1,000 participants, identified three major causes of anxiety related to the metaverse and its potentially negative social impacts: “addiction to a simulated reality” was the number one concern, followed by “privacy issues” and “mental health issues,” which were tied for second
-	 - By 2026, about 2 billion people worldwide “will spend at least one hour a day in the metaverse to work, shop, attend school, socialize or consume entertainment,” per McCann Worldgroup. By that same year, the total value of the virtual goods market in the metaverse could be as high as $200bn
-	 - NFTs Over $37bn has been spent in NFT marketplaces as of May 2022, per data from Chainalysis. At their current rate, this year’s NFT sales could potentially surpass last year’s, which had a total valuation of around $40bn, according to the data
+	 - By 2026, about 2 billion people worldwide “will spend at least one hour a day in the metaverse to work, shop, attend school, socialize or consume entertainment,” per McCann Worldgroup. By that same year, the total value of the virtual goods market in the metaverse [private] be as high as $200bn
+	 - NFTs Over $37bn has been spent in NFT marketplaces as of May 2022, per data from Chainalysis. At their current rate, this year’s NFT sales [private] potentially surpass last year’s, which had a total valuation of around $40bn, according to the data
 	 - $91.8m was the sale price of ‘The Merge,’ the most valuable NFT to date. Created by the artist Pak, it sold for its record-breaking value in December 2021
 	 - 64% of sports fans are open to the idea of learning more about NFTs and would consider purchasing one in the future, according to the National Research Group. The report also found that 46% of sports fans “would be more likely to attend live sporting events if they were rewarded with a commemorative NFT – for example, if their ticket turned into a digital collectible after the game”
 	 - Only 9% of people aged 16-44 own a NFT, and less than half (44%) have purchased or invested in crypto, per a new survey from agency SCS. On the other hand, among the survey’s 600 respondents, 64% were “aware” of the metaverse, and 65% of that subgroup say they are “interested in exploring it further for everything from traveling to new places and playing games to making money and shopping”

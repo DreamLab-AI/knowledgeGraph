@@ -1,37 +1,120 @@
----
-public: true
----
-
-# Cryptographic Key Pair
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cryptographic-key-pair", "@type":"Page", "title":"Cryptographic Key Pair", "vc:slug":"cryptographic-key-pair", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cryptographic-key-pair",
+  "@type": "Page",
+  "title": "Cryptographic Key Pair",
+  "vc:slug": "cryptographic-key-pair",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:cryptographic-key-pair",
-  "@type":"Class",
-  "label":"Cryptographic Key Pair",
-  "definition":"A cryptographic key pair is a mathematically linked pair of keys, a public key and a private key, used in asymmetric cryptography. The private key is kept secret by its owner while the public key may be distributed openly, and operations performed with one key can only be reversed or verified with the other. Key pairs underpin encryption to a recipient, digital signatures that prove authorship, and key agreement, making them foundational to secure communication, authentication and decentralised identity.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:public-key-cryptography","label":"Public Key Cryptography"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:private-key","label":"Private Key"}],
-    "partOf":[{"@id":"urn:ngm:class:public-key-cryptography","label":"Public Key Cryptography"}],
-    "uses":[{"@id":"urn:ngm:class:asymmetric-cryptography","label":"Asymmetric Cryptography"}],
-    "enables":[{"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"},{"@id":"urn:ngm:class:encryption","label":"Encryption"}],
-    "supports":[{"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"},{"@id":"urn:ngm:class:did-method","label":"DID Method"}],
-    "requires":[{"@id":"urn:ngm:class:key-management","label":"Key Management"}],
-    "dependsOn":[{"@id":"urn:ngm:class:asymmetric-cryptography","label":"Asymmetric Cryptography"},{"@id":"urn:ngm:class:key-management","label":"Key Management"}],
-    "implements":[{"@id":"urn:ngm:class:public-key-cryptography","label":"Public Key Cryptography"}],
-    "relatedTo":[{"@id":"urn:ngm:class:encryption","label":"Encryption"},{"@id":"urn:ngm:class:cryptography","label":"Cryptography"},{"@id":"urn:ngm:class:private-key","label":"Private Key"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:did-method","label":"DID Method"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cryptographic-key-pair",
+  "@type": "Class",
+  "label": "Cryptographic Key Pair",
+  "definition": "A cryptographic key pair is a mathematically linked pair of keys, a public key and a private key, used in asymmetric cryptography. The private key is kept secret by its owner while the public key may be distributed openly, and operations performed with one key can only be reversed or verified with the other. Key pairs underpin encryption to a recipient, digital signatures that prove authorship, and key agreement, making them foundational to secure communication, authentication and decentralised identity.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:public-key-cryptography",
+      "label": "Public Key Cryptography"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

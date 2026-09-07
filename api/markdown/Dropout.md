@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dropout
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,47 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dropout:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b06e18362443cefc2ac703f5fbc4f2db3b31232e9bd730a0e86aeb9eb602d507"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO/IEC 22989:2022]]",
-      "resolved": "urn:visionflow:linked:iso-iec-22989-2022",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI RMF]]",
-      "resolved": "urn:visionflow:linked:nist-ai-rmf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Dropout** is a regularisation technique that randomly deactivates (drops) a fraction of neurons during each training iteration, preventing co-adaptation and reducing overfitting. Dropout rate (typically 0.2–0.5) controls the fraction of neurons dropped. At inference time, all neurons are active but their outputs are scaled by the retention probability, approximating an ensemble of exponentially many sub-networks.

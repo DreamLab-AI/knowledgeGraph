@@ -1,55 +1,108 @@
----
-public: true
----
-
-# Checkerboard Pattern
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:checkerboard-pattern", "@type":"Page", "title":"Checkerboard Pattern", "vc:slug":"checkerboard-pattern", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:checkerboard-pattern",
+  "@type": "Page",
+  "title": "Checkerboard Pattern",
+  "vc:slug": "checkerboard-pattern",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:checkerboard-pattern",
-  "@type":"Class",
-  "label":"Checkerboard Pattern",
-  "definition":"A checkerboard pattern is a planar grid of alternating black and white squares used as a calibration target in computer vision. Its regularly spaced corners are easy to detect with sub-pixel accuracy and have precisely known relative positions, providing reliable correspondences for estimating camera parameters. The checkerboard is the most common target for intrinsic calibration, distortion correction, and stereo rig alignment.",
-  "domain":"spatial-computing",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:optical-calibration-target","label":"Optical Calibration Target"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:optical-calibration-target","label":"Optical Calibration Target"}],
-    "hasPart":[
-      {"@id":"urn:ngm:class:feature-detection","label":"Feature Detection"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:checkerboard-pattern",
+  "@type": "Class",
+  "label": "Checkerboard Pattern",
+  "definition": "A checkerboard pattern is a planar grid of alternating black and white squares used as a calibration target in computer vision. Its regularly spaced corners are easy to detect with sub-pixel accuracy and have precisely known relative positions, providing reliable correspondences for estimating camera parameters. The checkerboard is the most common target for intrinsic calibration, distortion correction, and stereo rig alignment.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optical-calibration-target",
+      "label": "Optical Calibration Target"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"},
-      {"@id":"urn:ngm:class:feature-detection","label":"Feature Detection"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:camera-calibration","label":"Camera Calibration"},
-      {"@id":"urn:ngm:class:lens-distortion-correction","label":"Lens Distortion Correction"},
-      {"@id":"urn:ngm:class:camera-intrinsics","label":"Camera Intrinsics"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:camera-calibration","label":"Camera Calibration"},
-      {"@id":"urn:ngm:class:pose-estimation","label":"Pose Estimation"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:lens-distortion-correction",
+        "label": "Lens Distortion Correction"
+      },
+      {
+        "@id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:homography","label":"Homography"},
-      {"@id":"urn:ngm:class:fiducial-marker","label":"Fiducial Marker"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:fiducial-marker","label":"Fiducial Marker"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:homography",
+        "label": "Homography"
+      },
+      {
+        "@id": "urn:ngm:class:fiducial-marker",
+        "label": "Fiducial Marker"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fiducial-marker",
+        "label": "Fiducial Marker"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

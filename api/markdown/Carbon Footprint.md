@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Footprint
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A carbon footprint is the total quantity of greenhouse gases, expressed as carbon dioxide equivalent (CO2e), emitted directly and indirectly by an individual, organisation, product, or activity over a defined period. It aggregates scope 1, 2, and 3 emissions to provide a single comparable measure of climate impact. Carbon footprints matter because they are the baseline metric for emissions reduction targets, disclosure, and offsetting strategies.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Warehousing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -117,6 +113,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Data warehousing is the practice of consolidating data from multiple operational and external sources into a central, integrated, subject-oriented repository optimised for query and analysis rather than transaction processing. A data warehouse stores historical, cleansed and conformed data structured for reporting and decision support, typically populated through extract-transform-load pipelines and queried using online analytical processing. It provides the persistent analytical substrate on which business intelligence, dashboards and downstream analytics are built.
   - Related core concepts: [[Data Engineering]] [[Business Intelligence]] [[Data Integration]] [[Relational Database]]

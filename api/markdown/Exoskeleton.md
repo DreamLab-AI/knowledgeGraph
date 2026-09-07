@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Exoskeleton
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,57 +181,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:exoskeleton:7b35ca031410",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:81d0fabe39830f896a1eab244db31c4b2aee2c9bad7b2785c27c6df95822c6a8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Actuator]]",
-      "resolved": "urn:visionflow:linked:actuator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:linked:sensor-fusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Assistive Robotics]]",
-      "resolved": "urn:visionflow:linked:assistive-robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human-Robot Collaboration]]",
-      "resolved": "urn:visionflow:linked:human-robot-collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Robot Interaction]]",
-      "resolved": "urn:visionflow:linked:human-robot-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Exoskeleton Robot]]",
-      "resolved": "urn:visionflow:linked:exoskeleton-robot",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An exoskeleton is a wearable robotic structure that augments or supports human movement by applying forces in parallel with the wearer's limbs, used for assistance, rehabilitation and load support.

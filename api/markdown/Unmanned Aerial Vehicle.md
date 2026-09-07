@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Unmanned Aerial Vehicle
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - NaturalLanguageProcessing
----
-
-# Natural Language Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,47 +194,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:natural-language-processing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ebddba0ada7eb57fd1f6224ea27a2ecbc1ef825f9316e77641bd92b19a97d285"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Translation]]",
-      "resolved": "urn:visionflow:owl:class:machine-translation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text Generation]]",
-      "resolved": "urn:visionflow:owl:class:text-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformers]]",
-      "resolved": "urn:visionflow:owl:class:transformers",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Natural Language Processing (NLP) is the subfield of AI focused on enabling computers to understand, interpret, generate, and manipulate human language. Core tasks include text classification, named entity recognition, machine translation, sentiment analysis, question answering, and language generation. Modern NLP leverages transformer architectures (BERT, GPT, T5), pre-training on massive corpora, and fine-tuning for downstream tasks. Advanced systems perform multimodal understanding (text-image), multilingual processing, and exhibit emergent capabilities like reasoning and code generation.

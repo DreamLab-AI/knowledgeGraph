@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Photorealistic Telepresence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Photorealistic telepresence is remote real-time communication in which participants appear as lifelike, volumetrically accurate representations rather than video tiles or stylised avatars. It reconstructs a person's appearance and motion using techniques such as neural avatars and 3D Gaussian splatting, rendering them convincingly in a shared spatial scene. The goal is a sense of co-presence that closely matches being physically together.",
   "domain": "metaverse",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-avatars", "label": "AI Avatars"}, {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-avatars",
+        "label": "AI Avatars"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      }
+    ]
   },
   "quality": 0.72
 }

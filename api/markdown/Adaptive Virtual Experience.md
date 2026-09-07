@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adaptive Virtual Experience
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,72 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adaptive-virtual-experience:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d19b57add8c30575641ab3c4eefb27c2282d87b463cb19ae3a60c887c0bdeb8d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Dynamic Gaming]]",
-      "resolved": "urn:visionflow:linked:dynamic-gaming",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Personalized Learning]]",
-      "resolved": "urn:visionflow:linked:personalized-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Analytics]]",
-      "resolved": "urn:visionflow:linked:real-time-analytics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Behavior Tracking]]",
-      "resolved": "urn:visionflow:linked:user-behavior-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Reality Experience]]",
-      "resolved": "urn:visionflow:linked:virtual-reality-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Therapeutic VR]]",
-      "resolved": "urn:visionflow:owl:class:therapeutic-vr",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Adaptive Virtual Experience refers to AI-driven immersive environments that dynamically adjust content, difficulty, pacing, and presentation in real-time based on user behavior, preferences, physiological responses, and interaction patterns to deliver personalized and engaging virtual reality experiences.

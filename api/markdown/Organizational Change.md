@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Organizational Change
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,26 +82,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:organizational-change:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:03bad938814d6bc1d262ef021f862f4acc5f4f4f2dcf5ff6d646e7c5418246ce"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Organizational Change is the deliberate process of transforming an organisation's structures, workflows, cultural norms, and operational paradigms. In technology contexts this encompasses adoption of immersive collaboration tools, distributed team models, and AI-augmented workflows, requiring sustained stakeholder engagement and iterative change management strategies.

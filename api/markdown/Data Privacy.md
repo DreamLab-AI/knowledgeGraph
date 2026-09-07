@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Privacy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,53 +20,142 @@ public: true
   "definition": "Data Privacy is the governance and engineering discipline that ensures individuals retain meaningful control over their personal information through legal frameworks, technical safeguards, and organisational policies governing the appropriate collection, processing, storage, and sharing of personal data. It spans both the regulatory compliance dimension—expressed in instruments such as GDPR, CCPA, PIPEDA, and sector-specific regulations—and the engineering discipline of privacy-by-design that minimises data exposure through techniques such as anonymisation, pseudonymisation, differential privacy, federated learning, and consent management. As AI training practices, surveillance capitalism, and cross-border data flows intensify the stakes of personal information handling, data privacy functions as a core organisational risk management and trust-building domain. The field requires integration across legal, technical, and organisational layers to be effective, and is increasingly operationalised through dedicated Privacy-Enhancing Technologies (PETs).",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:information-privacy", "label": "Information Privacy"},
-    {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+    {
+      "@id": "urn:ngm:class:information-privacy",
+      "label": "Information Privacy"
+    },
+    {
+      "@id": "urn:ngm:class:data-protection",
+      "label": "Data Protection"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:data-anonymization-pipeline", "label": "Data Anonymization Pipeline"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-anonymization-pipeline",
+        "label": "Data Anonymization Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:informed-consent", "label": "Informed Consent"},
-      {"@id": "urn:ngm:class:granular-consent-control", "label": "Granular Consent Control"},
-      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"},
-      {"@id": "urn:ngm:class:digital-trust", "label": "Digital Trust"}
+      {
+        "@id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "@id": "urn:ngm:class:granular-consent-control",
+        "label": "Granular Consent Control"
+      },
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "@id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:ccpa", "label": "CCPA"},
-      {"@id": "urn:ngm:class:iso-27701", "label": "ISO 27701"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ccpa",
+        "label": "CCPA"
+      },
+      {
+        "@id": "urn:ngm:class:iso-27701",
+        "label": "ISO 27701"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:surveillance", "label": "Surveillance"},
-      {"@id": "urn:ngm:class:data-monetisation", "label": "Data Monetisation"}
+      {
+        "@id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:data-monetisation",
+        "label": "Data Monetisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
-      {"@id": "urn:ngm:class:on-device-ai", "label": "On-Device AI"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-ai",
+        "label": "On-Device AI"
+      }
     ]
   },
   "quality": 0.74,

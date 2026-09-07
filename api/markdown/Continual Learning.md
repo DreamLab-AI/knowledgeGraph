@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Continual Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,48 +7,174 @@ public: true
   "title": "Continual Learning",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:catastrophic-forgetting", "vc:label": "Catastrophic Forgetting"},
-    {"@id": "urn:visionflow:linked:neural-networks", "vc:label": "Neural Networks"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:online-learning", "vc:label": "Online Learning"},
-    {"@id": "urn:visionflow:linked:neural-plasticity", "vc:label": "Neural Plasticity"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:elastic-weight-consolidation", "vc:label": "Elastic Weight Consolidation"},
-    {"@id": "urn:visionflow:linked:experience-replay", "vc:label": "Experience Replay"},
-    {"@id": "urn:visionflow:linked:knowledge-distillation", "vc:label": "Knowledge Distillation"},
-    {"@id": "urn:visionflow:linked:generative-adversarial-networks", "vc:label": "Generative Adversarial Networks"},
-    {"@id": "urn:visionflow:linked:variational-autoencoders", "vc:label": "Variational Autoencoders"},
-    {"@id": "urn:visionflow:linked:progressive-neural-networks", "vc:label": "Progressive Neural Networks"},
-    {"@id": "urn:visionflow:linked:meta-learning", "vc:label": "Meta-Learning"},
-    {"@id": "urn:visionflow:linked:few-shot-learning", "vc:label": "Few-Shot Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:domain-adaptation", "vc:label": "Domain Adaptation"},
-    {"@id": "urn:visionflow:linked:curriculum-learning", "vc:label": "Curriculum Learning"},
-    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
-    {"@id": "urn:visionflow:linked:multi-task-learning", "vc:label": "Multi-Task Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:parameter-efficient-fine-tuning", "vc:label": "Parameter-Efficient Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:linked:autonomous-agents", "vc:label": "Autonomous Agents"},
-    {"@id": "urn:visionflow:linked:representation-learning", "vc:label": "Representation Learning"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:memory-replay", "vc:label": "Memory Replay"},
-    {"@id": "urn:visionflow:linked:fisher-information", "vc:label": "Fisher Information"},
-    {"@id": "urn:visionflow:linked:model-compression", "vc:label": "Model Compression"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:machine-unlearning", "vc:label": "Machine Unlearning"},
-    {"@id": "urn:visionflow:linked:batch-learning", "vc:label": "Batch Learning"},
-    {"@id": "urn:visionflow:linked:task-incremental-learning", "vc:label": "Task-Incremental Learning"},
-    {"@id": "urn:visionflow:linked:class-incremental-learning", "vc:label": "Class-Incremental Learning"},
-    {"@id": "urn:visionflow:linked:lora", "vc:label": "LoRA"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:machine-learning-domain", "vc:label": "Machine Learning Domain"}
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:catastrophic-forgetting",
+      "vc:label": "Catastrophic Forgetting"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:online-learning",
+      "vc:label": "Online Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-plasticity",
+      "vc:label": "Neural Plasticity"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:elastic-weight-consolidation",
+      "vc:label": "Elastic Weight Consolidation"
+    },
+    {
+      "@id": "urn:visionflow:linked:experience-replay",
+      "vc:label": "Experience Replay"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-networks",
+      "vc:label": "Generative Adversarial Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoders",
+      "vc:label": "Variational Autoencoders"
+    },
+    {
+      "@id": "urn:visionflow:linked:progressive-neural-networks",
+      "vc:label": "Progressive Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-learning",
+      "vc:label": "Meta-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:few-shot-learning",
+      "vc:label": "Few-Shot Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:domain-adaptation",
+      "vc:label": "Domain Adaptation"
+    },
+    {
+      "@id": "urn:visionflow:linked:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularisation",
+      "vc:label": "Regularisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-task-learning",
+      "vc:label": "Multi-Task Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:parameter-efficient-fine-tuning",
+      "vc:label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agents",
+      "vc:label": "Autonomous Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:memory-replay",
+      "vc:label": "Memory Replay"
+    },
+    {
+      "@id": "urn:visionflow:linked:fisher-information",
+      "vc:label": "Fisher Information"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-compression",
+      "vc:label": "Model Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-unlearning",
+      "vc:label": "Machine Unlearning"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-learning",
+      "vc:label": "Batch Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-incremental-learning",
+      "vc:label": "Task-Incremental Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:class-incremental-learning",
+      "vc:label": "Class-Incremental Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:lora",
+      "vc:label": "LoRA"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-domain",
+      "vc:label": "Machine Learning Domain"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
@@ -107,56 +228,158 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:experience-replay", "label": "Experience Replay"},
-      {"@id": "urn:ngm:class:elastic-weight-consolidation", "label": "Elastic Weight Consolidation"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:progressive-neural-networks", "label": "Progressive Neural Networks"},
-      {"@id": "urn:ngm:class:task-incremental-learning", "label": "Task-Incremental Learning"},
-      {"@id": "urn:ngm:class:class-incremental-learning", "label": "Class-Incremental Learning"}
+      {
+        "@id": "urn:ngm:class:experience-replay",
+        "label": "Experience Replay"
+      },
+      {
+        "@id": "urn:ngm:class:elastic-weight-consolidation",
+        "label": "Elastic Weight Consolidation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:progressive-neural-networks",
+        "label": "Progressive Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:task-incremental-learning",
+        "label": "Task-Incremental Learning"
+      },
+      {
+        "@id": "urn:ngm:class:class-incremental-learning",
+        "label": "Class-Incremental Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:online-learning", "label": "Online Learning"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:machine-unlearning", "label": "Machine Unlearning"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:machine-unlearning",
+        "label": "Machine Unlearning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:catastrophic-forgetting", "label": "Catastrophic Forgetting"},
-      {"@id": "urn:ngm:class:multi-task-learning", "label": "Multi-Task Learning"},
-      {"@id": "urn:ngm:class:batch-learning", "label": "Batch Learning"}
+      {
+        "@id": "urn:ngm:class:catastrophic-forgetting",
+        "label": "Catastrophic Forgetting"
+      },
+      {
+        "@id": "urn:ngm:class:multi-task-learning",
+        "label": "Multi-Task Learning"
+      },
+      {
+        "@id": "urn:ngm:class:batch-learning",
+        "label": "Batch Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"},
-      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"},
-      {"@id": "urn:ngm:class:lora", "label": "LoRA"},
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"},
-      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"},
-      {"@id": "urn:ngm:class:neural-plasticity", "label": "Neural Plasticity"},
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-plasticity",
+        "label": "Neural Plasticity"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "quality": 0.91,
@@ -164,67 +387,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:continual-learning:73e87299af1b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:279ccd490f46125b43bdb4809c8d5f8011027153b0fc4c0a805c854c9b22c910"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Catastrophic Forgetting]]", "resolved": "urn:visionflow:linked:catastrophic-forgetting", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Networks]]", "resolved": "urn:visionflow:linked:neural-networks", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Online Learning]]", "resolved": "urn:visionflow:linked:online-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Plasticity]]", "resolved": "urn:visionflow:linked:neural-plasticity", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Elastic Weight Consolidation]]", "resolved": "urn:visionflow:linked:elastic-weight-consolidation", "kind": "StubLink"},
-    {"raw": "[[Experience Replay]]", "resolved": "urn:visionflow:linked:experience-replay", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Distillation]]", "resolved": "urn:visionflow:linked:knowledge-distillation", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Adversarial Networks]]", "resolved": "urn:visionflow:linked:generative-adversarial-networks", "kind": "ResolvedLink"},
-    {"raw": "[[Variational Autoencoders]]", "resolved": "urn:visionflow:linked:variational-autoencoders", "kind": "StubLink"},
-    {"raw": "[[Progressive Neural Networks]]", "resolved": "urn:visionflow:linked:progressive-neural-networks", "kind": "StubLink"},
-    {"raw": "[[Meta-Learning]]", "resolved": "urn:visionflow:linked:meta-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Few-Shot Learning]]", "resolved": "urn:visionflow:linked:few-shot-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Federated Learning]]", "resolved": "urn:visionflow:linked:federated-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Edge Computing]]", "resolved": "urn:visionflow:linked:edge-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "ResolvedLink"},
-    {"raw": "[[Domain Adaptation]]", "resolved": "urn:visionflow:linked:domain-adaptation", "kind": "ResolvedLink"},
-    {"raw": "[[Curriculum Learning]]", "resolved": "urn:visionflow:linked:curriculum-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Regularisation]]", "resolved": "urn:visionflow:linked:regularisation", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Task Learning]]", "resolved": "urn:visionflow:linked:multi-task-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Parameter-Efficient Fine-Tuning]]", "resolved": "urn:visionflow:linked:parameter-efficient-fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Models]]", "resolved": "urn:visionflow:linked:foundation-models", "kind": "ResolvedLink"},
-    {"raw": "[[Autonomous Agents]]", "resolved": "urn:visionflow:linked:autonomous-agents", "kind": "ResolvedLink"},
-    {"raw": "[[Representation Learning]]", "resolved": "urn:visionflow:linked:representation-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "ResolvedLink"},
-    {"raw": "[[Memory Replay]]", "resolved": "urn:visionflow:linked:memory-replay", "kind": "StubLink"},
-    {"raw": "[[Fisher Information]]", "resolved": "urn:visionflow:linked:fisher-information", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Unlearning]]", "resolved": "urn:visionflow:linked:machine-unlearning", "kind": "StubLink"},
-    {"raw": "[[Batch Learning]]", "resolved": "urn:visionflow:linked:batch-learning", "kind": "StubLink"},
-    {"raw": "[[Task-Incremental Learning]]", "resolved": "urn:visionflow:linked:task-incremental-learning", "kind": "StubLink"},
-    {"raw": "[[Class-Incremental Learning]]", "resolved": "urn:visionflow:linked:class-incremental-learning", "kind": "StubLink"},
-    {"raw": "[[LoRA]]", "resolved": "urn:visionflow:linked:lora", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Domain]]", "resolved": "urn:visionflow:linked:machine-learning-domain", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

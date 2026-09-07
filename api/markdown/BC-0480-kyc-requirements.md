@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BC-0480-kyc-requirements
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bc-0480-kyc-requirements:e0f8eba45b9f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ae6ef318dc02ab3d11abb048acc4bf60b7644dc8e87379392681f21e547015ef"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:linked:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Anti-Money Laundering]]",
-      "resolved": "urn:visionflow:linked:anti-money-laundering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Know Your Customer]]",
-      "resolved": "urn:visionflow:linked:know-your-customer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - KYC requirements are the obligations placed on regulated firms to identify and verify their customers, assess risk and monitor activity as part of anti-money-laundering and counter-terrorist-financing controls.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IROS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,42 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:iros:0981ed336053",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:890403e29bb3e4b04d0630ba050dfe9fe043be26faeeb173f7fa720004e94452"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ICRA]]",
-      "resolved": "urn:visionflow:linked:icra",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mobile Manipulation]]",
-      "resolved": "urn:visionflow:linked:mobile-manipulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - IROS, the International Conference on Intelligent Robots and Systems, is an annual academic robotics conference co-sponsored by the IEEE and the Robotics Society of Japan.

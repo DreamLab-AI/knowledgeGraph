@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Access Suspension
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "model-access-suspension",
   "title": "Model Access Suspension",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Export Controls", "US AI Policy"],
+  "vc:outboundWikilinks": [
+    "AI Export Controls",
+    "US AI Policy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:export-controls", "label": "Export Controls"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:export-controls",
+      "label": "Export Controls"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:export-controls", "label": "Export Controls"}, {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}, {"@id": "urn:ngm:class:model", "label": "Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:export-controls",
+        "label": "Export Controls"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

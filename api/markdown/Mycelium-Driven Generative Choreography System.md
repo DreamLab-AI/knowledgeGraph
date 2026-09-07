@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[GOLM]]
-# Mycelium-Driven Generative Choreography System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[GOLM]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-performance-capture", "label": "Digital Performance Capture"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:digital-performance-capture",
+        "label": "Digital Performance Capture"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ]
   },
   "provenance": {
@@ -66,26 +75,6 @@ elevatedFrom:: [[GOLM]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:golm:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ee2d97fb30038e1c22113520480dfa77aed1ae047e41caa855c24ef5801e16cb"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An experimental creative AI project exploring the intersection of hip-hop dance, mycelium network datasets, and machine learning to generate emergent movement vocabularies. GOLM investigates whether biological network topologies—particularly fungal mycelium growth patterns—can be used to train generative models that produce novel choreographic sequences and spatial interaction grammars.

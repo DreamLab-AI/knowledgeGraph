@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Board-Level Oversight
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,21 +21,45 @@ public: true
   "domain": "governance",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:governance", "label": "Governance"}
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:audit", "label": "Audit"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:boardroom", "label": "Boardroom"}
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:boardroom",
+        "label": "Boardroom"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +80,3 @@ public: true
   - The expansion of board responsibilities into technology has accelerated since 2015. Cybersecurity breaches (Target, Equifax) prompted US SEC guidance requiring boards to disclose cybersecurity risk oversight processes. The EU AI Act (2024) assigns accountability for high-risk AI systems to deploying organisations at the board level. Institutional investors (BlackRock, Legal & General) now routinely engage boards on ESG metrics, executive pay ratios, and climate transition plans, signalling that material risks extend far beyond financial statements.
 
   - In 2024–2025, regulators across jurisdictions are expanding what constitutes material risk subject to board oversight. The UK FCA's Consumer Duty (2023) explicitly requires board sign-off on customer outcome assessments. The EU's Corporate Sustainability Reporting Directive (CSRD) mandates board-level approval of sustainability statements. Artificial intelligence governance is emerging as a new board agenda item: the NIST AI RMF and forthcoming UK AI governance frameworks call for boards to approve AI risk registers. Board composition is also evolving, with requirements or recommendations for at least one director with digital or technology expertise becoming more common in best-practice codes.
-

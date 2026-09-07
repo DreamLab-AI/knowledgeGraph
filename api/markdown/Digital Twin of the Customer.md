@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Twin of the Customer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,58 +60,60 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:digital-twin-ecosystem", "label": "Digital Twin Ecosystem"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-ecosystem",
+        "label": "Digital Twin Ecosystem"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+      {
+        "@id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin-technology", "label": "Digital Twin Technology"},
-      {"@id": "urn:ngm:class:predictive-personalization", "label": "Predictive Personalization"},
-      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"}
+      {
+        "@id": "urn:ngm:class:digital-twin-technology",
+        "label": "Digital Twin Technology"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-twin-of-the-customer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4a43ea6a999767afeb61ef46a4a5537b787f6fe495801f14e0aea9a8af173c3f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A dynamic virtual replica that mirrors an individual customer's behaviours, preferences, interactions, and decision-making patterns within a spatially-aware digital environment, enabling real-time simulation and predictive analysis of customer journeys. Integrates IoT telemetry, AI-driven behavioural modelling, and immersive 3D visualisations to create a continuously updated model reflecting how customers engage with products, services, and physical or digital spaces.

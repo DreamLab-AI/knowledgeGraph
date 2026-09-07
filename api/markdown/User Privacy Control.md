@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Privacy Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,57 +60,70 @@ public: true
   },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:right-to-be-forgotten", "label": "Right to Be Forgotten"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:right-to-be-forgotten",
+        "label": "Right to Be Forgotten"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"}
+      {
+        "@id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:user-privacy-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:29f4900c3793c803475f990c09d75403b17e56cde34a9ff690db05c97ea4ee24"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Privacy Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:privacy-mechanism",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A user privacy control component in the Artificial Intelligence domain that enables RightToBeForgotten.

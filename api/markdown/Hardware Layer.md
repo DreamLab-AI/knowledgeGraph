@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hardware Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,57 +85,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hardware-layer:b75b0706b514",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eccfabf86a40c0763bb4ee8515c5cae2233b482c18f5798a60a641fcb1cb50b0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Layer]]",
-      "resolved": "urn:visionflow:linked:network-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compute Layer]]",
-      "resolved": "urn:visionflow:linked:compute-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Architecture]]",
-      "resolved": "urn:visionflow:linked:computer-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Signal Processing]]",
-      "resolved": "urn:visionflow:linked:digital-signal-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
-      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Hardware Layer is the lowest stratum of the canonical stack, comprising the physical computing, storage, and signalling devices on which everything above runs. Nothing sits below it; immediately above it is the Network Layer, which connects discrete machines. It contains processors, memory, storage media, accelerators, and the physical transmission media that carry signals.

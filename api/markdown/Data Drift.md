@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Data Drift
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-drift", "@type":"Page", "title":"Data Drift", "vc:slug":"data-drift", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-drift",
+  "@type": "Page",
+  "title": "Data Drift",
+  "vc:slug": "data-drift",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

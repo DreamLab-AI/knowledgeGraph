@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Camera Parameters
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,72 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:camera-parameters:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3cb140a327f88b8957595e1fdd913ccb75ef2bb5f3cfb439cc9f9d6cf7012504"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Camera Calibration]]",
-      "resolved": "urn:visionflow:linked:camera-calibration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Object Measurement]]",
-      "resolved": "urn:visionflow:linked:object-measurement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scene Localization]]",
-      "resolved": "urn:visionflow:linked:scene-localization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Reconstruction]]",
-      "resolved": "urn:visionflow:owl:class:3-d-reconstruction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Calibration Target]]",
-      "resolved": "urn:visionflow:owl:class:calibration-target",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Imaging Parameters]]",
-      "resolved": "urn:visionflow:owl:class:imaging-parameters",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimisation Algorithm]]",
-      "resolved": "urn:visionflow:owl:class:optimization-algorithm",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The intrinsic and extrinsic mathematical values that define a camera's optical characteristics and spatial positioning, comprising focal length, optical center, distortion coefficients (intrinsic) and rotation/translation relative to world coordinates (extrinsic), essential for 3D reconstruction and photogrammetry.

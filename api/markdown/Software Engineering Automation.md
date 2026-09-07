@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Software Engineering Automation
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:software-engineering-automation", "@type": "Page", "title": "Software Engineering Automation", "vc:slug": "software-engineering-automation", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:software-engineering-automation",
+  "@type": "Page",
+  "title": "Software Engineering Automation",
+  "vc:slug": "software-engineering-automation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Film Production
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -169,32 +164,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:film-production:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:962309fa47202b1b5b543012584ca998025b845c621fb8831927248dc48fba59"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The end-to-end creative and technical process of making motion picture content, encompassing development, pre-production, principal photography, visual effects, post-production, and distribution. Modern film production increasingly integrates spatial computing technologies such as virtual production workflows, LED volume stages, real-time game engine rendering, and AI-assisted tools that compress timelines and reduce location dependency.

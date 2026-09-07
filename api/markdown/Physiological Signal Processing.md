@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Physiological Signal Processing
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:physiological-signal-processing", "@type": "Page", "title": "Physiological Signal Processing", "vc:slug": "physiological-signal-processing", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:physiological-signal-processing",
+  "@type": "Page",
+  "title": "Physiological Signal Processing",
+  "vc:slug": "physiological-signal-processing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

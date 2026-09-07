@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Contracts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "A data contract is a formal, versioned agreement between data producers and consumers that specifies the schema, semantics, quality guarantees and service-level expectations of a dataset or stream. It makes data interfaces explicit and enforceable, enabling automated validation and breaking-change detection in data pipelines. Data contracts are a metadata-management practice that improves reliability and trust across decentralised data ownership.",
   "domain": "data",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
     ]
   },
   "quality": 0.72

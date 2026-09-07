@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitcoin Cash
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bitcoin-cash:b792ab9c8670",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:98b5f0cc79564bdf20dd7e0df96825a021f5e8a486aa1228e33d3270739d0218"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Mining]]",
-      "resolved": "urn:visionflow:linked:mining",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:linked:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment Channel]]",
-      "resolved": "urn:visionflow:linked:payment-channel",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Network]]",
-      "resolved": "urn:visionflow:linked:bitcoin-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://bitcoincash.org/]]",
-      "resolved": "urn:visionflow:linked:https-bitcoincash-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A cryptocurrency and blockchain created in 2017 as a hard fork of Bitcoin, with a larger block size intended to increase on-chain transaction throughput. It uses the same proof-of-work consensus model as Bitcoin.

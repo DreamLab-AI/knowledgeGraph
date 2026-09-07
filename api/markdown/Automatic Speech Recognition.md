@@ -1,8 +1,3 @@
----
-public: true
----
-
-# automatic speech recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,49 +7,178 @@ public: true
   "title": "automatic speech recognition",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:acoustic-model", "vc:label": "Acoustic Model"},
-    {"@id": "urn:visionflow:linked:language-model", "vc:label": "Language Model"},
-    {"@id": "urn:visionflow:linked:feature-extraction", "vc:label": "Feature Extraction"},
-    {"@id": "urn:visionflow:linked:audio-signal-processing", "vc:label": "Audio Signal Processing"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:connectionist-temporal-classification", "vc:label": "Connectionist Temporal Classification"},
-    {"@id": "urn:visionflow:linked:speaker-diarisation", "vc:label": "Speaker Diarisation"},
-    {"@id": "urn:visionflow:linked:speaker-recognition", "vc:label": "Speaker Recognition"},
-    {"@id": "urn:visionflow:linked:word-error-rate", "vc:label": "Word Error Rate"},
-    {"@id": "urn:visionflow:linked:keyword-spotting", "vc:label": "Keyword Spotting"},
-    {"@id": "urn:visionflow:linked:spoken-language-understanding", "vc:label": "Spoken Language Understanding"},
-    {"@id": "urn:visionflow:linked:real-time-captioning", "vc:label": "Real-Time Captioning"},
-    {"@id": "urn:visionflow:linked:text-to-speech", "vc:label": "Text-to-Speech"},
-    {"@id": "urn:visionflow:linked:spatial-audio", "vc:label": "Spatial Audio"},
-    {"@id": "urn:visionflow:linked:distributed-collaboration", "vc:label": "Distributed Collaboration"},
-    {"@id": "urn:visionflow:linked:language-modeling", "vc:label": "Language Modeling"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:application-layer", "vc:label": "ApplicationLayer"},
-    {"@id": "urn:visionflow:linked:whisper-openai", "vc:label": "Whisper OpenAI"},
-    {"@id": "urn:visionflow:linked:wav2vec", "vc:label": "wav2vec 2.0"},
-    {"@id": "urn:visionflow:linked:hubert", "vc:label": "HuBERT"},
-    {"@id": "urn:visionflow:linked:conformer", "vc:label": "Conformer"},
-    {"@id": "urn:visionflow:linked:rnn-transducer", "vc:label": "RNN Transducer"},
-    {"@id": "urn:visionflow:linked:positional-encoding", "vc:label": "Positional Encoding"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:knowledge-distillation", "vc:label": "Knowledge Distillation"},
-    {"@id": "urn:visionflow:linked:quantisation", "vc:label": "Quantisation"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:model-compression", "vc:label": "Model Compression"},
-    {"@id": "urn:visionflow:linked:beam-search", "vc:label": "Beam Search"},
-    {"@id": "urn:visionflow:owl:class:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:owl:class:self-supervised-learning", "vc:label": "Self-Supervised Learning"},
-    {"@id": "urn:visionflow:owl:class:recurrent-neural-network", "vc:label": "Recurrent Neural Network"},
-    {"@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:owl:class:machine-translation", "vc:label": "Machine Translation"},
-    {"@id": "urn:visionflow:owl:class:accessibility", "vc:label": "Accessibility"},
-    {"@id": "urn:visionflow:owl:class:multimodal-ai-architecture-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:owl:class:human-computer-interaction", "vc:label": "Human-Computer Interaction"},
-    {"@id": "urn:visionflow:owl:class:voice-interaction", "vc:label": "Voice Interaction"},
-    {"@id": "urn:visionflow:owl:class:spatial-computing", "vc:label": "Spatial Computing"},
-    {"@id": "urn:visionflow:owl:class:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:owl:class:transfer-learning", "vc:label": "Transfer Learning"}
+    {
+      "@id": "urn:visionflow:linked:acoustic-model",
+      "vc:label": "Acoustic Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:language-model",
+      "vc:label": "Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-signal-processing",
+      "vc:label": "Audio Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:connectionist-temporal-classification",
+      "vc:label": "Connectionist Temporal Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:speaker-diarisation",
+      "vc:label": "Speaker Diarisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:speaker-recognition",
+      "vc:label": "Speaker Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:word-error-rate",
+      "vc:label": "Word Error Rate"
+    },
+    {
+      "@id": "urn:visionflow:linked:keyword-spotting",
+      "vc:label": "Keyword Spotting"
+    },
+    {
+      "@id": "urn:visionflow:linked:spoken-language-understanding",
+      "vc:label": "Spoken Language Understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-captioning",
+      "vc:label": "Real-Time Captioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-speech",
+      "vc:label": "Text-to-Speech"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-audio",
+      "vc:label": "Spatial Audio"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-collaboration",
+      "vc:label": "Distributed Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:language-modeling",
+      "vc:label": "Language Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:whisper-openai",
+      "vc:label": "Whisper OpenAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:wav2vec",
+      "vc:label": "wav2vec 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:hubert",
+      "vc:label": "HuBERT"
+    },
+    {
+      "@id": "urn:visionflow:linked:conformer",
+      "vc:label": "Conformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:rnn-transducer",
+      "vc:label": "RNN Transducer"
+    },
+    {
+      "@id": "urn:visionflow:linked:positional-encoding",
+      "vc:label": "Positional Encoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantisation",
+      "vc:label": "Quantisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-compression",
+      "vc:label": "Model Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:beam-search",
+      "vc:label": "Beam Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-supervised-learning",
+      "vc:label": "Self-Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-translation",
+      "vc:label": "Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:accessibility",
+      "vc:label": "Accessibility"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-ai-architecture-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:voice-interaction",
+      "vc:label": "Voice Interaction"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transfer-learning",
+      "vc:label": "Transfer Learning"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -84,61 +208,175 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:acoustic-model", "label": "Acoustic Model"},
-      {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:connectionist-temporal-classification", "label": "Connectionist Temporal Classification"},
-      {"@id": "urn:ngm:class:rnn-transducer", "label": "RNN Transducer"},
-      {"@id": "urn:ngm:class:beam-search", "label": "Beam Search"}
+      {
+        "@id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
+      },
+      {
+        "@id": "urn:ngm:class:rnn-transducer",
+        "label": "RNN Transducer"
+      },
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:audio-signal-processing", "label": "Audio Signal Processing"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Accelerated Computing"}
+      {
+        "@id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Accelerated Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:connectionist-temporal-classification", "label": "Connectionist Temporal Classification"},
-      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"},
-      {"@id": "urn:ngm:class:spoken-language-understanding", "label": "Spoken Language Understanding"},
-      {"@id": "urn:ngm:class:real-time-captioning", "label": "Real-Time Captioning"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:spoken-language-understanding",
+        "label": "Spoken Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-captioning",
+        "label": "Real-Time Captioning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
-      {"@id": "urn:ngm:class:keyword-spotting", "label": "Keyword Spotting"}
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:keyword-spotting",
+        "label": "Keyword Spotting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:speaker-diarisation", "label": "Speaker Diarisation"},
-      {"@id": "urn:ngm:class:speaker-recognition", "label": "Speaker Recognition"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:word-error-rate", "label": "Word Error Rate"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"}
+      {
+        "@id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-recognition",
+        "label": "Speaker Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:word-error-rate",
+        "label": "Word Error Rate"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:speech-to-text", "label": "Speech-to-Text"},
-    {"@id": "urn:ngm:class:asr", "label": "ASR"}
+    {
+      "@id": "urn:ngm:class:speech-to-text",
+      "label": "Speech-to-Text"
+    },
+    {
+      "@id": "urn:ngm:class:asr",
+      "label": "ASR"
+    }
   ],
   "quality": 0.89,
   "provenance": {
@@ -417,7 +655,7 @@ public: true
 
   (5) **Audio-visual speech recognition (AVSR)** — joint modelling of audio and lip movement video for noise-robust recognition, with particular application to hearing-aid signal processing and noisy conference room ASR. The AV-HuBERT model (Shi et al. 2022) achieved WER of 1.36% on LRS3 (lip reading benchmark) using audio-visual fusion; in conditions where SNR < -5 dB, AVSR reduces WER by 40–60% relative to audio-only systems.
 
-  (6) **Hallucination detection and mitigation** — a known failure mode of large encoder-decoder models (Whisper in particular) is generating plausible but fabricated text for unintelligible or silent audio segments, particularly at segment boundaries. Research directions include: confidence calibration (uncertainty estimation from decoder probability distributions), hallucination classifiers trained on known hallucination patterns, and CTC-based confidence re-scoring to detect low-confidence segments. This is critical for medical and legal ASR where hallucinated content could cause patient harm or legal liability.
+  (6) **Hallucination detection and mitigation** — a known failure mode of large encoder-decoder models (Whisper in particular) is generating plausible but fabricated text for unintelligible or silent audio segments, particularly at segment boundaries. Research directions include: confidence calibration (uncertainty estimation from decoder probability distributions), hallucination classifiers trained on known hallucination patterns, and CTC-based confidence re-scoring to detect low-confidence segments. This is critical for medical and legal ASR where hallucinated content [private] cause patient harm or legal liability.
 
   (7) **Regulatory compliance and accessibility standards** — the UK's Online Safety Act 2023 and the European Accessibility Act 2025 mandate accurate automatic captioning for a broader range of digital content. OFCOM's updated subtitle quality code (2025) requires minimum 98% word accuracy for live subtitles, pushing commercial ASR providers to invest in domain adaptation for news, sport, and entertainment content domains. The BSL (British Sign Language) Act 2022 (Scotland) and the proposed BSL recognition legislation in Westminster will drive demand for sign language recognition technology, which shares architectural foundations with visual speech recognition.
 

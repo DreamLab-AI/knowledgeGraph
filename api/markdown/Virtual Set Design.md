@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Set Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,19 +63,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:virtual-production-volume", "label": "Virtual Production Volume"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"}
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:production-design", "label": "Production Design"}
+      {
+        "@id": "urn:ngm:class:production-design",
+        "label": "Production Design"
+      }
     ]
   },
   "provenance": {
@@ -90,42 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-set-design:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:489ee90d5e6eb3f00cfb9e6386801e6dd14460607d51831ccabb555fdcea01c8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Production Design]]",
-      "resolved": "urn:visionflow:owl:class:production-design",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The creation of digital environments and backgrounds for film, television, and broadcast production using 3D modeling, game engines, and LED wall technology, enabling dynamic digital sets that can be modified in real-time during filming to replace or augment physical set construction.

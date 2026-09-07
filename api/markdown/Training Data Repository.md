@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Training Data Repository
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,48 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
-      {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ]
   },
   "provenance": {
@@ -84,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:training-data-repository:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b0e987bb87b943009a6c89b6a1535da8372dde380b2f29b87c8113ebb52c71bc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Management]]",
-      "resolved": "urn:visionflow:owl:class:data-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A centralized or distributed storage system for collecting, organizing, versioning, and managing datasets used to train AI and machine learning models, including data provenance tracking, quality assurance, and access control.

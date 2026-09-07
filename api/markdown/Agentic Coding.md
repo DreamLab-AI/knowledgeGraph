@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agentic Coding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "agentic-coding",
   "title": "Agentic Coding",
   "vc:public": true,
-  "vc:outboundWikilinks": ["GPT 5.6 Soul", "Terminal Bench 2.0"],
+  "vc:outboundWikilinks": [
+    "GPT 5.6 Soul",
+    "Terminal Bench 2.0"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpt",
+      "label": "GPT"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}, {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

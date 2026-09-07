@@ -1,36 +1,108 @@
----
-public: true
----
-
-# Financial Action Task Force
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:financial-action-task-force", "@type":"Page", "title":"Financial Action Task Force", "vc:slug":"financial-action-task-force", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:financial-action-task-force",
+  "@type": "Page",
+  "title": "Financial Action Task Force",
+  "vc:slug": "financial-action-task-force",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:financial-action-task-force",
-  "@type":"Class",
-  "label":"Financial Action Task Force",
-  "definition":"The Financial Action Task Force (FATF) is an intergovernmental body that sets international standards to combat money laundering, terrorist financing and proliferation financing. It issues the FATF Recommendations, conducts mutual evaluations of member jurisdictions, and maintains lists of high-risk and non-cooperative jurisdictions. Its guidance — including the Travel Rule for virtual assets — strongly shapes national anti-money-laundering and know-your-customer regimes worldwide.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:standards-body","label":"Standards Body"}],
-  "relations":{
-    "standardizedBy":[{"@id":"urn:ngm:class:regulatory-framework","label":"Regulatory Framework"}],
-    "implements":[{"@id":"urn:ngm:class:anti-money-laundering","label":"Anti-Money Laundering"},{"@id":"urn:ngm:class:travel-rule","label":"Travel Rule"}],
-    "enables":[{"@id":"urn:ngm:class:compliance","label":"Compliance"},{"@id":"urn:ngm:class:know-your-customer","label":"Know Your Customer"}],
-    "requires":[{"@id":"urn:ngm:class:know-your-customer","label":"Know Your Customer"}],
-    "dependsOn":[{"@id":"urn:ngm:class:regulatory-framework","label":"Regulatory Framework"}],
-    "supports":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"},{"@id":"urn:ngm:class:anti-money-laundering","label":"Anti-Money Laundering"}],
-    "relatedTo":[{"@id":"urn:ngm:class:anti-money-laundering","label":"Anti-Money Laundering"},{"@id":"urn:ngm:class:compliance","label":"Compliance"},{"@id":"urn:ngm:class:travel-rule","label":"Travel Rule"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:governance","label":"Governance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:financial-action-task-force",
+  "@type": "Class",
+  "label": "Financial Action Task Force",
+  "definition": "The Financial Action Task Force (FATF) is an intergovernmental body that sets international standards to combat money laundering, terrorist financing and proliferation financing. It issues the FATF Recommendations, conducts mutual evaluations of member jurisdictions, and maintains lists of high-risk and non-cooperative jurisdictions. Its guidance — including the Travel Rule for virtual assets — strongly shapes national anti-money-laundering and know-your-customer regimes worldwide.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

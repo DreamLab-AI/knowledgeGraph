@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Management System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Meta
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:meta:ea3bd73e2b50",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0796edd31e072d6432876a8ffd7acc44edec1b18b3a7cf20e1cb017937df9287"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:linked:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:linked:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An American technology company, formerly named Facebook, that operates social media platforms and develops virtual and augmented reality hardware and software. It rebranded to Meta Platforms in 2021 to reflect a focus on the metaverse.

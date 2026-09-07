@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Service-Oriented Architecture
----
-
-# Service Oriented Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,42 +78,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:service-oriented-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d2c50d9841a2e89d04a783705f5fe0901190e2de32e207602d36fc0ef5168cd6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Architecture]]",
-      "resolved": "urn:visionflow:owl:class:software-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:system-interoperability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An architectural style organizing software as loosely coupled, interoperable services that communicate through standardized interfaces, enabling modular composition of metaverse functionality through reusable components and well-defined contracts.

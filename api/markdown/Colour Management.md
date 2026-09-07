@@ -1,37 +1,110 @@
----
-public: true
----
-
-# Colour Management
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:colour-management", "@type":"Page", "title":"Colour Management", "vc:slug":"colour-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:colour-management",
+  "@type": "Page",
+  "title": "Colour Management",
+  "vc:slug": "colour-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:colour-management",
-  "@type":"Class",
-  "label":"Colour Management",
-  "definition":"Colour management is the controlled conversion of colour representations between the characteristics of different devices and media so that colours appear consistent across capture, display and output. It relies on device profiles that describe how a given device reproduces colour and a profile connection space to translate between them. In spatial computing and real-time rendering, colour management ensures perceptually accurate imagery across cameras, displays and headsets.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:display-technology","label":"Display Technology"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:display-calibration","label":"Display Calibration"}],
-    "enables":[{"@id":"urn:ngm:class:rendering-pipeline","label":"Rendering Pipeline"},{"@id":"urn:ngm:class:physically-based-rendering","label":"Physically Based Rendering"}],
-    "uses":[{"@id":"urn:ngm:class:shader","label":"Shader"}],
-    "supports":[{"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"},{"@id":"urn:ngm:class:virtual-production","label":"Virtual Production"}],
-    "hasPart":[{"@id":"urn:ngm:class:display-calibration","label":"Display Calibration"}],
-    "dependsOn":[{"@id":"urn:ngm:class:display-technology","label":"Display Technology"}],
-    "relatedTo":[{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"},{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"},{"@id":"urn:ngm:class:design-software","label":"Design Software"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:rendering","label":"Rendering"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:colour-management",
+  "@type": "Class",
+  "label": "Colour Management",
+  "definition": "Colour management is the controlled conversion of colour representations between the characteristics of different devices and media so that colours appear consistent across capture, display and output. It relies on device profiles that describe how a given device reproduces colour and a profile connection space to translate between them. In spatial computing and real-time rendering, colour management ensures perceptually accurate imagery across cameras, displays and headsets.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:display-technology",
+      "label": "Display Technology"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:display-calibration",
+        "label": "Display Calibration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:display-calibration",
+        "label": "Display Calibration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

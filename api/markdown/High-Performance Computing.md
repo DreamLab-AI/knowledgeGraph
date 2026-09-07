@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - High Performance Computing
----
-
-# High-Performance Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,32 +20,88 @@ aliases:
   "definition": "High-Performance Computing (HPC) refers to the use of aggregated computational resources — clusters, supercomputers, and massively parallel systems — to solve problems requiring sustained compute throughput, memory bandwidth, or I/O rates far beyond those achievable on commodity servers. HPC systems combine specialised processors (CPUs, GPUs, FPGAs, TPUs), high-speed interconnects (InfiniBand, NVLink), parallel file systems, and workload-management software to execute scientific simulations, large-scale machine learning training, genomics, climate modelling, and computational fluid dynamics at peta- or exascale performance.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
-      {"@id": "urn:ngm:class:tpu", "label": "TPU"},
-      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
-      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "@id": "urn:ngm:class:tpu",
+        "label": "TPU"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:neur-ips", "label": "NeurIPS"},
-      {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:computing-hardware", "label": "Computing Hardware"}
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:computing-hardware",
+        "label": "Computing Hardware"
+      }
     ]
   },
   "quality": 0.8

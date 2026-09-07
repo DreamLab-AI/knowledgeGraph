@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Cross Domain Authentication
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

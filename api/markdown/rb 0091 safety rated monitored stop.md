@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0091 safety rated monitored stop
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,48 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0090-emergency-stop", "label": "rb 0090 emergency stop"},
-      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
-      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"}
+      {
+        "@id": "urn:ngm:class:rb-0090-emergency-stop",
+        "label": "rb 0090 emergency stop"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"},
-      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"}
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"}
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:rb-0096-safeguarding", "label": "rb 0096 safeguarding"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0096-safeguarding",
+        "label": "rb 0096 safeguarding"
+      }
     ]
   },
   "provenance": {
@@ -84,32 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0091-safety-rated-monitored-stop:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9c59537a427d6cfe60f677f0c977750bce7f5576d2e24292093852d39aff014e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A **Safety-Rated Monitored Stop** (SRMS) is a robot stopping function in which the robot halts motion while the control system continuously monitors joint positions to verify the robot remains stationary, without removing power to the actuators. Unlike an emergency stop, SRMS allows rapid resumption of operation when the hazardous condition clears, and is a core collaborative application mode defined in ISO 10218-1:2025 and ISO 10218-2:2025 (which superseded the earlier ISO/TS 15066:2016).

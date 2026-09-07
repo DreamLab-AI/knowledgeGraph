@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MetaversePlatforms
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-platforms:7f9e3116d3d6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0eb7bdeecf305b4e90a972883aa71d8bb5fc5c44e687da3dfa7785d35b7a7e34"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Virtual World]]",
-      "resolved": "urn:visionflow:linked:virtual-world",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Avatar System]]",
-      "resolved": "urn:visionflow:linked:avatar-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Microsoft Mesh]]",
-      "resolved": "urn:visionflow:linked:microsoft-mesh",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AltspaceVR]]",
-      "resolved": "urn:visionflow:linked:altspace-vr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Domain]]",
-      "resolved": "urn:visionflow:linked:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - MetaversePlatforms denotes the category of systems that host persistent, shared 3D virtual worlds with avatars, user interaction and often user-generated content and economies.

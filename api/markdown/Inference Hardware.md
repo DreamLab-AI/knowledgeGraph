@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inference Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,37 +186,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inference-hardware:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a3e1b4587e38d90589cd2aaba4c30b0c4b59e9780058dd39a3e108c92d5cb855"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Real-Time AI]]",
-      "resolved": "urn:visionflow:linked:real-time-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Hardware]]",
-      "resolved": "urn:visionflow:owl:class:ai-hardware",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Inference Hardware is a concept within the ai domain.

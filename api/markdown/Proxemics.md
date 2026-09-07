@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proxemics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,21 +64,48 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:proximity-detection", "label": "Proximity Detection"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:proximity-detection",
+        "label": "Proximity Detection"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:attention-aware-interaction", "label": "Attention Aware Interaction"},
-      {"@id": "urn:ngm:class:emotion-aware-interaction", "label": "Emotion Aware Interaction"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:attention-aware-interaction",
+        "label": "Attention Aware Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:emotion-aware-interaction",
+        "label": "Emotion Aware Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ]
   },
   "provenance": {
@@ -93,47 +115,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:proxemics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:31e1f3bc8ed97c0da74e74840a69a48e03efab41c51a4d114054c7236dfa0448"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[HRI]]",
-      "resolved": "urn:visionflow:linked:hri",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social Robotics]]",
-      "resolved": "urn:visionflow:owl:class:social-robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Study and application of spatial relationships between humans and robots, including personal space, social distance, and comfort zones for effective human-robot interaction.

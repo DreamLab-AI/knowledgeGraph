@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Continued Pre Training
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:full-fine-tuning", "label": "Full Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
     ]
   },
   "provenance": {
@@ -82,37 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:continued-pre-training:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1a8703848228c8681838b5d44b10abfd2af093d3c54bfc36b922733bacd39214"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An intermediate training phase where a pre-trained model undergoes additional pre-training on domain-specific or task-relevant data before fine-tuning. This technique bridges general pre-training and task-specific fine-tuning, adapting model knowledge to particular domains whilst maintaining broad capabilities.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-System Querying
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Cross-system querying is the ability to issue a single query that retrieves and joins data residing in multiple independent systems or data stores. It is achieved through federation surfaces, linked-data encoding, and query mediators that translate and route requests to heterogeneous sources. It enables unified access to distributed data without centralising or duplicating it.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:federation-surface", "label": "Federation Surface"}, {"@id": "urn:ngm:class:linked-data-encoder", "label": "Linked Data Encoder"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:federation-surface",
+        "label": "Federation Surface"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data-encoder",
+        "label": "Linked Data Encoder"
+      }
+    ]
   },
   "quality": 0.72
 }

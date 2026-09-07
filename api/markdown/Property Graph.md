@@ -1,53 +1,102 @@
----
-public: true
----
-
-# Property Graph
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:property-graph", "@type":"Page", "title":"Property Graph", "vc:slug":"property-graph", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:property-graph",
+  "@type": "Page",
+  "title": "Property Graph",
+  "vc:slug": "property-graph",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:property-graph",
-  "@type":"Class",
-  "label":"Property Graph",
-  "definition":"A property graph is a graph data structure in which both nodes and edges carry labels and an arbitrary set of key-value properties. Edges are directed and uniquely identifiable, allowing multiple parallel relationships of different types between the same pair of nodes. It is the data model behind many native graph databases and is queried with traversal languages such as Cypher and Gremlin.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:graph-data-model","label":"Graph Data Model"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:node","label":"Node"},
-      {"@id":"urn:ngm:class:schema","label":"Schema"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:property-graph",
+  "@type": "Class",
+  "label": "Property Graph",
+  "definition": "A property graph is a graph data structure in which both nodes and edges carry labels and an arbitrary set of key-value properties. Edges are directed and uniquely identifiable, allowing multiple parallel relationships of different types between the same pair of nodes. It is the data model behind many native graph databases and is queried with traversal languages such as Cypher and Gremlin.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:graph-data-model",
+      "label": "Graph Data Model"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:graph-database","label":"Graph Database"},
-      {"@id":"urn:ngm:class:knowledge-representation","label":"Knowledge Representation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:rdf","label":"RDF"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:knowledge-graph","label":"Knowledge Graph"},
-      {"@id":"urn:ngm:class:structured-data","label":"Structured Data"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:structured-data",
+        "label": "Structured Data"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:knowledge-graph-embedding","label":"Knowledge Graph Embedding"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:data-model","label":"Data Model"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:sparql","label":"SPARQL"},
-      {"@id":"urn:ngm:class:semantic-web","label":"Semantic Web"},
-      {"@id":"urn:ngm:class:ontology","label":"Ontology"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

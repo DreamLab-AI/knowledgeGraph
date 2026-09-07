@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Governance Attack
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

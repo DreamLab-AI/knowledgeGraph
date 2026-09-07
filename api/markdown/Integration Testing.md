@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Integration Testing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Integration testing is a software verification phase that exercises the interfaces and interactions between combined components or systems, rather than units in isolation. It detects defects in data contracts, protocols, timing, and configuration that emerge only when modules are wired together. Sitting between unit and system testing, it is essential for catching interface mismatches before end-to-end and acceptance stages.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:compatibility-process", "label": "Compatibility Process"},
-      {"@id": "urn:ngm:class:testing-process", "label": "Testing Process"}
+      {
+        "@id": "urn:ngm:class:compatibility-process",
+        "label": "Compatibility Process"
+      },
+      {
+        "@id": "urn:ngm:class:testing-process",
+        "label": "Testing Process"
+      }
     ]
   },
   "quality": 0.72

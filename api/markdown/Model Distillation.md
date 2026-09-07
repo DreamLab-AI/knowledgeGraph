@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Distillation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "model-distillation",
   "title": "Model Distillation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Sanctions", "Scott Bessent", "US-China AI Policy"],
+  "vc:outboundWikilinks": [
+    "Sanctions",
+    "Scott Bessent",
+    "US-China AI Policy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:model-training", "label": "Model Training"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Public Trust In Ai
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Textual Inversion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Textual inversion is a fine-tuning technique for text-to-image diffusion models that learns a new embedding vector for a placeholder token from a handful of example images, capturing a specific subject or style without altering the model weights. The learned pseudo-word can then be composed into prompts like any ordinary token. It is lightweight and shareable because only a small embedding, not the full network, is trained.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "KOHYA Dreambooth and similar"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}
+      {
+        "@id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "KOHYA Dreambooth and similar"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
     ]
   },
   "quality": 0.72

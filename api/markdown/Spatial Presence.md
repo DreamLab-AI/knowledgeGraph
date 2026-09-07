@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Presence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-presence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8d84cbedc90384ef26d0b429aaa56a1282d166cd7b6e9762734ff00529c9c850"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Immersive Experience]]",
-      "resolved": "urn:visionflow:owl:class:immersive-experience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VR Psychology]]",
-      "resolved": "urn:visionflow:owl:class:vr-psychology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The psychological state of feeling physically located within a virtual environment, experiencing the sense of "being there" despite technological mediation, influenced by place illusion (perceived location), plausibility illusion (believable events), and temporal presence (immediacy of experience).

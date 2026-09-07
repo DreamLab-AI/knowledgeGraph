@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lidar Scanning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lidar-scanning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7e5e7b09c6d0a708dc129e2af5a8ea0d717b3f6f17d38c524abbdca01f9336fc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Twin Creation]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin-creation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Mapping Technology]]",
-      "resolved": "urn:visionflow:owl:class:spatial-mapping-technology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Light Detection and Ranging technology that creates precise 3D spatial maps by emitting laser pulses and measuring return times, enabling accurate environment capture for VR/AR applications, metaverse development, and spatial computing.

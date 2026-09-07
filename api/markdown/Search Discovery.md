@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Search & Discovery
----
-
-# Search Discovery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,7 +58,10 @@ aliases:
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
     ],
     "enables": [
       {
@@ -82,42 +78,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:search-discovery:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1ab5c00e1c836a1a26aa0085149176e0a102e17630bad83ee2f40e3edbdb5721"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[User Navigation]]",
-      "resolved": "urn:visionflow:linked:user-navigation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Information Retrieval]]",
-      "resolved": "urn:visionflow:owl:class:information-retrieval",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Systems and interfaces that enable users to find relevant content, assets, experiences, and other users within metaverse platforms through keyword search, semantic queries, recommendations, and spatial exploration mechanisms.

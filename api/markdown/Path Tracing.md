@@ -1,36 +1,104 @@
----
-public: true
----
-
-# Path Tracing
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:path-tracing", "@type":"Page", "title":"Path Tracing", "vc:slug":"path-tracing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:path-tracing",
+  "@type": "Page",
+  "title": "Path Tracing",
+  "vc:slug": "path-tracing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:path-tracing",
-  "@type":"Class",
-  "label":"Path Tracing",
-  "definition":"Path tracing is a physically based rendering algorithm that estimates the rendering equation by stochastically sampling complete light-transport paths from the camera through a scene to light sources. It uses Monte Carlo integration over recursive ray bounces to compute unbiased estimates of global illumination, including soft shadows, indirect lighting, and caustics. Image noise decreases as the square root of the number of samples, making convergence and denoising central practical concerns.",
-  "domain":"spatial-computing",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:physically-based-rendering","label":"Physically Based Rendering"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:physically-based-rendering","label":"Physically Based Rendering"}],
-    "hasPart":[{"@id":"urn:ngm:class:ray-tracing","label":"Ray Tracing"},{"@id":"urn:ngm:class:importance-sampling","label":"Importance Sampling"}],
-    "implements":[{"@id":"urn:ngm:class:monte-carlo-integration","label":"Monte Carlo Integration"},{"@id":"urn:ngm:class:global-illumination","label":"Global Illumination"}],
-    "uses":[{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "enables":[{"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:rasterization","label":"Rasterisation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}],
-    "relatedTo":[{"@id":"urn:ngm:class:graphics-pipeline","label":"Graphics Pipeline"},{"@id":"urn:ngm:class:shader","label":"Shader"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:path-tracing",
+  "@type": "Class",
+  "label": "Path Tracing",
+  "definition": "Path tracing is a physically based rendering algorithm that estimates the rendering equation by stochastically sampling complete light-transport paths from the camera through a scene to light sources. It uses Monte Carlo integration over recursive ray bounces to compute unbiased estimates of global illumination, including soft shadows, indirect lighting, and caustics. Image noise decreases as the square root of the number of samples, making convergence and denoising central practical concerns.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:physically-based-rendering",
+      "label": "Physically Based Rendering"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      },
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Distributed Systems Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -202,52 +197,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:distributed-systems-theory:eeabdc214fd3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:91f66aa18c9b50b875b96775f42e908147e4f3312d1f6f6f0877a13cdef49653"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Algorithm]]",
-      "resolved": "urn:visionflow:linked:algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Algorithm]]",
-      "resolved": "urn:visionflow:linked:consensus-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fault Tolerance]]",
-      "resolved": "urn:visionflow:linked:fault-tolerance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The theoretical study of computational systems whose components run on separate networked machines and coordinate by passing messages.

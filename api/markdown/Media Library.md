@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Media Library
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:media-library:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:153347d40c95409f3255961c09da98df43600d651ba1db82336129d3a0e659bc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Content Organisation]]",
-      "resolved": "urn:visionflow:linked:content-organisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Asset Management]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.

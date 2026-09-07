@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AnonCreds
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,52 @@ public: true
   "definition": "AnonCreds (Anonymous Credentials) is a verifiable credential format and specification originally developed by the Hyperledger Indy project that enables privacy-preserving identity verification. The scheme allows holders to prove possession of credentials without revealing the credential itself or the issuer's signature, using zero-knowledge proofs. AnonCreds supports selective disclosure, letting a holder share only specific attributes, and predicates that prove a claim (e.g. age over 18) without revealing the underlying value. The specification has been standardised via the AnonCreds Working Group under the Decentralized Identity Foundation.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:credential-format-standard", "label": "Credential Format Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:credential-format-standard",
+      "label": "Credential Format Standard"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"},
-      {"@id": "urn:ngm:class:credential-schema", "label": "Credential Schema"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ]
   },
   "quality": 0.8

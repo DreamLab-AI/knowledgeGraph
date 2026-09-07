@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Self Training
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,17 +59,32 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:semi-supervised-learning", "label": "Semi-Supervised Learning"}
+      {
+        "@id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
     ]
   },
   "provenance": {
@@ -84,37 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:self-training:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:148248ed43246b07c02cf28b1d102974bb625c8cb0db5035739c845215c8d488"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A semi-supervised learning technique where a model is iteratively improved by training on its own high-confidence predictions on unlabelled data. Self-training enables learning from large amounts of unlabelled data by using the model's own predictions as pseudo-labels.

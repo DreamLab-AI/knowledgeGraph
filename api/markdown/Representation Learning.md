@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Representation Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,4 +169,3 @@ public: true
   - The significance of representation learning is hard to overstate: it is the primary reason modern AI systems generalise from limited labelled data. Pre-trained representations from large models such as BERT, GPT, CLIP, and Wav2Vec 2.0 encode knowledge distilled from billions of examples, and fine-tuning on small task-specific datasets achieves performance that would have required orders of magnitude more labelled data without pre-training. This paradigm — learn a universal representation, then adapt — underpins virtually all state-of-the-art results in natural language processing, computer vision, speech recognition, and protein structure prediction.
 
   - By 2024–2025, representation learning is being extended to multi-modal settings where a single shared embedding space aligns text, images, audio, video, and structured data, enabling zero-shot cross-modal retrieval and generation. Foundation models for robotics are learning action representations from large corpora of embodied demonstrations. Theoretical understanding of why learned representations transfer is advancing through the lens of information theory, causal structure, and spectral analysis of neural network weights. Mechanistic interpretability research is beginning to map the internal representations of large language models, identifying circuits that implement recognisable algorithms and factual knowledge retrieval.
-

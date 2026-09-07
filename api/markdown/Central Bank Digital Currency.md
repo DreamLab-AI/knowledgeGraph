@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - CBDC
-  - CentralBankDigitalCurrency
----
-
-# Central Bank Digital Currency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -225,72 +217,6 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:central-bank-digital-currency:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5f832c6f9d23e989ba56c11217bb56786b3e95795ec19ba3fed7f4096fbfcfa2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Central Bank Infrastructure]]",
-      "resolved": "urn:visionflow:linked:central-bank-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Financial Inclusion]]",
-      "resolved": "urn:visionflow:linked:financial-inclusion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Monetary Policy Transmission]]",
-      "resolved": "urn:visionflow:linked:monetary-policy-transmission",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Payment Network]]",
-      "resolved": "urn:visionflow:linked:payment-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Currency]]",
-      "resolved": "urn:visionflow:owl:class:digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Identity]]",
-      "resolved": "urn:visionflow:owl:class:digital-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Payments]]",
-      "resolved": "urn:visionflow:owl:class:digital-payments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A digital form of sovereign fiat money issued directly by a nation's central bank, representing a liability of the monetary authority that can serve as legal tender for retail payments or wholesale settlement, distinct from commercial bank deposits and decentralized cryptocurrencies.
 
@@ -315,7 +241,7 @@ aliases:
   - **Monetary Policy Implications**:
 		- Can strengthen policy transmission if appropriately designed
 		- May increase competition for bank deposits
-		- Non-remunerated CBDC could harden zero lower bound
+		- Non-remunerated CBDC [private] harden zero lower bound
 		- Affects reserve management and liquidity forecasting
   - **Design Considerations**:
 		- Privacy vs. AML/CFT compliance
@@ -331,7 +257,7 @@ aliases:
 
 - ### Current Landscape (2026)
   - The ECB concluded its two-year digital euro preparation phase in October 2025 and, on 29-30 October 2025, moved to a technical-readiness phase; on 2 October 2025 it signed framework agreements with providers for all five infrastructure components, and estimates development costs of around EUR 1.3 billion until first issuance.
-  - The digital euro timeline is now explicitly legislation-gated: assuming EU co-legislators adopt the Regulation on the establishment of the digital euro during 2026, a pilot exercise could start mid-2027 with a potential first issuance during 2029; the Governing Council will only decide to issue once the legislative act is adopted.
+  - The digital euro timeline is now explicitly legislation-gated: assuming EU co-legislators adopt the Regulation on the establishment of the digital euro during 2026, a pilot exercise [private] start mid-2027 with a potential first issuance during 2029; the Governing Council will only decide to issue once the legislative act is adopted.
   - China's People's Bank of China introduced interest-bearing e-CNY wallets from 1 January 2026, a global first that shifts much of the digital yuan from "digital cash" towards "digital deposits" held on commercial-bank balance sheets; cumulative e-CNY transactions reached roughly 16.7 trillion yuan (about USD 2.4 trillion) across ~3.5 billion transactions and 2.25 billion wallets by November 2025.
   - The United States moved decisively against a retail CBDC: the GENIUS Act (stablecoin framework) was signed on 18 July 2025, and Title XI of the 21st Century ROAD to Housing Act (P.L. 119-101) prohibits the Federal Reserve from issuing a CBDC through 2030, favouring privately issued regulated stablecoins instead.
   - Wholesale and cross-border work has overtaken retail as the frontier: China's mBridge continued after the BIS Innovation Hub exited in 2024 (with Saudi Arabia joining that year), while multilateral wholesale efforts such as Project Agora and the SNB's Helvetia advanced, and the ECB ran interoperability trials with Singapore.

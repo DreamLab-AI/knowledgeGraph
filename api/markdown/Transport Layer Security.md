@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transport Layer Security
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,57 +191,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transport-layer-security:66474ed33c57",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4728ce7f4fb39662415dc1554e167f9e0e71f2d111bef79e793a7faea17bde25"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Public Key Infrastructure]]",
-      "resolved": "urn:visionflow:linked:public-key-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Certificate Authority]]",
-      "resolved": "urn:visionflow:linked:certificate-authority",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Encryption]]",
-      "resolved": "urn:visionflow:linked:encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Authentication]]",
-      "resolved": "urn:visionflow:linked:authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TLS]]",
-      "resolved": "urn:visionflow:linked:tls",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Protocol]]",
-      "resolved": "urn:visionflow:linked:cryptographic-protocol",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A cryptographic protocol that provides authentication, confidentiality and integrity for communications over a computer network, succeeding the earlier Secure Sockets Layer.

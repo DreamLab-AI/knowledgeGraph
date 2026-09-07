@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Global Illumination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,57 +188,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:global-illumination:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9dc3956d24e6d09bc4f19b1fb3dbeb70d3270dea0a553ab76affb16ab6ff9c97"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Light Probe]]",
-      "resolved": "urn:visionflow:linked:light-probe",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compute Shader]]",
-      "resolved": "urn:visionflow:owl:class:compute-shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physically-Based Rendering]]",
-      "resolved": "urn:visionflow:owl:class:physically-based-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rasterization]]",
-      "resolved": "urn:visionflow:owl:class:rasterization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ray Tracing]]",
-      "resolved": "urn:visionflow:owl:class:ray-tracing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Global Illumination (GI) simulates all light interactions in a scene — direct and indirect — producing physically plausible colour bleeding, soft shadows, and caustics. Techniques range from offline radiosity and photon mapping to real-time approximations such as voxel cone tracing and hardware-accelerated ray tracing.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Graphical User Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

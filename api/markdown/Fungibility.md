@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Fungibility
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

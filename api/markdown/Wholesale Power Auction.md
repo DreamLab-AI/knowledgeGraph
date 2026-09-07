@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wholesale Power Auction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "wholesale-power-auction",
   "title": "Wholesale Power Auction",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Energy Policy", "PJM Interconnection"],
+  "vc:outboundWikilinks": [
+    "Energy Policy",
+    "PJM Interconnection"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:energy-policy", "label": "Energy Policy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:energy-policy",
+      "label": "Energy Policy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:energy-policy", "label": "Energy Policy"}, {"@id": "urn:ngm:class:pjm-interconnection", "label": "PJM Interconnection"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:energy-policy",
+        "label": "Energy Policy"
+      },
+      {
+        "@id": "urn:ngm:class:pjm-interconnection",
+        "label": "PJM Interconnection"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

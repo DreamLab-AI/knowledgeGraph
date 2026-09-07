@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Presentation Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:presentation-layer:1ee248074433",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:587940cdb39ddc27176876df3aec80ccb7019ca0810c253c39001e9adf697106"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[User Experience Layer]]",
-      "resolved": "urn:visionflow:linked:user-experience-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human-Computer Interaction]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Information Visualisation]]",
-      "resolved": "urn:visionflow:linked:information-visualisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Presentation Layer is the topmost stratum of the canonical stack, responsible for rendering application state into a form humans can perceive and act on. It sits directly above the Application Layer and has nothing above it in the stack. It contains user interface components, rendering pipelines, formatting, and interaction handling.

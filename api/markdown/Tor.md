@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,47 +159,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tor:bd144d4b9250",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d55a3f1ba4850f712fccc97fdfb14c1ffa461d8568388786a15f454d68751992"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Onion Routing]]",
-      "resolved": "urn:visionflow:linked:onion-routing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Encryption]]",
-      "resolved": "urn:visionflow:linked:encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Security]]",
-      "resolved": "urn:visionflow:linked:network-security",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A free overlay network and software that provides anonymous communication by routing traffic through a series of volunteer-operated relays using layered encryption.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time Rendering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -207,62 +202,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:real-time-rendering:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5eb12dfdc9a66690a31b2e67e54e53d11d7e78ababf808930a75b2944dadedab"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Interactive Visualization]]",
-      "resolved": "urn:visionflow:linked:interactive-visualization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Video Games]]",
-      "resolved": "urn:visionflow:linked:video-games",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:owl:class:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CreativeMediaDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-application",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI_Domain_Immersive_Experiences]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-immersive-experiences",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Reality]]",
-      "resolved": "urn:visionflow:owl:class:virtual-reality",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Real-time rendering is the sub-field of computer graphics focused on producing and analyzing images at interactive frame rates, typically using a graphics processing unit (GPU) to transform 3D scene data into 2D display output within milliseconds. The graphics pipeline processes geometry, applies textures and lighting, and rasterizes the final image fast enough to support interactive applications such as video games, simulations, and virtual reality.

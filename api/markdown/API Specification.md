@@ -1,9 +1,3 @@
----
-public: true
----
-
-# API Specification
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -26,10 +20,18 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:web-services", "label": "Web Services"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:web-services",
+        "label": "Web Services"
+      }
+    ]
   },
   "quality": 0.7
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decision Support
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -163,7 +158,7 @@ public: true
 
   - Early decision support systems were bespoke expert systems built with rule engines encoding domain knowledge as if-then chains. While effective within their narrow domains, these systems were brittle, expensive to maintain, and unable to handle novel situations outside their rule set. The advent of machine learning shifted the paradigm: instead of encoding rules explicitly, systems learn decision boundaries from labelled historical outcomes, generalising more gracefully to new cases.
 
-  - The integration of [[Large Language Models]] into decision support pipelines represents a qualitative shift. LLMs can synthesise unstructured textual evidence — research papers, news feeds, contract language, patient notes — into structured summaries that traditional decision support architectures could not process. Agentic architectures go further: a decision support agent can autonomously query databases, run code to test hypotheses, and iterate over evidence before presenting a ranked recommendation set.
+  - The integration of [[Large Language Models]] into decision support pipelines represents a qualitative shift. LLMs can synthesise unstructured textual evidence — research papers, news feeds, contract language, patient notes — into structured summaries that traditional decision support architectures [private] not process. Agentic architectures go further: a decision support agent can autonomously query databases, run code to test hypotheses, and iterate over evidence before presenting a ranked recommendation set.
 
   - Trust and explainability remain central challenges. [[Decision Transparency]] requirements in regulated sectors — healthcare, finance, public administration — demand that any automated recommendation be accompanied by an auditable evidence trail and a plain-language rationale. Techniques such as SHAP values, attention visualisation, and chain-of-thought prompting are used to make machine learning recommendations interpretable to non-technical decision-makers.
 

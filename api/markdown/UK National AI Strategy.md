@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UK National AI Strategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

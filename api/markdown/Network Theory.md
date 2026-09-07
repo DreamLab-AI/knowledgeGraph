@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:network-theory:49dfa8ce0b0c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:09de472ad3b3fb57e44edac65b60d070dc113959fdb956f2a265612f40089ff5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Analysis]]",
-      "resolved": "urn:visionflow:linked:network-analysis",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graph Databases]]",
-      "resolved": "urn:visionflow:linked:graph-databases",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graph Theory]]",
-      "resolved": "urn:visionflow:linked:graph-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Network_theory]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-network-theory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://networkx.org/]]",
-      "resolved": "urn:visionflow:linked:https-networkx-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Network theory is the study of graphs representing relations between objects, analysing structure, connectivity and dynamics across networks.

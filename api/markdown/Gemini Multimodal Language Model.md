@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Gemini]]
-# Gemini Multimodal Language Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,33 +20,80 @@ elevatedFrom:: [[Gemini]]
   "definition": "Gemini is Google DeepMind's family of natively multimodal large language models, announced in December 2023 as the successor to PaLM 2, designed from the ground up to reason across text, images, audio, video, and code within a single unified architecture. The Gemini family spans Ultra, Pro, Flash, and Nano capability tiers, enabling deployment from data-centre scale to on-device inference. It directly competes with OpenAI's GPT-4 family and Anthropic Claude as one of the three dominant frontier model lineages.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+      "label": "Multimodal AI"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:instruction-following-conversational-ai-system", "label": "Instruction-Following Conversational AI System"},
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Constitutional AI Language Model Family"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
+        "label": "Instruction-Following Conversational AI System"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
+        "label": "Constitutional AI Language Model Family"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-understanding", "label": "Multimodal Understanding"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-understanding",
+        "label": "Multimodal Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-platform", "label": "Cloud Platform"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:instruction-following-conversational-ai-system", "label": "Instruction-Following Conversational AI System"},
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Constitutional AI Language Model Family"}
+      {
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
+        "label": "Instruction-Following Conversational AI System"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
+        "label": "Constitutional AI Language Model Family"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
     ]
   },
   "quality": 0.8

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[NVIDIA Omniverse]]
-# NVIDIA Omniverse Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -158,7 +152,7 @@ elevatedFrom:: [[NVIDIA Omniverse]]
 - ### Definition
   - [[NVIDIA Omniverse Platform]] is NVIDIA's real-time [[3D Collaboration Platform]] for simulation, rendering, and [[Digital Twin]] development, built on the [[OpenUSD]] (Universal Scene Description) open standard. It provides a shared GPU-accelerated environment where multiple users and applications can simultaneously edit photorealistic 3D scenes with physically accurate [[Physics Simulation]], [[Ray Tracing]], and material modelling. The platform bridges creative [[Collaborative Design]] tools, industrial engineering workflows, and AI training infrastructure, serving as a foundation for [[Embodied AI Simulation]], [[Synthetic Data Generation]], and large-scale [[Industrial Digital Twin]] deployments across automotive, aerospace, manufacturing, and robotics domains.
 - ### Overview
-  - NVIDIA Omniverse was publicly launched in 2021 following an extended enterprise beta. It addresses a fundamental fragmentation problem in 3D workflows: designers, engineers, and simulation scientists historically used incompatible file formats and isolated tools that could not share live scene state. Omniverse resolves this by adopting [[OpenUSD]] as a universal scene exchange layer, enabling real-time multi-application collaboration on a single authoritative scene graph.
+  - NVIDIA Omniverse was publicly launched in 2021 following an extended enterprise beta. It addresses a fundamental fragmentation problem in 3D workflows: designers, engineers, and simulation scientists historically used incompatible file formats and isolated tools that [private] not share live scene state. Omniverse resolves this by adopting [[OpenUSD]] as a universal scene exchange layer, enabling real-time multi-application collaboration on a single authoritative scene graph.
   - The platform's strategic importance to NVIDIA lies in positioning GPU-accelerated computing as infrastructure for industrial simulation and AI training, not just gaming or media rendering. By providing Omniverse as a platform layer, NVIDIA creates durable demand for its [[GPU Computing]] hardware — particularly RTX and data centre GPUs — across industries with substantial capital expenditure budgets.
   - Omniverse integrates three hardware-dependent capabilities that differentiate it from software-only alternatives: hardware-accelerated [[Ray Tracing]] via RTX cores for photon-accurate rendering at interactive rates; AI-accelerated denoising via Tensor Cores; and multi-GPU scaling via NVLink for large-scene simulation workloads.
 - ### Key Components

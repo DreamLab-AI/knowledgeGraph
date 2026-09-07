@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Panoptic Segmentation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,47 +191,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:panoptic-segmentation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2dbe9240fc48beb7bfede0c11eb15433b9172124c0ec42440ea94f9d644b1ea0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Instance Segmentation]]",
-      "resolved": "urn:visionflow:owl:class:instance-segmentation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scene Understanding]]",
-      "resolved": "urn:visionflow:owl:class:scene-understanding",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Segmentation]]",
-      "resolved": "urn:visionflow:owl:class:semantic-segmentation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Panoptic Segmentation unifies semantic segmentation and instance segmentation by assigning every pixel both a class label and an instance ID, providing a complete scene understanding with "thing" classes (countable objects) and "stuff" classes (amorphous regions). Panoptic segmentation offers holistic scene parsing for applications requiring comprehensive visual understanding such as autonomous driving and robotics.

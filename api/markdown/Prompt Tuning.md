@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Prompt Tuning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -233,92 +228,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:prompt-tuning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d631de01f15a1258185133b4ffe5e9aff75b6b0822b5ed1d7d13f77714fa9a31"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Dec 19th, 2023]]",
-      "resolved": "urn:visionflow:linked:dec-19th-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DSPy]]",
-      "resolved": "urn:visionflow:linked:dspy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ethan Mollick]]",
-      "resolved": "urn:visionflow:linked:ethan-mollick",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[optimization]]",
-      "resolved": "urn:visionflow:linked:optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[organisation]]",
-      "resolved": "urn:visionflow:linked:organisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[productivity]]",
-      "resolved": "urn:visionflow:linked:productivity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[project management]]",
-      "resolved": "urn:visionflow:linked:project-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[cloud computing]]",
-      "resolved": "urn:visionflow:owl:class:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
-      "resolved": "urn:visionflow:owl:class:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[knowledge management]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Melvin Carvalho Decentralised Web Advocate]]",
-      "resolved": "urn:visionflow:owl:class:melvin-carvalho",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A parameter-efficient fine-tuning method that learns continuous prompt embeddings prepended to the input whilst keeping the pre-trained model frozen. Prompt tuning optimises task-specific soft prompts in the embedding space rather than modifying model weights.
 
@@ -407,9 +316,9 @@ public: true
 		- Prompt Example: 
 		  Traditional Prompt: "Identify all personnel roles and check their document statuses."
 		- Symbolic Math Prompt: Defines sets (e.g., \( P \) for persons), parameters (e.g., \( IsPI(p) \)), and constraints (e.g., if \( IsPI(p)=1 \), then \( R_p = \text{PI} \)) to systematically determine roles and statuses.
-		- By structuring the task this way, the AI could reason more like a mathematician than a linguist, eliminating ambiguity and delivering consistent, precise outputs.
+		- By structuring the task this way, the AI [private] reason more like a mathematician than a linguist, eliminating ambiguity and delivering consistent, precise outputs.
 		- The impact was immediate. Costs dropped to $1 (update: $0.22c) per document, and the AI performed with a level of accuracy and consistency that felt almost effortless.
-		- What’s more, this approach doesn’t just solve one problem—it opens the door to tackling any task with deeply interconnected data. Think financial modeling, health diagnostics, or systems involving graphs and hypergraphs. If your problem requires navigating complex relationships and finding granular insights, this could be a game-changer.
+		- What’s more, this approach doesn’t just solve one problem—it opens the door to tackling any task with deeply interconnected data. Think financial modeling, health diagnostics, or systems involving graphs and hypergraphs. If your problem requires navigating complex relationships and finding granular insights, this [private] be a game-changer.
 		- This breakthrough has completely reframed how I think about AI and complex reasoning. Combining symbolic math with the reflective power of modern models feels like the start of something transformative—not just for this project but for entire industries.
 		- You can use my little app to create your own Symbolic Prompts. "
   - [Comfy Workflows](https://comfyworkflows.com/)
@@ -563,9 +472,9 @@ public: true
 		- Prompt Example: 
 		  Traditional Prompt: "Identify all personnel roles and check their document statuses."
 		- Symbolic Math Prompt: Defines sets (e.g., \( P \) for persons), parameters (e.g., \( IsPI(p) \)), and constraints (e.g., if \( IsPI(p)=1 \), then \( R_p = \text{PI} \)) to systematically determine roles and statuses.
-		- By structuring the task this way, the AI could reason more like a mathematician than a linguist, eliminating ambiguity and delivering consistent, precise outputs.
+		- By structuring the task this way, the AI [private] reason more like a mathematician than a linguist, eliminating ambiguity and delivering consistent, precise outputs.
 		- The impact was immediate. Costs dropped to $1 (update: $0.22c) per document, and the AI performed with a level of accuracy and consistency that felt almost effortless.
-		- What’s more, this approach doesn’t just solve one problem—it opens the door to tackling any task with deeply interconnected data. Think financial modeling, health diagnostics, or systems involving graphs and hypergraphs. If your problem requires navigating complex relationships and finding granular insights, this could be a game-changer.
+		- What’s more, this approach doesn’t just solve one problem—it opens the door to tackling any task with deeply interconnected data. Think financial modeling, health diagnostics, or systems involving graphs and hypergraphs. If your problem requires navigating complex relationships and finding granular insights, this [private] be a game-changer.
 		- This breakthrough has completely reframed how I think about AI and complex reasoning. Combining symbolic math with the reflective power of modern models feels like the start of something transformative—not just for this project but for entire industries.
 		- You can use my little app to create your own Symbolic Prompts. "
   - [Comfy Workflows](https://comfyworkflows.com/)

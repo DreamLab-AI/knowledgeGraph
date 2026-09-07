@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Remote Rendering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,16 +46,34 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"}
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
     ]
   },
   "quality": 0.35,
@@ -71,26 +84,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:remote-rendering:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c283d5f65949b8f84dbbd97bc29d5ad3e9b91905dde40bc8932d5c6df9edde2e"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Remote Rendering offloads GPU-intensive 3D scene computation to a server or cloud node, streaming compressed video frames to a thin client such as an XR headset or mobile device. This approach decouples visual fidelity from device hardware constraints, enabling photorealistic graphics on low-power endpoints while centralising GPU resources. Latency and bandwidth are critical quality-of-service parameters; edge computing deployments minimise round-trip delay to support interactive frame rates.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Causal Loop Diagram
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "A causal loop diagram (CLD) is a system-dynamics visualisation tool that maps variables as nodes connected by directed causal links, each marked with a positive or negative polarity. Closed chains of links form reinforcing or balancing feedback loops that reveal the structural drivers of a system's behaviour over time. CLDs matter because they expose feedback structure and delays that linear cause-effect thinking misses, supporting qualitative analysis before quantitative simulation.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
     ]
   },
   "quality": 0.72

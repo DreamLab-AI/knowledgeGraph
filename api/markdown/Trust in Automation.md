@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - RB-1012-trust-in-automation
----
-
-# Trust in Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,19 +150,46 @@ aliases:
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
+      {
+        "@id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
-      {"@id": "urn:ngm:class:safety", "label": "Safety"},
-      {"@id": "urn:ngm:class:robot", "label": "Robot"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      },
+      {
+        "@id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
     ]
   },
   "quality": 0.8,
@@ -180,152 +200,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:trust-in-automation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2de43065c6969d0e30f800a85f43c370dec5d61cc25b8ee4e492eac704f8a399"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI System]]",
-      "resolved": "urn:visionflow:linked:ai-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Automated System]]",
-      "resolved": "urn:visionflow:linked:automated-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Automation]]",
-      "resolved": "urn:visionflow:linked:automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Automation Psychology]]",
-      "resolved": "urn:visionflow:linked:automation-psychology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Complacency]]",
-      "resolved": "urn:visionflow:linked:complacency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Confidence]]",
-      "resolved": "urn:visionflow:linked:confidence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Expectation]]",
-      "resolved": "urn:visionflow:linked:expectation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human-Robot Collaboration]]",
-      "resolved": "urn:visionflow:linked:human-robot-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RB-1009-social-robotics]]",
-      "resolved": "urn:visionflow:linked:rb-1009-social-robotics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RB-1011-cobot-safety-levels]]",
-      "resolved": "urn:visionflow:linked:rb-1011-cobot-safety-levels",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reliance]]",
-      "resolved": "urn:visionflow:linked:reliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Situation Awareness]]",
-      "resolved": "urn:visionflow:linked:situation-awareness",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Performance]]",
-      "resolved": "urn:visionflow:linked:system-performance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Reliability]]",
-      "resolved": "urn:visionflow:linked:system-reliability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Usage]]",
-      "resolved": "urn:visionflow:linked:system-usage",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Acceptance]]",
-      "resolved": "urn:visionflow:linked:user-acceptance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Interface Design]]",
-      "resolved": "urn:visionflow:linked:user-interface-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Explainability]]",
-      "resolved": "urn:visionflow:owl:class:explainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Factors]]",
-      "resolved": "urn:visionflow:owl:class:human-factors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Robot Interaction]]",
-      "resolved": "urn:visionflow:owl:class:human-robot-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot]]",
-      "resolved": "urn:visionflow:owl:class:robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Adoption]]",
-      "resolved": "urn:visionflow:owl:class:technology-adoption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transparency]]",
-      "resolved": "urn:visionflow:owl:class:transparency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vulnerability]]",
-      "resolved": "urn:visionflow:owl:class:vulnerability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The psychological state in which a human user accepts vulnerability to an automated system's actions based on expectations that the system will perform appropriately to achieve the user's goals, despite uncertainty and the possibility of negative consequences. It represents the user's confidence in the system's reliability, competence, and integrity.

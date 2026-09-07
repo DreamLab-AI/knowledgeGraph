@@ -1,8 +1,3 @@
----
-public: true
----
-
-# El Salvador
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,46 +182,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:el-salvador:c0c6826b73e6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ab74cecf245df7321fbd736620cf33b7a3a79506ca9e277573b583d18520ab5f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:linked:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Entity]]",
-      "resolved": "urn:visionflow:linked:entity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - El Salvador is a Central American nation-state best known in the technology and finance domains for enacting the **Bitcoin Law** (Ley Bitcoin) in September 2021, making [[Bitcoin]] legal tender alongside the [[United States Dollar]] — a world first. The policy positioned El Salvador as a live experiment in sovereign [[Cryptocurrency]] adoption, deploying the [[Lightning Network]] as a payment rail and the state-issued [[Chivo Wallet]] as the consumer interface. Within this knowledge graph El Salvador functions as the primary real-world instance linking [[Blockchain]] infrastructure, [[Monetary Policy]], and [[Governance]] at the nation-state level.
 
@@ -247,7 +202,7 @@ public: true
   - #### Bitcoin Law (Ley Bitcoin)
     - The legislative instrument that granted [[Bitcoin]] legal-tender status.
     - Required merchants capable of accepting digital payments to receive Bitcoin.
-    - Mandated that tax obligations could be settled in Bitcoin.
+    - Mandated that tax obligations [private] be settled in Bitcoin.
     - Provided a USD conversion guarantee to merchants uncomfortable holding [[Cryptocurrency]] balance risk.
   - #### Chivo Wallet
     - Government-issued [[Digital Wallet]] application available on iOS and Android.

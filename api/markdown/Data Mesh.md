@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Mesh
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -142,4 +137,3 @@ public: true
   - The self-serve data infrastructure platform provides domain teams with standardised tooling for storage provisioning, schema registration, pipeline scaffolding, monitoring, and access control without requiring deep infrastructure expertise. This platform is itself an internal product, maintained by a platform engineering team whose customers are the domain data product owners.
 
   - Federated computational governance reconciles autonomy with standards: a central governance body defines global policies (data classification, privacy obligations, interoperability contracts), while domain teams retain freedom over implementation. Policy-as-code tooling (e.g. Open Policy Agent) automates enforcement across all data products, ensuring GDPR compliance, schema compatibility, and audit trails without centralised bottlenecks.
-

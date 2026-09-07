@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Asset Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,72 +184,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-asset-management:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5dcfd4c479b492a190d88f872e96f7fbe94d3a41bb2cbc5bf1da288382057297"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Analytics Tools]]",
-      "resolved": "urn:visionflow:linked:analytics-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asset Allocation]]",
-      "resolved": "urn:visionflow:linked:asset-allocation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compliance Systems]]",
-      "resolved": "urn:visionflow:linked:compliance-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Custody Solutions]]",
-      "resolved": "urn:visionflow:linked:custody-solutions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Portfolio Optimization]]",
-      "resolved": "urn:visionflow:linked:portfolio-optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Investment Management]]",
-      "resolved": "urn:visionflow:owl:class:investment-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The professional oversight and administration of cryptocurrency portfolios, tokenized assets, and blockchain-based investments through systematic strategies, risk management frameworks, and fiduciary practices to optimise returns and preserve capital for individuals and institutions.

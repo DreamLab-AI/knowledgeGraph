@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IEEE P7009
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ieee-p-7009:d244237b2af9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:634d67e3bc87f9905bd56d5382ae2d6af08ac9b6b1e52ed6cb2e80bef4b59db0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE]]",
-      "resolved": "urn:visionflow:linked:ieee",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - IEEE P7009 addresses fail-safe design for autonomous and semi-autonomous systems, defining methodologies for safe shutdown behaviour.

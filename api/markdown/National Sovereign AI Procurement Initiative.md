@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Sovereign AI bid]]
-# National Sovereign AI Procurement Initiative
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,19 +47,40 @@ elevatedFrom:: [[Sovereign AI bid]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sovereign-ai", "label": "Sovereign AI"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+      {
+        "@id": "urn:ngm:class:sovereign-ai",
+        "label": "Sovereign AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-capability-temporal-horizon-framework", "label": "AI Capability Temporal Horizon Framework"}
+      {
+        "@id": "urn:ngm:class:ai-capability-temporal-horizon-framework",
+        "label": "AI Capability Temporal Horizon Framework"
+      }
     ]
   },
   "quality": 0.7,
@@ -76,32 +91,6 @@ elevatedFrom:: [[Sovereign AI bid]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sovereign-ai-bid:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6b0e1da21fcf1f592effbae40a4245786c188014e00fe0da660597a2b91bb5ec"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Visionflow]]",
-      "resolved": "urn:visionflow:linked:visionflow",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Sovereign AI bid is a state or regional initiative to develop, procure, or deploy AI infrastructure and foundation models under national control, reducing dependence on foreign hyperscalers and ensuring that AI capabilities, data residency, and compute sovereignty remain within a defined jurisdiction. Such bids typically involve national compute investment, open-source model adoption, and alignment with local regulatory frameworks including the EU AI Act.
@@ -130,7 +119,7 @@ elevatedFrom:: [[Sovereign AI bid]]
   - For Qwen3-Coder A35B specifically, MAX's advantages include superior scheduling algorithms optimized for Mixture-of-Experts models, better memory management for sparse activation patterns, and rapid container initialization critical for auto-scaling scenarios.
   - The NVIDIA H200 SXM represents a substantial upgrade over the H100, featuring **141GB HBM3e memory** with **4.8 TB/s bandwidth** - a 76% increase in capacity and 43% improvement in bandwidth. These specifications directly translate to enhanced LLM inference performance, particularly for memory-bandwidth-limited decode operations.
   - For a 35B parameter model in FP16 precision, the base memory requirement is approximately 84GB (70GB for weights plus 14GB overhead), leaving **57GB available for KV cache and activations**. This enables a practical **maximum context window of 50,000-60,000 tokens** for single-request scenarios, with each token requiring approximately 0.8-1.0MB of KV cache memory.
-  - Based on scaling from official NVIDIA benchmarks, Qwen3-Coder A35B is expected to achieve **4,000-6,000 tokens per second in FP16** precision with optimal batching. With FP8 quantization leveraging the H200's 4th generation Tensor Cores, performance could reach **6,000-8,000 tokens per second**. The H200 demonstrates a consistent 1.4-1.9x performance improvement over H100 for memory-bound decode operations, with MLPerf results showing up to 45% better throughput on comparable models.
+  - Based on scaling from official NVIDIA benchmarks, Qwen3-Coder A35B is expected to achieve **4,000-6,000 tokens per second in FP16** precision with optimal batching. With FP8 quantization leveraging the H200's 4th generation Tensor Cores, performance [private] reach **6,000-8,000 tokens per second**. The H200 demonstrates a consistent 1.4-1.9x performance improvement over H100 for memory-bound decode operations, with MLPerf results showing up to 45% better throughput on comparable models.
 	  The multi-GPU scaling via NVLink 4.0 (900 GB/s bidirectional bandwidth) enables near-linear performance scaling for tensor parallelism. A 2-GPU configuration provides 282GB total memory, sufficient for full FP16 deployment with context windows exceeding 120,000 tokens.
 	  Qwen3-Coder A35B achieves remarkable results on real-world software engineering benchmarks, scoring **69.6% on SWE-Bench Verified** with 500-turn interactive settings - the highest performance among open-source models and competitive with Claude Sonnet 4 (70.4%). On LiveCodeBench, the model demonstrates **70.6% accuracy**, ranking first among open-source solutions.
 	  The model excels in agentic workflows through its training with **long-horizon Reinforcement Learning** using 20,000 parallel environments. This specialized training enables superior multi-turn interaction performance, advanced planning and reasoning capabilities, seamless tool integration with function calling, and robust context retention across extended development sessions.

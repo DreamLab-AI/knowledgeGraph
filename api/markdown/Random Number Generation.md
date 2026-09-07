@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Random Number Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -213,72 +208,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:random-number-generation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a4be3e628401da22c8c63368825f6f1736e127cc37196185f4e77e50b44fc2ca"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Commitment Scheme]]",
-      "resolved": "urn:visionflow:linked:commitment-scheme",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Verifiable Random Function]]",
-      "resolved": "urn:visionflow:linked:verifiable-random-function",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asymmetric Encryption]]",
-      "resolved": "urn:visionflow:owl:class:asymmetric-encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Protocol]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:owl:class:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Key Derivation Function]]",
-      "resolved": "urn:visionflow:owl:class:key-derivation-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of generating unpredictable and statistically random values for cryptographic operations, serving as a critical security primitive for key generation, nonces, and protocol initialization, distinguishing between true randomness from physical entropy sources and pseudo-randomness from deterministic algorithms seeded with entropy.

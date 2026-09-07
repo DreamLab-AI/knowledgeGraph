@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Priority Fee
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,32 +83,74 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gas-optimization", "label": "Gas Optimization"},
-      {"@id": "urn:ngm:class:mev", "label": "MEV"}
+      {
+        "@id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"},
-      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"}
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "@id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:gas", "label": "Gas"}
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
-      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"}
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"}
+      {
+        "@id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      }
     ]
   },
   "provenance": {
@@ -123,62 +160,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:priority-fee:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2502d261538f10d6c0c880d90d68f5f4b504619afea7e8fc02937a4826455310"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Priority Fee (also called a miner tip or validator tip) is an optional, user-specified additional payment on top of the base fee in EIP-1559-compatible blockchains, paid directly to the block producer to incentivise preferential inclusion and ordering of a transaction within the next block. By offering a higher tip, users signal urgency and compete for limited block space during periods of network congestion, enabling a market-based transaction prioritisation mechanism. Priority fees are burned alongside the base fee under EIP-1559's fee model only partially — the base fee is burned while the priority fee flows to the validator, aligning incentives for prompt transaction confirmation.

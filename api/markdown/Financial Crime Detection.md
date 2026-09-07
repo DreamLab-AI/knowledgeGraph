@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Financial Crime Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -91,4 +86,3 @@ public: true
   - The ecosystem includes specialist vendors — NICE Actimize, FICO, Oracle FCCM, SAS — alongside in-house platforms at tier-one banks. RegTech consortia share typology libraries and red-flag indicators across institutions without disclosing customer data, improving model coverage for rare crime patterns. Regulators increasingly accept risk-based approaches that prioritise high-risk segments over blanket screening, reducing the compliance burden without eroding detection effectiveness.
 
   - In 2024–2025, large language models are being integrated to generate narrative summaries of alert clusters, accelerating investigator review. Simultaneously, the proliferation of digital assets and embedded finance creates new detection surface — instant payment rails, stablecoin transfers, and buy-now-pay-later credit all introduce typologies not captured by legacy rule sets. The EU's AML Authority (AMLA), operational from 2025, is expected to mandate real-time cross-border data sharing, fundamentally reshaping detection infrastructure for European financial institutions.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Development Tools
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,17 +67,38 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
     ]
   },
   "quality": 0.35,
@@ -93,52 +109,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-development-tools:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1ea42c3a911089a3b7057a2bc079e92ca96fedfde48664872157caf1df020f3c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Deep Learning Framework]]",
-      "resolved": "urn:visionflow:linked:deep-learning-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MLOps]]",
-      "resolved": "urn:visionflow:linked:mlops",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Deployment]]",
-      "resolved": "urn:visionflow:linked:model-deployment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AutoML]]",
-      "resolved": "urn:visionflow:owl:class:auto-ml",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI Development Tools comprise the software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems. These tools include deep learning frameworks (TensorFlow, PyTorch, JAX), AutoML platforms, model optimization toolkits, MLOps infrastructure, and specialized IDEs with AI-assisted coding capabilities. Modern AI development tools emphasize reproducibility, scalability, and accessibility, enabling both researchers and practitioners to build sophisticated AI applications efficiently.

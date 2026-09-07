@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Live Polls and QandA
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,13 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:audience-engagement", "label": "Audience Engagement"}],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:audience-engagement",
+        "label": "Audience Engagement"
+      }
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:webinar-broadcast", "label": "Webinar Broadcast"},
-      {"@id": "urn:ngm:class:group-chat-channel", "label": "Group Chat Channel"}
+      {
+        "@id": "urn:ngm:class:webinar-broadcast",
+        "label": "Webinar Broadcast"
+      },
+      {
+        "@id": "urn:ngm:class:group-chat-channel",
+        "label": "Group Chat Channel"
+      }
     ]
   },
   "quality": 0.7

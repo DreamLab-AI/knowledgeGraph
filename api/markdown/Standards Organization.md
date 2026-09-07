@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Standards Organization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,13 +50,28 @@ public: true
       }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "World Wide Web Consortium"},
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
-      {"@id": "urn:ngm:class:web-standards", "label": "Web Standards"}
+      {
+        "@id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-standards", "label": "Open Standards"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ]
   },
   "quality": 0.35,
@@ -78,32 +88,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:standards-organization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dd97a5c39f0ce46fe314d21fa0f7636a10198d9734fa68cf952b93f3d90a7bbd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A standards organisation is a body that develops, publishes, and maintains technical standards through consensus among industry, academic, and governmental stakeholders. Bodies such as the W3C, ISO, IEEE, and the Khronos Group produce the specifications that underpin interoperability across the web, extended reality, and artificial intelligence systems.

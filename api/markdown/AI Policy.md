@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ai policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,58 +7,207 @@ public: true
   "title": "ai policy",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:responsible-ai", "vc:label": "Responsible AI"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:digital-sovereignty", "vc:label": "Digital Sovereignty"},
-    {"@id": "urn:visionflow:linked:ai-governance-framework", "vc:label": "AI Governance Framework"},
-    {"@id": "urn:visionflow:linked:algorithmic-accountability", "vc:label": "Algorithmic Accountability"},
-    {"@id": "urn:visionflow:linked:ai-audit", "vc:label": "AI Audit"},
-    {"@id": "urn:visionflow:linked:ai-regulation", "vc:label": "AI Regulation"},
-    {"@id": "urn:visionflow:linked:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance"},
-    {"@id": "urn:visionflow:linked:intellectual-property", "vc:label": "Intellectual Property"},
-    {"@id": "urn:visionflow:linked:risk-assessment", "vc:label": "Risk Assessment"},
-    {"@id": "urn:visionflow:linked:impact-assessment", "vc:label": "Impact Assessment"},
-    {"@id": "urn:visionflow:linked:stakeholder-consultation", "vc:label": "Stakeholder Consultation"},
-    {"@id": "urn:visionflow:linked:oecd-ai-principles", "vc:label": "OECD AI Principles"},
-    {"@id": "urn:visionflow:linked:iso-iec-42001", "vc:label": "ISO IEC 42001"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:self-regulation", "vc:label": "Self-Regulation"},
-    {"@id": "urn:visionflow:linked:cybersecurity-policy", "vc:label": "Cybersecurity Policy"},
-    {"@id": "urn:visionflow:linked:semiconductor-export-controls", "vc:label": "Semiconductor Export Controls"},
-    {"@id": "urn:visionflow:linked:human-rights-law", "vc:label": "Human Rights Law"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:technology-policy", "vc:label": "Technology Policy"},
-    {"@id": "urn:visionflow:linked:competition-policy", "vc:label": "Competition Policy"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:ai-model", "vc:label": "AI Model"},
-    {"@id": "urn:visionflow:linked:compute-governance", "vc:label": "Compute Governance"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:nist-ai-rmf", "vc:label": "NIST AI RMF"},
-    {"@id": "urn:visionflow:linked:ai-research", "vc:label": "AI Research"},
-    {"@id": "urn:visionflow:linked:regulatory-compliance", "vc:label": "Regulatory Compliance"},
-    {"@id": "urn:visionflow:linked:transparency", "vc:label": "Transparency"},
-    {"@id": "urn:visionflow:linked:risk-management", "vc:label": "Risk Management"},
-    {"@id": "urn:visionflow:linked:trustworthy-ai", "vc:label": "Trustworthy AI"},
-    {"@id": "urn:visionflow:linked:national-security", "vc:label": "National Security"},
-    {"@id": "urn:visionflow:linked:bias-mitigation", "vc:label": "Bias Mitigation"},
-    {"@id": "urn:visionflow:linked:ai-model-card", "vc:label": "AI Model Card"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:ai-governance-and-ethics", "vc:label": "AI Governance and Ethics"},
-    {"@id": "urn:visionflow:linked:supply-chain-security", "vc:label": "Supply Chain Security"},
-    {"@id": "urn:visionflow:linked:ai-chips", "vc:label": "AI Chips"},
-    {"@id": "urn:visionflow:linked:conformity-assessment", "vc:label": "Conformity Assessment"},
-    {"@id": "urn:visionflow:linked:red-teaming", "vc:label": "Red Teaming"},
-    {"@id": "urn:visionflow:linked:copyright-law", "vc:label": "Copyright Law"},
-    {"@id": "urn:visionflow:linked:gdpr", "vc:label": "GDPR"},
-    {"@id": "urn:visionflow:linked:human-oversight", "vc:label": "Human Oversight"},
-    {"@id": "urn:visionflow:linked:ai-safety-institute", "vc:label": "AI Safety Institute"}
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-sovereignty",
+      "vc:label": "Digital Sovereignty"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance-framework",
+      "vc:label": "AI Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-accountability",
+      "vc:label": "Algorithmic Accountability"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-audit",
+      "vc:label": "AI Audit"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-regulation",
+      "vc:label": "AI Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:intellectual-property",
+      "vc:label": "Intellectual Property"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-assessment",
+      "vc:label": "Risk Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:impact-assessment",
+      "vc:label": "Impact Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:stakeholder-consultation",
+      "vc:label": "Stakeholder Consultation"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd-ai-principles",
+      "vc:label": "OECD AI Principles"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001",
+      "vc:label": "ISO IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-regulation",
+      "vc:label": "Self-Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cybersecurity-policy",
+      "vc:label": "Cybersecurity Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:semiconductor-export-controls",
+      "vc:label": "Semiconductor Export Controls"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-rights-law",
+      "vc:label": "Human Rights Law"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:technology-policy",
+      "vc:label": "Technology Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:competition-policy",
+      "vc:label": "Competition Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model",
+      "vc:label": "AI Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:compute-governance",
+      "vc:label": "Compute Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research",
+      "vc:label": "AI Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:transparency",
+      "vc:label": "Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:trustworthy-ai",
+      "vc:label": "Trustworthy AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:national-security",
+      "vc:label": "National Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-mitigation",
+      "vc:label": "Bias Mitigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model-card",
+      "vc:label": "AI Model Card"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance-and-ethics",
+      "vc:label": "AI Governance and Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-security",
+      "vc:label": "Supply Chain Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-chips",
+      "vc:label": "AI Chips"
+    },
+    {
+      "@id": "urn:visionflow:linked:conformity-assessment",
+      "vc:label": "Conformity Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:red-teaming",
+      "vc:label": "Red Teaming"
+    },
+    {
+      "@id": "urn:visionflow:linked:copyright-law",
+      "vc:label": "Copyright Law"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety-institute",
+      "vc:label": "AI Safety Institute"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
-  "prov:generatedAtTime": {"@value": "2026-05-19T21:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-19T21:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -84,54 +228,153 @@ public: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:digital-sovereignty", "label": "Digital Sovereignty"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"},
-      {"@id": "urn:ngm:class:compute-governance", "label": "Compute Governance"},
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "@id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "Intellectual Property"},
-      {"@id": "urn:ngm:class:competition-policy", "label": "Competition Policy"},
-      {"@id": "urn:ngm:class:technology-policy", "label": "Technology Policy"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property"
+      },
+      {
+        "@id": "urn:ngm:class:competition-policy",
+        "label": "Competition Policy"
+      },
+      {
+        "@id": "urn:ngm:class:technology-policy",
+        "label": "Technology Policy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:impact-assessment", "label": "Impact Assessment"},
-      {"@id": "urn:ngm:class:stakeholder-consultation", "label": "Stakeholder Consultation"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-consultation",
+        "label": "Stakeholder Consultation"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:oecd-ai-principles", "label": "OECD AI Principles"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-regulation", "label": "Self-Regulation"}
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cybersecurity-policy", "label": "Cybersecurity Policy"},
-      {"@id": "urn:ngm:class:export-controls", "label": "Semiconductor Export Controls"},
-      {"@id": "urn:ngm:class:human-rights-law", "label": "Human Rights Law"},
-      {"@id": "urn:ngm:class:national-security", "label": "National Security"},
-      {"@id": "urn:ngm:class:supply-chain-security", "label": "Supply Chain Security"}
+      {
+        "@id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      },
+      {
+        "@id": "urn:ngm:class:export-controls",
+        "label": "Semiconductor Export Controls"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights-law",
+        "label": "Human Rights Law"
+      },
+      {
+        "@id": "urn:ngm:class:national-security",
+        "label": "National Security"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:artificial-intelligence-policy", "label": "Artificial Intelligence Policy"},
-    {"@id": "urn:ngm:class:national-ai-strategy", "label": "National AI Strategy"}
+    {
+      "@id": "urn:ngm:class:artificial-intelligence-policy",
+      "label": "Artificial Intelligence Policy"
+    },
+    {
+      "@id": "urn:ngm:class:national-ai-strategy",
+      "label": "National AI Strategy"
+    }
   ],
   "quality": 0.93,
   "provenance": {
@@ -139,67 +382,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "FullEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-policy:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:683889669e4aa4989501a92f452ef21f4638aec85a08bf1f788b8edd72d4695c"},
-  "vc:resolutions": [
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[Responsible AI]]", "resolved": "urn:visionflow:linked:responsible-ai", "kind": "ResolvedLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "ResolvedLink"},
-    {"raw": "[[Digital Sovereignty]]", "resolved": "urn:visionflow:linked:digital-sovereignty", "kind": "StubLink"},
-    {"raw": "[[AI Governance Framework]]", "resolved": "urn:visionflow:linked:ai-governance-framework", "kind": "ResolvedLink"},
-    {"raw": "[[Algorithmic Accountability]]", "resolved": "urn:visionflow:linked:algorithmic-accountability", "kind": "ResolvedLink"},
-    {"raw": "[[AI Audit]]", "resolved": "urn:visionflow:linked:ai-audit", "kind": "ResolvedLink"},
-    {"raw": "[[AI Regulation]]", "resolved": "urn:visionflow:linked:ai-regulation", "kind": "StubLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:linked:ai-ethics", "kind": "ResolvedLink"},
-    {"raw": "[[Data Governance]]", "resolved": "urn:visionflow:linked:data-governance", "kind": "StubLink"},
-    {"raw": "[[Intellectual Property]]", "resolved": "urn:visionflow:linked:intellectual-property", "kind": "StubLink"},
-    {"raw": "[[Risk Assessment]]", "resolved": "urn:visionflow:linked:risk-assessment", "kind": "StubLink"},
-    {"raw": "[[Impact Assessment]]", "resolved": "urn:visionflow:linked:impact-assessment", "kind": "StubLink"},
-    {"raw": "[[Stakeholder Consultation]]", "resolved": "urn:visionflow:linked:stakeholder-consultation", "kind": "StubLink"},
-    {"raw": "[[OECD AI Principles]]", "resolved": "urn:visionflow:linked:oecd-ai-principles", "kind": "StubLink"},
-    {"raw": "[[ISO/IEC 42001]]", "resolved": "urn:visionflow:linked:iso-iec-42001", "kind": "StubLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[Self-Regulation]]", "resolved": "urn:visionflow:linked:self-regulation", "kind": "StubLink"},
-    {"raw": "[[Cybersecurity Policy]]", "resolved": "urn:visionflow:linked:cybersecurity-policy", "kind": "StubLink"},
-    {"raw": "[[Semiconductor Export Controls]]", "resolved": "urn:visionflow:linked:semiconductor-export-controls", "kind": "StubLink"},
-    {"raw": "[[Human Rights Law]]", "resolved": "urn:visionflow:linked:human-rights-law", "kind": "StubLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Technology Policy]]", "resolved": "urn:visionflow:linked:technology-policy", "kind": "StubLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[AI Model]]", "resolved": "urn:visionflow:linked:ai-model", "kind": "ResolvedLink"},
-    {"raw": "[[Compute Governance]]", "resolved": "urn:visionflow:linked:compute-governance", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "ResolvedLink"},
-    {"raw": "[[NIST AI RMF]]", "resolved": "urn:visionflow:linked:nist-ai-rmf", "kind": "StubLink"},
-    {"raw": "[[Regulatory Compliance]]", "resolved": "urn:visionflow:linked:regulatory-compliance", "kind": "ResolvedLink"},
-    {"raw": "[[Transparency]]", "resolved": "urn:visionflow:linked:transparency", "kind": "StubLink"},
-    {"raw": "[[Risk Management]]", "resolved": "urn:visionflow:linked:risk-management", "kind": "ResolvedLink"},
-    {"raw": "[[Trustworthy AI]]", "resolved": "urn:visionflow:linked:trustworthy-ai", "kind": "StubLink"},
-    {"raw": "[[National Security]]", "resolved": "urn:visionflow:linked:national-security", "kind": "StubLink"},
-    {"raw": "[[Bias Mitigation]]", "resolved": "urn:visionflow:linked:bias-mitigation", "kind": "ResolvedLink"},
-    {"raw": "[[AI Model Card]]", "resolved": "urn:visionflow:linked:ai-model-card", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Supply Chain Security]]", "resolved": "urn:visionflow:linked:supply-chain-security", "kind": "StubLink"},
-    {"raw": "[[AI Chips]]", "resolved": "urn:visionflow:linked:ai-chips", "kind": "ResolvedLink"},
-    {"raw": "[[Conformity Assessment]]", "resolved": "urn:visionflow:linked:conformity-assessment", "kind": "StubLink"},
-    {"raw": "[[Red Teaming]]", "resolved": "urn:visionflow:linked:red-teaming", "kind": "ResolvedLink"},
-    {"raw": "[[Copyright Law]]", "resolved": "urn:visionflow:linked:copyright-law", "kind": "StubLink"},
-    {"raw": "[[GDPR]]", "resolved": "urn:visionflow:linked:gdpr", "kind": "ResolvedLink"},
-    {"raw": "[[Human Oversight]]", "resolved": "urn:visionflow:linked:human-oversight", "kind": "StubLink"},
-    {"raw": "[[AI Safety Institute]]", "resolved": "urn:visionflow:linked:ai-safety-institute", "kind": "StubLink"},
-    {"raw": "[[AI Alignment]]", "resolved": "urn:visionflow:linked:ai-alignment", "kind": "ResolvedLink"},
-    {"raw": "[[AI Research]]", "resolved": "urn:visionflow:linked:ai-research", "kind": "StubLink"},
-    {"raw": "[[Competition Policy]]", "resolved": "urn:visionflow:linked:competition-policy", "kind": "StubLink"},
-    {"raw": "[[AI Governance and Ethics]]", "resolved": "urn:visionflow:linked:ai-governance-and-ethics", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -384,7 +566,7 @@ public: true
 
   **[[Compute Governance]] cementing as frontier policy**: FLOP-based compute thresholds (US EO, [[EU AI Act]]), export controls on frontier [[AI Chips]] (extending US BIS controls to additional chip families and new restricted jurisdictions, with allied coordination through multilateral export control bodies), and proposals for mandatory training-run registries are cementing [[Compute Governance]] as a distinct AI policy sub-field with its own technical experts, inter-agency processes, and international coordination mechanisms. The intersection of AI policy with [[Semiconductor Export Controls]] and [[Supply Chain Security]] is increasingly managed at the [[National Security]] level — through intelligence services, defence ministries, and security councils — rather than at the technology-policy level in major AI-producing states. South Korea's KRW 1.46 trillion (approximately USD 1.1 billion) commitment to procure 13,000 high-performance GPUs (July 2025) exemplifies how [[Compute Governance]] is now a dimension of national AI strategy, with states seeking sovereign compute capacity to reduce dependency on external providers for frontier model training.
 
-  **AI policy and emerging technology intersections**: Several policy areas that were previously distinct are now intersecting with AI policy in ways that complicate governance. The AI-biosecurity intersection — concern about [[AI Model]] systems that could provide meaningful assistance to actors seeking to create biological weapons — has become a priority for national biosecurity agencies and is reflected in the UK AI Security Institute's dangerous capability evaluations. The AI-cybersecurity intersection — AI-enabled offensive cyber operations, AI-generated phishing, AI-assisted vulnerability discovery — is reshaping [[Cybersecurity Policy]] priorities and creating pressure to integrate AI policy with national cyber resilience frameworks. The AI-democracy intersection — large-scale AI-generated disinformation, synthetic media, AI-assisted influence operations — is a priority for electoral integrity agencies globally and is addressed partially by [[EU AI Act]] deepfake disclosure requirements and the UK Online Safety Act's AI-generated content provisions.
+  **AI policy and emerging technology intersections**: Several policy areas that were previously distinct are now intersecting with AI policy in ways that complicate governance. The AI-biosecurity intersection — concern about [[AI Model]] systems that [private] provide meaningful assistance to actors seeking to create biological weapons — has become a priority for national biosecurity agencies and is reflected in the UK AI Security Institute's dangerous capability evaluations. The AI-cybersecurity intersection — AI-enabled offensive cyber operations, AI-generated phishing, AI-assisted vulnerability discovery — is reshaping [[Cybersecurity Policy]] priorities and creating pressure to integrate AI policy with national cyber resilience frameworks. The AI-democracy intersection — large-scale AI-generated disinformation, synthetic media, AI-assisted influence operations — is a priority for electoral integrity agencies globally and is addressed partially by [[EU AI Act]] deepfake disclosure requirements and the UK Online Safety Act's AI-generated content provisions.
 
   ## UK Context
 
@@ -405,7 +587,7 @@ public: true
 
   The AI policy landscape is in rapid transition, with several near-certain and several speculative developments expected over the 2026–2030 horizon. The overarching tension is between the accelerating pace of AI capability development and the structural inertia of governance institutions — a pacing problem that AI policy must solve rather than merely acknowledge.
 
-  - **Capability-based regulation**: As algorithmic efficiency improvements make FLOP-per-training-run thresholds obsolete proxies for capability and risk (a model that achieves GPT-4-class performance with 100x fewer FLOPs should face equivalent obligations to one trained with 100x more), AI policy is expected to shift toward capability-based evaluation thresholds — defining obligations based on what an [[AI Model]] can demonstrably do (design biological or chemical weapons, autonomously acquire computational resources, generate child sexual abuse material, defeat human oversight mechanisms) rather than how it was trained. The network of national AI Safety Institutes (UK, US, Japan, Singapore, EU AI Office) is actively developing capability evaluation methodologies that could serve as the technical foundation for such regulation.
+  - **Capability-based regulation**: As algorithmic efficiency improvements make FLOP-per-training-run thresholds obsolete proxies for capability and risk (a model that achieves GPT-4-class performance with 100x fewer FLOPs should face equivalent obligations to one trained with 100x more), AI policy is expected to shift toward capability-based evaluation thresholds — defining obligations based on what an [[AI Model]] can demonstrably do (design biological or chemical weapons, autonomously acquire computational resources, generate child sexual abuse material, defeat human oversight mechanisms) rather than how it was trained. The network of national AI Safety Institutes (UK, US, Japan, Singapore, EU AI Office) is actively developing capability evaluation methodologies that [private] serve as the technical foundation for such regulation.
 
   - **AI liability frameworks**: The EU AI Liability Directive (in trilogue as of mid-2026) will establish fault-based and no-fault liability regimes for AI-caused harm, complementing the [[EU AI Act]]'s ex-ante conformity assessment obligations with ex-post compensation mechanisms for victims. Proposed provisions include a presumption of causality where it is excessively difficult for claimants to establish fault by a high-risk AI system, and mandatory disclosure of training data and model documentation to support liability claims. UK courts have begun applying existing product liability law (Consumer Protection Act 1987), negligence doctrine, and discrimination law to AI-caused harms without specific legislation, generating a body of case law that will inform the eventual UK AI Bill.
 
@@ -417,7 +599,7 @@ public: true
 
   - **Frontier AI institutional infrastructure**: The UK AI Security Institute (UKASI), the US AI Safety Institute, and counterparts in Japan, Singapore, South Korea, Australia, and the EU (the European AI Office) are establishing bilateral evaluation frameworks and information-sharing protocols for frontier [[AI Model]] assessments, potentially evolving into a more formal international institution. Precedents from nuclear (IAEA), chemical weapons (OPCW), and financial regulation (FSB, BIS) suggest that institutionalisation of international AI oversight is feasible but will require significant political investment in treaty-level commitment.
 
-  - **[[AI Alignment]] as regulatory target**: As AI systems become more capable and more autonomously deployed in [[Agentic Workflow]] contexts — browsing the web, executing code, managing files, interacting with external services on users' behalf — AI policy may increasingly target alignment properties directly. Requirements that developers demonstrate through standardised evaluation that systems do not pursue harmful objectives, resist [[Human Oversight]], or engage in systematic deception could become regulatory baselines rather than voluntary responsible scaling commitments. The EU AI Office's Code of Practice for GPAI models (2025) includes provisions on "systemic risk from model behaviour" that point in this direction.
+  - **[[AI Alignment]] as regulatory target**: As AI systems become more capable and more autonomously deployed in [[Agentic Workflow]] contexts — browsing the web, executing code, managing files, interacting with external services on users' behalf — AI policy may increasingly target alignment properties directly. Requirements that developers demonstrate through standardised evaluation that systems do not pursue harmful objectives, resist [[Human Oversight]], or engage in systematic deception [private] become regulatory baselines rather than voluntary responsible scaling commitments. The EU AI Office's Code of Practice for GPAI models (2025) includes provisions on "systemic risk from model behaviour" that point in this direction.
 
   - **[[Responsible AI]] and sustainability co-regulation**: The environmental footprint of AI model training and inference — energy consumption, water for data centre cooling, e-waste from frequent hardware refresh cycles — is attracting increasing regulatory attention. The UK Environment Act and EU sustainability reporting requirements are beginning to capture data centre AI workloads; AI-specific energy and carbon disclosure requirements are expected to materialise as AI model training energy consumption (GPT-4 training reportedly consumed approximately 50 GWh; frontier 2025–2026 training runs are estimated to require multiples of this) becomes visible in corporate sustainability reporting.
 

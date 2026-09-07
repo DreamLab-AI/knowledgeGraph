@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Cleaning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-cleaning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d5a04c899063c22a82a9a70c87e8fe5d722410ba018d53d4402ddda38f8d3d35"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Analysis]]",
-      "resolved": "urn:visionflow:linked:data-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Preprocessing]]",
-      "resolved": "urn:visionflow:linked:data-preprocessing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 8601]]",
-      "resolved": "urn:visionflow:linked:iso-8601",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Data Cleaning is a concept within the ai domain.

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Data Exchange
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-exchange", "@type":"Page", "title":"Data Exchange", "vc:slug":"data-exchange", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-exchange",
+  "@type": "Page",
+  "title": "Data Exchange",
+  "vc:slug": "data-exchange",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,39 +20,102 @@ public: true
   "definition": "Data Exchange refers to the structured transfer of data between systems, organisations, or parties using agreed-upon formats, protocols, and governance frameworks, enabling interoperability without requiring identical internal architectures. It encompasses both technical standards (APIs, file formats, serialisation protocols) and organisational arrangements (data sharing agreements, trust frameworks, data marketplaces) that govern how data flows across boundaries. Modern data exchange platforms provide cataloguing, consent management, lineage tracking, and value exchange mechanisms alongside raw data transfer.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}, {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:data-interoperability",
+      "label": "Data Interoperability"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:open-data", "label": "Open Data"},
-      {"@id": "urn:ngm:class:data-marketplace", "label": "Data Marketplace"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-marketplace",
+        "label": "Data Marketplace"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:api", "label": "API"},
-      {"@id": "urn:ngm:class:data-format", "label": "Data Format"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:data-serialization", "label": "Data Serialisation"}
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:edi", "label": "EDI"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:messaging", "label": "Messaging"}
+      {
+        "@id": "urn:ngm:class:edi",
+        "label": "EDI"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:messaging",
+        "label": "Messaging"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:open-banking", "label": "Open Banking"},
-      {"@id": "urn:ngm:class:healthcare-interoperability", "label": "Healthcare Interoperability"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-interoperability",
+        "label": "Healthcare Interoperability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
     ]
   },
   "quality": 0.62,

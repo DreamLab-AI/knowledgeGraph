@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - KinematicElement
----
-
-# Kinematic Element
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,17 +51,32 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot", "label": "Robot"}
+      {
+        "@id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:legged-robot", "label": "Legged Robot"},
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:legged-robot",
+        "label": "Legged Robot"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
     ]
   },
   "quality": 0.35,
@@ -79,32 +87,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:kinematic-element:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6da9e0351a5048e3a8b03a5d45f0bfbd09620dd68795fabd8005533d0bcc5f1e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Kinematic Element is a rigid body or joint primitive within a robot's mechanical structure that participates in the forward and inverse kinematic chain, defining the positional and orientational degrees of freedom of a limb segment. Chains of kinematic elements model the geometry of robotic arms, legs, and manipulators for motion planning and control.

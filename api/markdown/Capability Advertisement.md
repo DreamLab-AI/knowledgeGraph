@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Capability Advertisement
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:capability-advertisement", "@type": "Page", "title": "Capability Advertisement", "vc:slug": "capability-advertisement", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:capability-advertisement",
+  "@type": "Page",
+  "title": "Capability Advertisement",
+  "vc:slug": "capability-advertisement",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

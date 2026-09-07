@@ -1,37 +1,126 @@
----
-public: true
----
-
-# Rotation Matrix
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:rotation-matrix", "@type":"Page", "title":"Rotation Matrix", "vc:slug":"rotation-matrix", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:rotation-matrix",
+  "@type": "Page",
+  "title": "Rotation Matrix",
+  "vc:slug": "rotation-matrix",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:rotation-matrix",
-  "@type":"Class",
-  "label":"Rotation Matrix",
-  "definition":"A rotation matrix is a square orthogonal matrix with determinant one that represents a rigid rotation of vectors in Euclidean space about a fixed origin. In robotics and computer graphics it encodes the orientation of one coordinate frame relative to another, mapping direction vectors from one frame into another without altering their length. Rotation matrices compose by matrix multiplication, enabling chains of rotations to be combined into a single transformation.",
-  "domain":"robotics",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"},{"@id":"urn:ngm:class:matrix-multiplication","label":"Matrix Multiplication"}],
-    "uses":[{"@id":"urn:ngm:class:coordinate-system","label":"Coordinate System"},{"@id":"urn:ngm:class:matrix-multiplication","label":"Matrix Multiplication"}],
-    "hasPart":[{"@id":"urn:ngm:class:coordinate-system","label":"Coordinate System"}],
-    "enables":[{"@id":"urn:ngm:class:forward-kinematics","label":"Forward Kinematics"},{"@id":"urn:ngm:class:pose-estimation","label":"Pose Estimation"},{"@id":"urn:ngm:class:photorealistic-rendering","label":"Photorealistic Rendering"}],
-    "supports":[{"@id":"urn:ngm:class:trajectory-planning","label":"Trajectory Planning"},{"@id":"urn:ngm:class:motion-planning","label":"Motion Planning"}],
-    "partOf":[{"@id":"urn:ngm:class:homogeneous-transformation","label":"Homogeneous Transformation"},{"@id":"urn:ngm:class:kinematics","label":"Kinematics"}],
-    "relatedTo":[{"@id":"urn:ngm:class:inverse-kinematics","label":"Inverse Kinematics"},{"@id":"urn:ngm:class:robotic-manipulation","label":"Robotic Manipulation"},{"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:homogeneous-transformation","label":"Homogeneous Transformation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rotation-matrix",
+  "@type": "Class",
+  "label": "Rotation Matrix",
+  "definition": "A rotation matrix is a square orthogonal matrix with determinant one that represents a rigid rotation of vectors in Euclidean space about a fixed origin. In robotics and computer graphics it encodes the orientation of one coordinate frame relative to another, mapping direction vectors from one frame into another without altering their length. Rotation matrices compose by matrix multiplication, enabling chains of rotations to be combined into a single transformation.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:linear-algebra",
+      "label": "Linear Algebra"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:homogeneous-transformation",
+        "label": "Homogeneous Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:homogeneous-transformation",
+        "label": "Homogeneous Transformation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

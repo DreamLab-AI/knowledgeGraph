@@ -1,38 +1,120 @@
----
-public: true
----
-
-# Additionality
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:additionality", "@type":"Page", "title":"Additionality", "vc:slug":"additionality", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:additionality",
+  "@type": "Page",
+  "title": "Additionality",
+  "vc:slug": "additionality",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:additionality",
-  "@type":"Class",
-  "label":"Additionality",
-  "definition":"Additionality is the principle, central to carbon markets and climate finance, that an emissions-reduction or removal activity counts only if it would not have occurred under a business-as-usual baseline without the incentive of credit revenue. Demonstrating additionality requires showing that the project faces financial, regulatory, or technical barriers it overcomes specifically because of the credit mechanism. It is the key integrity test that separates credible carbon credits from those representing reductions that would have happened anyway.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:carbon-markets","label":"Carbon Markets"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:carbon-markets","label":"Carbon Markets"}],
-    "requires":[{"@id":"urn:ngm:class:verification","label":"Verification"},{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}],
-    "enables":[{"@id":"urn:ngm:class:carbon-credits","label":"Carbon Credits"},{"@id":"urn:ngm:class:carbon-offset","label":"Carbon Offset"}],
-    "supports":[{"@id":"urn:ngm:class:net-zero","label":"Net Zero"}],
-    "dependsOn":[{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}],
-    "uses":[{"@id":"urn:ngm:class:audit","label":"Audit"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:paris-agreement","label":"Paris Agreement"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:climate-finance","label":"Climate Finance"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:greenwashing","label":"Greenwashing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:carbon-offset","label":"Carbon Offset"},{"@id":"urn:ngm:class:sustainable-finance","label":"Sustainable Finance"},{"@id":"urn:ngm:class:esg","label":"ESG"},{"@id":"urn:ngm:class:carbon-footprint","label":"Carbon Footprint"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:additionality",
+  "@type": "Class",
+  "label": "Additionality",
+  "definition": "Additionality is the principle, central to carbon markets and climate finance, that an emissions-reduction or removal activity counts only if it would not have occurred under a business-as-usual baseline without the incentive of credit revenue. Demonstrating additionality requires showing that the project faces financial, regulatory, or technical barriers it overcomes specifically because of the credit mechanism. It is the key integrity test that separates credible carbon credits from those representing reductions that would have happened anyway.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:carbon-markets",
+      "label": "Carbon Markets"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:verification",
+        "label": "Verification"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

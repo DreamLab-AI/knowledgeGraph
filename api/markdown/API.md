@@ -1,8 +1,3 @@
----
-public: true
----
-
-# API
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,52 +168,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:api:14c2529eb449",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8f63117566be4bef2fe6f40b9da2842486b5769664591a718b9928abae0dcb4d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Communication Protocols]]",
-      "resolved": "urn:visionflow:linked:communication-protocols",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:linked:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[HTTP]]",
-      "resolved": "urn:visionflow:linked:http",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability Standards]]",
-      "resolved": "urn:visionflow:linked:interoperability-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Software Engineering]]",
-      "resolved": "urn:visionflow:linked:software-engineering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Application Programming Interface, a defined set of operations, inputs and outputs through which software components or services communicate without exposing their internal implementation.

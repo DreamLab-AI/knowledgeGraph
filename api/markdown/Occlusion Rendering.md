@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Occlusion Rendering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Occlusion rendering is the set of techniques used in real-time and offline graphics pipelines to correctly determine and display which surfaces are hidden behind other geometry from a given camera viewpoint, as well as to compute the darkening of surfaces due to local geometric obstruction of ambient light. It encompasses hardware depth-buffer culling, ambient occlusion shading, screen-space occlusion methods, and — in augmented reality — the masking of virtual objects by real-world foreground geometry. Correct occlusion is essential for perceptual plausibility in both games and AR/VR applications.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"}
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ar-occlusion", "label": "AR Occlusion"},
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"}
+      {
+        "@id": "urn:ngm:class:ar-occlusion",
+        "label": "AR Occlusion"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ambient-occlusion", "label": "Ambient Occlusion"},
-      {"@id": "urn:ngm:class:occlusion-culling", "label": "Occlusion Culling"}
+      {
+        "@id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - In augmented reality, occlusion rendering is a fundamental perceptual challenge: virtual objects must be masked wherever real foreground objects obstruct them, requiring real-time depth estimation of the physical scene. Early AR systems faked this with approximate geometry models; modern headsets such as the Apple Vision Pro and Meta Quest 3 use dedicated depth sensors or neural depth estimation to generate per-frame occlusion masks. This is categorised as [[AR Occlusion]] and is considered a prerequisite for convincing physical-virtual integration.
 
   - Between 2023 and 2025, hardware ray tracing on consumer GPUs has made fully ray-traced ambient and direct occlusion practical in real-time games and simulation. Neural rendering approaches are beginning to learn occlusion relationships directly from data, enabling plausible occlusion without explicit geometry in some scenarios. In spatial computing, depth sensor quality and neural depth completion algorithms have significantly improved AR occlusion fidelity, with Apple Vision Pro's depth integration representing the current industry benchmark for consumer headsets.
-

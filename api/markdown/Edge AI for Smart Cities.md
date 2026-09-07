@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Edge AI for Smart Cities
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,28 +63,70 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
-      {"@id": "urn:ngm:class:edge-ai-security", "label": "Edge AI Security"}
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-security",
+        "label": "Edge AI Security"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin-ecosystem", "label": "Digital Twin Ecosystem"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {
+        "@id": "urn:ngm:class:digital-twin-ecosystem",
+        "label": "Digital Twin Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
     ]
   },
   "provenance": {
@@ -99,47 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:edge-ai-for-smart-cities:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:142c856928bfa11a9db99c02736ce6a54cd41b6f13babd2a68cbb7e7d7d4fe6e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Edge AI for Smart Cities deploys machine learning intelligence across distributed urban infrastructure—smart cameras, IoT sensors, edge gateways—enabling real-time autonomous city systems without centralized cloud processing. Smart city applications span traffic management, public safety, environmental monitoring, and energy optimization, each requiring sub-second response times infeasible with cloud latency. Intelligent traffic management systems deploy AI-enabled cameras at intersections for real-time congestion detection, automated signal timing, and incident response, reducing commute times and emissions through local inference. Computer vision models identify pedestrians, cyclists, vehicles, and traffic conditions milliseconds after capture, enabling immediate signal adjustments. Public safety monitoring through smart cameras detects unusual activities (loitering, crowd anomalies, abandoned objects) locally, alerting authorities within seconds rather than hours of manual review. Environmental monitoring networks analyze air quality, noise levels, and pollution patterns across neighborhoods, supporting real-time alerts and policy decisions. Energy optimization systems balance power loads across neighborhoods, integrating renewable energy and storage through local forecasting and demand response. All-local processing protects privacy: video analysis occurs on-device, extracting only semantic events rather than transmitting raw footage. Edge deployment overcomes cloud bandwidth constraints; a single smart camera generates 100+ Mbps video streams impossible to upload continuously. Standards like ISO 37122 (Smart City Indicators) and ITU-T Y.4000 (Smart Sustainable Cities) guide deployments. Successful implementations in Singapore, Barcelona, and Copenhagen demonstrate traffic improvements, crime reduction, and environmental benefits. Edge AI transforms cities from passive data collectors into intelligent adaptive systems responding to citizen needs with millisecond responsiveness and complete privacy preservation.

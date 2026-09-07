@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optimiser
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,47 +50,119 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:learning-rate", "label": "Learning Rate"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:learning-rate",
+        "label": "Learning Rate"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:convergence", "label": "Convergence"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:momentum", "label": "Momentum"},
-      {"@id": "urn:ngm:class:adaptive-learning-rate", "label": "Adaptive Learning Rate"}
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:momentum",
+        "label": "Momentum"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-learning-rate",
+        "label": "Adaptive Learning Rate"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
-      {"@id": "urn:ngm:class:weight-initialisation", "label": "Weight Initialisation"}
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "@id": "urn:ngm:class:weight-initialisation",
+        "label": "Weight Initialisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:second-order-optimisation", "label": "Second-Order Optimisation"},
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"}
+      {
+        "@id": "urn:ngm:class:second-order-optimisation",
+        "label": "Second-Order Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:gradient-clipping", "label": "Gradient Clipping"}
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-clipping",
+        "label": "Gradient Clipping"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
-    {"@id": "urn:ngm:class:gradient-based-optimizer", "label": "Gradient-Based Optimizer"}
+    {
+      "@id": "urn:ngm:class:optimisation-algorithm",
+      "label": "Optimization Algorithm"
+    },
+    {
+      "@id": "urn:ngm:class:gradient-based-optimizer",
+      "label": "Gradient-Based Optimizer"
+    }
   ],
   "quality": 0.68,
   "provenance": {
@@ -105,32 +172,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:optimiser:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0285607f2babf8e9b28ce737788d9cffd5a6521f61d3807219a1042dc58c2848"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Optimiser is an algorithm that adjusts model parameters during training to minimise a loss function. Modern optimisers such as Adam and RMSProp extend stochastic gradient descent with adaptive learning rates and momentum, enabling faster and more stable convergence of deep neural networks.
@@ -217,7 +258,7 @@ public: true
   4. Sedai. (2025). Software Performance Optimization: The Expert Guide. https://www.sedai.io/blog/software-performance-optimization-expert-guide
   5. RapidFort. (2025). What is Software Optimization? https://www.rapidfort.com/blog/what-is-software-optimization
   6. ISO/IEC 25010. (2011). Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models. https://www.iso.org/standard/35733.html
-  7. Index.dev. (2025). Code Optimization Strategies for Faster Software in 2025. https://www.index.dev/blog/code-optimization-strategies
+  7. Index.dev. (2025). Code Optimization Strategies for Faster Software in 2025. https://www.[private].dev/blog/code-optimization-strategies
   8. iolo. (2025). The Future of PC Optimization: Trends to Watch in 2025. https://www.iolo.com/resources/articles/future-of-pc-optimization-trends-2025/
   9. Kissflow. (2025). Business Process Optimization: The Ultimate Guide for 2025. https://kissflow.com/workflow/bpm/business-process-optimization/
   10. Wikipedia. (2025). Program optimization. https://en.wikipedia.org/wiki/Program_optimization

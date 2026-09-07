@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Possibility Unlock
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "possibility-unlock",
   "title": "Possibility Unlock",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Continuous Preventative Healthcare", "New Market Creation", "Operational Viability"],
+  "vc:outboundWikilinks": [
+    "Continuous Preventative Healthcare",
+    "New Market Creation",
+    "Operational Viability"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,31 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:economic-impact-of-ai", "label": "Economic Impact of AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-impact-of-ai",
+      "label": "Economic Impact of AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:new-market-creation", "label": "New Market Creation"}, {"@id": "urn:ngm:class:operational-viability", "label": "Operational Viability"}, {"@id": "urn:ngm:class:continuous-preventative-healthcare", "label": "Continuous Preventative Healthcare"}, {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:new-market-creation",
+        "label": "New Market Creation"
+      },
+      {
+        "@id": "urn:ngm:class:operational-viability",
+        "label": "Operational Viability"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-preventative-healthcare",
+        "label": "Continuous Preventative Healthcare"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

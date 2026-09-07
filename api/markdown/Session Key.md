@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Session Key
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,40 +20,90 @@ public: true
   "definition": "A session key is a temporary symmetric cryptographic key generated for the duration of a single communication session, used to encrypt the data exchanged between parties after an initial key exchange handshake. Session keys have bounded lifetimes and are discarded at the end of the session, limiting the window of vulnerability if the key is compromised. Ephemeral session keys derived from asymmetric key exchanges (such as Diffie-Hellman) provide forward secrecy, ensuring past sessions remain private even if long-term private keys are later exposed.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:session-management", "label": "Session Management"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:policy-information-point", "label": "Policy Information Point"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:policy-information-point",
+        "label": "Policy Information Point"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-identity", "label": "Blockchain Identity"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:biometric-data", "label": "Biometric Data"}
+      {
+        "@id": "urn:ngm:class:biometric-data",
+        "label": "Biometric Data"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:externally-owned-account", "label": "Externally Owned Account"}
+      {
+        "@id": "urn:ngm:class:externally-owned-account",
+        "label": "Externally Owned Account"
+      }
     ]
   },
   "quality": 0.62,

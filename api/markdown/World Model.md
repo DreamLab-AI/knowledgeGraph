@@ -1,8 +1,3 @@
----
-public: true
----
-
-# World Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -163,6 +158,6 @@ public: true
 
   - Recurrent neural architectures, particularly those using sequence models such as LSTMs and Transformers, are well suited to world modelling because environments are inherently temporal. The model must track which aspects of past observations are relevant to current decisions, compressing history into a learned latent state. Variational approaches explicitly model uncertainty in this state, allowing agents to reason about risk and seek additional information when their model is unreliable.
 
-  - MuZero demonstrated that a world model trained purely from self-play, without any prior knowledge of game rules, could achieve superhuman performance across chess, shogi, Go, and Atari games. The model learns a latent dynamics function that predicts value and policy targets over imagined search trees, combining Monte Carlo Tree Search with learned representations. This success has catalysed world model research for continuous-control robotics tasks.
+  - MuZero demonstrated that a world model trained purely from self-play, without any prior knowledge of game rules, [private] achieve superhuman performance across chess, shogi, Go, and Atari games. The model learns a latent dynamics function that predicts value and policy targets over imagined search trees, combining Monte Carlo Tree Search with learned representations. This success has catalysed world model research for continuous-control robotics tasks.
 
   - A key challenge is world model accuracy under distribution shift: models trained in simulation may diverge from real-world dynamics, causing policies to fail on deployment. Techniques such as domain randomisation, system identification, and sim-to-real transfer address this gap. Large-scale video generation models are increasingly explored as general-purpose world models trained on internet-scale data, with implications for [[Embodied AI Simulation]] research and the development of truly general [[Autonomous Agent]] systems.

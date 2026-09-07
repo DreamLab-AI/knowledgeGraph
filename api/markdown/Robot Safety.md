@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robot Safety
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -219,37 +214,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robot-safety:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a47c6cd4e352b99ca1d167a48314186d7d4216fac680962f180c80e9c4434b76"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Robot Safety encompasses the engineering principles, risk assessment methods, and regulatory standards that ensure robotic systems operate without causing harm to humans, other machines, or the environment. It includes functional safety standards (ISO 10218, ISO 13849), collaborative robot (cobot) application requirements, dynamic risk assessment, and the emerging challenges of AI-integrated and autonomous robot deployment in shared workspaces.

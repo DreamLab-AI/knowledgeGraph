@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-025-microsoft-hololens
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-025-microsoft-hololens:c7afd05b0c2d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2517d25dc6a9130d160505796d109de3625c6cfae0bae22a92b761307be24f2e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Spatial Mesh]]",
-      "resolved": "urn:visionflow:linked:spatial-mesh",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Anchors]]",
-      "resolved": "urn:visionflow:linked:spatial-anchors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mixed Reality]]",
-      "resolved": "urn:visionflow:linked:mixed-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Head-Mounted Display]]",
-      "resolved": "urn:visionflow:linked:head-mounted-display",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Microsoft HoloLens is a self-contained mixed reality head-mounted display that overlays interactive holographic content onto the wearer's view of the real world.

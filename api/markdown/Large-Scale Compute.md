@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Large Scale Compute
----
-
-# Large-Scale Compute
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,22 +20,54 @@ aliases:
   "definition": "Large-scale compute refers to the aggregation of massive computational resources — spanning thousands to hundreds of thousands of processors, accelerators, and memory modules — into coordinated systems capable of executing workloads at magnitudes that are impractical for single machines or small clusters, including the training of frontier AI models, climate simulation, drug discovery, and national security applications. It encompasses the physical infrastructure (data centres, power supply, cooling), interconnect fabrics (InfiniBand, NVLink, custom optical networks), software orchestration layers (job schedulers, distributed training frameworks), and the operational expertise required to sustain utilisation and reliability at exascale levels.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computational-infrastructure", "label": "Computational Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computational-infrastructure",
+      "label": "Computational Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
     ]
   },
   "quality": 0.8

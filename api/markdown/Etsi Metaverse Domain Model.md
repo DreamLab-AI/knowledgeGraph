@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Etsi Metaverse Domain Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,21 +50,42 @@ public: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:domain-model", "label": "Domain Model"}
+      {
+        "@id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:reference-architecture", "label": "Reference Architecture"}
+      {
+        "@id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ]
   },
   "quality": 0.5,
@@ -80,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-metaverse-domain-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e8f64ef37623e4b2d25c53455b67475fa3bcd9ca6004161fa4e9a8bc4730152e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Domain Model]]",
-      "resolved": "urn:visionflow:linked:domain-model",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A conceptual framework developed by ETSI defining the structural organisation, functional components, and interaction patterns of metaverse systems, providing a standardised reference architecture for telecommunications infrastructure supporting persistent, interconnected virtual environments.

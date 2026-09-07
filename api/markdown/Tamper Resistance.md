@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tamper Resistance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Tamper Resistance",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:hardware-security", "vc:label": "Hardware Security"},
-    {"@id": "urn:visionflow:linked:tamper-evidence", "vc:label": "Tamper Evidence"},
-    {"@id": "urn:visionflow:linked:trusted-platform-module", "vc:label": "Trusted Platform Module"},
-    {"@id": "urn:visionflow:linked:hardware-security-module", "vc:label": "Hardware Security Module"}
+    {
+      "@id": "urn:visionflow:linked:hardware-security",
+      "vc:label": "Hardware Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:tamper-evidence",
+      "vc:label": "Tamper Evidence"
+    },
+    {
+      "@id": "urn:visionflow:linked:trusted-platform-module",
+      "vc:label": "Trusted Platform Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-security-module",
+      "vc:label": "Hardware Security Module"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,19 +44,40 @@ public: true
   "definition": "The property of a device or system that makes unauthorised physical access, modification, or extraction of its protected contents actively difficult, achieved through measures such as hardened enclosures, potted or shielded circuitry, mesh sensors that detect penetration, and logic that zeroises cryptographic keys when intrusion is sensed. Tamper resistance aims to prevent or frustrate an attack in progress, in contrast to tamper evidence, which merely ensures that interference leaves a detectable trace. It is a defining requirement for secure hardware including trusted platform modules, hardware security modules, smartcards, and payment terminals, and is graded by certification schemes such as FIPS 140-3 physical security levels and Common Criteria evaluations.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:hardware-security", "label": "Hardware Security"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:hardware-security",
+    "label": "Hardware Security"
+  },
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:tamper-evidence", "label": "Tamper Evidence"}
+      {
+        "@id": "urn:ngm:class:tamper-evidence",
+        "label": "Tamper Evidence"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trusted-platform-module", "label": "Trusted Platform Module"},
-      {"@id": "urn:ngm:class:secure-element", "label": "Secure Element"}
+      {
+        "@id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      },
+      {
+        "@id": "urn:ngm:class:secure-element",
+        "label": "Secure Element"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
-      {"@id": "urn:ngm:class:physical-security", "label": "Physical Security"},
-      {"@id": "urn:ngm:class:side-channel-attack", "label": "Side-Channel Attack"}
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:physical-security",
+        "label": "Physical Security"
+      },
+      {
+        "@id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      }
     ]
   },
   "quality": 0.8,

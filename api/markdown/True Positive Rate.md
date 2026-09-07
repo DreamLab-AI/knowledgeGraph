@@ -1,8 +1,3 @@
----
-public: true
----
-
-# True Positive Rate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,47 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:true-positive-rate:a758a9162b4f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:245ea127dd1a1e66888346487ece73a1545144c939af8ac7e510610c47087d0e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Confusion Matrix]]",
-      "resolved": "urn:visionflow:linked:confusion-matrix",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensitivity]]",
-      "resolved": "urn:visionflow:linked:sensitivity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Recall]]",
-      "resolved": "urn:visionflow:linked:recall",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Evaluation Metric]]",
-      "resolved": "urn:visionflow:linked:evaluation-metric",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - True positive rate is a classification metric measuring the proportion of actual positive cases that a model correctly identifies, also known as sensitivity or recall.

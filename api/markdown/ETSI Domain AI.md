@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI Domain AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -124,81 +119,6 @@ public: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:babbbc5e48be6ec89517066976a3c2d1e23b129b76c632478d3b7928a3f9ad6d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Service Classification]]",
-      "resolved": "urn:visionflow:linked:ai-service-classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI Domain Taxonomy]]",
-      "resolved": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GS MEC]]",
-      "resolved": "urn:visionflow:linked:etsi-gs-mec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Intelligence Layer Categorization]]",
-      "resolved": "urn:visionflow:linked:intelligence-layer-categorization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-research-area",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Domain AI Creative Media]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-ai-creative-media",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Domain AI Data Mgmt]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Domain AI Governance]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Domain AI Human Interface]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-ai-human-interface",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

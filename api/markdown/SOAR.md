@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SOAR
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "SOAR (Security Orchestration, Automation and Response) is a class of platforms that coordinate detection tools, automate repetitive incident-handling workflows, and orchestrate response actions across a security stack through codified playbooks. It ingests alerts from disparate sources, enriches them with context, and executes graded responses to reduce analyst workload and mean time to respond. The acronym also denotes Soar, a cognitive architecture for modelling general intelligence, but in security contexts the orchestration sense dominates.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"},
-      {"@id": "urn:ngm:class:cyber-security-and-cryptography", "label": "Cyber Security and Cryptography"}
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      }
     ]
   },
   "quality": 0.72

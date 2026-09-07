@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Consumer Trust
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Consumer trust is the confidence buyers place in a brand, product, or supply chain to behave reliably, safely, and ethically. It is built through verifiable provenance, transparent practices, consistent quality, and accountable handling of grievances. In supply-chain contexts it is increasingly underpinned by traceability data and ethical-sourcing attestations.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"}, {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ]
   },
   "quality": 0.72
 }

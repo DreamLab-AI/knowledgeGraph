@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Jacobian Matrix
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -152,4 +147,3 @@ public: true
   - Jacobian-based inverse kinematics methods compute joint velocities that produce desired end-effector velocities: q̇ = J†(q)ẋ, where J† is the Moore-Penrose pseudoinverse of J. The pseudoinverse minimises the joint velocity norm among all solutions when J is full row-rank (redundant manipulator) and produces the least-squares solution when J is rank-deficient. Damped least-squares (DLS) regularisation avoids numerical blow-up near singularities by adding a damping term λ²I, trading off end-effector accuracy for joint velocity smoothness. Null-space projection terms q̇ = J†ẋ + (I − J†J)q̇₀ allow secondary objectives (joint limit avoidance, obstacle avoidance) to be pursued in the null-space of the primary task.
 
   - By 2024-2025 Jacobian-based control remains foundational for industrial and collaborative robot arms, despite the rise of learning-based IK solvers. Real-time Jacobian computation is implemented on robot controllers at 1 kHz and above for torque-control applications. For redundant humanoid robots with 30+ degrees of freedom, hierarchical Jacobian task-space control stacks multiple tasks at different priority levels. Differentiable robotics simulation frameworks (Drake, IsaacGym, Genesis) expose Jacobians through automatic differentiation, enabling gradient-based optimisation of manipulation trajectories and end-to-end training of neural robot controllers.
-

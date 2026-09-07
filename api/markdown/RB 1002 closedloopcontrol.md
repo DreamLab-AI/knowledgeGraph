@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RB 1002 closedloopcontrol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,42 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"}
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {
+        "@id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-1002-closedloopcontrol:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:04183e81eec805c83fd2ce94643c2c0e3eff0e9143e8e9aee90861193bf8f930"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - RB 1002 Closed-Loop Control denotes the general class of feedback-based control architectures in which sensor measurements of a system's output are continuously fed back to the controller to correct deviations from a desired set-point. As a superclass it subsumes PID control, model-predictive control, adaptive control, and state-estimation-driven controllers used in robotic actuation and manipulation.

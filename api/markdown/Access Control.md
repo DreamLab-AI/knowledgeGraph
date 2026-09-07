@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - AccessControl
----
-
-# Access Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -229,67 +222,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:access-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7671efc514c975326ef19499b3ebc0308fdab9c6ec78ee95fc861f030f7332f6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Authorisation]]",
-      "resolved": "urn:visionflow:linked:authorisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compliance]]",
-      "resolved": "urn:visionflow:linked:compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Core Technology]]",
-      "resolved": "urn:visionflow:linked:core-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Permission Management]]",
-      "resolved": "urn:visionflow:linked:permission-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Security Mechanism]]",
-      "resolved": "urn:visionflow:linked:security-mechanism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Security]]",
-      "resolved": "urn:visionflow:linked:system-security",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Protection]]",
-      "resolved": "urn:visionflow:owl:class:data-protection",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment. It encompasses the policies, procedures, and technologies that govern the granting and restricting of access rights, ensuring that only authorised entities can perform specific actions on protected resources based on their identity, role, or attributes.

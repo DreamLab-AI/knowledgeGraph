@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - LifeCycleAssessment
----
-
-# life cycle assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

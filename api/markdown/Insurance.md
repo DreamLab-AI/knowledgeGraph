@@ -1,40 +1,116 @@
----
-public: true
----
-
-# Insurance
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:insurance", "@type":"Page", "title":"Insurance", "vc:slug":"insurance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:insurance",
+  "@type": "Page",
+  "title": "Insurance",
+  "vc:slug": "insurance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:insurance",
-  "@type":"Class",
-  "label":"Insurance",
-  "definition":"Insurance is a financial arrangement in which a party pays a premium to transfer the risk of an uncertain future loss to an insurer, which pools premiums from many policyholders and pays valid claims out of that pool. It relies on the law of large numbers and actuarial estimation to price risk so that aggregate premiums cover expected losses, expenses and a margin. Insurance underpins economic resilience by smoothing the financial impact of accidents, illness, property damage and other contingencies.",
-  "domain":"governance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:finance","label":"Finance"}],
-    "hasPart":[{"@id":"urn:ngm:class:parametric-insurance","label":"Parametric Insurance"}],
-    "requires":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "enables":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "uses":[{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"}],
-    "dependsOn":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "supports":[{"@id":"urn:ngm:class:finance","label":"Finance"}],
-    "implements":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:parametric-insurance","label":"Parametric Insurance"},{"@id":"urn:ngm:class:finance","label":"Finance"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:parametric-insurance","label":"Parametric Insurance"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:governance","label":"Governance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:insurance",
+  "@type": "Class",
+  "label": "Insurance",
+  "definition": "Insurance is a financial arrangement in which a party pays a premium to transfer the risk of an uncertain future loss to an insurer, which pools premiums from many policyholders and pays valid claims out of that pool. It relies on the law of large numbers and actuarial estimation to price risk so that aggregate premiums cover expected losses, expenses and a margin. Insurance underpins economic resilience by smoothing the financial impact of accidents, illness, property damage and other contingencies.",
+  "domain": "governance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

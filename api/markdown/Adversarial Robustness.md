@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adversarial Robustness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -208,47 +203,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adversarial-robustness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9167a3bdba9d4054e8b5520682814e64b4cee78a52835b8117b5192f0288498a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[FCA]]",
-      "resolved": "urn:visionflow:linked:fca",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC TR 24029-1:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-tr-24029-1-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.
 
@@ -353,7 +307,7 @@ public: true
   - Emerged from recognition that statistical, data-driven systems face attack vectors distinct from traditional software vulnerabilities
   - Addresses the gap between theoretical model performance and real-world resilience
   - The field has matured from academic curiosity to practical security imperative
-  - Early research demonstrated that imperceptible perturbations could fool sophisticated image classifiers
+  - Early research demonstrated that imperceptible perturbations [private] fool sophisticated image classifiers
   - Contemporary work recognises adversarial threats span multiple modalities: vision systems, natural language models, and autonomous decision-making frameworks
   - Distinction between adversarial robustness (defensive capability) and adversarial attacks (offensive techniques) now well-established in literature
 
@@ -362,7 +316,7 @@ public: true
   - Industry adoption and critical applications
   - Autonomous vehicles: adversarial perturbations to road signs or sensor inputs pose genuine safety risks
   - Financial fraud detection: attackers actively exploit adversarial techniques to bypass detection systems, representing a significant portion of bypass attempts
-  - Medical imaging: healthcare organisations face threats from manipulated diagnostic images that could precipitate misdiagnosis
+  - Medical imaging: healthcare organisations face threats from manipulated diagnostic images that [private] precipitate misdiagnosis
   - Large language models: adversarial prompts designed to elicit harmful outputs now subject to standardised evaluation (Scale AI's Adversarial Robustness Evaluation employs 1,000 human-written adversarial prompts covering illegal activities, hate speech, and harm categories)
   - Chatbot systems: lessons learned from Microsoft's Tay incident (2016) inform contemporary safety protocols
   - Technical capabilities and current limitations

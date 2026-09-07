@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RTMPose
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "RTMPose",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:pose-estimation", "vc:label": "Pose Estimation"},
-    {"@id": "urn:visionflow:linked:dwpose", "vc:label": "DWPose"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"}
+    {
+      "@id": "urn:visionflow:linked:pose-estimation",
+      "vc:label": "Pose Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:dwpose",
+      "vc:label": "DWPose"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,13 +50,22 @@ public: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dwpose", "label": "DWPose"}
+      {
+        "@id": "urn:ngm:class:dwpose",
+        "label": "DWPose"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ]
   },
   "quality": 0.8,

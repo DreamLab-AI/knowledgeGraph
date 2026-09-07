@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy Budget Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,26 +67,62 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:privacy-mechanism", "label": "Privacy Mechanism"}
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-mechanism",
+        "label": "Privacy Mechanism"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:privacy-utility-tradeoffs", "label": "Privacy Utility Tradeoffs"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-utility-tradeoffs",
+        "label": "Privacy Utility Tradeoffs"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ]
   },
   "provenance": {
@@ -101,52 +132,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:privacy-budget-management:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aea828e82802738ef4b30c9a514075adb68c5c2a7969d3a94cbcb66fe45fa8e3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Dwork and Roth (2014)]]",
-      "resolved": "urn:visionflow:linked:dwork-and-roth-2014",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Google DP Accounting]]",
-      "resolved": "urn:visionflow:linked:google-dp-accounting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST Privacy Framework]]",
-      "resolved": "urn:visionflow:linked:nist-privacy-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Privacy Budget Management is the systematic allocation, tracking, and enforcement of differential privacy budget (epsilon/delta parameters) across multiple queries or analyses to prevent cumulative privacy loss from exceeding acceptable thresholds over time. This framework recognizes that each differentially private query consumes privacy budget, with total privacy loss accumulated through composition theorems (sequential composition ε_total = Σε_i for independent queries, advanced composition providing tighter bounds √(2k ln(1/δ))ε + kε(e^ε - 1) for k queries each with budget ε), necessitating careful budget allocation to maximize utility while respecting overall privacy constraints. Management strategies include fixed allocation assigning predetermined budgets to anticipated query categories (dashboards, research, reports), adaptive allocation dynamically adjusting budgets based on query importance and remaining capacity, hierarchical budgeting organizing budgets across organizational levels (global, department, project, individual analyst), and renewal policies replenishing budgets periodically (daily, monthly, annually) for ongoing analytics platforms. Implementation components encompass budget accounting systems tracking consumption across queries with audit trails, enforcement mechanisms rejecting queries exceeding available budget or degrading accuracy to fit constraints, composition analysis applying appropriate theorems (sequential, parallel, advanced, Rényi divergence) to bound cumulative privacy loss, and monitoring dashboards providing visibility into budget utilization, remaining capacity, and projected depletion timelines. Practical applications include organizational data warehouses with yearly privacy budgets allocated across business units and use cases, continuous analytics platforms with replenishing budgets supporting ongoing dashboards and reports, and research data enclaves with fixed budgets consumed through approved study queries, though challenges include difficulty selecting appropriate total budgets balancing privacy protection with analytical needs, complex composition accounting when queries interact non-trivially, and stakeholder communication explaining privacy budget concepts to non-technical decision-makers requiring translations of abstract mathematical constraints into business-relevant terms.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Social Impact
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -97,10 +92,6 @@ public: true
       "vc:label": "Politics, Law, Privacy"
     },
     {
-      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "vc:label": "Social contract and jobs"
-    },
-    {
       "@id": "urn:visionflow:owl:class:trust-and-safety",
       "vc:label": "Trust and Safety"
     },
@@ -148,19 +139,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
-      {"@id": "urn:ngm:class:social-impact-assessment-sia", "label": "Social Impact Assessment (SIA)"}
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:social-impact-assessment-sia",
+        "label": "Social Impact Assessment (SIA)"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"},
-      {"@id": "urn:ngm:class:digital-society", "label": "Digital Society"},
-      {"@id": "urn:ngm:class:societal-and-environmental-wellbeing", "label": "Societal and Environmental Wellbeing"}
+      {
+        "@id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      },
+      {
+        "@id": "urn:ngm:class:digital-society",
+        "label": "Digital Society"
+      },
+      {
+        "@id": "urn:ngm:class:societal-and-environmental-wellbeing",
+        "label": "Societal and Environmental Wellbeing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-society-harms", "label": "Digital Society Harms"}
+      {
+        "@id": "urn:ngm:class:digital-society-harms",
+        "label": "Digital Society Harms"
+      }
     ]
   },
   "quality": 0.7,
@@ -168,146 +180,6 @@ public: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:social-impact:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b3e46a26a787bb32560426cc03df4d93afd9efe0a3ed6f5d6feb7ebda5320bb6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethan Mollick]]",
-      "resolved": "urn:visionflow:linked:ethan-mollick",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[heiphetz2010training; @aldrich2005learning]]",
-      "resolved": "urn:visionflow:linked:heiphetz2010training-aldrich2005learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Nostr]]",
-      "resolved": "urn:visionflow:linked:nostr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[torok2017cascading]]",
-      "resolved": "urn:visionflow:linked:torok2017cascading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cyber Security and Military]]",
-      "resolved": "urn:visionflow:owl:class:cyber-security-and-military",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deepfakes and fraudulent content]]",
-      "resolved": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Technology Access Equity]]",
-      "resolved": "urn:visionflow:owl:class:equity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:owl:class:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Human Avatar Representation]]",
-      "resolved": "urn:visionflow:owl:class:humans-avatars-character",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Traditional Mass Media Institution]]",
-      "resolved": "urn:visionflow:owl:class:legacy-media",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Meta Platforms]]",
-      "resolved": "urn:visionflow:owl:class:meta-platforms",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse and Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Money]]",
-      "resolved": "urn:visionflow:owl:class:money",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Nostr protocol]]",
-      "resolved": "urn:visionflow:owl:class:nostr-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenAI Research Organisation]]",
-      "resolved": "urn:visionflow:owl:class:open-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Employment Social Contract Under Automation]]",
-      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trust and Safety]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Reality]]",
-      "resolved": "urn:visionflow:owl:class:virtual-reality",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -402,7 +274,7 @@ public: true
 		- This approach resonates with younger demographics who prefer voluntary tipping over subscription lock-ins.
 
 		- ### Technical Brief: Ditto and Nostr Integration
-			- **Addressing Nostr’s Community Diversity**: One of the primary criticisms of Nostr is that new users predominantly encounter discussions about Bitcoin, which may not appeal to everyone. While Bitcoin is crucial to Nostr’s success, for social media to thrive, it needs diverse communities like those found on mainstream platforms (e.g., Black Twitter, BookTok). Despite Nostr's potential, it is not effectively marketed to these varied communities, which could benefit from integrating with Bitcoin for monetisation.
+			- **Addressing Nostr’s Community Diversity**: One of the primary criticisms of Nostr is that new users predominantly encounter discussions about Bitcoin, which may not appeal to everyone. While Bitcoin is crucial to Nostr’s success, for social media to thrive, it needs diverse communities like those found on mainstream platforms (e.g., Black Twitter, BookTok). Despite Nostr's potential, it is not effectively marketed to these varied communities, which [private] benefit from integrating with Bitcoin for monetisation.
 			- **Past Experience with Spinster and Soapbox**: The success of Spinster, a feminist platform on the Fediverse, demonstrated the viability of niche social media communities. This success led to the development of Soapbox, a configurable platform that allows anyone to create a social media site tailored to specific communities. Soapbox has been used by a wide range of groups, from Christians to furries, and even by Truth Social. The goal is to attract every niche until the platform includes everyone.
 			- **Introduction of Ditto**: Ditto is a new Nostr-based community server designed to expand the Nostr network by attracting users through specific communities rather than through Nostr itself. Unlike traditional Nostr apps, where users discover Nostr first, Ditto draws users to communities, with Nostr as a secondary discovery. This approach mirrors the Fediverse's structure, with the advantage that Nostr users are not locked into a single server and can move freely between clients.
 			- **Domain and Community Focus**: Ditto servers emphasise independent websites and domain names. Each Ditto server starts with its domain, and users can request a NIP-05 identifier on that domain. The server has a local feed for users, creating a community-specific environment within the broader Nostr network. This model combines the benefits of community-specific engagement with the freedom and decentralisation of Nostr.
@@ -473,7 +345,7 @@ public: true
   - ## Elder Care
 		- [Where and who you are in VR has a real impact, study finds | Stanford News](https://news.stanford.edu/2022/12/14/vr-real-impact-study-finds/)
 		- [New Stanford University study reveals almost 60% of seniors felt less isolated socially after their #Virtual-Reality experience
-		- the opposite of the stereotype that #VR is an isolating technology! Additionally, 80% of them had a more positive attitude after the experience. The study involved interviewing residents of 17 senior communities who who could choose from virtual experiences such as parachuting, watching stage performances, or visiting places like Paris and Egypt. They used both HTC VIVE Flow and PICO XR headsets. The study was conducted in collaboration with Chris B., CEO of Mynd Immersive, and is part of a wider study to help lessen the impact of #dementia. I particularly enjoyed the final comment by senior resident Pete Audet at the end of this video who shared our wonder about how exciting the next 10 years of this technology is going to be 𣰊	 - Search (bing.com)](https://www.bing.com/search?q=New+Stanford+University+study+reveals+almost+60%25+of+seniors+felt+less+isolated+socially+after+their+%23VirtualReality+experience+-+the+opposite+of+the+stereotype+that+%23VR+is+an+isolating+technology!+Additionally%2C+80%25+of+them+had+a+more+positive+attitude+after+the+experience.+The+study+involved+interviewing+residents+of+17+senior+communities+who+who+could+choose+from+virtual+experiences+such+as+parachuting%2C+watching+stage+performances%2C+or+visiting+places+like+Paris+and+Egypt.+They+used+both+HTC+VIVE+Flow+and+PICO+XR+headsets.+The+study+was+conducted+in+collaboration+with+Chris+B.%2C+CEO+of+Mynd+Immersive%2C+and+is+part+of+a+wider+study+to+help+lessen+the+impact+of+%23dementia.+I+particularly+enjoyed+the+final+comment+by+senior+resident+Pete+Audet+at+the+end+of+this+video+who+shared+our+wonder+about+how+exciting+the+next+10+years+of+this+technology+is+going+to+be+%F0%9F%91%8F&cvid=3fc42482a4bb482d8ea881dc2efc2960&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHNTcxajBqNKgCALACAA&FORM=ANAB01&PC=U531)
+		- the opposite of the stereotype that #VR is an isolating technology! Additionally, 80% of them had a more positive attitude after the experience. The study involved interviewing residents of 17 senior communities who who [private] choose from virtual experiences such as parachuting, watching stage performances, or visiting places like Paris and Egypt. They used both HTC VIVE Flow and PICO XR headsets. The study was conducted in collaboration with Chris B., CEO of Mynd Immersive, and is part of a wider study to help lessen the impact of #dementia. I particularly enjoyed the final comment by senior resident Pete Audet at the end of this video who shared our wonder about how exciting the next 10 years of this technology is going to be 𣰊	 - Search (bing.com)](https://www.bing.com/search?q=New+Stanford+University+study+reveals+almost+60%25+of+seniors+felt+less+isolated+socially+after+their+%23VirtualReality+experience+-+the+opposite+of+the+stereotype+that+%23VR+is+an+isolating+technology!+Additionally%2C+80%25+of+them+had+a+more+positive+attitude+after+the+experience.+The+study+involved+interviewing+residents+of+17+senior+communities+who+who+[private]+choose+from+virtual+experiences+such+as+parachuting%2C+watching+stage+performances%2C+or+visiting+places+like+Paris+and+Egypt.+They+used+both+HTC+VIVE+Flow+and+PICO+XR+headsets.+The+study+was+conducted+in+collaboration+with+Chris+B.%2C+CEO+of+Mynd+Immersive%2C+and+is+part+of+a+wider+study+to+help+lessen+the+impact+of+%23dementia.+I+particularly+enjoyed+the+final+comment+by+senior+resident+Pete+Audet+at+the+end+of+this+video+who+shared+our+wonder+about+how+exciting+the+next+10+years+of+this+technology+is+going+to+be+%F0%9F%91%8F&cvid=3fc42482a4bb482d8ea881dc2efc2960&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhA0gEHNTcxajBqNKgCALACAA&FORM=ANAB01&PC=U531)
 		- [moore-et-al-2023-from-65-to-103-older-adults-experience-virtual-reality-differently-depending-on-their-age-evidence.pdf (stanford.edu)](https://vhil.stanford.edu/sites/g/files/sbiybj29011/files/media/file/moore-et-al-2023-from-65-to-103-older-adults-experience-virtual-reality-differently-depending-on-their-age-evidence.pdf) -
 
   - # Links for developing
@@ -486,7 +358,7 @@ public: true
 		- [The Impact of AI on Job Roles, Workforce, and Employment: What You Need to Know (innopharmaeducation.com)](https://www.innopharmaeducation.com/our-blog/the-impact-of-ai-on-job-roles-workforce-and-employment-what-you-need-to-know)
 		- [The Impact of Artificial Intelligence on Jobs: A Dual Perspective - SSLPost](https://www.sslpost.com/the-impact-of-artificial-intelligence-on-jobs-a-dual-perspective/)
 		- [AI Jobs Barometer | PwC](https://www.pwc.com/gx/en/issues/artificial-intelligence/ai-jobs-barometer.html)
-  - In a leaked recording, Amazon cloud chief tells employees that most developers could stop coding soon as AI takes over
+  - In a leaked recording, Amazon cloud chief tells employees that most developers [private] stop coding soon as AI takes over
 	  Eugene Kim Aug 20, 2024, 8:38 PM BST [[Employment Social Contract Under Automation]]
 		- That's according to Amazon Web Services' CEO, Matt Garman, who shared his thoughts on the topic during an internal fireside chat held in June, according to a recording of the meeting obtained by Business Insider.
 		- "If you go forward 24 months from now, or some amount of time — I can't exactly predict where it is — it's possible that most developers are not coding," said Garman, who became AWS's CEO in June.
@@ -507,7 +379,7 @@ public: true
 		- {{embed ((659a9229-e9c0-485f-b58a-601b68b7edd0))}}
 
   - ### Economic Disruption
-		- The widespread automation of jobs by ASI could lead to massive unemployment and exacerbate social and economic inequality.
+		- The widespread automation of jobs by ASI [private] lead to massive unemployment and exacerbate social and economic inequality.
 
 
   ## Source
@@ -530,7 +402,7 @@ public: true
   - Skill obsolescence and stranded workers
   - **Empirical Evidence**:
   - The impact of job losses will be uneven, with some industries and regions hit harder than others, exacerbating existing inequalities
-  - Low-skill and routine jobs are most at risk of automation, which could widen the gap between high- and low-income earners (Acemoglu & Restrepo, 2018)
+  - Low-skill and routine jobs are most at risk of automation, which [private] widen the gap between high- and low-income earners (Acemoglu & Restrepo, 2018)
   - Geographic and sectoral concentration amplifies regional economic disparities
 
   #### Job Transformation

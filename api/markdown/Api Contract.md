@@ -1,56 +1,125 @@
----
-public: true
----
-
-# Api Contract
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:api-contract", "@type":"Page", "title":"Api Contract", "vc:slug":"api-contract", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:api-contract",
-  "@type":"Class",
-  "label":"Api Contract",
-  "definition":"An API contract is the agreed, machine-readable specification of how a service may be called and what it will return, covering endpoints, request and response schemas, data types, status codes and error semantics. It functions as a formal agreement between the provider and consumers of an interface, allowing each side to develop and test independently against a shared definition. Expressed in formats such as OpenAPI or GraphQL schemas, the contract enables tooling for validation, mocking, code generation and compatibility checking across versions.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-schema","label":"Data Schema"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:schema","label":"Schema"},
-      {"@id":"urn:ngm:class:api-versioning","label":"API Versioning"}
-    ],
-    "partOf":[{"@id":"urn:ngm:class:api-design","label":"API Design"}],
-    "requires":[
-      {"@id":"urn:ngm:class:data-schema","label":"Data Schema"},
-      {"@id":"urn:ngm:class:schema","label":"Schema"}
-    ],
-    "implements":[
-      {"@id":"urn:ngm:class:openapi","label":"OpenAPI"},
-      {"@id":"urn:ngm:class:rest-api","label":"REST API"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:interoperability","label":"Interoperability"},
-      {"@id":"urn:ngm:class:backward-compatibility","label":"Backward Compatibility"},
-      {"@id":"urn:ngm:class:data-validation","label":"Data Validation"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:microservices","label":"Microservices"},
-      {"@id":"urn:ngm:class:api-gateway","label":"API Gateway"}
-    ],
-    "uses":[{"@id":"urn:ngm:class:semantic-versioning","label":"Semantic Versioning"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:openapi","label":"OpenAPI"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:graph-ql","label":"GraphQL"},
-      {"@id":"urn:ngm:class:api","label":"API"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:api-contract",
+  "@type": "Page",
+  "title": "Api Contract",
+  "vc:slug": "api-contract",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:api-contract",
+  "@type": "Class",
+  "label": "Api Contract",
+  "definition": "An API contract is the agreed, machine-readable specification of how a service may be called and what it will return, covering endpoints, request and response schemas, data types, status codes and error semantics. It functions as a formal agreement between the provider and consumers of an interface, allowing each side to develop and test independently against a shared definition. Expressed in formats such as OpenAPI or GraphQL schemas, the contract enables tooling for validation, mocking, code generation and compatibility checking across versions.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-schema",
+      "label": "Data Schema"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "@id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:semantic-versioning",
+        "label": "Semantic Versioning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - An API contract is the formal, machine-readable agreement between a service and its callers, defining endpoints, [[Schema]] for requests and responses, status codes and errors. It is a specialised [[Data Schema]] central to [[API Design]] and to enabling independent development on either side of an interface.
 - ### Overview

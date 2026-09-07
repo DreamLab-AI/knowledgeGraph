@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SensorFusion
----
-
-# Sensor Fusion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,7 +83,7 @@ aliases:
   "@id": "urn:ngm:class:sensor-fusion",
   "@type": "Class",
   "label": "Sensor Fusion",
-  "definition": "Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. It employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing noise, uncertainties, and hardware failures.",
+  "definition": "Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than [private] be obtained from any individual sensor. It employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing noise, uncertainties, and hardware failures.",
   "domain": "robotics",
   "maturity": "emerging",
   "subClassOf": {
@@ -240,89 +233,8 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sensor-fusion:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fc107277f6b237548b7b60269a26812f0eecd134a1be3e3f2ab4e0eb9769a179"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Localisation]]",
-      "resolved": "urn:visionflow:linked:localisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D and 4D]]",
-      "resolved": "urn:visionflow:owl:class:3-d-and-4-d",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Video]]",
-      "resolved": "urn:visionflow:owl:class:ai-video",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Intellectual Property Rights Framework]]",
-      "resolved": "urn:visionflow:owl:class:copyright",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Microsoft Copilot]]",
-      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Music and Audio]]",
-      "resolved": "urn:visionflow:owl:class:music-and-audio",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Object Detection]]",
-      "resolved": "urn:visionflow:owl:class:object-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Perception System]]",
-      "resolved": "urn:visionflow:owl:class:perception-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Artefact Update Cycle]]",
-      "resolved": "urn:visionflow:owl:class:update-cycle",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.
+  - Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than [private] be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.
 
 - ### Semantic Classification
   - owl-class:: robotics:SensorFusion
@@ -337,7 +249,7 @@ aliases:
   - uses:: [[Object Detection]]
 
 - ### Content
-  - Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than could be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.
+  - Sensor Fusion is the process of combining data from multiple sensors (camera, lidar, radar, GPS, IMU) to produce more accurate, reliable, and complete information than [private] be obtained from any individual sensor. Sensor fusion employs algorithms including Kalman filtering, particle filtering, and deep learning-based fusion to integrate complementary sensor modalities whilst managing sensor noise, uncertainties, and failures.
 
   ## Core Characteristics
 

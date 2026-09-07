@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Kelly Drecourt]]
-# Kelly Drecourt EdTech Practitioner
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,11 +42,20 @@ elevatedFrom:: [[Kelly Drecourt]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"}
+      {
+        "@id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "quality": 0.35,
@@ -63,26 +66,6 @@ elevatedFrom:: [[Kelly Drecourt]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:kelly-drecourt:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e290e390563b21eabf249899973e3b1d556794ed8a6f299e3e3b1ef0dfe75e80"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Kelly Drecourt is a collaborator and practitioner associated with teacher-support application development, operating at the intersection of educational technology and AI-assisted tools for classroom and curriculum support.

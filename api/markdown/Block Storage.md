@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Block Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,48 @@ public: true
   "definition": "Block Storage is an infrastructure storage paradigm that presents raw fixed-size blocks of data to a host operating system or hypervisor, which then manages formatting, file system placement, and I/O scheduling directly. Unlike object storage or file storage, block storage exposes a low-level disk abstraction enabling high-performance, low-latency random read/write operations suitable for databases, virtual machine boot disks, and transactional workloads. Cloud providers implement block storage as network-attached volumes (e.g., AWS EBS, GCP Persistent Disk) that can be dynamically provisioned and attached to compute instances.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:storage-systems", "label": "Storage Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:storage-systems",
+      "label": "Storage Systems"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"}
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:file-system", "label": "File System"}
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:database-system", "label": "Database System"},
-      {"@id": "urn:ngm:class:persistent-storage", "label": "Persistent Storage"}
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"},
-      {"@id": "urn:ngm:class:data-storage-layer", "label": "Data Storage Layer"}
+      {
+        "@id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      }
     ]
   },
   "quality": 0.8

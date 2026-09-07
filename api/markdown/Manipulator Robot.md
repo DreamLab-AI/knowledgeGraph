@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Manipulator Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,22 +58,58 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:parallel-robot", "label": "Parallel Robot"},
-      {"@id": "urn:ngm:class:scara-robot", "label": "SCARA Robot"},
-      {"@id": "urn:ngm:class:cylindrical-robot", "label": "Cylindrical Robot"},
-      {"@id": "urn:ngm:class:manipulator-arm", "label": "Manipulator Arm"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:parallel-robot",
+        "label": "Parallel Robot"
+      },
+      {
+        "@id": "urn:ngm:class:scara-robot",
+        "label": "SCARA Robot"
+      },
+      {
+        "@id": "urn:ngm:class:cylindrical-robot",
+        "label": "Cylindrical Robot"
+      },
+      {
+        "@id": "urn:ngm:class:manipulator-arm",
+        "label": "Manipulator Arm"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"}
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
     ]
   },
   "quality": 0.8,
@@ -89,37 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:manipulator-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8ef6fd27ac02832d352c8e04ad0cd809ce918faa030a17d8b436b8dae76b0b4c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robot]]",
-      "resolved": "urn:visionflow:owl:class:robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks.

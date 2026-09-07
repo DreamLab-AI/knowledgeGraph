@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Context Awareness System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -127,72 +122,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:context-awareness-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:78789e1509d8379e91b3f3393a7cdc1f602b4a5a2cd3a2cba50f5ad2f44e949c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Adaptive Services]]",
-      "resolved": "urn:visionflow:linked:adaptive-services",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Location Based Services]]",
-      "resolved": "urn:visionflow:linked:location-based-services",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Situational Awareness]]",
-      "resolved": "urn:visionflow:linked:situational-awareness",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Analytics]]",
-      "resolved": "urn:visionflow:owl:class:data-analytics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Intelligent Systems]]",
-      "resolved": "urn:visionflow:owl:class:intelligent-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[IoT Sensors]]",
-      "resolved": "urn:visionflow:owl:class:io-t-sensors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:network-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.

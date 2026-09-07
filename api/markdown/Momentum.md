@@ -1,58 +1,114 @@
----
-public: true
----
-
-# Momentum
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:momentum", "@type":"Page", "title":"Momentum", "vc:slug":"momentum", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:momentum",
+  "@type": "Page",
+  "title": "Momentum",
+  "vc:slug": "momentum",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:momentum",
-  "@type":"Class",
-  "label":"Momentum",
-  "definition":"Momentum is an optimisation technique that accelerates gradient descent by accumulating an exponentially weighted moving average of past gradients and using it to update parameters. By carrying velocity from prior steps, it damps oscillations across steep directions and speeds progress along consistent ones, improving convergence on ill-conditioned loss surfaces. Momentum underlies many modern optimisers, with Nesterov's variant and adaptive methods such as Adam building directly on its formulation.",
-  "domain":"machine-learning",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"}],
-    "hasPart":[
-      {"@id":"urn:ngm:class:gradient","label":"Gradient"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:momentum",
+  "@type": "Class",
+  "label": "Momentum",
+  "definition": "Momentum is an optimisation technique that accelerates gradient descent by accumulating an exponentially weighted moving average of past gradients and using it to update parameters. By carrying velocity from prior steps, it damps oscillations across steep directions and speeds progress along consistent ones, improving convergence on ill-conditioned loss surfaces. Momentum underlies many modern optimisers, with Nesterov's variant and adaptive methods such as Adam building directly on its formulation.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation-algorithm",
+      "label": "Optimization Algorithm"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:gradient","label":"Gradient"},
-      {"@id":"urn:ngm:class:learning-rate","label":"Learning Rate"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"},
-      {"@id":"urn:ngm:class:loss-function","label":"Loss Function"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      },
+      {
+        "@id": "urn:ngm:class:learning-rate",
+        "label": "Learning Rate"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:convergence","label":"Convergence"},
-      {"@id":"urn:ngm:class:neural-network-training","label":"Neural Network Training"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:stochastic-gradient-descent","label":"Stochastic Gradient Descent"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:adam-optimiser","label":"Adam Optimiser"},
-      {"@id":"urn:ngm:class:weight-decay","label":"Weight Decay"},
-      {"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:weight-decay",
+        "label": "Weight Decay"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

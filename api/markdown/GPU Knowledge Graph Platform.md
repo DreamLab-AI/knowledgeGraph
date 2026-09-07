@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[VisionFlow and Junkie Jarvis]]
-# GPU Knowledge Graph Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,18 +47,42 @@ elevatedFrom:: [[VisionFlow and Junkie Jarvis]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agent", "label": "Agent"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ]
   },
   "quality": 0.5,
@@ -75,32 +93,6 @@ elevatedFrom:: [[VisionFlow and Junkie Jarvis]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vision-flow-and-junkie-jarvis:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:756bf8a83980b969721be9117236c987bd8c53337890bed3a8ab5d2e62472a58"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[VisionFlow Client]]",
-      "resolved": "urn:visionflow:linked:vision-flow-client",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - VisionFlow is a GPU-accelerated, Rust-backed collaborative platform for real-time 3D knowledge graph visualisation and human-AI agent orchestration on private datasets, integrating Claude Flow MCP for spawning specialised agents. Junkie Jarvis refers to the integrated AI orchestration layer enabling multi-agent task delegation within the VisionFlow environment.

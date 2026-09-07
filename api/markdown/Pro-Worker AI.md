@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pro-Worker AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "pro-worker-ai",
   "title": "Pro-Worker AI",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AGI bet", "Incentive misalignment", "Labor economics", "New task creation"],
+  "vc:outboundWikilinks": [
+    "AGI bet",
+    "Incentive misalignment",
+    "Labor economics",
+    "New task creation"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:labor-economics", "label": "Labor Economics"}, {"@id": "urn:ngm:class:automation", "label": "Automation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:labor-economics",
+        "label": "Labor Economics"
+      },
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

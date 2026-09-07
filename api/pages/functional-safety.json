@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:functional-safety",
   "domain": "robotics",
-  "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure systems fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment, safety integrity levels, and redundancy in electrical, electronic, and programmable electronic systems.",
+  "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure systems fail safely and prevent hazardous failures that [private] harm humans, equipment, or processes through systematic risk assessment, safety integrity levels, and redundancy in electrical, electronic, and programmable electronic systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:safety-engineering",

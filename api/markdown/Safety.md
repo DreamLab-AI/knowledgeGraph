@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safety
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,10 +46,6 @@ public: true
     {
       "@id": "urn:visionflow:owl:class:safety-and-alignment",
       "vc:label": "Safety and alignment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "vc:label": "Social contract and jobs"
     },
     {
       "@id": "urn:visionflow:owl:class:solid",
@@ -216,97 +207,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:safety:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7d92a2aa5c693d48b959cad8cce0b7ff8912dd548dc698b781c376036527c9e7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hazard Analysis]]",
-      "resolved": "urn:visionflow:linked:hazard-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Risk Assessment (AI-0079)]]",
-      "resolved": "urn:visionflow:linked:risk-assessment-ai-0079",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Web]]",
-      "resolved": "urn:visionflow:owl:class:decentralised-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Safety and alignment]]",
-      "resolved": "urn:visionflow:owl:class:safety-and-alignment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Employment Social Contract Under Automation]]",
-      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Solid]]",
-      "resolved": "urn:visionflow:owl:class:solid",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trust and Safety]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[WebID Decentralised Identity URI]]",
-      "resolved": "urn:visionflow:owl:class:webid",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.
 - ### Semantic Classification
@@ -334,7 +234,7 @@ public: true
 		- ### Effective Accelerationists (EAcc) / AI Risk Sceptics
 			- Emphasise the potential benefits of rapid AI progress
 			- Tend to be more sceptical of AI safety concerns as blocking human advancement
-			- Argue that slowing down AI development could deny humanity massive benefits
+			- Argue that slowing down AI development [private] deny humanity massive benefits
 			- Associated with figures like "Beff Bezos" aka Guillaume Verdon, Daniel Dewey, Nick Land
 			- See accelerating AI as part of a broader techno-capitalist imperative to transcend human limitations
 
@@ -414,7 +314,7 @@ public: true
   - Both sides agree advanced AI will be transformative, but EAs worry more about downside risks
   - Many EAs argue AI safety is critical because the risks are so catastrophic; delaying AI is worth it
   - EAccs argue AI progress will be net positive and safety concerns are overblown; delays will cause harm
-  - EAs and EAccs both worry heavy-handed government AI regulation could be damaging, but EAccs are more universally skeptical of regulation
+  - EAs and EAccs both worry heavy-handed government AI regulation [private] be damaging, but EAccs are more universally skeptical of regulation
   - EAccs are more open to transformative AI radically changing society; EAs want to preserve human agency
   - Both sides agree AI development shouldn't be monopolised by a few corporations, but differ on solutions.
   - ## Jailbreaking is circumvention of LLM guardrails
@@ -436,7 +336,7 @@ public: true
   - Both sides agree advanced AI will be transformative, but EAs worry more about downside risks
   - Many EAs argue AI safety is critical because the risks are so catastrophic; delaying AI is worth it
   - EAccs argue AI progress will be net positive and safety concerns are overblown; delays will cause harm
-  - EAs and EAccs both worry heavy-handed government AI regulation could be damaging, but EAccs are more universally skeptical of regulation
+  - EAs and EAccs both worry heavy-handed government AI regulation [private] be damaging, but EAccs are more universally skeptical of regulation
   - EAccs are more open to transformative AI radically changing society; EAs want to preserve human agency
   - Both sides agree AI development shouldn't be monopolised by a few corporations, but differ on solutions.
   - ## Jailbreaking is circumvention of LLM guardrails

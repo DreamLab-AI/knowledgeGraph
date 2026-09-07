@@ -1,8 +1,3 @@
----
-public: true
----
-
-# XR Testing Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,17 +58,38 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:tracking-technology", "label": "Tracking Technology"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {
+        "@id": "urn:ngm:class:tracking-technology",
+        "label": "Tracking Technology"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:user-research", "label": "User Research"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
     ]
   },
   "quality": 0.5,
@@ -84,37 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:xr-testing-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7ed3bee47af05bac3ab36517c3f1b91844e448762dab2742ea35769b2ba7a67e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Testing Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:testing-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The hardware, software, and methodological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.

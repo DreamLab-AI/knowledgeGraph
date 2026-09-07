@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Newcastle AI & Health Innovation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,31 +59,76 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"},
-      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
-      {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"}
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:healthcare-technology", "label": "Healthcare Technology"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:healthcare-analytics", "label": "Healthcare Analytics"}
+      {
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-analytics",
+        "label": "Healthcare Analytics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-applications", "label": "AI Applications"},
-      {"@id": "urn:ngm:class:healthcare-records", "label": "Healthcare Records"},
-      {"@id": "urn:ngm:class:clinical-trials", "label": "Clinical Trials"}
+      {
+        "@id": "urn:ngm:class:ai-applications",
+        "label": "AI Applications"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-trials",
+        "label": "Clinical Trials"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"},
-      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:north-england-innovation-corridor",
+        "label": "North England Innovation Corridor"
+      },
+      {
+        "@id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"}
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      }
     ]
   },
   "provenance": {
@@ -98,42 +138,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:newcastle-ai-and-health-innovation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8e404f2a3ca1773dc403ac92a17a6c200c9c5c455fe0177aedaafbaa7b223bc0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Northern Powerhouse]]",
-      "resolved": "urn:visionflow:linked:northern-powerhouse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[North England Innovation Corridor]]",
-      "resolved": "urn:visionflow:owl:class:north-england-innovation-corridor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[UK Tech Ecosystem]]",
-      "resolved": "urn:visionflow:owl:class:uk-tech-ecosystem",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Newcastle AI and Health Innovation is the regional technology ecosystem in North East England centred on the application of artificial intelligence to healthcare, life sciences, and digital health, anchored by Newcastle University, Northumbria University, and innovation institutions including the National Innovation Centre for Data and the National Innovation Centre for Ageing. The ecosystem combines academic research, NHS partnerships, and private sector investment to accelerate AI-driven health technology from discovery through to clinical and commercial deployment.

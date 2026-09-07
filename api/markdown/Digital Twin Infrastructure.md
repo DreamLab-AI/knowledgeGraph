@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Twin Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-twin-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7daa677f54b38f55898539c634b373ac50bcfab6aa6fb8fc349e5868cf1a0aea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[5G Connectivity]]",
-      "resolved": "urn:visionflow:linked:5-g-connectivity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cloud Platform]]",
-      "resolved": "urn:visionflow:linked:cloud-platform",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Edge Analytics]]",
-      "resolved": "urn:visionflow:linked:edge-analytics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scalable Deployment]]",
-      "resolved": "urn:visionflow:linked:scalable-deployment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computing Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:computing-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:owl:class:edge-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Processing]]",
-      "resolved": "urn:visionflow:owl:class:real-time-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual counterparts.

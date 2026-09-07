@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Message Reactions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,13 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"}],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:instant-messaging", "label": "Instant Messaging"},
-      {"@id": "urn:ngm:class:read-receipts", "label": "Read Receipts"}
+      {
+        "@id": "urn:ngm:class:instant-messaging",
+        "label": "Instant Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:read-receipts",
+        "label": "Read Receipts"
+      }
     ]
   },
   "quality": 0.7

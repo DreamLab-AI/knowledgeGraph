@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Market Surveillance Authority
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"}
+      {
+        "@id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:notified-body", "label": "Notified Body"},
-      {"@id": "urn:ngm:class:provider", "label": "Provider"}
+      {
+        "@id": "urn:ngm:class:notified-body",
+        "label": "Notified Body"
+      },
+      {
+        "@id": "urn:ngm:class:provider",
+        "label": "Provider"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:market-surveillance-authority:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:48100c29a1933268c0ef1d1f694c87ef93e7c36a6f54c0c56d57faff5923da96"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - National authority responsible for carrying out market surveillance activities on AI systems, including inspections, testing, enforcement, and ensuring compliance with EU AI Act requirements within a Member State.

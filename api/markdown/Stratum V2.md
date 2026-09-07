@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stratum V2
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "Stratum V2 is the second-generation protocol for communication between Bitcoin miners and mining pools, redesigned to improve efficiency, security, and decentralisation over the original Stratum. Its headline feature is Job Declaration, which lets individual miners construct their own block templates and choose which transactions to include rather than blindly mining the pool operator's template, redistributing transaction-selection power. It also adds end-to-end encryption, binary framing for lower bandwidth, and reduced susceptibility to man-in-the-middle hashrate hijacking.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin Proof-of-Work Protocol"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      }
     ]
   },
   "quality": 0.8

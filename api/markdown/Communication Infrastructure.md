@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Communication Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "The physical and logical substrate — including fibre, wireless networks, data centres, protocols, and switching equipment — that enables the transmission of information between nodes in a networked system. It underpins digital services by providing reliable, low-latency, and high-bandwidth connectivity at scale, from local area networks to global internet backbones.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:communication-tools", "label": "Communication Tools"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:communication-tools",
+        "label": "Communication Tools"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:5-g-network", "label": "5G Network"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-communication", "label": "Network Communication"},
-      {"@id": "urn:ngm:class:bandwidth-optimization", "label": "Bandwidth Optimization"}
+      {
+        "@id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      }
     ]
   },
   "quality": 0.8

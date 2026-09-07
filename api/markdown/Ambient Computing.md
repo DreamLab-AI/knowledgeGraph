@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ambient Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,4 +169,3 @@ public: true
   - The ecosystem spans consumer smart home platforms (Apple HomeKit, Google Home, Amazon Alexa ecosystem), enterprise smart building infrastructure, industrial [[Industrial IoT]] deployments, and healthcare monitoring systems. Platform interoperability has historically been poor, motivating open standards efforts such as Matter (formerly Project CHIP), which unifies device discovery and control across major platforms. Edge AI chipmakers including Arm, Espressif, and Nordic Semiconductor provide the hardware substrate.
 
   - By 2024–2025, ambient computing has achieved significant consumer penetration through smart speakers, wearable devices, and connected home appliances, but the vision of seamless, context-aware environmental intelligence remains partially realised. Advances in [[Spatial Computing Paradigm]] hardware—particularly Apple Vision Pro and successor devices—have revived interest in ambient interfaces layered onto physical environments. Privacy regulation, interoperability gaps, and the challenge of reliably inferring intent from ambient signals continue to constrain the paradigm's full realisation.
-

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Heuristic Function
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

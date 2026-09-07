@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Infrastructure___Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -73,37 +68,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-infrastructure-governance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8f0c34ce9034bb924f5e50d6eaef5d37500190a7efe78831e4bbc6c78069df8d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Resilience Metric]]",
-      "resolved": "urn:visionflow:owl:class:resilience-metric",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ETSI governance framework and mechanisms overseeing infrastructure domains through trust domain separation, policy enforcement, and security management implementing local policy control across distributed network components. Infrastructure governance integrates autonomic management via ETSI GANA, cloud orchestration frameworks (TC-MANO) enabling declarative management, and trust domain governance standards (ETSI TS 104 007) supporting policy-driven control of network flows, lifecycle management, and domain separation ensuring security and regulatory compliance. Applications span telecommunications, cloud-native functions, and metaverse platforms with emerging focus on AI-driven governance models, 6G integration, and multi-domain trust frameworks.

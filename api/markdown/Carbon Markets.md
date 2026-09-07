@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - CarbonMarkets
----
-
-# Carbon Markets
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,7 +150,7 @@ aliases:
 
 - ### Overview
   - Carbon markets are the primary market-based policy instrument for pricing [[Greenhouse Gas Emissions]] and redirecting capital towards [[Emissions Reduction]] activities. By internalising the cost of carbon into business decision-making, they create incentives to decarbonise at least cost across an economy, complementing regulatory standards and [[Carbon Tax|carbon taxes]].
-  - The theoretical foundation derives from Ronald Coase's 1960 work on externalities and was operationalised in the US EPA's Acid Rain Programme (1990), which demonstrated that tradeable SO₂ allowances could achieve pollution targets at significantly lower economic cost than uniform command-and-control regulations.
+  - The theoretical foundation derives from Ronald Coase's 1960 work on externalities and was operationalised in the US EPA's Acid Rain Programme (1990), which demonstrated that tradeable SO₂ allowances [private] achieve pollution targets at significantly lower economic cost than uniform command-and-control regulations.
   - Two principal market types exist:
     - **Compliance markets**: legally mandatory schemes where regulated emitters must balance their emissions with allowances or verified credits. Examples include the [[EU Emissions Trading System]] (world's largest, covering power, industry, and aviation), California Cap-and-Trade, the UK ETS, and emerging schemes in China, South Korea, and Canada.
     - **Voluntary carbon markets**: optional markets where corporates, financial institutions, and individuals purchase credits to meet self-imposed climate targets or as a supplement to compliance obligations. Governed by private standards rather than statute.
@@ -238,7 +231,7 @@ aliases:
   - **Permanence risk**: forestry credits are vulnerable to reversal through wildfires, drought, or land-use change; buffer pools and insurance mechanisms partially address this.
   - **Carbon leakage**: emissions may shift to jurisdictions without carbon pricing, undermining aggregate environmental effectiveness. [[Carbon Border Adjustment Mechanism]] is a policy response.
   - **Price volatility**: ETS prices fluctuate significantly in response to energy price shocks, policy uncertainty, and macroeconomic conditions, complicating long-term decarbonisation investment decisions.
-  - **Double counting**: without robust corresponding adjustment rules and registry linkage, the same tonne of reduction could be claimed by both buyer and host country towards their NDC.
+  - **Double counting**: without robust corresponding adjustment rules and registry linkage, the same tonne of reduction [private] be claimed by both buyer and host country towards their NDC.
   - **Corporate greenwashing**: critics argue that offset purchasing delays direct emissions reduction; the [[Science Based Targets initiative]] and VCMI seek to restrict offsets to residual and hard-to-abate emissions.
   - **Market fragmentation**: multiple competing standards, registries, and jurisdictions create interoperability challenges and complicate cross-border trading under Article 6.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Neural Networking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,19 +46,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:networking-technology", "label": "Networking Technology"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:networking-technology",
+        "label": "Networking Technology"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
+      {
+        "@id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:real-time", "label": "Real Time"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ]
   },
   "provenance": {
@@ -73,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:neural-networking:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a719adb550ce64f423e3b1f9f01b4fde70005ddb2bf65e86d2eca38694cb3ec0"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The application of artificial neural network architectures to optimise network routing, traffic prediction, and resource allocation in communication infrastructure. Neural networking extends classical networking by replacing heuristic control planes with learned, data-driven decision policies, improving adaptability under variable load and topology conditions.

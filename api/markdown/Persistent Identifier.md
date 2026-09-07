@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Persistent Identifier
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "A persistent identifier (PID) is a long-lasting, globally unique reference to a digital object that remains stable even as the object's location or custodian changes. PIDs such as DOIs, Handles, and ARKs are resolved through a managed indirection service that maps the identifier to current metadata and access endpoints. They are foundational to citation, provenance, and interoperability in scholarly and digital-object infrastructure.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-objects", "label": "Digital Objects"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-objects",
+        "label": "Digital Objects"
+      }
+    ]
   },
   "quality": 0.72
 }

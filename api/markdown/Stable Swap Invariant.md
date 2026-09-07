@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stable Swap Invariant
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The stable swap invariant is an automated market maker pricing formula, introduced by Curve Finance, that blends the constant-sum and constant-product curves to provide very low slippage for trades between assets expected to hold near-equal value, such as stablecoins or pegged tokens. Near the balanced point it behaves like a constant-sum market for tight pricing, while curving toward constant-product behaviour as reserves diverge to preserve liquidity. It is the core mechanism enabling efficient stablecoin exchange on-chain.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"},
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"}
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
     ]
   },
   "quality": 0.72

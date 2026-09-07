@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Addressing Scheme
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,14 +20,28 @@ public: true
   "definition": "An addressing scheme is a systematic convention for assigning, structuring, and resolving identifiers that locate resources, nodes, or content within a namespace. Schemes range from hierarchical and human-readable forms such as IP addresses and URLs to flat cryptographic forms such as content hashes and public-key fingerprints. The defining properties of an addressing scheme are its uniqueness guarantees, its resolution mechanism, and whether addresses are location-based, identity-based, or content-derived. Addressing schemes underpin routing, naming, and reference integrity across networked and decentralised systems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technique", "label": "Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technique",
+      "label": "Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-identifier", "label": "Content Identifier"}
+      {
+        "@id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      }
     ]
   },
   "quality": 0.75

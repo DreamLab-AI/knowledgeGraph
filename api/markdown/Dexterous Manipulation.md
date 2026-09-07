@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dexterous Manipulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,4 +165,3 @@ public: true
   - The ecosystem includes robot hand hardware (Allegro Hand, Shadow Hand, Wonik Robotics), tactile sensor platforms, simulation environments (MuJoCo, Isaac Gym, Genesis), and large-scale teleoperation data-collection pipelines (ALOHA, UMI) that enable imitation learning from human demonstrations. Foundation models for robotics, pre-trained on internet-scale robot data, are beginning to provide general manipulation priors that can be fine-tuned for dexterous tasks with limited demonstrations.
 
   - In 2024-2025, humanoid robot companies (Figure, Agility, 1X, Boston Dynamics) are treating dexterous manipulation as the critical unsolved problem for commercial viability in logistics and manufacturing. Hardware advances include soft robotic fingers, neuromorphic tactile skins, and tendon-actuated hands approaching human finger speed and force range. Data-driven approaches using large manipulation datasets and vision-language-action models (RT-2, OpenVLA) are enabling generalisation to novel objects, though reliable dexterous performance in fully unstructured human environments remains an open research challenge.
-

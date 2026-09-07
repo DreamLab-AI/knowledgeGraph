@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Non-Fungible Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,52 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:non-fungible-token:5cc16067386f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cda08ea4dba68c83f2253c16dea57c26d6caf8315ceeec4a7086adae783cf86e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ERC-721]]",
-      "resolved": "urn:visionflow:linked:erc-721",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NFT Standard]]",
-      "resolved": "urn:visionflow:linked:nft-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NFT Marketplace]]",
-      "resolved": "urn:visionflow:linked:nft-marketplace",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token]]",
-      "resolved": "urn:visionflow:linked:token",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A token standard in which each unit is distinct and not interchangeable, used to represent ownership of a specific digital or referenced physical item on a ledger.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Local-First Software
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Local-first software is a design philosophy in which the primary copy of a user's data lives on their own device, with the network used for optional synchronisation rather than as a dependency. It prioritises offline availability, low latency, data ownership, and longevity while still supporting real-time collaboration via conflict-free merging. The approach typically relies on CRDTs to reconcile concurrent edits across devices without a central authority.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:crdt", "label": "CRDT"}, {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
   },
   "quality": 0.72
 }

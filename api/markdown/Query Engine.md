@@ -1,58 +1,109 @@
----
-public: true
----
-
-# Query Engine
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:query-engine", "@type":"Page", "title":"Query Engine", "vc:slug":"query-engine", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:query-engine",
-  "@type":"Class",
-  "label":"Query Engine",
-  "definition":"A query engine is the software component that parses, plans, optimises, and executes declarative queries against one or more data stores, returning result sets to callers. It transforms a high-level query into an efficient physical execution plan using statistics, indexes, and cost models, and may operate over a single database, a data warehouse, or federated sources, forming the computational core of database and analytics systems.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:database-system","label":"Database System"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:indexing","label":"Indexing"}
-    ],
-    "requires":[
-      {"@id":"urn:ngm:class:indexing","label":"Indexing"}
-    ],
-    "uses":[
-      {"@id":"urn:ngm:class:sql","label":"SQL"},
-      {"@id":"urn:ngm:class:columnar-storage","label":"Columnar Storage"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:full-text-search","label":"Full-Text Search"},
-      {"@id":"urn:ngm:class:olap","label":"OLAP"}
-    ],
-    "partOf":[
-      {"@id":"urn:ngm:class:database-system","label":"Database System"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:data-warehouse","label":"Data Warehouse"}
-    ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:data-management","label":"Data Management"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:olap","label":"OLAP"},
-      {"@id":"urn:ngm:class:columnar-storage","label":"Columnar Storage"}
-    ],
-    "implements":[
-      {"@id":"urn:ngm:class:sql","label":"SQL"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:query-engine",
+  "@type": "Page",
+  "title": "Query Engine",
+  "vc:slug": "query-engine",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:query-engine",
+  "@type": "Class",
+  "label": "Query Engine",
+  "definition": "A query engine is the software component that parses, plans, optimises, and executes declarative queries against one or more data stores, returning result sets to callers. It transforms a high-level query into an efficient physical execution plan using statistics, indexes, and cost models, and may operate over a single database, a data warehouse, or federated sources, forming the computational core of database and analytics systems.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:database-system",
+      "label": "Database System"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "@id": "urn:ngm:class:columnar-storage",
+        "label": "Columnar Storage"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:full-text-search",
+        "label": "Full-Text Search"
+      },
+      {
+        "@id": "urn:ngm:class:olap",
+        "label": "OLAP"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:olap",
+        "label": "OLAP"
+      },
+      {
+        "@id": "urn:ngm:class:columnar-storage",
+        "label": "Columnar Storage"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - A [[Query Engine]] parses, plans, optimises, and executes declarative queries against data stores. It uses [[SQL]] and [[Columnar Storage]], relies on [[Indexing]], and is the computational core of a [[Database System]].
 - ### Overview

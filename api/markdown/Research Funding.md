@@ -1,40 +1,116 @@
----
-public: true
----
-
-# Research Funding
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:research-funding", "@type":"Page", "title":"Research Funding", "vc:slug":"research-funding", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:research-funding",
+  "@type": "Page",
+  "title": "Research Funding",
+  "vc:slug": "research-funding",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:research-funding",
-  "@type":"Class",
-  "label":"Research Funding",
-  "definition":"Research funding is the provision of financial resources to support scientific, scholarly and technological investigation, supplied through mechanisms such as competitive grants, institutional block funding, philanthropy and industry sponsorship. It typically flows through proposal submission, peer review and award management, and shapes which questions are pursued and by whom. Research funding is a primary determinant of the direction, scale and independence of academic research and innovation.",
-  "domain":"ai",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:academic-research","label":"Academic Research"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:academic-research","label":"Academic Research"}],
-    "hasPart":[{"@id":"urn:ngm:class:peer-review","label":"Peer Review"}],
-    "requires":[{"@id":"urn:ngm:class:peer-review","label":"Peer Review"}],
-    "enables":[{"@id":"urn:ngm:class:academic-research","label":"Academic Research"}],
-    "uses":[{"@id":"urn:ngm:class:peer-review","label":"Peer Review"}],
-    "dependsOn":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "supports":[{"@id":"urn:ngm:class:innovation","label":"Innovation"}],
-    "implements":[{"@id":"urn:ngm:class:finance","label":"Finance"}],
-    "relatedTo":[{"@id":"urn:ngm:class:innovation","label":"Innovation"},{"@id":"urn:ngm:class:peer-review","label":"Peer Review"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:innovation","label":"Innovation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:finance","label":"Finance"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:governance","label":"Governance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:research-funding",
+  "@type": "Class",
+  "label": "Research Funding",
+  "definition": "Research funding is the provision of financial resources to support scientific, scholarly and technological investigation, supplied through mechanisms such as competitive grants, institutional block funding, philanthropy and industry sponsorship. It typically flows through proposal submission, peer review and award management, and shapes which questions are pursued and by whom. Research funding is a primary determinant of the direction, scale and independence of academic research and innovation.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:academic-research",
+      "label": "Academic Research"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

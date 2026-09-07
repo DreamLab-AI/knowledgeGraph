@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inclusive Xr Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inclusive-xr-design:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:31997c695cb4065db8cdd01ac199327629920c8a5bd7dff71c9cf7a8e6f8bf7b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Universal XR Access]]",
-      "resolved": "urn:visionflow:linked:universal-xr-access",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accessible Design]]",
-      "resolved": "urn:visionflow:owl:class:accessible-design",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Design methodologies for creating accessible VR, AR, and metaverse experiences that accommodate diverse user abilities, including those with visual, auditory, motor, and cognitive disabilities, ensuring equitable access through alternative input methods, adaptive interfaces, and assistive technology integration.

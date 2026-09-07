@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Disclosure Requirements
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Disclosure requirements are legal or regulatory obligations to reveal specified information to consumers, regulators, or the public so they can make informed decisions. In technology governance they cover material facts such as the use of automated decision-making, data practices, risks, and conflicts of interest. They underpin transparency regimes and consumer protection by reducing information asymmetry between providers and users.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:algorithmic-transparency-index", "label": "Algorithmic Transparency Index"},
-      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
     ]
   },
   "quality": 0.72

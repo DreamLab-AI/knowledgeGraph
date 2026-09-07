@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Audio Spatialization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -223,72 +218,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:audio-spatialization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2e6c3e5023e5ae312ec715d0b4f64de216f215f0a9029eb930d27f1c14f5347c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Sound Perception]]",
-      "resolved": "urn:visionflow:linked:3-d-sound-perception",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Binaural Rendering]]",
-      "resolved": "urn:visionflow:linked:binaural-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Head Tracking]]",
-      "resolved": "urn:visionflow:linked:head-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[HRTF Filters]]",
-      "resolved": "urn:visionflow:linked:hrtf-filters",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Immersive Audio]]",
-      "resolved": "urn:visionflow:linked:immersive-audio",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sound Localization]]",
-      "resolved": "urn:visionflow:linked:sound-localization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Spatial Audio Technology]]",
-      "resolved": "urn:visionflow:linked:spatial-audio-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Audio Spatialization is the technique of positioning sounds in three-dimensional space using Head-Related Transfer Functions (HRTFs), binaural processing, and ambisonics to create realistic 3D audio experiences that respond to listener position and head movement in virtual reality and immersive applications.

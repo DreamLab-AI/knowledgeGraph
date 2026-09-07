@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Complex Adaptive Systems
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,51 +8,186 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:complexity-science", "vc:label": "Complexity Science" },
-    { "@id": "urn:visionflow:linked:emergence", "vc:label": "Emergence" },
-    { "@id": "urn:visionflow:linked:systems-theory", "vc:label": "Systems Theory" },
-    { "@id": "urn:visionflow:linked:cybernetics", "vc:label": "Cybernetics" },
-    { "@id": "urn:visionflow:linked:chaos-theory", "vc:label": "Chaos Theory" },
-    { "@id": "urn:visionflow:linked:feedback-loop", "vc:label": "Feedback Loop" },
-    { "@id": "urn:visionflow:linked:self-organisation", "vc:label": "Self-Organisation" },
-    { "@id": "urn:visionflow:linked:non-linear-dynamics", "vc:label": "Non-Linear Dynamics" },
-    { "@id": "urn:visionflow:linked:agent-based-modelling", "vc:label": "Agent-Based Modelling" },
-    { "@id": "urn:visionflow:linked:agent-based-models", "vc:label": "Agent-Based Models" },
-    { "@id": "urn:visionflow:linked:swarm-intelligence", "vc:label": "Swarm Intelligence" },
-    { "@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems" },
-    { "@id": "urn:visionflow:linked:control-theory", "vc:label": "Control Theory" },
-    { "@id": "urn:visionflow:linked:network-science", "vc:label": "Network Science" },
-    { "@id": "urn:visionflow:linked:network-theory", "vc:label": "Network Theory" },
-    { "@id": "urn:visionflow:linked:phase-transition", "vc:label": "Phase Transition" },
-    { "@id": "urn:visionflow:linked:self-organised-criticality", "vc:label": "Self-Organised Criticality" },
-    { "@id": "urn:visionflow:linked:dynamical-systems-theory", "vc:label": "Dynamical Systems Theory" },
-    { "@id": "urn:visionflow:linked:statistical-mechanics", "vc:label": "Statistical Mechanics" },
-    { "@id": "urn:visionflow:linked:information-theory", "vc:label": "Information Theory" },
-    { "@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning" },
-    { "@id": "urn:visionflow:linked:evolutionary-computation", "vc:label": "Evolutionary Computation" },
-    { "@id": "urn:visionflow:linked:genetic-algorithm", "vc:label": "Genetic Algorithm" },
-    { "@id": "urn:visionflow:linked:collective-intelligence", "vc:label": "Collective Intelligence" },
-    { "@id": "urn:visionflow:linked:collective-behaviour", "vc:label": "Collective Behaviour" },
-    { "@id": "urn:visionflow:linked:resilience", "vc:label": "Resilience" },
-    { "@id": "urn:visionflow:linked:adaptation", "vc:label": "Adaptation" },
-    { "@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent" },
-    { "@id": "urn:visionflow:linked:co-evolution", "vc:label": "Co-Evolution" },
-    { "@id": "urn:visionflow:linked:path-dependence", "vc:label": "Path Dependence" },
-    { "@id": "urn:visionflow:linked:scale-free-network", "vc:label": "Scale-Free Network" },
-    { "@id": "urn:visionflow:linked:power-law-distributions", "vc:label": "Power-Law Distributions" },
-    { "@id": "urn:visionflow:linked:cellular-automata", "vc:label": "Cellular Automata" },
-    { "@id": "urn:visionflow:linked:stigmergy", "vc:label": "Stigmergy" },
-    { "@id": "urn:visionflow:linked:artificial-life", "vc:label": "Artificial Life" },
-    { "@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin" },
-    { "@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models" },
-    { "@id": "urn:visionflow:linked:multi-agent-reinforcement-learning", "vc:label": "Multi-Agent Reinforcement Learning" },
-    { "@id": "urn:visionflow:linked:game-theory", "vc:label": "Game Theory" },
-    { "@id": "urn:visionflow:linked:epidemiology", "vc:label": "Epidemiology" },
-    { "@id": "urn:visionflow:linked:ecosystems", "vc:label": "Ecosystems" },
-    { "@id": "urn:visionflow:linked:urban-computing", "vc:label": "Urban Computing" },
-    { "@id": "urn:visionflow:linked:policy-simulation", "vc:label": "Policy Simulation" },
-    { "@id": "urn:visionflow:linked:santa-fe-institute", "vc:label": "Santa Fe Institute" },
-    { "@id": "urn:visionflow:linked:linear-systems", "vc:label": "Linear Systems" }
+    {
+      "@id": "urn:visionflow:linked:complexity-science",
+      "vc:label": "Complexity Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergence",
+      "vc:label": "Emergence"
+    },
+    {
+      "@id": "urn:visionflow:linked:systems-theory",
+      "vc:label": "Systems Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:cybernetics",
+      "vc:label": "Cybernetics"
+    },
+    {
+      "@id": "urn:visionflow:linked:chaos-theory",
+      "vc:label": "Chaos Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedback-loop",
+      "vc:label": "Feedback Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-organisation",
+      "vc:label": "Self-Organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-linear-dynamics",
+      "vc:label": "Non-Linear Dynamics"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-based-modelling",
+      "vc:label": "Agent-Based Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-based-models",
+      "vc:label": "Agent-Based Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:swarm-intelligence",
+      "vc:label": "Swarm Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-theory",
+      "vc:label": "Control Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-science",
+      "vc:label": "Network Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-theory",
+      "vc:label": "Network Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:phase-transition",
+      "vc:label": "Phase Transition"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-organised-criticality",
+      "vc:label": "Self-Organised Criticality"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamical-systems-theory",
+      "vc:label": "Dynamical Systems Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-mechanics",
+      "vc:label": "Statistical Mechanics"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-computation",
+      "vc:label": "Evolutionary Computation"
+    },
+    {
+      "@id": "urn:visionflow:linked:genetic-algorithm",
+      "vc:label": "Genetic Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:collective-intelligence",
+      "vc:label": "Collective Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:collective-behaviour",
+      "vc:label": "Collective Behaviour"
+    },
+    {
+      "@id": "urn:visionflow:linked:resilience",
+      "vc:label": "Resilience"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptation",
+      "vc:label": "Adaptation"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:co-evolution",
+      "vc:label": "Co-Evolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:path-dependence",
+      "vc:label": "Path Dependence"
+    },
+    {
+      "@id": "urn:visionflow:linked:scale-free-network",
+      "vc:label": "Scale-Free Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:power-law-distributions",
+      "vc:label": "Power-Law Distributions"
+    },
+    {
+      "@id": "urn:visionflow:linked:cellular-automata",
+      "vc:label": "Cellular Automata"
+    },
+    {
+      "@id": "urn:visionflow:linked:stigmergy",
+      "vc:label": "Stigmergy"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-life",
+      "vc:label": "Artificial Life"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-reinforcement-learning",
+      "vc:label": "Multi-Agent Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-theory",
+      "vc:label": "Game Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:epidemiology",
+      "vc:label": "Epidemiology"
+    },
+    {
+      "@id": "urn:visionflow:linked:ecosystems",
+      "vc:label": "Ecosystems"
+    },
+    {
+      "@id": "urn:visionflow:linked:urban-computing",
+      "vc:label": "Urban Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-simulation",
+      "vc:label": "Policy Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:santa-fe-institute",
+      "vc:label": "Santa Fe Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-systems",
+      "vc:label": "Linear Systems"
+    }
   ]
 }
 ```
@@ -80,129 +209,166 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:emergence", "label": "Emergence" },
-      { "@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop" },
-      { "@id": "urn:ngm:class:self-organisation", "label": "Self-Organisation" },
-      { "@id": "urn:ngm:class:adaptation", "label": "Adaptation" },
-      { "@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent" },
-      { "@id": "urn:ngm:class:non-linear-dynamics", "label": "Non-Linear Dynamics" }
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:adaptation",
+        "label": "Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:non-linear-dynamics",
+        "label": "Non-Linear Dynamics"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:systems-theory", "label": "Systems Theory" },
-      { "@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop" },
-      { "@id": "urn:ngm:class:information-theory", "label": "Information Theory" }
+      {
+        "@id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:emergence", "label": "Emergence" },
-      { "@id": "urn:ngm:class:resilience", "label": "Resilience" },
-      { "@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence" },
-      { "@id": "urn:ngm:class:collective-behaviour", "label": "Collective Behaviour" },
-      { "@id": "urn:ngm:class:self-organised-criticality", "label": "Self-Organised Criticality" }
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:collective-behaviour",
+        "label": "Collective Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:self-organised-criticality",
+        "label": "Self-Organised Criticality"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:agent-based-modelling", "label": "Agent-Based Modelling" },
-      { "@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence" }
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop" },
-      { "@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning" },
-      { "@id": "urn:ngm:class:evolutionary-computation", "label": "Evolutionary Computation" },
-      { "@id": "urn:ngm:class:cellular-automata", "label": "Cellular Automata" }
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-computation",
+        "label": "Evolutionary Computation"
+      },
+      {
+        "@id": "urn:ngm:class:cellular-automata",
+        "label": "Cellular Automata"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:cybernetics", "label": "Cybernetics" },
-      { "@id": "urn:ngm:class:systems-theory", "label": "Systems Theory" },
-      { "@id": "urn:ngm:class:chaos-theory", "label": "Chaos Theory" },
-      { "@id": "urn:ngm:class:dynamical-systems-theory", "label": "Dynamical Systems Theory" },
-      { "@id": "urn:ngm:class:game-theory", "label": "Game Theory" },
-      { "@id": "urn:ngm:class:statistical-mechanics", "label": "Statistical Mechanics" },
-      { "@id": "urn:ngm:class:network-science", "label": "Network Science" }
+      {
+        "@id": "urn:ngm:class:cybernetics",
+        "label": "Cybernetics"
+      },
+      {
+        "@id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      },
+      {
+        "@id": "urn:ngm:class:dynamical-systems-theory",
+        "label": "Dynamical Systems Theory"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-mechanics",
+        "label": "Statistical Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:network-science",
+        "label": "Network Science"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:linear-systems", "label": "Linear Systems" },
-      { "@id": "urn:ngm:class:control-theory", "label": "Control Theory" }
+      {
+        "@id": "urn:ngm:class:linear-systems",
+        "label": "Linear Systems"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:control-theory", "label": "Control Theory" },
-      { "@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems" },
-      { "@id": "urn:ngm:class:large-language-models", "label": "Large Language Models" },
-      { "@id": "urn:ngm:class:digital-twin", "label": "Digital Twin" }
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:complexity-science", "label": "Complexity Science" }
+      {
+        "@id": "urn:ngm:class:complexity-science",
+        "label": "Complexity Science"
+      }
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:complex-adaptive-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:complex-adaptive-systems"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Complexity Science]]", "resolved": "urn:visionflow:linked:complexity-science", "kind": "ResolvedLink" },
-    { "raw": "[[Emergence]]", "resolved": "urn:visionflow:linked:emergence", "kind": "ResolvedLink" },
-    { "raw": "[[Systems Theory]]", "resolved": "urn:visionflow:linked:systems-theory", "kind": "StubLink" },
-    { "raw": "[[Cybernetics]]", "resolved": "urn:visionflow:linked:cybernetics", "kind": "ResolvedLink" },
-    { "raw": "[[Chaos Theory]]", "resolved": "urn:visionflow:linked:chaos-theory", "kind": "ResolvedLink" },
-    { "raw": "[[Feedback Loop]]", "resolved": "urn:visionflow:linked:feedback-loop", "kind": "ResolvedLink" },
-    { "raw": "[[Self-Organisation]]", "resolved": "urn:visionflow:linked:self-organisation", "kind": "StubLink" },
-    { "raw": "[[Non-Linear Dynamics]]", "resolved": "urn:visionflow:linked:non-linear-dynamics", "kind": "StubLink" },
-    { "raw": "[[Agent-Based Modelling]]", "resolved": "urn:visionflow:linked:agent-based-modelling", "kind": "ResolvedLink" },
-    { "raw": "[[Agent-Based Models]]", "resolved": "urn:visionflow:linked:agent-based-models", "kind": "ResolvedLink" },
-    { "raw": "[[Swarm Intelligence]]", "resolved": "urn:visionflow:linked:swarm-intelligence", "kind": "StubLink" },
-    { "raw": "[[Multi-Agent Systems]]", "resolved": "urn:visionflow:linked:multi-agent-systems", "kind": "ResolvedLink" },
-    { "raw": "[[Control Theory]]", "resolved": "urn:visionflow:linked:control-theory", "kind": "StubLink" },
-    { "raw": "[[Network Science]]", "resolved": "urn:visionflow:linked:network-science", "kind": "ResolvedLink" },
-    { "raw": "[[Network Theory]]", "resolved": "urn:visionflow:linked:network-theory", "kind": "StubLink" },
-    { "raw": "[[Phase Transition]]", "resolved": "urn:visionflow:linked:phase-transition", "kind": "StubLink" },
-    { "raw": "[[Self-Organised Criticality]]", "resolved": "urn:visionflow:linked:self-organised-criticality", "kind": "StubLink" },
-    { "raw": "[[Dynamical Systems Theory]]", "resolved": "urn:visionflow:linked:dynamical-systems-theory", "kind": "StubLink" },
-    { "raw": "[[Statistical Mechanics]]", "resolved": "urn:visionflow:linked:statistical-mechanics", "kind": "StubLink" },
-    { "raw": "[[Information Theory]]", "resolved": "urn:visionflow:linked:information-theory", "kind": "StubLink" },
-    { "raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Evolutionary Computation]]", "resolved": "urn:visionflow:linked:evolutionary-computation", "kind": "StubLink" },
-    { "raw": "[[Genetic Algorithm]]", "resolved": "urn:visionflow:linked:genetic-algorithm", "kind": "ResolvedLink" },
-    { "raw": "[[Collective Intelligence]]", "resolved": "urn:visionflow:linked:collective-intelligence", "kind": "ResolvedLink" },
-    { "raw": "[[Collective Behaviour]]", "resolved": "urn:visionflow:linked:collective-behaviour", "kind": "StubLink" },
-    { "raw": "[[Resilience]]", "resolved": "urn:visionflow:linked:resilience", "kind": "StubLink" },
-    { "raw": "[[Adaptation]]", "resolved": "urn:visionflow:linked:adaptation", "kind": "StubLink" },
-    { "raw": "[[Autonomous Agent]]", "resolved": "urn:visionflow:linked:autonomous-agent", "kind": "ResolvedLink" },
-    { "raw": "[[Co-Evolution]]", "resolved": "urn:visionflow:linked:co-evolution", "kind": "StubLink" },
-    { "raw": "[[Path Dependence]]", "resolved": "urn:visionflow:linked:path-dependence", "kind": "StubLink" },
-    { "raw": "[[Scale-Free Network]]", "resolved": "urn:visionflow:linked:scale-free-network", "kind": "StubLink" },
-    { "raw": "[[Power-Law Distributions]]", "resolved": "urn:visionflow:linked:power-law-distributions", "kind": "StubLink" },
-    { "raw": "[[Cellular Automata]]", "resolved": "urn:visionflow:linked:cellular-automata", "kind": "ResolvedLink" },
-    { "raw": "[[Stigmergy]]", "resolved": "urn:visionflow:linked:stigmergy", "kind": "ResolvedLink" },
-    { "raw": "[[Artificial Life]]", "resolved": "urn:visionflow:linked:artificial-life", "kind": "StubLink" },
-    { "raw": "[[Digital Twin]]", "resolved": "urn:visionflow:linked:digital-twin", "kind": "ResolvedLink" },
-    { "raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink" },
-    { "raw": "[[Multi-Agent Reinforcement Learning]]", "resolved": "urn:visionflow:linked:multi-agent-reinforcement-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Game Theory]]", "resolved": "urn:visionflow:linked:game-theory", "kind": "ResolvedLink" },
-    { "raw": "[[Epidemiology]]", "resolved": "urn:visionflow:linked:epidemiology", "kind": "ResolvedLink" },
-    { "raw": "[[Ecosystems]]", "resolved": "urn:visionflow:linked:ecosystems", "kind": "StubLink" },
-    { "raw": "[[Urban Computing]]", "resolved": "urn:visionflow:linked:urban-computing", "kind": "StubLink" },
-    { "raw": "[[Policy Simulation]]", "resolved": "urn:visionflow:linked:policy-simulation", "kind": "ResolvedLink" },
-    { "raw": "[[Santa Fe Institute]]", "resolved": "urn:visionflow:linked:santa-fe-institute", "kind": "StubLink" },
-    { "raw": "[[Linear Systems]]", "resolved": "urn:visionflow:linked:linear-systems", "kind": "StubLink" }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -546,7 +712,7 @@ public: true
       - Learning analytics [[Dashboard|dashboards]] in CBE and LMS contexts implement CAS feedback loop fidelity for educational systems — the quality of mastery signals (precision, recall, latency) determines whether the [[Feedback Loop]] supports adaptive student progression or introduces systematic bias.
     - **Embracing uncertainty**: CAS are inherently unpredictable beyond short time horizons because their [[Non-Linear Dynamics]] amplify small uncertainties. CAS-informed policy accepts this irreducible uncertainty and focuses on building system [[Resilience]] — capacity to absorb surprises and reorganise — rather than optimising for specific predicted futures that may not materialise.
       - Scenario planning as a CAS governance tool: rather than single-point forecasts, CAS-informed strategic planning uses multiple scenario narratives (Shell scenario planning methodology, 1970s; IPCC Shared Socioeconomic Pathways) to map the distribution of futures consistent with current CAS state, enabling robust policy design across the scenario space.
-      - The UK Government Office for Science Foresight programme explicitly adopts CAS uncertainty framing in its horizon scanning methodology, identifying weak signals and wild cards that could trigger CAS phase transitions in national systems (energy, food, health, security).
+      - The UK Government Office for Science Foresight programme explicitly adopts CAS uncertainty framing in its horizon scanning methodology, identifying weak signals and wild cards that [private] trigger CAS phase transitions in national systems (energy, food, health, security).
 
   - ## Cross-Domain Applications: Quick Reference
     - **Financial markets**: [[Emergence]] of price, volatility clustering, flash crashes, systemic risk, regulatory arbitrage — all CAS phenomena with agent-based models at Bank of England (ABCE) and ECB (EURACE).

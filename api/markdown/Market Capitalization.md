@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Market Capitalization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,7 +63,7 @@ public: true
   "@id": "urn:ngm:class:market-capitalization",
   "@type": "Class",
   "label": "Market Capitalization",
-  "definition": "Market Capitalization in a blockchain context is the aggregate market value of a cryptocurrency or token, computed as the circulating supply multiplied by the current unit price. It serves as a widely used proxy for the relative size, liquidity, and investor confidence of a crypto-economic network, underpinning index construction, risk categorisation, and portfolio weighting decisions by institutional participants. Critically, market capitalisation is a lagging and manipulable metric: thin order books, wash trading, and locked but counted supply can inflate the figure well beyond the value that could be liquidated in practice.",
+  "definition": "Market Capitalization in a blockchain context is the aggregate market value of a cryptocurrency or token, computed as the circulating supply multiplied by the current unit price. It serves as a widely used proxy for the relative size, liquidity, and investor confidence of a crypto-economic network, underpinning [private] construction, risk categorisation, and portfolio weighting decisions by institutional participants. Critically, market capitalisation is a lagging and manipulable metric: thin order books, wash trading, and locked but counted supply can inflate the figure well beyond the value that [private] be liquidated in practice.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.8,
@@ -88,25 +83,58 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:token", "label": "Token"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"},
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"},
-      {"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptocurrency-token", "label": "Cryptocurrency Token"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency-token",
+        "label": "Cryptocurrency Token"
+      }
     ]
   },
   "provenance": {
@@ -117,64 +145,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:market-capitalization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8bc1dc79c812fdb3f8815d65791734a572daebb80b31ee1a9252efbdf5882d1c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  Market Capitalization in a blockchain context is the aggregate market value of a cryptocurrency or token, computed as the circulating supply multiplied by the current unit price. It serves as a widely used proxy for the relative size, liquidity, and investor confidence of a crypto-economic network, underpinning index construction, risk categorisation, and portfolio weighting decisions by institutional participants. Critically, market capitalisation is a lagging and manipulable metric: thin order books, wash trading, and locked but counted supply can inflate the figure well beyond the value that could be liquidated in practice.
+  Market Capitalization in a blockchain context is the aggregate market value of a cryptocurrency or token, computed as the circulating supply multiplied by the current unit price. It serves as a widely used proxy for the relative size, liquidity, and investor confidence of a crypto-economic network, underpinning [private] construction, risk categorisation, and portfolio weighting decisions by institutional participants. Critically, market capitalisation is a lagging and manipulable metric: thin order books, wash trading, and locked but counted supply can inflate the figure well beyond the value that [private] be liquidated in practice.
 
 - ### Semantic Classification
   - owl-class:: blockchain:MarketCapitalization

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Modeling Software
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +21,53 @@ public: true
   "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"}
+    {
+      "@id": "urn:ngm:class:3d-modelling",
+      "label": "3D Modeling"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:3-d-content-creation", "label": "3D Content Creation"},
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:animation-rig", "label": "Animation Rig"}
+      {
+        "@id": "urn:ngm:class:3-d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:animation-rig",
+        "label": "Animation Rig"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:shader", "label": "Shader"}
+      {
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cad-software", "label": "CAD Software"},
-      {"@id": "urn:ngm:class:bim-software", "label": "BIM Software"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:cad-software",
+        "label": "CAD Software"
+      },
+      {
+        "@id": "urn:ngm:class:bim-software",
+        "label": "BIM Software"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +88,3 @@ public: true
   - The ecosystem is highly fragmented by use case: Autodesk Maya and Houdini dominate visual-effects and animation studios; Blender has become the community standard for independent artists and is growing in studios; ZBrush and Mudbox handle high-frequency sculpting; Maxon Cinema 4D is widely used in motion graphics; and Rhino 3D and SolidWorks serve product design and architecture. Substance Painter and Quixel Mixer handle the texturing stage downstream. Interoperability between these tools depends on shared formats and translation layers.
 
   - In 2024–2025, AI integration is accelerating transformation of the modelling workflow. AI-assisted retopology tools, generative geometry nodes, text-to-mesh features, and automated UV unwrapping are being incorporated into Blender's add-on ecosystem and commercial tools. Cloud-based collaborative modelling — pioneered by Autodesk's cloud platforms and NVIDIA Omniverse — allows multi-user editing of shared scenes. Real-time viewport previews using hardware ray-tracing bring final-quality feedback directly into the modelling environment, reducing iteration cycles.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Psychological Research
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:psychological-research:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8d61a0856d1af1435642dee62d50589d0886ebd6d8ac8b97af91f556c1fd3ecc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Evidence Based VR Treatment]]",
-      "resolved": "urn:visionflow:linked:evidence-based-vr-treatment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Research Methods]]",
-      "resolved": "urn:visionflow:owl:class:research-methods",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Scientific investigation of mental health applications within virtual reality and metaverse environments, examining therapeutic benefits for conditions including PTSD, anxiety, and depression, while assessing potential risks such as addiction and attention impairment.

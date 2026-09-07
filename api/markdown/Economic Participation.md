@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Economic Participation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:economic-participation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dfcc5bb6145bf18434602951c99e37627cbafca04de78bc1a55de2113072ddd4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Play-to-Earn]]",
-      "resolved": "urn:visionflow:linked:play-to-earn",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The mechanisms and opportunities enabling users to engage in economic activities within metaverse environments, including earning, spending, trading, and governance participation through cryptocurrency, NFTs, and decentralised autonomous organisation (DAO) structures.

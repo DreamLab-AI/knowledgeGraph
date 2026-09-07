@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Anchorage Digital
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:anchorage-digital:83f540d0edd1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:79023f7738127dfa93d5cac1f11bdc76acfb0f91559a99f271f3544c8a713b71"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Coinbase]]",
-      "resolved": "urn:visionflow:linked:coinbase",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Custody]]",
-      "resolved": "urn:visionflow:linked:self-custody",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A United States digital asset platform that holds a federal bank charter and provides custody, trading, staking, and financing services for institutional clients. It was the first crypto firm to receive a national trust bank charter from the Office of the Comptroller of the Currency.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Image Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-image-generation",
   "title": "AI Image Generation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Information Visualization", "Nano Banana Pro"],
+  "vc:outboundWikilinks": [
+    "Information Visualization",
+    "Nano Banana Pro"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}, {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

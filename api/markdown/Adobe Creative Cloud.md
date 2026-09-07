@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adobe Creative Cloud
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Adobe Creative Cloud is a subscription-based software platform operated by Adobe Inc. that delivers a suite of professional creative applications—including Photoshop, Illustrator, Premiere Pro, After Effects, and InDesign—alongside cloud storage, collaboration services, and asset management infrastructure. Launched in 2013 as the successor to Adobe Creative Suite, it transitioned the industry from perpetual licence software to a continuous-update, cloud-connected model. The platform is the dominant industry standard for graphic design, photography, video production, motion graphics, and digital publishing workflows.",
   "domain": "metaverse",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:creative-tools", "label": "Creative Tools"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:creative-tools",
+      "label": "Creative Tools"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cloud-platform", "label": "Cloud Platform"},
-      {"@id": "urn:ngm:class:adobe-firefly", "label": "Adobe Firefly"}
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "@id": "urn:ngm:class:adobe-firefly",
+        "label": "Adobe Firefly"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"},
-      {"@id": "urn:ngm:class:content-production-workflow", "label": "Content Production Workflow"}
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-content-creation", "label": "3D Content Creation"},
-      {"@id": "urn:ngm:class:animation-software", "label": "Animation Software"}
+      {
+        "@id": "urn:ngm:class:3-d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - In the professional ecosystem, Creative Cloud occupies a central position in digital agency, broadcast, film post-production, publishing, and marketing technology workflows. Its deep integration with industry standards (PSD, AI, INDD, MOV, PDF) means that creative work frequently begins and ends within the platform even when collaborative tools such as Figma or DaVinci Resolve handle specific stages. Adobe's 2022 attempted acquisition of Figma was abandoned following regulatory challenge, highlighting the competitive landscape around professional design tooling.
 
   - By 2024–2025, Adobe Firefly generative AI capabilities are deeply integrated across Creative Cloud applications: Generative Fill in Photoshop, Generative Recolour in Illustrator, and AI-driven audio and video editing in Premiere Pro. Adobe's emphasis on commercially safe AI (training on licensed and public domain content) and Content Credentials (C2PA-based provenance metadata) addresses professional users' intellectual property concerns. The platform faces growing competition from AI-native creative tools, but its installed base, file format standards dominance, and integration depth sustain its position as the primary professional creative environment.
-

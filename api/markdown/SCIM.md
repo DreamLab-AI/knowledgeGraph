@@ -1,37 +1,106 @@
----
-public: true
----
-
-# SCIM
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:scim", "@type":"Page", "title":"SCIM", "vc:slug":"scim", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:scim",
+  "@type": "Page",
+  "title": "SCIM",
+  "vc:slug": "scim",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:scim",
-  "@type":"Class",
-  "label":"SCIM",
-  "definition":"SCIM (System for Cross-domain Identity Management) is an open standard that defines a common schema and a RESTful protocol for automating the exchange of user and group identity information between identity providers and service providers. It lets organisations create, update, deactivate and deprovision accounts across applications without bespoke integrations. SCIM is widely used to automate user lifecycle management in enterprise single sign-on and cloud deployments.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:identity-management","label":"Identity Management"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:identity-management","label":"Identity Management"}],
-    "uses":[{"@id":"urn:ngm:class:rest-api","label":"REST API"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "supports":[{"@id":"urn:ngm:class:single-sign-on","label":"Single Sign-On"},{"@id":"urn:ngm:class:identity-federation","label":"Identity Federation"}],
-    "enables":[{"@id":"urn:ngm:class:access-control","label":"Access Control"}],
-    "requires":[{"@id":"urn:ngm:class:authentication","label":"Authentication"},{"@id":"urn:ngm:class:authorization","label":"Authorisation"}],
-    "dependsOn":[{"@id":"urn:ngm:class:directory-service","label":"Directory Service"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:oauth","label":"OAuth"}],
-    "relatedTo":[{"@id":"urn:ngm:class:identity-management","label":"Identity Management"},{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:scim",
+  "@type": "Class",
+  "label": "SCIM",
+  "definition": "SCIM (System for Cross-domain Identity Management) is an open standard that defines a common schema and a RESTful protocol for automating the exchange of user and group identity information between identity providers and service providers. It lets organisations create, update, deactivate and deprovision accounts across applications without bespoke integrations. SCIM is widely used to automate user lifecycle management in enterprise single sign-on and cloud deployments.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:directory-service",
+        "label": "Directory Service"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

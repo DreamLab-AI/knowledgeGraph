@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Moore's Law
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Moore's Law is the observation, articulated by Gordon Moore in 1965, that the number of transistors on an integrated circuit doubles roughly every two years, driving exponential gains in computing capability and cost-efficiency. It functioned for decades as a self-fulfilling roadmap for the semiconductor industry. Physical and economic limits have slowed transistor scaling, shifting progress toward specialised architectures and advanced packaging.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:convergence", "label": "Convergence"}
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
     ]
   },
   "quality": 0.72

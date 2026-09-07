@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Bulletproofs+
----
-
-# Bulletproofs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -168,4 +161,3 @@ aliases:
   - Bulletproofs were deployed in the Monero cryptocurrency in October 2018, replacing the earlier Borromean ring signature-based range proofs and reducing typical transaction sizes by approximately 80% and verification costs proportionally. The Grin cryptocurrency also adopted Bulletproofs as its core confidential transaction mechanism. Beyond cryptocurrencies, Bulletproofs have been applied to verifiable shuffle proofs in e-voting systems, confidential smart contract parameter validation, and as building blocks in more complex proof systems.
 
   - By 2024–2025, Bulletproofs+ — an optimised variant with reduced prover time — has been integrated into several production systems. Research interest has shifted partly towards zk-STARK and Plonk-family proof systems that offer better recursion properties and post-quantum security paths. However, Bulletproofs retain relevance in resource-constrained contexts where the absence of a trusted setup is a strict requirement and logarithmic proof size suffices. Ongoing work explores their combination with threshold signature schemes and multi-party computation for collaborative proof generation in privacy-preserving DeFi applications.
-

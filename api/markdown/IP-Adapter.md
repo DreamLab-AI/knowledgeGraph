@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - IP Adapter
----
-
-# IP-Adapter
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,32 +20,82 @@ aliases:
   "definition": "IP-Adapter (Image Prompt Adapter) is a lightweight adapter module for pre-trained text-to-image diffusion models that enables image-conditioned generation by injecting reference image features via a decoupled cross-attention mechanism. Introduced by Tencent AI Lab in 2023, it allows users to supply a reference image alongside a text prompt to control style, subject identity, or composition without fine-tuning the base diffusion model. The adapter architecture inserts parallel cross-attention layers that process image embeddings from a pre-trained image encoder such as CLIP, keeping base model weights frozen.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:adapter-modules", "label": "Adapter Modules"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:adapter-modules",
+      "label": "Adapter Modules"
+    }
+  ],
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Image Model"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:hugging-face-diffusers", "label": "Hugging Face Diffusers"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"},
-      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
-      {"@id": "urn:ngm:class:image-to-image-translation", "label": "Image to Image Translation"}
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:image-to-image-translation",
+        "label": "Image to Image Translation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ]
   },
   "quality": 0.8

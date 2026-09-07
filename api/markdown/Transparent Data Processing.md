@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transparent Data Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transparent-data-processing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:548995cfc5097410a1bba38fe35c6c7d7b5ff4a3948d60161046f2d18090477d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Processing]]",
-      "resolved": "urn:visionflow:owl:class:data-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Data handling practices that are openly disclosed to users, providing clear information about what data is collected, how it is processed, who has access, and for what purposes, enabling informed consent and accountability.

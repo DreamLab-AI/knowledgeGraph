@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Replica
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-museum-tour", "label": "Virtual Museum Tour"},
-      {"@id": "urn:ngm:class:virtual-factory", "label": "Virtual Factory"}
+      {
+        "@id": "urn:ngm:class:virtual-museum-tour",
+        "label": "Virtual Museum Tour"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-factory",
+        "label": "Virtual Factory"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-modeling", "label": "Digital Modeling"},
-      {"@id": "urn:ngm:class:simulation-software", "label": "Simulation Software"}
+      {
+        "@id": "urn:ngm:class:digital-modeling",
+        "label": "Digital Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-software",
+        "label": "Simulation Software"
+      }
     ]
   },
   "provenance": {
@@ -87,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-replica:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0e859fa5585716d5e9d26a67e80c2546b29e5ae5ecdaddb37430310b77ac7b74"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Model]]",
-      "resolved": "urn:visionflow:owl:class:digital-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital representation of a physical object, system, or environment created through 3D modeling, photogrammetry, or scanning technologies, serving as a static or dynamic copy for visualization, simulation, analysis, and testing purposes without the real-time data connectivity that characterizes digital twins.

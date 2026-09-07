@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Character Animation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,4 +155,3 @@ public: true
   - Physics-based character animation uses rigid-body and soft-body dynamics, along with control policies trained through reinforcement learning, to produce secondary motion and full-character dynamics that respond to environment perturbations. Deep learning approaches — including motion prediction transformers, physics controllers trained with imitation learning from motion capture, and diffusion-based motion generation models — can synthesise novel animations from text prompts or sparse control signals. These systems are increasingly integrated into real-time XR avatars and virtual influencer pipelines.
 
   - By 2024-2025 the boundary between pre-authored and AI-generated character motion is dissolving. Generative motion models trained on large datasets can produce hours of plausible locomotion and interaction, while neural scene representations enable characters to interact physically with reconstructed environments. Standards such as USD skeletal animation and OpenXR body tracking interoperability are stabilising the cross-platform pipeline, and real-time neural skinning is moving from research labs toward production game engines and metaverse platforms.
-

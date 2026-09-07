@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - VirtualEnvironment
----
-
-# Virtual Environment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,37 +186,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-environment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f0a872f6a70c137e6f7254b8730cb161511a6c6cd1f96aa1c0c8a72cda68c3f6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A simulated three-dimensional (3D) digital space created with computer hardware and software that enables users to explore, interact, and experience an immersive surrounding approximating reality, accessed through devices such as VR headsets, AR glasses, or standard displays.

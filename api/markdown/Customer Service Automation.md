@@ -1,8 +1,3 @@
----
-public: true
----
-
-# customer service automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,40 +7,142 @@ public: true
   "title": "customer service automation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:conversational-ai", "vc:label": "Conversational AI"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:intent-classification", "vc:label": "Intent Classification"},
-    {"@id": "urn:visionflow:linked:sentiment-analysis", "vc:label": "Sentiment Analysis"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:knowledge-base", "vc:label": "Knowledge Base"},
-    {"@id": "urn:visionflow:linked:chatbot", "vc:label": "Chatbot"},
-    {"@id": "urn:visionflow:linked:virtual-agent", "vc:label": "Virtual Agent"},
-    {"@id": "urn:visionflow:linked:dialogue-management", "vc:label": "Dialogue Management"},
-    {"@id": "urn:visionflow:linked:named-entity-recognition", "vc:label": "Named Entity Recognition"},
-    {"@id": "urn:visionflow:linked:interactive-voice-response", "vc:label": "Interactive Voice Response"},
-    {"@id": "urn:visionflow:linked:robotic-process-automation", "vc:label": "Robotic Process Automation"},
-    {"@id": "urn:visionflow:linked:omnichannel", "vc:label": "Omnichannel"},
-    {"@id": "urn:visionflow:linked:customer-relationship-management", "vc:label": "Customer Relationship Management"},
-    {"@id": "urn:visionflow:linked:escalation-management", "vc:label": "Escalation Management"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:business-process-automation", "vc:label": "Business Process Automation"},
-    {"@id": "urn:visionflow:linked:ai-agent", "vc:label": "AI Agent"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:natural-language-understanding", "vc:label": "Natural Language Understanding"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:text-to-speech", "vc:label": "Text-to-Speech"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:agentic-rag", "vc:label": "Agentic RAG"},
-    {"@id": "urn:visionflow:linked:multi-turn-dialogue", "vc:label": "Multi-Turn Dialogue"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:omnichannel-routing", "vc:label": "Omnichannel Routing"},
-    {"@id": "urn:visionflow:linked:customer-support-automation", "vc:label": "Customer Support Automation"},
-    {"@id": "urn:visionflow:linked:task-oriented-dialogue", "vc:label": "Task-Oriented Dialogue"},
-    {"@id": "urn:visionflow:linked:slot-filling", "vc:label": "Slot Filling"},
-    {"@id": "urn:visionflow:linked:dialogue-system", "vc:label": "Dialogue System"}
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:conversational-ai",
+      "vc:label": "Conversational AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:intent-classification",
+      "vc:label": "Intent Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:chatbot",
+      "vc:label": "Chatbot"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-agent",
+      "vc:label": "Virtual Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:dialogue-management",
+      "vc:label": "Dialogue Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:named-entity-recognition",
+      "vc:label": "Named Entity Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:interactive-voice-response",
+      "vc:label": "Interactive Voice Response"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-process-automation",
+      "vc:label": "Robotic Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:omnichannel",
+      "vc:label": "Omnichannel"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-relationship-management",
+      "vc:label": "Customer Relationship Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:escalation-management",
+      "vc:label": "Escalation Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:business-process-automation",
+      "vc:label": "Business Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent",
+      "vc:label": "AI Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-understanding",
+      "vc:label": "Natural Language Understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-speech",
+      "vc:label": "Text-to-Speech"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-rag",
+      "vc:label": "Agentic RAG"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-turn-dialogue",
+      "vc:label": "Multi-Turn Dialogue"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:omnichannel-routing",
+      "vc:label": "Omnichannel Routing"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-support-automation",
+      "vc:label": "Customer Support Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-oriented-dialogue",
+      "vc:label": "Task-Oriented Dialogue"
+    },
+    {
+      "@id": "urn:visionflow:linked:slot-filling",
+      "vc:label": "Slot Filling"
+    },
+    {
+      "@id": "urn:visionflow:linked:dialogue-system",
+      "vc:label": "Dialogue System"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -75,109 +172,156 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:intent-classification", "label": "Intent Classification"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:agentic-rag", "label": "Agentic RAG"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"}
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:customer-relationship-management", "label": "Customer Relationship Management"},
-      {"@id": "urn:ngm:class:dialogue-management", "label": "Dialogue Management"},
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"}
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:customer-relationship-management",
+        "label": "Customer Relationship Management"
+      },
+      {
+        "@id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:omnichannel", "label": "Omnichannel Support"},
-      {"@id": "urn:ngm:class:self-service-portal", "label": "Self-Service Portal"},
-      {"@id": "urn:ngm:class:intelligent-ticket-routing", "label": "Intelligent Ticket Routing"}
+      {
+        "@id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel Support"
+      },
+      {
+        "@id": "urn:ngm:class:self-service-portal",
+        "label": "Self-Service Portal"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-ticket-routing",
+        "label": "Intelligent Ticket Routing"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:chatbot", "label": "Chatbot"},
-      {"@id": "urn:ngm:class:interactive-voice-response", "label": "Interactive Voice Response"},
-      {"@id": "urn:ngm:class:virtual-agent", "label": "Virtual Agent"},
-      {"@id": "urn:ngm:class:escalation-management", "label": "Escalation Management"}
+      {
+        "@id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-voice-response",
+        "label": "Interactive Voice Response"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-agent",
+        "label": "Virtual Agent"
+      },
+      {
+        "@id": "urn:ngm:class:escalation-management",
+        "label": "Escalation Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:automation", "label": "Rule-Based Automation"},
-      {"@id": "urn:ngm:class:human-agent-assistance", "label": "Human Agent Assistance"}
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Rule-Based Automation"
+      },
+      {
+        "@id": "urn:ngm:class:human-agent-assistance",
+        "label": "Human Agent Assistance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"},
-      {"@id": "urn:ngm:class:customer-support-automation", "label": "Customer Support Automation"}
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:customer-support-automation",
+        "label": "Customer Support Automation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:business-process-automation", "label": "Business Process Automation"}
+      {
+        "@id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:automated-customer-support", "label": "Automated Customer Support"},
-    {"@id": "urn:ngm:class:contact-centre-ai", "label": "Contact Centre AI"}
+    {
+      "@id": "urn:ngm:class:automated-customer-support",
+      "label": "Automated Customer Support"
+    },
+    {
+      "@id": "urn:ngm:class:contact-centre-ai",
+      "label": "Contact Centre AI"
+    }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:customer-service-automation:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0451889544c4f12f91126b666cc8648c4fe61d7fae25c86d653893727e962038"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Conversational AI]]", "resolved": "urn:visionflow:linked:conversational-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Intent Classification]]", "resolved": "urn:visionflow:linked:intent-classification", "kind": "ResolvedLink"},
-    {"raw": "[[Sentiment Analysis]]", "resolved": "urn:visionflow:linked:sentiment-analysis", "kind": "ResolvedLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Base]]", "resolved": "urn:visionflow:linked:knowledge-base", "kind": "ResolvedLink"},
-    {"raw": "[[Chatbot]]", "resolved": "urn:visionflow:linked:chatbot", "kind": "ResolvedLink"},
-    {"raw": "[[Virtual Agent]]", "resolved": "urn:visionflow:linked:virtual-agent", "kind": "ResolvedLink"},
-    {"raw": "[[Dialogue Management]]", "resolved": "urn:visionflow:linked:dialogue-management", "kind": "ResolvedLink"},
-    {"raw": "[[Named Entity Recognition]]", "resolved": "urn:visionflow:linked:named-entity-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Interactive Voice Response]]", "resolved": "urn:visionflow:linked:interactive-voice-response", "kind": "ResolvedLink"},
-    {"raw": "[[Robotic Process Automation]]", "resolved": "urn:visionflow:linked:robotic-process-automation", "kind": "ResolvedLink"},
-    {"raw": "[[Omnichannel]]", "resolved": "urn:visionflow:linked:omnichannel", "kind": "ResolvedLink"},
-    {"raw": "[[Customer Relationship Management]]", "resolved": "urn:visionflow:linked:customer-relationship-management", "kind": "ResolvedLink"},
-    {"raw": "[[Escalation Management]]", "resolved": "urn:visionflow:linked:escalation-management", "kind": "ResolvedLink"},
-    {"raw": "[[Workflow Automation]]", "resolved": "urn:visionflow:linked:workflow-automation", "kind": "ResolvedLink"},
-    {"raw": "[[Business Process Automation]]", "resolved": "urn:visionflow:linked:business-process-automation", "kind": "ResolvedLink"},
-    {"raw": "[[AI Agent]]", "resolved": "urn:visionflow:linked:ai-agent", "kind": "ResolvedLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:visionflow:linked:active-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Understanding]]", "resolved": "urn:visionflow:linked:natural-language-understanding", "kind": "ResolvedLink"},
-    {"raw": "[[Speech Recognition]]", "resolved": "urn:visionflow:linked:speech-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Speech]]", "resolved": "urn:visionflow:linked:text-to-speech", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic RAG]]", "resolved": "urn:visionflow:linked:agentic-rag", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Turn Dialogue]]", "resolved": "urn:visionflow:linked:multi-turn-dialogue", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Omnichannel Routing]]", "resolved": "urn:visionflow:linked:omnichannel-routing", "kind": "ResolvedLink"},
-    {"raw": "[[Customer Support Automation]]", "resolved": "urn:visionflow:linked:customer-support-automation", "kind": "ResolvedLink"},
-    {"raw": "[[Task-Oriented Dialogue]]", "resolved": "urn:visionflow:linked:task-oriented-dialogue", "kind": "ResolvedLink"},
-    {"raw": "[[Slot Filling]]", "resolved": "urn:visionflow:linked:slot-filling", "kind": "ResolvedLink"},
-    {"raw": "[[Dialogue System]]", "resolved": "urn:visionflow:linked:dialogue-system", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -330,7 +474,7 @@ public: true
 
     - **[[Dialogue Management]] Engine**: Maintains conversation state across turns using a dialogue state tracker, implementing a policy that decides the next system action at each turn. Policy implementations range from deterministic finite-state machines (FSMs) for narrow, well-defined flows, through learned policies trained with [[Reinforcement Learning]] to optimise task completion in multi-turn scenarios, to LLM chain-of-thought reasoning loops that implicitly maintain state in their context window. [[Slot Filling]] mechanisms request clarifying information when the current utterance is insufficient to fulfil the identified intent — for example, requesting an order number when the intent `track_order` is identified but no order number entity was extracted.
 
-    - **[[Retrieval-Augmented Generation]] (RAG) Module**: At query time, encodes the user's request as a dense vector and retrieves the most semantically relevant passages from the enterprise [[Knowledge Base]], product documentation, policy library, and FAQ corpus using approximate nearest-neighbour search over a vector index. The retrieved context passages are prepended to the [[Large Language Model]] prompt, grounding generation in accurate, current, organisation-specific information and reducing hallucination risk from the model's parametric knowledge. Chunking strategy (how documents are segmented for indexing), embedding model selection, retrieval re-ranking, and context window budget allocation are all engineering decisions that materially affect retrieval quality and, downstream, response accuracy.
+    - **[[Retrieval-Augmented Generation]] (RAG) Module**: At query time, encodes the user's request as a dense vector and retrieves the most semantically relevant passages from the enterprise [[Knowledge Base]], product documentation, policy library, and FAQ corpus using approximate nearest-neighbour search over a vector [private]. The retrieved context passages are prepended to the [[Large Language Model]] prompt, grounding generation in accurate, current, organisation-specific information and reducing hallucination risk from the model's parametric knowledge. Chunking strategy (how documents are segmented for indexing), embedding model selection, retrieval re-ranking, and context window budget allocation are all engineering decisions that materially affect retrieval quality and, downstream, response accuracy.
 
     - **[[Large Language Model]] Generation Core**: Produces natural-language responses conditioned on conversation history, retrieved context, user profile data, and system-level instructions (persona, tone, policy constraints). In 2025–2026 deployments, models are typically served via API (GPT-4o, Claude 3.7 Sonnet, Gemini 2.0 Flash) with function-calling capabilities, or deployed on-premises using fine-tuned open models for verticals with strict data localisation requirements. Function-calling (tool-use) capabilities allow the LLM to invoke back-end APIs — CRM look-ups, order management systems, scheduling systems — as structured function calls within the generation loop, making it the orchestrator of a broader service fulfilment workflow rather than a pure response generator.
 
@@ -375,7 +519,7 @@ public: true
 
     The ATIS (Airline Travel Information System) corpus of 1990 established the paradigm of task-oriented spoken language understanding for service domains, providing the first large-scale benchmark for [[Intent Classification]] and [[Slot Filling]] over constrained airline-reservation tasks. The Wizard-of-Oz methodology, in which a human "wizard" simulates system responses while real users interact naturally, was formalised during this period as a data collection technique and remains relevant today for collecting training data in novel support domains. The BAbI dataset (Weston et al., 2015, Facebook AI Research) provided tasks testing basic reasoning and memory in dialogue. The MultiWOZ corpus (Budzianowski et al., 2018, Cambridge University) extended [[Dialogue Management]] benchmarks to multi-domain, multi-turn scenarios with seven service domains (restaurant, hotel, taxi, attraction, train, hospital, police), enabling realistic evaluation of cross-domain context management — a core CSA capability.
 
-    The introduction of BERT (Devlin et al., 2019, Google) transformed [[Intent Classification]] from feature-engineered SVM and n-gram systems to fine-tuned [[Transformer Architecture]] models, reducing annotation requirements by an order of magnitude while improving accuracy on out-of-distribution queries. TOD-BERT (Wu et al., 2020) applied BERT pre-training specifically to task-oriented dialogue corpora, yielding further improvements for intent and slot tasks in service contexts. The GPT-3 paper (Brown et al., 2020) demonstrated that large-scale generative models could perform few-shot intent classification and response generation without task-specific fine-tuning, opening the LLM era for CSA.
+    The introduction of BERT (Devlin et al., 2019, Google) transformed [[Intent Classification]] from feature-engineered SVM and n-gram systems to fine-tuned [[Transformer Architecture]] models, reducing annotation requirements by an order of magnitude while improving accuracy on out-of-distribution queries. TOD-BERT (Wu et al., 2020) applied BERT pre-training specifically to task-oriented dialogue corpora, yielding further improvements for intent and slot tasks in service contexts. The GPT-3 paper (Brown et al., 2020) demonstrated that large-scale generative models [private] perform few-shot intent classification and response generation without task-specific fine-tuning, opening the LLM era for CSA.
 
     The RAG framework formalised by Lewis et al. (2020, Facebook AI Research) provided the missing architectural link between [[Large Language Model]] generation and enterprise knowledge grounding — the dominant CSA architecture post-2022. By conditioning generation on retrieved passages from a knowledge corpus, RAG resolved the critical hallucination problem that made earlier generative models unusable in customer service contexts where factual accuracy is non-negotiable. Dense Passage Retrieval (Karpukhin et al., 2020) and ColBERT (Khattab and Zaharia, 2020) advanced the retrieval component of RAG, enabling efficient semantic search over large enterprise corpora.
 

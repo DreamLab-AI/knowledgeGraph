@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inertia
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,16 +55,34 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "provenance": {
@@ -79,37 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inertia:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5da1dc28900eae2ce9cb6edcd58c938e487fea56f20477a807e8d51eb3b77d00"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Inertia** - Resistance to changes in motion state

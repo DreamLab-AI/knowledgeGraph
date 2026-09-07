@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hyperbitcoinization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,25 +21,55 @@ public: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}
+    {
+      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin As Money"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
-      {"@id": "urn:ngm:class:sound-money", "label": "Sound Money"},
-      {"@id": "urn:ngm:class:inflation", "label": "Inflation"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "@id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution", "label": "Bitcoin Distribution"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution",
+        "label": "Bitcoin Distribution"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ]
   },
   "quality": 0.8
@@ -55,7 +80,7 @@ public: true
   - Hyperbitcoinization describes the theoretical self-reinforcing process by which [[Bitcoin As Money]] displaces fiat currencies globally through voluntary currency substitution, driven by Bitcoin's fixed 21-million-unit supply, [[Sound Money]] properties, and resistance to state confiscation or inflation.
 
 - ### Relationships
-  - The concept is predicated on [[Bitcoin Standard]] arguments articulated by Saifedean Ammous: that monetary competition between hard and soft money reliably selects for the harder asset over time. The [[Inflation]] mechanism of fiat systems is the primary driver — as central banks expand money supplies, Bitcoin's deflationary scarcity becomes increasingly attractive. Hyperbitcoinization is framed as a contrast to [[Central Bank Digital Currency]] initiatives, which seek to preserve [[Monetary Sovereignty]] through programmable state money. [[Bitcoin Distribution]] patterns matter because a highly concentrated Bitcoin distribution could create new plutocratic power structures rather than the decentralised sovereignty theorists envision. [[Lightning Network]] scaling infrastructure is considered necessary for Bitcoin to achieve the transaction throughput required to function as a global medium of exchange.
+  - The concept is predicated on [[Bitcoin Standard]] arguments articulated by Saifedean Ammous: that monetary competition between hard and soft money reliably selects for the harder asset over time. The [[Inflation]] mechanism of fiat systems is the primary driver — as central banks expand money supplies, Bitcoin's deflationary scarcity becomes increasingly attractive. Hyperbitcoinization is framed as a contrast to [[Central Bank Digital Currency]] initiatives, which seek to preserve [[Monetary Sovereignty]] through programmable state money. [[Bitcoin Distribution]] patterns matter because a highly concentrated Bitcoin distribution [private] create new plutocratic power structures rather than the decentralised sovereignty theorists envision. [[Lightning Network]] scaling infrastructure is considered necessary for Bitcoin to achieve the transaction throughput required to function as a global medium of exchange.
 
 - ### Content
   - Daniel Krawisz's 2014 essay "Hyperbitcoinization" introduced the term and the core model: Bitcoin adoption creates network effects that make Bitcoin more useful as money, which attracts more adopters, accelerating the substitution of weaker fiat currencies. Krawisz distinguished this from hyperinflation (an involuntary outcome) by framing it as a deliberate, rational choice at the individual level that aggregates into a systemic monetary transition.

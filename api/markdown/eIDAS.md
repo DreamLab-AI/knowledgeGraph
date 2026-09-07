@@ -1,8 +1,3 @@
----
-public: true
----
-
-# eIDAS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,57 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:e-idas:f91ca908f344",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6bccc205e43849e43b57a43a06ef48bd0bbc204e26a7c08229e97387afdddd22"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:linked:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Public Key Infrastructure]]",
-      "resolved": "urn:visionflow:linked:public-key-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Identity]]",
-      "resolved": "urn:visionflow:linked:digital-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:linked:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Certificate Authority]]",
-      "resolved": "urn:visionflow:linked:certificate-authority",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Framework]]",
-      "resolved": "urn:visionflow:linked:regulatory-framework",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A European Union regulation establishing a framework for electronic identification and trust services for electronic transactions across the internal market.

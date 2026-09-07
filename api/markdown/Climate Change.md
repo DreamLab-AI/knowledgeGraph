@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Climate Change
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

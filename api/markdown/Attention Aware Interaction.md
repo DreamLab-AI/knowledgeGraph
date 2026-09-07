@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Attention-Aware Interaction
----
-
-# Attention Aware Interaction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -117,72 +110,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:attention-aware-interaction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:96d5522bb18827fad83b2490b9006fee5d4cc4206c393de3218cd6d0145c1dfc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Adaptive Interfaces]]",
-      "resolved": "urn:visionflow:linked:adaptive-interfaces",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Attention Modeling]]",
-      "resolved": "urn:visionflow:linked:attention-modeling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Eye Tracking Hardware]]",
-      "resolved": "urn:visionflow:linked:eye-tracking-hardware",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Foveated Rendering]]",
-      "resolved": "urn:visionflow:linked:foveated-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Gaze-Based Selection]]",
-      "resolved": "urn:visionflow:linked:gaze-based-selection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Gaze Detection Algorithms]]",
-      "resolved": "urn:visionflow:linked:gaze-detection-algorithms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human-Computer Interaction]]",
-      "resolved": "urn:visionflow:owl:class:human-computer-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, AR, and metaverse environments.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Overview of Machine Learning Techniques]]
-# Machine Learning Techniques Survey
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,19 +79,46 @@ elevatedFrom:: [[Overview of Machine Learning Techniques]]
   "qualityScore": 0.7,
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:transformers", "label": "Transformers"},
-      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
-      {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimization"}
+      {
+        "@id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimization"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:optimization-algorithms", "label": "Optimization Algorithms"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:optimization-algorithms",
+        "label": "Optimization Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ]
   },
   "provenance": {
@@ -107,67 +128,6 @@ elevatedFrom:: [[Overview of Machine Learning Techniques]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:overview-of-machine-learning-techniques:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:245af8aa0bdbdadc70db2e13c655749fc4af27187d0883277372720b794797e5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[presentation]]",
-      "resolved": "urn:visionflow:linked:presentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RLHF]]",
-      "resolved": "urn:visionflow:linked:rlhf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Diffusion Models]]",
-      "resolved": "urn:visionflow:owl:class:diffusion-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Direct Preference Optimisation]]",
-      "resolved": "urn:visionflow:owl:class:direct-preference-optimization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Adversarial Networks]]",
-      "resolved": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[State Space Sequence Models]]",
-      "resolved": "urn:visionflow:owl:class:state-space-and-other-approaches",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformers]]",
-      "resolved": "urn:visionflow:owl:class:transformers",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A structured survey of the principal paradigms and architectures in machine learning, spanning supervised methods (SVMs, decision trees, logistic regression), unsupervised clustering (k-means, KNN), and deep learning approaches (neural networks, transformers, diffusion models, GANs). The survey contextualises training paradigms including reinforcement learning from human feedback and direct preference optimisation, and positions large proprietary language models within the broader ML taxonomy.

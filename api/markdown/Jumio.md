@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Jumio
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:jumio:d0ff1b858684",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cd2dd3ba010f009bbd14c248119e7a024911819da5a21a427f93e8d6ea277c18"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:linked:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Biometric Authentication]]",
-      "resolved": "urn:visionflow:linked:biometric-authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Face Recognition]]",
-      "resolved": "urn:visionflow:linked:face-recognition",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An identity verification company that provides automated document and biometric checks for online onboarding and fraud prevention. Its services support know-your-customer and anti-money-laundering compliance.

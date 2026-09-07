@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Suspicious Activity Report
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

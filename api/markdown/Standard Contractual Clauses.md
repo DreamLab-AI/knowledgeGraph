@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Standard Contractual Clauses
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,48 @@ public: true
   "definition": "Standard Contractual Clauses (SCCs) are pre-approved contractual templates issued by the European Commission that enable the lawful transfer of personal data from the European Economic Area to third countries lacking an adequacy decision, by binding data exporters and importers to GDPR-equivalent data protection obligations. The 2021 SCCs replaced older versions and introduced a modular structure covering controller-to-controller, controller-to-processor, processor-to-processor, and processor-to-controller transfers.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cross-border-data-transfer-rule", "label": "Cross-Border Data Transfer Rule"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    }
+  ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
-      {"@id": "urn:ngm:class:uk-gdpr", "label": "UK GDPR"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:uk-gdpr",
+        "label": "UK GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +82,3 @@ public: true
   - In practice, large cloud providers (AWS, Microsoft Azure, Google Cloud) offer pre-executed SCC addenda to their data processing agreements, reducing customer overhead. However, organisations must still conduct TIAs considering the legal regime of the third country — particularly US intelligence access under FISA Section 702 and Executive Order 12333 — and document supplementary measures such as encryption, pseudonymisation, or contractual restrictions on government access requests.
 
   - From 2024, the EU-US Data Privacy Framework (adequacy decision, July 2023) reduces SCC reliance for US transfers where the importer is certified under the Framework. However, legal challenges (Schrems III) are anticipated, making SCC maintenance a prudent parallel track. UK organisations continue to use IDTAs and the UK Addendum to EU SCCs for dual-compliance where both GDPR and UK GDPR apply.
-

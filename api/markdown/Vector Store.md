@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vector Store
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vector-store:8964adba1a30",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3a29827a1113505d89f80626d760748f798557d2638b450cf13cf975b6fd25e7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Vector Database]]",
-      "resolved": "urn:visionflow:linked:vector-database",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A storage system optimised for holding high-dimensional vector embeddings and retrieving them by similarity. It supports nearest-neighbour search used in semantic retrieval and machine learning applications.

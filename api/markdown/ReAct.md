@@ -1,8 +1,3 @@
----
-public: true
----
-
-# react
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,56 +34,142 @@ public: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:reasoning-and-acting", "label": "Reasoning and Acting"},
-    {"@id": "urn:ngm:class:react-agent", "label": "ReAct Agent"}
+    {
+      "@id": "urn:ngm:class:reasoning-and-acting",
+      "label": "Reasoning and Acting"
+    },
+    {
+      "@id": "urn:ngm:class:react-agent",
+      "label": "ReAct Agent"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:tool-augmented-language-model", "label": "Tool-Augmented Language Model"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
-      {"@id": "urn:ngm:class:interpretable-ai", "label": "Interpretable AI"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:tool-augmented-language-model",
+        "label": "Tool-Augmented Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "@id": "urn:ngm:class:interpretable-ai",
+        "label": "Interpretable AI"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:external-knowledge-retrieval", "label": "External Knowledge Retrieval"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
+      {
+        "@id": "urn:ngm:class:external-knowledge-retrieval",
+        "label": "External Knowledge Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:agent-loop", "label": "Agent Loop"},
-      {"@id": "urn:ngm:class:grounded-reasoning", "label": "Grounded Reasoning"}
+      {
+        "@id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      },
+      {
+        "@id": "urn:ngm:class:grounded-reasoning",
+        "label": "Grounded Reasoning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
-      {"@id": "urn:ngm:class:scratchpad-reasoning", "label": "Scratchpad Reasoning"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "@id": "urn:ngm:class:scratchpad-reasoning",
+        "label": "Scratchpad Reasoning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:act-only-agent", "label": "Act-Only Agent"},
-      {"@id": "urn:ngm:class:reflexion", "label": "Reflexion"},
-      {"@id": "urn:ngm:class:tree-of-thoughts", "label": "Tree of Thoughts"}
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:act-only-agent",
+        "label": "Act-Only Agent"
+      },
+      {
+        "@id": "urn:ngm:class:reflexion",
+        "label": "Reflexion"
+      },
+      {
+        "@id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:prompting-technique", "label": "Prompting Technique"}
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:prompting-technique",
+        "label": "Prompting Technique"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
     ]
   },
   "qualityScore": 0.76,
-  "maturity": "established",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

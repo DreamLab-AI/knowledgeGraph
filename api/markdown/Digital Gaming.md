@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Gaming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-gaming", "label": "Blockchain Gaming"},
-      {"@id": "urn:ngm:class:immersive-gaming", "label": "Immersive Gaming"}
+      {
+        "@id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-gaming",
+        "label": "Immersive Gaming"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "provenance": {
@@ -82,37 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-gaming:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c2b910b07f3a55a4d5b18e8894ddf0a908bda5fba05bba362f901d91d3899b58"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital Gaming encompasses interactive software experiences delivered across platforms including PCs, consoles, and mobile devices, encompassing game design, virtual economies, player interaction systems, and increasingly blockchain-based asset ownership. It represents a convergence of entertainment, spatial computing, and digital economy mechanisms within persistent or session-based virtual environments.

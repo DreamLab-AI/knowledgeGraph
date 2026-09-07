@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - ISO TC307
-  - ISO/TC 307
----
-
-# iso tc 307
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

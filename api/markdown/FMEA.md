@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FMEA
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Failure Mode and Effects Analysis (FMEA) is a structured, proactive engineering methodology for identifying potential failure modes in a product, process, or system, assessing their causes and effects, and prioritising them for mitigation. Each failure mode is rated by severity, occurrence, and detectability, often combined into a Risk Priority Number that ranks risks for corrective action. FMEA is widely used in reliability engineering, safety-critical design, and quality management.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:reliability-engineering", "label": "Reliability Engineering"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ]
   },
   "quality": 0.72

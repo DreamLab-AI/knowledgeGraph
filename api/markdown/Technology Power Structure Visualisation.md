@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Calculating Empires]]
-# Technology Power Structure Visualisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,18 +63,36 @@ elevatedFrom:: [[Calculating Empires]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"},
-      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"}
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cyber-security-and-military", "label": "Cyber Security and Military"}
+      {
+        "@id": "urn:ngm:class:cyber-security-and-military",
+        "label": "Cyber Security and Military"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
     ]
   },
   "quality": 0.35,
@@ -91,52 +103,6 @@ elevatedFrom:: [[Calculating Empires]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:calculating-empires:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:af501677c608956089a479fcbdc5065d786631fc51c007d0642d9975f38612b6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cyber Security and Military]]",
-      "resolved": "urn:visionflow:owl:class:cyber-security-and-military",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Society Surveillance]]",
-      "resolved": "urn:visionflow:owl:class:digital-society-surveillance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Calculating Empires is a large-scale research visualisation project by Kate Crawford and Vladan Joler that maps the co-evolution of technology and power structures from 1500 to the present. The work contextualises contemporary AI within five centuries of imperial infrastructure, surveillance, and control systems, foregrounding continuities between historical colonialism and digital power.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# vector database
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -166,7 +161,7 @@ public: true
 
 - ### Overview
   - Vector databases emerged as a distinct infrastructure category in the early 2020s, driven by the explosion of [[Large Language Model]] applications that require grounding model outputs in external knowledge.
-  - Traditional [[Relational Database]] and [[Document Database]] systems are designed for exact-match and range queries over structured fields; they cannot efficiently answer "find the 10 documents most semantically similar to this query" without an ANN index.
+  - Traditional [[Relational Database]] and [[Document Database]] systems are designed for exact-match and range queries over structured fields; they cannot efficiently answer "find the 10 documents most semantically similar to this query" without an ANN [private].
   - The fundamental operation is **approximate k-nearest-neighbour (ANN) search**: given a query vector q and a corpus of n stored vectors, return the k vectors with the smallest distance (cosine, dot-product, or Euclidean) to q, without scanning all n vectors.
   - Why it matters:
     - Powers [[Retrieval-Augmented Generation]] (RAG), the dominant architecture for grounding LLM responses in private or up-to-date knowledge.
@@ -182,7 +177,7 @@ public: true
     - **[[HNSW Index]]** (Hierarchical Navigable Small World): a graph-based structure offering sub-millisecond query latency and high recall; memory-intensive but fastest in practice.
     - **[[Inverted File Index]] + [[Product Quantisation]] (IVF-PQ)**: clusters vectors with k-means, then compresses residuals with PQ; reduces RAM footprint at some recall cost.
     - **ScaNN** (Google): asymmetric quantisation optimised for throughput on Google-scale corpora.
-    - **DiskANN**: disk-resident graph index enabling billion-scale search on commodity hardware.
+    - **DiskANN**: disk-resident graph [private] enabling billion-scale search on commodity hardware.
   - **Metadata Filtering**
     - Structured payload fields (date, category, author, tenant ID) stored alongside each vector.
     - Pre- or post-filtering applied to ANN results to enforce access control, recency constraints, or domain restrictions.
@@ -209,7 +204,7 @@ public: true
     - *LanceDB* — columnar format on object storage; designed for multi-modal and versioned embeddings.
   - **Vector search extensions to existing databases**
     - *pgvector* — PostgreSQL extension; IVFFLAT and HNSW indexes; operational simplicity over raw speed.
-    - *Redis Stack* — adds RediSearch vector index to Redis; ultra-low latency for hot data.
+    - *Redis Stack* — adds RediSearch vector [private] to Redis; ultra-low latency for hot data.
     - *Elasticsearch / OpenSearch* — HNSW-based dense vector field; integrates with existing BM25 search.
     - *MongoDB Atlas Vector Search* — managed ANN within MongoDB's document model.
 

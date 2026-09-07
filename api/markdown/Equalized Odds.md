@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Equalized Odds
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Equalized Odds",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:fairness-metrics", "vc:label": "Fairness Metrics"},
-    {"@id": "urn:visionflow:linked:algorithmic-fairness", "vc:label": "Algorithmic Fairness"},
-    {"@id": "urn:visionflow:linked:fairness", "vc:label": "Fairness"},
-    {"@id": "urn:visionflow:linked:bias-mitigation-techniques", "vc:label": "Bias Mitigation Techniques"}
+    {
+      "@id": "urn:visionflow:linked:fairness-metrics",
+      "vc:label": "Fairness Metrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-fairness",
+      "vc:label": "Algorithmic Fairness"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-mitigation-techniques",
+      "vc:label": "Bias Mitigation Techniques"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,14 +50,26 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:algorithmic-fairness", "label": "Algorithmic Fairness"}
+      {
+        "@id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:classification", "label": "Classification"}
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"}
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      }
     ]
   },
   "quality": 0.8,

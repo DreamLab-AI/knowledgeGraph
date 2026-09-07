@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Democratic Participation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -125,72 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:democratic-participation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f4eab47ea10d5b1fb661ca9d9232377b8002c724157cb02857dd9ab1f5988761"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Civic Engagement]]",
-      "resolved": "urn:visionflow:linked:civic-engagement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Community Decision Making]]",
-      "resolved": "urn:visionflow:linked:community-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Voting]]",
-      "resolved": "urn:visionflow:linked:virtual-voting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Governance]]",
-      "resolved": "urn:visionflow:owl:class:digital-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Framework]]",
-      "resolved": "urn:visionflow:owl:class:governance-framework",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:owl:class:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Voting Systems]]",
-      "resolved": "urn:visionflow:owl:class:voting-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The mechanisms and systems enabling citizens to engage in collective decision-making processes within virtual environments, digital governance platforms, and metaverse communities, encompassing voting, deliberation, and civic engagement through immersive technologies and decentralized governance frameworks.

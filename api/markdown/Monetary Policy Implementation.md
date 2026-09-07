@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monetary Policy Implementation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,32 +187,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:monetary-policy-implementation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7ad2b1e57f680423cc2577cb33bbe2bb65af966a121fcd1b6f29b864575e72a9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Economic Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A monetary policy implementation component in the Metaverse domain that enables CentralBankDigitalCurrencyCbdc.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Human Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -101,37 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-human-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c5f87529b20a2a0e4ca7fbbfa258d80e81a5ea70512be6015ca04c2bc4782a1a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A class of technologies for creating photorealistic or stylised computer-generated human representations, encompassing 3D body and face modelling, motion capture-driven animation, procedural skin and cloth simulation, and real-time rendering pipelines. Digital human technology enables believable avatars, virtual actors, and AI-driven conversational agents in spatial computing, entertainment, and training applications.

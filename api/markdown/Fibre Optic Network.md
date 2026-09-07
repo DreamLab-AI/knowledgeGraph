@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fibre Optic Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,16 +7,39 @@ public: true
   "title": "Fibre Optic Network",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:network-infrastructure", "vc:label": "Network Infrastructure"},
-    {"@id": "urn:visionflow:linked:telecommunications-infrastructure", "vc:label": "Telecommunications Infrastructure"},
-    {"@id": "urn:visionflow:linked:satellite-communication", "vc:label": "Satellite Communication"},
-    {"@id": "urn:visionflow:linked:data-centre", "vc:label": "Data Centre"},
-    {"@id": "urn:visionflow:linked:bandwidth", "vc:label": "Bandwidth"},
-    {"@id": "urn:visionflow:linked:latency", "vc:label": "Latency"}
+    {
+      "@id": "urn:visionflow:linked:network-infrastructure",
+      "vc:label": "Network Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:telecommunications-infrastructure",
+      "vc:label": "Telecommunications Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:satellite-communication",
+      "vc:label": "Satellite Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-centre",
+      "vc:label": "Data Centre"
+    },
+    {
+      "@id": "urn:visionflow:linked:bandwidth",
+      "vc:label": "Bandwidth"
+    },
+    {
+      "@id": "urn:visionflow:linked:latency",
+      "vc:label": "Latency"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -40,18 +58,36 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"}
+      {
+        "@id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:satellite-communication", "label": "Satellite Communication"}
+      {
+        "@id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bandwidth", "label": "Bandwidth"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
     ]
   },
   "quality": 0.8,
@@ -104,6 +140,6 @@ public: true
 
   **Sources**:
   - https://www.point-topic.com/post/uk-fttp-premises-in-q1-2026
-  - https://www.ispreview.co.uk/index.php/2026/07/gigabit-broadband-coverage-tops-percent-of-the-uk-in-h1-2026.html
-  - https://www.ispreview.co.uk/index.php/2026/03/openreach-publish-tweaked-march-2025-update-on-uk-fttp-broadband-build.html
+  - https://www.ispreview.co.uk/[private].php/2026/07/gigabit-broadband-coverage-tops-percent-of-the-uk-in-h1-2026.html
+  - https://www.ispreview.co.uk/[private].php/2026/03/openreach-publish-tweaked-march-2025-update-on-uk-fttp-broadband-build.html
   - https://www.broadbandanalyst.co.uk/articles/openreach-full-fibre-broadband-reaches-20m-premises/

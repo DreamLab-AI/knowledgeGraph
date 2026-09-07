@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI-Generated Pathogens
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-generated-pathogens",
   "title": "AI-Generated Pathogens",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Genetic Therapy", "Viral Biology"],
+  "vc:outboundWikilinks": [
+    "Genetic Therapy",
+    "Viral Biology"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "security",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}, {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

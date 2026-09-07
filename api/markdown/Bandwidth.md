@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bandwidth
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bandwidth:2c7210c5b950",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:54b7fc7d12a259d71aa5604b1917f796ecfc96213ce2abb00d0c2d85f0da8aff"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Video Streaming]]",
-      "resolved": "urn:visionflow:linked:video-streaming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Latency]]",
-      "resolved": "urn:visionflow:linked:latency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Protocol]]",
-      "resolved": "urn:visionflow:linked:network-protocol",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The maximum rate at which data can be transferred over a network path or communication channel, commonly measured in bits per second. In signal processing it also refers to the range of frequencies a channel can carry.

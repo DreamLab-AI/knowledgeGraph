@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ETSI_Domain_Governance___Ethics
----
-
-# ETSI Domain: Governance & Ethics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,107 +171,6 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-governance-and-ethics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c7d2d5c3b0daa6076457b740d139914e9dfa168ee9e2cd0d68311837d12726dc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethical Decision-Making]]",
-      "resolved": "urn:visionflow:linked:ethical-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ethical Principles]]",
-      "resolved": "urn:visionflow:linked:ethical-principles",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ethics & Law]]",
-      "resolved": "urn:visionflow:linked:ethics-and-law",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ethics Committee]]",
-      "resolved": "urn:visionflow:linked:ethics-committee",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR MEC 032]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Governance Models]]",
-      "resolved": "urn:visionflow:linked:governance-models",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stakeholder Accountability]]",
-      "resolved": "urn:visionflow:linked:stakeholder-accountability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stakeholder Engagement]]",
-      "resolved": "urn:visionflow:linked:stakeholder-engagement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Value Framework]]",
-      "resolved": "urn:visionflow:linked:value-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Metaverse Domain Taxonomy]]",
-      "resolved": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:owl:class:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Board]]",
-      "resolved": "urn:visionflow:owl:class:governance-board",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Value Alignment]]",
-      "resolved": "urn:visionflow:owl:class:value-alignment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Crossover domain for ETSI metaverse categorisation addressing ethical governance frameworks, responsible decision-making processes, and value-aligned organisational structures. This domain ensures [[Ethical Governance]], [[Stakeholder Alignment]], [[Fairness Assurance]], and [[Impact Assessment]] across technology deployment.
 
@@ -346,7 +238,7 @@ aliases:
   - North England innovation potential
   - Manchester's established digital technology cluster and media production infrastructure position it as potential hub for virtual world development and standards implementation
   - Leeds and Sheffield possess emerging strengths in data management and AI governance, relevant to metaverse infrastructure layers
-  - Newcastle's digital innovation initiatives could contribute to human interface systems and accessibility standards development
+  - Newcastle's digital innovation initiatives [private] contribute to human interface systems and accessibility standards development
   - Regional universities (Manchester Metropolitan, Leeds Beckett, Sheffield Hallam) represent underutilised resources for metaverse ethics and governance research
 
   ## Future Directions

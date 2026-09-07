@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reflection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Reflection",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "AgenticWorkflow" },
-    { "@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "ChainOfThought" },
-    { "@id": "urn:visionflow:linked:self-consistency", "vc:label": "SelfConsistency" },
-    { "@id": "urn:visionflow:linked:golden-set", "vc:label": "GoldenSet" }
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "AgenticWorkflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "ChainOfThought"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-consistency",
+      "vc:label": "SelfConsistency"
+    },
+    {
+      "@id": "urn:visionflow:linked:golden-set",
+      "vc:label": "GoldenSet"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-09T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-09T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,20 +44,38 @@ public: true
   "definition": "An agent pattern in which a model examines its own prior output, judges it against the goal and any available evidence, and then revises the work in a further pass. Reflection turns generation into a loop rather than a single shot: the agent produces a draft, critiques that draft — spotting errors, gaps, unmet constraints, or weak reasoning — and feeds the critique back as input to an improved attempt. It is distinguished from ordinary multi-step prompting by the fact that the intermediate judgement is about the agent's own work, making the agent both author and reviewer within the same task.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": { "@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:agentic-workflow",
+    "label": "Agentic Workflow"
+  },
   "relations": {
     "requires": [
-      { "@id": "urn:ngm:class:large-language-model", "label": "Large Language Model" }
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:chain-of-thought", "label": "Chain-of-Thought" }
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:self-consistency", "label": "Self-Consistency" }
+      {
+        "@id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:golden-set", "label": "Golden Set" },
-      { "@id": "urn:ngm:class:guardrail", "label": "Guardrail" }
+      {
+        "@id": "urn:ngm:class:golden-set",
+        "label": "Golden Set"
+      },
+      {
+        "@id": "urn:ngm:class:guardrail",
+        "label": "Guardrail"
+      }
     ]
   },
   "quality": 0.75,

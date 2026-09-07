@@ -1,8 +1,3 @@
----
-public: true
----
-
-# University of Sheffield
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:university-of-sheffield:c67ddb3ab9b0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b14c0e4cce079e57aee65ff3a95c7b2fde75c5dbfa02e9a4bcf92fb039036e9e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[United States]]",
-      "resolved": "urn:visionflow:linked:united-states",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A public research university in Sheffield, England, and a member of the Russell Group of research-intensive universities. It is known for engineering, materials science, and natural language processing research.

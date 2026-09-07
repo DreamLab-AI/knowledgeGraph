@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Voice Memo
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,24 +63,60 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"},
-      {"@id": "urn:ngm:class:asynchronous-video", "label": "Asynchronous Video"},
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
-      {"@id": "urn:ngm:class:audio-technology", "label": "Audio Technology"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-video",
+        "label": "Asynchronous Video"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:audio-technology",
+        "label": "Audio Technology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:meeting-transcription", "label": "Meeting Transcription"},
-      {"@id": "urn:ngm:class:real-time-transcription", "label": "Real-time Transcription"}
+      {
+        "@id": "urn:ngm:class:meeting-transcription",
+        "label": "Meeting Transcription"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-transcription",
+        "label": "Real-time Transcription"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "provenance": {
@@ -95,42 +126,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:voice-memo:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:94ff7db92bcd3ceb16a1e50027c29c4ee331025b7794617995cd84c4cc3ede2f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collaboration Tools]]",
-      "resolved": "urn:visionflow:linked:collaboration-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asynchronous Collaboration]]",
-      "resolved": "urn:visionflow:owl:class:asynchronous-collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TelecollaborationDomain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Asynchronous audio communication allowing users to record and share voice messages, providing richer context than text while maintaining time flexibility.

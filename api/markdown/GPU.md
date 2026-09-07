@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GPU
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -220,57 +215,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gpu:e3c5ba51dba8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:45c136d8f686da8a20bdaaf04901279178e2518f01466eba25a5a51bf8c51b5a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Shader]]",
-      "resolved": "urn:visionflow:linked:shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rasterization]]",
-      "resolved": "urn:visionflow:linked:rasterization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ray Tracing]]",
-      "resolved": "urn:visionflow:linked:ray-tracing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graphics Processing Unit]]",
-      "resolved": "urn:visionflow:linked:graphics-processing-unit",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Graphics Processing]]",
-      "resolved": "urn:visionflow:linked:graphics-processing",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A GPU (Graphics Processing Unit) is a highly parallel processor optimised for the throughput-oriented computation required to render images and to accelerate data-parallel workloads.

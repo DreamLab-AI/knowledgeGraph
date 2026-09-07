@@ -1,11 +1,14 @@
----
-public: true
----
-
-# API Versioning
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:api-versioning", "@type": "Page", "title": "API Versioning", "vc:slug": "api-versioning", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:api-versioning",
+  "@type": "Page",
+  "title": "API Versioning",
+  "vc:slug": "api-versioning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# W3C RDF 1.1
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:w-3-c-rdf-1-1:f87870bcae4a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1e20f9dc5350a178c90e23af11430322d9a6f63058aec2afce2e953fa18941a3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[W3C]]",
-      "resolved": "urn:visionflow:linked:w-3-c",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - W3C RDF 1.1 is the Resource Description Framework, a data model for representing information about resources as subject-predicate-object triples on the Web.

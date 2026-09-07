@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mechanical Load
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A mechanical load is the external force, torque, or resistance that a motor, actuator, or structure must work against during operation. Characterised by inertia, friction, gravity, and process forces, it determines the torque-speed demand placed on a drive system. Accurate load characterisation is essential for sizing motors, selecting gearing, and designing stable control.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:dc-servo-motor", "label": "DC Servo Motor"}, {"@id": "urn:ngm:class:electric-motor", "label": "Electric Motor"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:electric-motor",
+        "label": "Electric Motor"
+      }
+    ]
   },
   "quality": 0.72
 }

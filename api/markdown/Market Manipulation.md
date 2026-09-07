@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Market Manipulation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:market-manipulation", "@type":"Page", "title":"Market Manipulation", "vc:slug":"market-manipulation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:market-manipulation",
+  "@type": "Page",
+  "title": "Market Manipulation",
+  "vc:slug": "market-manipulation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

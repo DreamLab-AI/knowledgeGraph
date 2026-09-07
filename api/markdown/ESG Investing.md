@@ -1,8 +1,3 @@
----
-public: true
----
-
-# esg investing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -222,7 +217,7 @@ public: true
 - ### Mechanisms and Instruments
   - **[[Green Bond]]** — fixed-income instruments where proceeds are earmarked for environmental projects; governed by the [[ICMA Green Bond Principles]]
   - **Sustainability-Linked Bond (SLB)** — coupon tied to issuer achieving specified ESG KPIs, structurally distinct from use-of-proceeds green bonds
-  - **ESG Exchange-Traded Fund (ETF)** — passive fund tracking an ESG-screened or ESG-weighted index
+  - **ESG Exchange-Traded Fund (ETF)** — passive fund tracking an ESG-screened or ESG-weighted [private]
   - **Thematic fund** — concentrated exposure to specific ESG themes (clean energy, water, gender diversity)
   - **[[Carbon Credit]]** — tradeable permit representing one tonne of CO₂ equivalent reduced or avoided; links to [[Emissions Trading Scheme]] mechanisms
   - **Tokenised ESG assets** — blockchain-based tokens embedding verifiable sustainability data in smart contracts, enabling fractional ownership of [[Green Bond]]s or carbon credits and real-time impact reporting (see [[Tokenization]])
@@ -231,7 +226,7 @@ public: true
   - **Institutional asset management** — pension funds, sovereign wealth funds, and insurance companies integrating ESG to manage long-horizon climate and regulatory risk in line with fiduciary duty redefinitions
   - **Retail investment products** — ESG-labelled mutual funds and ETFs sold to individual investors seeking alignment between portfolio and personal values
   - **Corporate borrowing** — sustainability-linked loans with interest rates tied to ESG performance targets (e.g., emissions reduction, gender pay parity)
-  - **Index construction** — major index providers (MSCI, FTSE Russell, S&P) constructing ESG variants of flagship indices used as passive benchmarks
+  - **Index construction** — major [private] providers (MSCI, FTSE Russell, S&P) constructing ESG variants of flagship indices used as passive benchmarks
   - **Regulatory compliance** — fund managers in the EU classifying products under [[SFDR]] Article 6, 8, or 9 to disclose sustainability ambition to retail investors
   - **Stewardship campaigns** — coordinated [[Proxy Voting]] and shareholder resolutions on climate strategy, executive pay, and deforestation at annual general meetings
   - **Supply-chain ESG due diligence** — buyers requiring suppliers to meet ESG standards as a condition of contract, using [[Non-Financial Reporting]] data to verify performance

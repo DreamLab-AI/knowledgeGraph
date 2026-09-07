@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - EnvironmentalAssessment
----
-
-# Environmental Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -106,37 +99,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:environmental-assessment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ced101a6a81ca46abd2a928e83d90e66af8af469423daf042a11fc6bac6f9af3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The systematic evaluation of the environmental impact of technological systems, infrastructure, or projects, measuring metrics such as energy consumption, carbon footprint, and e-waste generation. In spatial computing and metaverse contexts, environmental assessment applies to data centre operations, XR hardware lifecycles, and the cumulative sustainability profile of immersive platform deployments.

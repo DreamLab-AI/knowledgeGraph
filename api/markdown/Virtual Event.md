@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Event
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,36 +177,11 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-event:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6b534fa23ab2c3c1255c914c1a1a3ae092b69dc01111354b85c965273e37115b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A Virtual Event is a digitally mediated gathering in which geographically distributed participants convene within a shared [[Virtual Environment]] to engage in social, educational, commercial, or cultural activities in real or near-real time. The class spans a spectrum from simple [[Webinar]] presentations and live-streamed concerts through avatar-populated social spaces to fully embodied multi-user [[Extended Reality]] experiences. It is distinguished from asynchronous digital content by requiring simultaneous presence and bidirectional communication, and from static virtual spaces by incorporating rich media, optional three-dimensional spatial representation, and the social dynamics of co-presence. Design draws on [[Human-Computer Interaction]], streaming media infrastructure, event management, and [[Spatial Computing]].
 
 - ### Overview
-  - Virtual Events emerged as a distinct category when event professionals and platform developers recognised that digitally mediated gatherings could replicate — and in some respects surpass — the value propositions of physical gatherings, including reach, cost-efficiency, and data capture.
+  - Virtual Events emerged as a distinct category when event professionals and platform developers recognised that digitally mediated gatherings [private] replicate — and in some respects surpass — the value propositions of physical gatherings, including reach, cost-efficiency, and data capture.
   - Unlike a simple video call, a Virtual Event is purposively structured: it has a programme, attendees with differentiated roles (organiser, speaker, exhibitor, participant), a virtual venue with discrete spaces, and often a post-event lifecycle (recordings, on-demand access, follow-up networking).
   - The concept gained mainstream adoption following mass event cancellations in 2020–2021, driving rapid platform maturation across providers such as Hopin, Gather.town, Spatial, Microsoft Mesh, and NVIDIA Omniverse-based environments.
   - At the technically sophisticated end, Virtual Events shade into persistent [[Metaverse]] spaces where the boundary between "event" and "always-on world" dissolves; at the simpler end, they encompass structured [[Video Conferencing]] sessions with registration, ticketing, and analytics layers.

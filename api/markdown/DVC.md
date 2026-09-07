@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DVC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,49 +7,178 @@ public: true
   "title": "DVC",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:checkpoints", "vc:label": "Checkpoints"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:data-versioning", "vc:label": "Data Versioning"},
-    {"@id": "urn:visionflow:linked:experiment-tracking", "vc:label": "Experiment Tracking"},
-    {"@id": "urn:visionflow:linked:ml-flow", "vc:label": "MLflow"},
-    {"@id": "urn:visionflow:linked:model-registry", "vc:label": "Model Registry"},
-    {"@id": "urn:visionflow:linked:git", "vc:label": "Git"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:continuous-integration", "vc:label": "Continuous Integration"},
-    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:visionflow:linked:ai-infrastructure", "vc:label": "AI Infrastructure"},
-    {"@id": "urn:visionflow:linked:weights-and-biases", "vc:label": "Weights and Biases"},
-    {"@id": "urn:visionflow:linked:model-versioning", "vc:label": "Model Versioning"},
-    {"@id": "urn:visionflow:linked:reproducibility", "vc:label": "Reproducibility"},
-    {"@id": "urn:visionflow:linked:artifact-metadata", "vc:label": "Artifact Metadata"},
-    {"@id": "urn:visionflow:linked:amazon-s3", "vc:label": "Amazon S3"},
-    {"@id": "urn:visionflow:linked:google-cloud-storage", "vc:label": "Google Cloud Storage"},
-    {"@id": "urn:visionflow:linked:azure-blob-storage", "vc:label": "Azure Blob Storage"},
-    {"@id": "urn:visionflow:linked:hyperparameter-tuning", "vc:label": "Hyperparameter Tuning"},
-    {"@id": "urn:visionflow:linked:ci-cd-pipeline", "vc:label": "CI/CD Pipeline"},
-    {"@id": "urn:visionflow:linked:feature-store", "vc:label": "Feature Store"},
-    {"@id": "urn:visionflow:linked:data-lineage", "vc:label": "Data Lineage"},
-    {"@id": "urn:visionflow:linked:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:lakeFS", "vc:label": "lakeFS"},
-    {"@id": "urn:visionflow:linked:pachyderm", "vc:label": "Pachyderm"},
-    {"@id": "urn:visionflow:linked:kubeflow", "vc:label": "Kubeflow"},
-    {"@id": "urn:visionflow:linked:airflow", "vc:label": "Apache Airflow"},
-    {"@id": "urn:visionflow:linked:kubernetes", "vc:label": "Kubernetes"},
-    {"@id": "urn:visionflow:linked:docker", "vc:label": "Docker"},
-    {"@id": "urn:visionflow:linked:jupyter", "vc:label": "Jupyter"},
-    {"@id": "urn:visionflow:linked:neptune-ai", "vc:label": "Neptune.ai"},
-    {"@id": "urn:visionflow:linked:comet-ml", "vc:label": "Comet ML"},
-    {"@id": "urn:visionflow:linked:github-actions", "vc:label": "GitHub Actions"},
-    {"@id": "urn:visionflow:linked:model-serving", "vc:label": "Model Serving"},
-    {"@id": "urn:visionflow:linked:hugging-face-hub", "vc:label": "Hugging Face Hub"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-tuning"},
-    {"@id": "urn:visionflow:linked:machine-learning-pipeline", "vc:label": "Machine Learning Pipeline"},
-    {"@id": "urn:visionflow:owl:class:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:mlops-domain", "vc:label": "MLOpsDomain"},
-    {"@id": "urn:visionflow:owl:class:infrastructure-layer", "vc:label": "InfrastructureLayer"},
-    {"@id": "urn:visionflow:owl:class:algorithm-layer", "vc:label": "AlgorithmLayer"}
+    {
+      "@id": "urn:visionflow:linked:checkpoints",
+      "vc:label": "Checkpoints"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-versioning",
+      "vc:label": "Data Versioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:experiment-tracking",
+      "vc:label": "Experiment Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:ml-flow",
+      "vc:label": "MLflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-registry",
+      "vc:label": "Model Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:git",
+      "vc:label": "Git"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-integration",
+      "vc:label": "Continuous Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-infrastructure",
+      "vc:label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:weights-and-biases",
+      "vc:label": "Weights and Biases"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-versioning",
+      "vc:label": "Model Versioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducibility",
+      "vc:label": "Reproducibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:artifact-metadata",
+      "vc:label": "Artifact Metadata"
+    },
+    {
+      "@id": "urn:visionflow:linked:amazon-s3",
+      "vc:label": "Amazon S3"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-cloud-storage",
+      "vc:label": "Google Cloud Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:azure-blob-storage",
+      "vc:label": "Azure Blob Storage"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ci-cd-pipeline",
+      "vc:label": "CI/CD Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-store",
+      "vc:label": "Feature Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-lineage",
+      "vc:label": "Data Lineage"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:lakeFS",
+      "vc:label": "lakeFS"
+    },
+    {
+      "@id": "urn:visionflow:linked:pachyderm",
+      "vc:label": "Pachyderm"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubeflow",
+      "vc:label": "Kubeflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:airflow",
+      "vc:label": "Apache Airflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubernetes",
+      "vc:label": "Kubernetes"
+    },
+    {
+      "@id": "urn:visionflow:linked:docker",
+      "vc:label": "Docker"
+    },
+    {
+      "@id": "urn:visionflow:linked:jupyter",
+      "vc:label": "Jupyter"
+    },
+    {
+      "@id": "urn:visionflow:linked:neptune-ai",
+      "vc:label": "Neptune.ai"
+    },
+    {
+      "@id": "urn:visionflow:linked:comet-ml",
+      "vc:label": "Comet ML"
+    },
+    {
+      "@id": "urn:visionflow:linked:github-actions",
+      "vc:label": "GitHub Actions"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-serving",
+      "vc:label": "Model Serving"
+    },
+    {
+      "@id": "urn:visionflow:linked:hugging-face-hub",
+      "vc:label": "Hugging Face Hub"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-pipeline",
+      "vc:label": "Machine Learning Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mlops-domain",
+      "vc:label": "MLOpsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:infrastructure-layer",
+      "vc:label": "InfrastructureLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -70,51 +194,138 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-    {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:mlops",
+      "label": "MLOps"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"},
-      {"@id": "urn:ngm:class:artifact-metadata", "label": "Artifact Metadata"},
-      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"}
+      {
+        "@id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:artifact-metadata",
+        "label": "Artifact Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:git", "label": "Git"},
-      {"@id": "urn:ngm:class:remote-storage", "label": "Remote Storage"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:remote-storage",
+        "label": "Remote Storage"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"},
-      {"@id": "urn:ngm:class:model-versioning", "label": "Model Versioning"},
-      {"@id": "urn:ngm:class:checkpoints", "label": "Checkpoints"},
-      {"@id": "urn:ngm:class:ci-cd-pipeline", "label": "CI/CD Pipeline"},
-      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"}
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "@id": "urn:ngm:class:ci-cd-pipeline",
+        "label": "CI/CD Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:amazon-s3", "label": "Amazon S3"},
-      {"@id": "urn:ngm:class:google-cloud-storage", "label": "Google Cloud Storage"},
-      {"@id": "urn:ngm:class:azure-blob-storage", "label": "Azure Blob Storage"},
-      {"@id": "urn:ngm:class:git", "label": "Git"}
+      {
+        "@id": "urn:ngm:class:amazon-s3",
+        "label": "Amazon S3"
+      },
+      {
+        "@id": "urn:ngm:class:google-cloud-storage",
+        "label": "Google Cloud Storage"
+      },
+      {
+        "@id": "urn:ngm:class:azure-blob-storage",
+        "label": "Azure Blob Storage"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mlflow", "label": "MLflow"},
-      {"@id": "urn:ngm:class:weights-and-biases", "label": "Weights and Biases"},
-      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"},
-      {"@id": "urn:ngm:class:checkpoints", "label": "Checkpoints"},
-      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"},
-      {"@id": "urn:ngm:class:pachyderm", "label": "Pachyderm"},
-      {"@id": "urn:ngm:class:kubeflow", "label": "Kubeflow"},
-      {"@id": "urn:ngm:class:lakeFS", "label": "lakeFS"}
+      {
+        "@id": "urn:ngm:class:mlflow",
+        "label": "MLflow"
+      },
+      {
+        "@id": "urn:ngm:class:weights-and-biases",
+        "label": "Weights and Biases"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "@id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "@id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:pachyderm",
+        "label": "Pachyderm"
+      },
+      {
+        "@id": "urn:ngm:class:kubeflow",
+        "label": "Kubeflow"
+      },
+      {
+        "@id": "urn:ngm:class:lakeFS",
+        "label": "lakeFS"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -239,7 +450,7 @@ public: true
 
   - ## About
   - DVC (Data Version Control) is an open-source command-line tool and [[AI Infrastructure]] layer that closes the reproducibility gap in [[Machine Learning Discipline]] by extending [[Git]]'s lightweight branching and tagging model to binary artefacts and [[Data Pipeline]] definitions. Its design philosophy is intentionally conservative: rather than building a new versioning system from scratch, DVC parasites on the well-understood semantics of Git — commits, branches, tags, and stashes — adding only the minimum additional machinery needed to track large binary objects and pipeline execution state.
-  - The motivation for DVC's architecture can be understood through the lens of the reproducibility crisis that became visible in ML research around 2015-2017. Teams working on image classification, NLP, and reinforcement learning consistently found that they could not reproduce results from their own experiments conducted six months earlier, because the combination of code version, training dataset version, and random seed was not recorded together in any system. Code lived in Git; datasets lived on shared network drives with no version history; model weights were overwritten on every training run; and the mapping between a Git commit and the dataset that produced a given model was recorded nowhere except possibly in a researcher's lab notebook.
+  - The motivation for DVC's architecture can be understood through the lens of the reproducibility crisis that became visible in ML research around 2015-2017. Teams working on image classification, NLP, and reinforcement learning consistently found that they [private] not reproduce results from their own experiments conducted six months earlier, because the combination of code version, training dataset version, and random seed was not recorded together in any system. Code lived in Git; datasets lived on shared network drives with no version history; model weights were overwritten on every training run; and the mapping between a Git commit and the dataset that produced a given model was recorded nowhere except possibly in a researcher's lab notebook.
   - DVC addresses this through the `.dvc` pointer file: when `dvc add large-dataset.tar.gz` is executed, DVC computes the SHA-256 hash of the file, stores a copy in the local cache (`.dvc/cache/`), creates a tiny `large-dataset.tar.gz.dvc` YAML file containing the hash and file size, and adds the original file to `.gitignore`. The `.dvc` file is committed to Git. When a colleague clones the repository and runs `dvc pull`, DVC reads the hash from the `.dvc` file and fetches the exact corresponding object from the configured remote storage — providing the same semantics as `git clone` + `git checkout` but for binary files.
   - This design has two important properties. First, it is storage-efficient: the DVC cache uses hard links or symlinks where supported by the filesystem, so multiple branches referencing the same dataset version incur no additional storage cost. Second, it is remote-agnostic: the same pointer file works regardless of whether the remote is [[Amazon S3]], a university NFS share, or a local external hard drive, enabling DVC to span the full spectrum of computing environments from a researcher's laptop to a cloud HPC cluster.
   - The `dvc.yaml` pipeline system extends these principles to multi-step ML workflows. The file format is deliberately minimal and human-readable: a typical `dvc.yaml` for a standard supervised learning pipeline might define five stages — data download, data preprocessing, feature engineering, model training, and model evaluation — each with two to ten declared dependencies and one to three declared outputs. The simplicity of the YAML format is intentional: it should be possible for a new team member to read a `dvc.yaml` and immediately understand the pipeline's structure, without deep knowledge of DVC's internals. Rather than documenting preprocessing steps in a README or shell script that may drift out of sync with the actual commands used, `dvc.yaml` is the authoritative record of the pipeline: each stage's command, its declared inputs (both code and data files), its parameter keys (loaded from `params.yaml`), and its expected outputs are all version-controlled alongside the code. Running `dvc repro` executes the pipeline in dependency order, skipping stages whose inputs are unchanged, and updates `dvc.lock` with the hashes of all inputs and outputs. The combination of `dvc.yaml` and `dvc.lock` committed to Git provides a complete computational provenance record: any future reader can reconstruct exactly what commands were run, on what input versions, to produce a given model artifact.
@@ -256,7 +467,7 @@ public: true
   - DVC also integrates with server-backed trackers such as [[MLflow]], [[Weights and Biases]], [[Neptune.ai]], and [[Comet ML]] when teams require richer dashboards or centralised multi-user access, making it interoperable with the broader [[MLOps]] tool ecosystem rather than a replacement for it.
 
   - ## Components / Architecture
-  - DVC's architecture divides into six subsystems that interact through [[Git]] and the file hash index. Understanding these subsystems at a technical level is important for practitioners who need to integrate DVC into existing data engineering or software engineering workflows, as each subsystem has different performance characteristics and operational requirements.
+  - DVC's architecture divides into six subsystems that interact through [[Git]] and the file hash [private]. Understanding these subsystems at a technical level is important for practitioners who need to integrate DVC into existing data engineering or software engineering workflows, as each subsystem has different performance characteristics and operational requirements.
   - The architecture is deliberately layered: each subsystem can be adopted independently, so teams can start with data versioning alone (`.dvc` files) and progressively add pipeline management, then experiment tracking, without having to adopt the entire system at once. This incremental adoption model has been a key factor in DVC's uptake in academic and industry environments where introducing new tooling faces significant organisational friction.
   - **Content-Addressable Storage (CAS) Layer**: Every file tracked by DVC is identified by its MD5 (default) or SHA-256 hash, stored in the DVC cache at `.dvc/cache`. Cached objects are referenced by their content hash, so identical files across experiments are stored only once. The remote storage mirrors this CAS layout, meaning pushes and pulls are efficient: only objects absent from the remote are transferred. The cache directory structure uses the first two characters of the hash as a subdirectory (following the Git object store convention), placing the object at `.dvc/cache/ab/cdef1234...` for a file with hash `abcdef1234...`. This two-level directory structure limits directory entry counts to at most 256 entries at the top level, improving filesystem performance on systems where directory scanning is slow (some distributed filesystems). For very large models or datasets, DVC also supports chunked file storage where a single large file is split into fixed-size chunks that are independently cached, enabling partial updates when only part of a large file changes.
   - **Pointer File Layer (`.dvc` files and `dvc.lock`)**: When `dvc add dataset.csv` is run, DVC writes a `dataset.csv.dvc` file containing the hash and file size, adds `dataset.csv` to `.gitignore`, and stores the cached copy. `dvc.lock` serves the same role for pipeline outputs: after `dvc repro`, every output in `dvc.yaml` gets its hash recorded in `dvc.lock`, which is committed to Git as the pipeline's reproducibility receipt.
@@ -301,7 +512,7 @@ public: true
   - DVC's remote storage abstraction can be characterised as a distributed content-addressed store with write-once semantics: once an object with a given hash is written to remote, it is never mutated, only potentially replicated or garbage-collected. This property, combined with [[Git]]'s append-only history, provides a provenance chain that is tamper-evident.
   - The experiment comparison operation `dvc exp show` computes a relational projection over the experiment metadata table, where each row is an experiment identified by its Git stash hash and each column is a metric or parameter. Ranking by a metric value is equivalent to an ORDER BY query over this table. The `dvc exp apply` operation is a `git stash pop` followed by a `dvc checkout` — a multi-version tuple retrieval from the versioned experiment store. This relational interpretation makes clear that DVC's experiment management subsystem is equivalent in expressiveness to a lightweight columnar experiment database with Git as the storage backend and content-addressing as the indexing mechanism.
   - One important limitation of the DVC formal model is that it assumes deterministic pipeline stages: given the same inputs, a stage always produces the same outputs. In practice, many ML training stages are non-deterministic due to GPU floating-point non-determinism, random seed sensitivity, and framework-level non-determinism in distributed training. DVC addresses this partially through `params.yaml` (which can include random seeds) and `dvc.yaml` stage environments (which can pin framework versions), but bitwise reproducibility of model weights across different hardware configurations remains outside DVC's formal guarantees and requires additional discipline at the experiment level.
-  - The run-cache's correctness guarantee depends on the assumption that the file hash faithfully identifies semantic content: two files with the same hash produce the same output when used as stage inputs. This is guaranteed by the hash function's collision resistance (SHA-256 is collision-resistant under standard cryptographic assumptions) but could be violated in adversarial contexts where a malicious actor substitutes a file with an identical hash. For non-adversarial research environments, this risk is negligible; for security-sensitive ML systems in production, additional integrity verification layers (e.g., hardware security modules signing dataset hashes) may be warranted.
+  - The run-cache's correctness guarantee depends on the assumption that the file hash faithfully identifies semantic content: two files with the same hash produce the same output when used as stage inputs. This is guaranteed by the hash function's collision resistance (SHA-256 is collision-resistant under standard cryptographic assumptions) but [private] be violated in adversarial contexts where a malicious actor substitutes a file with an identical hash. For non-adversarial research environments, this risk is negligible; for security-sensitive ML systems in production, additional integrity verification layers (e.g., hardware security modules signing dataset hashes) may be warranted.
 
   - ## Security and Compliance
   - DVC's security posture is shaped by its distributed, Git-native architecture. Unlike server-centric MLOps platforms (Databricks, Vertex AI, SageMaker) that centralise data and experiment metadata in a managed cloud service, DVC stores all metadata in Git and all data in user-controlled storage backends. This architecture has both security advantages and risks that practitioners must understand.

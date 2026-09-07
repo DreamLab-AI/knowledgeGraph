@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Number Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,62 +167,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:number-theory:eaa34c05f135",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:221b3348710b050fc6a35638d5b514e56d76eefa161a935c54fc734dfa709dbe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Prime Number]]",
-      "resolved": "urn:visionflow:linked:prime-number",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Modular Arithmetic]]",
-      "resolved": "urn:visionflow:linked:modular-arithmetic",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptography Domain]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Public Key Cryptography]]",
-      "resolved": "urn:visionflow:linked:public-key-cryptography",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Algebra]]",
-      "resolved": "urn:visionflow:linked:algebra",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Measure Theory]]",
-      "resolved": "urn:visionflow:linked:measure-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Number Theory is the branch of pure mathematics concerned with the properties of integers and related structures, including divisibility, prime numbers, congruences and Diophantine equations. It ranges from elementary results, such as the fundamental theorem of arithmetic, to deep areas like analytic and algebraic number theory. Beyond its theoretical importance, it underpins much of modern cryptography, where the difficulty of certain number-theoretic problems provides security.

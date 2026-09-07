@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI Domain Application + Tourism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -101,67 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-application-tourism:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:262ae10c3c336f616f4749e17fc4b5c732b6693885a54d0f1a3725b5de3193e0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cultural Experience Categorization]]",
-      "resolved": "urn:visionflow:linked:cultural-experience-categorization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI Domain Taxonomy]]",
-      "resolved": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GS MEC]]",
-      "resolved": "urn:visionflow:linked:etsi-gs-mec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tourism Application Classification]]",
-      "resolved": "urn:visionflow:linked:tourism-application-classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualSocietyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-society",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cross-domain marker for metaverse application components focused on tourism and hospitality including virtual tours, destination previews, cultural heritage experiences, and travel planning platforms in immersive environments.

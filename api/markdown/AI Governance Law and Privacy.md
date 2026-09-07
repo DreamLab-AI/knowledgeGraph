@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Politics, Law, Privacy]]
-# AI Governance Law and Privacy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -237,57 +231,6 @@ elevatedFrom:: [[Politics, Law, Privacy]]
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:politics-law-privacy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9c314a9c96a6175299dd6573cb172e099cf4741c4521230ad86aa1e7cac9dcf3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[pol]]",
-      "resolved": "urn:visionflow:linked:pol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[presentation]]",
-      "resolved": "urn:visionflow:linked:presentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Intellectual Property Rights Framework]]",
-      "resolved": "urn:visionflow:owl:class:copyright",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trust and Safety]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-safety",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The intersecting domain of political governance, legal frameworks, and individual privacy rights as they apply to AI and digital technologies. This cluster addresses how legislation (e.g., EU AI Act, GDPR), regulatory enforcement, and political economy shape what AI systems are permitted to do, how data about individuals is collected and used, and how citizens can exercise rights against automated decision-making and surveillance.
 
@@ -350,13 +293,13 @@ elevatedFrom:: [[Politics, Law, Privacy]]
   - # Global politics
   This currently borrows heavily from [the AI breakdown podcast](https://www.youtube.com/watch?v=5clOHBo8HP8), is an AI generated placeholder, and needs considerably more more.
   The examination of AI's implications on societal structures should undoubtedly receive the necessary attention. Soros's language and perception of reality seem particularly interesting, especially in the era of AI. He emphasizes his belief in reality and its importance in providing moral guidance, a concept that seems increasingly challenged in the age of AI.
-  In an opinion piece for The Hill by Bill Drexel and Caleb Withers, titled \"Generative AI could be an authoritarian breakthrough in brainwashing,\" the authors argue that the concern isn't just external attempts to influence U.S. elections, but the impact on the populations within authoritarian countries. They posit that foreign disinformation efforts by Chinese and Russian entities are only the tip of the iceberg, with Beijing and Moscow disseminating massive amounts of propaganda to their own populations. The authors also cite instances of AI-enabled propaganda and misinformation campaigns, both in the context of undermining democracies and consolidating control within authoritarian states.
+  In an opinion piece for The Hill by Bill Drexel and Caleb Withers, titled \"Generative AI [private] be an authoritarian breakthrough in brainwashing,\" the authors argue that the concern isn't just external attempts to influence U.S. elections, but the impact on the populations within authoritarian countries. They posit that foreign disinformation efforts by Chinese and Russian entities are only the tip of the iceberg, with Beijing and Moscow disseminating massive amounts of propaganda to their own populations. The authors also cite instances of AI-enabled propaganda and misinformation campaigns, both in the context of undermining democracies and consolidating control within authoritarian states.
   Another critical concern around AI and authoritarianism is the potential for increased surveillance. With the integration of AI and data scraping techniques, governments can employ extensive teams to facilitate unprecedented levels of surveillance, compromising privacy. Such concerns are raised in the works of authors like Daniel Oberhaus, who posits that authoritarian regimes may have an advantage in AI due to their willingness to exploit data, such as advanced facial recognition data, in ways that open societies might not.
   Furthermore, the issue of worker surveillance, especially with the rise of remote work regimes, has garnered the attention of various entities, including the White House. This is due to concerns over automated systems that employers are using to monitor their remote workers, highlighting a less benign context of surveillance.
   One way AI might foster authoritarianism is by supporting the ideology of closed societies or authoritarian regimes, such as China. These societies may leverage their global influence to disseminate their particular AI model, aligning it with their motivations and goals. The Carnegie Endowment for International Peace points out that for most countries, AI technology is viewed as an economic development factor that determines their standing in the global technology race, rather than as an ideological preference.
   Another concern is the fear that AI will make centrally planned economies seem viable, where past attempts failed due to the lack of data. This idea was discussed in a conversation between Peter Thiel and Reed Hoffman hosted by Neil Ferguson at Stanford in 2018. Thiel posited that AI appears to favor centralization, an aspect that supports the principles of central planning.
-  On the other hand, some suggest that capitalist competition could result in the creation of AGI that cannot be controlled. Dr. Jeffrey Hinton, a vocal advocate of this view, argues that AI's potential to disrupt business models could drive companies to recklessly pursue advancements in AI to stay competitive. This could lead to increased state power as people become more reliant on the state in an AI-dominated economy, potentially resulting in increased authoritarianism.
-  However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+  On the other hand, some suggest that capitalist competition [private] result in the creation of AGI that cannot be controlled. Dr. Jeffrey Hinton, a vocal advocate of this view, argues that AI's potential to disrupt business models [private] drive companies to recklessly pursue advancements in AI to stay competitive. This [private] lead to increased state power as people become more reliant on the state in an AI-dominated economy, potentially resulting in increased authoritarianism.
+  However, AI [private] also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI [private] also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
   Yet, for AI to achieve its full potential in promoting freedom, the integrity of the information it disseminates must be uncompromised, and its accessibility must be ensured despite potential firewalls.
   Given these diverse viewpoints, it seems that the potential of AI to either aid authoritarianism or promote freedom is yet to be fully explored. However, the inherent ability of democracies to encourage disagreement and diverse perspectives may serve as a counterbalance to the potential of AI for authoritarian control. Moreover, AI's capacity as a catalytic force in societal organization should not be underestimated. The increasing discourse around AI and its implications for labor and technology usage suggests that AI technology is reshaping the world in ways that were unimaginable just a few years ago. Its capabilities in data analysis, decision making, and automation are transforming industries and redefining the scope of what's possible.
   An argument often made in favor of democratization of AI technology is that it should be made open-source and freely available, thus creating a challenging framework for global political incumbents. This perspective is grounded on the belief that technology
@@ -364,8 +307,8 @@ elevatedFrom:: [[Politics, Law, Privacy]]
   - must be accessible to everyone to mitigate the risks of misuse and ensure fair benefits distribution.
   Open-source AI can be a vehicle for widespread innovation. It can spur creativity, leading to breakthroughs in various sectors, from healthcare and education to energy and transportation. Open-source technologies facilitate collaboration, accelerate the pace of research, and democratize access, enabling researchers and developers across the globe to contribute to the expansion of AI's capabilities. It opens the possibility for rapid iteration and innovation, reducing the likelihood that a few powerful entities monopolize control over these transformative technologies.
   However, as beneficial as open-source AI may appear, the complexity of global politics can make the transition challenging. A landscape where AI technologies are open-source and freely available brings about potential dilemmas in various areas including national security, economic competitiveness, intellectual property rights, and data privacy.
-  To start, national security is a primary concern. AI has a myriad of applications in defense and security sectors, many of which could potentially be exploited by adversarial entities. As such, unrestricted access to AI technologies could pose a risk to nations' security. Nevertheless, it is crucial to note that security risks also stem from concentrated AI power. A handful of nations or corporations owning the majority of AI developments may lead to destabilization, power imbalance, and heightened global tensions.
-  Economic competitiveness is another intricate aspect. Countries and corporations are engaged in a fiercely competitive race to advance in AI technologies, recognizing the economic gains and strategic advantages tied to AI leadership. Open-source AI might challenge this dynamic, disrupting traditional models of competition. However, it could also create an environment of shared growth, leading to a more balanced global AI landscape.
+  To start, national security is a primary concern. AI has a myriad of applications in defense and security sectors, many of which [private] potentially be exploited by adversarial entities. As such, unrestricted access to AI technologies [private] pose a risk to nations' security. Nevertheless, it is crucial to note that security risks also stem from concentrated AI power. A handful of nations or corporations owning the majority of AI developments may lead to destabilization, power imbalance, and heightened global tensions.
+  Economic competitiveness is another intricate aspect. Countries and corporations are engaged in a fiercely competitive race to advance in AI technologies, recognizing the economic gains and strategic advantages tied to AI leadership. Open-source AI might challenge this dynamic, disrupting traditional models of competition. However, it [private] also create an environment of shared growth, leading to a more balanced global AI landscape.
   Intellectual property rights form another complex dimension in the discussion. Open-source AI challenges traditional notions of ownership and patents, potentially undermining the incentives for companies and individuals to invest in AI research and development. Balancing the need for innovation with the necessity to protect inventors' rights becomes critical in an open-source framework.
   Data privacy is a further point of contention. Open-source AI, coupled with increasingly ubiquitous data collection methods, raises concerns about individuals' privacy. However, it also provides an opportunity to develop robust, decentralized, and transparent AI systems that respect user privacy.
   Thus, navigating the intersection of AI and global politics necessitates careful consideration. It requires establishing a new social contract for AI---one that respects human rights, promotes equitable economic growth, and protects national security.
@@ -373,14 +316,14 @@ elevatedFrom:: [[Politics, Law, Privacy]]
   There is skepticism the idea of artificial general intelligence (AGI) leading to superintelligent machines that threaten humanity in the near future. This supposed risk of AGI is described as a \"red herring\"
   - an unfounded fear. The reasons given are:
 	  We do not have a clear understanding or definition of general     intelligence or consciousness.     Current AI like large language models are limited in scope. They are     good at statistical pattern matching in language, not generally     intelligent.     The hypothesis that intelligence and consciousness emerge simply     from increasing computational power is unproven. There are likely     other components we don't understand.
-	  The real risk is perhaps government control and regulation of AI development and applications, justified by arguing it is needed for safety and responsible AI. This could impose limits on acceptable speech and thought. Centralised entities could become gatekeepers for how people access and interpret information about the world. Mandating allowable language could narrow ideas and speech to fit an official narrative. Fears of AGI, even if exaggerated, open the door for regulators and bureaucrats to intervene in the name of safety. The risk is not AGI itself but the government control that hype about it enables.
+	  The real risk is perhaps government control and regulation of AI development and applications, justified by arguing it is needed for safety and responsible AI. This [private] impose limits on acceptable speech and thought. Centralised entities [private] become gatekeepers for how people access and interpret information about the world. Mandating allowable language [private] narrow ideas and speech to fit an official narrative. Fears of AGI, even if exaggerated, open the door for regulators and bureaucrats to intervene in the name of safety. The risk is not AGI itself but the government control that hype about it enables.
 	  There is speculation that AI will automate many white collar cognitive jobs, similar to how industrial machinery automated manual labor. This may \"chase humans up the value stack\" as lower value work is handled by AI, freeing people to focus on higher value creative activities. [\\chapterimage] orange7.jpg
   - [He Wanted Privacy. His College Gave Him None – The Markup](https://themarkup.org/machine-learning/2023/11/30/he-wanted-privacy-his-college-gave-him-none)
   - [AI security considerations](https://ico.org.uk/for-organisations/guide-to-data-protection/key-dp-themes/guidance-on-ai-and-data-protection/how-should-we-assess-security-and-data-minimisation-in-ai/)
   - [Sci-fi becomes real as renowned magazine closes submissions due to AI writers: Clarkesworld wrestles with flood of machine-made submissions—over 500 in Feb. alone.](https://arstechnica.com/information-technology/2023/02/sci-fi-becomes-real-as-renowned-magazine-closes-submissions-due-to-ai-writers/)
   - The text discusses how a renowned magazine has had to close submissions due to the increasing number of AI writers. It is noted that the AI writers are becoming increasingly skilled and are starting to produce work that is on par with human writers.
   - [Lesswrong AI section](https://www.lesswrong.com/tag/ai)
-  - [Goldman Sachs Predicts 300 Million Jobs Will Be Lost Or Degraded By Artificial Intelligence: Goldman Sachs maintains that if generative AI lives up to its hype, the workforce in the United States and Europe will be upended. The bank estimates 300 million jobs could be lost or diminished due to this fast-growing technology.](https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/?sh=3af7314e782b)
+  - [Goldman Sachs Predicts 300 Million Jobs Will Be Lost Or Degraded By Artificial Intelligence: Goldman Sachs maintains that if generative AI lives up to its hype, the workforce in the United States and Europe will be upended. The bank estimates 300 million jobs [private] be lost or diminished due to this fast-growing technology.](https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/?sh=3af7314e782b)
   - [Medium listing approachs](https://blog.medium.com/how-were-approaching-ai-generated-writing-on-medium-16ee8cb3bc89)
   - [Drives us mad, Guardian](https://www.theguardian.com/technology/2023/mar/23/tech-guru-jaron-lanier-the-danger-isnt-that-ai-destroys-us-its-that-it-drives-us-insane)
   - [Chatbots must disclose sources or face ban](https://www.artisana.ai/articles/eus-ai-act-stricter-rules-for-chatbots-on-the-horizon)
@@ -410,7 +353,7 @@ elevatedFrom:: [[Politics, Law, Privacy]]
   - Crypto
   - [UK](https://www.gov.uk/government/news/uk-sets-out-plans-to-regulate-crypto-and-protect-consumers)
   - [GPTs are GPTs: An Early Look at the Labor Market Impact](https://arxiv.org/abs/2303.10130)
-  - The text discusses the potential implications of Generative Pre-trained Transformer (GPT) models on the U.S. labor market. It uses a new rubric to assess occupations based on their correspondence with GPT capabilities, incorporating both human expertise and classifications from GPT-4. The findings indicate that approximately 80% of the U.S. workforce could have at least 10% of their work tasks affected by the introduction of GPTs, while around 19% of workers may see at least 50% of their tasks impacted. The influence spans all wage levels, with higher-income jobs potentially facing greater exposure. Notably, the impact is not limited to industries with higher recent productivity growth. The text concludes that Generative Pre-trained Transformers exhibit characteristics of general-purpose technologies (GPTs), suggesting that these models could have notable economic, social, and policy implications.
+  - The text discusses the potential implications of Generative Pre-trained Transformer (GPT) models on the U.S. labor market. It uses a new rubric to assess occupations based on their correspondence with GPT capabilities, incorporating both human expertise and classifications from GPT-4. The findings indicate that approximately 80% of the U.S. workforce [private] have at least 10% of their work tasks affected by the introduction of GPTs, while around 19% of workers may see at least 50% of their tasks impacted. The influence spans all wage levels, with higher-income jobs potentially facing greater exposure. Notably, the impact is not limited to industries with higher recent productivity growth. The text concludes that Generative Pre-trained Transformers exhibit characteristics of general-purpose technologies (GPTs), suggesting that these models [private] have notable economic, social, and policy implications.
   - [El Salvador: Staff Concluding Statement of the 2023 Article IV Mission (other)](https://www.imf.org/en/News/Articles/2023/02/10/el-salvador-staff-concluding-statement-of-the-2023-article-iv-mission)
   - Other. The text describes a study by the University of Cambridge which found that people tend to trust robots more when they look and behave like humans.
   - [Silvergate Purchases Blockchain libre](https://ir.silvergate.com/news/news-details/2022/Silvergate-Purchases-Blockchain-Payment-Network-Assets-from-Diem/default.aspx)

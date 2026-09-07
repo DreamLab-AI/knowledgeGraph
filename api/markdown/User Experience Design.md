@@ -1,10 +1,14 @@
----
-public: true
----
-
-# User Experience Design
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:user-experience-design", "@type":"Page", "title":"User Experience Design", "vc:slug":"user-experience-design", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:user-experience-design",
+  "@type": "Page",
+  "title": "User Experience Design",
+  "vc:slug": "user-experience-design",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

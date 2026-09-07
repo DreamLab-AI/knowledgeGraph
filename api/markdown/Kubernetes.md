@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Kubernetes
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,33 +20,86 @@ public: true
   "definition": "Kubernetes (K8s) is an open-source container orchestration platform originally developed by Google and donated to the Cloud Native Computing Foundation (CNCF) in 2014. It automates the deployment, scaling, scheduling, and lifecycle management of containerised workloads across clusters of physical or virtual machines. Kubernetes abstracts infrastructure resources into declarative objects—Pods, Deployments, Services, and Namespaces—that describe desired state, with a control plane continuously reconciling actual state to match the specification.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:orchestration",
+      "label": "Orchestration"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:software-platform", "label": "Software Platform"},
-      {"@id": "urn:ngm:class:technology-infrastructure", "label": "Technology Infrastructure"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:software-platform",
+        "label": "Software Platform"
+      },
+      {
+        "@id": "urn:ngm:class:technology-infrastructure",
+        "label": "Technology Infrastructure"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:software-infrastructure", "label": "Software Infrastructure"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:software-infrastructure",
+        "label": "Software Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:resource-management", "label": "Resource Management"},
-      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ]
   },
   "quality": 0.8

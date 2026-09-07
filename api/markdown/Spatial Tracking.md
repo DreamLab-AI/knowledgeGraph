@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-tracking:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9e6d4d56c35c1b39d0f164d835dc6f2317aa0d716606962d257a015033b2323a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Immersive VR]]",
-      "resolved": "urn:visionflow:linked:immersive-vr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Tracking]]",
-      "resolved": "urn:visionflow:owl:class:motion-tracking",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technology that determines the position and orientation of objects in three-dimensional space using six degrees of freedom (6DoF), enabling precise tracking of headsets, controllers, and body movements through inside-out or outside-in sensor configurations.

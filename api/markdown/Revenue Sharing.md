@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Revenue Sharing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:revenue-sharing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3ec492bf0500a7676e5fe26aa83e8c5fc4de98be9e982444f5dd36021161ece2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Creator Monetization]]",
-      "resolved": "urn:visionflow:linked:creator-monetization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Creator Economy]]",
-      "resolved": "urn:visionflow:owl:class:creator-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blockchain-enabled distribution mechanisms that automatically allocate earnings between creators, platforms, and stakeholders through smart contracts, with NFT royalties providing perpetual income streams for digital asset creators in metaverse economies.

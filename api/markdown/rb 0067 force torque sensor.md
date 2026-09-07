@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0067 force torque sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,21 +51,48 @@ public: true
   "quality": 0.7,
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"}
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0053-force-control", "label": "rb 0053 force control"},
-      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"},
-      {"@id": "urn:ngm:class:rb-0057-admittance-control", "label": "rb 0057 admittance control"}
+      {
+        "@id": "urn:ngm:class:rb-0053-force-control",
+        "label": "rb 0053 force control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0057-admittance-control",
+        "label": "rb 0057 admittance control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0070-tactile-sensing", "label": "rb 0070 tactile sensing"},
-      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {
+        "@id": "urn:ngm:class:rb-0070-tactile-sensing",
+        "label": "rb 0070 tactile sensing"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cobot-safety-levels", "label": "Cobot Safety Levels"},
-      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"}
+      {
+        "@id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0067-force-torque-sensor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:759e61aed0b4916f0e2f0149c9129feecfc0a5a16a5e38cce5f6a6b959215146"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A force-torque (FT) sensor is a wrist-mounted transducer that measures all six mechanical load components — three forces and three torques — in real time. These measurements close the loop for force-controlled manipulation, allowing a robot to regulate contact force rather than merely position. FT sensors are essential for compliant assembly, polishing, insertion tasks, and for meeting the power-and-force limiting safety requirements of ISO/TS 15066 in collaborative robot deployments.

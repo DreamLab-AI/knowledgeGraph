@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Prosthetics
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:prosthetics", "@type":"Page", "title":"Prosthetics", "vc:slug":"prosthetics", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:prosthetics",
+  "@type": "Page",
+  "title": "Prosthetics",
+  "vc:slug": "prosthetics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,42 +21,88 @@ public: true
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:assistive-technology", "label": "Assistive Technology" }
+    {
+      "@id": "urn:ngm:class:assistive-technology",
+      "label": "Assistive Technology"
+    }
   ],
   "relations": {
     "partOf": [
-      { "@id": "urn:ngm:class:assistive-technology", "label": "Assistive Technology" }
+      {
+        "@id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
+      }
     ],
     "hasPart": [
-      { "@id": "urn:ngm:class:actuators", "label": "Actuators" },
-      { "@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion" }
+      {
+        "@id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:neural-interface", "label": "Neural Interface" },
-      { "@id": "urn:ngm:class:series-elastic-actuation", "label": "Series Elastic Actuation" },
-      { "@id": "urn:ngm:class:actuators", "label": "Actuators" }
+      {
+        "@id": "urn:ngm:class:neural-interface",
+        "label": "Neural Interface"
+      },
+      {
+        "@id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "@id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:biomechanics", "label": "Biomechanics" }
+      {
+        "@id": "urn:ngm:class:biomechanics",
+        "label": "Biomechanics"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:rehabilitation-robotics", "label": "Rehabilitation Robotics" },
-      { "@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction" }
+      {
+        "@id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:exoskeleton", "label": "Exoskeleton" }
+      {
+        "@id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:neural-interface", "label": "Neural Interface" },
-      { "@id": "urn:ngm:class:wearable-robotics", "label": "Wearable Robotics" }
+      {
+        "@id": "urn:ngm:class:neural-interface",
+        "label": "Neural Interface"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-robotics",
+        "label": "Wearable Robotics"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:robotic-manipulation", "label": "Robotic Manipulation" }
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

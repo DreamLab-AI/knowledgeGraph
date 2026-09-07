@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Honesty
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:harmlessness", "label": "Harmlessness"},
-      {"@id": "urn:ngm:class:helpfulness", "label": "Helpfulness"}
+      {
+        "@id": "urn:ngm:class:harmlessness",
+        "label": "Harmlessness"
+      },
+      {
+        "@id": "urn:ngm:class:helpfulness",
+        "label": "Helpfulness"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bias", "label": "Bias"}
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:honesty:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4bf6d3eb981e74f43211611e8db4397aa5b901410a94c38bddffbe61eb3ff215"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An alignment objective ensuring AI systems provide truthful and accurate information, avoiding false claims and acknowledging uncertainty when appropriate. Honesty (also called truthfulness) represents a critical dimension of trustworthy AI alongside helpfulness and harmlessness.

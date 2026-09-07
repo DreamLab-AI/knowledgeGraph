@@ -1,8 +1,3 @@
----
-public: true
----
-
-# controlnet
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,47 +7,170 @@ public: true
   "title": "controlnet",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:ngm:class:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:ngm:class:latent-diffusion", "vc:label": "Latent Diffusion"},
-    {"@id": "urn:ngm:class:u-net", "vc:label": "U-Net"},
-    {"@id": "urn:ngm:class:zero-convolution", "vc:label": "Zero Convolution"},
-    {"@id": "urn:ngm:class:classifier-free-guidance", "vc:label": "Classifier-Free Guidance"},
-    {"@id": "urn:ngm:class:stable-diffusion-image-model", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:ngm:class:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:ngm:class:text-to-image", "vc:label": "Text-to-Image"},
-    {"@id": "urn:ngm:class:image-synthesis", "vc:label": "Conditional Image Synthesis"},
-    {"@id": "urn:ngm:class:neural-network-architecture", "vc:label": "Neural Network Architecture"},
-    {"@id": "urn:ngm:class:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:ngm:class:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:ngm:class:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:ngm:class:lora", "vc:label": "LoRA"},
-    {"@id": "urn:ngm:class:ip-adapter", "vc:label": "IP-Adapter"},
-    {"@id": "urn:ngm:class:textual-inversion", "vc:label": "Textual Inversion"},
-    {"@id": "urn:ngm:class:pose-estimation", "vc:label": "Pose Estimation"},
-    {"@id": "urn:ngm:class:depth-estimation", "vc:label": "Depth Estimation"},
-    {"@id": "urn:ngm:class:edge-detection", "vc:label": "Edge Detection"},
-    {"@id": "urn:ngm:class:semantic-segmentation", "vc:label": "Semantic Segmentation"},
-    {"@id": "urn:ngm:class:adapter-tuning", "vc:label": "Adapter Tuning"},
-    {"@id": "urn:ngm:class:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:ngm:class:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:ngm:class:video-generation", "vc:label": "Video Generation"},
-    {"@id": "urn:ngm:class:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:ngm:class:data-augmentation", "vc:label": "Data Augmentation"},
-    {"@id": "urn:ngm:class:generative-adversarial-network", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:ngm:class:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:ngm:class:image-conditioning", "vc:label": "Image Conditioning"},
-    {"@id": "urn:ngm:class:denoising-diffusion", "vc:label": "Denoising Diffusion"},
-    {"@id": "urn:ngm:class:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:ngm:class:comfyui", "vc:label": "ComfyUI"},
-    {"@id": "urn:ngm:class:spatial-computing", "vc:label": "Spatial Computing"},
-    {"@id": "urn:ngm:class:synthetic-data", "vc:label": "Synthetic Data"},
-    {"@id": "urn:ngm:class:drug-discovery", "vc:label": "Drug Discovery"},
-    {"@id": "urn:ngm:class:medical-imaging", "vc:label": "Medical Imaging"},
-    {"@id": "urn:ngm:class:noise-schedule", "vc:label": "Noise Schedule"},
-    {"@id": "urn:ngm:class:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:ngm:class:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:ngm:class:multimodal-model", "vc:label": "Multimodal Model"},
-    {"@id": "urn:ngm:class:ai-technique", "vc:label": "AI Technique"}
+    {
+      "@id": "urn:ngm:class:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:ngm:class:latent-diffusion",
+      "vc:label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:ngm:class:u-net",
+      "vc:label": "U-Net"
+    },
+    {
+      "@id": "urn:ngm:class:zero-convolution",
+      "vc:label": "Zero Convolution"
+    },
+    {
+      "@id": "urn:ngm:class:classifier-free-guidance",
+      "vc:label": "Classifier-Free Guidance"
+    },
+    {
+      "@id": "urn:ngm:class:stable-diffusion-image-model",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:ngm:class:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:ngm:class:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:ngm:class:image-synthesis",
+      "vc:label": "Conditional Image Synthesis"
+    },
+    {
+      "@id": "urn:ngm:class:neural-network-architecture",
+      "vc:label": "Neural Network Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:ngm:class:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:ngm:class:lora",
+      "vc:label": "LoRA"
+    },
+    {
+      "@id": "urn:ngm:class:ip-adapter",
+      "vc:label": "IP-Adapter"
+    },
+    {
+      "@id": "urn:ngm:class:textual-inversion",
+      "vc:label": "Textual Inversion"
+    },
+    {
+      "@id": "urn:ngm:class:pose-estimation",
+      "vc:label": "Pose Estimation"
+    },
+    {
+      "@id": "urn:ngm:class:depth-estimation",
+      "vc:label": "Depth Estimation"
+    },
+    {
+      "@id": "urn:ngm:class:edge-detection",
+      "vc:label": "Edge Detection"
+    },
+    {
+      "@id": "urn:ngm:class:semantic-segmentation",
+      "vc:label": "Semantic Segmentation"
+    },
+    {
+      "@id": "urn:ngm:class:adapter-tuning",
+      "vc:label": "Adapter Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:ngm:class:video-generation",
+      "vc:label": "Video Generation"
+    },
+    {
+      "@id": "urn:ngm:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:ngm:class:data-augmentation",
+      "vc:label": "Data Augmentation"
+    },
+    {
+      "@id": "urn:ngm:class:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:ngm:class:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:ngm:class:image-conditioning",
+      "vc:label": "Image Conditioning"
+    },
+    {
+      "@id": "urn:ngm:class:denoising-diffusion",
+      "vc:label": "Denoising Diffusion"
+    },
+    {
+      "@id": "urn:ngm:class:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:ngm:class:comfyui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:ngm:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:synthetic-data",
+      "vc:label": "Synthetic Data"
+    },
+    {
+      "@id": "urn:ngm:class:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:ngm:class:medical-imaging",
+      "vc:label": "Medical Imaging"
+    },
+    {
+      "@id": "urn:ngm:class:noise-schedule",
+      "vc:label": "Noise Schedule"
+    },
+    {
+      "@id": "urn:ngm:class:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:ngm:class:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:ngm:class:multimodal-model",
+      "vc:label": "Multimodal Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "vc:label": "AI Technique"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -82,61 +200,184 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:u-net", "label": "U-Net"},
-      {"@id": "urn:ngm:class:zero-convolution", "label": "Zero Convolution"},
-      {"@id": "urn:ngm:class:classifier-free-guidance", "label": "Classifier-Free Guidance"},
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "@id": "urn:ngm:class:zero-convolution",
+        "label": "Zero Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:image-synthesis", "label": "Conditional Image Synthesis"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"},
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging Synthesis"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:image-synthesis",
+        "label": "Conditional Image Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging Synthesis"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Denoising Diffusion"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Denoising Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:zero-convolution", "label": "Zero Convolution"},
-      {"@id": "urn:ngm:class:u-net", "label": "Trainable Encoder Copy"},
-      {"@id": "urn:ngm:class:image-conditioning", "label": "Control Preprocessor"}
+      {
+        "@id": "urn:ngm:class:zero-convolution",
+        "label": "Zero Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:u-net",
+        "label": "Trainable Encoder Copy"
+      },
+      {
+        "@id": "urn:ngm:class:image-conditioning",
+        "label": "Control Preprocessor"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:lora", "label": "LoRA"},
-      {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"},
-      {"@id": "urn:ngm:class:textual-inversion", "label": "Textual Inversion"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"}
+      {
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:textual-inversion",
+        "label": "Textual Inversion"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:edge-detection", "label": "Edge Detection"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:adapter-tuning", "label": "Adapter Tuning"},
-      {"@id": "urn:ngm:class:noise-schedule", "label": "Noise Schedule"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:multimodal-model", "label": "Multimodal Model"},
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"}
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:edge-detection",
+        "label": "Edge Detection"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:adapter-tuning",
+        "label": "Adapter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
     ]
   },
   "sameAs": [
@@ -145,72 +386,11 @@ public: true
       "label": "ControlNet Architecture"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:controlnet:2de396bb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2de396bbeea0c70bf93100e93dfe9d92fa26049d72f4df6e1d4c8ed496f96fc4"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:ngm:class:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[Latent Diffusion]]", "resolved": "urn:ngm:class:latent-diffusion", "kind": "ResolvedLink"},
-    {"raw": "[[U-Net]]", "resolved": "urn:ngm:class:u-net", "kind": "ResolvedLink"},
-    {"raw": "[[Zero Convolution]]", "resolved": "urn:ngm:class:zero-convolution", "kind": "ResolvedLink"},
-    {"raw": "[[Classifier-Free Guidance]]", "resolved": "urn:ngm:class:classifier-free-guidance", "kind": "ResolvedLink"},
-    {"raw": "[[Stable Diffusion]]", "resolved": "urn:ngm:class:stable-diffusion-image-model", "kind": "ResolvedLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:ngm:class:image-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Image]]", "resolved": "urn:ngm:class:text-to-image", "kind": "ResolvedLink"},
-    {"raw": "[[Conditional Image Synthesis]]", "resolved": "urn:ngm:class:image-synthesis", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network Architecture]]", "resolved": "urn:ngm:class:neural-network-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:ngm:class:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Fine-Tuning]]", "resolved": "urn:ngm:class:fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:ngm:class:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[LoRA]]", "resolved": "urn:ngm:class:lora", "kind": "ResolvedLink"},
-    {"raw": "[[IP-Adapter]]", "resolved": "urn:ngm:class:ip-adapter", "kind": "ResolvedLink"},
-    {"raw": "[[Textual Inversion]]", "resolved": "urn:ngm:class:textual-inversion", "kind": "ResolvedLink"},
-    {"raw": "[[Pose Estimation]]", "resolved": "urn:ngm:class:pose-estimation", "kind": "ResolvedLink"},
-    {"raw": "[[Depth Estimation]]", "resolved": "urn:ngm:class:depth-estimation", "kind": "ResolvedLink"},
-    {"raw": "[[Edge Detection]]", "resolved": "urn:ngm:class:edge-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Semantic Segmentation]]", "resolved": "urn:ngm:class:semantic-segmentation", "kind": "ResolvedLink"},
-    {"raw": "[[Adapter Tuning]]", "resolved": "urn:ngm:class:adapter-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:ngm:class:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:ngm:class:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Video Generation]]", "resolved": "urn:ngm:class:video-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:ngm:class:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Data Augmentation]]", "resolved": "urn:ngm:class:data-augmentation", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:ngm:class:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Variational Autoencoder]]", "resolved": "urn:ngm:class:variational-autoencoder", "kind": "ResolvedLink"},
-    {"raw": "[[ComfyUI]]", "resolved": "urn:ngm:class:comfyui", "kind": "StubLink"},
-    {"raw": "[[Spatial Computing]]", "resolved": "urn:ngm:class:spatial-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Synthetic Data]]", "resolved": "urn:ngm:class:synthetic-data", "kind": "ResolvedLink"},
-    {"raw": "[[Medical Imaging]]", "resolved": "urn:ngm:class:medical-imaging", "kind": "ResolvedLink"},
-    {"raw": "[[Image Conditioning]]", "resolved": "urn:ngm:class:image-conditioning", "kind": "StubLink"},
-    {"raw": "[[Noise Schedule]]", "resolved": "urn:ngm:class:noise-schedule", "kind": "ResolvedLink"},
-    {"raw": "[[Denoising Diffusion]]", "resolved": "urn:ngm:class:denoising-diffusion", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Adversarial Network]]", "resolved": "urn:ngm:class:generative-adversarial-network", "kind": "ResolvedLink"},
-    {"raw": "[[Spatially Guided Generation]]", "resolved": "urn:ngm:class:spatially-guided-generation", "kind": "StubLink"},
-    {"raw": "[[Multimodal Model]]", "resolved": "urn:ngm:class:multimodal-model", "kind": "ResolvedLink"},
-    {"raw": "[[Drug Discovery]]", "resolved": "urn:ngm:class:drug-discovery", "kind": "ResolvedLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:ngm:class:gpu-compute", "kind": "ResolvedLink"},
-    {"raw": "[[Training Data]]", "resolved": "urn:ngm:class:training-data", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

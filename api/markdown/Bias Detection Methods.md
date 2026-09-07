@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bias Detection Methods
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -217,52 +212,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bias-detection-methods:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0314ce4a5d1fd18c4c0c14237fafd591e81864595a3c0ecf8188d5380bc98c7b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE P7003-2021]]",
-      "resolved": "urn:visionflow:linked:ieee-p7003-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC TR 24027]]",
-      "resolved": "urn:visionflow:linked:iso-iec-tr-24027",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST SP 1270]]",
-      "resolved": "urn:visionflow:linked:nist-sp-1270",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Bias Detection Methods are systematic analytical techniques and computational pipelines for identifying [[Algorithmic Bias]] in [[Machine Learning]] systems through rigorous statistical hypothesis testing, disaggregated [[Fairness Metrics]] evaluation, [[Counterfactual Analysis]], [[Intersectional Fairness]] examination, and [[Causal Inference]]. These methods operate on model predictions stratified by protected demographic attributes — race, gender, age, disability status, sexual orientation, religion, and socioeconomic background — to detect disparate impacts, unequal error rates, stereotype amplification, and discriminatory classification patterns that violate legal anti-discrimination norms and ethical fairness principles. A bias detection pipeline proceeds through distinct analytical phases: first, a data audit examining [[Training Data]] provenance, demographic composition, and labelling processes to identify upstream sources of [[Algorithmic Bias]] before model fitting; second, statistical hypothesis testing employing chi-square tests, permutation tests, or t-tests with defined significance thresholds (typically p < 0.05 as specified in [[ISO/IEC TR 24027]]) to determine whether observed group differences exceed random variation; third, [[Fairness Metrics]] computation across all relevant protected attribute sub-groups using the [[Confusion Matrix]]-derived measures of demographic parity, equalised odds, equal opportunity, calibration, and [[Disparate Impact]] ratio; fourth, [[Counterfactual Analysis]] generating hypothetical instances where only protected attributes are altered to test prediction invariance; fifth, [[Intersectional Fairness]] examination across cross-products of protected attributes to detect compound disadvantage invisible to single-axis analysis; and sixth, [[Causal Inference]] analysis that distinguishes legitimate predictive pathways — where a protected attribute influences outcome through a lawful mediating variable — from illegitimate direct causal effects. The methods produce bias audit reports documenting detected disparities, their statistical severity and confidence, affected populations and intersectional groups, the likely source pathway (data, model, or deployment), and compliance status relative to applicable legal standards. Implementation requires access to protected attribute data (or proxy estimates), ground truth labels for supervised evaluation, and sufficient subgroup sample sizes for statistically reliable testing — conditions regulated by [[IEEE P7003-2021]] and the [[NIST SP 1270]] guidance on identifying and managing bias. In 2026, these methods underpin mandatory conformity assessments for high-risk AI systems under the [[EU AI Act]] (Regulation 2024/1689) and structured self-assessment under the ICO's AI fairness framework, making them a core competence of [[AI Governance]] practice.

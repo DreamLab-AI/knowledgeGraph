@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Screen Capture API
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The Screen Capture API is a W3C web platform interface, centred on getDisplayMedia, that lets web applications obtain a live media stream of a user-selected screen, window, or browser tab. It exposes the captured display as a MediaStream usable for recording, sharing, or processing, gated by an explicit user-selection prompt. It is the standard browser foundation for screen sharing and recording features.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:screen-sharing", "label": "Screen Sharing"},
-      {"@id": "urn:ngm:class:screen-recording", "label": "Screen Recording"}
+      {
+        "@id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:screen-recording",
+        "label": "Screen Recording"
+      }
     ]
   },
   "quality": 0.72

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Computability Theory
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,45 +8,162 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:computational-complexity-theory", "vc:label": "Computational Complexity Theory"},
-    {"@id": "urn:visionflow:linked:mathematical-logic", "vc:label": "Mathematical Logic"},
-    {"@id": "urn:visionflow:linked:set-theory", "vc:label": "Set Theory"},
-    {"@id": "urn:visionflow:linked:automata-theory", "vc:label": "Automata Theory"},
-    {"@id": "urn:visionflow:linked:formal-language", "vc:label": "Formal Language"},
-    {"@id": "urn:visionflow:linked:algorithm", "vc:label": "Algorithm"},
-    {"@id": "urn:visionflow:linked:cryptography", "vc:label": "Cryptography"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:turing-machine", "vc:label": "Turing Machine"},
-    {"@id": "urn:visionflow:linked:lambda-calculus", "vc:label": "Lambda Calculus"},
-    {"@id": "urn:visionflow:linked:recursive-function", "vc:label": "Recursive Function"},
-    {"@id": "urn:visionflow:linked:halting-problem", "vc:label": "Halting Problem"},
-    {"@id": "urn:visionflow:linked:church-turing-thesis", "vc:label": "Church-Turing Thesis"},
-    {"@id": "urn:visionflow:linked:decidability", "vc:label": "Decidability"},
-    {"@id": "urn:visionflow:linked:undecidability", "vc:label": "Undecidability"},
-    {"@id": "urn:visionflow:linked:oracle-computation", "vc:label": "Oracle Computation"},
-    {"@id": "urn:visionflow:linked:turing-degree", "vc:label": "Turing Degree"},
-    {"@id": "urn:visionflow:linked:rice-theorem", "vc:label": "Rice's Theorem"},
-    {"@id": "urn:visionflow:linked:post-correspondence-problem", "vc:label": "Post Correspondence Problem"},
-    {"@id": "urn:visionflow:linked:kolmogorov-complexity", "vc:label": "Kolmogorov Complexity"},
-    {"@id": "urn:visionflow:linked:information-theory", "vc:label": "Information Theory"},
-    {"@id": "urn:visionflow:linked:proof-theory", "vc:label": "Proof Theory"},
-    {"@id": "urn:visionflow:linked:type-theory", "vc:label": "Type Theory"},
-    {"@id": "urn:visionflow:linked:quantum-computing", "vc:label": "Quantum Computing"},
-    {"@id": "urn:visionflow:linked:hypercomputation", "vc:label": "Hypercomputation"},
-    {"@id": "urn:visionflow:linked:programme-verification", "vc:label": "Programme Verification"},
-    {"@id": "urn:visionflow:linked:automated-theorem-proving", "vc:label": "Automated Theorem Proving"},
-    {"@id": "urn:visionflow:linked:model-checking", "vc:label": "Model Checking"},
-    {"@id": "urn:visionflow:linked:programming-language-theory", "vc:label": "Programming Language Theory"},
-    {"@id": "urn:visionflow:linked:descriptive-complexity", "vc:label": "Descriptive Complexity"},
-    {"@id": "urn:visionflow:linked:reverse-mathematics", "vc:label": "Reverse Mathematics"},
-    {"@id": "urn:visionflow:linked:godel-incompleteness", "vc:label": "Gödel Incompleteness Theorems"},
-    {"@id": "urn:visionflow:linked:reduction", "vc:label": "Reduction"},
-    {"@id": "urn:visionflow:linked:enumeration", "vc:label": "Enumeration"},
-    {"@id": "urn:visionflow:linked:semi-decidability", "vc:label": "Semi-Decidability"},
-    {"@id": "urn:visionflow:linked:fixed-point-theorem", "vc:label": "Fixed-Point Theorem"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:automated-reasoning", "vc:label": "Automated Reasoning"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"}
+    {
+      "@id": "urn:visionflow:linked:computational-complexity-theory",
+      "vc:label": "Computational Complexity Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:mathematical-logic",
+      "vc:label": "Mathematical Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:set-theory",
+      "vc:label": "Set Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:automata-theory",
+      "vc:label": "Automata Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-language",
+      "vc:label": "Formal Language"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm",
+      "vc:label": "Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptography",
+      "vc:label": "Cryptography"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:turing-machine",
+      "vc:label": "Turing Machine"
+    },
+    {
+      "@id": "urn:visionflow:linked:lambda-calculus",
+      "vc:label": "Lambda Calculus"
+    },
+    {
+      "@id": "urn:visionflow:linked:recursive-function",
+      "vc:label": "Recursive Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:halting-problem",
+      "vc:label": "Halting Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:church-turing-thesis",
+      "vc:label": "Church-Turing Thesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:decidability",
+      "vc:label": "Decidability"
+    },
+    {
+      "@id": "urn:visionflow:linked:undecidability",
+      "vc:label": "Undecidability"
+    },
+    {
+      "@id": "urn:visionflow:linked:oracle-computation",
+      "vc:label": "Oracle Computation"
+    },
+    {
+      "@id": "urn:visionflow:linked:turing-degree",
+      "vc:label": "Turing Degree"
+    },
+    {
+      "@id": "urn:visionflow:linked:rice-theorem",
+      "vc:label": "Rice's Theorem"
+    },
+    {
+      "@id": "urn:visionflow:linked:post-correspondence-problem",
+      "vc:label": "Post Correspondence Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:kolmogorov-complexity",
+      "vc:label": "Kolmogorov Complexity"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:proof-theory",
+      "vc:label": "Proof Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:type-theory",
+      "vc:label": "Type Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-computing",
+      "vc:label": "Quantum Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:hypercomputation",
+      "vc:label": "Hypercomputation"
+    },
+    {
+      "@id": "urn:visionflow:linked:programme-verification",
+      "vc:label": "Programme Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-theorem-proving",
+      "vc:label": "Automated Theorem Proving"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-checking",
+      "vc:label": "Model Checking"
+    },
+    {
+      "@id": "urn:visionflow:linked:programming-language-theory",
+      "vc:label": "Programming Language Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:descriptive-complexity",
+      "vc:label": "Descriptive Complexity"
+    },
+    {
+      "@id": "urn:visionflow:linked:reverse-mathematics",
+      "vc:label": "Reverse Mathematics"
+    },
+    {
+      "@id": "urn:visionflow:linked:godel-incompleteness",
+      "vc:label": "Gödel Incompleteness Theorems"
+    },
+    {
+      "@id": "urn:visionflow:linked:reduction",
+      "vc:label": "Reduction"
+    },
+    {
+      "@id": "urn:visionflow:linked:enumeration",
+      "vc:label": "Enumeration"
+    },
+    {
+      "@id": "urn:visionflow:linked:semi-decidability",
+      "vc:label": "Semi-Decidability"
+    },
+    {
+      "@id": "urn:visionflow:linked:fixed-point-theorem",
+      "vc:label": "Fixed-Point Theorem"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-reasoning",
+      "vc:label": "Automated Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    }
   ]
 }
 ```
@@ -233,61 +344,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computability-theory:a7c9f13d2e5b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:computability-theory"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Computational Complexity Theory]]", "resolved": "urn:visionflow:linked:computational-complexity-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Mathematical Logic]]", "resolved": "urn:visionflow:linked:mathematical-logic", "kind": "StubLink"},
-    {"raw": "[[Set Theory]]", "resolved": "urn:visionflow:linked:set-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Automata Theory]]", "resolved": "urn:visionflow:linked:automata-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Formal Language]]", "resolved": "urn:visionflow:linked:formal-language", "kind": "StubLink"},
-    {"raw": "[[Algorithm]]", "resolved": "urn:visionflow:linked:algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Cryptography]]", "resolved": "urn:visionflow:linked:cryptography", "kind": "StubLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Turing Machine]]", "resolved": "urn:visionflow:linked:turing-machine", "kind": "StubLink"},
-    {"raw": "[[Lambda Calculus]]", "resolved": "urn:visionflow:linked:lambda-calculus", "kind": "StubLink"},
-    {"raw": "[[Recursive Function]]", "resolved": "urn:visionflow:linked:recursive-function", "kind": "StubLink"},
-    {"raw": "[[Halting Problem]]", "resolved": "urn:visionflow:linked:halting-problem", "kind": "StubLink"},
-    {"raw": "[[Church-Turing Thesis]]", "resolved": "urn:visionflow:linked:church-turing-thesis", "kind": "StubLink"},
-    {"raw": "[[Decidability]]", "resolved": "urn:visionflow:linked:decidability", "kind": "StubLink"},
-    {"raw": "[[Undecidability]]", "resolved": "urn:visionflow:linked:undecidability", "kind": "StubLink"},
-    {"raw": "[[Oracle Computation]]", "resolved": "urn:visionflow:linked:oracle-computation", "kind": "StubLink"},
-    {"raw": "[[Turing Degree]]", "resolved": "urn:visionflow:linked:turing-degree", "kind": "StubLink"},
-    {"raw": "[[Rice's Theorem]]", "resolved": "urn:visionflow:linked:rice-theorem", "kind": "StubLink"},
-    {"raw": "[[Post Correspondence Problem]]", "resolved": "urn:visionflow:linked:post-correspondence-problem", "kind": "StubLink"},
-    {"raw": "[[Kolmogorov Complexity]]", "resolved": "urn:visionflow:linked:kolmogorov-complexity", "kind": "StubLink"},
-    {"raw": "[[Information Theory]]", "resolved": "urn:visionflow:linked:information-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Proof Theory]]", "resolved": "urn:visionflow:linked:proof-theory", "kind": "StubLink"},
-    {"raw": "[[Type Theory]]", "resolved": "urn:visionflow:linked:type-theory", "kind": "StubLink"},
-    {"raw": "[[Quantum Computing]]", "resolved": "urn:visionflow:linked:quantum-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Hypercomputation]]", "resolved": "urn:visionflow:linked:hypercomputation", "kind": "StubLink"},
-    {"raw": "[[Programme Verification]]", "resolved": "urn:visionflow:linked:programme-verification", "kind": "StubLink"},
-    {"raw": "[[Automated Theorem Proving]]", "resolved": "urn:visionflow:linked:automated-theorem-proving", "kind": "StubLink"},
-    {"raw": "[[Model Checking]]", "resolved": "urn:visionflow:linked:model-checking", "kind": "StubLink"},
-    {"raw": "[[Programming Language Theory]]", "resolved": "urn:visionflow:linked:programming-language-theory", "kind": "StubLink"},
-    {"raw": "[[Descriptive Complexity]]", "resolved": "urn:visionflow:linked:descriptive-complexity", "kind": "StubLink"},
-    {"raw": "[[Reverse Mathematics]]", "resolved": "urn:visionflow:linked:reverse-mathematics", "kind": "StubLink"},
-    {"raw": "[[Gödel Incompleteness Theorems]]", "resolved": "urn:visionflow:linked:godel-incompleteness", "kind": "StubLink"},
-    {"raw": "[[Reduction]]", "resolved": "urn:visionflow:linked:reduction", "kind": "StubLink"},
-    {"raw": "[[Enumeration]]", "resolved": "urn:visionflow:linked:enumeration", "kind": "StubLink"},
-    {"raw": "[[Semi-Decidability]]", "resolved": "urn:visionflow:linked:semi-decidability", "kind": "StubLink"},
-    {"raw": "[[Fixed-Point Theorem]]", "resolved": "urn:visionflow:linked:fixed-point-theorem", "kind": "StubLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "ResolvedLink"},
-    {"raw": "[[Automated Reasoning]]", "resolved": "urn:visionflow:linked:automated-reasoning", "kind": "ResolvedLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
-}
-```
-
-
 - ### Definition
   - Computability theory, also known as recursion theory, is the foundational branch of [[Mathematical Logic]] and theoretical computer science that investigates which problems admit an [[Algorithm]] for their solution in principle, entirely independent of resource constraints such as time or memory. Founded in the 1930s through the independent and convergent work of Alan Turing (who introduced the [[Turing Machine]] model in 1936), Alonzo Church (who developed [[Lambda Calculus]] as an equivalent formalism), Emil Post (who independently formulated canonical systems), and Stephen Kleene (who systematised [[Recursive Function]] theory), computability theory established the boundary between the computable and the uncomputable. The central result is the undecidability of the [[Halting Problem]]: no [[Algorithm]] can decide, given an arbitrary programme and input, whether that programme eventually terminates or runs forever — a result Turing proved by diagonalisation in 1936. The [[Church-Turing Thesis]] asserts that any effectively computable function is computable by a [[Turing Machine]], unifying the diverse 1930s formalisms into a single extensional notion of computability. Beyond the [[Halting Problem]], computability theory establishes a rich hierarchy of unsolvability: [[Rice's Theorem]] shows that every non-trivial semantic property of programmes is undecidable; the [[Post Correspondence Problem]] provides an undecidable combinatorial benchmark; [[Turing Degree]] theory classifies problems by their relative computability through oracle reductions, revealing an intricate lattice structure in the degrees of unsolvability. The field also encompasses [[Semi-Decidability]] (recognisability without decidability), [[Enumeration]] theorems, and Kleene's [[Fixed-Point Theorem]], which underpins self-referential constructions and has deep implications for [[Programming Language Theory]]. Computability theory interfaces with [[Gödel Incompleteness Theorems]] through arithmetical hierarchy theory (Σ₀₁ sets are exactly the computably enumerable sets), with [[Information Theory]] through [[Kolmogorov Complexity]] (the algorithmic information content of a string), with [[Automata Theory]] and [[Formal Language]] hierarchies (the Chomsky hierarchy), with [[Cryptography]] through hardness assumptions that rely on computational indistinguishability, and with [[Automated Reasoning]] and [[Knowledge Representation]] through decidability results for description logics and first-order theories. In the [[Artificial Intelligence]] context, computability bounds constrain what verification, learning, and reasoning tasks can be automated in principle, and have been invoked in discussions of [[AI Safety]] limitations — most notably, the observation that verifying the behaviour of an arbitrary AI system with respect to a non-trivial property is in general undecidable by [[Rice's Theorem]].
 
@@ -412,7 +468,7 @@ public: true
 
   The undecidability of the [[Halting Problem]] — proved by Turing via a diagonalisation argument showing that the set HALT = {(M, w) : [[Turing Machine]] M halts on input w} is not recursive (i.e., not decidable) — is the paradigmatic incomputability result and one of the most influential theorems in the history of mathematics. The proof is elegant and direct: assume for contradiction that a total computable function HALT(M, w) exists that outputs 1 if M halts on w and 0 otherwise. Construct a machine D that, on input ⟨M⟩ (the encoding of machine M), runs HALT(M, ⟨M⟩) and halts if the result is 0 and loops if the result is 1. Now consider running D on its own encoding ⟨D⟩: HALT(D, ⟨D⟩) = 1 (D halts on ⟨D⟩) implies D loops on ⟨D⟩ — contradiction; HALT(D, ⟨D⟩) = 0 (D does not halt) implies D halts — contradiction. The assumption of a total computable HALT function is therefore untenable. The proof technique, reducing HALT to the self-halting problem HP = {M : M halts on its own encoding}, established the method of many-one and Turing reductions that became the central technical tool of the discipline. A many-one reduction from problem A to problem B (written A ≤_m B) is a total computable function f such that x ∈ A iff f(x) ∈ B; a Turing reduction (A ≤_T B) permits oracle calls to B, making it a strictly weaker reducibility notion. These reduction techniques enable the systematic transfer of decidability and undecidability results across an ever-growing class of problems. [[Rice's Theorem]] — provable by reduction from the [[Halting Problem]] — shows that the entire landscape of semantic programme properties is undecidable in one stroke, establishing a permanent boundary on what static analysis and formal verification tools can achieve in full generality.
 
-  The arithmetical hierarchy (Σ⁰_n / Π⁰_n / Δ⁰_n) provides a fine-grained classification of problems by the logical complexity of their definitions over the natural numbers. Σ⁰₁ sets are the computably enumerable (c.e.) sets — those for which a [[Turing Machine]] can enumerate all members without necessarily deciding non-membership — while Π⁰₁ sets are the complements of c.e. sets (co-c.e. sets). HALT is a canonical Σ⁰₁-complete set; its complement (the set of configurations that never halt) is Π⁰₁-complete. Σ⁰₂ sets are those definable by ∃∀ formulas over decidable predicates — "there exists a stage after which the property always holds" — capturing the behaviour of eventually-settling limit computations such as the index set of total computable functions. Problems higher in the hierarchy require [[Oracle Computation|oracle access]] to lower levels to decide, yielding the [[Turing Degree]] structure: an intricate, non-linearly ordered partial order of equivalence classes of problems under mutual Turing reducibility. The degrees form a rich combinatorial structure: the Friedberg-Muchnik theorem (1956, independently by Richard Friedberg and Albert Muchnik) established that there exist c.e. degrees strictly between 0 (the decidable degree) and 0' (the degree of HALT) — solving Post's problem and proving that the c.e. degrees form a non-trivial lattice rather than a two-element structure. This result is directly connected to the broader landscape of [[Computational Complexity Theory]], which studies the resource-bounded version of the same question: which problems are feasibly solvable, not merely solvable in principle. The relationship between [[Computability Theory]] and [[Computational Complexity Theory]] is therefore not adversarial but complementary — computability draws the outer boundary of the possible; complexity draws the inner boundary of the tractable.
+  The arithmetical hierarchy (Σ⁰_n / Π⁰_n / Δ⁰_n) provides a fine-grained classification of problems by the logical complexity of their definitions over the natural numbers. Σ⁰₁ sets are the computably enumerable (c.e.) sets — those for which a [[Turing Machine]] can enumerate all members without necessarily deciding non-membership — while Π⁰₁ sets are the complements of c.e. sets (co-c.e. sets). HALT is a canonical Σ⁰₁-complete set; its complement (the set of configurations that never halt) is Π⁰₁-complete. Σ⁰₂ sets are those definable by ∃∀ formulas over decidable predicates — "there exists a stage after which the property always holds" — capturing the behaviour of eventually-settling limit computations such as the [private] set of total computable functions. Problems higher in the hierarchy require [[Oracle Computation|oracle access]] to lower levels to decide, yielding the [[Turing Degree]] structure: an intricate, non-linearly ordered partial order of equivalence classes of problems under mutual Turing reducibility. The degrees form a rich combinatorial structure: the Friedberg-Muchnik theorem (1956, independently by Richard Friedberg and Albert Muchnik) established that there exist c.e. degrees strictly between 0 (the decidable degree) and 0' (the degree of HALT) — solving Post's problem and proving that the c.e. degrees form a non-trivial lattice rather than a two-element structure. This result is directly connected to the broader landscape of [[Computational Complexity Theory]], which studies the resource-bounded version of the same question: which problems are feasibly solvable, not merely solvable in principle. The relationship between [[Computability Theory]] and [[Computational Complexity Theory]] is therefore not adversarial but complementary — computability draws the outer boundary of the possible; complexity draws the inner boundary of the tractable.
 
   ### The Church-Turing Thesis in Detail
 
@@ -456,7 +512,7 @@ public: true
   - **[[Oracle Computation]] and relativisation**: for any set A, the Turing-jump A' = {e : Turing machine e with oracle A halts on input e} is a Σ⁰₁(A)-complete set, generalising HALT = ∅'. The jump operator is monotone (A <_T A') and the sequence ∅, ∅', ∅'', ... represents the canonical representatives of the arithmetical hierarchy levels 0, 1, 2, .... The class of hyperarithmetical sets — those computable from ∅^(α) for some computable ordinal α — forms the effective counterpart of the Borel sets in [[Descriptive Complexity]].
 
   ### Additional Theorems and Classical Results
-  - **Rogers's Fixed-Point Theorem (extended)**: in any acceptable numbering of partial computable functions, for every total computable function f there is a programme index n such that φ_n = φ_{f(n)}. Kleene's recursion theorem is the special case where the acceptable numbering is standard. This yields the existence of self-reproducing programmes, self-applying programmes, and the undecidability of the halting problem by a different route (since a fixed point of the "complement" function would be a machine that halts iff it doesn't halt).
+  - **Rogers's Fixed-Point Theorem (extended)**: in any acceptable numbering of partial computable functions, for every total computable function f there is a programme [private] n such that φ_n = φ_{f(n)}. Kleene's recursion theorem is the special case where the acceptable numbering is standard. This yields the existence of self-reproducing programmes, self-applying programmes, and the undecidability of the halting problem by a different route (since a fixed point of the "complement" function would be a machine that halts iff it doesn't halt).
   - **Myhill-Nerode Theorem**: a language L ⊆ Σ* is regular (recognisable by a finite automaton) iff the equivalence relation x ≡_L y (defined by: for all z, xz ∈ L iff yz ∈ L) has finitely many equivalence classes. This provides the canonical characterisation of regular languages and the basis for the DFA minimisation algorithm, connecting automata theory to the algebraic theory of monoids.
   - **Pumping Lemma for Context-Free Languages**: any sufficiently long string in a context-free language can be "pumped" — a portion repeated arbitrarily many times — remaining in the language. This is the standard tool for proving that specific languages (e.g., {a^n b^n c^n}) are not context-free, establishing boundaries between levels of the [[Formal Language]] hierarchy.
   - **The s-m-n Theorem (Parameter Theorem)**: for any partial computable function f(m,x), there is a total computable function s such that for all m, φ_{s(m)}(x) = f(m,x). This enables the construction of programmes that take parameters as inputs and return programmes — the foundation of partial evaluation, currying in [[Lambda Calculus]], and the theory of programming language compilers.
@@ -465,7 +521,7 @@ public: true
   ## Use Cases / Major Families
 
   ### The Priority Method and Degree Theory
-  The construction of c.e. sets with prescribed degree-theoretic properties requires the **priority method** — a sophisticated technique for simultaneous satisfaction of countably many requirements while managing conflicts between them. Each requirement R_e is assigned a priority level (typically its index e in an effective enumeration), and requirements are "injured" (temporarily violated) by higher-priority requirements. The **finite injury priority method** (Friedberg 1957, Muchnik 1957) uses only finitely many injuries per requirement, yielding a convergent construction. The **infinite injury priority method** (Sacks 1963) allows infinitely many injuries but requires a more delicate argument for convergence. Priority arguments yield results such as:
+  The construction of c.e. sets with prescribed degree-theoretic properties requires the **priority method** — a sophisticated technique for simultaneous satisfaction of countably many requirements while managing conflicts between them. Each requirement R_e is assigned a priority level (typically its [private] e in an effective enumeration), and requirements are "injured" (temporarily violated) by higher-priority requirements. The **finite injury priority method** (Friedberg 1957, Muchnik 1957) uses only finitely many injuries per requirement, yielding a convergent construction. The **infinite injury priority method** (Sacks 1963) allows infinitely many injuries but requires a more delicate argument for convergence. Priority arguments yield results such as:
   - The Density Theorem: between any two c.e. Turing degrees a < b, there exists a c.e. degree c with a < c < b (Sacks 1964) — proving the c.e. degrees are dense.
   - The Minimal Pair Theorem: there exist c.e. degrees a, b > 0 whose greatest lower bound is 0 — meaning no non-zero c.e. degree is computable from both a and b.
   - The Sack Splitting Theorem: every c.e. degree b > 0 is the join of two incomparable c.e. degrees a₀, a₁ with a₀ ∪ a₁ = b.

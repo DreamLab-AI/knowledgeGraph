@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ECB Digital Euro Regulation Proposal
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The ECB Digital Euro Regulation Proposal is the European Commission's draft legislative package, published in 2023, that would establish the legal basis for a digital euro. It sets out proposed rules for legal-tender status, privacy protections, distribution by supervised intermediaries, and offline functionality before adoption by EU co-legislators. As a proposal it frames the policy options and obligations that any future digital-euro framework would codify.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-euro", "label": "Digital Euro"}, {"@id": "urn:ngm:class:cbdc-frameworks", "label": "CBDC Frameworks"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-euro",
+        "label": "Digital Euro"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      }
+    ]
   },
   "quality": 0.72
 }

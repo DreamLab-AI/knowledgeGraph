@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IEEE Robotics Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "IEEE Robotics Standards are the technical standards developed under IEEE for the robotics and automation domain, covering robot ontologies, ethical design, terminology, and component interoperability. Notable examples include IEEE 1872 for core ontologies and the IEEE 7000 series for ethically aligned design of autonomous systems. They provide a normative foundation for safe, interoperable, and accountable robotic systems.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:embodied-minds", "label": "Embodied Minds"}, {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      },
+      {
+        "@id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      }
+    ]
   },
   "quality": 0.72
 }

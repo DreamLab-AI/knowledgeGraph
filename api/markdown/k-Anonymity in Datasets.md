@@ -1,8 +1,3 @@
----
-public: true
----
-
-# k-Anonymity in Datasets
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,26 +71,62 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:data-anonymization-pipeline", "label": "Data Anonymization Pipeline"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:data-anonymization-pipeline",
+        "label": "Data Anonymization Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-preserving-data-sharing", "label": "Privacy Preserving Data Sharing"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-data-sharing",
+        "label": "Privacy Preserving Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
-      {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:privacy-mechanism", "label": "Privacy Mechanism"}
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-mechanism",
+        "label": "Privacy Mechanism"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"}
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
     ]
   },
   "provenance": {
@@ -105,52 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:k-anonymity-in-datasets:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:22a3c57cc34b3d0ee443e5b6bdfae8f1a8086659731e3cc21303b1f047581faa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Li et al. (2007)]]",
-      "resolved": "urn:visionflow:linked:li-et-al-2007",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machanavajjhala et al. (2007)]]",
-      "resolved": "urn:visionflow:linked:machanavajjhala-et-al-2007",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sweeney (2002)]]",
-      "resolved": "urn:visionflow:linked:sweeney-2002",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   k-Anonymity is a dataset privacy property that guarantees each record is indistinguishable from at least k-1 other records with respect to quasi-identifier attributes—fields such as age, gender, and postal code that can be combined to re-identify individuals. Anonymization is achieved through generalisation (replacing specific values with broader categories) and suppression (removing highly identifying records), producing equivalence classes where all members share identical quasi-identifier values.

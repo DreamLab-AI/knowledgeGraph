@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Formal Specification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A formal specification is a precise, mathematically grounded description of the intended behaviour or structure of a system, written in a language with well-defined syntax and semantics. It allows properties of the system to be stated unambiguously and reasoned about or verified mechanically. Formal specifications underpin formal methods, model checking, and the construction of provably correct software and ontologies.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}, {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      }
+    ]
   },
   "quality": 0.72
 }

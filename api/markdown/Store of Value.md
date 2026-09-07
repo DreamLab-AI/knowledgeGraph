@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Store of Value
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

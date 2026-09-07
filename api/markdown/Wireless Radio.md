@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wireless Radio
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,20 +21,41 @@ public: true
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"}
+    {
+      "@id": "urn:ngm:class:telecommunications",
+      "label": "Telecommunications"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:radio-access-network", "label": "Radio Access Network"},
-      {"@id": "urn:ngm:class:wireless-connectivity", "label": "Wireless Connectivity"},
-      {"@id": "urn:ngm:class:antenna-array", "label": "Antenna Array"}
+      {
+        "@id": "urn:ngm:class:radio-access-network",
+        "label": "Radio Access Network"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:antenna-array",
+        "label": "Antenna Array"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"},
-      {"@id": "urn:ngm:class:wi-fi", "label": "Wi-Fi"}
+      {
+        "@id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:radio-transceiver", "label": "Radio Transceiver"}
+      {
+        "@id": "urn:ngm:class:radio-transceiver",
+        "label": "Radio Transceiver"
+      }
     ]
   },
   "quality": 0.8

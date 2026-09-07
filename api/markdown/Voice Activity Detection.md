@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Voice Activity Detection
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,43 +20,102 @@ public: true
   "definition": "The automated process of classifying audio frames as containing human speech or non-speech (silence, background noise, music) in order to segment an audio stream before downstream processing. Voice activity detection (VAD) reduces computational load on speech-sensitive systems by forwarding only speech-active segments to recognition, enhancement, or analysis modules. Modern VAD systems use neural classifiers trained on diverse acoustic conditions to achieve robust detection under noise, reverberation, and overlapping sounds. It is a foundational pre-processing stage in speech pipelines.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:speaker-recognition", "label": "Speaker Recognition"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {
+        "@id": "urn:ngm:class:speaker-recognition",
+        "label": "Speaker Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:speaker-recognition", "label": "Speaker Recognition"},
-      {"@id": "urn:ngm:class:speaker-diarisation", "label": "Speaker Diarisation"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-recognition",
+        "label": "Speaker Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:audio-frame-classification", "label": "Audio Frame Classification"},
-      {"@id": "urn:ngm:class:noise-suppression", "label": "Noise Suppression"}
+      {
+        "@id": "urn:ngm:class:audio-frame-classification",
+        "label": "Audio Frame Classification"
+      },
+      {
+        "@id": "urn:ngm:class:noise-suppression",
+        "label": "Noise Suppression"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:noise-robustness", "label": "Noise Robustness"},
-      {"@id": "urn:ngm:class:voice-assistant", "label": "Voice Assistant"},
-      {"@id": "urn:ngm:class:telephony", "label": "Telephony"}
+      {
+        "@id": "urn:ngm:class:noise-robustness",
+        "label": "Noise Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:telephony",
+        "label": "Telephony"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:speech-processing", "label": "Speech Processing"}
+      {
+        "@id": "urn:ngm:class:speech-processing",
+        "label": "Speech Processing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:efficiency", "label": "Efficiency"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:efficiency",
+        "label": "Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ]
   },
   "quality": 0.62,

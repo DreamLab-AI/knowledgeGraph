@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Harm Taxonomy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A harm taxonomy is a structured classification of the potential negative impacts arising from a technology, used to organise risk assessment and mitigation. In AI it categorises harms such as misinformation, discrimination, privacy violation, manipulation, and physical or economic damage. A clear taxonomy enables systematic red-teaming, policy mapping, and accountability for deployed systems.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-society-harms", "label": "Digital Society Harms"},
-      {"@id": "urn:ngm:class:ai-risks", "label": "AI Risks"}
+      {
+        "@id": "urn:ngm:class:digital-society-harms",
+        "label": "Digital Society Harms"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      }
     ]
   },
   "quality": 0.72

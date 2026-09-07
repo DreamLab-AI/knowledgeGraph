@@ -1,36 +1,108 @@
----
-public: true
----
-
-# Commons Governance
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:commons-governance", "@type":"Page", "title":"Commons Governance", "vc:slug":"commons-governance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:commons-governance",
+  "@type": "Page",
+  "title": "Commons Governance",
+  "vc:slug": "commons-governance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:commons-governance",
-  "@type":"Class",
-  "label":"Commons Governance",
-  "definition":"Commons governance is the set of institutions, rules and collective practices through which a community manages a shared resource so that it remains productive and is not depleted by individual self-interest. Drawing on Elinor Ostrom's design principles, it relies on clearly defined boundaries, participatory rule-making, monitoring and graduated sanctions rather than pure markets or central control. In blockchain contexts it is expressed through DAOs and public-goods funding that coordinate stewardship of shared digital infrastructure.",
-  "domain":"blockchain",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-  "relations":{
-    "relatedTo":[{"@id":"urn:ngm:class:retroactive-public-goods-funding","label":"Retroactive Public Goods Funding"},{"@id":"urn:ngm:class:quadratic-funding","label":"Quadratic Funding"},{"@id":"urn:ngm:class:dao","label":"DAO"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:dao","label":"DAO"},{"@id":"urn:ngm:class:collective-action","label":"Collective Action"}],
-    "partOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "enables":[{"@id":"urn:ngm:class:collective-action","label":"Collective Action"}],
-    "uses":[{"@id":"urn:ngm:class:dao","label":"DAO"},{"@id":"urn:ngm:class:governance-token","label":"Governance Token"}],
-    "supports":[{"@id":"urn:ngm:class:retroactive-public-goods-funding","label":"Retroactive Public Goods Funding"},{"@id":"urn:ngm:class:sustainability","label":"Sustainability"}],
-    "requires":[{"@id":"urn:ngm:class:collective-action","label":"Collective Action"}],
-    "dependsOn":[{"@id":"urn:ngm:class:governance-token","label":"Governance Token"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:commons-governance",
+  "@type": "Class",
+  "label": "Commons Governance",
+  "definition": "Commons governance is the set of institutions, rules and collective practices through which a community manages a shared resource so that it remains productive and is not depleted by individual self-interest. Drawing on Elinor Ostrom's design principles, it relies on clearly defined boundaries, participatory rule-making, monitoring and graduated sanctions rather than pure markets or central control. In blockchain contexts it is expressed through DAOs and public-goods funding that coordinate stewardship of shared digital infrastructure.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Federation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -194,52 +189,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:federation:8ce333c5811a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e542b75c551dc77dc2d6fe69f8cdeb13643c000e477f594363976c40f24327d4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Communication Protocol]]",
-      "resolved": "urn:visionflow:linked:communication-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Authentication]]",
-      "resolved": "urn:visionflow:linked:authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:linked:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:linked:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An architecture in which autonomous systems or organisations interoperate through agreed protocols and trust relationships while retaining independent control of their own resources.

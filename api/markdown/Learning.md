@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,52 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:learning:edd95740e339",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:48cb8de2a269a0e2ce3ff4bb715e9886fb07c24e14a3945c807fc63e00f6d56a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Imitation Learning]]",
-      "resolved": "urn:visionflow:linked:imitation-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Learning is the process by which a system improves its performance on a task through experience or data. In artificial intelligence it refers to algorithms that adjust internal parameters or rules from observations.

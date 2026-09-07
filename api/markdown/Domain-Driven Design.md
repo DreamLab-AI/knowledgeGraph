@@ -1,38 +1,119 @@
----
-public: true
----
-
-# Domain-Driven Design
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:domain-driven-design", "@type":"Page", "title":"Domain-Driven Design", "vc:slug":"domain-driven-design", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:domain-driven-design",
-  "@type":"Class",
-  "label":"Domain-Driven Design",
-  "definition":"Domain-driven design (DDD) is an approach to software development that centres the design on a deep, shared model of the business domain, expressed in a ubiquitous language common to engineers and domain experts. It provides strategic patterns for partitioning large systems into bounded contexts and tactical patterns such as aggregates, entities and value objects for structuring the model within each context. DDD aims to keep complex software aligned with the evolving realities of the business it serves.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:software-architecture","label":"Software Architecture"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:software-architecture","label":"Software Architecture"}],
-    "implements":[{"@id":"urn:ngm:class:domain-model","label":"Domain Model"}],
-    "requires":[{"@id":"urn:ngm:class:domain-model","label":"Domain Model"}],
-    "supports":[{"@id":"urn:ngm:class:microservices","label":"Microservices"},{"@id":"urn:ngm:class:microservices-architecture","label":"Microservices Architecture"}],
-    "enables":[{"@id":"urn:ngm:class:event-sourcing","label":"Event Sourcing"},{"@id":"urn:ngm:class:cqrs","label":"CQRS"}],
-    "uses":[{"@id":"urn:ngm:class:entity","label":"Entity"}],
-    "hasPart":[{"@id":"urn:ngm:class:entity","label":"Entity"}],
-    "relatedTo":[{"@id":"urn:ngm:class:software-architecture","label":"Software Architecture"},{"@id":"urn:ngm:class:event-sourcing","label":"Event Sourcing"},{"@id":"urn:ngm:class:cqrs","label":"CQRS"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:microservices-architecture","label":"Microservices Architecture"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:domain-model","label":"Domain Model"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:domain-driven-design",
+  "@type": "Page",
+  "title": "Domain-Driven Design",
+  "vc:slug": "domain-driven-design",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:domain-driven-design",
+  "@type": "Class",
+  "label": "Domain-Driven Design",
+  "definition": "Domain-driven design (DDD) is an approach to software development that centres the design on a deep, shared model of the business domain, expressed in a ubiquitous language common to engineers and domain experts. It provides strategic patterns for partitioning large systems into bounded contexts and tactical patterns such as aggregates, entities and value objects for structuring the model within each context. DDD aims to keep complex software aligned with the evolving realities of the business it serves.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "@id": "urn:ngm:class:cqrs",
+        "label": "CQRS"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:entity",
+        "label": "Entity"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:entity",
+        "label": "Entity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "@id": "urn:ngm:class:cqrs",
+        "label": "CQRS"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Domain-driven design centres software design on a deep, shared [[Domain Model]] of the business, expressed in a ubiquitous language common to engineers and experts. It is an approach within [[Software Architecture]] that partitions systems into bounded contexts and naturally supports [[Microservices]] and patterns such as [[Event Sourcing]] and [[CQRS]].
 - ### Overview

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transaction Ledger
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A transaction ledger is an ordered, append-only record of value transfers or state changes that serves as the authoritative history of activity within a financial or blockchain system. Each entry captures the parties, amounts, and timing of a transaction, and in distributed settings the ledger is cryptographically chained and replicated to guarantee integrity and auditability.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-data-structure", "label": "Distributed Data Structure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-tax-compliance-node", "label": "Digital Tax Compliance Node"}, {"@id": "urn:ngm:class:transaction-standard", "label": "Transaction Standard"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-tax-compliance-node",
+        "label": "Digital Tax Compliance Node"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-standard",
+        "label": "Transaction Standard"
+      }
+    ]
   },
   "quality": 0.72
 }

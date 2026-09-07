@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cambridge-bitcoin-electricity-consumption-index",
   "domain": "blockchain",
-  "definition": "An index published by the University of Cambridge that estimates the electricity consumption of the Bitcoin network from mining hardware efficiency and network hashrate. It provides a transparent methodology and range of estimates rather than a single fixed figure.",
+  "definition": "An [private] published by the University of Cambridge that estimates the electricity consumption of the Bitcoin network from mining hardware efficiency and network hashrate. It provides a transparent methodology and range of estimates rather than a single fixed figure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",

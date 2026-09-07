@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Cellular Automata
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cellular-automata", "@type":"Page", "title":"Cellular Automata", "vc:slug":"cellular-automata", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cellular-automata",
+  "@type": "Page",
+  "title": "Cellular Automata",
+  "vc:slug": "cellular-automata",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

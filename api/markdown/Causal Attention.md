@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Causal Attention
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,18 +59,36 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:decoder", "label": "Decoder"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"}
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ]
   },
   "quality": 0.5,
@@ -86,37 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:causal-attention:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:69fcc9c8d5b5e69c617234cf8d39fc96e083b58a5b08e91ff8afcefefe049e87"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Biometric Verification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -166,4 +161,3 @@ public: true
   - Biometric verification is embedded in remote KYC platforms used by banks, insurers, and cryptocurrency exchanges for onboarding, typically combining a facial selfie match against a government identity document with a liveness check. Providers include iProov, Jumio, Onfido, and IDEMIA. Governments deploy it in national ID systems (Aadhaar in India uses iris and fingerprint verification for 1.4 billion citizens), e-passport gates, and border management systems.
 
   - As of 2024–2025 the technology is advancing rapidly with 3D facial verification (structured light or ToF sensors) becoming standard in high-value transaction contexts, and passive liveness detection using single-frame analysis replacing active challenge-response liveness. Regulatory demands are increasing: the EU AI Act's high-risk classification for remote biometric verification requires conformity assessments and fundamental rights impact assessments, whilst eIDAS 2.0 mandates biometric verification for the highest assurance level (LoA High) of European Digital Identity Wallets.
-

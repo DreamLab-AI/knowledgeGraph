@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sheffield Advanced Manufacturing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,26 +59,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:north-england-innovation-corridor", "label": "North England Innovation Corridor"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:north-england-innovation-corridor",
+        "label": "North England Innovation Corridor"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"}
+      {
+        "@id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:robotics-application", "label": "Robotics Application"}
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-application",
+        "label": "Robotics Application"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:newcastle-ai-and-health-innovation", "label": "Newcastle AI & Health Innovation"},
-      {"@id": "urn:ngm:class:nicve-virtual-reality-research-centre", "label": "NICVE Virtual Reality Research Centre"},
-      {"@id": "urn:ngm:class:sustainable-technology", "label": "Sustainable Technology"}
+      {
+        "@id": "urn:ngm:class:newcastle-ai-and-health-innovation",
+        "label": "Newcastle AI & Health Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:nicve-virtual-reality-research-centre",
+        "label": "NICVE Virtual Reality Research Centre"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-technology",
+        "label": "Sustainable Technology"
+      }
     ]
   },
   "provenance": {
@@ -93,42 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sheffield-advanced-manufacturing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:53451e7de432dca05adb997a16e8d9165568067dbb320320ba14a0736596e53c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Northern Powerhouse]]",
-      "resolved": "urn:visionflow:linked:northern-powerhouse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[North England Innovation Corridor]]",
-      "resolved": "urn:visionflow:owl:class:north-england-innovation-corridor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[UK Tech Ecosystem]]",
-      "resolved": "urn:visionflow:owl:class:uk-tech-ecosystem",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inference Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,10 +20,18 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-compression", "label": "Model Compression"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ]
   },
   "quality": 0.7
 }

@@ -1,36 +1,104 @@
----
-public: true
----
-
-# Transfer Of Funds Regulation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:transfer-of-funds-regulation", "@type":"Page", "title":"Transfer Of Funds Regulation", "vc:slug":"transfer-of-funds-regulation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:transfer-of-funds-regulation",
+  "@type": "Page",
+  "title": "Transfer Of Funds Regulation",
+  "vc:slug": "transfer-of-funds-regulation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:transfer-of-funds-regulation",
-  "@type":"Class",
-  "label":"Transfer Of Funds Regulation",
-  "definition":"The Transfer of Funds Regulation is a body of financial regulation requiring that information about the payer and payee accompany transfers of funds and certain crypto-asset transfers, so that transactions remain traceable for anti-money-laundering and counter-terrorist-financing purposes. It implements the Financial Action Task Force travel rule within a regulatory framework, obliging payment service providers and crypto-asset service providers to collect, transmit, and screen originator and beneficiary data. It is a central pillar of payment-chain transparency.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:travel-rule","label":"Travel Rule"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:financial-action-task-force","label":"Financial Action Task Force"}],
-    "requires":[{"@id":"urn:ngm:class:know-your-customer","label":"Know Your Customer"},{"@id":"urn:ngm:class:beneficial-ownership","label":"Beneficial Ownership"}],
-    "supports":[{"@id":"urn:ngm:class:anti-money-laundering","label":"Anti-Money Laundering"},{"@id":"urn:ngm:class:counter-terrorist-financing","label":"Counter-Terrorist Financing"}],
-    "enables":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "uses":[{"@id":"urn:ngm:class:payment-system","label":"Payment System"}],
-    "relatedTo":[{"@id":"urn:ngm:class:payment-service-provider","label":"Payment Service Provider"},{"@id":"urn:ngm:class:crypto-asset-service-provider","label":"Crypto-Asset Service Provider"},{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:privacy","label":"Privacy"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:transfer-of-funds-regulation",
+  "@type": "Class",
+  "label": "Transfer Of Funds Regulation",
+  "definition": "The Transfer of Funds Regulation is a body of financial regulation requiring that information about the payer and payee accompany transfers of funds and certain crypto-asset transfers, so that transactions remain traceable for anti-money-laundering and counter-terrorist-financing purposes. It implements the Financial Action Task Force travel rule within a regulatory framework, obliging payment service providers and crypto-asset service providers to collect, transmit, and screen originator and beneficiary data. It is a central pillar of payment-chain transparency.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:beneficial-ownership",
+        "label": "Beneficial Ownership"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:counter-terrorist-financing",
+        "label": "Counter-Terrorist Financing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:payment-service-provider",
+        "label": "Payment Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-asset-service-provider",
+        "label": "Crypto-Asset Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

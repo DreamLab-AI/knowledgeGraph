@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Trusted Setup Ceremony
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:trusted-setup-ceremony", "@type":"Page", "title":"Trusted Setup Ceremony", "vc:slug":"trusted-setup-ceremony", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:trusted-setup-ceremony",
+  "@type": "Page",
+  "title": "Trusted Setup Ceremony",
+  "vc:slug": "trusted-setup-ceremony",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tracked Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,27 +55,60 @@ public: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:wheeled-robot", "label": "Wheeled Robot"},
-      {"@id": "urn:ngm:class:legged-robot", "label": "Legged Robot"}
+      {
+        "@id": "urn:ngm:class:wheeled-robot",
+        "label": "Wheeled Robot"
+      },
+      {
+        "@id": "urn:ngm:class:legged-robot",
+        "label": "Legged Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rescue-robot", "label": "Rescue Robot"},
-      {"@id": "urn:ngm:class:inspection-robot", "label": "Inspection Robot"},
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:rescue-robot",
+        "label": "Rescue Robot"
+      },
+      {
+        "@id": "urn:ngm:class:inspection-robot",
+        "label": "Inspection Robot"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ]
   },
   "provenance": {
@@ -90,37 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tracked-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:097d4ec46e75d6b91a8b70eeb0dfc01829a154456fdd31cb9b3f891304539a0a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ground Robot]]",
-      "resolved": "urn:visionflow:owl:class:ground-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Tracked Robot is a ground mobile robot that uses continuous loop tracks rather than wheels for locomotion, providing superior traction on uneven, soft, or obstacle-dense terrain such as rubble, mud, stairs, and gravel.

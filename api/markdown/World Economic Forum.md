@@ -1,8 +1,3 @@
----
-public: true
----
-
-# World Economic Forum
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:world-economic-forum:26ae8f2867cb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2daf914ab969a7940685fe2929fb4dce62f93c7fad483f147962cf33a6102a8f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Climate Finance]]",
-      "resolved": "urn:visionflow:linked:climate-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.weforum.org]]",
-      "resolved": "urn:visionflow:linked:https-www-weforum-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.weforum.org/about/world-economic-forum/]]",
-      "resolved": "urn:visionflow:linked:https-www-weforum-org-about-world-economic-forum",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The World Economic Forum is an international organisation based in Switzerland that convenes leaders from business, government, and civil society to discuss global issues. It is best known for its annual meeting in Davos.

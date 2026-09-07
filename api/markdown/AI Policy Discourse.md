@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Policy Discourse
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,15 @@ public: true
   "vc:slug": "ai-policy-discourse",
   "title": "AI Policy Discourse",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Distribution", "AI Labor Policy", "AI Sovereign Wealth Fund", "AI as Public Good", "Partial Nationalization", "Policy Discourse", "Political Ideology"],
+  "vc:outboundWikilinks": [
+    "AI Distribution",
+    "AI Labor Policy",
+    "AI Sovereign Wealth Fund",
+    "AI as Public Good",
+    "Partial Nationalization",
+    "Policy Discourse",
+    "Political Ideology"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +29,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}, {"@id": "urn:ngm:class:ai-as-public-good", "label": "AI as Public Good"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-as-public-good",
+        "label": "AI as Public Good"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Apache Atlas
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,15 +20,24 @@ public: true
   "definition": "Apache Atlas is an open-source metadata management and data governance framework, originally built for the Hadoop ecosystem, that catalogs data assets, captures end-to-end lineage, and enforces classification and access policies. It exposes a typed metadata model and search so organizations can discover datasets, trace how data flows between systems, and apply governance tags. Atlas integrates with engines such as Hive, Kafka, and HBase to collect lineage automatically.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
     ]
   },
   "quality": 0.72
 }
 ```
+
 - ### Definition
   - Apache Atlas is an open-source data-governance and catalog platform that implements [[Metadata Management]] with lineage tracking and classification. It provides the typed metadata model and policy enforcement layer for governed data lakes.
 - ### Content

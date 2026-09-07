@@ -1,39 +1,118 @@
----
-public: true
----
-
-# One Way Function
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:one-way-function", "@type":"Page", "title":"One Way Function", "vc:slug":"one-way-function", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:one-way-function",
+  "@type": "Page",
+  "title": "One Way Function",
+  "vc:slug": "one-way-function",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:one-way-function",
-  "@type":"Class",
-  "label":"One Way Function",
-  "definition":"A one-way function is a function that is easy to compute on any input but computationally infeasible to invert, meaning that recovering the input from a typical output is practically impossible with available resources. One-way functions are a foundational primitive of modern cryptography, underpinning hashing, password storage, and the trapdoor constructions used in public-key schemes. Their existence is conjectured rather than proven, and it is closely tied to open questions in computational complexity.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "implements":[{"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"}],
-    "enables":[{"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"},{"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"}],
-    "requires":[{"@id":"urn:ngm:class:preimage-resistance","label":"Preimage Resistance"}],
-    "dependsOn":[{"@id":"urn:ngm:class:modular-arithmetic","label":"Modular Arithmetic"}],
-    "uses":[{"@id":"urn:ngm:class:hash-function","label":"Hash Function"}],
-    "supports":[{"@id":"urn:ngm:class:password-hashing","label":"Password Hashing"},{"@id":"urn:ngm:class:proof-of-work","label":"Proof of Work"}],
-    "relatedTo":[{"@id":"urn:ngm:class:trapdoor-function","label":"Trapdoor Function"},{"@id":"urn:ngm:class:pseudorandom-function","label":"Pseudorandom Function"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:trapdoor-function","label":"Trapdoor Function"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:cryptographic-algorithm","label":"Cryptographic Algorithm"}],
-    "underpins":[{"@id":"urn:ngm:class:collision-resistance","label":"Collision Resistance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:one-way-function",
+  "@type": "Class",
+  "label": "One Way Function",
+  "definition": "A one-way function is a function that is easy to compute on any input but computationally infeasible to invert, meaning that recovering the input from a typical output is practically impossible with available resources. One-way functions are a foundational primitive of modern cryptography, underpinning hashing, password storage, and the trapdoor constructions used in public-key schemes. Their existence is conjectured rather than proven, and it is closely tied to open questions in computational complexity.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:preimage-resistance",
+        "label": "Preimage Resistance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:password-hashing",
+        "label": "Password Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:trapdoor-function",
+        "label": "Trapdoor Function"
+      },
+      {
+        "@id": "urn:ngm:class:pseudorandom-function",
+        "label": "Pseudorandom Function"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:trapdoor-function",
+        "label": "Trapdoor Function"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptographic-algorithm",
+        "label": "Cryptographic Algorithm"
+      }
+    ],
+    "underpins": [
+      {
+        "@id": "urn:ngm:class:collision-resistance",
+        "label": "Collision Resistance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

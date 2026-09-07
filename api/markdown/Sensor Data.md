@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SensorData
----
-
-# sensor data
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

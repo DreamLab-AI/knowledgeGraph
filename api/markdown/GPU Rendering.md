@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GPU Rendering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "GPU rendering is the computation of images from 2D or 3D scene descriptions using the massively parallel processing units of a graphics processing unit rather than the CPU. By executing shading, rasterisation, and ray-tracing workloads across thousands of cores, it delivers real-time interactive graphics and accelerates offline rendering. It is foundational to game engines, visualisation, and digital-content creation tools.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:animation-software", "label": "Animation Software"}, {"@id": "urn:ngm:class:unreal-engine", "label": "Unreal Engine"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      },
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Personalized AI Recommendations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "personalized-ai-recommendations",
   "title": "Personalized AI Recommendations",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Tool Selection", "User Profiling Agent"],
+  "vc:outboundWikilinks": [
+    "AI Tool Selection",
+    "User Profiling Agent"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise Ai"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:enterprise-ai",
+      "label": "Enterprise Ai"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise Ai"}, {"@id": "urn:ngm:class:agents", "label": "Agents"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise Ai"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

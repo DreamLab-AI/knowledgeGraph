@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Expectation Maximisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,26 @@ public: true
   "definition": "Expectation Maximisation (EM) is an iterative algorithm for finding maximum-likelihood or maximum-a-posteriori estimates of parameters in statistical models with latent (unobserved) variables. It alternates between an E-step, which computes the expected value of the complete-data log-likelihood given current parameters, and an M-step, which maximises that expectation to update the parameters. EM is guaranteed to monotonically increase the likelihood at each iteration and is widely used for Gaussian mixture models, hidden Markov models, and missing-data problems.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bayes-filter", "label": "Bayes Filter"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}
+      {
+        "@id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
     ]
   },
   "quality": 0.72

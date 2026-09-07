@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Nostr Relay
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,4 +80,3 @@ public: true
   - Nostr relays are the infrastructure layer for a growing ecosystem including Damus and Prism (Twitter-like clients), Zap.stream (live video), and Snort (web client). Lightning Network integration via NIP-57 zaps enables direct micropayments attached to any event, creating economic incentives for both relay operators and content creators. The protocol's NIP-05 identifier standard maps human-readable names to pubkeys via DNS, enabling discoverable identities without centralised registries.
 
   - By 2024-2025, the Nostr relay ecosystem has fragmented productively into specialised niches: Strfry and Nostream are high-performance open-source implementations handling millions of events per day, while relay.tools and Nostrich.house offer managed hosting. Relay-side spam filtering using proof-of-work (NIP-13) and reputation scoring is an active area. Integration with W3C DIDs positions Nostr relays as infrastructure for verifiable credential exchange across decentralised social and identity systems.
-

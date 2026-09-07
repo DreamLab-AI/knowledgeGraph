@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Atomic Delivery versus Payment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Atomic Delivery versus Payment (atomic DvP) is a settlement mechanism in which the transfer of an asset and the corresponding payment are executed as a single indivisible transaction: either both legs complete simultaneously or neither does, eliminating counterparty risk by making it impossible for one party to receive value without the other receiving theirs. It applies the atomicity property of database transactions to financial and digital asset exchange.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:delivery-versus-payment", "label": "Delivery-Versus-Payment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:delivery-versus-payment",
+      "label": "Delivery-Versus-Payment"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"}
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - Capital markets experimentation with blockchain-based DvP accelerated from 2018 onwards. Project Jasper (Bank of Canada), Project Ubin (MAS Singapore), and Project Helvetia (BIS Innovation Hub/SNB) all implemented DvP between central bank digital currency (CBDC) and tokenised securities on permissioned blockchain networks. In 2021, the Australian Securities Exchange (ASX) pursued a CHESS replacement project using Digital Asset's Canton Network before cancelling in 2022 due to delays and complexity. The European Distributed Ledger Technology (DLT) Pilot Regime (2023) created a regulatory sandbox enabling atomic settlement of tokenised securities against CBDC or stablecoin on public or permissioned chains.
 
   - As of 2024–2025, institutional adoption is accelerating: JPMorgan Onyx, Goldman Sachs DAP, and HSBC Orion have all executed live atomic DvP settlements of tokenised bonds and equities. The BIS Finternet initiative frames atomic settlement as a key capability for a next-generation financial system. Remaining challenges include legal finality (when is on-chain settlement legally binding under different jurisdictions?), FX settlement across CBDC rails, and the absence of liquid on-chain payment tokens in major currencies, which forces most institutional DvP to rely on commercial bank money or stablecoin proxies.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scene Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,18 +46,36 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ar-scene-graph", "label": "Ar Scene Graph"}
+      {
+        "@id": "urn:ngm:class:ar-scene-graph",
+        "label": "Ar Scene Graph"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:scene-optimization", "label": "Scene Optimization"},
-      {"@id": "urn:ngm:class:occlusion-culling", "label": "Occlusion Culling"}
+      {
+        "@id": "urn:ngm:class:scene-optimization",
+        "label": "Scene Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"}
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"}
+      {
+        "@id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      }
     ]
   },
   "quality": 0.7,
@@ -73,26 +86,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:scene-management:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:18f8091fa7ceb1741aca9cf83dba6e0da80f75b042048cda453b724b9fbf963d"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Scene Management encompasses the runtime systems and data structures responsible for organising, loading, and unloading 3D scene content in real-time environments. It coordinates scene graph traversal, hierarchical object relationships, asset streaming, and spatial partitioning to ensure that only geometrically and logically relevant content is active at any moment, enabling scalable and performant virtual worlds.

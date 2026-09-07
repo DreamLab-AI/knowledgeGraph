@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Operational Transformation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -155,46 +150,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:operational-transformation:6cee00f3b9bc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:59299c267d0d88a6d2dec23b86ea103f429c5adb260c8e566e7a67a58d1dfb67"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Collaboration Tools]]",
-      "resolved": "urn:visionflow:linked:collaboration-tools",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CRDT]]",
-      "resolved": "urn:visionflow:linked:crdt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Conflict Resolution]]",
-      "resolved": "urn:visionflow:linked:conflict-resolution",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

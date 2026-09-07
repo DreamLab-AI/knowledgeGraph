@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Signal Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -221,72 +216,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-signal-processing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a2d6cb90e05406c7bc5336c298b6d52f8205bf804f5da1ecbe525b68667966fe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Algorithms]]",
-      "resolved": "urn:visionflow:linked:algorithms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Audio Enhancement]]",
-      "resolved": "urn:visionflow:linked:audio-enhancement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DSP Hardware]]",
-      "resolved": "urn:visionflow:linked:dsp-hardware",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensors]]",
-      "resolved": "urn:visionflow:linked:sensors",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Signal Processing]]",
-      "resolved": "urn:visionflow:owl:class:signal-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Audio]]",
-      "resolved": "urn:visionflow:owl:class:spatial-audio",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision Video Analysis]]",
-      "resolved": "urn:visionflow:owl:class:video-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences.

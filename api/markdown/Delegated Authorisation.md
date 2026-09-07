@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Delegated Authorisation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:delegated-authorisation", "@type":"Page", "title":"Delegated Authorisation", "vc:slug":"delegated-authorisation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:delegated-authorisation",
+  "@type": "Page",
+  "title": "Delegated Authorisation",
+  "vc:slug": "delegated-authorisation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

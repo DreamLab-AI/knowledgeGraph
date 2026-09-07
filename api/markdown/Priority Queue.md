@@ -1,54 +1,108 @@
----
-public: true
----
-
-# Priority Queue
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:priority-queue", "@type":"Page", "title":"Priority Queue", "vc:slug":"priority-queue", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:priority-queue",
+  "@type": "Page",
+  "title": "Priority Queue",
+  "vc:slug": "priority-queue",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:priority-queue",
-  "@type":"Class",
-  "label":"Priority Queue",
-  "definition":"A priority queue is an abstract data type in which each element has an associated priority and elements are served in order of priority rather than insertion order. It supports insertion of elements and extraction of the highest- (or lowest-) priority element, and is most commonly implemented with a binary heap. Priority queues underpin many graph and scheduling algorithms where the next item to process is the most urgent one.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:data-structure","label":"Data Structure"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:graph-search","label":"Graph Search"},
-      {"@id":"urn:ngm:class:dynamic-programming","label":"Dynamic Programming"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:priority-queue",
+  "@type": "Class",
+  "label": "Priority Queue",
+  "definition": "A priority queue is an abstract data type in which each element has an associated priority and elements are served in order of priority rather than insertion order. It supports insertion of elements and extraction of the highest- (or lowest-) priority element, and is most commonly implemented with a binary heap. Priority queues underpin many graph and scheduling algorithms where the next item to process is the most urgent one.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:dijkstra-algorithm","label":"Dijkstra Algorithm"},
-      {"@id":"urn:ngm:class:pathfinding","label":"Pathfinding"},
-      {"@id":"urn:ngm:class:priority-scheduling","label":"Priority Scheduling"},
-      {"@id":"urn:ngm:class:heuristic-search","label":"Heuristic Search"},
-      {"@id":"urn:ngm:class:discrete-event-simulation","label":"Discrete-Event Simulation"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "@id": "urn:ngm:class:priority-scheduling",
+        "label": "Priority Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      },
+      {
+        "@id": "urn:ngm:class:discrete-event-simulation",
+        "label": "Discrete-Event Simulation"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:data-structure","label":"Data Structure"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"},
-      {"@id":"urn:ngm:class:event-driven-architecture","label":"Event-Driven Architecture"},
-      {"@id":"urn:ngm:class:task-scheduling","label":"Task Scheduling"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:task-scheduling",
+        "label": "Task Scheduling"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:data-structure","label":"Data Structure"},
-      {"@id":"urn:ngm:class:graph-search","label":"Graph Search"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:dynamic-programming","label":"Dynamic Programming"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

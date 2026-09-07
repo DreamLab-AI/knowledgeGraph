@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Side-Channel Attack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A side-channel attack recovers secret information by observing physical or behavioural artefacts of a cryptographic implementation rather than breaking its underlying mathematics. Exploitable channels include timing variation, power consumption, electromagnetic emissions, cache access patterns, and acoustic emanations. It is a critical implementation-level threat that motivates constant-time code and masking countermeasures.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}, {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
+    ]
   },
   "quality": 0.72
 }

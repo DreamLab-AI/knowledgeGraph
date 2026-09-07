@@ -1,55 +1,109 @@
----
-public: true
----
-
-# Log Replication
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:log-replication", "@type":"Page", "title":"Log Replication", "vc:slug":"log-replication", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:log-replication",
-  "@type":"Class",
-  "label":"Log Replication",
-  "definition":"Log replication is the mechanism by which an ordered, append-only sequence of commands is copied consistently across the nodes of a distributed system so that each replica can apply the same operations in the same order. In leader-based consensus protocols such as Raft, the leader appends client commands to its log and replicates entries to followers, committing an entry once a quorum has durably stored it. By ensuring every replica converges on an identical log, it is the substrate for state machine replication and strong consistency. It must handle leader failover, log divergence, and consistency checks to keep replicas in agreement.",
-  "domain":"distributed-systems",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:replication","label":"Replication"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:leader-election","label":"Leader Election"},
-      {"@id":"urn:ngm:class:quorum","label":"Quorum"}
-    ],
-    "implements":[
-      {"@id":"urn:ngm:class:state-machine-replication","label":"State Machine Replication"},
-      {"@id":"urn:ngm:class:consensus-algorithm","label":"Consensus Algorithm"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"},
-      {"@id":"urn:ngm:class:linearizability","label":"Linearizability"}
-    ],
-    "partOf":[
-      {"@id":"urn:ngm:class:raft","label":"Raft"}
-    ],
-    "uses":[
-      {"@id":"urn:ngm:class:raft","label":"Raft"},
-      {"@id":"urn:ngm:class:paxos","label":"Paxos"}
-    ],
-    "requires":[
-      {"@id":"urn:ngm:class:distributed-consensus","label":"Distributed Consensus"},
-      {"@id":"urn:ngm:class:leader-election","label":"Leader Election"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:consistency-model","label":"Consistency Model"},
-      {"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:log-replication",
+  "@type": "Page",
+  "title": "Log Replication",
+  "vc:slug": "log-replication",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:log-replication",
+  "@type": "Class",
+  "label": "Log Replication",
+  "definition": "Log replication is the mechanism by which an ordered, append-only sequence of commands is copied consistently across the nodes of a distributed system so that each replica can apply the same operations in the same order. In leader-based consensus protocols such as Raft, the leader appends client commands to its log and replicates entries to followers, committing an entry once a quorum has durably stored it. By ensuring every replica converges on an identical log, it is the substrate for state machine replication and strong consistency. It must handle leader failover, log divergence, and consistency checks to keep replicas in agreement.",
+  "domain": "distributed-systems",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:replication",
+      "label": "Replication"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:raft",
+        "label": "Raft"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Log replication copies an ordered, append-only command log consistently across replicas so each applies the same operations in order. It is the core of [[State Machine Replication]] in protocols such as [[Raft]] and [[Paxos]], built atop [[Leader Election]] and [[Quorum]] agreement to deliver [[Fault Tolerance]].
 - ### Overview

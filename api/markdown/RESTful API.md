@@ -1,71 +1,147 @@
----
-public: true
----
-
-# RESTful API
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:restful-api", "@type":"Page", "title":"RESTful API", "vc:slug":"restful-api", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:restful-api",
+  "@type": "Page",
+  "title": "RESTful API",
+  "vc:slug": "restful-api",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:restful-api",
-  "@type":"Class",
-  "label":"RESTful API",
-  "definition":"A RESTful API is a web application programming interface that follows the Representational State Transfer architectural style, exposing resources identified by URIs and manipulated through a uniform set of HTTP methods. It is stateless, treats responses as representations of resource state, and uses standard status codes and media types so clients and servers can evolve independently. RESTful design favours predictable, cacheable, hypermedia-driven interactions over the web.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:web-api","label":"Web API"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:http","label":"HTTP"},
-      {"@id":"urn:ngm:class:hateoas","label":"HATEOAS"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:restful-api",
+  "@type": "Class",
+  "label": "RESTful API",
+  "definition": "A RESTful API is a web application programming interface that follows the Representational State Transfer architectural style, exposing resources identified by URIs and manipulated through a uniform set of HTTP methods. It is stateless, treats responses as representations of resource state, and uses standard status codes and media types so clients and servers can evolve independently. RESTful design favours predictable, cacheable, hypermedia-driven interactions over the web.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:web-api",
+      "label": "Web API"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:hateoas",
+        "label": "HATEOAS"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:web-api","label":"Web API"},
-      {"@id":"urn:ngm:class:api-design","label":"API Design"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:web-api",
+        "label": "Web API"
+      },
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:http","label":"HTTP"},
-      {"@id":"urn:ngm:class:stateless-protocol","label":"Stateless Protocol"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:stateless-protocol",
+        "label": "Stateless Protocol"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:web-services","label":"Web Services"},
-      {"@id":"urn:ngm:class:api-management","label":"API Management"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:web-services",
+        "label": "Web Services"
+      },
+      {
+        "@id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:rest-api","label":"REST API"},
-      {"@id":"urn:ngm:class:idempotency","label":"Idempotency"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:http","label":"HTTP"},
-      {"@id":"urn:ngm:class:caching","label":"Caching"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:api-design","label":"API Design"},
-      {"@id":"urn:ngm:class:microservices","label":"Microservices"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
     ],
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:openapi","label":"OpenAPI"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:graph-ql","label":"GraphQL"},
-      {"@id":"urn:ngm:class:soap","label":"SOAP"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:soap",
+        "label": "SOAP"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:api-gateway","label":"API Gateway"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:rest-api","label":"REST API"},
-      {"@id":"urn:ngm:class:hateoas","label":"HATEOAS"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:hateoas",
+        "label": "HATEOAS"
+      }
     ]
   },
-  "sameAs":[
-    {"@id":"urn:ngm:class:rest-api","label":"REST API"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:rest-api",
+      "label": "REST API"
+    }
   ],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

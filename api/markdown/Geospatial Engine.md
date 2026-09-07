@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Geospatial Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,42 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:geospatial-engine:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f4a319a9a383b7e9d58c1df9af652f11280d96e7e07d961a19d87d89bfa243c5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Geospatially-Accurate Metaverse]]",
-      "resolved": "urn:visionflow:linked:geospatially-accurate-metaverse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software platforms that stream, render, and process large volumes of geographic and 3D spatial data in real-time for metaverse applications, enabling digital twins of real-world locations, location-based experiences, and integration between physical geography and virtual environments.

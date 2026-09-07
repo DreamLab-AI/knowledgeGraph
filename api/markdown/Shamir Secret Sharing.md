@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Shamir Secret Sharing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,52 +171,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:shamir-secret-sharing:578d63ebcc40",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0282631fdd60fd64dc6e5aedf592995fc813410eff68d09c8d2edb8c6395a9fd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Modular Arithmetic]]",
-      "resolved": "urn:visionflow:linked:modular-arithmetic",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Threshold Cryptography]]",
-      "resolved": "urn:visionflow:linked:threshold-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[STARK]]",
-      "resolved": "urn:visionflow:linked:stark",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography Domain]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Shamir secret sharing splits a secret into shares so that any threshold number of them reconstructs it while fewer reveal nothing, using polynomial interpolation over a finite field.

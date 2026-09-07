@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitcoin Lightning Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -220,72 +215,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bitcoin-lightning-network:245fe8a8d207",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e69997fc25c5b4d394af396b9d7610d2e9026f33007e500720f5a4dd3ada7ef3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Payment Channel]]",
-      "resolved": "urn:visionflow:linked:payment-channel",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[HTLC]]",
-      "resolved": "urn:visionflow:linked:htlc",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multisignature]]",
-      "resolved": "urn:visionflow:linked:multisignature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Micropayments]]",
-      "resolved": "urn:visionflow:linked:micropayments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Instant Settlement]]",
-      "resolved": "urn:visionflow:linked:instant-settlement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Payment Systems Domain]]",
-      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquid Network]]",
-      "resolved": "urn:visionflow:linked:liquid-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Bitcoin Lightning Network is a layer-two payment protocol built on top of Bitcoin that enables fast, low-cost transactions through bidirectional payment channels. Two parties lock funds in a multisignature channel and exchange signed balance updates off-chain, settling the final state on the Bitcoin blockchain only when the channel closes. Payments can be routed across a network of connected channels, allowing transfers between parties that do not share a direct channel.

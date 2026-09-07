@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - BC-0214-environmental-sustainability
----
-
-# Environmental Sustainability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,32 +186,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:environmental-sustainability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9f1a9a9c333a70714c42dfacafb6ec268c3f1b30bbdaa16130543368d704016e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The responsible stewardship of natural resources and environmental systems in AI development and deployment, minimising ecological harm whilst potentially leveraging AI to address environmental challenges including climate change, biodiversity loss and resource depletion.

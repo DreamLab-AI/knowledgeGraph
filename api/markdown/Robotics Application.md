@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robotics Application
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -98,26 +93,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robotics-application:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0551142b12d6a92a6381508e4e602fe131c1d53c8e04a79f2c3f2a9b0d5d2bd2"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A deployed use-case or task domain in which robotic systems perform physical or cyber-physical work, spanning industrial automation, telepresence, telemedicine, logistics, hazardous environment inspection, and collaborative human-robot interaction. Robotics applications integrate perception, planning, actuation, and communication subsystems to accomplish domain-specific objectives with varying degrees of autonomy.

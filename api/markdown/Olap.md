@@ -1,36 +1,120 @@
----
-public: true
----
-
-# Olap
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:olap", "@type":"Page", "title":"Olap", "vc:slug":"olap", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:olap",
+  "@type": "Page",
+  "title": "Olap",
+  "vc:slug": "olap",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:olap",
-  "@type":"Class",
-  "label":"Olap",
-  "definition":"Online Analytical Processing (OLAP) is a category of data processing optimised for fast, multidimensional analysis of large volumes of historical and aggregated data. It organises measures along dimensions such as time, geography, and product, allowing analysts to slice, dice, roll up, and drill down through data cubes interactively. OLAP underpins business intelligence and decision support by enabling complex aggregate queries that contrast with the row-oriented, transactional focus of operational systems.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:business-intelligence","label":"Business Intelligence"},{"@id":"urn:ngm:class:decision-support","label":"Decision Support"},{"@id":"urn:ngm:class:data-visualisation","label":"Data Visualisation"}],
-    "hasPart":[{"@id":"urn:ngm:class:data-warehouse","label":"Data Warehouse"},{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"}],
-    "requires":[{"@id":"urn:ngm:class:data-warehouse","label":"Data Warehouse"},{"@id":"urn:ngm:class:data-architecture","label":"Data Architecture"}],
-    "uses":[{"@id":"urn:ngm:class:sql","label":"SQL"},{"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"}],
-    "supports":[{"@id":"urn:ngm:class:self-service-analytics","label":"Self Service Analytics"},{"@id":"urn:ngm:class:data-engineering","label":"Data Engineering"}],
-    "relatedTo":[{"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"},{"@id":"urn:ngm:class:metadata","label":"Metadata"},{"@id":"urn:ngm:class:data-architecture","label":"Data Architecture"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:business-intelligence","label":"Business Intelligence"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:olap",
+  "@type": "Class",
+  "label": "Olap",
+  "definition": "Online Analytical Processing (OLAP) is a category of data processing optimised for fast, multidimensional analysis of large volumes of historical and aggregated data. It organises measures along dimensions such as time, geography, and product, allowing analysts to slice, dice, roll up, and drill down through data cubes interactively. OLAP underpins business intelligence and decision support by enabling complex aggregate queries that contrast with the row-oriented, transactional focus of operational systems.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-analytics",
+      "label": "Data Analytics"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "@id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:self-service-analytics",
+        "label": "Self Service Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

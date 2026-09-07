@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Parallel Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,22 +58,52 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:delta-robot", "label": "Delta Robot"},
-      {"@id": "urn:ngm:class:stewart-platform", "label": "Stewart Platform"}
+      {
+        "@id": "urn:ngm:class:delta-robot",
+        "label": "Delta Robot"
+      },
+      {
+        "@id": "urn:ngm:class:stewart-platform",
+        "label": "Stewart Platform"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:scara-robot", "label": "SCARA Robot"},
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:scara-robot",
+        "label": "SCARA Robot"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
-      {"@id": "urn:ngm:class:electric-linear-actuator", "label": "Electric Linear Actuator"}
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "@id": "urn:ngm:class:electric-linear-actuator",
+        "label": "Electric Linear Actuator"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cylindrical-robot", "label": "Cylindrical Robot"}
+      {
+        "@id": "urn:ngm:class:cylindrical-robot",
+        "label": "Cylindrical Robot"
+      }
     ]
   },
   "quality": 0.8,
@@ -89,37 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:parallel-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fefff6dfb2cba27d87f3ca107d11762fae8e27c932f02627d07e6e6ed7322ddd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Manipulator Robot]]",
-      "resolved": "urn:visionflow:owl:class:manipulator-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously.

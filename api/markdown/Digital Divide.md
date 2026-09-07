@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Divide
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,46 +176,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-divide:bbd09d72ad40",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:91602468c77fde2aaef98cae2d424f86ca94a97905ba2eff278eedf3d37c04f4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Telecommunications]]",
-      "resolved": "urn:visionflow:linked:telecommunications",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Transformation]]",
-      "resolved": "urn:visionflow:linked:digital-transformation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Economy]]",
-      "resolved": "urn:visionflow:linked:digital-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

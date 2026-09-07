@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ForceFeedback
----
-
-# Force Feedback
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,4 +155,3 @@ aliases:
   - Applications of force feedback span surgical simulation (laparoscopy, endoscopy, bone surgery, dental drilling), where the ability to feel tissue resistance is correlated with reduced complication rates for novice surgeons in training. Robot teleoperation in hazardous environments — nuclear facility maintenance, underwater inspection, explosive ordnance disposal — uses bilateral teleoperation architectures where force measured at the robot end-effector is displayed to the operator's hand controller, enabling sensitive manipulation tasks that would be impossible with visual feedback alone. Vehicle simulation for driver training (steering wheel feedback) and flight simulation (control loading) represent mature commercial applications. In XR and gaming, full-body force feedback exoskeletons (HaptX Gloves, Dexmo, bHaptics TactSuit) provide whole-hand contact sensation, though the form factor and cost constraints remain challenging.
 
   - The 2024-2025 frontier in force feedback research focuses on several challenging areas: wearable form factors that eliminate the mechanical ground requirement through soft robotics and pneumatic actuation, high-DOF finger and hand interfaces for dexterous manipulation tasks in teleoperation, and integration of learned physics models that can render the force properties of deformable and fluid materials that rigid-body simulation handles poorly. The combination of force feedback with tactile sensor arrays on robot fingertips is enabling genuine dexterity transfer in teleoperation, where an operator's full hand movements are mapped to robot hand postures with force reflection at each fingertip. Miniaturisation and cost reduction driven by consumer VR demand is gradually bringing force feedback from laboratory prototypes to commercial products in the $100-$1000 range for limited-DOF hand interfaces.
-

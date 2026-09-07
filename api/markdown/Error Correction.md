@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Error Correction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Error correction is the set of techniques and mathematical frameworks that detect and rectify errors introduced into data during transmission, storage, or computation, by adding structured redundancy that allows a decoder to infer and restore the original information even when some fraction of the data has been corrupted or lost. Unlike error detection alone, error correction codes (ECCs) carry sufficient redundancy to reconstruct the original codeword without retransmission, at the cost of additional bandwidth or storage overhead. Applications range from deep-space communication and data storage to quantum computing, where error correction is essential to suppress decoherence and enable fault-tolerant operation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:reed-solomon-codes", "label": "Reed-Solomon Codes"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:reliability", "label": "Reliability"}
+      {
+        "@id": "urn:ngm:class:reed-solomon-codes",
+        "label": "Reed-Solomon Codes"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fault-tolerance-system", "label": "Fault Tolerance System"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computation Paradigm"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance-system",
+        "label": "Fault Tolerance System"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ]
   },
   "quality": 0.8

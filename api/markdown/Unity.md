@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Unity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,57 +191,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:unity:a5790b06f63b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:75573bb5886469dae31e61b64437c56249abc1c66198160b215d3f4b2a5002a6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Graphics Pipeline]]",
-      "resolved": "urn:visionflow:linked:graphics-pipeline",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Reality]]",
-      "resolved": "urn:visionflow:linked:virtual-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:linked:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenXR]]",
-      "resolved": "urn:visionflow:linked:open-xr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[FBX]]",
-      "resolved": "urn:visionflow:linked:fbx",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Game Engine]]",
-      "resolved": "urn:visionflow:linked:game-engine",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Unity is a cross-platform real-time 3D engine and editor used to build games, simulations and XR applications across desktop, mobile, console and head-mounted display targets.

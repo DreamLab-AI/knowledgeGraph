@@ -1,37 +1,110 @@
----
-public: true
----
-
-# Mesh Generation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:mesh-generation", "@type":"Page", "title":"Mesh Generation", "vc:slug":"mesh-generation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:mesh-generation",
+  "@type": "Page",
+  "title": "Mesh Generation",
+  "vc:slug": "mesh-generation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:mesh-generation",
-  "@type":"Class",
-  "label":"Mesh Generation",
-  "definition":"Mesh generation is the process of constructing a discrete representation of a geometric domain as a network of vertices, edges and faces - typically triangles or tetrahedra - suitable for rendering, simulation or analysis. It transforms continuous shapes, point clouds or implicit surfaces into well-formed polygonal or volumetric meshes that meet quality, density and topology constraints. Mesh generation underpins computer graphics, 3D reconstruction and numerical simulation.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"}],
-    "relatedTo":[{"@id":"urn:ngm:class:point-cloud-generation","label":"Point Cloud Generation"},{"@id":"urn:ngm:class:signed-distance-function","label":"Signed Distance Function"},{"@id":"urn:ngm:class:neural-radiance-field","label":"Neural Radiance Field"}],
-    "uses":[{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"},{"@id":"urn:ngm:class:signed-distance-function","label":"Signed Distance Function"}],
-    "partOf":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}],
-    "enables":[{"@id":"urn:ngm:class:simulation","label":"Simulation"}],
-    "supports":[{"@id":"urn:ngm:class:simulation","label":"Simulation"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}],
-    "requires":[{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:point-cloud-generation","label":"Point Cloud Generation"}],
-    "dependsOn":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:mesh-generation",
+  "@type": "Class",
+  "label": "Mesh Generation",
+  "definition": "Mesh generation is the process of constructing a discrete representation of a geometric domain as a network of vertices, edges and faces - typically triangles or tetrahedra - suitable for rendering, simulation or analysis. It transforms continuous shapes, point clouds or implicit surfaces into well-formed polygonal or volumetric meshes that meet quality, density and topology constraints. Mesh generation underpins computer graphics, 3D reconstruction and numerical simulation.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:point-cloud-generation",
+        "label": "Point Cloud Generation"
+      },
+      {
+        "@id": "urn:ngm:class:signed-distance-function",
+        "label": "Signed Distance Function"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:signed-distance-function",
+        "label": "Signed Distance Function"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:point-cloud-generation",
+        "label": "Point Cloud Generation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

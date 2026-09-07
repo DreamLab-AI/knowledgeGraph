@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,27 +34,72 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:realtime-communication", "label": "Realtime Communication"},
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"},
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
-      {"@id": "urn:ngm:class:web-rtc", "label": "WebRTC"},
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:realtime-communication",
+        "label": "Realtime Communication"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:collaboration-technology", "label": "Collaboration Technology"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-technology",
+        "label": "Collaboration Technology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
-      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"}
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
     ]
   },
   "quality": 0.8,
@@ -66,3 +107,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0092 protective stop
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,50 +60,48 @@ public: true
   },
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"}
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
-      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-operation", "label": "Collaborative Operation"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-operation",
+        "label": "Collaborative Operation"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0092-protective-stop:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:92484044f37f0553fb731b4611301193e56a0e5531db09a6f03b3e00ffd45f37"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ### Primary Definition

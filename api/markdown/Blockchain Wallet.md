@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Wallet
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -117,6 +113,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - A blockchain wallet is software or hardware that manages the cryptographic keys used to control assets and identities on a blockchain. Rather than storing assets directly, a wallet stores private keys, derives public addresses, and signs transactions that authorise the movement of on-chain assets. Wallets range from custodial services that hold keys on a user's behalf to self-custody solutions where the user retains exclusive control.
   - Related concepts: [[Private Key]] [[Self-Custody]] [[Hardware Wallet]] [[Blockchain]]

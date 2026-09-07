@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BIS Innovation Hub
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,52 +173,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bis-innovation-hub:9243d1c86d8d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a9fd8ceb9b20a7523558398e86c52ea745122e498f6d405fa61fd33f8f03d3fd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Central Bank Digital Currency]]",
-      "resolved": "urn:visionflow:linked:central-bank-digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Wholesale CBDC]]",
-      "resolved": "urn:visionflow:linked:wholesale-cbdc",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Central Bank]]",
-      "resolved": "urn:visionflow:linked:central-bank",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hong Kong]]",
-      "resolved": "urn:visionflow:linked:hong-kong",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BIS]]",
-      "resolved": "urn:visionflow:linked:bis",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The innovation arm of the Bank for International Settlements, established to develop public goods for central banks and explore financial technology.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Long-Term Archival
----
-
-# Long Term Archival
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -79,42 +72,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:long-term-archival:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9c5248d2b6dfedea4549de94170e00133ebdc8f633f3ec8a0783c4322d25ab44"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Future Asset Access]]",
-      "resolved": "urn:visionflow:linked:future-asset-access",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Preservation]]",
-      "resolved": "urn:visionflow:owl:class:digital-preservation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Strategies and technologies for preserving digital assets, metaverse content, and cultural heritage data over extended periods (10+ years), using durable storage media, format migration protocols, and AI-enhanced preservation systems.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Singular Value Decomposition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -90,6 +86,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Singular value decomposition (SVD) is a matrix factorisation that expresses any real or complex matrix as the product of two orthogonal (or unitary) matrices and a diagonal matrix of non-negative singular values. It generalises eigenvalue decomposition to arbitrary, non-square matrices and reveals the rank, range, and dominant directions of variation in data. SVD is foundational across machine learning and numerical linear algebra, underpinning dimensionality reduction, low-rank approximation, recommender systems, and the principal component analysis used to compress and denoise high-dimensional data.
   - [[Dimensionality Reduction]] [[Linear Algebra]] [[Feature Extraction]] [[Principal Component Analysis]]

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Style Transfer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,92 +200,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:style-transfer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6aa76778ec45f8da0e33c87c6073ab8116b5ef37d9388f7a34354dec52b6f2cd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[presentation]]",
-      "resolved": "urn:visionflow:linked:presentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[rework based on gpt]]",
-      "resolved": "urn:visionflow:linked:rework-based-on-gpt",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Network]]",
-      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cyber Security and Military]]",
-      "resolved": "urn:visionflow:owl:class:cyber-security-and-military",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Society Surveillance]]",
-      "resolved": "urn:visionflow:owl:class:digital-society-surveillance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:owl:class:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image to Image Translation]]",
-      "resolved": "urn:visionflow:owl:class:image-to-image-translation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Microsoft Copilot]]",
-      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[style transfer]]",
-      "resolved": "urn:visionflow:owl:class:style-transfer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Style Transfer is the technique of applying the artistic style of one image (style image) to the content of another image (content image), creating a new image that combines content from one source with the aesthetic style of another. Neural style transfer employs convolutional neural networks to separate and recombine content and style representations, enabling artistic rendering, photo enhancement, and creative visual effects.
@@ -529,7 +438,7 @@ public: true
   - ## Title: Bitcoin's Adoption in El Salvador: A Boon for the Unbanked
   - **Current Transfer System**: Traditional methods like Western Union are centralized, regulated, and often inconvenient for those in rural areas.
   - **Bitcoin as an Alternative**: Cryptocurrencies like Bitcoin enable easy fund transfers via mobile phones, bypassing the need for physical transfer services.
-  - **Deflationary Nature**: Unlike traditional currencies, Bitcoin's supply is capped, which could lead to falling prices over time.
+  - **Deflationary Nature**: Unlike traditional currencies, Bitcoin's supply is capped, which [private] lead to falling prices over time.
   - **Environmental Concerns**: Bitcoin mining's environmental impact is a factor to consider in its adoption.
 	  https://www.cointribune.com/en/argentina-bitcoin-faces-100-inflation-rate/
 

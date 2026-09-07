@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IEEE RAS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The IEEE Robotics and Automation Society (RAS) is the professional society within IEEE dedicated to advancing robotics and automation through publications, conferences, and the development of technical standards. It sponsors standards such as IEEE 1872 (ontologies for robotics and automation) and maintains working groups covering terminology, safety, and interoperability. RAS is a primary standards-developing body for the robotics field.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:topological-map", "label": "Topological Map"}, {"@id": "urn:ngm:class:force-control", "label": "Force Control"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ]
   },
   "quality": 0.72
 }

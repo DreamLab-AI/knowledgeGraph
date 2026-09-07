@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Medical Devices
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Medical devices are instruments, machines, implants, or software intended for the diagnosis, prevention, monitoring, or treatment of disease and injury. They are classified by risk and tightly regulated, demanding high reliability, fault tolerance, and often real-time performance where failure can cause patient harm. Embedded and connected medical devices increasingly incorporate sensing, control, and AI under stringent safety regimes.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}, {"@id": "urn:ngm:class:real-time", "label": "Real Time"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      }
+    ]
   },
   "quality": 0.72
 }

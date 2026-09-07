@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Mental Model
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:mental-model", "@type":"Page", "title":"Mental Model", "vc:slug":"mental-model", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:mental-model",
+  "@type": "Page",
+  "title": "Mental Model",
+  "vc:slug": "mental-model",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

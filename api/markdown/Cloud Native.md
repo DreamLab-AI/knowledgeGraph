@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cloud Native
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "Cloud Native is an approach to building and running applications that fully exploits the advantages of cloud computing infrastructure — elastic scaling, managed services, pay-per-use economics, and high availability — by designing for containerisation, dynamic orchestration, microservices decomposition, and declarative APIs. The Cloud Native Computing Foundation (CNCF) defines it as the use of containers, service meshes, microservices, immutable infrastructure, and declarative APIs to build resilient, manageable, and observable systems. Cloud Native architectures enable rapid, reproducible delivery of software at scale across public, private, and hybrid cloud environments.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:scalability", "label": "Scalability"},
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +88,3 @@ public: true
   - [[Service Mesh]] adoption (Istio, Linkerd, Consul Connect) decouples networking concerns — mutual TLS, circuit breaking, retries, traffic shifting — from application code, enabling polyglot [[Microservices]] to communicate securely without per-service implementation of these concerns. eBPF-based networking (Cilium, Calico eBPF) is replacing iptables-based approaches for higher performance and richer observability at the kernel level. WebAssembly (Wasm) and the WebAssembly System Interface (WASI) are emerging as a complementary sandboxed compute primitive for Cloud Native edge and serverless deployments.
 
   - By 2024–2025, Cloud Native has become the default deployment paradigm for new enterprise applications, with Kubernetes running the majority of containerised workloads across major clouds. [[Edge Computing]] convergence (K3s, MicroK8s, AWS Outposts, Azure Arc) extends Cloud Native patterns to manufacturing, retail, and telco edge sites. AI workloads are increasingly cloud native, with GPU operator, KubeFlow, and Ray Kubernetes integrations enabling scalable training and inference at [[Scalability]] levels previously requiring specialised HPC infrastructure. Multi-cloud and [[Fault Tolerance]] across providers is managed through Federation, Cluster API, and CAPI implementations.
-

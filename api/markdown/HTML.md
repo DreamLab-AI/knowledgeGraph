@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HTML
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -111,6 +107,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - HTML (HyperText Markup Language) is the standard markup language for creating and structuring documents and applications on the World Wide Web. It uses a system of nested elements and attributes to describe the semantic structure of content such as headings, paragraphs, links, images, and interactive controls. Web browsers parse HTML into a document object model that is rendered visually and made accessible to assistive technologies and scripts.
   - Related concepts: [[CSS]] [[Web Browser]] [[Rendering Engine]] [[Accessibility]]

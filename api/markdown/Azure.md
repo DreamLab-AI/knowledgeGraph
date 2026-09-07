@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Azure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:azure:79f43c3b9c23",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:97c0d1a6e7a283b8e75ed6d34a1ce148dfeaa8b705fe5f08b531e4f937253318"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:linked:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web3 Infrastructure]]",
-      "resolved": "urn:visionflow:linked:web-3-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Microsoft Entra Verified ID]]",
-      "resolved": "urn:visionflow:linked:microsoft-entra-verified-id",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:linked:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://learn.microsoft.com/en-us/azure/]]",
-      "resolved": "urn:visionflow:linked:https-learn-microsoft-com-en-us-azure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://azure.microsoft.com/]]",
-      "resolved": "urn:visionflow:linked:https-azure-microsoft-com",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Azure is Microsoft's public cloud computing platform offering compute, storage, networking, identity and managed services.

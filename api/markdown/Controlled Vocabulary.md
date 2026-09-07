@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Controlled Vocabulary
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,72 +200,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:controlled-vocabulary:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:998223d0181c56e2f1503bf76e43d9755ecf80345aa4e184355f35e19a80570a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Accurate Retrieval]]",
-      "resolved": "urn:visionflow:linked:accurate-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Content Discovery]]",
-      "resolved": "urn:visionflow:linked:content-discovery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Standardization]]",
-      "resolved": "urn:visionflow:linked:data-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Domain Expertise]]",
-      "resolved": "urn:visionflow:linked:domain-expertise",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Maintenance Process]]",
-      "resolved": "urn:visionflow:linked:maintenance-process",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Term Governance]]",
-      "resolved": "urn:visionflow:linked:term-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Architecture]]",
-      "resolved": "urn:visionflow:owl:class:information-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A restricted list of standardized terms or phrases used within a specific domain for consistent cataloging, tagging, and indexing, where users may only apply terms from the approved list to ensure uniform description and enable reliable information retrieval across systems and platforms.

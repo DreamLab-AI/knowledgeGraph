@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mastercard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mastercard:07863e7a6a21",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:04f5fcbe4a2a8e3a90ebdda247391cd50a1df62af26c03cc23c57cb4ce0b7d03"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Payment Network]]",
-      "resolved": "urn:visionflow:linked:payment-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Border Payments]]",
-      "resolved": "urn:visionflow:linked:cross-border-payments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Central Bank Digital Currency]]",
-      "resolved": "urn:visionflow:linked:central-bank-digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:linked:stablecoin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Mastercard is a global payments technology company operating a card network that authorises, clears and settles transactions between issuing and acquiring banks.

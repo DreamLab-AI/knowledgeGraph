@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sanctions Compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "Sanctions compliance is the set of controls organisations implement to avoid transacting with individuals, entities, jurisdictions, or assets prohibited by sanctions regimes such as those administered by the US OFAC, the EU, the UK OFSI, and the UN. It involves screening counterparties against sanctions lists, monitoring transactions for prohibited patterns, blocking or freezing prohibited dealings, and maintaining auditable records. In digital-asset markets it extends to wallet-address screening and analysis of fund provenance, posing distinctive challenges for permissionless and privacy-preserving systems.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:kyc", "label": "KYC"}
+      {
+        "@id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
     ]
   },
   "quality": 0.8

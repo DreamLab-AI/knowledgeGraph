@@ -1,8 +1,3 @@
----
-public: true
----
-
-# implementation examples
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,16 +83,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
     ]
   },
   "quality": 0.4,
@@ -108,72 +121,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:implementation-examples:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c54e8d62e6c192f7eccf1f296b7b19bcb05a34a0642a42894b5a1342440a597b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BestPractices|best practices]]",
-      "resolved": "urn:visionflow:linked:best-practices",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CrossChainBridging|cross-chain communication]]",
-      "resolved": "urn:visionflow:linked:cross-chain-bridging",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DAOGovernance|DAO governance]]",
-      "resolved": "urn:visionflow:linked:daogovernance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DeFiProtocols|DeFi protocol]]",
-      "resolved": "urn:visionflow:linked:de-fi-protocols",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaversePlatformAPIs|metaverse platform integrations]]",
-      "resolved": "urn:visionflow:linked:metaverse-platform-apis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NFTContracts|NFT contract patterns]]",
-      "resolved": "urn:visionflow:linked:nftcontracts",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PrivacyPreservingProtocols|privacy-preserving techniques]]",
-      "resolved": "urn:visionflow:linked:privacy-preserving-protocols",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SmartContractExamples|smart contract implementations]]",
-      "resolved": "urn:visionflow:linked:smart-contract-examples",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including [[SmartContractExamples|smart contract implementations]], [[NFTContracts|NFT contract patterns]], and [[MetaversePlatformAPIs|metaverse platform integrations]]. These examples span [[DeFiProtocols|DeFi protocol]] mechanics, [[DAOGovernance|DAO governance]] implementation, [[CrossChainBridging|cross-chain communication]], and [[PrivacyPreservingProtocols|privacy-preserving techniques]], serving as reference designs for developers and educational resources for researchers. Well-documented implementation examples with security audits, gas optimisation techniques, and [[BestPractices|best practices]] guidance accelerate adoption and reduce deployment risks.

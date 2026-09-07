@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automatic Differentiation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,34 +7,118 @@ public: true
   "title": "Automatic Differentiation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:stochastic-gradient-descent", "vc:label": "Stochastic Gradient Descent"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
-    {"@id": "urn:visionflow:linked:jax", "vc:label": "JAX"},
-    {"@id": "urn:visionflow:linked:differentiable-rendering", "vc:label": "Differentiable Rendering"},
-    {"@id": "urn:visionflow:linked:differentiable-architecture", "vc:label": "Differentiable Architecture"},
-    {"@id": "urn:visionflow:linked:just-in-time-compilation", "vc:label": "Just-In-Time Compilation"},
-    {"@id": "urn:visionflow:linked:numerical-methods", "vc:label": "Numerical Method"},
-    {"@id": "urn:visionflow:linked:probabilistic-programming", "vc:label": "Probabilistic Programming"},
-    {"@id": "urn:visionflow:linked:physics-simulation", "vc:label": "Physics Simulation"},
-    {"@id": "urn:visionflow:linked:scientific-machine-learning", "vc:label": "Scientific Machine Learning"},
-    {"@id": "urn:visionflow:linked:machine-learning-framework", "vc:label": "Machine Learning Framework"},
-    {"@id": "urn:visionflow:linked:forward-mode-differentiation", "vc:label": "Forward Mode Differentiation"},
-    {"@id": "urn:visionflow:linked:computation-graph", "vc:label": "Computation Graph"},
-    {"@id": "urn:visionflow:linked:adam-optimiser", "vc:label": "Adam Optimiser"},
-    {"@id": "urn:visionflow:linked:batch-normalisation", "vc:label": "Batch Normalisation"},
-    {"@id": "urn:visionflow:linked:activation-function", "vc:label": "Activation Function"},
-    {"@id": "urn:visionflow:linked:automated-reasoning", "vc:label": "Automated Reasoning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:gradient-checkpointing", "vc:label": "Gradient Checkpointing"},
-    {"@id": "urn:visionflow:linked:gradient-clipping", "vc:label": "Gradient Clipping"},
-    {"@id": "urn:visionflow:linked:gradient-accumulation", "vc:label": "Gradient Accumulation"}
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-gradient-descent",
+      "vc:label": "Stochastic Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation",
+      "vc:label": "Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:jax",
+      "vc:label": "JAX"
+    },
+    {
+      "@id": "urn:visionflow:linked:differentiable-rendering",
+      "vc:label": "Differentiable Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:differentiable-architecture",
+      "vc:label": "Differentiable Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:just-in-time-compilation",
+      "vc:label": "Just-In-Time Compilation"
+    },
+    {
+      "@id": "urn:visionflow:linked:numerical-methods",
+      "vc:label": "Numerical Method"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-programming",
+      "vc:label": "Probabilistic Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:physics-simulation",
+      "vc:label": "Physics Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:scientific-machine-learning",
+      "vc:label": "Scientific Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-framework",
+      "vc:label": "Machine Learning Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:forward-mode-differentiation",
+      "vc:label": "Forward Mode Differentiation"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-graph",
+      "vc:label": "Computation Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:adam-optimiser",
+      "vc:label": "Adam Optimiser"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-normalisation",
+      "vc:label": "Batch Normalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:activation-function",
+      "vc:label": "Activation Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-reasoning",
+      "vc:label": "Automated Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-checkpointing",
+      "vc:label": "Gradient Checkpointing"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-clipping",
+      "vc:label": "Gradient Clipping"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-accumulation",
+      "vc:label": "Gradient Accumulation"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -60,50 +139,137 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:forward-mode-differentiation", "label": "Forward Mode Differentiation"},
-      {"@id": "urn:ngm:class:computation-graph", "label": "Computation Graph"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:forward-mode-differentiation",
+        "label": "Forward Mode Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:chain-rule", "label": "Chain Rule"},
-      {"@id": "urn:ngm:class:differentiable-function", "label": "Differentiable Function"}
+      {
+        "@id": "urn:ngm:class:chain-rule",
+        "label": "Chain Rule"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-function",
+        "label": "Differentiable Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:differentiable-programming", "label": "Differentiable Programming"},
-      {"@id": "urn:ngm:class:neural-ordinary-differential-equation", "label": "Neural Ordinary Differential Equation"},
-      {"@id": "urn:ngm:class:scientific-machine-learning", "label": "Scientific Machine Learning"},
-      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-programming",
+        "label": "Differentiable Programming"
+      },
+      {
+        "@id": "urn:ngm:class:neural-ordinary-differential-equation",
+        "label": "Neural Ordinary Differential Equation"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-machine-learning",
+        "label": "Scientific Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
-      {"@id": "urn:ngm:class:computation-graph", "label": "Computation Graph"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:scientific-machine-learning", "label": "Scientific Machine Learning"},
-      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"}
+      {
+        "@id": "urn:ngm:class:scientific-machine-learning",
+        "label": "Scientific Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:just-in-time-compilation", "label": "Just-In-Time Compilation"},
-      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Method"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"}
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:just-in-time-compilation",
+        "label": "Just-In-Time Compilation"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Method"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
-      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:algorithmic-differentiation", "label": "Algorithmic Differentiation"},
-    {"@id": "urn:ngm:class:computational-differentiation", "label": "Computational Differentiation"}
+    {
+      "@id": "urn:ngm:class:algorithmic-differentiation",
+      "label": "Algorithmic Differentiation"
+    },
+    {
+      "@id": "urn:ngm:class:computational-differentiation",
+      "label": "Computational Differentiation"
+    }
   ],
   "quality": 0.92,
   "provenance": {
@@ -111,47 +277,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "FullEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:automatic-differentiation:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:automatic-differentiation"},
-  "vc:resolutions": [
-    {"raw": "[[Backpropagation]]", "resolved": "urn:visionflow:linked:backpropagation", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Stochastic Gradient Descent]]", "resolved": "urn:visionflow:linked:stochastic-gradient-descent", "kind": "StubLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "StubLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "StubLink"},
-    {"raw": "[[Optimisation]]", "resolved": "urn:visionflow:linked:optimisation", "kind": "StubLink"},
-    {"raw": "[[JAX]]", "resolved": "urn:visionflow:linked:jax", "kind": "ResolvedLink"},
-    {"raw": "[[Differentiable Rendering]]", "resolved": "urn:visionflow:linked:differentiable-rendering", "kind": "ResolvedLink"},
-    {"raw": "[[Differentiable Architecture]]", "resolved": "urn:visionflow:linked:differentiable-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Just-In-Time Compilation]]", "resolved": "urn:visionflow:linked:just-in-time-compilation", "kind": "StubLink"},
-    {"raw": "[[Numerical Method]]", "resolved": "urn:visionflow:linked:numerical-methods", "kind": "StubLink"},
-    {"raw": "[[Probabilistic Programming]]", "resolved": "urn:visionflow:linked:probabilistic-programming", "kind": "StubLink"},
-    {"raw": "[[Physics Simulation]]", "resolved": "urn:visionflow:linked:physics-simulation", "kind": "StubLink"},
-    {"raw": "[[Scientific Machine Learning]]", "resolved": "urn:visionflow:linked:scientific-machine-learning", "kind": "StubLink"},
-    {"raw": "[[Machine Learning Framework]]", "resolved": "urn:visionflow:linked:machine-learning-framework", "kind": "StubLink"},
-    {"raw": "[[Forward Mode Differentiation]]", "resolved": "urn:visionflow:linked:forward-mode-differentiation", "kind": "StubLink"},
-    {"raw": "[[Computation Graph]]", "resolved": "urn:visionflow:linked:computation-graph", "kind": "StubLink"},
-    {"raw": "[[Adam Optimiser]]", "resolved": "urn:visionflow:linked:adam-optimiser", "kind": "ResolvedLink"},
-    {"raw": "[[Batch Normalisation]]", "resolved": "urn:visionflow:linked:batch-normalisation", "kind": "ResolvedLink"},
-    {"raw": "[[Activation Function]]", "resolved": "urn:visionflow:linked:activation-function", "kind": "StubLink"},
-    {"raw": "[[Automated Reasoning]]", "resolved": "urn:visionflow:linked:automated-reasoning", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Gradient Checkpointing]]", "resolved": "urn:visionflow:linked:gradient-checkpointing", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Clipping]]", "resolved": "urn:visionflow:linked:gradient-clipping", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Accumulation]]", "resolved": "urn:visionflow:linked:gradient-accumulation", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 

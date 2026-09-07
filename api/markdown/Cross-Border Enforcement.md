@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Border Enforcement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Cross-border enforcement is the process by which legal judgments, regulatory actions, or compliance obligations are recognised and executed across national jurisdictions. It depends on treaties, mutual legal assistance, and cooperation between regulators to act on actors and assets located abroad. It is a persistent challenge for digital and crypto markets that operate without regard to territorial borders.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cross-border-compliance", "label": "Cross Border Compliance"}, {"@id": "urn:ngm:class:digital-jurisdiction", "label": "Digital Jurisdiction"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-jurisdiction",
+        "label": "Digital Jurisdiction"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MCP Connectors
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "mcp-connectors",
   "title": "MCP Connectors",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Claude Co-work", "Windows Platform"],
+  "vc:outboundWikilinks": [
+    "Claude Co-work",
+    "Windows Platform"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-hardware-infrastructure", "label": "AI Hardware Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-hardware-infrastructure",
+      "label": "AI Hardware Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-hardware-infrastructure", "label": "AI Hardware Infrastructure"}, {"@id": "urn:ngm:class:claude-co-work", "label": "Claude Co-work"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-hardware-infrastructure",
+        "label": "AI Hardware Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:claude-co-work",
+        "label": "Claude Co-work"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Directory Service
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,30 @@ public: true
   "definition": "A directory service is a specialised database that stores, organises, and provides access to information about the entities of a network — users, groups, devices, and services — optimised for high-volume reads and hierarchical lookup. Accessed through protocols such as LDAP, it underpins authentication, authorisation, and resource discovery in enterprise environments, with implementations including Active Directory and OpenLDAP. Directory services centralise identity data so that credentials and access policies can be managed once and enforced consistently across many systems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-provider",
+      "label": "Identity Provider"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
     ]
   },
   "quality": 0.8

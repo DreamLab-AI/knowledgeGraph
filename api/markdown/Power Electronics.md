@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Power Electronics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -218,52 +213,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:power-electronics:0882f0601c67",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d314fa7544861e16b55b17c618196bcdc66cbbf0e7b3a408d15072f3bfdcca7b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Motor Driver]]",
-      "resolved": "urn:visionflow:linked:motor-driver",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Electric Motor]]",
-      "resolved": "urn:visionflow:linked:electric-motor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Battery Management System]]",
-      "resolved": "urn:visionflow:linked:battery-management-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Servo Motor]]",
-      "resolved": "urn:visionflow:linked:servo-motor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Embedded Systems Domain]]",
-      "resolved": "urn:visionflow:linked:embedded-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Power electronics is the engineering discipline concerned with the conversion and control of electrical power using switching semiconductor devices, central to motor drives, power supplies and energy systems.

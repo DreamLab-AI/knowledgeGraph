@@ -1,38 +1,108 @@
----
-public: true
----
-
-# Flat Panel Display
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:flat-panel-display", "@type":"Page", "title":"Flat Panel Display", "vc:slug":"flat-panel-display", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:flat-panel-display",
+  "@type": "Page",
+  "title": "Flat Panel Display",
+  "vc:slug": "flat-panel-display",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:flat-panel-display",
-  "@type":"Class",
-  "label":"Flat Panel Display",
-  "definition":"A flat panel display is a thin, lightweight electronic display that produces images on a flat surface using technologies such as liquid crystal, organic light-emitting diode or micro-LED panels. It contrasts with bulky cathode-ray-tube displays and forms the dominant display category for monitors, mobile devices and near-eye optics in head-mounted hardware. Key characteristics include resolution, refresh rate, contrast and pixel density.",
-  "domain":"spatial-computing",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:display-technology","label":"Display Technology"}],
-  "relations":{
-    "contrastsWith":[{"@id":"urn:ngm:class:holographic-display","label":"Holographic Display"}],
-    "partOf":[{"@id":"urn:ngm:class:display-hardware","label":"Display Hardware"}],
-    "uses":[{"@id":"urn:ngm:class:rendering","label":"Rendering"}],
-    "enables":[{"@id":"urn:ngm:class:head-mounted-display","label":"Head-Mounted Display"}],
-    "supports":[{"@id":"urn:ngm:class:virtual-reality","label":"Virtual Reality"},{"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"}],
-    "dependsOn":[{"@id":"urn:ngm:class:graphics-processing-unit","label":"Graphics Processing Unit"}],
-    "implements":[{"@id":"urn:ngm:class:display-technology","label":"Display Technology"}],
-    "relatedTo":[{"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"},{"@id":"urn:ngm:class:latency","label":"Latency"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}],
-    "requires":[{"@id":"urn:ngm:class:gpu","label":"GPU"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:flat-panel-display",
+  "@type": "Class",
+  "label": "Flat Panel Display",
+  "definition": "A flat panel display is a thin, lightweight electronic display that produces images on a flat surface using technologies such as liquid crystal, organic light-emitting diode or micro-LED panels. It contrasts with bulky cathode-ray-tube displays and forms the dominant display category for monitors, mobile devices and near-eye optics in head-mounted hardware. Key characteristics include resolution, refresh rate, contrast and pixel density.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:display-technology",
+      "label": "Display Technology"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

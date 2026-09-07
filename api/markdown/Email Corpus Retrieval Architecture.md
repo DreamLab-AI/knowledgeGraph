@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[email search]]
-# Email Corpus Retrieval Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -36,32 +30,60 @@ elevatedFrom:: [[email search]]
   "@id": "urn:ngm:class:email-corpus-retrieval-architecture",
   "@type": "Class",
   "label": "Email Corpus Retrieval Architecture",
-  "definition": "Email search refers to the set of techniques, architectures, and tooling used to index, query, and retrieve relevant messages from large email corpora. Modern self-hosted email search stacks combine traditional full-text indexing (BM25-based engines such as Tantivy or Xapian) with dense vector embeddings and hybrid retrieval strategies to support semantic and keyword queries at scale. LLM-based reranking and optional graph-database layers for entity-relationship queries extend precision and recall beyond keyword matching, enabling systems to handle corpora of hundreds of thousands of messages with sub-second latency.",
+  "definition": "Email search refers to the set of techniques, architectures, and tooling used to [private], query, and retrieve relevant messages from large email corpora. Modern self-hosted email search stacks combine traditional full-text indexing (BM25-based engines such as Tantivy or Xapian) with dense vector embeddings and hybrid retrieval strategies to support semantic and keyword queries at scale. LLM-based reranking and optional graph-database layers for entity-relationship queries extend precision and recall beyond keyword matching, enabling systems to handle corpora of hundreds of thousands of messages with sub-second latency.",
   "domain": "infrastructure",
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:search-engine", "label": "Search Engine"
+      "@id": "urn:ngm:class:search-engine",
+      "label": "Search Engine"
     }
   ],
   "quality": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:search-index", "label": "Search Index"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {
+        "@id": "urn:ngm:class:search-index",
+        "label": "Search Index"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"},
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ]
   },
   "provenance": {
@@ -72,28 +94,8 @@ elevatedFrom:: [[email search]]
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:email-search:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b9b532f80675bbb4d92e2a2f153c8508bb61f7121e73d4fbd2129246b71ff80c"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - A self-sovereign email corpus retrieval architecture is the set of techniques, data structures, and tooling used to index, query, and retrieve relevant messages from large email corpora locally. Modern stacks combine traditional full-text indexing (BM25-based engines such as Tantivy or Xapian) with dense vector embeddings and hybrid retrieval strategies to support semantic and keyword queries at scale. LLM-based reranking and optional graph-database layers for entity-relationship queries extend precision and recall beyond keyword matching, enabling systems to handle corpora of hundreds of thousands of messages with sub-second latency.
+  - A self-sovereign email corpus retrieval architecture is the set of techniques, data structures, and tooling used to [private], query, and retrieve relevant messages from large email corpora locally. Modern stacks combine traditional full-text indexing (BM25-based engines such as Tantivy or Xapian) with dense vector embeddings and hybrid retrieval strategies to support semantic and keyword queries at scale. LLM-based reranking and optional graph-database layers for entity-relationship queries extend precision and recall beyond keyword matching, enabling systems to handle corpora of hundreds of thousands of messages with sub-second latency.
 
 - ### Semantic Classification
   - owl-class:: infrastructure:EmailCorpusRetrievalArchitecture
@@ -185,7 +187,7 @@ elevatedFrom:: [[email search]]
       # Indexing phase (pseudo-code)
       for email in emails:
           metadata = parse_email(email)
-          tantivy.index(email.content, metadata)
+          tantivy.[private](email.content, metadata)
           embedding = model.encode(email.content)
           qdrant.upsert(embedding, metadata)
           entities = spacy_nlp(email.content)
@@ -200,7 +202,7 @@ elevatedFrom:: [[email search]]
           return reranked
       ```
   - #### Performance Optimization Strategies
-    - **Chunking Strategy**: split long emails into overlapping chunks (512 tokens), index chunks separately with email ID reference, aggregate scores at retrieval time
+    - **Chunking Strategy**: split long emails into overlapping chunks (512 tokens), [private] chunks separately with email ID reference, aggregate scores at retrieval time
     - **Embedding Optimization**: use ONNX Runtime for 2-3x speedup, batch processing during indexing, cache frequently accessed embeddings
     - **Index Sharding**: shard by date for time-based queries, separate indices for attachments vs body text
     - **Resource Requirements**:

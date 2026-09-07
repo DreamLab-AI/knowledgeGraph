@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Log Seq Spring Thing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -47,13 +42,28 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ]
   },
   "quality": 0.35,
@@ -64,26 +74,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:log-seq-spring-thing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:683d8afffa397d8152c1e5905eb5b6d343d3a4d37e802efff27f72076b9c4916"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Log Seq Spring Thing is a project workstream and AI hacking initiative that connects Logseq-based knowledge graph authoring with VisionFlow, exploring how networked thought can be published, visualised, and extended through AI-assisted tooling. It serves as a bridge between personal knowledge management workflows and semantic web infrastructure.

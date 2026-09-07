@@ -1,11 +1,14 @@
----
-public: true
----
-
-# User Interface Design
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:user-interface-design", "@type":"Page", "title":"User Interface Design", "vc:slug":"user-interface-design", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:user-interface-design",
+  "@type": "Page",
+  "title": "User Interface Design",
+  "vc:slug": "user-interface-design",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

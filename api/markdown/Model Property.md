@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Property
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -89,52 +84,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-property:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:db6018cb20c10c26d36295d526ca8c2af719cbe84daab319e9bdd515b667d807"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Benchmark]]",
-      "resolved": "urn:visionflow:linked:benchmark",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Comparison]]",
-      "resolved": "urn:visionflow:linked:model-comparison",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Concept]]",
-      "resolved": "urn:visionflow:owl:class:ai-concept",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Model]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning-model",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A meta-classification for properties, characteristics, and measurable attributes of machine learning models including performance metrics (accuracy, latency, throughput), architectural properties (parameters, layers, context length), and operational characteristics (memory footprint, inference cost, training requirements).

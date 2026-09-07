@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SafeSnap
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:safe-snap:4078040eb9d4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bbacb2743695a44b1bd7120c2caae0030b94cec007581d874d9215dbc4a52bd9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Snapshot]]",
-      "resolved": "urn:visionflow:linked:snapshot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reality.eth]]",
-      "resolved": "urn:visionflow:linked:reality-eth",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Autonomous Organization]]",
-      "resolved": "urn:visionflow:linked:decentralized-autonomous-organization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO Governance]]",
-      "resolved": "urn:visionflow:linked:dao-governance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - SafeSnap is a tool that connects off-chain Snapshot governance votes to on-chain execution through a Gnosis Safe and the Reality.eth oracle. It lets DAOs enact decisions without paying gas to vote.

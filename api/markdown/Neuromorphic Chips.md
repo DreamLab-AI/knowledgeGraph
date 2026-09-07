@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Neuromorphic Chips
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,37 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:neuromorphic-chips:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dd827af45218f978eeb6c5dd694445314da645bbca54f7282e1d8c3b09de61f9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ultra-Low-Power AI]]",
-      "resolved": "urn:visionflow:linked:ultra-low-power-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Inference Hardware]]",
-      "resolved": "urn:visionflow:owl:class:inference-hardware",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Neuromorphic Chips is a concept within the ai domain.

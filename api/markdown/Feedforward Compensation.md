@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Feedforward Compensation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Feedforward compensation is a control technique that uses a model of the system or known disturbances to compute corrective control action in advance, rather than waiting for an error to appear at the output. By anticipating required effort, for example to overcome inertia, friction, or measurable load disturbances, it improves tracking and disturbance rejection beyond what feedback alone provides. It is typically combined with feedback control to handle modelling errors and unmeasured disturbances.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:velocity-control", "label": "VelocityControl"},
-      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"}
+      {
+        "@id": "urn:ngm:class:velocity-control",
+        "label": "VelocityControl"
+      },
+      {
+        "@id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Layer 2 Security Council
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "A Layer 2 Security Council is a designated multi-signature governance body empowered to take privileged actions on a Layer 2 rollup, such as pausing the bridge, executing emergency upgrades, or resolving stuck states during the maturation period before fully trustless operation. It typically comprises a quorum of independent signers from distinct organisations to mitigate single-party capture. The construct trades some decentralisation for the ability to respond rapidly to critical vulnerabilities.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      }
+    ]
   },
   "quality": 0.72
 }

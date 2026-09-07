@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Semantic Versioning
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:semantic-versioning", "@type": "Page", "title": "Semantic Versioning", "vc:slug": "semantic-versioning", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:semantic-versioning",
+  "@type": "Page",
+  "title": "Semantic Versioning",
+  "vc:slug": "semantic-versioning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

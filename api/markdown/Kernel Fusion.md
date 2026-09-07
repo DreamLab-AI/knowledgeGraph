@@ -1,39 +1,127 @@
----
-public: true
----
-
-# Kernel Fusion
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:kernel-fusion", "@type":"Page", "title":"Kernel Fusion", "vc:slug":"kernel-fusion", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:kernel-fusion",
+  "@type": "Page",
+  "title": "Kernel Fusion",
+  "vc:slug": "kernel-fusion",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:kernel-fusion",
-  "@type":"Class",
-  "label":"Kernel Fusion",
-  "definition":"Kernel fusion is a compiler and runtime optimisation that merges several adjacent GPU or accelerator operations into a single executable kernel. By combining elementwise, reduction and other operators, it eliminates intermediate memory writes, reduces kernel-launch overhead and improves arithmetic intensity. It is a key technique for accelerating deep-learning training and inference on memory-bandwidth-bound hardware.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:gpu-acceleration","label":"GPU Acceleration"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:cuda","label":"CUDA"},{"@id":"urn:ngm:class:computation-graph","label":"Computation Graph"}],
-    "implements":[{"@id":"urn:ngm:class:operator-fusion","label":"Operator Fusion"}],
-    "enables":[{"@id":"urn:ngm:class:inference-optimisation","label":"Inference Optimisation"}],
-    "requires":[{"@id":"urn:ngm:class:computation-graph","label":"Computation Graph"}],
-    "dependsOn":[{"@id":"urn:ngm:class:memory-bandwidth","label":"Memory Bandwidth"}],
-    "supports":[{"@id":"urn:ngm:class:inference-optimisation","label":"Inference Optimisation"}],
-    "partOf":[{"@id":"urn:ngm:class:gpu-acceleration","label":"GPU Acceleration"}],
-    "uses_hw":[{"@id":"urn:ngm:class:tensor-core","label":"Tensor Core"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:pruning","label":"Pruning"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:tensor-core","label":"Tensor Core"},{"@id":"urn:ngm:class:throughput","label":"Throughput"},{"@id":"urn:ngm:class:latency","label":"Latency"},{"@id":"urn:ngm:class:transformer-architecture","label":"Transformer Architecture"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:kernel-fusion",
+  "@type": "Class",
+  "label": "Kernel Fusion",
+  "definition": "Kernel fusion is a compiler and runtime optimisation that merges several adjacent GPU or accelerator operations into a single executable kernel. By combining elementwise, reduction and other operators, it eliminates intermediate memory writes, reduces kernel-launch overhead and improves arithmetic intensity. It is a key technique for accelerating deep-learning training and inference on memory-bandwidth-bound hardware.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpu-acceleration",
+      "label": "GPU Acceleration"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:operator-fusion",
+        "label": "Operator Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "uses_hw": [
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      },
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:operator-fusion","label":"Operator Fusion"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:operator-fusion",
+      "label": "Operator Fusion"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mechanical Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A mechanical interface is the standardised physical coupling between two components that defines their geometric fit, fastening, and load transfer. In robotics it specifies how an end-effector or tool attaches to a robot wrist or actuator, governing alignment, rigidity, and quick-change capability. Well-defined mechanical interfaces enable modularity and interchangeability of subsystems.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:end-effector", "label": "End Effector"}, {"@id": "urn:ngm:class:electric-actuator", "label": "Electric Actuator"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:electric-actuator",
+        "label": "Electric Actuator"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Human Preference
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,26 +59,62 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
-      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"}
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ]
   },
   "provenance": {
@@ -93,37 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:human-preference:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:81fd05de15e42e0245ff925d61f105b43e8e635cd7ddef98537b69f5bead66fe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Component]]",
-      "resolved": "urn:visionflow:owl:class:neural-network-component",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Human Preference refers to the explicit or implicit judgements made by human evaluators expressing which AI outputs are more aligned with human values, intentions, or quality criteria. These preference signals, collected through comparative annotation tasks, are used as training signal in reinforcement learning from human feedback (RLHF) and direct preference optimisation methods. Annotator diversity and agreement rates critically determine how faithfully the resulting reward model captures genuine human intent.

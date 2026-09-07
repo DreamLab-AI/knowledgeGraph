@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WebSockets
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:web-sockets:84fc153d21f1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:25c80382ca6f27f1fddfbfbb4dcae26462d36f041305b737a3b69f0c9df7cd43"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[HTTP]]",
-      "resolved": "urn:visionflow:linked:http",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Communication]]",
-      "resolved": "urn:visionflow:linked:network-communication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web Technology]]",
-      "resolved": "urn:visionflow:linked:web-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Communication Protocol]]",
-      "resolved": "urn:visionflow:linked:communication-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://datatracker.ietf.org/doc/html/rfc6455]]",
-      "resolved": "urn:visionflow:linked:https-datatracker-ietf-org-doc-html-rfc-6455",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API]]",
-      "resolved": "urn:visionflow:linked:https-developer-mozilla-org-en-us-docs-web-api-web-sockets-api",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - WebSockets is a protocol providing full-duplex communication channels over a single TCP connection between a client and a server. It is widely used for real-time web applications.

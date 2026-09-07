@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-004-media-richness-theory
----
-
-# Media Richness Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,57 +77,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:media-richness-theory:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7ffbc0fcb89c9c0cba43e00681af1698fa80f0ac13155e47a3abdfc45c10e786"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CommunicationEffectiveness]]",
-      "resolved": "urn:visionflow:linked:communication-effectiveness",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-003-social-presence-theory]]",
-      "resolved": "urn:visionflow:linked:tele-003-social-presence-theory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-020-virtual-reality-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-100-ai-avatars]]",
-      "resolved": "urn:visionflow:linked:tele-100-ai-avatars",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OrganisationalTheory]]",
-      "resolved": "urn:visionflow:owl:class:organisational-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TELE-001-telepresence]]",
-      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "A theoretical framework positing that communication media vary in their capacity to convey rich information through multiple cues, immediate feedback, language variety, and personal focus, predicting that richer media enable more effective communication of complex, ambiguous information whilst leaner media suffice for routine, unambiguous messages."

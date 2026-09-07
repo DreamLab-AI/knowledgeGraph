@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Group Chat Channel
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

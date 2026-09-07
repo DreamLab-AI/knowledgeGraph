@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Matter Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "Matter is a royalty-free smart-home connectivity standard developed by the Connectivity Standards Alliance to provide a common application layer enabling devices from different manufacturers to interoperate over IP networks. Built on top of Thread and Wi-Fi for transport, Matter defines a unified data model, secure commissioning, and local control that removes dependence on proprietary vendor clouds. It is backed by Apple, Google, Amazon, and Samsung, and aims to resolve the fragmentation that historically forced consumers into single-ecosystem smart-home purchases.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:thread-protocol", "label": "Thread Protocol"},
-      {"@id": "urn:ngm:class:zigbee", "label": "Zigbee"}
+      {
+        "@id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# computer use
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,22 +34,36 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture", "label": "Multimodal AI Architecture"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal AI Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:interface", "label": "Interface"}
+      {
+        "@id": "urn:ngm:class:interface",
+        "label": "Interface"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Computer Use is an AI capability that enables multimodal models to perceive, navigate, and interact with graphical user interfaces, desktop applications, and operating system environments to autonomously complete multi-step tasks. The model receives screenshot observations of the screen and emits mouse-click, keyboard, and scroll actions, effectively operating software as a human operator would. It extends conventional tool-use paradigms by treating the entire GUI surface as an action space rather than a structured API.

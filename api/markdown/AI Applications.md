@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Applications
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -256,32 +251,92 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:intelligent-automation", "label": "Intelligent Automation"},
-      {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"}
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:image-recognition", "label": "Image Recognition"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ]
   },
   "sameAs": [
@@ -295,271 +350,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "R1Explicit"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-applications:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6f0588bcbda39d526a60583dc1791133eb2b95038c0b8504861c72850144f9d3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:owl:class:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Vehicle]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-vehicle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous System]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:ai-risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:owl:class:transformer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Recommendation System]]",
-      "resolved": "urn:visionflow:owl:class:recommendation-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Industrial Robotics]]",
-      "resolved": "urn:visionflow:owl:class:industrial-robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Navigation]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-navigation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Recognition]]",
-      "resolved": "urn:visionflow:owl:class:image-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:owl:class:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data]]",
-      "resolved": "urn:visionflow:owl:class:training-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Driving]]",
-      "resolved": "urn:visionflow:linked:autonomous-driving",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fraud Detection]]",
-      "resolved": "urn:visionflow:linked:fraud-detection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Intelligent Automation]]",
-      "resolved": "urn:visionflow:linked:intelligent-automation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Ethics]]",
-      "resolved": "urn:visionflow:linked:ai-ethics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:linked:explainable-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decision Support]]",
-      "resolved": "urn:visionflow:linked:decision-support",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Personalisation]]",
-      "resolved": "urn:visionflow:linked:personalisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPU Compute]]",
-      "resolved": "urn:visionflow:linked:gpu-compute",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NIST AI RMF]]",
-      "resolved": "urn:visionflow:linked:nist-ai-rmf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Content Creation]]",
-      "resolved": "urn:visionflow:linked:content-creation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Predictive Analytics]]",
-      "resolved": "urn:visionflow:linked:predictive-analytics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics Perception]]",
-      "resolved": "urn:visionflow:linked:robotics-perception",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:linked:speech-recognition",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sentiment Analysis]]",
-      "resolved": "urn:visionflow:linked:sentiment-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Supply Chain Optimisation]]",
-      "resolved": "urn:visionflow:linked:supply-chain-optimisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Code Synthesis]]",
-      "resolved": "urn:visionflow:linked:code-synthesis",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Drug Discovery]]",
-      "resolved": "urn:visionflow:linked:drug-discovery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Decision Making]]",
-      "resolved": "urn:visionflow:linked:autonomous-decision-making",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Risk]]",
-      "resolved": "urn:visionflow:owl:class:ai-risk",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Adversarial Networks]]",
-      "resolved": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Diffusion Models]]",
-      "resolved": "urn:visionflow:owl:class:diffusion-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quality Control]]",
-      "resolved": "urn:visionflow:linked:quality-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Surveillance Systems]]",
-      "resolved": "urn:visionflow:linked:surveillance-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous AI Agents]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-ai-agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -727,7 +517,7 @@ public: true
 
   AI Applications constitute the outermost layer of the artificial intelligence stack — the place where research algorithms, massive datasets, and computational infrastructure meet real-world problems and real-world users. The category is deliberately broad: it encompasses both narrow, task-specific deployments (a model that identifies diabetic retinopathy from retinal scans with AUC > 0.99) and broad, multi-task platforms (general-purpose LLM assistants serving hundreds of millions of users simultaneously). What unifies all entries in this class is the requirement that a [[Machine Learning]] or related AI technique be embedded in a system that is used, monitored, and accountable to external stakeholders. This accountability dimension is the critical distinguishing feature between a research model and an AI Application: the latter must satisfy requirements around [[Explainable AI]], logging, fairness audits, drift monitoring, and incident response that simply do not apply to laboratory benchmarks.
 
-  The trajectory of AI Applications has shifted dramatically since 2022. The release of large-scale foundation models — GPT-4 (OpenAI, 2023), Claude 3 (Anthropic, 2024), Gemini 1.5 (Google DeepMind, 2024) — transformed the deployment calculus by providing pre-trained representations that could be adapted to new tasks with relatively little domain-specific data via [[Transfer Learning]] and prompt engineering, dramatically lowering the entry barrier for new verticals. By early 2026, 71 % of organisations reported regularly using [[Generative AI]] in at least one business function, up from 65 % in early 2024, and 80 % of enterprises surveyed by Gartner in Q1 2026 reported at least one production agentic AI application. The AI market reached approximately $390.91 billion in 2025 and is projected to reach $3.49 trillion by 2033, with AI applications in finance alone expected to reach a $21.2 billion market in 2026.
+  The trajectory of AI Applications has shifted dramatically since 2022. The release of large-scale foundation models — GPT-4 (OpenAI, 2023), Claude 3 (Anthropic, 2024), Gemini 1.5 (Google DeepMind, 2024) — transformed the deployment calculus by providing pre-trained representations that [private] be adapted to new tasks with relatively little domain-specific data via [[Transfer Learning]] and prompt engineering, dramatically lowering the entry barrier for new verticals. By early 2026, 71 % of organisations reported regularly using [[Generative AI]] in at least one business function, up from 65 % in early 2024, and 80 % of enterprises surveyed by Gartner in Q1 2026 reported at least one production agentic AI application. The AI market reached approximately $390.91 billion in 2025 and is projected to reach $3.49 trillion by 2033, with AI applications in finance alone expected to reach a $21.2 billion market in 2026.
 
   The shift toward agentic deployments — [[Autonomous AI Agents]] that orchestrate multi-step workflows, call external APIs, and take consequential actions — represents the most significant architectural change in the Applications class. By end-2026, Gartner predicts that 40 % of enterprise applications will embed task-specific AI agents, up from less than 5 % in 2025. This creates qualitatively new governance challenges: agentic systems can take irreversible actions, accumulate capabilities, and interact with one another in ways that are difficult to audit. [[AI Risk Management]] frameworks are therefore evolving to address not just individual model outputs but chains of AI decision-making.
 
@@ -743,7 +533,7 @@ public: true
   ## Use Cases / Major Families
 
   **Healthcare and Life Sciences**
-  AI Applications in healthcare range from diagnostic imaging (radiology, pathology, ophthalmology) to clinical NLP (de-identification, ICD coding, summarisation), drug target identification, protein structure prediction (AlphaFold 3, 2024), and patient-flow optimisation. McKinsey estimates AI could save $150 billion per year in US healthcare by 2026 through improved diagnostics and administrative automation. Healthcare AI usage grew approximately 8× year-over-year in 2024, with vertical AI for healthcare becoming a $3.5 billion market in 2025 alone. In the UK, NHS programmes such as the National AI Lab (NHSX) and the AI and Digital Regulations Service (ADRS) are deploying AI across radiology and early cancer detection.
+  AI Applications in healthcare range from diagnostic imaging (radiology, pathology, ophthalmology) to clinical NLP (de-identification, ICD coding, summarisation), drug target identification, protein structure prediction (AlphaFold 3, 2024), and patient-flow optimisation. McKinsey estimates AI [private] save $150 billion per year in US healthcare by 2026 through improved diagnostics and administrative automation. Healthcare AI usage grew approximately 8× year-over-year in 2024, with vertical AI for healthcare becoming a $3.5 billion market in 2025 alone. In the UK, NHS programmes such as the National AI Lab (NHSX) and the AI and Digital Regulations Service (ADRS) are deploying AI across radiology and early cancer detection.
 
   **Autonomous Vehicles and Transport**
   Full-stack autonomous driving systems integrate [[Computer Vision]], LiDAR-based [[Robotics Perception]], HD mapping, [[Autonomous Navigation]], and learned [[Autonomous Decision Making]] policies trained via [[Reinforcement Learning]]. As of March 2026, Pony.ai deployed over 100 seventh-generation robotaxi units in commercial service in Guangzhou via the Chenqi OnTime Mobility platform. Waymo surpassed 150,000 paid robotaxi trips per week in early 2025. ADAS (level 2+) features are now standard on vehicles across most major manufacturers.
@@ -832,7 +622,7 @@ public: true
 
   ## Economic and Labour-Market Impact
 
-  The economic impact of AI Applications is now measurable with growing confidence. McKinsey Global Institute (2025) estimates that AI technologies could add between $2.6 trillion and $4.4 trillion annually in value across 63 business use cases analysed, with customer operations (including [[Sentiment Analysis]]-driven support automation and [[Recommendation System]] personalisation), marketing and sales, and software engineering being the top three value pools. The productivity multiplier effect is uneven: frontier AI adopters — organisations that have deployed AI in at least 50 % of their functions — capture 5× more value than average adopters, suggesting a winner-takes-most dynamic as AI becomes a core competitive capability.
+  The economic impact of AI Applications is now measurable with growing confidence. McKinsey Global Institute (2025) estimates that AI technologies [private] add between $2.6 trillion and $4.4 trillion annually in value across 63 business use cases analysed, with customer operations (including [[Sentiment Analysis]]-driven support automation and [[Recommendation System]] personalisation), marketing and sales, and software engineering being the top three value pools. The productivity multiplier effect is uneven: frontier AI adopters — organisations that have deployed AI in at least 50 % of their functions — capture 5× more value than average adopters, suggesting a winner-takes-most dynamic as AI becomes a core competitive capability.
 
   Labour market displacement and augmentation effects are observed across sectors. [[Code Synthesis]] tools (GitHub Copilot, Cursor) have been associated with 55 % productivity improvements in controlled experiments (GitHub/Microsoft, 2022) and 26 % task completion speed gains in randomised trials (Peng et al., 2023), while simultaneously raising the market value of software engineers who can direct and validate AI-generated code. In radiology, AI [[Computer Vision]] tools accelerate report generation by 30-60 % and flag urgent findings in worklists, but have not reduced radiologist headcount — instead expanding diagnostic capacity and enabling radiologists to focus on complex cases. In financial services [[Fraud Detection]], human analysts are augmented rather than replaced: AI reduces alert volumes by up to 80 % while elevating the cognitive complexity of the alerts that require human review. The most pronounced displacement effects have occurred in routine image labelling, data annotation, and basic legal document review, where task decomposition and automation have reduced demand for junior-level workers in those specific domains.
 

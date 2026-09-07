@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Token Economy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,31 +20,78 @@ public: true
   "definition": "A token economy is an economic system in which digital tokens — cryptographic representations of value, rights, or access — serve as the primary medium of exchange, incentive, and governance within a defined platform or protocol. Token economies leverage blockchain infrastructure to create programmable, permissionless economic systems where tokens encode ownership (utility tokens, security tokens, governance tokens, NFTs), align participant incentives through staking and reward mechanisms, and enable decentralised governance. The concept spans DeFi protocols, Web3 platforms, creator economies, and emerging AI agent economies.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-economics",
+      "label": "Blockchain Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:crypto-token", "label": "Crypto Token"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:utility-token", "label": "Utility Token"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"},
-      {"@id": "urn:ngm:class:reward-distribution", "label": "Reward Distribution"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:social-token-economy", "label": "Social Token Economy"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:social-token-economy",
+        "label": "Social Token Economy"
+      }
     ]
   },
   "quality": 0.8

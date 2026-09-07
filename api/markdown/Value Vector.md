@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Value Vector
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,25 +51,58 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:optimization-technique", "label": "Optimization Technique"},
-      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"}
+      {
+        "@id": "urn:ngm:class:optimization-technique",
+        "label": "Optimization Technique"
+      },
+      {
+        "@id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+      {
+        "@id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      }
     ]
   },
   "provenance": {
@@ -84,32 +112,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:value-vector:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2c20bb73aab2e2886aeaadda2d42337613639a89450a645bb56da5119f492502"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Value Vector is a structured numerical representation that encodes the relative importance or utility of different outcomes, objectives, or features within an AI system. It aggregates scalar values across multiple dimensions—such as safety, performance, fairness, and cost—to express composite desiderata, enabling preference-guided decision-making and multi-objective optimisation. Value vectors are foundational to reward modelling, preference learning, and value alignment research, where the goal is to represent human values in a machine-tractable form.

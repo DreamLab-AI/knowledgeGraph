@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Self Attention
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -218,67 +213,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:self-attention:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2948b456f15ea9d7bd6ddf4e66a74afeb2ca71a29ec308852e6ec42df32d3e9e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[presentation]]",
-      "resolved": "urn:visionflow:linked:presentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Visionflow]]",
-      "resolved": "urn:visionflow:linked:visionflow",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human-AI Capability Complementarity]]",
-      "resolved": "urn:visionflow:owl:class:human-vs-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[KnoWhere Visitor Attention System]]",
-      "resolved": "urn:visionflow:owl:class:knowhere",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[State Space Sequence Models]]",
-      "resolved": "urn:visionflow:owl:class:state-space-and-other-approaches",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformers]]",
-      "resolved": "urn:visionflow:owl:class:transformers",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - An attention mechanism where every token in a sequence attends to every other token in the same sequence, allowing the model to capture intra-sequence dependencies.
 
@@ -375,7 +309,7 @@ public: true
   Here are some areas to think about in terms of challenges:
 
   Data: How much data exists? How representative is it of what we’re
-  trying to model? Are there issues in how it is collected which could
+  trying to model? Are there issues in how it is collected which [private]
   impact the model? Is it likely to contain any missing values? Adoptance
   from users/customers Will it be easy to get people to use the AI in
   their business?
@@ -448,7 +382,7 @@ public: true
   Here are some areas to think about in terms of challenges:
 
   Data: How much data exists? How representative is it of what we’re
-  trying to model? Are there issues in how it is collected which could
+  trying to model? Are there issues in how it is collected which [private]
   impact the model? Is it likely to contain any missing values? Adoptance
   from users/customers Will it be easy to get people to use the AI in
   their business?
@@ -497,7 +431,7 @@ public: true
 
   **Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
 
-  **Key Innovation**: Demonstrated that self-attention alone, without recurrence, could model long-range dependencies effectively.
+  **Key Innovation**: Demonstrated that self-attention alone, without recurrence, [private] model long-range dependencies effectively.
 
   ## Technical Context
 
@@ -526,7 +460,7 @@ public: true
 
   **Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
 
-  **Key Innovation**: Demonstrated that self-attention alone, without recurrence, could model long-range dependencies effectively.
+  **Key Innovation**: Demonstrated that self-attention alone, without recurrence, [private] model long-range dependencies effectively.
 
   ## Technical Context
 

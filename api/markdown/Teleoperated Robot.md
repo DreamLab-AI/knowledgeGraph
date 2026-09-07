@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Teleoperated Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:immersive-interface", "label": "Immersive Interface"}
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-interface",
+        "label": "Immersive Interface"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotic-telepresence", "label": "Robotic Telepresence"},
-      {"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}
+      {
+        "@id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}
+      {
+        "@id": "urn:ngm:class:dc-telepresence",
+        "label": "Telepresence"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:teleoperated-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f6c83b5568ddfec1907d6fd0b2f3cb813f7378af9ca297362ed02a6bbecfd30a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Teleoperated Robot is a robotic system remotely controlled by a human operator via a communication link, combining human-level judgement with robotic precision and reach in environments inaccessible or hazardous to people. Key technical dimensions include haptic feedback, anthropomorphic dexterity, immersive operator interfaces (including VR headsets), latency management, and AI-assisted control to reduce operator cognitive load; applications span surgery, nuclear decommissioning, disaster response, and construction.

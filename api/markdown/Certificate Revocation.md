@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Certificate Revocation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,44 +20,106 @@ public: true
   "definition": "Certificate Revocation is the process by which a Certificate Authority (CA) invalidates a previously issued digital certificate before its natural expiry, typically due to key compromise, CA compromise, or change in the certificate holder's status. Revocation information is distributed via Certificate Revocation Lists (CRLs) or the Online Certificate Status Protocol (OCSP). It is a critical component of public key infrastructure (PKI) lifecycle management.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:pki", "label": "PKI"},
-      {"@id": "urn:ngm:class:trust-management", "label": "Trust Management"}
+      {
+        "@id": "urn:ngm:class:pki",
+        "label": "PKI"
+      },
+      {
+        "@id": "urn:ngm:class:trust-management",
+        "label": "Trust Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:certificate-revocation-list", "label": "Certificate Revocation List"},
-      {"@id": "urn:ngm:class:ocsp", "label": "OCSP"}
+      {
+        "@id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      },
+      {
+        "@id": "urn:ngm:class:ocsp",
+        "label": "OCSP"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:x509", "label": "X.509"},
-      {"@id": "urn:ngm:class:rfc-5280", "label": "RFC 5280"}
+      {
+        "@id": "urn:ngm:class:x509",
+        "label": "X.509"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:tls", "label": "TLS"},
-      {"@id": "urn:ngm:class:https", "label": "HTTPS"}
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"},
-      {"@id": "urn:ngm:class:short-lived-certificate", "label": "Short-Lived Certificate"}
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:short-lived-certificate",
+        "label": "Short-Lived Certificate"
+      }
     ],
     "relatedTo_2": [
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
     ]
   },
   "quality": 0.62,

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Jupyter Notebook
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

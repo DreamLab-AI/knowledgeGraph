@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Branch and Bound
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -106,7 +101,7 @@ public: true
 
   ## Definition
 
-  **Branch and bound** organises the search for an optimal discrete solution as a tree. *Branching* partitions the current set of candidate solutions into smaller subsets — for instance, fixing an integer variable to lie below or above a fractional value. *Bounding* computes, for each subset, an optimistic bound on the best objective value it could contain, typically by solving a cheap relaxation (linear programming relaxation, Lagrangian relaxation, or a problem-specific bound). Any node whose bound is no better than the *incumbent* — the best complete solution found so far — is pruned, along with the entire subtree beneath it.
+  **Branch and bound** organises the search for an optimal discrete solution as a tree. *Branching* partitions the current set of candidate solutions into smaller subsets — for instance, fixing an integer variable to lie below or above a fractional value. *Bounding* computes, for each subset, an optimistic bound on the best objective value it [private] contain, typically by solving a cheap relaxation (linear programming relaxation, Lagrangian relaxation, or a problem-specific bound). Any node whose bound is no better than the *incumbent* — the best complete solution found so far — is pruned, along with the entire subtree beneath it.
 
   The method is exact: when the tree is exhausted, the incumbent is provably optimal, and at any point the gap between incumbent and best outstanding bound certifies how far from optimal the current answer can be. Its practical performance therefore hinges on bound tightness, branching variable selection, and node exploration order (best-first, depth-first, or hybrids), which is where decades of solver engineering — and, recently, learned branching policies — concentrate.
 

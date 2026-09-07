@@ -1,11 +1,14 @@
----
-public: true
----
-
-# False Negative
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:false-negative", "@type": "Page", "title": "False Negative", "vc:slug": "false-negative", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:false-negative",
+  "@type": "Page",
+  "title": "False Negative",
+  "vc:slug": "false-negative",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

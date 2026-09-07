@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Weak-to-Strong Generalisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Weak-to-strong generalisation is an AI-alignment research paradigm investigating whether a more capable model can be reliably supervised and improved using labels or feedback from a weaker supervisor. It serves as an empirical analogue for the superalignment problem, in which humans must oversee superhuman systems they cannot fully evaluate. Findings explore how strong students recover latent capabilities beyond the noisy weak teacher's own performance.",
   "domain": "ai",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}, {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
   },
   "quality": 0.72
 }

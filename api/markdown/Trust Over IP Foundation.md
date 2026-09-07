@@ -1,8 +1,3 @@
----
-public: true
----
-
-# trust over ip foundation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

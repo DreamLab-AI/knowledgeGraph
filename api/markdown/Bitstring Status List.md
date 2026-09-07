@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitstring Status List
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,24 +17,47 @@ public: true
   "@id": "urn:ngm:class:bitstring-status-list",
   "@type": "Class",
   "label": "Bitstring Status List",
-  "definition": "Bitstring Status List is a W3C specification for expressing the revocation or suspension status of Verifiable Credentials through a compressed, publicly-hosted bitstring in which each credential is assigned a position index; setting that bit to 1 indicates revocation without disclosing which specific credential holder triggered the change. The mechanism is privacy-preserving because verifiers observe only a large compressed list, not individual credential identifiers. It supersedes the earlier Credential Status List 2021 specification and is designed to be bandwidth-efficient and herd-privacy-compatible.",
+  "definition": "Bitstring Status List is a W3C specification for expressing the revocation or suspension status of Verifiable Credentials through a compressed, publicly-hosted bitstring in which each credential is assigned a position [private]; setting that bit to 1 indicates revocation without disclosing which specific credential holder triggered the change. The mechanism is privacy-preserving because verifiers observe only a large compressed list, not individual credential identifiers. It supersedes the earlier Credential Status List 2021 specification and is designed to be bandwidth-efficient and herd-privacy-compatible.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:revocation-mechanism", "label": "Revocation Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:revocation-mechanism",
+      "label": "Revocation Mechanism"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"}
+      {
+        "@id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:revocation-registry", "label": "Revocation Registry"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:revocation-registry",
+        "label": "Revocation Registry"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:verifiable-credential-standard", "label": "Verifiable Credential Standard"}
+      {
+        "@id": "urn:ngm:class:verifiable-credential-standard",
+        "label": "Verifiable Credential Standard"
+      }
     ]
   },
   "quality": 0.8
@@ -47,7 +65,7 @@ public: true
 ```
 
 - ### Definition
-  - [[Bitstring Status List]] defines a compact representation of [[Verifiable Credentials]] status information encoded as a GZIP-compressed bitstring of at minimum 131,072 bits (16 kB uncompressed). Each credential issued by an issuer references a specific bit position within a named status list resource. Verifiers fetch the list, decompress it, and check the bit at the credential's declared index. Because the list contains thousands of credential slots, a verifier cannot determine from the list fetch alone which credential is being checked, providing herd privacy analogous to certificate revocation lists but optimised for the verifiable credentials ecosystem.
+  - [[Bitstring Status List]] defines a compact representation of [[Verifiable Credentials]] status information encoded as a GZIP-compressed bitstring of at minimum 131,072 bits (16 kB uncompressed). Each credential issued by an issuer references a specific bit position within a named status list resource. Verifiers fetch the list, decompress it, and check the bit at the credential's declared [private]. Because the list contains thousands of credential slots, a verifier cannot determine from the list fetch alone which credential is being checked, providing herd privacy analogous to certificate revocation lists but optimised for the verifiable credentials ecosystem.
 
 - ### Relationships
   - [[Bitstring Status List]] is a specialisation of [[Revocation Mechanism]] that works within the [[Verifiable Credentials]] framework. It complements [[Decentralised Identity]] architectures by providing a revocation signal that issuers can publish without identifying individual holders. The [[Revocation Registry]] concept from AnonCreds and other systems provides an alternative approach, whilst [[Credential Verification]] is the consumer process that queries the list.

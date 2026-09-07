@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Chain DEX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A cross-chain DEX is a decentralised exchange that lets users swap assets native to different blockchains without a centralised custodian. It relies on bridges, atomic swaps, or liquidity-network protocols to coordinate settlement across chains while preserving non-custodial trading. It extends decentralised finance beyond single-chain liquidity silos.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:de-fi", "label": "DeFi"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}, {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ]
   },
   "quality": 0.72
 }

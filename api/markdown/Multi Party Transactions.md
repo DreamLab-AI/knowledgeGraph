@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Multi-Party Transactions
----
-
-# Multi Party Transactions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,37 +65,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:multi-party-transactions:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f944bef68899f6322c1662457780488a6e9836519425c88e3fd1d0a7d9161dc5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain Transactions]]",
-      "resolved": "urn:visionflow:linked:blockchain-transactions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross Chain Trading]]",
-      "resolved": "urn:visionflow:linked:cross-chain-trading",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blockchain transactions involving more than two participants that use atomic swap protocols, adaptor signatures, and hash timelock contracts (HTLCs) to ensure all parties complete their exchanges simultaneously or the entire transaction is reversed, preventing partial completion losses.

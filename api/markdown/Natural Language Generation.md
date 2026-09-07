@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Natural Language Generation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

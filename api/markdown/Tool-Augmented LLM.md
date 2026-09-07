@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tool-Augmented LLM
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A tool-augmented large language model is an LLM that can invoke external tools, APIs, code execution, or retrieval systems during inference to overcome the limits of its parametric knowledge. By emitting structured calls and incorporating the returned results, it can perform calculations, access live data, and act on the world rather than relying solely on text generation.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agents", "label": "Agents"}, {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
   },
   "quality": 0.72
 }

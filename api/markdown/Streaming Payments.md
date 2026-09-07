@@ -1,37 +1,114 @@
----
-public: true
----
-
-# Streaming Payments
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:streaming-payments", "@type":"Page", "title":"Streaming Payments", "vc:slug":"streaming-payments", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:streaming-payments",
+  "@type": "Page",
+  "title": "Streaming Payments",
+  "vc:slug": "streaming-payments",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:streaming-payments",
-  "@type":"Class",
-  "label":"Streaming Payments",
-  "definition":"Streaming payments are a payment model in which value flows continuously from payer to payee in real time, accruing per second or per block rather than in discrete lump sums. On programmable ledgers and payment channels this is implemented by smart contracts or channel updates that let a recipient withdraw the proportion earned at any moment. The model suits salaries, subscriptions, rentals, and machine-to-machine billing where settlement should track elapsed time or usage.",
-  "domain":"blockchain",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:programmable-money","label":"Programmable Money"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:programmable-money","label":"Programmable Money"}],
-    "enables":[{"@id":"urn:ngm:class:micropayment","label":"Micropayment"}],
-    "requires":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"},{"@id":"urn:ngm:class:payment-channel","label":"Payment Channel"}],
-    "uses":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"},{"@id":"urn:ngm:class:stablecoin","label":"Stablecoin"},{"@id":"urn:ngm:class:payment-channel","label":"Payment Channel"}],
-    "implements":[{"@id":"urn:ngm:class:programmable-money","label":"Programmable Money"}],
-    "supports":[{"@id":"urn:ngm:class:micropayment","label":"Micropayment"}],
-    "dependsOn":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "relatedTo":[{"@id":"urn:ngm:class:superfluid","label":"Superfluid"},{"@id":"urn:ngm:class:sablier","label":"Sablier"},{"@id":"urn:ngm:class:lightning-network","label":"Lightning Network"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:payment-channel","label":"Payment Channel"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:streaming-payments",
+  "@type": "Class",
+  "label": "Streaming Payments",
+  "definition": "Streaming payments are a payment model in which value flows continuously from payer to payee in real time, accruing per second or per block rather than in discrete lump sums. On programmable ledgers and payment channels this is implemented by smart contracts or channel updates that let a recipient withdraw the proportion earned at any moment. The model suits salaries, subscriptions, rentals, and machine-to-machine billing where settlement should track elapsed time or usage.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:programmable-money",
+      "label": "Programmable Money"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:superfluid",
+        "label": "Superfluid"
+      },
+      {
+        "@id": "urn:ngm:class:sablier",
+        "label": "Sablier"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

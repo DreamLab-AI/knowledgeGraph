@@ -1,8 +1,3 @@
----
-public: true
----
-
-# data persistence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -273,7 +268,7 @@ public: true
     - Microservices architectures using [[Event Sourcing]] persist all domain events in an [[Append-Only Log]], deriving current state by replaying the event stream. This gives a full audit trail and enables temporal queries.
     - [[CQRS Pattern]] implementations maintain separate write models (command side, persisted transactionally) and read models (query side, denormalised projections rebuilt from the event log), optimising each for its specific access pattern.
   - #### AI and Machine Learning
-    - [[Vector Database]] systems (Pinecone, Weaviate, Qdrant, pgvector) persist high-dimensional embedding vectors alongside metadata, enabling semantic search and retrieval-augmented generation ([[Retrieval-Augmented Generation]]). These introduce specialised persistence requirements: approximate nearest-neighbour index structures (HNSW, IVF) must be durably stored and rebuilt on startup.
+    - [[Vector Database]] systems (Pinecone, Weaviate, Qdrant, pgvector) persist high-dimensional embedding vectors alongside metadata, enabling semantic search and retrieval-augmented generation ([[Retrieval-Augmented Generation]]). These introduce specialised persistence requirements: approximate nearest-neighbour [private] structures (HNSW, IVF) must be durably stored and rebuilt on startup.
     - ML training pipelines persist model checkpoints, dataset snapshots, and experiment metadata, typically using [[Object Storage]] with versioning and specialised ML metadata stores (MLflow, Weights and Biases) for reproducibility.
   - #### Blockchain and Decentralised Systems
     - [[Blockchain Ledger]] systems represent an extreme form of durable persistence: every participant stores the full transaction history (or a Merkle-verified subset), providing censorship-resistant, tamper-evident data persistence without a central authority.

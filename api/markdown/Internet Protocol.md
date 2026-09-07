@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Internet Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

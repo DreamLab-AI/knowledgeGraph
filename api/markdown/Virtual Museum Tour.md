@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Museum Tour
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cultural-heritage-xr-experience", "label": "Cultural Heritage XR Experience"},
-      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"}
+      {
+        "@id": "urn:ngm:class:cultural-heritage-xr-experience",
+        "label": "Cultural Heritage XR Experience"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-field-trip", "label": "Virtual Field Trip"},
-      {"@id": "urn:ngm:class:virtual-tourism", "label": "Virtual Tourism"}
+      {
+        "@id": "urn:ngm:class:virtual-field-trip",
+        "label": "Virtual Field Trip"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      }
     ]
   },
   "provenance": {
@@ -87,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-museum-tour:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fed78abb62f00f0c8fd0b2b1a7b18ef8e1e6a157a2c3b35a9a2fb978373d23b5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Tour]]",
-      "resolved": "urn:visionflow:owl:class:virtual-tour",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artifacts regardless of physical location.

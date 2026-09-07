@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optimistic Rollup
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -202,52 +197,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:optimistic-rollup:99b0f3f9e549",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:57dc0db224135b593ef64e52bf8cec6db17924d94391a6bb472ee566dcad9dcd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 2 Scaling]]",
-      "resolved": "urn:visionflow:linked:layer-2-scaling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EVM]]",
-      "resolved": "urn:visionflow:linked:evm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimism]]",
-      "resolved": "urn:visionflow:linked:optimism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rollup]]",
-      "resolved": "urn:visionflow:linked:rollup",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A layer-two scaling design that posts transaction data to a base chain and assumes results are valid unless challenged within a dispute window through a fraud proof.

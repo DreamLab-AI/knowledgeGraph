@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise Ai
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -239,7 +235,7 @@ public: true
     - ### Origins and Historical Development
       - Enterprise AI as a distinct category crystallised between 2016 and 2020 as machine-learning deployments at Fortune 500 and FTSE 100 companies moved beyond analytics dashboards into operational systems — fraud detection, demand forecasting, churn prediction, and quality control — managed by specialist data science teams with growing links to business operations.
       - The category was first comprehensively articulated in Davenport & Ronanki's 2018 Harvard Business Review article "Artificial Intelligence for the Real World," which distinguished three types of enterprise AI: process automation, cognitive insight (ML-driven analytics), and cognitive engagement (natural-language systems).
-      - The emergence of [[Foundation Model]] capabilities with GPT-3 (2020) transformed the enterprise AI landscape by demonstrating that a single general-purpose pre-trained model could perform a broad range of knowledge work tasks with minimal task-specific engineering, dramatically lowering deployment costs for text-centric applications.
+      - The emergence of [[Foundation Model]] capabilities with GPT-3 (2020) transformed the enterprise AI landscape by demonstrating that a single general-purpose pre-trained model [private] perform a broad range of knowledge work tasks with minimal task-specific engineering, dramatically lowering deployment costs for text-centric applications.
       - The public release of ChatGPT in November 2022 triggered the fastest technology experimentation cycle in corporate history, with organisations deploying generative AI copilot and search pilots across every function within months — while simultaneously exposing systemic weaknesses in enterprise data estates and governance frameworks that had been latent since the analytics wave of 2014–2018.
       - The 2023–2024 period was defined by the emergence of [[Retrieval-Augmented Generation]] as the dominant enterprise AI architecture pattern, resolving the hallucination and data-currency problems that made pure LLM deployment unsafe in regulated contexts, and by the first wave of production-scale agentic deployments using frameworks such as LangChain, AutoGPT, and early versions of LangGraph.
       - By 2025–2026, the enterprise AI market has consolidated around a small number of dominant platform patterns — embedded copilots, RAG knowledge systems, and agentic orchestration — with major enterprise software vendors (Microsoft, Salesforce, SAP, ServiceNow, IBM) having fully integrated AI as a native capability layer rather than an add-on product.
@@ -284,15 +280,15 @@ public: true
     - ### Governance and Compliance Layer
       - AI risk registers: structured inventories classifying each AI deployment by [[EU AI Act]] risk tier, documenting technical specifications, conformity assessment status, post-market monitoring arrangements, and incident reporting procedures.
       - Automated bias detection pipelines sampling production model outputs against demographic fairness criteria on a continuous basis.
-      - Prompt injection detection: monitoring [[Agentic Workflow]] tool call outputs for adversarial content that could redirect agent behaviour — a novel attack surface absent from traditional software security models.
+      - Prompt injection detection: monitoring [[Agentic Workflow]] tool call outputs for adversarial content that [private] redirect agent behaviour — a novel attack surface absent from traditional software security models.
       - [[Human-in-the-Loop]] approval queues routing model-generated recommendations above configurable risk thresholds for human review before action — particularly critical in financial transaction approval, medical recommendation, and legal advice generation.
       - Audit logging with immutable event stores meeting financial services record-keeping requirements (FCA COBS 11.8, SEC Rule 17a-4) and GDPR Article 5 accountability obligations.
       - ServiceNow AI Control Tower (April 2026) represents the emerging category of vendor-provided, governance-first AI management platforms embedded as defaults across all enterprise tiers.
     - ### Identity and Data Security Layer
       - Role-based access control applied at retrieval time: user identity from directory services (Active Directory, Okta) maps to document-level permissions enforced by the [[Retrieval-Augmented Generation]] pipeline before context is assembled for the [[Foundation Model]].
-      - Tenant isolation in multi-tenant SaaS AI deployments: cryptographic separation of organisational data within shared vector index infrastructure.
+      - Tenant isolation in multi-tenant SaaS AI deployments: cryptographic separation of organisational data within shared vector [private] infrastructure.
       - Data loss prevention policies scanning AI inputs and outputs for sensitive patterns (PII, financial data, trade secrets) before transmission or storage.
-      - Data residency configuration: sovereign cloud regions, on-premise vector index hosting, and edge inference for data that cannot leave a specific jurisdiction.
+      - Data residency configuration: sovereign cloud regions, on-premise vector [private] hosting, and edge inference for data that cannot leave a specific jurisdiction.
     - ### Measurement and Evaluation Layer
       - LLM-as-judge evaluation frameworks: using a separate LLM to score production outputs against rubrics for accuracy, faithfulness to retrieved context, helpfulness, and safety — enabling automated quality monitoring at scale.
       - A/B testing of model versions in production: canary deployments comparing new model versions against incumbents on real user traffic with statistical significance gating.

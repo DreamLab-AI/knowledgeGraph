@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Bubble
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-bubble",
   "title": "AI Bubble",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Market Sentiment", "Nvidia Stock"],
+  "vc:outboundWikilinks": [
+    "AI Market Sentiment",
+    "Nvidia Stock"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:competition-in-ai", "label": "Competition in AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:competition-in-ai", "label": "Competition in AI"}, {"@id": "urn:ngm:class:ai-market-dynamics", "label": "AI Market Dynamics"}, {"@id": "urn:ngm:class:ai-chips", "label": "AI Chips"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-market-dynamics",
+        "label": "AI Market Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

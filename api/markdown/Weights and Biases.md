@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Weights and Biases
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Weights & Biases (W&B) is a machine-learning experiment-tracking and MLOps platform that logs metrics, hyperparameters, model checkpoints, datasets, and system telemetry to enable reproducible and comparable training runs. It provides dashboards, artifact versioning, hyperparameter sweeps, and model-registry features that integrate with common training frameworks. W&B is widely adopted for managing and visualising the lifecycle of deep-learning experiments.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:checkpoints", "label": "Checkpoints"}, {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
+    ]
   },
   "quality": 0.72
 }

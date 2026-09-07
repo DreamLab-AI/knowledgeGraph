@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ISO/IEC 42001
----
-
-# iso iec 42001
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WordPiece
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,36 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:subword-tokenisation", "label": "Subword Tokenisation"},
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"}
+      {
+        "@id": "urn:ngm:class:subword-tokenisation",
+        "label": "Subword Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte Pair Encoding"},
-      {"@id": "urn:ngm:class:sentence-piece", "label": "SentencePiece"}
+      {
+        "@id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:sentence-piece",
+        "label": "SentencePiece"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"}
+      {
+        "@id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      }
     ]
   },
   "quality": 0.5,
@@ -78,32 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:word-piece:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a691504c2243eb11afd12fa69ef514eda658373823208bc72d45b18472cefa39"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A subword tokenisation method that merges character sequences based on likelihood maximisation rather than frequency, used in BERT and related models.

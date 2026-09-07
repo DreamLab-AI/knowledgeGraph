@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Information Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,10 +20,18 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-quality", "label": "Data Quality"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ]
   },
   "quality": 0.7
 }

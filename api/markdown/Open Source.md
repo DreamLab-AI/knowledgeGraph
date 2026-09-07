@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Source
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,46 +181,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:open-source:403cae7d3bfc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c346b98da2893b22de15510021f2bbd882cef94c17dcc0844c80e385fe018ab4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Software Development]]",
-      "resolved": "urn:visionflow:linked:software-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GitHub]]",
-      "resolved": "urn:visionflow:linked:git-hub",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://opensource.org/osd]]",
-      "resolved": "urn:visionflow:linked:https-opensource-org-osd",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://opensource.org/licenses]]",
-      "resolved": "urn:visionflow:linked:https-opensource-org-licenses",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

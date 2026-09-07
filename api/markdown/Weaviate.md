@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Weaviate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:weaviate:ea3f2c381cdb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3467223a86afc63ac0ad128770840955742e2d524c7ba0122888373574d1d8f3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Embeddings]]",
-      "resolved": "urn:visionflow:linked:embeddings",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Search]]",
-      "resolved": "urn:visionflow:linked:semantic-search",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Retrieval-Augmented Generation]]",
-      "resolved": "urn:visionflow:linked:retrieval-augmented-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vector Database]]",
-      "resolved": "urn:visionflow:linked:vector-database",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://weaviate.io]]",
-      "resolved": "urn:visionflow:linked:https-weaviate-io",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://weaviate.io/developers/weaviate]]",
-      "resolved": "urn:visionflow:linked:https-weaviate-io-developers-weaviate",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Weaviate is an open-source vector database for storing objects and their vector embeddings to support semantic search and retrieval. It is developed by Weaviate B.V.

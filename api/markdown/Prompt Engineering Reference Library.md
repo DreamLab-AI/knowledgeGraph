@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[bestprompts]]
-# Prompt Engineering Reference Library
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[bestprompts]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"}
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
     ]
   },
   "quality": 0.5,
@@ -67,26 +76,6 @@ elevatedFrom:: [[bestprompts]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bestprompts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:187f8b1dbe9077d32efa568393441b9e1bff10e948b7771c04d1b4849d14d1c6"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A curated collection of high-quality prompts, system instructions, and prompt engineering patterns for directing large language model behaviour across tasks including image generation, code synthesis, transcript processing, and writing style control. Serves as a practitioner reference library for reproducible AI-assisted workflows.
@@ -123,7 +112,7 @@ elevatedFrom:: [[bestprompts]]
 	  You should ensure that the team remain in place throughout the project, updating the sequence diagram whenever significant changes are made."
   - Gemini Prompt
   - Begin by enclosing all thoughts within <thinking> tags, exploring multiple angles and approaches. Break down the solution into clear steps within <step> tags. Start with a 20-step budget, requesting more for complex problems if needed. Use <count> tags after each step to show the remaining budget. Stop when reaching 0. Continuously adjust your reasoning based on intermediate results and reflections, adapting your strategy as you progress. Regularly evaluate progress using <reflection> tags. Be critical and honest about your reasoning process. Assign a quality score between 0.0 and 1.0 using <reward> tags after each reflection. Use this to guide your approach: 0.8+: Continue current approach 0.5-0.7: Consider minor adjustments Below 0.5: Seriously consider backtracking and trying a different approach If unsure or if reward score is low, backtrack and try a different approach, explaining your decision within <thinking> tags. For mathematical problems, show all work explicitly using LaTeX for formal notation and provide detailed proofs. Explore multiple solutions individually if possible, comparing approaches in reflections. Use thoughts as a scratchpad, writing out all calculations and reasoning explicitly. Synthesize the final answer within <answer> tags, providing a clear, concise summary. Conclude with a final reflection on the overall solution, discussing effectiveness, challenges, and solutions. Assign a final reward score.
-  - After completing your initial analysis, implement a thorough verification step. Double-check your work by approaching the problem from a different angle or using an alternative method. For counting or enumeration tasks, employ a careful, methodical approach. Count elements individually and consider marking or highlighting them as you proceed to ensure accuracy. Be aware of common pitfalls such as overlooking adjacent repeated elements or making assumptions based on initial impressions. Actively look for these potential errors in your work. Always question your initial results. Ask yourself, "What if this is incorrect?" and attempt to disprove your first conclusion. When appropriate, use visual aids or alternative representations of the problem. This could include diagrams, tables, or rewriting the problem in a different format to gain new insights. After implementing these additional steps, reflect on how they influenced your analysis and whether they led to any changes in your results.
+  - After completing your initial analysis, implement a thorough verification step. Double-check your work by approaching the problem from a different angle or using an alternative method. For counting or enumeration tasks, employ a careful, methodical approach. Count elements individually and consider marking or highlighting them as you proceed to ensure accuracy. Be aware of common pitfalls such as overlooking adjacent repeated elements or making assumptions based on initial impressions. Actively look for these potential errors in your work. Always question your initial results. Ask yourself, "What if this is incorrect?" and attempt to disprove your first conclusion. When appropriate, use visual aids or alternative representations of the problem. This [private] include diagrams, tables, or rewriting the problem in a different format to gain new insights. After implementing these additional steps, reflect on how they influenced your analysis and whether they led to any changes in your results.
   - # I finally found a prompt that makes ChatGPT write naturally
 	  * **Use simple language:** Write plainly with short sentences.
 	    * Example: "I met him with his family."
@@ -258,7 +247,7 @@ elevatedFrom:: [[bestprompts]]
 		  **NEVER USE:**
 		  - "profound" or similar adjectives
 		  - Difficulty assessments unless explicitly requested
-		  - Future tense deferrals ("would", "could", "should")
+		  - Future tense deferrals ("would", "[private]", "should")
 
 		  ## Null Space Patterns (COMPLETELY EXCLUDE)
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Immersive_Experiences
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,19 +91,40 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
     ]
   },
   "provenance": {
@@ -118,82 +134,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-immersive-experiences:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3b3753aa1bdd7b54aa9cc963165ca9f1792a7a9834f85c728229c06a6016e62a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ContentRendering]]",
-      "resolved": "urn:visionflow:linked:content-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EnvironmentalSimulation]]",
-      "resolved": "urn:visionflow:linked:environmental-simulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI]]",
-      "resolved": "urn:visionflow:linked:etsi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ExtendedReality]]",
-      "resolved": "urn:visionflow:linked:extended-reality",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RealTimeInteraction]]",
-      "resolved": "urn:visionflow:linked:real-time-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SensoryFeedback]]",
-      "resolved": "urn:visionflow:linked:sensory-feedback",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AugmentedReality]]",
-      "resolved": "urn:visionflow:owl:class:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SpatialComputing]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualReality]]",
-      "resolved": "urn:visionflow:owl:class:virtual-reality",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An [[ETSI]] governance domain encompassing technologies, standards, and practices for creating immersive digital experiences including [[VirtualReality]], [[AugmentedReality]], [[ExtendedReality]], and [[SpatialComputing]]. This domain addresses [[ContentRendering]], [[RealTimeInteraction]], [[SensoryFeedback]], and [[EnvironmentalSimulation]] to deliver seamless, engaging immersive experiences.
@@ -254,7 +194,7 @@ public: true
   - North England innovation considerations
   - Manchester and Leeds host significant telecommunications research clusters with potential involvement in immersive experience standardisation and deployment
   - Newcastle's digital innovation sector represents an emerging hub for AR/VR application development, though specific immersive experience initiatives remain limited in publicly available documentation
-  - Sheffield's advanced manufacturing sector could benefit substantially from immersive training and simulation applications, particularly given the technical frameworks now standardised[1]
+  - Sheffield's advanced manufacturing sector [private] benefit substantially from immersive training and simulation applications, particularly given the technical frameworks now standardised[1]
   ## Future Directions
   - Emerging trends and developments
   - First-person immersive experiences will likely proliferate as architectural frameworks mature, enabling genuinely transformative applications in performance arts, professional training, and remote collaboration[4]

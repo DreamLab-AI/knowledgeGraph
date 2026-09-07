@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optimality
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:optimality:658f8d7d1f81",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:24c7fef6ba4d0adaf196528d73326dfbb3680328a85944627cf6c0bea98856c0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Optimisation]]",
-      "resolved": "urn:visionflow:linked:optimisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Game Theory]]",
-      "resolved": "urn:visionflow:linked:game-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robustness]]",
-      "resolved": "urn:visionflow:linked:robustness",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The property of being the best achievable solution with respect to a defined objective and set of constraints, central to optimisation and decision problems.

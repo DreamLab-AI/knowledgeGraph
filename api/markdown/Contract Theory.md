@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Contract Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Contract theory is the branch of economics that studies how parties design agreements under asymmetric information, incentive conflicts, and incomplete contracting. It analyses problems such as moral hazard, adverse selection, and signalling to derive incentive-compatible contracts that align the interests of principals and agents. It provides the formal foundations for mechanism and incentive design, including in tokenised and decentralised systems.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:economics", "label": "Economics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
   },
   "quality": 0.72
 }

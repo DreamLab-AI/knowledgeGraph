@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - KnowledgeOrganizationSystem
----
-
-# Knowledge Organization System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,16 +50,34 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:knowledge-organization", "label": "Knowledge Organization"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-organization",
+        "label": "Knowledge Organization"
+      }
     ]
   },
   "quality": 0.35,
@@ -77,32 +88,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:knowledge-organization-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c53ef1d39f071ca806d0645d7413ba5f6774b56d7f441e212cbf75c6862a490e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Knowledge Organization System (KOS) is any formal scheme used to organise, classify, and relate concepts within a domain — including thesauri, classification schemes, ontologies, taxonomies, and controlled vocabularies. KOS structures enable semantic interoperability by providing shared conceptual frameworks that allow heterogeneous systems to exchange and interpret information consistently. In AI infrastructure they underpin knowledge graphs, semantic search, and entity disambiguation in large language model pipelines.

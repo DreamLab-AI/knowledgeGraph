@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Research Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:research-layer:42040857d064",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:648c8cbe59e37c13aceec7c252638afa2926471819d4d86b8819f41c6b247b36"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Evaluation Layer]]",
-      "resolved": "urn:visionflow:linked:evaluation-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Simulation Layer]]",
-      "resolved": "urn:visionflow:linked:simulation-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Algorithm Layer]]",
-      "resolved": "urn:visionflow:linked:algorithm-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Architecture Layer]]",
-      "resolved": "urn:visionflow:linked:model-architecture-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scientific Method]]",
-      "resolved": "urn:visionflow:linked:scientific-method",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reproducibility]]",
-      "resolved": "urn:visionflow:linked:reproducibility",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Research Layer is the cross-cutting stratum where new methods, models, and understanding are generated before adoption into production strata. It sits above evaluation and experimentation concerns and feeds the algorithm and model layers with validated advances. It contains experiments, hypotheses, prototypes, and the findings that justify changes elsewhere.

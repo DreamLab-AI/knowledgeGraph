@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lending Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,52 +199,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lending-protocol:a583e5bc39b0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:85fd1b9a73a9ec3bf65f1960e968bf0f7cae5ca719c4be83ebdf077bdef68623"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collateral Management]]",
-      "resolved": "urn:visionflow:linked:collateral-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Price Oracle]]",
-      "resolved": "urn:visionflow:linked:price-oracle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Yield Farming]]",
-      "resolved": "urn:visionflow:linked:yield-farming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Pool]]",
-      "resolved": "urn:visionflow:linked:liquidity-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A smart-contract system that lets users supply assets to earn interest and borrow against deposited collateral, with rates and liquidations governed by code.

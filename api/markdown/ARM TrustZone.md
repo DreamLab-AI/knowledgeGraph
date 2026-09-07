@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ARM TrustZone
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,30 @@ public: true
   "definition": "ARM TrustZone is a hardware security technology built into ARM processors that partitions the system into two isolated execution worlds — a Secure World and a Normal World — enforced at the level of the CPU, memory, and peripherals. Sensitive code and data, such as cryptographic keys and biometric matching, run in the Secure World inaccessible to the rich operating system in the Normal World, providing a trusted execution environment without a separate security chip. It is ubiquitous in mobile devices, embedded systems, and IoT hardware.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:trusted-execution-environment",
+      "label": "Trusted Execution Environment"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:secure-enclave", "label": "Secure Enclave"}
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:hardware-security", "label": "Hardware Security"}
+      {
+        "@id": "urn:ngm:class:hardware-security",
+        "label": "Hardware Security"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tee", "label": "TEE"}
+      {
+        "@id": "urn:ngm:class:tee",
+        "label": "TEE"
+      }
     ]
   },
   "quality": 0.8

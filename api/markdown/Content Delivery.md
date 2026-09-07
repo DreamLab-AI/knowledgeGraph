@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Delivery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:content-delivery:16db478f6006",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7bc2705f55abeff825cc3d7e6a617e8de7f71e22ff30704f8d8a28b1cb84c553"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Video Compression]]",
-      "resolved": "urn:visionflow:linked:video-compression",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Content Delivery Network]]",
-      "resolved": "urn:visionflow:linked:content-delivery-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Content delivery is the distribution of digital media such as web pages, video and software to end users, typically optimised for speed and reliability. It is commonly accelerated by content delivery networks.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Conversational Commerce
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "conversational-commerce",
   "title": "Conversational Commerce",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Ad Experience", "Context Switching", "User Agency"],
+  "vc:outboundWikilinks": [
+    "Ad Experience",
+    "Context Switching",
+    "User Agency"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:advertising", "label": "Advertising"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:advertising",
+      "label": "Advertising"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:advertising", "label": "Advertising"}, {"@id": "urn:ngm:class:digital-marketing", "label": "Digital Marketing"}, {"@id": "urn:ngm:class:model", "label": "Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

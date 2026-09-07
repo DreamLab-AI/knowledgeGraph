@@ -1,8 +1,3 @@
----
-public: true
----
-
-# De BER Ta
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,22 +55,46 @@ public: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "provenance": {
@@ -85,37 +104,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:de-ber-ta:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:14b32c48d8edebb08f22c9bf3783dcbd81d6582878b96b558148d0b3b9c5f4e5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Decoding-enhanced BERT with Disentangled Attention: an improved BERT architecture that uses disentangled attention (separating content and position) and an enhanced mask decoder for better performance.

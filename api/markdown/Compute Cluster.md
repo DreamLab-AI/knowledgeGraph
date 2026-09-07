@@ -1,57 +1,114 @@
----
-public: true
----
-
-# Compute Cluster
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:compute-cluster", "@type":"Page", "title":"Compute Cluster", "vc:slug":"compute-cluster", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:compute-cluster",
+  "@type": "Page",
+  "title": "Compute Cluster",
+  "vc:slug": "compute-cluster",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:compute-cluster",
-  "@type":"Class",
-  "label":"Compute Cluster",
-  "definition":"A compute cluster is a collection of interconnected computers that work together as a single system to execute large or parallel workloads. Nodes are coordinated by a scheduler that allocates jobs across processors, accelerators, and memory, sharing high-speed networking and often a common storage fabric. Clusters underpin large-scale model training, simulation, and data processing where a single machine cannot supply enough compute.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:high-performance-computing","label":"High-Performance Computing"}],
-  "relations":{
-    "requires":[
-      {"@id":"urn:ngm:class:scheduler","label":"Scheduler"},
-      {"@id":"urn:ngm:class:resource-management","label":"Resource Management"},
-      {"@id":"urn:ngm:class:gpu","label":"GPU"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compute-cluster",
+  "@type": "Class",
+  "label": "Compute Cluster",
+  "definition": "A compute cluster is a collection of interconnected computers that work together as a single system to execute large or parallel workloads. Nodes are coordinated by a scheduler that allocates jobs across processors, accelerators, and memory, sharing high-speed networking and often a common storage fabric. Clusters underpin large-scale model training, simulation, and data processing where a single machine cannot supply enough compute.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:high-performance-computing",
+      "label": "High-Performance Computing"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:scheduler",
+        "label": "Scheduler"
+      },
+      {
+        "@id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:data-centre","label":"Data Center"},
-      {"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:distributed-training","label":"Distributed Training"},
-      {"@id":"urn:ngm:class:model-training","label":"Model Training"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:kubernetes","label":"Kubernetes"},
-      {"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:batch-processing","label":"Batch Processing"},
-      {"@id":"urn:ngm:class:mlops","label":"MLOps"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:high-performance-computing","label":"High-Performance Computing"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"},
-      {"@id":"urn:ngm:class:data-centre","label":"Data Center"},
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

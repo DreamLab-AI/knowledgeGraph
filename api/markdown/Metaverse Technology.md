@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metaverse Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,21 +106,60 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:metaverse-infrastructure", "label": "Metaverse Infrastructure"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:virtual-world-traversal", "label": "Virtual World Traversal"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-traversal",
+        "label": "Virtual World Traversal"
+      }
     ]
   },
   "quality": 0.8,
@@ -136,102 +170,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c7b20c20c8e45d94cf8852141f4964aed91a30443cc7e1403f271257310535aa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain Technology]]",
-      "resolved": "urn:visionflow:linked:blockchain-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:owl:class:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Avatar System]]",
-      "resolved": "urn:visionflow:owl:class:avatar-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Immersive Experience]]",
-      "resolved": "urn:visionflow:owl:class:immersive-experience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Technology]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics Systems]]",
-      "resolved": "urn:visionflow:owl:class:robotics-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual World]]",
-      "resolved": "urn:visionflow:owl:class:virtual-world",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The foundational technology domain encompassing persistent, synchronous 3D virtual worlds, augmented reality environments, spatial computing platforms, and immersive internet infrastructure that enable shared experiences with interoperable digital assets, persistent identity systems, and real-time social interaction across physical and virtual boundaries.

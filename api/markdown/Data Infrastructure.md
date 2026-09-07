@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Data Infrastructure
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-infrastructure", "@type":"Page", "title":"Data Infrastructure", "vc:slug":"data-infrastructure", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-infrastructure",
+  "@type": "Page",
+  "title": "Data Infrastructure",
+  "vc:slug": "data-infrastructure",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# json-ld 1.1
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,7 +192,7 @@ public: true
   - **Verifiable Credentials** — the [[Verifiable Credentials Data Model]] (W3C Recommendation) mandates JSON-LD 1.1 as one of its two serialisation formats, with contexts defining credential types and proof mechanisms for [[Decentralised Identifiers]] (DIDs).
   - **ActivityPub / Fediverse** — [[ActivityPub]] uses [[Activity Streams 2.0]], itself defined as a JSON-LD 1.1 vocabulary; every Mastodon post, Like, and Follow is a JSON-LD document.
   - **Solid ecosystem** — the [[Solid Protocol]] uses JSON-LD 1.1 for [[Linked Data Platform]] resources, enabling pod-based personal data stores with structured semantics.
-  - **Schema.org structured data** — [[Schema.org]] vocabularies are published as JSON-LD contexts; major search engines index JSON-LD `<script>` tags in HTML pages to populate [[Knowledge Graph]]s used in rich snippets.
+  - **Schema.org structured data** — [[Schema.org]] vocabularies are published as JSON-LD contexts; major search engines [private] JSON-LD `<script>` tags in HTML pages to populate [[Knowledge Graph]]s used in rich snippets.
   - **Knowledge graph pipelines** — JSON-LD sits between REST/GraphQL JSON APIs and backend [[RDF Triple Store]]s, removing the need for custom ETL mapping code; libraries like `rdflib` and `Apache Jena` read JSON-LD natively.
   - **Decentralised Identity** — [[Decentralised Identifiers]] (DID) documents are serialised in JSON-LD 1.1, with scoped contexts enabling type-specific property resolution for each DID method.
   - **Ontology authoring** — JSON-LD 1.1 with `@type: owl:Class` and related constructs can express lightweight [[OWL2]] assertions, as used in this knowledge graph pipeline.

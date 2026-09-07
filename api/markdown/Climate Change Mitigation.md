@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Climate Change Mitigation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:climate-change-mitigation:de7d8695ca4f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:28eafeebf76efc94be563e99c7a290ec55e89ddae175f84d2a84c56842975232"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Renewable Energy]]",
-      "resolved": "urn:visionflow:linked:renewable-energy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainability]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Efforts to reduce or prevent the emission of greenhouse gases and to enhance their removal from the atmosphere, with the aim of limiting the extent of climate change. It includes shifting to low-carbon energy and improving efficiency.

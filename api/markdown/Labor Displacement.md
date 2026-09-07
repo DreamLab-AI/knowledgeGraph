@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Labor Displacement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "labor-displacement",
   "title": "Labor Displacement",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Productivity Tools", "UNI Global Union"],
+  "vc:outboundWikilinks": [
+    "Productivity Tools",
+    "UNI Global Union"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-adoption",
+      "label": "AI Adoption"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}, {"@id": "urn:ngm:class:ai-talent", "label": "AI Talent"}, {"@id": "urn:ngm:class:economic-growth", "label": "Economic Growth"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-talent",
+        "label": "AI Talent"
+      },
+      {
+        "@id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Encryption Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "An Encryption Protocol is a defined set of rules and message exchanges that uses cryptographic algorithms to establish keys and protect the confidentiality and integrity of data in transit or at rest. It specifies handshakes, cipher negotiation, key exchange, and authentication so that interoperating parties can communicate securely. TLS 1.3 is a widely deployed example securing internet traffic.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:tls-1-3", "label": "TLS 1.3"}, {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:tls-1-3",
+        "label": "TLS 1.3"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      }
+    ]
   },
   "quality": 0.72
 }

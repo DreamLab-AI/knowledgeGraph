@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Persistent Content Anchoring
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Persistent content anchoring is the augmented-reality capability of fixing virtual content to a precise real-world location so that it reappears in the same place across sessions, devices, and users. It relies on saving spatial-anchor data, typically derived from visual feature maps, and relocalising against that map on subsequent visits. The technique is essential for shared and durable AR experiences tied to physical space.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ar-registration", "label": "AR Registration"}, {"@id": "urn:ngm:class:ar-frame", "label": "AR Frame"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ar-registration",
+        "label": "AR Registration"
+      },
+      {
+        "@id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI User Demographics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-user-demographics",
   "title": "AI User Demographics",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Ipsos Survey", "US AI Adoption"],
+  "vc:outboundWikilinks": [
+    "Ipsos Survey",
+    "US AI Adoption"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-adoption",
+      "label": "AI Adoption"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}, {"@id": "urn:ngm:class:diffusion-of-innovations-theory", "label": "Diffusion of Innovations Theory"}, {"@id": "urn:ngm:class:technology-acceptance-model", "label": "Technology Acceptance Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-of-innovations-theory",
+        "label": "Diffusion of Innovations Theory"
+      },
+      {
+        "@id": "urn:ngm:class:technology-acceptance-model",
+        "label": "Technology Acceptance Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

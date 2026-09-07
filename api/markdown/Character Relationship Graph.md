@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Character Relationship Graph
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -105,72 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:character-relationship-graph:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:13ecc50bdcd423e11458529235a1e901c4bc29ee46cfdb641a97255f1e9a15fc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Character AI]]",
-      "resolved": "urn:visionflow:linked:character-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Character Attributes]]",
-      "resolved": "urn:visionflow:linked:character-attributes",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Narrative Generation]]",
-      "resolved": "urn:visionflow:linked:narrative-generation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Relationship Modeling]]",
-      "resolved": "urn:visionflow:linked:relationship-modeling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Story Analysis]]",
-      "resolved": "urn:visionflow:linked:story-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Graph Database]]",
-      "resolved": "urn:visionflow:owl:class:graph-database",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social Network Graph]]",
-      "resolved": "urn:visionflow:owl:class:social-network-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A network data structure representing narrative characters as vertices and their interactions or relationships as edges, used to model social dynamics, drive procedural story generation, and analyze narrative structure through graph theory and social network analysis.

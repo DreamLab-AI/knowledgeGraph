@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Graph Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -194,67 +189,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:graph-theory:42510edafcce",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1dba69b085927740f8cf6309c8d4a5605a4446cfc3614e13a55132774e02226b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Tree]]",
-      "resolved": "urn:visionflow:linked:tree",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Shortest Path]]",
-      "resolved": "urn:visionflow:linked:shortest-path",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Graph Colouring]]",
-      "resolved": "urn:visionflow:linked:graph-colouring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Network Analysis]]",
-      "resolved": "urn:visionflow:linked:network-analysis",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Linear Algebra]]",
-      "resolved": "urn:visionflow:linked:linear-algebra",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems Domain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Graph Theory is the branch of mathematics that studies graphs, structures consisting of vertices connected by edges, used to model pairwise relationships between objects. It examines properties such as connectivity, paths, cycles, colourings, matchings and flows, and classifies graphs by structure (for example trees, bipartite and planar graphs). Originating with Euler's 1736 solution of the Seven Bridges of Konigsberg problem, it now underpins network analysis, optimisation and computer science. Graph algorithms are fundamental to routing, scheduling, social network analysis and the representation of knowledge.

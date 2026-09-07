@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Transformers Library
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

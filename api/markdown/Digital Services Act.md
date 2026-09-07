@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Services Act
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -199,72 +194,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-services-act:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:68d0f276b1ef06088ebec87ec36a8b808717e5bc814579ee91224d23f5573082"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Compliance Systems]]",
-      "resolved": "urn:visionflow:linked:compliance-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Content Transparency]]",
-      "resolved": "urn:visionflow:linked:content-transparency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Moderation Infrastructure]]",
-      "resolved": "urn:visionflow:linked:moderation-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Platform Accountability]]",
-      "resolved": "urn:visionflow:linked:platform-accountability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reporting Mechanisms]]",
-      "resolved": "urn:visionflow:linked:reporting-mechanisms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Protection]]",
-      "resolved": "urn:visionflow:linked:user-protection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Regulation]]",
-      "resolved": "urn:visionflow:owl:class:digital-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A comprehensive EU regulation establishing legal framework for digital services accountability, content moderation requirements, platform transparency obligations, and user protection measures across online intermediaries, marketplaces, and social platforms, with implications for metaverse and virtual world governance.

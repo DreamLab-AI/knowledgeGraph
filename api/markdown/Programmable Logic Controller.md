@@ -1,47 +1,122 @@
----
-public: true
----
-
-# Programmable Logic Controller
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:programmable-logic-controller", "@type":"Page", "title":"Programmable Logic Controller", "vc:slug":"programmable-logic-controller", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:programmable-logic-controller",
+  "@type": "Page",
+  "title": "Programmable Logic Controller",
+  "vc:slug": "programmable-logic-controller",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:programmable-logic-controller",
-  "@type":"Class",
-  "label":"Programmable Logic Controller",
-  "definition":"A programmable logic controller (PLC) is a ruggedised industrial computer designed to control machinery and processes by repeatedly scanning inputs, executing a stored control program, and updating outputs in real time. Built to withstand harsh factory environments, it interfaces with sensors and actuators and is typically programmed in standardised languages such as ladder logic. PLCs are foundational building blocks of industrial automation and supervisory control systems.",
-  "domain":"robotics",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:industrial-automation","label":"IndustrialAutomation"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:sensor","label":"Sensor"},
-      {"@id":"urn:ngm:class:actuator","label":"Actuator"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:programmable-logic-controller",
+  "@type": "Class",
+  "label": "Programmable Logic Controller",
+  "definition": "A programmable logic controller (PLC) is a ruggedised industrial computer designed to control machinery and processes by repeatedly scanning inputs, executing a stored control program, and updating outputs in real time. Built to withstand harsh factory environments, it interfaces with sensors and actuators and is typically programmed in standardised languages such as ladder logic. PLCs are foundational building blocks of industrial automation and supervisory control systems.",
+  "domain": "robotics",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
     ],
-    "uses":[{"@id":"urn:ngm:class:sensor","label":"Sensor"}],
-    "requires":[{"@id":"urn:ngm:class:actuator","label":"Actuator"}],
-    "enables":[{"@id":"urn:ngm:class:automation","label":"Automation"}],
-    "supports":[{"@id":"urn:ngm:class:scada","label":"SCADA"}],
-    "dependsOn":[{"@id":"urn:ngm:class:hardware","label":"Hardware"}],
-    "implements":[{"@id":"urn:ngm:class:automation","label":"Automation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:robotics","label":"Robotics"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "controls":[{"@id":"urn:ngm:class:robot","label":"Robot"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:industrial-automation","label":"IndustrialAutomation"},
-      {"@id":"urn:ngm:class:scada","label":"SCADA"},
-      {"@id":"urn:ngm:class:robot","label":"Robot"},
-      {"@id":"urn:ngm:class:automation","label":"Automation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "controls": [
+      {
+        "@id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "@id": "urn:ngm:class:robot",
+        "label": "Robot"
+      },
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -219,46 +214,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:open-standards:4769e69a9cfd",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:89ce50e028d25527833466d993a9498c12986b31b27e1675137b6e9b8112caff"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Standards]]",
-      "resolved": "urn:visionflow:linked:standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Khronos OpenXR]]",
-      "resolved": "urn:visionflow:linked:khronos-open-xr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[glTF]]",
-      "resolved": "urn:visionflow:linked:gl-tf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ONNX Standard]]",
-      "resolved": "urn:visionflow:linked:onnx-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

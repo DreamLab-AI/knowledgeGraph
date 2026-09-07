@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NIST Cybersecurity Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

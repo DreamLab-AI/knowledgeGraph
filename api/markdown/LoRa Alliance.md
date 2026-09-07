@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LoRa Alliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The LoRa Alliance is an open, non-profit association that defines and certifies the LoRaWAN standard for low-power wide-area networking. It maintains the LoRaWAN specification, regional parameters, and a device-certification programme to ensure interoperability across vendors and operators. The alliance governs the ecosystem enabling long-range, low-power IoT connectivity.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:lo-ra-wan", "label": "LoRaWAN"}, {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:lo-ra-wan",
+        "label": "LoRaWAN"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Thread Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,4 +183,3 @@ public: true
   - OpenThread, the open-source Thread implementation maintained by Google and contributed to the Thread Group, is the reference stack integrated into Nordic Semiconductor, Silicon Labs, NXP, and TI system-on-chip platforms. Thread Border Routers are available as standalone devices (OTBR on Raspberry Pi) and are embedded in Apple HomePod mini, Apple TV 4K, Google Nest Hub (2nd gen), and Amazon Echo (4th gen), providing ubiquitous border routing infrastructure in consumer smart-home environments.
 
   - By 2024–2025, Thread's adoption has accelerated significantly due to Matter's selection of Thread as the mandatory radio for battery-powered Matter devices. Apple, Google, Amazon, and Samsung all ship Thread border routers in mainstream products. Thread 1.4 introduced Extended Pan ID and other improvements. The ecosystem of Thread-certified chips from Nordic, Espressif (ESP-H2), and Silicon Labs is expanding, and Thread is increasingly deployed in commercial building automation, industrial IoT, and healthcare asset tracking alongside its consumer smart-home origins.
-

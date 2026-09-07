@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tool Definition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,52 @@ public: true
   "definition": "A Tool Definition is a structured specification that describes a capability that an AI language model or agent can invoke at runtime, including the tool's name, a natural language description of its purpose, and a formal schema defining its input parameters and expected output format. Tool definitions are the primary mechanism through which AI systems access external functionality, enabling them to call APIs, query databases, execute code, retrieve documents, or perform actions in the world beyond text generation. The format of tool definitions is standardised by providers such as Anthropic, OpenAI, and Google, typically using JSON Schema to describe parameters, and the quality of a tool definition's description and schema directly determines how reliably an AI model selects and invokes it.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:tool-schema", "label": "Tool Schema"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:tool-schema",
+      "label": "Tool Schema"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:schema-definition", "label": "Schema Definition"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
+      {
+        "@id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ]
   },
   "quality": 0.8

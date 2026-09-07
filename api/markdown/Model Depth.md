@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Depth
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,19 +67,40 @@ public: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:model-width", "label": "Model Width"}
+      {
+        "@id": "urn:ngm:class:model-width",
+        "label": "Model Width"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:residual-connection", "label": "Residual Connection"},
-      {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"}
+      {
+        "@id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:parameter-count", "label": "Parameter Count"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ]
   },
   "provenance": {
@@ -94,52 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-depth:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:04960caa9b6c3a0a33a394194af45052db3e7fad3c3d890f5b223d1e025124a9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Technical Overview]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin-technical-overview",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BTC Layer 3]]",
-      "resolved": "urn:visionflow:owl:class:btc-layer-3",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[California AI bill]]",
-      "resolved": "urn:visionflow:owl:class:california-ai-bill",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning and Similar L2]]",
-      "resolved": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.

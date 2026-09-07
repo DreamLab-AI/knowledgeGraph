@@ -1,8 +1,3 @@
----
-public: true
----
-
-# public goods funding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

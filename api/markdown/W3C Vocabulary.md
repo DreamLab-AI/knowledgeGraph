@@ -1,8 +1,3 @@
----
-public: true
----
-
-# W3C Vocabulary
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:w-3-c-vocabulary:5522ffeb359c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ff1f3b131a862be6c2eaf67770a9ab17290040ca134d9d0589544c48af4f56d2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[W3C]]",
-      "resolved": "urn:visionflow:linked:w-3-c",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A vocabulary published by the World Wide Web Consortium (W3C). The specific vocabulary is not determined from the identifier alone.

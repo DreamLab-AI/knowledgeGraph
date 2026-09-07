@@ -1,37 +1,122 @@
----
-public: true
----
-
-# Unit Testing
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:unit-testing", "@type":"Page", "title":"Unit Testing", "vc:slug":"unit-testing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:unit-testing",
+  "@type": "Page",
+  "title": "Unit Testing",
+  "vc:slug": "unit-testing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:unit-testing",
-  "@type":"Class",
-  "label":"Unit Testing",
-  "definition":"Unit testing is a software testing practice in which individual units of source code — typically functions, methods, or classes — are exercised in isolation to verify that each behaves as specified. Tests are written as small, deterministic, automated checks that assert expected outputs for given inputs and run quickly as part of the development loop. The practice underpins refactoring confidence, regression protection, and continuous integration pipelines.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:software-testing","label":"Software Testing"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:software-testing","label":"Software Testing"},{"@id":"urn:ngm:class:quality-assurance","label":"Quality Assurance"}],
-    "hasPart":[{"@id":"urn:ngm:class:test-automation","label":"Test Automation"},{"@id":"urn:ngm:class:regression-testing","label":"Regression Testing"}],
-    "supports":[{"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"},{"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"},{"@id":"urn:ngm:class:software-development","label":"Software Development"}],
-    "enables":[{"@id":"urn:ngm:class:test-driven-development","label":"Test-Driven Development"}],
-    "requires":[{"@id":"urn:ngm:class:test-automation","label":"Test Automation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:integration-testing","label":"Integration Testing"},{"@id":"urn:ngm:class:regression-testing","label":"Regression Testing"}],
-    "uses":[{"@id":"urn:ngm:class:test-automation","label":"Test Automation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:continuous-delivery","label":"Continuous Delivery"},{"@id":"urn:ngm:class:verification","label":"Verification"},{"@id":"urn:ngm:class:software-quality","label":"Software Quality"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:unit-testing",
+  "@type": "Class",
+  "label": "Unit Testing",
+  "definition": "Unit testing is a software testing practice in which individual units of source code — typically functions, methods, or classes — are exercised in isolation to verify that each behaves as specified. Tests are written as small, deterministic, automated checks that assert expected outputs for given inputs and run quickly as part of the development loop. The practice underpins refactoring confidence, regression protection, and continuous integration pipelines.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-testing",
+      "label": "Software Testing"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      },
+      {
+        "@id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:integration-testing",
+        "label": "Integration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:verification",
+        "label": "Verification"
+      },
+      {
+        "@id": "urn:ngm:class:software-quality",
+        "label": "Software Quality"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy Controls
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "Privacy Controls are the technical, organisational, and procedural mechanisms that organisations deploy to protect individuals' personal data from unauthorised access, misuse, or disclosure, and to provide data subjects with meaningful agency over how their information is collected and used. They encompass access restrictions, anonymisation and pseudonymisation techniques, consent management interfaces, data minimisation policies, encryption, and privacy impact assessment processes. Effective privacy controls implement privacy by design principles, embedding data protection into systems from inception rather than applying it retrospectively. Regulatory frameworks such as GDPR mandate specific control categories and assign accountability for their implementation.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:privacy", "label": "Privacy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:privacy",
+      "label": "Privacy"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
-      {"@id": "urn:ngm:class:privacy-architecture", "label": "Privacy Architecture"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-architecture",
+        "label": "Privacy Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ]
   },
   "quality": 0.8

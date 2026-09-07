@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Agent Interaction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "multi-agent-interaction",
   "title": "Multi-Agent Interaction",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Compute Cost", "Group Chat Dynamics"],
+  "vc:outboundWikilinks": [
+    "Compute Cost",
+    "Group Chat Dynamics"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:world-model", "label": "World Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:world-model",
+      "label": "World Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:world-model", "label": "World Model"}, {"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"}, {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      },
+      {
+        "@id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

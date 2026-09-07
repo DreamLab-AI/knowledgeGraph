@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralised Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,57 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:decentralised-governance:7baca5f28dce",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:785125842be614163393fe719d636886ea065960cfa175265546871128791063"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transparency]]",
-      "resolved": "urn:visionflow:linked:transparency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Autonomous Organisation]]",
-      "resolved": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralisation]]",
-      "resolved": "urn:visionflow:linked:decentralisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO]]",
-      "resolved": "urn:visionflow:linked:dao",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Framework]]",
-      "resolved": "urn:visionflow:linked:governance-framework",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A model of collective decision-making in which authority is distributed across participants rather than concentrated in a central body, often implemented through on-chain voting and smart contracts.

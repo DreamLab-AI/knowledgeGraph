@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reasoning Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,11 +21,22 @@ public: true
   "vc:plainGloss": "AI models that deliberately work through a problem step by step before answering, spending extra time and effort to get hard questions right. They are slower and cost more per answer, but far more reliable on things like maths, coding, and multi-step logic.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:frontier-models", "label": "Frontier Models"},
-      {"@id": "urn:ngm:class:prime-intellect", "label": "Prime Intellect"}
+      {
+        "@id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "@id": "urn:ngm:class:prime-intellect",
+        "label": "Prime Intellect"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Directed Acyclic Graph Execution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Directed acyclic graph (DAG) execution is a computation model in which tasks are nodes connected by directed dependency edges that contain no cycles, so the graph defines a partial order of operations. An execution engine performs a topological sort and runs nodes as soon as their inputs are ready, enabling parallelism, caching of unchanged subgraphs, and deterministic recomputation. It is the scheduling backbone of workflow engines and node-based authoring tools.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"},
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client", "label": "ComfyUI Client"}
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client",
+        "label": "ComfyUI Client"
+      }
     ]
   },
   "quality": 0.72

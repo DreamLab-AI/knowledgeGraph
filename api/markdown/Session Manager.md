@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Session Manager
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,62 @@ public: true
   "definition": "A Session Manager is a software component responsible for creating, maintaining, tracking, and terminating user or application sessions within a computing system, ensuring that stateful context is preserved across multiple interactions or network requests. It issues session tokens or identifiers, enforces timeout and expiry policies, replicates session state for high-availability scenarios, and integrates with authentication services to verify that sessions remain bound to authenticated principals. Session managers are critical security components: misconfigurations can lead to session fixation, hijacking, or replay attacks. In distributed architectures they must handle session affinity, cross-node replication, and graceful failover without exposing stale state.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:middleware", "label": "Middleware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:middleware",
+      "label": "Middleware"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:authentication-service", "label": "Authentication Service"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:state-management", "label": "State Management"},
-      {"@id": "urn:ngm:class:web-socket-protocol", "label": "WebSocket Protocol"}
+      {
+        "@id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:data-persistence", "label": "Data Persistence"},
-      {"@id": "urn:ngm:class:middleware-layer", "label": "Middleware Layer"}
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      }
     ]
   },
   "quality": 0.8

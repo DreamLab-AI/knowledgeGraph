@@ -1,38 +1,118 @@
----
-public: true
----
-
-# Caching
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:caching", "@type":"Page", "title":"Caching", "vc:slug":"caching", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:caching",
-  "@type":"Class",
-  "label":"Caching",
-  "definition":"Caching is the technique of storing copies of frequently accessed data or computed results in a faster, closer storage tier so that subsequent requests can be served without repeating the expensive original operation. It trades additional memory or storage for reduced latency and lower load on backend systems, governed by policies for placement, expiry and invalidation. Caches appear at every layer of a system, from CPU registers and operating systems to content delivery networks and application-level stores.",
-  "vc:plainGloss":"Keeping a ready copy of something you have already fetched or worked out, so the next time it is asked for you can hand it over instantly instead of doing the slow work again — like keeping your most-used files on the desk rather than in the archive.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"}],
-    "supports":[{"@id":"urn:ngm:class:scalability","label":"Scalability"},{"@id":"urn:ngm:class:throughput","label":"Throughput"}],
-    "enables":[{"@id":"urn:ngm:class:latency","label":"Latency"}],
-    "uses":[{"@id":"urn:ngm:class:memory-management","label":"Memory Management"},{"@id":"urn:ngm:class:state-management","label":"State Management"}],
-    "hasPart":[{"@id":"urn:ngm:class:content-delivery-network","label":"Content Delivery Network"}],
-    "relatedTo":[{"@id":"urn:ngm:class:edge-computing","label":"Edge Computing"},{"@id":"urn:ngm:class:load-balancing","label":"Load Balancing"},{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"},{"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"}],
-    "dependsOn":[{"@id":"urn:ngm:class:memory-management","label":"Memory Management"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:in-memory-computing","label":"In-Memory Computing"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:content-delivery-network","label":"Content Delivery Network"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:caching",
+  "@type": "Page",
+  "title": "Caching",
+  "vc:slug": "caching",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:caching",
+  "@type": "Class",
+  "label": "Caching",
+  "definition": "Caching is the technique of storing copies of frequently accessed data or computed results in a faster, closer storage tier so that subsequent requests can be served without repeating the expensive original operation. It trades additional memory or storage for reduced latency and lower load on backend systems, governed by policies for placement, expiry and invalidation. Caches appear at every layer of a system, from CPU registers and operating systems to content delivery networks and application-level stores.",
+  "vc:plainGloss": "Keeping a ready copy of something you have already fetched or worked out, so the next time it is asked for you can hand it over instantly instead of doing the slow work again — like keeping your most-used files on the desk rather than in the archive.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:performance-optimization",
+      "label": "Performance Optimization"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "@id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Caching stores copies of frequently used data in a faster tier so repeat requests avoid the original expensive operation. It is a foundational element of [[Performance Optimization]], reducing [[Latency]] and improving [[Throughput]] while supporting [[Scalability]] across [[Distributed Systems]].
 - ### In Plain Terms

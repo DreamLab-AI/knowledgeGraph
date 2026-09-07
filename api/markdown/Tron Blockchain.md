@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Tron Blockchain
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:tron-blockchain", "@type": "Page", "title": "Tron Blockchain", "vc:slug": "tron-blockchain", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:tron-blockchain",
+  "@type": "Page",
+  "title": "Tron Blockchain",
+  "vc:slug": "tron-blockchain",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Bias And Fairness
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

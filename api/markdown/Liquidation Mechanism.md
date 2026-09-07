@@ -1,37 +1,122 @@
----
-public: true
----
-
-# Liquidation Mechanism
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:liquidation-mechanism", "@type":"Page", "title":"Liquidation Mechanism", "vc:slug":"liquidation-mechanism", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:liquidation-mechanism",
+  "@type": "Page",
+  "title": "Liquidation Mechanism",
+  "vc:slug": "liquidation-mechanism",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:liquidation-mechanism",
-  "@type":"Class",
-  "label":"Liquidation Mechanism",
-  "definition":"A liquidation mechanism is the automated process by which a decentralised finance protocol seizes and sells a borrower's collateral once the value of that collateral falls below a defined threshold relative to the outstanding debt. It protects lenders and the protocol from undercollateralised positions by ensuring debt is repaid before collateral becomes insufficient. Liquidations are typically triggered by oracle price updates and executed by liquidators who are incentivised with a discount or bonus on the seized assets.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:decentralised-finance","label":"Decentralised Finance"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:price-oracle","label":"Price Oracle"},{"@id":"urn:ngm:class:over-collateralisation","label":"Over Collateralisation"},{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "enables":[{"@id":"urn:ngm:class:lending-protocol","label":"Lending Protocol"},{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "uses":[{"@id":"urn:ngm:class:oracle","label":"Oracle"},{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "partOf":[{"@id":"urn:ngm:class:lending-protocol","label":"Lending Protocol"}],
-    "dependsOn":[{"@id":"urn:ngm:class:price-oracle","label":"Price Oracle"}],
-    "supports":[{"@id":"urn:ngm:class:stablecoin","label":"Stablecoin"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "implements":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:aave","label":"Aave"},{"@id":"urn:ngm:class:decentralised-exchange","label":"Decentralised Exchange"},{"@id":"urn:ngm:class:interest-rate","label":"Interest Rate"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:over-collateralisation","label":"Over Collateralisation"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:liquidation-mechanism",
+  "@type": "Class",
+  "label": "Liquidation Mechanism",
+  "definition": "A liquidation mechanism is the automated process by which a decentralised finance protocol seizes and sells a borrower's collateral once the value of that collateral falls below a defined threshold relative to the outstanding debt. It protects lenders and the protocol from undercollateralised positions by ensuring debt is repaid before collateral becomes insufficient. Liquidations are typically triggered by oracle price updates and executed by liquidators who are incentivised with a discount or bonus on the seized assets.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:over-collateralisation",
+        "label": "Over Collateralisation"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aave",
+        "label": "Aave"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:over-collateralisation",
+        "label": "Over Collateralisation"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

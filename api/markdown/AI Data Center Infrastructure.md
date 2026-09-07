@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Data Center Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-data-center-infrastructure",
   "title": "AI Data Center Infrastructure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["European Commission AI gigafactories", "GPU Deployment"],
+  "vc:outboundWikilinks": [
+    "European Commission AI gigafactories",
+    "GPU Deployment"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:european-commission", "label": "European Commission"}, {"@id": "urn:ngm:class:model", "label": "Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

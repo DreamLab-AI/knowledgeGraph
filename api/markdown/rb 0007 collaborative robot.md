@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0007 collaborative robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,48 @@ public: true
   "quality": 0.7,
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:rb-0103-collaborative-operation", "label": "rb 0103 collaborative operation"},
-      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"},
-      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"}
+      {
+        "@id": "urn:ngm:class:rb-0103-collaborative-operation",
+        "label": "rb 0103 collaborative operation"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"},
-      {"@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring", "label": "rb 0105 speed and separation monitoring"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "rb 0105 speed and separation monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"},
-      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"}
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
     ]
   },
   "provenance": {
@@ -84,32 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0007-collaborative-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1d5dc84ee93458abbae87d636969132d198aad2206b24ad0f2c1f94e5863be97"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Collaborative Robot** (RB-0007, cobot) is an industrial robot designed for direct physical interaction with humans in a shared workspace, certified under ISO/TS 15066. It implements one or more collaborative operation modes (safety-rated monitored stop, hand guiding, speed-and-separation monitoring, power-and-force limiting) to bound collision forces within biomechanically safe thresholds. Unlike traditional industrial robots, cobots operate without physical guarding when humans are present.

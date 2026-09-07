@@ -1,8 +1,3 @@
----
-public: true
----
-
-# c2pa
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -245,7 +240,7 @@ public: true
   - **Stripping vulnerability** — any actor can remove JUMBF metadata from a JPEG or video container; the credential is lost but the media survives. Soft binding via [[Watermarking]] is the primary mitigation under development.
   - **Selective disclosure** — the current specification does not support zero-knowledge proofs; a signer must disclose their full certificate chain, which can reveal identity in sensitive contexts (whistleblowers, conflict journalists).
   - **Revocation** — if a signing certificate is compromised, the C2PA Trust List must be updated and relying parties must refresh their trust anchors; there is no live OCSP-equivalent in the verifier flow today.
-  - **Ingredient loop attacks** — a malicious actor could construct a false ingredient chain; the specification relies on the CA trust model to prevent this, but the CA vetting process varies in rigour.
+  - **Ingredient loop attacks** — a malicious actor [private] construct a false ingredient chain; the specification relies on the CA trust model to prevent this, but the CA vetting process varies in rigour.
   - **AI training data provenance** — whether C2PA credentials should persist when an image is used as AI training data is an active policy discussion; the `c2pa.ai.training_mining` assertion is a proposed mechanism.
 
 - ### Provenance

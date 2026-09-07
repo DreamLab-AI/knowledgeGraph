@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Privacy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-privacy",
   "title": "AI Privacy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Computer History", "User Acceptance", "Windows Recall"],
+  "vc:outboundWikilinks": [
+    "Computer History",
+    "User Acceptance",
+    "Windows Recall"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}, {"@id": "urn:ngm:class:ambient-observation", "label": "Ambient Observation"}, {"@id": "urn:ngm:class:user-acceptance", "label": "User Acceptance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ambient-observation",
+        "label": "Ambient Observation"
+      },
+      {
+        "@id": "urn:ngm:class:user-acceptance",
+        "label": "User Acceptance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

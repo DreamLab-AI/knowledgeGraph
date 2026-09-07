@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Interoperability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -136,18 +131,42 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"},
-      {"@id": "urn:ngm:class:digital-twin-interop-protocol", "label": "Digital Twin Interop Protocol"},
-      {"@id": "urn:ngm:class:state-synchronisation", "label": "State Synchronization"},
-      {"@id": "urn:ngm:class:portability", "label": "Portability"}
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-interop-protocol",
+        "label": "Digital Twin Interop Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:state-synchronisation",
+        "label": "State Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:portability",
+        "label": "Portability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"},
-      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"}
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:discovery-layer", "label": "Discovery Layer"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:discovery-layer",
+        "label": "Discovery Layer"
+      }
     ]
   },
   "provenance": {
@@ -157,132 +176,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-interoperability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ffa8dd97782644ea48bb53741853976a6f6a470c45cd4f40e00804e586fde101"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NGSI-LD]]",
-      "resolved": "urn:visionflow:linked:ngsi-ld",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SAREF]]",
-      "resolved": "urn:visionflow:linked:saref",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Scene Exchange Protocol (SXP)]]",
-      "resolved": "urn:visionflow:owl:class:3-d-scene-exchange-protocol-sxp",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[API Standard]]",
-      "resolved": "urn:visionflow:owl:class:api-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Avatar Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:avatar-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compatibility Process]]",
-      "resolved": "urn:visionflow:owl:class:compatibility-process",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin Interop Protocol]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin-interop-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin Synchronisation Bus]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin-synchronisation-bus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Discovery Layer]]",
-      "resolved": "urn:visionflow:owl:class:discovery-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[glTF (3D File Format)]]",
-      "resolved": "urn:visionflow:owl:class:gl-tf-3-d-file-format",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability Framework]]",
-      "resolved": "urn:visionflow:owl:class:interoperability-framework",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multiverse]]",
-      "resolved": "urn:visionflow:owl:class:multiverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Persistence]]",
-      "resolved": "urn:visionflow:owl:class:persistence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Platform Layer]]",
-      "resolved": "urn:visionflow:owl:class:platform-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Portability]]",
-      "resolved": "urn:visionflow:owl:class:portability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Service Layer]]",
-      "resolved": "urn:visionflow:owl:class:service-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[State Synchronisation]]",
-      "resolved": "urn:visionflow:owl:class:state-synchronization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Universal Manifest]]",
-      "resolved": "urn:visionflow:owl:class:universal-manifest",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[WebXR API]]",
-      "resolved": "urn:visionflow:owl:class:web-xr-api",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ETSI domain interoperability standards enabling different systems and organisations to work together effectively through technical and semantic data exchange mechanisms, shared vocabularies, and standardised protocols. Interoperability frameworks implement [[NGSI-LD]] and [[SAREF]] (Smart Applications Reference Ontology) enabling connected infrastructures to exchange and interpret data across platforms, with infrastructure quality metrics assessing trustworthiness through completeness, accuracy, bias, integrity, and reliability—particularly critical in AI-driven contexts. Regulatory alignment through EU Data Act Article 35 mandates interoperable specifications and centralised standards repositories, whilst accessibility standards (ETSI ES 204 009) ensure inclusive communication combining voice, real-time text, and sign language video compliance with European Accessibility Act requirements across diverse platforms.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ambient Awareness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,15 +20,24 @@ public: true
   "definition": "Ambient Awareness is the peripheral, low-effort sense of others' presence, activity, and availability that collaborative systems convey through subtle continuous signals rather than explicit notifications. It is realized through presence indicators, status cues, activity streams, and spatial audio in shared digital workspaces. By keeping collaborators loosely informed of each other's context, it supports coordination and a feeling of co-location in distributed teams.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:presence-indicator", "label": "Presence Indicator"}
+      {
+        "@id": "urn:ngm:class:presence-indicator",
+        "label": "Presence Indicator"
+      }
     ]
   },
   "quality": 0.72
 }
 ```
+
 - ### Definition
   - Ambient Awareness is the background sense of colleagues' presence and activity sustained by subtle, continuous cues. It is surfaced concretely through the [[Presence Indicator]] and related status signals in shared workspaces.
 - ### Content

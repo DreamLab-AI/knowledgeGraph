@@ -1,36 +1,104 @@
----
-public: true
----
-
-# Institutional Design
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:institutional-design", "@type":"Page", "title":"Institutional Design", "vc:slug":"institutional-design", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:institutional-design",
+  "@type": "Page",
+  "title": "Institutional Design",
+  "vc:slug": "institutional-design",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:institutional-design",
-  "@type":"Class",
-  "label":"Institutional Design",
-  "definition":"Institutional design is the deliberate construction of the rules, roles, and decision-making procedures that structure how a collective coordinates, allocates authority, and resolves disputes. Drawing on economics, political science, and mechanism design, it shapes incentives so that self-interested actors produce outcomes aligned with shared goals. It applies to states, firms, standards bodies, and on-chain organisations alike, where formal rules and enforcement determine legitimacy and durability.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:institutional-economics","label":"Institutional Economics"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "hasPart":[{"@id":"urn:ngm:class:governance-mechanism","label":"Governance Mechanism"},{"@id":"urn:ngm:class:incentive-alignment","label":"Incentive Alignment"}],
-    "uses":[{"@id":"urn:ngm:class:mechanism-design","label":"Mechanism Design"}],
-    "enables":[{"@id":"urn:ngm:class:dao","label":"Decentralized Autonomous Organization"},{"@id":"urn:ngm:class:decentralized-governance","label":"Decentralized Governance"}],
-    "requires":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "supports":[{"@id":"urn:ngm:class:voting-mechanism","label":"Voting Mechanism"}],
-    "relatedTo":[{"@id":"urn:ngm:class:tokenomics","label":"Tokenomics"},{"@id":"urn:ngm:class:standards-body","label":"Standards Body"},{"@id":"urn:ngm:class:institutional-economics","label":"Institutional Economics"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:strategic-planning","label":"Strategic Planning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:institutional-design",
+  "@type": "Class",
+  "label": "Institutional Design",
+  "definition": "Institutional design is the deliberate construction of the rules, roles, and decision-making procedures that structure how a collective coordinates, allocates authority, and resolves disputes. Drawing on economics, political science, and mechanism design, it shapes incentives so that self-interested actors produce outcomes aligned with shared goals. It applies to states, firms, standards bodies, and on-chain organisations alike, where formal rules and enforcement determine legitimacy and durability.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:institutional-economics",
+      "label": "Institutional Economics"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:governance-mechanism",
+        "label": "Governance Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-economics",
+        "label": "Institutional Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:strategic-planning",
+        "label": "Strategic Planning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

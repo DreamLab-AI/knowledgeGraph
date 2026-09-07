@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:content-layer:8c166ba2c478",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3dde63222a98918d9a25d073125a6eabb7f9984e52931468a300370eb372cd7b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Layer]]",
-      "resolved": "urn:visionflow:linked:data-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Presentation Layer]]",
-      "resolved": "urn:visionflow:linked:presentation-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Content Management]]",
-      "resolved": "urn:visionflow:linked:content-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metadata]]",
-      "resolved": "urn:visionflow:linked:metadata",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Content Layer is the stratum that holds the substantive information and media that a system manages and presents. It sits above the Data Layer that stores it and below the Presentation Layer that renders it. It contains documents, media assets, metadata, and the structures that organise meaning.

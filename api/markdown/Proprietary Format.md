@@ -1,37 +1,110 @@
----
-public: true
----
-
-# Proprietary Format
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:proprietary-format", "@type":"Page", "title":"Proprietary Format", "vc:slug":"proprietary-format", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:proprietary-format",
+  "@type": "Page",
+  "title": "Proprietary Format",
+  "vc:slug": "proprietary-format",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:proprietary-format",
-  "@type":"Class",
-  "label":"Proprietary Format",
-  "definition":"A proprietary format is a data or file format whose specification is controlled by a single vendor and is not openly published or freely implementable. Access to and interpretation of the data typically depend on the vendor's software, which can constrain interoperability, archival longevity, and user control. Proprietary formats stand in contrast to open standards and are a common source of vendor lock-in.",
-  "domain":"standards",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:data-format","label":"Data Format"}],
-  "relations":{
-    "contrastsWith":[{"@id":"urn:ngm:class:open-standard","label":"Open Standard"},{"@id":"urn:ngm:class:open-source","label":"Open Source"}],
-    "partOf":[{"@id":"urn:ngm:class:data-format","label":"Data Format"}],
-    "dependsOn":[{"@id":"urn:ngm:class:proprietary-software","label":"Proprietary Software"}],
-    "enables":[{"@id":"urn:ngm:class:vendor-lock-in","label":"Vendor Lock-In"}],
-    "uses":[{"@id":"urn:ngm:class:encryption","label":"Encryption"}],
-    "requires":[{"@id":"urn:ngm:class:metadata","label":"Metadata"}],
-    "supports":[{"@id":"urn:ngm:class:digital-asset","label":"Digital Asset"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"},{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "relatedTo":[{"@id":"urn:ngm:class:asset-portability","label":"Asset Portability"},{"@id":"urn:ngm:class:interoperability-standard","label":"Interoperability Standard"},{"@id":"urn:ngm:class:web-standard","label":"Web Standard"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:proprietary-format",
+  "@type": "Class",
+  "label": "Proprietary Format",
+  "definition": "A proprietary format is a data or file format whose specification is controlled by a single vendor and is not openly published or freely implementable. Access to and interpretation of the data typically depend on the vendor's software, which can constrain interoperability, archival longevity, and user control. Proprietary formats stand in contrast to open standards and are a common source of vendor lock-in.",
+  "domain": "standards",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-format",
+      "label": "Data Format"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

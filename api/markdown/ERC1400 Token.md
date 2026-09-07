@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ERC1400 Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,29 +59,74 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:erc1400-standard", "label": "ERC1400 Standard"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:erc1400-standard",
+        "label": "ERC1400 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenization"},
-      {"@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering"},
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"}
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:erc20-token", "label": "ERC20 Token"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:erc20-token",
+        "label": "ERC20 Token"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:erc3643-token", "label": "ERC3643 Token"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+      {
+        "@id": "urn:ngm:class:erc3643-token",
+        "label": "ERC3643 Token"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
     ]
   },
   "provenance": {
@@ -96,37 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:erc1400-token:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:505eb7a3f48c73017df8bde9be63820ea6f0efdecb843123f08c7ffeb44aae91"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Security Token]]",
-      "resolved": "urn:visionflow:owl:class:security-token",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   An ERC1400 Token is an Ethereum-based security token standard that extends the ERC20 interface with partitioned token tranches, forced transfer capabilities, controller-initiated operations, and on-chain document management, enabling issuers to represent regulated financial securities on a public or permissioned blockchain. The standard enforces transfer restrictions through a canTransfer validation hook that integrates with off-chain compliance logic — such as AML/KYC whitelists and jurisdictional eligibility rules — returning standardised EIP-1066 status codes rather than simple booleans. ERC1400 is positioned as an umbrella framework composing interoperability sub-standards (ERC1410 for partitions, ERC1594 for transfers, ERC1643 for documents, ERC1644 for controller operations), making it suitable for tokenising equities, bonds, real estate, and fund units subject to securities law.

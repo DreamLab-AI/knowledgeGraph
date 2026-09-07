@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vector-commitment",
   "domain": "security",
-  "definition": "A vector commitment is a cryptographic primitive that produces a short, binding commitment to an ordered sequence of values such that the committer can later open any individual position with a compact proof of its value. It is position-binding, meaning one cannot produce valid openings of two different values at the same index, and it supports succinct membership and update proofs. Vector commitments generalise Merkle trees and underpin verifiable databases, stateless blockchains and proof systems.",
+  "definition": "A vector commitment is a cryptographic primitive that produces a short, binding commitment to an ordered sequence of values such that the committer can later open any individual position with a compact proof of its value. It is position-binding, meaning one cannot produce valid openings of two different values at the same [private], and it supports succinct membership and update proofs. Vector commitments generalise Merkle trees and underpin verifiable databases, stateless blockchains and proof systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:commitment-scheme",

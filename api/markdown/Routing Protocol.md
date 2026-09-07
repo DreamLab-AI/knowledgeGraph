@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Routing Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:routing-protocol:52e2badf72b7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:553f3dbb07a46dcd3308f37cfde56db6c593e3881faf70e14a5211d7b4144eb5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Communication Protocol]]",
-      "resolved": "urn:visionflow:linked:communication-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Architecture]]",
-      "resolved": "urn:visionflow:linked:network-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:linked:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Topology]]",
-      "resolved": "urn:visionflow:linked:network-topology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A protocol that determines how packets are forwarded between nodes in a network by computing and distributing routing information among routers.

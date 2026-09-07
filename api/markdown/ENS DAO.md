@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ENS DAO
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,62 @@ public: true
   "definition": "ENS DAO is the decentralised autonomous organisation that governs the Ethereum Name Service (ENS), the primary naming infrastructure for the Ethereum ecosystem, using the ENS governance token ($ENS) to enable token-weighted voting on protocol upgrades, treasury allocation, and price oracle parameter changes through a Governor Bravo-compatible on-chain governance contract. Established in November 2021 via a retroactive airdrop of 25 million ENS tokens to historical registrants and contributors, the DAO holds a treasury of tens of millions of dollars in ETH and ENS, oversees the root multi-sig controlling the ENS root keys, and appoints stewards for working groups covering Meta-Governance, Ecosystem, Public Goods, and Community operations. ENS DAO represents one of the largest and most active protocol DAOs by voter participation and treasury size.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dao", "label": "DAO"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dao",
+      "label": "DAO"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ens", "label": "ENS"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:ens",
+        "label": "ENS"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:decentralised-decision-making", "label": "Decentralised Decision-Making"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralised Decision-Making"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:compound-governor-bravo", "label": "Compound Governor Bravo"},
-      {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"},
-      {"@id": "urn:ngm:class:timelock-controller", "label": "Timelock Controller"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound Governor Bravo"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "@id": "urn:ngm:class:timelock-controller",
+        "label": "Timelock Controller"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +96,3 @@ public: true
   - The significance of ENS DAO extends beyond naming: it controls infrastructure that underpins identity, payments, and IPFS-hosted websites for millions of Ethereum users. Decisions on registration pricing directly affect access for users in lower-income countries; decisions on name recovery mechanisms balance owner sovereignty against mistake recovery. The DAO's management of a $40M+ treasury through bear and bull market cycles has demonstrated the viability of large on-chain treasuries managed without legal custodians. ENS has also pioneered the concept of the ENSIP (ENS Improvement Proposal) process, adapted from Ethereum's EIP framework, for protocol-level technical governance.
 
   - By 2024-2025, ENS DAO has processed over 300 on-chain proposals and maintains the highest consistent voter participation of any major protocol DAO by percentage of circulating supply. ENS v2 (planned migration to Layer 2) is the largest technical challenge facing the DAO, requiring careful coordination between Name Wrapper contract upgrades, Resolver standardisation, and cross-layer state proofs. The DAO is also navigating the integration of ENS names into social layers (Farcaster usernames, Lens handles) and AI agent identity systems, positioning the naming layer as foundational infrastructure for the agentic internet.
-

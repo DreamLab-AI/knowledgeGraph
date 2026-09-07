@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Agent Risk Disclosure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-agent-risk-disclosure",
   "title": "AI Agent Risk Disclosure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["SEC Filings", "SaaS Disruption"],
+  "vc:outboundWikilinks": [
+    "SEC Filings",
+    "SaaS Disruption"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}, {"@id": "urn:ngm:class:saas-disruption", "label": "SaaS Disruption"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:saas-disruption",
+        "label": "SaaS Disruption"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

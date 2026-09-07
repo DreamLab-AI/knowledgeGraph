@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Production Facility
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,17 +46,38 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"}
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:3-d-content-pipeline", "label": "3D Content Pipeline"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-production-workflow", "label": "Content Production Workflow"},
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+      {
+        "@id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
     ]
   },
   "quality": 0.35,
@@ -72,26 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:production-facility:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9f1e27bad1e3231d11d4524dd7961b72bf34d1966790bdb3cd6e862fe96ed070"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Production Facility is a specialised physical and digital infrastructure for professional metaverse and immersive content creation, encompassing motion-capture stages, volumetric capture rigs, LED volume virtual production sets, GPU render farms, and cloud-based asset management pipelines. It integrates real-time rendering engines with collaborative tools enabling distributed global teams to produce high-fidelity 3D and spatial content.

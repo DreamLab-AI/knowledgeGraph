@@ -1,56 +1,112 @@
----
-public: true
----
-
-# Block Proposal
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:block-proposal", "@type":"Page", "title":"Block Proposal", "vc:slug":"block-proposal", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:block-proposal",
+  "@type": "Page",
+  "title": "Block Proposal",
+  "vc:slug": "block-proposal",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:block-proposal",
-  "@type":"Class",
-  "label":"Block Proposal",
-  "definition":"Block proposal is the step in a blockchain consensus protocol where a designated participant assembles a candidate block of ordered transactions and broadcasts it to the network for validation and agreement. The proposer selects transactions from the mempool, constructs the block header referencing the prior block, and signs the proposal so peers can verify its authorship. In proof-of-stake systems the proposer is chosen by a leader-election procedure for each slot, after which validators attest to the proposed block.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}],
-    "hasPart":[
-      {"@id":"urn:ngm:class:block","label":"Block"},
-      {"@id":"urn:ngm:class:cryptographic-signature","label":"Cryptographic Signature"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:block-proposal",
+  "@type": "Class",
+  "label": "Block Proposal",
+  "definition": "Block proposal is the step in a blockchain consensus protocol where a designated participant assembles a candidate block of ordered transactions and broadcasts it to the network for validation and agreement. The proposer selects transactions from the mempool, constructs the block header referencing the prior block, and signs the proposal so peers can verify its authorship. In proof-of-stake systems the proposer is chosen by a leader-election procedure for each slot, after which validators attest to the proposed block.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:leader-election","label":"Leader Election"},
-      {"@id":"urn:ngm:class:mempool","label":"Mempool"},
-      {"@id":"urn:ngm:class:validator","label":"Validator"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:attestation","label":"Attestation"},
-      {"@id":"urn:ngm:class:finality-gadget","label":"Finality Gadget"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:proof-of-stake","label":"Proof of Stake"},
-      {"@id":"urn:ngm:class:fork-choice-rule","label":"Fork Choice Rule"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:finality-gadget",
+        "label": "Finality Gadget"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:slashing","label":"Slashing"},
-      {"@id":"urn:ngm:class:blockchain","label":"Blockchain"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:attestation","label":"Attestation"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

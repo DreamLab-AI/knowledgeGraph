@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Action Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,45 +7,162 @@ public: true
   "title": "Action Recognition",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:pose-estimation", "vc:label": "Pose Estimation"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:optical-flow", "vc:label": "Optical Flow"},
-    {"@id": "urn:visionflow:linked:video-understanding", "vc:label": "Video Understanding"},
-    {"@id": "urn:visionflow:linked:gesture-recognition", "vc:label": "Gesture Recognition"},
-    {"@id": "urn:visionflow:linked:human-capture-and-recognition", "vc:label": "Human Capture & Recognition"},
-    {"@id": "urn:visionflow:linked:human-robot-interaction", "vc:label": "Human Robot Interaction"},
-    {"@id": "urn:visionflow:linked:sports-analytics", "vc:label": "Sports Analytics"},
-    {"@id": "urn:visionflow:linked:surveillance", "vc:label": "Surveillance"},
-    {"@id": "urn:visionflow:linked:robotics-perception", "vc:label": "Robotics Perception"},
-    {"@id": "urn:visionflow:linked:motion-capture", "vc:label": "Motion Capture"},
-    {"@id": "urn:visionflow:linked:motion-tracking", "vc:label": "Motion Tracking"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:multimodal-learning", "vc:label": "Multimodal Learning"},
-    {"@id": "urn:visionflow:linked:self-supervised-learning", "vc:label": "Self-Supervised Learning"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:benchmark-dataset", "vc:label": "Benchmark Dataset"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:lstm", "vc:label": "LSTM"},
-    {"@id": "urn:visionflow:linked:temporal-action-detection", "vc:label": "Temporal Action Detection"},
-    {"@id": "urn:visionflow:linked:wearable-ai", "vc:label": "Wearable AI"},
-    {"@id": "urn:visionflow:linked:wearable-computing", "vc:label": "Wearable Computing"},
-    {"@id": "urn:visionflow:linked:autonomous-vehicle", "vc:label": "Autonomous Vehicle"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:behavioural-analytics", "vc:label": "Behavioural Analytics"},
-    {"@id": "urn:visionflow:linked:action-space", "vc:label": "Action Space"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:activity-data", "vc:label": "Activity Data"},
-    {"@id": "urn:visionflow:linked:computer-vision-video-analysis", "vc:label": "Computer Vision Video Analysis"},
-    {"@id": "urn:visionflow:linked:neural-networks", "vc:label": "Neural Networks"},
-    {"@id": "urn:visionflow:linked:human-computer-interaction", "vc:label": "Human Computer Interaction"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:iso-iec-22989-2022", "vc:label": "ISO/IEC 22989:2022"},
-    {"@id": "urn:visionflow:owl:class:artificial-intelligence", "vc:label": "ArtificialIntelligenceDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"}
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:pose-estimation",
+      "vc:label": "Pose Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:optical-flow",
+      "vc:label": "Optical Flow"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-understanding",
+      "vc:label": "Video Understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:gesture-recognition",
+      "vc:label": "Gesture Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-capture-and-recognition",
+      "vc:label": "Human Capture & Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-robot-interaction",
+      "vc:label": "Human Robot Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:sports-analytics",
+      "vc:label": "Sports Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:surveillance",
+      "vc:label": "Surveillance"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics-perception",
+      "vc:label": "Robotics Perception"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-capture",
+      "vc:label": "Motion Capture"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-tracking",
+      "vc:label": "Motion Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-learning",
+      "vc:label": "Multimodal Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-supervised-learning",
+      "vc:label": "Self-Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-dataset",
+      "vc:label": "Benchmark Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:lstm",
+      "vc:label": "LSTM"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal-action-detection",
+      "vc:label": "Temporal Action Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:wearable-ai",
+      "vc:label": "Wearable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:wearable-computing",
+      "vc:label": "Wearable Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicle",
+      "vc:label": "Autonomous Vehicle"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:behavioural-analytics",
+      "vc:label": "Behavioural Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:action-space",
+      "vc:label": "Action Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:activity-data",
+      "vc:label": "Activity Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision-video-analysis",
+      "vc:label": "Computer Vision Video Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-22989-2022",
+      "vc:label": "ISO/IEC 22989:2022"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "ArtificialIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -66,35 +178,89 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-    {"@id": "urn:ngm:class:video-understanding", "label": "Video Understanding"}
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "@id": "urn:ngm:class:video-understanding",
+      "label": "Video Understanding"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:benchmark-dataset", "label": "Benchmark Dataset"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:temporal-action-detection", "label": "Temporal Action Detection"},
-      {"@id": "urn:ngm:class:optical-flow", "label": "Optical Flow"}
+      {
+        "@id": "urn:ngm:class:temporal-action-detection",
+        "label": "Temporal Action Detection"
+      },
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sports-analytics", "label": "Sports Analytics"},
-      {"@id": "urn:ngm:class:surveillance", "label": "Surveillance"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:behavioural-analytics", "label": "Behavioural Analytics"}
+      {
+        "@id": "urn:ngm:class:sports-analytics",
+        "label": "Sports Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"}
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gesture-recognition", "label": "Gesture Recognition"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
     ]
   },
   "quality": 0.88,
@@ -102,218 +268,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ontology-augment-v2"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:visionflow:page:action-recognition",
-  "@type": "LinkResolutionsAnnotation",
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pose Estimation]]",
-      "resolved": "urn:visionflow:linked:pose-estimation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Network]]",
-      "resolved": "urn:visionflow:linked:convolutional-neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graph Neural Network]]",
-      "resolved": "urn:visionflow:linked:graph-neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer Architecture]]",
-      "resolved": "urn:visionflow:linked:transformer-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optical Flow]]",
-      "resolved": "urn:visionflow:linked:optical-flow",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Video Understanding]]",
-      "resolved": "urn:visionflow:linked:video-understanding",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gesture Recognition]]",
-      "resolved": "urn:visionflow:linked:gesture-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Capture & Recognition]]",
-      "resolved": "urn:visionflow:linked:human-capture-and-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Robot Interaction]]",
-      "resolved": "urn:visionflow:linked:human-robot-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sports Analytics]]",
-      "resolved": "urn:visionflow:linked:sports-analytics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Surveillance]]",
-      "resolved": "urn:visionflow:linked:surveillance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics Perception]]",
-      "resolved": "urn:visionflow:linked:robotics-perception",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Capture]]",
-      "resolved": "urn:visionflow:linked:motion-capture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Tracking]]",
-      "resolved": "urn:visionflow:linked:motion-tracking",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multimodal AI]]",
-      "resolved": "urn:visionflow:linked:multimodal-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multimodal Learning]]",
-      "resolved": "urn:visionflow:linked:multimodal-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Supervised Learning]]",
-      "resolved": "urn:visionflow:linked:self-supervised-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Foundation Model]]",
-      "resolved": "urn:visionflow:linked:foundation-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Benchmark Dataset]]",
-      "resolved": "urn:visionflow:linked:benchmark-dataset",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Attention Mechanism]]",
-      "resolved": "urn:visionflow:linked:attention-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LSTM]]",
-      "resolved": "urn:visionflow:linked:lstm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Temporal Action Detection]]",
-      "resolved": "urn:visionflow:linked:temporal-action-detection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Wearable AI]]",
-      "resolved": "urn:visionflow:linked:wearable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Wearable Computing]]",
-      "resolved": "urn:visionflow:linked:wearable-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Vehicle]]",
-      "resolved": "urn:visionflow:linked:autonomous-vehicle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:linked:explainable-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Behavioural Analytics]]",
-      "resolved": "urn:visionflow:linked:behavioural-analytics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Action Space]]",
-      "resolved": "urn:visionflow:linked:action-space",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Activity Data]]",
-      "resolved": "urn:visionflow:linked:activity-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision Video Analysis]]",
-      "resolved": "urn:visionflow:linked:computer-vision-video-analysis",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Networks]]",
-      "resolved": "urn:visionflow:linked:neural-networks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Computer Interaction]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act]]",
-      "resolved": "urn:visionflow:linked:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ISO/IEC 22989:2022]]",
-      "resolved": "urn:visionflow:linked:iso-iec-22989-2022",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AlgorithmLayer]]",
-      "resolved": "urn:visionflow:linked:algorithm-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

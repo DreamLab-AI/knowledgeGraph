@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Provenance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -221,52 +216,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:provenance:96d815328a42",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:79bfcc9bc4e2cbac5a1f1fde914c5c38872241087db132b41967aa1914098139"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Audit Trail]]",
-      "resolved": "urn:visionflow:linked:audit-trail",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trust]]",
-      "resolved": "urn:visionflow:linked:trust",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Provenance Tracking]]",
-      "resolved": "urn:visionflow:linked:provenance-tracking",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Supply Chain]]",
-      "resolved": "urn:visionflow:linked:supply-chain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Provenance]]",
-      "resolved": "urn:visionflow:linked:data-provenance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The documented record of the origin, history and chain of custody of data or assets, used to establish authenticity, trust and accountability.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Digital-Infrastructure
----
-
-# Digital Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -213,57 +206,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f78f310c6119597a78e82b4047210b9a1543af5a8962e01e0e910d9318b19f06"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CNCF]]",
-      "resolved": "urn:visionflow:linked:cncf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE]]",
-      "resolved": "urn:visionflow:linked:ieee",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IETF]]",
-      "resolved": "urn:visionflow:linked:ietf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Linux Foundation]]",
-      "resolved": "urn:visionflow:linked:linux-foundation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Open Compute Project]]",
-      "resolved": "urn:visionflow:linked:open-compute-project",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The foundational computing, networking, and storage systems that underpin large-scale digital services and telecollaboration platforms, including hyperscale data centres with GPU clusters, content delivery networks, software-defined networking, and edge computing nodes. Digital infrastructure is increasingly defined by cloud-native patterns—containerisation, orchestration, and infrastructure-as-code—enabling programmatic resource allocation and resilient, globally distributed deployments.

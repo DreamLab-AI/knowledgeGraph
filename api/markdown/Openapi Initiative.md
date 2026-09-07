@@ -1,38 +1,119 @@
----
-public: true
----
-
-# Openapi Initiative
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:openapi-initiative", "@type":"Page", "title":"Openapi Initiative", "vc:slug":"openapi-initiative", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:openapi-initiative",
-  "@type":"Class",
-  "label":"Openapi Initiative",
-  "definition":"The OpenAPI Initiative (OAI) is an open-governance consortium under the Linux Foundation that maintains the OpenAPI Specification, a vendor-neutral, machine-readable format for describing HTTP APIs. It evolved from the donated Swagger specification and provides a standard contract that both humans and tools can use to understand, document, generate and test RESTful interfaces. By standardising API descriptions it promotes interoperability across the API tooling ecosystem, including documentation generators, client SDK generators and gateways. The initiative governs the specification's stewardship and version evolution.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-  "relations":{
-    "standardizedBy":[{"@id":"urn:ngm:class:linux-foundation","label":"Linux Foundation"}],
-    "partOf":[{"@id":"urn:ngm:class:linux-foundation","label":"Linux Foundation"}],
-    "hasPart":[{"@id":"urn:ngm:class:openapi","label":"OpenAPI"}],
-    "enables":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"},{"@id":"urn:ngm:class:api-management","label":"API Management"}],
-    "supports":[{"@id":"urn:ngm:class:rest-api","label":"REST API"},{"@id":"urn:ngm:class:api-design","label":"API Design"}],
-    "uses":[{"@id":"urn:ngm:class:openapi","label":"OpenAPI"}],
-    "requires":[{"@id":"urn:ngm:class:web-standard","label":"Web Standard"}],
-    "implements":[{"@id":"urn:ngm:class:web-standard","label":"Web Standard"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:api-gateway","label":"API Gateway"}],
-    "relatedTo":[{"@id":"urn:ngm:class:api","label":"API"},{"@id":"urn:ngm:class:rest","label":"REST"},{"@id":"urn:ngm:class:api-management","label":"API Management"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:openapi-initiative",
+  "@type": "Page",
+  "title": "Openapi Initiative",
+  "vc:slug": "openapi-initiative",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:openapi-initiative",
+  "@type": "Class",
+  "label": "Openapi Initiative",
+  "definition": "The OpenAPI Initiative (OAI) is an open-governance consortium under the Linux Foundation that maintains the OpenAPI Specification, a vendor-neutral, machine-readable format for describing HTTP APIs. It evolved from the donated Swagger specification and provides a standard contract that both humans and tools can use to understand, document, generate and test RESTful interfaces. By standardising API descriptions it promotes interoperability across the API tooling ecosystem, including documentation generators, client SDK generators and gateways. The initiative governs the specification's stewardship and version evolution.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "@id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - The OpenAPI Initiative is an open-governance consortium under the [[Linux Foundation]] that stewards the [[OpenAPI]] Specification, a machine-readable contract for describing HTTP APIs. It advances [[Standards]], [[Interoperability]] and [[API Management]] across the [[REST API]] ecosystem.
 - ### Overview

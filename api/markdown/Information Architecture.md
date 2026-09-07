@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Information Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,31 +175,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:information-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d0de59a92558ad435f0daa40b9ac0eafc6de51cece96c347c228845a9ea816e5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Information Architecture (IA) is the discipline of structuring, organising, labelling, and navigating shared information environments so that users and systems can find, understand, and act on content efficiently. It draws on [[Ontology]], [[Controlled Vocabulary]], [[Taxonomy]], [[Metadata Standard]], and [[Faceted Classification]] to produce coherent navigation schemas and retrieval systems. IA bridges human cognitive models with machine-interpretable structures, enabling [[Semantic Interoperability]] across heterogeneous platforms and serving as a foundational layer for [[Knowledge Graph]] construction and [[User Experience Design]].
 
@@ -225,8 +195,8 @@ public: true
     - Sequential and matrix schemes for task-oriented and comparison contexts
   - **Labelling Systems**
     - [[Controlled Vocabulary]] — authoritative term lists preventing synonym scatter and homonym ambiguity
-    - Synonym rings and equivalency mappings connecting user language to preferred index terms
-    - Consistent application of terminology across navigation, headings, metadata, and search index
+    - Synonym rings and equivalency mappings connecting user language to preferred [private] terms
+    - Consistent application of terminology across navigation, headings, metadata, and search [private]
   - **Navigation Systems**
     - Global navigation — persistent site-wide structural entry points
     - Local navigation — context-sensitive subsystem navigation

@@ -8,49 +8,178 @@
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    { "@id": "urn:ngm:class:ai-governance", "vc:label": "AI Governance" },
-    { "@id": "urn:ngm:class:ai-governance-and-ethics", "vc:label": "AI Governance and Ethics" },
-    { "@id": "urn:ngm:class:ai-safety", "vc:label": "AI Safety" },
-    { "@id": "urn:ngm:class:fairness", "vc:label": "Fairness" },
-    { "@id": "urn:ngm:class:transparency", "vc:label": "Transparency" },
-    { "@id": "urn:ngm:class:accountability", "vc:label": "Accountability" },
-    { "@id": "urn:ngm:class:ai-governance-framework", "vc:label": "AI Governance Framework" },
-    { "@id": "urn:ngm:class:ai-alignment", "vc:label": "AI Alignment" },
-    { "@id": "urn:ngm:class:responsible-ai", "vc:label": "Responsible AI" },
-    { "@id": "urn:ngm:class:trustworthy-ai", "vc:label": "Trustworthy AI" },
-    { "@id": "urn:ngm:class:ai-ethics", "vc:label": "AI Ethics" },
-    { "@id": "urn:ngm:class:oecd-ai-principles", "vc:label": "OECD AI Principles" },
-    { "@id": "urn:ngm:class:eu-ai-act", "vc:label": "EU AI Act" },
-    { "@id": "urn:ngm:class:nist-ai-rmf", "vc:label": "NIST AI RMF" },
-    { "@id": "urn:ngm:class:iso-iec-42001", "vc:label": "ISO IEC 42001" },
-    { "@id": "urn:ngm:class:human-oversight", "vc:label": "Human Oversight" },
-    { "@id": "urn:ngm:class:explainable-ai", "vc:label": "Explainable AI" },
-    { "@id": "urn:ngm:class:risk-management", "vc:label": "Risk Management" },
-    { "@id": "urn:ngm:class:responsible-ai-principles", "vc:label": "Responsible AI Principles" },
-    { "@id": "urn:ngm:class:value-alignment", "vc:label": "Value Alignment" },
-    { "@id": "urn:ngm:class:contestability", "vc:label": "Contestability" },
-    { "@id": "urn:ngm:class:robustness", "vc:label": "Robustness" },
-    { "@id": "urn:ngm:class:privacy", "vc:label": "Privacy" },
-    { "@id": "urn:ngm:class:ai-regulation", "vc:label": "AI Regulation" },
-    { "@id": "urn:ngm:class:national-ai-strategy", "vc:label": "National AI Strategy" },
-    { "@id": "urn:ngm:class:ai-impact-assessment", "vc:label": "AI Impact Assessment" },
-    { "@id": "urn:ngm:class:human-in-the-loop", "vc:label": "Human-in-the-Loop" },
-    { "@id": "urn:ngm:class:corrigibility", "vc:label": "Corrigibility" },
-    { "@id": "urn:ngm:class:model-evaluation", "vc:label": "Model Evaluation" },
-    { "@id": "urn:ngm:class:interpretability", "vc:label": "Interpretability" },
-    { "@id": "urn:ngm:class:ai-risk-assessment", "vc:label": "AI Risk Assessment" },
-    { "@id": "urn:ngm:class:large-language-models", "vc:label": "Large Language Models" },
-    { "@id": "urn:ngm:class:bletchley-declaration", "vc:label": "Bletchley Declaration" },
-    { "@id": "urn:ngm:class:g7-hiroshima-ai-process", "vc:label": "G7 Hiroshima AI Process" },
-    { "@id": "urn:ngm:class:agentic-ai", "vc:label": "Agentic AI" },
-    { "@id": "urn:ngm:class:algorithmic-bias", "vc:label": "Algorithmic Bias" },
-    { "@id": "urn:ngm:class:data-governance", "vc:label": "Data Governance" },
-    { "@id": "urn:ngm:class:societal-impact", "vc:label": "Societal Impact" },
-    { "@id": "urn:ngm:class:red-teaming", "vc:label": "Red Teaming" },
-    { "@id": "urn:ngm:class:constitutional-ai", "vc:label": "Constitutional AI" },
-    { "@id": "urn:ngm:class:inclusive-growth", "vc:label": "Inclusive Growth" },
-    { "@id": "urn:ngm:class:digital-rights", "vc:label": "Digital Rights" },
-    { "@id": "urn:ngm:class:regulatory-compliance", "vc:label": "Regulatory Compliance" }
+    {
+      "@id": "urn:ngm:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "vc:label": "AI Governance and Ethics"
+    },
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:ngm:class:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:ngm:class:transparency",
+      "vc:label": "Transparency"
+    },
+    {
+      "@id": "urn:ngm:class:accountability",
+      "vc:label": "Accountability"
+    },
+    {
+      "@id": "urn:ngm:class:ai-governance-framework",
+      "vc:label": "AI Governance Framework"
+    },
+    {
+      "@id": "urn:ngm:class:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:ngm:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:ngm:class:trustworthy-ai",
+      "vc:label": "Trustworthy AI"
+    },
+    {
+      "@id": "urn:ngm:class:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:ngm:class:oecd-ai-principles",
+      "vc:label": "OECD AI Principles"
+    },
+    {
+      "@id": "urn:ngm:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:ngm:class:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:ngm:class:iso-iec-42001",
+      "vc:label": "ISO IEC 42001"
+    },
+    {
+      "@id": "urn:ngm:class:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:ngm:class:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:ngm:class:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:ngm:class:responsible-ai-principles",
+      "vc:label": "Responsible AI Principles"
+    },
+    {
+      "@id": "urn:ngm:class:value-alignment",
+      "vc:label": "Value Alignment"
+    },
+    {
+      "@id": "urn:ngm:class:contestability",
+      "vc:label": "Contestability"
+    },
+    {
+      "@id": "urn:ngm:class:robustness",
+      "vc:label": "Robustness"
+    },
+    {
+      "@id": "urn:ngm:class:privacy",
+      "vc:label": "Privacy"
+    },
+    {
+      "@id": "urn:ngm:class:ai-regulation",
+      "vc:label": "AI Regulation"
+    },
+    {
+      "@id": "urn:ngm:class:national-ai-strategy",
+      "vc:label": "National AI Strategy"
+    },
+    {
+      "@id": "urn:ngm:class:ai-impact-assessment",
+      "vc:label": "AI Impact Assessment"
+    },
+    {
+      "@id": "urn:ngm:class:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:ngm:class:corrigibility",
+      "vc:label": "Corrigibility"
+    },
+    {
+      "@id": "urn:ngm:class:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:interpretability",
+      "vc:label": "Interpretability"
+    },
+    {
+      "@id": "urn:ngm:class:ai-risk-assessment",
+      "vc:label": "AI Risk Assessment"
+    },
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:ngm:class:bletchley-declaration",
+      "vc:label": "Bletchley Declaration"
+    },
+    {
+      "@id": "urn:ngm:class:g7-hiroshima-ai-process",
+      "vc:label": "G7 Hiroshima AI Process"
+    },
+    {
+      "@id": "urn:ngm:class:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:ngm:class:algorithmic-bias",
+      "vc:label": "Algorithmic Bias"
+    },
+    {
+      "@id": "urn:ngm:class:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:ngm:class:societal-impact",
+      "vc:label": "Societal Impact"
+    },
+    {
+      "@id": "urn:ngm:class:red-teaming",
+      "vc:label": "Red Teaming"
+    },
+    {
+      "@id": "urn:ngm:class:constitutional-ai",
+      "vc:label": "Constitutional AI"
+    },
+    {
+      "@id": "urn:ngm:class:inclusive-growth",
+      "vc:label": "Inclusive Growth"
+    },
+    {
+      "@id": "urn:ngm:class:digital-rights",
+      "vc:label": "Digital Rights"
+    },
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    }
   ]
 }
 ```
@@ -73,44 +202,128 @@
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:ai-safety", "label": "AI Safety" },
-      { "@id": "urn:ngm:class:fairness", "label": "Fairness" },
-      { "@id": "urn:ngm:class:transparency", "label": "Transparency" },
-      { "@id": "urn:ngm:class:accountability", "label": "Accountability" },
-      { "@id": "urn:ngm:class:contestability", "label": "Contestability" },
-      { "@id": "urn:ngm:class:robustness", "label": "Robustness" },
-      { "@id": "urn:ngm:class:privacy", "label": "Privacy" },
-      { "@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI" }
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:contestability",
+        "label": "Contestability"
+      },
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework" },
-      { "@id": "urn:ngm:class:accountability", "label": "Accountability" },
-      { "@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI" },
-      { "@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI" },
-      { "@id": "urn:ngm:class:national-ai-strategy", "label": "National AI Strategy" },
-      { "@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation" }
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:national-ai-strategy",
+        "label": "National AI Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment" },
-      { "@id": "urn:ngm:class:risk-management", "label": "Risk Management" },
-      { "@id": "urn:ngm:class:human-oversight", "label": "Human Oversight" },
-      { "@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation" }
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics" },
-      { "@id": "urn:ngm:class:value-alignment", "label": "Value Alignment" },
-      { "@id": "urn:ngm:class:oecd-ai-principles", "label": "OECD AI Principles" }
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment" },
-      { "@id": "urn:ngm:class:responsible-ai-principles", "label": "Responsible AI Principles" },
-      { "@id": "urn:ngm:class:data-governance", "label": "Data Governance" }
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "standardizedBy": [
-      { "@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act" },
-      { "@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF" },
-      { "@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001" },
-      { "@id": "urn:ngm:class:oecd-ai-principles", "label": "OECD AI Principles" }
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
     ]
   },
   "provenance": {
@@ -118,63 +331,6 @@
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-governance-principle:2026-06-20",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ai-governance-principle"
-  },
-  "vc:resolutions": [
-    { "raw": "[[AI Governance]]", "resolved": "urn:ngm:class:ai-governance", "kind": "ResolvedLink" },
-    { "raw": "[[AI Governance and Ethics]]", "resolved": "urn:ngm:class:ai-governance-and-ethics", "kind": "ResolvedLink" },
-    { "raw": "[[AI Safety]]", "resolved": "urn:ngm:class:ai-safety", "kind": "ResolvedLink" },
-    { "raw": "[[Fairness]]", "resolved": "urn:ngm:class:fairness", "kind": "ResolvedLink" },
-    { "raw": "[[Transparency]]", "resolved": "urn:ngm:class:transparency", "kind": "ResolvedLink" },
-    { "raw": "[[Accountability]]", "resolved": "urn:ngm:class:accountability", "kind": "ResolvedLink" },
-    { "raw": "[[AI Governance Framework]]", "resolved": "urn:ngm:class:ai-governance-framework", "kind": "ResolvedLink" },
-    { "raw": "[[AI Alignment]]", "resolved": "urn:ngm:class:ai-alignment", "kind": "ResolvedLink" },
-    { "raw": "[[Responsible AI]]", "resolved": "urn:ngm:class:responsible-ai", "kind": "ResolvedLink" },
-    { "raw": "[[Trustworthy AI]]", "resolved": "urn:ngm:class:trustworthy-ai", "kind": "ResolvedLink" },
-    { "raw": "[[AI Ethics]]", "resolved": "urn:ngm:class:ai-ethics", "kind": "ResolvedLink" },
-    { "raw": "[[OECD AI Principles]]", "resolved": "urn:ngm:class:oecd-ai-principles", "kind": "ResolvedLink" },
-    { "raw": "[[EU AI Act]]", "resolved": "urn:ngm:class:eu-ai-act", "kind": "ResolvedLink" },
-    { "raw": "[[NIST AI RMF]]", "resolved": "urn:ngm:class:nist-ai-rmf", "kind": "ResolvedLink" },
-    { "raw": "[[ISO IEC 42001]]", "resolved": "urn:ngm:class:iso-iec-42001", "kind": "ResolvedLink" },
-    { "raw": "[[Human Oversight]]", "resolved": "urn:ngm:class:human-oversight", "kind": "ResolvedLink" },
-    { "raw": "[[Explainable AI]]", "resolved": "urn:ngm:class:explainable-ai", "kind": "ResolvedLink" },
-    { "raw": "[[Risk Management]]", "resolved": "urn:ngm:class:risk-management", "kind": "ResolvedLink" },
-    { "raw": "[[Responsible AI Principles]]", "resolved": "urn:ngm:class:responsible-ai-principles", "kind": "ResolvedLink" },
-    { "raw": "[[Value Alignment]]", "resolved": "urn:ngm:class:value-alignment", "kind": "ResolvedLink" },
-    { "raw": "[[Contestability]]", "resolved": "urn:ngm:class:contestability", "kind": "StubLink" },
-    { "raw": "[[Robustness]]", "resolved": "urn:ngm:class:robustness", "kind": "ResolvedLink" },
-    { "raw": "[[Privacy]]", "resolved": "urn:ngm:class:privacy", "kind": "ResolvedLink" },
-    { "raw": "[[AI Regulation]]", "resolved": "urn:ngm:class:ai-regulation", "kind": "ResolvedLink" },
-    { "raw": "[[National AI Strategy]]", "resolved": "urn:ngm:class:national-ai-strategy", "kind": "StubLink" },
-    { "raw": "[[AI Impact Assessment]]", "resolved": "urn:ngm:class:ai-impact-assessment", "kind": "StubLink" },
-    { "raw": "[[Human-in-the-Loop]]", "resolved": "urn:ngm:class:human-in-the-loop", "kind": "ResolvedLink" },
-    { "raw": "[[Corrigibility]]", "resolved": "urn:ngm:class:corrigibility", "kind": "ResolvedLink" },
-    { "raw": "[[Model Evaluation]]", "resolved": "urn:ngm:class:model-evaluation", "kind": "ResolvedLink" },
-    { "raw": "[[Interpretability]]", "resolved": "urn:ngm:class:interpretability", "kind": "ResolvedLink" },
-    { "raw": "[[AI Risk Assessment]]", "resolved": "urn:ngm:class:ai-risk-assessment", "kind": "StubLink" },
-    { "raw": "[[Large Language Models]]", "resolved": "urn:ngm:class:large-language-models", "kind": "ResolvedLink" },
-    { "raw": "[[Bletchley Declaration]]", "resolved": "urn:ngm:class:bletchley-declaration", "kind": "StubLink" },
-    { "raw": "[[G7 Hiroshima AI Process]]", "resolved": "urn:ngm:class:g7-hiroshima-ai-process", "kind": "StubLink" },
-    { "raw": "[[Agentic AI]]", "resolved": "urn:ngm:class:agentic-ai", "kind": "ResolvedLink" },
-    { "raw": "[[Algorithmic Bias]]", "resolved": "urn:ngm:class:algorithmic-bias", "kind": "StubLink" },
-    { "raw": "[[Data Governance]]", "resolved": "urn:ngm:class:data-governance", "kind": "StubLink" },
-    { "raw": "[[Red Teaming]]", "resolved": "urn:ngm:class:red-teaming", "kind": "ResolvedLink" },
-    { "raw": "[[Constitutional AI]]", "resolved": "urn:ngm:class:constitutional-ai", "kind": "ResolvedLink" },
-    { "raw": "[[Inclusive Growth]]", "resolved": "urn:ngm:class:inclusive-growth", "kind": "StubLink" },
-    { "raw": "[[Digital Rights]]", "resolved": "urn:ngm:class:digital-rights", "kind": "StubLink" },
-    { "raw": "[[Regulatory Compliance]]", "resolved": "urn:ngm:class:regulatory-compliance", "kind": "ResolvedLink" }
-  ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
-  "prov:generatedAtTime": { "@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime" }
 }
 ```
 
@@ -375,7 +531,7 @@
 
   Implementation divergence is most visible in the contrast between the [[EU AI Act]]'s binding legal framework (risk-tiered requirements with conformity assessment, CE marking, and enforcement through national market surveillance authorities and the EU AI Office for GPAI models) and the UK's sector-based, non-statutory approach (five principles applied through existing sector regulators without new primary legislation, with a potential AI Governance Bill anticipated in 2026–2027). The EU approach offers stronger accountability guarantees and clearer compliance pathways but imposes higher compliance costs; the UK approach offers greater flexibility for innovation-friendly deployment but may create gaps in accountability for AI systems that cross sector boundaries or fall outside established regulatory jurisdictions. The ITU's Annual AI Governance Report 2025 identified the implementation gap — the lag between principle adoption and operational implementation — as the field's central challenge, recommending a shift from "principles to operational tools" as the governance priority for 2026.
 
-  The frontier AI governance agenda has moved beyond general principles to specific capability-threshold frameworks following the [[Bletchley Declaration]]. Anthropic's Responsible Scaling Policy (RSP) defines Artificial Safety Levels (ASL-1 through ASL-4) with specific dangerous capability evaluation thresholds and required safety measures for each level: ASL-3 (triggered when a model could provide serious uplift to those seeking to create weapons of mass destruction or could conduct autonomous cyberattacks at significant scale) requires external safety evaluations and restricted deployment; ASL-4 thresholds, not yet reached as of mid-2026, would require foundational safety breakthroughs before deployment. OpenAI's Preparedness Framework similarly defines safety thresholds across cybersecurity, CBRN risk, model autonomy, and persuasion domains. These proprietary RSP/Preparedness frameworks represent governance instruments that translate [[AI Safety]] principles into operational decision criteria for frontier AI deployment — an important practical advance beyond general principle statements, but limited by their voluntary, non-standardised, and commercially influenced nature.
+  The frontier AI governance agenda has moved beyond general principles to specific capability-threshold frameworks following the [[Bletchley Declaration]]. Anthropic's Responsible Scaling Policy (RSP) defines Artificial Safety Levels (ASL-1 through ASL-4) with specific dangerous capability evaluation thresholds and required safety measures for each level: ASL-3 (triggered when a model [private] provide serious uplift to those seeking to create weapons of mass destruction or [private] conduct autonomous cyberattacks at significant scale) requires external safety evaluations and restricted deployment; ASL-4 thresholds, not yet reached as of mid-2026, would require foundational safety breakthroughs before deployment. OpenAI's Preparedness Framework similarly defines safety thresholds across cybersecurity, CBRN risk, model autonomy, and persuasion domains. These proprietary RSP/Preparedness frameworks represent governance instruments that translate [[AI Safety]] principles into operational decision criteria for frontier AI deployment — an important practical advance beyond general principle statements, but limited by their voluntary, non-standardised, and commercially influenced nature.
 
   [[ISO IEC 42001]] gained significant enterprise adoption in 2025–2026 as the first certifiable AI management system standard, enabling organisations to demonstrate governance principle compliance through third-party audit and certification. Unlike the [[EU AI Act]]'s system-level conformity assessment, [[ISO IEC 42001]] operates at the organisational level, certifying that an organisation's processes, policies, and management systems systematically implement AI governance principles — analogous to ISO 27001 for information security or ISO 9001 for quality management. The combination of ISO 42001 certification (management system assurance) and EU AI Act conformity assessment (system-level technical assurance) is emerging as the standard governance evidence package for organisations deploying high-risk AI in European markets.
 
@@ -413,7 +569,7 @@
   - York Centre for Applied Human Rights: human rights law dimensions of AI governance principles, with particular focus on Article 8 ECHR (private and family life) implications of AI surveillance and profiling.
 
   **Key UK sector-specific governance principle implementations:**
-  - NHS AI Lab AIDE framework: [[AI Safety]], [[Fairness]], and [[Transparency]] principles operationalised for clinical AI; mandatory equity analysis across age, sex, ethnicity, and deprivation index before NHS deployment approval.
+  - NHS AI Lab AIDE framework: [[AI Safety]], [[Fairness]], and [[Transparency]] principles operationalised for clinical AI; mandatory equity analysis across age, sex, ethnicity, and deprivation [private] before NHS deployment approval.
   - Financial Conduct Authority AI and Machine Learning Guidance (2022, updated 2024): [[Accountability]] principles for AI model risk management; [[Explainable AI]] requirements for consumer credit decisions; [[Robustness]] testing requirements for algorithmic trading systems.
   - HMRC Connect AI System: [[Transparency]] and [[Accountability]] principles applied to AI-assisted tax compliance targeting; subject access rights for taxpayers; human review requirement for cases flagged for investigation.
   - Department for Work and Pensions automation: [[Fairness]] and [[Contestability]] principles applied to universal credit fraud detection; mandatory human decision-maker for adverse automated decisions; public transparency reporting on automated decision rates.

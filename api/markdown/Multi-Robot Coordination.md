@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Robot Coordination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Multi-robot coordination is the set of methods that enable multiple robots to act together coherently toward shared or individual goals, covering task allocation, collision avoidance, formation control, and communication. It addresses centralised and decentralised architectures and trades off optimality against scalability and robustness. Applications include warehouse fleets, drone swarms, and cooperative exploration.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:gps", "label": "Gps"},
-      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "Gps"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitcoin Halving
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,26 @@ public: true
   "definition": "The Bitcoin halving is a protocol-enforced event, occurring approximately every 210,000 blocks (roughly four years), at which the block subsidy paid to miners is cut in half. It implements Bitcoin's disinflationary monetary policy, capping total supply at 21 million coins and progressively reducing new issuance until it reaches zero around the year 2140. Halvings have historically preceded major shifts in mining economics and market price, and they are central to Bitcoin's narrative as a scarce, predictably issued digital asset.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mechanism-design",
+      "label": "Mechanism Design"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin Proof-of-Work Protocol"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      }
     ]
   },
   "quality": 0.8

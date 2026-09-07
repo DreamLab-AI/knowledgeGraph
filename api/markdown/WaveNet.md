@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WaveNet
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -158,52 +153,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:wave-net:5cbb49c4f9ce",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3b9f47699743c29fbce0ef27a83b430c4c2dadce6dc8e1fa8d4b4afe24c66ce3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Convolution]]",
-      "resolved": "urn:visionflow:linked:convolution",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autoregressive Model]]",
-      "resolved": "urn:visionflow:linked:autoregressive-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text-to-Speech]]",
-      "resolved": "urn:visionflow:linked:text-to-speech",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:linked:speech-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Network]]",
-      "resolved": "urn:visionflow:linked:convolutional-neural-network",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A deep autoregressive neural network for generating raw audio waveforms one sample at a time, using stacks of dilated causal convolutions.

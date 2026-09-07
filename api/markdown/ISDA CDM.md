@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ISDA CDM
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The ISDA CDM (Common Domain Model) is a standardised, machine-readable data and process model for derivatives and other financial transactions, published by the International Swaps and Derivatives Association. It provides a single, consistent representation of trade events, lifecycle processes, and legal terms so that disparate systems and smart contracts interpret them identically. It is foundational to interoperable enterprise tokenisation and automated post-trade processing on distributed ledgers.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:enterprise-token-standards", "label": "Enterprise Token Standards"},
-      {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
     ]
   },
   "quality": 0.72

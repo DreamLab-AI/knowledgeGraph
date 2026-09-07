@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Acoustic Model
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,46 +8,166 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:ngm:class:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:ngm:class:feature-extraction", "vc:label": "Feature Extraction"},
-    {"@id": "urn:ngm:class:signal-processing", "vc:label": "Signal Processing"},
-    {"@id": "urn:ngm:class:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:ngm:class:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:ngm:class:pattern-recognition", "vc:label": "Pattern Recognition"},
-    {"@id": "urn:ngm:class:automatic-speech-recognition", "vc:label": "Automatic Speech Recognition"},
-    {"@id": "urn:ngm:class:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:ngm:class:speech-processing", "vc:label": "Speech Processing"},
-    {"@id": "urn:ngm:class:language-model", "vc:label": "Language Model"},
-    {"@id": "urn:ngm:class:audio-processing", "vc:label": "Audio Processing"},
-    {"@id": "urn:ngm:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:ngm:class:hidden-markov-model", "vc:label": "Hidden Markov Model"},
-    {"@id": "urn:ngm:class:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:ngm:class:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:ngm:class:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:ngm:class:recurrent-neural-network", "vc:label": "Recurrent Neural Network"},
-    {"@id": "urn:ngm:class:connectionist-temporal-classification", "vc:label": "Connectionist Temporal Classification"},
-    {"@id": "urn:ngm:class:speaker-diarisation", "vc:label": "Speaker Diarisation"},
-    {"@id": "urn:ngm:class:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:ngm:class:self-supervised-learning", "vc:label": "Self-Supervised Learning"},
-    {"@id": "urn:ngm:class:mel-frequency-cepstral-coefficients", "vc:label": "Mel-Frequency Cepstral Coefficients"},
-    {"@id": "urn:ngm:class:sequence-model", "vc:label": "Sequence Model"},
-    {"@id": "urn:ngm:class:model-compression", "vc:label": "Model Compression"},
-    {"@id": "urn:ngm:class:voice-user-interface", "vc:label": "Voice User Interface"},
-    {"@id": "urn:ngm:class:text-to-speech", "vc:label": "Text-to-Speech"},
-    {"@id": "urn:ngm:class:encoder-decoder", "vc:label": "Encoder-Decoder"},
-    {"@id": "urn:ngm:class:end-to-end-learning", "vc:label": "End-to-End Learning"},
-    {"@id": "urn:ngm:class:audio-signal-processing", "vc:label": "Audio Signal Processing"},
-    {"@id": "urn:ngm:class:speaker-adaptation", "vc:label": "Speaker Adaptation"},
-    {"@id": "urn:ngm:class:noise-robustness", "vc:label": "Noise Robustness"},
-    {"@id": "urn:ngm:class:pronunciation-model", "vc:label": "Pronunciation Model"},
-    {"@id": "urn:ngm:class:expectation-maximisation", "vc:label": "Expectation Maximisation"},
-    {"@id": "urn:ngm:class:graphical-model", "vc:label": "Graphical Model"},
-    {"@id": "urn:ngm:class:accessibility-technology", "vc:label": "Accessibility Technology"},
-    {"@id": "urn:ngm:class:multimodal-interaction", "vc:label": "Multimodal Interaction"},
-    {"@id": "urn:ngm:class:representation-learning", "vc:label": "Representation Learning"},
-    {"@id": "urn:ngm:class:data-augmentation", "vc:label": "Data Augmentation"},
-    {"@id": "urn:ngm:class:beam-search", "vc:label": "Beam Search"},
-    {"@id": "urn:ngm:class:quantisation", "vc:label": "Quantisation"}
+    {
+      "@id": "urn:ngm:class:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:ngm:class:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:ngm:class:signal-processing",
+      "vc:label": "Signal Processing"
+    },
+    {
+      "@id": "urn:ngm:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:ngm:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:ngm:class:pattern-recognition",
+      "vc:label": "Pattern Recognition"
+    },
+    {
+      "@id": "urn:ngm:class:automatic-speech-recognition",
+      "vc:label": "Automatic Speech Recognition"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:speech-processing",
+      "vc:label": "Speech Processing"
+    },
+    {
+      "@id": "urn:ngm:class:language-model",
+      "vc:label": "Language Model"
+    },
+    {
+      "@id": "urn:ngm:class:audio-processing",
+      "vc:label": "Audio Processing"
+    },
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:ngm:class:hidden-markov-model",
+      "vc:label": "Hidden Markov Model"
+    },
+    {
+      "@id": "urn:ngm:class:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:ngm:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:ngm:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:ngm:class:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:ngm:class:connectionist-temporal-classification",
+      "vc:label": "Connectionist Temporal Classification"
+    },
+    {
+      "@id": "urn:ngm:class:speaker-diarisation",
+      "vc:label": "Speaker Diarisation"
+    },
+    {
+      "@id": "urn:ngm:class:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:ngm:class:self-supervised-learning",
+      "vc:label": "Self-Supervised Learning"
+    },
+    {
+      "@id": "urn:ngm:class:mel-frequency-cepstral-coefficients",
+      "vc:label": "Mel-Frequency Cepstral Coefficients"
+    },
+    {
+      "@id": "urn:ngm:class:sequence-model",
+      "vc:label": "Sequence Model"
+    },
+    {
+      "@id": "urn:ngm:class:model-compression",
+      "vc:label": "Model Compression"
+    },
+    {
+      "@id": "urn:ngm:class:voice-user-interface",
+      "vc:label": "Voice User Interface"
+    },
+    {
+      "@id": "urn:ngm:class:text-to-speech",
+      "vc:label": "Text-to-Speech"
+    },
+    {
+      "@id": "urn:ngm:class:encoder-decoder",
+      "vc:label": "Encoder-Decoder"
+    },
+    {
+      "@id": "urn:ngm:class:end-to-end-learning",
+      "vc:label": "End-to-End Learning"
+    },
+    {
+      "@id": "urn:ngm:class:audio-signal-processing",
+      "vc:label": "Audio Signal Processing"
+    },
+    {
+      "@id": "urn:ngm:class:speaker-adaptation",
+      "vc:label": "Speaker Adaptation"
+    },
+    {
+      "@id": "urn:ngm:class:noise-robustness",
+      "vc:label": "Noise Robustness"
+    },
+    {
+      "@id": "urn:ngm:class:pronunciation-model",
+      "vc:label": "Pronunciation Model"
+    },
+    {
+      "@id": "urn:ngm:class:expectation-maximisation",
+      "vc:label": "Expectation Maximisation"
+    },
+    {
+      "@id": "urn:ngm:class:graphical-model",
+      "vc:label": "Graphical Model"
+    },
+    {
+      "@id": "urn:ngm:class:accessibility-technology",
+      "vc:label": "Accessibility Technology"
+    },
+    {
+      "@id": "urn:ngm:class:multimodal-interaction",
+      "vc:label": "Multimodal Interaction"
+    },
+    {
+      "@id": "urn:ngm:class:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:ngm:class:data-augmentation",
+      "vc:label": "Data Augmentation"
+    },
+    {
+      "@id": "urn:ngm:class:beam-search",
+      "vc:label": "Beam Search"
+    },
+    {
+      "@id": "urn:ngm:class:quantisation",
+      "vc:label": "Quantisation"
+    }
   ]
 }
 ```
@@ -231,61 +345,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:acoustic-model:enrichment-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:acoustic-model"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Speech Recognition]]", "resolved": "urn:ngm:class:speech-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Feature Extraction]]", "resolved": "urn:ngm:class:feature-extraction", "kind": "ResolvedLink"},
-    {"raw": "[[Signal Processing]]", "resolved": "urn:ngm:class:signal-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:ngm:class:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:ngm:class:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Pattern Recognition]]", "resolved": "urn:ngm:class:pattern-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Automatic Speech Recognition]]", "resolved": "urn:ngm:class:automatic-speech-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:ngm:class:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Language Model]]", "resolved": "urn:ngm:class:language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:ngm:class:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Hidden Markov Model]]", "resolved": "urn:ngm:class:hidden-markov-model", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer]]", "resolved": "urn:ngm:class:transformer", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:ngm:class:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:ngm:class:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Recurrent Neural Network]]", "resolved": "urn:ngm:class:recurrent-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Connectionist Temporal Classification]]", "resolved": "urn:ngm:class:connectionist-temporal-classification", "kind": "ResolvedLink"},
-    {"raw": "[[Self-Supervised Learning]]", "resolved": "urn:ngm:class:self-supervised-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Mel-Frequency Cepstral Coefficients]]", "resolved": "urn:ngm:class:mel-frequency-cepstral-coefficients", "kind": "StubLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:ngm:class:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Speaker Diarisation]]", "resolved": "urn:ngm:class:speaker-diarisation", "kind": "ResolvedLink"},
-    {"raw": "[[End-to-End Learning]]", "resolved": "urn:ngm:class:end-to-end-learning", "kind": "StubLink"},
-    {"raw": "[[Encoder-Decoder]]", "resolved": "urn:ngm:class:encoder-decoder", "kind": "StubLink"},
-    {"raw": "[[Speaker Adaptation]]", "resolved": "urn:ngm:class:speaker-adaptation", "kind": "StubLink"},
-    {"raw": "[[Noise Robustness]]", "resolved": "urn:ngm:class:noise-robustness", "kind": "StubLink"},
-    {"raw": "[[Pronunciation Model]]", "resolved": "urn:ngm:class:pronunciation-model", "kind": "StubLink"},
-    {"raw": "[[Beam Search]]", "resolved": "urn:ngm:class:beam-search", "kind": "StubLink"},
-    {"raw": "[[Quantisation]]", "resolved": "urn:ngm:class:quantisation", "kind": "StubLink"},
-    {"raw": "[[Model Compression]]", "resolved": "urn:ngm:class:model-compression", "kind": "ResolvedLink"},
-    {"raw": "[[Audio Signal Processing]]", "resolved": "urn:ngm:class:audio-signal-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Accessibility Technology]]", "resolved": "urn:ngm:class:accessibility-technology", "kind": "StubLink"},
-    {"raw": "[[Multimodal Interaction]]", "resolved": "urn:ngm:class:multimodal-interaction", "kind": "ResolvedLink"},
-    {"raw": "[[Sequence Model]]", "resolved": "urn:ngm:class:sequence-model", "kind": "ResolvedLink"},
-    {"raw": "[[Representation Learning]]", "resolved": "urn:ngm:class:representation-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Speech]]", "resolved": "urn:ngm:class:text-to-speech", "kind": "ResolvedLink"},
-    {"raw": "[[Data Augmentation]]", "resolved": "urn:ngm:class:data-augmentation", "kind": "ResolvedLink"},
-    {"raw": "[[Graphical Model]]", "resolved": "urn:ngm:class:graphical-model", "kind": "ResolvedLink"},
-    {"raw": "[[Expectation Maximisation]]", "resolved": "urn:ngm:class:expectation-maximisation", "kind": "ResolvedLink"},
-    {"raw": "[[Voice User Interface]]", "resolved": "urn:ngm:class:voice-user-interface", "kind": "ResolvedLink"},
-    {"raw": "[[Audio Processing]]", "resolved": "urn:ngm:class:audio-processing", "kind": "StubLink"},
-    {"raw": "[[Speech Processing]]", "resolved": "urn:ngm:class:speech-processing", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
-}
-```
-
 - ### Definition
   - An Acoustic Model is the central statistical component of a [[Speech Recognition]] system that learns the mapping between continuous acoustic feature sequences extracted from a speech waveform and the discrete phonetic or sub-word units that compose spoken language. Grounded in the disciplines of [[Signal Processing]], [[Pattern Recognition]], and [[Machine Learning]], an acoustic model must generalise across the enormous variability inherent in human speech — spanning speaker identity, dialect and accent, speaking rate, channel characteristics, and ambient noise conditions — while operating within the latency and memory constraints of production deployment. In classical systems from the 1970s through the 2000s, the acoustic model was realised as a bank of [[Hidden Markov Model]] topologies, one per context-dependent phoneme (triphone), each with state-conditional emission distributions modelled as Gaussian Mixture Models trained via [[Expectation Maximisation]]; this GMM-HMM architecture underpinned all major commercial systems including Dragon NaturallySpeaking, IBM ViaVoice, and the first generation of Google Voice Search. The deep learning revolution transformed acoustic modelling beginning in 2009, when Geoffrey Hinton's team demonstrated that replacing GMMs with [[Deep Learning]] feed-forward networks reduced word error rates by over 30% on standard benchmarks. Subsequent generations of acoustic models employed [[Recurrent Neural Network]] architectures — particularly LSTMs and bidirectional RNNs — to capture temporal dependencies spanning hundreds of milliseconds, before [[Convolutional Neural Network]] front-ends were integrated to model local spectro-temporal patterns. The current paradigm, dominant from 2020 onwards, centres on [[Transformer]]-based architectures that leverage [[Attention Mechanism]] to model arbitrary-range dependencies across acoustic frames; when combined with [[Self-Supervised Learning]] pre-training on large unlabelled corpora — as in Wav2Vec 2.0, HuBERT, and WavLM — these models achieve near-human word error rates on standard benchmarks such as LibriSpeech (under 2% WER on the clean test set) with as little as ten minutes of labelled data for fine-tuning. The Conformer architecture (Gulati et al., 2020), which combines convolution modules with multi-head [[Attention Mechanism]] inside a [[Transformer]] encoder, has become the dominant acoustic encoder in production systems deployed by Google, Apple, and Microsoft, achieving 1.9% WER on LibriSpeech test-clean as part of the Conformer-Transducer architecture. End-to-end models such as OpenAI's Whisper — trained on 680,000 hours of weakly supervised multilingual audio — collapse the formerly separate acoustic, [[Pronunciation Model]], and [[Language Model]] components into a single [[Encoder-Decoder]] [[Neural Network]], enabling [[End-to-End Learning]] of the full speech-to-text mapping and simplifying deployment at the cost of interpretability. The acoustic model interacts with the [[Language Model]] at decode time through [[Beam Search]] or lattice re-scoring, balancing acoustic evidence against linguistic priors; this interface is being reimagined in foundation model architectures where large language models are fused with audio encoders via adapters or token-level projections, creating multimodal systems capable of [[Multimodal Interaction]] beyond transcription alone.
 
@@ -407,7 +466,7 @@ public: true
 
     The Transformer encoder (Vaswani et al., 2017), with its multi-head [[Attention Mechanism]] and absence of recurrence, replaced LSTM encoders starting around 2019. Transformers scale more efficiently to GPU clusters and capture longer-range dependencies through global self-attention; the quadratic attention complexity in sequence length is manageable for typical utterance lengths (< 300 frames for most utterances at 10 ms frame shift). The Conformer architecture (Gulati et al., 2020) extended the Transformer by adding convolutional modules inside each Transformer block, addressing the Transformer's weakness in modelling local acoustic patterns (formant trajectories, stop bursts) that benefit from spatially-local inductive biases. The Conformer became the standard acoustic encoder architecture across all major industrial and research ASR systems within two years of publication.
 
-    Parallel to the supervised learning trajectory, [[Self-Supervised Learning]] pre-training emerged as a transformative approach to acoustic modelling in data-scarce conditions. Wav2Vec 2.0 (Baevski et al., 2020) demonstrated that a Transformer encoder pre-trained on 960 hours of unlabelled LibriSpeech audio via a contrastive objective — predicting which of a set of quantised candidates was the true masked audio segment — could be fine-tuned with [[Connectionist Temporal Classification]] on as little as 10 minutes of transcribed speech to achieve 5.2% WER on LibriSpeech test-clean, vastly outperforming supervised models trained on 100 hours. HuBERT (Hsu et al., 2021) replaced the contrastive objective with a masked prediction of offline discrete cluster labels (k-means clusters of MFCC features), achieving similar or better performance through a simpler and more stable training procedure. WavLM (Chen et al., 2021) extended HuBERT with a denoising prediction objective and utterance mixing augmentation, achieving the best results on the SUPERB benchmark across 13 diverse speech tasks — establishing that a single acoustic encoder can serve as a universal speech representation for ASR, speaker verification, emotion recognition, and sound event detection.
+    Parallel to the supervised learning trajectory, [[Self-Supervised Learning]] pre-training emerged as a transformative approach to acoustic modelling in data-scarce conditions. Wav2Vec 2.0 (Baevski et al., 2020) demonstrated that a Transformer encoder pre-trained on 960 hours of unlabelled LibriSpeech audio via a contrastive objective — predicting which of a set of quantised candidates was the true masked audio segment — [private] be fine-tuned with [[Connectionist Temporal Classification]] on as little as 10 minutes of transcribed speech to achieve 5.2% WER on LibriSpeech test-clean, vastly outperforming supervised models trained on 100 hours. HuBERT (Hsu et al., 2021) replaced the contrastive objective with a masked prediction of offline discrete cluster labels (k-means clusters of MFCC features), achieving similar or better performance through a simpler and more stable training procedure. WavLM (Chen et al., 2021) extended HuBERT with a denoising prediction objective and utterance mixing augmentation, achieving the best results on the SUPERB benchmark across 13 diverse speech tasks — establishing that a single acoustic encoder can serve as a universal speech representation for ASR, speaker verification, emotion recognition, and sound event detection.
 
   ## About
     The Acoustic Model sits at the core of any [[Speech Recognition]] pipeline, encoding the fundamental question: given this sequence of audio frames, what phonetic units are most likely to have produced them? The mathematical framing of this question has evolved through three major paradigms over sixty years of research. In the GMM-HMM paradigm, the acoustic model is a set of probability distributions — one per context-dependent phoneme in a pronunciation lexicon — where each HMM state emits observations drawn from a mixture of Gaussians fitted to [[Mel-Frequency Cepstral Coefficients]] vectors. The Baum-Welch algorithm, an instance of [[Expectation Maximisation]], trains these distributions on forced-aligned transcribed audio; the Viterbi algorithm then decodes the most probable state sequence at inference time. The transition probabilities in the [[Hidden Markov Model]] encode the acoustic duration of phonemes, while the emission distributions encode the spectral shape.
@@ -535,7 +594,7 @@ public: true
     Acoustic model deployment intersects with several regulatory and ethical frameworks that shape design choices and acceptable use. In the UK context:
     - **UK Equality Act 2010**: Mandates reasonable adjustments in public services and workplaces for disabled users; voice-controlled interfaces must achieve sufficient accuracy for users with speech differences (dysarthria, stutter, accented speech) to qualify as accessible. The NHS Long Term Plan (2019, updated 2023) identifies speech analytics as a component of digital transformation, requiring that clinical transcription systems meet clinically acceptable accuracy thresholds (typically WER < 5% on medical terminology).
     - **GDPR and UK GDPR**: Audio recordings processed for ASR training constitute biometric data where voice characteristics are used for speaker identification; training on customer call recordings requires explicit consent or a lawful basis under Article 6 and Article 9 (biometric data). UK ICO guidance on AI and data protection (2023) requires data minimisation and retention limits on audio data used for model improvement.
-    - **EU AI Act (2024)**: Classifies biometric categorisation (which may implicitly occur in speaker-attributed transcription systems) as high-risk; ASR systems deployed in education, employment, or essential services may require conformity assessments. Real-time remote biometric identification (which could be enabled by acoustic models with speaker verification components) in public spaces is prohibited except for specific law enforcement purposes under Article 5.
+    - **EU AI Act (2024)**: Classifies biometric categorisation (which may implicitly occur in speaker-attributed transcription systems) as high-risk; ASR systems deployed in education, employment, or essential services may require conformity assessments. Real-time remote biometric identification (which [private] be enabled by acoustic models with speaker verification components) in public spaces is prohibited except for specific law enforcement purposes under Article 5.
     - **Bias and Fairness**: Multiple studies have demonstrated that acoustic models trained predominantly on standard varieties of English systematically produce higher WERs for speakers of African American Vernacular English (AAVE), non-native speakers, older adults, and users with speech impairments — by margins of 3–10% absolute WER. This creates [[Accessibility Technology]] disparities that disproportionately affect already-marginalised groups. The UK's Algorithmic Transparency Recording Standard (2023) and the AI Safety Institute's evaluation frameworks are beginning to require WER breakdowns across demographic groups.
     - **On-Device Processing and Privacy**: The shift to on-device acoustic models (Apple's on-device Siri, Google's on-device dictation) is partly driven by privacy concerns: processing audio locally avoids transmission to cloud servers, eliminating GDPR-relevant data flows. However, on-device models introduce accuracy-privacy trade-offs as compressed models have higher WERs in challenging conditions.
 

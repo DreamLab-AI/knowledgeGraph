@@ -1,8 +1,3 @@
----
-public: true
----
-
-# iProov
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -161,46 +156,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:i-proov:e06b11b611b5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a8d8d259e1c46824f654bae3b118c45547d6802094636a88cdc4f77f2d7ce30b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Facial Recognition]]",
-      "resolved": "urn:visionflow:linked:facial-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification System]]",
-      "resolved": "urn:visionflow:linked:identity-verification-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Onfido]]",
-      "resolved": "urn:visionflow:linked:onfido",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Biometric Authentication]]",
-      "resolved": "urn:visionflow:linked:biometric-authentication",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

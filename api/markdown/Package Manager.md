@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Package Manager
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:package-manager", "@type": "Page", "title": "Package Manager", "vc:slug": "package-manager", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:package-manager",
+  "@type": "Page",
+  "title": "Package Manager",
+  "vc:slug": "package-manager",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -107,7 +110,7 @@ public: true
 - ### Key aspects
   - Dependency resolution computes a consistent set of compatible versions.
   - Lockfiles and content hashes guarantee reproducible installs.
-  - Repositories distribute and index published packages.
+  - Repositories distribute and [private] published packages.
   - Integrity verification mitigates supply-chain tampering.
 - ### Applications
   - Reproducible developer and CI environments.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Credential Portability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Credential portability is the property that lets a holder carry verifiable credentials across providers, platforms, and jurisdictions without re-issuance or vendor lock-in. It relies on open standards such as W3C Verifiable Credentials and decentralised identifiers so that issuers, holders, and verifiers interoperate. It is a foundational capability for user-controlled digital identity and trust frameworks.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}, {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
+    ]
   },
   "quality": 0.72
 }

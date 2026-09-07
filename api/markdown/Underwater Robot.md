@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Underwater Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,16 +51,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"},
-      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"},
-      {"@id": "urn:ngm:class:robotics-platform", "label": "Robotics Platform"}
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      }
     ]
   },
   "provenance": {
@@ -75,32 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:underwater-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7b44fb7e448b545fe47ca64b405a67e86d2bdb854ff2decf21a8efd5bbb51f28"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Underwater Robot is a robotic platform designed to operate in aquatic environments, encompassing Remotely Operated Vehicles (ROVs) tethered for real-time control and Autonomous Underwater Vehicles (AUVs) executing pre-programmed or AI-guided missions. Applications include deep-sea scientific survey, offshore infrastructure inspection, marine conservation, and defence, with platforms rated from hundreds to thousands of metres depth.
@@ -177,7 +164,7 @@ public: true
 
   - British marine research infrastructure increasingly incorporates ROV technology, though systematic documentation of North England contributions remains limited
   - Opportunities for regional development
-  - Manchester and Leeds universities possess strong engineering and robotics programmes; underwater systems research could complement existing marine science initiatives
+  - Manchester and Leeds universities possess strong engineering and robotics programmes; underwater systems research [private] complement existing marine science initiatives
   - Newcastle's proximity to offshore energy sectors (wind, tidal) creates commercial demand for inspection and maintenance robotics
   - Potential for UK-based ROV manufacturers to establish design and testing facilities in North England, leveraging regional engineering expertise
   - The NIOZ model (dedicated Robotics Centre with trained pilots) offers a template for UK research institutions seeking to establish sustainable underwater robotics capabilities

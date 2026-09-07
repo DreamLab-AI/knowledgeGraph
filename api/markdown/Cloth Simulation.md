@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cloth Simulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,56 @@ public: true
   "definition": "Cloth Simulation is the computational modelling of textile deformation and dynamics, representing fabric as a mesh of particles connected by spring constraints (stretch, shear, and bend) or by a continuum-mechanics model, and integrating the equations of motion to produce plausible cloth behaviour under gravity, wind, collision, and user interaction. The particle-spring model, popularised by Provot (1995), remains prevalent in real-time applications; more accurate results for offline rendering use finite-element or position-based dynamics (PBD) methods. Collision detection and response against rigid bodies and self-collision are the principal computational bottlenecks, requiring spatial acceleration structures such as bounding volume hierarchies. Cloth simulation is a sub-discipline of physically based animation used in character clothing, flag animation, curtains, and virtual fashion design within game engines, VFX pipelines, and metaverse avatar systems.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:physics-simulation",
+      "label": "Physics Simulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:soft-body-dynamics", "label": "Soft Body Dynamics"},
-      {"@id": "urn:ngm:class:rigid-body", "label": "Rigid Body"},
-      {"@id": "urn:ngm:class:particle-system", "label": "Particle System"}
+      {
+        "@id": "urn:ngm:class:soft-body-dynamics",
+        "label": "Soft Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body",
+        "label": "Rigid Body"
+      },
+      {
+        "@id": "urn:ngm:class:particle-system",
+        "label": "Particle System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:animation-technique", "label": "Animation Technique"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:animation-technique",
+        "label": "Animation Technique"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:dynamic-character-animation", "label": "Dynamic Character Animation"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"},
-      {"@id": "urn:ngm:class:simulation-software", "label": "Simulation Software"}
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-software",
+        "label": "Simulation Software"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +90,3 @@ public: true
   - Collision handling remains the dominant performance challenge. Self-collision — cloth intersecting itself during billowing or wrinkling — requires all-pairs proximity queries mitigated by spatial hashing or continuous collision detection. Character cloth must also respond to skinned mesh deformation, handled via proxy collision shapes (capsules, spheres) around limbs or via direct GPU skinning feedback. Offline VFX pipelines (Houdini, Marvelous Designer) prioritise accuracy over frame rate and use finer meshes, iterative solvers, and full self-collision for film-quality results.
 
   - In metaverse and virtual-fashion contexts, cloth simulation enables digital garment try-on, avatar personalisation, and procedural textile variation. Real-time cloth quality is increasingly achieved through machine-learning surrogate models that approximate offline simulation results at interactive rates, enabling high-fidelity avatars with dynamic clothing at scale.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Deliberate Demonstration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "deliberate-demonstration",
   "title": "Deliberate Demonstration",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Ambient Observation", "Computer History", "Grok Bot"],
+  "vc:outboundWikilinks": [
+    "Ambient Observation",
+    "Computer History",
+    "Grok Bot"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}, {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}, {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

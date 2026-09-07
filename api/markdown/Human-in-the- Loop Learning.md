@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Human-in-the-Loop Learning
----
-
-# Human-in-the- Loop Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,47 +106,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:human-in-the-loop-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d8b3a9066e1ea12f4fc0d4f50efeeeae4268244f42ba640c545b56935c452cd1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Interactive Machine Learning]]",
-      "resolved": "urn:visionflow:linked:interactive-machine-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Active Learning]]",
-      "resolved": "urn:visionflow:owl:class:active-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Annotation]]",
-      "resolved": "urn:visionflow:owl:class:data-annotation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning from Human Feedback]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Human-in-the-Loop Learning integrates human expertise into the machine learning process through iterative feedback, active learning, and collaborative intelligence. This paradigm combines automated learning with human judgment for data labeling, model validation, error correction, and decision-making. Key techniques include active learning (where models query humans for labels on informative examples), reinforcement learning from human feedback (RLHF), and interactive machine learning. HITL is essential for domains requiring high accuracy, safety-critical applications, and scenarios where ground truth is subjective or requires expert knowledge.

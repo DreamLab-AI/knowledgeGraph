@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Omniverse
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:omniverse:060fe270ca8b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:589115cda5f3dc880ef4e297961b7ed72dac1c3fd9ec11ecc7f018e9244aa2d9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Simulation]]",
-      "resolved": "urn:visionflow:linked:simulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:linked:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA Corporation]]",
-      "resolved": "urn:visionflow:linked:nvidia",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A platform developed by NVIDIA for building and operating three-dimensional simulation and collaboration applications, based on the Universal Scene Description framework. It is used for digital twins and physically accurate simulation.

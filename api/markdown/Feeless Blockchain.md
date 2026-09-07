@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Feeless Blockchain
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:feeless-blockchain", "@type":"Page", "title":"Feeless Blockchain", "vc:slug":"feeless-blockchain", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:feeless-blockchain",
+  "@type": "Page",
+  "title": "Feeless Blockchain",
+  "vc:slug": "feeless-blockchain",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -112,6 +117,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - A feeless blockchain is a distributed ledger that admits transactions without an explicit per-transaction fee. It stands in contrast to [[Gas Fee]] and [[Transaction Fee]] economics and often uses a [[Directed Acyclic Graph]] with lightweight [[Proof of Work]] to deter abuse.
 - ### Overview

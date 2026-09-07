@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Deep Learning Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -175,7 +170,7 @@ public: true
   "definition": "A software library that provides the building blocks for defining, training and deploying deep neural networks, including tensor operations, automatic differentiation and hardware acceleration.",
   "domain": "machine-learning",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:deep-learning",
@@ -358,7 +353,7 @@ public: true
       "label": "Deep Learning Library"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -366,197 +361,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:deep-learning-framework:6048f3b4fe2d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:51a0e2d5fe1182b890eb633a79751ed06a76220016388cf1f5eed5441cac8d67"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Automatic Differentiation]]",
-      "resolved": "urn:visionflow:linked:automatic-differentiation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware Acceleration]]",
-      "resolved": "urn:visionflow:linked:hardware-acceleration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Backpropagation]]",
-      "resolved": "urn:visionflow:linked:backpropagation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[PyTorch]]",
-      "resolved": "urn:visionflow:linked:py-torch",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning Domain]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TensorFlow]]",
-      "resolved": "urn:visionflow:linked:tensorflow",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[JAX]]",
-      "resolved": "urn:visionflow:linked:jax",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computation Graph]]",
-      "resolved": "urn:visionflow:linked:computation-graph",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tensor Operation]]",
-      "resolved": "urn:visionflow:linked:tensor-operation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Gradient Descent]]",
-      "resolved": "urn:visionflow:linked:gradient-descent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stochastic Gradient Descent]]",
-      "resolved": "urn:visionflow:linked:stochastic-gradient-descent",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Network]]",
-      "resolved": "urn:visionflow:linked:convolutional-neural-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:linked:transformer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPU Compute]]",
-      "resolved": "urn:visionflow:linked:gpu-compute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed Training]]",
-      "resolved": "urn:visionflow:linked:distributed-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Inference]]",
-      "resolved": "urn:visionflow:linked:model-inference",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mixed Precision Training]]",
-      "resolved": "urn:visionflow:linked:mixed-precision-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Python]]",
-      "resolved": "urn:visionflow:linked:python",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CUDA]]",
-      "resolved": "urn:visionflow:linked:cuda",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machine Learning]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Recurrent Neural Network]]",
-      "resolved": "urn:visionflow:linked:recurrent-neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Activation Function]]",
-      "resolved": "urn:visionflow:linked:activation-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Loss Function]]",
-      "resolved": "urn:visionflow:linked:loss-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Architecture]]",
-      "resolved": "urn:visionflow:linked:model-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Symbolic AI]]",
-      "resolved": "urn:visionflow:linked:symbolic-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Edge Inference]]",
-      "resolved": "urn:visionflow:linked:edge-inference",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Federated Learning]]",
-      "resolved": "urn:visionflow:linked:federated-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Large Language Model]]",
-      "resolved": "urn:visionflow:linked:large-language-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MLX]]",
-      "resolved": "urn:visionflow:linked:mlx",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:linked:ai-grounded-domain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:linked:computation-and-intelligence-domain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AlgorithmLayer]]",
-      "resolved": "urn:visionflow:linked:algorithm-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A [[Deep Learning]] Framework is a software library or toolkit that provides the foundational abstractions, computational primitives, and tooling required to define, train, evaluate, and deploy [[Deep Learning]] models based on [[Neural Network]] architectures. Such frameworks expose multidimensional array (tensor) operations, [[Automatic Differentiation]] engines for computing gradients of the [[Loss Function]] with respect to all trainable parameters, and built-in [[Hardware Acceleration]] backends targeting [[GPU Compute]], TPUs, and specialised accelerators via interfaces such as [[CUDA]]. They construct and execute [[Computation Graph]] representations of [[Model Architecture]] specifications — either dynamically at runtime (define-by-run, as in [[PyTorch]]) or statically ahead of time (define-and-run, as in early [[TensorFlow]]) — and schedule the forward and backward passes that constitute [[Backpropagation]]-driven training. Higher-level components provided by frameworks include layer primitives (linear, convolutional, recurrent, attention), standardised [[Activation Function]] implementations, a library of optimisers implementing [[Stochastic Gradient Descent]] and adaptive variants (Adam, AdamW, Lion), regularisation utilities, data-loading pipelines, and distributed communication collectives enabling [[Distributed Training]] across multi-GPU and multi-node clusters. At the production boundary, frameworks expose export formats (TorchScript, SavedModel, ONNX, StableHLO) and serve as the upstream supply chain for inference runtimes, enabling [[Model Inference]] and [[Transfer Learning]] workflows. Contemporary frameworks such as [[JAX]] extend the paradigm with composable functional transforms (jit, grad, vmap, pmap) compiled via XLA, offering a functional programming model that separates numerical program specification from hardware execution strategy. Emerging frameworks such as [[MLX]] target Apple Silicon with unified memory models. All major frameworks are primarily accessed through [[Python]] interfaces, cementing Python's role as the lingua franca of modern [[Machine Learning]] research and engineering.
@@ -643,7 +447,7 @@ public: true
   ## About
   Deep learning frameworks constitute the foundational software infrastructure of modern artificial intelligence research and production engineering. At their core, they solve a dual challenge: expressing the mathematical structure of [[Neural Network]] architectures with sufficient abstraction that researchers can iterate rapidly, whilst generating hardware-efficient execution plans that exploit the massive parallelism available in modern [[GPU Compute]] and tensor processing units. The defining technical characteristic of a deep learning framework is its [[Automatic Differentiation]] engine, which tracks operations on tensors through a [[Computation Graph]] and computes exact analytical gradients by applying the chain rule in reverse — the computation known as [[Backpropagation]]. This automated gradient calculation made it practical to train networks with millions of parameters by [[Gradient Descent]], transforming what had been a laborious hand-derivation exercise into a routine engineering operation.
 
-  The field reached a decisive inflection point with the release of Theano (2010, Université de Montréal), which first demonstrated that symbolic differentiation over tensor expressions could be compiled to GPU code. Torch (2002, later reimplemented as [[PyTorch]] in 2016 by Facebook AI Research) introduced the define-by-run dynamic graph paradigm in which the [[Computation Graph]] is constructed on-the-fly as Python code executes, making debugging with standard tools straightforward. Google's [[TensorFlow]] (2015) began with a static define-and-run model emphasising production deployment and compilation optimisation but added eager execution (TF 2.x, 2019) to match PyTorch's interactivity. [[JAX]] (Google Research, 2018) took a fundamentally different approach: rather than a neural network library, JAX is a functional transformation engine for NumPy-compatible code, offering composable transforms — jit for just-in-time compilation via XLA, grad for automatic differentiation, vmap for vectorisation over batches, and pmap for parallelisation across devices — that can be arbitrarily composed. This design makes JAX the preferred substrate for cutting-edge research requiring custom gradient behaviour, large-scale TPU training, and hardware-agnostic numerical experimentation. Apple's [[MLX]] (2023) brought a unified-memory, functional approach to Apple Silicon, reaching performance 2–3× faster than PyTorch MPS on identical hardware for LLM inference by 2025.
+  The field reached a decisive inflection point with the release of Theano (2010, Université de Montréal), which first demonstrated that symbolic differentiation over tensor expressions [private] be compiled to GPU code. Torch (2002, later reimplemented as [[PyTorch]] in 2016 by Facebook AI Research) introduced the define-by-run dynamic graph paradigm in which the [[Computation Graph]] is constructed on-the-fly as Python code executes, making debugging with standard tools straightforward. Google's [[TensorFlow]] (2015) began with a static define-and-run model emphasising production deployment and compilation optimisation but added eager execution (TF 2.x, 2019) to match PyTorch's interactivity. [[JAX]] (Google Research, 2018) took a fundamentally different approach: rather than a neural network library, JAX is a functional transformation engine for NumPy-compatible code, offering composable transforms — jit for just-in-time compilation via XLA, grad for automatic differentiation, vmap for vectorisation over batches, and pmap for parallelisation across devices — that can be arbitrarily composed. This design makes JAX the preferred substrate for cutting-edge research requiring custom gradient behaviour, large-scale TPU training, and hardware-agnostic numerical experimentation. Apple's [[MLX]] (2023) brought a unified-memory, functional approach to Apple Silicon, reaching performance 2–3× faster than PyTorch MPS on identical hardware for LLM inference by 2025.
 
   Frameworks abstract over the full training lifecycle: data loading and augmentation pipelines, weight initialisation strategies, optimiser state management, [[Mixed Precision Training]] using IEEE float16 and bfloat16 formats to reduce memory pressure, gradient clipping, learning-rate schedulers, checkpoint saving, and distributed collective operations (all-reduce, all-gather) enabling [[Distributed Training]] across hundreds of GPUs. The ONNX (Open Neural Network Exchange) interchange format, supported by both [[PyTorch]] and [[TensorFlow]], and Google's StableHLO format allow trained models to be exported from research frameworks and deployed to inference runtimes (TensorRT, ONNX Runtime, OpenVINO, Core ML) optimised for production latency and throughput, including on edge hardware supporting [[Edge Inference]].
 

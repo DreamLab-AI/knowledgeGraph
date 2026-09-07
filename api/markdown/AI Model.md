@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,63 +7,234 @@ public: true
   "title": "AI Model",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:ai-model-architecture", "vc:label": "AI Model Architecture"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:ai-inference", "vc:label": "AI Inference"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:ai-agent", "vc:label": "AI Agent"},
-    {"@id": "urn:visionflow:linked:compute-infrastructure", "vc:label": "Compute Infrastructure"},
-    {"@id": "urn:visionflow:linked:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:linked:model-weights", "vc:label": "Model Weights"},
-    {"@id": "urn:visionflow:linked:model-checkpoint", "vc:label": "Model Checkpoint"},
-    {"@id": "urn:visionflow:linked:learning-algorithm", "vc:label": "Learning Algorithm"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine Tuning"},
-    {"@id": "urn:visionflow:linked:model-quantization", "vc:label": "Model Quantization"},
-    {"@id": "urn:visionflow:linked:rule-based-systems", "vc:label": "Rule-Based System"},
-    {"@id": "urn:visionflow:linked:expert-systems", "vc:label": "Expert System"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:model-deployment", "vc:label": "Model Deployment"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:ai-model-card", "vc:label": "AI Model Card"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:generative-model", "vc:label": "Generative Model"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:model-distillation", "vc:label": "Model Distillation"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:emergent-capabilities", "vc:label": "Emergent Capabilities"},
-    {"@id": "urn:visionflow:linked:rlhf", "vc:label": "RLHF"},
-    {"@id": "urn:visionflow:linked:benchmark-evaluation", "vc:label": "Benchmark Evaluation"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:mixture-of-experts", "vc:label": "Mixture of Experts"},
-    {"@id": "urn:visionflow:linked:self-supervised-learning", "vc:label": "Self-Supervised Learning"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:responsible-ai", "vc:label": "Responsible AI"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:in-context-learning", "vc:label": "In-Context Learning"},
-    {"@id": "urn:visionflow:linked:ai-model-development", "vc:label": "AI Model Development"},
-    {"@id": "urn:visionflow:linked:compute-governance", "vc:label": "Compute Governance"},
-    {"@id": "urn:visionflow:linked:open-source-ai", "vc:label": "Open Source AI"},
-    {"@id": "urn:visionflow:linked:ai-chips", "vc:label": "AI Chips"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:bias-mitigation", "vc:label": "Bias Mitigation"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:narrow-ai", "vc:label": "Narrow AI"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"}
+    {
+      "@id": "urn:visionflow:linked:ai-model-architecture",
+      "vc:label": "AI Model Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-inference",
+      "vc:label": "AI Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent",
+      "vc:label": "AI Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:compute-infrastructure",
+      "vc:label": "Compute Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-weights",
+      "vc:label": "Model Weights"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-checkpoint",
+      "vc:label": "Model Checkpoint"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-algorithm",
+      "vc:label": "Learning Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-quantization",
+      "vc:label": "Model Quantization"
+    },
+    {
+      "@id": "urn:visionflow:linked:rule-based-systems",
+      "vc:label": "Rule-Based System"
+    },
+    {
+      "@id": "urn:visionflow:linked:expert-systems",
+      "vc:label": "Expert System"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-deployment",
+      "vc:label": "Model Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model-card",
+      "vc:label": "AI Model Card"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-distillation",
+      "vc:label": "Model Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergent-capabilities",
+      "vc:label": "Emergent Capabilities"
+    },
+    {
+      "@id": "urn:visionflow:linked:rlhf",
+      "vc:label": "RLHF"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-evaluation",
+      "vc:label": "Benchmark Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:mixture-of-experts",
+      "vc:label": "Mixture of Experts"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-supervised-learning",
+      "vc:label": "Self-Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:in-context-learning",
+      "vc:label": "In-Context Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model-development",
+      "vc:label": "AI Model Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:compute-governance",
+      "vc:label": "Compute Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source-ai",
+      "vc:label": "Open Source AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-chips",
+      "vc:label": "AI Chips"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-mitigation",
+      "vc:label": "Bias Mitigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:narrow-ai",
+      "vc:label": "Narrow AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -236,78 +402,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-model:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:ai-model"},
-  "vc:resolutions": [
-    {"raw": "[[AI Model Architecture]]", "resolved": "urn:visionflow:linked:ai-model-architecture", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Training Data]]", "resolved": "urn:visionflow:linked:training-data", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[AI Inference]]", "resolved": "urn:visionflow:linked:ai-inference", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[AI Agent]]", "resolved": "urn:visionflow:linked:ai-agent", "kind": "ResolvedLink"},
-    {"raw": "[[Compute Infrastructure]]", "resolved": "urn:visionflow:linked:compute-infrastructure", "kind": "ResolvedLink"},
-    {"raw": "[[Model Training]]", "resolved": "urn:visionflow:linked:model-training", "kind": "StubLink"},
-    {"raw": "[[Model Weights]]", "resolved": "urn:visionflow:linked:model-weights", "kind": "StubLink"},
-    {"raw": "[[Model Checkpoint]]", "resolved": "urn:visionflow:linked:model-checkpoint", "kind": "StubLink"},
-    {"raw": "[[Learning Algorithm]]", "resolved": "urn:visionflow:linked:learning-algorithm", "kind": "StubLink"},
-    {"raw": "[[Fine Tuning]]", "resolved": "urn:visionflow:linked:fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Model Quantization]]", "resolved": "urn:visionflow:linked:model-quantization", "kind": "StubLink"},
-    {"raw": "[[Rule-Based System]]", "resolved": "urn:visionflow:linked:rule-based-systems", "kind": "StubLink"},
-    {"raw": "[[Expert System]]", "resolved": "urn:visionflow:linked:expert-systems", "kind": "StubLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[Model Deployment]]", "resolved": "urn:visionflow:linked:model-deployment", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[AI Model Card]]", "resolved": "urn:visionflow:linked:ai-model-card", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Model Evaluation]]", "resolved": "urn:visionflow:linked:model-evaluation", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "ResolvedLink"},
-    {"raw": "[[Model Distillation]]", "resolved": "urn:visionflow:linked:model-distillation", "kind": "StubLink"},
-    {"raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:linked:multimodal-ai", "kind": "ResolvedLink"},
-    {"raw": "[[RLHF]]", "resolved": "urn:visionflow:linked:rlhf", "kind": "ResolvedLink"},
-    {"raw": "[[Benchmark Evaluation]]", "resolved": "urn:visionflow:linked:benchmark-evaluation", "kind": "ResolvedLink"},
-    {"raw": "[[MLOps]]", "resolved": "urn:visionflow:linked:mlops", "kind": "StubLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[Mixture of Experts]]", "resolved": "urn:visionflow:linked:mixture-of-experts", "kind": "StubLink"},
-    {"raw": "[[Self-Supervised Learning]]", "resolved": "urn:visionflow:linked:self-supervised-learning", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[AI Alignment]]", "resolved": "urn:visionflow:linked:ai-alignment", "kind": "ResolvedLink"},
-    {"raw": "[[Responsible AI]]", "resolved": "urn:visionflow:linked:responsible-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Prompt Engineering]]", "resolved": "urn:visionflow:linked:prompt-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "ResolvedLink"},
-    {"raw": "[[Emergent Capabilities]]", "resolved": "urn:visionflow:linked:emergent-capabilities", "kind": "ResolvedLink"},
-    {"raw": "[[Open Source AI]]", "resolved": "urn:visionflow:linked:open-source-ai", "kind": "StubLink"},
-    {"raw": "[[Compute Governance]]", "resolved": "urn:visionflow:linked:compute-governance", "kind": "StubLink"},
-    {"raw": "[[Generative Model]]", "resolved": "urn:visionflow:linked:generative-model", "kind": "StubLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "StubLink"},
-    {"raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Bias Mitigation]]", "resolved": "urn:visionflow:linked:bias-mitigation", "kind": "ResolvedLink"},
-    {"raw": "[[Narrow AI]]", "resolved": "urn:visionflow:linked:narrow-ai", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[AI Model Development]]", "resolved": "urn:visionflow:linked:ai-model-development", "kind": "ResolvedLink"},
-    {"raw": "[[In-Context Learning]]", "resolved": "urn:visionflow:linked:in-context-learning", "kind": "ResolvedLink"},
-    {"raw": "[[AI Chips]]", "resolved": "urn:visionflow:linked:ai-chips", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
-}
-```
-
 - ### Definition
-  - An [[AI Model]] is the primary computational artefact produced by a [[Machine Learning]] training process: a parameterised mathematical function — most commonly a [[Neural Network]] — whose weights encode statistical patterns extracted from [[Training Data]] and which can be evaluated at [[AI Inference]] time on novel inputs to produce outputs such as classifications, predictions, embeddings, or generated content. The model is defined by three constitutive elements: its [[AI Model Architecture]] (the structural template specifying the number and type of layers, [[Attention Mechanism]] configuration, activation functions, and connectivity patterns); its [[Model Weights]] (the billions of floating-point parameters adjusted iteratively during training via [[Gradient Descent]] over a [[Loss Function]]); and its tokenisation or pre-processing configuration, which governs how raw inputs are mapped to the discrete or continuous representation space the function operates over. AI models span a vast spectrum of complexity and capability — from linear models with dozens of parameters and decision trees with bounded depth, to [[Foundation Model]] instances with hundreds of billions of parameters exhibiting [[Emergent Capabilities]] that were not explicitly optimised during training. The paradigm shift from hand-engineered [[Rule-Based System]] and [[Expert System]] approaches to learned, data-driven AI models fundamentally changed how AI capabilities are produced, shared, and deployed: the model became a discrete, portable artefact — a checkpoint file — that could be versioned, distributed (as on the Hugging Face Hub, which surpassed 1.5 million public models by 2025), fine-tuned, quantised, and integrated into downstream systems via standard APIs. The commercial and strategic importance of frontier AI models — GPT-4o, Claude Opus 4.5, Gemini 2.0 Ultra, and Llama 4 Behemoth — derives from their demonstrated [[Emergent Capabilities]]: [[In-Context Learning]], complex multi-step reasoning, tool use, and cross-domain generalisation that emerge from scale rather than explicit programming. [[AI Model Development]] is the engineering discipline spanning data curation through [[Model Deployment]] and ongoing maintenance; the model artefact itself is the central output of that discipline and the entity that [[AI Governance]] and emerging regulatory frameworks such as the [[EU AI Act]] increasingly target as the unit of accountability.
+  - An [[AI Model]] is the primary computational artefact produced by a [[Machine Learning]] training process: a parameterised mathematical function — most commonly a [[Neural Network]] — whose weights encode statistical patterns extracted from [[Training Data]] and which can be evaluated at [[AI Inference]] time on novel inputs to produce outputs such as classifications, predictions, embeddings, or generated content. The model is defined by three constitutive elements: its [[AI Model Architecture]] (the structural template specifying the number and type of layers, [[Attention Mechanism]] configuration, activation functions, and connectivity patterns); its [[Model Weights]] (the billions of floating-point parameters adjusted iteratively during training via [[Gradient Descent]] over a [[Loss Function]]); and its tokenisation or pre-processing configuration, which governs how raw inputs are mapped to the discrete or continuous representation space the function operates over. AI models span a vast spectrum of complexity and capability — from linear models with dozens of parameters and decision trees with bounded depth, to [[Foundation Model]] instances with hundreds of billions of parameters exhibiting [[Emergent Capabilities]] that were not explicitly optimised during training. The paradigm shift from hand-engineered [[Rule-Based System]] and [[Expert System]] approaches to learned, data-driven AI models fundamentally changed how AI capabilities are produced, shared, and deployed: the model became a discrete, portable artefact — a checkpoint file — that [private] be versioned, distributed (as on the Hugging Face Hub, which surpassed 1.5 million public models by 2025), fine-tuned, quantised, and integrated into downstream systems via standard APIs. The commercial and strategic importance of frontier AI models — GPT-4o, Claude Opus 4.5, Gemini 2.0 Ultra, and Llama 4 Behemoth — derives from their demonstrated [[Emergent Capabilities]]: [[In-Context Learning]], complex multi-step reasoning, tool use, and cross-domain generalisation that emerge from scale rather than explicit programming. [[AI Model Development]] is the engineering discipline spanning data curation through [[Model Deployment]] and ongoing maintenance; the model artefact itself is the central output of that discipline and the entity that [[AI Governance]] and emerging regulatory frameworks such as the [[EU AI Act]] increasingly target as the unit of accountability.
 
 - ### Semantic Classification
   - owl-class:: ai:AiModel
@@ -488,9 +584,9 @@ public: true
 
   ## Academic Context
 
-  The modern AI model paradigm has theoretical roots in several converging research traditions spanning seven decades. The multilayer perceptron and the concept of a learnable function approximator emerged from Rosenblatt's perceptron (1957) and Minsky and Papert's influential critique (1969), which temporarily suppressed interest in neural models. The critical algorithmic breakthrough came with Rumelhart, Hinton, and Williams's backpropagation paper (1986), which provided an efficient method for computing gradients through multi-layer networks, enabling the first demonstrations of useful representation learning. LeCun et al.'s convolutional network for handwritten digit recognition (1989, formalised in the 1998 LeNet paper) established that spatial inductive biases in architecture design could dramatically improve learning efficiency for visual data. Hochreiter and Schmidhuber's LSTM (1997) addressed the vanishing gradient problem for sequences, enabling the first generation of capable language and speech models. Probabilistic graphical models (Dempster, Laird, and Rubin's EM algorithm, 1977; Baum-Welch for HMMs; Restricted Boltzmann Machines and Deep Belief Networks, Hinton and Salakhutdinov 2006) provided an alternative generative modelling tradition.
+  The modern AI model paradigm has theoretical roots in several converging research traditions spanning seven decades. The multilayer perceptron and the concept of a learnable function approximator emerged from Rosenblatt's perceptron (1957) and Minsky and Papert's influential critique (1969), which temporarily suppressed interest in neural models. The critical algorithmic breakthrough came with Rumelhart, Hinton, and Williams's backpropagation paper (1986), which provided an efficient method for computing gradients through multi-layer networks, enabling the first demonstrations of useful representation learning. LeCun et al.'s convolutional network for handwritten digit recognition (1989, formalised in the 1998 LeNet paper) established that spatial inductive biases in architecture design [private] dramatically improve learning efficiency for visual data. Hochreiter and Schmidhuber's LSTM (1997) addressed the vanishing gradient problem for sequences, enabling the first generation of capable language and speech models. Probabilistic graphical models (Dempster, Laird, and Rubin's EM algorithm, 1977; Baum-Welch for HMMs; Restricted Boltzmann Machines and Deep Belief Networks, Hinton and Salakhutdinov 2006) provided an alternative generative modelling tradition.
 
-  The deep learning resurgence was catalysed by Krizhevsky, Sutskever, and Hinton's AlexNet (2012), which demonstrated GPU-accelerated deep convolutional networks achieving a decisive 10.9 percentage-point improvement on ImageNet top-5 error over the second-place competitor — a margin that established deep learning as categorically superior to prior feature-engineering-based computer vision approaches. The availability of NVIDIA CUDA (2007) and large labelled datasets (ImageNet, 2009) were equally critical enabling conditions. The generative modelling revolution began with the Generative Adversarial Network (Goodfellow et al., 2014) and the Variational Autoencoder (Kingma and Welling, 2013), establishing adversarial training and variational inference as two distinct paths to learning generative AI models. The transformer breakthrough (Vaswani et al., "Attention Is All You Need", 2017, NeurIPS) introduced scaled dot-product self-attention as the dominant architectural primitive, enabling parallelisable training at scales that RNN-based models could not support. BERT (Devlin et al., 2018) demonstrated bidirectional contextual representations from masked language modelling pre-training, establishing the transfer learning paradigm for NLP; GPT-2 (Radford et al., 2019) demonstrated generative pre-training and few-shot text generation; GPT-3 (Brown et al., 2020) demonstrated in-context learning as a qualitatively new capability of sufficiently large AI models.
+  The deep learning resurgence was catalysed by Krizhevsky, Sutskever, and Hinton's AlexNet (2012), which demonstrated GPU-accelerated deep convolutional networks achieving a decisive 10.9 percentage-point improvement on ImageNet top-5 error over the second-place competitor — a margin that established deep learning as categorically superior to prior feature-engineering-based computer vision approaches. The availability of NVIDIA CUDA (2007) and large labelled datasets (ImageNet, 2009) were equally critical enabling conditions. The generative modelling revolution began with the Generative Adversarial Network (Goodfellow et al., 2014) and the Variational Autoencoder (Kingma and Welling, 2013), establishing adversarial training and variational inference as two distinct paths to learning generative AI models. The transformer breakthrough (Vaswani et al., "Attention Is All You Need", 2017, NeurIPS) introduced scaled dot-product self-attention as the dominant architectural primitive, enabling parallelisable training at scales that RNN-based models [private] not support. BERT (Devlin et al., 2018) demonstrated bidirectional contextual representations from masked language modelling pre-training, establishing the transfer learning paradigm for NLP; GPT-2 (Radford et al., 2019) demonstrated generative pre-training and few-shot text generation; GPT-3 (Brown et al., 2020) demonstrated in-context learning as a qualitatively new capability of sufficiently large AI models.
 
   Scaling laws formalised by Kaplan et al. (2020, "Scaling Laws for Neural Language Models") and revised by Hoffmann et al. (2022, "Training Compute-Optimal Large Language Models", the "Chinchilla" paper) established that model performance follows predictable power-law relationships with compute, data, and parameters, and that prior frontier models were significantly undertrained relative to the compute-optimal point — a finding that prompted a generation of models trained on far more tokens per parameter. The concept of the [[Foundation Model]] as a distinct category was introduced by Bommasani et al. (2021, "On the Opportunities and Risks of Foundation Models", Stanford HAI), which named and characterised the homogenising role large pre-trained models play across AI research and application domains, and also introduced the concept of risk from homogenisation — that dependence on a small number of foundation models concentrates societal vulnerability. Wei et al. (2022, "Emergent Abilities of Large Language Models") formally characterised the phenomenon of [[Emergent Capabilities]]: task-specific abilities that appear abruptly above certain scale thresholds, not present in smaller models, raising questions about predictability and safety evaluation.
 
@@ -506,7 +602,7 @@ public: true
 
   **Reasoning models as a distinct paradigm**: The release of OpenAI o1 (December 2024) established extended chain-of-thought at inference time as a distinct AI model class, qualitatively different from single-pass generation: the model generates internal reasoning traces (sometimes thousands of tokens long) before producing its final answer, trading latency and inference compute for substantially higher accuracy on mathematics, coding, science, and complex multi-step reasoning tasks. By mid-2026, most frontier labs have released reasoning model variants: o3 and o4 (OpenAI), Claude's extended thinking mode, Gemini 2.0 Flash Thinking, DeepSeek-R1 (and its open-source derivative DeepSeek-R1-Distill). The reasoning model paradigm has reopened the inference compute scaling debate: how much quality improvement can be obtained by giving a model more time (and compute) at inference to think?
 
-  **Open-weight competition closing the proprietary gap**: Meta's Llama 4 series (early 2026) with Llama 4 Maverick (17B active / 400B total [[Mixture of Experts]]) achieving GPT-4o-class performance on open weights, and Mistral Large 3 (December 2025, Apache 2.0 licence, 675B total / 41B active MoE, 256K context window, 200+ language support) have significantly narrowed the proprietary-open capability gap. DeepSeek-V3 (December 2024, released open-source) demonstrated that Chinese AI labs could achieve frontier performance at a fraction of US training costs, raising questions about the effectiveness of export controls as a [[Compute Governance]] tool. Qwen 2.5 (Alibaba) and Gemma 3 (Google) add further competition at the open-weight tier. The proliferation of capable open-weight models is driving enterprise AI adoption at lower cost and enabling privacy-preserving local deployment.
+  **Open-weight competition closing the proprietary gap**: Meta's Llama 4 series (early 2026) with Llama 4 Maverick (17B active / 400B total [[Mixture of Experts]]) achieving GPT-4o-class performance on open weights, and Mistral Large 3 (December 2025, Apache 2.0 licence, 675B total / 41B active MoE, 256K context window, 200+ language support) have significantly narrowed the proprietary-open capability gap. DeepSeek-V3 (December 2024, released open-source) demonstrated that Chinese AI labs [private] achieve frontier performance at a fraction of US training costs, raising questions about the effectiveness of export controls as a [[Compute Governance]] tool. Qwen 2.5 (Alibaba) and Gemma 3 (Google) add further competition at the open-weight tier. The proliferation of capable open-weight models is driving enterprise AI adoption at lower cost and enabling privacy-preserving local deployment.
 
   **Inference cost compression**: Inference costs have fallen approximately 10x per year for equivalent capability, driven by architectural improvements ([[Mixture of Experts]] reducing active parameters per token), [[Model Quantization]] (INT4/INT8, GPTQ, AWQ, GGUF formats reducing memory footprint by 4–8x with minimal quality loss), [[Model Distillation]] (smaller student models matching larger teacher performance), speculative decoding (using a small draft model to propose tokens verified by a large model at high throughput), and hardware improvements (NVIDIA H200, Blackwell B100, and AMD MI300X GPUs offering higher HBM bandwidth). By 2026, approximately 63% of frontier model lifecycle energy is consumed at inference, compared to 37% at training — an inversion from the previous pattern, as deployment scale vastly outpaces training frequency.
 

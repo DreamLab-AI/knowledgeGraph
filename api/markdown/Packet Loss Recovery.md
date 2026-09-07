@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Packet Loss Recovery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:packet-loss-recovery:03e641ffb7b4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ea57a7acd315dccf86fb2b58444c8933fcb93a27969ff399a0b44960c84d613e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Forward Error Correction]]",
-      "resolved": "urn:visionflow:linked:forward-error-correction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Video Streaming]]",
-      "resolved": "urn:visionflow:linked:video-streaming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Protocol]]",
-      "resolved": "urn:visionflow:linked:network-protocol",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Techniques used to recover from or mitigate the loss of data packets during transmission over a network. They include retransmission, forward error correction, and concealment of missing data.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ISO/IEC 18013-5 mDL
----
-
-# ISO-IEC 18013-5 mDL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,32 +53,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:iso-iec-18013-5-m-dl:2e655ff49f24",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c52be17061dfb57c1be5d03e7a32d95ed194165fd2125c2df53e5df646dcdcf4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ISO/IEC 18013-5 specifies the mobile driving licence application, defining the interface and data model for a driving licence held on a mobile device.

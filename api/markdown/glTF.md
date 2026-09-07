@@ -1,8 +1,3 @@
----
-public: true
----
-
-# glTF
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,57 +199,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gl-tf:69e97e19e187",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:488849981bd2ce044b5840ddd13d404ba5d8feac2215f28ebe7bc120530510a6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Model]]",
-      "resolved": "urn:visionflow:linked:3-d-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Material Definition]]",
-      "resolved": "urn:visionflow:linked:material-definition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asset Interoperability]]",
-      "resolved": "urn:visionflow:linked:asset-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[WebXR]]",
-      "resolved": "urn:visionflow:linked:web-xr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D File Format]]",
-      "resolved": "urn:visionflow:linked:3-d-file-format",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - glTF (GL Transmission Format) is an open royalty-free standard from the Khronos Group for the efficient transmission and loading of 3D scenes and models, defining geometry, materials, animation and scene structure in a compact runtime format.

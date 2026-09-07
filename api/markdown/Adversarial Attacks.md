@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adversarial Attacks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -98,72 +93,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adversarial-attacks:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dc3bf3f087aa8a863fbfbc8532c5cb0159290f415a3da323679990652af77cff"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Security Threats]]",
-      "resolved": "urn:visionflow:linked:ai-security-threats",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Crafted Perturbations]]",
-      "resolved": "urn:visionflow:linked:crafted-perturbations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge of Target Model]]",
-      "resolved": "urn:visionflow:linked:knowledge-of-target-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Evasion]]",
-      "resolved": "urn:visionflow:linked:model-evasion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI 100-2]]",
-      "resolved": "urn:visionflow:linked:nist-ai-100-2",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST Taxonomy]]",
-      "resolved": "urn:visionflow:linked:nist-taxonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Manipulation]]",
-      "resolved": "urn:visionflow:linked:system-manipulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Adversarial Attacks are malicious techniques that exploit vulnerabilities in machine learning models by deliberately crafting deceptive input data to cause incorrect predictions, misclassifications, or unintended behaviors, often through subtle perturbations imperceptible to humans but significant to AI systems.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Recommendation Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -94,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:recommendation-engine:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d830b978ebc7323fca9445e4c60529e93c976affde316f61d5d1a7ab36c17473"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A recommendation engine is a system that filters, ranks, and surfaces content or items most relevant to an individual user by analysing preferences, behaviour history, and contextual signals. It employs collaborative filtering, content-based filtering, or hybrid deep-learning approaches to personalise discovery at scale across e-commerce, media, and metaverse platforms.

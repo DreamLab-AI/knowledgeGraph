@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Semiconductor Self-Reliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "semiconductor-self-reliance",
   "title": "Semiconductor Self-Reliance",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Chinese Tech Strategy", "US-China Tech Competition"],
+  "vc:outboundWikilinks": [
+    "Chinese Tech Strategy",
+    "US-China Tech Competition"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:semiconductor", "label": "Semiconductor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:semiconductor",
+      "label": "Semiconductor"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:semiconductor", "label": "Semiconductor"}, {"@id": "urn:ngm:class:china", "label": "China"}, {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:semiconductor",
+        "label": "Semiconductor"
+      },
+      {
+        "@id": "urn:ngm:class:china",
+        "label": "China"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

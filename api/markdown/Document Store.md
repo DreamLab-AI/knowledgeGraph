@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Document Store
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

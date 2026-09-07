@@ -1,40 +1,132 @@
----
-public: true
----
-
-# Hyperautomation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:hyperautomation", "@type":"Page", "title":"Hyperautomation", "vc:slug":"hyperautomation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:hyperautomation",
+  "@type": "Page",
+  "title": "Hyperautomation",
+  "vc:slug": "hyperautomation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:hyperautomation",
-  "@type":"Class",
-  "label":"Hyperautomation",
-  "definition":"Hyperautomation is a disciplined approach to automating as many business and IT processes as possible by orchestrating a coordinated set of technologies including robotic process automation, machine learning, process mining and low-code platforms. Rather than automating tasks in isolation, it discovers, designs and integrates end-to-end automated workflows with intelligence layered in. The goal is scalable, adaptive automation that augments human work across the enterprise.",
-  "domain":"artificial-intelligence",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:intelligent-automation","label":"Intelligent Automation"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:digital-transformation","label":"Digital Transformation"}],
-    "uses":[{"@id":"urn:ngm:class:robotic-process-automation","label":"Robotic Process Automation"},{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"},{"@id":"urn:ngm:class:process-mining","label":"Process Mining"}],
-    "hasPart":[{"@id":"urn:ngm:class:workflow-automation","label":"Workflow Automation"},{"@id":"urn:ngm:class:low-code-platform","label":"Low Code Platform"}],
-    "partOf":[{"@id":"urn:ngm:class:intelligent-automation","label":"Intelligent Automation"}],
-    "implements":[{"@id":"urn:ngm:class:business-process-automation","label":"Business Process Automation"}],
-    "dependsOn":[{"@id":"urn:ngm:class:orchestration","label":"Orchestration"}],
-    "requires":[{"@id":"urn:ngm:class:process-mining","label":"Process Mining"}],
-    "supports":[{"@id":"urn:ngm:class:digital-transformation","label":"Digital Transformation"}],
-    "uses_ai":[{"@id":"urn:ngm:class:natural-language-processing","label":"Natural Language Processing"},{"@id":"urn:ngm:class:ai-agents","label":"AI Agents"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:robotic-process-automation","label":"Robotic Process Automation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:workflow-automation","label":"Workflow Automation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:business-process-automation","label":"Business Process Automation"},{"@id":"urn:ngm:class:orchestration","label":"Orchestration"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hyperautomation",
+  "@type": "Class",
+  "label": "Hyperautomation",
+  "definition": "Hyperautomation is a disciplined approach to automating as many business and IT processes as possible by orchestrating a coordinated set of technologies including robotic process automation, machine learning, process mining and low-code platforms. Rather than automating tasks in isolation, it discovers, designs and integrates end-to-end automated workflows with intelligence layered in. The goal is scalable, adaptive automation that augments human work across the enterprise.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:intelligent-automation",
+      "label": "Intelligent Automation"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:low-code-platform",
+        "label": "Low Code Platform"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "uses_ai": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ServiceNow
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:service-now:a095e55080d9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:30880c3d24429f3e74b462342ee4d8310a9d44ab49b50d38bfee2b50e89e5e09"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[REST]]",
-      "resolved": "urn:visionflow:linked:rest",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Threat Intelligence]]",
-      "resolved": "urn:visionflow:linked:threat-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Database Systems]]",
-      "resolved": "urn:visionflow:linked:database-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Workflow Automation]]",
-      "resolved": "urn:visionflow:linked:workflow-automation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.servicenow.com/]]",
-      "resolved": "urn:visionflow:linked:https-www-servicenow-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.servicenow.com/]]",
-      "resolved": "urn:visionflow:linked:https-docs-servicenow-com",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ServiceNow is a cloud platform for IT service management and workflow automation, delivering digital workflows across IT, security and business operations.

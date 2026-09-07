@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Credential Presentation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:credential-presentation", "@type":"Page", "title":"Credential Presentation", "vc:slug":"credential-presentation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:credential-presentation",
+  "@type": "Page",
+  "title": "Credential Presentation",
+  "vc:slug": "credential-presentation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

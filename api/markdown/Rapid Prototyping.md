@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rapid Prototyping
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "Rapid Prototyping is an iterative product development approach that emphasises the construction of quick, low-fidelity or medium-fidelity artefacts—physical mock-ups, interactive wireframes, or functional code spikes—to test hypotheses with users and stakeholders before committing to full implementation. The methodology aims to compress the feedback loop between ideation and validated learning, reducing the risk of building features that do not meet user needs. It draws on lean startup principles, agile sprint structures, and design thinking frameworks, integrating user testing results directly into successive prototype iterations. Modern generative AI tools further accelerate rapid prototyping by auto-generating code scaffolds, UI components, and content variants.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:design-thinking", "label": "Design Thinking"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:design-thinking",
+      "label": "Design Thinking"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-design", "label": "Collaborative Design"},
-      {"@id": "urn:ngm:class:ai-development-tools", "label": "AI Development Tools"},
-      {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"}
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-design",
+        "label": "Collaborative Design"
+      },
+      {
+        "@id": "urn:ngm:class:ai-development-tools",
+        "label": "AI Development Tools"
+      },
+      {
+        "@id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
-      {"@id": "urn:ngm:class:development-platform", "label": "Development Platform"}
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:development-platform",
+        "label": "Development Platform"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ]
   },
   "quality": 0.8

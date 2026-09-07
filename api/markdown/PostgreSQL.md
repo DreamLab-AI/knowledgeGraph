@@ -1,8 +1,3 @@
----
-public: true
----
-
-# PostgreSQL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -151,4 +146,4 @@ public: true
 
   - PostgreSQL's extensibility makes it the preferred persistence layer for AI and data engineering stacks. The pgvector extension, introduced in 2021, allows high-dimensional embeddings to be stored alongside relational metadata and queried with approximate nearest-neighbour indices (IVFFlat, HNSW), collapsing the need for separate vector databases in many applications. This makes PostgreSQL a natural fit for retrieval-augmented generation (RAG) architectures where semantic and structured queries must be composed.
 
-  - In 2024-2025, PostgreSQL 16 and 17 delivered improvements to logical replication, parallelism, and JSON path query performance. The pgvector HNSW index, achieving sub-millisecond query latency at billion-scale, has driven explosive adoption in AI application backends. Cloud-managed variants — Amazon Aurora, Google AlloyDB, Neon, and Supabase — are making serverless PostgreSQL accessible at scale, reducing operational burden for teams building AI-native applications.
+  - In 2024-2025, PostgreSQL 16 and 17 delivered improvements to logical replication, parallelism, and JSON path query performance. The pgvector HNSW [private], achieving sub-millisecond query latency at billion-scale, has driven explosive adoption in AI application backends. Cloud-managed variants — Amazon Aurora, Google AlloyDB, Neon, and Supabase — are making serverless PostgreSQL accessible at scale, reducing operational burden for teams building AI-native applications.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Master Data Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -166,52 +161,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:master-data-management:e4e415dde346",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:95d21d51cd67e0f65af5750126fce651543df16238e0ad7711bdacfb4a2504b2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Entity Resolution]]",
-      "resolved": "urn:visionflow:linked:entity-resolution",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Governance]]",
-      "resolved": "urn:visionflow:linked:data-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Quality]]",
-      "resolved": "urn:visionflow:linked:data-quality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Integration]]",
-      "resolved": "urn:visionflow:linked:data-integration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Management]]",
-      "resolved": "urn:visionflow:linked:data-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A discipline and set of processes for creating and maintaining a single, consistent view of an organisation's core business entities such as customers, products, and suppliers. It governs how master data is defined, stored, and shared.

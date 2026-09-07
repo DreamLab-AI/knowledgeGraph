@@ -1,36 +1,124 @@
----
-public: true
----
-
-# Cryptoeconomics
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cryptoeconomics", "@type":"Page", "title":"Cryptoeconomics", "vc:slug":"cryptoeconomics", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cryptoeconomics",
+  "@type": "Page",
+  "title": "Cryptoeconomics",
+  "vc:slug": "cryptoeconomics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:cryptoeconomics",
-  "@type":"Class",
-  "label":"Cryptoeconomics",
-  "definition":"Cryptoeconomics is the discipline that combines cryptography with economic incentives to design and secure decentralised systems whose participants are assumed to act in their own self-interest. It uses mechanism design and game theory to make honest behaviour the rational choice, so that protocols remain secure and live without a trusted central authority. The field underpins consensus mechanisms, token economies, and the incentive structures of blockchain networks.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:blockchain-economics","label":"Blockchain Economics"}],
-  "relations":{
-    "dependsOn":[{"@id":"urn:ngm:class:mechanism-design","label":"Mechanism Design"},{"@id":"urn:ngm:class:game-theory","label":"Game Theory"},{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"},{"@id":"urn:ngm:class:economic-security","label":"Economic Security"}],
-    "uses":[{"@id":"urn:ngm:class:token-economics","label":"Token Economics"},{"@id":"urn:ngm:class:tokenomics","label":"Tokenomics"}],
-    "enables":[{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"},{"@id":"urn:ngm:class:sybil-resistance","label":"Sybil Resistance"},{"@id":"urn:ngm:class:proof-of-stake","label":"Proof of Stake"}],
-    "supports":[{"@id":"urn:ngm:class:decentralised-finance","label":"Decentralised Finance"},{"@id":"urn:ngm:class:blockchain-governance","label":"Blockchain Governance"}],
-    "requires":[{"@id":"urn:ngm:class:mechanism-design","label":"Mechanism Design"}],
-    "relatedTo":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"},{"@id":"urn:ngm:class:staking","label":"Staking"},{"@id":"urn:ngm:class:dao","label":"DAO"}],
-    "partOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cryptoeconomics",
+  "@type": "Class",
+  "label": "Cryptoeconomics",
+  "definition": "Cryptoeconomics is the discipline that combines cryptography with economic incentives to design and secure decentralised systems whose participants are assumed to act in their own self-interest. It uses mechanism design and game theory to make honest behaviour the rational choice, so that protocols remain secure and live without a trusted central authority. The field underpins consensus mechanisms, token economies, and the incentive structures of blockchain networks.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-economics",
+      "label": "Blockchain Economics"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:economic-security",
+        "label": "Economic Security"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

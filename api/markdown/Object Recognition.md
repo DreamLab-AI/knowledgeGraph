@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Object Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,4 +167,3 @@ public: true
   - Object recognition is central to autonomous vehicles (detecting pedestrians, vehicles, traffic signs), industrial quality control (identifying defects), retail analytics (shelf monitoring), security systems (crowd analysis), agricultural automation (crop and pest identification), and accessibility tools (scene description for the visually impaired). Its combination with [[Remote Sensing]] satellite data enables land-use monitoring, military surveillance, and disaster damage assessment.
 
   - As of 2024-2025, foundation models such as SAM (Segment Anything Model) and CLIP-family models have introduced open-vocabulary recognition, allowing systems to identify arbitrary objects described in natural language without category-specific training. Combining object recognition with large language models enables complex visual question answering and grounded scene reasoning. Efficiency-focused research targets deployment on edge devices with milliwatt power budgets, driving quantisation, pruning, and neural architecture search adapted to mobile and embedded constraints.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Tax Compliance Node
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,132 +178,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-tax-compliance-node:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d7ad5d6b8d34dd5de14fc19211e1da62f0cbabb4fb6c5ee5899d71d0ed22edf1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Audit Trail Generation]]",
-      "resolved": "urn:visionflow:linked:audit-trail-generation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Automated Tax Filing]]",
-      "resolved": "urn:visionflow:linked:automated-tax-filing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-border Tax Settlement]]",
-      "resolved": "urn:visionflow:linked:cross-border-tax-settlement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU DAC7]]",
-      "resolved": "urn:visionflow:linked:eu-dac7",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Identity Verification System]]",
-      "resolved": "urn:visionflow:linked:identity-verification-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Jurisdiction Mapping Service]]",
-      "resolved": "urn:visionflow:linked:jurisdiction-mapping-service",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD Digital Tax Framework]]",
-      "resolved": "urn:visionflow:linked:oecd-digital-tax-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-time Compliance]]",
-      "resolved": "urn:visionflow:linked:real-time-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulatory Database]]",
-      "resolved": "urn:visionflow:linked:regulatory-database",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulatory Reporting Module]]",
-      "resolved": "urn:visionflow:linked:regulatory-reporting-module",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tax Calculation Engine]]",
-      "resolved": "urn:visionflow:linked:tax-calculation-engine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transaction Ledger]]",
-      "resolved": "urn:visionflow:linked:transaction-ledger",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transaction Monitor]]",
-      "resolved": "urn:visionflow:linked:transaction-monitor",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Network]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Payment System]]",
-      "resolved": "urn:visionflow:owl:class:digital-payment-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MiddlewareLayer]]",
-      "resolved": "urn:visionflow:owl:class:middleware-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TrustAndGovernanceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualEconomyDomain]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Digital Tax Compliance Node (DTCN) is a purpose-built software infrastructure component within a [[Virtual Economy Infrastructure]] that continuously calculates, validates, reports, and audits tax obligations arising from digital transactions across multiple fiscal jurisdictions in near-real-time. Operating as a specialised middleware service, a DTCN ingests event streams from [[Transaction Ledger]] systems — including [[Blockchain]] and [[Digital Payment System]] rails — classifies each transaction by taxable category and applicable jurisdiction using a [[Jurisdiction Mapping Service]], applies the relevant [[Tax Calculation Engine]] rules for value-added tax (VAT), goods and services tax (GST), digital services taxes (DST), withholding taxes, and corporate income top-up taxes, and produces the structured data feeds required by [[Regulatory Reporting Module]] systems to fulfil statutory obligations under frameworks such as the [[OECD Digital Tax Framework]] Pillar Two Global Anti-Base Erosion (GloBE) Rules, the European Union's [[EU DAC7]] Directive on digital platform reporting, the UK HMRC [[Making Tax Digital]] programme, and equivalent national transpositions. By embedding [[Real-time Compliance]] validation directly into the payment processing pipeline rather than performing compliance as a batch post-processing step, a DTCN reduces the gap between transaction occurrence and tax reporting from days or months to seconds, enabling [[Audit Trail Generation]] that regulators increasingly require for digital economy participants. The node depends on a reliable [[Identity Verification System]] to classify sellers, buyers, and intermediaries for residency and tax status purposes, and on [[Smart Contract]] logic (where the underlying settlement layer supports programmable execution) to automate withholding and remittance without manual intervention. As [[Virtual Economy]] platforms — encompassing gig-economy marketplaces, in-game item exchanges, NFT marketplaces, and multi-sided digital advertising platforms — have become subject to increasingly sophisticated multi-jurisdictional tax obligations since 2021, the DTCN has emerged as a critical architectural pattern in compliant [[Virtual Economy Infrastructure]], sitting at the intersection of [[TrustAndGovernanceDomain]] governance mandates and the operational requirements of high-volume [[Digital Payment System]] processing. The global RegTech market supporting such nodes was valued at approaching $19.5 billion in 2026 and is projected to expand to $50–135 billion by the early 2030s.
@@ -592,7 +461,7 @@ public: true
 
   The third wave — which DTCN architecture responds to directly — emerged from the digital economy's cross-border scaling dynamics. A physical goods retailer in Leeds selling to UK customers has a single, well-defined VAT obligation under UK tax law. An online marketplace aggregating third-party sellers from 90 countries, selling goods and services to buyers in 150 countries, faces potentially 13,500 bilateral jurisdiction pairs with distinct tax rules, reporting schemas, and authority interfaces. Manual compliance across this matrix is economically infeasible: even at £1,000 per jurisdiction per year in compliance overhead, 150 jurisdictions generates £150,000 in annual costs that scales multiplicatively with the number of seller country × buyer country pairs. The DTCN resolves this by encoding all jurisdiction rules in a machine-readable [[Regulatory Database]] and automating the per-transaction jurisdiction classification, rate application, and aggregated reporting in software, reducing marginal compliance cost per transaction to near-zero once the infrastructure is built.
 
-  The OECD's recognition of this structural problem drove the 2017–2021 development of the Model Rules for Reporting by Platform Operators (MRDP), which preceded DAC7 and established the international consensus on what platform operators must report and in what format. MRDP's XML schema, aligned with the OECD CRS infrastructure already built for FATCA/CRS automatic exchange of financial account information, allowed tax authorities to invest in a single data exchange capability that could handle both financial account reporting and platform economy reporting. This infrastructure convergence — [[Regulatory Database]] harmonisation at the international level — is what makes the DTCN pattern viable: a single technical investment by a platform operator (implementing the CRS-compatible reporting schema) can satisfy DAC7 obligations across all 27 EU member states simultaneously, since the home state authority handles inter-authority distribution.
+  The OECD's recognition of this structural problem drove the 2017–2021 development of the Model Rules for Reporting by Platform Operators (MRDP), which preceded DAC7 and established the international consensus on what platform operators must report and in what format. MRDP's XML schema, aligned with the OECD CRS infrastructure already built for FATCA/CRS automatic exchange of financial account information, allowed tax authorities to invest in a single data exchange capability that [private] handle both financial account reporting and platform economy reporting. This infrastructure convergence — [[Regulatory Database]] harmonisation at the international level — is what makes the DTCN pattern viable: a single technical investment by a platform operator (implementing the CRS-compatible reporting schema) can satisfy DAC7 obligations across all 27 EU member states simultaneously, since the home state authority handles inter-authority distribution.
 
   The OECD Pillar Two GloBE Rules represent the fourth and most complex wave of tax digitisation obligations. Unlike DAC7 (which requires reporting what happened) or VAT (which requires remitting a percentage of each transaction), GloBE requires computing a counterfactual tax liability (what would have been owed if the 15% minimum rate applied?) at the level of each constituent entity in a 100+ entity consolidated group, then paying the difference between actual taxes paid and the counterfactual minimum. This computation requires access to entity-level GAAP/IFRS financial data, tax return data across multiple jurisdictions, deferred tax positions, transfer pricing documentation, and ownership structure data — all of which must be assembled, cross-checked, and computed within a defined deadline. The DTCN for Pillar Two is accordingly less a transaction-level system and more a data integration and analytical computation platform, requiring deep integration with enterprise ERP systems that sit outside the transaction payment flow.
 

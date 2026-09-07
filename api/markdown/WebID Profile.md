@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WebID Profile
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "A WebID Profile is an RDF document accessible at a dereferenceable HTTP URI that describes a person or agent, linking their identity to cryptographic keys, social contacts, and access control preferences, thereby enabling decentralised authentication and authorisation on the web without a centralised identity provider. The profile uses vocabularies such as FOAF and vCard to express identity attributes, and the WebID-TLS and WebID-OIDC protocols use it to authenticate agents by verifying control of the URI through certificate or token proofs. WebID Profiles are a foundational component of the Solid decentralised web platform, where they serve as the entry point for discovering a user's data pods and access control rules. They embody the self-sovereign principle that identity should be controlled by the individual rather than delegated to a platform.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:solid", "label": "Solid"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:solid-pod", "label": "Solid Pod"},
-      {"@id": "urn:ngm:class:w3-c-did-core", "label": "W3C DID Core"},
-      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:solid-pod",
+        "label": "Solid Pod"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "@id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      }
     ]
   },
   "quality": 0.8

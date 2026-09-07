@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Notification System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,16 +46,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:realtime-communication", "label": "Realtime Communication"}
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:realtime-communication",
+        "label": "Realtime Communication"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"},
-      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"}
+      {
+        "@id": "urn:ngm:class:platform-service",
+        "label": "Platform Service"
+      },
+      {
+        "@id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:event-management", "label": "Event Management"}
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:event-management",
+        "label": "Event Management"
+      }
     ]
   },
   "provenance": {
@@ -70,26 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:notification-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0a69ab42d903224d31f92e4e1cf4787a6b790d0cb44fadae75e240a40415f29e"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A software component that delivers event-driven alerts, presence indicators, and system messages to users or services in real time. In virtual world and metaverse contexts, notification systems manage social events, user-to-user signals, and platform state changes across distributed infrastructure, typically using push protocols or pub-sub messaging patterns.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Axelar
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,4 +179,3 @@ public: true
   - In the application ecosystem, Axelar's Squid Router provides cross-chain DEX aggregation, and its GMP API is integrated by major DeFi protocols for liquidity unification and cross-chain governance. The Interchain Token Service (ITS), launched in 2023, extends native token functionality to multiple chains simultaneously without wrapped token fragmentation.
 
   - Through 2024–2025, Axelar has focused on programmable interoperability — allowing chains to define custom routing and fee logic — and on institutional-grade features including compliance-aware message routing. Competition from Chainlink CCIP and LayerZero has intensified, driving innovation in decentralisation, latency, and developer tooling. The network processed hundreds of millions of dollars in monthly cross-chain volume by mid-2024.
-

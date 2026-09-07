@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SecurityLayer
----
-
-# Security Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,26 +83,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:security-layer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f0bf88d0d05992c7e6bf4277ce3b52829562f7a5062b31696f5ef4e96bb6e334"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The SecurityLayer represents the abstraction level of security-focused implementations, cryptographic mechanisms, threat models, security protocols, and defensive systems that protect blockchain and distributed systems from attacks, ensure data integrity and authenticity, provide confidentiality and privacy, and maintain system security properties. This layer encompasses cryptographic primitives as implemented security mechanisms (hash functions providing integrity, digital signatures providing authentication, encryption providing confidentiality), security protocols (key exchange, secure communication, authentication protocols), threat models and attack vectors (51% attacks, Sybil attacks, eclipse attacks, smart contract vulnerabilities), security analysis and verification (formal verification, security auditing, penetration testing), defensive mechanisms (access control, authorization, sandboxing, rate limiting), and security properties as realized through specific implementations (immutability through hash linking, non-repudiation through digital signatures, privacy through zero-knowledge proofs). Unlike ConceptualLayer which addresses abstract security properties, SecurityLayer focuses on concrete security implementations and mechanisms. Unlike generic ProtocolLayer, SecurityLayer emphasizes security-specific considerations: threat resistance, attack prevention, security guarantees, cryptographic soundness, and defensive architectures.

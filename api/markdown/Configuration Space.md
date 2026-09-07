@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Configuration Space
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:configuration-space", "@type":"Page", "title":"Configuration Space", "vc:slug":"configuration-space", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:configuration-space",
+  "@type": "Page",
+  "title": "Configuration Space",
+  "vc:slug": "configuration-space",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,43 +21,92 @@ public: true
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:motion-planning", "label": "Motion Planning" }
+    {
+      "@id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:degrees-of-freedom", "label": "Degrees of Freedom" },
-      { "@id": "urn:ngm:class:joint-space", "label": "Joint Space" }
+      {
+        "@id": "urn:ngm:class:degrees-of-freedom",
+        "label": "Degrees of Freedom"
+      },
+      {
+        "@id": "urn:ngm:class:joint-space",
+        "label": "Joint Space"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:robotics", "label": "Robotics" }
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:path-planning", "label": "Path Planning" },
-      { "@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance" }
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics" },
-      { "@id": "urn:ngm:class:collision-detection", "label": "Collision Detection" }
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:sampling-based-planning", "label": "Sampling-Based Planning" }
+      {
+        "@id": "urn:ngm:class:sampling-based-planning",
+        "label": "Sampling-Based Planning"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation" }
+      {
+        "@id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics" },
-      { "@id": "urn:ngm:class:kinematics", "label": "Kinematics" },
-      { "@id": "urn:ngm:class:rapidly-exploring-random-tree", "label": "Rapidly-Exploring Random Tree" },
-      { "@id": "urn:ngm:class:probabilistic-roadmap", "label": "Probabilistic Roadmap" }
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rapidly-exploring-random-tree",
+        "label": "Rapidly-Exploring Random Tree"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-roadmap",
+        "label": "Probabilistic Roadmap"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:workspace", "label": "Workspace" }
+      {
+        "@id": "urn:ngm:class:workspace",
+        "label": "Workspace"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Networkcomponent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -136,29 +131,68 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:network-architecture", "label": "Network Architecture"},
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"}
+      {
+        "@id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:network-layer", "label": "Network Layer"},
-      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"}
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
     ]
   },
   "provenance": {
@@ -168,132 +202,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:networkcomponent:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9a91056492ebd03e13e76392ca927c7eefa03f601ce46741e5bdd845b8711fe8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ConfigurationManagement]]",
-      "resolved": "urn:visionflow:linked:configuration-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CoreRouter]]",
-      "resolved": "urn:visionflow:linked:core-router",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EdgeRouter]]",
-      "resolved": "urn:visionflow:linked:edge-router",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Firewall]]",
-      "resolved": "urn:visionflow:linked:firewall",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Gateway]]",
-      "resolved": "urn:visionflow:linked:gateway",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hub]]",
-      "resolved": "urn:visionflow:linked:hub",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IPAddressing]]",
-      "resolved": "urn:visionflow:linked:ipaddressing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[LoadBalancer]]",
-      "resolved": "urn:visionflow:linked:load-balancer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ManagedSwitch]]",
-      "resolved": "urn:visionflow:linked:managed-switch",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NetworkManagement]]",
-      "resolved": "urn:visionflow:linked:network-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NetworkMonitoring]]",
-      "resolved": "urn:visionflow:linked:network-monitoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OSIModel]]",
-      "resolved": "urn:visionflow:linked:osimodel",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Router]]",
-      "resolved": "urn:visionflow:linked:router",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SNMP]]",
-      "resolved": "urn:visionflow:linked:snmp",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Switch]]",
-      "resolved": "urn:visionflow:linked:switch",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UnmanagedSwitch]]",
-      "resolved": "urn:visionflow:linked:unmanaged-switch",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[VLAN]]",
-      "resolved": "urn:visionflow:linked:vlan",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[WirelessAccessPoint]]",
-      "resolved": "urn:visionflow:linked:wireless-access-point",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NetworkInfrastructure]]",
-      "resolved": "urn:visionflow:owl:class:network-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NetworkTopology]]",
-      "resolved": "urn:visionflow:owl:class:network-topology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Network Components are the physical and virtual hardware devices that comprise telecommunications and computer network infrastructure, enabling network connectivity, communication, and data routing between users, devices, applications, and the internet. Core components include switches for local traffic routing, routers for inter-network packet forwarding, and firewalls for security enforcement, forming the foundation of modern digital communications.

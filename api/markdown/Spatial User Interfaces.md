@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial User Interfaces
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-user-interfaces:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:65aa7cbbce6cf86c81f621a6767062359a0db2bd063cfa093d244e6985c2afb3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Immersive Interaction]]",
-      "resolved": "urn:visionflow:linked:immersive-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D User Interface]]",
-      "resolved": "urn:visionflow:owl:class:3-d-user-interface",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Three-dimensional interaction systems enabling users to engage with digital content through spatially-aware methods including hand gestures, gaze tracking, and voice commands, designed for natural movement within AR, VR, and mixed reality environments with consideration for user comfort zones and 6DOF input.

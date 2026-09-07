@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Some legacy Linked-JSON]]
-# Metaverse Entity Schema Archive
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,16 +42,34 @@ elevatedFrom:: [[Some legacy Linked-JSON]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ]
   },
   "quality": 0.7,
@@ -68,26 +80,6 @@ elevatedFrom:: [[Some legacy Linked-JSON]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:some-legacy-linked-json:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aac956e03f1e2210ac04181552b1f9ab242e577f8b4744c67211f83cc3b10193"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Some legacy Linked-JSON is a collection of early-stage JSON-LD-based ontology data structures capturing metaverse entity models — including agents, scenes, digital assets, and virtual economies — created before the current NarrativeGoldmine v2 schema. These artefacts document the iterative evolution of the knowledge graph's data model and serve as a reference for schema migration and ontology provenance tracing.

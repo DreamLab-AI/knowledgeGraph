@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intel Loihi
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:intel-loihi:fbe72b3d9c5b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5a1d1d99a097b6bc239fe9266ea4b5937c24c3384b9b074d0b2221daf07c50ad"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Neuromorphic Computing]]",
-      "resolved": "urn:visionflow:linked:neuromorphic-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neuromorphic Chip]]",
-      "resolved": "urn:visionflow:linked:neuromorphic-chip",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A research neuromorphic processor developed by Intel that implements spiking neural networks in hardware with on-chip learning.

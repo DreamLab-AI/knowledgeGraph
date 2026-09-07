@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Edge Computing Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:edge-computing-layer:4efabf62b5d6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cf75cda1681225c01ff46e0e71c2661530738672f13963d13d0797f2747e864e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware Layer]]",
-      "resolved": "urn:visionflow:linked:hardware-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Layer]]",
-      "resolved": "urn:visionflow:linked:network-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inference Layer]]",
-      "resolved": "urn:visionflow:linked:inference-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Latency]]",
-      "resolved": "urn:visionflow:linked:latency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Computing]]",
-      "resolved": "urn:visionflow:linked:distributed-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Edge Computing Layer is the stratum that places computation and storage near the source of data, away from centralised facilities. It sits above the Hardware and Network strata at the periphery and below the application and inference workloads it hosts locally. It contains edge nodes, local schedulers, and the synchronisation logic that links edge to core.

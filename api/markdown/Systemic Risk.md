@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Systemic Risk
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,32 +178,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:systemic-risk:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a51a53b679380d831352713b49acb389ce91f3dd5546281fbb53ac3c02d6a0a7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.
@@ -568,7 +537,7 @@ public: true
   - Systemic risk in AI refers to the potential for widespread harm arising from the deployment or malfunction of advanced general-purpose AI models, particularly those with broad reach or high-impact capabilities
   - The concept is rooted in risk management theory, adapted for the unique challenges posed by AI’s scalability and integration into critical infrastructure
   - Key developments and current state
-    - The EU AI Act has formalised the definition of systemic risk, focusing on models whose impact could ripple across markets, public health, safety, and fundamental rights
+    - The EU AI Act has formalised the definition of systemic risk, focusing on models whose impact [private] ripple across markets, public health, safety, and fundamental rights
     - The UK, while not bound by the EU AI Act, has adopted similar principles in its AI governance frameworks, with increasing emphasis on transparency and accountability
   - Academic foundations
     - The field draws from systems theory, risk analysis, and AI safety research, with foundational work by scholars such as Nick Bostrom and Stuart Russell

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VFX Tools
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -94,32 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vfx-tools:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f49355e557a46d441f89f577404575ee5d540b00729c3af50fb69ae6177a672c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - VFX Tools are software applications and pipelines used to create, composite, and render visual effects for film, television, real-time engines, and immersive media. They encompass particle simulation, fluid and cloth dynamics, compositing, colour grading, and procedural generation capabilities, and increasingly interface with real-time rendering engines for deployment in spatial computing contexts.

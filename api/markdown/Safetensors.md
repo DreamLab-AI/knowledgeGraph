@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safetensors
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Safetensors is a secure, simple, and fast file format for storing and loading neural network tensor weights, developed by Hugging Face as a safe alternative to Python's pickle-based serialisation. The format stores tensor metadata in a JSON header followed by raw binary data, enabling zero-copy memory-mapped loading without executing arbitrary code during deserialisation.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:data-serialization", "label": "Data Serialization"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-serialization",
+      "label": "Data Serialization"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:model-weights", "label": "Model Weights"},
-      {"@id": "urn:ngm:class:hugging-face", "label": "Hugging Face"}
+      {
+        "@id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-checkpoint", "label": "Model Checkpoint"},
-      {"@id": "urn:ngm:class:ai-model-inference-engine", "label": "AI Model Inference Engine"}
+      {
+        "@id": "urn:ngm:class:model-checkpoint",
+        "label": "Model Checkpoint"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-inference-engine",
+        "label": "AI Model Inference Engine"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:safetensors-format", "label": "Safetensors Format"},
-      {"@id": "urn:ngm:class:hugging-face-model-hub", "label": "Hugging Face Model Hub"}
+      {
+        "@id": "urn:ngm:class:safetensors-format",
+        "label": "Safetensors Format"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-model-hub",
+        "label": "Hugging Face Model Hub"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - Security properties beyond anti-pickle include: no unbounded allocation (tensor sizes are bounded by file size), no pointer arithmetic vulnerabilities (pure value-type storage), and no hidden state. The format is endian-agnostic and stores tensor data in C-contiguous row-major order by default. Supported dtypes include float16, bfloat16, float32, float64, int8, int16, int32, int64, bool, and the experimental float8 variants.
 
   - By 2024-2025, safetensors has become the de facto standard for model weight distribution on the Hugging Face Hub, with the vast majority of new model uploads using the format. Stable Diffusion, Llama, Mistral, Falcon, and most major open-weight models are distributed in safetensors. The format is natively supported by vLLM, TGI, Transformers, and Diffusers, and is under evaluation for standardisation by the broader ML ecosystem. Security audits have confirmed the format's safety guarantees against known exploit classes.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Light Parameters
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:light-parameters:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9562a5d1baeb72ea8798ce8fe1410897d44a58897b2cebee59d2f023fadeca02"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Visual Realism]]",
-      "resolved": "urn:visionflow:linked:visual-realism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rendering Technology]]",
-      "resolved": "urn:visionflow:owl:class:rendering-technology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Configurable settings that control virtual lighting behaviour in VR and metaverse environments, including intensity, colour temperature, bounce calculations, shadow quality, and reflection properties that determine visual realism and immersion.

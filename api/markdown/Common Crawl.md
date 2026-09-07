@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Common Crawl
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,7 +182,7 @@ public: true
   "definition": "Common Crawl is a California 501(c)3 non-profit organisation founded in 2008 by Gil Elbaz that maintains a petabyte-scale, freely accessible archive of web crawl data stored on Amazon S3 under the AWS Open Data Sponsorship Programme. The dataset — distributed as WARC, WAT, and WET files — underpins virtually every major open pre-training corpus including C4, FineWeb, RedPajama, Dolma, and DCLM, and has been cited by the Mozilla Foundation (2024) as essential to the emergence of modern generative AI.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:training-data",
@@ -292,211 +287,11 @@ public: true
       }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:common-crawl:c5588b3d1007",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:afa5254885f1174b1014f388b0f8e2d3d55a7e2217f6bc721dc7019c7648e7d3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Model Training]]",
-      "resolved": "urn:visionflow:linked:model-training",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPT]]",
-      "resolved": "urn:visionflow:linked:gpt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPT-3]]",
-      "resolved": "urn:visionflow:linked:gpt-3",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Synthetic Data]]",
-      "resolved": "urn:visionflow:linked:synthetic-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:linked:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data]]",
-      "resolved": "urn:visionflow:linked:training-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Curation]]",
-      "resolved": "urn:visionflow:linked:data-curation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pre-training]]",
-      "resolved": "urn:visionflow:linked:pre-training",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Foundation Models]]",
-      "resolved": "urn:visionflow:linked:foundation-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deduplication]]",
-      "resolved": "urn:visionflow:linked:deduplication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tokenisation]]",
-      "resolved": "urn:visionflow:linked:tokenisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Information Retrieval]]",
-      "resolved": "urn:visionflow:linked:information-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Pipeline]]",
-      "resolved": "urn:visionflow:linked:data-pipeline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BERT]]",
-      "resolved": "urn:visionflow:linked:bert",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bias in Large Language Models]]",
-      "resolved": "urn:visionflow:linked:bias-in-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Governance]]",
-      "resolved": "urn:visionflow:linked:data-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU AI Act]]",
-      "resolved": "urn:visionflow:linked:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Copyright]]",
-      "resolved": "urn:visionflow:linked:copyright",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Open Data]]",
-      "resolved": "urn:visionflow:linked:open-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scaling Laws]]",
-      "resolved": "urn:visionflow:linked:scaling-laws",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Amazon S3]]",
-      "resolved": "urn:visionflow:linked:amazon-s3",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:linked:cloud-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Language Model]]",
-      "resolved": "urn:visionflow:linked:language-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Multimodal AI]]",
-      "resolved": "urn:visionflow:linked:multimodal-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Llama]]",
-      "resolved": "urn:visionflow:linked:llama",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dolma]]",
-      "resolved": "urn:visionflow:linked:dolma",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RedPajama]]",
-      "resolved": "urn:visionflow:linked:red-pajama",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FineWeb]]",
-      "resolved": "urn:visionflow:linked:fineweb",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[C4 Dataset]]",
-      "resolved": "urn:visionflow:linked:c4-dataset",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Web Scraping]]",
-      "resolved": "urn:visionflow:linked:web-scraping",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://commoncrawl.org]]",
-      "resolved": "urn:visionflow:linked:https-commoncrawl-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://commoncrawl.org/the-data]]",
-      "resolved": "urn:visionflow:linked:https-commoncrawl-org-the-data",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -617,7 +412,7 @@ public: true
       ObjectSomeValuesFrom(ai:reducesTo ai:CommonCrawl))
     ```
   ## About
-    Common Crawl is the foundational open-data infrastructure underpinning most publicly available large-scale [[Natural Language Processing]] pre-training corpora. Founded by entrepreneur Gil Elbaz in 2008 — with initial board members Carl Malamud and Nova Spivack — the organisation was conceived as a counterpart to web search engine indexes: where search engines keep their crawls proprietary, Common Crawl makes its raw crawl data universally accessible. Elbaz, who had previously co-founded Applied Semantics (acquired by Google in 2003 for approximately USD 102 million, forming the basis of AdSense), was motivated by the conviction that democratising access to web data would unlock research and innovation that no proprietary actor could monopolise. The project was funded almost exclusively by the Elbaz Family Foundation Trust until 2023, when it began receiving donations from AI industry participants including major frontier model developers whose systems depended critically on Common Crawl data. The Mozilla Foundation's 2024 report described Common Crawl as so central to the generative AI supply chain that "generative AI likely would not have been possible without it," identifying it as a critical piece of shared infrastructure for the entire field.
+    Common Crawl is the foundational open-data infrastructure underpinning most publicly available large-scale [[Natural Language Processing]] pre-training corpora. Founded by entrepreneur Gil Elbaz in 2008 — with initial board members Carl Malamud and Nova Spivack — the organisation was conceived as a counterpart to web search engine indexes: where search engines keep their crawls proprietary, Common Crawl makes its raw crawl data universally accessible. Elbaz, who had previously co-founded Applied Semantics (acquired by Google in 2003 for approximately USD 102 million, forming the basis of AdSense), was motivated by the conviction that democratising access to web data would unlock research and innovation that no proprietary actor [private] monopolise. The project was funded almost exclusively by the Elbaz Family Foundation Trust until 2023, when it began receiving donations from AI industry participants including major frontier model developers whose systems depended critically on Common Crawl data. The Mozilla Foundation's 2024 report described Common Crawl as so central to the generative AI supply chain that "generative AI likely would not have been possible without it," identifying it as a critical piece of shared infrastructure for the entire field.
 
     The technical architecture of Common Crawl centres on a distributed web crawler — maintained by a small team of engineers — that stores raw HTTP crawl records as WARC (Web ARChive) files conforming to ISO 28500:2017, the international standard for web archiving developed in concert with the Internet Archive and national libraries. A single WARC file is a concatenated sequence of typed records: warcinfo records describing the crawl configuration; request records preserving the outgoing HTTP request; response records capturing the full HTTP response including headers and body; resource records for converted content; and metadata records for computed annotations such as WARC-computed page title. Alongside WARC files, each monthly crawl release includes WAT files — JSON-encoded metadata computed by post-processing WARC records — capturing hyperlink graphs, detected language, server software identity, MIME content-type, and computed content hashes. WET files provide plain-text extractions of web page content with HTML markup removed, generated using the Trafilatura library (from 2021 onwards, replacing older boilerplate-removal heuristics), and are the most commonly used format for NLP pre-training pipelines because they eliminate the need for downstream HTML parsing. Monthly crawl statistics are published openly on GitHub, tracking page counts, unique URL counts, host and domain diversity, and language distribution per snapshot. As of the August 2025 crawl, individual monthly snapshots contained over 2.42 billion pages and more than 419 TiB of compressed raw data. The cumulative corpus spans several petabytes hosted on [[Amazon S3]] under the AWS Open Data Sponsorship Programme, enabling any researcher or organisation to access the full dataset at zero egress cost, subject only to network bandwidth constraints. The CDX (Capture Index) and CC-Index Parquet shards further enable URL-pattern-specific retrieval and petabyte-scale SQL queries via Amazon Athena without downloading full WARC files.
 
@@ -642,8 +437,8 @@ public: true
     - **WARC Files**: Raw ISO 28500 web archive records including HTTP request/response pairs, preserving original HTML, headers, and status codes. Each monthly crawl release compresses to hundreds of TiB. WARC files contain five record types: warcinfo (crawl metadata), request (outgoing HTTP request), response (full HTTP response with headers and body), resource (non-HTTP resources), and conversion (format-transformed content). The most important for NLP are response records, which contain the raw HTML, JavaScript, and text content of each crawled page.
     - **WET Files**: Plain-text extractions derived from WARC records, pre-processed to remove HTML tags and metadata using the Trafilatura library (from 2021 onward). WET files are the most commonly used format for NLP pre-training pipelines because they eliminate the need for downstream HTML parsing, though they sacrifice structural information (headings, lists, links) that may be valuable for document understanding tasks.
     - **WAT Files**: JSON metadata files computed from WARC records, encoding hyperlinks, language identification scores (fastText), server software identity (from Server HTTP header), MIME content-type, response status codes, content-length, and SHA-1 content digests. WAT files enable link-graph analysis, host-diversity studies, and language-based filtering without reprocessing full WARC files, reducing I/O cost by approximately 10–50x compared to WARC reprocessing.
-    - **URL Index (CDX)**: A columnar capture index of all crawled URLs with HTTP status, MIME type, content length, and byte-range WARC offset pointers. Available via the Common Crawl Index Server REST API (http://index.commoncrawl.org), enabling selective retrieval of specific domain crawls or URL patterns without downloading multi-TiB WARC files. The CDX format (adapted from the Internet Archive's standard) encodes each URL's most recent crawl status and WARC location as a single text record.
-    - **Columnar Index (CC-Index)**: Parquet-format columnar index shards stored on S3 under the s3://commoncrawl/cc-index/ prefix, enabling petabyte-scale SQL queries via Amazon Athena or Apache Spark without downloading raw WARC files. The CC-Index schema includes url, fetch_time, warc_filename, warc_record_offset, languages, content_mime_type, and content_digest columns, enabling domain-level, language-level, and time-series analysis of crawl coverage.
+    - **URL Index (CDX)**: A columnar capture [private] of all crawled URLs with HTTP status, MIME type, content length, and byte-range WARC offset pointers. Available via the Common Crawl Index Server REST API (http://[private].commoncrawl.org), enabling selective retrieval of specific domain crawls or URL patterns without downloading multi-TiB WARC files. The CDX format (adapted from the Internet Archive's standard) encodes each URL's most recent crawl status and WARC location as a single text record.
+    - **Columnar Index (CC-Index)**: Parquet-format columnar [private] shards stored on S3 under the s3://commoncrawl/cc-index/ prefix, enabling petabyte-scale SQL queries via Amazon Athena or Apache Spark without downloading raw WARC files. The CC-Index schema includes url, fetch_time, warc_filename, warc_record_offset, languages, content_mime_type, and content_digest columns, enabling domain-level, language-level, and time-series analysis of crawl coverage.
     - **Monthly Crawl Statistics**: Publicly released per-snapshot metrics on GitHub (commoncrawl/cc-crawl-statistics), tracking page counts, unique URL counts, host diversity, top-level domain distribution, and language proportions detected by the fastText model. These statistics are critical for understanding the representational biases of each snapshot and how they change over time as the web evolves.
     - **Derived Corpora**: Downstream filtered datasets including [[C4 Dataset]] (2019, 160B tokens, Raffel et al.), [[RedPajama]] (2023, 30T tokens, Together AI), [[FineWeb]] (2024, 15T tokens, HuggingFace), [[Dolma]] (2024, 3T CC tokens, AI2), and DataComp-LM DCLM-Baseline (2024, 3.6T tokens, DataComp consortium), each applying different filtering strategies to the same underlying Common Crawl snapshots to produce corpora optimised for different training objectives and model sizes.
 
@@ -660,11 +455,11 @@ public: true
   ## Academic Context
     The intellectual history of Common Crawl as a research resource can be divided into four phases. In the **early adoption phase (2008–2014)**, Common Crawl was primarily used for web science studies (link-graph analysis, domain longevity, language distribution) and early web-scale language modelling. Chelba et al.'s "One Billion Word Benchmark" (2013) established the canonical evaluation protocol for web-scale language models and used Google's proprietary web crawl, setting the stage for Common Crawl to serve a similar function in the research community. Wenzek et al.'s CCNet (2020) was an early systematic methodology for extracting high-quality monolingual corpora from Common Crawl using language identification, deduplication (deduplication of paragraphs via SHA-1 hashing), and perplexity-based quality filtering with KenLM language models trained on Wikipedia — an approach that dramatically improved downstream NLP performance for French, German, Italian, Arabic, Chinese, and Spanish models while requiring no manual data curation.
 
-    In the **transformer pre-training phase (2019–2022)**, Common Crawl became the dominant source of pre-training data for large language models. The field-defining use was Raffel et al.'s T5 paper (2019), which introduced the C4 (Colossal Clean Crawled Corpus) by applying a set of heuristic filters to a Common Crawl dump to produce 160 billion tokens of cleaned English text, demonstrating that web-scale crawl data could match or exceed carefully curated corpora for text-to-text transfer tasks. The C4 filters — now canonical in the literature — include: removal of lines not ending in terminal punctuation; removal of pages containing fewer than 5 sentences; removal of pages with fewer than 100 words; removal of pages containing strings from a blocked-word list; and removal of pages with a lorem ipsum string, indicating template content. Brown et al.'s GPT-3 (2020) scaled Common Crawl usage to approximately 300 billion filtered tokens (after applying a quality filter trained on WebText), establishing the dominant pre-training data paradigm and for the first time making the exact composition of a flagship model's training data partially public. The Pile (Gao et al., 2020) demonstrated that diverse, carefully curated mixtures of Common Crawl and 21 other sources outperformed Common Crawl alone for many downstream tasks, triggering research into optimal mixture composition.
+    In the **transformer pre-training phase (2019–2022)**, Common Crawl became the dominant source of pre-training data for large language models. The field-defining use was Raffel et al.'s T5 paper (2019), which introduced the C4 (Colossal Clean Crawled Corpus) by applying a set of heuristic filters to a Common Crawl dump to produce 160 billion tokens of cleaned English text, demonstrating that web-scale crawl data [private] match or exceed carefully curated corpora for text-to-text transfer tasks. The C4 filters — now canonical in the literature — include: removal of lines not ending in terminal punctuation; removal of pages containing fewer than 5 sentences; removal of pages with fewer than 100 words; removal of pages containing strings from a blocked-word list; and removal of pages with a lorem ipsum string, indicating template content. Brown et al.'s GPT-3 (2020) scaled Common Crawl usage to approximately 300 billion filtered tokens (after applying a quality filter trained on WebText), establishing the dominant pre-training data paradigm and for the first time making the exact composition of a flagship model's training data partially public. The Pile (Gao et al., 2020) demonstrated that diverse, carefully curated mixtures of Common Crawl and 21 other sources outperformed Common Crawl alone for many downstream tasks, triggering research into optimal mixture composition.
 
-    In the **data-curation research phase (2022–2024)**, the focus shifted from whether to use Common Crawl to how to best process and filter it. The Chinchilla scaling paper (Hoffmann et al., 2022) established the compute-optimal token-to-parameter ratio of approximately 20:1, implying that future frontier models would require trillions of training tokens — quantities achievable only from Common Crawl and similar web-scale sources. This drove intense competition in [[Data Curation]] methodology. RefinedWeb (Penedo et al., 2023) demonstrated that aggressive deduplication and Trafilatura-based extraction alone (without extensive heuristic content filtering) could produce a 600B-token corpus competitive with or superior to heavily filtered alternatives on language model benchmarks, using a strategy called MacroData Refinement. RedPajama-v1 (Together AI, 2023) reproduced the LLaMA pre-training data at 1.2T tokens, making the precise mixture public for the first time. Dolma (Soldaini et al., 2024) integrated Common Crawl (2T tokens), Common Crawl News (381B tokens), GitHub code (141B tokens), scientific papers (221B tokens), Wikipedia/Wikibooks (38B tokens), and other sources into a 3.4T token open corpus with full data sheet documentation. FineWeb (Penedo et al., 2024) demonstrated that model-based quality filtering with an education-density classifier (FineWeb-Edu, 1.3T tokens) substantially outperformed purely heuristic approaches on knowledge-intensive benchmarks.
+    In the **data-curation research phase (2022–2024)**, the focus shifted from whether to use Common Crawl to how to best process and filter it. The Chinchilla scaling paper (Hoffmann et al., 2022) established the compute-optimal token-to-parameter ratio of approximately 20:1, implying that future frontier models would require trillions of training tokens — quantities achievable only from Common Crawl and similar web-scale sources. This drove intense competition in [[Data Curation]] methodology. RefinedWeb (Penedo et al., 2023) demonstrated that aggressive deduplication and Trafilatura-based extraction alone (without extensive heuristic content filtering) [private] produce a 600B-token corpus competitive with or superior to heavily filtered alternatives on language model benchmarks, using a strategy called MacroData Refinement. RedPajama-v1 (Together AI, 2023) reproduced the LLaMA pre-training data at 1.2T tokens, making the precise mixture public for the first time. Dolma (Soldaini et al., 2024) integrated Common Crawl (2T tokens), Common Crawl News (381B tokens), GitHub code (141B tokens), scientific papers (221B tokens), Wikipedia/Wikibooks (38B tokens), and other sources into a 3.4T token open corpus with full data sheet documentation. FineWeb (Penedo et al., 2024) demonstrated that model-based quality filtering with an education-density classifier (FineWeb-Edu, 1.3T tokens) substantially outperformed purely heuristic approaches on knowledge-intensive benchmarks.
 
-    The **legal escalation phase (2023–present)** fundamentally altered the normative landscape. The New York Times lawsuit against OpenAI and Microsoft (December 2023) explicitly named Common Crawl as comprising approximately 60% of GPT-3's training data and alleged that LLMs trained on Common Crawl could reproduce substantial portions of copyrighted articles. Digital Content Next (DCN), representing over 70 digital media publishers, sent a cease-and-desist letter to Common Crawl in 2024 demanding that it stop crawling member content and remove existing member content from datasets. The Mozilla Foundation's 2024 report analysed Common Crawl's supply chain role and found that two-thirds of 47 generative LLMs studied had relied on Common Crawl data — describing it as the "single most important data resource" for generative AI development. These events have triggered substantive legal, policy, and technical research into content consent, robots.txt compliance, TDMRep (Text and Data Mining Reservation Protocol), and the scope of fair use/fair dealing exceptions for AI training.
+    The **legal escalation phase (2023–present)** fundamentally altered the normative landscape. The New York Times lawsuit against OpenAI and Microsoft (December 2023) explicitly named Common Crawl as comprising approximately 60% of GPT-3's training data and alleged that LLMs trained on Common Crawl [private] reproduce substantial portions of copyrighted articles. Digital Content Next (DCN), representing over 70 digital media publishers, sent a cease-and-desist letter to Common Crawl in 2024 demanding that it stop crawling member content and remove existing member content from datasets. The Mozilla Foundation's 2024 report analysed Common Crawl's supply chain role and found that two-thirds of 47 generative LLMs studied had relied on Common Crawl data — describing it as the "single most important data resource" for generative AI development. These events have triggered substantive legal, policy, and technical research into content consent, robots.txt compliance, TDMRep (Text and Data Mining Reservation Protocol), and the scope of fair use/fair dealing exceptions for AI training.
 
     The scaling implications of Hoffmann et al.'s Chinchilla paper (2022) drove demand for ever-larger filtered Common Crawl subsets: their compute-optimal token-to-parameter ratio of approximately 20:1 implied that a 70B parameter model requires 1.4T training tokens, a quantity achievable only from web-scale crawls. The DataComp-LM consortium's DCLM paper (2024) established the most comprehensive standardised benchmark to date, releasing a fixed 240T token Common Crawl corpus with 53 downstream evaluation tasks and a standardised 6.9B parameter model training recipe, enabling the first reproducible head-to-head comparisons of competing filtering methodologies at scale.
 
@@ -713,7 +508,7 @@ public: true
     - **WAT File**: JSON-format metadata file computed by post-processing WARC response records, capturing all hyperlinks in the page, language identification scores from fastText LangID, server software from HTTP headers, content MIME type, response status, and SHA-1 content digest. WAT files enable large-scale web analytics (link graph analysis, server technology surveys, language distribution) at a fraction of the I/O cost of reprocessing WARC files.
     - **MinHash Deduplication**: Locality-sensitive hashing technique that computes Jaccard similarity between documents' character n-gram shingle sets (typically 5-grams) using compact MinHash signatures, then uses banding (LSH) to efficiently identify near-duplicate pairs without all-pairs comparison. Applied with Jaccard similarity thresholds of 0.75–0.80 in most Common Crawl pipelines; documents identified as near-duplicates are clustered and one representative retained.
     - **Trafilatura**: Open-source Python library (Barbaresi, 2021) for main-content extraction from HTML web pages, using a scoring algorithm based on tag depth, sibling node density, word count, and punctuation density to identify the primary editorial content region. Used in FineWeb, RefinedWeb, and DCLM as the preferred alternative to simple HTML stripping, which retains boilerplate; Trafilatura achieves approximately 93% precision on editorial content identification versus approximately 71% for HTML stripping.
-    - **CDX Index**: URL-keyed columnar capture index format originally developed by the Internet Archive, storing WARC byte offsets, HTTP status codes, MIME types, content lengths, and SHA-1 content digests for each crawled URL. The Common Crawl Index Server provides REST API access to CDX records, enabling selective WARC retrieval by URL pattern or domain without downloading multi-TiB archives.
+    - **CDX Index**: URL-keyed columnar capture [private] format originally developed by the Internet Archive, storing WARC byte offsets, HTTP status codes, MIME types, content lengths, and SHA-1 content digests for each crawled URL. The Common Crawl Index Server provides REST API access to CDX records, enabling selective WARC retrieval by URL pattern or domain without downloading multi-TiB archives.
     - **Language Identification**: Process of classifying web page text language using machine learning models such as fastText LangID (Joulin et al., 2016, supporting 176 languages) or GlotLID (Kargaran et al., 2023, supporting 1,600+ languages). Applied to WAT files or WET files as a first filtering step; pages below a language-specific confidence threshold are excluded. Per-language quality thresholds in FineWeb2 replaced the single global threshold that systematically under-selected low-resource languages.
     - **C4 (Colossal Clean Crawled Corpus)**: 160-billion-token filtered English corpus derived from Common Crawl by Raffel et al. (2019) for training the T5 (Text-to-Text Transfer Transformer) model family. C4's filtering pipeline — terminal punctuation, sentence count, word count, blocked-word list, lorem ipsum detection — became the canonical baseline for subsequent Common Crawl pipelines, widely reproduced, extended, and critiqued in data curation literature.
     - **FineWeb**: 15-trillion-token quality-filtered English corpus derived from 96 Common Crawl snapshots spanning 2013–2024, released by HuggingFace (Penedo et al., 2024). Uses Trafilatura extraction, MinHash deduplication, C4-derived heuristics (modified), and fastText language identification. The FineWeb-Edu subset (1.3T tokens) applies a GPT-4-annotated educational-content classifier to further filter for high-educational-value pages, outperforming FineWeb on knowledge-intensive benchmarks (MMLU, ARC-C) at equivalent training compute.

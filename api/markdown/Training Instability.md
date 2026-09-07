@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Training Instability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,25 +51,58 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:gradient-clipping", "label": "Gradient Clipping"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:gradient-clipping",
+        "label": "Gradient Clipping"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}
+      {
+        "@id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ]
   },
   "provenance": {
@@ -84,32 +112,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:training-instability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fc81b77dc8ab3777d453025863850fa0baadf48cb160b03cbf353262665cdc20"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Pathological behaviours during neural network optimisation — including exploding/vanishing gradients, loss divergence, and oscillating loss curves — that prevent convergence. Arises from interactions between architecture depth, learning rate, batch size, and numerical precision; mitigated via gradient clipping, mixed-precision training, careful initialisation, and adaptive optimisers.

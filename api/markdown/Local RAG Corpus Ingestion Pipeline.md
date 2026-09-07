@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Push To Local RAG]]
-# Local RAG Corpus Ingestion Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,17 +47,38 @@ elevatedFrom:: [[Push To Local RAG]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ]
   },
   "provenance": {
@@ -73,32 +88,6 @@ elevatedFrom:: [[Push To Local RAG]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:push-to-local-rag:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:19ad8557c018ad97c852e04bb2b5e826cf672fc0cddff4cfa7caca7c022352a2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[...]]",
-      "resolved": "urn:visionflow:linked:untitled",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Push To Local RAG is a data-pipeline operation that extracts, cleans, and concatenates Logseq markdown pages, then writes a curated corpus file consumed by a local Retrieval-Augmented Generation system. Steps include URL stripping, special-character normalisation, whitespace normalisation, and a minimum byte-length threshold. The output improves retrieval precision for local LLM inference without sending data to external services.

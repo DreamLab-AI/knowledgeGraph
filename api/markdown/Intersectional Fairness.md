@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intersectional Fairness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,26 +67,62 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"}
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:fairness-constraints", "label": "Fairness Constraints"},
-      {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"}
+      {
+        "@id": "urn:ngm:class:fairness-constraints",
+        "label": "Fairness Constraints"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:disparate-impact", "label": "Disparate Impact"},
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"}
+      {
+        "@id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      }
     ]
   },
   "provenance": {
@@ -101,52 +132,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:intersectional-fairness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bb4b38ac75c42d5660880c74200e7178e043b5c0101422ad2c2897bba90a1978"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Buolamwini and Gebru (2018)]]",
-      "resolved": "urn:visionflow:linked:buolamwini-and-gebru-2018",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Crenshaw (1989)]]",
-      "resolved": "urn:visionflow:linked:crenshaw-1989",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE P7003-2021]]",
-      "resolved": "urn:visionflow:linked:ieee-p7003-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Intersectional Fairness is an approach to algorithmic fairness that accounts for overlapping and interacting protected attributes, recognizing that individuals with multiple marginalized identities may experience unique forms of discrimination not captured by analyzing single attributes in isolation. Rooted in intersectionality theory from critical race and feminist scholarship (Crenshaw 1989), this framework acknowledges that the experiences of, for example, Black women cannot be understood simply as the combination of being Black and being a woman, but involve distinct discriminatory patterns at the intersection of race and gender. In AI systems, intersectional fairness requires evaluating bias and fairness metrics across intersectional subgroups defined by specific combinations of protected attribute values, where the number of subgroups equals the product of attribute cardinalities (e.g., 2 genders × 4 race categories × 3 age brackets = 24 subgroups). This analysis often reveals intersectional disparities where subgroups experience worse outcomes than predicted by single-attribute analysis, particularly affecting individuals with multiple marginalized identities. Implementation challenges include exponential growth of subgroups with additional attributes, sample size limitations for rare intersectional groups, and computational complexity of enforcing fairness across all subgroups simultaneously. Intersectional fairness auditing is increasingly required by comprehensive AI governance frameworks and documented in research by Buolamwini and Gebru (2018) on gender-race bias in facial recognition.

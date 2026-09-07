@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Apache Kafka
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,34 +20,90 @@ public: true
   "definition": "Apache Kafka is an open-source distributed event streaming platform originally developed at LinkedIn and donated to the Apache Software Foundation in 2011. It provides a high-throughput, low-latency, fault-tolerant publish-subscribe messaging system built around an immutable, ordered, partitioned commit log. Kafka decouples producers and consumers of data streams, enabling real-time data pipelines, event-driven architectures, and stream processing applications at scale across thousands of nodes handling trillions of events per day.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"}
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
-      {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:real-time", "label": "Real Time"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"},
-      {"@id": "urn:ngm:class:data-processing", "label": "Data Processing"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-architecture", "label": "Distributed Architecture"},
-      {"@id": "urn:ngm:class:software-infrastructure", "label": "Software Infrastructure"}
+      {
+        "@id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:software-infrastructure",
+        "label": "Software Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:monitoring-dashboard", "label": "Monitoring Dashboard"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
     ]
   },
   "quality": 0.8

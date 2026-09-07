@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inflation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,49 +72,121 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:emission-schedule", "label": "Emission Schedule"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:inflation-rate-parameter", "label": "Inflation Rate Parameter"}
+      {
+        "@id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:inflation-rate-parameter",
+        "label": "Inflation Rate Parameter"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:minting", "label": "Minting"},
-      {"@id": "urn:ngm:class:circulating-supply", "label": "Circulating Supply"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:minting",
+        "label": "Minting"
+      },
+      {
+        "@id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:validator-reward", "label": "Validator Reward"},
-      {"@id": "urn:ngm:class:staking-incentive", "label": "Staking Incentive"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+      {
+        "@id": "urn:ngm:class:validator-reward",
+        "label": "Validator Reward"
+      },
+      {
+        "@id": "urn:ngm:class:staking-incentive",
+        "label": "Staking Incentive"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:supply-cap", "label": "Supply Cap"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:supply-cap",
+        "label": "Supply Cap"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fixed-supply-token", "label": "Fixed Supply Token"},
-      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"}
+      {
+        "@id": "urn:ngm:class:fixed-supply-token",
+        "label": "Fixed Supply Token"
+      },
+      {
+        "@id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"},
-      {"@id": "urn:ngm:class:purchasing-power", "label": "Purchasing Power"},
-      {"@id": "urn:ngm:class:token-dilution", "label": "Token Dilution"}
+      {
+        "@id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "@id": "urn:ngm:class:purchasing-power",
+        "label": "Purchasing Power"
+      },
+      {
+        "@id": "urn:ngm:class:token-dilution",
+        "label": "Token Dilution"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:central-bank-monetary-policy", "label": "Central Bank Monetary Policy"},
-      {"@id": "urn:ngm:class:consumer-price-index", "label": "Consumer Price Index"}
+      {
+        "@id": "urn:ngm:class:central-bank-monetary-policy",
+        "label": "Central Bank Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-price-index",
+        "label": "Consumer Price Index"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:token-inflation", "label": "Token Inflation"},
-    {"@id": "urn:ngm:class:monetary-inflation", "label": "Monetary Inflation"}
+    {
+      "@id": "urn:ngm:class:token-inflation",
+      "label": "Token Inflation"
+    },
+    {
+      "@id": "urn:ngm:class:monetary-inflation",
+      "label": "Monetary Inflation"
+    }
   ],
   "quality": 0.8,
   "provenance": {
@@ -129,62 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inflation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:775422fe8c9268a8f037132ad121b7b69c2c0b772305f687a2b2454c7d2dd26b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Increasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

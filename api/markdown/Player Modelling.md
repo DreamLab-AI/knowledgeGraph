@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Player Modelling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Player modelling is the computational construction of representations of a player's preferences, skill, behaviour, and emotional state from in-game data. These models enable games to personalise difficulty, content, and recommendations, and to predict future actions. It is a foundational technique for adaptive and AI-driven game systems.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-in-games", "label": "AI in Games"}
+      {
+        "@id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      }
     ]
   },
   "quality": 0.72

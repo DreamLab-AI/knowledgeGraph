@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wyoming Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "The Wyoming Protocol is an open, peer-to-peer communication protocol used in the Home Assistant ecosystem to connect voice and audio services such as wake-word detection, speech-to-text, and text-to-speech. It defines a simple JSON-over-socket event framing that lets independent voice components run as networked services and interoperate locally without cloud dependencies. It matters as the backbone of Home Assistant's privacy-preserving local voice assistant pipeline.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:home-assistant", "label": "Home Assistant"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      }
+    ]
   },
   "quality": 0.72
 }

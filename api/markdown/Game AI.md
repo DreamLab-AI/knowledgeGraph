@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - GameAI
----
-
-# Game AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,9 +170,8 @@ aliases:
 - ### Content
   - Game AI has a lineage dating to the earliest arcade games: Pac-Man's ghost AI (1980) used distinct finite-state machines for Blinky, Pinky, Inky, and Clyde to create emergent unpredictability from simple rules. Navigation meshes, steering behaviours (Reynolds, 1987), and hierarchical task networks became standard tools in the 1990s and 2000s. The A* pathfinding algorithm, first published in 1968, remains the dominant pathfinding primitive in commercial games despite decades of research into alternatives.
 
-  - Modern game AI architectures layer behaviour trees (for readable, designer-editable agent logic), utility AI (for weighted goal selection), and Monte Carlo Tree Search (for strategic planning in turn-based games) across different abstraction levels. Middleware solutions such as Kythera AI and Havok AI provide commercial pathfinding and navigation. DeepMind's AlphaStar demonstrated that reinforcement learning agents could reach grandmaster level in StarCraft II, though real-time constraints prevented direct deployment in consumer products.
+  - Modern game AI architectures layer behaviour trees (for readable, designer-editable agent logic), utility AI (for weighted goal selection), and Monte Carlo Tree Search (for strategic planning in turn-based games) across different abstraction levels. Middleware solutions such as Kythera AI and Havok AI provide commercial pathfinding and navigation. DeepMind's AlphaStar demonstrated that reinforcement learning agents [private] reach grandmaster level in StarCraft II, though real-time constraints prevented direct deployment in consumer products.
 
   - The ecosystem distinguishes between "game AI" (in-game behaviour systems) and "AI for games" (external tools for asset creation, testing, and analytics). AI-driven playtesting platforms simulate millions of player sessions to surface balance issues before release. NVIDIA's ACE (Avatar Cloud Engine) provides generative character AI as a cloud service, streaming conversational NPC behaviour into game clients without local inference overhead.
 
   - In 2024–2025, large language models are being integrated as dialogue and quest-generation backends, with studios including Ubisoft and Electronic Arts publishing research on LLM-driven narrative systems. Procedural generation powered by diffusion models enables on-the-fly texture and level-of-detail generation. The field faces an ethical debate around AI replacing human writers and designers, balanced against arguments that AI tools expand creative scope for smaller studios without the resources of major publishers.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metaverse Ontology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -268,92 +263,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-ontology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9fef0d0ddfa8c54d5ac8febe8f71eb789cb8df7b8270cefbd5ccabcdbd92bfd3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Multi-Layer Agentic Governance Framework]]",
-      "resolved": "urn:visionflow:owl:class:agentic-mycelia",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Constitutional AI Language Model Family]]",
-      "resolved": "urn:visionflow:owl:class:anthropic-claude",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cashu]]",
-      "resolved": "urn:visionflow:owl:class:cashu",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Instruction-Following Conversational AI System]]",
-      "resolved": "urn:visionflow:owl:class:chat-gpt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gemini Multimodal Language Model]]",
-      "resolved": "urn:visionflow:owl:class:gemini",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graphing]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning and Similar L2]]",
-      "resolved": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Logseq]]",
-      "resolved": "urn:visionflow:owl:class:logseq",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI-Assisted Ontology Elicitation Method]]",
-      "resolved": "urn:visionflow:owl:class:ontology-conversation-with-ais",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RGB and Client Side Validation]]",
-      "resolved": "urn:visionflow:owl:class:rgb-and-client-side-validation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Entity Schema Archive]]",
-      "resolved": "urn:visionflow:owl:class:some-legacy-linked-json",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The Metaverse Ontology is a formal knowledge representation that classifies the entities, relationships, and properties constituting a metaverse ecosystem—including agents, scenes, digital assets, economies, governance structures, and communication protocols. It provides a shared semantic vocabulary enabling interoperability between platforms, AI systems, and toolchains operating within or around persistent immersive environments.
 
@@ -515,7 +424,7 @@ public: true
 		- 10. Convergence of film and games: The ontology supports the convergence of film and games through the `MetaverseScene` and `MetaverseEvent` classes. Scenes can represent immersive, cinematic environments, while events can encompass interactive gameplay sessions or narrative-driven experiences. The `MetaverseAgent` class allows for the participation of both human users and AI-controlled characters, blurring the line between film and game experiences.
 		- 11. Blurring of IP boundaries and narrative flow: The `Varset` class introduces the concept of variations or alternate versions of metaverse scenes and objects, enabling the creation of branching narratives and remixing of intellectual property. The `InteractionEvent` class captures the interactions between agents and objects, allowing for dynamic and emergent storytelling that blurs traditional narrative boundaries.
 		- 12. Multimodal and hardware-agnostic: The ontology is designed to be multimodal and hardware-agnostic, focusing on the fundamental concepts and relationships within the metaverse rather than specific hardware implementations. Classes like `MetaverseAgent` and `MetaverseScene` can be instantiated across different platforms and devices, ensuring a consistent metaverse experience regardless of the hardware used.
-		- 13. Mobile-first experiences: While the ontology itself is hardware-agnostic, it can be easily extended to incorporate mobile-specific considerations. For example, the `MetaverseScene` class could include properties like `isMobileOptimized` to indicate scenes that are designed for mobile devices, ensuring a seamless mobile-first experience.
+		- 13. Mobile-first experiences: While the ontology itself is hardware-agnostic, it can be easily extended to incorporate mobile-specific considerations. For example, the `MetaverseScene` class [private] include properties like `isMobileOptimized` to indicate scenes that are designed for mobile devices, ensuring a seamless mobile-first experience.
 		- 14. Safeguarding and governance: The ontology addresses safeguarding and governance through classes like `MetaversePolicy`, which represents the rules and regulations governing behavior and interactions within the metaverse. The `GovernanceStructure` class captures the decision-making processes and enforcement mechanisms that ensure the safety and well-being of metaverse participants.
 		- 15. Scaffolded by GenAI: The integration of GenAI (Generative AI) within the metaverse is supported through the `AIAgent` class and its associated properties, such as `hasLearningModel` and `hasTrainingData`. These properties allow for the representation of AI agents with varying levels of autonomy and adaptability, capable of generating content, providing assistance, and engaging in dynamic interactions with human users.
 		- 16. Supports Agentic AI actors: The `AIAgent` class, along with its subclasses and properties, enables the creation of agentic AI actors within the metaverse. The `AgentArchetype` class defines different roles and behaviors for AI agents, while properties like `hasAgentArchetype` and `hasEmotionalState` imbue them with personality and emotional intelligence. The `participatesIn` property allows AI agents to actively engage in metaverse scenes and events alongside human users.
@@ -611,7 +520,7 @@ public: true
 				- **Scene Schema Scaffolding:** Exploring Linked-JSON structures to emulate the more expressive OWL `owl:oneOf` and `owl:someValuesFrom`.
 					- Linked-JSON representation for `SceneType` and `MetaverseScene` use `metaverse:minCardinality` to indicate that a `MetaverseScene` must have at least one `SceneObject`.
 				- **AI Agent Capabilities:** Expand the capabilities property of `AIAgent` to include specific actions and functions related to Bitcoin, RGB, and Nostr, such as "create_digital_asset", "transfer_ownership", "publish_nostr_event", etc.
-				- **Event Logging and Attestation:** Consider adding mechanisms for logging significant events and generating cryptographic attestations, which could be used for dispute resolution or auditing purposes. This would operate on an automated threshold trigger system mediated by LLM, and would wrap the recent interactions between parties in pubkey encrypted data blobs, sending them to both parties alongside a report of the trigger event. This would potentially allow action by the parties in their jurisdictions. The data would then be deleted from the metaverse.
+				- **Event Logging and Attestation:** Consider adding mechanisms for logging significant events and generating cryptographic attestations, which [private] be used for dispute resolution or auditing purposes. This would operate on an automated threshold trigger system mediated by LLM, and would wrap the recent interactions between parties in pubkey encrypted data blobs, sending them to both parties alongside a report of the trigger event. This would potentially allow action by the parties in their jurisdictions. The data would then be deleted from the metaverse.
 		- http://owlgred.lumii.lv/online_visualization/4qge#
 		- [[Metaverse Entity Schema Archive]]
   - This more specific and expanded metaverse ontology featuring a relay based communication protocol, URIs, blockchain wallets, and NVIDIA omniverse, offers a comprehensive and extensible framework generated with the help of GenAI. It offers a glimpse of the potential for automating ontological descriptions for emergent and novel social, digital, collaborative spaces.

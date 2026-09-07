@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Investor Protection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,57 +169,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:investor-protection:afb1a774ed40",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ecb73898b271fdb2772fbff47ab1cd4f8213f43735facdbbfb843ca9710a7e1f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Requirements]]",
-      "resolved": "urn:visionflow:linked:regulatory-requirements",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Market Integrity]]",
-      "resolved": "urn:visionflow:linked:market-integrity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consumer Protection]]",
-      "resolved": "urn:visionflow:linked:consumer-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Regulation]]",
-      "resolved": "urn:visionflow:linked:financial-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.iosco.org/]]",
-      "resolved": "urn:visionflow:linked:https-www-iosco-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.esma.europa.eu/investor-corner]]",
-      "resolved": "urn:visionflow:linked:https-www-esma-europa-eu-investor-corner",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Investor protection comprises the rules and mechanisms designed to safeguard investors from unfair, abusive or fraudulent practices in financial markets.

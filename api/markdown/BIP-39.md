@@ -1,57 +1,108 @@
----
-public: true
----
-
-# BIP-39
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:bip39", "@type":"Page", "title":"BIP-39", "vc:slug":"bip39", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:bip39",
+  "@type": "Page",
+  "title": "BIP-39",
+  "vc:slug": "bip39",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:bip39",
-  "@type":"Class",
-  "label":"BIP-39",
-  "definition":"BIP-39 is a Bitcoin Improvement Proposal that defines how to encode wallet entropy as a human-readable mnemonic seed phrase and how to derive a binary seed from it. It maps random entropy plus a checksum onto words drawn from a fixed wordlist, then stretches the phrase and an optional passphrase into a seed via a key derivation function. The resulting seed feeds hierarchical deterministic wallets, making secrets easier to back up and transcribe.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:seed-phrase","label":"Seed Phrase"}],
-  "relations":{
-    "implements":[
-      {"@id":"urn:ngm:class:seed-phrase","label":"Seed Phrase"},
-      {"@id":"urn:ngm:class:key-derivation-function","label":"Key Derivation Function"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bip39",
+  "@type": "Class",
+  "label": "BIP-39",
+  "definition": "BIP-39 is a Bitcoin Improvement Proposal that defines how to encode wallet entropy as a human-readable mnemonic seed phrase and how to derive a binary seed from it. It maps random entropy plus a checksum onto words drawn from a fixed wordlist, then stretches the phrase and an optional passphrase into a seed via a key derivation function. The resulting seed feeds hierarchical deterministic wallets, making secrets easier to back up and transcribe.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:seed-phrase",
+      "label": "Seed Phrase"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:seed-phrase",
+        "label": "Seed Phrase"
+      },
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:entropy","label":"Entropy"},
-      {"@id":"urn:ngm:class:hash-function","label":"Hash Function"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:hierarchical-deterministic-wallet","label":"Hierarchical Deterministic Wallet"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:key-derivation-function","label":"Key Derivation Function"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:hardware-wallet","label":"Hardware Wallet"},
-      {"@id":"urn:ngm:class:cryptocurrency-wallet","label":"Cryptocurrency Wallet"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      }
     ],
-    "produces":[
-      {"@id":"urn:ngm:class:cryptographic-key","label":"Cryptographic Key"}
+    "produces": [
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:private-key","label":"Private Key"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:elliptic-curve-cryptography","label":"Elliptic Curve Cryptography"},
-      {"@id":"urn:ngm:class:bitcoin","label":"Bitcoin"},
-      {"@id":"urn:ngm:class:wallet","label":"Wallet"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

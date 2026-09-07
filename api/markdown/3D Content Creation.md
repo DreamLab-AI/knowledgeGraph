@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Content Creation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +21,53 @@ public: true
   "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}
+    {
+      "@id": "urn:ngm:class:content-creation",
+      "label": "Content Creation"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:3-d-modeling-software", "label": "3D Modeling Software"},
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+      {
+        "@id": "urn:ngm:class:3-d-modeling-software",
+        "label": "3D Modeling Software"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-content-pipeline", "label": "3D Content Pipeline"},
-      {"@id": "urn:ngm:class:digital-twin-creation", "label": "Digital Twin Creation"},
-      {"@id": "urn:ngm:class:xr-applications", "label": "XR Applications"}
+      {
+        "@id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "@id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:3-d-generation", "label": "3D Generation"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-generation",
+        "label": "3D Generation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +88,3 @@ public: true
   - The ecosystem includes dedicated tooling at each stage: Autodesk Maya and 3ds Max for rigging and animation, ZBrush and Mudbox for sculpting, Substance Painter and Quixel Mixer for texturing, Houdini for procedural geometry and visual effects, and Blender as an all-in-one open-source alternative. Asset interchange relies on standard formats including FBX, glTF 2.0, and USD, allowing cross-application workflows. Cloud-based collaboration platforms and version-control integrations have modernised studio pipelines to handle geographically distributed teams.
 
   - Through 2024–2025, AI-assisted generation is reshaping the discipline: text-to-3D and image-to-3D models can produce draft geometry and textures in seconds, with [[3D Generation]] tools such as TripoSR, Stable Zero123, and Meshy integrated into production pipelines. Photogrammetry and [[3D Scanning]] further accelerate asset creation by capturing real-world geometry. The convergence of procedural generation, AI drafting, and human artistry is raising both quality ceilings and throughput, making high-fidelity 3D content accessible to smaller teams and individual creators.
-

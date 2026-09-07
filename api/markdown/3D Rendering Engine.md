@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Rendering Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -219,52 +214,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-d-rendering-engine:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-time Visualisation]]",
-      "resolved": "urn:visionflow:linked:real-time-visualisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[XR Applications]]",
-      "resolved": "urn:visionflow:linked:xr-applications",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Immersive Experiences]]",
-      "resolved": "urn:visionflow:owl:class:immersive-experiences",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A 3D rendering engine is software that converts three-dimensional geometric data into two-dimensional images through processes including lighting calculation, texture mapping, and rasterisation. In the context of metaverse and XR technologies, rendering engines power real-time visualisation of immersive virtual environments, enabling stereoscopic displays, spatial audio integration, and motion-to-photon latency optimisation essential for presence and embodiment in virtual spaces.

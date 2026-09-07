@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Microsoft Mesh
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:microsoft-mesh:c5b132596e4b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4520e6ec246dd5f227bf105672cd1ea5801aa17bd7efb4a661e48077d3a9c287"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar System]]",
-      "resolved": "urn:visionflow:linked:avatar-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mixed Reality]]",
-      "resolved": "urn:visionflow:linked:mixed-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual World]]",
-      "resolved": "urn:visionflow:linked:virtual-world",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:linked:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Domain]]",
-      "resolved": "urn:visionflow:linked:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Microsoft Mesh is a platform for shared mixed-reality experiences that lets distributed participants meet as avatars in persistent 3D spaces across headsets and conventional devices.

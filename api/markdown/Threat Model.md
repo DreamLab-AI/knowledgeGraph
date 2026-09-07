@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Threat Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:threat-model",
   "@type": "Class",
   "label": "Threat Model",
-  "definition": "A threat model is a structured representation of the security properties, assumptions, and adversarial conditions relevant to a system, used to identify potential attack vectors, prioritise mitigations, and reason systematically about security guarantees. It defines who the adversary is (capabilities, motivations, access), what assets are worth protecting, and what attacks — such as those catalogued in STRIDE or MITRE ATT&CK — could compromise confidentiality, integrity, or availability. Threat modelling is applied during system design to surface architectural weaknesses before implementation, and updated continuously as the threat landscape evolves. It is a prerequisite for sound security architecture, cryptographic protocol design, and regulatory compliance.",
+  "definition": "A threat model is a structured representation of the security properties, assumptions, and adversarial conditions relevant to a system, used to identify potential attack vectors, prioritise mitigations, and reason systematically about security guarantees. It defines who the adversary is (capabilities, motivations, access), what assets are worth protecting, and what attacks — such as those catalogued in STRIDE or MITRE ATT&CK — [private] compromise confidentiality, integrity, or availability. Threat modelling is applied during system design to surface architectural weaknesses before implementation, and updated continuously as the threat landscape evolves. It is a prerequisite for sound security architecture, cryptographic protocol design, and regulatory compliance.",
   "domain": "security",
   "maturity": "established",
   "subClassOf": [

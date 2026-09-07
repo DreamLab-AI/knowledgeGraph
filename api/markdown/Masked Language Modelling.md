@@ -1,39 +1,126 @@
----
-public: true
----
-
-# Masked Language Modelling
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:masked-language-modelling", "@type":"Page", "title":"Masked Language Modelling", "vc:slug":"masked-language-modelling", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:masked-language-modelling",
+  "@type": "Page",
+  "title": "Masked Language Modelling",
+  "vc:slug": "masked-language-modelling",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:masked-language-modelling",
-  "@type":"Class",
-  "label":"Masked Language Modelling",
-  "definition":"Masked language modelling is a self-supervised pre-training objective in which random tokens of an input sequence are hidden and the model learns to predict them from the surrounding bidirectional context. By conditioning on both left and right context, it produces deep contextual representations of language. It is the objective popularised by BERT and underpins many encoder-based transformer models.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:pre-training","label":"Pre Training"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:cross-entropy-loss","label":"Cross Entropy Loss"}],
-    "uses":[{"@id":"urn:ngm:class:transformer","label":"Transformer"},{"@id":"urn:ngm:class:self-supervised-learning","label":"Self Supervised Learning"}],
-    "partOf":[{"@id":"urn:ngm:class:pre-training","label":"Pre Training"}],
-    "implements":[{"@id":"urn:ngm:class:self-supervised-learning","label":"Self Supervised Learning"}],
-    "enables":[{"@id":"urn:ngm:class:representation-learning","label":"Representation Learning"},{"@id":"urn:ngm:class:fine-tuning","label":"Fine Tuning"}],
-    "dependsOn":[{"@id":"urn:ngm:class:transformer","label":"Transformer"}],
-    "supports":[{"@id":"urn:ngm:class:bert","label":"BERT"}],
-    "requires":[{"@id":"urn:ngm:class:contextual-embedding","label":"Contextual Embedding"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:next-token-prediction","label":"Next Token Prediction"},{"@id":"urn:ngm:class:autoregressive-model","label":"Autoregressive Model"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:language-model","label":"Language Model"}],
-    "relatedTo":[{"@id":"urn:ngm:class:word-embedding","label":"Word Embedding"},{"@id":"urn:ngm:class:representation-learning","label":"Representation Learning"},{"@id":"urn:ngm:class:loss-function","label":"Loss Function"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:masked-language-modelling",
+  "@type": "Class",
+  "label": "Masked Language Modelling",
+  "definition": "Masked language modelling is a self-supervised pre-training objective in which random tokens of an input sequence are hidden and the model learns to predict them from the surrounding bidirectional context. By conditioning on both left and right context, it produces deep contextual representations of language. It is the objective popularised by BERT and underpins many encoder-based transformer models.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:pre-training",
+      "label": "Pre Training"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross Entropy Loss"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self Supervised Learning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self Supervised Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:contextual-embedding",
+        "label": "Contextual Embedding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:next-token-prediction",
+        "label": "Next Token Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

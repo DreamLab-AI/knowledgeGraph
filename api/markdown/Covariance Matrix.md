@@ -1,52 +1,175 @@
----
-public: true
----
-
-# Covariance Matrix
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:covariance-matrix", "@type": "Page", "title": "Covariance Matrix", "vc:slug": "covariance-matrix", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": [
-  {"@id": "urn:visionflow:linked:probability-distribution", "vc:label": "Probability Distribution"},
-  {"@id": "urn:visionflow:linked:linear-algebra", "vc:label": "Linear Algebra"},
-  {"@id": "urn:visionflow:linked:gaussian-distribution", "vc:label": "Gaussian Distribution"},
-  {"@id": "urn:visionflow:linked:principal-component-analysis", "vc:label": "Principal Component Analysis"},
-  {"@id": "urn:visionflow:linked:dimensionality-reduction", "vc:label": "Dimensionality Reduction"},
-  {"@id": "urn:visionflow:linked:kalman-filter", "vc:label": "Kalman Filter"},
-  {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-  {"@id": "urn:visionflow:linked:anomaly-detection", "vc:label": "Anomaly Detection"},
-  {"@id": "urn:visionflow:linked:feature-extraction", "vc:label": "Feature Extraction"},
-  {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-  {"@id": "urn:visionflow:linked:multivariate-statistics", "vc:label": "Multivariate Statistics"},
-  {"@id": "urn:visionflow:linked:eigendecomposition", "vc:label": "Eigendecomposition"},
-  {"@id": "urn:visionflow:linked:singular-value-decomposition", "vc:label": "Singular Value Decomposition"},
-  {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
-  {"@id": "urn:visionflow:linked:mahalanobis-distance", "vc:label": "Mahalanobis Distance"},
-  {"@id": "urn:visionflow:linked:gaussian-process", "vc:label": "Gaussian Process"},
-  {"@id": "urn:visionflow:linked:state-estimation", "vc:label": "State Estimation"},
-  {"@id": "urn:visionflow:linked:sensor-fusion", "vc:label": "Sensor Fusion"},
-  {"@id": "urn:visionflow:linked:portfolio-optimisation", "vc:label": "Portfolio Optimisation"},
-  {"@id": "urn:visionflow:linked:random-matrix-theory", "vc:label": "Random Matrix Theory"},
-  {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-  {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-  {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-  {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-  {"@id": "urn:visionflow:linked:cost-function", "vc:label": "Cost Function"},
-  {"@id": "urn:visionflow:linked:extended-kalman-filter", "vc:label": "Extended Kalman Filter"},
-  {"@id": "urn:visionflow:linked:slam", "vc:label": "SLAM"},
-  {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-  {"@id": "urn:visionflow:linked:correlation-matrix", "vc:label": "Correlation Matrix"},
-  {"@id": "urn:visionflow:linked:precision-matrix", "vc:label": "Precision Matrix"},
-  {"@id": "urn:visionflow:linked:maximum-likelihood-estimation", "vc:label": "Maximum Likelihood Estimation"},
-  {"@id": "urn:visionflow:linked:expectation-maximisation", "vc:label": "Expectation-Maximisation"},
-  {"@id": "urn:visionflow:linked:normal-distribution", "vc:label": "Normal Distribution"},
-  {"@id": "urn:visionflow:linked:whitening", "vc:label": "Whitening"},
-  {"@id": "urn:visionflow:linked:factor-analysis", "vc:label": "Factor Analysis"},
-  {"@id": "urn:visionflow:linked:signal-processing", "vc:label": "Signal Processing"},
-  {"@id": "urn:visionflow:linked:data-preprocessing", "vc:label": "Data Preprocessing"},
-  {"@id": "urn:visionflow:linked:unsupervised-learning", "vc:label": "Unsupervised Learning"},
-  {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-  {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"}
-]}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:covariance-matrix",
+  "@type": "Page",
+  "title": "Covariance Matrix",
+  "vc:slug": "covariance-matrix",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:probability-distribution",
+      "vc:label": "Probability Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-algebra",
+      "vc:label": "Linear Algebra"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-distribution",
+      "vc:label": "Gaussian Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:principal-component-analysis",
+      "vc:label": "Principal Component Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:dimensionality-reduction",
+      "vc:label": "Dimensionality Reduction"
+    },
+    {
+      "@id": "urn:visionflow:linked:kalman-filter",
+      "vc:label": "Kalman Filter"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multivariate-statistics",
+      "vc:label": "Multivariate Statistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:eigendecomposition",
+      "vc:label": "Eigendecomposition"
+    },
+    {
+      "@id": "urn:visionflow:linked:singular-value-decomposition",
+      "vc:label": "Singular Value Decomposition"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularisation",
+      "vc:label": "Regularisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:mahalanobis-distance",
+      "vc:label": "Mahalanobis Distance"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-process",
+      "vc:label": "Gaussian Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-estimation",
+      "vc:label": "State Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:portfolio-optimisation",
+      "vc:label": "Portfolio Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:random-matrix-theory",
+      "vc:label": "Random Matrix Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-function",
+      "vc:label": "Cost Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-kalman-filter",
+      "vc:label": "Extended Kalman Filter"
+    },
+    {
+      "@id": "urn:visionflow:linked:slam",
+      "vc:label": "SLAM"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:correlation-matrix",
+      "vc:label": "Correlation Matrix"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-matrix",
+      "vc:label": "Precision Matrix"
+    },
+    {
+      "@id": "urn:visionflow:linked:maximum-likelihood-estimation",
+      "vc:label": "Maximum Likelihood Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:expectation-maximisation",
+      "vc:label": "Expectation-Maximisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:normal-distribution",
+      "vc:label": "Normal Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:whitening",
+      "vc:label": "Whitening"
+    },
+    {
+      "@id": "urn:visionflow:linked:factor-analysis",
+      "vc:label": "Factor Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:signal-processing",
+      "vc:label": "Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-preprocessing",
+      "vc:label": "Data Preprocessing"
+    },
+    {
+      "@id": "urn:visionflow:linked:unsupervised-learning",
+      "vc:label": "Unsupervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    }
+  ]
+}
 ```
 
 ```json-ld
@@ -70,58 +193,157 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"},
-      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"}
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:variance", "label": "Variance"},
-      {"@id": "urn:ngm:class:correlation-matrix", "label": "Correlation Matrix"},
-      {"@id": "urn:ngm:class:eigendecomposition", "label": "Eigendecomposition"}
+      {
+        "@id": "urn:ngm:class:variance",
+        "label": "Variance"
+      },
+      {
+        "@id": "urn:ngm:class:correlation-matrix",
+        "label": "Correlation Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:eigendecomposition",
+        "label": "Eigendecomposition"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
-      {"@id": "urn:ngm:class:multivariate-data", "label": "Multivariate Data"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:multivariate-data",
+        "label": "Multivariate Data"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"},
-      {"@id": "urn:ngm:class:random-variable", "label": "Random Variable"}
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:principal-component-analysis", "label": "Principal Component Analysis"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:mahalanobis-distance", "label": "Mahalanobis Distance"},
-      {"@id": "urn:ngm:class:whitening", "label": "Whitening"},
-      {"@id": "urn:ngm:class:factor-analysis", "label": "Factor Analysis"},
-      {"@id": "urn:ngm:class:portfolio-optimisation", "label": "Portfolio Optimisation"}
+      {
+        "@id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:mahalanobis-distance",
+        "label": "Mahalanobis Distance"
+      },
+      {
+        "@id": "urn:ngm:class:whitening",
+        "label": "Whitening"
+      },
+      {
+        "@id": "urn:ngm:class:factor-analysis",
+        "label": "Factor Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:portfolio-optimisation",
+        "label": "Portfolio Optimisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:eigendecomposition", "label": "Eigendecomposition"},
-      {"@id": "urn:ngm:class:singular-value-decomposition", "label": "Singular Value Decomposition"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:eigendecomposition",
+        "label": "Eigendecomposition"
+      },
+      {
+        "@id": "urn:ngm:class:singular-value-decomposition",
+        "label": "Singular Value Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:correlation-matrix", "label": "Correlation Matrix"},
-      {"@id": "urn:ngm:class:precision-matrix", "label": "Precision Matrix"}
+      {
+        "@id": "urn:ngm:class:correlation-matrix",
+        "label": "Correlation Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:precision-matrix",
+        "label": "Precision Matrix"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"},
-      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:random-matrix-theory", "label": "Random Matrix Theory"},
-      {"@id": "urn:ngm:class:cost-function", "label": "Cost Function"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:random-matrix-theory",
+        "label": "Random Matrix Theory"
+      },
+      {
+        "@id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -315,7 +537,7 @@ public: true
 
     Ledoit and Wolf's (2004) optimal shrinkage estimator provided a practically computable estimator with oracle-optimal properties, analytically determining the shrinkage coefficient α* that minimises the expected Frobenius-norm estimation error. This resolved the longstanding practical problem of covariance ill-conditioning in a way that required no cross-validation and was computationally trivial to implement, making it immediately adoptable in finance and genomics. The graphical LASSO (Friedman, Hastie, Tibshirani, 2008) extended L1-regularised precision matrix estimation, enabling sparse graphical model selection by jointly estimating the conditional independence structure and the non-zero entries of Σ⁻¹. The ADMM algorithm (Boyd et al., 2011) provided an efficient solver for graphical LASSO at large scale. Gaussian processes as a [[Machine Learning]] framework (Rasmussen and Williams, 2006) brought covariance matrix methods into mainstream ML via kernel methods, recasting the covariance matrix as the Gram matrix K of a kernel function k(xᵢ, xⱼ) evaluated at training points — providing an infinite-dimensional analogue of the finite-dimensional covariance matrix. The kernel trick enables applying covariance-based methods in feature spaces too high-dimensional to materialise explicitly, underpinning SVMs, kernel PCA, and Gaussian process regression.
 
-    Key UK contributions: Rasmussen & Williams (2006) "Gaussian Processes for Machine Learning" was developed at UCL and Cambridge, providing the definitive reference for GP covariance matrices in ML. David MacKay (Cambridge) contributed foundational work on Bayesian methods with Gaussian covariance structures in his 2003 textbook and in the maximum evidence framework for model selection, which involves marginalising the posterior over parameters (requiring covariance matrix inversions) to compute model evidence. Neil Lawrence (Sheffield, now Cambridge) developed Gaussian process latent variable models (GP-LVM, 2005) with non-trivial covariance structures that could be learned from high-dimensional data such as motion capture sequences and genomic expression profiles. Mark Girolami (Cambridge/Alan Turing Institute) has contributed to Riemannian manifold methods treating the space of symmetric positive definite matrices SPD(d) geometrically — using the affine-invariant Riemannian metric and geodesic distances for covariance interpolation and averaging in [[Signal Processing]] and neuroimaging. Chris Williams (Edinburgh) contributed foundational work on the relationship between Gaussian processes and Bayesian neural networks in the infinite-width limit, connecting neural network covariance structures to GP kernels.
+    Key UK contributions: Rasmussen & Williams (2006) "Gaussian Processes for Machine Learning" was developed at UCL and Cambridge, providing the definitive reference for GP covariance matrices in ML. David MacKay (Cambridge) contributed foundational work on Bayesian methods with Gaussian covariance structures in his 2003 textbook and in the maximum evidence framework for model selection, which involves marginalising the posterior over parameters (requiring covariance matrix inversions) to compute model evidence. Neil Lawrence (Sheffield, now Cambridge) developed Gaussian process latent variable models (GP-LVM, 2005) with non-trivial covariance structures that [private] be learned from high-dimensional data such as motion capture sequences and genomic expression profiles. Mark Girolami (Cambridge/Alan Turing Institute) has contributed to Riemannian manifold methods treating the space of symmetric positive definite matrices SPD(d) geometrically — using the affine-invariant Riemannian metric and geodesic distances for covariance interpolation and averaging in [[Signal Processing]] and neuroimaging. Chris Williams (Edinburgh) contributed foundational work on the relationship between Gaussian processes and Bayesian neural networks in the infinite-width limit, connecting neural network covariance structures to GP kernels.
 
   ## Current Landscape (2026)
     The field of covariance matrix estimation is experiencing a resurgence driven by the intersection of high-dimensional statistics with [[Machine Learning]], and by the widening range of applications demanding reliable uncertainty quantification:

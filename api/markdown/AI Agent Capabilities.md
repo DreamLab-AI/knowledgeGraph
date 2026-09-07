@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Agent Capabilities
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-agent-capabilities",
   "title": "AI Agent Capabilities",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Claude Co-work", "Open Claude"],
+  "vc:outboundWikilinks": [
+    "Claude Co-work",
+    "Open Claude"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:tool-use",
+      "label": "Tool Use"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}, {"@id": "urn:ngm:class:claude", "label": "Claude"}, {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:claude",
+        "label": "Claude"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

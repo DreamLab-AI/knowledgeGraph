@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise AI Deployment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "enterprise-ai-deployment",
   "title": "Enterprise AI Deployment",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Hong Kong Monetary Authority", "Open Claude"],
+  "vc:outboundWikilinks": [
+    "Hong Kong Monetary Authority",
+    "Open Claude"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-adoption",
+      "label": "AI Adoption"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}, {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"}, {"@id": "urn:ngm:class:enterprise-software-integration", "label": "Enterprise Software Integration"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-software-integration",
+        "label": "Enterprise Software Integration"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

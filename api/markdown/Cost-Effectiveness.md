@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cost-Effectiveness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "cost-effectiveness",
   "title": "Cost-Effectiveness",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Alpha Sense", "GPT-5.6 Soul", "Kimi K3"],
+  "vc:outboundWikilinks": [
+    "Alpha Sense",
+    "GPT-5.6 Soul",
+    "Kimi K3"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-economics", "label": "AI Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-economics",
+      "label": "AI Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-model", "label": "AI Model"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}, {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

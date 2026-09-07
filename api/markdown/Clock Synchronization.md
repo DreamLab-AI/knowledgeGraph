@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Clock Synchronization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Clock Synchronization is the process of coordinating the time references of distributed computing nodes or electronic systems so that they share a consistent and accurate notion of time, enabling correct ordering of events, coordinated actions, and time-stamped record-keeping. Protocols such as NTP (Network Time Protocol) and PTP (Precision Time Protocol, IEEE 1588) achieve synchronization by exchanging timestamped messages and compensating for network propagation delays. Accurate clock synchronization is critical for distributed databases, consensus algorithms, telecommunications, industrial control systems, and financial transaction ordering.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:network-synchronization", "label": "Network Synchronization"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-synchronization",
+      "label": "Network Synchronization"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:time-sensitive-networking", "label": "Time-Sensitive Networking"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"},
-      {"@id": "urn:ngm:class:synchronization-protocol", "label": "Synchronization Protocol"}
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "@id": "urn:ngm:class:synchronization-protocol",
+        "label": "Synchronization Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:timestamp-service", "label": "Timestamp Service"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp-service",
+        "label": "Timestamp Service"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - In [[Distributed Systems]] and database engineering, Google's TrueTime API (used in Spanner) combines GPS and atomic clocks at each data centre to provide a bounded-uncertainty time interval, enabling serialisable distributed transactions without traditional distributed locking. CockroachDB and YugabyteDB implement similar hybrid logical clock (HLC) schemes that combine physical time (NTP-derived) with logical counters to maintain causality without GPS infrastructure. Blockchain networks vary widely: Bitcoin's 2-hour tolerance allows loose synchronization, while Ethereum's post-Merge PoS requires validators to be within 500 ms of consensus time.
 
   - By 2024–2025, [[Time-Sensitive Networking]] (IEEE 802.1AS, 802.1Qbv) is being deployed in automotive Ethernet (zonal architecture), industrial automation (IEC/IEEE 60802), and 5G fronthaul (O-RAN specifications), demanding sub-microsecond synchronization at scale. Roughtime (a Google-developed, cryptographically authenticated time protocol) addresses NTP's trust model weaknesses. Chrony has largely replaced older NTP daemon implementations in Linux distributions. Satellite-based timing (PPS signals, GNSS disciplined oscillators) remains the foundation, with concerns about GNSS spoofing prompting interest in alternative timing sources including fibre-based optical clocks.
-

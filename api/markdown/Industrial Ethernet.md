@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Industrial Ethernet
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Industrial Ethernet",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:ethernet", "vc:label": "Ethernet"},
-    {"@id": "urn:visionflow:linked:industrial-automation", "vc:label": "IndustrialAutomation"},
-    {"@id": "urn:visionflow:linked:profinet", "vc:label": "Profinet"},
-    {"@id": "urn:visionflow:linked:fieldbus", "vc:label": "Fieldbus"},
-    {"@id": "urn:visionflow:linked:time-sensitive-networking", "vc:label": "Time-Sensitive Networking"}
+    {
+      "@id": "urn:visionflow:linked:ethernet",
+      "vc:label": "Ethernet"
+    },
+    {
+      "@id": "urn:visionflow:linked:industrial-automation",
+      "vc:label": "IndustrialAutomation"
+    },
+    {
+      "@id": "urn:visionflow:linked:profinet",
+      "vc:label": "Profinet"
+    },
+    {
+      "@id": "urn:visionflow:linked:fieldbus",
+      "vc:label": "Fieldbus"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-sensitive-networking",
+      "vc:label": "Time-Sensitive Networking"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -39,16 +54,28 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:profinet", "label": "PROFINET"}
+      {
+        "@id": "urn:ngm:class:profinet",
+        "label": "PROFINET"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fieldbus", "label": "Fieldbus"}
+      {
+        "@id": "urn:ngm:class:fieldbus",
+        "label": "Fieldbus"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:time-sensitive-networking", "label": "Time-Sensitive Networking"}
+      {
+        "@id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      }
     ]
   },
   "quality": 0.8,

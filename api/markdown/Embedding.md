@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Embedding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -301,7 +296,7 @@ public: true
     - **Cosine Similarity:** sim(u, v) = u·v / (|u||v|). Invariant to vector magnitude; the canonical metric for text embeddings trained with normalised representations. Most embedding models L2-normalise their output so that cosine similarity equals dot product.
     - **Dot Product (Inner Product):** sim(u, v) = u·v. Equivalent to cosine similarity for normalised vectors; used in maximum inner product search (MIPS) settings such as recommendation systems where vector magnitude encodes item popularity.
     - **Euclidean (L2) Distance:** d(u, v) = |u - v|₂. Used in some metric-learning settings; sensitive to vector magnitude so usually requires L2-normalised embeddings.
-    - **[[Approximate Nearest Neighbour]] (ANN) Index Structures:** HNSW (Malkov and Yashunin, 2018) — the dominant production structure — builds a multi-layer navigable small-world graph with O(log N) expected query time and recall@100 above 97%. FAISS IVF-PQ uses inverted file indexes with product quantisation, compressing 768-dim float32 vectors (3KB each) to 8–16 bytes per vector, enabling billion-scale indexing on commodity hardware. ScaNN (Google, 2020) achieves superior recall/latency trade-offs via anisotropic quantisation. All are available as native index types in Qdrant, Weaviate, Milvus, and pgvector.
+    - **[[Approximate Nearest Neighbour]] (ANN) Index Structures:** HNSW (Malkov and Yashunin, 2018) — the dominant production structure — builds a multi-layer navigable small-world graph with O(log N) expected query time and recall@100 above 97%. FAISS IVF-PQ uses inverted file indexes with product quantisation, compressing 768-dim float32 vectors (3KB each) to 8–16 bytes per vector, enabling billion-scale indexing on commodity hardware. ScaNN (Google, 2020) achieves superior recall/latency trade-offs via anisotropic quantisation. All are available as native [private] types in Qdrant, Weaviate, Milvus, and pgvector.
 
   ## Applications and Use Cases
     - **[[Semantic Search]] and [[Embedding Search]]:** The primary production application. Queries and corpus items are embedded; retrieval ranks by cosine similarity, capturing paraphrase and conceptual equivalence without keyword overlap.
@@ -381,7 +376,7 @@ public: true
 
     **Matryoshka Representation Learning as Standard:** MRL is universally adopted across all major embedding providers. Practitioners can deploy a single model and select embedding dimensions (64 to 3072) adaptively based on storage budget and accuracy requirements. Voyage AI, Jina, Cohere, OpenAI, and Google all support dimension truncation with less than 2% accuracy loss from full-dimension representations.
 
-    **Multimodal Unification:** Google's Gemini Embedding 2 (March 2026) is the first production model supporting five modalities in a single vector space. The ability to issue a text query and retrieve images, videos, and documents through a unified index is moving from research prototype to production capability. MTEB v2 includes multimodal retrieval tasks for the first time, measuring cross-modal alignment as a first-class capability.
+    **Multimodal Unification:** Google's Gemini Embedding 2 (March 2026) is the first production model supporting five modalities in a single vector space. The ability to issue a text query and retrieve images, videos, and documents through a unified [private] is moving from research prototype to production capability. MTEB v2 includes multimodal retrieval tasks for the first time, measuring cross-modal alignment as a first-class capability.
 
     **Hybrid Retrieval as Default Architecture:** Production deployments almost universally combine dense embedding search with sparse BM25 retrieval via Reciprocal Rank Fusion. Elasticsearch 8.x, OpenSearch, and Vespa provide native hybrid search. Qdrant, Weaviate, and Milvus implement hybrid retrieval at the vector database level. The consensus is that BM25+dense hybrid outperforms either alone by 2–8% nDCG@10 across BEIR tasks.
 
@@ -397,7 +392,7 @@ public: true
   ## Future Directions (2026–2030)
     - **Universal Embedding Spaces:** Models unifying text, images, video, audio, structured data, code, and molecular representations in a single trained space, enabling retrieval across any combination of modalities without modality-specific preprocessing.
     - **Sparse Autoencoder Interpretable Embeddings:** SAE decompositions of dense LLM activations into sparse, human-interpretable concept vectors, enabling concept-filtered retrieval, GDPR-compliant personal data removal from embedding spaces, and explainable similarity search.
-    - **Streaming Incremental Index Updates:** Real-time embedding index updates as documents are created, modified, or deleted, at millions-per-second rates without indexing downtime — enabling live-data retrieval in financial trading, news, and social media contexts.
+    - **Streaming Incremental Index Updates:** Real-time embedding [private] updates as documents are created, modified, or deleted, at millions-per-second rates without indexing downtime — enabling live-data retrieval in financial trading, news, and social media contexts.
     - **Learned Index Structures:** Neural approximations of ANN indexes (e.g., learned hash tables, hierarchical clustering with learned quantisation) that outperform HNSW on specific data distributions by exploiting the learned geometry of the embedding space.
     - **Privacy-Preserving Embeddings at Scale:** Federated embedding training and differential-privacy perturbation mechanisms that enable model training over sensitive data (medical records, financial data, legal documents) without centralising raw inputs.
     - **Adaptive Retrieval:** LLM-driven meta-learners that select optimal embedding models, retrieval strategies, and fusion weights per query type, routing different query categories to specialist embedding models rather than applying a single general-purpose encoder to all queries.

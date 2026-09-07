@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Ontology Alignment
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

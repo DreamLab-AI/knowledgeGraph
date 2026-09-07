@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Instant Messaging
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,13 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"}],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:group-chat-channel", "label": "Group Chat Channel"},
-      {"@id": "urn:ngm:class:mentions-and-notifications", "label": "Mentions and Notifications"}
+      {
+        "@id": "urn:ngm:class:group-chat-channel",
+        "label": "Group Chat Channel"
+      },
+      {
+        "@id": "urn:ngm:class:mentions-and-notifications",
+        "label": "Mentions and Notifications"
+      }
     ]
   },
   "quality": 0.7

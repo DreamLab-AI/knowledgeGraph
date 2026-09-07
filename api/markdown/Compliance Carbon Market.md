@@ -1,57 +1,108 @@
----
-public: true
----
-
-# Compliance Carbon Market
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:compliance-carbon-market", "@type":"Page", "title":"Compliance Carbon Market", "vc:slug":"compliance-carbon-market", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:compliance-carbon-market",
+  "@type": "Page",
+  "title": "Compliance Carbon Market",
+  "vc:slug": "compliance-carbon-market",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:compliance-carbon-market",
-  "@type":"Class",
-  "label":"Compliance Carbon Market",
-  "definition":"A compliance carbon market is a regulated market in which emitters covered by a mandatory cap must surrender allowances or credits equal to their emissions, created under law to enforce climate targets. Prices are set by the supply of capped allowances and demand from regulated entities, creating a financial incentive to abate. It stands in contrast to voluntary carbon markets, where participation and credit purchase are discretionary.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:regulatory-framework","label":"Regulatory Framework"}],
-  "relations":{
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:voluntary-carbon-market","label":"Voluntary Carbon Market"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compliance-carbon-market",
+  "@type": "Class",
+  "label": "Compliance Carbon Market",
+  "definition": "A compliance carbon market is a regulated market in which emitters covered by a mandatory cap must surrender allowances or credits equal to their emissions, created under law to enforce climate targets. Prices are set by the supply of capped allowances and demand from regulated entities, creating a financial incentive to abate. It stands in contrast to voluntary carbon markets, where participation and credit purchase are discretionary.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:carbon-credits","label":"Carbon Credits"},
-      {"@id":"urn:ngm:class:carbon-registry","label":"Carbon Registry"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:climate-policy","label":"Climate Policy"},
-      {"@id":"urn:ngm:class:carbon-tax","label":"Carbon Tax"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:climate-policy",
+        "label": "Climate Policy"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-tax",
+        "label": "Carbon Tax"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"},
-      {"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
     ],
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:kyoto-protocol","label":"Kyoto Protocol"},
-      {"@id":"urn:ngm:class:paris-agreement","label":"Paris Agreement"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:kyoto-protocol",
+        "label": "Kyoto Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:carbon-offset","label":"Carbon Offset"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:verification","label":"Verification"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:green-finance","label":"Green Finance"},
-      {"@id":"urn:ngm:class:climate-finance","label":"Climate Finance"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "@id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

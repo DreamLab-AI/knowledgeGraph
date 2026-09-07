@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - DistributedStorage
----
-
-# Distributed Storage
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -28,33 +20,86 @@ aliases:
   "definition": "Distributed storage is a class of storage system architecture in which data is partitioned, replicated, and managed across multiple physically separate nodes or clusters to achieve scalability, fault tolerance, and high availability beyond the capacity of any single machine. Such systems employ replication protocols, erasure coding, consistent hashing, and distributed consensus algorithms to maintain data integrity and consistency under node failure, network partition, and concurrent access. Examples include object stores such as Amazon S3, distributed file systems such as HDFS and Ceph, and NewSQL databases with sharded storage layers.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:storage-layer", "label": "Storage Layer"}
+      {
+        "@id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:storage-layer",
+        "label": "Storage Layer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:scalable-architecture", "label": "Scalable Architecture"},
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-architecture",
+        "label": "Scalable Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
     ]
   },
   "quality": 0.8

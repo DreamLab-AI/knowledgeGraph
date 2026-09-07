@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Trading
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -133,72 +128,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:asset-trading:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ebf204c663151541db89a92b0979156ceece2915413e87d9df965a0b4f1b988e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Financial Services]]",
-      "resolved": "urn:visionflow:linked:financial-services",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Market Making]]",
-      "resolved": "urn:visionflow:linked:market-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asset Management]]",
-      "resolved": "urn:visionflow:owl:class:asset-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Exchange]]",
-      "resolved": "urn:visionflow:owl:class:decentralized-exchange",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Finance (DeFi)]]",
-      "resolved": "urn:visionflow:owl:class:decentralized-finance-de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Pool]]",
-      "resolved": "urn:visionflow:owl:class:liquidity-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Price Discovery]]",
-      "resolved": "urn:visionflow:owl:class:price-discovery",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms. Asset trading in the blockchain context enables peer-to-peer token swaps via smart contracts, eliminating intermediaries while users retain custody of their assets, with weekly DEX trading volumes averaging $18.6 billion and over 9.7 million unique wallets interacting with DeFi protocols in 2025.

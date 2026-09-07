@@ -1,8 +1,3 @@
----
-public: true
----
-
-# sybil resistance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -159,7 +154,7 @@ public: true
   - Sybil resistance is the security property of a [[Distributed Network]] that prevents a single adversary from gaining outsized control by fabricating multiple pseudonymous or fake identities. Named after the famous psychiatric case study used as an analogy for identity fragmentation, the concept was formally introduced to computer science by John Douceur in his 2002 paper at IPTPS. It is a prerequisite for any [[Permissionless Network]] or [[Decentralised Governance]] mechanism in which influence — voting power, resource allocation, reputation — scales with the count of distinct participants. Without sybil resistance, open systems collapse: an attacker who can cheaply mint identities can dominate any count-based decision rule, subvert [[Peer-to-Peer]] routing, or poison [[Reputation System]] signals.
 
 - ### Overview
-  - Sybil resistance emerged as a formalised concern alongside early peer-to-peer overlay networks (Gnutella, Chord, Pastry) where routing tables could be manipulated by flooding the network with adversary-controlled nodes. The concept became central to [[Blockchain]] design because all major consensus mechanisms must ensure that no single entity controls enough "votes" — whether measured in hashing power or staked capital — to rewrite the ledger.
+  - Sybil resistance emerged as a formalised concern alongside early peer-to-peer overlay networks (Gnutella, Chord, Pastry) where routing tables [private] be manipulated by flooding the network with adversary-controlled nodes. The concept became central to [[Blockchain]] design because all major consensus mechanisms must ensure that no single entity controls enough "votes" — whether measured in hashing power or staked capital — to rewrite the ledger.
   - The fundamental challenge is that in an open, pseudonymous network there is no a priori way to distinguish one real participant controlling many accounts from many independent participants. Any effective sybil-resistance mechanism must introduce a **cost** or **binding** that makes mass identity creation prohibitively expensive, physically impossible, or cryptographically detectable.
   - Three broad approaches exist:
     - **Resource binding**: tie identity to scarce real-world resources (compute, capital, bandwidth).

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stdio Transport
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Stdio transport is a communication mechanism in which a client and server exchange messages over the standard input and standard output streams of a locally spawned process. It is one of the primary transports defined by the Model Context Protocol, where the host launches the server as a subprocess and frames JSON-RPC messages through stdin/stdout. It suits local, single-machine integrations because it requires no network sockets and inherits the operating system's process isolation.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:model-control-protocols-like-mcp", "label": "Model Control Protocols like MCP"}
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols like MCP"
+      }
     ]
   },
   "quality": 0.72

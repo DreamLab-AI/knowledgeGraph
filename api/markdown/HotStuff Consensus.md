@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HotStuff Consensus
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,24 +59,54 @@ public: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"},
-      {"@id": "urn:ngm:class:tendermint-consensus", "label": "Tendermint Consensus"}
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint Consensus"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ]
   },
   "provenance": {
@@ -91,37 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hot-stuff-consensus:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8448023241f68214216e622836f0cd0bdefabddfc769e97fd25fa2e14c415d2a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Byzantine Fault Tolerance]]",
-      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Byzantine fault-tolerant state machine replication protocol achieving linear message complexity, optimistic responsiveness, and a simple three-phase voting pipeline simultaneously. Replaces PBFT's quadratic message complexity with threshold signature aggregation, enabling O(n) view changes and forming the foundation for DiemBFT/LibraBFT and Aptos consensus.

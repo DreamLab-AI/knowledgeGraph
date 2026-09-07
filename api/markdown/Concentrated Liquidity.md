@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Concentrated Liquidity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -167,7 +162,6 @@ public: true
 
   - Uniswap v3's concentrated liquidity model subdivides the price curve into discrete ticks (granular price levels spaced logarithmically) and allows each liquidity position to be active only between a lower and upper tick boundary defined by the provider. When the market price is within a position's range, the liquidity behaves as if deployed in a virtual constant-product pool of much greater depth. Providers can approximate limit orders, replicate classic AMM behaviour by spanning zero to infinity, or target specific stablecoin peg ranges to maximise fee capture. Each position is represented as a unique non-fungible token (NFT), replacing the fungible LP tokens of earlier AMM designs.
 
-  - The capital efficiency gains are substantial: at the time of launch, Uniswap estimated that a stablecoin provider concentrating liquidity in a ±0.1% range around the peg could achieve up to 4,000× the capital efficiency of a v2 position. This brought on-chain liquidity depth competitive with centralised exchange order books for the first time. The design also introduced multiple fee tiers (0.01%, 0.05%, 0.3%, 1%), enabling different pools for stable pairs, correlated assets, and exotic pairs to be priced appropriately for their volatility and liquidity dynamics.
+  - The capital efficiency gains are substantial: at the time of launch, Uniswap estimated that a stablecoin provider concentrating liquidity in a ±0.1% range around the peg [private] achieve up to 4,000× the capital efficiency of a v2 position. This brought on-chain liquidity depth competitive with centralised exchange order books for the first time. The design also introduced multiple fee tiers (0.01%, 0.05%, 0.3%, 1%), enabling different pools for stable pairs, correlated assets, and exotic pairs to be priced appropriately for their volatility and liquidity dynamics.
 
   - Concentrated liquidity has become the dominant AMM architecture in DeFi through 2024-2025. Curve v2, Balancer v2, PancakeSwap v3, and dozens of other protocols have adopted or adapted the tick-based model. Active liquidity management — using algorithmic rebalancing agents or specialised protocols such as Arrakis Finance and Gamma Strategies to auto-compound fees and rerange positions as prices move — has emerged as a significant sub-sector addressing the impermanent loss challenge inherent when price exits a provider's chosen range and liquidity becomes single-asset. Concentrated liquidity has also influenced perpetual futures protocols and options AMMs, demonstrating how the underlying price-range abstraction generalises across derivative product types.
-

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:catastrophic-risk-reduction",
   "domain": "ai",
-  "definition": "Catastrophic risk reduction is the set of interventions, controls, and governance measures aimed at lowering the probability or severity of large-scale harms, particularly those posed by advanced AI systems. It spans technical safeguards such as alignment and capability control, organisational measures such as staged deployment and incident response, and policy measures such as compute governance. It is a core goal of AI safety and alignment work because it targets the tail risks that could threaten societal stability or human survival.",
+  "definition": "Catastrophic risk reduction is the set of interventions, controls, and governance measures aimed at lowering the probability or severity of large-scale harms, particularly those posed by advanced AI systems. It spans technical safeguards such as alignment and capability control, organisational measures such as staged deployment and incident response, and policy measures such as compute governance. It is a core goal of AI safety and alignment work because it targets the tail risks that [private] threaten societal stability or human survival.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-safety",

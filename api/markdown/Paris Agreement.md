@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Paris Agreement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,46 +159,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:paris-agreement:745e49065a1d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9087fa5930e92627dfd061ea7d585ae73f25c0011e39428b8472293726517ff7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sustainability]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Accounting]]",
-      "resolved": "urn:visionflow:linked:carbon-accounting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Voluntary Carbon Market]]",
-      "resolved": "urn:visionflow:linked:voluntary-carbon-market",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Credits]]",
-      "resolved": "urn:visionflow:linked:carbon-credits",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

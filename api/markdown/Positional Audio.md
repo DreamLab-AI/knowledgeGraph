@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Positional Audio
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -93,26 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:positional-audio:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e31e67370cc3ef11c31cbf5cf19ac28df92b0979fe8cf9cf3e06c7243653b3b9"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Positional Audio is a technique for rendering sound sources at specific locations within a 3D virtual or mixed-reality environment, simulating how sound propagates, attenuates, and is spatially perceived by the listener. It relies on head-related transfer functions (HRTFs) and room acoustics modelling to create realistic auditory presence.

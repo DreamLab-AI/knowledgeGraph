@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Modal Conditioning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,42 +7,150 @@ public: true
   "title": "Cross-Modal Conditioning",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:ngm:class:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:ngm:class:cross-attention", "vc:label": "Cross Attention"},
-    {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "vc:label": "Multimodal Learning"},
-    {"@id": "urn:ngm:class:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:ngm:class:text-to-image", "vc:label": "Text-to-Image"},
-    {"@id": "urn:ngm:class:classifier-free-guidance", "vc:label": "Classifier-Free Guidance"},
-    {"@id": "urn:ngm:class:embedding", "vc:label": "Embedding"},
-    {"@id": "urn:ngm:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:ngm:class:latent-space", "vc:label": "Latent Space"},
-    {"@id": "urn:ngm:class:u-net", "vc:label": "U-Net"},
-    {"@id": "urn:ngm:class:clip", "vc:label": "CLIP"},
-    {"@id": "urn:ngm:class:stable-diffusion-image-model", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:ngm:class:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:ngm:class:representation-learning", "vc:label": "Representation Learning"},
-    {"@id": "urn:ngm:class:contrastive-learning", "vc:label": "Contrastive Learning"},
-    {"@id": "urn:ngm:class:audio-synthesis", "vc:label": "Audio Synthesis"},
-    {"@id": "urn:ngm:class:video-generation", "vc:label": "Video Generation"},
-    {"@id": "urn:ngm:class:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:ngm:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:ngm:class:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:ngm:class:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:ngm:class:ip-adapter", "vc:label": "IP-Adapter"},
-    {"@id": "urn:ngm:class:control-net", "vc:label": "ControlNet"},
-    {"@id": "urn:ngm:class:self-attention", "vc:label": "Self Attention"},
-    {"@id": "urn:ngm:class:modality-specific-encoder", "vc:label": "Modality-Specific Encoder"},
-    {"@id": "urn:ngm:class:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:ngm:class:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:ngm:class:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:ngm:class:adapter-tuning", "vc:label": "Adapter Tuning"},
-    {"@id": "urn:ngm:class:lora", "vc:label": "LoRA"},
-    {"@id": "urn:ngm:class:medical-imaging", "vc:label": "Medical Imaging"},
-    {"@id": "urn:ngm:class:drug-discovery", "vc:label": "Drug Discovery"},
-    {"@id": "urn:ngm:class:spatial-computing", "vc:label": "Spatial Computing"},
-    {"@id": "urn:ngm:class:synthetic-data", "vc:label": "Synthetic Data"},
-    {"@id": "urn:ngm:class:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:ngm:class:artificial-intelligence", "vc:label": "ArtificialIntelligenceDomain"}
+    {
+      "@id": "urn:ngm:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:ngm:class:cross-attention",
+      "vc:label": "Cross Attention"
+    },
+    {
+      "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
+      "vc:label": "Multimodal Learning"
+    },
+    {
+      "@id": "urn:ngm:class:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:ngm:class:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:ngm:class:classifier-free-guidance",
+      "vc:label": "Classifier-Free Guidance"
+    },
+    {
+      "@id": "urn:ngm:class:embedding",
+      "vc:label": "Embedding"
+    },
+    {
+      "@id": "urn:ngm:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:latent-space",
+      "vc:label": "Latent Space"
+    },
+    {
+      "@id": "urn:ngm:class:u-net",
+      "vc:label": "U-Net"
+    },
+    {
+      "@id": "urn:ngm:class:clip",
+      "vc:label": "CLIP"
+    },
+    {
+      "@id": "urn:ngm:class:stable-diffusion-image-model",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:ngm:class:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:ngm:class:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:ngm:class:contrastive-learning",
+      "vc:label": "Contrastive Learning"
+    },
+    {
+      "@id": "urn:ngm:class:audio-synthesis",
+      "vc:label": "Audio Synthesis"
+    },
+    {
+      "@id": "urn:ngm:class:video-generation",
+      "vc:label": "Video Generation"
+    },
+    {
+      "@id": "urn:ngm:class:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:ngm:class:ip-adapter",
+      "vc:label": "IP-Adapter"
+    },
+    {
+      "@id": "urn:ngm:class:control-net",
+      "vc:label": "ControlNet"
+    },
+    {
+      "@id": "urn:ngm:class:self-attention",
+      "vc:label": "Self Attention"
+    },
+    {
+      "@id": "urn:ngm:class:modality-specific-encoder",
+      "vc:label": "Modality-Specific Encoder"
+    },
+    {
+      "@id": "urn:ngm:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:ngm:class:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:ngm:class:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:adapter-tuning",
+      "vc:label": "Adapter Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:lora",
+      "vc:label": "LoRA"
+    },
+    {
+      "@id": "urn:ngm:class:medical-imaging",
+      "vc:label": "Medical Imaging"
+    },
+    {
+      "@id": "urn:ngm:class:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:ngm:class:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:synthetic-data",
+      "vc:label": "Synthetic Data"
+    },
+    {
+      "@id": "urn:ngm:class:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "vc:label": "ArtificialIntelligenceDomain"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -63,104 +166,125 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
-      {"@id": "urn:ngm:class:modality-specific-encoder", "label": "Modality-Specific Encoder"},
-      {"@id": "urn:ngm:class:classifier-free-guidance", "label": "Classifier-Free Guidance"},
-      {"@id": "urn:ngm:class:adapter-tuning", "label": "Adapter Tuning"}
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "@id": "urn:ngm:class:modality-specific-encoder",
+        "label": "Modality-Specific Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:adapter-tuning",
+        "label": "Adapter Tuning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:audio-synthesis", "label": "Audio Synthesis"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-learning", "label": "Multimodal Learning"}
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"},
-      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:lora", "label": "LoRA"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"}
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cross-modal-conditioning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cross-modal-conditioning"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:ngm:class:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Cross Attention]]", "resolved": "urn:ngm:class:cross-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Multimodal Learning]]", "resolved": "urn:ngm:class:multimodal-ai-architecture-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:ngm:class:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Image]]", "resolved": "urn:ngm:class:text-to-image", "kind": "ResolvedLink"},
-    {"raw": "[[Classifier-Free Guidance]]", "resolved": "urn:ngm:class:classifier-free-guidance", "kind": "ResolvedLink"},
-    {"raw": "[[Embedding]]", "resolved": "urn:ngm:class:embedding", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:ngm:class:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Latent Space]]", "resolved": "urn:ngm:class:latent-space", "kind": "ResolvedLink"},
-    {"raw": "[[U-Net]]", "resolved": "urn:ngm:class:u-net", "kind": "ResolvedLink"},
-    {"raw": "[[CLIP]]", "resolved": "urn:ngm:class:clip", "kind": "ResolvedLink"},
-    {"raw": "[[Stable Diffusion]]", "resolved": "urn:ngm:class:stable-diffusion-image-model", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:ngm:class:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Representation Learning]]", "resolved": "urn:ngm:class:representation-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Contrastive Learning]]", "resolved": "urn:ngm:class:contrastive-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Audio Synthesis]]", "resolved": "urn:ngm:class:audio-synthesis", "kind": "ResolvedLink"},
-    {"raw": "[[Video Generation]]", "resolved": "urn:ngm:class:video-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:ngm:class:image-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:ngm:class:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:ngm:class:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:ngm:class:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[IP-Adapter]]", "resolved": "urn:ngm:class:ip-adapter", "kind": "ResolvedLink"},
-    {"raw": "[[ControlNet]]", "resolved": "urn:ngm:class:control-net", "kind": "ResolvedLink"},
-    {"raw": "[[Self Attention]]", "resolved": "urn:ngm:class:self-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Modality-Specific Encoder]]", "resolved": "urn:ngm:class:modality-specific-encoder", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:ngm:class:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:ngm:class:large-language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Fine-Tuning]]", "resolved": "urn:ngm:class:fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Adapter Tuning]]", "resolved": "urn:ngm:class:adapter-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[LoRA]]", "resolved": "urn:ngm:class:lora", "kind": "ResolvedLink"},
-    {"raw": "[[Medical Imaging]]", "resolved": "urn:ngm:class:medical-imaging", "kind": "ResolvedLink"},
-    {"raw": "[[Drug Discovery]]", "resolved": "urn:ngm:class:drug-discovery", "kind": "ResolvedLink"},
-    {"raw": "[[Spatial Computing]]", "resolved": "urn:ngm:class:spatial-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Synthetic Data]]", "resolved": "urn:ngm:class:synthetic-data", "kind": "ResolvedLink"},
-    {"raw": "[[Variational Autoencoder]]", "resolved": "urn:ngm:class:variational-autoencoder", "kind": "ResolvedLink"},
-    {"raw": "[[ArtificialIntelligenceDomain]]", "resolved": "urn:ngm:class:artificial-intelligence", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -262,7 +386,7 @@ public: true
 
   ### Historical Development and Conceptual Lineage
 
-  The intellectual lineage of cross-modal conditioning passes through several distinct traditions. The earliest incarnation is the attention-based neural machine translation of Bahdanau et al. (2015), which demonstrated that a decoder generating words in a target language could selectively attend to encoded representations of a source-language sentence — a direct precedent for all subsequent cross-modal attention. This attention mechanism was generalised into the multi-head scaled dot-product form by Vaswani et al. (2017) in the Transformer, establishing the general-purpose computational primitive that would ultimately enable cross-modal conditioning at scale.
+  The intellectual lineage of cross-modal conditioning passes through several distinct traditions. The earliest incarnation is the attention-based neural machine translation of Bahdanau et al. (2015), which demonstrated that a decoder generating words in a target language [private] selectively attend to encoded representations of a source-language sentence — a direct precedent for all subsequent cross-modal attention. This attention mechanism was generalised into the multi-head scaled dot-product form by Vaswani et al. (2017) in the Transformer, establishing the general-purpose computational primitive that would ultimately enable cross-modal conditioning at scale.
 
   The second conceptual thread is multimodal representation alignment through contrastive learning. CLIP (Radford et al., 2021) established that image and text encoders trained jointly on 400 million image-text pairs via a contrastive objective produce embeddings that are geometrically aligned across modalities — a CLIP text embedding and the corresponding CLIP image embedding are closer in representation space than either is to embeddings of unrelated inputs. This geometric alignment is the prerequisite for using text embeddings as conditioning signals for image generation: without it, the text representation would carry no semantically relevant information for the visual backbone's cross-attention heads. ALIGN (Jia et al., 2021) demonstrated the same principle at 1.8 billion pairs, showing that data scale compounds the alignment quality. CLAP (Elizalde et al., 2022) extended the approach to audio-text alignment, enabling text-conditioned [[Audio Synthesis]].
 

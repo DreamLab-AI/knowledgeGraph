@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Federated Byzantine Fault Tolerance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,28 +58,70 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:node", "label": "Node"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+      {
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:block", "label": "Block"},
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -95,37 +132,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:federated-byzantine-fault-tolerance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e1a27a107e7d3a9c9bc6873413de447c8089b0d3573c9ca1a5bcdfbbe23c79fa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Byzantine Fault Tolerance]]",
-      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A consensus mechanism enhancing scalability, speed, and security of blockchain networks by using a trusted set of federated nodes for consensus rather than the entire network.

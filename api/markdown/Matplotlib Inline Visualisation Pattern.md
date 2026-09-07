@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Plotting a graph using matplotlib python library]]
-# Matplotlib Inline Visualisation Pattern
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[Plotting a graph using matplotlib python library]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"},
-      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python PyTorch Deep Learning Stack"},
-      {"@id": "urn:ngm:class:software-library", "label": "Software Library"}
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "Python PyTorch Deep Learning Stack"
+      },
+      {
+        "@id": "urn:ngm:class:software-library",
+        "label": "Software Library"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:visualization-layer", "label": "Visualization Layer"}
+      {
+        "@id": "urn:ngm:class:visualization-layer",
+        "label": "Visualization Layer"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
     ]
   },
   "quality": 0.35,
@@ -67,26 +76,6 @@ elevatedFrom:: [[Plotting a graph using matplotlib python library]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:plotting-a-graph-using-matplotlib-python-library:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:98fb07ce2a77a45a1afc2aa80f3cd8390391d4a86cdf602a29789de209e4b29b"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Logseq-embedded Python code example demonstrating inline data visualisation using matplotlib within a Pyodide runtime. The snippet generates a sinusoidal plot, encodes it as a base64 PNG, and returns it for display inside the knowledge graph note, illustrating programmatic data visualisation within a personal knowledge management environment.

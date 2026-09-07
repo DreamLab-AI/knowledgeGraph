@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Theorem Proving
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

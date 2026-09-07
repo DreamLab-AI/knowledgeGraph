@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Vote Escrow Model
----
-
-# Vote-Escrow Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,21 +20,50 @@ aliases:
   "definition": "The vote-escrow model is a DeFi tokenomics mechanism in which holders of a governance token lock their tokens for a chosen duration — typically up to four years — in exchange for a non-transferable vote-escrow token (such as veCRV in Curve Finance) that grants proportional governance voting power and fee-sharing rights, with voting weight decaying linearly as the lock approaches expiry, aligning token holder incentives with long-term protocol health by penalising short-term speculation. The model was pioneered by Curve Finance and subsequently adopted across dozens of DeFi protocols, spawning meta-governance layers such as Convex Finance that aggregate and direct veToken voting power.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:tokenomics",
+      "label": "Tokenomics"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:liquidity-mining", "label": "Liquidity Mining"},
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"}
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:convex-finance", "label": "Convex Finance"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}
+      {
+        "@id": "urn:ngm:class:convex-finance",
+        "label": "Convex Finance"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      }
     ]
   },
   "quality": 0.8

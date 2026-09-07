@@ -1,9 +1,3 @@
----
-public: true
----
-
-# PyTorch
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,31 +20,78 @@ public: true
   "definition": "PyTorch is an open-source deep learning framework developed by Meta AI Research that provides a dynamic computation graph, automatic differentiation via autograd, and tight integration with Python for flexible model development and research. It has become the dominant framework in academic machine learning research and is widely used in production via TorchServe and TorchScript. PyTorch's tensor operations are GPU-accelerated through CUDA, and its ecosystem encompasses libraries such as TorchVision, TorchAudio, and PyTorch Lightning.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-framework",
+      "label": "Machine Learning Framework"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python PyTorch Deep Learning Stack"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"}
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "Python PyTorch Deep Learning Stack"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-source-framework", "label": "Open Source Framework"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Large-Scale Pretrained Foundation Model"}
+      {
+        "@id": "urn:ngm:class:open-source-framework",
+        "label": "Open Source Framework"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      }
     ]
   },
   "quality": 0.8

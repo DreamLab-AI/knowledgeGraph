@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Platform Engineering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,56 +56,72 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:technology-infrastructure-domain-architecture", "label": "Infrastructure Architecture"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+      {
+        "@id": "urn:ngm:class:technology-infrastructure-domain-architecture",
+        "label": "Infrastructure Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computing-platform", "label": "Computing Platform"},
-      {"@id": "urn:ngm:class:development-platform", "label": "Development Platform"},
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
-      {"@id": "urn:ngm:class:industry-cloud-platforms", "label": "Industry Cloud Platforms"},
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"}
+      {
+        "@id": "urn:ngm:class:computing-platform",
+        "label": "Computing Platform"
+      },
+      {
+        "@id": "urn:ngm:class:development-platform",
+        "label": "Development Platform"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:industry-cloud-platforms",
+        "label": "Industry Cloud Platforms"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:platform-engineering:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8ae5e7c3b1bd8bbce9f320c75ca606232118e20dfab89951ab02eaa53954c74b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - [Generated from Gartner emerging tech analysis]

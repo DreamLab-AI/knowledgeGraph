@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Cloud Rendering
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cloud-rendering", "@type":"Page", "title":"Cloud Rendering", "vc:slug":"cloud-rendering", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cloud-rendering",
+  "@type": "Page",
+  "title": "Cloud Rendering",
+  "vc:slug": "cloud-rendering",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

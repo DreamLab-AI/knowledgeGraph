@@ -1,55 +1,110 @@
----
-public: true
----
-
-# Authenticated Encryption
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:authenticated-encryption", "@type":"Page", "title":"Authenticated Encryption", "vc:slug":"authenticated-encryption", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:authenticated-encryption",
+  "@type": "Page",
+  "title": "Authenticated Encryption",
+  "vc:slug": "authenticated-encryption",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:authenticated-encryption",
-  "@type":"Class",
-  "label":"Authenticated Encryption",
-  "definition":"Authenticated encryption is a class of symmetric cryptographic schemes that simultaneously provide confidentiality, integrity and authenticity of a message in a single operation. Authenticated encryption with associated data (AEAD) additionally binds unencrypted header data to the ciphertext, so any tampering with the message or its context is detected on decryption. Modern AEAD constructions such as AES-GCM and ChaCha20-Poly1305 are the recommended default for secure communication because they avoid the pitfalls of composing encryption and authentication separately.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:encryption","label":"Encryption"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:authenticated-encryption",
+  "@type": "Class",
+  "label": "Authenticated Encryption",
+  "definition": "Authenticated encryption is a class of symmetric cryptographic schemes that simultaneously provide confidentiality, integrity and authenticity of a message in a single operation. Authenticated encryption with associated data (AEAD) additionally binds unencrypted header data to the ciphertext, so any tampering with the message or its context is detected on decryption. Modern AEAD constructions such as AES-GCM and ChaCha20-Poly1305 are the recommended default for secure communication because they avoid the pitfalls of composing encryption and authentication separately.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:encryption",
+      "label": "Encryption"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:symmetric-encryption","label":"Symmetric Encryption"},
-      {"@id":"urn:ngm:class:message-authentication-code","label":"Message Authentication Code"},
-      {"@id":"urn:ngm:class:nonce","label":"Nonce"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:secure-communication","label":"Secure Communication"},
-      {"@id":"urn:ngm:class:data-confidentiality","label":"Data Confidentiality"},
-      {"@id":"urn:ngm:class:data-integrity","label":"Data Integrity"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "@id": "urn:ngm:class:data-confidentiality",
+        "label": "Data Confidentiality"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:aes-gcm","label":"AES-GCM"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:aes-gcm",
+        "label": "AES-GCM"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:tls-1-3","label":"TLS 1.3"},
-      {"@id":"urn:ngm:class:tls","label":"TLS"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:tls-1-3",
+        "label": "TLS 1.3"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:cryptographic-protocol","label":"Cryptographic Protocol"},
-      {"@id":"urn:ngm:class:key-management","label":"Key Management"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"},
-      {"@id":"urn:ngm:class:hash-function","label":"Hash Function"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

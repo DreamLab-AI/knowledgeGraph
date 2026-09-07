@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Software Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:software-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8cfb11ffb6058f8790fb2622fda1a6abc2d20a54d71bd0dfbaf4b370b73f2a3c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Application Development]]",
-      "resolved": "urn:visionflow:linked:application-development",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:technology-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An integrated technology foundation providing common services, APIs, and infrastructure for developing, deploying, and running applications, including cloud-native platforms, container orchestration systems, and internal developer platforms that abstract underlying complexity while enabling scalable application delivery.

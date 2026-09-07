@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BLAKE2
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,24 +87,54 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:digital-signatures", "label": "Digital Signatures"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
     ]
   },
   "provenance": {
@@ -119,67 +144,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blake2:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fd3ca58621fe1804c6e79f179c4420714f2c490374382787a5af61dc7c299935"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicPrimitive]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   BLAKE2 is a high-performance cryptographic hash function designed as a faster, simpler alternative to SHA-2 and SHA-3 while preserving equivalent security guarantees. Introduced in 2012 by Jean-Philippe Aumasson, Samuel Neves, Zooko Wilcox-O'Hearn, and Christian Winnerlein, it produces digests of up to 512 bits (BLAKE2b) or 256 bits (BLAKE2s) and is widely adopted in blockchain systems, password-hashing schemes, and data integrity verification due to its speed advantage over SHA-256 on modern 64-bit processors. Its resistance to length-extension attacks and configurability—including personalisation, salting, and variable digest length—make it a versatile drop-in for many cryptographic protocol requirements.

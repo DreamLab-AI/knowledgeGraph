@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automated Testing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Automated testing is the practice of using software tools to execute predefined test cases against a system and compare actual outcomes to expected results without manual intervention. It spans unit, integration, end-to-end, and regression tests, and is typically wired into build pipelines so defects are caught early and consistently. By making verification repeatable and fast, it enables continuous integration and reliable software delivery at scale.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:cli-multi-agent-systems", "label": "CLI Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      }
     ]
   },
   "quality": 0.72

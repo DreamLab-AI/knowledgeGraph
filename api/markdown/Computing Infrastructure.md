@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computing Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,59 +60,64 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"}
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
-      {"@id": "urn:ngm:class:power-management", "label": "Power Management"}
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computing-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b02b52d0f017dd97d2cb36a50b6c88a877c3213911d607a31927e7ab665a6cf0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Computing infrastructure encompasses the physical and virtual resources required for building, running, and delivering applications and services, including servers, storage systems, networking equipment, power systems, and cooling facilities housed in data centers. It provides the foundational computing capacity that IT systems require to process, store, and transmit digital data.

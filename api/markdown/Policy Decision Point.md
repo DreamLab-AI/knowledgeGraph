@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Policy Decision Point
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

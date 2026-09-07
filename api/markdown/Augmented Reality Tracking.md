@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Augmented Reality Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

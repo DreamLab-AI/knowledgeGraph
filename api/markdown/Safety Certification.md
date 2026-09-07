@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safety Certification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Safety certification is the formal attestation by an accredited body that a product, system, or process conforms to applicable safety standards and regulations. It involves assessment, testing, and audit against criteria such as functional-safety integrity levels, after which a mark or certificate authorises deployment. For robots it verifies that protective measures like collision detection meet required safety levels.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"}, {"@id": "urn:ngm:class:cobot-safety-levels", "label": "Cobot Safety Levels"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      }
+    ]
   },
   "quality": 0.72
 }

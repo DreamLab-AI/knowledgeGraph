@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Standardized Asset Classification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,47 +82,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:standardized-asset-classification:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4f257fd736c81469655ce1b063e2a7869b0eac0d3be81dae0ca1f2cfab3bab23"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Management]]",
-      "resolved": "urn:visionflow:owl:class:asset-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Systematic taxonomies and frameworks for categorizing digital assets including cryptocurrencies, NFTs, and metaverse tokens based on characteristics such as issuance method, value mechanism, rights conferred, fungibility, and redemption properties.

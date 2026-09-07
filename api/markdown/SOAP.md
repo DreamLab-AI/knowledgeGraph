@@ -1,56 +1,108 @@
----
-public: true
----
-
-# SOAP
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:soap", "@type":"Page", "title":"SOAP", "vc:slug":"soap", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:soap",
+  "@type": "Page",
+  "title": "SOAP",
+  "vc:slug": "soap",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:soap",
-  "@type":"Class",
-  "label":"SOAP",
-  "definition":"SOAP (Simple Object Access Protocol) is a standardised, XML-based messaging protocol for exchanging structured information between applications, typically over HTTP but also over other transports. It defines an envelope structure with a header and body, supports remote procedure calls and document-style messaging, and is described by WSDL contracts and extended by the WS-* specifications for security, transactions, and reliable messaging. SOAP underpinned the first generation of enterprise web services and remains common in regulated and legacy integration scenarios, contrasting with the lighter, resource-oriented REST style.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:web-services","label":"Web Services"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:web-services","label":"Web Services"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:soap",
+  "@type": "Class",
+  "label": "SOAP",
+  "definition": "SOAP (Simple Object Access Protocol) is a standardised, XML-based messaging protocol for exchanging structured information between applications, typically over HTTP but also over other transports. It defines an envelope structure with a header and body, supports remote procedure calls and document-style messaging, and is described by WSDL contracts and extended by the WS-* specifications for security, transactions, and reliable messaging. SOAP underpinned the first generation of enterprise web services and remains common in regulated and legacy integration scenarios, contrasting with the lighter, resource-oriented REST style.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:web-services",
+      "label": "Web Services"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:web-services",
+        "label": "Web Services"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:xml","label":"XML"},
-      {"@id":"urn:ngm:class:http","label":"HTTP"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:remote-procedure-call","label":"Remote Procedure Call"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:xml","label":"XML"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:service-oriented-architecture","label":"Service-Oriented Architecture"},
-      {"@id":"urn:ngm:class:enterprise-integration","label":"Enterprise Integration"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-integration",
+        "label": "Enterprise Integration"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:api","label":"API"},
-      {"@id":"urn:ngm:class:middleware","label":"Middleware"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:rest","label":"REST"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:service-oriented-architecture","label":"Service-Oriented Architecture"},
-      {"@id":"urn:ngm:class:remote-procedure-call","label":"Remote Procedure Call"},
-      {"@id":"urn:ngm:class:json","label":"JSON"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:json",
+        "label": "JSON"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

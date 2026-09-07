@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Broadcast Production
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +21,53 @@ public: true
   "domain": "metaverse",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:production-pipeline", "label": "Production Pipeline"}
+    {
+      "@id": "urn:ngm:class:production-pipeline",
+      "label": "Production Pipeline"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:video-codec", "label": "Video Codec"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:video-encoding", "label": "Video Encoding"},
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"}
+      {
+        "@id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:video-encoding",
+        "label": "Video Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:video-streaming", "label": "Video Streaming"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +88,3 @@ public: true
   - IP-based production (SMPTE ST 2110, NDI) is replacing SDI point-to-point cabling, enabling software-defined broadcast workflows and remote production (REMI). Major sports events (Olympic Games 2020, FIFA World Cup 2022) demonstrated centralised production hubs receiving feeds from dozens of venues over fibre and IP networks, reducing the need to deploy full OB trucks on-site. Cloud-native broadcast production platforms (AWS MediaLive, Grass Valley AMPP, Vizrt Viz Engine Cloud) allow compute-intensive workflows—graphics rendering, transcoding—to elastically scale with demand.
 
   - In 2024–2025, AI is being integrated across the broadcast production chain. Automated camera systems with AI-driven framing (PTZ robots, studio automation) reduce crew requirements for lower-priority programming. AI-assisted highlight detection, automated subtitle generation (speech-to-text at broadcast accuracy), and AI-generated graphics are in production use at BBC, Sky, and major US networks. The shift to IP-over-cloud production is accelerating, driven by cost pressure and the need to reach fragmented audiences across linear TV, streaming, and social media simultaneously. Immersive content—8K HDR, spatial audio, and volumetric video for extended reality—is an active R&D frontier for premium sports and entertainment production.
-

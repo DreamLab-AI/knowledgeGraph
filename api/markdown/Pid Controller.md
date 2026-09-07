@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pid Controller
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,19 +50,40 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"}
+      {
+        "@id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      }
     ]
   },
   "quality": 0.35,
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pid-controller:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5b730e6a16aa40d8f0a2e099a232455b1a3e215eb93870f3060691594049ff11"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[rb 0047 feedback control]]",
-      "resolved": "urn:visionflow:owl:class:rb-0047-feedback-control",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A PID Controller is a closed-loop feedback control algorithm that calculates corrections based on proportional, integral, and derivative terms of the error between a desired setpoint and a measured value, foundational to robotics motion control, autonomous systems, and industrial automation.

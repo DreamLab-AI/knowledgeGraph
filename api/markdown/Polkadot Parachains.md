@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Polkadot Parachains
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,26 +63,68 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:nominated-proof-of-stake", "label": "Nominated Proof of Stake"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:nominated-proof-of-stake",
+        "label": "Nominated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ]
   },
   "provenance": {
@@ -97,47 +134,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:polkadot-parachains:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:95aaa543560c9f8762346df81c33152e63f444921d9a41fe5a950b79b33c865e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Polkadot]]",
-      "resolved": "urn:visionflow:linked:polkadot",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Web3 Foundation]]",
-      "resolved": "urn:visionflow:linked:web3-foundation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Application-specific blockchains that connect to and are secured by the Polkadot Relay Chain, enabling interoperability and shared security across heterogeneous blockchain networks.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Serving
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -216,52 +211,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-serving:ca580a411a7b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ceef99ca7a20ce62800bc505eb2f0ffdda8ccb3115b521b869b36f85e5f3b9f9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Model Deployment]]",
-      "resolved": "urn:visionflow:linked:model-deployment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[REST API]]",
-      "resolved": "urn:visionflow:linked:rest-api",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inference Serving]]",
-      "resolved": "urn:visionflow:linked:inference-serving",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MLOps]]",
-      "resolved": "urn:visionflow:linked:mlops",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Latency]]",
-      "resolved": "urn:visionflow:linked:latency",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Model serving is the practice of making a trained machine learning model available to handle inference requests, typically behind an API. It covers loading models, routing requests and returning predictions under latency and throughput constraints.

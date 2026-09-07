@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Labor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,18 +75,36 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtual-currency", "label": "Virtual Currency"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {
+        "@id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:land-economics", "label": "Land Economics"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {
+        "@id": "urn:ngm:class:land-economics",
+        "label": "Land Economics"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
     ]
   },
   "provenance": {
@@ -101,57 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-labor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:48ed54f50e518cc6faf456bea2a6c28113b111e961d371801e097bbbb52cd53b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[User-Generated Content]]",
-      "resolved": "urn:visionflow:linked:user-generated-content",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Land Economics]]",
-      "resolved": "urn:visionflow:owl:class:land-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Currency]]",
-      "resolved": "urn:visionflow:owl:class:virtual-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Virtual Labor** is work performed in virtual environments that generates economic value, spanning content creation, service provision, virtual construction, platform governance, and social labour. It is often platform-dependent, contract-based, and remunerated via virtual currency or revenue-sharing models, raising significant questions around labour rights, taxation of cross-border virtual income, and platform exploitation.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FDA
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -138,51 +133,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fda:c5c82b45badc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d668e4ffffe923db2109edf0842b145ce99faf20f4e48d2cc29e59f738190370"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Synthetic Biology]]",
-      "resolved": "urn:visionflow:linked:synthetic-biology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.fda.gov]]",
-      "resolved": "urn:visionflow:linked:https-www-fda-gov",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.fda.gov/about-fda]]",
-      "resolved": "urn:visionflow:linked:https-www-fda-gov-about-fda",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

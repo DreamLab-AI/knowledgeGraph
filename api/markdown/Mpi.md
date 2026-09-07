@@ -1,58 +1,112 @@
----
-public: true
----
-
-# Mpi
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:mpi", "@type":"Page", "title":"Mpi", "vc:slug":"mpi", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:mpi",
+  "@type": "Page",
+  "title": "Mpi",
+  "vc:slug": "mpi",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:mpi",
-  "@type":"Class",
-  "label":"Mpi",
-  "definition":"MPI (Message Passing Interface) is a standardised, portable specification for message-passing parallel programming, defining a library of routines for point-to-point and collective communication among processes in a distributed-memory system. It is the dominant programming model for high-performance computing clusters, where independent processes exchange data explicitly rather than through shared memory. Implementations such as Open MPI and MPICH provide the runtime that maps the standard onto specific hardware and interconnects.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:message-passing","label":"Message Passing"}],
-  "relations":{
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:standards-organization","label":"Standards Organization"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:mpi",
+  "@type": "Class",
+  "label": "Mpi",
+  "definition": "MPI (Message Passing Interface) is a standardised, portable specification for message-passing parallel programming, defining a library of routines for point-to-point and collective communication among processes in a distributed-memory system. It is the dominant programming model for high-performance computing clusters, where independent processes exchange data explicitly rather than through shared memory. Implementations such as Open MPI and MPICH provide the runtime that maps the standard onto specific hardware and interconnects.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:message-passing",
+      "label": "Message Passing"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:parallel-processing","label":"Parallel Processing"},
-      {"@id":"urn:ngm:class:high-performance-computing","label":"High-Performance Computing"},
-      {"@id":"urn:ngm:class:collective-communication","label":"Collective Communication"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:interconnect","label":"Interconnect"},
-      {"@id":"urn:ngm:class:network-topology","label":"Network Topology"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:interconnect",
+        "label": "Interconnect"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:interconnect","label":"Interconnect"},
-      {"@id":"urn:ngm:class:computing-infrastructure","label":"Computing Infrastructure"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interconnect",
+        "label": "Interconnect"
+      },
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:message-passing","label":"Message Passing"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"},
-      {"@id":"urn:ngm:class:scalability","label":"Scalability"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"},
-      {"@id":"urn:ngm:class:cuda","label":"CUDA"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:high-performance-computing","label":"High-Performance Computing"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

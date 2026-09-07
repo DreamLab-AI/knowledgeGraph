@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Provenance Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:provenance-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:241698c2e877707ac76d981ff10609089c0de9fbfefc47db6578429bfed7063d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Authenticity]]",
-      "resolved": "urn:visionflow:linked:asset-authenticity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Asset Standards]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technical specifications and protocols for recording immutable ownership history and authenticity verification of digital assets through blockchain-based token IDs, contract addresses, and metadata that establish chain of custody from creation to present ownership.

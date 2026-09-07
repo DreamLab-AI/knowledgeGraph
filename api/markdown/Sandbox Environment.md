@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sandbox Environment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,11 +21,22 @@ public: true
   "vc:plainGloss": "A sealed-off play area where code — including anything an AI agent writes or runs — can execute without being able to touch the real system around it. If something goes wrong or misbehaves, the damage stays inside the box.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:gpt-engineer", "label": "GPT Engineer"},
-      {"@id": "urn:ngm:class:cli-multi-agent-systems", "label": "CLI Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:gpt-engineer",
+        "label": "GPT Engineer"
+      },
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      }
     ]
   },
   "quality": 0.72

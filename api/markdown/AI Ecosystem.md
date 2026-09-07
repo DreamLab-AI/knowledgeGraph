@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Ecosystem
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,51 +7,186 @@ public: true
   "title": "AI Ecosystem",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:owl:class:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:owl:class:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:owl:class:ai-policy", "vc:label": "AI Policy"},
-    {"@id": "urn:visionflow:owl:class:digital-asset-ecosystem", "vc:label": "Digital Asset Ecosystem"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:ai-inference", "vc:label": "AI Inference"},
-    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:linked:gpu-computing", "vc:label": "GPU Computing"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:open-source-ai", "vc:label": "Open Source AI"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:responsible-ai", "vc:label": "Responsible AI"},
-    {"@id": "urn:visionflow:linked:ai-documentation-standards", "vc:label": "AI Documentation Standards"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:ai-chips", "vc:label": "AI Chips"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:ai-startups", "vc:label": "AI Startups"},
-    {"@id": "urn:visionflow:linked:cloud-computing", "vc:label": "Cloud Computing"},
-    {"@id": "urn:visionflow:linked:data-centres", "vc:label": "Data Centres"},
-    {"@id": "urn:visionflow:linked:ai-regulation", "vc:label": "AI Regulation"},
-    {"@id": "urn:visionflow:linked:digital-economy", "vc:label": "Digital Economy"},
-    {"@id": "urn:visionflow:linked:ai-research", "vc:label": "AI Research"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:ai-governance-framework", "vc:label": "AI Governance Framework"},
-    {"@id": "urn:visionflow:linked:talent-pipeline", "vc:label": "Talent Pipeline"},
-    {"@id": "urn:visionflow:linked:venture-capital", "vc:label": "Venture Capital"},
-    {"@id": "urn:visionflow:linked:national-ai-strategy", "vc:label": "National AI Strategy"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:ai-safety-research", "vc:label": "AI Safety Research"},
-    {"@id": "urn:visionflow:linked:sovereign-ai", "vc:label": "Sovereign AI"},
-    {"@id": "urn:visionflow:linked:ai-standards", "vc:label": "AI Standards"},
-    {"@id": "urn:visionflow:linked:alan-turing-institute", "vc:label": "Alan Turing Institute"},
-    {"@id": "urn:visionflow:linked:iso-iec-42001", "vc:label": "ISO/IEC 42001"},
-    {"@id": "urn:visionflow:linked:nist-ai-rmf", "vc:label": "NIST AI RMF"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:sovereign-ai", "vc:label": "Sovereign AI"},
-    {"@id": "urn:visionflow:linked:ai-regulation", "vc:label": "AI Regulation"}
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-policy",
+      "vc:label": "AI Policy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-asset-ecosystem",
+      "vc:label": "Digital Asset Ecosystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-inference",
+      "vc:label": "AI Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-computing",
+      "vc:label": "GPU Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source-ai",
+      "vc:label": "Open Source AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-documentation-standards",
+      "vc:label": "AI Documentation Standards"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-chips",
+      "vc:label": "AI Chips"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-startups",
+      "vc:label": "AI Startups"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-centres",
+      "vc:label": "Data Centres"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-regulation",
+      "vc:label": "AI Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-economy",
+      "vc:label": "Digital Economy"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research",
+      "vc:label": "AI Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance-framework",
+      "vc:label": "AI Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:talent-pipeline",
+      "vc:label": "Talent Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:venture-capital",
+      "vc:label": "Venture Capital"
+    },
+    {
+      "@id": "urn:visionflow:linked:national-ai-strategy",
+      "vc:label": "National AI Strategy"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety-research",
+      "vc:label": "AI Safety Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:sovereign-ai",
+      "vc:label": "Sovereign AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-standards",
+      "vc:label": "AI Standards"
+    },
+    {
+      "@id": "urn:visionflow:linked:alan-turing-institute",
+      "vc:label": "Alan Turing Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001",
+      "vc:label": "ISO/IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:sovereign-ai",
+      "vc:label": "Sovereign AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-regulation",
+      "vc:label": "AI Regulation"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -72,40 +202,109 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:digital-asset-ecosystem", "label": "Digital Asset Ecosystem"}
+    {
+      "@id": "urn:ngm:class:digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"},
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:ai-research", "label": "AI Research"},
-      {"@id": "urn:ngm:class:talent-pipeline", "label": "Talent Pipeline"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open Source AI"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-research",
+        "label": "AI Research"
+      },
+      {
+        "@id": "urn:ngm:class:talent-pipeline",
+        "label": "Talent Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centres"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centres"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:sovereign-ai", "label": "Sovereign AI"}
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-ai",
+        "label": "Sovereign AI"
+      }
     ]
   },
   "quality": 0.93,
@@ -114,60 +313,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "R1EnrichmentFull"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-ecosystem:9b3a7c12ef01",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:ai-ecosystem"},
-  "vc:resolutions": [
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:owl:class:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:owl:class:agent-frameworks", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:owl:class:agentic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[AI Policy]]", "resolved": "urn:visionflow:owl:class:ai-policy", "kind": "ResolvedLink"},
-    {"raw": "[[Digital Asset Ecosystem]]", "resolved": "urn:visionflow:owl:class:digital-asset-ecosystem", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "StubLink"},
-    {"raw": "[[AI Inference]]", "resolved": "urn:visionflow:linked:ai-inference", "kind": "StubLink"},
-    {"raw": "[[Foundation Models]]", "resolved": "urn:visionflow:linked:foundation-models", "kind": "StubLink"},
-    {"raw": "[[GPU Computing]]", "resolved": "urn:visionflow:linked:gpu-computing", "kind": "StubLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "StubLink"},
-    {"raw": "[[Open Source AI]]", "resolved": "urn:visionflow:linked:open-source-ai", "kind": "StubLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[Responsible AI]]", "resolved": "urn:visionflow:linked:responsible-ai", "kind": "StubLink"},
-    {"raw": "[[AI Documentation Standards]]", "resolved": "urn:visionflow:linked:ai-documentation-standards", "kind": "StubLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
-    {"raw": "[[AI Chips]]", "resolved": "urn:visionflow:linked:ai-chips", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "StubLink"},
-    {"raw": "[[AI Startups]]", "resolved": "urn:visionflow:linked:ai-startups", "kind": "StubLink"},
-    {"raw": "[[Cloud Computing]]", "resolved": "urn:visionflow:linked:cloud-computing", "kind": "StubLink"},
-    {"raw": "[[Data Centres]]", "resolved": "urn:visionflow:linked:data-centres", "kind": "StubLink"},
-    {"raw": "[[AI Regulation]]", "resolved": "urn:visionflow:linked:ai-regulation", "kind": "StubLink"},
-    {"raw": "[[ISO/IEC 42001]]", "resolved": "urn:visionflow:linked:iso-iec-42001", "kind": "StubLink"},
-    {"raw": "[[NIST AI RMF]]", "resolved": "urn:visionflow:linked:nist-ai-rmf", "kind": "StubLink"},
-    {"raw": "[[Sovereign AI]]", "resolved": "urn:visionflow:linked:sovereign-ai", "kind": "StubLink"},
-    {"raw": "[[Digital Economy]]", "resolved": "urn:visionflow:linked:digital-economy", "kind": "StubLink"},
-    {"raw": "[[AI Research]]", "resolved": "urn:visionflow:linked:ai-research", "kind": "StubLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[AI Governance Framework]]", "resolved": "urn:visionflow:linked:ai-governance-framework", "kind": "StubLink"},
-    {"raw": "[[Talent Pipeline]]", "resolved": "urn:visionflow:linked:talent-pipeline", "kind": "StubLink"},
-    {"raw": "[[Venture Capital]]", "resolved": "urn:visionflow:linked:venture-capital", "kind": "StubLink"},
-    {"raw": "[[National AI Strategy]]", "resolved": "urn:visionflow:linked:national-ai-strategy", "kind": "StubLink"},
-    {"raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:linked:multimodal-ai", "kind": "StubLink"},
-    {"raw": "[[AI Safety Research]]", "resolved": "urn:visionflow:linked:ai-safety-research", "kind": "StubLink"},
-    {"raw": "[[Sovereign AI]]", "resolved": "urn:visionflow:linked:sovereign-ai", "kind": "StubLink"},
-    {"raw": "[[AI Standards]]", "resolved": "urn:visionflow:linked:ai-standards", "kind": "StubLink"},
-    {"raw": "[[Alan Turing Institute]]", "resolved": "urn:visionflow:linked:alan-turing-institute", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -328,7 +473,7 @@ public: true
   ## About
   The AI Ecosystem as a coherent analytical object emerged from the observation that artificial intelligence, unlike earlier software platforms, required a dense interdependence of specialised hardware, massive data accumulation, frontier research, and regulatory governance before any individual product or service became possible. The term gained currency with the scaling wave of 2017–2022, during which the [[Transformer Architecture]] (Vaswani et al. 2017, "Attention Is All You Need") enabled a step-change in model capabilities and created the platform dynamics now characteristic of the ecosystem's upper layers. The conceptual lineage draws on Moore's Law ecosystems analysis (Grove 1996), platform economics (Eisenmann, Parker & Van Alstyne 2006), and general-purpose technology theory (Bresnahan & Trajtenberg 1995), all adapted for the specific properties of AI systems: their dependence on training data as a competitive input, their inference-time compute requirements, the transfer-learning dynamics that enable large pre-trained models to reduce the data requirements for fine-tuned applications, and the emergent capabilities that appear at scale without being explicitly programmed. Unlike the PC ecosystem, which commoditised hardware rapidly (Moore's Law driven price/performance improvements from multiple chip manufacturers), or the web ecosystem, which commoditised server infrastructure through open-source software, the AI ecosystem exhibits persistent concentration at both the hardware layer (NVIDIA monoculture in accelerated compute) and the model layer (a handful of frontier labs with exclusive access to the scale of capital, data, and engineering talent required to train frontier models). This concentration creates a fundamentally different competitive dynamic from earlier technology ecosystems: incumbency advantages compound through data flywheel effects (more users → more RLHF preference data → better models → more users), specialised compute procurement advantages (frontier labs have long-term GPU supply agreements), and network effects at the application layer (developer ecosystems that converge on a small number of SDK/framework standards create switching costs). Understanding these dynamics is essential to analysing the AI Ecosystem as a governance object: the entities best positioned to implement [[AI Documentation Standards]] and governance obligations are concentrated at the very top of the ecosystem, while the widest range of regulatory risk is distributed across the long tail of application developers who deploy AI capabilities without necessarily understanding the underlying models' limitations or documentation status.
 
-  Historically, the AI Ecosystem traversed three transformative phases, each expanding its scope and restructuring its competitive dynamics. The deep learning renaissance (2012–2017) was anchored by AlexNet (Krizhevsky, Sutskever & Hinton 2012), which demonstrated that [[Deep Learning]] with GPU acceleration could achieve superhuman performance on ImageNet image classification with a test error rate of 15.3% compared to 26.2% for the next-best entry — a margin sufficiently large to make GPU-accelerated convolutional neural networks the immediate focus of every major [[Computer Vision]] research group globally. NVIDIA's CUDA programming model, developed for gaming GPUs, proved immediately adaptable to the matrix multiplication workloads of neural network training, establishing the company's critical infrastructure role and initiating a decade of AI-specific GPU product development (Tesla K40 in 2013, P100 in 2016, V100 in 2017, A100 in 2020, H100 in 2022). The period 2012–2017 saw [[Machine Learning]] and AI transition from primarily academic domains to active industry investment, with Google, Facebook, Microsoft, Amazon, and Baidu all establishing dedicated AI research laboratories and beginning large-scale production deployments of deep learning in recommendation systems, speech recognition, and image classification. The NLP scaling era (2018–2021) saw the introduction of the self-attention mechanism and transformer models, beginning with BERT (Devlin et al. 2018, arXiv:1810.04805) demonstrating that pre-training on unlabelled text and fine-tuning on task-specific labelled data could achieve state-of-the-art performance across eleven [[Natural Language Processing]] tasks simultaneously — a dramatic departure from the prior paradigm of task-specific model design. GPT-2 (Radford et al. 2019) demonstrated that scaling this approach without task-specific fine-tuning produced surprisingly coherent text generation, raising early alarms about misuse potential. GPT-3 (Brown et al. 2020, arXiv:2005.14165, 175 billion parameters) demonstrated in-context few-shot learning — the ability to perform new tasks from a handful of examples provided in the prompt — without any weight updates, establishing the [[Foundation Models]] paradigm that treats a single pre-trained model as a general-purpose capability platform. The generative AI and foundation model era (2022–present) began with the public release of ChatGPT in November 2022, which drove unprecedented consumer adoption (100 million users within two months, faster than any technology product in history) and triggered a restructuring of the entire ecosystem around API-accessible frontier models, prompt engineering, [[Reinforcement Learning]] from human feedback (RLHF), and [[Agentic AI]] applications. The competitive response was immediate and global: Google rushed Bard (later Gemini) to market, Meta open-sourced LLaMA, Anthropic raised billions for Claude, Microsoft committed $13 billion to OpenAI, and Chinese labs accelerated domestic alternatives. By 2025, the AI Ecosystem had become a sector exceeding $500 billion in annual revenue with cascading productivity effects across healthcare, finance, legal, scientific research, software engineering, and creative industries.
+  Historically, the AI Ecosystem traversed three transformative phases, each expanding its scope and restructuring its competitive dynamics. The deep learning renaissance (2012–2017) was anchored by AlexNet (Krizhevsky, Sutskever & Hinton 2012), which demonstrated that [[Deep Learning]] with GPU acceleration [private] achieve superhuman performance on ImageNet image classification with a test error rate of 15.3% compared to 26.2% for the next-best entry — a margin sufficiently large to make GPU-accelerated convolutional neural networks the immediate focus of every major [[Computer Vision]] research group globally. NVIDIA's CUDA programming model, developed for gaming GPUs, proved immediately adaptable to the matrix multiplication workloads of neural network training, establishing the company's critical infrastructure role and initiating a decade of AI-specific GPU product development (Tesla K40 in 2013, P100 in 2016, V100 in 2017, A100 in 2020, H100 in 2022). The period 2012–2017 saw [[Machine Learning]] and AI transition from primarily academic domains to active industry investment, with Google, Facebook, Microsoft, Amazon, and Baidu all establishing dedicated AI research laboratories and beginning large-scale production deployments of deep learning in recommendation systems, speech recognition, and image classification. The NLP scaling era (2018–2021) saw the introduction of the self-attention mechanism and transformer models, beginning with BERT (Devlin et al. 2018, arXiv:1810.04805) demonstrating that pre-training on unlabelled text and fine-tuning on task-specific labelled data [private] achieve state-of-the-art performance across eleven [[Natural Language Processing]] tasks simultaneously — a dramatic departure from the prior paradigm of task-specific model design. GPT-2 (Radford et al. 2019) demonstrated that scaling this approach without task-specific fine-tuning produced surprisingly coherent text generation, raising early alarms about misuse potential. GPT-3 (Brown et al. 2020, arXiv:2005.14165, 175 billion parameters) demonstrated in-context few-shot learning — the ability to perform new tasks from a handful of examples provided in the prompt — without any weight updates, establishing the [[Foundation Models]] paradigm that treats a single pre-trained model as a general-purpose capability platform. The generative AI and foundation model era (2022–present) began with the public release of ChatGPT in November 2022, which drove unprecedented consumer adoption (100 million users within two months, faster than any technology product in history) and triggered a restructuring of the entire ecosystem around API-accessible frontier models, prompt engineering, [[Reinforcement Learning]] from human feedback (RLHF), and [[Agentic AI]] applications. The competitive response was immediate and global: Google rushed Bard (later Gemini) to market, Meta open-sourced LLaMA, Anthropic raised billions for Claude, Microsoft committed $13 billion to OpenAI, and Chinese labs accelerated domestic alternatives. By 2025, the AI Ecosystem had become a sector exceeding $500 billion in annual revenue with cascading productivity effects across healthcare, finance, legal, scientific research, software engineering, and creative industries.
 
   The defining structural feature of the current AI Ecosystem is vertical concentration combined with horizontal proliferation. At the base, NVIDIA's H100 and H200 GPU families account for an estimated 80%+ of all frontier AI training, with the H200's 141 GB HBM3e memory capacity (2x the H100's HBM2e) and 4.8 TB/s memory bandwidth enabling models of 70B–700B+ parameters to be trained at commercially viable speeds. The H100 NVL configuration (two H100 chips with NVLink interconnect) delivers 3.9 petaFLOPS of FP8 throughput, enabling a 10,000-GPU cluster to train a 70B-parameter model from scratch in approximately 3 weeks — the practical compute budget for a Llama 3-class training run. Google (TPUs), Amazon (Trainium), and Microsoft (Maia) are developing custom AI ASICs to reduce this dependence, but custom silicon accumulates 3–5 years of software ecosystem investment before matching the GPU ecosystem's maturity in terms of compiler support, debugging tooling, distributed training framework integration, and community knowledge. At the model layer, five organisations account for substantially all frontier capability: OpenAI (GPT-4o, GPT-5 series), Anthropic (Claude 3.5/4 series), Google DeepMind (Gemini 2.5/3 series), Meta (LLaMA 3/4 series), and the constellation of leading Chinese labs (Alibaba/Qwen, DeepSeek, Moonshot/Kimi — collectively accounting for four of the top five open-weight models by benchmark performance as of early 2026). Yet simultaneously, the tooling layer above the models has exploded in diversity: as of mid-2026, Hugging Face hosts over 1 million model repositories and 100,000 datasets, the Agentic AI Foundation (established December 2025 under the Linux Foundation) has standardised agentic protocols across [[Agent Frameworks]], and [[Model Context Protocol]] (MCP, introduced by Anthropic November 2024 and donated to the Linux Foundation in 2025) crossed 97 million installations in March 2026, becoming the de facto standard for tool-equipped [[Agentic AI]] agents integrating with external APIs, databases, and services. This bifurcation — high concentration at the compute and frontier model layers, high proliferation at the tooling and application layers — creates distinctive governance challenges: regulatory instruments designed for centralised actors (requiring documentation from model providers) are effective at the bottom layers but reach only a fraction of actual deployment risk, which is distributed across thousands of downstream integrators and application builders in the long tail of the ecosystem.
 
@@ -378,7 +523,7 @@ public: true
 
   ### Enterprise AI Transformation
 
-  Enterprises across financial services, healthcare, manufacturing, legal, and professional services are deploying AI capabilities at scale, primarily via API integration with frontier models and [[Agent Frameworks]] augmented by proprietary data and context through fine-tuning, retrieval-augmented generation, and system prompt engineering. McKinsey Global Institute (2025) estimates AI could add $17–26 trillion in annual global economic value across 63 identified use cases, with 30–60% productivity gains achievable in knowledge work tasks that involve information synthesis, document processing, and code generation. Key enterprise deployment patterns include: document processing and extraction (contract review reducing review time from hours to minutes; regulatory filing generation; insurance claims processing); code generation and review (GitHub Copilot achieving 55M+ users; enterprise adoption of AI code assistants increasing developer throughput by 30–50% in empirical studies); customer service automation (conversational AI handling 50–70% of first-line customer enquiries in early adopters); operational forecasting and decision support (demand planning, capacity optimisation, fraud detection); and scientific research acceleration (drug discovery, materials characterisation, clinical trial design). The critical success factors for enterprise AI transformation are not primarily technical but organisational: data quality, change management, workflow integration, and governance infrastructure including [[AI Documentation Standards]] compliance.
+  Enterprises across financial services, healthcare, manufacturing, legal, and professional services are deploying AI capabilities at scale, primarily via API integration with frontier models and [[Agent Frameworks]] augmented by proprietary data and context through fine-tuning, retrieval-augmented generation, and system prompt engineering. McKinsey Global Institute (2025) estimates AI [private] add $17–26 trillion in annual global economic value across 63 identified use cases, with 30–60% productivity gains achievable in knowledge work tasks that involve information synthesis, document processing, and code generation. Key enterprise deployment patterns include: document processing and extraction (contract review reducing review time from hours to minutes; regulatory filing generation; insurance claims processing); code generation and review (GitHub Copilot achieving 55M+ users; enterprise adoption of AI code assistants increasing developer throughput by 30–50% in empirical studies); customer service automation (conversational AI handling 50–70% of first-line customer enquiries in early adopters); operational forecasting and decision support (demand planning, capacity optimisation, fraud detection); and scientific research acceleration (drug discovery, materials characterisation, clinical trial design). The critical success factors for enterprise AI transformation are not primarily technical but organisational: data quality, change management, workflow integration, and governance infrastructure including [[AI Documentation Standards]] compliance.
 
   ### Foundation Model API Economy
 
@@ -448,7 +593,7 @@ public: true
 
   **Agentic economy maturation**: [[Agentic AI]] systems are transitioning from productivity tools to autonomous economic actors — executing complex multi-step workflows, managing software codebases independently, and coordinating in multi-agent systems that complete entire business processes without step-by-step human oversight. The key threshold being crossed in 2026 is reliability: agentic systems must achieve error rates low enough that the expected value of autonomous execution exceeds the cost of errors and recovery. SWE-bench Verified scores exceeding 70% for leading agentic configurations (Q2 2026) mark approaching this threshold for software development tasks. Analyst projections suggest agentic AI platform revenues exceeding $100 billion by 2028, driven by agent-as-a-service pricing models that bill per task completion or per hour of agent operation rather than per token consumed — aligning provider incentives with customer value delivery. The governance implications are significant: autonomous agents taking consequential, potentially irreversible actions at scale require documentation frameworks ([[AI Documentation Standards]]) that cover not just model weights but agent configurations, permission scopes, tool access, and escalation protocols — areas where current documentation standards have significant gaps.
 
-  **Post-GPU silicon landscape**: The NVIDIA GPU monoculture at the compute layer — a defining structural feature of the 2022–2026 AI Ecosystem — faces challenge from multiple directions in the 2026–2030 period. Custom AI ASICs from Google (TPU v6), Amazon (Trainium3), Microsoft (Maia 2), and Meta (custom MTIA) are maturing in both performance and software ecosystem support, collectively capturing growing share of AI training and inference workloads within their respective cloud ecosystems. Neuromorphic chips (Intel Loihi 2, IBM NorthPole) achieving energy efficiencies 100–1000x better than GPUs for sparse inference workloads, and photonic computing companies (Lightmatter, Luminous Computing, Lightelligence) demonstrating optical matrix multiplication circuits that bypass von Neumann memory bandwidth bottlenecks at the speed of light — both are on 5-year development trajectories that could create meaningful alternatives to GPU dominance by 2028–2030. The critical variable is software ecosystem maturity: hardware alternatives require compilers, profiling tools, ML framework integration, debugging infrastructure, and community expertise accumulated over years before they are accessible to the broad ML engineering population.
+  **Post-GPU silicon landscape**: The NVIDIA GPU monoculture at the compute layer — a defining structural feature of the 2022–2026 AI Ecosystem — faces challenge from multiple directions in the 2026–2030 period. Custom AI ASICs from Google (TPU v6), Amazon (Trainium3), Microsoft (Maia 2), and Meta (custom MTIA) are maturing in both performance and software ecosystem support, collectively capturing growing share of AI training and inference workloads within their respective cloud ecosystems. Neuromorphic chips (Intel Loihi 2, IBM NorthPole) achieving energy efficiencies 100–1000x better than GPUs for sparse inference workloads, and photonic computing companies (Lightmatter, Luminous Computing, Lightelligence) demonstrating optical matrix multiplication circuits that bypass von Neumann memory bandwidth bottlenecks at the speed of light — both are on 5-year development trajectories that [private] create meaningful alternatives to GPU dominance by 2028–2030. The critical variable is software ecosystem maturity: hardware alternatives require compilers, profiling tools, ML framework integration, debugging infrastructure, and community expertise accumulated over years before they are accessible to the broad ML engineering population.
 
   **Open versus closed model equilibrium**: The open-weight ecosystem is expected to continue narrowing the capability gap with proprietary frontier models, driven by algorithmic innovations (mixture-of-experts efficiency, improved data curation, synthetic training data generation, test-time compute scaling) that partially compensate for compute differentials. DeepSeek-V3's training cost of approximately $5.5 million achieving near-frontier performance established a new benchmark for capital efficiency. By 2027–2028, open-weight models achieving capability parity for most enterprise use cases would fundamentally restructure the economics of the application layer: application builders would no longer depend on API access to a small number of frontier model providers, significantly reducing switching costs and competitive moats. This scenario would commoditise the foundation model layer and shift value creation to: (a) data — proprietary training data and RLHF preference data as the irreproducible competitive asset; (b) inference efficiency — hardware, serving stack, and quantisation optimisation enabling lower cost per token at a given quality level; and (c) integration quality — the depth and reliability of integration with enterprise workflows and data systems.
 

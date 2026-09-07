@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Algorithmic Bias
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -147,37 +142,100 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:harmful-bias", "label": "Harmful Bias"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:algorithmic-fairness", "label": "Algorithmic Fairness"},
-      {"@id": "urn:ngm:class:automated-decision-making", "label": "Automated Decision-Making"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:harmful-bias",
+        "label": "Harmful Bias"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:automated-decision-making",
+        "label": "Automated Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"}
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:fairness-constraints", "label": "Fairness Constraints"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-constraints",
+        "label": "Fairness Constraints"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
     ]
   },
   "quality": 0.8,
@@ -185,146 +243,6 @@ public: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:algorithmic-bias:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dd2b99a03f735872899a2eb101f502a1ad44eece3140edeed4f16c9e8e631871"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE P7003-2021]]",
-      "resolved": "urn:visionflow:linked:ieee-p7003-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC TR 24027]]",
-      "resolved": "urn:visionflow:linked:iso-iec-tr-24027",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST SP 1270]]",
-      "resolved": "urn:visionflow:linked:nist-sp-1270",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Fairness]]",
-      "resolved": "urn:visionflow:owl:class:ai-fairness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Algorithmic Fairness]]",
-      "resolved": "urn:visionflow:owl:class:algorithmic-fairness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Algorithmic Accountability]]",
-      "resolved": "urn:visionflow:owl:class:algorithmic-accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bias Mitigation Techniques]]",
-      "resolved": "urn:visionflow:owl:class:bias-mitigation-techniques",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Algorithmic Auditing]]",
-      "resolved": "urn:visionflow:owl:class:algorithmic-auditing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Responsible AI]]",
-      "resolved": "urn:visionflow:owl:class:responsible-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Ethics]]",
-      "resolved": "urn:visionflow:owl:class:ai-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data]]",
-      "resolved": "urn:visionflow:owl:class:training-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning-discipline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainability]]",
-      "resolved": "urn:visionflow:owl:class:explainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Differential Privacy]]",
-      "resolved": "urn:visionflow:owl:class:differential-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Governance]]",
-      "resolved": "urn:visionflow:owl:class:data-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Decision-Making]]",
-      "resolved": "urn:visionflow:owl:class:automated-decision-making",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fairness Constraints]]",
-      "resolved": "urn:visionflow:owl:class:fairness-constraints",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feature Engineering]]",
-      "resolved": "urn:visionflow:owl:class:feature-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Evaluation]]",
-      "resolved": "urn:visionflow:owl:class:model-evaluation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -452,7 +370,7 @@ public: true
   ## About
     Algorithmic bias is the field of inquiry and practice concerned with understanding, measuring, and correcting systematic disparities in [[Automated Decision-Making|AI and automated decision-making]] outputs that disproportionately affect protected groups. As a scholarly discipline it intersects computer science, social science, law, and philosophy, and as a regulatory obligation it is increasingly mandated by law across major jurisdictions. The field occupies a central position in [[AI Ethics]] and [[AI Governance]] because algorithmic systems now make or materially inform decisions affecting billions of individuals in domains — criminal justice, healthcare, financial services, education, employment — where miscalibration has concrete, sometimes irreversible consequences for human wellbeing and rights.
 
-    The conceptual foundations trace to the social sciences, where bias in measurement and statistical inference had long been studied under frameworks including construct validity (Campbell and Fiske, 1959) and item response theory. The field gained technical specificity in the 2010s as [[Machine Learning]] models began to be deployed in high-stakes decisions — criminal justice risk scoring, credit underwriting, recruitment screening, and healthcare triage. The transition from rule-based expert systems to learned statistical models was particularly consequential because learned models absorb patterns from [[Training Data]] that may contain encoded historical discrimination without any explicit instruction to do so and without any explicit representation of the discriminatory rule that could be audited or removed. Seminal empirical work including Sweeney's 2013 study of racially differential Google Ad targeting, Angwin et al.'s 2016 ProPublica investigation of the COMPAS recidivism scoring algorithm (showing Black defendants were labelled high-risk at nearly twice the rate of white defendants when controlling for actual re-offending), and Buolamwini and Gebru's 2018 Gender Shades study established that deployed systems exhibited substantial, measurable disparities. These findings catalysed a rapid expansion of the academic fairness literature and prompted regulatory attention across the EU, UK, and United States.
+    The conceptual foundations trace to the social sciences, where bias in measurement and statistical inference had long been studied under frameworks including construct validity (Campbell and Fiske, 1959) and item response theory. The field gained technical specificity in the 2010s as [[Machine Learning]] models began to be deployed in high-stakes decisions — criminal justice risk scoring, credit underwriting, recruitment screening, and healthcare triage. The transition from rule-based expert systems to learned statistical models was particularly consequential because learned models absorb patterns from [[Training Data]] that may contain encoded historical discrimination without any explicit instruction to do so and without any explicit representation of the discriminatory rule that [private] be audited or removed. Seminal empirical work including Sweeney's 2013 study of racially differential Google Ad targeting, Angwin et al.'s 2016 ProPublica investigation of the COMPAS recidivism scoring algorithm (showing Black defendants were labelled high-risk at nearly twice the rate of white defendants when controlling for actual re-offending), and Buolamwini and Gebru's 2018 Gender Shades study established that deployed systems exhibited substantial, measurable disparities. These findings catalysed a rapid expansion of the academic fairness literature and prompted regulatory attention across the EU, UK, and United States.
 
     The mathematical structure of algorithmic bias is complex and admits no universal technical solution. Chouldechova (2017) and Kleinberg et al. (2016) independently proved impossibility results showing that no classifier can simultaneously satisfy demographic parity, equalised odds, and calibration unless base rates are equal across groups — a condition that rarely holds in socially consequential prediction tasks. This mathematical impossibility underpins ongoing policy debate about which fairness criterion is legally or ethically appropriate for each deployment context — a question Barocas, Hardt, and Narayanan (MIT Press, 2023) treat exhaustively in their foundational textbook. The impossibility results do not mean bias cannot be reduced; they mean that reducing it on one axis may increase it on another, and that the choice of fairness criterion is a social and legal rather than purely technical question requiring engagement with affected communities, legal counsel, and domain experts. This recognition has driven a shift from purely technical mitigation approaches toward holistic [[Algorithmic Accountability]] frameworks that embed bias management within governance structures, audit regimes, and participatory design processes.
 

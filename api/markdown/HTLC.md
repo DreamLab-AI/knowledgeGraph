@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HTLC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,52 +191,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:htlc:ef8c49cab8ca",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b596c4b39aa6ee2b70977154e8e3833786d79dfc9b7d508a25e8a20ba4d8786a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:linked:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:linked:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment Channel]]",
-      "resolved": "urn:visionflow:linked:payment-channel",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Script]]",
-      "resolved": "urn:visionflow:linked:bitcoin-script",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Hashed Time-Locked Contract is a conditional payment construct that releases funds when a preimage is revealed before a deadline, otherwise refunding the sender.

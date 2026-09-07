@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Banking System
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,39 +20,92 @@ public: true
   "definition": "An organised network of financial institutions, regulatory bodies, payment infrastructure, and legal frameworks that collectively facilitate the creation, custody, transfer, and lending of money within an economy. A banking system includes central banks, commercial banks, investment banks, and clearing houses, all operating under a body of prudential regulation. It underpins economic activity by providing mechanisms for capital allocation, risk distribution, and monetary policy transmission. Modern banking systems increasingly integrate digital and real-time payment rails.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:finance", "label": "Finance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:finance",
+      "label": "Finance"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
-      {"@id": "urn:ngm:class:commercial-bank", "label": "Commercial Bank"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:clearing-house", "label": "Clearing House"}
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:commercial-bank",
+        "label": "Commercial Bank"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:capital-allocation", "label": "Capital Allocation"},
-      {"@id": "urn:ngm:class:credit-creation", "label": "Credit Creation"}
+      {
+        "@id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:credit-creation",
+        "label": "Credit Creation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-banking", "label": "Open Banking"},
-      {"@id": "urn:ngm:class:fintech", "label": "Fintech"},
-      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"}
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "@id": "urn:ngm:class:fintech",
+        "label": "Fintech"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:economic-stability", "label": "Economic Stability"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:economic-stability",
+        "label": "Economic Stability"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:basel-framework", "label": "Basel Framework"}
+      {
+        "@id": "urn:ngm:class:basel-framework",
+        "label": "Basel Framework"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
   "quality": 0.62,

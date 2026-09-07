@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Microphone
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A microphone is a transducer that converts acoustic sound waves into an electrical signal, serving as the primary audio sensor in interactive and telepresence systems. Common types include electret, MEMS, condenser, and dynamic, characterised by polar pattern, sensitivity, and signal-to-noise ratio. In robots and voice interfaces, microphone arrays additionally enable beamforming and source localisation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:tc-0003-telepresence-robot", "label": "tc 0003 telepresence robot"},
-      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"}
+      {
+        "@id": "urn:ngm:class:tc-0003-telepresence-robot",
+        "label": "tc 0003 telepresence robot"
+      },
+      {
+        "@id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      }
     ]
   },
   "quality": 0.72

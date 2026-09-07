@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Conspiracies]]
-# Conspiratorial Thinking in Technology Communities
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -73,16 +67,34 @@ elevatedFrom:: [[Conspiracies]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:california-ai-bill", "label": "California AI bill"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"}
+      {
+        "@id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
     ]
   },
   "quality": 0.5,
@@ -93,57 +105,6 @@ elevatedFrom:: [[Conspiracies]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:conspiracies:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:779debe12e7ecd24d26a99a3a152714779076c50263d376190d533b1a3e9a609"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[martin2022dark]]",
-      "resolved": "urn:visionflow:linked:martin2022dark",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[va2010neoconservatism]]",
-      "resolved": "urn:visionflow:linked:va2010neoconservatism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[California AI bill]]",
-      "resolved": "urn:visionflow:owl:class:california-ai-bill",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Safety and alignment]]",
-      "resolved": "urn:visionflow:owl:class:safety-and-alignment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Conspiracies, in the context of technology communities, refers to the recurring pattern of conspiratorial thinking that attaches to emerging technologies such as cryptocurrency and AI. Often rooted in legitimate governance concerns, such thinking can escalate into disinformation ecosystems, creating tensions within technology policy, AI safety debates, and open-source governance.
@@ -219,7 +180,7 @@ elevatedFrom:: [[Conspiracies]]
 		- ### Effective Accelerationists (EAcc) / AI Risk Sceptics
 			- Emphasise the potential benefits of rapid AI progress
 			- Tend to be more sceptical of AI safety concerns as blocking human advancement
-			- Argue that slowing down AI development could deny humanity massive benefits
+			- Argue that slowing down AI development [private] deny humanity massive benefits
 			- Associated with figures like "Beff Bezos" aka Guillaume Verdon, Daniel Dewey, Nick Land
 			- See accelerating AI as part of a broader techno-capitalist imperative to transcend human limitations
 		- ## Geographical and Cultural Factors

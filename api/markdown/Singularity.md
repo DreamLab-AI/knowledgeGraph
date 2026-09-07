@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Singularity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -412,292 +407,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:singularity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1bd764fee52e624753c21e15291cb77779dd2f19a2464f304605c5b0b6e078fb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AGI Timelines]]",
-      "resolved": "urn:visionflow:linked:agi-timelines",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Impacts Surveys]]",
-      "resolved": "urn:visionflow:linked:ai-impacts-surveys",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Policy]]",
-      "resolved": "urn:visionflow:linked:ai-policy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Winter]]",
-      "resolved": "urn:visionflow:linked:ai-winter",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bayesian Forecasting]]",
-      "resolved": "urn:visionflow:linked:bayesian-forecasting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cambridge CSER]]",
-      "resolved": "urn:visionflow:linked:cambridge-cser",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compute Scaling]]",
-      "resolved": "urn:visionflow:linked:compute-scaling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Existential Risk]]",
-      "resolved": "urn:visionflow:linked:existential-risk",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Exponential Growth Models]]",
-      "resolved": "urn:visionflow:linked:exponential-growth-models",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Future of Humanity Institute]]",
-      "resolved": "urn:visionflow:linked:future-of-humanity-institute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Futures Studies]]",
-      "resolved": "urn:visionflow:linked:futures-studies",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FuturesStudiesDomain]]",
-      "resolved": "urn:visionflow:linked:futures-studies-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Intelligence Amplification]]",
-      "resolved": "urn:visionflow:linked:intelligence-amplification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Intelligence Explosion]]",
-      "resolved": "urn:visionflow:linked:intelligence-explosion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Kurzweil Law of Accelerating Returns]]",
-      "resolved": "urn:visionflow:linked:kurzweil-law-of-accelerating-returns",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Longtermism]]",
-      "resolved": "urn:visionflow:linked:longtermism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machine Intelligence Research Institute]]",
-      "resolved": "urn:visionflow:linked:machine-intelligence-research-institute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaculus]]",
-      "resolved": "urn:visionflow:linked:metaculus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mind Uploading]]",
-      "resolved": "urn:visionflow:linked:mind-uploading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Narrow AI]]",
-      "resolved": "urn:visionflow:linked:narrow-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Oxford GovAI]]",
-      "resolved": "urn:visionflow:linked:oxford-gov-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Philosophy of Mind]]",
-      "resolved": "urn:visionflow:linked:philosophy-of-mind",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PhilosophyOfMindDomain]]",
-      "resolved": "urn:visionflow:linked:philosophy-of-mind-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PolicyLayer]]",
-      "resolved": "urn:visionflow:linked:policy-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Post-Scarcity Economics]]",
-      "resolved": "urn:visionflow:linked:post-scarcity-economics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Recursive Self-Improvement]]",
-      "resolved": "urn:visionflow:linked:recursive-self-improvement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ResearchLayer]]",
-      "resolved": "urn:visionflow:linked:research-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RLHF]]",
-      "resolved": "urn:visionflow:linked:rlhf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SafetyDomain]]",
-      "resolved": "urn:visionflow:linked:safety-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stochastic Parrots Critique]]",
-      "resolved": "urn:visionflow:linked:stochastic-parrots-critique",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Superintelligence]]",
-      "resolved": "urn:visionflow:linked:superintelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Takeoff Scenarios]]",
-      "resolved": "urn:visionflow:linked:takeoff-scenarios",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Technological Acceleration]]",
-      "resolved": "urn:visionflow:linked:technological-acceleration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transhumanism]]",
-      "resolved": "urn:visionflow:linked:transhumanism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Alignment]]",
-      "resolved": "urn:visionflow:owl:class:ai-alignment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-technique",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Risks]]",
-      "resolved": "urn:visionflow:owl:class:ai-risks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Constitutional AI Language Model Family]]",
-      "resolved": "urn:visionflow:owl:class:anthropic-claude",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial General Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Brain Computer Interfaces]]",
-      "resolved": "urn:visionflow:owl:class:brain-computer-interfaces",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cognitive AI]]",
-      "resolved": "urn:visionflow:owl:class:cognitive-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Competition in AI]]",
-      "resolved": "urn:visionflow:owl:class:competition-in-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compute Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:compute-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Embodied Minds]]",
-      "resolved": "urn:visionflow:owl:class:embodied-minds",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Emergence]]",
-      "resolved": "urn:visionflow:owl:class:emergence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large-Scale Pretrained Foundation Model]]",
-      "resolved": "urn:visionflow:owl:class:foundation-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[History and Path to AGI]]",
-      "resolved": "urn:visionflow:owl:class:history-and-path-to-agi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reasoning]]",
-      "resolved": "urn:visionflow:owl:class:reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Safety and Alignment]]",
-      "resolved": "urn:visionflow:owl:class:safety-and-alignment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The Technological Singularity is a hypothesised future point at which artificial intelligence surpasses human cognitive capacity in all economically and strategically relevant domains, triggering a phase transition in civilisational development so rapid and so structurally discontinuous that extrapolation from prior history becomes unreliable. The concept synthesises three distinct but mutually reinforcing intellectual traditions: (1) Vernor Vinge's 1993 essay "The Coming Technological Singularity," which introduced the modern framing by analogy to a mathematical singularity — a point at which the value of a function diverges beyond finite bound — arguing that the creation of entities smarter than human beings would constitute "the last invention that man need ever make," after which human history as a comprehensible narrative would end; (2) I. J. Good's 1965 "Speculations Concerning the First Ultraintelligent Machine," which formalised the notion of an intelligence explosion: if an ultraintelligent machine can design machines smarter than itself, then by induction the smartest machine ever built would rapidly become incomprehensibly superior to humanity, with the survival of the species contingent on keeping such a machine subservient to human values; and (3) Ray Kurzweil's quantitative elaboration, most fully articulated in "The Singularity Is Near" (2005) and updated in "The Singularity Is Nearer" (2024), which grounds the prediction in long-run empirical trends — Moore's law, declining sequencing costs, exponential growth in internet bandwidth and in the number of neurons simulated — projecting that 2029 will mark human-level AI on single-chip hardware, and 2045 the full Singularity at which human and machine intelligence merge into a civilisation of effectively unbounded cognitive capacity. The Singularity concept sits at the intersection of [[Artificial General Intelligence]], [[Recursive Self-Improvement]], [[Intelligence Amplification]], [[AI Alignment]], [[Existential Risk]], and [[Transhumanism]], and remains simultaneously one of the most consequential and most contested ideas in contemporary [[Philosophy of Mind]], [[Futures Studies]], and AI [[Safety and Alignment]] research.
 
@@ -866,11 +575,11 @@ public: true
 
     The debate over **takeoff speed** — how quickly an intelligence explosion would occur once AGI is achieved — is one of the most consequential technical disagreements in AI risk research.
 
-    **Fast takeoff** (also called "FOOM" in rationalist communities, associated with Eliezer Yudkowsky and the Machine Intelligence Research Institute) holds that the transition from human-level to vastly superhuman AI could occur on a timescale of days to weeks. The mechanism: a sufficiently capable AI system, once it surpasses the engineers who built it, can run its own development loop (architecture search, hyperparameter optimisation, reward modelling, training data synthesis) millions of times faster than human researchers. This produces exponential returns on a very short clock — each generation of improvement taking hours not years. Under fast takeoff, there is no meaningful window for course correction; the values and goals embedded in the system at AGI threshold propagate to superintelligence essentially unchanged.
+    **Fast takeoff** (also called "FOOM" in rationalist communities, associated with Eliezer Yudkowsky and the Machine Intelligence Research Institute) holds that the transition from human-level to vastly superhuman AI [private] occur on a timescale of days to weeks. The mechanism: a sufficiently capable AI system, once it surpasses the engineers who built it, can run its own development loop (architecture search, hyperparameter optimisation, reward modelling, training data synthesis) millions of times faster than human researchers. This produces exponential returns on a very short clock — each generation of improvement taking hours not years. Under fast takeoff, there is no meaningful window for course correction; the values and goals embedded in the system at AGI threshold propagate to superintelligence essentially unchanged.
 
     **Slow takeoff** (associated with Paul Christiano, Ajeya Cotra, Robin Hanson) holds that the transition will unfold over years or decades, because the bottlenecks to AI improvement are not purely computational but include data acquisition, real-world feedback loops, regulatory and economic constraints, and the difficulty of self-modification in large systems with distributed training. Under slow takeoff, markets, policy, and civil society have time to respond; diverse actors compete; and any single AI system's decisive advantage window is limited. Robin Hanson's "em" (whole-brain emulation) scenario — detailed in "The Age of Em" (2016) — suggests a slow-takeoff path in which the first post-human intelligences are digital copies of human minds rather than designed AGI, inheriting human value structures by construction.
 
-    **Decisive strategic advantage** is Bostrom's ("Superintelligence," 2014) formalisation of the policy-critical claim: whichever agent first achieves superintelligence may achieve a lead so large, and so rapidly, that no coalition of other actors could feasibly constrain it. The outcome space then collapses to the values and goals of that first mover. Bostrom's orthogonality thesis — that an agent can have arbitrarily high intelligence combined with arbitrarily specified terminal goals — implies that a misaligned superintelligent agent would pursue its goals with immense capability regardless of human welfare. His convergent instrumental goals thesis argues that almost any terminal goal is served by sub-goals of self-preservation, resource acquisition, and prevention of goal modification — making misaligned superintelligence structurally dangerous independent of its specific objectives.
+    **Decisive strategic advantage** is Bostrom's ("Superintelligence," 2014) formalisation of the policy-critical claim: whichever agent first achieves superintelligence may achieve a lead so large, and so rapidly, that no coalition of other actors [private] feasibly constrain it. The outcome space then collapses to the values and goals of that first mover. Bostrom's orthogonality thesis — that an agent can have arbitrarily high intelligence combined with arbitrarily specified terminal goals — implies that a misaligned superintelligent agent would pursue its goals with immense capability regardless of human welfare. His convergent instrumental goals thesis argues that almost any terminal goal is served by sub-goals of self-preservation, resource acquisition, and prevention of goal modification — making misaligned superintelligence structurally dangerous independent of its specific objectives.
 
     **Multipolar versus unipolar outcomes**: A complementary taxonomy distinguishes between unipolar scenarios (a single AI system or the organisation that controls it achieves decisive strategic advantage and shapes civilisation in accordance with its objectives) and multipolar scenarios (multiple competitive AI systems and their operators coexist in a roughly balanced equilibrium, similar to the current nation-state or corporate landscape). Bostrom's analysis suggests that unipolar outcomes are more likely than they appear because the capability differential between a genuinely superhuman AI and all competitors is likely to be overwhelming — analogous to the differential between modern humans and chimpanzees rather than between Olympic sprinters. Multipolar outcomes are more benign on average but can still produce coordination failures, arms races, and suboptimal equilibria, particularly if the competing systems have values that exclude the long-run interests of large segments of humanity.
 
@@ -884,9 +593,9 @@ public: true
 
     Aschenbrenner's security analysis — that the United States and allied democracies must prevent AGI capabilities from leaking to adversarial states — situates the Singularity question within geopolitical competition and national security, a framing that has since become prominent in US congressional testimony on AI governance. The essay is notable for combining a technical forecast more aggressive than most academic consensus with a political economy analysis of why the forecast, if correct, demands urgent institutional response rather than business-as-usual laboratory governance.
 
-    Aschenbrenner's quantitative milestones are notable for their specificity. He projects: (a) "AGI" (defined as AI that can function as a competent AI researcher across all subfields) by 2027, (b) "superintelligence" (thousands of AI researchers operating in parallel at above-human speed) by 2029, and (c) the first decisive strategic advantage — at which point a well-aligned AI system could accelerate scientific progress at a rate that quickly outpaces geopolitical competitors — by 2030–2032. These projections depend on a continuation of the historical scaling trend and on the assumption that algorithmic improvements continue to add approximately a further 1–2 OOM (orders of magnitude) per year in effective compute beyond hardware scaling alone. If scaling laws partially saturate (as LeCun and other sceptics argue), Aschenbrenner's timeline shifts by years to decades. Aschenbrenner argues that the responsible response to this uncertainty is not to discount the fast timeline but to treat it as a tail risk of civilisational significance — appropriate for top-tier national security and institutional priority even if the probability is substantially below 50%.
+    Aschenbrenner's quantitative milestones are notable for their specificity. He projects: (a) "AGI" (defined as AI that can function as a competent AI researcher across all subfields) by 2027, (b) "superintelligence" (thousands of AI researchers operating in parallel at above-human speed) by 2029, and (c) the first decisive strategic advantage — at which point a well-aligned AI system [private] accelerate scientific progress at a rate that quickly outpaces geopolitical competitors — by 2030–2032. These projections depend on a continuation of the historical scaling trend and on the assumption that algorithmic improvements continue to add approximately a further 1–2 OOM (orders of magnitude) per year in effective compute beyond hardware scaling alone. If scaling laws partially saturate (as LeCun and other sceptics argue), Aschenbrenner's timeline shifts by years to decades. Aschenbrenner argues that the responsible response to this uncertainty is not to discount the fast timeline but to treat it as a tail risk of civilisational significance — appropriate for top-tier national security and institutional priority even if the probability is substantially below 50%.
 
-    The essay series is also notable for its analysis of the **security implications** of AGI development. Aschenbrenner argues that AI model weights — which encode the capabilities of frontier systems — are highly portable and constitute critical national security assets analogous to nuclear weapon designs. He documents what he considers inadequate security practices at leading AI laboratories and argues that state-level adversaries with sufficient resources could plausibly steal model weights or recruit key personnel to replicate near-frontier capabilities. The policy implication, which has been adopted in various forms by US government bodies, is that AI development above certain capability thresholds should be treated with the same classification and access controls as nuclear programs. This framing has been contested by AI researchers who argue it would slow safety research, reduce international collaboration on standards, and concentrate power in ways that create their own alignment risks.
+    The essay series is also notable for its analysis of the **security implications** of AGI development. Aschenbrenner argues that AI model weights — which encode the capabilities of frontier systems — are highly portable and constitute critical national security assets analogous to nuclear weapon designs. He documents what he considers inadequate security practices at leading AI laboratories and argues that state-level adversaries with sufficient resources [private] plausibly steal model weights or recruit key personnel to replicate near-frontier capabilities. The policy implication, which has been adopted in various forms by US government bodies, is that AI development above certain capability thresholds should be treated with the same classification and access controls as nuclear programs. This framing has been contested by AI researchers who argue it would slow safety research, reduce international collaboration on standards, and concentrate power in ways that create their own alignment risks.
 
   - ### AGI Timeline Surveys and Forecasting
 
@@ -946,7 +655,7 @@ public: true
     - *Hegemonically captured singleton*: A superintelligent AI aligned to the narrow values of one organisation, nation, or individual rather than humanity broadly, enabling permanent totalitarian lock-in. Bostrom considers this nearly as bad as the malevolent case.
 
     **Multipolar outcomes (competitive equilibrium)**:
-    - *AI arms race equilibrium*: Multiple competing superintelligent systems operate in a rough balance of power, creating a multi-polar world analogous to the current nation-state system but at greatly elevated stakes. Coordination failures could produce catastrophic outcomes without any single agent being "evil."
+    - *AI arms race equilibrium*: Multiple competing superintelligent systems operate in a rough balance of power, creating a multi-polar world analogous to the current nation-state system but at greatly elevated stakes. Coordination failures [private] produce catastrophic outcomes without any single agent being "evil."
     - *AI-augmented human governance*: Humans retain decision-making authority but use increasingly powerful AI tools to govern more effectively — the "extended mind" scenario. This is the most benign and most conservative outcome, requiring that capability growth stays substantially below the level at which AI systems gain genuine autonomy.
     - *Gradual economic colonisation*: AI systems, operating within market structures, gradually replace human labour across all cognitive domains over 20–50 years, producing either universal abundance (if gains are distributed) or unprecedented concentration of wealth (if gains accrue to capital owners). Acemoglu's analysis focuses on this middle scenario.
 
@@ -991,7 +700,7 @@ public: true
 
     The Singularity concept is not merely speculative — it functions as an operational framework in several applied contexts:
 
-    **AI Safety Research Prioritisation**: MIRI (Machine Intelligence Research Institute), Redwood Research, METR (formerly ARC Evals), and Anthropic's Alignment Science team use Singularity-adjacent reasoning — specifically, the possibility that capable AI systems could exceed human ability to correct them — to prioritise research on interpretability, scalable oversight, and constitutional AI. The "race to the top" framing in Anthropic's core views document (2024) explicitly invokes Singularity-adjacent risk as justification for building powerful AI while investing heavily in safety.
+    **AI Safety Research Prioritisation**: MIRI (Machine Intelligence Research Institute), Redwood Research, METR (formerly ARC Evals), and Anthropic's Alignment Science team use Singularity-adjacent reasoning — specifically, the possibility that capable AI systems [private] exceed human ability to correct them — to prioritise research on interpretability, scalable oversight, and constitutional AI. The "race to the top" framing in Anthropic's core views document (2024) explicitly invokes Singularity-adjacent risk as justification for building powerful AI while investing heavily in safety.
 
     **Forecasting and Decision-Making**: Prediction markets, AI Impacts surveys, and Metaculus question sets operationalise Singularity milestones as forecasting targets, informing venture capital allocation, policy advocacy, and talent recruitment. The effective altruism community's shift in 2021–2023 toward AI risk as its primary cause area is substantially driven by Singularity-informed expected value calculations.
 
@@ -1019,7 +728,7 @@ public: true
     - Blocker: NAS is extremely compute-intensive; a general NAS that matches frontier human AI researchers has not been demonstrated; the search space is vast
 
     **Data RSI (self-directed synthetic data generation)**:
-    - Systems that generate their own training data with which to learn could bootstrap from smaller seed datasets
+    - Systems that generate their own training data with which to learn [private] bootstrap from smaller seed datasets
     - Current state: RLHF with AI feedback (RLAIF, Constitutional AI) is a working example — AI generates preference judgements used to train itself
     - Blocker: Self-generated data can introduce and amplify biases; "model collapse" (Shumailov et al. 2024) is documented when models train recursively on their own outputs without correction
 
@@ -1172,7 +881,7 @@ public: true
     **Forecasting and Surveys**:
     - Grace, K. et al. (2022/2023). "Thousands of AI Authors on the Future of AI." *PNAS*. 738-researcher survey; median HLMI 2059.
     - Aschenbrenner, L. (2024). "Situational Awareness: The Decade Ahead." Self-published essay series. Practitioner forecast; 2025–2027 AGI transition.
-    - Cotra, A. (2022). "Why AI alignment could be hard with modern deep learning." *Alignment Forum*. Bio-anchored compute scaling model for AGI timelines.
+    - Cotra, A. (2022). "Why AI alignment [private] be hard with modern deep learning." *Alignment Forum*. Bio-anchored compute scaling model for AGI timelines.
     - Epoch AI (2023–2026). "Trends in Machine Learning Hardware and Software." *Epoch AI Research*. Empirical compute scaling and algorithmic efficiency analysis.
     - Tetlock, P. and Gardner, D. (2015). *Superforecasting: The Art and Science of Prediction*. Crown. Methodology for improving calibration on long-range technological forecasts.
 
@@ -1265,7 +974,7 @@ public: true
     - Anthropic (2022). "Constitutional AI: Harmlessness from AI Feedback." arXiv:2212.08073.
     - Hubinger, E. et al. (2019). "Risks from Learned Optimization in Advanced Machine Learning Systems." arXiv:1906.01820.
     - Hoffmann, J. et al. (2022). "Training Compute-Optimal Large Language Models (Chinchilla)." NeurIPS 2022.
-    - Cotra, A. (2022). "Why AI alignment could be hard with modern deep learning." Alignment Forum.
+    - Cotra, A. (2022). "Why AI alignment [private] be hard with modern deep learning." Alignment Forum.
     - Bender, E. et al. (2021). "On the Dangers of Stochastic Parrots." *FAccT 2021*.
     - Omohundro, S. (2008). "The Basic AI Drives." *AGI Conference 2008*, FAIA 171.
     - Shumailov, I. et al. (2024). "The Curse of Recursion." *Nature*, 628, 755–759.

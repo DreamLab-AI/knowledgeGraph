@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Environment Creation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -101,37 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-environment-creation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:80cb33d039c2a15dadea7ef1b45500a2f85cd120537fc5da1b2a434d4e22570e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Development]]",
-      "resolved": "urn:visionflow:owl:class:3-d-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of designing, building, and deploying immersive 3D virtual worlds using game engines, modeling software, and AI-powered tools, encompassing static and dynamic assets, physics simulation, and interactive experiences for metaverse platforms.

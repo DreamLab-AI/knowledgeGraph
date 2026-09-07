@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interactive Proof System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -113,6 +109,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - An Interactive Proof System is a protocol in which a computationally powerful prover convinces a probabilistic, resource-bounded verifier of the truth of a statement through a sequence of message exchanges. It satisfies completeness, so true statements are accepted with high probability, and soundness, so false statements are rejected except with negligible probability. Interactive proofs generalise classical proofs and form the theoretical basis for zero-knowledge proofs and many cryptographic protocols.
   - Related concepts: [[Proof System]] [[Zero-Knowledge Proof]] [[Commitment Scheme]] [[Cryptographic Protocol]] [[Fiat-Shamir Heuristic]]

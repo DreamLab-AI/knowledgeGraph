@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Data-Efficient Learning
----
-
-# Data Efficient Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,16 +50,34 @@ aliases:
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+      {
+        "@id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
     ]
   },
   "quality": 0.35,
@@ -77,32 +88,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-efficient-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:73fa4625a39e8aac9d3371aa1d53019a5cce40defda5b2afd4bb5f8fcef18234"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Data Efficient Learning encompasses machine learning techniques that achieve strong generalisation from limited labelled training examples, including transfer learning, few-shot learning, semi-supervised learning, data augmentation, and self-supervised pretraining. These methods address real-world constraints where large annotated datasets are impractical to obtain, making AI deployable in specialised or resource-constrained domains.

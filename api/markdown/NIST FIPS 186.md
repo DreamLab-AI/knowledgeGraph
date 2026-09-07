@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NIST FIPS 186
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nist-fips-186:79e68c5fe814",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:883cc65bc2d69b5a2500d66656ae223a21de01e6ca3c3e90e1cfa527acff3fed"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NIST]]",
-      "resolved": "urn:visionflow:linked:nist",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A NIST Federal Information Processing Standard specifying the Digital Signature Standard (DSS), defining approved algorithms for generating and verifying digital signatures. It covers algorithms such as DSA, RSA and ECDSA depending on the revision.

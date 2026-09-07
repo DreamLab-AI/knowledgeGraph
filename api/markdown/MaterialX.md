@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MaterialX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -151,57 +146,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:material-x:cfaf06826e82",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:584c83a798f53eeabbbb5b984873655eac78cba68da115d74ed25ca3dce95531"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Shader]]",
-      "resolved": "urn:visionflow:linked:shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Texture Mapping]]",
-      "resolved": "urn:visionflow:linked:texture-mapping",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physically Based Rendering]]",
-      "resolved": "urn:visionflow:linked:physically-based-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asset Interoperability]]",
-      "resolved": "urn:visionflow:linked:asset-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[glTF]]",
-      "resolved": "urn:visionflow:linked:gl-tf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Material Definition]]",
-      "resolved": "urn:visionflow:linked:material-definition",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - MaterialX is an open standard for describing surface and procedural materials, shading networks and look development data in a renderer-independent form for exchange between content creation tools.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Difficulty Target
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,29 +87,74 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:nonce", "label": "Nonce"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-hash-rate", "label": "Network Hash Rate"},
-      {"@id": "urn:ngm:class:consensus-rule", "label": "Consensus Rule"}
+      {
+        "@id": "urn:ngm:class:network-hash-rate",
+        "label": "Network Hash Rate"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-rule",
+        "label": "Consensus Rule"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"}
+      {
+        "@id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:halving", "label": "Halving"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
-      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"}
+      {
+        "@id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      }
     ]
   },
   "provenance": {
@@ -124,67 +164,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:difficulty-target:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8d4d145906c8c8676ac785e0f3193531eb857d97f6d3e732d792c0aed5b525f9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-protocol-and-consensus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusProtocol]]",
-      "resolved": "urn:visionflow:owl:class:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ProtocolLayer]]",
-      "resolved": "urn:visionflow:owl:class:protocol-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

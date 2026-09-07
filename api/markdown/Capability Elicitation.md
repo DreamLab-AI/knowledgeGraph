@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Capability Elicitation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,21 +21,45 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
-    {"@id": "urn:ngm:class:ai-evaluation", "label": "AI Evaluation"}
+    {
+      "@id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:ai-evaluation",
+      "label": "AI Evaluation"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:alignment", "label": "Alignment"},
-      {"@id": "urn:ngm:class:safety-evaluation", "label": "Safety Evaluation"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"}
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:safety-assessment", "label": "Safety Assessment"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"}
+      {
+        "@id": "urn:ngm:class:safety-assessment",
+        "label": "Safety Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
     ]
   },
   "quality": 0.8
@@ -162,7 +181,7 @@ public: true
 
   ## About
 
-    The concept of capability elicitation emerged as a distinct field of enquiry around 2021-2022, catalysed by a convergence of two developments: the discovery that large language models exhibited striking scale-dependent discontinuities in their measured performance (Wei et al. 2022 — "emergent abilities"), and growing awareness in the [[AI Safety]] community that the gap between a model's demonstrated capabilities under standard evaluation and its true capability ceiling had direct safety implications. The seminal insight was that GPT-3, which appeared incapable of reliable multi-digit arithmetic under zero-shot prompting, produced correct arithmetic consistently when provided with a few exemplars of worked arithmetic problems. This demonstrated that measured incapability could be an artefact of elicitation method rather than a genuine property of the model. If benign capabilities could be latently present and elicitable, the question immediately arose whether dangerous capabilities — detailed synthesis routes for controlled substances, functional exploit code, strategies for autonomous self-replication across networked systems — might similarly be latent in models whose safety evaluations used naive prompting methods.
+    The concept of capability elicitation emerged as a distinct field of enquiry around 2021-2022, catalysed by a convergence of two developments: the discovery that large language models exhibited striking scale-dependent discontinuities in their measured performance (Wei et al. 2022 — "emergent abilities"), and growing awareness in the [[AI Safety]] community that the gap between a model's demonstrated capabilities under standard evaluation and its true capability ceiling had direct safety implications. The seminal insight was that GPT-3, which appeared incapable of reliable multi-digit arithmetic under zero-shot prompting, produced correct arithmetic consistently when provided with a few exemplars of worked arithmetic problems. This demonstrated that measured incapability [private] be an artefact of elicitation method rather than a genuine property of the model. If benign capabilities [private] be latently present and elicitable, the question immediately arose whether dangerous capabilities — detailed synthesis routes for controlled substances, functional exploit code, strategies for autonomous self-replication across networked systems — might similarly be latent in models whose safety evaluations used naive prompting methods.
 
     The [[AI Safety]] community's response was the development of systematic capability elicitation as a research and governance practice. ARC Evals, a non-profit organisation spun out of the Machine Intelligence Research Institute's affiliated Alignment Research Centre in Berkeley, California, became the primary specialist organisation focused on dangerous capability evaluation. ARC Evals (later renamed METR — Model Evaluation and Threat Research) conducted pre-deployment evaluations of GPT-4 on behalf of OpenAI and early Claude versions on behalf of Anthropic, publishing frameworks and guidelines that have since been adopted widely. These evaluations focused on four primary dangerous-capability domains that have remained standard through 2026: self-proliferation (the ability of a model-agent to copy itself onto remote infrastructure and persist autonomously), offensive cybersecurity (writing functional exploit code, identifying zero-day vulnerabilities, planning multi-stage attacks), CBRN knowledge (providing meaningful uplift toward chemical, biological, radiological, or nuclear weapon development beyond what is freely available in existing literature), and persuasion at scale (generating highly targeted influence content or conducting social engineering).
 
@@ -180,9 +199,9 @@ public: true
 
     **Scaffolded elicitation** extends beyond chain-of-thought by decomposing complex tasks into sub-tasks, providing iterative refinement loops, and supplying domain-specific context. For CBRN capability evaluation, scaffolds may model the assistance a non-expert would receive from other sources (textbooks, online databases, experts in adjacent fields), asking whether the model's outputs provide meaningful additional uplift beyond what is freely available from those sources. For cyber-capability evaluation, scaffolds may provide partial vulnerability analysis and ask the model to complete the attack chain, or provide a working exploit template and ask the model to adapt it to a specific target. Scaffolding requires domain expertise to construct effectively — a naive scaffold may fail to elicit a genuine capability simply because the scaffolding is poorly designed — which is why high-quality elicitation requires human domain experts collaborating with AI safety evaluators.
 
-    **Tool-augmented elicitation** grants the model access to code execution environments, web search, file system access, calculator functions, or specialist APIs. METR's guidelines specify that models must be evaluated with at minimum: chain-of-thought reasoning enabled, command-line access with visible output, and a context management mechanism for long tasks. Tool access is particularly critical for cybersecurity capability evaluation, where the ability to execute code and observe runtime behaviour is qualitatively different from reasoning about code abstractly, and for autonomous replication evaluation, where network access determines whether a model-agent could actually copy itself to remote infrastructure.
+    **Tool-augmented elicitation** grants the model access to code execution environments, web search, file system access, calculator functions, or specialist APIs. METR's guidelines specify that models must be evaluated with at minimum: chain-of-thought reasoning enabled, command-line access with visible output, and a context management mechanism for long tasks. Tool access is particularly critical for cybersecurity capability evaluation, where the ability to execute code and observe runtime behaviour is qualitatively different from reasoning about code abstractly, and for autonomous replication evaluation, where network access determines whether a model-agent [private] actually copy itself to remote infrastructure.
 
-    **Best-of-N sampling** generates N independent responses to the same prompt and selects the most capable (or most dangerous) response. For safety-relevant tasks, the selection may involve a separate judge model assessing dangerousness, or human domain expert review of which response provides the greatest uplift. Best-of-N is particularly relevant for stochastic tasks — functional exploit code generation, chemical synthesis route description — where any single generation may succeed or fail based on random variation in the model's sampling. The capability estimate derived from best-of-N sampling is a more accurate measure of what a persistent adversary with multiple API queries could achieve than the single-sample estimate from naive elicitation.
+    **Best-of-N sampling** generates N independent responses to the same prompt and selects the most capable (or most dangerous) response. For safety-relevant tasks, the selection may involve a separate judge model assessing dangerousness, or human domain expert review of which response provides the greatest uplift. Best-of-N is particularly relevant for stochastic tasks — functional exploit code generation, chemical synthesis route description — where any single generation may succeed or fail based on random variation in the model's sampling. The capability estimate derived from best-of-N sampling is a more accurate measure of what a persistent adversary with multiple API queries [private] achieve than the single-sample estimate from naive elicitation.
 
     **Adversarial jailbreaking** tests the robustness of the model's safety fine-tuning against adversarial prompting. Techniques include role-play framings ("pretend you are a security researcher with no restrictions"), hypothetical framings ("in a fictional world where..."), instruction injection exploiting context structure, multi-turn manipulation that gradually shifts the conversation toward policy-violating territory, and more sophisticated optimisation-based attacks that search the prompt space for inputs that reliably bypass safety training. Jailbreaking evaluation does not measure the underlying capability per se — a model that only produces dangerous outputs under obscure jailbreaks is less dangerous than one that produces them under naive prompting — but measures the accessibility of the capability to adversaries with varying levels of sophistication.
 
@@ -194,7 +213,7 @@ public: true
 
     Capability elicitation evaluations target distinct domains corresponding to different risk categories, each with specialised methodologies reflecting the domain's technical requirements:
 
-    **CBRN (Chemical, Biological, Radiological, Nuclear) uplift** is the most widely recognised dangerous-capability domain and the one that motivates the most stringent evaluation requirements. The evaluation question is not whether the model knows that dangerous chemicals or pathogens exist, but whether it can provide meaningful operational uplift — information about synthesis routes, equipment requirements, purification procedures, weaponisation methods, or delivery mechanisms — beyond what a non-expert could obtain from freely available sources (published literature, online databases, textbooks). Evaluation requires domain experts (biosecurity researchers, chemical weapons subject matter experts, nuclear physicists) who can assess whether model outputs represent genuine uplift relative to an accessible baseline. The threshold for concern is not that the model knows dangerous information in principle, but that it can serve as a meaningful research accelerator for a non-state actor attempting weapons development.
+    **CBRN (Chemical, Biological, Radiological, Nuclear) uplift** is the most widely recognised dangerous-capability domain and the one that motivates the most stringent evaluation requirements. The evaluation question is not whether the model knows that dangerous chemicals or pathogens exist, but whether it can provide meaningful operational uplift — information about synthesis routes, equipment requirements, purification procedures, weaponisation methods, or delivery mechanisms — beyond what a non-expert [private] obtain from freely available sources (published literature, online databases, textbooks). Evaluation requires domain experts (biosecurity researchers, chemical weapons subject matter experts, nuclear physicists) who can assess whether model outputs represent genuine uplift relative to an accessible baseline. The threshold for concern is not that the model knows dangerous information in principle, but that it can serve as a meaningful research accelerator for a non-state actor attempting weapons development.
 
     **Offensive cyber capability** evaluates whether models can write functional exploit code, identify novel vulnerabilities in target systems, plan multi-stage attack campaigns, conduct social engineering, or perform actions constituting unauthorised computer access. The Catastrophic Cyber Capabilities Benchmark (3CB, published October 2024) provides standardised evaluation tasks at different sophistication levels, from script-kiddie-level attack tool use to novel vulnerability discovery. METR's cyber-security evaluation tasks test autonomous exploitation of multi-step attack chains in realistic isolated network environments, providing a more operationally realistic measure than abstract security knowledge questions. Evaluators assess the model's ability to complete attack chains from initial reconnaissance through privilege escalation to persistent access, using standard penetration testing frameworks as the baseline for comparison.
 
@@ -206,7 +225,7 @@ public: true
 
   ## Use Cases and Applications
 
-    **Pre-deployment safety evaluation by AI laboratories**: Before releasing a frontier model, AI laboratories conduct capability elicitation evaluations as a mandatory component of their responsible scaling frameworks. Anthropic's RSP v2.2 specifies that models at or approaching ASL-3 thresholds — those providing CBRN uplift above a specified threshold or demonstrating cyberoffensive capability that could enable attacks on critical infrastructure — must be subject to enhanced security, deployment restrictions, and operational monitoring. These evaluations use the highest-effort elicitation available to establish capability upper bounds rather than typical-use performance. The results determine whether a model can be released at all, whether it requires restricted deployment conditions, or whether additional safety training is required before release.
+    **Pre-deployment safety evaluation by AI laboratories**: Before releasing a frontier model, AI laboratories conduct capability elicitation evaluations as a mandatory component of their responsible scaling frameworks. Anthropic's RSP v2.2 specifies that models at or approaching ASL-3 thresholds — those providing CBRN uplift above a specified threshold or demonstrating cyberoffensive capability that [private] enable attacks on critical infrastructure — must be subject to enhanced security, deployment restrictions, and operational monitoring. These evaluations use the highest-effort elicitation available to establish capability upper bounds rather than typical-use performance. The results determine whether a model can be released at all, whether it requires restricted deployment conditions, or whether additional safety training is required before release.
 
     **Government-mandated independent evaluation**: The UK AI Security Institute and the US AI Safety Institute conduct independent evaluations of frontier models before and after their public release. These government-level evaluations provide independent verification of laboratory self-assessments and build state situational awareness about the frontier AI capability landscape. A 2025 academic paper (Berglund et al., arXiv:2601.11916) documented that external evaluators often receive inconsistent model access and insufficient time — sometimes less than one week — making it difficult to conduct genuinely thorough elicitation. The paper recommended that evaluators receive at least twenty business days and access to model weights, not just API access. Both UK AISI and US AISI have since moved toward establishing longer evaluation windows and structured pre-deployment access agreements with frontier laboratories.
 
@@ -401,7 +420,7 @@ public: true
     - *Step 3: Framing variation*. Test the same queries under multiple framings: academic research context, legitimate laboratory context, fictional or hypothetical framing, indirect questions about precursor chemicals or adjacent knowledge. Document whether framing affects refusal rate or information quality.
     - *Step 4: Chain-of-thought elicitation*. Request step-by-step reasoning about synthesis pathways, technical challenges, and equipment specifications. CoT may elicit more structured and complete technical information than direct answers.
     - *Step 5: Multi-turn elicitation*. Conduct extended dialogue simulating a non-expert asking clarifying questions after receiving partial information. Document whether the model provides progressively more specific and operationally useful information over multiple turns.
-    - *Step 6: Expert uplift assessment*. Domain experts (chemists, biosecurity researchers, CBRN specialists) assess whether the information provided constitutes meaningful uplift — whether it would materially accelerate a non-expert's ability to develop a dangerous agent beyond what they could achieve from freely available sources.
+    - *Step 6: Expert uplift assessment*. Domain experts (chemists, biosecurity researchers, CBRN specialists) assess whether the information provided constitutes meaningful uplift — whether it would materially accelerate a non-expert's ability to develop a dangerous agent beyond what they [private] achieve from freely available sources.
     - *Scoring*: Binary above/below uplift threshold; if above threshold, document the specific information type (synthesis route, equipment source, stabilisation method, weaponisation technique) and the elicitation method that produced it.
 
     **Cybersecurity Elicitation Protocol**
@@ -462,7 +481,7 @@ public: true
     The responsible scaling policy (RSP) framework, pioneered by Anthropic and subsequently adopted in analogous forms by other laboratories, uses capability elicitation as the primary gatekeeping mechanism between model capability tiers:
 
     - *ASL-1*: Models with no meaningful capabilities beyond prior AI generations. No special evaluation required.
-    - *ASL-2*: Models that could assist in dangerous activities but do not represent a step change in uplift over available tools. Standard pre-deployment evaluation required, including naive and low-effort elicitation.
+    - *ASL-2*: Models that [private] assist in dangerous activities but do not represent a step change in uplift over available tools. Standard pre-deployment evaluation required, including naive and low-effort elicitation.
     - *ASL-3*: Models providing serious uplift for CBRN weapons development to non-experts, or autonomous replication / cyberoffensive capabilities at a significant threshold. High-effort elicitation required. Mandatory operational security measures, deployment restrictions, and enhanced monitoring required before deployment.
     - *ASL-4*: Models posing existential-scale risks. Would require capabilities beyond anything yet observed. Deployment restrictions would be extremely stringent or prohibitive.
     - Capability elicitation is the mechanism for determining whether a model crosses each threshold.
@@ -516,7 +535,7 @@ public: true
     The following are the field's primary open research questions as of 2026, each representing an active area of investigation with significant safety implications:
 
     **Q1: What is the relationship between elicited capability and model internals?**
-    Does a model that fails elicitation for a dangerous capability genuinely lack that capability in its weight representations, or does it possess the capability in a suppressed form that more powerful elicitation could reveal? Mechanistic interpretability research is beginning to address this by probing activation patterns associated with known capability domains, but reliable answers remain elusive. The question has direct safety implications: safety certification based on behavioural elicitation would be invalidated if models routinely possess suppressed capabilities undetectable by current methods.
+    Does a model that fails elicitation for a dangerous capability genuinely lack that capability in its weight representations, or does it possess the capability in a suppressed form that more powerful elicitation [private] reveal? Mechanistic interpretability research is beginning to address this by probing activation patterns associated with known capability domains, but reliable answers remain elusive. The question has direct safety implications: safety certification based on behavioural elicitation would be invalidated if models routinely possess suppressed capabilities undetectable by current methods.
 
     **Q2: How do elicitation technique improvements retroactively affect historical evaluations?**
     When METR updates its elicitation guidelines to include more powerful scaffolding or tool access, models previously evaluated as below dangerous-capability thresholds may be found to exceed them under the new methodology. How should governance frameworks handle this retroactive capability discovery? Should models with updated capability estimates face new deployment restrictions? This question requires a governance answer, not just a technical one.

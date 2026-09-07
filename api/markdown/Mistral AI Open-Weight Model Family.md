@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Mistral and Mixtral]]
-# Mistral AI Open-Weight Model Family
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +20,58 @@ elevatedFrom:: [[Mistral and Mixtral]]
   "definition": "Mistral AI is a French AI company that developed a family of open-weight large language models, including the dense Mistral 7B and the sparse Mixture-of-Experts Mixtral 8x7B and 8x22B architectures. These models are distinguished by their efficient use of grouped-query attention, sliding window attention, and sparse expert routing, achieving performance competitive with much larger models at a fraction of the inference cost. Released under permissive licences, they have become foundational reference models for the open-source AI community.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture-of-Experts Architecture"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+      {
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture-of-Experts Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"}
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Constitutional AI Language Model Family"},
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"}
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
+        "label": "Constitutional AI Language Model Family"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      }
     ]
   },
   "quality": 0.8

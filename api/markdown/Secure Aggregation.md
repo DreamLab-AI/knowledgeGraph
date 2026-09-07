@@ -1,55 +1,108 @@
----
-public: true
----
-
-# Secure Aggregation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:secure-aggregation", "@type":"Page", "title":"Secure Aggregation", "vc:slug":"secure-aggregation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:secure-aggregation",
+  "@type": "Page",
+  "title": "Secure Aggregation",
+  "vc:slug": "secure-aggregation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:secure-aggregation",
-  "@type":"Class",
-  "label":"Secure Aggregation",
-  "definition":"Secure aggregation is a cryptographic protocol that computes the sum of inputs held by many parties without revealing any individual input to the aggregator or other participants. It is most prominent in federated learning, where a server combines model updates from clients while learning only the aggregate. Typical constructions use pairwise masking, secret sharing, or additively homomorphic encryption, with dropout-resilient designs so the protocol completes even when some clients disconnect.",
-  "domain":"security",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:secure-multi-party-computation","label":"Secure Multi-Party Computation"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:secure-multi-party-computation","label":"Secure Multi-Party Computation"}],
-    "uses":[
-      {"@id":"urn:ngm:class:oblivious-transfer","label":"Oblivious Transfer"},
-      {"@id":"urn:ngm:class:homomorphic-encryption","label":"Homomorphic Encryption"},
-      {"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:secure-aggregation",
+  "@type": "Class",
+  "label": "Secure Aggregation",
+  "definition": "Secure aggregation is a cryptographic protocol that computes the sum of inputs held by many parties without revealing any individual input to the aggregator or other participants. It is most prominent in federated learning, where a server combines model updates from clients while learning only the aggregate. Typical constructions use pairwise masking, secret sharing, or additively homomorphic encryption, with dropout-resilient designs so the protocol completes even when some clients disconnect.",
+  "domain": "security",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:key-exchange","label":"Key Exchange"},
-      {"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:oblivious-transfer",
+        "label": "Oblivious Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:federated-learning","label":"Federated Learning"},
-      {"@id":"urn:ngm:class:differential-privacy","label":"Differential Privacy"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:federated-learning","label":"Federated Learning"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:zero-knowledge-proof","label":"Zero-Knowledge Proof"},
-      {"@id":"urn:ngm:class:secure-multi-party-computation","label":"Secure Multi-Party Computation"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:differential-privacy","label":"Differential Privacy"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:security","label":"Security"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

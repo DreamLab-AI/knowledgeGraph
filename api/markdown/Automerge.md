@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automerge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,15 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-protocol-and-infra", "label": "Protocol and Infrastructure"}
+    {
+      "@id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:crdt", "label": "CRDT"},
-      {"@id": "urn:ngm:class:local-first-software", "label": "Local-First Software"}
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "@id": "urn:ngm:class:local-first-software",
+        "label": "Local-First Software"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:yjs-framework", "label": "Yjs Framework"}
+      {
+        "@id": "urn:ngm:class:yjs-framework",
+        "label": "Yjs Framework"
+      }
     ]
   },
   "quality": 0.7

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hydraulic Cylinder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,29 +59,68 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:chinese-seal-art-ai-classification-pipeline", "label": "Chinese Seal Art AI Classification Pipeline"},
-      {"@id": "urn:ngm:class:pressure-sensor", "label": "Pressure Sensor"}
+      {
+        "@id": "urn:ngm:class:chinese-seal-art-ai-classification-pipeline",
+        "label": "Chinese Seal Art AI Classification Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:pressure-sensor",
+        "label": "Pressure Sensor"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hydraulic-motor", "label": "Hydraulic Motor"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+      {
+        "@id": "urn:ngm:class:hydraulic-motor",
+        "label": "Hydraulic Motor"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"}
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
-      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"}
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:pneumatic-cylinder", "label": "Pneumatic Cylinder"},
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"}
+      {
+        "@id": "urn:ngm:class:pneumatic-cylinder",
+        "label": "Pneumatic Cylinder"
+      },
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
     ]
   },
   "provenance": {
@@ -96,37 +130,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hydraulic-cylinder:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:474fdb3a3859c0042e827e13b5b043da9518f060e6916e94b238405d51bf1aab"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hydraulic Actuator]]",
-      "resolved": "urn:visionflow:owl:class:hydraulic-actuator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

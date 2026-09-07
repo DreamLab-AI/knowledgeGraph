@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Linked Data Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:linked-data-platform:1f2ddd5e9371",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9772b8455a1df0978a393f789612133d6bad0406239b75a107edc1ee3f12e603"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Linked Data]]",
-      "resolved": "urn:visionflow:linked:linked-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RDF]]",
-      "resolved": "urn:visionflow:linked:rdf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Web Linked Data Standard]]",
-      "resolved": "urn:visionflow:linked:semantic-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web Standards]]",
-      "resolved": "urn:visionflow:linked:web-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graphs]]",
-      "resolved": "urn:visionflow:linked:knowledge-graphs",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A W3C specification defining rules and HTTP conventions for reading and writing linked data resources, enabling RESTful management of RDF data on the web.

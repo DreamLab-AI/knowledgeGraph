@@ -1,65 +1,132 @@
----
-public: true
----
-
-# Payment Routing
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:payment-routing", "@type":"Page", "title":"Payment Routing", "vc:slug":"payment-routing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:payment-routing",
+  "@type": "Page",
+  "title": "Payment Routing",
+  "vc:slug": "payment-routing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:payment-routing",
-  "@type":"Class",
-  "label":"Payment Routing",
-  "definition":"Payment routing is the process of determining a viable path along which value moves from a payer to a payee across one or more intermediaries, payment channels or networks. In layered payment systems such as the Lightning Network it involves finding a sequence of hops with sufficient liquidity and acceptable fees, whereas in conventional rails it selects acquirers, schemes or correspondent banks. Routing decisions balance cost, success probability, latency and privacy.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:payment-processing","label":"Payment Processing"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:payment-network","label":"Payment Network"},
-      {"@id":"urn:ngm:class:lightning-network","label":"Lightning Network"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:payment-routing",
+  "@type": "Class",
+  "label": "Payment Routing",
+  "definition": "Payment routing is the process of determining a viable path along which value moves from a payer to a payee across one or more intermediaries, payment channels or networks. In layered payment systems such as the Lightning Network it involves finding a sequence of hops with sufficient liquidity and acceptable fees, whereas in conventional rails it selects acquirers, schemes or correspondent banks. Routing decisions balance cost, success probability, latency and privacy.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:payment-processing",
+      "label": "Payment Processing"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:liquidity","label":"Liquidity"},
-      {"@id":"urn:ngm:class:routing-table","label":"Routing Table"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:routing-table",
+        "label": "Routing Table"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:payment-channel","label":"Payment Channel"},
-      {"@id":"urn:ngm:class:open-banking","label":"Open Banking"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:routing-algorithm","label":"Routing Algorithm"},
-      {"@id":"urn:ngm:class:liquidity","label":"Liquidity"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:routing-algorithm",
+        "label": "Routing Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:htlc","label":"HTLC"},
-      {"@id":"urn:ngm:class:routing-algorithm","label":"Routing Algorithm"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:htlc",
+        "label": "HTLC"
+      },
+      {
+        "@id": "urn:ngm:class:routing-algorithm",
+        "label": "Routing Algorithm"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:payment-channel","label":"Payment Channel"},
-      {"@id":"urn:ngm:class:transaction-fee","label":"Transaction Fee"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:payment-gateway","label":"Payment Gateway"},
-      {"@id":"urn:ngm:class:payment-network","label":"Payment Network"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:payment-gateway","label":"Payment Gateway"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:routing-algorithm","label":"Routing Algorithm"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:routing-algorithm",
+        "label": "Routing Algorithm"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:transaction-fee","label":"Transaction Fee"},
-      {"@id":"urn:ngm:class:payment-processing","label":"Payment Processing"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

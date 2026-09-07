@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - AugmentedReality
----
-
-# Augmented Reality
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -229,57 +222,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:augmented-reality:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c49800be1c4585cfef2523c311b410ff903bc646bf08ba59829b64374aa7384c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Contextual Information Display]]",
-      "resolved": "urn:visionflow:linked:contextual-information-display",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Extended Reality]]",
-      "resolved": "urn:visionflow:linked:extended-reality",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Remote Assistance]]",
-      "resolved": "urn:visionflow:linked:remote-assistance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Immersive Experiences]]",
-      "resolved": "urn:visionflow:owl:class:immersive-experiences",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Augmented Reality (AR) is a technology that overlays digital content onto the real world in real-time, enhancing users' perception of their physical environment through smartphones, head-mounted displays, or smart glasses. AR systems operate on three essentialities: coupling of real and virtual environments, real-time interaction, and precise 3D visualisation of virtual objects aligned with physical space.

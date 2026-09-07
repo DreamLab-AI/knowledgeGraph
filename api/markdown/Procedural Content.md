@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Procedural Content
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,26 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:procedural-content:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fccc2d98aa829611a52790043ab9fc79257fd717cd4d00ffa1c08ee417155ea5"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital content—terrain, architecture, textures, narrative events, or game levels—generated algorithmically from rules and random seeds rather than authored by hand. Procedural content enables scalable world-building in metaverse and gaming contexts by producing combinatorially vast, non-repetitive environments at runtime whilst reducing manual asset creation effort.

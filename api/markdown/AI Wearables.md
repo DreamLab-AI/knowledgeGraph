@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Wearables
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "ai-wearables",
   "title": "AI Wearables",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Limitless", "Meta", "Product Market Fit", "Talent Acquisition"],
+  "vc:outboundWikilinks": [
+    "Limitless",
+    "Meta",
+    "Product Market Fit",
+    "Talent Acquisition"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}, {"@id": "urn:ngm:class:meta", "label": "Meta"}, {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:meta",
+        "label": "Meta"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

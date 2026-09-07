@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LiDAR Sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A LiDAR sensor measures distance by emitting laser pulses and timing their reflections, producing dense 3D point clouds of the surrounding environment. Variants include mechanical spinning, solid-state, and flash designs that trade field of view, range, and cost. LiDAR is a cornerstone perception modality for autonomous robots, reality capture, and occupancy mapping.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"}, {"@id": "urn:ngm:class:reality-capture-system", "label": "Reality Capture System"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      },
+      {
+        "@id": "urn:ngm:class:reality-capture-system",
+        "label": "Reality Capture System"
+      }
+    ]
   },
   "quality": 0.72
 }

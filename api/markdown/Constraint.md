@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Constraint
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,59 +7,205 @@ public: true
   "title": "Constraint",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:owl:class:blockchain", "vc:label": "Blockchain"},
-    {"@id": "urn:visionflow:owl:class:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:objective", "vc:label": "Objective"},
-    {"@id": "urn:visionflow:linked:model", "vc:label": "Model"},
-    {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"},
-    {"@id": "urn:visionflow:linked:reasoning", "vc:label": "Reasoning"},
-    {"@id": "urn:visionflow:linked:safety", "vc:label": "Safety"},
-    {"@id": "urn:visionflow:linked:algorithm", "vc:label": "Algorithm"},
-    {"@id": "urn:visionflow:linked:search-algorithm", "vc:label": "Search Algorithm"},
-    {"@id": "urn:visionflow:linked:inference", "vc:label": "Inference"},
-    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:visionflow:linked:fairness", "vc:label": "Fairness"},
-    {"@id": "urn:visionflow:linked:ontology", "vc:label": "Ontology"},
-    {"@id": "urn:visionflow:linked:parameter", "vc:label": "Parameter"},
-    {"@id": "urn:visionflow:linked:property", "vc:label": "Property"},
-    {"@id": "urn:visionflow:linked:system", "vc:label": "System"},
-    {"@id": "urn:visionflow:linked:smart-contract", "vc:label": "Smart Contract"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
-    {"@id": "urn:visionflow:linked:constraint-satisfaction-problem", "vc:label": "Constraint Satisfaction Problem"},
-    {"@id": "urn:visionflow:linked:constraint-programming", "vc:label": "Constraint Programming"},
-    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:backtracking-search", "vc:label": "Backtracking Search"},
-    {"@id": "urn:visionflow:linked:arc-consistency", "vc:label": "Arc Consistency"},
-    {"@id": "urn:visionflow:linked:satisfiability", "vc:label": "Satisfiability"},
-    {"@id": "urn:visionflow:linked:linear-programming", "vc:label": "Linear Programming"},
-    {"@id": "urn:visionflow:linked:integer-programming", "vc:label": "Integer Programming"},
-    {"@id": "urn:visionflow:linked:model-checking", "vc:label": "Model Checking"},
-    {"@id": "urn:visionflow:linked:theorem-proving", "vc:label": "Theorem Proving"},
-    {"@id": "urn:visionflow:linked:planning", "vc:label": "Planning"},
-    {"@id": "urn:visionflow:linked:scheduling", "vc:label": "Scheduling"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:markov-decision-process", "vc:label": "Markov Decision Process"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:explainability", "vc:label": "Explainability"},
-    {"@id": "urn:visionflow:linked:monotonicity-constraint", "vc:label": "Monotonicity Constraint"},
-    {"@id": "urn:visionflow:linked:weight-sharing", "vc:label": "Weight Sharing"},
-    {"@id": "urn:visionflow:linked:smt-solver", "vc:label": "SMT Solver"},
-    {"@id": "urn:visionflow:linked:answer-set-programming", "vc:label": "Answer Set Programming"},
-    {"@id": "urn:visionflow:linked:description-logic", "vc:label": "Description Logic"},
-    {"@id": "urn:visionflow:linked:combinatorial-optimisation", "vc:label": "Combinatorial Optimisation"}
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:blockchain",
+      "vc:label": "Blockchain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:objective",
+      "vc:label": "Objective"
+    },
+    {
+      "@id": "urn:visionflow:linked:model",
+      "vc:label": "Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-verification",
+      "vc:label": "Formal Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety",
+      "vc:label": "Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm",
+      "vc:label": "Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:search-algorithm",
+      "vc:label": "Search Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference",
+      "vc:label": "Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:parameter",
+      "vc:label": "Parameter"
+    },
+    {
+      "@id": "urn:visionflow:linked:property",
+      "vc:label": "Property"
+    },
+    {
+      "@id": "urn:visionflow:linked:system",
+      "vc:label": "System"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation",
+      "vc:label": "Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-satisfaction-problem",
+      "vc:label": "Constraint Satisfaction Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-programming",
+      "vc:label": "Constraint Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularisation",
+      "vc:label": "Regularisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:backtracking-search",
+      "vc:label": "Backtracking Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:arc-consistency",
+      "vc:label": "Arc Consistency"
+    },
+    {
+      "@id": "urn:visionflow:linked:satisfiability",
+      "vc:label": "Satisfiability"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-programming",
+      "vc:label": "Linear Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:integer-programming",
+      "vc:label": "Integer Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-checking",
+      "vc:label": "Model Checking"
+    },
+    {
+      "@id": "urn:visionflow:linked:theorem-proving",
+      "vc:label": "Theorem Proving"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning",
+      "vc:label": "Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:scheduling",
+      "vc:label": "Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:markov-decision-process",
+      "vc:label": "Markov Decision Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:monotonicity-constraint",
+      "vc:label": "Monotonicity Constraint"
+    },
+    {
+      "@id": "urn:visionflow:linked:weight-sharing",
+      "vc:label": "Weight Sharing"
+    },
+    {
+      "@id": "urn:visionflow:linked:smt-solver",
+      "vc:label": "SMT Solver"
+    },
+    {
+      "@id": "urn:visionflow:linked:answer-set-programming",
+      "vc:label": "Answer Set Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:description-logic",
+      "vc:label": "Description Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:combinatorial-optimisation",
+      "vc:label": "Combinatorial Optimisation"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {"vc:key": "legacy-term-id", "vc:value": "AI-0836"},
-    {"vc:key": "preferred-term", "vc:value": "Constraint"}
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0836"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Constraint"
+    }
   ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
-  "prov:generatedAtTime": {"@value": "2026-05-18T07:12:05Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -77,68 +218,191 @@ public: true
   "definition": "A Constraint is a condition, restriction, or rule that limits the set of permissible states, actions, or solutions within a computational, logical, or physical system. Constraints formalise requirements such as resource bounds, logical invariants, safety properties, and optimality criteria, and are manipulated by constraint-satisfaction and optimisation algorithms to find feasible or optimal solutions. They appear across AI planning, machine learning regularisation, smart-contract execution, and formal verification.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:objective", "label": "Objective"},
-      {"@id": "urn:ngm:class:model", "label": "Model"}
+      {
+        "@id": "urn:ngm:class:objective",
+        "label": "Objective"
+      },
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:safety", "label": "Safety"},
-      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},
-      {"@id": "urn:ngm:class:planning", "label": "Planning"},
-      {"@id": "urn:ngm:class:scheduling", "label": "Scheduling"}
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "@id": "urn:ngm:class:scheduling",
+        "label": "Scheduling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
-      {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:backtracking-search", "label": "Backtracking Search"},
-      {"@id": "urn:ngm:class:smt-solver", "label": "SMT Solver"}
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:backtracking-search",
+        "label": "Backtracking Search"
+      },
+      {
+        "@id": "urn:ngm:class:smt-solver",
+        "label": "SMT Solver"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:constraint-satisfaction-problem", "label": "Constraint Satisfaction Problem"},
-      {"@id": "urn:ngm:class:constraint-programming", "label": "Constraint Programming"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction-problem",
+        "label": "Constraint Satisfaction Problem"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-programming",
+        "label": "Constraint Programming"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:combinatorial-optimisation", "label": "Combinatorial Optimisation"},
-      {"@id": "urn:ngm:class:linear-programming", "label": "Linear Programming"},
-      {"@id": "urn:ngm:class:integer-programming", "label": "Integer Programming"},
-      {"@id": "urn:ngm:class:answer-set-programming", "label": "Answer Set Programming"},
-      {"@id": "urn:ngm:class:description-logic", "label": "Description Logic"}
+      {
+        "@id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "@id": "urn:ngm:class:integer-programming",
+        "label": "Integer Programming"
+      },
+      {
+        "@id": "urn:ngm:class:answer-set-programming",
+        "label": "Answer Set Programming"
+      },
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:parameter", "label": "Parameter"},
-      {"@id": "urn:ngm:class:property", "label": "Property"},
-      {"@id": "urn:ngm:class:system", "label": "System"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"},
-      {"@id": "urn:ngm:class:satisfiability", "label": "Satisfiability"},
-      {"@id": "urn:ngm:class:arc-consistency", "label": "Arc Consistency"},
-      {"@id": "urn:ngm:class:model-checking", "label": "Model Checking"},
-      {"@id": "urn:ngm:class:theorem-proving", "label": "Theorem Proving"}
+      {
+        "@id": "urn:ngm:class:parameter",
+        "label": "Parameter"
+      },
+      {
+        "@id": "urn:ngm:class:property",
+        "label": "Property"
+      },
+      {
+        "@id": "urn:ngm:class:system",
+        "label": "System"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "@id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
+      },
+      {
+        "@id": "urn:ngm:class:arc-consistency",
+        "label": "Arc Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
+      },
+      {
+        "@id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ]
   },
   "provenance": {
@@ -146,65 +410,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "R5DomainRootFallback"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:constraint:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8610ab5a331143af044c5c779546bd2f7a5670ec97b763c64c5773d53aaea6a8"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:owl:class:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Blockchain]]", "resolved": "urn:visionflow:owl:class:blockchain", "kind": "ResolvedLink"},
-    {"raw": "[[Digital Twin]]", "resolved": "urn:visionflow:owl:class:digital-twin", "kind": "ResolvedLink"},
-    {"raw": "[[Objective]]", "resolved": "urn:visionflow:linked:objective", "kind": "ResolvedLink"},
-    {"raw": "[[Model]]", "resolved": "urn:visionflow:linked:model", "kind": "ResolvedLink"},
-    {"raw": "[[Formal Verification]]", "resolved": "urn:visionflow:linked:formal-verification", "kind": "ResolvedLink"},
-    {"raw": "[[Reasoning]]", "resolved": "urn:visionflow:linked:reasoning", "kind": "ResolvedLink"},
-    {"raw": "[[Safety]]", "resolved": "urn:visionflow:linked:safety", "kind": "ResolvedLink"},
-    {"raw": "[[Algorithm]]", "resolved": "urn:visionflow:linked:algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Search Algorithm]]", "resolved": "urn:visionflow:linked:search-algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Inference]]", "resolved": "urn:visionflow:linked:inference", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "ResolvedLink"},
-    {"raw": "[[Fairness]]", "resolved": "urn:visionflow:linked:fairness", "kind": "ResolvedLink"},
-    {"raw": "[[Ontology]]", "resolved": "urn:visionflow:linked:ontology", "kind": "ResolvedLink"},
-    {"raw": "[[Parameter]]", "resolved": "urn:visionflow:linked:parameter", "kind": "ResolvedLink"},
-    {"raw": "[[Property]]", "resolved": "urn:visionflow:linked:property", "kind": "ResolvedLink"},
-    {"raw": "[[System]]", "resolved": "urn:visionflow:linked:system", "kind": "ResolvedLink"},
-    {"raw": "[[Smart Contract]]", "resolved": "urn:visionflow:linked:smart-contract", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Optimisation]]", "resolved": "urn:visionflow:linked:optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Constraint Satisfaction Problem]]", "resolved": "urn:visionflow:linked:constraint-satisfaction-problem", "kind": "ResolvedLink"},
-    {"raw": "[[Constraint Programming]]", "resolved": "urn:visionflow:linked:constraint-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Regularisation]]", "resolved": "urn:visionflow:linked:regularisation", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "ResolvedLink"},
-    {"raw": "[[Backtracking Search]]", "resolved": "urn:visionflow:linked:backtracking-search", "kind": "ResolvedLink"},
-    {"raw": "[[Arc Consistency]]", "resolved": "urn:visionflow:linked:arc-consistency", "kind": "ResolvedLink"},
-    {"raw": "[[Satisfiability]]", "resolved": "urn:visionflow:linked:satisfiability", "kind": "ResolvedLink"},
-    {"raw": "[[Linear Programming]]", "resolved": "urn:visionflow:linked:linear-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Integer Programming]]", "resolved": "urn:visionflow:linked:integer-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Model Checking]]", "resolved": "urn:visionflow:linked:model-checking", "kind": "ResolvedLink"},
-    {"raw": "[[Theorem Proving]]", "resolved": "urn:visionflow:linked:theorem-proving", "kind": "ResolvedLink"},
-    {"raw": "[[Planning]]", "resolved": "urn:visionflow:linked:planning", "kind": "ResolvedLink"},
-    {"raw": "[[Scheduling]]", "resolved": "urn:visionflow:linked:scheduling", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Markov Decision Process]]", "resolved": "urn:visionflow:linked:markov-decision-process", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Explainability]]", "resolved": "urn:visionflow:linked:explainability", "kind": "ResolvedLink"},
-    {"raw": "[[SMT Solver]]", "resolved": "urn:visionflow:linked:smt-solver", "kind": "ResolvedLink"},
-    {"raw": "[[Answer Set Programming]]", "resolved": "urn:visionflow:linked:answer-set-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Description Logic]]", "resolved": "urn:visionflow:linked:description-logic", "kind": "ResolvedLink"},
-    {"raw": "[[Combinatorial Optimisation]]", "resolved": "urn:visionflow:linked:combinatorial-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Heuristic Methods]]", "resolved": "urn:visionflow:linked:heuristic-methods", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -346,7 +551,7 @@ public: true
       - *Global constraints*: compactly express complex combinatorial structure over arbitrary-arity variable sets with dedicated, efficient propagation algorithms.
         - **AllDifferent** (Régin, 1994): all variables in a set must take distinct values; O(n^1.5) filtering via bipartite matching (Hopcroft-Karp).
         - **Cumulative** (Nuijten 1994, Baptiste et al. 2001): a set of tasks with start times, durations, and resource consumptions must not collectively exceed a capacity bound at any time point; filtered by edge-finding (O(n log n)) and energetic reasoning.
-        - **Circuit**: values must form a Hamiltonian circuit on the variable index graph; underpins vehicle routing and Travelling Salesperson Problem formulations; propagated by subtour elimination via strongly connected components (Caseau & Laburthe 1997).
+        - **Circuit**: values must form a Hamiltonian circuit on the variable [private] graph; underpins vehicle routing and Travelling Salesperson Problem formulations; propagated by subtour elimination via strongly connected components (Caseau & Laburthe 1997).
         - **Regular** (Pesant 2004): the sequence of values assigned to an ordered variable set must be a word in a given regular language; propagated in linear time via a DFA traversal.
         - **GCC** (Global Cardinality Constraint, Régin 1996): specifies lower and upper bounds on how many times each value can appear in a set of variables; solved via network flow in O(n·|D|) per call.
         - The Global Constraint Catalogue (Beldiceanu, Carlsson et al.) documents over 400 global constraints with propagation algorithms and computational complexity.
@@ -487,7 +692,7 @@ public: true
 
   - ## Academic Context
     - The intellectual roots of constraint-based reasoning trace to propositional logic, [[Linear Programming]] (Dantzig, 1947), and Waltz's PhD thesis at MIT (1972). Montanari (1974) formalised networks of constraints as a mathematical object; Mackworth (1977) introduced [[Arc Consistency]] (AC-1, AC-2, AC-3) algorithms that enforce domain-level consistency without search; Haralick and Elliot (1980) classified k-consistency levels and established the relationship between consistency strength and problem tractability. The first dedicated Constraint Programming conference (CP) was held in 1995 and continues as the discipline's principal venue, complemented by CPAIOR (Integration of AI and OR approaches) and ECAI/IJCAI workshops. Key foundational texts include: Dechter, *Constraint Processing* (2003, Morgan Kaufmann) — the definitive graduate-level reference; Marriott and Stuckey, *Programming with Constraints: An Introduction* (1998, MIT Press); Rossi, van Beek, and Walsh (eds), *Handbook of Constraint Programming* (2006, Elsevier) — a 900-page comprehensive reference; and Biere, Heule, van Maaren, and Walsh (eds), *Handbook of Satisfiability* (2nd edition, 2021, IOS Press) — covering the adjacent Boolean satisfiability landscape.
-    - The CP+ML integration has been a growing subdiscipline since Lombardi and Milano (2018) popularised *constraint learning* for training set completion — using constraints to complete partially observed training sets rather than imputation — and Vayanos et al.'s decision-rule methods for robust [[Optimisation]]. A landmark 2021 paper by Elmachtoub and Grigas, *Smart Predict, Then Optimise*, formalised the task-loss perspective: training an ML model whose predictions are plugged into a downstream constrained [[Optimisation]] should be done by minimising the optimisation cost rather than prediction error, giving rise to the *predict-and-optimise* (P+O) learning paradigm. The Journal of Artificial Intelligence Research dedicated a special track to Constraint Programming and Machine Learning in 2024–2025 (https://jair.org/index.php/jair/SpecialTrack-CPML), explicitly recognising the bidirectional relationship: CP for ML (constraints as structure in learning), and ML for CP (learned heuristics and value predictors in constraint solvers). The MiniZinc Challenge — an annual international competition comparing CP solvers on benchmark problem sets — provides the community's empirical scoreboard; the 2023 challenge included problems from NP-hard scheduling, graph theory, and configuration domains solved by OR-Tools, Chuffed, and commercial solvers.
+    - The CP+ML integration has been a growing subdiscipline since Lombardi and Milano (2018) popularised *constraint learning* for training set completion — using constraints to complete partially observed training sets rather than imputation — and Vayanos et al.'s decision-rule methods for robust [[Optimisation]]. A landmark 2021 paper by Elmachtoub and Grigas, *Smart Predict, Then Optimise*, formalised the task-loss perspective: training an ML model whose predictions are plugged into a downstream constrained [[Optimisation]] should be done by minimising the optimisation cost rather than prediction error, giving rise to the *predict-and-optimise* (P+O) learning paradigm. The Journal of Artificial Intelligence Research dedicated a special track to Constraint Programming and Machine Learning in 2024–2025 (https://jair.org/[private].php/jair/SpecialTrack-CPML), explicitly recognising the bidirectional relationship: CP for ML (constraints as structure in learning), and ML for CP (learned heuristics and value predictors in constraint solvers). The MiniZinc Challenge — an annual international competition comparing CP solvers on benchmark problem sets — provides the community's empirical scoreboard; the 2023 challenge included problems from NP-hard scheduling, graph theory, and configuration domains solved by OR-Tools, Chuffed, and commercial solvers.
     - Prominent researchers include: Rina Dechter (UC Irvine, constraint processing, bucket elimination, mini-bucket approximation); Toby Walsh (UNSW, global constraints, social constraints, AI ethics); Christian Bessiere (CNRS/Montpellier, arc consistency algorithms, constraint learning); Peter Stuckey (Monash, MiniZinc, lazy clause generation CP, Boolean satisfiability integration); Francesca Rossi (IBM Research, social choice and preference constraints); Eugene Freuder (Cork, constraint-based configuration, valued CSPs); Karen Petrie, Ian Miguel, Özgür Akgün, Ruth Hoffmann (St Andrews, Conjure/Essence modelling language, constraint acquisition); Jimmy Lee (Chinese University of Hong Kong, soft constraints, partial and weighted CSPs); Pascal Van Hentenryck (Georgia Tech/ANU, CP for operations research, stochastic constraint programming); and Luca Pulina and Armando Tacchella (constraint-based formal analysis of neural network robustness). The safe [[Reinforcement Learning]] constraint literature is led by Pieter Abbeel and colleagues (CPO), Zachary Lipton (constrained exploration), and the Oxford Future of Humanity Institute's work on AI safety constraints as a formal alignment mechanism.
 
   - ## Current Landscape (2026)
@@ -574,7 +779,7 @@ public: true
     - 22. King's College London. (2024–2025). Using Constraint Programming for disjunctive scheduling in temporal AI planning. KCL Pure. https://kclpure.kcl.ac.uk/portal/en/publications/using-constraint-programming-for-disjunctive-scheduling-in-tempor.
     - 23. NeurIPS 2025. Workshop on Constrained Optimisation for Machine Learning. https://constrained-opt-ml.github.io/.
     - 24. NeurIPS 2025. Keynote: Constraint-Aware Generative Models. https://neurips.cc/virtual/2025/loc/san-diego/123339.
-    - 25. JAIR. (2024–2025). Special Track: Constraint Programming and Machine Learning. https://jair.org/index.php/jair/SpecialTrack-CPML.
+    - 25. JAIR. (2024–2025). Special Track: Constraint Programming and Machine Learning. https://jair.org/[private].php/jair/SpecialTrack-CPML.
     - 26. Biere, A., Heule, M., van Maaren, H., & Walsh, T. (eds). (2021). *Handbook of Satisfiability* (2nd ed.). IOS Press.
     - 27. European Parliament. (2024). EU AI Act — Regulation (EU) 2024/1689. Official Journal of the European Union, 12 July 2024.
     - 28. Petrie, K. E. & Smith, B. M. (2003). Symmetry breaking in Grace: lessons learned. *CP 2003*, LNCS 2833.
@@ -585,7 +790,7 @@ public: true
     - 33. Espasa, J., Miguel, I., Nightingale, P., Salamon, A., & Villaret, M. (2024). Plotting: A Case Study in Lifted Planning with Constraints. *Constraints*, Springer.
     - 34. European Commission. (2026). EU AI Act: Full application from 2 August 2026. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
     - 35. Anonymous. (2025). Reinforcement Learning for Search Tree Size Minimization in CP: New Results on Scheduling Benchmarks. arXiv:2508.20056. https://arxiv.org/pdf/2508.20056
-    - 36. Anonymous. (2025). Combining Constraint Programming and Machine Learning: From Current Progress to Future Opportunities. *Journal of Artificial Intelligence Research*. https://jair.org/index.php/jair/article/view/19533
+    - 36. Anonymous. (2025). Combining Constraint Programming and Machine Learning: From Current Progress to Future Opportunities. *Journal of Artificial Intelligence Research*. https://jair.org/[private].php/jair/article/view/19533
     - 37. Anonymous. (2026). CBF-Constrained MPC Framework for Safe RL (PECTS). arXiv:2604.06463. https://arxiv.org/pdf/2604.06463
     - 38. Global Constraint Catalogue. Beldiceanu, N., Carlsson, M., et al. SICS Technical Report. http://www.emn.fr/z-info/sdemasse/gccat/
 
@@ -596,6 +801,6 @@ public: true
     - **Open-source democratisation**: HiGHS (Edinburgh), OR-Tools (Google), CaDiCaL/Kissat (open), Z3 (Microsoft open-source), CVC5, Choco, Gecode, and Clingo together constitute a comprehensive open-source constraint solving ecosystem covering all major problem families. Commercial solvers (Gurobi, CPLEX) remain faster on MIP benchmarks but the open-source gap is narrowing with each release cycle.
 
 - ### Provenance
-  - sources:: https://constrained-opt-ml.github.io/, https://jair.org/index.php/jair/SpecialTrack-CPML, https://arxiv.org/abs/2402.02025, https://arxiv.org/html/2505.17342v1, https://arxiv.org/pdf/2502.15794, https://blogs.cs.st-andrews.ac.uk/csblog/2024/09/19/constraint-programming-research-group-at-the-cp2024-conference/, https://kclpure.kcl.ac.uk/portal/en/publications/using-constraint-programming-for-disjunctive-scheduling-in-tempor, https://neurips.cc/virtual/2025/loc/san-diego/123339, https://www.minizinc.org/challenge/2025/results/, https://cp2025.a4cp.org/, https://arxiv.org/pdf/2509.24489, https://arxiv.org/pdf/2508.20056, https://arxiv.org/pdf/2604.06463, https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai, https://jair.org/index.php/jair/article/view/19533
+  - sources:: https://constrained-opt-ml.github.io/, https://jair.org/[private].php/jair/SpecialTrack-CPML, https://arxiv.org/abs/2402.02025, https://arxiv.org/html/2505.17342v1, https://arxiv.org/pdf/2502.15794, https://blogs.cs.st-andrews.ac.uk/csblog/2024/09/19/constraint-programming-research-group-at-the-cp2024-conference/, https://kclpure.kcl.ac.uk/portal/en/publications/using-constraint-programming-for-disjunctive-scheduling-in-tempor, https://neurips.cc/virtual/2025/loc/san-diego/123339, https://www.minizinc.org/challenge/2025/results/, https://cp2025.a4cp.org/, https://arxiv.org/pdf/2509.24489, https://arxiv.org/pdf/2508.20056, https://arxiv.org/pdf/2604.06463, https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai, https://jair.org/[private].php/jair/article/view/19533
   - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

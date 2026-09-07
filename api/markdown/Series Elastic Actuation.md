@@ -1,8 +1,3 @@
----
-public: true
----
-
-# series elastic actuation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,7 +182,7 @@ public: true
 - ### Overview
   - SEA decouples the load dynamics from the motor dynamics by inserting a deliberately compliant element into the kinematic chain. In a conventional rigid actuator, any disturbance or unexpected contact transmits directly through the drivetrain to the motor, requiring very fast electronic torque control to prevent damage. With a series spring, the spring acts as a mechanical low-pass filter — fast transient forces are absorbed by spring deflection while the motor control loop operates at the spring's natural dynamics timescale.
   - The fundamental operating principle exploits a simple relationship: torque τ = k × Δθ, where k is the spring constant and Δθ is the angular deflection measured between two encoders. This gives torque readout at the cost of reduced closed-loop bandwidth, because the torque control bandwidth is bounded by the spring's resonant frequency with the load inertia.
-  - SEA marked a paradigm shift in the robotics community by demonstrating that introducing compliance intentionally could improve safety and control quality rather than degrade performance — countering the then-prevailing assumption that stiffer is always better in mechanical design.
+  - SEA marked a paradigm shift in the robotics community by demonstrating that introducing compliance intentionally [private] improve safety and control quality rather than degrade performance — countering the then-prevailing assumption that stiffer is always better in mechanical design.
   - The technology was commercialised notably in the [[Whole-Body Humanoid Robot|Robonaut]], the Boston Dynamics [[Atlas Robot]], and prosthetic systems from the MIT Media Lab. It remains the dominant approach in [[Rehabilitation Robotics]] exoskeleton joints and [[Collaborative Robot]] shoulder and elbow modules.
 
 - ### Key Components and Mechanisms

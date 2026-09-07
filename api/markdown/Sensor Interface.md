@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sensor Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A sensor interface is the hardware and protocol boundary through which a controller acquires data from a sensor, encompassing signal conditioning, analogue-to-digital conversion, and bus protocols such as I2C, SPI, CAN, or analogue voltage lines. It standardises timing, addressing, and electrical levels so that heterogeneous sensors can be integrated into a control loop. It is a core subsystem of embedded and robotic control architectures.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}, {"@id": "urn:ngm:class:control-system", "label": "Control System"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ]
   },
   "quality": 0.72
 }

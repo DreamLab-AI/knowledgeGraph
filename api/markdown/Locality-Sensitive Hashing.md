@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Locality-Sensitive Hashing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Locality-sensitive hashing (LSH) is a family of hashing techniques that map similar high-dimensional inputs to the same hash bucket with high probability, enabling sub-linear approximate nearest-neighbour search. By trading exactness for speed, LSH makes similarity search and deduplication tractable over very large datasets. It is widely applied to embeddings, document near-duplicate detection, and retrieval pipelines.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:training-data", "label": "Training Data"}, {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Persistent Research Agent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "persistent-research-agent",
   "title": "Persistent Research Agent",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Use Case Taxonomy", "Automated Intelligence Gathering"],
+  "vc:outboundWikilinks": [
+    "AI Use Case Taxonomy",
+    "Automated Intelligence Gathering"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:agents", "label": "Agents"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agents",
+      "label": "Agents"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agents", "label": "Agents"}, {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

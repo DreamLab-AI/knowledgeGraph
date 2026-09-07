@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Weighted Graph
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:weighted-graph", "@type": "Page", "title": "Weighted Graph", "vc:slug": "weighted-graph", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:weighted-graph",
+  "@type": "Page",
+  "title": "Weighted Graph",
+  "vc:slug": "weighted-graph",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

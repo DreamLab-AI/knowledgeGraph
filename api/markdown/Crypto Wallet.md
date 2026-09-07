@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Crypto Wallet
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A crypto wallet is software or hardware that manages the private keys controlling blockchain assets and enables users to sign transactions, hold tokens, and interact with decentralised applications. Wallets may be custodial or non-custodial, hot or cold, and increasingly serve as the identity and access layer for Web3. They do not store assets themselves but the cryptographic keys that authorise control over on-chain balances.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Network Component"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:web3", "label": "Web3"}, {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
   "quality": 0.72
 }

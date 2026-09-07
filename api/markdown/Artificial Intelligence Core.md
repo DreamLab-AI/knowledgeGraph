@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Artificial Intelligence Core
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,64 +7,238 @@ public: true
   "title": "Artificial Intelligence Core",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:visionflow:linked:ai-agent-system", "vc:label": "AI Agent System"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:symbolic-ai", "vc:label": "Symbolic AI"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:unsupervised-learning", "vc:label": "Unsupervised Learning"},
-    {"@id": "urn:visionflow:linked:planning-and-search", "vc:label": "Planning and Search"},
-    {"@id": "urn:visionflow:linked:expert-system", "vc:label": "Expert System"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:autonomous-agents", "vc:label": "Autonomous Agents"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:artificial-general-intelligence", "vc:label": "Artificial General Intelligence"},
-    {"@id": "urn:visionflow:linked:ai-safety-research", "vc:label": "AI Safety Research"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
-    {"@id": "urn:visionflow:linked:data-driven-learning", "vc:label": "Data-Driven Learning"},
-    {"@id": "urn:visionflow:linked:cognitive-science", "vc:label": "Cognitive Science"},
-    {"@id": "urn:visionflow:linked:probability-theory", "vc:label": "Probability Theory"},
-    {"@id": "urn:visionflow:linked:information-theory", "vc:label": "Information Theory"},
-    {"@id": "urn:visionflow:linked:statistical-learning", "vc:label": "Statistical Learning"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:alignment-research", "vc:label": "Alignment Research"},
-    {"@id": "urn:visionflow:linked:benchmark-evaluation", "vc:label": "Benchmark Evaluation"},
-    {"@id": "urn:visionflow:linked:neural-symbolic-ai", "vc:label": "Neural-Symbolic AI"},
-    {"@id": "urn:visionflow:linked:ai-research", "vc:label": "AI Research"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:application-layer", "vc:label": "ApplicationLayer"},
-    {"@id": "urn:visionflow:linked:mccarthy-1956-dartmouth", "vc:label": "McCarthy 1956 Dartmouth Proposal"},
-    {"@id": "urn:visionflow:linked:turing-1950-computing-machinery", "vc:label": "Turing 1950 Computing Machinery and Intelligence"},
-    {"@id": "urn:visionflow:linked:rumelhart-1986-backpropagation", "vc:label": "Rumelhart et al 1986 Backpropagation"},
-    {"@id": "urn:visionflow:linked:krizhevsky-2012-alexnet", "vc:label": "Krizhevsky et al 2012 AlexNet"},
-    {"@id": "urn:visionflow:linked:vaswani-2017-attention", "vc:label": "Vaswani et al 2017 Attention Is All You Need"},
-    {"@id": "urn:visionflow:linked:lecun-bengio-hinton-2015-deep-learning", "vc:label": "LeCun Bengio Hinton 2015 Deep Learning Nature"},
-    {"@id": "urn:visionflow:linked:russell-norvig-artificial-intelligence", "vc:label": "Russell and Norvig Artificial Intelligence A Modern Approach"},
-    {"@id": "urn:visionflow:linked:alan-turing-institute", "vc:label": "Alan Turing Institute"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:frontier-ai", "vc:label": "Frontier AI"}
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:unsupervised-learning",
+      "vc:label": "Unsupervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-and-search",
+      "vc:label": "Planning and Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:expert-system",
+      "vc:label": "Expert System"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agents",
+      "vc:label": "Autonomous Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-general-intelligence",
+      "vc:label": "Artificial General Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety-research",
+      "vc:label": "AI Safety Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation",
+      "vc:label": "Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-driven-learning",
+      "vc:label": "Data-Driven Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-science",
+      "vc:label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:probability-theory",
+      "vc:label": "Probability Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-learning",
+      "vc:label": "Statistical Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:alignment-research",
+      "vc:label": "Alignment Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-evaluation",
+      "vc:label": "Benchmark Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-symbolic-ai",
+      "vc:label": "Neural-Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research",
+      "vc:label": "AI Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:mccarthy-1956-dartmouth",
+      "vc:label": "McCarthy 1956 Dartmouth Proposal"
+    },
+    {
+      "@id": "urn:visionflow:linked:turing-1950-computing-machinery",
+      "vc:label": "Turing 1950 Computing Machinery and Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:rumelhart-1986-backpropagation",
+      "vc:label": "Rumelhart et al 1986 Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:krizhevsky-2012-alexnet",
+      "vc:label": "Krizhevsky et al 2012 AlexNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:vaswani-2017-attention",
+      "vc:label": "Vaswani et al 2017 Attention Is All You Need"
+    },
+    {
+      "@id": "urn:visionflow:linked:lecun-bengio-hinton-2015-deep-learning",
+      "vc:label": "LeCun Bengio Hinton 2015 Deep Learning Nature"
+    },
+    {
+      "@id": "urn:visionflow:linked:russell-norvig-artificial-intelligence",
+      "vc:label": "Russell and Norvig Artificial Intelligence A Modern Approach"
+    },
+    {
+      "@id": "urn:visionflow:linked:alan-turing-institute",
+      "vc:label": "Alan Turing Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-ai",
+      "vc:label": "Frontier AI"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -190,64 +359,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:artificial-intelligence-core:a1b2c3d4e5f6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:artificial-intelligence-core"},
-  "vc:resolutions": [
-    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "StubLink"},
-    {"raw": "[[AI Agent System]]", "resolved": "urn:visionflow:linked:ai-agent-system", "kind": "ResolvedLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "StubLink"},
-    {"raw": "[[Symbolic AI]]", "resolved": "urn:visionflow:linked:symbolic-ai", "kind": "StubLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "StubLink"},
-    {"raw": "[[Supervised Learning]]", "resolved": "urn:visionflow:linked:supervised-learning", "kind": "StubLink"},
-    {"raw": "[[Unsupervised Learning]]", "resolved": "urn:visionflow:linked:unsupervised-learning", "kind": "StubLink"},
-    {"raw": "[[Planning and Search]]", "resolved": "urn:visionflow:linked:planning-and-search", "kind": "StubLink"},
-    {"raw": "[[Expert System]]", "resolved": "urn:visionflow:linked:expert-system", "kind": "StubLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "StubLink"},
-    {"raw": "[[Autonomous Agents]]", "resolved": "urn:visionflow:linked:autonomous-agents", "kind": "StubLink"},
-    {"raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:linked:multimodal-ai", "kind": "StubLink"},
-    {"raw": "[[Artificial General Intelligence]]", "resolved": "urn:visionflow:linked:artificial-general-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[AI Safety Research]]", "resolved": "urn:visionflow:linked:ai-safety-research", "kind": "ResolvedLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "StubLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "StubLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "StubLink"},
-    {"raw": "[[Backpropagation]]", "resolved": "urn:visionflow:linked:backpropagation", "kind": "StubLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:visionflow:linked:active-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Bayesian Inference]]", "resolved": "urn:visionflow:linked:bayesian-inference", "kind": "StubLink"},
-    {"raw": "[[Optimisation]]", "resolved": "urn:visionflow:linked:optimisation", "kind": "StubLink"},
-    {"raw": "[[Data-Driven Learning]]", "resolved": "urn:visionflow:linked:data-driven-learning", "kind": "StubLink"},
-    {"raw": "[[Cognitive Science]]", "resolved": "urn:visionflow:linked:cognitive-science", "kind": "StubLink"},
-    {"raw": "[[Probability Theory]]", "resolved": "urn:visionflow:linked:probability-theory", "kind": "StubLink"},
-    {"raw": "[[Information Theory]]", "resolved": "urn:visionflow:linked:information-theory", "kind": "StubLink"},
-    {"raw": "[[Statistical Learning]]", "resolved": "urn:visionflow:linked:statistical-learning", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Alignment Research]]", "resolved": "urn:visionflow:linked:alignment-research", "kind": "StubLink"},
-    {"raw": "[[Benchmark Evaluation]]", "resolved": "urn:visionflow:linked:benchmark-evaluation", "kind": "ResolvedLink"},
-    {"raw": "[[Neural-Symbolic AI]]", "resolved": "urn:visionflow:linked:neural-symbolic-ai", "kind": "StubLink"},
-    {"raw": "[[AI Research]]", "resolved": "urn:visionflow:linked:ai-research", "kind": "StubLink"},
-    {"raw": "[[Alan Turing Institute]]", "resolved": "urn:visionflow:linked:alan-turing-institute", "kind": "StubLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "ResolvedLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:linked:ai-ethics", "kind": "StubLink"},
-    {"raw": "[[Frontier AI]]", "resolved": "urn:visionflow:linked:frontier-ai", "kind": "StubLink"}
-  ]
 }
 ```
 

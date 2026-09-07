@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Border Transfer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A cross-border transfer is the movement of value or funds between parties located in different countries, settled across distinct currency and regulatory regimes. It encompasses bank wires, card networks, money-transfer operators, and increasingly digital-payment and cryptocurrency rails. Speed, cost, foreign-exchange handling, and compliance with multiple jurisdictions are its defining constraints.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-payments", "label": "Digital Payments"}, {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ]
   },
   "quality": 0.72
 }

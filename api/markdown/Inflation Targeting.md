@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Inflation Targeting
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:inflation-targeting", "@type": "Page", "title": "Inflation Targeting", "vc:slug": "inflation-targeting", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:inflation-targeting",
+  "@type": "Page",
+  "title": "Inflation Targeting",
+  "vc:slug": "inflation-targeting",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -115,7 +118,7 @@ public: true
   - Inflation targeting is a monetary-policy framework in which a central bank publicly commits to achieving a specified rate of inflation over the medium term and adjusts its policy instruments to meet that target. By anchoring expectations to a clear, numerical goal, it aims to deliver price stability while preserving transparency and accountability. The framework links interest-rate decisions to forecasts of how inflation will deviate from the announced target.
   - Related concepts: [[Monetary Policy]] [[Price Stability]] [[Central Bank]] [[Inflation]] [[Interest Rate]]
 - ### Overview
-  - Pioneered by New Zealand in 1990 and since adopted by central banks including the Bank of England and many others, inflation targeting replaced earlier frameworks based on monetary or exchange-rate aggregates. The central bank sets a target — often around two per cent measured by a consumer price index — and uses its policy rate as the principal instrument, raising rates when inflation is forecast above target and lowering them when below. Transparency through published forecasts, minutes, and forward guidance is integral, as credible communication anchors inflation expectations and makes the policy self-reinforcing.
+  - Pioneered by New Zealand in 1990 and since adopted by central banks including the Bank of England and many others, inflation targeting replaced earlier frameworks based on monetary or exchange-rate aggregates. The central bank sets a target — often around two per cent measured by a consumer price [private] — and uses its policy rate as the principal instrument, raising rates when inflation is forecast above target and lowering them when below. Transparency through published forecasts, minutes, and forward guidance is integral, as credible communication anchors inflation expectations and makes the policy self-reinforcing.
 - ### Mechanisms
   - Numerical target: a publicly announced inflation rate, typically defined over a medium-term horizon.
   - Policy instrument: adjustment of the short-term interest rate to steer aggregate demand and prices.

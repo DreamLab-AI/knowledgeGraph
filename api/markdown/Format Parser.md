@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Format Parser
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,7 +58,10 @@ public: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-processing", "label": "Data Processing"}
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
     ],
     "enables": [
       {
@@ -80,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:format-parser:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a4c563bbff1744fb2c273d440bc030cc16042c18d99f8e3d7b0a1a487f7540c2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross-Platform Content]]",
-      "resolved": "urn:visionflow:linked:cross-platform-content",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Processing]]",
-      "resolved": "urn:visionflow:owl:class:data-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software components that interpret and convert various 3D asset file formats (glTF, USD, FBX, OBJ) into internal representations for metaverse platforms, enabling interoperability between content creation tools and runtime environments whilst preserving geometry, materials, animations, and metadata.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SHA-256 Hashing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "SHA-256 Hashing refers to the application of the SHA-256 (Secure Hash Algorithm 256-bit) cryptographic hash function — a member of the SHA-2 family standardised by NIST in 2001 — to produce a fixed-length 256-bit (32-byte) message digest from an arbitrary-length input, with the properties of determinism, pre-image resistance, second pre-image resistance, and collision resistance. The algorithm operates via 64 rounds of bit manipulation, modular addition, and nonlinear functions over a 512-bit block schedule. SHA-256 is the foundational hash function of Bitcoin's proof-of-work mining, block header commitments, and Merkle tree construction, as well as a critical primitive in TLS, code signing, and certificate transparency.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +83,4 @@ public: true
 
   - Bitcoin's adoption of SHA-256 as its proof-of-work function (via Hashcash) was pivotal in the cryptocurrency ecosystem. Satoshi Nakamoto's 2008 whitepaper made SHA-256 synonymous with blockchain immutability: changing any historical transaction would require recomputing the hash chain from that point forward, an infeasible task given the network's cumulative hash rate. This use case also created the world's largest deployment of a single hash function in terms of raw computational throughput — Bitcoin mining has historically consumed hash rates measured in hundreds of exahashes per second (10^20 hashes/second), dwarfing all other SHA-256 applications combined.
 
-  - In 2024–2025 SHA-256 remains one of the most trusted and widely deployed cryptographic primitives despite the ongoing post-quantum transition. Quantum computers applying Grover's algorithm could theoretically reduce the effective pre-image security to 128 bits — still considered acceptable. NIST's post-quantum standardisation efforts focus on asymmetric cryptography (key exchange and signatures) rather than hash functions, reflecting SHA-256's continued robustness. Bitcoin's ASIC industry has produced SHA-256 computation hardware with extraordinary energy efficiency (sub-20 joules per terahash), driving research into ASIC design and the economics of proof-of-work security under energy constraints.
+  - In 2024–2025 SHA-256 remains one of the most trusted and widely deployed cryptographic primitives despite the ongoing post-quantum transition. Quantum computers applying Grover's algorithm [private] theoretically reduce the effective pre-image security to 128 bits — still considered acceptable. NIST's post-quantum standardisation efforts focus on asymmetric cryptography (key exchange and signatures) rather than hash functions, reflecting SHA-256's continued robustness. Bitcoin's ASIC industry has produced SHA-256 computation hardware with extraordinary energy efficiency (sub-20 joules per terahash), driving research into ASIC design and the economics of proof-of-work security under energy constraints.

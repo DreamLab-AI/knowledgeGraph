@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robot Component
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -47,15 +42,30 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"}
+      {
+        "@id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      }
     ]
   },
   "quality": 0.35,
@@ -66,26 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robot-component:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5ecf3d2f40793ecf1a791e87c54297265caf538b822564c95261505cacdfdba3"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Robot Component is any modular element forming part of a robotic system, encompassing hardware modules (motors, sensors, links, joints), electrical components (power supplies, motor drivers, embedded computers), software components (perception modules, planners, controllers), and interface components (communication protocols, connectors, mounting systems). Standardised interfaces—ISO 9409 tool flanges, EtherCAT, ROS 2—enable plug-and-play integration, reducing development time and supporting modular system design, component reuse, and hierarchical decomposition.

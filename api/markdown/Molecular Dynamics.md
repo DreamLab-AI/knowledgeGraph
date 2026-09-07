@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Molecular Dynamics
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:molecular-dynamics", "@type": "Page", "title": "Molecular Dynamics", "vc:slug": "molecular-dynamics", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:molecular-dynamics",
+  "@type": "Page",
+  "title": "Molecular Dynamics",
+  "vc:slug": "molecular-dynamics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

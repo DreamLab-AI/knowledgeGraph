@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VR Psychology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,32 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vr-psychology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d8d44d8f45e4f27592cd6a5c21cde843f70ce90da3d67f22ef0806c01cb8c5e4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - VR Psychology is the scientific study of how virtual reality environments affect human cognition, perception, emotion, behaviour, and wellbeing. It encompasses research into presence, embodiment, cybersickness, avatar effects, and therapeutic applications of immersive virtual environments, informing the design of XR systems that are psychologically safe and effective.

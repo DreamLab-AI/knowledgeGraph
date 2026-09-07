@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VALIDATION_REPORT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,15 +55,30 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"}
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "provenance": {
@@ -78,37 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:validation-report:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:92de0a6221be4699c5baacd531da2ee4dbd768778f0ae49c4d0043f3b68b8794"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[QualityAssurance|quality improvements]]",
-      "resolved": "urn:visionflow:owl:class:quality-assurance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Validation Report is a systematic assessment document verifying ontology compliance, data quality, and structural integrity across knowledge graphs and semantic systems. It checks that class hierarchies, relation targets, definition coverage, and maturity fields meet specified quality thresholds, producing actionable findings for enrichment pipelines. Validation reports document conformance to standards, identify inconsistencies, and provide recommendations for [[QualityAssurance|quality improvements]].

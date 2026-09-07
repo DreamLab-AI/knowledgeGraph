@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Quality Metric
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,36 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:networking-technology", "label": "Networking Technology"}
+      {
+        "@id": "urn:ngm:class:networking-technology",
+        "label": "Networking Technology"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multi-user-systems", "label": "Multi User Systems"},
-      {"@id": "urn:ngm:class:real-time", "label": "Real Time"}
+      {
+        "@id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi User Systems"
+      },
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +90,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:network-quality-metric:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:66650a8ac39b9e531a74218a30d60754334eea98a68d13c185f262ac737979d9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A quantitative measure used to characterise the performance and reliability of a network connection for real-time interactive applications, encompassing parameters such as latency (round-trip time), jitter, packet loss rate, available bandwidth, and connection stability. These metrics directly determine the feasibility of synchronised multi-user experiences in spatial computing environments.

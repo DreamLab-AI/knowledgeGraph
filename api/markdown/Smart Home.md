@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Smart Home
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

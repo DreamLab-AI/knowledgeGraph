@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Reward Shaping
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

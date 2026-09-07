@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Meeting Transcription
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,17 +58,38 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:audio-processing-system", "label": "Audio Processing System"},
-      {"@id": "urn:ngm:class:audio-technology", "label": "Audio Technology"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {
+        "@id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      },
+      {
+        "@id": "urn:ngm:class:audio-technology",
+        "label": "Audio Technology"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:documentation-generation", "label": "Documentation Generation"}
+      {
+        "@id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      }
     ]
   },
   "quality": 0.8,
@@ -84,37 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:meeting-transcription:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5baf144f59dcc0a200c0e60ba4cb1b0feea49fc817d8c37200b1c0b29a47dcac"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:owl:class:speech-recognition",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Meeting Transcription is a concept within the ai domain.

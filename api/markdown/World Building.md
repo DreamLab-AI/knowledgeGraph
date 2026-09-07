@@ -1,8 +1,3 @@
----
-public: true
----
-
-# World Building
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,20 +46,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
-      {"@id": "urn:ngm:class:design-software", "label": "Design Software"}
+      {
+        "@id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:virtual-production-workflow", "label": "Virtual Production Workflow"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse-architecture", "label": "Metaverse Architecture"},
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
     ]
   },
   "provenance": {
@@ -74,26 +93,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:world-building:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a0d684d09ce5ff71a1153643a92359978ed6e3628bb59bc80401f6dca38d8bf4"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The creative and technical process of designing, constructing, and populating coherent virtual environments — including geography, architecture, atmosphere, lore, and rules — for use in games, virtual reality, film, and metaverse platforms. World building integrates procedural generation, 3D modelling, level design, environmental storytelling, and real-time rendering to produce navigable, persistent virtual worlds.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Search Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,47 +175,12 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:search-engine:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1f747bd8911b9ae3f0f27e47954b96209666ba98214b4adc9cb5dd817aa73f15"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Content Discovery]]",
-      "resolved": "urn:visionflow:linked:content-discovery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Information Retrieval]]",
-      "resolved": "urn:visionflow:owl:class:information-retrieval",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A **search engine** is a software system that systematically crawls, indexes, and ranks digital content to return relevant results in response to user queries. It sits at the intersection of [[Information Retrieval]], [[Natural Language Processing]], [[Distributed Computing]], and applied [[Machine Learning]], forming the principal gateway through which users navigate the open web, enterprise intranets, e-commerce catalogues, and increasingly [[Metaverse]] content layers. By transforming unstructured corpora into queryable indexes and applying learned ranking functions, search engines mediate access to the majority of humanity's publicly available digital knowledge.
 
 - ### Overview
   - Search engines emerged in the early 1990s alongside the World Wide Web, with systems such as Archie (1990), AltaVista (1995), and then Google (1998) establishing the modern paradigm of link-based [[Relevance Ranking]].
-  - Their core value proposition is scale and speed: they pre-compute index structures that allow sub-second retrieval across billions of documents, a problem that naïve real-time scanning cannot solve.
+  - Their core value proposition is scale and speed: they pre-compute [private] structures that allow sub-second retrieval across billions of documents, a problem that naïve real-time scanning cannot solve.
   - The domain is now mature. Google, Bing, and Baidu dominate the public web tier; [[Elasticsearch]] and Apache Solr lead enterprise and application search; specialised vertical search engines target domains such as legal, biomedical, and code.
   - Recent developments centre on the fusion of classical [[Inverted Index]] retrieval with dense [[Vector Search]] (bi-encoders, ColBERT) and the integration of [[Large Language Model]] components for query rewriting, answer synthesis, and [[Retrieval-Augmented Generation]] (RAG).
   - Search engines are critical infrastructure whose design choices — what content is surfaced, in what order, under what policies — carry significant societal implications for information access and [[Digital Governance]].
@@ -234,11 +194,11 @@ public: true
     - Raw crawled documents are parsed, normalised (encoding, HTML stripping), and tokenised into terms.
     - An [[Inverted Index]] maps each term to a posting list of document identifiers and positional information, enabling fast Boolean and phrase retrieval.
     - Modern indexes also store forward indexes for feature extraction and [[Document Embedding]] vectors for dense retrieval.
-    - [[Data Storage]] at search-engine scale requires distributed file systems (e.g. GFS / HDFS) and sharded index servers.
+    - [[Data Storage]] at search-engine scale requires distributed file systems (e.g. GFS / HDFS) and sharded [private] servers.
   - #### Query Processing
     - [[Query Processing]] encompasses tokenisation, stemming/lemmatisation, stop-word removal, spelling correction, query expansion, and intent classification.
     - [[Natural Language Processing]] components parse conversational and ambiguous queries; entity recognition links query terms to [[Knowledge Graph]] entities for disambiguation.
-    - Structured queries (Boolean, field-restricted, geo-spatial) are compiled into query plans evaluated against the index shards.
+    - Structured queries (Boolean, field-restricted, geo-spatial) are compiled into query plans evaluated against the [private] shards.
   - #### Relevance Ranking
     - Classical [[Relevance Ranking]] models include TF-IDF, BM25 (Okapi), and [[PageRank]]-style authority propagation.
     - Learning-to-rank (LTR) models (RankNet, LambdaMART, neural LTR) combine hundreds of features — textual similarity, freshness, click-through rates, page authority — into a final score.

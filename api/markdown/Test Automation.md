@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Test Automation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

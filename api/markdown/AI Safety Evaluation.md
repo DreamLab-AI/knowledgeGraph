@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Safety Evaluation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-safety-evaluation",
   "title": "AI Safety Evaluation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["50% Time Horizon", "GPT-5.6 Soul"],
+  "vc:outboundWikilinks": [
+    "50% Time Horizon",
+    "GPT-5.6 Soul"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-policy",
+      "label": "AI Policy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}, {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}, {"@id": "urn:ngm:class:gpt", "label": "GPT"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

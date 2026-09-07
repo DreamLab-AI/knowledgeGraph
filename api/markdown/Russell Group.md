@@ -1,43 +1,110 @@
----
-public: true
----
-
-# Russell Group
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:russell-group", "@type":"Page", "title":"Russell Group", "vc:slug":"russell-group", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:russell-group",
+  "@type": "Page",
+  "title": "Russell Group",
+  "vc:slug": "russell-group",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:russell-group",
-  "@type":"Class",
-  "label":"Russell Group",
-  "definition":"The Russell Group is a self-selecting association of leading research-intensive universities in the United Kingdom that advocates collectively on research funding, policy, and higher-education strategy. Its members are characterised by substantial research output, strong postgraduate provision, and extensive industry and international links. Membership is frequently used as a shorthand for institutions with high research standing.",
-  "domain":"ai",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:education","label":"Education"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:education","label":"Education"}],
-    "supports":[{"@id":"urn:ngm:class:education","label":"Education"}],
-    "enables":[{"@id":"urn:ngm:class:collaboration","label":"Collaboration"}],
-    "uses":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "implements":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "dependsOn":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:collaboration","label":"Collaboration"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:education","label":"Education"},
-      {"@id":"urn:ngm:class:governance","label":"Governance"},
-      {"@id":"urn:ngm:class:collaboration","label":"Collaboration"},
-      {"@id":"urn:ngm:class:standards","label":"Standards"},
-      {"@id":"urn:ngm:class:data","label":"Data"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:russell-group",
+  "@type": "Class",
+  "label": "Russell Group",
+  "definition": "The Russell Group is a self-selecting association of leading research-intensive universities in the United Kingdom that advocates collectively on research funding, policy, and higher-education strategy. Its members are characterised by substantial research output, strong postgraduate provision, and extensive industry and international links. Membership is frequently used as a shorthand for institutions with high research standing.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:education",
+      "label": "Education"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:education",
+        "label": "Education"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:education",
+        "label": "Education"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:education",
+        "label": "Education"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

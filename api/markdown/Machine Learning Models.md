@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Machine Learning Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -221,42 +216,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:machine-learning-models:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ed7eb5a28dac39d58d20f25a53e3f152a63f473b3d5198aa676945044f6411a7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Automated Decision Making]]",
-      "resolved": "urn:visionflow:linked:automated-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Categories and types of machine learning algorithms including classification models, regression models, clustering algorithms, and neural networks, each designed for specific prediction and pattern recognition tasks.

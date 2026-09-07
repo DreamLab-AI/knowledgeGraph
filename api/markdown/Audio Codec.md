@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Audio Codec
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:audio-codec", "@type":"Page", "title":"Audio Codec", "vc:slug":"audio-codec", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:audio-codec",
+  "@type": "Page",
+  "title": "Audio Codec",
+  "vc:slug": "audio-codec",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

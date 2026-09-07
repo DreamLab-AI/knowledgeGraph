@@ -1,8 +1,3 @@
----
-public: true
----
-
-# secure enclave
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -290,7 +285,7 @@ public: true
     - Monotonic counters (hardware anti-rollback) are provided in some platforms (Intel ME counters, TPM-backed counters).
   - **Supply Chain Attacks**
     - The [[Hardware Root of Trust]] depends on the integrity of the CPU manufacturing process and vendor provisioning infrastructure.
-    - Compromised provisioning keys or malicious silicon alterations could undermine attestation validity.
+    - Compromised provisioning keys or malicious silicon alterations [private] undermine attestation validity.
     - Connects to [[Supply Chain Security]] concerns in hardware procurement.
   - **Enclave Code Vulnerabilities**
     - Memory safety bugs inside enclave code execute within the trusted boundary; a buffer overflow in an SGX enclave is still exploitable by the enclave's own logic.

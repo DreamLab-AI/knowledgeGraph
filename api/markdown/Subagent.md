@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Subagent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Subagent",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:ai-agent", "vc:label": "AIAgent" },
-    { "@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "MultiAgentSystem" },
-    { "@id": "urn:visionflow:linked:task-delegation", "vc:label": "TaskDelegation" },
-    { "@id": "urn:visionflow:linked:agent-loop", "vc:label": "AgentLoop" }
+    {
+      "@id": "urn:visionflow:linked:ai-agent",
+      "vc:label": "AIAgent"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "MultiAgentSystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-delegation",
+      "vc:label": "TaskDelegation"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-loop",
+      "vc:label": "AgentLoop"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,12 +44,35 @@ public: true
   "definition": "A subagent is a subordinate autonomous agent spawned by a parent or orchestrating agent to carry out a delegated subtask within its own isolated context window, returning only a distilled result to the parent. By running in a fresh context, a subagent keeps the noise of its intermediate exploration — long file reads, search output, failed attempts — out of the parent's limited context, while allowing many subtasks to proceed in parallel. Subagents may be specialised by role, tools, or model tier, and are the unit of work distribution in hierarchical multi-agent architectures.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": { "@id": "urn:ngm:class:ai-agent", "label": "AI Agent" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-agent",
+    "label": "AI Agent"
+  },
   "relations": {
-    "partOf": [ { "@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System" } ],
-    "relatedTo": [ { "@id": "urn:ngm:class:task-delegation", "label": "Task Delegation" } ],
-    "enables": [ { "@id": "urn:ngm:class:task-decomposition", "label": "Task Decomposition" } ],
-    "uses": [ { "@id": "urn:ngm:class:agent-loop", "label": "Agent Loop" } ]
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      }
+    ]
   },
   "quality": 0.75,
   "provenance": {

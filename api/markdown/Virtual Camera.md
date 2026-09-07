@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Camera
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:virtual-production-volume", "label": "Virtual Production Volume"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-scouting", "label": "Virtual Scouting"},
-      {"@id": "urn:ngm:class:virtual-production-pipeline", "label": "Virtual Production Pipeline"}
+      {
+        "@id": "urn:ngm:class:virtual-scouting",
+        "label": "Virtual Scouting"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-pipeline",
+        "label": "Virtual Production Pipeline"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:virtual-stage", "label": "Virtual Stage"}
+      {
+        "@id": "urn:ngm:class:virtual-stage",
+        "label": "Virtual Stage"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-camera:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ecdd91d0cacbe45aff436c05dfdcc8f1a02c45e85077cb82b2a2479e98baaa9d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Production]]",
-      "resolved": "urn:visionflow:owl:class:virtual-production",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A simulated camera system in virtual production environments that captures real-time virtual scenes, enabling filmmakers to visualize and shoot CG environments as if using a physical camera with real-world lens and movement characteristics.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0055 velocity control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,49 +60,50 @@ public: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"},
-      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
-      {"@id": "urn:ngm:class:velocity", "label": "Velocity"},
-      {"@id": "urn:ngm:class:velocity-control", "label": "VelocityControl"}
+      {
+        "@id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      },
+      {
+        "@id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "@id": "urn:ngm:class:velocity",
+        "label": "Velocity"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-control",
+        "label": "VelocityControl"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"}
+      {
+        "@id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0055-velocity-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:38ee401236383a484524f0bde6b34e10c70713fb38154da475e5cd9de2116535"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Velocity Control** is a closed-loop control mode in which a robot controller commands and regulates joint or end-effector velocities rather than positions or forces. A PID-based feedback loop reads velocity from encoders and adjusts actuator drive signals to track a commanded speed profile. Velocity control underpins smooth trajectory following and is essential for speed-and-separation monitoring safety functions that require real-time speed capping proportional to human proximity.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inflation Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,34 +67,88 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:minting", "label": "Minting"},
-      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"},
-      {"@id": "urn:ngm:class:sink-mechanism", "label": "Sink Mechanism"},
-      {"@id": "urn:ngm:class:circulating-supply", "label": "Circulating Supply"}
+      {
+        "@id": "urn:ngm:class:minting",
+        "label": "Minting"
+      },
+      {
+        "@id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:sink-mechanism",
+        "label": "Sink Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:virtual-currency", "label": "Virtual Currency"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:play-to-earn-p2-e", "label": "Play-to-Earn (P2E)"},
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"}
+      {
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn (P2E)"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:social-token-economy", "label": "Social Token Economy"},
-      {"@id": "urn:ngm:class:cross-metaverse-commerce", "label": "Cross Metaverse Commerce"}
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:social-token-economy",
+        "label": "Social Token Economy"
+      },
+      {
+        "@id": "urn:ngm:class:cross-metaverse-commerce",
+        "label": "Cross Metaverse Commerce"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-gaming", "label": "Blockchain Gaming"}
+      {
+        "@id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      }
     ]
   },
   "provenance": {
@@ -109,47 +158,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inflation-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eadd5d31f9b7d6f06e6a8a9eef8cc6c792dbefeb950996e2feb25910010f3c22"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Game Economics]]",
-      "resolved": "urn:visionflow:linked:game-economics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Economics]]",
-      "resolved": "urn:visionflow:linked:virtual-economics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

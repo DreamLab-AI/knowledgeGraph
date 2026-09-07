@@ -1,35 +1,114 @@
----
-public: true
----
-
-# Low-Latency Network
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:low-latency-network", "@type":"Page", "title":"Low-Latency Network", "vc:slug":"low-latency-network", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:low-latency-network",
+  "@type": "Page",
+  "title": "Low-Latency Network",
+  "vc:slug": "low-latency-network",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:low-latency-network",
-  "@type":"Class",
-  "label":"Low-Latency Network",
-  "definition":"A low-latency network is a communications network engineered to minimise the round-trip delay experienced by data packets travelling between endpoints. It combines short physical paths, fast switching, prioritised traffic handling, and edge placement of compute so that interactive and real-time applications respond within tight, predictable time bounds. Such networks are foundational to immersive and time-critical experiences where perceptible delay degrades usability.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"},{"@id":"urn:ngm:class:network-topology","label":"Network Topology"}],
-  "relations":{
-    "dependsOn":[{"@id":"urn:ngm:class:edge-computing","label":"Edge Computing"},{"@id":"urn:ngm:class:network-topology","label":"Network Topology"}],
-    "requires":[{"@id":"urn:ngm:class:bandwidth","label":"Bandwidth"},{"@id":"urn:ngm:class:quality-of-service","label":"Quality of Service"}],
-    "enables":[{"@id":"urn:ngm:class:immersive-experience","label":"Immersive Experience"},{"@id":"urn:ngm:class:cloud-gaming","label":"Cloud Gaming"},{"@id":"urn:ngm:class:telepresence","label":"Telepresence"}],
-    "supports":[{"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"},{"@id":"urn:ngm:class:real-time-communication","label":"Real-Time Communication"}],
-    "uses":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"},{"@id":"urn:ngm:class:content-delivery-network","label":"Content Delivery Network"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:latency","label":"Latency"}],
-    "relatedTo":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"},{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:low-latency-network",
+  "@type": "Class",
+  "label": "Low-Latency Network",
+  "definition": "A low-latency network is a communications network engineered to minimise the round-trip delay experienced by data packets travelling between endpoints. It combines short physical paths, fast switching, prioritised traffic handling, and edge placement of compute so that interactive and real-time applications respond within tight, predictable time bounds. Such networks are foundational to immersive and time-critical experiences where perceptible delay degrades usability.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:network-topology",
+      "label": "Network Topology"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-gaming",
+        "label": "Cloud Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

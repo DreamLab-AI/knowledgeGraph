@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BC-0484-markets-in-crypto-assets
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bc-0484-markets-in-crypto-assets:be9576d7f4ff",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:352e60f3b21fc81b3c53ff7a29a3cf6dbbbb066232e21d6923c178f0204cd642"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Securities Regulation]]",
-      "resolved": "urn:visionflow:linked:securities-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MiCA Regulation]]",
-      "resolved": "urn:visionflow:linked:mi-ca-regulation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Markets in Crypto-Assets is the European Union regulatory framework that defines categories of crypto-assets and sets authorisation and conduct rules for their issuers and service providers.

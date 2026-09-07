@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Node
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -226,62 +221,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:node:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4c2cb088d1babd66a1946f0489216c634292d6c4889c2730db3c87f938394c78"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NetworkComponent]]",
-      "resolved": "urn:visionflow:owl:class:network-component",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Network participant computer within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 - ### Semantic Classification
@@ -361,9 +300,9 @@ public: true
     - **Figment**: Advanced staking provider supporting **40+ blockchain networks**, managing over **$15 billion** in staked assets and serving institutional clients including asset managers, hedge funds, and crypto-native companies. Figment's institutional focus and compliance capabilities (SOC 2 Type II audits, GDPR compliance) positioned it as the preferred provider for regulated entities entering staking markets
     **Centralisation Concerns and Decentralisation Theatre:**
     The consolidation of node infrastructure into handful of institutional providers created **fundamental tensions** with blockchain's decentralisation ethos:
-    - **RPC centralisation**: Despite Ethereum's **400,000+ validator nodes** (post-Merge) creating robust consensus decentralisation, the vast majority of users and applications accessed the network through **centralised RPC providers** (Alchemy, Infura, QuickNode). This created a **centralisation paradox**: consensus was decentralised, but **access** was centralised, enabling potential censorship at the infrastructure layer (RPC providers could theoretically filter transactions, censor addresses, or deny service to specific applications)
-    - **Validator centralisation risks**: In proof-of-stake networks, institutional staking providers (Coinbase, Figment, InfStones, Blockdaemon) controlling **30-40% of total staked assets** across multiple networks created **single-entity risks**: if major provider experienced technical failure, compromise, or regulatory pressure (e.g., government order to censor transactions), significant portion of network's validation capacity could be affected simultaneously
-    - **Geographic concentration**: Major node providers operated data centres predominantly in **United States and Europe** (AWS, Google Cloud, Microsoft Azure regions), creating geographic centralisation where **50-60% of blockchain validator nodes** ran in U.S.-controlled cloud infrastructure by 2025. This exposed networks to **jurisdictional risk**: U.S. regulatory actions could potentially affect majority of validation infrastructure simultaneously
+    - **RPC centralisation**: Despite Ethereum's **400,000+ validator nodes** (post-Merge) creating robust consensus decentralisation, the vast majority of users and applications accessed the network through **centralised RPC providers** (Alchemy, Infura, QuickNode). This created a **centralisation paradox**: consensus was decentralised, but **access** was centralised, enabling potential censorship at the infrastructure layer (RPC providers [private] theoretically filter transactions, censor addresses, or deny service to specific applications)
+    - **Validator centralisation risks**: In proof-of-stake networks, institutional staking providers (Coinbase, Figment, InfStones, Blockdaemon) controlling **30-40% of total staked assets** across multiple networks created **single-entity risks**: if major provider experienced technical failure, compromise, or regulatory pressure (e.g., government order to censor transactions), significant portion of network's validation capacity [private] be affected simultaneously
+    - **Geographic concentration**: Major node providers operated data centres predominantly in **United States and Europe** (AWS, Google Cloud, Microsoft Azure regions), creating geographic centralisation where **50-60% of blockchain validator nodes** ran in U.S.-controlled cloud infrastructure by 2025. This exposed networks to **jurisdictional risk**: U.S. regulatory actions [private] potentially affect majority of validation infrastructure simultaneously
     - **Cloud infrastructure dependency**: Estimated **60-70% of Ethereum validators** ran on **Amazon Web Services (AWS)** infrastructure, **15-20% on Google Cloud**, and **5-10% on Microsoft Azure**, with only approximately **10-15% on dedicated/bare-metal servers**. This created **catastrophic failure scenarios**: AWS outages (December 2021, December 2022) caused widespread disruptions to blockchain networks despite consensus layer remaining operational—users and applications couldn't access networks due to infrastructure-layer failures
     **Regulatory Compliance and Censorship Risks:**
     The August 2022 **Tornado Cash sanctions** by U.S. Office of Foreign Assets Control (OFAC) exposed infrastructure-layer censorship vulnerabilities: following sanctions, major RPC providers (Alchemy, Infura, QuickNode) **blocked transactions** interacting with Tornado Cash smart contracts, demonstrating that centralised infrastructure created de facto censorship capability even on ostensibly censorship-resistant blockchains.

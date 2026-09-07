@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DeepLearning
----
-
-# Deep Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -257,7 +250,7 @@ aliases:
   "definition": "Deep Learning is a subset of Machine Learning based on Artificial Neural Networks with multiple layers (depth) that learn hierarchical representations of data through Backpropagation and Gradient Descent.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -396,7 +389,7 @@ aliases:
       }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -404,292 +397,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:deep-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:984e579cef9cbb7d021eba7d6c59b9b1bc5f65e61b5b69b544bcef0951a5d57c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AlgorithmicLayer]]",
-      "resolved": "urn:visionflow:linked:algorithmic-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Neural Networks]]",
-      "resolved": "urn:visionflow:linked:artificial-neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Validation]]",
-      "resolved": "urn:visionflow:linked:blockchain-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DataManagementDomain]]",
-      "resolved": "urn:visionflow:linked:data-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralized AI]]",
-      "resolved": "urn:visionflow:linked:decentralized-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Geoffrey Hinton]]",
-      "resolved": "urn:visionflow:linked:geoffrey-hinton",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GPU Compute]]",
-      "resolved": "urn:visionflow:linked:gpu-compute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hidden Layer]]",
-      "resolved": "urn:visionflow:linked:hidden-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hyperparameter Tuning]]",
-      "resolved": "urn:visionflow:linked:hyperparameter-tuning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 22989:2022]]",
-      "resolved": "urn:visionflow:linked:iso-iec-22989-2022",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI Standards]]",
-      "resolved": "urn:visionflow:linked:nist-ai-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Optimizer]]",
-      "resolved": "urn:visionflow:linked:optimizer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Self-Supervised Learning]]",
-      "resolved": "urn:visionflow:linked:self-supervised-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Yann LeCun]]",
-      "resolved": "urn:visionflow:linked:yann-le-cun",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Yoshua Bengio]]",
-      "resolved": "urn:visionflow:linked:yoshua-bengio",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Activation Function]]",
-      "resolved": "urn:visionflow:owl:class:activation-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-technique",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Backpropagation]]",
-      "resolved": "urn:visionflow:owl:class:backpropagation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-research-area",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputeLayer]]",
-      "resolved": "urn:visionflow:owl:class:compute-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DataLayer]]",
-      "resolved": "urn:visionflow:owl:class:data-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gradient Descent]]",
-      "resolved": "urn:visionflow:owl:class:gradient-descent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Classification]]",
-      "resolved": "urn:visionflow:owl:class:image-classification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:owl:class:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Loss Function]]",
-      "resolved": "urn:visionflow:owl:class:loss-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Architecture]]",
-      "resolved": "urn:visionflow:owl:class:model-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:owl:class:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Object Detection]]",
-      "resolved": "urn:visionflow:owl:class:object-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:owl:class:speech-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Supervised Learning]]",
-      "resolved": "urn:visionflow:owl:class:supervised-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data]]",
-      "resolved": "urn:visionflow:owl:class:training-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Unsupervised Learning]]",
-      "resolved": "urn:visionflow:owl:class:unsupervised-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer Architecture]]",
-      "resolved": "urn:visionflow:linked:transformer-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Network]]",
-      "resolved": "urn:visionflow:linked:convolutional-neural-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Recurrent Neural Network]]",
-      "resolved": "urn:visionflow:linked:recurrent-neural-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Large Language Model]]",
-      "resolved": "urn:visionflow:linked:large-language-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Generative Adversarial Network]]",
-      "resolved": "urn:visionflow:linked:generative-adversarial-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deep Learning Framework]]",
-      "resolved": "urn:visionflow:linked:deep-learning-framework",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vanishing Gradient Problem]]",
-      "resolved": "urn:visionflow:linked:vanishing-gradient-problem",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Batch Normalisation]]",
-      "resolved": "urn:visionflow:linked:batch-normalisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dropout]]",
-      "resolved": "urn:visionflow:linked:dropout",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stochastic Gradient Descent]]",
-      "resolved": "urn:visionflow:linked:stochastic-gradient-descent",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Attention Mechanism]]",
-      "resolved": "urn:visionflow:linked:attention-mechanism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Federated Learning]]",
-      "resolved": "urn:visionflow:linked:federated-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Diffusion Model]]",
-      "resolved": "urn:visionflow:linked:diffusion-model",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - [[Deep Learning]] is a discipline within [[Machine Learning Discipline]] that trains hierarchical [[Neural Network]] models with many successive processing layers — hence "deep" — to learn increasingly abstract representations of data, progressing from raw signals (pixels, token identifiers, waveform samples) to high-level semantic concepts, entirely through exposure to examples rather than hand-coded rules. The foundational mechanism is [[Backpropagation]] of error gradients through the stacked layers, computed efficiently by [[Automatic Differentiation]] in a [[Deep Learning Framework]] and used to update millions or billions of trainable weights via [[Gradient Descent]] optimisers including [[Stochastic Gradient Descent]] and adaptive variants such as Adam. Deep learning is distinguished from shallow [[Machine Learning Discipline]] methods by its capacity to learn feature representations directly from data — a property that drove breakthrough performance on [[Computer Vision]] (AlexNet, 2012; ResNet, 2015; Vision Transformers, 2020), [[Natural Language Processing]] (BERT, 2018; GPT-3, 2020; ChatGPT, 2022), [[Speech Recognition]], [[Object Detection]], and [[Reinforcement Learning]] (AlphaGo, 2016; AlphaFold, 2020). The architectural families underpinning these advances include [[Convolutional Neural Network]] layers for spatial feature extraction, [[Recurrent Neural Network]] architectures for sequential data, the [[Attention Mechanism]] and [[Transformer Architecture]] for parallel sequence modelling, [[Generative Adversarial Network]] frameworks for data synthesis, and [[Diffusion Model]] architectures that have dominated image and audio generation since 2022. Deep learning requires large volumes of [[Training Data]], substantial [[GPU Compute]] resources, and careful [[Hyperparameter Tuning]] to avoid pathologies including the [[Vanishing Gradient Problem]], which is mitigated through residual connections, [[Batch Normalisation]], and [[Dropout]] regularisation. The seminal figures of the field — [[Yann LeCun]], [[Geoffrey Hinton]], and [[Yoshua Bengio]] — were jointly awarded the 2018 ACM Turing Award for their conceptual and engineering contributions. Standardisation of terminology is addressed in [[ISO/IEC 22989:2022]] and [[NIST AI Standards]].
@@ -778,11 +485,11 @@ aliases:
         ObjectSomeValuesFrom(ai:reducesTo ai:NumericalOptimisation))
 
   ## About
-  Deep learning emerged as a coherent sub-discipline of [[Machine Learning Discipline]] in the period 2006–2012, though its intellectual roots extend to McCulloch and Pitts's 1943 model of the artificial neuron, Rosenblatt's 1958 Perceptron, and Rumelhart, Hinton & Williams's 1986 discovery that [[Backpropagation]] could train multi-layer [[Neural Network]] architectures. The "deep learning" terminology was popularised by [[Geoffrey Hinton]], [[Yoshua Bengio]], and [[Yann LeCun]] to distinguish approaches using many layers from the shallow architectures (one or two layers) that dominated the 1990s and 2000s.
+  Deep learning emerged as a coherent sub-discipline of [[Machine Learning Discipline]] in the period 2006–2012, though its intellectual roots extend to McCulloch and Pitts's 1943 model of the artificial neuron, Rosenblatt's 1958 Perceptron, and Rumelhart, Hinton & Williams's 1986 discovery that [[Backpropagation]] [private] train multi-layer [[Neural Network]] architectures. The "deep learning" terminology was popularised by [[Geoffrey Hinton]], [[Yoshua Bengio]], and [[Yann LeCun]] to distinguish approaches using many layers from the shallow architectures (one or two layers) that dominated the 1990s and 2000s.
 
   The canonical formulation of a deep learning system consists of a [[Neural Network]] with L layers, each parameterised by a weight matrix W_l and bias b_l, with a non-linear [[Activation Function]] sigma applied element-wise after the affine transformation. Data propagates forward through successive layers: h_l = sigma(W_l h_{l-1} + b_l), with h_0 = x (the input) and h_L = y-hat (the prediction). A scalar [[Loss Function]] L(y-hat, y) — cross-entropy for classification, mean squared error for regression — measures discrepancy between prediction and ground truth. [[Backpropagation]] computes partial derivatives dL/dW_l and dL/db_l for all l simultaneously via reverse-mode automatic differentiation, and an [[Optimizer]] applies these gradients to update parameters in the direction that reduces the loss. This training loop, iterated over many minibatches of [[Training Data]] for multiple epochs, is implemented by a [[Deep Learning Framework]] executing on [[GPU Compute]] hardware.
 
-  The qualitative breakthrough that distinguished deep learning from prior neural network work was the discovery that very deep networks, trained at scale with large datasets on GPUs, could learn hierarchical feature representations of unprecedented quality. Convolutional networks for vision learned edge detectors in early layers, shape detectors in intermediate layers, and object-part detectors in deep layers — without any hand-coding of features. This property of compositional representation learning generalises across modalities: [[Transformer Architecture]] applied to text learns syntactic structure in lower layers and semantic relationships in higher layers; diffusion models applied to images learn low-frequency structure before high-frequency detail.
+  The qualitative breakthrough that distinguished deep learning from prior neural network work was the discovery that very deep networks, trained at scale with large datasets on GPUs, [private] learn hierarchical feature representations of unprecedented quality. Convolutional networks for vision learned edge detectors in early layers, shape detectors in intermediate layers, and object-part detectors in deep layers — without any hand-coding of features. This property of compositional representation learning generalises across modalities: [[Transformer Architecture]] applied to text learns syntactic structure in lower layers and semantic relationships in higher layers; diffusion models applied to images learn low-frequency structure before high-frequency detail.
 
   ## Major Architectural Families
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-154-edge-computing-telepresence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,52 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-154-edge-computing-telepresence:eea905f843ab",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:21a8178a8b2f4445a24ab5013c2acb3fd3e942378187dd975e8373393d0bfb4e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:linked:edge-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Content Delivery Network]]",
-      "resolved": "urn:visionflow:linked:content-delivery-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Low Latency]]",
-      "resolved": "urn:visionflow:linked:low-latency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:linked:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:linked:telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Edge computing for telepresence places processing such as encoding, rendering and reconstruction close to users at the network edge to reduce latency and bandwidth for immersive remote communication.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safety Engineering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Safety engineering is the engineering discipline concerned with designing systems that avoid causing harm to people, property, and the environment under both normal and fault conditions. It applies hazard analysis, redundancy, fail-safe design, and quantified risk assessment across the system lifecycle. Functional safety and reliability engineering are specialised branches that address fault behaviour and dependable operation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}, {"@id": "urn:ngm:class:reliability-engineering", "label": "Reliability Engineering"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ]
   },
   "quality": 0.72
 }

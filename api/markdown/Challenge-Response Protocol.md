@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Challenge-Response Protocol
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

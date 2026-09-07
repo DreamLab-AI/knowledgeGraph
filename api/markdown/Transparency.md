@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transparency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,42 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transparency:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:492e9a425d67ce3cad65eae7dde6be8ddb547c38c920e3325e827bf1be3facc8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Accountability (AI-0068)]]",
-      "resolved": "urn:visionflow:linked:accountability-ai-0068",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Explainability (AI-0064)]]",
-      "resolved": "urn:visionflow:linked:explainability-ai-0064",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The property of an AI system whereby relevant information about the system's design, operation, capabilities, limitations, and decision-making processes is accessible and understandable to appropriate stakeholders.

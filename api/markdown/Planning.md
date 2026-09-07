@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Planning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -167,46 +162,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:planning:423614833cbd",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:235f0b65a00ae6c7b3f519a593e60a246f70b015a2d29112320362d5953df23b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Search Algorithm]]",
-      "resolved": "urn:visionflow:linked:search-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Agent]]",
-      "resolved": "urn:visionflow:linked:autonomous-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Planning]]",
-      "resolved": "urn:visionflow:linked:automated-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

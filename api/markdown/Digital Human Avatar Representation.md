@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Humans, Avatars , Character]]
-# Digital Human Avatar Representation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,26 +84,6 @@ elevatedFrom:: [[Humans, Avatars , Character]]
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:humans-avatars-character:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7faad208f4462f69b971c845bc83a52af86788ce373c416000703bd34ef69efd"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The combined domain encompassing the creation, animation, and management of digital representations of human beings in virtual environments, including photorealistic digital humans, stylised avatars, and fictional characters. This domain integrates motion capture, AI-driven face and body generation, lip-synchronisation, and avatar portability standards to produce consistent, expressive agents across metaverse platforms.
 
@@ -139,14 +113,14 @@ elevatedFrom:: [[Humans, Avatars , Character]]
 		- This section examines projects that focus on generating realistic and diverse digital bodies, laying the foundation for virtual humans and characters.
 		- * [Volumetric Primitives (MVP)](https://dl.acm.org/doi/abs/10.1145/3528233.3530740): A research paper exploring the use of volumetric primitives for avatar representation.
 		  * [Gaussian Shell Maps](https://rameenabdal.github.io/GaussianShellMaps/): A research project dedicated to the use of Gaussian Shell Maps for efficient 3D human generation.
-		  * [En3D](https://menyifang.github.io/projects/En3D/index.html): A project focused on generating 3D human models with realistic detail.
+		  * [En3D](https://menyifang.github.io/projects/En3D/[private].html): A project focused on generating 3D human models with realistic detail.
 		  * [Character Creator 3 (Reallusion)](https://www.reallusion.com/character-creator/): A powerful tool for creating realistic and stylised 3D characters.
 		- The human hand, with its intricate movements and expressiveness, poses a unique challenge for digital recreation. This section highlights projects tackling this complexity.
 		  * [URHand](https://frozenburning.github.io/projects/urhand/): A project dedicated to the generation and animation of realistic digital hands.
 		- This section explores projects that leverage audio input to drive avatar animation, creating a more immersive and responsive experience.
 		  * [audio2photoreal (Facebook Research)](https://github.com/facebookresearch/audio2photoreal): A project from Facebook Research focused on generating photorealistic avatars driven by audio.
 		- Realistic skin texture is crucial for believable digital humans. This section explores projects and research dedicated to accurately estimating and recreating human skin textures.
-		  * [SMPLitex](https://dancasas.github.io/projects/SMPLitex/index.html): A generative model and dataset for estimating 3D human texture from a single image.
+		  * [SMPLitex](https://dancasas.github.io/projects/SMPLitex/[private].html): A generative model and dataset for estimating 3D human texture from a single image.
 		  * [Human texture estimation from a single image](https://scholar.google.com/scholar?q=human+texture+estimation+from+a+single+image): A broader exploration of the field of human texture estimation from single images.
 		- This section encompasses a variety of projects and resources that contribute to the broader field of digital human and avatar creation.
 		  * [StableIdentity](https://qinghew.github.io/StableIdentity/): A project exploring the insertion of individuals into new environments.

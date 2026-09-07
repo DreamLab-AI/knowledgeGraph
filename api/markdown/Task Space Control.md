@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Task Space Control
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

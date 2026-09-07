@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Feature Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,4 +159,3 @@ public: true
   - Across both domains, feature detection underpins interoperability and robustness. WebXR device capability detection, for instance, uses feature detection to decide whether to present immersive or flat UI, whilst visual feature matching drives augmented-reality tracking and simultaneous localisation and mapping. Libraries like Modernizr (web) and OpenCV (vision) package detection utilities for broad adoption.
 
   - In 2024–2025, the convergence of neural feature extractors with edge deployment has intensified interest in lightweight detectors suitable for mobile and embedded hardware. On the web side, the Baseline project from the Web DX Community Group formalises browser feature availability across engines, reducing dependence on bespoke detection scripts and moving the ecosystem toward declarative capability querying.
-

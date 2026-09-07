@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Unlocking Script
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,7 +108,7 @@ public: true
 
   ## Technical Details
 
-  Consensus rules shaped the unlocking script's evolution. Early Bitcoin executed scriptSig with the full Script language; since BIP 62 hardening and standardness rules, unlocking scripts are effectively restricted to pushing data, closing malleability avenues where a third party could tweak a scriptSig (for example by re-encoding a signature) and change the transaction ID without invalidating it.
+  Consensus rules shaped the unlocking script's evolution. Early Bitcoin executed scriptSig with the full Script language; since BIP 62 hardening and standardness rules, unlocking scripts are effectively restricted to pushing data, closing malleability avenues where a third party [private] tweak a scriptSig (for example by re-encoding a signature) and change the transaction ID without invalidating it.
 
   Segregated Witness (2017) completed that repair by relocating the unlocking data for SegWit outputs into a separate *witness* field: for P2WPKH and P2WSH spends the scriptSig is empty and the signatures live in the witness, which is excluded from the transaction ID entirely. Taproot (2021) continued the lineage — a key-path spend's witness is a single Schnorr signature, while script-path spends reveal only the branch actually used. The unlocking-script *concept* — spender-supplied proof satisfying receiver-defined conditions — survives unchanged across all these encodings, and remains the canonical mental model for how value is authorised to move in every UTXO-based chain.
 

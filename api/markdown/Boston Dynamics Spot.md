@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Boston Dynamics Spot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:boston-dynamics-spot:c8bb89160879",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2c6b689965db236347dcf63722464ff2dc97f72ae8b6ae0b596e97b4aee42a42"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Legged Locomotion]]",
-      "resolved": "urn:visionflow:linked:legged-locomotion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SLAM]]",
-      "resolved": "urn:visionflow:linked:slam",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Perception]]",
-      "resolved": "urn:visionflow:linked:robot-perception",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensors]]",
-      "resolved": "urn:visionflow:linked:sensors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mobile Robotics]]",
-      "resolved": "urn:visionflow:linked:mobile-robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://bostondynamics.com/products/spot/]]",
-      "resolved": "urn:visionflow:linked:https-bostondynamics-com-products-spot",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://dev.bostondynamics.com/]]",
-      "resolved": "urn:visionflow:linked:https-dev-bostondynamics-com",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Spot is a quadruped mobile robot developed by Boston Dynamics, designed for inspection and data collection across varied terrain.

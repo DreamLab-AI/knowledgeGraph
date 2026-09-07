@@ -1,8 +1,3 @@
----
-public: true
----
-
-# COCO Dataset
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "The COCO Dataset (Common Objects in Context) is a large-scale benchmark dataset for computer vision research comprising over 330,000 images with dense per-instance annotations covering object detection, instance segmentation, panoptic segmentation, keypoint estimation, and image captioning across 80 object categories in natural everyday scenes. Released in 2014 by Microsoft Research, it became the de-facto standard evaluation corpus for detection and segmentation models because its annotations capture objects in realistic, cluttered contexts rather than artificially isolated settings. COCO metrics—specifically Average Precision (AP) averaged across IoU thresholds—are the primary performance currency for reporting state-of-the-art results in visual perception research.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:benchmarks",
+      "label": "Benchmarks"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:instance-segmentation", "label": "Instance Segmentation"},
-      {"@id": "urn:ngm:class:panoptic-segmentation", "label": "Panoptic Segmentation"}
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
-      {"@id": "urn:ngm:class:object-recognition", "label": "Object Recognition"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# nakamoto coefficient
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,20 +34,34 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - The Nakamoto Coefficient is a quantitative metric for blockchain decentralisation, defined as the minimum number of independent entities in a given subsystem (such as mining pool concentration, validator set, or client software diversity) whose collusion or failure would be sufficient to compromise network security, liveness, or integrity. A higher Nakamoto Coefficient indicates a more resilient, decentralised network; a coefficient of one denotes a single point of failure. The metric is applicable across multiple dimensions of a network simultaneously, yielding a multi-dimensional decentralisation profile rather than a single scalar.

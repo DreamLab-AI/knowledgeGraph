@@ -1,8 +1,3 @@
----
-public: true
----
-
-# EU Union Customs Code
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The EU Union Customs Code (UCC) is the legal framework governing customs rules and procedures for goods entering, leaving, or moving within the European Union. It standardises declarations, tariff classification, valuation, origin rules, and the move toward fully electronic, paperless customs processing. The UCC is the reference regime for customs and trade-facilitation systems operating across the EU single market.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:customs-trade-facilitation", "label": "Customs Trade Facilitation"}, {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
   "quality": 0.72
 }

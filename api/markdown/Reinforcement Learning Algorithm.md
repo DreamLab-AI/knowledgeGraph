@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reinforcement Learning Algorithm
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,18 +67,36 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"}
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ]
   },
   "provenance": {
@@ -93,52 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reinforcement-learning-algorithm:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a4a24c38649d3ba3e851f4b12d95e366f63d308e845155b7dcb220d87c505498"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Actor-Critic Methods]]",
-      "resolved": "urn:visionflow:linked:actor-critic-methods",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deep Q-Network]]",
-      "resolved": "urn:visionflow:linked:deep-q-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Policy Gradient]]",
-      "resolved": "urn:visionflow:linked:policy-gradient",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals. Core algorithms include value-based methods (Q-learning, DQN), policy gradient methods (REINFORCE, PPO, TRPO), actor-critic approaches (A3C, SAC), and model-based RL. Advanced techniques incorporate deep neural networks for function approximation, experience replay, target networks, and exploration strategies. Applications span robotics, game playing, autonomous systems, resource management, and personalized recommendations.

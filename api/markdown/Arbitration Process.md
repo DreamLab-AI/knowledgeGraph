@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Arbitration Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,72 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:arbitration-process:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:00c7f2efbff45a5c8a5e5a3a2e73cc162c90dd1aa63c7738f8e1fbda7cb1c4ac"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Alternative Dispute Resolution]]",
-      "resolved": "urn:visionflow:linked:alternative-dispute-resolution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Arbitration Clauses]]",
-      "resolved": "urn:visionflow:linked:arbitration-clauses",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Confidential Proceedings]]",
-      "resolved": "urn:visionflow:linked:confidential-proceedings",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-Border Dispute Resolution]]",
-      "resolved": "urn:visionflow:linked:cross-border-dispute-resolution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Evidence Procedures]]",
-      "resolved": "urn:visionflow:linked:evidence-procedures",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neutral Selection]]",
-      "resolved": "urn:visionflow:linked:neutral-selection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Smart Contract Enforcement]]",
-      "resolved": "urn:visionflow:linked:smart-contract-enforcement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Arbitration Process in the blockchain and metaverse context refers to structured dispute resolution procedures using smart contracts and decentralized technologies, encompassing both on-chain mechanisms with automatic award enforcement and off-chain proceedings with traditional arbitral frameworks adapted for digital asset disputes.

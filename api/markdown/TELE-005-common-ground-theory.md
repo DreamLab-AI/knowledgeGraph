@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-005-common-ground-theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,37 +71,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-005-common-ground-theory:f6c0f670f965",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a9ebbac1c5412b9a45ccf50e10ed1b527a5f1fc357b2ede74b9fd85b2f81e16e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Communication Theory]]",
-      "resolved": "urn:visionflow:linked:communication-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Collaboration]]",
-      "resolved": "urn:visionflow:linked:collaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Common ground theory is an account of communication holding that participants build and rely on shared knowledge, beliefs and assumptions, which they update through interaction to coordinate meaning.

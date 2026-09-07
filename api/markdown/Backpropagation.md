@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Backpropagation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,47 +188,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:backpropagation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fe9280c216a18f1d4b6f59b0e44a1b9b2f5751ea2a4a5b292cdbf9e4dc92e277"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
-      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST (National Institute of Standards and Technology)]]",
-      "resolved": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ### Primary Definition

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[license]]
-# Intellectual Property Licence Instrument
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,26 +77,6 @@ elevatedFrom:: [[license]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:license:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7b5543ec3bd2d4e471bee2690f7282159bbd125fd5dc45773a77c8fe7dafaef4"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A legal instrument that specifies the permissions, conditions, and restrictions under which intellectual property — including software, data, and creative works — may be used, reproduced, modified, and distributed, forming the contractual basis for open-source and open-data ecosystems.

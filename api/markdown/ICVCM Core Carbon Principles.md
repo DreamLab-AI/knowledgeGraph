@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ICVCM Core Carbon Principles
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,45 @@ public: true
   "definition": "The ICVCM Core Carbon Principles (CCPs) are a set of ten threshold standards established by the Integrity Council for the Voluntary Carbon Market to define what constitutes a high-quality carbon credit. They cover governance, emissions impact, and sustainable development dimensions, requiring that credits be real, additional, quantified, permanent, independently verified, and contribute positively to sustainable development goals without causing harm to local communities or ecosystems.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:icvcm-framework", "label": "ICVCM Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:icvcm-framework",
+      "label": "ICVCM Framework"
+    }
+  ],
   "relations": {
-    "standardizedBy": [{"@id": "urn:ngm:class:integrity-council-for-the-voluntary-carbon-market", "label": "Integrity Council for the Voluntary Carbon Market"}],
-    "enables": [{"@id": "urn:ngm:class:voluntary-carbon-market", "label": "Voluntary Carbon Market"}, {"@id": "urn:ngm:class:carbon-credit-retirement", "label": "Carbon Credit Retirement"}],
-    "relatedTo": [{"@id": "urn:ngm:class:carbon-standard-certification", "label": "Carbon Standard Certification"}, {"@id": "urn:ngm:class:verra-vcs-standard", "label": "Verra VCS Standard"}],
-    "supports": [{"@id": "urn:ngm:class:carbon-markets", "label": "Carbon Markets"}]
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:integrity-council-for-the-voluntary-carbon-market",
+        "label": "Integrity Council for the Voluntary Carbon Market"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-retirement",
+        "label": "Carbon Credit Retirement"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:carbon-standard-certification",
+        "label": "Carbon Standard Certification"
+      },
+      {
+        "@id": "urn:ngm:class:verra-vcs-standard",
+        "label": "Verra VCS Standard"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -49,4 +77,4 @@ public: true
 
   - The CCP framework operates through a two-layer assessment: first, carbon-crediting programmes (Verra VCS, Gold Standard, American Carbon Registry, Climate Action Reserve, Architecture for REDD+ Transactions) apply for "CCP-Approved Programme" status by demonstrating that their programme-level rules meet the CCPs. Second, approved programmes can apply for "CCP-Eligible" labels on specific credit categories (e.g. cookstoves, afforestation, industrial gas destruction) by demonstrating that the methodology meets category-specific standards. Buyers who purchase CCP-labelled credits gain assurance that the credit has been independently assessed against a recognised quality floor.
 
-  - By 2024-2025 the ICVCM had approved several programmes for CCP status but progress on approving credit categories was slower than anticipated, with some high-volume methodology types (cookstoves, REDD+ avoided deforestation) facing continued scrutiny. The convergence of CCP standards with Article 6 of the Paris Agreement (international transfer of mitigation outcomes) raised questions about whether CCP-labelled credits could be used toward national Nationally Determined Contributions without corresponding adjustment. Digital registries using blockchain and tokenised carbon credits are seeking CCP certification to establish market credibility, creating pressure to clarify how CCPs apply to crypto-native carbon markets.
+  - By 2024-2025 the ICVCM had approved several programmes for CCP status but progress on approving credit categories was slower than anticipated, with some high-volume methodology types (cookstoves, REDD+ avoided deforestation) facing continued scrutiny. The convergence of CCP standards with Article 6 of the Paris Agreement (international transfer of mitigation outcomes) raised questions about whether CCP-labelled credits [private] be used toward national Nationally Determined Contributions without corresponding adjustment. Digital registries using blockchain and tokenised carbon credits are seeking CCP certification to establish market credibility, creating pressure to clarify how CCPs apply to crypto-native carbon markets.

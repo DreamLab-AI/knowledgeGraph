@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Liquidation Engine
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:liquidation-engine", "@type":"Page", "title":"Liquidation Engine", "vc:slug":"liquidation-engine", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:liquidation-engine",
+  "@type": "Page",
+  "title": "Liquidation Engine",
+  "vc:slug": "liquidation-engine",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AML
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -175,41 +170,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aml:22775a0eeeb5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5c6015895d214a2f3174dcc3febd7127523508c912a477a0bd0006156c34d659"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Classification]]",
-      "resolved": "urn:visionflow:linked:classification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Anti-Money Laundering]]",
-      "resolved": "urn:visionflow:linked:anti-money-laundering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Services]]",
-      "resolved": "urn:visionflow:linked:financial-services",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

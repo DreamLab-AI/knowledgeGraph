@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FASB ASU 2023-08
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

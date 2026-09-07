@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Soft Body Dynamics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,69 +72,64 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"},
-      {"@id": "urn:ngm:class:fluid-simulation", "label": "Fluid Simulation"},
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:dynamic-character-animation", "label": "Dynamic Character Animation"}
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
-      {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:soft-body-dynamics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cdbcc3f538d5723c60a9aa2ce722af2f817d76527aeb21ad7425fe85e1d6f664"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Game Physics]]",
-      "resolved": "urn:visionflow:linked:game-physics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physics Engine]]",
-      "resolved": "urn:visionflow:owl:class:physics-engine",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Physics simulation of deformable objects like cloth, flesh, or elastic materials, modeling realistic deformation and dynamic behavior in virtual environments.

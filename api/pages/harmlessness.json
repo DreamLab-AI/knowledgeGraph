@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:harmlessness",
   "domain": "spatial-computing",
-  "definition": "An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness is one of the three core alignment dimensions alongside helpfulness and honesty, implemented through techniques such as Constitutional AI and RLHF to constrain model behaviour without sacrificing utility.",
+  "definition": "An alignment objective ensuring AI systems avoid generating outputs that [private] cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness is one of the three core alignment dimensions alongside helpfulness and honesty, implemented through techniques such as Constitutional AI and RLHF to constrain model behaviour without sacrificing utility.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",

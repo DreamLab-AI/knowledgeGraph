@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Property Schema
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -47,19 +42,40 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
     ]
   },
   "provenance": {
@@ -69,26 +85,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:property-schema:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dab66eff8c463563acf237b00eab005ecd178dab85e5b7e0fff453d26d0abeb6"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A formal specification of the object properties, data properties, and annotation properties that relate classes within an ontology, including domain and range constraints, cardinality axioms, and logical characteristics such as transitivity and symmetry. Property schemas are the mechanism by which OWL2 ontologies encode typed, machine-readable relations between entities.

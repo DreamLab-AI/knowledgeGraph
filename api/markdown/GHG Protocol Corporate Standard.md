@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GHG Protocol Corporate Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,30 @@ public: true
   "definition": "The GHG Protocol Corporate Accounting and Reporting Standard is the most widely used international framework for measuring and reporting an organisation's greenhouse-gas emissions. Developed by the World Resources Institute and the World Business Council for Sustainable Development, it organises emissions into Scope 1 (direct), Scope 2 (purchased energy), and Scope 3 (value-chain) categories, establishing consistent boundaries, accounting principles, and disclosure rules. It underpins corporate climate reporting, science-based targets, and most national and regional emissions-disclosure regulations.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"}
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:carbon-offset", "label": "Carbon Offset"}
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
     ]
   },
   "quality": 0.8

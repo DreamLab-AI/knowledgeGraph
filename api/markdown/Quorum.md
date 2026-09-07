@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quorum
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,7 +172,7 @@ public: true
 
 - ### Overview
   - Quorum is one of the oldest and most fundamental concepts in collective decision-making, formalised in distributed computing theory and adapted across [[Blockchain]], [[Distributed Database]], and [[Decentralised Governance]] contexts.
-  - **Why it matters**: without a well-defined quorum, a distributed system cannot guarantee safety—two disjoint subsets of nodes could simultaneously commit contradictory decisions, violating [[Linearisability]]. Quorum intersection is the mathematical invariant that prevents this.
+  - **Why it matters**: without a well-defined quorum, a distributed system cannot guarantee safety—two disjoint subsets of nodes [private] simultaneously commit contradictory decisions, violating [[Linearisability]]. Quorum intersection is the mathematical invariant that prevents this.
   - **Core guarantee**: any two quorums in a valid quorum system must intersect. In a majority-quorum system over n nodes, any two sets of ⌊n/2⌋+1 nodes share at least one common member. This intersection witness can detect and prevent contradictory commits.
   - **Liveness vs safety trade-off**: larger quorums improve [[Safety]] (harder to corrupt the overlap) at the cost of [[Liveness]] (harder to assemble the quorum during network partitions). Smaller quorums are more responsive but more susceptible to minority takeover. This tension maps directly onto the [[CAP Theorem]]—systems choosing consistency over availability implicitly choose larger, stricter quorums.
   - **Breadth of application**: quorum concepts appear in [[Consensus Algorithm]] design, [[Multi-signature Wallet]] custody, [[On-chain Governance]] proposals, [[Distributed Database]] replication, [[Oracle Network]] aggregation, and [[Threshold Signature]] cryptography.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenMP
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "OpenMP",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:api", "vc:label": "API"},
-    {"@id": "urn:visionflow:linked:parallel-processing", "vc:label": "Parallel Processing"},
-    {"@id": "urn:visionflow:linked:message-passing-interface", "vc:label": "Message Passing Interface"},
-    {"@id": "urn:visionflow:linked:shared-memory", "vc:label": "Shared Memory"}
+    {
+      "@id": "urn:visionflow:linked:api",
+      "vc:label": "API"
+    },
+    {
+      "@id": "urn:visionflow:linked:parallel-processing",
+      "vc:label": "Parallel Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:message-passing-interface",
+      "vc:label": "Message Passing Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:shared-memory",
+      "vc:label": "Shared Memory"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,24 +44,48 @@ public: true
   "definition": "An open standard API for shared-memory parallel programming in C, C++, and Fortran, in which developers annotate sequential code with compiler directives (pragmas) such as parallel regions, work-sharing loops, and tasks, and the compiler and runtime distribute the work across threads. Governed by the OpenMP Architecture Review Board since 1997, the specification has grown from simple loop-level parallelism to encompass explicit tasking, SIMD vectorisation, and offloading to GPUs and other accelerators via target directives. Its incremental, directive-based model makes it the dominant intra-node parallelisation approach in scientific and high-performance computing, commonly paired with MPI for communication between nodes.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:api", "label": "API"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:api",
+    "label": "API"
+  },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:compiler", "label": "Compiler"},
-      {"@id": "urn:ngm:class:shared-memory", "label": "Shared Memory"}
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "@id": "urn:ngm:class:shared-memory",
+        "label": "Shared Memory"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:multithreading", "label": "Multithreading"}
+      {
+        "@id": "urn:ngm:class:multithreading",
+        "label": "Multithreading"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"}
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:message-passing-interface", "label": "Message Passing Interface"}
+      {
+        "@id": "urn:ngm:class:message-passing-interface",
+        "label": "Message Passing Interface"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
     ]
   },
   "quality": 0.8,

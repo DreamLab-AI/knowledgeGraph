@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metaverse Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,42 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b1e44fa19f9afeec186e96ce72ea39e98307728fc292b515a66ca31d7126a63b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Virtual Social Interaction]]",
-      "resolved": "urn:visionflow:linked:virtual-social-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual World]]",
-      "resolved": "urn:visionflow:owl:class:virtual-world",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.

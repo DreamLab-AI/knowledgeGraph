@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Noir
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:noir:c203c6bcb339",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e2d89a84d3741132a5699b2c3be46295a54fa038dbca2276554cb8ec21516ca7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ZK-SNARK]]",
-      "resolved": "urn:visionflow:linked:zk-snark",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Protocol]]",
-      "resolved": "urn:visionflow:linked:cryptographic-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Programming Language]]",
-      "resolved": "urn:visionflow:linked:programming-language",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A domain-specific programming language for writing zero-knowledge proofs, developed by Aztec. It abstracts the underlying proving system so developers can express circuits without low-level cryptographic detail.

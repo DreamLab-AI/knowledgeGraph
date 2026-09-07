@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rescue Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,36 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ]
   },
   "quality": 0.5,
@@ -82,37 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rescue-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c3b7a4108dbee3bbf37da3f92d7d65a71e716aec3de09004f600d5be9655435f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Rescue Robot is a specialised mobile robot engineered to operate in hazardous, unstructured environments—including collapsed structures, disaster zones, and nuclear incidents—where direct human presence is unsafe. Such systems integrate multimodal locomotion (tracked, wheeled, or legged), sensor suites (IR, LIDAR, acoustic, tactile), and teleoperation or autonomous navigation to locate, assess, and extract casualties or gather situational data. Conformance with safety standards such as ISO 8373 and participation in benchmarks such as the RoboCup Rescue Robot League drives continuous capability development.

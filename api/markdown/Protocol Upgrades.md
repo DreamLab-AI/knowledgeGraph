@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Protocol Upgrades
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Protocol upgrades are coordinated modifications to the consensus rules, transaction format, or feature set of a blockchain network, deployed through soft forks, hard forks, or activation mechanisms. They allow a decentralised system to evolve while preserving network continuity and, where possible, backward compatibility. Because no central authority can impose changes, upgrades typically require broad stakeholder coordination and on-chain or social signalling.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
     ]
   },
   "quality": 0.72

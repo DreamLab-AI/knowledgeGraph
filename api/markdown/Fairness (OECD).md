@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fairness (OECD)
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:explainability-oecd", "label": "Explainability (OECD)"},
-      {"@id": "urn:ngm:class:accountability-oecd", "label": "Accountability (OECD)"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"}
+      {
+        "@id": "urn:ngm:class:explainability-oecd",
+        "label": "Explainability (OECD)"
+      },
+      {
+        "@id": "urn:ngm:class:accountability-oecd",
+        "label": "Accountability (OECD)"
+      },
+      {
+        "@id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Technology Access Equity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:human-centred-values", "label": "Human Centred Values"}
+      {
+        "@id": "urn:ngm:class:human-centred-values",
+        "label": "Human Centred Values"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fairness-oecd:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e6d921ab8d7211d84b4573336a6bafe477605ba97444eeb96438e20c2dd28f23"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI systems should not create or reinforce unfair bias, discrimination or disparate impacts on individuals or groups based on protected characteristics, and should incorporate appropriate safeguards to ensure equitable treatment and opportunity whilst respecting legitimate differentiation based on actual relevant differences.

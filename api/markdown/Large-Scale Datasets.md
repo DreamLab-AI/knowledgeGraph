@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Large-Scale Datasets
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Large-scale datasets are very large collections of data, often spanning billions of examples and many terabytes, assembled to train modern machine learning models. They are typically aggregated from web crawls, public corpora and curated sources, then filtered, deduplicated and tokenised. Their scale, diversity and quality are primary determinants of the capabilities of large language and generative models.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ]
   },
   "quality": 0.72

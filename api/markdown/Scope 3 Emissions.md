@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scope 3 Emissions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -156,4 +151,3 @@ public: true
   - Scope 3 emissions are strategically significant because they constitute the dominant share of most organisations' carbon footprints — particularly for companies in retail, financial services, and technology, whose own operations are relatively clean but whose supply chains and financed activities are carbon-intensive. Reducing Scope 3 requires a fundamentally different set of interventions than Scope 1 and 2 reductions: supplier engagement programmes, product design changes to reduce embodied carbon, modal shifts in logistics, and customer behaviour change. For financial institutions, Scope 3 Category 15 (financed emissions) represents the climate impact of investment portfolios and loan books, making it central to financial sector climate commitments under the Net-Zero Banking Alliance.
 
   - By 2024–2025, Scope 3 disclosure is rapidly becoming mandatory rather than voluntary. The EU Corporate Sustainability Reporting Directive (CSRD) and the SEC climate disclosure rules both require material Scope 3 reporting from large companies, and the International Sustainability Standards Board (ISSB) IFRS S2 standard provides a global baseline. AI and supply-chain analytics tools are emerging to automate Scope 3 data collection from purchase order systems, logistics APIs, and supplier portals, reducing the manual burden of annual carbon inventories. Digital product passports — standardised data carriers attached to physical goods — are being piloted as a mechanism for propagating emission data down supply chains automatically.
-

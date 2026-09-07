@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RFC 8785 Canonical JSON
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rfc-8785-canonical-json:4d3ff2dc3a67",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3cf2b9f0a706cff3aa6c5a575b9b9e20c4f3738e39dd1bc8f41bbcb2d0332ae5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IETF]]",
-      "resolved": "urn:visionflow:linked:ietf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - RFC 8785 specifies the JSON Canonicalization Scheme, a method for producing a deterministic serialisation of JSON data to support cryptographic operations.

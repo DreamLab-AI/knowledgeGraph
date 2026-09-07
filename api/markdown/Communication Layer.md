@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Communication Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:communication-layer:d3f7f23a86e9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1591624897f77cb027d67b1c1542ea1372d026cdac39078dd11e44aba597d3ec"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Transport Layer]]",
-      "resolved": "urn:visionflow:linked:transport-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Coordination Layer]]",
-      "resolved": "urn:visionflow:linked:coordination-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Integration Layer]]",
-      "resolved": "urn:visionflow:linked:integration-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Publish-Subscribe]]",
-      "resolved": "urn:visionflow:linked:publish-subscribe",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Message Passing]]",
-      "resolved": "urn:visionflow:linked:message-passing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Communication Layer is the stratum that governs the exchange of messages between components or participants. It sits above the Transport Layer that delivers bytes and below the coordination and application strata that rely on conversation. It contains messaging patterns, encoding, addressing, and delivery semantics.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hugging Face Model Hub
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The Hugging Face Model Hub is a public repository and platform for sharing, discovering, and versioning machine-learning models, datasets, and demo spaces. Built on Git and Git-LFS, it hosts hundreds of thousands of pretrained models with standardised model cards, metadata, and direct integration into the Transformers ecosystem. It functions as the central distribution layer for open machine-learning artefacts.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:safetensors", "label": "Safetensors"},
-      {"@id": "urn:ngm:class:fooocus", "label": "Fooocus"}
+      {
+        "@id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "@id": "urn:ngm:class:fooocus",
+        "label": "Fooocus"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Utility AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,7 +108,7 @@ public: true
 
   ## Definition
 
-  **Utility AI** (also called utility-based AI or utility theory in games) is a [[Decision Making]] architecture for game agents rooted in the economic notion of utility: rather than following hand-authored transition logic, the agent continuously asks "how useful is each thing I could do right now?" and does the most useful one. Each candidate action — attack, flee, reload, heal, eat, patrol — is assigned a scorer built from **considerations**: functions of world-state inputs such as distance to target, own health, ammunition, visible threats, or a Sims-style need level. Each input passes through a **response curve** (linear, polynomial, logistic, step) that converts it to a normalised utility in [0, 1] and encodes designer intent — for example, healing utility that stays near zero at high health then rises steeply as health collapses. Consideration scores are combined, typically by multiplication so that any zero consideration vetoes the action, and the agent picks the top-scoring action or samples among the best few for variety.
+  **Utility AI** (also called utility-based AI or utility theory in games) is a [[Decision Making]] architecture for game agents rooted in the economic notion of utility: rather than following hand-authored transition logic, the agent continuously asks "how useful is each thing I [private] do right now?" and does the most useful one. Each candidate action — attack, flee, reload, heal, eat, patrol — is assigned a scorer built from **considerations**: functions of world-state inputs such as distance to target, own health, ammunition, visible threats, or a Sims-style need level. Each input passes through a **response curve** (linear, polynomial, logistic, step) that converts it to a normalised utility in [0, 1] and encodes designer intent — for example, healing utility that stays near zero at high health then rises steeply as health collapses. Consideration scores are combined, typically by multiplication so that any zero consideration vetoes the action, and the agent picks the top-scoring action or samples among the best few for variety.
 
   The approach contrasts sharply with the other staples of [[Game AI]]. A [[Finite State Machine]] is in exactly one state and only changes along authored transitions, so unanticipated situations need new states and edges; a [[Behaviour Tree]] evaluates a fixed priority ordering, so subtle trade-offs between competing concerns must be forced into a hierarchy. Utility AI instead makes every option compete numerically every tick, which handles situations the designer never explicitly enumerated and degrades gracefully — when the best option is unavailable, the second-best simply wins. The costs are the mirror image: behaviour is emergent from curves and weights rather than legible from a diagram, tuning is a balancing exercise, and debugging "why did the NPC do that?" requires score-inspection tooling rather than reading a tree.
 

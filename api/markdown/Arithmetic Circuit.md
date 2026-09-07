@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Arithmetic Circuit
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,43 +20,96 @@ public: true
   "definition": "A directed acyclic graph (DAG) of addition and multiplication gates over a field, used to represent polynomial computations in a form amenable to cryptographic proof systems. Arithmetic circuits are the canonical intermediate representation for zero-knowledge proof schemes such as zk-SNARKs and STARKs: a computation is first expressed as an arithmetic circuit, then compiled into a system of polynomial constraints (R1CS or Plonkish), and finally proved using a cryptographic proving system. The complexity of a circuit is characterised by its depth (for parallelism) and size (gate count).",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:finite-field-arithmetic", "label": "Finite Field Arithmetic"},
-      {"@id": "urn:ngm:class:polynomial-commitment", "label": "Polynomial Commitment"}
+      {
+        "@id": "urn:ngm:class:finite-field-arithmetic",
+        "label": "Finite Field Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:constraint-system", "label": "Constraint System"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-system",
+        "label": "Constraint System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:zk-snark", "label": "zk-SNARK"},
-      {"@id": "urn:ngm:class:zk-starks", "label": "zk-STARK"},
-      {"@id": "urn:ngm:class:verifiable-computation", "label": "Verifiable Computation"}
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "zk-SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:zk-starks",
+        "label": "zk-STARK"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:logic-gate", "label": "Logic Gate"}
+      {
+        "@id": "urn:ngm:class:logic-gate",
+        "label": "Logic Gate"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:boolean-circuit", "label": "Boolean Circuit"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
+      {
+        "@id": "urn:ngm:class:boolean-circuit",
+        "label": "Boolean Circuit"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:boolean-circuit", "label": "Boolean Circuit"}
+      {
+        "@id": "urn:ngm:class:boolean-circuit",
+        "label": "Boolean Circuit"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "quality": 0.62,

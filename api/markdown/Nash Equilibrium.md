@@ -1,40 +1,116 @@
----
-public: true
----
-
-# Nash Equilibrium
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:nash-equilibrium", "@type":"Page", "title":"Nash Equilibrium", "vc:slug":"nash-equilibrium", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:nash-equilibrium",
+  "@type": "Page",
+  "title": "Nash Equilibrium",
+  "vc:slug": "nash-equilibrium",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:nash-equilibrium",
-  "@type":"Class",
-  "label":"Nash Equilibrium",
-  "definition":"A Nash equilibrium is a solution concept in game theory describing a profile of strategies, one for each player, such that no player can increase their own payoff by unilaterally changing strategy while the others hold theirs fixed. It captures a stable state of mutual best responses and may be in pure or mixed strategies. Nash proved that every finite game has at least one such equilibrium, making it the central predictive concept for strategic interaction among rational agents.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"}],
-    "hasPart":[{"@id":"urn:ngm:class:mechanism-design","label":"Mechanism Design"}],
-    "requires":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"}],
-    "enables":[{"@id":"urn:ngm:class:mechanism-design","label":"Mechanism Design"}],
-    "uses":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"}],
-    "dependsOn":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"}],
-    "supports":[{"@id":"urn:ngm:class:auction-theory","label":"Auction Theory"}],
-    "implements":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"}],
-    "relatedTo":[{"@id":"urn:ngm:class:cooperative-game-theory","label":"Cooperative Game Theory"},{"@id":"urn:ngm:class:mechanism-design","label":"Mechanism Design"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:cooperative-game-theory","label":"Cooperative Game Theory"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:nash-equilibrium",
+  "@type": "Class",
+  "label": "Nash Equilibrium",
+  "definition": "A Nash equilibrium is a solution concept in game theory describing a profile of strategies, one for each player, such that no player can increase their own payoff by unilaterally changing strategy while the others hold theirs fixed. It captures a stable state of mutual best responses and may be in pure or mixed strategies. Nash proved that every finite game has at least one such equilibrium, making it the central predictive concept for strategic interaction among rational agents.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:game-theory",
+      "label": "Game Theory"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cooperative-game-theory",
+        "label": "Cooperative Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cooperative-game-theory",
+        "label": "Cooperative Game Theory"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Monitoring
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -320,157 +315,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-monitoring:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d1890017bc5ce9c25c4e0dc429ea168b59bbb549025303d4df3adf59f7da1779"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Maintenance]]",
-      "resolved": "urn:visionflow:linked:ai-maintenance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[alert thresholds]]",
-      "resolved": "urn:visionflow:linked:alert-thresholds",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[baseline metrics]]",
-      "resolved": "urn:visionflow:linked:baseline-metrics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[continuous improvement]]",
-      "resolved": "urn:visionflow:linked:continuous-improvement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Drift]]",
-      "resolved": "urn:visionflow:linked:data-drift",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FDA Post-Market Surveillance]]",
-      "resolved": "urn:visionflow:linked:fda-post-market-surveillance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23894:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 25024]]",
-      "resolved": "urn:visionflow:linked:iso-iec-25024",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 25059]]",
-      "resolved": "urn:visionflow:linked:iso-iec-25059",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[model updating]]",
-      "resolved": "urn:visionflow:linked:model-updating",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Monitoring infrastructure]]",
-      "resolved": "urn:visionflow:linked:monitoring-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI Risk Management Framework]]",
-      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Audit]]",
-      "resolved": "urn:visionflow:owl:class:ai-audit",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Deployment]]",
-      "resolved": "urn:visionflow:owl:class:ai-deployment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Lifecycle]]",
-      "resolved": "urn:visionflow:owl:class:ai-lifecycle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Operator]]",
-      "resolved": "urn:visionflow:owl:class:ai-operator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bias]]",
-      "resolved": "urn:visionflow:owl:class:bias",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fairness]]",
-      "resolved": "urn:visionflow:owl:class:fairness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Oversight]]",
-      "resolved": "urn:visionflow:owl:class:human-oversight",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Performance]]",
-      "resolved": "urn:visionflow:owl:class:model-performance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended consequences, enabling timely intervention, maintenance, and continuous improvement whilst ensuring accountability and compliance with governance requirements.
 
@@ -496,7 +340,7 @@ public: true
 			- ### Post-Olympics Surveillance
 				- The surveillance measures implemented for the Olympics are likely to have lasting effects:
 		- **Extended Surveillance Period:** The legal changes and surveillance measures extend beyond the Olympics, potentially normalising pervasive monitoring practices.
-		- **Implications for Privacy:** The normalisation of these surveillance practices could lead to ongoing privacy infringements and the erosion of civil liberties. There is a concern that once such extensive surveillance is established, it will be difficult to revert to pre-Olympics levels of privacy protection.
+		- **Implications for Privacy:** The normalisation of these surveillance practices [private] lead to ongoing privacy infringements and the erosion of civil liberties. There is a concern that once such extensive surveillance is established, it will be difficult to revert to pre-Olympics levels of privacy protection.
 
 							- #### Monitoring Network Activity
 								- Observing interactions and transactions for potential violations.
@@ -511,8 +355,8 @@ public: true
   - Balance automation benefits against operational costs
 
 		- #### Disproportionate Impact on Startups
-			- The regulatory requirements outlined in SB 1047, such as implementing stringent safety standards, conducting extensive testing and evaluations, and establishing robust monitoring systems, may pose significant challenges for resourceconstrained startups. These compliance costs could create barriers to entry and limit the ability of startups to compete with established industry players who possess greater resources and expertise.
-			- Furthermore, the bill's focus on computational thresholds and capabilities may inadvertently favour large technology companies with access to vast computational resources. This could exacerbate existing inequalities within the AI landscape and hinder the emergence of new and diverse players.
+			- The regulatory requirements outlined in SB 1047, such as implementing stringent safety standards, conducting extensive testing and evaluations, and establishing robust monitoring systems, may pose significant challenges for resourceconstrained startups. These compliance costs [private] create barriers to entry and limit the ability of startups to compete with established industry players who possess greater resources and expertise.
+			- Furthermore, the bill's focus on computational thresholds and capabilities may inadvertently favour large technology companies with access to vast computational resources. This [private] exacerbate existing inequalities within the AI landscape and hinder the emergence of new and diverse players.
 
   - ## Competitor Analysis
 		- Density: Offers people counting and spatial analytics using depth sensors.
@@ -542,7 +386,7 @@ public: true
 		   communication, and blockchain networks, this approach can create a more
 		   inclusive, transparent, and accessible system for environmental
 		   monitoring and stewardship. The successful implementation of this
-		   infrastructure could pave the way for similar initiatives in other
+		   infrastructure [private] pave the way for similar initiatives in other
 		   regions and ecosystems, promoting global collaboration and innovation in
 		   the pursuit of a more sustainable and equitable world.
 
@@ -574,7 +418,7 @@ public: true
 			- ### Post-Olympics Surveillance
 				- The surveillance measures implemented for the Olympics are likely to have lasting effects:
 		- **Extended Surveillance Period:** The legal changes and surveillance measures extend beyond the Olympics, potentially normalising pervasive monitoring practices.
-		- **Implications for Privacy:** The normalisation of these surveillance practices could lead to ongoing privacy infringements and the erosion of civil liberties. There is a concern that once such extensive surveillance is established, it will be difficult to revert to pre-Olympics levels of privacy protection.
+		- **Implications for Privacy:** The normalisation of these surveillance practices [private] lead to ongoing privacy infringements and the erosion of civil liberties. There is a concern that once such extensive surveillance is established, it will be difficult to revert to pre-Olympics levels of privacy protection.
 
 							- #### Monitoring Network Activity
 								- Observing interactions and transactions for potential violations.
@@ -589,8 +433,8 @@ public: true
   - Balance automation benefits against operational costs
 
 		- #### Disproportionate Impact on Startups
-			- The regulatory requirements outlined in SB 1047, such as implementing stringent safety standards, conducting extensive testing and evaluations, and establishing robust monitoring systems, may pose significant challenges for resourceconstrained startups. These compliance costs could create barriers to entry and limit the ability of startups to compete with established industry players who possess greater resources and expertise.
-			- Furthermore, the bill's focus on computational thresholds and capabilities may inadvertently favour large technology companies with access to vast computational resources. This could exacerbate existing inequalities within the AI landscape and hinder the emergence of new and diverse players.
+			- The regulatory requirements outlined in SB 1047, such as implementing stringent safety standards, conducting extensive testing and evaluations, and establishing robust monitoring systems, may pose significant challenges for resourceconstrained startups. These compliance costs [private] create barriers to entry and limit the ability of startups to compete with established industry players who possess greater resources and expertise.
+			- Furthermore, the bill's focus on computational thresholds and capabilities may inadvertently favour large technology companies with access to vast computational resources. This [private] exacerbate existing inequalities within the AI landscape and hinder the emergence of new and diverse players.
 
   - ## Competitor Analysis
 		- Density: Offers people counting and spatial analytics using depth sensors.
@@ -620,7 +464,7 @@ public: true
 		   communication, and blockchain networks, this approach can create a more
 		   inclusive, transparent, and accessible system for environmental
 		   monitoring and stewardship. The successful implementation of this
-		   infrastructure could pave the way for similar initiatives in other
+		   infrastructure [private] pave the way for similar initiatives in other
 		   regions and ecosystems, promoting global collaboration and innovation in
 		   the pursuit of a more sustainable and equitable world.
 
@@ -648,7 +492,7 @@ public: true
 
 			- ### Increased Surveillance
 		- **Extended Surveillance Period:** The legal changes and surveillance measures extend beyond the Olympics, potentially normalising pervasive monitoring practices.
-		- **Implications for Privacy:** The normalisation of these surveillance practices could lead to ongoing privacy infringements and the erosion of civil liberties. There is a concern that once such extensive surveillance is established, it will be difficult to revert to pre-Olympics levels of privacy protection.
+		- **Implications for Privacy:** The normalisation of these surveillance practices [private] lead to ongoing privacy infringements and the erosion of civil liberties. There is a concern that once such extensive surveillance is established, it will be difficult to revert to pre-Olympics levels of privacy protection.
 
   - ## Competitor Analysis
 		- Density: Offers people counting and spatial analytics using depth sensors.

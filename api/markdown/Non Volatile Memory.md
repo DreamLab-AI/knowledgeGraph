@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Non Volatile Memory
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:non-volatile-memory", "@type":"Page", "title":"Non Volatile Memory", "vc:slug":"non-volatile-memory", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:non-volatile-memory",
+  "@type": "Page",
+  "title": "Non Volatile Memory",
+  "vc:slug": "non-volatile-memory",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,39 +1,122 @@
----
-public: true
----
-
-# Ragdoll Physics
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:ragdoll-physics", "@type":"Page", "title":"Ragdoll Physics", "vc:slug":"ragdoll-physics", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:ragdoll-physics",
+  "@type": "Page",
+  "title": "Ragdoll Physics",
+  "vc:slug": "ragdoll-physics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:ragdoll-physics",
-  "@type":"Class",
-  "label":"Ragdoll Physics",
-  "definition":"Ragdoll physics is a procedural animation technique that simulates the limp, physically reactive motion of an articulated character body using a system of rigid bodies connected by constrained joints. Instead of playing pre-authored animation, the character's limbs respond dynamically to gravity, collisions and impulses via a physics engine. It is widely used in games and interactive media to produce believable falls, impacts and death animations.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:physics-based-animation","label":"Physics-Based Animation"}],
-  "relations":{
-    "relatedTo":[{"@id":"urn:ngm:class:inverse-kinematics","label":"Inverse Kinematics"},{"@id":"urn:ngm:class:skeletal-animation","label":"Skeletal Animation"},{"@id":"urn:ngm:class:procedural-animation","label":"Procedural Animation"}],
-    "enables":[{"@id":"urn:ngm:class:character-animation","label":"Character Animation"}],
-    "uses":[{"@id":"urn:ngm:class:rigid-body-dynamics","label":"Rigid Body Dynamics"},{"@id":"urn:ngm:class:collision-detection","label":"Collision Detection"}],
-    "dependsOn":[{"@id":"urn:ngm:class:physics-simulation","label":"Physics Simulation"}],
-    "partOf":[{"@id":"urn:ngm:class:physics-based-animation","label":"Physics-Based Animation"}],
-    "implements":[{"@id":"urn:ngm:class:procedural-animation","label":"Procedural Animation"}],
-    "requires":[{"@id":"urn:ngm:class:rigid-body-dynamics","label":"Rigid Body Dynamics"}],
-    "supports":[{"@id":"urn:ngm:class:game-engine","label":"Game Engine"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:motion-capture","label":"Motion Capture"},{"@id":"urn:ngm:class:skeletal-animation","label":"Skeletal Animation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:inverse-kinematics","label":"Inverse Kinematics"}],
-    "relatesTo_engine":[{"@id":"urn:ngm:class:collision-detection","label":"Collision Detection"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ragdoll-physics",
+  "@type": "Class",
+  "label": "Ragdoll Physics",
+  "definition": "Ragdoll physics is a procedural animation technique that simulates the limp, physically reactive motion of an articulated character body using a system of rigid bodies connected by constrained joints. Instead of playing pre-authored animation, the character's limbs respond dynamically to gravity, collisions and impulses via a physics engine. It is widely used in games and interactive media to produce believable falls, impacts and death animations.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:physics-based-animation",
+      "label": "Physics-Based Animation"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "relatesTo_engine": [
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

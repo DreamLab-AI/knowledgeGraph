@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Customer Support Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,39 +7,138 @@ public: true
   "title": "Customer Support Automation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:dialogue-systems", "vc:label": "Dialogue Systems"},
-    {"@id": "urn:visionflow:linked:chatbot", "vc:label": "Chatbot"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:conversational-ai", "vc:label": "Conversational AI"},
-    {"@id": "urn:visionflow:linked:customer-service-automation", "vc:label": "Customer Service Automation"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:intent-classification", "vc:label": "Intent Classification"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:knowledge-base", "vc:label": "Knowledge Base"},
-    {"@id": "urn:visionflow:linked:sentiment-analysis", "vc:label": "Sentiment Analysis"},
-    {"@id": "urn:visionflow:linked:named-entity-recognition", "vc:label": "Named Entity Recognition"},
-    {"@id": "urn:visionflow:linked:virtual-agent", "vc:label": "Virtual Agent"},
-    {"@id": "urn:visionflow:linked:dialogue-management", "vc:label": "Dialogue Management"},
-    {"@id": "urn:visionflow:linked:robotic-process-automation", "vc:label": "Robotic Process Automation"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:natural-language-understanding", "vc:label": "Natural Language Understanding"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:agentic-rag", "vc:label": "Agentic RAG"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:ai-agent", "vc:label": "AI Agent"},
-    {"@id": "urn:visionflow:linked:multi-turn-dialogue", "vc:label": "Multi-Turn Dialogue"},
-    {"@id": "urn:visionflow:linked:task-oriented-dialogue", "vc:label": "Task-Oriented Dialogue"},
-    {"@id": "urn:visionflow:linked:slot-filling", "vc:label": "Slot Filling"},
-    {"@id": "urn:visionflow:linked:omnichannel", "vc:label": "Omnichannel"},
-    {"@id": "urn:visionflow:linked:escalation-management", "vc:label": "Escalation Management"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:text-to-speech", "vc:label": "Text-to-Speech"},
-    {"@id": "urn:visionflow:linked:business-process-automation", "vc:label": "Business Process Automation"},
-    {"@id": "urn:visionflow:linked:omnichannel-routing", "vc:label": "Omnichannel Routing"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:information-retrieval", "vc:label": "Information Retrieval"},
-    {"@id": "urn:visionflow:linked:dialogue-state-tracking", "vc:label": "Dialogue State Tracking"}
+    {
+      "@id": "urn:visionflow:linked:dialogue-systems",
+      "vc:label": "Dialogue Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:chatbot",
+      "vc:label": "Chatbot"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:conversational-ai",
+      "vc:label": "Conversational AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-service-automation",
+      "vc:label": "Customer Service Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:intent-classification",
+      "vc:label": "Intent Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:named-entity-recognition",
+      "vc:label": "Named Entity Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-agent",
+      "vc:label": "Virtual Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:dialogue-management",
+      "vc:label": "Dialogue Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-process-automation",
+      "vc:label": "Robotic Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-understanding",
+      "vc:label": "Natural Language Understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-rag",
+      "vc:label": "Agentic RAG"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent",
+      "vc:label": "AI Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-turn-dialogue",
+      "vc:label": "Multi-Turn Dialogue"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-oriented-dialogue",
+      "vc:label": "Task-Oriented Dialogue"
+    },
+    {
+      "@id": "urn:visionflow:linked:slot-filling",
+      "vc:label": "Slot Filling"
+    },
+    {
+      "@id": "urn:visionflow:linked:omnichannel",
+      "vc:label": "Omnichannel"
+    },
+    {
+      "@id": "urn:visionflow:linked:escalation-management",
+      "vc:label": "Escalation Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-speech",
+      "vc:label": "Text-to-Speech"
+    },
+    {
+      "@id": "urn:visionflow:linked:business-process-automation",
+      "vc:label": "Business Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:omnichannel-routing",
+      "vc:label": "Omnichannel Routing"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-retrieval",
+      "vc:label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:dialogue-state-tracking",
+      "vc:label": "Dialogue State Tracking"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
@@ -72,7 +166,7 @@ public: true
   "definition": "Customer Support Automation (CSA-Support) is the application of artificial intelligence, natural language processing, and workflow orchestration to the technical and post-sale support domain, automatically handling customer enquiries, diagnosing faults, routing and resolving service tickets, and delivering self-service resolution pathways through chatbots, virtual agents, and agentic AI systems. It specialises the broader Customer Service Automation domain toward helpdesk operations, IT service management, and product support contexts, integrating with ticketing platforms, knowledge bases, diagnostic APIs, and CRM systems to achieve autonomous first-line resolution of technical and product queries at scale.",
   "domain": "ai",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:conversational-ai",
@@ -85,92 +179,110 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:dialogue-systems", "label": "Dialogue Systems"},
-      {"@id": "urn:ngm:class:chatbot", "label": "Chatbot"},
-      {"@id": "urn:ngm:class:intent-classification", "label": "Intent Classification"},
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"}
+      {
+        "@id": "urn:ngm:class:dialogue-systems",
+        "label": "Dialogue Systems"
+      },
+      {
+        "@id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
+        "@id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:agentic-rag", "label": "Agentic RAG"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:self-service-portal", "label": "Self-Service Portal"},
-      {"@id": "urn:ngm:class:intelligent-ticket-routing", "label": "Intelligent Ticket Routing"},
-      {"@id": "urn:ngm:class:omnichannel", "label": "Omnichannel Support"}
+      {
+        "@id": "urn:ngm:class:self-service-portal",
+        "label": "Self-Service Portal"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-ticket-routing",
+        "label": "Intelligent Ticket Routing"
+      },
+      {
+        "@id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel Support"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:dialogue-management", "label": "Dialogue Management"},
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"},
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"},
-      {"@id": "urn:ngm:class:business-process-automation", "label": "Business Process Automation"}
+      {
+        "@id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:customer-support-automation:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:73984444299f725110f52638ed2f9310bce792671cd7f5aff051796554efd416"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Dialogue Systems]]", "resolved": "urn:visionflow:linked:dialogue-systems", "kind": "ResolvedLink"},
-    {"raw": "[[Chatbot]]", "resolved": "urn:visionflow:linked:chatbot", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Conversational AI]]", "resolved": "urn:visionflow:linked:conversational-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Customer Service Automation]]", "resolved": "urn:visionflow:linked:customer-service-automation", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Intent Classification]]", "resolved": "urn:visionflow:linked:intent-classification", "kind": "ResolvedLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Base]]", "resolved": "urn:visionflow:linked:knowledge-base", "kind": "ResolvedLink"},
-    {"raw": "[[Sentiment Analysis]]", "resolved": "urn:visionflow:linked:sentiment-analysis", "kind": "ResolvedLink"},
-    {"raw": "[[Named Entity Recognition]]", "resolved": "urn:visionflow:linked:named-entity-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Virtual Agent]]", "resolved": "urn:visionflow:linked:virtual-agent", "kind": "ResolvedLink"},
-    {"raw": "[[Dialogue Management]]", "resolved": "urn:visionflow:linked:dialogue-management", "kind": "ResolvedLink"},
-    {"raw": "[[Robotic Process Automation]]", "resolved": "urn:visionflow:linked:robotic-process-automation", "kind": "ResolvedLink"},
-    {"raw": "[[Workflow Automation]]", "resolved": "urn:visionflow:linked:workflow-automation", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Understanding]]", "resolved": "urn:visionflow:linked:natural-language-understanding", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic RAG]]", "resolved": "urn:visionflow:linked:agentic-rag", "kind": "ResolvedLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:visionflow:linked:active-learning", "kind": "ResolvedLink"},
-    {"raw": "[[AI Agent]]", "resolved": "urn:visionflow:linked:ai-agent", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Turn Dialogue]]", "resolved": "urn:visionflow:linked:multi-turn-dialogue", "kind": "ResolvedLink"},
-    {"raw": "[[Task-Oriented Dialogue]]", "resolved": "urn:visionflow:linked:task-oriented-dialogue", "kind": "ResolvedLink"},
-    {"raw": "[[Slot Filling]]", "resolved": "urn:visionflow:linked:slot-filling", "kind": "ResolvedLink"},
-    {"raw": "[[Omnichannel]]", "resolved": "urn:visionflow:linked:omnichannel", "kind": "ResolvedLink"},
-    {"raw": "[[Escalation Management]]", "resolved": "urn:visionflow:linked:escalation-management", "kind": "ResolvedLink"},
-    {"raw": "[[Speech Recognition]]", "resolved": "urn:visionflow:linked:speech-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Speech]]", "resolved": "urn:visionflow:linked:text-to-speech", "kind": "ResolvedLink"},
-    {"raw": "[[Business Process Automation]]", "resolved": "urn:visionflow:linked:business-process-automation", "kind": "ResolvedLink"},
-    {"raw": "[[Omnichannel Routing]]", "resolved": "urn:visionflow:linked:omnichannel-routing", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Information Retrieval]]", "resolved": "urn:visionflow:linked:information-retrieval", "kind": "ResolvedLink"},
-    {"raw": "[[Dialogue State Tracking]]", "resolved": "urn:visionflow:linked:dialogue-state-tracking", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -295,7 +407,7 @@ public: true
 
     [[Retrieval-Augmented Generation]] formalises the knowledge access component: given the current hypothesis h and evidence set E, the retrieval function G: (h, E) → D* selects the most relevant documentation passages D* from the technical knowledge corpus D. The generation function G_LLM: (D*, h, E, context) → r produces a response r that is both grounded in D* and contextually appropriate for the current diagnostic state. The faithfulness of r to D* — the degree to which the response is supported by retrieved documentation rather than parametric model knowledge — is the primary quality determinant in technical support contexts where hallucinated instructions can cause product damage.
 
-    [[Active Learning]] optimises the system over time: sessions where b_t fails to converge (escalated cases, sessions ending without resolution confirmation) are flagged for review, and the updated handling guidelines are incorporated into both the knowledge base and the retrieval index, progressively closing the gap between known and novel query performance.
+    [[Active Learning]] optimises the system over time: sessions where b_t fails to converge (escalated cases, sessions ending without resolution confirmation) are flagged for review, and the updated handling guidelines are incorporated into both the knowledge base and the retrieval [private], progressively closing the gap between known and novel query performance.
 
   ## Components / Architecture
     A production Customer Support Automation system integrates the following architectural components, each specialised for the technical depth requirements of post-sale support:
@@ -314,7 +426,7 @@ public: true
 
     - **[[Escalation Management]] and Human Copilot Mode**: Escalation triggers in support automation include: [[Sentiment Analysis]] score crossing a negativity threshold, [[Intent Classification]] confidence falling below an acceptance threshold, defined number of diagnostic steps exhausted without reaching a resolution hypothesis, regulatory vulnerability indicators (financial distress, accessibility needs), detection of a novel issue pattern not covered by existing documentation, and explicit customer request. When escalating, the system generates a structured handoff summary — current diagnostic state, collected slot values, hypotheses confirmed and ruled out, customer emotional state indicator — and presents it in the agent desktop alongside the full conversation transcript. In human copilot mode, the AI shifts from autonomous agent to assistive tool: surfacing relevant [[Knowledge Base]] articles in real time, suggesting next diagnostic steps, highlighting policy constraints relevant to the resolution, and drafting response text for agent review. This mode is particularly valuable during agent onboarding and for handling novel issue types where less experienced agents would otherwise need to escalate further.
 
-    - **[[Active Learning]] and Knowledge Gap Identification**: Conversations that result in human escalation, sessions where the customer rated the bot's resolution as unhelpful, and interactions where retrieved [[Knowledge Base]] content had low relevance scores are automatically flagged for analyst review. Systematic analysis of these flagged conversations identifies knowledge base gaps — product features, error conditions, deployment configurations, or integration scenarios that lack adequate troubleshooting documentation. Analyst-approved resolution paths from human-agent escalations feed structured knowledge article creation workflows. Validated resolution improvements feed [[Active Learning]] retraining pipelines that progressively improve both the [[Retrieval-Augmented Generation]] retrieval index and the [[Large Language Model]] response quality for the affected query patterns.
+    - **[[Active Learning]] and Knowledge Gap Identification**: Conversations that result in human escalation, sessions where the customer rated the bot's resolution as unhelpful, and interactions where retrieved [[Knowledge Base]] content had low relevance scores are automatically flagged for analyst review. Systematic analysis of these flagged conversations identifies knowledge base gaps — product features, error conditions, deployment configurations, or integration scenarios that lack adequate troubleshooting documentation. Analyst-approved resolution paths from human-agent escalations feed structured knowledge article creation workflows. Validated resolution improvements feed [[Active Learning]] retraining pipelines that progressively improve both the [[Retrieval-Augmented Generation]] retrieval [private] and the [[Large Language Model]] response quality for the affected query patterns.
 
   ## Use Cases / Major Verticals
     - **SaaS and Cloud Software**: The dominant use case by ticket volume. Password resets, account configuration queries, onboarding walkthroughs, integration troubleshooting, billing and licence queries. Companies including Zendesk, Intercom, and Freshdesk have deployed their own AI agents on their own support channels as live demonstrations of their platforms.
@@ -332,9 +444,9 @@ public: true
 
     The Dialogue State Tracking Challenge (DSTC) series, running continuously from DSTC1 (2013) through DSTC12 (2024), has been the primary driver of academic progress in [[Dialogue State Tracking]] — the component that maintains the model of what has been established and what remains unknown across conversation turns. DSTC4 and DSTC5 addressed tourist information domains; DSTC8 through DSTC12 progressively introduced knowledge-grounded response generation, multi-domain task completion, API call integration, and finally agentic behaviour assessment — tracking the progression of academic research from NLU evaluation toward end-to-end support system evaluation.
 
-    The BERT pre-training paradigm (Devlin et al., 2019, Google) transformed [[Intent Classification]] from feature-engineered, domain-specific classifiers requiring thousands of labelled examples per intent category to transfer-learned [[Transformer Architecture]] models that could be fine-tuned with tens of examples per category. TOD-BERT (Wu et al., 2020) extended this specifically to task-oriented dialogue corpora, learning dialogue-specific representations that improved slot filling and intent classification for support-style interactions over general-domain pre-training. The GPT-3 paper (Brown et al., 2020, OpenAI) demonstrated few-shot intent classification and response generation from large generative models without task-specific fine-tuning, opening the path to LLM-native support automation that reduced the labelled data requirements by a further order of magnitude.
+    The BERT pre-training paradigm (Devlin et al., 2019, Google) transformed [[Intent Classification]] from feature-engineered, domain-specific classifiers requiring thousands of labelled examples per intent category to transfer-learned [[Transformer Architecture]] models that [private] be fine-tuned with tens of examples per category. TOD-BERT (Wu et al., 2020) extended this specifically to task-oriented dialogue corpora, learning dialogue-specific representations that improved slot filling and intent classification for support-style interactions over general-domain pre-training. The GPT-3 paper (Brown et al., 2020, OpenAI) demonstrated few-shot intent classification and response generation from large generative models without task-specific fine-tuning, opening the path to LLM-native support automation that reduced the labelled data requirements by a further order of magnitude.
 
-    The RAG framework (Lewis et al., 2020, Facebook AI Research) provided the architecturally critical link between [[Large Language Model]] generation and enterprise knowledge grounding — resolving the hallucination problem that made earlier generative models undeployable in support contexts where factually incorrect troubleshooting steps could harm customers. Dense Passage Retrieval (Karpukhin et al., 2020, Facebook AI) provided the semantic retrieval component of RAG, enabling document-level evidence to be retrieved based on semantic similarity rather than keyword matching. ColBERT (Khattab and Zaharia, 2020, Stanford) introduced a more computationally efficient late-interaction model that achieved DPR-comparable retrieval quality at lower inference cost, enabling production deployment at scale.
+    The RAG framework (Lewis et al., 2020, Facebook AI Research) provided the architecturally critical link between [[Large Language Model]] generation and enterprise knowledge grounding — resolving the hallucination problem that made earlier generative models undeployable in support contexts where factually incorrect troubleshooting steps [private] harm customers. Dense Passage Retrieval (Karpukhin et al., 2020, Facebook AI) provided the semantic retrieval component of RAG, enabling document-level evidence to be retrieved based on semantic similarity rather than keyword matching. ColBERT (Khattab and Zaharia, 2020, Stanford) introduced a more computationally efficient late-interaction model that achieved DPR-comparable retrieval quality at lower inference cost, enabling production deployment at scale.
 
     The 2025 RAG Benchmark by Wonderchat provides the first systematic evaluation of RAG systems specifically for customer support knowledge bases, finding that retrieval precision on support documentation is the primary determinant of resolution quality — more important than generation model size or capability — and that document chunking strategy and context window budget allocation are the primary engineering levers for retrieval improvement. This empirical finding has significant implications for the engineering priority order in support automation deployments: knowledge base curation and RAG configuration should be prioritised over model selection.
 
@@ -345,7 +457,7 @@ public: true
 
     **Tiered Automation Strategy**: Production deployments structure automation in tiers matched to query complexity. Tier 0 (complete self-service through a knowledge portal or FAQ interface without conversational interaction) handles the highest-volume, most-standardised queries. Tier 1 automation (conversational bot with [[Retrieval-Augmented Generation]]) handles queries requiring interpretation of customer context and selection from a large knowledge base. Tier 2 automation (agentic system with diagnostic tool integration) handles queries requiring active information gathering and multi-step reasoning. Tier 2 human-with-AI-assist handles complex or novel queries requiring specialist judgement with AI-provided context. Tier 3 specialist human handles the residual high-complexity, high-sensitivity cases. The tiering structure should be driven by containment rate data and resolution quality measurement at each level, with the automation boundary adjusted based on empirical performance rather than assumed capability.
 
-    **Knowledge Base Engineering**: The most under-invested dimension of support automation in typical deployments is knowledge base quality. [[Retrieval-Augmented Generation]] system quality is bounded by the quality of the knowledge corpus it retrieves from: even the most capable [[Large Language Model]] cannot produce accurate resolution guidance when retrieved documentation is outdated, ambiguous, version-unspecific, or missing. Knowledge base engineering disciplines — content auditing, version tagging, structured metadata addition, chunk size optimisation, embedding model selection, index update frequency — are as important as model selection in determining system quality, but receive less attention because they are less visible technically. Dedicated knowledge base quality analysts, with both technical product knowledge and content structuring expertise, are a critical but often undervalued role in support automation teams.
+    **Knowledge Base Engineering**: The most under-invested dimension of support automation in typical deployments is knowledge base quality. [[Retrieval-Augmented Generation]] system quality is bounded by the quality of the knowledge corpus it retrieves from: even the most capable [[Large Language Model]] cannot produce accurate resolution guidance when retrieved documentation is outdated, ambiguous, version-unspecific, or missing. Knowledge base engineering disciplines — content auditing, version tagging, structured metadata addition, chunk size optimisation, embedding model selection, [private] update frequency — are as important as model selection in determining system quality, but receive less attention because they are less visible technically. Dedicated knowledge base quality analysts, with both technical product knowledge and content structuring expertise, are a critical but often undervalued role in support automation teams.
 
     **Hallucination Prevention Architecture**: Support automation contexts have near-zero tolerance for factually incorrect generation (unlike entertainment or creative contexts where approximate generation is acceptable). Hallucination prevention operates at multiple layers: [[Retrieval-Augmented Generation]] grounds generation in retrieved documentation; post-generation fact-checking classifiers verify claims against the retrieved context; source citation requirements make generated claims auditable; confidence thresholds route low-confidence responses to human review rather than delivering them to customers; and regular adversarial testing identifies model failure modes before they reach production. The combination of these layers can reduce effective hallucination rates to below 1% on known-issue queries, though novel query types remain more exposed.
 

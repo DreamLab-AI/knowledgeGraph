@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scene Representation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,10 +20,18 @@ public: true
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:sc-content-and-assets", "label": "Spatial Computing Content and Assets"}
+    {
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Spatial Computing Content and Assets"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:rendering", "label": "Rendering"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ]
   },
   "quality": 0.7
 }

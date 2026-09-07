@@ -1,37 +1,123 @@
----
-public: true
----
-
-# Fairness in Machine Learning
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:fairness-in-machine-learning", "@type":"Page", "title":"Fairness in Machine Learning", "vc:slug":"fairness-in-machine-learning", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:fairness-in-machine-learning",
+  "@type": "Page",
+  "title": "Fairness in Machine Learning",
+  "vc:slug": "fairness-in-machine-learning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:fairness-in-machine-learning",
-  "@type":"Class",
-  "label":"Fairness in Machine Learning",
-  "definition":"Fairness in machine learning is the study and practice of ensuring that learned models do not produce systematically disadvantageous outcomes for individuals or groups defined by protected attributes such as race, gender, or age. It encompasses formal fairness criteria — including demographic parity, equalised odds, and individual fairness — and the techniques used to measure and mitigate disparate impact before, during, or after training. The field is central to responsible and ethical AI, balancing accuracy with equitable treatment.",
-  "domain":"ai",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:responsible-ai","label":"Responsible AI"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:responsible-ai","label":"Responsible AI"},{"@id":"urn:ngm:class:ethical-ai","label":"Ethical AI"}],
-    "supports":[{"@id":"urn:ngm:class:accountability","label":"Accountability"},{"@id":"urn:ngm:class:transparency","label":"Transparency"}],
-    "requires":[{"@id":"urn:ngm:class:training-data","label":"Training Data"}],
-    "dependsOn":[{"@id":"urn:ngm:class:bias","label":"Bias"}],
-    "uses":[{"@id":"urn:ngm:class:model-interpretability","label":"Model Interpretability"},{"@id":"urn:ngm:class:audit","label":"Audit"}],
-    "enables":[{"@id":"urn:ngm:class:algorithmic-fairness","label":"Algorithmic Fairness"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:explainable-ai","label":"Explainable AI"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:bias","label":"Bias"}],
-    "relatedTo":[{"@id":"urn:ngm:class:algorithmic-fairness","label":"Algorithmic Fairness"},{"@id":"urn:ngm:class:explainable-ai","label":"Explainable AI"},{"@id":"urn:ngm:class:governance","label":"Governance"},{"@id":"urn:ngm:class:compliance","label":"Compliance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fairness-in-machine-learning",
+  "@type": "Class",
+  "label": "Fairness in Machine Learning",
+  "definition": "Fairness in machine learning is the study and practice of ensuring that learned models do not produce systematically disadvantageous outcomes for individuals or groups defined by protected attributes such as race, gender, or age. It encompasses formal fairness criteria — including demographic parity, equalised odds, and individual fairness — and the techniques used to measure and mitigate disparate impact before, during, or after training. The field is central to responsible and ethical AI, balancing accuracy with equitable treatment.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:responsible-ai",
+      "label": "Responsible AI"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:algorithmic-fairness","label":"Algorithmic Fairness"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:algorithmic-fairness",
+      "label": "Algorithmic Fairness"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

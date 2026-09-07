@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Runes
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:runes:b4f0a22144cf",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3545c9d3ad395efbb5fb21d0cfa7b6ae950fe5ef9bd25561ce870a561ce2cd75"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Network]]",
-      "resolved": "urn:visionflow:linked:bitcoin-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token]]",
-      "resolved": "urn:visionflow:linked:token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Ordinals]]",
-      "resolved": "urn:visionflow:linked:bitcoin-ordinals",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Runes is a protocol for issuing fungible tokens directly on the Bitcoin blockchain, using the transaction model and recorded in the witness data. It launched at the Bitcoin halving in April 2024.

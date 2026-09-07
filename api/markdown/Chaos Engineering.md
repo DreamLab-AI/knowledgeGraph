@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Chaos Engineering
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:chaos-engineering", "@type":"Page", "title":"Chaos Engineering", "vc:slug":"chaos-engineering", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:chaos-engineering",
+  "@type": "Page",
+  "title": "Chaos Engineering",
+  "vc:slug": "chaos-engineering",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,53 +21,117 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering" }
+    {
+      "@id": "urn:ngm:class:site-reliability-engineering",
+      "label": "Site Reliability Engineering"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:fault-injection", "label": "Fault Injection" },
-      { "@id": "urn:ngm:class:steady-state-hypothesis", "label": "Steady-State Hypothesis" },
-      { "@id": "urn:ngm:class:blast-radius-control", "label": "Blast Radius Control" }
+      {
+        "@id": "urn:ngm:class:fault-injection",
+        "label": "Fault Injection"
+      },
+      {
+        "@id": "urn:ngm:class:steady-state-hypothesis",
+        "label": "Steady-State Hypothesis"
+      },
+      {
+        "@id": "urn:ngm:class:blast-radius-control",
+        "label": "Blast Radius Control"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:resilience-engineering", "label": "Resilience Engineering" }
+      {
+        "@id": "urn:ngm:class:resilience-engineering",
+        "label": "Resilience Engineering"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:chaos-monkey", "label": "Chaos Monkey" },
-      { "@id": "urn:ngm:class:fault-injection", "label": "Fault Injection" }
+      {
+        "@id": "urn:ngm:class:chaos-monkey",
+        "label": "Chaos Monkey"
+      },
+      {
+        "@id": "urn:ngm:class:fault-injection",
+        "label": "Fault Injection"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:observability", "label": "Observability" },
-      { "@id": "urn:ngm:class:monitoring", "label": "Monitoring" }
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance" },
-      { "@id": "urn:ngm:class:high-availability", "label": "High Availability" }
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:resilient-architecture", "label": "Resilient Architecture" },
-      { "@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems" }
+      {
+        "@id": "urn:ngm:class:resilient-architecture",
+        "label": "Resilient Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:incident-response", "label": "Incident Response" }
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery" },
-      { "@id": "urn:ngm:class:game-day", "label": "Game Day Exercise" }
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:game-day",
+        "label": "Game Day Exercise"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:traditional-qa-testing", "label": "Traditional QA Testing" }
+      {
+        "@id": "urn:ngm:class:traditional-qa-testing",
+        "label": "Traditional QA Testing"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:reliability", "label": "Reliability" },
-      { "@id": "urn:ngm:class:service-level-objective", "label": "Service Level Objective" }
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "@id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:chaos-testing", "label": "Chaos Testing" }
+    {
+      "@id": "urn:ngm:class:chaos-testing",
+      "label": "Chaos Testing"
+    }
   ],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

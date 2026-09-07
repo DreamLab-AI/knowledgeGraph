@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RB-1007-trajectory-generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,52 @@ public: true
   "definition": "RB-1007 Trajectory Generation is a robotics knowledge-base entry cataloguing the algorithms, mathematical representations, and computational methods used to synthesise smooth, dynamically feasible motion trajectories for robotic systems, specifying how a robot must move through configuration space or task space from an initial to a goal state while satisfying kinematic, dynamic, and environmental constraints. It covers polynomial spline interpolation, time-optimal trajectory planning, jerk-limited profiles, and learned trajectory generation approaches, forming the bridge between high-level task planning and low-level joint control execution.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:trajectory-generation", "label": "Trajectory Generation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:trajectory-generation",
+      "label": "Trajectory Generation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
-      {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"},
-      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"}
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ]
   },
   "quality": 0.8

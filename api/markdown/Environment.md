@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -66,42 +61,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:environment:ba5285161ba6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f315c50c02a38cf61675529e96bbe5102e5907be5a2651faf0b55bd9169eef12"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scene Understanding]]",
-      "resolved": "urn:visionflow:linked:scene-understanding",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Environment is the external context in which an agent or system operates, providing inputs and responding to actions, a central concept in robotics and reinforcement learning.

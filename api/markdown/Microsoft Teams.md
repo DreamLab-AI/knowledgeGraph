@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Microsoft Teams
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:microsoft-teams:9088a7e8c4f7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b5867f2b87ecc8c29bb811538d4a2f083db0ab2a0391b1130f32feff1f8c5f98"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:linked:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Communication Protocols]]",
-      "resolved": "urn:visionflow:linked:communication-protocols",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Microsoft]]",
-      "resolved": "urn:visionflow:linked:microsoft",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Collaboration Tools]]",
-      "resolved": "urn:visionflow:linked:collaboration-tools",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.microsoft.com/en-us/microsoft-teams/group-chat-software]]",
-      "resolved": "urn:visionflow:linked:https-www-microsoft-com-en-us-microsoft-teams-group-chat-software",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://learn.microsoft.com/en-us/microsoftteams/]]",
-      "resolved": "urn:visionflow:linked:https-learn-microsoft-com-en-us-microsoftteams",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Microsoft Teams is a collaboration application combining chat, video meetings, file sharing and application integration within the Microsoft 365 suite.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Consumer AI Adoption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "consumer-ai-adoption",
   "title": "Consumer AI Adoption",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Market Dynamics", "Suno"],
+  "vc:outboundWikilinks": [
+    "AI Market Dynamics",
+    "Suno"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}, {"@id": "urn:ngm:class:ai-market-dynamics", "label": "AI Market Dynamics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-market-dynamics",
+        "label": "AI Market Dynamics"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

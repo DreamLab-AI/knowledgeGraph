@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Platform Middleware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,7 +64,10 @@ public: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:software-infrastructure", "label": "Software Infrastructure"}
+      {
+        "@id": "urn:ngm:class:software-infrastructure",
+        "label": "Software Infrastructure"
+      }
     ]
   },
   "quality": 0.35,
@@ -80,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:platform-middleware:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d1eeeb7371fac1de76f2202d41238bcb5e08c2719a309a1ec1fb851d5985d426"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:software-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:system-interoperability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A software layer that connects operating systems, applications, and services by providing common capabilities such as API management, message routing, authentication, and data integration to enable seamless communication between diverse systems.

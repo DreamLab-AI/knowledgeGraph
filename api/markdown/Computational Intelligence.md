@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computational Intelligence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,48 +7,174 @@ public: true
   "title": "Computational Intelligence",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:fuzzy-logic", "vc:label": "Fuzzy Logic"},
-    {"@id": "urn:visionflow:linked:evolutionary-algorithm", "vc:label": "Evolutionary Algorithm"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:optimisation-algorithm", "vc:label": "Optimization Algorithm"},
-    {"@id": "urn:visionflow:linked:reasoning", "vc:label": "Reasoning"},
-    {"@id": "urn:visionflow:linked:swarm-intelligence", "vc:label": "Swarm Intelligence"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:deep-neural-network", "vc:label": "Deep Neural Network"},
-    {"@id": "urn:visionflow:linked:deep-reinforcement-learning", "vc:label": "Deep Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:autonomous-systems", "vc:label": "Autonomous Systems"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:pattern-recognition", "vc:label": "Pattern Recognition"},
-    {"@id": "urn:visionflow:linked:control-systems", "vc:label": "Control Systems"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:cognitive-ai", "vc:label": "Cognitive AI"},
-    {"@id": "urn:visionflow:linked:computational-creativity", "vc:label": "Computational Creativity"},
-    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:stochastic-gradient-descent", "vc:label": "Stochastic Gradient Descent"},
-    {"@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:predictive-analytics", "vc:label": "Predictive Analytics"},
-    {"@id": "urn:visionflow:linked:decision-support", "vc:label": "Decision Support"},
-    {"@id": "urn:visionflow:linked:intelligent-automation", "vc:label": "Intelligent Automation"},
-    {"@id": "urn:visionflow:linked:ai-research-area", "vc:label": "AI Research Area"},
-    {"@id": "urn:visionflow:linked:symbolic-ai", "vc:label": "Symbolic AI"},
-    {"@id": "urn:visionflow:linked:rule-based-systems", "vc:label": "Rule-Based Systems"},
-    {"@id": "urn:visionflow:linked:adversarial-machine-learning", "vc:label": "Adversarial Machine Learning"},
-    {"@id": "urn:visionflow:linked:bayesian-deep-learning", "vc:label": "Bayesian Deep Learning"},
-    {"@id": "urn:visionflow:linked:applied-machine-learning", "vc:label": "Applied Machine Learning"},
-    {"@id": "urn:visionflow:linked:fairness-in-machine-learning", "vc:label": "Fairness in Machine Learning"},
-    {"@id": "urn:visionflow:linked:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:iso-iec-22989-2022", "vc:label": "ISO/IEC 22989:2022"}
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:fuzzy-logic",
+      "vc:label": "Fuzzy Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-algorithm",
+      "vc:label": "Evolutionary Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation-algorithm",
+      "vc:label": "Optimization Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:swarm-intelligence",
+      "vc:label": "Swarm Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-neural-network",
+      "vc:label": "Deep Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-reinforcement-learning",
+      "vc:label": "Deep Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:pattern-recognition",
+      "vc:label": "Pattern Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-systems",
+      "vc:label": "Control Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-ai",
+      "vc:label": "Cognitive AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-creativity",
+      "vc:label": "Computational Creativity"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-gradient-descent",
+      "vc:label": "Stochastic Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:predictive-analytics",
+      "vc:label": "Predictive Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-support",
+      "vc:label": "Decision Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-automation",
+      "vc:label": "Intelligent Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research-area",
+      "vc:label": "AI Research Area"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:rule-based-systems",
+      "vc:label": "Rule-Based Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:adversarial-machine-learning",
+      "vc:label": "Adversarial Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-deep-learning",
+      "vc:label": "Bayesian Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:applied-machine-learning",
+      "vc:label": "Applied Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness-in-machine-learning",
+      "vc:label": "Fairness in Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-22989-2022",
+      "vc:label": "ISO/IEC 22989:2022"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -69,119 +190,167 @@ public: true
   "domain": "ai",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fuzzy-logic", "label": "Fuzzy Logic"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"},
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"},
-      {"@id": "urn:ngm:class:deep-reinforcement-learning", "label": "Deep Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous Systems"},
-      {"@id": "urn:ngm:class:intelligent-automation", "label": "Intelligent Automation"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based Systems"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"},
-      {"@id": "urn:ngm:class:computational-creativity", "label": "Computational Creativity"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:bayesian-deep-learning", "label": "Bayesian Deep Learning"}
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:computational-creativity",
+        "label": "Computational Creativity"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control Systems"},
-      {"@id": "urn:ngm:class:applied-machine-learning", "label": "Applied Machine Learning"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control Systems"
+      },
+      {
+        "@id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computational-intelligence:b3e8d2a5f1c7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:computational-intelligence"},
-  "vc:resolutions": [
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:ngm:class:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:ngm:class:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Fuzzy Logic]]", "resolved": "urn:ngm:class:fuzzy-logic", "kind": "StubLink"},
-    {"raw": "[[Evolutionary Algorithm]]", "resolved": "urn:ngm:class:evolutionary-algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:ngm:class:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:ngm:class:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:ngm:class:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Optimisation Algorithm]]", "resolved": "urn:ngm:class:optimisation-algorithm", "kind": "StubLink"},
-    {"raw": "[[Reasoning]]", "resolved": "urn:ngm:class:reasoning", "kind": "StubLink"},
-    {"raw": "[[Swarm Intelligence]]", "resolved": "urn:ngm:class:swarm-intelligence", "kind": "StubLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:ngm:class:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Neural Network]]", "resolved": "urn:ngm:class:deep-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Reinforcement Learning]]", "resolved": "urn:ngm:class:deep-reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:ngm:class:robotics", "kind": "ResolvedLink"},
-    {"raw": "[[Autonomous Systems]]", "resolved": "urn:ngm:class:autonomous-system", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:ngm:class:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:ngm:class:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Pattern Recognition]]", "resolved": "urn:ngm:class:pattern-recognition", "kind": "StubLink"},
-    {"raw": "[[Control Systems]]", "resolved": "urn:ngm:class:control-system", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:ngm:class:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Cognitive AI]]", "resolved": "urn:ngm:class:cognitive-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Computational Creativity]]", "resolved": "urn:ngm:class:computational-creativity", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:ngm:class:machine-learning-discipline", "kind": "ResolvedLink"},
-    {"raw": "[[Training Data]]", "resolved": "urn:ngm:class:training-data", "kind": "ResolvedLink"},
-    {"raw": "[[Backpropagation]]", "resolved": "urn:ngm:class:backpropagation", "kind": "ResolvedLink"},
-    {"raw": "[[Stochastic Gradient Descent]]", "resolved": "urn:ngm:class:stochastic-gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer]]", "resolved": "urn:ngm:class:transformer", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:ngm:class:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:ngm:class:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Predictive Analytics]]", "resolved": "urn:ngm:class:predictive-analytics", "kind": "ResolvedLink"},
-    {"raw": "[[Decision Support]]", "resolved": "urn:ngm:class:decision-support", "kind": "StubLink"},
-    {"raw": "[[Intelligent Automation]]", "resolved": "urn:ngm:class:intelligent-automation", "kind": "StubLink"},
-    {"raw": "[[AI Research Area]]", "resolved": "urn:ngm:class:ai-research-area", "kind": "StubLink"},
-    {"raw": "[[Symbolic AI]]", "resolved": "urn:ngm:class:symbolic-ai", "kind": "StubLink"},
-    {"raw": "[[Rule-Based Systems]]", "resolved": "urn:ngm:class:rule-based-systems", "kind": "StubLink"},
-    {"raw": "[[Adversarial Machine Learning]]", "resolved": "urn:ngm:class:adversarial-machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Bayesian Deep Learning]]", "resolved": "urn:ngm:class:bayesian-deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Applied Machine Learning]]", "resolved": "urn:ngm:class:applied-machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Fairness in Machine Learning]]", "resolved": "urn:ngm:class:fairness-in-machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:ngm:class:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[ISO/IEC 22989:2022]]", "resolved": "urn:ngm:class:iso-iec-22989-2022", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -293,7 +462,7 @@ public: true
         ObjectSomeValuesFrom(ai:supports ai:ComputationalCreativity))
   ## About
     - The term "Computational Intelligence" was formalised by James Bezdek in 1994 as an umbrella designating biologically motivated, adaptive computing methods distinct from classical [[Symbolic AI]] and its deductive inference tradition. Bezdek's definition emphasised three key characteristics: (i) CI methods learn from data and experience rather than from explicitly programmed rules; (ii) they tolerate imprecision, uncertainty, and partial truth in ways that classical logic cannot; and (iii) they derive solutions through iterative adaptation — learning, evolution, or fuzzy inference — rather than through deductive chains from axioms. This framing distinguished CI from the contemporaneous AI mainstream dominated by expert systems, symbolic planners, and logic-based theorem provers, which were encountering brittleness and knowledge-acquisition bottlenecks that would drive the field toward statistical and learning-based methods.
-    - The three founding paradigms had independent intellectual origins that predate the field's formal naming by decades. Frank Rosenblatt's perceptron convergence theorem (1958) established the theoretical basis for [[Neural Network]] computation, demonstrating that a simple network of threshold units could be trained by a local update rule to correctly classify linearly separable patterns. Minsky and Papert's Perceptrons (1969) critiqued the perceptron's limitations, temporarily suppressing neural network research until Rumelhart, Hinton and Williams (1986) showed that multi-layer networks trained by [[Backpropagation]] could learn non-linearly separable representations — launching the connectionist revolution. LeCun et al. (1989) applied backpropagation to [[Convolutional Neural Network]]s for handwritten digit recognition, pioneering the visual pattern recognition applications that would become central to contemporary AI.
+    - The three founding paradigms had independent intellectual origins that predate the field's formal naming by decades. Frank Rosenblatt's perceptron convergence theorem (1958) established the theoretical basis for [[Neural Network]] computation, demonstrating that a simple network of threshold units [private] be trained by a local update rule to correctly classify linearly separable patterns. Minsky and Papert's Perceptrons (1969) critiqued the perceptron's limitations, temporarily suppressing neural network research until Rumelhart, Hinton and Williams (1986) showed that multi-layer networks trained by [[Backpropagation]] [private] learn non-linearly separable representations — launching the connectionist revolution. LeCun et al. (1989) applied backpropagation to [[Convolutional Neural Network]]s for handwritten digit recognition, pioneering the visual pattern recognition applications that would become central to contemporary AI.
     - Lotfi Zadeh's fuzzy sets (1965) introduced the mathematics of approximate [[Reasoning]] through graded membership functions, allowing concepts like "tall", "warm", or "fast" to be represented as continuous rather than binary predicates. Fuzzy inference rules combine linguistic antecedents (IF temperature IS high AND load IS medium) with linguistic consequents (THEN speed IS moderate), enabling smooth interpolation between discrete categories. The mathematical properties of fuzzy systems — particularly their universal approximation capability and their resistance to the curse of dimensionality for rule-based systems — have made them central to embedded [[Control Systems]] where classical methods require prohibitively complex rule tables.
     - John Holland's schemata theorem (1975) established theoretical foundations for genetic algorithms as [[Optimisation Algorithm]]s that can efficiently search high-dimensional spaces without gradient information. Holland showed that short, fit, low-order schemata — building blocks of well-adapted solutions — receive exponentially increasing representation across successive generations, explaining why genetic algorithms can efficiently locate near-optimal solutions. [[Evolutionary Algorithm]]s maintain populations of candidate solutions and iteratively apply selection (favouring higher-fitness individuals), crossover (combining partial solutions from two parents), and mutation (introducing stochastic variation to maintain diversity), progressively improving population-level fitness toward a specified objective. Unlike gradient-based optimisers, evolutionary methods require only the ability to evaluate a candidate solution's fitness, making them applicable to combinatorial, black-box, and noisy objective functions.
     - These three streams converged into an organised field through the inaugural IEEE Neural Networks Council (1990) — later renamed the IEEE Computational Intelligence Society (IEEE CIS) in 2003 — and dedicated publication venues including IEEE Transactions on Neural Networks (1990), IEEE Transactions on Fuzzy Systems (1993), and IEEE Transactions on Evolutionary Computation (1997). The IEEE World Congress on Computational Intelligence (WCCI), first held in 1994 in Orlando and combining the three flagship conferences (IJCNN, FUZZ-IEEE, CEC), established the interdisciplinary identity of CI. WCCI 2026 was held in Maastricht, Netherlands, 21–26 June 2026 — the week of this entry's creation — with themes including edge AI, CI for scientific discovery, trustworthy and [[Explainable AI]], and CI for sustainability.

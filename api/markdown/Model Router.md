@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Router
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "model-router",
   "title": "Model Router",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Inference Optimization", "Meta AI Labs", "Switchboard"],
+  "vc:outboundWikilinks": [
+    "Inference Optimization",
+    "Meta AI Labs",
+    "Switchboard"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:inference", "label": "Inference"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interactive Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -93,32 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interactive-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4445b429be88ef9202851c306d216e85fa9c541946ae9e9b7bf844ca414ef9cb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A machine learning paradigm in which a model interactively queries a user, oracle, or environment to obtain labels or feedback for the most informative examples, iteratively improving performance while minimising annotation cost. Interactive learning encompasses active learning, online learning, and human-in-the-loop approaches that tighten the loop between model uncertainty and human input.

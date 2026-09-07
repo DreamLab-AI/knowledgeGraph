@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Vanishing Gradient Problem
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:vanishing-gradient-problem", "@type":"Page", "title":"Vanishing Gradient Problem", "vc:slug":"vanishing-gradient-problem", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:vanishing-gradient-problem",
+  "@type": "Page",
+  "title": "Vanishing Gradient Problem",
+  "vc:slug": "vanishing-gradient-problem",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

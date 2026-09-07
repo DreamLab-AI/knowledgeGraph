@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sensitivity Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Sensitivity analysis is the study of how variation in the output of a model or calculation can be attributed to variation in its inputs and parameters. It quantifies which factors drive results, identifies fragile assumptions, and supports robustness checks across deterministic and probabilistic models. It is widely used in risk assessment, optimisation, and the calibration of analytics pipelines.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:calculation-parameters", "label": "Calculation Parameters"}, {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:calculation-parameters",
+        "label": "Calculation Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      }
+    ]
   },
   "quality": 0.72
 }

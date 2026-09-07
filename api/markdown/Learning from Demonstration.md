@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Learning from Demonstration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:learning-from-demonstration:3fc62ebecde5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:44831a868415a0f7fbc1fb570e5bd794f2689f1f95779dd051224854537cfac1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Imitation Learning]]",
-      "resolved": "urn:visionflow:linked:imitation-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Offline Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:offline-reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Learning from demonstration is an approach in which an agent acquires behaviour by observing examples performed by a teacher. It is used to bootstrap policies in robotics and control without hand-specified reward functions.

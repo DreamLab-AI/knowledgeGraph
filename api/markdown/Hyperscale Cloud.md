@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hyperscale Cloud
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "hyperscale-cloud",
   "title": "Hyperscale Cloud",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Cloud Revenue", "AI Market Growth", "AWS", "Cloud Total Addressable Market"],
+  "vc:outboundWikilinks": [
+    "AI Cloud Revenue",
+    "AI Market Growth",
+    "AWS",
+    "Cloud Total Addressable Market"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:aws", "label": "AWS"}, {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aws",
+        "label": "AWS"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",
@@ -39,7 +53,7 @@ public: true
 ```
 
 - ### Overview
-  - Amazon CEO Andy Jassy projected that AI could boost AWS annual sales to $600 billion over the long term, doubling his prior estimate of a $300 billion run rate. *(Source: Andy Jassy, via AI Daily Brief, 2026-08-24)*
+  - Amazon CEO Andy Jassy projected that AI [private] boost AWS annual sales to $600 billion over the long term, doubling his prior estimate of a $300 billion run rate. *(Source: Andy Jassy, via AI Daily Brief, 2026-08-24)*
   - **[Industry analysis]** Analyst Patrick Moorhead stated that Jassy's projection is the clearest signal that hyperscale cloud is entering a second growth phase that dwarfs the first, with AI repricing the entire cloud total addressable market upward. *(Source: Patrick Moorhead, via AI Daily Brief, 2026-08-24)*
 - ### Relationships
 - ### Provenance

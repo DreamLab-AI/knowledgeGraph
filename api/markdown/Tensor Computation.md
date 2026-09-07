@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Tensor Computation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,39 +20,86 @@ public: true
   "definition": "Tensor computation is the set of mathematical operations performed on multi-dimensional arrays (tensors) that form the core numerical substrate of modern machine learning. These operations include contraction, element-wise arithmetic, broadcasting, decomposition, and automatic differentiation, typically executed on specialised hardware such as GPUs or TPUs. Tensor computation frameworks provide graph-based or eager execution models that map operations to hardware acceleration primitives.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:tensor", "label": "Tensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:tensor",
+      "label": "Tensor"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:python-programming-language", "label": "Python Programming Language"},
-      {"@id": "urn:ngm:class:statistical-analysis", "label": "Statistical Analysis"}
+      {
+        "@id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:fourier-transform", "label": "Fourier Transform"},
-      {"@id": "urn:ngm:class:euclidean-distance", "label": "Euclidean Distance"}
+      {
+        "@id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      },
+      {
+        "@id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-modelling", "label": "Data Modelling"},
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
     ]
   },
   "quality": 0.62,

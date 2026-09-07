@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Northern Powerhouse
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -141,57 +136,12 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:northern-powerhouse:28513c4615b3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c6f41fce8f11f02876eb366d4a4828222b5dab253e3fef6ad933c8dad0f70702"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Economy]]",
-      "resolved": "urn:visionflow:linked:digital-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Manchester]]",
-      "resolved": "urn:visionflow:linked:manchester",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Leeds]]",
-      "resolved": "urn:visionflow:linked:leeds",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sheffield]]",
-      "resolved": "urn:visionflow:linked:sheffield",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Entity]]",
-      "resolved": "urn:visionflow:linked:entity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - The **Northern Powerhouse** is a United Kingdom government economic policy framework designed to rebalance national prosperity by co-ordinating investment, devolved governance, and infrastructure development across northern England. It encompasses major urban centres including [[Manchester]], [[Leeds]], [[Sheffield]], [[Newcastle upon Tyne]], and [[Liverpool]], and operates through mechanisms such as [[City Deal]] agreements, [[Mayoral Combined Authority]] structures, and the [[Northern Powerhouse Rail]] programme. The initiative directly engages with the long-standing [[North-South Divide]] in United Kingdom economic output and seeks to stimulate growth through targeted [[Research and Development]] investment and [[Inward Investment]] promotion.
 
 - ### Overview
   - The Northern Powerhouse concept was articulated by then-Chancellor George Osborne in a 2014 speech in Manchester and codified through successive government spending reviews and devolution agreements.
-  - Its central thesis is that the combined economic mass of northern English cities — if better connected and more autonomously governed — could rival the economic weight of [[London]] and the [[Golden Triangle]] of London, Oxford, and Cambridge.
+  - Its central thesis is that the combined economic mass of northern English cities — if better connected and more autonomously governed — [private] rival the economic weight of [[London]] and the [[Golden Triangle]] of London, Oxford, and Cambridge.
   - The policy draws on the precedent of German Länder and other federal models where regional governance units hold meaningful fiscal and planning powers.
   - Unlike a single-city policy, it operates as a polycentric network: no single northern city anchors it, but [[Manchester]] and its [[Greater Manchester Combined Authority]] became the earliest and most advanced example of [[Fiscal Devolution]] under the model.
   - The programme sits formally within the broader [[UK Industrial Strategy]] and later the [[Levelling Up]] agenda announced under subsequent governments, making it a durable if evolving policy framework.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Classical Planning
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,38 +8,134 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:automated-planning", "vc:label": "Automated Planning"},
-    {"@id": "urn:visionflow:linked:state-space-search", "vc:label": "State Space Search"},
-    {"@id": "urn:visionflow:linked:heuristic-search", "vc:label": "Heuristic Search"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:strips", "vc:label": "STRIPS"},
-    {"@id": "urn:visionflow:linked:pddl", "vc:label": "PDDL"},
-    {"@id": "urn:visionflow:linked:constraint-satisfaction", "vc:label": "Constraint Satisfaction"},
-    {"@id": "urn:visionflow:linked:graph-search", "vc:label": "Graph Search"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:markov-decision-process", "vc:label": "Markov Decision Process"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:motion-planning", "vc:label": "Motion Planning"},
-    {"@id": "urn:visionflow:linked:game-playing", "vc:label": "Game Playing"},
-    {"@id": "urn:visionflow:linked:agent", "vc:label": "Agent"},
-    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
-    {"@id": "urn:visionflow:linked:pathfinding", "vc:label": "Pathfinding"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:a-star-algorithm", "vc:label": "A Star Algorithm"},
-    {"@id": "urn:visionflow:linked:hierarchical-task-network", "vc:label": "Hierarchical Task Network"},
-    {"@id": "urn:visionflow:linked:temporal-planning", "vc:label": "Temporal Planning"},
-    {"@id": "urn:visionflow:linked:formal-logic", "vc:label": "Formal Logic"},
-    {"@id": "urn:visionflow:linked:sat-solving", "vc:label": "SAT Solving"},
-    {"@id": "urn:visionflow:linked:search-algorithm", "vc:label": "Search Algorithm"},
-    {"@id": "urn:visionflow:linked:logistics-optimisation", "vc:label": "Logistics Optimisation"},
-    {"@id": "urn:visionflow:linked:autonomous-system", "vc:label": "Autonomous System"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:task-automation", "vc:label": "Task Automation"},
-    {"@id": "urn:visionflow:linked:multi-agent-coordination", "vc:label": "Multi-Agent Coordination"},
-    {"@id": "urn:visionflow:linked:planning-and-scheduling", "vc:label": "Planning and Scheduling"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:automated-planning",
+      "vc:label": "Automated Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-space-search",
+      "vc:label": "State Space Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-search",
+      "vc:label": "Heuristic Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:strips",
+      "vc:label": "STRIPS"
+    },
+    {
+      "@id": "urn:visionflow:linked:pddl",
+      "vc:label": "PDDL"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-satisfaction",
+      "vc:label": "Constraint Satisfaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-search",
+      "vc:label": "Graph Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:markov-decision-process",
+      "vc:label": "Markov Decision Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-playing",
+      "vc:label": "Game Playing"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent",
+      "vc:label": "Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation",
+      "vc:label": "Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:pathfinding",
+      "vc:label": "Pathfinding"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:a-star-algorithm",
+      "vc:label": "A Star Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:hierarchical-task-network",
+      "vc:label": "Hierarchical Task Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal-planning",
+      "vc:label": "Temporal Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-logic",
+      "vc:label": "Formal Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:sat-solving",
+      "vc:label": "SAT Solving"
+    },
+    {
+      "@id": "urn:visionflow:linked:search-algorithm",
+      "vc:label": "Search Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:logistics-optimisation",
+      "vc:label": "Logistics Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-system",
+      "vc:label": "Autonomous System"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-automation",
+      "vc:label": "Task Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-coordination",
+      "vc:label": "Multi-Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-and-scheduling",
+      "vc:label": "Planning and Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ]
 }
 ```

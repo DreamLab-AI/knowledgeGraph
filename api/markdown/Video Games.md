@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Video Games
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "Video games are interactive electronic entertainment software in which players engage with a virtual environment through input devices, receiving real-time audiovisual feedback rendered by a game engine. They span genres from narrative role-playing games to competitive multiplayer shooters, sports simulations, and puzzle games, delivered across platforms including dedicated consoles, personal computers, mobile devices, and cloud streaming services. Video games are the largest entertainment sector by revenue globally, intersecting with AI, virtual reality, blockchain-based asset ownership, and esports as a spectator sport.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-entertainment", "label": "Digital Entertainment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-entertainment",
+      "label": "Digital Entertainment"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"},
-      {"@id": "urn:ngm:class:ai-in-games", "label": "AI in Games"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:immersive-gaming", "label": "Immersive Gaming"},
-      {"@id": "urn:ngm:class:digital-gaming", "label": "Digital Gaming"},
-      {"@id": "urn:ngm:class:blockchain-gaming", "label": "Blockchain Gaming"},
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"}
+      {
+        "@id": "urn:ngm:class:immersive-gaming",
+        "label": "Immersive Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:digital-gaming",
+        "label": "Digital Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"},
-      {"@id": "urn:ngm:class:immersive-entertainment", "label": "Immersive Entertainment"}
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +88,3 @@ public: true
   - Video games generated approximately $184 billion in global revenue in 2023, exceeding the combined revenues of the film and music industries. Mobile gaming accounts for approximately 50% of the total, driven by free-to-play monetisation models with in-app purchases. The medium has cultural influence beyond entertainment: games like Minecraft have been integrated into educational curricula for teaching programming and spatial reasoning; simulation games are used for military training (VBS, Steel Beasts) and surgical skills development; and esports — competitive gaming events — draw live audiences of tens of thousands and streaming audiences of millions, with prize pools exceeding $40 million for top tournaments.
 
   - By 2024-2025, AI is reshaping video game production and play in multiple dimensions: generative AI tools for concept art, texture generation, and dialogue writing are accelerating content production; procedural AI-driven narrative systems are being integrated into games to allow player-driven story branches that no longer require each line to be pre-authored. Cloud gaming services (Xbox Cloud Gaming, NVIDIA GeForce NOW, PlayStation Remote Play) are reducing hardware barriers by streaming rendered frames from data centres. The metaverse convergence is blurring the distinction between games and social platforms, with Fortnite hosting live concerts for tens of millions of players simultaneously. [[Blockchain Gaming]] and play-to-earn models proved volatile in 2021-22 but are being re-examined with more sustainable tokenomics in 2024-25.
-

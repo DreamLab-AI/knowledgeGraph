@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Business Logic Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,47 @@ public: true
   "definition": "The Business Logic Layer (BLL) is the architectural tier in a multi-tier application that encapsulates domain rules, workflows, and computations specific to the problem domain, sitting between the presentation layer and the data access layer. It is responsible for validating inputs, enforcing business constraints, orchestrating data transformations, and coordinating service calls, ensuring that domain invariants are maintained independently of user interface or persistence concerns.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:service-layer", "label": "Service Layer"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:service-layer",
+      "label": "Service Layer"
+    }
+  ],
   "relations": {
-    "dependsOn": [{"@id": "urn:ngm:class:data-layer", "label": "Data Layer"}],
-    "supports": [{"@id": "urn:ngm:class:application-layer", "label": "Application Layer"}],
-    "uses": [{"@id": "urn:ngm:class:middleware", "label": "Middleware"}],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
     ],
-    "enables": [{"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}]
+    "supports": [
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -54,4 +80,3 @@ public: true
   - In the broader enterprise ecosystem, the Business Logic Layer has been realised through EJB session beans, .NET application servers, Django views and serialisers, and Spring Service components. Rule engines such as Drools and IBM ODM externalise complex decision tables from code, allowing business analysts to modify rules without developer intervention. API gateways and orchestration platforms (Apache Camel, MuleSoft) represent the BLL at integration level, routing and transforming messages according to business routing rules across system boundaries.
 
   - From 2024 onwards, the Business Logic Layer concept is being revisited in the context of AI-augmented applications and serverless architectures. Large language model integrations introduce probabilistic "soft" business logic — reasoning over unstructured inputs — alongside deterministic rule enforcement, requiring hybrid architectures that layer LLM inference atop conventional rule sets. Serverless functions increasingly host atomic business logic units, challenging the monolithic BLL pattern and favouring event-driven, choreography-based designs. Despite these shifts, the core principle — isolating domain rules from infrastructure concerns — remains architecturally canonical.
-

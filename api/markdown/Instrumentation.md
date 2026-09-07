@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Instrumentation
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:instrumentation", "@type": "Page", "title": "Instrumentation", "vc:slug": "instrumentation", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:instrumentation",
+  "@type": "Page",
+  "title": "Instrumentation",
+  "vc:slug": "instrumentation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

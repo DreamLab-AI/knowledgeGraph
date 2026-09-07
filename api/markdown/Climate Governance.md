@@ -1,61 +1,122 @@
----
-public: true
----
-
-# Climate Governance
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:climate-governance", "@type":"Page", "title":"Climate Governance", "vc:slug":"climate-governance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:climate-governance",
+  "@type": "Page",
+  "title": "Climate Governance",
+  "vc:slug": "climate-governance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:climate-governance",
-  "@type":"Class",
-  "label":"Climate Governance",
-  "definition":"Climate governance is the system of institutions, policies, agreements and accountability mechanisms through which societies steer collective action on climate change. It spans international treaties, national legislation, sub-national and corporate commitments, and the monitoring, reporting and verification arrangements that hold actors to their pledges. By coordinating mitigation and adaptation across scales, climate governance translates scientific assessment into binding and voluntary obligations. It draws on instruments such as carbon pricing, emissions targets and disclosure regimes to align economic activity with environmental limits.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:paris-agreement","label":"Paris Agreement"},
-      {"@id":"urn:ngm:class:esg-reporting","label":"ESG Reporting System"},
-      {"@id":"urn:ngm:class:sustainability-reporting","label":"Sustainability Reporting"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:climate-governance",
+  "@type": "Class",
+  "label": "Climate Governance",
+  "definition": "Climate governance is the system of institutions, policies, agreements and accountability mechanisms through which societies steer collective action on climate change. It spans international treaties, national legislation, sub-national and corporate commitments, and the monitoring, reporting and verification arrangements that hold actors to their pledges. By coordinating mitigation and adaptation across scales, climate governance translates scientific assessment into binding and voluntary obligations. It draws on instruments such as carbon pricing, emissions targets and disclosure regimes to align economic activity with environmental limits.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting System"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:climate-policy","label":"Climate Policy"},
-      {"@id":"urn:ngm:class:net-zero","label":"Net Zero"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:climate-policy",
+        "label": "Climate Policy"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:decarbonisation","label":"Decarbonisation Strategy"},
-      {"@id":"urn:ngm:class:carbon-footprint","label":"Carbon Footprint"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:net-zero","label":"Net Zero"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:greenhouse-gas-protocol","label":"Greenhouse Gas Protocol"},
-      {"@id":"urn:ngm:class:life-cycle-assessment","label":"Life Cycle Assessment"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:greenhouse-gas-protocol",
+        "label": "Greenhouse Gas Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:scope-3-emissions","label":"Scope 3 Emissions"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:governance","label":"Governance"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:circular-economy","label":"Circular Economy"},
-      {"@id":"urn:ngm:class:renewable-energy","label":"Renewable Energy"},
-      {"@id":"urn:ngm:class:climate-policy","label":"Climate Policy"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:climate-policy",
+        "label": "Climate Policy"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:decarbonisation","label":"Decarbonisation Strategy"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation Strategy"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

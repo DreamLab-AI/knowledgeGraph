@@ -1,59 +1,123 @@
----
-public: true
----
-
-# Longtermism
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:longtermism", "@type":"Page", "title":"Longtermism", "vc:slug":"longtermism", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:longtermism",
+  "@type": "Page",
+  "title": "Longtermism",
+  "vc:slug": "longtermism",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:longtermism",
-  "@type":"Class",
-  "label":"Longtermism",
-  "definition":"Longtermism is an ethical position holding that positively influencing the long-term future is a key moral priority of our time, grounded in the claims that future people matter morally, that the future may contain vastly more people than the present, and that present actions can foreseeably shape their welfare. It motivates particular concern for reducing existential and catastrophic risks, safeguarding civilisational trajectory, and preserving option value for future generations. As a strand of effective altruism and applied ethics, longtermism informs governance debates on emerging technologies, biosecurity, and the safe development of advanced artificial intelligence.",
-  "domain":"governance",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:ethics","label":"Ethics"}],
-  "relations":{
-    "dependsOn":[
-      {"@id":"urn:ngm:class:moral-philosophy","label":"Moral Philosophy"},
-      {"@id":"urn:ngm:class:utilitarianism","label":"Utilitarianism"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:longtermism",
+  "@type": "Class",
+  "label": "Longtermism",
+  "definition": "Longtermism is an ethical position holding that positively influencing the long-term future is a key moral priority of our time, grounded in the claims that future people matter morally, that the future may contain vastly more people than the present, and that present actions can foreseeably shape their welfare. It motivates particular concern for reducing existential and catastrophic risks, safeguarding civilisational trajectory, and preserving option value for future generations. As a strand of effective altruism and applied ethics, longtermism informs governance debates on emerging technologies, biosecurity, and the safe development of advanced artificial intelligence.",
+  "domain": "governance",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ethics",
+      "label": "Ethics"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:moral-philosophy",
+        "label": "Moral Philosophy"
+      },
+      {
+        "@id": "urn:ngm:class:utilitarianism",
+        "label": "Utilitarianism"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:existential-risk","label":"Existential Risk"},
-      {"@id":"urn:ngm:class:ai-safety","label":"AI Safety"},
-      {"@id":"urn:ngm:class:biosecurity","label":"Biosecurity"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:effective-altruism","label":"Effective Altruism"},
-      {"@id":"urn:ngm:class:intergenerational-equity","label":"Intergenerational Equity"},
-      {"@id":"urn:ngm:class:catastrophic-risk","label":"Catastrophic Risk"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:effective-altruism",
+        "label": "Effective Altruism"
+      },
+      {
+        "@id": "urn:ngm:class:intergenerational-equity",
+        "label": "Intergenerational Equity"
+      },
+      {
+        "@id": "urn:ngm:class:catastrophic-risk",
+        "label": "Catastrophic Risk"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:risk-assessment","label":"Risk Assessment"},
-      {"@id":"urn:ngm:class:forecasting","label":"Forecasting"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:forecasting",
+        "label": "Forecasting"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:long-term-governance","label":"Long-Term Governance"},
-      {"@id":"urn:ngm:class:technology-policy","label":"Technology Policy"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:long-term-governance",
+        "label": "Long-Term Governance"
+      },
+      {
+        "@id": "urn:ngm:class:technology-policy",
+        "label": "Technology Policy"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:short-termism","label":"Short-Termism"},
-      {"@id":"urn:ngm:class:person-affecting-view","label":"Person-Affecting View"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:short-termism",
+        "label": "Short-Termism"
+      },
+      {
+        "@id": "urn:ngm:class:person-affecting-view",
+        "label": "Person-Affecting View"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:ai-alignment","label":"AI Alignment"},
-      {"@id":"urn:ngm:class:global-priorities-research","label":"Global Priorities Research"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:global-priorities-research",
+        "label": "Global Priorities Research"
+      }
     ]
   },
-  "sameAs":[
-    {"@id":"urn:ngm:class:strong-longtermism","label":"Strong Longtermism"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:strong-longtermism",
+      "label": "Strong Longtermism"
+    }
   ],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -63,7 +127,7 @@ public: true
 - ### Overview
   - Longtermism developed within the effective altruism movement and global priorities research, notably articulated by philosophers such as Nick Bostrom, Toby Ord, and William MacAskill. Its central empirical premise is that the expected number of future people dwarfs the present population, so even small, durable improvements to humanity's trajectory carry enormous moral weight.
   - The view distinguishes weak longtermism (the future matters and deserves more attention than it currently receives) from strong longtermism (improving the far future is the most important consideration in many decisions).
-  - Practically, longtermism directs attention to reducing risks that could permanently curtail humanity's potential, including engineered pandemics, nuclear conflict, and unaligned advanced [[AI Safety]] failures.
+  - Practically, longtermism directs attention to reducing risks that [private] permanently curtail humanity's potential, including engineered pandemics, nuclear conflict, and unaligned advanced [[AI Safety]] failures.
   - Critics question the tractability of forecasting over long horizons, the risk of neglecting present suffering, and the philosophical assumptions underlying aggregation of future welfare.
 
 - ### Key aspects

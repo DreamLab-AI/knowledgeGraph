@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Trade Finance Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,62 @@ public: true
   "definition": "Trade Finance Automation is the application of digital technologies—including blockchain-based smart contracts, AI-driven document processing, and electronic data interchange—to streamline and accelerate the complex financial instruments and workflows that facilitate international commerce. Traditional trade finance relies on paper-intensive instruments such as letters of credit, bills of lading, and documentary collections, which are slow, error-prone, and costly to process. Automation replaces manual document verification with machine-readable structured data, triggers payment obligations automatically upon verified delivery conditions, and reduces counterparty risk through distributed ledger transparency. The result is faster settlement, lower operational costs, and improved access to working capital for exporters and importers globally.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:trade-finance", "label": "Trade Finance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:trade-finance",
+      "label": "Trade Finance"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"},
-      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:customs-trade-facilitation", "label": "Customs Trade Facilitation"},
-      {"@id": "urn:ngm:class:financial-instruments", "label": "Financial Instruments"},
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
-      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"}
+      {
+        "@id": "urn:ngm:class:customs-trade-facilitation",
+        "label": "Customs Trade Facilitation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      }
     ]
   },
   "quality": 0.8

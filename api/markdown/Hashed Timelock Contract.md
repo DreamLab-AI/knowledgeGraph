@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Hashed Timelock Contract
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

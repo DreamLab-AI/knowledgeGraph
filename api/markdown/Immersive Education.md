@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersive Education
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Immersive education is the use of virtual, augmented, and mixed-reality environments to deliver learning experiences in which students are spatially present within simulated or augmented contexts. It supports experiential and situated learning, letting learners practise skills, explore inaccessible places, and visualise abstract concepts in 3D. Immersive education is an applied intersection of educational technology and metaverse platforms.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:learning-resources", "label": "Learning Resources"}],
-    "enables": [{"@id": "urn:ngm:class:vircadia", "label": "Vircadia"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:learning-resources",
+        "label": "Learning Resources"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:vircadia",
+        "label": "Vircadia"
+      }
+    ]
   },
   "quality": 0.72
 }

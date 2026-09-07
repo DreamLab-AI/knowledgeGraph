@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Authenticity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Content authenticity is the property of a digital asset whereby its origin, creation history, and any subsequent modifications can be cryptographically verified and traced back to an identifiable source. It encompasses technical mechanisms — including cryptographic signatures, tamper-evident manifests, and provenance metadata — that allow consumers of media to assess whether content has been created or manipulated by humans or AI systems and whether it has been altered since its stated point of capture or creation. Content authenticity is increasingly codified through standards such as C2PA (Coalition for Content Provenance and Authenticity).",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:content-authentication", "label": "Content Authentication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:content-authentication",
+      "label": "Content Authentication"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:c2-pa", "label": "C2PA"}
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deepfakes", "label": "Deepfakes"},
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
-      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deepfakes-and-fraudulent-content", "label": "Deepfakes and fraudulent content"}
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - Content authenticity infrastructure is significant because it shifts responsibility from platform-level moderation — inherently reactive and scale-limited — to capture-time attestation by cameras, creation tools, and AI generation pipelines. Major camera manufacturers (Sony, Nikon, Leica), editing suites (Adobe Photoshop, Lightroom), and social platforms (LinkedIn, TikTok) have committed to C2PA integration, while generative AI providers including Microsoft, Google DeepMind, and OpenAI have announced or released C2PA signing for AI-generated content.
 
   - In 2024-2025, content authenticity is becoming regulatory terrain. The EU AI Act requires disclosure of AI-generated media, and the US Executive Order on AI (2023) directed NIST to develop authentication guidance. Hardware-level attestation — where the camera's secure enclave signs each frame at exposure — is entering commercial availability. Debates continue around whether content credentials should be mandatory for AI-generated content at point of distribution, and how privacy can be preserved when geolocation and device identifiers are embedded in signed manifests.
-

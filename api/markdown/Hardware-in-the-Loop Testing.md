@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hardware-in-the-Loop Testing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Hardware-in-the-loop (HIL) testing is a validation technique in which real physical hardware, such as a controller or actuator, is connected to a real-time simulation of the rest of the system. It lets engineers exercise embedded control software against realistic, repeatable plant dynamics without risking expensive or dangerous full-system runs. HIL is standard practice in robotics, automotive, and aerospace development.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"},
-      {"@id": "urn:ngm:class:gazebo-simulator", "label": "Gazebo Simulator"}
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      }
     ]
   },
   "quality": 0.72

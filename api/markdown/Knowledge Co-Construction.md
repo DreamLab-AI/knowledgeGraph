@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Knowledge Co-Construction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Knowledge co-construction is a process in which participants jointly build shared understanding through dialogue, negotiation and the integration of multiple perspectives. Rather than transmitting fixed knowledge, it treats understanding as emergent from collaborative interaction. It is a central mechanism in collaborative and collective learning environments.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
-      {"@id": "urn:ngm:class:collective-learning", "label": "Collective Learning"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:collective-learning",
+        "label": "Collective Learning"
+      }
     ]
   },
   "quality": 0.72

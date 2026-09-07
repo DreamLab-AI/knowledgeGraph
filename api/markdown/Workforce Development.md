@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Workforce Development
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -93,32 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:workforce-development:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5e4f9d1ddeeda0b0d79005ad3fafccb3ae08fbf14d3c0b7d51d43b97a0f381b9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Workforce development encompasses structured programmes, training environments, and skills-acquisition systems that equip individuals and organisations with the competencies required by evolving labour markets. In spatial computing contexts, it leverages immersive learning, simulation, and augmented connected workforce platforms to deliver scalable, experiential upskilling.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ethics and Law
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Ethics and law is the combined domain concerned with the moral principles and binding legal rules that govern the development and deployment of technology. Ethics addresses what ought to be done, while law codifies enforceable obligations such as liability, privacy, and rights. In AI and data governance the two are treated together because responsible systems must satisfy both normative expectations and statutory requirements.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}, {"@id": "urn:ngm:class:governance", "label": "Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
   },
   "quality": 0.72
 }

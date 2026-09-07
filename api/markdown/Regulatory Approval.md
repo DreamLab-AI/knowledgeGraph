@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Regulatory Approval
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:regulatory-approval:5abb662758c1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e654e4451064a99d2db39963da7c989bb066192a40efad533e028b022bf2a52b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Requirements]]",
-      "resolved": "urn:visionflow:linked:regulatory-requirements",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compliance]]",
-      "resolved": "urn:visionflow:linked:compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Frameworks]]",
-      "resolved": "urn:visionflow:linked:regulatory-frameworks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulation]]",
-      "resolved": "urn:visionflow:linked:regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.oecd.org/gov/regulatory-policy/]]",
-      "resolved": "urn:visionflow:linked:https-www-oecd-org-gov-regulatory-policy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Regulatory_agency]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-regulatory-agency",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Regulatory approval is the formal authorisation by a regulator that permits an entity, product or activity to proceed under defined conditions.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Process Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -175,5 +170,4 @@ public: true
 
   - The business case for process automation rests on labour cost reduction, error rate reduction (human data entry errors range 1-5%; automated processes approach zero), throughput increases (bots run 24/7), and regulatory compliance (automated audit trails). Gartner estimated the global RPA market at $2.9 billion in 2023, growing at 17% annually, with banking, insurance, and healthcare being the largest adopters for back-office processing tasks such as claims adjudication, reconciliation, and regulatory reporting.
 
-  - By 2024-2025, process automation has undergone a paradigm shift through AI augmentation: large language model (LLM) integration enables "intelligent automation" where bots can read unstructured documents (invoices, emails, contracts) using document understanding models, make contextual decisions, and handle exception pathways that rule-based RPA could not. [[Agentic Workflow]] frameworks orchestrating multiple AI models represent the frontier, where agents autonomously plan multi-step processes, select tools, and adapt to errors. The market is consolidating around hyperautomation platforms that combine RPA, AI, process mining, and low-code orchestration in unified products.
-
+  - By 2024-2025, process automation has undergone a paradigm shift through AI augmentation: large language model (LLM) integration enables "intelligent automation" where bots can read unstructured documents (invoices, emails, contracts) using document understanding models, make contextual decisions, and handle exception pathways that rule-based RPA [private] not. [[Agentic Workflow]] frameworks orchestrating multiple AI models represent the frontier, where agents autonomously plan multi-step processes, select tools, and adapt to errors. The market is consolidating around hyperautomation platforms that combine RPA, AI, process mining, and low-code orchestration in unified products.

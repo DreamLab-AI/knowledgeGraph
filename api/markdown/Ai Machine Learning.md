@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - AI & Machine Learning
----
-
-# Ai Machine Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -133,77 +126,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-machine-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c2de3b96c0c749eb3e358f0c0fc3d9e1a496df05618e81ae944f19d33e0d0210"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Adaptive NPCs]]",
-      "resolved": "urn:visionflow:linked:adaptive-npcs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computational Infrastructure]]",
-      "resolved": "urn:visionflow:linked:computational-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Content Generation]]",
-      "resolved": "urn:visionflow:linked:content-generation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Network Architectures]]",
-      "resolved": "urn:visionflow:linked:neural-network-architectures",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Personalized Experiences]]",
-      "resolved": "urn:visionflow:linked:personalized-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Smart Virtual Environments]]",
-      "resolved": "urn:visionflow:linked:smart-virtual-environments",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data]]",
-      "resolved": "urn:visionflow:owl:class:training-data",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI Machine Learning in the metaverse context refers to the application of artificial intelligence algorithms, neural networks, and deep learning architectures that enable intelligent virtual environments through natural language processing, computer vision, procedural content generation, and adaptive user experiences.

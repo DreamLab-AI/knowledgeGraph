@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Return on Investment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "ai-return-on-investment",
   "title": "AI Return on Investment",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Transformation", "Executive Expectations", "Executive Leadership", "KPMG Global CEO Outlook"],
+  "vc:outboundWikilinks": [
+    "AI Transformation",
+    "Executive Expectations",
+    "Executive Leadership",
+    "KPMG Global CEO Outlook"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence"}, {"@id": "urn:ngm:class:ai-economics", "label": "AI Economics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-economics",
+        "label": "AI Economics"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

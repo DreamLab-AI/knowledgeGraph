@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Biomedical Engineering
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:biomedical-engineering", "@type":"Page", "title":"Biomedical Engineering", "vc:slug":"biomedical-engineering", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:biomedical-engineering",
+  "@type": "Page",
+  "title": "Biomedical Engineering",
+  "vc:slug": "biomedical-engineering",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -100,6 +105,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - [[Biomedical Engineering]] applies engineering to medicine and biology, designing devices and systems that diagnose, monitor, and restore human function. It draws on [[Control Theory]], [[Signal Processing]], and [[Sensor Fusion]] and bridges to [[Machine Learning]].
 - ### Overview

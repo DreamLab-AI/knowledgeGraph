@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Future of Humanity Institute
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The Future of Humanity Institute (FHI) was a multidisciplinary research centre at the University of Oxford, founded in 2005 and directed by Nick Bostrom, focused on big-picture questions about humanity's long-term prospects. It produced influential work on existential risk, AI safety, and the governance of transformative technologies. The institute closed in 2024, but its research substantially shaped the fields of AI safety and longtermism.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:singularity", "label": "Singularity"}, {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:singularity",
+        "label": "Singularity"
+      },
+      {
+        "@id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      }
+    ]
   },
   "quality": 0.72
 }

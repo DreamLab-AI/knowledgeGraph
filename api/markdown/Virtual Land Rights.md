@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Land Rights
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -105,37 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-land-rights:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b952b27f69ec68687d19210c7882b4d48a09331ffcc76b85c09f5d7a30118676"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Property Rights]]",
-      "resolved": "urn:visionflow:owl:class:digital-property-rights",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blockchain-based ownership and property rights for digital land parcels in metaverse platforms, represented as NFTs that serve as digital deeds providing proof of ownership, development rights, and transferability of virtual real estate assets.

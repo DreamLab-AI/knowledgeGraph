@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Software Development Kit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

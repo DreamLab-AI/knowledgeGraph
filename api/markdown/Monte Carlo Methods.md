@@ -1,8 +1,3 @@
----
-public: true
----
-
-# monte carlo methods
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

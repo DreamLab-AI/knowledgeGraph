@@ -1,36 +1,108 @@
----
-public: true
----
-
-# Numerical Integration
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:numerical-integration", "@type":"Page", "title":"Numerical Integration", "vc:slug":"numerical-integration", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:numerical-integration",
+  "@type": "Page",
+  "title": "Numerical Integration",
+  "vc:slug": "numerical-integration",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:numerical-integration",
-  "@type":"Class",
-  "label":"Numerical Integration",
-  "definition":"Numerical integration is the family of algorithms that approximate definite integrals and advance differential equations in time when closed-form solutions are unavailable. In physics simulation it denotes the time-stepping schemes (such as explicit and implicit Euler, Verlet, and Runge-Kutta methods) that integrate equations of motion to update positions and velocities each frame. The choice of scheme balances accuracy, numerical stability, and computational cost.",
-  "domain":"spatial-computing",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:physics-simulation","label":"Physics Simulation"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:physics-simulation","label":"Physics Simulation"},{"@id":"urn:ngm:class:simulation","label":"Simulation"}],
-    "hasPart":[{"@id":"urn:ngm:class:rigid-body-dynamics","label":"Rigid Body Dynamics"}],
-    "requires":[{"@id":"urn:ngm:class:physics-simulation","label":"Physics Simulation"}],
-    "supports":[{"@id":"urn:ngm:class:rigid-body-dynamics","label":"Rigid Body Dynamics"},{"@id":"urn:ngm:class:collision-detection","label":"Collision Detection"},{"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"}],
-    "uses":[{"@id":"urn:ngm:class:finite-element-analysis","label":"Finite Element Analysis"}],
-    "enables":[{"@id":"urn:ngm:class:physics-simulation","label":"Physics Simulation"},{"@id":"urn:ngm:class:simulation","label":"Simulation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:finite-element-analysis","label":"Finite Element Analysis"},{"@id":"urn:ngm:class:collision-detection","label":"Collision Detection"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:finite-element-analysis","label":"Finite Element Analysis"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:numerical-integration",
+  "@type": "Class",
+  "label": "Numerical Integration",
+  "definition": "Numerical integration is the family of algorithms that approximate definite integrals and advance differential equations in time when closed-form solutions are unavailable. In physics simulation it denotes the time-stepping schemes (such as explicit and implicit Euler, Verlet, and Runge-Kutta methods) that integrate equations of motion to update positions and velocities each frame. The choice of scheme balances accuracy, numerical stability, and computational cost.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:physics-simulation",
+      "label": "Physics Simulation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

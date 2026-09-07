@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Smart City Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -123,6 +119,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Smart city infrastructure is the networked physical and digital substrate that enables a city to sense, communicate and respond to conditions in real time, integrating sensors, connectivity, edge and cloud computing, and data platforms across municipal systems. It underpins applications such as intelligent transport, smart grids, environmental monitoring and public-safety services by fusing data from distributed devices into analytics and control loops. The infrastructure couples Internet-of-Things endpoints with high-bandwidth networks and analytical platforms to improve efficiency, resilience and sustainability of urban services.
   - Related core concepts: [[Smart City]] [[Internet of Things]] [[Edge Computing]] [[Digital Twin]]

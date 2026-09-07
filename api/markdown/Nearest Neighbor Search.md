@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Nearest Neighbor Search
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -52,7 +47,7 @@ public: true
   "@id": "urn:ngm:class:nearest-neighbor-search",
   "@type": "Class",
   "label": "Nearest Neighbor Search",
-  "definition": "Nearest Neighbor Search (NNS) is an algorithmic problem and family of techniques for finding the point(s) in a dataset most similar to a given query point, as measured by a distance or similarity metric such as Euclidean distance, cosine similarity, or inner product. Exact NNS guarantees retrieval of the true closest point but scales poorly in high dimensions, while Approximate Nearest Neighbor (ANN) methods trade a bounded loss in recall for dramatically faster query latency and memory efficiency. Foundational index structures — including KD-Trees, Ball Trees, Locality-Sensitive Hashing, Inverted File Indexes, and Hierarchical Navigable Small World graphs — each make different trade-offs between construction cost, query speed, recall, and support for dynamic updates. NNS is a core primitive of modern machine learning pipelines, powering vector database retrieval, recommendation systems, semantic search, image recognition, and retrieval-augmented generation.",
+  "definition": "Nearest Neighbor Search (NNS) is an algorithmic problem and family of techniques for finding the point(s) in a dataset most similar to a given query point, as measured by a distance or similarity metric such as Euclidean distance, cosine similarity, or inner product. Exact NNS guarantees retrieval of the true closest point but scales poorly in high dimensions, while Approximate Nearest Neighbor (ANN) methods trade a bounded loss in recall for dramatically faster query latency and memory efficiency. Foundational [private] structures — including KD-Trees, Ball Trees, Locality-Sensitive Hashing, Inverted File Indexes, and Hierarchical Navigable Small World graphs — each make different trade-offs between construction cost, query speed, recall, and support for dynamic updates. NNS is a core primitive of modern machine learning pipelines, powering vector database retrieval, recommendation systems, semantic search, image recognition, and retrieval-augmented generation.",
   "domain": "machine-learning",
   "maturity": "mature",
   "subClassOf": [
@@ -178,49 +173,14 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nearest-neighbor-search:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6d551477b8f735b41a38d40445d9b264aaedb87f85cdfb1890eff8b17e39f4c6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Search Algorithm]]",
-      "resolved": "urn:visionflow:owl:class:search-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Search]]",
-      "resolved": "urn:visionflow:owl:class:semantic-search",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
-  - Nearest Neighbor Search (NNS) is the problem of identifying, within a finite dataset, the point(s) closest to a given query according to a chosen [[Distance Metric]] such as [[Euclidean Distance]] or [[Cosine Similarity]]. It is the foundational retrieval primitive underlying [[Semantic Search]], [[Recommendation System]] design, and [[Retrieval-Augmented Generation]] pipelines. Exact methods scan or index the full corpus to guarantee the true nearest neighbour, whereas [[Approximate Nearest Neighbor]] methods accept a small, quantifiable loss in recall in exchange for sub-linear query time, making billion-scale retrieval tractable in production systems built on [[Vector Database]] infrastructure.
+  - Nearest Neighbor Search (NNS) is the problem of identifying, within a finite dataset, the point(s) closest to a given query according to a chosen [[Distance Metric]] such as [[Euclidean Distance]] or [[Cosine Similarity]]. It is the foundational retrieval primitive underlying [[Semantic Search]], [[Recommendation System]] design, and [[Retrieval-Augmented Generation]] pipelines. Exact methods scan or [private] the full corpus to guarantee the true nearest neighbour, whereas [[Approximate Nearest Neighbor]] methods accept a small, quantifiable loss in recall in exchange for sub-linear query time, making billion-scale retrieval tractable in production systems built on [[Vector Database]] infrastructure.
 
 - ### Overview
   - NNS formalises the intuition "find what is most similar to this." Given a query object represented as a numeric vector in a high-dimensional space, the goal is to return the k objects in a reference corpus whose vectors are least distant from the query.
   - The challenge — known as the *curse of dimensionality* — is that in very high dimensions (hundreds to thousands), Euclidean distance loses discriminative power and exhaustive scan does not scale. This motivates the rich landscape of approximate and indexing solutions.
   - Modern NNS infrastructure is tightly coupled to [[Vector Embedding]] models: a neural encoder (e.g. a [[Transformer]]-based sentence encoder) converts raw text, images, or audio into dense vectors, and NNS then retrieves semantically related items without requiring exact string match.
-  - Performance is characterised by three dimensions: **recall** (fraction of true nearest neighbours returned), **latency** (query time), and **throughput** (queries per second). These form a Pareto frontier that different index structures navigate differently.
+  - Performance is characterised by three dimensions: **recall** (fraction of true nearest neighbours returned), **latency** (query time), and **throughput** (queries per second). These form a Pareto frontier that different [private] structures navigate differently.
 
 - ### Key Mechanisms
   - #### Exact Methods
@@ -230,7 +190,7 @@ public: true
   - #### Approximate Methods (ANN)
     - **[[Locality-Sensitive Hashing]] (LSH)**: Projects vectors into hash buckets such that similar vectors collide with high probability. Sub-linear query time; memory-efficient; well-suited to streaming or dynamic datasets.
     - **[[Inverted File Index]] (IVF)**: Clusters the corpus with k-means, then at query time probes only the nearest clusters. Parameter `nprobe` controls the recall/latency trade-off. Often combined with [[Product Quantisation]] to compress stored vectors.
-    - **[[HNSW]] (Hierarchical Navigable Small World)**: Graph-based index that constructs a multi-layer proximity graph; greedy graph traversal from a high-level entry point converges quickly on near-neighbours. Currently the de-facto standard for high-recall, low-latency ANN in production, used in Faiss, Weaviate, Qdrant, and pgvector.
+    - **[[HNSW]] (Hierarchical Navigable Small World)**: Graph-based [private] that constructs a multi-layer proximity graph; greedy graph traversal from a high-level entry point converges quickly on near-neighbours. Currently the de-facto standard for high-recall, low-latency ANN in production, used in Faiss, Weaviate, Qdrant, and pgvector.
     - **ScaNN (Scalable Nearest Neighbours)**: Google's anisotropic quantisation approach optimising inner-product search; achieves strong recall at high throughput on asymmetric hardware.
   - #### Compression Techniques
     - **[[Product Quantisation]] (PQ)**: Divides the vector into sub-vectors and quantises each independently; the resulting codes are stored compactly and distances computed via lookup tables. Reduces memory by 8–64x with controllable recall loss.
@@ -255,7 +215,7 @@ public: true
   - **[[Vector Database]] platforms** (Pinecone, Weaviate, Qdrant, Milvus, pgvector, Chroma): Managed or self-hosted services that embed NNS engines behind a metadata-filtering, CRUD, and API layer.
 
 - ### Performance Considerations
-  - **Recall@k vs latency**: Tunable via index parameters (e.g. HNSW `ef_search`, IVF `nprobe`). Increasing recall typically increases latency; benchmark suites like ANN-Benchmarks measure the Pareto frontier.
+  - **Recall@k vs latency**: Tunable via [private] parameters (e.g. HNSW `ef_search`, IVF `nprobe`). Increasing recall typically increases latency; benchmark suites like ANN-Benchmarks measure the Pareto frontier.
   - **Index construction time and memory**: HNSW construction is O(n log n) and memory-intensive (graph links per node); IVF+PQ is more memory-efficient at the cost of more complex build pipelines.
   - **Dynamic vs static corpora**: HNSW supports incremental inserts; LSH and tree methods are typically rebuilt in bulk. Some production systems use a hybrid of an online HNSW shard and periodic bulk-merge.
   - **Hardware acceleration**: GPU-accelerated search (FAISS-GPU) enables throughput orders of magnitude above CPU for large batch queries; increasingly relevant for serving billion-vector indexes.

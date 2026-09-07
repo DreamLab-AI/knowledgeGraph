@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vocabulary
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"}
+      {
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:subword-tokenisation", "label": "Subword Tokenisation"},
-      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte Pair Encoding"},
-      {"@id": "urn:ngm:class:word-piece", "label": "WordPiece"}
+      {
+        "@id": "urn:ngm:class:subword-tokenisation",
+        "label": "Subword Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:word-piece",
+        "label": "WordPiece"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ]
   },
   "quality": 0.5,
@@ -79,32 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vocabulary:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1a9a5e8caadace78071e1ffa5037d57ec6068c761194f52859731a6a7f332171"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The number of unique tokens in a model's tokenisation scheme, balancing expressiveness with computational efficiency, typically ranging from 30,000 to 250,000 tokens in modern language models.

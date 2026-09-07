@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Torque
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,17 +59,38 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"}
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
     ]
   },
   "provenance": {
@@ -84,37 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:torque:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:85c80384ca971c4f264c8a04c5fa7f69375cd54d34a53826507c837b5a229089"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Torque is the rotational analogue of force, defined as the cross product of the moment arm and the applied force vector (τ = r × F), measured in newton-metres. In robotics it governs joint actuation, grip force, and dynamic loading across mechanical transmissions, and is the primary physical quantity managed by torque-controlled servos and force-torque sensors during manipulation tasks.

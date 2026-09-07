@@ -1,34 +1,113 @@
----
-public: true
----
-
-# Exponential Moving Average
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:exponential-moving-average", "@type":"Page", "title":"Exponential Moving Average", "vc:slug":"exponential-moving-average", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:exponential-moving-average",
-  "@type":"Class",
-  "label":"Exponential Moving Average",
-  "definition":"An exponential moving average (EMA) is a weighted moving average that applies exponentially decreasing weights to successive observations in a time series, giving greater significance to recent data than to older data. It is computed recursively as a convex combination of the current observation and the previous EMA value, governed by a smoothing factor derived from a chosen window length. In blockchain and decentralised finance contexts the EMA is widely used to smooth on-chain price feeds, dampen oracle noise, and drive technical-analysis signals and adaptive parameters in automated trading and risk systems.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:statistical-analysis","label":"Statistical Analysis"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:time-series","label":"Time Series"}],
-    "uses":[{"@id":"urn:ngm:class:time-series","label":"Time Series"},{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}],
-    "requires":[{"@id":"urn:ngm:class:statistical-analysis","label":"Statistical Analysis"}],
-    "enables":[{"@id":"urn:ngm:class:algorithmic-trading","label":"Algorithmic Trading"},{"@id":"urn:ngm:class:quantitative-finance","label":"Quantitative Finance"}],
-    "supports":[{"@id":"urn:ngm:class:oracle","label":"Oracle"},{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "dependsOn":[{"@id":"urn:ngm:class:time-series","label":"Time Series"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:oracle","label":"Oracle"}],
-    "relatedTo":[{"@id":"urn:ngm:class:quantitative-finance","label":"Quantitative Finance"},{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"},{"@id":"urn:ngm:class:algorithmic-trading","label":"Algorithmic Trading"}]
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:exponential-moving-average",
+  "@type": "Page",
+  "title": "Exponential Moving Average",
+  "vc:slug": "exponential-moving-average",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:exponential-moving-average",
+  "@type": "Class",
+  "label": "Exponential Moving Average",
+  "definition": "An exponential moving average (EMA) is a weighted moving average that applies exponentially decreasing weights to successive observations in a time series, giving greater significance to recent data than to older data. It is computed recursively as a convex combination of the current observation and the previous EMA value, governed by a smoothing factor derived from a chosen window length. In blockchain and decentralised finance contexts the EMA is widely used to smooth on-chain price feeds, dampen oracle noise, and drive technical-analysis signals and adaptive parameters in automated trading and risk systems.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:statistical-analysis",
+      "label": "Statistical Analysis"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:time-series",
+        "label": "Time Series"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:time-series",
+        "label": "Time Series"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-finance",
+        "label": "Quantitative Finance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:time-series",
+        "label": "Time Series"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:quantitative-finance",
+        "label": "Quantitative Finance"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:exponentially-weighted-moving-average","label":"Exponentially Weighted Moving Average"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:exponentially-weighted-moving-average",
+      "label": "Exponentially Weighted Moving Average"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

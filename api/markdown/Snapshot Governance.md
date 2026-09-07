@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Snapshot Governance
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

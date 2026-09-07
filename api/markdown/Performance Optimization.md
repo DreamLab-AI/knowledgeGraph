@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Performance Optimization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,52 +168,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:performance-optimization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7e7b0ced78e76da6799a2ff787b26ea0937d2accfb98a41a0e133a87ed735e22"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Resource Efficiency]]",
-      "resolved": "urn:visionflow:linked:resource-efficiency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Scalability]]",
-      "resolved": "urn:visionflow:linked:system-scalability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-research-area",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput. It encompasses profiling to identify bottlenecks, algorithmic improvements, caching strategies, parallel processing, and compiler optimizations to meet defined performance targets.

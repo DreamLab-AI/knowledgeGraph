@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CEO-led AI Strategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ceo-led-ai-strategy",
   "title": "CEO-led AI Strategy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI ROI", "KPMG Global AI Pulse Survey"],
+  "vc:outboundWikilinks": [
+    "AI ROI",
+    "KPMG Global AI Pulse Survey"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-policy",
+      "label": "AI Policy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}, {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

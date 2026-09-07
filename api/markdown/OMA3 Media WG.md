@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OMA3 Media WG
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:oma-3-media-wg:c2916384d678",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aa40e9688325468c50e1f31af1150425106fc255a742b3ecf40e19410e34359f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[OMA3]]",
-      "resolved": "urn:visionflow:linked:oma-3",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:linked:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web3]]",
-      "resolved": "urn:visionflow:linked:web-3",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A working group within the Open Metaverse Alliance for Web3 (OMA3) focused on media-related interoperability standards for metaverse and Web3 applications. It coordinates specifications among member organisations.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decarbonisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Decarbonisation is the systematic reduction of carbon dioxide and other greenhouse-gas emissions from an activity, organisation or economy, ultimately toward net zero. It combines energy efficiency, electrification, renewable energy procurement and removal of residual emissions, often guided by science-based targets. For energy-intensive systems such as blockchains it is the pathway to credible carbon-neutral operation.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:carbon-neutral-blockchain", "label": "Carbon Neutral Blockchain"},
-      {"@id": "urn:ngm:class:science-based-targets", "label": "Science Based Targets"}
+      {
+        "@id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      }
     ]
   },
   "quality": 0.72

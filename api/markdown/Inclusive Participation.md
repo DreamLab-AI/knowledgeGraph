@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inclusive Participation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "Inclusive participation is the design principle and operational practice of structuring technologies, platforms, and governance processes to enable full and meaningful engagement by individuals of diverse abilities, economic circumstances, cultural backgrounds, and technical literacy levels, removing barriers that would otherwise exclude underrepresented or marginalised populations. In technology contexts, inclusive participation encompasses accessible user interface design, multilingual support, low-bandwidth alternatives, assistive technology compatibility, and governance mechanisms that distribute decision-making power beyond technically or economically privileged groups. It is a cross-cutting concern in XR platform design, DAO governance, metaverse standards development, and public goods infrastructure.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:participation-framework", "label": "Participation Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:participation-framework",
+      "label": "Participation Framework"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:universal-design", "label": "Universal Design"},
-      {"@id": "urn:ngm:class:localisation", "label": "Localization"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"},
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"}
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "@id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Technology Access Equity"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:xr-accessibility-standards", "label": "XR Accessibility Standards"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:social-impact", "label": "Social Impact"},
-      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"}
+      {
+        "@id": "urn:ngm:class:xr-accessibility-standards",
+        "label": "XR Accessibility Standards"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:social-impact",
+        "label": "Social Impact"
+      },
+      {
+        "@id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      }
     ]
   },
   "quality": 0.8

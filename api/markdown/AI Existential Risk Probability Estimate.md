@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[p(doom)]]
-# AI Existential Risk Probability Estimate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,21 +42,48 @@ elevatedFrom:: [[p(doom)]]
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
-      {"@id": "urn:ngm:class:artificial-superintelligence-theory", "label": "Artificial Superintelligence Theory"},
-      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-superintelligence-theory",
+        "label": "Artificial Superintelligence Theory"
+      },
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:history-and-path-to-agi", "label": "History and Path to AGI"},
-      {"@id": "urn:ngm:class:uk-ai-safety-institute", "label": "UK AI Safety Institute"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:history-and-path-to-agi",
+        "label": "History and Path to AGI"
+      },
+      {
+        "@id": "urn:ngm:class:uk-ai-safety-institute",
+        "label": "UK AI Safety Institute"
+      }
     ]
   },
   "provenance": {
@@ -72,26 +93,6 @@ elevatedFrom:: [[p(doom)]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:p-doom:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bc9d1c95e1098187ee44947b73b1c139bb294b2269bacbf7ee8e934fea51354d"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - p(doom) is a concept within the ngm domain.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Threshold Selection
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

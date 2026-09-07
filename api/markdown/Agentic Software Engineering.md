@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agentic Software Engineering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "agentic-software-engineering",
   "title": "Agentic Software Engineering",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Code Generation", "Code Review Efficiency", "Developer Productivity", "Pull Request Metrics"],
+  "vc:outboundWikilinks": [
+    "AI Code Generation",
+    "Code Review Efficiency",
+    "Developer Productivity",
+    "Pull Request Metrics"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,31 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}, {"@id": "urn:ngm:class:ai-code-generation", "label": "AI Code Generation"}, {"@id": "urn:ngm:class:code-review", "label": "Code Review"}, {"@id": "urn:ngm:class:devops", "label": "DevOps"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:ai-code-generation",
+        "label": "AI Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

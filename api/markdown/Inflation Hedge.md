@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inflation Hedge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -66,42 +61,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inflation-hedge:8a76edc5f433",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:13d37d1c8404028fd8e640fdc08b264c30886ec2bf261504786fba0ac4872303"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Inflation]]",
-      "resolved": "urn:visionflow:linked:inflation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gold]]",
-      "resolved": "urn:visionflow:linked:gold",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Store of Value]]",
-      "resolved": "urn:visionflow:linked:store-of-value",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An inflation hedge is an asset expected to retain or increase its value as the general price level rises, protecting purchasing power. Commonly cited examples include gold, real estate and index-linked bonds.

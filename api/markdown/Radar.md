@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Radar
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,57 +181,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:radar:ff2e963ff6d0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:341860a3132d4e6cb474e02c5713288b476677b89f788b0a9055909c8952df2a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Signal Processing]]",
-      "resolved": "urn:visionflow:linked:signal-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Perception System]]",
-      "resolved": "urn:visionflow:linked:perception-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:linked:sensor-fusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lidar]]",
-      "resolved": "urn:visionflow:linked:lidar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensors]]",
-      "resolved": "urn:visionflow:linked:sensors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor]]",
-      "resolved": "urn:visionflow:linked:sensor",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Radar is a sensing technology that transmits radio waves and measures their reflections to determine the range, velocity and angle of objects, used in robotics and autonomous systems for reliable perception.

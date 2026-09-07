@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0077 depth camera
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,58 +56,68 @@ public: true
   },
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:camera", "label": "Camera"}
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
-      {"@id": "urn:ngm:class:rb-0068-vision-system", "label": "rb 0068 vision system"},
-      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"}
+      {
+        "@id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0068-vision-system",
+        "label": "rb 0068 vision system"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"}
+      {
+        "@id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0077-depth-camera:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1c608ea635168a14dbbf35725cf853db08ff3bd641e53c8f1821bbfe02671c19"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A depth camera captures per-pixel distance data and produces RGB-D imagery or point clouds used for 3D scene understanding in robotics. The three dominant technologies are structured light (projects a known infrared pattern and measures its deformation), time-of-flight (measures photon round-trip time), and stereo triangulation (computes disparity between two offset cameras). Depth cameras are central to indoor navigation, manipulation, and human-presence detection in collaborative robot cells.

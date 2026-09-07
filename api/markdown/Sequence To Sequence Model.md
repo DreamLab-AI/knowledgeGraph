@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sequence To Sequence Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

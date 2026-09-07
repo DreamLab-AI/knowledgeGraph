@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Cross Chain Liquidity
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

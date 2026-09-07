@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Game Narratives
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:game-narratives:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fe2d6238a70a23c1a94a1dfd373d3880e1f15469c59a36552718c941fc04554d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Immersive Gaming Experiences]]",
-      "resolved": "urn:visionflow:linked:immersive-gaming-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interactive Storytelling]]",
-      "resolved": "urn:visionflow:owl:class:interactive-storytelling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Interactive storytelling frameworks within metaverse gaming environments featuring branching storylines, player-driven plot progression, and adaptive narratives that evolve based on collective player decisions, creating dynamic and personalised gaming experiences.

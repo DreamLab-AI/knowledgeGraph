@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Delegation System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A delegation system is the governance mechanism by which stakeholders entrust their decision-making or voting power to chosen representatives. In decentralized governance it supports liquid democracy, where delegated authority can be reassigned or revoked at any time, scaling participation without requiring every holder to vote directly. It balances broad legitimacy with the expertise and availability of active delegates.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
-      {"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      }
     ]
   },
   "quality": 0.72

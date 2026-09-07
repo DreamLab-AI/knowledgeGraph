@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ICCV
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,31 +20,78 @@ public: true
   "definition": "ICCV (International Conference on Computer Vision) is a biennial top-tier academic conference sponsored by IEEE that focuses on the full spectrum of computer vision research, from low-level image processing to high-level scene understanding and embodied intelligence. Held in odd-numbered years and alternating with CVPR in global prestige, ICCV features highly selective peer review and is associated with the Marr Prize for outstanding contributions to the field.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cvpr", "label": "CVPR"},
-      {"@id": "urn:ngm:class:neur-ips", "label": "NeurIPS"},
-      {"@id": "urn:ngm:class:iclr", "label": "ICLR"},
-      {"@id": "urn:ngm:class:icml", "label": "ICML"}
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"}
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cvpr", "label": "CVPR"}
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      }
     ]
   },
   "quality": 0.8

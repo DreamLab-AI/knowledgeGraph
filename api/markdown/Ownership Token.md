@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ownership Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "An Ownership Token is a blockchain token that represents and confers title to an underlying asset, whether digital or real-world. Typically implemented as a non-fungible or semi-fungible token, holding it in a wallet constitutes provable control of the represented item, and transferring it transfers ownership. Ownership tokens enable trading, collateralization, and programmable rights over digital goods and tokenized property.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-goods", "label": "Digital Goods"},
-      {"@id": "urn:ngm:class:digital-real-estate", "label": "Digital Real Estate"}
+      {
+        "@id": "urn:ngm:class:digital-goods",
+        "label": "Digital Goods"
+      },
+      {
+        "@id": "urn:ngm:class:digital-real-estate",
+        "label": "Digital Real Estate"
+      }
     ]
   },
   "quality": 0.72

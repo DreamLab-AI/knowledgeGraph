@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Query Key Value
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-capacity", "label": "Model Capacity"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+      {
+        "@id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:query-key-value:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:027ec19e8e512f1c3726310a948510e46aa1d6d753be25cf2460fe134d8e4616"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.
@@ -151,16 +141,16 @@ public: true
   - ## Benefits of Gold as a commodity
 
   - ### The Fallout of Being "Caught"
-  - If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout could be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction could be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
+  - If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout [private] be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction [private] be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
 
   - ### The Fallout of Being "Caught"
-  - If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout could be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction could be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
+  - If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout [private] be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction [private] be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
 
   - ### The Fallout of Being "Caught"
-  - If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout could be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction could be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
+  - If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout [private] be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction [private] be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
 
   - ### The Fallout of Being "Caught"
-  - If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout could be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction could be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
+  - If it becomes apparent that the ETFs are significantly unbacked by actual Bitcoin, or if there's a regulatory or market shift that forces a reconciliation between paper and physical Bitcoin, the fallout [private] be dramatic. The immediate effect would likely be a significant price correction as the market attempts to realign the perceived value of Bitcoin with its actual available supply. This correction [private] be further amplified by panic selling, leading to a crash in both the paper and physical Bitcoin markets.
 
   ## Characteristics
 

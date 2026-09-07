@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Evaluation Metric
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -294,7 +289,7 @@ public: true
 
   ## About
 
-  Evaluation metrics are the empirical currency of machine learning: without them, model comparisons are unfalsifiable and scientific progress cannot be tracked. The concept has deep roots in classical statistics — precision and recall originate in information retrieval research of the 1950s and 1960s (Cleverdon, 1960; van Rijsbergen, 1979) — and was operationalised into the machine learning mainstream through the development of standardised benchmark datasets and associated scoring protocols in the 1990s and 2000s. The ImageNet Large Scale Visual Recognition Challenge (ILSVRC), launched in 2010, demonstrated how a single well-designed metric suite combined with an open dataset could catalyse a decade of dramatic progress in [[Computer Vision]]; the 2012 entry of AlexNet, which halved the top-5 error rate, is conventionally marked as the beginning of the modern deep learning era.
+  Evaluation metrics are the empirical currency of machine learning: without them, model comparisons are unfalsifiable and scientific progress cannot be tracked. The concept has deep roots in classical statistics — precision and recall originate in information retrieval research of the 1950s and 1960s (Cleverdon, 1960; van Rijsbergen, 1979) — and was operationalised into the machine learning mainstream through the development of standardised benchmark datasets and associated scoring protocols in the 1990s and 2000s. The ImageNet Large Scale Visual Recognition Challenge (ILSVRC), launched in 2010, demonstrated how a single well-designed metric suite combined with an open dataset [private] catalyse a decade of dramatic progress in [[Computer Vision]]; the 2012 entry of AlexNet, which halved the top-5 error rate, is conventionally marked as the beginning of the modern deep learning era.
 
   The relationship between evaluation metrics and [[Loss Function|training objectives]] is crucial and widely misunderstood. A loss function must be differentiable and is evaluated on every training example; an evaluation metric is computed post-hoc on discrete predictions from a held-out set and need not be differentiable. The two encode complementary information: cross-entropy loss guides gradient flow through the model's parameter space, while [[F1 Score]] or [[AUC-ROC]] summarise the deployment-relevant consequences of those parameters. When the two are well-aligned — as in models trained with surrogate losses that closely approximate the evaluation metric — training converges toward the desired behaviour. When they diverge, models learn to game the proxy rather than improving genuine quality, a manifestation of [[Goodhart's Law]]: "When a measure becomes a target, it ceases to be a good measure." This dynamic drives demand for continuously refreshed benchmark datasets, adversarial probing, and contamination detection, particularly urgent in large language model evaluation where enormous training corpora may include test data from publicly available benchmarks.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Moderation Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -125,72 +120,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:content-moderation-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:618d0d0b051e3af95f332b45674a2f46808a0348f544bc52b03c1147533d4ca4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Detection Systems]]",
-      "resolved": "urn:visionflow:linked:ai-detection-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Community Trust]]",
-      "resolved": "urn:visionflow:linked:community-trust",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Harassment Prevention]]",
-      "resolved": "urn:visionflow:linked:harassment-prevention",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human Moderators]]",
-      "resolved": "urn:visionflow:linked:human-moderators",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Moderation Tools]]",
-      "resolved": "urn:visionflow:linked:moderation-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Platform Governance]]",
-      "resolved": "urn:visionflow:owl:class:platform-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[User Safety]]",
-      "resolved": "urn:visionflow:owl:class:user-safety",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both traditional content moderation and new behavioral moderation approaches.

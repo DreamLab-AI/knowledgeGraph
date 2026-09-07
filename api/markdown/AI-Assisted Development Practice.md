@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Vibe Coding]]
-# AI-Assisted Development Practice
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -52,17 +46,32 @@ elevatedFrom:: [[Vibe Coding]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-ai-engineering", "label": "Generative AI Engineering"}
+      {
+        "@id": "urn:ngm:class:generative-ai-engineering",
+        "label": "Generative AI Engineering"
+      }
     ]
   },
   "provenance": {
@@ -72,26 +81,6 @@ elevatedFrom:: [[Vibe Coding]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vibe-coding:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:051e29e0aace62cd86f62547744198593132eed29e9e6a6656791561d75f5f11"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Vibe Coding** is an AI-assisted software development practice in which developers direct large language models or AI coding tools (such as Cursor, Aider, or Copilot) with high-level intent rather than writing all code manually. The practitioner retains system-level design authority whilst delegating implementation of discrete, scoped tasks to the AI, requiring disciplined use of version control, structured context documents, and iterative refinement cycles.
@@ -180,7 +169,7 @@ elevatedFrom:: [[Vibe Coding]]
   - Diagrams as code
   - Contacts to pick up
   - [James Patterson](https://www.linkedin.com/in/ACoAABtIa0YBJHS-UQbBV5mChJwA2O0GwBu4ufY) (He/Him)  6:08 PM
-		- Hey John! 👋 Hope things are well with you, just saw the post from Dreamlab about vibe coding/agent workshops. Would love to know if/how I could get involved, I’ve been working on some personal projects in v0 and Cursor and keen to learn more
+		- Hey John! 👋 Hope things are well with you, just saw the post from Dreamlab about vibe coding/agent workshops. Would love to know if/how I [private] get involved, I’ve been working on some personal projects in v0 and Cursor and keen to learn more
   - Derek Hales
   - Pip
   - Kat Cooke

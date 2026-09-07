@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Event
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -71,7 +66,10 @@ public: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:temporal-entity", "label": "Temporal Entity"}
+      {
+        "@id": "urn:ngm:class:temporal-entity",
+        "label": "Temporal Entity"
+      }
     ],
     "enables": [
       {
@@ -96,52 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:event:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6117892bf43804e65dd20ecdcdc6c7cae6419e71d1cb24b13fafcb7635716316"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Complex Event Processing]]",
-      "resolved": "urn:visionflow:linked:complex-event-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Event Sourcing]]",
-      "resolved": "urn:visionflow:linked:event-sourcing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reactive Systems]]",
-      "resolved": "urn:visionflow:linked:reactive-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Temporal Entity]]",
-      "resolved": "urn:visionflow:linked:temporal-entity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Event-Driven Architecture]]",
-      "resolved": "urn:visionflow:owl:class:event-driven-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A significant occurrence at a specific point in time that represents a change in system state, triggers a process, or carries information between components. Events are fundamental building blocks of temporal and reactive systems, enabling loose coupling and asynchronous communication through immutable, self-contained records of happenings.

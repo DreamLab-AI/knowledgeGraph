@@ -1,38 +1,119 @@
----
-public: true
----
-
-# Cryptocurrency Wallet
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cryptocurrency-wallet", "@type":"Page", "title":"Cryptocurrency Wallet", "vc:slug":"cryptocurrency-wallet", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:cryptocurrency-wallet",
-  "@type":"Class",
-  "label":"Cryptocurrency Wallet",
-  "definition":"A cryptocurrency wallet is software or hardware that manages the cryptographic keys controlling blockchain assets and constructs, signs and broadcasts transactions on a user's behalf. It does not store coins, which exist only as ledger entries, but rather safeguards the private keys that authorise spending and prove ownership. Wallets range from custodial services that hold keys for users to non-custodial and hardware wallets that give users sole control.",
-  "domain":"blockchain",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:wallet","label":"Wallet"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:cryptocurrency","label":"Cryptocurrency"}],
-    "requires":[{"@id":"urn:ngm:class:private-key","label":"Private Key"},{"@id":"urn:ngm:class:key-management","label":"Key Management"}],
-    "supports":[{"@id":"urn:ngm:class:self-custody","label":"Self-Custody"},{"@id":"urn:ngm:class:custody","label":"Custody"}],
-    "uses":[{"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"}],
-    "enables":[{"@id":"urn:ngm:class:decentralised-application","label":"Decentralised Application"}],
-    "dependsOn":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-    "implements":[{"@id":"urn:ngm:class:key-management","label":"Key Management"}],
-    "hasPart":[{"@id":"urn:ngm:class:private-key","label":"Private Key"}],
-    "relatedTo":[{"@id":"urn:ngm:class:hardware-wallet","label":"Hardware Wallet"},{"@id":"urn:ngm:class:staking","label":"Staking"},{"@id":"urn:ngm:class:decentralised-finance","label":"Decentralised Finance"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:decentralised-application","label":"Decentralised Application"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cryptocurrency-wallet",
+  "@type": "Page",
+  "title": "Cryptocurrency Wallet",
+  "vc:slug": "cryptocurrency-wallet",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cryptocurrency-wallet",
+  "@type": "Class",
+  "label": "Cryptocurrency Wallet",
+  "definition": "A cryptocurrency wallet is software or hardware that manages the cryptographic keys controlling blockchain assets and constructs, signs and broadcasts transactions on a user's behalf. It does not store coins, which exist only as ledger entries, but rather safeguards the private keys that authorise spending and prove ownership. Wallets range from custodial services that hold keys for users to non-custodial and hardware wallets that give users sole control.",
+  "domain": "blockchain",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:wallet",
+      "label": "Wallet"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - A cryptocurrency wallet manages the cryptographic keys that control blockchain assets and signs transactions on a user's behalf. It requires careful [[Key Management]] of the [[Private Key]], uses [[Digital Signature]] to authorise spending, and supports either [[Self-Custody]] or delegated [[Custody]].
 - ### Overview

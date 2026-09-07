@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Token Distribution
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

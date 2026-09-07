@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Shopping Assistant
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-shopping-assistant",
   "title": "AI Shopping Assistant",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Amazon Rufus", "Black Friday Sales Data"],
+  "vc:outboundWikilinks": [
+    "Amazon Rufus",
+    "Black Friday Sales Data"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agents",
+      "label": "AI Agents"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"}, {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

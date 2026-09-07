@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Prompt Template
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,25 +21,55 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+    {
+      "@id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:system-prompt", "label": "System Prompt"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
-      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"}
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:soft-prompt-embedding", "label": "Soft Prompt Embedding"}
+      {
+        "@id": "urn:ngm:class:soft-prompt-embedding",
+        "label": "Soft Prompt Embedding"
+      }
     ]
   },
   "quality": 0.8
@@ -58,7 +83,7 @@ public: true
   - Prompt templates are composed of multiple prompt engineering sub-patterns: a [[System Prompt]] that establishes the model's role and behavioural constraints, a user-turn template that inserts the variable input, and optional [[Chain of Thought]] scaffolding that elicits step-by-step reasoning. [[Retrieval-Augmented Generation]] systems use templates to inject retrieved document chunks into a fixed query structure so the model always receives context in a predictable format. [[Instruction Following]] capabilities of the underlying model determine how reliably a template's constraints are respected. [[Soft Prompt Embedding]] is the continuous counterpart to discrete prompt templates: rather than text tokens, it uses learned embedding vectors that achieve similar steering effects but cannot be human-inspected. The [[Context Window]] size constrains how much static scaffolding a template can include alongside variable content.
 
 - ### Content
-  - Prompt templates evolved from the early practice of few-shot prompting, where practitioners discovered that prepending example input-output pairs before a query reliably steered model behaviour. As practitioners accumulated successful patterns — persona assignment, output format specification, step-by-step reasoning elicitation — they began factoring these patterns into reusable text fragments that could be shared and versioned like code.
+  - Prompt templates evolved from the early practice of few-shot prompting, where practitioners discovered that prepending example input-output pairs before a query reliably steered model behaviour. As practitioners accumulated successful patterns — persona assignment, output format specification, step-by-step reasoning elicitation — they began factoring these patterns into reusable text fragments that [private] be shared and versioned like code.
 
   - The LangChain framework, introduced in late 2022, formalised prompt templates as first-class software objects with named variables, type checking, and composition operators. A `PromptTemplate` object in LangChain takes a string with curly-brace placeholders and a dict of variable names; the `.format()` method produces the final string. `ChatPromptTemplate` extends this to multi-turn conversations by templating each role's contribution. These abstractions allowed prompt authors to separate the engineering of the scaffold from the runtime logic that supplies variable values.
 

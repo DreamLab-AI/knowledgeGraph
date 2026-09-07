@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Domain-Specific LLMs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "domain-specific-llms",
   "title": "Domain-Specific LLMs",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Bitter Lesson", "Bloomberg GPT"],
+  "vc:outboundWikilinks": [
+    "Bitter Lesson",
+    "Bloomberg GPT"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:vertical-ai-models", "label": "Vertical AI Models"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:vertical-ai-models",
+        "label": "Vertical AI Models"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

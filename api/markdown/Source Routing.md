@@ -1,36 +1,125 @@
----
-public: true
----
-
-# Source Routing
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:source-routing", "@type":"Page", "title":"Source Routing", "vc:slug":"source-routing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:source-routing",
-  "@type":"Class",
-  "label":"Source Routing",
-  "definition":"Source routing is a packet-forwarding technique in which the sender, rather than intermediate routers, specifies all or part of the path a packet must traverse, embedding the route as a list of hops within the packet itself. By moving path selection to the originator it enables explicit path control, multipath delivery, and privacy-preserving forwarding, at the cost of overhead and forwarding-table-bypass security considerations. It underpins onion-routing anonymity networks and payment-channel networks, where the sender constructs and conceals an end-to-end route across an overlay before any hop sees the full path.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:routing","label":"Routing"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:network-layer","label":"Network Layer"}],
-    "implements":[{"@id":"urn:ngm:class:routing-protocol","label":"Routing Protocol"}],
-    "uses":[{"@id":"urn:ngm:class:packet-switching","label":"Packet Switching"},{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "enables":[{"@id":"urn:ngm:class:onion-routing","label":"Onion Routing"},{"@id":"urn:ngm:class:overlay-network","label":"Overlay Network"}],
-    "supports":[{"@id":"urn:ngm:class:privacy","label":"Privacy"}],
-    "requires":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "dependsOn":[{"@id":"urn:ngm:class:routing-protocol","label":"Routing Protocol"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:tor","label":"Tor"},{"@id":"urn:ngm:class:overlay-network","label":"Overlay Network"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:routing-protocol","label":"Routing Protocol"}],
-    "relatedTo":[{"@id":"urn:ngm:class:networking","label":"Networking"},{"@id":"urn:ngm:class:onion-routing","label":"Onion Routing"},{"@id":"urn:ngm:class:packet-switching","label":"Packet Switching"}]
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:source-routing",
+  "@type": "Page",
+  "title": "Source Routing",
+  "vc:slug": "source-routing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:source-routing",
+  "@type": "Class",
+  "label": "Source Routing",
+  "definition": "Source routing is a packet-forwarding technique in which the sender, rather than intermediate routers, specifies all or part of the path a packet must traverse, embedding the route as a list of hops within the packet itself. By moving path selection to the originator it enables explicit path control, multipath delivery, and privacy-preserving forwarding, at the cost of overhead and forwarding-table-bypass security considerations. It underpins onion-routing anonymity networks and payment-channel networks, where the sender constructs and conceals an end-to-end route across an overlay before any hop sees the full path.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:routing",
+      "label": "Routing"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "@id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:tor",
+        "label": "Tor"
+      },
+      {
+        "@id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:networking",
+        "label": "Networking"
+      },
+      {
+        "@id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "@id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:explicit-path-routing","label":"Explicit Path Routing"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:explicit-path-routing",
+      "label": "Explicit Path Routing"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

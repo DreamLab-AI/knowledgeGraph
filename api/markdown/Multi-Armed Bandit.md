@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Armed Bandit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Multi-Armed Bandit",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:exploration-exploitation-tradeoff", "vc:label": "Exploration Exploitation Tradeoff"},
-    {"@id": "urn:visionflow:linked:markov-decision-process", "vc:label": "Markov Decision Process"},
-    {"@id": "urn:visionflow:linked:recommendation-systems", "vc:label": "Recommendation Systems"}
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:exploration-exploitation-tradeoff",
+      "vc:label": "Exploration Exploitation Tradeoff"
+    },
+    {
+      "@id": "urn:visionflow:linked:markov-decision-process",
+      "vc:label": "Markov Decision Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-systems",
+      "vc:label": "Recommendation Systems"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,17 +50,32 @@ public: true
   },
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "label": "Exploration Exploitation Tradeoff"}
+      {
+        "@id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration Exploitation Tradeoff"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"}
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:recommendation-systems", "label": "Recommendation Systems"},
-      {"@id": "urn:ngm:class:a-b-testing", "label": "A/B Testing"}
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:online-learning", "label": "Online Learning"}
+      {
+        "@id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
+      }
     ]
   },
   "quality": 0.8,

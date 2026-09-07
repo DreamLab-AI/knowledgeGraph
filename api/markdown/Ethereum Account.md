@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Ethereum Account
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Rust]]
-# Rust Systems Programming Language
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,19 +20,42 @@ elevatedFrom:: [[Rust]]
   "definition": "Rust is a compiled, statically typed systems programming language created at Mozilla Research and first released in 2015, designed to provide C-like performance and low-level memory control without the memory safety vulnerabilities that plague C and C++. Its defining innovation is the ownership-and-borrowing type system, which enforces at compile time that each value has exactly one owner, references obey strict lifetime rules, and data races are structurally impossible — all without a garbage collector. Rust has rapidly become the preferred language for writing safe, high-performance systems software, blockchain runtimes, WebAssembly modules, embedded firmware, and operating system kernels.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"},
-      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"}
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "quality": 0.8
@@ -52,7 +69,7 @@ elevatedFrom:: [[Rust]]
   - [[Rust Systems Programming Language]] is an individual instance of [[Programming Language]] with a distinctive static type system enforcing memory safety through ownership semantics. It directly [[enables]] [[WebAssembly]] compilation, [[Embedded Systems]] development, and [[High-Performance Computing]] workloads where low-level control is required. Its performance characteristics relate it closely to [[Performance Optimization]] disciplines, and its ownership model provides safe access to [[Distributed Systems]] primitives without the runtime overhead of garbage collection. It is widely deployed as the implementation language for blockchain clients, operating system kernels, browser engines, and cloud infrastructure in a [[Runtime Environment]] context.
 
 - ### Content
-  - Rust originated from a personal project by Mozilla engineer Graydon Hoare in 2006, growing into a Mozilla-sponsored language by 2009. The key insight was that C's memory safety vulnerabilities — use-after-free, buffer overflows, data races — account for roughly 70% of critical security vulnerabilities in systems software (a finding corroborated by Microsoft, Google, and NSA analyses), and that these could be eliminated through a type-theoretic ownership model rather than through runtime checks or garbage collection. The 1.0 stable release shipped in May 2015.
+  - Rust originated from a personal project by Mozilla engineer Graydon Hoare in 2006, growing into a Mozilla-sponsored language by 2009. The key insight was that C's memory safety vulnerabilities — use-after-free, buffer overflows, data races — account for roughly 70% of critical security vulnerabilities in systems software (a finding corroborated by Microsoft, Google, and NSA analyses), and that these [private] be eliminated through a type-theoretic ownership model rather than through runtime checks or garbage collection. The 1.0 stable release shipped in May 2015.
 
   - The Rust ownership system enforces three rules at compile time: (1) every value has exactly one owner; (2) ownership may be transferred (moved) or temporarily lent (borrowed) but not duplicated without explicit opt-in (Clone); (3) either one mutable reference or any number of immutable references to a value may exist at any time, but not both simultaneously. This type system, enforced by the borrow checker, makes entire classes of bugs impossible: dangling pointers, double-frees, use-after-move, and concurrent data races are compile errors rather than runtime faults. The zero-cost abstractions principle ensures these safety guarantees add no runtime overhead compared to equivalent C code.
 

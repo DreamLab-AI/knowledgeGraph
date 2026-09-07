@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitcoin Whitepaper
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,46 +187,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bitcoin-whitepaper:74b0e544e5b7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:86bfb5fea272c19e15995c494f4ef423951eb9734751f1b3c02c9d178b6a4405"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hashcash]]",
-      "resolved": "urn:visionflow:linked:hashcash",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitcoin Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Satoshi Nakamoto]]",
-      "resolved": "urn:visionflow:linked:satoshi-nakamoto",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

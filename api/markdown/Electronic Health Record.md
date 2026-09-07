@@ -1,37 +1,124 @@
----
-public: true
----
-
-# Electronic Health Record
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:electronic-health-record", "@type":"Page", "title":"Electronic Health Record", "vc:slug":"electronic-health-record", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:electronic-health-record",
+  "@type": "Page",
+  "title": "Electronic Health Record",
+  "vc:slug": "electronic-health-record",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:electronic-health-record",
-  "@type":"Class",
-  "label":"Electronic Health Record",
-  "definition":"An electronic health record (EHR) is a longitudinal digital record of a patient's health information maintained across care episodes and, increasingly, across providers. It consolidates demographics, diagnoses, medications, results and clinical notes into a structured, queryable store that supports care delivery, decision support and analytics. EHRs depend on interoperability standards and strong privacy controls to be shared safely between systems.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:healthcare-records","label":"Healthcare Records"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:healthcare-records","label":"Healthcare Records"}],
-    "hasPart":[{"@id":"urn:ngm:class:clinical-decision-support","label":"Clinical Decision Support"},{"@id":"urn:ngm:class:audit-trail","label":"Audit Trail"}],
-    "requires":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"},{"@id":"urn:ngm:class:data-privacy","label":"Data Privacy"}],
-    "uses":[{"@id":"urn:ngm:class:hl7-fhir","label":"HL7 FHIR"},{"@id":"urn:ngm:class:data-interoperability","label":"Data Interoperability"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:hl7-fhir","label":"HL7 FHIR"},{"@id":"urn:ngm:class:hipaa","label":"HIPAA"}],
-    "enables":[{"@id":"urn:ngm:class:telemedicine","label":"Telemedicine"},{"@id":"urn:ngm:class:clinical-decision-support","label":"Clinical Decision Support"}],
-    "supports":[{"@id":"urn:ngm:class:medical-imaging","label":"Medical Imaging"}],
-    "dependsOn":[{"@id":"urn:ngm:class:privacy-by-design","label":"Privacy by Design"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:telemedicine","label":"Telemedicine"}],
-    "relatedTo":[{"@id":"urn:ngm:class:hipaa","label":"HIPAA"},{"@id":"urn:ngm:class:medical-imaging","label":"Medical Imaging"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:electronic-health-record",
+  "@type": "Class",
+  "label": "Electronic Health Record",
+  "definition": "An electronic health record (EHR) is a longitudinal digital record of a patient's health information maintained across care episodes and, increasingly, across providers. It consolidates demographics, diagnoses, medications, results and clinical notes into a structured, queryable store that supports care delivery, decision support and analytics. EHRs depend on interoperability standards and strong privacy controls to be shared safely between systems.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:healthcare-records",
+      "label": "Healthcare Records"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "@id": "urn:ngm:class:hipaa",
+        "label": "HIPAA"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hipaa",
+        "label": "HIPAA"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

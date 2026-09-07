@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Constraint Propagation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,7 +102,7 @@ public: true
 
   The technique sits between pure deduction and search. It is sound (it never removes a value that appears in a solution) but usually incomplete: reaching the fixed point rarely solves the problem outright, so solvers interleave propagation with [[Backtracking Search]], propagating again after every tentative assignment. This propagate-and-branch loop is what makes modern constraint solvers effective on scheduling, configuration, timetabling and design problems where naive enumeration would be hopeless.
 
-  Different consistency levels trade pruning power against cost. Node consistency checks unary constraints; [[Arc Consistency]] (the most widely used level) checks binary constraints between pairs of variables; path consistency and stronger k-consistency variants examine larger variable subsets. Global constraints such as `allDifferent` come with dedicated propagators — for example Régin's matching-based filtering — that achieve far more pruning than decomposing them into binary constraints ever could.
+  Different consistency levels trade pruning power against cost. Node consistency checks unary constraints; [[Arc Consistency]] (the most widely used level) checks binary constraints between pairs of variables; path consistency and stronger k-consistency variants examine larger variable subsets. Global constraints such as `allDifferent` come with dedicated propagators — for example Régin's matching-based filtering — that achieve far more pruning than decomposing them into binary constraints ever [private].
 
   ## Technical Details
 

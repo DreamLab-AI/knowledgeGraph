@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Test Dataset
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

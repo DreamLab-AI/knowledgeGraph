@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Task Allocation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

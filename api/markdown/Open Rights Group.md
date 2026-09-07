@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Rights Group
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:open-rights-group:584e3d1631a7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e8afd17d2e7f353fe278a5e7d1e60b5efd03fc57dce970126c0be6c1f6374b8f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[User Sovereignty]]",
-      "resolved": "urn:visionflow:linked:user-sovereignty",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Rights]]",
-      "resolved": "urn:visionflow:linked:digital-rights",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.openrightsgroup.org]]",
-      "resolved": "urn:visionflow:linked:https-www-openrightsgroup-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.openrightsgroup.org/about/]]",
-      "resolved": "urn:visionflow:linked:https-www-openrightsgroup-org-about",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Open Rights Group is a United Kingdom organisation that campaigns for digital rights, including privacy, free expression, and data protection. It is a membership-funded non-profit.

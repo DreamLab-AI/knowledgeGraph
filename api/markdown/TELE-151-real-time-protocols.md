@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-151-real-time-protocols
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,42 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-151-real-time-protocols:09c58dadae88",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2585a94b8686304580db555e0b4d51dda8d519ac04f06ddb1a16315b7781493d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Protocol]]",
-      "resolved": "urn:visionflow:linked:network-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Low Latency]]",
-      "resolved": "urn:visionflow:linked:low-latency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[WebRTC]]",
-      "resolved": "urn:visionflow:linked:web-rtc",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Real-time protocols are network communication standards designed to deliver time-sensitive media and data with low latency and predictable timing, accepting some loss in exchange for timeliness.

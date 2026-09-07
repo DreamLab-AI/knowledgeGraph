@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Microsoft Entra Verified ID
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:microsoft-entra-verified-id:9196e79a3b34",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d24689d7c4c750076321f2ae26923b57c0dbd0eaf69c5c49c09af24642bbed8e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralised Identity]]",
-      "resolved": "urn:visionflow:linked:decentralised-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:linked:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:linked:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verifiable Credentials]]",
-      "resolved": "urn:visionflow:linked:verifiable-credentials",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://learn.microsoft.com/en-us/entra/verified-id/]]",
-      "resolved": "urn:visionflow:linked:https-learn-microsoft-com-en-us-entra-verified-id",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.w3.org/TR/vc-data-model/]]",
-      "resolved": "urn:visionflow:linked:https-www-w-3-org-tr-vc-data-model",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Microsoft Entra Verified ID is a managed service for issuing and verifying decentralised identity credentials based on open standards for verifiable credentials.

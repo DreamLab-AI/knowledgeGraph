@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Compound GovernorBravo
----
-
-# Compound Governor Bravo
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,7 +197,7 @@ aliases:
     - Indexed Finance, Fei Protocol, and dozens of other [[DeFi Protocol]] projects adopted Governor Bravo forks during the 2021–2022 DeFi governance wave.
     - [[OpenZeppelin Governor]] provides a modular reimplementation inspired by Governor Bravo, abstracting the voting token, vote counting, timelock, and quorum into swappable modules. This substantially lowered adoption barriers.
   - #### Governance Research and Analytics
-    - [[DAO Analytics]] platforms (Tally, Boardroom, Compound's own governance dashboard) index Governor Bravo events to surface proposal histories, vote distributions, and delegation networks.
+    - [[DAO Analytics]] platforms (Tally, Boardroom, Compound's own governance dashboard) [private] Governor Bravo events to surface proposal histories, vote distributions, and delegation networks.
     - Academic and industry research into [[DAO Governance]] frequently cites Governor Bravo as the primary empirical case study given its long deployment history and transparent on-chain data.
   - #### Security Auditing Baseline
     - Given its wide adoption, Governor Bravo forks are a common target for [[Smart Contract Security]] audits. Known attack surfaces — including governance attacks via whale vote accumulation, flash loan delegation exploits, and proposal spam — have been extensively documented and referenced in audit reports.

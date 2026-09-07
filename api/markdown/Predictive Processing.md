@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Predictive Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Predictive processing is a theoretical framework in cognitive science and AI in which the brain or agent continuously generates predictions about sensory input and updates internal models to minimise prediction error. Perception, action, and learning are unified as processes of reducing the mismatch between expected and actual signals. It motivates active inference and free-energy approaches to embodied, cognitive systems.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:embodied-minds", "label": "Embodied Minds"},
-      {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"}
+      {
+        "@id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      }
     ]
   },
   "quality": 0.72

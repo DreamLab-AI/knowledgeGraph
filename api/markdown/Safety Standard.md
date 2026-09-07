@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safety Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,52 @@ public: true
   "definition": "A safety standard is a normative document — published by a standards body, industry consortium, or regulatory authority — that defines requirements, processes, and verification methods for ensuring that a system, product, or environment achieves an acceptable level of risk to human life, health, and property. Safety standards range from generic functional safety frameworks such as IEC 61508 and ISO 26262 to domain-specific codes covering robotics, medical devices, aviation, and industrial machinery, and they typically specify hazard analysis methods, safety integrity levels, design constraints, and evidence of compliance.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:compliance-standards", "label": "Compliance Standards"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:compliance-standards",
+      "label": "Compliance Standards"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"},
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"}
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
     ]
   },
   "quality": 0.8

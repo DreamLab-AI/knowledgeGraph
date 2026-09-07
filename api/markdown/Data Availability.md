@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Data-Availability
----
-
-# Data Availability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

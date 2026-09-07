@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Consumer Tools for SMEs]]
-# SME AI Productivity Toolkit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,15 +51,30 @@ elevatedFrom:: [[Consumer Tools for SMEs]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:ai-assisted-developer-tooling", "label": "AI-Assisted Developer Tooling"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:ai-assisted-developer-tooling",
+        "label": "AI-Assisted Developer Tooling"
+      }
     ]
   },
   "quality": 0.5,
@@ -76,37 +85,6 @@ elevatedFrom:: [[Consumer Tools for SMEs]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:consumer-tools-for-smes:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7f3f4a99cb1df13a135ffc0f211dbe93d05049029a09a26123cc6f1dbac3972b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gemini Multimodal Language Model]]",
-      "resolved": "urn:visionflow:owl:class:gemini",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Consumer Tools for SMEs encompasses the accessible AI-powered productivity applications, creative tools, and automation platforms used by small and medium enterprises. These tools lower the barrier to adopting generative AI and workflow automation without requiring technical expertise or enterprise-scale infrastructure investment.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Credit Retirement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Carbon credit retirement is the permanent cancellation of a carbon credit in a registry so that it can no longer be sold, transferred, or double-counted, formally claiming the underlying emission reduction or removal. Retirement is the terminal step that converts a tradable credit into a fulfilled offset claim against a specific buyer's emissions. It is fundamental to carbon market integrity because it guarantees that each tonne of avoided or removed CO2 is claimed only once.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:icvcm-core-carbon-principles", "label": "ICVCM Core Carbon Principles"},
-      {"@id": "urn:ngm:class:climate-action-dao", "label": "Climate Action DAO"}
+      {
+        "@id": "urn:ngm:class:icvcm-core-carbon-principles",
+        "label": "ICVCM Core Carbon Principles"
+      },
+      {
+        "@id": "urn:ngm:class:climate-action-dao",
+        "label": "Climate Action DAO"
+      }
     ]
   },
   "quality": 0.72

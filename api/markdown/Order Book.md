@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Order Book
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -141,46 +136,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:order-book:f16ebb2f1c9b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6b029de9d9eb5e955b95ab10c45bae3e443f0b2304b40fdf6ba662f74cba2a55"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Price Discovery]]",
-      "resolved": "urn:visionflow:linked:price-discovery",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Market Making]]",
-      "resolved": "urn:visionflow:linked:market-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralised Exchange]]",
-      "resolved": "urn:visionflow:linked:decentralised-exchange",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Exchange Mechanism]]",
-      "resolved": "urn:visionflow:linked:exchange-mechanism",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

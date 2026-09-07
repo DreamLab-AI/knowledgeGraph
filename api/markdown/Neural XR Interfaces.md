@@ -1,8 +1,3 @@
----
-public: true
----
-
-# neural xr interfaces
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -59,7 +54,6 @@ public: true
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Direct neural input modalities for spatial computing systems, ranging from non-invasive EMG wristbands and EEG headsets to invasive brain-computer interfaces. Bridges neurotechnology with XR interaction paradigms, enabling thought-driven navigation, selection, and manipulation in virtual and augmented environments.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Portal System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,26 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:portal-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bacf138026c65b839da35da9a6e3e2c8a00e94398d042f1da1da4f82c7b835f0"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A spatial computing mechanism that enables instantaneous traversal between distinct virtual locations, worlds, or platform environments, rendering a visual aperture through which users can see and enter the destination, thereby facilitating cross-world navigation and interoperability in metaverse platforms.

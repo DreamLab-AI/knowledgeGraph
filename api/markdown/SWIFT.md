@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SWIFT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,57 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:swift:a33603bf79f7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a9f45d2c81caa7d1dd751ba58c456306eebae2a8f25aa7e355f3540333f1a1c0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Correspondent Banking]]",
-      "resolved": "urn:visionflow:linked:correspondent-banking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-Border Payments]]",
-      "resolved": "urn:visionflow:linked:cross-border-payments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interbank Settlement]]",
-      "resolved": "urn:visionflow:linked:interbank-settlement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Payment Systems Domain]]",
-      "resolved": "urn:visionflow:linked:bc-defi-and-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ISO 20022]]",
-      "resolved": "urn:visionflow:linked:iso-20022",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Infrastructure Domain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - SWIFT, the Society for Worldwide Interbank Financial Telecommunication, is a cooperative that operates a secure messaging network used by banks and other financial institutions to exchange payment and securities instructions. It does not move money itself but standardises the messages that instruct transfers between institutions, which then settle through correspondent banking relationships or payment systems. Founded in 1973 and based in Belgium, it connects thousands of institutions across most countries.

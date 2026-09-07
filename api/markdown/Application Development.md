@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Application Development
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Application development is the systematic process of designing, building, testing, and deploying software applications to meet specified user or organisational requirements, encompassing activities from requirements analysis through to release and maintenance. It involves selecting appropriate technology stacks, architectural patterns, and development methodologies to produce reliable, maintainable, and performant software. The discipline spans mobile, web, desktop, and embedded application domains, each with distinct toolchains and constraints.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"},
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"}
+      {
+        "@id": "urn:ngm:class:platform-service",
+        "label": "Platform Service"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"}
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
     ]
   },
   "quality": 0.8

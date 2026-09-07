@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Yoti
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:yoti:d5d41153f3d0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3755d665cfedc145e4bc239290da7dd108487abfb7cf88cf54cf2fa47f49c14a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Biometric Authentication]]",
-      "resolved": "urn:visionflow:linked:biometric-authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:linked:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Age Verification]]",
-      "resolved": "urn:visionflow:linked:age-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Identity]]",
-      "resolved": "urn:visionflow:linked:digital-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Facial Recognition]]",
-      "resolved": "urn:visionflow:linked:facial-recognition",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital identity company that provides identity verification, age estimation and authentication services for individuals and organisations.

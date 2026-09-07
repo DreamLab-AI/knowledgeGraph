@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Physical Presence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Physical presence is the perceptual sense of being bodily situated in a remote or virtual environment, including the ability to act on and feel that environment. In telepresence it is produced by combining spatial audio-visual immersion with embodiment cues such as haptic feedback and a controllable remote body or robot. Strong physical presence makes a mediated location feel as though the user is genuinely there.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:haptics", "label": "Haptics"}, {"@id": "urn:ngm:class:tc-0003-telepresence-robot", "label": "tc 0003 telepresence robot"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "@id": "urn:ngm:class:tc-0003-telepresence-robot",
+        "label": "tc 0003 telepresence robot"
+      }
+    ]
   },
   "quality": 0.72
 }

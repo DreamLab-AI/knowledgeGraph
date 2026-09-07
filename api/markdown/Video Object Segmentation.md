@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Video Object Segmentation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Video object segmentation is the computer-vision task of delineating and tracking the pixel-level boundaries of one or more objects across the frames of a video sequence. It extends single-image segmentation with temporal coherence, propagating masks while handling motion, occlusion and appearance change. It underpins video editing, autonomous perception, surveillance and content analysis.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"}, {"@id": "urn:ngm:class:segmentation-and-identification", "label": "Segmentation and Identification"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:segmentation-and-identification",
+        "label": "Segmentation and Identification"
+      }
+    ]
   },
   "quality": 0.72
 }

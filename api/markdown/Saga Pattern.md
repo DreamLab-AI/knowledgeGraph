@@ -1,37 +1,116 @@
----
-public: true
----
-
-# Saga Pattern
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:saga-pattern", "@type":"Page", "title":"Saga Pattern", "vc:slug":"saga-pattern", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:saga-pattern",
+  "@type": "Page",
+  "title": "Saga Pattern",
+  "vc:slug": "saga-pattern",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:saga-pattern",
-  "@type":"Class",
-  "label":"Saga Pattern",
-  "definition":"The saga pattern is a distributed-systems design for managing long-lived business transactions that span multiple services without a global lock or two-phase commit. A saga is a sequence of local transactions, each of which has an associated compensating transaction that semantically undoes its effect if a later step fails. Coordination is achieved either through orchestration, where a central coordinator drives the steps, or choreography, where services react to events, trading strong atomicity for eventual consistency and availability.",
-  "domain":"distributed-systems",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:microservices-architecture","label":"Microservices Architecture"}],
-    "implements":[{"@id":"urn:ngm:class:eventual-consistency","label":"Eventual Consistency"}],
-    "uses":[{"@id":"urn:ngm:class:event-driven-architecture","label":"Event Driven Architecture"},{"@id":"urn:ngm:class:orchestration","label":"Orchestration"}],
-    "requires":[{"@id":"urn:ngm:class:microservices","label":"Microservices"}],
-    "supports":[{"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"},{"@id":"urn:ngm:class:reliability","label":"Reliability"}],
-    "enables":[{"@id":"urn:ngm:class:eventual-consistency","label":"Eventual Consistency"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:two-phase-commit","label":"Two-Phase Commit"}],
-    "relatedTo":[{"@id":"urn:ngm:class:transaction","label":"Transaction"},{"@id":"urn:ngm:class:event-driven-architecture","label":"Event Driven Architecture"},{"@id":"urn:ngm:class:microservices","label":"Microservices"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:orchestration","label":"Orchestration"}],
-    "dependsOn":[{"@id":"urn:ngm:class:event-driven-architecture","label":"Event Driven Architecture"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:saga-pattern",
+  "@type": "Class",
+  "label": "Saga Pattern",
+  "definition": "The saga pattern is a distributed-systems design for managing long-lived business transactions that span multiple services without a global lock or two-phase commit. A saga is a sequence of local transactions, each of which has an associated compensating transaction that semantically undoes its effect if a later step fails. Coordination is achieved either through orchestration, where a central coordinator drives the steps, or choreography, where services react to events, trading strong atomicity for eventual consistency and availability.",
+  "domain": "distributed-systems",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

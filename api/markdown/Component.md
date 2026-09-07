@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Component
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,58 +7,201 @@ public: true
   "title": "Component",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:ai-infrastructure", "vc:label": "AI Infrastructure"},
-    {"@id": "urn:visionflow:linked:hardware-component", "vc:label": "Hardware Component"},
-    {"@id": "urn:visionflow:linked:software-module", "vc:label": "Software Module"},
-    {"@id": "urn:visionflow:linked:neural-network-layer", "vc:label": "Neural Network Layer"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:machine-learning-pipeline", "vc:label": "Machine Learning Pipeline"},
-    {"@id": "urn:visionflow:linked:ai-framework", "vc:label": "AI Framework"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:model-serving", "vc:label": "Model Serving"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:microservices", "vc:label": "Microservices"},
-    {"@id": "urn:visionflow:linked:containerisation", "vc:label": "Containerisation"},
-    {"@id": "urn:visionflow:linked:api", "vc:label": "API"},
-    {"@id": "urn:visionflow:linked:embedded-systems", "vc:label": "Embedded Systems"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:model-registry", "vc:label": "Model Registry"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:software-architecture", "vc:label": "Software Architecture"},
-    {"@id": "urn:visionflow:linked:modularity", "vc:label": "Modularity"},
-    {"@id": "urn:visionflow:linked:interface", "vc:label": "Interface"},
-    {"@id": "urn:visionflow:linked:ai-system-eu-definition", "vc:label": "AI System (EU Definition)"},
-    {"@id": "urn:visionflow:linked:kubernetes", "vc:label": "Kubernetes"},
-    {"@id": "urn:visionflow:linked:digital-infrastructure", "vc:label": "Digital Infrastructure"},
-    {"@id": "urn:visionflow:linked:distributed-training", "vc:label": "Distributed Training"},
-    {"@id": "urn:visionflow:linked:model-deployment", "vc:label": "Model Deployment"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:inference-engine", "vc:label": "Inference Engine"},
-    {"@id": "urn:visionflow:linked:monitoring", "vc:label": "Monitoring"},
-    {"@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance"},
-    {"@id": "urn:visionflow:linked:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:visionflow:linked:vector-database", "vc:label": "Vector Database"},
-    {"@id": "urn:visionflow:linked:iso-iec-25010", "vc:label": "ISO/IEC 25010"},
-    {"@id": "urn:visionflow:linked:iso-iec-23053", "vc:label": "ISO/IEC 23053"},
-    {"@id": "urn:visionflow:linked:design-pattern", "vc:label": "Design Pattern"},
-    {"@id": "urn:visionflow:linked:dependency-injection", "vc:label": "Dependency Injection"},
-    {"@id": "urn:visionflow:linked:separation-of-concerns", "vc:label": "Separation of Concerns"},
-    {"@id": "urn:visionflow:linked:reusability", "vc:label": "Reusability"},
-    {"@id": "urn:visionflow:linked:testability", "vc:label": "Testability"},
-    {"@id": "urn:visionflow:linked:fault-tolerance", "vc:label": "Fault Tolerance"},
-    {"@id": "urn:visionflow:linked:service-mesh", "vc:label": "Service Mesh"},
-    {"@id": "urn:visionflow:linked:event-driven-architecture", "vc:label": "Event-Driven Architecture"}
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-infrastructure",
+      "vc:label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-component",
+      "vc:label": "Hardware Component"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-module",
+      "vc:label": "Software Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network-layer",
+      "vc:label": "Neural Network Layer"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-pipeline",
+      "vc:label": "Machine Learning Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-framework",
+      "vc:label": "AI Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-serving",
+      "vc:label": "Model Serving"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:microservices",
+      "vc:label": "Microservices"
+    },
+    {
+      "@id": "urn:visionflow:linked:containerisation",
+      "vc:label": "Containerisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:api",
+      "vc:label": "API"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedded-systems",
+      "vc:label": "Embedded Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-registry",
+      "vc:label": "Model Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-architecture",
+      "vc:label": "Software Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:modularity",
+      "vc:label": "Modularity"
+    },
+    {
+      "@id": "urn:visionflow:linked:interface",
+      "vc:label": "Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-system-eu-definition",
+      "vc:label": "AI System (EU Definition)"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubernetes",
+      "vc:label": "Kubernetes"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-infrastructure",
+      "vc:label": "Digital Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-training",
+      "vc:label": "Distributed Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-deployment",
+      "vc:label": "Model Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-engine",
+      "vc:label": "Inference Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:monitoring",
+      "vc:label": "Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-25010",
+      "vc:label": "ISO/IEC 25010"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23053",
+      "vc:label": "ISO/IEC 23053"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-pattern",
+      "vc:label": "Design Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:dependency-injection",
+      "vc:label": "Dependency Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:separation-of-concerns",
+      "vc:label": "Separation of Concerns"
+    },
+    {
+      "@id": "urn:visionflow:linked:reusability",
+      "vc:label": "Reusability"
+    },
+    {
+      "@id": "urn:visionflow:linked:testability",
+      "vc:label": "Testability"
+    },
+    {
+      "@id": "urn:visionflow:linked:fault-tolerance",
+      "vc:label": "Fault Tolerance"
+    },
+    {
+      "@id": "urn:visionflow:linked:service-mesh",
+      "vc:label": "Service Mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-driven-architecture",
+      "vc:label": "Event-Driven Architecture"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {"vc:key": "legacy-term-id", "vc:value": "AI-0834"},
-    {"vc:key": "preferred-term", "vc:value": "Component"}
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0834"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Component"
+    }
   ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
-  "prov:generatedAtTime": {"@value": "2026-05-18T07:12:05Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -77,50 +215,128 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:hardware-component", "label": "Hardware Component"},
-      {"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"},
-      {"@id": "urn:ngm:class:neural-network-component", "label": "Neural Network Component"},
-      {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"},
-      {"@id": "urn:ngm:class:software-module", "label": "Software Module"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
+      {
+        "@id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      },
+      {
+        "@id": "urn:ngm:class:ai-system-component",
+        "label": "AI System Component"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-component",
+        "label": "Neural Network Component"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:software-module",
+        "label": "Software Module"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:interface", "label": "Interface"},
-      {"@id": "urn:ngm:class:api", "label": "API"},
-      {"@id": "urn:ngm:class:modularity", "label": "Modularity"}
+      {
+        "@id": "urn:ngm:class:interface",
+        "label": "Interface"
+      },
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "@id": "urn:ngm:class:modularity",
+        "label": "Modularity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reusability", "label": "Reusability"},
-      {"@id": "urn:ngm:class:testability", "label": "Testability"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"}
+      {
+        "@id": "urn:ngm:class:reusability",
+        "label": "Reusability"
+      },
+      {
+        "@id": "urn:ngm:class:testability",
+        "label": "Testability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:separation-of-concerns", "label": "Separation of Concerns"},
-      {"@id": "urn:ngm:class:design-pattern", "label": "Design Pattern"}
+      {
+        "@id": "urn:ngm:class:separation-of-concerns",
+        "label": "Separation of Concerns"
+      },
+      {
+        "@id": "urn:ngm:class:design-pattern",
+        "label": "Design Pattern"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-framework", "label": "AI Framework"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}
+      {
+        "@id": "urn:ngm:class:ai-framework",
+        "label": "AI Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-system-eu-definition", "label": "AI System (EU Definition)"}
+      {
+        "@id": "urn:ngm:class:ai-system-eu-definition",
+        "label": "AI System (EU Definition)"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"}
+      {
+        "@id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -128,66 +344,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:component:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:507d37c7d85bf59ec17c762240e19033af3b5016b42fed7d2d0297d4b667cf35"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:owl:class:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[AI Infrastructure]]", "resolved": "urn:visionflow:linked:ai-infrastructure", "kind": "ResolvedLink"},
-    {"raw": "[[Hardware Component]]", "resolved": "urn:visionflow:linked:hardware-component", "kind": "StubLink"},
-    {"raw": "[[Software Module]]", "resolved": "urn:visionflow:linked:software-module", "kind": "StubLink"},
-    {"raw": "[[Neural Network Layer]]", "resolved": "urn:visionflow:linked:neural-network-layer", "kind": "StubLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Pipeline]]", "resolved": "urn:visionflow:linked:machine-learning-pipeline", "kind": "ResolvedLink"},
-    {"raw": "[[AI Framework]]", "resolved": "urn:visionflow:linked:ai-framework", "kind": "StubLink"},
-    {"raw": "[[MLOps]]", "resolved": "urn:visionflow:linked:mlops", "kind": "ResolvedLink"},
-    {"raw": "[[Model Serving]]", "resolved": "urn:visionflow:linked:model-serving", "kind": "ResolvedLink"},
-    {"raw": "[[Data Pipeline]]", "resolved": "urn:visionflow:linked:data-pipeline", "kind": "ResolvedLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "ResolvedLink"},
-    {"raw": "[[Microservices]]", "resolved": "urn:visionflow:linked:microservices", "kind": "StubLink"},
-    {"raw": "[[Containerisation]]", "resolved": "urn:visionflow:linked:containerisation", "kind": "ResolvedLink"},
-    {"raw": "[[API]]", "resolved": "urn:visionflow:linked:api", "kind": "StubLink"},
-    {"raw": "[[Embedded Systems]]", "resolved": "urn:visionflow:linked:embedded-systems", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Model Registry]]", "resolved": "urn:visionflow:linked:model-registry", "kind": "ResolvedLink"},
-    {"raw": "[[Feature Engineering]]", "resolved": "urn:visionflow:linked:feature-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Software Architecture]]", "resolved": "urn:visionflow:linked:software-architecture", "kind": "StubLink"},
-    {"raw": "[[Modularity]]", "resolved": "urn:visionflow:linked:modularity", "kind": "StubLink"},
-    {"raw": "[[Interface]]", "resolved": "urn:visionflow:linked:interface", "kind": "StubLink"},
-    {"raw": "[[AI System (EU Definition)]]", "resolved": "urn:visionflow:linked:ai-system-eu-definition", "kind": "StubLink"},
-    {"raw": "[[Kubernetes]]", "resolved": "urn:visionflow:linked:kubernetes", "kind": "ResolvedLink"},
-    {"raw": "[[Digital Infrastructure]]", "resolved": "urn:visionflow:linked:digital-infrastructure", "kind": "StubLink"},
-    {"raw": "[[Distributed Training]]", "resolved": "urn:visionflow:linked:distributed-training", "kind": "StubLink"},
-    {"raw": "[[Model Deployment]]", "resolved": "urn:visionflow:linked:model-deployment", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "StubLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "StubLink"},
-    {"raw": "[[Inference Engine]]", "resolved": "urn:visionflow:linked:inference-engine", "kind": "StubLink"},
-    {"raw": "[[Monitoring]]", "resolved": "urn:visionflow:linked:monitoring", "kind": "StubLink"},
-    {"raw": "[[Data Governance]]", "resolved": "urn:visionflow:linked:data-governance", "kind": "StubLink"},
-    {"raw": "[[Edge Computing]]", "resolved": "urn:visionflow:linked:edge-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Vector Database]]", "resolved": "urn:visionflow:linked:vector-database", "kind": "ResolvedLink"},
-    {"raw": "[[ISO/IEC 25010]]", "resolved": "urn:visionflow:linked:iso-iec-25010", "kind": "StubLink"},
-    {"raw": "[[ISO/IEC 23053]]", "resolved": "urn:visionflow:linked:iso-iec-23053", "kind": "StubLink"},
-    {"raw": "[[Design Pattern]]", "resolved": "urn:visionflow:linked:design-pattern", "kind": "StubLink"},
-    {"raw": "[[Dependency Injection]]", "resolved": "urn:visionflow:linked:dependency-injection", "kind": "StubLink"},
-    {"raw": "[[Separation of Concerns]]", "resolved": "urn:visionflow:linked:separation-of-concerns", "kind": "StubLink"},
-    {"raw": "[[Reusability]]", "resolved": "urn:visionflow:linked:reusability", "kind": "StubLink"},
-    {"raw": "[[Testability]]", "resolved": "urn:visionflow:linked:testability", "kind": "StubLink"},
-    {"raw": "[[Fault Tolerance]]", "resolved": "urn:visionflow:linked:fault-tolerance", "kind": "StubLink"},
-    {"raw": "[[Service Mesh]]", "resolved": "urn:visionflow:linked:service-mesh", "kind": "StubLink"},
-    {"raw": "[[Event-Driven Architecture]]", "resolved": "urn:visionflow:linked:event-driven-architecture", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
-}
-```
-
 
 - ### Definition
   - A Component is a discrete, self-contained, and modular unit within an [[AI Infrastructure]] or broader software ecosystem that encapsulates a specific, well-bounded capability, exposes that capability through a formally defined [[Interface]] or [[API]], and can be independently developed, tested, versioned, deployed, and replaced without disrupting the enclosing system. Components are the fundamental architectural atoms of modern [[AI System (EU Definition)]] design: they range from physical [[Hardware Component]] accelerators such as [[GPU Compute]] clusters, TPUs, and NPUs through logical [[Software Module]] artefacts such as data ingestion connectors, feature transformers, [[Inference Engine]] runtimes, and monitoring sidecars, to structural [[Neural Network]] elements such as [[Neural Network Layer]] blocks, [[Attention Mechanism]] heads, and [[Transformer Architecture]] encoder stacks. The defining properties of a well-designed Component are [[Modularity]] (a single bounded responsibility), [[Reusability]] (deployable across multiple systems or contexts), [[Testability]] (exercisable in isolation with mock dependencies), and replaceability (interchangeable with alternative implementations satisfying the same interface contract). Modern AI component design is governed by the principle of [[Separation of Concerns]]: each Component owns one dimension of a system's behaviour — data ingestion, [[Feature Engineering]], model training, [[Model Serving]], or [[Monitoring]] — and communicates with peer Components only through contracted boundaries, typically REST, gRPC, or message-bus protocols in [[Microservices]] deployments, or language-level abstractions such as PyTorch modules and TensorFlow Keras layers in [[Deep Learning]] frameworks. The [[Machine Learning Pipeline]] is itself a composition of Components wired through [[Data Pipeline]] connectors, orchestrated by workflow engines and lifecycle managers captured under [[MLOps]] practice. Governance standards [[ISO/IEC 23053]] (Machine Learning framework for AI systems) and [[ISO/IEC 25010]] (Software Quality Model) formalise Component-level quality attributes — functional suitability, performance efficiency, reliability, security, and maintainability — as evaluable properties applicable to every Component in a deployed [[AI System (EU Definition)]].
@@ -516,7 +672,7 @@ public: true
   18. Kleppmann, M. (2017). *Designing Data-Intensive Applications*. O'Reilly Media.
   19. Kreuzberger, D. et al. (2022). "MLOps: Overview, Definition, and Architecture." *IEEE Access*, 11, 31866-31879. https://doi.org/10.1109/ACCESS.2023.3262138
   20. Hugging Face (2024). *Model Cards and the Hugging Face Hub: A Component Registry for AI*. https://huggingface.co/docs/hub/model-cards
-  21. NVIDIA (2024). *NVIDIA Triton Inference Server Documentation*. https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/index.html
+  21. NVIDIA (2024). *NVIDIA Triton Inference Server Documentation*. https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/[private].html
   22. OpenAI (2025). *Model Context Protocol (MCP) Specification v1.0*. https://modelcontextprotocol.io/specification
   23. Leanware (2026). *Enterprise AI Architecture: Key Components and Best Practices 2026*. https://www.leanware.co/insights/enterprise-ai-architecture
   24. ARM Holdings (2024). *Arm Ethos-U85 NPU Technical Reference Manual*. ARM DDI0603. https://developer.arm.com/documentation/ddi0603/

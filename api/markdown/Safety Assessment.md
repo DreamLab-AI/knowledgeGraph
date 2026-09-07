@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safety Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Safety assessment is a systematic analytical process that identifies, evaluates, and mitigates hazards associated with a system, product, or operational process to demonstrate that residual risk is tolerable within accepted standards and regulatory frameworks. It encompasses methods such as Failure Modes and Effects Analysis (FMEA), Fault Tree Analysis (FTA), Hazard and Operability Studies (HAZOP), and probabilistic safety analysis, applied across domains including aerospace, automotive, nuclear, medical devices, and increasingly AI systems. Safety assessments form the evidentiary basis for certification against safety standards such as IEC 61508 and ISO 26262.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:hazard-analysis", "label": "Hazard Analysis"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:risk-assessment-methodology", "label": "Risk Assessment Methodology"}
+      {
+        "@id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:safety-critical-systems", "label": "Safety-Critical Systems"},
-      {"@id": "urn:ngm:class:ai-risk-assessment", "label": "AI Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"},
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"},
-      {"@id": "urn:ngm:class:safety-standard", "label": "Safety Standard"}
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - In automotive electronics, [[ISO 26262]] mandates a safety lifecycle from concept phase through decommissioning, with safety assessment activities at each phase gate. ASIL decomposition allocates safety requirements to hardware and software components, driving diverse and redundant architectures. In aviation, DO-178C and DO-254 govern software and hardware development assurance levels. Medical device safety assessments under ISO 14971 follow a risk management process covering risk analysis, evaluation, control, and review throughout the product lifecycle.
 
   - Between 2023 and 2025, safety assessment methodology is under intense development for AI and machine learning systems, where traditional deterministic failure mode analysis is insufficient for statistical models with complex, data-dependent behaviour. SOTIF (ISO 21448), originally developed for automated driving, addresses performance limitations and triggering conditions not covered by functional safety. The EU AI Act classifies high-risk AI applications and mandates conformity assessments including risk management, data governance, and human oversight provisions. [[AI Risk Assessment]] frameworks from NIST (AI RMF), AISI, and ISO/IEC 42001 are converging on structured safety case approaches adapted for machine learning, though standardisation remains actively contested.
-

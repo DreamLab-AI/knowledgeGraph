@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Composable Architecture
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Voting Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,17 +82,38 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ]
   },
   "quality": 0.5,
@@ -108,67 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:voting-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a9234967b7807ea1053986b8f45c2c27a17b5b66e9d6e864fc85c3a109fbf1a1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BC-0142-smart-contract]]",
-      "resolved": "urn:visionflow:linked:bc-0142-smart-contract",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0456-self-sovereign-identity]]",
-      "resolved": "urn:visionflow:linked:bc-0456-self-sovereign-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0457-decentralized-identifiers]]",
-      "resolved": "urn:visionflow:linked:bc-0457-decentralized-identifiers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0458-verifiable-credentials]]",
-      "resolved": "urn:visionflow:linked:bc-0458-verifiable-credentials",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0462-on-chain-voting]]",
-      "resolved": "urn:visionflow:linked:bc-0462-on-chain-voting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0463-governance-token]]",
-      "resolved": "urn:visionflow:linked:bc-0463-governance-token",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0470-dao-legal-structures]]",
-      "resolved": "urn:visionflow:linked:bc-0470-dao-legal-structures",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blockchain-based electoral systems employing cryptographic verification, end-to-end verifiability, and distributed ledger technology to enable secure voting whilst facing critical security challenges identified by MIT research showing vulnerabilities allowing vote alteration, academic consensus of "nearly universal" agreement that no technology can adequately secure online public elections, and real-world implementations spanning Voatz (80,000+ votes across 50+ elections), Estonia (50%+ votes cast online), and Moscow (65,000 voters) demonstrating both potential cost reductions from $7-25 to under $0.50 per vote and significant security concerns.

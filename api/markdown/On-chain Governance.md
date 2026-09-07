@@ -1,8 +1,3 @@
----
-public: true
----
-
-# on-chain governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -281,7 +276,7 @@ public: true
   - Protocol-layer governance shipped concrete upgrades: Solana's Alpenglow consensus redesign was approved by validator governance in September 2025 (introducing the Votor voting component and removing on-chain vote transactions), and Aave's DAO backed the V4 mainnet path in a near-unanimous Snapshot vote (over 645,000 votes in favour) in early 2026 ahead of a formal on-chain AIP.
   - AI-assisted governance moved from experiment to standard practice, with MakerDAO developing Governance AI Tools (GAITs) for proposal summarisation and outcome simulation as part of its Endgame plan, NEAR building the Pulse sentiment tool and AI delegates, and Aave deploying AI-assisted proposal analysis.
   - Governance is being streamlined to fight fatigue: on 27 July 2026 Lido shipped its Curated Module v2 upgrade, delegating routine administrative actions (previously requiring a full on-chain vote) to operators and a Curated Module Committee while the DAO retains key parameters and a veto right.
-  - Participation and centralisation remain the core unsolved problems: turnout among decision-makers hovers around 20% (often nearer 10%), academic analysis of 370+ proposals found as few as three to five voters could sway most outcomes with roughly 1% of holders controlling 90% of voting power, and cases of frozen or paused governance (for example Jupiter suspending governance votes) multiplied through 2026.
+  - Participation and centralisation remain the core unsolved problems: turnout among decision-makers hovers around 20% (often nearer 10%), academic analysis of 370+ proposals found as few as three to five voters [private] sway most outcomes with roughly 1% of holders controlling 90% of voting power, and cases of frozen or paused governance (for example Jupiter suspending governance votes) multiplied through 2026.
   - Emerging frontiers include ZK-based private voting, gasless proposals via account abstraction, reputation- and expertise-weighted voting, and cross-chain DAO coordination over IBC-style messaging, alongside optimistic governance where proposals execute by default after a challenge window.
 
 - ### References

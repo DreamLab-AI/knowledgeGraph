@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enforcement Action
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "An enforcement action is a formal measure taken by a regulatory or supervisory authority against an entity that has violated laws, rules, or licence conditions. It can include fines, cease-and-desist orders, licence revocation, restitution to affected parties, or referral for prosecution. Enforcement actions are the operative mechanism by which consumer-protection and market-conduct regulations are made binding.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}, {"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      }
+    ]
   },
   "quality": 0.72
 }

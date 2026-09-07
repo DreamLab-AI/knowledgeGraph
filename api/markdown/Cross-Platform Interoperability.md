@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Platform Interoperability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -231,77 +226,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cross-platform-interoperability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5fc08920b9391f33c1b9e449563808e39b568862ccc9b2f4140ed91cd47f61ab"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ERC-5164]]",
-      "resolved": "urn:visionflow:linked:erc-5164",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE blockchain standards]]",
-      "resolved": "urn:visionflow:linked:ieee-blockchain-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Next Generation Mobile]]",
-      "resolved": "urn:visionflow:linked:next-generation-mobile",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C DID]]",
-      "resolved": "urn:visionflow:linked:w3-c-did",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Bridge]]",
-      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 0]]",
-      "resolved": "urn:visionflow:owl:class:layer-0",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Light Client]]",
-      "resolved": "urn:visionflow:owl:class:light-client",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Relayer]]",
-      "resolved": "urn:visionflow:owl:class:relayer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries. In blockchain, protocols like IBC (Inter-Blockchain Communication) connect 115+ chains enabling trustless cross-chain transactions verified through light client proofs rather than trusted third parties.

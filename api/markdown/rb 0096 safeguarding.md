@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0096 safeguarding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,52 +60,56 @@ public: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"},
-      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:rb-0095-safety-zone", "label": "rb 0095 safety zone"},
-      {"@id": "urn:ngm:class:light-curtain", "label": "Light Curtain"},
-      {"@id": "urn:ngm:class:rb-0090-emergency-stop", "label": "rb 0090 emergency stop"}
+      {
+        "@id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      },
+      {
+        "@id": "urn:ngm:class:light-curtain",
+        "label": "Light Curtain"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0090-emergency-stop",
+        "label": "rb 0090 emergency stop"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop", "label": "rb 0091 safety rated monitored stop"},
-      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"},
-      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"}
+      {
+        "@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"}
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0096-safeguarding:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:793ee71dc13fc12236f5d2b1da5bf2d52e223f94034e81e7132f9307ad4fea7d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Safeguarding refers to the suite of physical and electronic protective measures deployed around robotic systems to prevent hazardous contact with operators, co-workers, and bystanders. Unlike inherent safety measures built into the robot itself (such as power-and-force limiting), safeguarding acts at the workspace boundary through guards, presence-sensing devices such as light curtains, and safety-rated stop functions.

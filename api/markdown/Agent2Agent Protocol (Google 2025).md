@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent2Agent Protocol (Google 2025)
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,69 +7,258 @@ public: true
   "title": "Agent2Agent Protocol (Google 2025)",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-to-agent-protocol", "vc:label": "Agent-to-Agent Protocol"},
-    {"@id": "urn:visionflow:linked:inter-agent-communication", "vc:label": "Inter-Agent Communication"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:service-discovery", "vc:label": "Service Discovery"},
-    {"@id": "urn:visionflow:linked:message-passing", "vc:label": "Message Passing"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
-    {"@id": "urn:visionflow:linked:agent-card", "vc:label": "Agent Card"},
-    {"@id": "urn:visionflow:linked:task-lifecycle", "vc:label": "Task Lifecycle"},
-    {"@id": "urn:visionflow:linked:server-sent-events", "vc:label": "Server-Sent Events"},
-    {"@id": "urn:visionflow:linked:json-rpc-2-0", "vc:label": "JSON-RPC 2.0"},
-    {"@id": "urn:visionflow:linked:http-protocol", "vc:label": "HTTP Protocol"},
-    {"@id": "urn:visionflow:linked:oauth-2-0", "vc:label": "OAuth 2.0"},
-    {"@id": "urn:visionflow:linked:json-web-signature", "vc:label": "JSON Web Signature"},
-    {"@id": "urn:visionflow:linked:json-schema", "vc:label": "JSON Schema"},
-    {"@id": "urn:visionflow:linked:agent-identity", "vc:label": "Agent Identity"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "Multi-Agent Orchestration"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:vertex-ai", "vc:label": "Vertex AI"},
-    {"@id": "urn:visionflow:linked:linux-foundation", "vc:label": "Linux Foundation"},
-    {"@id": "urn:visionflow:linked:lang-chain-agent-framework", "vc:label": "LangChain Agent Framework"},
-    {"@id": "urn:visionflow:linked:autogen", "vc:label": "AutoGen"},
-    {"@id": "urn:visionflow:linked:crewai", "vc:label": "CrewAI"},
-    {"@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection"},
-    {"@id": "urn:visionflow:linked:task-delegation", "vc:label": "Task Delegation"},
-    {"@id": "urn:visionflow:linked:capability-advertisement", "vc:label": "Capability Advertisement"},
-    {"@id": "urn:visionflow:linked:mutual-authentication", "vc:label": "Mutual Authentication"},
-    {"@id": "urn:visionflow:linked:enterprise-ai", "vc:label": "Enterprise AI"},
-    {"@id": "urn:visionflow:linked:supply-chain-automation", "vc:label": "Supply Chain Automation"},
-    {"@id": "urn:visionflow:linked:agentic-internet", "vc:label": "Agentic Internet"},
-    {"@id": "urn:visionflow:linked:webhook", "vc:label": "Webhook"},
-    {"@id": "urn:visionflow:linked:access-control", "vc:label": "Access Control"},
-    {"@id": "urn:visionflow:linked:rate-limiting", "vc:label": "Rate Limiting"},
-    {"@id": "urn:visionflow:linked:api-gateway", "vc:label": "API Gateway"},
-    {"@id": "urn:visionflow:linked:agent-network-protocol", "vc:label": "Agent Network Protocol"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol-ibm", "vc:label": "Agent Communication Protocol (IBM ACP)"},
-    {"@id": "urn:visionflow:linked:decentralised-identifier", "vc:label": "Decentralised Identifier"},
-    {"@id": "urn:visionflow:linked:trust-framework", "vc:label": "Trust Framework"},
-    {"@id": "urn:visionflow:linked:agent-payments-protocol", "vc:label": "Agent Payments Protocol"},
-    {"@id": "urn:visionflow:linked:microservices-architecture", "vc:label": "Microservices Architecture"},
-    {"@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:state-management", "vc:label": "State Management"},
-    {"@id": "urn:visionflow:linked:error-handling", "vc:label": "Error Handling"},
-    {"@id": "urn:visionflow:linked:negotiation", "vc:label": "Negotiation"},
-    {"@id": "urn:visionflow:linked:coordination-protocol", "vc:label": "Coordination Protocol"},
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:autonomous-task-execution", "vc:label": "Autonomous Task Execution"},
-    {"@id": "urn:visionflow:linked:openai-swarm", "vc:label": "OpenAI Swarm"},
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:push-notification", "vc:label": "Push Notification"},
-    {"@id": "urn:visionflow:linked:well-known-uri", "vc:label": "Well-Known URI"},
-    {"@id": "urn:visionflow:linked:json-canonicalization-scheme", "vc:label": "JSON Canonicalization Scheme"},
-    {"@id": "urn:visionflow:linked:gemini-model", "vc:label": "Gemini Model"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:remote-procedure-call", "vc:label": "Remote Procedure Call"},
-    {"@id": "urn:visionflow:linked:web-of-things", "vc:label": "Web of Things"},
-    {"@id": "urn:visionflow:linked:alan-turing-institute", "vc:label": "Alan Turing Institute"},
-    {"@id": "urn:visionflow:linked:swarm-intelligence", "vc:label": "Swarm Intelligence"}
+    {
+      "@id": "urn:visionflow:linked:agent-to-agent-protocol",
+      "vc:label": "Agent-to-Agent Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:inter-agent-communication",
+      "vc:label": "Inter-Agent Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:service-discovery",
+      "vc:label": "Service Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:message-passing",
+      "vc:label": "Message Passing"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol",
+      "vc:label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-card",
+      "vc:label": "Agent Card"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-lifecycle",
+      "vc:label": "Task Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:linked:server-sent-events",
+      "vc:label": "Server-Sent Events"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-rpc-2-0",
+      "vc:label": "JSON-RPC 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:http-protocol",
+      "vc:label": "HTTP Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:oauth-2-0",
+      "vc:label": "OAuth 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-web-signature",
+      "vc:label": "JSON Web Signature"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-schema",
+      "vc:label": "JSON Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-identity",
+      "vc:label": "Agent Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "Multi-Agent Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertex-ai",
+      "vc:label": "Vertex AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:linux-foundation",
+      "vc:label": "Linux Foundation"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain-agent-framework",
+      "vc:label": "LangChain Agent Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:autogen",
+      "vc:label": "AutoGen"
+    },
+    {
+      "@id": "urn:visionflow:linked:crewai",
+      "vc:label": "CrewAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-delegation",
+      "vc:label": "Task Delegation"
+    },
+    {
+      "@id": "urn:visionflow:linked:capability-advertisement",
+      "vc:label": "Capability Advertisement"
+    },
+    {
+      "@id": "urn:visionflow:linked:mutual-authentication",
+      "vc:label": "Mutual Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:enterprise-ai",
+      "vc:label": "Enterprise AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-automation",
+      "vc:label": "Supply Chain Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-internet",
+      "vc:label": "Agentic Internet"
+    },
+    {
+      "@id": "urn:visionflow:linked:webhook",
+      "vc:label": "Webhook"
+    },
+    {
+      "@id": "urn:visionflow:linked:access-control",
+      "vc:label": "Access Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:rate-limiting",
+      "vc:label": "Rate Limiting"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-gateway",
+      "vc:label": "API Gateway"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-network-protocol",
+      "vc:label": "Agent Network Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol-ibm",
+      "vc:label": "Agent Communication Protocol (IBM ACP)"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-identifier",
+      "vc:label": "Decentralised Identifier"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust-framework",
+      "vc:label": "Trust Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-payments-protocol",
+      "vc:label": "Agent Payments Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:microservices-architecture",
+      "vc:label": "Microservices Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-management",
+      "vc:label": "State Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-handling",
+      "vc:label": "Error Handling"
+    },
+    {
+      "@id": "urn:visionflow:linked:negotiation",
+      "vc:label": "Negotiation"
+    },
+    {
+      "@id": "urn:visionflow:linked:coordination-protocol",
+      "vc:label": "Coordination Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-task-execution",
+      "vc:label": "Autonomous Task Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:openai-swarm",
+      "vc:label": "OpenAI Swarm"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:push-notification",
+      "vc:label": "Push Notification"
+    },
+    {
+      "@id": "urn:visionflow:linked:well-known-uri",
+      "vc:label": "Well-Known URI"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-canonicalization-scheme",
+      "vc:label": "JSON Canonicalization Scheme"
+    },
+    {
+      "@id": "urn:visionflow:linked:gemini-model",
+      "vc:label": "Gemini Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-procedure-call",
+      "vc:label": "Remote Procedure Call"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-of-things",
+      "vc:label": "Web of Things"
+    },
+    {
+      "@id": "urn:visionflow:linked:alan-turing-institute",
+      "vc:label": "Alan Turing Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:swarm-intelligence",
+      "vc:label": "Swarm Intelligence"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -90,52 +274,145 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:agent-to-agent-protocol", "label": "Agent-to-Agent Protocol"}
+    {
+      "@id": "urn:ngm:class:agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:inter-agent-communication", "label": "Inter-Agent Communication"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:task-delegation", "label": "Task Delegation"},
-      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"},
-      {"@id": "urn:ngm:class:agentic-internet", "label": "Agentic Internet"}
+      {
+        "@id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0", "label": "JSON-RPC 2.0"},
-      {"@id": "urn:ngm:class:server-sent-events", "label": "Server-Sent Events"},
-      {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"},
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:json-web-signature", "label": "JSON Web Signature"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
+        "label": "JSON-RPC 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:json-web-signature",
+        "label": "JSON Web Signature"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:agent-card", "label": "Agent Card"},
-      {"@id": "urn:ngm:class:task-lifecycle", "label": "Task Lifecycle"},
-      {"@id": "urn:ngm:class:push-notification", "label": "Push Notification"}
+      {
+        "@id": "urn:ngm:class:agent-card",
+        "label": "Agent Card"
+      },
+      {
+        "@id": "urn:ngm:class:task-lifecycle",
+        "label": "Task Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:push-notification",
+        "label": "Push Notification"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:mutual-authentication", "label": "Mutual Authentication"},
-      {"@id": "urn:ngm:class:agent-identity", "label": "Agent Identity"},
-      {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"}
+      {
+        "@id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"},
-      {"@id": "urn:ngm:class:agent-network-protocol", "label": "Agent Network Protocol"},
-      {"@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration"},
-      {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"}
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:agent-network-protocol",
+        "label": "Agent Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
-      {"@id": "urn:ngm:class:openai-swarm", "label": "OpenAI Swarm"}
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:openai-swarm",
+        "label": "OpenAI Swarm"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"},
-      {"@id": "urn:ngm:class:supply-chain-automation", "label": "Supply Chain Automation"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-automation",
+        "label": "Supply Chain Automation"
+      }
     ]
   },
   "quality": 0.93,
@@ -144,84 +421,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "RelationEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agent2-agent-protocol-google-2025:20260620",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:agent2-agent-protocol-google-2025"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Agent-to-Agent Protocol]]", "resolved": "urn:visionflow:linked:agent-to-agent-protocol", "kind": "StubLink"},
-    {"raw": "[[Inter-Agent Communication]]", "resolved": "urn:visionflow:linked:inter-agent-communication", "kind": "StubLink"},
-    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "StubLink"},
-    {"raw": "[[Service Discovery]]", "resolved": "urn:visionflow:linked:service-discovery", "kind": "StubLink"},
-    {"raw": "[[Message Passing]]", "resolved": "urn:visionflow:linked:message-passing", "kind": "StubLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
-    {"raw": "[[Agent Communication Protocol]]", "resolved": "urn:visionflow:linked:agent-communication-protocol", "kind": "StubLink"},
-    {"raw": "[[Agent Card]]", "resolved": "urn:visionflow:linked:agent-card", "kind": "StubLink"},
-    {"raw": "[[Task Lifecycle]]", "resolved": "urn:visionflow:linked:task-lifecycle", "kind": "StubLink"},
-    {"raw": "[[Server-Sent Events]]", "resolved": "urn:visionflow:linked:server-sent-events", "kind": "StubLink"},
-    {"raw": "[[JSON-RPC 2.0]]", "resolved": "urn:visionflow:linked:json-rpc-2-0", "kind": "StubLink"},
-    {"raw": "[[HTTP Protocol]]", "resolved": "urn:visionflow:linked:http-protocol", "kind": "StubLink"},
-    {"raw": "[[OAuth 2.0]]", "resolved": "urn:visionflow:linked:oauth-2-0", "kind": "StubLink"},
-    {"raw": "[[JSON Web Signature]]", "resolved": "urn:visionflow:linked:json-web-signature", "kind": "StubLink"},
-    {"raw": "[[JSON Schema]]", "resolved": "urn:visionflow:linked:json-schema", "kind": "StubLink"},
-    {"raw": "[[Agent Identity]]", "resolved": "urn:visionflow:linked:agent-identity", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent Orchestration]]", "resolved": "urn:visionflow:linked:multi-agent-orchestration", "kind": "StubLink"},
-    {"raw": "[[Autonomous Agent]]", "resolved": "urn:visionflow:linked:autonomous-agent", "kind": "StubLink"},
-    {"raw": "[[Vertex AI]]", "resolved": "urn:visionflow:linked:vertex-ai", "kind": "StubLink"},
-    {"raw": "[[Linux Foundation]]", "resolved": "urn:visionflow:linked:linux-foundation", "kind": "StubLink"},
-    {"raw": "[[LangChain Agent Framework]]", "resolved": "urn:visionflow:linked:lang-chain-agent-framework", "kind": "StubLink"},
-    {"raw": "[[AutoGen]]", "resolved": "urn:visionflow:linked:autogen", "kind": "StubLink"},
-    {"raw": "[[CrewAI]]", "resolved": "urn:visionflow:linked:crewai", "kind": "StubLink"},
-    {"raw": "[[Prompt Injection]]", "resolved": "urn:visionflow:linked:prompt-injection", "kind": "StubLink"},
-    {"raw": "[[Task Delegation]]", "resolved": "urn:visionflow:linked:task-delegation", "kind": "StubLink"},
-    {"raw": "[[Capability Advertisement]]", "resolved": "urn:visionflow:linked:capability-advertisement", "kind": "StubLink"},
-    {"raw": "[[Mutual Authentication]]", "resolved": "urn:visionflow:linked:mutual-authentication", "kind": "StubLink"},
-    {"raw": "[[Enterprise AI]]", "resolved": "urn:visionflow:linked:enterprise-ai", "kind": "StubLink"},
-    {"raw": "[[Supply Chain Automation]]", "resolved": "urn:visionflow:linked:supply-chain-automation", "kind": "StubLink"},
-    {"raw": "[[Agentic Internet]]", "resolved": "urn:visionflow:linked:agentic-internet", "kind": "StubLink"},
-    {"raw": "[[Webhook]]", "resolved": "urn:visionflow:linked:webhook", "kind": "StubLink"},
-    {"raw": "[[Access Control]]", "resolved": "urn:visionflow:linked:access-control", "kind": "StubLink"},
-    {"raw": "[[Rate Limiting]]", "resolved": "urn:visionflow:linked:rate-limiting", "kind": "StubLink"},
-    {"raw": "[[API Gateway]]", "resolved": "urn:visionflow:linked:api-gateway", "kind": "StubLink"},
-    {"raw": "[[Agent Network Protocol]]", "resolved": "urn:visionflow:linked:agent-network-protocol", "kind": "StubLink"},
-    {"raw": "[[Agent Communication Protocol (IBM ACP)]]", "resolved": "urn:visionflow:linked:agent-communication-protocol-ibm", "kind": "StubLink"},
-    {"raw": "[[Decentralised Identifier]]", "resolved": "urn:visionflow:linked:decentralised-identifier", "kind": "StubLink"},
-    {"raw": "[[Trust Framework]]", "resolved": "urn:visionflow:linked:trust-framework", "kind": "StubLink"},
-    {"raw": "[[Agent Payments Protocol]]", "resolved": "urn:visionflow:linked:agent-payments-protocol", "kind": "StubLink"},
-    {"raw": "[[Microservices Architecture]]", "resolved": "urn:visionflow:linked:microservices-architecture", "kind": "StubLink"},
-    {"raw": "[[Distributed Systems]]", "resolved": "urn:visionflow:linked:distributed-systems", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[State Management]]", "resolved": "urn:visionflow:linked:state-management", "kind": "StubLink"},
-    {"raw": "[[Error Handling]]", "resolved": "urn:visionflow:linked:error-handling", "kind": "StubLink"},
-    {"raw": "[[Negotiation]]", "resolved": "urn:visionflow:linked:negotiation", "kind": "StubLink"},
-    {"raw": "[[Coordination Protocol]]", "resolved": "urn:visionflow:linked:coordination-protocol", "kind": "StubLink"},
-    {"raw": "[[Agent Runtime]]", "resolved": "urn:visionflow:linked:agent-runtime", "kind": "StubLink"},
-    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "StubLink"},
-    {"raw": "[[Autonomous Task Execution]]", "resolved": "urn:visionflow:linked:autonomous-task-execution", "kind": "StubLink"},
-    {"raw": "[[OpenAI Swarm]]", "resolved": "urn:visionflow:linked:openai-swarm", "kind": "StubLink"},
-    {"raw": "[[Agent Orchestrator]]", "resolved": "urn:visionflow:linked:agent-orchestrator", "kind": "StubLink"},
-    {"raw": "[[Context Window]]", "resolved": "urn:visionflow:linked:context-window", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent System]]", "resolved": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
-    {"raw": "[[Push Notification]]", "resolved": "urn:visionflow:linked:push-notification", "kind": "StubLink"},
-    {"raw": "[[Well-Known URI]]", "resolved": "urn:visionflow:linked:well-known-uri", "kind": "StubLink"},
-    {"raw": "[[JSON Canonicalization Scheme]]", "resolved": "urn:visionflow:linked:json-canonicalization-scheme", "kind": "StubLink"},
-    {"raw": "[[Gemini Model]]", "resolved": "urn:visionflow:linked:gemini-model", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[Remote Procedure Call]]", "resolved": "urn:visionflow:linked:remote-procedure-call", "kind": "StubLink"},
-    {"raw": "[[Web of Things]]", "resolved": "urn:visionflow:linked:web-of-things", "kind": "StubLink"},
-    {"raw": "[[Alan Turing Institute]]", "resolved": "urn:visionflow:linked:alan-turing-institute", "kind": "StubLink"},
-    {"raw": "[[Swarm Intelligence]]", "resolved": "urn:visionflow:linked:swarm-intelligence", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -340,7 +539,7 @@ public: true
 
   ## About
 
-  The Agent2Agent Protocol (A2A) is the most widely adopted concrete realisation of the [[Agent-to-Agent Protocol]] class as of mid-2026, and represents the most significant attempt to date to standardise cross-organisational, cross-framework AI agent delegation at web scale. Its origin lies in a practical problem that became acute during 2024 as enterprise AI deployments moved from single-agent pilot projects to multi-agent production systems: composing agents from different vendors or built on different frameworks — [[LangChain Agent Framework]], [[AutoGen]], [[CrewAI]], bespoke microservice agents — required bespoke adapter code for every pair of agent types. With N agent frameworks in common use, the N-squared adapter problem meant that a medium-sized enterprise deploying a dozen different specialist agents from different vendors would need to maintain 66 distinct bilateral integration codepoints. Each integration was a one-off engineering effort, not reusable across agent pairs, requiring detailed knowledge of both sides' internal message formats, authentication schemes, and error semantics. The situation was precisely analogous to the pre-HTTP web in the early 1990s: each online information system had its own proprietary access protocol, and every pair of communicating systems required custom integration middleware. HTTP's invention reduced this to a single universal protocol that any system could implement once. A2A's design goal is to be the HTTP of agent-to-agent communication.
+  The Agent2Agent Protocol (A2A) is the most widely adopted concrete realisation of the [[Agent-to-Agent Protocol]] class as of mid-2026, and represents the most significant attempt to date to standardise cross-organisational, cross-framework AI agent delegation at web scale. Its origin lies in a practical problem that became acute during 2024 as enterprise AI deployments moved from single-agent pilot projects to multi-agent production systems: composing agents from different vendors or built on different frameworks — [[LangChain Agent Framework]], [[AutoGen]], [[CrewAI]], bespoke microservice agents — required bespoke adapter code for every pair of agent types. With N agent frameworks in common use, the N-squared adapter problem meant that a medium-sized enterprise deploying a dozen different specialist agents from different vendors would need to maintain 66 distinct bilateral integration codepoints. Each integration was a one-off engineering effort, not reusable across agent pairs, requiring detailed knowledge of both sides' internal message formats, authentication schemes, and error semantics. The situation was precisely analogous to the pre-HTTP web in the early 1990s: each online information system had its own proprietary access protocol, and every pair of communicating systems required custom integration middleware. HTTP's invention reduced this to a single universal protocol that any system [private] implement once. A2A's design goal is to be the HTTP of agent-to-agent communication.
 
   Google's response was to propose an open, framework-agnostic standard with five design principles: (1) buildability — any agent implementation in any programming language should be able to implement A2A in a few days of engineering effort; (2) interoperability — agents from different organisations should be able to communicate without any prior bilateral negotiation; (3) security — the protocol should not require organisations to expose their internal infrastructure or share credentials; (4) scalability — the protocol should work for both synchronous microsecond interactions and asynchronous multi-day workflows; and (5) extensibility — the protocol should accommodate capabilities not yet imagined without breaking existing implementations. The specification was developed internally at Google throughout late 2024, reviewed by a technical advisory group including representatives from Salesforce, SAP, and Atlassian, announced publicly on 9 April 2025 at Google Cloud Next alongside the launch of [[Gemini Model]]-powered enterprise agentic products, and immediately open-sourced under the Apache 2.0 licence at github.com/google/A2A with reference implementations in Python and JavaScript. Launch-day endorsements from over 50 technology partners signalled unusually strong industry backing for a protocol at such an early stage.
 
@@ -408,7 +607,7 @@ public: true
 
   UK legaltech firms — including those operating in contract review, due diligence, and compliance monitoring — have adopted A2A to enable composition of specialist AI agents for different legal domains (contract law, employment law, regulatory compliance) that can be orchestrated by a generalist client-facing agent without tight coupling to any specific legal AI provider's API. The UK's Legal Technology Alliance has identified agent interoperability as a priority for the development of AI-powered legal services, with A2A as the most mature available standard.
 
-  The UK's research universities have contributed to the academic literature on agent protocol security and formal verification. Imperial College London's Department of Computing has ongoing work on formal verification of communication protocol state machines using model-checking techniques — a methodology directly applicable to verifying that A2A's [[Task Lifecycle]] state machine is free from deadlock states and transition sequences that could leave tasks permanently stuck in intermediate states. The University of Edinburgh's School of Informatics has ongoing research in agent reasoning, trust, and normative systems that intersects with A2A's open problems in cross-organisational [[Trust Framework|trust establishment]] and authorisation scope management. The [[Alan Turing Institute]] maintains a multi-agent systems interest group whose 2025 UK-MAS symposium at King's College London identified agent interoperability protocols as a key research priority, with A2A cited as the primary industrial protocol deserving academic security and formal methods attention. UCL's Information Security Group has published work on trust management in distributed systems that provides a theoretical framework for analysing the trust assumptions embedded in A2A's authentication model.
+  The UK's research universities have contributed to the academic literature on agent protocol security and formal verification. Imperial College London's Department of Computing has ongoing work on formal verification of communication protocol state machines using model-checking techniques — a methodology directly applicable to verifying that A2A's [[Task Lifecycle]] state machine is free from deadlock states and transition sequences that [private] leave tasks permanently stuck in intermediate states. The University of Edinburgh's School of Informatics has ongoing research in agent reasoning, trust, and normative systems that intersects with A2A's open problems in cross-organisational [[Trust Framework|trust establishment]] and authorisation scope management. The [[Alan Turing Institute]] maintains a multi-agent systems interest group whose 2025 UK-MAS symposium at King's College London identified agent interoperability protocols as a key research priority, with A2A cited as the primary industrial protocol deserving academic security and formal methods attention. UCL's Information Security Group has published work on trust management in distributed systems that provides a theoretical framework for analysing the trust assumptions embedded in A2A's authentication model.
 
   In the Northern English industrial context, manufacturing firms in Manchester, Leeds, Sheffield, and the Tees Valley are evaluating A2A for autonomous procurement agent integration with supply chain partners, particularly for industries involving complex bill-of-materials supply chains across multiple tier-1 and tier-2 suppliers. The Advanced Manufacturing Research Centre (AMRC) at the University of Sheffield — a flagship research centre working with over 100 industrial partners on manufacturing innovation — has noted autonomous agent coordination as a component of its Industry 5.0 research agenda, where collaborative human-robot-AI systems require flexible, standards-based coordination protocols. The Northern Powerhouse's industrial digitisation programmes include A2A evaluation for logistics optimisation across freight corridors connecting the Port of Hull, the Manchester logistics hub, and the Sheffield steel and advanced manufacturing cluster. Leeds has particular interest in AI agent coordination for its growing health technology sector, where diagnostic AI agents from multiple specialist providers need to coordinate their outputs to present unified patient assessment recommendations.
 

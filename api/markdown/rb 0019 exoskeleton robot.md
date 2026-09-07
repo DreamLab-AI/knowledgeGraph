@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0019 exoskeleton robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,48 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:rb-0007-collaborative-robot", "label": "rb 0007 collaborative robot"},
-      {"@id": "urn:ngm:class:service-robot", "label": "Service Robot"},
-      {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0007-collaborative-robot",
+        "label": "rb 0007 collaborative robot"
+      },
+      {
+        "@id": "urn:ngm:class:service-robot",
+        "label": "Service Robot"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-computing-platform",
+        "label": "Wearable Computing Platform"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0088-iso-13482-compliance", "label": "rb 0088 iso 13482 compliance"},
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"}
+      {
+        "@id": "urn:ngm:class:rb-0088-iso-13482-compliance",
+        "label": "rb 0088 iso 13482 compliance"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"},
-      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"}
+      {
+        "@id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"}
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
     ]
   },
   "provenance": {
@@ -85,35 +107,9 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0019-exoskeleton-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f5cdb92ae46ce9d19f0a2b2e73ab84c6a8251b008533546780f6c689462bf55f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - ### Primary Definition
-  An exoskeleton robot is a wearable robotic device that attaches to and moves with the human body to augment, support, or restore physical capabilities. Powered exoskeletons use motors and actuators aligned with the wearer's joints, driven by control systems that interpret intent from force sensors, EMG signals, or inertial measurements. Applications span rehabilitation medicine (post-stroke gait retraining), industrial ergonomics (upper-limb support to reduce worker fatigue), and military logistics (load-carrying augmentation). Because the device is mechanically coupled to a human, safety analysis must address failure modes that could apply unintended forces to the wearer's body.
+  An exoskeleton robot is a wearable robotic device that attaches to and moves with the human body to augment, support, or restore physical capabilities. Powered exoskeletons use motors and actuators aligned with the wearer's joints, driven by control systems that interpret intent from force sensors, EMG signals, or inertial measurements. Applications span rehabilitation medicine (post-stroke gait retraining), industrial ergonomics (upper-limb support to reduce worker fatigue), and military logistics (load-carrying augmentation). Because the device is mechanically coupled to a human, safety analysis must address failure modes that [private] apply unintended forces to the wearer's body.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0019exoskeletonrobot

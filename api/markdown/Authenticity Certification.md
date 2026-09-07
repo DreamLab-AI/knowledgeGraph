@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Authenticity Certification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "A formal process or credential that attests to the genuine origin, integrity, and provenance of a digital or physical artefact, typically employing cryptographic signing, trusted third-party attestation, or standards-based metadata embedding. Authenticity certification enables recipients to verify that content has not been altered and originated from a claimed source.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:content-authenticity", "label": "Content Authenticity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:content-authenticity",
+      "label": "Content Authenticity"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:provenance-verification", "label": "Provenance Verification"},
-      {"@id": "urn:ngm:class:trust", "label": "Trust"}
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deepfake-detection", "label": "Deepfake Detection"},
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
     ]
   },
   "quality": 0.8
@@ -53,7 +77,7 @@ public: true
   - Authenticity Certification relies on [[Digital Signature]] schemes and underlying [[Cryptography]], with [[Hash Function]] outputs serving as compact artefact fingerprints. It enables [[Provenance Verification]] and builds [[Trust]] between content creators and consumers. It is a primary countermeasure against [[Deepfake Detection]] evasion by grounding media in signed creation records. Its provenance data connects to [[Data Provenance]] frameworks, and its chain-of-trust model depends on [[Certificate Authority]] infrastructure.
 
 - ### Content
-  - The concept of certifying document authenticity is ancient, rooted in wax seals, notarisation, and guildhall marks. In the digital era, the problem became acute in the 1990s as electronic documents could be trivially copied and modified without trace. Public-key infrastructure (PKI) and the X.509 certificate standard provided an initial framework, enabling web servers and software publishers to prove their identity. Adobe Acrobat introduced document-signing capabilities in the early 2000s, allowing PDF authors to attach certifying signatures that would be invalidated upon modification.
+  - The concept of certifying document authenticity is ancient, rooted in wax seals, notarisation, and guildhall marks. In the digital era, the problem became acute in the 1990s as electronic documents [private] be trivially copied and modified without trace. Public-key infrastructure (PKI) and the X.509 certificate standard provided an initial framework, enabling web servers and software publishers to prove their identity. Adobe Acrobat introduced document-signing capabilities in the early 2000s, allowing PDF authors to attach certifying signatures that would be invalidated upon modification.
 
   - The technical architecture of modern authenticity certification typically involves: hashing the artefact with a collision-resistant function (SHA-256 or SHA-3); signing the hash with the creator's private key using an asymmetric algorithm (RSA, ECDSA, or EdDSA); embedding the signature alongside provenance metadata (creator identity, timestamp, tool chain, geolocation) in a sidecar file or within the artefact's header. The Coalition for Content Provenance and Authenticity (C2PA) standard, published from 2021 onwards, formalised this approach for media assets, defining a manifest structure that chains assertions across editing operations, allowing the full creation and modification history to be audited.
 

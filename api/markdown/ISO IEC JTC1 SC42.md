@@ -1,11 +1,16 @@
----
-public: true
----
-
-# ISO IEC JTC1 SC42
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:iso-iec-jtc1-sc42", "@type":"Page", "title":"ISO IEC JTC1 SC42", "vc:slug":"iso-iec-jtc1-sc42", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:iso-iec-jtc1-sc42",
+  "@type": "Page",
+  "title": "ISO IEC JTC1 SC42",
+  "vc:slug": "iso-iec-jtc1-sc42",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,39 +21,82 @@ public: true
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:standards-body", "label": "Standards Body" }
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
   ],
   "relations": {
     "partOf": [
-      { "@id": "urn:ngm:class:iso", "label": "ISO" }
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
     ],
     "standardizedBy": [
-      { "@id": "urn:ngm:class:iso", "label": "ISO" }
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
     ],
     "produces": [
-      { "@id": "urn:ngm:class:iso-iec-23894", "label": "ISO IEC 23894" }
+      {
+        "@id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO IEC 23894"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:ai-governance", "label": "AI Governance" },
-      { "@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI" }
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management" },
-      { "@id": "urn:ngm:class:policy-framework", "label": "Policy Framework" }
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:standards", "label": "Standards" },
-      { "@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF" },
-      { "@id": "urn:ngm:class:governance", "label": "Governance" },
-      { "@id": "urn:ngm:class:iso-iec-23894", "label": "ISO IEC 23894" }
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO IEC 23894"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence" }
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

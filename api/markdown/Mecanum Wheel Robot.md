@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mecanum Wheel Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,25 +59,58 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:robot-component", "label": "Robot Component"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+      {
+        "@id": "urn:ngm:class:robot-component",
+        "label": "Robot Component"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:differential-drive-robot", "label": "Differential Drive Robot"},
-      {"@id": "urn:ngm:class:wheeled-robot", "label": "Wheeled Robot"}
+      {
+        "@id": "urn:ngm:class:differential-drive-robot",
+        "label": "Differential Drive Robot"
+      },
+      {
+        "@id": "urn:ngm:class:wheeled-robot",
+        "label": "Wheeled Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:wheeled-mobile-robot", "label": "Wheeled Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:wheeled-mobile-robot",
+        "label": "Wheeled Mobile Robot"
+      }
     ]
   },
   "provenance": {
@@ -92,37 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mecanum-wheel-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:629787a82bc138a8f2ab16e5cc04694f0e986197ab338626e92db1e0e07beab6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Omnidirectional Robot]]",
-      "resolved": "urn:visionflow:owl:class:omnidirectional-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Mecanum robot uses four mecanum wheels with angled rollers enabling true omnidirectional movement.

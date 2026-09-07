@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hardware Resources
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hardware-resources:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:755c0cac59671cb871ebd772c92284c2558adf88c3f0612d35e8a89e36191508"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaverse Access]]",
-      "resolved": "urn:visionflow:linked:metaverse-access",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computing Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:computing-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The physical computing infrastructure required for metaverse access and operation, encompassing VR/AR headsets, computing devices, display technologies, tracking sensors, and connectivity hardware that collectively enable immersive virtual experiences.

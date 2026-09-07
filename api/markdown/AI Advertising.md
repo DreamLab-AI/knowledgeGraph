@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Advertising
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-advertising",
   "title": "AI Advertising",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Consumer AI", "Digital Advertising"],
+  "vc:outboundWikilinks": [
+    "Consumer AI",
+    "Digital Advertising"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:advertising", "label": "Advertising"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:advertising",
+      "label": "Advertising"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:programmatic-advertising", "label": "Programmatic Advertising"}, {"@id": "urn:ngm:class:digital-marketing", "label": "Digital Marketing"}, {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",
@@ -39,6 +55,6 @@ public: true
 ```
 
 - ### Overview
-  - **[Emerging signal]** The introduction of AI-powered advertising in chatbots and agents could trigger a 'land grab' among platforms to become the clearinghouse for high-intent consumer traffic. *(Source: Host, via AI Daily Brief, 2026-08-24)*
+  - **[Emerging signal]** The introduction of AI-powered advertising in chatbots and agents [private] trigger a 'land grab' among platforms to become the clearinghouse for high-intent consumer traffic. *(Source: Host, via AI Daily Brief, 2026-08-24)*
 - ### Relationships
 - ### Provenance

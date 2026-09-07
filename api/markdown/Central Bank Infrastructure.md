@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Central Bank Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Central bank infrastructure encompasses the systems, networks, and institutional arrangements through which a central bank fulfils its core functions: operating real-time gross settlement (RTGS) systems for interbank payments, managing the issuance and lifecycle of physical and digital currency, implementing monetary policy, maintaining financial stability, and serving as lender of last resort. It includes SWIFT connectivity, RTGS platforms (such as CHAPS, Fedwire, TARGET2), central securities depositories, and increasingly the digital and distributed ledger systems under evaluation for CBDC issuance. This infrastructure forms the foundation upon which all commercial banking and payment activity ultimately settles.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:payment-infrastructure", "label": "Payment Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:payment-infrastructure",
+      "label": "Payment Infrastructure"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"},
-      {"@id": "urn:ngm:class:atomic-settlement", "label": "Atomic Settlement"},
-      {"@id": "urn:ngm:class:cbdc-infrastructure", "label": "CBDC Infrastructure"}
+      {
+        "@id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-infrastructure",
+        "label": "CBDC Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:cross-border-settlement", "label": "Cross-Border Settlement"}
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - Central banks are also custodians of foreign exchange reserves and operate the monetary policy transmission mechanism. Open market operations, standing facilities, and reserve requirements are implemented through accounts held at the central bank by commercial banks. Collateral management systems — for accepting securities as collateral for intraday credit — are integral to RTGS liquidity provision. Central securities depositories (CSDs) and central counterparties (CCPs) interface tightly with RTGS to achieve delivery-versus-payment (DVP) finality, ensuring that securities and cash legs of transactions settle simultaneously to eliminate principal risk.
 
   - Between 2022 and 2025, central bank infrastructure has faced pressure from three directions: CBDC development requiring integration of distributed ledger technologies; geopolitical fragmentation following the exclusion of Russian banks from SWIFT in 2022, accelerating interest in alternative messaging networks (CIPS in China, SPF in Russia); and the move to faster payments potentially displacing some RTGS functions. The BIS Innovation Hub's Agorá project (2024) is exploring tokenised commercial bank deposits on shared unified ledgers alongside wholesale CBDC, aiming to modernise correspondent banking while preserving the two-tier monetary system. These experiments may fundamentally reshape the architecture of central bank infrastructure by the end of the decade.
-

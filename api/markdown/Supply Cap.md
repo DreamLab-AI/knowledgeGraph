@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Supply Cap
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,24 +82,54 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:circulating-supply", "label": "Circulating Supply"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+      {
+        "@id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"}
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -115,62 +140,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:supply-cap:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7fb312bc09c777c367f72baa9c312207b8b017c478c87b41adfe85d758096246"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Supply Cap is a hard-coded or governance-determined upper bound on the total number of tokens or coins that will ever be issued by a blockchain protocol, creating programmatic scarcity that underpins deflationary monetary policy. Bitcoin's 21 million coin cap is the canonical example, encoded in the protocol's halvening schedule. Supply caps differentiate blockchain-native assets from fiat currencies and influence long-run security models as block rewards approach zero.
@@ -224,7 +193,7 @@ public: true
 
   Supply caps encode a monetary policy decision directly into protocol consensus rules, making them enforceable without central authority. Bitcoin's 21 million cap is derived from the initial 50 BTC block subsidy halving every 210,000 blocks (approximately four years); the geometric series sum converges at 20,999,999.9769 BTC. Approximately 19.8 million BTC had been mined by mid-2025, leaving just over 1 million to be issued across halvings extending to around 2140.
 
-  The supply cap's interaction with miner security is a subject of active debate. As the block subsidy diminishes, miners must rely increasingly on transaction fees to cover operational costs. If fee revenue proves insufficient—the "fee cliff" scenario—the mining industry could shrink dramatically, reducing the hash rate securing the network. Proponents argue that a mature, high-value Bitcoin network will generate ample fee demand; critics note that current fee markets are volatile and may not support the current scale of mining.
+  The supply cap's interaction with miner security is a subject of active debate. As the block subsidy diminishes, miners must rely increasingly on transaction fees to cover operational costs. If fee revenue proves insufficient—the "fee cliff" scenario—the mining industry [private] shrink dramatically, reducing the hash rate securing the network. Proponents argue that a mature, high-value Bitcoin network will generate ample fee demand; critics note that current fee markets are volatile and may not support the current scale of mining.
 
   Not all blockchain assets have supply caps. Ethereum removed its formal cap and targets a dynamically adjusted issuance rate; post-Merge, burn from EIP-1559 has at times exceeded issuance, making ETH net deflationary. Many DeFi tokens use governance-controlled minting, allowing the community to vote on additional issuance. The existence or absence of a supply cap is a primary parameter distinguishing monetary-policy designs across blockchain ecosystems.
 

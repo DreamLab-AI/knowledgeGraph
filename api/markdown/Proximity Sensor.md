@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ProximitySensor
----
-
-# Proximity Sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,17 +51,38 @@ aliases:
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:robot-sensor", "label": "Robot Sensor"},
-      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"}
+      {
+        "@id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +92,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:proximity-sensor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2ca844538bde77055fd0c9cf81651622c43fbdc292d31ac38dedf1ff91647023"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An electronic device that detects the presence or distance of nearby objects without physical contact, using capacitive, inductive, ultrasonic, optical, or magnetic principles. Proximity sensors are foundational to robotic collision avoidance, autonomous navigation, and spatial mapping in both physical and hybrid physical-digital environments.

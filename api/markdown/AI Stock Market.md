@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Stock Market
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-stock-market",
   "title": "AI Stock Market",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Investor Sentiment", "Market Volatility"],
+  "vc:outboundWikilinks": [
+    "Investor Sentiment",
+    "Market Volatility"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:computational-infrastructure", "label": "Computational Infrastructure"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

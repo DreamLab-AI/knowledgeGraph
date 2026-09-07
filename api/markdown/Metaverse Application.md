@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metaverse Application
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,20 +51,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse-architecture", "label": "Metaverse Architecture"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ]
   },
   "provenance": {
@@ -79,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-application:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c8c2679d712c1baa7b792231d41eaff2d6c5d10f18210f923e8a0cea8a62fd7c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A software application designed to operate within or alongside a metaverse platform, providing users with persistent virtual experiences including social interaction, commerce, entertainment, education, and collaboration. Metaverse applications leverage real-time 3D rendering, avatar systems, spatial audio, and interoperability standards to deliver presence-rich, cross-platform functionality within shared virtual environments.

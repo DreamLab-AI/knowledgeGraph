@@ -1,55 +1,104 @@
----
-public: true
----
-
-# Gaussian Mixture Model
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:gaussian-mixture-model", "@type":"Page", "title":"Gaussian Mixture Model", "vc:slug":"gaussian-mixture-model", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:gaussian-mixture-model",
+  "@type": "Page",
+  "title": "Gaussian Mixture Model",
+  "vc:slug": "gaussian-mixture-model",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:gaussian-mixture-model",
-  "@type":"Class",
-  "label":"Gaussian Mixture Model",
-  "definition":"A Gaussian mixture model is a probabilistic model that represents a population as a weighted combination of several Gaussian distributions, each describing a latent subpopulation or cluster. Its parameters — the mixing weights, means, and covariance matrices — are typically estimated by the expectation-maximisation algorithm, which iteratively assigns soft responsibilities to data points and updates the component parameters. As a generative latent-variable model, it supports soft clustering, density estimation, and probabilistic classification.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:latent-variable-model","label":"Latent Variable Model"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:latent-variable-model","label":"Latent Variable Model"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gaussian-mixture-model",
+  "@type": "Class",
+  "label": "Gaussian Mixture Model",
+  "definition": "A Gaussian mixture model is a probabilistic model that represents a population as a weighted combination of several Gaussian distributions, each describing a latent subpopulation or cluster. Its parameters — the mixing weights, means, and covariance matrices — are typically estimated by the expectation-maximisation algorithm, which iteratively assigns soft responsibilities to data points and updates the component parameters. As a generative latent-variable model, it supports soft clustering, density estimation, and probabilistic classification.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:latent-variable-model",
+      "label": "Latent Variable Model"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:gaussian-distribution","label":"Gaussian Distribution"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:gaussian-distribution","label":"Gaussian Distribution"},
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:clustering","label":"Clustering"},
-      {"@id":"urn:ngm:class:density-estimation","label":"Density Estimation"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "@id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:clustering","label":"Clustering"},
-      {"@id":"urn:ngm:class:density-estimation","label":"Density Estimation"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "@id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:unsupervised-learning","label":"Unsupervised Learning"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:probabilistic-model","label":"Probabilistic Model"},
-      {"@id":"urn:ngm:class:statistics","label":"Statistics"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:clustering","label":"Clustering"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

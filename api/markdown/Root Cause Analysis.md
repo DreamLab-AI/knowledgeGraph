@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Root Cause Analysis
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:root-cause-analysis", "@type": "Page", "title": "Root Cause Analysis", "vc:slug": "root-cause-analysis", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:root-cause-analysis",
+  "@type": "Page",
+  "title": "Root Cause Analysis",
+  "vc:slug": "root-cause-analysis",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

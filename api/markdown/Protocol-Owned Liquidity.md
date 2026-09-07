@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Protocol-Owned Liquidity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Protocol-owned liquidity (POL) is a DeFi treasury strategy in which a protocol acquires and holds its own trading-pair liquidity rather than renting it from third-party liquidity providers through mercenary incentives. By owning the liquidity, the protocol earns trading fees, gains durable market depth, and reduces dependence on emissions that can trigger capital flight. It was popularised by bonding mechanisms in OlympusDAO-style designs.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
     ]
   },
   "quality": 0.72

@@ -1,11 +1,233 @@
----
-public: true
----
-
-# Clustering
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:clustering", "@type":"Page", "title":"Clustering", "vc:slug":"clustering", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[ {"@id":"urn:visionflow:linked:unsupervised-learning","vc:label":"Unsupervised Learning"}, {"@id":"urn:visionflow:linked:distance-metric","vc:label":"Distance Metric"}, {"@id":"urn:visionflow:linked:feature-engineering","vc:label":"Feature Engineering"}, {"@id":"urn:visionflow:linked:embedding","vc:label":"Embedding"}, {"@id":"urn:visionflow:linked:embedding-space","vc:label":"Embedding Space"}, {"@id":"urn:visionflow:linked:gaussian-mixture-model","vc:label":"Gaussian Mixture Model"}, {"@id":"urn:visionflow:linked:anomaly-detection","vc:label":"Anomaly Detection"}, {"@id":"urn:visionflow:linked:community-detection","vc:label":"Community Detection"}, {"@id":"urn:visionflow:linked:dimensionality-reduction","vc:label":"Dimensionality Reduction"}, {"@id":"urn:visionflow:linked:predictive-analytics","vc:label":"Predictive Analytics"}, {"@id":"urn:visionflow:linked:hierarchical-clustering","vc:label":"Hierarchical Clustering"}, {"@id":"urn:visionflow:linked:graph-analytics","vc:label":"Graph Analytics"}, {"@id":"urn:visionflow:owl:class:classification","vc:label":"Classification"}, {"@id":"urn:visionflow:owl:class:regression","vc:label":"Regression"}, {"@id":"urn:visionflow:linked:dbscan","vc:label":"DBSCAN"}, {"@id":"urn:visionflow:linked:k-means","vc:label":"K-Means"}, {"@id":"urn:visionflow:linked:spectral-clustering","vc:label":"Spectral Clustering"}, {"@id":"urn:visionflow:linked:silhouette-score","vc:label":"Silhouette Score"}, {"@id":"urn:visionflow:linked:data-mining","vc:label":"Data Mining"}, {"@id":"urn:visionflow:linked:exploratory-data-analysis","vc:label":"Exploratory Data Analysis"}, {"@id":"urn:visionflow:linked:topic-modelling","vc:label":"Topic Modelling"}, {"@id":"urn:visionflow:linked:natural-language-processing","vc:label":"Natural Language Processing"}, {"@id":"urn:visionflow:linked:neural-network","vc:label":"Neural Network"}, {"@id":"urn:visionflow:linked:representation-learning","vc:label":"Representation Learning"}, {"@id":"urn:visionflow:linked:transfer-learning","vc:label":"Transfer Learning"}, {"@id":"urn:visionflow:linked:t-sne","vc:label":"t-SNE"}, {"@id":"urn:visionflow:linked:umap","vc:label":"UMAP"}, {"@id":"urn:visionflow:linked:principal-component-analysis","vc:label":"Principal Component Analysis"}, {"@id":"urn:visionflow:linked:bioinformatics","vc:label":"Bioinformatics"}, {"@id":"urn:visionflow:linked:customer-segmentation","vc:label":"Customer Segmentation"}, {"@id":"urn:visionflow:linked:vector-database","vc:label":"Vector Database"}, {"@id":"urn:visionflow:linked:large-language-model","vc:label":"Large Language Model"}, {"@id":"urn:visionflow:linked:density-estimation","vc:label":"Density Estimation"}, {"@id":"urn:visionflow:linked:graph-neural-network","vc:label":"Graph Neural Network"}, {"@id":"urn:visionflow:linked:self-supervised-learning","vc:label":"Self-Supervised Learning"}, {"@id":"urn:visionflow:linked:contrastive-learning","vc:label":"Contrastive Learning"}, {"@id":"urn:visionflow:linked:autoencoder","vc:label":"Autoencoder"}, {"@id":"urn:visionflow:linked:machine-learning","vc:label":"Machine Learning"}, {"@id":"urn:visionflow:linked:hdbscan","vc:label":"HDBSCAN"}, {"@id":"urn:visionflow:linked:expectation-maximisation","vc:label":"Expectation-Maximisation"}, {"@id":"urn:visionflow:linked:statistical-learning","vc:label":"Statistical Learning"}, {"@id":"urn:visionflow:linked:similarity-function","vc:label":"Similarity Function"}, {"@id":"urn:visionflow:linked:cell-type-identification","vc:label":"Cell Type Identification"}, {"@id":"urn:visionflow:linked:image-retrieval","vc:label":"Image Retrieval"}, {"@id":"urn:visionflow:linked:document-organisation","vc:label":"Document Organisation"}, {"@id":"urn:visionflow:linked:graph-laplacian","vc:label":"Graph Laplacian"}, {"@id":"urn:visionflow:linked:manifold-hypothesis","vc:label":"Manifold Hypothesis"}, {"@id":"urn:visionflow:linked:data-preprocessing","vc:label":"Data Preprocessing"}, {"@id":"urn:visionflow:linked:semi-supervised-learning","vc:label":"Semi-Supervised Learning"}, {"@id":"urn:visionflow:linked:bayesian-nonparametrics","vc:label":"Bayesian Nonparametrics"}, {"@id":"urn:visionflow:linked:information-theory","vc:label":"Information Theory"}, {"@id":"urn:visionflow:linked:combinatorial-optimisation","vc:label":"Combinatorial Optimisation"}, {"@id":"urn:visionflow:linked:linear-algebra","vc:label":"Linear Algebra"}, {"@id":"urn:visionflow:linked:probability-theory","vc:label":"Probability Theory"} ] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:clustering",
+  "@type": "Page",
+  "title": "Clustering",
+  "vc:slug": "clustering",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:unsupervised-learning",
+      "vc:label": "Unsupervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:distance-metric",
+      "vc:label": "Distance Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding",
+      "vc:label": "Embedding"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding-space",
+      "vc:label": "Embedding Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-mixture-model",
+      "vc:label": "Gaussian Mixture Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:community-detection",
+      "vc:label": "Community Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:dimensionality-reduction",
+      "vc:label": "Dimensionality Reduction"
+    },
+    {
+      "@id": "urn:visionflow:linked:predictive-analytics",
+      "vc:label": "Predictive Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:hierarchical-clustering",
+      "vc:label": "Hierarchical Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-analytics",
+      "vc:label": "Graph Analytics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:classification",
+      "vc:label": "Classification"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regression",
+      "vc:label": "Regression"
+    },
+    {
+      "@id": "urn:visionflow:linked:dbscan",
+      "vc:label": "DBSCAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:k-means",
+      "vc:label": "K-Means"
+    },
+    {
+      "@id": "urn:visionflow:linked:spectral-clustering",
+      "vc:label": "Spectral Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:silhouette-score",
+      "vc:label": "Silhouette Score"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-mining",
+      "vc:label": "Data Mining"
+    },
+    {
+      "@id": "urn:visionflow:linked:exploratory-data-analysis",
+      "vc:label": "Exploratory Data Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:topic-modelling",
+      "vc:label": "Topic Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:t-sne",
+      "vc:label": "t-SNE"
+    },
+    {
+      "@id": "urn:visionflow:linked:umap",
+      "vc:label": "UMAP"
+    },
+    {
+      "@id": "urn:visionflow:linked:principal-component-analysis",
+      "vc:label": "Principal Component Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:bioinformatics",
+      "vc:label": "Bioinformatics"
+    },
+    {
+      "@id": "urn:visionflow:linked:customer-segmentation",
+      "vc:label": "Customer Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:density-estimation",
+      "vc:label": "Density Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-supervised-learning",
+      "vc:label": "Self-Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:contrastive-learning",
+      "vc:label": "Contrastive Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoencoder",
+      "vc:label": "Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:hdbscan",
+      "vc:label": "HDBSCAN"
+    },
+    {
+      "@id": "urn:visionflow:linked:expectation-maximisation",
+      "vc:label": "Expectation-Maximisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-learning",
+      "vc:label": "Statistical Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:similarity-function",
+      "vc:label": "Similarity Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:cell-type-identification",
+      "vc:label": "Cell Type Identification"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-retrieval",
+      "vc:label": "Image Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:document-organisation",
+      "vc:label": "Document Organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-laplacian",
+      "vc:label": "Graph Laplacian"
+    },
+    {
+      "@id": "urn:visionflow:linked:manifold-hypothesis",
+      "vc:label": "Manifold Hypothesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-preprocessing",
+      "vc:label": "Data Preprocessing"
+    },
+    {
+      "@id": "urn:visionflow:linked:semi-supervised-learning",
+      "vc:label": "Semi-Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-nonparametrics",
+      "vc:label": "Bayesian Nonparametrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:combinatorial-optimisation",
+      "vc:label": "Combinatorial Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-algebra",
+      "vc:label": "Linear Algebra"
+    },
+    {
+      "@id": "urn:visionflow:linked:probability-theory",
+      "vc:label": "Probability Theory"
+    }
+  ]
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -180,75 +402,9 @@ public: true
   }
 }
 ```
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:clustering:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": { "@id": "urn:visionflow:page:clustering" },
-  "vc:resolutions": [
-    { "raw": "[[Unsupervised Learning]]", "resolved": "urn:visionflow:linked:unsupervised-learning", "kind": "StubLink" },
-    { "raw": "[[Distance Metric]]", "resolved": "urn:visionflow:linked:distance-metric", "kind": "StubLink" },
-    { "raw": "[[Feature Engineering]]", "resolved": "urn:visionflow:linked:feature-engineering", "kind": "StubLink" },
-    { "raw": "[[Embedding]]", "resolved": "urn:visionflow:linked:embedding", "kind": "StubLink" },
-    { "raw": "[[Embedding Space]]", "resolved": "urn:visionflow:linked:embedding-space", "kind": "StubLink" },
-    { "raw": "[[Gaussian Mixture Model]]", "resolved": "urn:visionflow:linked:gaussian-mixture-model", "kind": "StubLink" },
-    { "raw": "[[Anomaly Detection]]", "resolved": "urn:visionflow:linked:anomaly-detection", "kind": "StubLink" },
-    { "raw": "[[Community Detection]]", "resolved": "urn:visionflow:linked:community-detection", "kind": "StubLink" },
-    { "raw": "[[Dimensionality Reduction]]", "resolved": "urn:visionflow:linked:dimensionality-reduction", "kind": "StubLink" },
-    { "raw": "[[Predictive Analytics]]", "resolved": "urn:visionflow:linked:predictive-analytics", "kind": "StubLink" },
-    { "raw": "[[Hierarchical Clustering]]", "resolved": "urn:visionflow:linked:hierarchical-clustering", "kind": "StubLink" },
-    { "raw": "[[Graph Analytics]]", "resolved": "urn:visionflow:linked:graph-analytics", "kind": "StubLink" },
-    { "raw": "[[Classification]]", "resolved": "urn:visionflow:owl:class:classification", "kind": "ResolvedLink" },
-    { "raw": "[[Regression]]", "resolved": "urn:visionflow:owl:class:regression", "kind": "ResolvedLink" },
-    { "raw": "[[DBSCAN]]", "resolved": "urn:visionflow:linked:dbscan", "kind": "StubLink" },
-    { "raw": "[[K-Means]]", "resolved": "urn:visionflow:linked:k-means", "kind": "StubLink" },
-    { "raw": "[[Spectral Clustering]]", "resolved": "urn:visionflow:linked:spectral-clustering", "kind": "StubLink" },
-    { "raw": "[[Silhouette Score]]", "resolved": "urn:visionflow:linked:silhouette-score", "kind": "StubLink" },
-    { "raw": "[[Data Mining]]", "resolved": "urn:visionflow:linked:data-mining", "kind": "StubLink" },
-    { "raw": "[[Exploratory Data Analysis]]", "resolved": "urn:visionflow:linked:exploratory-data-analysis", "kind": "StubLink" },
-    { "raw": "[[Topic Modelling]]", "resolved": "urn:visionflow:linked:topic-modelling", "kind": "StubLink" },
-    { "raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink" },
-    { "raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "StubLink" },
-    { "raw": "[[Representation Learning]]", "resolved": "urn:visionflow:linked:representation-learning", "kind": "StubLink" },
-    { "raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "StubLink" },
-    { "raw": "[[t-SNE]]", "resolved": "urn:visionflow:linked:t-sne", "kind": "StubLink" },
-    { "raw": "[[UMAP]]", "resolved": "urn:visionflow:linked:umap", "kind": "StubLink" },
-    { "raw": "[[Principal Component Analysis]]", "resolved": "urn:visionflow:linked:principal-component-analysis", "kind": "StubLink" },
-    { "raw": "[[Bioinformatics]]", "resolved": "urn:visionflow:linked:bioinformatics", "kind": "StubLink" },
-    { "raw": "[[Customer Segmentation]]", "resolved": "urn:visionflow:linked:customer-segmentation", "kind": "StubLink" },
-    { "raw": "[[Vector Database]]", "resolved": "urn:visionflow:linked:vector-database", "kind": "StubLink" },
-    { "raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink" },
-    { "raw": "[[Density Estimation]]", "resolved": "urn:visionflow:linked:density-estimation", "kind": "StubLink" },
-    { "raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "StubLink" },
-    { "raw": "[[Self-Supervised Learning]]", "resolved": "urn:visionflow:linked:self-supervised-learning", "kind": "StubLink" },
-    { "raw": "[[Contrastive Learning]]", "resolved": "urn:visionflow:linked:contrastive-learning", "kind": "StubLink" },
-    { "raw": "[[Autoencoder]]", "resolved": "urn:visionflow:linked:autoencoder", "kind": "StubLink" },
-    { "raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink" },
-    { "raw": "[[HDBSCAN]]", "resolved": "urn:visionflow:linked:hdbscan", "kind": "StubLink" },
-    { "raw": "[[Expectation-Maximisation]]", "resolved": "urn:visionflow:linked:expectation-maximisation", "kind": "StubLink" },
-    { "raw": "[[Statistical Learning]]", "resolved": "urn:visionflow:linked:statistical-learning", "kind": "StubLink" },
-    { "raw": "[[Similarity Function]]", "resolved": "urn:visionflow:linked:similarity-function", "kind": "StubLink" },
-    { "raw": "[[Cell Type Identification]]", "resolved": "urn:visionflow:linked:cell-type-identification", "kind": "StubLink" },
-    { "raw": "[[Image Retrieval]]", "resolved": "urn:visionflow:linked:image-retrieval", "kind": "StubLink" },
-    { "raw": "[[Document Organisation]]", "resolved": "urn:visionflow:linked:document-organisation", "kind": "StubLink" },
-    { "raw": "[[Graph Laplacian]]", "resolved": "urn:visionflow:linked:graph-laplacian", "kind": "StubLink" },
-    { "raw": "[[Manifold Hypothesis]]", "resolved": "urn:visionflow:linked:manifold-hypothesis", "kind": "StubLink" },
-    { "raw": "[[Data Preprocessing]]", "resolved": "urn:visionflow:linked:data-preprocessing", "kind": "StubLink" },
-    { "raw": "[[Semi-Supervised Learning]]", "resolved": "urn:visionflow:linked:semi-supervised-learning", "kind": "StubLink" },
-    { "raw": "[[Bayesian Nonparametrics]]", "resolved": "urn:visionflow:linked:bayesian-nonparametrics", "kind": "StubLink" },
-    { "raw": "[[Information Theory]]", "resolved": "urn:visionflow:linked:information-theory", "kind": "StubLink" },
-    { "raw": "[[Combinatorial Optimisation]]", "resolved": "urn:visionflow:linked:combinatorial-optimisation", "kind": "StubLink" },
-    { "raw": "[[Linear Algebra]]", "resolved": "urn:visionflow:linked:linear-algebra", "kind": "StubLink" },
-    { "raw": "[[Probability Theory]]", "resolved": "urn:visionflow:linked:probability-theory", "kind": "StubLink" }
-  ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
-  "prov:generatedAtTime": { "@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime" }
-}
-```
 
 - ### Definition
-  - Clustering is a foundational [[Unsupervised Learning]] task that organises a collection of objects into groups — called clusters — such that members within a cluster are more similar to one another than to members of other clusters, as measured by a chosen [[Distance Metric]] or similarity function. Unlike [[Classification]], which assigns inputs to predefined label categories using labelled training data, clustering operates purely on unlabelled observations, discovering latent structure directly from the distributional geometry of the data. The problem is formally stated as: given a dataset X = {x₁, …, xₙ} where each xᵢ ∈ ℝᵈ, find a partition C = {C₁, …, Cₖ} (or a soft assignment) that optimises a cluster-quality criterion such as the within-cluster sum of squared distances (k-means objective), a likelihood function over a probabilistic generative model ([[Gaussian Mixture Model]]), or a graph-cut criterion ([[Spectral Clustering]]). Algorithms differ substantially in the cluster shape they can represent — centroid methods like [[K-Means]] assume convex, isotropic clusters; density-based methods like [[DBSCAN]] discover arbitrarily shaped dense regions while labelling sparse outliers as noise; [[Hierarchical Clustering]] produces a dendrogram of nested partitions; and probabilistic methods like the [[Gaussian Mixture Model]] yield soft, overlapping memberships. Modern practice supplements classical geometric algorithms with deep representational approaches: [[Autoencoder]] networks learn compact [[Embedding]] spaces in which classical algorithms achieve much higher quality, while [[Self-Supervised Learning]] and [[Contrastive Learning]] objectives train [[Neural Network]] encoders whose output [[Embedding Space]] is shaped to benefit downstream clustering. [[Dimensionality Reduction]] techniques — [[Principal Component Analysis]], [[t-SNE]], and [[UMAP]] — are routinely applied before clustering both to eliminate noise dimensions and to enable visual inspection of cluster geometry. Cluster quality is assessed without ground-truth labels using internal indices such as the [[Silhouette Score]] and the Davies-Bouldin index, or against known label sets using external metrics such as normalised mutual information. Clustering is a cornerstone of [[Data Mining]] and [[Exploratory Data Analysis]], enabling [[Customer Segmentation]], [[Anomaly Detection]], [[Topic Modelling]], [[Community Detection]] in networks and social graphs, and bioinformatics applications including single-cell RNA sequencing cell-type identification. It also serves as a preprocessing step that compresses continuous representations for [[Predictive Analytics]] and [[Representation Learning]], and increasingly runs directly on high-dimensional [[Large Language Model]] [[Embedding]] outputs stored in a [[Vector Database]].
+  - Clustering is a foundational [[Unsupervised Learning]] task that organises a collection of objects into groups — called clusters — such that members within a cluster are more similar to one another than to members of other clusters, as measured by a chosen [[Distance Metric]] or similarity function. Unlike [[Classification]], which assigns inputs to predefined label categories using labelled training data, clustering operates purely on unlabelled observations, discovering latent structure directly from the distributional geometry of the data. The problem is formally stated as: given a dataset X = {x₁, …, xₙ} where each xᵢ ∈ ℝᵈ, find a partition C = {C₁, …, Cₖ} (or a soft assignment) that optimises a cluster-quality criterion such as the within-cluster sum of squared distances (k-means objective), a likelihood function over a probabilistic generative model ([[Gaussian Mixture Model]]), or a graph-cut criterion ([[Spectral Clustering]]). Algorithms differ substantially in the cluster shape they can represent — centroid methods like [[K-Means]] assume convex, isotropic clusters; density-based methods like [[DBSCAN]] discover arbitrarily shaped dense regions while labelling sparse outliers as noise; [[Hierarchical Clustering]] produces a dendrogram of nested partitions; and probabilistic methods like the [[Gaussian Mixture Model]] yield soft, overlapping memberships. Modern practice supplements classical geometric algorithms with deep representational approaches: [[Autoencoder]] networks learn compact [[Embedding]] spaces in which classical algorithms achieve much higher quality, while [[Self-Supervised Learning]] and [[Contrastive Learning]] objectives train [[Neural Network]] encoders whose output [[Embedding Space]] is shaped to benefit downstream clustering. [[Dimensionality Reduction]] techniques — [[Principal Component Analysis]], [[t-SNE]], and [[UMAP]] — are routinely applied before clustering both to eliminate noise dimensions and to enable visual inspection of cluster geometry. Cluster quality is assessed without ground-truth labels using internal indices such as the [[Silhouette Score]] and the Davies-Bouldin [private], or against known label sets using external metrics such as normalised mutual information. Clustering is a cornerstone of [[Data Mining]] and [[Exploratory Data Analysis]], enabling [[Customer Segmentation]], [[Anomaly Detection]], [[Topic Modelling]], [[Community Detection]] in networks and social graphs, and bioinformatics applications including single-cell RNA sequencing cell-type identification. It also serves as a preprocessing step that compresses continuous representations for [[Predictive Analytics]] and [[Representation Learning]], and increasingly runs directly on high-dimensional [[Large Language Model]] [[Embedding]] outputs stored in a [[Vector Database]].
 
 - ### Semantic Classification
   - owl-class:: machine-learning:Clustering
@@ -397,9 +553,9 @@ public: true
   - **Distance / Similarity Layer**: computes pairwise affinity using Euclidean, cosine, Manhattan, or learned [[Distance Metric]]s; cosine dominates [[Large Language Model]] [[Embedding Space]] settings because embeddings live on the unit hypersphere.
   - **Representation Layer**: [[Feature Engineering]], [[Dimensionality Reduction]] (PCA → t-SNE → UMAP for visualisation; PCA alone for scaling), or a trained [[Autoencoder]] / [[Self-Supervised Learning]] encoder that maps raw inputs to a latent [[Embedding]].
   - **Partition Layer**: the core algorithm — [[K-Means]], [[DBSCAN]], [[Hierarchical Clustering]], [[Spectral Clustering]], [[Gaussian Mixture Model]], or a deep clustering network.
-  - **Evaluation Layer**: [[Silhouette Score]], Davies-Bouldin index, Calinski-Harabasz index (internal); Adjusted Rand Index, Normalised Mutual Information (external, when labels available).
+  - **Evaluation Layer**: [[Silhouette Score]], Davies-Bouldin [private], Calinski-Harabasz [private] (internal); Adjusted Rand Index, Normalised Mutual Information (external, when labels available).
   - **Post-Processing Layer**: cluster labelling, merging, outlier filtering, and soft-to-hard assignment thresholding — feeds into [[Predictive Analytics]] and downstream models.
-  - **Indexing Layer (2024+)**: in production systems handling millions of embeddings, approximate nearest-neighbour indices (FAISS, ScaNN, HNSW) backed by a [[Vector Database]] replace naive pairwise distance computation, enabling sub-linear k-means and DBSCAN execution. The Hierarchical Navigable Small World (HNSW) graph index (Malkov and Yashunin, 2020) achieves O(log n) query time for approximate nearest-neighbour retrieval with controllable recall-speed trade-offs, and is the backbone of the Weaviate, Qdrant, and Milvus [[Vector Database]] platforms used in production LLM clustering pipelines.
+  - **Indexing Layer (2024+)**: in production systems handling millions of embeddings, approximate nearest-neighbour indices (FAISS, ScaNN, HNSW) backed by a [[Vector Database]] replace naive pairwise distance computation, enabling sub-linear k-means and DBSCAN execution. The Hierarchical Navigable Small World (HNSW) graph [private] (Malkov and Yashunin, 2020) achieves O(log n) query time for approximate nearest-neighbour retrieval with controllable recall-speed trade-offs, and is the backbone of the Weaviate, Qdrant, and Milvus [[Vector Database]] platforms used in production LLM clustering pipelines.
 
   ## Use Cases / Major Families
 

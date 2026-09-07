@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Runes and Glyphs]]
-# Bitcoin Fungible Token Protocols
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,18 +59,36 @@ elevatedFrom:: [[Runes and Glyphs]]
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-objects", "label": "Digital Objects"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+      {
+        "@id": "urn:ngm:class:digital-objects",
+        "label": "Digital Objects"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenization"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenization"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
     ]
   },
   "quality": 0.35,
@@ -87,47 +99,6 @@ elevatedFrom:: [[Runes and Glyphs]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:runes-and-glyphs:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0c0f140284c906ebb6325b9fce000453e6d1cc56ad15c9a63f52c00f7af20c0d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Objects]]",
-      "resolved": "urn:visionflow:owl:class:digital-objects",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Melvin Carvalho Decentralised Web Advocate]]",
-      "resolved": "urn:visionflow:owl:class:melvin-carvalho",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Fungible Token Protocols]]",
-      "resolved": "urn:visionflow:owl:class:runes-and-glyphs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Testnet]]",
-      "resolved": "urn:visionflow:owl:class:testnet",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Runes and Glyphs refers to two complementary Bitcoin token protocols: Runes, which encodes fungible token balances directly in Bitcoin transaction outputs using OP_RETURN data, and Glyphs, a related protocol developed by Melvin Carvalho that encodes token metadata as on-chain inscriptions compatible with the Ordinals framework. Together they extend Bitcoin's base layer with native fungible asset issuance without requiring a separate blockchain, enabling DAOs, project tokens, and programmable digital objects on Bitcoin testnet and mainnet.

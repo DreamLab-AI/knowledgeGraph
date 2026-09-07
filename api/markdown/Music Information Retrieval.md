@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Music Information Retrieval
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

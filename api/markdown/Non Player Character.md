@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Non Player Character
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,19 +46,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:agent", "label": "Agent"}
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:animation", "label": "Animation"}
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ]
   },
   "provenance": {
@@ -73,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:non-player-character:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:093fe5099bff5f2059c0ac322a2823c49541120e4873537a32791f2b1d24a9fe"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An autonomous, computer-controlled character in a virtual environment that follows scripted behaviour trees, finite state machines, or AI-driven policies to interact with human users and the scene. Modern NPCs increasingly leverage conversational AI and large language models to produce contextually responsive dialogue and adaptive behavioural patterns.

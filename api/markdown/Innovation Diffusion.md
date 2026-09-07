@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Innovation Diffusion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:innovation-diffusion:1233cfb765f2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:10fd74d4844e267b22f3820bf7dfc491c64ad432cb756c9118a891ac7d2cdd51"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Technology Adoption]]",
-      "resolved": "urn:visionflow:linked:technology-adoption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agent-Based Modelling]]",
-      "resolved": "urn:visionflow:linked:agent-based-modelling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Economics]]",
-      "resolved": "urn:visionflow:linked:economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Simulation]]",
-      "resolved": "urn:visionflow:linked:simulation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Innovation diffusion is the process by which a new technology, practice or idea spreads through a population over time. It is studied with adoption curves that describe how successive groups take up an innovation.

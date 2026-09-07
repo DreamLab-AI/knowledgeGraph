@@ -1,8 +1,3 @@
----
-public: true
----
-
-# X.509 Certificate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,57 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:x-509-certificate:273c7176befb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f931480bf8389e68d171adc6f8c3d406a58c4c4524214b1e0d4866adead7d592"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Public Key Infrastructure]]",
-      "resolved": "urn:visionflow:linked:public-key-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Certificate Authority]]",
-      "resolved": "urn:visionflow:linked:certificate-authority",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Authentication]]",
-      "resolved": "urn:visionflow:linked:authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transport Layer Security]]",
-      "resolved": "urn:visionflow:linked:transport-layer-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:linked:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Certificate]]",
-      "resolved": "urn:visionflow:linked:digital-certificate",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A standardised digital certificate format that binds a public key to an identity and is signed by a certificate authority within a public key infrastructure.

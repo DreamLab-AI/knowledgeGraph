@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fluid Simulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,22 +63,52 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
-      {"@id": "urn:ngm:class:math-library", "label": "Math Library"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:math-library",
+        "label": "Math Library"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:particle-system", "label": "Particle System"},
-      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:particle-system",
+        "label": "Particle System"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"}
+      {
+        "@id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      }
     ]
   },
   "provenance": {
@@ -93,47 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fluid-simulation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:41f1053029cc81e84e29cd3b7a5db86c2a338811a316034de102e90a1bca17ee"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CFD]]",
-      "resolved": "urn:visionflow:linked:cfd",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physics Engine]]",
-      "resolved": "urn:visionflow:owl:class:physics-engine",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Physics simulation of liquid and gas dynamics using computational fluid dynamics (CFD) techniques to model realistic water, smoke, and atmospheric effects in virtual environments.

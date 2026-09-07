@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fee Tier
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A fee tier is a discrete level of trading or swap fee applied to a market or liquidity pool, allowing different markets to charge fees commensurate with their volatility and liquidity risk. On automated-market-maker decentralized exchanges, each pool is created under a chosen fee tier (for example 0.05%, 0.30%, or 1.00%), and the collected fees accrue to liquidity providers. Tiering lets stable pairs use low fees while volatile or exotic pairs use higher fees to compensate providers.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
-      {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"}
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
     ]
   },
   "quality": 0.72

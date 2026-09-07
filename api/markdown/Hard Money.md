@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hard Money
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Hard money refers to a form of money whose supply is difficult to expand, giving it a high stock-to-flow ratio and resistance to debasement. Historically embodied by gold, the concept extends to assets like Bitcoin whose issuance is algorithmically constrained. Hard money is valued as a store of value because its scarcity cannot be diluted by discretionary issuance.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:store-of-value", "label": "Store of Value"},
-      {"@id": "urn:ngm:class:gold", "label": "Gold"}
+      {
+        "@id": "urn:ngm:class:store-of-value",
+        "label": "Store of Value"
+      },
+      {
+        "@id": "urn:ngm:class:gold",
+        "label": "Gold"
+      }
     ]
   },
   "quality": 0.72

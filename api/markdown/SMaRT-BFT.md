@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SMaRT-BFT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,26 @@ public: true
   "definition": "SMaRT-BFT is a Byzantine fault tolerant consensus approach built on the SMaRt (State Machine Replication) library, used to order transactions deterministically across a fixed set of validating nodes. It tolerates up to f faulty replicas out of 3f+1 total while guaranteeing safety and liveness under partial synchrony. It is commonly deployed in permissioned ledgers where validator identity is known and high throughput with finality is required.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:consensus-protocol",
+      "label": "Consensus Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"},
-      {"@id": "urn:ngm:class:blockchain-as-a-service", "label": "Blockchain As A Service"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-as-a-service",
+        "label": "Blockchain As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ]
   },
   "quality": 0.72

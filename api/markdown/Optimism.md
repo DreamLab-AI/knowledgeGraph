@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optimism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -212,67 +207,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:optimism:c9c3722d768c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:628d9f74a2c65d77f4a23598df015a0e5077defc868cf6e3a03d6315e2800c51"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rollup]]",
-      "resolved": "urn:visionflow:linked:rollup",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fraud Proof]]",
-      "resolved": "urn:visionflow:linked:fraud-proof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Arbitrum]]",
-      "resolved": "urn:visionflow:linked:arbitrum",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[zkSync]]",
-      "resolved": "urn:visionflow:linked:zk-sync",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Polygon]]",
-      "resolved": "urn:visionflow:linked:polygon",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Optimism is an Ethereum layer-2 scaling network that uses optimistic rollup technology to process transactions off the main chain while inheriting Ethereum security. Launched on mainnet in late 2021 by OP Labs, it batches transactions and posts compressed data and state commitments to Ethereum, assuming validity unless challenged within a dispute window. It is closely associated with the OP Stack, a modular open-source framework for building rollup chains, and the broader Superchain concept that links such chains. The OP token governs the Optimism Collective and funds public-goods initiatives through retroactive funding rounds.

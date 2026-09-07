@@ -1,8 +1,3 @@
----
-public: true
----
-
-# First Party Data
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

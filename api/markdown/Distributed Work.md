@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DistributedWork
----
-
-# Distributed Work
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,19 +51,40 @@ aliases:
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:xr-meeting-space", "label": "XR Meeting Space"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:xr-meeting-space",
+        "label": "XR Meeting Space"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +94,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:distributed-work:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eab65b892f4488a0480697446b05573615bd2bdcd88ffb23446518592d0a4aa2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Organisational models, practices, and enabling technologies that allow geographically dispersed teams to collaborate effectively whilst maintaining productivity, cohesion, and wellbeing. Distributed work encompasses remote, hybrid, and globally distributed team configurations, supported by asynchronous communication norms, shared documentation practices, and virtual presence technologies ranging from video conferencing to XR meeting spaces.

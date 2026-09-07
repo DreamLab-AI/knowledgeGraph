@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Federated System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A federated system is a distributed architecture composed of autonomous, independently operated nodes or servers that cooperate under shared protocols while retaining local control over their own data and policies. Unlike fully centralised systems, federation distributes authority across multiple operators, and unlike fully decentralised peer-to-peer networks, it relies on a finite set of identifiable, semi-trusted servers. This model underpins federated social networks, messaging, and consortium-style trust arrangements.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:fedimint", "label": "Fedimint"},
-      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"}
+      {
+        "@id": "urn:ngm:class:fedimint",
+        "label": "Fedimint"
+      },
+      {
+        "@id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      }
     ]
   },
   "quality": 0.72

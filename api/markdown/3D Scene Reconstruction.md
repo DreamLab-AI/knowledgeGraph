@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Scene Reconstruction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +21,53 @@ public: true
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"}
+    {
+      "@id": "urn:ngm:class:3-d-reconstruction",
+      "label": "3D Reconstruction"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
-      {"@id": "urn:ngm:class:multi-view-stereo", "label": "Multi-View Stereo"}
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "@id": "urn:ngm:class:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin-creation", "label": "Digital Twin Creation"},
-      {"@id": "urn:ngm:class:3-d-perception", "label": "3D Perception"},
-      {"@id": "urn:ngm:class:ar-registration", "label": "AR Registration"}
+      {
+        "@id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-perception",
+        "label": "3D Perception"
+      },
+      {
+        "@id": "urn:ngm:class:ar-registration",
+        "label": "AR Registration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-scanning", "label": "3D Scanning"},
-      {"@id": "urn:ngm:class:ne-rf", "label": "NeRF"},
-      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"}
+      {
+        "@id": "urn:ngm:class:3-d-scanning",
+        "label": "3D Scanning"
+      },
+      {
+        "@id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +88,3 @@ public: true
   - Neural reconstruction methods have transformed the state of the art since 2020. NeRF learns a continuous volumetric radiance field from posed images, yielding photo-realistic novel-view synthesis from arbitrary camera positions. Gaussian splatting (2023) represents scenes as collections of 3D Gaussians with learnable colour and opacity, enabling real-time rendering while preserving reconstruction quality. These methods are displacing classical mesh-based pipelines for visual-effects and spatial computing workflows that prioritise appearance fidelity over explicit geometric access.
 
   - Through 2024–2025, scene reconstruction is integrating with semantic understanding: systems now simultaneously recover geometry and assign semantic labels to regions, enabling navigation-ready scene graphs. Foundation-model-guided priors improve reconstruction quality in occluded and low-texture regions. Reconstruction from moving video on mobile devices (using LiDAR-equipped smartphones) enables widespread capture without specialised equipment. Industrial digital-twin platforms are standardising on neural reconstruction pipelines for rapid site capture and ongoing change detection.
-

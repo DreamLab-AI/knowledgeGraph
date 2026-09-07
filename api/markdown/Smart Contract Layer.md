@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Smart Contract Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:smart-contract-layer:31be7be17e9b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:db9b4b264d607791381a95eefd991cd6dbb7b005ee78ca8a668a7163378fa01e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Middleware Layer]]",
-      "resolved": "urn:visionflow:linked:middleware-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Layer]]",
-      "resolved": "urn:visionflow:linked:consensus-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Virtual Machine]]",
-      "resolved": "urn:visionflow:linked:ethereum-virtual-machine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralised Finance]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Smart Contract Layer is the stratum that holds self-executing programmes whose logic runs deterministically against agreed state. In the canonical stack it sits above the Middleware Layer and below the Application Layer, turning a shared ledger into a programmable platform. It contains contract code, virtual machine execution semantics, and the state these contracts read and write.

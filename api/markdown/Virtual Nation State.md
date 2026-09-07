@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Nation State
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -109,37 +104,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-nation-state:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:433511d19c65c1d6bfa9025a20d783caad1070d07d636dcb6260b2591a16ecdf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Governance]]",
-      "resolved": "urn:visionflow:owl:class:digital-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A digital sovereign entity existing within metaverse platforms that offers forms of virtual citizenship, governance structures, economic systems, and legal frameworks, potentially providing e-residency, digital identity, and participation in virtual economies independent of geographic territory.
 
@@ -161,7 +125,7 @@ public: true
 - ### Content
 
   - ## Overview
-  - Virtual nation states are emerging digital entities that challenge traditional concepts of geographic sovereignty. Tuvalu announced plans at COP27 to become the first digitized nation in the metaverse. Palau offers digital residency with over 300,000 applicants, while Barbados is building a virtual embassy. KPMG predicts digital citizenship could replace physical passports by 2040.
+  - Virtual nation states are emerging digital entities that challenge traditional concepts of geographic sovereignty. Tuvalu announced plans at COP27 to become the first digitized nation in the metaverse. Palau offers digital residency with over 300,000 applicants, while Barbados is building a virtual embassy. KPMG predicts digital citizenship [private] replace physical passports by 2040.
   - ## Technical Details
   - ### Governance Models
 		- **Centralized Platforms**: Corporate-controlled closed metaverses

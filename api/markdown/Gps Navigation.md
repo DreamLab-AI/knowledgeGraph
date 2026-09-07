@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Gps Navigation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

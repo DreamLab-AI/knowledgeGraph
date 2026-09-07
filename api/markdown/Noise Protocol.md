@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Noise Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The Noise Protocol Framework is a toolkit for building secure cryptographic handshake protocols based on Diffie-Hellman key agreement. Rather than a single fixed protocol, it defines a set of composable handshake patterns from which designers select to obtain specific authentication, confidentiality, and forward-secrecy properties. Its simplicity and clear security properties have made it the basis for transport security in messaging and peer-to-peer systems.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:signal-protocol", "label": "Signal Protocol"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:signal-protocol",
+        "label": "Signal Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ]
   },
   "quality": 0.72

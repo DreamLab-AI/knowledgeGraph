@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -225,67 +220,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:asset-management:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6c653f59ec06a4c3adffaa332ee1b04b7e039c49816978f716670ddd1be990b7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Custody]]",
-      "resolved": "urn:visionflow:linked:custody",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Financial Services]]",
-      "resolved": "urn:visionflow:linked:financial-services",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Institutional Investment]]",
-      "resolved": "urn:visionflow:linked:institutional-investment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Portfolio Management]]",
-      "resolved": "urn:visionflow:linked:portfolio-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Finance (DeFi)]]",
-      "resolved": "urn:visionflow:owl:class:decentralized-finance-de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tokenization]]",
-      "resolved": "urn:visionflow:owl:class:tokenization",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The professional management of digital and traditional assets through strategies including portfolio construction, risk management, custody, and performance optimization. In the context of fintech and DeFi, asset management encompasses crypto portfolio management, tokenized securities, yield optimization, and institutional-grade custody solutions that enable investors to navigate volatile digital markets while maximizing risk-adjusted returns.

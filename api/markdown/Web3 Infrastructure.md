@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Web3 Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -216,57 +211,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:web-3-infrastructure:2c92c4123aa1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:48288d06bcb9a1172a94d4604571ebc39ff09d8bbc63a523018326264d0ecaea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Distributed Ledger Technology]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Identity]]",
-      "resolved": "urn:visionflow:linked:decentralised-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:linked:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://ethereum.org/en/developers/docs/]]",
-      "resolved": "urn:visionflow:linked:https-ethereum-org-en-developers-docs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Web3]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-web-3",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Web3 infrastructure is the set of protocols, nodes, storage and tooling that supports decentralised applications built on blockchain networks.

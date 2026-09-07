@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - InternetOfThings
----
-
-# internet of things
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

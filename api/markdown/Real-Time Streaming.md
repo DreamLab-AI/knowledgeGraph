@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time Streaming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,11 +21,22 @@ public: true
   "vc:plainGloss": "Sending information as a steady live flow that you receive bit by bit the moment it is ready, rather than waiting for the whole thing to arrive first — the same way an AI assistant's reply appears word by word as it is written. It keeps things feeling instant and interactive.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent-event-stream", "label": "Agent Event Stream"},
-      {"@id": "urn:ngm:class:virtual-performance-space", "label": "Virtual Performance Space"}
+      {
+        "@id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-performance-space",
+        "label": "Virtual Performance Space"
+      }
     ]
   },
   "quality": 0.72

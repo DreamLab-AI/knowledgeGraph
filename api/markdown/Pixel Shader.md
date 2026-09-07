@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pixel Shader
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,57 +183,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pixel-shader:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:71fe2594f02a175665cc9f2ff38b2d7d09c28f333ff0b53c7114984c94555f6e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Normal Mapping]]",
-      "resolved": "urn:visionflow:linked:normal-mapping",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compute Shader]]",
-      "resolved": "urn:visionflow:owl:class:compute-shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physically-Based Rendering]]",
-      "resolved": "urn:visionflow:owl:class:physically-based-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Texture Mapping]]",
-      "resolved": "urn:visionflow:owl:class:texture-mapping",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vertex Shader]]",
-      "resolved": "urn:visionflow:owl:class:vertex-shader",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A programmable GPU stage that executes once per rasterised fragment, determining each pixel's final colour and depth by sampling textures, computing lighting models, and applying material properties. Pixel shaders operate in a massively parallel fashion and are the primary site for physically-based rendering calculations in real-time graphics pipelines.

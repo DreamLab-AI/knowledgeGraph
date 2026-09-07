@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BLS Signature
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,4 +157,3 @@ public: true
   - Ethereum's Beacon Chain, launched in 2020, uses BLS12-381 signatures throughout: each validator signs attestations and block proposals with BLS, and the chain aggregates thousands of attestations per slot into a few hundred bytes. Filecoin similarly uses BLS for message signing. Outside blockchains, BLS is being adopted in threshold cryptography libraries (e.g., BLST, MCL), distributed key generation protocols (DKG), and privacy-preserving systems where succinct multi-party authentication is needed.
 
   - In 2024–2025 BLS signatures are becoming a standard primitive across the proof-of-stake ecosystem. Ethereum's Pectra upgrade introduced EIP-2537 (BLS12-381 precompile), reducing gas cost of on-chain BLS verification by roughly 10×. Work on BLS-based distributed validator technology (DVT) by projects such as Obol and SSV Network enables fault-tolerant validator clusters without custodial risk. Research into BLS-based recursive SNARK aggregation and post-quantum hybrid schemes is active, though BLS itself is vulnerable to sufficiently large quantum computers, prompting work on migration paths.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Verifiable Inference
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Verifiable inference is the capability to cryptographically prove that a specific machine-learning model produced a given output for a given input without requiring trust in the compute provider. Techniques include zero-knowledge proofs of model execution (zkML), trusted execution environments and optimistic verification, which let third parties audit results. It is essential for decentralised and trust-minimised AI compute markets where inference is outsourced.",
   "domain": "ai",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:prime-intellect", "label": "Prime Intellect"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:prime-intellect",
+        "label": "Prime Intellect"
+      }
+    ]
   },
   "quality": 0.72
 }

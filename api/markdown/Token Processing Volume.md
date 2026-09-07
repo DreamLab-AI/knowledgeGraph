@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Token Processing Volume
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "token-processing-volume",
   "title": "Token Processing Volume",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Compute Scale", "Google AI Infrastructure", "Token Processing"],
+  "vc:outboundWikilinks": [
+    "Compute Scale",
+    "Google AI Infrastructure",
+    "Token Processing"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}, {"@id": "urn:ngm:class:inference-layer", "label": "Inference Layer"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:inference-layer",
+        "label": "Inference Layer"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

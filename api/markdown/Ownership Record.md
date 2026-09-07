@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ownership Record
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "An Ownership Record is a persistent entry that attests who holds title to an asset at a given time. On a blockchain it is an immutable, timestamped ledger entry binding an asset identifier to a controlling address, providing tamper-evident provenance and transfer history. Such records underpin tokenized assets like certificates and royalty instruments where verifiable, auditable ownership is essential.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-token-and-asset", "label": "Token and Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:creator-royalty-token", "label": "Creator Royalty Token"}
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      }
     ]
   },
   "quality": 0.72

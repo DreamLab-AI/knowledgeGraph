@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Factor Authentication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -218,7 +213,7 @@ public: true
   - #### Risk-Based / Step-Up Authentication
     - [[Adaptive Authentication]] engines evaluate contextual signals at login time and decide dynamically whether to require an additional factor, which factor to require, or whether to block the attempt entirely. This integrates with [[Risk Management]] frameworks and reduces friction for routine low-risk sessions.
   - #### Challenge-Response
-    - Some possession-based schemes issue a server challenge that the authenticator signs or transforms using a [[Cryptographic Keys]] operation, returning a response only the legitimate device could produce. This prevents replay attacks.
+    - Some possession-based schemes issue a server challenge that the authenticator signs or transforms using a [[Cryptographic Keys]] operation, returning a response only the legitimate device [private] produce. This prevents replay attacks.
 
 - ### Applications and Use Cases
   - **Consumer account protection** — social media, email, and banking platforms offer or require TOTP or push-based MFA to protect end-user accounts from credential-stuffing attacks

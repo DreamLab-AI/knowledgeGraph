@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mantle
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mantle:c38e8334242f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9d6e5b3a489bfb22adef802c5f99337673f4f25fc432fccadcfd70e272abf94c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rollup]]",
-      "resolved": "urn:visionflow:linked:rollup",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimistic Rollup]]",
-      "resolved": "urn:visionflow:linked:optimistic-rollup",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 2 Scaling]]",
-      "resolved": "urn:visionflow:linked:layer-2-scaling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.mantle.xyz]]",
-      "resolved": "urn:visionflow:linked:https-www-mantle-xyz",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.mantle.xyz]]",
-      "resolved": "urn:visionflow:linked:https-docs-mantle-xyz",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Mantle is an Ethereum layer-two network that uses a rollup design to lower transaction costs and increase throughput. It separates data availability from execution.

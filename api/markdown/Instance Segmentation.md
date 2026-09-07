@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Instance Segmentation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,47 +186,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:instance-segmentation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0944cda4ff32e05db418b00431115fb29868b64252f38ebd55afe521235b67d4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Object Detection]]",
-      "resolved": "urn:visionflow:owl:class:object-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Panoptic Segmentation]]",
-      "resolved": "urn:visionflow:owl:class:panoptic-segmentation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Segmentation]]",
-      "resolved": "urn:visionflow:owl:class:semantic-segmentation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Instance Segmentation extends object detection by predicting precise pixel-level masks for each individual object instance, combining object detection with semantic segmentation to delineate exact boundaries of distinct objects. Instance segmentation models (Mask R-CNN, YOLACT, SOLOv2) enable fine-grained object localisation essential for robotics manipulation, autonomous driving, and medical image analysis.
 
@@ -262,16 +216,16 @@ public: true
 					- Some analysts argue that large central bank balance sheets can have adverse effects on market functioning. For instance, the Bank for International Settlements (BIS) notes that while central bank balance sheet expansions initially had positive effects, they also led to concerns about market distortions and long-term financial stability risks[](https://www.bis.org/publ/mktc11.pdf)[](https://www.bis.org/publ/bppdf/bispap66b.pdf). Additionally, the European Central Bank (ECB) has highlighted that excessive risk-taking by central banks can [undermine their credibility and the public's perception of their ability to deliver on their mandates](https://www.ecb.europa.eu/pub/pdf/other/mb201309_focus05.en.pdf).
 
   - #### 4.12.8 AI Promoting Freedom
-  However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+  However, AI [private] also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI [private] also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
 
   - #### 4.12.8 AI Promoting Freedom
-  However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+  However, AI [private] also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI [private] also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
 
   - #### 4.12.8 AI Promoting Freedom
-  However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+  However, AI [private] also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI [private] also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
 
   - #### 4.12.8 AI Promoting Freedom
-  However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+  However, AI [private] also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI [private] also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
 
   ## Core Characteristics
 

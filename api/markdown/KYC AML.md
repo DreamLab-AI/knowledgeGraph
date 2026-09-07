@@ -1,8 +1,3 @@
----
-public: true
----
-
-# KYC/AML
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "KYC/AML refers to Know Your Customer and Anti-Money Laundering regulatory requirements that obligate financial institutions to verify customer identities and monitor transactions for illicit activity. KYC governs identity verification and risk profiling at onboarding, while AML covers ongoing monitoring, suspicious-activity reporting and sanctions screening. These regimes shape compliance for banks, exchanges and crypto-asset service providers.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-identity", "label": "Distributed Identity"},
-      {"@id": "urn:ngm:class:blockchain-analysis", "label": "Blockchain Analysis"}
+      {
+        "@id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-analysis",
+        "label": "Blockchain Analysis"
+      }
     ]
   },
   "quality": 0.72

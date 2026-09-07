@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Character Rigging
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:character-rigging:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8cf9b6758ca95b2b4c52a8b90edac409cec25ebe89a26095efc976e9ad356cbd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Character Animation]]",
-      "resolved": "urn:visionflow:linked:character-animation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Motion Capture Retargeting]]",
-      "resolved": "urn:visionflow:linked:motion-capture-retargeting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Skeletal Animation]]",
-      "resolved": "urn:visionflow:linked:skeletal-animation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Skinning]]",
-      "resolved": "urn:visionflow:linked:skinning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Weight Painting]]",
-      "resolved": "urn:visionflow:linked:weight-painting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Animation Technique]]",
-      "resolved": "urn:visionflow:owl:class:animation-technique",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Character Model]]",
-      "resolved": "urn:visionflow:owl:class:character-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of creating a hierarchical skeleton of interconnected bones and joints within a 3D character model, along with control systems and deformation rules, enabling animators to manipulate the mesh through inverse kinematics and forward kinematics for realistic movement.

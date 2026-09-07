@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automated Reasoning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,34 +7,118 @@ public: true
   "title": "Automated Reasoning",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:symbolic-reasoning", "vc:label": "Symbolic Reasoning"},
-    {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:logic-programming", "vc:label": "Logic Programming"},
-    {"@id": "urn:visionflow:linked:expert-systems", "vc:label": "Expert Systems"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:automated-theorem-proving", "vc:label": "Automated Theorem Proving"},
-    {"@id": "urn:visionflow:linked:constraint-satisfaction", "vc:label": "Constraint Satisfaction"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:symbolic-ai", "vc:label": "Symbolic AI"},
-    {"@id": "urn:visionflow:linked:automated-planning", "vc:label": "Automated Planning"},
-    {"@id": "urn:visionflow:linked:neuro-symbolic-ai", "vc:label": "Neuro Symbolic Ai"},
-    {"@id": "urn:visionflow:linked:probabilistic-reasoning", "vc:label": "Probabilistic Reasoning"},
-    {"@id": "urn:visionflow:linked:description-logic", "vc:label": "Description Logic"},
-    {"@id": "urn:visionflow:linked:sat-solving", "vc:label": "SAT Solving"},
-    {"@id": "urn:visionflow:linked:model-checking", "vc:label": "Model Checking"},
-    {"@id": "urn:visionflow:linked:first-order-logic", "vc:label": "First-Order Logic"},
-    {"@id": "urn:visionflow:linked:program-synthesis", "vc:label": "Program Synthesis"},
-    {"@id": "urn:visionflow:linked:inference-engine", "vc:label": "Inference Engine"},
-    {"@id": "urn:visionflow:linked:formal-methods", "vc:label": "Formal Methods"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:automatic-differentiation", "vc:label": "Automatic Differentiation"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:ontology", "vc:label": "Ontology"},
-    {"@id": "urn:visionflow:linked:semantic-web", "vc:label": "Semantic Web Linked Data Standard"}
+    {
+      "@id": "urn:visionflow:linked:symbolic-reasoning",
+      "vc:label": "Symbolic Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-verification",
+      "vc:label": "Formal Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:logic-programming",
+      "vc:label": "Logic Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:expert-systems",
+      "vc:label": "Expert Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-theorem-proving",
+      "vc:label": "Automated Theorem Proving"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-satisfaction",
+      "vc:label": "Constraint Satisfaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-planning",
+      "vc:label": "Automated Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neuro-symbolic-ai",
+      "vc:label": "Neuro Symbolic Ai"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-reasoning",
+      "vc:label": "Probabilistic Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:description-logic",
+      "vc:label": "Description Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:sat-solving",
+      "vc:label": "SAT Solving"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-checking",
+      "vc:label": "Model Checking"
+    },
+    {
+      "@id": "urn:visionflow:linked:first-order-logic",
+      "vc:label": "First-Order Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:program-synthesis",
+      "vc:label": "Program Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-engine",
+      "vc:label": "Inference Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-methods",
+      "vc:label": "Formal Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic-differentiation",
+      "vc:label": "Automatic Differentiation"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-web",
+      "vc:label": "Semantic Web Linked Data Standard"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -60,47 +139,119 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:theorem-proving", "label": "Theorem Proving"},
-      {"@id": "urn:ngm:class:sat-solving", "label": "SAT Solving"},
-      {"@id": "urn:ngm:class:model-checking", "label": "Model Checking"},
-      {"@id": "urn:ngm:class:description-logic", "label": "Description Logic"}
+      {
+        "@id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "@id": "urn:ngm:class:sat-solving",
+        "label": "SAT Solving"
+      },
+      {
+        "@id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
+      },
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:formal-logic", "label": "Formal Logic"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
+      {
+        "@id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:program-synthesis", "label": "Program Synthesis"}
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:program-synthesis",
+        "label": "Program Synthesis"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:first-order-logic", "label": "First-Order Logic"},
-      {"@id": "urn:ngm:class:constraint-satisfaction", "label": "Constraint Satisfaction"}
+      {
+        "@id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:expert-systems", "label": "Expert Systems"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:probabilistic-reasoning", "label": "Probabilistic Reasoning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:symbolic-reasoning", "label": "Symbolic Reasoning"},
-      {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"},
-      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neurosymbolic AI"}
+      {
+        "@id": "urn:ngm:class:symbolic-reasoning",
+        "label": "Symbolic Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neurosymbolic AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:formal-methods", "label": "Formal Methods"}
+      {
+        "@id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:computational-logic", "label": "Computational Logic"},
-    {"@id": "urn:ngm:class:machine-reasoning", "label": "Machine Reasoning"}
+    {
+      "@id": "urn:ngm:class:computational-logic",
+      "label": "Computational Logic"
+    },
+    {
+      "@id": "urn:ngm:class:machine-reasoning",
+      "label": "Machine Reasoning"
+    }
   ],
   "quality": 0.91,
   "provenance": {
@@ -108,47 +259,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "FullEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:automated-reasoning:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:automated-reasoning"},
-  "vc:resolutions": [
-    {"raw": "[[Symbolic Reasoning]]", "resolved": "urn:visionflow:linked:symbolic-reasoning", "kind": "ResolvedLink"},
-    {"raw": "[[Formal Verification]]", "resolved": "urn:visionflow:linked:formal-verification", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "ResolvedLink"},
-    {"raw": "[[Logic Programming]]", "resolved": "urn:visionflow:linked:logic-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Expert Systems]]", "resolved": "urn:visionflow:linked:expert-systems", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:linked:knowledge-graph", "kind": "ResolvedLink"},
-    {"raw": "[[Automated Theorem Proving]]", "resolved": "urn:visionflow:linked:automated-theorem-proving", "kind": "ResolvedLink"},
-    {"raw": "[[Constraint Satisfaction]]", "resolved": "urn:visionflow:linked:constraint-satisfaction", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Symbolic AI]]", "resolved": "urn:visionflow:linked:symbolic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Automated Planning]]", "resolved": "urn:visionflow:linked:automated-planning", "kind": "ResolvedLink"},
-    {"raw": "[[Neuro Symbolic Ai]]", "resolved": "urn:visionflow:linked:neuro-symbolic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Probabilistic Reasoning]]", "resolved": "urn:visionflow:linked:probabilistic-reasoning", "kind": "StubLink"},
-    {"raw": "[[Description Logic]]", "resolved": "urn:visionflow:linked:description-logic", "kind": "StubLink"},
-    {"raw": "[[SAT Solving]]", "resolved": "urn:visionflow:linked:sat-solving", "kind": "StubLink"},
-    {"raw": "[[Model Checking]]", "resolved": "urn:visionflow:linked:model-checking", "kind": "StubLink"},
-    {"raw": "[[First-Order Logic]]", "resolved": "urn:visionflow:linked:first-order-logic", "kind": "StubLink"},
-    {"raw": "[[Program Synthesis]]", "resolved": "urn:visionflow:linked:program-synthesis", "kind": "StubLink"},
-    {"raw": "[[Inference Engine]]", "resolved": "urn:visionflow:linked:inference-engine", "kind": "StubLink"},
-    {"raw": "[[Formal Methods]]", "resolved": "urn:visionflow:linked:formal-methods", "kind": "StubLink"},
-    {"raw": "[[AI Alignment]]", "resolved": "urn:visionflow:linked:ai-alignment", "kind": "StubLink"},
-    {"raw": "[[Automatic Differentiation]]", "resolved": "urn:visionflow:linked:automatic-differentiation", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Bayesian Inference]]", "resolved": "urn:visionflow:linked:bayesian-inference", "kind": "StubLink"},
-    {"raw": "[[Ontology]]", "resolved": "urn:visionflow:linked:ontology", "kind": "StubLink"},
-    {"raw": "[[Semantic Web Linked Data Standard]]", "resolved": "urn:visionflow:linked:semantic-web", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -365,7 +475,7 @@ public: true
 
     **2. Deductive Software Verification and Program Synthesis**
 
-    Lean 4, Coq, Isabelle/HOL, and Dafny enable machine-checked correctness proofs of software artefacts with safety implications. The seL4 verified microkernel (NICTA/Data61/CSIRO, 2009) provided a Isabelle/HOL proof of functional correctness, security enforcement, and binary-level correspondence for a real OS kernel — the first such proof for a production system. CompCert (INRIA) provides a formally verified C compiler with Coq-proven semantic preservation, used in safety-critical embedded systems (aviation, nuclear control) where compiler bugs could catastrophically miscompile verified software. Dafny (Microsoft Research, K. Rustan M. Leino 2010) provides an integrated verification language where programmers annotate code with pre/post-conditions and loop invariants, and an SMT-backed verifier checks correctness automatically — adopted in formal verification of AWS services and cryptographic libraries. Amazon Bedrock Automated Reasoning Checks (2023) represent the first hyperscaler product built explicitly on autoformalization pipelines: they translate AWS IAM policies expressed in natural language into formal S-expression constraint representations and invoke Z3/SMT verification to check policy properties (principally least-privilege, non-contradiction, and completeness), enabling security analysts to receive machine-verified policy guarantees without bespoke formal methods expertise.
+    Lean 4, Coq, Isabelle/HOL, and Dafny enable machine-checked correctness proofs of software artefacts with safety implications. The seL4 verified microkernel (NICTA/Data61/CSIRO, 2009) provided a Isabelle/HOL proof of functional correctness, security enforcement, and binary-level correspondence for a real OS kernel — the first such proof for a production system. CompCert (INRIA) provides a formally verified C compiler with Coq-proven semantic preservation, used in safety-critical embedded systems (aviation, nuclear control) where compiler bugs [private] catastrophically miscompile verified software. Dafny (Microsoft Research, K. Rustan M. Leino 2010) provides an integrated verification language where programmers annotate code with pre/post-conditions and loop invariants, and an SMT-backed verifier checks correctness automatically — adopted in formal verification of AWS services and cryptographic libraries. Amazon Bedrock Automated Reasoning Checks (2023) represent the first hyperscaler product built explicitly on autoformalization pipelines: they translate AWS IAM policies expressed in natural language into formal S-expression constraint representations and invoke Z3/SMT verification to check policy properties (principally least-privilege, non-contradiction, and completeness), enabling security analysts to receive machine-verified policy guarantees without bespoke formal methods expertise.
 
     **3. Ontology and Knowledge Graph Reasoning**
 

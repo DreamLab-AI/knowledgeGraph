@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Image Preprocessing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

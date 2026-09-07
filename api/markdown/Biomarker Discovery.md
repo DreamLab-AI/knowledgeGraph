@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Biomarker Discovery
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

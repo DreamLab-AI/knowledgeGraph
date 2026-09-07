@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Economic Finality
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:economic-finality", "@type":"Page", "title":"Economic Finality", "vc:slug":"economic-finality", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:economic-finality",
+  "@type": "Page",
+  "title": "Economic Finality",
+  "vc:slug": "economic-finality",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -98,6 +103,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - Economic finality guarantees that reverting a finalised block would cost an attacker an economically prohibitive amount of staked capital via [[Slashing]]. Built on [[Proof of Stake]] and validator [[Staking]], it is a cryptoeconomic strengthening of [[Finality]] that underwrites [[Settlement Finality]].
 - ### Overview

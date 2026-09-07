@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ransomware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,16 +7,39 @@ public: true
   "title": "Ransomware",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:malware", "vc:label": "Malware"},
-    {"@id": "urn:visionflow:linked:encryption", "vc:label": "Encryption"},
-    {"@id": "urn:visionflow:linked:data-breach", "vc:label": "Data Breach"},
-    {"@id": "urn:visionflow:linked:disaster-recovery", "vc:label": "Disaster Recovery"},
-    {"@id": "urn:visionflow:linked:incident-response", "vc:label": "Incident Response"},
-    {"@id": "urn:visionflow:linked:bitcoin", "vc:label": "Bitcoin"}
+    {
+      "@id": "urn:visionflow:linked:malware",
+      "vc:label": "Malware"
+    },
+    {
+      "@id": "urn:visionflow:linked:encryption",
+      "vc:label": "Encryption"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-breach",
+      "vc:label": "Data Breach"
+    },
+    {
+      "@id": "urn:visionflow:linked:disaster-recovery",
+      "vc:label": "Disaster Recovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:incident-response",
+      "vc:label": "Incident Response"
+    },
+    {
+      "@id": "urn:visionflow:linked:bitcoin",
+      "vc:label": "Bitcoin"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -40,13 +58,28 @@ public: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-breach", "label": "Data Breach"},
-      {"@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
+      {
+        "@id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
     ]
   },
   "quality": 0.8,

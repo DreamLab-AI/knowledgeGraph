@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proof of Reserves
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -121,6 +117,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Proof of reserves is a cryptographic auditing technique by which a custodial entity, such as a cryptocurrency exchange or stablecoin issuer, demonstrates that it holds sufficient assets to cover its customer liabilities. The asset side is typically attested by publishing on-chain wallet ownership, while the liability side is committed using a Merkle tree so that individual customers can verify their balance is included without exposing the full ledger. More advanced schemes combine these with zero-knowledge proofs to prove solvency while preserving the confidentiality of total liabilities and individual balances.
   - Related core concepts: [[Merkle Tree]] [[Stablecoin]] [[Zero-Knowledge Proof]] [[Blockchain]]

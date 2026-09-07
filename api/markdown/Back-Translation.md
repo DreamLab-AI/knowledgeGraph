@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Back-Translation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,39 +7,138 @@ public: true
   "title": "Back-Translation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:machine-translation", "vc:label": "Machine Translation"},
-    {"@id": "urn:visionflow:linked:neural-machine-translation", "vc:label": "Neural Machine Translation"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:data-augmentation", "vc:label": "Data Augmentation"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:low-resource-language", "vc:label": "Low-Resource Language"},
-    {"@id": "urn:visionflow:linked:parallel-corpus", "vc:label": "Parallel Corpus"},
-    {"@id": "urn:visionflow:linked:monolingual-data", "vc:label": "Monolingual Data"},
-    {"@id": "urn:visionflow:linked:bleu-score", "vc:label": "BLEU Score"},
-    {"@id": "urn:visionflow:linked:sequence-to-sequence-model", "vc:label": "Sequence-to-Sequence Model"},
-    {"@id": "urn:visionflow:linked:encoder-decoder-architecture", "vc:label": "Encoder Decoder Architecture"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:quality-estimation", "vc:label": "Quality Estimation"},
-    {"@id": "urn:visionflow:linked:semi-supervised-learning", "vc:label": "Semi-Supervised Learning"},
-    {"@id": "urn:visionflow:linked:synthetic-data", "vc:label": "Synthetic Data"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:language-model", "vc:label": "Language Model"},
-    {"@id": "urn:visionflow:linked:domain-adaptation", "vc:label": "Domain Adaptation"},
-    {"@id": "urn:visionflow:linked:text-generation", "vc:label": "Text Generation"},
-    {"@id": "urn:visionflow:linked:multilingual-model", "vc:label": "Multilingual Model"},
-    {"@id": "urn:visionflow:linked:noise-injection", "vc:label": "Noise Injection"},
-    {"@id": "urn:visionflow:linked:iterative-training", "vc:label": "Iterative Training"},
-    {"@id": "urn:visionflow:linked:beam-search", "vc:label": "Beam Search"},
-    {"@id": "urn:visionflow:linked:cross-entropy-loss", "vc:label": "Cross-Entropy Loss"},
-    {"@id": "urn:visionflow:linked:curriculum-learning", "vc:label": "Curriculum Learning"},
-    {"@id": "urn:visionflow:linked:knowledge-distillation", "vc:label": "Knowledge Distillation"},
-    {"@id": "urn:visionflow:linked:self-training", "vc:label": "Self-Training"},
-    {"@id": "urn:visionflow:linked:round-trip-translation", "vc:label": "Round-Trip Translation"},
-    {"@id": "urn:visionflow:linked:translation", "vc:label": "Translation"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:nlp-layer", "vc:label": "NLPLayer"},
-    {"@id": "urn:visionflow:linked:data-augmentation-strategies", "vc:label": "Data Augmentation Strategies"}
+    {
+      "@id": "urn:visionflow:linked:machine-translation",
+      "vc:label": "Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-machine-translation",
+      "vc:label": "Neural Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-augmentation",
+      "vc:label": "Data Augmentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:low-resource-language",
+      "vc:label": "Low-Resource Language"
+    },
+    {
+      "@id": "urn:visionflow:linked:parallel-corpus",
+      "vc:label": "Parallel Corpus"
+    },
+    {
+      "@id": "urn:visionflow:linked:monolingual-data",
+      "vc:label": "Monolingual Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:bleu-score",
+      "vc:label": "BLEU Score"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequence-to-sequence-model",
+      "vc:label": "Sequence-to-Sequence Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:encoder-decoder-architecture",
+      "vc:label": "Encoder Decoder Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:quality-estimation",
+      "vc:label": "Quality Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:semi-supervised-learning",
+      "vc:label": "Semi-Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-data",
+      "vc:label": "Synthetic Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:language-model",
+      "vc:label": "Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:domain-adaptation",
+      "vc:label": "Domain Adaptation"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-generation",
+      "vc:label": "Text Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multilingual-model",
+      "vc:label": "Multilingual Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:noise-injection",
+      "vc:label": "Noise Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:iterative-training",
+      "vc:label": "Iterative Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:beam-search",
+      "vc:label": "Beam Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-entropy-loss",
+      "vc:label": "Cross-Entropy Loss"
+    },
+    {
+      "@id": "urn:visionflow:linked:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-training",
+      "vc:label": "Self-Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:round-trip-translation",
+      "vc:label": "Round-Trip Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:translation",
+      "vc:label": "Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:nlp-layer",
+      "vc:label": "NLPLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-augmentation-strategies",
+      "vc:label": "Data Augmentation Strategies"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -60,72 +154,201 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-    {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:ngm:class:data-augmentation",
+      "label": "Data Augmentation"
+    }
   ],
   "relations": {
     "isSubclassOf": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
-      {"@id": "urn:ngm:class:monolingual-data", "label": "Monolingual Data"},
-      {"@id": "urn:ngm:class:parallel-corpus", "label": "Parallel Corpus"},
-      {"@id": "urn:ngm:class:quality-estimation", "label": "Quality Estimation"},
-      {"@id": "urn:ngm:class:noise-injection", "label": "Noise Injection"},
-      {"@id": "urn:ngm:class:iterative-training", "label": "Iterative Training"}
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:monolingual-data",
+        "label": "Monolingual Data"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-corpus",
+        "label": "Parallel Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:quality-estimation",
+        "label": "Quality Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:noise-injection",
+        "label": "Noise Injection"
+      },
+      {
+        "@id": "urn:ngm:class:iterative-training",
+        "label": "Iterative Training"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neural-machine-translation", "label": "Neural Machine Translation"},
-      {"@id": "urn:ngm:class:monolingual-data", "label": "Monolingual Data"},
-      {"@id": "urn:ngm:class:sequence-to-sequence-model", "label": "Sequence-to-Sequence Model"},
-      {"@id": "urn:ngm:class:beam-search", "label": "Beam Search"}
+      {
+        "@id": "urn:ngm:class:neural-machine-translation",
+        "label": "Neural Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:monolingual-data",
+        "label": "Monolingual Data"
+      },
+      {
+        "@id": "urn:ngm:class:sequence-to-sequence-model",
+        "label": "Sequence-to-Sequence Model"
+      },
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:low-resource-language", "label": "Low-Resource Language"},
-      {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"},
-      {"@id": "urn:ngm:class:semi-supervised-learning", "label": "Semi-Supervised Learning"},
-      {"@id": "urn:ngm:class:multilingual-model", "label": "Multilingual Model"},
-      {"@id": "urn:ngm:class:translation", "label": "Translation"}
+      {
+        "@id": "urn:ngm:class:low-resource-language",
+        "label": "Low-Resource Language"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:multilingual-model",
+        "label": "Multilingual Model"
+      },
+      {
+        "@id": "urn:ngm:class:translation",
+        "label": "Translation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"},
-      {"@id": "urn:ngm:class:semi-supervised-learning", "label": "Semi-Supervised Learning"},
-      {"@id": "urn:ngm:class:self-training", "label": "Self-Training"}
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:self-training",
+        "label": "Self-Training"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:neural-machine-translation", "label": "Neural Machine Translation"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:neural-machine-translation",
+        "label": "Neural Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:quality-estimation", "label": "Quality Estimation"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"}
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:quality-estimation",
+        "label": "Quality Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
-      {"@id": "urn:ngm:class:bleu-score", "label": "BLEU Score"},
-      {"@id": "urn:ngm:class:beam-search", "label": "Beam Search"},
-      {"@id": "urn:ngm:class:cross-entropy-loss", "label": "Cross-Entropy Loss"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:bleu-score",
+        "label": "BLEU Score"
+      },
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "@id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:forward-translation", "label": "Forward Translation"},
-      {"@id": "urn:ngm:class:round-trip-translation", "label": "Round-Trip Translation"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+      {
+        "@id": "urn:ngm:class:forward-translation",
+        "label": "Forward Translation"
+      },
+      {
+        "@id": "urn:ngm:class:round-trip-translation",
+        "label": "Round-Trip Translation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:parallel-corpus", "label": "Parallel Corpus"},
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
-      {"@id": "urn:ngm:class:multilingual-model", "label": "Multilingual Model"}
+      {
+        "@id": "urn:ngm:class:parallel-corpus",
+        "label": "Parallel Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation-strategies",
+        "label": "Data Augmentation Strategies"
+      },
+      {
+        "@id": "urn:ngm:class:multilingual-model",
+        "label": "Multilingual Model"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:wmt-benchmark", "label": "WMT Benchmark"}
+      {
+        "@id": "urn:ngm:class:wmt-benchmark",
+        "label": "WMT Benchmark"
+      }
     ]
   },
   "quality": 0.92
@@ -356,7 +579,7 @@ public: true
 
     **Quality-Conditioned Synthesis** — generating synthetic pairs at specific quality levels (using COMET score targets) to enable [[Curriculum Learning]] that introduces progressively higher-quality synthetic data as training progresses, maximising information gain per synthetic token.
 
-    **Phrase-Level and Morpheme-Level Augmentation** — PhraseBT (2025) has opened research directions for sub-sentence augmentation that could benefit morphologically rich languages (Finnish, Turkish, Arabic, Swahili) where sentence-level back-translation misses important morphological variation.
+    **Phrase-Level and Morpheme-Level Augmentation** — PhraseBT (2025) has opened research directions for sub-sentence augmentation that [private] benefit morphologically rich languages (Finnish, Turkish, Arabic, Swahili) where sentence-level back-translation misses important morphological variation.
 
     **Low-Resource Dialectal Translation** — applying back-translation to dialectal variants of major languages (Arabic dialects, Chinese dialects, Hindi-Urdu continuum) where parallel data is virtually non-existent but monolingual dialectal text is abundant.
 

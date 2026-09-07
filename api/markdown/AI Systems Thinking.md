@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Systems Thinking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-systems-thinking",
   "title": "AI Systems Thinking",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Harness Engineering", "Vendor Independence"],
+  "vc:outboundWikilinks": [
+    "AI Harness Engineering",
+    "Vendor Independence"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-harness-engineering", "label": "AI Harness Engineering"}, {"@id": "urn:ngm:class:vendor-independence", "label": "Vendor Independence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-harness-engineering",
+        "label": "AI Harness Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:vendor-independence",
+        "label": "Vendor Independence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

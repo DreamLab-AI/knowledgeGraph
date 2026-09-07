@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Security
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,13 @@ public: true
   "vc:slug": "agent-security",
   "title": "Agent Security",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Agent Security", "Judson Althoff", "Labor Market Trends", "Microsoft Agent Management Platform", "Security Engineers"],
+  "vc:outboundWikilinks": [
+    "AI Agent Security",
+    "Judson Althoff",
+    "Labor Market Trends",
+    "Microsoft Agent Management Platform",
+    "Security Engineers"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +27,27 @@ public: true
   "domain": "security",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}, {"@id": "urn:ngm:class:access-control", "label": "Access Control"}, {"@id": "urn:ngm:class:intrusion-detection", "label": "Intrusion Detection"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

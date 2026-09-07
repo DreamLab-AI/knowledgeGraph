@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SUMMARY
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,17 +75,38 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "quality": 0.7,
@@ -101,62 +117,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:summary:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0c1ece31bec0ee49bb085e8e23fefede434767b3817a836ac9278b84096c648e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BlockchainTechnology|blockchain-based assets]]",
-      "resolved": "urn:visionflow:linked:blockchain-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DecentralizedIdentity|decentralised identity]]",
-      "resolved": "urn:visionflow:linked:decentralized-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ExtendedReality|extended reality]]",
-      "resolved": "urn:visionflow:linked:extended-reality",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AugmentedReality|augmented reality]]",
-      "resolved": "urn:visionflow:owl:class:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SmartContracts|smart contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualReality|virtual reality]]",
-      "resolved": "urn:visionflow:owl:class:virtual-reality",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The metaverse represents a convergent technological paradigm combining [[VirtualReality|virtual reality]], [[AugmentedReality|augmented reality]], and [[ExtendedReality|extended reality]] to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and social collaboration. This digital infrastructure integrates [[BlockchainTechnology|blockchain-based assets]], [[SmartContracts|smart contracts]], and [[DecentralizedIdentity|decentralised identity]] systems to support genuine digital ownership, interoperability, and governance across platforms. Contemporary metaverse implementations span gaming worlds, social platforms, professional collaboration environments, and virtual economies representing hundreds of billions in user-generated value.

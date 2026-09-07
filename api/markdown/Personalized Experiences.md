@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Personalized Experiences
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Personalized experiences are interactions, content, or services dynamically tailored to an individual's preferences, history, and context. They are produced by models that infer user intent and situation from behavioural signals and contextual data, then adapt recommendations, interfaces, or responses accordingly. Personalization aims to increase relevance and engagement while balancing privacy and the risk of filter bubbles.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-machine-learning", "label": "Ai Machine Learning"}, {"@id": "urn:ngm:class:context-awareness", "label": "Context Awareness"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-machine-learning",
+        "label": "Ai Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:context-awareness",
+        "label": "Context Awareness"
+      }
+    ]
   },
   "quality": 0.72
 }

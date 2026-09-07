@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scaled Dot Product Attention
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,32 +99,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:scaled-dot-product-attention:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:78e1366eb3a868eafb37ef10eb23038093c592284ff102170d00d4f6f0247c55"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.
 
@@ -161,7 +130,7 @@ public: true
 			- It's just chaining python scripts, you can isolate those and build
 
 		- ## Introduction
-			- Welcome to the ComfyUI for Fashion and Brands event at Dreamlab in MediaCity! We are excited to have you join us for a day of innovation, collaboration, and exploration of generative AI technology in the realm of fashion and product design.
+			- Welcome to the [private] event at Dreamlab in MediaCity! We are excited to have you join us for a day of innovation, collaboration, and exploration of generative AI technology in the realm of fashion and product design.
 			- Before the event, please take a moment to review the following instructions and ensure that you have the necessary requirements to fully participate in the hackathon.
 
   - ### Product Visualisation & Photography
@@ -190,7 +159,7 @@ public: true
 			- It's just chaining python scripts, you can isolate those and build
 
 		- ## Introduction
-			- Welcome to the ComfyUI for Fashion and Brands event at Dreamlab in MediaCity! We are excited to have you join us for a day of innovation, collaboration, and exploration of generative AI technology in the realm of fashion and product design.
+			- Welcome to the [private] event at Dreamlab in MediaCity! We are excited to have you join us for a day of innovation, collaboration, and exploration of generative AI technology in the realm of fashion and product design.
 			- Before the event, please take a moment to review the following instructions and ensure that you have the necessary requirements to fully participate in the hackathon.
 
   - ### Product Visualisation & Photography
@@ -220,7 +189,7 @@ public: true
 					- 72% said it made them more productive.
 					- Among those that don't use it 35% are not worried.
 					- 60% of people who use it are concerned.
-					- The more employees used AI, the more worried they were that it could replace them
+					- The more employees used AI, the more worried they were that it [private] replace them
 
   - # Virtual Production
 
@@ -230,7 +199,7 @@ public: true
 					- 72% said it made them more productive.
 					- Among those that don't use it 35% are not worried.
 					- 60% of people who use it are concerned.
-					- The more employees used AI, the more worried they were that it could replace them
+					- The more employees used AI, the more worried they were that it [private] replace them
 
 				- ### EDX survey of 800 executives
 					- 90% were already using AI to increase productivity
@@ -239,7 +208,7 @@ public: true
 					- 72% said it made them more productive.
 					- Among those that don't use it 35% are not worried.
 					- 60% of people who use it are concerned.
-					- The more employees used AI, the more worried they were that it could replace them
+					- The more employees used AI, the more worried they were that it [private] replace them
 
   - ## Audio Production
   - AI can be used to automate various aspects of audio production, such as noise reduction, equalization, and mastering.

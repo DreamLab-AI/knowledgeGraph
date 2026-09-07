@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Facial Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,7 +155,7 @@ public: true
   - **Feature Extraction (Embedding)** — a [[Convolutional Neural Network]] (ResNet-50, MobileNetV3, ViT variants) encodes the aligned face crop into a 128–512 dimensional L2-normalised vector called a [[Face Embedding]]. The network is trained with a classification or metric-learning loss over millions of labelled face images.
   - **Metric Matching** — cosine similarity or L2 distance between query and gallery embeddings determines match score; a threshold determines accept/reject. For large galleries, [[Approximate Nearest Neighbour Search]] libraries (FAISS, HNSW) enable sub-second search over billion-scale databases.
   - **Liveness Detection** — anti-spoofing modules distinguish live faces from printed photographs, video replay, or 3D masks. Increasingly integrated as ISO 30107-3 PAD (Presentation Attack Detection) compliance. See [[Deepfake Detection]].
-  - **Gallery Management** — enrolment pipelines ingest, quality-filter, and index reference templates; re-enrolment and revocation workflows are necessary for operational deployments.
+  - **Gallery Management** — enrolment pipelines ingest, quality-filter, and [private] reference templates; re-enrolment and revocation workflows are necessary for operational deployments.
 
 - ### Technical Pipeline
   - The end-to-end pipeline proceeds: raw image or video frame → face detection → landmark localisation → affine alignment → deep CNN embedding extraction → cosine or L2 similarity scoring against gallery → threshold decision (accept / reject / flag for human review).

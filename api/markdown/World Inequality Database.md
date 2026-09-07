@@ -1,8 +1,3 @@
----
-public: true
----
-
-# World Inequality Database
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The World Inequality Database (WID.world) is an open, collaboratively maintained data resource that compiles harmonised series on the distribution of income and wealth within and between countries over long historical periods. It combines national accounts, tax records, surveys, and estimation methods to produce comparable inequality statistics, and underpins the World Inequality Report. It is a primary reference for empirical research on global inequality.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:global-inequality", "label": "Global Inequality"}, {"@id": "urn:ngm:class:economics", "label": "Economics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
   },
   "quality": 0.72
 }

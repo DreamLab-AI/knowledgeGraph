@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Task and Motion Planning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,57 +181,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:task-and-motion-planning:d64cb01a5c26",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3a1ff0ab73168a2a0dcddf61efb4b5d8755feb83fdf81209fa92d853f2fa66f6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Planning]]",
-      "resolved": "urn:visionflow:linked:planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Control]]",
-      "resolved": "urn:visionflow:linked:robot-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pathfinding Algorithm]]",
-      "resolved": "urn:visionflow:linked:pathfinding-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Planning]]",
-      "resolved": "urn:visionflow:linked:motion-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Motion_planning]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-motion-planning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://arxiv.org/abs/2010.01083]]",
-      "resolved": "urn:visionflow:linked:https-arxiv-org-abs-2010-01083",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Task and motion planning is an approach in robotics that combines high-level task planning with low-level motion planning to produce executable plans. It addresses both what to do and how to move.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CPMI-IOSCO PFMI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cpmi-iosco-pfmi:01c485761e88",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:416c254d921875b2638a12f7c8376b60995345a73175a7918a485d5fdbaeca0d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Payment System]]",
-      "resolved": "urn:visionflow:linked:payment-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SWIFT Messaging]]",
-      "resolved": "urn:visionflow:linked:swift-messaging",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Central Bank]]",
-      "resolved": "urn:visionflow:linked:central-bank",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Principles for Financial Market Infrastructures are international standards published by the Committee on Payments and Market Infrastructures and the International Organization of Securities Commissions. They set requirements for the safety and efficiency of payment, clearing and settlement systems.

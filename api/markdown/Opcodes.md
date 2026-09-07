@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Opcodes
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,26 +83,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:script", "label": "Script"},
-      {"@id": "urn:ngm:class:scripting-language", "label": "Scripting Language"}
+      {
+        "@id": "urn:ngm:class:script",
+        "label": "Script"
+      },
+      {
+        "@id": "urn:ngm:class:scripting-language",
+        "label": "Scripting Language"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"}
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"},
-      {"@id": "urn:ngm:class:programmable-money", "label": "Programmable Money"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
     ]
   },
   "provenance": {
@@ -117,62 +148,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:opcodes:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:82b2bc35863a155800c1247a470dde790a3db0d3b9f57559892de0a12bd42ab0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DistributedDataStructure]]",
-      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Opcodes (operation codes) are the atomic instruction primitives of a blockchain scripting language that define permissible computations within transaction scripts, smart contracts, or virtual machine execution environments. Each opcode specifies an operation — such as hash computation, signature verification, stack manipulation, or conditional branching — and the set of valid opcodes for a given blockchain determines its scripting expressiveness and security surface. In Bitcoin, a deliberately restricted opcode set enforces non-Turing-completeness and predictable resource consumption, whereas Ethereum's EVM opcode set supports general computation within gas-metered bounds.

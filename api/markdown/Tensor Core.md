@@ -1,36 +1,104 @@
----
-public: true
----
-
-# Tensor Core
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:tensor-core", "@type":"Page", "title":"Tensor Core", "vc:slug":"tensor-core", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:tensor-core",
+  "@type": "Page",
+  "title": "Tensor Core",
+  "vc:slug": "tensor-core",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:tensor-core",
-  "@type":"Class",
-  "label":"Tensor Core",
-  "definition":"A Tensor Core is a specialised hardware execution unit within a GPU that performs small matrix multiply-accumulate operations in a single instruction, optimised for the dense linear algebra at the heart of deep learning. It operates on mixed-precision inputs, accumulating in higher precision while multiplying in reduced precision to maximise throughput. By accelerating matrix multiplication, Tensor Cores deliver large gains in training and inference performance over general-purpose GPU cores.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:gpu-architecture","label":"GPU Architecture"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "hasPart":[{"@id":"urn:ngm:class:gpu-architecture","label":"GPU Architecture"}],
-    "implements":[{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}],
-    "uses":[{"@id":"urn:ngm:class:cuda","label":"CUDA"}],
-    "enables":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"},{"@id":"urn:ngm:class:inference","label":"Inference"},{"@id":"urn:ngm:class:model-training","label":"Model Training"}],
-    "supports":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"},{"@id":"urn:ngm:class:transformer-architecture","label":"Transformer Architecture"}],
-    "requires":[{"@id":"urn:ngm:class:memory-bandwidth","label":"Memory Bandwidth"}],
-    "relatedTo":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"},{"@id":"urn:ngm:class:gpu","label":"GPU"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:tensor-core",
+  "@type": "Class",
+  "label": "Tensor Core",
+  "definition": "A Tensor Core is a specialised hardware execution unit within a GPU that performs small matrix multiply-accumulate operations in a single instruction, optimised for the dense linear algebra at the heart of deep learning. It operates on mixed-precision inputs, accumulating in higher precision while multiplying in reduced precision to maximise throughput. By accelerating matrix multiplication, Tensor Cores deliver large gains in training and inference performance over general-purpose GPU cores.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpu-architecture",
+      "label": "GPU Architecture"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gpu-architecture",
+        "label": "GPU Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reward Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -194,52 +189,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reward-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9013284a3ebe9ee1868e806b64bb110229ae85a02d7a26cace0e66cd614b2da2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Direct Preference Optimisation]]",
-      "resolved": "urn:visionflow:owl:class:direct-preference-optimization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Google AI Technology Corporation]]",
-      "resolved": "urn:visionflow:owl:class:google",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A neural network trained to predict scalar rewards for model outputs based on human feedback, used to provide learning signals in reinforcement learning from human feedback (RLHF). The reward model serves as a proxy for human preferences, enabling efficient optimization without constant human evaluation.
 
@@ -372,7 +321,7 @@ public: true
 
   - ## Google search is broken. Google lied.
   - [An Anonymous Source Shared Thousands of Leaked Google Search API Documents with Me; Everyone in SEO Should See Them](https://sparktoro.com/blog/an-anonymous-source-shared-thousands-of-leaked-google-search-api-documents-with-me-everyone-in-seo-should-see-them/)
-		- "Google no longer rewards scrappy, clever, SEO-savvy operators who know all the right tricks. They reward established brands, search-measurable forms of popularity, and established domains that searchers already know and click. From 1998 – 2018 (or so), one could reasonable start a powerful marketing flywheel with SEO for Google. In 2024, I don’t think that’s realistic, at least, not on the English-language web in competitive sectors."
+		- "Google no longer rewards scrappy, clever, SEO-savvy operators who know all the right tricks. They reward established brands, search-measurable forms of popularity, and established domains that searchers already know and click. From 1998 – 2018 (or so), one [private] reasonable start a powerful marketing flywheel with SEO for Google. In 2024, I don’t think that’s realistic, at least, not on the English-language web in competitive sectors."
   - [Google Search Is Now a Giant Hallucination (gizmodo.com)](https://gizmodo.com/google-search-ai-overview-giant-hallucination-1851499031) [[Death of the Internet]] [[Google AI Technology Corporation]]
   - [What Do Google’s AI Answers Cost the Environment? | Scientific American](https://www.scientificamerican.com/article/what-do-googles-ai-answers-cost-the-environment/)
 
@@ -447,7 +396,7 @@ public: true
 
   - ## Google search is broken. Google lied.
   - [An Anonymous Source Shared Thousands of Leaked Google Search API Documents with Me; Everyone in SEO Should See Them](https://sparktoro.com/blog/an-anonymous-source-shared-thousands-of-leaked-google-search-api-documents-with-me-everyone-in-seo-should-see-them/)
-		- "Google no longer rewards scrappy, clever, SEO-savvy operators who know all the right tricks. They reward established brands, search-measurable forms of popularity, and established domains that searchers already know and click. From 1998 – 2018 (or so), one could reasonable start a powerful marketing flywheel with SEO for Google. In 2024, I don’t think that’s realistic, at least, not on the English-language web in competitive sectors."
+		- "Google no longer rewards scrappy, clever, SEO-savvy operators who know all the right tricks. They reward established brands, search-measurable forms of popularity, and established domains that searchers already know and click. From 1998 – 2018 (or so), one [private] reasonable start a powerful marketing flywheel with SEO for Google. In 2024, I don’t think that’s realistic, at least, not on the English-language web in competitive sectors."
   - [Google Search Is Now a Giant Hallucination (gizmodo.com)](https://gizmodo.com/google-search-ai-overview-giant-hallucination-1851499031) [[Death of the Internet]] [[Google AI Technology Corporation]]
   - [What Do Google’s AI Answers Cost the Environment? | Scientific American](https://www.scientificamerican.com/article/what-do-googles-ai-answers-cost-the-environment/)
 

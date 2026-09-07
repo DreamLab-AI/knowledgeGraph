@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Image Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

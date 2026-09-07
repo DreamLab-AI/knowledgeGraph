@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Awareness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -125,67 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:awareness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ffb0fc274f5f793ade199103c771752cad2a6424062dee25de4b2ed77cf72353"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collaborative Presence]]",
-      "resolved": "urn:visionflow:linked:collaborative-presence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Notification Systems]]",
-      "resolved": "urn:visionflow:linked:notification-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Situational Understanding]]",
-      "resolved": "urn:visionflow:linked:situational-understanding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Social Computing]]",
-      "resolved": "urn:visionflow:linked:social-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Social Interaction]]",
-      "resolved": "urn:visionflow:linked:social-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Presence Detection]]",
-      "resolved": "urn:visionflow:owl:class:presence-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[State Synchronisation]]",
-      "resolved": "urn:visionflow:owl:class:state-synchronization",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Awareness in metaverse contexts refers to systems and mechanisms that provide users with perception of other participants, environmental changes, and relevant contextual information in shared virtual spaces, supporting presence, social interaction, and collaborative activities through visual, audio, and haptic cues.

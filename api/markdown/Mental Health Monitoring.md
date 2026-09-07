@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mental Health Monitoring
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mental-health-monitoring:6897b844d772",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:24c256bc88c17467faaf4b897551f983a1c6c873f977f89e6dd23fea37a042c8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sensor]]",
-      "resolved": "urn:visionflow:linked:sensor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Affective Computing]]",
-      "resolved": "urn:visionflow:linked:affective-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The use of sensors, applications, and data analysis to track indicators related to a person's psychological wellbeing over time. It may use self-reports, physiological signals, and behavioural data.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Parametric Modeling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:parametric-modeling:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0e3f28abf18466b94406e66a72793f0e27b9ce0a36df35b339a6e003f32fdcd9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Generative Design]]",
-      "resolved": "urn:visionflow:linked:generative-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Modelling]]",
-      "resolved": "urn:visionflow:owl:class:3-d-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A CAD design methodology that uses algorithms and adjustable parameters to generate and modify complex 3D geometry, enabling flexible, constraint-driven design where changes to input values automatically propagate throughout the model.

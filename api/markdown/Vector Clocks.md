@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vector Clocks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vector-clocks:600797f3674f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:de96586621d3fdaba13935e993a73e043955925e610f39c3b31433be7a182e7f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Distributed Computing]]",
-      "resolved": "urn:visionflow:linked:distributed-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Eventual Consistency]]",
-      "resolved": "urn:visionflow:linked:eventual-consistency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Clock Synchronization]]",
-      "resolved": "urn:visionflow:linked:clock-synchronization",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A mechanism for ordering events in a distributed system by assigning each process a vector of counters. Comparing vectors determines whether one event causally precedes another or whether they are concurrent.

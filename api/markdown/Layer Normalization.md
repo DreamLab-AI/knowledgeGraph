@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Layer Normalization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:layer-normalization:f7c088247027",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0be7b84401ebbe1e723d33d3bed607590b4007364818e37b3de0bae66672c2d2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Activation Function]]",
-      "resolved": "urn:visionflow:linked:activation-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer Architecture]]",
-      "resolved": "urn:visionflow:linked:transformer-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Backpropagation]]",
-      "resolved": "urn:visionflow:linked:backpropagation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://arxiv.org/abs/1607.06450]]",
-      "resolved": "urn:visionflow:linked:https-arxiv-org-abs-1607-06450",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A neural network technique that normalises the activations across the features of a single training example, stabilising and accelerating training. It is widely used in transformer architectures where it normalises each token's representation independently of the batch.

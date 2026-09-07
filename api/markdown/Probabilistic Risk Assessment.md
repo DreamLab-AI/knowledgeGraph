@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Probabilistic Risk Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -129,6 +125,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Probabilistic Risk Assessment (PRA) is a systematic methodology for quantifying the likelihood and consequences of adverse events in complex engineered systems. It enumerates accident scenarios, estimates the probability of each contributing failure and combines them to produce numeric risk measures and confidence bounds. PRA underpins safety-critical decision-making in domains such as nuclear, aerospace and critical infrastructure where rare, high-consequence failures must be rigorously characterised.
   - Related core concepts: [[Risk Assessment]] [[Reliability Engineering]] [[Fault Tree Analysis]] [[Statistics]] [[Safety Engineering]]

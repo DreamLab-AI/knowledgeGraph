@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Colour Grading
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

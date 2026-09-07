@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Genesis Block
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,28 +87,70 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
-      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
-      {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"},
-      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
-      {"@id": "urn:ngm:class:coinbase-transaction", "label": "Coinbase Transaction"}
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:coinbase-transaction",
+        "label": "Coinbase Transaction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:immutability", "label": "Immutability"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:block-height", "label": "Block Height"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:block-height",
+        "label": "Block Height"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ]
   },
   "provenance": {
@@ -123,67 +160,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:genesis-block:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:58a33f1bc9a75da1e66c62d917ec52f200af01ba3bd0a14db2e5589373c33e38"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DistributedDataStructure]]",
-      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

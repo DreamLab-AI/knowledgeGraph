@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Protection Regulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -59,83 +54,131 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"},
-      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"},
-      {"@id": "urn:ngm:class:informed-consent", "label": "Informed Consent"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "@id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:digital-trust", "label": "Digital Trust"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-free-flow", "label": "Data Free Flow"},
-      {"@id": "urn:ngm:class:surveillance-capitalism", "label": "Surveillance Capitalism"}
+      {
+        "@id": "urn:ngm:class:data-free-flow",
+        "label": "Data Free Flow"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:regulatory-technology", "label": "Regulatory Technology"},
-      {"@id": "urn:ngm:class:cybersecurity-law", "label": "Cybersecurity Law"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:data-residency", "label": "Data Residency"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-law",
+        "label": "Cybersecurity Law"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-residency",
+        "label": "Data Residency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-privacy-law", "label": "Data Privacy Law"},
-    {"@id": "urn:ngm:class:personal-data-protection-law", "label": "Personal Data Protection Law"}
+    {
+      "@id": "urn:ngm:class:data-privacy-law",
+      "label": "Data Privacy Law"
+    },
+    {
+      "@id": "urn:ngm:class:personal-data-protection-law",
+      "label": "Personal Data Protection Law"
+    }
   ],
   "quality": 0.74,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-protection-regulation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:70057da065b084943d72a6eb522472633087720e1eb085642d846d4d5c85bd84"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,36 +1,112 @@
----
-public: true
----
-
-# Statistical Modelling
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:statistical-modelling", "@type":"Page", "title":"Statistical Modelling", "vc:slug":"statistical-modelling", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:statistical-modelling",
+  "@type": "Page",
+  "title": "Statistical Modelling",
+  "vc:slug": "statistical-modelling",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:statistical-modelling",
-  "@type":"Class",
-  "label":"Statistical Modelling",
-  "definition":"Statistical modelling is the practice of representing data-generating processes with mathematical structures built on probability theory, in order to describe relationships, quantify uncertainty, test hypotheses, and make inferences or predictions. It encompasses approaches such as regression, generalised linear models, time-series models, and Bayesian methods, emphasising interpretable parameters and explicit assumptions. It provides the formal foundation on which much of machine learning and data analysis is built.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:data-analysis","label":"Data Analysis"}],
-  "relations":{
-    "dependsOn":[{"@id":"urn:ngm:class:probability-theory","label":"Probability Theory"}],
-    "requires":[{"@id":"urn:ngm:class:data-quality","label":"Data Quality"},{"@id":"urn:ngm:class:feature-engineering","label":"Feature Engineering"}],
-    "uses":[{"@id":"urn:ngm:class:bayesian-inference","label":"Bayesian Inference"},{"@id":"urn:ngm:class:time-series-analysis","label":"Time Series Analysis"}],
-    "enables":[{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"},{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"}],
-    "supports":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"},{"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"}],
-    "partOf":[{"@id":"urn:ngm:class:data-analysis","label":"Data Analysis"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "relatedTo":[{"@id":"urn:ngm:class:probability-theory","label":"Probability Theory"},{"@id":"urn:ngm:class:bayesian-inference","label":"Bayesian Inference"},{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:statistical-modelling",
+  "@type": "Class",
+  "label": "Statistical Modelling",
+  "definition": "Statistical modelling is the practice of representing data-generating processes with mathematical structures built on probability theory, in order to describe relationships, quantify uncertainty, test hypotheses, and make inferences or predictions. It encompasses approaches such as regression, generalised linear models, time-series models, and Bayesian methods, emphasising interpretable parameters and explicit assumptions. It provides the formal foundation on which much of machine learning and data analysis is built.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-analysis",
+      "label": "Data Analysis"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-analysis",
+        "label": "Time Series Analysis"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

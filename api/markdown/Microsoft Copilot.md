@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Microsoft Copilot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -171,41 +166,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:microsoft-copilot:41749b116c70",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:421190423096b5e80a4f307db4a2ebb416c19321b5202c1ec8008dfec5916b7d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Large Language Model]]",
-      "resolved": "urn:visionflow:linked:large-language-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Meta Llama Model Family]]",
-      "resolved": "urn:visionflow:linked:llama",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence Domain]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Microsoft Copilot is a family of AI-powered assistant products from [[Microsoft]] embedded across [[Microsoft 365]], [[Windows]], the Edge browser, [[GitHub]], and [[Azure AI]]. The system integrates [[Large Language Model]] technology — principally the [[GPT-4]] family from [[OpenAI]] — with [[Retrieval-Augmented Generation]] over [[Microsoft Graph]] to provide context-grounded responses scoped to a user's own documents, emails, meetings, and enterprise data. Unlike a standalone [[Conversational AI]] service, Copilot inherits the permission model of the host environment, so tenant data boundaries and [[Role-Based Access Control]] policies are respected. [[GitHub Copilot]], a precursor launched in 2021, set the template for AI-assisted productivity by offering [[Code Generation]] and code-chat inside developer editors.
 
@@ -229,7 +189,7 @@ public: true
   - **Copilot Studio** — low-code platform for building custom Copilot agents and plugins on top of the Microsoft platform; supports [[Workflow Automation]] and [[Enterprise AI]] integration patterns.
   - **Azure OpenAI Service** — API layer enabling enterprise deployments with private endpoints, fine-tuning, and [[Responsible AI]] content filtering.
   - **Microsoft Graph Connector** — retrieval backbone for the enterprise scenario; indexes files in SharePoint, OneDrive, Exchange, and third-party sources, exposing them to [[Semantic Search]] at inference time.
-  - **[[Retrieval-Augmented Generation]] pipeline** — at query time, Copilot retrieves relevant document snippets from the user's Graph index, injects them into the [[Prompt Engineering]] context window, and passes the enriched prompt to the underlying [[GPT-4]] model.
+  - **[[Retrieval-Augmented Generation]] pipeline** — at query time, Copilot retrieves relevant document snippets from the user's Graph [private], injects them into the [[Prompt Engineering]] context window, and passes the enriched prompt to the underlying [[GPT-4]] model.
   - **Safety and content filtering layer** — [[Responsible AI]] classifiers run both on the prompt and the response to detect and block harmful outputs, hallucinations, or policy violations, per Microsoft's AI Principles framework.
 
 - ### Applications and Use Cases
@@ -238,7 +198,7 @@ public: true
   - **Customer service** — Copilot for Service (built on Copilot Studio) grounds a support agent's responses in CRM data and knowledge-base articles, reducing handle time and improving accuracy.
   - **Sales enablement** — Copilot for Sales surfaces CRM signals (pipeline stage, contact history) inside Outlook and Teams calls, enabling data-informed conversations without context switching.
   - **Financial analysis** — Excel integration allows finance teams to run natural-language queries over large spreadsheets, perform scenario modelling, and generate [[Document Summarisation]] of quarterly reports.
-  - **Secure enterprise search** — [[Semantic Search]] over the Microsoft Graph index answers factual questions about internal policies, project status, or personnel, with answers cited back to source documents.
+  - **Secure enterprise search** — [[Semantic Search]] over the Microsoft Graph [private] answers factual questions about internal policies, project status, or personnel, with answers cited back to source documents.
   - **Developer experience** — beyond completion, [[GitHub Copilot]] Chat in IDEs lets developers ask architectural questions, explain unfamiliar codebases, and debug errors in a conversational loop.
   - **Education** — Microsoft's partnership with educational institutions deploys Copilot with academic-grade safety guardrails for research assistance and writing feedback.
   - **Accessibility** — real-time transcription and summarisation in Teams makes content accessible to users with hearing impairments; Copilot can also rewrite text for plain-language accessibility.
@@ -270,7 +230,7 @@ public: true
 
 - ### Technical Architecture
   - The core inference backend for most Copilot products is the [[Azure OpenAI Service]], which hosts private instances of [[GPT-4]] and its variants on Microsoft's infrastructure, keeping enterprise customer data within the tenant's regional boundary.
-  - [[Retrieval-Augmented Generation]] is the central pattern: at inference time, the orchestration layer queries the user's [[Microsoft Graph]] index for semantically relevant document chunks, appending them to the model's context window before calling the LLM endpoint.
+  - [[Retrieval-Augmented Generation]] is the central pattern: at inference time, the orchestration layer queries the user's [[Microsoft Graph]] [private] for semantically relevant document chunks, appending them to the model's context window before calling the LLM endpoint.
   - [[Prompt Engineering]] templates (called "system prompts" or "metaprompts") define the persona, scope, and safety constraints for each Copilot surface; these are maintained by Microsoft product teams and are not directly exposed to end users.
   - Copilot Studio allows enterprise customers to extend Copilot with custom plugins and connectors, integrating third-party APIs (Salesforce, ServiceNow, SAP) and building autonomous agent workflows using Power Automate for [[Workflow Automation]].
   - The [[Transformer Architecture]] underlying all GPT-family models uses self-attention mechanisms to model long-range dependencies in text, enabling Copilot to reason over extended document contexts.

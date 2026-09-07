@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Walmart
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:walmart:943c3eeb252d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6b24a2d3c9042dbd6a1240fb90404790c793ba09ed5e700dde081251d444ad34"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Supply Chain]]",
-      "resolved": "urn:visionflow:linked:supply-chain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Food Safety]]",
-      "resolved": "urn:visionflow:linked:food-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Walmart is a multinational retail company operating a chain of stores and e-commerce services, and an early adopter of blockchain-based supply chain traceability.

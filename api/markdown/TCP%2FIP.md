@@ -1,38 +1,114 @@
----
-public: true
-title: TCP/IP
----
-
-# TCP/IP
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:tcp-ip", "@type":"Page", "title":"TCP/IP", "vc:slug":"tcp-ip", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:tcp-ip",
+  "@type": "Page",
+  "title": "TCP/IP",
+  "vc:slug": "tcp-ip",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:tcp-ip",
-  "@type":"Class",
-  "label":"TCP/IP",
-  "definition":"TCP/IP is the layered suite of communication protocols that underpins the Internet, named after its two core members: the Transmission Control Protocol and the Internet Protocol. It organises networking into link, internet, transport, and application layers, providing addressing, routing, and reliable end-to-end byte streams over heterogeneous physical networks. Its packet-switched, best-effort design with end-to-end reliability above the network layer enabled global interoperability.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "hasPart":[{"@id":"urn:ngm:class:transport-layer","label":"Transport Layer"},{"@id":"urn:ngm:class:network-layer","label":"Network Layer"},{"@id":"urn:ngm:class:application-layer","label":"Application Layer"}],
-    "implements":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "requires":[{"@id":"urn:ngm:class:bandwidth","label":"Bandwidth"}],
-    "supports":[{"@id":"urn:ngm:class:http","label":"HTTP"},{"@id":"urn:ngm:class:dns","label":"DNS"},{"@id":"urn:ngm:class:rest-api","label":"REST API"}],
-    "uses":[{"@id":"urn:ngm:class:application-layer","label":"Application Layer"}],
-    "dependsOn":[{"@id":"urn:ngm:class:network-layer","label":"Network Layer"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:osi-model","label":"OSI Model"}],
-    "relatedTo":[{"@id":"urn:ngm:class:latency","label":"Latency"},{"@id":"urn:ngm:class:edge-computing","label":"Edge Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:tcp-ip",
+  "@type": "Class",
+  "label": "TCP/IP",
+  "definition": "TCP/IP is the layered suite of communication protocols that underpins the Internet, named after its two core members: the Transmission Control Protocol and the Internet Protocol. It organises networking into link, internet, transport, and application layers, providing addressing, routing, and reliable end-to-end byte streams over heterogeneous physical networks. Its packet-switched, best-effort design with end-to-end reliability above the network layer enabled global interoperability.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

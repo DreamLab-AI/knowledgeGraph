@@ -1,8 +1,3 @@
----
-public: true
----
-
-# python runtime
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,22 +34,36 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
-      {"@id": "urn:ngm:class:python", "label": "Python"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"}
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - The Python runtime is the interpreter process and associated standard library environment responsible for compiling Python source to bytecode, executing that bytecode in a virtual machine, managing heap memory through reference-counting combined with a cyclic garbage collector, and resolving module imports via the package search path. CPython—the canonical C-language reference implementation—uses a Global Interpreter Lock (GIL) that serialises bytecode execution across threads, making multi-processing the preferred concurrency model for CPU-bound workloads. The Python runtime underpins the dominant AI/ML toolchain including PyTorch, TensorFlow, and the Hugging Face ecosystem, making its performance characteristics, extension mechanisms, and packaging conventions central concerns for AI infrastructure engineering.

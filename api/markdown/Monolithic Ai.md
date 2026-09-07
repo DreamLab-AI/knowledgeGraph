@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Monolithic Ai
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,40 +20,100 @@ public: true
   "definition": "Monolithic AI refers to a design paradigm in which a single, large, undivided model or system handles all tasks within an AI application, as opposed to decomposed or modular architectures. The term is most often used to contrast with multi-agent, mixture-of-experts, or microservice-based AI designs. Monolithic AI systems are simpler to deploy but harder to update, scale selectively, or audit at component level.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:ai-model-architecture", "label": "AI Model Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservice"},
-      {"@id": "urn:ngm:class:modular-ai", "label": "Modular AI"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservice"
+      },
+      {
+        "@id": "urn:ngm:class:modular-ai",
+        "label": "Modular AI"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:end-to-end-learning", "label": "End-to-End Learning"},
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"}
+      {
+        "@id": "urn:ngm:class:end-to-end-learning",
+        "label": "End-to-End Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:training-pipeline", "label": "Training Pipeline"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
+      {
+        "@id": "urn:ngm:class:training-pipeline",
+        "label": "Training Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"}
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-ai", "label": "Distributed AI"}
+      {
+        "@id": "urn:ngm:class:distributed-ai",
+        "label": "Distributed AI"
+      }
     ],
     "relatedTo_2": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ]
   },
   "quality": 0.62,

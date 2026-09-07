@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Authentication System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "An authentication system is an infrastructure component responsible for verifying the claimed identity of users, devices, or services before granting access to protected resources. It integrates credential management, identity verification workflows, session management, and integration with downstream access control mechanisms to enforce the principle that only legitimate principals can initiate authenticated sessions. Authentication systems range from simple password databases to federated multi-factor frameworks spanning organisational boundaries.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication", "label": "Authentication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:open-id-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"}
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +88,3 @@ public: true
   - Authentication systems are foundational to virtually every digital service category: enterprise intranets, cloud platforms, financial services, healthcare portals, and IoT device fleets all depend on robust authentication to protect data and enforce regulatory obligations under frameworks like GDPR and HIPAA. Compromised authentication is consistently among the top attack vectors identified in breach reports; credential stuffing, phishing, session hijacking, and adversarial machine-in-the-middle attacks motivate continuous hardening of authentication designs.
 
   - Between 2023 and 2025, passkeys — FIDO2-based cryptographic credentials bound to device hardware — achieved mainstream adoption across Apple, Google, and Microsoft platforms, beginning the practical transition away from passwords for consumer authentication. Decentralised identity standards from the W3C (DIDs) and OpenID4VCI/OpenID4VP are enabling self-sovereign verifiable credential flows that reduce reliance on centralised identity providers. Simultaneously, AI-powered continuous authentication — analysing typing cadence, mouse movement, and other behavioural biometrics throughout a session — is moving from research to production deployment in high-security environments.
-

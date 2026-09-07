@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Closed-Loop Cooling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "closed-loop-cooling",
   "title": "Closed-Loop Cooling",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Data Center Sustainability", "Energy Cost Allocation"],
+  "vc:outboundWikilinks": [
+    "Data Center Sustainability",
+    "Energy Cost Allocation"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-center-sustainability", "label": "Data Center Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-center-sustainability",
+      "label": "Data Center Sustainability"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-center-sustainability", "label": "Data Center Sustainability"}, {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-center-sustainability",
+        "label": "Data Center Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

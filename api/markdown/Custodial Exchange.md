@@ -1,57 +1,111 @@
----
-public: true
----
-
-# Custodial Exchange
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:custodial-exchange", "@type":"Page", "title":"Custodial Exchange", "vc:slug":"custodial-exchange", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:custodial-exchange",
+  "@type": "Page",
+  "title": "Custodial Exchange",
+  "vc:slug": "custodial-exchange",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:custodial-exchange",
-  "@type":"Class",
-  "label":"Custodial Exchange",
-  "definition":"A custodial exchange is a cryptocurrency trading venue that holds users' assets and private keys on their behalf, settling trades on its internal ledger rather than on-chain. Users gain convenience, liquidity and familiar account-based access, but cede control of their keys and accept counterparty risk in the operator. It is the centralised counterpart to non-custodial and decentralised trading models.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cryptocurrency-exchange","label":"Cryptocurrency Exchange"}],
-  "relations":{
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:decentralized-exchange","label":"Decentralized Exchange"},
-      {"@id":"urn:ngm:class:self-custody","label":"Self-Custody"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:custodial-exchange",
+  "@type": "Class",
+  "label": "Custodial Exchange",
+  "definition": "A custodial exchange is a cryptocurrency trading venue that holds users' assets and private keys on their behalf, settling trades on its internal ledger rather than on-chain. Users gain convenience, liquidity and familiar account-based access, but cede control of their keys and accept counterparty risk in the operator. It is the centralised counterpart to non-custodial and decentralised trading models.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptocurrency-exchange",
+      "label": "Cryptocurrency Exchange"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:know-your-customer","label":"Know Your Customer"},
-      {"@id":"urn:ngm:class:custodial-wallet","label":"Custodial Wallet"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:custody","label":"Custody"},
-      {"@id":"urn:ngm:class:cold-storage","label":"Cold Storage"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "@id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:liquidity","label":"Liquidity"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:proof-of-reserve","label":"Proof of Reserve"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:centralized-exchange","label":"Centralized Exchange"},
-      {"@id":"urn:ngm:class:qualified-custodian","label":"Qualified Custodian"},
-      {"@id":"urn:ngm:class:digital-asset-custody","label":"Digital Asset Custody"},
-      {"@id":"urn:ngm:class:wallet","label":"Wallet"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:qualified-custodian",
+        "label": "Qualified Custodian"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
     ]
   },
-  "sameAs":[
-    {"@id":"urn:ngm:class:centralized-exchange","label":"Centralized Exchange"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:centralized-exchange",
+      "label": "Centralized Exchange"
+    }
   ],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

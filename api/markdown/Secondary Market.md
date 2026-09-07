@@ -1,38 +1,124 @@
----
-public: true
----
-
-# Secondary Market
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:secondary-market", "@type":"Page", "title":"Secondary Market", "vc:slug":"secondary-market", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:secondary-market",
+  "@type": "Page",
+  "title": "Secondary Market",
+  "vc:slug": "secondary-market",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:secondary-market",
-  "@type":"Class",
-  "label":"Secondary Market",
-  "definition":"A secondary market is a venue in which existing financial assets are bought and sold among investors after their initial issuance, rather than purchased directly from the issuer. By allowing holders to exit positions and new buyers to enter, it provides liquidity, continuous price discovery, and a mechanism for valuing assets through ongoing trading. Secondary markets are essential to the functioning of capital markets because the ability to resell makes initial investment far more attractive.",
-  "domain":"finance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:finance","label":"Finance"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:liquidity","label":"Liquidity"},{"@id":"urn:ngm:class:price-discovery","label":"Price Discovery"},{"@id":"urn:ngm:class:asset-trading","label":"Asset Trading"}],
-    "supports":[{"@id":"urn:ngm:class:capital-allocation","label":"Capital Allocation"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "uses":[{"@id":"urn:ngm:class:asset-trading","label":"Asset Trading"},{"@id":"urn:ngm:class:price-discovery","label":"Price Discovery"}],
-    "requires":[{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "hasPart":[{"@id":"urn:ngm:class:asset-trading","label":"Asset Trading"}],
-    "relatedTo":[{"@id":"urn:ngm:class:decentralised-exchange","label":"Decentralised Exchange"},{"@id":"urn:ngm:class:interest-rate","label":"Interest Rate"},{"@id":"urn:ngm:class:capital-allocation","label":"Capital Allocation"}],
-    "implements":[{"@id":"urn:ngm:class:price-discovery","label":"Price Discovery"}],
-    "dependsOn":[{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:capital-allocation","label":"Capital Allocation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:decentralised-exchange","label":"Decentralised Exchange"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:secondary-market",
+  "@type": "Class",
+  "label": "Secondary Market",
+  "definition": "A secondary market is a venue in which existing financial assets are bought and sold among investors after their initial issuance, rather than purchased directly from the issuer. By allowing holders to exit positions and new buyers to enter, it provides liquidity, continuous price discovery, and a mechanism for valuing assets through ongoing trading. Secondary markets are essential to the functioning of capital markets because the ability to resell makes initial investment far more attractive.",
+  "domain": "finance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:finance",
+      "label": "Finance"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:asset-trading",
+        "label": "Asset Trading"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:asset-trading",
+        "label": "Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-trading",
+        "label": "Asset Trading"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      },
+      {
+        "@id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

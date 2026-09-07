@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Queries]]
-# Datalog Knowledge Graph Query Language
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,17 +42,38 @@ elevatedFrom:: [[Queries]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {
+        "@id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ]
   },
   "provenance": {
@@ -68,26 +83,6 @@ elevatedFrom:: [[Queries]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:queries:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cd95b946e3d59c711a97526389d9db5600a1da5249aa1cd4592e8f86b2fc3f01"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Queries are structured Datalog or advanced query expressions embedded in Logseq pages using `#+BEGIN_QUERY` / `#+END_QUERY` syntax. They dynamically retrieve and display blocks or pages matching specified conditions without modifying underlying data. In the NarrativeGoldmine ontology, Queries represent the retrieval-layer mechanism that surfaces knowledge from the graph at read time.

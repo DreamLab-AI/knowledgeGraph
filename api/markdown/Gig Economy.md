@@ -1,36 +1,96 @@
----
-public: true
----
-
-# Gig Economy
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:gig-economy", "@type":"Page", "title":"Gig Economy", "vc:slug":"gig-economy", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:gig-economy",
+  "@type": "Page",
+  "title": "Gig Economy",
+  "vc:slug": "gig-economy",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:gig-economy",
-  "@type":"Class",
-  "label":"Gig Economy",
-  "definition":"The gig economy is a labour market structured around short-term, task-based, and on-demand work mediated largely by digital platforms, rather than long-term salaried employment. Workers are typically engaged as independent contractors, gaining flexibility and autonomy while bearing income volatility and reduced access to traditional employment protections. It is enabled by platform technology that matches supply and demand at scale and managed through algorithmic coordination, raising ongoing questions about worker classification and social protection.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:platform-economy","label":"Platform Economy"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:automation","label":"Automation"}],
-    "uses":[{"@id":"urn:ngm:class:payment-system","label":"Payment System"}],
-    "requires":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "dependsOn":[{"@id":"urn:ngm:class:platform-economy","label":"Platform Economy"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:universal-basic-income","label":"Universal Basic Income"}],
-    "supports":[{"@id":"urn:ngm:class:payment-service-provider","label":"Payment Service Provider"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "relatedTo":[{"@id":"urn:ngm:class:finance","label":"Finance"},{"@id":"urn:ngm:class:decentralized-identity","label":"Decentralized Identity"},{"@id":"urn:ngm:class:incentive-alignment","label":"Incentive Alignment"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gig-economy",
+  "@type": "Class",
+  "label": "Gig Economy",
+  "definition": "The gig economy is a labour market structured around short-term, task-based, and on-demand work mediated largely by digital platforms, rather than long-term salaried employment. Workers are typically engaged as independent contractors, gaining flexibility and autonomy while bearing income volatility and reduced access to traditional employment protections. It is enabled by platform technology that matches supply and demand at scale and managed through algorithmic coordination, raising ongoing questions about worker classification and social protection.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:platform-economy",
+      "label": "Platform Economy"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:universal-basic-income",
+        "label": "Universal Basic Income"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:payment-service-provider",
+        "label": "Payment Service Provider"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

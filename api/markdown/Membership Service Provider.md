@@ -1,40 +1,116 @@
----
-public: true
----
-
-# Membership Service Provider
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:membership-service-provider", "@type":"Page", "title":"Membership Service Provider", "vc:slug":"membership-service-provider", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:membership-service-provider",
+  "@type": "Page",
+  "title": "Membership Service Provider",
+  "vc:slug": "membership-service-provider",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:membership-service-provider",
-  "@type":"Class",
-  "label":"Membership Service Provider",
-  "definition":"A Membership Service Provider (MSP) is the component of a permissioned blockchain that abstracts the cryptographic identity material and rules used to authenticate and authorise participants. It defines which certificate authorities are trusted, which roles members hold, and how digital certificates map to organisational identities used in endorsement and access policies. The MSP turns raw public-key infrastructure into the network's notion of who is allowed to act and in what capacity.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:identity-management","label":"Identity Management"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:permissioned-blockchain","label":"Permissioned Blockchain"}],
-    "hasPart":[{"@id":"urn:ngm:class:digital-certificate","label":"Digital Certificate"}],
-    "requires":[{"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}],
-    "enables":[{"@id":"urn:ngm:class:permissioned-blockchain","label":"Permissioned Blockchain"}],
-    "uses":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "dependsOn":[{"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}],
-    "supports":[{"@id":"urn:ngm:class:hyperledger-fabric","label":"Hyperledger Fabric"}],
-    "implements":[{"@id":"urn:ngm:class:identity-management","label":"Identity Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:authentication","label":"Authentication"},{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:trust-infrastructure","label":"Trust Infrastructure"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:hyperledger-fabric","label":"Hyperledger Fabric"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:membership-service-provider",
+  "@type": "Class",
+  "label": "Membership Service Provider",
+  "definition": "A Membership Service Provider (MSP) is the component of a permissioned blockchain that abstracts the cryptographic identity material and rules used to authenticate and authorise participants. It defines which certificate authorities are trusted, which roles members hold, and how digital certificates map to organisational identities used in endorsement and access policies. The MSP turns raw public-key infrastructure into the network's notion of who is allowed to act and in what capacity.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

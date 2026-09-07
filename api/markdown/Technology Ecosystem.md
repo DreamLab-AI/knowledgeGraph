@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Technology Ecosystem
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,19 +46,40 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:technology-infrastructure", "label": "Technology Infrastructure"},
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:technology-infrastructure",
+        "label": "Technology Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:convergence", "label": "Convergence"},
-      {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"}
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ]
   },
   "provenance": {
@@ -73,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:technology-ecosystem:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1b0110cc6123b6199789506d1cc9df1de9d9206a0d0acfc51491632c98062524"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Technology Ecosystem is the interconnected network of platforms, developer tools, standards bodies, runtime environments, and community participants that collectively sustain a technology domain. In the metaverse context it encompasses rendering engines, spatial-computing SDKs, open standards (OpenXR, USD, WebXR), cloud infrastructure, hardware manufacturers, and application developers whose interdependencies determine adoption trajectories and competitive dynamics.

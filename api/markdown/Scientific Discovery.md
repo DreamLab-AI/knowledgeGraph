@@ -1,8 +1,3 @@
----
-public: true
----
-
-# scientific discovery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,22 +34,36 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:drug-discovery-ai", "label": "Drug Discovery AI"}
+      {
+        "@id": "urn:ngm:class:drug-discovery-ai",
+        "label": "Drug Discovery AI"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Scientific discovery in AI refers to the application of machine learning, knowledge-graph reasoning, and autonomous experimentation systems to accelerate the identification of novel scientific findings, generate and test hypotheses, and interpret complex experimental data at scales beyond human cognitive capacity. It encompasses AI-driven approaches across domains including drug discovery, materials science, genomics, and climate modelling, where the goal is to augment or automate stages of the scientific method from hypothesis generation through experimental design to result interpretation.

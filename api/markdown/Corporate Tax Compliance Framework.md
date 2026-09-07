@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Tax]]
-# Corporate Tax Compliance Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,16 +47,34 @@ elevatedFrom:: [[Tax]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:uk-company-financial-filing-obligations", "label": "UK Company Financial Filing Obligations"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:uk-company-financial-filing-obligations",
+        "label": "UK Company Financial Filing Obligations"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:legal-compliance", "label": "Legal Compliance"},
-      {"@id": "urn:ngm:class:digital-tax-compliance-node", "label": "Digital Tax Compliance Node"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-tax-compliance-node",
+        "label": "Digital Tax Compliance Node"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"}
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
     ]
   },
   "provenance": {
@@ -72,32 +84,6 @@ elevatedFrom:: [[Tax]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tax:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:da96586440f90fbc16be6abd164b8e9627d8a8efca4babfc81d461fcdbe8dbd2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[UK Company Financial Filing Obligations]]",
-      "resolved": "urn:visionflow:owl:class:accounts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Tax, in the context of this knowledge graph, refers to the statutory obligations imposed on individuals and legal entities — particularly limited companies — by HMRC and comparable revenue authorities, covering corporation tax on trading profits, self-assessment for personal income drawn as salary or dividends, and VAT registration thresholds. Compliance requires accurate bookkeeping, timely filing of CT600 returns, and annual accounts submission to Companies House.

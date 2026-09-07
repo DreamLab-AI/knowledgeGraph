@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NIST SP 800-53
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nist-sp-800-53:3bc75ea6ba54",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ac93efbf932f24082a25ec0526ff5ea2306f180c324998b7f8b00d712497ac95"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NIST]]",
-      "resolved": "urn:visionflow:linked:nist",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - NIST SP 800-53 provides a catalogue of security and privacy controls for information systems and organisations.

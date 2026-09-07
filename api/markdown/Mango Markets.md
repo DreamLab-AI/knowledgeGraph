@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mango Markets
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mango-markets:2748243a1fd3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:62b07dea6983282eff45f2381fce8172f7764fb08702080487adae23ea2101c2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralized Exchange]]",
-      "resolved": "urn:visionflow:linked:decentralized-exchange",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Yield Farming]]",
-      "resolved": "urn:visionflow:linked:yield-farming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Market Maker]]",
-      "resolved": "urn:visionflow:linked:automated-market-maker",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Mango Markets is a decentralised trading platform on Solana offering spot and perpetual markets, notable as the site of a large 2022 exploit that manipulated an oracle price to drain its treasury.

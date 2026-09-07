@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DeFi Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,48 +21,117 @@ public: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    {
+      "@id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
+    }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"}
+    {
+      "@id": "urn:ngm:class:decentralized-finance",
+      "label": "Decentralized Finance"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:blockchain-oracle", "label": "Blockchain Oracle"},
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:liquidity-mining", "label": "Liquidity Mining"},
-      {"@id": "urn:ngm:class:flash-loan", "label": "Flash Loan"}
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"}
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:composability", "label": "Composability"}
+      {
+        "@id": "urn:ngm:class:composability",
+        "label": "Composability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-finance", "label": "Traditional Finance"}
+      {
+        "@id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:mev", "label": "MEV"},
-      {"@id": "urn:ngm:class:impermanent-loss", "label": "Impermanent Loss"},
-      {"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
     ]
   },
   "quality": 0.72,
@@ -86,7 +150,7 @@ public: true
   - Governance over adjustable protocol parameters—fee tiers, collateral ratios, supported assets—is typically managed by [[Governance Token]] holders voting through a [[DAO]] or dedicated on-chain voting module.
 
 - ### Overview
-  - DeFi protocols emerged from the recognition that financial logic—price discovery, credit allocation, market-making—could be expressed as deterministic programmes running on a censorship-resistant global ledger rather than inside the operational systems of licensed financial institutions.
+  - DeFi protocols emerged from the recognition that financial logic—price discovery, credit allocation, market-making—[private] be expressed as deterministic programmes running on a censorship-resistant global ledger rather than inside the operational systems of licensed financial institutions.
   - [[Ethereum]] was the first blockchain to host a rich ecosystem of DeFi protocols at scale; the [[ERC-20]] token standard and the composable [[Smart Contract]] execution environment it provided were necessary preconditions.
   - The protocol architecture separates concerns into discrete layers:
     - **Settlement layer** — the underlying blockchain that provides finality and security

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Decision Theory
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -143,7 +137,7 @@ public: true
   "definition": "Decision theory is the formal study of how a rational agent should choose among actions whose outcomes are uncertain, combining probabilities over states of the world with utilities over outcomes to select actions that maximise expected utility. Its normative branch prescribes optimal choice under axioms of rationality, while its descriptive branch studies how agents actually decide. It provides the foundational framework for rational action in artificial intelligence, economics, and operations research.",
   "domain": "artificial-intelligence",
   "maturity": "mature",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:artificial-intelligence",
@@ -301,7 +295,7 @@ public: true
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",

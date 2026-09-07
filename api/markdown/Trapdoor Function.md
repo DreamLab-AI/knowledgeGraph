@@ -1,36 +1,112 @@
----
-public: true
----
-
-# Trapdoor Function
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:trapdoor-function", "@type":"Page", "title":"Trapdoor Function", "vc:slug":"trapdoor-function", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:trapdoor-function",
+  "@type": "Page",
+  "title": "Trapdoor Function",
+  "vc:slug": "trapdoor-function",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:trapdoor-function",
-  "@type":"Class",
-  "label":"Trapdoor Function",
-  "definition":"A trapdoor function is a one-way function that is easy to compute in the forward direction but computationally infeasible to invert, except for a party holding a secret piece of information called the trapdoor. This asymmetry between forward computation and inversion underpins public-key cryptography, where the public key enables encryption or verification and the private trapdoor enables decryption or signing. Candidate trapdoor functions rest on conjectured hard problems such as integer factorisation and the discrete logarithm.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cryptographic-primitive","label":"Cryptographic Primitive"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"},{"@id":"urn:ngm:class:asymmetric-encryption","label":"Asymmetric Encryption"}],
-    "requires":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"},{"@id":"urn:ngm:class:key-generation","label":"Key Generation"}],
-    "uses":[{"@id":"urn:ngm:class:cryptographic-primitive","label":"Cryptographic Primitive"}],
-    "enables":[{"@id":"urn:ngm:class:rsa","label":"RSA"},{"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"},{"@id":"urn:ngm:class:encryption","label":"Encryption"}],
-    "supports":[{"@id":"urn:ngm:class:key-exchange","label":"Key Exchange"}],
-    "relatedTo":[{"@id":"urn:ngm:class:elliptic-curve-cryptography","label":"Elliptic Curve Cryptography"},{"@id":"urn:ngm:class:hash-function","label":"Hash Function"},{"@id":"urn:ngm:class:zero-knowledge-proof","label":"Zero-Knowledge Proof"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:hash-function","label":"Hash Function"}],
-    "partOf":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trapdoor-function",
+  "@type": "Class",
+  "label": "Trapdoor Function",
+  "definition": "A trapdoor function is a one-way function that is easy to compute in the forward direction but computationally infeasible to invert, except for a party holding a secret piece of information called the trapdoor. This asymmetry between forward computation and inversion underpins public-key cryptography, where the public key enables encryption or verification and the private trapdoor enables decryption or signing. Candidate trapdoor functions rest on conjectured hard problems such as integer factorisation and the discrete logarithm.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:key-generation",
+        "label": "Key Generation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rsa",
+        "label": "RSA"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Layer 1
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,46 +191,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:layer-1:922badbaf192",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:29a6effe54c83991003cd33f87eec45a4b62f9ea041a955810873ceae8d79aa1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Consensus Protocol]]",
-      "resolved": "urn:visionflow:linked:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 2 Networks]]",
-      "resolved": "urn:visionflow:linked:layer-2-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed Ledger]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

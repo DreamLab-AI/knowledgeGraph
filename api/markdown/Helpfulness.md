@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Helpfulness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:harmlessness", "label": "Harmlessness"},
-      {"@id": "urn:ngm:class:honesty", "label": "Honesty"}
+      {
+        "@id": "urn:ngm:class:harmlessness",
+        "label": "Harmlessness"
+      },
+      {
+        "@id": "urn:ngm:class:honesty",
+        "label": "Honesty"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"}
+      {
+        "@id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:helpfulness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d68ba4d2686b2d134dde964f730166f862995b69c6caca446377d3b030d3c75a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MUST]]",
-      "resolved": "urn:visionflow:linked:must",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An alignment objective ensuring AI systems provide useful, relevant, and informative responses to user queries. Helpfulness represents a key dimension of AI utility that must be balanced against harmlessness and honesty.

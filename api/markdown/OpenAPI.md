@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenAPI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -122,6 +118,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - OpenAPI is a language-agnostic, machine-readable specification for describing HTTP-based RESTful APIs. An OpenAPI document defines available endpoints, operations, parameters, request and response schemas, and authentication mechanisms in a single structured file written in YAML or JSON. It enables automated generation of documentation, client SDKs, server stubs, and validation logic, decoupling an API's contract from its implementation.
   - Related concepts: [[API]] [[REST]] [[YAML]] [[API Specification]]

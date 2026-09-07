@@ -1,8 +1,3 @@
----
-public: true
----
-
-# server-sent events
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Consistency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Data consistency is the guarantee that data remains valid, coherent and in agreement across copies, transactions and nodes of a system. In distributed systems it spans a spectrum from strong consistency, where all readers observe the latest write, to eventual consistency, where replicas converge over time. It is a core correctness property traded off against availability and latency, and it underpins fault-tolerant data layers.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:data-layer", "label": "Data Layer"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
     ]
   },
   "quality": 0.72

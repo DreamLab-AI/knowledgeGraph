@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Speech Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:speech-processing:0a46d60c718e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0a6168d4d4b89f8d2cbbe15380dd9e88ac5b026a5a50331b79a7e8b020cc341a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Audio Processing]]",
-      "resolved": "urn:visionflow:linked:audio-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:linked:speech-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text-to-Speech]]",
-      "resolved": "urn:visionflow:linked:text-to-speech",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The field concerned with the analysis, recognition, synthesis and transformation of human speech signals by computational systems.

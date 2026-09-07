@@ -1,58 +1,116 @@
----
-public: true
----
-
-# Danksharding
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:danksharding", "@type":"Page", "title":"Danksharding", "vc:slug":"danksharding", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:danksharding",
+  "@type": "Page",
+  "title": "Danksharding",
+  "vc:slug": "danksharding",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:danksharding",
-  "@type":"Class",
-  "label":"Danksharding",
-  "definition":"Danksharding is a data-availability scaling design for Ethereum that scales the blockchain by providing large amounts of cheap data space for rollups rather than sharding execution. It uses a unified fee market and a merged block-building process in which a single proposer commits to a block containing many data blobs, the availability of which is verified through data-availability sampling and erasure coding. Danksharding is the long-term target architecture that proto-danksharding incrementally builds towards.",
-  "domain":"blockchain",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:sharding","label":"Sharding"}],
-  "relations":{
-    "implements":[
-      {"@id":"urn:ngm:class:data-availability-sampling","label":"Data Availability Sampling"},
-      {"@id":"urn:ngm:class:erasure-coding","label":"Erasure Coding"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:danksharding",
+  "@type": "Class",
+  "label": "Danksharding",
+  "definition": "Danksharding is a data-availability scaling design for Ethereum that scales the blockchain by providing large amounts of cheap data space for rollups rather than sharding execution. It uses a unified fee market and a merged block-building process in which a single proposer commits to a block containing many data blobs, the availability of which is verified through data-availability sampling and erasure coding. Danksharding is the long-term target architecture that proto-danksharding incrementally builds towards.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sharding",
+      "label": "Sharding"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:scalability","label":"Scalability"},
-      {"@id":"urn:ngm:class:rollup","label":"Rollup"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:zk-rollup","label":"ZK-Rollup"},
-      {"@id":"urn:ngm:class:optimistic-rollup","label":"Optimistic Rollup"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:kzg-commitment","label":"KZG Commitment"},
-      {"@id":"urn:ngm:class:blob-transaction","label":"Blob Transaction"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:blob-transaction",
+        "label": "Blob Transaction"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:data-availability","label":"Data Availability"},
-      {"@id":"urn:ngm:class:beacon-chain","label":"Beacon Chain"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:beacon-chain",
+        "label": "Beacon Chain"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:polynomial-commitment","label":"Polynomial Commitment"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:validator","label":"Validator"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:proto-danksharding","label":"Proto-Danksharding"},
-      {"@id":"urn:ngm:class:ethereum","label":"Ethereum"},
-      {"@id":"urn:ngm:class:proof-of-stake","label":"Proof of Stake"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:proto-danksharding",
+        "label": "Proto-Danksharding"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

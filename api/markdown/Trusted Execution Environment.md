@@ -1,8 +1,3 @@
----
-public: true
----
-
-# trusted execution environment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

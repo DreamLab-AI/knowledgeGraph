@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NPC Interaction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:npc-interaction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:770d416f04a209151360c7a0c178c195c6c1c89bbbf3769dcece359b46638789"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Immersive Gameplay]]",
-      "resolved": "urn:visionflow:linked:immersive-gameplay",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Game Mechanics]]",
-      "resolved": "urn:visionflow:owl:class:game-mechanics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The systems and mechanics enabling player communication and engagement with non-player characters in video games and virtual worlds, increasingly powered by AI and large language models to generate dynamic, unscripted dialogue and contextual responses.

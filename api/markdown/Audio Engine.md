@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Audio Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,43 @@ public: true
   "definition": "An Audio Engine is a software subsystem that manages the real-time synthesis, processing, mixing, and spatialisation of sound within an interactive or generative application. It abstracts hardware audio interfaces, schedules audio computation on dedicated threads or hardware DSP units, and exposes higher-level APIs for triggering, routing, and modulating sound objects in response to application events.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:audio-system", "label": "Audio System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:audio-system",
+      "label": "Audio System"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:audio-signal-processing", "label": "Audio Signal Processing"},
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"}
+      {
+        "@id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialization"},
-      {"@id": "urn:ngm:class:procedural-audio-generator", "label": "Procedural Audio Generator"}
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-audio-generator",
+        "label": "Procedural Audio Generator"
+      }
     ],
-    "relatedTo": [{"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -56,4 +76,3 @@ public: true
   - Spatial audio capabilities have become a first-class requirement for VR and AR applications. HRTF (Head-Related Transfer Function) convolution simulates how sounds reach the ears from different directions by applying individualized or generalised impulse responses. Ambisonics provides a scene-based intermediate representation that can be decoded to any speaker arrangement or binaural mix at runtime. Resonance Audio (Google, open-sourced 2017), Steam Audio, and Oculus Audio SDK are widely used spatial audio engines. Room acoustics simulation via image-source methods and geometric acoustics engines (Embree-based ray casting) adds reverberant character that responds dynamically to virtual geometry.
 
   - As of 2024–2025, machine-learning approaches to audio are entering engine pipelines: neural vocoders (WaveNet, HiFi-GAN) are used for high-quality text-to-speech within interactive applications; AI-driven music generation (Suno, Udio, MusicGen) enables dynamic adaptive soundtracks; neural reverb and upsampling models improve audio quality at reduced bitrates. Real-time neural audio on device remains computationally expensive, but NPU acceleration on Apple Silicon, Qualcomm Snapdragon, and dedicated audio DSP chips is steadily making on-device inference practical. Spatial audio for headset devices is increasingly personalised using ear-shape scanning or in-situ HRTF measurement.
-

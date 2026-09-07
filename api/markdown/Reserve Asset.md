@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reserve Asset
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reserve-asset:943fb43714bb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5bf9e28e76cff27367ebafa33d2c4d38765a705ab8e571be3c8d6575e1ca61f2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:linked:stablecoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Monetary Policy]]",
-      "resolved": "urn:visionflow:linked:monetary-policy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An asset held to back a liability or to provide a store of value, such as the holdings that back a stablecoin or the foreign currency reserves held by a central bank. Its purpose is to ensure that claims can be met.

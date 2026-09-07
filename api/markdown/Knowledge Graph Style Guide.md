@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Style Guide]]
-# Knowledge Graph Style Guide
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,18 +51,36 @@ elevatedFrom:: [[Style Guide]]
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
     ]
   },
   "provenance": {
@@ -78,37 +90,6 @@ elevatedFrom:: [[Style Guide]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:style-guide:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ab69c9ecdf8e3bf571d0badcf4ffa2322fbea86f00dc5ec717f38588d1baf6af"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[block title]]",
-      "resolved": "urn:visionflow:linked:block-title",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[reference]]",
-      "resolved": "urn:visionflow:linked:reference",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Style Guide is a normative document specifying authoring conventions — voice, tone, markup syntax, citation format, and structural patterns — for consistent content creation within a knowledge graph or publication system. In the NarrativeGoldmine context it captures Logseq markdown conventions, UK English preferences, and the analytical-conversational register used throughout the graph.

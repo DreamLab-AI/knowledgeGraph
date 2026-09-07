@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Analog-to-Digital Converter
----
-
-# Analog To Digital Converter
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -109,72 +102,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:analog-to-digital-converter:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c7b12eb8de5fbd09a39b5ad524aaa50416048be230302b2027a4689d2385031b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Audio Recording]]",
-      "resolved": "urn:visionflow:linked:digital-audio-recording",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Imaging]]",
-      "resolved": "urn:visionflow:linked:digital-imaging",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Resolution Bits]]",
-      "resolved": "urn:visionflow:linked:resolution-bits",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sampling Rate]]",
-      "resolved": "urn:visionflow:linked:sampling-rate",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Data Processing]]",
-      "resolved": "urn:visionflow:linked:sensor-data-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Signal Conditioning]]",
-      "resolved": "urn:visionflow:linked:signal-conditioning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Signal Processing Hardware]]",
-      "resolved": "urn:visionflow:linked:signal-processing-hardware",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world signals.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Front-Running
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

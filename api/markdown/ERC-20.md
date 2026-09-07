@@ -1,8 +1,3 @@
----
-public: true
----
-
-# erc-20
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

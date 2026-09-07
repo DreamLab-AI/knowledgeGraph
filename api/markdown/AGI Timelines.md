@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AGI Timelines
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -291,234 +286,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agi-timelines:enriched",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:agi-timelines"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial General Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-general-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Capability Forecasting]]",
-      "resolved": "urn:visionflow:linked:capability-forecasting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Safety]]",
-      "resolved": "urn:visionflow:linked:ai-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Alignment]]",
-      "resolved": "urn:visionflow:linked:ai-alignment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Safety Research]]",
-      "resolved": "urn:visionflow:linked:ai-safety-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ARC-AGI]]",
-      "resolved": "urn:visionflow:linked:arc-agi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scaling Laws]]",
-      "resolved": "urn:visionflow:linked:scaling-laws",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Performance Benchmarks]]",
-      "resolved": "urn:visionflow:linked:performance-benchmarks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Gartner Prediction]]",
-      "resolved": "urn:visionflow:linked:gartner-prediction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Time-Series Forecasting]]",
-      "resolved": "urn:visionflow:linked:time-series-forecasting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compute Governance]]",
-      "resolved": "urn:visionflow:linked:compute-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compute Resources]]",
-      "resolved": "urn:visionflow:linked:compute-resources",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:linked:large-language-models",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Networks]]",
-      "resolved": "urn:visionflow:linked:neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Evaluation]]",
-      "resolved": "urn:visionflow:linked:model-evaluation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Evaluation Benchmarks and Leaderboards]]",
-      "resolved": "urn:visionflow:linked:evaluation-benchmarks-and-leaderboards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:linked:ai-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Safety Institute]]",
-      "resolved": "urn:visionflow:linked:ai-safety-institute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AISI Frontier AI Safety Framework]]",
-      "resolved": "urn:visionflow:linked:aisi-frontier-ai-safety-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Agents]]",
-      "resolved": "urn:visionflow:linked:autonomous-agents",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Reasoning]]",
-      "resolved": "urn:visionflow:linked:autonomous-reasoning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Alignment]]",
-      "resolved": "urn:visionflow:linked:alignment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bayesian Inference]]",
-      "resolved": "urn:visionflow:linked:bayesian-inference",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Expert Elicitation]]",
-      "resolved": "urn:visionflow:linked:expert-elicitation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Prediction Markets]]",
-      "resolved": "urn:visionflow:linked:prediction-markets",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Superforecasting]]",
-      "resolved": "urn:visionflow:linked:superforecasting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transformative AI]]",
-      "resolved": "urn:visionflow:linked:transformative-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Frontier AI]]",
-      "resolved": "urn:visionflow:linked:frontier-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compute Cluster]]",
-      "resolved": "urn:visionflow:linked:compute-cluster",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Policy]]",
-      "resolved": "urn:visionflow:linked:ai-policy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Existential Risk]]",
-      "resolved": "urn:visionflow:linked:existential-risk",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Emergent Behaviour]]",
-      "resolved": "urn:visionflow:linked:emergent-behaviour",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Multimodal AI]]",
-      "resolved": "urn:visionflow:linked:multimodal-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reasoning]]",
-      "resolved": "urn:visionflow:linked:reasoning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cognitive Science]]",
-      "resolved": "urn:visionflow:linked:cognitive-science",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robustness]]",
-      "resolved": "urn:visionflow:linked:robustness",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Alignment Research]]",
-      "resolved": "urn:visionflow:linked:alignment-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Alignment Techniques]]",
-      "resolved": "urn:visionflow:linked:alignment-techniques",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Economic Impact of AI]]",
-      "resolved": "urn:visionflow:linked:economic-impact-of-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Labour Market Disruption]]",
-      "resolved": "urn:visionflow:linked:labour-market-disruption",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Brain Computer Interfaces]]",
-      "resolved": "urn:visionflow:linked:brain-computer-interfaces",
-      "kind": "StubLink"
-    }
-  ]
-}
-```
-
 - ### Definition
   - AGI timelines are structured probabilistic forecasts estimating when [[Artificial General Intelligence]] — AI matching or exceeding human cognitive ability across most economically valuable tasks — might be achieved.
   - Rather than point predictions, they take the form of probability distributions over future dates, produced by synthesising heterogeneous evidence streams: expert surveys such as the AI Impacts Expert Survey on Progress in AI (ESPAI, 2022 and 2023), compute-scaling extrapolations such as Ajeya Cotra's biological anchors model, benchmark-progress curves tracked by prediction communities including Metaculus and Manifold Markets, and [[Bayesian Inference]] aggregation of research milestones.
@@ -644,10 +411,10 @@ public: true
 
   ## Capability Milestones 2022–2026
     - The period 2022–2026 has seen dramatic compression of median AGI timeline estimates across all methodologies, driven by qualitatively new capability demonstrations that were not anticipated by most pre-2022 timeline models and that repeatedly crossed thresholds previously considered markers of human cognitive distinctiveness.
-    - The **ChatGPT release (November 2022)** demonstrated instruction-following [[Large Language Models]] capability at mass-market scale for the first time, producing the first widespread public encounter with frontier model capability and prompting rapid upward revision of near-term AI impact estimates among commentators, investors, and policymakers who had not previously engaged with frontier model research. Within days of release, it was clear that instruction-following models trained via RLHF on large-scale corpora could handle a far wider range of tasks than previous chatbots and code assistants, including complex multi-step [[Reasoning]], creative writing, code generation, and multi-domain question answering. The subsequent six months saw major timeline compression among commentators — not yet in formal surveys, which require months to conduct and analyse — as the magnitude of the capability step from previous generation models became apparent.
+    - The **ChatGPT release (November 2022)** demonstrated instruction-following [[Large Language Models]] capability at mass-market scale for the first time, producing the first widespread public encounter with frontier model capability and prompting rapid upward revision of near-term AI impact estimates among commentators, investors, and policymakers who had not previously engaged with frontier model research. Within days of release, it was clear that instruction-following models trained via RLHF on large-scale corpora [private] handle a far wider range of tasks than previous chatbots and code assistants, including complex multi-step [[Reasoning]], creative writing, code generation, and multi-domain question answering. The subsequent six months saw major timeline compression among commentators — not yet in formal surveys, which require months to conduct and analyse — as the magnitude of the capability step from previous generation models became apparent.
     - The **GPT-4 release (March 2023)** produced the most concentrated set of AGI-relevant capability demonstrations to that date: performance at the 90th percentile among human test-takers on the US bar exam (a complex multi-step [[Reasoning]], legal knowledge, and essay task); >90th-percentile performance on the LSAT, SAT, GRE verbal reasoning, AP Biology, AP Chemistry, and AP Environmental Science exams; medical licensing exam performance at or above passing threshold; and dramatic improvements on MMLU, HumanEval coding, and mathematical [[Reasoning]] benchmarks. GPT-4 was the direct catalyst for the AI Impacts 2023 expert survey's 13-year median compression (from 2059 to 2047 vs 2022 baseline), with respondents explicitly citing GPT-4's professional-examination performance as updating their beliefs about how far current-generation models had progressed beyond their 2022 expectations. It also catalysed the first mainstream policy responses, including the EU AI Act's compute thresholds and the US Executive Order 14110.
     - The **AlphaProof and AlphaGeometry 2 milestone (July 2024)** — gold-medal equivalent performance at the 2024 International Mathematical Olympiad — demonstrated formal mathematical [[Reasoning]] at elite human level in a domain that had been specifically cited by sceptics as a stronghold of human cognitive capability resistant to language model approaches. The result updated many expert timelines meaningfully because formal mathematics (proof verification, novel theorem construction, combinatorial problem-solving under time constraints) requires compositional multi-step [[Reasoning]] over abstract structures that does not obviously benefit from the statistical pattern matching underlying [[Large Language Models]], yet the Google DeepMind systems achieved it. This milestone is regularly cited in 2025–2026 prediction market discussions as evidence that the set of cognitive tasks "immune" to AI progress is shrinking faster than previous outside-view historical extrapolations would suggest.
-    - The **o1 and o3 reasoning model series** from OpenAI (September 2024 through early 2025) introduced extended chain-of-thought [[Reasoning]] within the inference process itself — models that "think through" problems across hundreds of internal reasoning steps before producing output, rather than producing single-pass completions. This architectural shift produced substantial improvements on [[ARC-AGI]] benchmark performance (previously regarded as highly resistant to [[Large Language Models]] because it requires novel task adaptation rather than memorisation), with o3 reportedly achieving performance in the 75-85% range on [[ARC-AGI]] evaluation sets. The demonstration that extended [[Reasoning]] compute at inference time could substitute for certain kinds of generalisation challenged the view that [[ARC-AGI]] required fundamentally different capabilities from language modelling.
+    - The **o1 and o3 reasoning model series** from OpenAI (September 2024 through early 2025) introduced extended chain-of-thought [[Reasoning]] within the inference process itself — models that "think through" problems across hundreds of internal reasoning steps before producing output, rather than producing single-pass completions. This architectural shift produced substantial improvements on [[ARC-AGI]] benchmark performance (previously regarded as highly resistant to [[Large Language Models]] because it requires novel task adaptation rather than memorisation), with o3 reportedly achieving performance in the 75-85% range on [[ARC-AGI]] evaluation sets. The demonstration that extended [[Reasoning]] compute at inference time [private] substitute for certain kinds of generalisation challenged the view that [[ARC-AGI]] required fundamentally different capabilities from language modelling.
     - The **LEAP Wave 8 survey results (April-May 2026)** representing the most recent systematic cross-population forecasting data, revealed significant heterogeneity across respondent types: the expert-domain-researcher median for "AI achieving 80% success rate on randomly sampled 8-hour software engineering tasks" was 2030; the superforecaster median was 2028; and the general-public sample gave a much later estimate of 2037 — a 9-year gap between the professionally calibrated forecast and the public estimate, illustrating the significant public communication gap around AGI timeline evidence. The 8-hour software engineering task benchmark was specifically chosen by LEAP as a milestone requiring sustained autonomous planning, debugging, and self-correction across a realistic time horizon — a capability threshold substantially beyond current frontier model autonomous agency performance as of mid-2026.
     - **Counter-evidence and timeline extension signals from 2025–2026**: The dominant narrative of accelerating timeline compression was partially qualified in early 2026 by several convergent observations. Progress on fully autonomous research tasks — AI completing open-ended scientific projects with no human guidance over multi-week horizons — proved substantially slower than optimistic extrapolations from 2023–2024 coding task performance suggested. Novel [[ARC-AGI]] task families (constructed specifically to prevent solution by memorisation or near-retrieval) continued to present significant difficulty to o3-class models, suggesting that genuine novel-task generalisation remained a bottleneck even for extended-inference systems. Evidence of diminishing capability returns per unit of additional training compute — relative to the trajectory observed from GPT-3 to GPT-4 — without new architectural innovations led several prominent forecasters including Metaculus community aggregate trackers to slightly extend their median estimates in early 2026, partially reversing the extreme compression of 2023–2025.
 
@@ -682,11 +449,11 @@ public: true
 
   ## Academic Context
     - The systematic study of AGI timelines has a surprisingly long history, with informal forecasts predating the modern machine learning era and the field evolving from speculation to rigorous probabilistic methodology over six decades.
-    - The **historical trajectory** of AGI forecasting begins with the first AI overestimation at the 1956 Dartmouth Conference, where Minsky, McCarthy, and colleagues predicted that "every aspect of learning or any other feature of intelligence can be so precisely described that a machine can be made to simulate it" within a single summer's research programme — a prediction that proved wrong by at least fifty years. The subsequent AI winters of the 1970s and 1980s taught researchers the danger of near-term optimism, producing a generation of AI researchers who systematically underestimated progress rates during the deep learning era. Ray Kurzweil's "The Singularity Is Near" (2005) revived compute-extrapolation arguments for AGI by 2029, popular but methodologically informal — Kurzweil's extrapolation assumed continuous exponential hardware scaling and algorithmic efficiency improvement without accounting for potential capability discontinuities or data limitations. The AI Impacts ESPAI 2016 survey (n=80) established the first rigorous survey methodology, producing a median HLMI estimate of approximately 2060. ESPAI 2022 (n=738, pre-GPT-4) updated this to a median of 2059. ESPAI 2023 (n=2,778, conducted seven months after GPT-4's release in March 2023) compressed this dramatically to 2047 — the largest single-year shift in the survey's history, driven by the demonstration that [[Large Language Models]] could pass professional-level examinations in law, medicine, and finance.
+    - The **historical trajectory** of AGI forecasting begins with the first AI overestimation at the 1956 Dartmouth Conference, where Minsky, McCarthy, and colleagues predicted that "every aspect of learning or any other feature of intelligence can be so precisely described that a machine can be made to simulate it" within a single summer's research programme — a prediction that proved wrong by at least fifty years. The subsequent AI winters of the 1970s and 1980s taught researchers the danger of near-term optimism, producing a generation of AI researchers who systematically underestimated progress rates during the deep learning era. Ray Kurzweil's "The Singularity Is Near" (2005) revived compute-extrapolation arguments for AGI by 2029, popular but methodologically informal — Kurzweil's extrapolation assumed continuous exponential hardware scaling and algorithmic efficiency improvement without accounting for potential capability discontinuities or data limitations. The AI Impacts ESPAI 2016 survey (n=80) established the first rigorous survey methodology, producing a median HLMI estimate of approximately 2060. ESPAI 2022 (n=738, pre-GPT-4) updated this to a median of 2059. ESPAI 2023 (n=2,778, conducted seven months after GPT-4's release in March 2023) compressed this dramatically to 2047 — the largest single-year shift in the survey's history, driven by the demonstration that [[Large Language Models]] [private] pass professional-level examinations in law, medicine, and finance.
     - The **biological anchors framework** developed by Ajeya Cotra for Open Philanthropy (2020, substantially updated 2022) is the most influential methodological innovation in the AGI timelines field. The framework asks a precisely specified question: how much training compute would be required to produce a model with the same information-processing capacity as a human brain, measured in floating-point operations across a learning lifetime? Using neuroscientific estimates of the human brain's computational capacity (approximately 10^15 FLOPs per second sustained processing, roughly 10^24 FLOPs of synaptic updates across a human learning lifetime from birth to adult expertise), combined with projections of GPU hardware cost curves (following historical trends showing roughly 2× cost reduction per year for equivalent compute) and training efficiency improvement trends, the model produces probability distributions over the year in which sufficient training compute becomes economically accessible for frontier AI research organisations. The 2020 version estimated a 50% chance of transformative AI by 2050 and a 15% chance by 2030. The 2022 update, incorporating two years of observed algorithmic efficiency gains and scaling law discoveries (including the Kaplan et al. and Chinchilla laws), revised these to a 50% chance by 2040 and a 30% chance by 2030 — a decade of compression from a single model update, illustrating the model's high sensitivity to algorithmic efficiency gain assumptions. Tom Davidson's subsequent "take-off speeds" model (Open Philanthropy, 2023) extends Cotra's framework to estimate not just when AGI might be achieved but how rapidly the economic transformation after AGI achievement would unfold — whether "fast take-off" (transformative economic impact within months of AGI deployment) or "slow take-off" (gradual impact over years and decades) depending on AGI deployment constraints, physical capital complementarity requirements, and regulatory responses.
     - The field draws on several **disciplinary traditions** that each contribute distinct conceptual tools. [[Superforecasting]] methodology, developed by Philip Tetlock over decades of forecasting tournament research and summarised in "Superforecasting: The Art and Science of Prediction" (Tetlock and Gardner, 2015), provides the calibration framework applied to AI by Good Judgment Project panels and Samotsvety. The key [[Superforecasting]] insight most relevant to AGI timelines is that calibration — giving 70% probability only to events that occur 70% of the time — matters more than resolution (making bold confident predictions), and that most domain experts are systematically overconfident. [[Bayesian Inference]] provides the philosophical framework for treating prior beliefs as probability distributions and updating them on evidence via likelihood functions, enabling formal integration of new capability milestones into existing timeline models. [[Prediction Markets]] theory (Hanson 2003, 2007) provides the mechanism-design foundation for aggregation platforms like Metaculus and Manifold Markets — properly incentivised market prices should converge to well-calibrated probabilities, making market data a useful complement to survey-based elicitation. [[Cognitive Science]] and the philosophy of mind contribute the conceptual apparatus for defining the target: what counts as "intelligence," "understanding," "general capability," and "reasoning" at the level required for AGI? François Chollet's "On the Measure of Intelligence" (2019), which introduced the [[ARC-AGI]] benchmark, made the most precise operationalisation of this question available: general intelligence is efficient novel task adaptation rather than accumulated task performance, and any system that achieves high performance purely through memorisation of training patterns has not demonstrated general intelligence even if it performs well on standard benchmarks.
     - The **Epoch AI research organisation** (founded 2021) has built the most systematic empirical infrastructure supporting AGI timelines forecasting. Their compute database tracking training runs across published models from 2010 to 2026 documents a roughly 4× annual increase in training compute for frontier models over the decade — though with some deceleration since 2022 as the largest training runs (Gemini Ultra, GPT-4, Claude 3, Llama 3 405B) become extremely expensive and further scaling faces both economic and hardware constraints. Their algorithmic efficiency tracking finds approximately 2× efficiency improvement per year across various ML tasks (meaning the same performance can be achieved with half the compute each year), implying that "effective compute" (actual compute × efficiency) doubles roughly every 6–9 months. This effective compute doubling rate, significantly faster than hardware-alone Moore's Law, underpins the optimistic end of AGI timeline estimates. Epoch AI's "Literature Review of Transformative AI Timelines" (2023) synthesised all credible existing timeline models and concluded that TAI by 2030–2060 is the modal range, with significant probability mass outside that window in both directions — an honest acknowledgement that the range of reasonable estimates spans three full decades.
-    - **Key empirical phenomena** that have substantially updated timeline models in the 2020–2026 period include: the [[Scaling Laws]] discovery (Kaplan et al., 2020; Hoffmann et al. Chinchilla paper, 2022) demonstrating predictable cross-entropy loss curves as a function of compute and data, enabling quantitative extrapolation of training compute requirements for future capability thresholds; [[Emergent Behaviour]] research (Wei et al., 2022) documenting qualitative capability jumps at specific compute scales — in-context learning, chain-of-thought [[Reasoning]], arithmetic, and other capabilities appearing discontinuously at certain model sizes — creating uncertainty about whether AGI-level capabilities might emerge discontinuously from a single training run rather than gradually from years of incremental improvement; chain-of-thought prompting (Wei et al., 2022) demonstrating that [[Large Language Models]] could reason across multiple steps without architectural changes by simply formatting examples with intermediate [[Reasoning]] steps, substantially expanding apparent model capability with no new training; and the IMO 2024 gold-medal equivalent performance of AlphaProof and AlphaGeometry 2 (Google DeepMind, July 2024), which demonstrated elite formal mathematical [[Reasoning]] — a domain previously considered a gold standard for human cognitive capability — suggesting that at least some forms of high-level human intellectual performance are now within reach of frontier AI systems.
+    - **Key empirical phenomena** that have substantially updated timeline models in the 2020–2026 period include: the [[Scaling Laws]] discovery (Kaplan et al., 2020; Hoffmann et al. Chinchilla paper, 2022) demonstrating predictable cross-entropy loss curves as a function of compute and data, enabling quantitative extrapolation of training compute requirements for future capability thresholds; [[Emergent Behaviour]] research (Wei et al., 2022) documenting qualitative capability jumps at specific compute scales — in-context learning, chain-of-thought [[Reasoning]], arithmetic, and other capabilities appearing discontinuously at certain model sizes — creating uncertainty about whether AGI-level capabilities might emerge discontinuously from a single training run rather than gradually from years of incremental improvement; chain-of-thought prompting (Wei et al., 2022) demonstrating that [[Large Language Models]] [private] reason across multiple steps without architectural changes by simply formatting examples with intermediate [[Reasoning]] steps, substantially expanding apparent model capability with no new training; and the IMO 2024 gold-medal equivalent performance of AlphaProof and AlphaGeometry 2 (Google DeepMind, July 2024), which demonstrated elite formal mathematical [[Reasoning]] — a domain previously considered a gold standard for human cognitive capability — suggesting that at least some forms of high-level human intellectual performance are now within reach of frontier AI systems.
 
   ## Current Landscape (2026)
     - As of June 2026, the AGI timelines landscape is characterised by unusually wide disagreement, rapid update frequency, and intense policy salience.
@@ -768,7 +535,7 @@ public: true
     2. Grace, K. (2022). 2022 Expert Survey on Progress in AI. AI Impacts. https://aiimpacts.org/2022-expert-survey-on-progress-in-ai/
     3. Grace, K. (2024). 2023 Expert Survey on Progress in AI. AI Impacts. https://wiki.aiimpacts.org/ai_timelines/predictions_of_human-level_ai_timelines/ai_timeline_surveys/2023_expert_survey_on_progress_in_ai
     4. Cotra, A. (2020, updated 2022). Forecasting TAI with biological anchors. Open Philanthropy. https://www.alignmentforum.org/posts/KrJfoZzpSDpnrv9va/
-    5. Davidson, T. (2023). Could advanced AI drive explosive economic growth? Open Philanthropy.
+    5. Davidson, T. (2023). [private] advanced AI drive explosive economic growth? Open Philanthropy.
     6. Metaculus Community (2026). When will the first AGI be developed? Metaculus platform data. https://www.metaculus.com
     7. Tetlock, P. E., & Gardner, D. (2015). *Superforecasting: The Art and Science of Prediction*. Crown.
     8. Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., ... & Amodei, D. (2020). Scaling laws for neural language models. *arXiv:2001.08361*.

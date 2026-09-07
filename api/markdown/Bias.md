@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bias
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -232,97 +227,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bias:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6d07f2c4186c2e4e8a343c7acba998bb60e74f4178b09ee26578dde6b073b4c2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[confusion matrices]]",
-      "resolved": "urn:visionflow:linked:confusion-matrices",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR (General Data Protection Regulation)]]",
-      "resolved": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
-      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST (National Institute of Standards and Technology)]]",
-      "resolved": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Risks]]",
-      "resolved": "urn:visionflow:owl:class:ai-risks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bias in Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:bias-in-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Safety and alignment]]",
-      "resolved": "urn:visionflow:owl:class:safety-and-alignment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Artefact Update Cycle]]",
-      "resolved": "urn:visionflow:owl:class:update-cycle",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts.
 
@@ -366,7 +270,7 @@ public: true
 				- The high energy costs associated with GENAI data centers are passed on to users, making these services less accessible to those in lower-income regions or with limited internet infrastructure.
 				- The economic burden of GENAI adoption can further exacerbate existing digital divides, excluding those who cannot afford the necessary infrastructure or energy costs.
 			- **Alternative Approaches**:
-				- Researchers suggest that more specialized, less carbon-intensive models could be used for specific tasks, [reducing energy consumption](https://www.techtarget.com/sustainability/feature/Generative-AIs-sustainability-problems-explained) and making these tools more accessible to a broader audience.
+				- Researchers suggest that more specialized, less carbon-intensive models [private] be used for specific tasks, [reducing energy consumption](https://www.techtarget.com/sustainability/feature/Generative-AIs-sustainability-problems-explained) and making these tools more accessible to a broader audience.
 				- The only other option is a phase transition to a new internet paradigm, with higher signal to noise, through aligned incentives and cryptographically assured end points.
 
   - ### Bias and Safety

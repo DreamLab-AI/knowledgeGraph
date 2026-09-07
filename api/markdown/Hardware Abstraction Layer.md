@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - HardwareAbstractionLayer
----
-
-# Hardware Abstraction Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,4 +177,3 @@ aliases:
   - In the context of robotic middleware, the ROS `ros_control` Hardware Interface defines a HAL contract between robot-agnostic controllers (PID position, velocity, effort) and robot-specific actuator drivers. A controller written for one manipulator arm works unmodified on any arm that provides the matching hardware interface, dramatically accelerating robot software reuse across platforms. Similarly, micro-ROS bridges embedded RTOS environments to ROS 2 through a HAL that abstracts UART and USB transport layers.
 
   - In graphics and compute, Vulkan can be understood as an explicit HAL: it exposes GPU memory, command queues, and synchronisation primitives at near-metal level with a hardware-independent API, with Installable Client Drivers (ICDs) providing the vendor implementations beneath. This explicit model allows engine developers to schedule GPU work without driver heuristics, maximising performance portability across AMD, NVIDIA, Intel, and mobile GPU architectures.
-

@@ -1,10 +1,14 @@
----
-public: true
----
-
-# System-on-Chip
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:system-on-chip", "@type":"Page", "title":"System-on-Chip", "vc:slug":"system-on-chip", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:system-on-chip",
+  "@type": "Page",
+  "title": "System-on-Chip",
+  "vc:slug": "system-on-chip",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

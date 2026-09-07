@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vertex Shader
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,57 +187,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vertex-shader:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ae1e4f2db3c2ad50ad5f27e3fcb9554c2404811375041a77a3bbd96935c2ca71"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GPU Programming]]",
-      "resolved": "urn:visionflow:linked:gpu-programming",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Graphics Pipeline]]",
-      "resolved": "urn:visionflow:linked:graphics-pipeline",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compute Shader]]",
-      "resolved": "urn:visionflow:owl:class:compute-shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pixel Shader]]",
-      "resolved": "urn:visionflow:owl:class:pixel-shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rasterization]]",
-      "resolved": "urn:visionflow:owl:class:rasterization",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A mandatory, programmable GPU stage that processes individual vertices within the graphics pipeline, transforming 3D coordinates through model, view, and projection matrices into clip space whilst computing per-vertex attributes such as normals, texture coordinates, and lighting terms that are subsequently interpolated across primitives for the fragment shader.

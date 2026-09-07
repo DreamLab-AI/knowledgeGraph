@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proof System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,10 +20,18 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}
+    {
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ]
   },
   "quality": 0.7
 }

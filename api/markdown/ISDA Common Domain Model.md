@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ISDA Common Domain Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,26 @@ public: true
   "definition": "The ISDA Common Domain Model is the full name of the standardised, machine-readable representation of financial products, trade events, and lifecycle processes maintained by the International Swaps and Derivatives Association. It establishes a single canonical model so that distributed ledgers, smart contracts, and institutional systems process derivatives transactions identically and without reconciliation. It is a cornerstone standard for interoperable, automated post-trade infrastructure.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:isda-cdm", "label": "ISDA CDM"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:isda-cdm",
+        "label": "ISDA CDM"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
     ]
   },
   "quality": 0.72

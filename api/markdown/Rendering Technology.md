@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rendering Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,17 +51,38 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
     ]
   },
   "provenance": {
@@ -76,32 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rendering-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bdeafd85fad8b167298f23a7c2d6331dec735336687883ffcc810dfbf3438c29"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Rendering Technology comprises the algorithms, pipelines, and hardware interfaces that convert geometric scene descriptions into pixel images. It encompasses rasterisation, ray tracing, and hybrid approaches, executed on GPUs through APIs such as Vulkan, Metal, and WebGPU, and is foundational to real-time interactive graphics, spatial computing experiences, and digital twin visualisation.

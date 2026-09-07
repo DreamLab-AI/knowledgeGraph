@@ -1,35 +1,102 @@
----
-public: true
----
-
-# Projective Geometry
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:projective-geometry", "@type":"Page", "title":"Projective Geometry", "vc:slug":"projective-geometry", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:projective-geometry",
+  "@type": "Page",
+  "title": "Projective Geometry",
+  "vc:slug": "projective-geometry",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:projective-geometry",
-  "@type":"Class",
-  "label":"Projective Geometry",
-  "definition":"Projective geometry is the branch of geometry concerned with properties of figures that are invariant under projective transformations, where points at infinity are treated on equal footing with ordinary points. Using homogeneous coordinates, it provides the mathematical foundation for modelling how three-dimensional scenes project onto image planes. It underpins camera models, multi-view geometry, and the reconstruction of structure from images in computer vision and spatial computing.",
-  "domain":"spatial-computing",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:homography","label":"Homography"}],
-    "requires":[{"@id":"urn:ngm:class:camera-calibration","label":"Camera Calibration"}],
-    "enables":[{"@id":"urn:ngm:class:epipolar-geometry","label":"Epipolar Geometry"},{"@id":"urn:ngm:class:photogrammetry","label":"Photogrammetry"}],
-    "supports":[{"@id":"urn:ngm:class:stereo-vision","label":"Stereo Vision"},{"@id":"urn:ngm:class:bundle-adjustment","label":"Bundle Adjustment"}],
-    "implements":[{"@id":"urn:ngm:class:triangulation","label":"Triangulation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:3d-mapping","label":"3D Mapping"}],
-    "relatedTo":[{"@id":"urn:ngm:class:feature-matching","label":"Feature Matching"},{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"},{"@id":"urn:ngm:class:slam","label":"SLAM"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:projective-geometry",
+  "@type": "Class",
+  "label": "Projective Geometry",
+  "definition": "Projective geometry is the branch of geometry concerned with properties of figures that are invariant under projective transformations, where points at infinity are treated on equal footing with ordinary points. Using homogeneous coordinates, it provides the mathematical foundation for modelling how three-dimensional scenes project onto image planes. It underpins camera models, multi-view geometry, and the reconstruction of structure from images in computer vision and spatial computing.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:homography",
+        "label": "Homography"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "@id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:triangulation",
+        "label": "Triangulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:3d-mapping",
+        "label": "3D Mapping"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

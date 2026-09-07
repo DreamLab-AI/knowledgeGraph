@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Markov Decision Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,47 +181,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:markov-decision-process:562a229845c8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9d12168ccf14eb473f3a1bc96f031b14a177d1234568d2c70232612053ad9a94"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Markov Chain]]",
-      "resolved": "urn:visionflow:linked:markov-chain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimisation]]",
-      "resolved": "urn:visionflow:linked:optimisation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A mathematical framework for modelling sequential decision-making where outcomes are partly random and partly under the control of a decision maker.

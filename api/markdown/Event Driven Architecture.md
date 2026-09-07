@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Event-Driven Architecture
----
-
-# Event Driven Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,42 +194,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:event-driven-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f927d0a4447e377181ced1e14ff2e690378667a52b5a18a98dcfd518c44e66fe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Scalable Metaverse Infrastructure]]",
-      "resolved": "urn:visionflow:linked:scalable-metaverse-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Architecture]]",
-      "resolved": "urn:visionflow:owl:class:system-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A software architecture pattern for metaverse systems built from decoupled services that publish, consume, and route events representing state changes, enabling real-time responsiveness, independent scaling, and resilient distributed systems for immersive virtual experiences.

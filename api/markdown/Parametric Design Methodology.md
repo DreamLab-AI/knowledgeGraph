@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Parametric]]
-# Parametric Design Methodology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,16 +51,34 @@ elevatedFrom:: [[Parametric]]
   "qualityScore": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:parametric-design-methodology-modeling", "label": "Parametric Modeling"},
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}
+      {
+        "@id": "urn:ngm:class:parametric-design-methodology-modeling",
+        "label": "Parametric Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
     ]
   },
   "provenance": {
@@ -76,37 +88,6 @@ elevatedFrom:: [[Parametric]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:parametric:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:373ee02de64ace0d2596b5e0ad353da78b3dc743f3e8ffa061927a3915159b06"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Landvault Create]]",
-      "resolved": "urn:visionflow:linked:landvault-create",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NVIDIA Omniverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A design methodology in which objects, environments, or behaviours are specified through adjustable parameters rather than fixed geometry, enabling variant generation and real-time adaptation. In metaverse and spatial computing contexts, parametric approaches underpin voice-and-text-driven CAD primitive creation, procedural content generation, and digital twin model customisation within shared virtual workspaces.

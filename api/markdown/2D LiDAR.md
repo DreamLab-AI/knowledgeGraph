@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 2D LiDAR
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -59,26 +54,62 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-li-dar", "label": "3D LiDAR"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:proximity-sensor", "label": "Proximity Sensor"},
-      {"@id": "urn:ngm:class:laser-scanner", "label": "Laser Scanner"},
-      {"@id": "urn:ngm:class:ultrasonic-sensor", "label": "Ultrasonic Sensor"}
+      {
+        "@id": "urn:ngm:class:3-d-li-dar",
+        "label": "3D LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:proximity-sensor",
+        "label": "Proximity Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:laser-scanner",
+        "label": "Laser Scanner"
+      },
+      {
+        "@id": "urn:ngm:class:ultrasonic-sensor",
+        "label": "Ultrasonic Sensor"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:lidar-scanning", "label": "Lidar Scanning"}
+      {
+        "@id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
-      {"@id": "urn:ngm:class:proximity-detection", "label": "Proximity Detection"}
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:proximity-detection",
+        "label": "Proximity Detection"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ]
   },
   "quality": 0.8,
@@ -89,37 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:2-d-li-dar:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e3b06892a21a4e08f73d6d8b0e4f4ac671f722e441ab83cc96061dfb8b2d0469"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Lidar]]",
-      "resolved": "urn:visionflow:owl:class:lidar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - 2D LiDAR scans single horizontal or vertical plane for obstacle detection.

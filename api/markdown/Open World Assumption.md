@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Open World Assumption
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:open-world-assumption", "@type":"Page", "title":"Open World Assumption", "vc:slug":"open-world-assumption", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:open-world-assumption",
+  "@type": "Page",
+  "title": "Open World Assumption",
+  "vc:slug": "open-world-assumption",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,52 +21,113 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:ontology", "label": "Ontology" }
+    {
+      "@id": "urn:ngm:class:ontology",
+      "label": "Ontology"
+    }
   ],
   "relations": {
     "implements": [
-      { "@id": "urn:ngm:class:description-logic", "label": "Description Logic" },
-      { "@id": "urn:ngm:class:monotonic-reasoning", "label": "Monotonic Reasoning" }
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "@id": "urn:ngm:class:monotonic-reasoning",
+        "label": "Monotonic Reasoning"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:formal-semantics", "label": "Formal Semantics" },
-      { "@id": "urn:ngm:class:logical-inference", "label": "Logical Inference" }
+      {
+        "@id": "urn:ngm:class:formal-semantics",
+        "label": "Formal Semantics"
+      },
+      {
+        "@id": "urn:ngm:class:logical-inference",
+        "label": "Logical Inference"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:knowledge-integration", "label": "Knowledge Integration" },
-      { "@id": "urn:ngm:class:semantic-reasoning", "label": "Semantic Reasoning" }
+      {
+        "@id": "urn:ngm:class:knowledge-integration",
+        "label": "Knowledge Integration"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-reasoning",
+        "label": "Semantic Reasoning"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:web-ontology-language", "label": "Web Ontology Language" },
-      { "@id": "urn:ngm:class:rdf", "label": "RDF" }
+      {
+        "@id": "urn:ngm:class:web-ontology-language",
+        "label": "Web Ontology Language"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:semantic-web", "label": "Semantic Web" },
-      { "@id": "urn:ngm:class:linked-data", "label": "Linked Data" }
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:closed-world-assumption", "label": "Closed World Assumption" },
-      { "@id": "urn:ngm:class:negation-as-failure", "label": "Negation as Failure" }
+      {
+        "@id": "urn:ngm:class:closed-world-assumption",
+        "label": "Closed World Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:negation-as-failure",
+        "label": "Negation as Failure"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:no-unique-name-assumption", "label": "No Unique Name Assumption" }
+      {
+        "@id": "urn:ngm:class:no-unique-name-assumption",
+        "label": "No Unique Name Assumption"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation" }
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:automated-reasoner", "label": "Automated Reasoner" }
+      {
+        "@id": "urn:ngm:class:automated-reasoner",
+        "label": "Automated Reasoner"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology" },
-      { "@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph" }
+      {
+        "@id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:owa", "label": "OWA" }
+    {
+      "@id": "urn:ngm:class:owa",
+      "label": "OWA"
+    }
   ],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

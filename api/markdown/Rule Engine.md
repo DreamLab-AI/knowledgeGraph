@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Rule Engine
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

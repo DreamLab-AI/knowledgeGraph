@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Industry Cloud Platforms
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,25 +52,64 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:platform-service",
+        "label": "Platform Service"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
-      {"@id": "urn:ngm:class:healthcare-technology", "label": "Healthcare Technology"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ]
   },
   "provenance": {
@@ -85,32 +119,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:industry-cloud-platforms:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:54f93ad1b428598603c16d35cdf638b3bdc848c15e740e517882233c4cbd878f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Industry Cloud Platforms (ICPs) are vertically specialised cloud solutions that bundle industry-specific applications, AI-enriched data services, compliance tooling, and horizontal business functions (finance, HR, supply chain) onto a unified cloud-native stack. Unlike generic IaaS or PaaS offerings, ICPs embed deep domain knowledge — regulatory schemas, data models, and workflow patterns — so that organisations in healthcare, financial services, manufacturing, or retail can rapidly deploy industry-relevant workloads without building bespoke integrations from scratch.

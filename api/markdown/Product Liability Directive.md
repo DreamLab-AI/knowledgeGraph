@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Product Liability Directive
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,37 +57,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:product-liability-directive:62ba9bddee84",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2fbc72281ba113867d8e56fa79d6a9b9789755b96576dd57f299696e6fbe16d1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Safety]]",
-      "resolved": "urn:visionflow:linked:ai-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Product Liability Directive is European Union legislation establishing rules on liability for damage caused by defective products. A revised directive adopted in 2024 extends its scope to software and AI systems.

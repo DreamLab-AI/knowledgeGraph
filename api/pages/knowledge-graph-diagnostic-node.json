@@ -209,11 +209,6 @@
       }
     ]
   },
-  "wikilinks": [
-    {
-      "slug": "debug-test-page",
-      "label": "Debug Test Page"
-    }
-  ],
+  "wikilinks": [],
   "backlinks": []
 }

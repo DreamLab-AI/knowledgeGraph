@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Validation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,38 +7,134 @@ public: true
   "title": "Cross-Validation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "AI Machine Learning"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:model-selection", "vc:label": "Model Selection"},
-    {"@id": "urn:visionflow:linked:bias-variance-tradeoff", "vc:label": "Bias-Variance Tradeoff"},
-    {"@id": "urn:visionflow:linked:overfitting", "vc:label": "Overfitting"},
-    {"@id": "urn:visionflow:linked:hyperparameter-tuning", "vc:label": "Hyperparameter Tuning"},
-    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
-    {"@id": "urn:visionflow:linked:ensemble-methods", "vc:label": "Ensemble Methods"},
-    {"@id": "urn:visionflow:linked:statistical-learning-theory", "vc:label": "Statistical Learning Theory"},
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:applied-machine-learning", "vc:label": "Applied Machine Learning"},
-    {"@id": "urn:visionflow:linked:benign-overfitting", "vc:label": "Benign Overfitting"},
-    {"@id": "urn:visionflow:linked:annotated-training-data", "vc:label": "Annotated Training Data"},
-    {"@id": "urn:visionflow:linked:statistical-inference", "vc:label": "Statistical Inference"},
-    {"@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance"},
-    {"@id": "urn:visionflow:linked:resampling", "vc:label": "Resampling"},
-    {"@id": "urn:visionflow:linked:performance-metrics", "vc:label": "Performance Metric"},
-    {"@id": "urn:visionflow:linked:gradient-boosting", "vc:label": "Gradient Boosting"},
-    {"@id": "urn:visionflow:linked:random-forest", "vc:label": "Random Forest"},
-    {"@id": "urn:visionflow:linked:generalisation-error", "vc:label": "Generalisation Error"},
-    {"@id": "urn:visionflow:linked:bayesian-optimisation", "vc:label": "Bayesian Optimisation"},
-    {"@id": "urn:visionflow:linked:automl", "vc:label": "AutoML"},
-    {"@id": "urn:visionflow:linked:feature-selection", "vc:label": "Feature Selection"},
-    {"@id": "urn:visionflow:linked:data-augmentation", "vc:label": "Data Augmentation"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:decision-tree", "vc:label": "Decision Tree"},
-    {"@id": "urn:visionflow:linked:support-vector-machine", "vc:label": "Support Vector Machine"},
-    {"@id": "urn:visionflow:linked:machine-learning-grounded-domain", "vc:label": "MachineLearningDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"}
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "AI Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-selection",
+      "vc:label": "Model Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-variance-tradeoff",
+      "vc:label": "Bias-Variance Tradeoff"
+    },
+    {
+      "@id": "urn:visionflow:linked:overfitting",
+      "vc:label": "Overfitting"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularisation",
+      "vc:label": "Regularisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ensemble-methods",
+      "vc:label": "Ensemble Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-learning-theory",
+      "vc:label": "Statistical Learning Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:applied-machine-learning",
+      "vc:label": "Applied Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:benign-overfitting",
+      "vc:label": "Benign Overfitting"
+    },
+    {
+      "@id": "urn:visionflow:linked:annotated-training-data",
+      "vc:label": "Annotated Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-inference",
+      "vc:label": "Statistical Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:resampling",
+      "vc:label": "Resampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance-metrics",
+      "vc:label": "Performance Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-boosting",
+      "vc:label": "Gradient Boosting"
+    },
+    {
+      "@id": "urn:visionflow:linked:random-forest",
+      "vc:label": "Random Forest"
+    },
+    {
+      "@id": "urn:visionflow:linked:generalisation-error",
+      "vc:label": "Generalisation Error"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-optimisation",
+      "vc:label": "Bayesian Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:automl",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-selection",
+      "vc:label": "Feature Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-augmentation",
+      "vc:label": "Data Augmentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-tree",
+      "vc:label": "Decision Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:support-vector-machine",
+      "vc:label": "Support Vector Machine"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-grounded-domain",
+      "vc:label": "MachineLearningDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }

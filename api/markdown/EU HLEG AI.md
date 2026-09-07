@@ -1,8 +1,3 @@
----
-public: true
----
-
-# EU HLEG AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -165,46 +160,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:eu-hleg-ai:ee703a02901b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f383e2e43bf4dcb05e45052eb515078444ca4fb373b3a891d26ca9a52bf70997"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Ethics]]",
-      "resolved": "urn:visionflow:linked:ai-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Regulation]]",
-      "resolved": "urn:visionflow:linked:ai-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trustworthy AI]]",
-      "resolved": "urn:visionflow:linked:trustworthy-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:linked:ai-governance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

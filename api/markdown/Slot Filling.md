@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Slot Filling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -166,4 +161,3 @@ public: true
   - Slot filling is essential for voice assistants, customer service bots, and enterprise workflow automation where structured data must be extracted from conversational input. The extracted slot values populate database queries, API calls, or form submissions. In multi-turn settings, slot carry-over and slot correction across dialogue turns introduce additional complexity, requiring memory of prior utterances and robust handling of implicit references and anaphora.
 
   - In 2024-2025, slot filling is being transformed by large language models that can perform zero-shot or few-shot filling without task-specific training, using structured prompting or JSON-mode outputs. Challenges remain in low-resource languages, highly ambiguous slot types, and multi-intent utterances. Research is also extending slot filling to multimodal inputs and cross-lingual settings, driven by the globalisation of voice-enabled products.
-

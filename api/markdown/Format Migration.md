@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Format Migration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Format migration is the process of converting data or digital assets from one file format to another while preserving meaning, structure, and fidelity. It is central to digital preservation, where obsolete formats are migrated to current ones to keep content accessible over time. Migration must manage information loss, metadata mapping, and validation of the converted output.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:conversion-pipeline", "label": "Conversion Pipeline"}, {"@id": "urn:ngm:class:archival-standards", "label": "Archival Standards"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:conversion-pipeline",
+        "label": "Conversion Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:archival-standards",
+        "label": "Archival Standards"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,23 +34,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:open-usd", "label": "OpenUSD"},
-      {"@id": "urn:ngm:class:gl-tf-3-d-file-format", "label": "glTF (3D File Format)"},
-      {"@id": "urn:ngm:class:web-xr-api", "label": "WebXR API"},
-      {"@id": "urn:ngm:class:avatar-standard", "label": "Avatar Standard"},
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
-      {"@id": "urn:ngm:class:asset-format-standards", "label": "Asset Format Standards"},
-      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"},
-      {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"}
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "@id": "urn:ngm:class:gl-tf-3-d-file-format",
+        "label": "glTF (3D File Format)"
+      },
+      {
+        "@id": "urn:ngm:class:web-xr-api",
+        "label": "WebXR API"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-standard",
+        "label": "Avatar Standard"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:asset-format-standards",
+        "label": "Asset Format Standards"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"},
-      {"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"},
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"}
+      {
+        "@id": "urn:ngm:class:sc-platform-and-environment",
+        "label": "Platform and Environment"
+      },
+      {
+        "@id": "urn:ngm:class:sc-content-and-assets",
+        "label": "Content and Assets"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+      {
+        "@id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -62,3 +97,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

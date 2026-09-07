@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Low-Rank Adaptation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -212,57 +207,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:low-rank-adaptation:86fcdb35bfab",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2babea07310d76324f0527fcc3df345f7ff0a27c5ad06afd2bff1e5069014e2c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPT]]",
-      "resolved": "urn:visionflow:linked:gpt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Parameter-Efficient Fine-Tuning]]",
-      "resolved": "urn:visionflow:linked:parameter-efficient-fine-tuning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://arxiv.org/abs/2106.09685]]",
-      "resolved": "urn:visionflow:linked:https-arxiv-org-abs-2106-09685",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://github.com/microsoft/LoRA]]",
-      "resolved": "urn:visionflow:linked:https-github-com-microsoft-lo-ra",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Low-Rank Adaptation is a parameter-efficient fine-tuning method that adds small trainable low-rank matrices to a frozen pre-trained model. It reduces the cost of adapting large models.

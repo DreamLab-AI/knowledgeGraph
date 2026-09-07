@@ -1,8 +1,3 @@
----
-public: true
----
-
-# XR Technical Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,15 +50,30 @@ public: true
       }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:web-xr", "label": "WebXR"},
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"}
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"}
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
     ]
   },
   "quality": 0.35,
@@ -80,32 +90,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:xr-technical-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6add54f20dc0d35f830b89ab1ae1491896a33f3a717499fffde0d559825179c0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An XR technical standard is a formal specification defining interfaces, data formats, or performance requirements for extended reality hardware and software — for example OpenXR for runtime APIs, WebXR for browser-based immersive experiences, and glTF for 3D asset interchange. Such standards reduce fragmentation and let content run across headsets from different vendors.

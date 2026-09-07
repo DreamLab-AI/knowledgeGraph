@@ -1,8 +1,3 @@
----
-public: true
----
-
-# validator set
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

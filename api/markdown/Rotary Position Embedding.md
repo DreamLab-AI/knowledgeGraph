@@ -1,59 +1,117 @@
----
-public: true
----
-
-# Rotary Position Embedding
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:rotary-position-embedding", "@type":"Page", "title":"Rotary Position Embedding", "vc:slug":"rotary-position-embedding", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:rotary-position-embedding",
+  "@type": "Page",
+  "title": "Rotary Position Embedding",
+  "vc:slug": "rotary-position-embedding",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:rotary-position-embedding",
-  "@type":"Class",
-  "label":"Rotary Position Embedding",
-  "definition":"Rotary Position Embedding (RoPE) is a method for injecting positional information into transformer attention by rotating the query and key vectors by an angle proportional to each token's absolute position, so that their dot product depends only on relative position. Because the rotation is applied multiplicatively in feature pairs rather than added to the embeddings, RoPE unifies absolute and relative positional encoding while preserving the inner-product structure that attention relies on. It is the dominant positional scheme in modern large language models such as Llama, and its frequency basis can be rescaled to extrapolate context windows far beyond the training length.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:positional-encoding","label":"Positional Encoding"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:relative-positional-encoding","label":"Relative Positional Encoding"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rotary-position-embedding",
+  "@type": "Class",
+  "label": "Rotary Position Embedding",
+  "definition": "Rotary Position Embedding (RoPE) is a method for injecting positional information into transformer attention by rotating the query and key vectors by an angle proportional to each token's absolute position, so that their dot product depends only on relative position. Because the rotation is applied multiplicatively in feature pairs rather than added to the embeddings, RoPE unifies absolute and relative positional encoding while preserving the inner-product structure that attention relies on. It is the dominant positional scheme in modern large language models such as Llama, and its frequency basis can be rescaled to extrapolate context windows far beyond the training length.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:positional-encoding",
+      "label": "Positional Encoding"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:relative-positional-encoding",
+        "label": "Relative Positional Encoding"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:transformer-architecture","label":"Transformer Architecture"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:relative-positional-encoding","label":"Relative Positional Encoding"},
-      {"@id":"urn:ngm:class:absolute-positional-encoding","label":"Absolute Positional Encoding"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:relative-positional-encoding",
+        "label": "Relative Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:absolute-positional-encoding",
+        "label": "Absolute Positional Encoding"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:self-attention","label":"Self Attention"},
-      {"@id":"urn:ngm:class:attention-mechanism","label":"Attention Mechanism"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:long-context-modelling","label":"Long Context Modelling"},
-      {"@id":"urn:ngm:class:extrapolation","label":"Extrapolation"},
-      {"@id":"urn:ngm:class:context-length","label":"Context Length"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:long-context-modelling",
+        "label": "Long Context Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:extrapolation",
+        "label": "Extrapolation"
+      },
+      {
+        "@id": "urn:ngm:class:context-length",
+        "label": "Context Length"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:llama","label":"Llama"},
-      {"@id":"urn:ngm:class:large-language-models","label":"Large Language Models"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:llama",
+        "label": "Llama"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:sinusoidal-positional-encoding","label":"Sinusoidal Positional Encoding"},
-      {"@id":"urn:ngm:class:alibi","label":"ALiBi"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sinusoidal-positional-encoding",
+        "label": "Sinusoidal Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:alibi",
+        "label": "ALiBi"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:absolute-positional-encoding","label":"Absolute Positional Encoding"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:absolute-positional-encoding",
+        "label": "Absolute Positional Encoding"
+      }
     ]
   },
-  "sameAs":[
-    {"@id":"urn:ngm:class:rope","label":"RoPE"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:rope",
+      "label": "RoPE"
+    }
   ],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scope 2 Emissions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

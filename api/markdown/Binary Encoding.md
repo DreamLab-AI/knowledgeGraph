@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Binary Encoding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,67 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:binary-encoding:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6b0066187c0fa0f28969340288f10bd668053c1f8317159d3f097285ea110665"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Serialization]]",
-      "resolved": "urn:visionflow:linked:data-serialization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Efficient Storage]]",
-      "resolved": "urn:visionflow:linked:efficient-storage",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Encoding Rules]]",
-      "resolved": "urn:visionflow:linked:encoding-rules",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Network Transmission]]",
-      "resolved": "urn:visionflow:linked:network-transmission",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Parser Implementation]]",
-      "resolved": "urn:visionflow:linked:parser-implementation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Schema Definition]]",
-      "resolved": "urn:visionflow:linked:schema-definition",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Format]]",
-      "resolved": "urn:visionflow:owl:class:data-format",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Query Vector
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,28 +51,64 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:nearest-neighbor-search", "label": "Nearest Neighbor Search"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Nearest Neighbor Search"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"},
-      {"@id": "urn:ngm:class:query-processor", "label": "Query Processor"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      },
+      {
+        "@id": "urn:ngm:class:query-processor",
+        "label": "Query Processor"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ]
   },
   "provenance": {
@@ -87,32 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:query-vector:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:43acfa8b7c84976ae4e2328591f9183d838ad62ed44c860f82cf2fce083f20df"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Query Vector is a dense numerical representation of a search query produced by an embedding model, enabling similarity-based retrieval in a high-dimensional vector space. It is matched against stored document or passage embeddings using distance metrics such as cosine similarity or inner product, forming the core retrieval mechanism in semantic search and retrieval-augmented generation systems. Query vectors encode the semantic intent of a query independent of exact keyword overlap, allowing conceptually related results to be surfaced even when surface-level vocabulary differs.

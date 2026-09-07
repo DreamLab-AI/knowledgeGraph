@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Soon-Next-Later (AI futurology)]]
-# AI Capability Temporal Horizon Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -52,10 +46,6 @@ elevatedFrom:: [[Soon-Next-Later (AI futurology)]]
     {
       "@id": "urn:visionflow:owl:class:sam-hammond",
       "vc:label": "Sam Hammond"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "vc:label": "Social contract and jobs"
     }
   ],
   "vc:schemaVersion": 2,
@@ -93,19 +83,40 @@ elevatedFrom:: [[Soon-Next-Later (AI futurology)]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sam-hammond-ai-policy-economist", "label": "Sam Hammond AI Policy Economist"},
-      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
-      {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"}
+      {
+        "@id": "urn:ngm:class:sam-hammond-ai-policy-economist",
+        "label": "Sam Hammond AI Policy Economist"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"}
+      {
+        "@id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:national-sovereign-ai-procurement-initiative", "label": "National Sovereign AI Procurement Initiative"}
+      {
+        "@id": "urn:ngm:class:national-sovereign-ai-procurement-initiative",
+        "label": "National Sovereign AI Procurement Initiative"
+      }
     ]
   },
   "quality": 0.7,
@@ -116,82 +127,6 @@ elevatedFrom:: [[Soon-Next-Later (AI futurology)]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:soon-next-later-ai-futurology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:453ff460c978f624a21666a360f8f0a733ea5fc29926d6ce32a2b9e435cb8b79"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Collaborative Systems Modality]]",
-      "resolved": "urn:visionflow:owl:class:collaborative",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cyber Security and Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cyber-security-and-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Diagrams as Code]]",
-      "resolved": "urn:visionflow:owl:class:diagrams-as-code",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Identity]]",
-      "resolved": "urn:visionflow:owl:class:distributed-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse and Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sam Hammond AI Policy Economist]]",
-      "resolved": "urn:visionflow:owl:class:sam-hammond",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Employment Social Contract Under Automation]]",
-      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Soon-Next-Later is a structured futurology framework for categorising AI capability developments across three temporal horizons: Soon (0–5 years, capabilities already emerging in products), Next (5–10 years, capabilities requiring current research to mature), and Later (10+ years, speculative capabilities dependent on fundamental advances). The framework provides practitioners with a tractable planning scaffold that avoids both near-term over-hype and long-horizon dismissiveness.
@@ -296,9 +231,9 @@ elevatedFrom:: [[Soon-Next-Later (AI futurology)]]
 			- This will have staggering repercussions for the web as we know it.
 			- This is the old [[Death of the Internet]] conspiracy theory, but happening.
 		- Semantic and natural language programming
-			- In a future where intentional programming user experience (UX) evolves to its next stage, we could envision a scenario where multimodal and language models interface directly with bytecode, driven by semantic instructions from product owners. This approach would represent a significant leap from current programming paradigms, emphasizing a more intuitive, less syntax-heavy interaction with software development.
+			- In a future where intentional programming user experience (UX) evolves to its next stage, we [private] envision a scenario where multimodal and language models interface directly with bytecode, driven by semantic instructions from product owners. This approach would represent a significant leap from current programming paradigms, emphasizing a more intuitive, less syntax-heavy interaction with software development.
 			- **1. Semantic Instruction and Bytecode Manipulation:**
-				- In this future, product owners or non-technical stakeholders could provide instructions in natural language or through other intuitive interfaces.
+				- In this future, product owners or non-technical stakeholders [private] provide instructions in natural language or through other intuitive interfaces.
 				- These instructions would be semantically analyzed by advanced language models, capable of understanding the intent and context of the request.
 				- The language models would then translate these semantic instructions into bytecode – the lowest-level code executed by the computer's processor.
 				- This process bypasses traditional programming languages, allowing for more direct and efficient creation or modification of software functionalities.
@@ -310,8 +245,8 @@ elevatedFrom:: [[Soon-Next-Later (AI futurology)]]
 				- This direct communication loop would facilitate rapid iterations, as changes can be implemented and reviewed in real-time or near-real-time.
 			- **4. Automated Testing and Validation:**
 				- The system would incorporate sophisticated automated testing mechanisms.
-				- As soon as the bytecode is generated or modified, a series of automated tests could run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
-				- Product owners could also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
+				- As soon as the bytecode is generated or modified, a series of automated tests [private] run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
+				- Product owners [private] also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
   - This is taken from [[Sam Hammond AI Policy Economist]] who I have discovered recently. All his stuff is summarised and linked here.
   - # Random Bonus Podcasts
   - <iframe style="border-radius:12px" src="https://open.spotify.com/episode/3KrLw4xNAiEeylzm7gg0qr?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

@@ -1,56 +1,123 @@
----
-public: true
----
-
-# Inscription
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:inscription", "@type":"Page", "title":"Inscription", "vc:slug":"inscription", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:inscription",
-  "@type":"Class",
-  "label":"Inscription",
-  "definition":"An inscription is arbitrary data, such as an image, text or document, written directly onto an individual satoshi on the Bitcoin blockchain so that the content is stored entirely on-chain. Enabled by the Taproot upgrade and the Ordinals numbering scheme, inscriptions embed their payload in the witness portion of a transaction, making each inscribed satoshi a verifiable, transferable digital artefact. They underpin Bitcoin-native non-fungible assets and digital collectibles without relying on external metadata storage.",
-  "domain":"blockchain",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:ordinals","label":"Ordinals"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:metadata","label":"Metadata"},
-      {"@id":"urn:ngm:class:digital-asset","label":"Digital Asset"}
-    ],
-    "partOf":[{"@id":"urn:ngm:class:ordinals","label":"Ordinals"}],
-    "uses":[
-      {"@id":"urn:ngm:class:taproot","label":"Taproot"},
-      {"@id":"urn:ngm:class:data-storage","label":"Data Storage"},
-      {"@id":"urn:ngm:class:bitcoin","label":"Bitcoin"}
-    ],
-    "requires":[
-      {"@id":"urn:ngm:class:satoshi","label":"Satoshi"},
-      {"@id":"urn:ngm:class:blockchain","label":"Blockchain"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:non-fungible-token","label":"Non-Fungible Token"},
-      {"@id":"urn:ngm:class:digital-art","label":"Digital Art"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:provenance","label":"Provenance"},
-      {"@id":"urn:ngm:class:nft-marketplace","label":"NFT Marketplace"}
-    ],
-    "dependsOn":[{"@id":"urn:ngm:class:bitcoin","label":"Bitcoin"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:utility-token","label":"Utility Token"},
-      {"@id":"urn:ngm:class:nft","label":"NFT"},
-      {"@id":"urn:ngm:class:digital-art","label":"Digital Art"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:inscription",
+  "@type": "Page",
+  "title": "Inscription",
+  "vc:slug": "inscription",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:inscription",
+  "@type": "Class",
+  "label": "Inscription",
+  "definition": "An inscription is arbitrary data, such as an image, text or document, written directly onto an individual satoshi on the Bitcoin blockchain so that the content is stored entirely on-chain. Enabled by the Taproot upgrade and the Ordinals numbering scheme, inscriptions embed their payload in the witness portion of a transaction, making each inscribed satoshi a verifiable, transferable digital artefact. They underpin Bitcoin-native non-fungible assets and digital collectibles without relying on external metadata storage.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ordinals",
+      "label": "Ordinals"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ordinals",
+        "label": "Ordinals"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:satoshi",
+        "label": "Satoshi"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - An inscription writes arbitrary content directly onto an individual [[Satoshi]] using the [[Ordinals]] scheme, storing the payload on the [[Bitcoin]] [[Blockchain]] itself rather than in external storage. It turns each inscribed coin into a verifiable [[Digital Asset]].
 - ### Overview

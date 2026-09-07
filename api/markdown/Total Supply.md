@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Total Supply
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,20 +83,50 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:circulating-supply", "label": "Circulating Supply"}
+      {
+        "@id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:emission-schedule", "label": "Emission Schedule"},
-      {"@id": "urn:ngm:class:supply-cap", "label": "Supply Cap"}
+      {
+        "@id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:supply-cap",
+        "label": "Supply Cap"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:market-capitalization", "label": "Market Capitalization"},
-      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"},
-      {"@id": "urn:ngm:class:inflationary-token", "label": "Inflationary Token"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:inflation", "label": "Inflation"},
-      {"@id": "urn:ngm:class:halving", "label": "Halving"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}
+      {
+        "@id": "urn:ngm:class:market-capitalization",
+        "label": "Market Capitalization"
+      },
+      {
+        "@id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      },
+      {
+        "@id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "@id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
     ]
   },
   "provenance": {
@@ -111,62 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:total-supply:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b9e83ae5c69756956fe3d92801be0de151475636f906e25d0d1f8e0cb0d5232f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 
@@ -180,7 +149,7 @@ Total Supply **hasPart** [[Circulating Supply]] as its freely tradeable subset. 
 
 Total supply occupies a central position in token economic analysis. Investors and protocol designers distinguish three related quantities: maximum supply (the hard cap encoded in protocol rules, e.g., Bitcoin's 21 million BTC), total supply (all created tokens minus all burned tokens at any point in time), and circulating supply (total supply minus tokens locked in smart contracts, vesting schedules, team allocations, or treasury reserves).
 
-The gap between total supply and circulating supply represents "supply overhang"—tokens that could enter circulation and exert downward price pressure when vesting schedules unlock or treasuries liquidate. Analysing this overhang alongside the emission schedule allows assessment of inflationary pressure on existing holders.
+The gap between total supply and circulating supply represents "supply overhang"—tokens that [private] enter circulation and exert downward price pressure when vesting schedules unlock or treasuries liquidate. Analysing this overhang alongside the emission schedule allows assessment of inflationary pressure on existing holders.
 
 Deflationary protocols actively reduce total supply through token burns—destroying tokens in response to transaction fees (EIP-1559 base fee burning on Ethereum), protocol revenue, or governance decisions. When the burn rate exceeds the emission rate, total supply shrinks and the token becomes net-deflationary. Inflationary protocols continuously expand total supply to fund staking rewards, liquidity mining, and ecosystem grants, relying on growth in demand to absorb the new supply without price depression.
 

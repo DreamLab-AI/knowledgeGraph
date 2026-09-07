@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dynamic Lighting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Dynamic lighting is a real-time rendering technique in which light sources, shadows, and indirect illumination are computed per-frame based on the current state of a scene, allowing lights to move, change intensity or colour, and interact with animated geometry without relying on pre-baked static lighting data. It is foundational to believable 3D environments in games, virtual production, and spatial computing applications.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"}
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:global-illumination", "label": "Global Illumination"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - In virtual production, dynamic lighting synchronised between physical LED volumes and in-engine rendering enables cinematographers to work with physically coherent lighting environments that react in real-time to camera movement and story events. Spatial computing platforms (Apple Vision Pro, Meta Quest 3) use environment lighting estimation—extracting spherical harmonics or HDR environment maps from camera feeds—to integrate virtual objects dynamically into physical lighting conditions, making dynamic lighting a prerequisite for convincing augmented reality.
 
   - In 2024-2025, fully path-traced rendering is becoming viable for games and virtual production on high-end hardware, with titles such as Cyberpunk 2077's RT Overdrive mode and Portal RTX demonstrating the visual leap. Neural radiance caching and machine learning-based irradiance prediction are reducing the compute cost of global illumination. For spatial computing on mobile XR hardware, efficient dynamic lighting remains a critical optimisation challenge, driving innovations in lightmass-hybrid and screen-space approximation techniques optimised for tile-based GPU architectures.
-

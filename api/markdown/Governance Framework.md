@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Governance Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,67 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:governance-framework:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3560230f77af07b0dea1bb2be1de8c1dd5430f79bf0337d59e6c9d6fff9d1af4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Core Technology]]",
-      "resolved": "urn:visionflow:linked:core-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decision Rights]]",
-      "resolved": "urn:visionflow:linked:decision-rights",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Organisational Framework]]",
-      "resolved": "urn:visionflow:linked:organisational-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Performance Management]]",
-      "resolved": "urn:visionflow:linked:performance-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Strategic Alignment]]",
-      "resolved": "urn:visionflow:linked:strategic-alignment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:owl:class:accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Policy Enforcement]]",
-      "resolved": "urn:visionflow:owl:class:policy-enforcement",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives. It provides the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance, ensuring that technology investments deliver value while maintaining accountability and transparency.

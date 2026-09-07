@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross Attention
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,54 +78,129 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi Head Attention"},
-      {"@id": "urn:ngm:class:attention-weight", "label": "Attention Weight"}
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi Head Attention"
+      },
+      {
+        "@id": "urn:ngm:class:attention-weight",
+        "label": "Attention Weight"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"},
-      {"@id": "urn:ngm:class:softmax-function", "label": "Softmax Function"},
-      {"@id": "urn:ngm:class:scaled-dot-product-attention", "label": "Scaled Dot Product Attention"}
+      {
+        "@id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      },
+      {
+        "@id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      },
+      {
+        "@id": "urn:ngm:class:scaled-dot-product-attention",
+        "label": "Scaled Dot Product Attention"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-understanding", "label": "Multimodal Understanding"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:image-captioning", "label": "Image Captioning"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-understanding",
+        "label": "Multimodal Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:sequence-to-sequence-model", "label": "Sequence To Sequence Model"}
+      {
+        "@id": "urn:ngm:class:sequence-to-sequence-model",
+        "label": "Sequence To Sequence Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
-      {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"}
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"}
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:bert", "label": "BERT"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:inter-sequence-attention", "label": "Inter Sequence Attention"}
+    {
+      "@id": "urn:ngm:class:inter-sequence-attention",
+      "label": "Inter Sequence Attention"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",
@@ -138,67 +208,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cross-attention:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1b238e06d5ea949ca98fbfe8123c50f8f8675875a2f539b10e73b8e17642fdaa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ICLR]]",
-      "resolved": "urn:visionflow:linked:iclr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE Transactions on Medical Imaging]]",
-      "resolved": "urn:visionflow:linked:ieee-transactions-on-medical-imaging",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[KnoWhere]]",
-      "resolved": "urn:visionflow:linked:kno-where",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vaswani et al. Transformers]]",
-      "resolved": "urn:visionflow:linked:vaswani-et-al-transformers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA Omniverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Domain Expert Contact Index]]",
-      "resolved": "urn:visionflow:owl:class:people",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An attention mechanism where queries come from one sequence whilst keys and values come from a different sequence, enabling information flow between the encoder and decoder in sequence-to-sequence models.

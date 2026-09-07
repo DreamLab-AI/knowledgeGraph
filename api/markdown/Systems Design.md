@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Systems Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "systems-design",
   "title": "Systems Design",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Canva", "Claude Design"],
+  "vc:outboundWikilinks": [
+    "Canva",
+    "Claude Design"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:image-generation",
+      "label": "Image Generation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}, {"@id": "urn:ngm:class:canva", "label": "Canva"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:canva",
+        "label": "Canva"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

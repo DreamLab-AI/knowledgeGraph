@@ -1,8 +1,3 @@
----
-public: true
----
-
-# One Time Password
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -100,6 +96,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - A one-time password (OTP) is a credential that is valid for only a single login session or transaction, mitigating the risk of credential replay associated with static passwords. OTPs are typically generated from a shared secret combined with a moving factor — either a counter (HOTP) or the current time (TOTP) — using an HMAC construction, and delivered through authenticator apps, hardware tokens, or out-of-band channels such as SMS. While OTPs strengthen authentication as a second factor, they remain susceptible to real-time phishing, in contrast to origin-bound phishing-resistant methods.
   - [[Multi-Factor Authentication]] [[HMAC]] [[Hash Function]] [[Nonce]] [[Authentication]]

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Collaborative Editing
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:collaborative-editing", "@type":"Page", "title":"Collaborative Editing", "vc:slug":"collaborative-editing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:collaborative-editing",
+  "@type": "Page",
+  "title": "Collaborative Editing",
+  "vc:slug": "collaborative-editing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,56 +1,108 @@
----
-public: true
----
-
-# Least Privilege
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:least-privilege", "@type":"Page", "title":"Least Privilege", "vc:slug":"least-privilege", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:least-privilege",
+  "@type": "Page",
+  "title": "Least Privilege",
+  "vc:slug": "least-privilege",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:least-privilege",
-  "@type":"Class",
-  "label":"Least Privilege",
-  "definition":"Least privilege is a security principle stating that every user, process or component should be granted only the minimum access rights necessary to perform its function, and no more. By limiting permissions to what is strictly required, the principle reduces the attack surface and confines the damage that a compromised account or faulty component can cause. It is a cornerstone of access control and underpins modern approaches such as zero-trust architecture and defence in depth.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:access-control","label":"Access Control"}],
-  "relations":{
-    "enables":[
-      {"@id":"urn:ngm:class:defense-in-depth","label":"Defence in Depth"},
-      {"@id":"urn:ngm:class:access-control","label":"Access Control"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:least-privilege",
+  "@type": "Class",
+  "label": "Least Privilege",
+  "definition": "Least privilege is a security principle stating that every user, process or component should be granted only the minimum access rights necessary to perform its function, and no more. By limiting permissions to what is strictly required, the principle reduces the attack surface and confines the damage that a compromised account or faulty component can cause. It is a cornerstone of access control and underpins modern approaches such as zero-trust architecture and defence in depth.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:defense-in-depth",
+        "label": "Defence in Depth"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:role-based-access-control","label":"Role-Based Access Control"},
-      {"@id":"urn:ngm:class:identity-and-access-management","label":"Identity and Access Management"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:authorization","label":"Authorisation"},
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:role-based-access-control","label":"Role-Based Access Control"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:privilege-escalation","label":"Privilege Escalation"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:privilege-escalation",
+        "label": "Privilege Escalation"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:endpoint-security","label":"Endpoint Security"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:endpoint-security",
+        "label": "Endpoint Security"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:access-control","label":"Access Control"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:identity-and-access-management","label":"Identity and Access Management"},
-      {"@id":"urn:ngm:class:authorization","label":"Authorisation"},
-      {"@id":"urn:ngm:class:defense-in-depth","label":"Defence in Depth"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:defense-in-depth",
+        "label": "Defence in Depth"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

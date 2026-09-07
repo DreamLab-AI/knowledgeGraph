@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OWL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,4 +157,3 @@ public: true
   - OWL is foundational to biomedical informatics through the Gene Ontology, SNOMED CT, and OBO Foundry; to enterprise knowledge management through schema.org and industrial ontologies; and to the Linked Open Data cloud. The Protege editor (Stanford) provides the primary tool for ontology authoring, and over 800 published biomedical ontologies in BioPortal rely on OWL as their formal language. The W3C Semantic Web stack (RDF, RDFS, OWL, SPARQL) underpins the knowledge layer of major search engines including Google's Knowledge Graph.
 
   - In 2024-2025, OWL is experiencing renewed interest at the intersection of large language models and structured knowledge. Neuro-symbolic AI approaches leverage OWL ontologies to constrain LLM outputs, provide verifiable reasoning chains, and enable grounded knowledge retrieval. Digital twin and industrial automation standards (RAMI 4.0, IEC CDD) are adopting OWL as their ontological language. The FAIR data principles movement and data space initiatives (GAIA-X, International Data Spaces) require OWL-based domain ontologies for semantic interoperability.
-

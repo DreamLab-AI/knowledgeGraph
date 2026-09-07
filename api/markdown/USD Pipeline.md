@@ -1,8 +1,3 @@
----
-public: true
----
-
-# USD Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A USD pipeline is a content production workflow built around Pixar's Universal Scene Description (USD) format, which composes, layers and exchanges complex 3D scene data across digital-content-creation tools. USD enables non-destructive collaboration through composition arcs, variants and references, making it the interchange backbone for film, games and metaverse asset production. It standardises how geometry, materials, animation and motion-capture data flow between applications.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}, {"@id": "urn:ngm:class:procedural-and-hybrid-4-d", "label": "Procedural and Hybrid 4D"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-and-hybrid-4-d",
+        "label": "Procedural and Hybrid 4D"
+      }
+    ]
   },
   "quality": 0.72
 }

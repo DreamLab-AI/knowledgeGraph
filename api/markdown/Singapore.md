@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Singapore
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,37 +57,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:singapore:51e2a46721d1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2b6bf9c2f542b04179fda7c24ccd4e9060dfa3bca3b09f9208d86d7fa93730aa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[China]]",
-      "resolved": "urn:visionflow:linked:china",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A sovereign island city-state in Southeast Asia and a major financial and technology hub. It is known for its role in global trade, finance, and as a centre for fintech and digital asset regulation.

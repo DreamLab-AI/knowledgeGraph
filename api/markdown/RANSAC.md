@@ -1,35 +1,106 @@
----
-public: true
----
-
-# RANSAC
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:ransac", "@type":"Page", "title":"RANSAC", "vc:slug":"ransac", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:ransac",
+  "@type": "Page",
+  "title": "RANSAC",
+  "vc:slug": "ransac",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:ransac",
-  "@type":"Class",
-  "label":"RANSAC",
-  "definition":"RANSAC (Random Sample Consensus) is an iterative, robust estimation algorithm that fits a model to data containing a large fraction of outliers. It repeatedly draws a minimal random sample, fits a candidate model, and counts the inliers that agree within a tolerance, retaining the model with the largest consensus set. RANSAC is foundational in computer vision for estimating geometric relationships such as homographies, fundamental matrices, and camera poses from noisy feature correspondences.",
-  "domain":"spatial-computing",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:feature-matching","label":"Feature Matching"}],
-  "relations":{
-    "dependsOn":[{"@id":"urn:ngm:class:feature-matching","label":"Feature Matching"},{"@id":"urn:ngm:class:feature-detection","label":"Feature Detection"}],
-    "requires":[{"@id":"urn:ngm:class:probability-theory","label":"Probability Theory"}],
-    "uses":[{"@id":"urn:ngm:class:epipolar-geometry","label":"Epipolar Geometry"}],
-    "enables":[{"@id":"urn:ngm:class:pose-estimation","label":"Pose Estimation"},{"@id":"urn:ngm:class:structure-from-motion","label":"Structure from Motion"}],
-    "supports":[{"@id":"urn:ngm:class:slam","label":"SLAM"},{"@id":"urn:ngm:class:visual-odometry","label":"Visual Odometry"},{"@id":"urn:ngm:class:camera-calibration","label":"Camera Calibration"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:bayesian-inference","label":"Bayesian Inference"}],
-    "relatedTo":[{"@id":"urn:ngm:class:bundle-adjustment","label":"Bundle Adjustment"},{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ransac",
+  "@type": "Class",
+  "label": "RANSAC",
+  "definition": "RANSAC (Random Sample Consensus) is an iterative, robust estimation algorithm that fits a model to data containing a large fraction of outliers. It repeatedly draws a minimal random sample, fits a candidate model, and counts the inliers that agree within a tolerance, retaining the model with the largest consensus set. RANSAC is foundational in computer vision for estimating geometric relationships such as homographies, fundamental matrices, and camera poses from noisy feature correspondences.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:feature-matching",
+      "label": "Feature Matching"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "@id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

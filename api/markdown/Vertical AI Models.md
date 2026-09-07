@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vertical AI Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "vertical-ai-models",
   "title": "Vertical AI Models",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Customer Service AI", "Intercom Apex", "Intercom Finn", "Proprietary Evals"],
+  "vc:outboundWikilinks": [
+    "Customer Service AI",
+    "Intercom Apex",
+    "Intercom Finn",
+    "Proprietary Evals"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

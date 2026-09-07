@@ -1,39 +1,130 @@
----
-public: true
----
-
-# Setpoint
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:setpoint", "@type":"Page", "title":"Setpoint", "vc:slug":"setpoint", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:setpoint",
+  "@type": "Page",
+  "title": "Setpoint",
+  "vc:slug": "setpoint",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:setpoint",
-  "@type":"Class",
-  "label":"Setpoint",
-  "definition":"A setpoint is the desired target value that a control system attempts to maintain for a measured process variable, serving as the reference against which the controller compares the actual measurement. The difference between setpoint and measured value is the error signal that drives corrective action in a feedback loop. Setpoints can be fixed, scheduled, or continuously varying, as when a controller tracks a moving reference trajectory.",
-  "domain":"robotics",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:closed-loop-control","label":"Closed-Loop Control"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:closed-loop-control","label":"Closed-Loop Control"},{"@id":"urn:ngm:class:feedback-loop","label":"Feedback Loop"}],
-    "hasPart":[{"@id":"urn:ngm:class:control-theory","label":"Control Theory"}],
-    "uses":[{"@id":"urn:ngm:class:sensor","label":"Sensor"}],
-    "enables":[{"@id":"urn:ngm:class:disturbance-rejection","label":"Disturbance Rejection"},{"@id":"urn:ngm:class:stability","label":"Stability"}],
-    "requires":[{"@id":"urn:ngm:class:sensor","label":"Sensor"},{"@id":"urn:ngm:class:feedback-loop","label":"Feedback Loop"}],
-    "supports":[{"@id":"urn:ngm:class:pid-controller","label":"PID Controller"},{"@id":"urn:ngm:class:process-control","label":"Process Control"}],
-    "implements":[{"@id":"urn:ngm:class:control-theory","label":"Control Theory"}],
-    "dependsOn":[{"@id":"urn:ngm:class:control-loop","label":"Control Loop"}],
-    "relatedTo":[{"@id":"urn:ngm:class:actuator","label":"Actuator"},{"@id":"urn:ngm:class:pid-control","label":"PID Control"},{"@id":"urn:ngm:class:trajectory","label":"Trajectory"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:disturbance-rejection","label":"Disturbance Rejection"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:industrial-automation","label":"Industrial Automation"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:setpoint",
+  "@type": "Class",
+  "label": "Setpoint",
+  "definition": "A setpoint is the desired target value that a control system attempts to maintain for a measured process variable, serving as the reference against which the controller compares the actual measurement. The difference between setpoint and measured value is the error signal that drives corrective action in a feedback loop. Setpoints can be fixed, scheduled, or continuously varying, as when a controller tracks a moving reference trajectory.",
+  "domain": "robotics",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:closed-loop-control",
+      "label": "Closed-Loop Control"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:disturbance-rejection",
+        "label": "Disturbance Rejection"
+      },
+      {
+        "@id": "urn:ngm:class:stability",
+        "label": "Stability"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      },
+      {
+        "@id": "urn:ngm:class:process-control",
+        "label": "Process Control"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory",
+        "label": "Trajectory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:disturbance-rejection",
+        "label": "Disturbance Rejection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

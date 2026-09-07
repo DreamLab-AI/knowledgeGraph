@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - CryptographicProofs
----
-
-# Cryptographic Proofs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

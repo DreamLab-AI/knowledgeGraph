@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Accelerometer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -135,7 +130,10 @@ public: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ]
   },
   "quality": 0.55,
@@ -146,97 +144,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:accelerometer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aa41aa793835d38f56e9593d8a54382a76e22df89de2123f185c9bd38f051bed"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Gesture Recognition]]",
-      "resolved": "urn:visionflow:linked:gesture-recognition",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE 1451]]",
-      "resolved": "urn:visionflow:linked:ieee-1451",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE 1451.0]]",
-      "resolved": "urn:visionflow:linked:ieee-1451-0",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Inertial Measurement Unit]]",
-      "resolved": "urn:visionflow:linked:inertial-measurement-unit",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 16063]]",
-      "resolved": "urn:visionflow:linked:iso-16063",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 16063-1:2023]]",
-      "resolved": "urn:visionflow:linked:iso-16063-1-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 8373:2021]]",
-      "resolved": "urn:visionflow:linked:iso-8373-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Motion]]",
-      "resolved": "urn:visionflow:linked:motion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Motion Detection]]",
-      "resolved": "urn:visionflow:linked:motion-detection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Orientation]]",
-      "resolved": "urn:visionflow:linked:orientation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Signal Conditioning]]",
-      "resolved": "urn:visionflow:linked:signal-conditioning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vibration]]",
-      "resolved": "urn:visionflow:linked:vibration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Accelerometer** - A microelectromechanical sensor (MEMS) that detects changes in velocity and gravity along three orthogonal axes, enabling robots to measure [[Motion]], [[Orientation]], and [[Vibration]] for real-time feedback control and navigation.

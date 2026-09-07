@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Access Controls
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:access-controls:eb8a10000cbc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:69a153197509866ffad1ba51b59093e14eb6a256312bb8b8166a6a8cf0cc66e5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Authentication]]",
-      "resolved": "urn:visionflow:linked:authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Security]]",
-      "resolved": "urn:visionflow:linked:information-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:linked:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Authorisation]]",
-      "resolved": "urn:visionflow:linked:authorisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://csrc.nist.gov/glossary/term/access_control]]",
-      "resolved": "urn:visionflow:linked:https-csrc-nist-gov-glossary-term-access-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Access_control]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-access-control",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Access controls are mechanisms that govern which subjects may perform which operations on resources, enforcing authorisation policies.

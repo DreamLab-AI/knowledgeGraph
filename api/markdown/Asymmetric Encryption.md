@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asymmetric Encryption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -217,72 +212,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:asymmetric-encryption:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2f5a4d8084f339413d851408f42ab0cb9745700c4a52c4f696d26dbc27dab995"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:owl:class:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Elliptic Curve Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:owl:class:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Security]]",
-      "resolved": "urn:visionflow:owl:class:information-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Key Derivation Function]]",
-      "resolved": "urn:visionflow:owl:class:key-derivation-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Public Key Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:public-key-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Symmetric Encryption]]",
-      "resolved": "urn:visionflow:owl:class:symmetric-encryption",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A cryptographic system using mathematically related public-private key pairs where the public key encrypts data that only the corresponding private key can decrypt. Asymmetric encryption provides the foundational cryptographic primitive for blockchain identity, digital signatures, and secure communication, enabling trustless verification without pre-shared secrets.

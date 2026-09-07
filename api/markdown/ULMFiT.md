@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ULMFiT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "ULMFiT (Universal Language Model Fine-tuning) is a transfer-learning method introduced by Howard and Ruder in 2018 that adapts a language model pre-trained on a large general corpus to downstream NLP tasks such as text classification. It popularised techniques including discriminative learning rates, slanted triangular learning rates, and gradual unfreezing, demonstrating that language-model pre-training transfers effectively to many tasks.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:fast-ai", "label": "fast.ai"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fast-ai",
+        "label": "fast.ai"
+      }
+    ]
   },
   "quality": 0.72
 }

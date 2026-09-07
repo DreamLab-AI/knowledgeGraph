@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Content Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,72 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-content-layer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:139893b4577fdfdcfe7f3bc140413bc5ac92dc17e26b8dec217ae2d0dc24602d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Content Composition]]",
-      "resolved": "urn:visionflow:linked:content-composition",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dynamic Rendering]]",
-      "resolved": "urn:visionflow:linked:dynamic-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Layer Management]]",
-      "resolved": "urn:visionflow:linked:layer-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asset Management]]",
-      "resolved": "urn:visionflow:owl:class:asset-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Architecture]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rendering Engine]]",
-      "resolved": "urn:visionflow:owl:class:rendering-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Mapping]]",
-      "resolved": "urn:visionflow:owl:class:spatial-mapping",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An architectural abstraction within metaverse and spatial computing systems that organizes and manages digital assets, 3D objects, interactive media, and user-generated content as discrete layers that can be rendered, composed, and manipulated independently within virtual environments.

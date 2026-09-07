@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Interoperability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Network interoperability is the ability of independently operated networks or systems to exchange information and use it correctly through agreed protocols and data formats. It depends on shared standards at the relevant layers so that heterogeneous implementations communicate without bespoke adaptation. In distributed and blockchain contexts it is the precondition for cross-network value transfer and coordinated operation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-standards", "label": "Network Standards"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {
+        "@id": "urn:ngm:class:network-standards",
+        "label": "Network Standards"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
     ]
   },
   "quality": 0.72

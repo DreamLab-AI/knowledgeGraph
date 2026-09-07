@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Financial Reporting
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

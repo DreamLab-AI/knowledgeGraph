@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Derivatives Trading
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -23,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:derivatives-trading",
   "@type": "Class",
   "label": "Derivatives Trading",
-  "definition": "Derivatives trading is the buying and selling of financial contracts whose value is derived from an underlying asset, index or rate, such as futures, options, swaps and perpetual contracts. Traders use these instruments to hedge exposure, gain leveraged directional exposure or speculate on price movements without holding the underlying. In decentralised finance, derivatives are implemented through smart contracts that handle margin, settlement and liquidation on-chain.",
+  "definition": "Derivatives trading is the buying and selling of financial contracts whose value is derived from an underlying asset, [private] or rate, such as futures, options, swaps and perpetual contracts. Traders use these instruments to hedge exposure, gain leveraged directional exposure or speculate on price movements without holding the underlying. In decentralised finance, derivatives are implemented through smart contracts that handle margin, settlement and liquidation on-chain.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scope 1 Emissions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,4 +167,3 @@ public: true
   - Scope 1 reduction strategies include fuel switching from fossil fuels to low-carbon alternatives (electrification of vehicle fleets, replacement of gas boilers with heat pumps), energy efficiency improvements (combustion optimisation, process intensification), refrigerant management programmes to reduce fugitive emissions, and, as a last resort, carbon capture utilisation and storage (CCUS) for process emissions that cannot be eliminated through alternative chemistry. These strategies are directly under the organisation's control, distinguishing Scope 1 from Scope 3 where indirect influence and supplier engagement are required.
 
   - By 2024-2025, mandatory Scope 1 disclosure requirements have proliferated: the EU's Corporate Sustainability Reporting Directive (CSRD) mandates large company disclosure from 2024, with SME requirements phasing in through 2026. The SEC's climate disclosure rule in the US (subject to legal challenges) would require material Scope 1 disclosures for public companies. The International Sustainability Standards Board (ISSB) IFRS S2 standard harmonises disclosure requirements globally. Growing scrutiny of greenwashing has elevated the importance of third-party assurance for Scope 1 data, and the introduction of the EU Carbon Border Adjustment Mechanism (CBAM) makes Scope 1 accuracy commercially material for imports into the EU.
-

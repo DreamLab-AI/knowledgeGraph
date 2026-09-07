@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -91,23 +86,56 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:node", "label": "Node"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"},
-      {"@id": "urn:ngm:class:decentralization-layer", "label": "Decentralization Layer"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:longest-chain-rule", "label": "Longest Chain Rule"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "@id": "urn:ngm:class:decentralization-layer",
+        "label": "Decentralization Layer"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"}
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      }
     ]
   },
   "quality": 0.8,
@@ -118,67 +146,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:decentralization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3fd7571a76dbe19121fa3835499c1dda36b1070984a70a13f0ebb09143c1e93a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DistributedDataStructure]]",
-      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Distribution of control across network within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
@@ -278,7 +245,7 @@ public: true
 
     **Decentralised social media** platforms (Lens Protocol, Farcaster) attracted millions of users seeking alternatives to centralised platforms' algorithmic curation and content moderation policies. Users retained ownership of their social graphs and content, enabling portability across applications and resistance to platform censorship.
 
-    **Gaming and metaverse applications** leveraged decentralisation for **true digital asset ownership**: players owned in-game items as NFTs, tradeable across marketplaces without platform intermediation. Games like Axie Infinity, The Sandbox, and Decentraland demonstrated that decentralised virtual economies could generate substantial economic activity, though concerns about **play-to-earn sustainability** and **tokenomic design** persisted.
+    **Gaming and metaverse applications** leveraged decentralisation for **true digital asset ownership**: players owned in-game items as NFTs, tradeable across marketplaces without platform intermediation. Games like Axie Infinity, The Sandbox, and Decentraland demonstrated that decentralised virtual economies [private] generate substantial economic activity, though concerns about **play-to-earn sustainability** and **tokenomic design** persisted.
 
     #### Web3 Market Growth and Institutional Adoption
     The **Global Web3 Blockchain Market** demonstrated explosive growth trajectory: valued at **$4.43 billion in 2024**, projections indicated growth to **$6.57 billion in 2025** and **$226.4 billion by 2034**, representing a compound annual growth rate (CAGR) of **48.2%**. This growth reflected sustained investment in decentralised infrastructure and applications across sectors.
@@ -290,7 +257,7 @@ public: true
     #### Governance Challenges and Regulatory Tensions
     Decentralised platforms posed unique regulatory challenges in 2024-2025, as regulators struggled to apply frameworks designed for centralised intermediaries to systems lacking identifiable responsible parties. **Who is accountable** when a DAO's algorithmic decisions cause harm? **Which jurisdiction governs** protocols deployed globally without territorial nexus? **How are taxes collected** from pseudonymous participants in decentralised networks?
 
-    The **Markets in Crypto-Assets Regulation (MiCA)**, effective December 2024 in the EU, attempted to regulate crypto-assets and service providers without fully addressing decentralised protocols lacking identifiable operators. Some protocols responded by **geographic blocking** of EU users, raising questions about whether decentralisation could coexist with territorial regulatory regimes.
+    The **Markets in Crypto-Assets Regulation (MiCA)**, effective December 2024 in the EU, attempted to regulate crypto-assets and service providers without fully addressing decentralised protocols lacking identifiable operators. Some protocols responded by **geographic blocking** of EU users, raising questions about whether decentralisation [private] coexist with territorial regulatory regimes.
 
     **Stablecoin regulation** represented a critical battleground: regulators demanded **reserve transparency**, **redemption guarantees**, and **consumer protections**, whilst algorithmic stablecoins (Terra's UST collapse in 2022 remained a cautionary tale) faced scepticism about **stability mechanisms** lacking centralised backing. Decentralised stablecoins like DAI navigated this tension through over-collateralisation and transparency, though their capital efficiency suffered relative to centralised alternatives.
 
@@ -304,7 +271,7 @@ public: true
     #### Philosophical and Political Dimensions
     Decentralisation in 2024-2025 transcended technical architecture to embody **political philosophy**: resistance to concentrated power, commitment to individual sovereignty, and scepticism of institutional authority. Bitcoin maximalists viewed decentralisation as existential to monetary sovereignty; Ethereum advocates emphasised decentralised computation enabling "unstoppable applications"; privacy coin communities prioritised transaction anonymity.
 
-    However, decentralisation's political appeal faced **pragmatic limitations**: most users prioritised convenience, cost, and functionality over decentralisation, accepting centralised custodians (exchanges, wallet providers) for superior user experience. The **gap between decentralisation as ethos and decentralisation as practice** raised questions about whether radical decentralisation could achieve mass adoption or would remain a niche ideology.
+    However, decentralisation's political appeal faced **pragmatic limitations**: most users prioritised convenience, cost, and functionality over decentralisation, accepting centralised custodians (exchanges, wallet providers) for superior user experience. The **gap between decentralisation as ethos and decentralisation as practice** raised questions about whether radical decentralisation [private] achieve mass adoption or would remain a niche ideology.
 
 - ### Provenance
   - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]

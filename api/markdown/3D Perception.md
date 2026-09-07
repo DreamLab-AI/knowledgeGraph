@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Perception
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +21,53 @@ public: true
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:6-do-f-tracking", "label": "6DoF Tracking"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:6-do-f-tracking",
+        "label": "6DoF Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-scanning", "label": "3D Scanning"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"}
+      {
+        "@id": "urn:ngm:class:3-d-scanning",
+        "label": "3D Scanning"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
     ]
   },
   "quality": 0.8
@@ -58,9 +83,8 @@ public: true
 - ### Content
   - Early computational approaches to 3D perception, dating to the 1970s and 1980s, focused on stereo vision — recovering depth by matching corresponding points across two camera images — and structured-light depth sensors. The introduction of time-of-flight cameras and rotating LiDAR units in the 2000s provided richer depth data for autonomous vehicles and robotics. The Microsoft Kinect (2010) democratised real-time depth sensing for consumer applications and fuelled academic research in human body tracking and indoor reconstruction.
 
-  - Modern 3D perception pipelines are predominantly driven by deep learning. PointNet (2017) demonstrated that neural networks operating directly on unordered point clouds could achieve strong classification and segmentation results. Subsequent architectures including PointNet++, DGCNN, VoxNet, and transformer-based networks such as Point Transformer have progressively improved accuracy and efficiency. Multi-modal fusion — combining RGB images with LiDAR point clouds — has become the standard for autonomous-driving perception, enabling reliable detection across lighting and weather conditions.
+  - Modern 3D perception pipelines are predominantly driven by deep learning. PointNet (2017) demonstrated that neural networks operating directly on unordered point clouds [private] achieve strong classification and segmentation results. Subsequent architectures including PointNet++, DGCNN, VoxNet, and transformer-based networks such as Point Transformer have progressively improved accuracy and efficiency. Multi-modal fusion — combining RGB images with LiDAR point clouds — has become the standard for autonomous-driving perception, enabling reliable detection across lighting and weather conditions.
 
   - Key applications include autonomous vehicle perception (object detection, lane segmentation, and free-space estimation), robotic manipulation (grasp pose estimation and bin-picking), augmented reality (AR surface detection and anchor placement), and industrial inspection (defect localisation on surfaces). Benchmarks such as KITTI, nuScenes, and ScanNet provide standardised evaluation data. Real-time constraints demand efficient model architectures and hardware acceleration on GPUs and specialised neural processing units.
 
   - Through 2024–2025, the field is advancing on several fronts: large-scale pretraining on synthetic and real-world data improves generalisation; occupancy prediction networks used in Tesla Autopilot and other systems replace explicit object detection with dense volumetric output; and 4D perception — tracking objects through time — is maturing. Integration with foundation models enables open-vocabulary 3D recognition, while edge deployment on XR headsets such as the Apple Vision Pro and Meta Quest demonstrate that high-fidelity 3D perception is achievable within compact wearable form factors.
-

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Industry Consortium
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,34 +20,82 @@ public: true
   "definition": "An Industry Consortium is a collaborative alliance of multiple independent organisations within the same sector that pool resources, expertise, and influence to pursue shared objectives such as standards development, research, or market promotion. Consortia typically operate under a formal governance charter and may produce specifications, reference implementations, or advocacy positions. They differ from regulatory bodies in that membership is voluntary and outputs are generally non-binding unless adopted by standards organisations.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
-    "standardizedBy": [{"@id": "urn:ngm:class:standards", "label": "Standards"}],
-    "dependsOn": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:standardisation", "label": "Standardisation"},
-      {"@id": "urn:ngm:class:collaborative-research", "label": "Collaborative Research"}
+      {
+        "@id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-research",
+        "label": "Collaborative Research"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:working-group", "label": "Working Group"}
+      {
+        "@id": "urn:ngm:class:working-group",
+        "label": "Working Group"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:regulatory-body", "label": "Regulatory Body"}
+      {
+        "@id": "urn:ngm:class:regulatory-body",
+        "label": "Regulatory Body"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:policy", "label": "Policy"}
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "quality": 0.62,

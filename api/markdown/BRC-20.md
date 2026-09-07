@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BRC-20
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -194,46 +189,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:brc-20:6c6fd692e3cf",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dfa17370644ba07de370f8094354a44b73313895fb65d919d4bb35079d0232ad"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ordinals]]",
-      "resolved": "urn:visionflow:linked:ordinals",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fungible Token]]",
-      "resolved": "urn:visionflow:linked:fungible-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token Standard]]",
-      "resolved": "urn:visionflow:linked:token-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - BRC-20 is an experimental [[Token Standard]] on the [[Bitcoin Proof-of-Work Protocol]] that encodes [[Fungible Token]] operations — deploy, mint, and transfer — as small JSON payloads inscribed onto individual [[Satoshi]] units via the [[Ordinals]] protocol. Unlike [[ERC-20]] tokens on [[Ethereum]], BRC-20 tokens carry no on-chain enforcement logic; their state is computed entirely by off-chain [[Ordinals Indexer]] software that reads inscriptions in ordinal sequence. The standard was proposed pseudonymously by @domo in March 2023 and quickly became a proving ground for [[Tokenisation]] on Bitcoin, demonstrating both the creative potential and the technical constraints of treating the base layer as a data availability layer for [[Digital Asset]] issuance.
 
@@ -253,12 +208,12 @@ public: true
   - **Indexer role** — all balance accounting is off-chain. Operators run indexers (e.g., ord, hiro, unisat) that scan the [[Bitcoin Node]] chain data and maintain a ticker-to-address balance map. Divergent indexer implementations can produce different balance states, raising questions about canonical truth.
   - **Fee market impact** — the BRC-20 mint frenzy in 2023 introduced a new class of low-value transactions competing for block space, significantly elevating [[Mempool]] congestion and transaction fees on the [[Bitcoin Proof-of-Work Protocol]] base layer.
   - **[[Bitcoin Script]] neutrality** — BRC-20 exploits existing script primitives without introducing new opcodes, preserving Bitcoin's conservative upgrade philosophy. This is both a strength (no consensus change required) and a weakness (no on-chain enforcement).
-  - **Supply enforcement gap** — because Bitcoin nodes do not validate JSON content, a miner could theoretically include an over-cap mint inscription; enforcement is purely social and reliant on indexers rejecting invalid state transitions.
+  - **Supply enforcement gap** — because Bitcoin nodes do not validate JSON content, a miner [private] theoretically include an over-cap mint inscription; enforcement is purely social and reliant on indexers rejecting invalid state transitions.
 
 - ### Applications and Use Cases
   - **Speculative token launches** — the permissionless deploy mechanism allowed anyone to create and distribute tokens at low technical cost, driving thousands of ticker launches in 2023, many with high speculative trading volumes.
   - **Community and meme tokens** — tokens like ORDI and SATS became the first significant BRC-20 assets, accumulating listings on centralised exchanges and driving a wave of [[Digital Asset]] experimentation on Bitcoin.
-  - **Proof-of-concept for Bitcoin DeFi** — BRC-20 activity stimulated broader interest in [[Decentralised Finance]] on Bitcoin, motivating development of [[Layer-2 Protocol]] solutions (e.g., [[Lightning Network]] extensions, BitVM) that could offer more expressive programmability.
+  - **Proof-of-concept for Bitcoin DeFi** — BRC-20 activity stimulated broader interest in [[Decentralised Finance]] on Bitcoin, motivating development of [[Layer-2 Protocol]] solutions (e.g., [[Lightning Network]] extensions, BitVM) that [private] offer more expressive programmability.
   - **Cross-chain bridges** — wrapped BRC-20 tokens were subsequently bridged to EVM-compatible chains, enabling [[Decentralised Exchange]] trading and liquidity provisioning via [[ERC-20]] wrappers.
   - **Indexer and tooling ecosystem** — the standard catalysed development of wallets, block explorers, and marketplace platforms (e.g., UniSat, OKX Ordinals) specifically designed to handle inscription-based assets.
   - **Research into Bitcoin extensibility** — BRC-20's limitations — notably the two-step transfer and indexer dependence — motivated design of successor standards such as [[Runes Protocol]] (by Ordinals creator Casey Rodarmor) intended to be more efficient and unambiguous.
@@ -302,7 +257,7 @@ public: true
 - ### Standards and Context
   - BRC-20 is an informal community standard; it has no formal specification body or governance structure analogous to the [[Ethereum]] Improvement Proposal process.
   - The original specification was a blog post by @domo; subsequent iterations were managed collaboratively by community members via repositories and Discord coordination.
-  - Bitcoin's conservative upgrade philosophy means BRC-20 could only exist because it required no changes to Bitcoin's consensus rules — it is entirely parasitic on existing data-availability mechanisms.
+  - Bitcoin's conservative upgrade philosophy means BRC-20 [private] only exist because it required no changes to Bitcoin's consensus rules — it is entirely parasitic on existing data-availability mechanisms.
   - The [[Taproot]] upgrade (BIP 340–342, activated November 2021) was the prerequisite that made large witness-data inscriptions economically feasible by discounting witness bytes in fee calculation.
   - Industry participants debated whether inscription-based tokens represent legitimate use of Bitcoin's block space or unnecessary pollution of the [[UTXO Model]] set — a debate that remains unresolved as of 2026.
   - From a regulatory standpoint, BRC-20 tokens have been considered [[Digital Asset]] securities questions in several jurisdictions, though no definitive regulatory ruling specific to BRC-20 had emerged by early 2026.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[arpana]]
-# Forensic Evidence Court Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,15 +51,30 @@ elevatedFrom:: [[arpana]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ]
   },
   "quality": 0.35,
@@ -76,37 +85,6 @@ elevatedFrom:: [[arpana]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:arpana:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a6e76761322adc85fed465a262d3998bd8e25e65cba9aeb5742d03ed0bed9063"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[crime uk]]",
-      "resolved": "urn:visionflow:linked:crime-uk",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[law]]",
-      "resolved": "urn:visionflow:linked:law",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A UK-focused jurisdictional practice framework for integrating crime scene reconstruction with court proceedings, combining forensic evidence management, chain-of-custody protocols, and digital evidence presentation standards to support admissible expert testimony.

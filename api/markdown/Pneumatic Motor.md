@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pneumatic Motor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,29 +59,62 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:pneumatic-actuator", "label": "Pneumatic Actuator"}
+      {
+        "@id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:torque", "label": "Torque"}
+      {
+        "@id": "urn:ngm:class:torque",
+        "label": "Torque"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
-      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"}
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"}
+      {
+        "@id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:hydraulic-motor", "label": "Hydraulic Motor"},
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"}
+      {
+        "@id": "urn:ngm:class:hydraulic-motor",
+        "label": "Hydraulic Motor"
+      },
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pneumatic-cylinder", "label": "Pneumatic Cylinder"},
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+      {
+        "@id": "urn:ngm:class:pneumatic-cylinder",
+        "label": "Pneumatic Cylinder"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "provenance": {
@@ -96,37 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pneumatic-motor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0a18c7afae13585b0ad72f27525541441aec2c9d7288066732dbb927cd8ad734"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Pneumatic Actuator]]",
-      "resolved": "urn:visionflow:owl:class:pneumatic-actuator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Pneumatic Motor converts the energy stored in compressed air into continuous rotational mechanical motion, producing torque and speed proportional to supply pressure and airflow rate. Characterised by high power-to-weight ratios and inherent overload protection, pneumatic motors are widely used in industrial tooling and mobile robotics where spark-free operation is required.

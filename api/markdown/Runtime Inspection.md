@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Runtime Inspection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,26 +55,62 @@ public: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:model-transparency", "label": "Model Transparency"},
-      {"@id": "urn:ngm:class:monitoring-dashboard", "label": "Monitoring Dashboard"}
+      {
+        "@id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:traceability-mechanism", "label": "Traceability Mechanism"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+      {
+        "@id": "urn:ngm:class:traceability-mechanism",
+        "label": "Traceability Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
     ]
   },
   "provenance": {
@@ -89,37 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:runtime-inspection:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2953c6267eb342df9011e8ce2f4623f2eba464b14a5cd7ff25785f35837d82f2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ai Governance]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

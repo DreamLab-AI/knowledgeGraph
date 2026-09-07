@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Layer-2 Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

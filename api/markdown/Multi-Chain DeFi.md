@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Chain DeFi
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Multi-chain DeFi refers to decentralised finance applications and liquidity that operate across multiple independent blockchains rather than being confined to a single network. It relies on cross-chain bridges, messaging protocols, and interoperability standards to move assets and data between chains, letting users access yields and markets wherever they reside. It expands capital efficiency but introduces bridge and composability risks.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:de-fi", "label": "DeFi"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Auction Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,41 +168,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:auction-theory:7d7a3c156993",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b12bcdb51ebbbe03f644f67a39f34f54983fa6ce79008a175d3c28c04c1c7acc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Game Theory]]",
-      "resolved": "urn:visionflow:linked:game-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gas Mechanism]]",
-      "resolved": "urn:visionflow:linked:gas-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Economics]]",
-      "resolved": "urn:visionflow:linked:economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

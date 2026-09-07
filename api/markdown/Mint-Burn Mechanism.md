@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mint-Burn Mechanism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Mint-Burn Mechanism",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:tokenomics", "vc:label": "Tokenomics"},
-    {"@id": "urn:visionflow:linked:smart-contract", "vc:label": "Smart Contract"},
-    {"@id": "urn:visionflow:linked:wrapped-token", "vc:label": "Wrapped Token"},
-    {"@id": "urn:visionflow:linked:synthetic-asset", "vc:label": "Synthetic Asset"},
-    {"@id": "urn:visionflow:linked:peg", "vc:label": "Peg"}
+    {
+      "@id": "urn:visionflow:linked:tokenomics",
+      "vc:label": "Tokenomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:wrapped-token",
+      "vc:label": "Wrapped Token"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-asset",
+      "vc:label": "Synthetic Asset"
+    },
+    {
+      "@id": "urn:visionflow:linked:peg",
+      "vc:label": "Peg"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -33,23 +48,50 @@ public: true
   "definition": "A token supply-management pattern in which new units are created (minted) when value enters a system and permanently destroyed (burned) when it leaves, keeping circulating supply in one-to-one correspondence with the assets, collateral, or claims backing it. Implemented as privileged mint and burn functions in a token's smart contract, the pattern underlies fiat-backed and algorithmic stablecoins, wrapped tokens that represent assets locked on another chain, synthetic assets minted against collateral, and cross-chain bridges that burn on the source chain and mint on the destination. Its integrity depends entirely on access control and honest accounting of the backing: compromised mint authority or unbacked minting is a recurring cause of catastrophic protocol failures.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:tokenomics",
+    "label": "Tokenomics"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:stable-coins", "label": "Stablecoins"},
-      {"@id": "urn:ngm:class:synthetic-asset", "label": "Synthetic Asset"}
+      {
+        "@id": "urn:ngm:class:stable-coins",
+        "label": "Stablecoins"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-asset",
+        "label": "Synthetic Asset"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:wrapped-token", "label": "Wrapped Token"},
-      {"@id": "urn:ngm:class:peg", "label": "Peg"}
+      {
+        "@id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      },
+      {
+        "@id": "urn:ngm:class:peg",
+        "label": "Peg"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"},
-      {"@id": "urn:ngm:class:token-bridge", "label": "Token Bridge"},
-      {"@id": "urn:ngm:class:collateral", "label": "Collateral"}
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:token-bridge",
+        "label": "Token Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      }
     ]
   },
   "quality": 0.8,

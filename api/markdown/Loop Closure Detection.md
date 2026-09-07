@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Loop Closure Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Loop closure detection is the process by which a SLAM or mapping system recognises that it has returned to a previously visited location. By identifying these revisits, it adds constraints that correct accumulated odometry drift and produce globally consistent maps. It is a critical component of robust simultaneous localisation and mapping, typically implemented via appearance-based place recognition or geometric matching.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:topological-map", "label": "Topological Map"}, {"@id": "urn:ngm:class:long-range-navigation", "label": "Long-Range Navigation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      },
+      {
+        "@id": "urn:ngm:class:long-range-navigation",
+        "label": "Long-Range Navigation"
+      }
+    ]
   },
   "quality": 0.72
 }

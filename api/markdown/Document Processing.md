@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Document Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,7 +102,7 @@ public: true
 
   ## Definition
 
-  **Document processing** is the pipeline discipline of turning unstructured and semi-structured documents into structured data that systems can act on. A typical pipeline runs: capture (scanning, email ingestion, API upload), image preprocessing (deskew, denoise, binarisation), [[Optical Character Recognition]] to recover text, layout and structure analysis (tables, key-value regions, reading order), document classification (invoice vs. contract vs. claim), field and entity extraction, validation against business rules or reference data, and hand-off to downstream systems — an ERP posting, a case-management record, or an index for [[Enterprise Search]].
+  **Document processing** is the pipeline discipline of turning unstructured and semi-structured documents into structured data that systems can act on. A typical pipeline runs: capture (scanning, email ingestion, API upload), image preprocessing (deskew, denoise, binarisation), [[Optical Character Recognition]] to recover text, layout and structure analysis (tables, key-value regions, reading order), document classification (invoice vs. contract vs. claim), field and entity extraction, validation against business rules or reference data, and hand-off to downstream systems — an ERP posting, a case-management record, or an [private] for [[Enterprise Search]].
 
   The field has moved through three generations. Template-based capture (1990s-2000s) matched fixed form layouts and broke whenever a supplier changed an invoice design. Machine-learning-based **intelligent document processing (IDP)** replaced templates with trainable classifiers and extractors that generalise across layouts. The current generation is built on layout-aware transformers (LayoutLM, Donut) and large multimodal models that read a document image directly, extracting fields zero-shot from document types they have never seen and handling handwriting, stamps, and poor scans that defeated classical OCR. This has collapsed the historical trade-off between per-document-type setup cost and accuracy.
 

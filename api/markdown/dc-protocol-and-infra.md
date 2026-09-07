@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,20 +34,50 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:crdt", "label": "CRDT"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"},
-      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"},
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"}
+      {
+        "@id": "urn:ngm:class:dc-workspace-tools",
+        "label": "Workspace Tools"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
     ]
   },
   "quality": 0.8,
@@ -59,3 +85,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

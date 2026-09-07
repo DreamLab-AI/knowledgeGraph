@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Planner-Executor Pattern
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Planner-Executor Pattern",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "MultiAgentOrchestration" },
-    { "@id": "urn:visionflow:linked:supervisor-worker-pattern", "vc:label": "SupervisorWorkerPattern" },
-    { "@id": "urn:visionflow:linked:task-delegation", "vc:label": "TaskDelegation" },
-    { "@id": "urn:visionflow:linked:llm-orchestration", "vc:label": "LLMOrchestration" }
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "MultiAgentOrchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervisor-worker-pattern",
+      "vc:label": "SupervisorWorkerPattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-delegation",
+      "vc:label": "TaskDelegation"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-orchestration",
+      "vc:label": "LLMOrchestration"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-09T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-09T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,17 +44,32 @@ public: true
   "definition": "A multi-agent orchestration pattern that separates deciding what to do from doing it: a planner component decomposes a goal into an ordered sequence of concrete steps, and one or more executor components carry those steps out, reporting results back so the plan can proceed or be revised. The split lets each role specialise — the planner reasons about strategy, dependencies, and ordering over the whole task, while executors focus narrowly on faithfully performing individual steps with the appropriate tools — and it makes the plan an explicit, inspectable artefact rather than an implicit chain of ad-hoc decisions.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": { "@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:multi-agent-orchestration",
+    "label": "Multi-Agent Orchestration"
+  },
   "relations": {
     "requires": [
-      { "@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System" }
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:task-delegation", "label": "Task Delegation" }
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:supervisor-worker-pattern", "label": "Supervisor-Worker Pattern" },
-      { "@id": "urn:ngm:class:llm-orchestration", "label": "LLM Orchestration" }
+      {
+        "@id": "urn:ngm:class:supervisor-worker-pattern",
+        "label": "Supervisor-Worker Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      }
     ]
   },
   "quality": 0.75,

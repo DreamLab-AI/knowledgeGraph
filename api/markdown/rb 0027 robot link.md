@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0027 robot link
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,48 +60,46 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
-      {"@id": "urn:ngm:class:robot-link", "label": "RobotLink"}
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "@id": "urn:ngm:class:robot-link",
+        "label": "RobotLink"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot", "label": "Robot"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+      {
+        "@id": "urn:ngm:class:robot",
+        "label": "Robot"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:rigid-body", "label": "Rigid Body"},
-      {"@id": "urn:ngm:class:inertia", "label": "Inertia"},
-      {"@id": "urn:ngm:class:rb-0039-stiffness", "label": "rb 0039 stiffness"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body",
+        "label": "Rigid Body"
+      },
+      {
+        "@id": "urn:ngm:class:inertia",
+        "label": "Inertia"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0039-stiffness",
+        "label": "rb 0039 stiffness"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0027-robot-link:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:738d0a9073e8b7e14993cdec34bf1432068d7a51f31127f59cfd1fb605f14305"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ### Primary Definition

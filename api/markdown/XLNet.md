@@ -1,8 +1,3 @@
----
-public: true
----
-
-# XLNet
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,36 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:word-piece", "label": "WordPiece"}
+      {
+        "@id": "urn:ngm:class:word-piece",
+        "label": "WordPiece"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"},
-      {"@id": "urn:ngm:class:training", "label": "Training"}
+      {
+        "@id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
     ]
   },
   "quality": 0.5,
@@ -78,32 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:xlnet:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:28b14e4ad974bc16c91c0f3510df6be7ee71958394e57c85f8217cd1681e9713"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A generalised autoregressive pre-training method that learns bidirectional contexts by maximising expected likelihood over all permutations of the factorisation order, overcoming limitations of BERT's masked language modelling.

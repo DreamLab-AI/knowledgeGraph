@@ -1,57 +1,108 @@
----
-public: true
----
-
-# Shading Model
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:shading-model", "@type":"Page", "title":"Shading Model", "vc:slug":"shading-model", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:shading-model",
+  "@type": "Page",
+  "title": "Shading Model",
+  "vc:slug": "shading-model",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:shading-model",
-  "@type":"Class",
-  "label":"Shading Model",
-  "definition":"A shading model is a mathematical description of how a surface reflects and emits light, determining the colour and intensity seen at each point given the lighting and viewing geometry. It encapsulates a bidirectional reflectance distribution function together with parameters such as albedo, roughness and metalness. Shading models range from simple empirical formulations to physically based formulations grounded in energy conservation.",
-  "domain":"spatial-computing",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:rendering","label":"Rendering"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:brdf","label":"BRDF"},
-      {"@id":"urn:ngm:class:material-system","label":"Material System"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:shading-model",
+  "@type": "Class",
+  "label": "Shading Model",
+  "definition": "A shading model is a mathematical description of how a surface reflects and emits light, determining the colour and intensity seen at each point given the lighting and viewing geometry. It encapsulates a bidirectional reflectance distribution function together with parameters such as albedo, roughness and metalness. Shading models range from simple empirical formulations to physically based formulations grounded in energy conservation.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering",
+      "label": "Rendering"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:brdf",
+        "label": "BRDF"
+      },
+      {
+        "@id": "urn:ngm:class:material-system",
+        "label": "Material System"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:shader","label":"Shader"},
-      {"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:physically-based-rendering","label":"Physically Based Rendering"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"},
-      {"@id":"urn:ngm:class:global-illumination","label":"Global Illumination"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:graphics-pipeline","label":"Graphics Pipeline"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:gpu-rendering","label":"GPU Rendering"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:brdf","label":"BRDF"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:brdf",
+        "label": "BRDF"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:rendering-technique","label":"Rendering Technique"},
-      {"@id":"urn:ngm:class:material-system","label":"Material System"},
-      {"@id":"urn:ngm:class:physically-based-rendering","label":"Physically Based Rendering"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      },
+      {
+        "@id": "urn:ngm:class:material-system",
+        "label": "Material System"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

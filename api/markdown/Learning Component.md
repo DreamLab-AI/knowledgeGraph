@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Learning Component
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:learning-component:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:57ceecd1d876d3696759f572c5f75d99605d2c51da33b46599a2d3072b8e47de"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Customised Training]]",
-      "resolved": "urn:visionflow:linked:customised-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Educational Technology]]",
-      "resolved": "urn:visionflow:owl:class:educational-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Modular educational elements designed for metaverse and XR training environments, including interactive simulations, 3D models, assessment tools, and collaborative spaces that can be combined to create comprehensive immersive learning experiences.

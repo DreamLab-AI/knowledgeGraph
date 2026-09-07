@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interaction Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -99,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interaction-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:352e487d458eefb05cf5ff6ba934199f5b019c8b386ce8b7b459670f16b5783e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A robotics control paradigm that explicitly manages contact forces and compliant behaviour when a robot interacts with its environment or human collaborators. Interaction control encompasses impedance control, admittance control, and force control strategies that allow robots to operate safely during physical contact, adapting stiffness, damping, and inertia in response to sensed forces.

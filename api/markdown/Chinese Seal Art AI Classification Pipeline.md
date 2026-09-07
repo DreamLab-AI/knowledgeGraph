@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Seals]]
-# Chinese Seal Art AI Classification Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,16 +42,34 @@ elevatedFrom:: [[Seals]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ]
   },
   "quality": 0.7,
@@ -69,26 +81,6 @@ elevatedFrom:: [[Seals]]
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:seals:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8f3dd853954ae0ae53a6b3d2a51ad3a2eeb0a859b11da7c6294d51979562eeb0"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Seals, in this knowledge graph context, refers to a practical AI pipeline experiment using traditional Chinese seal art (海豹-style stamps) as a five-shot image classification and translation task. The experiment demonstrates multimodal AI capabilities: image analysis via OpenAI vision APIs, English description generation, Chinese translation, and appropriateness ranking, subsequently serialised to JSON for potential NFT metadata enrichment.
 
@@ -98,7 +90,7 @@ elevatedFrom:: [[Seals]]
 
 - ### Relationships
   - **uses**: Multimodal AI — the pipeline uses vision and language models in combination; Image Generation — image analysis and description generation are the core AI tasks; Generative AI — the translation and summarisation steps leverage generative AI.
-  - **enables**: NFT — the pipeline generates structured metadata that could enrich NFT records; Digital Asset — the seal images processed are candidates for digital asset encoding.
+  - **enables**: NFT — the pipeline generates structured metadata that [private] enrich NFT records; Digital Asset — the seal images processed are candidates for digital asset encoding.
   - **relatedTo**: Computer Vision — image analysis of seal artwork is a computer vision classification task.
 
 - ### Content

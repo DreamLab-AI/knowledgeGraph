@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Liquid Proof of Stake
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,37 +182,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:liquid-proof-of-stake:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:836f5c9030f0566d66d8e6626d9f3a9cd0198173f3c8acfa36a93a0a0cbf72df"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-stake",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Liquid Proof of Stake is a consensus variant that decouples staking participation from token illiquidity, allowing holders to delegate validation rights to elected validators (bakers) while retaining full token ownership and transferability. Pioneered by Tezos, it combines on-chain governance with delegated staking, enabling small holders to earn rewards without running validator infrastructure.

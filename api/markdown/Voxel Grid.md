@@ -1,44 +1,120 @@
----
-public: true
----
-
-# Voxel Grid
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:voxel-grid", "@type":"Page", "title":"Voxel Grid", "vc:slug":"voxel-grid", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:voxel-grid",
+  "@type": "Page",
+  "title": "Voxel Grid",
+  "vc:slug": "voxel-grid",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:voxel-grid",
-  "@type":"Class",
-  "label":"Voxel Grid",
-  "definition":"A voxel grid is a regular three-dimensional lattice that partitions space into uniformly sized cubic cells, each cell (voxel) storing occupancy, colour, density, or other attributes of the volume it covers. It provides a structured spatial representation used to discretise point clouds, build occupancy maps, and accelerate spatial queries in robotics and computer graphics. By contrast with continuous point sets, the fixed cell structure trades fine resolution for predictable indexing and constant-time neighbourhood access.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"},{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"}],
-  "relations":{
-    "contrastsWith":[{"@id":"urn:ngm:class:mapping","label":"Mapping"}],
-    "hasPart":[{"@id":"urn:ngm:class:perception","label":"Perception"}],
-    "uses":[{"@id":"urn:ngm:class:lidar","label":"Lidar"}],
-    "requires":[{"@id":"urn:ngm:class:sensor","label":"Sensor"}],
-    "enables":[{"@id":"urn:ngm:class:mapping","label":"Mapping"}],
-    "supports":[{"@id":"urn:ngm:class:slam","label":"SLAM"}],
-    "dependsOn":[{"@id":"urn:ngm:class:perception","label":"Perception"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:robotics","label":"Robotics"}],
-    "implements":[{"@id":"urn:ngm:class:mapping","label":"Mapping"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"},
-      {"@id":"urn:ngm:class:lidar","label":"Lidar"},
-      {"@id":"urn:ngm:class:slam","label":"SLAM"},
-      {"@id":"urn:ngm:class:perception","label":"Perception"},
-      {"@id":"urn:ngm:class:sensor","label":"Sensor"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:voxel-grid",
+  "@type": "Class",
+  "label": "Voxel Grid",
+  "definition": "A voxel grid is a regular three-dimensional lattice that partitions space into uniformly sized cubic cells, each cell (voxel) storing occupancy, colour, density, or other attributes of the volume it covers. It provides a structured spatial representation used to discretise point clouds, build occupancy maps, and accelerate spatial queries in robotics and computer graphics. By contrast with continuous point sets, the fixed cell structure trades fine resolution for predictable indexing and constant-time neighbourhood access.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:point-cloud",
+      "label": "Point Cloud"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

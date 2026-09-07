@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ownership Transfer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,52 @@ public: true
   "definition": "Ownership transfer is the process by which legal or functional control of an asset — physical, digital, or tokenised — passes from one party to another, recorded in a registry, ledger, or smart contract. In blockchain and Web3 contexts it typically refers to atomic state transitions that update on-chain ownership records for fungible tokens, NFTs, or tokenised real-world assets, with cryptographic proofs replacing traditional notarial or escrow intermediaries. The mechanism must satisfy atomicity, finality, and auditability requirements.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-asset-management",
+      "label": "Digital Asset Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
-      {"@id": "urn:ngm:class:property-rights", "label": "Property Rights"},
-      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenization"}
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenization"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
-      {"@id": "urn:ngm:class:fractional-ownership", "label": "Fractional Ownership"}
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"}
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      }
     ]
   },
   "quality": 0.8

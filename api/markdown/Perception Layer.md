@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Perception Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:perception-layer:e8a77d49baf2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2f5bfb0f9113ba1a3d42501a5348de6a829856d7ced1adea552a1fb8741f522e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sensor Fusion Layer]]",
-      "resolved": "urn:visionflow:linked:sensor-fusion-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Control Layer]]",
-      "resolved": "urn:visionflow:linked:control-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agent Layer]]",
-      "resolved": "urn:visionflow:linked:agent-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[State Estimation]]",
-      "resolved": "urn:visionflow:linked:state-estimation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Perception Layer is the stratum that converts raw sensor signals into structured observations of the environment. It sits above the Sensor Fusion and Hardware sensing strata and below decision-making layers, providing the interpreted percepts that agents and controllers act on. It contains detection, recognition, segmentation, and state-estimation components.

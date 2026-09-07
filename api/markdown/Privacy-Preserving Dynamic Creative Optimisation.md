@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Client side DCO]]
-# Privacy-Preserving Dynamic Creative Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -93,19 +87,40 @@ elevatedFrom:: [[Client side DCO]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Neural Network Latent Space"},
-      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"}
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Neural Network Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture", "label": "Multimodal AI Architecture"}
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal AI Architecture"
+      }
     ]
   },
   "quality": 0.5,
@@ -116,77 +131,6 @@ elevatedFrom:: [[Client side DCO]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:client-side-dco:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:83f3611a5a6e9f1b2c0158dd591f2a5dbb7de68826826ed499a45f4f5c150df2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Nostr]]",
-      "resolved": "urn:visionflow:linked:nostr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralised Web]]",
-      "resolved": "urn:visionflow:owl:class:decentralised-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware and Edge]]",
-      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hyper personalisation]]",
-      "resolved": "urn:visionflow:owl:class:hyper-personalisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Latent Space]]",
-      "resolved": "urn:visionflow:owl:class:latent-space",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multimodal]]",
-      "resolved": "urn:visionflow:owl:class:multimodal",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Nostr protocol]]",
-      "resolved": "urn:visionflow:owl:class:nostr-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA Omniverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training and fine tuning]]",
-      "resolved": "urn:visionflow:owl:class:training-and-fine-tuning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Client-side Dynamic Creative Optimisation (DCO) is an approach where personalised advertising content is generated and matched on the user's device rather than on centralised servers. Using locally maintained preference hashes and decentralised distribution protocols (such as Nostr), the system delivers contextually relevant content without exposing personal identity data to advertisers.

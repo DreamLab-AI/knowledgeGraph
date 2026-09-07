@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ubiquitous Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,10 +20,18 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ]
   },
   "quality": 0.7
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MicroBT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:micro-bt:004f84daa736",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:51f90841dcf3df7b8d46d48530602e14bb475228d3d9800410423a1eb90f0399"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Mining]]",
-      "resolved": "urn:visionflow:linked:bitcoin-mining",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Validation]]",
-      "resolved": "urn:visionflow:linked:transaction-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hardware]]",
-      "resolved": "urn:visionflow:linked:hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ASIC]]",
-      "resolved": "urn:visionflow:linked:asic",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.microbt.com]]",
-      "resolved": "urn:visionflow:linked:https-www-microbt-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://whatsminer.net]]",
-      "resolved": "urn:visionflow:linked:https-whatsminer-net",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - MicroBT is a Chinese manufacturer of Bitcoin mining hardware, known for its Whatsminer series of ASIC machines. It competes with other mining hardware producers.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inference Algorithm
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "An inference algorithm is a computational procedure for deriving conclusions about unobserved quantities from a model and observed data, typically by computing or approximating posterior distributions in probabilistic models. Common families include exact methods (variable elimination, belief propagation), sampling methods (Markov chain Monte Carlo, importance sampling), and variational approximations. It is the engine that turns a model specification into actionable estimates or predictions.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:hamiltonian-monte-carlo", "label": "Hamiltonian Monte Carlo"}
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:hamiltonian-monte-carlo",
+        "label": "Hamiltonian Monte Carlo"
+      }
     ]
   },
   "quality": 0.72

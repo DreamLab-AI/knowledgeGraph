@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Artifact Metadata
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -129,72 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:artifact-metadata:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fc27e5e567e248eb2a3757b7c93b0fa6ab4220a1ef02829991e243ecb80a163b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Authenticity Tracking]]",
-      "resolved": "urn:visionflow:linked:authenticity-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Recording]]",
-      "resolved": "urn:visionflow:linked:blockchain-recording",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cultural Preservation]]",
-      "resolved": "urn:visionflow:linked:cultural-preservation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Metadata]]",
-      "resolved": "urn:visionflow:linked:digital-metadata",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Documentation Practices]]",
-      "resolved": "urn:visionflow:linked:documentation-practices",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metadata Standards]]",
-      "resolved": "urn:visionflow:owl:class:metadata-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Provenance Verification]]",
-      "resolved": "urn:visionflow:owl:class:provenance-verification",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Artifact Metadata refers to structured descriptive, administrative, and provenance information associated with digital assets and cultural objects, particularly in NFT and blockchain contexts, documenting ownership history, authenticity, cultural significance, and preservation status for verification and long-term accessibility.

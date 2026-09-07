@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proximity Search
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:proximity-search:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d3228437c2ecf783c5d95fe345ec60373fc61ecfe1254b64edc74e27db3d13a8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Nearby Discovery]]",
-      "resolved": "urn:visionflow:linked:nearby-discovery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Geospatial Technology]]",
-      "resolved": "urn:visionflow:owl:class:geospatial-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Geospatial query algorithms that locate nearby points of interest within a specified radius using coordinate-based indexing methods such as geohashing and quadtree structures for efficient location-based service applications.

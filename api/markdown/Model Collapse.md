@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Collapse
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Model collapse is a degenerative process in which generative models trained recursively on their own (or other models') synthetic outputs progressively lose information about the true data distribution. Tails of the distribution disappear first, leading to reduced diversity, amplified biases, and eventual convergence on degenerate outputs. It is a key risk as AI-generated content increasingly contaminates web-scale training corpora.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:death-of-the-internet", "label": "Death of the Internet"},
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}
+      {
+        "@id": "urn:ngm:class:death-of-the-internet",
+        "label": "Death of the Internet"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
     ]
   },
   "quality": 0.72

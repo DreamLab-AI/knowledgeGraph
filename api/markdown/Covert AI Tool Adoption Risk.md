@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[The Secret Cyborg Problem]]
-# Covert AI Tool Adoption Risk
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,16 +42,34 @@ elevatedFrom:: [[The Secret Cyborg Problem]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:trust-in-automation", "label": "Trust in Automation"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:trust-in-automation",
+        "label": "Trust in Automation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:workforce-augmentation", "label": "Workforce Augmentation"}
+      {
+        "@id": "urn:ngm:class:workforce-augmentation",
+        "label": "Workforce Augmentation"
+      }
     ]
   },
   "provenance": {
@@ -67,26 +79,6 @@ elevatedFrom:: [[The Secret Cyborg Problem]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:the-secret-cyborg-problem:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a8c1d467e65139a76fdb7d65323e8cd57e729b17e5869d0e19aa20f2241d3cb6"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   The Secret Cyborg Problem describes the widespread but concealed practice of workers integrating AI tools into professional workflows without disclosure to employers or colleagues, creating risks around data governance, accountability, and skills assessment. Research indicates approximately 78% of AI-using knowledge workers employ tools covertly, undermining organisational AI adoption strategies and responsible-use frameworks.

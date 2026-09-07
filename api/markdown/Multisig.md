@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multisig
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:multisig:7925300a0f99",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:57744fb2f2c96e11fc16262b2d70116472df7d1f1011dfdd34b969dfdb18e014"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Custody]]",
-      "resolved": "urn:visionflow:linked:custody",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO Governance]]",
-      "resolved": "urn:visionflow:linked:dao-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Wallet]]",
-      "resolved": "urn:visionflow:linked:wallet",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Multisig, or multi-signature, is a scheme requiring more than one cryptographic signature to authorise a transaction or action. It is widely used in cryptocurrency wallets and custody to distribute control.

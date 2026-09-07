@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IBM
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ibm:916a98f0fa2a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:93733caff980c6e2d53658fad0c965639562e4b79915023ef5496594532a16f4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Database Systems]]",
-      "resolved": "urn:visionflow:linked:database-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Web3 Infrastructure]]",
-      "resolved": "urn:visionflow:linked:web-3-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:linked:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.ibm.com/]]",
-      "resolved": "urn:visionflow:linked:https-www-ibm-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.ibm.com/cloud]]",
-      "resolved": "urn:visionflow:linked:https-www-ibm-com-cloud",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - IBM is a technology company providing enterprise hardware, software, cloud services and consulting, with a long history in mainframe and research computing.

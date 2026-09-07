@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hazard Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,7 +176,7 @@ public: true
 ```
 
 - ### Definition
-  - [[Hazard Analysis]] is the disciplined process of identifying conditions, events, or system states that could lead to harm, assessing their likelihood and severity, and establishing the basis for safety requirements and controls. It is the cornerstone of safety engineering lifecycles in regulated industries, informing design decisions from architecture through detailed implementation, and producing artefacts — hazard logs, safety cases, mitigation rationales — that demonstrate regulatory [[Compliance]].
+  - [[Hazard Analysis]] is the disciplined process of identifying conditions, events, or system states that [private] lead to harm, assessing their likelihood and severity, and establishing the basis for safety requirements and controls. It is the cornerstone of safety engineering lifecycles in regulated industries, informing design decisions from architecture through detailed implementation, and producing artefacts — hazard logs, safety cases, mitigation rationales — that demonstrate regulatory [[Compliance]].
 
 - ### Relationships
   - [[Fault Tree Analysis]] and Failure Modes and Effects Analysis (FMEA) are the canonical quantitative and qualitative tools employed within hazard analysis, structured according to [[Risk Assessment Methodology]]s. Results directly specify requirements for [[Fault Tolerance]] mechanisms and feed into [[Fault Tolerance System]] design. The outputs must satisfy [[Technical Standards]] and [[Compliance Framework]]s specific to the application domain (e.g., ISO 26262 for automotive, DO-178C for aerospace), and the overall [[Risk Assessment]] informs resource prioritisation for safety-critical design decisions.
@@ -194,4 +189,3 @@ public: true
   - In safety-critical software, hazard analysis underpins the derivation of software safety integrity levels (SIL or ASIL) that determine the rigour of development processes, testing coverage, and verification methods. Automotive ASIL D systems require exhaustive testing, formal proof, and diverse redundancy, whilst ASIL A permits lighter-weight assurance. Toolchains from MathWorks (Simulink Design Verifier), dSpace, and IBM Rational integrate hazard analysis artefacts with model-based development workflows.
 
   - In 2024–2025, hazard analysis is being extended to AI and machine learning systems, where traditional component-failure models are inadequate because ML behaviour emerges from training data and statistical generalisation rather than deterministic logic. Frameworks such as ISO/PAS 8800 (AI in road vehicles) and AMLAS (Assurance of Machine Learning for Autonomous Systems) adapt classical hazard analysis vocabulary to probabilistic, data-dependent systems. Regulators including the UK CAA and EASA are requiring hazard analyses for autonomous aerial systems, expanding the methodology's reach into previously unregulated domains.
-

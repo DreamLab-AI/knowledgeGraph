@@ -1,46 +1,155 @@
----
-public: true
----
-
-# Continuous Batching
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:continuous-batching", "@type":"Page", "title":"Continuous Batching", "vc:slug":"continuous-batching", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[
-  {"@id":"urn:visionflow:linked:inference-optimisation","vc:label":"Inference Optimisation"},
-  {"@id":"urn:visionflow:linked:large-language-models","vc:label":"Large Language Models"},
-  {"@id":"urn:visionflow:linked:kv-cache","vc:label":"KV Cache"},
-  {"@id":"urn:visionflow:linked:paged-attention","vc:label":"Paged Attention"},
-  {"@id":"urn:visionflow:linked:v-llm","vc:label":"vLLM"},
-  {"@id":"urn:visionflow:linked:autoregressive-decoding","vc:label":"Autoregressive Decoding"},
-  {"@id":"urn:visionflow:linked:model-serving","vc:label":"Model Serving"},
-  {"@id":"urn:visionflow:linked:gpu-compute","vc:label":"GPU Compute"},
-  {"@id":"urn:visionflow:linked:gpu-memory","vc:label":"GPU Memory"},
-  {"@id":"urn:visionflow:linked:throughput","vc:label":"Throughput"},
-  {"@id":"urn:visionflow:linked:latency","vc:label":"Latency"},
-  {"@id":"urn:visionflow:linked:token-generation","vc:label":"Token Generation"},
-  {"@id":"urn:visionflow:linked:request-scheduling","vc:label":"Request Scheduling"},
-  {"@id":"urn:visionflow:linked:transformer-architecture","vc:label":"Transformer Architecture"},
-  {"@id":"urn:visionflow:linked:attention-mechanism","vc:label":"Attention Mechanism"},
-  {"@id":"urn:visionflow:linked:speculative-decoding","vc:label":"Speculative Decoding"},
-  {"@id":"urn:visionflow:linked:tensor-parallelism","vc:label":"Tensor Parallelism"},
-  {"@id":"urn:visionflow:linked:flash-attention","vc:label":"Flash Attention"},
-  {"@id":"urn:visionflow:linked:quantisation","vc:label":"Quantisation"},
-  {"@id":"urn:visionflow:linked:batch-processing","vc:label":"Batch Processing"},
-  {"@id":"urn:visionflow:linked:memory-management","vc:label":"Memory Management"},
-  {"@id":"urn:visionflow:linked:sglang","vc:label":"SGLang"},
-  {"@id":"urn:visionflow:linked:tensorrt-llm","vc:label":"TensorRT-LLM"},
-  {"@id":"urn:visionflow:linked:chunked-prefill","vc:label":"Chunked Prefill"},
-  {"@id":"urn:visionflow:linked:prefill-decode-disaggregation","vc:label":"Prefill-Decode Disaggregation"},
-  {"@id":"urn:visionflow:linked:gpu","vc:label":"GPU"},
-  {"@id":"urn:visionflow:linked:cuda","vc:label":"CUDA"},
-  {"@id":"urn:visionflow:linked:model-optimisation-and-performance","vc:label":"Model Optimisation and Performance"},
-  {"@id":"urn:visionflow:linked:inference","vc:label":"Inference"},
-  {"@id":"urn:visionflow:linked:inference-serving","vc:label":"Inference Serving"},
-  {"@id":"urn:visionflow:linked:triton-inference-server","vc:label":"Triton Inference Server"},
-  {"@id":"urn:visionflow:linked:distributed-systems","vc:label":"Distributed Systems"},
-  {"@id":"urn:visionflow:linked:retrieval-augmented-generation","vc:label":"Retrieval-Augmented Generation"},
-  {"@id":"urn:visionflow:linked:natural-language-processing","vc:label":"Natural Language Processing"},
-  {"@id":"urn:visionflow:linked:pipeline-parallelism","vc:label":"Pipeline Parallelism"}
-] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:continuous-batching",
+  "@type": "Page",
+  "title": "Continuous Batching",
+  "vc:slug": "continuous-batching",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:inference-optimisation",
+      "vc:label": "Inference Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:kv-cache",
+      "vc:label": "KV Cache"
+    },
+    {
+      "@id": "urn:visionflow:linked:paged-attention",
+      "vc:label": "Paged Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:v-llm",
+      "vc:label": "vLLM"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoregressive-decoding",
+      "vc:label": "Autoregressive Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-serving",
+      "vc:label": "Model Serving"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-memory",
+      "vc:label": "GPU Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:throughput",
+      "vc:label": "Throughput"
+    },
+    {
+      "@id": "urn:visionflow:linked:latency",
+      "vc:label": "Latency"
+    },
+    {
+      "@id": "urn:visionflow:linked:token-generation",
+      "vc:label": "Token Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:request-scheduling",
+      "vc:label": "Request Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:speculative-decoding",
+      "vc:label": "Speculative Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-parallelism",
+      "vc:label": "Tensor Parallelism"
+    },
+    {
+      "@id": "urn:visionflow:linked:flash-attention",
+      "vc:label": "Flash Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantisation",
+      "vc:label": "Quantisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-processing",
+      "vc:label": "Batch Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:memory-management",
+      "vc:label": "Memory Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:sglang",
+      "vc:label": "SGLang"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensorrt-llm",
+      "vc:label": "TensorRT-LLM"
+    },
+    {
+      "@id": "urn:visionflow:linked:chunked-prefill",
+      "vc:label": "Chunked Prefill"
+    },
+    {
+      "@id": "urn:visionflow:linked:prefill-decode-disaggregation",
+      "vc:label": "Prefill-Decode Disaggregation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu",
+      "vc:label": "GPU"
+    },
+    {
+      "@id": "urn:visionflow:linked:cuda",
+      "vc:label": "CUDA"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-optimisation-and-performance",
+      "vc:label": "Model Optimisation and Performance"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference",
+      "vc:label": "Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-serving",
+      "vc:label": "Inference Serving"
+    },
+    {
+      "@id": "urn:visionflow:linked:triton-inference-server",
+      "vc:label": "Triton Inference Server"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:pipeline-parallelism",
+      "vc:label": "Pipeline Parallelism"
+    }
+  ]
+}
 ```
 
 ```json-ld
@@ -60,127 +169,189 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:request-scheduling", "label": "Request Scheduling"},
-      {"@id": "urn:ngm:class:kv-cache", "label": "KV Cache"},
-      {"@id": "urn:ngm:class:chunked-prefill", "label": "Chunked Prefill"},
-      {"@id": "urn:ngm:class:slot-management", "label": "Slot Management"}
+      {
+        "@id": "urn:ngm:class:request-scheduling",
+        "label": "Request Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "@id": "urn:ngm:class:chunked-prefill",
+        "label": "Chunked Prefill"
+      },
+      {
+        "@id": "urn:ngm:class:slot-management",
+        "label": "Slot Management"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
-      {"@id": "urn:ngm:class:inference-serving", "label": "Inference Serving"}
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:paged-attention", "label": "Paged Attention"},
-      {"@id": "urn:ngm:class:kv-cache", "label": "KV Cache"},
-      {"@id": "urn:ngm:class:autoregressive-decoding", "label": "Autoregressive Decoding"},
-      {"@id": "urn:ngm:class:memory-management", "label": "Memory Management"},
-      {"@id": "urn:ngm:class:gpu", "label": "GPU"}
+      {
+        "@id": "urn:ngm:class:paged-attention",
+        "label": "Paged Attention"
+      },
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-decoding",
+        "label": "Autoregressive Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:v-llm", "label": "vLLM"},
-      {"@id": "urn:ngm:class:sglang", "label": "SGLang"},
-      {"@id": "urn:ngm:class:tensorrt-llm", "label": "TensorRT-LLM"},
-      {"@id": "urn:ngm:class:token-generation", "label": "Token Generation"}
+      {
+        "@id": "urn:ngm:class:v-llm",
+        "label": "vLLM"
+      },
+      {
+        "@id": "urn:ngm:class:sglang",
+        "label": "SGLang"
+      },
+      {
+        "@id": "urn:ngm:class:tensorrt-llm",
+        "label": "TensorRT-LLM"
+      },
+      {
+        "@id": "urn:ngm:class:token-generation",
+        "label": "Token Generation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:throughput", "label": "Throughput"},
-      {"@id": "urn:ngm:class:gpu-utilisation", "label": "GPU Utilisation"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:multi-tenant-inference", "label": "Multi-Tenant Inference"}
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-utilisation",
+        "label": "GPU Utilisation"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:multi-tenant-inference",
+        "label": "Multi-Tenant Inference"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:gpu-memory", "label": "GPU Memory"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-memory",
+        "label": "GPU Memory"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:paged-attention", "label": "Paged Attention"},
-      {"@id": "urn:ngm:class:autoregressive-decoding", "label": "Autoregressive Decoding"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:paged-attention",
+        "label": "Paged Attention"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-decoding",
+        "label": "Autoregressive Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:static-batching", "label": "Static Batching"},
-      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"},
-      {"@id": "urn:ngm:class:triton-inference-server", "label": "Triton Inference Server"}
+      {
+        "@id": "urn:ngm:class:static-batching",
+        "label": "Static Batching"
+      },
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "@id": "urn:ngm:class:triton-inference-server",
+        "label": "Triton Inference Server"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"},
-      {"@id": "urn:ngm:class:prefill-decode-disaggregation", "label": "Prefill-Decode Disaggregation"},
-      {"@id": "urn:ngm:class:tensor-parallelism", "label": "Tensor Parallelism"},
-      {"@id": "urn:ngm:class:flash-attention", "label": "Flash Attention"},
-      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:prefill-decode-disaggregation",
+        "label": "Prefill-Decode Disaggregation"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "improves": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:model-optimisation-and-performance", "label": "Model Optimisation and Performance"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:in-flight-batching", "label": "In-Flight Batching"},
-    {"@id": "urn:ngm:class:dynamic-batching", "label": "Dynamic Batching"},
-    {"@id": "urn:ngm:class:iteration-level-scheduling", "label": "Iteration-Level Scheduling"}
+    {
+      "@id": "urn:ngm:class:in-flight-batching",
+      "label": "In-Flight Batching"
+    },
+    {
+      "@id": "urn:ngm:class:dynamic-batching",
+      "label": "Dynamic Batching"
+    },
+    {
+      "@id": "urn:ngm:class:iteration-level-scheduling",
+      "label": "Iteration-Level Scheduling"
+    }
   ],
   "quality": 0.91,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:continuous-batching:9e2f4a71bc83",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:continuous-batching"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Inference Optimisation]]", "resolved": "urn:visionflow:linked:inference-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[KV Cache]]", "resolved": "urn:visionflow:linked:kv-cache", "kind": "ResolvedLink"},
-    {"raw": "[[Paged Attention]]", "resolved": "urn:visionflow:linked:paged-attention", "kind": "ResolvedLink"},
-    {"raw": "[[vLLM]]", "resolved": "urn:visionflow:linked:v-llm", "kind": "ResolvedLink"},
-    {"raw": "[[Autoregressive Decoding]]", "resolved": "urn:visionflow:linked:autoregressive-decoding", "kind": "StubLink"},
-    {"raw": "[[Model Serving]]", "resolved": "urn:visionflow:linked:model-serving", "kind": "ResolvedLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "StubLink"},
-    {"raw": "[[GPU Memory]]", "resolved": "urn:visionflow:linked:gpu-memory", "kind": "StubLink"},
-    {"raw": "[[Throughput]]", "resolved": "urn:visionflow:linked:throughput", "kind": "ResolvedLink"},
-    {"raw": "[[Latency]]", "resolved": "urn:visionflow:linked:latency", "kind": "ResolvedLink"},
-    {"raw": "[[Token Generation]]", "resolved": "urn:visionflow:linked:token-generation", "kind": "StubLink"},
-    {"raw": "[[Request Scheduling]]", "resolved": "urn:visionflow:linked:request-scheduling", "kind": "StubLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Speculative Decoding]]", "resolved": "urn:visionflow:linked:speculative-decoding", "kind": "ResolvedLink"},
-    {"raw": "[[Tensor Parallelism]]", "resolved": "urn:visionflow:linked:tensor-parallelism", "kind": "ResolvedLink"},
-    {"raw": "[[Flash Attention]]", "resolved": "urn:visionflow:linked:flash-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Quantisation]]", "resolved": "urn:visionflow:linked:quantisation", "kind": "ResolvedLink"},
-    {"raw": "[[Batch Processing]]", "resolved": "urn:visionflow:linked:batch-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Memory Management]]", "resolved": "urn:visionflow:linked:memory-management", "kind": "ResolvedLink"},
-    {"raw": "[[SGLang]]", "resolved": "urn:visionflow:linked:sglang", "kind": "StubLink"},
-    {"raw": "[[TensorRT-LLM]]", "resolved": "urn:visionflow:linked:tensorrt-llm", "kind": "StubLink"},
-    {"raw": "[[Chunked Prefill]]", "resolved": "urn:visionflow:linked:chunked-prefill", "kind": "StubLink"},
-    {"raw": "[[Prefill-Decode Disaggregation]]", "resolved": "urn:visionflow:linked:prefill-decode-disaggregation", "kind": "StubLink"},
-    {"raw": "[[GPU]]", "resolved": "urn:visionflow:linked:gpu", "kind": "ResolvedLink"},
-    {"raw": "[[CUDA]]", "resolved": "urn:visionflow:linked:cuda", "kind": "ResolvedLink"},
-    {"raw": "[[Model Optimisation and Performance]]", "resolved": "urn:visionflow:linked:model-optimisation-and-performance", "kind": "ResolvedLink"},
-    {"raw": "[[Inference]]", "resolved": "urn:visionflow:linked:inference", "kind": "ResolvedLink"},
-    {"raw": "[[Inference Serving]]", "resolved": "urn:visionflow:linked:inference-serving", "kind": "StubLink"},
-    {"raw": "[[Triton Inference Server]]", "resolved": "urn:visionflow:linked:triton-inference-server", "kind": "StubLink"},
-    {"raw": "[[Distributed Systems]]", "resolved": "urn:visionflow:linked:distributed-systems", "kind": "ResolvedLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Pipeline Parallelism]]", "resolved": "urn:visionflow:linked:pipeline-parallelism", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

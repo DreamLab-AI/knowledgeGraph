@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Model Portfolio
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-model-portfolio",
   "title": "AI Model Portfolio",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI model diversity", "Model portfolio", "Multimodal AI usage"],
+  "vc:outboundWikilinks": [
+    "AI model diversity",
+    "Model portfolio",
+    "Multimodal AI usage"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}, {"@id": "urn:ngm:class:model-capacity", "label": "Model Capacity"}, {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

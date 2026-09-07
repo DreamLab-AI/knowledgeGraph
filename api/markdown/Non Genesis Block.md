@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Non Genesis Block
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,26 +58,62 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:genesis-block", "label": "Genesis Block"},
-      {"@id": "urn:ngm:class:block-height", "label": "Block Height"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      },
+      {
+        "@id": "urn:ngm:class:block-height",
+        "label": "Block Height"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"}
+      {
+        "@id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:genesis-block", "label": "Genesis Block"}
+      {
+        "@id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -93,37 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:non-genesis-block:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:daf28f311a132ddf2bb7e10bcb5445b76d207caf93f4138f7242b6e403870571"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Block]]",
-      "resolved": "urn:visionflow:owl:class:block",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Non Genesis Block is any block in a blockchain with a block height greater than zero. Non-genesis blocks include a previous block hash field that cryptographically links them to their parent, forming the immutable chain structure. They carry blockchain transactions, a Merkle root committing to those transactions, and consensus metadata such as the nonce or validator signature.

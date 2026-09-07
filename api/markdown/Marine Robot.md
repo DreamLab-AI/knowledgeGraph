@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Marine Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,23 +58,56 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:underwater-robot", "label": "Underwater Robot"},
-      {"@id": "urn:ngm:class:remotely-operated-vehicle-rov", "label": "Remotely Operated Vehicle (ROV)"},
-      {"@id": "urn:ngm:class:aerial-robot", "label": "Aerial Robot"},
-      {"@id": "urn:ngm:class:ground-robot", "label": "Ground Robot"},
-      {"@id": "urn:ngm:class:inspection-robot", "label": "Inspection Robot"}
+      {
+        "@id": "urn:ngm:class:underwater-robot",
+        "label": "Underwater Robot"
+      },
+      {
+        "@id": "urn:ngm:class:remotely-operated-vehicle-rov",
+        "label": "Remotely Operated Vehicle (ROV)"
+      },
+      {
+        "@id": "urn:ngm:class:aerial-robot",
+        "label": "Aerial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      },
+      {
+        "@id": "urn:ngm:class:inspection-robot",
+        "label": "Inspection Robot"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:pressure-sensor", "label": "Pressure Sensor"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:pressure-sensor",
+        "label": "Pressure Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
     ]
   },
   "quality": 0.8,
@@ -90,37 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:marine-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c265cc2a873c0a46ea7ce3c138f69fc35e3a32b3b138d1b11c04bfe3007eac3a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Mobile Robot]]",
-      "resolved": "urn:visionflow:owl:class:mobile-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Marine robot is a robot capable of operating on or under water surfaces.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Strict Types
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Strict types is a type system and schema language used by the RGB protocol to define data structures with a fully deterministic memory layout and a content-addressable type identity. Each type has a unique hash derived from its definition, so schemas can be referenced and verified without ambiguity. It provides the typed foundation that strict encoding serialises during client-side validation.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"},
-      {"@id": "urn:ngm:class:strict-encoding", "label": "Strict Encoding"}
+      {
+        "@id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      },
+      {
+        "@id": "urn:ngm:class:strict-encoding",
+        "label": "Strict Encoding"
+      }
     ]
   },
   "quality": 0.72

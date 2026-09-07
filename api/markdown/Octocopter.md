@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Octocopter
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,25 +59,58 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:quadcopter", "label": "Quadcopter"}
+      {
+        "@id": "urn:ngm:class:quadcopter",
+        "label": "Quadcopter"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inspection-robot", "label": "Inspection Robot"},
-      {"@id": "urn:ngm:class:aerial-robot", "label": "Aerial Robot"}
+      {
+        "@id": "urn:ngm:class:inspection-robot",
+        "label": "Inspection Robot"
+      },
+      {
+        "@id": "urn:ngm:class:aerial-robot",
+        "label": "Aerial Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:robotics-platform", "label": "Robotics Platform"},
-      {"@id": "urn:ngm:class:robotics-application", "label": "Robotics Application"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-application",
+        "label": "Robotics Application"
+      }
     ]
   },
   "provenance": {
@@ -92,37 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:octocopter:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1d647f7915d3b82a2b270e9ff6e4b68398c6386109750c1bdf19cf0f36d369fc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Multirotor UAV]]",
-      "resolved": "urn:visionflow:owl:class:multirotor-uav",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   An Octocopter is a multirotor UAV equipped with eight independently controlled rotors, providing substantial redundancy and heavy-lift capability beyond that of quadcopters or hexacopters. This makes it the preferred platform for heavy industrial payloads such as professional cinema cameras, LiDAR scanners, and precision agricultural equipment.

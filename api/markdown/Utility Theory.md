@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Utility Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralised Identifier
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,52 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:decentralised-identifier:1eb4dc144b43",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:479d51b89f122e6b1e23f8dc63d720d38b887829282643b6cf4525fa6c3745be"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Public-Key Cryptography]]",
-      "resolved": "urn:visionflow:linked:public-key-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verifiable Credentials]]",
-      "resolved": "urn:visionflow:linked:verifiable-credentials",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Identity]]",
-      "resolved": "urn:visionflow:linked:decentralised-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:linked:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Identity]]",
-      "resolved": "urn:visionflow:linked:digital-identity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A type of globally unique identifier, defined by a W3C standard, that is controlled by its subject and resolves to a document without depending on a central registry.

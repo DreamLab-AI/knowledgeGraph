@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Chainlink-CCIP
----
-
-# Chainlink CCIP
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -150,4 +143,3 @@ aliases:
   - Chainlink CCIP launched mainnet on Ethereum in 2023, expanding to Avalanche, Polygon, Optimism, Arbitrum, and Base, with subsequent support for BNB Chain, Wemix, and institutional networks. Aave, Synthetix, and major financial institutions have deployed CCIP integrations for cross-chain governance and liquidity management. SWIFT's proof-of-concept connecting traditional banking SWIFT messaging infrastructure to blockchain networks via CCIP, demonstrated with 12 global banks in 2023, validated the protocol's applicability to institutional use cases requiring permissioned access controls alongside decentralised security.
 
   - In 2024–2025, CCIP has been positioned as infrastructure for tokenised real-world assets (RWAs), enabling regulated assets issued on private blockchains to be transferred to public DeFi liquidity venues while maintaining compliance metadata throughout the transfer. The protocol's programmable token standard allows token contracts to enforce transfer restrictions — such as KYC status checks — at the CCIP layer rather than relying solely on issuer smart contracts. Chainlink has published CCIP v1.5 with enhanced programmability, reduced message fees through batching optimisations, and expanded RMN configuration options, while standardisation discussions in the International Token Standardisation Association (ITSA) have referenced CCIP as a candidate interoperability layer for institutional digital asset markets.
-

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Decoder Network
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,48 +8,174 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:autoencoder", "vc:label": "Autoencoder"},
-    {"@id": "urn:visionflow:linked:encoder", "vc:label": "Encoder"},
-    {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:linked:latent-space", "vc:label": "Latent Space"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:visionflow:linked:representation-learning", "vc:label": "Representation Learning"},
-    {"@id": "urn:visionflow:linked:generative-model", "vc:label": "Generative Model"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:u-net", "vc:label": "U-Net"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:recurrent-neural-network", "vc:label": "Recurrent Neural Network"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:sequence-to-sequence-model", "vc:label": "Sequence-to-Sequence Model"},
-    {"@id": "urn:visionflow:linked:cross-attention", "vc:label": "Cross-Attention"},
-    {"@id": "urn:visionflow:linked:upsampling", "vc:label": "Upsampling"},
-    {"@id": "urn:visionflow:linked:transposed-convolution", "vc:label": "Transposed Convolution"},
-    {"@id": "urn:visionflow:linked:skip-connection", "vc:label": "Skip Connection"},
-    {"@id": "urn:visionflow:linked:deep-generative-model", "vc:label": "Deep Generative Model"},
-    {"@id": "urn:visionflow:linked:normalising-flow", "vc:label": "Normalising Flow"},
-    {"@id": "urn:visionflow:linked:autoregressive-model", "vc:label": "Autoregressive Model"},
-    {"@id": "urn:visionflow:linked:image-segmentation", "vc:label": "Image Segmentation"},
-    {"@id": "urn:visionflow:linked:object-detection", "vc:label": "Object Detection"},
-    {"@id": "urn:visionflow:linked:audio-synthesis", "vc:label": "Audio Synthesis"},
-    {"@id": "urn:visionflow:linked:drug-discovery", "vc:label": "Drug Discovery"},
-    {"@id": "urn:visionflow:linked:machine-translation", "vc:label": "Machine Translation"},
-    {"@id": "urn:visionflow:linked:text-generation", "vc:label": "Text Generation"},
-    {"@id": "urn:visionflow:linked:video-generation", "vc:label": "Video Generation"},
-    {"@id": "urn:visionflow:linked:encoder-decoder-architecture", "vc:label": "Encoder-Decoder Architecture"},
-    {"@id": "urn:visionflow:linked:pixel-shuffle", "vc:label": "Pixel Shuffle"},
-    {"@id": "urn:visionflow:linked:kv-cache", "vc:label": "KV-Cache"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:autoencoder",
+      "vc:label": "Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:encoder",
+      "vc:label": "Encoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-space",
+      "vc:label": "Latent Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:u-net",
+      "vc:label": "U-Net"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequence-to-sequence-model",
+      "vc:label": "Sequence-to-Sequence Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-attention",
+      "vc:label": "Cross-Attention"
+    },
+    {
+      "@id": "urn:visionflow:linked:upsampling",
+      "vc:label": "Upsampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:transposed-convolution",
+      "vc:label": "Transposed Convolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:skip-connection",
+      "vc:label": "Skip Connection"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-generative-model",
+      "vc:label": "Deep Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:normalising-flow",
+      "vc:label": "Normalising Flow"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoregressive-model",
+      "vc:label": "Autoregressive Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-segmentation",
+      "vc:label": "Image Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:object-detection",
+      "vc:label": "Object Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-synthesis",
+      "vc:label": "Audio Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-translation",
+      "vc:label": "Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-generation",
+      "vc:label": "Text Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-generation",
+      "vc:label": "Video Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:encoder-decoder-architecture",
+      "vc:label": "Encoder-Decoder Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:pixel-shuffle",
+      "vc:label": "Pixel Shuffle"
+    },
+    {
+      "@id": "urn:visionflow:linked:kv-cache",
+      "vc:label": "KV-Cache"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ]
 }
 ```
@@ -69,7 +189,7 @@ public: true
   "definition": "A decoder network is the component of an encoder-decoder architecture that maps a compact latent representation back to a target output such as a reconstructed input, an image or a sequence of tokens. It learns to invert the compression performed by the encoder, reconstructing high-dimensional structure from low-dimensional codes. Decoders are central to autoencoders, variational autoencoders, sequence-to-sequence models and generative systems.",
   "domain": "machine-learning",
   "maturity": "established",
-  "quality": 0.90,
+  "quality": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:neural-network",
@@ -82,62 +202,179 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:upsampling", "label": "Upsampling"},
-      {"@id": "urn:ngm:class:transposed-convolution", "label": "Transposed Convolution"},
-      {"@id": "urn:ngm:class:skip-connection", "label": "Skip Connection"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+      {
+        "@id": "urn:ngm:class:upsampling",
+        "label": "Upsampling"
+      },
+      {
+        "@id": "urn:ngm:class:transposed-convolution",
+        "label": "Transposed Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:skip-connection",
+        "label": "Skip Connection"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"},
-      {"@id": "urn:ngm:class:sequence-to-sequence-model", "label": "Sequence-to-Sequence Model"}
+      {
+        "@id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:sequence-to-sequence-model",
+        "label": "Sequence-to-Sequence Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross-Attention"},
-      {"@id": "urn:ngm:class:pixel-shuffle", "label": "Pixel Shuffle"},
-      {"@id": "urn:ngm:class:kv-cache", "label": "KV-Cache"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross-Attention"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-shuffle",
+        "label": "Pixel Shuffle"
+      },
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV-Cache"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"},
-      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:audio-synthesis", "label": "Audio Synthesis"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"}
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"}
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:u-net", "label": "U-Net"},
-      {"@id": "urn:ngm:class:normalising-flow", "label": "Normalising Flow"},
-      {"@id": "urn:ngm:class:autoregressive-model", "label": "Autoregressive Model"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "@id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:generator-network", "label": "Generator Network (in generative context)"},
-    {"@id": "urn:ngm:class:decoding-network", "label": "Decoding Network"}
+    {
+      "@id": "urn:ngm:class:generator-network",
+      "label": "Generator Network (in generative context)"
+    },
+    {
+      "@id": "urn:ngm:class:decoding-network",
+      "label": "Decoding Network"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",

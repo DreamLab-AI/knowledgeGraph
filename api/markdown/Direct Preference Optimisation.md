@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Direct Preference Optimization
----
-
-# Direct Preference Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -273,42 +266,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:direct-preference-optimisation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3129a30b586e1ba4449dea8d24a54eededc98ef19910dbc50d38e068a8570f35"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Direct Preference Optimisation]]",
-      "resolved": "urn:visionflow:owl:class:direct-preference-optimization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler alternative to RLHF. DPO optimizes the policy directly on preference comparisons through a reparameterisation of the reward model objective.
@@ -864,7 +821,7 @@ aliases:
 
 	  **Alibaba Qwen 2.5 (September 2024)**: Qwen 2.5 7B/72B Instruct uses DPO instruction tuning. Qwen 2.5-Coder uses code-specific DPO with execution feedback.
 
-	  **HuggingFace Zephyr 7B (Tunstall et al. 2023)**: The canonical first demonstration that DPO on UltraFeedback data could produce strong open-weights chat models, sparking the rapid uptake of DPO in late 2023.
+	  **HuggingFace Zephyr 7B (Tunstall et al. 2023)**: The canonical first demonstration that DPO on UltraFeedback data [private] produce strong open-weights chat models, sparking the rapid uptake of DPO in late 2023.
 
 	  **Databricks DBRX (March 2024)**: 132B MoE instruction tuning via DPO.
 

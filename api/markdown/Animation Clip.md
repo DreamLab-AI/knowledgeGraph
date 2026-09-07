@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Animation Clip
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

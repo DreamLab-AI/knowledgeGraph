@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Hard Fork
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -26,10 +20,18 @@ public: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cryptocurrency-mining", "label": "Cryptocurrency Mining"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency-mining",
+        "label": "Cryptocurrency Mining"
+      }
+    ]
   },
   "quality": 0.7
 }

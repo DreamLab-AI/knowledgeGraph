@@ -1,59 +1,114 @@
----
-public: true
----
-
-# Kl Divergence
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:kl-divergence", "@type":"Page", "title":"Kl Divergence", "vc:slug":"kl-divergence", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:kl-divergence",
+  "@type": "Page",
+  "title": "Kl Divergence",
+  "vc:slug": "kl-divergence",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:kl-divergence",
-  "@type":"Class",
-  "label":"Kl Divergence",
-  "definition":"Kullback-Leibler (KL) divergence is a measure from information theory that quantifies how one probability distribution differs from a second reference distribution, expressed as the expected excess surprise from using the wrong distribution. It is non-negative and zero only when the two distributions coincide, but it is asymmetric and does not satisfy the triangle inequality, so it is not a true metric. KL divergence is central to maximum-likelihood estimation, variational inference and many machine-learning objectives, where minimising it aligns a model distribution with a target. In reinforcement learning from human feedback it acts as a regulariser that keeps a fine-tuned policy close to its reference.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:information-theory","label":"Information Theory"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"},
-      {"@id":"urn:ngm:class:entropy","label":"Entropy"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:kl-divergence",
+  "@type": "Class",
+  "label": "Kl Divergence",
+  "definition": "Kullback-Leibler (KL) divergence is a measure from information theory that quantifies how one probability distribution differs from a second reference distribution, expressed as the expected excess surprise from using the wrong distribution. It is non-negative and zero only when the two distributions coincide, but it is asymmetric and does not satisfy the triangle inequality, so it is not a true metric. KL divergence is central to maximum-likelihood estimation, variational inference and many machine-learning objectives, where minimising it aligns a model distribution with a target. In reinforcement learning from human feedback it acts as a regulariser that keeps a fine-tuned policy close to its reference.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:information-theory",
+      "label": "Information Theory"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:variational-inference","label":"Variational Inference"},
-      {"@id":"urn:ngm:class:direct-preference-optimisation","label":"Direct Preference Optimisation"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:loss-function","label":"Loss Function"},
-      {"@id":"urn:ngm:class:reinforcement-learning-from-human-feedback","label":"Reinforcement Learning from Human Feedback"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:loss-function","label":"Loss Function"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:information-theory","label":"Information Theory"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:bayesian-inference","label":"Bayesian Inference"},
-      {"@id":"urn:ngm:class:generative-model","label":"Generative Model"},
-      {"@id":"urn:ngm:class:entropy","label":"Entropy"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:entropy","label":"Entropy"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:variational-inference","label":"Variational Inference"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

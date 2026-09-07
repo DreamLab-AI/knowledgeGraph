@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proximal Policy Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,36 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
-      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"}
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:reinforcement-learning-algorithm", "label": "Reinforcement Learning Algorithm"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-algorithm",
+        "label": "Reinforcement Learning Algorithm"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:proximal-policy-optimisation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:21bdcf55cffcb5b4a81c4f1f28f44d290347b71a0924fabeaea9dac29dcefc27"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A reinforcement learning algorithm that updates policies through incremental steps whilst constraining how much the policy can change via a clipped surrogate objective, preventing destabilising updates. PPO is the dominant RL algorithm used in reinforcement learning from human feedback (RLHF) for fine-tuning language models to align with human preferences.

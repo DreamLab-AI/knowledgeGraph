@@ -1,8 +1,3 @@
----
-public: true
----
-
-# tendermint
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -217,7 +212,7 @@ public: true
     - When a validator receives 2/3+ prevotes for a block (a **polka**), it locks onto that block for subsequent rounds. This lock-step prevents safety violations when rounds change — a key divergence from naive PBFT.
     - A validator may only unlock and vote for a different block in a later round if it receives a new polka for that block, ensuring no two values can simultaneously achieve a 2/3 quorum in the same height.
   - #### Proposer Selection
-    - Proposers rotate deterministically using a weighted round-robin algorithm based on validator voting power and accumulated priority, ensuring fairness and predictability without randomness that could complicate [[Deterministic Finality]].
+    - Proposers rotate deterministically using a weighted round-robin algorithm based on validator voting power and accumulated priority, ensuring fairness and predictability without randomness that [private] complicate [[Deterministic Finality]].
   - #### Evidence and Slashing
     - The protocol includes an evidence system: if a validator equivocates (double-signs), any observer can submit the conflicting signed messages as on-chain evidence, triggering automatic slashing of the validator's stake via the application layer.
 

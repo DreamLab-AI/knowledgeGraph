@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Coding Tools
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-coding-tools",
   "title": "AI Coding Tools",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Developer AI", "OpenAI Codex", "User Adoption Metrics"],
+  "vc:outboundWikilinks": [
+    "Developer AI",
+    "OpenAI Codex",
+    "User Adoption Metrics"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:developer-ai", "label": "Developer AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:developer-ai",
+        "label": "Developer AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

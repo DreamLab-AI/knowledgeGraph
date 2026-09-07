@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Aggregation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,41 +195,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-aggregation:448cc0b95519",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7a78d51125f97254dbdfe424929046037528d3a91acb8385f43ab81b096b89e4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Integration]]",
-      "resolved": "urn:visionflow:linked:data-integration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Community Detection]]",
-      "resolved": "urn:visionflow:linked:community-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Data aggregation is the systematic process of collecting, combining, and summarising records from multiple heterogeneous sources into a unified, reduced representation. It encompasses [[ETL]] (Extract, Transform, Load) workflows, [[Stream Processing]] for real-time pipelines, and [[Batch Processing]] for scheduled consolidation runs. Aggregation is a foundational operation in [[Data Integration]], sitting upstream of analytical systems such as [[Data Warehouse]], [[Business Intelligence]] dashboards, and [[Machine Learning]] feature pipelines. It deliberately reduces data volume while preserving statistically significant structure, distinguishing it from simple [[Data Replication]].
 
@@ -324,7 +284,7 @@ public: true
   - 2. Kai Waehner (2025). The Data Streaming Landscape 2026. https://www.kai-waehner.de/blog/2025/12/05/the-data-streaming-landscape-2026/
   - 3. European Commission (2025). Data Act explained — Shaping Europe's digital future. https://digital-strategy.ec.europa.eu/en/factpages/data-act-explained
   - 4. White & Case LLP (2025). EU Digital Omnibus: What changes lie ahead for the Data Act, GDPR and AI Act. https://www.whitecase.com/insight-alert/eu-digital-omnibus-what-changes-lie-ahead-data-act-gdpr-and-ai-act
-  - 5. JCEIM (2026). Federated Learning Approaches for Privacy-Preserving Big Data Analytics. https://jceim.org/index.php/ojs/article/view/152
+  - 5. JCEIM (2026). Federated Learning Approaches for Privacy-Preserving Big Data Analytics. https://jceim.org/[private].php/ojs/article/view/152
 
 - ### Provenance
   - sources:: SQL:2003 standard; W3C SPARQL 1.1 specification; Apache Spark documentation; GDPR Article 89; BCBS 239

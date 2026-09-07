@@ -1,8 +1,3 @@
----
-public: true
----
-
-# XR Runtime Environment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,37 +176,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:xr-runtime-environment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5fb2d21bb62ca44c1a5d8d150a51721c6fc2cd74358f8bc37477fe774527487a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Runtime Environment]]",
-      "resolved": "urn:visionflow:owl:class:runtime-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The software infrastructure layer that manages extended reality hardware and provides standardized APIs for XR applications, handling device abstraction, tracking systems, rendering pipelines, input processing, and compositor services to enable cross-platform XR development.

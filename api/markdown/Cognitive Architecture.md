@@ -8,61 +8,226 @@
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:working-memory", "vc:label": "Working Memory"},
-    {"@id": "urn:visionflow:linked:long-term-memory", "vc:label": "Long-Term Memory"},
-    {"@id": "urn:visionflow:linked:declarative-memory", "vc:label": "Declarative Memory"},
-    {"@id": "urn:visionflow:linked:procedural-memory", "vc:label": "Procedural Memory"},
-    {"@id": "urn:visionflow:linked:reasoning", "vc:label": "Reasoning"},
-    {"@id": "urn:visionflow:linked:planning-and-scheduling", "vc:label": "Planning and Scheduling"},
-    {"@id": "urn:visionflow:linked:perception", "vc:label": "Perception"},
-    {"@id": "urn:visionflow:linked:action-selection", "vc:label": "Action Selection"},
-    {"@id": "urn:visionflow:linked:symbolic-reasoning", "vc:label": "Symbolic Reasoning"},
-    {"@id": "urn:visionflow:linked:autonomous-agents", "vc:label": "Autonomous Agents"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:ontology", "vc:label": "Ontology"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:production-rules", "vc:label": "Production Rules"},
-    {"@id": "urn:visionflow:linked:neural-networks", "vc:label": "Neural Networks"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:cognitive-science", "vc:label": "Cognitive Science"},
-    {"@id": "urn:visionflow:linked:cognitive-psychology", "vc:label": "Cognitive Psychology"},
-    {"@id": "urn:visionflow:linked:computational-neuroscience", "vc:label": "Computational Neuroscience"},
-    {"@id": "urn:visionflow:linked:general-intelligence", "vc:label": "General Intelligence"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:brain-computer-interface", "vc:label": "Brain-Computer Interface"},
-    {"@id": "urn:visionflow:linked:human-computer-interaction", "vc:label": "Human-Computer Interaction"},
-    {"@id": "urn:visionflow:linked:neuro-symbolic-ai", "vc:label": "Neuro-Symbolic AI"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:global-workspace-theory", "vc:label": "Global Workspace Theory"},
-    {"@id": "urn:visionflow:linked:intelligent-tutoring-systems", "vc:label": "Intelligent Tutoring Systems"},
-    {"@id": "urn:visionflow:linked:agent-loop", "vc:label": "Agent Loop"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain of Thought"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:decision-making", "vc:label": "Decision Making"},
-    {"@id": "urn:visionflow:linked:narrow-ai", "vc:label": "Narrow AI"},
-    {"@id": "urn:visionflow:linked:task-specific-model", "vc:label": "Task-Specific Model"},
-    {"@id": "urn:visionflow:linked:probabilistic-graphical-models", "vc:label": "Probabilistic Graphical Models"},
-    {"@id": "urn:visionflow:linked:meta-cognition", "vc:label": "Meta-Cognition"},
-    {"@id": "urn:visionflow:linked:goal-directed-behaviour", "vc:label": "Goal-Directed Behaviour"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:cognitive-modelling", "vc:label": "Cognitive Modelling"},
-    {"@id": "urn:visionflow:linked:intelligent-agent", "vc:label": "Intelligent Agent"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:react-pattern", "vc:label": "ReAct Pattern"},
-    {"@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:expert-systems", "vc:label": "Expert Systems"}
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:working-memory",
+      "vc:label": "Working Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:long-term-memory",
+      "vc:label": "Long-Term Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:declarative-memory",
+      "vc:label": "Declarative Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:procedural-memory",
+      "vc:label": "Procedural Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-and-scheduling",
+      "vc:label": "Planning and Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:perception",
+      "vc:label": "Perception"
+    },
+    {
+      "@id": "urn:visionflow:linked:action-selection",
+      "vc:label": "Action Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-reasoning",
+      "vc:label": "Symbolic Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agents",
+      "vc:label": "Autonomous Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:production-rules",
+      "vc:label": "Production Rules"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-science",
+      "vc:label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-psychology",
+      "vc:label": "Cognitive Psychology"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-neuroscience",
+      "vc:label": "Computational Neuroscience"
+    },
+    {
+      "@id": "urn:visionflow:linked:general-intelligence",
+      "vc:label": "General Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:brain-computer-interface",
+      "vc:label": "Brain-Computer Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:neuro-symbolic-ai",
+      "vc:label": "Neuro-Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:global-workspace-theory",
+      "vc:label": "Global Workspace Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-tutoring-systems",
+      "vc:label": "Intelligent Tutoring Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-loop",
+      "vc:label": "Agent Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-making",
+      "vc:label": "Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:narrow-ai",
+      "vc:label": "Narrow AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-specific-model",
+      "vc:label": "Task-Specific Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-graphical-models",
+      "vc:label": "Probabilistic Graphical Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-cognition",
+      "vc:label": "Meta-Cognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-directed-behaviour",
+      "vc:label": "Goal-Directed Behaviour"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-modelling",
+      "vc:label": "Cognitive Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-agent",
+      "vc:label": "Intelligent Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:react-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:expert-systems",
+      "vc:label": "Expert Systems"
+    }
   ]
 }
 ```
@@ -269,71 +434,6 @@
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:link-resolution:cognitive-architecture",
-  "@type": "LinkResolutionsAnnotation",
-  "resolutions": [
-    {"vc:raw": "Artificial Intelligence", "@id": "urn:visionflow:linked:artificial-intelligence", "kind": "ResolvedLink"},
-    {"vc:raw": "Agentic AI", "@id": "urn:visionflow:linked:agentic-ai", "kind": "ResolvedLink"},
-    {"vc:raw": "Working Memory", "@id": "urn:visionflow:linked:working-memory", "kind": "StubLink"},
-    {"vc:raw": "Long-Term Memory", "@id": "urn:visionflow:linked:long-term-memory", "kind": "StubLink"},
-    {"vc:raw": "Declarative Memory", "@id": "urn:visionflow:linked:declarative-memory", "kind": "StubLink"},
-    {"vc:raw": "Procedural Memory", "@id": "urn:visionflow:linked:procedural-memory", "kind": "StubLink"},
-    {"vc:raw": "Reasoning", "@id": "urn:visionflow:linked:reasoning", "kind": "StubLink"},
-    {"vc:raw": "Planning and Scheduling", "@id": "urn:visionflow:linked:planning-and-scheduling", "kind": "StubLink"},
-    {"vc:raw": "Perception", "@id": "urn:visionflow:linked:perception", "kind": "StubLink"},
-    {"vc:raw": "Action Selection", "@id": "urn:visionflow:linked:action-selection", "kind": "StubLink"},
-    {"vc:raw": "Symbolic Reasoning", "@id": "urn:visionflow:linked:symbolic-reasoning", "kind": "StubLink"},
-    {"vc:raw": "Autonomous Agents", "@id": "urn:visionflow:linked:autonomous-agents", "kind": "StubLink"},
-    {"vc:raw": "Knowledge Representation", "@id": "urn:visionflow:linked:knowledge-representation", "kind": "ResolvedLink"},
-    {"vc:raw": "Ontology", "@id": "urn:visionflow:linked:ontology", "kind": "StubLink"},
-    {"vc:raw": "Machine Learning", "@id": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"vc:raw": "Production Rules", "@id": "urn:visionflow:linked:production-rules", "kind": "StubLink"},
-    {"vc:raw": "Neural Networks", "@id": "urn:visionflow:linked:neural-networks", "kind": "ResolvedLink"},
-    {"vc:raw": "Bayesian Inference", "@id": "urn:visionflow:linked:bayesian-inference", "kind": "StubLink"},
-    {"vc:raw": "Reinforcement Learning", "@id": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"vc:raw": "Large Language Models", "@id": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"vc:raw": "Cognitive Science", "@id": "urn:visionflow:linked:cognitive-science", "kind": "StubLink"},
-    {"vc:raw": "Cognitive Psychology", "@id": "urn:visionflow:linked:cognitive-psychology", "kind": "ResolvedLink"},
-    {"vc:raw": "Computational Neuroscience", "@id": "urn:visionflow:linked:computational-neuroscience", "kind": "StubLink"},
-    {"vc:raw": "General Intelligence", "@id": "urn:visionflow:linked:general-intelligence", "kind": "StubLink"},
-    {"vc:raw": "Robotics", "@id": "urn:visionflow:linked:robotics", "kind": "StubLink"},
-    {"vc:raw": "Brain-Computer Interface", "@id": "urn:visionflow:linked:brain-computer-interface", "kind": "StubLink"},
-    {"vc:raw": "Human-Computer Interaction", "@id": "urn:visionflow:linked:human-computer-interaction", "kind": "StubLink"},
-    {"vc:raw": "Neuro-Symbolic AI", "@id": "urn:visionflow:linked:neuro-symbolic-ai", "kind": "StubLink"},
-    {"vc:raw": "Deep Learning", "@id": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"vc:raw": "Global Workspace Theory", "@id": "urn:visionflow:linked:global-workspace-theory", "kind": "StubLink"},
-    {"vc:raw": "Intelligent Tutoring Systems", "@id": "urn:visionflow:linked:intelligent-tutoring-systems", "kind": "StubLink"},
-    {"vc:raw": "Agent Loop", "@id": "urn:visionflow:linked:agent-loop", "kind": "StubLink"},
-    {"vc:raw": "Chain of Thought", "@id": "urn:visionflow:linked:chain-of-thought", "kind": "ResolvedLink"},
-    {"vc:raw": "Retrieval-Augmented Generation", "@id": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"vc:raw": "Decision Making", "@id": "urn:visionflow:linked:decision-making", "kind": "ResolvedLink"},
-    {"vc:raw": "Narrow AI", "@id": "urn:visionflow:linked:narrow-ai", "kind": "StubLink"},
-    {"vc:raw": "Task-Specific Model", "@id": "urn:visionflow:linked:task-specific-model", "kind": "StubLink"},
-    {"vc:raw": "Probabilistic Graphical Models", "@id": "urn:visionflow:linked:probabilistic-graphical-models", "kind": "StubLink"},
-    {"vc:raw": "Meta-Cognition", "@id": "urn:visionflow:linked:meta-cognition", "kind": "StubLink"},
-    {"vc:raw": "Goal-Directed Behaviour", "@id": "urn:visionflow:linked:goal-directed-behaviour", "kind": "StubLink"},
-    {"vc:raw": "Natural Language Processing", "@id": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"vc:raw": "Explainable AI", "@id": "urn:visionflow:linked:explainable-ai", "kind": "ResolvedLink"},
-    {"vc:raw": "Foundation Models", "@id": "urn:visionflow:linked:foundation-models", "kind": "ResolvedLink"},
-    {"vc:raw": "Multi-Agent Systems", "@id": "urn:visionflow:linked:multi-agent-systems", "kind": "StubLink"},
-    {"vc:raw": "Attention Mechanism", "@id": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
-    {"vc:raw": "Transformer Architecture", "@id": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"vc:raw": "Autonomous Agent", "@id": "urn:visionflow:linked:autonomous-agent", "kind": "StubLink"},
-    {"vc:raw": "Cognitive Modelling", "@id": "urn:visionflow:linked:cognitive-modelling", "kind": "StubLink"},
-    {"vc:raw": "Intelligent Agent", "@id": "urn:visionflow:linked:intelligent-agent", "kind": "StubLink"},
-    {"vc:raw": "AI Safety", "@id": "urn:visionflow:linked:ai-safety", "kind": "ResolvedLink"},
-    {"vc:raw": "AI Alignment", "@id": "urn:visionflow:linked:ai-alignment", "kind": "ResolvedLink"},
-    {"vc:raw": "ReAct Pattern", "@id": "urn:visionflow:linked:react-pattern", "kind": "StubLink"},
-    {"vc:raw": "Agent Memory", "@id": "urn:visionflow:linked:agent-memory", "kind": "ResolvedLink"},
-    {"vc:raw": "Knowledge Graph", "@id": "urn:visionflow:linked:knowledge-graph", "kind": "ResolvedLink"},
-    {"vc:raw": "Expert Systems", "@id": "urn:visionflow:linked:expert-systems", "kind": "StubLink"}
-  ]
-}
-```
-
 - ### Definition
   - A **Cognitive Architecture** is a formal specification of the fixed computational structures, memory systems, and control mechanisms that together constitute a general-purpose [[Intelligent Agent]], independent of any particular task or domain. It defines how [[Perception]], attention allocation, [[Working Memory]], [[Long-Term Memory]], [[Reasoning]], learning, and [[Action Selection]] are integrated into a unified, repeating processing cycle, providing both an empirical theory of [[Cognitive Psychology]] and an engineering blueprint for [[Artificial Intelligence]] systems. Cognitive architectures prescribe a fixed set of structural components — memory stores, processing modules, and a control strategy — while knowledge content (declarative facts and procedural skills) varies across tasks, enabling the same architecture to generalise across domains without task-specific reprogramming. Canonical architectures include [[ACT-R]] (Adaptive Control of Thought–Rational, John Anderson, Carnegie Mellon University), [[SOAR]] (State, Operator, And Result, Allen Newell, John Laird), and [[LIDA]] (Learning Intelligent Distribution Agent, Stan Franklin), each of which instantiates a different account of the cognitive cycle and provides a different computational model of human memory, learning, and [[Decision Making]]. Contemporary extensions bridge classical architectures with [[Neural Networks]] and [[Large Language Models]] through hybrid frameworks such as CoALA (Cognitive Architectures for Language Agents, Sumers et al. 2024), which organises LLM-based agents along the classical cognitive dimensions of memory type (working vs long-term), action space (internal vs external), and decision-making loop — directly inheriting the theoretical vocabulary of ACT-R and SOAR. Cognitive architectures are the intersection of [[Cognitive Science]], [[Computational Neuroscience]], and [[Agentic AI]], serving simultaneously as psychological theories falsifiable against human experimental data and as principled design frameworks for [[Autonomous Agents]] operating in complex, uncertain environments.
 
@@ -498,7 +598,7 @@
     Military simulation platforms (OneSAF, JSAF, VBS3) use cognitive architectures to generate realistic synthetic human behaviour in large-scale training scenarios. The key requirement is behavioural plausibility under resource and time stress — exactly the regime where cognitive architectures outperform both rule-based scripting (too rigid) and unconstrained neural generation (too unpredictable for safety-critical simulation).
 
   ## Academic Context
-    The intellectual lineage of cognitive architectures runs from the 1956 Dartmouth Summer Research Project — where Allen Newell and Herbert Simon demonstrated that digital computers could exhibit reasoning behaviour analogous to human problem-solving — through the development of the General Problem Solver (Newell and Simon 1957), the creation of production system languages (Newell 1973), and the publication of Newell's *Unified Theories of Cognition* (1990), which set the formal agenda that ACT-R and SOAR subsequently pursued. Anderson's ACT* (1983) introduced subsymbolic activation parameters that made the architecture's predictions quantitatively precise and neurologically grounded; ACT-R (1993) and subsequent versions up to ACT-R 7.0 (2014) refined these parameters against increasingly large bodies of experimental data, including fMRI localisation studies that matched each ACT-R module to a specific brain region (prefrontal cortex for the procedural system, hippocampus and basal ganglia for declarative retrieval, etc.).
+    The intellectual lineage of cognitive architectures runs from the 1956 Dartmouth Summer Research Project — where Allen Newell and Herbert Simon demonstrated that digital computers [private] exhibit reasoning behaviour analogous to human problem-solving — through the development of the General Problem Solver (Newell and Simon 1957), the creation of production system languages (Newell 1973), and the publication of Newell's *Unified Theories of Cognition* (1990), which set the formal agenda that ACT-R and SOAR subsequently pursued. Anderson's ACT* (1983) introduced subsymbolic activation parameters that made the architecture's predictions quantitatively precise and neurologically grounded; ACT-R (1993) and subsequent versions up to ACT-R 7.0 (2014) refined these parameters against increasingly large bodies of experimental data, including fMRI localisation studies that matched each ACT-R module to a specific brain region (prefrontal cortex for the procedural system, hippocampus and basal ganglia for declarative retrieval, etc.).
 
     The [[Global Workspace Theory]] (Baars 1988), developed in parallel in cognitive neuroscience, posited that consciousness and high-level cognitive integration arise from a centralized workspace that broadcasts selected information to a diverse coalition of specialised, unconscious processors — a formulation that maps directly onto LIDA's attention-codelets-broadcast mechanism and anticipates the [[Attention Mechanism]] of [[Transformer Architecture]]-based systems. The GWT-AI connection has been revived by recent work: a 2024 embodied GWT agent demonstrated improved audiovisual navigation through workspace-mediated attention, and a 2025 real-time GWT framework proposed selection-broadcast cycles for dynamic environment management, suggesting GWT may provide useful architectural constraints for next-generation agentic systems.
 

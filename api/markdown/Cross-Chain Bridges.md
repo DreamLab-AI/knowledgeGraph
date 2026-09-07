@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Chain Bridges
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cross-chain-bridges:23c4a6548a83",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5bbce0385b9531f35bf6cf9d7dd6ec203839b357fa0e2b09341bb6999098c8cb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross Chain Asset Transfer]]",
-      "resolved": "urn:visionflow:linked:cross-chain-asset-transfer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Bridge]]",
-      "resolved": "urn:visionflow:linked:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bridge]]",
-      "resolved": "urn:visionflow:linked:bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Interoperability]]",
-      "resolved": "urn:visionflow:linked:blockchain-interoperability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The category of protocols that move assets and data between distinct blockchains, treated collectively as connective infrastructure between ledgers.

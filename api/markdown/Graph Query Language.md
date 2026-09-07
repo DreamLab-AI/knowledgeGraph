@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Graph Query Language
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:graph-query-language", "@type":"Page", "title":"Graph Query Language", "vc:slug":"graph-query-language", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:graph-query-language",
+  "@type": "Page",
+  "title": "Graph Query Language",
+  "vc:slug": "graph-query-language",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

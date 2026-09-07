@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Servo Drive
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A servo drive is the power-electronic controller that regulates the current, velocity, and position of a servomotor by closing feedback loops on encoder or resolver signals. It converts commanded setpoints from a motion controller into precisely modulated motor currents, enabling high-bandwidth, high-accuracy actuation. It is a core component of industrial robot joints and CNC motion systems.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:motion-control", "label": "Motion Control"}, {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ]
   },
   "quality": 0.72
 }

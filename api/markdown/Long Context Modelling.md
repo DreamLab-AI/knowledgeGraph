@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Long Context Modelling
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:long-context-modelling", "@type":"Page", "title":"Long Context Modelling", "vc:slug":"long-context-modelling", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:long-context-modelling",
+  "@type": "Page",
+  "title": "Long Context Modelling",
+  "vc:slug": "long-context-modelling",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

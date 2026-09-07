@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Loyalty Programs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,16 +50,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:loyalty-token", "label": "Loyalty Token"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:loyalty-token",
+        "label": "Loyalty Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce"},
-      {"@id": "urn:ngm:class:digital-marketing", "label": "Digital Marketing"}
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:token", "label": "Token"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      }
     ]
   },
   "quality": 0.35,
@@ -75,32 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:loyalty-programs:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cc36db0e816f82bec004934b93bce7a26c349c4dac24686db86c83b5d38de34b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Loyalty Programs are structured incentive mechanisms that reward repeat customer engagement through points, tiers, or token-based systems. In spatial computing and metaverse contexts, loyalty programmes are increasingly tokenised on blockchain networks using loyalty tokens or NFTs, enabling cross-brand redemption, secondary-market trading, and programmable reward logic embedded in smart contracts.

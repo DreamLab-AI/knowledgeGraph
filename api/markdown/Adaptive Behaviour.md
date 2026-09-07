@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adaptive Behaviour
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,65 +7,235 @@ public: true
   "title": "Adaptive Behaviour",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent", "vc:label": "Agent"},
-    {"@id": "urn:visionflow:linked:deep-reinforcement-learning", "vc:label": "Deep Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:policy-optimisation", "vc:label": "Policy Optimisation"},
-    {"@id": "urn:visionflow:linked:adaptive-control", "vc:label": "Adaptive Control"},
-    {"@id": "urn:visionflow:linked:embodied-ai", "vc:label": "Embodied AI"},
-    {"@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems"},
-    {"@id": "urn:visionflow:linked:agent-based-models", "vc:label": "Agent-Based Models"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:reward-signal", "vc:label": "Reward Signal"},
-    {"@id": "urn:visionflow:linked:markov-decision-process", "vc:label": "Markov Decision Process"},
-    {"@id": "urn:visionflow:linked:policy-gradient-methods", "vc:label": "Policy Gradient Methods"},
-    {"@id": "urn:visionflow:linked:q-learning", "vc:label": "Q-Learning"},
-    {"@id": "urn:visionflow:linked:temporal-difference-learning", "vc:label": "Temporal Difference Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:sim-to-real-transfer", "vc:label": "Sim-to-Real Transfer"},
-    {"@id": "urn:visionflow:linked:autonomous-navigation", "vc:label": "Autonomous Navigation"},
-    {"@id": "urn:visionflow:linked:robotic-manipulation", "vc:label": "Robotic Manipulation"},
-    {"@id": "urn:visionflow:linked:meta-learning", "vc:label": "Meta-Learning"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:continual-learning", "vc:label": "Continual Learning"},
-    {"@id": "urn:visionflow:linked:hierarchical-reinforcement-learning", "vc:label": "Hierarchical Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:world-model", "vc:label": "World Model"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:linked:autonomous-vehicle", "vc:label": "Autonomous Vehicle"},
-    {"@id": "urn:visionflow:linked:game-ai", "vc:label": "Game AI"},
-    {"@id": "urn:visionflow:linked:swarm-intelligence", "vc:label": "Swarm Intelligence"},
-    {"@id": "urn:visionflow:linked:self-organising-systems", "vc:label": "Self-Organising Systems"},
-    {"@id": "urn:visionflow:linked:cybernetics", "vc:label": "Cybernetics"},
-    {"@id": "urn:visionflow:linked:control-theory", "vc:label": "Control Theory"},
-    {"@id": "urn:visionflow:linked:feedback-loop", "vc:label": "Feedback Loop"},
-    {"@id": "urn:visionflow:linked:cognitive-science", "vc:label": "Cognitive Science"},
-    {"@id": "urn:visionflow:linked:simulation-environment", "vc:label": "Simulation Environment"},
-    {"@id": "urn:visionflow:linked:experience-replay", "vc:label": "Experience Replay"},
-    {"@id": "urn:visionflow:linked:exploration-exploitation-tradeoff", "vc:label": "Exploration-Exploitation Tradeoff"},
-    {"@id": "urn:visionflow:linked:safe-ai", "vc:label": "Safe AI"},
-    {"@id": "urn:visionflow:linked:distribution-shift", "vc:label": "Distribution Shift"},
-    {"@id": "urn:visionflow:linked:causal-inference", "vc:label": "Causal Inference"},
-    {"@id": "urn:visionflow:linked:imitation-learning", "vc:label": "Imitation Learning"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:adaptive-learning", "vc:label": "Adaptive Learning"},
-    {"@id": "urn:visionflow:linked:model-based-reinforcement-learning", "vc:label": "Model-Based Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:sensor-fusion", "vc:label": "Sensor Fusion"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:value-function", "vc:label": "Value Function"},
-    {"@id": "urn:visionflow:linked:action-space", "vc:label": "Action Space"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:machine-learning-domain", "vc:label": "MachineLearningDomain"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:test-time-adaptation", "vc:label": "Test-Time Adaptation"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"}
+    {
+      "@id": "urn:visionflow:linked:agent",
+      "vc:label": "Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-reinforcement-learning",
+      "vc:label": "Deep Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-optimisation",
+      "vc:label": "Policy Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-control",
+      "vc:label": "Adaptive Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:embodied-ai",
+      "vc:label": "Embodied AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-based-models",
+      "vc:label": "Agent-Based Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-signal",
+      "vc:label": "Reward Signal"
+    },
+    {
+      "@id": "urn:visionflow:linked:markov-decision-process",
+      "vc:label": "Markov Decision Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-gradient-methods",
+      "vc:label": "Policy Gradient Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:q-learning",
+      "vc:label": "Q-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal-difference-learning",
+      "vc:label": "Temporal Difference Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:sim-to-real-transfer",
+      "vc:label": "Sim-to-Real Transfer"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-navigation",
+      "vc:label": "Autonomous Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-manipulation",
+      "vc:label": "Robotic Manipulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-learning",
+      "vc:label": "Meta-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:continual-learning",
+      "vc:label": "Continual Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:hierarchical-reinforcement-learning",
+      "vc:label": "Hierarchical Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:world-model",
+      "vc:label": "World Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-vehicle",
+      "vc:label": "Autonomous Vehicle"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-ai",
+      "vc:label": "Game AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:swarm-intelligence",
+      "vc:label": "Swarm Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-organising-systems",
+      "vc:label": "Self-Organising Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:cybernetics",
+      "vc:label": "Cybernetics"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-theory",
+      "vc:label": "Control Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedback-loop",
+      "vc:label": "Feedback Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-science",
+      "vc:label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation-environment",
+      "vc:label": "Simulation Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:experience-replay",
+      "vc:label": "Experience Replay"
+    },
+    {
+      "@id": "urn:visionflow:linked:exploration-exploitation-tradeoff",
+      "vc:label": "Exploration-Exploitation Tradeoff"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-ai",
+      "vc:label": "Safe AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:distribution-shift",
+      "vc:label": "Distribution Shift"
+    },
+    {
+      "@id": "urn:visionflow:linked:causal-inference",
+      "vc:label": "Causal Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:imitation-learning",
+      "vc:label": "Imitation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-learning",
+      "vc:label": "Adaptive Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-based-reinforcement-learning",
+      "vc:label": "Model-Based Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:value-function",
+      "vc:label": "Value Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:action-space",
+      "vc:label": "Action Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-domain",
+      "vc:label": "MachineLearningDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:test-time-adaptation",
+      "vc:label": "Test-Time Adaptation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-20T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -84,52 +249,145 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:agent", "label": "Agent"},
-    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+    {
+      "@id": "urn:ngm:class:agent",
+      "label": "Agent"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:deep-reinforcement-learning", "label": "Deep Reinforcement Learning"},
-      {"@id": "urn:ngm:class:policy-optimisation", "label": "Policy Optimisation"},
-      {"@id": "urn:ngm:class:reward-signal", "label": "Reward Signal"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:world-model", "label": "World Model"}
+      {
+        "@id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:policy-optimisation",
+        "label": "Policy Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:robotic-manipulation", "label": "Robotic Manipulation"}
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
-      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"},
-      {"@id": "urn:ngm:class:simulation-environment", "label": "Simulation Environment"},
-      {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "label": "Exploration-Exploitation Tradeoff"}
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      },
+      {
+        "@id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration-Exploitation Tradeoff"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:policy-gradient-methods", "label": "Policy Gradient Methods"},
-      {"@id": "urn:ngm:class:temporal-difference-learning", "label": "Temporal Difference Learning"},
-      {"@id": "urn:ngm:class:hierarchical-reinforcement-learning", "label": "Hierarchical Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient Methods"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-difference-learning",
+        "label": "Temporal Difference Learning"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-reinforcement-learning",
+        "label": "Hierarchical Reinforcement Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:agent-based-models", "label": "Agent-Based Models"},
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"},
-      {"@id": "urn:ngm:class:cybernetics", "label": "Cybernetics"},
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:agent-based-models",
+        "label": "Agent-Based Models"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cybernetics",
+        "label": "Cybernetics"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:static-policy", "label": "Static Policy"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:static-policy",
+        "label": "Static Policy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"}
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      }
     ]
   },
   "quality": 0.91,
@@ -138,74 +396,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adaptive-behaviour:20260620",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:adaptive-behaviour"},
-  "vc:resolutions": [
-    {"raw": "[[Agent]]", "resolved": "urn:visionflow:linked:agent", "kind": "StubLink"},
-    {"raw": "[[Deep Reinforcement Learning]]", "resolved": "urn:visionflow:linked:deep-reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Policy Optimisation]]", "resolved": "urn:visionflow:linked:policy-optimisation", "kind": "StubLink"},
-    {"raw": "[[Adaptive Control]]", "resolved": "urn:visionflow:linked:adaptive-control", "kind": "StubLink"},
-    {"raw": "[[Embodied AI]]", "resolved": "urn:visionflow:linked:embodied-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Agent Systems]]", "resolved": "urn:visionflow:linked:multi-agent-systems", "kind": "StubLink"},
-    {"raw": "[[Agent-Based Models]]", "resolved": "urn:visionflow:linked:agent-based-models", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Reward Signal]]", "resolved": "urn:visionflow:linked:reward-signal", "kind": "StubLink"},
-    {"raw": "[[Markov Decision Process]]", "resolved": "urn:visionflow:linked:markov-decision-process", "kind": "StubLink"},
-    {"raw": "[[Policy Gradient Methods]]", "resolved": "urn:visionflow:linked:policy-gradient-methods", "kind": "StubLink"},
-    {"raw": "[[Q-Learning]]", "resolved": "urn:visionflow:linked:q-learning", "kind": "StubLink"},
-    {"raw": "[[Temporal Difference Learning]]", "resolved": "urn:visionflow:linked:temporal-difference-learning", "kind": "StubLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "StubLink"},
-    {"raw": "[[Sim-to-Real Transfer]]", "resolved": "urn:visionflow:linked:sim-to-real-transfer", "kind": "StubLink"},
-    {"raw": "[[Autonomous Navigation]]", "resolved": "urn:visionflow:linked:autonomous-navigation", "kind": "StubLink"},
-    {"raw": "[[Meta-Learning]]", "resolved": "urn:visionflow:linked:meta-learning", "kind": "StubLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "StubLink"},
-    {"raw": "[[Continual Learning]]", "resolved": "urn:visionflow:linked:continual-learning", "kind": "StubLink"},
-    {"raw": "[[Hierarchical Reinforcement Learning]]", "resolved": "urn:visionflow:linked:hierarchical-reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[World Model]]", "resolved": "urn:visionflow:linked:world-model", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Foundation Models]]", "resolved": "urn:visionflow:linked:foundation-models", "kind": "StubLink"},
-    {"raw": "[[Autonomous Vehicle]]", "resolved": "urn:visionflow:linked:autonomous-vehicle", "kind": "StubLink"},
-    {"raw": "[[Game AI]]", "resolved": "urn:visionflow:linked:game-ai", "kind": "StubLink"},
-    {"raw": "[[Swarm Intelligence]]", "resolved": "urn:visionflow:linked:swarm-intelligence", "kind": "StubLink"},
-    {"raw": "[[Self-Organising Systems]]", "resolved": "urn:visionflow:linked:self-organising-systems", "kind": "StubLink"},
-    {"raw": "[[Cybernetics]]", "resolved": "urn:visionflow:linked:cybernetics", "kind": "StubLink"},
-    {"raw": "[[Control Theory]]", "resolved": "urn:visionflow:linked:control-theory", "kind": "StubLink"},
-    {"raw": "[[Feedback Loop]]", "resolved": "urn:visionflow:linked:feedback-loop", "kind": "StubLink"},
-    {"raw": "[[Cognitive Science]]", "resolved": "urn:visionflow:linked:cognitive-science", "kind": "StubLink"},
-    {"raw": "[[Simulation Environment]]", "resolved": "urn:visionflow:linked:simulation-environment", "kind": "StubLink"},
-    {"raw": "[[Experience Replay]]", "resolved": "urn:visionflow:linked:experience-replay", "kind": "StubLink"},
-    {"raw": "[[Exploration-Exploitation Tradeoff]]", "resolved": "urn:visionflow:linked:exploration-exploitation-tradeoff", "kind": "StubLink"},
-    {"raw": "[[Safe AI]]", "resolved": "urn:visionflow:linked:safe-ai", "kind": "StubLink"},
-    {"raw": "[[Distribution Shift]]", "resolved": "urn:visionflow:linked:distribution-shift", "kind": "StubLink"},
-    {"raw": "[[Causal Inference]]", "resolved": "urn:visionflow:linked:causal-inference", "kind": "StubLink"},
-    {"raw": "[[Imitation Learning]]", "resolved": "urn:visionflow:linked:imitation-learning", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[Adaptive Learning]]", "resolved": "urn:visionflow:linked:adaptive-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Model-Based Reinforcement Learning]]", "resolved": "urn:visionflow:linked:model-based-reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Sensor Fusion]]", "resolved": "urn:visionflow:linked:sensor-fusion", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "StubLink"},
-    {"raw": "[[Value Function]]", "resolved": "urn:visionflow:linked:value-function", "kind": "StubLink"},
-    {"raw": "[[Action Space]]", "resolved": "urn:visionflow:linked:action-space", "kind": "StubLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:linked:ai-grounded-domain", "kind": "ResolvedLink"},
-    {"raw": "[[AlgorithmLayer]]", "resolved": "urn:visionflow:linked:algorithm-layer", "kind": "ResolvedLink"},
-    {"raw": "[[MachineLearningDomain]]", "resolved": "urn:visionflow:linked:machine-learning-domain", "kind": "ResolvedLink"},
-    {"raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:linked:computation-and-intelligence-domain", "kind": "ResolvedLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "StubLink"},
-    {"raw": "[[Digital Twin]]", "resolved": "urn:visionflow:linked:digital-twin", "kind": "StubLink"},
-    {"raw": "[[Test-Time Adaptation]]", "resolved": "urn:visionflow:linked:test-time-adaptation", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "StubLink"},
-    {"raw": "[[Robotic Manipulation]]", "resolved": "urn:visionflow:linked:robotic-manipulation", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -420,7 +610,7 @@ public: true
   ## Adaptive Behaviour and Foundation Models: The 2024–2026 Paradigm Shift
   - The deployment of large pre-trained [[Foundation Models]] as priors for adaptive behaviour represents the most significant paradigm shift in the field since the introduction of [[Deep Reinforcement Learning]]. Classical adaptive behaviour frameworks required training an agent from scratch in each new environment, with adaptation occurring entirely within the [[Reinforcement Learning]] training loop. Foundation model approaches invert this: a model pre-trained on vast internet-scale data (text, images, video, robot trajectories) already encodes general knowledge about the world, physics, object affordances, and common human tasks. Adaptation then occurs through fine-tuning on task-specific data (far more sample-efficient than from-scratch training) or through in-context learning (zero-shot or few-shot, with no parameter updates at all).
 
-  - This paradigm shift manifests differently across adaptive behaviour domains. In robotic manipulation, RT-2 (Brohan et al., 2023) demonstrated that a Vision-Language-Action model fine-tuned from a [[Large Language Model]] could generalise to novel objects and instructions not seen during robot training, because the VLA inherits generalisation from web-scale pre-training on visual and linguistic data. In language model alignment, Group Relative Policy Optimisation (GRPO, used in DeepSeek-R1, 2025) enables adaptive behaviour that improves mathematical reasoning through [[Reinforcement Learning]] from self-generated verification signals, without requiring human-labelled preference data at the scale needed by classical RLHF. In autonomous agents, tool-use behaviour (selecting web search, code execution, or API calls adaptively based on task requirements) has emerged from [[Foundation Models]] through a combination of few-shot prompting and RL fine-tuning on agent trajectories.
+  - This paradigm shift manifests differently across adaptive behaviour domains. In robotic manipulation, RT-2 (Brohan et al., 2023) demonstrated that a Vision-Language-Action model fine-tuned from a [[Large Language Model]] [private] generalise to novel objects and instructions not seen during robot training, because the VLA inherits generalisation from web-scale pre-training on visual and linguistic data. In language model alignment, Group Relative Policy Optimisation (GRPO, used in DeepSeek-R1, 2025) enables adaptive behaviour that improves mathematical reasoning through [[Reinforcement Learning]] from self-generated verification signals, without requiring human-labelled preference data at the scale needed by classical RLHF. In autonomous agents, tool-use behaviour (selecting web search, code execution, or API calls adaptively based on task requirements) has emerged from [[Foundation Models]] through a combination of few-shot prompting and RL fine-tuning on agent trajectories.
 
   - The in-context adaptation paradigm — where a pre-trained [[Large Language Model]] adapts its behaviour by processing examples of the desired behaviour in its context window, without gradient updates — represents a qualitatively new form of [[Meta-Learning]]. Decision Transformer (Chen et al., 2021) first demonstrated this for sequential decision-making, reframing [[Reinforcement Learning]] as sequence modelling: a Transformer trained on (state, action, return-to-go) sequences learns to generate high-return action sequences given a target return conditioned in its context. Algorithm Distillation (Laskin et al., 2023) extended this to in-context RL: the model adapts its decision policy within a single forward pass by processing a history of prior algorithm interactions, effectively learning to learn from context alone without gradient updates. This raises fundamental questions about the distinction between in-weights learning (gradient-based policy update) and in-context learning (context-based policy adaptation) as mechanisms for adaptive behaviour.
 

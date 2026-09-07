@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hyperparameter Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,4 +175,3 @@ public: true
   - In practice, hyperparameter optimisation is integrated into MLOps platforms — Weights & Biases Sweeps, MLflow, AWS SageMaker Automatic Model Tuning, Google Vertex AI Vizier — making it accessible without manual orchestration. Neural architecture search tools such as Keras Tuner and AutoGluon extend the search to architectural choices, approaching the vision of fully automated machine learning (AutoML). The commercial impact is significant: automated HPO routinely improves model accuracy by 2–10 percentage points over hand-tuned baselines on structured data tasks.
 
   - In 2024–2025, hyperparameter optimisation for large language models presents unique challenges: the cost of a single training run precludes the hundreds of evaluations assumed by classical Bayesian methods. Proxy tasks, scaling laws extrapolation, and transfer learning from smaller models to inform large-model configuration are active research directions. Curriculum learning schedules, mixed-precision training configurations, and RLHF reward model hyperparameters are new search axes that existing optimisation libraries are being extended to handle.
-

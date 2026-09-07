@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Huawei Chips
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "huawei-chips",
   "title": "Huawei Chips",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Chinese AI Ecosystem", "DeepSeek V4"],
+  "vc:outboundWikilinks": [
+    "Chinese AI Ecosystem",
+    "DeepSeek V4"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpu-computing",
+      "label": "GPU Computing"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}, {"@id": "urn:ngm:class:computational-infrastructure", "label": "Computational Infrastructure"}, {"@id": "urn:ngm:class:ai-ecosystem", "label": "AI Ecosystem"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ecosystem",
+        "label": "AI Ecosystem"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

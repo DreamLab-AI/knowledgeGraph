@@ -1,56 +1,112 @@
----
-public: true
----
-
-# Human Rights Law
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:human-rights-law", "@type":"Page", "title":"Human Rights Law", "vc:slug":"human-rights-law", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:human-rights-law",
+  "@type": "Page",
+  "title": "Human Rights Law",
+  "vc:slug": "human-rights-law",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:human-rights-law",
-  "@type":"Class",
-  "label":"Human Rights Law",
-  "definition":"Human rights law is the body of international and domestic legal instruments that define and protect the fundamental freedoms and entitlements owed to all individuals. It encompasses treaties, conventions, and constitutional provisions covering rights such as privacy, non-discrimination, freedom of expression, and due process. In the context of artificial intelligence, human rights law increasingly shapes obligations around algorithmic fairness, surveillance, and the protection of personal data.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "supports":[
-      {"@id":"urn:ngm:class:fundamental-rights","label":"Fundamental Rights"},
-      {"@id":"urn:ngm:class:digital-rights","label":"Digital Rights"},
-      {"@id":"urn:ngm:class:data-protection","label":"Data Protection"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-rights-law",
+  "@type": "Class",
+  "label": "Human Rights Law",
+  "definition": "Human rights law is the body of international and domestic legal instruments that define and protect the fundamental freedoms and entitlements owed to all individuals. It encompasses treaties, conventions, and constitutional provisions covering rights such as privacy, non-discrimination, freedom of expression, and due process. In the context of artificial intelligence, human rights law increasingly shapes obligations around algorithmic fairness, surveillance, and the protection of personal data.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:fundamental-rights",
+        "label": "Fundamental Rights"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:algorithmic-accountability","label":"Algorithmic Accountability"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:fundamental-rights","label":"Fundamental Rights"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:ai-governance","label":"AI Governance"},
-      {"@id":"urn:ngm:class:ai-ethics","label":"AI Ethics"},
-      {"@id":"urn:ngm:class:privacy-law","label":"Privacy Law"},
-      {"@id":"urn:ngm:class:gdpr","label":"GDPR"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:fundamental-rights",
+        "label": "Fundamental Rights"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:surveillance","label":"Surveillance"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-law",
+        "label": "Privacy Law"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:responsible-ai","label":"Responsible AI"},
-      {"@id":"urn:ngm:class:bias-mitigation-techniques","label":"Bias Mitigation Techniques"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

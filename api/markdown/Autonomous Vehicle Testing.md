@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Autonomous Vehicle Testing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

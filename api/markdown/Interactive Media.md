@@ -1,56 +1,108 @@
----
-public: true
----
-
-# Interactive Media
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:interactive-media", "@type":"Page", "title":"Interactive Media", "vc:slug":"interactive-media", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:interactive-media",
+  "@type": "Page",
+  "title": "Interactive Media",
+  "vc:slug": "interactive-media",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:interactive-media",
-  "@type":"Class",
-  "label":"Interactive Media",
-  "definition":"Interactive media refers to digital content and systems that respond dynamically to user input, allowing audiences to influence, navigate, or co-create the experience rather than consume it passively. It spans video games, interactive narratives, simulations, web applications, kiosks, and immersive virtual and augmented reality experiences. Unlike linear media, interactive media couples presentation with real-time feedback loops, making user agency, interface design, and responsiveness central to its form.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:digital-content-creation","label":"Digital Content Creation"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:digital-content-creation","label":"Digital Content Creation"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:interactive-media",
+  "@type": "Class",
+  "label": "Interactive Media",
+  "definition": "Interactive media refers to digital content and systems that respond dynamically to user input, allowing audiences to influence, navigate, or co-create the experience rather than consume it passively. It spans video games, interactive narratives, simulations, web applications, kiosks, and immersive virtual and augmented reality experiences. Unlike linear media, interactive media couples presentation with real-time feedback loops, making user agency, interface design, and responsiveness central to its form.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-content-creation",
+      "label": "Digital Content Creation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:user-interface","label":"User Interface"},
-      {"@id":"urn:ngm:class:animation","label":"Animation"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:game-engine","label":"Game Engine"},
-      {"@id":"urn:ngm:class:user-interface","label":"User Interface"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:user-experience","label":"User Experience"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:immersive-experience","label":"Immersive Experience"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:virtual-reality","label":"Virtual Reality"},
-      {"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:digital-art","label":"Digital Art"},
-      {"@id":"urn:ngm:class:animation","label":"Animation"},
-      {"@id":"urn:ngm:class:user-experience","label":"User Experience"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:metaverse","label":"Metaverse"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

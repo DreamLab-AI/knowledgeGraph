@@ -1,8 +1,3 @@
----
-public: true
----
-
-# hugging face diffusers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time Collaborative Editing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Real-time collaborative editing is the capability for multiple users to concurrently modify a shared document or data structure and see each other's changes near-instantaneously with automatic conflict resolution. It depends on synchronisation algorithms such as operational transformation or conflict-free replicated data types to maintain a consistent merged state across replicas. It underpins shared documents, whiteboards, and collaborative virtual workspaces.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:crdt", "label": "CRDT"}
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
     ]
   },
   "quality": 0.72

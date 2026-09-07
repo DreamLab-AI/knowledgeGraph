@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Timestamping Service
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:timestamping-service:4ddf80e45515",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6c7f6d0800c7a872a3f85914eb9601b39c8e52631202c07584078f7952048ad2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:linked:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Content Provenance]]",
-      "resolved": "urn:visionflow:linked:content-provenance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Timestamp]]",
-      "resolved": "urn:visionflow:linked:timestamp",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trusted Timestamping]]",
-      "resolved": "urn:visionflow:linked:trusted-timestamping",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A timestamping service is a system that issues verifiable proof that a piece of data existed at or before a particular time, often using cryptographic methods.

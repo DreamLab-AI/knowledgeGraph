@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Risk Assessment Matrix
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A risk assessment matrix is a structured grid that ranks risks by cross-tabulating the likelihood of an event against the severity of its impact. Each cell maps to a qualitative or quantitative risk level, allowing teams to prioritise mitigation and allocate resources to the highest-rated risks. It is a standard visual tool in security and safety risk management.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:threat-surface-map", "label": "Threat Surface Map"}, {"@id": "urn:ngm:class:risk-assessment-methodology", "label": "Risk Assessment Methodology"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:threat-surface-map",
+        "label": "Threat Surface Map"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      }
+    ]
   },
   "quality": 0.72
 }

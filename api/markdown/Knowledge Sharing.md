@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Knowledge Sharing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,42 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:knowledge-sharing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c3cc0cf61f3bc2598cff135ff598252277ccd0f61cc7eb9d818850629ddbd93d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Distributed Team Collaboration]]",
-      "resolved": "urn:visionflow:linked:distributed-team-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Collaborative Technology]]",
-      "resolved": "urn:visionflow:owl:class:collaborative-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Collaborative practices and platforms within metaverse environments that facilitate the exchange of information, expertise, and learning experiences among users through immersive virtual spaces, avatars, and AI-enhanced interactions.

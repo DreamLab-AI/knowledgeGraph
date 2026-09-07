@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Source Monetization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "open-source-monetization",
   "title": "Open Source Monetization",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Business Model Design", "Revenue Decline", "Tailwind CSS", "Value Capture"],
+  "vc:outboundWikilinks": [
+    "Business Model Design",
+    "Revenue Decline",
+    "Tailwind CSS",
+    "Value Capture"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence"}, {"@id": "urn:ngm:class:ai-economics", "label": "AI Economics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-economics",
+        "label": "AI Economics"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

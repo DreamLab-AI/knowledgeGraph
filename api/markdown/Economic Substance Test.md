@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Economic Substance Test
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bluetooth LE
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +21,47 @@ public: true
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bluetooth-low-energy", "label": "Bluetooth Low Energy"}
+    {
+      "@id": "urn:ngm:class:bluetooth-low-energy",
+      "label": "Bluetooth Low Energy"
+    }
   ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bluetooth-sig", "label": "Bluetooth SIG"}
+      {
+        "@id": "urn:ngm:class:bluetooth-sig",
+        "label": "Bluetooth SIG"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:proximity-detection", "label": "Proximity Detection"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:proximity-detection",
+        "label": "Proximity Detection"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:near-field-communication", "label": "Near Field Communication"},
-      {"@id": "urn:ngm:class:zigbee", "label": "Zigbee"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:near-field-communication",
+        "label": "Near Field Communication"
+      },
+      {
+        "@id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:low-energy-consumption", "label": "Low Energy Consumption"}
+      {
+        "@id": "urn:ngm:class:low-energy-consumption",
+        "label": "Low Energy Consumption"
+      }
     ]
   },
   "quality": 0.8
@@ -56,11 +75,10 @@ public: true
   - [[Bluetooth LE]] is standardised by the [[Bluetooth SIG]] and is a sub-profile of [[Bluetooth Low Energy]]. It enables [[Internet of Things]] deployments by providing a ubiquitous, smartphone-compatible radio for sensors, wearables, beacons, and locks. [[Proximity Detection]] applications (indoor positioning, asset tracking, contact tracing) rely on BLE advertising and RSSI measurements. BLE coexists on the 2.4 GHz band with [[Zigbee]] and Wi-Fi, requiring careful channel management. Its simplicity and near-universal support in mobile operating systems contrasts with [[Near Field Communication]], which requires physical proximity but no pairing.
 
 - ### Content
-  - BLE originated from Nokia's Wibree initiative (2006), which the Bluetooth SIG absorbed and ratified as part of Bluetooth 4.0 in June 2010. The design goal was to enable devices like heart-rate monitors and temperature sensors to run for a year on a CR2032 coin cell while maintaining periodic smartphone connectivity. The GATT/ATT protocol stack, borrowed from concepts in the original Bluetooth stack, provided a simple key–value service model that hardware vendors could implement in microcontrollers with a few kilobytes of RAM.
+  - BLE originated from Nokia's Wibree initiative (2006), which the Bluetooth SIG absorbed and ratified as part of Bluetooth 4.0 in June 2010. The design goal was to enable devices like heart-rate monitors and temperature sensors to run for a year on a CR2032 coin cell while maintaining periodic smartphone connectivity. The GATT/ATT protocol stack, borrowed from concepts in the original Bluetooth stack, provided a simple key–value service model that hardware vendors [private] implement in microcontrollers with a few kilobytes of RAM.
 
   - BLE uses 40 channels in the 2.4 GHz band: three fixed advertising channels (37, 38, 39) and 37 data channels. Advertising is connectionless and one-to-many; connection events are time-scheduled and power-gate the radio between intervals. The protocol supports three physical layers: LE 1M (1 Mbit/s), LE 2M (2 Mbit/s, Bluetooth 5.0), and LE Coded (125/500 kbit/s with error correction for extended range up to ~400 m, Bluetooth 5.0). Bluetooth 5.1 added direction-finding via angle-of-arrival/departure antenna arrays, enabling sub-metre indoor positioning.
 
   - BLE is embedded in virtually every smartphone, tablet, laptop, and smartwatch shipped since 2012. The [[Embedded Systems]] ecosystem supports it through SoCs from Nordic Semiconductor (nRF52/nRF54 series), Silicon Labs (EFR32), Texas Instruments (CC26xx), and others. Apple's iBeacon (2013) and Google's Eddystone beacon formats standardised BLE-based proximity advertising. The COVID-19 exposure notification systems (Google/Apple Exposure Notification, 2020) demonstrated BLE's capacity for global deployment of privacy-preserving [[Proximity Detection]] at scale.
 
   - Through 2024–2025, Bluetooth 5.4 and the forthcoming Bluetooth 6.0 specification focus on channel sounding (high-accuracy ranging for asset tags), multi-CIS isochronous streams for audio, and mesh enhancements. Auracast broadcast audio (introduced in Bluetooth LE Audio, 2022) enables public venues to broadcast audio to an unlimited number of BLE receivers. The interoperability between BLE, [[Thread Protocol]], and Matter for smart home devices is reducing fragmentation, while ultra-wideband (UWB) chips in premium smartphones complement BLE for centimetre-accurate positioning.
-

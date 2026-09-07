@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Kernel Methods
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Kernel methods are a class of machine learning algorithms that operate on data implicitly mapped into a high-dimensional feature space via a kernel function, without computing coordinates in that space. The kernel trick replaces inner products with kernel evaluations, enabling linear algorithms to learn non-linear relationships. They underpin support vector machines, Gaussian processes and kernel ridge regression.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
-      {"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"}
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
     ]
   },
   "quality": 0.72

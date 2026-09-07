@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VRChat
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,57 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vrchat:f1b3ff4a66dd",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e93c93be27ed00009c68fecf95627c68fb17938cf6b3d71953c74e7737daf732"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar System]]",
-      "resolved": "urn:visionflow:linked:avatar-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Reality]]",
-      "resolved": "urn:visionflow:linked:virtual-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social VR]]",
-      "resolved": "urn:visionflow:linked:social-vr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Avatar Customization]]",
-      "resolved": "urn:visionflow:linked:avatar-customization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Avatar Interoperability]]",
-      "resolved": "urn:visionflow:linked:avatar-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Platform]]",
-      "resolved": "urn:visionflow:linked:metaverse-platform",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - VRChat is a social virtual reality platform where users interact as custom avatars in user-created 3D worlds, with support for both VR headsets and desktop access.

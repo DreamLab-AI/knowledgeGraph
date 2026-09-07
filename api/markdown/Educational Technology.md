@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Educational Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,31 +182,6 @@ public: true
       "vc:value": "MV-0602"
     }
   ]
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:educational-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:59c461be980389af45e1f4a4c28a9a1e047474b9882f9a0b76f705c7408a77f1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaverse Technology]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-technology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
 }
 ```
 

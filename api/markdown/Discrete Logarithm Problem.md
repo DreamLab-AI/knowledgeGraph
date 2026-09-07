@@ -1,37 +1,114 @@
----
-public: true
----
-
-# Discrete Logarithm Problem
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:discrete-logarithm-problem", "@type":"Page", "title":"Discrete Logarithm Problem", "vc:slug":"discrete-logarithm-problem", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:discrete-logarithm-problem",
+  "@type": "Page",
+  "title": "Discrete Logarithm Problem",
+  "vc:slug": "discrete-logarithm-problem",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:discrete-logarithm-problem",
-  "@type":"Class",
-  "label":"Discrete Logarithm Problem",
-  "definition":"The discrete logarithm problem (DLP) is the computational task of finding the integer exponent x given a generator g and the value g^x within a finite cyclic group such as a multiplicative group modulo a prime or the point group of an elliptic curve. It is widely believed to be intractable for classical computers when the group is suitably large, and this presumed hardness underpins much of public-key cryptography. The elliptic-curve variant (ECDLP) offers equivalent security with smaller keys than the finite-field variant.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:public-key-cryptography","label":"Public Key Cryptography"},{"@id":"urn:ngm:class:asymmetric-cryptography","label":"Asymmetric Cryptography"},{"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"}],
-    "implements":[{"@id":"urn:ngm:class:cryptographic-primitive","label":"Cryptographic Primitive"}],
-    "uses":[{"@id":"urn:ngm:class:elliptic-curve-cryptography","label":"Elliptic Curve Cryptography"}],
-    "requires":[{"@id":"urn:ngm:class:cryptographic-protocol","label":"Cryptographic Protocol"}],
-    "dependsOn":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "supports":[{"@id":"urn:ngm:class:schnorr-signature","label":"Schnorr Signature"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:rsa","label":"RSA"}],
-    "relatedTo":[{"@id":"urn:ngm:class:elliptic-curve-cryptography","label":"Elliptic Curve Cryptography"},{"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"},{"@id":"urn:ngm:class:asymmetric-cryptography","label":"Asymmetric Cryptography"},{"@id":"urn:ngm:class:cryptographic-primitive","label":"Cryptographic Primitive"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:quantum-computing","label":"Quantum Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:discrete-logarithm-problem",
+  "@type": "Class",
+  "label": "Discrete Logarithm Problem",
+  "definition": "The discrete logarithm problem (DLP) is the computational task of finding the integer exponent x given a generator g and the value g^x within a finite cyclic group such as a multiplicative group modulo a prime or the point group of an elliptic curve. It is widely believed to be intractable for classical computers when the group is suitably large, and this presumed hardness underpins much of public-key cryptography. The elliptic-curve variant (ECDLP) offers equivalent security with smaller keys than the finite-field variant.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rsa",
+        "label": "RSA"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -40,7 +117,7 @@ public: true
   - Its presumed hardness provides the security foundation for many [[Digital Signature]] schemes.
 - ### Overview
   - Given a cyclic group G of order n generated by g, and an element h = g^x, the discrete logarithm of h to base g is the exponent x. Computing x is easy to verify but believed hard to find.
-  - In the multiplicative group of integers modulo a large prime p, the best known classical algorithms (index calculus, number field sieve variants) run in sub-exponential time, requiring large key sizes for security.
+  - In the multiplicative group of integers modulo a large prime p, the best known classical algorithms ([private] calculus, number field sieve variants) run in sub-exponential time, requiring large key sizes for security.
   - In elliptic-curve groups (ECDLP) no sub-exponential algorithm is known; the best generic attacks (Pollard's rho, baby-step giant-step) run in time proportional to the square root of the group order, allowing far smaller keys for equivalent security.
 - ### Mechanisms
   - The hardness asymmetry — easy exponentiation, hard inversion — is a one-way function suitable as a [[Cryptographic Primitive]].

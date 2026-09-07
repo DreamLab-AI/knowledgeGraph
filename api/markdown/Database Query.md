@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Database Query
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,37 +201,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:database-query:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bb148339074b49993c185fef0d21302f398c4642c942be0066eca70a5b8db9e9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A structured request submitted to a database management system to retrieve, insert, update, or delete data according to defined criteria. Queries are expressed in formal query languages such as SQL for relational databases or SPARQL for RDF triple stores, and underpin knowledge graph retrieval, analytics pipelines, and real-time application data access.
 
@@ -261,8 +225,8 @@ public: true
 
 - ### Current Landscape (2026)
   - The graph-query standards landscape settled: ISO/IEC 39075:2024 (GQL), the first new ISO query-language standard since SQL, was published on 11 April 2024, complementing SQL/PGQ (Part 16 of SQL:2023, published June 2023) whose GRAPH_TABLE operator embeds property-graph pattern matching in the FROM clause; GQL and SQL/PGQ share an identical graph-pattern-matching core, and work on GQL V2 (targeting mid-2027) is adding a vector data type (POS-011r1, accepted March 2025) and LIMIT APPROXIMATE (accepted June 2025).
-  - Vector search moved from differentiator to commodity index: as Andy Pavlo put it in "Databases in 2025" (January 2026), if 2023 was the year every DBMS added a vector index, 2025 was the year every DBMS added support for Anthropic's Model Context Protocol (MCP), letting AI agents issue queries in natural language over engines like DuckDB.
-  - Amazon S3 Vectors, native vector indexes in object storage scaling to roughly two billion vectors per index, reached general availability in December 2025, pushing vector querying down into the storage layer itself.
+  - Vector search moved from differentiator to commodity [private]: as Andy Pavlo put it in "Databases in 2025" (January 2026), if 2023 was the year every DBMS added a vector [private], 2025 was the year every DBMS added support for Anthropic's Model Context Protocol (MCP), letting AI agents issue queries in natural language over engines like DuckDB.
+  - Amazon S3 Vectors, native vector indexes in object storage scaling to roughly two billion vectors per [private], reached general availability in December 2025, pushing vector querying down into the storage layer itself.
   - DuckDB consolidated as the dominant embedded analytical query engine, posting around 50.7% year-on-year growth in developer interest; v1.4.0 LTS (October 2025) added MERGE statements, AES-256 encryption and Iceberg writes, DuckLake reached 1.0 (an ACID lakehouse format keeping catalogue metadata in SQL with time-travel queries), and pg_duckdb 1.0 embedded its vectorised engine directly inside PostgreSQL.
   - Text-to-SQL evolved into hybrid "Text2VectorSQL", translating natural-language questions into queries that fuse structured SQL predicates with vector-search primitives, with dedicated models trained on synthetic data (arXiv 2506.23071, 2025).
   - Query optimisation for AI workloads became a research frontier: Exqutor (arXiv 2512.09695) tackles inaccurate cardinality estimation in vector-augmented analytical queries, reporting speed-ups up to four orders of magnitude on pgvector/VBASE and 37.2x on DuckDB.

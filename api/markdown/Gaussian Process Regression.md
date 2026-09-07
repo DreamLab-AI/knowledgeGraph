@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gaussian Process Regression
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Gaussian process regression is a non-parametric Bayesian method that models an unknown function as a distribution over functions defined by a mean and a covariance (kernel) function. Given observations, it produces a posterior that yields predictions together with calibrated uncertainty estimates. It is widely used where data is scarce and quantified uncertainty matters, such as Bayesian optimisation and surrogate modelling.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"}, {"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ]
   },
   "quality": 0.72
 }

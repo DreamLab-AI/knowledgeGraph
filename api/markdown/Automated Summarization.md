@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automated Summarization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,31 +64,76 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:documentation-generation", "label": "Documentation Generation"},
-      {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"}
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:meeting-transcription", "label": "Meeting Transcription"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"}
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-transcription",
+        "label": "Meeting Transcription"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:meeting-recording", "label": "Meeting Recording"}
+      {
+        "@id": "urn:ngm:class:meeting-recording",
+        "label": "Meeting Recording"
+      }
     ]
   },
   "provenance": {
@@ -103,42 +143,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:automated-summarization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:66a1e9bce7698a15596943015776390c31658e07967bf6b20546b9fd6d23a123"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Automated Summarization is an NLP task in which a system produces a condensed representation of one or more source documents that preserves salient information and is significantly shorter than the original. Extractive approaches select and concatenate verbatim sentences or passages from the source; abstractive approaches generate novel text that may paraphrase, fuse, or infer content not explicitly stated in the source. Modern large language model-based summarizers are predominantly abstractive, achieving strong performance on long-form documents, meeting transcripts, scientific papers, and news articles, but remain susceptible to hallucination, factual inconsistency, and salience mismatch relative to the reader's intent.

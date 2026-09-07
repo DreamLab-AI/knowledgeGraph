@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Identifier
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Identifier",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:identification", "vc:label": "Identification"},
-    {"@id": "urn:visionflow:linked:uri", "vc:label": "URI"},
-    {"@id": "urn:visionflow:linked:namespace", "vc:label": "Namespace"},
-    {"@id": "urn:visionflow:linked:decentralised-identifier", "vc:label": "Decentralised Identifier"}
+    {
+      "@id": "urn:visionflow:linked:identification",
+      "vc:label": "Identification"
+    },
+    {
+      "@id": "urn:visionflow:linked:uri",
+      "vc:label": "URI"
+    },
+    {
+      "@id": "urn:visionflow:linked:namespace",
+      "vc:label": "Namespace"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-identifier",
+      "vc:label": "Decentralised Identifier"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,13 +50,28 @@ public: true
   },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:uri", "label": "URI"},
-      {"@id": "urn:ngm:class:namespace", "label": "Namespace"},
-      {"@id": "urn:ngm:class:unique-identifier", "label": "Unique Identifier"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:uri",
+        "label": "URI"
+      },
+      {
+        "@id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      },
+      {
+        "@id": "urn:ngm:class:unique-identifier",
+        "label": "Unique Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ]
   },
   "quality": 0.8,
@@ -89,7 +116,7 @@ public: true
 
   ## Current Landscape
 
-  - The UUID standard was fully modernised by **RFC 9562** (Proposed Standard, May 2024), which obsoletes RFC 4122 and adds sortable, timestamp-ordered UUIDv7 plus the reordered UUIDv6 and free-form UUIDv8 — a direct response to database and distributed-systems needs where random UUIDv4 keys fragment index locality.
+  - The UUID standard was fully modernised by **RFC 9562** (Proposed Standard, May 2024), which obsoletes RFC 4122 and adds sortable, timestamp-ordered UUIDv7 plus the reordered UUIDv6 and free-form UUIDv8 — a direct response to database and distributed-systems needs where random UUIDv4 keys fragment [private] locality.
   - **W3C Decentralized Identifiers (DID) Core v1.0** became a W3C Recommendation in July 2022, defining a cryptographically verifiable, registry-independent identifier that (unlike a UUID) is both resolvable and provable; DID methods and the accompanying Verifiable Credentials work remain the fastest-moving area of new identifier design.
   - The URI/IRI family (RFC 3986/3987) still underpins web-scale naming, while ISO/IEC 9834 / ITU-T X.667 keep the OID and UUID registries technically aligned across ISO and the IETF.
   - Persistent-identifier infrastructure (DOI, ORCID, ROR, ARK) continues to expand in research and cultural-heritage settings, reinforcing the "cool URIs don't change" separation of stable name from mutable location.

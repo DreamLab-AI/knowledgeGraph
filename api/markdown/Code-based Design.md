@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Code-based Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "code-based-design",
   "title": "Code-based Design",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Claude Design", "SVG Generation"],
+  "vc:outboundWikilinks": [
+    "Claude Design",
+    "SVG Generation"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:image-generation",
+      "label": "Image Generation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}, {"@id": "urn:ngm:class:svg-generation", "label": "SVG Generation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:svg-generation",
+        "label": "SVG Generation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

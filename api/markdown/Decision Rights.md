@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decision Rights
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Decision rights are the formally allocated authorities that determine who may make, approve, or veto a given class of decisions within an organisation or governance system. They specify the mapping between roles or stakeholders and the scope of choices they control, forming the backbone of accountability. Clear decision rights reduce ambiguity, prevent conflicting actions, and enable auditable governance.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
     ]
   },
   "quality": 0.72

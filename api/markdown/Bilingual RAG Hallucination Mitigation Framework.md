@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[jing]]
-# Bilingual RAG Hallucination Mitigation Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,18 +42,42 @@ elevatedFrom:: [[jing]]
   "quality": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-avatar", "label": "Digital Avatar"},
-      {"@id": "urn:ngm:class:emotional-intelligence", "label": "Emotional Intelligence"},
-      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"}
+      {
+        "@id": "urn:ngm:class:digital-avatar",
+        "label": "Digital Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-intelligence",
+        "label": "Emotional Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:virtual-reality-applications", "label": "Virtual Reality Applications"}
+      {
+        "@id": "urn:ngm:class:virtual-reality-applications",
+        "label": "Virtual Reality Applications"
+      }
     ]
   },
   "provenance": {
@@ -69,26 +87,6 @@ elevatedFrom:: [[jing]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:jing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6dd42a0309486c6382499214531f09993b0ea1f882e6865123fd8f8aa3afcb81"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Jing** is a multi-agent AI system for bilingual (Chinese/English) retrieval-augmented generation targeting emotionally sensitive domains — specifically end-of-life counselling. It combines multiple LLMs, open-source TTS, and real-time 3D avatars, initially deployed on Japanese VR screens. The multi-agent design reduces hallucination by distributing retrieval, validation, and generation across specialised model instances.

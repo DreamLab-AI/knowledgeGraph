@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Remotely Operated Vehicle (ROV)
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,23 +59,56 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:camera", "label": "Camera"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:navigation", "label": "Navigation"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:marine-robot", "label": "Marine Robot"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:inspection-robot", "label": "Inspection Robot"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:marine-robot",
+        "label": "Marine Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:inspection-robot",
+        "label": "Inspection Robot"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"}
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
     ]
   },
   "provenance": {
@@ -90,37 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:remotely-operated-vehicle-rov:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fdcb6be8d5026c045ac7015b82c5c45011a90365c1480cdab712a09352f79551"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Underwater Robot]]",
-      "resolved": "urn:visionflow:owl:class:underwater-robot",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Remotely Operated Vehicle (ROV) is a tethered underwater robot controlled by a human operator at the surface via a cable that supplies electrical power and bidirectional communications. ROVs are deployed for inspection, maintenance, and intervention tasks in environments too hazardous or deep for human divers, including oil and gas infrastructure, offshore wind farms, and scientific ocean exploration.

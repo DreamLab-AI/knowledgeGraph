@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Incident
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,17 +71,38 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "quality": 0.5,
@@ -97,52 +113,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-incident:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0194d3ecde02fe0712b6440610cc77bae7c8814967906da92b4de85cd5151e34"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[EU AI Act Regulation 2024/1689 Article 72]]",
-      "resolved": "urn:visionflow:linked:eu-ai-act-regulation-2024-1689-article-72",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23894:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD AI Incident Monitor]]",
-      "resolved": "urn:visionflow:linked:oecd-ai-incident-monitor",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An event involving an AI system that causes or has the potential to cause harm to individuals, property, environment, or fundamental rights, including malfunctions, security breaches, bias-driven discrimination, privacy violations, or unintended consequences requiring investigation and remediation.

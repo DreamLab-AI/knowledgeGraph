@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mob Programming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Mob programming is a software development practice in which the whole team works on the same task at the same time, on the same computer, rotating the roles of driver and navigators. It extends pair programming to the full group, concentrating collective knowledge to improve code quality, shorten feedback loops, and spread learning. It trades raw parallelism for higher alignment and fewer hand-offs.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:remote-pair-programming", "label": "Remote Pair Programming"}
+      {
+        "@id": "urn:ngm:class:remote-pair-programming",
+        "label": "Remote Pair Programming"
+      }
     ]
   },
   "quality": 0.72

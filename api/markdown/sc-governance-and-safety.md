@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,23 +34,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:user-safety", "label": "User Safety"},
-      {"@id": "urn:ngm:class:digital-safety", "label": "Digital Safety"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:spatial-embodiment-harm-taxonomy", "label": "Spatial Embodiment Harm Taxonomy"}
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      },
+      {
+        "@id": "urn:ngm:class:digital-safety",
+        "label": "Digital Safety"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-embodiment-harm-taxonomy",
+        "label": "Spatial Embodiment Harm Taxonomy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"},
-      {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:sc-standards-and-interop",
+        "label": "Standards and Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:sc-platform-and-environment",
+        "label": "Platform and Environment"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -62,3 +97,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

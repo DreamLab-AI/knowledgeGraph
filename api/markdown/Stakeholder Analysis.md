@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stakeholder Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -138,4 +133,3 @@ public: true
   - In technology governance and AI deployment, stakeholder analysis addresses a structural challenge: systems affect people who have no voice in their design. Predictive policing algorithms affect communities that are not party to procurement decisions; algorithmic hiring tools affect job-seekers who do not know the system is applied to them; algorithmic content moderation affects global audiences governed by policies made in a small number of corporate headquarters. Stakeholder analysis provides the methodological basis for regulatory requirements such as those in the EU AI Act, which mandates fundamental rights impact assessments for high-risk AI systems, and the GDPR's data protection impact assessments, both of which require systematic consideration of affected parties beyond direct contractual relationships.
 
   - During 2024 and 2025, stakeholder analysis methods adapted to address the distinctive challenges of large-scale AI foundation model deployment, where impacts are diffuse, emergent, and often cross-sectoral. Researchers developed participation frameworks for AI standard-setting processes, highlighting that technical bodies such as ISO and IEEE historically underrepresent civil society and Global South communities. Impact assessment methodologies were extended to capture second-order effects—labour market disruption, cultural homogenisation through AI-generated content, environmental costs of compute infrastructure—that standard project-level stakeholder maps were not designed to surface. Automated stakeholder identification tools using LLMs to analyse regulatory filings, academic literature, and public consultations began entering practice at policy agencies.
-

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Vision Pro]]
-# Apple Mixed Reality Headset
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,47 +79,6 @@ elevatedFrom:: [[Vision Pro]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vision-pro:b75a29532fa5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a40cfb060e186c395796e38339bdd9777462968fb72b0a51b3aa8902c8154e2d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:linked:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:linked:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Apple Inc Technology Corporation]]",
-      "resolved": "urn:visionflow:linked:apple",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mixed Reality]]",
-      "resolved": "urn:visionflow:linked:mixed-reality",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A mixed reality headset developed by Apple, announced in 2023 and released in 2024. It blends digital content with the user's surroundings using high-resolution displays and eye, hand, and voice input.

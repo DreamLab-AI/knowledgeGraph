@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reporting Mechanisms
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Reporting mechanisms are the user-facing tools and processes through which people flag illegal content, abuse, or policy violations to a platform or authority. They are a mandated component of content-moderation regimes, requiring accessible channels, acknowledgement, and traceable handling of notices. Well-designed mechanisms balance ease of reporting against abuse of the reporting system itself.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:metaverse-governance-and-safeguarding", "label": "Metaverse governance and safeguarding"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:community-standards", "label": "Community Standards"},
-      {"@id": "urn:ngm:class:digital-services-act", "label": "Digital Services Act"}
+      {
+        "@id": "urn:ngm:class:community-standards",
+        "label": "Community Standards"
+      },
+      {
+        "@id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
     ]
   },
   "quality": 0.72

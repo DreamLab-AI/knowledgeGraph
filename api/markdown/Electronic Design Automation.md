@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Electronic Design Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -109,7 +104,7 @@ public: true
 
   ## Definition
 
-  **Electronic design automation (EDA)** is the software industry that makes modern chip design possible. A leading-edge processor contains tens of billions of transistors; no human team could place, connect, and verify them manually. EDA tools automate the flow from abstract description to manufacturable silicon: designers write behaviour in a hardware description language (Verilog, VHDL, or higher-level languages such as Chisel), and toolchains synthesise that description into logic gates, map gates onto a target technology, place and route them on the die, and verify at every stage that timing, power, and functional correctness constraints hold.
+  **Electronic design automation (EDA)** is the software industry that makes modern chip design possible. A leading-edge processor contains tens of billions of transistors; no human team [private] place, connect, and verify them manually. EDA tools automate the flow from abstract description to manufacturable silicon: designers write behaviour in a hardware description language (Verilog, VHDL, or higher-level languages such as Chisel), and toolchains synthesise that description into logic gates, map gates onto a target technology, place and route them on the die, and verify at every stage that timing, power, and functional correctness constraints hold.
 
   The canonical flow divides into front-end and back-end. The front end covers specification, register-transfer-level (RTL) design, simulation, and functional verification — the last consuming the majority of engineering effort on large projects, using constrained-random simulation, emulation, and formal methods. The back end covers logic synthesis, floorplanning, placement, clock-tree synthesis, routing, and sign-off analyses (static timing, power integrity, design-rule checking) against the foundry's process design kit. Each step is a hard combinatorial problem; EDA is one of the largest industrial consumers of algorithms from [[Sat Solving]], SMT solving, graph partitioning, and simulated annealing, and formal equivalence checking rests directly on SAT.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Algorithmic Impact Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -141,6 +137,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - An algorithmic impact assessment is a structured governance process for evaluating the potential effects of an automated decision-making or artificial-intelligence system on individuals, groups and society before and during its deployment. It documents the system's purpose, data, risks to fairness, privacy and safety, and the mitigations and oversight controls in place, producing an auditable record for accountability. Modelled on data-protection and environmental impact assessments, it is increasingly mandated by AI regulation and procurement frameworks to ensure responsible and transparent use of algorithms.
   - Related core concepts: [[AI Governance]] [[AI Ethics]] [[Algorithmic Accountability]] [[Risk Assessment]]

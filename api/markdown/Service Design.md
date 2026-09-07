@@ -1,39 +1,118 @@
----
-public: true
----
-
-# Service Design
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:service-design", "@type":"Page", "title":"Service Design", "vc:slug":"service-design", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:service-design",
+  "@type": "Page",
+  "title": "Service Design",
+  "vc:slug": "service-design",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:service-design",
-  "@type":"Class",
-  "label":"Service Design",
-  "definition":"Service design is the activity of planning and orchestrating the people, infrastructure, communication, and touchpoints of a service to improve its quality and the interaction between a provider and its users. It takes a holistic, end-to-end view that spans front-stage customer experiences and the back-stage processes and systems that enable them. Service designers use tools such as journey maps and service blueprints to align organisational capabilities with user needs across every channel.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:user-experience","label":"User Experience"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:user-experience","label":"User Experience"}],
-    "relatedTo":[{"@id":"urn:ngm:class:customer-experience","label":"Customer Experience"},{"@id":"urn:ngm:class:product-design","label":"Product Design"},{"@id":"urn:ngm:class:interaction-design","label":"Interaction Design"}],
-    "uses":[{"@id":"urn:ngm:class:design-thinking","label":"Design Thinking"},{"@id":"urn:ngm:class:stakeholder-mapping","label":"Stakeholder Mapping"}],
-    "requires":[{"@id":"urn:ngm:class:user-research","label":"User Research"}],
-    "supports":[{"@id":"urn:ngm:class:customer-experience","label":"Customer Experience"}],
-    "enables":[{"@id":"urn:ngm:class:usability","label":"Usability"}],
-    "dependsOn":[{"@id":"urn:ngm:class:user-research","label":"User Research"}],
-    "implements":[{"@id":"urn:ngm:class:design-thinking","label":"Design Thinking"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:product-design","label":"Product Design"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"}],
-    "informs":[{"@id":"urn:ngm:class:user-experience","label":"User Experience"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:service-design",
+  "@type": "Class",
+  "label": "Service Design",
+  "definition": "Service design is the activity of planning and orchestrating the people, infrastructure, communication, and touchpoints of a service to improve its quality and the interaction between a provider and its users. It takes a holistic, end-to-end view that spans front-stage customer experiences and the back-stage processes and systems that enable them. Service designers use tools such as journey maps and service blueprints to align organisational capabilities with user needs across every channel.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:user-experience",
+      "label": "User Experience"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-mapping",
+        "label": "Stakeholder Mapping"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "informs": [
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

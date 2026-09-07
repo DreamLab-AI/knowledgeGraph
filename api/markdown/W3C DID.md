@@ -1,8 +1,3 @@
----
-public: true
----
-
-# W3C DID
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,4 +183,3 @@ public: true
   - W3C DID is significant because it replaces the dependence on centralised identity authorities (certificate authorities, email providers, social network platforms) with a verifiable, portable identifier that a subject controls independently. This has profound implications for credential portability (users own their qualifications and licences), privacy (selective disclosure without issuer tracking), and resilience (identity not lost when a service provider disappears). In enterprise contexts, DIDs enable inter-organisational trust without federation agreements.
 
   - In 2024-2025, the EU Digital Identity Wallet (EUDI Wallet) specified under eIDAS2 mandates W3C DID-compatible identifiers for EU citizens, representing the largest government deployment of the standard globally. The W3C DID Working Group published DID Resolution v1.0 and DID Methods Registry updates. OpenID4VCI and OpenID4VP protocols — which bind DID-based key material to credential issuance and presentation — have achieved wide implementation across wallet vendors. The `did:web` method is seeing particular enterprise adoption as a low-friction entry point, while `did:jwk` and `did:key` serve ephemeral credential use cases.
-

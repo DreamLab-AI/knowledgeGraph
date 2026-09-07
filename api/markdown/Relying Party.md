@@ -1,38 +1,112 @@
----
-public: true
----
-
-# Relying Party
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:relying-party", "@type":"Page", "title":"Relying Party", "vc:slug":"relying-party", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:relying-party",
+  "@type": "Page",
+  "title": "Relying Party",
+  "vc:slug": "relying-party",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:relying-party",
-  "@type":"Class",
-  "label":"Relying Party",
-  "definition":"A relying party is an application or service that depends on an external identity provider or credential issuer to authenticate users and assert their attributes, rather than managing credentials itself. It consumes and validates assertions, tokens or verifiable credentials to make access-control decisions. As a core role in federated and decentralised identity, the relying party trusts issuers within a defined trust framework and enforces the resulting authorisation.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:identity-management","label":"Identity Management"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:identity-provider","label":"Identity Provider"},{"@id":"urn:ngm:class:trust-framework","label":"Trust Framework"}],
-    "hasPart":[{"@id":"urn:ngm:class:access-control","label":"Access Control"}],
-    "implements":[{"@id":"urn:ngm:class:authentication-protocol","label":"Authentication Protocol"}],
-    "uses":[{"@id":"urn:ngm:class:oauth","label":"OAuth"},{"@id":"urn:ngm:class:saml","label":"SAML"}],
-    "dependsOn":[{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-    "supports":[{"@id":"urn:ngm:class:single-sign-on","label":"Single Sign On"}],
-    "enables":[{"@id":"urn:ngm:class:authorization","label":"Authorization"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:identity-provider","label":"Identity Provider"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:verifiable-credentials","label":"Verifiable Credentials"}],
-    "relatedTo":[{"@id":"urn:ngm:class:federated-identity","label":"Federated Identity"},{"@id":"urn:ngm:class:digital-trust","label":"Digital Trust"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:relying-party",
+  "@type": "Class",
+  "label": "Relying Party",
+  "definition": "A relying party is an application or service that depends on an external identity provider or credential issuer to authenticate users and assert their attributes, rather than managing credentials itself. It consumes and validates assertions, tokens or verifiable credentials to make access-control decisions. As a core role in federated and decentralised identity, the relying party trusts issuers within a defined trust framework and enforces the resulting authorisation.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:authentication-protocol",
+        "label": "Authentication Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign On"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

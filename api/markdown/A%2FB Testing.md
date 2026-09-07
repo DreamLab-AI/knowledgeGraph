@@ -1,10 +1,3 @@
----
-public: true
-title: A/B Testing
----
-
-# A/B Testing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

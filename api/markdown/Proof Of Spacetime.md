@@ -1,39 +1,134 @@
----
-public: true
----
-
-# Proof Of Spacetime
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:proof-of-spacetime", "@type":"Page", "title":"Proof Of Spacetime", "vc:slug":"proof-of-spacetime", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:proof-of-spacetime",
+  "@type": "Page",
+  "title": "Proof Of Spacetime",
+  "vc:slug": "proof-of-spacetime",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:proof-of-spacetime",
-  "@type":"Class",
-  "label":"Proof Of Spacetime",
-  "definition":"Proof of Spacetime (PoSt) is a cryptographic consensus mechanism in which a participant repeatedly proves that it has continuously stored a specific set of data over a period of time, rather than expending computation as in proof of work. Used by decentralised storage networks such as Filecoin, it combines storage proofs with time-based challenges so that providers cannot reclaim space without losing the ability to answer. This ties block production and rewards to verifiable, useful storage capacity.",
-  "domain":"blockchain",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}],
-    "hasPart":[{"@id":"urn:ngm:class:cryptographic-proof","label":"Cryptographic Proof"}],
-    "uses":[{"@id":"urn:ngm:class:cryptographic-proof","label":"Cryptographic Proof"},{"@id":"urn:ngm:class:verifiable-computation","label":"Verifiable Computation"}],
-    "implements":[{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"},{"@id":"urn:ngm:class:decentralized-storage","label":"Decentralized Storage"}],
-    "enables":[{"@id":"urn:ngm:class:decentralized-storage","label":"Decentralized Storage"},{"@id":"urn:ngm:class:file-storage","label":"File Storage"}],
-    "supports":[{"@id":"urn:ngm:class:filecoin","label":"Filecoin"},{"@id":"urn:ngm:class:block-reward","label":"Block Reward"}],
-    "requires":[{"@id":"urn:ngm:class:cryptographic-proof","label":"Cryptographic Proof"}],
-    "dependsOn":[{"@id":"urn:ngm:class:decentralized-storage","label":"Decentralized Storage"}],
-    "relatedTo":[{"@id":"urn:ngm:class:ipfs","label":"IPFS"},{"@id":"urn:ngm:class:replication","label":"Replication"},{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:proof-of-work","label":"Proof Of Work"},{"@id":"urn:ngm:class:proof-of-stake","label":"Proof of Stake"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:proof-of-reserves","label":"Proof of Reserves"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:proof-of-spacetime",
+  "@type": "Class",
+  "label": "Proof Of Spacetime",
+  "definition": "Proof of Spacetime (PoSt) is a cryptographic consensus mechanism in which a participant repeatedly proves that it has continuously stored a specific set of data over a period of time, rather than expending computation as in proof of work. Used by decentralised storage networks such as Filecoin, it combines storage proofs with time-based challenges so that providers cannot reclaim space without losing the ability to answer. This ties block production and rewards to verifiable, useful storage capacity.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "@id": "urn:ngm:class:file-storage",
+        "label": "File Storage"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Catastrophic Risk Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,14 +17,25 @@ public: true
   "@id": "urn:ngm:class:catastrophic-risk-assessment",
   "@type": "Class",
   "label": "Catastrophic Risk Assessment",
-  "definition": "Catastrophic risk assessment is the systematic evaluation of low-probability, high-severity hazards that could cause widespread harm, including the danger that advanced AI systems may enable mass casualties or societal-scale disruption. In AI governance it involves measuring a model's potential to contribute to chemical, biological, cyber, or autonomous-weapon threats before deployment. It matters because frontier-AI regulation, such as proposed state safety bills, conditions release on credible assessment and mitigation of these tail risks.",
+  "definition": "Catastrophic risk assessment is the systematic evaluation of low-probability, high-severity hazards that [private] cause widespread harm, including the danger that advanced AI systems may enable mass casualties or societal-scale disruption. In AI governance it involves measuring a model's potential to contribute to chemical, biological, cyber, or autonomous-weapon threats before deployment. It matters because frontier-AI regulation, such as proposed state safety bills, conditions release on credible assessment and mitigation of these tail risks.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:california-ai-bill", "label": "California AI bill"},
-      {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"}
+      {
+        "@id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "@id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      }
     ]
   },
   "quality": 0.72
@@ -37,7 +43,7 @@ public: true
 ```
 
 - ### Definition
-  - Catastrophic risk assessment is the systematic analytical process of identifying, characterising, and evaluating low-probability, high-consequence hazards with the potential to cause mass casualties, civilisational disruption, or irreversible harm to humanity's long-term potential, with particular application in [[AI Safety]] and [[AI Governance]] to the question of whether frontier [[Artificial Intelligence]] systems could enable or accelerate such outcomes. In the context of advanced AI, catastrophic risks are most commonly grouped into three core technical domains: CBRN (chemical, biological, radiological and nuclear) weapon uplift — the provision of meaningful capability enhancement to actors seeking to develop weapons of mass destruction; advanced cyber operation capability — enabling large-scale, coordinated cyberattacks against critical national infrastructure at a scale or sophistication exceeding current attacker capabilities; and autonomous behaviour risks — scenarios in which AI systems pursue goals in ways that evade human control or cause large-scale unintended harm. Catastrophic risk assessment in AI draws on techniques from traditional hazard analysis — probabilistic risk assessment (PRA), fault tree analysis, failure mode and effects analysis — adapted to the distinctive challenge that the risk pathway runs through information and capability transfer rather than physical system failure: an AI model "causes" harm not by malfunctioning but by successfully performing a task (answering a query, generating content, executing code) whose outputs can be weaponised. Assessment involves dangerous capability evaluation (measuring whether a model possesses the relevant capability), uplift quantification (measuring whether the model provides meaningful capability increase beyond what is available in public literature and through existing means), threat modelling (identifying plausible harm pathways from capability to mass harm), and adversarial elicitation (testing whether safety mitigations prevent dangerous capability expression under realistic attack scenarios). The growing regulatory embedding of catastrophic risk assessment — in California's SB53 (signed September 2025), the EU AI Act's prohibited practices and general-purpose AI model requirements, the UK's forthcoming AI Bill, and voluntary responsible scaling policies at Anthropic, OpenAI, Google DeepMind, Meta, and xAI — has elevated it from a niche safety research concern to a mandatory governance practice at the frontier of AI development.
+  - Catastrophic risk assessment is the systematic analytical process of identifying, characterising, and evaluating low-probability, high-consequence hazards with the potential to cause mass casualties, civilisational disruption, or irreversible harm to humanity's long-term potential, with particular application in [[AI Safety]] and [[AI Governance]] to the question of whether frontier [[Artificial Intelligence]] systems [private] enable or accelerate such outcomes. In the context of advanced AI, catastrophic risks are most commonly grouped into three core technical domains: CBRN (chemical, biological, radiological and nuclear) weapon uplift — the provision of meaningful capability enhancement to actors seeking to develop weapons of mass destruction; advanced cyber operation capability — enabling large-scale, coordinated cyberattacks against critical national infrastructure at a scale or sophistication exceeding current attacker capabilities; and autonomous behaviour risks — scenarios in which AI systems pursue goals in ways that evade human control or cause large-scale unintended harm. Catastrophic risk assessment in AI draws on techniques from traditional hazard analysis — probabilistic risk assessment (PRA), fault tree analysis, failure mode and effects analysis — adapted to the distinctive challenge that the risk pathway runs through information and capability transfer rather than physical system failure: an AI model "causes" harm not by malfunctioning but by successfully performing a task (answering a query, generating content, executing code) whose outputs can be weaponised. Assessment involves dangerous capability evaluation (measuring whether a model possesses the relevant capability), uplift quantification (measuring whether the model provides meaningful capability increase beyond what is available in public literature and through existing means), threat modelling (identifying plausible harm pathways from capability to mass harm), and adversarial elicitation (testing whether safety mitigations prevent dangerous capability expression under realistic attack scenarios). The growing regulatory embedding of catastrophic risk assessment — in California's SB53 (signed September 2025), the EU AI Act's prohibited practices and general-purpose AI model requirements, the UK's forthcoming AI Bill, and voluntary responsible scaling policies at Anthropic, OpenAI, Google DeepMind, Meta, and xAI — has elevated it from a niche safety research concern to a mandatory governance practice at the frontier of AI development.
 
 - ### Semantic Classification
   - owl-class:: ai:CatastrophicRiskAssessment
@@ -179,7 +185,7 @@ public: true
   **The uplift concept:**
 
   The distinction between catastrophic and merely harmful AI outputs is operationalised through "uplift":
-  - Uplift is the marginal capability increase an AI system provides to a malicious actor beyond what they could achieve through existing means (public literature, internet search, expert consultation).
+  - Uplift is the marginal capability increase an AI system provides to a malicious actor beyond what they [private] achieve through existing means (public literature, internet search, expert consultation).
   - A system recapitulating freely available information provides minimal uplift even if the content is technically dangerous.
   - A system synthesising novel combinations, performing complex multi-step reasoning, or providing interactive tutoring that closes expertise gaps provides significant uplift.
   - Uplift quantification requires domain specialists (biosecurity researchers, chemists, cybersecurity experts, weapons proliferation analysts) to evaluate model outputs against specific dangerous tasks.
@@ -274,7 +280,7 @@ public: true
   **1. Pre-deployment dangerous capability evaluation (RSP compliance)**
 
   The most immediate use case — verification that a frontier model does not exceed defined dangerous capability thresholds before deployment:
-  - Under Anthropic's RSP ASL-3 classification, a model that could "provide real uplift to those seeking to create biological, chemical, nuclear or radiological weapons with the potential for mass casualties" triggers enhanced deployment restrictions, security measures, and third-party review requirements.
+  - Under Anthropic's RSP ASL-3 classification, a model that [private] "provide real uplift to those seeking to create biological, chemical, nuclear or radiological weapons with the potential for mass casualties" triggers enhanced deployment restrictions, security measures, and third-party review requirements.
   - Pre-deployment evaluation involves a structured combination:
     - Capability benchmarking: WMDP, biological uplift assessments, HarmBench, GPQA chemistry.
     - Automated red teaming: PAIR attacks, GCG adversarial suffixes, jailbreak evaluation.
@@ -317,7 +323,7 @@ public: true
   **5. AI-enabled disinformation and political disruption**
 
   - A contested but growing area of catastrophic risk assessment:
-    - Examines whether advanced AI systems could enable disinformation or influence operations undermining democratic institutions or triggering civil conflict.
+    - Examines whether advanced AI systems [private] enable disinformation or influence operations undermining democratic institutions or triggering civil conflict.
     - Risk pathway is more diffuse than CBRN uplift (many small-scale harms aggregating to macro disruption) rather than a single high-impact event.
   - Assessment is more difficult because "uplift" for political manipulation is harder to define and measure than CBRN uplift.
   - The EU AI Act, UK Online Safety Act, and US executive orders identify this as a priority risk category.
@@ -488,7 +494,7 @@ public: true
 
   **AI catastrophic risk international governance:** Multilateral AI catastrophic risk governance — analogous to nuclear non-proliferation, biological weapons convention, or chemical weapons convention frameworks — is at an early formative stage. The AI Safety Institute network, G7 Hiroshima AI Process, OECD AI Policy Observatory, and UN Secretary-General's AI Advisory Body have all made preliminary proposals for international information-sharing, threshold-harmonisation, and coordinated evaluation mechanisms. The central challenge is that AI capabilities are developed primarily by private-sector companies rather than government programmes, making direct regulatory control analogous to nuclear material licensing difficult to implement. The California SB53 model — statutory obligations on developers combined with mandatory public disclosure — may provide the most implementable international template: companies operating in any participating jurisdiction would be required to meet standardised catastrophic risk assessment obligations.
 
-  **Integration with biosecurity and pandemic preparedness infrastructure:** The convergence of AI uplift risk for biological weapons with the broader biosecurity and pandemic preparedness infrastructure is an increasingly important policy integration. The COVID-19 pandemic demonstrated the vulnerability of global systems to biological threats and motivated substantial investment in biosecurity infrastructure. Integrating AI catastrophic risk assessment into this infrastructure — including sentinel surveillance for AI-enabled biosecurity breaches, laboratory biosafety protocols accounting for AI-assisted design, and international information-sharing arrangements — will require coordination between AI safety institutions and the biosecurity community that is still in early development. The Johns Hopkins Centre for Health Security and the Nucleic Acid Observatory project are developing biosurveillance infrastructure that could detect AI-enabled pathogen engineering attempts; integrating this with AI capability monitoring creates a comprehensive biosecurity early-warning system.
+  **Integration with biosecurity and pandemic preparedness infrastructure:** The convergence of AI uplift risk for biological weapons with the broader biosecurity and pandemic preparedness infrastructure is an increasingly important policy integration. The COVID-19 pandemic demonstrated the vulnerability of global systems to biological threats and motivated substantial investment in biosecurity infrastructure. Integrating AI catastrophic risk assessment into this infrastructure — including sentinel surveillance for AI-enabled biosecurity breaches, laboratory biosafety protocols accounting for AI-assisted design, and international information-sharing arrangements — will require coordination between AI safety institutions and the biosecurity community that is still in early development. The Johns Hopkins Centre for Health Security and the Nucleic Acid Observatory project are developing biosurveillance infrastructure that [private] detect AI-enabled pathogen engineering attempts; integrating this with AI capability monitoring creates a comprehensive biosecurity early-warning system.
 
   **Autonomous AI behaviour risk assessment:** The rapid growth of agentic AI deployment — AI systems that take extended sequences of actions in digital and physical environments — creates catastrophic risk scenarios that pre-agentic evaluation frameworks did not anticipate. An AI agent that can autonomously manipulate markets, compromise critical infrastructure, or replicate itself across distributed computing environments presents catastrophic risks that single-turn capability benchmarks cannot detect. Developing catastrophic risk assessment methodology for multi-agent systems — including control protocol auditing, agent interaction scenario simulation, and formal verification of agent safety properties — is a major research and engineering priority for the 2027–2030 period.
 
@@ -520,13 +526,13 @@ public: true
   **Scoring and assessment frameworks:**
   - **FLI AI Safety Index**: 65-criterion scoring rubric for frontier AI labs' catastrophic risk assessment practices; assessed major labs in Winter 2025 finding scores from 8%–34%.
   - **METR Safety Framework Comparison**: systematic comparison of common elements across major frontier AI safety frameworks published after Seoul Summit.
-  - **Apollo Research Scheming Evaluations**: structured evaluation of AI deception, situational awareness, and self-preservation behaviours that could enable catastrophic autonomous action.
+  - **Apollo Research Scheming Evaluations**: structured evaluation of AI deception, situational awareness, and self-preservation behaviours that [private] enable catastrophic autonomous action.
 
   ## Key Terminology
 
   - **Catastrophic Risk:** Risk of events causing mass casualties, civilisational-scale disruption, or irreversible harm to humanity's long-term potential; distinguished from "merely severe" risks by irreversibility and scale.
   - **CBRN:** Chemical, biological, radiological, and nuclear; the four primary weapon categories whose development or deployment constitutes a catastrophic harm pathway in AI risk assessment frameworks.
-  - **Uplift:** The marginal capability increase an AI system provides to a malicious actor beyond what they could achieve without AI assistance; the central quantity in catastrophic risk assessment for AI.
+  - **Uplift:** The marginal capability increase an AI system provides to a malicious actor beyond what they [private] achieve without AI assistance; the central quantity in catastrophic risk assessment for AI.
   - **Dangerous Capability Evaluation:** Structured assessment of whether a model possesses capabilities relevant to catastrophic harm; the primary technical component of pre-deployment catastrophic risk assessment.
   - **AI Safety Level (ASL):** Anthropic's tiered classification of model dangerous capabilities from ASL-2 (limited uplift potential) through ASL-4 (potential for AI-driven civilisational disruption), with each level triggering defined safety requirements.
   - **Responsible Scaling Policy (RSP):** An AI lab's internal framework defining dangerous capability thresholds and the safety measures triggered when models approach or exceed each threshold; the voluntary industry complement to statutory catastrophic risk frameworks.
@@ -565,7 +571,7 @@ public: true
   - **Alan Turing Institute CETaS**: published International AI Safety Report 2026 drawing on thirty-country expert contributions; maintains the most comprehensive UK-based analysis of catastrophic AI risk trajectories.
 
   **Biosecurity and specialised research:**
-  - **Nucleic Acid Observatory**: biosurveillance infrastructure project that could detect AI-enabled pathogen engineering attempts; integration with AI catastrophic risk monitoring is an active research direction.
+  - **Nucleic Acid Observatory**: biosurveillance infrastructure project that [private] detect AI-enabled pathogen engineering attempts; integration with AI catastrophic risk monitoring is an active research direction.
   - **Nuclear Threat Initiative (NTI) Global Health Security**: has published analyses of AI dual-use risks in biosecurity contexts, contributing to international governance frameworks.
   - **Biosecurity Entrepreneurs Group**: network of biosecurity researchers and policy advocates developing community norms for AI use in life sciences research.
 
@@ -606,7 +612,7 @@ public: true
 
   **1. The uplift quantification problem:**
   - Measuring the marginal capability increase an AI system provides to a malicious actor requires comparing AI-assisted performance against unassisted performance by realistic threat actors — a measurement that cannot be directly conducted without replicating the harm.
-  - Counterfactual baselines (what could the threat actor achieve without AI?) are inherently uncertain and change as public resources, online tutorials, and AI access evolve.
+  - Counterfactual baselines (what [private] the threat actor achieve without AI?) are inherently uncertain and change as public resources, online tutorials, and AI access evolve.
   - Expert evaluators differ substantially on what constitutes "meaningful uplift" for specific dangerous tasks.
   - This measurement uncertainty propagates into all regulatory threshold definitions based on uplift.
 

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Artificial Intelligence Research
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,64 +8,238 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:research-and-development", "vc:label": "Research and Development"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:scientific-method", "vc:label": "Scientific Method"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:knowledge-discovery", "vc:label": "Knowledge Discovery"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:benchmark-evaluation", "vc:label": "Benchmark Evaluation"},
-    {"@id": "urn:visionflow:linked:reproducibility", "vc:label": "Reproducibility"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:ai-safety-research", "vc:label": "AI Safety Research"},
-    {"@id": "urn:visionflow:linked:alignment-research", "vc:label": "Alignment Research"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:academic-research", "vc:label": "Academic Research"},
-    {"@id": "urn:visionflow:linked:peer-review", "vc:label": "Peer Review"},
-    {"@id": "urn:visionflow:linked:empirical-evaluation", "vc:label": "Empirical Evaluation"},
-    {"@id": "urn:visionflow:linked:symbolic-ai", "vc:label": "Symbolic AI"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:artificial-general-intelligence", "vc:label": "Artificial General Intelligence"},
-    {"@id": "urn:visionflow:linked:frontier-ai", "vc:label": "Frontier AI"},
-    {"@id": "urn:visionflow:linked:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:alan-turing-institute", "vc:label": "Alan Turing Institute"},
-    {"@id": "urn:visionflow:linked:benchmarks", "vc:label": "Benchmarks"},
-    {"@id": "urn:visionflow:linked:hypothesis-testing", "vc:label": "Hypothesis Testing"},
-    {"@id": "urn:visionflow:linked:experimental-design", "vc:label": "Experimental Design"},
-    {"@id": "urn:visionflow:linked:preprint-culture", "vc:label": "Preprint Culture"},
-    {"@id": "urn:visionflow:linked:open-source-ai", "vc:label": "Open Source AI"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:dataset-curation", "vc:label": "Dataset Curation"},
-    {"@id": "urn:visionflow:linked:evaluation-metric", "vc:label": "Evaluation Metric"},
-    {"@id": "urn:visionflow:linked:ai-policy", "vc:label": "AI Policy"},
-    {"@id": "urn:visionflow:linked:neural-symbolic-ai", "vc:label": "Neural-Symbolic AI"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:turing-1950-computing-machinery", "vc:label": "Turing 1950 Computing Machinery and Intelligence"},
-    {"@id": "urn:visionflow:linked:vaswani-2017-attention", "vc:label": "Vaswani et al 2017 Attention Is All You Need"},
-    {"@id": "urn:visionflow:linked:bommasani-2021-foundation-models", "vc:label": "Bommasani et al 2021 Foundation Models"},
-    {"@id": "urn:visionflow:linked:stanford-ai-index-2026", "vc:label": "Stanford AI Index 2026"},
-    {"@id": "urn:visionflow:linked:bengio-2025-international-ai-safety-report", "vc:label": "Bengio et al 2025 International AI Safety Report"},
-    {"@id": "urn:visionflow:linked:adversarial-machine-learning", "vc:label": "Adversarial Machine Learning"},
-    {"@id": "urn:visionflow:linked:bayesian-deep-learning", "vc:label": "Bayesian Deep Learning"},
-    {"@id": "urn:visionflow:linked:contrastive-learning", "vc:label": "Contrastive Learning"},
-    {"@id": "urn:visionflow:linked:continual-learning", "vc:label": "Continual Learning"},
-    {"@id": "urn:visionflow:linked:curriculum-learning", "vc:label": "Curriculum Learning"},
-    {"@id": "urn:visionflow:linked:applied-machine-learning", "vc:label": "Applied Machine Learning"},
-    {"@id": "urn:visionflow:linked:ai-research", "vc:label": "AI Research"}
+    {
+      "@id": "urn:visionflow:linked:research-and-development",
+      "vc:label": "Research and Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:scientific-method",
+      "vc:label": "Scientific Method"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-discovery",
+      "vc:label": "Knowledge Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-evaluation",
+      "vc:label": "Benchmark Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducibility",
+      "vc:label": "Reproducibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety-research",
+      "vc:label": "AI Safety Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:alignment-research",
+      "vc:label": "Alignment Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:academic-research",
+      "vc:label": "Academic Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-review",
+      "vc:label": "Peer Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:empirical-evaluation",
+      "vc:label": "Empirical Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-general-intelligence",
+      "vc:label": "Artificial General Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-ai",
+      "vc:label": "Frontier AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:alan-turing-institute",
+      "vc:label": "Alan Turing Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmarks",
+      "vc:label": "Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:hypothesis-testing",
+      "vc:label": "Hypothesis Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:experimental-design",
+      "vc:label": "Experimental Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:preprint-culture",
+      "vc:label": "Preprint Culture"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source-ai",
+      "vc:label": "Open Source AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:dataset-curation",
+      "vc:label": "Dataset Curation"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-metric",
+      "vc:label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-policy",
+      "vc:label": "AI Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-symbolic-ai",
+      "vc:label": "Neural-Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:turing-1950-computing-machinery",
+      "vc:label": "Turing 1950 Computing Machinery and Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:vaswani-2017-attention",
+      "vc:label": "Vaswani et al 2017 Attention Is All You Need"
+    },
+    {
+      "@id": "urn:visionflow:linked:bommasani-2021-foundation-models",
+      "vc:label": "Bommasani et al 2021 Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:stanford-ai-index-2026",
+      "vc:label": "Stanford AI Index 2026"
+    },
+    {
+      "@id": "urn:visionflow:linked:bengio-2025-international-ai-safety-report",
+      "vc:label": "Bengio et al 2025 International AI Safety Report"
+    },
+    {
+      "@id": "urn:visionflow:linked:adversarial-machine-learning",
+      "vc:label": "Adversarial Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-deep-learning",
+      "vc:label": "Bayesian Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:contrastive-learning",
+      "vc:label": "Contrastive Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:continual-learning",
+      "vc:label": "Continual Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:applied-machine-learning",
+      "vc:label": "Applied Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research",
+      "vc:label": "AI Research"
+    }
   ]
 }
 ```
@@ -93,62 +261,176 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:research-and-development", "label": "Research and Development"}
+      {
+        "@id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:benchmark-evaluation", "label": "Benchmark Evaluation"},
-      {"@id": "urn:ngm:class:empirical-evaluation", "label": "Empirical Evaluation"},
-      {"@id": "urn:ngm:class:hypothesis-testing", "label": "Hypothesis Testing"},
-      {"@id": "urn:ngm:class:dataset-curation", "label": "Dataset Curation"},
-      {"@id": "urn:ngm:class:peer-review", "label": "Peer Review"},
-      {"@id": "urn:ngm:class:experimental-design", "label": "Experimental Design"}
+      {
+        "@id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:empirical-evaluation",
+        "label": "Empirical Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      },
+      {
+        "@id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "@id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:alignment-research", "label": "Alignment Research"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:applied-machine-learning", "label": "Applied Machine Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:scientific-method", "label": "Scientific Method"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"},
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-      {"@id": "urn:ngm:class:preprint-culture", "label": "Preprint Culture"}
+      {
+        "@id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:preprint-culture",
+        "label": "Preprint Culture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-discovery", "label": "Knowledge Discovery"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:frontier-ai", "label": "Frontier AI"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:scientific-method", "label": "Scientific Method"},
-      {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"},
-      {"@id": "urn:ngm:class:peer-review", "label": "Peer Review"}
+      {
+        "@id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:research-and-development", "label": "Research and Development"},
-      {"@id": "urn:ngm:class:dataset-curation", "label": "Dataset Curation"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      },
+      {
+        "@id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:applied-machine-learning", "label": "Applied Machine Learning"}
+      {
+        "@id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      }
     ]
   },
   "sameAs": [],
@@ -158,66 +440,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:artificial-intelligence-research:b2c3d4e5f6a1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:artificial-intelligence-research"},
-  "vc:resolutions": [
-    {"raw": "[[Research and Development]]", "resolved": "urn:visionflow:linked:research-and-development", "kind": "StubLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Scientific Method]]", "resolved": "urn:visionflow:linked:scientific-method", "kind": "StubLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Discovery]]", "resolved": "urn:visionflow:linked:knowledge-discovery", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Benchmark Evaluation]]", "resolved": "urn:visionflow:linked:benchmark-evaluation", "kind": "ResolvedLink"},
-    {"raw": "[[Reproducibility]]", "resolved": "urn:visionflow:linked:reproducibility", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:linked:multimodal-ai", "kind": "StubLink"},
-    {"raw": "[[AI Safety Research]]", "resolved": "urn:visionflow:linked:ai-safety-research", "kind": "ResolvedLink"},
-    {"raw": "[[Alignment Research]]", "resolved": "urn:visionflow:linked:alignment-research", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Academic Research]]", "resolved": "urn:visionflow:linked:academic-research", "kind": "ResolvedLink"},
-    {"raw": "[[Peer Review]]", "resolved": "urn:visionflow:linked:peer-review", "kind": "StubLink"},
-    {"raw": "[[Empirical Evaluation]]", "resolved": "urn:visionflow:linked:empirical-evaluation", "kind": "StubLink"},
-    {"raw": "[[Symbolic AI]]", "resolved": "urn:visionflow:linked:symbolic-ai", "kind": "StubLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "StubLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "StubLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:visionflow:linked:active-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Artificial General Intelligence]]", "resolved": "urn:visionflow:linked:artificial-general-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Frontier AI]]", "resolved": "urn:visionflow:linked:frontier-ai", "kind": "StubLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:linked:ai-ethics", "kind": "StubLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "StubLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "ResolvedLink"},
-    {"raw": "[[Alan Turing Institute]]", "resolved": "urn:visionflow:linked:alan-turing-institute", "kind": "StubLink"},
-    {"raw": "[[Benchmarks]]", "resolved": "urn:visionflow:linked:benchmarks", "kind": "ResolvedLink"},
-    {"raw": "[[Hypothesis Testing]]", "resolved": "urn:visionflow:linked:hypothesis-testing", "kind": "StubLink"},
-    {"raw": "[[Experimental Design]]", "resolved": "urn:visionflow:linked:experimental-design", "kind": "StubLink"},
-    {"raw": "[[Preprint Culture]]", "resolved": "urn:visionflow:linked:preprint-culture", "kind": "StubLink"},
-    {"raw": "[[Open Source AI]]", "resolved": "urn:visionflow:linked:open-source-ai", "kind": "StubLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "StubLink"},
-    {"raw": "[[Dataset Curation]]", "resolved": "urn:visionflow:linked:dataset-curation", "kind": "StubLink"},
-    {"raw": "[[Evaluation Metric]]", "resolved": "urn:visionflow:linked:evaluation-metric", "kind": "StubLink"},
-    {"raw": "[[AI Policy]]", "resolved": "urn:visionflow:linked:ai-policy", "kind": "StubLink"},
-    {"raw": "[[Neural-Symbolic AI]]", "resolved": "urn:visionflow:linked:neural-symbolic-ai", "kind": "StubLink"},
-    {"raw": "[[Adversarial Machine Learning]]", "resolved": "urn:visionflow:linked:adversarial-machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Bayesian Deep Learning]]", "resolved": "urn:visionflow:linked:bayesian-deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Contrastive Learning]]", "resolved": "urn:visionflow:linked:contrastive-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Continual Learning]]", "resolved": "urn:visionflow:linked:continual-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Curriculum Learning]]", "resolved": "urn:visionflow:linked:curriculum-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Applied Machine Learning]]", "resolved": "urn:visionflow:linked:applied-machine-learning", "kind": "ResolvedLink"}
-  ]
 }
 ```
 

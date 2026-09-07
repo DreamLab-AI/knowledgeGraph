@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Labor Statistics Revision
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "labor-statistics-revision",
   "title": "Labor Statistics Revision",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Bureau of Labor Statistics", "US Employment Data"],
+  "vc:outboundWikilinks": [
+    "Bureau of Labor Statistics",
+    "US Employment Data"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,19 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-economy",
+      "label": "Digital Economy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

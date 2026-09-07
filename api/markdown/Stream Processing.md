@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stream Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,4 +155,3 @@ public: true
   - Industry use cases span financial services (real-time transaction monitoring, order book processing), telecommunications (network anomaly detection), e-commerce (personalisation, inventory updates), and operational intelligence (infrastructure metrics, log analysis). Confluent, Amazon Kinesis, Google Dataflow, and Azure Event Hubs provide managed cloud stream processing, reducing operational overhead. At scale, major deployments process millions of events per second with sub-100-millisecond end-to-end latency.
 
   - By 2024–2025, the distinction between batch and stream processing has blurred further with Apache Flink's unified batch-streaming engine and Apache Spark's Structured Streaming adopting micro-batch approaches. GenAI workloads are driving new streaming patterns for real-time RAG, agent event processing, and model output streaming. RisingWave, Materialize, and other streaming SQL databases are gaining adoption by lowering the operational complexity of building streaming applications.
-

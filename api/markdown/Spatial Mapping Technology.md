@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Mapping Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -98,32 +93,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-mapping-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:64777b3857c5c3ea32a85d91f620cf0ca0886499d9cb94f59c4b7fe2d528f8c5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Spatial Mapping Technology refers to hardware and software systems that capture, process, and maintain geometric representations of physical environments in real time, enabling AR and MR devices to understand and interact with their surroundings. Core techniques include depth sensing, structured light, time-of-flight, and SLAM algorithms that fuse sensor data into persistent, updatable mesh models.

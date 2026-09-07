@@ -1,36 +1,120 @@
----
-public: true
----
-
-# Digital Trust
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:digital-trust", "@type":"Page", "title":"Digital Trust", "vc:slug":"digital-trust", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:digital-trust",
+  "@type": "Page",
+  "title": "Digital Trust",
+  "vc:slug": "digital-trust",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:digital-trust",
-  "@type":"Class",
-  "label":"Digital Trust",
-  "definition":"Digital trust is the confidence that users, organisations, and systems place in the security, privacy, reliability, and integrity of digital services, identities, and transactions. It is established through verifiable mechanisms such as cryptography, certificates, identity assurance, and transparent governance rather than personal familiarity. Digital trust is foundational to e-commerce, online identity, and inter-organisational collaboration, where parties must rely on counterparties and infrastructure they cannot directly inspect.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:trust","label":"Trust"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:digital-identity","label":"Digital Identity"},{"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"}],
-    "supports":[{"@id":"urn:ngm:class:digital-governance","label":"Digital Governance"},{"@id":"urn:ngm:class:reputation-system","label":"Reputation System"}],
-    "requires":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"},{"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"},{"@id":"urn:ngm:class:transparency","label":"Transparency"}],
-    "dependsOn":[{"@id":"urn:ngm:class:trust-framework","label":"Trust Framework"},{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-    "uses":[{"@id":"urn:ngm:class:verifiable-credentials","label":"Verifiable Credentials"},{"@id":"urn:ngm:class:encryption","label":"Encryption"}],
-    "partOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:security","label":"Security"}],
-    "relatedTo":[{"@id":"urn:ngm:class:privacy","label":"Privacy"},{"@id":"urn:ngm:class:data-protection","label":"Data Protection"},{"@id":"urn:ngm:class:accountability","label":"Accountability"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-trust",
+  "@type": "Class",
+  "label": "Digital Trust",
+  "definition": "Digital trust is the confidence that users, organisations, and systems place in the security, privacy, reliability, and integrity of digital services, identities, and transactions. It is established through verifiable mechanisms such as cryptography, certificates, identity assurance, and transparent governance rather than personal familiarity. Digital trust is foundational to e-commerce, online identity, and inter-organisational collaboration, where parties must rely on counterparties and infrastructure they cannot directly inspect.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:trust",
+      "label": "Trust"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

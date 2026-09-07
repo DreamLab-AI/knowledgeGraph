@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Non Verbal Communication
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

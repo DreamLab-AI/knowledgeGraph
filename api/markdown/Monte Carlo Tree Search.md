@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monte Carlo Tree Search
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -141,37 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:monte-carlo-tree-search:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ab8ea661ed766f4e57e62c13dc63c06b96128d1b8d19f3d57f3a12f3eb9e30cd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Game Playing AI]]",
-      "resolved": "urn:visionflow:linked:game-playing-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Search Algorithms]]",
-      "resolved": "urn:visionflow:owl:class:search-algorithms",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Monte Carlo Tree Search is a concept within the ai domain.

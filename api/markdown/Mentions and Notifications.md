@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mentions and Notifications
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Provenance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,7 +180,7 @@ public: true
   - [[Blockchain Provenance]] depends on [[Cryptographic Hash]] functions to link successive records into a tamper-evident chain, and uses [[Merkle Tree]] structures to enable efficient membership proofs. It directly enables [[Supply Chain Traceability]] by providing a shared, neutral ledger that multiple parties can write to and read from without mutual trust. It also underpins [[Audit Trail]] generation in regulatory contexts. The concept overlaps closely with [[Provenance Tracking]] from archival science, and contributes to [[Data Integrity]] guarantees across distributed systems.
 
 - ### Content
-  - Provenance as a concept predates computing—archivists and museum curators have long maintained chain-of-custody records for physical artefacts. When Bitcoin demonstrated in 2009 that a decentralised ledger could track coin ownership without a trusted intermediary, researchers quickly recognised that the same mechanism could track the history of any asset. Early experiments with coloured coins on Bitcoin extended the idea to arbitrary tokens, and by 2015 Ethereum's programmable chain made it practical to encode complex provenance rules in [[Smart Contract]] code.
+  - Provenance as a concept predates computing—archivists and museum curators have long maintained chain-of-custody records for physical artefacts. When Bitcoin demonstrated in 2009 that a decentralised ledger [private] track coin ownership without a trusted intermediary, researchers quickly recognised that the same mechanism [private] track the history of any asset. Early experiments with coloured coins on Bitcoin extended the idea to arbitrary tokens, and by 2015 Ethereum's programmable chain made it practical to encode complex provenance rules in [[Smart Contract]] code.
 
   - Technically, blockchain provenance systems attach metadata—hash digests of documents, geolocation stamps, sensor readings, or inspection certificates—to on-chain transactions. The [[Cryptographic Hash]] of each state is stored on-chain while bulky payloads may live off-chain in content-addressed storage (e.g. IPFS), with the on-chain hash serving as an unforgeable pointer. [[Merkle Tree]] structures allow a verifier to confirm inclusion of a specific record in a large dataset without downloading everything. [[Smart Contract]] logic encodes governance rules: who may register an asset, what state transitions are permitted, and what evidence must accompany each transition.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Generalisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

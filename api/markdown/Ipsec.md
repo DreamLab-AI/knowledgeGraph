@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ipsec
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -141,6 +137,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - IPsec (Internet Protocol Security) is a suite of protocols that secures IP communications by authenticating and encrypting each packet at the network layer. It provides confidentiality, integrity and origin authentication through the Authentication Header and Encapsulating Security Payload protocols, with keys negotiated via the Internet Key Exchange. IPsec is the foundational technology for site-to-site and remote-access virtual private networks operating transparently beneath application protocols.
   - Related core concepts: [[Network Security]] [[VPN]] [[Encryption]] [[TLS]] [[Internet Protocol]]

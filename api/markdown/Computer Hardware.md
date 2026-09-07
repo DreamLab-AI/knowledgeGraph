@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computer Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,62 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computer-hardware:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aee970ae249a4bfe789bd23d743b60e3566888391bb33388c4b5e45060d4ca46"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Accelerator]]",
-      "resolved": "urn:visionflow:linked:ai-accelerator",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed Training]]",
-      "resolved": "urn:visionflow:linked:distributed-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GPU Computing]]",
-      "resolved": "urn:visionflow:linked:gpu-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neuromorphic Hardware]]",
-      "resolved": "urn:visionflow:linked:neuromorphic-hardware",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference. This includes Graphics Processing Units (GPUs), Tensor Processing Units (TPUs), Field-Programmable Gate Arrays (FPGAs), Application-Specific Integrated Circuits (ASICs), and neuromorphic chips. Modern AI hardware emphasizes parallel processing, high memory bandwidth, low-precision arithmetic (FP16, INT8), and energy efficiency. Specialized accelerators like NVIDIA A100/H100, Google TPU v4/v5, and Intel Gaudi enable training of billion-parameter models and real-time inference at scale.

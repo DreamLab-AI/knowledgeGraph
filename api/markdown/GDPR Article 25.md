@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GDPR Article 25
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gdpr-article-25:4a2e797ce2a4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3465832226bf268c9cbc7031b51b53ef57e586c6acc7f11418bb6a1e3cfdbb04"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Minimisation]]",
-      "resolved": "urn:visionflow:linked:data-minimisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Protection]]",
-      "resolved": "urn:visionflow:linked:data-protection",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - GDPR Article 25 sets out the obligation of data protection by design and by default, requiring controllers to embed privacy safeguards into processing systems and to minimise data collection from the outset.

@@ -1,39 +1,134 @@
----
-public: true
----
-
-# Data Science
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-science", "@type":"Page", "title":"Data Science", "vc:slug":"data-science", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-science",
+  "@type": "Page",
+  "title": "Data Science",
+  "vc:slug": "data-science",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:data-science",
-  "@type":"Class",
-  "label":"Data Science",
-  "definition":"Data science is an interdisciplinary field that combines statistics, programming, and domain knowledge to extract insight and build predictive models from data. It spans the full lifecycle from data acquisition and cleaning through exploratory analysis, modelling, and communication of results. Data science underpins evidence-based decision-making and supplies the analytical foundation for applied machine learning.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:statistics","label":"Statistics"},{"@id":"urn:ngm:class:feature-engineering","label":"Feature Engineering"}],
-    "partOf":[{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"}],
-    "requires":[{"@id":"urn:ngm:class:statistics","label":"Statistics"},{"@id":"urn:ngm:class:data-engineering","label":"Data Engineering"}],
-    "enables":[{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"},{"@id":"urn:ngm:class:decision-support","label":"Decision Support"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data-engineering","label":"Data Engineering"}],
-    "uses":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"},{"@id":"urn:ngm:class:python","label":"Python"}],
-    "supports":[{"@id":"urn:ngm:class:business-intelligence","label":"Business Intelligence"},{"@id":"urn:ngm:class:decision-support","label":"Decision Support"}],
-    "implements":[{"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:data-engineering","label":"Data Engineering"}],
-    "relatedTo":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"},{"@id":"urn:ngm:class:data-visualisation","label":"Data Visualisation"},{"@id":"urn:ngm:class:unsupervised-learning","label":"Unsupervised Learning"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-science",
+  "@type": "Class",
+  "label": "Data Science",
+  "definition": "Data science is an interdisciplinary field that combines statistics, programming, and domain knowledge to extract insight and build predictive models from data. It spans the full lifecycle from data acquisition and cleaning through exploratory analysis, modelling, and communication of results. Data science underpins evidence-based decision-making and supplies the analytical foundation for applied machine learning.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-analytics",
+      "label": "Data Analytics"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

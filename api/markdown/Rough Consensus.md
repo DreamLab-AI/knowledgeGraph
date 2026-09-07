@@ -1,36 +1,96 @@
----
-public: true
----
-
-# Rough Consensus
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:rough-consensus", "@type":"Page", "title":"Rough Consensus", "vc:slug":"rough-consensus", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:rough-consensus",
+  "@type": "Page",
+  "title": "Rough Consensus",
+  "vc:slug": "rough-consensus",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:rough-consensus",
-  "@type":"Class",
-  "label":"Rough Consensus",
-  "definition":"Rough consensus is a decision-making principle, central to internet standards development, in which a working group adopts a position when the dominant view has been established and substantive objections have been addressed, rather than requiring unanimity or a formal majority vote. Famously paired with running code in the IETF, it favours technically sound, broadly acceptable outcomes over precise headcounts. The chair judges the sense of the group, ensuring dissent is engaged with rather than merely outnumbered.",
-  "domain":"standards",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:working-group","label":"Working Group"}],
-    "uses":[{"@id":"urn:ngm:class:standards-body","label":"Standards Body"}],
-    "supports":[{"@id":"urn:ngm:class:interoperability-standard","label":"Interoperability Standard"}],
-    "enables":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:internet-engineering-task-force","label":"Internet Engineering Task Force"}],
-    "implements":[{"@id":"urn:ngm:class:governance-mechanism","label":"Governance Mechanism"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:voting-mechanism","label":"Voting Mechanism"}],
-    "relatedTo":[{"@id":"urn:ngm:class:ietf","label":"IETF"},{"@id":"urn:ngm:class:standardisation","label":"Standardization"},{"@id":"urn:ngm:class:standards","label":"Standards"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rough-consensus",
+  "@type": "Class",
+  "label": "Rough Consensus",
+  "definition": "Rough consensus is a decision-making principle, central to internet standards development, in which a working group adopts a position when the dominant view has been established and substantive objections have been addressed, rather than requiring unanimity or a formal majority vote. Famously paired with running code in the IETF, it favours technically sound, broadly acceptable outcomes over precise headcounts. The chair judges the sense of the group, ensuring dissent is engaged with rather than merely outnumbered.",
+  "domain": "standards",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:consensus",
+      "label": "Consensus"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:working-group",
+        "label": "Working Group"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:governance-mechanism",
+        "label": "Governance Mechanism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:standardisation",
+        "label": "Standardization"
+      },
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

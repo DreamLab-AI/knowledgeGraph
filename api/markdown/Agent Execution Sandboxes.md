@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Execution Sandboxes
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,50 +7,182 @@ public: true
   "title": "Agent Execution Sandboxes",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:ngm:class:agent-harness", "vc:label": "Agent Harness" },
-    { "@id": "urn:ngm:class:agentic-ai", "vc:label": "Agentic AI" },
-    { "@id": "urn:ngm:class:agentic-workflow", "vc:label": "Agentic Workflow" },
-    { "@id": "urn:ngm:class:terminal-coding-agents", "vc:label": "Terminal Coding Agents" },
-    { "@id": "urn:ngm:class:agent-development-sdks", "vc:label": "Agent Development SDKs" },
-    { "@id": "urn:ngm:class:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks" },
-    { "@id": "urn:ngm:class:llm-application-frameworks", "vc:label": "LLM Application Frameworks" },
-    { "@id": "urn:ngm:class:tool-use", "vc:label": "Tool Use" },
-    { "@id": "urn:ngm:class:function-calling", "vc:label": "Function Calling" },
-    { "@id": "urn:ngm:class:containerisation", "vc:label": "Containerisation" },
-    { "@id": "urn:ngm:class:container-runtime", "vc:label": "Container Runtime" },
-    { "@id": "urn:ngm:class:docker-containerisation-platform", "vc:label": "Docker Containerisation Platform" },
-    { "@id": "urn:ngm:class:container-orchestration", "vc:label": "Container Orchestration" },
-    { "@id": "urn:ngm:class:open-container-initiative", "vc:label": "Open Container Initiative" },
-    { "@id": "urn:ngm:class:model-context-protocol", "vc:label": "Model Context Protocol" },
-    { "@id": "urn:ngm:class:mcp-server", "vc:label": "MCP Server" },
-    { "@id": "urn:ngm:class:mcp-client", "vc:label": "MCP Client" },
-    { "@id": "urn:ngm:class:code-execution", "vc:label": "Code Execution" },
-    { "@id": "urn:ngm:class:autonomous-coding", "vc:label": "Autonomous Coding" },
-    { "@id": "urn:ngm:class:ai-safety", "vc:label": "AI Safety" },
-    { "@id": "urn:ngm:class:prompt-injection", "vc:label": "Prompt Injection" },
-    { "@id": "urn:ngm:class:human-in-the-loop", "vc:label": "Human-in-the-Loop" },
-    { "@id": "urn:ngm:class:internal-ai-harness", "vc:label": "Internal AI Harness" },
-    { "@id": "urn:ngm:class:external-ai-harness", "vc:label": "External AI Harness" },
-    { "@id": "urn:ngm:class:large-language-models", "vc:label": "Large Language Models" },
-    { "@id": "urn:ngm:class:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation" },
-    { "@id": "urn:ngm:class:vector-database", "vc:label": "Vector Database" },
-    { "@id": "urn:ngm:class:cloud-computing", "vc:label": "Cloud Computing" },
-    { "@id": "urn:ngm:class:microservices-architecture", "vc:label": "Microservices Architecture" },
-    { "@id": "urn:ngm:class:api-gateway", "vc:label": "API Gateway" },
-    { "@id": "urn:ngm:class:agent-memory", "vc:label": "Agent Memory" },
-    { "@id": "urn:ngm:class:tool-call-loop", "vc:label": "Tool Call Loop" },
-    { "@id": "urn:ngm:class:eu-ai-act", "vc:label": "EU AI Act" },
-    { "@id": "urn:ngm:class:ai-infrastructure", "vc:label": "AI Infrastructure" },
-    { "@id": "urn:ngm:class:regulatory-sandbox", "vc:label": "Regulatory Sandbox" },
-    { "@id": "urn:ngm:class:open-container-initiative", "vc:label": "Open Container Initiative" },
-    { "@id": "urn:ngm:class:visionclaw-agentic-container", "vc:label": "VisionClaw Agentic Container" },
-    { "@id": "urn:ngm:class:decentralised-agentic-infrastructure-stack", "vc:label": "Decentralised Agentic Infrastructure Stack" },
-    { "@id": "urn:ngm:class:edge-computing", "vc:label": "Edge Computing" },
-    { "@id": "urn:ngm:class:serverless-computing", "vc:label": "Serverless Computing" },
-    { "@id": "urn:ngm:class:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks" },
-    { "@id": "urn:ngm:class:swe-bench", "vc:label": "SWE-bench" },
-    { "@id": "urn:ngm:class:autonomous-agent", "vc:label": "Autonomous Agent" },
-    { "@id": "urn:ngm:class:multi-agent-systems", "vc:label": "Multi-Agent Systems" }
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:ngm:class:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:ngm:class:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:ngm:class:terminal-coding-agents",
+      "vc:label": "Terminal Coding Agents"
+    },
+    {
+      "@id": "urn:ngm:class:agent-development-sdks",
+      "vc:label": "Agent Development SDKs"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+      "vc:label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "@id": "urn:ngm:class:llm-application-frameworks",
+      "vc:label": "LLM Application Frameworks"
+    },
+    {
+      "@id": "urn:ngm:class:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:ngm:class:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:ngm:class:containerisation",
+      "vc:label": "Containerisation"
+    },
+    {
+      "@id": "urn:ngm:class:container-runtime",
+      "vc:label": "Container Runtime"
+    },
+    {
+      "@id": "urn:ngm:class:docker-containerisation-platform",
+      "vc:label": "Docker Containerisation Platform"
+    },
+    {
+      "@id": "urn:ngm:class:container-orchestration",
+      "vc:label": "Container Orchestration"
+    },
+    {
+      "@id": "urn:ngm:class:open-container-initiative",
+      "vc:label": "Open Container Initiative"
+    },
+    {
+      "@id": "urn:ngm:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:mcp-server",
+      "vc:label": "MCP Server"
+    },
+    {
+      "@id": "urn:ngm:class:mcp-client",
+      "vc:label": "MCP Client"
+    },
+    {
+      "@id": "urn:ngm:class:code-execution",
+      "vc:label": "Code Execution"
+    },
+    {
+      "@id": "urn:ngm:class:autonomous-coding",
+      "vc:label": "Autonomous Coding"
+    },
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:ngm:class:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:ngm:class:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:ngm:class:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:ngm:class:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:ngm:class:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:ngm:class:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:ngm:class:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:ngm:class:microservices-architecture",
+      "vc:label": "Microservices Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:api-gateway",
+      "vc:label": "API Gateway"
+    },
+    {
+      "@id": "urn:ngm:class:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:ngm:class:tool-call-loop",
+      "vc:label": "Tool Call Loop"
+    },
+    {
+      "@id": "urn:ngm:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "vc:label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:regulatory-sandbox",
+      "vc:label": "Regulatory Sandbox"
+    },
+    {
+      "@id": "urn:ngm:class:open-container-initiative",
+      "vc:label": "Open Container Initiative"
+    },
+    {
+      "@id": "urn:ngm:class:visionclaw-agentic-container",
+      "vc:label": "VisionClaw Agentic Container"
+    },
+    {
+      "@id": "urn:ngm:class:decentralised-agentic-infrastructure-stack",
+      "vc:label": "Decentralised Agentic Infrastructure Stack"
+    },
+    {
+      "@id": "urn:ngm:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:ngm:class:serverless-computing",
+      "vc:label": "Serverless Computing"
+    },
+    {
+      "@id": "urn:ngm:class:agent-evaluation-benchmarks",
+      "vc:label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "@id": "urn:ngm:class:swe-bench",
+      "vc:label": "SWE-bench"
+    },
+    {
+      "@id": "urn:ngm:class:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -82,33 +209,75 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:container-runtime", "label": "Container Runtime" },
-      { "@id": "urn:ngm:class:mcp-server", "label": "MCP Server" },
-      { "@id": "urn:ngm:class:code-execution", "label": "Code Execution" }
+      {
+        "@id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-server",
+        "label": "MCP Server"
+      },
+      {
+        "@id": "urn:ngm:class:code-execution",
+        "label": "Code Execution"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:containerisation", "label": "Containerisation" },
-      { "@id": "urn:ngm:class:tool-use", "label": "Tool Use" }
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow" },
-      { "@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding" },
-      { "@id": "urn:ngm:class:terminal-coding-agents", "label": "Terminal Coding Agents" }
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "@id": "urn:ngm:class:terminal-coding-agents",
+        "label": "Terminal Coding Agents"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:ai-safety", "label": "AI Safety" },
-      { "@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop" }
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:agent-development-sdks", "label": "Agent Development SDKs" },
-      { "@id": "urn:ngm:class:multi-agent-orchestration-frameworks", "label": "Multi-Agent Orchestration Frameworks" },
-      { "@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol" }
+      {
+        "@id": "urn:ngm:class:agent-development-sdks",
+        "label": "Agent Development SDKs"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:internal-ai-harness", "label": "Internal AI Harness" }
+      {
+        "@id": "urn:ngm:class:internal-ai-harness",
+        "label": "Internal AI Harness"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -116,64 +285,6 @@ public: true
   },
   "vc:termId": "AI-9919",
   "vc:schemaVersion": 2
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agent-execution-sandboxes:2026-06-21",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:agent-execution-sandboxes"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Agent Harness]]", "resolved": "urn:ngm:class:agent-harness", "kind": "ResolvedLink" },
-    { "raw": "[[Agentic AI]]", "resolved": "urn:ngm:class:agentic-ai", "kind": "ResolvedLink" },
-    { "raw": "[[Agentic Workflow]]", "resolved": "urn:ngm:class:agentic-workflow", "kind": "ResolvedLink" },
-    { "raw": "[[Terminal Coding Agents]]", "resolved": "urn:ngm:class:terminal-coding-agents", "kind": "ResolvedLink" },
-    { "raw": "[[Agent Development SDKs]]", "resolved": "urn:ngm:class:agent-development-sdks", "kind": "ResolvedLink" },
-    { "raw": "[[Multi-Agent Orchestration Frameworks]]", "resolved": "urn:ngm:class:multi-agent-orchestration-frameworks", "kind": "ResolvedLink" },
-    { "raw": "[[LLM Application Frameworks]]", "resolved": "urn:ngm:class:llm-application-frameworks", "kind": "ResolvedLink" },
-    { "raw": "[[Tool Use]]", "resolved": "urn:ngm:class:tool-use", "kind": "ResolvedLink" },
-    { "raw": "[[Function Calling]]", "resolved": "urn:ngm:class:function-calling", "kind": "ResolvedLink" },
-    { "raw": "[[Containerisation]]", "resolved": "urn:ngm:class:containerisation", "kind": "ResolvedLink" },
-    { "raw": "[[Container Runtime]]", "resolved": "urn:ngm:class:container-runtime", "kind": "ResolvedLink" },
-    { "raw": "[[Docker Containerisation Platform]]", "resolved": "urn:ngm:class:docker-containerisation-platform", "kind": "ResolvedLink" },
-    { "raw": "[[Container Orchestration]]", "resolved": "urn:ngm:class:container-orchestration", "kind": "ResolvedLink" },
-    { "raw": "[[Open Container Initiative]]", "resolved": "urn:ngm:class:open-container-initiative", "kind": "ResolvedLink" },
-    { "raw": "[[Model Context Protocol]]", "resolved": "urn:ngm:class:model-context-protocol", "kind": "ResolvedLink" },
-    { "raw": "[[MCP Server]]", "resolved": "urn:ngm:class:mcp-server", "kind": "ResolvedLink" },
-    { "raw": "[[MCP Client]]", "resolved": "urn:ngm:class:mcp-client", "kind": "ResolvedLink" },
-    { "raw": "[[Code Execution]]", "resolved": "urn:ngm:class:code-execution", "kind": "StubLink" },
-    { "raw": "[[Autonomous Coding]]", "resolved": "urn:ngm:class:autonomous-coding", "kind": "ResolvedLink" },
-    { "raw": "[[AI Safety]]", "resolved": "urn:ngm:class:ai-safety", "kind": "ResolvedLink" },
-    { "raw": "[[Prompt Injection]]", "resolved": "urn:ngm:class:prompt-injection", "kind": "ResolvedLink" },
-    { "raw": "[[Human-in-the-Loop]]", "resolved": "urn:ngm:class:human-in-the-loop", "kind": "ResolvedLink" },
-    { "raw": "[[Internal AI Harness]]", "resolved": "urn:ngm:class:internal-ai-harness", "kind": "ResolvedLink" },
-    { "raw": "[[External AI Harness]]", "resolved": "urn:ngm:class:external-ai-harness", "kind": "ResolvedLink" },
-    { "raw": "[[Large Language Models]]", "resolved": "urn:ngm:class:large-language-models", "kind": "ResolvedLink" },
-    { "raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:ngm:class:retrieval-augmented-generation", "kind": "ResolvedLink" },
-    { "raw": "[[Vector Database]]", "resolved": "urn:ngm:class:vector-database", "kind": "ResolvedLink" },
-    { "raw": "[[Cloud Computing]]", "resolved": "urn:ngm:class:cloud-computing", "kind": "ResolvedLink" },
-    { "raw": "[[Microservices Architecture]]", "resolved": "urn:ngm:class:microservices-architecture", "kind": "ResolvedLink" },
-    { "raw": "[[API Gateway]]", "resolved": "urn:ngm:class:api-gateway", "kind": "ResolvedLink" },
-    { "raw": "[[Agent Memory]]", "resolved": "urn:ngm:class:agent-memory", "kind": "ResolvedLink" },
-    { "raw": "[[Tool Call Loop]]", "resolved": "urn:ngm:class:tool-call-loop", "kind": "StubLink" },
-    { "raw": "[[EU AI Act]]", "resolved": "urn:ngm:class:eu-ai-act", "kind": "ResolvedLink" },
-    { "raw": "[[AI Infrastructure]]", "resolved": "urn:ngm:class:ai-infrastructure", "kind": "StubLink" },
-    { "raw": "[[Regulatory Sandbox]]", "resolved": "urn:ngm:class:regulatory-sandbox", "kind": "ResolvedLink" },
-    { "raw": "[[VisionClaw Agentic Container]]", "resolved": "urn:ngm:class:visionclaw-agentic-container", "kind": "ResolvedLink" },
-    { "raw": "[[Decentralised Agentic Infrastructure Stack]]", "resolved": "urn:ngm:class:decentralised-agentic-infrastructure-stack", "kind": "ResolvedLink" },
-    { "raw": "[[Edge Computing]]", "resolved": "urn:ngm:class:edge-computing", "kind": "ResolvedLink" },
-    { "raw": "[[Serverless Computing]]", "resolved": "urn:ngm:class:serverless-computing", "kind": "StubLink" },
-    { "raw": "[[Agent Evaluation Benchmarks]]", "resolved": "urn:ngm:class:agent-evaluation-benchmarks", "kind": "ResolvedLink" },
-    { "raw": "[[SWE-bench]]", "resolved": "urn:ngm:class:swe-bench", "kind": "StubLink" },
-    { "raw": "[[Autonomous Agent]]", "resolved": "urn:ngm:class:autonomous-agent", "kind": "ResolvedLink" },
-    { "raw": "[[Multi-Agent Systems]]", "resolved": "urn:ngm:class:multi-agent-systems", "kind": "ResolvedLink" }
-  ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
-  "prov:generatedAtTime": { "@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime" }
 }
 ```
 
@@ -317,7 +428,7 @@ public: true
 
   **Autonomous Software Engineering** — [[Terminal Coding Agents]] (Claude Code, GitHub Copilot Workspace, Devin, SWE-Agent) run inside sandboxes to execute generated code, run test suites, read and write repository files, and invoke build systems in an environment where agent-produced failures cannot damage the developer's host system. [[SWE-bench]] evaluation requires sandboxed execution of repository-level code edits against real GitHub projects; the sandbox provides both safety and reproducibility for benchmark runs. Every major terminal coding agent either provides its own sandbox (Claude Code's [[VisionClaw Agentic Container]] architecture) or integrates with E2B, Daytona, or equivalent via [[Model Context Protocol]].
 
-  **[[Retrieval-Augmented Generation]] with Code** — agents that combine document retrieval ([[Retrieval-Augmented Generation]], [[Vector Database]]) with code execution to answer analytical questions (e.g., "analyse this dataset and plot the distribution") require a safe environment for the generated pandas/matplotlib code to execute. The sandbox ensures that a hallucinated or injection-manipulated code block cannot exfiltrate the retrieved documents, overwrite the vector index, or consume unbounded compute.
+  **[[Retrieval-Augmented Generation]] with Code** — agents that combine document retrieval ([[Retrieval-Augmented Generation]], [[Vector Database]]) with code execution to answer analytical questions (e.g., "analyse this dataset and plot the distribution") require a safe environment for the generated pandas/matplotlib code to execute. The sandbox ensures that a hallucinated or injection-manipulated code block cannot exfiltrate the retrieved documents, overwrite the vector [private], or consume unbounded compute.
 
   **Multi-Agent Orchestration** — [[Multi-Agent Orchestration Frameworks]] that spawn sub-agents for parallel task execution require sandboxes for each sub-agent's tool calls. The [[Multi-Agent Systems]] topology may create dozens of simultaneous sandboxes; platforms optimised for this workload (E2B, Modal, Cloudflare Sandboxes) support high-concurrency sandbox pools with fast cold-start times to avoid queuing delays in agent pipelines.
 
@@ -373,7 +484,7 @@ public: true
 
   **Long-running workspace persistence** — ephemeral sandbox architectures (where each tool call gets a fresh sandbox) are insufficient for multi-step coding agents that need to accumulate file changes across many tool invocations within a task. Persistent workspace architectures (Daytona's primary model) maintain sandbox state across tool calls but must handle workspace lifecycle management (when to garbage-collect idle workspaces), workspace snapshotting (for rollback), and concurrent access (if multiple agent tool calls need to run simultaneously against the same workspace). The design space between "fully ephemeral" and "fully persistent" workspaces is occupied by session-scoped sandboxes that maintain state within a task session and are garbage-collected when the session ends.
 
-  **Credential and secret injection** — agents frequently need access to credentials (API keys, OAuth tokens, database passwords) to invoke tools on behalf of the user. These credentials must be injected into the sandbox at invocation time without persisting in the sandbox filesystem (where they could be exfiltrated) or appearing in execution logs (where they create a compliance liability). Industry practice uses runtime secret injection via environment variables (injected at VM start, not persisted to disk), ephemeral OAuth tokens (scoped to the minimum permission set for the current tool call, revoked on sandbox exit), and hardware security module (HSM) integration for high-assurance deployments requiring certified key management.
+  **Credential and secret injection** — agents frequently need access to credentials (API keys, OAuth tokens, database passwords) to invoke tools on behalf of the user. These credentials must be injected into the sandbox at invocation time without persisting in the sandbox filesystem (where they [private] be exfiltrated) or appearing in execution logs (where they create a compliance liability). Industry practice uses runtime secret injection via environment variables (injected at VM start, not persisted to disk), ephemeral OAuth tokens (scoped to the minimum permission set for the current tool call, revoked on sandbox exit), and hardware security module (HSM) integration for high-assurance deployments requiring certified key management.
 
   ## Academic Context
 
@@ -383,7 +494,7 @@ public: true
 
   gVisor's security model (Price, "gVisor: Reimagining the Container Runtime", OSDI 2019) introduces the Sentry — a user-space kernel implementation that intercepts all system calls from guest code before they reach the host kernel. The Sentry reduces the host kernel's attack surface from hundreds of system calls directly accessible by container processes in Docker to a small, formally audited set of hypercalls. This design was validated empirically: gVisor's Sentry intercepted and blocked 17 of 18 critical container escape techniques catalogued in a 2021 CNCF security audit, demonstrating that syscall interception provides stronger empirical isolation than namespace/cgroup filtering alone. Modal's adoption of gVisor for its agent sandbox infrastructure reflects the operational value of this empirical track record.
 
-  The specific threat model of AI-capable code execution was first formalised in academic work on LLM security. Greshake et al. "Not What You've Signed Up For" (2023) established that [[Prompt Injection]] via tool outputs could redirect agent behaviour. Ruan et al. "Identifying the Risks of LM Agents with an LM-Emulated Sandbox" (ICLR 2024) used an LM emulator to characterise agent failure modes including resource overreach and irreversible action execution. The specific sandbox-escape threat was established empirically by Marchand et al. "Quantifying Frontier LLM Capabilities for Container Sandbox Escape" (arXiv:2603.02277, March 2026), which provided the first quantitative benchmark for this risk and established Firecracker-level isolation as the minimum acceptable standard for production agent deployments. A parallel research thread from the BAIR (Berkeley AI Research) group on "Gorilla" and tool-calling capability evaluation demonstrates that [[Tool Use]] capability — and by extension, sandbox-relevant code execution capability — scales with model size and instruction following quality, supporting the SandboxEscapeBench finding that more capable models achieve higher escape rates.
+  The specific threat model of AI-capable code execution was first formalised in academic work on LLM security. Greshake et al. "Not What You've Signed Up For" (2023) established that [[Prompt Injection]] via tool outputs [private] redirect agent behaviour. Ruan et al. "Identifying the Risks of LM Agents with an LM-Emulated Sandbox" (ICLR 2024) used an LM emulator to characterise agent failure modes including resource overreach and irreversible action execution. The specific sandbox-escape threat was established empirically by Marchand et al. "Quantifying Frontier LLM Capabilities for Container Sandbox Escape" (arXiv:2603.02277, March 2026), which provided the first quantitative benchmark for this risk and established Firecracker-level isolation as the minimum acceptable standard for production agent deployments. A parallel research thread from the BAIR (Berkeley AI Research) group on "Gorilla" and tool-calling capability evaluation demonstrates that [[Tool Use]] capability — and by extension, sandbox-relevant code execution capability — scales with model size and instruction following quality, supporting the SandboxEscapeBench finding that more capable models achieve higher escape rates.
 
   ## Relationship to AI Safety Research
 
@@ -397,13 +508,13 @@ public: true
 
   The dominant production pattern observed in high-scale agent deployments assigns different sandbox platforms to different workload categories: Cloudflare for user-facing request paths where global latency matters; Modal for GPU-accelerated inference workloads; E2B for code interpretation and test execution; Daytona or raw VMs for persistent workspace agents. This multi-platform composition is enabled by [[Model Context Protocol]] as a common integration layer — each platform exposes an [[MCP Server]] and the [[Agent Harness]] routes invocations to the appropriate platform based on workload type.
 
-  Security posture has tightened significantly following SandboxEscapeBench's March 2026 publication. Zylos Research identified that sandbox designs calibrated to 2023 model capability may be insufficient for 2026+ models. The practitioner consensus from Northflank's 2026 sandbox engineering guide is that Docker/runc isolation is no longer acceptable for production agent execution involving sensitive data or privileged credentials, and that Firecracker-or-better isolation should be considered the production minimum. Checkmarx Zero and Microsoft's guidance on [[Model Context Protocol]] security both address the sandbox layer as a critical defence against [[Prompt Injection]] attacks that could otherwise weaponise agent tool calls to exfiltrate data or pivot to adjacent systems.
+  Security posture has tightened significantly following SandboxEscapeBench's March 2026 publication. Zylos Research identified that sandbox designs calibrated to 2023 model capability may be insufficient for 2026+ models. The practitioner consensus from Northflank's 2026 sandbox engineering guide is that Docker/runc isolation is no longer acceptable for production agent execution involving sensitive data or privileged credentials, and that Firecracker-or-better isolation should be considered the production minimum. Checkmarx Zero and Microsoft's guidance on [[Model Context Protocol]] security both address the sandbox layer as a critical defence against [[Prompt Injection]] attacks that [private] otherwise weaponise agent tool calls to exfiltrate data or pivot to adjacent systems.
 
   ## UK Context
 
   The UK has engaged with agent execution sandbox security at both the research and regulatory levels, driven by the UK AI Security Institute (AISI) and the academic community around Oxford and Imperial College.
 
-  **Research:** SandboxEscapeBench (arXiv:2603.02277, March 2026) was co-authored with the UK AI Security Institute, making container sandbox escape a formally documented risk in AISI's research portfolio. The paper demonstrated that frontier models can achieve Docker container escape through common misconfigurations and that the capability scales with model capability — a finding with direct policy implications for AISI's safety evaluation mandate. AISI's ControlArena evaluation framework, which assesses whether AI systems could undermine human oversight mechanisms, includes agent sandbox security as a sub-evaluation domain alongside broader autonomy and scheming evaluations.
+  **Research:** SandboxEscapeBench (arXiv:2603.02277, March 2026) was co-authored with the UK AI Security Institute, making container sandbox escape a formally documented risk in AISI's research portfolio. The paper demonstrated that frontier models can achieve Docker container escape through common misconfigurations and that the capability scales with model capability — a finding with direct policy implications for AISI's safety evaluation mandate. AISI's ControlArena evaluation framework, which assesses whether AI systems [private] undermine human oversight mechanisms, includes agent sandbox security as a sub-evaluation domain alongside broader autonomy and scheming evaluations.
 
   **Academic presence:** Oxford's Department of Computer Science (Systems Security group and Future of Humanity Institute) contributed to sandbox escape research and maintains research programmes on formal verification of isolation boundaries for autonomous systems. Imperial College London's Resilient Information Systems group studies hypervisor and container security relevant to AI agent containment. Edinburgh's School of Informatics has published on capability containment for autonomous systems in the context of AI safety and alignment research, with direct relevance to sandbox policy enforcement.
 
@@ -421,7 +532,7 @@ public: true
 
   **Resource exhaustion and denial-of-service** — an agent loop that fails to converge (or is deliberately constructed to loop indefinitely by injected instructions) can exhaust CPU, memory, disk, and API quota resources in proportion to its duration. Resource quotas at the sandbox level — maximum CPU seconds per sandbox lifetime, maximum memory allocation, maximum disk write volume, maximum number of subprocesses — provide the enforcement layer that prevents runaway loops from exhausting infrastructure shared with other tenants or other agent tasks.
 
-  **Data exfiltration via covert channels** — even with network egress filtering, a sufficiently capable model with access to a covert channel (DNS lookups, timing-observable file operations, ICMP packets) could exfiltrate information to an attacker's monitoring infrastructure. The covert channel threat is primarily relevant to high-assurance deployments (intelligence analysis, financial trading algorithms, medical records) rather than typical enterprise agentic deployments, and is addressed by stronger isolation technologies (hardware-rooted trusted execution environments) rather than by container-level controls.
+  **Data exfiltration via covert channels** — even with network egress filtering, a sufficiently capable model with access to a covert channel (DNS lookups, timing-observable file operations, ICMP packets) [private] exfiltrate information to an attacker's monitoring infrastructure. The covert channel threat is primarily relevant to high-assurance deployments (intelligence analysis, financial trading algorithms, medical records) rather than typical enterprise agentic deployments, and is addressed by stronger isolation technologies (hardware-rooted trusted execution environments) rather than by container-level controls.
 
   **Privilege escalation via tool composition** — even within an authorised sandbox, an agent may compose multiple permitted tool calls in sequences that achieve outcomes exceeding the intended permission scope. Example: a sandbox permits reading any file in `/data/` and permits writing to any file in `/output/`; through reasoning, an agent discovers that it can read credentials from `/data/config.yaml`, use them to authenticate an API call (permitted as an outbound network operation), and write the API response to `/output/` — achieving unauthorised data egress despite each individual tool call being within its authorised scope. Mitigating this requires semantic-level access control (understanding what the combination of tool calls achieves, not just whether each individual call is permitted) and audit trail review, rather than purely syntactic permission checking.
 
@@ -471,7 +582,7 @@ public: true
 
   **Regulatory standardisation** — the [[EU AI Act]]'s GPAI provisions and emerging national AI regulations will drive standardisation of sandbox security requirements for high-risk AI deployments. ISO/IEC TC1/SC42 is under discussion for AI execution environment security standards; NIST's AI Safety Institute has indicated that sandbox isolation requirements will feature in its forthcoming AI security guidelines. UK DSIT's AI Safety Institute (AISI) is likely to publish specific guidance on minimum sandbox requirements for agentic AI deployments in regulated sectors following the SandboxEscapeBench findings. The trajectory toward formal certification programmes — analogous to Common Criteria security evaluation for conventional software — would require sandbox platforms to undergo third-party penetration testing against standardised threat models and demonstrate resistance to frontier model escape attempts as a condition of certification for regulated deployments.
 
-  **Multi-model awareness** — sandbox policies that are model-aware (adapting isolation strength to the capability level of the model executing within them) are a theoretical direction: a sandbox hosting a Llama 3 8B model could apply lighter-weight controls than one hosting a frontier GPT-5 or Claude Opus model, reflecting the empirical correlation between model capability and sandbox escape success rate documented in SandboxEscapeBench. This direction requires reliable capability assessment at sandbox provision time, which requires model identity verification (preventing a compromised agent from misrepresenting its model identity to obtain weaker isolation).
+  **Multi-model awareness** — sandbox policies that are model-aware (adapting isolation strength to the capability level of the model executing within them) are a theoretical direction: a sandbox hosting a Llama 3 8B model [private] apply lighter-weight controls than one hosting a frontier GPT-5 or Claude Opus model, reflecting the empirical correlation between model capability and sandbox escape success rate documented in SandboxEscapeBench. This direction requires reliable capability assessment at sandbox provision time, which requires model identity verification (preventing a compromised agent from misrepresenting its model identity to obtain weaker isolation).
 
   **Integration with AI agent insurance** — as commercial AI agent deployments mature and accrue significant business impact (financial transactions, legal actions, healthcare recommendations), the insurance industry is developing products that cover AI agent liability. Agent execution sandbox design will become a factor in insurance underwriting: platforms with certifiable Firecracker-level isolation and complete audit trails will attract lower insurance premiums than platforms using weaker isolation. UK Lloyds of London's cyber risk market has begun developing AI agent liability frameworks that reference sandbox isolation standards as a risk factor.
 
@@ -479,7 +590,7 @@ public: true
 
   Several technology areas are actively advancing the frontier of agent execution sandbox capabilities beyond the 2026 production baseline:
 
-  **WebAssembly (WASM) component model** — the W3C WebAssembly component model proposes a portable, capability-safe execution boundary that could provide agent sandboxing at near-native performance without KVM hardware dependency. Each WASM component exposes a typed interface (WIT — WebAssembly Interface Types) and can only interact with the host and other components through explicitly declared imports and exports, implementing object-capability security at the language-runtime level. The primary limitation for AI agent use is the lack of POSIX compatibility: existing Linux tools and libraries do not run in WASM without porting, so agents cannot invoke arbitrary shell commands as they can in microVM sandboxes. WASM's trajectory — as exemplified by Cloudflare Workers and Fastly Compute — is toward specialised purpose-built tool ecosystems compiled to WASM, rather than running arbitrary Linux workloads.
+  **WebAssembly (WASM) component model** — the W3C WebAssembly component model proposes a portable, capability-safe execution boundary that [private] provide agent sandboxing at near-native performance without KVM hardware dependency. Each WASM component exposes a typed interface (WIT — WebAssembly Interface Types) and can only interact with the host and other components through explicitly declared imports and exports, implementing object-capability security at the language-runtime level. The primary limitation for AI agent use is the lack of POSIX compatibility: existing Linux tools and libraries do not run in WASM without porting, so agents cannot invoke arbitrary shell commands as they can in microVM sandboxes. WASM's trajectory — as exemplified by Cloudflare Workers and Fastly Compute — is toward specialised purpose-built tool ecosystems compiled to WASM, rather than running arbitrary Linux workloads.
 
   **unikernels for agent specialisation** — a unikernel is a specialised kernel compiled with exactly the libraries and services required for a specific application, producing a minimal VM image without a general-purpose operating system. For agent execution, a unikernel designed for Python code interpretation (embedding CPython, NumPy, and a minimal network stack) would boot faster and present a much smaller attack surface than a general Linux microVM. MirageOS, Nanos, and IncludeOS are unikernel platforms with active development; applying them to agent-specific tool execution is an active research direction.
 

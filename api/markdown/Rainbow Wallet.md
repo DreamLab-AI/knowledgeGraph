@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rainbow Wallet
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rainbow-wallet:5ce5da452ca5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:812bc1e9539a1c4f0f80a207c57afe2a2a32253195792af45cef83872300a4df"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Private Key]]",
-      "resolved": "urn:visionflow:linked:private-key",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Custody]]",
-      "resolved": "urn:visionflow:linked:self-custody",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Non-Fungible Token]]",
-      "resolved": "urn:visionflow:linked:non-fungible-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Wallet]]",
-      "resolved": "urn:visionflow:linked:wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Wallet]]",
-      "resolved": "urn:visionflow:linked:digital-wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://rainbow.me/]]",
-      "resolved": "urn:visionflow:linked:https-rainbow-me",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A self-custodial Ethereum wallet application focused on a consumer-friendly interface for holding tokens and interacting with decentralised applications. The user controls the private keys directly rather than entrusting them to a custodian.

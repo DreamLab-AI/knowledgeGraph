@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Preference Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,37 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:preference-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a7d463f9149fa5d51b44f0e036e0c18477e7ec310a832c933ea6e9ee91a16ace"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethan Mollick]]",
-      "resolved": "urn:visionflow:linked:ethan-mollick",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A machine learning paradigm that learns from comparative judgments (e.g., "A is better than B") rather than absolute labels or demonstrations. Preference learning enables training models to align with human values by learning from rankings and comparisons, which are often easier for humans to provide than absolute ratings or demonstrations.

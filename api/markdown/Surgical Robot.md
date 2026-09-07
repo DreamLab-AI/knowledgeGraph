@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Surgical Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,32 +176,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:surgical-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3b02db796204225df2ff3f4480ced29edbbca1c4f985b215601e17f48608f4bb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Surgical Robot is a teleoperated or semi-autonomous robotic system designed to assist surgeons in performing minimally invasive procedures with enhanced precision, dexterity, and haptic feedback. Systems such as the da Vinci platform translate the surgeon's hand movements—filtered for tremor—into sub-millimetre instrument motions within the patient's body, enabling laparoscopic, urological, and cardiac procedures through small incisions.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Parental Controls
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:parental-controls:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4120c45e560e6ae9d2b072597ecda7a029d061a03d8cf282026ab84f94970d1c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Safe Online Environment]]",
-      "resolved": "urn:visionflow:linked:safe-online-environment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Safety]]",
-      "resolved": "urn:visionflow:owl:class:digital-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software tools and platform features that enable guardians to monitor, filter, and limit children's access to digital content, applications, and online interactions, using AI-powered content analysis and customizable restrictions to promote safe technology use.

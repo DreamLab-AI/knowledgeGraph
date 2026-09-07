@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Black-Box Model
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -116,7 +110,7 @@ public: true
 
 - ### Definition
   - A **black-box model** is a [[Machine Learning]] or artificial intelligence system whose internal computational mechanisms — the precise sequence of mathematical transformations that produce a given output from a given input — are either inaccessible, too complex to interpret, or deliberately obscured from the user or regulator inspecting the system. The system can be queried through a defined interface: inputs are supplied and outputs are observed, but the intermediate logic remains opaque. This opacity stands in fundamental tension with demands for [[Model Transparency]], [[Accountability]], and [[Fairness]] in high-stakes automated decision-making.
-  - The most common instances of black-box behaviour arise in [[Deep Learning]] systems — including [[Convolutional Neural Network]]s trained for image recognition, [[Transformer Architecture]]s underlying [[Large Language Models]], and deep feedforward networks for tabular prediction — as well as in large ensemble methods such as [[Random Forest]] and gradient-boosted trees (XGBoost, LightGBM, CatBoost), where the aggregate prediction emerges from hundreds or thousands of interacting weak learners. The model's predictive accuracy often increases alongside this opacity, since richer function classes can approximate complex patterns in high-dimensional data that no simple rule-list could capture.
+  - The most common instances of black-box behaviour arise in [[Deep Learning]] systems — including [[Convolutional Neural Network]]s trained for image recognition, [[Transformer Architecture]]s underlying [[Large Language Models]], and deep feedforward networks for tabular prediction — as well as in large ensemble methods such as [[Random Forest]] and gradient-boosted trees (XGBoost, LightGBM, CatBoost), where the aggregate prediction emerges from hundreds or thousands of interacting weak learners. The model's predictive accuracy often increases alongside this opacity, since richer function classes can approximate complex patterns in high-dimensional data that no simple rule-list [private] capture.
   - This accuracy-interpretability trade-off drives an entire discipline of post-hoc explanation: methods such as [[SHAP]] (SHapley Additive exPlanations), [[LIME]] (Local Interpretable Model-agnostic Explanations), [[Feature Importance]] rankings, [[Counterfactual Explanation]]s, [[Attention Mechanism]] visualisation, [[Saliency Map]]s, and [[Concept Activation Vector]]s attempt to recover human-understandable insight from systems that were never designed to be inspected. These methods are model-agnostic surrogates or approximations rather than true windows into the model's computations. Regulators under the [[EU AI Act]] (Regulation EU 2024/1689), GDPR Article 22, and financial services rules (US OCC, CFPB, UK FCA) increasingly demand that deployers of high-risk AI systems demonstrate some form of explainability, creating pressure for both improved post-hoc methods and a revival of inherently interpretable [[White-Box Model]]s in regulated domains.
   - Black-box models are also uniquely vulnerable to [[Adversarial Attack]]: an adversary who can query the model without accessing its weights can mount black-box attacks via transfer-based or query-based strategies, iteratively estimating gradient information to craft inputs that fool the system. This raises [[Robustness]] and [[Cybersecurity]] concerns beyond the transparency problem. The concept is central to [[Explainable AI]] research, [[AI Governance]] policy, and debates about [[Responsible AI]] deployment across healthcare, criminal justice, credit assessment, and autonomous systems.
   - Related concepts: [[Model Interpretability]] [[Explainable AI]] [[Deep Learning]] [[Neural Network]] [[Model Transparency]] [[SHAP]] [[LIME]] [[Feature Importance]] [[Accountability]] [[Fairness]] [[Adversarial Attack]] [[Robustness]] [[AI Governance]] [[EU AI Act]] [[White-Box Model]] [[Counterfactual Explanation]]
@@ -430,7 +424,7 @@ public: true
     - **Pre-Development**
       - Define intended use, target population, and deployment context before model selection
       - Assess whether a high-risk AI system designation applies (EU AI Act Annex III; UK FCA; MHRA SaMD)
-      - Evaluate whether an inherently interpretable model could achieve acceptable accuracy (Rudin test)
+      - Evaluate whether an inherently interpretable model [private] achieve acceptable accuracy (Rudin test)
       - Conduct Equality Impact Assessment covering protected characteristics under Equality Act 2010 (UK)
       - Define explainability requirements for target user audience (clinician, loan officer, judge, individual subject)
     - **Data Governance**

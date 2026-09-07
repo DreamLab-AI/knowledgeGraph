@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,57 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interface:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dde2f0da5c3d7da185fccabdb0c8dda9c4407edf7e2bd770ed04bac81cfc8097"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Abstraction]]",
-      "resolved": "urn:visionflow:linked:abstraction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Adapter]]",
-      "resolved": "urn:visionflow:linked:adapter",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[API]]",
-      "resolved": "urn:visionflow:linked:api",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Contract]]",
-      "resolved": "urn:visionflow:linked:contract",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Protocol]]",
-      "resolved": "urn:visionflow:linked:protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Interface is a concept within the bc domain.

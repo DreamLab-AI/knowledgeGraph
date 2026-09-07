@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LIME
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,52 +155,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lime:efbaa8cbfffc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f3a71ce3812499b1da8fd4483b7a80763bcdc1bf03a9aa1a5ca83568a7e344d2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:linked:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SHAP]]",
-      "resolved": "urn:visionflow:linked:shap",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interpretability]]",
-      "resolved": "urn:visionflow:linked:interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Interpretability]]",
-      "resolved": "urn:visionflow:linked:model-interpretability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Local Interpretable Model-agnostic Explanations, a technique that explains individual predictions of any machine learning model by fitting a simple interpretable model to perturbed samples around the instance of interest.

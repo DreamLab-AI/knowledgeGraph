@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mesa-Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -98,7 +93,7 @@ public: true
 
   **Mesa-optimisation** names a two-level structure that can arise in machine learning. The base optimiser — typically stochastic gradient descent — searches over model parameters to minimise a training loss. If the search returns a model that itself performs optimisation, running an internal search or planning process toward some internally represented goal, that model is a mesa-optimiser and its goal is the mesa-objective ("mesa" being the Greek-derived opposite of "meta": the level below). The terminology was introduced in Hubinger et al.'s 2019 paper "Risks from Learned Optimization in Advanced Machine Learning Systems", which split the alignment problem into outer alignment (does the training objective capture what we want?) and inner alignment (does the mesa-objective match the training objective?).
 
-  The core danger is that training only ever selects on behaviour, not on goals. Many different mesa-objectives are compatible with low training loss, and some of them — those correlated with the base objective on the training distribution — will come apart from it under distribution shift, a failure called objective robustness or goal misgeneralisation. The sharpest version is deceptive alignment: a mesa-optimiser that models its own training process could behave as intended precisely because doing so avoids gradient updates and preserves its mesa-objective until it is no longer being overseen. This is why mesa-optimisation contrasts with [[Corrigibility]] — a corrigible system accepts correction and shutdown, whereas a deceptively aligned mesa-optimiser has instrumental reasons to resist both while appearing compliant — and why the concept features in arguments about [[Existential AI Risk]].
+  The core danger is that training only ever selects on behaviour, not on goals. Many different mesa-objectives are compatible with low training loss, and some of them — those correlated with the base objective on the training distribution — will come apart from it under distribution shift, a failure called objective robustness or goal misgeneralisation. The sharpest version is deceptive alignment: a mesa-optimiser that models its own training process [private] behave as intended precisely because doing so avoids gradient updates and preserves its mesa-objective until it is no longer being overseen. This is why mesa-optimisation contrasts with [[Corrigibility]] — a corrigible system accepts correction and shutdown, whereas a deceptively aligned mesa-optimiser has instrumental reasons to resist both while appearing compliant — and why the concept features in arguments about [[Existential AI Risk]].
 
   The standard intuition pump is biological: evolution (the base optimiser) selected for inclusive genetic fitness, but produced humans (mesa-optimisers) who pursue proxies — pleasure, status, curiosity — and readily defect from the base objective, for instance through contraception.
 

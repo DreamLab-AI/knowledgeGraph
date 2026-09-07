@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LP Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "An LP (Liquidity Provider) token is a fungible cryptographic token minted by a decentralised exchange or liquidity pool smart contract to represent a depositor's proportional ownership stake in a pool's combined assets, accrued fees, and associated yield. LP tokens serve as receipts that can be redeemed to withdraw the underlying liquidity position at any time.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:token-standard",
+      "label": "Token Standard"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:liquidity-provider", "label": "Liquidity Provider"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provider",
+        "label": "Liquidity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:impermanent-loss", "label": "Impermanent Loss"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"}
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - LP tokens are foundational to DeFi composability. Yield aggregators such as Convex, Yearn, and Beefy accept LP tokens from base AMMs, stake them in gauge contracts to earn additional protocol tokens, and auto-compound rewards. This creates capital efficiency multipliers but also layered smart-contract risk. Curve's gauge voting system allows veCRV holders to direct CRV emissions to specific pools, making LP token positions in high-emission pools significantly more profitable and creating the "Curve Wars" competitive dynamic amongst protocols seeking to attract Curve liquidity.
 
   - By 2024–2025, LP token mechanics have diversified. Balancer's weighted pool tokens support multi-asset pools with arbitrary weights, creating index-like LP instruments. Uniswap v4 hooks allow custom pool logic at the smart-contract level, enabling dynamic fee LP tokens and novel liquidity shapes. Real-world asset (RWA) pools on Centrifuge and Maple issue LP tokens backed by tokenised credit instruments. Regulatory uncertainty around whether LP tokens constitute securities — given their yield characteristics and governance rights in some implementations — remains unresolved across major jurisdictions and is a live issue in SEC enforcement discussions.
-

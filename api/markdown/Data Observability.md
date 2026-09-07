@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Observability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Data observability is the practice of continuously monitoring the health and reliability of data and data pipelines to detect, diagnose and resolve issues before they affect consumers. It tracks pillars such as freshness, volume, schema, distribution and lineage, often using automated anomaly detection. As an extension of metadata management it brings software-style monitoring discipline to data systems.",
   "domain": "data",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
     ]
   },
   "quality": 0.72

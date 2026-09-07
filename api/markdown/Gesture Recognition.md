@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - GestureRecognition
----
-
-# Gesture Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,32 +20,88 @@ aliases:
   "definition": "Gesture recognition is the computational process of identifying and interpreting human physical movements—typically of the hands, arms, head, or full body—as meaningful symbolic inputs to a computing system, enabling touchless, natural interaction paradigms. The field encompasses multiple sensing modalities including optical cameras, depth sensors, inertial measurement units, and electromagnetic field detectors, combined with machine learning pipelines that extract skeletal or surface features and classify movement sequences into semantic categories. Gesture recognition underpins human-computer interaction in extended reality, robotics, automotive interfaces, and accessibility technology, replacing or augmenting physical input devices with embodied motion vocabulary.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ]
   },
   "quality": 0.8

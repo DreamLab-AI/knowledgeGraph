@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Evidence Collection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,4 +168,3 @@ public: true
   - A forensic evidence collection process follows an ordered methodology: identification (determining what data sources are relevant — endpoints, servers, cloud storage, network logs); preservation (isolating live systems to prevent tampering, creating verified forensic copies using write-blockers and hashing — MD5, SHA-256); collection (acquiring data in a legally defensible manner, documenting every action with timestamps and operator details); and chain-of-custody (continuous documentation of who possessed each artefact, when, and under what conditions). Volatile data (RAM, running processes, network connections) must be collected before powering down a system, requiring specialised memory acquisition tools.
   - Evidence collection is critical in cybersecurity incident response (determining the scope and origin of breaches), legal proceedings (e-discovery, criminal prosecution of cybercrime), regulatory investigations (financial misconduct, data protection violations), and intellectual property disputes. Blockchain forensics has emerged as a specialised sub-domain where on-chain transaction graphs provide immutable evidence records. AI model provenance tracking is a nascent application — logging training data lineage and model weight states to provide evidence of compliance with data protection regulations.
   - In 2024-2025, cloud-first environments have fundamentally challenged classical forensic approaches: ephemeral container workloads, auto-scaling infrastructure, and multi-cloud deployments mean that traditional disk imaging is often inapplicable. Cloud-native forensics relies on provider-maintained audit trails (AWS CloudTrail, Azure Activity Log, GCP Cloud Audit Logs), which must be collected before log retention windows expire. AI-assisted evidence triage tools that automatically classify and prioritise artefacts are entering operational use, and the EU's NIS2 Directive and DORA regulation impose new obligations on regulated entities to maintain and produce audit evidence on demand.
-

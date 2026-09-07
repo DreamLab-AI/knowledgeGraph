@@ -1,8 +1,3 @@
----
-public: true
----
-
-# secp256k1 Elliptic Curve
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "secp256k1 is a specific elliptic curve defined over a 256-bit prime field, standardised by the SEC and chosen for its efficient, verifiable parameters. It underpins ECDSA and Schnorr signatures used by Bitcoin, Nostr, and many other systems for key generation and digital signing. Its near-rigid, low-entropy parameters reduce concern about hidden weaknesses.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sovereign-keyset", "label": "Sovereign Keyset"},
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"}
+      {
+        "@id": "urn:ngm:class:sovereign-keyset",
+        "label": "Sovereign Keyset"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
     ]
   },
   "quality": 0.72

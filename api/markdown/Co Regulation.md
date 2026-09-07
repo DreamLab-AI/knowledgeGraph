@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Co Regulation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

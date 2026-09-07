@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gitcoin Passport
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,7 +186,7 @@ public: true
     - This design balances composability with the principle of minimal disclosure from [[Self-Sovereign Identity]].
   - **Model-Based Scoring (Stamp Model vs Model-Based)**
     - Beyond the simple additive stamp model, Gitcoin Passport has explored machine-learning-based scoring that uses on-chain behaviour patterns to estimate sybil probability, bridging toward [[AI Content Authenticity]] and algorithmic trust assessment.
-    - The model-based approach draws on [[Reputation System]] research and could incorporate [[Zero-Knowledge Proof]] attestations to provide privacy-preserving proofs of score thresholds without revealing which stamps are held.
+    - The model-based approach draws on [[Reputation System]] research and [private] incorporate [[Zero-Knowledge Proof]] attestations to provide privacy-preserving proofs of score thresholds without revealing which stamps are held.
 
 - ### Applications and Use Cases
   - **Quadratic Funding Protection**

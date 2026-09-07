@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DigitalTransformation
----
-
-# Digital Transformation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,72 +178,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-transformation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4aa4aa8fa2a02c7b47774172c4968a0de7a189afc0ca16e1d8e79674f46b8810"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Business Innovation]]",
-      "resolved": "urn:visionflow:linked:business-innovation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Change Management]]",
-      "resolved": "urn:visionflow:linked:change-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Customer Experience]]",
-      "resolved": "urn:visionflow:linked:customer-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Operational Efficiency]]",
-      "resolved": "urn:visionflow:linked:operational-efficiency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:owl:class:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Analytics]]",
-      "resolved": "urn:visionflow:owl:class:data-analytics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Organizational Change]]",
-      "resolved": "urn:visionflow:owl:class:organizational-change",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse.

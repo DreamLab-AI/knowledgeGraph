@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Destination Chain Execution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Destination chain execution is the phase of a cross-chain operation in which a message or transaction validated from a source chain is finally executed on the target blockchain. After relayers and verification prove the source event, the destination chain mints, releases, or calls a contract to complete the bridged action. Correct execution requires replay protection, message ordering guarantees, and trust in the verification layer.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
     ]
   },
   "quality": 0.72

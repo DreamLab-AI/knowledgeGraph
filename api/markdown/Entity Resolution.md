@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Entity Resolution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,46 +176,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:entity-resolution:514f75fe738d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4035c6b844056866261f5064af7cb83ff33adf1f9acfdb34f35a3da4699bc164"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Quality]]",
-      "resolved": "urn:visionflow:linked:data-quality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Master Data Management]]",
-      "resolved": "urn:visionflow:linked:master-data-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Named Entity Recognition]]",
-      "resolved": "urn:visionflow:linked:named-entity-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Integration]]",
-      "resolved": "urn:visionflow:linked:data-integration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Entity resolution is the computational process of identifying, matching, and consolidating records from one or more data sources that describe the same real-world entity — such as a person, organisation, product, or location. It combines [[Blocking]] to reduce the candidate pair space, attribute-level [[String Similarity]] scoring, and decision logic ranging from deterministic rules to [[Probabilistic Matching]] models and [[Machine Learning]] classifiers. The output is a unified, deduplicated representation that is essential for [[Data Integration]], [[Master Data Management]], [[Knowledge Graph]] construction, and analytical accuracy.
 
@@ -233,7 +188,7 @@ public: true
 - ### Key Mechanisms
   - #### Blocking and Candidate Generation
     - Naïve pairwise comparison of N records is O(N²), infeasible at scale. Blocking partitions records into buckets where only intra-bucket pairs are compared, dramatically reducing work.
-    - Common blocking keys: first token of name, phonetic code (Soundex, Metaphone), n-gram index, [[MinHash]] / [[Locality-Sensitive Hashing]] (LSH), sorted neighbourhood.
+    - Common blocking keys: first token of name, phonetic code (Soundex, Metaphone), n-gram [private], [[MinHash]] / [[Locality-Sensitive Hashing]] (LSH), sorted neighbourhood.
     - Advanced approaches use [[Embedding]] similarity via approximate nearest-neighbour indices (FAISS, HNSW) to generate semantically similar candidate pairs without rigid key agreement.
   - #### Similarity Scoring
     - Each candidate pair is scored across multiple attributes using measures such as:

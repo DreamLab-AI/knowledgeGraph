@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Stability is the property of a dynamical or control system whereby its state remains bounded and returns toward an equilibrium following a disturbance, rather than diverging. Formalised through notions such as Lyapunov stability and bounded-input bounded-output stability, it is a primary design objective for any feedback controller. Ensuring stability is prerequisite to performance, since an unstable system cannot be made to track references reliably.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
     ]
   },
   "quality": 0.72

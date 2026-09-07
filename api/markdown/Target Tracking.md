@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Target Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Target tracking is a computational and signal-processing discipline concerned with estimating the state — typically position, velocity, and orientation — of one or more moving objects over time from sequences of noisy sensor observations. It encompasses algorithms such as Kalman filters, particle filters, and multi-hypothesis trackers, applied across radar, sonar, computer vision, and LiDAR modalities. Applications span aerospace surveillance, autonomous vehicle perception, robotic manipulation, sports analytics, and augmented reality. Modern deep-learning-based trackers jointly perform detection and tracking, achieving robust performance in complex, cluttered environments.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:object-detection-and-tracking", "label": "Object Detection and Tracking"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:object-detection-and-tracking",
+      "label": "Object Detection and Tracking"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"}
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:trajectory-tracking", "label": "Trajectory Tracking"},
-      {"@id": "urn:ngm:class:spatial-tracking-system", "label": "Spatial Tracking System"}
+      {
+        "@id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-tracking-system",
+        "label": "Spatial Tracking System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:human-pose-slam-capture-system", "label": "Human Pose SLAM Capture System"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {
+        "@id": "urn:ngm:class:human-pose-slam-capture-system",
+        "label": "Human Pose SLAM Capture System"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ]
   },
   "quality": 0.8

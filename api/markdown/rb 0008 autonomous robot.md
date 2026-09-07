@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0008 autonomous robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,52 +56,56 @@ public: true
   },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:rb-0007-collaborative-robot", "label": "rb 0007 collaborative robot"},
-      {"@id": "urn:ngm:class:rb-0012-wheeled-mobile-robot", "label": "rb 0012 wheeled mobile robot"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0007-collaborative-robot",
+        "label": "rb 0007 collaborative robot"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0012-wheeled-mobile-robot",
+        "label": "rb 0012 wheeled mobile robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"}
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0096-safeguarding", "label": "rb 0096 safeguarding"}
+      {
+        "@id": "urn:ngm:class:rb-0096-safeguarding",
+        "label": "rb 0096 safeguarding"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0008-autonomous-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9de32aec9fdff86684ae277f4652d8e2c062f9bcb5512a70231d493044fe60be"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An **autonomous robot** is a robotic system capable of performing tasks in unstructured environments without continuous human intervention, relying on onboard sensing, perception, decision-making, and actuation. Autonomy spans a spectrum from simple programmed responses to full cognitive agency; key enabling technologies include [[SLAM]], path planning, machine learning-based perception, and safety-certified control architectures.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Portfolio Agent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-portfolio-agent",
   "title": "AI Portfolio Agent",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Agent-Based Job Matching", "Interactive Resume"],
+  "vc:outboundWikilinks": [
+    "Agent-Based Job Matching",
+    "Interactive Resume"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:agents", "label": "Agents"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agents",
+      "label": "Agents"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agents", "label": "Agents"}, {"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise Ai"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise Ai"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

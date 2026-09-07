@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Liquid Staking
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:liquid-staking", "@type": "Page", "title": "Liquid Staking", "vc:slug": "liquid-staking", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:liquid-staking",
+  "@type": "Page",
+  "title": "Liquid Staking",
+  "vc:slug": "liquid-staking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

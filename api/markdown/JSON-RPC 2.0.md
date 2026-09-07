@@ -1,8 +1,3 @@
----
-public: true
----
-
-# JSON-RPC 2.0
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "JSON-RPC 2.0 is a lightweight, transport-agnostic remote procedure call protocol that encodes method invocations and responses as JSON objects. It defines request, response, notification and batch message structures along with a standard error object, while leaving the transport layer unspecified. Its simplicity has made it the wire format for many blockchain node APIs and AI tool-invocation protocols.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
     ]
   },
   "quality": 0.72

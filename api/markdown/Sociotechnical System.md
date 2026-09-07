@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sociotechnical System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,22 +21,43 @@ public: true
   "domain": "governance",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:complex-systems", "label": "Complex Systems"}
+    {
+      "@id": "urn:ngm:class:complex-systems",
+      "label": "Complex Systems"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sociotechnical-analysis", "label": "Sociotechnical Analysis"},
-      {"@id": "urn:ngm:class:sociotechnical-risk", "label": "Sociotechnical Risk"},
-      {"@id": "urn:ngm:class:human-factors", "label": "Human Factors"}
+      {
+        "@id": "urn:ngm:class:sociotechnical-analysis",
+        "label": "Sociotechnical Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:sociotechnical-risk",
+        "label": "Sociotechnical Risk"
+      },
+      {
+        "@id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sociotechnical-harm", "label": "Sociotechnical Harm"}
+      {
+        "@id": "urn:ngm:class:sociotechnical-harm",
+        "label": "Sociotechnical Harm"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:organisational-theory", "label": "Organisational Theory"}
+      {
+        "@id": "urn:ngm:class:organisational-theory",
+        "label": "Organisational Theory"
+      }
     ]
   },
   "quality": 0.8

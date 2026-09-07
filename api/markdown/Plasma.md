@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Plasma
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:plasma", "@type":"Page", "title":"Plasma", "vc:slug":"plasma", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:plasma",
+  "@type": "Page",
+  "title": "Plasma",
+  "vc:slug": "plasma",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

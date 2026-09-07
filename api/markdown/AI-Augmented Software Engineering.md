@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI-Augmented Software Engineering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,50 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
-      {"@id": "urn:ngm:class:rapid-ai-deployment", "label": "Rapid AI Deployment"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-ai-deployment",
+        "label": "Rapid AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ]
   },
   "provenance": {
@@ -83,37 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-augmented-software-engineering:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b8d843266aec11d27f6717d026368cd5d9d93491fcaa90376e74aba4570c8455"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI-Augmented Software Engineering applies large language models, code generation tools, and agentic AI systems to every phase of the software development lifecycle — from requirements and design through implementation, testing, and deployment. By embedding intelligence into the developer toolchain, teams can dramatically reduce time-to-ship, surface latent bugs earlier, and generate documentation and test coverage automatically. This field sits at the intersection of applied ML, software architecture, and human-computer interaction, demanding new practices around AI-generated code review, prompt engineering for developer contexts, and governance of autonomous coding agents.

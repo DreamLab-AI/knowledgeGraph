@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - CollaborativeLearning
----
-
-# Collaborative Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,72 +190,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:collaborative-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5db15273477303712091b09cb1d520a02f4709f09dc257417bdb51f642b84454"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Communication Tools]]",
-      "resolved": "urn:visionflow:linked:communication-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Co-Construction]]",
-      "resolved": "urn:visionflow:linked:knowledge-co-construction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Shared Workspace]]",
-      "resolved": "urn:visionflow:linked:shared-workspace",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Social Learning]]",
-      "resolved": "urn:visionflow:linked:social-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Educational Methodology]]",
-      "resolved": "urn:visionflow:owl:class:educational-methodology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Remote Collaboration]]",
-      "resolved": "urn:visionflow:owl:class:remote-collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Environment]]",
-      "resolved": "urn:visionflow:owl:class:virtual-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An educational approach where learners work together in virtual environments, metaverse platforms, or VR spaces to achieve shared learning goals through social interaction, knowledge co-construction, and collective problem-solving enabled by immersive and embodied digital experiences.

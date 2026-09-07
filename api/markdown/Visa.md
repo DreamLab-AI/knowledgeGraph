@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Visa
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:visa:e759968ca927",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:70e94d64df199dd26757ad052fb9f3488886a5fea47808964de9c21c485269f6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Payment System]]",
-      "resolved": "urn:visionflow:linked:payment-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Settlement]]",
-      "resolved": "urn:visionflow:linked:settlement",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment Network]]",
-      "resolved": "urn:visionflow:linked:payment-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.visa.com]]",
-      "resolved": "urn:visionflow:linked:https-www-visa-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://usa.visa.com/about-visa.html]]",
-      "resolved": "urn:visionflow:linked:https-usa-visa-com-about-visa-html",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Visa is a multinational payment technology company that operates one of the largest electronic payment networks, connecting cardholders, merchants, and banks. It is headquartered in the United States.

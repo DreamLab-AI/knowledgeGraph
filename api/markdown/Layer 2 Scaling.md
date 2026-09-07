@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Layer 2 Scaling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,7 +167,7 @@ public: true
   - [[Layer 2 Scaling]] is the class of off-chain protocols that execute transactions at high throughput on secondary networks anchored to a [[Layer 1 Blockchain]] for security. These systems employ mechanisms such as [[Zero-Knowledge Proof]] validity proofs (ZK-rollups), optimistic [[Fraud Proof]] commitments (optimistic rollups), or bilateral [[State Channel]] networks to shift the computational burden off the base chain while preserving its security guarantees. By batching thousands of transactions and publishing only compressed state roots to [[Ethereum]] or [[Bitcoin]], Layer 2 networks achieve orders-of-magnitude higher throughput and lower per-transaction costs than [[Layer 1 Blockchain]] alone, making [[Decentralised Finance]] economically viable at scale and enabling [[Micropayment]] use cases that would be uneconomical on-chain.
 
 - ### Overview
-  - Layer 2 scaling arose from the practical limits of base-layer [[Blockchain Scalability]]. Ethereum's mainnet could process roughly 15 transactions per second at launch, whilst Bitcoin's throughput was even lower, yet mainstream adoption demands thousands of transactions per second. The blockchain [[Scalability Trilemma]] — the difficulty of simultaneously achieving decentralisation, security, and high throughput — motivated off-chain architectures that relax the throughput constraint whilst preserving the other two properties by anchoring to a secure base layer.
+  - Layer 2 scaling arose from the practical limits of base-layer [[Blockchain Scalability]]. Ethereum's mainnet [private] process roughly 15 transactions per second at launch, whilst Bitcoin's throughput was even lower, yet mainstream adoption demands thousands of transactions per second. The blockchain [[Scalability Trilemma]] — the difficulty of simultaneously achieving decentralisation, security, and high throughput — motivated off-chain architectures that relax the throughput constraint whilst preserving the other two properties by anchoring to a secure base layer.
   - The core insight is that not every transaction need be validated by every node in the network. If participants can verify the _result_ of a batch of transactions through a compact cryptographic proof or through an economic challenge mechanism, the [[Consensus Mechanism]] work of the base layer can be concentrated on settlement rather than execution.
   - Layer 2 solutions are now production-grade infrastructure. By 2024, major rollup networks process more aggregate transaction volume than Ethereum mainnet, and the [[Lightning Network]] carries substantial Bitcoin payment volume with sub-second finality. The deployment of [[EIP-4844]] (proto-danksharding) in March 2024 reduced rollup data costs by 80–90%, making Layer 2 fees negligible for most users.
 

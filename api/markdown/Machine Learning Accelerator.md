@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Machine Learning Accelerator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -135,6 +131,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - A Machine Learning Accelerator is specialised hardware designed to execute the dense linear-algebra workloads of neural networks far more efficiently than general-purpose CPUs. It optimises matrix multiplication, convolution and tensor operations through massive parallelism, dedicated multiply-accumulate arrays and high memory bandwidth. Examples span GPUs, tensor processing units, FPGAs and custom ASICs deployed from data centres to edge and embedded devices.
   - Related core concepts: [[Hardware Acceleration]] [[GPU]] [[Tensor Processing Unit]] [[Matrix Multiplication]] [[Neural Network]]

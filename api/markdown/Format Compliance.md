@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Format Compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Format compliance is the property of a digital asset or file conforming exactly to the structural, encoding, and schema rules of a defined file or data format specification. Verifying compliance ensures that assets can be reliably parsed, exchanged, and rendered by conformant tools across the supply chain. It is a precondition for interoperability between content producers and consumers.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:asset-format-standards", "label": "Asset Format Standards"}, {"@id": "urn:ngm:class:avatar-standard", "label": "Avatar Standard"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:asset-format-standards",
+        "label": "Asset Format Standards"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-standard",
+        "label": "Avatar Standard"
+      }
+    ]
   },
   "quality": 0.72
 }

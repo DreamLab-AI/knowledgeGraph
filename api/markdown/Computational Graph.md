@@ -1,39 +1,118 @@
----
-public: true
----
-
-# Computational Graph
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:computational-graph", "@type":"Page", "title":"Computational Graph", "vc:slug":"computational-graph", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:computational-graph",
+  "@type": "Page",
+  "title": "Computational Graph",
+  "vc:slug": "computational-graph",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:computational-graph",
-  "@type":"Class",
-  "label":"Computational Graph",
-  "definition":"A computational graph is a directed acyclic graph in which nodes represent mathematical operations or variables and edges represent the flow of data (tensors) between them. It provides the structural backbone for evaluating composite functions and for computing gradients through automatic differentiation. Deep learning frameworks construct such graphs either statically ahead of execution or dynamically during the forward pass, then traverse them in reverse to propagate derivatives.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:automatic-differentiation","label":"Automatic Differentiation"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"},{"@id":"urn:ngm:class:automatic-differentiation","label":"Automatic Differentiation"}],
-    "uses":[{"@id":"urn:ngm:class:tensor","label":"Tensor"}],
-    "hasPart":[{"@id":"urn:ngm:class:loss-function","label":"Loss Function"}],
-    "requires":[{"@id":"urn:ngm:class:tensor","label":"Tensor"}],
-    "supports":[{"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"},{"@id":"urn:ngm:class:stochastic-gradient-descent","label":"Stochastic Gradient Descent"}],
-    "implements":[{"@id":"urn:ngm:class:deep-learning-framework","label":"Deep Learning Framework"}],
-    "dependsOn":[{"@id":"urn:ngm:class:automatic-differentiation","label":"Automatic Differentiation"}],
-    "partOf":[{"@id":"urn:ngm:class:deep-learning-framework","label":"Deep Learning Framework"}],
-    "relatedTo":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"},{"@id":"urn:ngm:class:gradient","label":"Gradient"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:computational-graph",
+  "@type": "Class",
+  "label": "Computational Graph",
+  "definition": "A computational graph is a directed acyclic graph in which nodes represent mathematical operations or variables and edges represent the flow of data (tensors) between them. It provides the structural backbone for evaluating composite functions and for computing gradients through automatic differentiation. Deep learning frameworks construct such graphs either statically ahead of execution or dynamically during the forward pass, then traverse them in reverse to propagate derivatives.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:automatic-differentiation",
+      "label": "Automatic Differentiation"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Preimage Resistance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,20 +82,50 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collision-resistance", "label": "Collision Resistance"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:keccak-256", "label": "Keccak-256"},
-      {"@id": "urn:ngm:class:blake2", "label": "BLAKE2"},
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {
+        "@id": "urn:ngm:class:collision-resistance",
+        "label": "Collision Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:keccak-256",
+        "label": "Keccak-256"
+      },
+      {
+        "@id": "urn:ngm:class:blake2",
+        "label": "BLAKE2"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
-      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"}
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
     ]
   },
   "quality": 0.8,
@@ -111,62 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:preimage-resistance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:62d24eb04f137c4782c7395eaf080a578960d93813a35995cacd746534cf0212"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicPrimitive]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hash function security property within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

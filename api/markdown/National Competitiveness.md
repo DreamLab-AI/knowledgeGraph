@@ -1,8 +1,3 @@
----
-public: true
----
-
-# National Competitiveness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "National competitiveness is the set of policies, institutions, and capabilities that determine a country's level of productivity and its ability to sustain growth in an open global economy. In a technology context it captures how strategic investment in research, talent, and digital infrastructure positions a nation relative to others. Technology adoption is widely treated as a primary driver because it raises productivity and creates spillover advantages.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"},
-      {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"}
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ambient Observation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ambient-observation",
   "title": "Ambient Observation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Computer History", "Deliberate Demonstration", "Grok Bot"],
+  "vc:outboundWikilinks": [
+    "Computer History",
+    "Deliberate Demonstration",
+    "Grok Bot"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}, {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"}, {"@id": "urn:ngm:class:ai-privacy", "label": "AI Privacy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-privacy",
+        "label": "AI Privacy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

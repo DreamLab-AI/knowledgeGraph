@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real Estate Tokenization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,20 +79,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
     ]
   },
   "provenance": {
@@ -107,67 +126,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:real-estate-tokenization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:22c5e1a155bafa83867ff09178f783fb9a724524e45e4813bfe2318924fdb157"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BC-0432-consortium-blockchain]]",
-      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0456-self-sovereign-identity]]",
-      "resolved": "urn:visionflow:linked:bc-0456-self-sovereign-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0458-verifiable-credentials]]",
-      "resolved": "urn:visionflow:linked:bc-0458-verifiable-credentials",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0463-governance-token]]",
-      "resolved": "urn:visionflow:linked:bc-0463-governance-token",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0478-securities-regulation]]",
-      "resolved": "urn:visionflow:linked:bc-0478-securities-regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0488-licensing-requirements]]",
-      "resolved": "urn:visionflow:linked:bc-0488-licensing-requirements",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0494-property-registry]]",
-      "resolved": "urn:visionflow:linked:bc-0494-property-registry",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distribution through smart contracts, reducing investment minimums from tens of thousands to £50, and creating 24/7 tradeable markets projected to grow from £2.6-3.5 billion (2024) to £4 trillion (2035) whilst providing regulatory compliance through Regulation D, Regulation A+, and international frameworks.
@@ -200,7 +158,7 @@ public: true
 
 		- **St. Regis Aspen Resort (Elevated Returns)**: This 179-room luxury hotel in Aspen, Colorado with four food-and-beverage outlets and 29,000 sq ft conference space raised **£18 million** through Aspen Digital token offering (2018) representing **18.9% ownership** of the resort. Tokens sold at **£1 each** with **10,000 token minimum** (£21,000) demonstrated **30% value increase** within 18 months of issuance. Listed on tZERO Alternative Trading System (August 2020), market capitalisation reached **£22.5 million** by March 2021 representing **18% of total tokenized real estate market** at that time. Only accredited investors were permitted.
 
-		- **Dubai Real Estate Tokenization (Prypco Mint)**: Built on XRP Ledger synchronized with official property records, Dubai's platform enables investment minimums of **2,000 dirhams (~£540)**. Two luxury properties sold out within minutes to buyers from **35+ countries**, with the second tokenized apartment selling out in **1 minute 58 seconds** attracting **149 investors** whilst **10,700 investors** joined the waitlist. The **£3 billion MAG Group deal** (May 2025) between MultiBank Group, MAG, and Mavryk tokenizes MAG's luxury real estate portfolio, with projections that tokenized real estate could represent **7% (£16 billion)** of total Dubai property transactions by 2033.
+		- **Dubai Real Estate Tokenization (Prypco Mint)**: Built on XRP Ledger synchronized with official property records, Dubai's platform enables investment minimums of **2,000 dirhams (~£540)**. Two luxury properties sold out within minutes to buyers from **35+ countries**, with the second tokenized apartment selling out in **1 minute 58 seconds** attracting **149 investors** whilst **10,700 investors** joined the waitlist. The **£3 billion MAG Group deal** (May 2025) between MultiBank Group, MAG, and Mavryk tokenizes MAG's luxury real estate portfolio, with projections that tokenized real estate [private] represent **7% (£16 billion)** of total Dubai property transactions by 2033.
 
 		- **Propy**: Processing **1,000+ real estate transfers** worth over **£1 billion** facilitated and **£4 billion** in digital real estate transactions processed as a licensed title firm, Propy's PropyKeys statistics (2025) show **200,000 digital addresses** created with **80,000 U.S. homes** minted on-chain by true owners. Expected to surpass **£50 billion** in tokenized property value by end of 2025 with **£10 billion** in real estate ready for tokenization. Crypto-native transactions represent **5% of volume**, whilst **12%+ of first-time home buyers** used crypto for down payments. Plans include **£100 million expansion** to acquire U.S. title firms targeting **£1 billion valuation**.
 

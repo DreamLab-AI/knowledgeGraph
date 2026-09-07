@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DBpedia
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "DBpedia is a community project that extracts structured information from Wikipedia and publishes it as an interlinked, openly licensed knowledge graph in RDF. It exposes millions of entities through a SPARQL endpoint and dereferenceable URIs, forming a central hub of the Linked Open Data cloud. It is widely used as background knowledge for knowledge-graph construction, entity linking and semantic search.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      }
     ]
   },
   "quality": 0.72

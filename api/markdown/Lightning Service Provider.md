@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lightning Service Provider
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lightning-service-provider:c7535a664511",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:98cf97c4cf4582b9c3d400d28780271337affa84ff03484871ae5e73992bf482"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Lightning]]",
-      "resolved": "urn:visionflow:linked:lightning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment Channel]]",
-      "resolved": "urn:visionflow:linked:payment-channel",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Phoenix]]",
-      "resolved": "urn:visionflow:linked:phoenix",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Service Provider]]",
-      "resolved": "urn:visionflow:linked:lightning-service-provider",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:linked:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://github.com/BitcoinAndLightningLayerSpecs/lsp]]",
-      "resolved": "urn:visionflow:linked:https-github-com-bitcoin-and-lightning-layer-specs-lsp",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.lightning.engineering]]",
-      "resolved": "urn:visionflow:linked:https-docs-lightning-engineering",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Lightning Service Provider is a business that supplies channel liquidity and connectivity services to Lightning Network users. It helps wallets open channels and receive payments.

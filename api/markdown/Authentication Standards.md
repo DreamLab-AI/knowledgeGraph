@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Authentication Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -219,77 +214,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:authentication-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5586ce89f21bd9888d067adba2416cec3ae733ea252be0d977817fd0c5e19591"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Client Implementation]]",
-      "resolved": "urn:visionflow:linked:client-implementation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hardware Authenticators]]",
-      "resolved": "urn:visionflow:linked:hardware-authenticators",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Passwordless Authentication]]",
-      "resolved": "urn:visionflow:linked:passwordless-authentication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Phishing Resistance]]",
-      "resolved": "urn:visionflow:linked:phishing-resistance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Secure Platform Access]]",
-      "resolved": "urn:visionflow:linked:secure-platform-access",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Security Standards]]",
-      "resolved": "urn:visionflow:linked:security-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C]]",
-      "resolved": "urn:visionflow:linked:w3-c",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Public Key Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:public-key-cryptography",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Authentication Standards encompass protocols and specifications for verifying user identity in digital systems, particularly FIDO2 and WebAuthn standards that enable passwordless, phishing-resistant authentication using public key cryptography and hardware authenticators for secure access to metaverse platforms and blockchain applications.

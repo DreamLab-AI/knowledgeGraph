@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LLM Orchestration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:llm-orchestration:d7c87b5173e1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:66bfb77d8762eb0ea3d6e0f5a290489f24ba584718435ebed15d24336bcf8962"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:linked:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tool Use]]",
-      "resolved": "urn:visionflow:linked:tool-use",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Retrieval-Augmented Generation]]",
-      "resolved": "urn:visionflow:linked:retrieval-augmented-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LangChain]]",
-      "resolved": "urn:visionflow:linked:lang-chain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The coordination of multiple calls to one or more large language models, together with tools, retrieval and control logic, to accomplish a task that a single prompt cannot reliably handle.

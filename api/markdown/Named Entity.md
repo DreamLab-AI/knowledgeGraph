@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Named Entity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,25 +50,64 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
-      {"@id": "urn:ngm:class:conditional-random-field", "label": "Conditional Random Field"}
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:conditional-random-field",
+        "label": "Conditional Random Field"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"},
-      {"@id": "urn:ngm:class:token", "label": "Token"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"}
+      {
+        "@id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -84,32 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:named-entity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:817cd53b6d44b4de1cbcd7f1302cac21701b72549e64ff7583cee6057ed40216"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Person, organization, location, or other named entity.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Creative AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,53 +7,194 @@ public: true
   "title": "Creative AI",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:owl:class:diffusion-models", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:owl:class:generative-adversarial-networks", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:visionflow:owl:class:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:owl:class:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:linked:neural-style-transfer", "vc:label": "Neural Style Transfer"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:content-creation", "vc:label": "Content Creation"},
-    {"@id": "urn:visionflow:linked:digital-content-creation", "vc:label": "Digital Content Creation"},
-    {"@id": "urn:visionflow:linked:music-generation", "vc:label": "Music Generation"},
-    {"@id": "urn:visionflow:linked:text-to-speech", "vc:label": "Text-to-Speech"},
-    {"@id": "urn:visionflow:linked:procedural-content-generation", "vc:label": "Procedural Content Generation"},
-    {"@id": "urn:visionflow:owl:class:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:owl:class:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:computational-creativity", "vc:label": "Computational Creativity"},
-    {"@id": "urn:visionflow:linked:human-ai-collaboration", "vc:label": "Human-AI Collaboration"},
-    {"@id": "urn:visionflow:linked:copyright", "vc:label": "Copyright"},
-    {"@id": "urn:visionflow:linked:creative-industries", "vc:label": "Creative Industries"},
-    {"@id": "urn:visionflow:linked:synthetic-media", "vc:label": "Synthetic Media"},
-    {"@id": "urn:visionflow:linked:game-development", "vc:label": "Game Development"},
-    {"@id": "urn:visionflow:linked:film-production", "vc:label": "Film Production"},
-    {"@id": "urn:visionflow:linked:video-generation", "vc:label": "Video Generation"},
-    {"@id": "urn:visionflow:linked:audio-synthesis", "vc:label": "Audio Synthesis"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:multimodal-model", "vc:label": "Multimodal Model"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:text-to-image", "vc:label": "Text-to-Image"},
-    {"@id": "urn:visionflow:linked:discriminative-ai", "vc:label": "Discriminative AI"},
-    {"@id": "urn:visionflow:linked:rule-based-systems", "vc:label": "Rule-Based Systems"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:metaverse", "vc:label": "Metaverse"},
-    {"@id": "urn:visionflow:linked:augmented-reality", "vc:label": "Augmented Reality"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:ai-application", "vc:label": "CreativeMediaDomain"},
-    {"@id": "urn:visionflow:owl:class:ai-research-area", "vc:label": "ComputationAndIntelligenceDomain"},
-    {"@id": "urn:visionflow:owl:class:compute-layer", "vc:label": "ComputeLayer"},
-    {"@id": "urn:visionflow:owl:class:data-layer", "vc:label": "DataLayer"},
-    {"@id": "urn:visionflow:linked:latent-space", "vc:label": "Latent Space"},
-    {"@id": "urn:visionflow:linked:clip-model", "vc:label": "CLIP"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:fashion", "vc:label": "Fashion"},
-    {"@id": "urn:visionflow:linked:automated-design", "vc:label": "Automated Design"},
-    {"@id": "urn:visionflow:linked:ai-art", "vc:label": "AI Art"}
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-models",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-style-transfer",
+      "vc:label": "Neural Style Transfer"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-creation",
+      "vc:label": "Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-content-creation",
+      "vc:label": "Digital Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-generation",
+      "vc:label": "Music Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-speech",
+      "vc:label": "Text-to-Speech"
+    },
+    {
+      "@id": "urn:visionflow:linked:procedural-content-generation",
+      "vc:label": "Procedural Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-creativity",
+      "vc:label": "Computational Creativity"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-ai-collaboration",
+      "vc:label": "Human-AI Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:copyright",
+      "vc:label": "Copyright"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-industries",
+      "vc:label": "Creative Industries"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-media",
+      "vc:label": "Synthetic Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-development",
+      "vc:label": "Game Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:film-production",
+      "vc:label": "Film Production"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-generation",
+      "vc:label": "Video Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-synthesis",
+      "vc:label": "Audio Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-model",
+      "vc:label": "Multimodal Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:visionflow:linked:discriminative-ai",
+      "vc:label": "Discriminative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:rule-based-systems",
+      "vc:label": "Rule-Based Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse",
+      "vc:label": "Metaverse"
+    },
+    {
+      "@id": "urn:visionflow:linked:augmented-reality",
+      "vc:label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-application",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-research-area",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "ComputeLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-layer",
+      "vc:label": "DataLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-space",
+      "vc:label": "Latent Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:clip-model",
+      "vc:label": "CLIP"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:fashion",
+      "vc:label": "Fashion"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-design",
+      "vc:label": "Automated Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-art",
+      "vc:label": "AI Art"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -81,126 +217,192 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:style-transfer", "label": "Neural Style Transfer"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
-      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Neural Style Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"},
-      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
-      {"@id": "urn:ngm:class:music-generation", "label": "Music Generation"},
-      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:automated-design", "label": "Automated Design"},
-      {"@id": "urn:ngm:class:ai-art", "label": "AI Art"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:automated-design",
+        "label": "Automated Design"
+      },
+      {
+        "@id": "urn:ngm:class:ai-art",
+        "label": "AI Art"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:large-scale-datasets", "label": "Large-Scale Datasets"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Datasets"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:creative-industries", "label": "Creative Industries"},
-      {"@id": "urn:ngm:class:computational-creativity", "label": "Computational Creativity"},
-      {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"},
-      {"@id": "urn:ngm:class:copyright", "label": "Copyright"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:multimodal-model", "label": "Multimodal Model"}
+      {
+        "@id": "urn:ngm:class:creative-industries",
+        "label": "Creative Industries"
+      },
+      {
+        "@id": "urn:ngm:class:computational-creativity",
+        "label": "Computational Creativity"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based Systems"},
-      {"@id": "urn:ngm:class:discriminative-ai", "label": "Discriminative AI"}
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "@id": "urn:ngm:class:discriminative-ai",
+        "label": "Discriminative AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"},
-      {"@id": "urn:ngm:class:film-production", "label": "Film Production"},
-      {"@id": "urn:ngm:class:fashion", "label": "Fashion"}
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "@id": "urn:ngm:class:fashion",
+        "label": "Fashion"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:generative-creative-systems", "label": "Generative Creative Systems"},
-    {"@id": "urn:ngm:class:computational-creativity", "label": "Computational Creativity"}
+    {
+      "@id": "urn:ngm:class:generative-creative-systems",
+      "label": "Generative Creative Systems"
+    },
+    {
+      "@id": "urn:ngm:class:computational-creativity",
+      "label": "Computational Creativity"
+    }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:creative-ai:enrichment-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:creative-ai"},
-  "vc:resolutions": [
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:owl:class:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:owl:class:diffusion-models", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Adversarial Network]]", "resolved": "urn:visionflow:owl:class:generative-adversarial-networks", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:owl:class:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer]]", "resolved": "urn:visionflow:owl:class:transformer", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:owl:class:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Training Data]]", "resolved": "urn:visionflow:owl:class:training-data", "kind": "ResolvedLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-technique", "kind": "ResolvedLink"},
-    {"raw": "[[CreativeMediaDomain]]", "resolved": "urn:visionflow:owl:class:ai-application", "kind": "ResolvedLink"},
-    {"raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:owl:class:ai-research-area", "kind": "ResolvedLink"},
-    {"raw": "[[ComputeLayer]]", "resolved": "urn:visionflow:owl:class:compute-layer", "kind": "ResolvedLink"},
-    {"raw": "[[DataLayer]]", "resolved": "urn:visionflow:owl:class:data-layer", "kind": "ResolvedLink"},
-    {"raw": "[[Variational Autoencoder]]", "resolved": "urn:visionflow:linked:variational-autoencoder", "kind": "StubLink"},
-    {"raw": "[[Neural Style Transfer]]", "resolved": "urn:visionflow:linked:neural-style-transfer", "kind": "StubLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:visionflow:linked:image-generation", "kind": "StubLink"},
-    {"raw": "[[Content Creation]]", "resolved": "urn:visionflow:linked:content-creation", "kind": "StubLink"},
-    {"raw": "[[Music Generation]]", "resolved": "urn:visionflow:linked:music-generation", "kind": "StubLink"},
-    {"raw": "[[Text-to-Speech]]", "resolved": "urn:visionflow:linked:text-to-speech", "kind": "StubLink"},
-    {"raw": "[[Procedural Content Generation]]", "resolved": "urn:visionflow:linked:procedural-content-generation", "kind": "StubLink"},
-    {"raw": "[[Video Generation]]", "resolved": "urn:visionflow:linked:video-generation", "kind": "StubLink"},
-    {"raw": "[[Text-to-Image]]", "resolved": "urn:visionflow:linked:text-to-image", "kind": "StubLink"},
-    {"raw": "[[Computational Creativity]]", "resolved": "urn:visionflow:linked:computational-creativity", "kind": "StubLink"},
-    {"raw": "[[Human-AI Collaboration]]", "resolved": "urn:visionflow:linked:human-ai-collaboration", "kind": "StubLink"},
-    {"raw": "[[Copyright]]", "resolved": "urn:visionflow:linked:copyright", "kind": "StubLink"},
-    {"raw": "[[Creative Industries]]", "resolved": "urn:visionflow:linked:creative-industries", "kind": "StubLink"},
-    {"raw": "[[Synthetic Media]]", "resolved": "urn:visionflow:linked:synthetic-media", "kind": "StubLink"},
-    {"raw": "[[Game Development]]", "resolved": "urn:visionflow:linked:game-development", "kind": "StubLink"},
-    {"raw": "[[Film Production]]", "resolved": "urn:visionflow:linked:film-production", "kind": "StubLink"},
-    {"raw": "[[Audio Synthesis]]", "resolved": "urn:visionflow:linked:audio-synthesis", "kind": "StubLink"},
-    {"raw": "[[Prompt Engineering]]", "resolved": "urn:visionflow:linked:prompt-engineering", "kind": "StubLink"},
-    {"raw": "[[Multimodal Model]]", "resolved": "urn:visionflow:linked:multimodal-model", "kind": "StubLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "StubLink"},
-    {"raw": "[[Discriminative AI]]", "resolved": "urn:visionflow:linked:discriminative-ai", "kind": "StubLink"},
-    {"raw": "[[Rule-Based Systems]]", "resolved": "urn:visionflow:linked:rule-based-systems", "kind": "StubLink"},
-    {"raw": "[[Digital Twin]]", "resolved": "urn:visionflow:linked:digital-twin", "kind": "StubLink"},
-    {"raw": "[[Metaverse]]", "resolved": "urn:visionflow:linked:metaverse", "kind": "StubLink"},
-    {"raw": "[[Augmented Reality]]", "resolved": "urn:visionflow:linked:augmented-reality", "kind": "StubLink"},
-    {"raw": "[[CLIP]]", "resolved": "urn:visionflow:linked:clip-model", "kind": "StubLink"},
-    {"raw": "[[Latent Space]]", "resolved": "urn:visionflow:linked:latent-space", "kind": "StubLink"},
-    {"raw": "[[Automated Design]]", "resolved": "urn:visionflow:linked:automated-design", "kind": "StubLink"},
-    {"raw": "[[AI Art]]", "resolved": "urn:visionflow:linked:ai-art", "kind": "StubLink"},
-    {"raw": "[[Fashion]]", "resolved": "urn:visionflow:linked:fashion", "kind": "StubLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:linked:ai-ethics", "kind": "StubLink"},
-    {"raw": "[[Digital Content Creation]]", "resolved": "urn:visionflow:linked:digital-content-creation", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -298,11 +500,11 @@ public: true
         ObjectSomeValuesFrom(ai:reducesTo ai:LatentDiffusionProcess))
 
   ## About
-    Creative AI encompasses the set of machine learning systems, architectures, and deployed products that produce outputs within domains historically understood as requiring human creativity. The field draws its technical core from [[Generative AI]] but is distinguished by its focus on aesthetic domains — visual art, music, narrative, game design, fashion — rather than the broader generative capability umbrella. Its development can be traced through several generational shifts. Rule-based and algorithmic composition systems from the 1950s through the 1990s — including Harold Cohen's AARON (1973–2016) and early algorithmic music composition — established that machines could produce culturally legible creative artefacts through explicit aesthetic rule systems. Harold Cohen's AARON, which operated for over four decades, produced large-format paintings through rule-based drawing decisions and demonstrated that machines could develop a consistent, recognisable aesthetic style without deep learning or statistical inference. Similarly, David Cope's EMI (Experiments in Musical Intelligence) system, active from 1981, produced compositions in the style of historical composers by recombining patterns extracted from the scores of Mozart, Bach, and Joplin, demonstrating that stylistic fidelity could be achieved through pattern recombination well before the deep learning era. The AARON and EMI programmes established two of the central debates that persist in the field today: whether a machine producing culturally recognised creative artefacts constitutes genuine creativity or elaborate mimicry, and who bears authorship responsibility for AI-generated works.
+    Creative AI encompasses the set of machine learning systems, architectures, and deployed products that produce outputs within domains historically understood as requiring human creativity. The field draws its technical core from [[Generative AI]] but is distinguished by its focus on aesthetic domains — visual art, music, narrative, game design, fashion — rather than the broader generative capability umbrella. Its development can be traced through several generational shifts. Rule-based and algorithmic composition systems from the 1950s through the 1990s — including Harold Cohen's AARON (1973–2016) and early algorithmic music composition — established that machines [private] produce culturally legible creative artefacts through explicit aesthetic rule systems. Harold Cohen's AARON, which operated for over four decades, produced large-format paintings through rule-based drawing decisions and demonstrated that machines [private] develop a consistent, recognisable aesthetic style without deep learning or statistical inference. Similarly, David Cope's EMI (Experiments in Musical Intelligence) system, active from 1981, produced compositions in the style of historical composers by recombining patterns extracted from the scores of Mozart, Bach, and Joplin, demonstrating that stylistic fidelity [private] be achieved through pattern recombination well before the deep learning era. The AARON and EMI programmes established two of the central debates that persist in the field today: whether a machine producing culturally recognised creative artefacts constitutes genuine creativity or elaborate mimicry, and who bears authorship responsibility for AI-generated works.
 
-    The first deep-learning wave, from 2014 to 2018, introduced [[Generative Adversarial Network]] architectures (Goodfellow et al., 2014) that enabled image synthesis of increasing fidelity, alongside [[Neural Style Transfer]] (Gatys et al., 2015) that first made AI-mediated visual creativity accessible to non-specialists. The GAN's adversarial training dynamic — in which a generator network and a discriminator network are locked in a minimax competition, with the generator learning to produce samples that fool the discriminator into classifying them as real — produced a fundamentally different mode of generative learning than the explicit rule systems of preceding decades. GAN-produced images in systems such as ProGAN (2017) and StyleGAN (2019) achieved levels of photographic realism that were publicly indistinguishable from real photographs, generating significant cultural and ethical commentary about the difficulty of authenticating visual media. The StyleGAN "this person does not exist" demonstration (2019), which generated photorealistic human faces of people who do not exist, crystallised public awareness of AI's generative capacity and foreshadowed deepfake concerns. Transformer-based text generation from 2018 onward extended creative AI into long-form narrative, dialogue, and code, with GPT-2 and subsequently GPT-4 demonstrating that [[Large Language Models]] could produce coherent, contextually rich prose and poetry at quality levels that prompted heated philosophical debate about machine understanding, intentionality, and the relationship between language fluency and genuine comprehension.
+    The first deep-learning wave, from 2014 to 2018, introduced [[Generative Adversarial Network]] architectures (Goodfellow et al., 2014) that enabled image synthesis of increasing fidelity, alongside [[Neural Style Transfer]] (Gatys et al., 2015) that first made AI-mediated visual creativity accessible to non-specialists. The GAN's adversarial training dynamic — in which a generator network and a discriminator network are locked in a minimax competition, with the generator learning to produce samples that fool the discriminator into classifying them as real — produced a fundamentally different mode of generative learning than the explicit rule systems of preceding decades. GAN-produced images in systems such as ProGAN (2017) and StyleGAN (2019) achieved levels of photographic realism that were publicly indistinguishable from real photographs, generating significant cultural and ethical commentary about the difficulty of authenticating visual media. The StyleGAN "this person does not exist" demonstration (2019), which generated photorealistic human faces of people who do not exist, crystallised public awareness of AI's generative capacity and foreshadowed deepfake concerns. Transformer-based text generation from 2018 onward extended creative AI into long-form narrative, dialogue, and code, with GPT-2 and subsequently GPT-4 demonstrating that [[Large Language Models]] [private] produce coherent, contextually rich prose and poetry at quality levels that prompted heated philosophical debate about machine understanding, intentionality, and the relationship between language fluency and genuine comprehension.
 
-    The current era, initiated by the public release of Stable Diffusion in August 2022, is defined by [[Diffusion Model]] architectures that achieve photorealistic and artistically controllable image synthesis from natural language prompts. This period has catalysed mass public engagement, with systems such as Midjourney, DALL-E 3, Adobe Firefly, and Imagen serving tens of millions of users. The public release of Stable Diffusion as an open-weight model was particularly significant: it enabled community-driven fine-tuning, extension, and deployment that the closed proprietary systems could not match, producing an explosion of specialised models, LoRA adaptations, ControlNet extensions, and workflow tooling. Community platforms such as Civitai (hosting over 100,000 fine-tuned models by 2024) and ComfyUI (a node-based workflow orchestration interface for Stable Diffusion) created an ecosystem of creative AI tooling that democratised access to high-quality generative capabilities. Critically, the diffusion era has also elevated the importance of cross-modal architectures — [[CLIP]] (Radford et al., 2021) being the paradigmatic example — that align text and image representations within shared [[Latent Space]] geometries, enabling natural-language conditioning of visual generation. CLIP's contrastive training on 400 million text-image pairs from the internet established a geometric alignment between linguistic and visual concepts that diffusion models exploit for text-conditioned generation: a text encoder maps a prompt into the CLIP embedding space, and the diffusion model's cross-attention mechanism uses that embedding to steer the denoising trajectory toward images consistent with the textual description. These technical advances have simultaneously generated the most significant legal and ethical tensions the field has faced: training data composed of copyrighted human creative works without licence, contested questions of authorship in AI-assisted works, and evidence of material economic impact on professional creative workers. The legal proceedings against Stability AI (by Getty Images and by a class of visual artists), against OpenAI (by the Authors Guild and major news publishers), and against Suno and Udio (by the Recording Industry Association of America and major record labels) constitute the most consequential legal challenges to the business models underlying commercial Creative AI deployment as of mid-2026.
+    The current era, initiated by the public release of Stable Diffusion in August 2022, is defined by [[Diffusion Model]] architectures that achieve photorealistic and artistically controllable image synthesis from natural language prompts. This period has catalysed mass public engagement, with systems such as Midjourney, DALL-E 3, Adobe Firefly, and Imagen serving tens of millions of users. The public release of Stable Diffusion as an open-weight model was particularly significant: it enabled community-driven fine-tuning, extension, and deployment that the closed proprietary systems [private] not match, producing an explosion of specialised models, LoRA adaptations, ControlNet extensions, and workflow tooling. Community platforms such as Civitai (hosting over 100,000 fine-tuned models by 2024) and ComfyUI (a node-based workflow orchestration interface for Stable Diffusion) created an ecosystem of creative AI tooling that democratised access to high-quality generative capabilities. Critically, the diffusion era has also elevated the importance of cross-modal architectures — [[CLIP]] (Radford et al., 2021) being the paradigmatic example — that align text and image representations within shared [[Latent Space]] geometries, enabling natural-language conditioning of visual generation. CLIP's contrastive training on 400 million text-image pairs from the internet established a geometric alignment between linguistic and visual concepts that diffusion models exploit for text-conditioned generation: a text encoder maps a prompt into the CLIP embedding space, and the diffusion model's cross-attention mechanism uses that embedding to steer the denoising trajectory toward images consistent with the textual description. These technical advances have simultaneously generated the most significant legal and ethical tensions the field has faced: training data composed of copyrighted human creative works without licence, contested questions of authorship in AI-assisted works, and evidence of material economic impact on professional creative workers. The legal proceedings against Stability AI (by Getty Images and by a class of visual artists), against OpenAI (by the Authors Guild and major news publishers), and against Suno and Udio (by the Recording Industry Association of America and major record labels) constitute the most consequential legal challenges to the business models underlying commercial Creative AI deployment as of mid-2026.
 
     The relationship between Creative AI and [[Human-AI Collaboration]] is nuanced and contested. Three distinct schools of thought can be identified: the **substitution thesis**, which holds that generative AI is progressively replacing human creative workers and will ultimately capture a large share of creative labour markets; the **augmentation thesis**, which holds that AI functions as a powerful creative tool that amplifies human capability without substituting for the distinctively human elements of creative judgement, cultural positioning, and client relationship; and the **new-medium thesis**, which holds that AI is creating a genuinely new creative medium — analogous to photography's emergence in the 19th century — that will not so much replace existing forms as create new ones alongside them, potentially expanding the overall creative economy. The evidence available through 2025–2026 is consistent with all three theses operating simultaneously in different market segments: substitution dominating in commodity creative tasks (stock imagery, routine copywriting, basic design), augmentation dominating in high-end professional creative work, and new-medium creation visible in AI-native creative forms such as interactive generative art, personalised narrative experiences, and AI-directed procedural content.
 
@@ -384,7 +586,7 @@ public: true
 
     Scottish Creative AI research is anchored by the University of Edinburgh's Informatics faculty, which has contributed to text generation, natural language processing, and [[Computational Creativity]] research. Rockstar North (Edinburgh) is one of the world's most commercially successful game development studios and a significant UK AI employment site. The University of Glasgow has historical depth in [[Computational Creativity]] through collaboration with the Creative Systems Lab. Screen Scotland and the Scottish Government's creative industries support programmes provide industrial context for Scottish Creative AI development.
 
-    The UK House of Lords Communications and Digital Committee's 2024 report "AI, Copyright and the Creative Industries" concluded that UK creative industries "face a clear and present danger from generative AI," finding that widespread training on unlicensed works constitutes a fundamental threat to the creative economy's sustainability. The Data (Use and Access) Act 2025 mandated a government review (sections 135–137), resulting in the March 2026 Copyright and AI report that maintained the status quo while continuing stakeholder consultations with both AI developers and creator communities. The March 2026 report's maintenance of the status quo was received with relief by the creative industries and frustration by AI developers seeking a clear exception, with the government's stated rationale being that the legal picture in other jurisdictions (particularly the US fair use litigation) had not yet clarified sufficiently to justify legislative action. The transparency working group established under the Act is expected to report before end 2026, with recommendations on training data disclosure obligations that could form the basis of secondary legislation.
+    The UK House of Lords Communications and Digital Committee's 2024 report "AI, Copyright and the Creative Industries" concluded that UK creative industries "face a clear and present danger from generative AI," finding that widespread training on unlicensed works constitutes a fundamental threat to the creative economy's sustainability. The Data (Use and Access) Act 2025 mandated a government review (sections 135–137), resulting in the March 2026 Copyright and AI report that maintained the status quo while continuing stakeholder consultations with both AI developers and creator communities. The March 2026 report's maintenance of the status quo was received with relief by the creative industries and frustration by AI developers seeking a clear exception, with the government's stated rationale being that the legal picture in other jurisdictions (particularly the US fair use litigation) had not yet clarified sufficiently to justify legislative action. The transparency working group established under the Act is expected to report before end 2026, with recommendations on training data disclosure obligations that [private] form the basis of secondary legislation.
 
   ## Future Directions (2026–2030)
     The Creative AI landscape is subject to rapid change, but several structural trajectories appear durable across the 2026–2030 horizon:

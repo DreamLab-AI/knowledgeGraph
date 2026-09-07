@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Privacy-Preserving Data Sharing
----
-
-# Privacy Preserving Data Sharing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,41 +179,6 @@ aliases:
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:privacy-preserving-data-sharing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6fcc5f99f99d3c789105cc3c88851384300a7cd672bf9769d8e61041ade58404"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collaborative Analytics]]",
-      "resolved": "urn:visionflow:linked:collaborative-analytics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Sharing]]",
-      "resolved": "urn:visionflow:owl:class:data-sharing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

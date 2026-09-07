@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fireblocks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fireblocks:778cbf1e58b2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b58513f6be68ef0cb7bc5522ac3150da8af9a59375bc01133cfa38fb01c84b4b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Key Management]]",
-      "resolved": "urn:visionflow:linked:key-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Institutional Custody]]",
-      "resolved": "urn:visionflow:linked:institutional-custody",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:linked:digital-asset",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Fireblocks is a company that provides digital asset custody and transfer infrastructure for institutions, using secure key management technology.

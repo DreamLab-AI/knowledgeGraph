@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Fairness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -78,47 +73,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-fairness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b14b509ceaa50762e593e0e675aa0e64db7261bb3b76d0be98709a561a40c60c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Equitable AI Systems]]",
-      "resolved": "urn:visionflow:linked:equitable-ai-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Ethics]]",
-      "resolved": "urn:visionflow:owl:class:ai-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI Fairness refers to the principle and practice of ensuring artificial intelligence systems produce equitable outcomes without bias or discrimination based on protected characteristics such as race, gender, age, or socioeconomic status. It encompasses methodologies for detecting, measuring, and mitigating algorithmic bias throughout the AI development lifecycle to prevent disproportionate harm to specific demographic groups.

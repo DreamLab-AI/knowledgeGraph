@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Cobot Deployment
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:cobot-deployment", "@type": "Page", "title": "Cobot Deployment", "vc:slug": "cobot-deployment", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cobot-deployment",
+  "@type": "Page",
+  "title": "Cobot Deployment",
+  "vc:slug": "cobot-deployment",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

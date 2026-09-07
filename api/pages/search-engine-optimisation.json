@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:search-engine-optimisation",
   "domain": "data",
-  "definition": "Search engine optimisation (SEO) is the discipline of improving a website's visibility and ranking in organic search results. It combines technical optimisation, content relevance, structured data, and authority signals to align pages with how search engines crawl, index, and rank content. SEO bridges marketing intent with the indexing and ranking machinery of search engines to attract qualified, unpaid traffic.",
+  "definition": "Search engine optimisation (SEO) is the discipline of improving a website's visibility and ranking in organic search results. It combines technical optimisation, content relevance, structured data, and authority signals to align pages with how search engines crawl, [private], and rank content. SEO bridges marketing intent with the indexing and ranking machinery of search engines to attract qualified, unpaid traffic.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-marketing",

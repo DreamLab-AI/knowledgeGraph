@@ -1,55 +1,104 @@
----
-public: true
----
-
-# Calldata
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:calldata", "@type":"Page", "title":"Calldata", "vc:slug":"calldata", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:calldata",
+  "@type": "Page",
+  "title": "Calldata",
+  "vc:slug": "calldata",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:calldata",
-  "@type":"Class",
-  "label":"Calldata",
-  "definition":"Calldata is the read-only, immutable byte array supplied with a transaction or message call on the Ethereum Virtual Machine, carrying the function selector and ABI-encoded arguments that tell a smart contract what to execute. Because it lives outside contract storage and is comparatively cheap to include, calldata is the primary channel through which external inputs reach contracts. It is especially significant for rollups, which post compressed transaction batches as calldata to the base layer to inherit its data availability and security.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:transaction","label":"Transaction"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:transaction","label":"Transaction"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:calldata",
+  "@type": "Class",
+  "label": "Calldata",
+  "definition": "Calldata is the read-only, immutable byte array supplied with a transaction or message call on the Ethereum Virtual Machine, carrying the function selector and ABI-encoded arguments that tell a smart contract what to execute. Because it lives outside contract storage and is comparatively cheap to include, calldata is the primary channel through which external inputs reach contracts. It is especially significant for rollups, which post compressed transaction batches as calldata to the base layer to inherit its data availability and security.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:transaction",
+      "label": "Transaction"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:ethereum-smart-contract-platform-virtual-machine","label":"Ethereum Virtual Machine"},
-      {"@id":"urn:ngm:class:gas","label":"Gas"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:rollup","label":"Rollup"},
-      {"@id":"urn:ngm:class:data-availability","label":"Data Availability"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:optimistic-rollup","label":"Optimistic Rollup"},
-      {"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:ethereum","label":"Ethereum"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:gas","label":"Gas"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:transaction","label":"Transaction"},
-      {"@id":"urn:ngm:class:data-availability","label":"Data Availability"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:eip-4844","label":"EIP-4844"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:eip-4844",
+        "label": "EIP-4844"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

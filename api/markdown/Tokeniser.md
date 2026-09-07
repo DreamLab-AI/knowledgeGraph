@@ -1,8 +1,3 @@
----
-public: true
----
-
-# tokeniser
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,7 +173,7 @@ public: true
 ```
 
 - ### Definition
-  - A tokeniser is a preprocessing component that sits at the boundary between raw text and the numerical representations consumed by [[Neural Networks]] and [[Language Modeling]] architectures. It segments an input string into a sequence of discrete units called tokens — which may be characters, whole words, or sub-word fragments — and maps each token to a unique integer index within a fixed [[Vocabulary]]. The resulting integer sequence (plus optional special boundary markers such as `[CLS]` and `[SEP]`) is then passed to a [[Token Embedding]] lookup table that converts each index into a dense vector for further processing by the model. The choice of tokenisation strategy fundamentally shapes model capacity, [[Context Window]] utilisation, multilingual coverage, and inference cost.
+  - A tokeniser is a preprocessing component that sits at the boundary between raw text and the numerical representations consumed by [[Neural Networks]] and [[Language Modeling]] architectures. It segments an input string into a sequence of discrete units called tokens — which may be characters, whole words, or sub-word fragments — and maps each token to a unique integer [private] within a fixed [[Vocabulary]]. The resulting integer sequence (plus optional special boundary markers such as `[CLS]` and `[SEP]`) is then passed to a [[Token Embedding]] lookup table that converts each [private] into a dense vector for further processing by the model. The choice of tokenisation strategy fundamentally shapes model capacity, [[Context Window]] utilisation, multilingual coverage, and inference cost.
 
 - ### Overview
   - Tokenisation is not merely a mundane preprocessing step; it is a core design decision that determines the granularity at which a model perceives language. Early neural NLP systems operated on whole words, producing large, open vocabularies with severe out-of-vocabulary problems for morphologically rich languages. Character-level approaches avoided OOV failures but produced very long sequences that were difficult for early recurrent models to learn from. The sub-word paradigm, now dominant, achieves a practical balance: common words remain as single tokens, while rare or novel words are decomposed into learned sub-word pieces that often carry morphological or semantic meaning.

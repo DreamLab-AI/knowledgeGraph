@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[solar plans]]
-# Solar PV Installation Engineering Plan
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,42 +47,46 @@ elevatedFrom:: [[solar plans]]
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"}
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
-      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:carbon-footprint-assessment", "label": "Carbon Footprint Assessment"},
-      {"@id": "urn:ngm:class:environmental-impact-metric", "label": "Environmental Impact Metric"}
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-assessment",
+        "label": "Carbon Footprint Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:solar-plans:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cdcf9625d9bc4bcfa7d3742a96bb4f1db89058e4e0271e5bc88d9cba7332ddcb"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   **Solar plans** describe engineered configurations and simulation-driven optimisation analyses for solar PV installations. This page focuses on a three-tier cascading array designed for Cumbria, England, using a differential evolution algorithm to maximise annual energy yield within a constrained 10 m² footprint at 54.5°N latitude. The resulting design — 18 panels across three tiers at 43–45° tilt with 20% horizontal overlap — achieves 3,179 kWh/year, compared to ~1,065 kWh/year for a conventional flat array.

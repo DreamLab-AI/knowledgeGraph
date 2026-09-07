@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rmsnorm
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,25 +34,42 @@ public: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"},
-      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"}
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"}
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:training-and-fine-tuning", "label": "Training and fine tuning"}
+      {
+        "@id": "urn:ngm:class:training-and-fine-tuning",
+        "label": "Training and fine tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Root Mean Square Layer Normalisation (RMSNorm) is a neural network normalisation technique that re-scales each activation vector by the inverse of the root mean square of its elements, eliminating the mean-subtraction and bias terms present in standard Layer Normalisation. By removing the re-centring computation, RMSNorm reduces operational cost while achieving comparable training stability and generalisation performance to Layer Normalisation in transformer architectures. RMSNorm has been adopted as the default normalisation layer in several state-of-the-art large language models including LLaMA and Mistral, reflecting both its empirical effectiveness and its computational efficiency on GPU hardware.

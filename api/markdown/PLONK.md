@@ -1,8 +1,3 @@
----
-public: true
----
-
-# PLONK
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:plonk:32b51bf4a195",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:258b468dba0888ad63214bdd22e71eda5fceb0121b4285ee92fc220a44b4e3a7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rollup]]",
-      "resolved": "urn:visionflow:linked:rollup",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scroll]]",
-      "resolved": "urn:visionflow:linked:scroll",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://eprint.iacr.org/2019/953]]",
-      "resolved": "urn:visionflow:linked:https-eprint-iacr-org-2019-953",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://vitalik.eth.limo/general/2019/09/22/plonk.html]]",
-      "resolved": "urn:visionflow:linked:https-vitalik-eth-limo-general-2019-09-22-plonk-html",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - PLONK is a zero-knowledge proof system that uses polynomial commitments and a universal trusted setup. It is used to build succinct proofs for verifiable computation.

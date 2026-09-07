@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Partition Attack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,25 +83,58 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
-      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"}
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "@id": "urn:ngm:class:selfish-mining",
+        "label": "Selfish Mining"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"},
-      {"@id": "urn:ngm:class:sybil-attack", "label": "Sybil Attack"},
-      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+      {
+        "@id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "@id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ]
   },
   "provenance": {
@@ -116,62 +144,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:partition-attack:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ea0602c7edd0ed7970fa40ab5016a7c3e2be6663691241509a0b32d1bd72a8e2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NetworkComponent]]",
-      "resolved": "urn:visionflow:owl:class:network-component",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Partition Attack is a network-level attack against a blockchain in which an adversary manipulates routing infrastructure to segment the peer-to-peer network into two or more isolated subgraphs, causing each partition to mine or validate on a separate chain branch. When the partition is healed the shorter branch is discarded, enabling the attacker to waste honest mining power and potentially facilitate double-spend attacks.
@@ -224,7 +196,7 @@ public: true
       ```
 
   #### Attack Mechanics
-  The adversary first identifies the Internet AS (Autonomous System) paths used by Bitcoin or Ethereum nodes and targets critical routing chokepoints—often a small number of transit ASes through which a disproportionate share of node traffic flows. By announcing more specific BGP prefixes for these addresses, the attacker hijacks traffic and can drop or delay block and transaction messages selectively, creating a de-facto partition. Empirical research (Apostolaki et al., 2017) demonstrated that a single AS could partition the Bitcoin network into two roughly equal halves by intercepting traffic from as few as 13 BGP prefixes.
+  The adversary first identifies the Internet AS (Autonomous System) paths used by Bitcoin or Ethereum nodes and targets critical routing chokepoints—often a small number of transit ASes through which a disproportionate share of node traffic flows. By announcing more specific BGP prefixes for these addresses, the attacker hijacks traffic and can drop or delay block and transaction messages selectively, creating a de-facto partition. Empirical research (Apostolaki et al., 2017) demonstrated that a single AS [private] partition the Bitcoin network into two roughly equal halves by intercepting traffic from as few as 13 BGP prefixes.
 
   #### Impact and Exploitation
   During a partition, each isolated subnetwork mines independently. The partition can be exploited for double spending: the attacker sends a transaction in one partition (e.g., to a merchant) and a conflicting transaction in the other (returning funds to themselves). When the partition heals, the honest chain wins the fork race and the merchant's payment is reversed. Even without double spending, partitions waste significant mining energy on orphaned blocks and can be used to delay transaction finality for high-value confirmations.

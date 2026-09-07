@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hong Kong
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,46 +152,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hong-kong:f59372f70dc7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6176ebd120fe9648ffc34bead6a4dd387556ef2aba209584258e1982c9daec2b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Financial Technology]]",
-      "resolved": "urn:visionflow:linked:financial-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Central Bank Digital Currency]]",
-      "resolved": "urn:visionflow:linked:central-bank-digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BIS Innovation Hub]]",
-      "resolved": "urn:visionflow:linked:bis-innovation-hub",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Entity]]",
-      "resolved": "urn:visionflow:linked:entity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Independent Living
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:independent-living", "@type":"Page", "title":"Independent Living", "vc:slug":"independent-living", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:independent-living",
+  "@type": "Page",
+  "title": "Independent Living",
+  "vc:slug": "independent-living",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

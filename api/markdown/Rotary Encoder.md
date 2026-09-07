@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rotary Encoder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,19 +60,46 @@ public: true
       }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
-      {"@id": "urn:ngm:class:dc-servo-motor", "label": "DC Servo Motor"},
-      {"@id": "urn:ngm:class:stepper-motor", "label": "Stepper Motor"},
-      {"@id": "urn:ngm:class:imu", "label": "IMU"},
-      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
-      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"}
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:stepper-motor",
+        "label": "Stepper Motor"
+      },
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
     ]
   },
   "quality": 0.8,
@@ -88,39 +110,6 @@ public: true
   }
 }
 ```
-
-Rotary encoders are the most common position feedback sensor in robotics. Optical encoders use a slotted disk and photodetector; magnetic encoders use Hall-effect sensing against a magnetised ring. Absolute encoders retain position across power cycles, while incremental encoders require homing on startup. Resolution is measured in counts per revolution (CPR), with modern encoders reaching 10,000–1,000,000 CPR for high-precision servo applications.
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rotary-encoder:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9fce82dfd057a5d3d16b826e8f8b9122535d68906fac816c12657929eca6c408"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Encoder]]",
-      "resolved": "urn:visionflow:owl:class:encoder",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Rotary encoder measures shaft angle and direction.

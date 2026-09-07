@@ -1,8 +1,3 @@
----
-public: true
----
-
-# sBTC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:s-btc:73a57f753f00",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2cc8de3a0e13eea20ccdb7cf41feff90ef617f012a9b329dd26b0473e20e11d7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Network]]",
-      "resolved": "urn:visionflow:linked:bitcoin-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 2 Scaling]]",
-      "resolved": "urn:visionflow:linked:layer-2-scaling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stacks]]",
-      "resolved": "urn:visionflow:linked:stacks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.stacks.co/sbtc]]",
-      "resolved": "urn:visionflow:linked:https-www-stacks-co-sbtc",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.stacks.co]]",
-      "resolved": "urn:visionflow:linked:https-docs-stacks-co",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - sBTC is an asset on the Stacks blockchain designed to represent Bitcoin in a decentralised manner so that it can be used in smart contracts. It is backed by bitcoin held under the protocol.

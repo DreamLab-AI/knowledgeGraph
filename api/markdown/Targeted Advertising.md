@@ -1,38 +1,124 @@
----
-public: true
----
-
-# Targeted Advertising
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:targeted-advertising", "@type":"Page", "title":"Targeted Advertising", "vc:slug":"targeted-advertising", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:targeted-advertising",
+  "@type": "Page",
+  "title": "Targeted Advertising",
+  "vc:slug": "targeted-advertising",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:targeted-advertising",
-  "@type":"Class",
-  "label":"Targeted Advertising",
-  "definition":"Targeted advertising is the practice of delivering advertisements to specific individuals or audience segments selected on the basis of inferred characteristics, behaviour, or context. It relies on collecting and analysing personal data to predict which users are most likely to respond, and on automated systems that match adverts to audiences in real time. Because it depends on extensive data collection and profiling, targeted advertising sits at the centre of debates about privacy, consent, and the governance of digital platforms.",
-  "domain":"governance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:advertising","label":"Advertising"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:surveillance-capitalism","label":"Surveillance Capitalism"},{"@id":"urn:ngm:class:digital-marketing","label":"Digital Marketing"}],
-    "uses":[{"@id":"urn:ngm:class:data-collection","label":"Data Collection"},{"@id":"urn:ngm:class:personalisation","label":"Personalisation"},{"@id":"urn:ngm:class:programmatic-advertising","label":"Programmatic Advertising"}],
-    "enables":[{"@id":"urn:ngm:class:personalisation","label":"Personalisation"},{"@id":"urn:ngm:class:digital-marketing","label":"Digital Marketing"}],
-    "requires":[{"@id":"urn:ngm:class:data-collection","label":"Data Collection"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data-collection","label":"Data Collection"}],
-    "implements":[{"@id":"urn:ngm:class:programmatic-advertising","label":"Programmatic Advertising"}],
-    "supports":[{"@id":"urn:ngm:class:surveillance-capitalism","label":"Surveillance Capitalism"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:gdpr","label":"GDPR"}],
-    "relatedTo":[{"@id":"urn:ngm:class:privacy","label":"Privacy"},{"@id":"urn:ngm:class:data-privacy","label":"Data Privacy"},{"@id":"urn:ngm:class:consumer-protection","label":"Consumer Protection"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:privacy","label":"Privacy"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:targeted-advertising",
+  "@type": "Class",
+  "label": "Targeted Advertising",
+  "definition": "Targeted advertising is the practice of delivering advertisements to specific individuals or audience segments selected on the basis of inferred characteristics, behaviour, or context. It relies on collecting and analysing personal data to predict which users are most likely to respond, and on automated systems that match adverts to audiences in real time. Because it depends on extensive data collection and profiling, targeted advertising sits at the centre of debates about privacy, consent, and the governance of digital platforms.",
+  "domain": "governance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:advertising",
+      "label": "Advertising"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

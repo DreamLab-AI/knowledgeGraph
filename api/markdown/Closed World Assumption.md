@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Closed World Assumption
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,36 +8,126 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:open-world-assumption", "vc:label": "Open World Assumption"},
-    {"@id": "urn:visionflow:linked:negation-as-failure", "vc:label": "Negation as Failure"},
-    {"@id": "urn:visionflow:linked:logic-programming", "vc:label": "Logic Programming"},
-    {"@id": "urn:visionflow:linked:prolog", "vc:label": "Prolog"},
-    {"@id": "urn:visionflow:linked:sql", "vc:label": "SQL"},
-    {"@id": "urn:visionflow:linked:relational-database", "vc:label": "Relational Database"},
-    {"@id": "urn:visionflow:linked:datalog", "vc:label": "Datalog"},
-    {"@id": "urn:visionflow:linked:shacl", "vc:label": "SHACL"},
-    {"@id": "urn:visionflow:linked:ontology", "vc:label": "Ontology"},
-    {"@id": "urn:visionflow:linked:semantic-web", "vc:label": "Semantic Web"},
-    {"@id": "urn:visionflow:linked:owl-class-hierarchy", "vc:label": "OWL Class Hierarchy"},
-    {"@id": "urn:visionflow:linked:rdf", "vc:label": "RDF"},
-    {"@id": "urn:visionflow:linked:sparql", "vc:label": "SPARQL"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:inference-engine", "vc:label": "Inference Engine"},
-    {"@id": "urn:visionflow:linked:formal-logic", "vc:label": "Formal Logic"},
-    {"@id": "urn:visionflow:linked:description-logic", "vc:label": "Description Logic"},
-    {"@id": "urn:visionflow:linked:first-order-logic", "vc:label": "First-Order Logic"},
-    {"@id": "urn:visionflow:linked:reasoning", "vc:label": "Reasoning"},
-    {"@id": "urn:visionflow:linked:database-theory", "vc:label": "Database Theory"},
-    {"@id": "urn:visionflow:linked:expert-system", "vc:label": "Expert System"},
-    {"@id": "urn:visionflow:linked:automated-reasoning", "vc:label": "Automated Reasoning"},
-    {"@id": "urn:visionflow:linked:answer-set-programming", "vc:label": "Answer Set Programming"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:deductive-database", "vc:label": "Deductive Database"},
-    {"@id": "urn:visionflow:linked:non-monotonic-reasoning", "vc:label": "Non-Monotonic Reasoning"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"}
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-world-assumption",
+      "vc:label": "Open World Assumption"
+    },
+    {
+      "@id": "urn:visionflow:linked:negation-as-failure",
+      "vc:label": "Negation as Failure"
+    },
+    {
+      "@id": "urn:visionflow:linked:logic-programming",
+      "vc:label": "Logic Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:prolog",
+      "vc:label": "Prolog"
+    },
+    {
+      "@id": "urn:visionflow:linked:sql",
+      "vc:label": "SQL"
+    },
+    {
+      "@id": "urn:visionflow:linked:relational-database",
+      "vc:label": "Relational Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:datalog",
+      "vc:label": "Datalog"
+    },
+    {
+      "@id": "urn:visionflow:linked:shacl",
+      "vc:label": "SHACL"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-web",
+      "vc:label": "Semantic Web"
+    },
+    {
+      "@id": "urn:visionflow:linked:owl-class-hierarchy",
+      "vc:label": "OWL Class Hierarchy"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf",
+      "vc:label": "RDF"
+    },
+    {
+      "@id": "urn:visionflow:linked:sparql",
+      "vc:label": "SPARQL"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-engine",
+      "vc:label": "Inference Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-logic",
+      "vc:label": "Formal Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:description-logic",
+      "vc:label": "Description Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:first-order-logic",
+      "vc:label": "First-Order Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:database-theory",
+      "vc:label": "Database Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:expert-system",
+      "vc:label": "Expert System"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-reasoning",
+      "vc:label": "Automated Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:answer-set-programming",
+      "vc:label": "Answer Set Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:deductive-database",
+      "vc:label": "Deductive Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-monotonic-reasoning",
+      "vc:label": "Non-Monotonic Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    }
   ]
 }
 ```
@@ -176,68 +260,20 @@ public: true
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cwa", "label": "CWA"},
-    {"@id": "urn:ngm:class:database-completeness-assumption", "label": "Database Completeness Assumption"}
+    {
+      "@id": "urn:ngm:class:cwa",
+      "label": "CWA"
+    },
+    {
+      "@id": "urn:ngm:class:database-completeness-assumption",
+      "label": "Database Completeness Assumption"
+    }
   ],
   "quality": 0.92,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:closed-world-assumption:a3f72b91c4d8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:closed-world-assumption"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "ResolvedLink"},
-    {"raw": "[[Open World Assumption]]", "resolved": "urn:visionflow:linked:open-world-assumption", "kind": "ResolvedLink"},
-    {"raw": "[[Negation as Failure]]", "resolved": "urn:visionflow:linked:negation-as-failure", "kind": "ResolvedLink"},
-    {"raw": "[[Logic Programming]]", "resolved": "urn:visionflow:linked:logic-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Prolog]]", "resolved": "urn:visionflow:linked:prolog", "kind": "ResolvedLink"},
-    {"raw": "[[SQL]]", "resolved": "urn:visionflow:linked:sql", "kind": "ResolvedLink"},
-    {"raw": "[[Relational Database]]", "resolved": "urn:visionflow:linked:relational-database", "kind": "ResolvedLink"},
-    {"raw": "[[Datalog]]", "resolved": "urn:visionflow:linked:datalog", "kind": "ResolvedLink"},
-    {"raw": "[[SHACL]]", "resolved": "urn:visionflow:linked:shacl", "kind": "ResolvedLink"},
-    {"raw": "[[Ontology]]", "resolved": "urn:visionflow:linked:ontology", "kind": "ResolvedLink"},
-    {"raw": "[[Semantic Web]]", "resolved": "urn:visionflow:linked:semantic-web", "kind": "ResolvedLink"},
-    {"raw": "[[OWL Class Hierarchy]]", "resolved": "urn:visionflow:linked:owl-class-hierarchy", "kind": "ResolvedLink"},
-    {"raw": "[[RDF]]", "resolved": "urn:visionflow:linked:rdf", "kind": "ResolvedLink"},
-    {"raw": "[[SPARQL]]", "resolved": "urn:visionflow:linked:sparql", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:linked:knowledge-graph", "kind": "ResolvedLink"},
-    {"raw": "[[Inference Engine]]", "resolved": "urn:visionflow:linked:inference-engine", "kind": "ResolvedLink"},
-    {"raw": "[[Formal Logic]]", "resolved": "urn:visionflow:linked:formal-logic", "kind": "ResolvedLink"},
-    {"raw": "[[Description Logic]]", "resolved": "urn:visionflow:linked:description-logic", "kind": "ResolvedLink"},
-    {"raw": "[[First-Order Logic]]", "resolved": "urn:visionflow:linked:first-order-logic", "kind": "ResolvedLink"},
-    {"raw": "[[Reasoning]]", "resolved": "urn:visionflow:linked:reasoning", "kind": "ResolvedLink"},
-    {"raw": "[[Database Theory]]", "resolved": "urn:visionflow:linked:database-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Expert System]]", "resolved": "urn:visionflow:linked:expert-system", "kind": "ResolvedLink"},
-    {"raw": "[[Automated Reasoning]]", "resolved": "urn:visionflow:linked:automated-reasoning", "kind": "ResolvedLink"},
-    {"raw": "[[Answer Set Programming]]", "resolved": "urn:visionflow:linked:answer-set-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Deductive Database]]", "resolved": "urn:visionflow:linked:deductive-database", "kind": "ResolvedLink"},
-    {"raw": "[[Non-Monotonic Reasoning]]", "resolved": "urn:visionflow:linked:non-monotonic-reasoning", "kind": "ResolvedLink"},
-    {"raw": "[[Bayesian Inference]]", "resolved": "urn:visionflow:linked:bayesian-inference", "kind": "ResolvedLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Database Completeness Assumption]]", "resolved": "urn:visionflow:linked:database-completeness-assumption", "kind": "ResolvedLink"},
-    {"raw": "[[Formal Language]]", "resolved": "urn:visionflow:linked:formal-language", "kind": "StubLink"},
-    {"raw": "[[Non-Monotonic Logic]]", "resolved": "urn:visionflow:linked:non-monotonic-logic", "kind": "StubLink"},
-    {"raw": "[[Enterprise Knowledge Graph]]", "resolved": "urn:visionflow:linked:enterprise-knowledge-graph", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -379,7 +415,7 @@ public: true
 
   The CWA proved foundational to practical AI systems of the 1970s–1990s, underpinning expert systems, [[Prolog]]-based knowledge bases, [[Datalog]] query engines, and [[Relational Database]] systems. The MYCIN medical diagnosis system (Shortliffe, Stanford, 1974–1976) operated under an implicit CWA: absence of a symptom in the patient record was treated as evidence that the symptom was absent, supporting differential diagnosis. [[Deductive Database]] systems in the 1980s — combining SQL-style tables with Prolog-style inference rules — formalized CWA semantics for mixed fact-and-rule knowledge bases, anticipating modern knowledge graphs. The Datalog language, defined as the rule-based query language for deductive databases, inherits CWA semantics: a Datalog query over a finite EDB (Extensional Database of base facts) computes the minimal model — the smallest set of facts derivable from the rules — and negative conclusions are drawn by minimality, not by explicit negation rules.
 
-  The transition to the World Wide Web and the Semantic Web vision of the late 1990s–2000s exposed the limits of the CWA. Web-scale knowledge is inherently incomplete: no knowledge base can claim to contain all facts about the world. Tim Berners-Lee's Semantic Web vision required a knowledge representation formalism that could work gracefully with incomplete, distributed, evolving information — where the absence of a triple in one document should not be interpreted as evidence of the corresponding fact's falsity. This motivated the adoption of the [[Open World Assumption]] in the Web Ontology Language (OWL), formally standardised by the W3C in 2004 (OWL) and 2009 (OWL 2). Under OWA semantics, an OWL knowledge base is an incomplete description of the world; inferences are restricted to what can be logically established from the asserted axioms, and absence of a triple licenses no inference about the corresponding proposition. This was a deliberate, principled departure from database and logic programming convention, designed to support the distributed, decentralised, partial nature of web-scale knowledge.
+  The transition to the World Wide Web and the Semantic Web vision of the late 1990s–2000s exposed the limits of the CWA. Web-scale knowledge is inherently incomplete: no knowledge base can claim to contain all facts about the world. Tim Berners-Lee's Semantic Web vision required a knowledge representation formalism that [private] work gracefully with incomplete, distributed, evolving information — where the absence of a triple in one document should not be interpreted as evidence of the corresponding fact's falsity. This motivated the adoption of the [[Open World Assumption]] in the Web Ontology Language (OWL), formally standardised by the W3C in 2004 (OWL) and 2009 (OWL 2). Under OWA semantics, an OWL knowledge base is an incomplete description of the world; inferences are restricted to what can be logically established from the asserted axioms, and absence of a triple licenses no inference about the corresponding proposition. This was a deliberate, principled departure from database and logic programming convention, designed to support the distributed, decentralised, partial nature of web-scale knowledge.
 
   The coexistence of CWA and OWA within enterprise knowledge management has become a practical design challenge. Modern enterprise [[Knowledge Graph]] architectures typically need both: OWA-based [[Ontology]] reasoning to integrate data across heterogeneous sources and infer missing facts (two organisations may assert the same person under different identifiers, and ontology reasoning can infer they are the same entity), and CWA-based [[SHACL]] validation to enforce data quality constraints and detect missing required information in data pipelines. The W3C SHACL specification (2017, updated in implementations through 2025) explicitly adopts the CWA: a SHACL shapes graph evaluates constraints over an assumed-complete data graph, treating the absence of a required property as a constraint violation (a node lacks a required type, a required property is missing, a cardinality constraint is violated by absence of triples). This design choice is natural for SHACL's core use case of data pipeline validation, where incomplete data is a defect to be detected and repaired rather than a normal epistemic condition to be tolerated. The resulting hybrid architecture — OWL inference under OWA for knowledge integration, SHACL validation under CWA for data quality — has become the dominant enterprise semantic stack, implemented in platforms including Ontotext GraphDB, Stardog, PoolParty, and Oxigraph.
 

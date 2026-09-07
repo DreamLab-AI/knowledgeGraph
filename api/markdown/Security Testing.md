@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Security Testing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Security testing is the evaluation of software to discover vulnerabilities and verify that security controls behave as intended. It includes static application security testing, dynamic testing, dependency and secret scanning, fuzzing, and penetration testing. Integrated into development pipelines, it shifts vulnerability discovery earlier and continuously throughout the software lifecycle.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:dev-sec-ops", "label": "DevSecOps"},
-      {"@id": "urn:ngm:class:testing-process", "label": "Testing Process"}
+      {
+        "@id": "urn:ngm:class:dev-sec-ops",
+        "label": "DevSecOps"
+      },
+      {
+        "@id": "urn:ngm:class:testing-process",
+        "label": "Testing Process"
+      }
     ]
   },
   "quality": 0.72

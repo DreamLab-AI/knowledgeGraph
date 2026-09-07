@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Swarm Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:swarm-control:fc27267dfbfe",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:68a78d89aa8062b9b48df7ad96cea30c5c53062f25d13ac98a2312d555200994"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Multi-Agent System]]",
-      "resolved": "urn:visionflow:linked:multi-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Swarm Intelligence]]",
-      "resolved": "urn:visionflow:linked:swarm-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Agent]]",
-      "resolved": "urn:visionflow:linked:autonomous-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Subsumption Architecture]]",
-      "resolved": "urn:visionflow:linked:subsumption-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics Domain]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Swarm control coordinates many simple agents through local rules and interactions so that useful collective behaviour emerges without centralised command.

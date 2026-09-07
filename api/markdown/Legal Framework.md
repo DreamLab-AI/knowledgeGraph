@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Legal Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -215,62 +210,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:legal-framework:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4c200ab42b66d715efaf2811bebb2eb82b4e6516a49dbb87ced3eeb738146859"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Core Technology]]",
-      "resolved": "urn:visionflow:linked:core-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Legal Compliance]]",
-      "resolved": "urn:visionflow:linked:legal-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Privacy Requirements]]",
-      "resolved": "urn:visionflow:linked:privacy-requirements",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Rights Protection]]",
-      "resolved": "urn:visionflow:linked:rights-protection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Security Obligations]]",
-      "resolved": "urn:visionflow:linked:security-obligations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:owl:class:accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Framework]]",
-      "resolved": "urn:visionflow:owl:class:regulatory-framework",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.

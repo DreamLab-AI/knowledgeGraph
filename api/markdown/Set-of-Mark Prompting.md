@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Set-of-Mark Prompting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Set-of-mark prompting is a visual-prompting technique that overlays an image with numbered or coloured marks on segmented regions so a multimodal language model can refer to and reason about specific elements by label. By grounding the model's references in explicit visual tokens, it sharply improves spatial grounding, visual question answering, and GUI element selection. It is a key enabler of vision-driven computer-use agents.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
   },
   "quality": 0.72
 }

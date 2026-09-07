@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Tier
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Model Tier",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:model-selection", "vc:label": "ModelSelection" },
-    { "@id": "urn:visionflow:linked:cost-optimisation", "vc:label": "CostOptimisation" },
-    { "@id": "urn:visionflow:linked:cost-efficient-inference", "vc:label": "CostEfficientInference" },
-    { "@id": "urn:visionflow:linked:llm-orchestration", "vc:label": "LLMOrchestration" }
+    {
+      "@id": "urn:visionflow:linked:model-selection",
+      "vc:label": "ModelSelection"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-optimisation",
+      "vc:label": "CostOptimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-efficient-inference",
+      "vc:label": "CostEfficientInference"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-orchestration",
+      "vc:label": "LLMOrchestration"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,12 +44,35 @@ public: true
   "definition": "A model tier is a named capability-and-cost band into which the language models available to an agent system are grouped, so that work can be routed to the cheapest model that is competent for it. A typical scheme distinguishes a small fast tier for classification and routing, a mid tier for routine generation, and a frontier tier for hard reasoning, each with characteristic latency, price per token, and quality envelope. Tiering turns the continuous space of model choices into a discrete policy surface that orchestration layers can reason about, enabling deliberate trade-offs between spend, speed, and answer quality across a workload.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": { "@id": "urn:ngm:class:model-selection", "label": "Model Selection" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:model-selection",
+    "label": "Model Selection"
+  },
   "relations": {
-    "enables": [ { "@id": "urn:ngm:class:cost-optimisation", "label": "Cost Optimisation" } ],
-    "relatedTo": [ { "@id": "urn:ngm:class:cost-efficient-inference", "label": "Cost-Efficient Inference" } ],
-    "partOf": [ { "@id": "urn:ngm:class:llm-orchestration", "label": "LLM Orchestration" } ],
-    "uses": [ { "@id": "urn:ngm:class:large-language-model", "label": "Large Language Model" } ]
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cost-optimisation",
+        "label": "Cost Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cost-efficient-inference",
+        "label": "Cost-Efficient Inference"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ]
   },
   "quality": 0.75,
   "provenance": {

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pneumatic Cylinder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,22 +58,52 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:hydraulic-cylinder", "label": "Hydraulic Cylinder"},
-      {"@id": "urn:ngm:class:electric-linear-actuator", "label": "Electric Linear Actuator"},
-      {"@id": "urn:ngm:class:pneumatic-motor", "label": "Pneumatic Motor"},
-      {"@id": "urn:ngm:class:pressure-sensor", "label": "Pressure Sensor"},
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"}
+      {
+        "@id": "urn:ngm:class:hydraulic-cylinder",
+        "label": "Hydraulic Cylinder"
+      },
+      {
+        "@id": "urn:ngm:class:electric-linear-actuator",
+        "label": "Electric Linear Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:pneumatic-motor",
+        "label": "Pneumatic Motor"
+      },
+      {
+        "@id": "urn:ngm:class:pressure-sensor",
+        "label": "Pressure Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:manipulator", "label": "Manipulator"}
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
     ]
   },
   "quality": 0.8,
@@ -89,37 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pneumatic-cylinder:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0ca028d73f57e6fbb7ffad83e48998e24d3ab5ae345d31812d60384262d2fdd4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Pneumatic Actuator]]",
-      "resolved": "urn:visionflow:owl:class:pneumatic-actuator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Pneumatic cylinder uses compressed air to produce linear motion.

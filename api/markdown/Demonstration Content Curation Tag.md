@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[new tag for demos]]
-# Demonstration Content Curation Tag
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,12 +47,24 @@ elevatedFrom:: [[new tag for demos]]
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      }
     ]
   },
   "provenance": {
@@ -68,32 +74,6 @@ elevatedFrom:: [[new tag for demos]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:new-tag-for-demos:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:743177ce37d184677f27ae163795d580f2836df5325b1df269656e505e0a9eb1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[OpenAI Research Organisation]]",
-      "resolved": "urn:visionflow:owl:class:open-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A lightweight organisational tag used within the knowledge graph to mark pages or artefacts that should be included when preparing demonstration content for stakeholders. Pages carrying this tag can be surfaced selectively during product demos without modifying the underlying ontological hierarchy. The concept reflects common knowledge-management practice of maintaining curated views over a larger graph.

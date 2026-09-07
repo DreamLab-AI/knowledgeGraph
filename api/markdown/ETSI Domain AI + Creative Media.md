@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ETSI Domain AI Creative Media
----
-
-# ETSI Domain AI + Creative Media
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -106,71 +99,6 @@ aliases:
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-ai-creative-media:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:578213cb0f2435ad2a6e1d55f09476262b45787bd966cc16be340c17efc8480b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ETSI Domain Taxonomy]]",
-      "resolved": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GS MEC]]",
-      "resolved": "urn:visionflow:linked:etsi-gs-mec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Generative Content Classification]]",
-      "resolved": "urn:visionflow:linked:generative-content-classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Art Categorization]]",
-      "resolved": "urn:visionflow:owl:class:ai-art-categorization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-research-area",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CreativeMediaDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-application",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Domain AI]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -309,7 +237,7 @@ aliases:
   ## Historical Development and Context
     The emergence of ETSI Domain AI + Creative Media as a distinct cross-domain classification reflects a broader trajectory in telecommunications standards history: the progressive incorporation of computational intelligence into what were previously content-agnostic infrastructure domains. In the earliest phases of ETSI's metaverse taxonomy development, creative media and artificial intelligence were represented as entirely separate domain branches, with the Creative Media domain covering production tooling and rendering infrastructure, and the AI domain covering inference services and machine learning operations. The recognition that these domains were converging — that AI was not merely a service consumed by creative media production but was becoming the primary mechanism of creative media generation itself — drove the introduction of the cross-domain marker concept, of which AI + Creative Media is one instantiation alongside AI + Data Mgmt, AI + Governance, and AI + Human Interface.
 
-    The convergence accelerated dramatically from 2022 onward with the public availability of high-quality [[Diffusion Model]] systems. The release of Stable Diffusion in August 2022 as an open-weight model was particularly significant for the metaverse standardisation landscape: it demonstrated that foundation-model-scale generative capability could be deployed on consumer hardware without cloud infrastructure dependencies, enabling on-device and edge-deployed creative AI in metaverse contexts without mandatory cloud round-trips. This architectural possibility — edge inference for real-time creative content generation — is precisely the scenario that [[ETSI ISG MEC]] Phase 4 specifications must address, and it drove the explicit inclusion of creative AI content generation as a priority use case in ETSI's metaverse edge computing work programme. ETSI GR ARF 012 V1.1.1 (2025) on Augmented Reality Framework extended the relevant scope to AR-specific creative AI applications: AI-driven scene understanding, AI-assisted content placement in AR overlays, and AI-generated augmentation of physical environments with virtual creative content.
+    The convergence accelerated dramatically from 2022 onward with the public availability of high-quality [[Diffusion Model]] systems. The release of Stable Diffusion in August 2022 as an open-weight model was particularly significant for the metaverse standardisation landscape: it demonstrated that foundation-model-scale generative capability [private] be deployed on consumer hardware without cloud infrastructure dependencies, enabling on-device and edge-deployed creative AI in metaverse contexts without mandatory cloud round-trips. This architectural possibility — edge inference for real-time creative content generation — is precisely the scenario that [[ETSI ISG MEC]] Phase 4 specifications must address, and it drove the explicit inclusion of creative AI content generation as a priority use case in ETSI's metaverse edge computing work programme. ETSI GR ARF 012 V1.1.1 (2025) on Augmented Reality Framework extended the relevant scope to AR-specific creative AI applications: AI-driven scene understanding, AI-assisted content placement in AR overlays, and AI-generated augmentation of physical environments with virtual creative content.
 
     The domain's relationship to the broader ETSI metaverse taxonomy is navigational as well as technical: it serves as a cross-reference anchor enabling standards that touch both AI capabilities and creative media applications to be consistently indexed, avoiding the siloing of relevant standards within either the AI domain branch or the Creative Media domain branch alone. Standards authors working in ETSI technical committees can tag their outputs with the AI + Creative Media marker to ensure that specifications addressing AI-generated content for virtual world environments are discoverable both by creative media practitioners navigating the standards landscape and by AI system developers seeking standards applicable to their creative application deployments.
 

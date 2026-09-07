@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decision Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,57 +7,210 @@ public: true
   "title": "Decision Engine",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:automated-reasoning", "vc:label": "Automated Reasoning"},
-    {"@id": "urn:visionflow:linked:policy-engine", "vc:label": "Policy Engine"},
-    {"@id": "urn:visionflow:linked:inference-engine", "vc:label": "Inference Engine"},
-    {"@id": "urn:visionflow:linked:decision-support", "vc:label": "Decision Support"},
-    {"@id": "urn:visionflow:linked:automated-planning", "vc:label": "Automated Planning"},
-    {"@id": "urn:visionflow:linked:informed-decision-making", "vc:label": "Informed decision-making"},
-    {"@id": "urn:visionflow:linked:decision-transparency", "vc:label": "Decision Transparency"},
-    {"@id": "urn:visionflow:linked:orchestration", "vc:label": "Orchestration"},
-    {"@id": "urn:visionflow:linked:expert-systems", "vc:label": "Expert Systems"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:business-rules", "vc:label": "Business Rules"},
-    {"@id": "urn:visionflow:linked:automated-decision-making", "vc:label": "Automated Decision Making"},
-    {"@id": "urn:visionflow:linked:constraint-satisfaction", "vc:label": "Constraint Satisfaction"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:risk-scoring", "vc:label": "Risk Scoring"},
-    {"@id": "urn:visionflow:linked:recommendation-engine", "vc:label": "Recommendation Engine"},
-    {"@id": "urn:visionflow:linked:audit-trail", "vc:label": "Audit Trail"},
-    {"@id": "urn:visionflow:linked:regulation", "vc:label": "Regulation"},
-    {"@id": "urn:visionflow:linked:probabilistic-reasoning", "vc:label": "Probabilistic Reasoning"},
-    {"@id": "urn:visionflow:linked:decision-model-notation", "vc:label": "Decision Model Notation"},
-    {"@id": "urn:visionflow:linked:neuro-symbolic-ai", "vc:label": "Neuro Symbolic AI"},
-    {"@id": "urn:visionflow:linked:model-serving-runtime", "vc:label": "Model Serving Runtime"},
-    {"@id": "urn:visionflow:linked:symbolic-ai", "vc:label": "Symbolic AI"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain of Thought"},
-    {"@id": "urn:visionflow:linked:access-control", "vc:label": "Access Control"},
-    {"@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:credit-scoring", "vc:label": "Credit Scoring"},
-    {"@id": "urn:visionflow:linked:fraud-detection", "vc:label": "Fraud Detection"},
-    {"@id": "urn:visionflow:linked:adaptive-systems", "vc:label": "Adaptive Systems"},
-    {"@id": "urn:visionflow:linked:model-monitoring", "vc:label": "Model Monitoring"},
-    {"@id": "urn:visionflow:linked:causal-reasoning", "vc:label": "Causal Reasoning"},
-    {"@id": "urn:visionflow:linked:api-gateway", "vc:label": "API Gateway"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:decision-intelligence", "vc:label": "Decision Intelligence"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:first-order-logic", "vc:label": "First-Order Logic"},
-    {"@id": "urn:visionflow:linked:formal-methods", "vc:label": "Formal Methods"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:model-risk-management", "vc:label": "Model Risk Management"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:privacy", "vc:label": "Privacy"},
-    {"@id": "urn:visionflow:linked:fairness", "vc:label": "Fairness"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:application-layer", "vc:label": "ApplicationLayer"}
+    {
+      "@id": "urn:visionflow:linked:automated-reasoning",
+      "vc:label": "Automated Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-engine",
+      "vc:label": "Policy Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-engine",
+      "vc:label": "Inference Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-support",
+      "vc:label": "Decision Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-planning",
+      "vc:label": "Automated Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:informed-decision-making",
+      "vc:label": "Informed decision-making"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-transparency",
+      "vc:label": "Decision Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration",
+      "vc:label": "Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:expert-systems",
+      "vc:label": "Expert Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:business-rules",
+      "vc:label": "Business Rules"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-decision-making",
+      "vc:label": "Automated Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-satisfaction",
+      "vc:label": "Constraint Satisfaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-scoring",
+      "vc:label": "Risk Scoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-engine",
+      "vc:label": "Recommendation Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:audit-trail",
+      "vc:label": "Audit Trail"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulation",
+      "vc:label": "Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-reasoning",
+      "vc:label": "Probabilistic Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-model-notation",
+      "vc:label": "Decision Model Notation"
+    },
+    {
+      "@id": "urn:visionflow:linked:neuro-symbolic-ai",
+      "vc:label": "Neuro Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-serving-runtime",
+      "vc:label": "Model Serving Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:access-control",
+      "vc:label": "Access Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:credit-scoring",
+      "vc:label": "Credit Scoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:fraud-detection",
+      "vc:label": "Fraud Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-systems",
+      "vc:label": "Adaptive Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-monitoring",
+      "vc:label": "Model Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:causal-reasoning",
+      "vc:label": "Causal Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-gateway",
+      "vc:label": "API Gateway"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-intelligence",
+      "vc:label": "Decision Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:first-order-logic",
+      "vc:label": "First-Order Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-methods",
+      "vc:label": "Formal Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-risk-management",
+      "vc:label": "Model Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy",
+      "vc:label": "Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -78,45 +226,126 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-    {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"}
+    {
+      "@id": "urn:ngm:class:inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "@id": "urn:ngm:class:automated-reasoning",
+      "label": "Automated Reasoning"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rule-evaluator", "label": "Rule Evaluator"},
-      {"@id": "urn:ngm:class:model-scorer", "label": "Model Scorer"},
-      {"@id": "urn:ngm:class:explanation-module", "label": "Explanation Module"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:decision-model-notation", "label": "Decision Model Notation"},
-      {"@id": "urn:ngm:class:feature-engineering-pipeline", "label": "Feature Engineering Pipeline"}
+      {
+        "@id": "urn:ngm:class:rule-evaluator",
+        "label": "Rule Evaluator"
+      },
+      {
+        "@id": "urn:ngm:class:model-scorer",
+        "label": "Model Scorer"
+      },
+      {
+        "@id": "urn:ngm:class:explanation-module",
+        "label": "Explanation Module"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:decision-model-notation",
+        "label": "Decision Model Notation"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering-pipeline",
+        "label": "Feature Engineering Pipeline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:policy-engine", "label": "Policy Engine"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:probabilistic-reasoning", "label": "Probabilistic Reasoning"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"}
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"},
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
-      {"@id": "urn:ngm:class:informed-decision-making", "label": "Informed decision-making"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:automated-decision-making", "label": "Automated Decision Making"},
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:credit-scoring", "label": "Credit Scoring"}
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "@id": "urn:ngm:class:informed-decision-making",
+        "label": "Informed decision-making"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-decision-making",
+        "label": "Automated Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:credit-scoring",
+        "label": "Credit Scoring"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decision-transparency", "label": "Decision Transparency"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:regulation", "label": "Regulation"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:model-risk-management", "label": "Model Risk Management"}
+      {
+        "@id": "urn:ngm:class:decision-transparency",
+        "label": "Decision Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:model-risk-management",
+        "label": "Model Risk Management"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",

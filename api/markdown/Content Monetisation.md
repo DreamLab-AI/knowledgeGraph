@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Monetisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -115,6 +111,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Content monetisation is the set of mechanisms by which creators and rights-holders earn revenue from digital media, including advertising, subscriptions, micropayments, licensing and royalty distribution. Governance of these mechanisms covers rights attribution, usage tracking and the fair allocation of proceeds among contributors. Emerging models use programmable payments and on-chain royalties to automate compensation.
   - Related concepts: [[Governance]] [[Creator Economy]] [[Micropayment]] [[Digital Rights Management]] [[Creator Royalties]]

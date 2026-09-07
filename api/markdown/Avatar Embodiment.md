@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Avatar Embodiment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,13 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:social-presence", "label": "Social Presence"}],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:shared-virtual-space", "label": "Shared Virtual Space"},
-      {"@id": "urn:ngm:class:virtual-reality-telepresence", "label": "Virtual Reality Telepresence"}
+      {
+        "@id": "urn:ngm:class:shared-virtual-space",
+        "label": "Shared Virtual Space"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality-telepresence",
+        "label": "Virtual Reality Telepresence"
+      }
     ]
   },
   "quality": 0.7

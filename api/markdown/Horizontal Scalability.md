@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Horizontal Scalability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Horizontal scalability is the capacity of a system to increase throughput by adding more independent nodes rather than upgrading a single machine (vertical scaling). It relies on partitioning work and state so that load can be distributed across commodity servers behind a balancer. Horizontal scaling underpins cloud-native and distributed architectures because it offers near-linear, fault-tolerant growth.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "quality": 0.72

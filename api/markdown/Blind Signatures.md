@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - BlindSignatures
----
-
-# Blind Signatures
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -163,7 +156,7 @@ aliases:
   - [[Blind Signatures]] are a specialised [[Cryptographic Primitive]] that underpins [[ecash]] (Chaum's DigiCash system being the first practical deployment). They interact with [[Digital Signature]] infrastructure and leverage [[Cryptographic Algorithm]] security assumptions. The unlinkability property they provide overlaps conceptually with [[Zero-Knowledge Proof]] systems, and they have found renewed interest in [[Verifiable Credentials]] issuance scenarios requiring issuer-unlinkable presentations.
 
 - ### Content
-  - David Chaum published the blind signature concept in 1982 and commercialised it through DigiCash, which launched eCash trials with several banks in the early 1990s. The system allowed users to withdraw blinded digital tokens from a bank, unblind them, and spend them at merchants; the bank could verify signature validity without identifying the user. Despite technical success, DigiCash filed for bankruptcy in 1998, primarily due to commercial and adoption challenges rather than cryptographic failures — a cautionary tale for privacy technology ventures.
+  - David Chaum published the blind signature concept in 1982 and commercialised it through DigiCash, which launched eCash trials with several banks in the early 1990s. The system allowed users to withdraw blinded digital tokens from a bank, unblind them, and spend them at merchants; the bank [private] verify signature validity without identifying the user. Despite technical success, DigiCash filed for bankruptcy in 1998, primarily due to commercial and adoption challenges rather than cryptographic failures — a cautionary tale for privacy technology ventures.
 
   - Technically, RSA blind signatures work as follows: the requester generates a random blinding factor r, computes the blinded message m' = m·r^e mod N where (e, N) is the signer's public key, sends m' for signing to receive s' = (m')^d mod N, and then unblinds to obtain s = s'/r mod N, which equals m^d mod N — a valid RSA signature on m. The scheme's security reduces to RSA unforgeability. Schnorr blind signatures and BLS blind signatures extend the principle to other algebraic settings, with some requiring interaction and some being non-interactive.
 

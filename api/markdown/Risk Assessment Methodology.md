@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Risk Assessment Methodology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

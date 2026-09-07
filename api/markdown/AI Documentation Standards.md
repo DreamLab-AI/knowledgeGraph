@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Documentation Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,59 +7,205 @@ public: true
   "title": "AI Documentation Standards",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:datasheets-gebru-et-al", "vc:label": "Datasheets (Gebru et al.)"},
-    {"@id": "urn:visionflow:linked:iso-iec-23053", "vc:label": "ISO/IEC 23053"},
-    {"@id": "urn:visionflow:linked:model-cards-mitchell-et-al", "vc:label": "Model Cards (Mitchell et al.)"},
-    {"@id": "urn:visionflow:owl:class:ai-governance-and-ethics", "vc:label": "AIEthicsDomain"},
-    {"@id": "urn:visionflow:owl:class:conceptual-layer", "vc:label": "ConceptualLayer"},
-    {"@id": "urn:visionflow:owl:class:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:owl:class:smart-contract", "vc:label": "Smart Contract"},
-    {"@id": "urn:visionflow:owl:class:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:ieee-7001", "vc:label": "IEEE 7001"},
-    {"@id": "urn:visionflow:linked:iso-iec-42001", "vc:label": "ISO/IEC 42001"},
-    {"@id": "urn:visionflow:linked:nist-ai-rmf", "vc:label": "NIST AI RMF"},
-    {"@id": "urn:visionflow:linked:system-cards", "vc:label": "System Cards"},
-    {"@id": "urn:visionflow:linked:factsheets-ibm", "vc:label": "FactSheets (IBM)"},
-    {"@id": "urn:visionflow:linked:data-cards", "vc:label": "Data Cards"},
-    {"@id": "urn:visionflow:linked:algorithmic-transparency", "vc:label": "Algorithmic Transparency"},
-    {"@id": "urn:visionflow:linked:responsible-ai", "vc:label": "Responsible AI"},
-    {"@id": "urn:visionflow:linked:ai-risk-management", "vc:label": "AI Risk Management"},
-    {"@id": "urn:visionflow:linked:gdpr", "vc:label": "GDPR"},
-    {"@id": "urn:visionflow:linked:regulatory-compliance", "vc:label": "Regulatory Compliance"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:ai-auditing", "vc:label": "AI Auditing"},
-    {"@id": "urn:visionflow:linked:bias-analysis", "vc:label": "Bias Analysis"},
-    {"@id": "urn:visionflow:linked:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:ai-impact-assessment", "vc:label": "AI Impact Assessment"},
-    {"@id": "urn:visionflow:linked:ai-model-card", "vc:label": "AI Model Card"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:ai-lifecycle", "vc:label": "AI Lifecycle"},
-    {"@id": "urn:visionflow:linked:documentation-as-code", "vc:label": "Documentation As Code"},
-    {"@id": "urn:visionflow:linked:ai-transparency-framework", "vc:label": "Ai Transparency Framework"},
-    {"@id": "urn:visionflow:linked:ai-governance-framework", "vc:label": "AI Governance Framework"},
-    {"@id": "urn:visionflow:linked:ai-governance-maturity-model", "vc:label": "AI Governance Maturity Model"},
-    {"@id": "urn:visionflow:linked:documentation-generation", "vc:label": "Documentation Generation"},
-    {"@id": "urn:visionflow:linked:documentation-standards", "vc:label": "Documentation Standards"},
-    {"@id": "urn:visionflow:linked:ai-ecosystem", "vc:label": "AI Ecosystem"},
-    {"@id": "urn:visionflow:linked:algorithmic-transparency-reports", "vc:label": "Algorithmic Transparency Reports"},
-    {"@id": "urn:visionflow:linked:ai-ethics-board", "vc:label": "AI Ethics Board"},
-    {"@id": "urn:visionflow:linked:ai-ethics-checklist", "vc:label": "AI Ethics Checklist"},
-    {"@id": "urn:visionflow:linked:algorithmic-transparency-index", "vc:label": "Algorithmic Transparency Index"},
-    {"@id": "urn:visionflow:linked:ai-governance-law-and-privacy", "vc:label": "AI Governance Law and Privacy"},
-    {"@id": "urn:visionflow:linked:decision-transparency", "vc:label": "Decision Transparency"},
-    {"@id": "urn:visionflow:linked:ai-policy", "vc:label": "AI Policy"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"}
+    {
+      "@id": "urn:visionflow:linked:datasheets-gebru-et-al",
+      "vc:label": "Datasheets (Gebru et al.)"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-23053",
+      "vc:label": "ISO/IEC 23053"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-cards-mitchell-et-al",
+      "vc:label": "Model Cards (Mitchell et al.)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
+      "vc:label": "AIEthicsDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-7001",
+      "vc:label": "IEEE 7001"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001",
+      "vc:label": "ISO/IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-cards",
+      "vc:label": "System Cards"
+    },
+    {
+      "@id": "urn:visionflow:linked:factsheets-ibm",
+      "vc:label": "FactSheets (IBM)"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-cards",
+      "vc:label": "Data Cards"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-transparency",
+      "vc:label": "Algorithmic Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-risk-management",
+      "vc:label": "AI Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-auditing",
+      "vc:label": "AI Auditing"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-analysis",
+      "vc:label": "Bias Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-impact-assessment",
+      "vc:label": "AI Impact Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model-card",
+      "vc:label": "AI Model Card"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-lifecycle",
+      "vc:label": "AI Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:linked:documentation-as-code",
+      "vc:label": "Documentation As Code"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-transparency-framework",
+      "vc:label": "Ai Transparency Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance-framework",
+      "vc:label": "AI Governance Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance-maturity-model",
+      "vc:label": "AI Governance Maturity Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:documentation-generation",
+      "vc:label": "Documentation Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:documentation-standards",
+      "vc:label": "Documentation Standards"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ecosystem",
+      "vc:label": "AI Ecosystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-transparency-reports",
+      "vc:label": "Algorithmic Transparency Reports"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics-board",
+      "vc:label": "AI Ethics Board"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics-checklist",
+      "vc:label": "AI Ethics Checklist"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-transparency-index",
+      "vc:label": "Algorithmic Transparency Index"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance-law-and-privacy",
+      "vc:label": "AI Governance Law and Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-transparency",
+      "vc:label": "Decision Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-policy",
+      "vc:label": "AI Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {"vc:key": "legacy-term-id", "vc:value": "AI-0392"},
-    {"vc:key": "preferred-term", "vc:value": "AI Documentation Standards"}
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0392"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Documentation Standards"
+    }
   ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
-  "prov:generatedAtTime": {"@value": "2026-05-18T07:12:05Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -79,33 +220,84 @@ public: true
   "maturity": "established",
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"},
-      {"@id": "urn:ngm:class:datasheets-for-datasets", "label": "Datasheets for Datasets"},
-      {"@id": "urn:ngm:class:system-cards", "label": "System Cards"},
-      {"@id": "urn:ngm:class:factsheets", "label": "FactSheets"},
-      {"@id": "urn:ngm:class:data-cards", "label": "Data Cards"}
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      },
+      {
+        "@id": "urn:ngm:class:datasheets-for-datasets",
+        "label": "Datasheets for Datasets"
+      },
+      {
+        "@id": "urn:ngm:class:system-cards",
+        "label": "System Cards"
+      },
+      {
+        "@id": "urn:ngm:class:factsheets",
+        "label": "FactSheets"
+      },
+      {
+        "@id": "urn:ngm:class:data-cards",
+        "label": "Data Cards"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:algorithmic-transparency", "label": "Algorithmic Transparency"},
-      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"}
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-auditing", "label": "AI Auditing"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-auditing",
+        "label": "AI Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+      {
+        "@id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
     ]
   },
   "quality": 0.92,
@@ -115,69 +307,15 @@ public: true
     "inferenceRule": "R1EnrichmentFull"
   },
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
-    {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
+      "@id": "urn:ngm:class:documentation-standards",
+      "label": "Documentation Standards"
+    }
   ]
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-documentation-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:df2916f682f73afa86cc420193328ddb65ca3144592d1897ca0ac4e952ed7c4f"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Datasheets (Gebru et al.)]]", "resolved": "urn:visionflow:linked:datasheets-gebru-et-al", "kind": "StubLink"},
-    {"raw": "[[ISO/IEC 23053]]", "resolved": "urn:visionflow:linked:iso-iec-23053", "kind": "StubLink"},
-    {"raw": "[[Model Cards (Mitchell et al.)]]", "resolved": "urn:visionflow:linked:model-cards-mitchell-et-al", "kind": "StubLink"},
-    {"raw": "[[AIEthicsDomain]]", "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics", "kind": "ResolvedLink"},
-    {"raw": "[[ConceptualLayer]]", "resolved": "urn:visionflow:owl:class:conceptual-layer", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act Regulatory Instrument]]", "resolved": "urn:visionflow:owl:class:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[Smart Contract]]", "resolved": "urn:visionflow:owl:class:smart-contract", "kind": "ResolvedLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:owl:class:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[IEEE 7001]]", "resolved": "urn:visionflow:linked:ieee-7001", "kind": "StubLink"},
-    {"raw": "[[ISO/IEC 42001]]", "resolved": "urn:visionflow:linked:iso-iec-42001", "kind": "StubLink"},
-    {"raw": "[[NIST AI RMF]]", "resolved": "urn:visionflow:linked:nist-ai-rmf", "kind": "StubLink"},
-    {"raw": "[[System Cards]]", "resolved": "urn:visionflow:linked:system-cards", "kind": "StubLink"},
-    {"raw": "[[FactSheets (IBM)]]", "resolved": "urn:visionflow:linked:factsheets-ibm", "kind": "StubLink"},
-    {"raw": "[[Data Cards]]", "resolved": "urn:visionflow:linked:data-cards", "kind": "StubLink"},
-    {"raw": "[[Algorithmic Transparency]]", "resolved": "urn:visionflow:linked:algorithmic-transparency", "kind": "StubLink"},
-    {"raw": "[[Responsible AI]]", "resolved": "urn:visionflow:linked:responsible-ai", "kind": "StubLink"},
-    {"raw": "[[AI Risk Management]]", "resolved": "urn:visionflow:linked:ai-risk-management", "kind": "StubLink"},
-    {"raw": "[[GDPR]]", "resolved": "urn:visionflow:linked:gdpr", "kind": "StubLink"},
-    {"raw": "[[Regulatory Compliance]]", "resolved": "urn:visionflow:linked:regulatory-compliance", "kind": "StubLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
-    {"raw": "[[AI Auditing]]", "resolved": "urn:visionflow:linked:ai-auditing", "kind": "StubLink"},
-    {"raw": "[[Bias Analysis]]", "resolved": "urn:visionflow:linked:bias-analysis", "kind": "StubLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:linked:ai-ethics", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[AI Impact Assessment]]", "resolved": "urn:visionflow:linked:ai-impact-assessment", "kind": "StubLink"},
-    {"raw": "[[AI Model Card]]", "resolved": "urn:visionflow:linked:ai-model-card", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink"},
-    {"raw": "[[AI Lifecycle]]", "resolved": "urn:visionflow:linked:ai-lifecycle", "kind": "StubLink"},
-    {"raw": "[[Documentation As Code]]", "resolved": "urn:visionflow:linked:documentation-as-code", "kind": "StubLink"},
-    {"raw": "[[Ai Transparency Framework]]", "resolved": "urn:visionflow:linked:ai-transparency-framework", "kind": "StubLink"},
-    {"raw": "[[AI Governance Framework]]", "resolved": "urn:visionflow:linked:ai-governance-framework", "kind": "StubLink"},
-    {"raw": "[[AI Governance Maturity Model]]", "resolved": "urn:visionflow:linked:ai-governance-maturity-model", "kind": "StubLink"},
-    {"raw": "[[Documentation Generation]]", "resolved": "urn:visionflow:linked:documentation-generation", "kind": "StubLink"},
-    {"raw": "[[Documentation Standards]]", "resolved": "urn:visionflow:linked:documentation-standards", "kind": "StubLink"},
-    {"raw": "[[AI Ecosystem]]", "resolved": "urn:visionflow:linked:ai-ecosystem", "kind": "StubLink"},
-    {"raw": "[[Algorithmic Transparency Reports]]", "resolved": "urn:visionflow:linked:algorithmic-transparency-reports", "kind": "StubLink"},
-    {"raw": "[[AI Ethics Board]]", "resolved": "urn:visionflow:linked:ai-ethics-board", "kind": "StubLink"},
-    {"raw": "[[AI Ethics Checklist]]", "resolved": "urn:visionflow:linked:ai-ethics-checklist", "kind": "StubLink"},
-    {"raw": "[[Algorithmic Transparency Index]]", "resolved": "urn:visionflow:linked:algorithmic-transparency-index", "kind": "StubLink"},
-    {"raw": "[[AI Governance Law and Privacy]]", "resolved": "urn:visionflow:linked:ai-governance-law-and-privacy", "kind": "StubLink"},
-    {"raw": "[[Decision Transparency]]", "resolved": "urn:visionflow:linked:decision-transparency", "kind": "StubLink"},
-    {"raw": "[[AI Policy]]", "resolved": "urn:visionflow:linked:ai-policy", "kind": "StubLink"},
-    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 

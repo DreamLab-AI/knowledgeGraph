@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TrajectoryTracking
----
-
-# Trajectory Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

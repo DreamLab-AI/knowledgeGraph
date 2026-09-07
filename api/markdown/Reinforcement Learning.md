@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ReinforcementLearning
----
-
-# Reinforcement Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -234,82 +227,6 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reinforcement-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ded4241aacca2cc1fa44a8125ba440cccf0b2341dcb9780de12617cae46ee8f7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BC-0452-policy|policies]]",
-      "resolved": "urn:visionflow:linked:bc-0452-policy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GameAI|game-playing agents]]",
-      "resolved": "urn:visionflow:linked:game-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Policy|policies]]",
-      "resolved": "urn:visionflow:linked:policy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RecommendationSystem|recommendation systems]]",
-      "resolved": "urn:visionflow:linked:recommendation-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RoboticControl|robotic control]]",
-      "resolved": "urn:visionflow:linked:robotic-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TemporalDifference|temporal difference]]",
-      "resolved": "urn:visionflow:linked:temporal-difference",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ValueFunction|value functions]]",
-      "resolved": "urn:visionflow:linked:value-function",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligence|AI agents]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AutonomousRobot|autonomous systems]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Reinforcement learning is a machine learning paradigm in which agents learn optimal [[BC-0452-policy|policies]] through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error. This approach is fundamental to [[AutonomousRobot|autonomous systems]] and [[ArtificialIntelligence|AI agents]] that must adapt to dynamic, uncertain environments without explicit human supervision. Applications span [[GameAI|game-playing agents]], [[RoboticControl|robotic control]], and [[RecommendationSystem|recommendation systems]] where learning from environmental feedback optimises long-term performance.
 
@@ -331,7 +248,7 @@ aliases:
 
 - ### Current Landscape (2026)
   - The dominant post-training paradigm has shifted from RLHF-plus-PPO (the 2022 ChatGPT-era recipe) to Reinforcement Learning with Verifiable Rewards (RLVR) paired with Group Relative Policy Optimisation (GRPO), which Sebastian Raschka characterised as making 2025 "the year of RLVR plus GRPO".
-  - DeepSeek-R1 (arXiv:2501.12948, released January 2025 and published in Nature in September 2025) was the pivotal milestone, showing that pure RL with verifiable rewards on a 671B MoE base model could elicit emergent multi-step reasoning, self-reflection and strategy adaptation without human-labelled reasoning traces; R1-Zero raised AIME 2024 pass@1 from 15.6% to 71.0% at a reported RL cost of roughly $294,000.
+  - DeepSeek-R1 (arXiv:2501.12948, released January 2025 and published in Nature in September 2025) was the pivotal milestone, showing that pure RL with verifiable rewards on a 671B MoE base model [private] elicit emergent multi-step reasoning, self-reflection and strategy adaptation without human-labelled reasoning traces; R1-Zero raised AIME 2024 pass@1 from 15.6% to 71.0% at a reported RL cost of roughly $294,000.
   - GRPO eliminates the separate critic/value network by normalising rewards across a sampled group of responses, and is now the default in Hugging Face TRL, ByteDance verl, OpenRLHF, NVIDIA NeMo-Aligner and Unsloth; a wave of variants has followed including DAPO (ByteDance/Tsinghua, 2025), Dr. GRPO, GSPO (Qwen team, mid-2025, for stable MoE training), GFPO, REINFORCE++ and VAPO.
   - Key players and releases through 2025-2026 include DeepSeek (R1, then V3.2-Exp in September 2025 and V4-Pro/V4-Flash in April 2026, all retaining GRPO with progressively more sophisticated hybrid reward systems), Moonshot's Kimi k1.5, Alibaba's QwQ-32B and Qwen3, OpenAI's o1/o3 reasoning line, and NVIDIA's Nemotron 3.
   - Rather than fully replacing RLHF, the field has settled on a modular stack: SFT for instruction following, preference optimisation (DPO/SimPO/KTO) for alignment, and RLVR (GRPO/DAPO) for reasoning; RLAIF (AI feedback replacing human judges) also scaled sharply to cut annotation cost.

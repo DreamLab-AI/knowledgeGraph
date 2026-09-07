@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Aztec
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -216,52 +211,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aztec:4fcd983f1118",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ec3d155457fd47ac1f199db85bcc7eaf319693f0b35963c087251ded1bcf3ce1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Aztec Protocol]]",
-      "resolved": "urn:visionflow:linked:aztec-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Layer 2 Networks]]",
-      "resolved": "urn:visionflow:linked:layer-2-networks",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A privacy-focused Layer 2 network for Ethereum that uses zero-knowledge proofs to enable confidential transactions and private smart contract execution.

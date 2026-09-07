@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Burning Mechanism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,33 +87,78 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"},
-      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      },
+      {
+        "@id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"}
+      {
+        "@id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"},
-      {"@id": "urn:ngm:class:market-capitalization", "label": "Market Capitalization"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:market-capitalization",
+        "label": "Market Capitalization"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:inflationary-token", "label": "Inflationary Token"}
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}
+      {
+        "@id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      }
     ]
   },
   "provenance": {
@@ -128,67 +168,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:burning-mechanism:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3842f40def4bde0950b17981c90e2a68424d0ac8cd3a2aa3dc92348a624cedc3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Burning Mechanism is an economic design pattern in tokenised blockchain systems whereby tokens are permanently removed from circulating supply by sending them to an unspendable address (a null or black-hole address) or by protocol-enforced destruction, permanently contracting the total token supply. Token burning is deployed as a deflationary monetary policy tool to counteract inflationary issuance, to create token scarcity as a value-accrual mechanism, to implement fee markets (as in Ethereum's EIP-1559 base fee burn), and to regulate supply in algorithmic stablecoins and tokenomics models. The economic effect depends critically on the rate and predictability of burning relative to issuance.

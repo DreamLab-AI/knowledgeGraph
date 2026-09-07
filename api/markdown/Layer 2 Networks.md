@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Layer 2 Networks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,41 +182,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:layer-2-networks:31852eaab73d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:20fd0630f33a07f2940ecab4004f0f4577533de9e9169011178bf44fd6a451f9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Layer 1]]",
-      "resolved": "urn:visionflow:linked:layer-1",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scalability]]",
-      "resolved": "urn:visionflow:linked:scalability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rollup]]",
-      "resolved": "urn:visionflow:linked:rollup",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

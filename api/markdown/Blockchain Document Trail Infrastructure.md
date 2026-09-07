@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[blocktrails]]
-# Blockchain Document Trail Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,12 +42,24 @@ elevatedFrom:: [[blocktrails]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-core-concepts", "label": "blockchain core concepts"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:blockchain-core-concepts",
+        "label": "blockchain core concepts"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:web-technology", "label": "Web Technology"}
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      }
     ]
   },
   "quality": 0.35,
@@ -64,26 +70,6 @@ elevatedFrom:: [[blocktrails]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blocktrails:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7e179ca7caeaba8eefaf69746619a187fa9f009d719a11b4aa66edd03b04834c"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A concept node representing resource trails related to blockchain exploration tools and Nostr-based document sharing infrastructure. In the NarrativeGoldmine context, blocktrails links to split-screen markdown editing and decentralised document storage via NosDAV and the Nostr protocol.

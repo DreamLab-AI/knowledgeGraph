@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fleet Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

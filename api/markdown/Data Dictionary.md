@@ -1,37 +1,122 @@
----
-public: true
----
-
-# Data Dictionary
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-dictionary", "@type":"Page", "title":"Data Dictionary", "vc:slug":"data-dictionary", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-dictionary",
+  "@type": "Page",
+  "title": "Data Dictionary",
+  "vc:slug": "data-dictionary",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:data-dictionary",
-  "@type":"Class",
-  "label":"Data Dictionary",
-  "definition":"A data dictionary is a centralised, structured repository that describes the data elements of an information system, recording each element's name, definition, data type, format, allowable values, relationships and ownership. It serves as an authoritative reference for the meaning and structure of data, distinct from the data itself, enabling consistent understanding across teams and systems. Data dictionaries underpin data governance, integration and quality assurance by making the semantics of stored data explicit.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:metadata-management","label":"Metadata Management"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:data-management","label":"Data Management"},{"@id":"urn:ngm:class:data-governance","label":"Data Governance"}],
-    "hasPart":[{"@id":"urn:ngm:class:schema","label":"Schema"},{"@id":"urn:ngm:class:metadata","label":"Metadata"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:data-catalogue","label":"Data Catalogue"},{"@id":"urn:ngm:class:data-lineage","label":"Data Lineage"}],
-    "supports":[{"@id":"urn:ngm:class:data-quality","label":"Data Quality"},{"@id":"urn:ngm:class:data-governance","label":"Data Governance"}],
-    "enables":[{"@id":"urn:ngm:class:data-quality","label":"Data Quality"}],
-    "uses":[{"@id":"urn:ngm:class:metadata","label":"Metadata"},{"@id":"urn:ngm:class:schema","label":"Schema"}],
-    "requires":[{"@id":"urn:ngm:class:metadata-management","label":"Metadata Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:data-catalogue","label":"Data Catalogue"},{"@id":"urn:ngm:class:data-lineage","label":"Data Lineage"},{"@id":"urn:ngm:class:data-quality","label":"Data Quality"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:data-governance","label":"Data Governance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-dictionary",
+  "@type": "Class",
+  "label": "Data Dictionary",
+  "definition": "A data dictionary is a centralised, structured repository that describes the data elements of an information system, recording each element's name, definition, data type, format, allowable values, relationships and ownership. It serves as an authoritative reference for the meaning and structure of data, distinct from the data itself, enabling consistent understanding across teams and systems. Data dictionaries underpin data governance, integration and quality assurance by making the semantics of stored data explicit.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:metadata-management",
+      "label": "Metadata Management"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

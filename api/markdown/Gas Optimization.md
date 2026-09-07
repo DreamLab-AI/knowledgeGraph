@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gas Optimization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -103,67 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gas-optimization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4fbc1445fcf9ef40188a8715d434e8bdc8abc62572c8185d7822cee8ba46b65d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[EVM (Ethereum Virtual Machine)]]",
-      "resolved": "urn:visionflow:linked:evm-ethereum-virtual-machine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scalability Solutions]]",
-      "resolved": "urn:visionflow:linked:scalability-solutions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Smart Contract Development]]",
-      "resolved": "urn:visionflow:linked:smart-contract-development",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gas]]",
-      "resolved": "urn:visionflow:owl:class:gas",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Fee]]",
-      "resolved": "urn:visionflow:owl:class:transaction-fee",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Gas optimization is the systematic reduction of computational resources required for smart contract execution on blockchain networks, achieved through efficient storage patterns, opcode selection, data structure design, and batching strategies to minimise transaction costs and improve economic viability.

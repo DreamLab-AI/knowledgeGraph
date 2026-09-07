@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ethereum Attestation Service
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The Ethereum Attestation Service (EAS) is an open, public infrastructure for making on-chain and off-chain attestations about any subject using registered, reusable schemas. Each attestation is a signed, timestamped claim that can be verified, revoked, and composed by other applications. EAS provides a neutral primitive for building reputation systems, identity credentials, and trust layers without a centralised issuer.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Network Component"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}, {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
   },
   "quality": 0.72
 }

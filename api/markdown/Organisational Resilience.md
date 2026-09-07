@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Organisational Resilience
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

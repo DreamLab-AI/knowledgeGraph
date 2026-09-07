@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Organisational Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:organisational-layer:2a66b1d4d594",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fbead742707a0713faa8dedf9bc76106eb3cf0b06823057ceff655cdd653ce45"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Institutional Layer]]",
-      "resolved": "urn:visionflow:linked:institutional-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Operational Layer]]",
-      "resolved": "urn:visionflow:linked:operational-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Process Layer]]",
-      "resolved": "urn:visionflow:linked:process-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Organisational Structure]]",
-      "resolved": "urn:visionflow:linked:organisational-structure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Division of Labour]]",
-      "resolved": "urn:visionflow:linked:division-of-labour",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Organisational Layer is the cross-cutting stratum that represents the internal structure, roles, and processes of an operating body. It sits above the Institutional Layer that grants it standing and supports operational and social activity. It contains organisational units, responsibilities, reporting lines, and internal processes.

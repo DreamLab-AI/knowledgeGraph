@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Legal Wrapper
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A legal wrapper is an off-chain legal entity, such as a foundation, LLC, or association, established to give a DAO or on-chain protocol recognised legal personality. It enables the organisation to enter contracts, hold assets, limit member liability, and interface with regulators while preserving on-chain governance. Jurisdictions like Wyoming (DAO LLC), the Marshall Islands, and the Cayman Islands offer purpose-built wrapper forms.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:dao-tooling", "label": "DAO Tooling"}, {"@id": "urn:ngm:class:enterprise-token-standards", "label": "Enterprise Token Standards"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dao-tooling",
+        "label": "DAO Tooling"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      }
+    ]
   },
   "quality": 0.72
 }

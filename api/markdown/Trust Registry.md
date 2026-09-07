@@ -1,38 +1,116 @@
----
-public: true
----
-
-# Trust Registry
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:trust-registry", "@type":"Page", "title":"Trust Registry", "vc:slug":"trust-registry", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:trust-registry",
+  "@type": "Page",
+  "title": "Trust Registry",
+  "vc:slug": "trust-registry",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:trust-registry",
-  "@type":"Class",
-  "label":"Trust Registry",
-  "definition":"A trust registry is an authoritative, queryable record that lists which issuers, verifiers, and credential types are recognised as trustworthy within a given governance framework. It allows a relying party to programmatically determine whether a presented verifiable credential comes from an accredited source and remains valid. Trust registries underpin scalable decentralised identity ecosystems by providing the machine-readable basis for trust decisions.",
-  "domain":"security",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:trust-framework","label":"Trust Framework"}],
-  "relations":{
-    "relatedTo":[{"@id":"urn:ngm:class:did","label":"DID"},{"@id":"urn:ngm:class:decentralized-identity","label":"Decentralized Identity"},{"@id":"urn:ngm:class:verifiable-credentials","label":"Verifiable Credentials"},{"@id":"urn:ngm:class:digital-identity","label":"Digital Identity"}],
-    "supports":[{"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"},{"@id":"urn:ngm:class:credential-issuance","label":"Credential Issuance"}],
-    "partOf":[{"@id":"urn:ngm:class:governance-framework","label":"Governance Framework"}],
-    "uses":[{"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}],
-    "enables":[{"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"}],
-    "dependsOn":[{"@id":"urn:ngm:class:trust-anchor","label":"Trust Anchor"}],
-    "implements":[{"@id":"urn:ngm:class:trust-framework","label":"Trust Framework"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:self-sovereign-identity","label":"Self-Sovereign Identity"}],
-    "requires":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trust-registry",
+  "@type": "Class",
+  "label": "Trust Registry",
+  "definition": "A trust registry is an authoritative, queryable record that lists which issuers, verifiers, and credential types are recognised as trustworthy within a given governance framework. It allows a relying party to programmatically determine whether a presented verifiable credential comes from an accredited source and remains valid. Trust registries underpin scalable decentralised identity ecosystems by providing the machine-readable basis for trust decisions.",
+  "domain": "security",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:trust-framework",
+      "label": "Trust Framework"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:did",
+        "label": "DID"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:credential-issuance",
+        "label": "Credential Issuance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

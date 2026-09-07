@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Planetary Gearbox
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "A planetary gearbox is a gear-reduction mechanism in which several planet gears revolve around a central sun gear inside an outer ring gear. This epicyclic arrangement distributes load across multiple gear meshes, yielding high torque density, coaxial input and output, and compact reduction ratios. It is a core mechanical component in robotic joints and actuators where space and weight are constrained.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      }
+    ]
   },
   "quality": 0.72
 }

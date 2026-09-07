@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Experiential Learning
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:experiential-learning", "@type": "Page", "title": "Experiential Learning", "vc:slug": "experiential-learning", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:experiential-learning",
+  "@type": "Page",
+  "title": "Experiential Learning",
+  "vc:slug": "experiential-learning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

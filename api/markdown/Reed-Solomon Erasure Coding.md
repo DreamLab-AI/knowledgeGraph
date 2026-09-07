@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reed-Solomon Erasure Coding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "Reed-Solomon erasure coding is a family of error-correcting codes that transform k data symbols into n encoded symbols such that any k of the n suffice to reconstruct the original data, tolerating up to n minus k erasures. Operating over finite (Galois) fields, it provides maximum-distance-separable efficiency, meaning no scheme can recover from more erasures for the same redundancy. It is foundational to RAID storage, optical media, QR codes, satellite communication, and distributed-storage and blockchain data-availability systems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:erasure-coding",
+      "label": "Erasure Coding"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:error-correction", "label": "Error Correction"}
+      {
+        "@id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"}
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reputation-Based BFT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,24 +59,54 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:proof-of-authority", "label": "Proof of Authority"},
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ]
   },
   "provenance": {
@@ -91,37 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reputation-based-bft:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5118a6bb28a6145486f3403f11b37d9843569596e66f067de3e26cbe1c250c13"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Byzantine Fault Tolerance]]",
-      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Reputation-Based BFT is a variant of Byzantine Fault Tolerance in which each consensus participant is assigned a dynamic reputation score derived from its historical behaviour—vote accuracy, uptime, and honest message propagation—so that nodes with strong track records carry greater weight in the consensus outcome. This design allows the protocol to tolerate Byzantine actors more efficiently than pure stake-weighted schemes by penalising misbehaving validators through reputation decay rather than requiring slashing of locked collateral. It is commonly deployed in permissioned or consortium blockchain networks where participants are identified and accountable.

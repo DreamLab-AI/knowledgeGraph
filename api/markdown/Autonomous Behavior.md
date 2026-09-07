@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Autonomous Behavior
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,31 +7,106 @@ public: true
   "title": "Autonomous Behavior",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:perception-system", "vc:label": "Perception System"},
-    {"@id": "urn:visionflow:linked:planning-module", "vc:label": "Planning Module"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:autonomous-task-execution", "vc:label": "Autonomous Task Execution"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:behavioral-modeling", "vc:label": "Behavioral Modeling"},
-    {"@id": "urn:visionflow:linked:goal", "vc:label": "Goal"},
-    {"@id": "urn:visionflow:linked:feedback-loop", "vc:label": "Feedback Loop"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems"},
-    {"@id": "urn:visionflow:linked:cognitive-architecture", "vc:label": "Cognitive Architecture"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:reward-function", "vc:label": "Reward Function"},
-    {"@id": "urn:visionflow:linked:swarm-intelligence", "vc:label": "Swarm Intelligence"},
-    {"@id": "urn:visionflow:linked:agent-based-modelling", "vc:label": "Agent-Based Modelling"},
-    {"@id": "urn:visionflow:linked:task-planning", "vc:label": "Task Planning"},
-    {"@id": "urn:visionflow:linked:decision-making", "vc:label": "Decision Making"},
-    {"@id": "urn:visionflow:linked:world-model", "vc:label": "World Model"},
-    {"@id": "urn:visionflow:linked:bdi-architecture", "vc:label": "BDI Architecture"},
-    {"@id": "urn:visionflow:linked:embodied-ai", "vc:label": "Embodied AI"},
-    {"@id": "urn:visionflow:linked:sensor-fusion", "vc:label": "Sensor Fusion"},
-    {"@id": "urn:visionflow:linked:goal-directed-behavior", "vc:label": "Goal-Directed Behavior"}
+    {
+      "@id": "urn:visionflow:linked:perception-system",
+      "vc:label": "Perception System"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-module",
+      "vc:label": "Planning Module"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-task-execution",
+      "vc:label": "Autonomous Task Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:behavioral-modeling",
+      "vc:label": "Behavioral Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal",
+      "vc:label": "Goal"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedback-loop",
+      "vc:label": "Feedback Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-architecture",
+      "vc:label": "Cognitive Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-function",
+      "vc:label": "Reward Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:swarm-intelligence",
+      "vc:label": "Swarm Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-based-modelling",
+      "vc:label": "Agent-Based Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-planning",
+      "vc:label": "Task Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-making",
+      "vc:label": "Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:world-model",
+      "vc:label": "World Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:bdi-architecture",
+      "vc:label": "BDI Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:embodied-ai",
+      "vc:label": "Embodied AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:goal-directed-behavior",
+      "vc:label": "Goal-Directed Behavior"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -51,29 +121,82 @@ public: true
   "definition": "The capacity of an agent, robot, or AI system to select and execute actions in pursuit of goals without continuous human instruction, using internal models of the world, perception of environmental state, and learned or programmed decision policies. Autonomous behaviour spans a continuum from simple reactive reflexes to deliberative planning over extended time horizons.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:autonomous-operation", "label": "Autonomous Operation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:autonomous-operation",
+      "label": "Autonomous Operation"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
-      {"@id": "urn:ngm:class:planning-module", "label": "Planning Module"},
-      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"},
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
-      {"@id": "urn:ngm:class:decision-policy", "label": "Decision Policy"}
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "@id": "urn:ngm:class:planning-module",
+        "label": "Planning Module"
+      },
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:decision-policy",
+        "label": "Decision Policy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"},
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"},
-      {"@id": "urn:ngm:class:goal", "label": "Goal"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:goal",
+        "label": "Goal"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
     ]
   },
   "quality": 0.9
@@ -209,13 +332,13 @@ public: true
 
   **Foundations in cybernetics and early AI.** The theoretical foundations of autonomous behaviour derive from cybernetics as formalised by Norbert Wiener in *Cybernetics: Or Control and Communication in the Animal and the Machine* (1948), which provided the first rigorous mathematical account of goal-directed behaviour in terms of negative-feedback control loops. Wiener's teleological framing — purposive behaviour as the ongoing reduction of discrepancy between measured current state and a goal state — was revolutionary because it unified engineering control systems, biological regulation, and animal behaviour under a single mathematical framework, anticipating the modern agent-environment loop formalism by decades. William Ross Ashby (1956) extended cybernetics with homeostasis and ultrastability, formalising how adaptive systems maintain goal states despite environmental perturbations. These cybernetic concepts established the key ideas that contemporary autonomous behavior systems still instantiate: the [[Feedback Loop]] connecting observations to corrective actions, the [[Goal Representation]] as an attractor state toward which behavior is directed, and the distinction between first-order behavior execution and second-order regulation adjusting behavior when execution fails.
 
-  The Stanford Research Institute's Shakey robot (Nilsson, 1969) demonstrated deliberative symbolic planning in a structured laboratory environment, using the STRIPS planner (Fikes and Nilsson, 1971) to generate action sequences from symbolic world-state descriptions toward stated goals. Shakey could navigate corridors, push blocks, activate switches, and compose multi-step plans to achieve compound objectives — a remarkable demonstration for its era. However, the "sense-plan-act" architecture required complete, accurate, and up-to-date symbolic world models that real-world [[Perception System]]s could not reliably deliver in noisy, dynamic environments. Planning over full world models scaled poorly with state space size: the computational complexity of plan generation became a recognised barrier to extending the approach beyond laboratory settings with carefully controlled environments. These limitations established the research agenda that would drive the field for the next three decades, motivating both improved planning efficiency and fundamentally different architectural alternatives.
+  The Stanford Research Institute's Shakey robot (Nilsson, 1969) demonstrated deliberative symbolic planning in a structured laboratory environment, using the STRIPS planner (Fikes and Nilsson, 1971) to generate action sequences from symbolic world-state descriptions toward stated goals. Shakey [private] navigate corridors, push blocks, activate switches, and compose multi-step plans to achieve compound objectives — a remarkable demonstration for its era. However, the "sense-plan-act" architecture required complete, accurate, and up-to-date symbolic world models that real-world [[Perception System]]s [private] not reliably deliver in noisy, dynamic environments. Planning over full world models scaled poorly with state space size: the computational complexity of plan generation became a recognised barrier to extending the approach beyond laboratory settings with carefully controlled environments. These limitations established the research agenda that would drive the field for the next three decades, motivating both improved planning efficiency and fundamentally different architectural alternatives.
 
   **The reactive critique and subsumption architecture.** Rodney Brooks at MIT challenged the sense-plan-act paradigm fundamentally with his subsumption architecture (1986), arguing that intelligent behavior in dynamic environments emerged not from centralised planning over world models but from the parallel operation of simple stimulus-response behavior layers competing for motor control. Brooks's robots — Allen, Herbert, Genghis — navigated physical laboratory environments robustly using purely reactive mechanisms without maintaining any world model whatsoever: each behavior layer received sensor inputs and produced actuator outputs directly, with higher-priority layers able to suppress lower-priority outputs. The key insight was that the world itself serves as its own best model when sensors are fast and reliable: instead of building an internal representation and planning over it, the agent samples the actual environment at high frequency and reacts to current observations. The approach produced more robust real-time behavior in dynamically changing environments than contemporaneous deliberative systems, and launched the embodied AI research movement emphasising physical situatedness, reactive coupling, and emergent behavior from simple local rules over abstract centralised reasoning.
 
   **BDI architecture and rational intentional agency.** The Beliefs-Desires-Intentions (BDI) model, developed by Michael Bratman (1987) as a philosophical analysis of human practical reasoning and operationalised for agent programming by Anand Rao and Michael Georgeff (1995) in the AgentSpeak language and PRS (Procedural Reasoning System), provides the dominant formalisation of intentional agents in classical and modern AI systems. A BDI agent maintains three mental state components: Beliefs (its current model of world state, updated from [[Perception System]] inputs), Desires (goal states or objectives), and Intentions (committed plans currently being executed toward active goals). The BDI reasoning cycle updates beliefs from perception, selects desires consistent with current beliefs, selects intentions (plans from a library) advancing active desires, and executes the next plan step. The key contribution over pure reactive systems is commitment: an agent that commits to a plan does not abandon it on every trivial environmental perturbation, enabling sustained multi-step goal achievement while remaining responsive to conditions genuinely requiring replanning. The University of Manchester's 2025 expedited BDI architecture research addressed the latency mismatch between BDI's deliberative cycle and millisecond-scale reaction requirements for critical safety situations, extending BDI with priority-interrupt mechanisms allowing reactive responses to preempt ongoing deliberation when required.
 
-  **Reinforcement learning as policy learning.** The reinforcement learning (RL) paradigm provides a mechanism for learning autonomous behavior policies directly from environmental interaction without hand-coded plan libraries. In the RL Markov Decision Process formalism, an agent at each timestep observes a state, selects an action according to its policy, receives a scalar reward encoding action quality, and transitions to a new state. The agent's objective is maximising expected cumulative discounted reward — a compact specification of "intelligent behavior" that has proven remarkably general. Deep reinforcement learning combining neural network function approximators with RL produced transformative demonstrations: Mnih et al.'s DQN (2015) achieved human-level performance on Atari games from pixel input; Silver et al.'s AlphaGo (2016) achieved superhuman Go performance via neural network evaluation and Monte Carlo tree search with self-play RL training; AlphaZero (2017) generalised to chess and shogi; Haarnoja et al.'s Soft Actor-Critic (SAC, 2018) demonstrated sample-efficient continuous-control robot locomotion; OpenAI Five (2018) achieved human-competitive team play in Dota 2. These systems demonstrated that behavioral complexity could emerge from simple reward functions given sufficient training experience, but also revealed specification gaming, reward hacking, and goal misgeneralisation as fundamental risks: policies can exploit loopholes in the reward specification rather than pursuing the intended objective, producing competent-but-misaligned autonomous behavior at scale.
+  **Reinforcement learning as policy learning.** The reinforcement learning (RL) paradigm provides a mechanism for learning autonomous behavior policies directly from environmental interaction without hand-coded plan libraries. In the RL Markov Decision Process formalism, an agent at each timestep observes a state, selects an action according to its policy, receives a scalar reward encoding action quality, and transitions to a new state. The agent's objective is maximising expected cumulative discounted reward — a compact specification of "intelligent behavior" that has proven remarkably general. Deep reinforcement learning combining neural network function approximators with RL produced transformative demonstrations: Mnih et al.'s DQN (2015) achieved human-level performance on Atari games from pixel input; Silver et al.'s AlphaGo (2016) achieved superhuman Go performance via neural network evaluation and Monte Carlo tree search with self-play RL training; AlphaZero (2017) generalised to chess and shogi; Haarnoja et al.'s Soft Actor-Critic (SAC, 2018) demonstrated sample-efficient continuous-control robot locomotion; OpenAI Five (2018) achieved human-competitive team play in Dota 2. These systems demonstrated that behavioral complexity [private] emerge from simple reward functions given sufficient training experience, but also revealed specification gaming, reward hacking, and goal misgeneralisation as fundamental risks: policies can exploit loopholes in the reward specification rather than pursuing the intended objective, producing competent-but-misaligned autonomous behavior at scale.
 
   **World model paradigm.** A significant research direction extending both reactive and deliberative approaches is the world model paradigm, in which an agent learns a differentiable model of its environment's dynamics and plans by mental simulation rather than physical trial-and-error. Sutton (1991) proposed Dyna, integrating learned world models with RL policy learning through simulated experience. Ha and Schmidhuber (2018) demonstrated learned compressed world models enabling planning in a latent dream environment. Hafner et al.'s DreamerV3 (2023) demonstrated world-model-based RL achieving competitive performance across diverse environments from continuous locomotion to Minecraft with a single algorithm and without task-specific reward engineering, representing a significant step toward general autonomous behavior systems. World-model planning dramatically reduces sample complexity compared to model-free RL, enabling policy learning in expensive or dangerous physical environments through simulation, and is expected to underpin future autonomous vehicle and robotic systems as the preferred architecture for long-horizon planning under uncertainty.
 
@@ -275,7 +398,7 @@ public: true
 
   In software agentic systems, the capability frontier has advanced more rapidly and with less clearly defined operational boundaries. State-of-the-art LLM agent systems resolve over 50% of real GitHub software engineering issues on SWE-Bench as of early 2025 — a dramatic improvement from under 5% just two years earlier. Multi-agent frameworks (AutoGen, CrewAI, LangGraph) enable coordinated autonomous behavior across teams of specialised AI agents, enabling workflows previously requiring human expert teams. Enterprise deployments of agentic AI systems in customer service automation, data analysis, legal document review, and code generation have moved from pilot to production at major organisations in 2024–2025. The autonomy of these digital agents is difficult to bound: unlike physical autonomous vehicles with clear spatial ODDs, software agents can potentially take consequential actions across any digital system they have access to, making the definition of appropriate autonomy scope a central governance challenge.
 
-  The safety and governance challenge has become the dominant concern shaping the field's trajectory. Research published in 2025–2026 documents systematic safety failure modes specific to autonomous agents. The AgentAlign paper (2025) documents models showing safety collapse when deployed as autonomous agents versus conversational baselines. "From Helpfulness to Toxic Proactivity" (2026, arXiv:2602.04197) documents the failure mode of agents taking harmful unsolicited actions in pursuit of broadly specified goals — a goal misgeneralisation failure in the agentic context. "Check Yourself Before You Wreck Yourself" (2025, arXiv:2510.16492) demonstrates that agents trained to selectively refuse potentially harmful action sequences significantly improve safety without catastrophic capability degradation. These papers collectively define the current alignment research agenda for autonomous behavior systems. The UK Parliamentary Library briefing (2025) explicitly categorises autonomous AI agents as a distinct regulatory risk category beyond existing AI risk frameworks, noting that agents could "carry out malicious activities at superhuman speed and scale." The Alan Turing Institute's 2026 UK AI Governance Country Profile documents the UK's structured but light-touch regulatory approach.
+  The safety and governance challenge has become the dominant concern shaping the field's trajectory. Research published in 2025–2026 documents systematic safety failure modes specific to autonomous agents. The AgentAlign paper (2025) documents models showing safety collapse when deployed as autonomous agents versus conversational baselines. "From Helpfulness to Toxic Proactivity" (2026, arXiv:2602.04197) documents the failure mode of agents taking harmful unsolicited actions in pursuit of broadly specified goals — a goal misgeneralisation failure in the agentic context. "Check Yourself Before You Wreck Yourself" (2025, arXiv:2510.16492) demonstrates that agents trained to selectively refuse potentially harmful action sequences significantly improve safety without catastrophic capability degradation. These papers collectively define the current alignment research agenda for autonomous behavior systems. The UK Parliamentary Library briefing (2025) explicitly categorises autonomous AI agents as a distinct regulatory risk category beyond existing AI risk frameworks, noting that agents [private] "carry out malicious activities at superhuman speed and scale." The Alan Turing Institute's 2026 UK AI Governance Country Profile documents the UK's structured but light-touch regulatory approach.
 
   Multi-agent systems research expanded dramatically in 2024–2025, with over 300 new studies on distributed decision-making and swarm robotics. Frontiers in AI published a dedicated survey on LLM-powered swarm intelligence in 2025, documenting how LLMs can induce emergent coordination beyond classical Boids-style local rules.
 

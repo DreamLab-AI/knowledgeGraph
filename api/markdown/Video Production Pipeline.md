@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Video Production Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A video production pipeline is the end-to-end sequence of stages through which video content moves from capture or generation through editing, effects, colour, restoration and final delivery. Increasingly it incorporates AI stages such as upscaling, denoising and restoration alongside traditional editorial and compositing steps. The pipeline coordinates assets, tools and review across teams to produce polished output efficiently.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:image-and-video-restoration", "label": "Image and Video Restoration"}, {"@id": "urn:ngm:class:content-creation-pipeline", "label": "Content Creation Pipeline"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:image-and-video-restoration",
+        "label": "Image and Video Restoration"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SemanticSegmentation
----
-
-# Semantic Segmentation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -213,77 +206,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:semantic-segmentation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4f84fc9c80488ecbbcd8c62cbed893c0aeb77a39a224d979a5a2afdb3e16eea3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[costigan2018world]]",
-      "resolved": "urn:visionflow:linked:costigan2018world",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Solid-Lite]]",
-      "resolved": "urn:visionflow:linked:solid-lite",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Instance Segmentation]]",
-      "resolved": "urn:visionflow:owl:class:instance-segmentation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Nostr protocol]]",
-      "resolved": "urn:visionflow:owl:class:nostr-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Panoptic Segmentation]]",
-      "resolved": "urn:visionflow:owl:class:panoptic-segmentation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Web Linked Data Standard]]",
-      "resolved": "urn:visionflow:owl:class:semantic-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[semanticWeb]]",
-      "resolved": "urn:visionflow:owl:class:semantic-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Solid]]",
-      "resolved": "urn:visionflow:owl:class:solid",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances. Semantic segmentation networks (FCN, U-Net, DeepLab) produce dense pixel-wise predictions enabling scene understanding applications in medical imaging, autonomous driving, and satellite imagery analysis.

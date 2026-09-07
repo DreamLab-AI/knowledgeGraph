@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Full-Text Search
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -23,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:full-text-search",
   "@type": "Class",
   "label": "Full-Text Search",
-  "definition": "Full-text search is a technique for locating documents or records that contain specified words or phrases by matching against an inverted index built over tokenised text content, rather than scanning raw text linearly. It supports ranking by relevance, stemming, and fuzzy matching, and is provided natively by systems such as PostgreSQL and dedicated engines such as Elasticsearch. Full-text search underpins query engines and log aggregation systems that must retrieve relevant records from large unstructured text corpora.",
+  "definition": "Full-text search is a technique for locating documents or records that contain specified words or phrases by matching against an inverted [private] built over tokenised text content, rather than scanning raw text linearly. It supports ranking by relevance, stemming, and fuzzy matching, and is provided natively by systems such as PostgreSQL and dedicated engines such as Elasticsearch. Full-text search underpins query engines and log aggregation systems that must retrieve relevant records from large unstructured text corpora.",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
@@ -35,3 +29,5 @@ public: true
   "relations": {}
 }
 ```
+
+

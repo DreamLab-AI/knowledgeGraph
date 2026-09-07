@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intrinsic Interpretability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -219,72 +214,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:intrinsic-interpretability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2b4a28781e6cb466c62fe344239170062fef2abce7c7caba89653773dd27d670"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Black Box Model]]",
-      "resolved": "urn:visionflow:linked:black-box-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decision Tree Approximation]]",
-      "resolved": "urn:visionflow:linked:decision-tree-approximation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Rule Extraction]]",
-      "resolved": "urn:visionflow:linked:rule-extraction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:owl:class:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interpretable AI]]",
-      "resolved": "urn:visionflow:owl:class:interpretable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Interpretability]]",
-      "resolved": "urn:visionflow:owl:class:model-interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Transparency]]",
-      "resolved": "urn:visionflow:owl:class:model-transparency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Post Hoc Explanation]]",
-      "resolved": "urn:visionflow:owl:class:post-hoc-explanation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability methods.

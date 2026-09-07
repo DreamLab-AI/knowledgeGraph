@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stablecoins on Bitcoin
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Stablecoins on Bitcoin are price-stable tokens issued and transferred on Bitcoin-based protocols such as Taproot Assets, Liquid, or RGB, rather than on smart-contract chains like Ethereum. They aim to bring dollar-denominated value transfer to the Bitcoin ecosystem, leveraging Bitcoin's settlement security and, where combined with the Lightning Network, near-instant low-cost payments. They extend Bitcoin's utility from a single monetary asset toward a broader settlement layer for fiat-pegged value.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:btc-layer-3", "label": "BTC Layer 3"},
-      {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"}
+      {
+        "@id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "@id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
     ]
   },
   "quality": 0.72

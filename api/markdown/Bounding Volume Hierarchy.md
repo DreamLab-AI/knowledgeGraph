@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bounding Volume Hierarchy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -231,67 +226,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bounding-volume-hierarchy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4152fcd91f23e521d7f6671bf47289ea66c41f4ea8ee954c37191c1366d4017c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bounding Volume]]",
-      "resolved": "urn:visionflow:linked:bounding-volume",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Frustum Culling]]",
-      "resolved": "urn:visionflow:linked:frustum-culling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Traversal Algorithm]]",
-      "resolved": "urn:visionflow:linked:traversal-algorithm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tree Construction]]",
-      "resolved": "urn:visionflow:linked:tree-construction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Collision Detection]]",
-      "resolved": "urn:visionflow:owl:class:collision-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ray Tracing]]",
-      "resolved": "urn:visionflow:owl:class:ray-tracing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Data Structure]]",
-      "resolved": "urn:visionflow:owl:class:spatial-data-structure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A tree-structured acceleration data structure that recursively organizes geometric objects within nested bounding volumes, enabling efficient spatial queries, collision detection, and ray-scene intersection testing by rapidly culling large portions of geometry that cannot intersect with a query.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vyper
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -167,46 +162,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vyper:4c50d0fcb0a5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cea62728ab88a73fce42295d4e991cb035cde6ff143390c504cfcdae2ab4b3e6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Virtual Machine]]",
-      "resolved": "urn:visionflow:linked:ethereum-virtual-machine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Solidity]]",
-      "resolved": "urn:visionflow:linked:solidity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Programming Language]]",
-      "resolved": "urn:visionflow:linked:programming-language",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

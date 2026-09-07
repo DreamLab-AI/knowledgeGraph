@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CCPA
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,57 +195,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ccpa:0c89db9e0a96",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5099af523b636190128371504bc8e613203287553c2e51a39786e2d71443f990"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Protection]]",
-      "resolved": "urn:visionflow:linked:data-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consumer Protection]]",
-      "resolved": "urn:visionflow:linked:consumer-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Privacy]]",
-      "resolved": "urn:visionflow:linked:data-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Protection Law]]",
-      "resolved": "urn:visionflow:linked:data-protection-law",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The California Consumer Privacy Act, a state statute that grants California residents rights over the personal information that businesses collect about them.

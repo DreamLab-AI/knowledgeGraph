@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interoperability Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -214,46 +209,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interoperability-standards:ff58df73a99c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:71962648662bb65d98325a0869e7ad51dc61bfe94b7c9d28ddf2828f4a9c7160"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:linked:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Standards Body]]",
-      "resolved": "urn:visionflow:linked:standards-body",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Communication Protocols]]",
-      "resolved": "urn:visionflow:linked:communication-protocols",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Standards]]",
-      "resolved": "urn:visionflow:linked:standards",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

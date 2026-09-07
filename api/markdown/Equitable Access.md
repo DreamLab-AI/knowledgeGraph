@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Equitable Access
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Equitable access is the principle and practice of ensuring that all people, regardless of ability, income, geography, or background, can reach and use a resource, service, or technology on fair terms. It goes beyond equal access by actively removing barriers and providing accommodations so that disadvantaged groups achieve comparable outcomes. In technology it is closely tied to accessibility standards and inclusive design.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:accessibility-standard", "label": "Accessibility Standard"}, {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ]
   },
   "quality": 0.72
 }

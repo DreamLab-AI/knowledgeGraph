@@ -1,36 +1,104 @@
----
-public: true
----
-
-# User-Generated Content
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:user-generated-content", "@type":"Page", "title":"User-Generated Content", "vc:slug":"user-generated-content", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:user-generated-content",
+  "@type": "Page",
+  "title": "User-Generated Content",
+  "vc:slug": "user-generated-content",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:user-generated-content",
-  "@type":"Class",
-  "label":"User-Generated Content",
-  "definition":"User-generated content (UGC) is media and information created and published by the users of a platform rather than by its operators or professional producers. It encompasses text, images, video, 3D assets, reviews, and virtual-world artefacts contributed by a community. UGC drives engagement and network effects on social and metaverse platforms while creating moderation, rights, and quality-control obligations.",
-  "domain":"spatial-computing",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:digital-content","label":"Digital Content"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:platform-economy","label":"Platform Economy"}],
-    "hasPart":[{"@id":"urn:ngm:class:digital-content","label":"Digital Content"}],
-    "dependsOn":[{"@id":"urn:ngm:class:community","label":"Community"},{"@id":"urn:ngm:class:content-creation","label":"Content Creation"}],
-    "enables":[{"@id":"urn:ngm:class:virtual-world","label":"Virtual World"},{"@id":"urn:ngm:class:metaverse","label":"Metaverse"}],
-    "requires":[{"@id":"urn:ngm:class:content-moderation","label":"Content Moderation"}],
-    "supports":[{"@id":"urn:ngm:class:user-experience","label":"User Experience"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:content-creation","label":"Content Creation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:platform-economy","label":"Platform Economy"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"},{"@id":"urn:ngm:class:digital-content","label":"Digital Content"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:user-generated-content",
+  "@type": "Class",
+  "label": "User-Generated Content",
+  "definition": "User-generated content (UGC) is media and information created and published by the users of a platform rather than by its operators or professional producers. It encompasses text, images, video, 3D assets, reviews, and virtual-world artefacts contributed by a community. UGC drives engagement and network effects on social and metaverse platforms while creating moderation, rights, and quality-control obligations.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-content",
+      "label": "Digital Content"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:community",
+        "label": "Community"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

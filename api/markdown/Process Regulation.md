@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Process Regulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:process-regulation:23a71cb364f8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c459bfad34e40fcb5fbed82005abd5b38e85248719c63f6b43afafff6e027d11"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Compliance]]",
-      "resolved": "urn:visionflow:linked:compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Requirements]]",
-      "resolved": "urn:visionflow:linked:regulatory-requirements",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulation]]",
-      "resolved": "urn:visionflow:linked:regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Regulation]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.oecd.org/gov/regulatory-policy/]]",
-      "resolved": "urn:visionflow:linked:https-www-oecd-org-gov-regulatory-policy",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Process regulation is a regulatory approach that specifies how activities must be carried out rather than dictating particular outcomes.

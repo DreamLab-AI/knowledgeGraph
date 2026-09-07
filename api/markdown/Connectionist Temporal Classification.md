@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Connectionist Temporal Classification
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

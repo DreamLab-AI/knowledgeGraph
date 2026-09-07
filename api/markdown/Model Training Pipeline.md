@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Model Training Pipeline
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

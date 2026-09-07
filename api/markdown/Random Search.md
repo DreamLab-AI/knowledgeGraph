@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Random Search
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

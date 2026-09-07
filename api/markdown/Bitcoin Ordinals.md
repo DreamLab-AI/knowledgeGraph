@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Bitcoin-Ordinals
----
-
-# Bitcoin Ordinals
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -169,7 +162,7 @@ aliases:
   - [[Bitcoin Ordinals]] depends on [[Bitcoin Script]] to construct valid Taproot reveal transactions and on [[Bitcoin Core]] for node support. It competes and coexists with [[NFT]] paradigms on other chains, drawing [[Digital Art]] and collectibles communities to Bitcoin for the first time at scale. The protocol has driven significant growth in [[Blockchain Transaction]] volume and [[Transaction Fee]] revenues for miners.
 
 - ### Content
-  - The Ordinals theory was formalised by Casey Rodarmor and published in January 2023, drawing on prior academic work on coloured coins and leveraging the expanded witness capacity unlocked by the 2021 Taproot upgrade. The key insight was that satoshis, as the atomic unit of Bitcoin, could be given permanent identity through their mining order without modifying Bitcoin's consensus rules — inscriptions are valid transactions from the perspective of every existing node.
+  - The Ordinals theory was formalised by Casey Rodarmor and published in January 2023, drawing on prior academic work on coloured coins and leveraging the expanded witness capacity unlocked by the 2021 Taproot upgrade. The key insight was that satoshis, as the atomic unit of Bitcoin, [private] be given permanent identity through their mining order without modifying Bitcoin's consensus rules — inscriptions are valid transactions from the perspective of every existing node.
 
   - Technically, an inscription is created in two transactions: a commit transaction that locks funds to a Taproot output, and a reveal transaction that spends it and embeds data in the witness script using a series of `OP_FALSE OP_IF ... OP_ENDIF` opcodes. Content is MIME-typed and stored verbatim, so images, HTML, JavaScript, and even small applications can be inscribed. The ordinal number of the first input satoshi is conventionally treated as the inscription's ID.
 

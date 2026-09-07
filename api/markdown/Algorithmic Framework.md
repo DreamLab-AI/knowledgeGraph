@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Algorithmic Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -153,198 +148,140 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
-      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
-      {"@id": "urn:ngm:class:graph-algorithms", "label": "Graph Algorithms"},
-      {"@id": "urn:ngm:class:learning-algorithm", "label": "Learning Algorithm"},
-      {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
-      {"@id": "urn:ngm:class:data-structure", "label": "Data Structure"}
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:learning-algorithm",
+        "label": "Learning Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"},
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:game-ai", "label": "Game AI"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
-      {"@id": "urn:ngm:class:digital-twin-framework", "label": "Digital Twin Framework"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:optimization-technique", "label": "Optimization Technique"},
-      {"@id": "urn:ngm:class:algorithmic-complexity", "label": "Algorithmic Complexity"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-framework",
+        "label": "Digital Twin Framework"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:optimization-technique",
+        "label": "Optimization Technique"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-complexity",
+        "label": "Algorithmic Complexity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:computational-complexity-theory", "label": "Computational Complexity"},
-      {"@id": "urn:ngm:class:data-structure", "label": "Data Structure"},
-      {"@id": "urn:ngm:class:mathematical-logic", "label": "Mathematical Logic"}
+      {
+        "@id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:dynamic-programming", "label": "Dynamic Programming"},
-      {"@id": "urn:ngm:class:monte-carlo-methods", "label": "Monte Carlo Methods"},
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithms"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:ai-framework", "label": "AI Framework"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:ai-framework",
+        "label": "AI Framework"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
-      {"@id": "urn:ngm:class:brute-force-search", "label": "Brute Force Search"}
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "@id": "urn:ngm:class:brute-force-search",
+        "label": "Brute Force Search"
+      }
     ]
   },
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "R1Explicit"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:algorithmic-framework:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:718d781749d9f1673ca3c32bfcc596edb53190d417b810de52cf1358336a2fc3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Framework]]",
-      "resolved": "urn:visionflow:owl:class:ai-framework",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Algorithm]]",
-      "resolved": "urn:visionflow:owl:class:algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimisation Algorithm]]",
-      "resolved": "urn:visionflow:owl:class:optimization-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graph Algorithms]]",
-      "resolved": "urn:visionflow:owl:class:graph-algorithms",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Learning Algorithm]]",
-      "resolved": "urn:visionflow:owl:class:learning-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Procedural Content Generation]]",
-      "resolved": "urn:visionflow:owl:class:procedural-content-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Planning]]",
-      "resolved": "urn:visionflow:owl:class:automated-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inference]]",
-      "resolved": "urn:visionflow:owl:class:inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bayesian Inference]]",
-      "resolved": "urn:visionflow:owl:class:bayesian-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning-discipline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimization Technique]]",
-      "resolved": "urn:visionflow:owl:class:optimization-technique",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Dynamic Programming]]",
-      "resolved": "urn:visionflow:owl:class:dynamic-programming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Monte Carlo Methods]]",
-      "resolved": "urn:visionflow:owl:class:monte-carlo-methods",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Evolutionary Algorithms]]",
-      "resolved": "urn:visionflow:owl:class:evolutionary-algorithms",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computational Complexity]]",
-      "resolved": "urn:visionflow:owl:class:computational-complexity-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Heuristic Methods]]",
-      "resolved": "urn:visionflow:owl:class:heuristic-methods",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gradient Descent]]",
-      "resolved": "urn:visionflow:owl:class:gradient-descent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Search Algorithm]]",
-      "resolved": "urn:visionflow:owl:class:search-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Structure]]",
-      "resolved": "urn:visionflow:owl:class:data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Technique]]",
-      "resolved": "urn:visionflow:owl:class:ai-technique",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Algorithmic Complexity]]",
-      "resolved": "urn:visionflow:owl:class:algorithmic-complexity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Game AI]]",
-      "resolved": "urn:visionflow:owl:class:game-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

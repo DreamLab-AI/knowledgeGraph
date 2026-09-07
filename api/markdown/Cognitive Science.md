@@ -8,51 +8,186 @@
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:psychology", "vc:label": "Psychology"},
-    {"@id": "urn:visionflow:linked:neuroscience", "vc:label": "Neuroscience"},
-    {"@id": "urn:visionflow:linked:linguistics", "vc:label": "Linguistics"},
-    {"@id": "urn:visionflow:linked:philosophy-of-mind", "vc:label": "Philosophy of Mind"},
-    {"@id": "urn:visionflow:linked:computer-science", "vc:label": "Computer Science"},
-    {"@id": "urn:visionflow:linked:anthropology", "vc:label": "Anthropology"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:human-computer-interaction", "vc:label": "Human Computer Interaction"},
-    {"@id": "urn:visionflow:linked:consciousness", "vc:label": "Consciousness"},
-    {"@id": "urn:visionflow:linked:embodied-cognition", "vc:label": "Embodied Cognition"},
-    {"@id": "urn:visionflow:linked:cognitive-architecture", "vc:label": "Cognitive Architecture"},
-    {"@id": "urn:visionflow:linked:computational-linguistics", "vc:label": "Computational Linguistics"},
-    {"@id": "urn:visionflow:linked:cognitive-psychology", "vc:label": "Cognitive Psychology"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:knowledge-graphs", "vc:label": "Knowledge Graphs"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:cognitive-ai", "vc:label": "Cognitive AI"},
-    {"@id": "urn:visionflow:linked:intelligent-tutoring-systems", "vc:label": "Intelligent Tutoring Systems"},
-    {"@id": "urn:visionflow:linked:neuromorphic-computing", "vc:label": "Neuromorphic Computing"},
-    {"@id": "urn:visionflow:linked:affective-computing", "vc:label": "Affective Computing"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:augmented-reality", "vc:label": "Augmented Reality"},
-    {"@id": "urn:visionflow:linked:user-experience-design", "vc:label": "User Experience Design"},
-    {"@id": "urn:visionflow:linked:computational-modelling", "vc:label": "Computational Modelling"},
-    {"@id": "urn:visionflow:linked:neuroimaging", "vc:label": "Neuroimaging"},
-    {"@id": "urn:visionflow:linked:behaviourism", "vc:label": "Behaviourism"},
-    {"@id": "urn:visionflow:linked:connectionism", "vc:label": "Connectionism"},
-    {"@id": "urn:visionflow:linked:situated-cognition", "vc:label": "Situated Cognition"},
-    {"@id": "urn:visionflow:linked:behavioural-economics", "vc:label": "Behavioural Economics"},
-    {"@id": "urn:visionflow:linked:cognitive-bias", "vc:label": "Cognitive Bias"},
-    {"@id": "urn:visionflow:linked:neurosymbolic-ai", "vc:label": "Neurosymbolic AI"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:cognitive-neuroscience", "vc:label": "Cognitive Neuroscience"},
-    {"@id": "urn:visionflow:linked:working-memory", "vc:label": "Working Memory"},
-    {"@id": "urn:visionflow:linked:representation-learning", "vc:label": "Representation Learning"},
-    {"@id": "urn:visionflow:linked:information-theory", "vc:label": "Information Theory"},
-    {"@id": "urn:visionflow:linked:probabilistic-reasoning", "vc:label": "Probabilistic Reasoning"}
+    {
+      "@id": "urn:visionflow:linked:psychology",
+      "vc:label": "Psychology"
+    },
+    {
+      "@id": "urn:visionflow:linked:neuroscience",
+      "vc:label": "Neuroscience"
+    },
+    {
+      "@id": "urn:visionflow:linked:linguistics",
+      "vc:label": "Linguistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:philosophy-of-mind",
+      "vc:label": "Philosophy of Mind"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-science",
+      "vc:label": "Computer Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:anthropology",
+      "vc:label": "Anthropology"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:consciousness",
+      "vc:label": "Consciousness"
+    },
+    {
+      "@id": "urn:visionflow:linked:embodied-cognition",
+      "vc:label": "Embodied Cognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-architecture",
+      "vc:label": "Cognitive Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-linguistics",
+      "vc:label": "Computational Linguistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-psychology",
+      "vc:label": "Cognitive Psychology"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graphs",
+      "vc:label": "Knowledge Graphs"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-ai",
+      "vc:label": "Cognitive AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-tutoring-systems",
+      "vc:label": "Intelligent Tutoring Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:neuromorphic-computing",
+      "vc:label": "Neuromorphic Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:affective-computing",
+      "vc:label": "Affective Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:augmented-reality",
+      "vc:label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience-design",
+      "vc:label": "User Experience Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-modelling",
+      "vc:label": "Computational Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:neuroimaging",
+      "vc:label": "Neuroimaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:behaviourism",
+      "vc:label": "Behaviourism"
+    },
+    {
+      "@id": "urn:visionflow:linked:connectionism",
+      "vc:label": "Connectionism"
+    },
+    {
+      "@id": "urn:visionflow:linked:situated-cognition",
+      "vc:label": "Situated Cognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:behavioural-economics",
+      "vc:label": "Behavioural Economics"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-bias",
+      "vc:label": "Cognitive Bias"
+    },
+    {
+      "@id": "urn:visionflow:linked:neurosymbolic-ai",
+      "vc:label": "Neurosymbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-neuroscience",
+      "vc:label": "Cognitive Neuroscience"
+    },
+    {
+      "@id": "urn:visionflow:linked:working-memory",
+      "vc:label": "Working Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:representation-learning",
+      "vc:label": "Representation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-reasoning",
+      "vc:label": "Probabilistic Reasoning"
+    }
   ]
 }
 ```
@@ -83,116 +218,151 @@
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
-      {"@id": "urn:ngm:class:computational-linguistics", "label": "Computational Linguistics"},
-      {"@id": "urn:ngm:class:cognitive-psychology", "label": "Cognitive Psychology"},
-      {"@id": "urn:ngm:class:cognitive-neuroscience", "label": "Cognitive Neuroscience"},
-      {"@id": "urn:ngm:class:working-memory", "label": "Working Memory"}
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:computational-linguistics",
+        "label": "Computational Linguistics"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-neuroscience",
+        "label": "Cognitive Neuroscience"
+      },
+      {
+        "@id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:intelligent-tutoring-systems", "label": "Intelligent Tutoring Systems"},
-      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neurosymbolic AI"},
-      {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring-systems",
+        "label": "Intelligent Tutoring Systems"
+      },
+      {
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neurosymbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neuroscience", "label": "Neuroscience"},
-      {"@id": "urn:ngm:class:psychology", "label": "Psychology"},
-      {"@id": "urn:ngm:class:computational-modelling", "label": "Computational Modelling"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "@id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      },
+      {
+        "@id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computational-modelling", "label": "Computational Modelling"},
-      {"@id": "urn:ngm:class:neuroimaging", "label": "Neuroimaging"},
-      {"@id": "urn:ngm:class:probabilistic-reasoning", "label": "Probabilistic Reasoning"}
+      {
+        "@id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:neuroimaging",
+        "label": "Neuroimaging"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:behaviourism", "label": "Behaviourism"},
-      {"@id": "urn:ngm:class:connectionism", "label": "Connectionism"}
+      {
+        "@id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "@id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:philosophy-of-mind", "label": "Philosophy of Mind"},
-      {"@id": "urn:ngm:class:embodied-cognition", "label": "Embodied Cognition"},
-      {"@id": "urn:ngm:class:situated-cognition", "label": "Situated Cognition"},
-      {"@id": "urn:ngm:class:consciousness", "label": "Consciousness"},
-      {"@id": "urn:ngm:class:behavioural-economics", "label": "Behavioural Economics"}
+      {
+        "@id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      },
+      {
+        "@id": "urn:ngm:class:situated-cognition",
+        "label": "Situated Cognition"
+      },
+      {
+        "@id": "urn:ngm:class:consciousness",
+        "label": "Consciousness"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cogsci", "label": "CogSci"},
-    {"@id": "urn:ngm:class:cognitive-studies", "label": "Cognitive Studies"}
+    {
+      "@id": "urn:ngm:class:cogsci",
+      "label": "CogSci"
+    },
+    {
+      "@id": "urn:ngm:class:cognitive-studies",
+      "label": "Cognitive Studies"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cognitive-science:2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:cognitive-science"},
-  "vc:resolutions": [
-    {"raw": "[[Psychology]]", "resolved": "urn:visionflow:linked:psychology", "kind": "ResolvedLink"},
-    {"raw": "[[Neuroscience]]", "resolved": "urn:visionflow:linked:neuroscience", "kind": "ResolvedLink"},
-    {"raw": "[[Linguistics]]", "resolved": "urn:visionflow:linked:linguistics", "kind": "ResolvedLink"},
-    {"raw": "[[Philosophy of Mind]]", "resolved": "urn:visionflow:linked:philosophy-of-mind", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Science]]", "resolved": "urn:visionflow:linked:computer-science", "kind": "ResolvedLink"},
-    {"raw": "[[Anthropology]]", "resolved": "urn:visionflow:linked:anthropology", "kind": "ResolvedLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Human Computer Interaction]]", "resolved": "urn:visionflow:linked:human-computer-interaction", "kind": "ResolvedLink"},
-    {"raw": "[[Consciousness]]", "resolved": "urn:visionflow:linked:consciousness", "kind": "ResolvedLink"},
-    {"raw": "[[Embodied Cognition]]", "resolved": "urn:visionflow:linked:embodied-cognition", "kind": "ResolvedLink"},
-    {"raw": "[[Cognitive Architecture]]", "resolved": "urn:visionflow:linked:cognitive-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Computational Linguistics]]", "resolved": "urn:visionflow:linked:computational-linguistics", "kind": "ResolvedLink"},
-    {"raw": "[[Cognitive Psychology]]", "resolved": "urn:visionflow:linked:cognitive-psychology", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Graphs]]", "resolved": "urn:visionflow:linked:knowledge-graphs", "kind": "ResolvedLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Cognitive AI]]", "resolved": "urn:visionflow:linked:cognitive-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Intelligent Tutoring Systems]]", "resolved": "urn:visionflow:linked:intelligent-tutoring-systems", "kind": "ResolvedLink"},
-    {"raw": "[[Neuromorphic Computing]]", "resolved": "urn:visionflow:linked:neuromorphic-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Affective Computing]]", "resolved": "urn:visionflow:linked:affective-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "ResolvedLink"},
-    {"raw": "[[Augmented Reality]]", "resolved": "urn:visionflow:linked:augmented-reality", "kind": "ResolvedLink"},
-    {"raw": "[[User Experience Design]]", "resolved": "urn:visionflow:linked:user-experience-design", "kind": "ResolvedLink"},
-    {"raw": "[[Computational Modelling]]", "resolved": "urn:visionflow:linked:computational-modelling", "kind": "ResolvedLink"},
-    {"raw": "[[Neuroimaging]]", "resolved": "urn:visionflow:linked:neuroimaging", "kind": "ResolvedLink"},
-    {"raw": "[[Behaviourism]]", "resolved": "urn:visionflow:linked:behaviourism", "kind": "ResolvedLink"},
-    {"raw": "[[Connectionism]]", "resolved": "urn:visionflow:linked:connectionism", "kind": "ResolvedLink"},
-    {"raw": "[[Situated Cognition]]", "resolved": "urn:visionflow:linked:situated-cognition", "kind": "ResolvedLink"},
-    {"raw": "[[Behavioural Economics]]", "resolved": "urn:visionflow:linked:behavioural-economics", "kind": "ResolvedLink"},
-    {"raw": "[[Cognitive Bias]]", "resolved": "urn:visionflow:linked:cognitive-bias", "kind": "ResolvedLink"},
-    {"raw": "[[Neurosymbolic AI]]", "resolved": "urn:visionflow:linked:neurosymbolic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Cognitive Neuroscience]]", "resolved": "urn:visionflow:linked:cognitive-neuroscience", "kind": "ResolvedLink"},
-    {"raw": "[[Working Memory]]", "resolved": "urn:visionflow:linked:working-memory", "kind": "ResolvedLink"},
-    {"raw": "[[Representation Learning]]", "resolved": "urn:visionflow:linked:representation-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Information Theory]]", "resolved": "urn:visionflow:linked:information-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Probabilistic Reasoning]]", "resolved": "urn:visionflow:linked:probabilistic-reasoning", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -493,11 +663,11 @@
 
   **Consciousness and the hard problem** (Chalmers, 1995): Even a complete functional and neural account of cognitive processes leaves open the question of why there is subjective experience — why it feels like something to perceive, remember, or think. Cognitive science can characterise the neural correlates of consciousness (NCC) and model the functional role of conscious access in information integration and broadcast (global workspace theory; integrated information theory, Tononi, 2004), but the explanatory gap between functional-neural accounts and phenomenal experience remains. This question has renewed urgency for AI: as [[Large Language Models]] and [[Cognitive AI]] systems exhibit increasingly sophisticated behaviour, the question of whether they have subjective experience — and the moral implications if they do — becomes a pressing ethical and scientific issue for cognitive science, [[Philosophy of Mind]], and AI governance. The EU AI Act and UK AI Safety Institute are monitoring this research area, though formal regulatory frameworks for AI sentience assessment do not yet exist as of 2026.
 
-  **Statistical learning versus structured prior knowledge**: The statistical learning programme demonstrated that powerful cognitive competences can emerge from exposure to distributional regularities without strong innate domain-specific knowledge. The nativist programme (Chomsky's generative grammar; Spelke's core knowledge systems) argues that rapid acquisition of complex structures (language syntax, intuitive physics, intuitive psychology) requires rich innate priors that no domain-general learning mechanism could acquire from the data available to children. The debate maps directly onto [[Machine Learning]] architecture debates: large [[Deep Learning]] models achieve strong performance with minimal architectural inductive biases, suggesting that data scale can substitute for innate structure; but their systematic failures on out-of-distribution generalisation, compositional tasks, and few-shot learning suggest that architectural priors encoding structural regularities may still be needed for human-level cognitive flexibility.
+  **Statistical learning versus structured prior knowledge**: The statistical learning programme demonstrated that powerful cognitive competences can emerge from exposure to distributional regularities without strong innate domain-specific knowledge. The nativist programme (Chomsky's generative grammar; Spelke's core knowledge systems) argues that rapid acquisition of complex structures (language syntax, intuitive physics, intuitive psychology) requires rich innate priors that no domain-general learning mechanism [private] acquire from the data available to children. The debate maps directly onto [[Machine Learning]] architecture debates: large [[Deep Learning]] models achieve strong performance with minimal architectural inductive biases, suggesting that data scale can substitute for innate structure; but their systematic failures on out-of-distribution generalisation, compositional tasks, and few-shot learning suggest that architectural priors encoding structural regularities may still be needed for human-level cognitive flexibility.
 
   ## Methodological Toolkit
 
-  Cognitive science deploys a distinctive multi-method empirical toolkit, integrating methods from its six constituent disciplines to triangulate on cognitive mechanisms that no single method could resolve.
+  Cognitive science deploys a distinctive multi-method empirical toolkit, integrating methods from its six constituent disciplines to triangulate on cognitive mechanisms that no single method [private] resolve.
 
   **Behavioural experiments** (reaction time, accuracy, error analysis): The gold standard method of [[Cognitive Psychology]], providing causal evidence about cognitive processes by controlled manipulation of stimulus properties and task demands. Chronometric methods (Donders, 1868; Sternberg, 1966) use additive factor logic to identify processing stages and their loci of effect. [[Signal Detection Theory]] (Green and Swets, 1966) separates perceptual sensitivity from response criterion, enabling theoretically interpretable measurement of perception and recognition memory independent of response bias. Priming paradigms (semantic, repetition, syntactic) reveal the structure of [[Pattern Recognition]] and long-term memory representations. These methods are directly replicable with AI systems, enabling direct human-AI behavioural comparison on the same stimuli, and [[Experimental Methods]] provide the controlled causal evidence base that grounds cognitive science's validity claims.
 

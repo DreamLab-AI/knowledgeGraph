@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Disparate Impact
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,24 +79,60 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"}
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:harmful-bias", "label": "Harmful Bias"},
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
-      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"},
-      {"@id": "urn:ngm:class:intersectional-fairness", "label": "Intersectional Fairness"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:harmful-bias",
+        "label": "Harmful Bias"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "@id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:intersectional-fairness",
+        "label": "Intersectional Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:group-vs-individual-fairness", "label": "Group vs Individual Fairness"},
-      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"}
+      {
+        "@id": "urn:ngm:class:group-vs-individual-fairness",
+        "label": "Group vs Individual Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      }
     ]
   },
   "provenance": {
@@ -111,62 +142,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:disparate-impact:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ff3aa95f9f11b059ed20fe461a99e8aceed24b4a504cb8449993a038515da340"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[EU Anti-Discrimination Directives]]",
-      "resolved": "urn:visionflow:linked:eu-anti-discrimination-directives",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UK Equality Act 2010]]",
-      "resolved": "urn:visionflow:linked:uk-equality-act-2010",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[US EEOC Uniform Guidelines]]",
-      "resolved": "urn:visionflow:linked:us-eeoc-uniform-guidelines",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Disparate Impact is a legal doctrine and form of indirect discrimination that occurs when facially neutral policies, practices, or algorithmic systems disproportionately affect protected groups, regardless of intent to discriminate. Originating from US employment law (EEOC Uniform Guidelines 1978) and extended to UK and EU anti-discrimination frameworks, disparate impact is measured by comparing selection rates, approval rates, or outcome rates between protected and unprotected groups. The "80 percent rule" (four-fifths rule) establishes that disparate impact exists when the selection rate for a protected group is less than 80 percent of the rate for the highest-performing group, calculated as a disparate impact ratio. Unlike disparate treatment (intentional direct discrimination), disparate impact focuses on discriminatory outcomes rather than discriminatory intent. Legal defenses include business necessity (US) - demonstrating the practice is job-related and consistent with business necessity, and proportionate means (UK/EU) - showing the practice is a proportionate means of achieving a legitimate aim. In AI systems, disparate impact analysis requires statistical testing of algorithmic decisions across demographic groups, documentation of less discriminatory alternatives if available, and compliance with sector-specific regulations in employment, lending, insurance, and housing domains.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Aztec Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aztec-network:5820adb67e54",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e7d4e3980ae07e03a52377afabd5b6f3e3f58a7331f9141b2c80c279032bfc74"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Aztec Protocol]]",
-      "resolved": "urn:visionflow:linked:aztec-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 2 Networks]]",
-      "resolved": "urn:visionflow:linked:layer-2-networks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Aztec]]",
-      "resolved": "urn:visionflow:linked:aztec",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The privacy-preserving Layer 2 network operated under the Aztec protocol, providing confidential transactions and private smart contracts settled on Ethereum.

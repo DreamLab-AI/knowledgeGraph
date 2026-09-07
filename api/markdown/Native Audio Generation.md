@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Native Audio Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "native-audio-generation",
   "title": "Native Audio Generation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["ByteDance", "Seedance 2.0", "Video Generation Model"],
+  "vc:outboundWikilinks": [
+    "ByteDance",
+    "Seedance 2.0",
+    "Video Generation Model"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:multimodal-ai",
+      "label": "Multimodal AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}, {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

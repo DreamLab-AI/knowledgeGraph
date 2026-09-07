@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI App Store
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-app-store",
   "title": "AI App Store",
   "vc:public": true,
-  "vc:outboundWikilinks": ["App Store", "ChatGPT", "Third-Party Integration"],
+  "vc:outboundWikilinks": [
+    "App Store",
+    "ChatGPT",
+    "Third-Party Integration"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}, {"@id": "urn:ngm:class:chatgpt", "label": "ChatGPT"}, {"@id": "urn:ngm:class:third-party-integration", "label": "Third-Party Integration"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:chatgpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-integration",
+        "label": "Third-Party Integration"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Distributed Hash Table
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

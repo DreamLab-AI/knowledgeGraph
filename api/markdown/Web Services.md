@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Web Services
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,27 +20,62 @@ public: true
   "definition": "Web services are software components that expose machine-to-machine functionality over a network using standardised protocols and data formats. They enable interoperable application integration across heterogeneous platforms by defining contracts (interface descriptions), message envelopes, and transport bindings independent of the implementing technology. Web services encompass both the older SOAP/WSDL stack and lightweight RESTful styles, and underpin service-oriented and microservice architectures.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:soap", "label": "SOAP"},
-      {"@id": "urn:ngm:class:web-services-description-language", "label": "WSDL"}
+      {
+        "@id": "urn:ngm:class:soap",
+        "label": "SOAP"
+      },
+      {
+        "@id": "urn:ngm:class:web-services-description-language",
+        "label": "WSDL"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:http", "label": "HTTP"},
-      {"@id": "urn:ngm:class:xml", "label": "XML"}
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:api", "label": "API"},
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service-Oriented Architecture"}
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rest", "label": "REST"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:api-specification", "label": "API Specification"}
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:api-specification",
+        "label": "API Specification"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ]
   },
   "quality": 0.62,

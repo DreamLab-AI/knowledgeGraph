@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Integrated Gradients
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Integrated Gradients",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:feature-attribution", "vc:label": "Feature Attribution"},
-    {"@id": "urn:visionflow:linked:lime", "vc:label": "LIME"},
-    {"@id": "urn:visionflow:linked:shap", "vc:label": "SHAP"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"}
+    {
+      "@id": "urn:visionflow:linked:feature-attribution",
+      "vc:label": "Feature Attribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:lime",
+      "vc:label": "LIME"
+    },
+    {
+      "@id": "urn:visionflow:linked:shap",
+      "vc:label": "SHAP"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,18 +50,36 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gradient", "label": "Gradient"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"}
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:lime", "label": "LIME"},
-      {"@id": "urn:ngm:class:shap", "label": "SHAP"}
+      {
+        "@id": "urn:ngm:class:lime",
+        "label": "LIME"
+      },
+      {
+        "@id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      }
     ]
   },
   "quality": 0.8,

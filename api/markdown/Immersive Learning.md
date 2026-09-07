@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersive Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -145,42 +140,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:immersive-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:576c7577cb5d1a6216a33a9e3680c04e40433e22001e72d119a29e37776461e9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Experiential Education]]",
-      "resolved": "urn:visionflow:linked:experiential-education",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Educational Technology]]",
-      "resolved": "urn:visionflow:owl:class:educational-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Educational approaches utilising VR, AR, and metaverse technologies to create engaging, interactive learning environments that enable experiential skill development, realistic scenario simulation, and enhanced knowledge retention through presence-based educational experiences.

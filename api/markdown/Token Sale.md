@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Token Sale
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,10 +20,18 @@ public: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bc-token-and-asset", "label": "Token and Asset"}
+    {
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ]
   },
   "quality": 0.7
 }

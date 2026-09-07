@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cryptographic Keys
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -227,67 +222,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cryptographic-keys:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:af3eafe16f32cfabaf5a871aef9b7d3c6415310cdd9b9e4a18596fd3c054c5d0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asymmetric Encryption]]",
-      "resolved": "urn:visionflow:owl:class:asymmetric-encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Key Management]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-key-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:owl:class:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Key Derivation Function]]",
-      "resolved": "urn:visionflow:owl:class:key-derivation-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Random Number Generation]]",
-      "resolved": "urn:visionflow:owl:class:random-number-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Symmetric Encryption]]",
-      "resolved": "urn:visionflow:owl:class:symmetric-encryption",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Strings of data used in cryptographic algorithms to encrypt, decrypt, sign, or verify data, serving as the secret parameters that transform plaintext to ciphertext and vice versa. Keys can be symmetric (single shared key) or asymmetric (public-private key pairs), with security depending on key length, randomness, and proper management.

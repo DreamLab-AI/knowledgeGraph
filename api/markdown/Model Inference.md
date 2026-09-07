@@ -1,36 +1,116 @@
----
-public: true
----
-
-# Model Inference
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:model-inference", "@type":"Page", "title":"Model Inference", "vc:slug":"model-inference", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:model-inference",
+  "@type": "Page",
+  "title": "Model Inference",
+  "vc:slug": "model-inference",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:model-inference",
-  "@type":"Class",
-  "label":"Model Inference",
-  "definition":"Model inference is the operational phase of a machine learning system in which a trained model is applied to new, previously unseen inputs to produce predictions, classifications, or generated outputs. Unlike training, inference involves only a forward pass through the model and is optimised for low latency, high throughput, and efficient resource use. It is the stage at which a model delivers value in production, serving requests in real time, in batches, or at the edge.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:model-training","label":"Model Training"},{"@id":"urn:ngm:class:inference-engine","label":"Inference Engine"}],
-    "uses":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"},{"@id":"urn:ngm:class:gpu-acceleration","label":"GPU Acceleration"}],
-    "enables":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"},{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"}],
-    "dependsOn":[{"@id":"urn:ngm:class:model-deployment","label":"Model Deployment"}],
-    "supports":[{"@id":"urn:ngm:class:model-monitoring","label":"Model Monitoring"},{"@id":"urn:ngm:class:edge-computing","label":"Edge Computing"}],
-    "partOf":[{"@id":"urn:ngm:class:mlops","label":"MLOps"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:model-training","label":"Model Training"}],
-    "relatedTo":[{"@id":"urn:ngm:class:latency","label":"Latency"},{"@id":"urn:ngm:class:batch-processing","label":"Batch Processing"},{"@id":"urn:ngm:class:model-optimization","label":"Model Optimization"},{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-inference",
+  "@type": "Class",
+  "label": "Model Inference",
+  "definition": "Model inference is the operational phase of a machine learning system in which a trained model is applied to new, previously unseen inputs to produce predictions, classifications, or generated outputs. Unlike training, inference involves only a forward pass through the model and is optimised for low latency, high throughput, and efficient resource use. It is the stage at which a model delivers value in production, serving requests in real time, in batches, or at the edge.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "@id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safe
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:safe:8b3369944dd2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:841b88b8da0ef1191a57529ab116d30c86d62242d25e9fcf6559e27c4e750946"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Account Abstraction]]",
-      "resolved": "urn:visionflow:linked:account-abstraction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gnosis Safe]]",
-      "resolved": "urn:visionflow:linked:gnosis-safe",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Wallet]]",
-      "resolved": "urn:visionflow:linked:wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Signature Wallet]]",
-      "resolved": "urn:visionflow:linked:multi-signature-wallet",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A smart contract wallet platform on Ethereum and compatible chains, formerly Gnosis Safe, that provides multi-signature account management and programmable transaction approval.

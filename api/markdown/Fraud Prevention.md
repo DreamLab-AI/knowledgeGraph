@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fraud Prevention
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Fraud prevention is the set of controls, processes, and technologies designed to detect and stop deceptive activity intended to obtain money, data, or access illegitimately. In digital identity and finance it combines authentication, behavioural analytics, anomaly detection, and proof-of-personhood mechanisms. Effective fraud prevention reduces financial loss and protects the integrity of identity and payment systems.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:humanity-attestation", "label": "Humanity Attestation"}, {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:humanity-attestation",
+        "label": "Humanity Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ]
   },
   "quality": 0.72
 }

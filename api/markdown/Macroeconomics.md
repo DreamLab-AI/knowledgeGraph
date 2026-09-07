@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Macroeconomics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,51 +165,11 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:macroeconomics:8ce1b739de4c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c03586b1229f07c1a0b25a412e15f5cf988e85702dd2b59e6fc2de3b095395dc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Inflation Hedge]]",
-      "resolved": "urn:visionflow:linked:inflation-hedge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inflation]]",
-      "resolved": "urn:visionflow:linked:inflation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Monetary Policy]]",
-      "resolved": "urn:visionflow:linked:monetary-policy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Economics]]",
-      "resolved": "urn:visionflow:linked:economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Macroeconomics is the branch of [[Economics]] that studies the behaviour and performance of an economy as a whole rather than the decisions of individual agents or markets. It examines aggregate phenomena including [[Gross Domestic Product]], [[Inflation]], [[Unemployment]], [[Business Cycle]] fluctuations, and long-run [[Economic Growth]]. The field investigates how [[Monetary Policy]] set by central banks and [[Fiscal Policy]] enacted by governments interact with private-sector behaviour to determine economy-wide outcomes. Macroeconomic models range from simple Keynesian income-expenditure frameworks to modern Dynamic Stochastic General Equilibrium (DSGE) models used by central banks worldwide.
 
 - ### Overview
-  - Macroeconomics emerged as a distinct discipline following John Maynard Keynes's 1936 *General Theory of Employment, Interest and Money*, which argued that aggregate demand could be deficient and that government intervention was sometimes necessary to stabilise output and employment.
+  - Macroeconomics emerged as a distinct discipline following John Maynard Keynes's 1936 *General Theory of Employment, Interest and Money*, which argued that aggregate demand [private] be deficient and that government intervention was sometimes necessary to stabilise output and employment.
   - Prior to Keynes, classical economists assumed that markets clear automatically and that the economy tends towards full employment in the long run — a position associated with Say's Law.
   - The post-war neoclassical synthesis integrated Keynesian short-run analysis with classical long-run equilibrium, producing the IS-LM framework still taught in undergraduate programmes.
   - The 1970s stagflation crisis challenged Keynesian orthodoxy, giving rise to monetarism (Milton Friedman), rational expectations (Robert Lucas), and Real Business Cycle theory.

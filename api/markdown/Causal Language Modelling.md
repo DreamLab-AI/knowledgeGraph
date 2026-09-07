@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Causal Language Modelling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Causal language modelling is a self-supervised pre-training objective in which a neural network learns to predict the next token in a sequence given all preceding tokens, modelling the joint probability of text as an autoregressive product of conditional distributions. The term 'causal' refers to the unidirectional (left-to-right) attention mask that enforces the temporal ordering of tokens, preventing the model from attending to future context. This objective is the foundation of decoder-only transformer architectures such as GPT, LLaMA, and Claude, which power the majority of state-of-the-art large language models.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-model-training", "label": "Large Language Model Training"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-model-training",
+      "label": "Large Language Model Training"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:causal-attention", "label": "Causal Attention"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:causal-attention",
+        "label": "Causal Attention"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"}
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
     ]
   },
   "quality": 0.8
@@ -157,9 +178,9 @@ public: true
 
   ## About
 
-  Language modelling as a statistical task has roots in the 1940s information-theoretic work of Claude Shannon, who quantified the redundancy of English and estimated its entropy per character. The task of assigning probabilities to sequences of words was formalised with n-gram models and smoothing techniques throughout the 1980s and 1990s, with large n-gram language models becoming standard components in speech recognition and machine translation pipelines. The shift to neural language models began with Yoshua Bengio and colleagues (2003), who trained a feedforward neural network to map fixed-width context windows of token embeddings to a probability distribution over the next word, demonstrating that distributed representations could generalise far better than n-gram back-off methods on out-of-vocabulary contexts.
+  Language modelling as a statistical task has roots in the 1940s information-theoretic work of Claude Shannon, who quantified the redundancy of English and estimated its entropy per character. The task of assigning probabilities to sequences of words was formalised with n-gram models and smoothing techniques throughout the 1980s and 1990s, with large n-gram language models becoming standard components in speech recognition and machine translation pipelines. The shift to neural language models began with Yoshua Bengio and colleagues (2003), who trained a feedforward neural network to map fixed-width context windows of token embeddings to a probability distribution over the next word, demonstrating that distributed representations [private] generalise far better than n-gram back-off methods on out-of-vocabulary contexts.
 
-  The introduction of the [[Transformer Architecture]] by Vaswani et al. (2017) — the "Attention Is All You Need" paper — removed the context-window limitation entirely. By using [[Self Attention|self-attention]] rather than convolutions or recurrence, transformers could in principle attend to all prior tokens simultaneously. The causal variant applies a triangular mask so that token i attends only to tokens 0 through i, preserving the autoregressive property while retaining fully parallel training via teacher forcing. OpenAI's GPT-1 (Radford et al., 2018) was the first large demonstration that a decoder-only transformer pre-trained with the causal language modelling objective on a large text corpus could be fine-tuned to achieve competitive performance across diverse NLP benchmarks with minimal task-specific modifications. GPT-2 (2019) and GPT-3 (2020) showed that scaling the same architecture and objective — without fundamental changes — produced emergent capabilities including few-shot learning, in-context arithmetic, and rudimentary code generation, establishing the scaling law paradigm (Kaplan et al., 2020).
+  The introduction of the [[Transformer Architecture]] by Vaswani et al. (2017) — the "Attention Is All You Need" paper — removed the context-window limitation entirely. By using [[Self Attention|self-attention]] rather than convolutions or recurrence, transformers [private] in principle attend to all prior tokens simultaneously. The causal variant applies a triangular mask so that token i attends only to tokens 0 through i, preserving the autoregressive property while retaining fully parallel training via teacher forcing. OpenAI's GPT-1 (Radford et al., 2018) was the first large demonstration that a decoder-only transformer pre-trained with the causal language modelling objective on a large text corpus [private] be fine-tuned to achieve competitive performance across diverse NLP benchmarks with minimal task-specific modifications. GPT-2 (2019) and GPT-3 (2020) showed that scaling the same architecture and objective — without fundamental changes — produced emergent capabilities including few-shot learning, in-context arithmetic, and rudimentary code generation, establishing the scaling law paradigm (Kaplan et al., 2020).
 
   Today, causal language modelling is the dominant pre-training objective for every major frontier model family: OpenAI's GPT-4o and o3 series, Google DeepMind's Gemini family, Meta's LLaMA 3, Anthropic's Claude series, Mistral AI's Mistral and Mixtral, and xAI's Grok — all use decoder-only transformers trained on the next-token prediction objective, subsequently aligned via instruction tuning and reinforcement learning from human feedback.
 
@@ -347,7 +368,7 @@ public: true
 
   **Prefix Language Modelling** — used by UniLM, ERNIE 3.0, and some T5 variants — allows the model to apply bidirectional attention over a "prefix" portion of the input and causal attention over the "suffix" (output) portion. This combines the strong comprehension of bidirectional attention with the generation capability of CLM but requires specifying the prefix-suffix boundary during training and inference, limiting flexibility.
 
-  **Diffusion Language Models** (LLaDA, MDLM, Block Causal Diffusion, 2025) represent the most credible emerging alternative to CLM. Unlike CLM's left-to-right sequential generation, diffusion models generate text by iteratively denoising a fully masked sequence, allowing non-autoregressive or semi-autoregressive generation. GuideLabsAI's block causal diffusion model (2025) combines causal temporal structure with diffusion-style within-block generation, and LLaDA (Nie et al., 2025) demonstrated that a masked diffusion LM trained from scratch could match state-of-the-art CLM models on several benchmarks. However, as of mid-2026, no diffusion language model has matched frontier CLM models at comparable scale and compute, and the industry consensus remains that CLM is the most compute-efficient path to general language capabilities.
+  **Diffusion Language Models** (LLaDA, MDLM, Block Causal Diffusion, 2025) represent the most credible emerging alternative to CLM. Unlike CLM's left-to-right sequential generation, diffusion models generate text by iteratively denoising a fully masked sequence, allowing non-autoregressive or semi-autoregressive generation. GuideLabsAI's block causal diffusion model (2025) combines causal temporal structure with diffusion-style within-block generation, and LLaDA (Nie et al., 2025) demonstrated that a masked diffusion LM trained from scratch [private] match state-of-the-art CLM models on several benchmarks. However, as of mid-2026, no diffusion language model has matched frontier CLM models at comparable scale and compute, and the industry consensus remains that CLM is the most compute-efficient path to general language capabilities.
 
   **State Space Models (SSMs)** — Mamba (Gu & Dao, 2023), Mamba-2, RWKV, RetNet — offer recurrent formulations with O(n) inference complexity compared to O(n²) for full attention. SSMs can be trained in parallel using convolutional formulations but generate tokens sequentially with a fixed-size recurrent state. Hybrid architectures (Jamba, Zamba) interleave SSM and attention layers, preserving CLM as the training objective while improving inference efficiency. No pure SSM has matched transformer CLM models at frontier scale as of 2026.
 

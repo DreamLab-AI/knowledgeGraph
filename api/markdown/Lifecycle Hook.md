@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lifecycle Hook
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Lifecycle Hook",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:design-pattern", "vc:label": "DesignPattern" },
-    { "@id": "urn:visionflow:linked:webhook", "vc:label": "Webhook" },
-    { "@id": "urn:visionflow:linked:middleware", "vc:label": "Middleware" },
-    { "@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "AgenticWorkflow" }
+    {
+      "@id": "urn:visionflow:linked:design-pattern",
+      "vc:label": "DesignPattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:webhook",
+      "vc:label": "Webhook"
+    },
+    {
+      "@id": "urn:visionflow:linked:middleware",
+      "vc:label": "Middleware"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "AgenticWorkflow"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,17 +44,32 @@ public: true
   "definition": "An extension point exposed at a defined moment in a system's execution lifecycle at which user-supplied code is invoked to observe or modify behaviour without altering the host itself. In agent runtimes, hooks fire before and after events such as a tool call, a model request, a task start, or a session end, and the registered handler can log, validate, transform inputs and outputs, inject context, or veto the action, making hooks the primary mechanism for deterministic, policy-driven customisation of an otherwise opaque agent loop.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": { "@id": "urn:ngm:class:design-pattern", "label": "Design Pattern" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:design-pattern",
+    "label": "Design Pattern"
+  },
   "relations": {
     "uses": [
-      { "@id": "urn:ngm:class:middleware", "label": "Middleware" }
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow" }
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:webhook", "label": "Webhook" },
-      { "@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture" }
+      {
+        "@id": "urn:ngm:class:webhook",
+        "label": "Webhook"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ]
   },
   "quality": 0.75,

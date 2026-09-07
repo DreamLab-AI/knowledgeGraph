@@ -1,9 +1,3 @@
----
-public: true
----
-
-# IoT Device
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

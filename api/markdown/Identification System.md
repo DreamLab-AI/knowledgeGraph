@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Identification System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,29 +55,68 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:biometric-binding-mechanism", "label": "Biometric Binding Mechanism"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-binding-mechanism",
+        "label": "Biometric Binding Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control-system", "label": "Access Control System"},
-      {"@id": "urn:ngm:class:identity-systems", "label": "Identity Systems"}
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:identity-systems",
+        "label": "Identity Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:identity-management-system", "label": "Identity Management System"},
-      {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+      {
+        "@id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "provenance": {
@@ -92,37 +126,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:identification-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:96abb8827388a40698e87d6521d78fce8bed352daca09986a93db96933bc34db"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System]]",
-      "resolved": "urn:visionflow:owl:class:system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   An Identification System is a system that determines or confirms the identity of an entity—person, device, organisation, or digital asset—by collecting, processing, and evaluating identity evidence against registered credentials or biometric templates. In AI contexts, identification systems increasingly use machine learning models for biometric recognition, document verification, and behavioural profiling, raising significant questions about accuracy, fairness, and privacy.

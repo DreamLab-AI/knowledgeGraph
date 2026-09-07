@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Center Sustainability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "data-center-sustainability",
   "title": "Data Center Sustainability",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Closed-Loop Cooling", "Energy Cost Allocation"],
+  "vc:outboundWikilinks": [
+    "Closed-Loop Cooling",
+    "Energy Cost Allocation"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}, {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}, {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

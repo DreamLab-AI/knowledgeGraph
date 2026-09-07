@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,22 +34,58 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:cobot-safety-levels", "label": "Cobot Safety Levels"},
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
-      {"@id": "urn:ngm:class:rb-0090-emergency-stop", "label": "rb 0090 emergency stop"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0090-emergency-stop",
+        "label": "rb 0090 emergency stop"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+      {
+        "@id": "urn:ngm:class:robo-robot-type",
+        "label": "Robot Type"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -61,3 +93,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

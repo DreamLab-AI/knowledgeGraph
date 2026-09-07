@@ -1,35 +1,106 @@
----
-public: true
----
-
-# Academy Software Foundation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:academy-software-foundation", "@type":"Page", "title":"Academy Software Foundation", "vc:slug":"academy-software-foundation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:academy-software-foundation",
+  "@type": "Page",
+  "title": "Academy Software Foundation",
+  "vc:slug": "academy-software-foundation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:academy-software-foundation",
-  "@type":"Class",
-  "label":"Academy Software Foundation",
-  "definition":"The Academy Software Foundation (ASWF) is a neutral, vendor-independent organisation, hosted under the Linux Foundation and founded with the Academy of Motion Picture Arts and Sciences, that develops and stewards open-source software for the motion picture and broader media industries. It provides shared governance, infrastructure and funding for foundational projects in visual effects, animation and digital content creation, such as OpenColorIO, OpenEXR, OpenVDB, OpenTimelineIO and MaterialX. Its goal is sustainable, interoperable open-source tooling across the production pipeline.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:standards-organization","label":"Standards Organisation"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:linux-foundation","label":"Linux Foundation"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "hasPart":[{"@id":"urn:ngm:class:open-source-software","label":"Open Source Software"}],
-    "supports":[{"@id":"urn:ngm:class:visual-effects","label":"Visual Effects"},{"@id":"urn:ngm:class:digital-content-creation","label":"Digital Content Creation"},{"@id":"urn:ngm:class:animation","label":"Animation"}],
-    "enables":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"},{"@id":"urn:ngm:class:asset-pipeline","label":"Asset Pipeline"}],
-    "uses":[{"@id":"urn:ngm:class:open-source","label":"Open Source"},{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "relatedTo":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"},{"@id":"urn:ngm:class:film-production","label":"Film Production"},{"@id":"urn:ngm:class:usd","label":"USD"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:academy-software-foundation",
+  "@type": "Class",
+  "label": "Academy Software Foundation",
+  "definition": "The Academy Software Foundation (ASWF) is a neutral, vendor-independent organisation, hosted under the Linux Foundation and founded with the Academy of Motion Picture Arts and Sciences, that develops and stewards open-source software for the motion picture and broader media industries. It provides shared governance, infrastructure and funding for foundational projects in visual effects, animation and digital content creation, such as OpenColorIO, OpenEXR, OpenVDB, OpenTimelineIO and MaterialX. Its goal is sustainable, interoperable open-source tooling across the production pipeline.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-organization",
+      "label": "Standards Organisation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "@id": "urn:ngm:class:usd",
+        "label": "USD"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Personal Agent Runtimes
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Personal Agent Runtimes",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
-    {"@id": "urn:visionflow:linked:agent-memory-layers", "vc:label": "Agent Memory Layers"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks"},
-    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
-    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
-    {"@id": "urn:visionflow:linked:agent-development-sdks", "vc:label": "Agent Development SDKs"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:vector-database", "vc:label": "Vector Database"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:local-language-model", "vc:label": "Local Language Model"},
-    {"@id": "urn:visionflow:linked:agent-event-stream", "vc:label": "Agent Event Stream"},
-    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
-    {"@id": "urn:visionflow:linked:ai-agent-system", "vc:label": "AI Agent System"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:autonomous-operation", "vc:label": "Autonomous Operation"},
-    {"@id": "urn:visionflow:linked:browser-automation", "vc:label": "Browser Automation"},
-    {"@id": "urn:visionflow:linked:code-execution", "vc:label": "Code Execution"},
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:agent-identity", "vc:label": "Agent Identity"},
-    {"@id": "urn:visionflow:linked:knowledge-base", "vc:label": "Knowledge Base"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:docker-container", "vc:label": "Docker Container"},
-    {"@id": "urn:visionflow:linked:privacy-preserving-ai", "vc:label": "Privacy-Preserving AI"},
-    {"@id": "urn:visionflow:linked:terminal-coding-agents", "vc:label": "Terminal Coding Agents"},
-    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:progressive-disclosure-harnesses", "vc:label": "Progressive Disclosure Harnesses"},
-    {"@id": "urn:visionflow:linked:ai-infrastructure", "vc:label": "AI Infrastructure"},
-    {"@id": "urn:visionflow:linked:event-loop", "vc:label": "Event Loop"},
-    {"@id": "urn:visionflow:linked:self-improvement", "vc:label": "Self-Improvement"},
-    {"@id": "urn:visionflow:linked:permission-governance", "vc:label": "Permission Governance"},
-    {"@id": "urn:visionflow:linked:multi-agent-coordination", "vc:label": "Multi-Agent Coordination"},
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:llm-inference", "vc:label": "LLM Inference"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"},
-    {"@id": "urn:visionflow:linked:agent-layer", "vc:label": "AgentLayer"}
+    {
+      "@id": "urn:visionflow:linked:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory-layers",
+      "vc:label": "Agent Memory Layers"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks",
+      "vc:label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-development-sdks",
+      "vc:label": "Agent Development SDKs"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:local-language-model",
+      "vc:label": "Local Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-event-stream",
+      "vc:label": "Agent Event Stream"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-operation",
+      "vc:label": "Autonomous Operation"
+    },
+    {
+      "@id": "urn:visionflow:linked:browser-automation",
+      "vc:label": "Browser Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-execution",
+      "vc:label": "Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-identity",
+      "vc:label": "Agent Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:docker-container",
+      "vc:label": "Docker Container"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy-preserving-ai",
+      "vc:label": "Privacy-Preserving AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:terminal-coding-agents",
+      "vc:label": "Terminal Coding Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-evaluation-benchmarks",
+      "vc:label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:progressive-disclosure-harnesses",
+      "vc:label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-infrastructure",
+      "vc:label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-loop",
+      "vc:label": "Event Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-improvement",
+      "vc:label": "Self-Improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:permission-governance",
+      "vc:label": "Permission Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-coordination",
+      "vc:label": "Multi-Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-inference",
+      "vc:label": "LLM Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-layer",
+      "vc:label": "AgentLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -67,97 +182,90 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:agent-harness", "label": "Agent Harness"}
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:agent-memory-layers", "label": "Agent Memory Layers"},
-      {"@id": "urn:ngm:class:event-loop", "label": "Event Loop"},
-      {"@id": "urn:ngm:class:permission-governance", "label": "Permission Governance"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:agent-identity", "label": "Agent Identity"}
+      {
+        "@id": "urn:ngm:class:agent-memory-layers",
+        "label": "Agent Memory Layers"
+      },
+      {
+        "@id": "urn:ngm:class:event-loop",
+        "label": "Event Loop"
+      },
+      {
+        "@id": "urn:ngm:class:permission-governance",
+        "label": "Permission Governance"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:agent-execution-sandboxes", "label": "Agent Execution Sandboxes"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-operation", "label": "Autonomous Operation"},
-      {"@id": "urn:ngm:class:self-improvement", "label": "Self-Improvement"},
-      {"@id": "urn:ngm:class:privacy-preserving-ai", "label": "Privacy-Preserving AI"}
+      {
+        "@id": "urn:ngm:class:autonomous-operation",
+        "label": "Autonomous Operation"
+      },
+      {
+        "@id": "urn:ngm:class:self-improvement",
+        "label": "Self-Improvement"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-ai",
+        "label": "Privacy-Preserving AI"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent-memory-layers", "label": "Agent Memory Layers"},
-      {"@id": "urn:ngm:class:multi-agent-orchestration-frameworks", "label": "Multi-Agent Orchestration Frameworks"}
+      {
+        "@id": "urn:ngm:class:agent-memory-layers",
+        "label": "Agent Memory Layers"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      }
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "OntologyEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:personal-agent-runtimes:a1b2c3d4e5f6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:personal-agent-runtimes"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Agent Harness]]", "resolved": "urn:visionflow:linked:agent-harness", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Memory Layers]]", "resolved": "urn:visionflow:linked:agent-memory-layers", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Agent Orchestration Frameworks]]", "resolved": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "kind": "ResolvedLink"},
-    {"raw": "[[Internal AI Harness]]", "resolved": "urn:visionflow:linked:internal-ai-harness", "kind": "ResolvedLink"},
-    {"raw": "[[External AI Harness]]", "resolved": "urn:visionflow:linked:external-ai-harness", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Development SDKs]]", "resolved": "urn:visionflow:linked:agent-development-sdks", "kind": "ResolvedLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "ResolvedLink"},
-    {"raw": "[[Tool Use]]", "resolved": "urn:visionflow:linked:tool-use", "kind": "ResolvedLink"},
-    {"raw": "[[Vector Database]]", "resolved": "urn:visionflow:linked:vector-database", "kind": "StubLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Local Language Model]]", "resolved": "urn:visionflow:linked:local-language-model", "kind": "StubLink"},
-    {"raw": "[[Agent Event Stream]]", "resolved": "urn:visionflow:linked:agent-event-stream", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Execution Sandboxes]]", "resolved": "urn:visionflow:linked:agent-execution-sandboxes", "kind": "ResolvedLink"},
-    {"raw": "[[AI Agent System]]", "resolved": "urn:visionflow:linked:ai-agent-system", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[Autonomous Operation]]", "resolved": "urn:visionflow:linked:autonomous-operation", "kind": "StubLink"},
-    {"raw": "[[Browser Automation]]", "resolved": "urn:visionflow:linked:browser-automation", "kind": "StubLink"},
-    {"raw": "[[Code Execution]]", "resolved": "urn:visionflow:linked:code-execution", "kind": "StubLink"},
-    {"raw": "[[Agent Orchestrator]]", "resolved": "urn:visionflow:linked:agent-orchestrator", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Identity]]", "resolved": "urn:visionflow:linked:agent-identity", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Base]]", "resolved": "urn:visionflow:linked:knowledge-base", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Docker Container]]", "resolved": "urn:visionflow:linked:docker-container", "kind": "StubLink"},
-    {"raw": "[[Privacy-Preserving AI]]", "resolved": "urn:visionflow:linked:privacy-preserving-ai", "kind": "StubLink"},
-    {"raw": "[[Terminal Coding Agents]]", "resolved": "urn:visionflow:linked:terminal-coding-agents", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Evaluation Benchmarks]]", "resolved": "urn:visionflow:linked:agent-evaluation-benchmarks", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "ResolvedLink"},
-    {"raw": "[[Progressive Disclosure Harnesses]]", "resolved": "urn:visionflow:linked:progressive-disclosure-harnesses", "kind": "StubLink"},
-    {"raw": "[[AI Infrastructure]]", "resolved": "urn:visionflow:linked:ai-infrastructure", "kind": "StubLink"},
-    {"raw": "[[Event Loop]]", "resolved": "urn:visionflow:linked:event-loop", "kind": "StubLink"},
-    {"raw": "[[Self-Improvement]]", "resolved": "urn:visionflow:linked:self-improvement", "kind": "StubLink"},
-    {"raw": "[[Permission Governance]]", "resolved": "urn:visionflow:linked:permission-governance", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent Coordination]]", "resolved": "urn:visionflow:linked:multi-agent-coordination", "kind": "StubLink"},
-    {"raw": "[[Agent Runtime]]", "resolved": "urn:visionflow:linked:agent-runtime", "kind": "ResolvedLink"},
-    {"raw": "[[LLM Inference]]", "resolved": "urn:visionflow:linked:llm-inference", "kind": "StubLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:linked:ai-grounded-domain", "kind": "ResolvedLink"},
-    {"raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:linked:computation-and-intelligence-domain", "kind": "ResolvedLink"},
-    {"raw": "[[AgentLayer]]", "resolved": "urn:visionflow:linked:agent-layer", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -314,7 +422,7 @@ public: true
 
   The theoretical foundations of Personal Agent Runtimes draw on four decades of multi-agent systems research. Wooldridge and Jennings' 1995 paper "Intelligent Agents: Theory and Practice" in The Knowledge Engineering Review established the BDI (Belief-Desire-Intention) agent architecture that underlies much of modern agent runtime design: beliefs correspond to the runtime's [[Knowledge Base]] and [[Retrieval-Augmented Generation]] layer; desires correspond to persistent goals; intentions correspond to the active plan being executed by the [[Event Loop]]. The reactive-deliberative hybrid architecture (Maes, 1991; Brooks, 1986) informs modern runtimes that must balance reactive tool-call response with deliberative multi-step planning.
 
-  The emergence of LLM-grounded agents was theoretically anticipated in the ReAct paper (Yao et al., 2022, "ReAct: Synergizing Reasoning and Acting in Language Models"), which demonstrated that interleaving reasoning traces with tool-call actions significantly improves agent performance on knowledge-intensive tasks. The Toolformer paper (Schick et al., 2023) showed LLMs could learn to invoke external [[Tool Use]] APIs through self-supervised training. The Generative Agents paper (Park et al., 2023, Stanford) demonstrated persistent personal identity and social memory in simulated agents, directly informing memory architecture in Khoj and similar runtimes. The AlphaCode/SWE-bench literature established [[Code Execution]] environments as essential agent infrastructure.
+  The emergence of LLM-grounded agents was theoretically anticipated in the ReAct paper (Yao et al., 2022, "ReAct: Synergizing Reasoning and Acting in Language Models"), which demonstrated that interleaving reasoning traces with tool-call actions significantly improves agent performance on knowledge-intensive tasks. The Toolformer paper (Schick et al., 2023) showed LLMs [private] learn to invoke external [[Tool Use]] APIs through self-supervised training. The Generative Agents paper (Park et al., 2023, Stanford) demonstrated persistent personal identity and social memory in simulated agents, directly informing memory architecture in Khoj and similar runtimes. The AlphaCode/SWE-bench literature established [[Code Execution]] environments as essential agent infrastructure.
 
   Key venues for personal agent runtime research include NeurIPS, ICLR, ACL, EMNLP (for language-grounded agent papers), and AAMAS (Autonomous Agents and Multi-Agent Systems) for broader agent architecture contributions.
 

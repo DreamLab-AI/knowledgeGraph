@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Private 5G Network
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:private-5g-network", "@type": "Page", "title": "Private 5G Network", "vc:slug": "private-5g-network", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:private-5g-network",
+  "@type": "Page",
+  "title": "Private 5G Network",
+  "vc:slug": "private-5g-network",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Token Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,57 +206,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:token-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:86c2a5a5881391ad5b61cc3969094760199129dd17b46e6a279bc00d97e86ee3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fungibility]]",
-      "resolved": "urn:visionflow:linked:fungibility",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NFT]]",
-      "resolved": "urn:visionflow:linked:nft",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Exchange]]",
-      "resolved": "urn:visionflow:owl:class:decentralized-exchange",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technical specification defining rules, interfaces, and functions that smart contract tokens must implement to ensure interoperability within a blockchain ecosystem. Standards like ERC-20 (fungible tokens) and ERC-721 (NFTs) establish common APIs for token transfers, balance queries, approvals, and metadata, enabling seamless integration across wallets, exchanges, and dApps.

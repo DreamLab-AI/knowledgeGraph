@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - LoRA Fine Tuning
----
-
-# lora fine-tuning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -45,23 +38,40 @@ aliases:
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - LoRA (Low-Rank Adaptation) fine-tuning is a parameter-efficient fine-tuning technique that adapts large pre-trained transformer models by inserting pairs of trainable low-rank matrices (A ∈ ℝ^{d×r} and B ∈ ℝ^{r×d}, where r ≪ d) alongside frozen weight matrices in selected layers, so that the effective weight update ΔW = BA is constrained to a low-dimensional subspace. By training only the injected adapter matrices — typically representing 0.1–1% of the original parameter count — LoRA achieves near full fine-tuning performance at a fraction of the GPU memory and compute cost, enabling adaptation of billion-parameter models on consumer hardware. It is now the dominant technique in the PEFT ecosystem and is implemented in Hugging Face's PEFT library.

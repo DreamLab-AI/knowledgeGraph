@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Access Control Policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,28 @@ public: true
   "definition": "An Access Control Policy is a machine-readable specification of the rules that determine which agents may read, write, or append to a given resource. In decentralized web-data systems such as Solid, policies are expressed as RDF documents (e.g. WAC or ACP) attached to resources, granting or denying modes of access to identified WebID principals or groups. The policy is the declarative source of truth that an authorization engine evaluates on each request.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:solid", "label": "Solid"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ]
   },
   "quality": 0.72
 }
 ```
+
 - ### Definition
   - An Access Control Policy declaratively states who may access a resource and in what mode. In [[Solid]] pods such policies are stored as RDF and bound to resources, enabling user-controlled sharing of personal data.
 - ### Content

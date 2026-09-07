@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reality ETH Oracle
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Reality.eth is an Ethereum-based crowdsourced oracle that resolves arbitrary questions by escalating bonds, allowing anyone to post or challenge answers until an economically final result is reached. It feeds resolved outcomes into smart contracts and is widely used to settle governance proposals and prediction-market events. The escalation-game design lets it answer subjective or off-chain questions that price-feed oracles cannot.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"},
-      {"@id": "urn:ngm:class:dao-tooling", "label": "DAO Tooling"}
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "@id": "urn:ngm:class:dao-tooling",
+        "label": "DAO Tooling"
+      }
     ]
   },
   "quality": 0.72

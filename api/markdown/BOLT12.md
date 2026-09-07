@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BOLT12
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,52 +165,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bolt-12:755ac6d85e17",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a0a8eda769466ece1f5706c93fb838ffb89709ef73ece47b8eda5211b25dd2ae"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BOLT]]",
-      "resolved": "urn:visionflow:linked:bolt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Phoenix]]",
-      "resolved": "urn:visionflow:linked:phoenix",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BOLT11]]",
-      "resolved": "urn:visionflow:linked:bolt-11",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://github.com/lightning/bolts/blob/master/12-offer-encoding.md]]",
-      "resolved": "urn:visionflow:linked:https-github-com-lightning-bolts-blob-master-12-offer-encoding-md",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://bolt12.org]]",
-      "resolved": "urn:visionflow:linked:https-bolt-12-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - BOLT12 is a Lightning Network specification that defines offers, a reusable payment request format that improves on single-use invoices. It supports recurring and static payment requests.

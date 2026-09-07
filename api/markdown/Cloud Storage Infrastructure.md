@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cloud Storage Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Cloud storage infrastructure is the distributed system of servers, object and block stores, replication, and access APIs that lets applications persist and retrieve data on demand over a network. It provides durability through redundancy, elastic capacity, and tiered performance classes ranging from hot object storage to cold archives. It matters because it is the foundation for storing large media assets, such as meeting recordings, at scale with high availability and pay-as-you-go economics.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:meeting-recording", "label": "Meeting Recording"}
+      {
+        "@id": "urn:ngm:class:meeting-recording",
+        "label": "Meeting Recording"
+      }
     ]
   },
   "quality": 0.72

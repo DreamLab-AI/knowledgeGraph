@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - 5G Networks
----
-
-# 5G Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

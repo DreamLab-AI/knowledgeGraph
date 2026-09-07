@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Aave Companies
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aave-companies:8ad84883a40e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1850c131bf05c44af22093cb892d5c648212949d6c55a537bf1a75f98b84ba01"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Lending Protocol]]",
-      "resolved": "urn:visionflow:linked:lending-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Aave]]",
-      "resolved": "urn:visionflow:linked:aave",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Aave Companies is the development company, founded by Stani Kulechov, behind the Aave decentralised lending protocol and related products. It was formerly known as ETHLend.

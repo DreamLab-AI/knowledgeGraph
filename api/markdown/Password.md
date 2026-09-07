@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Password
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Password",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:authentication", "vc:label": "Authentication"},
-    {"@id": "urn:visionflow:linked:multi-factor-authentication", "vc:label": "Multi-Factor Authentication"},
-    {"@id": "urn:visionflow:linked:cryptographic-key", "vc:label": "Cryptographic Key"},
-    {"@id": "urn:visionflow:linked:hardware-security-key", "vc:label": "Hardware Security Key"},
-    {"@id": "urn:visionflow:linked:encryption", "vc:label": "Encryption"}
+    {
+      "@id": "urn:visionflow:linked:authentication",
+      "vc:label": "Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-factor-authentication",
+      "vc:label": "Multi-Factor Authentication"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-key",
+      "vc:label": "Cryptographic Key"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-security-key",
+      "vc:label": "Hardware Security Key"
+    },
+    {
+      "@id": "urn:visionflow:linked:encryption",
+      "vc:label": "Encryption"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -39,14 +54,26 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"}
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cryptographic-key", "label": "Cryptographic Key"},
-      {"@id": "urn:ngm:class:hardware-security-key", "label": "Hardware Security Key"}
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-key",
+        "label": "Hardware Security Key"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ]
   },
   "quality": 0.8,

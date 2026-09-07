@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Concept Drift
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -14,47 +8,170 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:model-monitoring", "vc:label": "Model Monitoring"},
-    {"@id": "urn:visionflow:linked:data-drift", "vc:label": "Data Drift"},
-    {"@id": "urn:visionflow:linked:online-learning", "vc:label": "Online Learning"},
-    {"@id": "urn:visionflow:linked:continual-learning", "vc:label": "Continual Learning"},
-    {"@id": "urn:visionflow:linked:distribution-shift", "vc:label": "Distribution Shift"},
-    {"@id": "urn:visionflow:linked:covariate-shift", "vc:label": "Covariate Shift"},
-    {"@id": "urn:visionflow:linked:anomaly-detection", "vc:label": "Anomaly Detection"},
-    {"@id": "urn:visionflow:linked:statistics", "vc:label": "Statistics"},
-    {"@id": "urn:visionflow:linked:probability-distribution", "vc:label": "Probability Distribution"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:neural-networks", "vc:label": "Neural Networks"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:feature-store", "vc:label": "Feature Store"},
-    {"@id": "urn:visionflow:linked:model-registry", "vc:label": "Model Registry"},
-    {"@id": "urn:visionflow:linked:inference", "vc:label": "Inference"},
-    {"@id": "urn:visionflow:linked:retraining", "vc:label": "Retraining"},
-    {"@id": "urn:visionflow:linked:data-quality", "vc:label": "Data Quality"},
-    {"@id": "urn:visionflow:linked:observability", "vc:label": "Observability"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:time-series", "vc:label": "Time Series"},
-    {"@id": "urn:visionflow:linked:information-theory", "vc:label": "Information Theory"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:ensemble-methods", "vc:label": "Ensemble Methods"},
-    {"@id": "urn:visionflow:linked:ai-technique", "vc:label": "AI Technique"},
-    {"@id": "urn:visionflow:linked:catastrophic-forgetting", "vc:label": "Catastrophic Forgetting"},
-    {"@id": "urn:visionflow:linked:model-degradation", "vc:label": "Model Degradation"},
-    {"@id": "urn:visionflow:linked:feedback-loop", "vc:label": "Feedback Loop"},
-    {"@id": "urn:visionflow:linked:domain-adaptation", "vc:label": "Domain Adaptation"},
-    {"@id": "urn:visionflow:linked:streaming-data", "vc:label": "Streaming Data"},
-    {"@id": "urn:visionflow:linked:knowledge-distillation", "vc:label": "Knowledge Distillation"},
-    {"@id": "urn:visionflow:linked:ai-lifecycle", "vc:label": "AI Lifecycle"}
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-monitoring",
+      "vc:label": "Model Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-drift",
+      "vc:label": "Data Drift"
+    },
+    {
+      "@id": "urn:visionflow:linked:online-learning",
+      "vc:label": "Online Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:continual-learning",
+      "vc:label": "Continual Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:distribution-shift",
+      "vc:label": "Distribution Shift"
+    },
+    {
+      "@id": "urn:visionflow:linked:covariate-shift",
+      "vc:label": "Covariate Shift"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistics",
+      "vc:label": "Statistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:probability-distribution",
+      "vc:label": "Probability Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-store",
+      "vc:label": "Feature Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-registry",
+      "vc:label": "Model Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference",
+      "vc:label": "Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:retraining",
+      "vc:label": "Retraining"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-quality",
+      "vc:label": "Data Quality"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability",
+      "vc:label": "Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-series",
+      "vc:label": "Time Series"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:ensemble-methods",
+      "vc:label": "Ensemble Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-technique",
+      "vc:label": "AI Technique"
+    },
+    {
+      "@id": "urn:visionflow:linked:catastrophic-forgetting",
+      "vc:label": "Catastrophic Forgetting"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-degradation",
+      "vc:label": "Model Degradation"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedback-loop",
+      "vc:label": "Feedback Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:domain-adaptation",
+      "vc:label": "Domain Adaptation"
+    },
+    {
+      "@id": "urn:visionflow:linked:streaming-data",
+      "vc:label": "Streaming Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-lifecycle",
+      "vc:label": "AI Lifecycle"
+    }
   ]
 }
 ```
@@ -69,101 +186,105 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"},
-    {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:adwin", "label": "ADWIN"},
-      {"@id": "urn:ngm:class:drift-detection-method", "label": "Drift Detection Method"},
-      {"@id": "urn:ngm:class:page-hinkley-test", "label": "Page-Hinkley Test"}
+      {
+        "@id": "urn:ngm:class:adwin",
+        "label": "ADWIN"
+      },
+      {
+        "@id": "urn:ngm:class:drift-detection-method",
+        "label": "Drift Detection Method"
+      },
+      {
+        "@id": "urn:ngm:class:page-hinkley-test",
+        "label": "Page-Hinkley Test"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:model-monitoring", "label": "Model Monitoring"},
-      {"@id": "urn:ngm:class:statistics", "label": "Statistics"}
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retraining", "label": "Retraining"},
-      {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"}
+      {
+        "@id": "urn:ngm:class:retraining",
+        "label": "Retraining"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"},
-      {"@id": "urn:ngm:class:streaming-data", "label": "Streaming Data"}
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-data",
+        "label": "Streaming Data"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-drift", "label": "Data Drift"},
-      {"@id": "urn:ngm:class:covariate-shift", "label": "Covariate Shift"}
+      {
+        "@id": "urn:ngm:class:data-drift",
+        "label": "Data Drift"
+      },
+      {
+        "@id": "urn:ngm:class:covariate-shift",
+        "label": "Covariate Shift"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:online-learning", "label": "Online Learning"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:distribution-shift", "label": "Distribution Shift"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:distribution-shift",
+        "label": "Distribution Shift"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:concept-drift:a4e9f127bc83",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:ngm-concept-drift"},
-  "vc:resolutions": [
-    {"raw": "[[Machine Learning]]", "resolved": "urn:ngm:class:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[MLOps]]", "resolved": "urn:ngm:class:mlops", "kind": "ResolvedLink"},
-    {"raw": "[[Model Monitoring]]", "resolved": "urn:ngm:class:model-monitoring", "kind": "ResolvedLink"},
-    {"raw": "[[Data Drift]]", "resolved": "urn:ngm:class:data-drift", "kind": "ResolvedLink"},
-    {"raw": "[[Online Learning]]", "resolved": "urn:ngm:class:online-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Continual Learning]]", "resolved": "urn:ngm:class:continual-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Distribution Shift]]", "resolved": "urn:ngm:class:distribution-shift", "kind": "ResolvedLink"},
-    {"raw": "[[Covariate Shift]]", "resolved": "urn:ngm:class:covariate-shift", "kind": "ResolvedLink"},
-    {"raw": "[[Anomaly Detection]]", "resolved": "urn:ngm:class:anomaly-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Statistics]]", "resolved": "urn:ngm:class:statistics", "kind": "ResolvedLink"},
-    {"raw": "[[Probability Distribution]]", "resolved": "urn:ngm:class:probability-distribution", "kind": "ResolvedLink"},
-    {"raw": "[[Feature Engineering]]", "resolved": "urn:ngm:class:feature-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:ngm:class:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Networks]]", "resolved": "urn:ngm:class:neural-networks", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:ngm:class:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:ngm:class:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Federated Learning]]", "resolved": "urn:ngm:class:federated-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:ngm:class:active-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Retraining]]", "resolved": "urn:ngm:class:retraining", "kind": "ResolvedLink"},
-    {"raw": "[[Data Quality]]", "resolved": "urn:ngm:class:data-quality", "kind": "ResolvedLink"},
-    {"raw": "[[Observability]]", "resolved": "urn:ngm:class:observability", "kind": "ResolvedLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:ngm:class:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:ngm:class:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:ngm:class:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Streaming Data]]", "resolved": "urn:ngm:class:streaming-data", "kind": "ResolvedLink"},
-    {"raw": "[[Ensemble Methods]]", "resolved": "urn:ngm:class:ensemble-methods", "kind": "ResolvedLink"},
-    {"raw": "[[Catastrophic Forgetting]]", "resolved": "urn:ngm:class:catastrophic-forgetting", "kind": "ResolvedLink"},
-    {"raw": "[[Model Degradation]]", "resolved": "urn:ngm:class:model-degradation", "kind": "ResolvedLink"},
-    {"raw": "[[Feedback Loop]]", "resolved": "urn:ngm:class:feedback-loop", "kind": "ResolvedLink"},
-    {"raw": "[[Domain Adaptation]]", "resolved": "urn:ngm:class:domain-adaptation", "kind": "ResolvedLink"},
-    {"raw": "[[Bayesian Inference]]", "resolved": "urn:ngm:class:bayesian-inference", "kind": "ResolvedLink"},
-    {"raw": "[[Information Theory]]", "resolved": "urn:ngm:class:information-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Time Series]]", "resolved": "urn:ngm:class:time-series", "kind": "ResolvedLink"},
-    {"raw": "[[AI Lifecycle]]", "resolved": "urn:ngm:class:ai-lifecycle", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Distillation]]", "resolved": "urn:ngm:class:knowledge-distillation", "kind": "ResolvedLink"},
-    {"raw": "[[Model Training]]", "resolved": "urn:ngm:class:model-training", "kind": "ResolvedLink"},
-    {"raw": "[[Feature Store]]", "resolved": "urn:ngm:class:feature-store", "kind": "ResolvedLink"},
-    {"raw": "[[Model Registry]]", "resolved": "urn:ngm:class:model-registry", "kind": "ResolvedLink"},
-    {"raw": "[[Inference]]", "resolved": "urn:ngm:class:inference", "kind": "ResolvedLink"},
-    {"raw": "[[Data Pipeline]]", "resolved": "urn:ngm:class:data-pipeline", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -457,7 +578,7 @@ public: true
 
   The emergence of [[Large Language Models]] and other foundation models as the substrate of enterprise AI applications has introduced a qualitatively new class of concept drift challenge that does not fit neatly within the classical tabular-data framework.
 
-  Foundation model deployments typically involve multiple layers where drift can occur independently: (1) the base model's weights, updated by the provider (e.g., OpenAI, Anthropic, Google) in ways that may not be fully disclosed; (2) the fine-tuning dataset, which may itself change over time as new examples are added; (3) the retrieval index in RAG (Retrieval-Augmented Generation) architectures, which updates as new documents are ingested; (4) the user query distribution, which evolves as the user population changes and as users learn to interact with the system more effectively; and (5) the evaluation criteria, which may shift as organisational priorities or product requirements evolve.
+  Foundation model deployments typically involve multiple layers where drift can occur independently: (1) the base model's weights, updated by the provider (e.g., OpenAI, Anthropic, Google) in ways that may not be fully disclosed; (2) the fine-tuning dataset, which may itself change over time as new examples are added; (3) the retrieval [private] in RAG (Retrieval-Augmented Generation) architectures, which updates as new documents are ingested; (4) the user query distribution, which evolves as the user population changes and as users learn to interact with the system more effectively; and (5) the evaluation criteria, which may shift as organisational priorities or product requirements evolve.
 
   Classical concept drift detection frameworks address a single model with a fixed architecture receiving observations from a single data stream. Foundation model deployments face drift in five simultaneous dimensions, with complex interactions: an upstream model update may partially compensate for user distribution drift in some capabilities while introducing regression in others. Detecting and attributing drift across these dimensions requires a monitoring architecture that is substantially more complex than PSI or KS tests on a tabular feature matrix.
 
@@ -496,7 +617,7 @@ public: true
   Concept drift is formally characterised as a non-stationarity in the joint probability distribution P_t(X, Y) where t denotes time. Decomposing the joint: P_t(X, Y) = P_t(Y|X) · P_t(X).
 
   - **Real concept drift**: P_{t1}(Y|X) ≠ P_{t2}(Y|X) for t1 < t2. The conditional distribution of the target given features has changed. This is the operationally dangerous case because it means the model's learned mapping is no longer correct even if it receives representative inputs.
-  - **Virtual (covariate) drift**: P_{t1}(X) ≠ P_{t2}(X) but P_{t1}(Y|X) = P_{t2}(Y|X). The feature distribution has shifted but the mapping is unchanged. The model may extrapolate outside its training support, but the correct mapping exists if the model could generalise.
+  - **Virtual (covariate) drift**: P_{t1}(X) ≠ P_{t2}(X) but P_{t1}(Y|X) = P_{t2}(Y|X). The feature distribution has shifted but the mapping is unchanged. The model may extrapolate outside its training support, but the correct mapping exists if the model [private] generalise.
   - **Prior probability shift (label shift)**: P_{t1}(Y) ≠ P_{t2}(Y) but P_{t1}(X|Y) = P_{t2}(X|Y). Class prevalence has changed; this matters for classifiers whose posterior P(Y|X) depends on the prior.
   - **Sample selection bias drift**: Systematic differences in how data is sampled at training versus serving time, producing distributional mismatch that is not a genuine world change.
 
@@ -666,7 +787,7 @@ public: true
 
   The [[AI Lifecycle]] thus requires concept drift awareness as a thread that runs from dataset design through model evaluation, deployment monitoring, and ultimately model retirement. [[AI Governance]] frameworks increasingly reflect this: both ISO/IEC 42001 and the EU AI Act require a post-market monitoring plan that is submitted before high-risk AI system deployment, effectively requiring organisations to specify their concept drift detection and response procedures in advance as a regulatory artefact.
 
-  In the context of [[Large Language Models]] and other foundation models, the lifecycle is further complicated by the fact that the base model may be updated by the provider, the fine-tuning dataset may drift, the retrieval index may be updated, and the user population may shift — all simultaneously. Managing concept drift across these four independent axes requires a more sophisticated monitoring and governance architecture than single-model deployments and represents the frontier of production AI lifecycle management as of 2026.
+  In the context of [[Large Language Models]] and other foundation models, the lifecycle is further complicated by the fact that the base model may be updated by the provider, the fine-tuning dataset may drift, the retrieval [private] may be updated, and the user population may shift — all simultaneously. Managing concept drift across these four independent axes requires a more sophisticated monitoring and governance architecture than single-model deployments and represents the frontier of production AI lifecycle management as of 2026.
 
   Conceptually, concept drift is best understood not as a failure mode to be eliminated but as the inevitable consequence of deploying predictive models in a world that does not stand still. Robust [[Machine Learning]] systems must be designed from the outset with adaptation as a first-class engineering requirement, not a post-hoc patch.
 

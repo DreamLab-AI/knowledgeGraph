@@ -1,37 +1,122 @@
----
-public: true
----
-
-# Cybersecurity Policy
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cybersecurity-policy", "@type":"Page", "title":"Cybersecurity Policy", "vc:slug":"cybersecurity-policy", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cybersecurity-policy",
+  "@type": "Page",
+  "title": "Cybersecurity Policy",
+  "vc:slug": "cybersecurity-policy",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:cybersecurity-policy",
-  "@type":"Class",
-  "label":"Cybersecurity Policy",
-  "definition":"A cybersecurity policy is a formal set of rules, roles, and expectations that govern how an organisation or jurisdiction protects information systems, data, and networks from threats. It translates risk appetite and legal obligations into actionable standards covering access, incident handling, data protection, and acceptable use. Cybersecurity policy operates at organisational level as internal governance and at national level as regulation and strategy.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:policy","label":"Policy"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:security-policy","label":"Security Policy"},{"@id":"urn:ngm:class:access-control","label":"Access Control"}],
-    "enables":[{"@id":"urn:ngm:class:compliance","label":"Compliance"},{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "requires":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"},{"@id":"urn:ngm:class:threat-modelling","label":"Threat Modelling"}],
-    "supports":[{"@id":"urn:ngm:class:incident-response","label":"Incident Response"},{"@id":"urn:ngm:class:vulnerability-management","label":"Vulnerability Management"}],
-    "uses":[{"@id":"urn:ngm:class:encryption","label":"Encryption"}],
-    "implements":[{"@id":"urn:ngm:class:governance-framework","label":"Governance Framework"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:digital-governance","label":"Digital Governance"},{"@id":"urn:ngm:class:regulation","label":"Regulation"}],
-    "dependsOn":[{"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}],
-    "relatedTo":[{"@id":"urn:ngm:class:national-security","label":"National Security"},{"@id":"urn:ngm:class:privacy","label":"Privacy"},{"@id":"urn:ngm:class:network-security","label":"Network Security"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cybersecurity-policy",
+  "@type": "Class",
+  "label": "Cybersecurity Policy",
+  "definition": "A cybersecurity policy is a formal set of rules, roles, and expectations that govern how an organisation or jurisdiction protects information systems, data, and networks from threats. It translates risk appetite and legal obligations into actionable standards covering access, incident handling, data protection, and acceptable use. Cybersecurity policy operates at organisational level as internal governance and at national level as regulation and strategy.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:policy",
+      "label": "Policy"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:security-policy",
+        "label": "Security Policy"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:national-security",
+        "label": "National Security"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

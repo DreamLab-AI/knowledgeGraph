@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Harmonic Drive
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "A harmonic drive is a strain-wave gearing mechanism that achieves very high reduction ratios in a compact, lightweight package with near-zero backlash. It uses a flexible spline deformed by an elliptical wave generator to mesh with a rigid outer gear, transmitting motion with high precision. Harmonic drives are widely used in robot joints, where accuracy and torque density are critical.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"}
+      {
+        "@id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      }
     ]
   },
   "quality": 0.72

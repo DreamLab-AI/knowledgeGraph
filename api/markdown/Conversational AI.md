@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Conversational AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -259,7 +254,7 @@ public: true
       "label": "Chat AI"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -267,127 +262,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:conversational-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:086bab7c84ac2dbdded8ed6fb5017a435e5aab214e9c057321636294f4a820a7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Dialogue System]]",
-      "resolved": "urn:visionflow:owl:class:dialogue-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer Architecture]]",
-      "resolved": "urn:visionflow:owl:class:transformer-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Retrieval-Augmented Generation]]",
-      "resolved": "urn:visionflow:owl:class:retrieval-augmented-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning from Human Feedback]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:owl:class:speech-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Intent Recognition]]",
-      "resolved": "urn:visionflow:owl:class:intent-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multimodal AI]]",
-      "resolved": "urn:visionflow:owl:class:multimodal-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Understanding]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-understanding",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sentiment Analysis]]",
-      "resolved": "urn:visionflow:owl:class:sentiment-analysis",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text-to-Speech]]",
-      "resolved": "urn:visionflow:owl:class:text-to-speech",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Chatbot]]",
-      "resolved": "urn:visionflow:owl:class:chatbot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Assistant]]",
-      "resolved": "urn:visionflow:owl:class:virtual-assistant",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Robot Interaction]]",
-      "resolved": "urn:visionflow:owl:class:human-robot-interaction",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Conversational AI is a sub-discipline of [[Natural Language Processing]] and [[Artificial Intelligence]] concerned with the design, training, and deployment of systems capable of sustaining coherent, context-aware multi-turn dialogue with human users in natural language. It integrates a pipeline of specialised components — [[Intent Recognition]], [[Natural Language Understanding]], [[Dialogue System]] management, [[Knowledge Base]] grounding, [[Sentiment Analysis]], [[Speech Recognition]], and [[Text-to-Speech]] synthesis — into unified architectures that can understand user goals, maintain conversational state across turns, and generate fluent, helpful, and safe responses. The contemporary paradigm is dominated by [[Large Language Models]] built on the [[Transformer Architecture]] and aligned through [[Reinforcement Learning from Human Feedback]], enabling open-domain general-purpose assistants (e.g., ChatGPT, Claude, Gemini) that subsume earlier task-specific [[Chatbot]] and voice assistant designs. Beyond text, the field is expanding into [[Multimodal AI]] interfaces that accept voice, images, and video as conversational inputs, and into agentic paradigms where the conversational interface acts as a planner that delegates tasks to tool-using sub-agents. Conversational AI also bridges closely to [[Digital Twin]] environments, [[Autonomous Robot]] platforms, and [[Spatial Computing]] interfaces, acting as the primary human-facing layer through which users direct intelligent systems. The global market reached $17.97 billion in 2026 and is projected to exceed $82 billion by 2034, driven by enterprise automation, healthcare triage, and consumer personal assistant adoption.

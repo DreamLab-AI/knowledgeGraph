@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Legal Research
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:legal-research:70f12affd96d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:28908a60645e6d9598faf82b69900187c7928cbe51a0e69a656e348d92434637"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Optical Character Recognition]]",
-      "resolved": "urn:visionflow:linked:optical-character-recognition",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Narrow AI]]",
-      "resolved": "urn:visionflow:linked:narrow-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Legal research is the systematic process of finding, analysing and applying statutes, case law, regulations and secondary sources to answer a legal question, increasingly assisted by retrieval and language models.

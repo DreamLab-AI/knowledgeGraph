@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interoperability Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,42 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interoperability-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cb6b161d65d70cdc619cf8402f1f5128ac3ec57c218c85e44b51488451368133"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross-Platform Compatibility]]",
-      "resolved": "urn:visionflow:linked:cross-platform-compatibility",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:owl:class:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate together seamlessly, including OpenXR, glTF, USD, and emerging standards from the Metaverse Standards Forum.

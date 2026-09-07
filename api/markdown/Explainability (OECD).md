@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Explainability (OECD)
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:fairness-oecd", "label": "Fairness (OECD)"},
-      {"@id": "urn:ngm:class:accountability-oecd", "label": "Accountability (OECD)"},
-      {"@id": "urn:ngm:class:human-centred-values", "label": "Human Centred Values"}
+      {
+        "@id": "urn:ngm:class:fairness-oecd",
+        "label": "Fairness (OECD)"
+      },
+      {
+        "@id": "urn:ngm:class:accountability-oecd",
+        "label": "Accountability (OECD)"
+      },
+      {
+        "@id": "urn:ngm:class:human-centred-values",
+        "label": "Human Centred Values"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:explainability-oecd:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bb4de0ca4b74e1844b6f59b74d06050bad7b395128358614f305b4a42ff6780e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - People affected by AI-based outcomes should be able to understand how and why particular decisions or recommendations were reached, with explanations provided in ways appropriate to the context and enabling meaningful contestation of AI-influenced decisions.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Center Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "data-center-infrastructure",
   "title": "Data Center Infrastructure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Regulatory Framework", "Grid Reliability", "White House AI Policy"],
+  "vc:outboundWikilinks": [
+    "AI Regulatory Framework",
+    "Grid Reliability",
+    "White House AI Policy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}, {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

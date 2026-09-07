@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Chivo Wallet
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:chivo-wallet", "@type": "Page", "title": "Chivo Wallet", "vc:slug": "chivo-wallet", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:chivo-wallet",
+  "@type": "Page",
+  "title": "Chivo Wallet",
+  "vc:slug": "chivo-wallet",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

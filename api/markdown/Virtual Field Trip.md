@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Field Trip
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,7 +43,7 @@ public: true
   "@id": "urn:ngm:class:virtual-field-trip",
   "@type": "Class",
   "label": "Virtual Field Trip",
-  "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom. Research indicates VR can improve knowledge acquisition and retention compared to traditional instruction; platforms such as Google Arts and Culture and Google Expeditions have demonstrated feasibility at scale across subjects including science, history, and geography.",
+  "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they [private] not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom. Research indicates VR can improve knowledge acquisition and retention compared to traditional instruction; platforms such as Google Arts and Culture and Google Expeditions have demonstrated feasibility at scale across subjects including science, history, and geography.",
   "domain": "spatial-computing",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"},
-      {"@id": "urn:ngm:class:virtual-destination", "label": "Virtual Destination"}
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-destination",
+        "label": "Virtual Destination"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-museum-tour", "label": "Virtual Museum Tour"},
-      {"@id": "urn:ngm:class:cultural-heritage-xr-experience", "label": "Cultural Heritage XR Experience"}
+      {
+        "@id": "urn:ngm:class:virtual-museum-tour",
+        "label": "Virtual Museum Tour"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-heritage-xr-experience",
+        "label": "Cultural Heritage XR Experience"
+      }
     ]
   },
   "provenance": {
@@ -87,39 +103,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-field-trip:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c525378221ef856c1d2485c23aa28a41a034f6a913172186579da1c91e5c70f6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Educational Technology]]",
-      "resolved": "urn:visionflow:owl:class:educational-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom.
+  - An educational experience using VR, AR, or MR technologies that transports students to locations they [private] not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:VirtualFieldTrip

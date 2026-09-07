@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Feature Attribution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -207,76 +202,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:feature-attribution:09cc9e78928f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6fc8829222692b03cf6c9e57d1a5ad2a91c9e3718b9e58dc26fe81152c283557"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interpretability]]",
-      "resolved": "urn:visionflow:linked:interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SHAP]]",
-      "resolved": "urn:visionflow:linked:shap",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feature Importance]]",
-      "resolved": "urn:visionflow:linked:feature-importance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:linked:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LIME]]",
-      "resolved": "urn:visionflow:linked:lime",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Backpropagation]]",
-      "resolved": "urn:visionflow:linked:backpropagation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mechanistic Interpretability]]",
-      "resolved": "urn:visionflow:linked:mechanistic-interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Attention Mechanism]]",
-      "resolved": "urn:visionflow:linked:attention-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

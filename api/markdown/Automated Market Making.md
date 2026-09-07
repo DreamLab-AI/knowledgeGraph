@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automated Market Making
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -125,72 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:automated-market-making:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2b6e4dfcce43ed2bed4aaf3e3a8bb6598ae6b34cf8da23084711d15e4a93a2db"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DeFi Operations]]",
-      "resolved": "urn:visionflow:linked:de-fi-operations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralized Trading]]",
-      "resolved": "urn:visionflow:linked:decentralized-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Liquidity Mining]]",
-      "resolved": "urn:visionflow:linked:liquidity-mining",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Price Oracle Integration]]",
-      "resolved": "urn:visionflow:linked:price-oracle-integration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Smart Contract Deployment]]",
-      "resolved": "urn:visionflow:linked:smart-contract-deployment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Token Accessibility]]",
-      "resolved": "urn:visionflow:linked:token-accessibility",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Provision]]",
-      "resolved": "urn:visionflow:owl:class:liquidity-provision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Automated Market Making is the practice and methodology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation strategies.

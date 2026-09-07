@@ -1,60 +1,124 @@
----
-public: true
----
-
-# Intellectual Property Rights
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:intellectual-property-rights", "@type":"Page", "title":"Intellectual Property Rights", "vc:slug":"intellectual-property-rights", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:intellectual-property-rights",
+  "@type": "Page",
+  "title": "Intellectual Property Rights",
+  "vc:slug": "intellectual-property-rights",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:intellectual-property-rights",
-  "@type":"Class",
-  "label":"Intellectual Property Rights",
-  "definition":"Intellectual property rights are the legally recognised exclusive entitlements granted to creators and owners over the products of human intellect, such as inventions, literary and artistic works, designs, symbols and names. They include patents, copyright, trademarks and trade secrets, each conferring time-bounded or perpetual control over use, reproduction and commercial exploitation. In blockchain contexts these rights are increasingly represented, transferred and enforced through tokenisation and on-chain licensing.",
-  "domain":"blockchain",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-  "relations":{
-    "dependsOn":[
-      {"@id":"urn:ngm:class:regulation","label":"Regulation"},
-      {"@id":"urn:ngm:class:licensing","label":"Licensing"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:intellectual-property-rights",
+  "@type": "Class",
+  "label": "Intellectual Property Rights",
+  "definition": "Intellectual property rights are the legally recognised exclusive entitlements granted to creators and owners over the products of human intellect, such as inventions, literary and artistic works, designs, symbols and names. They include patents, copyright, trademarks and trade secrets, each conferring time-bounded or perpetual control over use, reproduction and commercial exploitation. In blockchain contexts these rights are increasingly represented, transferred and enforced through tokenisation and on-chain licensing.",
+  "domain": "blockchain",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:tokenization","label":"Tokenization"},
-      {"@id":"urn:ngm:class:non-fungible-token","label":"Non-Fungible Token"},
-      {"@id":"urn:ngm:class:digital-rights-management","label":"Digital Rights Management"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"},
-      {"@id":"urn:ngm:class:creative-commons","label":"Creative Commons"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:licensing","label":"Licensing"},
-      {"@id":"urn:ngm:class:regulation","label":"Regulation"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:licensing","label":"Licensing"},
-      {"@id":"urn:ngm:class:tokenization","label":"Tokenization"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"},
-      {"@id":"urn:ngm:class:digital-rights-management","label":"Digital Rights Management"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:patent","label":"Patent"},
-      {"@id":"urn:ngm:class:non-fungible-token","label":"Non-Fungible Token"},
-      {"@id":"urn:ngm:class:tokenization","label":"Tokenization"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:patent",
+        "label": "Patent"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

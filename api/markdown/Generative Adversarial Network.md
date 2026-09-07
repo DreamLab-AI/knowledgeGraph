@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Generative Adversarial Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,52 +196,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:generative-adversarial-network:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:49f568afcff6f63e97df92f4a5f3eaf51e286f2ad1695140fd1d73e88f880c4f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[🤖]]",
-      "resolved": "urn:visionflow:linked:untitled",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Diffusion Models]]",
-      "resolved": "urn:visionflow:owl:class:diffusion-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Adversarial Networks]]",
-      "resolved": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI-Augmented Research Tooling Suite]]",
-      "resolved": "urn:visionflow:owl:class:research-tools",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A **Generative Adversarial Network (GAN)** is a deep learning architecture in which a generator network and a discriminator network are trained simultaneously in an adversarial min-max game: the generator learns to produce synthetic samples indistinguishable from real data, while the discriminator learns to detect fakes. GANs underpin high-fidelity image synthesis, video generation, data augmentation, and synthetic data creation across domains including healthcare, finance, and computer vision.

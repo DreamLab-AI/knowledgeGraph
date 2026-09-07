@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Capability Forecasting
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -369,7 +363,7 @@ public: true
 
   ## Academic Context
 
-  The intellectual foundations of AI capability forecasting trace to I.J. Good's (1965) concept of an "intelligence explosion" — the feedback loop by which a sufficiently intelligent machine could improve its own design, triggering recursive capability growth — which introduced the idea that AI capability trajectories might be discontinuous and difficult to forecast from gradual extrapolation.
+  The intellectual foundations of AI capability forecasting trace to I.J. Good's (1965) concept of an "intelligence explosion" — the feedback loop by which a sufficiently intelligent machine [private] improve its own design, triggering recursive capability growth — which introduced the idea that AI capability trajectories might be discontinuous and difficult to forecast from gradual extrapolation.
 
   **Foundational scaling law work:**
   - Kaplan et al. (2020, "Scaling Laws for Neural Language Models," arXiv:2001.08361) demonstrated power-law scaling across five orders of magnitude in compute, parameter count, and data — the quantitative backbone of capability extrapolation.
@@ -410,7 +404,7 @@ public: true
     - METR's RE-Bench: research engineering tasks requiring weeks of expert work
     - Long-Horizon Tasks: tasks taking humans days to months
     - FRONTIER-Bench: frontier scientific research tasks requiring graduate-level expertise
-  - The Frontier AI Trends Report (AISI, December 2025) noted that by mid-2025, advanced models could complete software autonomy tasks taking a human at least one hour in over 40% of cases.
+  - The Frontier AI Trends Report (AISI, December 2025) noted that by mid-2025, advanced models [private] complete software autonomy tasks taking a human at least one hour in over 40% of cases.
   - The first model to successfully complete expert-level cyber tasks requiring more than ten years of human professional experience was evaluated in 2025.
 
   **Test-time compute paradigm shift:**
@@ -513,7 +507,7 @@ public: true
   - **Scaling Law:** A power-law relationship between model training resources (compute, parameters, data) and performance metrics (typically cross-entropy loss), forming the primary quantitative tool of capability forecasting.
   - **Compute Budget (C):** The total floating-point operations used in training a model, typically measured in FLOPs (floating-point operations) or FLOP equivalents; the primary axis along which training-time capability forecasts are made.
   - **Emergent Capability:** A task performance that appears only above a threshold model scale, potentially posing a discontinuous prediction challenge for smooth-extrapolation forecasting.
-  - **Uplift:** The capability increase an AI system provides to a malicious actor beyond what they could achieve through existing means without AI assistance; the primary harm-relevance criterion in dangerous capability evaluation.
+  - **Uplift:** The capability increase an AI system provides to a malicious actor beyond what they [private] achieve through existing means without AI assistance; the primary harm-relevance criterion in dangerous capability evaluation.
   - **AI Safety Level (ASL):** Anthropic's classification system for AI models based on their dangerous capabilities, from ASL-1 (no meaningful capability uplift) through ASL-4 (autonomous civilisational-scale harm potential), operationalising capability thresholds as deployment triggers.
   - **Transformative AI (TAI):** AI with sufficiently broad capabilities and autonomous reasoning to cause transformative changes in economic productivity, scientific progress, and societal organisation, typically used as the target event in long-range capability forecasting.
   - **Benchmark Saturation:** The state in which a model's performance on a benchmark reaches the performance ceiling (maximum possible score), ending the benchmark's discriminatory value for capability assessment.
@@ -629,7 +623,7 @@ public: true
   - **vs. [[Model Evaluation]]**: Model evaluation provides the empirical data inputs for capability forecasting — benchmark scores, autonomy task completion rates, elicitation-controlled capability measurements. Capability forecasting takes these empirical inputs and extrapolates forward. As evaluation frameworks improve (harder benchmarks, better elicitation protocols), the quality of capability forecasts improves correspondingly.
   - **vs. [[AI Safety Level]]**: AI Safety Levels (ASLs) are the operationalisation of dangerous capability thresholds that capability forecasting projects. Capability forecasting tells you "when will we reach ASL-3?"; the ASL framework tells you "what does reaching ASL-3 mean and what must be done?" The two concepts are tightly coupled in frontier AI lab governance: RSPs reference ASL thresholds; capability forecasting projects ASL timelines; safety engineering prepares the required mitigations; evaluation gates verify threshold status before deployment.
   - **vs. [[Foundation Model]]**: Foundation models are the subject of capability forecasting — the systems whose future capabilities are being projected. Capability forecasting helps determine which foundation model training runs require dangerous capability evaluation before deployment, and at what point in the scaling trajectory new safety measures must be prepared.
-  - **vs. [[Expert Elicitation]]**: Expert elicitation is one of the primary methods within capability forecasting, providing probabilistic timeline estimates from domain experts as an alternative or complement to quantitative scaling law extrapolation. Forecasting organisations including EpochAI and Samotsvety specifically synthesise expert elicitation with quantitative extrapolation to produce calibrated forecasts that neither method could achieve alone.
+  - **vs. [[Expert Elicitation]]**: Expert elicitation is one of the primary methods within capability forecasting, providing probabilistic timeline estimates from domain experts as an alternative or complement to quantitative scaling law extrapolation. Forecasting organisations including EpochAI and Samotsvety specifically synthesise expert elicitation with quantitative extrapolation to produce calibrated forecasts that neither method [private] achieve alone.
 
 - ### Provenance
   - sources:: Kaplan et al. 2020 Scaling Laws (arXiv:2001.08361); Hoffmann et al. 2022 Chinchilla (arXiv:2203.15556); Wei et al. 2022 Emergent Abilities; Cotra 2022 Biological Anchors (Open Philanthropy); METR Time Horizons Report (March 2025); AISI Frontier AI Trends Report (December 2025); EpochAI epoch.ai/topics/future-of-ai; arXiv:2502.15850 Forecasting Frontier LM Agent Capabilities; Samotsvety AI Futures Update (January 2026); CETaS International AI Safety Report 2026; arxiv.org/abs/2511.05526 Emergency Response Catastrophic AI Risk; arxiv.org/pdf/2505.21664 AI Reliability Research Priorities; arXiv:2406.04391 Predicting Downstream Capabilities; ForecastBench ICLR 2025; metr.org/notes METR Simpler Timelines Model

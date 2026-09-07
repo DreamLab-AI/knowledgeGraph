@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Curriculum Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -199,47 +194,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:curriculum-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f518ea2cecf607b2ecd4dfa74817c61f48f0c59ce24f3ef9ff953665407d7425"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE/CVF International Conference on Computer Vision]]",
-      "resolved": "urn:visionflow:linked:ieee-cvf-international-conference-on-computer-vision",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE Transactions on Pattern Analysis and Machine Intelligence]]",
-      "resolved": "urn:visionflow:linked:ieee-transactions-on-pattern-analysis-and-machine-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A training strategy that presents examples to the model in a meaningful order, typically from easy to difficult, mimicking how humans learn. Curriculum learning can improve convergence speed, final performance, and generalization by structuring the learning progression.

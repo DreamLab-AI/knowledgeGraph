@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Infrastructure Regulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-infrastructure-regulation",
   "title": "AI Infrastructure Regulation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Data Center Moratorium", "New York State"],
+  "vc:outboundWikilinks": [
+    "Data Center Moratorium",
+    "New York State"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-center-moratorium", "label": "Data Center Moratorium"}, {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-center-moratorium",
+        "label": "Data Center Moratorium"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Adoption Barriers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-adoption-barriers",
   "title": "AI Adoption Barriers",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Skepticism", "Gary Marcus"],
+  "vc:outboundWikilinks": [
+    "AI Skepticism",
+    "Gary Marcus"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}, {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Edge AI Accelerators
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,38 +63,98 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:npu", "label": "NPU"},
-      {"@id": "urn:ngm:class:tpu", "label": "TPU"},
-      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:npu",
+        "label": "NPU"
+      },
+      {
+        "@id": "urn:ngm:class:tpu",
+        "label": "TPU"
+      },
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
-      {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"}
+      {
+        "@id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation-for-edge",
+        "label": "Knowledge Distillation for Edge"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
-      {"@id": "urn:ngm:class:neuromorphic-computing", "label": "Neuromorphic Computing"},
-      {"@id": "urn:ngm:class:edge-ai-security", "label": "Edge AI Security"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-security",
+        "label": "Edge AI Security"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"},
-      {"@id": "urn:ngm:class:embedded-ai-frameworks", "label": "Embedded AI Frameworks"}
+      {
+        "@id": "urn:ngm:class:model-pruning-for-edge-deployment",
+        "label": "Model Pruning for Edge Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "provenance": {
@@ -109,47 +164,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:edge-ai-accelerators:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:243421c2822ec990f7c7ccaa2504a3e77001ad67475c4e296191687598a70985"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Edge AI Accelerators are specialized hardware processors designed to dramatically improve the performance and energy efficiency of machine learning inference on resource-constrained edge devices. These include Neural Processing Units (NPUs), Tensor Processing Units (TPUs), Digital Signal Processors (DSPs), Field-Programmable Gate Arrays (FPGAs), and Application-Specific Integrated Circuits (ASICs) optimized for neural network computations. NPUs integrate directly into mobile processors (Qualcomm Hexagon, Apple Neural Engine) achieving 2-21 TOPS (tera-operations per second) with 2-10 TOPS per watt efficiency. TPUs and ASICs deliver peak performance 5-100x higher than CPUs while consuming 10-50x less power per inference. FPGAs offer programmable flexibility allowing deployment-specific optimizations when fixed-function accelerators are unavailable. Edge AI accelerators exploit parallelism in matrix multiplication operations inherent to neural networks, typically supporting low-precision arithmetic (INT8, FP16) for dramatic speedups versus full-precision FP32 computation. Hardware features including dedicated memory hierarchies, reduced precision datapaths, and specialized reduction circuits eliminate unnecessary energy overhead from general-purpose processors. Platforms like NVIDIA Jetson embed GPUs for accelerated inference on mobile robots and autonomous vehicles. Meta's Orion custom silicon combines custom accelerators for AR processing at mobile-friendly power budgets. Edge accelerators enable real-time video processing, low-latency autonomous responses, and offline operation while respecting power and thermal constraints. The trend toward tightly integrated AI accelerators reflects the fundamental mismatch between neural network parallelism and general-purpose processor design, necessitating specialized hardware for practical edge intelligence.

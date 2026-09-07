@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersive Collaboration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Immersive collaboration is the practice of working together within shared spatial virtual or mixed-reality environments where participants, represented by avatars, interact with 3D content and one another in real time. It extends remote teamwork beyond flat video calls by providing spatial audio, embodied presence, and manipulable shared objects. Immersive collaboration is a key application of metaverse and XR technologies for the enterprise.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:immersive-computing", "label": "Immersive Computing"}],
-    "enables": [{"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:immersive-computing",
+        "label": "Immersive Computing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ]
   },
   "quality": 0.72
 }

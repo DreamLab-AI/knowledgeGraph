@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Torque Sensor
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

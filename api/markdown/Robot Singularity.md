@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robot Singularity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,15 +51,30 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:differential-kinematics", "label": "Differential Kinematics"}
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:differential-kinematics",
+        "label": "Differential Kinematics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      }
     ]
   },
   "quality": 0.35,
@@ -75,32 +85,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robot-singularity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:96ecb3c05a1405eba266f9562932c3846fc083e825c104875dceaea1688f9994"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Robot Singularity is a configuration of a serial or parallel robot manipulator at which the Jacobian matrix loses rank, causing the determinant to approach zero. At a singularity, the robot loses one or more degrees of freedom in Cartesian space: it cannot produce force or motion in certain directions, and inverse kinematics solutions become ill-conditioned or non-unique. Singularity avoidance and detection are central problems in motion planning, trajectory generation, and real-time control of robotic arms.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Single Point Of Failure
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

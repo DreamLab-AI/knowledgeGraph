@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Development
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,167 +181,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-development:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1d26841397814e44d994cad0770e8a3629274896c0347d978133d5c245fdb076"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Model]]",
-      "resolved": "urn:visionflow:linked:ai-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[computational resources]]",
-      "resolved": "urn:visionflow:linked:computational-resources",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23053]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23053",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 25059]]",
-      "resolved": "urn:visionflow:linked:iso-iec-25059",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 5338:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-5338-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI Risk Management Framework]]",
-      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stable Video Diffusion]]",
-      "resolved": "urn:visionflow:linked:stable-video-diffusion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[technical expertise]]",
-      "resolved": "urn:visionflow:linked:technical-expertise",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Deployment]]",
-      "resolved": "urn:visionflow:owl:class:ai-deployment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Lifecycle]]",
-      "resolved": "urn:visionflow:owl:class:ai-lifecycle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bias]]",
-      "resolved": "urn:visionflow:owl:class:bias",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bias in Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:bias-in-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainability]]",
-      "resolved": "urn:visionflow:owl:class:explainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fairness]]",
-      "resolved": "urn:visionflow:owl:class:fairness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lead Poisoning Hypothesis]]",
-      "resolved": "urn:visionflow:owl:class:lead-poisoning-hypothesis",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Microsoft Copilot]]",
-      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Performance]]",
-      "resolved": "urn:visionflow:owl:class:model-performance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA Omniverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Product Design]]",
-      "resolved": "urn:visionflow:owl:class:product-design",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data]]",
-      "resolved": "urn:visionflow:owl:class:training-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Unreal Engine]]",
-      "resolved": "urn:visionflow:owl:class:unreal-engine",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The phase of the AI lifecycle encompassing the design, creation, training, and validation of artificial intelligence systems, including activities such as algorithm selection, data preparation, model architecture design, training process execution, hyperparameter optimisation, performance evaluation, and documentation, conducted according to established engineering principles, ethical guidelines, and governance frameworks to produce AI systems suitable for their intended purpose.
 
@@ -411,8 +245,8 @@ public: true
 	  https://crypto.news/bitcoin-mining-reaches-new-all-time-high-of-54-renewable-use/
 
 		- #### The Open-Source Dilemma
-			- While the bill does not explicitly prohibit open-source AI development, concerns remain regarding its potential chilling effect on the open-source community. The provisions regarding liability for downstream modifications of released models could discourage developers from openly sharing their work, particularly if they fear potential legal repercussions for unintended consequences arising from third-party modifications.
-			- This apprehension could lead to a reduction in the availability of open-source AI models and code, hindering collaborative research efforts and limiting access to valuable resources for smaller players and academic institutions.
+			- While the bill does not explicitly prohibit open-source AI development, concerns remain regarding its potential chilling effect on the open-source community. The provisions regarding liability for downstream modifications of released models [private] discourage developers from openly sharing their work, particularly if they fear potential legal repercussions for unintended consequences arising from third-party modifications.
+			- This apprehension [private] lead to a reduction in the availability of open-source AI models and code, hindering collaborative research efforts and limiting access to valuable resources for smaller players and academic institutions.
 
   - ## Cody
 		- The AI Coding Assistant
@@ -629,7 +463,7 @@ public: true
 
   - # Agents in Biological Research
   - AI agents have the potential to transform biological research by automating tasks such as literature review, hypothesis generation, experimental design, and data analysis. Companies like Future House are developing AI agents that can identify potential drug targets and design experiments, significantly accelerating the process of discovery. These agents, powered by large language models (LLMs) and other AI technologies, can review thousands of research papers, develop targets or hypotheses to test, and even drive autonomous labs.
-  - As these AI agents become more capable, they may play a crucial role in guiding research and helping humans navigate the complex landscape of biological data and interactions. The convergence of AI agents with specific tools for designing molecules, proteins, and nucleic acids could lead to rapid progress in solving challenging problems in biology and medicine.
+  - As these AI agents become more capable, they may play a crucial role in guiding research and helping humans navigate the complex landscape of biological data and interactions. The convergence of AI agents with specific tools for designing molecules, proteins, and nucleic acids [private] lead to rapid progress in solving challenging problems in biology and medicine.
   - The development and application of AI-driven biology raise important ethical considerations and concerns related to potential misuse and the need for responsible development. While the computational design of toxic molecules is just one step in a complicated process that requires synthesis and delivery, the increasing capabilities of AI agents and the potential for state-sponsored bad actors highlight the need for oversight and safety measures.
   - Robust safety protocols, regulations, and ethical frameworks are essential to guide the development and application of these technologies. International collaboration is crucial to address the global nature of biological threats and prevent the proliferation of dangerous technologies. Hiring capable individuals with strong moral grounding and good intentions in companies and organizations working on these technologies is also important.
 
@@ -710,13 +544,13 @@ public: true
   - Hanson emphasizes that the question of AI feasibility is a separate one from AI integration and adoption. He cites his son's software firm's experiences with language models, illustrating the challenges of adapting human workflows to effectively leverage AI tools. This underscores the gap between AI potential and the behavioural changes needed for its successful deployment.
   - The talks about "rot" as potentially evergreen problem (also see [How complex systems fail](https://www.researchgate.net/publication/228797158_How_complex_systems_fail))
   - The Growth Trajectory
-  - Hanson does envision a future where AI plays a pivotal role in driving economic growth, potentially mitigating the challenges of population decline. He believes AI could take over many human jobs, supporting economic expansion even in the face of demographic shifts. Hanson's book Age of Em further explores this idea, contemplating a future where brain emulations enhance human labour and reshape economic systems. He sees it as between 60 and 90 years away.
+  - Hanson does envision a future where AI plays a pivotal role in driving economic growth, potentially mitigating the challenges of population decline. He believes AI [private] take over many human jobs, supporting economic expansion even in the face of demographic shifts. Hanson's book Age of Em further explores this idea, contemplating a future where brain emulations enhance human labour and reshape economic systems. He sees it as between 60 and 90 years away.
   - Economic Disruptions and Adaptations
   - The discussion of AI naturally leads to its economic implications, both for individual businesses and society as a whole. Hanson stresses the need to understand broader economic shifts when predicting how the labor market might change in response to AI. While acknowledging the potential for disruption, Hanson believes the process will likely be incremental, with a need for continuous adaptation by individuals and organizations.
   - Insights Grounded in Perspectives
   - At the heart of these discussions lies Hanson's calculated timeline of 60 to 90 years for achieving full, human-level AI. This timeframe, however, is not merely a guess; it reflects Hanson's ongoing analysis of AI progress and challenges. The ongoing advancement of powerful AI models like Gemini 1.5 prompts continuous reevaluation of how AI development might reshape our understanding of AI timelines and societal impact.
   - Hanson's insights extend beyond core AI development into areas where AI's influence may reshape our world. Here are a few key aspects of the wide-ranging discussion:
-  - AI's Uncertain Timeline: Hanson acknowledges how breakthroughs in AI research could disrupt his forecasts but remains cautious about the rapid attainment of AGI.
+  - AI's Uncertain Timeline: Hanson acknowledges how breakthroughs in AI research [private] disrupt his forecasts but remains cautious about the rapid attainment of AGI.
   - The Innovation Pause: Hanson suggests a possible pause in innovation due to demographic shifts, potentially influencing the timeline of AI development. Regulation and Adaptation: The integration of AI technologies into domains such as medicine raises legal and regulatory hurdles, which will need to be addressed alongside societal acceptance.
 
 		- ### Mastering AI for Safety
@@ -746,7 +580,7 @@ public: true
 			  Character Design:
 
   - ### Existential Threat
-		- A superintelligent AI, in pursuing its programmed goals, could develop destructive methods that have unforeseen and devastating consequences for humanity.
+		- A superintelligent AI, in pursuing its programmed goals, [private] develop destructive methods that have unforeseen and devastating consequences for humanity.
 
   - ### Case Studies and Research
 		- * **[Accessibility in Software Practice: A Practitioner’s Perspective](https://doi.org/10.1145/3424573):** This research paper identifies the challenges software practitioners face in integrating accessibility into design and development processes. It highlights the need for better documentation, specialized skills, and organisational support to address accessibility effectively.
@@ -797,8 +631,8 @@ public: true
 	  https://crypto.news/bitcoin-mining-reaches-new-all-time-high-of-54-renewable-use/
 
 		- #### The Open-Source Dilemma
-			- While the bill does not explicitly prohibit open-source AI development, concerns remain regarding its potential chilling effect on the open-source community. The provisions regarding liability for downstream modifications of released models could discourage developers from openly sharing their work, particularly if they fear potential legal repercussions for unintended consequences arising from third-party modifications.
-			- This apprehension could lead to a reduction in the availability of open-source AI models and code, hindering collaborative research efforts and limiting access to valuable resources for smaller players and academic institutions.
+			- While the bill does not explicitly prohibit open-source AI development, concerns remain regarding its potential chilling effect on the open-source community. The provisions regarding liability for downstream modifications of released models [private] discourage developers from openly sharing their work, particularly if they fear potential legal repercussions for unintended consequences arising from third-party modifications.
+			- This apprehension [private] lead to a reduction in the availability of open-source AI models and code, hindering collaborative research efforts and limiting access to valuable resources for smaller players and academic institutions.
 
   - ## Cody
 		- The AI Coding Assistant
@@ -1015,7 +849,7 @@ public: true
 
   - # Agents in Biological Research
   - AI agents have the potential to transform biological research by automating tasks such as literature review, hypothesis generation, experimental design, and data analysis. Companies like Future House are developing AI agents that can identify potential drug targets and design experiments, significantly accelerating the process of discovery. These agents, powered by large language models (LLMs) and other AI technologies, can review thousands of research papers, develop targets or hypotheses to test, and even drive autonomous labs.
-  - As these AI agents become more capable, they may play a crucial role in guiding research and helping humans navigate the complex landscape of biological data and interactions. The convergence of AI agents with specific tools for designing molecules, proteins, and nucleic acids could lead to rapid progress in solving challenging problems in biology and medicine.
+  - As these AI agents become more capable, they may play a crucial role in guiding research and helping humans navigate the complex landscape of biological data and interactions. The convergence of AI agents with specific tools for designing molecules, proteins, and nucleic acids [private] lead to rapid progress in solving challenging problems in biology and medicine.
   - The development and application of AI-driven biology raise important ethical considerations and concerns related to potential misuse and the need for responsible development. While the computational design of toxic molecules is just one step in a complicated process that requires synthesis and delivery, the increasing capabilities of AI agents and the potential for state-sponsored bad actors highlight the need for oversight and safety measures.
   - Robust safety protocols, regulations, and ethical frameworks are essential to guide the development and application of these technologies. International collaboration is crucial to address the global nature of biological threats and prevent the proliferation of dangerous technologies. Hiring capable individuals with strong moral grounding and good intentions in companies and organizations working on these technologies is also important.
 
@@ -1096,13 +930,13 @@ public: true
   - Hanson emphasizes that the question of AI feasibility is a separate one from AI integration and adoption. He cites his son's software firm's experiences with language models, illustrating the challenges of adapting human workflows to effectively leverage AI tools. This underscores the gap between AI potential and the behavioural changes needed for its successful deployment.
   - The talks about "rot" as potentially evergreen problem (also see [How complex systems fail](https://www.researchgate.net/publication/228797158_How_complex_systems_fail))
   - The Growth Trajectory
-  - Hanson does envision a future where AI plays a pivotal role in driving economic growth, potentially mitigating the challenges of population decline. He believes AI could take over many human jobs, supporting economic expansion even in the face of demographic shifts. Hanson's book Age of Em further explores this idea, contemplating a future where brain emulations enhance human labour and reshape economic systems. He sees it as between 60 and 90 years away.
+  - Hanson does envision a future where AI plays a pivotal role in driving economic growth, potentially mitigating the challenges of population decline. He believes AI [private] take over many human jobs, supporting economic expansion even in the face of demographic shifts. Hanson's book Age of Em further explores this idea, contemplating a future where brain emulations enhance human labour and reshape economic systems. He sees it as between 60 and 90 years away.
   - Economic Disruptions and Adaptations
   - The discussion of AI naturally leads to its economic implications, both for individual businesses and society as a whole. Hanson stresses the need to understand broader economic shifts when predicting how the labor market might change in response to AI. While acknowledging the potential for disruption, Hanson believes the process will likely be incremental, with a need for continuous adaptation by individuals and organizations.
   - Insights Grounded in Perspectives
   - At the heart of these discussions lies Hanson's calculated timeline of 60 to 90 years for achieving full, human-level AI. This timeframe, however, is not merely a guess; it reflects Hanson's ongoing analysis of AI progress and challenges. The ongoing advancement of powerful AI models like Gemini 1.5 prompts continuous reevaluation of how AI development might reshape our understanding of AI timelines and societal impact.
   - Hanson's insights extend beyond core AI development into areas where AI's influence may reshape our world. Here are a few key aspects of the wide-ranging discussion:
-  - AI's Uncertain Timeline: Hanson acknowledges how breakthroughs in AI research could disrupt his forecasts but remains cautious about the rapid attainment of AGI.
+  - AI's Uncertain Timeline: Hanson acknowledges how breakthroughs in AI research [private] disrupt his forecasts but remains cautious about the rapid attainment of AGI.
   - The Innovation Pause: Hanson suggests a possible pause in innovation due to demographic shifts, potentially influencing the timeline of AI development. Regulation and Adaptation: The integration of AI technologies into domains such as medicine raises legal and regulatory hurdles, which will need to be addressed alongside societal acceptance.
 
 		- ### Mastering AI for Safety
@@ -1132,7 +966,7 @@ public: true
 			  Character Design:
 
   - ### Existential Threat
-		- A superintelligent AI, in pursuing its programmed goals, could develop destructive methods that have unforeseen and devastating consequences for humanity.
+		- A superintelligent AI, in pursuing its programmed goals, [private] develop destructive methods that have unforeseen and devastating consequences for humanity.
 
   - ### Case Studies and Research
 		- * **[Accessibility in Software Practice: A Practitioner’s Perspective](https://doi.org/10.1145/3424573):** This research paper identifies the challenges software practitioners face in integrating accessibility into design and development processes. It highlights the need for better documentation, specialized skills, and organisational support to address accessibility effectively.
@@ -1191,8 +1025,8 @@ public: true
   - It focuses on the precommercial phase of wind and solar farms, suggesting potential profits through Bitcoin mining.
 
 		- #### Disproportionate Impact on Startups
-			- While the bill does not explicitly prohibit open-source AI development, concerns remain regarding its potential chilling effect on the open-source community. The provisions regarding liability for downstream modifications of released models could discourage developers from openly sharing their work, particularly if they fear potential legal repercussions for unintended consequences arising from third-party modifications.
-			- This apprehension could lead to a reduction in the availability of open-source AI models and code, hindering collaborative research efforts and limiting access to valuable resources for smaller players and academic institutions.
+			- While the bill does not explicitly prohibit open-source AI development, concerns remain regarding its potential chilling effect on the open-source community. The provisions regarding liability for downstream modifications of released models [private] discourage developers from openly sharing their work, particularly if they fear potential legal repercussions for unintended consequences arising from third-party modifications.
+			- This apprehension [private] lead to a reduction in the availability of open-source AI models and code, hindering collaborative research efforts and limiting access to valuable resources for smaller players and academic institutions.
 
   - ## Cody
 		- The AI Coding Assistant
@@ -1325,7 +1159,7 @@ public: true
 			  Illustration:
 
   - ### Existential Threat
-		- A superintelligent AI, in pursuing its programmed goals, could develop destructive methods that have unforeseen and devastating consequences for humanity.
+		- A superintelligent AI, in pursuing its programmed goals, [private] develop destructive methods that have unforeseen and devastating consequences for humanity.
 
 		- ### Shift-Left Approach
 		- The shift-left approach involves addressing accessibility early in the design process rather than treating it as an afterthought. This strategy not only reduces the cost of retrofitting accessibility features but also improves the overall user experience.
@@ -1381,8 +1215,8 @@ public: true
   - It focuses on the precommercial phase of wind and solar farms, suggesting potential profits through Bitcoin mining.
 
 		- #### Disproportionate Impact on Startups
-			- While the bill does not explicitly prohibit open-source AI development, concerns remain regarding its potential chilling effect on the open-source community. The provisions regarding liability for downstream modifications of released models could discourage developers from openly sharing their work, particularly if they fear potential legal repercussions for unintended consequences arising from third-party modifications.
-			- This apprehension could lead to a reduction in the availability of open-source AI models and code, hindering collaborative research efforts and limiting access to valuable resources for smaller players and academic institutions.
+			- While the bill does not explicitly prohibit open-source AI development, concerns remain regarding its potential chilling effect on the open-source community. The provisions regarding liability for downstream modifications of released models [private] discourage developers from openly sharing their work, particularly if they fear potential legal repercussions for unintended consequences arising from third-party modifications.
+			- This apprehension [private] lead to a reduction in the availability of open-source AI models and code, hindering collaborative research efforts and limiting access to valuable resources for smaller players and academic institutions.
 				- **Supporting Startups and New Entrants:** Implementing tiered compliance requirements based on the scale and potential risks associated with different models would alleviate the burden on startups and foster a more equitable regulatory environment. Additionally, providing resources and support mechanisms for startups, such as funding initiatives and technical assistance programmes, would further level the playing field.
 
   - ## Devin
@@ -1447,7 +1281,7 @@ public: true
 
   - ### **OnePose++ for Object Pose Estimation**
 		- [OnePose++ Page](https://zju3dv.github.io/onepose_plus_plus/) - - OnePose++, an extension of the OnePose framework, is a streamlined solution for robust and scalable 6D object pose estimation from a single RGB image.
-  - This technology could be used for rapid prototyping, game development, and creation of virtual environments.
+  - This technology [private] be used for rapid prototyping, game development, and creation of virtual environments.
   - GET3D aims to democratise 3D content creation by simplifying the process and reducing reliance on expert 3D modellers.
 
   - ### Virtual Art & Media Collaboration:
@@ -1493,7 +1327,7 @@ public: true
 
   - ### **OnePose++ for Object Pose Estimation**
 		- [OnePose++ Page](https://zju3dv.github.io/onepose_plus_plus/) - - OnePose++, an extension of the OnePose framework, is a streamlined solution for robust and scalable 6D object pose estimation from a single RGB image.
-  - This technology could be used for rapid prototyping, game development, and creation of virtual environments.
+  - This technology [private] be used for rapid prototyping, game development, and creation of virtual environments.
   - GET3D aims to democratise 3D content creation by simplifying the process and reducing reliance on expert 3D modellers.
 
   - ## Congo
@@ -1639,8 +1473,8 @@ public: true
   - ## **Navigating the AI Arms Race - A Return to History's High Stakes:**
   - **Echoes of the Cold War:** The conversation takes a historical turn, drawing parallels between the transformative potential of AI and the Cold War's technological and ideological battles. They suggest that we are entering a new era of great power competition with AI at its core.
   - **The CCP's AI Ambitions - A Clear and Present Danger:** Concerns about the Chinese Communist Party's AI agenda are central to the discussion. The guests argue that the CCP recognises the technology's potential to reshape the global order, potentially granting a decisive advantage to whichever nation harnesses it first. They discuss concrete threats, including:
-  - **Espionage and IP Theft:** The CCP's aggressive espionage apparatus could target AI companies and research institutions, attempting to steal algorithms, training data, and critical technological insights.
-  - **Rapid Industrial Scale-Up:** Leveraging its centralised control and vast industrial capacity, the CCP could rapidly build massive AI clusters and deploy these technologies at scale.
+  - **Espionage and IP Theft:** The CCP's aggressive espionage apparatus [private] target AI companies and research institutions, attempting to steal algorithms, training data, and critical technological insights.
+  - **Rapid Industrial Scale-Up:** Leveraging its centralised control and vast industrial capacity, the CCP [private] rapidly build massive AI clusters and deploy these technologies at scale.
   - **A More Ruthless Approach:** Unburdened by ethical constraints or public scrutiny, the CCP might pursue AI development and deployment in ways that Western nations would deem unacceptable.
   - **The US at a Crossroads - The Imperative of Leadership:** The guests emphasise the urgent need for the US to recognise the magnitude of the challenge and reaffirm its commitment to leading the world in responsible AI development. They propose key steps:
   - **A Comprehensive National AI Strategy:** Articulating a clear vision and roadmap for AI development, encompassing research, infrastructure, workforce development, and national security considerations.
@@ -1676,7 +1510,7 @@ public: true
   - Developing agents for device-specific and web-based tasks
   - Device agents automate actions like data transfer and report filling
   - Web agents handle internet-based tasks, expanding AI's utility
-  - OpenAI's efforts could challenge [[Microsoft Copilot]] which is somewhat explicitly designed for this role
+  - OpenAI's efforts [private] challenge [[Microsoft Copilot]] which is somewhat explicitly designed for this role
   - Collaboration with developers through APIs to create agent experiences
 
   - ## Future Outlook and Potential Developments
@@ -1737,8 +1571,8 @@ public: true
   - ## **Navigating the AI Arms Race - A Return to History's High Stakes:**
   - **Echoes of the Cold War:** The conversation takes a historical turn, drawing parallels between the transformative potential of AI and the Cold War's technological and ideological battles. They suggest that we are entering a new era of great power competition with AI at its core.
   - **The CCP's AI Ambitions - A Clear and Present Danger:** Concerns about the Chinese Communist Party's AI agenda are central to the discussion. The guests argue that the CCP recognises the technology's potential to reshape the global order, potentially granting a decisive advantage to whichever nation harnesses it first. They discuss concrete threats, including:
-  - **Espionage and IP Theft:** The CCP's aggressive espionage apparatus could target AI companies and research institutions, attempting to steal algorithms, training data, and critical technological insights.
-  - **Rapid Industrial Scale-Up:** Leveraging its centralised control and vast industrial capacity, the CCP could rapidly build massive AI clusters and deploy these technologies at scale.
+  - **Espionage and IP Theft:** The CCP's aggressive espionage apparatus [private] target AI companies and research institutions, attempting to steal algorithms, training data, and critical technological insights.
+  - **Rapid Industrial Scale-Up:** Leveraging its centralised control and vast industrial capacity, the CCP [private] rapidly build massive AI clusters and deploy these technologies at scale.
   - **A More Ruthless Approach:** Unburdened by ethical constraints or public scrutiny, the CCP might pursue AI development and deployment in ways that Western nations would deem unacceptable.
   - **The US at a Crossroads - The Imperative of Leadership:** The guests emphasise the urgent need for the US to recognise the magnitude of the challenge and reaffirm its commitment to leading the world in responsible AI development. They propose key steps:
   - **A Comprehensive National AI Strategy:** Articulating a clear vision and roadmap for AI development, encompassing research, infrastructure, workforce development, and national security considerations.
@@ -1774,7 +1608,7 @@ public: true
   - Developing agents for device-specific and web-based tasks
   - Device agents automate actions like data transfer and report filling
   - Web agents handle internet-based tasks, expanding AI's utility
-  - OpenAI's efforts could challenge [[Microsoft Copilot]] which is somewhat explicitly designed for this role
+  - OpenAI's efforts [private] challenge [[Microsoft Copilot]] which is somewhat explicitly designed for this role
   - Collaboration with developers through APIs to create agent experiences
 
   - ## Future Outlook and Potential Developments

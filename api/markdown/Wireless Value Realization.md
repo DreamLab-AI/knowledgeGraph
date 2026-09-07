@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wireless Value Realization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,53 +56,66 @@ public: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:6-g-network-slice", "label": "6G Network Slice"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:6-g-network-slice",
+        "label": "6G Network Slice"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
-      {"@id": "urn:ngm:class:edge-ai-for-smart-cities", "label": "Edge AI for Smart Cities"},
-      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"}
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-for-smart-cities",
+        "label": "Edge AI for Smart Cities"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:edge-cloud-collaboration", "label": "Edge-Cloud Collaboration"},
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:edge-mesh-network", "label": "Edge Mesh Network"},
-      {"@id": "urn:ngm:class:io-t-sensors", "label": "Io T Sensors"}
+      {
+        "@id": "urn:ngm:class:edge-cloud-collaboration",
+        "label": "Edge-Cloud Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:edge-mesh-network",
+        "label": "Edge Mesh Network"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "Io T Sensors"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:wireless-value-realization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b9c063e4340126876cf1c990e285298cd7906b7e697d83a7b82cb38664f79969"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - [Generated from Gartner emerging tech analysis]

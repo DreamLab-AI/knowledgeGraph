@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Programming Language
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,47 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:programming-language:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:80efa816c8860e7fb796d7c46309d61c3d2022b95e5e58b1dbf053ec0e10d81a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Compiler Optimization]]",
-      "resolved": "urn:visionflow:linked:compiler-optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Domain-Specific Languages]]",
-      "resolved": "urn:visionflow:linked:domain-specific-languages",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Julia Language]]",
-      "resolved": "urn:visionflow:linked:julia-language",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Python Ecosystem]]",
-      "resolved": "urn:visionflow:linked:python-ecosystem",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications. Popular languages include Python (dominant in ML/DL ecosystems), Julia (high-performance numerical computing), R (statistical analysis), and domain-specific languages like TensorFlow's graph definition language. Key features include support for tensor operations, automatic differentiation, GPU acceleration, functional programming paradigms, and integration with ML frameworks. Modern AI languages emphasize readability, expressiveness, performance, and ecosystem richness.

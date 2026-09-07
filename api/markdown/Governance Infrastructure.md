@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Governance Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Governance infrastructure is the set of tools, smart contracts, and systems that enable decentralised organisations to propose, deliberate, vote on, and execute collective decisions. It encompasses voting modules, treasury management, delegation, and on-chain execution that turn community decisions into enforced actions. It is the operational backbone of DAOs and on-chain governance.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cross-platform-compliance-hub", "label": "Cross-Platform Compliance Hub"}, {"@id": "urn:ngm:class:dao-tooling", "label": "DAO Tooling"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cross-platform-compliance-hub",
+        "label": "Cross-Platform Compliance Hub"
+      },
+      {
+        "@id": "urn:ngm:class:dao-tooling",
+        "label": "DAO Tooling"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Asset Lending
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-asset-lending:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d25901eacd2fa402759eade89305f2a308efad79719f276bfed2cac36eedea8c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collateral Management]]",
-      "resolved": "urn:visionflow:linked:collateral-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Leverage Trading]]",
-      "resolved": "urn:visionflow:linked:leverage-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Liquidation Systems]]",
-      "resolved": "urn:visionflow:linked:liquidation-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Yield Generation]]",
-      "resolved": "urn:visionflow:linked:yield-generation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi Services]]",
-      "resolved": "urn:visionflow:owl:class:de-fi-services",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Provision]]",
-      "resolved": "urn:visionflow:owl:class:liquidity-provision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Financial services enabling cryptocurrency holders to lend their digital assets to borrowers through centralized platforms or decentralized protocols, earning interest yields while providing liquidity for trading, leverage, and other financial activities secured by collateralized positions.

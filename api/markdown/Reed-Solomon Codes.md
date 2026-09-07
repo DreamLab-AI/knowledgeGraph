@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reed-Solomon Codes
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

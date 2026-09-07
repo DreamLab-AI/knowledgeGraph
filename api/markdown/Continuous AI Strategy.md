@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Continuous AI Strategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "continuous-ai-strategy",
   "title": "Continuous AI Strategy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Agentic Consulting", "Dynamic AI Recommendations"],
+  "vc:outboundWikilinks": [
+    "Agentic Consulting",
+    "Dynamic AI Recommendations"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise Ai"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:enterprise-ai",
+      "label": "Enterprise Ai"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise Ai"}, {"@id": "urn:ngm:class:ai-maturity-assessment", "label": "AI Maturity Assessment"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise Ai"
+      },
+      {
+        "@id": "urn:ngm:class:ai-maturity-assessment",
+        "label": "AI Maturity Assessment"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

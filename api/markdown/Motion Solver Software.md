@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Motion Solver Software
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:motion-solver-software:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e55b16bc6ea326fb2bf3421ee389e37bb2e593f6ef889d0ab8aa1508fa3b961f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real Time Character Animation]]",
-      "resolved": "urn:visionflow:owl:class:real-time-character-animation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Simulation Software]]",
-      "resolved": "urn:visionflow:owl:class:simulation-software",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Specialized software that uses multibody dynamics and physics-based algorithms to calculate reaction forces, torques, velocities, accelerations, and motor behaviors for mechanical systems and animated characters, enabling accurate simulation of rigid and flexible body movements.

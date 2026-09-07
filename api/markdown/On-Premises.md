@@ -1,8 +1,3 @@
----
-public: true
----
-
-# On-Premises
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,17 +7,43 @@ public: true
   "title": "On-Premises",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:infrastructure", "vc:label": "Infrastructure"},
-    {"@id": "urn:visionflow:linked:cloud-computing", "vc:label": "Cloud Computing"},
-    {"@id": "urn:visionflow:linked:hybrid-cloud", "vc:label": "Hybrid Cloud"},
-    {"@id": "urn:visionflow:linked:infrastructure-as-a-service", "vc:label": "Infrastructure As A Service"},
-    {"@id": "urn:visionflow:linked:software-as-a-service", "vc:label": "Software As A Service"},
-    {"@id": "urn:visionflow:linked:data-centre", "vc:label": "Data Centre"},
-    {"@id": "urn:visionflow:linked:edge-computing", "vc:label": "Edge Computing"}
+    {
+      "@id": "urn:visionflow:linked:infrastructure",
+      "vc:label": "Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:hybrid-cloud",
+      "vc:label": "Hybrid Cloud"
+    },
+    {
+      "@id": "urn:visionflow:linked:infrastructure-as-a-service",
+      "vc:label": "Infrastructure As A Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-as-a-service",
+      "vc:label": "Software As A Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-centre",
+      "vc:label": "Data Centre"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-computing",
+      "vc:label": "Edge Computing"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -41,16 +62,34 @@ public: true
   },
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:infrastructure-as-a-service", "label": "Infrastructure as a Service"},
-      {"@id": "urn:ngm:class:software-as-a-service", "label": "Software as a Service"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure as a Service"
+      },
+      {
+        "@id": "urn:ngm:class:software-as-a-service",
+        "label": "Software as a Service"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:hybrid-cloud", "label": "Hybrid Cloud"}
+      {
+        "@id": "urn:ngm:class:hybrid-cloud",
+        "label": "Hybrid Cloud"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ]
   },
   "quality": 0.8,

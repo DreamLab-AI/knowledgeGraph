@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0021 robot kinematics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,42 @@ public: true
   "quality": 0.7,
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"}
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"},
-      {"@id": "urn:ngm:class:rb-0023-degrees-of-freedom", "label": "rb 0023 degrees of freedom"},
-      {"@id": "urn:ngm:class:rb-0031-singularity", "label": "rb 0031 singularity"}
+      {
+        "@id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "rb 0023 degrees of freedom"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0031-singularity",
+        "label": "rb 0031 singularity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"},
-      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"}
+      {
+        "@id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0064-computed-torque-control",
+        "label": "rb 0064 computed torque control"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0021-robot-kinematics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1b50623c2cfcc10fadbfa8273b03de816bcbeda48339aa6c096c1adf3731150e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ### Primary Definition

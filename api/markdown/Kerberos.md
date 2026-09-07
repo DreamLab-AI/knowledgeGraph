@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Kerberos
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,57 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:kerberos:d6f845779b5f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:134a336c965c6f9a3040d4020a4b88a325535b8abcf7026b1ed99940e295fa6b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Encryption]]",
-      "resolved": "urn:visionflow:linked:encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Single Sign-On]]",
-      "resolved": "urn:visionflow:linked:single-sign-on",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Protocols]]",
-      "resolved": "urn:visionflow:linked:cryptographic-protocols",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Authentication]]",
-      "resolved": "urn:visionflow:linked:authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://web.mit.edu/kerberos/]]",
-      "resolved": "urn:visionflow:linked:https-web-mit-edu-kerberos",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://datatracker.ietf.org/doc/html/rfc4120]]",
-      "resolved": "urn:visionflow:linked:https-datatracker-ietf-org-doc-html-rfc-4120",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Kerberos is a network authentication protocol that uses tickets and symmetric key cryptography to allow nodes to prove identity over an untrusted network.

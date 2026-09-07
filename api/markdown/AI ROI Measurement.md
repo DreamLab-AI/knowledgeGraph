@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI ROI Measurement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-roi-measurement",
   "title": "AI ROI Measurement",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Higher-order AI benefits", "Time savings"],
+  "vc:outboundWikilinks": [
+    "Higher-order AI benefits",
+    "Time savings"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}, {"@id": "urn:ngm:class:model", "label": "Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Upscaling and Super-Resolution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -299,23 +294,56 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:super-resolution", "label": "Super Resolution"}
+      {
+        "@id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:image-processing-software", "label": "Image Processing Software"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing-software",
+        "label": "Image Processing Software"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      }
     ]
   },
   "quality": 0.8,
@@ -326,332 +354,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-upscaling-and-super-resolution:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:66caed5f36e2538e7bf6c986b0178bef00b746f43b45ed11dfbf6e0381481b27"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AKT]]",
-      "resolved": "urn:visionflow:linked:akt",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AlexNet]]",
-      "resolved": "urn:visionflow:linked:alex-net",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Arweave]]",
-      "resolved": "urn:visionflow:linked:arweave",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CLIP]]",
-      "resolved": "urn:visionflow:linked:clip",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CNN]]",
-      "resolved": "urn:visionflow:linked:cnn",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CodeFormer]]",
-      "resolved": "urn:visionflow:linked:code-former",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ComputerVisionDomain]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ControlNet]]",
-      "resolved": "urn:visionflow:linked:control-net",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Diffusion Model]]",
-      "resolved": "urn:visionflow:linked:diffusion-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ESRGAN]]",
-      "resolved": "urn:visionflow:linked:esrgan",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GAN]]",
-      "resolved": "urn:visionflow:linked:gan",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Generator]]",
-      "resolved": "urn:visionflow:linked:generator",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GIMP]]",
-      "resolved": "urn:visionflow:linked:gimp",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Google Photos]]",
-      "resolved": "urn:visionflow:linked:google-photos",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[iOS]]",
-      "resolved": "urn:visionflow:linked:i-os",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Image-to-Image]]",
-      "resolved": "urn:visionflow:linked:image-to-image",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IPFS]]",
-      "resolved": "urn:visionflow:linked:ipfs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Latent Diffusion Model]]",
-      "resolved": "urn:visionflow:linked:latent-diffusion-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Lightroom]]",
-      "resolved": "urn:visionflow:linked:lightroom",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MPV]]",
-      "resolved": "urn:visionflow:linked:mpv",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NeRF]]",
-      "resolved": "urn:visionflow:linked:ne-rf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NVIDIA Shield]]",
-      "resolved": "urn:visionflow:linked:nvidia-shield",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OpenCV]]",
-      "resolved": "urn:visionflow:linked:open-cv",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Photoshop]]",
-      "resolved": "urn:visionflow:linked:photoshop",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Polygon]]",
-      "resolved": "urn:visionflow:linked:polygon",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-ESRGAN]]",
-      "resolved": "urn:visionflow:linked:real-esrgan",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Remini]]",
-      "resolved": "urn:visionflow:linked:remini",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RNDR]]",
-      "resolved": "urn:visionflow:linked:rndr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Score Matching]]",
-      "resolved": "urn:visionflow:linked:score-matching",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SD 1.5]]",
-      "resolved": "urn:visionflow:linked:sd-1-5",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SDXL]]",
-      "resolved": "urn:visionflow:linked:sdxl",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SRGAN]]",
-      "resolved": "urn:visionflow:linked:srgan",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SUPIR]]",
-      "resolved": "urn:visionflow:linked:supir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tensor Core]]",
-      "resolved": "urn:visionflow:linked:tensor-core",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TensorRT]]",
-      "resolved": "urn:visionflow:linked:tensor-rt",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Topaz Gigapixel AI]]",
-      "resolved": "urn:visionflow:linked:topaz-gigapixel-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UNet]]",
-      "resolved": "urn:visionflow:linked:unet",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[VAE]]",
-      "resolved": "urn:visionflow:linked:vae",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[VGG]]",
-      "resolved": "urn:visionflow:linked:vgg",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[VGG19]]",
-      "resolved": "urn:visionflow:linked:vgg19",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[xFormers]]",
-      "resolved": "urn:visionflow:linked:x-formers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[YouTube]]",
-      "resolved": "urn:visionflow:linked:you-tube",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Android]]",
-      "resolved": "urn:visionflow:owl:class:android",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
-      "resolved": "urn:visionflow:owl:class:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Network]]",
-      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:owl:class:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:owl:class:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:owl:class:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LoRA]]",
-      "resolved": "urn:visionflow:owl:class:lo-ra",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:owl:class:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Prompt Engineering]]",
-      "resolved": "urn:visionflow:owl:class:prompt-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Operating System]]",
-      "resolved": "urn:visionflow:owl:class:robot-operating-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Signal Processing]]",
-      "resolved": "urn:visionflow:owl:class:signal-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:owl:class:transformer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI-powered techniques for enhancing image and video resolution using deep learning models to generate high-resolution outputs from low-resolution inputs, including super-resolution, interpolation, and detail enhancement
@@ -1634,7 +1336,7 @@ public: true
   - "ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks"
   - ECCV 2018 PIRM Challenge winner
   - RRDB architecture, relativistic discriminator
-  - Perceptual index (PI): Lower is better, ESRGAN 2.26 vs. SRGAN 3.46
+  - Perceptual [private] (PI): Lower is better, ESRGAN 2.26 vs. SRGAN 3.46
   - GitHub: [xinntao/ESRGAN](https://github.com/xinntao/ESRGAN) - 24K+ stars
 
   - ### Recent Advances (2023-2024)

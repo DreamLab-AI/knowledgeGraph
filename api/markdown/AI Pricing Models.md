@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Pricing Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-pricing-models",
   "title": "AI Pricing Models",
   "vc:public": true,
-  "vc:outboundWikilinks": ["SemiAnalysis", "Token Subsidy"],
+  "vc:outboundWikilinks": [
+    "SemiAnalysis",
+    "Token Subsidy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-economics", "label": "AI Economics"}, {"@id": "urn:ngm:class:usage-based-consumption", "label": "Usage-Based Consumption"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-economics",
+        "label": "AI Economics"
+      },
+      {
+        "@id": "urn:ngm:class:usage-based-consumption",
+        "label": "Usage-Based Consumption"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

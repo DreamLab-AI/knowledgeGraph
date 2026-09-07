@@ -1,36 +1,125 @@
----
-public: true
----
-
-# Welfare Economics
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:welfare-economics", "@type":"Page", "title":"Welfare Economics", "vc:slug":"welfare-economics", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:welfare-economics",
-  "@type":"Class",
-  "label":"Welfare Economics",
-  "definition":"Welfare economics is the branch of economics that evaluates the allocation of resources and the distribution of outcomes in terms of aggregate social well-being. It formalises notions of efficiency, principally Pareto efficiency, alongside frameworks for comparing distributions through social welfare functions, and provides the normative basis for assessing market outcomes, market failures, and policy interventions. In tokenised and blockchain economies it informs mechanism design, public-goods funding, and the analysis of incentive structures that determine whether decentralised systems produce socially desirable equilibria.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:microeconomics","label":"Microeconomics"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:economics","label":"Economics"}],
-    "hasPart":[{"@id":"urn:ngm:class:utility-theory","label":"Utility Theory"},{"@id":"urn:ngm:class:public-goods","label":"Public Goods"}],
-    "uses":[{"@id":"urn:ngm:class:utility-theory","label":"Utility Theory"},{"@id":"urn:ngm:class:game-theory","label":"Game Theory"}],
-    "enables":[{"@id":"urn:ngm:class:mechanism-design","label":"Mechanism Design"}],
-    "supports":[{"@id":"urn:ngm:class:public-goods","label":"Public Goods"}],
-    "requires":[{"@id":"urn:ngm:class:microeconomics","label":"Microeconomics"}],
-    "dependsOn":[{"@id":"urn:ngm:class:utility-theory","label":"Utility Theory"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:mechanism-design","label":"Mechanism Design"},{"@id":"urn:ngm:class:behavioural-economics","label":"Behavioural Economics"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:behavioural-economics","label":"Behavioural Economics"}],
-    "relatedTo":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"},{"@id":"urn:ngm:class:economics","label":"Economics"},{"@id":"urn:ngm:class:public-goods","label":"Public Goods"}]
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:welfare-economics",
+  "@type": "Page",
+  "title": "Welfare Economics",
+  "vc:slug": "welfare-economics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:welfare-economics",
+  "@type": "Class",
+  "label": "Welfare Economics",
+  "definition": "Welfare economics is the branch of economics that evaluates the allocation of resources and the distribution of outcomes in terms of aggregate social well-being. It formalises notions of efficiency, principally Pareto efficiency, alongside frameworks for comparing distributions through social welfare functions, and provides the normative basis for assessing market outcomes, market failures, and policy interventions. In tokenised and blockchain economies it informs mechanism design, public-goods funding, and the analysis of incentive structures that determine whether decentralised systems produce socially desirable equilibria.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:microeconomics",
+      "label": "Microeconomics"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:normative-economics","label":"Normative Economics"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:normative-economics",
+      "label": "Normative Economics"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -48,7 +137,7 @@ public: true
 - ### Key aspects
   - #### Efficiency criteria
     - Pareto efficiency: no reallocation can make someone better off without making another worse off.
-    - Kaldor-Hicks compensation tests extend comparisons to allocations where winners could in principle compensate losers.
+    - Kaldor-Hicks compensation tests extend comparisons to allocations where winners [private] in principle compensate losers.
   - #### Social welfare functions
     - Aggregate individual utilities into a societal objective, encoding distributional weights and equity preferences.
     - Connect to [[Utility Theory]] and to debates over cardinal versus ordinal interpersonal comparison.

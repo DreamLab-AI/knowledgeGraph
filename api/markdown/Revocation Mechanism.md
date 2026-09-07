@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Revocation Mechanism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "A revocation mechanism is a cryptographic or registry-based procedure for invalidating a previously issued credential, certificate, or access token before its natural expiry, allowing issuers to withdraw trust following compromise, policy change, or holder misconduct. In digital identity systems, revocation mechanisms range from Certificate Revocation Lists and OCSP for X.509 certificates to Bitstring Status Lists and cryptographic accumulators for verifiable credentials. The privacy characteristics and scalability of each approach differ substantially, making mechanism selection a critical design decision.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-infrastructure", "label": "Cryptographic Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-infrastructure",
+      "label": "Cryptographic Infrastructure"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:bitstring-status-list", "label": "Bitstring Status List"},
-      {"@id": "urn:ngm:class:cryptographic-accumulator", "label": "Cryptographic Accumulator"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:bitstring-status-list",
+        "label": "Bitstring Status List"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-accumulator",
+        "label": "Cryptographic Accumulator"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:self-sovereign-identity-ssi", "label": "Self-Sovereign Identity (SSI)"},
-      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity-ssi",
+        "label": "Self-Sovereign Identity (SSI)"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:credential-definition", "label": "Credential Definition"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:credential-definition",
+        "label": "Credential Definition"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - In decentralised identity ecosystems, revocation registries may be anchored on distributed ledgers (Hyperledger Indy, Cheqd) to prevent issuer unilateral manipulation after credential issuance. On-chain revocation registries provide auditability and censorship resistance at the cost of gas fees and public visibility of registry updates. Privacy-optimised designs encrypt registry entries or use zero-knowledge proofs to hide the revocation status of individual credentials even from the registry operator, a property called revocation privacy or selective revocation anonymity.
 
   - Between 2023 and 2025, the W3C Bitstring Status List has been widely adopted in EU digital identity wallet pilots (EUDI Wallet architecture under eIDAS 2.0) as the standard revocation mechanism for SD-JWT VC and mDL credentials. The EUDI specification mandates short-lived credential re-issuance as an alternative to complex revocation for some use cases, reducing reliance on online status checks. Zero-knowledge revocation using accumulator schemes has advanced from academic prototype to production deployment in privacy-sensitive credential ecosystems, particularly for age verification and professional licence credentials where identity correlation is a significant concern.
-

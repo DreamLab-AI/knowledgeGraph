@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Legal Accountability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Legal accountability is the principle that an identifiable party can be held answerable under law for actions, omissions, and harms, with attendant liability and remedies. In digital and metaverse contexts it requires attributing conduct to legal persons despite pseudonymity, automation, or cross-jurisdictional operation. Establishing it underpins liability models, dispute resolution, and regulatory enforcement.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:metaverse-liability-model", "label": "Metaverse Liability Model"}, {"@id": "urn:ngm:class:etsi-domain-ethics-and-law", "label": "ETSI Domain: Ethics & Law"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metaverse-liability-model",
+        "label": "Metaverse Liability Model"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-ethics-and-law",
+        "label": "ETSI Domain: Ethics & Law"
+      }
+    ]
   },
   "quality": 0.72
 }

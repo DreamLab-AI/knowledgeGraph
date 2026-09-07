@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Event Sourcing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,4 +169,3 @@ public: true
   - The benefits of event sourcing include complete auditability (every state change is recorded with its cause), temporal queries (reconstruct system state at any point in history), retroactive correction (replay events through corrected business logic to rebuild projections), and natural integration with event-driven architecture (events can be published to external subscribers for integration). These properties make event sourcing particularly valuable in financial systems (where regulators require full transaction audit trails), collaboration software (where optimistic concurrency and conflict resolution benefit from shared event history), and multi-agent AI systems (where replaying the sequence of agent decisions enables debugging and explanation). The trade-offs include increased storage requirements, eventual consistency of read models, and complexity in reasoning about projections and snapshot management.
 
   - By 2024-2025, event sourcing has moved from an advanced architectural pattern to a mainstream consideration in complex system design, supported by mature frameworks including Axon Framework (Java), EventStoreDB (purpose-built event store), and Marten (PostgreSQL-based event store for .NET). Apache Kafka's log compaction and consumer group semantics provide a production-proven substrate for event-sourced systems at scale. The pattern has found new relevance in AI agent architectures, where the sequence of tool calls, observations, and reasoning steps constitutes an event stream that enables agent memory, reproducibility, and auditable decision trails. The challenge of long event histories — requiring efficient snapshot strategies and log compaction — remains a practical engineering concern in long-running production systems.
-

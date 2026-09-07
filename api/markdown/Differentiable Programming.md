@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Differentiable Programming
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:differentiable-programming", "@type": "Page", "title": "Differentiable Programming", "vc:slug": "differentiable-programming", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:differentiable-programming",
+  "@type": "Page",
+  "title": "Differentiable Programming",
+  "vc:slug": "differentiable-programming",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Player Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,16 +46,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:avatar-behavior", "label": "Avatar Behavior"},
-      {"@id": "urn:ngm:class:player-two", "label": "Player Two"}
+      {
+        "@id": "urn:ngm:class:avatar-behavior",
+        "label": "Avatar Behavior"
+      },
+      {
+        "@id": "urn:ngm:class:player-two",
+        "label": "Player Two"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ]
   },
   "quality": 0.35,
@@ -71,26 +84,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:player-tracking:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8cbc5d07f9340f9a4a6ea59a7c33e347277deea6c8d661eb10f8730d26b203e7"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Player Tracking is the real-time monitoring of user position, movement, and behavioural analytics within virtual and metaverse environments. It encompasses spatial positioning systems, motion-capture input, gaze and gesture tracking, and analytics pipelines that feed avatar behaviour, personalisation, and platform telemetry.

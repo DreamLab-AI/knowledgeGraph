@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Profile Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,16 +46,34 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:avatar-customization", "label": "Avatar Customization"},
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+      {
+        "@id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ]
   },
   "quality": 0.35,
@@ -71,26 +84,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:profile-management:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d5a810ad3d98842fe1ed17326bb319c7b894622b02499171ae3c2f95b21c6bb2"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Profile Management encompasses the systems and services for creating, storing, updating, and securing user profiles within metaverse and digital platforms. It covers avatar customisation preferences, personal data storage, authentication credentials, and preference settings, enabling persistent personalised experiences across sessions and across interoperable environments.

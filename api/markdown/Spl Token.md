@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Spl Token
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

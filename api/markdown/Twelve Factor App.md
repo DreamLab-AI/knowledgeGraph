@@ -1,38 +1,112 @@
----
-public: true
----
-
-# Twelve Factor App
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:twelve-factor-app", "@type":"Page", "title":"Twelve Factor App", "vc:slug":"twelve-factor-app", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:twelve-factor-app",
+  "@type": "Page",
+  "title": "Twelve Factor App",
+  "vc:slug": "twelve-factor-app",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:twelve-factor-app",
-  "@type":"Class",
-  "label":"Twelve Factor App",
-  "definition":"The Twelve-Factor App is a methodology for building software-as-a-service applications that are portable, resilient, and suitable for deployment on modern cloud platforms. It defines twelve guidelines covering codebase management, declared dependencies, configuration in the environment, backing services, build-release-run separation, stateless processes, port binding, concurrency, disposability, dev/prod parity, logs as event streams, and admin tasks. Adherence yields applications that scale horizontally, deploy continuously, and integrate cleanly with containerised and orchestrated infrastructure.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cloud-native-applications","label":"Cloud-Native Applications"}],
-  "relations":{
-    "relatedTo":[{"@id":"urn:ngm:class:cloud-native","label":"Cloud-Native"},{"@id":"urn:ngm:class:software-architecture","label":"Software Architecture"},{"@id":"urn:ngm:class:microservices","label":"Microservices"}],
-    "dependsOn":[{"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:containerisation","label":"Containerisation"}],
-    "enables":[{"@id":"urn:ngm:class:scalability","label":"Scalability"},{"@id":"urn:ngm:class:continuous-delivery","label":"Continuous Delivery"}],
-    "requires":[{"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"}],
-    "supports":[{"@id":"urn:ngm:class:devops","label":"DevOps"}],
-    "implements":[{"@id":"urn:ngm:class:cloud-native","label":"Cloud-Native"}],
-    "uses":[{"@id":"urn:ngm:class:containerisation","label":"Containerisation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:microservices","label":"Microservices"}],
-    "hasPart":[{"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:twelve-factor-app",
+  "@type": "Class",
+  "label": "Twelve Factor App",
+  "definition": "The Twelve-Factor App is a methodology for building software-as-a-service applications that are portable, resilient, and suitable for deployment on modern cloud platforms. It defines twelve guidelines covering codebase management, declared dependencies, configuration in the environment, backing services, build-release-run separation, stateless processes, port binding, concurrency, disposability, dev/prod parity, logs as event streams, and admin tasks. Adherence yields applications that scale horizontally, deploy continuously, and integrate cleanly with containerised and orchestrated infrastructure.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cloud-native-applications",
+      "label": "Cloud-Native Applications"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud-Native"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud-Native"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

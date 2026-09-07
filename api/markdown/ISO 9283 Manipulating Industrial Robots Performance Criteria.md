@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ISO 9283 Manipulating Industrial Robots Performance Criteria
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:iso-9283-manipulating-industrial-robots-performance-criteria:525d52eae842",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0f41b98e6b551ea4c1deaa665389308ef39c423f61d593f457239ddd83c79f64"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO]]",
-      "resolved": "urn:visionflow:linked:iso",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An ISO standard specifying performance criteria and related test methods for manipulating industrial robots. It defines how to measure characteristics such as pose accuracy and repeatability.

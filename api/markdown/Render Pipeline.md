@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Render Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,25 +198,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:render-pipeline:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:80e4504e725538a4f6d869dacfd17428c3e51a29ed71bdd1f53c0405579a4b99"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A Render Pipeline is the ordered sequence of programmable and fixed-function [[GPU]] stages that transforms 3D scene geometry, material data, and lighting information into a rasterised or ray-traced 2D image frame. Core stages include vertex processing, [[Rasteriser]] operations, [[Fragment Shader]] execution, depth-stencil testing, blending, and screen-space [[Post-Processing]]. Modern graphics APIs such as [[Vulkan]], [[DirectX 12]], [[Metal]], and [[WebGPU]] expose explicit low-overhead control over pipeline state objects, enabling advanced real-time techniques including [[Deferred Rendering]], [[Ray Tracing]], and [[Variable-Rate Shading]] that underpin immersive experiences in [[Augmented Reality]] and [[Virtual Reality]] headsets.
 
@@ -234,7 +210,7 @@ public: true
 
 - ### Key Components
   - **Input Assembler / Vertex Fetch**
-    - Reads index and vertex buffers from GPU memory and feeds them to the vertex stage.
+    - Reads [private] and vertex buffers from GPU memory and feeds them to the vertex stage.
     - Governs [[Geometry]] topology (triangles, lines, points) and [[Level of Detail]] selection.
   - **[[Vertex Shader]]**
     - Executes per-vertex transformation: model → world → clip space via the MVP matrix chain.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Clinical Decision Support
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,57 +188,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:clinical-decision-support:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b08b4476f119622a210ab1d5afe963f468dd4640692f69731692d0dbbc52f137"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Healthcare Analytics]]",
-      "resolved": "urn:visionflow:owl:class:healthcare-analytics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical Diagnosis AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-diagnosis-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Treatment Planning AI]]",
-      "resolved": "urn:visionflow:owl:class:treatment-planning-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care. CDS systems integrate patient data, medical knowledge bases, clinical guidelines, and evidence-based protocols to assist in diagnosis, treatment selection, medication management, and care coordination whilst maintaining clinician autonomy and clinical judgement.

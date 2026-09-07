@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sustainable Bitcoin Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -152,4 +147,3 @@ public: true
   - The practical impact encompasses both market and policy dimensions. ESG-constrained investors—sovereign wealth funds, pension funds, and some asset managers—face internal mandates restricting exposure to high-carbon assets. A verifiable green premium on certified bitcoin widens the investable universe for such entities, potentially increasing demand and improving liquidity in the certified segment. At the policy level, SBP data contributes to regulatory discussions about whether proof-of-work mining is categorically incompatible with net-zero commitments or conditionally acceptable under verified renewable sourcing.
 
   - By 2024–2025, SBP has certified mining operations across North America, Iceland, and parts of Sub-Saharan Africa. Competing frameworks—the Bitcoin Mining Council's voluntary reporting and the Rocky Mountain Institute's clean bitcoin initiative—have created a fragmented landscape. Standardisation efforts are ongoing, with ISO and GRI working groups examining whether existing environmental attribute certificate standards can be extended to cover Bitcoin mining. Challenges remain around double-counting risks, the additionality of renewable procurement, and the treatment of stranded gas operations where methane combustion improves versus flaring but still produces CO2.
-

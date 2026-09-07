@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Compute Strategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-compute-strategy",
   "title": "AI Compute Strategy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Elon Musk", "SpaceX AI"],
+  "vc:outboundWikilinks": [
+    "Elon Musk",
+    "SpaceX AI"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-compute-infrastructure", "label": "AI Compute Infrastructure"}, {"@id": "urn:ngm:class:market-consolidation", "label": "Market Consolidation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-compute-infrastructure",
+        "label": "AI Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:market-consolidation",
+        "label": "Market Consolidation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

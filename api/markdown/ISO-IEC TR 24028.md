@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ISO/IEC TR 24028
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

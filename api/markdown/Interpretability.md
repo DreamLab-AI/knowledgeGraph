@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interpretability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,47 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interpretability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:098dd31d68a1ec13e0ca729d9b818c299380ad6a8b41928fb3e64f701ecad974"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Debugging]]",
-      "resolved": "urn:visionflow:linked:debugging",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Validation]]",
-      "resolved": "urn:visionflow:linked:model-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Trust]]",
-      "resolved": "urn:visionflow:linked:trust",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The degree to which a human can understand the internal mechanics, decision-making processes, and cause-effect relationships within an AI system, independent of external explanation tools.

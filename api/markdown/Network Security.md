@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - NetworkSecurity
----
-
-# Network Security
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

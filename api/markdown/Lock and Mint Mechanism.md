@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lock and Mint Mechanism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,57 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lock-and-mint-mechanism:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8874ed8c29f56a23a98c0aac9bb30ba2a0339e0b49a2581bbc1c1d9856bd1601"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Wrapped Token]]",
-      "resolved": "urn:visionflow:linked:wrapped-token",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Atomic Swap]]",
-      "resolved": "urn:visionflow:owl:class:atomic-swap",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Oracle]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-oracle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Bridge]]",
-      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cross-chain asset transfer protocol where tokens are locked in a smart contract on the source chain and equivalent wrapped tokens are minted on the destination chain, maintaining a 1:1 backing ratio. Enables asset portability across heterogeneous blockchain ecosystems while preserving value equivalence.

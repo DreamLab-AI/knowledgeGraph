@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Model Benchmarking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-model-benchmarking",
   "title": "AI Model Benchmarking",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Claude Mythos", "Cybersecurity Testing", "Zero-Day Vulnerability"],
+  "vc:outboundWikilinks": [
+    "Claude Mythos",
+    "Cybersecurity Testing",
+    "Zero-Day Vulnerability"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}, {"@id": "urn:ngm:class:claude", "label": "Claude"}, {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:claude",
+        "label": "Claude"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

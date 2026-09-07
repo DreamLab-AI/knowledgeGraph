@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:collective-action",
   "domain": "governance",
-  "definition": "Coordinated behaviour by a group of individuals or organisations toward a shared goal that no single actor could achieve unilaterally. It is characterised by interdependence, the risk of free-riding, and the need for mechanisms \u2014 such as incentives, norms, or contracts \u2014 to align individual contributions with the group objective.",
+  "definition": "Coordinated behaviour by a group of individuals or organisations toward a shared goal that no single actor [private] achieve unilaterally. It is characterised by interdependence, the risk of free-riding, and the need for mechanisms \u2014 such as incentives, norms, or contracts \u2014 to align individual contributions with the group objective.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:coordination-mechanisms",

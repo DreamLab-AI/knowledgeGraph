@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Domain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {
+        "@id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "provenance": {
@@ -86,42 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:domain:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6581edef3c4261ba71b0b3181ae36ac170e23487348ab01ffc94374be0f6b6b1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DNSSEC]]",
-      "resolved": "urn:visionflow:linked:dnssec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C OWL 2]]",
-      "resolved": "urn:visionflow:linked:w3-c-owl-2",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Domain is a coherent and bounded sphere of knowledge or subject area within formal ontology engineering, establishing the scope of conceptualisation—the set of entities, relationships, and axioms characterising a particular area of discourse. Domains serve as fundamental organising principles enabling modular knowledge organisation and interoperability between specialised knowledge systems, realised through namespace declarations, import mechanisms, and modular ontology structures.

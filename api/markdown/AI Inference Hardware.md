@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Inference Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-inference-hardware",
   "title": "AI Inference Hardware",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Groq Language Processing Chips", "Nvidia Rack-Scale Servers"],
+  "vc:outboundWikilinks": [
+    "Groq Language Processing Chips",
+    "Nvidia Rack-Scale Servers"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:nvidia-blackwell-gpus", "label": "Nvidia Blackwell GPUs"}, {"@id": "urn:ngm:class:ai-inference-infrastructure", "label": "AI Inference Infrastructure"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:nvidia-blackwell-gpus",
+        "label": "Nvidia Blackwell GPUs"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

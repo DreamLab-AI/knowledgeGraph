@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Deterministic Networking
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:deterministic-networking", "@type":"Page", "title":"Deterministic Networking", "vc:slug":"deterministic-networking", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:deterministic-networking",
+  "@type": "Page",
+  "title": "Deterministic Networking",
+  "vc:slug": "deterministic-networking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

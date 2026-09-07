@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Economics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,32 +172,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-economics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:409c456a3f7b238f2cedfd1f222e9a8b9cf60c71b4194c1e32a18d521fb84a9c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The study and design of economic mechanisms governing blockchain networks, including incentive structures for validators, fee markets, token supply schedules, governance models, and the emergent macro-economic properties of decentralised systems. Blockchain economics integrates mechanism design, game theory, and monetary theory to sustain network security and participant alignment.

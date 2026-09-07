@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Contract Code
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Contract code is the executable program logic that defines the rules, state, and behaviour of a smart contract deployed on a distributed ledger. It is typically written in a high-level language such as Solidity or Kotlin and compiled to bytecode that nodes execute deterministically. Because it is immutable once deployed and controls value, contract code is a primary target for auditing and formal verification.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:r3-corda", "label": "R3 Corda"}],
-    "partOf": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
   },
   "quality": 0.72
 }

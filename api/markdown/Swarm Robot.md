@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Swarm Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:decentralized-swarm-control", "label": "Decentralized Swarm Control"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:decentralized-swarm-control",
+        "label": "Decentralized Swarm Control"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
-      {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"}
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralized-swarm-control", "label": "Centralized Swarm Control"}
+      {
+        "@id": "urn:ngm:class:centralized-swarm-control",
+        "label": "Centralized Swarm Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"},
-      {"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}
+      {
+        "@id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:swarm-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eae19c1ba05cd32a9ffc5c323b2ec12bc9c3981f5bd08e29f8a065fd6bb091ae"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Swarm Robot is a member of a multi-agent robotic system in which large numbers of simple, decentralised agents coordinate through local interactions to achieve complex collective behaviours without centralised control. Drawing from biological models such as ant colonies and flocking birds, swarm robotics enables robustness through redundancy, scalability, and emergent task execution across domains including environmental monitoring, logistics, and disaster response.

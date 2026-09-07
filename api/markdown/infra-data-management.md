@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,20 +34,56 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
-      {"@id": "urn:ngm:class:database-system", "label": "Database System"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"},
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"},
-      {"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      }
     ]
   },
   "quality": 0.8,
@@ -59,3 +91,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

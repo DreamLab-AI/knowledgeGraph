@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proposal Distribution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,26 @@ public: true
   "definition": "A proposal distribution is an auxiliary distribution used in Monte Carlo methods to generate candidate samples when sampling directly from a target distribution is infeasible. In importance sampling, Metropolis-Hastings, and particle filters it determines where samples are drawn, and its closeness to the target governs efficiency and variance. A poorly chosen proposal causes sample degeneracy or slow mixing.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}, {"@id": "urn:ngm:class:monte-carlo-methods", "label": "Monte Carlo Methods"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sampling", "label": "Sampling"},
-      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"}
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
     ]
   },
   "quality": 0.72

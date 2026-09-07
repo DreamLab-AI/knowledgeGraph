@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hydraulic Actuator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -546,457 +541,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hydraulic-actuator:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:51b79f1c8b18820aa2540cf3d9284fd162ecfd326ece5f69c73fdeb87219c492"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Accumulator]]",
-      "resolved": "urn:visionflow:linked:accumulator",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Actuator]]",
-      "resolved": "urn:visionflow:linked:actuator",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bernoulli Equation]]",
-      "resolved": "urn:visionflow:linked:bernoulli-equation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Boston Dynamics Atlas]]",
-      "resolved": "urn:visionflow:linked:boston-dynamics-atlas",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Boston Dynamics BigDog]]",
-      "resolved": "urn:visionflow:linked:boston-dynamics-big-dog",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bulk Modulus]]",
-      "resolved": "urn:visionflow:linked:bulk-modulus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Closed-Loop Position Control]]",
-      "resolved": "urn:visionflow:linked:closed-loop-position-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compliant Force Control]]",
-      "resolved": "urn:visionflow:linked:compliant-force-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Construction Robotics]]",
-      "resolved": "urn:visionflow:linked:construction-robotics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ControlArchitectureLayer]]",
-      "resolved": "urn:visionflow:linked:control-architecture-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ControlSystemsDomain]]",
-      "resolved": "urn:visionflow:linked:robo-actuation-and-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DARPA Robotics Challenge]]",
-      "resolved": "urn:visionflow:linked:darpa-robotics-challenge",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deep-Sea Robotics]]",
-      "resolved": "urn:visionflow:linked:deep-sea-robotics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Differential Pressure Sensing]]",
-      "resolved": "urn:visionflow:linked:differential-pressure-sensing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DIN 24346 Hydraulic Components]]",
-      "resolved": "urn:visionflow:linked:din-24346-hydraulic-components",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Electric BLDC Actuator]]",
-      "resolved": "urn:visionflow:linked:electric-bldc-actuator",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Electrohydraulic Servo Valve]]",
-      "resolved": "urn:visionflow:linked:electrohydraulic-servo-valve",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Electrohydrostatic Drive]]",
-      "resolved": "urn:visionflow:linked:electrohydrostatic-drive",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Exoskeleton]]",
-      "resolved": "urn:visionflow:linked:exoskeleton",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Exoskeleton Actuation]]",
-      "resolved": "urn:visionflow:linked:exoskeleton-actuation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Feedback Sensor]]",
-      "resolved": "urn:visionflow:linked:feedback-sensor",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Flight Simulation]]",
-      "resolved": "urn:visionflow:linked:flight-simulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fluid Mechanics]]",
-      "resolved": "urn:visionflow:linked:fluid-mechanics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FluidPowerDomain]]",
-      "resolved": "urn:visionflow:linked:fluid-power-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fluid Power System]]",
-      "resolved": "urn:visionflow:linked:fluid-power-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Force Control System]]",
-      "resolved": "urn:visionflow:linked:force-control-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Force Impedance Control]]",
-      "resolved": "urn:visionflow:linked:force-impedance-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Force Sensor]]",
-      "resolved": "urn:visionflow:linked:force-sensor",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Haptic Interface]]",
-      "resolved": "urn:visionflow:linked:haptic-interface",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Heat Exchanger]]",
-      "resolved": "urn:visionflow:linked:heat-exchanger",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Heavy Manipulation]]",
-      "resolved": "urn:visionflow:linked:heavy-manipulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[High-Force Industrial Automation]]",
-      "resolved": "urn:visionflow:linked:high-force-industrial-automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hydraulic Fluid]]",
-      "resolved": "urn:visionflow:linked:hydraulic-fluid",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hydraulic Manifold]]",
-      "resolved": "urn:visionflow:linked:hydraulic-manifold",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hydraulic Power Unit]]",
-      "resolved": "urn:visionflow:linked:hydraulic-power-unit",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hydraulic Pump]]",
-      "resolved": "urn:visionflow:linked:hydraulic-pump",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hydraulic Reservoir]]",
-      "resolved": "urn:visionflow:linked:hydraulic-reservoir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IIT HyQ Family]]",
-      "resolved": "urn:visionflow:linked:iit-hy-q-family",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Industrial Automation]]",
-      "resolved": "urn:visionflow:linked:industrial-automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Industrial Robotics]]",
-      "resolved": "urn:visionflow:linked:industrial-robotics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 4413 Hydraulics Safety]]",
-      "resolved": "urn:visionflow:linked:iso-4413-hydraulics-safety",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Legged Locomotion Research]]",
-      "resolved": "urn:visionflow:linked:legged-locomotion-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Legged Robot Locomotion]]",
-      "resolved": "urn:visionflow:linked:legged-robot-locomotion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Legged Robotics]]",
-      "resolved": "urn:visionflow:linked:legged-robotics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Linear Variable Differential Transformer]]",
-      "resolved": "urn:visionflow:linked:linear-variable-differential-transformer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MechanicalEngineeringDomain]]",
-      "resolved": "urn:visionflow:linked:robo-actuation-and-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MechanicalSystemLayer]]",
-      "resolved": "urn:visionflow:linked:mechanical-system-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mechanical Transducer]]",
-      "resolved": "urn:visionflow:linked:mechanical-transducer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Predictive Control]]",
-      "resolved": "urn:visionflow:linked:model-predictive-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Motion Control Device]]",
-      "resolved": "urn:visionflow:linked:motion-control-device",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NFPA T3 Fluid Power Standard]]",
-      "resolved": "urn:visionflow:linked:nfpa-t3-fluid-power-standard",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Nuclear Remote Handling]]",
-      "resolved": "urn:visionflow:linked:nuclear-remote-handling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pascal Law]]",
-      "resolved": "urn:visionflow:linked:pascal-law",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pascal Law Actuation]]",
-      "resolved": "urn:visionflow:linked:pascal-law-actuation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PhysicalActuationLayer]]",
-      "resolved": "urn:visionflow:linked:physical-actuation-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PID Control]]",
-      "resolved": "urn:visionflow:linked:pid-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Piezoelectric Actuator]]",
-      "resolved": "urn:visionflow:linked:piezoelectric-actuator",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Position Sensor]]",
-      "resolved": "urn:visionflow:linked:position-sensor",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pressure Relief Valve]]",
-      "resolved": "urn:visionflow:linked:pressure-relief-valve",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pressurised Fluid Supply]]",
-      "resolved": "urn:visionflow:linked:pressurised-fluid-supply",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Proportional Flow Control]]",
-      "resolved": "urn:visionflow:linked:proportional-flow-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Proportional Valve]]",
-      "resolved": "urn:visionflow:linked:proportional-valve",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Quasi-Direct Drive Motor]]",
-      "resolved": "urn:visionflow:linked:quasi-direct-drive-motor",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Return Filter]]",
-      "resolved": "urn:visionflow:linked:return-filter",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SAE J2048 Hydraulic Systems]]",
-      "resolved": "urn:visionflow:linked:sae-j2048-hydraulic-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sarcos Guardian XO]]",
-      "resolved": "urn:visionflow:linked:sarcos-guardian-xo",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Seal System]]",
-      "resolved": "urn:visionflow:linked:seal-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Series Elastic Actuation]]",
-      "resolved": "urn:visionflow:linked:series-elastic-actuation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Series Elastic Actuator]]",
-      "resolved": "urn:visionflow:linked:series-elastic-actuator",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Servo Controller]]",
-      "resolved": "urn:visionflow:linked:servo-controller",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Servo Valve]]",
-      "resolved": "urn:visionflow:linked:servo-valve",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Subsea Robotics]]",
-      "resolved": "urn:visionflow:linked:subsea-robotics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Thermodynamics]]",
-      "resolved": "urn:visionflow:linked:thermodynamics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tribology]]",
-      "resolved": "urn:visionflow:linked:tribology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UK HSE HSG244]]",
-      "resolved": "urn:visionflow:linked:uk-hse-hsg244",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[wikilink]]",
-      "resolved": "urn:visionflow:linked:wikilink",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Control Theory]]",
-      "resolved": "urn:visionflow:owl:class:control-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Humanoid Robot]]",
-      "resolved": "urn:visionflow:owl:class:humanoid-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hydraulic Cylinder]]",
-      "resolved": "urn:visionflow:owl:class:hydraulic-cylinder",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Impedance Control]]",
-      "resolved": "urn:visionflow:owl:class:impedance-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pneumatic Actuator]]",
-      "resolved": "urn:visionflow:owl:class:pneumatic-actuator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Shape Memory Alloy Actuator]]",
-      "resolved": "urn:visionflow:owl:class:shape-memory-alloy-actuator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Teleoperation]]",
-      "resolved": "urn:visionflow:owl:class:teleoperation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - HydraulicActuator is a mechanical transduction device that converts the energy stored in pressurised hydraulic fluid into controlled mechanical work—linear force and stroke via hydraulic cylinders, continuous rotational torque and speed via hydraulic motors, or limited angular displacement via rotary actuators—operating at gauge pressures of 14–35 MPa (2,000–5,000 psi) to deliver specific force densities of 50–200 N/cm² effective bore area loading and joint-level power densities of 2–10 kW/kg, exceeding comparably sized electric BLDC motors by 3–6× and surpassing pneumatic actuators at equivalent bore by 20–50×, making hydraulic actuation the dominant technology for legged robots requiring impulsive ground-contact forces, heavy industrial manipulators demanding tens of kilonewtons of sustained force, six-DOF flight simulation motion platforms requiring 40–80 kN per leg, deep-sea remotely operated vehicles where pressure-equalised hydraulics eliminate pressure vessel mass, nuclear remote-handling systems where electric motors cannot be shielded against radiation, and powered exoskeletons rated above 50 kg payload where no commercially available electric joint actuator offers comparable force-to-mass ratio as of 2026. The fundamental physical principle is Pascal's law: pressure P applied to an enclosed incompressible fluid column acts equally in all directions and transmits force F = P × A_eff proportional to the effective piston area A_eff; at 21 MPa a 50 mm bore cylinder develops approximately 4.1 kN directly at the output rod, with no gear reduction stage, no magnetic saturation, and no torque ripple from commutation. Hydraulic fluid flow is metered by a proportional or electrohydraulic servo valve (EHSV) following the orifice equation Q = C_d × A_v × √(2ΔP/ρ), where C_d ≈ 0.64–0.70 is the discharge coefficient, A_v(u) is the effective valve opening area as a function of electrical command u, ΔP is the pressure differential across the valve metering edge, and ρ ≈ 855–870 kg/m³ for ISO VG 46 mineral hydraulic oil at 50°C. A high-performance electrohydraulic servo valve (Moog 30 Series, Parker D04/D08) translates a ±10 mA torque-motor command into spool displacement through a two-stage flapper-nozzle or jet-pipe pilot stage, achieving flow bandwidth of 100–200 Hz (–3 dB amplitude at rated flow), far exceeding the mechanical bandwidth of typical robotic joints (10–40 Hz) and enabling inner-loop velocity control at 1–5 kHz sampling. The natural hydraulic compliance arising from oil bulk modulus β_e ≈ 1,400–1,700 MPa (approximately 10,000× stiffer than air, yet 100,000× more compliant than steel) provides passive shock absorption at ground contact faster than any servo loop can react, an intrinsic advantage for dynamic legged locomotion that has no equivalent in electric drivetrains without explicit spring elements. This compliance also enables force sensing without external load cells by measuring differential pressure across the cylinder bores and multiplying by bore areas, an approach exploited in the IIT HyQ family and Boston Dynamics Atlas for whole-body force estimation at joint level. Fundamental drawbacks of hydraulic actuation include hydraulic fluid leakage risk (petroleum oil and synthetic ester fluids contaminate soil and water; fire risk from aerosol near hot surfaces), high acoustic noise from turbulent flow at servo valve orifice edges (70–90 dB at 500 mm distance), the mandatory centralised hydraulic power unit (HPU) adding 8–25 kg system mass overhead, 30–50% throttling power losses in proportional valve control at partial stroke and partial force, complex maintenance requiring 3–25 μm filtration management, and fluid temperature regulation through heat exchangers. These drawbacks motivated continuous research from 2010 onward into electrohydrostatic actuators (EHAs) that embed a bidirectional fixed-displacement pump driven by a compact permanent-magnet servo motor directly at the joint, eliminating centralised hose routing and reducing fluid volume per DOF to millilitre quantities. The historical inflection point for hydraulic humanoid robotics arrived on 16 April 2024 when Boston Dynamics announced retirement of the original hydraulic Atlas (2013–2024), replacing it with an all-electric successor leveraging high-energy-density NdFeB permanent magnets, silicon-carbide inverter efficiency above 97%, and integrated joint actuators with backdrivable planetary gearboxes—citing dramatically improved electric motor power density as finally reaching competitive parity with hydraulics in the 50–100 kg humanoid mass class for locomotion and manipulation tasks. This milestone symbolically closed the era in which hydraulic actuation was considered the only viable route to high-performance dynamic robotics, while simultaneously confirming that hydraulics remain the engineering optimum for extreme-force, high-payload, and harsh-environment applications well into the 2030s.
 
@@ -1237,7 +781,7 @@ public: true
 
 	  #### Boston Dynamics BigDog and LS3 (2005–2015)
 
-	  BigDog (DARPA-funded, 2005) was the first large-scale demonstration of hydraulically actuated rough-terrain quadrupedal locomotion. Key specifications: 109 kg body mass, 0.91 m tall, powered by a 15 kW single-cylinder petrol engine driving a centralised HPU at 3,000 RPM, 16 hydraulic leg actuators (4 per leg: hip ab/adduction, hip flexion, knee flexion, ankle), operating at 14 MPa. BigDog walked at 6.4 km/h on 35° slopes, ice, rubble, and deep snow—terrain where wheeled robots required human assistance. The Legged Squad Support System (LS3), derived from BigDog, carried 182 kg payload on 32 km marches in DARPA field evaluation (2012–2015), demonstrating hydraulic force advantage in load-carrying field robotics. The WildCat variant (2013) reached 32 km/h trot on flat terrain using the same hydraulic architecture. These platforms proved that hydraulic actuation could scale power across terrain obstacles that required forces no electric system of the era could sustain.
+	  BigDog (DARPA-funded, 2005) was the first large-scale demonstration of hydraulically actuated rough-terrain quadrupedal locomotion. Key specifications: 109 kg body mass, 0.91 m tall, powered by a 15 kW single-cylinder petrol engine driving a centralised HPU at 3,000 RPM, 16 hydraulic leg actuators (4 per leg: hip ab/adduction, hip flexion, knee flexion, ankle), operating at 14 MPa. BigDog walked at 6.4 km/h on 35° slopes, ice, rubble, and deep snow—terrain where wheeled robots required human assistance. The Legged Squad Support System (LS3), derived from BigDog, carried 182 kg payload on 32 km marches in DARPA field evaluation (2012–2015), demonstrating hydraulic force advantage in load-carrying field robotics. The WildCat variant (2013) reached 32 km/h trot on flat terrain using the same hydraulic architecture. These platforms proved that hydraulic actuation [private] scale power across terrain obstacles that required forces no electric system of the era [private] sustain.
 
 	  #### Boston Dynamics Atlas, Hydraulic Generation (2013–2024)
 
@@ -1271,7 +815,7 @@ public: true
 
 	  Electric BLDC motors with harmonic-drive (reduction 50:1–160:1, e.g. Harmonic Drive CSF/SHF series) or planetary-gearbox (10:1–100:1, e.g. Maxon, Neugart) transmissions dominate humanoid robots from 2020 onward. Advantages over hydraulics: zero fluid leakage enabling deployment in hospitals, food processing, and office environments; acoustic noise below 50 dB; no HPU mass overhead; single cable routing per joint versus hose plus wire; regenerative braking recovering 15–25% of descent energy; mature high-volume supply chains reducing per-joint cost to £300–£3,000. Disadvantages: power density at joint shaft limited to 0.5–1.5 kW/kg for harmonic-drive combinations (gear losses 15–25%, motor copper losses) versus 3–8 kW/kg hydraulic; harmonic-drive compliance and hysteresis (40–60 Nm backlash-equivalent stiffness) degrading transparent force control in delicate assembly; thermal current limits restricting sustained high-force output (motors derate above 60–80°C winding temperature, reaching temperature limits in 2–10 min of full-torque operation).
 
-	  **Quasi-direct-drive (QDD)** motors (MIT Cheetah series, Unitree A1/Go1, ANYmal electric joints) reduce gear ratio to 6:1–10:1 using high-pole-count BLDC designs (6–36 pole pairs) with segment-wound stators. QDD achieves 0.5–2.5 kW/kg joint power density, dramatically improved backdrivability (reflected inertia 36–100× motor inertia vs. 2,500–25,000× for harmonic drives), sub-millisecond torque bandwidth from current-controlled inverters, and zero gear hysteresis. The MIT Cheetah 3 and Mini Cheetah demonstrated that electric QDD quadrupeds could match the running speed (3 m/s trot), jumping height (0.9 m), and rough-terrain performance of hydraulic counterparts in the <40 kg body mass class—the watershed result published in IEEE T-Robotics 2019 (Wensing et al.) that accelerated the electric transition for small-to-medium legged robots.
+	  **Quasi-direct-drive (QDD)** motors (MIT Cheetah series, Unitree A1/Go1, ANYmal electric joints) reduce gear ratio to 6:1–10:1 using high-pole-count BLDC designs (6–36 pole pairs) with segment-wound stators. QDD achieves 0.5–2.5 kW/kg joint power density, dramatically improved backdrivability (reflected inertia 36–100× motor inertia vs. 2,500–25,000× for harmonic drives), sub-millisecond torque bandwidth from current-controlled inverters, and zero gear hysteresis. The MIT Cheetah 3 and Mini Cheetah demonstrated that electric QDD quadrupeds [private] match the running speed (3 m/s trot), jumping height (0.9 m), and rough-terrain performance of hydraulic counterparts in the <40 kg body mass class—the watershed result published in IEEE T-Robotics 2019 (Wensing et al.) that accelerated the electric transition for small-to-medium legged robots.
 
 	  The **breakeven point** in power density at joint shaft between hydraulic valve-controlled and electric QDD actuators lies at approximately 3–5 kW output power per joint. Below this threshold, modern QDD motors offer competitive or superior power density with greater efficiency, zero leakage, and lower noise. Above 5–10 kW per joint—required for heavy manipulation, large exoskeletons, and construction robots—hydraulic or EHA systems retain a decisive advantage through 2030.
 
@@ -1299,7 +843,7 @@ public: true
 
 	  Pratt and Williamson's 1995 IROS paper introducing series elastic actuators (SEA) — placing a physical compliant spring in series between actuator gearbox and load, measuring force through spring deflection — was conceptually motivated by the need for safe force control; hydraulic systems achieve the same passive compliance through oil bulk modulus, without an additional spring element, and with lower reflected inertia than geared electric SEAs. The conceptual parallel between oil compressibility and spring compliance was formalised by Boaventura et al. (2012) in their IEEE T-Robotics paper on model-based hydraulic impedance control for HyQ.
 
-	  The DARPA Robotics Challenge (2012–2015) was the field's landmark evaluation. Team IHMC's Atlas (hydraulic) won 2nd place; Kaist DRC-HUBO (electric) won 1st; Team MIT Atlas placed 3rd; SCHAFT (hydraulic) placed 2nd in DRC trials. Post-DRC analysis (Atkeson et al. 2016, Field Robotics) noted that hydraulic systems enabled robust joint torque control without torque sensors, and their passive compliance absorbed unpredictable impact loads during falls (11 teams' robots fell during the 2015 finals). The post-DRC period (2016–2020) saw rapid maturation of electric QDD actuation—Seok et al. (2015, IEEE/ASME T-Mechatronics) demonstrated that gear ratio optimisation for MIT Cheetah could approach hydraulic performance metrics in the 100 W–1 kW range—leading to the field's divergence into electric platforms for agile locomotion and retained hydraulics for high-payload manipulation.
+	  The DARPA Robotics Challenge (2012–2015) was the field's landmark evaluation. Team IHMC's Atlas (hydraulic) won 2nd place; Kaist DRC-HUBO (electric) won 1st; Team MIT Atlas placed 3rd; SCHAFT (hydraulic) placed 2nd in DRC trials. Post-DRC analysis (Atkeson et al. 2016, Field Robotics) noted that hydraulic systems enabled robust joint torque control without torque sensors, and their passive compliance absorbed unpredictable impact loads during falls (11 teams' robots fell during the 2015 finals). The post-DRC period (2016–2020) saw rapid maturation of electric QDD actuation—Seok et al. (2015, IEEE/ASME T-Mechatronics) demonstrated that gear ratio optimisation for MIT Cheetah [private] approach hydraulic performance metrics in the 100 W–1 kW range—leading to the field's divergence into electric platforms for agile locomotion and retained hydraulics for high-payload manipulation.
 
 	  Christopoulos and Tsagarakis at IIT (2006–2014) developed impedance control frameworks for hydraulic legs, while Gehring et al. at ETH Zürich extended whole-body control to hydraulic quadrupeds, subsequently migrating to electric actuation in ANYmal (first release 2016, the most commercially successful legged robot as of 2026 with 500+ units deployed globally, all-electric). The University of Edinburgh Robotics group (Vijayakumar, Kormushev) contributed learning-based whole-body controllers applied to hydraulic platforms between 2010 and 2018, developing Bayesian optimisation methods for hydraulic parameter identification that reduced calibration time from 4 hours to 25 minutes.
 
@@ -1396,11 +940,11 @@ public: true
 
 	  #### Mineral Hydraulic Oils
 
-	  Mineral oil base stocks (Group I–III solvent refined, hydrocracked, or hydrotreated paraffinic stocks) blended with antiwear (zinc dialkyldithiophosphate, ZDDP), oxidation inhibitor, rust and corrosion inhibitor, demulsifier, and viscosity index improver packages constitute 80–85% of hydraulic fluid used globally. ISO VG 46 (46 cSt at 40°C, 6.5 cSt at 100°C, viscosity index 95–105) is the most widely used grade for robotics. Advantages include low cost (£0.80–£2/L bulk), excellent lubricity extending pump and valve life, high bulk modulus (1,400–1,700 MPa at 40°C), wide availability, and compatibility with nitrile (NBR) and polyurethane seals. Disadvantages are fire risk (flash point 180–220°C for Groups I–III), environmental persistence (inherently biodegradable score 15–25% versus >60% required for EU Ecolabel), and aquatic toxicity (LL50 > 1,000 mg/L for mineral oil, technically low acute toxicity but chronic bioaccumulation concern from PAH components in Group I stocks).
+	  Mineral oil base stocks (Group I–III solvent refined, hydrocracked, or hydrotreated paraffinic stocks) blended with antiwear (zinc dialkyldithiophosphate, ZDDP), oxidation inhibitor, rust and corrosion inhibitor, demulsifier, and viscosity [private] improver packages constitute 80–85% of hydraulic fluid used globally. ISO VG 46 (46 cSt at 40°C, 6.5 cSt at 100°C, viscosity [private] 95–105) is the most widely used grade for robotics. Advantages include low cost (£0.80–£2/L bulk), excellent lubricity extending pump and valve life, high bulk modulus (1,400–1,700 MPa at 40°C), wide availability, and compatibility with nitrile (NBR) and polyurethane seals. Disadvantages are fire risk (flash point 180–220°C for Groups I–III), environmental persistence (inherently biodegradable score 15–25% versus >60% required for EU Ecolabel), and aquatic toxicity (LL50 > 1,000 mg/L for mineral oil, technically low acute toxicity but chronic bioaccumulation concern from PAH components in Group I stocks).
 
 	  #### Synthetic Ester and Biodegradable Fluids
 
-	  ISO 15380 classifies four categories of environmentally acceptable hydraulic fluids (EAHFs): HETG (triglyceride-based, natural ester), HEES (synthetic ester, fully saturated), HEPG (polyalkylene glycol, PAG), and HEPR (polyalphaolefin/related hydrocarbon). HEES synthetic esters (e.g. Bosch Rexroth Hees Synfluid 46, Shell Naturelle HF-E 46, Mobil EAL Hydraulic 46) achieve bulk modulus 1,200–1,500 MPa (10–20% lower than mineral oil, increasing hydraulic natural frequency and compliance), viscosity index 150–180 (superior temperature stability), biodegradability >60% in 28 days (OECD 301B), low aquatic toxicity (LL50 > 10,000 mg/L), and fire point >260°C. Seal compatibility requires transition from NBR (swells in ester) to FKM (Viton) or PTFE seals, adding seal replacement cost at system conversion. EAHF adoption in outdoor-deployed hydraulic robots increased from 8% in 2018 to approximately 22% in 2025 as EU Ecolabel incentives and UK Environment Agency guidance strengthened.
+	  ISO 15380 classifies four categories of environmentally acceptable hydraulic fluids (EAHFs): HETG (triglyceride-based, natural ester), HEES (synthetic ester, fully saturated), HEPG (polyalkylene glycol, PAG), and HEPR (polyalphaolefin/related hydrocarbon). HEES synthetic esters (e.g. Bosch Rexroth Hees Synfluid 46, Shell Naturelle HF-E 46, Mobil EAL Hydraulic 46) achieve bulk modulus 1,200–1,500 MPa (10–20% lower than mineral oil, increasing hydraulic natural frequency and compliance), viscosity [private] 150–180 (superior temperature stability), biodegradability >60% in 28 days (OECD 301B), low aquatic toxicity (LL50 > 10,000 mg/L), and fire point >260°C. Seal compatibility requires transition from NBR (swells in ester) to FKM (Viton) or PTFE seals, adding seal replacement cost at system conversion. EAHF adoption in outdoor-deployed hydraulic robots increased from 8% in 2018 to approximately 22% in 2025 as EU Ecolabel incentives and UK Environment Agency guidance strengthened.
 
 	  #### Fire-Resistant Hydraulic Fluids
 
@@ -1499,7 +1043,7 @@ public: true
 
 	  #### What Hydraulic Atlas Achieved That Electric Cannot Yet Match (2026)
 
-	  As of 2026, three capabilities of the hydraulic Atlas generation remain unreplicated by electric humanoids: (1) Peak impact force absorption — hydraulic Atlas could absorb 3–5 kN impact forces at knee-joint during running without joint damage, owing to oil bulk modulus compliance and passive cylinder bottoming; electric counterparts with rigid gearboxes require explicit collision detection and rapid current limiting, which is slower. (2) Sustained heavy manipulation — hydraulic Atlas could exert 400 N pushing force at arm end-effector for 30+ seconds without thermal derating; electric arms with comparable reach reach winding temperature limits in 5–15 seconds at equivalent force. (3) Novel motion generation from compliance — the hydraulic Atlas parkour demonstrations (published December 2021) were partially enabled by the actuators' natural energy storage during compression and release during explosive extension, a mechanism absent in electric systems without explicit spring elements.
+	  As of 2026, three capabilities of the hydraulic Atlas generation remain unreplicated by electric humanoids: (1) Peak impact force absorption — hydraulic Atlas [private] absorb 3–5 kN impact forces at knee-joint during running without joint damage, owing to oil bulk modulus compliance and passive cylinder bottoming; electric counterparts with rigid gearboxes require explicit collision detection and rapid current limiting, which is slower. (2) Sustained heavy manipulation — hydraulic Atlas [private] exert 400 N pushing force at arm end-effector for 30+ seconds without thermal derating; electric arms with comparable reach reach winding temperature limits in 5–15 seconds at equivalent force. (3) Novel motion generation from compliance — the hydraulic Atlas parkour demonstrations (published December 2021) were partially enabled by the actuators' natural energy storage during compression and release during explosive extension, a mechanism absent in electric systems without explicit spring elements.
 
   - ### Research and Literature
 

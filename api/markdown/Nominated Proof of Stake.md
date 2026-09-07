@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Nominated Proof of Stake
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,26 +59,62 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"}
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"},
-      {"@id": "urn:ngm:class:liquid-proof-of-stake", "label": "Liquid Proof of Stake"},
-      {"@id": "urn:ngm:class:polkadot-parachains", "label": "Polkadot Parachains"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-proof-of-stake",
+        "label": "Liquid Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:polkadot-parachains",
+        "label": "Polkadot Parachains"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:pure-proof-of-stake", "label": "Pure Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:pure-proof-of-stake",
+        "label": "Pure Proof of Stake"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
     ]
   },
   "provenance": {
@@ -93,37 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nominated-proof-of-stake:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f3e40ba2adf87227c3fa7099214a718653e80dd15a6a600d6f6aecb093cf214d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-stake",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Nominated Proof of Stake (NPoS) is a consensus mechanism variant in which token holders nominate a set of validator candidates; an election algorithm selects the active validator set to maximise stake distribution while satisfying security constraints. Elected validators produce and finalise blocks, while nominators share both block rewards and slashing penalties, aligning incentives across the broader token holder community.

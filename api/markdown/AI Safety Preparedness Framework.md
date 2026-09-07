@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Safety Preparedness Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-safety-preparedness-framework",
   "title": "AI Safety Preparedness Framework",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Cybersecurity Capabilities", "OpenAI Astra"],
+  "vc:outboundWikilinks": [
+    "Cybersecurity Capabilities",
+    "OpenAI Astra"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety-research",
+      "label": "AI Safety Research"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:responsible-scaling-policy", "label": "Responsible Scaling Policy"}, {"@id": "urn:ngm:class:frontier-model-evaluation", "label": "Frontier Model Evaluation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-model-evaluation",
+        "label": "Frontier Model Evaluation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",
@@ -39,6 +51,6 @@ public: true
 ```
 
 - ### Overview
-  - OpenAI delayed the release of its model codenamed Astra because internal evaluations indicated it could not rule out critical cyber capabilities under its preparedness framework. *(Source: OpenAI, via AI Daily Brief, 2026-08-25)*
+  - OpenAI delayed the release of its model codenamed Astra because internal evaluations indicated it [private] not rule out critical cyber capabilities under its preparedness framework. *(Source: OpenAI, via AI Daily Brief, 2026-08-25)*
 - ### Relationships
 - ### Provenance

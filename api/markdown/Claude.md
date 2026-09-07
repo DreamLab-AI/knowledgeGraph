@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Claude
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,45 +7,162 @@ public: true
   "title": "Claude",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:anthropic", "vc:label": "Anthropic"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:constitutional-ai-training-methodology", "vc:label": "Constitutional AI Training Methodology"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:pre-training", "vc:label": "Pre Training"},
-    {"@id": "urn:visionflow:linked:instruction-tuning", "vc:label": "Instruction Tuning"},
-    {"@id": "urn:visionflow:linked:direct-preference-optimisation", "vc:label": "Direct Preference Optimisation"},
-    {"@id": "urn:visionflow:linked:rlhf", "vc:label": "RLHF"},
-    {"@id": "urn:visionflow:linked:red-teaming", "vc:label": "Red Teaming"},
-    {"@id": "urn:visionflow:linked:mechanistic-interpretability", "vc:label": "Mechanistic Interpretability"},
-    {"@id": "urn:visionflow:linked:scalable-oversight", "vc:label": "Scalable Oversight"},
-    {"@id": "urn:visionflow:linked:responsible-scaling-policy", "vc:label": "Responsible Scaling Policy"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:conversational-ai", "vc:label": "Conversational AI"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:code-generation", "vc:label": "Code Generation"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:multi-step-reasoning", "vc:label": "Multi-Step Reasoning"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:ai-safety-research", "vc:label": "AI Safety Research"},
-    {"@id": "urn:visionflow:linked:enterprise-ai-adoption", "vc:label": "Enterprise AI Adoption"},
-    {"@id": "urn:visionflow:linked:frontier-ai", "vc:label": "Frontier AI"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:ai-safety-institute", "vc:label": "AI Safety Institute"},
-    {"@id": "urn:visionflow:linked:gpt-4", "vc:label": "GPT 4"},
-    {"@id": "urn:visionflow:linked:gemini-multimodal-language-model", "vc:label": "Gemini Multimodal Language Model"},
-    {"@id": "urn:visionflow:linked:llama-3", "vc:label": "Llama 3"},
-    {"@id": "urn:visionflow:linked:openai-research-organisation", "vc:label": "OpenAI Research Organisation"},
-    {"@id": "urn:visionflow:linked:human-feedback", "vc:label": "Human Feedback"},
-    {"@id": "urn:visionflow:linked:amazon-bedrock", "vc:label": "Amazon Bedrock"},
-    {"@id": "urn:visionflow:linked:google-deepmind", "vc:label": "Google DeepMind"},
-    {"@id": "urn:visionflow:linked:eu-ai-act-regulatory-instrument", "vc:label": "EU AI Act Regulatory Instrument"}
+    {
+      "@id": "urn:visionflow:linked:anthropic",
+      "vc:label": "Anthropic"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:constitutional-ai-training-methodology",
+      "vc:label": "Constitutional AI Training Methodology"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:pre-training",
+      "vc:label": "Pre Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:instruction-tuning",
+      "vc:label": "Instruction Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:direct-preference-optimisation",
+      "vc:label": "Direct Preference Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:rlhf",
+      "vc:label": "RLHF"
+    },
+    {
+      "@id": "urn:visionflow:linked:red-teaming",
+      "vc:label": "Red Teaming"
+    },
+    {
+      "@id": "urn:visionflow:linked:mechanistic-interpretability",
+      "vc:label": "Mechanistic Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalable-oversight",
+      "vc:label": "Scalable Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-scaling-policy",
+      "vc:label": "Responsible Scaling Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:conversational-ai",
+      "vc:label": "Conversational AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-step-reasoning",
+      "vc:label": "Multi-Step Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety-research",
+      "vc:label": "AI Safety Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:enterprise-ai-adoption",
+      "vc:label": "Enterprise AI Adoption"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-ai",
+      "vc:label": "Frontier AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety-institute",
+      "vc:label": "AI Safety Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpt-4",
+      "vc:label": "GPT 4"
+    },
+    {
+      "@id": "urn:visionflow:linked:gemini-multimodal-language-model",
+      "vc:label": "Gemini Multimodal Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:llama-3",
+      "vc:label": "Llama 3"
+    },
+    {
+      "@id": "urn:visionflow:linked:openai-research-organisation",
+      "vc:label": "OpenAI Research Organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-feedback",
+      "vc:label": "Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:amazon-bedrock",
+      "vc:label": "Amazon Bedrock"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-deepmind",
+      "vc:label": "Google DeepMind"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act-regulatory-instrument",
+      "vc:label": "EU AI Act Regulatory Instrument"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -204,70 +316,11 @@ public: true
       "label": "Anthropic Claude"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:claude:b9f3e8a21c50",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:claude"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Anthropic]]", "resolved": "urn:visionflow:linked:anthropic", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Constitutional AI Training Methodology]]", "resolved": "urn:visionflow:linked:constitutional-ai-training-methodology", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Pre Training]]", "resolved": "urn:visionflow:linked:pre-training", "kind": "ResolvedLink"},
-    {"raw": "[[Instruction Tuning]]", "resolved": "urn:visionflow:linked:instruction-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Direct Preference Optimisation]]", "resolved": "urn:visionflow:linked:direct-preference-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[RLHF]]", "resolved": "urn:visionflow:linked:rlhf", "kind": "ResolvedLink"},
-    {"raw": "[[Red Teaming]]", "resolved": "urn:visionflow:linked:red-teaming", "kind": "ResolvedLink"},
-    {"raw": "[[Mechanistic Interpretability]]", "resolved": "urn:visionflow:linked:mechanistic-interpretability", "kind": "ResolvedLink"},
-    {"raw": "[[Scalable Oversight]]", "resolved": "urn:visionflow:linked:scalable-oversight", "kind": "ResolvedLink"},
-    {"raw": "[[Responsible Scaling Policy]]", "resolved": "urn:visionflow:linked:responsible-scaling-policy", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Tool Use]]", "resolved": "urn:visionflow:linked:tool-use", "kind": "ResolvedLink"},
-    {"raw": "[[Conversational AI]]", "resolved": "urn:visionflow:linked:conversational-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Function Calling]]", "resolved": "urn:visionflow:linked:function-calling", "kind": "ResolvedLink"},
-    {"raw": "[[Code Generation]]", "resolved": "urn:visionflow:linked:code-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Step Reasoning]]", "resolved": "urn:visionflow:linked:multi-step-reasoning", "kind": "ResolvedLink"},
-    {"raw": "[[Workflow Automation]]", "resolved": "urn:visionflow:linked:workflow-automation", "kind": "ResolvedLink"},
-    {"raw": "[[AI Alignment]]", "resolved": "urn:visionflow:linked:ai-alignment", "kind": "ResolvedLink"},
-    {"raw": "[[AI Safety Research]]", "resolved": "urn:visionflow:linked:ai-safety-research", "kind": "ResolvedLink"},
-    {"raw": "[[Enterprise AI Adoption]]", "resolved": "urn:visionflow:linked:enterprise-ai-adoption", "kind": "ResolvedLink"},
-    {"raw": "[[Frontier AI]]", "resolved": "urn:visionflow:linked:frontier-ai", "kind": "ResolvedLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[AI Safety Institute]]", "resolved": "urn:visionflow:linked:ai-safety-institute", "kind": "ResolvedLink"},
-    {"raw": "[[GPT 4]]", "resolved": "urn:visionflow:linked:gpt-4", "kind": "ResolvedLink"},
-    {"raw": "[[Gemini Multimodal Language Model]]", "resolved": "urn:visionflow:linked:gemini-multimodal-language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Llama 3]]", "resolved": "urn:visionflow:linked:llama-3", "kind": "ResolvedLink"},
-    {"raw": "[[OpenAI Research Organisation]]", "resolved": "urn:visionflow:linked:openai-research-organisation", "kind": "ResolvedLink"},
-    {"raw": "[[Human Feedback]]", "resolved": "urn:visionflow:linked:human-feedback", "kind": "ResolvedLink"},
-    {"raw": "[[Amazon Bedrock]]", "resolved": "urn:visionflow:linked:amazon-bedrock", "kind": "ResolvedLink"},
-    {"raw": "[[Google DeepMind]]", "resolved": "urn:visionflow:linked:google-deepmind", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act Regulatory Instrument]]", "resolved": "urn:visionflow:linked:eu-ai-act-regulatory-instrument", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -407,7 +460,7 @@ public: true
 
   Claude is the commercial flagship of [[Anthropic]], a frontier AI safety company founded in April 2021 by Dario Amodei, Daniela Amodei, and colleagues formerly at [[OpenAI Research Organisation]]. The name "Claude" was chosen to humanise the assistant — departing from acronym-based naming conventions common in the industry — and implicitly references Claude Shannon, the founder of information theory, reflecting [[Anthropic]]'s research orientation. The model family was publicly launched in March 2023 with Claude 1, which established the [[Constitutional AI Training Methodology]] (CAI) baseline: a training procedure in which the model critiques and revises its own outputs against a written set of ethical principles, reducing reliance on human annotators for harmlessness labelling and creating a more interpretable, principle-grounded training process. This distinguished Claude from GPT-3.5 and early GPT-4 at launch by offering a documented, auditable alignment methodology rather than the predominantly behavioural safety training approach of OpenAI's contemporaneous models.
 
-  Claude's central design claim — that [[AI Safety]] and commercial capability are complementary rather than opposed — is tested and evidenced through each model generation. The claim has been progressively strengthened by empirical evidence: Claude 3 Opus (March 2024) achieved state-of-the-art performance on MMLU, HumanEval, and MATH benchmarks at the time of release, demonstrating that safety-focused training could produce models competitive with the frontier; Claude Opus 4 (May 2025) achieved 72.5% on SWE-bench Verified (software engineering benchmark); Claude Opus 4.5 (November 2025) reached 80.9% on SWE-bench Verified; and Claude Fable 5 (June 2026) achieved state-of-the-art results on FrontierCode, CursorBench, and frontier physics and finance benchmarks, while remaining the model with the most comprehensive publicly available safety evaluations in the frontier landscape.
+  Claude's central design claim — that [[AI Safety]] and commercial capability are complementary rather than opposed — is tested and evidenced through each model generation. The claim has been progressively strengthened by empirical evidence: Claude 3 Opus (March 2024) achieved state-of-the-art performance on MMLU, HumanEval, and MATH benchmarks at the time of release, demonstrating that safety-focused training [private] produce models competitive with the frontier; Claude Opus 4 (May 2025) achieved 72.5% on SWE-bench Verified (software engineering benchmark); Claude Opus 4.5 (November 2025) reached 80.9% on SWE-bench Verified; and Claude Fable 5 (June 2026) achieved state-of-the-art results on FrontierCode, CursorBench, and frontier physics and finance benchmarks, while remaining the model with the most comprehensive publicly available safety evaluations in the frontier landscape.
 
   The commercial success of Claude is structural to [[Anthropic]]'s mission model: revenue from API deployments funds the research needed to develop safe frontier AI, creating a self-reinforcing loop between commercial viability and safety research investment. By mid-2026, this model had produced a company valuation of approximately $965 billion — the highest valuation of any AI startup globally — with [[Anthropic]] filing confidential IPO documentation in June 2026. Strategic distribution agreements with Amazon Web Services (through [[Amazon Bedrock]]) and Google Cloud (through Vertex AI), alongside enterprise deployments at Deloitte (470,000 employees globally), Grant Thornton UK (enterprise-wide rollout), and TCS (50,000 employees across 56 countries), confirm Claude's position as the preferred frontier model for regulated enterprise and public-sector deployments.
 
@@ -532,7 +585,7 @@ public: true
 
   The intellectual foundations of Claude's training methodology draw from and contribute to a multi-strand academic literature:
 
-  **Reinforcement learning from human feedback** originates with Christiano et al. (2017, NeurIPS), who demonstrated that human preference comparisons could train reward models for policy fine-tuning — a methodology applied at scale to language models beginning with InstructGPT (Ouyang et al., 2022) and adopted as the core helpfulness training signal for Claude.
+  **Reinforcement learning from human feedback** originates with Christiano et al. (2017, NeurIPS), who demonstrated that human preference comparisons [private] train reward models for policy fine-tuning — a methodology applied at scale to language models beginning with InstructGPT (Ouyang et al., 2022) and adopted as the core helpfulness training signal for Claude.
 
   **Constitutional AI** (Bai et al., 2022) introduced the RLAIF approach enabling AI preference labels to substitute for human labellers in harmlessness training — the primary published [[Anthropic]] contribution to the alignment fine-tuning literature, now widely cited in AI safety, AI ethics, and AI policy literature.
 
@@ -572,7 +625,7 @@ public: true
 
   **Mechanistic interpretability as safety infrastructure:** The 2025 precedent of using attribution-graph analysis as a pre-deployment gate for evaluation-awareness circuits is expected to mature into a systematic pre-deployment protocol. If attribution-graph analysis can be scaled to models with hundreds of billions of parameters — a significant computational challenge — it would enable circuit-level safety verification that behavioural evaluation cannot achieve, providing the only known defence against sophisticated deceptive alignment.
 
-  **The IPO transition and governance:** The expected IPO (likely 2026–2027) creates governance challenges for [[Anthropic]]'s public-benefit corporation structure. Public company status imposes quarterly earnings obligations, analyst coverage focused on revenue growth, and shareholder composition that may not share the safety mission. The history of mission-driven organisations transitioning to public company status suggests heightened tension between safety research investment and financial metric optimisation. The founding team's retention of voting control (via dual-class share structure if implemented) could partially mitigate this but would reduce accountability to public shareholders.
+  **The IPO transition and governance:** The expected IPO (likely 2026–2027) creates governance challenges for [[Anthropic]]'s public-benefit corporation structure. Public company status imposes quarterly earnings obligations, analyst coverage focused on revenue growth, and shareholder composition that may not share the safety mission. The history of mission-driven organisations transitioning to public company status suggests heightened tension between safety research investment and financial metric optimisation. The founding team's retention of voting control (via dual-class share structure if implemented) [private] partially mitigate this but would reduce accountability to public shareholders.
 
   **MCP ecosystem standardisation:** As [[Model Context Protocol]] matures under Linux Foundation governance, it is expected to become the dominant AI tool integration standard across the industry, creating a lasting ecosystem-level advantage for Claude. Working Group development of Auth, Registry, and Transport protocols will determine whether MCP becomes a genuine universal standard or fractures into provider-specific variants.
 
@@ -618,9 +671,9 @@ public: true
 
   The theoretical distinction motivating [[Constitutional AI Training Methodology]] relative to standard [[Reinforcement Learning from Human Feedback]] is grounded in the scalability limits of human preference elicitation. Standard RLHF requires human annotators to compare pairs of model outputs and identify which is safer or more aligned. As the space of potential harmful outputs grows with model capability, the annotation labour required grows proportionally. CAI addresses this by observing that the model itself, given a natural-language statement of relevant principles, can approximate the human annotator's judgement for many categories of harmful output — reducing the annotation requirement to the initial writing of the constitution rather than the ongoing labelling of individual outputs. This substitution is imperfect (the model's judgement of constitutional compliance approximates rather than replaces human judgement) but enables the method to scale to large and diverse sets of safety-relevant behaviours without linear growth in annotation cost.
 
-  The [[Mechanistic Interpretability]] programme's theoretical motivation is complementary. Behavioural evaluation of model safety — however comprehensive the test suite — can only detect failure modes that evaluators anticipate in advance, and is therefore vulnerable to any misalignment that manifests only in deployment contexts that differ from the evaluation distribution. A sufficiently capable misaligned model could, in principle, learn to recognise evaluation contexts and behave safely within them while behaving differently in deployment — the deceptive alignment failure mode formalised by Hubinger et al. (2019). The only defence against deceptive alignment that does not rely on behavioural evaluation is direct inspection of the model's internal representations to verify that the circuits producing safe outputs in evaluation contexts are the same circuits operating in deployment. The 2025 attribution-graph analysis and pre-deployment suppression of evaluation-awareness circuits in Claude Sonnet 4.5 represents the first empirical demonstration of this theoretical principle in production practice.
+  The [[Mechanistic Interpretability]] programme's theoretical motivation is complementary. Behavioural evaluation of model safety — however comprehensive the test suite — can only detect failure modes that evaluators anticipate in advance, and is therefore vulnerable to any misalignment that manifests only in deployment contexts that differ from the evaluation distribution. A sufficiently capable misaligned model [private], in principle, learn to recognise evaluation contexts and behave safely within them while behaving differently in deployment — the deceptive alignment failure mode formalised by Hubinger et al. (2019). The only defence against deceptive alignment that does not rely on behavioural evaluation is direct inspection of the model's internal representations to verify that the circuits producing safe outputs in evaluation contexts are the same circuits operating in deployment. The 2025 attribution-graph analysis and pre-deployment suppression of evaluation-awareness circuits in Claude Sonnet 4.5 represents the first empirical demonstration of this theoretical principle in production practice.
 
-  The [[Responsible Scaling Policy]]'s theoretical grounding is in capability threshold theory: specific points in the capability space where a model transitions from providing no meaningful uplift to a hypothetical bad actor to providing meaningful uplift that could enable catastrophic harm. The ASL framework translates this conceptual threshold into operational evaluation benchmarks: for each candidate dangerous capability (CBRN weapons development, autonomous replication, sophisticated cyberoffence), [[Anthropic]] defines uplift assessment protocols and evaluates models against them before deployment. Models below threshold can be deployed with standard precautions; models at or above threshold require enhanced safeguards defined in the RSP before they can be deployed.
+  The [[Responsible Scaling Policy]]'s theoretical grounding is in capability threshold theory: specific points in the capability space where a model transitions from providing no meaningful uplift to a hypothetical bad actor to providing meaningful uplift that [private] enable catastrophic harm. The ASL framework translates this conceptual threshold into operational evaluation benchmarks: for each candidate dangerous capability (CBRN weapons development, autonomous replication, sophisticated cyberoffence), [[Anthropic]] defines uplift assessment protocols and evaluates models against them before deployment. Models below threshold can be deployed with standard precautions; models at or above threshold require enhanced safeguards defined in the RSP before they can be deployed.
 
   Neural scaling laws (Kaplan, McCandlish et al., 2020) provide the theoretical foundation for Claude's training scale decisions. The empirical relationship between training compute, model size, and dataset size — established by [[Anthropic]]'s founding team before the company existed — predicts performance improvements as a power law in each resource dimension. The compute-optimal training recipe derived from these laws (approximately equal allocation between model size and training tokens at fixed compute budget) has influenced every major frontier model training decision in the industry. The subsequent Chinchilla scaling laws (Hoffmann et al., DeepMind, 2022) refined these predictions, finding that Kaplan et al. slightly overestimated optimal model size — shifting the field towards training smaller models on more tokens. Claude generations from Claude 2 onwards reflect this refined understanding of compute-optimal training.
 
@@ -686,7 +739,7 @@ public: true
 
   [[Anthropic]]'s structured [[Red Teaming]] process for Claude pre-release evaluation covers multiple risk categories with specific operationalised benchmarks tied to the AI Safety Levels in the [[Responsible Scaling Policy]]:
 
-  **CBRN Uplift Assessment:** Does the model provide meaningful assistance to someone attempting to develop chemical, biological, radiological, or nuclear weapons beyond the level of assistance available from a standard web search or textbook? Evaluated through structured elicitation protocols with expert evaluators in relevant scientific domains. ASL-3 threshold: meaningful uplift that could materially accelerate a credible weapons development programme.
+  **CBRN Uplift Assessment:** Does the model provide meaningful assistance to someone attempting to develop chemical, biological, radiological, or nuclear weapons beyond the level of assistance available from a standard web search or textbook? Evaluated through structured elicitation protocols with expert evaluators in relevant scientific domains. ASL-3 threshold: meaningful uplift that [private] materially accelerate a credible weapons development programme.
 
   **Autonomous Replication Assessment:** Given access to appropriate tools (code execution, file system, internet access), can the model autonomously acquire resources, create copies of itself, and sustain independent operation without human oversight? Evaluated through sandboxed agent task scenarios. ASL-3 threshold: demonstrated reliable self-replication across a range of sandboxed environments.
 
@@ -694,7 +747,7 @@ public: true
 
   **Deceptive Alignment Assessment:** Does the model behave differently when it has evidence it is being evaluated versus operating in deployment? Evaluated through situational-awareness probes and the attribution-graph methodology developed for Claude Sonnet 4.5 (2025). This is the assessment category where [[Mechanistic Interpretability]] has proven most directly applicable: the identification and suppression of evaluation-awareness circuits before deployment is the practical implementation of the deceptive alignment safety gate.
 
-  **Persuasion and Manipulation Risk:** Can the model be used to generate highly effective persuasive content that could influence beliefs or behaviour at scale in ways users would object to if they understood the mechanism? Evaluated through A/B testing of model-generated persuasive content against human-written baselines on standardised persuasion benchmarks.
+  **Persuasion and Manipulation Risk:** Can the model be used to generate highly effective persuasive content that [private] influence beliefs or behaviour at scale in ways users would object to if they understood the mechanism? Evaluated through A/B testing of model-generated persuasive content against human-written baselines on standardised persuasion benchmarks.
 
   These evaluation categories are publicly disclosed in Claude's system cards and form the basis for the ASL threshold assessments in RSP v3.0. The disclosure of evaluation methodology — not merely results — is a key transparency commitment distinguishing Claude's safety documentation from most other frontier model safety claims.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tally
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,52 +169,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tally:b01e26d3f5a5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:266b56f788e8f0db51ed5045a116eccc857da4c197a29be66b65064fcd4bf31e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralised Autonomous Organisation]]",
-      "resolved": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Token]]",
-      "resolved": "urn:visionflow:linked:governance-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO]]",
-      "resolved": "urn:visionflow:linked:dao",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO Tooling]]",
-      "resolved": "urn:visionflow:linked:dao-tooling",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A web platform and toolset for creating and managing on-chain decentralised autonomous organisations, providing interfaces for proposal creation, delegation and governance voting.

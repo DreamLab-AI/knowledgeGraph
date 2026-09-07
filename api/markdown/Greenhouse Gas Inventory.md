@@ -1,58 +1,112 @@
----
-public: true
----
-
-# Greenhouse Gas Inventory
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:greenhouse-gas-inventory", "@type":"Page", "title":"Greenhouse Gas Inventory", "vc:slug":"greenhouse-gas-inventory", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:greenhouse-gas-inventory",
+  "@type": "Page",
+  "title": "Greenhouse Gas Inventory",
+  "vc:slug": "greenhouse-gas-inventory",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:greenhouse-gas-inventory",
-  "@type":"Class",
-  "label":"Greenhouse Gas Inventory",
-  "definition":"A greenhouse gas inventory is a systematic, periodic accounting of the greenhouse gas emissions and removals attributable to an organisation, activity or jurisdiction over a defined period, expressed in carbon-dioxide-equivalent units. It categorises emissions by source and by scope, applies emission factors to activity data, and forms the quantitative basis for target-setting, reporting and reduction strategies. Inventories underpin compliance, disclosure and progress toward net-zero commitments.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}],
-  "relations":{
-    "requires":[
-      {"@id":"urn:ngm:class:data","label":"Data"},
-      {"@id":"urn:ngm:class:ghg-protocol","label":"GHG Protocol"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:greenhouse-gas-inventory",
+  "@type": "Class",
+  "label": "Greenhouse Gas Inventory",
+  "definition": "A greenhouse gas inventory is a systematic, periodic accounting of the greenhouse gas emissions and removals attributable to an organisation, activity or jurisdiction over a defined period, expressed in carbon-dioxide-equivalent units. It categorises emissions by source and by scope, applies emission factors to activity data, and forms the quantitative basis for target-setting, reporting and reduction strategies. Inventories underpin compliance, disclosure and progress toward net-zero commitments.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:carbon-accounting",
+      "label": "Carbon Accounting"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:carbon-neutrality","label":"Carbon Neutrality"},
-      {"@id":"urn:ngm:class:net-zero","label":"Net Zero"},
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:carbon-footprint","label":"Carbon Footprint"},
-      {"@id":"urn:ngm:class:life-cycle-assessment","label":"Life Cycle Assessment"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      }
     ],
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:ghg-protocol","label":"GHG Protocol"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:sustainability","label":"Sustainability"},
-      {"@id":"urn:ngm:class:esg","label":"ESG"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:scope-3-emissions","label":"Scope 3 Emissions"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:carbon-offset","label":"Carbon Offset"},
-      {"@id":"urn:ngm:class:carbon-footprint","label":"Carbon Footprint"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

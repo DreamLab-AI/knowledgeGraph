@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intent Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Intent recognition is the natural-language-processing task of inferring a user's underlying goal or desired action from an utterance, query, or interaction. It maps free-form input to a discrete set of intents and extracts associated parameters, forming the comprehension layer of conversational systems. Accurate intent recognition is what lets chatbots and voice assistants route requests to the correct skill or response.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:intent-classification", "label": "Intent Classification"},
-      {"@id": "urn:ngm:class:chatbots", "label": "Chatbots"}
+      {
+        "@id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      }
     ]
   },
   "quality": 0.72

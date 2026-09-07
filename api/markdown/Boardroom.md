@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Boardroom
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -139,7 +134,6 @@ public: true
 
   - In governance terms, the boardroom's effectiveness depends not merely on its physical attributes but on the quality of information presented, the independence and expertise of directors, and the culture of challenge. Governance researchers (Mace, 1971; Lorsch and MacIver, 1989) documented that many boards historically operated as rubber stamps for dominant chief executives. Post-Cadbury reforms introduced independent non-executive directors, separation of chairman and CEO roles, and stronger audit committees to create genuine oversight capacity.
 
-  - The COVID-19 pandemic (2020) forced boards into virtual and hybrid formats almost overnight, testing whether governance processes could function without physical co-presence. Most boards found that routine information review and decision ratification worked well virtually, while strategic deliberation and sensitive matters (CEO performance, crisis response) benefited from in-person settings. Technology platforms (Diligent, BoardEffect, Board Intelligence) emerged to manage board pack distribution, document security, and voting workflows digitally.
+  - The COVID-19 pandemic (2020) forced boards into virtual and hybrid formats almost overnight, testing whether governance processes [private] function without physical co-presence. Most boards found that routine information review and decision ratification worked well virtually, while strategic deliberation and sensitive matters (CEO performance, crisis response) benefited from in-person settings. Technology platforms (Diligent, BoardEffect, Board Intelligence) emerged to manage board pack distribution, document security, and voting workflows digitally.
 
   - In 2024–2025, the boardroom agenda has expanded markedly. AI governance, sustainability reporting under CSRD, and geopolitical supply-chain risk are now standard agenda items alongside financial performance. The concept of the "digital boardroom" is evolving: real-time data dashboards, AI-generated briefing summaries, and governance risk and compliance (GRC) platforms are being piloted to reduce information asymmetry between executives and non-executive directors. Diversity requirements for board composition (gender, ethnicity, skills) are increasingly mandatory or strongly recommended across the EU, UK, and many Asian markets.
-

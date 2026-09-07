@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Internal AI Harness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,56 +7,206 @@ public: true
   "title": "Internal AI Harness",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
-    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
-    {"@id": "urn:visionflow:linked:ai-inference", "vc:label": "AI Inference"},
-    {"@id": "urn:visionflow:linked:model-inference", "vc:label": "Model Inference"},
-    {"@id": "urn:visionflow:linked:inference-runtime", "vc:label": "Inference Runtime"},
-    {"@id": "urn:visionflow:linked:runtime-environment", "vc:label": "Runtime Environment"},
-    {"@id": "urn:visionflow:linked:model-serving", "vc:label": "Model Serving"},
-    {"@id": "urn:visionflow:linked:model-weights", "vc:label": "Model Weights"},
-    {"@id": "urn:visionflow:linked:kv-cache", "vc:label": "KV Cache"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:tool-registry", "vc:label": "Tool Registry"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory"},
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:visionflow:linked:on-device-ai", "vc:label": "On-Device AI"},
-    {"@id": "urn:visionflow:linked:real-time-ai", "vc:label": "Real-Time AI"},
-    {"@id": "urn:visionflow:linked:low-latency-ai", "vc:label": "Low-Latency AI"},
-    {"@id": "urn:visionflow:linked:onnx", "vc:label": "ONNX"},
-    {"@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration"},
-    {"@id": "urn:visionflow:linked:ai-agent-system", "vc:label": "AI Agent System"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:sandboxing", "vc:label": "Sandboxing"},
-    {"@id": "urn:visionflow:linked:security", "vc:label": "Security"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:human-oversight", "vc:label": "Human Oversight"},
-    {"@id": "urn:visionflow:linked:observability", "vc:label": "Observability"},
-    {"@id": "urn:visionflow:linked:quantisation", "vc:label": "Quantisation"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:autonomous-agents", "vc:label": "Autonomous Agents"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:ai-infrastructure", "vc:label": "AI Infrastructure"},
-    {"@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems"},
-    {"@id": "urn:visionflow:linked:evaluation-harness", "vc:label": "Evaluation Harness"},
-    {"@id": "urn:visionflow:linked:task-specification", "vc:label": "Task Specification"},
-    {"@id": "urn:visionflow:linked:agent-memory-layers", "vc:label": "Agent Memory Layers"},
-    {"@id": "urn:visionflow:linked:approval-gate", "vc:label": "Approval Gate"},
-    {"@id": "urn:visionflow:linked:llm-orchestration", "vc:label": "LLM Orchestration"},
-    {"@id": "urn:visionflow:linked:software-framework", "vc:label": "Software Framework"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "Multi-Agent Orchestration"},
-    {"@id": "urn:visionflow:linked:ai-agent-coordination", "vc:label": "AI Agent Coordination"},
-    {"@id": "urn:visionflow:linked:process-isolation", "vc:label": "Process Isolation"},
-    {"@id": "urn:visionflow:linked:failure-recovery", "vc:label": "Failure Recovery"}
+    {
+      "@id": "urn:visionflow:linked:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-inference",
+      "vc:label": "AI Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-inference",
+      "vc:label": "Model Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-runtime",
+      "vc:label": "Inference Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:runtime-environment",
+      "vc:label": "Runtime Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-serving",
+      "vc:label": "Model Serving"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-weights",
+      "vc:label": "Model Weights"
+    },
+    {
+      "@id": "urn:visionflow:linked:kv-cache",
+      "vc:label": "KV Cache"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-registry",
+      "vc:label": "Tool Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:on-device-ai",
+      "vc:label": "On-Device AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-ai",
+      "vc:label": "Real-Time AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:low-latency-ai",
+      "vc:label": "Low-Latency AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:onnx",
+      "vc:label": "ONNX"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-acceleration",
+      "vc:label": "GPU Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandboxing",
+      "vc:label": "Sandboxing"
+    },
+    {
+      "@id": "urn:visionflow:linked:security",
+      "vc:label": "Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability",
+      "vc:label": "Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantisation",
+      "vc:label": "Quantisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agents",
+      "vc:label": "Autonomous Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-infrastructure",
+      "vc:label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-harness",
+      "vc:label": "Evaluation Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-specification",
+      "vc:label": "Task Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory-layers",
+      "vc:label": "Agent Memory Layers"
+    },
+    {
+      "@id": "urn:visionflow:linked:approval-gate",
+      "vc:label": "Approval Gate"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-orchestration",
+      "vc:label": "LLM Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-framework",
+      "vc:label": "Software Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "Multi-Agent Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-coordination",
+      "vc:label": "AI Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-isolation",
+      "vc:label": "Process Isolation"
+    },
+    {
+      "@id": "urn:visionflow:linked:failure-recovery",
+      "vc:label": "Failure Recovery"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -76,67 +221,184 @@ public: true
   "definition": "An internal AI harness is an in-process execution framework that embeds AI model inference directly within an application's runtime, enabling tight coupling between the host system and AI capabilities for low-latency, high-throughput inference with direct memory access and minimal serialisation overhead, while simultaneously managing the tool-call loop, context selection, task state, approval gates, and observability traces that govern agent behaviour within a single address space.",
   "domain": "ai",
   "maturity": "emerging",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
-    {"@id": "urn:ngm:class:agent-harness", "label": "Agent Harness"},
-    {"@id": "urn:ngm:class:evaluation-harness", "label": "Evaluation Harness"}
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "@id": "urn:ngm:class:evaluation-harness",
+      "label": "Evaluation Harness"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:inference-runtime", "label": "Inference Runtime"},
-      {"@id": "urn:ngm:class:tool-registry", "label": "Tool Registry"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
-      {"@id": "urn:ngm:class:kv-cache", "label": "KV Cache"},
-      {"@id": "urn:ngm:class:agent-memory", "label": "Agent Memory"},
-      {"@id": "urn:ngm:class:approval-gate", "label": "Approval Gate"},
-      {"@id": "urn:ngm:class:task-specification", "label": "Task Specification"}
+      {
+        "@id": "urn:ngm:class:inference-runtime",
+        "label": "Inference Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "@id": "urn:ngm:class:approval-gate",
+        "label": "Approval Gate"
+      },
+      {
+        "@id": "urn:ngm:class:task-specification",
+        "label": "Task Specification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:model-inference", "label": "Model Inference"},
-      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"},
-      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"},
-      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
-      {"@id": "urn:ngm:class:onnx", "label": "ONNX"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
+      {
+        "@id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-ai", "label": "Real-Time AI"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:on-device-ai", "label": "On-Device AI"},
-      {"@id": "urn:ngm:class:low-latency-ai", "label": "Low-Latency AI"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
+      {
+        "@id": "urn:ngm:class:real-time-ai",
+        "label": "Real-Time AI"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-ai",
+        "label": "On-Device AI"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-ai",
+        "label": "Low-Latency AI"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:model-weights", "label": "Model Weights"},
-      {"@id": "urn:ngm:class:inference-runtime", "label": "Inference Runtime"},
-      {"@id": "urn:ngm:class:agent-runtime", "label": "Agent Runtime"},
-      {"@id": "urn:ngm:class:sandboxing", "label": "Sandboxing"}
+      {
+        "@id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "@id": "urn:ngm:class:inference-runtime",
+        "label": "Inference Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxing",
+        "label": "Sandboxing"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:llm-orchestration", "label": "LLM Orchestration"}
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "contrasts-with": [
-      {"@id": "urn:ngm:class:external-ai-harness", "label": "External AI Harness"}
+      {
+        "@id": "urn:ngm:class:external-ai-harness",
+        "label": "External AI Harness"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
-      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"},
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:agent-execution-sandboxes", "label": "Agent Execution Sandboxes"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:ai-agent-coordination", "label": "AI Agent Coordination"}
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-coordination",
+        "label": "AI Agent Coordination"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -276,7 +538,7 @@ public: true
     - **Failure recovery and retry logic** — detecting model output validation failures (JSON schema violations, tool parameter type errors, hallucinated tool names not in registry), handling tool execution exceptions (filesystem permission denied, network timeout), and implementing retry strategies (re-prompt with error context, fall back to simpler tool, escalate to human). In-process failure recovery avoids the distributed systems complexity of cross-service error propagation, at the cost of less isolation.
 
   ## Use Cases / Major Families
-    - **[[On-Device AI]] personal assistants** — [[Large Language Models|Small language models]] (1B–8B parameters) embedded in smartphone operating systems (Apple Intelligence iOS 18+, Google Gemini Nano on Android) or desktop applications (Microsoft Copilot+ PC with NPU acceleration). The internal harness manages all model invocations, tool calls (calendar access, email composition, web search via on-device index), and user approval workflows within the device process, with no cloud network dependency for the core reasoning loop.
+    - **[[On-Device AI]] personal assistants** — [[Large Language Models|Small language models]] (1B–8B parameters) embedded in smartphone operating systems (Apple Intelligence iOS 18+, Google Gemini Nano on Android) or desktop applications (Microsoft Copilot+ PC with NPU acceleration). The internal harness manages all model invocations, tool calls (calendar access, email composition, web search via on-device [private]), and user approval workflows within the device process, with no cloud network dependency for the core reasoning loop.
 
     - **AI coding assistants** — Anthropic Claude Code, GitHub Copilot Workspace, Cursor, and Codeium embed model inference within the IDE process or a local sidecar daemon, enabling inline code completion, refactoring, and test generation with sub-200ms end-to-end latency. The internal harness manages context window construction (file content, cursor position, repository structure), tool calls (code execution, file read/write, test runner invocation), and approval flows (confirming multi-file edits before application).
 
@@ -367,7 +629,7 @@ public: true
 
     **Prompt injection via tool outputs**: When a tool invocation returns attacker-controlled content (a web page, a user-submitted document, an external API response) that is injected into the model's context as part of the [[Context Window]], adversarial instructions embedded in that content may cause the model to execute unintended tool calls or override the harness's permission system. This "indirect prompt injection" attack vector is particularly severe in internal harnesses because the tool output is injected directly into the model's shared-memory context without network-boundary filtering. Mitigation strategies include output sanitisation before context injection, structured output schemas that reject natural-language content in tool return fields, and instruction hierarchy enforcement that tags system prompt instructions as trusted and injected content as untrusted.
 
-    **Shared memory exfiltration**: In an in-process harness, all application secrets reachable by the host process's memory space are in principle reachable by the model's tool execution handlers. A compromised tool handler (or a model that generates code immediately executed without sandbox protection) could read API keys, database credentials, or user private data from the process heap. The [[Sandboxing]] countermeasures available within an internal harness — capability-based permission systems, memory-safe tool handler implementations, process-level sandboxing of code execution via Hyperlight micro-VMs — reduce but cannot eliminate this risk without sacrificing the in-process latency advantage.
+    **Shared memory exfiltration**: In an in-process harness, all application secrets reachable by the host process's memory space are in principle reachable by the model's tool execution handlers. A compromised tool handler (or a model that generates code immediately executed without sandbox protection) [private] read API keys, database credentials, or user private data from the process heap. The [[Sandboxing]] countermeasures available within an internal harness — capability-based permission systems, memory-safe tool handler implementations, process-level sandboxing of code execution via Hyperlight micro-VMs — reduce but cannot eliminate this risk without sacrificing the in-process latency advantage.
 
     **Model output hallucination and permission bypass**: A model may output a tool call referencing a tool name not in the [[Tool Registry]], or with parameter values violating the tool's JSON Schema constraints, or with a permission level the current session is not authorised to invoke. Harness-layer validation catches these failures before tool execution, but the model may "jailbreak" its own harness configuration if the system prompt specifying the permission model is itself injectable or if the permission enforcement logic has exploitable edge cases. Formal verification of the permission enforcement logic (using model checking tools TLA+, Alloy) is the rigorous mitigation but requires formal specification of the permission model that most harness implementations lack.
 

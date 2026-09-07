@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Backward Compatibility
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -99,6 +95,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Backward compatibility is the property of a system, interface, or data format that allows newer versions to continue working correctly with inputs, clients, or data produced for older versions. It ensures that existing consumers do not break when a producer is upgraded, preserving established contracts while permitting evolution. Maintaining backward compatibility typically requires additive, non-breaking changes and careful deprecation policies.
   - Related concepts: [[Semantic Versioning]] [[API Versioning]] [[Interoperability]] [[Software System]]

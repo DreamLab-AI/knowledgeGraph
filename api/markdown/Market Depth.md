@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Market Depth
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

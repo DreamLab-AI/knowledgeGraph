@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FIDO Alliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,52 +183,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fido-alliance:7322671b7093",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ecb81096bdd736a2917259e3de160bf08eedc5cb508cfbc48b4b97660798f9ae"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asymmetric Cryptography]]",
-      "resolved": "urn:visionflow:linked:asymmetric-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Passwordless Authentication]]",
-      "resolved": "urn:visionflow:linked:passwordless-authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Factor Authentication]]",
-      "resolved": "urn:visionflow:linked:multi-factor-authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Authentication]]",
-      "resolved": "urn:visionflow:linked:authentication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Standards Body]]",
-      "resolved": "urn:visionflow:linked:standards-body",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An industry association that develops open authentication standards intended to reduce reliance on passwords through public key cryptography.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proprietary Evals
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "proprietary-evals",
   "title": "Proprietary Evals",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Intercom Apex", "Vertical AI Models"],
+  "vc:outboundWikilinks": [
+    "Intercom Apex",
+    "Vertical AI Models"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-performance",
+      "label": "Model Performance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

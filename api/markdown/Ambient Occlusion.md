@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ambient Occlusion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,4 +155,3 @@ public: true
   - In the production pipeline, AO is baked into texture atlases for static geometry and applied as a multiplier on the albedo or diffuse channel. For dynamic scenes, screen-space methods run as post-process passes in the [[Real-Time Rendering Pipeline]]. [[Neural Rendering]] approaches have explored learned AO approximations that generalise better to novel viewpoints than screen-space methods, at additional per-frame inference cost.
 
   - By 2024–2025, ambient occlusion is a mature and ubiquitous technique present in virtually every commercial game engine and rendering framework. Hardware-accelerated ray-traced AO (via NVIDIA RTX and AMD RDNA ray-tracing pipelines) is increasingly available at real-time frame rates on mid-range to high-end GPUs, reducing the need for screen-space approximations. In spatial computing and XR contexts, per-frame AO computation for dynamically placed virtual objects against reconstructed environment geometry remains an active research and engineering challenge.
-

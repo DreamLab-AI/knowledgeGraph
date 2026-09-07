@@ -1,37 +1,114 @@
----
-public: true
----
-
-# Cross Border Authentication
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cross-border-authentication", "@type":"Page", "title":"Cross Border Authentication", "vc:slug":"cross-border-authentication", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cross-border-authentication",
+  "@type": "Page",
+  "title": "Cross Border Authentication",
+  "vc:slug": "cross-border-authentication",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:cross-border-authentication",
-  "@type":"Class",
-  "label":"Cross Border Authentication",
-  "definition":"Cross border authentication is the verification of a person or entity's identity across national or jurisdictional boundaries, so that credentials issued in one country are trusted and accepted in another. It depends on interoperable identity schemes, mutual-recognition agreements and trust frameworks that reconcile differing legal and technical regimes. The capability enables seamless access to services, regulated transactions and travel without re-establishing identity from scratch in each jurisdiction.",
-  "domain":"governance",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"},{"@id":"urn:ngm:class:financial-inclusion","label":"Financial Inclusion"}],
-    "requires":[{"@id":"urn:ngm:class:trust-framework","label":"Trust Framework"},{"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"}],
-    "dependsOn":[{"@id":"urn:ngm:class:digital-trust","label":"Digital Trust"}],
-    "uses":[{"@id":"urn:ngm:class:verifiable-credentials","label":"Verifiable Credentials"},{"@id":"urn:ngm:class:federated-identity","label":"Federated Identity"}],
-    "implements":[{"@id":"urn:ngm:class:authentication-protocol","label":"Authentication Protocol"}],
-    "supports":[{"@id":"urn:ngm:class:decentralized-identity","label":"Decentralized Identity"}],
-    "partOf":[{"@id":"urn:ngm:class:identity-management","label":"Identity Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:self-sovereign-identity","label":"Self Sovereign Identity"}],
-    "relatedTo":[{"@id":"urn:ngm:class:single-sign-on","label":"Single Sign On"},{"@id":"urn:ngm:class:digital-identity","label":"Digital Identity"},{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-border-authentication",
+  "@type": "Class",
+  "label": "Cross Border Authentication",
+  "definition": "Cross border authentication is the verification of a person or entity's identity across national or jurisdictional boundaries, so that credentials issued in one country are trusted and accepted in another. It depends on interoperable identity schemes, mutual-recognition agreements and trust frameworks that reconcile differing legal and technical regimes. The capability enables seamless access to services, regulated transactions and travel without re-establishing identity from scratch in each jurisdiction.",
+  "domain": "governance",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:authentication-protocol",
+        "label": "Authentication Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign On"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

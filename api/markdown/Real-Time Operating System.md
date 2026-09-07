@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Real Time Operating System
----
-
-# Real-Time Operating System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -265,7 +258,7 @@ aliases:
   - **IEC 61508**: functional safety standard for industrial systems. Defines SIL (Safety Integrity Level) 1–4. RTOS vendors supply SIL 3/4 certification packages.
   - **IEC 62304**: medical device software lifecycle standard. RTOSes used in Class B/C medical devices require validated software lifecycle artefacts.
   - **IEEE 1588 (PTP)**: Precision Time Protocol for sub-microsecond clock synchronisation across networked real-time nodes — foundational for distributed RTOS clusters and industrial fieldbus timing.
-  - **MISRA C / CERT C**: coding standards widely adopted for RTOS-hosted safety application code to prevent undefined behaviour that could violate timing guarantees.
+  - **MISRA C / CERT C**: coding standards widely adopted for RTOS-hosted safety application code to prevent undefined behaviour that [private] violate timing guarantees.
   - Notable RTOS platforms: FreeRTOS (Amazon, MIT licence), Zephyr (Linux Foundation), VxWorks (Wind River), QNX Neutrino (BlackBerry), ThreadX / Azure RTOS (Microsoft), RTEMS (open source, used in space missions), INTEGRITY (Green Hills), Nucleus (Mentor/Siemens), eCos (Red Hat, open source).
 
 - ### Provenance

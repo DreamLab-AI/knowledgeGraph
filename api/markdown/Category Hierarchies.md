@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Category Hierarchies
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,72 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:category-hierarchies:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3e98bdb550113e7d2a154edff1590b8d2c2525f7aff4ad4d364d87ccbc5091cf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Classification Rules]]",
-      "resolved": "urn:visionflow:linked:classification-rules",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Content Classification]]",
-      "resolved": "urn:visionflow:linked:content-classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Navigation Structure]]",
-      "resolved": "urn:visionflow:linked:navigation-structure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Semantic Organization]]",
-      "resolved": "urn:visionflow:linked:semantic-organization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Taxonomy Design]]",
-      "resolved": "urn:visionflow:linked:taxonomy-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Term Relationships]]",
-      "resolved": "urn:visionflow:linked:term-relationships",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Organization System]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-organization-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.

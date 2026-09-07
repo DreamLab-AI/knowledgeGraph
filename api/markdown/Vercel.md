@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vercel
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vercel:9d3508a8484e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b8b3c5fc3957aee0a4560da10366272283ecf2cc56087475df0a6be54d64334a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:linked:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cloud Platform]]",
-      "resolved": "urn:visionflow:linked:cloud-platform",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scalability]]",
-      "resolved": "urn:visionflow:linked:scalability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Vercel is a company that provides a cloud platform for deploying and hosting web applications, with an emphasis on frontend frameworks.

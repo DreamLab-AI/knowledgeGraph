@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Overfitting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,32 +155,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:overfitting:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ed09aab9dadee82ee15e3449fb1e01eb14c4d5c440d94bd9ccfbb8ff8e4ee078"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Overfitting is a phenomenon in machine learning where a model learns the training data too precisely—including noise and spurious correlations—resulting in poor generalisation to unseen data. It corresponds to high variance and low bias in the bias-variance tradeoff, and is mitigated through regularisation, dropout, early stopping, and data augmentation.

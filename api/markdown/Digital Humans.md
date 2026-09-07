@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Humans
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,24 +56,60 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
-      {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"}
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
-      {"@id": "urn:ngm:class:digital-avatar", "label": "Digital Avatar"}
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-avatar",
+        "label": "Digital Avatar"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      }
     ]
   },
   "provenance": {
@@ -88,37 +119,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-humans:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f524c69ac5bcfb66eaa14b382bc8860b96be604fd38b0c2c24240393554efeac"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - [Generated from Gartner emerging tech analysis]

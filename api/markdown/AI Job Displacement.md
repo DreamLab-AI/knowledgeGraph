@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Job Displacement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-job-displacement",
   "title": "AI Job Displacement",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Economic Transition", "Social Policy"],
+  "vc:outboundWikilinks": [
+    "Economic Transition",
+    "Social Policy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:labor-market-impact", "label": "Labor Market Impact"}, {"@id": "urn:ngm:class:social-policy", "label": "Social Policy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:labor-market-impact",
+        "label": "Labor Market Impact"
+      },
+      {
+        "@id": "urn:ngm:class:social-policy",
+        "label": "Social Policy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

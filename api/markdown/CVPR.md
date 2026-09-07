@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CVPR
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -290,7 +285,7 @@ public: true
 
     The 2012 inflection point arrived through the co-located ImageNet Large Scale Visual Recognition Challenge: AlexNet's dramatic error-rate reduction demonstrated the power of [[Deep Learning]] on large-scale visual recognition and catalysed a wholesale reorientation of CVPR's research agenda toward [[Neural Architecture]] design, training methodology, and representation learning.
 
-    The period 2014–2016 produced the object detection paradigm that dominated the field for half a decade: R-CNN (Girshick et al., 2014), Fast R-CNN (Girshick, 2015), and Faster R-CNN (Ren et al., 2015) established region-proposal-based detection as the dominant approach, while COCO (Lin et al., 2014, published at a CVPR workshop) provided the benchmark infrastructure that validated progress for years thereafter. In 2016, He et al.'s ResNet — Deep Residual Learning for Image Recognition — demonstrated that extremely deep networks could be trained stably via residual connections; the paper became one of the most cited in computer science history and its architectural principles underpin virtually every modern vision backbone.
+    The period 2014–2016 produced the object detection paradigm that dominated the field for half a decade: R-CNN (Girshick et al., 2014), Fast R-CNN (Girshick, 2015), and Faster R-CNN (Ren et al., 2015) established region-proposal-based detection as the dominant approach, while COCO (Lin et al., 2014, published at a CVPR workshop) provided the benchmark infrastructure that validated progress for years thereafter. In 2016, He et al.'s ResNet — Deep Residual Learning for Image Recognition — demonstrated that extremely deep networks [private] be trained stably via residual connections; the paper became one of the most cited in computer science history and its architectural principles underpin virtually every modern vision backbone.
 
     The years 2017–2020 brought instance segmentation (Mask R-CNN, He et al., 2017), 3D point cloud deep learning (PointNet, Qi et al., 2017), and the initial application of attention mechanisms to vision tasks, presaging the Vision Transformer era. The 2021–2024 period saw CVPR become the primary venue for vision-language alignment research (CLIP-style contrastive learning, visual instruction tuning) and for the [[Diffusion Models]] wave that displaced GAN-based synthesis as the dominant generative paradigm. [[3D Gaussian Splatting]] (Kerbl et al., SIGGRAPH 2023, immediately referenced across CVPR workshops) emerged as a real-time differentiable scene representation that has since become the dominant approach in novel-view synthesis, replacing [[Neural Radiance Fields]] (NeRF) in many practical settings.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Art Application
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-art-application:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5bdc811fb5fd14eeb0eb39947e6f61caec3e5670779a34160ae77bf2bab80923"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Art Creation]]",
-      "resolved": "urn:visionflow:linked:digital-art-creation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Graphics Processing]]",
-      "resolved": "urn:visionflow:linked:graphics-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Storage Systems]]",
-      "resolved": "urn:visionflow:linked:storage-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Exhibitions]]",
-      "resolved": "urn:visionflow:linked:virtual-exhibitions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Creative Software]]",
-      "resolved": "urn:visionflow:owl:class:creative-software",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NFT Minting]]",
-      "resolved": "urn:visionflow:owl:class:nft-minting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[User Interface]]",
-      "resolved": "urn:visionflow:owl:class:user-interface",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software platforms and tools enabling artists to create, manipulate, and distribute visual art using digital technologies, including generative AI systems, 3D modeling software, and NFT minting platforms that facilitate artistic expression and commerce in virtual environments.

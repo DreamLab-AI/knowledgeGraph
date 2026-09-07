@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optimistic Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Optimistic Governance is a DAO decision-making pattern in which proposals are assumed approved and can execute unless challenged within a defined dispute window. It reduces voting fatigue and gas costs by requiring active participation only to veto or contest actions rather than to ratify every routine decision. Disputes are resolved by escalation to a vote or an arbitration mechanism, trading some upfront scrutiny for operational efficiency.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ]
   },
   "quality": 0.72

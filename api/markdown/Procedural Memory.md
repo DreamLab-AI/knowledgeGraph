@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Procedural Memory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -99,7 +94,7 @@ public: true
 
   ## Definition
 
-  **Procedural memory** is the store of "knowing how" — the long-term retention of skills, habits, and action sequences that can be executed without conscious recollection of when or where they were learnt. In human cognition it is the memory system that lets a person ride a bicycle or touch-type; it is implicit, acquired gradually through practice, and neurologically distinct from declarative memory, as demonstrated famously by patient H.M., who could learn new motor skills despite being unable to form new episodic memories.
+  **Procedural memory** is the store of "knowing how" — the long-term retention of skills, habits, and action sequences that can be executed without conscious recollection of when or where they were learnt. In human cognition it is the memory system that lets a person ride a bicycle or touch-type; it is implicit, acquired gradually through practice, and neurologically distinct from declarative memory, as demonstrated famously by patient H.M., who [private] learn new motor skills despite being unable to form new episodic memories.
 
   Cognitive architectures adopted the distinction directly. In ACT-R and Soar, procedural memory is the set of production rules (condition–action pairs) that fire against the contents of [[Working Memory]], while declarative memory holds facts and past episodes. Skill acquisition is modelled as compilation: deliberate, declaratively mediated behaviour is gradually converted into fast, automatic productions — the computational analogue of practice making perfect.
 

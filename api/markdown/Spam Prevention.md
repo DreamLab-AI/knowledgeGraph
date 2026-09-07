@@ -1,38 +1,119 @@
----
-public: true
----
-
-# Spam Prevention
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:spam-prevention", "@type":"Page", "title":"Spam Prevention", "vc:slug":"spam-prevention", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:spam-prevention",
-  "@type":"Class",
-  "label":"Spam Prevention",
-  "definition":"Spam prevention is the set of mechanisms that deter the flooding of a shared system with low-value or malicious activity. In blockchain networks it most commonly takes the form of transaction fees or proof-of-work requirements that impose a real cost on each submission, making large-scale spamming economically or computationally infeasible. Spam prevention protects scarce resources such as block space, mempool capacity and validator compute from denial-of-service style abuse. It is a key design constraint that interacts with throughput, fee markets and decentralisation.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"},{"@id":"urn:ngm:class:sybil-resistance","label":"Sybil Resistance"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:scalability","label":"Scalability"}],
-    "requires":[{"@id":"urn:ngm:class:transaction-fee","label":"Transaction Fee"}],
-    "uses":[{"@id":"urn:ngm:class:proof-of-work","label":"Proof of Work"},{"@id":"urn:ngm:class:transaction-fee","label":"Transaction Fee"}],
-    "dependsOn":[{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}],
-    "supports":[{"@id":"urn:ngm:class:mempool","label":"Mempool"}],
-    "implements":[{"@id":"urn:ngm:class:fee-market","label":"Fee Market"}],
-    "partOf":[{"@id":"urn:ngm:class:network-security","label":"Network Security"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:sybil-attack","label":"Sybil Attack"}],
-    "relatedTo":[{"@id":"urn:ngm:class:transaction","label":"Transaction"},{"@id":"urn:ngm:class:fee-market","label":"Fee Market"},{"@id":"urn:ngm:class:validator","label":"Validator"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:proof-of-stake","label":"Proof of Stake"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:spam-prevention",
+  "@type": "Page",
+  "title": "Spam Prevention",
+  "vc:slug": "spam-prevention",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spam-prevention",
+  "@type": "Class",
+  "label": "Spam Prevention",
+  "definition": "Spam prevention is the set of mechanisms that deter the flooding of a shared system with low-value or malicious activity. In blockchain networks it most commonly takes the form of transaction fees or proof-of-work requirements that impose a real cost on each submission, making large-scale spamming economically or computationally infeasible. Spam prevention protects scarce resources such as block space, mempool capacity and validator compute from denial-of-service style abuse. It is a key design constraint that interacts with throughput, fee markets and decentralisation.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:sybil-resistance",
+      "label": "Sybil Resistance"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Spam prevention is the set of mechanisms that deter flooding a shared system with low-value or malicious activity. On a [[Blockchain]] it usually relies on a [[Transaction Fee]] or [[Proof of Work]] to make abuse costly, protecting the [[Mempool]] and [[Network Security]].
 - ### Overview

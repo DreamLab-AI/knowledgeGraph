@@ -1,56 +1,104 @@
----
-public: true
----
-
-# Proprietary Software
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:proprietary-software", "@type":"Page", "title":"Proprietary Software", "vc:slug":"proprietary-software", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:proprietary-software",
+  "@type": "Page",
+  "title": "Proprietary Software",
+  "vc:slug": "proprietary-software",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:proprietary-software",
-  "@type":"Class",
-  "label":"Proprietary Software",
-  "definition":"Proprietary software is software whose source code and usage rights are owned and controlled by a vendor, distributed under restrictive licences that limit copying, modification and redistribution. Users typically receive only compiled binaries and a licence granting specified use, while the owner retains the underlying intellectual property. It contrasts with open source, where source code is freely available under permissive or copyleft terms, and is often associated with commercial licensing and vendor control.",
-  "domain":"distributed-collaboration",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:software-development","label":"Software Development"}],
-  "relations":{
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"},
-      {"@id":"urn:ngm:class:open-source-licence","label":"Open Source Licence"},
-      {"@id":"urn:ngm:class:inner-source","label":"Inner Source"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:proprietary-software",
+  "@type": "Class",
+  "label": "Proprietary Software",
+  "definition": "Proprietary software is software whose source code and usage rights are owned and controlled by a vendor, distributed under restrictive licences that limit copying, modification and redistribution. Users typically receive only compiled binaries and a licence granting specified use, while the owner retains the underlying intellectual property. It contrasts with open source, where source code is freely available under permissive or copyleft terms, and is often associated with commercial licensing and vendor control.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "@id": "urn:ngm:class:inner-source",
+        "label": "Inner Source"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:licensing","label":"Licensing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:licensing","label":"Licensing"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:vendor-lock-in","label":"Vendor Lock-in"},
-      {"@id":"urn:ngm:class:proprietary-format","label":"Proprietary Format"},
-      {"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-in"
+      },
+      {
+        "@id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:software-development","label":"Software Development"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:vendor-lock-in","label":"Vendor Lock-in"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-in"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:licensing","label":"Licensing"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

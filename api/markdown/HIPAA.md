@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HIPAA
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,52 +171,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hipaa:c818cdccc0a0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0c2f5a92fb51be7e4e6f92264fd0f8de31b8cf9928a9c450bfb4b7973426a56e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Protection]]",
-      "resolved": "urn:visionflow:linked:data-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Security]]",
-      "resolved": "urn:visionflow:linked:information-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Privacy]]",
-      "resolved": "urn:visionflow:linked:data-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Protection Law]]",
-      "resolved": "urn:visionflow:linked:data-protection-law",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Health Insurance Portability and Accountability Act, a United States law that sets requirements for protecting the privacy and security of certain health information.

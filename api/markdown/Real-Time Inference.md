@@ -1,39 +1,134 @@
----
-public: true
----
-
-# Real-Time Inference
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:real-time-inference", "@type":"Page", "title":"Real-Time Inference", "vc:slug":"real-time-inference", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:real-time-inference",
+  "@type": "Page",
+  "title": "Real-Time Inference",
+  "vc:slug": "real-time-inference",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:real-time-inference",
-  "@type":"Class",
-  "label":"Real-Time Inference",
-  "definition":"Real-time inference is the execution of a trained machine-learning model to produce predictions within strict, low-latency time bounds suitable for interactive or streaming applications. It demands optimised serving infrastructure, efficient model formats, and often hardware acceleration to meet sub-second or millisecond response targets. Real-time inference enables responsive AI features such as recommendations, fraud scoring, and perception in autonomous systems.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"},{"@id":"urn:ngm:class:model-deployment","label":"Model Deployment"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:inference-engine","label":"Inference Engine"}],
-    "partOf":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
-    "requires":[{"@id":"urn:ngm:class:low-latency","label":"Low Latency"},{"@id":"urn:ngm:class:gpu-acceleration","label":"GPU Acceleration"}],
-    "enables":[{"@id":"urn:ngm:class:real-time-analytics","label":"Real-Time Analytics"},{"@id":"urn:ngm:class:edge-ai","label":"Edge AI"}],
-    "dependsOn":[{"@id":"urn:ngm:class:inference","label":"Inference"},{"@id":"urn:ngm:class:model-deployment","label":"Model Deployment"}],
-    "uses":[{"@id":"urn:ngm:class:model-optimization","label":"Model Optimization"},{"@id":"urn:ngm:class:onnx","label":"ONNX"}],
-    "supports":[{"@id":"urn:ngm:class:stream-processing","label":"Stream Processing"},{"@id":"urn:ngm:class:on-device-inference","label":"On-Device Inference"}],
-    "implements":[{"@id":"urn:ngm:class:inference","label":"Inference"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:edge-computing","label":"Edge Computing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:real-time-processing","label":"Real-Time Processing"},{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:edge-ai","label":"Edge AI"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-time-inference",
+  "@type": "Class",
+  "label": "Real-Time Inference",
+  "definition": "Real-time inference is the execution of a trained machine-learning model to produce predictions within strict, low-latency time bounds suitable for interactive or streaming applications. It demands optimised serving infrastructure, efficient model formats, and often hardware acceleration to meet sub-second or millisecond response targets. Real-time inference enables responsive AI features such as recommendations, fraud scoring, and perception in autonomous systems.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "@id": "urn:ngm:class:model-deployment",
+      "label": "Model Deployment"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

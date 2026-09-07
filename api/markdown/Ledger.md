@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ledger
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,46 +199,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ledger:fe14010b4fe8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c9664427c2014914631cc5f96c9a529974bc1c39804f6c3ec680ce2a261adcb1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Private Key]]",
-      "resolved": "urn:visionflow:linked:private-key",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Custody]]",
-      "resolved": "urn:visionflow:linked:self-custody",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Key Management]]",
-      "resolved": "urn:visionflow:linked:key-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cold Storage]]",
-      "resolved": "urn:visionflow:linked:cold-storage",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

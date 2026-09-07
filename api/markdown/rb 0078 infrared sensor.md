@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0078 infrared sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,22 +51,52 @@ public: true
   "quality": 0.7,
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"},
-      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"},
-      {"@id": "urn:ngm:class:rb-0075-range-finder", "label": "rb 0075 range finder"},
-      {"@id": "urn:ngm:class:proximity-sensor", "label": "Proximity Sensor"},
-      {"@id": "urn:ngm:class:infrared-sensor", "label": "InfraredSensor"}
+      {
+        "@id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0075-range-finder",
+        "label": "rb 0075 range finder"
+      },
+      {
+        "@id": "urn:ngm:class:proximity-sensor",
+        "label": "Proximity Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:infrared-sensor",
+        "label": "InfraredSensor"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:exteroceptive-sensor", "label": "Exteroceptive Sensor"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:exteroceptive-sensor",
+        "label": "Exteroceptive Sensor"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0052-collision-avoidance", "label": "rb 0052 collision avoidance"},
-      {"@id": "urn:ngm:class:rb-0095-safety-zone", "label": "rb 0095 safety zone"}
+      {
+        "@id": "urn:ngm:class:rb-0052-collision-avoidance",
+        "label": "rb 0052 collision avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0078-infrared-sensor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:51c1f8b64ccc68f62709791fa9a22a14b0cdee5a741c6851f24bb4662a3e7cc7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An **infrared (IR) sensor** detects electromagnetic radiation in the infrared spectrum (wavelengths roughly 700 nm to 1 mm) to infer proximity, temperature, or surface characteristics without physical contact. In robotics, passive IR sensors detect heat emitted by humans or machinery for presence detection and safety zone monitoring, while active IR sensors emit a beam and measure reflected intensity or time-of-flight for precise distance measurement. IR sensors are cost-effective and operate in low-light conditions, making them popular for safety curtains, short-range proximity switches on collaborative robots, and thermal cameras that detect human body heat for speed-and-separation monitoring. Their limitation is susceptibility to interference from ambient IR sources (e.g., sunlight) and reflective surfaces.

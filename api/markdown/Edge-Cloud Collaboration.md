@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Edge-Cloud Collaboration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,32 +75,80 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
-      {"@id": "urn:ngm:class:federated-edge-learning", "label": "Federated Edge Learning"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "@id": "urn:ngm:class:federated-edge-learning",
+        "label": "Federated Edge Learning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"}
+      {
+        "@id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:edge-orchestration", "label": "Edge Orchestration"},
-      {"@id": "urn:ngm:class:edge-computing-architecture", "label": "Edge Computing Architecture"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing-architecture",
+        "label": "Edge Computing Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:edge-ai-accelerators", "label": "Edge AI Accelerators"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-platform", "label": "Machine Learning Platform"},
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"}
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerators",
+        "label": "Edge AI Accelerators"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-platform",
+        "label": "Machine Learning Platform"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:edge-computing-node", "label": "Edge Computing Node"}
+      {
+        "@id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      }
     ]
   },
   "provenance": {
@@ -115,62 +158,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:edge-cloud-collaboration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4583ca4598431ebeac2e7f354d83f3cce801d5c5768847236c703bf514f967bb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AWS IoT Greengrass]]",
-      "resolved": "urn:visionflow:linked:aws-io-t-greengrass",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Azure IoT Edge]]",
-      "resolved": "urn:visionflow:linked:azure-io-t-edge",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI MEC]]",
-      "resolved": "urn:visionflow:linked:etsi-mec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Edge-Cloud Collaboration is a hybrid architecture dynamically partitioning AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimizing end-to-end latency, bandwidth utilization, energy consumption, and accuracy through adaptive offloading, model splitting, and hierarchical inference. This approach implements collaboration patterns including model splitting where neural networks are partitioned across edge and cloud with early layers on edge extracting features and final layers in cloud for classification enabling bandwidth reduction through compressed intermediate representations, early exit where models have multiple exit points enabling confident predictions to terminate early on edge while uncertain cases escalate to cloud balancing accuracy and latency, cascaded inference deploying lightweight model on edge as first-stage filter with complex model in cloud for challenging instances providing 60-80% latency reduction for common cases, and federated learning where edge devices collaboratively train shared model through local training and gradient aggregation without centralizing raw data. Optimization objectives balance competing goals including end-to-end latency minimization considering network roundtrip, cloud queueing, and processing times, bandwidth reduction limiting data transmission through selective offloading and compression, energy efficiency managing device battery consumption from computation versus transmission, and accuracy preservation ensuring collaborative inference maintains performance comparable to cloud-only deployment. Implementation challenges include network variability requiring adaptive policies responding to changing bandwidth and latency conditions, workload partitioning decisions determining optimal split points based on model architecture and runtime conditions, synchronization overhead coordinating state between edge and cloud components, and failure handling maintaining availability when connectivity degrades or cloud services become unavailable through graceful degradation to edge-only operation. The 2024-2025 period demonstrated viability through deployments in autonomous vehicles processing sensor fusion on-vehicle with cloud-based planning and mapping, augmented reality offloading object detection to edge with scene understanding in cloud achieving sub-50ms total latency, and industrial IoT combining edge anomaly detection with cloud predictive maintenance enabling 90% bandwidth reduction while improving accuracy 15% versus edge-only deployment, implemented through frameworks including AWS IoT Greengrass, Azure IoT Edge, and Google Cloud IoT enabling seamless edge-cloud orchestration.

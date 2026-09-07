@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Valuation Multiples
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "valuation-multiples",
   "title": "Valuation Multiples",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Altimeter Capital", "Brad Gerstner"],
+  "vc:outboundWikilinks": [
+    "Altimeter Capital",
+    "Brad Gerstner"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,19 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:financial-metrics", "label": "Financial Metrics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-metrics",
+      "label": "Financial Metrics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ebitda", "label": "EBITDA"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ebitda",
+        "label": "EBITDA"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

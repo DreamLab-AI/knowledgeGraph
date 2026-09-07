@@ -1,38 +1,120 @@
----
-public: true
----
-
-# Human Centred Design
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:human-centred-design", "@type":"Page", "title":"Human Centred Design", "vc:slug":"human-centred-design", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:human-centred-design",
+  "@type": "Page",
+  "title": "Human Centred Design",
+  "vc:slug": "human-centred-design",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:human-centred-design",
-  "@type":"Class",
-  "label":"Human Centred Design",
-  "definition":"Human centred design is a problem-solving approach that places the needs, capabilities and behaviours of people at the centre of the design process, iteratively shaping products and systems around real user contexts. It draws on empirical understanding of users and tasks, involves stakeholders throughout development, and refines solutions through repeated evaluation. The practice underpins usable, accessible and inclusive interactive systems across digital and physical domains.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:human-computer-interaction","label":"Human Computer Interaction"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:design-thinking","label":"Design Thinking"},{"@id":"urn:ngm:class:user-centred-design","label":"User Centered Design"}],
-    "uses":[{"@id":"urn:ngm:class:user-experience-design","label":"User Experience Design"}],
-    "hasPart":[{"@id":"urn:ngm:class:usability","label":"Usability"},{"@id":"urn:ngm:class:interaction-design","label":"Interaction Design"}],
-    "enables":[{"@id":"urn:ngm:class:accessibility","label":"Accessibility"},{"@id":"urn:ngm:class:user-experience","label":"User Experience"}],
-    "supports":[{"@id":"urn:ngm:class:inclusive-design","label":"Inclusive Design"}],
-    "requires":[{"@id":"urn:ngm:class:human-computer-interaction","label":"Human Computer Interaction"}],
-    "partOf":[{"@id":"urn:ngm:class:user-experience-design","label":"User Experience Design"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:universal-design","label":"Universal Design"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:ergonomics","label":"Ergonomics"}],
-    "relatedTo":[{"@id":"urn:ngm:class:user-interface-design","label":"User Interface Design"},{"@id":"urn:ngm:class:prototyping","label":"Prototyping"},{"@id":"urn:ngm:class:accessibility-standards","label":"Accessibility Standards"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-centred-design",
+  "@type": "Class",
+  "label": "Human Centred Design",
+  "definition": "Human centred design is a problem-solving approach that places the needs, capabilities and behaviours of people at the centre of the design process, iteratively shaping products and systems around real user contexts. It draws on empirical understanding of users and tasks, involves stakeholders throughout development, and refines solutions through repeated evaluation. The practice underpins usable, accessible and inclusive interactive systems across digital and physical domains.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "@id": "urn:ngm:class:user-centred-design",
+        "label": "User Centered Design"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:user-interface-design",
+        "label": "User Interface Design"
+      },
+      {
+        "@id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Control Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A control framework is a structured set of governance, risk, and compliance controls that an organisation adopts to manage risk and demonstrate conformance to regulatory or industry requirements. Examples include NIST CSF, COBIT, ISO 27001, and SOC 2, each mapping objectives to specific control activities and evidence. It provides a common reference for designing, operating, and auditing controls consistently.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:compliance", "label": "Compliance"}, {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
   "quality": 0.72
 }

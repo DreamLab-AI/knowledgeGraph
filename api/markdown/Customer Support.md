@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Customer Support
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,36 +7,126 @@ public: true
   "title": "Customer Support",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:conversational-ai", "vc:label": "Conversational AI"},
-    {"@id": "urn:visionflow:linked:chatbots", "vc:label": "Chatbots"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:sentiment-analysis", "vc:label": "Sentiment Analysis"},
-    {"@id": "urn:visionflow:linked:dialogue-system", "vc:label": "Dialogue System"},
-    {"@id": "urn:visionflow:linked:information-retrieval", "vc:label": "Information Retrieval"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:question-answering", "vc:label": "Question Answering"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:crm", "vc:label": "CRM"},
-    {"@id": "urn:visionflow:linked:crm-integration", "vc:label": "CRM Integration"},
-    {"@id": "urn:visionflow:linked:crm-systems", "vc:label": "CRM Systems"},
-    {"@id": "urn:visionflow:linked:intent-recognition", "vc:label": "Intent Recognition"},
-    {"@id": "urn:visionflow:linked:dialogue-management", "vc:label": "Dialogue Management"},
-    {"@id": "urn:visionflow:linked:dialogue-state-tracking", "vc:label": "Dialogue State Tracking"},
-    {"@id": "urn:visionflow:linked:multi-turn-dialogue", "vc:label": "Multi-Turn Dialogue"},
-    {"@id": "urn:visionflow:linked:knowledge-retrieval", "vc:label": "Knowledge Retrieval"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:enterprise-workflow", "vc:label": "Enterprise Workflow"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:human-computer-interaction", "vc:label": "Human Computer Interaction"},
-    {"@id": "urn:visionflow:linked:text-classification", "vc:label": "Text Classification"},
-    {"@id": "urn:visionflow:linked:named-entity-recognition", "vc:label": "Named Entity Recognition"},
-    {"@id": "urn:visionflow:linked:document-retrieval", "vc:label": "Document Retrieval"},
-    {"@id": "urn:visionflow:linked:hybrid-retrieval", "vc:label": "Hybrid Retrieval"}
+    {
+      "@id": "urn:visionflow:linked:conversational-ai",
+      "vc:label": "Conversational AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:chatbots",
+      "vc:label": "Chatbots"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:sentiment-analysis",
+      "vc:label": "Sentiment Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:dialogue-system",
+      "vc:label": "Dialogue System"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-retrieval",
+      "vc:label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:crm",
+      "vc:label": "CRM"
+    },
+    {
+      "@id": "urn:visionflow:linked:crm-integration",
+      "vc:label": "CRM Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:crm-systems",
+      "vc:label": "CRM Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:intent-recognition",
+      "vc:label": "Intent Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:dialogue-management",
+      "vc:label": "Dialogue Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:dialogue-state-tracking",
+      "vc:label": "Dialogue State Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-turn-dialogue",
+      "vc:label": "Multi-Turn Dialogue"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-retrieval",
+      "vc:label": "Knowledge Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:enterprise-workflow",
+      "vc:label": "Enterprise Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-classification",
+      "vc:label": "Text Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:named-entity-recognition",
+      "vc:label": "Named Entity Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:document-retrieval",
+      "vc:label": "Document Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:hybrid-retrieval",
+      "vc:label": "Hybrid Retrieval"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -57,39 +142,102 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"},
-    {"@id": "urn:ngm:class:enterprise-workflow", "label": "Enterprise Workflow"}
+    {
+      "@id": "urn:ngm:class:customer-service-automation",
+      "label": "Customer Service Automation"
+    },
+    {
+      "@id": "urn:ngm:class:enterprise-workflow",
+      "label": "Enterprise Workflow"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:chatbots", "label": "Chatbots"},
-      {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:crm", "label": "CRM"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:intent-recognition", "label": "Intent Recognition"}
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "@id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:crm",
+        "label": "CRM"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:crm-integration", "label": "CRM Integration"},
-      {"@id": "urn:ngm:class:knowledge-retrieval", "label": "Knowledge Retrieval"},
-      {"@id": "urn:ngm:class:dialogue-management", "label": "Dialogue Management"}
+      {
+        "@id": "urn:ngm:class:crm-integration",
+        "label": "CRM Integration"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      }
     ]
   },
-  "quality": 0.90
+  "quality": 0.9
 }
 ```
 

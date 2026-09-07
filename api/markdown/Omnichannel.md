@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Omnichannel
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,45 @@ public: true
   "definition": "Omnichannel is a customer engagement strategy that unifies all interaction channels — physical stores, web, mobile, social media, telephone, and messaging — into a single, consistent experience in which customer context and history transfer seamlessly across channel boundaries. Unlike multichannel approaches that operate channels in silos, omnichannel architectures share a common data layer and orchestration engine so that a session started on one channel can be continued on another without loss of state.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:customer-experience-management", "label": "Customer Experience Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:customer-experience-management",
+      "label": "Customer Experience Management"
+    }
+  ],
   "relations": {
-    "requires": [{"@id": "urn:ngm:class:customer-data-platform", "label": "Customer Data Platform"}],
-    "enables": [{"@id": "urn:ngm:class:customer-experience", "label": "Customer Experience"}, {"@id": "urn:ngm:class:customer-retention", "label": "Customer Retention"}],
-    "relatedTo": [{"@id": "urn:ngm:class:crm", "label": "CRM"}, {"@id": "urn:ngm:class:omnichannel-routing", "label": "Omnichannel Routing"}],
-    "uses": [{"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}]
+    "requires": [
+      {
+        "@id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "@id": "urn:ngm:class:customer-retention",
+        "label": "Customer Retention"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:crm",
+        "label": "CRM"
+      },
+      {
+        "@id": "urn:ngm:class:omnichannel-routing",
+        "label": "Omnichannel Routing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ]
   },
   "quality": 0.8
 }

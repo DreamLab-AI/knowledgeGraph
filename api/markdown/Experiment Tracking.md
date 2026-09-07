@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Experiment Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -217,57 +212,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:experiment-tracking:1fe14f0aed73",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ca24087b3836a9cf4e3a2a523ab3c1f24e74909d2e08a03b4692b8b91d86995f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Model Training]]",
-      "resolved": "urn:visionflow:linked:model-training",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Open Source]]",
-      "resolved": "urn:visionflow:linked:open-source",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MLOps]]",
-      "resolved": "urn:visionflow:linked:mlops",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://mlflow.org/docs/latest/tracking.html]]",
-      "resolved": "urn:visionflow:linked:https-mlflow-org-docs-latest-tracking-html",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/MLOps]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-mlops",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Experiment tracking is the systematic discipline of recording, organising, and querying the complete provenance of every [[Model Training]] run — encompassing hyperparameters, source code versions, dataset snapshots, intermediate metrics, system environment specifications, and output artefacts such as trained model weights and evaluation results — so that any run can be precisely reproduced, meaningfully compared with other runs, and audited by regulatory or governance bodies. It is a core pillar of [[MLOps]] that operationalises the [[Scientific Method]] in machine learning by treating each training run as a reproducible experiment with a full experimental record rather than an ephemeral computation. In contrast to traditional software development where the single axis of change is code, [[Machine Learning]] systems have three independently evolving axes: code, data, and model parameters. Experiment tracking provides the metadata layer that versions and links all three, enabling teams to answer the question "why did this model outperform that one?" — a question whose answer may span a change in data preprocessing, a different learning rate schedule, a different random seed, or a different hardware configuration, any of which can be captured only if the run was fully logged. The discipline extends naturally into the [[Generative AI]] era, where experiment tracking encompasses not just classical training metrics but also [[Prompt Management]], LLM call traces, token costs, and multi-turn conversation evaluation datasets, addressing the shift from logging a scalar loss curve to auditing the full chain of LLM calls that constitute a generative application. Experiment tracking integrates with [[Version Control]] for code and [[Data Versioning]] for datasets, and its output feeds the [[Model Registry]] that gates model promotion from development through staging to production. Without systematic experiment tracking, [[Continuous Training]] loops cannot be trusted because it becomes impossible to establish whether an improvement in online metrics stems from a model change, a data distribution shift, or a code bug introduced during retraining. Experiment tracking is therefore simultaneously a [[Reproducibility]] infrastructure, a collaboration tool, a governance enabler, and a debugging instrument across the full [[AI Lifecycle]].
 
@@ -455,7 +399,7 @@ public: true
     ML conferences increasingly require experiment tracking records as reproducibility artefacts. NeurIPS, ICML, and ICLR reproducibility tracks request that authors share tracked run records — captured in MLflow or W&B — alongside code and model checkpoints. Experiment tracking directly addresses the reproducibility crisis documented in ML research, where reported results frequently cannot be replicated even with the published code.
 
   ## Academic Context
-    The intellectual roots of experiment tracking lie in the philosophy of science and the experimental record-keeping traditions of physical sciences — lab notebooks as metadata management. In machine learning, the reproducibility crisis was documented prominently by Joelle Pineau and colleagues at NeurIPS 2017–2019, who found that a substantial proportion of reported results could not be reproduced, motivating systematic logging requirements. Sculley et al.'s "Hidden Technical Debt in Machine Learning Systems" (NIPS 2015) identified the absence of systematic configuration and experiment management as a primary source of technical debt in production ML. Google's MLOps whitepaper (2020) formally positioned experiment tracking as a level-0 requirement, the minimum baseline for any operationalised ML system.
+    The intellectual roots of experiment tracking lie in the philosophy of science and the experimental record-keeping traditions of physical sciences — lab notebooks as metadata management. In machine learning, the reproducibility crisis was documented prominently by Joelle Pineau and colleagues at NeurIPS 2017–2019, who found that a substantial proportion of reported results [private] not be reproduced, motivating systematic logging requirements. Sculley et al.'s "Hidden Technical Debt in Machine Learning Systems" (NIPS 2015) identified the absence of systematic configuration and experiment management as a primary source of technical debt in production ML. Google's MLOps whitepaper (2020) formally positioned experiment tracking as a level-0 requirement, the minimum baseline for any operationalised ML system.
 
     The connection between experiment tracking and the [[Scientific Method]] is theoretically grounded: experiment tracking implements the reproducibility, falsifiability, and documentation requirements of scientific methodology as engineering infrastructure. Amershi et al. (2019) "Software Engineering for Machine Learning: A Case Study" (Microsoft Research, ICSE) documented experiment tracking as the highest-priority tooling need identified by professional ML engineers. Zhao et al. (2022) "Operationalizing Machine Learning: An Interview Study" systematically documented how experiment tracking failures lead to months of wasted engineering effort in production teams.
 

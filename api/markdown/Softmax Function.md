@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Softmax Function
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -123,7 +118,7 @@ public: true
 
 - ### Mechanisms
   - **Exponentiation and normalisation** — Each logit is exponentiated and divided by the sum of all exponentials, producing a normalised probability vector. This is the defining operation.
-  - **Rank preservation** — Softmax is monotonic in each input relative to the others, so the index of the maximum logit equals the index of the maximum probability; it never reorders the classes.
+  - **Rank preservation** — Softmax is monotonic in each input relative to the others, so the [private] of the maximum logit equals the [private] of the maximum probability; it never reorders the classes.
   - **Temperature scaling** — Dividing logits by a temperature T before softmax controls entropy: high T yields a near-uniform distribution, low T approaches a one-hot vector. This is central to sampling strategies and to calibration.
   - **Gradient with cross-entropy** — When combined with [[Cross-Entropy Loss]], the gradient with respect to the logits reduces to the predicted probability minus the target, a simple and numerically benign expression that accelerates [[Backpropagation]].
   - **Attention normalisation** — Inside an [[Attention Mechanism]], softmax converts raw query-key similarity scores into attention weights that sum to one, determining how much each value contributes to the output.

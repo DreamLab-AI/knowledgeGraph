@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sensitivity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,41 +178,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sensitivity:5c16250fd4bb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5058a527c22c7c694f4dbe1f454f0697663dee73fd130e85945f2091e18c21a7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Parameter]]",
-      "resolved": "urn:visionflow:linked:parameter",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robustness]]",
-      "resolved": "urn:visionflow:linked:robustness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reproducibility]]",
-      "resolved": "urn:visionflow:linked:reproducibility",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Sensitivity quantifies the degree to which the output of a model, classifier, or system changes in response to variation in its inputs, parameters, or underlying assumptions. In the context of [[Classification]], sensitivity — also known as [[Recall]] or the [[True Positive Rate]] — measures the proportion of genuinely positive instances that a model correctly identifies. More broadly, [[Sensitivity Analysis]] extends this notion to any computational, physical, or sociotechnical system, systematically varying inputs to discover which factors most strongly drive output variance, underpinning [[Uncertainty Quantification]] and [[Model Validation]].
 
@@ -242,8 +202,8 @@ public: true
     - sensitivity = TP / (TP + FN)
   - In regression or simulation contexts, local sensitivity is the Jacobian (first-order partial derivatives) of model outputs with respect to inputs.
   - Variance-based sensitivity indices partition output variance V(Y) as:
-    - First-order Sobol index: Si = V(E[Y | Xi]) / V(Y)
-    - Total-order index: STi includes all interactions involving Xi
+    - First-order Sobol [private]: Si = V(E[Y | Xi]) / V(Y)
+    - Total-order [private]: STi includes all interactions involving Xi
   - Gradient-based sensitivity in [[Deep Learning]] uses backpropagation to compute input gradients, directly linking to [[Explainability]] techniques such as SHAP and LIME.
 
 - ### Applications / Use Cases

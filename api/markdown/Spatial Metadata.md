@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Metadata
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-metadata:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cd38f36950f19705f6a59c4763393b41ae9d6e60c812369de574814252d05e45"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Spatial Data Discovery]]",
-      "resolved": "urn:visionflow:linked:spatial-data-discovery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Geospatial Information]]",
-      "resolved": "urn:visionflow:owl:class:geospatial-information",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Descriptive information about geospatial and 3D content documenting location, coordinate system, projection, quality, lineage, and distribution attributes, following standards such as ISO 19115 and FGDC CSDGM to enable discovery, evaluation, and interoperability of spatial data resources.

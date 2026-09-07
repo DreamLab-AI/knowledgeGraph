@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,19 +46,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
-      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:3-d-content-pipeline", "label": "3D Content Pipeline"},
-      {"@id": "urn:ngm:class:3-d-development", "label": "3D Development"}
+      {
+        "@id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-development",
+        "label": "3D Development"
+      }
     ]
   },
   "provenance": {
@@ -73,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-d-design:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8b5f26e1526d95a377b2fcfc06fb7875aaa0de259d2a6433c75c59194143993b"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - 3D Design is the creative and technical discipline of conceiving, modelling, and refining three-dimensional digital objects and environments for interactive, immersive, or real-time applications. It encompasses spatial composition, form language, and visual hierarchy adapted for game engines, virtual reality, and metaverse platforms, requiring performance-conscious workflows such as level-of-detail strategies, UV unwrapping, and real-time shader design.

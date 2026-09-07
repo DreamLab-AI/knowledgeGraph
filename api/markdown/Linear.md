@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Linear
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:linear:7f2fe580edb3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ab8c676a233e75a1ac7af513451341dcb599cead844adb95d2bd2271d21b237f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Linear Algebra]]",
-      "resolved": "urn:visionflow:linked:linear-algebra",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graphics Pipeline]]",
-      "resolved": "urn:visionflow:linked:graphics-pipeline",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Linear refers to relationships, mappings or systems whose output is proportional to and additive in their input, a property exploited heavily in graphics colour spaces and numerical methods.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environmental Monitoring
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,20 +21,41 @@ public: true
   "domain": "data",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:monitoring", "label": "Monitoring"}
+    {
+      "@id": "urn:ngm:class:monitoring",
+      "label": "Monitoring"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:wireless-telemetry-module", "label": "Wireless Telemetry Module"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-telemetry-module",
+        "label": "Wireless Telemetry Module"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
-      {"@id": "urn:ngm:class:wireless-connectivity", "label": "Wireless Connectivity"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"}
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      }
     ]
   },
   "quality": 0.8

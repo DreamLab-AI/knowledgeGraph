@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pharmaceutical Logistics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Pharmaceutical logistics is the specialised management of storage, handling, and transport of medicines and biologics under strict regulatory and environmental controls. It enforces cold-chain integrity, serialisation, and chain-of-custody to preserve product efficacy and prevent counterfeiting or diversion. The discipline combines temperature-controlled distribution with traceability and compliance reporting across the supply chain.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"}, {"@id": "urn:ngm:class:pharmaceutical-supply-chain", "label": "Pharmaceutical Supply Chain"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-supply-chain",
+        "label": "Pharmaceutical Supply Chain"
+      }
+    ]
   },
   "quality": 0.72
 }

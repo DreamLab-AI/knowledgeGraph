@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Peg Mechanism
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:peg-mechanism", "@type":"Page", "title":"Peg Mechanism", "vc:slug":"peg-mechanism", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:peg-mechanism",
+  "@type": "Page",
+  "title": "Peg Mechanism",
+  "vc:slug": "peg-mechanism",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

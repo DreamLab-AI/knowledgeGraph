@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interface Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interface-layer:ce104b846983",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1f292a50bf844a12222add4928fce7c2a91433aa4b2be7271def0c8ec9946157"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[APILayer]]",
-      "resolved": "urn:visionflow:linked:apilayer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Integration Layer]]",
-      "resolved": "urn:visionflow:linked:integration-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Presentation Layer]]",
-      "resolved": "urn:visionflow:linked:presentation-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interface Segregation Principle]]",
-      "resolved": "urn:visionflow:linked:interface-segregation-principle",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Schema]]",
-      "resolved": "urn:visionflow:linked:schema",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Interface Layer is the cross-cutting stratum that defines the boundaries and contracts through which components communicate. It sits above the integration and transport mechanisms that carry calls and below the applications that consume the contracts. It contains interface definitions, schemas, and the conventions that govern interaction.

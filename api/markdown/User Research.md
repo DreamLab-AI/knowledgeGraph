@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Research
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -169,32 +164,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:user-research:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b461d9a1db035b22ef89fbbe345b3530c1ad2c992947cd021596800d91e323cb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Research Methods]]",
-      "resolved": "urn:visionflow:owl:class:research-methods",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative methods to inform design decisions and improve virtual world experiences.

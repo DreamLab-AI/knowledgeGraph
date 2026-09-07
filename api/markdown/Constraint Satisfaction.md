@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Constraint Satisfaction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,45 +7,162 @@ public: true
   "title": "Constraint Satisfaction",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:combinatorial-optimisation", "vc:label": "Combinatorial Optimisation"},
-    {"@id": "urn:visionflow:linked:symbolic-ai", "vc:label": "Symbolic AI"},
-    {"@id": "urn:visionflow:linked:search-algorithm", "vc:label": "Search Algorithm"},
-    {"@id": "urn:visionflow:linked:arc-consistency", "vc:label": "Arc Consistency"},
-    {"@id": "urn:visionflow:linked:backtracking-search", "vc:label": "Backtracking Search"},
-    {"@id": "urn:visionflow:linked:constraint-propagation", "vc:label": "Constraint Propagation"},
-    {"@id": "urn:visionflow:linked:constraint-solver", "vc:label": "Constraint Solver"},
-    {"@id": "urn:visionflow:linked:variable-ordering-heuristic", "vc:label": "Variable Ordering Heuristic"},
-    {"@id": "urn:visionflow:linked:local-search", "vc:label": "Local Search"},
-    {"@id": "urn:visionflow:linked:graph-theory", "vc:label": "Graph Theory"},
-    {"@id": "urn:visionflow:linked:propositional-logic", "vc:label": "Propositional Logic"},
-    {"@id": "urn:visionflow:linked:satisfiability", "vc:label": "Satisfiability"},
-    {"@id": "urn:visionflow:linked:integer-programming", "vc:label": "Integer Programming"},
-    {"@id": "urn:visionflow:linked:linear-programming", "vc:label": "Linear Programming"},
-    {"@id": "urn:visionflow:linked:probabilistic-inference", "vc:label": "Probabilistic Inference"},
-    {"@id": "urn:visionflow:linked:automated-planning", "vc:label": "Automated Planning"},
-    {"@id": "urn:visionflow:linked:planning-and-scheduling", "vc:label": "Planning and Scheduling"},
-    {"@id": "urn:visionflow:linked:configuration-management", "vc:label": "Configuration Management"},
-    {"@id": "urn:visionflow:linked:resource-allocation", "vc:label": "Resource Allocation"},
-    {"@id": "urn:visionflow:linked:supply-chain-optimisation", "vc:label": "Supply Chain Optimisation"},
-    {"@id": "urn:visionflow:linked:network-configuration", "vc:label": "Network Configuration"},
-    {"@id": "urn:visionflow:linked:robotic-task-planning", "vc:label": "Robotic Task Planning"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:decision-making", "vc:label": "Decision Making"},
-    {"@id": "urn:visionflow:linked:inference-engine", "vc:label": "Inference Engine"},
-    {"@id": "urn:visionflow:linked:heuristic-methods", "vc:label": "Heuristic"},
-    {"@id": "urn:visionflow:linked:logic-programming", "vc:label": "Logic Programming"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:neuro-symbolic-ai", "vc:label": "Neuro-Symbolic AI"},
-    {"@id": "urn:visionflow:linked:operations-research", "vc:label": "Operations Research"},
-    {"@id": "urn:visionflow:linked:graph-colouring", "vc:label": "Graph Colouring"},
-    {"@id": "urn:visionflow:linked:motion-planning", "vc:label": "Motion Planning"},
-    {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"},
-    {"@id": "urn:visionflow:linked:treewidth", "vc:label": "Treewidth"},
-    {"@id": "urn:visionflow:linked:branch-and-bound", "vc:label": "Branch and Bound"},
-    {"@id": "urn:visionflow:linked:dynamic-programming", "vc:label": "Dynamic Programming"},
-    {"@id": "urn:visionflow:linked:quantum-computing", "vc:label": "Quantum Computing"},
-    {"@id": "urn:visionflow:linked:domain-representation", "vc:label": "Domain Representation"}
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:combinatorial-optimisation",
+      "vc:label": "Combinatorial Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:search-algorithm",
+      "vc:label": "Search Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:arc-consistency",
+      "vc:label": "Arc Consistency"
+    },
+    {
+      "@id": "urn:visionflow:linked:backtracking-search",
+      "vc:label": "Backtracking Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-propagation",
+      "vc:label": "Constraint Propagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-solver",
+      "vc:label": "Constraint Solver"
+    },
+    {
+      "@id": "urn:visionflow:linked:variable-ordering-heuristic",
+      "vc:label": "Variable Ordering Heuristic"
+    },
+    {
+      "@id": "urn:visionflow:linked:local-search",
+      "vc:label": "Local Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-theory",
+      "vc:label": "Graph Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:propositional-logic",
+      "vc:label": "Propositional Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:satisfiability",
+      "vc:label": "Satisfiability"
+    },
+    {
+      "@id": "urn:visionflow:linked:integer-programming",
+      "vc:label": "Integer Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-programming",
+      "vc:label": "Linear Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-inference",
+      "vc:label": "Probabilistic Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-planning",
+      "vc:label": "Automated Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-and-scheduling",
+      "vc:label": "Planning and Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:configuration-management",
+      "vc:label": "Configuration Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:resource-allocation",
+      "vc:label": "Resource Allocation"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-optimisation",
+      "vc:label": "Supply Chain Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-configuration",
+      "vc:label": "Network Configuration"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-task-planning",
+      "vc:label": "Robotic Task Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-making",
+      "vc:label": "Decision Making"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-engine",
+      "vc:label": "Inference Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-methods",
+      "vc:label": "Heuristic"
+    },
+    {
+      "@id": "urn:visionflow:linked:logic-programming",
+      "vc:label": "Logic Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neuro-symbolic-ai",
+      "vc:label": "Neuro-Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:operations-research",
+      "vc:label": "Operations Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-colouring",
+      "vc:label": "Graph Colouring"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-verification",
+      "vc:label": "Formal Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:treewidth",
+      "vc:label": "Treewidth"
+    },
+    {
+      "@id": "urn:visionflow:linked:branch-and-bound",
+      "vc:label": "Branch and Bound"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-programming",
+      "vc:label": "Dynamic Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantum-computing",
+      "vc:label": "Quantum Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:domain-representation",
+      "vc:label": "Domain Representation"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
@@ -78,7 +190,7 @@ public: true
   "definition": "Constraint Satisfaction is a paradigm in artificial intelligence and combinatorial mathematics in which a problem is represented as a set of variables, each with a domain of possible values, and a set of constraints that restrict the allowable combinations of those values. The goal is to find an assignment of values to all variables such that every constraint is simultaneously satisfied, or to determine that no such assignment exists. Solution methods combine systematic backtracking search with constraint propagation techniques — notably arc consistency and path consistency — that prune infeasible values early, dramatically reducing the search space. Constraint satisfaction underpins scheduling, configuration, planning, and combinatorial optimisation across virtually every engineering domain.",
   "domain": "artificial-intelligence",
   "maturity": "mature",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -101,130 +213,191 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:arc-consistency", "label": "Arc Consistency"},
-      {"@id": "urn:ngm:class:backtracking-search", "label": "Backtracking Search"},
-      {"@id": "urn:ngm:class:constraint-propagation", "label": "Constraint Propagation"},
-      {"@id": "urn:ngm:class:variable-ordering-heuristic", "label": "Variable Ordering Heuristic"},
-      {"@id": "urn:ngm:class:local-search", "label": "Local Search"},
-      {"@id": "urn:ngm:class:branch-and-bound", "label": "Branch and Bound"}
+      {
+        "@id": "urn:ngm:class:arc-consistency",
+        "label": "Arc Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:backtracking-search",
+        "label": "Backtracking Search"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-propagation",
+        "label": "Constraint Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:variable-ordering-heuristic",
+        "label": "Variable Ordering Heuristic"
+      },
+      {
+        "@id": "urn:ngm:class:local-search",
+        "label": "Local Search"
+      },
+      {
+        "@id": "urn:ngm:class:branch-and-bound",
+        "label": "Branch and Bound"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"},
-      {"@id": "urn:ngm:class:domain-representation", "label": "Domain Representation"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:domain-representation",
+        "label": "Domain Representation"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
-      {"@id": "urn:ngm:class:configuration-management", "label": "Configuration Management"},
-      {"@id": "urn:ngm:class:resource-allocation", "label": "Resource Allocation"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:supply-chain-optimisation", "label": "Supply Chain Optimisation"}
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "@id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:combinatorial-optimisation", "label": "Combinatorial Optimisation"},
-      {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"},
-      {"@id": "urn:ngm:class:propositional-logic", "label": "Propositional Logic"}
+      {
+        "@id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:local-search", "label": "Local Search"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic"},
-      {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"}
+      {
+        "@id": "urn:ngm:class:local-search",
+        "label": "Local Search"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic"
+      },
+      {
+        "@id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:decision-making", "label": "Decision Making"},
-      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neuro-Symbolic AI"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:linear-programming", "label": "Linear Programming"},
-      {"@id": "urn:ngm:class:satisfiability", "label": "Satisfiability"},
-      {"@id": "urn:ngm:class:probabilistic-inference", "label": "Probabilistic Inference"}
+      {
+        "@id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "@id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:integer-programming", "label": "Integer Programming"},
-      {"@id": "urn:ngm:class:treewidth", "label": "Treewidth"},
-      {"@id": "urn:ngm:class:operations-research", "label": "Operations Research"},
-      {"@id": "urn:ngm:class:dynamic-programming", "label": "Dynamic Programming"},
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:integer-programming",
+        "label": "Integer Programming"
+      },
+      {
+        "@id": "urn:ngm:class:treewidth",
+        "label": "Treewidth"
+      },
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:supply-chain-optimisation", "label": "Supply Chain Optimisation"},
-      {"@id": "urn:ngm:class:robotic-task-planning", "label": "Robotic Task Planning"},
-      {"@id": "urn:ngm:class:network-configuration", "label": "Network Configuration"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-task-planning",
+        "label": "Robotic Task Planning"
+      },
+      {
+        "@id": "urn:ngm:class:network-configuration",
+        "label": "Network Configuration"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:constraint-satisfaction:4452aa137464",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2be4293f7d8f9c06fa0a4becc0110115c60b90418ad9e55941eca20f08fcf2c5"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Combinatorial Optimisation]]", "resolved": "urn:visionflow:linked:combinatorial-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Symbolic AI]]", "resolved": "urn:visionflow:linked:symbolic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Search Algorithm]]", "resolved": "urn:visionflow:linked:search-algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Arc Consistency]]", "resolved": "urn:visionflow:linked:arc-consistency", "kind": "ResolvedLink"},
-    {"raw": "[[Backtracking Search]]", "resolved": "urn:visionflow:linked:backtracking-search", "kind": "ResolvedLink"},
-    {"raw": "[[Constraint Propagation]]", "resolved": "urn:visionflow:linked:constraint-propagation", "kind": "ResolvedLink"},
-    {"raw": "[[Constraint Solver]]", "resolved": "urn:visionflow:linked:constraint-solver", "kind": "ResolvedLink"},
-    {"raw": "[[Variable Ordering Heuristic]]", "resolved": "urn:visionflow:linked:variable-ordering-heuristic", "kind": "ResolvedLink"},
-    {"raw": "[[Local Search]]", "resolved": "urn:visionflow:linked:local-search", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Theory]]", "resolved": "urn:visionflow:linked:graph-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Propositional Logic]]", "resolved": "urn:visionflow:linked:propositional-logic", "kind": "ResolvedLink"},
-    {"raw": "[[Satisfiability]]", "resolved": "urn:visionflow:linked:satisfiability", "kind": "ResolvedLink"},
-    {"raw": "[[Integer Programming]]", "resolved": "urn:visionflow:linked:integer-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Linear Programming]]", "resolved": "urn:visionflow:linked:linear-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Probabilistic Inference]]", "resolved": "urn:visionflow:linked:probabilistic-inference", "kind": "ResolvedLink"},
-    {"raw": "[[Automated Planning]]", "resolved": "urn:visionflow:linked:automated-planning", "kind": "ResolvedLink"},
-    {"raw": "[[Planning and Scheduling]]", "resolved": "urn:visionflow:linked:planning-and-scheduling", "kind": "ResolvedLink"},
-    {"raw": "[[Configuration Management]]", "resolved": "urn:visionflow:linked:configuration-management", "kind": "ResolvedLink"},
-    {"raw": "[[Resource Allocation]]", "resolved": "urn:visionflow:linked:resource-allocation", "kind": "ResolvedLink"},
-    {"raw": "[[Supply Chain Optimisation]]", "resolved": "urn:visionflow:linked:supply-chain-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Network Configuration]]", "resolved": "urn:visionflow:linked:network-configuration", "kind": "ResolvedLink"},
-    {"raw": "[[Robotic Task Planning]]", "resolved": "urn:visionflow:linked:robotic-task-planning", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "ResolvedLink"},
-    {"raw": "[[Decision Making]]", "resolved": "urn:visionflow:linked:decision-making", "kind": "ResolvedLink"},
-    {"raw": "[[Inference Engine]]", "resolved": "urn:visionflow:linked:inference-engine", "kind": "ResolvedLink"},
-    {"raw": "[[Heuristic]]", "resolved": "urn:visionflow:linked:heuristic-methods", "kind": "ResolvedLink"},
-    {"raw": "[[Logic Programming]]", "resolved": "urn:visionflow:linked:logic-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neuro-Symbolic AI]]", "resolved": "urn:visionflow:linked:neuro-symbolic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Operations Research]]", "resolved": "urn:visionflow:linked:operations-research", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Colouring]]", "resolved": "urn:visionflow:linked:graph-colouring", "kind": "ResolvedLink"},
-    {"raw": "[[Motion Planning]]", "resolved": "urn:visionflow:linked:motion-planning", "kind": "ResolvedLink"},
-    {"raw": "[[Formal Verification]]", "resolved": "urn:visionflow:linked:formal-verification", "kind": "ResolvedLink"},
-    {"raw": "[[Treewidth]]", "resolved": "urn:visionflow:linked:treewidth", "kind": "ResolvedLink"},
-    {"raw": "[[Branch and Bound]]", "resolved": "urn:visionflow:linked:branch-and-bound", "kind": "ResolvedLink"},
-    {"raw": "[[Dynamic Programming]]", "resolved": "urn:visionflow:linked:dynamic-programming", "kind": "ResolvedLink"},
-    {"raw": "[[Quantum Computing]]", "resolved": "urn:visionflow:linked:quantum-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Domain Representation]]", "resolved": "urn:visionflow:linked:domain-representation", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -363,7 +536,7 @@ public: true
   ## About
   Constraint Satisfaction Problems (CSPs) constitute one of the most general and widely applicable problem representations in computer science and artificial intelligence. A CSP instance is formally a triple (X, D, C): X = {x₁, …, xₙ} is a set of variables; D = {D₁, …, Dₙ} associates each variable xᵢ with a finite or continuous domain Dᵢ of possible values; and C = {c₁, …, cₘ} is a set of constraints, each specifying a relation over a subset of variables that their joint assignment must satisfy. The task is to find a complete assignment — a function v: X → ∪Dᵢ with v(xᵢ) ∈ Dᵢ — such that every constraint cᵢ(v(scope(cᵢ))) holds. When no complete consistent assignment exists, a CSP is unsatisfiable. Constraint optimisation problems (COPs) augment this with an objective function to be minimised or maximised over the set of feasible assignments, connecting directly to [[Combinatorial Optimisation]] and [[Operations Research]].
 
-  The roots of constraint satisfaction lie in scene labelling and picture interpretation work from the early 1970s. Waltz (1975) demonstrated that domain filtering — what is now called arc consistency — could eliminate most search in polyhedral scene interpretation, a result that inspired Alan Mackworth (1977) to formalise arc consistency, define the AC-3 algorithm, and establish the general notion of network consistency. Ugo Montanari (1974) had earlier described network constraint formulations. The seminal paper by Mackworth on AC-3 remains one of the most cited works in AI. Eugene Freuder (1978, 1982) extended these ideas to k-consistency and identified structural tractability: CSPs whose constraint hypergraph has bounded [[Treewidth]] can be solved in polynomial time via [[Dynamic Programming]] along a tree decomposition. Rina Dechter (2003) synthesised decades of results into the definitive monograph "Constraint Processing." The Russell & Norvig textbook devotes a chapter to CSP as a core AI technique, cementing its place in standard AI curricula. The constraint satisfaction paradigm is the formal substrate on which [[Constraint Based Design]] engineering methodology rests: engineering design problems — over dimensional parameters, material selections, process parameters, and topology variables — are encoded as CSPs or COPs and solved by the same algorithmic machinery that powers scheduling, planning, and verification.
+  The roots of constraint satisfaction lie in scene labelling and picture interpretation work from the early 1970s. Waltz (1975) demonstrated that domain filtering — what is now called arc consistency — [private] eliminate most search in polyhedral scene interpretation, a result that inspired Alan Mackworth (1977) to formalise arc consistency, define the AC-3 algorithm, and establish the general notion of network consistency. Ugo Montanari (1974) had earlier described network constraint formulations. The seminal paper by Mackworth on AC-3 remains one of the most cited works in AI. Eugene Freuder (1978, 1982) extended these ideas to k-consistency and identified structural tractability: CSPs whose constraint hypergraph has bounded [[Treewidth]] can be solved in polynomial time via [[Dynamic Programming]] along a tree decomposition. Rina Dechter (2003) synthesised decades of results into the definitive monograph "Constraint Processing." The Russell & Norvig textbook devotes a chapter to CSP as a core AI technique, cementing its place in standard AI curricula. The constraint satisfaction paradigm is the formal substrate on which [[Constraint Based Design]] engineering methodology rests: engineering design problems — over dimensional parameters, material selections, process parameters, and topology variables — are encoded as CSPs or COPs and solved by the same algorithmic machinery that powers scheduling, planning, and verification.
 
   The formal relationship between CSPs and other reasoning paradigms is deep. Any finite-domain CSP can be compiled into a [[Satisfiability]] (SAT) formula via a straightforward encoding, enabling SAT solvers (DPLL, CDCL) to serve as CSP backends. Dually, SAT is a special case of CSP (Boolean domains, clause constraints). [[Integer Programming]] is the continuous extension: replacing finite enumeration with polyhedral relaxations admits LP-based lower bounds inside [[Branch and Bound]]. [[Logic Programming]] — particularly Constraint Logic Programming (CLP) as realised in ECLiPSe and SICStus Prolog — embeds constraint solving into a logical inference framework, exposing the relationship between constraint propagation and logical deduction. [[Probabilistic Inference]] methods such as belief propagation operate on factor graphs that are directly analogous to constraint hypergraphs, with messages approximating marginal distributions rather than enforcing hard feasibility. The hypergraph interpretation, where constraint relations are hyperedges connecting multiple variable nodes, directly inspired the constraint hypergraph framework for [[Digital Twin]] modelling (arXiv:2507.05494, 2025), which positions CSP consistency maintenance as the underlying formalism for live [[Cyber Physical Systems]] validation.
 
@@ -512,7 +685,7 @@ public: true
   - *Cumulative*: resource capacity constraint over time; edge-finding algorithm identifies mandatory intervals
   - *GCC (Global Cardinality Constraint)*: each value appears between lv and uv times; enforced by network flow
   - *Regular*: variable sequence must be accepted by a DFA; filtered by DP on the constraint automaton
-  - *Element*: x[i] = v; enforced by propagating index and value domains simultaneously
+  - *Element*: x[i] = v; enforced by propagating [private] and value domains simultaneously
   - *Circuit*: variables form a Hamiltonian circuit; enforced by constraint propagation on successor arcs
 
   **Soft constraints and VCSP** — the Valued CSP framework for over-constrained problems:

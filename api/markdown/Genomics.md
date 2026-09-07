@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Genomics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -103,6 +99,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Genomics is the study of the complete set of genetic material in organisms, encompassing the structure, function, evolution, and editing of genomes. It combines high-throughput DNA sequencing with computational analysis to interpret vast quantities of genetic data. Genomics underpins precision medicine, evolutionary biology, agriculture, and the increasing application of machine learning to biological sequence interpretation.
   - Related concepts: [[Computational Biology]] [[Bioinformatics]] [[Precision Medicine]] [[Machine Learning]]

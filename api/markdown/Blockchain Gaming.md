@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Gaming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,32 +174,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-gaming:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8e1d914ef0f539e251f0f50d3e431387940b4dedfedbf89de15bf57f6c952e6e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A gaming paradigm in which in-game assets, economies, and ownership records are managed on distributed ledgers, enabling players to hold verifiable ownership of digital items as NFTs, participate in play-to-earn economies, and trade assets across compatible platforms without relying on centralised game servers for provenance or scarcity guarantees.

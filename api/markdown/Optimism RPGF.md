@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optimism RPGF
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Optimism Retroactive Public Goods Funding (RPGF) is a recurring funding mechanism run by the Optimism Collective that rewards projects after they have demonstrably contributed value to the ecosystem. Rather than funding speculative proposals upfront, badgeholders or token holders allocate retroactive grants based on observed impact. The model is a flagship experiment in decentralized, impact-based public-goods funding for blockchain ecosystems.",
   "domain": "blockchain",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao-analytics", "label": "DAO Analytics"},
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"}
+      {
+        "@id": "urn:ngm:class:dao-analytics",
+        "label": "DAO Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
     ]
   },
   "quality": 0.72

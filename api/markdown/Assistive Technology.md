@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Assistive Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:assistive-technology:8e07b2101bba",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7ffc75808287721df765cfaefb195caac8943fd65049e81d326c9f4a48a9d2bf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Education]]",
-      "resolved": "urn:visionflow:linked:education",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Accessibility]]",
-      "resolved": "urn:visionflow:linked:accessibility",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Assistive technology is equipment or software that helps people with disabilities perform tasks they would otherwise find difficult. Examples include screen readers, hearing aids and alternative input devices.

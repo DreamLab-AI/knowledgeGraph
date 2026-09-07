@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Assistive Technology Support
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,28 @@ public: true
   "definition": "Assistive Technology Support is the set of capabilities that make software interoperate correctly with assistive tools such as screen readers, magnifiers, switch access, and voice control. It is achieved by exposing semantic roles, names, states, and keyboard operability through accessibility APIs so that users with disabilities can perceive and operate an interface. Robust support is a prerequisite for accessible experiences and for compliance with standards like WCAG.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:accessible-experience", "label": "Accessible Experience"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:accessible-experience",
+        "label": "Accessible Experience"
+      }
     ]
   },
   "quality": 0.72
 }
 ```
+
 - ### Definition
   - Assistive Technology Support enables software to work with screen readers, magnifiers, and other aids by exposing semantics through accessibility APIs. It is a capability of the [[Accessibility Domain]] and a requirement for delivering an [[Accessible Experience]].
 - ### Content

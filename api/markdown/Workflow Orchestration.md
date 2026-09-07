@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Workflow Orchestration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Workflow orchestration is the coordination of multiple interdependent tasks, services, or agents into a coherent end-to-end process, managing ordering, data flow, conditional branching, error handling, and resource allocation. It centralises control logic so that distributed components execute in the correct sequence with the right inputs. In agentic AI systems, orchestration governs how tool calls, sub-agents, and model invocations are sequenced to accomplish complex goals.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}, {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ]
   },
   "quality": 0.72
 }

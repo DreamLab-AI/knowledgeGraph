@@ -1,8 +1,3 @@
----
-public: true
----
-
-# US AI Safety Institute
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

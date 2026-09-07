@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BC-0442-certification-and-compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,37 +71,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bc-0442-certification-and-compliance:c0d9e8c24a41",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3aecc1eacdd7e08032f2b3466f96bd5e2495995ba9c2d8be103badb54dca6093"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compliance]]",
-      "resolved": "urn:visionflow:linked:compliance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Certification and compliance in blockchain refers to the processes by which systems, service providers and tokens are assessed against technical standards and legal requirements, and formally attested as meeting them.

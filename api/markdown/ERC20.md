@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ERC20
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,19 +71,40 @@ public: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:erc721", "label": "ERC721"}
+      {
+        "@id": "urn:ngm:class:erc721",
+        "label": "ERC721"
+      }
     ]
   },
   "sameAs": [
@@ -104,57 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:erc20:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a1a3628aa6ab646d05a4dccfd79ebfa48b50fa2590f074fdb4d4b843c38ed953"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Balance Tracking]]",
-      "resolved": "urn:visionflow:linked:balance-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EVM]]",
-      "resolved": "urn:visionflow:linked:evm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Token Transfer]]",
-      "resolved": "urn:visionflow:linked:token-transfer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:owl:class:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ERC20 is the Ethereum fungible token standard (Ethereum Improvement Proposal 20) defining a mandatory common interface for token transfers, approvals, and balance queries. It specifies six required functions and two events enabling interoperable smart contract interaction, forming the technical foundation of decentralised finance, governance tokens, and digital asset ecosystems on EVM-compatible chains.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# visionflow
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:visionflow:a58880191470",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:edc0e271beb985fcc5584ab399824e08343eda11222ea899a5c64d162798327e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GPU]]",
-      "resolved": "urn:visionflow:linked:gpu",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Aggregation]]",
-      "resolved": "urn:visionflow:linked:data-aggregation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - visionflow is a project for rendering and interacting with knowledge graphs in a 3D, GPU-accelerated environment, including extended reality interfaces. It combines graph layout computation with real-time visualisation.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# gpu compute
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,7 +176,7 @@ public: true
   - GPU Compute — also termed [[GPGPU]] (General-Purpose Graphics Processing Unit computing) — is the exploitation of [[Graphics Processing Unit]] hardware for massively parallel numerical workloads beyond traditional rasterisation. A modern GPU contains thousands of shader cores arranged in streaming multiprocessors that execute [[Parallel Computing]] workloads under a Single Instruction Multiple Data model, delivering throughputs in the tens to hundreds of teraFLOPs that make it the dominant substrate for [[Deep Learning]] training and inference. The [[CUDA]] programming model, introduced by NVIDIA in 2007, was the foundational catalyst that opened GPU hardware to general software developers, and [[ROCm]] provides AMD's open-source equivalent. The capability culminates in multi-node GPU clusters that underpin the compute budgets required by [[Large Language Model]] pre-training, [[Diffusion Model]] generation, and large-scale [[Reinforcement Learning]] experiments.
 
 - ### Overview
-  - GPU Compute emerged as a distinct discipline when researchers in the mid-2000s demonstrated that GPUs could accelerate scientific simulations and, later, [[Neural Network]] training by one to two orders of magnitude over contemporary CPUs. The key architectural insight is that deep learning workloads consist overwhelmingly of matrix multiplications (dense linear algebra) that map naturally onto the GPU's SIMD execution model.
+  - GPU Compute emerged as a distinct discipline when researchers in the mid-2000s demonstrated that GPUs [private] accelerate scientific simulations and, later, [[Neural Network]] training by one to two orders of magnitude over contemporary CPUs. The key architectural insight is that deep learning workloads consist overwhelmingly of matrix multiplications (dense linear algebra) that map naturally onto the GPU's SIMD execution model.
   - Modern data-centre GPUs — NVIDIA A100, H100, H200, and AMD Instinct MI300X — are purpose-built for [[Model Training]] and [[Neural Network Inference]], integrating dedicated matrix engines (NVIDIA Tensor Cores, AMD Matrix Cores) that accelerate FP16/BF16/FP8 multiply-accumulate operations at far higher throughput than FP32 scalar units.
   - The significance of GPU Compute extends beyond speed: it enabled the scaling laws that drive modern [[Foundation Model]] research, where compute budget (measured in FLOP) has become the primary lever for improving model capability.
   - GPU Compute is now central to [[AI Infrastructure]] strategy, data-centre power planning, geopolitical export controls, and semiconductor supply chains.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Threat Intelligence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,51 +186,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:threat-intelligence:a02f9aafc870",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e27dcfa38a0696b849c8acf527cf8d56cceac814114024a005789cd8ec2ad2d3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Security]]",
-      "resolved": "urn:visionflow:linked:network-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Security]]",
-      "resolved": "urn:visionflow:linked:information-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cybersecurity]]",
-      "resolved": "urn:visionflow:linked:cybersecurity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.cisa.gov/topics/cyber-threats-and-advisories]]",
-      "resolved": "urn:visionflow:linked:https-www-cisa-gov-topics-cyber-threats-and-advisories",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://attack.mitre.org/]]",
-      "resolved": "urn:visionflow:linked:https-attack-mitre-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

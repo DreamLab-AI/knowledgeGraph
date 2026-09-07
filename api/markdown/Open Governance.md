@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Open Governance
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

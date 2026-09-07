@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Open Source AI
----
-
-# open-source ai
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

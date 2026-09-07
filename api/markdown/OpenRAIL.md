@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenRAIL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "OpenRAIL (Responsible AI License) is a family of model licenses that grant broad permission to use and distribute AI models while imposing use-based behavioral restrictions to prevent harmful applications. Unlike traditional open-source licenses, it couples openness with enforceable conditions prohibiting specified misuse such as discrimination or disinformation. OpenRAIL has become a common licensing framework for openly released foundation models and their training artifacts.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:training-data", "label": "Training Data"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ]
   },
   "quality": 0.72
 }

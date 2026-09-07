@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,24 +34,66 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:mixed-reality-platform", "label": "Mixed Reality Platform"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"},
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
-      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"},
-      {"@id": "urn:ngm:class:middleware", "label": "Middleware"}
+      {
+        "@id": "urn:ngm:class:mixed-reality-platform",
+        "label": "Mixed Reality Platform"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-computing-platform",
+        "label": "Wearable Computing Platform"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"},
-      {"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"},
-      {"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}
+      {
+        "@id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:sc-standards-and-interop",
+        "label": "Standards and Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:sc-interaction",
+        "label": "Interaction Technology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -63,3 +101,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

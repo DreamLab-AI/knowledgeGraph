@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Error Calculation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Error calculation is the step in a control system that computes the difference between a desired setpoint and the measured process variable. This error term is the input that drives corrective action in feedback controllers such as PID loops. Accurate, low-latency error calculation is essential for stable and responsive position, velocity, and other regulated control behaviours.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:velocity-control", "label": "VelocityControl"}, {"@id": "urn:ngm:class:position-control", "label": "PositionControl"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:velocity-control",
+        "label": "VelocityControl"
+      },
+      {
+        "@id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      }
+    ]
   },
   "quality": 0.72
 }

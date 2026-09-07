@@ -1,35 +1,106 @@
----
-public: true
----
-
-# Password Authentication
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:password-authentication", "@type":"Page", "title":"Password Authentication", "vc:slug":"password-authentication", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:password-authentication",
+  "@type": "Page",
+  "title": "Password Authentication",
+  "vc:slug": "password-authentication",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:password-authentication",
-  "@type":"Class",
-  "label":"Password Authentication",
-  "definition":"Password authentication is a knowledge-based method of verifying a user's identity by checking a secret string they supply against a stored credential. The stored credential is typically a salted cryptographic hash rather than the plaintext password, so that the secret is never recovered even if the store is compromised. As a single-factor mechanism it is widely deployed but vulnerable to guessing, reuse, phishing, and credential-stuffing attacks, motivating stronger or supplementary methods.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"},{"@id":"urn:ngm:class:salt","label":"Salt"}],
-    "requires":[{"@id":"urn:ngm:class:identity-management","label":"Identity Management"},{"@id":"urn:ngm:class:session-management","label":"Session Management"}],
-    "enables":[{"@id":"urn:ngm:class:access-control","label":"Access Control"},{"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"}],
-    "supports":[{"@id":"urn:ngm:class:single-sign-on","label":"Single Sign-On"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:biometric-authentication","label":"Biometric Authentication"},{"@id":"urn:ngm:class:multi-factor-authentication","label":"Multi-Factor Authentication"}],
-    "dependsOn":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "relatedTo":[{"@id":"urn:ngm:class:privacy","label":"Privacy"},{"@id":"urn:ngm:class:data-protection","label":"Data Protection"},{"@id":"urn:ngm:class:security","label":"Security"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:password-authentication",
+  "@type": "Class",
+  "label": "Password Authentication",
+  "definition": "Password authentication is a knowledge-based method of verifying a user's identity by checking a secret string they supply against a stored credential. The stored credential is typically a salted cryptographic hash rather than the plaintext password, so that the secret is never recovered even if the store is compromised. As a single-factor mechanism it is widely deployed but vulnerable to guessing, reuse, phishing, and credential-stuffing attacks, motivating stronger or supplementary methods.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:salt",
+        "label": "Salt"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Compression
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -195,47 +190,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-compression:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b817ef7e9f1177a8c1370c6fa4c2669c896ec4a5ba5da76cb0dbd11a04f29e81"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Edge AI]]",
-      "resolved": "urn:visionflow:linked:edge-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Compression]]",
-      "resolved": "urn:visionflow:linked:model-compression",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Quantization]]",
-      "resolved": "urn:visionflow:linked:quantization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Distillation]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-distillation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Data Compression in AI involves reducing the size of datasets, models, and computational representations while preserving essential information. Techniques include model quantization (reducing numerical precision), pruning (removing redundant parameters), knowledge distillation (training smaller models to mimic larger ones), and neural compression methods (autoencoders, learned compression). Data compression is critical for deploying AI on resource-constrained devices, reducing storage costs, accelerating inference, and minimizing energy consumption. Advanced approaches leverage entropy coding, sparsity exploitation, and learned representations for adaptive compression.

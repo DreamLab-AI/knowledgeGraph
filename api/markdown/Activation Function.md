@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Activation Function
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,47 +182,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:activation-function:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:39fc46921ad5394d7a5258bad8becfa25caf45c614cd7a14c28b189635e57ac2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO/IEC 22989:2022]]",
-      "resolved": "urn:visionflow:linked:iso-iec-22989-2022",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI RMF]]",
-      "resolved": "urn:visionflow:linked:nist-ai-rmf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:owl:class:edge-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Activation Function is a non-linear mathematical transformation applied to a neuron's weighted input sum, enabling neural networks to learn complex, non-linear mappings. Common variants include Sigmoid, Tanh, ReLU, Leaky ReLU, and GELU; the choice of activation function critically affects gradient flow, convergence speed, and model expressivity.

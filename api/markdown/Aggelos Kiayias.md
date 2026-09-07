@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Aggelos Kiayias
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:aggelos-kiayias:c979ab8ade5f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5e6cd988376cb60351611a14a0f1a4fa96595d3febc0de9a2aa9374165512f62"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanisms]]",
-      "resolved": "urn:visionflow:linked:consensus-mechanisms",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cardano]]",
-      "resolved": "urn:visionflow:linked:cardano",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A computer scientist and cryptographer known for research in cryptography and blockchain protocols, including provably secure proof-of-stake consensus.

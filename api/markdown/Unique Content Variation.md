@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Unique Content Variation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -109,37 +104,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:unique-content-variation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e66efe5bbe212b4ee33e20afad3ef5f4b75354fa2599c43c3fd73dc3922fce48"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Generative Content]]",
-      "resolved": "urn:visionflow:owl:class:generative-content",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Procedurally generated or algorithmically created variations of digital content that produce distinct, individualized versions of assets, experiences, or environments, often used in NFTs and generative art to ensure scarcity and uniqueness.

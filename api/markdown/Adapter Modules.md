@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adapter Modules
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,37 +184,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adapter-modules:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:84662b8012da4e1c560f5eabae3ac336e096d052e81a2b8ae3fb9d2e6c341e5e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Small neural network modules inserted between transformer layers that are trained whilst keeping the original model frozen. Adapter modules provide a parameter-efficient way to adapt pre-trained models to new tasks by learning task-specific transformations without modifying the base model.
 
@@ -277,7 +241,7 @@ public: true
 		  - Continual learning scenarios
 
   #### Academic Context
-  Adapter modules emerged as one of the earliest parameter-efficient fine-tuning techniques, demonstrating that effective task adaptation could be achieved with a small fraction of parameters compared to full fine-tuning.
+  Adapter modules emerged as one of the earliest parameter-efficient fine-tuning techniques, demonstrating that effective task adaptation [private] be achieved with a small fraction of parameters compared to full fine-tuning.
 
 		  **Primary Source**: Multiple PEFT sources; comprehensive survey in arXiv:2312.12148 (2023)
 
@@ -353,7 +317,7 @@ public: true
 
 		  ## Significance
 
-		  Adapter modules pioneered parameter-efficient fine-tuning, demonstrating that a small fraction of parameters could achieve effective task adaptation, paving the way for subsequent PEFT methods.
+		  Adapter modules pioneered parameter-efficient fine-tuning, demonstrating that a small fraction of parameters [private] achieve effective task adaptation, paving the way for subsequent PEFT methods.
 
 		  ## OWL Functional Syntax
 

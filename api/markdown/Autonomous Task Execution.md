@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Autonomous Task Execution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Autonomous Task Execution",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:automated-planning", "vc:label": "Automated Planning"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:working-memory", "vc:label": "Working Memory"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "Multi-Agent Orchestration"},
-    {"@id": "urn:visionflow:linked:process-automation", "vc:label": "Process Automation"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:task-decomposition", "vc:label": "Task Decomposition"},
-    {"@id": "urn:visionflow:linked:error-recovery", "vc:label": "Error Recovery"},
-    {"@id": "urn:visionflow:linked:sandboxed-execution", "vc:label": "Sandboxed Execution"},
-    {"@id": "urn:visionflow:linked:reasoning", "vc:label": "Reasoning"},
-    {"@id": "urn:visionflow:linked:context-management", "vc:label": "Context Management"},
-    {"@id": "urn:visionflow:linked:robotic-process-automation", "vc:label": "Robotic Process Automation"},
-    {"@id": "urn:visionflow:linked:llm-agents", "vc:label": "LLM Agents"},
-    {"@id": "urn:visionflow:linked:long-horizon-planning", "vc:label": "Long-Horizon Planning"},
-    {"@id": "urn:visionflow:linked:react-prompting", "vc:label": "ReAct Prompting"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:distributed-collaboration", "vc:label": "Distributed Collaboration"},
-    {"@id": "urn:visionflow:linked:autonomous-operation", "vc:label": "Autonomous Operation"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain of Thought"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:linked:swe-bench", "vc:label": "SWE-Bench"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:vector-database", "vc:label": "Vector Database"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:task-planning", "vc:label": "Task Planning"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:software-engineering-automation", "vc:label": "Software Engineering Automation"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:nist-ai-rmf", "vc:label": "NIST AI RMF"}
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-planning",
+      "vc:label": "Automated Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:working-memory",
+      "vc:label": "Working Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "Multi-Agent Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-automation",
+      "vc:label": "Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-decomposition",
+      "vc:label": "Task Decomposition"
+    },
+    {
+      "@id": "urn:visionflow:linked:error-recovery",
+      "vc:label": "Error Recovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandboxed-execution",
+      "vc:label": "Sandboxed Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-management",
+      "vc:label": "Context Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotic-process-automation",
+      "vc:label": "Robotic Process Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-agents",
+      "vc:label": "LLM Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:long-horizon-planning",
+      "vc:label": "Long-Horizon Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:react-prompting",
+      "vc:label": "ReAct Prompting"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-collaboration",
+      "vc:label": "Distributed Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-operation",
+      "vc:label": "Autonomous Operation"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:swe-bench",
+      "vc:label": "SWE-Bench"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-planning",
+      "vc:label": "Task Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-engineering-automation",
+      "vc:label": "Software Engineering Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -74,70 +189,205 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:working-memory", "label": "Working Memory"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration"},
-      {"@id": "urn:ngm:class:process-automation", "label": "Process Automation"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
-      {"@id": "urn:ngm:class:software-engineering-automation", "label": "Software Engineering Automation"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering-automation",
+        "label": "Software Engineering Automation"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:task-decomposition", "label": "Task Decomposition"},
-      {"@id": "urn:ngm:class:error-recovery", "label": "Error Recovery"},
-      {"@id": "urn:ngm:class:sandboxed-execution", "label": "Sandboxed Execution"},
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"},
-      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}
+      {
+        "@id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:error-recovery",
+        "label": "Error Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxed-execution",
+        "label": "Sandboxed Execution"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Invocation"},
-      {"@id": "urn:ngm:class:task-decomposition", "label": "Task Decomposition"},
-      {"@id": "urn:ngm:class:error-recovery", "label": "Error Recovery"},
-      {"@id": "urn:ngm:class:sandboxed-execution", "label": "Sandboxed Execution"}
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Invocation"
+      },
+      {
+        "@id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:error-recovery",
+        "label": "Error Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxed-execution",
+        "label": "Sandboxed Execution"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:context-management", "label": "Context Management"},
-      {"@id": "urn:ngm:class:agent-memory", "label": "Agent Memory"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
-      {"@id": "urn:ngm:class:single-turn-inference", "label": "Single-Turn Inference"}
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:single-turn-inference",
+        "label": "Single-Turn Inference"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
-      {"@id": "urn:ngm:class:long-horizon-planning", "label": "Long-Horizon Planning"},
-      {"@id": "urn:ngm:class:react-prompting", "label": "ReAct Prompting"},
-      {"@id": "urn:ngm:class:autonomous-operation", "label": "Autonomous Operation"},
-      {"@id": "urn:ngm:class:swe-bench", "label": "SWE-Bench"},
-      {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {
+        "@id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "@id": "urn:ngm:class:long-horizon-planning",
+        "label": "Long-Horizon Planning"
+      },
+      {
+        "@id": "urn:ngm:class:react-prompting",
+        "label": "ReAct Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-operation",
+        "label": "Autonomous Operation"
+      },
+      {
+        "@id": "urn:ngm:class:swe-bench",
+        "label": "SWE-Bench"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:agentic-task-execution", "label": "Agentic Task Execution"},
-    {"@id": "urn:ngm:class:ai-agent-execution", "label": "AI Agent Execution"}
+    {
+      "@id": "urn:ngm:class:agentic-task-execution",
+      "label": "Agentic Task Execution"
+    },
+    {
+      "@id": "urn:ngm:class:ai-agent-execution",
+      "label": "AI Agent Execution"
+    }
   ],
   "quality": 0.92,
   "provenance": {
@@ -149,7 +399,7 @@ public: true
 ```
 
 - ### Definition
-  - Autonomous Task Execution is the capacity of an [[Agentic AI]] system to receive a high-level objective expressed in natural language, decompose it into executable sub-tasks, invoke the appropriate [[Tool Use]] capabilities (web search, code execution, file system access, API calls, database queries), observe and evaluate results, recover from errors, and iterate until the complete goal is satisfied — all without requiring human approval at each intermediate step. Unlike classical [[Robotic Process Automation]] (which executes a fixed, pre-scripted action sequence on predictable structured inputs) or [[Single-Turn Inference]] (which generates a single response from a static context), autonomous task execution maintains a dynamic, evolving task graph, adapts to unexpected tool outputs, and applies [[Reasoning]] and [[Long-Horizon Planning]] to recover from failures that could not have been anticipated at task initiation. The mechanism depends on [[Large Language Models]] or [[Foundation Models]] serving as a cognitive core — providing the natural-language understanding, analogical reasoning, and instruction-following capability required to decompose arbitrary task descriptions into executable steps — augmented by [[Task Decomposition]] frameworks, [[Agent Memory]] for cross-step state persistence, [[Function Calling]] interfaces to external tools via [[Model Context Protocol]], and [[Sandboxed Execution]] environments that contain the consequences of agent actions within defined safety boundaries. The result validation loop — perceive result, evaluate against goal criterion, decide whether to continue or terminate — is what distinguishes autonomous task execution from simple sequential automation: the system does not merely execute a predefined plan, it iteratively closes the gap between its current state and the goal state using whatever tools are available, in whatever order the current situation demands. The concept emerged from classical AI planning research in the 1970s–1980s (STRIPS, HTN planning, the BDI agent architecture) but was confined to narrow, well-formalised domains until the advent of [[Large Language Models]] with reliable [[Function Calling]] capability in 2023–2024 dramatically expanded the range of tasks amenable to autonomous execution to include essentially any goal that can be expressed in natural language and pursued through available tool interfaces. Key metrics for assessing autonomous task execution quality include task success rate on standardised benchmarks ([[SWE-Bench]] Verified: 80.9% for Claude Opus 4.5, June 2026), autonomous horizon (the duration of uninterrupted task execution — GLM-5.1 demonstrates 8-hour horizons, April 2026), and reliability under adversarial conditions including [[Prompt Injection]] attacks embedded in tool outputs. Governance obligations for autonomous task execution are imposed by the [[EU AI Act]] for high-risk deployments and by the [[NIST AI RMF]] Generative AI Profile, both of which mandate human override mechanisms and audit trails proportional to the stakes and irreversibility of autonomous actions.
+  - Autonomous Task Execution is the capacity of an [[Agentic AI]] system to receive a high-level objective expressed in natural language, decompose it into executable sub-tasks, invoke the appropriate [[Tool Use]] capabilities (web search, code execution, file system access, API calls, database queries), observe and evaluate results, recover from errors, and iterate until the complete goal is satisfied — all without requiring human approval at each intermediate step. Unlike classical [[Robotic Process Automation]] (which executes a fixed, pre-scripted action sequence on predictable structured inputs) or [[Single-Turn Inference]] (which generates a single response from a static context), autonomous task execution maintains a dynamic, evolving task graph, adapts to unexpected tool outputs, and applies [[Reasoning]] and [[Long-Horizon Planning]] to recover from failures that [private] not have been anticipated at task initiation. The mechanism depends on [[Large Language Models]] or [[Foundation Models]] serving as a cognitive core — providing the natural-language understanding, analogical reasoning, and instruction-following capability required to decompose arbitrary task descriptions into executable steps — augmented by [[Task Decomposition]] frameworks, [[Agent Memory]] for cross-step state persistence, [[Function Calling]] interfaces to external tools via [[Model Context Protocol]], and [[Sandboxed Execution]] environments that contain the consequences of agent actions within defined safety boundaries. The result validation loop — perceive result, evaluate against goal criterion, decide whether to continue or terminate — is what distinguishes autonomous task execution from simple sequential automation: the system does not merely execute a predefined plan, it iteratively closes the gap between its current state and the goal state using whatever tools are available, in whatever order the current situation demands. The concept emerged from classical AI planning research in the 1970s–1980s (STRIPS, HTN planning, the BDI agent architecture) but was confined to narrow, well-formalised domains until the advent of [[Large Language Models]] with reliable [[Function Calling]] capability in 2023–2024 dramatically expanded the range of tasks amenable to autonomous execution to include essentially any goal that can be expressed in natural language and pursued through available tool interfaces. Key metrics for assessing autonomous task execution quality include task success rate on standardised benchmarks ([[SWE-Bench]] Verified: 80.9% for Claude Opus 4.5, June 2026), autonomous horizon (the duration of uninterrupted task execution — GLM-5.1 demonstrates 8-hour horizons, April 2026), and reliability under adversarial conditions including [[Prompt Injection]] attacks embedded in tool outputs. Governance obligations for autonomous task execution are imposed by the [[EU AI Act]] for high-risk deployments and by the [[NIST AI RMF]] Generative AI Profile, both of which mandate human override mechanisms and audit trails proportional to the stakes and irreversibility of autonomous actions.
 
 - ### Semantic Classification
   - owl-class:: ai:AutonomousTaskExecution
@@ -262,9 +512,9 @@ public: true
         ObjectSomeValuesFrom(ai:standardizedBy ai:ModelContextProtocol))
 
   ## About
-    Autonomous task execution is the operational core of the agentic AI paradigm: it is what agents actually do when they are "working" on a task. The concept emerged at the intersection of three intellectual traditions that converged in 2022–2024. Classical AI planning — STRIPS (Fikes and Nilsson, 1971), Hierarchical Task Network (HTN) planning (Erol et al., 1994), and the BDI (Belief-Desire-Intention) agent architecture (Rao and Georgeff, 1991) — provided formal vocabularies for goal decomposition, operator sequencing, and agent motivation. These formalisms were theoretically powerful but practically constrained to well-specified, narrow domains: a STRIPS planner for logistics could not handle the open-ended, natural-language-specified tasks that human workers routinely perform. Robotic systems engineering provided a second tradition: sense-plan-act loops, perception pipelines, and motor control architectures demonstrated that iterative observation-action cycles could achieve complex physical task completion in dynamic environments. However, physical robots required extensive domain-specific programming for each task type, limiting their deployment to structured industrial environments. The third tradition — large language model research — provided the missing capability: general-purpose natural-language understanding and instruction-following that made task specification in ordinary language executable, and analogical reasoning across domains that made novel task types tractable without retraining.
+    Autonomous task execution is the operational core of the agentic AI paradigm: it is what agents actually do when they are "working" on a task. The concept emerged at the intersection of three intellectual traditions that converged in 2022–2024. Classical AI planning — STRIPS (Fikes and Nilsson, 1971), Hierarchical Task Network (HTN) planning (Erol et al., 1994), and the BDI (Belief-Desire-Intention) agent architecture (Rao and Georgeff, 1991) — provided formal vocabularies for goal decomposition, operator sequencing, and agent motivation. These formalisms were theoretically powerful but practically constrained to well-specified, narrow domains: a STRIPS planner for logistics [private] not handle the open-ended, natural-language-specified tasks that human workers routinely perform. Robotic systems engineering provided a second tradition: sense-plan-act loops, perception pipelines, and motor control architectures demonstrated that iterative observation-action cycles [private] achieve complex physical task completion in dynamic environments. However, physical robots required extensive domain-specific programming for each task type, limiting their deployment to structured industrial environments. The third tradition — large language model research — provided the missing capability: general-purpose natural-language understanding and instruction-following that made task specification in ordinary language executable, and analogical reasoning across domains that made novel task types tractable without retraining.
 
-    The synthetic breakthrough came with the ReAct framework (Yao et al., 2022), which demonstrated that interleaving [[Chain of Thought]] reasoning traces with explicit action invocations — rather than separating deliberation and execution into distinct phases — produced dramatically better multi-step task completion. Concurrent with ReAct, the release of GPT-4 (March 2023) with reliable [[Function Calling]] capability made tool invocation from natural-language plans practical at scale. AutoGPT (March 2023) showed that an LLM could, with appropriate scaffolding, pursue goals autonomously over many sequential steps — triggering explosive research and engineering investment. Within twelve months, the ecosystem had produced dozens of frameworks (LangChain, AutoGen, CrewAI, LangGraph, OpenAI Assistants API) and hundreds of production deployments, transforming autonomous task execution from a research curiosity into an enterprise engineering discipline.
+    The synthetic breakthrough came with the ReAct framework (Yao et al., 2022), which demonstrated that interleaving [[Chain of Thought]] reasoning traces with explicit action invocations — rather than separating deliberation and execution into distinct phases — produced dramatically better multi-step task completion. Concurrent with ReAct, the release of GPT-4 (March 2023) with reliable [[Function Calling]] capability made tool invocation from natural-language plans practical at scale. AutoGPT (March 2023) showed that an LLM [private], with appropriate scaffolding, pursue goals autonomously over many sequential steps — triggering explosive research and engineering investment. Within twelve months, the ecosystem had produced dozens of frameworks (LangChain, AutoGen, CrewAI, LangGraph, OpenAI Assistants API) and hundreds of production deployments, transforming autonomous task execution from a research curiosity into an enterprise engineering discipline.
 
     The defining technical property of autonomous task execution is the closure of the perceive-plan-act loop at the task level: the agent does not merely execute a pre-specified action sequence (as classical [[Robotic Process Automation]] does) but continuously re-evaluates its goal progress from tool output observations and generates the next action dynamically. This property is what makes autonomous task execution adaptive in a way that scripted automation is not: when a web search returns unexpected results, the agent can replan its information-gathering strategy; when a code execution fails with an unfamiliar error, the agent can diagnose the error from the stack trace and generate a corrected implementation; when an API call returns a format different from what the agent expected, the agent can adapt its parsing logic. Reliability on this adaptive loop is what benchmarks like [[SWE-Bench]] measure: not whether the agent can execute a known procedure, but whether it can adaptively pursue an open-ended goal to completion.
 
@@ -281,7 +531,7 @@ public: true
 
     **[[Error Recovery]]**
 
-    Long-horizon autonomous task execution inevitably encounters errors: network timeouts, API rate limits, unexpected data formats, code that fails tests, tool outputs that contradict earlier assumptions. Error recovery capability is what separates robust autonomous task execution from fragile automation. Recovery strategies include: retry with exponential backoff for transient failures; alternative tool selection when the primary tool fails; plan replanning when the current plan is invalidated by new observations; graceful degradation (communicating what could not be accomplished when recovery is not possible); and checkpointing (persisting task state at each completed step to enable restart from the last verified state on catastrophic failure). PARC (2025) introduced a self-reflective coding agent architecture specifically designed for robust execution of long-horizon tasks, using explicit error classification and targeted recovery strategies to reduce failure rates on multi-step coding tasks.
+    Long-horizon autonomous task execution inevitably encounters errors: network timeouts, API rate limits, unexpected data formats, code that fails tests, tool outputs that contradict earlier assumptions. Error recovery capability is what separates robust autonomous task execution from fragile automation. Recovery strategies include: retry with exponential backoff for transient failures; alternative tool selection when the primary tool fails; plan replanning when the current plan is invalidated by new observations; graceful degradation (communicating what [private] not be accomplished when recovery is not possible); and checkpointing (persisting task state at each completed step to enable restart from the last verified state on catastrophic failure). PARC (2025) introduced a self-reflective coding agent architecture specifically designed for robust execution of long-horizon tasks, using explicit error classification and targeted recovery strategies to reduce failure rates on multi-step coding tasks.
 
     **[[Agent Memory]] and [[Context Management]]**
 
@@ -311,9 +561,9 @@ public: true
     **Long-Horizon Task Execution** represents the frontier capability: sustained autonomous operation over many hours or days on complex, iterative tasks. GLM-5.1 (Z.AI, April 2026) demonstrated 8-hour autonomous execution of algorithmic optimisation, completing 655 optimisation iterations with over 6,000 tool function calls while maintaining coherent task direction. Research from Zylos.ai (2026) documents long-running agent deployments on enterprise tasks lasting 2–6 hours, with persistent memory and failure recovery enabling multi-session task continuity. Asynchronous software engineering agents (arXiv:2603.21489, 2026) demonstrate effective strategies for autonomous coding agents operating over extended periods with parallel execution of independent sub-tasks.
 
   ## Academic Context
-    The intellectual lineage of autonomous task execution traces directly to classical AI planning. STRIPS (Fikes and Nilsson, 1971) established the operator model — actions with preconditions and effects that transform world states — as the foundational abstraction for goal-directed task execution. STRIPS planners could autonomously sequence operator applications to achieve specified goal states, but only in fully specified, closed-world domains where all relevant facts were represented explicitly. Hierarchical task network (HTN) planning (Erol et al., 1994) extended this with recursive decomposition: high-level tasks decompose into method networks of sub-tasks, which decompose further until primitive operators are reached. HTN's decomposition structure directly prefigures the [[Task Decomposition]] component of modern autonomous task execution systems, with the critical difference that modern systems express decomposition plans in natural language rather than formal logical notation. The BDI (Belief-Desire-Intention) agent architecture (Rao and Georgeff, 1991) added the cognitive agent framing: agents maintain Beliefs (current world model), Desires (goals), and Intentions (committed action sequences), providing a formal account of how agents decide which goals to pursue and how to commit to action plans while remaining responsive to environmental changes. This BDI framing maps directly onto the three-component structure of modern autonomous task execution: world model (context window plus retrieved memory), goal (user's task specification), and committed plan (current task decomposition being executed).
+    The intellectual lineage of autonomous task execution traces directly to classical AI planning. STRIPS (Fikes and Nilsson, 1971) established the operator model — actions with preconditions and effects that transform world states — as the foundational abstraction for goal-directed task execution. STRIPS planners [private] autonomously sequence operator applications to achieve specified goal states, but only in fully specified, closed-world domains where all relevant facts were represented explicitly. Hierarchical task network (HTN) planning (Erol et al., 1994) extended this with recursive decomposition: high-level tasks decompose into method networks of sub-tasks, which decompose further until primitive operators are reached. HTN's decomposition structure directly prefigures the [[Task Decomposition]] component of modern autonomous task execution systems, with the critical difference that modern systems express decomposition plans in natural language rather than formal logical notation. The BDI (Belief-Desire-Intention) agent architecture (Rao and Georgeff, 1991) added the cognitive agent framing: agents maintain Beliefs (current world model), Desires (goals), and Intentions (committed action sequences), providing a formal account of how agents decide which goals to pursue and how to commit to action plans while remaining responsive to environmental changes. This BDI framing maps directly onto the three-component structure of modern autonomous task execution: world model (context window plus retrieved memory), goal (user's task specification), and committed plan (current task decomposition being executed).
 
-    The modern era opened with three transformative papers. Yao et al. "ReAct: Synergizing Reasoning and Acting in Language Models" (NeurIPS 2022) introduced the pattern of interleaving [[Chain of Thought]] reasoning steps with tool action invocations, demonstrating 11–34% absolute improvement over baselines and establishing the perceive-reason-act loop as the architectural primitive of autonomous task execution. Wei et al. "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" (NeurIPS 2022) showed that multi-step reasoning capability was unlockable from pre-trained [[Large Language Models]] without fine-tuning, providing the cognitive substrate for autonomous task decomposition and replanning. Schick et al. "Toolformer: Language Models Can Teach Themselves to Use Tools" (NeurIPS 2023) demonstrated that tool use — the ability to invoke external APIs at the appropriate moment in a generation — could be learned from data rather than hand-engineered, establishing that [[Tool Use]] capability is learnable.
+    The modern era opened with three transformative papers. Yao et al. "ReAct: Synergizing Reasoning and Acting in Language Models" (NeurIPS 2022) introduced the pattern of interleaving [[Chain of Thought]] reasoning steps with tool action invocations, demonstrating 11–34% absolute improvement over baselines and establishing the perceive-reason-act loop as the architectural primitive of autonomous task execution. Wei et al. "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" (NeurIPS 2022) showed that multi-step reasoning capability was unlockable from pre-trained [[Large Language Models]] without fine-tuning, providing the cognitive substrate for autonomous task decomposition and replanning. Schick et al. "Toolformer: Language Models Can Teach Themselves to Use Tools" (NeurIPS 2023) demonstrated that tool use — the ability to invoke external APIs at the appropriate moment in a generation — [private] be learned from data rather than hand-engineered, establishing that [[Tool Use]] capability is learnable.
 
     Key subsequent papers include: Shinn et al. "Reflexion: Language Agents with Verbal Reinforcement Learning" (NeurIPS 2023), showing that verbal self-critique without gradient updates improved autonomous task execution by 22% on coding benchmarks; Jimenez et al. "SWE-Bench" (ICLR 2024), establishing the primary evaluation benchmark for autonomous software engineering task execution; Yang et al. "SWE-Agent" (2024), demonstrating that agent-computer interface design — the specific set of tools, schemas, and interaction conventions — was as important as model capability for autonomous task performance; Debenedetti et al. "AgentDojo" (NeurIPS 2024), providing a standardised evaluation environment for [[Prompt Injection]] defences in autonomous task execution systems; and Wang et al. "TDAG" (2025), introducing dynamic task decomposition with agent generation to handle unexpected sub-problems. The comprehensive survey by Xi et al. "The Rise and Potential of Large Language Model-Based Agents" (arXiv:2309.07864) synthesises over 150 papers through 2023, providing the most thorough academic review of the field's foundations.
 
@@ -417,7 +667,7 @@ public: true
 
     **Tier 1 — In-context working memory**: The active [[Foundation Models]] context window, containing the system prompt (task objective, constraints, available tools, role definition), recent conversation and tool-call history, and the current reasoning trace. Bounded by model context length — 128k to 1M tokens in 2026 frontier models. Performance degrades as the context approaches capacity (the "lost-in-the-middle" phenomenon where models poorly attend to content in the centre of very long contexts). Management strategies: sliding window (retain only the most recent N steps); selective retention (keep high-importance steps, drop low-importance ones); and re-grounding (periodically inject a summary of the task objective and key findings to prevent context drift).
 
-    **Tier 2 — Episodic memory (external [[Vector Database]])**: A queryable store of past step records, indexed by semantic embedding. When the agent needs to recall a prior observation (the output of a tool call made 30 steps ago, a document retrieved earlier in the task), it queries the episodic store via [[Retrieval-Augmented Generation]] and retrieves the most relevant records into the current context. This enables recall of earlier task state at bounded context cost, supporting task horizons that far exceed the context window. Tools: Chroma, Pinecone, Weaviate, Qdrant, and pgvector are the primary [[Vector Database]] backends. Key challenge: relevance of retrieved records degrades as the episodic store grows — retrieval quality must be maintained through index maintenance and retrieval threshold tuning.
+    **Tier 2 — Episodic memory (external [[Vector Database]])**: A queryable store of past step records, indexed by semantic embedding. When the agent needs to recall a prior observation (the output of a tool call made 30 steps ago, a document retrieved earlier in the task), it queries the episodic store via [[Retrieval-Augmented Generation]] and retrieves the most relevant records into the current context. This enables recall of earlier task state at bounded context cost, supporting task horizons that far exceed the context window. Tools: Chroma, Pinecone, Weaviate, Qdrant, and pgvector are the primary [[Vector Database]] backends. Key challenge: relevance of retrieved records degrades as the episodic store grows — retrieval quality must be maintained through [private] maintenance and retrieval threshold tuning.
 
     **Tier 3 — Semantic memory (structured knowledge store)**: A queryable repository of factual and procedural knowledge about the task domain — API documentation, business rules, domain-specific ontologies, user preferences. Unlike episodic memory (which records what the agent has done in the current task), semantic memory stores general knowledge that applies across tasks. Implemented as a combination of retrieval from a [[Foundation Models]]-indexed document corpus and a structured [[Knowledge Graph]] for entity-relationship queries. The "code agent with structured memory" architecture (arXiv:2603.13258, 2026) demonstrates that agents with explicit semantic memory modules outperform context-only agents by 35–45% on long-horizon coding tasks by enabling reliable recall of project conventions, API patterns, and prior decisions.
 

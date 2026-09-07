@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stewart Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,26 +59,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"}
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:surgical-robot", "label": "Surgical Robot"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:robot-singularity", "label": "Robot Singularity"}
+      {
+        "@id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:robot-singularity",
+        "label": "Robot Singularity"
+      }
     ]
   },
   "provenance": {
@@ -93,37 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:stewart-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3059f4e86025e17bd60606cd9289a12d792641b836bb891080cce942adad31d1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Parallel Robot]]",
-      "resolved": "urn:visionflow:owl:class:parallel-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

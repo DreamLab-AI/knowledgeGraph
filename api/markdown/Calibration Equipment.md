@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Calibration Equipment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -94,32 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:calibration-equipment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:993fcbbe81d9f3cb96265e5ad14fa60e2446fba53e1ec147642f245377c0423a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Physical instruments and reference artefacts used to measure, adjust, and verify the accuracy of sensors, displays, and tracking systems in spatial computing deployments. Calibration equipment includes colour reference targets, IMU calibration boards, structured-light patterns, and photometric probes, all of which underpin the geometric and radiometric correctness of XR pipelines.

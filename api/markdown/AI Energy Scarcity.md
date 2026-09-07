@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ai energy scarcity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,7 +58,6 @@ public: true
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Systemic infrastructure bottleneck where exponential growth in AI training and inference compute demand outstrips available energy supply and grid capacity. Drives hyperscaler investment in dedicated power generation including small modular reactors (SMRs) and nuclear recommissioning, while creating geopolitical competition for compute sovereignty.

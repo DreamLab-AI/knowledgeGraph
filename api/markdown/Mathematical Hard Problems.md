@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mathematical Hard Problems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mathematical-hard-problems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:edaec4264e03172e45dacdf09756c42df6d97b08ff23fd811f571c56847fe595"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Secure Digital Systems]]",
-      "resolved": "urn:visionflow:linked:secure-digital-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptographic Security]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Computationally intractable mathematical problems that form the security foundation of cryptographic systems, including integer factorisation, discrete logarithm, lattice problems, and other NP-hard challenges used in blockchain and digital security.

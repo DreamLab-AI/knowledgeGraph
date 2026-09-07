@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-001-telepresence
----
-
-# TELE 001 telepresence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,16 +50,34 @@ aliases:
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:audio-system", "label": "Audio System"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+      {
+        "@id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
     ]
   },
   "quality": 0.35,
@@ -77,32 +88,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-001-telepresence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ac4de16dfe47f483e4601f7bdcee0a713d8ea897209045a9c8342af6d7d57d42"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - TELE 001 Telepresence is a foundational concept within the telecollaboration domain defining the sense of physical presence transmitted across distance through audio-visual, haptic, and immersive communication technologies, underpinning higher-order telecollaboration and virtual meeting systems.

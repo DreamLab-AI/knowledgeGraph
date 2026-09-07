@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Industrial Manipulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Industrial Manipulation refers to the robotic discipline and practice of using articulated robot arms and end-effectors to physically interact with objects in manufacturing, assembly, logistics, and processing environments, performing tasks such as pick-and-place, assembly, welding, painting, and material handling at production scale with repeatability and precision exceeding human capability. It encompasses the full kinematic and dynamic modelling of robot mechanisms, trajectory planning, force and torque control, and the integration of sensing for adaptive behaviour in structured industrial settings. Industrial manipulation robots are among the most economically significant deployed robotics systems, forming the backbone of automotive, electronics, and consumer goods production worldwide.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:manipulation", "label": "Manipulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"}
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      }
     ]
   },
   "quality": 0.8

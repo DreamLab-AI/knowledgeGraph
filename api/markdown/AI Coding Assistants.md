@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Coding Assistants
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-coding-assistants",
   "title": "AI Coding Assistants",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Grok Build", "xAI"],
+  "vc:outboundWikilinks": [
+    "Grok Build",
+    "xAI"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-coding-agents", "label": "AI Coding Agents"}, {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-coding-agents",
+        "label": "AI Coding Agents"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

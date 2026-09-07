@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Benchmark Dataset
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,49 +8,178 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:dataset", "vc:label": "Dataset"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:benchmarking", "vc:label": "Benchmarking"},
-    {"@id": "urn:visionflow:linked:ground-truth-labels", "vc:label": "Ground Truth Labels"},
-    {"@id": "urn:visionflow:linked:reproducibility", "vc:label": "Reproducibility"},
-    {"@id": "urn:visionflow:linked:data-annotation", "vc:label": "Data Annotation"},
-    {"@id": "urn:visionflow:linked:data-curation", "vc:label": "Data Curation"},
-    {"@id": "urn:visionflow:linked:leaderboard", "vc:label": "Leaderboard"},
-    {"@id": "urn:visionflow:linked:evaluation-metric", "vc:label": "Evaluation Metric"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:benchmark-evaluation", "vc:label": "Benchmark Evaluation"},
-    {"@id": "urn:visionflow:linked:evaluation-harness", "vc:label": "Evaluation Harness"},
-    {"@id": "urn:visionflow:linked:performance-benchmarks", "vc:label": "Performance Benchmarks"},
-    {"@id": "urn:visionflow:linked:image-classification", "vc:label": "Image Classification"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:data-quality", "vc:label": "Data Quality"},
-    {"@id": "urn:visionflow:linked:ai-benchmark-epistemological-critique", "vc:label": "AI Benchmark Epistemological Critique"},
-    {"@id": "urn:visionflow:linked:benchmark-standard", "vc:label": "Benchmark Standard"},
-    {"@id": "urn:visionflow:linked:labelled-dataset", "vc:label": "Labelled Dataset"},
-    {"@id": "urn:visionflow:linked:cross-validation", "vc:label": "Cross-Validation"},
-    {"@id": "urn:visionflow:linked:overfitting", "vc:label": "Overfitting"},
-    {"@id": "urn:visionflow:linked:bias", "vc:label": "Bias"},
-    {"@id": "urn:visionflow:linked:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:model-evaluation-results", "vc:label": "Model Evaluation Results"},
-    {"@id": "urn:visionflow:linked:frontier-model-evaluation", "vc:label": "Frontier Model Evaluation"},
-    {"@id": "urn:visionflow:linked:capability-evaluation", "vc:label": "Capability Evaluation"},
-    {"@id": "urn:visionflow:linked:human-evaluation", "vc:label": "Human Evaluation"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:mlcommons", "vc:label": "MLCommons"},
-    {"@id": "urn:visionflow:linked:object-detection", "vc:label": "Object Detection"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:question-answering", "vc:label": "Question Answering"},
-    {"@id": "urn:visionflow:linked:beir-benchmark", "vc:label": "BEIR Benchmark"},
-    {"@id": "urn:visionflow:linked:coco-dataset", "vc:label": "COCO Dataset"},
-    {"@id": "urn:visionflow:linked:large-scale-datasets", "vc:label": "Large-Scale Datasets"},
-    {"@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance"}
+    {
+      "@id": "urn:visionflow:linked:dataset",
+      "vc:label": "Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmarking",
+      "vc:label": "Benchmarking"
+    },
+    {
+      "@id": "urn:visionflow:linked:ground-truth-labels",
+      "vc:label": "Ground Truth Labels"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducibility",
+      "vc:label": "Reproducibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-annotation",
+      "vc:label": "Data Annotation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-curation",
+      "vc:label": "Data Curation"
+    },
+    {
+      "@id": "urn:visionflow:linked:leaderboard",
+      "vc:label": "Leaderboard"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-metric",
+      "vc:label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-evaluation",
+      "vc:label": "Benchmark Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-harness",
+      "vc:label": "Evaluation Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance-benchmarks",
+      "vc:label": "Performance Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-classification",
+      "vc:label": "Image Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-quality",
+      "vc:label": "Data Quality"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-benchmark-epistemological-critique",
+      "vc:label": "AI Benchmark Epistemological Critique"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-standard",
+      "vc:label": "Benchmark Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:labelled-dataset",
+      "vc:label": "Labelled Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-validation",
+      "vc:label": "Cross-Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:overfitting",
+      "vc:label": "Overfitting"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias",
+      "vc:label": "Bias"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation-results",
+      "vc:label": "Model Evaluation Results"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-model-evaluation",
+      "vc:label": "Frontier Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:capability-evaluation",
+      "vc:label": "Capability Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-evaluation",
+      "vc:label": "Human Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlcommons",
+      "vc:label": "MLCommons"
+    },
+    {
+      "@id": "urn:visionflow:linked:object-detection",
+      "vc:label": "Object Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:linked:beir-benchmark",
+      "vc:label": "BEIR Benchmark"
+    },
+    {
+      "@id": "urn:visionflow:linked:coco-dataset",
+      "vc:label": "COCO Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-scale-datasets",
+      "vc:label": "Large-Scale Datasets"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    }
   ]
 }
 ```
@@ -278,7 +401,7 @@ public: true
       ObjectSomeValuesFrom(ai:isGovernedBy ai:MLCommons))
     ```
   - ## About
-    - The benchmark dataset is one of the most consequential artefacts in the history of empirical [[Machine Learning]]. Before standardised benchmark datasets existed, comparing algorithms across laboratories was nearly impossible: each group used different data, different preprocessing, and different evaluation procedures, rendering results from disparate papers incommensurable. The shift to shared datasets — beginning with MNIST (LeCun et al., 1998), accelerating through the UCI Machine Learning Repository, and reaching its modern form with ImageNet — was what transformed machine learning from a collection of loosely connected techniques into a cumulative empirical science where progress could be measured, verified, and built upon in a principled way. The mechanism is deceptively simple yet remarkably powerful: by agreeing to evaluate on exactly the same held-out test data, researchers in different countries, at different institutions, using entirely different computational resources and programming frameworks, can nonetheless compare their results meaningfully. This shared frame of reference converts anecdote into evidence and competition into science.
+    - The benchmark dataset is one of the most consequential artefacts in the history of empirical [[Machine Learning]]. Before standardised benchmark datasets existed, comparing algorithms across laboratories was nearly impossible: each group used different data, different preprocessing, and different evaluation procedures, rendering results from disparate papers incommensurable. The shift to shared datasets — beginning with MNIST (LeCun et al., 1998), accelerating through the UCI Machine Learning Repository, and reaching its modern form with ImageNet — was what transformed machine learning from a collection of loosely connected techniques into a cumulative empirical science where progress [private] be measured, verified, and built upon in a principled way. The mechanism is deceptively simple yet remarkably powerful: by agreeing to evaluate on exactly the same held-out test data, researchers in different countries, at different institutions, using entirely different computational resources and programming frameworks, can nonetheless compare their results meaningfully. This shared frame of reference converts anecdote into evidence and competition into science.
 
     - A benchmark dataset differs from an ordinary [[Dataset]] along several critical dimensions. First, it enforces a fixed split discipline: the training portion is used for model optimisation, the validation split for hyperparameter tuning, and the test split is held entirely apart to provide an unbiased estimate of generalisation performance. When the test split is genuinely held out from the community (as in competition-style benchmarks like the Kaggle Hidden Test or LSVRC), benchmark integrity is maintained at its highest level. Second, a benchmark dataset bundles a task definition with the data: ImageNet specifies top-1 and top-5 classification accuracy on 1,000 synsets; SQuAD specifies Exact Match and F1 on extractive span prediction; GLUE aggregates nine tasks into a single score. Third, well-maintained benchmarks track results over time through a [[Leaderboard]], providing a cumulative community record of progress that makes the history of model development visible. Fourth, the best-designed benchmarks are accompanied by documentation — datasheets, BenchmarkCards, or data statements — that disclose the collection methodology, the demographics of annotators, known biases, and the licensing terms under which the data may be used. This documentation layer is increasingly treated as a non-negotiable component of responsible benchmark dataset design.
 
@@ -377,7 +500,7 @@ public: true
   - ## Benchmark Dataset Risks and Failure Modes
     - Creating and using benchmark datasets involves a range of well-documented risks that practitioners must actively manage:
     - **Split leakage and data leakage**: The most fundamental risk is contamination of the test set with training data. This can occur through accidental overlap (training and test sets drawn from the same source without deduplication), temporal leakage (a temporal split applied incorrectly, leaving future data in training), label leakage (the feature engineering process uses information only available after the prediction target is known), and benchmark contamination (the model's pre-training data includes the benchmark's test examples from prior releases). Deduplication, temporal validation, and provenance tracking are the primary mitigations.
-    - **Annotation artefacts and spurious correlations**: When crowdworkers or experts create annotations under guidelines that allow or encourage certain linguistic patterns, the resulting benchmark contains systematic biases that models can exploit without developing the targeted capability. In SQuAD, question authors looked at the correct answer span while writing questions, producing vocabulary overlap between questions and answer-containing sentences that models could exploit without genuine comprehension. In MultiNLI, hypothesis sentences written to be entailments systematically contain words like "definitely" while contradictions contain words like "never" — models trained only on hypotheses (ignoring premises) could achieve above-chance accuracy by exploiting these annotation artefacts.
+    - **Annotation artefacts and spurious correlations**: When crowdworkers or experts create annotations under guidelines that allow or encourage certain linguistic patterns, the resulting benchmark contains systematic biases that models can exploit without developing the targeted capability. In SQuAD, question authors looked at the correct answer span while writing questions, producing vocabulary overlap between questions and answer-containing sentences that models [private] exploit without genuine comprehension. In MultiNLI, hypothesis sentences written to be entailments systematically contain words like "definitely" while contradictions contain words like "never" — models trained only on hypotheses (ignoring premises) [private] achieve above-chance accuracy by exploiting these annotation artefacts.
     - **Coverage bias and under-representation**: A benchmark dataset necessarily covers a subset of the target capability space; the selection of what to cover and what to exclude is a design choice with significant consequences. Benchmarks that evaluate only standard American English NLP tasks underestimate performance disparities across languages; benchmarks that cover only high-school-level science underestimate model weaknesses at graduate and professional levels; benchmarks that focus only on knowledge retrieval miss reasoning, planning, and tool-use capabilities. Systematic coverage analysis (Ribeiro et al., 2020, "CheckList") is essential for identifying what a benchmark measures and what it misses.
     - **[[Overfitting]] to benchmark-specific features**: Once a benchmark is widely used, researchers identify its specific features — the distribution of answer lengths, the linguistic patterns correlated with correct vs. incorrect answers, the formatting quirks of the annotation process — and engineer models that exploit these features to achieve high scores without generalising. This "benchmark overfitting" or "dataset bias exploitation" is a persistent failure mode that requires benchmark designers to explicitly test whether proposed improvements still hold when benchmark-specific features are controlled for.
     - **Metric-capability misalignment**: The [[Evaluation Metric]] adopted for a benchmark may not capture the capability that motivates the benchmark's design. BLEU was adopted for machine translation because it is cheap to compute, but it correlates imperfectly with human translation quality judgements, particularly for non-English target languages and document-level translation. Exact Match for reading comprehension penalises paraphrastic correct answers. Pass@1 for code generation does not distinguish safe from unsafe code. These misalignments mean that optimising the benchmark metric does not necessarily improve the real-world capability the benchmark is supposed to measure.
@@ -420,7 +543,7 @@ public: true
     - **Annotation**: Amazon Mechanical Turk crowdworkers with Wikipedia article access
     - **Impact**: Unified the reading comprehension research agenda; first benchmark to approach human parity (F1 ~91%) and then surpass it
     - **Key methodological contribution**: SQuAD 2.0's unanswerable questions forced models to develop abstention capability — a methodological template used by many successor benchmarks
-    - **Limitation**: Crowd-workers could see the answer while writing questions, creating vocabulary overlap artefacts
+    - **Limitation**: Crowd-workers [private] see the answer while writing questions, creating vocabulary overlap artefacts
 
   - ### GPQA Diamond
     - **Released**: Rein et al., 2023; arXiv:2311.12022

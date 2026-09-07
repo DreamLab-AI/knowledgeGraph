@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hybrid Consensus
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,26 +59,62 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:block-time", "label": "Block Time"}
+      {
+        "@id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      }
     ]
   },
   "provenance": {
@@ -93,37 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hybrid-consensus:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ba7c84a4e6ce3eb766fbeb8ba87c345c5720eec84acdbbeca00549940bd09ca9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A consensus mechanism that combines two or more distinct consensus approaches—typically pairing a proof-based method such as Proof of Work or Proof of Stake with a Byzantine Fault Tolerant finality layer—to balance security, throughput, and finality properties. Hybrid designs aim to capture the best characteristics of each constituent mechanism while mitigating their individual weaknesses.

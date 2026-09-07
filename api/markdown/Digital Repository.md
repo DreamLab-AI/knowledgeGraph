@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Repository
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -125,72 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-repository:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bb44e53a0e5d16baee743b5ebed43a3dffb7b2cc2d67864870e7239a02e5a24f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Access Controls]]",
-      "resolved": "urn:visionflow:linked:access-controls",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Content Access]]",
-      "resolved": "urn:visionflow:linked:content-access",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Management]]",
-      "resolved": "urn:visionflow:owl:class:data-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Preservation]]",
-      "resolved": "urn:visionflow:owl:class:digital-preservation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metadata Management]]",
-      "resolved": "urn:visionflow:owl:class:metadata-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metadata Standards]]",
-      "resolved": "urn:visionflow:owl:class:metadata-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Storage Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:storage-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardised ingest, storage, and retrieval processes supporting metaverse archives and institutional collections.

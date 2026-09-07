@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Zero-Shot Prompting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:zero-shot-prompting:bc07a464d91b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4605e853112d666a36758bd65427ce201a44961058b2bb002f0c5d77de987fb2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Language Model]]",
-      "resolved": "urn:visionflow:linked:language-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Prompt Engineering]]",
-      "resolved": "urn:visionflow:linked:prompt-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[In-Context Learning]]",
-      "resolved": "urn:visionflow:linked:in-context-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Few-Shot Learning]]",
-      "resolved": "urn:visionflow:linked:few-shot-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:linked:large-language-models",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Zero-shot prompting is the technique of instructing a language model to perform a task using only a description, without providing worked examples. It relies on knowledge the model acquired during pretraining.

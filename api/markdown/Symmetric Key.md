@@ -1,58 +1,125 @@
----
-public: true
----
-
-# Symmetric Key
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:symmetric-key", "@type":"Page", "title":"Symmetric Key", "vc:slug":"symmetric-key", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:symmetric-key",
-  "@type":"Class",
-  "label":"Symmetric Key",
-  "definition":"A symmetric key is a single shared secret used by both the sender and receiver to encrypt and decrypt data in symmetric-key cryptography. Because the same key performs both operations, it must be kept secret and distributed securely between the communicating parties. Symmetric-key algorithms such as AES are fast and efficient for bulk data encryption, which makes them the workhorse of confidentiality in practice, often combined with asymmetric techniques that solve the problem of securely exchanging the shared key.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:cryptographic-key","label":"Cryptographic Key"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:block-cipher","label":"Block Cipher"},
-      {"@id":"urn:ngm:class:stream-cipher","label":"Stream Cipher"}
-    ],
-    "partOf":[{"@id":"urn:ngm:class:symmetric-encryption","label":"Symmetric Encryption"}],
-    "requires":[
-      {"@id":"urn:ngm:class:key-management","label":"Key Management"},
-      {"@id":"urn:ngm:class:key-exchange","label":"Key Exchange"}
-    ],
-    "implements":[
-      {"@id":"urn:ngm:class:aes","label":"AES"},
-      {"@id":"urn:ngm:class:cipher","label":"Cipher"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:encryption","label":"Encryption"},
-      {"@id":"urn:ngm:class:symmetric-encryption","label":"Symmetric Encryption"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:tls","label":"TLS"},
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"}
-    ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:public-key","label":"Public Key"},
-      {"@id":"urn:ngm:class:asymmetric-encryption","label":"Asymmetric Encryption"}
-    ],
-    "dependsOn":[{"@id":"urn:ngm:class:key-exchange","label":"Key Exchange"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:hash-function","label":"Hash Function"},
-      {"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:symmetric-key",
+  "@type": "Page",
+  "title": "Symmetric Key",
+  "vc:slug": "symmetric-key",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:symmetric-key",
+  "@type": "Class",
+  "label": "Symmetric Key",
+  "definition": "A symmetric key is a single shared secret used by both the sender and receiver to encrypt and decrypt data in symmetric-key cryptography. Because the same key performs both operations, it must be kept secret and distributed securely between the communicating parties. Symmetric-key algorithms such as AES are fast and efficient for bulk data encryption, which makes them the workhorse of confidentiality in practice, often combined with asymmetric techniques that solve the problem of securely exchanging the shared key.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-key",
+      "label": "Cryptographic Key"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:block-cipher",
+        "label": "Block Cipher"
+      },
+      {
+        "@id": "urn:ngm:class:stream-cipher",
+        "label": "Stream Cipher"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:aes",
+        "label": "AES"
+      },
+      {
+        "@id": "urn:ngm:class:cipher",
+        "label": "Cipher"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - A symmetric key is the single shared secret that both encrypts and decrypts data in [[Symmetric Encryption]]. As a kind of [[Cryptographic Key]] it powers fast bulk [[Encryption]] using algorithms like [[AES]], and it contrasts sharply with the [[Public Key]] approach where two different keys are used.
 - ### Overview

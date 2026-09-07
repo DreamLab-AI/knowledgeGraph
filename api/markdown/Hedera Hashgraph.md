@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hedera Hashgraph
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hedera-hashgraph:889709f06d06",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e76ae3a37b338306d2b993ec050cd4f073ae22075511f7cc0724afb2ab99ebdc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Consensus Algorithm]]",
-      "resolved": "urn:visionflow:linked:consensus-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Byzantine Fault Tolerance]]",
-      "resolved": "urn:visionflow:linked:byzantine-fault-tolerance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger Technology]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger-technology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hedera is a public distributed ledger that uses the hashgraph consensus algorithm based on gossip about gossip and virtual voting. It is governed by a council of organisations and uses the HBAR token.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Render Target
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,26 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:render-target:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:404967b77b4dfdbe9db75a289128e4f68b185af8e22c3583b9823b4f8e21db27"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A memory buffer or texture surface to which a GPU writes the output of a rendering pass, including the default framebuffer displayed on screen and off-screen targets used for post-processing effects, shadow maps, reflections, and multi-pass rendering in real-time graphics pipelines.

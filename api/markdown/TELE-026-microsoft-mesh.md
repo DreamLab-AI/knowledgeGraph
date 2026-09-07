@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-026-microsoft-mesh
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,52 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-026-microsoft-mesh:053ee505596f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6952023c097f4b2a27a74b0b3e62744d740822e86480e2bfbab94d326400fd58"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar System]]",
-      "resolved": "urn:visionflow:linked:avatar-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Anchors]]",
-      "resolved": "urn:visionflow:linked:spatial-anchors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Remote Collaboration]]",
-      "resolved": "urn:visionflow:linked:remote-collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mixed Reality]]",
-      "resolved": "urn:visionflow:linked:mixed-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:linked:telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Microsoft Mesh is a platform for shared mixed reality experiences that lets people in different physical locations join a common virtual space using avatars or holographic representations.

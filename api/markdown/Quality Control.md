@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quality Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Quality control is the operational process of inspecting, testing, and verifying products or outputs against defined specifications to detect and remove defects before delivery. In manufacturing it spans dimensional inspection, surface-defect detection, and statistical process control, increasingly automated through machine vision. It reduces scrap, ensures conformance, and provides feedback for process improvement.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
     ]
   },
   "quality": 0.72

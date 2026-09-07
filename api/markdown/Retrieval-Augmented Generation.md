@@ -1,12 +1,3 @@
----
-public: true
-aliases:
-  - Retrieval Augmented Generation
-  - RAG
-  - Retrieval-Augmented LLM
----
-
-# retrieval-augmented generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -163,7 +154,7 @@ aliases:
   - **Why it matters.** [[Large Language Models]] memorise facts in their weights during [[Model Pre-training]], but this knowledge becomes stale and cannot easily be corrected. RAG allows practitioners to update the knowledge corpus independently of the model—swapping in new document collections, removing outdated content, or restricting retrieval to proprietary data—making it the preferred strategy for enterprise deployments where accuracy, freshness, and source traceability are non-negotiable.
   - **How it works.** The canonical RAG pipeline has three phases:
     - **Indexing.** Documents are split into overlapping chunks via [[Document Chunking]], each chunk is converted into a dense vector by an [[Embedding Model]] (e.g., a bi-encoder such as sentence-transformers), and vectors are stored in a [[Vector Database]] supporting [[Approximate Nearest Neighbour Search]].
-    - **Retrieval.** The user query is embedded with the same encoder, and the top-k nearest-neighbour chunks are retrieved from the index—optionally re-ranked by a cross-encoder for precision.
+    - **Retrieval.** The user query is embedded with the same encoder, and the top-k nearest-neighbour chunks are retrieved from the [private]—optionally re-ranked by a cross-encoder for precision.
     - **Generation.** Retrieved chunks are prepended as grounding context to the prompt, and the [[Large Language Models|large language model]] generates a response conditioned on that augmented context.
 
 - ### Key Components

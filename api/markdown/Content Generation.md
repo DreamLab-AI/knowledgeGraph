@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,47 +7,170 @@ public: true
   "title": "Content Generation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:owl:class:ai-machine-learning", "vc:label": "AI Machine Learning"},
-    {"@id": "urn:visionflow:owl:class:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:owl:class:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:owl:class:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:owl:class:natural-language-generation", "vc:label": "Natural Language Generation"},
-    {"@id": "urn:visionflow:owl:class:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:owl:class:generative-adversarial-network", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:owl:class:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:owl:class:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:visionflow:owl:class:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:owl:class:text-to-image", "vc:label": "Text-to-Image"},
-    {"@id": "urn:visionflow:owl:class:text-to-video", "vc:label": "Text-to-Video"},
-    {"@id": "urn:visionflow:owl:class:code-synthesis", "vc:label": "Code Synthesis"},
-    {"@id": "urn:visionflow:owl:class:synthetic-media", "vc:label": "Synthetic Media"},
-    {"@id": "urn:visionflow:owl:class:content-moderation", "vc:label": "Content Moderation"},
-    {"@id": "urn:visionflow:owl:class:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:owl:class:intellectual-property", "vc:label": "Intellectual Property"},
-    {"@id": "urn:visionflow:owl:class:hallucination", "vc:label": "Hallucination"},
-    {"@id": "urn:visionflow:owl:class:grounding", "vc:label": "Grounding"},
-    {"@id": "urn:visionflow:owl:class:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:owl:class:neural-networks", "vc:label": "Neural Networks"},
-    {"@id": "urn:visionflow:owl:class:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:owl:class:embeddings", "vc:label": "Embeddings"},
-    {"@id": "urn:visionflow:owl:class:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:owl:class:creative-ai", "vc:label": "Creative AI"},
-    {"@id": "urn:visionflow:owl:class:audio-generation", "vc:label": "Audio Generation"},
-    {"@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:owl:class:responsible-ai", "vc:label": "Responsible AI"},
-    {"@id": "urn:visionflow:owl:class:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:owl:class:watermarking", "vc:label": "Watermarking"},
-    {"@id": "urn:visionflow:owl:class:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:owl:class:alignment", "vc:label": "Alignment"},
-    {"@id": "urn:visionflow:owl:class:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:owl:class:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:owl:class:latent-diffusion", "vc:label": "Latent Diffusion"},
-    {"@id": "urn:visionflow:owl:class:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:owl:class:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:owl:class:personalisation", "vc:label": "Personalisation"}
+    {
+      "@id": "urn:visionflow:owl:class:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-machine-learning",
+      "vc:label": "AI Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-generation",
+      "vc:label": "Natural Language Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:text-to-video",
+      "vc:label": "Text-to-Video"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:code-synthesis",
+      "vc:label": "Code Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:synthetic-media",
+      "vc:label": "Synthetic Media"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-moderation",
+      "vc:label": "Content Moderation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intellectual-property",
+      "vc:label": "Intellectual Property"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hallucination",
+      "vc:label": "Hallucination"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:grounding",
+      "vc:label": "Grounding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-networks",
+      "vc:label": "Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:embeddings",
+      "vc:label": "Embeddings"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:creative-ai",
+      "vc:label": "Creative AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:audio-generation",
+      "vc:label": "Audio Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:watermarking",
+      "vc:label": "Watermarking"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:alignment",
+      "vc:label": "Alignment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:latent-diffusion",
+      "vc:label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:personalisation",
+      "vc:label": "Personalisation"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -68,101 +186,110 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-    {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:natural-language-generation", "label": "Natural Language Generation"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:text-to-video", "label": "Text-to-Video"},
-      {"@id": "urn:ngm:class:code-synthesis", "label": "Code Synthesis"},
-      {"@id": "urn:ngm:class:audio-generation", "label": "Audio Generation"}
+      {
+        "@id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-video",
+        "label": "Text-to-Video"
+      },
+      {
+        "@id": "urn:ngm:class:code-synthesis",
+        "label": "Code Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"}
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:personalisation", "label": "Personalisation"}
+      {
+        "@id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:discriminative-model", "label": "Discriminative Model"},
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+      {
+        "@id": "urn:ngm:class:discriminative-model",
+        "label": "Discriminative Model"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:content-generation:a3f7b1c29d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:content-generation"},
-  "vc:resolutions": [
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:owl:class:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[AI Machine Learning]]", "resolved": "urn:visionflow:owl:class:ai-machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:owl:class:large-language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:owl:class:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:owl:class:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:owl:class:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Generation]]", "resolved": "urn:visionflow:owl:class:natural-language-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:owl:class:multimodal-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Adversarial Network]]", "resolved": "urn:visionflow:owl:class:generative-adversarial-network", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"},
-    {"raw": "[[Prompt Engineering]]", "resolved": "urn:visionflow:owl:class:prompt-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Fine-Tuning]]", "resolved": "urn:visionflow:owl:class:fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:owl:class:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Image]]", "resolved": "urn:visionflow:owl:class:text-to-image", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Video]]", "resolved": "urn:visionflow:owl:class:text-to-video", "kind": "ResolvedLink"},
-    {"raw": "[[Code Synthesis]]", "resolved": "urn:visionflow:owl:class:code-synthesis", "kind": "ResolvedLink"},
-    {"raw": "[[Synthetic Media]]", "resolved": "urn:visionflow:owl:class:synthetic-media", "kind": "ResolvedLink"},
-    {"raw": "[[Content Moderation]]", "resolved": "urn:visionflow:owl:class:content-moderation", "kind": "ResolvedLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:owl:class:ai-ethics", "kind": "ResolvedLink"},
-    {"raw": "[[Intellectual Property]]", "resolved": "urn:visionflow:owl:class:intellectual-property", "kind": "ResolvedLink"},
-    {"raw": "[[Hallucination]]", "resolved": "urn:visionflow:owl:class:hallucination", "kind": "ResolvedLink"},
-    {"raw": "[[Grounding]]", "resolved": "urn:visionflow:owl:class:grounding", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:owl:class:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Networks]]", "resolved": "urn:visionflow:owl:class:neural-networks", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:owl:class:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Embeddings]]", "resolved": "urn:visionflow:owl:class:embeddings", "kind": "ResolvedLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:owl:class:gpu-compute", "kind": "ResolvedLink"},
-    {"raw": "[[Creative AI]]", "resolved": "urn:visionflow:owl:class:creative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Audio Generation]]", "resolved": "urn:visionflow:owl:class:audio-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:owl:class:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Responsible AI]]", "resolved": "urn:visionflow:owl:class:responsible-ai", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:owl:class:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[Watermarking]]", "resolved": "urn:visionflow:owl:class:watermarking", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:owl:class:agentic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Alignment]]", "resolved": "urn:visionflow:owl:class:alignment", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:owl:class:knowledge-graph", "kind": "ResolvedLink"},
-    {"raw": "[[Model Evaluation]]", "resolved": "urn:visionflow:owl:class:model-evaluation", "kind": "ResolvedLink"},
-    {"raw": "[[Latent Diffusion]]", "resolved": "urn:visionflow:owl:class:latent-diffusion", "kind": "ResolvedLink"},
-    {"raw": "[[Variational Autoencoder]]", "resolved": "urn:visionflow:owl:class:variational-autoencoder", "kind": "ResolvedLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:owl:class:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[Personalisation]]", "resolved": "urn:visionflow:owl:class:personalisation", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -342,7 +469,7 @@ public: true
     - GPT-3 (Brown et al., NeurIPS 2020) demonstrated few-shot in-context learning at 175B parameter scale: the model performs tasks it was not explicitly trained for by conditioning on a handful of input-output examples in its context window, establishing in-context learning as an emergent capability of sufficiently large autoregressive LLMs. Scaling laws (Kaplan et al., 2020; Hoffmann et al., 2022 Chinchilla) provided theoretical grounding for resource allocation: training loss follows a power law in both model size N and training tokens D, and the Chinchilla result established that optimal compute allocation requires D ≈ 20N training tokens — a finding that prompted LLaMA 2/3, Mistral, and Gemma to emphasise smaller, well-trained models over parameter maximalism.
     - Ho et al.'s Denoising Diffusion Probabilistic Models (NeurIPS 2020) and Song et al.'s score-based generative modelling via stochastic differential equations (ICLR 2021) formalised the diffusion framework, providing rigorous probabilistic guarantees absent from GAN training. DDPM's denoising objective L_simple = E[||ε - ε_θ(x_t, t)||²] is a tractable surrogate for the variational lower bound, enabling stable training and mode-covering generation quality that surpassed GAN-based methods (Dhariwal and Nichol, 2021). Rombach et al.'s Latent Diffusion Models (CVPR 2022) made high-resolution image synthesis tractable by operating the diffusion process in the compressed latent space of a [[Variational Autoencoder]], reducing compute requirements by an order of magnitude while preserving perceptual quality — directly enabling Stable Diffusion's open release and the democratisation of image generation. Peebles and Xie's Diffusion Transformer (ICCV 2023) replaced the U-Net denoiser with a Vision Transformer backbone, achieving better scaling behaviour and enabling the video generation models (FLUX, Kling, Veo, Stable Diffusion 3.5, PixArt-Sigma) that define the 2025–2026 state of the art.
     - Ouyang et al.'s InstructGPT (NeurIPS 2022) established [[Reinforcement Learning from Human Feedback]] as the dominant post-training alignment technique, with the reward-model-plus-PPO pipeline becoming the standard post-training stack for all major LLM deployments. Rafailov et al.'s Direct Preference Optimisation (NeurIPS 2023) provided a simpler, reward-model-free alternative: DPO directly optimises the LLM policy on human preference pairs (preferred y_w vs dispreferred y_l response to prompt x) without requiring a separate reward model or PPO optimisation loop, reducing training complexity and improving stability. DPO has been widely adopted for instruction-tuned fine-tuning across open-source (LLaMA, Mistral, Gemma) and proprietary (Claude, Gemini) model families. Bai et al.'s Constitutional AI (2022) embedded explicit ethical principles in the generation policy via AI feedback — the model critiques and revises its own outputs against a constitution of principles — enabling safety without requiring extensive human labelling for every harmful scenario.
-    - Lewis et al.'s Retrieval-Augmented Generation (NeurIPS 2020) formalised [[Retrieval-Augmented Generation]] as a factual-grounding mechanism, establishing the retriever-generator split that underpins all modern knowledge-intensive generation systems. The RAG formulation marginalises over retrieved documents: p(y|x) = Σ_z p(y|x,z) p(z|x), where z are retrieved passages and p(z|x) is the retrieval distribution over a dense index; in practice, the top-k passages are used as context. Microsoft's GraphRAG (Edge et al., 2024) extended vanilla RAG with a [[Knowledge Graph]] extraction layer, enabling graph-traversal augmented retrieval for theme-level multi-document queries — achieving 3.4× precision improvements over vanilla RAG on complex reasoning benchmarks.
+    - Lewis et al.'s Retrieval-Augmented Generation (NeurIPS 2020) formalised [[Retrieval-Augmented Generation]] as a factual-grounding mechanism, establishing the retriever-generator split that underpins all modern knowledge-intensive generation systems. The RAG formulation marginalises over retrieved documents: p(y|x) = Σ_z p(y|x,z) p(z|x), where z are retrieved passages and p(z|x) is the retrieval distribution over a dense [private]; in practice, the top-k passages are used as context. Microsoft's GraphRAG (Edge et al., 2024) extended vanilla RAG with a [[Knowledge Graph]] extraction layer, enabling graph-traversal augmented retrieval for theme-level multi-document queries — achieving 3.4× precision improvements over vanilla RAG on complex reasoning benchmarks.
     - Key research groups and institutions:
       - UKRI AI Hub in Generative Models — led by UCL (Prof. David Barber), spanning Imperial College London, Cardiff, Cambridge, Oxford, Manchester, Edinburgh, King's College London, and Surrey, with industry partners IBM, BT, Google DeepMind, and Cisco (established 2024); single-step ultra-fast diffusion breakthrough announced January 2026.
       - Google DeepMind (London) — Gemini series (multimodal), Veo/Veo 2/Veo 3.1 (video), Lyria (music), AlphaFold 3 (protein structure), GNoME (materials), SynthID (watermarking).

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tracking System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "A Tracking System is a hardware and software assembly that continuously determines the position, orientation, and motion of one or more objects or agents within a defined reference frame, using sensing technologies such as optical cameras, inertial measurement units, electromagnetic emitters, ultrasound, GPS, or LiDAR. Tracking systems are foundational components of augmented and virtual reality, robotics, surgical navigation, sports analytics, logistics, and autonomous vehicles, where precise real-time knowledge of spatial state is essential for interaction, control, or safety.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:spatial-tracking-system", "label": "Spatial Tracking System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-tracking-system",
+      "label": "Spatial Tracking System"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:imu", "label": "IMU"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:surgical-navigation", "label": "Surgical Navigation"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-navigation",
+        "label": "Surgical Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
     ]
   },
   "quality": 0.8

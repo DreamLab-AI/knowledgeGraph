@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Instant Payment
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:instant-payment", "@type":"Page", "title":"Instant Payment", "vc:slug":"instant-payment", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:instant-payment",
+  "@type": "Page",
+  "title": "Instant Payment",
+  "vc:slug": "instant-payment",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

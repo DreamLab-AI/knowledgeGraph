@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Secondary Market Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:secondary-market-integration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eaf4dd3955eb290201c0bffd516757231021f5f864beb903009f977dcd47569c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Liquidity]]",
-      "resolved": "urn:visionflow:linked:asset-liquidity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Asset Trading]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset-trading",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technical and business infrastructure connecting primary asset creation with resale marketplaces, enabling liquidity for digital collectibles, virtual real estate, and NFTs through automated royalty distribution and cross-platform trading protocols.

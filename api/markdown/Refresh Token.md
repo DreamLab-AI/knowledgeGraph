@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Refresh Token
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:refresh-token", "@type":"Page", "title":"Refresh Token", "vc:slug":"refresh-token", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:refresh-token",
+  "@type": "Page",
+  "title": "Refresh Token",
+  "vc:slug": "refresh-token",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

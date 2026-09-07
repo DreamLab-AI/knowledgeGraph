@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Jira
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Jira is an issue and project tracking platform developed by Atlassian, widely used for planning, tracking, and releasing software across agile and traditional software development workflows. It provides configurable issue types (epics, stories, tasks, bugs), workflow state machines, sprint planning boards, backlog management, and reporting dashboards that support Scrum, Kanban, and hybrid methodologies. Jira integrates deeply with development toolchains—source control, CI/CD pipelines, monitoring systems—and serves as a central system of record for engineering work status, enabling cross-team coordination and stakeholder visibility at scale. It is available as a cloud SaaS product (Jira Cloud) and a self-hosted server or data centre deployment.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:project-management", "label": "Project Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:project-management",
+      "label": "Project Management"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:software-development", "label": "Software Development"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:cloud-platform", "label": "Cloud Platform"}
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:software-platform", "label": "Software Platform"},
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:software-platform",
+        "label": "Software Platform"
+      },
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      }
     ]
   },
   "quality": 0.8

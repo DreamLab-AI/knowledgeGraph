@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SupervisedLearning
----
-
-# Supervised Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -213,47 +206,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:supervised-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:59ca53da5efbfb4ffbff32f985e6622c03247db3f3f64c230749169bd42cd450"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Classification]]",
-      "resolved": "urn:visionflow:linked:classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regression]]",
-      "resolved": "urn:visionflow:linked:regression",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data]]",
-      "resolved": "urn:visionflow:owl:class:training-data",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input features to target labels, guided by a loss function measuring prediction errors. Key tasks include classification (discrete labels) and regression (continuous values). Common algorithms span linear models, decision trees, support vector machines, neural networks, and ensemble methods. Supervised learning requires curated datasets with ground-truth labels and addresses challenges of overfitting, generalization, and class imbalance.

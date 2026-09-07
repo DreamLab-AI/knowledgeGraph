@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GDPvala Benchmark
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "gdpvala-benchmark",
   "title": "GDPvala Benchmark",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Artificial Analysis", "Claude Opus 4.5", "GPT-5"],
+  "vc:outboundWikilinks": [
+    "Artificial Analysis",
+    "Claude Opus 4.5",
+    "GPT-5"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:claude", "label": "Claude"}, {"@id": "urn:ngm:class:gpt", "label": "GPT"}, {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:claude",
+        "label": "Claude"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

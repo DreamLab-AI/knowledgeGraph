@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Camera Intrinsics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -154,4 +149,3 @@ public: true
   - Camera intrinsics matter across autonomous vehicles (LiDAR-camera fusion requires precise intrinsic calibration of each camera in the array), extended reality headsets (display-camera calibration determines geometric correction for see-through AR), robotic manipulation (grasp point estimation from RGB-D cameras requires metric 3D reconstruction), medical imaging (endoscope calibration for surgical guidance), and satellite remote sensing (geometric correction of pushbroom sensor imagery). Each application domain has its own calibration field practices, accuracy requirements, and repeatability standards.
 
   - In 2024–2025, deep learning approaches to intrinsic calibration are supplementing classical methods. Neural networks trained on large image datasets can estimate approximate focal length and distortion from single images, enabling rapid intrinsic bootstrapping without a physical calibration target. Learning-based undistortion models bypass explicit polynomial parameterisation altogether, operating directly in pixel space. For fish-eye and catadioptric cameras — where the polynomial distortion model breaks down — generalised unified camera models and neural implicit representations are being adopted. Factory calibration with robotic precision fixtures is increasingly combined with online self-calibration to track thermal drift and focus changes during operation.
-

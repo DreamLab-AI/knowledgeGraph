@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Granular Consent Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,47 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:granular-consent-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ef82115f65d5e0801ccc9f35a037b6ff7ec839de1074aa6eb0387a26c7b9af4a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[User Data Autonomy]]",
-      "resolved": "urn:visionflow:linked:user-data-autonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy Framework]]",
-      "resolved": "urn:visionflow:owl:class:privacy-framework",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Privacy management mechanisms enabling users to selectively authorise specific types of data collection and processing within metaverse environments, allowing separate consent decisions for analytics, advertising, cross-device tracking, and data transfers while maintaining GDPR compliance and user autonomy over personal information.

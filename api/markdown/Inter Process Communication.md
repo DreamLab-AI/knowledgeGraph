@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inter Process Communication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

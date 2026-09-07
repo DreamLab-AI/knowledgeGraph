@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Salt
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,23 +75,50 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"}
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ]
   },
   "provenance": {
@@ -106,62 +128,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:salt:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d3333098ba7b9190776e96ad8ee2451c6b0c0fd2079c32cbb20dc5d1d6b6fd3b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicPrimitive]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Salt is a randomly generated value appended or prepended to input data before processing by a cryptographic hash function, ensuring that identical inputs produce distinct hash outputs. Salts defeat precomputed dictionary and rainbow-table attacks on hashed credentials and commitments.
@@ -173,7 +139,7 @@ public: true
 
   The threat model that motivates salt usage is straightforward. If a system stores unsalted password hashes, an attacker who obtains the hash database can compare each hash against a pre-built table of common password hashes (a rainbow table) and recover many passwords in seconds. By prepending a unique, randomly generated salt to each password before hashing, the attacker must compute a separate hash table for every distinct salt value, making precomputation attacks infeasible even for weak passwords.
 
-  In blockchain commitment schemes, a party wishing to commit to a value v without revealing it broadcasts H(v ∥ salt), where H is a collision-resistant hash function and salt is a large random value kept secret. Later, the party reveals both v and salt; any observer can verify the commitment by recomputing the hash. Without the salt, an attacker who knows the space of possible values could hash all candidates and compare against the commitment, breaking the hiding property.
+  In blockchain commitment schemes, a party wishing to commit to a value v without revealing it broadcasts H(v ∥ salt), where H is a collision-resistant hash function and salt is a large random value kept secret. Later, the party reveals both v and salt; any observer can verify the commitment by recomputing the hash. Without the salt, an attacker who knows the space of possible values [private] hash all candidates and compare against the commitment, breaking the hiding property.
 
   Salt requirements vary by context. For password hashing, cryptographic standards such as NIST SP 800-63b recommend at least 32 bits of salt entropy generated by a cryptographically secure pseudorandom number generator, with each credential receiving a fresh, independent salt. For commitment schemes in zero-knowledge proof systems, 128–256 bits of salt are typical to maintain security commensurate with the hash function's output size. For key derivation, PBKDF2 specifies at least 128-bit random salts per the recommendations of RFC 8018.
 

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# 3D Parallelism
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

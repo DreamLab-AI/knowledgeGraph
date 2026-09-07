@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bank Secrecy Act
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -158,4 +153,3 @@ public: true
   - BSA compliance programmes consist of five pillars: a compliance officer, written policies and procedures, ongoing training, independent testing (audit), and customer due diligence. The CDD Rule, added by FinCEN in 2018, added a fifth pillar — beneficial ownership identification — requiring institutions to identify natural persons owning 25% or more of legal entity customers. Technology solutions for BSA compliance include transaction monitoring platforms, name screening against sanctions lists, and AI-driven anomaly detection.
 
   - By 2024–2025, the BSA framework is under significant pressure from the emergence of digital assets. FinCEN has extended BSA obligations to virtual currency exchanges and proposed bringing DeFi platforms within scope. The Corporate Transparency Act (CTA), effective 2024, creates a FinCEN beneficial ownership registry that supplements BSA CDD obligations. Regulatory attention is also focused on AI-driven BSA compliance systems — both their potential to improve detection accuracy and the risk of AI-generated SAR filings that lack meaningful human review.
-

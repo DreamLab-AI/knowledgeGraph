@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mind Map
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A mind map is a diagram that organises information hierarchically around a central concept, with branches radiating to related topics and sub-topics. It is used for brainstorming, note-taking, and knowledge organisation, leveraging spatial and associative structure to aid recall and ideation. Digital mind-mapping tools support collaborative editing and links to external resources.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:diagrams-as-code", "label": "Diagrams as Code"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"}
+      {
+        "@id": "urn:ngm:class:diagrams-as-code",
+        "label": "Diagrams as Code"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      }
     ]
   },
   "quality": 0.72

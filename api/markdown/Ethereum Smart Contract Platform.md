@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - BC-0066-ethereum
-elevatedFrom: "[[Ethereum]]"
----
-
-# Ethereum Smart Contract Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -28,28 +20,72 @@ elevatedFrom: "[[Ethereum]]"
   "definition": "Ethereum is a decentralised, open-source blockchain platform that introduced Turing-complete smart contracts, enabling programmable, self-executing agreements without trusted intermediaries. Launched in 2015 by Vitalik Buterin and co-founders, it underpins the largest ecosystem of decentralised applications (dApps), decentralised finance (DeFi), and NFT markets. Its transition to proof-of-stake consensus via The Merge in September 2022 dramatically reduced its energy footprint while preserving security.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:mi-ca-regulation", "label": "MiCA Regulation"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ]
   },
   "quality": 0.8

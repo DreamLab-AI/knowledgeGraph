@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wearable Device Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,42 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"}
+      {
+        "@id": "urn:ngm:class:wearable-computing-platform",
+        "label": "Wearable Computing Platform"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:system-integration", "label": "System Integration"}
+      {
+        "@id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      }
     ]
   },
   "quality": 0.5,
@@ -85,37 +101,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:wearable-device-integration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2301cc892ec15faea7a23ce84b943f1f039302863c54793ed3fb5649132c987a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Integration]]",
-      "resolved": "urn:visionflow:owl:class:system-integration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The technical processes and protocols for connecting wearable computing devices with metaverse platforms, enterprise systems, and cloud services, enabling seamless data exchange, cross-device synchronization, and coordinated multi-device experiences.

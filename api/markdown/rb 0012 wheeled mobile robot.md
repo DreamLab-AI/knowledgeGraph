@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0012 wheeled mobile robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,18 +56,42 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:differential-drive-robot", "label": "Differential Drive Robot"},
-      {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"},
-      {"@id": "urn:ngm:class:wheeled-mobile-robot", "label": "Wheeled Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:differential-drive-robot",
+        "label": "Differential Drive Robot"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      },
+      {
+        "@id": "urn:ngm:class:wheeled-mobile-robot",
+        "label": "Wheeled Mobile Robot"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:rb-0075-range-finder", "label": "rb 0075 range finder"}
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0075-range-finder",
+        "label": "rb 0075 range finder"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +101,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0012-wheeled-mobile-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1bdd3a954c6aeab7363bd38d4a8cb24b6c13517346a5b4fab1380ce3decfdedd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A **wheeled mobile robot** uses one or more wheels for planar locomotion and is the dominant platform for indoor and logistics autonomy. Differential-drive WMRs steer by varying relative wheel speeds; omnidirectional designs (mecanum or omni wheels) move in any direction without turning. Navigation stacks combine wheel odometry with SLAM (using LiDAR or range finders) and path planners to operate safely under standards such as ISO 3691-4.

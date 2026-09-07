@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hyperparameter
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,32 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hyperparameter:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:935033bece42b6253070d2d0cbe4b7b2ebaac017d24fdeb058735229e5bb0825"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MachineLearningDomain]]",
-      "resolved": "urn:visionflow:linked:machine-learning-domain",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, and number of layers.

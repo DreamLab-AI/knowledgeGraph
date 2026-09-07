@@ -1,58 +1,112 @@
----
-public: true
----
-
-# Keyword Search
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:keyword-search", "@type":"Page", "title":"Keyword Search", "vc:slug":"keyword-search", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:keyword-search",
+  "@type": "Page",
+  "title": "Keyword Search",
+  "vc:slug": "keyword-search",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:keyword-search",
-  "@type":"Class",
-  "label":"Keyword Search",
-  "definition":"Keyword search is an information retrieval approach that matches documents to a query based on the presence and statistics of literal terms, typically using inverted indexes and term-weighting schemes. It ranks results by lexical relevance signals such as term frequency and inverse document frequency rather than semantic meaning. Fast, interpretable, and exact for known vocabulary, it is frequently combined with semantic methods in hybrid retrieval to balance precision and recall.",
-  "domain":"machine-learning",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:information-retrieval","label":"Information Retrieval"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:inverted-index","label":"Inverted Index"},
-      {"@id":"urn:ngm:class:bm25","label":"BM25"},
-      {"@id":"urn:ngm:class:tf-idf","label":"TF-IDF"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:keyword-search",
+  "@type": "Class",
+  "label": "Keyword Search",
+  "definition": "Keyword search is an information retrieval approach that matches documents to a query based on the presence and statistics of literal terms, typically using inverted indexes and term-weighting schemes. It ranks results by lexical relevance signals such as term frequency and inverse document frequency rather than semantic meaning. Fast, interpretable, and exact for known vocabulary, it is frequently combined with semantic methods in hybrid retrieval to balance precision and recall.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "@id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "@id": "urn:ngm:class:tf-idf",
+        "label": "TF-IDF"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:full-text-search","label":"Full-Text Search"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:full-text-search",
+        "label": "Full-Text Search"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:search-engine","label":"Search Engine"},
-      {"@id":"urn:ngm:class:document-retrieval","label":"Document Retrieval"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "@id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:relevance-ranking","label":"Relevance Ranking"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:relevance-ranking",
+        "label": "Relevance Ranking"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:query-processing","label":"Query Processing"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:query-processing",
+        "label": "Query Processing"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:semantic-search","label":"Semantic Search"},
-      {"@id":"urn:ngm:class:vector-search","label":"Vector Search"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:hybrid-search","label":"Hybrid Search"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:hybrid-search",
+        "label": "Hybrid Search"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:full-text-search","label":"Full-Text Search"},
-      {"@id":"urn:ngm:class:search-engine","label":"Search Engine"},
-      {"@id":"urn:ngm:class:relevance-ranking","label":"Relevance Ranking"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:full-text-search",
+        "label": "Full-Text Search"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "@id": "urn:ngm:class:relevance-ranking",
+        "label": "Relevance Ranking"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -63,12 +117,12 @@ public: true
   - It is increasingly paired with [[Semantic Search]] inside [[Hybrid Search]] systems.
 - ### Overview
   - Keyword search treats relevance as a function of which query terms appear in a document and how distinctive those terms are.
-  - An inverted index maps terms to the documents containing them, enabling fast lookup over large corpora.
+  - An inverted [private] maps terms to the documents containing them, enabling fast lookup over large corpora.
   - Ranking functions weight matches by frequency and rarity, favouring documents that contain distinctive query terms prominently.
   - It excels at exact, vocabulary-driven retrieval but struggles with synonyms and paraphrase, motivating hybrid approaches.
 - ### Mechanisms
   - Tokenisation and normalisation: splitting text into terms and folding case, stems, and stopwords.
-  - Inverted index lookup: resolving query terms to candidate documents efficiently.
+  - Inverted [private] lookup: resolving query terms to candidate documents efficiently.
   - Term weighting: scoring with TF-IDF and BM25 to reflect term importance.
   - Boolean and phrase operators: combining terms with logic and proximity constraints.
   - Result ranking: ordering candidates by accumulated relevance scores.

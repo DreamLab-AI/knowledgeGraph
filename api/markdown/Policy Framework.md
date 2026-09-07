@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Policy Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,4 +177,3 @@ public: true
   - Policy frameworks are significant because they shift AI development from self-governance to externally accountable practice. They create market incentives for safety by making compliance commercially necessary, provide injured parties with legal recourse, and establish shared vocabulary that enables international coordination and regulatory equivalence. Without policy frameworks, powerful AI systems may be deployed without adequate risk assessment, explainability requirements, or human oversight — outcomes that are increasingly unacceptable to regulators and the public.
 
   - Between 2024 and 2025, the EU AI Act entered force (August 2024) with its first compliance deadlines activating in February 2025 for prohibited AI practices. The Biden Executive Order on AI (October 2023) and its subsequent implementation actions, followed by updated directives under the Trump administration, reflect continued US federal engagement. China's algorithmic recommendation and generative AI regulations are in active enforcement. Convergence on international standards via ISO/IEC JTC 1/SC 42 is accelerating, with the goal of mutual recognition reducing duplicative compliance burdens for multinational operators.
-

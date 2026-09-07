@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Moderation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,56 +7,193 @@ public: true
   "title": "Content Moderation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:appeal-process", "vc:label": "Appeal Process"},
-    {"@id": "urn:visionflow:linked:automated-filtering", "vc:label": "Automated Filtering"},
-    {"@id": "urn:visionflow:linked:community-guidelines-enforcement", "vc:label": "Community Guidelines Enforcement"},
-    {"@id": "urn:visionflow:linked:content-analysis-tools", "vc:label": "Content Analysis Tools"},
-    {"@id": "urn:visionflow:linked:content-classification-system", "vc:label": "Content Classification System"},
-    {"@id": "urn:visionflow:linked:decision-framework", "vc:label": "Decision Framework"},
-    {"@id": "urn:visionflow:linked:etsi-gr-arf-010", "vc:label": "ETSI GR ARF 010"},
-    {"@id": "urn:visionflow:linked:harmful-content-prevention", "vc:label": "Harmful Content Prevention"},
-    {"@id": "urn:visionflow:linked:human-moderators", "vc:label": "Human Moderators"},
-    {"@id": "urn:visionflow:linked:human-review-workflow", "vc:label": "Human Review Workflow"},
-    {"@id": "urn:visionflow:linked:moderation-policy", "vc:label": "Moderation Policy"},
-    {"@id": "urn:visionflow:linked:platform-governance-system", "vc:label": "Platform Governance System"},
-    {"@id": "urn:visionflow:linked:policy-enforcement-engine", "vc:label": "Policy Enforcement Engine"},
-    {"@id": "urn:visionflow:linked:reporting-system", "vc:label": "Reporting System"},
-    {"@id": "urn:visionflow:linked:reviewer-training-program", "vc:label": "Reviewer Training Program"},
-    {"@id": "urn:visionflow:linked:safe-user-experience", "vc:label": "Safe User Experience"},
-    {"@id": "urn:visionflow:linked:trust-and-safety-infrastructure", "vc:label": "Trust and Safety Infrastructure"},
-    {"@id": "urn:visionflow:owl:class:application-layer", "vc:label": "Application Layer"},
-    {"@id": "urn:visionflow:owl:class:community-standards", "vc:label": "Community Standards"},
-    {"@id": "urn:visionflow:owl:class:machine-learning-models", "vc:label": "Machine Learning Models"},
-    {"@id": "urn:visionflow:owl:class:middleware-layer", "vc:label": "Middleware Layer"},
-    {"@id": "urn:visionflow:owl:class:regulatory-compliance", "vc:label": "Regulatory Compliance"},
-    {"@id": "urn:visionflow:owl:class:telecollaboration", "vc:label": "Telecollaboration"},
-    {"@id": "urn:visionflow:owl:class:ai-governance-and-ethics", "vc:label": "TrustAndGovernanceDomain"},
-    {"@id": "urn:visionflow:owl:class:virtual-society", "vc:label": "VirtualSocietyDomain"},
-    {"@id": "urn:visionflow:owl:class:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:owl:class:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:owl:class:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:owl:class:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:owl:class:content-generation", "vc:label": "Content Generation"},
-    {"@id": "urn:visionflow:owl:class:synthetic-media", "vc:label": "Synthetic Media"},
-    {"@id": "urn:visionflow:owl:class:responsible-ai", "vc:label": "Responsible AI"},
-    {"@id": "urn:visionflow:owl:class:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:owl:class:bias-in-ai", "vc:label": "Bias in AI"},
-    {"@id": "urn:visionflow:owl:class:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:owl:class:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:dsa-transparency-database", "vc:label": "DSA Transparency Database"},
-    {"@id": "urn:visionflow:linked:online-safety-act", "vc:label": "Online Safety Act"},
-    {"@id": "urn:visionflow:linked:watermarking", "vc:label": "Watermarking"}
+    {
+      "@id": "urn:visionflow:linked:appeal-process",
+      "vc:label": "Appeal Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-filtering",
+      "vc:label": "Automated Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:community-guidelines-enforcement",
+      "vc:label": "Community Guidelines Enforcement"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-analysis-tools",
+      "vc:label": "Content Analysis Tools"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-classification-system",
+      "vc:label": "Content Classification System"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-framework",
+      "vc:label": "Decision Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-gr-arf-010",
+      "vc:label": "ETSI GR ARF 010"
+    },
+    {
+      "@id": "urn:visionflow:linked:harmful-content-prevention",
+      "vc:label": "Harmful Content Prevention"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-moderators",
+      "vc:label": "Human Moderators"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-review-workflow",
+      "vc:label": "Human Review Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:moderation-policy",
+      "vc:label": "Moderation Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:platform-governance-system",
+      "vc:label": "Platform Governance System"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-enforcement-engine",
+      "vc:label": "Policy Enforcement Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:reporting-system",
+      "vc:label": "Reporting System"
+    },
+    {
+      "@id": "urn:visionflow:linked:reviewer-training-program",
+      "vc:label": "Reviewer Training Program"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-user-experience",
+      "vc:label": "Safe User Experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust-and-safety-infrastructure",
+      "vc:label": "Trust and Safety Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "Application Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:community-standards",
+      "vc:label": "Community Standards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning-models",
+      "vc:label": "Machine Learning Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:middleware-layer",
+      "vc:label": "Middleware Layer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance-and-ethics",
+      "vc:label": "TrustAndGovernanceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:virtual-society",
+      "vc:label": "VirtualSocietyDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:content-generation",
+      "vc:label": "Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:synthetic-media",
+      "vc:label": "Synthetic Media"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias-in-ai",
+      "vc:label": "Bias in AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:dsa-transparency-database",
+      "vc:label": "DSA Transparency Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:online-safety-act",
+      "vc:label": "Online Safety Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:watermarking",
+      "vc:label": "Watermarking"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {"vc:key": "legacy-term-id", "vc:value": "20122"},
-    {"vc:key": "preferred-term", "vc:value": "Content Moderation"}
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "20122"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Content Moderation"
+    }
   ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
-  "prov:generatedAtTime": {"@value": "2026-05-18T07:12:05Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -75,46 +207,118 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
-    {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:policy-enforcement-engine", "label": "Policy Enforcement Engine"},
-      {"@id": "urn:ngm:class:automated-filtering", "label": "Automated Filtering"},
-      {"@id": "urn:ngm:class:human-review-workflow", "label": "Human Review Workflow"},
-      {"@id": "urn:ngm:class:appeal-process", "label": "Appeal Process"},
-      {"@id": "urn:ngm:class:content-classification-system", "label": "Content Classification System"}
+      {
+        "@id": "urn:ngm:class:policy-enforcement-engine",
+        "label": "Policy Enforcement Engine"
+      },
+      {
+        "@id": "urn:ngm:class:automated-filtering",
+        "label": "Automated Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:human-review-workflow",
+        "label": "Human Review Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:appeal-process",
+        "label": "Appeal Process"
+      },
+      {
+        "@id": "urn:ngm:class:content-classification-system",
+        "label": "Content Classification System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:community-standards", "label": "Community Standards"},
-      {"@id": "urn:ngm:class:moderation-policy", "label": "Moderation Policy"},
-      {"@id": "urn:ngm:class:content-analysis-tools", "label": "Content Analysis Tools"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-models", "label": "Machine Learning Models"}
+      {
+        "@id": "urn:ngm:class:community-standards",
+        "label": "Community Standards"
+      },
+      {
+        "@id": "urn:ngm:class:moderation-policy",
+        "label": "Moderation Policy"
+      },
+      {
+        "@id": "urn:ngm:class:content-analysis-tools",
+        "label": "Content Analysis Tools"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-models",
+        "label": "Machine Learning Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:safe-user-experience", "label": "Safe User Experience"},
-      {"@id": "urn:ngm:class:harmful-content-prevention", "label": "Harmful Content Prevention"},
-      {"@id": "urn:ngm:class:community-guidelines-enforcement", "label": "Community Guidelines Enforcement"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:safe-user-experience",
+        "label": "Safe User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:harmful-content-prevention",
+        "label": "Harmful Content Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:community-guidelines-enforcement",
+        "label": "Community Guidelines Enforcement"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:content-generation", "label": "Content Generation"},
-      {"@id": "urn:ngm:class:freedom-of-expression", "label": "Freedom of Expression"}
+      {
+        "@id": "urn:ngm:class:content-generation",
+        "label": "Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:freedom-of-expression",
+        "label": "Freedom of Expression"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:bias-in-ai", "label": "Bias in AI"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-ai",
+        "label": "Bias in AI"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -122,64 +326,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:content-moderation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a9913f9ef85e5399ec3870d193f830e643b7a6daee3b5ba3bddb35b7e2d880bc"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Appeal Process]]", "resolved": "urn:visionflow:linked:appeal-process", "kind": "StubLink"},
-    {"raw": "[[Automated Filtering]]", "resolved": "urn:visionflow:linked:automated-filtering", "kind": "StubLink"},
-    {"raw": "[[Community Guidelines Enforcement]]", "resolved": "urn:visionflow:linked:community-guidelines-enforcement", "kind": "StubLink"},
-    {"raw": "[[Content Analysis Tools]]", "resolved": "urn:visionflow:linked:content-analysis-tools", "kind": "StubLink"},
-    {"raw": "[[Content Classification System]]", "resolved": "urn:visionflow:linked:content-classification-system", "kind": "StubLink"},
-    {"raw": "[[Decision Framework]]", "resolved": "urn:visionflow:linked:decision-framework", "kind": "StubLink"},
-    {"raw": "[[ETSI GR ARF 010]]", "resolved": "urn:visionflow:linked:etsi-gr-arf-010", "kind": "StubLink"},
-    {"raw": "[[Harmful Content Prevention]]", "resolved": "urn:visionflow:linked:harmful-content-prevention", "kind": "StubLink"},
-    {"raw": "[[Human Moderators]]", "resolved": "urn:visionflow:linked:human-moderators", "kind": "StubLink"},
-    {"raw": "[[Human Review Workflow]]", "resolved": "urn:visionflow:linked:human-review-workflow", "kind": "StubLink"},
-    {"raw": "[[Moderation Policy]]", "resolved": "urn:visionflow:linked:moderation-policy", "kind": "StubLink"},
-    {"raw": "[[Platform Governance System]]", "resolved": "urn:visionflow:linked:platform-governance-system", "kind": "StubLink"},
-    {"raw": "[[Policy Enforcement Engine]]", "resolved": "urn:visionflow:linked:policy-enforcement-engine", "kind": "StubLink"},
-    {"raw": "[[Reporting System]]", "resolved": "urn:visionflow:linked:reporting-system", "kind": "StubLink"},
-    {"raw": "[[Reviewer Training Program]]", "resolved": "urn:visionflow:linked:reviewer-training-program", "kind": "StubLink"},
-    {"raw": "[[Safe User Experience]]", "resolved": "urn:visionflow:linked:safe-user-experience", "kind": "StubLink"},
-    {"raw": "[[Trust and Safety Infrastructure]]", "resolved": "urn:visionflow:linked:trust-and-safety-infrastructure", "kind": "StubLink"},
-    {"raw": "[[Application Layer]]", "resolved": "urn:visionflow:owl:class:application-layer", "kind": "ResolvedLink"},
-    {"raw": "[[Community Standards]]", "resolved": "urn:visionflow:owl:class:community-standards", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Models]]", "resolved": "urn:visionflow:owl:class:machine-learning-models", "kind": "ResolvedLink"},
-    {"raw": "[[Middleware Layer]]", "resolved": "urn:visionflow:owl:class:middleware-layer", "kind": "ResolvedLink"},
-    {"raw": "[[Regulatory Compliance]]", "resolved": "urn:visionflow:owl:class:regulatory-compliance", "kind": "ResolvedLink"},
-    {"raw": "[[Telecollaboration]]", "resolved": "urn:visionflow:owl:class:telecollaboration", "kind": "ResolvedLink"},
-    {"raw": "[[TrustAndGovernanceDomain]]", "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics", "kind": "ResolvedLink"},
-    {"raw": "[[VirtualSocietyDomain]]", "resolved": "urn:visionflow:owl:class:virtual-society", "kind": "ResolvedLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:owl:class:ai-safety", "kind": "ResolvedLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:owl:class:ai-ethics", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:owl:class:large-language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:owl:class:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:owl:class:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[Content Generation]]", "resolved": "urn:visionflow:owl:class:content-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Synthetic Media]]", "resolved": "urn:visionflow:owl:class:synthetic-media", "kind": "ResolvedLink"},
-    {"raw": "[[Responsible AI]]", "resolved": "urn:visionflow:owl:class:responsible-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:owl:class:explainable-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"},
-    {"raw": "[[Bias in AI]]", "resolved": "urn:visionflow:owl:class:bias-in-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:owl:class:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:owl:class:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:owl:class:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[DSA Transparency Database]]", "resolved": "urn:visionflow:linked:dsa-transparency-database", "kind": "StubLink"},
-    {"raw": "[[Online Safety Act]]", "resolved": "urn:visionflow:linked:online-safety-act", "kind": "StubLink"},
-    {"raw": "[[Watermarking]]", "resolved": "urn:visionflow:linked:watermarking", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
-}
-```
-
 
 - ### Definition
   - Content Moderation is a systematic sociotechnical process for reviewing, classifying, filtering, and enforcing policies against user-generated content and [[Synthetic Media]] across digital platforms, combining [[Automated Filtering]] via [[Machine Learning Models]] and [[Natural Language Processing]] classifiers with structured [[Human Review Workflow]]s and a transparent [[Appeal Process]], in order to enforce [[Community Standards]], prevent [[Harmful Content Prevention]], and satisfy obligations under [[Regulatory Compliance]] frameworks including the [[EU AI Act]], the EU Digital Services Act, and the UK [[Online Safety Act]]. Content Moderation sits at the intersection of [[AI Safety]], [[AI Ethics]], and [[AI Governance]], serving as the primary operational mechanism by which [[Platform Governance System]]s translate abstract policy commitments into concrete decisions about what content is visible, amplified, restricted, or removed from digital environments spanning social networks, video platforms, messaging services, online marketplaces, gaming ecosystems, and increasingly the XR and [[Telecollaboration]] layers that constitute the emerging spatial web. The discipline has undergone three major structural shifts in the 2020s: the industrialisation of [[Deep Learning]]-based classifiers replacing rule-based keyword filters; the incorporation of [[Large Language Model]]-based reasoning for nuanced contextual assessment; and the imposition of legally binding transparency and accountability obligations — in particular DSA Articles 15–17 and the UK Online Safety Act's duty-of-care regime — that require platforms to instrument, audit, and disclose the performance of their [[Content Classification System]]s. Modern pipelines are architecturally tiered: fast hash-matching and rule-based first-pass filters handle unambiguous violations at near-zero latency, mid-tier specialist classifiers (image ViT, audio CNN, text [[Transformer Architecture]]) score borderline cases against multi-label violation taxonomies, and LLM-based judges provide contextual chain-of-thought reasoning for the 5–15% of traffic where categorical classifiers are insufficiently confident — a cascade economy that limits expensive LLM compute to the cases where it changes the outcome. Effective content moderation depends on a [[Decision Framework]] that specifies the severity taxonomy of policy violations, escalation thresholds between automated and human stages, jurisdiction-specific legal requirements, [[Reviewer Training Program]]s that calibrate human rater consistency, a [[Reporting System]] for inbound user flags, and a robust [[Policy Enforcement Engine]] that executes graduated remedies — ranging from content labelling and reduced distribution to account suspension and law enforcement referral — while preserving the procedural fairness required for legally defensible [[Appeal Process]]es. The market for content moderation services reached USD 12.48 billion in 2025 and is projected to reach USD 42.36 billion by 2035 at a CAGR of 13%, driven by rising regulatory obligations, generative AI content volumes, and the expansion of moderation into new modalities including voice, 3D spatial environments, and multimodal AI outputs requiring provenance verification via [[Watermarking]] standards such as C2PA (ISO/IEC 22144, ratified 2025).

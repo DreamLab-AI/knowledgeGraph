@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Harmlessness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,7 +51,7 @@ public: true
   "@id": "urn:ngm:class:harmlessness",
   "@type": "Class",
   "label": "Harmlessness",
-  "definition": "An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness is one of the three core alignment dimensions alongside helpfulness and honesty, implemented through techniques such as Constitutional AI and RLHF to constrain model behaviour without sacrificing utility.",
+  "definition": "An alignment objective ensuring AI systems avoid generating outputs that [private] cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness is one of the three core alignment dimensions alongside helpfulness and honesty, implemented through techniques such as Constitutional AI and RLHF to constrain model behaviour without sacrificing utility.",
   "domain": "spatial-computing",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -68,20 +63,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
-      {"@id": "urn:ngm:class:harmful-bias", "label": "Harmful Bias"}
+      {
+        "@id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "@id": "urn:ngm:class:harmful-bias",
+        "label": "Harmful Bias"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
     ]
   },
   "provenance": {
@@ -92,49 +111,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:harmlessness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a087d9c16481a04a2f10a8ed250a0caf9edfeff39dbef679d958e5f1a98ad01b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[🤖]]",
-      "resolved": "urn:visionflow:linked:untitled",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI-Augmented Research Tooling Suite]]",
-      "resolved": "urn:visionflow:owl:class:research-tools",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sam Hammond AI Policy Economist]]",
-      "resolved": "urn:visionflow:owl:class:sam-hammond",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.
+  - An alignment objective ensuring AI systems avoid generating outputs that [private] cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Harmlessness
   - owl-role:: Concept
@@ -145,16 +123,16 @@ public: true
   - **contrastsWith**: [[AI Risk]], [[Harmful Bias]]
   - **supports**: [[Trustworthy AI]], [[Value Alignment]]
 - ### Content
-  - An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.
+  - An alignment objective ensuring AI systems avoid generating outputs that [private] cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.
 		- #### Ambiguity and Potential Overreach
-			- The bill's definition of "frontier models," based on computational thresholds and capabilities, introduces a degree of ambiguity that could lead to uncertainty and potential overreach by the regulatory body. The inclusion of models with capabilities similar to those trained with 10^26 flops, even if they require less computational power, creates a grey area that may be subject to interpretation and potential expansion over time.
-			- This ambiguity could inadvertently capture a wider range of AI models than initially intended, including those developed by smaller startups and research institutions with limited resources. The resulting compliance burden could stifle innovation and hinder the development of new AI applications.
+			- The bill's definition of "frontier models," based on computational thresholds and capabilities, introduces a degree of ambiguity that [private] lead to uncertainty and potential overreach by the regulatory body. The inclusion of models with capabilities similar to those trained with 10^26 flops, even if they require less computational power, creates a grey area that may be subject to interpretation and potential expansion over time.
+			- This ambiguity [private] inadvertently capture a wider range of AI models than initially intended, including those developed by smaller startups and research institutions with limited resources. The resulting compliance burden [private] stifle innovation and hinder the development of new AI applications.
   - ### Cognitive Biases
 		- **Pain of Paying**: Microtransactions may be psychologically less painful, but frequent pop-ups can reignite that pain.
 		- **Anchoring Effect**: A $0.10 zap might feel trivial under a monthly $5 cap, yet it can seem excessive if repeated indefinitely.
 		- #### Ambiguity and Potential Overreach
-			- The bill's definition of "frontier models," based on computational thresholds and capabilities, introduces a degree of ambiguity that could lead to uncertainty and potential overreach by the regulatory body. The inclusion of models with capabilities similar to those trained with 10^26 flops, even if they require less computational power, creates a grey area that may be subject to interpretation and potential expansion over time.
-			- This ambiguity could inadvertently capture a wider range of AI models than initially intended, including those developed by smaller startups and research institutions with limited resources. The resulting compliance burden could stifle innovation and hinder the development of new AI applications.
+			- The bill's definition of "frontier models," based on computational thresholds and capabilities, introduces a degree of ambiguity that [private] lead to uncertainty and potential overreach by the regulatory body. The inclusion of models with capabilities similar to those trained with 10^26 flops, even if they require less computational power, creates a grey area that may be subject to interpretation and potential expansion over time.
+			- This ambiguity [private] inadvertently capture a wider range of AI models than initially intended, including those developed by smaller startups and research institutions with limited resources. The resulting compliance burden [private] stifle innovation and hinder the development of new AI applications.
   - ### Cognitive Biases
 		- **Pain of Paying**: Microtransactions may be psychologically less painful, but frequent pop-ups can reignite that pain.
 		- **Anchoring Effect**: A $0.10 zap might feel trivial under a monthly $5 cap, yet it can seem excessive if repeated indefinitely.
@@ -200,9 +178,9 @@ public: true
 		  **Verification Status**: Verified against Constitutional AI paper
 		  ```
   - public-access:: true
-  - definition:: An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.
+  - definition:: An alignment objective ensuring AI systems avoid generating outputs that [private] cause harm, including toxic, dangerous, misleading, or unethical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.
   ## Academic Context
-  - Harmlessness in AI refers to the design and alignment objective ensuring AI systems avoid producing outputs that could cause harm, including offensive, toxic, misleading, or unethical content.
+  - Harmlessness in AI refers to the design and alignment objective ensuring AI systems avoid producing outputs that [private] cause harm, including offensive, toxic, misleading, or unethical content.
   - It is a foundational pillar alongside helpfulness and honesty in AI alignment frameworks, often collectively referred to as the "three Hs" (Harmlessness, Helpfulness, Honesty).
   - The concept is rooted in ethical AI principles aimed at safe, real-world deployment, emphasising the avoidance of harm both direct (e.g., offensive language) and indirect (e.g., biased or misleading information)[1][4].
   - Academic foundations draw from interdisciplinary fields including computer science, ethics, and social sciences, focusing on value alignment, risk mitigation, and sociotechnical considerations.

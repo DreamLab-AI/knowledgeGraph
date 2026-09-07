@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Snapshot Off-Chain Voting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:snapshot-off-chain-voting:ff0fd3120cf7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f6e1feb2356bed361a5a19d2a4cc86b3f90337b60e721f81e3dc1c8a390a4285"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:linked:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token]]",
-      "resolved": "urn:visionflow:linked:token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAOGovernance]]",
-      "resolved": "urn:visionflow:linked:daogovernance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quadratic Voting]]",
-      "resolved": "urn:visionflow:linked:quadratic-voting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Governance]]",
-      "resolved": "urn:visionflow:linked:decentralized-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://snapshot.org/]]",
-      "resolved": "urn:visionflow:linked:https-snapshot-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A gasless governance platform that records votes off-chain by having participants sign messages, using token balances captured at a chosen block as voting weight. It avoids transaction fees while preserving a verifiable tally tied to on-chain holdings.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -115,57 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-framework:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:19e87003244b7d9e98804a02e19fe8c458c6541ec31ea5b576c8e7296b329fe6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Deep Learning Framework]]",
-      "resolved": "urn:visionflow:linked:deep-learning-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Optimization]]",
-      "resolved": "urn:visionflow:linked:model-optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Network Library]]",
-      "resolved": "urn:visionflow:linked:neural-network-library",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AutoML]]",
-      "resolved": "urn:visionflow:owl:class:auto-ml",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI Framework denotes a comprehensive software architecture that provides reusable code, design patterns, and infrastructure for developing artificial intelligence applications. These frameworks abstract low-level computational details, offering high-level interfaces for model construction, training, and inference. Popular frameworks include TensorFlow, PyTorch, scikit-learn, Keras, and JAX, each optimized for different use cases ranging from research prototyping to production deployment. Modern AI frameworks support automatic differentiation, distributed training, model serving, and integration with cloud infrastructure.

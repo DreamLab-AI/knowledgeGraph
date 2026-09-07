@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tokenizer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "A tokenizer is the component that converts raw text into the discrete units (tokens) a language model processes, and back again. Modern tokenizers use subword algorithms such as byte-pair encoding, WordPiece, or unigram language models to balance vocabulary size against sequence length, representing common words as single tokens and rare words as compositions of smaller pieces. The tokenizer defines the model's vocabulary and directly affects context-window usage, multilingual fairness, handling of code and numbers, and ultimately the cost and capability of the system.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:tokenization", "label": "Tokenization"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:tokenization",
+      "label": "Tokenization"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ]
   },
   "quality": 0.8

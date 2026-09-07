@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Offset Trading
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,72 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:carbon-offset-trading:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:db2907bf47d70525a12eff92cab7fa79b4ad3a4c4fd6aaeac817d175f49a8d2b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Carbon Price Discovery]]",
-      "resolved": "urn:visionflow:linked:carbon-price-discovery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Climate Finance]]",
-      "resolved": "urn:visionflow:linked:climate-finance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Market Infrastructure]]",
-      "resolved": "urn:visionflow:linked:market-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Offset Liquidity]]",
-      "resolved": "urn:visionflow:linked:offset-liquidity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Trading Platform]]",
-      "resolved": "urn:visionflow:linked:trading-platform",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Registry]]",
-      "resolved": "urn:visionflow:owl:class:carbon-registry",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Environmental Trading]]",
-      "resolved": "urn:visionflow:owl:class:environmental-trading",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The buying and selling of verified carbon credits on voluntary and compliance markets through exchanges and over-the-counter transactions, enabling price discovery, liquidity provision, and efficient allocation of climate finance to emission reduction projects.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Noise Cancellation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,36 +20,86 @@ public: true
   "definition": "Noise cancellation is the process of reducing or eliminating unwanted audio signals from a primary audio stream using signal processing techniques. Active noise cancellation generates an anti-phase signal to destructively interfere with the noise, while passive methods use physical barriers. The technique is applied in audio hardware, telecommunications, and AI-driven speech enhancement systems to improve clarity and intelligibility.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"}
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:voice-communication", "label": "Voice Communication"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:voice-communication",
+        "label": "Voice Communication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:microphone", "label": "Microphone"},
-      {"@id": "urn:ngm:class:digital-signal-processor", "label": "Digital Signal Processor"}
+      {
+        "@id": "urn:ngm:class:microphone",
+        "label": "Microphone"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:teleconferencing", "label": "Teleconferencing"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:teleconferencing",
+        "label": "Teleconferencing"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:acoustic-engineering", "label": "Acoustic Engineering"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:acoustic-engineering",
+        "label": "Acoustic Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:passive-noise-isolation", "label": "Passive Noise Isolation"}
+      {
+        "@id": "urn:ngm:class:passive-noise-isolation",
+        "label": "Passive Noise Isolation"
+      }
     ]
   },
   "quality": 0.62,

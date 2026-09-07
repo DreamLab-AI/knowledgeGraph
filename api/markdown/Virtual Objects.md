@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Objects
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,42 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:avatar-wearable", "label": "Avatar Wearable"},
-      {"@id": "urn:ngm:class:avatar-customization", "label": "Avatar Customization"}
+      {
+        "@id": "urn:ngm:class:avatar-wearable",
+        "label": "Avatar Wearable"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ]
   },
   "provenance": {
@@ -84,37 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-objects:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:45279faaef30f140089efd5da67cf4a6e42629b4da7e2961c549a203751c8a10"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Asset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital 3D assets existing within virtual environments that users can interact with, own, trade, and customize, including avatars, wearables, furniture, vehicles, and environmental elements, often represented as NFTs for verifiable ownership in blockchain-based metaverses.

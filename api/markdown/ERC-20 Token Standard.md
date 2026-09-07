@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ERC-20 Token Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Net Zero Transition
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

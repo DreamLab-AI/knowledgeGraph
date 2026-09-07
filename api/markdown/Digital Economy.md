@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Economy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,72 +200,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-economy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c9849a73af92ebc209b51dda5a7b135d39733898f6797db92350ae32d9cad68f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Value Exchange]]",
-      "resolved": "urn:visionflow:linked:digital-value-exchange",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Payments]]",
-      "resolved": "urn:visionflow:owl:class:digital-payments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Economic Systems]]",
-      "resolved": "urn:visionflow:owl:class:economic-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token Economics]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Commerce]]",
-      "resolved": "urn:visionflow:owl:class:virtual-commerce",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The interconnected system of economic activities, transactions, and value creation occurring through digital platforms, blockchain networks, and virtual environments, encompassing cryptocurrency markets, NFT trading, virtual real estate, and the tokenised exchange of goods and services in the metaverse.

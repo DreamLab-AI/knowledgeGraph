@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Robustness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,21 +51,42 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"}
+      {
+        "@id": "urn:ngm:class:data-augmentation-strategies",
+        "label": "Data Augmentation Strategies"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:adversarial-attacks", "label": "Adversarial Attacks"}
+      {
+        "@id": "urn:ngm:class:adversarial-attacks",
+        "label": "Adversarial Attacks"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-robustness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ee1c7075d440e2d89760849f4c848737a4ccdfb948f2905dd36b9e422ec6901a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.

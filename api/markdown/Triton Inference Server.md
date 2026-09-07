@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Triton Inference Server
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -131,6 +127,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Triton Inference Server is NVIDIA's open-source platform for serving machine-learning models in production across CPUs and GPUs. It supports multiple frameworks through a common interface, batches and schedules concurrent requests, and exposes models over HTTP and gRPC. Triton is a standard component of GPU-accelerated inference stacks, often paired with TensorRT-optimised models.
   - Related concepts: [[Inference Serving]] [[TensorRT]] [[Model Serving]] [[GPU Acceleration]] [[Kubernetes]]

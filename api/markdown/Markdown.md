@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Markdown
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Markdown is a lightweight plain-text markup language that uses simple punctuation conventions to denote formatting such as headings, lists, links, and emphasis. Created by John Gruber in 2004 and later standardised by efforts like CommonMark, it is designed to be readable as source and convertible to HTML and other formats. Its simplicity makes it the dominant format for documentation, notes, and content authoring in developer tooling.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:diagrams-as-code", "label": "Diagrams as Code"}, {"@id": "urn:ngm:class:ai-diagram-tools", "label": "AI Diagram Tools"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:diagrams-as-code",
+        "label": "Diagrams as Code"
+      },
+      {
+        "@id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      }
+    ]
   },
   "quality": 0.72
 }

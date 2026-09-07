@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Supply Chain Data
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

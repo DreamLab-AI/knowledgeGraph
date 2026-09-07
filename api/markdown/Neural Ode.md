@@ -1,37 +1,110 @@
----
-public: true
----
-
-# Neural Ode
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:neural-ode", "@type":"Page", "title":"Neural Ode", "vc:slug":"neural-ode", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:neural-ode",
+  "@type": "Page",
+  "title": "Neural Ode",
+  "vc:slug": "neural-ode",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:neural-ode",
-  "@type":"Class",
-  "label":"Neural Ode",
-  "definition":"A neural ordinary differential equation (Neural ODE) is a deep learning model that parameterises the continuous-time derivative of a hidden state with a neural network, so the forward pass becomes the solution of an ODE by a numerical integrator. This replaces a discrete stack of layers with a continuous-depth transformation and trains efficiently via the adjoint sensitivity method, giving constant memory cost. Neural ODEs are well suited to modelling continuous dynamics, irregularly sampled time series, and continuous normalising flows.",
-  "domain":"machine-learning",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"},{"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"},{"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"}],
-    "enables":[{"@id":"urn:ngm:class:system-identification","label":"System Identification"}],
-    "partOf":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "relatedTo":[{"@id":"urn:ngm:class:residual-network","label":"Residual Network"},{"@id":"urn:ngm:class:differential-equations","label":"Differential Equations"},{"@id":"urn:ngm:class:dynamical-systems","label":"Dynamical Systems"}],
-    "implements":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"}],
-    "dependsOn":[{"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"}],
-    "supports":[{"@id":"urn:ngm:class:system-identification","label":"System Identification"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:residual-network","label":"Residual Network"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:system-identification","label":"System Identification"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:neural-ode",
+  "@type": "Class",
+  "label": "Neural Ode",
+  "definition": "A neural ordinary differential equation (Neural ODE) is a deep learning model that parameterises the continuous-time derivative of a hidden state with a neural network, so the forward pass becomes the solution of an ODE by a numerical integrator. This replaces a discrete stack of layers with a continuous-depth transformation and trains efficiently via the adjoint sensitivity method, giving constant memory cost. Neural ODEs are well suited to modelling continuous dynamics, irregularly sampled time series, and continuous normalising flows.",
+  "domain": "machine-learning",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:residual-network",
+        "label": "Residual Network"
+      },
+      {
+        "@id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "@id": "urn:ngm:class:dynamical-systems",
+        "label": "Dynamical Systems"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:residual-network",
+        "label": "Residual Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

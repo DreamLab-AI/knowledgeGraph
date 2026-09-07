@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cybernetics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,36 +7,126 @@ public: true
   "title": "Cybernetics",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:control-theory", "vc:label": "Control Theory"},
-    {"@id": "urn:visionflow:linked:feedback-loop", "vc:label": "Feedback Loop"},
-    {"@id": "urn:visionflow:linked:feedback-control", "vc:label": "Feedback Control"},
-    {"@id": "urn:visionflow:linked:information-theory", "vc:label": "Information Theory"},
-    {"@id": "urn:visionflow:linked:signal-processing", "vc:label": "Signal Processing"},
-    {"@id": "urn:visionflow:linked:adaptive-control", "vc:label": "Adaptive Control"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:cognitive-science", "vc:label": "Cognitive Science"},
-    {"@id": "urn:visionflow:linked:systems-theory", "vc:label": "Systems Theory"},
-    {"@id": "urn:visionflow:linked:complex-adaptive-systems", "vc:label": "Complex Adaptive Systems"},
-    {"@id": "urn:visionflow:linked:emergence", "vc:label": "Emergence"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:human-robot-interaction", "vc:label": "Human Robot Interaction"},
-    {"@id": "urn:visionflow:linked:brain-computer-interfaces", "vc:label": "Brain Computer Interfaces"},
-    {"@id": "urn:visionflow:linked:self-organisation", "vc:label": "Self-Organisation"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:autonomous-systems", "vc:label": "Autonomous Systems"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:self-organised-criticality", "vc:label": "Self-Organised Criticality"},
-    {"@id": "urn:visionflow:linked:homeostasis", "vc:label": "Homeostasis"},
-    {"@id": "urn:visionflow:linked:cognitive-architecture", "vc:label": "Cognitive Architecture"},
-    {"@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems"},
-    {"@id": "urn:visionflow:linked:evolutionary-computation", "vc:label": "Evolutionary Computation"},
-    {"@id": "urn:visionflow:linked:swarm-intelligence", "vc:label": "Swarm Intelligence"},
-    {"@id": "urn:visionflow:linked:chaos-theory", "vc:label": "Chaos Theory"},
-    {"@id": "urn:visionflow:linked:dynamical-systems-theory", "vc:label": "Dynamical Systems Theory"},
-    {"@id": "urn:visionflow:linked:statistical-mechanics", "vc:label": "Statistical Mechanics"},
-    {"@id": "urn:visionflow:linked:collective-intelligence", "vc:label": "Collective Intelligence"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:closed-loop-control", "vc:label": "Closed-Loop Control"}
+    {
+      "@id": "urn:visionflow:linked:control-theory",
+      "vc:label": "Control Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedback-loop",
+      "vc:label": "Feedback Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedback-control",
+      "vc:label": "Feedback Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:signal-processing",
+      "vc:label": "Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-control",
+      "vc:label": "Adaptive Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-science",
+      "vc:label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:systems-theory",
+      "vc:label": "Systems Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:complex-adaptive-systems",
+      "vc:label": "Complex Adaptive Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergence",
+      "vc:label": "Emergence"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-robot-interaction",
+      "vc:label": "Human Robot Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:brain-computer-interfaces",
+      "vc:label": "Brain Computer Interfaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-organisation",
+      "vc:label": "Self-Organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-systems",
+      "vc:label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-organised-criticality",
+      "vc:label": "Self-Organised Criticality"
+    },
+    {
+      "@id": "urn:visionflow:linked:homeostasis",
+      "vc:label": "Homeostasis"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-architecture",
+      "vc:label": "Cognitive Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-computation",
+      "vc:label": "Evolutionary Computation"
+    },
+    {
+      "@id": "urn:visionflow:linked:swarm-intelligence",
+      "vc:label": "Swarm Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:chaos-theory",
+      "vc:label": "Chaos Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamical-systems-theory",
+      "vc:label": "Dynamical Systems Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-mechanics",
+      "vc:label": "Statistical Mechanics"
+    },
+    {
+      "@id": "urn:visionflow:linked:collective-intelligence",
+      "vc:label": "Collective Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:closed-loop-control",
+      "vc:label": "Closed-Loop Control"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -68,41 +153,110 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:brain-computer-interfaces", "label": "Brain Computer Interfaces"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:self-organisation", "label": "Self Organisation"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:self-organisation",
+        "label": "Self Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:negative-feedback", "label": "Negative Feedback"},
-      {"@id": "urn:ngm:class:positive-feedback", "label": "Positive Feedback"},
-      {"@id": "urn:ngm:class:homeostasis", "label": "Homeostasis"}
+      {
+        "@id": "urn:ngm:class:negative-feedback",
+        "label": "Negative Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:positive-feedback",
+        "label": "Positive Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:homeostasis",
+        "label": "Homeostasis"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:systems-theory", "label": "Systems Theory"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous Systems"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:open-loop-control", "label": "Open Loop Control"}
+      {
+        "@id": "urn:ngm:class:open-loop-control",
+        "label": "Open Loop Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:emergence", "label": "Emergence"},
-      {"@id": "urn:ngm:class:complex-adaptive-systems", "label": "Complex Adaptive Systems"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:complex-adaptive-systems",
+        "label": "Complex Adaptive Systems"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
@@ -111,7 +265,7 @@ public: true
       "label": "Regulatory Systems Science"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",

@@ -1,56 +1,108 @@
----
-public: true
----
-
-# Multiformats
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:multiformats", "@type":"Page", "title":"Multiformats", "vc:slug":"multiformats", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:multiformats",
+  "@type": "Page",
+  "title": "Multiformats",
+  "vc:slug": "multiformats",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:multiformats",
-  "@type":"Class",
-  "label":"Multiformats",
-  "definition":"Multiformats is a collection of self-describing protocol and value specifications designed to make data formats future-proof and interoperable across decentralised systems. Rather than hard-coding a single hash, encoding, or address scheme, each multiformat prefixes the value with a compact code declaring which algorithm or format it uses, so software can interpret it unambiguously and evolve without breaking. Components include multihash, multibase, multicodec, and multiaddr, and the family underpins content addressing in IPFS and libp2p.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:content-addressing","label":"Content Addressing"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:content-addressing","label":"Content Addressing"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:multiformats",
+  "@type": "Class",
+  "label": "Multiformats",
+  "definition": "Multiformats is a collection of self-describing protocol and value specifications designed to make data formats future-proof and interoperable across decentralised systems. Rather than hard-coding a single hash, encoding, or address scheme, each multiformat prefixes the value with a compact code declaring which algorithm or format it uses, so software can interpret it unambiguously and evolve without breaking. Components include multihash, multibase, multicodec, and multiaddr, and the family underpins content addressing in IPFS and libp2p.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:content-addressing",
+      "label": "Content Addressing"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:multihash","label":"Multihash"},
-      {"@id":"urn:ngm:class:content-identifier","label":"Content Identifier"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "@id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      }
     ],
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:standards","label":"Standards"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:interoperability","label":"Interoperability"},
-      {"@id":"urn:ngm:class:content-addressing","label":"Content Addressing"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:ipfs","label":"IPFS"},
-      {"@id":"urn:ngm:class:libp2p","label":"libp2p"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:content-identifier","label":"Content Identifier"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:decentralised-file-storage","label":"Decentralised file storage"},
-      {"@id":"urn:ngm:class:distributed-hash-table","label":"Distributed Hash Table"},
-      {"@id":"urn:ngm:class:interoperability","label":"Interoperability"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-file-storage",
+        "label": "Decentralised file storage"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

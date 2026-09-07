@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Fabrication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,73 +76,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-fabrication:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2dc0271c826319d611534bd5750b80846f118bd5f2bde8773a621d98f48b7ed4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Generative Design]]",
-      "resolved": "urn:visionflow:linked:generative-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Process Optimization]]",
-      "resolved": "urn:visionflow:linked:process-optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital Fabrication in the AI context refers to the integration of artificial intelligence with additive manufacturing, CNC machining, and automated production technologies. AI optimizes fabrication processes through generative design, predictive maintenance, quality control via computer vision, and adaptive toolpath planning. Machine learning models predict material behavior, optimize support structures, detect defects in real-time, and enable mass customization. Applications include topology optimization for lightweight structures, AI-driven 3D printing parameter tuning, and robotic manufacturing systems with reinforcement learning-based control.

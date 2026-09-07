@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Synthetic Asset
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -22,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:synthetic-asset",
   "@type": "Class",
   "label": "Synthetic Asset",
-  "definition": "A Synthetic Asset is a tokenised financial instrument on a blockchain whose value tracks an underlying reference asset, such as a fiat currency, commodity, equity, or index, without requiring direct ownership or custody of that asset. Synthetic assets derive their price through collateralisation and price oracles rather than through a one-to-one backing of the underlying, distinguishing them from wrapped tokens. Protocols such as Synthetix mint synthetic exposures (synths) backed by over-collateralised pools, allowing on-chain trading of real-world price feeds. They enable permissionless access to traditional markets but carry oracle, liquidation, and collateral-risk dependencies.",
+  "definition": "A Synthetic Asset is a tokenised financial instrument on a blockchain whose value tracks an underlying reference asset, such as a fiat currency, commodity, equity, or [private], without requiring direct ownership or custody of that asset. Synthetic assets derive their price through collateralisation and price oracles rather than through a one-to-one backing of the underlying, distinguishing them from wrapped tokens. Protocols such as Synthetix mint synthetic exposures (synths) backed by over-collateralised pools, allowing on-chain trading of real-world price feeds. They enable permissionless access to traditional markets but carry oracle, liquidation, and collateral-risk dependencies.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

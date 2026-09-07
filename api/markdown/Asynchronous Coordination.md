@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asynchronous Coordination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,28 @@ public: true
   "definition": "Asynchronous Coordination is the alignment of distributed agents or processes that act without a shared global clock or blocking synchronization, communicating through messages, shared state, or eventual-consistency mechanisms. It tolerates network delay and partial failure by letting participants make progress independently and reconcile state later. This model underpins resilient distributed systems and decentralized multi-agent and swarm control.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-swarm-control", "label": "Decentralized Swarm Control"},
-      {"@id": "urn:ngm:class:decentralised-coordination", "label": "Decentralised Coordination"}
+      {
+        "@id": "urn:ngm:class:decentralized-swarm-control",
+        "label": "Decentralized Swarm Control"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      }
     ]
   },
   "quality": 0.72
 }
 ```
+
 - ### Definition
   - Asynchronous Coordination aligns distributed actors without a shared clock or blocking waits, relying on messaging and eventual consistency. It is required by [[Decentralized Swarm Control]] and is a core mechanism used in [[Decentralised Coordination]].
 - ### Content

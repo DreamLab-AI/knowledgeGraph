@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metadata
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -156,4 +151,3 @@ public: true
   - In enterprise and scientific contexts, metadata management has matured into a discipline supported by dedicated tools: data catalogues (Alation, Atlan, Collibra, OpenMetadata), metadata repositories, and data governance platforms that automate metadata extraction from operational systems and maintain lineage graphs. Search engines, recommendation systems, and [[Knowledge Graph|knowledge graphs]] depend critically on high-quality metadata. The Web Ontology Language (OWL) and SPARQL endpoint infrastructure allow metadata expressed as RDF triples to be queried and reasoned over at scale, forming the backbone of the [[Linked Data]] ecosystem.
 
   - In 2024–2025 AI training and deployment has elevated metadata to a first-class concern in data governance. [[Training Dataset Metadata|Training dataset metadata]] — provenance, consent records, data sources, demographic composition — is increasingly required by regulators (EU AI Act) and demanded by auditors assessing model bias and intellectual property exposure. Content provenance metadata standards (C2PA, IPTC Photo Metadata) are being embedded into generative AI toolchains to mark AI-generated content. Simultaneously, large-scale knowledge graph construction from web-scale metadata enables retrieval-augmented generation (RAG) systems that ground LLM outputs in structured factual context.
-

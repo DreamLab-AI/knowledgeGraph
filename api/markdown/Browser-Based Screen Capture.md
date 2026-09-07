@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Browser-Based Screen Capture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Browser-based screen capture is the in-browser acquisition of screen, window, or tab video using web APIs such as the Screen Capture API (getDisplayMedia), without installing native software. The captured MediaStream can be recorded locally, encoded, or streamed in real time over WebRTC, making it the foundation for web conferencing, asynchronous video messaging, and screen recording tools. It runs under explicit user permission and within the browser's security sandbox.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:asynchronous-video", "label": "Asynchronous Video"},
-      {"@id": "urn:ngm:class:screen-recording", "label": "Screen Recording"}
+      {
+        "@id": "urn:ngm:class:asynchronous-video",
+        "label": "Asynchronous Video"
+      },
+      {
+        "@id": "urn:ngm:class:screen-recording",
+        "label": "Screen Recording"
+      }
     ]
   },
   "quality": 0.72

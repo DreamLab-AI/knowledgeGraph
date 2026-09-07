@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Skill
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Agent Skill",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:prompt-template", "vc:label": "PromptTemplate" },
-    { "@id": "urn:visionflow:linked:tool-use", "vc:label": "ToolUse" },
-    { "@id": "urn:visionflow:linked:context-management", "vc:label": "ContextManagement" },
-    { "@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "AgenticWorkflow" }
+    {
+      "@id": "urn:visionflow:linked:prompt-template",
+      "vc:label": "PromptTemplate"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "ToolUse"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-management",
+      "vc:label": "ContextManagement"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "AgenticWorkflow"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,11 +44,33 @@ public: true
   "definition": "An agent skill is a packaged, self-contained unit of procedural knowledge — a named bundle of instructions, and optionally scripts and reference resources — that an agent loads into its context on demand when a task matches the skill's trigger, and unloads afterwards. Rather than baking every capability into the base system prompt, a skill lets specialised know-how (how to run a deployment, audit prose, drive a browser) live as a discoverable, versioned artifact that is progressively disclosed only when relevant, keeping the working context small while giving the agent deep competence in whatever domain the current task demands.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": { "@id": "urn:ngm:class:prompt-template", "label": "Prompt Template" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:prompt-template",
+    "label": "Prompt Template"
+  },
   "relations": {
-    "relatedTo": [ { "@id": "urn:ngm:class:tool-use", "label": "Tool Use" }, { "@id": "urn:ngm:class:capability-advertisement", "label": "Capability Advertisement" } ],
-    "uses": [ { "@id": "urn:ngm:class:context-management", "label": "Context Management" } ],
-    "enables": [ { "@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow" } ]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
+    ]
   },
   "quality": 0.75,
   "provenance": {

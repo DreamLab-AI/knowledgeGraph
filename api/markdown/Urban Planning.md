@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Urban Planning
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:urban-planning", "@type": "Page", "title": "Urban Planning", "vc:slug": "urban-planning", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:urban-planning",
+  "@type": "Page",
+  "title": "Urban Planning",
+  "vc:slug": "urban-planning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

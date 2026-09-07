@@ -1,59 +1,117 @@
----
-public: true
----
-
-# Data Protection Impact Assessment
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-protection-impact-assessment", "@type":"Page", "title":"Data Protection Impact Assessment", "vc:slug":"data-protection-impact-assessment", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-protection-impact-assessment",
+  "@type": "Page",
+  "title": "Data Protection Impact Assessment",
+  "vc:slug": "data-protection-impact-assessment",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:data-protection-impact-assessment",
-  "@type":"Class",
-  "label":"Data Protection Impact Assessment",
-  "definition":"A Data Protection Impact Assessment is a structured process for identifying, evaluating and mitigating the risks that a planned data-processing activity poses to the rights and freedoms of individuals. It documents the nature, scope, context and purposes of processing, assesses necessity and proportionality, and records measures that reduce identified risks. Under the General Data Protection Regulation it is mandatory where processing is likely to result in high risk, such as large-scale profiling or use of sensitive data. It is a core accountability instrument linking privacy-by-design to demonstrable compliance.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:risk-assessment","label":"Risk Assessment"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:risk-analysis","label":"Risk Analysis"},
-      {"@id":"urn:ngm:class:mitigation-measures","label":"Mitigation Measures"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-protection-impact-assessment",
+  "@type": "Class",
+  "label": "Data Protection Impact Assessment",
+  "definition": "A Data Protection Impact Assessment is a structured process for identifying, evaluating and mitigating the risks that a planned data-processing activity poses to the rights and freedoms of individuals. It documents the nature, scope, context and purposes of processing, assesses necessity and proportionality, and records measures that reduce identified risks. Under the General Data Protection Regulation it is mandatory where processing is likely to result in high risk, such as large-scale profiling or use of sensitive data. It is a core accountability instrument linking privacy-by-design to demonstrable compliance.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:risk-analysis",
+        "label": "Risk Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:mitigation-measures",
+        "label": "Mitigation Measures"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:data-processing","label":"Data Processing"},
-      {"@id":"urn:ngm:class:gdpr","label":"GDPR"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:data-mapping","label":"Data Mapping"},
-      {"@id":"urn:ngm:class:legal-basis","label":"Legal Basis"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-mapping",
+        "label": "Data Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:legal-basis",
+        "label": "Legal Basis"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:data-governance","label":"Data Governance"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:compliance","label":"Compliance"},
-      {"@id":"urn:ngm:class:accountability","label":"Accountability"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:privacy-by-design","label":"Privacy by Design"},
-      {"@id":"urn:ngm:class:privacy","label":"Privacy"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:data-privacy","label":"Data Privacy"},
-      {"@id":"urn:ngm:class:data-protection-law","label":"Data Protection Law"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-law",
+        "label": "Data Protection Law"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:privacy-impact-assessment","label":"Privacy Impact Assessment"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      }
     ]
   },
-  "sameAs":[
-    {"@id":"urn:ngm:class:dpia","label":"DPIA"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:dpia",
+      "label": "DPIA"
+    }
   ],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Block Validation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

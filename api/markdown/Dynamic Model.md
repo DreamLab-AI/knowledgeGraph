@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dynamic Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "A Dynamic Model is a mathematical or computational representation of a system that explicitly captures how the system's state evolves over time in response to inputs, internal dynamics, and disturbances. Distinguished from static models by their time-varying state equations—typically differential equations for continuous systems or recurrence relations for discrete systems—dynamic models are fundamental to control engineering, physics simulation, robotics, and economic forecasting. They may be physics-derived from first principles, identified from data using system identification techniques, or learned end-to-end from observations using neural networks.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:simulation", "label": "Simulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:world-model", "label": "World Model"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-based-control", "label": "Model Based Control"},
-      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
+      {
+        "@id": "urn:ngm:class:model-based-control",
+        "label": "Model Based Control"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ]
   },
   "quality": 0.8

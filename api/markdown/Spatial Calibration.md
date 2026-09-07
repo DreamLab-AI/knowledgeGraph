@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Calibration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-calibration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d82f71ecd14a231ada0d8feea231f1b1edbd34e8d334b7d857d6ea614d1dc349"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Accurate AR Alignment]]",
-      "resolved": "urn:visionflow:linked:accurate-ar-alignment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AR Registration]]",
-      "resolved": "urn:visionflow:owl:class:ar-registration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of aligning virtual coordinate frames with physical world references in AR/VR systems, including camera calibration for video see-through displays and optical calibration for see-through displays, ensuring accurate registration of digital content with the real environment.

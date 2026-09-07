@@ -1,9 +1,3 @@
----
-public: true
----
-
-# FSDP
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -13,26 +7,86 @@ public: true
   "title": "FSDP",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:distributed-training", "vc:label": "Distributed Training"},
-    {"@id": "urn:visionflow:linked:checkpoints", "vc:label": "Checkpoints"},
-    {"@id": "urn:visionflow:linked:data-parallelism", "vc:label": "Data Parallelism"},
-    {"@id": "urn:visionflow:linked:model-parallelism", "vc:label": "Model Parallelism"},
-    {"@id": "urn:visionflow:linked:zero-redundancy-optimiser", "vc:label": "ZeRO Redundancy Optimiser"},
-    {"@id": "urn:visionflow:linked:deep-speed", "vc:label": "DeepSpeed"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:collective-communication", "vc:label": "Collective Communication"},
-    {"@id": "urn:visionflow:linked:gradient-checkpointing", "vc:label": "Gradient Checkpointing"},
-    {"@id": "urn:visionflow:linked:mixed-precision-training", "vc:label": "Mixed Precision Training"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:pytorch", "vc:label": "PyTorch"},
-    {"@id": "urn:visionflow:linked:megatron-lm", "vc:label": "Megatron-LM"},
-    {"@id": "urn:visionflow:linked:pipeline-parallelism", "vc:label": "Pipeline Parallelism"},
-    {"@id": "urn:visionflow:linked:tensor-parallelism", "vc:label": "Tensor Parallelism"},
-    {"@id": "urn:visionflow:linked:gradient-synchronisation", "vc:label": "Gradient Synchronisation"},
-    {"@id": "urn:visionflow:linked:nvidia-nccl", "vc:label": "NVIDIA NCCL"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-tuning"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:torchtitan", "vc:label": "TorchTitan"}
+    {
+      "@id": "urn:visionflow:linked:distributed-training",
+      "vc:label": "Distributed Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:checkpoints",
+      "vc:label": "Checkpoints"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-parallelism",
+      "vc:label": "Data Parallelism"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-parallelism",
+      "vc:label": "Model Parallelism"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-redundancy-optimiser",
+      "vc:label": "ZeRO Redundancy Optimiser"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-speed",
+      "vc:label": "DeepSpeed"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:collective-communication",
+      "vc:label": "Collective Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-checkpointing",
+      "vc:label": "Gradient Checkpointing"
+    },
+    {
+      "@id": "urn:visionflow:linked:mixed-precision-training",
+      "vc:label": "Mixed Precision Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:pytorch",
+      "vc:label": "PyTorch"
+    },
+    {
+      "@id": "urn:visionflow:linked:megatron-lm",
+      "vc:label": "Megatron-LM"
+    },
+    {
+      "@id": "urn:visionflow:linked:pipeline-parallelism",
+      "vc:label": "Pipeline Parallelism"
+    },
+    {
+      "@id": "urn:visionflow:linked:tensor-parallelism",
+      "vc:label": "Tensor Parallelism"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-synchronisation",
+      "vc:label": "Gradient Synchronisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:nvidia-nccl",
+      "vc:label": "NVIDIA NCCL"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:torchtitan",
+      "vc:label": "TorchTitan"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -48,73 +102,208 @@ public: true
   "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-    {"@id": "urn:ngm:class:cat-ai-infrastructure", "label": "AI Infrastructure"}
+    {
+      "@id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:all-gather-collective", "label": "All-Gather Collective"},
-      {"@id": "urn:ngm:class:reduce-scatter-collective", "label": "Reduce-Scatter Collective"},
-      {"@id": "urn:ngm:class:sharded-parameter", "label": "Sharded Parameter"},
-      {"@id": "urn:ngm:class:sharded-optimiser-state", "label": "Sharded Optimiser State"},
-      {"@id": "urn:ngm:class:sharded-gradient", "label": "Sharded Gradient"},
-      {"@id": "urn:ngm:class:distributed-checkpointing", "label": "Distributed Checkpointing"}
+      {
+        "@id": "urn:ngm:class:all-gather-collective",
+        "label": "All-Gather Collective"
+      },
+      {
+        "@id": "urn:ngm:class:reduce-scatter-collective",
+        "label": "Reduce-Scatter Collective"
+      },
+      {
+        "@id": "urn:ngm:class:sharded-parameter",
+        "label": "Sharded Parameter"
+      },
+      {
+        "@id": "urn:ngm:class:sharded-optimiser-state",
+        "label": "Sharded Optimiser State"
+      },
+      {
+        "@id": "urn:ngm:class:sharded-gradient",
+        "label": "Sharded Gradient"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-checkpointing",
+        "label": "Distributed Checkpointing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:collective-communication", "label": "Collective Communication"},
-      {"@id": "urn:ngm:class:gradient-synchronisation", "label": "Gradient Synchronisation"},
-      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "PyTorch"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-synchronisation",
+        "label": "Gradient Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-model-training", "label": "Large Language Model Training"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:model-scaling", "label": "Model Scaling"},
-      {"@id": "urn:ngm:class:checkpoint-resharding", "label": "Checkpoint Resharding"}
+      {
+        "@id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-scaling",
+        "label": "Model Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:checkpoint-resharding",
+        "label": "Checkpoint Resharding"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:zero-stage-3", "label": "ZeRO Stage 3"},
-      {"@id": "urn:ngm:class:data-parallelism", "label": "Data Parallelism"},
-      {"@id": "urn:ngm:class:distributed-checkpointing", "label": "Distributed Checkpointing"}
+      {
+        "@id": "urn:ngm:class:zero-stage-3",
+        "label": "ZeRO Stage 3"
+      },
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-checkpointing",
+        "label": "Distributed Checkpointing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:nvidia-nccl", "label": "NVIDIA NCCL"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-nccl",
+        "label": "NVIDIA NCCL"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "PyTorch"},
-      {"@id": "urn:ngm:class:gradient-checkpointing", "label": "Gradient Checkpointing"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"},
-      {"@id": "urn:ngm:class:safetensors", "label": "Safetensors"}
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "@id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-tuning"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:checkpoints", "label": "Checkpoints"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-tuning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deep-speed", "label": "DeepSpeed"},
-      {"@id": "urn:ngm:class:megatron-lm", "label": "Megatron-LM"},
-      {"@id": "urn:ngm:class:distributed-data-parallel", "label": "Distributed Data Parallel"}
+      {
+        "@id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "@id": "urn:ngm:class:megatron-lm",
+        "label": "Megatron-LM"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-data-parallel",
+        "label": "Distributed Data Parallel"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:checkpoints", "label": "Checkpoints"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:zero-redundancy-optimiser", "label": "ZeRO Redundancy Optimiser"},
-      {"@id": "urn:ngm:class:torchtitan", "label": "TorchTitan"},
-      {"@id": "urn:ngm:class:hugging-face-accelerate", "label": "Hugging Face Accelerate"},
-      {"@id": "urn:ngm:class:pipeline-parallelism", "label": "Pipeline Parallelism"},
-      {"@id": "urn:ngm:class:tensor-parallelism", "label": "Tensor Parallelism"},
-      {"@id": "urn:ngm:class:model-parallelism", "label": "Model Parallelism"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}
+      {
+        "@id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:zero-redundancy-optimiser",
+        "label": "ZeRO Redundancy Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:torchtitan",
+        "label": "TorchTitan"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-accelerate",
+        "label": "Hugging Face Accelerate"
+      },
+      {
+        "@id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:fully-sharded-data-parallel", "label": "Fully Sharded Data Parallel"}
+    {
+      "@id": "urn:ngm:class:fully-sharded-data-parallel",
+      "label": "Fully Sharded Data Parallel"
+    }
   ],
   "quality": 0.89,
   "provenance": {
@@ -125,41 +314,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fsdp:enriched2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:fsdp"},
-  "vc:resolutions": [
-    {"raw": "[[Distributed Training]]", "resolved": "urn:visionflow:linked:distributed-training", "kind": "StubLink"},
-    {"raw": "[[Checkpoints]]", "resolved": "urn:visionflow:linked:checkpoints", "kind": "StubLink"},
-    {"raw": "[[Data Parallelism]]", "resolved": "urn:visionflow:linked:data-parallelism", "kind": "StubLink"},
-    {"raw": "[[Model Parallelism]]", "resolved": "urn:visionflow:linked:model-parallelism", "kind": "StubLink"},
-    {"raw": "[[ZeRO Redundancy Optimiser]]", "resolved": "urn:visionflow:linked:zero-redundancy-optimiser", "kind": "StubLink"},
-    {"raw": "[[DeepSpeed]]", "resolved": "urn:visionflow:linked:deep-speed", "kind": "StubLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "StubLink"},
-    {"raw": "[[Collective Communication]]", "resolved": "urn:visionflow:linked:collective-communication", "kind": "StubLink"},
-    {"raw": "[[Gradient Checkpointing]]", "resolved": "urn:visionflow:linked:gradient-checkpointing", "kind": "StubLink"},
-    {"raw": "[[Mixed Precision Training]]", "resolved": "urn:visionflow:linked:mixed-precision-training", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[PyTorch]]", "resolved": "urn:visionflow:linked:pytorch", "kind": "StubLink"},
-    {"raw": "[[Megatron-LM]]", "resolved": "urn:visionflow:linked:megatron-lm", "kind": "StubLink"},
-    {"raw": "[[Pipeline Parallelism]]", "resolved": "urn:visionflow:linked:pipeline-parallelism", "kind": "StubLink"},
-    {"raw": "[[Tensor Parallelism]]", "resolved": "urn:visionflow:linked:tensor-parallelism", "kind": "StubLink"},
-    {"raw": "[[Gradient Synchronisation]]", "resolved": "urn:visionflow:linked:gradient-synchronisation", "kind": "StubLink"},
-    {"raw": "[[NVIDIA NCCL]]", "resolved": "urn:visionflow:linked:nvidia-nccl", "kind": "StubLink"},
-    {"raw": "[[Fine-tuning]]", "resolved": "urn:visionflow:linked:fine-tuning", "kind": "StubLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "StubLink"},
-    {"raw": "[[TorchTitan]]", "resolved": "urn:visionflow:linked:torchtitan", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
-}
-```
-
 - ### Definition
-  - Fully Sharded Data Parallel ([[FSDP]]) is a [[PyTorch]]-native [[Distributed Training]] technique that implements the [[ZeRO Redundancy Optimiser]] Stage 3 memory partitioning algorithm as a first-class framework primitive, sharding every model parameter tensor, its corresponding gradient tensor, and its associated [[Mixed Precision Training|optimiser]] state (Adam first and second moments plus FP32 master copy) across all data-parallel workers so that each rank persistently stores only a 1/N slice of the full model state, where N is the data-parallel world size. During the forward pass, the full parameter tensor for each module unit (FlatParameter or DTensor in FSDP2) is transiently reconstructed on every device via an all-gather collective operation from [[NVIDIA NCCL]], used for the local forward computation, and then immediately discarded so that only the shard is retained in [[GPU Compute]] memory; the backward pass mirrors this with a reduce-scatter collective to sum gradients across ranks and return each rank's gradient shard to its owning device. This all-gather-before-compute and reduce-scatter-after-backward pattern reduces per-device model state memory from O(N) — where standard [[Data Parallelism]] replicates the full model on every rank — to O(N/d) for d data-parallel ranks, enabling training of [[Large Language Models]] with tens to hundreds of billions of parameters on clusters where no single device could hold the full model. FSDP integrates natively with [[PyTorch]]'s autograd engine, [[Gradient Checkpointing|activation checkpointing]], [[Mixed Precision Training]], and the torch.distributed.checkpoint (DCP) API for sharded [[Checkpoints]], allowing each rank to write its parameter shard independently to a shared filesystem or object store and reload with flexible resharding at inference or fine-tuning time even when the target cluster has a different number of GPUs. FSDP2, released in [[PyTorch]] 2.3 and stabilised in PyTorch 2.6, replaced the FlatParameter sharding representation with a per-parameter DTensor representation, achieving improved composability with [[Tensor Parallelism]], [[Pipeline Parallelism]], and torch.compile, reducing per-GPU memory requirements by approximately 7% over FSDP1, and improving multi-node scaling efficiency for 70B and 405B parameter models to levels competitive with [[DeepSpeed]] ZeRO Stage 3 while eliminating the external dependency. [[TorchTitan]], Meta's reference implementation for production-scale [[Large Language Models]] pre-training, uses FSDP2 as its default 1D parallelism strategy and combines it with tensor and pipeline parallelism (4D parallelism) for models exceeding single-node capacity, using DCP-based asynchronous sharded checkpointing that reduces checkpoint overhead by five to fifteen times versus synchronous single-rank serialisation. FSDP's sharded checkpointing capability — the ability to save and restore training state across different cluster sizes — is its most practically distinctive feature relative to [[DeepSpeed]] ZeRO Stage 3, making it the preferred tool for workflows where models must move between training clusters of different sizes, between training and serving environments, or between pre-training and [[Fine-tuning]] stages with different degrees of parallelism.
+  - Fully Sharded Data Parallel ([[FSDP]]) is a [[PyTorch]]-native [[Distributed Training]] technique that implements the [[ZeRO Redundancy Optimiser]] Stage 3 memory partitioning algorithm as a first-class framework primitive, sharding every model parameter tensor, its corresponding gradient tensor, and its associated [[Mixed Precision Training|optimiser]] state (Adam first and second moments plus FP32 master copy) across all data-parallel workers so that each rank persistently stores only a 1/N slice of the full model state, where N is the data-parallel world size. During the forward pass, the full parameter tensor for each module unit (FlatParameter or DTensor in FSDP2) is transiently reconstructed on every device via an all-gather collective operation from [[NVIDIA NCCL]], used for the local forward computation, and then immediately discarded so that only the shard is retained in [[GPU Compute]] memory; the backward pass mirrors this with a reduce-scatter collective to sum gradients across ranks and return each rank's gradient shard to its owning device. This all-gather-before-compute and reduce-scatter-after-backward pattern reduces per-device model state memory from O(N) — where standard [[Data Parallelism]] replicates the full model on every rank — to O(N/d) for d data-parallel ranks, enabling training of [[Large Language Models]] with tens to hundreds of billions of parameters on clusters where no single device [private] hold the full model. FSDP integrates natively with [[PyTorch]]'s autograd engine, [[Gradient Checkpointing|activation checkpointing]], [[Mixed Precision Training]], and the torch.distributed.checkpoint (DCP) API for sharded [[Checkpoints]], allowing each rank to write its parameter shard independently to a shared filesystem or object store and reload with flexible resharding at inference or fine-tuning time even when the target cluster has a different number of GPUs. FSDP2, released in [[PyTorch]] 2.3 and stabilised in PyTorch 2.6, replaced the FlatParameter sharding representation with a per-parameter DTensor representation, achieving improved composability with [[Tensor Parallelism]], [[Pipeline Parallelism]], and torch.compile, reducing per-GPU memory requirements by approximately 7% over FSDP1, and improving multi-node scaling efficiency for 70B and 405B parameter models to levels competitive with [[DeepSpeed]] ZeRO Stage 3 while eliminating the external dependency. [[TorchTitan]], Meta's reference implementation for production-scale [[Large Language Models]] pre-training, uses FSDP2 as its default 1D parallelism strategy and combines it with tensor and pipeline parallelism (4D parallelism) for models exceeding single-node capacity, using DCP-based asynchronous sharded checkpointing that reduces checkpoint overhead by five to fifteen times versus synchronous single-rank serialisation. FSDP's sharded checkpointing capability — the ability to save and restore training state across different cluster sizes — is its most practically distinctive feature relative to [[DeepSpeed]] ZeRO Stage 3, making it the preferred tool for workflows where models must move between training clusters of different sizes, between training and serving environments, or between pre-training and [[Fine-tuning]] stages with different degrees of parallelism.
 
 - ### Semantic Classification
   - owl-class:: ml:FSDP
@@ -407,7 +563,7 @@ public: true
 
   **NVLink Domain Expansion**: NVIDIA's NVLink roadmap (GB200 NVL72 → potential GX200 NVL144 or larger in future generations) is expanding the maximum FSDP world size achievable with NVLink bandwidth from 72 to potentially 144+ GPUs, reducing the bandwidth advantage of intra-node vs. inter-node communication and enabling larger FSDP world sizes without InfiniBand.
 
-  **CXL-Augmented FSDP**: CXL (Compute Express Link) 3.0 memory pooling enables shared DRAM accessible across multiple servers, potentially enabling a new tier in FSDP's memory hierarchy between HBM and NVMe: CXL-attached pooled DRAM could serve as the parameter shard store for ranks that have insufficient local HBM for their FSDP slice, without the latency penalty of NVMe.
+  **CXL-Augmented FSDP**: CXL (Compute Express Link) 3.0 memory pooling enables shared DRAM accessible across multiple servers, potentially enabling a new tier in FSDP's memory hierarchy between HBM and NVMe: CXL-attached pooled DRAM [private] serve as the parameter shard store for ranks that have insufficient local HBM for their FSDP slice, without the latency penalty of NVMe.
 
   **Float8 FSDP**: [[PyTorch]]'s Float8 training support (FP8 for activations and weights in attention and MLP layers, while maintaining BF16 for master weights) is being integrated with FSDP2 to enable FP8 all-gather communication, reducing communication volume by 2× vs. BF16 all-gather and approximately matching the communication volume of DDP all-reduce at the same model precision.
 

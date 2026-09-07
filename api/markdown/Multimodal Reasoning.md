@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multimodal Reasoning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Multimodal reasoning is the capability of an AI system to integrate and draw inferences across multiple input modalities such as text, images, audio, and video. It requires aligning representations from heterogeneous sources into a shared semantic space so that conclusions depend jointly on all available signals. This underpins tasks like visual question answering, document understanding, and grounded dialogue where no single modality is sufficient.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision Language Model"},
-      {"@id": "urn:ngm:class:attention", "label": "Attention"}
+      {
+        "@id": "urn:ngm:class:vision-language-model",
+        "label": "Vision Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:attention",
+        "label": "Attention"
+      }
     ]
   },
   "quality": 0.72

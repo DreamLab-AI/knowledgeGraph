@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Subsumption Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:subsumption-architecture:b860841f2dbd",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bb3a84b2f2b999344f3ea124417a4d2740223a30ed98e5fc0adc462d171c3980"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Autonomous Agent]]",
-      "resolved": "urn:visionflow:linked:autonomous-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Swarm Intelligence]]",
-      "resolved": "urn:visionflow:linked:swarm-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Agent System]]",
-      "resolved": "urn:visionflow:linked:multi-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics Domain]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Subsumption architecture is a layered control method for autonomous agents in which simple reactive behaviours are stacked, with higher layers able to suppress or override lower ones to produce competent behaviour without a central world model.

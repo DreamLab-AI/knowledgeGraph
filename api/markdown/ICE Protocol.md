@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ICE Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Interactive Connectivity Establishment (ICE) is an IETF framework that enables two peers behind network address translators (NATs) or firewalls to discover and negotiate the best path for direct media and data connections. It gathers candidate transport addresses via STUN and TURN servers, then performs connectivity checks to select a working candidate pair. ICE is a foundational component of real-time peer-to-peer communication.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:web-rtc", "label": "WebRTC"}],
-    "enables": [{"@id": "urn:ngm:class:web-rtc", "label": "WebRTC"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ]
   },
   "quality": 0.72
 }

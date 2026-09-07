@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0104 hand guiding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:rb-0103-collaborative-operation", "label": "rb 0103 collaborative operation"}
+      {
+        "@id": "urn:ngm:class:rb-0103-collaborative-operation",
+        "label": "rb 0103 collaborative operation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"},
-      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"}
+      {
+        "@id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0007-collaborative-robot", "label": "rb 0007 collaborative robot"},
-      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"},
-      {"@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring", "label": "rb 0105 speed and separation monitoring"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:rb-0007-collaborative-robot",
+        "label": "rb 0007 collaborative robot"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "rb 0105 speed and separation monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"}
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0104-hand-guiding:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ef0616f7ecd1f7c0ca7757fcf4b3c35ad3cb4e4a4171f2e13599835815065cde"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Hand Guiding** is a collaborative robot operation mode in which the operator physically grasps and moves the robot arm directly, guided by force-torque sensing and impedance control, while safety systems enforce speed and force limits per ISO/TS 15066. The technique enables intuitive kinesthetic teaching and direct human co-manipulation during assembly or finishing tasks.

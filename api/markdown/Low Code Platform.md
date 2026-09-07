@@ -1,36 +1,121 @@
----
-public: true
----
-
-# Low Code Platform
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:low-code-platform", "@type":"Page", "title":"Low Code Platform", "vc:slug":"low-code-platform", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:low-code-platform",
-  "@type":"Class",
-  "label":"Low Code Platform",
-  "definition":"A low-code platform is a software development environment that lets users build applications primarily through visual, model-driven interfaces such as drag-and-drop component composition, declarative configuration, and pre-built connectors, while still permitting hand-written code for custom logic. It abstracts away much boilerplate of conventional programming, accelerating delivery and broadening who can build software to include semi-technical citizen developers. Modern platforms increasingly embed AI assistance for component suggestion, data-model inference, and automated workflow generation, positioning them as a core layer in enterprise hyperautomation strategies.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:application-development","label":"Application Development"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:software-development","label":"Software Development"}],
-    "uses":[{"@id":"urn:ngm:class:workflow-automation","label":"Workflow Automation"},{"@id":"urn:ngm:class:business-process-automation","label":"Business Process Automation"}],
-    "enables":[{"@id":"urn:ngm:class:hyperautomation","label":"Hyperautomation"},{"@id":"urn:ngm:class:application-development","label":"Application Development"}],
-    "supports":[{"@id":"urn:ngm:class:robotic-process-automation","label":"Robotic Process Automation"}],
-    "requires":[{"@id":"urn:ngm:class:platform-engineering","label":"Platform Engineering"}],
-    "dependsOn":[{"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"}],
-    "implements":[{"@id":"urn:ngm:class:workflow-automation","label":"Workflow Automation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:hyperautomation","label":"Hyperautomation"},{"@id":"urn:ngm:class:robotic-process-automation","label":"Robotic Process Automation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:business-process-automation","label":"Business Process Automation"},{"@id":"urn:ngm:class:platform-engineering","label":"Platform Engineering"}]
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:low-code-platform",
+  "@type": "Page",
+  "title": "Low Code Platform",
+  "vc:slug": "low-code-platform",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:low-code-platform",
+  "@type": "Class",
+  "label": "Low Code Platform",
+  "definition": "A low-code platform is a software development environment that lets users build applications primarily through visual, model-driven interfaces such as drag-and-drop component composition, declarative configuration, and pre-built connectors, while still permitting hand-written code for custom logic. It abstracts away much boilerplate of conventional programming, accelerating delivery and broadening who can build software to include semi-technical citizen developers. Modern platforms increasingly embed AI assistance for component suggestion, data-model inference, and automated workflow generation, positioning them as a core layer in enterprise hyperautomation strategies.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:application-development",
+      "label": "Application Development"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
+      },
+      {
+        "@id": "urn:ngm:class:application-development",
+        "label": "Application Development"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:no-code-low-code","label":"No-Code / Low-Code Development"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:no-code-low-code",
+      "label": "No-Code / Low-Code Development"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

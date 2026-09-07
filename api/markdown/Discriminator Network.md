@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Discriminator Network
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -34,37 +28,76 @@ public: true
   ],
   "relations": {
     "contrastsWith": [
-      { "@id": "urn:ngm:class:generator-network", "label": "Generator Network" }
+      {
+        "@id": "urn:ngm:class:generator-network",
+        "label": "Generator Network"
+      }
     ],
     "hasPart": [
-      { "@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network" }
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:adversarial-training", "label": "Adversarial Training" },
-      { "@id": "urn:ngm:class:loss-function", "label": "Loss Function" }
+      {
+        "@id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks" }
+      {
+        "@id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:backpropagation", "label": "Backpropagation" },
-      { "@id": "urn:ngm:class:neural-network", "label": "Neural Network" }
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:image-generation", "label": "Image Generation" }
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:adversarial-training", "label": "Adversarial Training" }
+      {
+        "@id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:deep-learning", "label": "Deep Learning" },
-      { "@id": "urn:ngm:class:gan", "label": "GAN" }
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gan",
+        "label": "GAN"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:loss-function", "label": "Loss Function" }
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:generator-network", "label": "Generator Network" }
+      {
+        "@id": "urn:ngm:class:generator-network",
+        "label": "Generator Network"
+      }
     ]
   },
   "sameAs": [],
@@ -198,7 +231,7 @@ public: true
     - The DCGAN architecture (Radford, Metz, Chintala, ICLR 2016) was the first major architectural step forward, replacing fully connected layers with strided convolutional layers in the discriminator and adopting batch normalisation and LeakyReLU activations throughout. These design choices imported the representational power of convolutional image classifiers into the GAN framework, enabling the discriminator to exploit the hierarchical spatial structure of natural images. The strided convolution in the discriminator spatially downsamples the input progressively, building from low-level texture features in early layers to high-level semantic features in later layers, mirroring the architecture of a VGG-style classification network. DCGAN produced the first stable training on face generation at 64×64 resolution and enabled meaningful arithmetic in the generator's latent space, demonstrating that the framework learned semantically structured representations.
     - Despite DCGAN's success, GAN training remained notoriously unstable throughout 2015–2017. The three canonical failure modes — mode collapse (the generator collapses to producing a small subset of possible outputs), training oscillation (the discriminator and generator cycle without converging), and discriminator dominance (the discriminator achieves near-perfect accuracy, starving the generator of gradient) — all trace to the discriminator's loss function formulation. Goodfellow et al.'s original objective is equivalent to minimising the Jensen-Shannon (JS) divergence between p_data and p_g. The JS divergence is bounded (maximum value log 2) and saturates to its maximum when p_data and p_g have disjoint support — precisely the condition early in training, when the generator produces obviously fake samples. At saturation, the discriminator provides effectively zero gradient to the generator, making learning impossible from the generator's perspective.
     - Martin Arjovsky, Soumith Chintala, and Léon Bottou's WGAN paper (ICML 2017) resolved this mathematically by replacing the discriminator with a "critic" function that estimates the Wasserstein-1 (Earth Mover's) distance between p_data and p_g rather than the JS divergence. The Wasserstein distance does not saturate when the distributions have disjoint support — it equals the minimum expected work required to transform one distribution into the other — and therefore provides a smooth, non-zero gradient signal throughout training regardless of how distinguishable real and fake samples are. The critic must be constrained to be 1-Lipschitz to ensure the Wasserstein distance estimate is well-defined; Arjovsky et al. enforced this by clipping the critic's weight values to a small interval [-c, c] after each update, a practical but theoretically imperfect solution that creates a restricted function class and can cause slow convergence or exploding gradients. Gulrajani, Ahmed, Arjovsky, Dumoulin, and Courville (NeurIPS 2017) resolved the weight-clipping issue with the gradient penalty (WGAN-GP): instead of constraining weights, they add a regularisation term to the critic's loss that directly penalises the norm of the critic's gradient at points interpolated linearly between real and generated samples, enforcing the Lipschitz constraint softly and empirically. WGAN-GP became the standard discriminator training paradigm for several years, providing reliable training across a wide range of architectures and datasets.
-    - Spectral normalisation (Miyato, Kataoka, Koyama, Yoshida, ICLR 2018) provided a computationally cheaper alternative to gradient penalty that could be applied to every weight matrix in the discriminator. By dividing each weight matrix by its spectral norm (the largest singular value, estimated efficiently by the power iteration method), spectral normalisation ensures each layer is 1-Lipschitz, making the composed discriminator network globally Lipschitz-1 without any per-batch penalty computation. The simplicity and effectiveness of spectral normalisation made it the default discriminator stabilisation technique in high-resolution GAN architectures including SAGAN (Zhang et al., 2019), BigGAN (Brock et al., 2019), StyleGAN2 (Karras et al., 2020), and StyleGAN-XL (Sauer et al., 2022), cementing the discriminator as a compositionally normalised convolutional classifier with guaranteed Lipschitz bounds.
+    - Spectral normalisation (Miyato, Kataoka, Koyama, Yoshida, ICLR 2018) provided a computationally cheaper alternative to gradient penalty that [private] be applied to every weight matrix in the discriminator. By dividing each weight matrix by its spectral norm (the largest singular value, estimated efficiently by the power iteration method), spectral normalisation ensures each layer is 1-Lipschitz, making the composed discriminator network globally Lipschitz-1 without any per-batch penalty computation. The simplicity and effectiveness of spectral normalisation made it the default discriminator stabilisation technique in high-resolution GAN architectures including SAGAN (Zhang et al., 2019), BigGAN (Brock et al., 2019), StyleGAN2 (Karras et al., 2020), and StyleGAN-XL (Sauer et al., 2022), cementing the discriminator as a compositionally normalised convolutional classifier with guaranteed Lipschitz bounds.
     - From 2022 onwards, the research community partially pivoted toward [[Diffusion Model]] architectures for high-quality image generation, which avoid the adversarial training instabilities of GANs by replacing the discriminator–generator minimax game with a denoising score-matching objective. However, discriminators did not disappear from generative modelling: they re-emerged in hybrid roles. Xiao et al. (2022) "Denoising Diffusion GANs" used a discriminator-conditioned denoising step to accelerate diffusion sampling from thousands to a few steps. Sauer et al. (2024) "Adversarial Diffusion Distillation" used a frozen, pretrained discriminator feature extractor as a teacher signal for distilling a multi-step diffusion model into a single-step generator — combining diffusion model image quality with GAN-speed inference. By 2025, discriminator-based perceptual losses remained ubiquitous in image super-resolution (Real-ESRGAN), image-to-image translation (CycleGAN, Pix2Pix), and video synthesis pipelines, even where the primary generator architecture had shifted away from the classic GAN minimax formulation.
   - ## Formal Objective and Training Algorithm
     - **Standard GAN value function (Goodfellow et al., 2014):**
@@ -299,7 +332,7 @@ public: true
     - **Perceptual loss (discriminator-as-critic):** Using a pretrained or jointly-trained discriminator's intermediate feature representations as a perceptual similarity metric between generated and target images, replacing or supplementing VGG-based perceptual loss. The discriminator's features are more task-specific than generic ImageNet classification features, providing more relevant texture-quality guidance for the generator.
     - **Label smoothing:** Replacing hard labels (1 for real, 0 for fake) with soft labels (0.9 for real, 0.1 for fake) in the discriminator's binary cross-entropy loss. Prevents the discriminator from becoming over-confident, which can cause poorly calibrated gradients for the generator and training instability.
   - ## Future Directions (2026–2030)
-    - **Universal multi-modal critics as foundation model components:** As foundation models unify text, image, video, and audio generation, discriminator networks are evolving toward universal multi-modal critics trained on heterogeneous datasets across modalities. A single discriminator backbone (e.g., a vision-language transformer) trained on real versus AI-generated content across modalities could provide unified adversarial feedback for multi-modal generation, analogous to the way CLIP provides unified visual-textual feature representations. Research in 2025–2026 on multi-modal content authentication using discriminator-style classifiers signals this convergence.
+    - **Universal multi-modal critics as foundation model components:** As foundation models unify text, image, video, and audio generation, discriminator networks are evolving toward universal multi-modal critics trained on heterogeneous datasets across modalities. A single discriminator backbone (e.g., a vision-language transformer) trained on real versus AI-generated content across modalities [private] provide unified adversarial feedback for multi-modal generation, analogous to the way CLIP provides unified visual-textual feature representations. Research in 2025–2026 on multi-modal content authentication using discriminator-style classifiers signals this convergence.
     - **Discriminators in RLHF reward modelling convergence:** The Reinforcement Learning from Human Feedback (RLHF) reward model is structurally a discriminator trained on human preference comparison pairs (preferred vs. dispreferred completions) rather than real vs. fake pairs. The conceptual and architectural convergence of GAN discriminator methodology with RLHF reward modelling is expected to yield hybrid training schemes where discriminator networks provide dense per-token adversarial feedback signals as a complement to sparse human preference labels in aligning [[Large Language Model]] outputs toward human preferences. Research on using discriminator-like models to automatically generate preference labels (AI feedback) is an active frontier.
     - **Formal verification for high-stakes discrimination:** As discriminators are deployed in high-stakes applications — medical diagnosis, deepfake detection for legal proceedings, financial fraud detection — there is growing pressure to certify discriminator decisions with provable bounds on false acceptance and false rejection rates. Interval bound propagation, abstract interpretation, and randomised smoothing techniques from adversarial robustness research are being extended to discriminator verification, providing certified guarantees rather than merely empirical accuracy on held-out test sets.
     - **Quantum-classical hybrid discriminators:** Preliminary research (2025–) explores replacing selected convolutional layers in discriminators with quantum circuit layers for molecular and materials data classification tasks, where quantum feature maps may more naturally capture physical symmetry constraints (permutation invariance, gauge invariance) than classical convolutions. Discriminators in molecular generation GANs (MolGAN, De Cao and Kipf, 2018) are a natural starting point given their inherently graph-structured inputs matching quantum circuit data representations.

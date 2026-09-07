@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - EconomicLayer
----
-
-# Economic Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,26 +75,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:economic-layer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:017a7b088a0111616026f50d83ea5f828b41a1a58bab88af76f2bb39dc0bc7c4"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The EconomicLayer represents the abstraction level of implemented economic mechanisms, incentive structures, market designs, resource allocation systems, and game-theoretic implementations that govern economic behavior in blockchain and distributed systems. This layer encompasses concrete economic implementations including token emission schedules (Bitcoin's halving schedule, Ethereum's changing issuance policy), fee market implementations (EIP-1559's base fee adjustment mechanism, priority fee auctions), incentive mechanism implementations (mining reward distribution, staking yield calculations, validator reward formulas), penalty mechanisms (slashing implementations specifying exact penalty amounts and conditions), market mechanism implementations (automated market maker formulas, bonding curves, liquidity pool mechanics), resource pricing mechanisms (gas price mechanisms, storage rent, computation pricing), economic security implementations (cost-of-attack calculations, security budget allocations), and game-theoretic mechanism implementations (auction mechanisms, voting systems, coordination games). Unlike ConceptualLayer which addresses abstract economic principles and theories, EconomicLayer focuses on concrete economic mechanism implementations with specific parameters, formulas, and behaviors. Unlike ProtocolLayer which addresses protocol mechanics broadly, EconomicLayer emphasizes economic aspects: incentive compatibility, market efficiency, resource allocation, and economic security.

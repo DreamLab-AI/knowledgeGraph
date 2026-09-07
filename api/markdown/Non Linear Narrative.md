@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Non-Linear Narrative
----
-
-# Non Linear Narrative
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +76,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:non-linear-narrative:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:baa865c974122d3c8bb80561a21600cfb89391547149e9f1a2fcc7c95148c419"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Player Agency]]",
-      "resolved": "urn:visionflow:linked:player-agency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Narrative Structure]]",
-      "resolved": "urn:visionflow:owl:class:narrative-structure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A storytelling approach where events are presented out of chronological order or where audience choices create branching paths through the narrative, allowing multiple ways to experience story events based on interactions and decisions.

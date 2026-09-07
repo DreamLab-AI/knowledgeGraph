@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Programmable Finance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Programmable finance is the encoding of financial logic, agreements, and assets as executable code on blockchains, so that payments, lending, settlement, and compliance execute automatically and verifiably. It is enabled by smart contracts that compose into open, permissionless financial primitives. It underpins decentralised finance and emerging layered scaling on networks such as Bitcoin.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:de-fi", "label": "DeFi"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:btc-layer-3", "label": "BTC Layer 3"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ]
   },
   "quality": 0.72

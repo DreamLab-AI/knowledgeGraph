@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Foreign Exchange Market
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

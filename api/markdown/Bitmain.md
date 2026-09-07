@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitmain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bitmain:433635da6670",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c2c28820550c2fe927c6ef42a6c498a941fb0cda7985c711cb00eaf9665b4ba2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Mining]]",
-      "resolved": "urn:visionflow:linked:bitcoin-mining",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AntPool]]",
-      "resolved": "urn:visionflow:linked:ant-pool",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hardware]]",
-      "resolved": "urn:visionflow:linked:hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ASIC]]",
-      "resolved": "urn:visionflow:linked:asic",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.bitmain.com]]",
-      "resolved": "urn:visionflow:linked:https-www-bitmain-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://shop.bitmain.com]]",
-      "resolved": "urn:visionflow:linked:https-shop-bitmain-com",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Bitmain is a Chinese company that designs and manufactures application-specific integrated circuit mining hardware, best known for its Antminer product line. It also operates mining services.

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Patch Management
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:patch-management", "@type":"Page", "title":"Patch Management", "vc:slug":"patch-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:patch-management",
+  "@type": "Page",
+  "title": "Patch Management",
+  "vc:slug": "patch-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

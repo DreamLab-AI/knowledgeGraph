@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Infrastructure Investment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-infrastructure-investment",
   "title": "AI Infrastructure Investment",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Data Center Construction", "Project Stargate"],
+  "vc:outboundWikilinks": [
+    "Data Center Construction",
+    "Project Stargate"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}, {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}, {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

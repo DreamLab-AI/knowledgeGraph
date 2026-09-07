@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Protection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,24 +21,57 @@ public: true
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}
+    {
+      "@id": "urn:ngm:class:consumer-protection",
+      "label": "Consumer Protection"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:user-safety", "label": "User Safety"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+      {
+        "@id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:online-safety-act-2023", "label": "Online Safety Act 2023"},
-      {"@id": "urn:ngm:class:uk-online-safety-act", "label": "UK Online Safety Act"},
-      {"@id": "urn:ngm:class:content-moderation-standards", "label": "Content Moderation Standards"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:digital-well-being-index", "label": "Digital Well-Being Index"}
+      {
+        "@id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "@id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation-standards",
+        "label": "Content Moderation Standards"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:digital-well-being-index",
+        "label": "Digital Well-Being Index"
+      }
     ]
   },
   "quality": 0.8

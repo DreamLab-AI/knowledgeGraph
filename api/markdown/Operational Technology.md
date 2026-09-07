@@ -1,37 +1,126 @@
----
-public: true
----
-
-# Operational Technology
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:operational-technology", "@type":"Page", "title":"Operational Technology", "vc:slug":"operational-technology", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:operational-technology",
+  "@type": "Page",
+  "title": "Operational Technology",
+  "vc:slug": "operational-technology",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:operational-technology",
-  "@type":"Class",
-  "label":"Operational Technology",
-  "definition":"Operational technology (OT) is the hardware and software that directly monitors and controls physical processes, devices, and infrastructure in industrial environments. It encompasses industrial control systems such as SCADA and distributed control systems, programmable logic controllers, sensors, and actuators that manage manufacturing, energy, and utilities. OT prioritises availability, safety, and real-time determinism, distinguishing it from information technology, with which it increasingly converges under Industry 4.0.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"},{"@id":"urn:ngm:class:infra-computing-and-cloud","label":"Computing and Cloud"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:scada","label":"SCADA"},{"@id":"urn:ngm:class:process-control","label":"Process Control"}],
-    "uses":[{"@id":"urn:ngm:class:opc-ua","label":"OPC UA"},{"@id":"urn:ngm:class:telemetry","label":"Telemetry"}],
-    "requires":[{"@id":"urn:ngm:class:safety","label":"Safety"},{"@id":"urn:ngm:class:iec-62443","label":"IEC 62443"}],
-    "supports":[{"@id":"urn:ngm:class:industrial-automation","label":"Industrial Automation"},{"@id":"urn:ngm:class:predictive-maintenance","label":"Predictive Maintenance"}],
-    "enables":[{"@id":"urn:ngm:class:automation","label":"Automation"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:iec-62443","label":"IEC 62443"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:industry-4-0","label":"Industry 4.0"},{"@id":"urn:ngm:class:cyber-physical-systems","label":"Cyber-Physical Systems"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:digital-twin","label":"Digital Twin"},{"@id":"urn:ngm:class:embedded-systems","label":"Embedded Systems"},{"@id":"urn:ngm:class:resilience","label":"Resilience"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:operational-technology",
+  "@type": "Class",
+  "label": "Operational Technology",
+  "definition": "Operational technology (OT) is the hardware and software that directly monitors and controls physical processes, devices, and infrastructure in industrial environments. It encompasses industrial control systems such as SCADA and distributed control systems, programmable logic controllers, sensors, and actuators that manage manufacturing, energy, and utilities. OT prioritises availability, safety, and real-time determinism, distinguishing it from information technology, with which it increasingly converges under Industry 4.0.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "@id": "urn:ngm:class:process-control",
+        "label": "Process Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      },
+      {
+        "@id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      },
+      {
+        "@id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical Systems"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

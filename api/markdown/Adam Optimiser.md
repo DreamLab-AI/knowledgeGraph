@@ -1,12 +1,3 @@
----
-public: true
-aliases:
-  - Adam Optimizer
-  - Adaptive Moment Estimation
-  - AdaM
----
-
-# adam optimiser
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -16,50 +7,182 @@ aliases:
   "title": "adam optimiser",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:stochastic-gradient-descent", "vc:label": "Stochastic Gradient Descent"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:rmsprop", "vc:label": "RMSProp"},
-    {"@id": "urn:visionflow:linked:adagrad", "vc:label": "Adagrad"},
-    {"@id": "urn:visionflow:linked:adamw", "vc:label": "AdamW"},
-    {"@id": "urn:visionflow:linked:adafactor", "vc:label": "AdaFactor"},
-    {"@id": "urn:visionflow:linked:weight-decay", "vc:label": "Weight Decay"},
-    {"@id": "urn:visionflow:linked:gradient-clipping", "vc:label": "Gradient Clipping"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:linked:hyperparameter-optimisation", "vc:label": "Hyperparameter Optimisation"},
-    {"@id": "urn:visionflow:linked:learning-rate-schedule", "vc:label": "Learning Rate Schedule"},
-    {"@id": "urn:visionflow:linked:adaptive-learning-rate", "vc:label": "Adaptive Learning Rate"},
-    {"@id": "urn:visionflow:linked:exponential-moving-average", "vc:label": "Exponential Moving Average"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:vision-transformer", "vc:label": "Vision Transformer"},
-    {"@id": "urn:visionflow:linked:vanishing-gradient-problem", "vc:label": "Vanishing Gradient Problem"},
-    {"@id": "urn:visionflow:linked:batch-normalisation", "vc:label": "Batch Normalisation"},
-    {"@id": "urn:visionflow:linked:automatic-differentiation", "vc:label": "Automatic Differentiation"},
-    {"@id": "urn:visionflow:linked:optimisation-algorithm", "vc:label": "Optimisation Algorithm"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:sgd-with-momentum", "vc:label": "SGD with Momentum"},
-    {"@id": "urn:visionflow:linked:lion-optimiser", "vc:label": "Lion Optimiser"},
-    {"@id": "urn:visionflow:linked:distributed-training", "vc:label": "Distributed Training"},
-    {"@id": "urn:visionflow:linked:gradient-accumulation", "vc:label": "Gradient Accumulation"},
-    {"@id": "urn:visionflow:linked:muon-optimiser", "vc:label": "Muon Optimiser"},
-    {"@id": "urn:visionflow:linked:recurrent-neural-network", "vc:label": "Recurrent Neural Network"},
-    {"@id": "urn:visionflow:linked:generalisation", "vc:label": "Generalisation"},
-    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
-    {"@id": "urn:visionflow:linked:numerical-stability", "vc:label": "Numerical Stability"},
-    {"@id": "urn:visionflow:linked:mixed-precision-training", "vc:label": "Mixed Precision Training"},
-    {"@id": "urn:visionflow:linked:policy-gradient-methods", "vc:label": "Policy Gradient Methods"},
-    {"@id": "urn:visionflow:linked:convergence", "vc:label": "Convergence"},
-    {"@id": "urn:visionflow:linked:amsgrad", "vc:label": "AMSGrad"}
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-gradient-descent",
+      "vc:label": "Stochastic Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:rmsprop",
+      "vc:label": "RMSProp"
+    },
+    {
+      "@id": "urn:visionflow:linked:adagrad",
+      "vc:label": "Adagrad"
+    },
+    {
+      "@id": "urn:visionflow:linked:adamw",
+      "vc:label": "AdamW"
+    },
+    {
+      "@id": "urn:visionflow:linked:adafactor",
+      "vc:label": "AdaFactor"
+    },
+    {
+      "@id": "urn:visionflow:linked:weight-decay",
+      "vc:label": "Weight Decay"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-clipping",
+      "vc:label": "Gradient Clipping"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-optimisation",
+      "vc:label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-rate-schedule",
+      "vc:label": "Learning Rate Schedule"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-learning-rate",
+      "vc:label": "Adaptive Learning Rate"
+    },
+    {
+      "@id": "urn:visionflow:linked:exponential-moving-average",
+      "vc:label": "Exponential Moving Average"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:vision-transformer",
+      "vc:label": "Vision Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:vanishing-gradient-problem",
+      "vc:label": "Vanishing Gradient Problem"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-normalisation",
+      "vc:label": "Batch Normalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic-differentiation",
+      "vc:label": "Automatic Differentiation"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation-algorithm",
+      "vc:label": "Optimisation Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:sgd-with-momentum",
+      "vc:label": "SGD with Momentum"
+    },
+    {
+      "@id": "urn:visionflow:linked:lion-optimiser",
+      "vc:label": "Lion Optimiser"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-training",
+      "vc:label": "Distributed Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-accumulation",
+      "vc:label": "Gradient Accumulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:muon-optimiser",
+      "vc:label": "Muon Optimiser"
+    },
+    {
+      "@id": "urn:visionflow:linked:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:generalisation",
+      "vc:label": "Generalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularisation",
+      "vc:label": "Regularisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:numerical-stability",
+      "vc:label": "Numerical Stability"
+    },
+    {
+      "@id": "urn:visionflow:linked:mixed-precision-training",
+      "vc:label": "Mixed Precision Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-gradient-methods",
+      "vc:label": "Policy Gradient Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:convergence",
+      "vc:label": "Convergence"
+    },
+    {
+      "@id": "urn:visionflow:linked:amsgrad",
+      "vc:label": "AMSGrad"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -93,52 +216,148 @@ aliases:
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"},
-      {"@id": "urn:ngm:class:convergence", "label": "Convergence"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"},
-      {"@id": "urn:ngm:class:exponential-moving-average", "label": "Exponential Moving Average"},
-      {"@id": "urn:ngm:class:bias-correction", "label": "Bias Correction"}
+      {
+        "@id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:exponential-moving-average",
+        "label": "Exponential Moving Average"
+      },
+      {
+        "@id": "urn:ngm:class:bias-correction",
+        "label": "Bias Correction"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:adaptive-learning-rate", "label": "Adaptive Learning Rate"},
-      {"@id": "urn:ngm:class:momentum-optimisation", "label": "Momentum Optimisation"}
+      {
+        "@id": "urn:ngm:class:adaptive-learning-rate",
+        "label": "Adaptive Learning Rate"
+      },
+      {
+        "@id": "urn:ngm:class:momentum-optimisation",
+        "label": "Momentum Optimisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Mini-Batch Gradient"},
-      {"@id": "urn:ngm:class:gradient-clipping", "label": "Gradient Clipping"}
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Mini-Batch Gradient"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-clipping",
+        "label": "Gradient Clipping"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rmsprop", "label": "RMSProp"},
-      {"@id": "urn:ngm:class:adagrad", "label": "Adagrad"},
-      {"@id": "urn:ngm:class:sgd-with-momentum", "label": "SGD with Momentum"},
-      {"@id": "urn:ngm:class:lion-optimiser", "label": "Lion Optimiser"},
-      {"@id": "urn:ngm:class:muon-optimiser", "label": "Muon Optimiser"}
+      {
+        "@id": "urn:ngm:class:rmsprop",
+        "label": "RMSProp"
+      },
+      {
+        "@id": "urn:ngm:class:adagrad",
+        "label": "Adagrad"
+      },
+      {
+        "@id": "urn:ngm:class:sgd-with-momentum",
+        "label": "SGD with Momentum"
+      },
+      {
+        "@id": "urn:ngm:class:lion-optimiser",
+        "label": "Lion Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:muon-optimiser",
+        "label": "Muon Optimiser"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:weight-decay", "label": "Weight Decay"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:adamw", "label": "AdamW"},
-      {"@id": "urn:ngm:class:adafactor", "label": "AdaFactor"},
-      {"@id": "urn:ngm:class:amsgrad", "label": "AMSGrad"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:weight-decay",
+        "label": "Weight Decay"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:adamw",
+        "label": "AdamW"
+      },
+      {
+        "@id": "urn:ngm:class:adafactor",
+        "label": "AdaFactor"
+      },
+      {
+        "@id": "urn:ngm:class:amsgrad",
+        "label": "AMSGrad"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ]
   },
   "sameAs": [
@@ -156,70 +375,6 @@ aliases:
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adam-optimiser:20260620",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:107125ffbb1f2fa798fc80d3d0788eb03a95916a95d482dcc5f3771f94df9a83"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Stochastic Gradient Descent]]", "resolved": "urn:visionflow:linked:stochastic-gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Backpropagation]]", "resolved": "urn:visionflow:linked:backpropagation", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[RMSProp]]", "resolved": "urn:visionflow:linked:rmsprop", "kind": "StubLink"},
-    {"raw": "[[Adagrad]]", "resolved": "urn:visionflow:linked:adagrad", "kind": "StubLink"},
-    {"raw": "[[AdamW]]", "resolved": "urn:visionflow:linked:adamw", "kind": "StubLink"},
-    {"raw": "[[AdaFactor]]", "resolved": "urn:visionflow:linked:adafactor", "kind": "StubLink"},
-    {"raw": "[[Weight Decay]]", "resolved": "urn:visionflow:linked:weight-decay", "kind": "StubLink"},
-    {"raw": "[[Gradient Clipping]]", "resolved": "urn:visionflow:linked:gradient-clipping", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Federated Learning]]", "resolved": "urn:visionflow:linked:federated-learning", "kind": "StubLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "StubLink"},
-    {"raw": "[[Fine-Tuning]]", "resolved": "urn:visionflow:linked:fine-tuning", "kind": "StubLink"},
-    {"raw": "[[Model Training]]", "resolved": "urn:visionflow:linked:model-training", "kind": "StubLink"},
-    {"raw": "[[Hyperparameter Optimisation]]", "resolved": "urn:visionflow:linked:hyperparameter-optimisation", "kind": "StubLink"},
-    {"raw": "[[Learning Rate Schedule]]", "resolved": "urn:visionflow:linked:learning-rate-schedule", "kind": "StubLink"},
-    {"raw": "[[Adaptive Learning Rate]]", "resolved": "urn:visionflow:linked:adaptive-learning-rate", "kind": "StubLink"},
-    {"raw": "[[Exponential Moving Average]]", "resolved": "urn:visionflow:linked:exponential-moving-average", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Vision Transformer]]", "resolved": "urn:visionflow:linked:vision-transformer", "kind": "ResolvedLink"},
-    {"raw": "[[Vanishing Gradient Problem]]", "resolved": "urn:visionflow:linked:vanishing-gradient-problem", "kind": "ResolvedLink"},
-    {"raw": "[[Batch Normalisation]]", "resolved": "urn:visionflow:linked:batch-normalisation", "kind": "StubLink"},
-    {"raw": "[[Automatic Differentiation]]", "resolved": "urn:visionflow:linked:automatic-differentiation", "kind": "StubLink"},
-    {"raw": "[[Optimisation Algorithm]]", "resolved": "urn:visionflow:linked:optimisation-algorithm", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink"},
-    {"raw": "[[SGD with Momentum]]", "resolved": "urn:visionflow:linked:sgd-with-momentum", "kind": "StubLink"},
-    {"raw": "[[Lion Optimiser]]", "resolved": "urn:visionflow:linked:lion-optimiser", "kind": "StubLink"},
-    {"raw": "[[Distributed Training]]", "resolved": "urn:visionflow:linked:distributed-training", "kind": "StubLink"},
-    {"raw": "[[Gradient Accumulation]]", "resolved": "urn:visionflow:linked:gradient-accumulation", "kind": "ResolvedLink"},
-    {"raw": "[[Muon Optimiser]]", "resolved": "urn:visionflow:linked:muon-optimiser", "kind": "StubLink"},
-    {"raw": "[[Recurrent Neural Network]]", "resolved": "urn:visionflow:linked:recurrent-neural-network", "kind": "StubLink"},
-    {"raw": "[[Generalisation]]", "resolved": "urn:visionflow:linked:generalisation", "kind": "StubLink"},
-    {"raw": "[[Regularisation]]", "resolved": "urn:visionflow:linked:regularisation", "kind": "StubLink"},
-    {"raw": "[[Numerical Stability]]", "resolved": "urn:visionflow:linked:numerical-stability", "kind": "StubLink"},
-    {"raw": "[[Mixed Precision Training]]", "resolved": "urn:visionflow:linked:mixed-precision-training", "kind": "StubLink"},
-    {"raw": "[[Policy Gradient Methods]]", "resolved": "urn:visionflow:linked:policy-gradient-methods", "kind": "ResolvedLink"},
-    {"raw": "[[Convergence]]", "resolved": "urn:visionflow:linked:convergence", "kind": "StubLink"},
-    {"raw": "[[AMSGrad]]", "resolved": "urn:visionflow:linked:amsgrad", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

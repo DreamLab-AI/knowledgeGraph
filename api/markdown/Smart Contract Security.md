@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Smart Contract Security
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:smart-contract-security", "@type":"Page", "title":"Smart Contract Security", "vc:slug":"smart-contract-security", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:smart-contract-security",
+  "@type": "Page",
+  "title": "Smart Contract Security",
+  "vc:slug": "smart-contract-security",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

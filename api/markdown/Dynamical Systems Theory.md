@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dynamical Systems Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,51 +178,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dynamical-systems-theory:6602eb69269d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:670039c124a3c68c11b64cd276694d29164e11abf25830e791720e3099e3d804"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Differential Equations]]",
-      "resolved": "urn:visionflow:linked:differential-equations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Linear Algebra]]",
-      "resolved": "urn:visionflow:linked:linear-algebra",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Complex Systems]]",
-      "resolved": "urn:visionflow:linked:complex-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Feedback Loop]]",
-      "resolved": "urn:visionflow:linked:feedback-loop",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Dynamical systems theory is the branch of mathematics and applied science that studies how the state of a system evolves over time according to deterministic or stochastic rules, characterising the qualitative and quantitative structure of trajectories in the [[State Space Representation]], the location and stability of equilibrium points ([[Fixed Point]] solutions), the geometry of [[Limit Cycle]] periodic orbits, the fractal invariant sets called [[Strange Attractor]] that organise long-run chaotic behaviour, the catastrophic qualitative changes in the topology of the phase portrait known as [[Bifurcation]], the exponential sensitivity to initial conditions measured by [[Lyapunov Exponent]], and the global topological organisation of flow captured by Poincaré maps and invariant manifolds. The theory unifies continuous-time systems governed by [[Differential Equations]] of the form dx/dt = f(x,t) — ordinary differential equations (ODEs), partial differential equations (PDEs), and delay differential equations — with discrete-time systems governed by iterated maps x_{n+1} = f(x_n), providing a single geometric and analytic language applicable to physics, engineering, biology, economics, neuroscience, and increasingly machine learning. Its central programme, inaugurated by Henri Poincaré's late-19th-century geometric approach to the three-body problem and formalised by Aleksandr Lyapunov's 1892 stability theory, is to understand system behaviour without necessarily solving the governing equations in closed form: instead, one classifies the qualitative structure of the phase portrait — the collection of all possible trajectories — by locating fixed points and determining their stability type (stable node, unstable node, saddle, centre, stable or unstable spiral) using [[Linear Algebra]] eigenanalysis of the Jacobian at each equilibrium, identifying global invariant structures such as homoclinic and heteroclinic orbits that organise the global flow, and tracking how these structures change under variation of system parameters through bifurcation analysis. The theory requires [[Calculus]], [[Linear Algebra]], [[Topology]], [[Probability Theory]], and [[Numerical Methods]] as foundational tools and in turn enables [[Chaos Theory]], [[Control Theory]], [[Complex Systems]] science, [[Ergodic Theory]], and the modern field of data-driven dynamics in which [[Neural Ordinary Differential Equation]] architectures, [[Koopman Operator]] decompositions, and physics-informed neural networks learn dynamical models directly from observational time-series data, connecting pure mathematics to machine learning in a structurally deep way.
 
@@ -342,7 +292,7 @@ public: true
   ## About
   **Dynamical systems theory** is among the deepest and most broadly applicable branches of modern mathematics, providing the language and tools for understanding how physical, biological, economic, and computational systems evolve over time. Its historical origins lie in classical mechanics, but its modern scope has expanded to encompass virtually every domain in which processes change over time according to coherent rules — a description that includes not only physics but also ecological population dynamics, economic business cycles, neural computation, engineering control systems, climate science, and, most recently, the training dynamics of large neural networks. The theory's defining characteristic is its commitment to *qualitative analysis*: rather than seeking exact closed-form solutions to differential equations (which are rarely achievable for nonlinear systems of interest), it asks about the topological and geometric structure of the set of all possible trajectories — the phase portrait — and how that structure changes as system parameters vary. This geometric and topological emphasis, inaugurated by Henri Poincaré in the 1880s-1900s, was a revolutionary departure from the tradition of exact solution methods that had dominated mathematical physics since Newton and Euler, and it remains the conceptual heart of the field today.
 
-  The intellectual genesis of dynamical systems theory is inseparable from Henri Poincaré's work on the three-body problem of celestial mechanics in the 1880s and 1890s. Competing for the prize offered by King Oscar II of Sweden for a solution to the n-body problem, Poincaré produced a series of memoirs collected in *Les Méthodes Nouvelles de la Mécanique Céleste* (1892-1899) that introduced the phase plane, the concept of a first-return (Poincaré) map on a cross-section of phase space, the Poincaré recurrence theorem (which states that any volume-preserving system in a bounded phase space will return arbitrarily close to any initial point given sufficient time), and the recognition — famously involving the correction of an error he initially submitted — that even simple three-body gravitational systems can exhibit trajectories so sensitive to initial conditions as to be practically unpredictable. This last discovery, which Poincaré described as resembling a complex weaving of curves that he could not even bring himself to draw, was what we now call deterministic chaos, and its full implications would not be widely appreciated for another 70 years until Lorenz's 1963 numerical rediscovery and Smale's 1960s topological formalisation. Simultaneously, Aleksandr Lyapunov's 1892 doctoral thesis "The General Problem of the Stability of Motion" — translated into French in 1907 and into English much later — provided the analytical counterpart to Poincaré's geometric methods: a systematic framework for proving that an equilibrium is stable without solving the governing equations, through the construction of auxiliary scalar functions (Lyapunov functions) that satisfy appropriate decrease conditions along system trajectories. Lyapunov's method, sometimes called the "direct method" or "second method," is today one of the most widely used tools in control engineering, robotics, and machine learning, where it provides certified stability guarantees for designed and learned systems.
+  The intellectual genesis of dynamical systems theory is inseparable from Henri Poincaré's work on the three-body problem of celestial mechanics in the 1880s and 1890s. Competing for the prize offered by King Oscar II of Sweden for a solution to the n-body problem, Poincaré produced a series of memoirs collected in *Les Méthodes Nouvelles de la Mécanique Céleste* (1892-1899) that introduced the phase plane, the concept of a first-return (Poincaré) map on a cross-section of phase space, the Poincaré recurrence theorem (which states that any volume-preserving system in a bounded phase space will return arbitrarily close to any initial point given sufficient time), and the recognition — famously involving the correction of an error he initially submitted — that even simple three-body gravitational systems can exhibit trajectories so sensitive to initial conditions as to be practically unpredictable. This last discovery, which Poincaré described as resembling a complex weaving of curves that he [private] not even bring himself to draw, was what we now call deterministic chaos, and its full implications would not be widely appreciated for another 70 years until Lorenz's 1963 numerical rediscovery and Smale's 1960s topological formalisation. Simultaneously, Aleksandr Lyapunov's 1892 doctoral thesis "The General Problem of the Stability of Motion" — translated into French in 1907 and into English much later — provided the analytical counterpart to Poincaré's geometric methods: a systematic framework for proving that an equilibrium is stable without solving the governing equations, through the construction of auxiliary scalar functions (Lyapunov functions) that satisfy appropriate decrease conditions along system trajectories. Lyapunov's method, sometimes called the "direct method" or "second method," is today one of the most widely used tools in control engineering, robotics, and machine learning, where it provides certified stability guarantees for designed and learned systems.
 
   The mathematical structure of dynamical systems theory is organised around the concept of a **flow** Φ: M × ℝ → M on a manifold M (the [[Phase Space]]), satisfying the group property Φ(Φ(x,s),t) = Φ(x,s+t) and Φ(x,0) = x, which expresses the deterministic evolution of states forward and backward in time. For an autonomous ODE system dx/dt = f(x) where f is sufficiently smooth (Lipschitz continuous ensures existence and uniqueness by the Picard-Lindelöf theorem), the flow Φ_t(x) = x(t; x_0) is a one-parameter family of diffeomorphisms on M, and the theory studies the long-term behaviour of Φ_t(x) as t → ∞. The key objects of study are: (1) **Fixed points** (equilibria) x* satisfying f(x*) = 0, whose stability is determined by the eigenvalues of the Jacobian matrix Df(x*) — if all eigenvalues have negative real parts, x* is asymptotically stable (a stable node or spiral); if any eigenvalue has positive real part, x* is unstable; if eigenvalues are purely imaginary, x* is a centre and higher-order analysis is required. (2) **Limit cycles** — isolated closed curves in phase space corresponding to periodic orbits, whose stability is determined by the Floquet multipliers of the associated linearisation along the orbit. (3) **Tori** — the closure of quasi-periodic orbits winding around two or more dimensions with incommensurable frequencies, which persist under small perturbations according to the Kolmogorov-Arnold-Moser (KAM) theorem in Hamiltonian systems. (4) **Strange attractors** — compact invariant sets of fractal dimension to which trajectories converge but on which the dynamics is chaotic, characterised by at least one positive Lyapunov exponent that quantifies the exponential divergence rate of nearby trajectories. The Lorenz attractor, Rössler attractor, and Hénon attractor are archetypal examples of strange attractors, each arising from simple low-dimensional nonlinear systems yet exhibiting infinitely complex fractal microstructure.
 
@@ -385,7 +335,7 @@ public: true
 
   - **Henri Poincaré (1854-1912):** *Les Méthodes Nouvelles de la Mécanique Céleste* (1892-1899) introduced geometric methods, Poincaré maps, the recurrence theorem, and the first recognition of chaos in Hamiltonian systems.
   - **Aleksandr Lyapunov (1857-1918):** The 1892 *Stability of Motion* established Lyapunov stability theory — the direct method via Lyapunov functions and the indirect method via linearisation — which remains the most widely used stability framework.
-  - **George Birkhoff (1884-1944):** Proved the Ergodic Theorem (1931), classified the fixed-point index of area-preserving maps, and advanced the qualitative theory of dynamical systems in America.
+  - **George Birkhoff (1884-1944):** Proved the Ergodic Theorem (1931), classified the fixed-point [private] of area-preserving maps, and advanced the qualitative theory of dynamical systems in America.
   - **Andronov, Pontryagin, Witt (1937):** Introduced structural stability (robustness of qualitative behaviour to small perturbations) and bifurcation theory, connecting dynamics to engineering applications.
   - **Stephen Smale (b. 1930):** The horseshoe map (1960) gave the first rigorous example of sustained bounded chaos; the Smale-Birkhoff theorem characterised the structure of homoclinic tangles; his 1967 survey "Differentiable Dynamical Systems" established the modern field.
   - **Edward Lorenz (1917-2008):** The 1963 paper "Deterministic Nonperiodic Flow" discovered the Lorenz attractor numerically and introduced sensitivity to initial conditions to the scientific mainstream; it transformed meteorology and catalysed chaos science.
@@ -532,7 +482,7 @@ public: true
 
   **Poincaré Maps and Return Maps:** For a periodic or quasi-periodic flow, intersect trajectories with a codimension-1 surface Σ (the Poincaré section) transverse to the flow. The first-return map P: Σ → Σ maps each intersection point to the next, converting the study of periodic orbits in the flow into the study of fixed points of the map. Fixed points of P correspond to periodic orbits; the stability of the fixed point (determined by the Jacobian DP at the fixed point) determines the stability of the orbit. Period-doubling: a fixed point of P^2 that is not a fixed point of P corresponds to a period-2 orbit of the flow.
 
-  **Lyapunov Spectrum Computation:** For a d-dimensional system, compute d Lyapunov exponents via the QR algorithm or Gram-Schmidt re-orthogonalisation of the tangent vectors: integrate the linearised system (variational equations) alongside the nonlinear system, periodically orthonormalise the tangent vectors, and accumulate the log-magnitudes of the scale factors. Sum Σλ_i = time-average of trace(Df) (Liouville's theorem); for dissipative systems Σλ_i < 0; λ_1 > 0 indicates chaos. The Kaplan-Yorke dimension D_KY estimates the attractor's fractal dimension: D_KY = k + Σ_{i=1}^k λ_i / |λ_{k+1}|, where k is the largest index with Σ_{i=1}^k λ_i ≥ 0.
+  **Lyapunov Spectrum Computation:** For a d-dimensional system, compute d Lyapunov exponents via the QR algorithm or Gram-Schmidt re-orthogonalisation of the tangent vectors: integrate the linearised system (variational equations) alongside the nonlinear system, periodically orthonormalise the tangent vectors, and accumulate the log-magnitudes of the scale factors. Sum Σλ_i = time-average of trace(Df) (Liouville's theorem); for dissipative systems Σλ_i < 0; λ_1 > 0 indicates chaos. The Kaplan-Yorke dimension D_KY estimates the attractor's fractal dimension: D_KY = k + Σ_{i=1}^k λ_i / |λ_{k+1}|, where k is the largest [private] with Σ_{i=1}^k λ_i ≥ 0.
 
   **Dynamic Mode Decomposition (DMD):** Given a data matrix X = [x_1, ..., x_m] and X' = [x_2, ..., x_{m+1}] of sequential snapshots, DMD finds a best-fit linear operator A such that X' ≈ AX, then computes the eigendecomposition of A to extract spatiotemporal DMD modes and growth rates. Standard DMD is equivalent to computing the leading eigenvalues of the Koopman operator restricted to the measurement space. Extensions: Exact DMD, DMD with Control (DMDc), bagging and optimal DMD for noise robustness, and multi-resolution DMD for multi-scale temporal phenomena.
 

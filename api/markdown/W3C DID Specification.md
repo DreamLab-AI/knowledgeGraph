@@ -1,8 +1,3 @@
----
-public: true
----
-
-# W3C DID Specification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,4 +181,3 @@ public: true
   - The significance of the DID specification lies in decoupling identity from institutional custody. Traditional identity systems—email addresses, phone numbers, OAuth identities—are issued and controlled by corporations or governments; their revocation or platform failure terminates the identity relationship. DIDs are issued by their subjects, portable across services, and revocable only by the subject. This property is foundational to self-sovereign identity wallets such as those mandated under the EU Digital Identity (EUDI) Wallet regulation, where citizens hold verified attributes without reliance on a government identity provider for every use. Enterprise use cases include supply chain credential verification, academic transcript portability, and zero-knowledge age verification.
 
   - From 2024 to 2025, W3C DID adoption accelerated through regulatory mandate rather than organic market adoption. The EU eIDAS 2.0 regulation required member states to offer EUDI Wallets to citizens by end of 2026, with W3C DIDs and Verifiable Credentials as the primary technical standard. The OpenID Foundation's OID4VC (OpenID for Verifiable Credentials) protocol, combining OIDC flows with W3C Verifiable Credentials, emerged as the interoperability layer most favoured by governments implementing EUDI Wallets. DIF (Decentralized Identity Foundation) published the Universal Resolver, supporting resolution of dozens of DID methods, and the W3C DID Working Group began revision work addressing the concerns raised during the original standardisation, particularly around discoverability and method ecosystem fragmentation.
-

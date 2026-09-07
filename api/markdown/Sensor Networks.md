@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sensor Networks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -86,52 +81,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sensor-networks:aeaea768f0f2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4a8cc6da1c4215bf5e0e59aba53d03074890148e8f1269b4d2bd57e0aa86384e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:linked:sensor-fusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensors]]",
-      "resolved": "urn:visionflow:linked:sensors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Wireless_sensor_network]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-wireless-sensor-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.nist.gov/]]",
-      "resolved": "urn:visionflow:linked:https-www-nist-gov",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Sensor networks are distributed collections of sensor nodes that collect, process and communicate measurements about their environment.

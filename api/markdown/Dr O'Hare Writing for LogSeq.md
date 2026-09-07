@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dr O'Hare Writing for LogSeq
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,16 +71,34 @@ public: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:digital-asset-risks", "label": "Digital Asset Risks"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-risks",
+        "label": "Digital Asset Risks"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:scholarly-manuscript-composition-process", "label": "Scholarly Manuscript Composition Process"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:scholarly-manuscript-composition-process",
+        "label": "Scholarly Manuscript Composition Process"
+      }
     ]
   },
   "provenance": {
@@ -95,62 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dr-o-hare-writing-for-log-seq:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b355b82200277b72a8d5c12e95744a4509c09687273b95fa9f49f6e676b33b72"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Author YEAR]]",
-      "resolved": "urn:visionflow:linked:author-year",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[hulsmann2008ethics]]",
-      "resolved": "urn:visionflow:linked:hulsmann2008ethics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Nakamoto 2008]]",
-      "resolved": "urn:visionflow:linked:nakamoto-2008",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[WikiLink]]",
-      "resolved": "urn:visionflow:linked:wiki-link",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[WikiLinks]]",
-      "resolved": "urn:visionflow:linked:wiki-links",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptographic Privacy Activist]]",
-      "resolved": "urn:visionflow:owl:class:cypherpunk",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset Risks]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset-risks",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A prescriptive style guide authored by Dr John O'Hare specifying the structural, syntactic, and tonal conventions for writing public-facing knowledge graph pages in Logseq. It mandates nested bullet-point outlines, UK English prose, Logseq wiki-link syntax, dense academic-conversational authorial voice, and heavy inline citation with external links.

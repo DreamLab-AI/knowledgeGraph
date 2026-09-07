@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Product Strategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-product-strategy",
   "title": "AI Product Strategy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Anthropic Claude Cowork", "OpenAI Codex Interface"],
+  "vc:outboundWikilinks": [
+    "Anthropic Claude Cowork",
+    "OpenAI Codex Interface"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}, {"@id": "urn:ngm:class:claude", "label": "Claude"}, {"@id": "urn:ngm:class:frontier-ai", "label": "Frontier AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:claude",
+        "label": "Claude"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Static Analysis
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

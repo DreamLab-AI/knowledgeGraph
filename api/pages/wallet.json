@@ -221,7 +221,7 @@
     },
     {
       "slug": "address-index",
-      "label": "address index"
+      "label": "address [private]"
     },
     {
       "slug": "address-poisoning",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stereo Vision
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -194,4 +189,3 @@ public: true
   - Hardware stereo rigs are deployed in automotive advanced driver-assistance systems (ADAS), robotics (Boston Dynamics, ROS-based platforms), augmented reality headsets (Microsoft HoloLens), and depth sensing cameras (Intel RealSense, Stereolabs ZED). The baseline distance critically determines measurable depth range: short baselines (5–10 cm) suit indoor robotics, while automotive stereo uses baselines of 20–60 cm to detect obstacles at 50–200 metres.
 
   - By 2024–2025, stereo vision competes with monocular depth estimation networks, structured light (Azure Kinect), and [[Lidar]] scanning for depth sensing. Stereo remains preferred in bright outdoor environments where structured light is unreliable, and on cost-sensitive platforms where active depth sensors are prohibitive. Neural stereo methods increasingly run on edge accelerators (Nvidia Orin, Qualcomm Snapdragon) enabling real-time dense depth at under 5 watts.
-

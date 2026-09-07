@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Language Model Alignment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Language model alignment is the set of techniques used to make a language model's behaviour conform to human intentions, values and safety constraints. It typically follows pretraining with supervised fine-tuning and preference-based optimisation so that outputs are helpful, honest and harmless. Methods include reinforcement learning from human feedback and direct preference optimization.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimization"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bayesian Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,54 +7,191 @@ public: true
   "title": "Bayesian Optimisation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:gaussian-process", "vc:label": "Gaussian Process"},
-    {"@id": "urn:visionflow:linked:acquisition-function", "vc:label": "Acquisition Function"},
-    {"@id": "urn:visionflow:linked:surrogate-model", "vc:label": "Surrogate Model"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:probabilistic-model", "vc:label": "Probabilistic Model"},
-    {"@id": "urn:visionflow:linked:kernel-function", "vc:label": "Kernel Function"},
-    {"@id": "urn:visionflow:linked:hyperparameter-tuning", "vc:label": "Hyperparameter Tuning"},
-    {"@id": "urn:visionflow:linked:neural-architecture-search", "vc:label": "Neural Architecture Search"},
-    {"@id": "urn:visionflow:linked:auto-ml", "vc:label": "AutoML"},
-    {"@id": "urn:visionflow:linked:automated-experiment-design", "vc:label": "Automated Experiment Design"},
-    {"@id": "urn:visionflow:linked:multi-objective-optimisation", "vc:label": "Multi-Objective Optimisation"},
-    {"@id": "urn:visionflow:linked:probabilistic-inference", "vc:label": "Probabilistic Inference"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:drug-discovery", "vc:label": "Drug Discovery"},
-    {"@id": "urn:visionflow:linked:materials-science", "vc:label": "Materials Science"},
-    {"@id": "urn:visionflow:linked:grid-search", "vc:label": "Grid Search"},
-    {"@id": "urn:visionflow:linked:random-search", "vc:label": "Random Search"},
-    {"@id": "urn:visionflow:linked:evolutionary-algorithm", "vc:label": "Evolutionary Algorithm"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:kriging", "vc:label": "Kriging"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:experimental-design", "vc:label": "Experimental Design"},
-    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
-    {"@id": "urn:visionflow:linked:expected-improvement", "vc:label": "Expected Improvement"},
-    {"@id": "urn:visionflow:linked:exploration-exploitation-trade-off", "vc:label": "Exploration-Exploitation Trade-off"},
-    {"@id": "urn:visionflow:linked:uncertainty-quantification", "vc:label": "Uncertainty Quantification"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:self-driving-laboratory", "vc:label": "Self-Driving Laboratory"},
-    {"@id": "urn:visionflow:linked:multi-fidelity-optimisation", "vc:label": "Multi-Fidelity Optimisation"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:gaussian-process-regression", "vc:label": "Gaussian Process Regression"},
-    {"@id": "urn:visionflow:linked:hyperparameter-optimisation", "vc:label": "Hyperparameter Optimisation"},
-    {"@id": "urn:visionflow:linked:marginal-likelihood", "vc:label": "Marginal Likelihood"},
-    {"@id": "urn:visionflow:linked:sparse-gaussian-process", "vc:label": "Sparse Gaussian Process"},
-    {"@id": "urn:visionflow:linked:variational-inference", "vc:label": "Variational Inference"},
-    {"@id": "urn:visionflow:linked:model-predictive-control", "vc:label": "Model Predictive Control"},
-    {"@id": "urn:visionflow:linked:protein-engineering", "vc:label": "Protein Engineering"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:machine-learning-domain", "vc:label": "MachineLearningDomain"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:gaussian-process",
+      "vc:label": "Gaussian Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:acquisition-function",
+      "vc:label": "Acquisition Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:surrogate-model",
+      "vc:label": "Surrogate Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-model",
+      "vc:label": "Probabilistic Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:kernel-function",
+      "vc:label": "Kernel Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-architecture-search",
+      "vc:label": "Neural Architecture Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:auto-ml",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-experiment-design",
+      "vc:label": "Automated Experiment Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-objective-optimisation",
+      "vc:label": "Multi-Objective Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-inference",
+      "vc:label": "Probabilistic Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:materials-science",
+      "vc:label": "Materials Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:grid-search",
+      "vc:label": "Grid Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:random-search",
+      "vc:label": "Random Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-algorithm",
+      "vc:label": "Evolutionary Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:kriging",
+      "vc:label": "Kriging"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:experimental-design",
+      "vc:label": "Experimental Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation",
+      "vc:label": "Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:expected-improvement",
+      "vc:label": "Expected Improvement"
+    },
+    {
+      "@id": "urn:visionflow:linked:exploration-exploitation-trade-off",
+      "vc:label": "Exploration-Exploitation Trade-off"
+    },
+    {
+      "@id": "urn:visionflow:linked:uncertainty-quantification",
+      "vc:label": "Uncertainty Quantification"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-driving-laboratory",
+      "vc:label": "Self-Driving Laboratory"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-fidelity-optimisation",
+      "vc:label": "Multi-Fidelity Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-process-regression",
+      "vc:label": "Gaussian Process Regression"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-optimisation",
+      "vc:label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:marginal-likelihood",
+      "vc:label": "Marginal Likelihood"
+    },
+    {
+      "@id": "urn:visionflow:linked:sparse-gaussian-process",
+      "vc:label": "Sparse Gaussian Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-inference",
+      "vc:label": "Variational Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-predictive-control",
+      "vc:label": "Model Predictive Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:protein-engineering",
+      "vc:label": "Protein Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-domain",
+      "vc:label": "MachineLearningDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-21T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -73,63 +205,180 @@ public: true
   "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},
-    {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "@id": "urn:ngm:class:probabilistic-model",
+      "label": "Probabilistic Model"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
-      {"@id": "urn:ngm:class:acquisition-function", "label": "Acquisition Function"},
-      {"@id": "urn:ngm:class:surrogate-model", "label": "Surrogate Model"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:kernel-function", "label": "Kernel Function"}
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:acquisition-function",
+        "label": "Acquisition Function"
+      },
+      {
+        "@id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:kernel-function",
+        "label": "Kernel Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
-      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:automated-design", "label": "Automated Experiment Design"},
-      {"@id": "urn:ngm:class:multi-objective-optimisation", "label": "Multi-Objective Optimisation"},
-      {"@id": "urn:ngm:class:self-driving-laboratory", "label": "Self-Driving Laboratory"}
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:automated-design",
+        "label": "Automated Experiment Design"
+      },
+      {
+        "@id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:self-driving-laboratory",
+        "label": "Self-Driving Laboratory"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:probabilistic-inference", "label": "Probabilistic Inference"},
-      {"@id": "urn:ngm:class:kernel-function", "label": "Kernel Function"},
-      {"@id": "urn:ngm:class:surrogate-model", "label": "Surrogate Model"}
+      {
+        "@id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      },
+      {
+        "@id": "urn:ngm:class:kernel-function",
+        "label": "Kernel Function"
+      },
+      {
+        "@id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:material-science", "label": "Materials Science"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:material-science",
+        "label": "Materials Science"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:grid-search", "label": "Grid Search"},
-      {"@id": "urn:ngm:class:random-search", "label": "Random Search"},
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:grid-search",
+        "label": "Grid Search"
+      },
+      {
+        "@id": "urn:ngm:class:random-search",
+        "label": "Random Search"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:kriging", "label": "Kriging"},
-      {"@id": "urn:ngm:class:expected-improvement", "label": "Expected Improvement"},
-      {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "label": "Exploration-Exploitation Trade-off"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:kriging",
+        "label": "Kriging"
+      },
+      {
+        "@id": "urn:ngm:class:expected-improvement",
+        "label": "Expected Improvement"
+      },
+      {
+        "@id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration-Exploitation Trade-off"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:experimental-design", "label": "Experimental Design"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:self-driving-laboratory", "label": "Self-Driving Laboratory"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:self-driving-laboratory",
+        "label": "Self-Driving Laboratory"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bayesian-global-optimisation", "label": "Bayesian Global Optimisation"},
-    {"@id": "urn:ngm:class:sequential-model-based-optimisation", "label": "Sequential Model-Based Optimisation"}
+    {
+      "@id": "urn:ngm:class:bayesian-global-optimisation",
+      "label": "Bayesian Global Optimisation"
+    },
+    {
+      "@id": "urn:ngm:class:sequential-model-based-optimisation",
+      "label": "Sequential Model-Based Optimisation"
+    }
   ],
   "quality": 0.93,
   "provenance": {

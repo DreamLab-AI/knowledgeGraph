@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:project-rosalind",
   "domain": "finance",
-  "definition": "A joint experiment by the Bank of England and the Bank for International Settlements Innovation Hub that explored how an application programming interface layer could support retail central bank digital currency payments. It tested programmability and interoperability.",
+  "definition": "A joint experiment by the Bank of England and the Bank for International Settlements Innovation Hub that explored how an application programming interface layer [private] support retail central bank digital currency payments. It tested programmability and interoperability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:central-bank-digital-currency",

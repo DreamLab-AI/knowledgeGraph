@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Risk Scoring
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

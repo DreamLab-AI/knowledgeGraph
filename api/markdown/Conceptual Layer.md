@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ConceptualLayer
----
-
-# Conceptual Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -49,18 +42,36 @@ aliases:
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:protocol-layer", "label": "Protocol Layer"}
+      {
+        "@id": "urn:ngm:class:protocol-layer",
+        "label": "Protocol Layer"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
-      {"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"}
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:ontology-structure", "label": "Ontology Structure"}
+      {
+        "@id": "urn:ngm:class:ontology-structure",
+        "label": "Ontology Structure"
+      }
     ]
   },
   "quality": 0.35,
@@ -71,26 +82,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:conceptual-layer:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3d21a68dcb5b6e9a03478fce2747d7fb72857746062b3fc0350cf6e5efbd10db"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The ConceptualLayer represents the abstraction level of pure concepts, theoretical models, principles, and design patterns that are independent of specific technical implementations or realizations. This layer encompasses abstract definitions, conceptual frameworks, theoretical foundations, design principles, and logical models that describe what things are and what they should do, without specifying how they are implemented. Concepts in this layer are implementation-agnostic: they can be realized through various technical approaches, protocols, or systems while maintaining their essential conceptual properties. The ConceptualLayer includes abstract data structures (the concept of a blockchain as an ordered chain of blocks, independent of specific blockchain implementations), theoretical protocols (abstract consensus models, independent of specific consensus algorithms), design patterns (decentralization as a principle, independent of specific decentralization mechanisms), foundational principles (immutability, transparency, trustlessness as properties), and logical frameworks (fairness definitions, security properties, correctness criteria). This layer serves as the foundation for understanding domain concepts at their most abstract level, enabling reasoning about properties, relationships, and tradeoffs without getting entangled in implementation details.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Climate Finance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -163,51 +158,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:climate-finance:ee52f14fe4a7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0e3aa7b4cef7e30897367ad09af06e9bf14a993467ad5cd098965eb2c58918e6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Carbon Markets]]",
-      "resolved": "urn:visionflow:linked:carbon-markets",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainability]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Green Finance]]",
-      "resolved": "urn:visionflow:linked:green-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://unfccc.int/topics/introduction-to-climate-finance]]",
-      "resolved": "urn:visionflow:linked:https-unfccc-int-topics-introduction-to-climate-finance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.worldbank.org/en/topic/climatefinance]]",
-      "resolved": "urn:visionflow:linked:https-www-worldbank-org-en-topic-climatefinance",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

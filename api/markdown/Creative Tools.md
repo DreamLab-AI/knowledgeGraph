@@ -1,8 +1,3 @@
----
-public: true
----
-
-# creative tools
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,40 +7,142 @@ public: true
   "title": "creative tools",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model" },
-    { "@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI" },
-    { "@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model" },
-    { "@id": "urn:visionflow:linked:multimodal-model", "vc:label": "Multimodal Model" },
-    { "@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering" },
-    { "@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model" },
-    { "@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute" },
-    { "@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data" },
-    { "@id": "urn:visionflow:linked:api-endpoint", "vc:label": "API Endpoint" },
-    { "@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation" },
-    { "@id": "urn:visionflow:linked:text-to-image", "vc:label": "Text-to-Image" },
-    { "@id": "urn:visionflow:linked:video-synthesis", "vc:label": "Video Synthesis" },
-    { "@id": "urn:visionflow:linked:music-generation", "vc:label": "Music Generation" },
-    { "@id": "urn:visionflow:linked:3d-asset-creation", "vc:label": "3D Asset Creation" },
-    { "@id": "urn:visionflow:linked:content-creation", "vc:label": "Content Creation" },
-    { "@id": "urn:visionflow:linked:content-provenance", "vc:label": "Content Provenance" },
-    { "@id": "urn:visionflow:linked:intellectual-property", "vc:label": "Intellectual Property" },
-    { "@id": "urn:visionflow:linked:human-computer-interaction", "vc:label": "Human-Computer Interaction" },
-    { "@id": "urn:visionflow:linked:human-ai-collaboration", "vc:label": "Human-AI Collaboration" },
-    { "@id": "urn:visionflow:linked:spatial-computing", "vc:label": "Spatial Computing" },
-    { "@id": "urn:visionflow:linked:metaverse-content", "vc:label": "Metaverse Content" },
-    { "@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin" },
-    { "@id": "urn:visionflow:linked:ai-application", "vc:label": "AI Application" },
-    { "@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-Tuning" },
-    { "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback" },
-    { "@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation" },
-    { "@id": "urn:visionflow:linked:c2pa", "vc:label": "C2PA" },
-    { "@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act" },
-    { "@id": "urn:visionflow:linked:creative-economy", "vc:label": "Creative Economy" },
-    { "@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network" },
-    { "@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer" },
-    { "@id": "urn:visionflow:linked:latent-diffusion", "vc:label": "Latent Diffusion" },
-    { "@id": "urn:visionflow:linked:design-software", "vc:label": "Traditional Design Software" },
-    { "@id": "urn:visionflow:linked:procedural-generation", "vc:label": "Rule-Based Procedural Generation" }
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-model",
+      "vc:label": "Multimodal Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-endpoint",
+      "vc:label": "API Endpoint"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-synthesis",
+      "vc:label": "Video Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-generation",
+      "vc:label": "Music Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:3d-asset-creation",
+      "vc:label": "3D Asset Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-creation",
+      "vc:label": "Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-provenance",
+      "vc:label": "Content Provenance"
+    },
+    {
+      "@id": "urn:visionflow:linked:intellectual-property",
+      "vc:label": "Intellectual Property"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-ai-collaboration",
+      "vc:label": "Human-AI Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:metaverse-content",
+      "vc:label": "Metaverse Content"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-application",
+      "vc:label": "AI Application"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:c2pa",
+      "vc:label": "C2PA"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-economy",
+      "vc:label": "Creative Economy"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion",
+      "vc:label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-software",
+      "vc:label": "Traditional Design Software"
+    },
+    {
+      "@id": "urn:visionflow:linked:procedural-generation",
+      "vc:label": "Rule-Based Procedural Generation"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -75,55 +172,142 @@ public: true
   ],
   "relations": {
     "uses": [
-      { "@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model" },
-      { "@id": "urn:ngm:class:generative-ai", "label": "Generative AI" },
-      { "@id": "urn:ngm:class:large-language-model", "label": "Large Language Model" },
-      { "@id": "urn:ngm:class:multimodal-model", "label": "Multimodal Model" },
-      { "@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering" }
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:image-generation", "label": "Image Generation" },
-      { "@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image" },
-      { "@id": "urn:ngm:class:video-synthesis", "label": "Video Synthesis" },
-      { "@id": "urn:ngm:class:music-generation", "label": "Music Generation" },
-      { "@id": "urn:ngm:class:3d-asset-creation", "label": "3D Asset Creation" },
-      { "@id": "urn:ngm:class:content-creation", "label": "Content Creation" }
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:video-synthesis",
+        "label": "Video Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      },
+      {
+        "@id": "urn:ngm:class:3d-asset-creation",
+        "label": "3D Asset Creation"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:foundation-model", "label": "Foundation Model" },
-      { "@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute" }
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:training-data", "label": "Training Data" },
-      { "@id": "urn:ngm:class:api", "label": "API Endpoint" }
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API Endpoint"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction" },
-      { "@id": "urn:ngm:class:creative-economy", "label": "Creative Economy" }
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:creative-economy",
+        "label": "Creative Economy"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:design-software", "label": "Traditional Design Software" },
-      { "@id": "urn:ngm:class:procedural-generation", "label": "Rule-Based Procedural Generation" }
+      {
+        "@id": "urn:ngm:class:design-software",
+        "label": "Traditional Design Software"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Rule-Based Procedural Generation"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing" },
-      { "@id": "urn:ngm:class:metaverse-content", "label": "Metaverse Content" },
-      { "@id": "urn:ngm:class:digital-twin", "label": "Digital Twin" }
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-content",
+        "label": "Metaverse Content"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:ai-application", "label": "AI Application" },
-      { "@id": "urn:ngm:class:content-provenance", "label": "Content Provenance" },
-      { "@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "Intellectual Property" },
-      { "@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration" },
-      { "@id": "urn:ngm:class:c2-pa", "label": "C2PA" }
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "@id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:ai-creative-software", "label": "AI Creative Software" },
-    { "@id": "urn:ngm:class:generative-creative-tools", "label": "Generative Creative Tools" }
+    {
+      "@id": "urn:ngm:class:ai-creative-software",
+      "label": "AI Creative Software"
+    },
+    {
+      "@id": "urn:ngm:class:generative-creative-tools",
+      "label": "Generative Creative Tools"
+    }
   ],
-  "quality": 0.90,
-  "qualityScore": 0.90,
+  "quality": 0.9,
+  "qualityScore": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -324,9 +508,9 @@ public: true
 
   ## Academic Context
 
-  The theoretical foundations of Creative Tools span several distinct research lineages, each contributing different layers of the modern generative pipeline. The probabilistic framework of [[Diffusion Model]]s derives from Sohl-Dickstein et al. (2015), who first framed the forward–reverse diffusion process as a non-equilibrium thermodynamics problem amenable to neural approximation. Ho et al.'s DDPM paper (2020) demonstrated that a U-Net denoising backbone trained on the simplified noise-prediction objective could match and exceed GAN quality for image synthesis without the adversarial training instabilities that had constrained [[Generative Adversarial Network]] approaches. Song et al.'s score-SDE framework (2020-2021) provided the unifying theoretical treatment, showing DDPMs, score-matching, and flow-matching as instances of a common stochastic differential equation framework.
+  The theoretical foundations of Creative Tools span several distinct research lineages, each contributing different layers of the modern generative pipeline. The probabilistic framework of [[Diffusion Model]]s derives from Sohl-Dickstein et al. (2015), who first framed the forward–reverse diffusion process as a non-equilibrium thermodynamics problem amenable to neural approximation. Ho et al.'s DDPM paper (2020) demonstrated that a U-Net denoising backbone trained on the simplified noise-prediction objective [private] match and exceed GAN quality for image synthesis without the adversarial training instabilities that had constrained [[Generative Adversarial Network]] approaches. Song et al.'s score-SDE framework (2020-2021) provided the unifying theoretical treatment, showing DDPMs, score-matching, and flow-matching as instances of a common stochastic differential equation framework.
 
-  Rombach et al. (2022) introduced Latent Diffusion Models (LDM), the direct predecessor of Stable Diffusion, demonstrating that first compressing images to a latent space via a VQ-VAE encoder, then applying diffusion in that compressed space, reduced computational cost by ~64x whilst enabling higher-resolution synthesis than pixel-space diffusion at the same training budget. This practical efficiency breakthrough is what enabled consumer-accessible Creative Tools: Stable Diffusion 1.4 could be run on an NVIDIA RTX 3090 GPU in seconds, democratising capabilities that had previously required cloud-scale compute. Dhariwal and Nichol (2021) showed that classifier-free and classifier-guided diffusion models surpass GANs on FID (Fréchet Inception Distance) benchmarks, cementing the diffusion paradigm's technical dominance.
+  Rombach et al. (2022) introduced Latent Diffusion Models (LDM), the direct predecessor of Stable Diffusion, demonstrating that first compressing images to a latent space via a VQ-VAE encoder, then applying diffusion in that compressed space, reduced computational cost by ~64x whilst enabling higher-resolution synthesis than pixel-space diffusion at the same training budget. This practical efficiency breakthrough is what enabled consumer-accessible Creative Tools: Stable Diffusion 1.4 [private] be run on an NVIDIA RTX 3090 GPU in seconds, democratising capabilities that had previously required cloud-scale compute. Dhariwal and Nichol (2021) showed that classifier-free and classifier-guided diffusion models surpass GANs on FID (Fréchet Inception Distance) benchmarks, cementing the diffusion paradigm's technical dominance.
 
   The text-conditioning of image models depends critically on cross-modal representation learning. CLIP (Radford et al. 2021) established contrastive learning between image patches and text tokens on 400 million web-sourced pairs, producing an embedding space where semantically related images and text descriptions have high cosine similarity. CLIP encoders are used in nearly all commercial text-to-image systems to convert user prompts into conditioning vectors for the denoising network's cross-attention layers. ALIGN (Jia et al. 2021) scaled this approach to 1.8 billion noisy image-text pairs, demonstrating that scale compensates for data quality in contrastive pre-training. The [[Transformer]] architecture underlying text generation (Vaswani et al. 2017, "Attention Is All You Need") is the backbone of both LLM-based creative tools and the text encoders in cross-modal systems.
 

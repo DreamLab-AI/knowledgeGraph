@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Metadata Catalog
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:metadata-catalog", "@type": "Page", "title": "Metadata Catalog", "vc:slug": "metadata-catalog", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:metadata-catalog",
+  "@type": "Page",
+  "title": "Metadata Catalog",
+  "vc:slug": "metadata-catalog",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

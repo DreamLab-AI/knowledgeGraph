@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GENIUS Act
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:genius-act:ae6c22026286",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eedbc1f90bc336d6722b9c1ad7190e668774dfc61a74226f7b8e04853f892f66"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Frameworks]]",
-      "resolved": "urn:visionflow:linked:regulatory-frameworks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Investor Protection]]",
-      "resolved": "urn:visionflow:linked:investor-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:linked:stablecoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Crypto Regulation]]",
-      "resolved": "urn:visionflow:linked:crypto-regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.congress.gov/bill/119th-congress/senate-bill/394]]",
-      "resolved": "urn:visionflow:linked:https-www-congress-gov-bill-119-th-congress-senate-bill-394",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/GENIUS_Act]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-genius-act",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The GENIUS Act is United States legislation establishing a federal regulatory framework for the issuance of payment stablecoins.

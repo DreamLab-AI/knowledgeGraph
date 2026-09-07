@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bode Plot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,20 +21,41 @@ public: true
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:transfer-function", "label": "Transfer Function"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {
+        "@id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:stability-analysis", "label": "Stability Analysis"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
+      {
+        "@id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +76,3 @@ public: true
   - Bode plots are ubiquitous in electrical and mechanical engineering: audio amplifier equaliser design, power supply feedback loop compensation, servo motor control, RF filter characterisation, and vibration analysis all rely on them. In practice, measured Bode plots—obtained by sweeping a sinusoidal excitation and recording output amplitude and phase—are compared against theoretical models to identify parasitic effects, non-linearities, and manufacturing variation. Network analysers and impedance analysers are the hardware instruments used for this measurement.
 
   - In 2024–2025, Bode analysis remains a core curriculum topic in control and electrical engineering education, and the underlying concepts are being applied beyond classical control in areas such as frequency-domain stability analysis of neural network training dynamics, machine-learning-based system identification (where neural networks approximate transfer functions), and control of soft-body robotics. The phase and gain margins derived from Bode plots are also used to validate stability of power electronics in grid-tied inverters and electric vehicle drive systems, where switching-frequency resonances must be carefully managed.
-

@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,25 +34,70 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
-      {"@id": "urn:ngm:class:digital-asset-lending", "label": "Digital Asset Lending"},
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {
+        "@id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
-      {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"}
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
     ]
   },
   "quality": 0.8,
@@ -64,3 +105,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

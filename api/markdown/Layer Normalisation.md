@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Layer Normalisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,47 +103,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:layer-normalisation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0c2fa806d8b70a2b40e1ce2404f708e0a6a667816d7edf74c0e5c1d44142a90a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning and Similar L2]]",
-      "resolved": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Ontology]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-ontology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A normalisation technique that computes mean and variance across the feature dimension for each training example independently, then rescales activations using learnable scale and shift parameters. Unlike batch normalisation, layer normalisation is invariant to batch size, making it the standard choice for transformer and recurrent architectures where sequence lengths vary.

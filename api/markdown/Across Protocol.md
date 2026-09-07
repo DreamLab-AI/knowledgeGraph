@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Across-Protocol
----
-
-# Across Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -28,23 +21,47 @@ aliases:
   "domain": "blockchain",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}
+    {
+      "@id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:liquidity-provider", "label": "Liquidity Provider"}
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provider",
+        "label": "Liquidity Provider"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
-      {"@id": "urn:ngm:class:layer-2-solutions", "label": "Layer 2 Solutions"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"}
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
     ]
   },
   "quality": 0.8

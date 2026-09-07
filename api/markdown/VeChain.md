@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VeChain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -202,62 +197,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ve-chain:82b163190a52",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0da987c1e5c23db72d9597a1335d873fe570531aa3ab7811e7bb5353437629ec"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Proof of Authority]]",
-      "resolved": "urn:visionflow:linked:proof-of-authority",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Supply Chain Tracking]]",
-      "resolved": "urn:visionflow:linked:supply-chain-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Product Provenance]]",
-      "resolved": "urn:visionflow:linked:product-provenance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Internet of Things]]",
-      "resolved": "urn:visionflow:linked:internet-of-things",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset Domain]]",
-      "resolved": "urn:visionflow:linked:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - VeChain is a public blockchain platform oriented toward supply-chain management and enterprise applications. It uses a proof-of-authority consensus model in which a limited set of authorised validators produce blocks, prioritising throughput and predictability for business use. The platform employs a dual-token design, separating the asset used to hold value from the token used to pay for transaction costs.

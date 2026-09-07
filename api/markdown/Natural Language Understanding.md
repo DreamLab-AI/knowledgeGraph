@@ -1,8 +1,3 @@
----
-public: true
----
-
-# natural language understanding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sensory Immersion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Sensory immersion is the dimension of immersion produced by saturating a user's perceptual channels with synthetic stimuli, such that the virtual environment dominates their awareness over the physical surroundings. It is driven by display fidelity, spatial audio, haptics, and wide field of view, and is distinct from narrative or cognitive immersion. It is a constituent component of the broader experience of immersion.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:immersion", "label": "Immersion"}, {"@id": "urn:ngm:class:feedback-mechanism", "label": "Feedback Mechanism"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
+      }
+    ]
   },
   "quality": 0.72
 }

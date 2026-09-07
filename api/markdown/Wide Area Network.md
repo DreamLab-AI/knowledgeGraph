@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wide Area Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Wide Area Network",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:networking-infrastructure", "vc:label": "Networking Infrastructure"},
-    {"@id": "urn:visionflow:linked:local-area-network", "vc:label": "Local Area Network"},
-    {"@id": "urn:visionflow:linked:software-defined-networking", "vc:label": "Software-Defined Networking"},
-    {"@id": "urn:visionflow:linked:virtual-private-network", "vc:label": "Virtual Private Network"},
-    {"@id": "urn:visionflow:linked:telecommunications", "vc:label": "Telecommunications"}
+    {
+      "@id": "urn:visionflow:linked:networking-infrastructure",
+      "vc:label": "Networking Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:local-area-network",
+      "vc:label": "Local Area Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-defined-networking",
+      "vc:label": "Software-Defined Networking"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-private-network",
+      "vc:label": "Virtual Private Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:telecommunications",
+      "vc:label": "Telecommunications"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -39,17 +54,32 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:local-area-network", "label": "Local Area Network"}
+      {
+        "@id": "urn:ngm:class:local-area-network",
+        "label": "Local Area Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:local-area-network", "label": "Local Area Network"}
+      {
+        "@id": "urn:ngm:class:local-area-network",
+        "label": "Local Area Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtual-private-network", "label": "Virtual Private Network"}
+      {
+        "@id": "urn:ngm:class:virtual-private-network",
+        "label": "Virtual Private Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"},
-      {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"}
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "@id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
     ]
   },
   "quality": 0.8,

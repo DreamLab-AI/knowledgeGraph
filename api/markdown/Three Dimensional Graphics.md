@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Three Dimensional Graphics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,16 +46,34 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+      {
+        "@id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      }
     ]
   },
   "provenance": {
@@ -70,26 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:three-dimensional-graphics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6e17913d5db83e833ad994160def9b8102adc15601a2e3c1f1dc54a7d4083746"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Three Dimensional Graphics encompasses the computational techniques for modelling, transforming, and rendering three-dimensional geometry onto two-dimensional display surfaces, encompassing rasterisation, ray tracing, shading, and scene graph management. It underpins game engines, virtual and augmented reality platforms, digital twins, and scientific visualisation.

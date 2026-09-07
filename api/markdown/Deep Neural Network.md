@@ -1,38 +1,124 @@
----
-public: true
----
-
-# Deep Neural Network
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:deep-neural-network", "@type":"Page", "title":"Deep Neural Network", "vc:slug":"deep-neural-network", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:deep-neural-network",
+  "@type": "Page",
+  "title": "Deep Neural Network",
+  "vc:slug": "deep-neural-network",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:deep-neural-network",
-  "@type":"Class",
-  "label":"Deep Neural Network",
-  "definition":"A deep neural network is an artificial neural network with multiple hidden layers between its input and output, enabling it to learn hierarchical representations of data. Each layer applies a learnable linear transformation followed by a non-linear activation, and the network is trained by gradient descent with backpropagation to minimise a loss function. Depth lets the model compose simple features into increasingly abstract ones, which underlies modern deep learning across vision, language, and audio.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "hasPart":[{"@id":"urn:ngm:class:activation-function","label":"Activation Function"}],
-    "uses":[{"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"},{"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"},{"@id":"urn:ngm:class:activation-function","label":"Activation Function"}],
-    "dependsOn":[{"@id":"urn:ngm:class:training-data","label":"Training Data"},{"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"}],
-    "requires":[{"@id":"urn:ngm:class:training-data","label":"Training Data"}],
-    "enables":[{"@id":"urn:ngm:class:representation-learning","label":"Representation Learning"}],
-    "implements":[{"@id":"urn:ngm:class:feedforward-neural-network","label":"Feedforward Neural Network"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:transformer","label":"Transformer"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:feedforward-neural-network","label":"Feedforward Neural Network"}],
-    "relatedTo":[{"@id":"urn:ngm:class:convolutional-neural-network","label":"Convolutional Neural Network"},{"@id":"urn:ngm:class:recurrent-neural-network","label":"Recurrent Neural Network"},{"@id":"urn:ngm:class:overfitting","label":"Overfitting"},{"@id":"urn:ngm:class:embedding","label":"Embedding"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:deep-neural-network",
+  "@type": "Class",
+  "label": "Deep Neural Network",
+  "definition": "A deep neural network is an artificial neural network with multiple hidden layers between its input and output, enabling it to learn hierarchical representations of data. Each layer applies a learnable linear transformation followed by a non-linear activation, and the network is trained by gradient descent with backpropagation to minimise a loss function. Depth lets the model compose simple features into increasingly abstract ones, which underlies modern deep learning across vision, language, and audio.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:feedforward-neural-network",
+        "label": "Feedforward Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:feedforward-neural-network",
+        "label": "Feedforward Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

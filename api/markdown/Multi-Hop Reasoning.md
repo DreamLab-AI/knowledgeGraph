@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Hop Reasoning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Multi-hop reasoning is the capability to answer a question or draw a conclusion by chaining together several intermediate inferences or retrieved facts, rather than relying on a single piece of evidence. In language models and retrieval systems it requires composing information across multiple documents or knowledge-graph edges. It is central to complex question answering and is a known weak point for shallow retrieval and single-pass models.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"}
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      }
     ]
   },
   "quality": 0.72

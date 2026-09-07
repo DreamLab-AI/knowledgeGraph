@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Economic Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,46 +76,6 @@ public: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",
     "inferenceRule": "GapFillTier5"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:economic-model:88129da1f918",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3b4bf7a34ff4c7f5602ef75c2578d1bf9dc4014b0d0a33ac13d32e95852126bf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Economics]]",
-      "resolved": "urn:visionflow:linked:economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agent-Based Modelling]]",
-      "resolved": "urn:visionflow:linked:agent-based-modelling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Simulation]]",
-      "resolved": "urn:visionflow:linked:simulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Game Theory]]",
-      "resolved": "urn:visionflow:linked:game-theory",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

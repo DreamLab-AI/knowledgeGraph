@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Machine Vision
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,41 +159,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:machine-vision:180aadd607e6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bb335785bb2e9051879a6bdcddc84fac18cf243b318d62c91c68004aa38dfe32"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sensor]]",
-      "resolved": "urn:visionflow:linked:sensor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Object Detection]]",
-      "resolved": "urn:visionflow:linked:object-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

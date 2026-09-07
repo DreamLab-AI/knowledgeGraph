@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Random Oracle Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -147,41 +142,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:random-oracle-model:0557a4fa7f57",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:796b976af707e4d661c0959f38771233bfe836f743d00831b7afadbbacfb1f41"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:linked:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Hash Function]]",
-      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

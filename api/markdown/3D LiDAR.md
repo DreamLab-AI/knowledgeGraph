@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D LiDAR
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -59,23 +54,56 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:2-d-li-dar", "label": "2D LiDAR"},
-      {"@id": "urn:ngm:class:lidar-scanning", "label": "Lidar Scanning"},
-      {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
-      {"@id": "urn:ngm:class:multirotor-uav", "label": "Multirotor UAV"}
+      {
+        "@id": "urn:ngm:class:2-d-li-dar",
+        "label": "2D LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "@id": "urn:ngm:class:multirotor-uav",
+        "label": "Multirotor UAV"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ]
   },
   "quality": 0.8,
@@ -86,37 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-d-li-dar:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bc54d8d8625320088b1e463caf4a4e51899c9ed028d3984cb89af781213f59dc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Lidar]]",
-      "resolved": "urn:visionflow:owl:class:lidar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - 3D LiDAR generates three-dimensional point cloud of environment.

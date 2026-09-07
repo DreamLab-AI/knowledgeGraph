@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vector Search
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,46 +188,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vector-search:b91bdf2c4ce2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f8d46944f9f6fa19d258b5df4b1c42db19ac46648f8424827fd7934dac9db149"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Embeddings]]",
-      "resolved": "urn:visionflow:linked:embeddings",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Search]]",
-      "resolved": "urn:visionflow:linked:semantic-search",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vector Database]]",
-      "resolved": "urn:visionflow:linked:vector-database",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Retrieval]]",
-      "resolved": "urn:visionflow:linked:information-retrieval",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Vector search is a retrieval paradigm that finds the items in a collection whose [[Embeddings]] — high-dimensional vector representations of semantic, visual, or multimodal content — are closest to a query vector under a chosen [[Similarity Metric]]. Rather than matching keywords lexically, it captures meaning, enabling [[Semantic Search]], [[Retrieval-Augmented Generation]], and [[Recommendation System]] applications where relevance is determined by proximity in an embedding space. The approach depends on [[Approximate Nearest Neighbour]] algorithms and specialised [[Vector Index]] structures to scale efficiently to tens of millions or billions of items. At infrastructure level, [[Vector Database]] systems combine these indexes with metadata filtering, replication, and query serving.
 
@@ -279,12 +234,12 @@ public: true
 - ### Mechanisms
   - #### Indexing Pipeline
     - 1. Encode corpus items through the embedding model to produce a matrix of n × d floats.
-    - 2. Build an ANN index (e.g., HNSW graph or IVF centroids) over the matrix.
+    - 2. Build an ANN [private] (e.g., HNSW graph or IVF centroids) over the matrix.
     - 3. Optionally apply quantisation to compress storage.
-    - 4. Persist index to disk or memory; distribute across shards for large corpora.
+    - 4. Persist [private] to disk or memory; distribute across shards for large corpora.
   - #### Query Pipeline
     - 1. Encode the query with the same embedding model.
-    - 2. Run ANN search against the index, retrieving top-k candidate IDs and distances.
+    - 2. Run ANN search against the [private], retrieving top-k candidate IDs and distances.
     - 3. Apply any metadata post-filters.
     - 4. Optionally re-rank candidates using a more expensive cross-encoder or [[Reciprocal Rank Fusion]] if [[Hybrid Search]] is used.
     - 5. Return ranked results to the application layer.
@@ -344,7 +299,7 @@ public: true
   - **Faiss** (Facebook AI Similarity Search): foundational C++ library; reference implementation for IVF, HNSW, PQ indexes; widely used in research and production.
   - **hnswlib**: standalone Python/C++ implementation of HNSW; integrated into many vector databases.
   - **Annoy** (Approximate Nearest Neighbours Oh Yeah): tree-based ANN by Spotify; optimised for read-heavy, static corpora.
-  - [[Vector Database]] vendors (Weaviate, Qdrant, Milvus, Pinecone, pgvector, Chroma) each implement their own index formats and query APIs.
+  - [[Vector Database]] vendors (Weaviate, Qdrant, Milvus, Pinecone, pgvector, Chroma) each implement their own [private] formats and query APIs.
   - **pgvector**: PostgreSQL extension that adds native vector column types and IVFFlat/HNSW indexes, making [[Relational Database]] systems capable of vector search.
   - **OpenSearch** and **Elasticsearch** have integrated k-NN plugins, converging [[Full-Text Search]] and vector search in a single engine.
   - ANN benchmark project (ann-benchmarks.com) provides standardised recall-throughput comparisons across algorithms and datasets.

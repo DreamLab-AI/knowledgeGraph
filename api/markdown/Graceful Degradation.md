@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Graceful Degradation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

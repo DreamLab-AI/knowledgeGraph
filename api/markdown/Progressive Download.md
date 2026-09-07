@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Progressive Download
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,16 +46,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"}
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:video-streaming", "label": "Video Streaming"},
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
+      {
+        "@id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"}
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
     ]
   },
   "quality": 0.35,
@@ -71,26 +84,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:progressive-download:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8b71e6ba10c18e222523073ec64b22380430fe94b53a76d002c782761e699d6c"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Progressive Download is a content delivery technique in which assets—3D models, textures, audio, or video—are streamed and partially consumed before the full file is retrieved. It enables early playback or rendering from incomplete data, reduces perceived loading latency in metaverse environments, and underpins level-of-detail streaming and lazy asset loading strategies.

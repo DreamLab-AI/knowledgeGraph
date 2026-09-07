@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UK MLR 2017
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "The UK Money Laundering Regulations 2017 (MLR 2017) are the principal UK regulations transposing anti-money-laundering and counter-terrorist-financing requirements onto regulated firms, including financial institutions and crypto-asset businesses. They mandate customer due diligence, risk assessment, record-keeping, and reporting obligations, and bring virtual-asset service providers under supervision by the FCA.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ]
   },
   "quality": 0.72
 }

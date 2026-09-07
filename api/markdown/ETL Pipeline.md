@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETL Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -71,20 +66,50 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:feature-store", "label": "Feature Store"},
-      {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"},
-      {"@id": "urn:ngm:class:database-system", "label": "Database System"}
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "@id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
     ]
   },
   "quality": 0.8,
@@ -95,52 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etl-pipeline:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6a77b42244c30a8246b76f67625531df6f518b71856ab2a1165edf2aa57135a1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Engineering]]",
-      "resolved": "urn:visionflow:linked:data-engineering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An ETL (Extract-Transform-Load) Pipeline is a structured data integration workflow that automates the movement of data through three sequential phases: extraction of raw data from one or more heterogeneous source systems (relational databases, REST APIs, flat files, message queues, SaaS applications, IoT streams), transformation of that data through a chain of operations including cleaning, deduplication, type casting, schema normalisation, business-rule application, aggregation, and enrichment, and loading of the resulting structured and validated data into one or more target data stores such as a [[Data Warehouse]], [[Data Lake]], [[Feature Store]], or operational database. ETL pipelines are the foundational data-movement primitive of [[Data Engineering]] and underpin the data preparation layer that feeds [[Machine Learning]] training workflows, [[Business Intelligence]] dashboards, regulatory reporting, and real-time analytical applications. They operate in both batch mode, where data is processed in scheduled windows (hourly, daily, weekly), and streaming mode, where records are processed continuously as they arrive through systems such as [[Apache Kafka]] or [[Stream Processing]] platforms. The classical ETL architecture places transformation logic in an intermediate staging engine before load, whereas the modern ELT (Extract-Load-Transform) inversion exploits the massive parallel processing power of cloud data warehouses — Snowflake, BigQuery, Databricks, Redshift — to apply transformations using SQL or Python after raw data has already been loaded, enabling analysts to iterate on transformation logic without re-extracting source data. Robust ETL pipeline design requires careful handling of schema evolution (source schemas change unexpectedly), late-arriving data (events from offline devices arriving out of order), exactly-once or at-least-once delivery semantics, idempotency (safe re-execution on failure), and data lineage tracking — the ability to trace every record back through every transformation to its origin, which is essential for regulatory compliance under frameworks such as UK GDPR and the NHS Data Security and Protection Toolkit. In AI and MLOps contexts, ETL pipelines extend into [[Feature Engineering]] workflows where domain-specific transformations produce numerical feature vectors stored in a [[Feature Store]], with versioning and point-in-time correctness preventing data leakage between training and serving environments.
@@ -249,7 +228,7 @@ public: true
         ObjectSomeValuesFrom(ai:reducesTo ai:FeaturePipeline))
 
   ## About
-    - The ETL pipeline concept dates to the emergence of data warehousing in the late 1980s and early 1990s, when organisations began consolidating operational data from heterogeneous transactional systems into dedicated analytical stores. Bill Inmon's *Building the Data Warehouse* (1992) coined the term "data warehouse" and prescribed a top-down approach starting with an enterprise-wide integrated data model from which departmental data marts are derived. Ralph Kimball's competing dimensional modelling methodology advocated a bottom-up approach starting with subject-area data marts built from denormalised star schemas that analysts could query directly. Both methodologies required systematic ETL processes to extract data from OLTP source systems, apply transformations to match the warehouse schema, and load the results. Early ETL work was performed by hand — custom scripts, stored procedures, and scheduled jobs written in Perl or shell — before dedicated Extract-Transform-Load software products emerged from vendors such as Informatica PowerCenter (founded 1993), IBM InfoSphere DataStage (formerly Ascential DataStage), Ab Initio, Oracle Warehouse Builder, and Microsoft SQL Server Integration Services (SSIS). These products introduced visual pipeline designers, metadata repositories, built-in connectors to common databases and flat-file formats, and scheduling engines that replaced ad-hoc scripting with governed, monitored, restartable workflows. The central innovation was separating pipeline configuration (the "what") from pipeline execution (the "how"), enabling non-programmer analysts to define transformation logic through graphical interfaces while the engine handled parallelism, restart-on-failure, and performance optimisation.
+    - The ETL pipeline concept dates to the emergence of data warehousing in the late 1980s and early 1990s, when organisations began consolidating operational data from heterogeneous transactional systems into dedicated analytical stores. Bill Inmon's *Building the Data Warehouse* (1992) coined the term "data warehouse" and prescribed a top-down approach starting with an enterprise-wide integrated data model from which departmental data marts are derived. Ralph Kimball's competing dimensional modelling methodology advocated a bottom-up approach starting with subject-area data marts built from denormalised star schemas that analysts [private] query directly. Both methodologies required systematic ETL processes to extract data from OLTP source systems, apply transformations to match the warehouse schema, and load the results. Early ETL work was performed by hand — custom scripts, stored procedures, and scheduled jobs written in Perl or shell — before dedicated Extract-Transform-Load software products emerged from vendors such as Informatica PowerCenter (founded 1993), IBM InfoSphere DataStage (formerly Ascential DataStage), Ab Initio, Oracle Warehouse Builder, and Microsoft SQL Server Integration Services (SSIS). These products introduced visual pipeline designers, metadata repositories, built-in connectors to common databases and flat-file formats, and scheduling engines that replaced ad-hoc scripting with governed, monitored, restartable workflows. The central innovation was separating pipeline configuration (the "what") from pipeline execution (the "how"), enabling non-programmer analysts to define transformation logic through graphical interfaces while the engine handled parallelism, restart-on-failure, and performance optimisation.
     - The explosion of internet-scale data in the 2000s overwhelmed single-node ETL servers and drove adoption of distributed processing frameworks. Hadoop's MapReduce provided cheap batch processing over commodity hardware, but its programming model (map functions emitting key-value pairs, reduce functions aggregating by key) was cumbersome for the iterative, multi-join transformations typical in ETL work. Apache Hive added a SQL-like query layer over MapReduce, making large-scale batch ETL more accessible. Apache Spark (first released 2012, Matei Zaharia et al., UC Berkeley AMPLab) resolved the core limitation by providing in-memory distributed computation with a high-level RDD/Dataset/DataFrame API, lazy evaluation, query optimisation via Catalyst, and a unified engine handling batch, micro-batch streaming, ML, and graph processing. Spark's Structured Streaming (2016) extended the DataFrame abstraction to continuous data streams, enabling a single unified API for batch and streaming ETL. Concurrently, Apache Kafka (2011, LinkedIn engineering, Jay Kreps, Neha Narkhede, Jun Rao) introduced the concept of the commit log as a durable, replayable, partitioned message bus that decouples data producers from consumers and supports exactly-once delivery semantics through idempotent producers and transactional APIs. The combination of Spark (transformation) and Kafka (streaming ingestion) became the standard architecture for large-scale streaming ETL pipelines throughout the 2014-2022 period.
     - The cloud data warehouse era — Amazon Redshift (2012, columnar MPP), Google BigQuery (2010, serverless), Snowflake (2014, multi-cluster shared data architecture) — fundamentally altered the ETL calculus by separating storage from compute. These platforms provide elastically scalable, columnar, massively parallel SQL engines that can apply arbitrary SQL transformations to raw data in seconds over terabyte datasets, charging only for compute used during queries. This shifted the optimal point of transformation: rather than transforming data in an intermediate ETL server before loading (classical ETL), teams now extract and load raw data first into a landing zone within the warehouse, then apply transformations in-warehouse using SQL — the ELT inversion. The data build tool (dbt, 2016, Tristan Handy and Drew Banin at RJMetrics) operationalised this pattern: dbt allows data engineers and analytics engineers to define transformations as version-controlled SQL models with automatic DAG dependency resolution, pytest-style assertions, and auto-generated documentation. dbt brought software engineering discipline — version control, code review, CI/CD, testing — to data transformation work, and its meteoric growth from startup tool to foundational infrastructure component mirrors the shift from ad-hoc scripting to governed ELT. By 2026, the data pipeline tools market had reached approximately $13.68 billion (up from $11.24 billion in 2024), and Fivetran and dbt Labs completed an all-stock merger on June 1, 2026, creating the first single-vendor ingestion-transformation-activation platform at enterprise scale.
     - In AI and [[Machine Learning]] contexts, ETL pipelines must satisfy additional constraints absent from analytics-only use cases. Point-in-time correctness is paramount: a feature value in a training dataset must reflect only information that would have been observable at the time the label was recorded, preventing future information leakage that inflates training accuracy and collapses in production. Achieving this requires ETL pipelines to maintain event-time semantics — carrying the observation timestamp of each record through every transformation — and loading features into a [[Feature Store]] with both event time and processing time metadata. [[Feature Engineering]] transformations include temporal aggregations (7-day rolling average of user clicks), entity embeddings (product2vec trained on co-purchase graphs), cross-feature interactions (customer segment × product category revenue), and seasonal decompositions. Training data pipelines must additionally handle class imbalance (oversampling or undersampling within the ETL layer), synthetic data augmentation, train/validation/test split generation with temporal holdout, and schema validation to catch feature distribution shifts before they corrupt model training runs. The integration of ETL pipelines into [[MLOps]] workflows extends to production monitoring: the same pipeline logic that prepares training data also captures inference request features and prediction outputs, enabling drift detection by comparing serving-time feature distributions against training-time baselines.

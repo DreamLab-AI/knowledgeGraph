@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Payment System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -207,72 +202,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-payment-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8ae540687788c83c06ce6066e7b4bea481f661e9ca30bb0941480e10dd0e454c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross-Border Payments]]",
-      "resolved": "urn:visionflow:linked:cross-border-payments",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Payment Gateway]]",
-      "resolved": "urn:visionflow:linked:payment-gateway",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Transactions]]",
-      "resolved": "urn:visionflow:linked:virtual-transactions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Network]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Wallet]]",
-      "resolved": "urn:visionflow:owl:class:digital-wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:financial-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Micropayments]]",
-      "resolved": "urn:visionflow:owl:class:micropayments",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The integrated infrastructure of protocols, platforms, and financial instruments enabling secure monetary transactions within metaverse environments, encompassing cryptocurrency payments, stablecoin transfers, fiat gateways, and smart contract-based payment automation for virtual goods and services.

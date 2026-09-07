@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Explainability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -219,42 +214,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:explainability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bc7ff207e9a4b732bf19d750233e8d1cb714a9497a00a7e3603a733fb5cb085f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Accountability (AI-0068)]]",
-      "resolved": "urn:visionflow:linked:accountability-ai-0068",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Contestability (AI-0043)]]",
-      "resolved": "urn:visionflow:linked:contestability-ai-0043",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The extent to which an AI system's decision-making processes, outputs, and behaviors can be understood and articulated in human-comprehensible terms, enabling stakeholders to grasp how and why specific outcomes were produced.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CoAP
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "The Constrained Application Protocol (CoAP) is a specialised web transfer protocol defined in RFC 7252 (IETF, 2014) designed for use with constrained nodes and networks in the Internet of Things ecosystem. Modelled on HTTP's request-response semantics and RESTful resource model but optimised for low-power, lossy networks, CoAP uses UDP as its transport layer, features a compact binary header, supports observe (pub/sub) extensions, and includes built-in mechanisms for reliability, multicast, and asynchronous communication. CoAP is a cornerstone protocol for IoT device management and machine-to-machine communication.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:building-automation", "label": "Building Automation"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:building-automation",
+        "label": "Building Automation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"}
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - CoAP is widely implemented in firmware libraries including libcoap (C), Californium (Java), Copper (Firefox extension for testing), and is natively supported in ARM Mbed OS, Contiki-NG, RIOT OS, and Zephyr RTOS. It is referenced by the OCF (Open Connectivity Foundation) specification, the LwM2M (Lightweight Machine to Machine) device management protocol, and the Matter protocol (which uses it internally for cloud connectivity). Real-world deployments include smart metres, HVAC sensors, industrial condition monitoring, and precision agriculture sensor nodes.
 
   - By 2024–2025, CoAP remains a primary IoT application protocol alongside [[MQTT]] v5, HTTP/2, and emerging candidates such as QUIC-based transports. The Matter smart home standard has brought CoAP (via Thread/IPv6 networks) into residential IoT at scale. OSCORE adoption improves security without DTLS session overhead, important for extremely constrained class-1 devices. CoAP-over-TCP and WebSocket transport bridges allow integration with cloud platforms that do not natively support UDP. Research continues on CoAP for Low-Orbit satellite IoT links (LEO constellations) where propagation delays and intermittent connectivity make its lightweight asynchronous model advantageous.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BOLT12 Offers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "BOLT12 Offers is a Lightning Network specification defining reusable, static payment requests called offers, improving on single-use BOLT11 invoices. An offer is a long-lived, shareable code from which payers fetch a fresh invoice on demand via onion messages, enabling recurring payments, refunds, and donation links without a server issuing each invoice. It also improves privacy through blinded paths that hide the recipient's node identity.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ]
   },
   "quality": 0.72

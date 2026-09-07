@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Topology
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:topology", "@type":"Page", "title":"Topology", "vc:slug":"topology", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:topology",
+  "@type": "Page",
+  "title": "Topology",
+  "vc:slug": "topology",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SocialPresence
----
-
-# Social Presence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,47 +178,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:social-presence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9e72c244193228052525cf78f2adbdbc525b04fe80c47a1cb4df5a71bf4f3cce"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Presence Research]]",
-      "resolved": "urn:visionflow:linked:presence-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Presence]]",
-      "resolved": "urn:visionflow:owl:class:presence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TelecollaborationDomain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships.

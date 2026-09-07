@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Domain Randomisation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

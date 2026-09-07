@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Entropy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -71,41 +66,6 @@ public: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",
     "inferenceRule": "GapFillTier5"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:entropy:67671a2f53dd",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b9ad683889ff726d3abb25361cbc030c3841537f5fc4d1f71f40f205d4199edb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Random Number Generation]]",
-      "resolved": "urn:visionflow:linked:random-number-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Theory]]",
-      "resolved": "urn:visionflow:linked:information-theory",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

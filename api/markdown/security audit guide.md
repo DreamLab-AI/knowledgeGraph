@@ -1,8 +1,3 @@
----
-public: true
----
-
-# security audit guide
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,20 +63,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      }
     ]
   },
   "provenance": {
@@ -91,47 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:security-audit-guide:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3bc869e37c328b22479f949bccd62fde1d76176392152b8de20dd29ee5ce8612"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain|blockchain systems]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography|cryptographic infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SmartContract|smart contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A comprehensive procedural guide establishing standards, methodologies, and frameworks for conducting security audits of [[Blockchain|blockchain systems]], [[SmartContract|smart contracts]], and [[Cryptography|cryptographic infrastructure]]. This guide enables systematic vulnerability assessment and security control evaluation.

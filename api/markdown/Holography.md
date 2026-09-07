@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Holography
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:holography:d47b58a99080",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:512c7b1f6a2fa6d1266eb05db9be5a8f1ab263b6299249cbbe5facca45e200ca"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Camera]]",
-      "resolved": "urn:visionflow:linked:camera",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Holographic Display]]",
-      "resolved": "urn:visionflow:linked:holographic-display",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Processing]]",
-      "resolved": "urn:visionflow:linked:image-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A technique for recording and reconstructing the full wavefront of light, including both amplitude and phase, to reproduce three-dimensional images. It records the interference pattern between a reference beam and light scattered from an object.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tensor Processing Unit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,37 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tensor-processing-unit:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ec5c3b85ad68bbbb22ffdc4239354bda27fcf7bc486ed4bd5f6c3cfcefe5fba7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Inference Hardware]]",
-      "resolved": "urn:visionflow:owl:class:inference-hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Tensor Processing Unit is a concept within the ai domain.
@@ -491,7 +455,7 @@ public: true
   - Anthropic's landmark TPU commitment (announced 23 October 2025 for up to one million TPUs and over a gigawatt of capacity in 2026) was tripled on 24 April 2026 to roughly 3.5 GW of next-generation TPU capacity co-designed with Broadcom, alongside a Google investment of up to $40 billion in Anthropic - the clearest signal yet of TPUs becoming a merchant-silicon alternative to Nvidia rather than a cloud-only offering.
   - Google is increasingly productising TPUs beyond its own cloud: a first tranche of roughly 400,000 Ironwood chips is being sold as finished racks directly to Anthropic via Broadcom (~$10 billion) for deployment in Anthropic's own facilities, and a new TPU infrastructure venture with Blackstone commits $5 billion in initial equity toward 500 MW of capacity by 2027.
   - On economics, SemiAnalysis estimates the total cost of ownership of a TPU v7 server is roughly 44% lower than an Nvidia GB200 server (about 30% lower for Anthropic renting via GCP even after Google and Broadcom margins), narrowing the price-performance gap while Nvidia still holds an estimated ~81% of the data-centre AI-chip market.
-  - Key open challenges as of 2026 remain the software moat and lock-in: Ironwood is effectively JAX-only, TPUs historically could not be bought as standalone hardware and were accessible only by renting Google Cloud capacity, and multi-cloud labs such as Anthropic still hedge across Google TPUs, AWS Trainium and Nvidia GPUs for supply-chain resilience.
+  - Key open challenges as of 2026 remain the software moat and lock-in: Ironwood is effectively JAX-only, TPUs historically [private] not be bought as standalone hardware and were accessible only by renting Google Cloud capacity, and multi-cloud labs such as Anthropic still hedge across Google TPUs, AWS Trainium and Nvidia GPUs for supply-chain resilience.
 
 - ### References
   - 1. Google (2025). Ironwood: The first Google TPU for the age of inference. https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/ironwood-tpu-age-of-inference/

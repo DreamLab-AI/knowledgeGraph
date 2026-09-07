@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Internet Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

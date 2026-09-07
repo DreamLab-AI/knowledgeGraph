@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Consumer AI Market
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "consumer-ai-market",
   "title": "Consumer AI Market",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Google AI Strategy", "Product Distribution"],
+  "vc:outboundWikilinks": [
+    "Google AI Strategy",
+    "Product Distribution"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}, {"@id": "urn:ngm:class:software-development", "label": "Software Development"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

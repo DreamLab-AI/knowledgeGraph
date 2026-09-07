@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ECB
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ecb:36dacb8a0506",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a327da01500f39109206bb5a3a2615c9186a4f601b12a94217ea618a5f31340d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Central Bank]]",
-      "resolved": "urn:visionflow:linked:central-bank",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Monetary Policy]]",
-      "resolved": "urn:visionflow:linked:monetary-policy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Stability]]",
-      "resolved": "urn:visionflow:linked:financial-stability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial System]]",
-      "resolved": "urn:visionflow:linked:financial-system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The European Central Bank, the central bank responsible for monetary policy across the member states that use the euro and for supervisory functions within the banking union.

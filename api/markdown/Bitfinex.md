@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitfinex
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bitfinex:00576e55b7ae",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:714dd29a96b4d35d04da15e27a3e01a07b7abbf3757725bddc5de74f1c06ef2d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tether]]",
-      "resolved": "urn:visionflow:linked:tether",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.bitfinex.com]]",
-      "resolved": "urn:visionflow:linked:https-www-bitfinex-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.bitfinex.com]]",
-      "resolved": "urn:visionflow:linked:https-docs-bitfinex-com",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Bitfinex is a cryptocurrency exchange that allows trading of digital assets and is associated with the issuer of the Tether stablecoin. It is operated by iFinex.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Autonomous Business Operations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "autonomous-business-operations",
   "title": "Autonomous Business Operations",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI-Driven Enterprise", "Pulsia"],
+  "vc:outboundWikilinks": [
+    "AI-Driven Enterprise",
+    "Pulsia"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:intelligent-automation", "label": "Intelligent Automation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

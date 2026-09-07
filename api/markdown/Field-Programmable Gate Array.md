@@ -1,57 +1,111 @@
----
-public: true
----
-
-# Field-Programmable Gate Array
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:field-programmable-gate-array", "@type":"Page", "title":"Field-Programmable Gate Array", "vc:slug":"field-programmable-gate-array", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:field-programmable-gate-array",
+  "@type": "Page",
+  "title": "Field-Programmable Gate Array",
+  "vc:slug": "field-programmable-gate-array",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:field-programmable-gate-array",
-  "@type":"Class",
-  "label":"Field-Programmable Gate Array",
-  "definition":"A field-programmable gate array (FPGA) is an integrated circuit whose internal logic and interconnect can be reconfigured by the user after manufacture to implement arbitrary digital circuits. It comprises a fabric of programmable logic blocks, embedded memories, and routing that is configured from a hardware description language. FPGAs deliver hardware-level parallelism and low latency while remaining reprogrammable, sitting between fixed ASICs and general-purpose processors.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:hardware-accelerator","label":"Hardware Accelerator"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:integrated-circuit","label":"Integrated Circuit"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:field-programmable-gate-array",
+  "@type": "Class",
+  "label": "Field-Programmable Gate Array",
+  "definition": "A field-programmable gate array (FPGA) is an integrated circuit whose internal logic and interconnect can be reconfigured by the user after manufacture to implement arbitrary digital circuits. It comprises a fabric of programmable logic blocks, embedded memories, and routing that is configured from a hardware description language. FPGAs deliver hardware-level parallelism and low latency while remaining reprogrammable, sitting between fixed ASICs and general-purpose processors.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware-accelerator",
+      "label": "Hardware Accelerator"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:integrated-circuit",
+        "label": "Integrated Circuit"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:hardware-description-language","label":"Hardware Description Language"},
-      {"@id":"urn:ngm:class:reconfigurable-computing","label":"Reconfigurable Computing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hardware-description-language",
+        "label": "Hardware Description Language"
+      },
+      {
+        "@id": "urn:ngm:class:reconfigurable-computing",
+        "label": "Reconfigurable Computing"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:asic","label":"ASIC"},
-      {"@id":"urn:ngm:class:gpu","label":"GPU"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:digital-signal-processing","label":"Digital Signal Processing"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:hardware-accelerator","label":"Hardware Accelerator"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:system-on-chip","label":"System-on-Chip"},
-      {"@id":"urn:ngm:class:integrated-circuit","label":"Integrated Circuit"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      },
+      {
+        "@id": "urn:ngm:class:integrated-circuit",
+        "label": "Integrated Circuit"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:reconfigurable-computing","label":"Reconfigurable Computing"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:reconfigurable-computing",
+        "label": "Reconfigurable Computing"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:asic","label":"ASIC"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      }
     ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:fpga","label":"FPGA"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:fpga",
+      "label": "FPGA"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

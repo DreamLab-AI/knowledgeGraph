@@ -1,56 +1,117 @@
----
-public: true
----
-
-# Inverse Reinforcement Learning
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:inverse-reinforcement-learning", "@type":"Page", "title":"Inverse Reinforcement Learning", "vc:slug":"inverse-reinforcement-learning", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:inverse-reinforcement-learning",
-  "@type":"Class",
-  "label":"Inverse Reinforcement Learning",
-  "definition":"Inverse reinforcement learning (IRL) is a machine-learning approach that infers the reward function an agent appears to be optimising from observations of its behaviour, rather than being told the reward in advance. It inverts the usual reinforcement-learning problem: instead of finding a policy that maximises a known reward, it recovers the reward that best explains demonstrated, near-optimal trajectories. The recovered reward can then be used to train new policies that generalise the demonstrated intent to unseen situations, making IRL central to learning complex objectives that are hard to specify by hand.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:imitation-learning","label":"Imitation Learning"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:imitation-learning","label":"Imitation Learning"}],
-    "requires":[
-      {"@id":"urn:ngm:class:reward-function","label":"Reward Function"},
-      {"@id":"urn:ngm:class:markov-decision-process","label":"Markov Decision Process"}
-    ],
-    "uses":[
-      {"@id":"urn:ngm:class:reinforcement-learning","label":"Reinforcement Learning"},
-      {"@id":"urn:ngm:class:neural-network","label":"Neural Network"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:apprenticeship-learning","label":"Apprenticeship Learning"},
-      {"@id":"urn:ngm:class:robot-perception","label":"Robot Learning"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:robotics","label":"Robotics"},
-      {"@id":"urn:ngm:class:reward-function","label":"Reward Function"}
-    ],
-    "dependsOn":[{"@id":"urn:ngm:class:markov-decision-process","label":"Markov Decision Process"}],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:reinforcement-learning","label":"Reinforcement Learning"}
-    ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:apprenticeship-learning","label":"Apprenticeship Learning"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"},
-      {"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:inverse-reinforcement-learning",
+  "@type": "Page",
+  "title": "Inverse Reinforcement Learning",
+  "vc:slug": "inverse-reinforcement-learning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:inverse-reinforcement-learning",
+  "@type": "Class",
+  "label": "Inverse Reinforcement Learning",
+  "definition": "Inverse reinforcement learning (IRL) is a machine-learning approach that infers the reward function an agent appears to be optimising from observations of its behaviour, rather than being told the reward in advance. It inverts the usual reinforcement-learning problem: instead of finding a policy that maximises a known reward, it recovers the reward that best explains demonstrated, near-optimal trajectories. The recovered reward can then be used to train new policies that generalise the demonstrated intent to unseen situations, making IRL central to learning complex objectives that are hard to specify by hand.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:apprenticeship-learning",
+        "label": "Apprenticeship Learning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:apprenticeship-learning",
+        "label": "Apprenticeship Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Inverse reinforcement learning infers the [[Reward Function]] that best explains observed expert behaviour, inverting standard [[Reinforcement Learning]]. As a form of [[Imitation Learning]] over a [[Markov Decision Process]], it recovers intent rather than copying actions directly.
 - ### Overview

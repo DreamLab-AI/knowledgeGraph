@@ -1,36 +1,104 @@
----
-public: true
----
-
-# Overlay Network
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:overlay-network", "@type":"Page", "title":"Overlay Network", "vc:slug":"overlay-network", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:overlay-network",
+  "@type": "Page",
+  "title": "Overlay Network",
+  "vc:slug": "overlay-network",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:overlay-network",
-  "@type":"Class",
-  "label":"Overlay Network",
-  "definition":"An overlay network is a logical network built on top of an existing physical or underlay network, where nodes are connected by virtual links that may each traverse many underlying hops. By abstracting away the physical topology, overlays implement custom routing, addressing and services such as peer-to-peer file sharing, content delivery and encrypted tunnelling. They trade some efficiency for flexibility, resilience and the ability to deploy new network behaviour without changing the underlay.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"},{"@id":"urn:ngm:class:networking-infrastructure","label":"Networking Infrastructure"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
-    "implements":[{"@id":"urn:ngm:class:virtual-network","label":"Virtual Network"}],
-    "supports":[{"@id":"urn:ngm:class:peer-to-peer-network","label":"Peer-to-Peer Network"},{"@id":"urn:ngm:class:content-delivery-network","label":"Content Delivery Network"}],
-    "uses":[{"@id":"urn:ngm:class:distributed-hash-table","label":"Distributed Hash Table"},{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "enables":[{"@id":"urn:ngm:class:encryption","label":"Encryption"}],
-    "dependsOn":[{"@id":"urn:ngm:class:application-layer","label":"Application Layer"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "relatedTo":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"},{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:overlay-network",
+  "@type": "Class",
+  "label": "Overlay Network",
+  "definition": "An overlay network is a logical network built on top of an existing physical or underlay network, where nodes are connected by virtual links that may each traverse many underlying hops. By abstracting away the physical topology, overlays implement custom routing, addressing and services such as peer-to-peer file sharing, content delivery and encrypted tunnelling. They trade some efficiency for flexibility, resilience and the ability to deploy new network behaviour without changing the underlay.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:networking-infrastructure",
+      "label": "Networking Infrastructure"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:virtual-network",
+        "label": "Virtual Network"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

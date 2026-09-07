@@ -1,8 +1,3 @@
----
-public: true
----
-
-# real-time transcription
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,23 +34,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"}
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Real-time transcription is the automated conversion of streaming audio to text with latency sufficiently low (typically below 500 ms word latency) to support synchronous human use cases such as live captioning, voice-controlled interfaces, meeting assistance, and broadcast subtitling. It requires streaming automatic speech recognition (ASR) architectures that produce partial and final hypotheses incrementally as audio frames arrive, rather than processing complete utterances offline. Modern systems combine acoustic models (typically based on conformer or whisper-encoder architectures), language models for hypothesis rescoring, and punctuation/formatting post-processors to produce readable output in real time.

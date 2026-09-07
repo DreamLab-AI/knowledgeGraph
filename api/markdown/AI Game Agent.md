@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Game Agent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,77 +7,277 @@ public: true
   "title": "AI Game Agent",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:adaptive-challenge", "vc:label": "Adaptive Challenge"},
-    {"@id": "urn:visionflow:linked:adaptive-difficulty", "vc:label": "Adaptive Difficulty"},
-    {"@id": "urn:visionflow:linked:behaviour-tree", "vc:label": "Behavior Tree"},
-    {"@id": "urn:visionflow:linked:decision-engine", "vc:label": "Decision Engine"},
-    {"@id": "urn:visionflow:linked:dynamic-gameplay", "vc:label": "Dynamic Gameplay"},
-    {"@id": "urn:visionflow:linked:emergent-behavior", "vc:label": "Emergent Behavior"},
-    {"@id": "urn:visionflow:linked:game-ai-pro", "vc:label": "Game AI Pro"},
-    {"@id": "urn:visionflow:linked:game-state", "vc:label": "Game State"},
-    {"@id": "urn:visionflow:linked:ieee-cig", "vc:label": "IEEE CIG"},
-    {"@id": "urn:visionflow:linked:navigation-mesh", "vc:label": "Navigation Mesh"},
-    {"@id": "urn:visionflow:linked:pathfinding-system", "vc:label": "Pathfinding System"},
-    {"@id": "urn:visionflow:linked:player-engagement", "vc:label": "Player Engagement"},
-    {"@id": "urn:visionflow:linked:procedural-behavior", "vc:label": "Procedural Behavior"},
-    {"@id": "urn:visionflow:linked:unity-ml-agents", "vc:label": "Unity ML-Agents"},
-    {"@id": "urn:visionflow:linked:user-experience-layer", "vc:label": "UserExperienceLayer"},
-    {"@id": "urn:visionflow:owl:class:ai-agent-system", "vc:label": "AI Agent System"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:compute-layer", "vc:label": "ComputeLayer"},
-    {"@id": "urn:visionflow:owl:class:ai-application", "vc:label": "CreativeMediaDomain"},
-    {"@id": "urn:visionflow:owl:class:game-engine", "vc:label": "Game Engine"},
-    {"@id": "urn:visionflow:owl:class:intelligent-virtual-entity", "vc:label": "Intelligent Virtual Entity"},
-    {"@id": "urn:visionflow:owl:class:sc-interaction", "vc:label": "InteractionDomain"},
-    {"@id": "urn:visionflow:owl:class:procedural-content-generation", "vc:label": "Procedural Content Generation"},
-    {"@id": "urn:visionflow:owl:class:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:owl:class:state-machine", "vc:label": "State Machine"},
-    {"@id": "urn:visionflow:linked:finite-state-machine", "vc:label": "Finite State Machine"},
-    {"@id": "urn:visionflow:linked:monte-carlo-tree-search", "vc:label": "Monte Carlo Tree Search"},
-    {"@id": "urn:visionflow:linked:imitation-learning", "vc:label": "Imitation Learning"},
-    {"@id": "urn:visionflow:linked:self-play", "vc:label": "Self-Play"},
-    {"@id": "urn:visionflow:linked:markov-decision-process", "vc:label": "Markov Decision Process"},
-    {"@id": "urn:visionflow:linked:partially-observable-mdp", "vc:label": "Partially Observable MDP"},
-    {"@id": "urn:visionflow:linked:proximal-policy-optimization", "vc:label": "Proximal Policy Optimization"},
-    {"@id": "urn:visionflow:linked:reward-shaping", "vc:label": "Reward Shaping"},
-    {"@id": "urn:visionflow:linked:curriculum-learning", "vc:label": "Curriculum Learning"},
-    {"@id": "urn:visionflow:linked:domain-randomization", "vc:label": "Domain Randomization"},
-    {"@id": "urn:visionflow:linked:utility-ai", "vc:label": "Utility AI"},
-    {"@id": "urn:visionflow:linked:goap", "vc:label": "GOAP"},
-    {"@id": "urn:visionflow:linked:htn-planning", "vc:label": "HTN Planning"},
-    {"@id": "urn:visionflow:linked:influence-map", "vc:label": "Influence Map"},
-    {"@id": "urn:visionflow:linked:npc-dialogue-system", "vc:label": "NPC Dialogue System"},
-    {"@id": "urn:visionflow:linked:player-modelling", "vc:label": "Player Modelling"},
-    {"@id": "urn:visionflow:linked:dynamic-difficulty-adjustment", "vc:label": "Dynamic Difficulty Adjustment"},
-    {"@id": "urn:visionflow:linked:emergent-gameplay", "vc:label": "Emergent Gameplay"},
-    {"@id": "urn:visionflow:linked:alpha-go", "vc:label": "AlphaGo"},
-    {"@id": "urn:visionflow:linked:alpha-zero", "vc:label": "AlphaZero"},
-    {"@id": "urn:visionflow:linked:mu-zero", "vc:label": "MuZero"},
-    {"@id": "urn:visionflow:linked:dreamer-v3", "vc:label": "DreamerV3"},
-    {"@id": "urn:visionflow:linked:inworld-ai", "vc:label": "Inworld AI"},
-    {"@id": "urn:visionflow:linked:nvidia-ace", "vc:label": "NVIDIA ACE"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:generative-agents", "vc:label": "Generative Agents"},
-    {"@id": "urn:visionflow:linked:spatial-reasoning", "vc:label": "Spatial Reasoning"},
-    {"@id": "urn:visionflow:linked:real-time-constraints", "vc:label": "Real-Time Constraints"},
-    {"@id": "urn:visionflow:linked:game-theory", "vc:label": "Game Theory"},
-    {"@id": "urn:visionflow:owl:class:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:owl:class:monte-carlo-tree-search", "vc:label": "Monte Carlo Tree Search"},
-    {"@id": "urn:visionflow:owl:class:imitation-learning", "vc:label": "Imitation Learning"},
-    {"@id": "urn:visionflow:owl:class:curriculum-learning", "vc:label": "Curriculum Learning"},
-    {"@id": "urn:visionflow:owl:class:unreal-engine", "vc:label": "Unreal Engine"},
-    {"@id": "urn:visionflow:linked:ai-in-games", "vc:label": "AI in Games"},
-    {"@id": "urn:visionflow:linked:automated-playtesting", "vc:label": "Automated Playtesting"},
-    {"@id": "urn:visionflow:linked:game-analytics", "vc:label": "Game Analytics"},
-    {"@id": "urn:visionflow:linked:open-endedness", "vc:label": "Open-Endedness"}
+    {
+      "@id": "urn:visionflow:linked:adaptive-challenge",
+      "vc:label": "Adaptive Challenge"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-difficulty",
+      "vc:label": "Adaptive Difficulty"
+    },
+    {
+      "@id": "urn:visionflow:linked:behaviour-tree",
+      "vc:label": "Behavior Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-engine",
+      "vc:label": "Decision Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-gameplay",
+      "vc:label": "Dynamic Gameplay"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergent-behavior",
+      "vc:label": "Emergent Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-ai-pro",
+      "vc:label": "Game AI Pro"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-state",
+      "vc:label": "Game State"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-cig",
+      "vc:label": "IEEE CIG"
+    },
+    {
+      "@id": "urn:visionflow:linked:navigation-mesh",
+      "vc:label": "Navigation Mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:pathfinding-system",
+      "vc:label": "Pathfinding System"
+    },
+    {
+      "@id": "urn:visionflow:linked:player-engagement",
+      "vc:label": "Player Engagement"
+    },
+    {
+      "@id": "urn:visionflow:linked:procedural-behavior",
+      "vc:label": "Procedural Behavior"
+    },
+    {
+      "@id": "urn:visionflow:linked:unity-ml-agents",
+      "vc:label": "Unity ML-Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience-layer",
+      "vc:label": "UserExperienceLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "ComputeLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-application",
+      "vc:label": "CreativeMediaDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:game-engine",
+      "vc:label": "Game Engine"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
+      "vc:label": "Intelligent Virtual Entity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sc-interaction",
+      "vc:label": "InteractionDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:procedural-content-generation",
+      "vc:label": "Procedural Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:state-machine",
+      "vc:label": "State Machine"
+    },
+    {
+      "@id": "urn:visionflow:linked:finite-state-machine",
+      "vc:label": "Finite State Machine"
+    },
+    {
+      "@id": "urn:visionflow:linked:monte-carlo-tree-search",
+      "vc:label": "Monte Carlo Tree Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:imitation-learning",
+      "vc:label": "Imitation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-play",
+      "vc:label": "Self-Play"
+    },
+    {
+      "@id": "urn:visionflow:linked:markov-decision-process",
+      "vc:label": "Markov Decision Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:partially-observable-mdp",
+      "vc:label": "Partially Observable MDP"
+    },
+    {
+      "@id": "urn:visionflow:linked:proximal-policy-optimization",
+      "vc:label": "Proximal Policy Optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-shaping",
+      "vc:label": "Reward Shaping"
+    },
+    {
+      "@id": "urn:visionflow:linked:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:domain-randomization",
+      "vc:label": "Domain Randomization"
+    },
+    {
+      "@id": "urn:visionflow:linked:utility-ai",
+      "vc:label": "Utility AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:goap",
+      "vc:label": "GOAP"
+    },
+    {
+      "@id": "urn:visionflow:linked:htn-planning",
+      "vc:label": "HTN Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:influence-map",
+      "vc:label": "Influence Map"
+    },
+    {
+      "@id": "urn:visionflow:linked:npc-dialogue-system",
+      "vc:label": "NPC Dialogue System"
+    },
+    {
+      "@id": "urn:visionflow:linked:player-modelling",
+      "vc:label": "Player Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-difficulty-adjustment",
+      "vc:label": "Dynamic Difficulty Adjustment"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergent-gameplay",
+      "vc:label": "Emergent Gameplay"
+    },
+    {
+      "@id": "urn:visionflow:linked:alpha-go",
+      "vc:label": "AlphaGo"
+    },
+    {
+      "@id": "urn:visionflow:linked:alpha-zero",
+      "vc:label": "AlphaZero"
+    },
+    {
+      "@id": "urn:visionflow:linked:mu-zero",
+      "vc:label": "MuZero"
+    },
+    {
+      "@id": "urn:visionflow:linked:dreamer-v3",
+      "vc:label": "DreamerV3"
+    },
+    {
+      "@id": "urn:visionflow:linked:inworld-ai",
+      "vc:label": "Inworld AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:nvidia-ace",
+      "vc:label": "NVIDIA ACE"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-agents",
+      "vc:label": "Generative Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-reasoning",
+      "vc:label": "Spatial Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-constraints",
+      "vc:label": "Real-Time Constraints"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-theory",
+      "vc:label": "Game Theory"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:monte-carlo-tree-search",
+      "vc:label": "Monte Carlo Tree Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:imitation-learning",
+      "vc:label": "Imitation Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:curriculum-learning",
+      "vc:label": "Curriculum Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:unreal-engine",
+      "vc:label": "Unreal Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-in-games",
+      "vc:label": "AI in Games"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-playtesting",
+      "vc:label": "Automated Playtesting"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-analytics",
+      "vc:label": "Game Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-endedness",
+      "vc:label": "Open-Endedness"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {"vc:key": "legacy-term-id", "vc:value": "AI-0800"},
-    {"vc:key": "preferred-term", "vc:value": "AI Game Agent"}
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0800"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Game Agent"
+    }
   ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-20T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -96,67 +291,199 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-application", "label": "AI Application"},
-    {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:intelligent-virtual-entity", "label": "Intelligent Virtual Entity"},
-      {"@id": "urn:ngm:class:ai-in-games", "label": "AI in Games"}
+      {
+        "@id": "urn:ngm:class:intelligent-virtual-entity",
+        "label": "Intelligent Virtual Entity"
+      },
+      {
+        "@id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:behaviour-tree", "label": "Behavior Tree"},
-      {"@id": "urn:ngm:class:decision-engine", "label": "Decision Engine"},
-      {"@id": "urn:ngm:class:pathfinding", "label": "Pathfinding System"},
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:finite-state-machine", "label": "Finite State Machine"},
-      {"@id": "urn:ngm:class:influence-map", "label": "Influence Map"},
-      {"@id": "urn:ngm:class:npc-dialogue-system", "label": "NPC Dialogue System"}
+      {
+        "@id": "urn:ngm:class:behaviour-tree",
+        "label": "Behavior Tree"
+      },
+      {
+        "@id": "urn:ngm:class:decision-engine",
+        "label": "Decision Engine"
+      },
+      {
+        "@id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding System"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:influence-map",
+        "label": "Influence Map"
+      },
+      {
+        "@id": "urn:ngm:class:npc-dialogue-system",
+        "label": "NPC Dialogue System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:navigation-mesh", "label": "Navigation Mesh"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:game-state", "label": "Game State"},
-      {"@id": "urn:ngm:class:real-time-constraints", "label": "Real-Time Constraints"},
-      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"}
+      {
+        "@id": "urn:ngm:class:navigation-mesh",
+        "label": "Navigation Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:game-state",
+        "label": "Game State"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-constraints",
+        "label": "Real-Time Constraints"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:emergent-behavior", "label": "Emergent Behavior"},
-      {"@id": "urn:ngm:class:player-engagement", "label": "Player Engagement"},
-      {"@id": "urn:ngm:class:dynamic-difficulty-adjustment", "label": "Dynamic Difficulty Adjustment"},
-      {"@id": "urn:ngm:class:emergent-gameplay", "label": "Emergent Gameplay"},
-      {"@id": "urn:ngm:class:automated-playtesting", "label": "Automated Playtesting"}
+      {
+        "@id": "urn:ngm:class:emergent-behavior",
+        "label": "Emergent Behavior"
+      },
+      {
+        "@id": "urn:ngm:class:player-engagement",
+        "label": "Player Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-difficulty-adjustment",
+        "label": "Dynamic Difficulty Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-gameplay",
+        "label": "Emergent Gameplay"
+      },
+      {
+        "@id": "urn:ngm:class:automated-playtesting",
+        "label": "Automated Playtesting"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:procedural-behavior", "label": "Procedural Behavior"},
-      {"@id": "urn:ngm:class:adaptive-difficulty", "label": "Adaptive Difficulty"},
-      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"},
-      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"},
-      {"@id": "urn:ngm:class:utility-ai", "label": "Utility AI"},
-      {"@id": "urn:ngm:class:goap", "label": "GOAP"},
-      {"@id": "urn:ngm:class:htn-planning", "label": "HTN Planning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-behavior",
+        "label": "Procedural Behavior"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-difficulty",
+        "label": "Adaptive Difficulty"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:utility-ai",
+        "label": "Utility AI"
+      },
+      {
+        "@id": "urn:ngm:class:goap",
+        "label": "GOAP"
+      },
+      {
+        "@id": "urn:ngm:class:htn-planning",
+        "label": "HTN Planning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimization"},
-      {"@id": "urn:ngm:class:reward-shaping", "label": "Reward Shaping"},
-      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"},
-      {"@id": "urn:ngm:class:domain-randomisation", "label": "Domain Randomization"},
-      {"@id": "urn:ngm:class:self-play", "label": "Self-Play"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:reward-shaping",
+        "label": "Reward Shaping"
+      },
+      {
+        "@id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "@id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomization"
+      },
+      {
+        "@id": "urn:ngm:class:self-play",
+        "label": "Self-Play"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:player-modelling", "label": "Player Modelling"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:spatial-reasoning", "label": "Spatial Reasoning"},
-      {"@id": "urn:ngm:class:generative-agents", "label": "Generative Agents"},
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}
+      {
+        "@id": "urn:ngm:class:player-modelling",
+        "label": "Player Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-reasoning",
+        "label": "Spatial Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-agents",
+        "label": "Generative Agents"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:inworld-ai", "label": "Inworld AI"},
-      {"@id": "urn:ngm:class:nvidia-ace", "label": "NVIDIA ACE"},
-      {"@id": "urn:ngm:class:unity", "label": "Unity ML-Agents"},
-      {"@id": "urn:ngm:class:unreal-engine", "label": "Unreal Engine"}
+      {
+        "@id": "urn:ngm:class:inworld-ai",
+        "label": "Inworld AI"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-ace",
+        "label": "NVIDIA ACE"
+      },
+      {
+        "@id": "urn:ngm:class:unity",
+        "label": "Unity ML-Agents"
+      },
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
     ]
   },
   "quality": 0.91,
@@ -167,81 +494,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-game-agent:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1c1e455fe8135c2929cd7de794a76c88dd24f2f398cfef3483f853db68a4376b"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Adaptive Challenge]]", "resolved": "urn:visionflow:linked:adaptive-challenge", "kind": "StubLink"},
-    {"raw": "[[Adaptive Difficulty]]", "resolved": "urn:visionflow:linked:adaptive-difficulty", "kind": "StubLink"},
-    {"raw": "[[Behaviour Tree]]", "resolved": "urn:visionflow:linked:behaviour-tree", "kind": "StubLink"},
-    {"raw": "[[Decision Engine]]", "resolved": "urn:visionflow:linked:decision-engine", "kind": "StubLink"},
-    {"raw": "[[Dynamic Gameplay]]", "resolved": "urn:visionflow:linked:dynamic-gameplay", "kind": "StubLink"},
-    {"raw": "[[Emergent Behavior]]", "resolved": "urn:visionflow:linked:emergent-behavior", "kind": "StubLink"},
-    {"raw": "[[Game AI Pro]]", "resolved": "urn:visionflow:linked:game-ai-pro", "kind": "StubLink"},
-    {"raw": "[[Game State]]", "resolved": "urn:visionflow:linked:game-state", "kind": "StubLink"},
-    {"raw": "[[IEEE CIG]]", "resolved": "urn:visionflow:linked:ieee-cig", "kind": "StubLink"},
-    {"raw": "[[Navigation Mesh]]", "resolved": "urn:visionflow:linked:navigation-mesh", "kind": "StubLink"},
-    {"raw": "[[Pathfinding System]]", "resolved": "urn:visionflow:linked:pathfinding-system", "kind": "StubLink"},
-    {"raw": "[[Player Engagement]]", "resolved": "urn:visionflow:linked:player-engagement", "kind": "StubLink"},
-    {"raw": "[[Procedural Behavior]]", "resolved": "urn:visionflow:linked:procedural-behavior", "kind": "StubLink"},
-    {"raw": "[[Unity ML-Agents]]", "resolved": "urn:visionflow:linked:unity-ml-agents", "kind": "StubLink"},
-    {"raw": "[[UserExperienceLayer]]", "resolved": "urn:visionflow:linked:user-experience-layer", "kind": "StubLink"},
-    {"raw": "[[AI Agent System]]", "resolved": "urn:visionflow:owl:class:ai-agent-system", "kind": "ResolvedLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-technique", "kind": "ResolvedLink"},
-    {"raw": "[[ComputeLayer]]", "resolved": "urn:visionflow:owl:class:compute-layer", "kind": "ResolvedLink"},
-    {"raw": "[[CreativeMediaDomain]]", "resolved": "urn:visionflow:owl:class:ai-application", "kind": "ResolvedLink"},
-    {"raw": "[[Game Engine]]", "resolved": "urn:visionflow:owl:class:game-engine", "kind": "ResolvedLink"},
-    {"raw": "[[Intelligent Virtual Entity]]", "resolved": "urn:visionflow:owl:class:intelligent-virtual-entity", "kind": "ResolvedLink"},
-    {"raw": "[[InteractionDomain]]", "resolved": "urn:visionflow:owl:class:sc-interaction", "kind": "ResolvedLink"},
-    {"raw": "[[Procedural Content Generation]]", "resolved": "urn:visionflow:owl:class:procedural-content-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:owl:class:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[State Machine]]", "resolved": "urn:visionflow:owl:class:state-machine", "kind": "ResolvedLink"},
-    {"raw": "[[Finite State Machine]]", "resolved": "urn:visionflow:linked:finite-state-machine", "kind": "StubLink"},
-    {"raw": "[[Monte Carlo Tree Search]]", "resolved": "urn:visionflow:owl:class:monte-carlo-tree-search", "kind": "ResolvedLink"},
-    {"raw": "[[Imitation Learning]]", "resolved": "urn:visionflow:owl:class:imitation-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Self-Play]]", "resolved": "urn:visionflow:linked:self-play", "kind": "StubLink"},
-    {"raw": "[[Markov Decision Process]]", "resolved": "urn:visionflow:linked:markov-decision-process", "kind": "StubLink"},
-    {"raw": "[[Partially Observable MDP]]", "resolved": "urn:visionflow:linked:partially-observable-mdp", "kind": "StubLink"},
-    {"raw": "[[Proximal Policy Optimization]]", "resolved": "urn:visionflow:linked:proximal-policy-optimization", "kind": "StubLink"},
-    {"raw": "[[Reward Shaping]]", "resolved": "urn:visionflow:linked:reward-shaping", "kind": "StubLink"},
-    {"raw": "[[Curriculum Learning]]", "resolved": "urn:visionflow:owl:class:curriculum-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Domain Randomization]]", "resolved": "urn:visionflow:linked:domain-randomization", "kind": "StubLink"},
-    {"raw": "[[Utility AI]]", "resolved": "urn:visionflow:linked:utility-ai", "kind": "StubLink"},
-    {"raw": "[[GOAP]]", "resolved": "urn:visionflow:linked:goap", "kind": "StubLink"},
-    {"raw": "[[HTN Planning]]", "resolved": "urn:visionflow:linked:htn-planning", "kind": "StubLink"},
-    {"raw": "[[Influence Map]]", "resolved": "urn:visionflow:linked:influence-map", "kind": "StubLink"},
-    {"raw": "[[NPC Dialogue System]]", "resolved": "urn:visionflow:linked:npc-dialogue-system", "kind": "StubLink"},
-    {"raw": "[[Player Modelling]]", "resolved": "urn:visionflow:linked:player-modelling", "kind": "StubLink"},
-    {"raw": "[[Dynamic Difficulty Adjustment]]", "resolved": "urn:visionflow:linked:dynamic-difficulty-adjustment", "kind": "StubLink"},
-    {"raw": "[[Emergent Gameplay]]", "resolved": "urn:visionflow:linked:emergent-gameplay", "kind": "StubLink"},
-    {"raw": "[[AlphaGo]]", "resolved": "urn:visionflow:linked:alpha-go", "kind": "StubLink"},
-    {"raw": "[[AlphaZero]]", "resolved": "urn:visionflow:linked:alpha-zero", "kind": "StubLink"},
-    {"raw": "[[MuZero]]", "resolved": "urn:visionflow:linked:mu-zero", "kind": "StubLink"},
-    {"raw": "[[DreamerV3]]", "resolved": "urn:visionflow:linked:dreamer-v3", "kind": "StubLink"},
-    {"raw": "[[Inworld AI]]", "resolved": "urn:visionflow:linked:inworld-ai", "kind": "StubLink"},
-    {"raw": "[[NVIDIA ACE]]", "resolved": "urn:visionflow:linked:nvidia-ace", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:owl:class:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Agents]]", "resolved": "urn:visionflow:linked:generative-agents", "kind": "StubLink"},
-    {"raw": "[[Spatial Reasoning]]", "resolved": "urn:visionflow:linked:spatial-reasoning", "kind": "StubLink"},
-    {"raw": "[[Real-Time Constraints]]", "resolved": "urn:visionflow:linked:real-time-constraints", "kind": "StubLink"},
-    {"raw": "[[Game Theory]]", "resolved": "urn:visionflow:linked:game-theory", "kind": "StubLink"},
-    {"raw": "[[Unreal Engine]]", "resolved": "urn:visionflow:owl:class:unreal-engine", "kind": "ResolvedLink"},
-    {"raw": "[[AI in Games]]", "resolved": "urn:visionflow:linked:ai-in-games", "kind": "StubLink"},
-    {"raw": "[[Automated Playtesting]]", "resolved": "urn:visionflow:linked:automated-playtesting", "kind": "StubLink"},
-    {"raw": "[[Game Analytics]]", "resolved": "urn:visionflow:linked:game-analytics", "kind": "StubLink"},
-    {"raw": "[[Open-Endedness]]", "resolved": "urn:visionflow:linked:open-endedness", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
-}
-```
-
 
 - ### Definition
   - An AI Game Agent is an intelligent autonomous entity embedded within a video game or interactive virtual environment that perceives its local [[Game State]] through sensory abstraction, reasons over a structured decision framework under [[Real-Time Constraints]], and executes goal-directed actions to create engaging, adaptive, and believable interactive experiences. Contemporary agents synthesise classical symbolic control — [[Finite State Machine]], [[Behaviour Tree]], [[GOAP]], [[HTN Planning]] — with data-driven methods including deep [[Reinforcement Learning]] trained via [[Proximal Policy Optimization]] and [[Self-Play]], [[Imitation Learning]] from expert demonstrations, [[Markov Decision Process]] formulations over [[Partially Observable MDP]] environments, and [[Monte Carlo Tree Search]] for look-ahead planning in discrete domains. The most capable 2025-2026 agents incorporate [[Large Language Models]] as a high-level inner monologue for context-aware dialogue and narrative planning via systems such as [[Inworld AI]] and the [[NVIDIA ACE]] Game Agent SDK, while a learned RL policy provides the low-level action executor. The archetype spans NPC characters in narrative games, competitive game-playing research agents such as [[AlphaGo]], [[AlphaZero]], [[MuZero]], and [[DreamerV3]] trained through [[Self-Play]], procedurally adaptive companions that model player behaviour via [[Player Modelling]], [[Dynamic Difficulty Adjustment]] systems, and simulation agents used in [[Automated Playtesting]] and [[Game Analytics]] pipelines, all governed by the broader field of [[AI in Games]].
@@ -355,11 +607,11 @@ public: true
         ObjectSomeValuesFrom(ai:reducesTo ai:ScriptedNPC))
 
   ## About
-    AI Game Agents are among the oldest practical applications of artificial intelligence in commercial software, tracing their lineage to early arcade pathfinding scripts and [[Finite State Machine]] controlled enemies of the 1970s and 1980s. Pac-Man's ghosts (1980) each implemented a distinct state-machine personality — Blinky pursued directly, Pinky targeted four tiles ahead, Inky used a complex offset rule, and Clyde fled when near — representing perhaps the first documented use of heterogeneous AI agent personas in an interactive entertainment product. The field evolved substantially through the 1990s with the emergence of scripted NPCs in role-playing games and real-time strategy titles: Warcraft and Command and Conquer required efficient pathfinding for thousands of simultaneous units on tiled terrain, driving A* algorithm adoption in game AI pipelines; Ultima Underworld and System Shock pioneered NPC characters with memory, schedules, and goal-directed behaviour that responded dynamically to the player. By the mid-2000s, [[Behaviour Tree]] architectures — hierarchical reactive control structures that decompose complex NPC goals into primitive condition-action pairs arranged in Sequence, Selector, and Decorator nodes — had become the industry-standard architecture for AAA game AI, adopted across the Halo series, The Last of Us, and hundreds of other titles, and subsequently embedded as first-class visual authoring environments in both Unity's Animator and Unreal Engine's Behavior Tree editor. The key engineering advantage of a Behavior Tree over a [[Finite State Machine]] is modularity: individual subtrees can be composed, reused, tested independently, and hot-swapped at runtime, whereas FSM transition graphs become intractable at scale — the "state explosion" problem means that adding each new behaviour to an FSM requires O(n) new transition edges across all existing states. Goal-Oriented Action Planning ([[GOAP]]), introduced in commercial form in F.E.A.R. (2005, Monolith Productions), provided a third paradigm: symbolic forward-chaining search over an action library, producing emergent plans that no designer could have explicitly scripted, at the cost of runtime planning compute. The Sims franchise popularised [[Utility AI]] — where each possible agent action receives a continuous utility score computed from weighted environmental signals, and the agent simply executes the maximum-scoring action — enabling smooth, gradient-aware multi-motivational reasoning across hundreds of simultaneous simulated characters.
+    AI Game Agents are among the oldest practical applications of artificial intelligence in commercial software, tracing their lineage to early arcade pathfinding scripts and [[Finite State Machine]] controlled enemies of the 1970s and 1980s. Pac-Man's ghosts (1980) each implemented a distinct state-machine personality — Blinky pursued directly, Pinky targeted four tiles ahead, Inky used a complex offset rule, and Clyde fled when near — representing perhaps the first documented use of heterogeneous AI agent personas in an interactive entertainment product. The field evolved substantially through the 1990s with the emergence of scripted NPCs in role-playing games and real-time strategy titles: Warcraft and Command and Conquer required efficient pathfinding for thousands of simultaneous units on tiled terrain, driving A* algorithm adoption in game AI pipelines; Ultima Underworld and System Shock pioneered NPC characters with memory, schedules, and goal-directed behaviour that responded dynamically to the player. By the mid-2000s, [[Behaviour Tree]] architectures — hierarchical reactive control structures that decompose complex NPC goals into primitive condition-action pairs arranged in Sequence, Selector, and Decorator nodes — had become the industry-standard architecture for AAA game AI, adopted across the Halo series, The Last of Us, and hundreds of other titles, and subsequently embedded as first-class visual authoring environments in both Unity's Animator and Unreal Engine's Behavior Tree editor. The key engineering advantage of a Behavior Tree over a [[Finite State Machine]] is modularity: individual subtrees can be composed, reused, tested independently, and hot-swapped at runtime, whereas FSM transition graphs become intractable at scale — the "state explosion" problem means that adding each new behaviour to an FSM requires O(n) new transition edges across all existing states. Goal-Oriented Action Planning ([[GOAP]]), introduced in commercial form in F.E.A.R. (2005, Monolith Productions), provided a third paradigm: symbolic forward-chaining search over an action library, producing emergent plans that no designer [private] have explicitly scripted, at the cost of runtime planning compute. The Sims franchise popularised [[Utility AI]] — where each possible agent action receives a continuous utility score computed from weighted environmental signals, and the agent simply executes the maximum-scoring action — enabling smooth, gradient-aware multi-motivational reasoning across hundreds of simultaneous simulated characters.
 
     The theoretical foundation of AI game agents draws from several complementary disciplines. The [[Markov Decision Process]] framework — a 4-tuple of states S, actions A, transition function T: S × A → Δ(S), and reward function R: S × A → ℝ — provides the canonical mathematical model for sequential decision-making under uncertainty. When the agent cannot observe the full game state (as is typical in real games with fog of war, information hiding, or stochastic opponent behaviour), the problem is a [[Partially Observable MDP]], requiring belief-state tracking via particle filters or recurrent neural networks. [[Game Theory]] provides the equilibrium concepts relevant to multi-agent interaction: Nash equilibria in zero-sum games, correlated equilibria in cooperative tasks, and the role of mixed strategies in making agents unpredictable to human opponents. [[Spatial Reasoning]] — the capacity to reason about geometric relationships, navigable terrain, lines of sight, and cover positions — is an agent sub-capability that bridges symbolic planning (choose a flanking manoeuvre) and geometric execution (navigate to the flanking position via the Navigation Mesh without colliding with obstacles). [[Real-Time Constraints]] impose hard compute budgets: game AI typically runs within a 16ms frame budget shared with rendering, physics, animation, and audio, requiring that agent decisions complete in at most 1-2ms per frame, which heavily constrains the use of search-based methods like MCTS and full GOAP planning in real-time contexts.
 
-    The landmark shift to machine learning for game agents arrived through research-grade game-playing systems that demonstrated deep RL could achieve superhuman performance in some of the most complex discrete and continuous decision domains humans have devised. DeepMind's [[AlphaGo]] (2016) combined deep convolutional neural networks for position evaluation with [[Monte Carlo Tree Search]] for lookahead planning, defeating world champion Lee Sedol 4-1 in March 2016 — the first superhuman performance in the ancient game of Go, whose 19×19 board with approximately 2×10^170 legal positions had long been considered impractical for classical search methods. The successor [[AlphaZero]] (2017) eliminated human expert data entirely, generalising the MCTS-neural-network paradigm through pure [[Self-Play]] to achieve superhuman performance in Go, Chess, and Shogi simultaneously, each within 24 hours of training from scratch using only the game rules and the [[Markov Decision Process]] reward signal. This demonstrated that the learned representation of game value was fully generalisable across domains without hand-engineered features. [[MuZero]] (2020) further eliminated even the game rules, learning an internal model of environment dynamics jointly with policy and value networks through model-based RL, enabling superhuman performance on 57 Atari games alongside the three board games through a unified planning architecture operating from raw pixel observations. OpenAI Five (2019) applied [[Proximal Policy Optimization]] with massive distributed [[Self-Play]] — accumulating 45,000 years of game experience across hundreds of thousand of CPU and GPU cores — to the 5v5 real-time strategy game Dota 2, defeating world champion teams OG 2-0 in the OpenAI Five Finals in April 2019, demonstrating that deep RL could handle the continuous action spaces, partial observability, long time horizons (averaging 45 minutes per game), and multi-agent coordination challenges of live competitive multiplayer titles. DeepMind's AlphaStar (2019) achieved Grandmaster-level performance in StarCraft II — the first RL agent to reach the top 0.15% of the global human player population — using a transformer-based architecture trained through a multi-agent league regime combining [[Self-Play]] against diverse opponent policies with [[Imitation Learning]] seeded from professional replay data, operating under approximate human action-rate constraints. [[DreamerV3]] (2023) achieved human-level performance on 85% of the 57-game Atari benchmark using a world model trained entirely from pixel observations with a single fixed set of hyperparameters across all games, without any game-specific [[Reward Shaping]], marking a significant step toward general-purpose RL agents.
+    The landmark shift to machine learning for game agents arrived through research-grade game-playing systems that demonstrated deep RL [private] achieve superhuman performance in some of the most complex discrete and continuous decision domains humans have devised. DeepMind's [[AlphaGo]] (2016) combined deep convolutional neural networks for position evaluation with [[Monte Carlo Tree Search]] for lookahead planning, defeating world champion Lee Sedol 4-1 in March 2016 — the first superhuman performance in the ancient game of Go, whose 19×19 board with approximately 2×10^170 legal positions had long been considered impractical for classical search methods. The successor [[AlphaZero]] (2017) eliminated human expert data entirely, generalising the MCTS-neural-network paradigm through pure [[Self-Play]] to achieve superhuman performance in Go, Chess, and Shogi simultaneously, each within 24 hours of training from scratch using only the game rules and the [[Markov Decision Process]] reward signal. This demonstrated that the learned representation of game value was fully generalisable across domains without hand-engineered features. [[MuZero]] (2020) further eliminated even the game rules, learning an internal model of environment dynamics jointly with policy and value networks through model-based RL, enabling superhuman performance on 57 Atari games alongside the three board games through a unified planning architecture operating from raw pixel observations. OpenAI Five (2019) applied [[Proximal Policy Optimization]] with massive distributed [[Self-Play]] — accumulating 45,000 years of game experience across hundreds of thousand of CPU and GPU cores — to the 5v5 real-time strategy game Dota 2, defeating world champion teams OG 2-0 in the OpenAI Five Finals in April 2019, demonstrating that deep RL [private] handle the continuous action spaces, partial observability, long time horizons (averaging 45 minutes per game), and multi-agent coordination challenges of live competitive multiplayer titles. DeepMind's AlphaStar (2019) achieved Grandmaster-level performance in StarCraft II — the first RL agent to reach the top 0.15% of the global human player population — using a transformer-based architecture trained through a multi-agent league regime combining [[Self-Play]] against diverse opponent policies with [[Imitation Learning]] seeded from professional replay data, operating under approximate human action-rate constraints. [[DreamerV3]] (2023) achieved human-level performance on 85% of the 57-game Atari benchmark using a world model trained entirely from pixel observations with a single fixed set of hyperparameters across all games, without any game-specific [[Reward Shaping]], marking a significant step toward general-purpose RL agents.
 
     The 2024-2026 transition has introduced a third paradigm alongside classical symbolic AI and deep RL: LLM-integrated game agents that use [[Large Language Models]] as a high-level reasoning and natural language dialogue layer sitting above the real-time action executor. Rather than replacing existing RL or scripted pipelines, the LLM serves as what has been described as an "inner monologue" — a deliberative reasoning module that interprets natural language instructions, constructs high-level intentions, manages long-term character memory, and generates contextually appropriate dialogue — while a learned or scripted low-level policy handles the frame-by-frame motor execution under [[Real-Time Constraints]]. Research from Stanford (Park et al., 2023) demonstrated in their seminal Generative Agents paper that 25 LLM-powered agents in a Smallville sandbox world — each initialised with a character backstory — exhibited spontaneously believable emergent social behaviour: an agent who received a seed instruction to throw a Valentine's Day party independently spread invitations to other agents over two in-simulation days, agents formed new acquaintances and asked each other out on dates, and agents coordinated to arrive at the party together at the correct time. The architecture formalised three key components: observation (what the agent currently perceives), memory (a retrievable log of past observations scored by recency, importance, and relevance), and planning (generating daily schedules and real-time reactions using chain-of-thought reasoning over retrieved memories). The "Affordable Generative Agents" work (Chen et al., 2024) addressed the prohibitive compute cost of fully LLM-driven NPC populations — a population of 25 agents querying a GPT-class model on every decision would consume approximately $340 per simulated day — by distilling LLM-generated behaviour policies into lightweight per-agent neural models, achieving 10x cost reduction while maintaining approximately 80% of human believability ratings. By mid-2026, production-grade solutions have matured considerably: [[NVIDIA ACE]]'s Game Agent SDK, released as official Unreal Engine 5 plugins at Unreal Fest 2026, provides on-device automatic speech recognition, small language models optimised for game character dialogue, and text-to-speech synthesis with sub-50ms end-to-end latency using RTX-accelerated inference, enabling fully offline LLM-powered NPC companions without cloud API dependencies. [[Inworld AI]]'s NPC platform has secured partnerships with multiple AAA publishers and provides a hosted service handling character memory, personality consistency, safety filtering, and voice synthesis as managed infrastructure. Ubisoft's La Forge research division deployed Ghostwriter, a generative AI tool that produces first-draft NPC bark dialogue at scale (the thousands of short voice lines NPCs speak during exploration and combat), freeing narrative writers to focus on story design rather than volume production. GPT-class models appear in over 85% of published academic studies on LLM-driven NPCs as of a 2025 survey. A GDC 2025 studio survey found that 78% of AAA studios actively use AI-powered tools in production pipelines. Steam's annual transparency report disclosed 7,818 titles using AI in 2025, representing a 681% year-on-year increase, reflecting both LLM integration in NPC dialogue and AI-assisted asset generation in development pipelines. A 2025 player survey found 99% of respondents believed AI NPCs would enhance gameplay, and 79% indicated they would spend more time (and money) in games featuring AI-driven characters — a compelling commercial driver for continued investment.
 
@@ -382,14 +634,14 @@ public: true
     - **Multiplayer Bot Agents**: Bots that fill player roster gaps in multiplayer titles — needed during off-peak hours when matchmaking cannot fill lobbies with human players — are most effective when their behaviour is statistically indistinguishable from imperfect human players rather than optimally skilful. [[Imitation Learning]] from human gameplay replay data (which all online games with replay systems collect at scale) produces bots that replicate the statistical distribution of human decisions including sub-optimal plays, latency patterns, and communication behaviour. [[Unity ML-Agents]] and Unreal's native RL training pipeline support bot training directly in the game engine environment. Research in 2025 has shown that bots trained via imitation learning combined with light RL fine-tuning on win-rate objectives produce the best combination of human-like imperfection with competitive-enough performance to create satisfying multiplayer experiences, outperforming pure IL (too passive) or pure RL (too optimal) approaches.
     - **Automated Playtesting and QA Agents**: AI agents that autonomously traverse game levels and exercise game systems have become a standard infrastructure tool in AAA game development, reducing human QA labour while improving coverage of rare edge cases. These agents are deployed to detect: collision geometry errors (agents that enter walls or fall through terrain); quest and narrative progression blockers (agents that cannot advance past a game state due to missing trigger conditions or broken state machines); balance exploits (agents with access to all available strategies who identify dominant strategies that trivially circumvent intended challenge); out-of-bounds positions accessible via unexpected movement sequences; and crash-inducing state combinations. Electronic Arts' SEED research division has published on their AI-driven playtesting infrastructure, estimating 20-40% reduction in human QA labour hours for large titles. Ubisoft's La Forge division operates large-scale automated playtesting agents across its open-world portfolio. The integration of large language models into playtesting agents (2025-2026) enables qualitative feedback generation — "this puzzle section took an average of 23 minutes and produced high frustration indicators; the core mechanic may need clearer affordances" — rather than purely quantitative coverage metrics.
     - **Simulation and Training Environments**: Video games serve as AI training grounds due to their combination of fast simulation (no physics fidelity overhead of real-world robotics), diverse procedural environments (endless variation without manual environment design), rich reward signal specification (game scores, points, achievements, objective completion), and the absence of safety risks during exploration. The Atari Learning Environment (ALE, Bellemare et al., 2013) standardised 57 Atari 2600 games as RL benchmarks and drove a decade of value-based RL research; OpenAI Gym extended this with continuous control environments via MuJoCo integration; DeepMind Lab provided 3D visual navigation environments. NetHack (Küttler et al., 2020) provides a procedurally generated roguelike environment with 50 years of human gameplay wisdom encoded in wiki guides that remain completely unsolved by RL agents without auxiliary guidance; Minecraft via MineRL provides an open-world creative and survival environment with hierarchical task structure; Crafter (Hafner, 2021) provides a compact but challenging open-world benchmark with 22 achievement types requiring multi-step planning, technology unlock trees, and resource management, where current top RL agents achieve approximately 15-20% of the human baseline unlock rate.
-    - **LLM-Powered Social Simulation and Generative Agent Sandboxes**: Building on Park et al. (2023), populations of LLM-driven agents exhibiting emergent social behaviour have applications extending well beyond entertainment games. Urban planning simulation: multiple city planning agencies and research groups have used generative agent sandboxes to simulate how proposed policy changes (new transit lines, zoning adjustments, public space designs) affect resident behaviour patterns before physical implementation, surfacing emergent effects that urban planners did not anticipate. Social science research: Stanford's simulation of 1,052 individual personalities (2025) — where agents were initialised from real interview transcripts and answered survey questions in ways closely matching their real-life counterparts — opens new methodological possibilities for social scientists who could not afford to re-survey all 1,052 participants. Game narrative prototyping: generative agent sandboxes serve as testing environments for narrative designers who can observe emergent story beats arising from character interactions before committing to authored narrative structures. Educational simulation: LLM-powered educational game characters that respond contextually to student questions and adapt their teaching approach to detected student misconceptions have demonstrated statistically significant improvements in knowledge retention in controlled studies (CESCG 2025).
+    - **LLM-Powered Social Simulation and Generative Agent Sandboxes**: Building on Park et al. (2023), populations of LLM-driven agents exhibiting emergent social behaviour have applications extending well beyond entertainment games. Urban planning simulation: multiple city planning agencies and research groups have used generative agent sandboxes to simulate how proposed policy changes (new transit lines, zoning adjustments, public space designs) affect resident behaviour patterns before physical implementation, surfacing emergent effects that urban planners did not anticipate. Social science research: Stanford's simulation of 1,052 individual personalities (2025) — where agents were initialised from real interview transcripts and answered survey questions in ways closely matching their real-life counterparts — opens new methodological possibilities for social scientists who [private] not afford to re-survey all 1,052 participants. Game narrative prototyping: generative agent sandboxes serve as testing environments for narrative designers who can observe emergent story beats arising from character interactions before committing to authored narrative structures. Educational simulation: LLM-powered educational game characters that respond contextually to student questions and adapt their teaching approach to detected student misconceptions have demonstrated statistically significant improvements in knowledge retention in controlled studies (CESCG 2025).
 
   ## Academic Context
     The academic study of AI Game Agents spans multiple research communities united by the shared challenge of designing autonomous agents that operate effectively, believably, and engagingly within constrained computational environments. The primary publication venues are the IEEE Conference on Games (IEEE CoG, formerly the IEEE Conference on Computational Intelligence in Games, or CIG), the AAAI Workshop on Artificial Intelligence in Interactive Digital Entertainment (AIIDE), the Foundations of Digital Games (FDG) conference, and the ACM CHI/CSCW tracks on human-computer interaction in games. Game AI Pro — a three-volume practitioner anthology edited by Steve Rabin (2014, 2015, 2020) and published by CRC Press — remains the canonical industry-facing reference, compiling techniques from over 100 industry experts across pathfinding, decision-making, learning, animation, and architecture.
 
     The reinforcement learning track within game AI research is anchored by the Atari Learning Environment (Bellemare et al., 2013), which standardised 57 Atari 2600 games as RL benchmarks through the OpenAI Gym interface, enabling direct comparison of RL algorithms and driving a decade of rapid progress: DQN (Mnih et al., 2015) demonstrated the first superhuman Atari performance using convolutional networks and experience replay; IMPALA (Espeholt et al., 2018) scaled distributed actor-learner architectures to hundreds of CPU actors; R2D2 and NGU extended this to memory-dependent and intrinsically motivated exploration. The MuJoCo physics simulator and the DeepMind Control Suite provide continuous control benchmarks for locomotion, manipulation, and dexterous hand agents. NetHack (Küttler et al., 2020), Minecraft via MineRL, and Crafter (Hafner, 2021) represent more recent open-ended generalisation benchmarks that remain far from saturated by current RL agents, probing long-horizon planning, multi-task generalisation, and open-world exploration under resource constraints.
 
-    [[AlphaGo]] (Silver et al., 2016) introduced the hybrid MCTS-neural-network paradigm and demonstrated superhuman Go performance by integrating policy network priors into MCTS selection; the policy network and value network were trained via supervised learning on expert games followed by MCTS-guided [[Self-Play]]. [[AlphaZero]] (Silver et al., 2017) eliminated supervised pretraining, demonstrating tabula rasa self-play generalisation: a single algorithm trained from random initialisation in Go, Chess, and Shogi simultaneously reached superhuman performance, showing that the learned evaluation function is data-driven and domain-agnostic. OpenAI Five (Berner et al., 2019) scaled [[Proximal Policy Optimization]] to 45,000 years of accumulated self-play experience using 256 GPUs and 128,000 CPU cores, establishing that distributed RL could overcome the sparse rewards, long horizons, and partial observability of commercial multiplayer games. AlphaStar (Vinyals et al., 2019) introduced the league training regime — a population-based [[Self-Play]] methodology where agents are matched against diverse historical opponent policies to prevent strategic collapse into locally optimal counter-strategies — enabling multi-agent diversity and strategic breadth in a high-dimensional action space of approximately 10^26 possible actions per game.
+    [[AlphaGo]] (Silver et al., 2016) introduced the hybrid MCTS-neural-network paradigm and demonstrated superhuman Go performance by integrating policy network priors into MCTS selection; the policy network and value network were trained via supervised learning on expert games followed by MCTS-guided [[Self-Play]]. [[AlphaZero]] (Silver et al., 2017) eliminated supervised pretraining, demonstrating tabula rasa self-play generalisation: a single algorithm trained from random initialisation in Go, Chess, and Shogi simultaneously reached superhuman performance, showing that the learned evaluation function is data-driven and domain-agnostic. OpenAI Five (Berner et al., 2019) scaled [[Proximal Policy Optimization]] to 45,000 years of accumulated self-play experience using 256 GPUs and 128,000 CPU cores, establishing that distributed RL [private] overcome the sparse rewards, long horizons, and partial observability of commercial multiplayer games. AlphaStar (Vinyals et al., 2019) introduced the league training regime — a population-based [[Self-Play]] methodology where agents are matched against diverse historical opponent policies to prevent strategic collapse into locally optimal counter-strategies — enabling multi-agent diversity and strategic breadth in a high-dimensional action space of approximately 10^26 possible actions per game.
 
     Park et al. (2023) at Stanford and Google Research formalised the architecture for LLM-powered social agent simulation in their Generative Agents paper, published at UIST 2023: memory stream (a timestamped log of all observations scored by recency, importance, and relevance via embedding-based retrieval), reflection (periodic high-level synthesis of memories into abstract insights), and planning (LLM-generated daily schedule and event-triggered replanning). Their key finding was that all three components — observation granularity, periodic reflection, and explicit planning — contributed independently to the rated believability of agent behaviour; removing any component degraded human believability assessments significantly. The Affordable Generative Agents paper (Chen et al., 2024) addressed the prohibitive compute cost of fully LLM-driven agents at population scale: at $340/day for 25 fully LLM-driven agents, city-scale NPC populations are economically infeasible without distillation. Research on LLM-driven NPCs for educational game contexts (CESCG 2025, "A Quest for Information: Enhancing Game-Based Learning with LLM-Driven NPCs") demonstrated statistically significant improvements in student engagement and knowledge retention when NPCs responded contextually to student questions via LLM rather than scripted dialogue trees. The field of AI Game Agents intersects fundamentally with cognitive science (what makes simulated characters appear "believable" to human observers — research by Yannakakis and Togelius provides the theoretical framework), psychophysics of player engagement (flow theory, challenge-skill balance, frustration thresholds), social simulation (how populations of self-interested agents produce emergent collective phenomena), and computational creativity (how agents can generate novel strategies, dialogue, and behaviours not explicitly programmed by designers).
 
@@ -405,8 +657,8 @@ public: true
 
   ## Future Directions (2026-2030)
     - **On-Device LLM Integration at Consumer Scale**: As small language models in the 1B-7B parameter range become viable for real-time inference on consumer GPUs (RTX 4090, RTX 5080) and the next generation of console processors (expected to include dedicated neural processing units), the LLM dialogue and planning tier will shift from cloud API deployment to on-device inference for the majority of NPC applications, eliminating per-query latency, connectivity requirements, and cloud compute costs. Models purpose-trained on game-specific narrative corpora using techniques including supervised fine-tuning on studio-authored dialogue, reinforcement learning from narrative designer feedback, and character-specific personality distillation will produce more character-appropriate and tonally consistent dialogue than general-purpose frontier LLMs prompted with persona descriptions. The critical open question is whether 3B-7B parameter on-device models can sustain narrative coherence and character consistency across multi-hour play sessions without the extended context windows available to frontier API models; emerging architectures including efficient attention mechanisms and hierarchical memory compression are addressing this constraint.
-    - **Open-Ended Co-Evolving Agent Populations**: Research trajectories in [[Open-Endedness]] point toward AI Game Agent architectures where NPC populations continuously improve through co-evolution — generating their own training curricula, novel strategies, social structures, and environmental complexity in response to evolving player and agent capabilities, without external designer intervention. POET (Paired Open-Ended Trailblazer, Wang et al., 2020) demonstrated that co-evolving pairs of terrain generators and agent policy networks produce substantially more capable agents than fixed-curriculum training. DeepMind's AdA (Adaptive Agent, 2023) trained an agent capable of rapid in-context adaptation to thousands of novel 3D tasks using a transformer-based architecture, demonstrating generalist agent capabilities approaching the vision of open-ended game agents. By 2028-2030, these trajectories could enable game worlds where NPC populations develop and transmit cultural practices, technological innovations, and strategic knowledge across generations of simulated time, creating genuinely emergent social systems that no designer scripted.
-    - **Procedural Narrative Generation at AAA Scale**: The convergence of LLM-powered [[Generative Agents]] with [[Procedural Content Generation]] will enable fully generative narrative games where plot arcs, quest structures, character relationship trajectories, and faction political dynamics emerge from agent interactions rather than authored decision trees. Prototypes exist as of 2026 — "Prompting Destiny" (2026) explored how an LLM-mediated gameworld could negotiate emergent social structures between player and NPC characters — but the gap between prototype quality and AAA narrative standards (voice acting, localisation, narrative coherence across 100+ hour playthroughs) remains significant. AAA studio deployment of fully procedural narrative is anticipated in the 2027-2029 window, likely beginning with systemic open-world games where procedurally generated side quest content supplements authored main narrative, before extending to games where all narrative content is generative.
+    - **Open-Ended Co-Evolving Agent Populations**: Research trajectories in [[Open-Endedness]] point toward AI Game Agent architectures where NPC populations continuously improve through co-evolution — generating their own training curricula, novel strategies, social structures, and environmental complexity in response to evolving player and agent capabilities, without external designer intervention. POET (Paired Open-Ended Trailblazer, Wang et al., 2020) demonstrated that co-evolving pairs of terrain generators and agent policy networks produce substantially more capable agents than fixed-curriculum training. DeepMind's AdA (Adaptive Agent, 2023) trained an agent capable of rapid in-context adaptation to thousands of novel 3D tasks using a transformer-based architecture, demonstrating generalist agent capabilities approaching the vision of open-ended game agents. By 2028-2030, these trajectories [private] enable game worlds where NPC populations develop and transmit cultural practices, technological innovations, and strategic knowledge across generations of simulated time, creating genuinely emergent social systems that no designer scripted.
+    - **Procedural Narrative Generation at AAA Scale**: The convergence of LLM-powered [[Generative Agents]] with [[Procedural Content Generation]] will enable fully generative narrative games where plot arcs, quest structures, character relationship trajectories, and faction political dynamics emerge from agent interactions rather than authored decision trees. Prototypes exist as of 2026 — "Prompting Destiny" (2026) explored how an LLM-mediated gameworld [private] negotiate emergent social structures between player and NPC characters — but the gap between prototype quality and AAA narrative standards (voice acting, localisation, narrative coherence across 100+ hour playthroughs) remains significant. AAA studio deployment of fully procedural narrative is anticipated in the 2027-2029 window, likely beginning with systemic open-world games where procedurally generated side quest content supplements authored main narrative, before extending to games where all narrative content is generative.
     - **Standardised Evaluation Benchmarks for AI Game Agents**: The games research community is developing standardised evaluation methodologies for AI Game Agent quality across key dimensions: NPC believability (human Turing test passage rates; subjective believability ratings using standardised questionnaires); adaptive difficulty accuracy (how closely does the agent's adjusted difficulty track the target challenge-skill balance for individual players?); automated playtesting coverage (what fraction of reachable game states are exercised per agent-hour?); and LLM dialogue quality (coherence, character consistency, engagement ratings, factual accuracy about game world). The [[IEEE CIG]] hosts annual competitions including the GVG-AI competition for general video game playing, the StarCraft AI competition, and the Mario AI competition that drive benchmark consolidation and enable year-on-year comparison of agent capabilities.
     - **Ethical Frameworks for LLM-Powered NPCs**: As LLM-powered NPCs gain capacity for sustained, emotionally resonant, contextually adaptive interaction with players over extended periods, significant ethical questions arise about psychological manipulation, parasocial relationship formation, addiction reinforcement through attachment to AI characters, and the potential for ideological influence through character-player dialogue. The IGDA AI Special Interest Group is developing ethical design guidelines for LLM-powered character systems, covering consent and disclosure (players should know when they are interacting with AI-generated dialogue), manipulation-resistant design (characters should not exploit psychological vulnerabilities for engagement retention), data minimisation (player interaction data collected for personalisation should be retained only as long as necessary), and safeguards for vulnerable populations including minors. Academic groups at Edinburgh (Artificial Intelligence and its Applications Institute), Bristol (Interactive Artificial Intelligence CDT), and Bath (Centre for Digital Entertainment) are contributing research on measurement of parasocial relationship formation with AI characters and evidence-based design guidelines for mitigating harm.
 

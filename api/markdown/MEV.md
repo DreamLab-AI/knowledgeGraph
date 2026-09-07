@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MEV
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -153,67 +148,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mev:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:87d57698427014f459621583878e5425860c8ef3f074bc8e90ad5f4ddd9c5953"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Consensus Security]]",
-      "resolved": "urn:visionflow:linked:consensus-security",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DeFi Ecosystem]]",
-      "resolved": "urn:visionflow:linked:de-fi-ecosystem",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Front-Running]]",
-      "resolved": "urn:visionflow:linked:front-running",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Proposer-Builder Separation]]",
-      "resolved": "urn:visionflow:linked:proposer-builder-separation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transaction Ordering]]",
-      "resolved": "urn:visionflow:linked:transaction-ordering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mempool]]",
-      "resolved": "urn:visionflow:owl:class:mempool",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Maximal Extractable Value (MEV) represents the profit that block producers can extract through strategic transaction ordering, inclusion, or exclusion within blocks, arising from their privileged position to control execution sequencing in blockchain networks.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Micro-OLED Display
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A micro-OLED display is an organic light-emitting diode panel fabricated directly on a silicon backplane (OLED-on-silicon), yielding pixel pitches of a few micrometres and very high pixel densities. Its compact size, high contrast, fast response, and low power make it the dominant near-eye display technology for AR and VR headsets. The silicon substrate enables integrated drive circuitry impossible on glass.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ar-frame", "label": "AR Frame"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ]
   },
   "quality": 0.72

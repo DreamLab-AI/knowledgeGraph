@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[State Space and Other Approaches]]
-# State Space Sequence Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,20 +42,44 @@ elevatedFrom:: [[State Space and Other Approaches]]
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture-of-Experts Architecture"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+      {
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture-of-Experts Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "provenance": {
@@ -71,26 +89,6 @@ elevatedFrom:: [[State Space and Other Approaches]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:state-space-and-other-approaches:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4a4b48f3167a7fc6e262790159a8aaf11c16fea61e124ae019fd443d2bece332"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - State Space and Other Approaches encompasses structured state space models (SSMs) and related sequence modelling architectures, most notably the Mamba family, which apply selective state-space mechanisms to achieve linear-time sequence processing. These approaches offer a compelling alternative to Transformers by combining efficient recurrence with hardware-aware algorithms, enabling superior throughput on long sequences across language, vision, and genomics domains.
@@ -113,7 +111,7 @@ elevatedFrom:: [[State Space and Other Approaches]]
 		- **Real-world Implications**: Potential to improve a wide range of applications in natural language processing, bioinformatics, and other areas where sequence data is prevalent.
 		- **Takeaways**: Mamba architecture improves upon structured state space models (SSMs) by adding selectivity and hardware-aware algorithms, achieving linear-time modeling with high-quality performance across several modalities.
 		- **Practical Implications**: Provides a more efficient alternative to Transformers, especially beneficial for long sequence data.
-		- **Potential Impact**: Could influence future developments in sequence modeling and foundational models across various domains.
+		- **Potential Impact**: [private] influence future developments in sequence modeling and foundational models across various domains.
 		- **Abstract in a nutshell**: Mamba is a novel architecture for sequence modeling that enhances structured state space models (SSMs) with selective mechanisms and hardware-aware algorithms, achieving superior performance and efficiency.
 		- **Gap/Need**: Traditional Transformer models have significant computational inefficiency, especially for long sequences. Mamba addresses this by incorporating a selection mechanism and hardware-aware computation in SSMs.
 		- **Innovation**: Introduces a selection mechanism in SSMs, allowing input-dependent parameterization and a simplified architecture without attention or MLP blocks, enabling linear-time computation with maintained or enhanced performance.
@@ -131,7 +129,7 @@ elevatedFrom:: [[State Space and Other Approaches]]
   - 80% of papers modified the original Mamba architecture in some way
   - 73% of papers reported state-of-the-art results (though not independently verified yet)
   - Handling of state in Mamba architecture is not always clear in papers, more research needed
-  - Swapping out selective state space portion of Mamba in MoE architectures could be an interesting avenue to explore
+  - Swapping out selective state space portion of Mamba in MoE architectures [private] be an interesting avenue to explore
   - Infrastructure and capital advantages for big tech incumbents in deploying large-scale MoE models
 			- Mamba can do in-context learning, gradually optimizing internal representations through layers
 			- Similar pattern to Transformers: elevation of concepts and more accurate activations through layers, then collapse at final prediction
@@ -180,7 +178,7 @@ elevatedFrom:: [[State Space and Other Approaches]]
 		- Potential challenges:
 			- Eventual "rotting" of internal states with extreme context lengths
 			- Need for state regularization or "pruning" to maintain performance
-		- Implications for biology: Foundation models could revolutionize drug discovery and biological research
+		- Implications for biology: Foundation models [private] revolutionize drug discovery and biological research
   - # Potential Applications
 			- To approach the problem of using Mamba to analyze space-acquired time series image-based climate data from multi-spectrum sensors, we can draw upon several techniques and architectures discussed in the Mamba literature. Here's a proposed approach:
 				- Data Preprocessing:

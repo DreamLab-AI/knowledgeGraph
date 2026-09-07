@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Linear Algebra
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -194,72 +189,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:linear-algebra:24cb8314a376",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2eea1248aa5679306bcbec014100ca91147dcc1e33cb661dffe26a428542b52b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Matrix]]",
-      "resolved": "urn:visionflow:linked:matrix",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Eigenvalue]]",
-      "resolved": "urn:visionflow:linked:eigenvalue",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vector Space]]",
-      "resolved": "urn:visionflow:linked:vector-space",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision Domain]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Principal Component Analysis]]",
-      "resolved": "urn:visionflow:linked:principal-component-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Graph Theory]]",
-      "resolved": "urn:visionflow:linked:graph-theory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Information Theory]]",
-      "resolved": "urn:visionflow:linked:information-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Linear Algebra is the branch of mathematics concerned with vector spaces, linear transformations and systems of linear equations. Its central objects include vectors, matrices, determinants, eigenvalues and eigenvectors, and operations such as matrix multiplication and inversion. The field provides the language for representing and solving problems in geometry, physics, computer graphics and data analysis. It is foundational to machine learning, where data, model parameters and transformations are expressed and manipulated as tensors.

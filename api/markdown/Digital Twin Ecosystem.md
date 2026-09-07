@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Twin Ecosystem
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -125,72 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-twin-ecosystem:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:35e772f5431ce439f1e6dd93fa53550a386b412644cd5ef0758bbb0527e54a82"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cloud Platform]]",
-      "resolved": "urn:visionflow:linked:cloud-platform",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-Platform Analytics]]",
-      "resolved": "urn:visionflow:linked:cross-platform-analytics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Enterprise Digital Twins]]",
-      "resolved": "urn:visionflow:linked:enterprise-digital-twins",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IoT Infrastructure]]",
-      "resolved": "urn:visionflow:linked:io-t-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Standards]]",
-      "resolved": "urn:visionflow:owl:class:data-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Integration]]",
-      "resolved": "urn:visionflow:owl:class:system-integration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Ecosystem]]",
-      "resolved": "urn:visionflow:owl:class:technology-ecosystem",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualisation systems working together to create, maintain, and derive value from virtual replicas of physical systems.

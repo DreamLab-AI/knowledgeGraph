@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-layer:ca12f8f17b93",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e50077ebe2a5c65ac4ad4af19ac91c70f3feb7c14dc697fbca064fb44ed5bf9a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Algorithm Layer]]",
-      "resolved": "urn:visionflow:linked:algorithm-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Layer]]",
-      "resolved": "urn:visionflow:linked:training-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Inference Layer]]",
-      "resolved": "urn:visionflow:linked:inference-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Registry]]",
-      "resolved": "urn:visionflow:linked:model-registry",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Model Layer is the stratum that holds trained machine learning models as deployable artefacts with fixed parameters. In the canonical stack it sits above the Algorithm Layer and below the Inference Layer, packaging learned functions for use. It contains weight sets, model metadata, and the serialised representations that inference engines load.

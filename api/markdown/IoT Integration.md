@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IoT Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "IoT integration is the connection of networked physical sensors and actuators with software systems so that real-world telemetry flows into analytics, control, and decision platforms. It encompasses device connectivity, protocol gateways, data ingestion, and the synchronisation of physical state with digital models. It is the prerequisite for digital twins, real-time monitoring, and logistics optimisation that depend on live sensor data.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin-creation", "label": "Digital Twin Creation"},
-      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"}
+      {
+        "@id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wireless Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Wireless Network",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:networking", "vc:label": "Networking"},
-    {"@id": "urn:visionflow:linked:mesh-network", "vc:label": "Mesh Network"},
-    {"@id": "urn:visionflow:linked:spectrum-allocation", "vc:label": "Spectrum Allocation"},
-    {"@id": "urn:visionflow:linked:smart-home", "vc:label": "Smart Home"}
+    {
+      "@id": "urn:visionflow:linked:networking",
+      "vc:label": "Networking"
+    },
+    {
+      "@id": "urn:visionflow:linked:mesh-network",
+      "vc:label": "Mesh Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:spectrum-allocation",
+      "vc:label": "Spectrum Allocation"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-home",
+      "vc:label": "Smart Home"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,22 +44,46 @@ public: true
   "definition": "A communication network in which nodes exchange data over radio, infrared, or other electromagnetic links rather than physical cabling, spanning technologies from short-range personal-area protocols such as Bluetooth and Zigbee, through Wi-Fi local-area networks, to cellular and satellite systems covering entire regions. Wireless networks depend on regulated spectrum allocation to avoid interference, employ modulation, coding, and medium-access schemes to share the channel, and trade bandwidth, range, power consumption, and mobility against one another. They are the connective substrate for mobile computing, smart-home devices, mesh deployments, and the Internet of Things.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:networking", "label": "Networking"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:networking",
+    "label": "Networking"
+  },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:mesh-network", "label": "Mesh Network"},
-      {"@id": "urn:ngm:class:smart-home", "label": "Smart Home"}
+      {
+        "@id": "urn:ngm:class:mesh-network",
+        "label": "Mesh Network"
+      },
+      {
+        "@id": "urn:ngm:class:smart-home",
+        "label": "Smart Home"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:spectrum-allocation", "label": "Spectrum Allocation"}
+      {
+        "@id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:wireless-communication", "label": "Wireless Communication"}
+      {
+        "@id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:wi-fi", "label": "Wi-Fi"},
-      {"@id": "urn:ngm:class:5-g", "label": "5G"},
-      {"@id": "urn:ngm:class:satellite-communication", "label": "Satellite Communication"}
+      {
+        "@id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      },
+      {
+        "@id": "urn:ngm:class:5-g",
+        "label": "5G"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
     ]
   },
   "quality": 0.8,

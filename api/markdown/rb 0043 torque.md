@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0043 torque
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,18 +56,42 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"},
-      {"@id": "urn:ngm:class:rb-0044-velocity", "label": "rb 0044 velocity"},
-      {"@id": "urn:ngm:class:rb-0045-acceleration", "label": "rb 0045 acceleration"},
-      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"}
+      {
+        "@id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0044-velocity",
+        "label": "rb 0044 velocity"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0045-acceleration",
+        "label": "rb 0045 acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"},
-      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"}
+      {
+        "@id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0064-computed-torque-control",
+        "label": "rb 0064 computed torque control"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +101,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0043-torque:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c143f841399443a2a22e66b4d6ee30d938a716182265f01cf64c15ea1685a6f7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Torque** is the rotational equivalent of linear force — a moment acting about a joint axis that accelerates or decelerates a robot link according to Newton's second law for rotation (τ = Iα). In manipulator control, joint torque commands are computed from the robot's dynamic model (rb 0022) using inertia, Coriolis, and gravity terms, then realised by servo motors and actuators.

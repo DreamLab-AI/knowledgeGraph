@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Compound
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -159,7 +154,7 @@ public: true
 
 - ### Overview
   - Compound was created by Robert Leshner and Geoffrey Hayes and its v2 protocol launched on Ethereum mainnet in May 2019. It introduced a peer-to-pool lending model: rather than matching individual lenders with borrowers, all depositors contribute to a shared reserve from which any qualifying borrower may draw, with rates determined algorithmically rather than bilaterally. This design removed the friction of order-book matching and enabled 24/7 global access to crypto credit markets without a central intermediary.
-  - The protocol matters because it demonstrated that [[Smart Contracts]] could replace the core functions of a bank's lending desk — accepting deposits, setting rates, enforcing collateral requirements, and processing liquidations — entirely on-chain. Its COMP token distribution in June 2020 triggered the "DeFi Summer" phenomenon, in which [[Yield Farming]] strategies drove billions of dollars into DeFi protocols and established the [[Liquidity Mining]] pattern copied by virtually every subsequent protocol.
+  - The protocol matters because it demonstrated that [[Smart Contracts]] [private] replace the core functions of a bank's lending desk — accepting deposits, setting rates, enforcing collateral requirements, and processing liquidations — entirely on-chain. Its COMP token distribution in June 2020 triggered the "DeFi Summer" phenomenon, in which [[Yield Farming]] strategies drove billions of dollars into DeFi protocols and established the [[Liquidity Mining]] pattern copied by virtually every subsequent protocol.
   - Compound III (Comet), launched in 2022, redesigned the architecture around isolated markets with a single base asset per deployment, improving capital efficiency and reducing contagion risk compared to the pooled multi-asset v2 model.
 
 - ### Key Mechanisms

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Agent Orchestration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -167,9 +162,8 @@ public: true
 - ### Content
   - The theoretical foundations of multi-agent systems were established in artificial intelligence research from the 1980s, drawing on game theory, distributed computing, and ethological models of swarm behaviour. Early practical deployments (1990s–2000s) included autonomous software agents for information retrieval, network management, and supply chain optimisation, coordinated via FIPA-compliant messaging standards. These systems were largely rule-based or planning-based, lacking the flexible language understanding that would later enable more open-ended task decomposition.
 
-  - The arrival of capable large language models transformed multi-agent orchestration by providing agents with general-purpose reasoning, instruction following, and tool use. A seminal demonstration was the AutoGPT project (2023), which showed that a single LLM could recursively spawn sub-tasks and manage its own memory — albeit with fragility. More robust frameworks followed: LangGraph models agent state as a directed graph with conditional transitions; Microsoft AutoGen enables structured conversation between agents with configurable roles; CrewAI provides a declarative role-assignment model. The central engineering challenge is context and state management across long-running multi-agent executions, where each agent needs sufficient shared context without exceeding token budget limits.
+  - The arrival of capable large language models transformed multi-agent orchestration by providing agents with general-purpose reasoning, instruction following, and tool use. A seminal demonstration was the AutoGPT project (2023), which showed that a single LLM [private] recursively spawn sub-tasks and manage its own memory — albeit with fragility. More robust frameworks followed: LangGraph models agent state as a directed graph with conditional transitions; Microsoft AutoGen enables structured conversation between agents with configurable roles; CrewAI provides a declarative role-assignment model. The central engineering challenge is context and state management across long-running multi-agent executions, where each agent needs sufficient shared context without exceeding token budget limits.
 
   - Production deployments of multi-agent orchestration are emerging in software engineering (code generation agents that span planning, coding, testing, and review sub-agents), scientific research (literature review, hypothesis generation, and experiment design agents), customer service (triage, resolution, and escalation agents), and financial analysis. Anthropic's Claude Workspaces and OpenAI's GPT-based assistants with function calling represent more controlled variants; open-source frameworks permit custom agent graphs with arbitrary tool integration. The [[Agent Communication Protocol|Agent-to-Agent (A2A) protocol]] from Google and the Model Context Protocol (MCP) from Anthropic represent emerging standardisation efforts for inter-agent and agent-tool communication.
 
   - In 2024–2025 multi-agent orchestration is transitioning from research curiosity to production engineering discipline. Key challenges being actively addressed include: reliable task completion guarantees (agents loop, hallucinate, or get stuck), cost optimisation (minimising LLM API calls through caching and routing to smaller models for simpler subtasks), observability (tracing agent decision trees for debugging and compliance), and security (prompt injection attacks against agents with tool access). The field is converging on patterns analogous to microservices architecture — specialised agents with well-defined interfaces — as the most maintainable approach to complex agentic applications.
-

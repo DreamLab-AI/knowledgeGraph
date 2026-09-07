@@ -1,64 +1,126 @@
----
-public: true
----
-
-# IP Addressing
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:ip-addressing", "@type":"Page", "title":"IP Addressing", "vc:slug":"ip-addressing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:ip-addressing",
+  "@type": "Page",
+  "title": "IP Addressing",
+  "vc:slug": "ip-addressing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:ip-addressing",
-  "@type":"Class",
-  "label":"IP Addressing",
-  "definition":"IP addressing is the scheme by which every host and interface on an Internet Protocol network is assigned a numeric identifier used to locate and route datagrams to it. It encompasses the structure of IPv4 and IPv6 address spaces, the partition of addresses into network and host portions via subnet masks and prefixes, and the assignment mechanisms that allocate addresses to devices. Correct addressing is the precondition for routing decisions and end-to-end delivery across interconnected networks.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:internet-protocol","label":"Internet Protocol"},{"@id":"urn:ngm:class:network-infrastructure","label":"Network Infrastructure"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:internet-protocol","label":"Internet Protocol"},
-      {"@id":"urn:ngm:class:tcp-ip","label":"TCP/IP"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ip-addressing",
+  "@type": "Class",
+  "label": "IP Addressing",
+  "definition": "IP addressing is the scheme by which every host and interface on an Internet Protocol network is assigned a numeric identifier used to locate and route datagrams to it. It encompasses the structure of IPv4 and IPv6 address spaces, the partition of addresses into network and host portions via subnet masks and prefixes, and the assignment mechanisms that allocate addresses to devices. Correct addressing is the precondition for routing decisions and end-to-end delivery across interconnected networks.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:internet-protocol",
+      "label": "Internet Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:subnet-mask","label":"Subnet Mask"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:subnet-mask",
+        "label": "Subnet Mask"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:routing","label":"Routing"},
-      {"@id":"urn:ngm:class:packet-switching","label":"Packet Switching"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:routing",
+        "label": "Routing"
+      },
+      {
+        "@id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:dns","label":"DNS"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:ipv4","label":"IPv4"},
-      {"@id":"urn:ngm:class:ipv6","label":"IPv6"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ipv4",
+        "label": "IPv4"
+      },
+      {
+        "@id": "urn:ngm:class:ipv6",
+        "label": "IPv6"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:domain-name-system","label":"Domain Name System"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      }
     ],
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:ietf-rfc","label":"IETF RFC"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf-rfc",
+        "label": "IETF RFC"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:osi-model","label":"OSI Model"},
-      {"@id":"urn:ngm:class:network-communication","label":"Network Communication"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "@id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:domain-name-system","label":"Domain Name System"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:routing","label":"Routing"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:routing",
+        "label": "Routing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

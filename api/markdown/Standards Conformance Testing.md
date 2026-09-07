@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Standards Conformance Testing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:standards", "label": "Standards"},
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:standards-compliance", "label": "Standards Compliance"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:standards-compliance",
+        "label": "Standards Compliance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:standards-validation", "label": "Standards Validation"},
-      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}
+      {
+        "@id": "urn:ngm:class:standards-validation",
+        "label": "Standards Validation"
+      },
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
     ]
   },
   "provenance": {
@@ -87,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:standards-conformance-testing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a764d6e61a7c5d42d36471e87d856b3c06f280e98f1dc5e7be95a9f696ef07fa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Standards]]",
-      "resolved": "urn:visionflow:owl:class:standards",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Testing or verification activities that determine whether a process, product, or service complies with the requirements of a specification, technical standard, contract, or regulation, verifying that implementations faithfully meet specified requirements.

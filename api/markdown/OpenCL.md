@@ -1,39 +1,122 @@
----
-public: true
----
-
-# OpenCL
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:opencl", "@type":"Page", "title":"OpenCL", "vc:slug":"opencl", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:opencl",
+  "@type": "Page",
+  "title": "OpenCL",
+  "vc:slug": "opencl",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:opencl",
-  "@type":"Class",
-  "label":"OpenCL",
-  "definition":"OpenCL (Open Computing Language) is an open, royalty-free standard for writing programs that execute across heterogeneous platforms including CPUs, GPUs, and other accelerators. It defines a C-based kernel language and host API for expressing data-parallel and task-parallel computation portably across vendors. OpenCL underpins general-purpose GPU computing where cross-vendor portability is valued over the deepest single-vendor optimisation.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:gpu-computing","label":"GPU Computing"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:compute-shader","label":"Compute Shader"}],
-    "partOf":[{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}],
-    "requires":[{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "enables":[{"@id":"urn:ngm:class:gpu-acceleration","label":"GPU Acceleration"},{"@id":"urn:ngm:class:portability","label":"Portability"}],
-    "dependsOn":[{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "uses":[{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}],
-    "supports":[{"@id":"urn:ngm:class:gpu-computing","label":"GPU Computing"},{"@id":"urn:ngm:class:fpga","label":"FPGA"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:khronos-group","label":"Khronos Group"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:cuda","label":"CUDA"}],
-    "relatedTo":[{"@id":"urn:ngm:class:vulkan","label":"Vulkan"},{"@id":"urn:ngm:class:spir-v","label":"SPIR-V"},{"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:spir-v","label":"SPIR-V"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:opencl",
+  "@type": "Class",
+  "label": "OpenCL",
+  "definition": "OpenCL (Open Computing Language) is an open, royalty-free standard for writing programs that execute across heterogeneous platforms including CPUs, GPUs, and other accelerators. It defines a C-based kernel language and host API for expressing data-parallel and task-parallel computation portably across vendors. OpenCL underpins general-purpose GPU computing where cross-vendor portability is valued over the deepest single-vendor optimisation.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpu-computing",
+      "label": "GPU Computing"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:portability",
+        "label": "Portability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "@id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      },
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

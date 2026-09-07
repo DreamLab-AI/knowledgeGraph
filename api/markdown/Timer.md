@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Timer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A timer is a software or hardware mechanism that measures elapsed time or schedules an action to occur after a delay or at a recurring interval. In collaborative and real-time applications it provides shared countdowns, time-boxing, and synchronised triggers that all participants observe consistently. Timers are a basic building block of event scheduling, animation, and time-bounded interaction.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
-      {"@id": "urn:ngm:class:real-time", "label": "Real Time"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      }
     ]
   },
   "quality": 0.72

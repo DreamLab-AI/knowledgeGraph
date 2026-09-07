@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Room Scale
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,19 +46,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:virtual-reality-platform", "label": "Virtual Reality Platform"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:virtual-reality-platform",
+        "label": "Virtual Reality Platform"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:haptics", "label": "Haptics"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse-infrastructure", "label": "Metaverse Infrastructure"}
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:xr-meeting-space", "label": "XR Meeting Space"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:xr-meeting-space",
+        "label": "XR Meeting Space"
+      }
     ]
   },
   "provenance": {
@@ -73,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:room-scale:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5f2e6d68d0a31829adb90dab95709b60967f6d18a62cb485e251fe3aacd1aa3c"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A VR interaction paradigm in which the user can physically walk within a tracked play area — typically 2m × 2m or larger — with inside-out or lighthouse-based positional tracking translating real-world movement into the virtual environment. Room-scale VR requires boundary (chaperone) systems to prevent collisions with physical obstacles, and is contrasted with seated or standing-only VR experiences.

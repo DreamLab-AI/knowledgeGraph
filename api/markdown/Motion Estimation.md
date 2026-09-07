@@ -1,38 +1,120 @@
----
-public: true
----
-
-# Motion Estimation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:motion-estimation", "@type":"Page", "title":"Motion Estimation", "vc:slug":"motion-estimation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:motion-estimation",
+  "@type": "Page",
+  "title": "Motion Estimation",
+  "vc:slug": "motion-estimation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:motion-estimation",
-  "@type":"Class",
-  "label":"Motion Estimation",
-  "definition":"Motion estimation is the process of determining motion vectors that describe how regions of one video frame map to corresponding regions in another, capturing the apparent movement of objects and the camera between frames. It is the computational heart of inter-frame video compression, where predicting a block from a previously coded frame removes temporal redundancy. The same techniques underpin optical-flow analysis and frame interpolation in computer vision.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:video-compression","label":"Video Compression"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:video-compression","label":"Video Compression"}],
-    "hasPart":[{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}],
-    "uses":[{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"},{"@id":"urn:ngm:class:optical-flow","label":"Optical Flow"}],
-    "enables":[{"@id":"urn:ngm:class:video-compression","label":"Video Compression"},{"@id":"urn:ngm:class:bitrate","label":"Bitrate"}],
-    "supports":[{"@id":"urn:ngm:class:video-codec","label":"Video Codec"},{"@id":"urn:ngm:class:hevc","label":"HEVC"}],
-    "requires":[{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}],
-    "implements":[{"@id":"urn:ngm:class:lossy-compression","label":"Lossy Compression"}],
-    "relatedTo":[{"@id":"urn:ngm:class:optical-flow","label":"Optical Flow"},{"@id":"urn:ngm:class:codec","label":"Codec"},{"@id":"urn:ngm:class:entropy-coding","label":"Entropy Coding"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:image-compression","label":"Image Compression"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:motion-estimation",
+  "@type": "Class",
+  "label": "Motion Estimation",
+  "definition": "Motion estimation is the process of determining motion vectors that describe how regions of one video frame map to corresponding regions in another, capturing the apparent movement of objects and the camera between frames. It is the computational heart of inter-frame video compression, where predicting a block from a previously coded frame removes temporal redundancy. The same techniques underpin optical-flow analysis and frame interpolation in computer vision.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:video-compression",
+      "label": "Video Compression"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "@id": "urn:ngm:class:bitrate",
+        "label": "Bitrate"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "@id": "urn:ngm:class:hevc",
+        "label": "HEVC"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:lossy-compression",
+        "label": "Lossy Compression"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "@id": "urn:ngm:class:codec",
+        "label": "Codec"
+      },
+      {
+        "@id": "urn:ngm:class:entropy-coding",
+        "label": "Entropy Coding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:image-compression",
+        "label": "Image Compression"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

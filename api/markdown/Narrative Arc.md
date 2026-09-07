@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Narrative Arc
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:narrative-arc:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5527ab64db9553639c714062229bbb21668a62c8841c1fe71bc17b831db739b6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Non Linear Narrative]]",
-      "resolved": "urn:visionflow:owl:class:non-linear-narrative",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Storytelling Structure]]",
-      "resolved": "urn:visionflow:owl:class:storytelling-structure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The structural framework of a story that charts the progression through exposition, rising action, climax, falling action, and resolution, creating peaks and plateaus of dramatic tension that engage audiences and shape their emotional journey through the narrative.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Deep Reinforcement Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,43 +7,154 @@ public: true
   "title": "Deep Reinforcement Learning",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:markov-decision-process", "vc:label": "Markov Decision Process"},
-    {"@id": "urn:visionflow:linked:bellman-equation", "vc:label": "Bellman Equation"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:policy-gradient-methods", "vc:label": "Policy Gradient Methods"},
-    {"@id": "urn:visionflow:linked:q-learning", "vc:label": "Q-Learning"},
-    {"@id": "urn:visionflow:linked:temporal-difference-learning", "vc:label": "Temporal Difference Learning"},
-    {"@id": "urn:visionflow:linked:proximal-policy-optimisation", "vc:label": "Proximal Policy Optimisation"},
-    {"@id": "urn:visionflow:linked:reward-signal", "vc:label": "Reward Signal"},
-    {"@id": "urn:visionflow:linked:value-function", "vc:label": "Value Function"},
-    {"@id": "urn:visionflow:linked:action-space", "vc:label": "Action Space"},
-    {"@id": "urn:visionflow:linked:environment-model", "vc:label": "Environment Model"},
-    {"@id": "urn:visionflow:linked:simulation-environment", "vc:label": "Simulation Environment"},
-    {"@id": "urn:visionflow:linked:experience-replay", "vc:label": "Experience Replay"},
-    {"@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:agent", "vc:label": "Agent"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:model-based-reinforcement-learning", "vc:label": "Model Based Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:offline-reinforcement-learning", "vc:label": "Offline Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:multi-agent-reinforcement-learning", "vc:label": "Multi-Agent Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:exploration-exploitation-tradeoff", "vc:label": "Exploration Exploitation Tradeoff"},
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:imitation-learning", "vc:label": "Imitation Learning"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:monte-carlo-tree-search", "vc:label": "Monte Carlo Tree Search"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:diffusion-policy", "vc:label": "Diffusion Policy"},
-    {"@id": "urn:visionflow:linked:game-theory", "vc:label": "Game Theory"},
-    {"@id": "urn:visionflow:linked:safe-ai", "vc:label": "Safe AI"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:markov-decision-process",
+      "vc:label": "Markov Decision Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:bellman-equation",
+      "vc:label": "Bellman Equation"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-gradient-methods",
+      "vc:label": "Policy Gradient Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:q-learning",
+      "vc:label": "Q-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal-difference-learning",
+      "vc:label": "Temporal Difference Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:proximal-policy-optimisation",
+      "vc:label": "Proximal Policy Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-signal",
+      "vc:label": "Reward Signal"
+    },
+    {
+      "@id": "urn:visionflow:linked:value-function",
+      "vc:label": "Value Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:action-space",
+      "vc:label": "Action Space"
+    },
+    {
+      "@id": "urn:visionflow:linked:environment-model",
+      "vc:label": "Environment Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation-environment",
+      "vc:label": "Simulation Environment"
+    },
+    {
+      "@id": "urn:visionflow:linked:experience-replay",
+      "vc:label": "Experience Replay"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-acceleration",
+      "vc:label": "GPU Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent",
+      "vc:label": "Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-based-reinforcement-learning",
+      "vc:label": "Model Based Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:offline-reinforcement-learning",
+      "vc:label": "Offline Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-reinforcement-learning",
+      "vc:label": "Multi-Agent Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:exploration-exploitation-tradeoff",
+      "vc:label": "Exploration Exploitation Tradeoff"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:imitation-learning",
+      "vc:label": "Imitation Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:monte-carlo-tree-search",
+      "vc:label": "Monte Carlo Tree Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-policy",
+      "vc:label": "Diffusion Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-theory",
+      "vc:label": "Game Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:safe-ai",
+      "vc:label": "Safe AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -75,113 +181,160 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:action-space", "label": "Action Space"},
-      {"@id": "urn:ngm:class:environment-model", "label": "Environment Model"},
-      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"},
-      {"@id": "urn:ngm:class:policy-gradient-methods", "label": "Policy Gradient Methods"},
-      {"@id": "urn:ngm:class:reward-signal", "label": "Reward Signal"},
-      {"@id": "urn:ngm:class:value-function", "label": "Value Function"},
-      {"@id": "urn:ngm:class:bellman-equation", "label": "Bellman Equation"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:action-space",
+        "label": "Action Space"
+      },
+      {
+        "@id": "urn:ngm:class:environment-model",
+        "label": "Environment Model"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient Methods"
+      },
+      {
+        "@id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
+      },
+      {
+        "@id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "@id": "urn:ngm:class:bellman-equation",
+        "label": "Bellman Equation"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agent", "label": "Agent"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:robotics", "label": "Autonomous Robotics"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:multi-agent-reinforcement-learning", "label": "Multi-Agent Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Autonomous Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:simulation-environment", "label": "Simulation Environment"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:experience-replay", "label": "Experience Replay"},
-      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"}
+      {
+        "@id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:experience-replay",
+        "label": "Experience Replay"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:q-learning", "label": "Q-Learning"},
-      {"@id": "urn:ngm:class:temporal-difference-learning", "label": "Temporal Difference Learning"},
-      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"}
+      {
+        "@id": "urn:ngm:class:q-learning",
+        "label": "Q-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-difference-learning",
+        "label": "Temporal Difference Learning"
+      },
+      {
+        "@id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:model-based-reinforcement-learning", "label": "Model Based Reinforcement Learning"},
-      {"@id": "urn:ngm:class:offline-reinforcement-learning", "label": "Offline Reinforcement Learning"},
-      {"@id": "urn:ngm:class:diffusion-policy", "label": "Diffusion Policy"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-based-reinforcement-learning",
+        "label": "Model Based Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:offline-reinforcement-learning",
+        "label": "Offline Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-policy",
+        "label": "Diffusion Policy"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:safe-ai", "label": "Safe AI"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:safe-ai",
+        "label": "Safe AI"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:drl", "label": "DRL"}
+    {
+      "@id": "urn:ngm:class:drl",
+      "label": "DRL"
+    }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "OntologyEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:deep-reinforcement-learning:d1e2f3a4b5c6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:deep-reinforcement-learning"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Markov Decision Process]]", "resolved": "urn:visionflow:linked:markov-decision-process", "kind": "ResolvedLink"},
-    {"raw": "[[Bellman Equation]]", "resolved": "urn:visionflow:linked:bellman-equation", "kind": "ResolvedLink"},
-    {"raw": "[[Backpropagation]]", "resolved": "urn:visionflow:linked:backpropagation", "kind": "ResolvedLink"},
-    {"raw": "[[Policy Gradient Methods]]", "resolved": "urn:visionflow:linked:policy-gradient-methods", "kind": "StubLink"},
-    {"raw": "[[Q-Learning]]", "resolved": "urn:visionflow:linked:q-learning", "kind": "StubLink"},
-    {"raw": "[[Temporal Difference Learning]]", "resolved": "urn:visionflow:linked:temporal-difference-learning", "kind": "StubLink"},
-    {"raw": "[[Proximal Policy Optimisation]]", "resolved": "urn:visionflow:linked:proximal-policy-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Reward Signal]]", "resolved": "urn:visionflow:linked:reward-signal", "kind": "StubLink"},
-    {"raw": "[[Value Function]]", "resolved": "urn:visionflow:linked:value-function", "kind": "StubLink"},
-    {"raw": "[[Action Space]]", "resolved": "urn:visionflow:linked:action-space", "kind": "StubLink"},
-    {"raw": "[[Environment Model]]", "resolved": "urn:visionflow:linked:environment-model", "kind": "StubLink"},
-    {"raw": "[[Simulation Environment]]", "resolved": "urn:visionflow:linked:simulation-environment", "kind": "StubLink"},
-    {"raw": "[[Experience Replay]]", "resolved": "urn:visionflow:linked:experience-replay", "kind": "StubLink"},
-    {"raw": "[[GPU Acceleration]]", "resolved": "urn:visionflow:linked:gpu-acceleration", "kind": "StubLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Agent]]", "resolved": "urn:visionflow:linked:agent", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Model Based Reinforcement Learning]]", "resolved": "urn:visionflow:linked:model-based-reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Offline Reinforcement Learning]]", "resolved": "urn:visionflow:linked:offline-reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Agent Reinforcement Learning]]", "resolved": "urn:visionflow:linked:multi-agent-reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Exploration Exploitation Tradeoff]]", "resolved": "urn:visionflow:linked:exploration-exploitation-tradeoff", "kind": "ResolvedLink"},
-    {"raw": "[[Supervised Learning]]", "resolved": "urn:visionflow:linked:supervised-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Imitation Learning]]", "resolved": "urn:visionflow:linked:imitation-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "ResolvedLink"},
-    {"raw": "[[Monte Carlo Tree Search]]", "resolved": "urn:visionflow:linked:monte-carlo-tree-search", "kind": "ResolvedLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Diffusion Policy]]", "resolved": "urn:visionflow:linked:diffusion-policy", "kind": "ResolvedLink"},
-    {"raw": "[[Game Theory]]", "resolved": "urn:visionflow:linked:game-theory", "kind": "StubLink"},
-    {"raw": "[[Safe AI]]", "resolved": "urn:visionflow:linked:safe-ai", "kind": "StubLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:linked:ai-grounded-domain", "kind": "ResolvedLink"},
-    {"raw": "[[AlgorithmLayer]]", "resolved": "urn:visionflow:linked:algorithm-layer", "kind": "ResolvedLink"},
-    {"raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:linked:computation-and-intelligence-domain", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -298,7 +451,7 @@ public: true
 
   The fundamental mathematical object underpinning all DRL is the [[Markov Decision Process]], which models the world as a tuple (S, A, P, R, γ) of states, actions, stochastic transition dynamics P(s'|s,a), reward function R(s,a,s'), and discount factor γ ∈ [0,1) that down-weights future rewards to ensure convergence of the infinite-horizon return. The Markov property — that future states depend only on the current state and action, not on the full history — is what makes the framework mathematically tractable. The agent's goal is to find a policy π: S → A (deterministic) or π: S → Δ(A) (stochastic) that maximises the expected discounted return J(π) = E[Σ_{t=0}^∞ γ^t r_t]. For continuous or infinite state spaces — which include all pixel-based and sensor-based observations — the exact policy and value function cannot be represented in tabular form; the decisive innovation of DRL was to parameterise them as deep [[Neural Network]]s and optimise via [[Backpropagation]].
 
-  The historical trajectory of DRL divides into three phases. The **pre-DRL era** (1950s–2012) established the mathematical foundations: Richard Bellman's dynamic programming and the [[Bellman Equation]] (1957), Christopher Watkins' Q-learning (1989), and Richard Sutton and Andrew Barto's unification of these ideas in the textbook "Reinforcement Learning: An Introduction" (1998, 2nd ed. 2018). During this period, RL was applied successfully to backgammon (TD-Gammon, Tesauro 1992 — an early neural function approximator), helicopter aerobatics, and robotic locomotion, but was fundamentally limited to low-dimensional, hand-engineered state representations. The **DRL era** began with DeepMind's DQN (2013 preprint, 2015 Nature publication), which demonstrated that a [[Convolutional Neural Network]] trained end-to-end from raw Atari pixel frames could achieve human-level performance on 49 games without any domain knowledge. The **post-DRL era** (2020–present) is characterised by the convergence of DRL with large-scale pre-trained foundation models, the rise of [[Reinforcement Learning from Human Feedback]] as the standard alignment mechanism for [[Large Language Model]]s, and the application of DRL-derived policy optimisation algorithms (GRPO, RLVR) to elicit complex chain-of-thought reasoning from language models.
+  The historical trajectory of DRL divides into three phases. The **pre-DRL era** (1950s–2012) established the mathematical foundations: Richard Bellman's dynamic programming and the [[Bellman Equation]] (1957), Christopher Watkins' Q-learning (1989), and Richard Sutton and Andrew Barto's unification of these ideas in the textbook "Reinforcement Learning: An Introduction" (1998, 2nd ed. 2018). During this period, RL was applied successfully to backgammon (TD-Gammon, Tesauro 1992 — an early neural function approximator), helicopter aerobatics, and robotic locomotion, but was fundamentally limited to low-dimensional, hand-engineered state representations. The **DRL era** began with DeepMind's DQN (2013 preprint, 2015 Nature publication), which demonstrated that a [[Convolutional Neural Network]] trained end-to-end from raw Atari pixel frames [private] achieve human-level performance on 49 games without any domain knowledge. The **post-DRL era** (2020–present) is characterised by the convergence of DRL with large-scale pre-trained foundation models, the rise of [[Reinforcement Learning from Human Feedback]] as the standard alignment mechanism for [[Large Language Model]]s, and the application of DRL-derived policy optimisation algorithms (GRPO, RLVR) to elicit complex chain-of-thought reasoning from language models.
 
   The theoretical bridge from classical RL to deep neural networks rests on the [[Bellman Equation]]. For a given policy π, the state-value function V^π(s) = E_π[Σ γ^t r_t | s_0=s] and action-value function Q^π(s,a) = E_π[Σ γ^t r_t | s_0=s, a_0=a] satisfy Bellman consistency equations that can be solved iteratively: value iteration and policy iteration converge to the optimal V* and Q* in tabular (finite state/action) settings. The decisive insight of the DRL era, pioneered by DeepMind's DQN paper (Mnih et al., 2013/2015), was to approximate Q*(s,a) with a [[Convolutional Neural Network]] parameterised by weights θ, updating θ via [[Backpropagation]] on the mean-squared Bellman error loss L(θ) = E[(r + γ max_{a'} Q(s',a';θ^-) - Q(s,a;θ))^2], where θ^- denotes a periodically synchronised target network. Two stabilisation innovations made this work on raw pixel inputs from Atari 2600 games: (1) [[Experience Replay]] — shuffling transitions stored in a circular buffer breaks the harmful temporal correlations in consecutive frames, allowing independent and identically distributed mini-batch sampling for stable stochastic gradient descent; and (2) the target network — maintaining a slowly-updated copy of Q prevents the regression target from chasing a moving optimisation objective. DQN achieved human-level or better performance on 49 of 57 Atari games, a result that effectively launched the modern DRL era.
 
@@ -473,11 +626,11 @@ public: true
 
   ## Future Directions (2026–2030)
 
-  **Foundation model DRL**: the integration of large pre-trained vision-language models as reward functions, environment encoders, and generalised policy initialisers is the dominant frontier — systems like Google's RT-2/RT-X and Meta's Gaia-1 demonstrate that scaling pre-training dramatically improves DRL fine-tuning efficiency. The next generation of robot learning systems is expected to use internet-scale pre-training to provide rich semantic representations that DRL fine-tuning then grounds in physical action. VLM-as-reward (using a vision-language model as a reward function for novel task specification without environment-specific reward engineering) is an active research direction that could generalise DRL to open-ended goal specification.
+  **Foundation model DRL**: the integration of large pre-trained vision-language models as reward functions, environment encoders, and generalised policy initialisers is the dominant frontier — systems like Google's RT-2/RT-X and Meta's Gaia-1 demonstrate that scaling pre-training dramatically improves DRL fine-tuning efficiency. The next generation of robot learning systems is expected to use internet-scale pre-training to provide rich semantic representations that DRL fine-tuning then grounds in physical action. VLM-as-reward (using a vision-language model as a reward function for novel task specification without environment-specific reward engineering) is an active research direction that [private] generalise DRL to open-ended goal specification.
 
   **Verifiable reward RL (RLVR)**: extending GRPO-style approaches beyond mathematics and coding to scientific reasoning, multi-step tool use, and long-horizon [[Agentic AI]] tasks; the OpenAI o3/o4 and DeepSeek-R2 trajectory suggests continued scaling of RL-driven chain-of-thought training as the dominant method for improving frontier reasoning capabilities. The key open question is whether RLVR scales to domains without ground-truth verifiable rewards (scientific discovery, creative writing, strategic planning).
 
-  **World model scaling**: DreamerV3 and MuZero successors trained at GPT scale on internet data could provide the general simulation substrate needed for sample-efficient robot learning — the "world model as simulator" paradigm. A generalist world model that accurately predicts the consequences of actions across diverse physical and digital environments would dramatically reduce the data requirements for downstream DRL fine-tuning.
+  **World model scaling**: DreamerV3 and MuZero successors trained at GPT scale on internet data [private] provide the general simulation substrate needed for sample-efficient robot learning — the "world model as simulator" paradigm. A generalist world model that accurately predicts the consequences of actions across diverse physical and digital environments would dramatically reduce the data requirements for downstream DRL fine-tuning.
 
   **[[Multi-Agent Reinforcement Learning]] at scale**: emergent cooperation and competition in large agent populations, with applications to AI safety (multi-agent oversight and debate), economic mechanism design, competitive coding/mathematics, and team robotics. The transition from individual agent policies to population dynamics and [[Game Theory]]-informed equilibrium analysis is a major theoretical frontier.
 
@@ -485,7 +638,7 @@ public: true
 
   **Safe and constrained DRL**: certified safety envelopes using conformal prediction, formal verification of learned policies via abstract interpretation, and constrained MDP approaches driven by EU AI Act regulatory requirements for high-stakes autonomous systems in medical devices, autonomous vehicles, and infrastructure control. Safe RL remains one of the most important open problems in the field. Conditional sequence modelling (CSM) approaches that learn constraint-satisfying policies from offline data represent a promising direction, as demonstrated by the 2026 paper "Conditional Sequence Modeling for Safe Reinforcement Learning" (arXiv:2602.08584).
 
-  **Neuromorphic and edge DRL**: deploying DRL inference on low-power neuromorphic hardware (Intel Loihi, IBM NorthPole) for robotics and IoT applications; spiking neural network approximations of actor-critic policies are an emerging research direction that could reduce inference energy by 10–100× compared to standard GPU-based DRL, enabling truly autonomous edge robots with days-long battery life rather than hours.
+  **Neuromorphic and edge DRL**: deploying DRL inference on low-power neuromorphic hardware (Intel Loihi, IBM NorthPole) for robotics and IoT applications; spiking neural network approximations of actor-critic policies are an emerging research direction that [private] reduce inference energy by 10–100× compared to standard GPU-based DRL, enabling truly autonomous edge robots with days-long battery life rather than hours.
 
   **Alignment and interpretability**: understanding what objectives DRL policies have implicitly optimised, detecting reward hacking and specification gaming, and developing interpretable policy representations that allow human experts to audit and correct agent behaviour are critical open problems as DRL systems are deployed in higher-stakes domains under regulatory scrutiny. Mechanistic interpretability techniques developed for [[Large Language Model]]s are being adapted to understand DRL policy networks — analysing which neurons activate for which game states, how the value function is represented internally, and whether deceptive alignment phenomena can emerge in sufficiently capable DRL agents.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transfer Impact Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "A Transfer Impact Assessment (TIA) is a documented evaluation organisations conduct before transferring personal data across borders to determine whether the destination jurisdiction provides protection essentially equivalent to that of the originating data-protection regime. Required in the EU following the Schrems II ruling, a TIA examines the destination's surveillance laws, the legal remedies available to data subjects, and any supplementary technical and organisational measures needed to make the transfer lawful. It is a core compliance artefact for international data flows under the GDPR.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ]
   },
   "quality": 0.8

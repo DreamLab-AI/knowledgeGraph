@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AV1 Codec
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "AV1 is a royalty-free video coding format developed by the Alliance for Open Media to deliver high compression efficiency for streaming and real-time video. It typically achieves around 30 percent better compression than HEVC/VP9 at equivalent quality, making it well suited to bandwidth-constrained applications such as screen sharing and live video. Being open and licence-free, it is widely adopted across browsers, hardware decoders, and conferencing platforms.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:screen-sharing", "label": "Screen Sharing"}
+      {
+        "@id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
     ]
   },
   "quality": 0.72

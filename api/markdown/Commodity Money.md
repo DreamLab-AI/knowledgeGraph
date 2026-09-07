@@ -1,42 +1,114 @@
----
-public: true
----
-
-# Commodity Money
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:commodity-money", "@type":"Page", "title":"Commodity Money", "vc:slug":"commodity-money", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:commodity-money",
+  "@type": "Page",
+  "title": "Commodity Money",
+  "vc:slug": "commodity-money",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:commodity-money",
-  "@type":"Class",
-  "label":"Commodity Money",
-  "definition":"Commodity money is a form of money whose value derives from the intrinsic worth of the physical commodity from which it is made, such as gold, silver, salt or grain. Because the medium of exchange is itself a useful or scarce good, its monetary value is anchored to its commodity value rather than to government decree. Commodity money predates and contrasts with fiat currency, where value rests on trust in an issuing authority.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:money","label":"Money"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:gold","label":"Gold"}],
-    "partOf":[{"@id":"urn:ngm:class:monetary-system","label":"Monetary System"}],
-    "enables":[{"@id":"urn:ngm:class:store-of-value","label":"Store of Value"}],
-    "supports":[{"@id":"urn:ngm:class:gold-standard","label":"Gold Standard"}],
-    "implements":[{"@id":"urn:ngm:class:hard-money","label":"Hard Money"}],
-    "requires":[{"@id":"urn:ngm:class:value","label":"Value"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:fiat-currency","label":"Fiat Currency"},{"@id":"urn:ngm:class:cryptocurrency","label":"Cryptocurrency"}],
-    "relatedTo":[{"@id":"urn:ngm:class:money","label":"Money"},{"@id":"urn:ngm:class:inflation","label":"Inflation"},{"@id":"urn:ngm:class:finance","label":"Finance"},{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"},{"@id":"urn:ngm:class:bitcoin","label":"Bitcoin"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:commodity-money",
+  "@type": "Class",
+  "label": "Commodity Money",
+  "definition": "Commodity money is a form of money whose value derives from the intrinsic worth of the physical commodity from which it is made, such as gold, silver, salt or grain. Because the medium of exchange is itself a useful or scarce good, its monetary value is anchored to its commodity value rather than to government decree. Commodity money predates and contrasts with fiat currency, where value rests on trust in an issuing authority.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:money",
+      "label": "Money"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gold",
+        "label": "Gold"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:store-of-value",
+        "label": "Store of Value"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hard-money",
+        "label": "Hard Money"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:value",
+        "label": "Value"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:money",
+        "label": "Money"
+      },
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
 - ### Definition
   - **Commodity Money** is [[Money]] that has intrinsic value because the object used as currency is itself a useful or scarce commodity.
-  - Classic examples include [[Gold]], silver, salt, cattle and grain, where the medium of exchange could also be consumed or traded as a good.
+  - Classic examples include [[Gold]], silver, salt, cattle and grain, where the medium of exchange [private] also be consumed or traded as a good.
   - Its purchasing power is anchored to the underlying commodity's value, which constrains how much can be created.
   - It stands in contrast to [[Fiat Currency]], whose value rests on confidence in an issuer rather than on any physical backing.
 - ### Overview

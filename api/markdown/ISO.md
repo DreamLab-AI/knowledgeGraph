@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ISO (International Organization for Standardization)
----
-
-# ISO
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

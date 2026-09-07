@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monero
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -169,46 +164,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:monero:4469412a3887",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6430912ef24bbcbd4ca2c6951b36e0384fd15d7061dbf6087b2edaa51058a1c4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Proof of Work]]",
-      "resolved": "urn:visionflow:linked:proof-of-work",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ring Signature]]",
-      "resolved": "urn:visionflow:linked:ring-signature",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Zcash]]",
-      "resolved": "urn:visionflow:linked:zcash",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

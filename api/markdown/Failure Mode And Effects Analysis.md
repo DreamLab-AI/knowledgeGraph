@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Failure Mode And Effects Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -131,7 +126,7 @@ public: true
   - Core related concepts: [[Reliability Engineering]], [[Hazard Analysis]], [[Fault Tree Analysis]], [[Risk Assessment]], [[Safety Lifecycle]].
 
 - ### Overview
-  - FMEA works from individual components and process steps upward, asking how each could fail, why, and what would happen. By scoring severity, likelihood, and detectability, it converts qualitative engineering judgement into a prioritised list of risks that focuses mitigation effort where it matters most. It complements top-down methods such as fault-tree analysis, which start from an undesired top event and work down to contributing causes.
+  - FMEA works from individual components and process steps upward, asking how each [private] fail, why, and what would happen. By scoring severity, likelihood, and detectability, it converts qualitative engineering judgement into a prioritised list of risks that focuses mitigation effort where it matters most. It complements top-down methods such as fault-tree analysis, which start from an undesired top event and work down to contributing causes.
 
 - ### Mechanisms
   - Failure-mode identification: each function, component, or process step is examined for the ways it can fail.

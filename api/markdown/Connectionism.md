@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Connectionism
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:connectionism", "@type":"Page", "title":"Connectionism", "vc:slug":"connectionism", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:connectionism",
+  "@type": "Page",
+  "title": "Connectionism",
+  "vc:slug": "connectionism",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

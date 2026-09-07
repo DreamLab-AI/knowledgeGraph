@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Human Development Index
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "The Human Development Index (HDI) is a composite statistic published by the United Nations Development Programme that ranks countries by aggregating life expectancy, education (mean and expected years of schooling), and gross national income per capita. It measures human wellbeing beyond purely economic output and is used to compare development levels and to track progress over time. The HDI underpins many analyses of inequality and policy effectiveness.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:global-inequality", "label": "Global Inequality"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      }
+    ]
   },
   "quality": 0.72
 }

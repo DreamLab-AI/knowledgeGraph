@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,18 +171,42 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:content-delivery-network-cdn", "label": "Content Delivery Network (CDN)"},
-      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"},
-      {"@id": "urn:ngm:class:networking-layer", "label": "Networking Layer"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network-cdn",
+        "label": "Content Delivery Network (CDN)"
+      },
+      {
+        "@id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:networking-layer",
+        "label": "Networking Layer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:metaverse-architecture-stack", "label": "Metaverse Architecture Stack"},
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}
+      {
+        "@id": "urn:ngm:class:metaverse-architecture-stack",
+        "label": "Metaverse Architecture Stack"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-domain-infrastructure-data", "label": "ETSI_Domain_Infrastructure_Data"},
-      {"@id": "urn:ngm:class:etsidomain-classification", "label": "ETSIDomainClassification"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-infrastructure-data",
+        "label": "ETSI_Domain_Infrastructure_Data"
+      },
+      {
+        "@id": "urn:ngm:class:etsidomain-classification",
+        "label": "ETSIDomainClassification"
+      }
     ]
   },
   "provenance": {
@@ -197,182 +216,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:718bc4fbf92cebcdff9af35bb272f02464056d74ad7e2443df516fb669ef8d6d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DataCenter|data centers]]",
-      "resolved": "urn:visionflow:linked:data-centre",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI]]",
-      "resolved": "urn:visionflow:linked:etsi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NetworkSecurity]]",
-      "resolved": "urn:visionflow:linked:network-security",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SystemResilience]]",
-      "resolved": "urn:visionflow:linked:system-resilience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[6G Network Slice]]",
-      "resolved": "urn:visionflow:owl:class:6-g-network-slice",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CloudComputing]]",
-      "resolved": "urn:visionflow:owl:class:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cloud Rendering Service]]",
-      "resolved": "urn:visionflow:owl:class:cloud-rendering-service",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compute Layer]]",
-      "resolved": "urn:visionflow:owl:class:compute-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Content Delivery Network (CDN)]]",
-      "resolved": "urn:visionflow:owl:class:content-delivery-network-cdn",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Context Awareness]]",
-      "resolved": "urn:visionflow:owl:class:context-awareness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger Technology (DLT)]]",
-      "resolved": "urn:visionflow:owl:class:distributed-ledger-technology-dlt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EdgeComputing]]",
-      "resolved": "urn:visionflow:owl:class:edge-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing Node]]",
-      "resolved": "urn:visionflow:owl:class:edge-computing-node",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Mesh Network]]",
-      "resolved": "urn:visionflow:owl:class:edge-mesh-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Network]]",
-      "resolved": "urn:visionflow:owl:class:edge-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Orchestration]]",
-      "resolved": "urn:visionflow:owl:class:edge-orchestration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware Abstraction Layer (HAL)]]",
-      "resolved": "urn:visionflow:owl:class:hardware-abstraction-layer-hal",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Infrastructure Layer]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Latency]]",
-      "resolved": "urn:visionflow:owl:class:latency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Latency Management Protocol]]",
-      "resolved": "urn:visionflow:owl:class:latency-management-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Architecture Stack]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-architecture-stack",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Middleware]]",
-      "resolved": "urn:visionflow:owl:class:middleware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:network-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NetworkInfrastructure]]",
-      "resolved": "urn:visionflow:owl:class:network-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Networking Layer]]",
-      "resolved": "urn:visionflow:owl:class:networking-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physics Engine]]",
-      "resolved": "urn:visionflow:owl:class:physics-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Layer]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Visualization Layer]]",
-      "resolved": "urn:visionflow:owl:class:visualization-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An [[ETSI]] governance domain governing foundational systems, networks, and computational resources enabling [[Metaverse]] platforms at scale. This domain encompasses [[NetworkInfrastructure]], [[CloudComputing]], [[EdgeComputing]], [[DataCenter|data centers]], [[NetworkSecurity]], and [[SystemResilience]] to provide reliable, performant, secure technical foundations.

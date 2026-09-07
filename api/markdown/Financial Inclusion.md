@@ -1,8 +1,3 @@
----
-public: true
----
-
-# financial inclusion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -241,7 +236,7 @@ public: true
     - Invoice financing, supply chain finance, and receivables discounting via [[Fintech]] platforms extend working capital to SMEs without requiring fixed-asset collateral.
   - **Insurance and Health Finance**
     - Community-based health insurance schemes and National Health Insurance platforms now onboard members via mobile money, automatically collecting premiums from digital wallets.
-    - Agricultural index insurance tied to satellite rainfall data has scaled to millions of smallholders in sub-Saharan Africa and South Asia without requiring per-claim field visits.
+    - Agricultural [private] insurance tied to satellite rainfall data has scaled to millions of smallholders in sub-Saharan Africa and South Asia without requiring per-claim field visits.
 
 - ### Relationships
   - enables:: [[Mobile Money]]

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# KYC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,52 +195,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:kyc:84a9ceb1ee3a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e6895b775af7de0c9dd1899747bd9967cfdee5a71248b9e5ea37578ab6c26944"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:linked:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Anti-Money Laundering]]",
-      "resolved": "urn:visionflow:linked:anti-money-laundering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compliance]]",
-      "resolved": "urn:visionflow:linked:compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Know Your Customer]]",
-      "resolved": "urn:visionflow:linked:know-your-customer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Regulation]]",
-      "resolved": "urn:visionflow:linked:financial-regulation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Know Your Customer, the set of procedures by which a regulated entity verifies the identity of its clients and assesses associated risks before and during a business relationship.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tokenised Real World Asset Transfer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Tokenised real-world asset transfer is the movement of on-chain tokens representing claims on off-chain assets such as real estate, commodities, or securities between parties or across blockchain networks. It requires that the cryptographic transfer of the token remains legally and operationally bound to the underlying asset, often relying on cross-chain bridges and interoperability protocols to preserve provenance across ledgers.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-token-and-asset", "label": "Token and Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}, {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ]
   },
   "quality": 0.72
 }

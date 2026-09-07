@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Learning Analytics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,42 +77,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:learning-analytics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:adc4eb4a10a117b7b7408a9efe229754ec9a66f4892aa478899ee500ebce6577"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Adaptive Learning]]",
-      "resolved": "urn:visionflow:linked:adaptive-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Educational Technology]]",
-      "resolved": "urn:visionflow:owl:class:educational-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The measurement, collection, analysis, and reporting of data about learners in immersive VR and metaverse educational environments, enabling understanding of learning processes, performance prediction, and adaptive content delivery.
 
@@ -168,7 +127,7 @@ public: true
   - Expression score measurement
   - Visual rejection anxiety tracking
   - Task mastery evaluation
-  - Comprehensive index creation
+  - Comprehensive [private] creation
   - HMD VR interaction focus
 
   ## Data and Privacy

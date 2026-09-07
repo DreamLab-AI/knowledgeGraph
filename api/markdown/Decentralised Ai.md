@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralised Ai
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -114,6 +110,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Decentralised AI refers to artificial intelligence systems whose training, inference, data provenance, or governance are distributed across many independent participants rather than controlled by a single centralised entity. It commonly combines machine-learning techniques such as federated learning with blockchain or peer-to-peer infrastructure to coordinate compute, verify contributions, and align incentives through crypto-economic mechanisms. The goal is to reduce single points of control and failure, preserve data sovereignty, and enable open marketplaces for models, data, and compute.
   - [[Blockchain]] [[Decentralised Identity]] [[Federated Learning]] [[Smart Contract]] [[Peer-to-Peer Network]]

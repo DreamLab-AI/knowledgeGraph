@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optimization Algorithms
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -79,61 +74,38 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:optimization-algorithms:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:139abe981527b5b52195ffe678064acce416dbb7ca2c36df7a58d9e0763a878f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Convex Optimization]]",
-      "resolved": "urn:visionflow:linked:convex-optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hyperparameter Tuning]]",
-      "resolved": "urn:visionflow:linked:hyperparameter-tuning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Backpropagation]]",
-      "resolved": "urn:visionflow:owl:class:backpropagation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gradient Descent]]",
-      "resolved": "urn:visionflow:owl:class:gradient-descent",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based methods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to minimize loss functions. Advanced techniques include momentum-based optimization, adaptive learning rates, second-order methods (L-BFGS, natural gradient), and gradient-free optimization (evolutionary strategies, Bayesian optimization). Optimization algorithms address challenges of non-convexity, saddle points, vanishing/exploding gradients, and computational efficiency in high-dimensional parameter spaces.

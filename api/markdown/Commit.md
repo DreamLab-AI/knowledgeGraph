@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Commit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Commit",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:version-control", "vc:label": "Version Control"},
-    {"@id": "urn:visionflow:linked:git", "vc:label": "Git"},
-    {"@id": "urn:visionflow:linked:cryptographic-hash", "vc:label": "Cryptographic Hash"},
-    {"@id": "urn:visionflow:linked:directed-acyclic-graph", "vc:label": "Directed Acyclic Graph"}
+    {
+      "@id": "urn:visionflow:linked:version-control",
+      "vc:label": "Version Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:git",
+      "vc:label": "Git"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryptographic-hash",
+      "vc:label": "Cryptographic Hash"
+    },
+    {
+      "@id": "urn:visionflow:linked:directed-acyclic-graph",
+      "vc:label": "Directed Acyclic Graph"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,15 +50,30 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:git", "label": "Git"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:directed-acyclic-graph", "label": "Directed Acyclic Graph"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ]
   },
   "quality": 0.8,

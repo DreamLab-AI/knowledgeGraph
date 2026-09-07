@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Ideas]]
-# Exploratory Concepts Seed Space
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,12 +47,24 @@ elevatedFrom:: [[Ideas]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:agents", "label": "Agents"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ]
   },
   "provenance": {
@@ -68,32 +74,6 @@ elevatedFrom:: [[Ideas]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ideas:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ecab5fecf41145d7ce507c01ab7936ff2e88b4a4eef5c0238aa9ca12cf49e369"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Ideas is a concept within the ngm domain.

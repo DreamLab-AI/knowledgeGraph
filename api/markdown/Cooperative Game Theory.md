@@ -1,55 +1,121 @@
----
-public: true
----
-
-# Cooperative Game Theory
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cooperative-game-theory", "@type":"Page", "title":"Cooperative Game Theory", "vc:slug":"cooperative-game-theory", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:cooperative-game-theory",
-  "@type":"Class",
-  "label":"Cooperative Game Theory",
-  "definition":"Cooperative game theory is the branch of game theory that studies how groups of agents can form coalitions and how the value they jointly create should be divided among members. Rather than focusing on individual strategies, it analyses solution concepts such as the core and the Shapley value that capture fair or stable allocations of collective payoff. Its allocation principles underpin applications from economics and mechanism design to feature attribution in explainable machine learning.",
-  "domain":"ai",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:shapley-value","label":"Shapley Value"},
-      {"@id":"urn:ngm:class:utility-function","label":"Utility Function"}
-    ],
-    "partOf":[{"@id":"urn:ngm:class:game-theory","label":"Game Theory"}],
-    "requires":[
-      {"@id":"urn:ngm:class:utility-function","label":"Utility Function"},
-      {"@id":"urn:ngm:class:mechanism-design","label":"Mechanism Design"}
-    ],
-    "uses":[{"@id":"urn:ngm:class:shapley-value","label":"Shapley Value"}],
-    "enables":[
-      {"@id":"urn:ngm:class:shap","label":"SHAP"},
-      {"@id":"urn:ngm:class:fairness","label":"Fairness"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:mechanism-design","label":"Mechanism Design"},
-      {"@id":"urn:ngm:class:social-choice-theory","label":"Social Choice Theory"}
-    ],
-    "contrastsWith":[{"@id":"urn:ngm:class:nash-equilibrium","label":"Nash Equilibrium"}],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:explainable-ai","label":"Explainable AI"},
-      {"@id":"urn:ngm:class:economics","label":"Economics"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:game-theory","label":"Game Theory"},
-      {"@id":"urn:ngm:class:social-choice-theory","label":"Social Choice Theory"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cooperative-game-theory",
+  "@type": "Page",
+  "title": "Cooperative Game Theory",
+  "vc:slug": "cooperative-game-theory",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cooperative-game-theory",
+  "@type": "Class",
+  "label": "Cooperative Game Theory",
+  "definition": "Cooperative game theory is the branch of game theory that studies how groups of agents can form coalitions and how the value they jointly create should be divided among members. Rather than focusing on individual strategies, it analyses solution concepts such as the core and the Shapley value that capture fair or stable allocations of collective payoff. Its allocation principles underpin applications from economics and mechanism design to feature attribution in explainable machine learning.",
+  "domain": "ai",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:game-theory",
+      "label": "Game Theory"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:shapley-value",
+        "label": "Shapley Value"
+      },
+      {
+        "@id": "urn:ngm:class:utility-function",
+        "label": "Utility Function"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:utility-function",
+        "label": "Utility Function"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:shapley-value",
+        "label": "Shapley Value"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:nash-equilibrium",
+        "label": "Nash Equilibrium"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Cooperative game theory studies how agents form coalitions and how jointly created value should be divided, using solution concepts such as the [[Shapley Value]] and the core. It is a branch of [[Game Theory]] focused on allocation rather than individual strategy.
 - ### Overview

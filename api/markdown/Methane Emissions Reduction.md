@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Methane Emissions Reduction
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:methane-emissions-reduction", "@type": "Page", "title": "Methane Emissions Reduction", "vc:slug": "methane-emissions-reduction", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:methane-emissions-reduction",
+  "@type": "Page",
+  "title": "Methane Emissions Reduction",
+  "vc:slug": "methane-emissions-reduction",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

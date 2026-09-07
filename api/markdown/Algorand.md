@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Algorand
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,4 +169,3 @@ public: true
   - Algorand supports a dual-layer smart contract model: layer-1 stateless contracts (TEAL logic signatures) run at consensus speed with no additional fees, while stateful contracts (AVM applications) maintain on-chain key-value stores. ARC token standards underpin a rich ecosystem of DeFi protocols, NFT marketplaces, stablecoins (USDC), and central bank digital currency pilots. The Algorand Foundation's governance mechanism allows ALGO holders to vote on protocol parameters while earning rewards.
 
   - As of 2024-2025 Algorand hosts hundreds of dApps, maintains sub-3.9-second block finality at throughput exceeding 6,000 transactions per second in stress tests, and has achieved carbon-negative certification through offsets and low per-transaction energy. Key ecosystem focus areas include real-world asset tokenisation, identity, and cross-border settlement infrastructure, with ongoing research into zero-knowledge proofs, co-chains, and state proofs for interoperability with other networks.
-

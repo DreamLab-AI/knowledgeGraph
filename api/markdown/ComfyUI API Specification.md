@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ComfyUI API Specification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,65 +7,241 @@ public: true
   "title": "ComfyUI API Specification",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:comfy-ui-workflows", "vc:label": "ComfyUI Workflows"},
-    {"@id": "urn:visionflow:linked:comfy-ui-client", "vc:label": "ComfyUI Client"},
-    {"@id": "urn:visionflow:linked:comfy-ui-manager", "vc:label": "ComfyUI Manager"},
-    {"@id": "urn:visionflow:linked:comfy-ui", "vc:label": "ComfyUI"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:content-creation-pipeline", "vc:label": "Content Creation Pipeline"},
-    {"@id": "urn:visionflow:linked:rest-api", "vc:label": "REST API"},
-    {"@id": "urn:visionflow:linked:web-socket-protocol", "vc:label": "WebSocket Protocol"},
-    {"@id": "urn:visionflow:linked:json-serialisation", "vc:label": "JSON Serialisation"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:stable-diffusion", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:visionflow:linked:text-to-image-generation", "vc:label": "Text-to-Image Generation"},
-    {"@id": "urn:visionflow:linked:image-to-image-generation", "vc:label": "Image-to-Image Generation"},
-    {"@id": "urn:visionflow:linked:video-generation", "vc:label": "Video Generation"},
-    {"@id": "urn:visionflow:linked:control-net", "vc:label": "ControlNet"},
-    {"@id": "urn:visionflow:linked:lo-ra", "vc:label": "LoRA"},
-    {"@id": "urn:visionflow:linked:directed-acyclic-graph-execution", "vc:label": "Directed Acyclic Graph Execution"},
-    {"@id": "urn:visionflow:linked:workflow-execution-engine", "vc:label": "Workflow Execution Engine"},
-    {"@id": "urn:visionflow:linked:workflow-json-format", "vc:label": "Workflow JSON Format"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:py-torch", "vc:label": "PyTorch"},
-    {"@id": "urn:visionflow:linked:python-runtime", "vc:label": "Python Runtime"},
-    {"@id": "urn:visionflow:linked:aiohttp", "vc:label": "aiohttp"},
-    {"@id": "urn:visionflow:linked:inference-orchestration-system", "vc:label": "Inference Orchestration System"},
-    {"@id": "urn:visionflow:linked:latent-diffusion-pipeline", "vc:label": "Latent Diffusion Pipeline"},
-    {"@id": "urn:visionflow:linked:ksampler", "vc:label": "KSampler"},
-    {"@id": "urn:visionflow:linked:checkpoint-loader", "vc:label": "CheckpointLoader"},
-    {"@id": "urn:visionflow:linked:vae", "vc:label": "VAE"},
-    {"@id": "urn:visionflow:linked:clip", "vc:label": "CLIP"},
-    {"@id": "urn:visionflow:linked:ip-adapter", "vc:label": "IP-Adapter"},
-    {"@id": "urn:visionflow:linked:sdxl", "vc:label": "SDXL"},
-    {"@id": "urn:visionflow:linked:flux-1", "vc:label": "Flux.1"},
-    {"@id": "urn:visionflow:linked:animate-diff", "vc:label": "AnimateDiff"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:inpainting", "vc:label": "Inpainting"},
-    {"@id": "urn:visionflow:linked:model-checkpoint", "vc:label": "Model Checkpoint"},
-    {"@id": "urn:visionflow:linked:invoke-ai", "vc:label": "InvokeAI"},
-    {"@id": "urn:visionflow:linked:automatic1111-web-ui", "vc:label": "AUTOMATIC1111 WebUI"},
-    {"@id": "urn:visionflow:linked:hugging-face-hub", "vc:label": "Hugging Face Hub"},
-    {"@id": "urn:visionflow:linked:batch-image-processing", "vc:label": "Batch Image Processing"},
-    {"@id": "urn:visionflow:linked:node-based-visual-programming", "vc:label": "Node-Based Visual Programming"},
-    {"@id": "urn:visionflow:linked:latent-tensor", "vc:label": "Latent Tensor"},
-    {"@id": "urn:visionflow:linked:workflow-serialisation", "vc:label": "Workflow Serialisation"},
-    {"@id": "urn:visionflow:linked:comfy-org-git-hub-organisation", "vc:label": "Comfy-Org GitHub Organisation"},
-    {"@id": "urn:visionflow:linked:workflow-node", "vc:label": "Workflow Node"},
-    {"@id": "urn:visionflow:linked:node-link", "vc:label": "Node Link"},
-    {"@id": "urn:visionflow:linked:png-metadata-embedding", "vc:label": "PNG Metadata Embedding"},
-    {"@id": "urn:visionflow:linked:comfyanonymous-2023-comfy-ui", "vc:label": "comfyanonymous 2023 ComfyUI"},
-    {"@id": "urn:visionflow:linked:tech-crunch-2026-comfy-ui-500-m-valuation", "vc:label": "TechCrunch 2026 ComfyUI $500M Valuation"},
-    {"@id": "urn:visionflow:linked:salad-technologies-2024-comfyui-api", "vc:label": "Salad Technologies 2024 comfyui-api"},
-    {"@id": "urn:visionflow:linked:view-comfy-2025-production-api-guide", "vc:label": "ViewComfy 2025 Production API Guide"},
-    {"@id": "urn:visionflow:linked:bento-ml-2025-comfy-pack", "vc:label": "BentoML 2025 comfy-pack"},
-    {"@id": "urn:visionflow:linked:comfy-org-2024-workflow-json-spec", "vc:label": "Comfy-Org 2024 Workflow JSON Spec"},
-    {"@id": "urn:visionflow:linked:comfy-org-2025-workflow-templates", "vc:label": "Comfy-Org 2025 Workflow Templates"},
-    {"@id": "urn:visionflow:linked:run-pod-2024-serverless-comfyui", "vc:label": "RunPod 2024 Serverless ComfyUI"},
-    {"@id": "urn:visionflow:linked:openart-workflow-registry", "vc:label": "OpenArt Workflow Registry"},
-    {"@id": "urn:visionflow:linked:civitai-workflow-sharing", "vc:label": "Civitai Workflow Sharing"},
-    {"@id": "urn:visionflow:linked:comfy-ui-for-fashion-and-brands", "vc:label": "ComfyUI for Fashion and Brands"}
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-ui-workflows",
+      "vc:label": "ComfyUI Workflows"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-ui-client",
+      "vc:label": "ComfyUI Client"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-ui-manager",
+      "vc:label": "ComfyUI Manager"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-creation-pipeline",
+      "vc:label": "Content Creation Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:rest-api",
+      "vc:label": "REST API"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-socket-protocol",
+      "vc:label": "WebSocket Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-serialisation",
+      "vc:label": "JSON Serialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image-generation",
+      "vc:label": "Text-to-Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-to-image-generation",
+      "vc:label": "Image-to-Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-generation",
+      "vc:label": "Video Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-net",
+      "vc:label": "ControlNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:lo-ra",
+      "vc:label": "LoRA"
+    },
+    {
+      "@id": "urn:visionflow:linked:directed-acyclic-graph-execution",
+      "vc:label": "Directed Acyclic Graph Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-execution-engine",
+      "vc:label": "Workflow Execution Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-json-format",
+      "vc:label": "Workflow JSON Format"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:py-torch",
+      "vc:label": "PyTorch"
+    },
+    {
+      "@id": "urn:visionflow:linked:python-runtime",
+      "vc:label": "Python Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:aiohttp",
+      "vc:label": "aiohttp"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-orchestration-system",
+      "vc:label": "Inference Orchestration System"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion-pipeline",
+      "vc:label": "Latent Diffusion Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:ksampler",
+      "vc:label": "KSampler"
+    },
+    {
+      "@id": "urn:visionflow:linked:checkpoint-loader",
+      "vc:label": "CheckpointLoader"
+    },
+    {
+      "@id": "urn:visionflow:linked:vae",
+      "vc:label": "VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:clip",
+      "vc:label": "CLIP"
+    },
+    {
+      "@id": "urn:visionflow:linked:ip-adapter",
+      "vc:label": "IP-Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:sdxl",
+      "vc:label": "SDXL"
+    },
+    {
+      "@id": "urn:visionflow:linked:flux-1",
+      "vc:label": "Flux.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:animate-diff",
+      "vc:label": "AnimateDiff"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:inpainting",
+      "vc:label": "Inpainting"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-checkpoint",
+      "vc:label": "Model Checkpoint"
+    },
+    {
+      "@id": "urn:visionflow:linked:invoke-ai",
+      "vc:label": "InvokeAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic1111-web-ui",
+      "vc:label": "AUTOMATIC1111 WebUI"
+    },
+    {
+      "@id": "urn:visionflow:linked:hugging-face-hub",
+      "vc:label": "Hugging Face Hub"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-image-processing",
+      "vc:label": "Batch Image Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:node-based-visual-programming",
+      "vc:label": "Node-Based Visual Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-tensor",
+      "vc:label": "Latent Tensor"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-serialisation",
+      "vc:label": "Workflow Serialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-org-git-hub-organisation",
+      "vc:label": "Comfy-Org GitHub Organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-node",
+      "vc:label": "Workflow Node"
+    },
+    {
+      "@id": "urn:visionflow:linked:node-link",
+      "vc:label": "Node Link"
+    },
+    {
+      "@id": "urn:visionflow:linked:png-metadata-embedding",
+      "vc:label": "PNG Metadata Embedding"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfyanonymous-2023-comfy-ui",
+      "vc:label": "comfyanonymous 2023 ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:linked:tech-crunch-2026-comfy-ui-500-m-valuation",
+      "vc:label": "TechCrunch 2026 ComfyUI $500M Valuation"
+    },
+    {
+      "@id": "urn:visionflow:linked:salad-technologies-2024-comfyui-api",
+      "vc:label": "Salad Technologies 2024 comfyui-api"
+    },
+    {
+      "@id": "urn:visionflow:linked:view-comfy-2025-production-api-guide",
+      "vc:label": "ViewComfy 2025 Production API Guide"
+    },
+    {
+      "@id": "urn:visionflow:linked:bento-ml-2025-comfy-pack",
+      "vc:label": "BentoML 2025 comfy-pack"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-org-2024-workflow-json-spec",
+      "vc:label": "Comfy-Org 2024 Workflow JSON Spec"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-org-2025-workflow-templates",
+      "vc:label": "Comfy-Org 2025 Workflow Templates"
+    },
+    {
+      "@id": "urn:visionflow:linked:run-pod-2024-serverless-comfyui",
+      "vc:label": "RunPod 2024 Serverless ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:linked:openart-workflow-registry",
+      "vc:label": "OpenArt Workflow Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:civitai-workflow-sharing",
+      "vc:label": "Civitai Workflow Sharing"
+    },
+    {
+      "@id": "urn:visionflow:linked:[private]"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -86,129 +257,135 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"},
-    {"@id": "urn:ngm:class:rest-api", "label": "REST API"}
+    {
+      "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "@id": "urn:ngm:class:rest-api",
+      "label": "REST API"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:prompt-endpoint", "label": "Prompt Endpoint"},
-      {"@id": "urn:ngm:class:web-socket-protocol", "label": "WebSocket Protocol"},
-      {"@id": "urn:ngm:class:queue-management-api", "label": "Queue Management API"},
-      {"@id": "urn:ngm:class:object-info-endpoint", "label": "Object Info Endpoint"}
+      {
+        "@id": "urn:ngm:class:prompt-endpoint",
+        "label": "Prompt Endpoint"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:queue-management-api",
+        "label": "Queue Management API"
+      },
+      {
+        "@id": "urn:ngm:class:object-info-endpoint",
+        "label": "Object Info Endpoint"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client", "label": "ComfyUI Client"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-serialisation", "label": "JSON Serialisation"},
-      {"@id": "urn:ngm:class:aiohttp", "label": "aiohttp"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client",
+        "label": "ComfyUI Client"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-serialisation",
+        "label": "JSON Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:aiohttp",
+        "label": "aiohttp"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-creation-pipeline", "label": "Content Creation Pipeline"},
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-for-fashion-and-brands", "label": "ComfyUI for Fashion and Brands"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:batch-image-processing", "label": "Batch Image Processing"},
-      {"@id": "urn:ngm:class:inference-orchestration-system", "label": "Inference Orchestration System"}
+      {
+        "@id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:batch-image-processing",
+        "label": "Batch Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:inference-orchestration-system",
+        "label": "Inference Orchestration System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:comfy-ui", "label": "ComfyUI"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:python-runtime", "label": "Python Runtime"}
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:python-runtime",
+        "label": "Python Runtime"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:directed-acyclic-graph-execution", "label": "Directed Acyclic Graph Execution"},
-      {"@id": "urn:ngm:class:workflow-json-format", "label": "Workflow JSON Format"}
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph-execution",
+        "label": "Directed Acyclic Graph Execution"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-json-format",
+        "label": "Workflow JSON Format"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager", "label": "ComfyUI Manager"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:invoke-ai", "label": "InvokeAI"},
-      {"@id": "urn:ngm:class:automatic-1111-web-ui", "label": "AUTOMATIC1111 WebUI"}
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
+        "label": "ComfyUI Manager"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:invoke-ai",
+        "label": "InvokeAI"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-1111-web-ui",
+        "label": "AUTOMATIC1111 WebUI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:invoke-ai", "label": "InvokeAI"},
-      {"@id": "urn:ngm:class:automatic-1111-web-ui", "label": "AUTOMATIC1111 WebUI"}
+      {
+        "@id": "urn:ngm:class:invoke-ai",
+        "label": "InvokeAI"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-1111-web-ui",
+        "label": "AUTOMATIC1111 WebUI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:comfy-org-git-hub-organisation", "label": "Comfy-Org GitHub Organisation"}
+      {
+        "@id": "urn:ngm:class:comfy-org-git-hub-organisation",
+        "label": "Comfy-Org GitHub Organisation"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:comfy-ui-api-specification:e4a9b2c1d37f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:comfy-ui-api-specification"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "StubLink"},
-    {"raw": "[[ComfyUI Workflows]]", "resolved": "urn:visionflow:linked:comfy-ui-workflows", "kind": "StubLink"},
-    {"raw": "[[ComfyUI Client]]", "resolved": "urn:visionflow:linked:comfy-ui-client", "kind": "StubLink"},
-    {"raw": "[[ComfyUI Manager]]", "resolved": "urn:visionflow:linked:comfy-ui-manager", "kind": "StubLink"},
-    {"raw": "[[ComfyUI]]", "resolved": "urn:visionflow:linked:comfy-ui", "kind": "StubLink"},
-    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "StubLink"},
-    {"raw": "[[Content Creation Pipeline]]", "resolved": "urn:visionflow:linked:content-creation-pipeline", "kind": "StubLink"},
-    {"raw": "[[REST API]]", "resolved": "urn:visionflow:linked:rest-api", "kind": "StubLink"},
-    {"raw": "[[WebSocket Protocol]]", "resolved": "urn:visionflow:linked:web-socket-protocol", "kind": "StubLink"},
-    {"raw": "[[JSON Serialisation]]", "resolved": "urn:visionflow:linked:json-serialisation", "kind": "StubLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "StubLink"},
-    {"raw": "[[Stable Diffusion]]", "resolved": "urn:visionflow:linked:stable-diffusion", "kind": "StubLink"},
-    {"raw": "[[Text-to-Image Generation]]", "resolved": "urn:visionflow:linked:text-to-image-generation", "kind": "StubLink"},
-    {"raw": "[[Image-to-Image Generation]]", "resolved": "urn:visionflow:linked:image-to-image-generation", "kind": "StubLink"},
-    {"raw": "[[Video Generation]]", "resolved": "urn:visionflow:linked:video-generation", "kind": "StubLink"},
-    {"raw": "[[ControlNet]]", "resolved": "urn:visionflow:linked:control-net", "kind": "StubLink"},
-    {"raw": "[[LoRA]]", "resolved": "urn:visionflow:linked:lo-ra", "kind": "StubLink"},
-    {"raw": "[[Directed Acyclic Graph Execution]]", "resolved": "urn:visionflow:linked:directed-acyclic-graph-execution", "kind": "StubLink"},
-    {"raw": "[[Workflow Execution Engine]]", "resolved": "urn:visionflow:linked:workflow-execution-engine", "kind": "StubLink"},
-    {"raw": "[[Workflow JSON Format]]", "resolved": "urn:visionflow:linked:workflow-json-format", "kind": "StubLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "StubLink"},
-    {"raw": "[[PyTorch]]", "resolved": "urn:visionflow:linked:py-torch", "kind": "StubLink"},
-    {"raw": "[[Python Runtime]]", "resolved": "urn:visionflow:linked:python-runtime", "kind": "StubLink"},
-    {"raw": "[[aiohttp]]", "resolved": "urn:visionflow:linked:aiohttp", "kind": "StubLink"},
-    {"raw": "[[Inference Orchestration System]]", "resolved": "urn:visionflow:linked:inference-orchestration-system", "kind": "StubLink"},
-    {"raw": "[[Latent Diffusion Pipeline]]", "resolved": "urn:visionflow:linked:latent-diffusion-pipeline", "kind": "StubLink"},
-    {"raw": "[[KSampler]]", "resolved": "urn:visionflow:linked:ksampler", "kind": "StubLink"},
-    {"raw": "[[CheckpointLoader]]", "resolved": "urn:visionflow:linked:checkpoint-loader", "kind": "StubLink"},
-    {"raw": "[[VAE]]", "resolved": "urn:visionflow:linked:vae", "kind": "StubLink"},
-    {"raw": "[[CLIP]]", "resolved": "urn:visionflow:linked:clip", "kind": "StubLink"},
-    {"raw": "[[IP-Adapter]]", "resolved": "urn:visionflow:linked:ip-adapter", "kind": "StubLink"},
-    {"raw": "[[SDXL]]", "resolved": "urn:visionflow:linked:sdxl", "kind": "StubLink"},
-    {"raw": "[[Flux.1]]", "resolved": "urn:visionflow:linked:flux-1", "kind": "StubLink"},
-    {"raw": "[[AnimateDiff]]", "resolved": "urn:visionflow:linked:animate-diff", "kind": "StubLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:visionflow:linked:image-generation", "kind": "StubLink"},
-    {"raw": "[[Inpainting]]", "resolved": "urn:visionflow:linked:inpainting", "kind": "StubLink"},
-    {"raw": "[[Model Checkpoint]]", "resolved": "urn:visionflow:linked:model-checkpoint", "kind": "StubLink"},
-    {"raw": "[[InvokeAI]]", "resolved": "urn:visionflow:linked:invoke-ai", "kind": "StubLink"},
-    {"raw": "[[AUTOMATIC1111 WebUI]]", "resolved": "urn:visionflow:linked:automatic1111-web-ui", "kind": "StubLink"},
-    {"raw": "[[Hugging Face Hub]]", "resolved": "urn:visionflow:linked:hugging-face-hub", "kind": "StubLink"},
-    {"raw": "[[Batch Image Processing]]", "resolved": "urn:visionflow:linked:batch-image-processing", "kind": "StubLink"},
-    {"raw": "[[Node-Based Visual Programming]]", "resolved": "urn:visionflow:linked:node-based-visual-programming", "kind": "StubLink"},
-    {"raw": "[[Latent Tensor]]", "resolved": "urn:visionflow:linked:latent-tensor", "kind": "StubLink"},
-    {"raw": "[[Workflow Serialisation]]", "resolved": "urn:visionflow:linked:workflow-serialisation", "kind": "StubLink"},
-    {"raw": "[[Comfy-Org GitHub Organisation]]", "resolved": "urn:visionflow:linked:comfy-org-git-hub-organisation", "kind": "StubLink"},
-    {"raw": "[[Workflow Node]]", "resolved": "urn:visionflow:linked:workflow-node", "kind": "StubLink"},
-    {"raw": "[[Node Link]]", "resolved": "urn:visionflow:linked:node-link", "kind": "StubLink"},
-    {"raw": "[[PNG Metadata Embedding]]", "resolved": "urn:visionflow:linked:png-metadata-embedding", "kind": "StubLink"},
-    {"raw": "[[comfyanonymous 2023 ComfyUI]]", "resolved": "urn:visionflow:linked:comfyanonymous-2023-comfy-ui", "kind": "StubLink"},
-    {"raw": "[[TechCrunch 2026 ComfyUI $500M Valuation]]", "resolved": "urn:visionflow:linked:tech-crunch-2026-comfy-ui-500-m-valuation", "kind": "StubLink"},
-    {"raw": "[[Salad Technologies 2024 comfyui-api]]", "resolved": "urn:visionflow:linked:salad-technologies-2024-comfyui-api", "kind": "StubLink"},
-    {"raw": "[[ViewComfy 2025 Production API Guide]]", "resolved": "urn:visionflow:linked:view-comfy-2025-production-api-guide", "kind": "StubLink"},
-    {"raw": "[[BentoML 2025 comfy-pack]]", "resolved": "urn:visionflow:linked:bento-ml-2025-comfy-pack", "kind": "StubLink"},
-    {"raw": "[[Comfy-Org 2024 Workflow JSON Spec]]", "resolved": "urn:visionflow:linked:comfy-org-2024-workflow-json-spec", "kind": "StubLink"},
-    {"raw": "[[RunPod 2024 Serverless ComfyUI]]", "resolved": "urn:visionflow:linked:run-pod-2024-serverless-comfyui", "kind": "StubLink"},
-    {"raw": "[[OpenArt Workflow Registry]]", "resolved": "urn:visionflow:linked:openart-workflow-registry", "kind": "StubLink"},
-    {"raw": "[[Civitai Workflow Sharing]]", "resolved": "urn:visionflow:linked:civitai-workflow-sharing", "kind": "StubLink"},
-    {"raw": "[[ComfyUI for Fashion and Brands]]", "resolved": "urn:visionflow:linked:comfy-ui-for-fashion-and-brands", "kind": "StubLink"}
-  ]
 }
 ```
 
@@ -226,7 +403,7 @@ public: true
   - is-subclass-of:: [[ComfyUI Workflows]], [[REST API]], [[Workflow Automation]], [[Inference Orchestration System]]
   - has-part:: [[WebSocket Protocol]], [[Workflow JSON Format]], [[Workflow Node]], [[Node Link]], [[Directed Acyclic Graph Execution]], [[Queue Management API]], [[History Endpoint]], [[File Upload Endpoint]], [[Object Info Endpoint]]
   - requires:: [[ComfyUI]], [[GPU Compute]], [[Python Runtime]], [[aiohttp]], [[PyTorch]], [[Diffusion Model]], [[Model Checkpoint]]
-  - enables:: [[Content Creation Pipeline]], [[Agentic Workflow]], [[Batch Image Processing]], [[Inference Orchestration System]], [[ComfyUI for Fashion and Brands]], [[Image Generation]], [[Text-to-Image Generation]], [[Image-to-Image Generation]], [[Video Generation]], [[Inpainting]], [[Digital Asset Workflow]], [[Workflow Serialisation]]
+  - enables:: [[Content Creation Pipeline]], [[Agentic Workflow]], [[Batch Image Processing]], [[Inference Orchestration System]], [[[private]]], [[Image Generation]], [[Text-to-Image Generation]], [[Image-to-Image Generation]], [[Video Generation]], [[Inpainting]], [[Digital Asset Workflow]], [[Workflow Serialisation]]
   - implements:: [[Directed Acyclic Graph Execution]], [[Workflow JSON Format]], [[Workflow Serialisation]], [[REST API]], [[WebSocket Protocol]], [[Node-Based Visual Programming]]
   - depends-on:: [[ComfyUI]], [[Diffusion Model]], [[Stable Diffusion]], [[Model Checkpoint]], [[Latent Diffusion Pipeline]]
   - supports:: [[ControlNet]], [[LoRA]], [[IP-Adapter]], [[SDXL]], [[Flux.1]], [[AnimateDiff]], [[VAE]], [[CLIP]], [[KSampler]], [[CheckpointLoader]], [[Latent Diffusion Pipeline]], [[Latent Tensor]], [[Generative AI]]
@@ -334,7 +511,7 @@ public: true
     ```
 
   - ## About
-    The ComfyUI API Specification emerged organically from the [[ComfyUI]] project, which [[comfyanonymous 2023 ComfyUI]] first published in January 2023 as an open-source node-graph interface for [[Stable Diffusion]] inference. Unlike the simple REST APIs offered by [[AUTOMATIC1111 WebUI]] or the more opinionated pipeline model of [[InvokeAI]], [[ComfyUI]] exposed the entire computation graph — [[CheckpointLoader]], [[CLIP]] text encoder, [[KSampler]], [[VAE]] decoder, post-processors — as a [[JSON Serialisation|JSON-serialisable]] [[Directed Acyclic Graph Execution|DAG]]. Developers discovered that the same graph format submitted through the browser canvas could be sent directly to the `/prompt` HTTP endpoint, establishing the foundation of the specification. The dual-protocol design — [[REST API]] for discrete request-response operations and [[WebSocket Protocol]] for streaming execution events — has become the defining architectural characteristic, enabling everything from simple synchronous single-image generation to long-running [[Video Generation]] pipelines with mid-execution preview frames.
+    The ComfyUI API Specification emerged organically from the [[ComfyUI]] project, which [[comfyanonymous 2023 ComfyUI]] first published in January 2023 as an open-source node-graph interface for [[Stable Diffusion]] inference. Unlike the simple REST APIs offered by [[AUTOMATIC1111 WebUI]] or the more opinionated pipeline model of [[InvokeAI]], [[ComfyUI]] exposed the entire computation graph — [[CheckpointLoader]], [[CLIP]] text encoder, [[KSampler]], [[VAE]] decoder, post-processors — as a [[JSON Serialisation|JSON-serialisable]] [[Directed Acyclic Graph Execution|DAG]]. Developers discovered that the same graph format submitted through the browser canvas [private] be sent directly to the `/prompt` HTTP endpoint, establishing the foundation of the specification. The dual-protocol design — [[REST API]] for discrete request-response operations and [[WebSocket Protocol]] for streaming execution events — has become the defining architectural characteristic, enabling everything from simple synchronous single-image generation to long-running [[Video Generation]] pipelines with mid-execution preview frames.
 
     The specification's influence extends well beyond its origin as an implementation detail. By 2025, the [[Comfy-Org GitHub Organisation]] had formalised the [[Comfy-Org 2024 Workflow JSON Spec]], and the API surface had expanded to roughly twenty native endpoints organised into four categories: workflow execution (`/prompt`, `/queue`, `/history`, `/interrupt`), file operations (`/upload/image`, `/upload/mask`, `/view`), system introspection (`/object_info`, `/system_stats`, `/embeddings`, `/extensions`, `/models/{type}`), and resource management (`/free`). The `/object_info` endpoint in particular functions as a machine-readable registry of all installed [[Workflow Node]] types with their typed input schemas, enabling dynamic client construction and powering both the [[ComfyUI Manager]] missing-node detection system and third-party tools that generate workflow JSON programmatically. Enterprise adoption accelerated dramatically in 2025–2026 following the addition of authentication tokens — [[ComfyUI]] API keys issued through the `comfy.org` account system — which addressed the default unauthenticated exposure that made early deployments unsuitable for multi-tenant cloud environments.
 
@@ -426,7 +603,7 @@ public: true
 
     Third, workflow versioning: the [[Comfy-Org 2024 Workflow JSON Spec]] is expected to gain a formal semver scheme and backwards-compatibility guarantees, enabling CI/CD pipelines to pin workflow format versions independently of node package versions. The current practice of treating workflow JSON as informally versioned is sustainable for community use but creates enterprise deployment risk when core ComfyUI or node updates silently change node input schemas. Formal versioning and schema validation against the `/object_info` catalogue will fill this gap.
 
-    Fourth, multi-node federation: cloud orchestrators are already prototyping the routing of individual [[Directed Acyclic Graph Execution|DAG]] nodes across heterogeneous GPU pools — [[CLIP]] text encoding on CPU-accessible instances, high-VRAM sampling on A100 or Blackwell B200 nodes, upscaling on cost-optimised lower-VRAM instances. This distributed execution model requires the API to support execution planning hints: node-level GPU memory requirements, expected execution time, and output tensor shapes are all discoverable from `/object_info` schemas and could inform scheduling decisions. BentoML's distributed execution framework and the emerging Comfy-Org Blackwell GPU support are the current leading indicators of this trajectory.
+    Fourth, multi-node federation: cloud orchestrators are already prototyping the routing of individual [[Directed Acyclic Graph Execution|DAG]] nodes across heterogeneous GPU pools — [[CLIP]] text encoding on CPU-accessible instances, high-VRAM sampling on A100 or Blackwell B200 nodes, upscaling on cost-optimised lower-VRAM instances. This distributed execution model requires the API to support execution planning hints: node-level GPU memory requirements, expected execution time, and output tensor shapes are all discoverable from `/object_info` schemas and [private] inform scheduling decisions. BentoML's distributed execution framework and the emerging Comfy-Org Blackwell GPU support are the current leading indicators of this trajectory.
 
     Fifth, agentic integration standards: as LLM orchestration frameworks standardise tool-calling schemas — OpenAI function calling, Anthropic tool use, MCP (Model Context Protocol) — a formally typed ComfyUI tool definition will emerge, allowing [[Agentic Workflow]] systems to call ComfyUI via the prompt API as a first-class tool without bespoke wrapper code for each framework. The [[GenAgent]] research (2024) demonstrated the feasibility of LLM-driven workflow construction using the current API; standardised tool interfaces will democratise this capability to any agent framework developer. The Comfy-Org 2025 API key system for partner nodes is an early step toward this model, enabling LLM-mediated access to cloud-hosted model inference through ComfyUI Partner Nodes.
 

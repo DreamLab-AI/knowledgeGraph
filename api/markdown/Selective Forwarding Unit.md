@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Selective Forwarding Unit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

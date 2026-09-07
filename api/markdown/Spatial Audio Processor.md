@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Audio Processor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-audio-processor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7651aed8fcc8d20a70f1171158c1edd5022537b61fe8390179319e2aa7e7fa7d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Sound Rendering]]",
-      "resolved": "urn:visionflow:linked:3-d-sound-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Audio Processing System]]",
-      "resolved": "urn:visionflow:owl:class:audio-processing-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hardware or software component that renders three-dimensional sound using Head-Related Transfer Functions (HRTFs) and binaural synthesis, processing audio signals to simulate directional sound sources at specific positions in virtual space with real-time head tracking integration for immersive audio experiences.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Smart City
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,52 +181,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:smart-city:fc0f9b949ad9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3f7563f310921a4ad216fe5ed5dd4e051bb69f9fc624629ce7337cef24e4e950"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Internet of Things]]",
-      "resolved": "urn:visionflow:linked:internet-of-things",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:linked:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:linked:edge-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Situational Awareness]]",
-      "resolved": "urn:visionflow:linked:situational-awareness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Domain]]",
-      "resolved": "urn:visionflow:linked:spatial-computing-domain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A smart city uses networked sensors, data platforms and analytics to manage urban systems such as transport, energy and public services, often paired with spatial digital twins.

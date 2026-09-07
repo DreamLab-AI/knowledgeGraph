@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Double Materiality
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -93,7 +88,7 @@ public: true
 
   ## Definition
 
-  **Double materiality** extends the accounting concept of materiality — information is material if omitting or misstating it could influence users' decisions — into two directions at once. **Financial materiality** (the "outside-in" view) asks how sustainability matters affect the undertaking: climate transition risk to asset values, water scarcity to operations, carbon pricing to margins. **Impact materiality** (the "inside-out" view) asks how the undertaking affects the world: emissions, biodiversity loss, labour conditions in the supply chain. A topic is reportable if it is material from *either* perspective; the two often interact, as an impact (emissions) can mature into a financial risk (regulation, litigation, stranded assets).
+  **Double materiality** extends the accounting concept of materiality — information is material if omitting or misstating it [private] influence users' decisions — into two directions at once. **Financial materiality** (the "outside-in" view) asks how sustainability matters affect the undertaking: climate transition risk to asset values, water scarcity to operations, carbon pricing to margins. **Impact materiality** (the "inside-out" view) asks how the undertaking affects the world: emissions, biodiversity loss, labour conditions in the supply chain. A topic is reportable if it is material from *either* perspective; the two often interact, as an impact (emissions) can mature into a financial risk (regulation, litigation, stranded assets).
 
   The concept was coined in the European Commission's 2019 guidelines on climate reporting and became legally binding through the [[Corporate Sustainability Reporting Directive]] (CSRD): the European Sustainability Reporting Standards (ESRS) require every in-scope company to perform a double [[Materiality Assessment]] as the gateway exercise that determines which of the topical standards (E1 climate through G1 business conduct) it must report against. ESRS 1 specifies the process — mapping the value chain, identifying actual and potential impacts, risks and opportunities (IROs), scoring them for severity, scale, irremediability, and likelihood, and engaging affected stakeholders — with the assessment itself subject to assurance.
 

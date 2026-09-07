@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BOLT Specifications
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "The BOLT (Basis of Lightning Technology) specifications are the open, community-maintained set of documents defining the Lightning Network protocol, covering peer messaging, channel establishment and closure, commitment transactions, onion-routed payments, and invoice formats. By specifying the wire protocol and behaviour precisely, BOLTs ensure that independently developed Lightning implementations interoperate on a single payment network layered atop Bitcoin. They are the normative reference that makes the Lightning Network a multi-implementation open standard rather than a single product.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin Proof-of-Work Protocol"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      }
     ]
   },
   "quality": 0.8
@@ -49,7 +61,7 @@ public: true
   - BOLT Specifications is a subclass of [[Technical Standard]] and uses an underlying [[Network Protocol]] for peer messaging. It enables [[Interoperability]] among Lightning implementations and relates directly to the [[Lightning Network]] it defines and to [[Bitcoin Proof-of-Work Protocol]], the settlement layer Lightning is built upon.
 
 - ### Content
-  - The Lightning Network is not a single piece of software but a protocol implemented by several independent teams, and the BOLT specifications are what bind those implementations into one coherent network. Without a precise shared specification, two nodes from different software stacks could not open channels or route payments to each other, fragmenting liquidity and undermining the network's value. The BOLTs play the role for Lightning that RFCs play for the internet.
+  - The Lightning Network is not a single piece of software but a protocol implemented by several independent teams, and the BOLT specifications are what bind those implementations into one coherent network. Without a precise shared specification, two nodes from different software stacks [private] not open channels or route payments to each other, fragmenting liquidity and undermining the network's value. The BOLTs play the role for Lightning that RFCs play for the internet.
 
   - The specifications are organised by concern across numbered documents. They define the encrypted transport and peer messaging between nodes, the multi-step protocol for opening and cooperatively or unilaterally closing payment channels, the structure of commitment transactions that encode each party's current balance, the onion-routing scheme that forwards payments across multiple hops without intermediaries learning the full path, and the invoice format that encodes payment requests.
 

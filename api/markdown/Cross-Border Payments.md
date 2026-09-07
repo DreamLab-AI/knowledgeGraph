@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Cross Border Payments
----
-
-# cross-border payments
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

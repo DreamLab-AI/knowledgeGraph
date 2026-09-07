@@ -1,8 +1,3 @@
----
-public: true
----
-
-# autonomous driving
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,36 +7,126 @@ public: true
   "title": "autonomous driving",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:owl:class:sensor-fusion", "vc:label": "Sensor Fusion"},
-    {"@id": "urn:visionflow:owl:class:lidar", "vc:label": "Lidar"},
-    {"@id": "urn:visionflow:owl:class:simultaneous-localisation-and-mapping", "vc:label": "Simultaneous Localisation and Mapping"},
-    {"@id": "urn:visionflow:owl:class:object-detection", "vc:label": "Object Detection"},
-    {"@id": "urn:visionflow:owl:class:path-planning", "vc:label": "Path Planning"},
-    {"@id": "urn:visionflow:owl:class:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:owl:class:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:owl:class:model-predictive-control", "vc:label": "Model Predictive Control"},
-    {"@id": "urn:visionflow:owl:class:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:owl:class:autonomous-vehicle", "vc:label": "Autonomous Vehicle"},
-    {"@id": "urn:visionflow:owl:class:robotaxi", "vc:label": "Robotaxi"},
-    {"@id": "urn:visionflow:owl:class:last-mile-delivery", "vc:label": "Last-Mile Delivery"},
-    {"@id": "urn:visionflow:owl:class:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:visionflow:owl:class:v2x-communication", "vc:label": "V2X Communication"},
-    {"@id": "urn:visionflow:owl:class:gnss", "vc:label": "GNSS"},
-    {"@id": "urn:visionflow:owl:class:sae-j-3016", "vc:label": "SAE J3016"},
-    {"@id": "urn:visionflow:owl:class:iso-26262", "vc:label": "ISO 26262"},
-    {"@id": "urn:visionflow:owl:class:advanced-driver-assistance-systems", "vc:label": "Advanced Driver Assistance Systems"},
-    {"@id": "urn:visionflow:owl:class:teleoperation", "vc:label": "Teleoperation"},
-    {"@id": "urn:visionflow:owl:class:smart-city-infrastructure", "vc:label": "Smart City Infrastructure"},
-    {"@id": "urn:visionflow:owl:class:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:owl:class:5-g-network", "vc:label": "5G Networks"},
-    {"@id": "urn:visionflow:owl:class:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:owl:class:motion-planning", "vc:label": "Motion Planning"},
-    {"@id": "urn:visionflow:owl:class:safety-critical-systems", "vc:label": "Safety-Critical Systems"},
-    {"@id": "urn:visionflow:owl:class:functional-safety", "vc:label": "Functional Safety"},
-    {"@id": "urn:visionflow:owl:class:autonomous-driving-perception", "vc:label": "Autonomous Driving Perception"},
-    {"@id": "urn:visionflow:owl:class:hd-maps", "vc:label": "HD Maps"}
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lidar",
+      "vc:label": "Lidar"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:simultaneous-localisation-and-mapping",
+      "vc:label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:object-detection",
+      "vc:label": "Object Detection"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:path-planning",
+      "vc:label": "Path Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-predictive-control",
+      "vc:label": "Model Predictive Control"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-vehicle",
+      "vc:label": "Autonomous Vehicle"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotaxi",
+      "vc:label": "Robotaxi"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:last-mile-delivery",
+      "vc:label": "Last-Mile Delivery"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:v2x-communication",
+      "vc:label": "V2X Communication"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gnss",
+      "vc:label": "GNSS"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sae-j-3016",
+      "vc:label": "SAE J3016"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:iso-26262",
+      "vc:label": "ISO 26262"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:advanced-driver-assistance-systems",
+      "vc:label": "Advanced Driver Assistance Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:teleoperation",
+      "vc:label": "Teleoperation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-city-infrastructure",
+      "vc:label": "Smart City Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:5-g-network",
+      "vc:label": "5G Networks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:safety-critical-systems",
+      "vc:label": "Safety-Critical Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:functional-safety",
+      "vc:label": "Functional Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-driving-perception",
+      "vc:label": "Autonomous Driving Perception"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hd-maps",
+      "vc:label": "HD Maps"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -71,58 +156,163 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:hd-maps", "label": "HD Maps"},
-      {"@id": "urn:ngm:class:autonomous-driving-perception", "label": "Autonomous Driving Perception"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:hd-maps",
+        "label": "HD Maps"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving-perception",
+        "label": "Autonomous Driving Perception"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:robotaxi", "label": "Robotaxi"},
-      {"@id": "urn:ngm:class:last-mile-delivery", "label": "Last-Mile Delivery"},
-      {"@id": "urn:ngm:class:smart-city-infrastructure", "label": "Smart City Infrastructure"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:robotaxi",
+        "label": "Robotaxi"
+      },
+      {
+        "@id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:v2x-communication", "label": "V2X Communication"},
-      {"@id": "urn:ngm:class:gnss", "label": "GNSS"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:v2x-communication",
+        "label": "V2X Communication"
+      },
+      {
+        "@id": "urn:ngm:class:gnss",
+        "label": "GNSS"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:sae-j-3016", "label": "SAE J3016"},
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"}
+      {
+        "@id": "urn:ngm:class:sae-j-3016",
+        "label": "SAE J3016"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:advanced-driver-assistance-system", "label": "Advanced Driver Assistance Systems"},
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"}
+      {
+        "@id": "urn:ngm:class:advanced-driver-assistance-system",
+        "label": "Advanced Driver Assistance Systems"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-city-infrastructure", "label": "Smart City Infrastructure"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:5-g-network", "label": "5G Networks"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:5-g-network",
+        "label": "5G Networks"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:safety-critical-systems", "label": "Safety-Critical Systems"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:self-driving-vehicle-technology", "label": "Self-Driving Vehicle Technology"},
-    {"@id": "urn:ngm:class:driverless-driving", "label": "Driverless Driving"}
+    {
+      "@id": "urn:ngm:class:self-driving-vehicle-technology",
+      "label": "Self-Driving Vehicle Technology"
+    },
+    {
+      "@id": "urn:ngm:class:driverless-driving",
+      "label": "Driverless Driving"
+    }
   ],
   "quality": 0.88,
   "provenance": {
@@ -238,7 +428,7 @@ public: true
 
   Autonomous driving — the aspiration of building a machine that can navigate public roads without human intervention — has been a defining challenge of applied [[Artificial Intelligence]] and [[Robotics]] for four decades. Early academic roots trace to the DARPA Autonomous Land Vehicle programme of the mid-1980s, which produced several ground-breaking demonstrations of camera-guided vehicle navigation at low speeds on structured roads using rule-based [[Computer Vision]] and expert systems. The pivotal ALVINN system (Pomerleau, Carnegie Mellon University, 1989) used a shallow [[Neural Network]] trained end-to-end on human-driving data to predict steering angles from camera images — a paradigm that would be rediscovered and scaled dramatically three decades later by Tesla's FSD v12 and Wayve's embodied AI. These early systems were fragile: ALVINN transferred poorly to novel road geometries, had no [[Object Detection]] capability beyond learned steering, and required continuous human monitoring. Nevertheless, ALVINN established the theoretical template of learned sensorimotor policies from [[Training Data]] that underpins every modern end-to-end [[Autonomous Driving]] system.
 
-  The DARPA Grand Challenge (2004–2005) and Urban Challenge (2007) catalysed a step-change in AV capability by providing competitive milestones and forcing teams to integrate multiple sensing modalities with principled probabilistic representations. Stanley (Stanford, Thrun et al., 2005) combined stereo cameras with five planar LIDAR units, GPS, and a learned terrain classifier trained on [[Training Data]] from human-driven test laps to navigate 211 km of Mojave Desert terrain — demonstrating for the first time that a robotic vehicle could complete a long-range navigation task in an uncontrolled natural environment. Boss (CMU, Urmson et al., 2007) achieved L4-equivalent performance in the Urban Challenge's simulated city, handling traffic, obeying stop signs, merging, and avoiding both static and dynamic obstacles — demonstrating that the full [[Autonomous Driving]] stack from [[Autonomous Driving Perception]] to [[Motion Planning]] to actuation could be integrated at road speed. These competitions established the modular sense-plan-act architecture — with distinct [[Autonomous Driving Perception]], localisation ([[Simultaneous Localisation and Mapping]]), [[Behaviour Prediction]], [[Motion Planning]], and [[Vehicle Control]] subsystems — that became the industrial standard and underpinned the founding of Waymo (Google Self-Driving Car Project, 2009), Uber Advanced Technologies Group, Cruise, Mobileye, nuTonomy, and dozens of startups.
+  The DARPA Grand Challenge (2004–2005) and Urban Challenge (2007) catalysed a step-change in AV capability by providing competitive milestones and forcing teams to integrate multiple sensing modalities with principled probabilistic representations. Stanley (Stanford, Thrun et al., 2005) combined stereo cameras with five planar LIDAR units, GPS, and a learned terrain classifier trained on [[Training Data]] from human-driven test laps to navigate 211 km of Mojave Desert terrain — demonstrating for the first time that a robotic vehicle [private] complete a long-range navigation task in an uncontrolled natural environment. Boss (CMU, Urmson et al., 2007) achieved L4-equivalent performance in the Urban Challenge's simulated city, handling traffic, obeying stop signs, merging, and avoiding both static and dynamic obstacles — demonstrating that the full [[Autonomous Driving]] stack from [[Autonomous Driving Perception]] to [[Motion Planning]] to actuation [private] be integrated at road speed. These competitions established the modular sense-plan-act architecture — with distinct [[Autonomous Driving Perception]], localisation ([[Simultaneous Localisation and Mapping]]), [[Behaviour Prediction]], [[Motion Planning]], and [[Vehicle Control]] subsystems — that became the industrial standard and underpinned the founding of Waymo (Google Self-Driving Car Project, 2009), Uber Advanced Technologies Group, Cruise, Mobileye, nuTonomy, and dozens of startups.
 
   The [[Deep Learning]] era transformed AV development after 2012. Deep [[Convolutional Neural Network]] architectures supplanted handcrafted feature engineering for [[Autonomous Driving Perception]], and from 2017 onward large-scale annotated driving datasets (KITTI, nuScenes, Waymo Open Dataset, Argoverse) provided [[Training Data]] at the scale required for safe real-world deployment. The [[Attention Mechanism]] and [[Transformer Architecture]] enabled multi-modal [[Sensor Fusion]] architectures that jointly process camera and [[Lidar]] features in a unified Bird's Eye View space, dramatically improving 3D [[Object Detection]], lane-level [[HD Maps]] prediction, and trajectory [[Behaviour Prediction]] accuracy. [[Reinforcement Learning]] from demonstrations proved effective for both [[Motion Planning]] policy learning and for fine-tuning end-to-end networks beyond the performance achievable by pure imitation of human data.
 
@@ -353,7 +543,7 @@ public: true
 
   ## Academic Context
 
-  The intellectual lineage of [[Autonomous Driving]] spans multiple decades and disciplines, from classical [[Robotics]] and probabilistic inference to modern [[Deep Learning]] and [[Reinforcement Learning]] from demonstrations. The DARPA-funded Carnegie Mellon Navlab programme (1984–1996) produced the first [[Neural Network]] autonomous vehicle controllers (ALVINN, 1989) and established the sense-plan-act architecture that remained dominant for 35 years. The Stanford Robot vehicle STANLEY (2005 DARPA Grand Challenge winner, Thrun et al.) demonstrated that probabilistic [[Robotics]] — combining [[Bayesian Inference]] filtering, occupancy grids, and Gaussian process regression for terrain classification — could achieve reliable outdoor navigation over 211 km in a single autonomous run.
+  The intellectual lineage of [[Autonomous Driving]] spans multiple decades and disciplines, from classical [[Robotics]] and probabilistic inference to modern [[Deep Learning]] and [[Reinforcement Learning]] from demonstrations. The DARPA-funded Carnegie Mellon Navlab programme (1984–1996) produced the first [[Neural Network]] autonomous vehicle controllers (ALVINN, 1989) and established the sense-plan-act architecture that remained dominant for 35 years. The Stanford Robot vehicle STANLEY (2005 DARPA Grand Challenge winner, Thrun et al.) demonstrated that probabilistic [[Robotics]] — combining [[Bayesian Inference]] filtering, occupancy grids, and Gaussian process regression for terrain classification — [private] achieve reliable outdoor navigation over 211 km in a single autonomous run.
 
   The modern [[Deep Learning]] era of AV research was catalysed by the intersection of large annotated datasets and [[GPU Compute]]-accelerated training. The KITTI dataset (Geiger et al., Karlsruhe Institute of Technology, 2012) became the first standardised benchmark for AV [[Autonomous Driving Perception]] tasks — stereo [[Depth Estimation]], optical flow, [[Object Detection]], [[Object Tracking]], and [[Semantic Segmentation]] — enabling systematic comparison across research groups and driving rapid progress. AlexNet's ImageNet classification breakthrough (Krizhevsky, Sutskever, Hinton, 2012) immediately inspired applications of [[Convolutional Neural Network]] architectures to pedestrian [[Object Detection]] (Sermanet et al., 2013), lane detection, and traffic sign recognition. By 2016–2017, [[Deep Learning]]-based [[Autonomous Driving Perception]] was demonstrably superhuman in standard benchmark scenarios, shifting research focus from "can we detect?" to "how do we detect robustly in the long tail?" and "how do we scale [[Autonomous Driving]] to full cities?".
 

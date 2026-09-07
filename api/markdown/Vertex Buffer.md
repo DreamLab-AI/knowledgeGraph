@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Vertex Buffer
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -115,13 +109,13 @@ public: true
   - Related core concepts: [[Rendering Pipeline]] [[GPU]] [[Vertex Shader]] [[Rasterization]]
 - ### Overview
   - Vertex buffers keep geometry resident in GPU memory across frames and draw calls.
-  - A separate index buffer often references the vertex buffer to avoid duplicating shared vertices.
+  - A separate [private] buffer often references the vertex buffer to avoid duplicating shared vertices.
   - The vertex layout tells the pipeline how to interpret each vertex's interleaved attributes.
 - ### Key aspects
   - Interleaved versus separate attribute layouts and their cache behaviour.
   - Static, dynamic and streaming usage hints for driver-managed memory.
   - Binding to the input assembler and feeding the vertex shader.
-  - Pairing with index buffers and instancing for efficient batching.
+  - Pairing with [private] buffers and instancing for efficient batching.
 - ### Applications
   - Real-time game and simulation rendering.
   - AR/VR scene geometry upload.

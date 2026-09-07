@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agentic Workload Economics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "agentic-workload-economics",
   "title": "Agentic Workload Economics",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Adoption Lifecycle", "Enterprise AI Cost Management", "Token Budgeting", "Token Scarcity"],
+  "vc:outboundWikilinks": [
+    "AI Adoption Lifecycle",
+    "Enterprise AI Cost Management",
+    "Token Budgeting",
+    "Token Scarcity"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-capacity", "label": "Model Capacity"}, {"@id": "urn:ngm:class:enterprise-ai-cost-management", "label": "Enterprise AI Cost Management"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ai-cost-management",
+        "label": "Enterprise AI Cost Management"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

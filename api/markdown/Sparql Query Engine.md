@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sparql Query Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sparql-query-engine:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9a07c4e53859c816dd0b59df20d1ab977cd74eeedfde9888651fa11932d39705"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Semantic Data Retrieval]]",
-      "resolved": "urn:visionflow:linked:semantic-data-retrieval",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Query Processor]]",
-      "resolved": "urn:visionflow:owl:class:query-processor",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A processor implementing the SPARQL Protocol and RDF Query Language (W3C standard) for retrieving, manipulating, and joining data stored in Resource Description Framework graphs, enabling semantic web queries through pattern matching of subject-predicate-object triples with support for filtering, aggregation, and federated queries.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-250-blockchain-collaboration
----
-
-# Blockchain Collaboration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -109,67 +102,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-collaboration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b99c880fe68d222707158dc902c9f7c5c38d07931d9f1279bc51b790c8d1dbda"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DecentralisedAutonomousOrganisation]]",
-      "resolved": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-002-telecollaboration]]",
-      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-251-smart-contract-coordination]]",
-      "resolved": "urn:visionflow:linked:tele-251-smart-contract-coordination",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-252-dao-governance-telecollaboration]]",
-      "resolved": "urn:visionflow:linked:tele-252-dao-governance-telecollaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-253-cryptocurrency-remuneration]]",
-      "resolved": "urn:visionflow:linked:tele-253-cryptocurrency-remuneration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ConsensusProtocol]]",
-      "resolved": "urn:visionflow:owl:class:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SmartContracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TransparentDecisionMaking]]",
-      "resolved": "urn:visionflow:owl:class:transparent-decision-making",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "The use of blockchain distributed ledger technology, smart contracts, and cryptocurrency systems to coordinate, govern, and compensate geographically distributed teams, enabling trustless collaboration through cryptographic verification, automated enforcement of agreements, and transparent record-keeping without centralised intermediaries."

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Deployment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -266,127 +261,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-deployment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bcc40f30a61820e91533388453caf5265b62a01062aefd882594aeb836483c94"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI system use by AI Users and AI Operators]]",
-      "resolved": "urn:visionflow:linked:ai-system-use-by-ai-users-and-ai-operators",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deployment infrastructure]]",
-      "resolved": "urn:visionflow:linked:deployment-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FDA Software as Medical Device]]",
-      "resolved": "urn:visionflow:linked:fda-software-as-medical-device",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 25010]]",
-      "resolved": "urn:visionflow:linked:iso-iec-25010",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 5338:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-5338-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI Risk Management Framework]]",
-      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[operational procedures]]",
-      "resolved": "urn:visionflow:linked:operational-procedures",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Development]]",
-      "resolved": "urn:visionflow:owl:class:ai-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Lifecycle]]",
-      "resolved": "urn:visionflow:owl:class:ai-lifecycle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Monitoring]]",
-      "resolved": "urn:visionflow:owl:class:ai-monitoring",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Operator]]",
-      "resolved": "urn:visionflow:owl:class:ai-operator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Provider]]",
-      "resolved": "urn:visionflow:owl:class:ai-provider",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI User]]",
-      "resolved": "urn:visionflow:owl:class:ai-user",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Oversight]]",
-      "resolved": "urn:visionflow:owl:class:human-oversight",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Performance]]",
-      "resolved": "urn:visionflow:owl:class:model-performance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisioning, release management, user training, documentation delivery, and the establishment of operational support structures to ensure reliable, safe, and effective system functioning in real-world conditions.
 
@@ -417,7 +291,7 @@ public: true
 
   - # Key Concerns
   - Several key concerns have emerged regarding the potential implications of SB 1047 on the development and deployment of AI technology:
-			- This ambiguity could inadvertently capture a wider range of AI models than initially intended, including those developed by smaller startups and research institutions with limited resources. The resulting compliance burden could stifle innovation and hinder the development of new AI applications.
+			- This ambiguity [private] inadvertently capture a wider range of AI models than initially intended, including those developed by smaller startups and research institutions with limited resources. The resulting compliance burden [private] stifle innovation and hinder the development of new AI applications.
 
   - # Examples of things it's made
 
@@ -433,8 +307,8 @@ public: true
   - ## **Navigating the AI Arms Race - A Return to History's High Stakes:**
   - **Echoes of the Cold War:** The conversation takes a historical turn, drawing parallels between the transformative potential of AI and the Cold War's technological and ideological battles. They suggest that we are entering a new era of great power competition with AI at its core.
   - **The CCP's AI Ambitions - A Clear and Present Danger:** Concerns about the Chinese Communist Party's AI agenda are central to the discussion. The guests argue that the CCP recognises the technology's potential to reshape the global order, potentially granting a decisive advantage to whichever nation harnesses it first. They discuss concrete threats, including:
-  - **Espionage and IP Theft:** The CCP's aggressive espionage apparatus could target AI companies and research institutions, attempting to steal algorithms, training data, and critical technological insights.
-  - **Rapid Industrial Scale-Up:** Leveraging its centralised control and vast industrial capacity, the CCP could rapidly build massive AI clusters and deploy these technologies at scale.
+  - **Espionage and IP Theft:** The CCP's aggressive espionage apparatus [private] target AI companies and research institutions, attempting to steal algorithms, training data, and critical technological insights.
+  - **Rapid Industrial Scale-Up:** Leveraging its centralised control and vast industrial capacity, the CCP [private] rapidly build massive AI clusters and deploy these technologies at scale.
   - **A More Ruthless Approach:** Unburdened by ethical constraints or public scrutiny, the CCP might pursue AI development and deployment in ways that Western nations would deem unacceptable.
   - **Promoting International Cooperation (With Caveats):** Building alliances with like-minded nations to establish norms, standards, and safeguards for AI development and deployment while carefully managing the risks of technology transfer to potentially adversarial nations.
   - **The Middle East Conundrum - A Dangerous Gambit for Short-Term Gain:**
@@ -445,7 +319,7 @@ public: true
 
   - ## **Advocating for a Two-Tiered Approach to Cooperation:** Instead, they propose a more nuanced strategy:
   - **A Core Alliance of Democracies:** This core group, bound by shared values and strategic interests, would spearhead the development of AGI, prioritising safety, ethics, and responsible deployment.
-  - **A Broader Coalition with Incentives:** While limiting access to the most sensitive technologies, this broader group, including authoritarian regimes, could benefit from carefully managed access to less powerful AI systems, fostering cooperation and mitigating the risks of uncontrolled proliferation.
+  - **A Broader Coalition with Incentives:** While limiting access to the most sensitive technologies, this broader group, including authoritarian regimes, [private] benefit from carefully managed access to less powerful AI systems, fostering cooperation and mitigating the risks of uncontrolled proliferation.
 
   - ### Infrastructure
   - **Hosting and Deployment**: Solutions for effectively deploying LLMs, addressing the technical challenges involved.
@@ -457,7 +331,7 @@ public: true
 
   - ## **Advocating for a Two-Tiered Approach to Cooperation:** Instead, they propose a more nuanced strategy:
   - **A Core Alliance of Democracies:** This core group, bound by shared values and strategic interests, would spearhead the development of AGI, prioritising safety, ethics, and responsible deployment.
-  - **A Broader Coalition with Incentives:** While limiting access to the most sensitive technologies, this broader group, including authoritarian regimes, could benefit from carefully managed access to less powerful AI systems, fostering cooperation and mitigating the risks of uncontrolled proliferation.
+  - **A Broader Coalition with Incentives:** While limiting access to the most sensitive technologies, this broader group, including authoritarian regimes, [private] benefit from carefully managed access to less powerful AI systems, fostering cooperation and mitigating the risks of uncontrolled proliferation.
 
   - ### Infrastructure
   - **Hosting and Deployment**: Solutions for effectively deploying LLMs, addressing the technical challenges involved.

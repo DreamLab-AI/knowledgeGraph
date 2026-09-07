@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0054 position control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:rb-0048-pid-controller", "label": "rb 0048 pid controller"},
-      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"},
-      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"}
+      {
+        "@id": "urn:ngm:class:rb-0048-pid-controller",
+        "label": "rb 0048 pid controller"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0055-velocity-control", "label": "rb 0055 velocity control"},
-      {"@id": "urn:ngm:class:rb-0053-force-control", "label": "rb 0053 force control"},
-      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"}
+      {
+        "@id": "urn:ngm:class:rb-0055-velocity-control",
+        "label": "rb 0055 velocity control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0053-force-control",
+        "label": "rb 0053 force control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"}
+      {
+        "@id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop", "label": "rb 0091 safety rated monitored stop"}
+      {
+        "@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0054-position-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:31c8dcc56889618ee109d2e27fb0f32d8327d6836e3290e25e9c68b4ce05ea39"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Position control is a robot control strategy in which the primary objective is to drive each joint or end-effector to a desired spatial configuration, using closed-loop feedback from encoders or resolvers to minimise position error. It forms the foundation for precise manipulation tasks and is typically implemented via PID controllers, and may be combined with force or impedance control for compliant operation in contact-rich environments.

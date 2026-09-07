@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Scientific Method
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -128,7 +122,7 @@ public: true
   - Results are interpreted, reported, and exposed to independent scrutiny; the cycle repeats as understanding refines.
 - ### Key aspects
   - **Empiricism**: claims are grounded in observation and measurement.
-  - **Falsifiability**: hypotheses must make predictions that could be shown false.
+  - **Falsifiability**: hypotheses must make predictions that [private] be shown false.
   - **Controlled experimentation**: isolating variables to attribute effects.
   - **Reproducibility and peer review**: independent replication and scrutiny validate findings.
 - ### Applications

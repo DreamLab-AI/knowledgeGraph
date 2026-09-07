@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Claude Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,16 @@ public: true
   "vc:slug": "claude-design",
   "title": "Claude Design",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Canva", "Claude Code", "Code-based Design", "Design Export", "Design Sliders", "HTML", "Knowledge Workers", "SVG Generation"],
+  "vc:outboundWikilinks": [
+    "Canva",
+    "Claude Code",
+    "Code-based Design",
+    "Design Export",
+    "Design Sliders",
+    "HTML",
+    "Knowledge Workers",
+    "SVG Generation"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +30,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:claude", "label": "Claude"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:claude",
+      "label": "Claude"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:claude", "label": "Claude"}, {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:claude",
+        "label": "Claude"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

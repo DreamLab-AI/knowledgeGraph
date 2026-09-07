@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Credential Issuance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,4 +183,3 @@ public: true
   - The significance of credential issuance lies in its role as the entry point to digital trust ecosystems. Governments issuing mobile driving licences (ISO/IEC 18013-5 mDL), universities issuing digital diplomas (Open Badges, Europass), and healthcare providers issuing professional qualifications all participate in credential ecosystems by performing the issuance step. The EU's eIDAS 2.0 regulation mandates that member states issue identity wallets capable of receiving verifiable credentials from public authorities, representing the largest credential issuance deployment mandate to date.
 
   - As of 2024–2025, credential issuance standards are converging across multiple specifications: W3C VC Data Model 2.0, OpenID for Verifiable Credential Issuance (OID4VCI), and the IETF SD-JWT VC specification. The OID4VCI protocol has become the de facto issuance transport, enabling wallets to request credentials from issuer endpoints using standard OAuth 2.0 flows. Hardware-bound credentials — where the holder's private key resides in a secure element — are emerging as a requirement for high-assurance issuance scenarios such as government identity and professional licensing.
-

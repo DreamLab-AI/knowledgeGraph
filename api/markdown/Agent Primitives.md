@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Primitives
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "agent-primitives",
   "title": "Agent Primitives",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Closed-Source AI Labs", "Open-Source AI Ecosystem"],
+  "vc:outboundWikilinks": [
+    "Closed-Source AI Labs",
+    "Open-Source AI Ecosystem"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:agent", "label": "Agent"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agent",
+      "label": "Agent"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agent", "label": "Agent"}, {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}, {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

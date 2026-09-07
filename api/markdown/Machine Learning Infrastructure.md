@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Machine Learning Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,42 +184,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:machine-learning-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cb853cdfdb9ca5d244381da771b7be92dfb9d940239a41265f05db576cb6e0bd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Scalable AI Training]]",
-      "resolved": "urn:visionflow:linked:scalable-ai-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computing Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:computing-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.

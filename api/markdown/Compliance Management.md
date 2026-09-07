@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Compliance Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,13 +20,43 @@ public: true
   "definition": "Compliance Management is the systematic process by which organisations identify, assess, implement, and monitor adherence to applicable laws, regulations, standards, and internal policies. It encompasses the full lifecycle of obligation tracking, control design, evidence collection, and reporting to demonstrate that operational activities conform to required norms.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
-    "requires": [{"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}],
-    "enables": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
-    "uses": [{"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"}],
-    "dependsOn": [{"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}],
-    "relatedTo": [{"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}]
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "quality": 0.8
 }

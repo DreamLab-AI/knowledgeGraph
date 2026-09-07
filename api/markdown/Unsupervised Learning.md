@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - UnsupervisedLearning
----
-
-# Unsupervised Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,47 +186,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:unsupervised-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b33bce63b0ef07dcd93f24217695f06ddf5c64fa96510e802a624a7361f43928"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Autoencoders]]",
-      "resolved": "urn:visionflow:linked:autoencoders",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Clustering]]",
-      "resolved": "urn:visionflow:linked:clustering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Generative Models]]",
-      "resolved": "urn:visionflow:linked:generative-models",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dimensionality Reduction]]",
-      "resolved": "urn:visionflow:owl:class:dimensionality-reduction",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering (k-means, hierarchical, DBSCAN), dimensionality reduction (PCA, t-SNE, UMAP), density estimation, anomaly detection, and generative modeling (VAEs, GANs). Unsupervised methods extract meaningful features, identify data clusters, reduce dimensionality for visualization, and learn latent representations. Applications span exploratory data analysis, data preprocessing for supervised learning, recommendation systems, and generative AI.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Attention Economy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Attention Economy",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:digital-economy", "vc:label": "Digital Economy"},
-    {"@id": "urn:visionflow:linked:content-curation", "vc:label": "Content Curation"},
-    {"@id": "urn:visionflow:linked:creator-monetization", "vc:label": "Creator Monetization"},
-    {"@id": "urn:visionflow:linked:digital-society-harms", "vc:label": "Digital Society Harms"}
+    {
+      "@id": "urn:visionflow:linked:digital-economy",
+      "vc:label": "Digital Economy"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-curation",
+      "vc:label": "Content Curation"
+    },
+    {
+      "@id": "urn:visionflow:linked:creator-monetization",
+      "vc:label": "Creator Monetization"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-society-harms",
+      "vc:label": "Digital Society Harms"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,13 +50,28 @@ public: true
   },
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:digital-platform", "label": "Digital Platform"}
+      {
+        "@id": "urn:ngm:class:digital-platform",
+        "label": "Digital Platform"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:content-curation", "label": "Content Curation"},
-      {"@id": "urn:ngm:class:creator-monetization", "label": "Creator Monetization"},
-      {"@id": "urn:ngm:class:digital-society-harms", "label": "Digital Society Harms"},
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"}
+      {
+        "@id": "urn:ngm:class:content-curation",
+        "label": "Content Curation"
+      },
+      {
+        "@id": "urn:ngm:class:creator-monetization",
+        "label": "Creator Monetization"
+      },
+      {
+        "@id": "urn:ngm:class:digital-society-harms",
+        "label": "Digital Society Harms"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
     ]
   },
   "quality": 0.8,

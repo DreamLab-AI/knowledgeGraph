@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ai core concepts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,19 +155,46 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "quality": 0.4,
@@ -183,162 +205,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-core-concepts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4f0f04a26e83f1d1f6fe700af20b476f0c1ca56ac3f1795f5ba09b0126b3eac7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIBias|bias mitigation]]",
-      "resolved": "urn:visionflow:linked:aibias",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIGovernance]]",
-      "resolved": "urn:visionflow:linked:aigovernance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ContentGeneration|procedural content generation]]",
-      "resolved": "urn:visionflow:linked:content-generation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EnvironmentPerception|environment perception]]",
-      "resolved": "urn:visionflow:linked:environment-perception",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[LLM|large language models]]",
-      "resolved": "urn:visionflow:linked:llm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NPCInteraction|NPC dialogue]]",
-      "resolved": "urn:visionflow:linked:npcinteraction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TransformerModel|transformers]]",
-      "resolved": "urn:visionflow:linked:transformer-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TransparencyRequirements|transparency]]",
-      "resolved": "urn:visionflow:linked:transparency-requirements",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthics]]",
-      "resolved": "urn:visionflow:owl:class:aiethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AISystem]]",
-      "resolved": "urn:visionflow:owl:class:aisystem",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputerVision|computer vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConvolutionalNeuralNetwork|CNNs]]",
-      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DataPipeline]]",
-      "resolved": "urn:visionflow:owl:class:data-pipeline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainability|interpretability]]",
-      "resolved": "urn:visionflow:owl:class:explainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ExplainableAI]]",
-      "resolved": "urn:visionflow:owl:class:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[FederatedLearning]]",
-      "resolved": "urn:visionflow:owl:class:federated-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GenerativeAI|generative AI]]",
-      "resolved": "urn:visionflow:owl:class:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GenerativeModel]]",
-      "resolved": "urn:visionflow:owl:class:generative-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MachineLearning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MachineLearning|machine learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NeuralNetwork]]",
-      "resolved": "urn:visionflow:owl:class:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NeuralNetwork|neural networks]]",
-      "resolved": "urn:visionflow:owl:class:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ReinforcementLearning]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ReinforcementLearning|reinforcement]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SupervisedLearning|supervised]]",
-      "resolved": "urn:visionflow:owl:class:supervised-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[UnsupervisedLearning|unsupervised]]",
-      "resolved": "urn:visionflow:owl:class:unsupervised-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Core artificial intelligence concepts encompass foundational frameworks and methodologies enabling intelligent systems: [[MachineLearning|machine learning]] paradigms ([[SupervisedLearning|supervised]], [[UnsupervisedLearning|unsupervised]], [[ReinforcementLearning|reinforcement]]), neural architectures ([[NeuralNetwork|neural networks]], [[TransformerModel|transformers]], [[ConvolutionalNeuralNetwork|CNNs]]), and classical symbolic reasoning. Integration with metaverse applications includes [[LLM|large language models]] for [[NPCInteraction|NPC dialogue]], [[ComputerVision|computer vision]] for [[EnvironmentPerception|environment perception]], and [[GenerativeAI|generative AI]] for [[ContentGeneration|procedural content generation]], with ethics considerations addressing [[AIBias|bias mitigation]], [[Explainability|interpretability]], and [[TransparencyRequirements|transparency]] standards.

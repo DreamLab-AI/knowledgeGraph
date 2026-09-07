@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Radio Transceiver
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A radio transceiver is a hardware device that combines a transmitter and receiver in a single unit to send and receive radio-frequency signals over a shared channel. It performs modulation, demodulation, amplification, and frequency conversion, forming the physical link layer of wireless devices. Transceivers underpin IoT nodes, mobile devices, and short-range wireless links.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:wireless-radio", "label": "Wireless Radio"}
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-radio",
+        "label": "Wireless Radio"
+      }
     ]
   },
   "quality": 0.72

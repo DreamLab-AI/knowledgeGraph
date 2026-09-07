@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Certificate Transparency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -155,11 +150,10 @@ public: true
   - Certificate Transparency is built on top of [[TLS]] and [[Public Key Infrastructure]], adding an observability layer to the existing CA trust model. It relies on [[Cryptographic Hash Function]] based Merkle trees and produces a tamper-evident [[Audit Trail]] consumed by domain owners, researchers, and browser vendors. It enables [[Certificate Authority]] accountability by making misissuance publicly detectable, and is closely associated with [[TLS 1.3]] and the broader [[Public-Key Cryptography]] ecosystem managed by the CA/Browser Forum.
 
 - ### Content
-  - Certificate Transparency was proposed by Ben Laurie, Adam Langley, and Emilia Kasper at Google in 2012 and published as RFC 6962 in 2013. The motivation was a series of high-profile CA compromises: DigiNotar (2011, leading to fraudulent Google certificates used in Iran), Comodo (2011), and ANSSI (2013) demonstrated that the CA ecosystem lacked accountability — a compromised or misbehaving CA could issue certificates for arbitrary domains without detection. CT's architecture drew on the concept of append-only, publicly verifiable logs using Merkle trees, ensuring that once a certificate is logged, its inclusion is provable and its exclusion or modification is detectable.
+  - Certificate Transparency was proposed by Ben Laurie, Adam Langley, and Emilia Kasper at Google in 2012 and published as RFC 6962 in 2013. The motivation was a series of high-profile CA compromises: DigiNotar (2011, leading to fraudulent Google certificates used in Iran), Comodo (2011), and ANSSI (2013) demonstrated that the CA ecosystem lacked accountability — a compromised or misbehaving CA [private] issue certificates for arbitrary domains without detection. CT's architecture drew on the concept of append-only, publicly verifiable logs using Merkle trees, ensuring that once a certificate is logged, its inclusion is provable and its exclusion or modification is detectable.
 
   - The technical architecture centres on CT logs operated by independent organisations (Google, Cloudflare, DigiCert, Sectigo). Certificate authorities submit pre-certificates to multiple logs before finalising issuance; each log returns a signed certificate timestamp (SCT) that the CA embeds in the final certificate. When a browser or TLS client receives a certificate, it verifies that the SCTs are valid signatures from recognised logs, meaning the certificate was logged. Monitors — automated processes run by domain owners, security researchers, and browsers — continuously fetch log entries and compare them against expected issuances, generating alerts for any unexpected certificates for monitored domains. Auditors verify log consistency using the Merkle proof system.
 
   - The ecosystem evolved into a mandatory requirement for browser trust. Google Chrome began requiring CT for newly issued certificates in April 2018; Apple's Safari followed, and the CA/Browser Forum's Baseline Requirements incorporated CT obligations. An updated specification (RFC 9162, "Certificate Transparency Version 2.0") was published in 2021, addressing weaknesses in the original design including stronger log consistency guarantees and extensible log format. crt.sh, operated by Sectigo, became the dominant public certificate search and monitoring tool, indexing billions of logged certificates and enabling anyone to search for certificates issued to any domain.
 
   - By 2025, the CT ecosystem processes hundreds of millions of certificates per year, with log coverage encompassing effectively all publicly trusted TLS certificates. CT data is routinely used by security researchers to track CA misbehaviour, identify phishing infrastructure (newly issued certificates for lookalike domains), monitor subdomain takeover vulnerabilities, and study the evolution of TLS deployment at internet scale. The CT log infrastructure is itself a potential attack surface — log misbehaviour (e.g., split-view attacks where different clients see different log states) is mitigated by consistency proofs and the requirement for multiple independent logs. Future extensions under discussion include applying CT-style transparency to code signing certificates and document signing.
-

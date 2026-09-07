@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-153-5g-telepresence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,52 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-153-5-g-telepresence:b90a94c6bb80",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e9584bb7628eb2e5f7df4f18ed714a702e2d84c3a35735d33b53eb5cb8412089"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[5G Network]]",
-      "resolved": "urn:visionflow:linked:5-g-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Slicing]]",
-      "resolved": "urn:visionflow:linked:network-slicing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Low Latency]]",
-      "resolved": "urn:visionflow:linked:low-latency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[5G]]",
-      "resolved": "urn:visionflow:linked:5-g",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:linked:telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - 5G telepresence is the delivery of real-time immersive communication over fifth-generation mobile networks, using their higher bandwidth and lower latency to support volumetric and high-resolution remote presence on mobile devices.

@@ -1,38 +1,116 @@
----
-public: true
----
-
-# Keyframe Animation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:keyframe-animation", "@type":"Page", "title":"Keyframe Animation", "vc:slug":"keyframe-animation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:keyframe-animation",
+  "@type": "Page",
+  "title": "Keyframe Animation",
+  "vc:slug": "keyframe-animation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:keyframe-animation",
-  "@type":"Class",
-  "label":"Keyframe Animation",
-  "definition":"Keyframe animation is a technique in which an animator specifies an object's properties at a set of significant frames, called keyframes, and the system interpolates the in-between frames automatically. Property values such as position, rotation, and scale are stored on timed curves whose interpolation and easing control the motion between keys. It is a foundational method for authoring deterministic, repeatable motion in computer graphics and real-time engines.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:animation","label":"Animation"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:animation","label":"Animation"}],
-    "hasPart":[{"@id":"urn:ngm:class:interpolation","label":"Interpolation"}],
-    "uses":[{"@id":"urn:ngm:class:interpolation","label":"Interpolation"}],
-    "requires":[{"@id":"urn:ngm:class:interpolation","label":"Interpolation"}],
-    "enables":[{"@id":"urn:ngm:class:skeletal-animation","label":"Skeletal Animation"}],
-    "supports":[{"@id":"urn:ngm:class:rendering","label":"Rendering"},{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}],
-    "implements":[{"@id":"urn:ngm:class:animation","label":"Animation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:skeletal-animation","label":"Skeletal Animation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:motion-capture","label":"Motion Capture"},{"@id":"urn:ngm:class:procedural-generation","label":"Procedural Generation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:motion-capture","label":"Motion Capture"},{"@id":"urn:ngm:class:usd","label":"USD"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:keyframe-animation",
+  "@type": "Class",
+  "label": "Keyframe Animation",
+  "definition": "Keyframe animation is a technique in which an animator specifies an object's properties at a set of significant frames, called keyframes, and the system interpolates the in-between frames automatically. Property values such as position, rotation, and scale are stored on timed curves whose interpolation and easing control the motion between keys. It is a foundational method for authoring deterministic, repeatable motion in computer graphics and real-time engines.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:animation",
+      "label": "Animation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:usd",
+        "label": "USD"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

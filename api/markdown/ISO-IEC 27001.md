@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ISO/IEC 27001
----
-
-# iso/iec 27001
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -41,23 +34,40 @@ aliases:
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - ISO/IEC 27001 is an internationally recognised standard that specifies the requirements for establishing, implementing, maintaining, and continually improving an Information Security Management System (ISMS) within the context of an organisation's overall business risks. It adopts a risk-based approach, requiring organisations to systematically identify information security risks and apply appropriate controls drawn from Annex A. Certification against ISO/IEC 27001 provides third-party assurance of an organisation's commitment to protecting the confidentiality, integrity, and availability of information assets.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Software Moats
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "software-moats",
   "title": "Software Moats",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Competitive Advantage", "Enterprise Lock-in"],
+  "vc:outboundWikilinks": [
+    "AI Competitive Advantage",
+    "Enterprise Lock-in"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:software-as-a-service", "label": "Software As A Service"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-as-a-service",
+      "label": "Software As A Service"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:software-as-a-service", "label": "Software As A Service"}, {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-as-a-service",
+        "label": "Software As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

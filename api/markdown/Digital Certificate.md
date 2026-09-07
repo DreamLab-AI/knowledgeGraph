@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DigitalCertificate
----
-
-# Digital Certificate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -229,72 +222,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-certificate:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8c6e6211bd58499a3c56f172391e30e018c248c212d16de8ea2bd43867b25baa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Certificate Authority]]",
-      "resolved": "urn:visionflow:linked:certificate-authority",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Secure Communication]]",
-      "resolved": "urn:visionflow:linked:secure-communication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Trust Establishment]]",
-      "resolved": "urn:visionflow:linked:trust-establishment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptographic Keys]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-keys",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Security]]",
-      "resolved": "urn:visionflow:owl:class:digital-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:owl:class:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Public Key Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:public-key-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A cryptographic credential issued by a Certificate Authority that validates the identity of entities, authenticates users, and secures transactions within virtual environments, metaverse platforms, and blockchain networks through public key infrastructure and verifiable attestations.

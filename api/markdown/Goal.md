@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Goal
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,19 +91,40 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent", "label": "Agent"},
-      {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"},
-      {"@id": "urn:ngm:class:autonomy-level", "label": "Autonomy Level"}
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "@id": "urn:ngm:class:bdi-model",
+        "label": "BDI Model"
+      },
+      {
+        "@id": "urn:ngm:class:autonomy-level",
+        "label": "Autonomy Level"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bdi-model", "label": "BDI Model"}
+      {
+        "@id": "urn:ngm:class:bdi-model",
+        "label": "BDI Model"
+      }
     ]
   },
   "provenance": {
@@ -118,82 +134,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:goal:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e96cf6574c5d11a49f37bc5f51f495b4f64881e01324a14032228b45a1152255"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Action]]",
-      "resolved": "urn:visionflow:linked:action",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agent Concept]]",
-      "resolved": "urn:visionflow:linked:agent-concept",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Plan]]",
-      "resolved": "urn:visionflow:linked:plan",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[State]]",
-      "resolved": "urn:visionflow:linked:state",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Task]]",
-      "resolved": "urn:visionflow:linked:task",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agent]]",
-      "resolved": "urn:visionflow:owl:class:agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomy Level]]",
-      "resolved": "urn:visionflow:owl:class:autonomy-level",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BDI Model]]",
-      "resolved": "urn:visionflow:owl:class:bdi-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Objective]]",
-      "resolved": "urn:visionflow:owl:class:objective",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Value Alignment]]",
-      "resolved": "urn:visionflow:owl:class:value-alignment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A desired future state that an agent aims to realise through planned action sequences. Goals are declarative, future-oriented, and action-guiding; they encompass achievement, maintenance, optimisation, and avoidance types, and are managed in hierarchies that decompose complex objectives into sub-goals. In AI systems, goal specification is central to alignment: misspecified goals produce unintended consequences regardless of capability.

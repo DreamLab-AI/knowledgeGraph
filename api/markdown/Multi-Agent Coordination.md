@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Agent Coordination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -199,46 +194,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:multi-agent-coordination:dd000fbd5f57",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ca02ae6e9e8b916b030a510d26be8ff8ca8cc7556edab0f40d446ca38b5bd16b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Multi-Agent Systems]]",
-      "resolved": "urn:visionflow:linked:multi-agent-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agentic Workflow]]",
-      "resolved": "urn:visionflow:linked:agentic-workflow",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agent]]",
-      "resolved": "urn:visionflow:linked:ai-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Game Theory]]",
-      "resolved": "urn:visionflow:linked:game-theory",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

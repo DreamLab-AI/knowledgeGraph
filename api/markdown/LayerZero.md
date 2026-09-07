@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LayerZero
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -220,67 +215,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:layer-zero:0e4c9beafb79",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:be67ec675c68f8ab775ba8845a66d0ea4e03f9bd5d2306b1cf270b69902c6be3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Oracle]]",
-      "resolved": "urn:visionflow:linked:oracle",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Relayer]]",
-      "resolved": "urn:visionflow:linked:relayer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Messaging]]",
-      "resolved": "urn:visionflow:linked:cross-chain-messaging",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Omnichain Application]]",
-      "resolved": "urn:visionflow:linked:omnichain-application",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bridge]]",
-      "resolved": "urn:visionflow:linked:bridge",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:linked:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - LayerZero is a cross-chain interoperability protocol that allows smart contracts on different blockchains to send messages to one another. It uses a configurable security model in which an oracle delivers block headers and an independent relayer delivers transaction proofs, with a message accepted only when the two agree. This separation is intended to avoid reliance on a single intermediary chain for verifying cross-chain communication.

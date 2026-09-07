@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pathfinding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pathfinding:26dc4e3a950a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dd7e951f19884014e14bb2839fc1cf7fcb8e906e35a03e89395bbf8d8b45e351"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Structure]]",
-      "resolved": "urn:visionflow:linked:data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Navigation]]",
-      "resolved": "urn:visionflow:linked:navigation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pathfinding Algorithm]]",
-      "resolved": "urn:visionflow:linked:pathfinding-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Search Algorithm]]",
-      "resolved": "urn:visionflow:linked:search-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Pathfinding]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-pathfinding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.redblobgames.com/pathfinding/a-star/introduction.html]]",
-      "resolved": "urn:visionflow:linked:https-www-redblobgames-com-pathfinding-a-star-introduction-html",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Pathfinding is the computation of a route between two points in a graph or space, often the shortest or lowest-cost route. It is widely used in games, robotics, and navigation.

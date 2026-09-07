@@ -1,10 +1,14 @@
----
-public: true
----
-
-# EVM Compatibility
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:evm-compatibility", "@type":"Page", "title":"EVM Compatibility", "vc:slug":"evm-compatibility", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:evm-compatibility",
+  "@type": "Page",
+  "title": "EVM Compatibility",
+  "vc:slug": "evm-compatibility",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

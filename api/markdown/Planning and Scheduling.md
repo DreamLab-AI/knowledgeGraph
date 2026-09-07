@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Planning and Scheduling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,62 +198,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:planning-and-scheduling:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e6d1992256d81b28caea7eb0c25094b5c33485612cbabe35b23f7ae544fa1d9a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Constraint Satisfaction]]",
-      "resolved": "urn:visionflow:linked:constraint-satisfaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Optimization]]",
-      "resolved": "urn:visionflow:linked:optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Resource Management]]",
-      "resolved": "urn:visionflow:owl:class:resource-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Search Algorithms]]",
-      "resolved": "urn:visionflow:owl:class:search-algorithms",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[STRIPS]]",
-      "resolved": "urn:visionflow:owl:class:strips",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Planning and Scheduling is a concept within the ai domain.

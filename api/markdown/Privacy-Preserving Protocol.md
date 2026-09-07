@@ -1,51 +1,100 @@
----
-public: true
----
-
-# Privacy-Preserving Protocol
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:privacy-preserving-protocol", "@type":"Page", "title":"Privacy-Preserving Protocol", "vc:slug":"privacy-preserving-protocol", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:privacy-preserving-protocol",
+  "@type": "Page",
+  "title": "Privacy-Preserving Protocol",
+  "vc:slug": "privacy-preserving-protocol",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:privacy-preserving-protocol",
-  "@type":"Class",
-  "label":"Privacy-Preserving Protocol",
-  "definition":"A privacy-preserving protocol is a cryptographic protocol designed to let parties achieve a useful outcome while revealing as little personal or sensitive data as possible. Such protocols use techniques like zero-knowledge proofs, commitments, blind signatures, secure multiparty computation and differential privacy to prove claims, transact or compute jointly without disclosing the underlying inputs. They are central to confidential payments, anonymous credentials, private identity and any system that must reconcile verifiability with data minimisation.",
-  "domain":"security",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:cryptographic-protocol","label":"Cryptographic Protocol"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:privacy","label":"Privacy"},
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-preserving-protocol",
+  "@type": "Class",
+  "label": "Privacy-Preserving Protocol",
+  "definition": "A privacy-preserving protocol is a cryptographic protocol designed to let parties achieve a useful outcome while revealing as little personal or sensitive data as possible. Such protocols use techniques like zero-knowledge proofs, commitments, blind signatures, secure multiparty computation and differential privacy to prove claims, transact or compute jointly without disclosing the underlying inputs. They are central to confidential payments, anonymous credentials, private identity and any system that must reconcile verifiability with data minimisation.",
+  "domain": "security",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:zero-knowledge-proof","label":"Zero-Knowledge Proof"},
-      {"@id":"urn:ngm:class:pedersen-commitment","label":"Pedersen Commitment"},
-      {"@id":"urn:ngm:class:schnorr-signatures","label":"Schnorr Signatures"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:pedersen-commitment",
+        "label": "Pedersen Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:revocation-registry","label":"Revocation Registry"},
-      {"@id":"urn:ngm:class:differential-privacy","label":"Differential Privacy"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:revocation-registry",
+        "label": "Revocation Registry"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:secure-communication","label":"Secure Communication"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:kyc","label":"KYC"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:zero-knowledge-proof-zkp","label":"Zero-Knowledge Proof (ZKP)"},
-      {"@id":"urn:ngm:class:homomorphic-encryption","label":"Homomorphic Encryption"},
-      {"@id":"urn:ngm:class:tor","label":"Tor"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof-zkp",
+        "label": "Zero-Knowledge Proof (ZKP)"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:tor",
+        "label": "Tor"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

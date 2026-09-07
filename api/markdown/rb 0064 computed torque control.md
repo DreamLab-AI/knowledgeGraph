@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0064 computed torque control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"},
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"}
+      {
+        "@id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rb-0043-torque", "label": "rb 0043 torque"},
-      {"@id": "urn:ngm:class:rb-0048-pid-controller", "label": "rb 0048 pid controller"}
+      {
+        "@id": "urn:ngm:class:rb-0043-torque",
+        "label": "rb 0043 torque"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0048-pid-controller",
+        "label": "rb 0048 pid controller"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0061-nonlinear-control", "label": "rb 0061 nonlinear control"},
-      {"@id": "urn:ngm:class:rb-0062-model-predictive-control", "label": "rb 0062 model predictive control"},
-      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"}
+      {
+        "@id": "urn:ngm:class:rb-0061-nonlinear-control",
+        "label": "rb 0061 nonlinear control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0062-model-predictive-control",
+        "label": "rb 0062 model predictive control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"}
+      {
+        "@id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0064-computed-torque-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9708e518dcc138af598723545bf079cc9982d2a06b05177b862b5efebf4d2f35"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Computed torque control (CTC, RB-0064) is a nonlinear model-based strategy that uses the full Euler-Lagrange dynamic model of a manipulator to cancel gravity, Coriolis, and centripetal terms in real time, feeding forward the required joint torques. The residual error dynamics are then linear, allowing a simple outer PD loop to guarantee global asymptotic stability under ideal modelling conditions. CTC is sensitive to inertia parameter uncertainty; robust variants (adaptive CTC, sliding-mode augmentation) are used in practice.

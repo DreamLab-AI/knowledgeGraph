@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Access Control Decisions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,24 +21,51 @@ public: true
   "domain": "security",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+    {
+      "@id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:policy-engine", "label": "Policy Engine"},
-      {"@id": "urn:ngm:class:policy-decision-point", "label": "Policy Decision Point"}
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "@id": "urn:ngm:class:policy-decision-point",
+        "label": "Policy Decision Point"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:authorisation", "label": "Authorisation"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control"},
-      {"@id": "urn:ngm:class:policy-enforcement-point", "label": "Policy Enforcement Point"}
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      }
     ]
   },
   "quality": 0.8

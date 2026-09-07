@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cold Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,4 +159,3 @@ public: true
   - Institutional custodians (Coinbase Custody, BitGo, Anchorage Digital, Fidelity Digital Assets) combine cold storage with [[Hardware Security Module]] vaults in geographically distributed data centres, multi-authorisation approval workflows, insurance coverage, and SOC 2 Type II audited procedures. [[Threshold Signature Scheme]] (TSS/MPC wallets) represent a newer approach where no single party ever holds a complete private key — shares are distributed and signing is performed through secure multiparty computation — offering cold storage-level security with operational hot-wallet-like flexibility. The [[Bitcoin ETF]] approvals in January 2024 have driven demand for qualified custodians implementing auditable cold storage procedures.
 
   - By 2024–2025, the cold storage landscape has matured considerably. Miniscript (Bitcoin policy language) and descriptor-based wallets allow complex spending policies (timelock, multisig, recovery conditions) to be expressed, audited, and enforced in cold storage setups. [[Self-Custody]] education has improved with tools like Sparrow Wallet, Specter Desktop, and BlueWallet supporting hardware wallet multisig natively. Regulatory clarity in the EU (MiCA) and US (OCC, SEC frameworks) now specifies standards for [[Institutional Custody]] of digital assets, referencing cold storage, [[Hardware Security Module]] usage, and key ceremony auditing as baseline requirements. The category remains foundational to crypto security practice.
-

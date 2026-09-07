@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Model Orchestration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "multi-model-orchestration",
   "title": "Multi-Model Orchestration",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Inference Cost Optimization", "Model Routing"],
+  "vc:outboundWikilinks": [
+    "Inference Cost Optimization",
+    "Model Routing"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-architecture",
+      "label": "Model Architecture"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}, {"@id": "urn:ngm:class:inference", "label": "Inference"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# System Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,47 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:system-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fcab76dde085d16cf6db6ab338f7d244c3bcb0987d8b6d94d16559fdfbba9d8a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Infrastructure as Code]]",
-      "resolved": "urn:visionflow:linked:infrastructure-as-code",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MLOps]]",
-      "resolved": "urn:visionflow:linked:mlops",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:owl:class:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:owl:class:distributed-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - System Architecture in AI defines the holistic structure integrating hardware, software, data infrastructure, and operational components to deliver intelligent capabilities at scale. This encompasses distributed training infrastructure, inference servers, data pipelines, model registries, monitoring systems, and edge-cloud coordination. Architectural decisions address latency requirements, throughput targets, fault tolerance, security, and cost optimization. Modern AI systems adopt cloud-native, containerized architectures with orchestration platforms (Kubernetes), enabling elastic scaling, multi-tenancy, and global deployment.

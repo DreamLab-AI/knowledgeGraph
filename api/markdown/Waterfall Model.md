@@ -1,55 +1,106 @@
----
-public: true
----
-
-# Waterfall Model
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:waterfall-model", "@type":"Page", "title":"Waterfall Model", "vc:slug":"waterfall-model", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:waterfall-model",
+  "@type": "Page",
+  "title": "Waterfall Model",
+  "vc:slug": "waterfall-model",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:waterfall-model",
-  "@type":"Class",
-  "label":"Waterfall Model",
-  "definition":"The waterfall model is a sequential software development methodology in which progress flows downward through distinct phases such as requirements, design, implementation, verification, and maintenance. Each phase is completed and signed off before the next begins, producing extensive documentation at every gate. It offers predictability and clear milestones but assumes requirements are stable and discovered early, which limits its ability to absorb change.",
-  "domain":"governance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:project-management","label":"Project Management"}],
-  "relations":{
-    "implements":[
-      {"@id":"urn:ngm:class:software-development","label":"Software Development"},
-      {"@id":"urn:ngm:class:project-management","label":"Project Management"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:waterfall-model",
+  "@type": "Class",
+  "label": "Waterfall Model",
+  "definition": "The waterfall model is a sequential software development methodology in which progress flows downward through distinct phases such as requirements, design, implementation, verification, and maintenance. Each phase is completed and signed off before the next begins, producing extensive documentation at every gate. It offers predictability and clear milestones but assumes requirements are stable and discovered early, which limits its ability to absorb change.",
+  "domain": "governance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:project-management",
+      "label": "Project Management"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:agile-methodology","label":"Agile Methodology"},
-      {"@id":"urn:ngm:class:devops","label":"DevOps"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:agile-methodology",
+        "label": "Agile Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:requirements-engineering","label":"Requirements Engineering"},
-      {"@id":"urn:ngm:class:software-architecture","label":"Software Architecture"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:software-testing","label":"Software Testing"},
-      {"@id":"urn:ngm:class:quality-assurance","label":"Quality Assurance"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:risk-management","label":"Risk Management"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:software-development","label":"Software Development"},
-      {"@id":"urn:ngm:class:project-management","label":"Project Management"},
-      {"@id":"urn:ngm:class:quality-assurance","label":"Quality Assurance"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

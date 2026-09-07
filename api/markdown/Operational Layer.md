@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Operational Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:operational-layer:a9c780edba92",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3fdec68bb18a40980e805a3f8b142b9bea455e3415a8988ccc83aa6d45e7e817"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Runtime Layer]]",
-      "resolved": "urn:visionflow:linked:runtime-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tooling Layer]]",
-      "resolved": "urn:visionflow:linked:tooling-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Institutional Layer]]",
-      "resolved": "urn:visionflow:linked:institutional-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Site Reliability Engineering]]",
-      "resolved": "urn:visionflow:linked:site-reliability-engineering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Incident Management]]",
-      "resolved": "urn:visionflow:linked:incident-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Operational Layer is the cross-cutting stratum concerned with running, maintaining, and recovering a system in production. It sits above the runtime and tooling strata it relies on and supports the institutional commitments made above. It contains deployment pipelines, monitoring, incident response, and capacity management.

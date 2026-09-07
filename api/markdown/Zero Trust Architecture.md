@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Zero-Trust Architecture
-  - ZeroTrustArchitecture
----
-
-# zero trust architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

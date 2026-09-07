@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Consensus Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tactile Sensing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,4 +165,3 @@ public: true
   - Tactile sensing is significant because dexterous manipulation — picking up a strawberry without crushing it, threading a needle, assembling small electronic components — requires closed-loop contact force regulation that vision-based systems cannot provide at the required bandwidth and spatial resolution. As robots move from structured industrial cages into unstructured environments shared with humans — healthcare, domestic service, flexible manufacturing — tactile sensing becomes essential for safety and capability. The difference between a robot that can manipulate only hard, rigidly positioned objects and one that handles soft, deformable, and variably positioned objects is substantially determined by tactile sensing quality.
 
   - By 2024–2025, tactile sensing is experiencing rapid progress driven by soft robotics, neuromorphic sensing, and data-driven approaches. Soft robotic fingers instrumented with distributed tactile arrays are enabling human-level grasping performance across diverse object categories. Neuromorphic event-driven tactile sensors — inspired by the spike-based signalling of biological mechanoreceptors — offer microsecond temporal resolution and ultra-low power consumption. Deep learning models trained on large tactile datasets are learning to classify materials, estimate object properties, and predict grasp stability from raw sensor readings. Integration of tactile sensing with large visual-language models is enabling robots to combine verbal instructions with haptic feedback for adaptive manipulation in open-ended tasks.
-

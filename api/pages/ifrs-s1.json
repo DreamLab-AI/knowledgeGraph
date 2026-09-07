@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ifrs-s1",
   "domain": "governance",
-  "definition": "IFRS S1 is the inaugural sustainability-disclosure standard issued by the International Sustainability Standards Board, setting general requirements for disclosing sustainability-related financial information. It requires entities to report material risks and opportunities across governance, strategy, risk management, and metrics that could affect their prospects. IFRS S1 establishes the common baseline on which topic-specific standards such as IFRS S2 build.",
+  "definition": "IFRS S1 is the inaugural sustainability-disclosure standard issued by the International Sustainability Standards Board, setting general requirements for disclosing sustainability-related financial information. It requires entities to report material risks and opportunities across governance, strategy, risk management, and metrics that [private] affect their prospects. IFRS S1 establishes the common baseline on which topic-specific standards such as IFRS S2 build.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:technical-standard",

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Ontology conversation with AIs]]
-# AI-Assisted Ontology Elicitation Method
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,32 +86,6 @@ elevatedFrom:: [[Ontology conversation with AIs]]
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ontology-conversation-with-ais:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d9a5011ca5d81296c65c49986569a654fe0e97d754f4d0f8fba76de6922d5d82"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Multi-Layer Agentic Governance Framework]]",
-      "resolved": "urn:visionflow:owl:class:agentic-mycelia",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A structured methodology for collaboratively building and refining formal knowledge representations by conducting iterative dialogues with AI systems. In these conversations, AI agents interpret, critique, and extend ontological schemas, producing machine-readable linked-data artefacts such as OWL classes and JSON-LD graphs that document both the resulting ontology and the reasoning process that produced it.
 
@@ -153,11 +121,11 @@ elevatedFrom:: [[Ontology conversation with AIs]]
   4. Jurisdictional/legal agents on the edge, providing continuous access to non-private, human-readable transfer agent Linked-JSON data.
   - The goal is to create a mycelial network where each metaverse instance provides a clear and automated ontological window into its world, choices, and user styles, with transfer agents automatically translating and mediating between adjacent spaces.
   - Extensions and Expansions:
-  1. Reputation Portability: In addition to reputation transfer and adaptation between metaverse instances, consider implementing a decentralized reputation system that allows users to port their reputation across different spaces while maintaining privacy and security. This could be achieved through techniques like zero-knowledge proofs or homomorphic encryption.
-  - 2. Interoperable Identity: Develop a standard for interoperable digital identity that can be used across metaverse instances, enabling users to maintain a consistent identity while preserving their privacy and control over personal data. This could involve leveraging decentralized identity solutions like DID (Decentralized Identifiers) or SSI (Self-Sovereign Identity).
-  - 3. Dispute Resolution: Incorporate a decentralized dispute resolution mechanism to handle conflicts that may arise between users, spaces, or agents. This could involve smart contracts, multi-signature escrow, or community-driven arbitration processes.
+  1. Reputation Portability: In addition to reputation transfer and adaptation between metaverse instances, consider implementing a decentralized reputation system that allows users to port their reputation across different spaces while maintaining privacy and security. This [private] be achieved through techniques like zero-knowledge proofs or homomorphic encryption.
+  - 2. Interoperable Identity: Develop a standard for interoperable digital identity that can be used across metaverse instances, enabling users to maintain a consistent identity while preserving their privacy and control over personal data. This [private] involve leveraging decentralized identity solutions like DID (Decentralized Identifiers) or SSI (Self-Sovereign Identity).
+  - 3. Dispute Resolution: Incorporate a decentralized dispute resolution mechanism to handle conflicts that may arise between users, spaces, or agents. This [private] involve smart contracts, multi-signature escrow, or community-driven arbitration processes.
   - 4. Scalability and Performance: Address the scalability and performance challenges associated with a large-scale mycelial network by exploring techniques like sharding, layer 2 solutions, or federation. This will ensure that the ecosystem can handle increasing numbers of users, spaces, and interactions without compromising user experience or security.
-  - 5. Incentive Mechanisms: Design incentive mechanisms to encourage positive behavior, content creation, and participation in the ecosystem. This could include token-based rewards, reputation-based privileges, or gamification elements that align with the values and goals of each metaverse instance.
+  - 5. Incentive Mechanisms: Design incentive mechanisms to encourage positive behavior, content creation, and participation in the ecosystem. This [private] include token-based rewards, reputation-based privileges, or gamification elements that align with the values and goals of each metaverse instance.
   - Justifications:
   1. Interoperability: The proposed mycelial network architecture promotes interoperability between disparate metaverse instances, enabling users to seamlessly navigate and interact across different spaces while maintaining their preferences and identity. This aligns with the vision of an open, interconnected metaverse that fosters collaboration and innovation.
   - 2. Governance and Compliance: The inclusion of scene agents and jurisdictional/legal agents ensures that each metaverse instance can enforce its own governance models, rule sets, and compliance requirements, while still allowing for cross-instance interactions and value exchange. This respects the autonomy and diversity of different communities while providing a framework for cooperation and mutual benefit.
@@ -236,12 +204,12 @@ elevatedFrom:: [[Ontology conversation with AIs]]
   - Scene Agents within each instance handling specific functionalities like governance, reputation management, and unique features of their respective instances.
   - Transfer Agents facilitating interactions and transactions across instances.
   - Legal/Jurisdictional Agents ensuring compliance with legal and jurisdictional standards.
-	  However, there are a few areas where the diagram could be further improved:
-  - Ontology Integration: While the diagram effectively captures the high-level structure and interactions, it could benefit from a more explicit integration of the ontology classes and properties we defined earlier. For example, you could include the `MetaverseEntity`, `MetaverseAgent`, `DigitalAsset`, and other relevant classes as part of the diagram to show how they fit into the overall structure.
-  - Instance-Specific Ontologies: The diagram could indicate that each metaverse instance has its own specific ontology (e.g., Linked-JSON) that defines its unique entities, properties, and relationships. This would reinforce the idea of interoperability and the role of Transfer Agents in translating between different ontologies.
-  - User Interaction: The diagram could include a representation of how users interact with the Mycelial Network and different metaverse instances. This could involve showing user avatars, user agents, or user interfaces that connect to the various components of the network.
-  - Data Flow: To enhance the understanding of how data and assets move within the network, the diagram could include arrows or paths indicating the flow of information, digital assets, and value between instances, Transfer Agents, and Legal/Jurisdictional Agents.
-  - Scalability and Extensibility: The diagram could suggest the potential for additional metaverse instances and agents to be added to the Mycelial Network, emphasizing its scalability and extensibility. This could be represented by using ellipses or dotted lines to imply the possibility of further expansion.
+	  However, there are a few areas where the diagram [private] be further improved:
+  - Ontology Integration: While the diagram effectively captures the high-level structure and interactions, it [private] benefit from a more explicit integration of the ontology classes and properties we defined earlier. For example, you [private] include the `MetaverseEntity`, `MetaverseAgent`, `DigitalAsset`, and other relevant classes as part of the diagram to show how they fit into the overall structure.
+  - Instance-Specific Ontologies: The diagram [private] indicate that each metaverse instance has its own specific ontology (e.g., Linked-JSON) that defines its unique entities, properties, and relationships. This would reinforce the idea of interoperability and the role of Transfer Agents in translating between different ontologies.
+  - User Interaction: The diagram [private] include a representation of how users interact with the Mycelial Network and different metaverse instances. This [private] involve showing user avatars, user agents, or user interfaces that connect to the various components of the network.
+  - Data Flow: To enhance the understanding of how data and assets move within the network, the diagram [private] include arrows or paths indicating the flow of information, digital assets, and value between instances, Transfer Agents, and Legal/Jurisdictional Agents.
+  - Scalability and Extensibility: The diagram [private] suggest the potential for additional metaverse instances and agents to be added to the Mycelial Network, emphasizing its scalability and extensibility. This [private] be represented by using ellipses or dotted lines to imply the possibility of further expansion.
 	  Overall, the integrated diagram is a solid representation of the metaverse ontology design we have been working on. With some minor enhancements and the inclusion of more explicit ontology integration, it can effectively communicate the vision and structure of the Mycelial Network and its various components.
 	  Copy
 	  JO

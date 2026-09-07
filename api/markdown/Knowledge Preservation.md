@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Knowledge Preservation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Knowledge preservation is the practice of capturing, organising and retaining institutional and individual knowledge so it remains accessible and usable over time. It mitigates loss from staff turnover, system obsolescence and the decay of tacit expertise by codifying knowledge into durable, retrievable forms. It encompasses documentation, archiving, knowledge bases and AI-assisted capture.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-archive", "label": "Digital Archive"},
-      {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"}
+      {
+        "@id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      }
     ]
   },
   "quality": 0.72

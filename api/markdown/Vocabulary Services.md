@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vocabulary Services
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
-      {"@id": "urn:ngm:class:skos-vocabulary", "label": "Skos Vocabulary"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:skos-vocabulary",
+        "label": "Skos Vocabulary"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}
+      {
+        "@id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      }
     ]
   },
   "quality": 0.5,
@@ -83,37 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vocabulary-services:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ff9294ba42b477a913fa2bddc3bf551954f91adc0fe33a8b717fbff910fa3db5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Knowledge Management]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technical infrastructure and APIs that provide access to controlled vocabularies, taxonomies, and ontologies, enabling applications to retrieve, search, and validate terminology for consistent semantic interpretation across metaverse platforms and knowledge systems.

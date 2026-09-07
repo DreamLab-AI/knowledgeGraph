@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Timestamp Service
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "A timestamp service issues verifiable evidence that a particular piece of data existed at or before a specific point in time, without revealing the data's contents. It accepts the hash of a document, binds it to a trusted time reference, and returns a signed timestamp token that anyone can later verify. Timestamp services support non-repudiation, intellectual-property priority, regulatory record-keeping, and long-term signature validation, and may be anchored in a trusted timestamp authority or in a public blockchain for trust-minimised proof of existence.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:timestamping-service", "label": "Timestamping Service"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:timestamping-service",
+      "label": "Timestamping Service"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:timestamp-authority", "label": "Timestamp Authority"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:trusted-timestamping", "label": "Trusted Timestamping"}
+      {
+        "@id": "urn:ngm:class:trusted-timestamping",
+        "label": "Trusted Timestamping"
+      }
     ]
   },
   "quality": 0.8

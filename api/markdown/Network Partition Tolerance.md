@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Partition Tolerance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -112,6 +108,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Network partition tolerance is the property of a distributed system that allows it to continue operating despite the network splitting into groups of nodes that cannot communicate with one another. It is one of the three properties in the CAP theorem, which states that during a partition a system must sacrifice either strong consistency or availability. In blockchain and distributed databases, partition tolerance is generally treated as non-negotiable because partitions are inevitable in real networks, forcing explicit design choices about how the system behaves when nodes are split.
   - [[Distributed Systems]] [[Fault Tolerance]] [[Gossip Protocol]] [[Replication]] [[High Availability]]

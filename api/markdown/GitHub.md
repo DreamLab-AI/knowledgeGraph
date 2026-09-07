@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GitHub
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,62 +187,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:git-hub:c42dc8901218",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f093f3bfb1c3f2e48e4bce761cefdf3ad6b08cb148a061b39c4d32c7e2924d1d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Git]]",
-      "resolved": "urn:visionflow:linked:git",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Open Source]]",
-      "resolved": "urn:visionflow:linked:open-source",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Software Development]]",
-      "resolved": "urn:visionflow:linked:software-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Engineering]]",
-      "resolved": "urn:visionflow:linked:software-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Version Control]]",
-      "resolved": "urn:visionflow:linked:version-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://github.com]]",
-      "resolved": "urn:visionflow:linked:https-github-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.github.com]]",
-      "resolved": "urn:visionflow:linked:https-docs-github-com",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - GitHub is a web platform for hosting Git repositories, providing version control, code review, issue tracking, and collaboration features. It is owned by Microsoft.

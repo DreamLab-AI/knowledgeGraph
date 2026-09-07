@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reasoning Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,38 @@ public: true
   "definition": "A reasoning engine is a software component that derives new conclusions from a body of knowledge by applying logical inference rules, probabilistic methods, or learned heuristics. Classical reasoning engines operate over symbolic knowledge bases using forward or backward chaining, description-logic subsumption, or constraint solving, while modern neuro-symbolic and LLM-based engines combine learned language representations with structured tool use and search. Reasoning engines power expert systems, semantic-web query answering, automated planning, and multi-step problem solving in agentic AI systems. In the DreamLab mesh the reasoning engine is Whelk, an OWL 2 EL classifier that derives entailments and rejects contradictions before they enter the shared knowledge graph.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:multi-step-reasoning", "label": "Multi-Step Reasoning"}
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {
+        "@id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ]
   },
   "quality": 0.8
@@ -50,7 +65,7 @@ public: true
   - Reasoning Engine is a subclass of [[Reasoning]] and enables structured inference patterns such as [[Chain of Thought]] and [[Multi-Step Reasoning]]. It uses a [[Knowledge Graph]] as a structured substrate for facts and relations, and relates to [[LLM Agents]] that invoke it as a tool and to [[Semantic Web Linked Data Standard]] technologies that supply machine-readable axioms.
 
 - ### Content
-  - The classical reasoning engine grew out of the expert-systems era, where production-rule interpreters such as those in OPS5 and CLIPS applied if-then rules to a working memory of facts, repeatedly firing matched rules until no further conclusions could be drawn. Description-logic reasoners (Pellet, HermiT, FaCT++) later formalised inference over ontologies, computing class subsumption, consistency, and instance classification with provable soundness and completeness.
+  - The classical reasoning engine grew out of the expert-systems era, where production-rule interpreters such as those in OPS5 and CLIPS applied if-then rules to a working memory of facts, repeatedly firing matched rules until no further conclusions [private] be drawn. Description-logic reasoners (Pellet, HermiT, FaCT++) later formalised inference over ontologies, computing class subsumption, consistency, and instance classification with provable soundness and completeness.
 
   - Inference proceeds in two canonical directions. Forward chaining is data-driven: it starts from known facts and applies rules to derive everything entailed, suitable for monitoring and event-driven systems. Backward chaining is goal-driven: it starts from a query and works backward to find supporting facts, the strategy underlying logic-programming languages like Prolog and most question-answering pipelines. Many engines blend both with conflict-resolution heuristics to control combinatorial explosion.
 

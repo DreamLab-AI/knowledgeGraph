@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Austrian Economics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,56 @@ public: true
   "definition": "Austrian Economics is a heterodox school of economic thought originating in late 19th-century Vienna, most associated with Carl Menger, Ludwig von Mises, and Friedrich Hayek. It emphasises methodological individualism, the subjective theory of value, and the role of entrepreneurship in coordinating dispersed knowledge through price signals. The school critiques central planning and Keynesian intervention on the grounds that spontaneous market order cannot be replicated by any central authority, and that artificial credit expansion inevitably produces malinvestment and business cycles. Austrian insights have strongly influenced Bitcoin monetary theory, particularly the argument that hard-capped supply reproduces the properties of sound, commodity-backed money.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sound-money", "label": "Sound Money"},
-      {"@id": "urn:ngm:class:inflation", "label": "Inflation"},
-      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"}
+      {
+        "@id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
-      {"@id": "urn:ngm:class:hyperbitcoinization", "label": "Hyperbitcoinization"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "@id": "urn:ngm:class:hyperbitcoinization",
+        "label": "Hyperbitcoinization"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"},
-      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"}
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
-      {"@id": "urn:ngm:class:decentralisation", "label": "Decentralisation"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "@id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      }
     ]
   },
   "quality": 0.8

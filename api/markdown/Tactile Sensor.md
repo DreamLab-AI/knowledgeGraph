@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tactile Sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,17 +58,38 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:pressure-sensor", "label": "Pressure Sensor"},
-      {"@id": "urn:ngm:class:proximity-sensor", "label": "Proximity Sensor"},
-      {"@id": "urn:ngm:class:proprioceptive-sensor", "label": "Proprioceptive Sensor"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:haptics", "label": "Haptics"}
+      {
+        "@id": "urn:ngm:class:pressure-sensor",
+        "label": "Pressure Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:proximity-sensor",
+        "label": "Proximity Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:proprioceptive-sensor",
+        "label": "Proprioceptive Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      }
     ]
   },
   "quality": 0.8,
@@ -84,37 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tactile-sensor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b996933043776390dd3212df9c6f2d4945fc81bafe506bbc9ea57df5d449cb05"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Exteroceptive Sensor]]",
-      "resolved": "urn:visionflow:owl:class:exteroceptive-sensor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Tactile sensor provides touch sensing capability similar to human fingertips.

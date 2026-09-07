@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Medical Simulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Medical simulation is the use of virtual environments, mannequins, and digital models to replicate clinical scenarios for training, assessment, and procedure planning. Immersive and motion-tracked simulations let clinicians rehearse surgery and emergency response without risk to patients. It is a core application of metaverse and XR technologies within healthcare education and practice.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:virtual-environment",
+      "label": "Virtual Environment"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:health-metaverse-application", "label": "Health Metaverse Application"}, {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:health-metaverse-application",
+        "label": "Health Metaverse Application"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ]
   },
   "quality": 0.72
 }

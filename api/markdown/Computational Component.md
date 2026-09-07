@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computational Component
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,32 +59,80 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"},
-      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
-      {"@id": "urn:ngm:class:module", "label": "Module"}
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:module",
+        "label": "Module"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
+      {
+        "@id": "urn:ngm:class:ai-system-component",
+        "label": "AI System Component"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:computational-resources", "label": "Computational Resources"},
-      {"@id": "urn:ngm:class:interface", "label": "Interface"}
+      {
+        "@id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "@id": "urn:ngm:class:interface",
+        "label": "Interface"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-network-component", "label": "Neural Network Component"},
-      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"},
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
-      {"@id": "urn:ngm:class:middleware", "label": "Middleware"}
+      {
+        "@id": "urn:ngm:class:neural-network-component",
+        "label": "Neural Network Component"
+      },
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
     ]
   },
   "provenance": {
@@ -99,37 +142,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computational-component:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d93fa7e1b7bd2114c6bcba74f0802a47ff5a3c1177f63983c104cdedb15eb6e9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Component]]",
-      "resolved": "urn:visionflow:owl:class:component",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Computational Component is a modular, well-defined unit of an AI or software system that encapsulates specific processing logic — such as a neural network layer, a feature extraction module, or an inference engine — and interacts with other components through defined interfaces. Computational components abstract implementation details from consumers, enabling composition into larger pipelines and substitution of equivalent implementations without modifying the surrounding system. They are the primary unit of reuse, testing, and deployment in AI infrastructure, ranging from low-level hardware accelerator kernels to high-level model serving endpoints.

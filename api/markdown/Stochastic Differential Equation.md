@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stochastic Differential Equation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,4 +175,3 @@ public: true
   - SDEs are foundational tools in financial mathematics (the Black-Scholes model is an SDE), physics (Langevin dynamics), biology (population genetics via Wright-Fisher SDEs), and control theory. In machine learning, the score-based and diffusion model paradigm explicitly frames generative modelling as the time-reversal of a forward noising SDE, enabling high-fidelity image, audio, and video generation by learning to reverse a diffusion process.
 
   - The period 2023-2025 has seen SDEs become central to AI research through score-based generative models (DDPM, consistency models, flow matching). Researchers are actively developing more efficient ODE/SDE solvers for faster sampling, and theoretical work connects SDEs to normalising flows and optimal transport. Neuronal SDE architectures also model uncertainty in deep learning systems, with applications in safe and interpretable AI.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Paolo Tasca
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,37 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:paolo-tasca:a11f38e8ce57",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:96498d183569285e294d1140932acc399bf74e4eb55fe83234c7764c489ed8b1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Distributed Ledger Technology]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Economics]]",
-      "resolved": "urn:visionflow:linked:economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Paolo Tasca is an economist specialising in digital economics and distributed ledger technology. He founded the Centre for Blockchain Technologies at University College London.

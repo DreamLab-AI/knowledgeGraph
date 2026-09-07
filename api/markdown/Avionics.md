@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Avionics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Avionics refers to the electronic systems used on aircraft and spacecraft for communication, navigation, flight control, monitoring, and mission management. These systems are safety-critical and must meet stringent real-time, reliability, and certification standards such as DO-178C and DO-254. Avionics is a canonical domain for hard real-time computing, where deterministic timing and fault tolerance are essential to flight safety.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time", "label": "Real Time"}
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      }
     ]
   },
   "quality": 0.72

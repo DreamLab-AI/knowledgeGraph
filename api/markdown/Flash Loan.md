@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Flash Loan
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -152,4 +147,3 @@ public: true
   - Flash loans have proven double-edged. Their legitimate uses — cross-DEX arbitrage (which improves price efficiency), self-liquidation (which allows borrowers to unwind positions without external liquidators), and collateral swaps — provide genuine economic benefits. Their illegitimate uses involve manipulating price oracles within the same transaction: a borrower takes a large flash loan, uses it to distort an asset's price on a DEX that a lending protocol uses as its price oracle, borrows against the artificially inflated collateral value, then repays the flash loan while retaining the borrowed funds. Several major DeFi exploits in 2020–2022, including attacks on bZx, Harvest Finance, and Cream Finance, used this vector.
 
   - As of 2024–2025, flash loans are considered a mature DeFi primitive. Aave v3, Uniswap v3, and Balancer all support flash loan interfaces, with accumulated flash loan volume in the hundreds of billions of dollars. Oracle manipulation attacks have declined following the widespread adoption of time-weighted average price (TWAP) oracles and multi-source oracle aggregators that are resistant to single-block price manipulation. Research into cross-chain flash loans — which would extend the mechanism across bridged assets — remains active, with atomicity guarantees across heterogeneous chains representing the principal unresolved challenge.
-

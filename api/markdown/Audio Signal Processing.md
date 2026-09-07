@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Audio Signal Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,62 +7,230 @@ public: true
   "title": "Audio Signal Processing",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:signal-processing", "vc:label": "Signal Processing" },
-    { "@id": "urn:visionflow:linked:digital-signal-processing", "vc:label": "Digital Signal Processing" },
-    { "@id": "urn:visionflow:linked:fast-fourier-transform", "vc:label": "Fast Fourier Transform" },
-    { "@id": "urn:visionflow:linked:digital-filter", "vc:label": "Digital Filter" },
-    { "@id": "urn:visionflow:linked:convolution", "vc:label": "Convolution" },
-    { "@id": "urn:visionflow:linked:audio-parameters", "vc:label": "Audio Parameters" },
-    { "@id": "urn:visionflow:linked:pulse-code-modulation", "vc:label": "Pulse-Code Modulation" },
-    { "@id": "urn:visionflow:linked:spatial-audio", "vc:label": "Spatial Audio" },
-    { "@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition" },
-    { "@id": "urn:visionflow:linked:speech-synthesis", "vc:label": "Speech Synthesis" },
-    { "@id": "urn:visionflow:linked:audio-compression", "vc:label": "Audio Compression" },
-    { "@id": "urn:visionflow:linked:noise-suppression", "vc:label": "Noise Suppression" },
-    { "@id": "urn:visionflow:linked:real-time-computing", "vc:label": "Real-Time Computing" },
-    { "@id": "urn:visionflow:linked:telecommunications", "vc:label": "Telecommunications" },
-    { "@id": "urn:visionflow:linked:audio-engine", "vc:label": "Audio Engine" },
-    { "@id": "urn:visionflow:linked:audio-processing-system", "vc:label": "Audio Processing System" },
-    { "@id": "urn:visionflow:linked:neural-audio-codec", "vc:label": "Neural Audio Codec" },
-    { "@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning" },
-    { "@id": "urn:visionflow:linked:spatial-computing", "vc:label": "Spatial Computing" },
-    { "@id": "urn:visionflow:linked:psychoacoustics", "vc:label": "Psychoacoustics" },
-    { "@id": "urn:visionflow:linked:mfcc", "vc:label": "MFCC" },
-    { "@id": "urn:visionflow:linked:mel-spectrogram", "vc:label": "Mel-Spectrogram" },
-    { "@id": "urn:visionflow:linked:audio-synthesis", "vc:label": "Audio Synthesis" },
-    { "@id": "urn:visionflow:linked:audio-codec", "vc:label": "Audio Codec" },
-    { "@id": "urn:visionflow:linked:source-separation", "vc:label": "Source Separation" },
-    { "@id": "urn:visionflow:linked:beamforming", "vc:label": "Beamforming" },
-    { "@id": "urn:visionflow:linked:echo-cancellation", "vc:label": "Echo Cancellation" },
-    { "@id": "urn:visionflow:linked:noise-cancellation", "vc:label": "Noise Cancellation" },
-    { "@id": "urn:visionflow:linked:equalisation", "vc:label": "Equalisation" },
-    { "@id": "urn:visionflow:linked:dynamic-range-compression", "vc:label": "Dynamic Range Compression" },
-    { "@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning" },
-    { "@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network" },
-    { "@id": "urn:visionflow:linked:recurrent-neural-network", "vc:label": "Recurrent Neural Network" },
-    { "@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer" },
-    { "@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model" },
-    { "@id": "urn:visionflow:linked:fourier-transform", "vc:label": "Fourier Transform" },
-    { "@id": "urn:visionflow:linked:fourier-analysis", "vc:label": "Fourier Analysis" },
-    { "@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration" },
-    { "@id": "urn:visionflow:linked:embedded-systems", "vc:label": "Embedded Systems" },
-    { "@id": "urn:visionflow:linked:hearing-aids", "vc:label": "Hearing Aids" },
-    { "@id": "urn:visionflow:linked:binaural-audio", "vc:label": "Binaural Audio" },
-    { "@id": "urn:visionflow:linked:music-information-retrieval", "vc:label": "Music Information Retrieval" },
-    { "@id": "urn:visionflow:linked:automatic-speech-recognition", "vc:label": "Automatic Speech Recognition" },
-    { "@id": "urn:visionflow:linked:audio-processing", "vc:label": "Audio Processing" },
-    { "@id": "urn:visionflow:linked:feature-extraction", "vc:label": "Feature Extraction" },
-    { "@id": "urn:visionflow:linked:digital-signal-processor", "vc:label": "Digital Signal Processor" },
-    { "@id": "urn:visionflow:linked:webrtc", "vc:label": "WebRTC" },
-    { "@id": "urn:visionflow:linked:content-delivery", "vc:label": "Content Delivery" },
-    { "@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI" },
-    { "@id": "urn:visionflow:linked:audio-spatialization", "vc:label": "Audio Spatialization" },
-    { "@id": "urn:visionflow:linked:audio-technology", "vc:label": "Audio Technology" },
-    { "@id": "urn:visionflow:linked:adaptive-music", "vc:label": "Adaptive Music" },
-    { "@id": "urn:visionflow:linked:audio-generation", "vc:label": "Audio Generation" },
-    { "@id": "urn:visionflow:linked:audio-system", "vc:label": "Audio System" },
-    { "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain" },
-    { "@id": "urn:visionflow:owl:class:algorithm-layer", "vc:label": "AlgorithmLayer" }
+    {
+      "@id": "urn:visionflow:linked:signal-processing",
+      "vc:label": "Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-signal-processing",
+      "vc:label": "Digital Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:fast-fourier-transform",
+      "vc:label": "Fast Fourier Transform"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-filter",
+      "vc:label": "Digital Filter"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolution",
+      "vc:label": "Convolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-parameters",
+      "vc:label": "Audio Parameters"
+    },
+    {
+      "@id": "urn:visionflow:linked:pulse-code-modulation",
+      "vc:label": "Pulse-Code Modulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-audio",
+      "vc:label": "Spatial Audio"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-synthesis",
+      "vc:label": "Speech Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-compression",
+      "vc:label": "Audio Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:noise-suppression",
+      "vc:label": "Noise Suppression"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-computing",
+      "vc:label": "Real-Time Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:telecommunications",
+      "vc:label": "Telecommunications"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-engine",
+      "vc:label": "Audio Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-processing-system",
+      "vc:label": "Audio Processing System"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-audio-codec",
+      "vc:label": "Neural Audio Codec"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:psychoacoustics",
+      "vc:label": "Psychoacoustics"
+    },
+    {
+      "@id": "urn:visionflow:linked:mfcc",
+      "vc:label": "MFCC"
+    },
+    {
+      "@id": "urn:visionflow:linked:mel-spectrogram",
+      "vc:label": "Mel-Spectrogram"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-synthesis",
+      "vc:label": "Audio Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-codec",
+      "vc:label": "Audio Codec"
+    },
+    {
+      "@id": "urn:visionflow:linked:source-separation",
+      "vc:label": "Source Separation"
+    },
+    {
+      "@id": "urn:visionflow:linked:beamforming",
+      "vc:label": "Beamforming"
+    },
+    {
+      "@id": "urn:visionflow:linked:echo-cancellation",
+      "vc:label": "Echo Cancellation"
+    },
+    {
+      "@id": "urn:visionflow:linked:noise-cancellation",
+      "vc:label": "Noise Cancellation"
+    },
+    {
+      "@id": "urn:visionflow:linked:equalisation",
+      "vc:label": "Equalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-range-compression",
+      "vc:label": "Dynamic Range Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:fourier-transform",
+      "vc:label": "Fourier Transform"
+    },
+    {
+      "@id": "urn:visionflow:linked:fourier-analysis",
+      "vc:label": "Fourier Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-acceleration",
+      "vc:label": "GPU Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedded-systems",
+      "vc:label": "Embedded Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:hearing-aids",
+      "vc:label": "Hearing Aids"
+    },
+    {
+      "@id": "urn:visionflow:linked:binaural-audio",
+      "vc:label": "Binaural Audio"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-information-retrieval",
+      "vc:label": "Music Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic-speech-recognition",
+      "vc:label": "Automatic Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-processing",
+      "vc:label": "Audio Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-extraction",
+      "vc:label": "Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-signal-processor",
+      "vc:label": "Digital Signal Processor"
+    },
+    {
+      "@id": "urn:visionflow:linked:webrtc",
+      "vc:label": "WebRTC"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-delivery",
+      "vc:label": "Content Delivery"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-spatialization",
+      "vc:label": "Audio Spatialization"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-technology",
+      "vc:label": "Audio Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-music",
+      "vc:label": "Adaptive Music"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-generation",
+      "vc:label": "Audio Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-system",
+      "vc:label": "Audio System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -192,74 +355,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "RelationEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:audio-signal-processing:a3f91c28e847",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:audio-signal-processing"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Signal Processing]]", "resolved": "urn:visionflow:linked:signal-processing", "kind": "StubLink" },
-    { "raw": "[[Digital Signal Processing]]", "resolved": "urn:visionflow:linked:digital-signal-processing", "kind": "ResolvedLink" },
-    { "raw": "[[Fast Fourier Transform]]", "resolved": "urn:visionflow:linked:fast-fourier-transform", "kind": "ResolvedLink" },
-    { "raw": "[[Digital Filter]]", "resolved": "urn:visionflow:linked:digital-filter", "kind": "StubLink" },
-    { "raw": "[[Convolution]]", "resolved": "urn:visionflow:linked:convolution", "kind": "StubLink" },
-    { "raw": "[[Audio Parameters]]", "resolved": "urn:visionflow:linked:audio-parameters", "kind": "ResolvedLink" },
-    { "raw": "[[Pulse-Code Modulation]]", "resolved": "urn:visionflow:linked:pulse-code-modulation", "kind": "StubLink" },
-    { "raw": "[[Spatial Audio]]", "resolved": "urn:visionflow:linked:spatial-audio", "kind": "StubLink" },
-    { "raw": "[[Speech Recognition]]", "resolved": "urn:visionflow:linked:speech-recognition", "kind": "StubLink" },
-    { "raw": "[[Speech Synthesis]]", "resolved": "urn:visionflow:linked:speech-synthesis", "kind": "StubLink" },
-    { "raw": "[[Audio Compression]]", "resolved": "urn:visionflow:linked:audio-compression", "kind": "StubLink" },
-    { "raw": "[[Noise Suppression]]", "resolved": "urn:visionflow:linked:noise-suppression", "kind": "StubLink" },
-    { "raw": "[[Real-Time Computing]]", "resolved": "urn:visionflow:linked:real-time-computing", "kind": "StubLink" },
-    { "raw": "[[Telecommunications]]", "resolved": "urn:visionflow:linked:telecommunications", "kind": "StubLink" },
-    { "raw": "[[Audio Engine]]", "resolved": "urn:visionflow:linked:audio-engine", "kind": "ResolvedLink" },
-    { "raw": "[[Audio Processing System]]", "resolved": "urn:visionflow:linked:audio-processing-system", "kind": "ResolvedLink" },
-    { "raw": "[[Neural Audio Codec]]", "resolved": "urn:visionflow:linked:neural-audio-codec", "kind": "StubLink" },
-    { "raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Spatial Computing]]", "resolved": "urn:visionflow:linked:spatial-computing", "kind": "StubLink" },
-    { "raw": "[[Psychoacoustics]]", "resolved": "urn:visionflow:linked:psychoacoustics", "kind": "StubLink" },
-    { "raw": "[[MFCC]]", "resolved": "urn:visionflow:linked:mfcc", "kind": "StubLink" },
-    { "raw": "[[Mel-Spectrogram]]", "resolved": "urn:visionflow:linked:mel-spectrogram", "kind": "StubLink" },
-    { "raw": "[[Audio Synthesis]]", "resolved": "urn:visionflow:linked:audio-synthesis", "kind": "ResolvedLink" },
-    { "raw": "[[Audio Codec]]", "resolved": "urn:visionflow:linked:audio-codec", "kind": "ResolvedLink" },
-    { "raw": "[[Source Separation]]", "resolved": "urn:visionflow:linked:source-separation", "kind": "StubLink" },
-    { "raw": "[[Beamforming]]", "resolved": "urn:visionflow:linked:beamforming", "kind": "StubLink" },
-    { "raw": "[[Echo Cancellation]]", "resolved": "urn:visionflow:linked:echo-cancellation", "kind": "StubLink" },
-    { "raw": "[[Noise Cancellation]]", "resolved": "urn:visionflow:linked:noise-cancellation", "kind": "StubLink" },
-    { "raw": "[[Equalisation]]", "resolved": "urn:visionflow:linked:equalisation", "kind": "StubLink" },
-    { "raw": "[[Dynamic Range Compression]]", "resolved": "urn:visionflow:linked:dynamic-range-compression", "kind": "StubLink" },
-    { "raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink" },
-    { "raw": "[[Recurrent Neural Network]]", "resolved": "urn:visionflow:linked:recurrent-neural-network", "kind": "ResolvedLink" },
-    { "raw": "[[Transformer]]", "resolved": "urn:visionflow:linked:transformer", "kind": "ResolvedLink" },
-    { "raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink" },
-    { "raw": "[[Fourier Transform]]", "resolved": "urn:visionflow:linked:fourier-transform", "kind": "ResolvedLink" },
-    { "raw": "[[Fourier Analysis]]", "resolved": "urn:visionflow:linked:fourier-analysis", "kind": "ResolvedLink" },
-    { "raw": "[[GPU Acceleration]]", "resolved": "urn:visionflow:linked:gpu-acceleration", "kind": "StubLink" },
-    { "raw": "[[Embedded Systems]]", "resolved": "urn:visionflow:linked:embedded-systems", "kind": "StubLink" },
-    { "raw": "[[Hearing Aids]]", "resolved": "urn:visionflow:linked:hearing-aids", "kind": "StubLink" },
-    { "raw": "[[Binaural Audio]]", "resolved": "urn:visionflow:linked:binaural-audio", "kind": "ResolvedLink" },
-    { "raw": "[[Music Information Retrieval]]", "resolved": "urn:visionflow:linked:music-information-retrieval", "kind": "StubLink" },
-    { "raw": "[[Automatic Speech Recognition]]", "resolved": "urn:visionflow:linked:automatic-speech-recognition", "kind": "ResolvedLink" },
-    { "raw": "[[Audio Processing]]", "resolved": "urn:visionflow:linked:audio-processing", "kind": "ResolvedLink" },
-    { "raw": "[[Feature Extraction]]", "resolved": "urn:visionflow:linked:feature-extraction", "kind": "StubLink" },
-    { "raw": "[[Digital Signal Processor]]", "resolved": "urn:visionflow:linked:digital-signal-processor", "kind": "ResolvedLink" },
-    { "raw": "[[WebRTC]]", "resolved": "urn:visionflow:linked:webrtc", "kind": "StubLink" },
-    { "raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink" },
-    { "raw": "[[Audio Spatialization]]", "resolved": "urn:visionflow:linked:audio-spatialization", "kind": "ResolvedLink" },
-    { "raw": "[[Audio Technology]]", "resolved": "urn:visionflow:linked:audio-technology", "kind": "ResolvedLink" },
-    { "raw": "[[Adaptive Music]]", "resolved": "urn:visionflow:linked:adaptive-music", "kind": "ResolvedLink" },
-    { "raw": "[[Audio Generation]]", "resolved": "urn:visionflow:linked:audio-generation", "kind": "ResolvedLink" },
-    { "raw": "[[Audio System]]", "resolved": "urn:visionflow:linked:audio-system", "kind": "ResolvedLink" },
-    { "raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:owl:class:computation-and-intelligence-domain", "kind": "StubLink" },
-    { "raw": "[[AlgorithmLayer]]", "resolved": "urn:visionflow:owl:class:algorithm-layer", "kind": "StubLink" }
-  ]
 }
 ```
 

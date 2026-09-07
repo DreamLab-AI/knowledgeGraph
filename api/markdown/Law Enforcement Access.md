@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Law Enforcement Access
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Law enforcement access refers to the legally authorised mechanisms by which police and regulatory authorities obtain data, records or information held by service providers for investigation and prosecution. In financial and crypto contexts it covers lawful requests for customer and transaction information under court orders, subpoenas or statutory disclosure rules such as the FATF Travel Rule. It sits at the intersection of compliance obligations and privacy safeguards.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:travel-rule", "label": "Travel Rule"}
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
     ]
   },
   "quality": 0.72

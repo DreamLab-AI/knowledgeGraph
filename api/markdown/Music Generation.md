@@ -1,38 +1,108 @@
----
-public: true
----
-
-# Music Generation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:music-generation", "@type":"Page", "title":"Music Generation", "vc:slug":"music-generation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:music-generation",
+  "@type": "Page",
+  "title": "Music Generation",
+  "vc:slug": "music-generation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:music-generation",
-  "@type":"Class",
-  "label":"Music Generation",
-  "definition":"Music generation is the use of artificial intelligence to compose, arrange or synthesise musical content, producing either symbolic scores or raw audio waveforms. It applies generative models such as transformers, diffusion models and autoregressive audio networks trained on large music corpora. Outputs range from melodic and harmonic structure to full instrumental and vocal renderings conditioned on text, style or reference material.",
-  "domain":"ai",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:generative-ai","label":"Generative AI"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:creative-ai","label":"Creative AI"}],
-    "uses":[{"@id":"urn:ngm:class:diffusion-model","label":"Diffusion Model"},{"@id":"urn:ngm:class:transformer","label":"Transformer"}],
-    "implements":[{"@id":"urn:ngm:class:audio-generation","label":"Audio Generation"}],
-    "requires":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "hasPart":[{"@id":"urn:ngm:class:audio-synthesis","label":"Audio Synthesis"}],
-    "supports":[{"@id":"urn:ngm:class:audio-processing","label":"Audio Processing"}],
-    "dependsOn":[{"@id":"urn:ngm:class:generative-adversarial-network","label":"Generative Adversarial Network"}],
-    "relatedTo":[{"@id":"urn:ngm:class:music-information-retrieval","label":"Music Information Retrieval"},{"@id":"urn:ngm:class:variational-autoencoder","label":"Variational Autoencoder"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:music-information-retrieval","label":"Music Information Retrieval"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:generative-ai","label":"Generative AI"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:music-generation",
+  "@type": "Class",
+  "label": "Music Generation",
+  "definition": "Music generation is the use of artificial intelligence to compose, arrange or synthesise musical content, producing either symbolic scores or raw audio waveforms. It applies generative models such as transformers, diffusion models and autoregressive audio networks trained on large music corpora. Outputs range from melodic and harmonic structure to full instrumental and vocal renderings conditioned on text, style or reference material.",
+  "domain": "ai",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:music-information-retrieval",
+        "label": "Music Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:music-information-retrieval",
+        "label": "Music Information Retrieval"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

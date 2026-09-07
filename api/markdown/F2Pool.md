@@ -1,8 +1,3 @@
----
-public: true
----
-
-# F2Pool
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:f-2-pool:39f7c6cd9f29",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8cfc0ecc5b4e1b85e9d3d376bbaff490dd70ddcd2fbdf91d8748d16026d080b7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Mining]]",
-      "resolved": "urn:visionflow:linked:bitcoin-mining",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Validation]]",
-      "resolved": "urn:visionflow:linked:transaction-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitcoin Network]]",
-      "resolved": "urn:visionflow:linked:bitcoin-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mining Pool]]",
-      "resolved": "urn:visionflow:linked:mining-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.f2pool.com]]",
-      "resolved": "urn:visionflow:linked:https-www-f-2-pool-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.f2pool.com/help]]",
-      "resolved": "urn:visionflow:linked:https-www-f-2-pool-com-help",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - F2Pool is one of the oldest Bitcoin mining pools, allowing miners to combine hash power and share block rewards. It also supports mining for other cryptocurrencies.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time AI Inference
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,54 @@ public: true
   "definition": "Real-time AI inference is the execution of trained machine learning model forward passes within latency bounds tight enough to support interactive or time-critical applications, typically measured in milliseconds to tens of milliseconds. It requires co-optimisation of model architecture, runtime software, and hardware accelerators — including GPUs, NPUs, and dedicated AI ASICs — to meet throughput and latency targets whilst maintaining acceptable accuracy. Applications include autonomous vehicles, real-time video analysis, voice assistants, and spatial computing overlays.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"}, {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"},
-      {"@id": "urn:ngm:class:npu", "label": "NPU"},
-      {"@id": "urn:ngm:class:onnx-runtime", "label": "ONNX Runtime"}
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:npu",
+        "label": "NPU"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
-      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"}
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "@id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:low-latency-computing", "label": "Low-Latency Computing"},
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"}
+      {
+        "@id": "urn:ngm:class:low-latency-computing",
+        "label": "Low-Latency Computing"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +88,3 @@ public: true
   - In deployment, real-time inference occurs across a spectrum of hardware: data centre GPUs (NVIDIA H100, A100) for cloud-served applications, automotive-grade SoCs (NVIDIA Orin, Qualcomm Snapdragon Ride) for autonomous vehicles, and mobile NPUs (Apple Neural Engine, Qualcomm Hexagon) for on-device applications. Inference serving frameworks (Triton Inference Server, TorchServe, ONNX Runtime Server) handle request scheduling, model versioning, and multi-model serving. Edge deployments typically use the TensorFlow Lite or ONNX Runtime Mobile runtimes for constrained hardware.
 
   - Between 2023 and 2025, the rise of large language model inference has created a new latency challenge: autoregressive token generation is inherently sequential, making low-latency LLM inference depend on speculative decoding, continuous batching, and memory-efficient attention implementations (FlashAttention, PagedAttention). Dedicated LLM inference hardware and software stacks (Groq LPU, Cerebras, vLLM) have achieved sub-100ms first-token latency at scale. Simultaneously, on-device LLM inference on consumer NPUs (Apple M-series, Qualcomm Snapdragon Elite X) has enabled real-time assistant experiences without cloud round-trips, driving a fundamental re-architecture of AI application deployment patterns.
-

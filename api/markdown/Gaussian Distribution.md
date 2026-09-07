@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gaussian Distribution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -194,47 +189,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gaussian-distribution:38875735715a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e1b01a265b717e3c1191bf79d6b7127395e5e66d1ffbb3fbc63107402b4981a6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Statistics]]",
-      "resolved": "urn:visionflow:linked:statistics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bayesian Inference]]",
-      "resolved": "urn:visionflow:linked:bayesian-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Markov Chain Monte Carlo]]",
-      "resolved": "urn:visionflow:linked:markov-chain-monte-carlo",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A continuous probability distribution, also called the normal distribution, characterised by a symmetric bell-shaped density defined by its mean and variance.

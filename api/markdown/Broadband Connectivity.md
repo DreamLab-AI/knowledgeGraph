@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Broadband Connectivity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

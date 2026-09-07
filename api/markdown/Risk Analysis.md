@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Risk Analysis
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -23,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:risk-analysis",
   "@type": "Class",
   "label": "Risk Analysis",
-  "definition": "Risk analysis is the systematic process of identifying, characterising and estimating the likelihood and impact of events that could threaten objectives, in order to inform decisions about how to treat them. It combines qualitative judgement with quantitative techniques such as scenario modelling and probabilistic simulation to express uncertainty in actionable terms. As a core component of risk management, it produces the evidence base for prioritising controls, allocating capital and setting tolerances.",
+  "definition": "Risk analysis is the systematic process of identifying, characterising and estimating the likelihood and impact of events that [private] threaten objectives, in order to inform decisions about how to treat them. It combines qualitative judgement with quantitative techniques such as scenario modelling and probabilistic simulation to express uncertainty in actionable terms. As a core component of risk management, it produces the evidence base for prioritising controls, allocating capital and setting tolerances.",
   "domain": "governance",
   "maturity": "mature",
   "subClassOf": [
@@ -111,7 +105,7 @@ public: true
 ```
 
 - ### Definition
-  - Risk analysis is the systematic process of identifying, characterising and estimating the likelihood and impact of events that could threaten objectives, in order to inform decisions about how to treat them.
+  - Risk analysis is the systematic process of identifying, characterising and estimating the likelihood and impact of events that [private] threaten objectives, in order to inform decisions about how to treat them.
   - It combines qualitative judgement with quantitative techniques such as scenario modelling and probabilistic simulation to express uncertainty in actionable terms.
   - As a core component of risk management, it produces the evidence base for prioritising controls, allocating capital and setting tolerances.
   - Related core concepts: [[Risk Management]] [[Scenario Analysis]] [[Monte Carlo Methods]] [[Decision Making]]

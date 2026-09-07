@@ -1,38 +1,112 @@
----
-public: true
----
-
-# Social Engineering
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:social-engineering", "@type":"Page", "title":"Social Engineering", "vc:slug":"social-engineering", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:social-engineering",
+  "@type": "Page",
+  "title": "Social Engineering",
+  "vc:slug": "social-engineering",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:social-engineering",
-  "@type":"Class",
-  "label":"Social Engineering",
-  "definition":"Social engineering is the manipulation of people into divulging confidential information or performing actions that compromise security, exploiting human psychology rather than technical vulnerabilities. It includes techniques such as phishing, pretexting, baiting and impersonation that bypass technical controls by targeting trust, urgency and authority. It is one of the most effective and prevalent attack vectors in cybersecurity.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:attack-vector","label":"Attack Vector"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:data-breach","label":"Data Breach"},{"@id":"urn:ngm:class:ransomware","label":"Ransomware"}],
-    "uses":[{"@id":"urn:ngm:class:prompt-injection","label":"Prompt Injection"}],
-    "hasPart":[{"@id":"urn:ngm:class:vulnerability","label":"Vulnerability"}],
-    "relatedTo":[{"@id":"urn:ngm:class:threat-actor","label":"Threat Actor"},{"@id":"urn:ngm:class:malware","label":"Malware"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:access-control","label":"Access Control"},{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-    "supports":[{"@id":"urn:ngm:class:penetration-testing","label":"Penetration Testing"}],
-    "dependsOn":[{"@id":"urn:ngm:class:vulnerability","label":"Vulnerability"}],
-    "implements":[{"@id":"urn:ngm:class:attack-vector","label":"Attack Vector"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}],
-    "requires":[{"@id":"urn:ngm:class:threat-actor","label":"Threat Actor"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:social-engineering",
+  "@type": "Class",
+  "label": "Social Engineering",
+  "definition": "Social engineering is the manipulation of people into divulging confidential information or performing actions that compromise security, exploiting human psychology rather than technical vulnerabilities. It includes techniques such as phishing, pretexting, baiting and impersonation that bypass technical controls by targeting trust, urgency and authority. It is one of the most effective and prevalent attack vectors in cybersecurity.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:attack-vector",
+      "label": "Attack Vector"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "@id": "urn:ngm:class:ransomware",
+        "label": "Ransomware"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:threat-actor",
+        "label": "Threat Actor"
+      },
+      {
+        "@id": "urn:ngm:class:malware",
+        "label": "Malware"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:threat-actor",
+        "label": "Threat Actor"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

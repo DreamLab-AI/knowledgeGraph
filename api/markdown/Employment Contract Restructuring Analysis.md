@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Role reorg]]
-# Employment Contract Restructuring Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -66,26 +60,6 @@ elevatedFrom:: [[Role reorg]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:role-reorg:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a9e4e5d543880d458d0dbcfb18e6706f67ee6caf80122587049f11dc710d72a1"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Role reorg denotes an organisational restructuring process in which employment or contractual arrangements are renegotiated, typically comparing permanent employment contracts with temporary or agency-based assignments across dimensions such as salary, holiday entitlement, pension eligibility, notice periods, and additional benefits. Such analysis underpins workforce planning decisions in academic and research institutions, balancing income stability against contractual flexibility and total compensation.

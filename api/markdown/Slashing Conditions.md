@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Slashing Conditions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Slashing conditions are the set of cryptographically provable validator violations that a proof-of-stake blockchain protocol enforces by destroying or redistributing staked tokens. Encoded directly in protocol logic, they cover equivocation, surround votes, and prolonged unavailability, and their parameters set the strength of the chain's economic security. They are an implemented enforcement mechanism in modern blockchain protocols.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}, {"@id": "urn:ngm:class:proof-of-stake-sustainability", "label": "Proof Of Stake Sustainability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake-sustainability",
+        "label": "Proof Of Stake Sustainability"
+      }
+    ]
   },
   "quality": 0.72
 }

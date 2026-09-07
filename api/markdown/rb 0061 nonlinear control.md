@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0061 nonlinear control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,51 +56,52 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rb-0063-sliding-mode-control", "label": "rb 0063 sliding mode control"},
-      {"@id": "urn:ngm:class:rb-0064-computed-torque-control", "label": "rb 0064 computed torque control"},
-      {"@id": "urn:ngm:class:rb-0062-model-predictive-control", "label": "rb 0062 model predictive control"}
+      {
+        "@id": "urn:ngm:class:rb-0063-sliding-mode-control",
+        "label": "rb 0063 sliding mode control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0064-computed-torque-control",
+        "label": "rb 0064 computed torque control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0062-model-predictive-control",
+        "label": "rb 0062 model predictive control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0060-optimal-control", "label": "rb 0060 optimal control"},
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
-      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"}
+      {
+        "@id": "urn:ngm:class:rb-0060-optimal-control",
+        "label": "rb 0060 optimal control"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"},
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"}
+      {
+        "@id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0048-pid-controller", "label": "rb 0048 pid controller"}
+      {
+        "@id": "urn:ngm:class:rb-0048-pid-controller",
+        "label": "rb 0048 pid controller"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0061-nonlinear-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:912b10ea35c30a243c884756fce1f456673c71da0681e0bd682ac5c3c2d489e7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Nonlinear control is the branch of control theory that deals with systems whose governing equations are inherently nonlinear. Robotic manipulators and mobile platforms are quintessentially nonlinear: their dynamics feature inertia matrices that depend on configuration, velocity-dependent Coriolis and centripetal terms, and gravity loading. PID controllers, which assume linear plant behaviour, typically provide adequate performance only near a single operating point; nonlinear methods extend stable control across the entire workspace.

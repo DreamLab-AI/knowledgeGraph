@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Various Links]]
-# Cross-Domain Reference Corpus
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,9 +47,18 @@ elevatedFrom:: [[Various Links]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ]
   },
   "provenance": {
@@ -65,32 +68,6 @@ elevatedFrom:: [[Various Links]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:various-links:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1d88ab0fed5abc4f9f06b67a9c8c222e3c589297290a653d4116fb465f48a294"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Perplexity AI Search Platform]]",
-      "resolved": "urn:visionflow:owl:class:perplexity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Various Links** is a curated collection of external hyperlinks spanning blockchain, cryptocurrency, augmented and virtual reality, AI generative tools, and media production resources, assembled as a research reference page for cross-domain topics relevant to the NarrativeGoldmine knowledge graph.
@@ -105,7 +82,7 @@ elevatedFrom:: [[Various Links]]
 - ### Content
   - [Link](https://arxiv.org/abs/2103.15627)
   - [#136: Paul Sztorc](https://open.spotify.com/episode/3hIpQD7QUMwmbKkPFPNLAp?si=XAkr6FxCS_mnWs8z-A-WKg)
-  - [$312B Hedge Fund Tidal Wave Could Be Coming to Crypto – Here’s When](https://dailyhodl.com/2021/06/16/312000000000-hedge-fund-tidal-wave-could-be-coming-to-crypto-heres-when)
+  - [$312B Hedge Fund Tidal Wave [private] Be Coming to Crypto – Here’s When](https://dailyhodl.com/2021/06/16/312000000000-hedge-fund-tidal-wave-could-be-coming-to-crypto-heres-when)
   - [PDF 2301](http://arxiv.org/pdf/2301.00250.pdf)
   - [PDF 2301](https://arxiv.org/pdf/2301.11913.pdf)
   - [PDF 2303](https://arxiv.org/pdf/2303.17580.pdf)
@@ -161,7 +138,7 @@ elevatedFrom:: [[Various Links]]
   - [BitBox02 supported coins](https://shiftcrypto.ch/coins)
   - [Bitbonkers: 3D Blockchain Visualization](https://privacypros.io/tools/bitbonkers)
   - [Bitfeed](https://bits.monospace.live/)
-  - [Bitwise crypto index fund](https://www.theblockcrypto.com/post/87110/bitwise-crypto-index-fund-otc-shares-tradeable-brokerage-accounts)
+  - [Bitwise crypto [private] fund](https://www.theblockcrypto.com/post/87110/bitwise-crypto-index-fund-otc-shares-tradeable-brokerage-accounts)
   - [Blender Alpha Release](https://blogs.nvidia.com/blog/2023/02/15/blender-alpha-release-omniverse?ncid=so-link-466434)
   - [Blockchain Custom Compute Group](https://www.intel.com/content/www/us/en/newsroom/opinion/thoughts-blockchain-custom-compute-group.html#gs.pd9ofu)
   - [Blockstream Block Explorer](https://blockstream.info/tx/a1d49167de850e0d12a2f57f41258dcf8c2544d7acf4283748ad18942156536f?input%3A0=)
@@ -178,7 +155,7 @@ elevatedFrom:: [[Various Links]]
   - [Building AR cross-platform runtime](https://engineering.fb.com/2023/02/13/virtual-reality/meta-ar-augmented-reality-cross-platform-runtime/)
   - [CD11: Trading vs Stacking](https://open.spotify.com/episode/0ntY8foAxqyA7zeggl7cYJ)
   - [CFTC Orders Coinbase](https://www.cftc.gov/PressRoom/PressReleases/8369-21)
-  - [CIX100 AI-based cryptocurrency index](https://cix100.com/)
+  - [CIX100 AI-based cryptocurrency [private]](https://cix100.com/)
   - [CLIP-Mesh](https://arxiv.org/abs/2203.13333)
   - [Capitol Records AI rapper FN Meka](https://www.theguardian.com/music/2022/aug/24/major-record-label-drops-offensive-ai-rapper-after-outcry-over-racial-stereotyping)
   - [CBDC Tracker](https://www.atlanticcouncil.org/cbdctracker/)
@@ -204,7 +181,7 @@ elevatedFrom:: [[Various Links]]
   - [Crypto Interrupted](https://www.forbes.com/sites/stevenehrlich/2022/03/05/crypto-interrupted-how-the-russian-invasion-dramatically-changed-ukraines-blockchain-strategy-to-focus-on-the-war)
   - [BlockFi Halts Withdrawals](https://www.wsj.com/articles/crypto-lender-blockfi-halts-withdrawals-citing-ftxs-problems-11668142538)
   - [Crypto Traders Spike at Midwest Tungsten](https://www.coindesk.com/business/2021/10/15/crypto-traders-to-blame-for-300-sales-spike-at-midwest-tungsten-service)
-  - [Crypto Valley Conference](https://www.cryptovalleyconference.com/index)
+  - [Crypto Valley Conference](https://www.cryptovalleyconference.com/[private])
   - [Crypto exchange Binance blacklisted](https://www.thisismoney.co.uk/money/markets/article-9926993/amp/Crypto-exchange-Binance-blacklisted-Financial-Conduct-Authority.html)
   - [Crypto exchanges in India](https://cointelegraph.com/news/crypto-exchanges-in-india-still-struggling-to-secure-banking-partners)
   - [Three Arrows Capital insolvency](https://www.theblock.co/linked/152092/after-facing-hundreds-of-millions-of-dollars-in-liquidations-three-arrows-capitals-future-is-uncertain)
@@ -339,7 +316,7 @@ elevatedFrom:: [[Various Links]]
   - [Mullvad VPN](https://mullvad.net/en)
   - [My first impressions of web3](https://moxie.org/2022/01/07/web3-first-impressions.html)
   - [NAT Principles](https://support.vyos.io/en/kb/articles/nat-principles)
-  - [NAT — VyOS documentation](https://docs.vyos.io/en/equuleus/configuration/nat/index.html#hairpin-nat-nat-reflection)
+  - [NAT — VyOS documentation](https://docs.vyos.io/en/equuleus/configuration/nat/[private].html#hairpin-nat-nat-reflection)
   - [NVIDIA AI Tools](https://blogs.nvidia.com/blog/2022/08/09/omniverse-siggraph)
   - [Jetson AGX Orin Kit](https://www.okdo.com/p/nvidia-jetson-agx-orin-64gb-developer-kit)
   - [Harris Poll Crypto Investment](https://theharrispoll.com/stimulus-check-spending)

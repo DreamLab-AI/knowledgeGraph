@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FAIR Data Principles
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The FAIR Data Principles are a set of guidelines stating that scientific and research data should be Findable, Accessible, Interoperable, and Reusable by both humans and machines. They emphasise persistent identifiers, rich machine-readable metadata, standardised vocabularies, and clear usage licences to maximise the long-term value of data. FAIR is widely adopted in research-data management, open science, and knowledge-graph and ontology engineering.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"},
-      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"}
+      {
+        "@id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
     ]
   },
   "quality": 0.72

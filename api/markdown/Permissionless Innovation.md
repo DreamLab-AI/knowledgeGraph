@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Permissionless Innovation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:permissionless-innovation:915940db5cfc",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:652e86f71ad7fbe8298f360a9aa3c76bfcab0ffce29a5d35320f3b13e251320a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralization]]",
-      "resolved": "urn:visionflow:linked:decentralization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web3]]",
-      "resolved": "urn:visionflow:linked:web-3",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A policy stance holding that new technologies and business models should generally be allowed to develop without prior approval, with regulation applied only to address demonstrated harms. It is often discussed in the context of the internet and digital finance.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise Training
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -125,6 +121,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Enterprise Training in spatial computing is the use of immersive virtual and augmented reality experiences to upskill, certify and onboard a workforce at organisational scale. It places learners in realistic, interactive simulations of equipment, procedures and hazardous scenarios that would be costly or dangerous to reproduce physically. By combining experiential learning with analytics and learning-management integration, it improves retention, standardises competency and reduces training risk.
   - Related core concepts: [[Immersive Experiences]] [[Virtual Reality]] [[Augmented Reality]] [[Simulation]] [[Workforce Development]]

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TensorFlow
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -194,52 +189,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tensor-flow:d3c9341488b3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7efea0e4e825cb85c9732d4b6d412de7e43da7c68c9e857a822df6d8c97103ed"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Automatic Differentiation]]",
-      "resolved": "urn:visionflow:linked:automatic-differentiation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware Acceleration]]",
-      "resolved": "urn:visionflow:linked:hardware-acceleration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Backpropagation]]",
-      "resolved": "urn:visionflow:linked:backpropagation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[PyTorch]]",
-      "resolved": "urn:visionflow:linked:py-torch",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An open-source machine learning framework developed by Google for building and deploying numerical computation and deep learning models across CPUs, GPUs and specialised accelerators.

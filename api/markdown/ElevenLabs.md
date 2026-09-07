@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ElevenLabs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,46 +76,6 @@ public: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",
     "inferenceRule": "GapFillTier5"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:eleven-labs:d5603461ab98",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1fad7e6a149ebb894d0aa42471082c84e483dd5e7d3835c1bb6200f5db353e2e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text-to-Speech]]",
-      "resolved": "urn:visionflow:linked:text-to-speech",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Voice Cloning]]",
-      "resolved": "urn:visionflow:linked:voice-cloning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:linked:generative-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -323,7 +278,7 @@ public: true
     The modern neural TTS era began with WaveNet (van den Oord et al., DeepMind, 2016), a dilated causal convolutional generative model that produced speech waveforms sample by sample with unprecedented naturalness but at computational cost too high for real-time inference. Tacotron (Wang et al., Google Brain, 2017) and Tacotron 2 (Shen et al., 2018) introduced the sequence-to-sequence attention-based acoustic model architecture that maps character or phoneme sequences to mel-spectrograms, decoupled from a separately trained vocoder (WaveNet or WaveGlow). FastSpeech (Ren et al., Microsoft, 2019) replaced autoregressive attention with non-autoregressive feed-forward transformers and a duration predictor, achieving 38× inference speedup with comparable quality. FastSpeech 2 added pitch, energy, and duration control. VITS (Kim et al., Kakao Brain, 2021) introduced an end-to-end variational inference model that jointly optimises acoustic model and vocoder, achieving state-of-the-art naturalness at that time and becoming a widely-adopted open-source TTS backbone. HiFi-GAN (Kong et al., 2020) established the GAN-based vocoder paradigm as the efficiency benchmark, producing 24 kHz audio faster than real-time on a single V100 GPU. ElevenLabs' architecture (not fully disclosed) builds on this lineage and likely incorporates [[Diffusion Model|diffusion]]-based vocoding for higher perceptual quality at the cost of additional inference compute.
 
     **Multi-Speaker and Zero-Shot Voice Cloning**
-    The speaker embedding paradigm enabling voice cloning was established by Jia et al. (Google Brain, 2018) in "Transfer Learning from Speaker Verification to Multispeaker Text-to-Speech Synthesis", which demonstrated that a speaker encoder pretrained on a speaker verification task could provide speaker conditioning to a Tacotron-based TTS system, enabling reasonable synthesis quality for entirely new speakers from a few seconds of audio. The GE2E (Generalised End-to-End) loss (Wan et al., Google, 2018) provided a more efficient training objective for the speaker encoder. Zero-shot voice cloning — cloning unseen speakers without fine-tuning — was demonstrated at scale in NaturalSpeech 2 (Shen et al., Microsoft, 2023), which uses a latent diffusion model conditioned on speaker embeddings and prosody vectors to synthesise speech from any unseen speaker. YourTTS (Casanova et al., 2022) provided an open-source zero-shot voice cloning baseline. Meta's Voicebox (Le et al., NeurIPS 2023) demonstrated multilingual zero-shot voice cloning using a flow-matching model trained on 50,000 hours of labelled audio across six languages.
+    The speaker embedding paradigm enabling voice cloning was established by Jia et al. (Google Brain, 2018) in "Transfer Learning from Speaker Verification to Multispeaker Text-to-Speech Synthesis", which demonstrated that a speaker encoder pretrained on a speaker verification task [private] provide speaker conditioning to a Tacotron-based TTS system, enabling reasonable synthesis quality for entirely new speakers from a few seconds of audio. The GE2E (Generalised End-to-End) loss (Wan et al., Google, 2018) provided a more efficient training objective for the speaker encoder. Zero-shot voice cloning — cloning unseen speakers without fine-tuning — was demonstrated at scale in NaturalSpeech 2 (Shen et al., Microsoft, 2023), which uses a latent diffusion model conditioned on speaker embeddings and prosody vectors to synthesise speech from any unseen speaker. YourTTS (Casanova et al., 2022) provided an open-source zero-shot voice cloning baseline. Meta's Voicebox (Le et al., NeurIPS 2023) demonstrated multilingual zero-shot voice cloning using a flow-matching model trained on 50,000 hours of labelled audio across six languages.
 
     **Ethical and Societal Research**
     Academic concern about synthesised speech detection and authentication has grown in parallel with ElevenLabs' commercial development. A 2025 UC Berkeley study demonstrated that human listeners cannot reliably distinguish AI-cloned voices from authentic recordings even when informed they may be hearing AI-generated audio — detection accuracy hovered only modestly above the 50% chance level, with significant variance across listener populations. Consumer Reports' 2025 assessment of six voice cloning platforms found that only Descript and Resemble AI had implemented meaningful technical safeguards against misuse, while the remainder relied solely on user self-attestation of rights. These findings have catalysed research in [[Deepfake Detection|synthetic speech detection]] using acoustic artifact classifiers, neural network watermarking, and cryptographic provenance attestation. The ASVspoof challenge (running biennially since 2015, 2025 edition underway) provides standardised evaluation of anti-spoofing systems against TTS and voice conversion attacks, providing benchmarks against which ElevenLabs-class synthesis systems are routinely evaluated.

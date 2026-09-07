@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ontology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -215,7 +210,7 @@ public: true
   - **[[Knowledge Graph]] construction** — ontologies provide the schema that structures nodes (entities) and edges (relations) in enterprise and public knowledge graphs (Wikidata, DBpedia, Google Knowledge Graph).
   - **Biomedical data integration** — [[SNOMED CT]], [[Gene Ontology]], and [[OBO Foundry]] ontologies harmonise heterogeneous clinical and genomic datasets.
   - **[[Semantic Interoperability]]** — e-government, defence, and cross-enterprise data exchange standards use ontologies to ensure consistent meaning across organisational boundaries.
-  - **[[Retrieval-Augmented Generation]]** — ontologies structure the retrieval index and constrain LLM outputs to domain-accurate facts, improving precision in AI-generated content.
+  - **[[Retrieval-Augmented Generation]]** — ontologies structure the retrieval [private] and constrain LLM outputs to domain-accurate facts, improving precision in AI-generated content.
   - **[[Digital Twin]]** construction — ontologies (e.g. SAREF, BOT, REC) model smart building, manufacturing, and city systems enabling real-time semantic integration of sensor data.
   - **[[Semantic Search]]** — ontology-backed search engines expand queries with related terms and concepts, improving recall without sacrificing precision.
   - **Drug discovery and clinical decision support** — formal reasoning over drug–target–disease ontologies identifies candidate interactions and contraindications.

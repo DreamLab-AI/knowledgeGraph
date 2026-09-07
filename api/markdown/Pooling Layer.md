@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pooling Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -101,7 +96,7 @@ public: true
 
   Pooling serves three purposes. It cuts computation and memory for subsequent layers; it grows the effective receptive field so deeper layers integrate evidence over larger image regions; and it grants local translation invariance, since shifting a feature by a pixel or two usually leaves the pooled maximum unchanged. The lineage runs from the complex cells of Hubel and Wiesel's visual cortex model through Fukushima's Neocognitron and LeCun's LeNet to AlexNet and VGG, where max pooling was standard equipment.
 
-  The idea generalises beyond spatial grids. *Global* average or max pooling collapses each channel's entire map to one scalar, replacing bulky fully connected heads (as in ResNet and most modern classifiers) and enabling class activation mapping. In sentence [[Embedding Model]] architectures, mean pooling over token vectors (or [CLS]-token selection, or attention-weighted pooling) converts a variable-length transformer output into the fixed-length vector that retrieval and semantic-search systems index. Set and graph networks likewise rely on permutation-invariant pooling (sum, mean, max, attention) to summarise nodes into graph-level representations.
+  The idea generalises beyond spatial grids. *Global* average or max pooling collapses each channel's entire map to one scalar, replacing bulky fully connected heads (as in ResNet and most modern classifiers) and enabling class activation mapping. In sentence [[Embedding Model]] architectures, mean pooling over token vectors (or [CLS]-token selection, or attention-weighted pooling) converts a variable-length transformer output into the fixed-length vector that retrieval and semantic-search systems [private]. Set and graph networks likewise rely on permutation-invariant pooling (sum, mean, max, attention) to summarise nodes into graph-level representations.
 
   ## Technical Details
 

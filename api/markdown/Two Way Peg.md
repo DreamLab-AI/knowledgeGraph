@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Two Way Peg
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

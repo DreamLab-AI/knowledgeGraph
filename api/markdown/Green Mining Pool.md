@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Green Mining Pool
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A green mining pool is a cooperative of cryptocurrency miners that aggregates hashing power while sourcing electricity predominantly from renewable or low-carbon generation, often coupling mining to surplus or curtailed grid energy. It rewards participants for verified sustainable energy use and reports the carbon intensity of the pooled hashrate. The model aims to reduce the environmental footprint of proof-of-work consensus.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Network Component"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sustainable-bitcoin-protocol", "label": "Sustainable Bitcoin Protocol"},
-      {"@id": "urn:ngm:class:green-blockchain-initiatives", "label": "Green Blockchain Initiatives"}
+      {
+        "@id": "urn:ngm:class:sustainable-bitcoin-protocol",
+        "label": "Sustainable Bitcoin Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:green-blockchain-initiatives",
+        "label": "Green Blockchain Initiatives"
+      }
     ]
   },
   "quality": 0.72

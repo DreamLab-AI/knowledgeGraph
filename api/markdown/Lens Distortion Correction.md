@@ -1,56 +1,112 @@
----
-public: true
----
-
-# Lens Distortion Correction
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:lens-distortion-correction", "@type":"Page", "title":"Lens Distortion Correction", "vc:slug":"lens-distortion-correction", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:lens-distortion-correction",
+  "@type": "Page",
+  "title": "Lens Distortion Correction",
+  "vc:slug": "lens-distortion-correction",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:lens-distortion-correction",
-  "@type":"Class",
-  "label":"Lens Distortion Correction",
-  "definition":"Lens distortion correction is the process of removing geometric aberrations introduced by camera optics so that straight lines in the world appear straight in the image. It estimates distortion coefficients, typically radial and tangential terms, from calibration data and remaps pixels to an undistorted, rectilinear projection. The correction is a prerequisite for accurate measurement, pose estimation, and image rectification in computer-vision pipelines.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:camera-calibration","label":"Camera Calibration"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:camera-calibration","label":"Camera Calibration"}],
-    "requires":[
-      {"@id":"urn:ngm:class:camera-intrinsics","label":"Camera Intrinsics"},
-      {"@id":"urn:ngm:class:optical-calibration-target","label":"Optical Calibration Target"},
-      {"@id":"urn:ngm:class:checkerboard-pattern","label":"Checkerboard Pattern"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:lens-distortion-correction",
+  "@type": "Class",
+  "label": "Lens Distortion Correction",
+  "definition": "Lens distortion correction is the process of removing geometric aberrations introduced by camera optics so that straight lines in the world appear straight in the image. It estimates distortion coefficients, typically radial and tangential terms, from calibration data and remaps pixels to an undistorted, rectilinear projection. The correction is a prerequisite for accurate measurement, pose estimation, and image rectification in computer-vision pipelines.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:camera-calibration",
+      "label": "Camera Calibration"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"},
-      {"@id":"urn:ngm:class:feature-detection","label":"Feature Detection"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "@id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      },
+      {
+        "@id": "urn:ngm:class:checkerboard-pattern",
+        "label": "Checkerboard Pattern"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:pose-estimation","label":"Pose Estimation"},
-      {"@id":"urn:ngm:class:photogrammetry","label":"Photogrammetry"},
-      {"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:camera-calibration","label":"Camera Calibration"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:homography","label":"Homography"},
-      {"@id":"urn:ngm:class:fiducial-marker","label":"Fiducial Marker"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:camera-calibration","label":"Camera Calibration"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:homography",
+        "label": "Homography"
+      },
+      {
+        "@id": "urn:ngm:class:fiducial-marker",
+        "label": "Fiducial Marker"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

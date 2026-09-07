@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Logic
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,41 +195,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:logic:08e4e1c34e28",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:df5a54b853d978959a045248495aee927fd291bc37b4d8ac693ac2b6d21cbeb8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Theory]]",
-      "resolved": "urn:visionflow:linked:information-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Logic is the systematic study of valid inference and formal reasoning — the branch of inquiry that identifies the principles by which correct arguments are distinguished from fallacious ones. It encompasses [[Propositional Logic]], [[Predicate Logic]], [[Modal Logic]], [[Description Logic]], and [[Temporal Logic]], providing rigorous frameworks for deriving conclusions from premises. Logic is foundational to [[Mathematics]], [[Philosophy]], [[Artificial Intelligence]], and [[Computer Science]], enabling both human and machine reasoning to be expressed, verified, and automated.
 
@@ -320,7 +280,7 @@ public: true
   - Logic is a foundational concern across AI safety (correctness guarantees), [[Governance]] (policy formalisation), and [[Data]] integration (schema alignment via ontological reasoning).
 
 - ### Current Landscape (2026)
-  - The "reasoning-model era" that began with OpenAI o1 in late 2024 reframed machine logic around long-horizon chain-of-thought and reinforcement learning from verifiable rewards (RLVR); DeepSeek-R1 (open-weights, January 2025) showed this reasoning behaviour could be elicited by pure RL on verifiable rewards with no supervised reasoning traces.
+  - The "reasoning-model era" that began with OpenAI o1 in late 2024 reframed machine logic around long-horizon chain-of-thought and reinforcement learning from verifiable rewards (RLVR); DeepSeek-R1 (open-weights, January 2025) showed this reasoning behaviour [private] be elicited by pure RL on verifiable rewards with no supervised reasoning traces.
   - Formal deductive logic reached competition frontier: at IMO 2025 an advanced Gemini with Deep Think solved five of six problems (35/42, gold) end-to-end in natural language under the official time limit, while Google's neuro-symbolic AlphaGeometry 2 delivered gold-medal geometry performance.
   - Neural theorem proving over Lean 4 matured rapidly with DeepSeek-Prover-V2-671B (April 2025) reaching 88.9% pass ratio on MiniF2F-test and solving 47/658 PutnamBench problems, narrowing the gap between informal and formal mathematical reasoning.
   - The dominant applied paradigm is now neuro-symbolic: LLMs autoformalise natural language into first-order logic, SAT/SMT (Z3), constraint programs or Lean, then hand off to deterministic solvers, with frameworks such as Logic-LM, VERUS-LM and adaptive multi-paradigm systems (EACL 2026) reporting 17-39% accuracy gains over pure chain-of-thought.

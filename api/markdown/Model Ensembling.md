@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Ensembling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:robustness", "label": "Robustness"},
-      {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"}
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture-of-Experts Architecture"}
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture-of-Experts Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ]
   },
   "provenance": {
@@ -83,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-ensembling:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dacf3d3bf70a6d38e71835d64372f26133bdb1e2df6860d99c2b7a6c85549d5a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A technique that combines predictions from multiple independently trained models to improve overall performance and robustness. Ensembling leverages diversity among models to reduce variance, improve generalisation, and provide more reliable predictions.

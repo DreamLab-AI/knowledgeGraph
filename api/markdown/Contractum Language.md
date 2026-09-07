@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Contractum Language
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Contractum is a high-level smart-contract programming language designed for the RGB protocol, which performs client-side validation of state transitions anchored to Bitcoin. It compiles to AluVM bytecode and lets developers express RGB schemas and contract logic in a readable, declarative form. It is central to authoring confidential, scalable contracts that settle off-chain while inheriting Bitcoin's security.",
   "domain": "blockchain",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-252-dao-governance-telecollaboration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-252-dao-governance-telecollaboration:8274c0c378b9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:70e61faf927f499a3b19dcb152c9802b273de5d3999c576062c434e848e0de69"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DAO Governance]]",
-      "resolved": "urn:visionflow:linked:dao-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO]]",
-      "resolved": "urn:visionflow:linked:dao",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Remote Collaboration]]",
-      "resolved": "urn:visionflow:linked:remote-collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Collaboration]]",
-      "resolved": "urn:visionflow:linked:collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:linked:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - DAO governance for telecollaboration is the use of decentralised autonomous organisation mechanisms, such as token-weighted or membership voting, to coordinate decisions and resource allocation within distributed collaborative communities.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Neo4j
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:neo-4-j:0d311f7c0c7a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7ca59e3a182cebacde68b87d35687eee524c9bbbd65cfd0c6864791fa8611bee"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Graph Database]]",
-      "resolved": "urn:visionflow:linked:graph-database",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Database System]]",
-      "resolved": "urn:visionflow:linked:database-system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A graph database management system that stores data as nodes and relationships and queries it with the Cypher query language. It is one of the most widely used native graph databases.

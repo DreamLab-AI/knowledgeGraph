@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CorDapp
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A CorDapp (Corda Distributed Application) is a distributed application built to run on the R3 Corda enterprise blockchain platform. It bundles the contracts, states, and flows that define shared business logic and the point-to-point messaging that coordinates transactions between participating nodes. CorDapps are the unit of deployment by which enterprises implement permissioned, privacy-preserving workflows on Corda.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:r3-corda", "label": "R3 Corda"}, {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
+    ]
   },
   "quality": 0.72
 }

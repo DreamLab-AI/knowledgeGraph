@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asynchronous Execution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,19 +60,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"}
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.5,
@@ -88,42 +104,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:asynchronous-execution:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7b79d2ae9a0b02826e254930e1298439878b4fc6ebd076904ccee2cd2d9d8702"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Core Technology]]",
-      "resolved": "urn:visionflow:linked:core-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Execution Model]]",
-      "resolved": "urn:visionflow:linked:execution-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:owl:class:edge-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An execution model in which operations are initiated without blocking the calling thread; completion is signalled via callbacks, promises, futures, or events, enabling high-throughput concurrent processing for I/O-bound workloads and distributed system communication.

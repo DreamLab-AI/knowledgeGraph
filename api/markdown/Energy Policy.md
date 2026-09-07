@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Energy Policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "energy-policy",
   "title": "Energy Policy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["PJM Interconnection", "Wholesale Power Auction"],
+  "vc:outboundWikilinks": [
+    "PJM Interconnection",
+    "Wholesale Power Auction"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:governance", "label": "Governance"}, {"@id": "urn:ngm:class:energy-infrastructure", "label": "Energy Infrastructure"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:energy-infrastructure",
+        "label": "Energy Infrastructure"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

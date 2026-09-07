@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Delegation Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A delegation registry is an on-chain contract that records mappings from a token holder's address to a delegate authorised to act or vote on their behalf. In DAO governance it lets holders assign their voting power to a representative without transferring assets, and the registry serves as the canonical source consulted when tallying votes. It enables liquid democracy patterns and separation of custody from voting authority.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"},
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"}
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      }
     ]
   },
   "quality": 0.72

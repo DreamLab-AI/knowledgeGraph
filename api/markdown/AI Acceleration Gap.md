@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Acceleration Gap
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-acceleration-gap",
   "title": "AI Acceleration Gap",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Competitive Advantage", "Exponential Growth"],
+  "vc:outboundWikilinks": [
+    "Competitive Advantage",
+    "Exponential Growth"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}, {"@id": "urn:ngm:class:competitive-advantage", "label": "Competitive Advantage"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      },
+      {
+        "@id": "urn:ngm:class:competitive-advantage",
+        "label": "Competitive Advantage"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

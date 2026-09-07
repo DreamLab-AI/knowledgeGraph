@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fixed Supply Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,25 +59,58 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:emission-schedule", "label": "Emission Schedule"},
-      {"@id": "urn:ngm:class:total-supply", "label": "Total Supply"}
+      {
+        "@id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:total-supply",
+        "label": "Total Supply"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:circulating-supply", "label": "Circulating Supply"},
-      {"@id": "urn:ngm:class:halving", "label": "Halving"},
-      {"@id": "urn:ngm:class:market-capitalization", "label": "Market Capitalization"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {
+        "@id": "urn:ngm:class:circulating-supply",
+        "label": "Circulating Supply"
+      },
+      {
+        "@id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "@id": "urn:ngm:class:market-capitalization",
+        "label": "Market Capitalization"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:inflationary-token", "label": "Inflationary Token"},
-      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"}
+      {
+        "@id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      },
+      {
+        "@id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"}
+      {
+        "@id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ]
   },
   "provenance": {
@@ -92,37 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fixed-supply-token:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2b19207a0c16cc5b5002f4fd7bb18a28305d094d80a533f351a84e919e659e85"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fungible Token]]",
-      "resolved": "urn:visionflow:owl:class:fungible-token",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Fixed Supply Token is a fungible blockchain token whose total issuance is capped at a hard-coded maximum that the protocol cannot exceed, regardless of future governance decisions. Distribution of the supply over time is governed by a predetermined emission schedule, and no additional tokens can be minted once the cap is reached, conferring deflationary scarcity properties analogous to precious metals.

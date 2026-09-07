@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:computational-photography",
   "domain": "ai",
-  "definition": "A discipline that extends or supplants the optical and electromechanical capabilities of a camera system through digital computation, combining multiple sensor readings, learned priors, and algorithmic inference to produce images that no single physical exposure could yield. The field integrates optics, signal processing, machine learning, and human visual perception to reconstruct scene radiance, estimate scene geometry, and synthesise perceptually superior final images.",
+  "definition": "A discipline that extends or supplants the optical and electromechanical capabilities of a camera system through digital computation, combining multiple sensor readings, learned priors, and algorithmic inference to produce images that no single physical exposure [private] yield. The field integrates optics, signal processing, machine learning, and human visual perception to reconstruct scene radiance, estimate scene geometry, and synthesise perceptually superior final images.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:image-processing",

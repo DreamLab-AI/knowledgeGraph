@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tether
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,62 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tether:3dc7089d175e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:10d6b636d5bc00849a85433264c3d72586d737fe3296670341bc1c4a3afa37d4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reserve Backing]]",
-      "resolved": "urn:visionflow:linked:reserve-backing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:linked:stablecoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Crypto Trading]]",
-      "resolved": "urn:visionflow:linked:crypto-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Domain]]",
-      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset Domain]]",
-      "resolved": "urn:visionflow:linked:digital-asset",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Tether is the issuer of USDT, the largest fiat-collateralised stablecoin by circulating supply, designed to maintain a value pegged to the United States dollar. Tokens are issued on numerous blockchains and are intended to be redeemable one-to-one for dollars, backed by reserves held by the issuer. Tether is widely used for trading, settlement and as a dollar proxy on exchanges, and its reserve composition and transparency have been subjects of regulatory scrutiny.

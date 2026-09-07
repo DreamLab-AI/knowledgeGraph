@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Push Notification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A push notification is a server-initiated message delivered to a client device or application without an explicit client request, enabling real-time alerts about events, state changes, or incoming communications. It relies on persistent connections or platform push services that maintain a delivery channel even when the application is backgrounded. It is a foundational primitive for presence, messaging, and event-driven user engagement.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:presence-indicator", "label": "Presence Indicator"},
-      {"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"}
+      {
+        "@id": "urn:ngm:class:presence-indicator",
+        "label": "Presence Indicator"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
     ]
   },
   "quality": 0.72

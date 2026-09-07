@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Exoskeleton Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Exoskeleton control is the set of control strategies that coordinate a wearable robotic exoskeleton's actuators with the intent and movement of its human wearer. It fuses proprioceptive and biomechanical sensing with kinematic and dynamic models to provide assistive torque while preserving stability and safety. Effective control must adapt to gait phase, user effort, and varying loads in real time to augment strength or restore mobility.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:proprioceptive-sensor", "label": "Proprioceptive Sensor"}, {"@id": "urn:ngm:class:kinematics-model", "label": "Kinematics Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:proprioceptive-sensor",
+        "label": "Proprioceptive Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics-model",
+        "label": "Kinematics Model"
+      }
+    ]
   },
   "quality": 0.72
 }

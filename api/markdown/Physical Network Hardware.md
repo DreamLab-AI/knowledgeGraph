@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Physical Network Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:physical-network-hardware:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e20ac2ba4deab3f54abf3a1387d2e59a71f6e8bc5357ebbe351276dc954b251f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Low Latency Connectivity]]",
-      "resolved": "urn:visionflow:linked:low-latency-connectivity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:network-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The networking infrastructure components that enable connectivity and data transmission for metaverse applications, including routers, switches, access points, edge computing devices, and 5G equipment required for low-latency immersive experiences.

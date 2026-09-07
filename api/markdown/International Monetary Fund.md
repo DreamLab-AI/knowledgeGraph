@@ -1,54 +1,100 @@
----
-public: true
----
-
-# International Monetary Fund
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:international-monetary-fund", "@type":"Page", "title":"International Monetary Fund", "vc:slug":"international-monetary-fund", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:international-monetary-fund",
+  "@type": "Page",
+  "title": "International Monetary Fund",
+  "vc:slug": "international-monetary-fund",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:international-monetary-fund",
-  "@type":"Class",
-  "label":"International Monetary Fund",
-  "definition":"The International Monetary Fund (IMF) is an international financial institution, established at the 1944 Bretton Woods conference, whose mandate is to promote global monetary cooperation, exchange-rate stability, balanced trade and financial stability among its member countries. It provides macroeconomic surveillance, technical assistance and conditional lending to members facing balance-of-payments difficulties, and manages the Special Drawing Rights reserve asset. As a central pillar of the international monetary system, the IMF shapes monetary policy advice and crisis response worldwide.",
-  "domain":"finance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:finance","label":"Finance"}],
-  "relations":{
-    "requires":[
-      {"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:international-monetary-fund",
+  "@type": "Class",
+  "label": "International Monetary Fund",
+  "definition": "The International Monetary Fund (IMF) is an international financial institution, established at the 1944 Bretton Woods conference, whose mandate is to promote global monetary cooperation, exchange-rate stability, balanced trade and financial stability among its member countries. It provides macroeconomic surveillance, technical assistance and conditional lending to members facing balance-of-payments difficulties, and manages the Special Drawing Rights reserve asset. As a central pillar of the international monetary system, the IMF shapes monetary policy advice and crisis response worldwide.",
+  "domain": "finance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:finance",
+      "label": "Finance"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:central-bank","label":"Central Bank"},
-      {"@id":"urn:ngm:class:fiat-currency","label":"Fiat Currency"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
     ],
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:decentralized-finance","label":"Decentralised Finance"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralised Finance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:central-bank","label":"Central Bank"},
-      {"@id":"urn:ngm:class:fiat-currency","label":"Fiat Currency"},
-      {"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:governance","label":"Governance"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

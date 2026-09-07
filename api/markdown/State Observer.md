@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - StateObserver
----
-
-# State Observer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,17 +20,34 @@ aliases:
   "definition": "A state observer is a dynamical system that estimates the internal state of a controlled plant from its measured inputs and outputs when the full state cannot be directly sensed. By running a model of the plant in parallel and correcting it with the measurement error, an observer reconstructs unmeasured variables for use in feedback control. Classical examples include the Luenberger observer for deterministic systems and the Kalman filter for stochastic systems, making observers essential to state-feedback control of partially observable processes.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:state-estimation",
+      "label": "State Estimation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"}
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
     ]
   },
   "quality": 0.8

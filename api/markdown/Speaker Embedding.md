@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Speaker Embedding
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,43 +20,102 @@ public: true
   "definition": "A Speaker Embedding is a fixed-dimensional vector representation of a speaker's vocal identity, extracted from variable-length speech segments by a neural network trained to encode speaker-discriminative acoustic features while remaining invariant to spoken content, channel conditions, and background noise. Models such as d-vectors (deep speaker embeddings), x-vectors (TDNN-based), and ECAPA-TDNN produce embeddings that cluster in a metric space where same-speaker utterances lie close together and different-speaker utterances are well-separated. Speaker embeddings enable downstream tasks including speaker verification, speaker identification, speaker diarisation, and personalised speech synthesis without storing raw audio. They are trained using discriminative objectives such as softmax classification over training speakers, generalised end-to-end loss, or angular prototypical loss.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:embedding", "label": "Embedding"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:embedding",
+      "label": "Embedding"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:embedding-space", "label": "Embedding Space"},
-      {"@id": "urn:ngm:class:embedding-layer", "label": "Embedding Layer"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-layer",
+        "label": "Embedding Layer"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
-      {"@id": "urn:ngm:class:embedding-space", "label": "Embedding Space"}
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
-      {"@id": "urn:ngm:class:real-time-ai", "label": "Real-Time AI"}
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-ai",
+        "label": "Real-Time AI"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:graph-embedding", "label": "Graph Embedding"},
-      {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"},
-      {"@id": "urn:ngm:class:embedding-search", "label": "Embedding Search"}
+      {
+        "@id": "urn:ngm:class:graph-embedding",
+        "label": "Graph Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy-preserving-ai", "label": "Privacy-Preserving AI"},
-      {"@id": "urn:ngm:class:real-time-ai-inference", "label": "Real-Time AI Inference"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-ai",
+        "label": "Privacy-Preserving AI"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:document-retrieval", "label": "Document Retrieval"}
+      {
+        "@id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cross-modal-retrieval", "label": "Cross Modal Retrieval"}
+      {
+        "@id": "urn:ngm:class:cross-modal-retrieval",
+        "label": "Cross Modal Retrieval"
+      }
     ]
   },
   "sameAs": [],

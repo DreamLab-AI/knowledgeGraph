@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Evaluation Benchmarks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,44 +7,158 @@ public: true
   "title": "Agent Evaluation Benchmarks",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
-    {"@id": "urn:visionflow:linked:evaluation-harness", "vc:label": "Evaluation Harness"},
-    {"@id": "urn:visionflow:linked:agent-development-sdks", "vc:label": "Agent Development SDKs"},
-    {"@id": "urn:visionflow:linked:swe-bench", "vc:label": "SWE-bench"},
-    {"@id": "urn:visionflow:linked:web-arena", "vc:label": "WebArena"},
-    {"@id": "urn:visionflow:linked:arc-agi", "vc:label": "ARC-AGI"},
-    {"@id": "urn:visionflow:linked:inspect-ai", "vc:label": "inspect_ai"},
-    {"@id": "urn:visionflow:linked:gaia-benchmark", "vc:label": "GAIA Benchmark"},
-    {"@id": "urn:visionflow:linked:osworld", "vc:label": "OSWorld"},
-    {"@id": "urn:visionflow:linked:agent-bench", "vc:label": "AgentBench"},
-    {"@id": "urn:visionflow:linked:vita-bench", "vc:label": "VitaBench"},
-    {"@id": "urn:visionflow:linked:metr-hcast", "vc:label": "METR HCAST"},
-    {"@id": "urn:visionflow:linked:tau-bench", "vc:label": "TAU-bench"},
-    {"@id": "urn:visionflow:linked:terminal-bench", "vc:label": "Terminal-Bench"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:autonomous-coding", "vc:label": "Autonomous Coding"},
-    {"@id": "urn:visionflow:linked:computer-use", "vc:label": "Computer Use"},
-    {"@id": "urn:visionflow:linked:browser-automation", "vc:label": "Browser Automation"},
-    {"@id": "urn:visionflow:linked:llm-evaluation", "vc:label": "LLM Evaluation"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:re-act-pattern", "vc:label": "ReAct Pattern"},
-    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks"},
-    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
-    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
-    {"@id": "urn:visionflow:linked:reward-hacking", "vc:label": "Reward Hacking"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain-of-Thought"},
-    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:linked:plan-and-execute-pattern", "vc:label": "Plan-and-Execute Pattern"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:ai-research-area", "vc:label": "ComputationAndIntelligenceDomain"},
-    {"@id": "urn:visionflow:owl:class:application-layer", "vc:label": "ApplicationLayer"}
+    {
+      "@id": "urn:visionflow:linked:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-harness",
+      "vc:label": "Evaluation Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-development-sdks",
+      "vc:label": "Agent Development SDKs"
+    },
+    {
+      "@id": "urn:visionflow:linked:swe-bench",
+      "vc:label": "SWE-bench"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-arena",
+      "vc:label": "WebArena"
+    },
+    {
+      "@id": "urn:visionflow:linked:arc-agi",
+      "vc:label": "ARC-AGI"
+    },
+    {
+      "@id": "urn:visionflow:linked:inspect-ai",
+      "vc:label": "inspect_ai"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaia-benchmark",
+      "vc:label": "GAIA Benchmark"
+    },
+    {
+      "@id": "urn:visionflow:linked:osworld",
+      "vc:label": "OSWorld"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-bench",
+      "vc:label": "AgentBench"
+    },
+    {
+      "@id": "urn:visionflow:linked:vita-bench",
+      "vc:label": "VitaBench"
+    },
+    {
+      "@id": "urn:visionflow:linked:metr-hcast",
+      "vc:label": "METR HCAST"
+    },
+    {
+      "@id": "urn:visionflow:linked:tau-bench",
+      "vc:label": "TAU-bench"
+    },
+    {
+      "@id": "urn:visionflow:linked:terminal-bench",
+      "vc:label": "Terminal-Bench"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-coding",
+      "vc:label": "Autonomous Coding"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-use",
+      "vc:label": "Computer Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:browser-automation",
+      "vc:label": "Browser Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-evaluation",
+      "vc:label": "LLM Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks",
+      "vc:label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-hacking",
+      "vc:label": "Reward Hacking"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain-of-Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:plan-and-execute-pattern",
+      "vc:label": "Plan-and-Execute Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-research-area",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -65,48 +174,90 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-      {
-            "@id": "urn:ngm:class:agent-harness",
-            "label": "Agent Harness"
-      },
-      {
-            "@id": "urn:ngm:class:llm-evaluation",
-            "label": "LLM Evaluation"
-      }
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "@id": "urn:ngm:class:llm-evaluation",
+      "label": "LLM Evaluation"
+    }
   ],
   "relations": {
-      "hasPart": [
-            {"@id": "urn:ngm:class:swe-bench", "label": "SWE-bench"},
-            {"@id": "urn:ngm:class:web-arena", "label": "WebArena"},
-            {"@id": "urn:ngm:class:gaia-benchmark", "label": "GAIA Benchmark"},
-            {"@id": "urn:ngm:class:osworld", "label": "OSWorld"},
-            {"@id": "urn:ngm:class:agent-bench", "label": "AgentBench"},
-            {"@id": "urn:ngm:class:vita-bench", "label": "VitaBench"},
-            {"@id": "urn:ngm:class:metr-hcast", "label": "METR HCAST"},
-            {"@id": "urn:ngm:class:inspect-ai", "label": "inspect_ai"}
-      ],
-      "requires": [
-            {"@id": "urn:ngm:class:agent-execution-sandboxes", "label": "Agent Execution Sandboxes"},
-            {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-            {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
-      ],
-      "enables": [
-            {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-            {"@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding"},
-            {"@id": "urn:ngm:class:computer-use", "label": "Computer Use"}
-      ],
-      "relatedTo": [
-            {
-                  "@id": "urn:ngm:class:evaluation-harness",
-                  "label": "Evaluation Harness"
-            },
-            {
-                  "@id": "urn:ngm:class:agent-development-sdks",
-                  "label": "Agent Development SDKs"
-            }
-      ]
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:swe-bench",
+        "label": "SWE-bench"
+      },
+      {
+        "@id": "urn:ngm:class:web-arena",
+        "label": "WebArena"
+      },
+      {
+        "@id": "urn:ngm:class:gaia-benchmark",
+        "label": "GAIA Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:osworld",
+        "label": "OSWorld"
+      },
+      {
+        "@id": "urn:ngm:class:agent-bench",
+        "label": "AgentBench"
+      },
+      {
+        "@id": "urn:ngm:class:vita-bench",
+        "label": "VitaBench"
+      },
+      {
+        "@id": "urn:ngm:class:metr-hcast",
+        "label": "METR HCAST"
+      },
+      {
+        "@id": "urn:ngm:class:inspect-ai",
+        "label": "inspect_ai"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      },
+      {
+        "@id": "urn:ngm:class:agent-development-sdks",
+        "label": "Agent Development SDKs"
+      }
+    ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "vc:termId": "AI-9917",
   "vc:schemaVersion": 2
 }
@@ -228,19 +379,19 @@ public: true
 
   ### Historical Origins and Motivation
 
-  Agent evaluation benchmarks arose from the recognition that static language-model benchmarks measure a fundamentally different capability than autonomous goal-directed action. A model that scores well on multiple-choice reasoning may still fail catastrophically when required to coordinate dozens of sequential tool calls, maintain state across a long context window, recover from tool errors mid-sequence, make irrecoverable decisions in live environments, and produce side-effects that accumulate across turns. The earliest agent-oriented evaluations grew out of the interactive code execution tradition exemplified by HumanEval (Chen et al., 2021) and MBPP, but those benchmarks evaluated single-function completion in isolation rather than multi-step goal pursuit. The transition to genuine agent evaluation required several innovations: interactive environments that the agent could modify (not just observe), verifiable success criteria that could not be gamed by surface-level text similarity, long-horizon tasks decomposable into discrete measurable subtasks, and reproducible sandboxed infrastructure so that results across different agent scaffolding approaches could be meaningfully compared.
+  Agent evaluation benchmarks arose from the recognition that static language-model benchmarks measure a fundamentally different capability than autonomous goal-directed action. A model that scores well on multiple-choice reasoning may still fail catastrophically when required to coordinate dozens of sequential tool calls, maintain state across a long context window, recover from tool errors mid-sequence, make irrecoverable decisions in live environments, and produce side-effects that accumulate across turns. The earliest agent-oriented evaluations grew out of the interactive code execution tradition exemplified by HumanEval (Chen et al., 2021) and MBPP, but those benchmarks evaluated single-function completion in isolation rather than multi-step goal pursuit. The transition to genuine agent evaluation required several innovations: interactive environments that the agent [private] modify (not just observe), verifiable success criteria that [private] not be gamed by surface-level text similarity, long-horizon tasks decomposable into discrete measurable subtasks, and reproducible sandboxed infrastructure so that results across different agent scaffolding approaches [private] be meaningfully compared.
 
   The field achieved its first mature exemplar with the WebArena paper (Zhou et al., 2024), which instantiated five real web applications — an e-commerce shop, a Reddit-style forum, a GitLab code repository, a content management system, and Wikipedia — in Docker containers, constructed 812 natural language tasks spanning multi-step navigation, form-filling, search, and cross-application workflows, and provided a graded automatic scoring system. Critically, WebArena used functional verification (checking the actual state of the sandboxed application after agent action) rather than string matching, making it far harder to game than prior benchmarks. The SWE-bench paper (Jimenez et al., 2024), published around the same time, achieved a different kind of ground truth: it curated 2,294 real GitHub issues from twelve popular Python repositories (Django, Flask, pytest, astropy, scikit-learn, and others), paired each issue with the actual developer-written patch and the test suite that distinguishes the broken from the fixed state, and evaluated agents on their ability to submit a patch that makes the failing tests pass without breaking existing tests. This approach gave SWE-bench an unusually robust evaluation signal: test-suite pass/fail is binary, deterministic, and directly reflects what developers actually care about, making it the de facto leaderboard for software engineering agents.
 
   ### The GAIA and OSWorld Generations
 
-  GAIA (Mialon et al., 2024) addressed the general assistant capability axis: tasks requiring a combination of web search, file processing, code execution, and multi-step reasoning to arrive at a factual answer that could be verified against a human-annotated reference. GAIA's three difficulty levels (Level 1: straightforward web lookup; Level 2: multi-step reasoning across several tools; Level 3: complex multi-hop requiring sustained planning) provided a capability spectrum that allowed fine-grained progress tracking. The benchmark's explicit requirement for human-annotated reference answers and its continuous refresh from recent web content made contamination harder than for static knowledge benchmarks. OSWorld (Xie et al., 2024) moved evaluation to the full desktop computer-use domain: an agent interacts with a real operating system (Ubuntu or Windows) through screenshot observations and simulated keyboard/mouse actions, completing 369 tasks involving file management, application control (LibreOffice, Chrome, GIMP, VS Code), and cross-application workflows that mirror what a professional knowledge worker would do across a normal workday. OSWorld's success as a benchmark catalysed an entire sub-field of computer-use research and directly motivated Anthropic's development of the computer-use capability subsequently exposed through the Claude Agent SDK.
+  GAIA (Mialon et al., 2024) addressed the general assistant capability axis: tasks requiring a combination of web search, file processing, code execution, and multi-step reasoning to arrive at a factual answer that [private] be verified against a human-annotated reference. GAIA's three difficulty levels (Level 1: straightforward web lookup; Level 2: multi-step reasoning across several tools; Level 3: complex multi-hop requiring sustained planning) provided a capability spectrum that allowed fine-grained progress tracking. The benchmark's explicit requirement for human-annotated reference answers and its continuous refresh from recent web content made contamination harder than for static knowledge benchmarks. OSWorld (Xie et al., 2024) moved evaluation to the full desktop computer-use domain: an agent interacts with a real operating system (Ubuntu or Windows) through screenshot observations and simulated keyboard/mouse actions, completing 369 tasks involving file management, application control (LibreOffice, Chrome, GIMP, VS Code), and cross-application workflows that mirror what a professional knowledge worker would do across a normal workday. OSWorld's success as a benchmark catalysed an entire sub-field of computer-use research and directly motivated Anthropic's development of the computer-use capability subsequently exposed through the Claude Agent SDK.
 
   ### Safety Evaluation: Time Horizons and Red-Teaming
 
   A parallel and equally important strand of evaluation focuses not on task success but on safety: what harmful actions might an agent take, how long can it operate autonomously before requiring human oversight, and how robust is it to adversarial prompts designed to redirect its actions? METR (Model Evaluation and Threat Research) developed HCAST (Human-Calibrated Autonomy Software Tasks) specifically to address the time-horizon question: by recruiting 140 skilled engineers to attempt the same tasks under controlled conditions, METR obtained empirical estimates of how long each task would take a skilled human, allowing them to situate AI agent performance in a human-relative frame. Their longitudinal findings — that the effective time horizon of frontier agents has been doubling every four months since 2024, with the capability frontier compressing from tasks that would take a human less than a minute to tasks taking hours — provide a concrete empirical basis for responsible scaling policies adopted by frontier labs.
 
-  A critical and sometimes under-appreciated dimension is benchmark manipulation and [[Reward Hacking]]. UC Berkeley's Center for Responsible Decentralised Intelligence published research in 2025 demonstrating that an automated scanning agent could exploit scoring loopholes in all eight major agent benchmarks simultaneously — SWE-bench, WebArena, OSWorld, GAIA, Terminal-Bench, FieldWorkArena, CAR-bench, and AgentBench — achieving near-perfect scores without solving any of the underlying tasks. The mechanism in each case was different: in SWE-bench, a February 2026 audit found that 59.4% of the hardest tasks had tests that would pass even when the underlying bug remained unfixed, and roughly one-third of all SWE-bench issues contained solution hints in the issue comments themselves. This contamination problem prompted the community to introduce more rigorous anti-exploitation constraints, commission independent evaluation organisations (METR, AISI, Apollo Research), and adopt multi-scorer consensus protocols for high-stakes assessments.
+  A critical and sometimes under-appreciated dimension is benchmark manipulation and [[Reward Hacking]]. UC Berkeley's Center for Responsible Decentralised Intelligence published research in 2025 demonstrating that an automated scanning agent [private] exploit scoring loopholes in all eight major agent benchmarks simultaneously — SWE-bench, WebArena, OSWorld, GAIA, Terminal-Bench, FieldWorkArena, CAR-bench, and AgentBench — achieving near-perfect scores without solving any of the underlying tasks. The mechanism in each case was different: in SWE-bench, a February 2026 audit found that 59.4% of the hardest tasks had tests that would pass even when the underlying bug remained unfixed, and roughly one-third of all SWE-bench issues contained solution hints in the issue comments themselves. This contamination problem prompted the community to introduce more rigorous anti-exploitation constraints, commission independent evaluation organisations (METR, AISI, Apollo Research), and adopt multi-scorer consensus protocols for high-stakes assessments.
 
   ### The Rapid Performance Escalation of 2024–2026
 
@@ -430,7 +581,7 @@ public: true
 
   Imperial College London's partnership with Lenovo for the London AI Technology Centre at White City Deep Tech Campus includes agent capability assessment as a core research strand, with particular focus on safety-critical deployment contexts in healthcare and infrastructure where benchmark rigour is a regulatory requirement. Edinburgh University, as a founding Turing Institute member and part of the UKRI-funded national generative AI hub, has active research on agent evaluation methodology, including the question of how to construct benchmarks that remain discriminative as capability improves — directly addressing the saturation problem that drives ARC-AGI's generational evolution.
 
-  UCL leads the national generative AI hub consortium spanning Imperial, Cardiff, Cambridge, Oxford, Manchester, Edinburgh, and Surrey. Within this network, cross-institutional evaluation methodology is an active research theme, including the development of agreed protocols for multi-modal agent evaluation that could inform EU AI Act conformity assessment frameworks. In Northern England, Manchester and Sheffield's industrial AI programmes are beginning to apply agent benchmarks as procurement criteria for automated process agents in manufacturing and logistics, with [[TAU-bench]] policy adherence emerging as particularly relevant for supply-chain decision agents operating within compliance constraints.
+  UCL leads the national generative AI hub consortium spanning Imperial, Cardiff, Cambridge, Oxford, Manchester, Edinburgh, and Surrey. Within this network, cross-institutional evaluation methodology is an active research theme, including the development of agreed protocols for multi-modal agent evaluation that [private] inform EU AI Act conformity assessment frameworks. In Northern England, Manchester and Sheffield's industrial AI programmes are beginning to apply agent benchmarks as procurement criteria for automated process agents in manufacturing and logistics, with [[TAU-bench]] policy adherence emerging as particularly relevant for supply-chain decision agents operating within compliance constraints.
 
   ## Future Directions (2026–2030)
 
@@ -489,7 +640,7 @@ public: true
   4. Mialon, G., Fourrier, C., Swift, C., Wolf, T., LeCun, Y., & Scialom, T. (2024). GAIA: A Benchmark for General AI Assistants. *ICLR 2024*. https://arxiv.org/abs/2311.12983
   5. Xie, T., Zhang, D., Chen, J., Li, X., Zhao, S., Cao, R., & Yu, T. (2024). OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments. *NeurIPS 2024*. https://arxiv.org/abs/2404.07972
   6. Chen, M., Tworek, J., Jun, H., et al. (2021). Evaluating Large Language Models Trained on Code (HumanEval). *arXiv 2107.03374*. https://arxiv.org/abs/2107.03374
-  7. OpenAI (2024). Introducing SWE-bench Verified. https://openai.com/index/introducing-swe-bench-verified/
+  7. OpenAI (2024). Introducing SWE-bench Verified. https://openai.com/[private]/introducing-swe-bench-verified/
   8. METR (2025). HCAST: Human-Calibrated Autonomy Software Tasks. https://metr.org/hcast.pdf
   9. METR (2025). Measuring AI Ability to Complete Long Tasks. *arXiv 2503.14499*. https://arxiv.org/abs/2503.14499
   10. UK AI Security Institute (2024–2026). inspect_ai: A Framework for Large Language Model Evaluations. https://github.com/UKGovernmentBEIS/inspect_ai

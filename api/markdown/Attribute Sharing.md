@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Attribute Sharing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -129,72 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:attribute-sharing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ab3d0119d165ca6a2b30f33ce2fc56f8df4f38d4ab67d3dada8e4aaea4b3c4a4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain Anchoring]]",
-      "resolved": "urn:visionflow:linked:blockchain-anchoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Credential Verification]]",
-      "resolved": "urn:visionflow:linked:credential-verification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Selective Disclosure]]",
-      "resolved": "urn:visionflow:linked:selective-disclosure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-Platform Identity]]",
-      "resolved": "urn:visionflow:owl:class:cross-platform-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Identifiers]]",
-      "resolved": "urn:visionflow:owl:class:decentralized-identifiers",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:owl:class:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verifiable Credentials]]",
-      "resolved": "urn:visionflow:owl:class:verifiable-credentials",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Attribute Sharing refers to identity federation mechanisms that enable selective disclosure of user credentials and identity attributes across metaverse platforms and blockchain applications, using Self-Sovereign Identity (SSI) principles and decentralized identifiers to maintain user control while enabling verification without centralized authorities.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Shared Ar Experiences
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:shared-ar-experiences:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:470f932ca1a43910b34b8de3f2c77f30352f2d10200e3bfabbe8c52f4cc06a5f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Social AR Interaction]]",
-      "resolved": "urn:visionflow:linked:social-ar-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:owl:class:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Collaborative augmented reality interactions enabling multiple users to simultaneously view and interact with digital content overlaid on shared physical environments, supporting real-time synchronization of virtual objects across devices for social connection and joint activities.

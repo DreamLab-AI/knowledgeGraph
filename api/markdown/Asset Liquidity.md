@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Liquidity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Asset Liquidity is the degree to which a digital or tokenised asset can be converted into cash or another asset at close to its fair market value without materially moving that price or incurring prohibitive friction. In decentralised finance and tokenised asset markets, liquidity is determined by order-book depth, automated market maker reserves, and the breadth of platforms on which an asset can be traded.",
   "domain": "finance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:exchange-mechanism", "label": "Exchange Mechanism"}
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:exchange-mechanism",
+        "label": "Exchange Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"}
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - Institutional adoption of tokenised real-world assets (RWAs) — Treasury bills, real estate, private credit — has intensified focus on on-chain liquidity infrastructure. BlackRock's BUIDL fund and Franklin Templeton's tokenised money market fund demonstrated that regulated issuers can achieve daily liquidity for on-chain instruments by maintaining redemption mechanisms. Cross-chain bridges and interoperability layers (LayerZero, Wormhole) extend liquidity across blockchain ecosystems, though bridge exploits represent a recurring systemic risk that suppresses institutional appetite.
 
   - By 2024–2025, total DeFi TVL (total value locked) stands above $100 billion across major chains, indicating substantial liquidity provision, yet retail NFT markets remain structurally illiquid compared to fungible token markets. Regulatory frameworks (MiCA in the EU, SEC enforcement actions in the US) are imposing disclosure and registration requirements on liquidity pools and token issuers, likely concentrating liquidity onto compliant venues. Prediction markets and real-world asset tokenisation are identified as the next frontier for on-chain liquidity expansion.
-

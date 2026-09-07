@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Context Window Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "context-window-management",
   "title": "Context Window Management",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Agentic Coding", "GPT-5.1 Codex Max"],
+  "vc:outboundWikilinks": [
+    "Agentic Coding",
+    "GPT-5.1 Codex Max"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpt",
+      "label": "GPT"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}, {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}, {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

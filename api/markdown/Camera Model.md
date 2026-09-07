@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Camera Model
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:camera-model", "@type": "Page", "title": "Camera Model", "vc:slug": "camera-model", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:camera-model",
+  "@type": "Page",
+  "title": "Camera Model",
+  "vc:slug": "camera-model",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

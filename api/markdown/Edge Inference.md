@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Edge Inference
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,46 +192,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:edge-inference:d2d9d8baf591",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0a0372a8200a50664dd4c742f01fd6fb85d6aa8ca4c7a78f783927c4c89c2fb3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Inference Engine]]",
-      "resolved": "urn:visionflow:linked:inference-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Distillation]]",
-      "resolved": "urn:visionflow:linked:knowledge-distillation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge AI]]",
-      "resolved": "urn:visionflow:linked:edge-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:linked:edge-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Edge Inference is the execution of [[Machine Learning]] model inference computations directly on local edge devices — including smartphones, IoT sensors, industrial controllers, embedded cameras, wearables, and microcontrollers — rather than routing data to centralised [[Cloud Computing]] servers for processing. By performing inference at or near the point of data generation, edge inference achieves sub-millisecond-to-millisecond latency responses, preserves data privacy by keeping sensitive information on-device, reduces network bandwidth consumption, and enables AI-driven decision-making even in offline or intermittently connected environments. The discipline sits at the intersection of [[Deep Learning]], [[Embedded Systems]] engineering, and [[Edge Computing]] infrastructure, and is distinct from [[Edge AI]] proper (which encompasses the full lifecycle of on-device AI including training paradigms such as [[Federated Learning]]) in that it specifically concerns the forward-pass inference execution pipeline rather than model adaptation or training. Edge inference is made viable by a combination of [[Model Compression]] techniques — including [[Model Quantisation]], [[Model Pruning]], [[Knowledge Distillation]], and [[Neural Architecture Search]] — applied to pre-trained neural networks so that they fit within the tight memory, compute, and power envelopes of edge hardware. Specialised execution runtimes such as [[TensorFlow Lite]], [[ONNX Runtime]], ExecuTorch (Meta), Apple Core ML, and vendor-specific SDKs from Qualcomm, MediaTek, and Arm translate compressed model graphs into hardware-optimised instruction sequences for [[Neural Processing Unit]] accelerators, DSPs, GPUs, or general-purpose CPU cores, enabling [[Real-Time AI Inference]] on devices as constrained as Arm Cortex-M microcontrollers with mere kilobytes of SRAM. The societal significance of edge inference is substantial: it enables privacy-preserving [[Computer Vision]] in surveillance cameras without uploading video streams, autonomous-safety systems in [[Autonomous Vehicles]] that cannot tolerate cloud round-trip latency, wearable health monitors that perform arrhythmia detection locally, and language assistants that respond without sending voice data to remote servers.
 
@@ -334,9 +289,9 @@ public: true
   ## About
   Edge inference emerged as a practical discipline in the mid-2010s when it became clear that the rapid maturation of deep learning — producing models of extraordinary capability but also extraordinary computational cost — was on a collision course with the real-world constraints of deployment. The latency imposed by cloud round-trips (typically 50–500ms for mobile inference requests) was tolerable for asynchronous tasks such as cloud photo organisation, but entirely unacceptable for safety-critical applications such as automotive perception, industrial machinery anomaly detection, or real-time medical monitoring. At the same time, privacy regulation in the form of the EU General Data Protection Regulation (2018) and subsequent national frameworks created compliance pressure to minimise data egress from devices holding personal or sensitive information. These twin forces — latency imperatives and privacy regulation — drove a rapid industrialisation of model compression research and purpose-built inference silicon.
 
-  The hardware trajectory was transformative. Apple introduced the A11 Bionic Neural Engine in 2017, delivering 600 billion operations per second in a mobile SoC; by 2024, the A17 Pro delivered 35 TOPS and the M4 Neural Engine reached 38 TOPS. Google's Edge TPU (2018) and Pixel Visual Core established on-device processing as a competitive differentiator in the Android ecosystem. Qualcomm's Hexagon NPU series became the dominant inference accelerator in Android flagship and mid-range smartphones worldwide, with Snapdragon 8 Elite (2024) capable of 100 TOPS. Arm's Ethos NPU IP, licensed to hundreds of silicon vendors, shaped the instruction-set landscape for Cortex-A and Cortex-M class devices. At the microcontroller frontier, the [[TinyML]] discipline — popularised by Warden and Situnayake (2019) and formalised in the MLPerf Tiny benchmark series — demonstrated that viable inference workloads (keyword spotting, visual wake word detection, anomaly detection) could execute on Cortex-M class devices with 256 KB of flash and 64 KB of SRAM, consuming microwatts of power and enabling inference from coin-cell batteries for weeks at a time.
+  The hardware trajectory was transformative. Apple introduced the A11 Bionic Neural Engine in 2017, delivering 600 billion operations per second in a mobile SoC; by 2024, the A17 Pro delivered 35 TOPS and the M4 Neural Engine reached 38 TOPS. Google's Edge TPU (2018) and Pixel Visual Core established on-device processing as a competitive differentiator in the Android ecosystem. Qualcomm's Hexagon NPU series became the dominant inference accelerator in Android flagship and mid-range smartphones worldwide, with Snapdragon 8 Elite (2024) capable of 100 TOPS. Arm's Ethos NPU IP, licensed to hundreds of silicon vendors, shaped the instruction-set landscape for Cortex-A and Cortex-M class devices. At the microcontroller frontier, the [[TinyML]] discipline — popularised by Warden and Situnayake (2019) and formalised in the MLPerf Tiny benchmark series — demonstrated that viable inference workloads (keyword spotting, visual wake word detection, anomaly detection) [private] execute on Cortex-M class devices with 256 KB of flash and 64 KB of SRAM, consuming microwatts of power and enabling inference from coin-cell batteries for weeks at a time.
 
-  The runtime software layer standardised around a small number of runtimes with broad hardware support. [[TensorFlow Lite]] became the de facto standard for mobile and embedded inference with a broad HAL-based delegate system for hardware acceleration. The [[ONNX]] ecosystem — initially a joint Facebook/Microsoft initiative, now governed by the Linux Foundation — provided model-format portability across training frameworks and inference runtimes. Meta's ExecuTorch hit GA in October 2025, targeting the full spectrum from microcontrollers to flagship smartphones with a 50 KB base footprint and support for 12+ hardware backends. The emergence of on-device [[Small Language Models]] (SLMs) — including Apple Intelligence's 3B parameter on-device model, Qualcomm-optimised Llama 3.2 variants, and Samsung Gauss — extended edge inference from narrow perception tasks into open-ended language understanding, marking a qualitative shift in the scope of what could be executed locally.
+  The runtime software layer standardised around a small number of runtimes with broad hardware support. [[TensorFlow Lite]] became the de facto standard for mobile and embedded inference with a broad HAL-based delegate system for hardware acceleration. The [[ONNX]] ecosystem — initially a joint Facebook/Microsoft initiative, now governed by the Linux Foundation — provided model-format portability across training frameworks and inference runtimes. Meta's ExecuTorch hit GA in October 2025, targeting the full spectrum from microcontrollers to flagship smartphones with a 50 KB base footprint and support for 12+ hardware backends. The emergence of on-device [[Small Language Models]] (SLMs) — including Apple Intelligence's 3B parameter on-device model, Qualcomm-optimised Llama 3.2 variants, and Samsung Gauss — extended edge inference from narrow perception tasks into open-ended language understanding, marking a qualitative shift in the scope of what [private] be executed locally.
 
   ## Components / Architecture
 
@@ -645,7 +600,7 @@ public: true
   - *Adversarial Inputs*: Carefully crafted inputs that appear normal to human observers but cause systematic inference errors. For edge vision systems (face recognition, object detection), adversarial patches printed on physical surfaces can fool models. Automotive ADAS models have been shown vulnerable to adversarial lane markings and traffic sign modifications.
   - *Model Poisoning via Federated Learning*: In federated edge inference deployments with on-device adaptation, malicious devices can submit poisoned model updates that shift the global model's behaviour. Byzantine-robust aggregation algorithms (Krum, coordinate-wise median) provide partial mitigation.
   - *Side-Channel Timing Attacks*: Inference latency is data-dependent for certain architectures (early-exit networks, sparse models); timing measurements can leak information about input characteristics.
-  - *Firmware and Model Integrity Attacks*: Over-the-air update mechanisms for model and firmware can be targeted; compromised models could introduce backdoors (trojan neural networks) activated by specific trigger inputs.
+  - *Firmware and Model Integrity Attacks*: Over-the-air update mechanisms for model and firmware can be targeted; compromised models [private] introduce backdoors (trojan neural networks) activated by specific trigger inputs.
 
   **Defensive Countermeasures**
   - *ARM TrustZone / TEE*: Isolates model weights and inference execution in a hardware-enforced secure enclave. Normal world OS cannot read secure world memory regions. Model binary decrypted in secure world; plaintext weights never exposed to potentially compromised OS. Deployed in production by major mobile vendors for on-device biometric verification.

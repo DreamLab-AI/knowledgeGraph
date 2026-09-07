@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - RGB-Protocol
----
-
-# RGB Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

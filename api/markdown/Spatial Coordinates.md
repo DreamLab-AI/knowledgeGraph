@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Coordinates
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-coordinates:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1f5426818faf47dc9f44e15f5f747acfc95e5f9aaa7e95a65bdf44643dc1fb41"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Object Positioning]]",
-      "resolved": "urn:visionflow:linked:object-positioning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Coordinate System]]",
-      "resolved": "urn:visionflow:owl:class:coordinate-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A unified reference frame system for positioning objects in three-dimensional virtual or mixed reality environments, including geographically-anchored poses (GeoPose) tied to Earth coordinates and local coordinate systems for scene-relative object placement with support for coordinate transformation between systems.

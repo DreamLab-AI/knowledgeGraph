@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,57 +7,197 @@ public: true
   "title": "Architecture",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:owl:class:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:visionflow:linked:neural-network-architecture", "vc:label": "Neural Network Architecture"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:recurrent-neural-network", "vc:label": "Recurrent Neural Network"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:encoder", "vc:label": "Encoder"},
-    {"@id": "urn:visionflow:linked:decoder", "vc:label": "Decoder"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:linked:inductive-bias", "vc:label": "Inductive Bias"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:hyperparameter-tuning", "vc:label": "Hyperparameter Tuning"},
-    {"@id": "urn:visionflow:linked:activation-function", "vc:label": "Activation Function"},
-    {"@id": "urn:visionflow:linked:batch-normalisation", "vc:label": "Batch Normalisation"},
-    {"@id": "urn:visionflow:linked:dropout", "vc:label": "Dropout"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:mixture-of-experts", "vc:label": "Mixture of Experts"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:self-supervised-learning", "vc:label": "Self-Supervised Learning"},
-    {"@id": "urn:visionflow:linked:neural-architecture-search", "vc:label": "Neural Architecture Search"},
-    {"@id": "urn:visionflow:linked:model-distillation", "vc:label": "Model Distillation"},
-    {"@id": "urn:visionflow:linked:model-deployment", "vc:label": "Model Deployment"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:feedforward-neural-network", "vc:label": "Feedforward Neural Network"},
-    {"@id": "urn:visionflow:linked:residual-connection", "vc:label": "Residual Connection"},
-    {"@id": "urn:visionflow:linked:positional-encoding", "vc:label": "Positional Encoding"},
-    {"@id": "urn:visionflow:linked:embedding", "vc:label": "Embedding"},
-    {"@id": "urn:visionflow:linked:ai-model", "vc:label": "AI Model"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:responsible-ai", "vc:label": "Responsible AI"}
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network-architecture",
+      "vc:label": "Neural Network Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:encoder",
+      "vc:label": "Encoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:decoder",
+      "vc:label": "Decoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:inductive-bias",
+      "vc:label": "Inductive Bias"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:activation-function",
+      "vc:label": "Activation Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:batch-normalisation",
+      "vc:label": "Batch Normalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:dropout",
+      "vc:label": "Dropout"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:mixture-of-experts",
+      "vc:label": "Mixture of Experts"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-supervised-learning",
+      "vc:label": "Self-Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-architecture-search",
+      "vc:label": "Neural Architecture Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-distillation",
+      "vc:label": "Model Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-deployment",
+      "vc:label": "Model Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedforward-neural-network",
+      "vc:label": "Feedforward Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:residual-connection",
+      "vc:label": "Residual Connection"
+    },
+    {
+      "@id": "urn:visionflow:linked:positional-encoding",
+      "vc:label": "Positional Encoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding",
+      "vc:label": "Embedding"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model",
+      "vc:label": "AI Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:responsible-ai",
+      "vc:label": "Responsible AI"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {"vc:key": "legacy-term-id", "vc:value": "AI-0833"},
-    {"vc:key": "preferred-term", "vc:value": "Architecture"}
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0833"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Architecture"
+    }
   ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
-  "prov:generatedAtTime": {"@value": "2026-05-18T07:12:05Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -77,62 +212,191 @@ public: true
   "maturity": "established",
   "qualityScore": 0.92,
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-model-architecture", "label": "AI Model Architecture"},
-    {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:neural-network-architecture",
+      "label": "Neural Network Architecture"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:neural-network-layer", "label": "Neural Network Layer"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:decoder", "label": "Decoder"},
-      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"},
-      {"@id": "urn:ngm:class:residual-connection", "label": "Residual Connection"},
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"}
+      {
+        "@id": "urn:ngm:class:neural-network-layer",
+        "label": "Neural Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "@id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:inductive-bias", "label": "Inductive Bias"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"}
+      {
+        "@id": "urn:ngm:class:inductive-bias",
+        "label": "Inductive Bias"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
-      {"@id": "urn:ngm:class:dropout", "label": "Dropout"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
-      {"@id": "urn:ngm:class:model-distillation", "label": "Model Distillation"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:model-distillation",
+        "label": "Model Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ]
   },
   "provenance": {
@@ -142,65 +406,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:be8a4d60593fca5d6885812516e2b30778638920371b1480122685338e9bab4a"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:owl:class:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Edge Computing]]", "resolved": "urn:visionflow:owl:class:edge-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network Architecture]]", "resolved": "urn:visionflow:linked:neural-network-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Recurrent Neural Network]]", "resolved": "urn:visionflow:linked:recurrent-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Encoder]]", "resolved": "urn:visionflow:linked:encoder", "kind": "ResolvedLink"},
-    {"raw": "[[Decoder]]", "resolved": "urn:visionflow:linked:decoder", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Model Training]]", "resolved": "urn:visionflow:linked:model-training", "kind": "ResolvedLink"},
-    {"raw": "[[Inductive Bias]]", "resolved": "urn:visionflow:linked:inductive-bias", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "ResolvedLink"},
-    {"raw": "[[Backpropagation]]", "resolved": "urn:visionflow:linked:backpropagation", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Hyperparameter Tuning]]", "resolved": "urn:visionflow:linked:hyperparameter-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Activation Function]]", "resolved": "urn:visionflow:linked:activation-function", "kind": "ResolvedLink"},
-    {"raw": "[[Batch Normalisation]]", "resolved": "urn:visionflow:linked:batch-normalisation", "kind": "ResolvedLink"},
-    {"raw": "[[Dropout]]", "resolved": "urn:visionflow:linked:dropout", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:linked:multimodal-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Mixture of Experts]]", "resolved": "urn:visionflow:linked:mixture-of-experts", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Self-Supervised Learning]]", "resolved": "urn:visionflow:linked:self-supervised-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Architecture Search]]", "resolved": "urn:visionflow:linked:neural-architecture-search", "kind": "StubLink"},
-    {"raw": "[[Model Distillation]]", "resolved": "urn:visionflow:linked:model-distillation", "kind": "ResolvedLink"},
-    {"raw": "[[Model Deployment]]", "resolved": "urn:visionflow:linked:model-deployment", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "ResolvedLink"},
-    {"raw": "[[Feedforward Neural Network]]", "resolved": "urn:visionflow:linked:feedforward-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Residual Connection]]", "resolved": "urn:visionflow:linked:residual-connection", "kind": "StubLink"},
-    {"raw": "[[Positional Encoding]]", "resolved": "urn:visionflow:linked:positional-encoding", "kind": "ResolvedLink"},
-    {"raw": "[[Embedding]]", "resolved": "urn:visionflow:linked:embedding", "kind": "ResolvedLink"},
-    {"raw": "[[AI Model]]", "resolved": "urn:visionflow:linked:ai-model", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "ResolvedLink"},
-    {"raw": "[[Responsible AI]]", "resolved": "urn:visionflow:linked:responsible-ai", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
-}
-```
-
 
 - ### Definition
   - [[Architecture]], in the context of [[Artificial Intelligence]] and [[Deep Learning]], refers to the structural blueprint of an [[AI Model]] or system — the specification of how computational units (neurons, attention heads, convolutional filters, state-space modules, expert sub-networks) are arranged into layers and modules, how information flows between them, and what mathematical operations each component performs. Architectural design is the highest-level decision in [[Model Training]] because it determines the hypothesis space the learner inhabits: a [[Convolutional Neural Network]] encodes spatial translation equivariance as a hard structural constraint; a [[Transformer Architecture]] encodes pairwise token interactions through [[Attention Mechanism]] without assuming locality; a [[Recurrent Neural Network]] encodes temporal order through hidden-state recurrence; a [[Graph Neural Network]] encodes relational structure through neighbourhood message-passing. These structural choices constitute the model's [[Inductive Bias]] — the set of assumptions it brings to a learning problem before seeing any data — and they determine which tasks the model can learn sample-efficiently versus which require vastly more data. Architecture co-determines computational cost (parameter count, FLOP budget at training and inference), hardware efficiency on [[GPU Compute]] or specialist accelerators, compatibility with [[Transfer Learning]] and fine-tuning workflows, and the quality of [[Embedding]] representations extracted for downstream tasks. The [[Encoder]]-[[Decoder]] split — where an encoder maps inputs to latent representations and a decoder synthesises outputs from those representations — is one of the most productive structural patterns in AI architecture design, underpinning both sequence-to-sequence [[Natural Language Processing]] systems and generative image architectures. Contemporary AI architecture research is defined by the tension between ever-larger [[Foundation Model]] backbones — whose breadth of competence emerges from scale — and efficient specialised architectures designed for constrained deployment on [[Edge Computing]] hardware. [[Neural Architecture Search]] (NAS) automates the exploration of architecture spaces that are too vast for manual design, and [[Model Distillation]] compresses large architectures into smaller student networks that retain most capability at a fraction of the computational cost.

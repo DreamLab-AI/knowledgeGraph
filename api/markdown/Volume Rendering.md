@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Volume Rendering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,52 +165,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:volume-rendering:f8eef842eff8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f5091b189ef6dcb4feeafc4c2441477b81bfc6ea970e7dd902ff911744626168"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Graphics Pipeline]]",
-      "resolved": "urn:visionflow:linked:graphics-pipeline",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Radiance Fields]]",
-      "resolved": "urn:visionflow:linked:neural-radiance-fields",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Volumetric Video]]",
-      "resolved": "urn:visionflow:linked:volumetric-video",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Volume rendering produces images directly from three-dimensional scalar or density fields by integrating colour and opacity along view rays, rather than rendering explicit surfaces.

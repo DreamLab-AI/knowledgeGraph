@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Constraint-Based Design
----
-
-# Constraint Based Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -14,59 +7,205 @@ aliases:
   "title": "Constraint Based Design",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:ai-system-component", "vc:label": "AI System Component"},
-    {"@id": "urn:visionflow:owl:class:autonomous-robot", "vc:label": "Autonomous Robot"},
-    {"@id": "urn:visionflow:owl:class:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:generative-design-tool", "vc:label": "Generative Design Tool"},
-    {"@id": "urn:visionflow:linked:parametric-modeling", "vc:label": "Parametric Modeling"},
-    {"@id": "urn:visionflow:linked:topology-optimization", "vc:label": "Topology Optimization"},
-    {"@id": "urn:visionflow:linked:constraint-satisfaction", "vc:label": "Constraint Satisfaction"},
-    {"@id": "urn:visionflow:linked:optimisation-algorithm", "vc:label": "Optimization Algorithm"},
-    {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"},
-    {"@id": "urn:visionflow:linked:cyber-physical-systems", "vc:label": "Cyber Physical Systems"},
-    {"@id": "urn:visionflow:linked:simulation", "vc:label": "Simulation"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:motion-planning", "vc:label": "Motion Planning"},
-    {"@id": "urn:visionflow:linked:sat-solver", "vc:label": "SAT Solver"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:symbolic-ai", "vc:label": "Symbolic AI"},
-    {"@id": "urn:visionflow:linked:product-design", "vc:label": "Product Design"},
-    {"@id": "urn:visionflow:linked:additive-manufacturing", "vc:label": "Additive Manufacturing"},
-    {"@id": "urn:visionflow:linked:finite-element-analysis", "vc:label": "Finite Element Analysis"},
-    {"@id": "urn:visionflow:linked:computer-aided-design", "vc:label": "Computer Aided Design"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:multi-objective-optimization", "vc:label": "Multi-Objective Optimization"},
-    {"@id": "urn:visionflow:linked:evolutionary-algorithm", "vc:label": "Evolutionary Algorithm"},
-    {"@id": "urn:visionflow:linked:constraint-propagation", "vc:label": "Constraint Propagation"},
-    {"@id": "urn:visionflow:linked:constraint-solver", "vc:label": "Constraint Solver"},
-    {"@id": "urn:visionflow:linked:model-based-systems-engineering", "vc:label": "Model Based Systems Engineering"},
-    {"@id": "urn:visionflow:linked:safety-engineering", "vc:label": "Safety Engineering"},
-    {"@id": "urn:visionflow:linked:configuration-management", "vc:label": "Configuration Management"},
-    {"@id": "urn:visionflow:linked:functional-requirements", "vc:label": "Functional Requirements"},
-    {"@id": "urn:visionflow:linked:geometric-constraint", "vc:label": "Geometric Constraint"},
-    {"@id": "urn:visionflow:linked:integer-programming", "vc:label": "Integer Programming"},
-    {"@id": "urn:visionflow:linked:linear-programming", "vc:label": "Linear Programming"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:design-space-exploration", "vc:label": "Design Space Exploration"},
-    {"@id": "urn:visionflow:linked:requirements-engineering", "vc:label": "Requirements Engineering"},
-    {"@id": "urn:visionflow:linked:systems-engineering", "vc:label": "Systems Engineering"},
-    {"@id": "urn:visionflow:linked:combinatorial-optimisation", "vc:label": "Combinatorial Optimisation"},
-    {"@id": "urn:visionflow:linked:simulation-engine", "vc:label": "Simulation Engine"},
-    {"@id": "urn:visionflow:linked:co-design", "vc:label": "Co-Design"},
-    {"@id": "urn:visionflow:linked:structural-analysis", "vc:label": "Structural Analysis"},
-    {"@id": "urn:visionflow:linked:concurrent-engineering", "vc:label": "Concurrent Engineering"},
-    {"@id": "urn:visionflow:linked:constraint", "vc:label": "Constraint"},
-    {"@id": "urn:visionflow:linked:feasibility", "vc:label": "Feasibility"}
+    {
+      "@id": "urn:visionflow:owl:class:ai-system-component",
+      "vc:label": "AI System Component"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-robot",
+      "vc:label": "Autonomous Robot"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-design-tool",
+      "vc:label": "Generative Design Tool"
+    },
+    {
+      "@id": "urn:visionflow:linked:parametric-modeling",
+      "vc:label": "Parametric Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:topology-optimization",
+      "vc:label": "Topology Optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-satisfaction",
+      "vc:label": "Constraint Satisfaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation-algorithm",
+      "vc:label": "Optimization Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-verification",
+      "vc:label": "Formal Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:cyber-physical-systems",
+      "vc:label": "Cyber Physical Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation",
+      "vc:label": "Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-planning",
+      "vc:label": "Motion Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:sat-solver",
+      "vc:label": "SAT Solver"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-ai",
+      "vc:label": "Symbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:product-design",
+      "vc:label": "Product Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:additive-manufacturing",
+      "vc:label": "Additive Manufacturing"
+    },
+    {
+      "@id": "urn:visionflow:linked:finite-element-analysis",
+      "vc:label": "Finite Element Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-aided-design",
+      "vc:label": "Computer Aided Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-objective-optimization",
+      "vc:label": "Multi-Objective Optimization"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-algorithm",
+      "vc:label": "Evolutionary Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-propagation",
+      "vc:label": "Constraint Propagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-solver",
+      "vc:label": "Constraint Solver"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-based-systems-engineering",
+      "vc:label": "Model Based Systems Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-engineering",
+      "vc:label": "Safety Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:configuration-management",
+      "vc:label": "Configuration Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:functional-requirements",
+      "vc:label": "Functional Requirements"
+    },
+    {
+      "@id": "urn:visionflow:linked:geometric-constraint",
+      "vc:label": "Geometric Constraint"
+    },
+    {
+      "@id": "urn:visionflow:linked:integer-programming",
+      "vc:label": "Integer Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-programming",
+      "vc:label": "Linear Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:design-space-exploration",
+      "vc:label": "Design Space Exploration"
+    },
+    {
+      "@id": "urn:visionflow:linked:requirements-engineering",
+      "vc:label": "Requirements Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:systems-engineering",
+      "vc:label": "Systems Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:combinatorial-optimisation",
+      "vc:label": "Combinatorial Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation-engine",
+      "vc:label": "Simulation Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:co-design",
+      "vc:label": "Co-Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:structural-analysis",
+      "vc:label": "Structural Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:concurrent-engineering",
+      "vc:label": "Concurrent Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint",
+      "vc:label": "Constraint"
+    },
+    {
+      "@id": "urn:visionflow:linked:feasibility",
+      "vc:label": "Feasibility"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {"vc:key": "legacy-term-id", "vc:value": "AI-1000"},
-    {"vc:key": "preferred-term", "vc:value": "Constraint Based Design"}
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-1000"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Constraint Based Design"
+    }
   ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
-  "prov:generatedAtTime": {"@value": "2026-05-18T07:12:05Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -80,136 +219,205 @@ aliases:
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"},
-    {"@id": "urn:ngm:class:constraint-satisfaction", "label": "Constraint Satisfaction"}
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "@id": "urn:ngm:class:constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:constraint-solver", "label": "Constraint Solver"},
-      {"@id": "urn:ngm:class:constraint-propagation", "label": "Constraint Propagation"},
-      {"@id": "urn:ngm:class:geometric-constraint", "label": "Geometric Constraint"},
-      {"@id": "urn:ngm:class:functional-requirements", "label": "Functional Requirements"},
-      {"@id": "urn:ngm:class:feasibility", "label": "Feasibility"},
-      {"@id": "urn:ngm:class:design-space-exploration", "label": "Design Space Exploration"}
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-propagation",
+        "label": "Constraint Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:geometric-constraint",
+        "label": "Geometric Constraint"
+      },
+      {
+        "@id": "urn:ngm:class:functional-requirements",
+        "label": "Functional Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:feasibility",
+        "label": "Feasibility"
+      },
+      {
+        "@id": "urn:ngm:class:design-space-exploration",
+        "label": "Design Space Exploration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:constraint-satisfaction", "label": "Constraint Satisfaction"},
-      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:topology-optimization", "label": "Topology Optimization"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:participatory-design", "label": "Participatory Design"}
+      {
+        "@id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:topology-optimization",
+        "label": "Topology Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"},
-      {"@id": "urn:ngm:class:model-based-systems-engineering", "label": "Model Based Systems Engineering"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:model-based-systems-engineering",
+        "label": "Model Based Systems Engineering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:parametric-design-methodology-modeling", "label": "Parametric Modeling"},
-      {"@id": "urn:ngm:class:sat-solver", "label": "SAT Solver"},
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:integer-programming", "label": "Integer Programming"},
-      {"@id": "urn:ngm:class:linear-programming", "label": "Linear Programming"},
-      {"@id": "urn:ngm:class:finite-element-analysis", "label": "Finite Element Analysis"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:parametric-design-methodology-modeling",
+        "label": "Parametric Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:sat-solver",
+        "label": "SAT Solver"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:integer-programming",
+        "label": "Integer Programming"
+      },
+      {
+        "@id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-      {"@id": "urn:ngm:class:concurrent-engineering", "label": "Concurrent Engineering"},
-      {"@id": "urn:ngm:class:combinatorial-optimisation", "label": "Combinatorial Optimisation"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:concurrent-engineering",
+        "label": "Concurrent Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:safety-engineering", "label": "Safety Engineering"},
-      {"@id": "urn:ngm:class:additive-manufacturing", "label": "Additive Manufacturing"},
-      {"@id": "urn:ngm:class:configuration-management", "label": "Configuration Management"},
-      {"@id": "urn:ngm:class:requirements-engineering", "label": "Requirements Engineering"}
+      {
+        "@id": "urn:ngm:class:safety-engineering",
+        "label": "Safety Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "@id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule Based System"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule Based System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"},
-      {"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:ai-system-component",
+        "label": "AI System Component"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:constraint-based-design:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a89d3413e153d633c81eee335dc4038201cd88b0f6e91a43bdc6c116b8bfd717"
-  },
-  "vc:resolutions": [
-    {"raw": "[[AI System Component]]", "resolved": "urn:visionflow:owl:class:ai-system-component", "kind": "ResolvedLink"},
-    {"raw": "[[Autonomous Robot]]", "resolved": "urn:visionflow:owl:class:autonomous-robot", "kind": "ResolvedLink"},
-    {"raw": "[[Digital Twin]]", "resolved": "urn:visionflow:owl:class:digital-twin", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Design Tool]]", "resolved": "urn:visionflow:linked:generative-design-tool", "kind": "ResolvedLink"},
-    {"raw": "[[Parametric Modeling]]", "resolved": "urn:visionflow:linked:parametric-modeling", "kind": "ResolvedLink"},
-    {"raw": "[[Topology Optimization]]", "resolved": "urn:visionflow:linked:topology-optimization", "kind": "StubLink"},
-    {"raw": "[[Constraint Satisfaction]]", "resolved": "urn:visionflow:linked:constraint-satisfaction", "kind": "ResolvedLink"},
-    {"raw": "[[Optimisation Algorithm]]", "resolved": "urn:visionflow:linked:optimisation-algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Formal Verification]]", "resolved": "urn:visionflow:linked:formal-verification", "kind": "StubLink"},
-    {"raw": "[[Cyber Physical Systems]]", "resolved": "urn:visionflow:linked:cyber-physical-systems", "kind": "StubLink"},
-    {"raw": "[[Simulation]]", "resolved": "urn:visionflow:linked:simulation", "kind": "ResolvedLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "ResolvedLink"},
-    {"raw": "[[Motion Planning]]", "resolved": "urn:visionflow:linked:motion-planning", "kind": "StubLink"},
-    {"raw": "[[SAT Solver]]", "resolved": "urn:visionflow:linked:sat-solver", "kind": "StubLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "StubLink"},
-    {"raw": "[[Symbolic AI]]", "resolved": "urn:visionflow:linked:symbolic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Product Design]]", "resolved": "urn:visionflow:linked:product-design", "kind": "StubLink"},
-    {"raw": "[[Additive Manufacturing]]", "resolved": "urn:visionflow:linked:additive-manufacturing", "kind": "StubLink"},
-    {"raw": "[[Finite Element Analysis]]", "resolved": "urn:visionflow:linked:finite-element-analysis", "kind": "StubLink"},
-    {"raw": "[[Computer Aided Design]]", "resolved": "urn:visionflow:linked:computer-aided-design", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Multi-Objective Optimization]]", "resolved": "urn:visionflow:linked:multi-objective-optimization", "kind": "StubLink"},
-    {"raw": "[[Evolutionary Algorithm]]", "resolved": "urn:visionflow:linked:evolutionary-algorithm", "kind": "StubLink"},
-    {"raw": "[[Constraint Propagation]]", "resolved": "urn:visionflow:linked:constraint-propagation", "kind": "ResolvedLink"},
-    {"raw": "[[Constraint Solver]]", "resolved": "urn:visionflow:linked:constraint-solver", "kind": "ResolvedLink"},
-    {"raw": "[[Model Based Systems Engineering]]", "resolved": "urn:visionflow:linked:model-based-systems-engineering", "kind": "StubLink"},
-    {"raw": "[[Safety Engineering]]", "resolved": "urn:visionflow:linked:safety-engineering", "kind": "StubLink"},
-    {"raw": "[[Configuration Management]]", "resolved": "urn:visionflow:linked:configuration-management", "kind": "ResolvedLink"},
-    {"raw": "[[Functional Requirements]]", "resolved": "urn:visionflow:linked:functional-requirements", "kind": "StubLink"},
-    {"raw": "[[Geometric Constraint]]", "resolved": "urn:visionflow:linked:geometric-constraint", "kind": "StubLink"},
-    {"raw": "[[Integer Programming]]", "resolved": "urn:visionflow:linked:integer-programming", "kind": "StubLink"},
-    {"raw": "[[Linear Programming]]", "resolved": "urn:visionflow:linked:linear-programming", "kind": "StubLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "StubLink"},
-    {"raw": "[[Design Space Exploration]]", "resolved": "urn:visionflow:linked:design-space-exploration", "kind": "StubLink"},
-    {"raw": "[[Requirements Engineering]]", "resolved": "urn:visionflow:linked:requirements-engineering", "kind": "StubLink"},
-    {"raw": "[[Systems Engineering]]", "resolved": "urn:visionflow:linked:systems-engineering", "kind": "StubLink"},
-    {"raw": "[[Combinatorial Optimisation]]", "resolved": "urn:visionflow:linked:combinatorial-optimisation", "kind": "StubLink"},
-    {"raw": "[[Simulation Engine]]", "resolved": "urn:visionflow:linked:simulation-engine", "kind": "ResolvedLink"},
-    {"raw": "[[Co-Design]]", "resolved": "urn:visionflow:linked:co-design", "kind": "StubLink"},
-    {"raw": "[[Structural Analysis]]", "resolved": "urn:visionflow:linked:structural-analysis", "kind": "StubLink"},
-    {"raw": "[[Concurrent Engineering]]", "resolved": "urn:visionflow:linked:concurrent-engineering", "kind": "StubLink"},
-    {"raw": "[[Constraint]]", "resolved": "urn:visionflow:linked:constraint", "kind": "ResolvedLink"},
-    {"raw": "[[Feasibility]]", "resolved": "urn:visionflow:linked:feasibility", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 

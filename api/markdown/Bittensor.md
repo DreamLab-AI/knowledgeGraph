@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bittensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -93,51 +88,6 @@ public: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",
     "inferenceRule": "GapFillTier5"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bittensor:a714e8511902",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fbd9c2ba2144b4cc4206ef3b6b48ed0ba0f7a8227b9e380ea8da23d51960105c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token Economics]]",
-      "resolved": "urn:visionflow:linked:token-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Computing]]",
-      "resolved": "urn:visionflow:linked:distributed-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Peer-to-Peer Network]]",
-      "resolved": "urn:visionflow:linked:peer-to-peer-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -497,7 +447,7 @@ public: true
     - Cointelegraph UK, Decrypt, and The Block UK report on Bittensor developments from the UK perspective.
   - **UK relevance to scientific computing subnets**:
     - Bioinformatics and protein folding applications (SN25) are directly relevant to UK pharmaceutical and academic research; potential for NHS computational pathology, UK Biobank, and Genomics England workflows to interface with Bittensor scientific computing subnets in future.
-    - The UK government's £1 billion AI compute programme (2025 National Compute Tender, securing access to frontier-scale AI compute for UK researchers) could complement Bittensor's decentralised compute model for less resource-intensive tasks where incentive-driven quality evaluation adds value.
+    - The UK government's £1 billion AI compute programme (2025 National Compute Tender, securing access to frontier-scale AI compute for UK researchers) [private] complement Bittensor's decentralised compute model for less resource-intensive tasks where incentive-driven quality evaluation adds value.
 
   ## Security Analysis and Risk Factors
 
@@ -515,10 +465,10 @@ public: true
   - **Operational security for participants**:
     - **Coldkey/hotkey separation**: Bittensor wallet architecture separates the coldkey (high-security key controlling stake and fund transfers, kept offline) from the hotkey (operational key used for query signing and score submissions, exposed online). Loss of a hotkey does not expose staked TAO.
     - **Node infrastructure resilience**: Validators require high-availability infrastructure; validator downtime causes missed scoring epochs and reduced emissions; professional validators use redundant server pairs with automated failover.
-    - **Data poisoning in distributed training (SN3)**: Anonymous contributors in Templar's distributed training could inject malicious gradient updates. Mitigation: Templar protocol uses gradient clipping, inner-loop loss monitoring, and validator cross-checking of outer-update contributions; statistical outlier gradients are excluded.
+    - **Data poisoning in distributed training (SN3)**: Anonymous contributors in Templar's distributed training [private] inject malicious gradient updates. Mitigation: Templar protocol uses gradient clipping, inner-loop loss monitoring, and validator cross-checking of outer-update contributions; statistical outlier gradients are excluded.
     - **Key management risks**: Theft of a coldkey private key would enable full control of staked TAO and delegation settings; hardware security modules (HSMs) and multi-signature cold storage recommended for large stake holders.
   - **Regulatory and compliance risks**:
-    - **Token classification uncertainty**: TAO's status as a security vs. utility token vs. commodity is unresolved in most jurisdictions; adverse SEC ruling could constrain US participant activity and exchange listings.
+    - **Token classification uncertainty**: TAO's status as a security vs. utility token vs. commodity is unresolved in most jurisdictions; adverse SEC ruling [private] constrain US participant activity and exchange listings.
     - **AI output liability**: Miners and validators producing AI outputs may incur liability for harmful content in jurisdictions with AI Act-equivalent regulations; Bittensor's anonymous participation model provides de facto but not de jure liability shield.
     - **Sanction compliance**: Permissionless participation means Bittensor networks may include participants from sanctioned countries; exchanges and validators in regulated jurisdictions must implement OFAC/sanctions screening at the TAO on-ramp level.
     - **Data protection**: Subnets processing personal data (medical AI, financial signals) must comply with GDPR (EU), UK GDPR, and sector-specific data protection requirements; the distributed nature of subnet computation creates complex data-controller-processor attribution questions.
@@ -544,11 +494,11 @@ public: true
   - **Integration with Polkadot parachain ecosystem**:
     - Substrate-based Subtensor is technically compatible with Polkadot relay chain as a parachain candidate.
     - Would enable Bittensor to access Polkadot's cross-chain message passing (XCM) protocol, unlocking DeFi liquidity from Acala, Moonbeam, and other parachains.
-    - Could integrate decentralised identity (Kilt Protocol) for validator reputation and decentralised storage (Crust Network) as a Bittensor storage subnet backend.
+    - [private] integrate decentralised identity (Kilt Protocol) for validator reputation and decentralised storage (Crust Network) as a Bittensor storage subnet backend.
   - **Frontier-scale multi-subnet training (200B+)**:
     - Covenant-72B success expected to motivate more ambitious collaborative training targeting 200B+ parameter models.
     - Improvements to DiLoCo outer-optimisation: higher outer-update frequency, compressed gradient communication using TopK sparsification, and adaptive synchronisation schedules.
-    - Multiple subnets contributing different data domains (code, science, multilingual text) could be composed into a unified multi-domain pre-training curriculum.
+    - Multiple subnets contributing different data domains (code, science, multilingual text) [private] be composed into a unified multi-domain pre-training curriculum.
   - **Bittensor for AI safety and evaluation**:
     - Potential future application: subnets specialised in AI safety evaluation, red-teaming, and model capability elicitation — where Bittensor's decentralised incentive structure prevents any single entity from controlling the evaluation methodology.
     - UK AI Safety Institute (AISI) and similar bodies may engage with decentralised AI evaluation infrastructure as part of frontier model evaluation programmes.

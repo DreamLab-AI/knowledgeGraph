@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Case Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Case Management",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:business-process-management", "vc:label": "Business Process Management"},
-    {"@id": "urn:visionflow:linked:transaction-monitoring", "vc:label": "Transaction Monitoring"},
-    {"@id": "urn:visionflow:linked:case-management-system", "vc:label": "Case Management System"},
-    {"@id": "urn:visionflow:linked:regulatory-compliance", "vc:label": "Regulatory Compliance"}
+    {
+      "@id": "urn:visionflow:linked:business-process-management",
+      "vc:label": "Business Process Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:transaction-monitoring",
+      "vc:label": "Transaction Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:case-management-system",
+      "vc:label": "Case Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,15 +50,30 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"}
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:case-management-system", "label": "Case Management System"},
-      {"@id": "urn:ngm:class:records-management", "label": "Records Management"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:case-management-system",
+        "label": "Case Management System"
+      },
+      {
+        "@id": "urn:ngm:class:records-management",
+        "label": "Records Management"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ]
   },
   "quality": 0.8,

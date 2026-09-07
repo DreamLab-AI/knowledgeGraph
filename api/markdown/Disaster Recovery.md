@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Disaster Recovery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,4 +157,3 @@ public: true
   - Cloud-native DR has fundamentally altered the economics and architecture of the discipline. DR-as-a-Service (DRaaS) providers use cloud elasticity to spin up recovery environments on demand rather than maintaining permanently provisioned hardware. Infrastructure-as-Code tools (Terraform, CloudFormation) enable entire environment configurations to be version-controlled and redeployed automatically. Kubernetes-based workloads can migrate between regions by reapplying manifests against pre-replicated data volumes, drastically reducing manual intervention during recovery.
 
   - In 2024-2025, ransomware resilience has become the dominant DR design driver: immutable backup storage (object lock, air-gapped vaults), rapid detection of encryption events, and clean recovery point identification are now core DR requirements. AI-driven DR tools are emerging that automatically assess blast radius during incidents and prioritise recovery sequences by business criticality. Regulatory frameworks including DORA (Digital Operational Resilience Act) in the EU now mandate DR testing and incident reporting for financial institutions, elevating DR from operational best practice to compliance obligation.
-

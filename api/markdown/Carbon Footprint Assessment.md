@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Footprint Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -109,77 +104,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:carbon-footprint-assessment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a7636ababbbe78acccdacc82501a1bd38e190c02898d0939a7ebddbb664b2a63"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Boundary Definition]]",
-      "resolved": "urn:visionflow:linked:boundary-definition",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Emission Factors]]",
-      "resolved": "urn:visionflow:linked:emission-factors",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hotspot Identification]]",
-      "resolved": "urn:visionflow:linked:hotspot-identification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Impact Quantification]]",
-      "resolved": "urn:visionflow:linked:impact-quantification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Lifecycle Data]]",
-      "resolved": "urn:visionflow:linked:lifecycle-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reduction Strategy]]",
-      "resolved": "urn:visionflow:linked:reduction-strategy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Environmental Assessment]]",
-      "resolved": "urn:visionflow:owl:class:environmental-assessment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A comprehensive evaluation methodology that quantifies total greenhouse gas emissions associated with a product, service, or organization across its entire lifecycle using Life Cycle Assessment principles, expressed in CO2 equivalent units to identify emission hotspots and reduction opportunities.

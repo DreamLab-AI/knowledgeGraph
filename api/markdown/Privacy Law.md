@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy Law
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Privacy Law",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:legal-framework", "vc:label": "Legal Framework"},
-    {"@id": "urn:visionflow:linked:gdpr", "vc:label": "GDPR"},
-    {"@id": "urn:visionflow:linked:data-protection", "vc:label": "Data Protection"},
-    {"@id": "urn:visionflow:linked:data-privacy", "vc:label": "Data Privacy"}
+    {
+      "@id": "urn:visionflow:linked:legal-framework",
+      "vc:label": "Legal Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-protection",
+      "vc:label": "Data Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-privacy",
+      "vc:label": "Data Privacy"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,16 +50,34 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
     ]
   },
   "quality": 0.8,

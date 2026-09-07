@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Long-Range Navigation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Long-range navigation is the capability of an autonomous agent to plan and execute travel over large distances and extended time horizons, beyond the range of local sensors. It typically fuses global positioning, topological or metric maps, and waypoint planning to maintain a coherent route across kilometre-scale or larger environments. It contrasts with short-range reactive navigation by emphasising global consistency and goal-directed path planning.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:topological-map", "label": "Topological Map"}, {"@id": "urn:ngm:class:gps", "label": "Gps"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      },
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "Gps"
+      }
+    ]
   },
   "quality": 0.72
 }

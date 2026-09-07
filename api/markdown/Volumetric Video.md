@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Volumetric Video
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -198,52 +193,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:volumetric-video:5e1a710c374f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6c2ee6b501098a37c782c29e51fc78ea9b8715cb5632a1f356c2eeacbe2c54ca"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Photogrammetry]]",
-      "resolved": "urn:visionflow:linked:photogrammetry",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Volume Rendering]]",
-      "resolved": "urn:visionflow:linked:volume-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Point Cloud]]",
-      "resolved": "urn:visionflow:linked:point-cloud",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Performance Capture]]",
-      "resolved": "urn:visionflow:linked:performance-capture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Volumetric video captures a subject from many viewpoints to reconstruct a moving three-dimensional representation that can be viewed from any angle, rather than a fixed two-dimensional image sequence.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Script
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -216,62 +211,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:script:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2e75cb93b830996823fb5187223191f1908c28ea9d01250ae4c9bc7eaa333f6c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DistributedDataStructure]]",
-      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Transaction validation programming within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.
 
@@ -363,7 +302,7 @@ public: true
 - ### References
   - 1. Spark (2026). Bitcoin Covenant Activation: Navigating the Path Forward After Years of Debate. https://www.spark.money/research/bitcoin-covenant-activation-path-forward
   - 2. Spark (2026). Bitcoin Covenant Proposals Compared: CTV, APO, OP_CAT. https://www.spark.money/tools/bitcoin-covenant-proposals-compared
-  - 3. BlockEden (2026). How OP_CTV, LNHANCE, OP_CAT, and BitVM2 Could Reshape Bitcoin. https://blockeden.xyz/blog/2026/04/21/bitcoin-covenant-renaissance-op-ctv-lnhance-cat-bitvm2/
+  - 3. BlockEden (2026). How OP_CTV, LNHANCE, OP_CAT, and BitVM2 [private] Reshape Bitcoin. https://blockeden.xyz/blog/2026/04/21/bitcoin-covenant-renaissance-op-ctv-lnhance-cat-bitvm2/
   - 4. Spark (2026). OP_CAT and the Great Covenant Debate: Bitcoin's Most Divisive Opcode. https://www.spark.money/research/bitcoin-op-cat-covenant-debate
   - 5. Cointelegraph Research (2026). Bitcoin Covenants Part 2: OP_CHECKTEMPLATEVERIFY. https://cointelegraph.com/research/bitcoin-covenants-part-2-op-checktemplateverify
 

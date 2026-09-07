@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Fourier Transform
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,39 +20,86 @@ public: true
   "definition": "The Fourier Transform is a mathematical operation that decomposes a function of time or space into its constituent frequency components, expressing the function as a sum of sinusoids weighted by complex amplitudes. It establishes a bijective mapping between the time domain and the frequency domain, enabling analysis, filtering, compression, and convolution of signals. The Discrete Fourier Transform (DFT) and its fast algorithm (FFT) are the computational workhorses of digital signal processing, image analysis, and frequency-domain machine learning.",
   "domain": "ai",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"},
-      {"@id": "urn:ngm:class:statistical-analysis", "label": "Statistical Analysis"}
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:tensor-computation", "label": "Tensor Computation"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-computation",
+        "label": "Tensor Computation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:python-programming-language", "label": "Python Programming Language"},
-      {"@id": "urn:ngm:class:tensor", "label": "Tensor"}
+      {
+        "@id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      },
+      {
+        "@id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:data-modelling", "label": "Data Modelling"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ultra-wideband", "label": "Ultra Wideband"},
-      {"@id": "urn:ngm:class:euclidean-distance", "label": "Euclidean Distance"}
+      {
+        "@id": "urn:ngm:class:ultra-wideband",
+        "label": "Ultra Wideband"
+      },
+      {
+        "@id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:euclidean-distance", "label": "Euclidean Distance"}
+      {
+        "@id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "quality": 0.62,

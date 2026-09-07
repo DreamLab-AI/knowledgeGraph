@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bayesian Deep Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,52 +155,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bayesian-deep-learning:503d5ee648c5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8acb9606ce3489bec4f345a7e368b1dc8865ecb881aaebceffcdb3a7c552051d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bayesian Inference]]",
-      "resolved": "urn:visionflow:linked:bayesian-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Uncertainty Quantification]]",
-      "resolved": "urn:visionflow:linked:uncertainty-quantification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Variational Inference]]",
-      "resolved": "urn:visionflow:linked:variational-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Probabilistic Inference]]",
-      "resolved": "urn:visionflow:linked:probabilistic-inference",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Bayesian deep learning (BDL) is a principled probabilistic framework that marries the representational power of [[Deep Learning]] with the uncertainty-quantification machinery of [[Bayesian Inference]], treating the weights of a [[Neural Network]] as random variables endowed with [[Prior Distribution]] and [[Posterior Distribution]] rather than fixed point estimates. Whereas classical deep learning optimises a single best-fit parameter vector via [[Backpropagation]] and [[Gradient Descent]], BDL maintains a full distribution over weight space, encoding the learner's uncertainty about which parameter settings are consistent with the training data. This posterior over weights propagates through the network to produce a posterior predictive distribution over outputs, so that every prediction carries a statistically meaningful confidence interval that distinguishes [[Aleatoric Uncertainty]] (irreducible noise in the data) from [[Epistemic Uncertainty]] (uncertainty due to limited training data or model misspecification). Because exact posterior inference is computationally intractable for all but the smallest networks, practical BDL relies on approximation strategies: [[Variational Inference]] (particularly the Bayes by Backprop algorithm, which uses the [[Reparameterisation Trick]] to optimise an [[Evidence Lower Bound]]) recasts posterior inference as optimisation over a parametric family; [[Markov Chain Monte Carlo]] methods such as Stochastic Gradient Langevin Dynamics draw approximate posterior samples by injecting calibrated noise into gradient updates; [[Monte Carlo Dropout]] interprets dropout masks at inference time as Bernoulli posterior samples in a deep Gaussian process approximation; [[Laplace Approximation]] fits a Gaussian centred at the maximum a posteriori (MAP) solution using the Hessian of the loss; and [[Deep Ensembles]] train multiple deterministic networks from different random seeds, whose disagreement functions as an implicit Bayesian model average. BDL is foundational to [[Active Learning]] (selecting the most informative data points via posterior entropy), [[Out-of-Distribution Detection]] (flagging inputs where the posterior is flat), [[Model Calibration]], and safety-critical deployment across [[Autonomous Vehicles]], [[Medical AI]], and [[Robotics]]. It connects the representation-learning strengths of [[Convolutional Neural Network]] and [[Transformer Architecture]] with the epistemic rigour of classical [[Probabilistic Graphical Model]], and is increasingly recognised as an essential component of trustworthy and [[Responsible AI]].
@@ -370,7 +319,7 @@ public: true
 
     The foundational period (1992-2000) established the theoretical possibility of BDL. David MacKay's 1992 Caltech doctoral thesis (supervised by John Hopfield) introduced BNNs with Laplace approximation, proposed the Occam's Razor model selection principle via marginal likelihood, and connected neural networks to [[Gaussian Process]] through the kernel interpretation. Radford Neal's 1995 Toronto doctoral thesis (supervised by Geoffrey Hinton) proved analytically that infinite-width single-hidden-layer neural networks converge in distribution to [[Gaussian Process]] as the number of hidden units grows — a result that directly inspired the Neural Tangent Kernel (NTK) theory of 2019 — and developed full [[Hamiltonian Monte Carlo]] posterior sampling for BNNs, showing in principle that exact Bayesian inference was possible at small network scales.
 
-    The scalability era (2011-2017) overcame computational barriers. Alex Graves' 2011 NeurIPS paper introduced practical stochastic variational inference for BNNs using mean-field Gaussian posteriors, showing that [[Backpropagation]]-like algorithms could be derived for the ELBO objective. Kingma and Welling's 2014 ICLR paper "Auto-Encoding Variational Bayes" provided the [[Reparameterisation Trick]] for differentiating through stochastic sampling operations, which became the universal gradient estimator for BDL variational methods. Blundell, Cornebise, Kavukcuoglu, and Wierstra's 2015 ICML paper "Weight Uncertainty in Neural Networks" (Bayes by Backprop) combined Graves' ideas with improved gradient estimators and scale-mixture priors, establishing the standard variational BNN baseline. Gal and Ghahramani's 2016 ICML paper "Dropout as a Bayesian Approximation" was transformative: by proving that standard [[Dropout Regularisation]] at inference corresponds to approximate [[Bayesian Inference]] in a deep [[Gaussian Process]], they made BDL uncertainty estimates available in any existing dropout network at zero additional training cost, leading to an explosion of BDL applications. Lakshminarayanan, Pritzel, and Blundell's 2017 NeurIPS paper "Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles" challenged the necessity of explicit Bayesian priors, showing that ensemble disagreement achieved competitive or superior calibration.
+    The scalability era (2011-2017) overcame computational barriers. Alex Graves' 2011 NeurIPS paper introduced practical stochastic variational inference for BNNs using mean-field Gaussian posteriors, showing that [[Backpropagation]]-like algorithms [private] be derived for the ELBO objective. Kingma and Welling's 2014 ICLR paper "Auto-Encoding Variational Bayes" provided the [[Reparameterisation Trick]] for differentiating through stochastic sampling operations, which became the universal gradient estimator for BDL variational methods. Blundell, Cornebise, Kavukcuoglu, and Wierstra's 2015 ICML paper "Weight Uncertainty in Neural Networks" (Bayes by Backprop) combined Graves' ideas with improved gradient estimators and scale-mixture priors, establishing the standard variational BNN baseline. Gal and Ghahramani's 2016 ICML paper "Dropout as a Bayesian Approximation" was transformative: by proving that standard [[Dropout Regularisation]] at inference corresponds to approximate [[Bayesian Inference]] in a deep [[Gaussian Process]], they made BDL uncertainty estimates available in any existing dropout network at zero additional training cost, leading to an explosion of BDL applications. Lakshminarayanan, Pritzel, and Blundell's 2017 NeurIPS paper "Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles" challenged the necessity of explicit Bayesian priors, showing that ensemble disagreement achieved competitive or superior calibration.
 
     The consolidation era (2018-2023) systematised and generalised BDL. Welling and Teh's 2011 ICML SGLD paper was retroactively recognised as opening the MCMC-via-SGD paradigm; variants SGHMC (Chen et al., 2014), SGLD with momentum, and SWAG (Maddox et al., 2019) made posterior sampling practical for [[Convolutional Neural Network]] scale models. Ritter, Botev, and Barber's 2018 ICLR paper "A Scalable Laplace Approximation for Neural Networks" used Kronecker-factored Fisher information to scale the [[Laplace Approximation]] to ImageNet-scale networks. Daxberger et al.'s 2021 NeurIPS "Laplace Redux" paper systematically compared Laplace variants, finding that last-layer Laplace matches ensemble performance at 10x lower cost — a landmark practical result. Wilson and Izmailov's 2020 NeurIPS paper "Bayesian Deep Learning and a Probabilistic Perspective of Generalisation" argued that BDL with posterior marginalisation explains the benign overfitting of large neural networks (why [[Stochastic Gradient Descent]] finds flat minima that generalise well), connecting [[Loss Landscape]] theory to Bayesian model averaging. The 2023 Mukhoti et al. arXiv 2309.16314 "Primer on Bayesian Neural Networks" provides a comprehensive review of the debates around prior choice, posterior quality, and computational cost.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vector Embedding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,17 +21,34 @@ public: true
   "vc:plainGloss": "A way of turning a word, sentence, image, or document into a list of numbers that captures its meaning, so that things which mean similar things end up close together. This is what lets a system find results by what you actually meant rather than just matching exact keywords.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:embedding", "label": "Embedding"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:embedding",
+      "label": "Embedding"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "quality": 0.8

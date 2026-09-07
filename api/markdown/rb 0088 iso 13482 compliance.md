@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0088 iso 13482 compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"},
-      {"@id": "urn:ngm:class:rb-0100-safety-integrity-level", "label": "rb 0100 safety integrity level"}
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0100-safety-integrity-level",
+        "label": "rb 0100 safety integrity level"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"},
-      {"@id": "urn:ngm:class:rb-0096-safeguarding", "label": "rb 0096 safeguarding"},
-      {"@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop", "label": "rb 0091 safety rated monitored stop"},
-      {"@id": "urn:ngm:class:service-robot", "label": "Service Robot"}
+      {
+        "@id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0096-safeguarding",
+        "label": "rb 0096 safeguarding"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      },
+      {
+        "@id": "urn:ngm:class:service-robot",
+        "label": "Service Robot"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"}
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"}
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0088-iso-13482-compliance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:56dcdb1a4e2bc61d11899d783603b21db7854e1dbc407b70cb43222b1f056a40"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **ISO 13482 Compliance** denotes conformance with ISO 13482:2014, the international safety standard for personal care robots. It requires systematic hazard identification, risk reduction through protective measures, and documented verification that safety integrity criteria are met across the robot's service life. Unlike industrial robot standards (ISO 10218), it addresses robots deployed directly with vulnerable users in domestic and healthcare environments.

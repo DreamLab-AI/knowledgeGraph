@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TechnologyStack
----
-
-# Technology Stack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -99,32 +92,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:technology-stack:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1a440cd5aaf16575d44c5e879289297f3fe24cddb1237acbb5cfd7b4912535d5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The integrated set of software components, frameworks, libraries, runtime environments, and infrastructure services that together support the development and operation of a digital application or platform. In spatial computing contexts, a technology stack spans from hardware drivers and operating systems through XR runtimes, game engines, and application frameworks up to user-facing interfaces and cloud services.

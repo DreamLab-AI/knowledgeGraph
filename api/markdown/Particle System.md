@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Particle System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:particle-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bbfd4c84a503d50f68e85a44375f092dae152e2bd3a62083aaa318712e9c0a31"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Dynamic Visual Effects]]",
-      "resolved": "urn:visionflow:linked:dynamic-visual-effects",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Visual Effects]]",
-      "resolved": "urn:visionflow:owl:class:visual-effects",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A computer graphics technique that simulates fuzzy, chaotic, or fluid phenomena by managing large numbers of small graphical objects with properties like position, velocity, color, and lifetime, controlled by emitters and affected by forces to create effects like fire, smoke, water, and magical effects.

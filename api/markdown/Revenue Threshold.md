@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Revenue Threshold
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "A revenue threshold is a regulatory trigger that applies obligations only to entities whose annual revenue exceeds a defined monetary level. In AI legislation such thresholds scope rules to large developers, exempting smaller firms to reduce compliance burden while targeting actors with the greatest capacity and impact. The threshold value is a key parameter determining who falls within a law's reach.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:california-ai-bill", "label": "California AI bill"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      }
+    ]
   },
   "quality": 0.72
 }

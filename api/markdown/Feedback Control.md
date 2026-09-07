@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - FeedbackControl
----
-
-# Feedback Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -238,102 +231,6 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:feedback-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Actuator Response]]",
-      "resolved": "urn:visionflow:linked:actuator-response",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Disturbance Rejection]]",
-      "resolved": "urn:visionflow:linked:disturbance-rejection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Error Measurement]]",
-      "resolved": "urn:visionflow:linked:error-measurement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Motion Control System]]",
-      "resolved": "urn:visionflow:linked:motion-control-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robot Behaviour]]",
-      "resolved": "urn:visionflow:linked:robot-behaviour",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robust Operation]]",
-      "resolved": "urn:visionflow:linked:robust-operation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Setpoints]]",
-      "resolved": "urn:visionflow:linked:setpoints",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stabilisation Architecture]]",
-      "resolved": "urn:visionflow:linked:stabilisation-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Trajectory Tracking]]",
-      "resolved": "urn:visionflow:linked:trajectory-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Control Algorithm]]",
-      "resolved": "urn:visionflow:owl:class:control-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Control Theory]]",
-      "resolved": "urn:visionflow:owl:class:control-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor]]",
-      "resolved": "urn:visionflow:owl:class:sensor",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - **Feedback Control** - A closed-loop control mechanism in which [[Sensor]] measurements of actual system state are continuously compared against desired [[Setpoints]], and control actions are adjusted in real time to minimise error and maintain stable, accurate [[Robot Behaviour]].
 
@@ -381,7 +278,7 @@ aliases:
   - Liberzon, D. (2022). *Calculus of Variations and Optimal Control Theory: A Concise Introduction*. Princeton University Press. https://press.princeton.edu/books/hardcover/9780691151878/calculus-of-variations-and-optimal-control-theory
   - Tabuada, P. (2023). *Verification and Control of Hybrid Systems: A Symbolic Approach*. Springer. https://doi.org/10.1007/978-3-030-76824-2
   - Alur, R., & Dill, D. L. (2023). *A Theory of Timed Automata*. Theoretical Computer Science, 126(2), 183–235. https://doi.org/10.1016/0304-3975(94)90010-8
-  - Bemporad, A., Morari, M., & Dua, V. (2022). *Model Predictive Control: Theory and Design*. Nob Hill Publishing. https://www.nobhillpublishing.com/mpc-book/index.html
+  - Bemporad, A., Morari, M., & Dua, V. (2022). *Model Predictive Control: Theory and Design*. Nob Hill Publishing. https://www.nobhillpublishing.com/mpc-book/[private].html
 
   - Ongoing research directions
   - Multi-agent feedback control, with a focus on safety and performance guarantees in distributed systems.
@@ -426,7 +323,7 @@ aliases:
   2. Liberzon, D. (2022). *Calculus of Variations and Optimal Control Theory: A Concise Introduction*. Princeton University Press. https://press.princeton.edu/books/hardcover/9780691151878/calculus-of-variations-and-optimal-control-theory
   3. Tabuada, P. (2023). *Verification and Control of Hybrid Systems: A Symbolic Approach*. Springer. https://doi.org/10.1007/978-3-030-76824-2
   4. Alur, R., & Dill, D. L. (2023). *A Theory of Timed Automata*. Theoretical Computer Science, 126(2), 183–235. https://doi.org/10.1016/0304-3975(94)90010-8
-  5. Bemporad, A., Morari, M., & Dua, V. (2022). *Model Predictive Control: Theory and Design*. Nob Hill Publishing. https://www.nobhillpublishing.com/mpc-book/index.html
+  5. Bemporad, A., Morari, M., & Dua, V. (2022). *Model Predictive Control: Theory and Design*. Nob Hill Publishing. https://www.nobhillpublishing.com/mpc-book/[private].html
   6. Engineering and Physical Sciences Research Council (EPSRC). (2025). *Control Engineering Research Portfolio*. https://www.epsrc.ac.uk/research/areas/control-engineering/
   7. Advanced Manufacturing Research Centre (AMRC). (2025). *Research and Innovation*. https://www.amrc.co.uk/
   8. National Composites Centre. (2025). *Research and Innovation*. https://www.nationalcompositescentre.com/

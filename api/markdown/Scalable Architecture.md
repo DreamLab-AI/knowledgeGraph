@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scalable Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:scalable-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:145eba3c8f9ce6aef3535a2af9eab43c709e07adaad039bde50b675f804c1a8d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[High Availability]]",
-      "resolved": "urn:visionflow:linked:high-availability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Architecture]]",
-      "resolved": "urn:visionflow:owl:class:system-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - System designs that maintain performance and availability as user demand grows, employing horizontal scaling, load balancing, distributed computing, and cloud-native patterns to support expanding metaverse populations and concurrent interactions.

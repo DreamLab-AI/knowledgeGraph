@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Environment Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "Virtual Environment Design is the multidisciplinary practice of creating the spatial, visual, auditory, and interactive properties of computer-generated environments intended for exploration or habitation through virtual reality, augmented reality, or mixed reality systems. It integrates principles from architecture, industrial design, game design, cognitive psychology, and human-computer interaction to produce environments that are usable, compelling, and safe, balancing perceptual fidelity, performance constraints, and the unique ergonomics of immersive display hardware.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:virtual-environment-creation", "label": "Virtual Environment Creation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:virtual-environment-creation",
+      "label": "Virtual Environment Creation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:asset-pipeline", "label": "Asset Pipeline"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:virtual-world-building", "label": "Virtual World Building"},
-      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-building",
+        "label": "Virtual World Building"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:interaction-design", "label": "Interaction Design"},
-      {"@id": "urn:ngm:class:world-building", "label": "World Building"}
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      }
     ]
   },
   "quality": 0.8

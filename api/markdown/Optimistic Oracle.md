@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optimistic Oracle
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:optimistic-oracle:735dbe7e9c88",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2c0015f13375152cab6997b0c79c4beacb7d19d1312176c86f4ded4a0fd354a9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Dispute Resolution]]",
-      "resolved": "urn:visionflow:linked:dispute-resolution",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Price Oracle]]",
-      "resolved": "urn:visionflow:linked:price-oracle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Chainlink]]",
-      "resolved": "urn:visionflow:linked:chainlink",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://docs.uma.xyz/]]",
-      "resolved": "urn:visionflow:linked:https-docs-uma-xyz",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An oracle design in which proposed off-chain data is accepted by default and only verified on-chain if a participant disputes it within a challenge window. It reduces routine reporting costs by reserving full verification for contested values.

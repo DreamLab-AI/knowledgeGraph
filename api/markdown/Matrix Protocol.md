@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Matrix Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,15 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-protocol-and-infra", "label": "Protocol and Infrastructure"}
+    {
+      "@id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:federation-protocol", "label": "Federation Protocol"},
-      {"@id": "urn:ngm:class:end-to-end-encrypted-collaboration", "label": "End-to-End Encrypted Collaboration"}
+      {
+        "@id": "urn:ngm:class:federation-protocol",
+        "label": "Federation Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-encrypted-collaboration",
+        "label": "End-to-End Encrypted Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time-synchronisation", "label": "Real-Time Synchronisation"}
+      {
+        "@id": "urn:ngm:class:real-time-synchronisation",
+        "label": "Real-Time Synchronisation"
+      }
     ]
   },
   "quality": 0.7

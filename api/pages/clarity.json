@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:clarity",
   "domain": "metaverse",
-  "definition": "Clarity is a decidable smart contract language designed so that contract behaviour can be analysed before execution, with no compilation step and explicit handling of conditions that could otherwise fail silently.",
+  "definition": "Clarity is a decidable smart contract language designed so that contract behaviour can be analysed before execution, with no compilation step and explicit handling of conditions that [private] otherwise fail silently.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:smart-contracts",

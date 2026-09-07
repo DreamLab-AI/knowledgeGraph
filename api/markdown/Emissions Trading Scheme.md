@@ -1,37 +1,114 @@
----
-public: true
----
-
-# Emissions Trading Scheme
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:emissions-trading-scheme", "@type":"Page", "title":"Emissions Trading Scheme", "vc:slug":"emissions-trading-scheme", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:emissions-trading-scheme",
+  "@type": "Page",
+  "title": "Emissions Trading Scheme",
+  "vc:slug": "emissions-trading-scheme",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:emissions-trading-scheme",
-  "@type":"Class",
-  "label":"Emissions Trading Scheme",
-  "definition":"An emissions trading scheme is a market-based policy instrument that caps the total quantity of greenhouse gases that regulated entities may emit and allows them to trade emission allowances. By placing a price on carbon through tradable permits it incentivises reductions where they are cheapest to achieve. Schemes such as the EU ETS and the UK ETS operate on a cap-and-trade basis and form a central pillar of climate policy and carbon markets.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:carbon-markets","label":"Carbon Markets"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:carbon-markets","label":"Carbon Markets"}],
-    "uses":[{"@id":"urn:ngm:class:carbon-credits","label":"Carbon Credits"},{"@id":"urn:ngm:class:carbon-offset","label":"Carbon Offset"}],
-    "implements":[{"@id":"urn:ngm:class:paris-agreement","label":"Paris Agreement"}],
-    "requires":[{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"},{"@id":"urn:ngm:class:ghg-protocol","label":"GHG Protocol"}],
-    "enables":[{"@id":"urn:ngm:class:sustainable-finance","label":"Sustainable Finance"}],
-    "supports":[{"@id":"urn:ngm:class:climate-change","label":"Climate Change"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:carbon-tax","label":"Carbon Tax"},{"@id":"urn:ngm:class:voluntary-carbon-market","label":"Voluntary Carbon Market"}],
-    "relatedTo":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"},{"@id":"urn:ngm:class:green-finance","label":"Green Finance"},{"@id":"urn:ngm:class:climate-risk","label":"Climate Risk"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:sustainability-reporting","label":"Sustainability Reporting"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:emissions-trading-scheme",
+  "@type": "Class",
+  "label": "Emissions Trading Scheme",
+  "definition": "An emissions trading scheme is a market-based policy instrument that caps the total quantity of greenhouse gases that regulated entities may emit and allows them to trade emission allowances. By placing a price on carbon through tradable permits it incentivises reductions where they are cheapest to achieve. Schemes such as the EU ETS and the UK ETS operate on a cap-and-trade basis and form a central pillar of climate policy and carbon markets.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:carbon-markets",
+      "label": "Carbon Markets"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:climate-change",
+        "label": "Climate Change"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:carbon-tax",
+        "label": "Carbon Tax"
+      },
+      {
+        "@id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "@id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Payment Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,20 +58,50 @@ public: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:utility-token", "label": "Utility Token"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"}
+      {
+        "@id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
-      {"@id": "urn:ngm:class:cbdcs", "label": "CBDCs"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
     ]
   },
   "quality": 0.8,
@@ -87,37 +112,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:payment-token:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:13c6309bef5c65db10a643065774635dad921ad82e7029a06a8b8474de7ff10f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency Token]]",
-      "resolved": "urn:visionflow:owl:class:cryptocurrency-token",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Tokens used for payments.

@@ -1,59 +1,116 @@
----
-public: true
----
-
-# Probabilistic Reasoning
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:probabilistic-reasoning", "@type":"Page", "title":"Probabilistic Reasoning", "vc:slug":"probabilistic-reasoning", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:probabilistic-reasoning",
+  "@type": "Page",
+  "title": "Probabilistic Reasoning",
+  "vc:slug": "probabilistic-reasoning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:probabilistic-reasoning",
-  "@type":"Class",
-  "label":"Probabilistic Reasoning",
-  "definition":"Probabilistic reasoning is the process of drawing conclusions under uncertainty by representing beliefs as probability distributions and updating them with evidence according to the rules of probability. It uses models such as graphical models and applies inference procedures, often grounded in Bayesian updating, to compute the likelihood of hypotheses given observations. By quantifying uncertainty explicitly, it supports robust decision-making where deterministic logic would be brittle.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:reasoning","label":"Reasoning"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:bayesian-inference","label":"Bayesian Inference"},
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"},
-      {"@id":"urn:ngm:class:graphical-model","label":"Graphical Model"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:probabilistic-reasoning",
+  "@type": "Class",
+  "label": "Probabilistic Reasoning",
+  "definition": "Probabilistic reasoning is the process of drawing conclusions under uncertainty by representing beliefs as probability distributions and updating them with evidence according to the rules of probability. It uses models such as graphical models and applies inference procedures, often grounded in Bayesian updating, to compute the likelihood of hypotheses given observations. By quantifying uncertainty explicitly, it supports robust decision-making where deterministic logic would be brittle.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:statistical-inference","label":"Statistical Inference"},
-      {"@id":"urn:ngm:class:inference","label":"Inference"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:probabilistic-model","label":"Probabilistic Model"},
-      {"@id":"urn:ngm:class:inference-engine","label":"Inference Engine"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:decision-making","label":"Decision Making"},
-      {"@id":"urn:ngm:class:uncertainty-quantification","label":"Uncertainty Quantification"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:fuzzy-logic","label":"Fuzzy Logic"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fuzzy-logic",
+        "label": "Fuzzy Logic"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:bayesian-inference","label":"Bayesian Inference"},
-      {"@id":"urn:ngm:class:uncertainty","label":"Uncertainty"},
-      {"@id":"urn:ngm:class:markov-chain","label":"Markov Chain"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty",
+        "label": "Uncertainty"
+      },
+      {
+        "@id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

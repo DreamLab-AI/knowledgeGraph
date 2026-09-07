@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - CircularEconomy
----
-
-# Circular Economy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -616,397 +609,6 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:circular-economy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c8ea788218f1bfaba2b06eb6cc0eb27134a999bbc0e659e87464d40b7237c3fd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BMW]]",
-      "resolved": "urn:visionflow:linked:bmw",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Carbon Credits]]",
-      "resolved": "urn:visionflow:linked:carbon-credits",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Circularise]]",
-      "resolved": "urn:visionflow:linked:circularise",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Climate Change Mitigation]]",
-      "resolved": "urn:visionflow:linked:climate-change-mitigation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cradle-to-Cradle Design]]",
-      "resolved": "urn:visionflow:linked:cradle-to-cradle-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deposit Return Scheme]]",
-      "resolved": "urn:visionflow:linked:deposit-return-scheme",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Product Passport]]",
-      "resolved": "urn:visionflow:linked:digital-product-passport",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Twins]]",
-      "resolved": "urn:visionflow:linked:digital-twins",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ecodesign for Sustainable Products Regulation]]",
-      "resolved": "urn:visionflow:linked:ecodesign-for-sustainable-products-regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Economic Model]]",
-      "resolved": "urn:visionflow:linked:economic-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ellen MacArthur Foundation]]",
-      "resolved": "urn:visionflow:linked:ellen-mac-arthur-foundation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Environmental Policy]]",
-      "resolved": "urn:visionflow:linked:environmental-policy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EPCIS]]",
-      "resolved": "urn:visionflow:linked:epcis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ESG Investing]]",
-      "resolved": "urn:visionflow:linked:esg-investing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU Battery Regulation]]",
-      "resolved": "urn:visionflow:linked:eu-battery-regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU Green Deal]]",
-      "resolved": "urn:visionflow:linked:eu-green-deal",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Extended Producer Responsibility]]",
-      "resolved": "urn:visionflow:linked:extended-producer-responsibility",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fairphone]]",
-      "resolved": "urn:visionflow:linked:fairphone",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fashion for Good]]",
-      "resolved": "urn:visionflow:linked:fashion-for-good",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fast Fashion]]",
-      "resolved": "urn:visionflow:linked:fast-fashion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Global Battery Alliance]]",
-      "resolved": "urn:visionflow:linked:global-battery-alliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Green Finance]]",
-      "resolved": "urn:visionflow:linked:green-finance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Green Growth]]",
-      "resolved": "urn:visionflow:linked:green-growth",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GS1]]",
-      "resolved": "urn:visionflow:linked:gs1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GS1 Digital Link]]",
-      "resolved": "urn:visionflow:linked:gs1-digital-link",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Industrial Ecology]]",
-      "resolved": "urn:visionflow:linked:industrial-ecology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IndustrialLayer]]",
-      "resolved": "urn:visionflow:linked:industrial-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Industrial Symbiosis]]",
-      "resolved": "urn:visionflow:linked:industrial-symbiosis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IoT]]",
-      "resolved": "urn:visionflow:linked:io-t",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 14040]]",
-      "resolved": "urn:visionflow:linked:iso-14040",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 14044]]",
-      "resolved": "urn:visionflow:linked:iso-14044",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 14072]]",
-      "resolved": "urn:visionflow:linked:iso-14072",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 59004]]",
-      "resolved": "urn:visionflow:linked:iso-59004",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Kalundborg Symbiosis]]",
-      "resolved": "urn:visionflow:linked:kalundborg-symbiosis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Landfill Disposal]]",
-      "resolved": "urn:visionflow:linked:landfill-disposal",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Life Cycle Assessment]]",
-      "resolved": "urn:visionflow:linked:life-cycle-assessment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Linear Economy]]",
-      "resolved": "urn:visionflow:linked:linear-economy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Material Flow Analysis]]",
-      "resolved": "urn:visionflow:linked:material-flow-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Material Science]]",
-      "resolved": "urn:visionflow:linked:material-science",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Material Traceability]]",
-      "resolved": "urn:visionflow:linked:material-traceability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Michelin]]",
-      "resolved": "urn:visionflow:linked:michelin",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Philips]]",
-      "resolved": "urn:visionflow:linked:philips",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Planned Obsolescence]]",
-      "resolved": "urn:visionflow:linked:planned-obsolescence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PolicyLayer]]",
-      "resolved": "urn:visionflow:linked:policy-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Product-as-a-Service]]",
-      "resolved": "urn:visionflow:linked:product-as-a-service",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Resource Security]]",
-      "resolved": "urn:visionflow:linked:resource-security",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reverse Logistics]]",
-      "resolved": "urn:visionflow:linked:reverse-logistics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SDGs]]",
-      "resolved": "urn:visionflow:linked:sdgs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Single-Use Products]]",
-      "resolved": "urn:visionflow:linked:single-use-products",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stakeholder Collaboration]]",
-      "resolved": "urn:visionflow:linked:stakeholder-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Supply Chain]]",
-      "resolved": "urn:visionflow:linked:supply-chain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SupplyChainDomain]]",
-      "resolved": "urn:visionflow:linked:supply-chain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SustainabilityDomain]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sustainable Manufacturing]]",
-      "resolved": "urn:visionflow:linked:sustainable-manufacturing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Systems Thinking]]",
-      "resolved": "urn:visionflow:linked:systems-thinking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TechnologyLayer]]",
-      "resolved": "urn:visionflow:linked:technology-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UK Critical Minerals Strategy 2025]]",
-      "resolved": "urn:visionflow:linked:uk-critical-minerals-strategy-2025",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UKRI Interdisciplinary Circular Economy Centres]]",
-      "resolved": "urn:visionflow:linked:ukri-interdisciplinary-circular-economy-centres",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[VeChain]]",
-      "resolved": "urn:visionflow:linked:ve-chain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Volvo]]",
-      "resolved": "urn:visionflow:linked:volvo",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Waste Hierarchy]]",
-      "resolved": "urn:visionflow:linked:waste-hierarchy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[World Economic Forum]]",
-      "resolved": "urn:visionflow:linked:world-economic-forum",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hyperledger Fabric]]",
-      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Product Design]]",
-      "resolved": "urn:visionflow:owl:class:product-design",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Framework]]",
-      "resolved": "urn:visionflow:owl:class:regulatory-framework",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Resource Management]]",
-      "resolved": "urn:visionflow:owl:class:resource-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainability]]",
-      "resolved": "urn:visionflow:owl:class:sustainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainable Development]]",
-      "resolved": "urn:visionflow:owl:class:sustainable-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Text Tokenisation]]",
-      "resolved": "urn:visionflow:owl:class:tokenisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Waste Management]]",
-      "resolved": "urn:visionflow:owl:class:waste-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Systemic economic model that eliminates waste and keeps materials, components, and products in use at their highest value for as long as possible through restorative and regenerative design, distinguished from the linear "take-make-dispose" paradigm by organising economic activity around three foundational principles—designing out waste and pollution at the product design stage, keeping products and materials in use through cascading reuse-repair-remanufacture-recycle value hierarchies, and regenerating natural systems by safely returning biological nutrients to biospheres—formalised by the [[Ellen MacArthur Foundation]] (2013) drawing from Walter Stahel's Performance Economy (1976), Michael Braungart and William McDonough's [[Cradle-to-Cradle Design]] (2002) distinguishing biological and technical nutrient loops, and Robert Frosch and Nicholas Gallopoulos' industrial ecology metabolic analogy (1989), operationalised across the global economy via regulatory mandates (EU [[Ecodesign for Sustainable Products Regulation]] in force July 2024 establishing [[Digital Product Passport]] infrastructure with central EU registry operational July 2026; EU Battery Regulation requiring battery passports with QR codes from February 2027 including mandatory recycled content thresholds of 16% cobalt, 6% lithium, 6% nickel by 2031 and recovery efficiency targets of 90% for cobalt-nickel-copper and 50% for lithium; [[EU Green Deal]] Circular Economy Action Plan targeting 50% waste reduction by 2030 and €600 billion annual economic benefit; UK Critical Minerals Strategy November 2025 targeting 20% critical mineral demand from domestic recycling by 2035 backed by £50 million investment), technological enablers ([[Digital Product Passport]] recording material composition, ownership transfers, and lifecycle events with persistence across product lifetimes spanning decades; [[Blockchain]] providing immutable provenance through permissioned networks like [[Hyperledger Fabric]] and purpose-built platforms like [[VeChain]] tracking BMW and BYD batteries across 100,000+ modules; [[Artificial Intelligence]] sorting waste streams with 90%+ accuracy versus 60% manual baseline deployed in 15% of global recycling facilities by 2025 with costs declining 15% annually; [[Digital Twins]] simulating reverse logistics demonstrating 27% waste reduction, 32% energy reduction, 45% resource recovery improvement versus linear baselines; [[IoT]] enabling connected product telemetry for predictive maintenance and state-of-health assessment), business model innovations ([[Product-as-a-Service]] selling outcomes rather than product ownership—Philips Light-as-a-Service contributing to 25% circular revenue target; Michelin EFFITIRES pay-per-kilometre covering 320,000+ vehicles; Rolls-Royce Power by the Hour since 1962), [[Industrial Symbiosis]] redirecting waste as feedstock (Kalundborg Symbiosis Denmark since 1972, saving 3.6 million m³ water and 87,000 tonnes CO₂ annually), generating a global circular economy market valued at $450–638 billion in 2024 projected to reach $1–2.2 trillion by 2032 at 11–13% compound annual growth rates, with circular transition potentially reducing EU greenhouse gas emissions by 48% by 2030 and generating €600 billion annual savings, fundamentally reorienting industrial civilisation from resource extraction and waste generation toward a permanently regenerative material metabolism decoupling economic prosperity from finite resource consumption.
 
@@ -1167,7 +769,7 @@ aliases:
 
 	  The foundational intellectual architecture draws from several converging traditions developed over five decades. Walter Stahel, working at the Geneva School of Management from 1976 onwards, proposed the "Performance Economy" concept—selling performance outcomes rather than physical goods, so that manufacturers retain product ownership and therefore responsibility for maintenance, lifecycle extension, and material recovery. This became the [[Product-as-a-Service]] business model now adopted by Philips, Michelin, Rolls-Royce, and scores of industrial equipment companies. German chemist Michael Braungart and American architect William McDonough formalised [[Cradle-to-Cradle Design]] in their 2002 book, distinguishing biological nutrients (organic materials—cotton, food, wood—that can safely return to biospheres through composting) from technical nutrients (metals, synthetic polymers, electronic components) that must cycle through closed industrial loops indefinitely without contaminating natural systems.
 
-	  Industrial ecologists Robert Frosch and Nicholas Gallopoulos published their metabolic analogy in 1989—industrial systems, like biological ecosystems, can be designed so that the waste output of one process is the feedstock input of another, eliminating net waste through systematic exchange. This concept underpins [[Industrial Symbiosis]], most famously demonstrated at Kalundborg in Denmark where an oil refinery, power plant, pharmaceutical manufacturer, and wallboard producer have exchanged surplus steam, sulphur dioxide, fly ash, and sludge in a coordinated network since 1972, saving 3.6 million cubic metres of water annually and 87,000 tonnes of CO₂ per year. The [[Ellen MacArthur Foundation]], established in 2010 and publishing its landmark "Towards the Circular Economy" report series from 2013, synthesised these intellectual traditions into the butterfly diagram depicting biological and technical cycles as two complementary wings of a single material metabolism. The Foundation's economic modelling estimated that a full circular transition could reduce EU greenhouse gas emissions by 48% by 2030 whilst generating €600 billion in annual economic savings.
+	  Industrial ecologists Robert Frosch and Nicholas Gallopoulos published their metabolic analogy in 1989—industrial systems, like biological ecosystems, can be designed so that the waste output of one process is the feedstock input of another, eliminating net waste through systematic exchange. This concept underpins [[Industrial Symbiosis]], most famously demonstrated at Kalundborg in Denmark where an oil refinery, power plant, pharmaceutical manufacturer, and wallboard producer have exchanged surplus steam, sulphur dioxide, fly ash, and sludge in a coordinated network since 1972, saving 3.6 million cubic metres of water annually and 87,000 tonnes of CO₂ per year. The [[Ellen MacArthur Foundation]], established in 2010 and publishing its landmark "Towards the Circular Economy" report series from 2013, synthesised these intellectual traditions into the butterfly diagram depicting biological and technical cycles as two complementary wings of a single material metabolism. The Foundation's economic modelling estimated that a full circular transition [private] reduce EU greenhouse gas emissions by 48% by 2030 whilst generating €600 billion in annual economic savings.
 
   - ### Foundational Design Principles
 
@@ -1232,7 +834,7 @@ aliases:
 
 	  Manual waste sorting achieves approximately 60% material identification accuracy—insufficient for the material purity grades required by high-quality recycling markets specifying contamination tolerances below 1–2%. [[Artificial Intelligence]]-driven automated sorting systems achieve 90%+ identification accuracy by combining near-infrared (NIR) spectroscopy to distinguish polymer types (separating PET, HDPE, LDPE, PP, PS, PVC with greater than 95% accuracy), X-ray fluorescence (XRF) identifying metals in electronic waste, hyperspectral imaging resolving composite material classifications, and 3D vision systems guiding robotic pick-and-place at 4,000–6,000 picks per hour throughput. Recycleye's vision-AI robotic systems and Tomra's AUTOSORT optical sorters and MAX-AI units are leading commercial deployments.
 
-	  By 2025, AI sorting operated in approximately 15% of global recycling facilities, collectively diverting an estimated 50 million tonnes of material from landfill annually. AI hardware and inference costs are declining at approximately 15% annually, extending economic viability to lower-value waste streams. Oslo's RecycleHub initiative operating across 50 centres sorts 10 tonnes weekly per facility with 85% recyclable recovery—nearly double the manual baseline. A 2025 MDPI study projects AI-driven circular systems could recover 60% of all recyclables globally by 2030, cutting landfill emissions by 40%. For e-waste—62 million tonnes generated in 2022, only 22.3% formally recovered—AI-guided robotic disassembly extracts gold-bearing circuit boards (250–350 g gold per tonne), rare earth permanent magnets (5–15 kg per tonne), and other high-value components at throughput rates impossible with manual sorting, making previously uneconomic recovery streams viable at commercial scale.
+	  By 2025, AI sorting operated in approximately 15% of global recycling facilities, collectively diverting an estimated 50 million tonnes of material from landfill annually. AI hardware and inference costs are declining at approximately 15% annually, extending economic viability to lower-value waste streams. Oslo's RecycleHub initiative operating across 50 centres sorts 10 tonnes weekly per facility with 85% recyclable recovery—nearly double the manual baseline. A 2025 MDPI study projects AI-driven circular systems [private] recover 60% of all recyclables globally by 2030, cutting landfill emissions by 40%. For e-waste—62 million tonnes generated in 2022, only 22.3% formally recovered—AI-guided robotic disassembly extracts gold-bearing circuit boards (250–350 g gold per tonne), rare earth permanent magnets (5–15 kg per tonne), and other high-value components at throughput rates impossible with manual sorting, making previously uneconomic recovery streams viable at commercial scale.
 
 	  #### Digital Twins for Reverse Logistics Optimisation
 
@@ -1392,7 +994,7 @@ aliases:
 
 	  #### AI-Circular Convergence toward Autonomous Material Routing
 
-	  Next-generation AI systems will progress from waste sorting automation toward autonomous circular economy orchestration—real-time matching of end-of-life material streams with available reprocessing capacity at optimal locations, AI-predicted maintenance interventions extending product life before repair becomes uneconomical, dynamic routing of returned products across reuse-refurbishment-remanufacture-recycle pathways based on real-time condition assessment and market pricing, and AI material characterisation via spectroscopy plus deep learning resolving complex composite materials that NIR alone cannot classify. MDPI projects AI-driven circular systems could recover 60% of all recyclable materials globally by 2030, cutting landfill emissions by 40%.
+	  Next-generation AI systems will progress from waste sorting automation toward autonomous circular economy orchestration—real-time matching of end-of-life material streams with available reprocessing capacity at optimal locations, AI-predicted maintenance interventions extending product life before repair becomes uneconomical, dynamic routing of returned products across reuse-refurbishment-remanufacture-recycle pathways based on real-time condition assessment and market pricing, and AI material characterisation via spectroscopy plus deep learning resolving complex composite materials that NIR alone cannot classify. MDPI projects AI-driven circular systems [private] recover 60% of all recyclable materials globally by 2030, cutting landfill emissions by 40%.
 
 	  #### Tokenisation and Circular Economy Financialisation
 
@@ -1400,7 +1002,7 @@ aliases:
 
 	  #### Cross-Border Circular Economy Data Governance
 
-	  As DPP mandates create mandatory product data flows across supply chains spanning dozens of jurisdictions, international governance frameworks—covering data sovereignty, privacy protection under [[GDPR]] and equivalent national regimes, cross-border access rights for regulatory authorities, and interoperability between EU, UK, US, and Asian DPP frameworks—will require multilateral negotiation analogous to financial data equivalence agreements. The WEF Global Battery Alliance governance framework provides one sector-specific model for cross-border circular data governance that could inform broader frameworks.
+	  As DPP mandates create mandatory product data flows across supply chains spanning dozens of jurisdictions, international governance frameworks—covering data sovereignty, privacy protection under [[GDPR]] and equivalent national regimes, cross-border access rights for regulatory authorities, and interoperability between EU, UK, US, and Asian DPP frameworks—will require multilateral negotiation analogous to financial data equivalence agreements. The WEF Global Battery Alliance governance framework provides one sector-specific model for cross-border circular data governance that [private] inform broader frameworks.
 
 	  #### Biogenic Carbon Integration into Circular Accounting
 
@@ -1468,11 +1070,11 @@ aliases:
 
 	  #### Carbon Emissions Reductions
 
-	  The European Commission's circular economy modelling estimates that achieving the Circular Economy Action Plan targets could reduce EU greenhouse gas emissions by 48% by 2030—approximately 3.7 billion tonnes CO₂e annually—primarily through avoiding energy-intensive primary material production. Manufacturing from recycled materials typically requires 60–95% less energy than from virgin sources: recycled aluminium requires 5% of the energy of primary smelting; recycled steel via electric arc furnace requires 25–30% versus basic oxygen furnace primary production; recycled PET plastic requires 75% less energy than virgin polymer from naphtha. Extended product lifespans multiply these benefits: extending smartphone use from 2.5 to 5 years reduces lifecycle carbon by approximately 40%, equivalent to avoiding 50 kg CO₂ per device. The EU estimates that achieving circular economy targets for buildings alone could avoid 35 million tonnes of CO₂ annually by 2030.
+	  The European Commission's circular economy modelling estimates that achieving the Circular Economy Action Plan targets [private] reduce EU greenhouse gas emissions by 48% by 2030—approximately 3.7 billion tonnes CO₂e annually—primarily through avoiding energy-intensive primary material production. Manufacturing from recycled materials typically requires 60–95% less energy than from virgin sources: recycled aluminium requires 5% of the energy of primary smelting; recycled steel via electric arc furnace requires 25–30% versus basic oxygen furnace primary production; recycled PET plastic requires 75% less energy than virgin polymer from naphtha. Extended product lifespans multiply these benefits: extending smartphone use from 2.5 to 5 years reduces lifecycle carbon by approximately 40%, equivalent to avoiding 50 kg CO₂ per device. The EU estimates that achieving circular economy targets for buildings alone [private] avoid 35 million tonnes of CO₂ annually by 2030.
 
 	  #### Material Resource Conservation
 
-	  Global material extraction reached 100 billion tonnes annually by 2024, with only 7.2% of materials globally circulating through secondary loops (Global Circularity Gap Report 2023). E-waste contains recoverable gold at 350 g per tonne—approximately 50× the concentration of typical gold ore (7 g per tonne). BMW's battery recycling programme recovers approximately 20 tonnes of cobalt and 100 tonnes of nickel annually per 10,000 recycled packs, averting mining operations with substantial habitat destruction, water table impacts, and worker safety risks in DRC mining regions. Textile-to-textile recycling at scale could prevent 92 million tonnes of fashion waste annually, conserving approximately 9.3 billion litres of water (fashion's annual water consumption equivalent to drinking water for 1.5 billion people) and 35 million tonnes of CO₂ from avoided cotton cultivation and synthetic fibre production.
+	  Global material extraction reached 100 billion tonnes annually by 2024, with only 7.2% of materials globally circulating through secondary loops (Global Circularity Gap Report 2023). E-waste contains recoverable gold at 350 g per tonne—approximately 50× the concentration of typical gold ore (7 g per tonne). BMW's battery recycling programme recovers approximately 20 tonnes of cobalt and 100 tonnes of nickel annually per 10,000 recycled packs, averting mining operations with substantial habitat destruction, water table impacts, and worker safety risks in DRC mining regions. Textile-to-textile recycling at scale [private] prevent 92 million tonnes of fashion waste annually, conserving approximately 9.3 billion litres of water (fashion's annual water consumption equivalent to drinking water for 1.5 billion people) and 35 million tonnes of CO₂ from avoided cotton cultivation and synthetic fibre production.
 
 	  #### Biodiversity and Ecosystem Protection
 

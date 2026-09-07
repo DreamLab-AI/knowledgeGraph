@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Grid Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Grid infrastructure is the physical and control system of generation, transmission, distribution, and balancing assets that delivers electrical power from sources to consumers. It includes substations, transmission lines, transformers, and increasingly digital control layers for monitoring and demand response. Reliable grid infrastructure is a prerequisite for energy-intensive computing, mining, and data-centre operations.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"}
+      {
+        "@id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      }
     ]
   },
   "quality": 0.72

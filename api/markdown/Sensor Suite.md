@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sensor Suite
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A sensor suite is the integrated collection of complementary sensors mounted on a robotic platform, such as cameras, LiDAR, radar, IMUs, and encoders, chosen to provide redundant and complementary perception. The combination supports sensor fusion that compensates for the failure modes and blind spots of any single modality. It is a defining hardware subsystem of autonomous mobile robots.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:robot-hardware", "label": "Robot Hardware"}, {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robot-hardware",
+        "label": "Robot Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      }
+    ]
   },
   "quality": 0.72
 }

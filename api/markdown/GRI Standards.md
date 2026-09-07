@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GRI Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The GRI Standards are a globally adopted framework published by the Global Reporting Initiative for organisations to disclose their economic, environmental, and social impacts. They provide a modular set of universal, sector, and topic standards that standardise sustainability and ESG reporting for comparability across firms. Widely referenced by regulators and investors, they form a backbone of corporate non-financial disclosure.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"}
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
     ]
   },
   "quality": 0.72

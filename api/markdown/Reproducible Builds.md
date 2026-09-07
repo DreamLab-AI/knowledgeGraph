@@ -1,36 +1,120 @@
----
-public: true
----
-
-# Reproducible Builds
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:reproducible-builds", "@type":"Page", "title":"Reproducible Builds", "vc:slug":"reproducible-builds", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:reproducible-builds",
+  "@type": "Page",
+  "title": "Reproducible Builds",
+  "vc:slug": "reproducible-builds",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:reproducible-builds",
-  "@type":"Class",
-  "label":"Reproducible Builds",
-  "definition":"Reproducible builds are a software build practice in which compiling the same source code under the same recorded conditions always yields bit-for-bit identical artifacts. By removing sources of non-determinism such as timestamps, build paths, and ordering, independent parties can verify that a published binary corresponds exactly to its claimed source. This independent verifiability strengthens software supply-chain security and trust in distributed binaries.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:supply-chain-security","label":"Supply Chain Security"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:verification","label":"Verification"},{"@id":"urn:ngm:class:trust","label":"Trust"},{"@id":"urn:ngm:class:attestation","label":"Attestation"}],
-    "supports":[{"@id":"urn:ngm:class:software-supply-chain","label":"Software Supply Chain"},{"@id":"urn:ngm:class:supply-chain-security","label":"Supply Chain Security"}],
-    "hasPart":[{"@id":"urn:ngm:class:provenance","label":"Provenance"},{"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"}],
-    "requires":[{"@id":"urn:ngm:class:version-control","label":"Version Control"},{"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"}],
-    "uses":[{"@id":"urn:ngm:class:content-addressed-storage","label":"Content-Addressed Storage"},{"@id":"urn:ngm:class:hash-function","label":"Hash Function"}],
-    "relatedTo":[{"@id":"urn:ngm:class:provenance","label":"Provenance"},{"@id":"urn:ngm:class:caching","label":"Caching"},{"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"}],
-    "dependsOn":[{"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:attestation","label":"Attestation"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:reproducible-builds",
+  "@type": "Class",
+  "label": "Reproducible Builds",
+  "definition": "Reproducible builds are a software build practice in which compiling the same source code under the same recorded conditions always yields bit-for-bit identical artifacts. By removing sources of non-determinism such as timestamps, build paths, and ordering, independent parties can verify that a published binary corresponds exactly to its claimed source. This independent verifiability strengthens software supply-chain security and trust in distributed binaries.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:supply-chain-security",
+      "label": "Supply Chain Security"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:verification",
+        "label": "Verification"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

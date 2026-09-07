@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Interest Rate
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:interest-rate", "@type":"Page", "title":"Interest Rate", "vc:slug":"interest-rate", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:interest-rate",
+  "@type": "Page",
+  "title": "Interest Rate",
+  "vc:slug": "interest-rate",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

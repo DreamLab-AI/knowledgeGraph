@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DataStructure
----
-
-# Data Structure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,52 +172,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-structure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9ab947d73ad5302a41fe8fde73189c7baa75cda7a4468f62c958e8522afb8973"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Graph Neural Networks]]",
-      "resolved": "urn:visionflow:linked:graph-neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE Micro]]",
-      "resolved": "urn:visionflow:linked:ieee-micro",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Memory Optimization]]",
-      "resolved": "urn:visionflow:linked:memory-optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sparse Matrices]]",
-      "resolved": "urn:visionflow:linked:sparse-matrices",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tensor Operations]]",
-      "resolved": "urn:visionflow:linked:tensor-operations",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms. Key structures include tensors (multi-dimensional arrays for neural networks), graphs (for knowledge graphs and GNNs), trees (decision trees, search trees), hash tables (for feature indexing), and specialized structures like attention mechanisms' key-value stores. Efficient data structures are crucial for algorithmic complexity, memory utilization, and computational performance in AI systems. Modern implementations leverage GPU-optimized data layouts and distributed data structures for large-scale ML.

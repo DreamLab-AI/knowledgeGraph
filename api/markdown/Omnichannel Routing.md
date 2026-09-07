@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Omnichannel Routing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Omnichannel routing is the contact-centre capability that directs customer interactions arriving across multiple channels, such as voice, chat, email, and social, to the most appropriate agent or automated handler using a unified queue and context. It maintains a single view of each customer's history so conversations can move between channels without loss of context. It is central to consistent, efficient customer service operations.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:omnichannel", "label": "Omnichannel"},
-      {"@id": "urn:ngm:class:call-centres", "label": "Call Centres"}
+      {
+        "@id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel"
+      },
+      {
+        "@id": "urn:ngm:class:call-centres",
+        "label": "Call Centres"
+      }
     ]
   },
   "quality": 0.72

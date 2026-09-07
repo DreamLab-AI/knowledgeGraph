@@ -1,54 +1,106 @@
----
-public: true
----
-
-# Remote Attestation
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:remote-attestation", "@type":"Page", "title":"Remote Attestation", "vc:slug":"remote-attestation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:remote-attestation",
+  "@type": "Page",
+  "title": "Remote Attestation",
+  "vc:slug": "remote-attestation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:remote-attestation",
-  "@type":"Class",
-  "label":"Remote Attestation",
-  "definition":"Remote attestation is a security mechanism by which one system proves the integrity and identity of its software and hardware state to a remote verifier. The attesting platform produces cryptographically signed evidence, rooted in a hardware root of trust, that captures measurements of its boot sequence and running code. A verifier checks this evidence against expected values and a trusted signing key before granting access or releasing secrets, allowing trust decisions to be made about a machine that is not physically controlled.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:confidential-computing","label":"Confidential Computing"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"},
-      {"@id":"urn:ngm:class:cryptographic-key","label":"Cryptographic Key"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:remote-attestation",
+  "@type": "Class",
+  "label": "Remote Attestation",
+  "definition": "Remote attestation is a security mechanism by which one system proves the integrity and identity of its software and hardware state to a remote verifier. The attesting platform produces cryptographically signed evidence, rooted in a hardware root of trust, that captures measurements of its boot sequence and running code. A verifier checks this evidence against expected values and a trusted signing key before granting access or releasing secrets, allowing trust decisions to be made about a machine that is not physically controlled.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:confidential-computing",
+      "label": "Confidential Computing"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:confidential-computing","label":"Confidential Computing"},
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:trusted-execution-environment","label":"Trusted Execution Environment"},
-      {"@id":"urn:ngm:class:secure-boot","label":"Secure Boot"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:root-of-trust","label":"Root of Trust"},
-      {"@id":"urn:ngm:class:trusted-platform-module","label":"Trusted Platform Module"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:root-of-trust",
+        "label": "Root of Trust"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:hardware-security-module","label":"Hardware Security Module"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:intel-sgx","label":"Intel SGX"},
-      {"@id":"urn:ngm:class:secure-enclave","label":"Secure Enclave"},
-      {"@id":"urn:ngm:class:key-management","label":"Key Management"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:intel-sgx",
+        "label": "Intel SGX"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Newton-Euler Dynamics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,23 +58,56 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"},
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
-      {"@id": "urn:ngm:class:inertia", "label": "Inertia"}
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "@id": "urn:ngm:class:inertia",
+        "label": "Inertia"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
     ]
   },
   "quality": 0.8,
@@ -90,37 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:newton-euler-dynamics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fa373ffae9755d4e741886068ba80cf20d45e8c061ca3e1b3deda7447484bbd1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robot Dynamics]]",
-      "resolved": "urn:visionflow:owl:class:robot-dynamics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Newton-Euler method applies F=ma and τ=Iα to each link recursively.

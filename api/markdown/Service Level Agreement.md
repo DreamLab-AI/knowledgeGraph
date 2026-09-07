@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Service Level Agreement
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:service-level-agreement", "@type":"Page", "title":"Service Level Agreement", "vc:slug":"service-level-agreement", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:service-level-agreement",
+  "@type": "Page",
+  "title": "Service Level Agreement",
+  "vc:slug": "service-level-agreement",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

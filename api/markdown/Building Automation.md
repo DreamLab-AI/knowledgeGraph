@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Building Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,43 @@ public: true
   "definition": "Building Automation refers to the centralised monitoring and control of a building's mechanical, electrical, and environmental systems — including heating, ventilation, air conditioning, lighting, access control, and fire safety — through networked sensor-actuator architectures and programmable control logic. It aims to optimise occupant comfort, reduce energy consumption, and enable remote facility management via integrated software platforms.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:actuators", "label": "Actuators"},
-      {"@id": "urn:ngm:class:zigbee", "label": "Zigbee"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:energy-management", "label": "Energy Management"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
-    "relatedTo": [{"@id": "urn:ngm:class:access-control-system", "label": "Access Control System"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -56,4 +76,3 @@ public: true
   - The ecosystem spans HVAC, lighting, power metering, access control, fire detection, and increasingly EV charging and façade shading. Major platform vendors — Siemens Desigo, Honeywell Enterprise Buildings Integrator, Johnson Controls Metasys — compete with open-source options such as OpenHAB and Home Assistant at the lower end. Integrators combine these with BEMS (Building Energy Management System) analytics software to produce key performance indicators on energy intensity per square metre and carbon emissions.
 
   - From 2024 onwards, building automation is being reshaped by the convergence of IoT, AI-driven predictive control, and sustainability regulation. The EU Energy Performance of Buildings Directive mandates Smart Readiness Indicators (SRI) ratings for new and renovated buildings, directly incentivising automation investment. AI models are being deployed for HVAC predictive optimisation, reducing energy use by 15–30% compared to rule-based setpoints. Digital twin integration, edge AI controllers, and cybersecurity hardening (aligned with IEC 62443) represent the frontier of current development.
-

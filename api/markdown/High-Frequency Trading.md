@@ -1,37 +1,113 @@
----
-public: true
----
-
-# High-Frequency Trading
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:high-frequency-trading", "@type":"Page", "title":"High-Frequency Trading", "vc:slug":"high-frequency-trading", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:high-frequency-trading",
-  "@type":"Class",
-  "label":"High-Frequency Trading",
-  "definition":"High-frequency trading (HFT) is a form of automated electronic trading characterised by very high order submission rates, extremely short holding periods and a reliance on minimising latency to gain advantage. HFT firms use co-located servers, optimised networking and algorithmic strategies to react to market signals in microseconds, often acting as market makers or capturing fleeting price discrepancies. It is a dominant participant in modern equity, futures and foreign-exchange markets and a central subject of market microstructure research.",
-  "domain":"finance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:market-microstructure","label":"Market Microstructure"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:market-microstructure","label":"Market Microstructure"}],
-    "enables":[{"@id":"urn:ngm:class:liquidity","label":"Liquidity"},{"@id":"urn:ngm:class:market-making","label":"Market Making"}],
-    "supports":[{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "uses":[{"@id":"urn:ngm:class:order-book","label":"Order Book"}],
-    "dependsOn":[{"@id":"urn:ngm:class:latency","label":"Latency"}],
-    "requires":[{"@id":"urn:ngm:class:latency","label":"Latency"}],
-    "relatedTo":[{"@id":"urn:ngm:class:quantitative-finance","label":"Quantitative Finance"},{"@id":"urn:ngm:class:risk-management","label":"Risk Management"},{"@id":"urn:ngm:class:order-book","label":"Order Book"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:market-making","label":"Market Making"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:mev","label":"MEV"},{"@id":"urn:ngm:class:decentralised-finance","label":"Decentralised Finance"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:high-frequency-trading",
+  "@type": "Page",
+  "title": "High-Frequency Trading",
+  "vc:slug": "high-frequency-trading",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:high-frequency-trading",
+  "@type": "Class",
+  "label": "High-Frequency Trading",
+  "definition": "High-frequency trading (HFT) is a form of automated electronic trading characterised by very high order submission rates, extremely short holding periods and a reliance on minimising latency to gain advantage. HFT firms use co-located servers, optimised networking and algorithmic strategies to react to market signals in microseconds, often acting as market makers or capturing fleeting price discrepancies. It is a dominant participant in modern equity, futures and foreign-exchange markets and a central subject of market microstructure research.",
+  "domain": "finance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:market-microstructure",
+      "label": "Market Microstructure"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:quantitative-finance",
+        "label": "Quantitative Finance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - High-frequency trading is automated electronic trading defined by high order rates, short holding periods and aggressive latency minimisation. It is a core phenomenon within [[Market Microstructure]], shaping [[Liquidity]] and [[Market Making]] while depending critically on [[Latency]] reduction and rigorous [[Risk Management]].
 - ### Overview

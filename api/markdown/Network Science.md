@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Science
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Network science is the interdisciplinary study of complex systems represented as graphs of nodes and edges, focusing on the structure, dynamics, and function of connections. It develops models and metrics, such as degree distributions, centrality, community structure, and small-world properties, to explain how topology shapes behaviour. It is applied across social, biological, technological, and economic networks.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:social-network-analysis", "label": "Social Network Analysis"}
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CBDC Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "CBDC infrastructure refers to the technical systems, protocols, and institutional arrangements that underpin the issuance, distribution, settlement, and management of central bank digital currencies. It encompasses the ledger technology (centralised, distributed, or hybrid), API layers enabling interoperability with commercial banks and payment service providers, offline payment capability, and the privacy-preserving and security mechanisms required for sovereign digital money at scale. CBDC infrastructure must satisfy central bank requirements for finality, programmability, resilience, and monetary policy control that differ fundamentally from commercial digital payment systems.",
   "domain": "finance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:payment-infrastructure", "label": "Payment Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:payment-infrastructure",
+      "label": "Payment Infrastructure"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:digital-payments", "label": "Digital Payments"},
-      {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:atomic-settlement", "label": "Atomic Settlement"},
-      {"@id": "urn:ngm:class:cryptographic-infrastructure", "label": "Cryptographic Infrastructure"}
+      {
+        "@id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Cryptographic Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cbdc-frameworks", "label": "CBDC Frameworks"},
-      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"}
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - The infrastructure layer must address competing design tensions. Retail CBDC serving the general public requires UX parity with existing payment apps, AML/KYC compliance, and privacy protections that prevent surveillance of individual spending. Wholesale CBDC for interbank settlement emphasises finality, DVP (delivery-versus-payment), and integration with existing high-value payment systems such as RTGS. Programmability — the ability to embed conditions into digital currency (expiry dates, spending restrictions, automated fiscal transfers) — is technically feasible but raises political and civil liberties concerns that are shaping regulatory boundaries in jurisdictions such as the EU.
 
   - By 2025, over 130 countries are in some stage of CBDC research, pilot, or live operation according to the Atlantic Council CBDC tracker. The BIS Innovation Hub has coordinated multinational technical experiments (mBridge for cross-border wholesale CBDC using a shared platform), demonstrating feasibility of multi-CBDC interoperability. The digital euro preparation phase aims at a potential 2027–2028 launch. However, privacy legislation (the EU digital euro regulation includes explicit prohibitions on programmable restrictions and central bank access to transaction data) is fundamentally shaping infrastructure architecture decisions, driving interest in privacy-preserving cryptographic techniques such as zero-knowledge proofs for selective disclosure.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cambridge Judge Business School
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,37 +57,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cambridge-judge-business-school:f82ad988d43a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5c27fb394e2178993a977205d0cde01f6b393136937b514b5df10cb171ca5f3e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Economics]]",
-      "resolved": "urn:visionflow:linked:economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[University of Cambridge]]",
-      "resolved": "urn:visionflow:linked:university-of-cambridge",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cambridge Judge Business School is the business school of the University of Cambridge, located in Cambridge, England. It conducts research and teaching in management, finance and alternative finance.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralized Identifier
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,46 +184,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:decentralized-identifier:80ebcd1f14a4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:034040b2233a234685f3e943a26b9f34dbd7dff4aaa84008c34721e0421cd442"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DID Resolution]]",
-      "resolved": "urn:visionflow:linked:did-resolution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:linked:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Centralized Identity Provider]]",
-      "resolved": "urn:visionflow:linked:centralized-identity-provider",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Identity]]",
-      "resolved": "urn:visionflow:linked:digital-identity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A Decentralised Identifier (DID) is a globally unique, persistent, cryptographically verifiable identifier for any subject — person, organisation, device, or abstract entity — that its controller creates and manages independently of any [[Centralized Identity Provider]] or registry. Governed by the W3C DID Core specification, a DID takes the URI form `did:method:identifier` and resolves to a [[DID Document]] that exposes [[Public Key Cryptography]] material, authentication methods, and service endpoints. DIDs are foundational to [[Self-Sovereign Identity]], enabling decentralised trust relationships and privacy-respecting exchange of [[Verifiable Credential]]s without intermediary dependence.
 
@@ -307,7 +262,7 @@ public: true
   - **Key management** is the critical vulnerability: loss of private keys means loss of DID control; rotation requires a live DID Document update before key compromise.
   - **[[Blockchain]] finality and cost** vary by method; some methods (did:ethr) incur gas costs for every key rotation, creating practical barriers.
   - **Correlation risk** — reusing the same DID across contexts enables tracking; mitigated by pairwise DIDs (unique DID per relationship) and [[Zero-Knowledge Proof]] presentations.
-  - **Resolver trust** — a DID resolver mediating resolution for a client could lie; clients should either run their own resolver or verify resolver responses cryptographically.
+  - **Resolver trust** — a DID resolver mediating resolution for a client [private] lie; clients should either run their own resolver or verify resolver responses cryptographically.
   - **DID Document integrity** — clients must verify that the returned document is correctly signed or anchored to the registry; unsigned HTTPS-served DID Documents (did:web) inherit the security of TLS and DNS.
 
 - ### Provenance

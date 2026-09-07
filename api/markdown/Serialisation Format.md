@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Serialisation Format
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A serialisation format is a specification for encoding in-memory data structures into a byte or text stream that can be persisted or transmitted and later reconstructed. Formats differ in schema rigidity, compactness, speed, and cross-language support, spanning text formats like JSON and YAML and binary formats like Protocol Buffers, Avro, and Parquet. It is fundamental to checkpointing, messaging, and distributed computation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:checkpoints", "label": "Checkpoints"}, {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ]
   },
   "quality": 0.72
 }

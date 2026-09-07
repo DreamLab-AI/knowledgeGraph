@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Nouns DAO
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -86,52 +81,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nouns-dao:650522175498",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:22080c1ef77d74cc907c46e689659bbb9f3a5f010cdd11b205b5e131adad15e2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Treasury Management]]",
-      "resolved": "urn:visionflow:linked:treasury-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Token]]",
-      "resolved": "urn:visionflow:linked:governance-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NFT Standard]]",
-      "resolved": "urn:visionflow:linked:nft-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[On-chain Governance]]",
-      "resolved": "urn:visionflow:linked:on-chain-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Autonomous Organisation]]",
-      "resolved": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An on-chain organisation that auctions one non-fungible token each day, with proceeds funding a shared treasury governed by token holders.

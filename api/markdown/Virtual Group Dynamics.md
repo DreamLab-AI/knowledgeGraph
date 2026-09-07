@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Group Dynamics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,18 +75,36 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:proteus-effect", "label": "Proteus Effect"}
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:proteus-effect",
+        "label": "Proteus Effect"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
     ]
   },
   "provenance": {
@@ -101,57 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-group-dynamics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fad20e5d2b584ff7003649ceabbf5d567e9c164673a4efabb3c3985fd37aeff1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collective Intelligence]]",
-      "resolved": "urn:visionflow:linked:collective-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Online Disinhibition Effect]]",
-      "resolved": "urn:visionflow:linked:online-disinhibition-effect",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Community]]",
-      "resolved": "urn:visionflow:linked:virtual-community",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proteus Effect]]",
-      "resolved": "urn:visionflow:owl:class:proteus-effect",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social Presence]]",
-      "resolved": "urn:visionflow:owl:class:social-presence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Virtual Group Dynamics** describes the psychological and behavioural patterns of interaction, role formation, norm development, decision-making, conflict, and cohesion within groups operating in virtual environments, shaped by unique affordances of digital mediation such as anonymity, persistence, and spatial distribution. Key phenomena include the online disinhibition effect, avatar-mediated identity, emergent leadership hierarchies, and scalable broadcast communication structures.

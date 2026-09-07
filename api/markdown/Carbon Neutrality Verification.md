@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Neutrality Verification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,77 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:carbon-neutrality-verification:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:055541416ec7511179a1b726f0267a3dad36ae2a6dcb94f5b1384aa903e4923d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Credibility Assurance]]",
-      "resolved": "urn:visionflow:linked:credibility-assurance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Documentation Package]]",
-      "resolved": "urn:visionflow:linked:documentation-package",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Greenwashing Prevention]]",
-      "resolved": "urn:visionflow:linked:greenwashing-prevention",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stakeholder Trust]]",
-      "resolved": "urn:visionflow:linked:stakeholder-trust",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Environmental Verification]]",
-      "resolved": "urn:visionflow:owl:class:environmental-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Third Party Auditor]]",
-      "resolved": "urn:visionflow:owl:class:third-party-auditor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verification Standard]]",
-      "resolved": "urn:visionflow:owl:class:verification-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The independent third-party audit process that validates an organization's carbon neutrality claims by verifying emission calculations, reduction measures, and offset quality against established standards such as ISO 14068-1 and PAS 2060.

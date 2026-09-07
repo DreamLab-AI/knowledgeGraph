@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Counterfactual Reasoning
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:counterfactual-reasoning", "@type":"Page", "title":"Counterfactual Reasoning", "vc:slug":"counterfactual-reasoning", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:counterfactual-reasoning",
+  "@type": "Page",
+  "title": "Counterfactual Reasoning",
+  "vc:slug": "counterfactual-reasoning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

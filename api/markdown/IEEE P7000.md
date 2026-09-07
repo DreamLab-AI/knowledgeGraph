@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IEEE P7000
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ieee-p-7000:2fb742c18890",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cc973871ad034600d87a45267bda4096707e195b0ce07620fd220e662f89412c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE]]",
-      "resolved": "urn:visionflow:linked:ieee",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - IEEE P7000 is the draft project that produced the IEEE 7000 process model for addressing ethical concerns during system design.

@@ -1,58 +1,114 @@
----
-public: true
----
-
-# Fiducial Marker
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:fiducial-marker", "@type":"Page", "title":"Fiducial Marker", "vc:slug":"fiducial-marker", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:fiducial-marker",
+  "@type": "Page",
+  "title": "Fiducial Marker",
+  "vc:slug": "fiducial-marker",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:fiducial-marker",
-  "@type":"Class",
-  "label":"Fiducial Marker",
-  "definition":"A fiducial marker is a designed visual pattern placed in a scene to serve as a reliable reference point for computer-vision systems. Its known geometry and high-contrast, machine-readable encoding allow algorithms to detect it robustly, recover camera pose, and assign a unique identifier. Fiducial markers such as ArUco and AprilTag families are widely used for camera calibration, augmented-reality registration, and robot localisation.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:optical-calibration-target","label":"Optical Calibration Target"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:optical-calibration-target","label":"Optical Calibration Target"}],
-    "hasPart":[
-      {"@id":"urn:ngm:class:checkerboard-pattern","label":"Checkerboard Pattern"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fiducial-marker",
+  "@type": "Class",
+  "label": "Fiducial Marker",
+  "definition": "A fiducial marker is a designed visual pattern placed in a scene to serve as a reliable reference point for computer-vision systems. Its known geometry and high-contrast, machine-readable encoding allow algorithms to detect it robustly, recover camera pose, and assign a unique identifier. Fiducial markers such as ArUco and AprilTag families are widely used for camera calibration, augmented-reality registration, and robot localisation.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optical-calibration-target",
+      "label": "Optical Calibration Target"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:feature-detection","label":"Feature Detection"},
-      {"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:checkerboard-pattern",
+        "label": "Checkerboard Pattern"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:pose-estimation","label":"Pose Estimation"},
-      {"@id":"urn:ngm:class:camera-calibration","label":"Camera Calibration"},
-      {"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:camera-intrinsics","label":"Camera Intrinsics"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:pose-estimation","label":"Pose Estimation"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:homography","label":"Homography"},
-      {"@id":"urn:ngm:class:photogrammetry","label":"Photogrammetry"},
-      {"@id":"urn:ngm:class:lens-distortion-correction","label":"Lens Distortion Correction"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:checkerboard-pattern","label":"Checkerboard Pattern"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:homography",
+        "label": "Homography"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:lens-distortion-correction",
+        "label": "Lens Distortion Correction"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:checkerboard-pattern",
+        "label": "Checkerboard Pattern"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

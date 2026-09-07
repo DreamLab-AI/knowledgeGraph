@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Apache License 2.0
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "The Apache License 2.0 (AL2) is a permissive free and open-source software licence published by the Apache Software Foundation in 2004, allowing users to freely use, modify, distribute, and sublicence covered works in both open and proprietary contexts. It requires preservation of copyright notices and a NOTICE file but imposes no copyleft obligations on derivatives. Uniquely among major permissive licences, AL2 includes an explicit patent grant and a patent retaliation clause that terminates rights upon initiation of patent litigation against the licensor.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:intellectual-property-licence-instrument", "label": "Intellectual Property Licence Instrument"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:intellectual-property-licence-instrument",
+      "label": "Intellectual Property Licence Instrument"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:open-source-development", "label": "Open Source Development"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:open-source-framework", "label": "Open Source Framework"}
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-framework",
+        "label": "Open Source Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:licensing-requirements", "label": "Licensing Requirements"},
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"}
+      {
+        "@id": "urn:ngm:class:licensing-requirements",
+        "label": "Licensing Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
     ]
   },
   "quality": 0.8

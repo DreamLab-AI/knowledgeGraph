@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Innovation Ecosystems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -117,7 +112,7 @@ public: true
 
   ## Definition
 
-  An **innovation ecosystem** is the web of relationships through which new technologies are conceived, funded, developed, and brought to market. The term deliberately borrows the biological metaphor: like a natural ecosystem, it comprises diverse interdependent actors — startups, incumbent firms, universities, public research laboratories, venture investors, standards bodies, and regulators — whose interactions produce emergent capabilities no single actor could sustain alone. The concept became prominent through studies of Silicon Valley, and was formalised in innovation-systems economics (Freeman, Lundvall, Nelson) and later in Ron Adner's work on ecosystem strategy.
+  An **innovation ecosystem** is the web of relationships through which new technologies are conceived, funded, developed, and brought to market. The term deliberately borrows the biological metaphor: like a natural ecosystem, it comprises diverse interdependent actors — startups, incumbent firms, universities, public research laboratories, venture investors, standards bodies, and regulators — whose interactions produce emergent capabilities no single actor [private] sustain alone. The concept became prominent through studies of Silicon Valley, and was formalised in innovation-systems economics (Freeman, Lundvall, Nelson) and later in Ron Adner's work on ecosystem strategy.
 
   Innovation ecosystems function through several reinforcing mechanisms. Knowledge spillovers move ideas between organisations via labour mobility, publications, and informal networks. Deep capital markets — particularly [[Venture Capital]] — convert research into companies. Anchor institutions such as research universities supply trained people and licensable intellectual property through [[Technology Transfer]] offices. Dense local labour markets lower the cost of hiring specialised skills, which in turn attracts more firms: an agglomeration effect that explains why ecosystems concentrate geographically.
 
@@ -134,5 +129,5 @@ public: true
 
   **Sources**:
   - https://www.wipo.int/web-publications/global-innovation-index-2025/en/cluster-ranking.html
-  - https://www.wipo.int/en/web/global-innovation-index/2025/index
+  - https://www.wipo.int/en/web/global-innovation-index/2025/[private]
   - https://dealroom.co/guides/ai

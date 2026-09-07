@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Benchmark Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -199,67 +194,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:benchmark-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5e5892a6d6d5bde47f4ade9ab725880f951d5d86d3ffb972c046941c7295a352"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Measurement Methodology]]",
-      "resolved": "urn:visionflow:linked:measurement-methodology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Performance Comparison]]",
-      "resolved": "urn:visionflow:linked:performance-comparison",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reference Implementation]]",
-      "resolved": "urn:visionflow:linked:reference-implementation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Evaluation]]",
-      "resolved": "urn:visionflow:linked:system-evaluation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quality Assurance]]",
-      "resolved": "urn:visionflow:owl:class:quality-assurance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:owl:class:technical-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Validation Process]]",
-      "resolved": "urn:visionflow:owl:class:validation-process",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and methodologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Payment Settlement
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

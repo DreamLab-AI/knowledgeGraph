@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Cloud Native Computing Foundation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

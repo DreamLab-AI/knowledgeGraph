@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Red-Teaming
----
-
-# Red Teaming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,32 +170,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:red-teaming:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:102b885064c71cda7882d2dcbe8cf3dbd3b59ae6c7bf060ccd95508540af73a0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses. Red teaming involves adversarial testing where human evaluators or automated systems probe for failure modes, informing alignment training and safety improvements.

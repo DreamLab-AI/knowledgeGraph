@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-DAO Benchmarking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Cross-DAO benchmarking is the comparative analysis of decentralised autonomous organisations against shared metrics such as treasury size, voter participation, proposal throughput, and contributor activity. It aggregates on-chain governance and financial data to rank or contextualise a DAO's performance relative to peers. It informs governance design, delegate accountability, and treasury strategy.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:dao-analytics", "label": "DAO Analytics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dao-analytics",
+        "label": "DAO Analytics"
+      }
+    ]
   },
   "quality": 0.72
 }

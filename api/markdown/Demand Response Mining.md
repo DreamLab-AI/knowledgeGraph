@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Demand Response Mining
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Demand response mining is the practice of operating cryptocurrency miners as a flexible, interruptible electrical load that ramps up or down in response to grid conditions and price signals. Miners absorb surplus or stranded generation and shut off during peak demand, helping balance the grid while monetising otherwise curtailed energy. It is studied as both a grid-stabilisation tool and a mitigation for the environmental criticism of proof-of-work mining.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:stranded-energy-monetisation", "label": "Stranded Energy Monetisation"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}
+      {
+        "@id": "urn:ngm:class:stranded-energy-monetisation",
+        "label": "Stranded Energy Monetisation"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
     ]
   },
   "quality": 0.72

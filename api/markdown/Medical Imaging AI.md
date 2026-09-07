@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Medical Imaging AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,57 +200,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:medical-imaging-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:28b554a490c64a4d4e716669dab6bf77b91354f52d2ce09ac449063335e912b7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Network]]",
-      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pathology AI]]",
-      "resolved": "urn:visionflow:owl:class:pathology-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Radiology AI]]",
-      "resolved": "urn:visionflow:owl:class:radiology-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities. These systems employ deep learning architectures, particularly convolutional neural networks, to perform tasks such as lesion detection, disease classification, segmentation of anatomical structures, and quantitative image analysis whilst adhering to clinical validation standards and regulatory requirements.

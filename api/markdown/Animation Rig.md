@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Animation Rig
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "An animation rig is a hierarchical system of bones, controls, and constraints applied to a 3D character or object to enable articulated movement for animation. It abstracts underlying mesh deformation through a control interface that animators manipulate, translating high-level poses into low-level vertex transformations. Rigs range from simple skeletal setups to complex systems incorporating inverse kinematics, blend shapes, and procedural dynamics.",
   "domain": "spatial-computing",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:skeletal-animation",
+      "label": "Skeletal Animation"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:character-animation", "label": "Character Animation"},
-      {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"}
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"},
-      {"@id": "urn:ngm:class:mesh-data", "label": "Mesh Data"}
+      {
+        "@id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
+      }
     ]
   },
   "quality": 0.8

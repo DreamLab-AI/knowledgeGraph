@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Human Feedback
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,37 +173,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:human-feedback:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4becd9777b809701fcd7cfe8391e6af25c3665c2e0beb666c52fb90a412e6c61"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RLHF]]",
-      "resolved": "urn:visionflow:linked:rlhf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections. Human feedback serves as the training signal for aligning AI systems with human preferences and values, enabling learning of complex objectives difficult to specify formally.
 
@@ -271,7 +235,7 @@ public: true
 		- This section examines projects that focus on generating realistic and diverse digital bodies, laying the foundation for virtual humans and characters.
 		- * [Volumetric Primitives (MVP)](https://dl.acm.org/doi/abs/10.1145/3528233.3530740): A research paper exploring the use of volumetric primitives for avatar representation.
 		  * [Gaussian Shell Maps](https://rameenabdal.github.io/GaussianShellMaps/): A research project dedicated to the use of Gaussian Shell Maps for efficient 3D human generation.
-		  * [En3D](https://menyifang.github.io/projects/En3D/index.html): A project focused on generating 3D human models with realistic detail.
+		  * [En3D](https://menyifang.github.io/projects/En3D/[private].html): A project focused on generating 3D human models with realistic detail.
 		  * [Character Creator 3 (Reallusion)](https://www.reallusion.com/character-creator/): A powerful tool for creating realistic and stylised 3D characters.
 
 		- #### 3️⃣ Reinforcement Learning from Human Feedback [[RLHF]]
@@ -335,7 +299,7 @@ public: true
 		- This section examines projects that focus on generating realistic and diverse digital bodies, laying the foundation for virtual humans and characters.
 		- * [Volumetric Primitives (MVP)](https://dl.acm.org/doi/abs/10.1145/3528233.3530740): A research paper exploring the use of volumetric primitives for avatar representation.
 		  * [Gaussian Shell Maps](https://rameenabdal.github.io/GaussianShellMaps/): A research project dedicated to the use of Gaussian Shell Maps for efficient 3D human generation.
-		  * [En3D](https://menyifang.github.io/projects/En3D/index.html): A project focused on generating 3D human models with realistic detail.
+		  * [En3D](https://menyifang.github.io/projects/En3D/[private].html): A project focused on generating 3D human models with realistic detail.
 		  * [Character Creator 3 (Reallusion)](https://www.reallusion.com/character-creator/): A powerful tool for creating realistic and stylised 3D characters.
 
 		- #### 3️⃣ Reinforcement Learning from Human Feedback [[RLHF]]
@@ -367,7 +331,7 @@ public: true
 		- Research Category: Feasibility studies.
 		- VisionFlow introduces "parallax plates as a service", integrating robotics with ML-based video generation.
 		- Key benefits include increased productivity in pre-visualization and improved collaboration.
-		- Assessor Feedback: Positive recognition of the project's potential to improve productivity in video content production. However, a closer association with a video production company could enhance the application's relevance and impact.
+		- Assessor Feedback: Positive recognition of the project's potential to improve productivity in video content production. However, a closer association with a video production company [private] enhance the application's relevance and impact.
 
   - ## **Approach and Innovation**:
 		- Potential collaborations with G6Moco and Pathway XR Innovation Lab.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HODL Waves
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "HODL Waves is an on-chain analytics visualisation that bands the entire Bitcoin supply by the age since each coin last moved, showing what proportion is held over various time horizons. The coloured bands reveal accumulation and distribution behaviour, distinguishing long-term holders from short-term speculators. It is a key tool for interpreting holder conviction and market cycles from blockchain data.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution", "label": "Bitcoin Distribution"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-distribution",
+        "label": "Bitcoin Distribution"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Learning Platform Categorization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,22 +56,58 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
-      {"@id": "urn:ngm:class:virtual-classroom", "label": "Virtual Classroom"},
-      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"},
-      {"@id": "urn:ngm:class:online-learning", "label": "Online Learning"}
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-classroom",
+        "label": "Virtual Classroom"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
+        "label": "Collaborative Learning"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse-classification", "label": "Metaverse Classification"},
-      {"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"}
+      {
+        "@id": "urn:ngm:class:metaverse-classification",
+        "label": "Metaverse Classification"
+      },
+      {
+        "@id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      }
     ]
   },
   "provenance": {
@@ -86,32 +117,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:learning-platform-categorization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7aea0f03249714127ccbbe9fdf3c04891c5448d81d4648a6be803b084c39264f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaverse Classification]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-classification",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A learning platform categorization component in the Metaverse domain that enables EtsiDomainApplicationEducation.

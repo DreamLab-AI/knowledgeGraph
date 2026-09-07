@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Gs1 Digital Link
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

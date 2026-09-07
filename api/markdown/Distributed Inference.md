@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Distributed Inference
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:distributed-inference", "@type":"Page", "title":"Distributed Inference", "vc:slug":"distributed-inference", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:distributed-inference",
+  "@type": "Page",
+  "title": "Distributed Inference",
+  "vc:slug": "distributed-inference",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Interoperability___Creative
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,26 +103,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:metaverse-content-pipeline", "label": "Metaverse Content Pipeline"},
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
-      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"}
+      {
+        "@id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      },
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"},
-      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ]
   },
   "provenance": {
@@ -137,97 +168,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-interoperability-creative:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:51badc05f40fc25fdb92de3a83cd00aebadcfd7254a96d04f8c44a1ebc700815"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CreativeDomain]]",
-      "resolved": "urn:visionflow:linked:creative-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI ISG ARF Augmented Reality Framework]]",
-      "resolved": "urn:visionflow:linked:etsi-isg-arf-augmented-reality-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI ISG MEC Multi-access Edge Computing]]",
-      "resolved": "urn:visionflow:linked:etsi-isg-mec-multi-access-edge-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[European Commission Digital Decade 2030]]",
-      "resolved": "urn:visionflow:linked:european-commission-digital-decade-2030",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InteroperabilityDomain]]",
-      "resolved": "urn:visionflow:linked:interoperability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 21122-3 Watermarking]]",
-      "resolved": "urn:visionflow:linked:iso-iec-21122-3-watermarking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23090-14 Scene Description]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23090-14-scene-description",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Khronos Group glTF 2.0 Specification]]",
-      "resolved": "urn:visionflow:linked:khronos-group-gl-tf-2-0-specification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Khronos OpenXR 1.1]]",
-      "resolved": "urn:visionflow:linked:khronos-open-xr-1-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse Standards Forum]]",
-      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pixar USD Universal Scene Description]]",
-      "resolved": "urn:visionflow:linked:pixar-usd-universal-scene-description",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C WebXR Device API]]",
-      "resolved": "urn:visionflow:linked:w3-c-web-xr-device-api",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse Content Pipeline]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-content-pipeline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The ETSI (European Telecommunications Standards Institute) functional domain classification addressing the intersection of Interoperability and Creative domains within metaverse and extended reality ecosystems, encompassing technical standards, protocols, and frameworks that enable creative digital content—including three-dimensional models, textures, animations, audio-visual assets, interactive experiences, and immersive environments—to be created once and deployed seamlessly across heterogeneous platforms, rendering engines, virtual worlds, and augmented reality applications without fidelity degradation or proprietary format lock-in, achieved through standardized file formats (wherein glTF 2.0 from Khronos Group achieves 89% industry adoption for real-time 3D asset exchange with PBR physically-based rendering material support, USD Universal Scene Description from Pixar Animation Studios and NVIDIA enables complex scene composition with layer-based non-destructive editing adopted by 67% of AAA game studios and visual effects houses, FBX from Autodesk maintains 72% market share for animation interchange despite proprietary limitations), cross-platform interchange protocols (including MPEG-I Scene Description standardized in ISO/IEC 23090-14 enabling spatial media streaming at 4K 60fps with sub-50ms latency, WebXR Device API adopted by 94% of browsers providing unified JavaScript interfaces for VR headsets and AR devices, OpenXR 1.1 from Khronos Group achieving 83% runtime compatibility across Meta Quest, HTC Vive, Microsoft HoloLens, and Valve Index platforms with unified input handling and composition layers), digital rights management frameworks (blockchain-based provenance tracking using ERC-721 non-fungible tokens deployed on Ethereum mainnet securing $2.3 billion in digital art transactions 2024 with immutable ownership records, Creative Commons licensing integration enabling automated attribution and derivative work permissions enforced through smart contracts, watermarking standards per ISO/IEC 21122-3 providing forensic tracking of unauthorized asset distribution), collaborative content creation workflows (real-time multi-user editing protocols supporting 500+ simultaneous creators per virtual environment with operational transformation algorithms ensuring consistency as specified in RFC 6902 JSON Patch, version control systems adapted from Git distributed architecture managing 47 terabyte metaverse project repositories with branching strategies for parallel asset development, cloud rendering pipelines utilizing AWS EC2 G5 instances with NVIDIA A10G Tensor Core GPUs delivering 4096×4096 texture baking at 180 assets per hour), semantic interoperability mechanisms (ontology-based metadata schemas per Dublin Core Metadata Initiative enabling automated asset discovery across 2,400+ content marketplaces, linked data principles from W3C RDF enabling knowledge graph integration connecting 18 million creative assets with contextual relationships, taxonomy standardization through ISO 25964 thesauri ensuring consistent categorization across linguistic and cultural boundaries), and quality-preserving transcoding services (automated LOD level-of-detail generation producing 5 mesh decimation levels from 8 million polygons down to 500 polygons maintaining silhouette fidelity within 2% geometric error, material baking pipelines converting node-based Substance Designer graphs to optimized 2048×2048 texture atlases with normal/roughness/metallic channels compressed via BC7 block compression achieving 6:1 ratios, skeletal animation retargeting using biomechanically-informed inverse kinematics transferring motion capture data from 53-bone humanoid rigs to arbitrary character topologies preserving anatomical constraints), thereby enabling the Creative Metaverse vision articulated by ETSI ISG ARF Augmented Reality Framework wherein content creators invest effort once in high-fidelity source assets—modeled in Blender, Maya, or 3ds Max; textured in Substance Painter; rigged in MotionBuilder; animated in Cinema 4D—and distribute everywhere via automated transformation pipelines targeting Unity, Unreal Engine, Godot, WebGL, native iOS/Android, PlayStation 5, and emerging spatial computing platforms with platform-specific optimizations (shader translation, collision mesh simplification, audio spatialization, input remapping) applied transparently through standards-compliant toolchains, while preserving creator attribution through cryptographic signatures, royalty distribution through smart contract automation executing on Polygon sidechain processing 12,000 micropayments per second with $0.002 average transaction fees, and collaborative provenance tracking documenting each contributor's modifications in immutable audit trails, thus reducing creative production costs by 67% compared to manual per-platform porting workflows, accelerating time-to-market from 18 months multi-platform development to 4 months single-source deployment, expanding addressable audience by 340% through simultaneous availability across 47 compatible platforms, and democratizing metaverse content creation by eliminating technical barriers for independent creators who can now compete with AAA studios through access to standardized distribution channels reaching 2.8 billion potential users globally, ultimately realizing the European Commission's vision for an open, interoperable metaverse ecosystem outlined in the Digital Decade 2030 policy programme requiring technical standardization through ETSI, CEN-CENELEC, and ISO/IEC collaboration to prevent fragmentation into incompatible walled gardens dominated by proprietary ecosystems.
@@ -409,7 +349,7 @@ public: true
 
   25. Ethereum Foundation (2024). *EIP-2981: NFT Royalty Standard*. https://eips.ethereum.org/EIPS/eip-2981
 
-  26. Coalition for Content Provenance and Authenticity (2024). *C2PA Technical Specification v2.1*. https://c2pa.org/specifications/specifications/2.1/index.html
+  26. Coalition for Content Provenance and Authenticity (2024). *C2PA Technical Specification v2.1*. https://c2pa.org/specifications/specifications/2.1/[private].html
 
   27. Creative Commons (2024). *CC0 1.0 Universal Public Domain Dedication*. https://creativecommons.org/publicdomain/zero/1.0/
 

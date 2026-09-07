@@ -1,37 +1,126 @@
----
-public: true
----
-
-# Pandemic Preparedness
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:pandemic-preparedness", "@type":"Page", "title":"Pandemic Preparedness", "vc:slug":"pandemic-preparedness", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:pandemic-preparedness",
+  "@type": "Page",
+  "title": "Pandemic Preparedness",
+  "vc:slug": "pandemic-preparedness",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:pandemic-preparedness",
-  "@type":"Class",
-  "label":"Pandemic Preparedness",
-  "definition":"Pandemic preparedness is the set of plans, capabilities, and investments that enable societies to detect, prevent, and respond effectively to large-scale infectious-disease outbreaks. It spans surveillance, diagnostics, vaccine and treatment readiness, healthcare surge capacity, stockpiles, and coordinated governance across borders. As a domain of public-health governance, it aims to reduce the health, social, and economic harm of pandemics through anticipatory action rather than reactive crisis management.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:biosecurity","label":"Biosecurity"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"},{"@id":"urn:ngm:class:resilience","label":"Resilience"}],
-    "enables":[{"@id":"urn:ngm:class:resilience","label":"Resilience"},{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "supports":[{"@id":"urn:ngm:class:biosecurity","label":"Biosecurity"},{"@id":"urn:ngm:class:resilience","label":"Resilience"},{"@id":"urn:ngm:class:sustainable-development","label":"Sustainable Development"}],
-    "requires":[{"@id":"urn:ngm:class:data-collection","label":"Data Collection"},{"@id":"urn:ngm:class:capital-allocation","label":"Capital Allocation"}],
-    "uses":[{"@id":"urn:ngm:class:data-collection","label":"Data Collection"},{"@id":"urn:ngm:class:simulation","label":"Simulation"}],
-    "dependsOn":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "implements":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:governance","label":"Governance"},{"@id":"urn:ngm:class:biosecurity","label":"Biosecurity"},{"@id":"urn:ngm:class:simulation","label":"Simulation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:resilience","label":"Resilience"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pandemic-preparedness",
+  "@type": "Class",
+  "label": "Pandemic Preparedness",
+  "definition": "Pandemic preparedness is the set of plans, capabilities, and investments that enable societies to detect, prevent, and respond effectively to large-scale infectious-disease outbreaks. It spans surveillance, diagnostics, vaccine and treatment readiness, healthcare surge capacity, stockpiles, and coordinated governance across borders. As a domain of public-health governance, it aims to reduce the health, social, and economic harm of pandemics through anticipatory action rather than reactive crisis management.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:biosecurity",
+      "label": "Biosecurity"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

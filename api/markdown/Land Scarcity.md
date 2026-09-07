@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Land Scarcity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,26 +64,68 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
-      {"@id": "urn:ngm:class:economics", "label": "Economics"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
-      {"@id": "urn:ngm:class:property-rights", "label": "Property Rights"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"}
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
     ]
   },
   "provenance": {
@@ -98,42 +135,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:land-scarcity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:287dd8c8ddf99d2acd3a7f89de6726887272d0a67ec25aca7936abf48c69a5ea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Virtual Economics]]",
-      "resolved": "urn:visionflow:linked:virtual-economics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Economic principle in virtual worlds where digital land parcels are artificially limited to create value and drive virtual real estate markets.
@@ -158,7 +159,7 @@ public: true
 
   ## Critique
 
-  Critics argue that artificial scarcity is a design choice, not a necessity — platforms could expand coordinate space at negligible computational cost, making scarcity a rent-seeking mechanism rather than an economic inevitability. Open metaverse interoperability advocates propose standards that decouple spatial identity from platform-controlled land registries.
+  Critics argue that artificial scarcity is a design choice, not a necessity — platforms [private] expand coordinate space at negligible computational cost, making scarcity a rent-seeking mechanism rather than an economic inevitability. Open metaverse interoperability advocates propose standards that decouple spatial identity from platform-controlled land registries.
 
 - ### Provenance
   - sources:: [[Virtual Economics]], [[Metaverse]]

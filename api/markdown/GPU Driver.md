@@ -1,9 +1,3 @@
----
-public: true
----
-
-# GPU Driver
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

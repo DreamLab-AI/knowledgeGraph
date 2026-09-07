@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Democratic Values
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,17 +79,38 @@ public: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"}
+      {
+        "@id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
-      {"@id": "urn:ngm:class:democratic-governance", "label": "Democratic Governance"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Governance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ]
   },
   "provenance": {
@@ -104,62 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:democratic-values:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f1234599ead980511099074b9b097f74115616eb091fce9ba8f910492216d643"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Council of Europe]]",
-      "resolved": "urn:visionflow:linked:council-of-europe",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD AI Principles 2024]]",
-      "resolved": "urn:visionflow:linked:oecd-ai-principles-2024",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UNESCO]]",
-      "resolved": "urn:visionflow:linked:unesco",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Venice Commission]]",
-      "resolved": "urn:visionflow:linked:venice-commission",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.

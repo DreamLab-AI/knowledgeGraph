@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Risk Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,4 +157,3 @@ public: true
   - In the enterprise ecosystem, specialised vendors and consulting practices offer AI risk assessment services layered on top of existing GRC (governance, risk, and compliance) platforms. Insurers are developing underwriting criteria that reference AI risk assessment outputs, and financial regulators in the UK, EU, and United States have issued sector-specific guidance requiring documented assessment before deploying high-impact AI systems.
 
   - By 2024–2025, AI risk assessment has become a mandatory or strongly recommended practice across multiple regulatory jurisdictions. The AISI Frontier AI Safety Framework and voluntary commitments by frontier labs have embedded pre-deployment risk evaluation as a condition of release. Tooling for automated red-teaming and continuous post-deployment monitoring is maturing, reducing the cost of maintaining living risk registers as models are updated.
-

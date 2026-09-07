@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Kraken
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,62 +183,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:kraken:686d22d695e2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a979bfe33b0f6fa86010681ecec0595ece8735db945b9e04cf8dc9cb1438179f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Order Book]]",
-      "resolved": "urn:visionflow:linked:order-book",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Custody]]",
-      "resolved": "urn:visionflow:linked:custody",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Crypto Trading]]",
-      "resolved": "urn:visionflow:linked:crypto-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fiat On-Ramp]]",
-      "resolved": "urn:visionflow:linked:fiat-on-ramp",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulatory Domain]]",
-      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Infrastructure Domain]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset Domain]]",
-      "resolved": "urn:visionflow:linked:digital-asset",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Kraken is a centralised cryptocurrency exchange founded in 2011 and headquartered in the United States. It provides spot trading, margin and futures trading, staking and custody services across a wide range of digital assets and fiat currencies. It is among the longer-established exchanges and is noted for its emphasis on regulatory compliance, security and the provision of fiat on-ramps in multiple jurisdictions.

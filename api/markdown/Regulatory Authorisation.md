@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Regulatory Authorisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Regulatory authorisation is the formal permission granted by a competent authority allowing an entity to conduct a regulated activity such as issuing tokens, operating a payment system, or holding client assets. It is obtained through an application demonstrating compliance with capital, governance, and conduct requirements. Without authorisation, issuance and operation of regulated financial instruments are unlawful in most jurisdictions.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:enterprise-token-standards", "label": "Enterprise Token Standards"},
-      {"@id": "urn:ngm:class:cbdc-frameworks", "label": "CBDC Frameworks"}
+      {
+        "@id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Classification Rules
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,35 +7,122 @@ public: true
   "title": "Classification Rules",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:expert-systems", "vc:label": "Expert Systems"},
-    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:visionflow:linked:ontology", "vc:label": "Ontology"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:logic-programming", "vc:label": "Logic Programming"},
-    {"@id": "urn:visionflow:linked:owl", "vc:label": "OWL"},
-    {"@id": "urn:visionflow:linked:rdf", "vc:label": "RDF"},
-    {"@id": "urn:visionflow:linked:knowledge-base", "vc:label": "Knowledge Base"},
-    {"@id": "urn:visionflow:linked:inference-engine", "vc:label": "Inference Engine"},
-    {"@id": "urn:visionflow:linked:decision-tree", "vc:label": "Decision Tree"},
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:explainability", "vc:label": "Explainability"},
-    {"@id": "urn:visionflow:linked:interpretability", "vc:label": "Interpretability"},
-    {"@id": "urn:visionflow:linked:neurosymbolic-ai", "vc:label": "Neurosymbolic AI"},
-    {"@id": "urn:visionflow:linked:production-rules", "vc:label": "Production Rules"},
-    {"@id": "urn:visionflow:linked:forward-chaining", "vc:label": "Forward Chaining"},
-    {"@id": "urn:visionflow:linked:backward-chaining", "vc:label": "Backward Chaining"},
-    {"@id": "urn:visionflow:linked:description-logic", "vc:label": "Description Logic"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:formal-logic", "vc:label": "Formal Logic"},
-    {"@id": "urn:visionflow:linked:clinical-decision-support", "vc:label": "Clinical Decision Support"},
-    {"@id": "urn:visionflow:linked:ensemble-methods", "vc:label": "Ensemble Methods"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:business-rules-engine", "vc:label": "Business Rules Engine"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:machine-learning-layer", "vc:label": "MachineLearningLayer"}
+    {
+      "@id": "urn:visionflow:linked:expert-systems",
+      "vc:label": "Expert Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:logic-programming",
+      "vc:label": "Logic Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:owl",
+      "vc:label": "OWL"
+    },
+    {
+      "@id": "urn:visionflow:linked:rdf",
+      "vc:label": "RDF"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-engine",
+      "vc:label": "Inference Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-tree",
+      "vc:label": "Decision Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:interpretability",
+      "vc:label": "Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:linked:neurosymbolic-ai",
+      "vc:label": "Neurosymbolic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:production-rules",
+      "vc:label": "Production Rules"
+    },
+    {
+      "@id": "urn:visionflow:linked:forward-chaining",
+      "vc:label": "Forward Chaining"
+    },
+    {
+      "@id": "urn:visionflow:linked:backward-chaining",
+      "vc:label": "Backward Chaining"
+    },
+    {
+      "@id": "urn:visionflow:linked:description-logic",
+      "vc:label": "Description Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-logic",
+      "vc:label": "Formal Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:clinical-decision-support",
+      "vc:label": "Clinical Decision Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:ensemble-methods",
+      "vc:label": "Ensemble Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:business-rules-engine",
+      "vc:label": "Business Rules Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-layer",
+      "vc:label": "MachineLearningLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -55,55 +137,150 @@ public: true
   "definition": "Classification Rules are explicit logical statements, typically in an if-then form, that assign instances or entities to predefined categories based on the values of their attributes or the satisfaction of specified conditions. Derived from rule-learning algorithms, expert elicitation, or ontology reasoning, classification rules provide interpretable, auditable decision logic for categorising data points in machine learning, knowledge engineering, and regulatory compliance contexts. They contrast with black-box classifiers by exposing their decision rationale directly as symbolic propositions.",
   "domain": "ai",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:inference-engine",
+      "label": "Inference Engine"
+    }
+  ],
   "relations": {
     "isSubclassOf": [
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:production-rules", "label": "Production Rules"},
-      {"@id": "urn:ngm:class:forward-chaining", "label": "Forward Chaining"},
-      {"@id": "urn:ngm:class:backward-chaining", "label": "Backward Chaining"}
+      {
+        "@id": "urn:ngm:class:production-rules",
+        "label": "Production Rules"
+      },
+      {
+        "@id": "urn:ngm:class:forward-chaining",
+        "label": "Forward Chaining"
+      },
+      {
+        "@id": "urn:ngm:class:backward-chaining",
+        "label": "Backward Chaining"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"},
-      {"@id": "urn:ngm:class:description-logic", "label": "Description Logic"},
-      {"@id": "urn:ngm:class:formal-logic", "label": "Formal Logic"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "@id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:expert-systems", "label": "Expert Systems"},
-      {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:formal-logic", "label": "Formal Logic"}
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neurosymbolic AI"},
-      {"@id": "urn:ngm:class:business-rules-engine", "label": "Business Rules Engine"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neurosymbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:business-rules-engine",
+        "label": "Business Rules Engine"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:owl", "label": "OWL"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:decision-tree", "label": "Decision Tree"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "quality": 0.92,
@@ -224,9 +401,9 @@ public: true
         ObjectSomeValuesFrom(ai:instantiatedBy ai:PrologClause))
 
   ## About
-    The study of classification rules as a systematic knowledge representation mechanism emerged from the earliest symbolic AI systems of the 1960s. Newell and Simon's Production System architecture (1972) established the general form of condition-action pairs — what computer science came to call production rules — as the basis for cognitive modelling and expert system construction. The MYCIN system (Shortliffe, 1976) demonstrated that a knowledge base of approximately 500 classification rules could match the diagnostic accuracy of specialist physicians for bacterial infections, establishing clinical AI as a viable domain. DENDRAL (Feigenbaum et al., 1969) applied rules to spectral mass classification in organic chemistry. The subsequent "AI Winter" of the late 1980s was precipitated partly by the brittleness of hand-crafted rule systems outside narrow domains and the prohibitive cost of knowledge acquisition from experts — the so-called knowledge acquisition bottleneck.
+    The study of classification rules as a systematic knowledge representation mechanism emerged from the earliest symbolic AI systems of the 1960s. Newell and Simon's Production System architecture (1972) established the general form of condition-action pairs — what computer science came to call production rules — as the basis for cognitive modelling and expert system construction. The MYCIN system (Shortliffe, 1976) demonstrated that a knowledge base of approximately 500 classification rules [private] match the diagnostic accuracy of specialist physicians for bacterial infections, establishing clinical AI as a viable domain. DENDRAL (Feigenbaum et al., 1969) applied rules to spectral mass classification in organic chemistry. The subsequent "AI Winter" of the late 1980s was precipitated partly by the brittleness of hand-crafted rule systems outside narrow domains and the prohibitive cost of knowledge acquisition from experts — the so-called knowledge acquisition bottleneck.
 
-    The advent of machine learning-based rule induction circumvented the acquisition bottleneck. Michalski's AQ algorithm (1969–1983) pioneered the concept of learning rules from positive and negative examples. Quinlan's ID3 algorithm (1986) induced classification decision trees whose branches could be straightforwardly converted to propositional rules; the C4.5 successor (1993) extended this to continuous attributes and missing values, with the C4.5rules variant pruning and ordering the extracted rules for direct deployment. Clark and Niblett's CN2 algorithm (1989) introduced sequential covering — learning one rule at a time, removing covered examples, and repeating — as a direct rule-learning paradigm. Cohen's RIPPER algorithm (1995) refined sequential covering with incremental pruning to produce error reduction, achieving compact and accurate rule sets at scale, and became a standard baseline for rule learning for two decades.
+    The advent of machine learning-based rule induction circumvented the acquisition bottleneck. Michalski's AQ algorithm (1969–1983) pioneered the concept of learning rules from positive and negative examples. Quinlan's ID3 algorithm (1986) induced classification decision trees whose branches [private] be straightforwardly converted to propositional rules; the C4.5 successor (1993) extended this to continuous attributes and missing values, with the C4.5rules variant pruning and ordering the extracted rules for direct deployment. Clark and Niblett's CN2 algorithm (1989) introduced sequential covering — learning one rule at a time, removing covered examples, and repeating — as a direct rule-learning paradigm. Cohen's RIPPER algorithm (1995) refined sequential covering with incremental pruning to produce error reduction, achieving compact and accurate rule sets at scale, and became a standard baseline for rule learning for two decades.
 
     On the formal reasoning side, the adoption of OWL (Web Ontology Language) as a W3C recommendation in 2004 built on the foundations of [[Description Logic]] to provide a rich class hierarchy and property axiom language for knowledge representation. The Semantic Web Rule Language (SWRL), submitted to W3C in 2004, extends OWL with Horn-clause rules enabling more expressive classification inference — for example, inferring that an individual who is a parent of an adult is a grandparent — beyond what OWL class axioms alone permit. Reasoners such as Pellet, HermiT, and ELK implement tableau-based and consequence-based algorithms to derive class memberships efficiently. ELK achieves polynomial-time reasoning over the OWL EL profile, enabling classification of large-scale biomedical ontologies such as SNOMED CT (over 350,000 concepts) in seconds.
 
@@ -383,7 +560,7 @@ public: true
     23. Toni, F., et al. (2025). Argumentation-Based Explainability for Legal AI: Comparative and Regulatory Perspectives. *arXiv:2510.11079*.
     24. Russell, S., & Norvig, P. (2022). *Artificial Intelligence: A Modern Approach*, 4th ed. Pearson. Ch. 19 (Learning from Examples), Ch. 9 (Inference in First-Order Logic).
     25. European Parliament. (2024). Regulation (EU) 2024/1689 — EU Artificial Intelligence Act. Official Journal of the EU, L 2024/1689.
-    26. Drools Documentation. (2024). Drools Rule Engine. https://docs.drools.org/latest/drools-docs/drools/rule-engine/index.html
+    26. Drools Documentation. (2024). Drools Rule Engine. https://docs.drools.org/latest/drools-docs/drools/rule-engine/[private].html
     27. Apache Software Foundation. (2024). Apache KIE (Drools). https://github.com/apache/incubator-kie-drools
 
   ## Formal Structure: A Classification Rule
@@ -652,6 +829,6 @@ public: true
     - Audit trail completeness: every classification decision must record which rule fired, with full antecedent evaluation trace and timestamp, for regulatory compliance
 
 - ### Provenance
-  - sources:: https://www.w3.org/submissions/SWRL/, https://arxiv.org/abs/2501.03888, https://arxiv.org/abs/2603.28558, https://arxiv.org/abs/2507.10546, https://arxiv.org/abs/2604.07897, https://arxiv.org/abs/2510.11079, https://dl.acm.org/doi/10.24963/ijcai.2025/1157, https://docs.drools.org/latest/drools-docs/drools/rule-engine/index.html, https://github.com/apache/incubator-kie-drools, https://www.sciencedirect.com/science/article/pii/S2212473X25001191
+  - sources:: https://www.w3.org/submissions/SWRL/, https://arxiv.org/abs/2501.03888, https://arxiv.org/abs/2603.28558, https://arxiv.org/abs/2507.10546, https://arxiv.org/abs/2604.07897, https://arxiv.org/abs/2510.11079, https://dl.acm.org/doi/10.24963/ijcai.2025/1157, https://docs.drools.org/latest/drools-docs/drools/rule-engine/[private].html, https://github.com/apache/incubator-kie-drools, https://www.sciencedirect.com/science/article/pii/S2212473X25001191
   - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Temporal Difference Learning
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:temporal-difference-learning", "@type":"Page", "title":"Temporal Difference Learning", "vc:slug":"temporal-difference-learning", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:temporal-difference-learning",
+  "@type": "Page",
+  "title": "Temporal Difference Learning",
+  "vc:slug": "temporal-difference-learning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

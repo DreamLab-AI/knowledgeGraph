@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - CloudInfrastructure
----
-
-# Cloud Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,57 +180,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cloud-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b11f10016d267812827e40767d6deb23a332922f97483ffbe6cd63e4d674c646"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Elasticity]]",
-      "resolved": "urn:visionflow:linked:elasticity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scalability]]",
-      "resolved": "urn:visionflow:linked:scalability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Self-Service Provisioning]]",
-      "resolved": "urn:visionflow:linked:self-service-provisioning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI_Domain_Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cloud infrastructure is a computing model that provides on-demand access to virtualized computing resources including servers, storage, networking, and platform services delivered over the internet. It enables organizations to provision and scale IT resources dynamically without managing physical hardware, typically through service models such as IaaS, PaaS, and SaaS.

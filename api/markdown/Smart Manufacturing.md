@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Smart Manufacturing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,4 +183,3 @@ public: true
   - Smart manufacturing is significant because it addresses fundamental competitive pressures: labour cost arbitrage is declining as automation improves; mass customisation demands more flexible production at lower volumes; sustainability regulations require energy and waste reduction; and supply-chain disruptions require local, responsive manufacturing capabilities. Companies implementing smart manufacturing report substantial improvements in overall equipment effectiveness, quality yields, and energy intensity. The integration of manufacturing data with enterprise systems also accelerates design-to-manufacture cycles by feeding real production performance back to product engineers.
 
   - By 2024–2025, smart manufacturing is advancing on several fronts. Edge AI inference — running ML models on devices at the factory floor rather than in the cloud — is reducing latency and network bandwidth requirements for real-time quality inspection. Foundation models trained on multi-modal manufacturing data are beginning to provide generalised process intelligence that transfers across different products and production lines. Digital thread initiatives aim to create unbroken data linkages from customer order through design, production, and service, enabling full lifecycle traceability. The intersection of smart manufacturing and sustainability is intensifying, with AI-driven energy management systems optimising consumption in real time against renewable generation forecasts.
-

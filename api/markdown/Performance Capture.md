@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Performance Capture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:performance-capture:641557258a6e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3dd38d59393cf290d84274054aa1c1f1b320ad80754cc5927d95513bc00bab9b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Motion Capture]]",
-      "resolved": "urn:visionflow:linked:motion-capture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Avatar]]",
-      "resolved": "urn:visionflow:linked:avatar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Skeletal Animation]]",
-      "resolved": "urn:visionflow:linked:skeletal-animation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Volumetric Video]]",
-      "resolved": "urn:visionflow:linked:volumetric-video",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Photogrammetry]]",
-      "resolved": "urn:visionflow:linked:photogrammetry",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Performance capture records an actor's full body, facial and sometimes finger movement simultaneously so that a single performance drives a digital character's motion and expression.

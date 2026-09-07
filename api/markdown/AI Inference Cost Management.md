@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Inference Cost Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "ai-inference-cost-management",
   "title": "AI Inference Cost Management",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Code Generation", "Code Review Efficiency", "Developer Productivity", "Pull Request Metrics"],
+  "vc:outboundWikilinks": [
+    "AI Code Generation",
+    "Code Review Efficiency",
+    "Developer Productivity",
+    "Pull Request Metrics"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:enterprise-budgeting", "label": "Enterprise Budgeting"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:enterprise-budgeting",
+      "label": "Enterprise Budgeting"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}, {"@id": "urn:ngm:class:ai-code-generation", "label": "AI Code Generation"}, {"@id": "urn:ngm:class:software-supply-chain", "label": "Software Supply Chain"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-code-generation",
+        "label": "AI Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cognitive Psychology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -263,111 +258,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cognitive-psychology:052aa7e19b6a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7ed7ef05160ef053e94f1aba5c92030e2cca191f69e971ecb7b2fda7d59e616d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decision Making]]",
-      "resolved": "urn:visionflow:linked:decision-making",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Behavioural Economics]]",
-      "resolved": "urn:visionflow:linked:behavioural-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cognitive Science]]",
-      "resolved": "urn:visionflow:linked:cognitive-science",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neuroscience]]",
-      "resolved": "urn:visionflow:linked:neuroscience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Working Memory]]",
-      "resolved": "urn:visionflow:linked:working-memory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Attention Mechanism]]",
-      "resolved": "urn:visionflow:linked:attention-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Computer Interaction]]",
-      "resolved": "urn:visionflow:linked:human-computer-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:linked:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cognitive Architecture]]",
-      "resolved": "urn:visionflow:linked:cognitive-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Philosophy of Mind]]",
-      "resolved": "urn:visionflow:linked:philosophy-of-mind",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Embodied Cognition]]",
-      "resolved": "urn:visionflow:linked:embodied-cognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Cognitive psychology is the scientific discipline that investigates the internal [[Mental Processes]] underlying intelligent behaviour — encompassing [[Perception]], [[Attention Mechanism]], [[Working Memory]], long-term memory, [[Language Processing]], [[Problem Solving]], [[Reasoning]], and [[Decision Making]] — by treating the mind as an information-processing system analogous to a digital computer, and using controlled laboratory experiments, [[Reaction Time Methods]], computational models, and [[Neuroimaging]] to infer the representations, operations, and architectures that support human cognition. The discipline crystallised as a distinct field in the mid-twentieth century, catalysed by dissatisfaction with the theoretical poverty of behaviourism — which refused to posit internal mental states — and energised by the conceptual language provided by information theory, [[Cybernetics]], and the first digital computers. Ulric Neisser's 1967 monograph *Cognitive Psychology* is conventionally taken as the founding text, synthesising research on visual scanning, pattern recognition, selective [[Attention Mechanism]], and memory into a coherent information-processing framework. Neisser defined cognition as "all processes by which sensory input is transformed, reduced, elaborated, stored, recovered, and used," a definition that remains accurate today. The field draws methodological rigour from experimental psychology — reaction-time chronometry, signal-detection theory, dual-task interference paradigms — while its theoretical ambitions connect it to [[Cognitive Science]], [[Neuroscience]], [[Philosophy of Mind]], and [[Artificial Intelligence]]. George Miller's 1956 paper on the magical number seven established that human short-term memory capacity is severely limited to roughly seven plus or minus two chunks, grounding the field's empirical programme in quantitative measurement. Alan Baddeley and Graham Hitch's 1974 multicomponent model of [[Working Memory]] — comprising a phonological loop, visuo-spatial sketchpad, central executive, and later an episodic buffer — remains the dominant framework for understanding how humans temporarily hold and manipulate information. The dual-process framework, systematised by Daniel Kahneman as System 1 (fast, automatic, associative) and System 2 (slow, deliberate, effortful), has proved particularly influential in connecting cognitive psychology to [[Behavioural Economics]], [[Explainable AI]], and [[Reinforcement Learning]], providing a psychologically grounded account of when and why humans deviate from normative rationality. Cognitive psychology's experimental and computational findings directly inform the design of [[Artificial Intelligence]] systems, [[Human Computer Interaction]] frameworks, [[Intelligent Tutoring Systems]], clinical assessment tools for dementia, and the emerging field of [[Cognitive Architecture]]-based AI agents.
 
@@ -521,7 +411,7 @@ public: true
 
   **Classical information-processing cognitive psychology** (Neisser, 1967; Anderson, 1983) treats cognition as sequential, stage-based processing of symbolic representations, each stage transformable by measurable experimental chronometry. This tradition generated the ACT-R and SOAR [[Cognitive Architecture]] systems, which make quantitative predictions about response times and error patterns across complex tasks. It connects directly to symbolic AI and production system architectures in [[Cognitive AI]] agents.
 
-  **Connectionist cognitive psychology** (Rumelhart and McClelland, 1986) rejected explicit symbolic representations in favour of distributed patterns of activation across networks of simple units — sub-symbolic representations that emerge from exposure to training data rather than being explicitly programmed. The PDP (Parallel Distributed Processing) programme demonstrated that past-tense acquisition, word recognition, and sentence processing could be modelled without explicit rules. Connectionism maps directly to [[Deep Learning]] and motivates the view that [[Large Language Models]] are cognitively plausible models of learned linguistic competence.
+  **Connectionist cognitive psychology** (Rumelhart and McClelland, 1986) rejected explicit symbolic representations in favour of distributed patterns of activation across networks of simple units — sub-symbolic representations that emerge from exposure to training data rather than being explicitly programmed. The PDP (Parallel Distributed Processing) programme demonstrated that past-tense acquisition, word recognition, and sentence processing [private] be modelled without explicit rules. Connectionism maps directly to [[Deep Learning]] and motivates the view that [[Large Language Models]] are cognitively plausible models of learned linguistic competence.
 
   **Embodied and situated cognitive psychology** (Gibson, 1979; Clark and Chalmers, 1998) argues that cognition is not confined to the brain but is distributed across body, environment, and external cognitive artefacts. Gibson's ecological psychology emphasises affordances — the action possibilities offered by objects and surfaces — as the primary objects of perception, bypassing the need for internal representation. Clark and Chalmers' extended mind thesis proposes that cognitive processes can extend beyond the boundaries of skull and skin when external devices (notebooks, smartphones, AI systems) function as part of a coupled cognitive system. This tradition directly grounds research on cognitive offloading and the cognitive consequences of AI delegation, and motivates [[Embodied Cognition]] approaches in [[Robotics]] and embodied [[Cognitive AI]].
 
@@ -579,7 +469,7 @@ public: true
 
   The 1960s and 1970s saw rapid institutionalisation: journals (*Cognitive Psychology*, founded 1970; *Cognition*, founded 1972), graduate programmes, and the establishment of major research programmes in memory (Craik and Lockhart's levels-of-processing framework, 1972), language (Levelt's SPEAKING model, 1989), attention (Treisman's feature integration theory, 1980), and problem-solving (Newell and Simon's General Problem Solver, 1972). Developmental cognitive psychology (Piaget's constructivism; Vygotsky's zone of proximal development) added ontogenetic questions about how cognitive structures emerge.
 
-  Connectionism — the parallel distributed processing (PDP) movement of Rumelhart, McClelland and colleagues (1986) — posed a fundamental challenge to classical symbolic cognitive psychology by demonstrating that network models could acquire grammar-like regularities through exposure to language without explicit rule encoding, reviving the nature-nurture debate about language acquisition. The PDP-versus-symbolic debate has never been fully resolved and resurfaces in contemporary discussions of whether [[Large Language Models]] constitute cognitive science theories.
+  Connectionism — the parallel distributed processing (PDP) movement of Rumelhart, McClelland and colleagues (1986) — posed a fundamental challenge to classical symbolic cognitive psychology by demonstrating that network models [private] acquire grammar-like regularities through exposure to language without explicit rule encoding, reviving the nature-nurture debate about language acquisition. The PDP-versus-symbolic debate has never been fully resolved and resurfaces in contemporary discussions of whether [[Large Language Models]] constitute cognitive science theories.
 
   ## Current Landscape (2026)
 
@@ -627,7 +517,7 @@ public: true
 
   The unification of cognitive psychology with the predictive processing / active inference programme, and with the embodied cognition tradition, represents the field's most ambitious theoretical challenge. Integrating subjective experience, agency, and social cognition into a single computational framework remains work-in-progress for 2030.
 
-  **Cognitive load monitoring in real time** will become a standard feature of professional AI assistance systems by 2028-2030. Pupillometry — measuring pupil dilation as a real-time index of [[Working Memory]] load, with dilation increasing monotonically as task demands exceed capacity — combined with EEG power spectral analysis (theta oscillations in frontal electrodes correlate with [[Working Memory]] maintenance; alpha suppression correlates with attentional engagement) will provide continuous physiological indices of operator cognitive state. These indices will feed adaptive AI workload management systems that reduce information density, defer non-urgent alerts, and simplify interface elements when cognitive overload is detected — an application of cognitive psychology's psychophysiological measurement toolkit to real-time [[Human Computer Interaction]] optimisation. Prototype systems are already deployed in aviation simulation research at the University of Southampton and in surgical training at Imperial College London.
+  **Cognitive load monitoring in real time** will become a standard feature of professional AI assistance systems by 2028-2030. Pupillometry — measuring pupil dilation as a real-time [private] of [[Working Memory]] load, with dilation increasing monotonically as task demands exceed capacity — combined with EEG power spectral analysis (theta oscillations in frontal electrodes correlate with [[Working Memory]] maintenance; alpha suppression correlates with attentional engagement) will provide continuous physiological indices of operator cognitive state. These indices will feed adaptive AI workload management systems that reduce information density, defer non-urgent alerts, and simplify interface elements when cognitive overload is detected — an application of cognitive psychology's psychophysiological measurement toolkit to real-time [[Human Computer Interaction]] optimisation. Prototype systems are already deployed in aviation simulation research at the University of Southampton and in surgical training at Imperial College London.
 
   **Computational cognitive phenotyping** — using digital behavioural biomarkers derived from [[Machine Learning]] analysis of touchscreen interaction patterns, speech acoustics, eye movements, and keystroke dynamics — will transform clinical cognitive assessment from episodic laboratory visits to continuous passive monitoring via smartphone and wearable devices. Models trained on cognitive psychology task batteries will predict cognitive test performance from everyday digital behaviour, enabling population-level monitoring for early cognitive decline, medication effects, and recovery trajectories. The UK Biobank Digital Health programme and NHS Digital's 2025-2030 strategy both include cognitive monitoring data streams, and the MHRA has begun developing regulatory pathways for digital cognitive biomarkers as medical devices — a regulatory development that requires cognitive psychology measurement validity evidence as its scientific foundation.
 

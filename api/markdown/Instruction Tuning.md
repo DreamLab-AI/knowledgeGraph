@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Instruction Tuning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,32 +167,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:instruction-tuning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4c1a4c6c799725e9e5c68e02ced20bcc05a235440ef25bd2cfc980cdcc09dce3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A fine-tuning technique that trains language models to follow natural language instructions by training on diverse instruction-response pairs. Instruction tuning enables models to generalise to new tasks described through instructions without task-specific training data.
 
@@ -217,9 +186,9 @@ public: true
 - ### Content
   - A fine-tuning technique that trains language models to follow natural language instructions by training on diverse instruction-response pairs. Instruction tuning enables models to generalise to new tasks described through instructions without task-specific training data.
 
-  - # ComfyUI for Fashion and Brands: Event Instructions
+  - # [private]: Event Instructions
 
-  - # ComfyUI for Fashion and Brands: Event Instructions
+  - # [private]: Event Instructions
 
   - ## Language and Tone
 

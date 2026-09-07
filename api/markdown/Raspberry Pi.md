@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Raspberry Pi
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Raspberry Pi is a family of low-cost, credit-card-sized single-board computers built around ARM systems-on-chip, designed originally for education and now ubiquitous in hobbyist, prototyping, and edge-computing deployments. It exposes GPIO pins for hardware interfacing and runs full Linux distributions, making it a versatile platform for home automation, robotics controllers, and small servers. Its affordability and large community make it a default choice for edge experimentation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:home-assistant", "label": "Home Assistant"}
+      {
+        "@id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DLSS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,38 @@ public: true
   "definition": "DLSS (Deep Learning Super Sampling) is NVIDIA's family of AI-based rendering techniques that use neural networks running on dedicated tensor hardware to reconstruct high-resolution, high-frame-rate images from lower-resolution rendered inputs. By upscaling, accumulating temporal information, and generating intermediate frames, DLSS delivers image quality approaching or exceeding native rendering at a fraction of the GPU cost, enabling demanding effects such as real-time ray tracing to run smoothly. It exemplifies the integration of learned models into the real-time graphics pipeline.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:rendering-technology", "label": "Rendering Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering-technology",
+      "label": "Rendering Technology"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:gpu", "label": "GPU"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ]
   },
   "quality": 0.8

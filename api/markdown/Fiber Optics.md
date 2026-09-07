@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fiber Optics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "fiber-optics",
   "title": "Fiber Optics",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Corning", "Data Center Networking"],
+  "vc:outboundWikilinks": [
+    "Corning",
+    "Data Center Networking"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:networking", "label": "Networking"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:networking",
+      "label": "Networking"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:networking", "label": "Networking"}, {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}, {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:networking",
+        "label": "Networking"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

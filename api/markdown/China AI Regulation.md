@@ -1,8 +1,3 @@
----
-public: true
----
-
-# China AI Regulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "china-ai-regulation",
   "title": "China AI Regulation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Open Claude", "State-Owned Enterprises"],
+  "vc:outboundWikilinks": [
+    "Open Claude",
+    "State-Owned Enterprises"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:china", "label": "China"}, {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}, {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:china",
+        "label": "China"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

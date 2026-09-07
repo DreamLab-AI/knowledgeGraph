@@ -1,38 +1,112 @@
----
-public: true
----
-
-# Edge Detection
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:edge-detection", "@type":"Page", "title":"Edge Detection", "vc:slug":"edge-detection", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:edge-detection",
+  "@type": "Page",
+  "title": "Edge Detection",
+  "vc:slug": "edge-detection",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:edge-detection",
-  "@type":"Class",
-  "label":"Edge Detection",
-  "definition":"Edge detection is a computer vision technique that identifies points in a digital image where brightness changes sharply, marking the boundaries of objects, surfaces and textures. It typically computes image gradients and applies thresholding to produce a binary or magnitude map of edges. As a low-level feature operator it underpins higher-level tasks such as segmentation, object detection and shape analysis.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:feature-detection","label":"Feature Detection"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:convolution","label":"Convolution"},{"@id":"urn:ngm:class:gradient","label":"Gradient"}],
-    "partOf":[{"@id":"urn:ngm:class:image-processing","label":"Image Processing"}],
-    "enables":[{"@id":"urn:ngm:class:image-segmentation","label":"Image Segmentation"},{"@id":"urn:ngm:class:object-detection","label":"Object Detection"}],
-    "supports":[{"@id":"urn:ngm:class:feature-extraction","label":"Feature Extraction"}],
-    "implements":[{"@id":"urn:ngm:class:feature-detection","label":"Feature Detection"}],
-    "requires":[{"@id":"urn:ngm:class:image-processing","label":"Image Processing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"},{"@id":"urn:ngm:class:machine-vision","label":"Machine Vision"}],
-    "dependsOn":[{"@id":"urn:ngm:class:convolution","label":"Convolution"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:image-segmentation","label":"Image Segmentation"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-detection",
+  "@type": "Class",
+  "label": "Edge Detection",
+  "definition": "Edge detection is a computer vision technique that identifies points in a digital image where brightness changes sharply, marking the boundaries of objects, surfaces and textures. It typically computes image gradients and applies thresholding to produce a binary or magnitude map of edges. As a low-level feature operator it underpins higher-level tasks such as segmentation, object detection and shape analysis.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:feature-detection",
+      "label": "Feature Detection"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

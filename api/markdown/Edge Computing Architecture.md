@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Edge Computing Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,42 +206,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:edge-computing-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:39c5fffee110b00731d5aa97bffa1951b2b4be4f283b7e0a66def052818cbbcd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Low-Latency Experiences]]",
-      "resolved": "urn:visionflow:linked:low-latency-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed System Architecture]]",
-      "resolved": "urn:visionflow:owl:class:distributed-system-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A distributed computing paradigm that positions computational resources closer to end-user devices such as VR headsets and AR glasses, reducing latency, improving responsiveness, and enabling scalable metaverse experiences by offloading processing from centralised cloud servers.

@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Pattern Matching
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:pattern-matching", "@type": "Page", "title": "Pattern Matching", "vc:slug": "pattern-matching", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:pattern-matching",
+  "@type": "Page",
+  "title": "Pattern Matching",
+  "vc:slug": "pattern-matching",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

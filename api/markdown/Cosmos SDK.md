@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cosmos SDK
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,57 +168,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cosmos-sdk:a324f81af5d7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e9f271feae3ea79f85e350ccf69fd2880a4fe2faa895d7b27c5358b80ab5240b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Tendermint]]",
-      "resolved": "urn:visionflow:linked:tendermint",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[IBC]]",
-      "resolved": "urn:visionflow:linked:ibc",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Interoperability]]",
-      "resolved": "urn:visionflow:linked:blockchain-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cosmos]]",
-      "resolved": "urn:visionflow:linked:cosmos",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://docs.cosmos.network]]",
-      "resolved": "urn:visionflow:linked:https-docs-cosmos-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://github.com/cosmos/cosmos-sdk]]",
-      "resolved": "urn:visionflow:linked:https-github-com-cosmos-cosmos-sdk",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Cosmos SDK is an open-source framework for building application-specific blockchains in the Cosmos ecosystem. It provides modular components and works with the Tendermint consensus engine.

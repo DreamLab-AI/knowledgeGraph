@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - BlockchainConsensus
----
-
-# Blockchain Consensus
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

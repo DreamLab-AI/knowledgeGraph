@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Forward Chaining
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -135,7 +130,7 @@ public: true
   - **Provenance and governance**: the Kie/Drools codebase now tracks the Apache incubator-kie-drools project, reflecting its move toward Apache Software Foundation governance while retaining the forward-and-backward-chaining, Rete-derived core.
 
   **Sources**:
-  - https://docs.drools.org/latest/drools-docs/drools/rule-engine/index.html
+  - https://docs.drools.org/latest/drools-docs/drools/rule-engine/[private].html
   - https://en.wikipedia.org/wiki/Drools
 
 - ### Provenance

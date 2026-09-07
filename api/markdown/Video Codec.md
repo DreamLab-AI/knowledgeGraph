@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Video Codec
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,4 +171,3 @@ public: true
   - Hardware codec support is critical for deployment: Apple A-series, Qualcomm Snapdragon, Google Tensor, and AMD/Nvidia GPUs include dedicated AV1 decode and, increasingly, encode engines. Intel Arc GPUs added AV1 hardware encoding in 2022. YouTube, Netflix, and Meta have deployed AV1 for the majority of their streaming traffic by 2024, using open-source encoders (SVT-AV1, libaom) at cloud scale with GPU- and ASIC-accelerated decode on client devices.
 
   - Neural video coding has emerged as a research frontier: end-to-end learned codecs (e.g., Scale-Space Flow, DCVC) use convolutional and transformer networks for all coding stages, and hybrid learned/traditional approaches (neural in-loop filters, ML motion estimation) are being standardised in MPEG's LCEVC and Neural Enhancement extensions. By 2025, learned video coding has closed the gap to AV1 on perceptual metrics at low bitrates, with deployment beginning in video conferencing and surveillance applications where encoder latency constraints are relaxed.
-

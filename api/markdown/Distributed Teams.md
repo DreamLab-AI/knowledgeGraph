@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Distributed Teams
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Distributed teams are groups of collaborators who work from different geographic locations and often across time zones, coordinating primarily through digital communication and collaboration tools. They rely on asynchronous workflows, shared documentation, and recorded or AI-assisted meetings to maintain alignment without co-location. They have become a dominant model of knowledge work, trading the spontaneity of the office for flexibility and access to a global talent pool.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:asynchronous-video", "label": "Asynchronous Video"},
-      {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"}
+      {
+        "@id": "urn:ngm:class:asynchronous-video",
+        "label": "Asynchronous Video"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      }
     ]
   },
   "quality": 0.72

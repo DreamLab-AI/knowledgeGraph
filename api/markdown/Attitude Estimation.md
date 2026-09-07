@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Attitude Estimation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

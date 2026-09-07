@@ -1,37 +1,118 @@
----
-public: true
----
-
-# Carbon-Aware Computing
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:carbon-aware-computing", "@type":"Page", "title":"Carbon-Aware Computing", "vc:slug":"carbon-aware-computing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:carbon-aware-computing",
+  "@type": "Page",
+  "title": "Carbon-Aware Computing",
+  "vc:slug": "carbon-aware-computing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:carbon-aware-computing",
-  "@type":"Class",
-  "label":"Carbon-Aware Computing",
-  "definition":"Carbon-aware computing is the practice of scheduling and placing computational workloads to minimise their associated greenhouse-gas emissions by responding to the time-varying and location-varying carbon intensity of electricity. Rather than only reducing energy use, it shifts flexible work to periods and regions where the grid is cleaner. The approach combines real-time grid carbon-intensity signals with workload orchestration to lower the carbon footprint of data centres and cloud services.",
-  "domain":"infrastructure",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:green-computing","label":"Green Computing"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:green-computing","label":"Green Computing"}],
-    "dependsOn":[{"@id":"urn:ngm:class:renewable-energy","label":"Renewable Energy"},{"@id":"urn:ngm:class:demand-response","label":"Demand Response"}],
-    "requires":[{"@id":"urn:ngm:class:energy-efficiency","label":"Energy Efficiency"}],
-    "uses":[{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"},{"@id":"urn:ngm:class:demand-response","label":"Demand Response"}],
-    "enables":[{"@id":"urn:ngm:class:net-zero","label":"Net Zero"},{"@id":"urn:ngm:class:carbon-footprint","label":"Carbon Footprint"}],
-    "supports":[{"@id":"urn:ngm:class:environmental-sustainability","label":"Environmental Sustainability"},{"@id":"urn:ngm:class:carbon-footprint","label":"Carbon Footprint"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:renewable-energy","label":"Renewable Energy"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:energy-efficiency","label":"Energy Efficiency"}],
-    "relatedTo":[{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"},{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"},{"@id":"urn:ngm:class:lifecycle-assessment","label":"Lifecycle Assessment"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-aware-computing",
+  "@type": "Class",
+  "label": "Carbon-Aware Computing",
+  "definition": "Carbon-aware computing is the practice of scheduling and placing computational workloads to minimise their associated greenhouse-gas emissions by responding to the time-varying and location-varying carbon intensity of electricity. Rather than only reducing energy use, it shifts flexible work to periods and regions where the grid is cleaner. The approach combines real-time grid carbon-intensity signals with workload orchestration to lower the carbon footprint of data centres and cloud services.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:green-computing",
+      "label": "Green Computing"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:green-computing",
+        "label": "Green Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:lifecycle-assessment",
+        "label": "Lifecycle Assessment"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

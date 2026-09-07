@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Token Bridge
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Performance Marketing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "performance-marketing",
   "title": "Performance Marketing",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Advertising Model", "Transaction Completion", "User Satisfaction"],
+  "vc:outboundWikilinks": [
+    "Advertising Model",
+    "Transaction Completion",
+    "User Satisfaction"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:advertising", "label": "Advertising"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:advertising",
+      "label": "Advertising"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:advertising", "label": "Advertising"}, {"@id": "urn:ngm:class:programmatic-advertising", "label": "Programmatic Advertising"}, {"@id": "urn:ngm:class:digital-marketing", "label": "Digital Marketing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

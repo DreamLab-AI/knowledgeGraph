@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Democracy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Digital democracy is the use of digital technologies to broaden and deepen citizen participation in political decision-making, including online deliberation, e-petitions, participatory budgeting, and novel voting mechanisms. It seeks to make governance more transparent, inclusive, and responsive by lowering the barriers to engagement. It encompasses both incremental e-government tools and experimental collective-choice systems such as quadratic voting.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:civic-participation", "label": "Civic Participation"}
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:civic-participation",
+        "label": "Civic Participation"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Peter Todd
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:peter-todd:1e29228f4165",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:86313babd6e625d5943e8b8323fd88d3b77d890465859907880ba12c1c897401"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Network]]",
-      "resolved": "urn:visionflow:linked:bitcoin-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Core]]",
-      "resolved": "urn:visionflow:linked:bitcoin-core",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://petertodd.org]]",
-      "resolved": "urn:visionflow:linked:https-petertodd-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://github.com/petertodd]]",
-      "resolved": "urn:visionflow:linked:https-github-com-petertodd",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Peter Todd is a Bitcoin developer and applied cryptography consultant known for contributions to the Bitcoin protocol and related projects. He has worked on consensus and transaction issues.

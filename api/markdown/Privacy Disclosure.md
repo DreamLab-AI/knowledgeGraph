@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy Disclosure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+      {
+        "@id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:privacy-disclosure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aadf2b37d49663223e408f59f7b8301da7c5632cb116229578e5c9297a52ffc3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The formal process by which platforms communicate to users what personal data is collected, how it is used, who it is shared with, and what rights users hold over it. In spatial computing and metaverse contexts, privacy disclosure must address novel data types including biometric signals, eye tracking, motion data, and behavioural analytics gathered in immersive environments.

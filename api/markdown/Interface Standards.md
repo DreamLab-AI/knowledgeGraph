@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interface Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interface-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b7905d4f2dc9c1bea7e01de9abb43f2a3bf52c0de7f66781fe16bd0e7e2d4962"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross-Platform Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:cross-platform-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:owl:class:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technical specifications and protocols that define how metaverse components, systems, and services communicate and interoperate, encompassing XR device interfaces, data exchange formats, and cross-platform communication requirements.

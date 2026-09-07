@@ -1,57 +1,116 @@
----
-public: true
----
-
-# Pre-Trained Model
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:pre-trained-model", "@type":"Page", "title":"Pre-Trained Model", "vc:slug":"pre-trained-model", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:pre-trained-model",
+  "@type": "Page",
+  "title": "Pre-Trained Model",
+  "vc:slug": "pre-trained-model",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:pre-trained-model",
-  "@type":"Class",
-  "label":"Pre-Trained Model",
-  "definition":"A pre-trained model is a machine-learning model whose parameters have already been learned on a large, often general-purpose dataset, so that it can be reused as a starting point for downstream tasks. Rather than training from random initialisation, practitioners adapt the pre-trained weights through fine-tuning or use the model directly for inference, transferring learned representations to new problems. Pre-trained models underpin transfer learning and are the practical foundation of modern deep learning across language, vision and multimodal tasks.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:foundation-model","label":"Foundation Model"},{"@id":"urn:ngm:class:ai-model-architecture","label":"AI Model Architecture"}],
-  "relations":{
-    "dependsOn":[
-      {"@id":"urn:ngm:class:model-training","label":"Model Training"},
-      {"@id":"urn:ngm:class:representation-learning","label":"Representation Learning"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pre-trained-model",
+  "@type": "Class",
+  "label": "Pre-Trained Model",
+  "definition": "A pre-trained model is a machine-learning model whose parameters have already been learned on a large, often general-purpose dataset, so that it can be reused as a starting point for downstream tasks. Rather than training from random initialisation, practitioners adapt the pre-trained weights through fine-tuning or use the model directly for inference, transferring learned representations to new problems. Pre-trained models underpin transfer learning and are the practical foundation of modern deep learning across language, vision and multimodal tasks.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:big-data","label":"Big Data"},
-      {"@id":"urn:ngm:class:self-supervised-learning","label":"Self-Supervised Learning"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:transfer-learning","label":"Transfer Learning"},
-      {"@id":"urn:ngm:class:few-shot-learning","label":"Few-Shot Learning"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:fine-tuning","label":"Fine-Tuning"},
-      {"@id":"urn:ngm:class:inference","label":"Inference"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:neural-network","label":"Neural Network"},
-      {"@id":"urn:ngm:class:embedding","label":"Embedding"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:foundation-model","label":"Foundation Model"},
-      {"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

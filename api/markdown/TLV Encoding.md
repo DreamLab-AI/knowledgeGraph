@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TLV Encoding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Type-Length-Value (TLV) encoding is a compact, extensible binary serialisation scheme in which each data field is represented by a type identifier, a length descriptor, and the value payload. Its self-describing structure allows parsers to skip unknown record types while preserving forward and backward compatibility, which is why protocols such as Lightning and Taproot Assets use it to embed optional metadata in transaction records.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
+    ]
   },
   "quality": 0.72
 }

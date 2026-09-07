@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lead Screw Actuator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,24 +59,54 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:stepper-motor", "label": "Stepper Motor"},
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
-      {"@id": "urn:ngm:class:torque", "label": "Torque"}
+      {
+        "@id": "urn:ngm:class:stepper-motor",
+        "label": "Stepper Motor"
+      },
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:torque",
+        "label": "Torque"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+      {
+        "@id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"}
+      {
+        "@id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"},
-      {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"}
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
     ]
   },
   "provenance": {
@@ -91,37 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lead-screw-actuator:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4e037c38bcfa013a3801597843de48b67ac8001937af4b770ee1afcde81db67a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Electric Linear Actuator]]",
-      "resolved": "urn:visionflow:owl:class:electric-linear-actuator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A linear actuation mechanism that converts rotary motor motion into controlled axial displacement by driving a threaded nut along a precision helical screw shaft. High mechanical advantage, self-locking (load holding without power), and positional repeatability make it widely used in CNC machines, 3D printers, robotic joints, and medical devices.

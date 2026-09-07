@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Development
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -129,77 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-d-development:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4a2d62e1a3b98ba53b3658dddb713d407a638b0b9c2ac28c8727bd3abf4b521f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Game Development]]",
-      "resolved": "urn:visionflow:linked:game-development",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse Creation]]",
-      "resolved": "urn:visionflow:linked:metaverse-creation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Software Development]]",
-      "resolved": "urn:visionflow:linked:software-development",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Environment Design]]",
-      "resolved": "urn:visionflow:linked:virtual-environment-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[XR Applications]]",
-      "resolved": "urn:visionflow:linked:xr-applications",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Graphics Standard]]",
-      "resolved": "urn:visionflow:owl:class:3-d-graphics-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Modelling]]",
-      "resolved": "urn:visionflow:owl:class:3-d-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Rendering Engine]]",
-      "resolved": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Game Engine]]",
-      "resolved": "urn:visionflow:owl:class:game-engine",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - 3D Development encompasses the methodologies, tools, and workflows for creating, iterating, and deploying three-dimensional digital assets and environments. It integrates disciplines including [[3D Modelling]], [[3D Graphics Standard]], and [[3D Rendering Engine]] to produce immersive content for games, virtual worlds, and extended reality applications.

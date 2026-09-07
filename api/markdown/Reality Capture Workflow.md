@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reality Capture Workflow
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A reality capture workflow is the end-to-end pipeline that converts real-world objects, people, or environments into digital 3D assets through sensing, alignment, reconstruction, and optimisation stages. It typically chains scanning techniques such as photogrammetry, LiDAR, or volumetric capture with mesh generation, texturing, and retopology steps. The workflow matters because asset fidelity and downstream usability depend on disciplined sequencing of capture, processing, and cleanup.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:digital-performance-capture", "label": "Digital Performance Capture"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:digital-performance-capture",
+        "label": "Digital Performance Capture"
+      }
     ]
   },
   "quality": 0.72

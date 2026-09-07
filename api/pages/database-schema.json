@@ -26,7 +26,7 @@
         "label": "Referential Integrity"
       },
       {
-        "id": "urn:ngm:class:index",
+        "id": "urn:ngm:class:[private]",
         "label": "Index"
       },
       {

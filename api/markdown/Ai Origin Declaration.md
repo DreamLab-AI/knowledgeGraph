@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ai Origin Declaration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -129,77 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-origin-declaration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c03982a12adfd090f2529a00f2eda9e610d016a37073fd93054c807b1293825e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Content Authenticity]]",
-      "resolved": "urn:visionflow:linked:content-authenticity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Content Verification]]",
-      "resolved": "urn:visionflow:linked:content-verification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptographic Signing]]",
-      "resolved": "urn:visionflow:linked:cryptographic-signing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deepfake Detection]]",
-      "resolved": "urn:visionflow:linked:deepfake-detection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Watermarking]]",
-      "resolved": "urn:visionflow:linked:digital-watermarking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metadata Standards]]",
-      "resolved": "urn:visionflow:owl:class:metadata-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trust Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:trust-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI Origin Declaration refers to technical standards and regulatory requirements for disclosing when digital content has been generated or substantially modified by artificial intelligence, encompassing watermarking, metadata embedding, and provenance tracking systems that enable verification of content authenticity and origin.

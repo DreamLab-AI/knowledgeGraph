@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tracking Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -50,16 +45,34 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"},
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+      {
+        "@id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
     ]
   },
   "quality": 0.35,
@@ -70,26 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tracking-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:25438f845dcdefc8b2b4ea7107ffba0461a6dfbb0fc637488b3ad859333aff76"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Tracking Technology refers to the hardware and software systems that determine the real-time position, orientation, and motion of a user or device in physical space for extended reality applications. Approaches include inside-out tracking using onboard cameras and SLAM, outside-in tracking using fixed base stations, eye tracking for gaze-based interaction, and hand/finger tracking for controller-free input.

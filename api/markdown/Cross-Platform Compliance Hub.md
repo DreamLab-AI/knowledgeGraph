@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Platform Compliance Hub
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -339,7 +334,7 @@ public: true
       }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -347,222 +342,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cross-platform-compliance-hub:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3d1b3faa415d801438c2a42c6429432528d22845c6e948afe923a11332c63be6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Audit Aggregator]]",
-      "resolved": "urn:visionflow:linked:audit-aggregator",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-Platform Auditing]]",
-      "resolved": "urn:visionflow:linked:cross-platform-auditing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Classification System]]",
-      "resolved": "urn:visionflow:linked:data-classification-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Governance Infrastructure]]",
-      "resolved": "urn:visionflow:linked:governance-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 27001]]",
-      "resolved": "urn:visionflow:linked:iso-27001",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Legal Framework Database]]",
-      "resolved": "urn:visionflow:linked:legal-framework-database",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Multi-Jurisdictional Policy Store]]",
-      "resolved": "urn:visionflow:linked:multi-jurisdictional-policy-store",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Platform Integration API]]",
-      "resolved": "urn:visionflow:linked:platform-integration-api",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Policy Synchronization]]",
-      "resolved": "urn:visionflow:linked:policy-synchronization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance Framework]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulatory Harmonization]]",
-      "resolved": "urn:visionflow:linked:regulatory-harmonization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulatory Mapping Engine]]",
-      "resolved": "urn:visionflow:linked:regulatory-mapping-engine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reporting Engine]]",
-      "resolved": "urn:visionflow:linked:reporting-engine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Risk Assessment Module]]",
-      "resolved": "urn:visionflow:linked:risk-assessment-module",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SOC 2]]",
-      "resolved": "urn:visionflow:linked:soc-2",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Unified Compliance Reporting]]",
-      "resolved": "urn:visionflow:linked:unified-compliance-reporting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DORA]]",
-      "resolved": "urn:visionflow:linked:dora",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIS2]]",
-      "resolved": "urn:visionflow:linked:nis2",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU AI Act]]",
-      "resolved": "urn:visionflow:linked:eu-ai-act",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI RMF]]",
-      "resolved": "urn:visionflow:linked:nist-ai-rmf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[HIPAA]]",
-      "resolved": "urn:visionflow:linked:hipaa",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SOX]]",
-      "resolved": "urn:visionflow:linked:sox",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Evidence Collection]]",
-      "resolved": "urn:visionflow:linked:evidence-collection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Continuous Monitoring]]",
-      "resolved": "urn:visionflow:linked:continuous-monitoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Audit Trail]]",
-      "resolved": "urn:visionflow:owl:class:audit-trail",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compliance Dashboard]]",
-      "resolved": "urn:visionflow:owl:class:compliance-dashboard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compliance Monitoring]]",
-      "resolved": "urn:visionflow:owl:class:compliance-monitoring",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Provider]]",
-      "resolved": "urn:visionflow:owl:class:identity-provider",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MiddlewareLayer]]",
-      "resolved": "urn:visionflow:owl:class:middleware-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Policy Enforcement]]",
-      "resolved": "urn:visionflow:owl:class:policy-enforcement",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TrustAndGovernanceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Governance]]",
-      "resolved": "urn:visionflow:owl:class:data-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Responsible AI]]",
-      "resolved": "urn:visionflow:owl:class:responsible-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Cross-Platform Compliance Hub is a centralised Governance, Risk, and Compliance (GRC) system that harmonises, orchestrates, and automates regulatory compliance activities across heterogeneous technology platforms, organisational units, and multi-jurisdictional regulatory frameworks through integrated policy management, automated [[Evidence Collection]], continuous control monitoring, and consolidated audit aggregation. Operating as a [[MiddlewareLayer]] between enterprise systems — SaaS applications, cloud infrastructure, on-premise data stores, AI workloads, and collaboration tools — the hub normalises compliance obligations expressed in diverse regulatory regimes including [[GDPR]], [[ISO 27001]], [[SOC 2]], [[HIPAA]], [[SOX]], [[DORA]], [[NIS2]], and the [[EU AI Act]] into a unified [[Multi-Jurisdictional Policy Store]] from which control mappings, evidence requirements, and remediation workflows are automatically distributed to the platforms they govern. The hub integrates [[Risk Assessment Module]] capabilities that score gaps against each applicable framework, orchestrates [[Policy Synchronization]] across API-connected platforms via a [[Platform Integration API]], and surfaces consolidated status through a [[Compliance Dashboard]] fed by a [[Reporting Engine]] that can generate regulator-ready evidence packages on demand. As a component of [[Governance Infrastructure]], the Cross-Platform Compliance Hub enables organisations to achieve [[Regulatory Harmonization]] across overlapping frameworks — for example, simultaneously satisfying [[ISO 27001]] Annex A controls, [[SOC 2]] trust service criteria, and [[EU AI Act]] high-risk AI system documentation requirements through a single control implementation evidenced once and mapped to multiple frameworks — reducing compliance duplication effort while maintaining [[Audit Trail]] integrity. It differs from point compliance tools in providing cross-framework control mapping, automated [[Cross-Platform Auditing]], and real-time [[Compliance Monitoring]] against a continuously updated [[Legal Framework Database]] that tracks regulatory amendments across jurisdictions.
@@ -853,7 +632,7 @@ public: true
 
   **Regulatory harmonisation and divergence management**: Regulatory harmonisation efforts between major frameworks will simplify some cross-framework mapping whilst creating new complexity elsewhere. The NIST-ISO crosswalk between [[NIST AI RMF]] and [[ISO/IEC 42001]] (published 2023) reduces the effort of satisfying both frameworks simultaneously; similar crosswalks are being developed for [[EU AI Act]] and [[ISO/IEC 42001]], and for [[DORA]] and ISO 22301 (Business Continuity). However, UK-EU divergence in data protection, financial services regulation, and AI governance creates compounding complexity for UK organisations with EU market operations, as the frameworks diverge on key technical requirements (adequacy decisions, systemic risk assessment thresholds) in ways that cannot be satisfied by a single unified control implementation. The compliance hub's [[Regulatory Mapping Engine]] must model both harmonised control mappings (where one control satisfies requirements in multiple aligned frameworks) and jurisdiction-specific control variants (where different implementations are required for UK versus EU regulatory requirements).
 
-  **Verifiable compliance**: Cryptographically provable compliance posture — using zero-knowledge proofs or distributed ledger-anchored audit evidence — is an emerging architectural direction that would allow organisations to share compliance proof with regulators, supply chain partners, and customers without exposing the underlying evidence. The W3C Verifiable Credentials standard provides an applicable cryptographic foundation: a compliance hub could issue a VC attesting that a specific control was compliant at a specific timestamp, signed by the hub's private key and anchored to a DID document, allowing any party with the hub's public key to cryptographically verify the attestation without accessing the hub's internal evidence repository. This connects cross-platform compliance hubs to decentralised identity and verifiable credential ecosystems, potentially replacing point-in-time audit reports with streams of continuously issued, cryptographically verifiable compliance attestations. By 2028-2030, regulators (particularly in financial services and AI) may begin accepting continuous verifiable attestation as an alternative to periodic audit cycles.
+  **Verifiable compliance**: Cryptographically provable compliance posture — using zero-knowledge proofs or distributed ledger-anchored audit evidence — is an emerging architectural direction that would allow organisations to share compliance proof with regulators, supply chain partners, and customers without exposing the underlying evidence. The W3C Verifiable Credentials standard provides an applicable cryptographic foundation: a compliance hub [private] issue a VC attesting that a specific control was compliant at a specific timestamp, signed by the hub's private key and anchored to a DID document, allowing any party with the hub's public key to cryptographically verify the attestation without accessing the hub's internal evidence repository. This connects cross-platform compliance hubs to decentralised identity and verifiable credential ecosystems, potentially replacing point-in-time audit reports with streams of continuously issued, cryptographically verifiable compliance attestations. By 2028-2030, regulators (particularly in financial services and AI) may begin accepting continuous verifiable attestation as an alternative to periodic audit cycles.
 
   **AI system governance as first-class compliance domain**: The integration of AI system governance — tracking AI models as regulatable assets with their own risk profiles, training data lineage, bias monitoring obligations, and performance drift requirements — will become a first-class concern in cross-platform compliance hubs as [[EU AI Act]] enforcement matures from August 2026 onwards. The hub will need to maintain a live AI system registry integrated with MLOps platforms (MLflow, Weights & Biases, Hugging Face Hub) and CI/CD pipelines to ensure that every deployed model has a current conformity assessment, [[EU AI Act]]-mandated technical documentation (Article 11), bias test results, and post-market monitoring plan. [[ISO/IEC 42001]] AI Management System requirements will drive organisations to implement formal AI governance processes — AI impact assessments, AI ethics review boards, AI incident management — that the compliance hub must track and evidence as part of the unified compliance posture. The compliance hub will become the system of record for AI governance alongside its traditional information security compliance role, making it a critical component of any organisation's AI responsible deployment programme.
 

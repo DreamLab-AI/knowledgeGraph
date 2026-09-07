@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cybersecurity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,32 +184,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cybersecurity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9244dd4e7632e6d3c2660dfac1f35dc61d05f467ca5170cd86dbc09b72b73914"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Cybersecurity is the discipline concerned with protecting computer systems, networks, and data from unauthorised access, damage, and attack. In the AI governance context it addresses adversarial threats to machine learning models, data poisoning, model extraction, and the use of AI techniques for automated threat detection, vulnerability analysis, and intrusion detection. It overlaps strongly with privacy, encryption, access control, and authentication.

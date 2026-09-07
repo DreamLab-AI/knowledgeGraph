@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fiscal Policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -115,6 +111,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Fiscal policy is the use of government spending and taxation to influence aggregate demand, employment, inflation and economic growth within an economy. It is enacted by a government's treasury or finance ministry through budgets that adjust expenditure programmes, tax rates and public borrowing, and it is the principal counterpart to the monetary policy operated by a central bank. Expansionary fiscal policy raises spending or cuts taxes to stimulate a weak economy, while contractionary policy does the reverse to restrain overheating or reduce public debt.
   - Related core concepts: [[Macroeconomics]] [[Monetary Policy]] [[Inflation]] [[Central Bank]]

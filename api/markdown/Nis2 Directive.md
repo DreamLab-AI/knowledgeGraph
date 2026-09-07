@@ -1,36 +1,112 @@
----
-public: true
----
-
-# Nis2 Directive
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:nis2-directive", "@type":"Page", "title":"Nis2 Directive", "vc:slug":"nis2-directive", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:nis2-directive",
+  "@type": "Page",
+  "title": "Nis2 Directive",
+  "vc:slug": "nis2-directive",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:nis2-directive",
-  "@type":"Class",
-  "label":"Nis2 Directive",
-  "definition":"The NIS2 Directive is European Union legislation that raises and harmonises cybersecurity requirements for essential and important entities operating critical services across member states. It expands the scope of the earlier NIS Directive, imposes risk-management and governance obligations on covered organisations, and introduces stricter incident-reporting timelines and enforcement. It is a cornerstone of EU cyber-resilience policy for sectors such as energy, transport, health, and digital infrastructure.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-  "relations":{
-    "relatedTo":[{"@id":"urn:ngm:class:gdpr","label":"GDPR"},{"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"},{"@id":"urn:ngm:class:network-security","label":"Network Security"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"},{"@id":"urn:ngm:class:governance-framework","label":"Governance Framework"}],
-    "requires":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"},{"@id":"urn:ngm:class:incident-response","label":"Incident Response"}],
-    "enables":[{"@id":"urn:ngm:class:compliance","label":"Compliance"},{"@id":"urn:ngm:class:data-protection","label":"Data Protection"}],
-    "supports":[{"@id":"urn:ngm:class:incident-management","label":"Incident Management"},{"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}],
-    "implements":[{"@id":"urn:ngm:class:governance-framework","label":"Governance Framework"}],
-    "dependsOn":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:network-security","label":"Network Security"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:nis2-directive",
+  "@type": "Class",
+  "label": "Nis2 Directive",
+  "definition": "The NIS2 Directive is European Union legislation that raises and harmonises cybersecurity requirements for essential and important entities operating critical services across member states. It expands the scope of the earlier NIS Directive, imposes risk-management and governance obligations on covered organisations, and introduces stricter incident-reporting timelines and enforcement. It is a cornerstone of EU cyber-resilience policy for sectors such as energy, transport, health, and digital infrastructure.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

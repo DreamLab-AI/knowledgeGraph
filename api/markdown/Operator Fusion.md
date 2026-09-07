@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Operator Fusion
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:operator-fusion", "@type":"Page", "title":"Operator Fusion", "vc:slug":"operator-fusion", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:operator-fusion",
+  "@type": "Page",
+  "title": "Operator Fusion",
+  "vc:slug": "operator-fusion",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -98,6 +103,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - Operator fusion is a compiler optimisation that merges adjacent operations in a [[Neural Network]] computation graph into a single fused kernel. It is a form of [[Model Optimization]] that relies on the [[Compiler]] and targets [[GPU]] and other accelerators.
 - ### Overview

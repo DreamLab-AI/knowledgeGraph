@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monitoring Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Monitoring infrastructure is the collection of systems that gather, store, and analyse metrics, logs, and traces to observe the health, performance, and behaviour of software and physical systems. It underpins alerting, capacity planning, incident response, and, for AI systems, tracking of drift, cost, and environmental impact. Components typically include collectors, time-series databases, dashboards, and alerting engines.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:environmental-impact-metric", "label": "Environmental Impact Metric"},
-      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"}
+      {
+        "@id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      },
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      }
     ]
   },
   "quality": 0.72

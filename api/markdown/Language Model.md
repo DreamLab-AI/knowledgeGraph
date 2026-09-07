@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Language Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -302,7 +297,7 @@ public: true
 
 - ### References
   - 1. IBM (2026). A list of large language models (LLMs). https://www.ibm.com/think/topics/large-language-models-list
-  - 2. OpenAI (2026). GPT-5.6: Frontier intelligence that scales with your ambition. https://openai.com/index/gpt-5-6/
+  - 2. OpenAI (2026). GPT-5.6: Frontier intelligence that scales with your ambition. https://openai.com/[private]/gpt-5-6/
   - 3. European Commission (2025). EU rules on general-purpose AI models start to apply. https://digital-strategy.ec.europa.eu/en/news/eu-rules-general-purpose-ai-models-start-apply-bringing-more-transparency-safety-and-accountability
   - 4. ByteByteGo (2026). What's Next in AI: Five Trends to Watch in 2026. https://blog.bytebytego.com/p/whats-next-in-ai-five-trends-to-watch
   - 5. Build Fast with AI (2026). Best AI Models June 2026: Every Major LLM Ranked & Compared. https://www.buildfastwithai.com/blogs/latest-ai-models-all-companies-2026

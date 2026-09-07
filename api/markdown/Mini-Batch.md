@@ -1,56 +1,108 @@
----
-public: true
----
-
-# Mini-Batch
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:mini-batch", "@type":"Page", "title":"Mini-Batch", "vc:slug":"mini-batch", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:mini-batch",
+  "@type": "Page",
+  "title": "Mini-Batch",
+  "vc:slug": "mini-batch",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:mini-batch",
-  "@type":"Class",
-  "label":"Mini-Batch",
-  "definition":"A mini-batch is a small, fixed-size subset of a training dataset processed together in a single forward and backward pass when training a machine learning model. Mini-batch gradient descent computes the gradient over the mini-batch rather than over a single example (stochastic) or the entire dataset (full batch), balancing the noise-reduction benefits of larger batches against the computational and memory cost. The mini-batch size is a key hyperparameter that influences convergence behaviour, gradient variance, hardware utilisation and generalisation.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:stochastic-gradient-descent","label":"Stochastic Gradient Descent"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"},
-      {"@id":"urn:ngm:class:model-training","label":"Model Training"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:mini-batch",
+  "@type": "Class",
+  "label": "Mini-Batch",
+  "definition": "A mini-batch is a small, fixed-size subset of a training dataset processed together in a single forward and backward pass when training a machine learning model. Mini-batch gradient descent computes the gradient over the mini-batch rather than over a single example (stochastic) or the entire dataset (full batch), balancing the noise-reduction benefits of larger batches against the computational and memory cost. The mini-batch size is a key hyperparameter that influences convergence behaviour, gradient variance, hardware utilisation and generalisation.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:loss-function","label":"Loss Function"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"},
-      {"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimisation Algorithm"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:data-parallelism","label":"Data Parallelism"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:matrix-multiplication","label":"Matrix Multiplication"},
-      {"@id":"urn:ngm:class:gpu-acceleration","label":"GPU Acceleration"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:neural-network","label":"Neural Network"},
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:epoch","label":"Epoch"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:overfitting","label":"Overfitting"},
-      {"@id":"urn:ngm:class:convolutional-neural-network","label":"Convolutional Neural Network"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

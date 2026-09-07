@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BOLT11
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,52 +177,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bolt-11:0a2c6a25ab7d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ca481047fed10a1d2027591b6d7dfbec20ab078455a702afb3a48c8b02b72889"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BOLT]]",
-      "resolved": "urn:visionflow:linked:bolt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning]]",
-      "resolved": "urn:visionflow:linked:lightning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BOLT12]]",
-      "resolved": "urn:visionflow:linked:bolt-12",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://github.com/lightning/bolts/blob/master/11-payment-encoding.md]]",
-      "resolved": "urn:visionflow:linked:https-github-com-lightning-bolts-blob-master-11-payment-encoding-md",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.bolt11.org]]",
-      "resolved": "urn:visionflow:linked:https-www-bolt-11-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - BOLT11 is the Lightning Network specification for the invoice format used to request a single payment. It encodes payment details into a string that the payer scans or pastes.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Block Structure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "Block structure is the internal data layout of a block in a blockchain or distributed ledger, specifying the fields, encoding formats, and cryptographic commitments that constitute a valid unit of the chain. A block consists of a header containing metadata — including the parent block hash, timestamp, nonce, and Merkle root of the transaction set — and a body containing the ordered list of transactions or state transitions. The specific fields, size limits, and serialisation rules of the block structure are defined by the network's consensus protocol and directly govern the chain's security properties, throughput, and upgrade path.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:block", "label": "Block"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:block",
+      "label": "Block"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
-      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
-      {"@id": "urn:ngm:class:transaction", "label": "Transaction"}
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:block-size", "label": "Block Size"},
-      {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      },
+      {
+        "@id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +88,3 @@ public: true
   - Block structure variations across networks reflect different engineering trade-offs. Bitcoin's structure prioritises simplicity and auditability. Ethereum's blocks include additional fields for gas limits, uncle references, state root, and receipts root — reflecting its account-based execution model. Post-Merge Ethereum separates execution payloads from consensus beacon blocks, layering two distinct structures. Other chains introduce fields for validator signatures (proof-of-stake), erasure coding commitments (data availability), or parallel execution DAG references.
 
   - As of 2024–2025, block structure design is central to scaling research. Ethereum's EIP-4844 (blob transactions) extended the structure with a new transaction type carrying large binary objects for rollup data, with only the commitment stored on-chain. Bitcoin's Taproot upgrade reorganised the witness data field to improve privacy and smart contract expressiveness. Future proposals including Ethereum's Pectra upgrade and Bitcoin's next soft fork cycle continue to add fields and modify serialisation rules, demonstrating that block structure is a living specification rather than a fixed standard.
-

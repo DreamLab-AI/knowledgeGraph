@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Natural Interaction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "Natural Interaction describes human-computer interaction modalities that leverage innate human capabilities—speech, gesture, gaze, touch, and whole-body movement—rather than requiring users to learn abstract symbolic interfaces such as keyboards or command-line syntax. The goal is to reduce cognitive translation costs and make technology accessible to a broader range of users by aligning the interaction channel with the way humans naturally communicate and manipulate objects in the physical world. Natural interaction is foundational to spatial computing, mixed reality, and embodied AI systems where traditional 2D pointing devices are ergonomically or practically unsuitable.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:gesture-recognition", "label": "Gesture Recognition"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
-      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
     ]
   },
   "quality": 0.8

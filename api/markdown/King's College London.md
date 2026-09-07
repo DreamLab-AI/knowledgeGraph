@@ -1,8 +1,3 @@
----
-public: true
----
-
-# King's College London
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -163,46 +158,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:king-s-college-london:5d656bc2c16e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c35be6ba07910d6e21a5967fe9bb9a14af5c4a2d33063bb8e6893faad5810156"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[University College London]]",
-      "resolved": "urn:visionflow:linked:university-college-london",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Alan Turing Institute]]",
-      "resolved": "urn:visionflow:linked:alan-turing-institute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Entity]]",
-      "resolved": "urn:visionflow:linked:entity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Governance___Society
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -105,77 +100,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-governance-society:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:77ce26f17b96eef1c05b615c7090204eb18891fdb6e40118efef1067ae90ebfe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Community Participation]]",
-      "resolved": "urn:visionflow:linked:community-participation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cultural Respect]]",
-      "resolved": "urn:visionflow:linked:cultural-respect",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI]]",
-      "resolved": "urn:visionflow:linked:etsi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR MEC 032]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 23257]]",
-      "resolved": "urn:visionflow:linked:iso-23257",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse Standards Forum]]",
-      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Social Equity]]",
-      "resolved": "urn:visionflow:linked:social-equity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accessibility Standards]]",
-      "resolved": "urn:visionflow:owl:class:accessibility-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An [[ETSI]] governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure. This domain ensures [[Social Equity]], [[Community Participation]], [[Accessibility Standards]], and [[Cultural Respect]] in technology governance.

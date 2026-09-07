@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Learning Module
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:learning-module:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0ae2297207e22786b0bea443167e7d1de9da2f3e268250a03cbea945f8c58f5a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Structured Training]]",
-      "resolved": "urn:visionflow:linked:structured-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Educational Technology]]",
-      "resolved": "urn:visionflow:owl:class:educational-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Self-contained educational units within VR and metaverse training systems that provide structured learning experiences, including interactive simulations, assessments, and collaborative activities designed for specific skill development objectives.

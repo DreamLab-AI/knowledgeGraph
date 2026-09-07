@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Persistence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,17 +75,38 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:nft-ownership-proof", "label": "NFT Ownership Proof"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:nft-ownership-proof",
+        "label": "NFT Ownership Proof"
+      }
     ]
   },
   "provenance": {
@@ -100,62 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:persistence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:585209bffb88c952dfd7b576c77f14d206bbf484a465a7f267ca21c54fc2d1c5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentraland]]",
-      "resolved": "urn:visionflow:linked:decentraland",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Microsoft Mesh]]",
-      "resolved": "urn:visionflow:linked:microsoft-mesh",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MicrosoftMesh]]",
-      "resolved": "urn:visionflow:linked:microsoft-mesh",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[The Sandbox]]",
-      "resolved": "urn:visionflow:linked:the-sandbox",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TheSandbox]]",
-      "resolved": "urn:visionflow:linked:the-sandbox",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse|metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The foundational architectural mechanism ensuring data, state, and identity continuity across sessions, platforms, and time within metaverse ecosystems through distributed databases, blockchain ledgers, and file systems. Persistence coordinates multi-tier storage (hot caches, relational databases, object storage, blockchain) implementing various consistency models from strong (critical ownership records) to eventual (social feeds) to enable users to resume experiences seamlessly, maintain ownership verification, and preserve contextual information across platform boundaries. Applications span virtual worlds ([[Decentraland]], [[The Sandbox]]), multiplayer gaming (MMORPGs), enterprise collaboration ([[Microsoft Mesh]]), and educational simulations, with quality metrics including 11-nines durability for critical data, <5 minute recovery time objectives, and <100ms consistency lag for strong consistency guarantees.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Immutable Storage
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

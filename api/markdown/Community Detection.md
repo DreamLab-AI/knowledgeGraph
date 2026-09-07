@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Community Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Community Detection",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:graph-theory", "vc:label": "Graph Theory"},
-    {"@id": "urn:visionflow:linked:data-aggregation", "vc:label": "Data Aggregation"},
-    {"@id": "urn:visionflow:linked:network-analysis", "vc:label": "Network Analysis"},
-    {"@id": "urn:visionflow:linked:louvain-algorithm", "vc:label": "Louvain Algorithm"},
-    {"@id": "urn:visionflow:linked:leiden-algorithm", "vc:label": "Leiden Algorithm"},
-    {"@id": "urn:visionflow:linked:spectral-clustering", "vc:label": "Spectral Clustering"},
-    {"@id": "urn:visionflow:linked:label-propagation", "vc:label": "Label Propagation"},
-    {"@id": "urn:visionflow:linked:stochastic-block-model", "vc:label": "Stochastic Block Model"},
-    {"@id": "urn:visionflow:linked:graph-neural-networks", "vc:label": "Graph Neural Networks"},
-    {"@id": "urn:visionflow:linked:matrix-factorisation", "vc:label": "Matrix Factorisation"},
-    {"@id": "urn:visionflow:linked:random-walks", "vc:label": "Random Walks"},
-    {"@id": "urn:visionflow:linked:recommendation-systems", "vc:label": "Recommendation Systems"},
-    {"@id": "urn:visionflow:linked:anomaly-detection", "vc:label": "Anomaly Detection"},
-    {"@id": "urn:visionflow:linked:knowledge-graph-embedding", "vc:label": "Knowledge Graph Embedding"},
-    {"@id": "urn:visionflow:linked:social-network-analysis", "vc:label": "Social Network Analysis"},
-    {"@id": "urn:visionflow:linked:link-prediction", "vc:label": "Link Prediction"},
-    {"@id": "urn:visionflow:linked:clustering", "vc:label": "Clustering"},
-    {"@id": "urn:visionflow:linked:network-topology", "vc:label": "Network Topology"},
-    {"@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems"},
-    {"@id": "urn:visionflow:linked:blockchain-governance", "vc:label": "Blockchain Governance"},
-    {"@id": "urn:visionflow:linked:hierarchical-clustering", "vc:label": "Hierarchical Clustering"},
-    {"@id": "urn:visionflow:linked:graph-partitioning", "vc:label": "Graph Partitioning"},
-    {"@id": "urn:visionflow:linked:modularity-optimisation", "vc:label": "Modularity Optimisation"},
-    {"@id": "urn:visionflow:linked:node-embedding", "vc:label": "Node Embedding"},
-    {"@id": "urn:visionflow:linked:self-supervised-learning", "vc:label": "Self-Supervised Learning"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:graph-database", "vc:label": "Graph Database"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:fraud-detection", "vc:label": "Fraud Detection"},
-    {"@id": "urn:visionflow:linked:bioinformatics", "vc:label": "Bioinformatics"},
-    {"@id": "urn:visionflow:linked:linked-data", "vc:label": "Linked Data"},
-    {"@id": "urn:visionflow:linked:ontology", "vc:label": "Ontology"},
-    {"@id": "urn:visionflow:linked:linear-algebra", "vc:label": "Linear Algebra"},
-    {"@id": "urn:visionflow:linked:information-theory", "vc:label": "Information Theory"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:linked:temporal-graph-networks", "vc:label": "Temporal Graph Networks"},
-    {"@id": "urn:visionflow:linked:graph-convolutional-network", "vc:label": "Graph Convolutional Network"},
-    {"@id": "urn:visionflow:linked:graph-attention-network", "vc:label": "Graph Attention Network"},
-    {"@id": "urn:visionflow:linked:minimum-description-length", "vc:label": "Minimum Description Length"}
+    {
+      "@id": "urn:visionflow:linked:graph-theory",
+      "vc:label": "Graph Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-aggregation",
+      "vc:label": "Data Aggregation"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-analysis",
+      "vc:label": "Network Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:louvain-algorithm",
+      "vc:label": "Louvain Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:leiden-algorithm",
+      "vc:label": "Leiden Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:spectral-clustering",
+      "vc:label": "Spectral Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:label-propagation",
+      "vc:label": "Label Propagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-block-model",
+      "vc:label": "Stochastic Block Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-networks",
+      "vc:label": "Graph Neural Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:matrix-factorisation",
+      "vc:label": "Matrix Factorisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:random-walks",
+      "vc:label": "Random Walks"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-systems",
+      "vc:label": "Recommendation Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph-embedding",
+      "vc:label": "Knowledge Graph Embedding"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-network-analysis",
+      "vc:label": "Social Network Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:link-prediction",
+      "vc:label": "Link Prediction"
+    },
+    {
+      "@id": "urn:visionflow:linked:clustering",
+      "vc:label": "Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-topology",
+      "vc:label": "Network Topology"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:blockchain-governance",
+      "vc:label": "Blockchain Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:hierarchical-clustering",
+      "vc:label": "Hierarchical Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-partitioning",
+      "vc:label": "Graph Partitioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:modularity-optimisation",
+      "vc:label": "Modularity Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:node-embedding",
+      "vc:label": "Node Embedding"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-supervised-learning",
+      "vc:label": "Self-Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-database",
+      "vc:label": "Graph Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:fraud-detection",
+      "vc:label": "Fraud Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:bioinformatics",
+      "vc:label": "Bioinformatics"
+    },
+    {
+      "@id": "urn:visionflow:linked:linked-data",
+      "vc:label": "Linked Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-algebra",
+      "vc:label": "Linear Algebra"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal-graph-networks",
+      "vc:label": "Temporal Graph Networks"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-convolutional-network",
+      "vc:label": "Graph Convolutional Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-attention-network",
+      "vc:label": "Graph Attention Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:minimum-description-length",
+      "vc:label": "Minimum Description Length"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
@@ -247,71 +362,11 @@ public: true
       "label": "Network Partitioning"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:community-detection:9cdc7f1820e4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4f39a66cd234dfa92e58cfd3ebda12c768818d4c033f809a1060be202c0a1460"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Graph Theory]]", "resolved": "urn:visionflow:linked:graph-theory", "kind": "ResolvedLink"},
-    {"raw": "[[Data Aggregation]]", "resolved": "urn:visionflow:linked:data-aggregation", "kind": "StubLink"},
-    {"raw": "[[Network Analysis]]", "resolved": "urn:visionflow:linked:network-analysis", "kind": "ResolvedLink"},
-    {"raw": "[[Louvain Algorithm]]", "resolved": "urn:visionflow:linked:louvain-algorithm", "kind": "StubLink"},
-    {"raw": "[[Leiden Algorithm]]", "resolved": "urn:visionflow:linked:leiden-algorithm", "kind": "StubLink"},
-    {"raw": "[[Spectral Clustering]]", "resolved": "urn:visionflow:linked:spectral-clustering", "kind": "StubLink"},
-    {"raw": "[[Label Propagation]]", "resolved": "urn:visionflow:linked:label-propagation", "kind": "StubLink"},
-    {"raw": "[[Stochastic Block Model]]", "resolved": "urn:visionflow:linked:stochastic-block-model", "kind": "StubLink"},
-    {"raw": "[[Graph Neural Networks]]", "resolved": "urn:visionflow:linked:graph-neural-networks", "kind": "ResolvedLink"},
-    {"raw": "[[Matrix Factorisation]]", "resolved": "urn:visionflow:linked:matrix-factorisation", "kind": "StubLink"},
-    {"raw": "[[Random Walks]]", "resolved": "urn:visionflow:linked:random-walks", "kind": "StubLink"},
-    {"raw": "[[Recommendation Systems]]", "resolved": "urn:visionflow:linked:recommendation-systems", "kind": "StubLink"},
-    {"raw": "[[Anomaly Detection]]", "resolved": "urn:visionflow:linked:anomaly-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Graph Embedding]]", "resolved": "urn:visionflow:linked:knowledge-graph-embedding", "kind": "StubLink"},
-    {"raw": "[[Social Network Analysis]]", "resolved": "urn:visionflow:linked:social-network-analysis", "kind": "StubLink"},
-    {"raw": "[[Link Prediction]]", "resolved": "urn:visionflow:linked:link-prediction", "kind": "ResolvedLink"},
-    {"raw": "[[Clustering]]", "resolved": "urn:visionflow:linked:clustering", "kind": "StubLink"},
-    {"raw": "[[Network Topology]]", "resolved": "urn:visionflow:linked:network-topology", "kind": "StubLink"},
-    {"raw": "[[Distributed Systems]]", "resolved": "urn:visionflow:linked:distributed-systems", "kind": "ResolvedLink"},
-    {"raw": "[[Blockchain Governance]]", "resolved": "urn:visionflow:linked:blockchain-governance", "kind": "StubLink"},
-    {"raw": "[[Hierarchical Clustering]]", "resolved": "urn:visionflow:linked:hierarchical-clustering", "kind": "StubLink"},
-    {"raw": "[[Graph Partitioning]]", "resolved": "urn:visionflow:linked:graph-partitioning", "kind": "StubLink"},
-    {"raw": "[[Modularity Optimisation]]", "resolved": "urn:visionflow:linked:modularity-optimisation", "kind": "StubLink"},
-    {"raw": "[[Node Embedding]]", "resolved": "urn:visionflow:linked:node-embedding", "kind": "StubLink"},
-    {"raw": "[[Self-Supervised Learning]]", "resolved": "urn:visionflow:linked:self-supervised-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Database]]", "resolved": "urn:visionflow:linked:graph-database", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:linked:knowledge-graph", "kind": "ResolvedLink"},
-    {"raw": "[[Fraud Detection]]", "resolved": "urn:visionflow:linked:fraud-detection", "kind": "StubLink"},
-    {"raw": "[[Bioinformatics]]", "resolved": "urn:visionflow:linked:bioinformatics", "kind": "StubLink"},
-    {"raw": "[[Linked Data]]", "resolved": "urn:visionflow:linked:linked-data", "kind": "ResolvedLink"},
-    {"raw": "[[Ontology]]", "resolved": "urn:visionflow:linked:ontology", "kind": "StubLink"},
-    {"raw": "[[Linear Algebra]]", "resolved": "urn:visionflow:linked:linear-algebra", "kind": "ResolvedLink"},
-    {"raw": "[[Information Theory]]", "resolved": "urn:visionflow:linked:information-theory", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Variational Autoencoder]]", "resolved": "urn:visionflow:linked:variational-autoencoder", "kind": "StubLink"},
-    {"raw": "[[Temporal Graph Networks]]", "resolved": "urn:visionflow:linked:temporal-graph-networks", "kind": "StubLink"},
-    {"raw": "[[Graph Convolutional Network]]", "resolved": "urn:visionflow:linked:graph-convolutional-network", "kind": "StubLink"},
-    {"raw": "[[Graph Attention Network]]", "resolved": "urn:visionflow:linked:graph-attention-network", "kind": "StubLink"},
-    {"raw": "[[Minimum Description Length]]", "resolved": "urn:visionflow:linked:minimum-description-length", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

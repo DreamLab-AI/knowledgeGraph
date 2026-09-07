@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -198,52 +193,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-registry:3d916499376b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9aec0f0d0f93e90b49c528c01345e606b4c709993194a42d73ac80533344d052"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Versioning]]",
-      "resolved": "urn:visionflow:linked:data-versioning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Deployment]]",
-      "resolved": "urn:visionflow:linked:model-deployment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Serving]]",
-      "resolved": "urn:visionflow:linked:model-serving",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MLOps]]",
-      "resolved": "urn:visionflow:linked:mlops",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feature Store]]",
-      "resolved": "urn:visionflow:linked:feature-store",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A model registry is a system for cataloguing trained machine learning models with their versions, metadata and lifecycle stage. It provides a central record that links a model to its training data, metrics and deployment status.

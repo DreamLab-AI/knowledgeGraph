@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Trezor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -216,46 +211,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:trezor:b53952139312",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:77d660b9091aa590609077160a57be402bfb67c30790e62848c910273cce0d72"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Private Key]]",
-      "resolved": "urn:visionflow:linked:private-key",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Custody]]",
-      "resolved": "urn:visionflow:linked:self-custody",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Key Management]]",
-      "resolved": "urn:visionflow:linked:key-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cold Storage]]",
-      "resolved": "urn:visionflow:linked:cold-storage",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Trezor is a line of open-source [[Hardware Wallet]] devices produced by SatoshiLabs (Prague, Czech Republic) that store [[Private Key]] material in a tamper-resistant, offline physical device, enabling [[Self-Custody]] of [[Cryptocurrency]] without ever exposing cryptographic secrets to an internet-connected host. The device implements [[BIP32]] hierarchical deterministic derivation, [[BIP39]] mnemonic seed phrases, and [[BIP44]] multi-account structures, and performs all [[Transaction Signing]] operations internally so that the private key never traverses the USB or Bluetooth channel. Launched in 2014 as the world's first consumer hardware wallet, Trezor is a foundational reference in [[Cold Storage]] security and [[Key Management]] for decentralised assets.
 
@@ -278,7 +233,7 @@ public: true
   - **[[Open-Source Firmware]]**: Both firmware and bootloader are publicly auditable; firmware updates are signed and verified on-device to prevent downgrade attacks.
 
 - ### Mechanisms
-  - **[[Hierarchical Deterministic Wallet]] (HD Wallet)**: BIP32 tree of keys derived from a single [[Master Seed]]; each account, coin type, and address index is a separate derivation path (e.g. `m/44'/0'/0'/0/0` for Bitcoin mainnet).
+  - **[[Hierarchical Deterministic Wallet]] (HD Wallet)**: BIP32 tree of keys derived from a single [[Master Seed]]; each account, coin type, and address [private] is a separate derivation path (e.g. `m/44'/0'/0'/0/0` for Bitcoin mainnet).
   - **[[Transaction Signing]] Flow**: Host application constructs an unsigned transaction → serialises it → passes to Trezor via HID/WebUSB → device parses and displays recipient and amount → user confirms physical button press → device signs with the relevant derived [[Private Key]] → returns DER-encoded signature to host → host broadcasts to the [[Blockchain]] network.
   - **Firmware Verification**: On boot, the bootloader checks a cryptographic signature over the firmware image; tampering voids the hardware seal indicator and is flagged on-screen.
   - **[[Supply Chain Security]]**: SatoshiLabs ships devices in tamper-evident packaging; the bootloader verifies firmware on first boot so that even a compromised supply chain device would be detectable before use.

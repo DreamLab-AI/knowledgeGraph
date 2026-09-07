@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Small Language Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "small-language-models",
   "title": "Small Language Models",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Speciation", "Task-Specific AI"],
+  "vc:outboundWikilinks": [
+    "AI Speciation",
+    "Task-Specific AI"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:model-capacity", "label": "Model Capacity"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

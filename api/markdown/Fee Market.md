@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fee Market
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,25 +82,58 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+      {
+        "@id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
-      {"@id": "urn:ngm:class:block-size", "label": "Block Size"}
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:miner", "label": "Miner"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+      {
+        "@id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"},
-      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {
+        "@id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -116,62 +144,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:fee-market:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:56fa68c08738446256069459c05220271aea10eb2479597b014abbcb8c153f75"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Fee Market is the mechanism by which blockchain participants competitively bid transaction fees to have their transactions included in blocks, with miners or validators selecting transactions that maximise their revenue given limited block capacity. Fee markets emerge from the interplay between fixed block-space supply and variable transaction demand, producing dynamic price discovery that signals network congestion. Ethereum's EIP-1559 introduced a protocol-level base fee that adjusts algorithmically each block, partially burning fees to reduce token supply and adding a tip mechanism for priority inclusion.

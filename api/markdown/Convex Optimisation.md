@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Convex Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -265,7 +260,7 @@ public: true
       }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -273,127 +268,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:convex-optimisation:cb3112e93094",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ad14db76317906bcda2611cf705aa4ee1016c50df25e4af0773da6b97ff54132"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Optimisation]]",
-      "resolved": "urn:visionflow:linked:optimisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Numerical Methods]]",
-      "resolved": "urn:visionflow:linked:numerical-methods",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Functional Analysis]]",
-      "resolved": "urn:visionflow:linked:functional-analysis",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Linear Programming]]",
-      "resolved": "urn:visionflow:linked:linear-programming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quadratic Programming]]",
-      "resolved": "urn:visionflow:linked:quadratic-programming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semidefinite Programming]]",
-      "resolved": "urn:visionflow:linked:semidefinite-programming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gradient Descent]]",
-      "resolved": "urn:visionflow:linked:gradient-descent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Support Vector Machine]]",
-      "resolved": "urn:visionflow:linked:support-vector-machine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Duality Theory]]",
-      "resolved": "urn:visionflow:linked:duality-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[KKT Conditions]]",
-      "resolved": "urn:visionflow:linked:kkt-conditions",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LASSO Regression]]",
-      "resolved": "urn:visionflow:linked:lasso-regression",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Portfolio Optimisation]]",
-      "resolved": "urn:visionflow:linked:portfolio-optimisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compressed Sensing]]",
-      "resolved": "urn:visionflow:linked:compressed-sensing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Operations Research]]",
-      "resolved": "urn:visionflow:linked:operations-research",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stochastic Optimisation]]",
-      "resolved": "urn:visionflow:linked:stochastic-optimisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Signal Processing]]",
-      "resolved": "urn:visionflow:linked:signal-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimal Control]]",
-      "resolved": "urn:visionflow:linked:optimal-control",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Convex optimisation is the mathematical discipline concerned with minimising [[Convex Function]]s over [[Convex Set]]s, grounded in the fundamental structural property that every local minimum of a convex objective over a convex feasible region is simultaneously a global minimum — a tractability guarantee entirely absent in general [[Non-Convex Optimisation]]. This single property licenses a rich class of provably efficient algorithms — including [[Interior-Point Method]]s (polynomial-time barrier methods due to Karmarkar, 1984, and Nesterov–Nemirovskii, 1994), [[Gradient Descent]] and its Nesterov-accelerated variant achieving O(1/k²) convergence, [[Proximal Gradient Method]]s for composite non-smooth objectives, and the [[Alternating Direction Method of Multipliers]] (ADMM) for distributed large-scale settings — all of which can certify or approximate globally optimal solutions. The theory is grounded in [[Convex Analysis]] (Rockafellar, 1970), [[Duality Theory]] (Lagrangian and Fenchel duality), and [[KKT Conditions]] (Karush, 1939; Kuhn–Tucker, 1951), providing both algorithmic guarantees and dual certificates of optimality. Canonical problem families — [[Linear Programming]], [[Quadratic Programming]], [[Second-Order Cone Programming]], and [[Semidefinite Programming]] — form a hierarchy of increasing expressive power, with well-understood complexity and production-grade solvers (MOSEK, Gurobi, CVXPY/SCS, OSQP). Convex optimisation is foundational to [[Machine Learning]] (training [[Support Vector Machine]]s, [[LASSO Regression]], [[Logistic Regression]]), [[Signal Processing]] ([[Compressed Sensing]], total variation denoising), [[Optimal Control]] (Model Predictive Control), finance ([[Portfolio Optimisation]]), and [[Operations Research]] (network flow, resource allocation). Its relationship to [[Deep Learning]] and [[Reinforcement Learning]] is indirect but profound: while neural network training operates in a non-convex landscape, convergence analysis, regularisation theory, and optimisation algorithm design all borrow heavily from the convex toolkit. The field is considered mathematically mature, with the Boyd–Vandenberghe textbook (2004) serving as the universal reference, and active research frontiers in 2024-2026 centring on stochastic interior-point methods for large-scale ML, distributed convex optimisation for federated learning, differentiable convex programming for end-to-end learning, and embedded real-time solvers for autonomous systems.

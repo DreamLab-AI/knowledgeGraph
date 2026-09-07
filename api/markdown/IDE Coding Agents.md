@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IDE Coding Agents
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,47 +7,170 @@ public: true
   "title": "IDE Coding Agents",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
-    {"@id": "urn:visionflow:linked:terminal-coding-agents", "vc:label": "Terminal Coding Agents"},
-    {"@id": "urn:visionflow:linked:harness-configuration-packs", "vc:label": "Harness Configuration Packs"},
-    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
-    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:tool-call-loop", "vc:label": "Tool Call Loop"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:autonomous-coding", "vc:label": "Autonomous Coding"},
-    {"@id": "urn:visionflow:linked:browser-automation", "vc:label": "Browser Automation"},
-    {"@id": "urn:visionflow:linked:computer-use", "vc:label": "Computer Use"},
-    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks"},
-    {"@id": "urn:visionflow:linked:plan-and-execute-pattern", "vc:label": "Plan-and-Execute Pattern"},
-    {"@id": "urn:visionflow:linked:re-act-pattern", "vc:label": "ReAct Pattern"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:hook-system", "vc:label": "Hook System"},
-    {"@id": "urn:visionflow:linked:code-review", "vc:label": "Code Review"},
-    {"@id": "urn:visionflow:linked:software-engineering", "vc:label": "Software Engineering"},
-    {"@id": "urn:visionflow:linked:ai-agent-coordination", "vc:label": "AI Agent Coordination"},
-    {"@id": "urn:visionflow:linked:multi-agent-collaboration", "vc:label": "Multi-Agent Collaboration"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:observability-stack", "vc:label": "Observability Stack"},
-    {"@id": "urn:visionflow:linked:structured-output", "vc:label": "Structured Output"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain-of-Thought"},
-    {"@id": "urn:visionflow:linked:tree-of-thoughts", "vc:label": "Tree of Thoughts"},
-    {"@id": "urn:visionflow:linked:prompt-template", "vc:label": "Prompt Template"},
-    {"@id": "urn:visionflow:linked:tool-registry", "vc:label": "Tool Registry"},
-    {"@id": "urn:visionflow:linked:json-rpc", "vc:label": "JSON-RPC"},
-    {"@id": "urn:visionflow:linked:coding-assistant", "vc:label": "Coding Assistant"},
-    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
-    {"@id": "urn:visionflow:linked:agent-memory-layers", "vc:label": "Agent Memory Layers"},
-    {"@id": "urn:visionflow:linked:agent-event-stream", "vc:label": "Agent Event Stream"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
-    {"@id": "urn:visionflow:linked:agent-to-agent-protocol", "vc:label": "Agent-to-Agent Protocol"}
+    {
+      "@id": "urn:visionflow:linked:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:terminal-coding-agents",
+      "vc:label": "Terminal Coding Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:harness-configuration-packs",
+      "vc:label": "Harness Configuration Packs"
+    },
+    {
+      "@id": "urn:visionflow:linked:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-call-loop",
+      "vc:label": "Tool Call Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-coding",
+      "vc:label": "Autonomous Coding"
+    },
+    {
+      "@id": "urn:visionflow:linked:browser-automation",
+      "vc:label": "Browser Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-use",
+      "vc:label": "Computer Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-evaluation-benchmarks",
+      "vc:label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks",
+      "vc:label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:plan-and-execute-pattern",
+      "vc:label": "Plan-and-Execute Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:hook-system",
+      "vc:label": "Hook System"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-review",
+      "vc:label": "Code Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-engineering",
+      "vc:label": "Software Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-coordination",
+      "vc:label": "AI Agent Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-collaboration",
+      "vc:label": "Multi-Agent Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability-stack",
+      "vc:label": "Observability Stack"
+    },
+    {
+      "@id": "urn:visionflow:linked:structured-output",
+      "vc:label": "Structured Output"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain-of-Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:tree-of-thoughts",
+      "vc:label": "Tree of Thoughts"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-template",
+      "vc:label": "Prompt Template"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-registry",
+      "vc:label": "Tool Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-rpc",
+      "vc:label": "JSON-RPC"
+    },
+    {
+      "@id": "urn:visionflow:linked:coding-assistant",
+      "vc:label": "Coding Assistant"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory-layers",
+      "vc:label": "Agent Memory Layers"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-event-stream",
+      "vc:label": "Agent Event Stream"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol",
+      "vc:label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-to-agent-protocol",
+      "vc:label": "Agent-to-Agent Protocol"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -75,58 +193,83 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:tool-call-loop", "label": "Tool Call Loop"},
-      {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan-and-Execute Pattern"},
-      {"@id": "urn:ngm:class:hook-system", "label": "Hook System"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+      {
+        "@id": "urn:ngm:class:tool-call-loop",
+        "label": "Tool Call Loop"
+      },
+      {
+        "@id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:hook-system",
+        "label": "Hook System"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding"},
-      {"@id": "urn:ngm:class:browser-automation", "label": "Browser Automation"},
-      {"@id": "urn:ngm:class:computer-use", "label": "Computer Use"},
-      {"@id": "urn:ngm:class:multi-agent-collaboration", "label": "Multi-Agent Collaboration"}
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "@id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-collaboration",
+        "label": "Multi-Agent Collaboration"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"},
-      {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan-and-Execute Pattern"}
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:terminal-coding-agents", "label": "Terminal Coding Agents"},
-      {"@id": "urn:ngm:class:harness-configuration-packs", "label": "Harness Configuration Packs"},
-      {"@id": "urn:ngm:class:agent-evaluation-benchmarks", "label": "Agent Evaluation Benchmarks"}
+      {
+        "@id": "urn:ngm:class:terminal-coding-agents",
+        "label": "Terminal Coding Agents"
+      },
+      {
+        "@id": "urn:ngm:class:harness-configuration-packs",
+        "label": "Harness Configuration Packs"
+      },
+      {
+        "@id": "urn:ngm:class:agent-evaluation-benchmarks",
+        "label": "Agent Evaluation Benchmarks"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "vc:termId": "AI-9911",
   "vc:schemaVersion": 2
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ide-coding-agents:a1b2c3d4e5f6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ide-coding-agents"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Agent Harness]]", "resolved": "urn:visionflow:linked:agent-harness", "kind": "ResolvedLink"},
-    {"raw": "[[Terminal Coding Agents]]", "resolved": "urn:visionflow:linked:terminal-coding-agents", "kind": "ResolvedLink"},
-    {"raw": "[[Harness Configuration Packs]]", "resolved": "urn:visionflow:linked:harness-configuration-packs", "kind": "ResolvedLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Autonomous Coding]]", "resolved": "urn:visionflow:linked:autonomous-coding", "kind": "StubLink"},
-    {"raw": "[[Plan-and-Execute Pattern]]", "resolved": "urn:visionflow:linked:plan-and-execute-pattern", "kind": "StubLink"},
-    {"raw": "[[ReAct Pattern]]", "resolved": "urn:visionflow:linked:re-act-pattern", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "StubLink"}
-  ]
 }
 ```
 
@@ -250,7 +393,7 @@ public: true
   - ## About
     IDE Coding Agents represent the IDE-native branch of the broader [[Agent Harness]] taxonomy, distinguished from [[Terminal Coding Agents]] by their first-class integration into the graphical workspace where developers spend most of their time. Whereas terminal agents (Aider, Goose, opencode, Gemini CLI) operate through textual CLI interaction and require the developer to mentally bridge between terminal and editor, IDE coding agents present their reasoning, proposed edits, cost metrics, and approval dialogs inside the IDE sidebar — making the agent's planning and execution transparent without context-switching. This architectural choice has significant adoption consequences: Cline accumulated over five million VS Code Marketplace installs by mid-2026, becoming the fastest-growing AI open-source project in GitHub's 2025 Octoverse report with 58,000 GitHub stars, precisely because VS Code is where most professional developers already live. The gravitational pull of IDE-native agents reflects a deeper insight: the fewer the context switches a developer must perform, the lower the cognitive overhead of human-in-the-loop supervision, and therefore the higher the practical safety ceiling for autonomous agent actions. An agent that displays its proposed file-diff directly alongside the current file content can be reviewed in seconds; an agent that prints its proposed changes to a separate terminal requires the developer to re-establish context before evaluating the proposal.
 
-    The defining technical characteristic of this class is the plan-then-act loop with structured approval gates. In Plan mode, the [[Large Language Model]] reads the repository, reasons over the task specification, and produces a structured plan — typically a numbered sequence of file operations and shell commands — without yet executing anything. This phase is substantially cheaper in token terms than Act mode and gives the developer an auditable artefact to review, reject, or modify before execution begins. The plan itself is a first-class product of the IDE coding agent: it can be saved, shared across team members as a work-in-progress task specification, and revisited when a session is resumed after a break. In Act mode the agent serialises the plan into tool calls: file-read, file-write, bash-execute, browser-navigate and browser-screenshot (via the [[Computer Use]] abstraction), and [[Model Context Protocol]]-connected custom tools. Each tool call is mediated by the harness, which maintains approval-gate state (manual, semi-auto, or full-auto), displays file diffs before applying them, logs all actions to a session transcript, and exposes a running cost/token counter. The [[Model Context Protocol]] (MCP) layer acts as the extensibility spine: any external system — a CI API, a vector database, a code search index — can be exposed as an MCP server, and the IDE agent discovers and invokes it through a uniform [[JSON-RPC]] tool-call interface without bespoke integration code. This design separates the IDE coding agent from [[Internal AI Harness]] and [[External AI Harness]] architectures: rather than embedding model inference inside the application runtime or routing it through a service mesh, the IDE coding agent provides a human-supervised scaffolding layer that governs when and how model inference results are applied to the local filesystem and execution environment.
+    The defining technical characteristic of this class is the plan-then-act loop with structured approval gates. In Plan mode, the [[Large Language Model]] reads the repository, reasons over the task specification, and produces a structured plan — typically a numbered sequence of file operations and shell commands — without yet executing anything. This phase is substantially cheaper in token terms than Act mode and gives the developer an auditable artefact to review, reject, or modify before execution begins. The plan itself is a first-class product of the IDE coding agent: it can be saved, shared across team members as a work-in-progress task specification, and revisited when a session is resumed after a break. In Act mode the agent serialises the plan into tool calls: file-read, file-write, bash-execute, browser-navigate and browser-screenshot (via the [[Computer Use]] abstraction), and [[Model Context Protocol]]-connected custom tools. Each tool call is mediated by the harness, which maintains approval-gate state (manual, semi-auto, or full-auto), displays file diffs before applying them, logs all actions to a session transcript, and exposes a running cost/token counter. The [[Model Context Protocol]] (MCP) layer acts as the extensibility spine: any external system — a CI API, a vector database, a code search [private] — can be exposed as an MCP server, and the IDE agent discovers and invokes it through a uniform [[JSON-RPC]] tool-call interface without bespoke integration code. This design separates the IDE coding agent from [[Internal AI Harness]] and [[External AI Harness]] architectures: rather than embedding model inference inside the application runtime or routing it through a service mesh, the IDE coding agent provides a human-supervised scaffolding layer that governs when and how model inference results are applied to the local filesystem and execution environment.
 
     The class has undergone significant market consolidation since 2025. Roo Code, which forked Cline to add multi-agent orchestration modes and was valued for large-codebase handling, was archived in May 2026 after the founding team pivoted to a new product (Roomote). Its community and configuration format were absorbed by Kilo Code, an actively maintained fork that preserves `.roomodes` and `.roo/rules/` configuration files and extends support to JetBrains IDEs, CLI invocation, and a cloud agent mode. OpenHands (formerly OpenDevin), with 68,000 GitHub stars and $18.8M in Series A funding from Madrona, Menlo Ventures, and Fujitsu Ventures, occupies the enterprise segment — an autonomous agent platform deployable on-premise or as a managed service rather than a pure IDE extension. The claw-code-agent family, evaluated through the Claw-SWE-Bench benchmark (arxiv:2606.12344), applies a harness adapter layer over OpenClaw-style agents to achieve 73.4% Pass@1 on the 350-instance multilingual benchmark — demonstrating that adapter and harness design can be as decisive for benchmark performance as the underlying model. This finding has re-oriented the field's attention from model benchmarking toward harness benchmarking: the agent's ability to navigate a repository, extract relevant context, and construct a valid patch is shaped as much by the ACI (Agent-Computer Interface) tools it is given as by the model's raw reasoning capability.
 

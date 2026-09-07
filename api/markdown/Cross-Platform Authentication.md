@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Platform Authentication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Cross-platform authentication is the verification of a user's identity in a way that is valid across multiple platforms, devices, or virtual worlds without re-registration. It uses federated identity, single sign-on, and portable credentials so that one verified identity unlocks access everywhere. It is a foundational requirement for interoperable avatars and multiverse experiences.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication", "label": "Authentication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:multiverse", "label": "Multiverse"}, {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:multiverse",
+        "label": "Multiverse"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ]
   },
   "quality": 0.72
 }

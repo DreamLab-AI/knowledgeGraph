@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intelligent Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Intelligent automation is the combination of process automation with artificial intelligence so that workflows can handle unstructured inputs, make context-dependent decisions, and adapt over time. It extends rule-based robotic process automation with machine learning, natural language processing, and computer vision to automate tasks that previously required human judgement. It is widely applied to back-office operations, customer service, and document-intensive processes.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "quality": 0.72

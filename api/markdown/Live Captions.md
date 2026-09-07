@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Live Captions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,13 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:webinar-broadcast", "label": "Webinar Broadcast"},
-      {"@id": "urn:ngm:class:noise-suppression", "label": "Noise Suppression"}
+      {
+        "@id": "urn:ngm:class:webinar-broadcast",
+        "label": "Webinar Broadcast"
+      },
+      {
+        "@id": "urn:ngm:class:noise-suppression",
+        "label": "Noise Suppression"
+      }
     ]
   },
   "quality": 0.7

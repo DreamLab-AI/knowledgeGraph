@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TC-0080-Team-Coordination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,42 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tc-0080-team-coordination:2d5731e128f1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:63a6983f7696ce77fd73627d91bd2f3da5c9c9b91d207bca5e22870bb1d49a2d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collaboration]]",
-      "resolved": "urn:visionflow:linked:collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Remote Collaboration]]",
-      "resolved": "urn:visionflow:linked:remote-collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Project Management]]",
-      "resolved": "urn:visionflow:linked:project-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Team coordination is the management of dependencies between people, tasks and resources so that members of a group act in a consistent and timely way towards shared objectives.

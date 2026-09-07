@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Hash Time Locked Contract
----
-
-# Hash Time-Locked Contract
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -275,7 +268,7 @@ aliases:
 
 - ### Current Landscape (2026)
   - The dominant 2024-2026 trend is migration from HTLCs to Point Time-Locked Contracts (PTLCs), which swap the shared SHA-256 hash lock for per-hop elliptic-curve points via Schnorr adaptor signatures; this decorrelates routing hops and defeats wormhole attacks, but as of early 2026 PTLCs are still at the proposal stage with no finalised BOLT specification, gated on Taproot-channel and MuSig2 rollout across LND, Core Lightning and Eclair.
-  - Security research consolidated the replacement-cycling attack against Lightning HTLCs first disclosed by Antoine Riard in 2023: Bitcoin Optech Newsletter #339 (January 2025) reported a further miner-exploitation variant, alongside a separate LDK claim-processing vulnerability fixed in LDK 0.1 where batched HTLC resolution could be stalled or, in the 0.1-beta logic, allow theft.
+  - Security research consolidated the replacement-cycling attack against Lightning HTLCs first disclosed by Antoine Riard in 2023: Bitcoin Optech Newsletter #339 (January 2025) reported a further miner-exploitation variant, alongside a separate LDK claim-processing vulnerability fixed in LDK 0.1 where batched HTLC resolution [private] be stalled or, in the 0.1-beta logic, allow theft.
   - Protocol-level hardening landed in the spec and implementations: BOLTs #1233 (2025) recommends never failing an HTLC upstream once the node knows the preimage, and LDK #3556 proactively fails HTLCs backwards near expiry even before upstream confirmation, with Core Lightning #7190 adding chainlag for safe payments during block sync.
   - Cross-chain HTLC bridges scaled in production: Garden Finance operates a Bitcoin bridge spanning five chains simultaneously (EVM/Arbitrum, Starknet, Sui and Solana) using an off-chain solver to coordinate HTLC legs, while Fiber's Cross-Chain Hub (CCH) atomically swaps CKB-wrapped BTC against native Lightning BTC under a shared payment hash.
   - Academic work advanced HTLC theory and alternatives: Clark et al. (ISAAC 2024) proved a swap digraph admits an atomic HTLC-based protocol if and only if it is a "reuniclus" graph, and a March 2025 arXiv white paper (arXiv:2503.12719) demonstrated PTLC-based Bitcoin-Ethereum atomic swaps settling in roughly 15 seconds versus the up-to-60-minute HTLC timeout windows.

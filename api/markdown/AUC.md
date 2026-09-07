@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AUC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,92 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:auc:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:662e6afb5a58c0423505509dd3d6c3b05dd50a82ed594960a0f458da958ef9bc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Classification]]",
-      "resolved": "urn:visionflow:linked:classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[False Positive Rate]]",
-      "resolved": "urn:visionflow:linked:false-positive-rate",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 25059]]",
-      "resolved": "urn:visionflow:linked:iso-iec-25059",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Comparison]]",
-      "resolved": "urn:visionflow:linked:model-comparison",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI RMF]]",
-      "resolved": "urn:visionflow:linked:nist-ai-rmf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Precision-Recall Curve]]",
-      "resolved": "urn:visionflow:linked:precision-recall-curve",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ranking Metric]]",
-      "resolved": "urn:visionflow:linked:ranking-metric",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Threshold Selection]]",
-      "resolved": "urn:visionflow:linked:threshold-selection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[True Positive Rate]]",
-      "resolved": "urn:visionflow:linked:true-positive-rate",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Performance]]",
-      "resolved": "urn:visionflow:owl:class:model-performance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ROC Curve]]",
-      "resolved": "urn:visionflow:owl:class:roc-curve",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Area Under the Curve (AUC), specifically the area under the Receiver Operating Characteristic (ROC) curve (ROC-AUC or AUROC), is a single scalar performance metric for binary classifiers representing the probability that the model ranks a randomly chosen positive instance higher than a randomly chosen negative instance, providing threshold-independent assessment of a classifier's discriminative ability with values ranging from 0 to 1, where 0.5 indicates random guessing, 1.0 represents perfect classification, and values above 0.5 indicate better-than-random performance.
@@ -392,7 +301,7 @@ public: true
 		  **Relationship to Other Statistics:**
 		  - Equivalent to Wilcoxon-Mann-Whitney U statistic (normalized)
 		  - Related to Gini coefficient: Gini = 2×AUC - 1
-		  - Connected to concordance index (C-statistic) in survival analysis
+		  - Connected to concordance [private] (C-statistic) in survival analysis
 
 		  ## Related Terms
 

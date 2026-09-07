@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise Ethereum Alliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -149,7 +144,7 @@ public: true
   - The EEA's technical work centres on bridging [[Enterprise Smart Contracts]] with the governance and privacy needs of regulated industries, producing specifications that Hyperledger Besu, Quorum (now ConsenSys Quorum), and other enterprise Ethereum clients implement. [[Enterprise Token Standards]] such as the Token Taxonomy Framework (TTF) emerged from EEA working groups and are now used to classify and design tokens for financial instruments. [[Blockchain Interoperability]] is a priority focus: the EEA's Crosschain Interoperability work defines how assets and messages cross between different Ethereum-based networks without custodial bridges. [[Regulatory Compliance]] requirements from GDPR, MiFID II, and DORA shaped EEA specifications for private transaction management and data residency controls within [[Enterprise Blockchain Architecture]].
 
 - ### Content
-  - The Enterprise Ethereum Alliance was launched at a press event in New York in February 2017, assembling thirty founding members who shared a conviction that Ethereum's smart contract capabilities could serve enterprise use cases but required additional privacy, performance, and governance features. The founding vision was to create a permissioned overlay layer that preserved compatibility with the Ethereum public mainnet while meeting enterprise requirements for transaction confidentiality and throughput.
+  - The Enterprise Ethereum Alliance was launched at a press event in New York in February 2017, assembling thirty founding members who shared a conviction that Ethereum's smart contract capabilities [private] serve enterprise use cases but required additional privacy, performance, and governance features. The founding vision was to create a permissioned overlay layer that preserved compatibility with the Ethereum public mainnet while meeting enterprise requirements for transaction confidentiality and throughput.
 
   - The EEA Client Specification, published in successive versions from 2018, defines a conformance test suite that enterprise Ethereum client implementations must pass. Key additions beyond the public Ethereum protocol include on-chain permissioning contracts (who may transact and deploy), private transaction managers (Tessera, Orion) that distribute encrypted payloads only to transaction participants, and pluggable consensus mechanisms suited to known-validator environments such as IBFT 2.0 and QBFT.
 

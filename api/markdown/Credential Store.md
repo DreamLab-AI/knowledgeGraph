@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Credential Store
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A credential store is the component within an identity system that holds user identifiers, secrets, and account attributes used during authentication. Implemented as a directory, database, or secrets vault, it is queried by an identity provider to validate sign-in attempts and issue tokens. Its integrity and confidentiality are critical to the security of the surrounding identity infrastructure.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"}, {"@id": "urn:ngm:class:authentication", "label": "Authentication"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ]
   },
   "quality": 0.72
 }

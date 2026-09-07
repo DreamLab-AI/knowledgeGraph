@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitcoin Script
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -310,7 +305,7 @@ public: true
   - 2. Spark (2026). OP_CAT and the Great Covenant Debate: Bitcoin's Most Contentious Upgrade. https://www.spark.money/research/bitcoin-op-cat-covenant-debate
   - 3. Bitcoin Optech (2025). Newsletter #374 — Draft BIPs for Script Restoration (tapscript v2). https://bitcoinops.org/en/newsletters/2025/10/03/
   - 4. Bitcoin Optech (2025). Newsletter #385: 2025 Year-in-Review Special. https://bitcoinops.org/en/newsletters/2025/12/19/
-  - 5. BlockEden (2026). Bitcoin's Covenant Renaissance: How OP_CTV, LNHANCE, OP_CAT, and BitVM2 Could Reshape Bitcoin. https://blockeden.xyz/blog/2026/04/21/bitcoin-covenant-renaissance-op-ctv-lnhance-cat-bitvm2/
+  - 5. BlockEden (2026). Bitcoin's Covenant Renaissance: How OP_CTV, LNHANCE, OP_CAT, and BitVM2 [private] Reshape Bitcoin. https://blockeden.xyz/blog/2026/04/21/bitcoin-covenant-renaissance-op-ctv-lnhance-cat-bitvm2/
 
 - ### Provenance
   - sources:: Satoshi Nakamoto, Bitcoin: A Peer-to-Peer Electronic Cash System (2008); Bitcoin Core documentation; BIP 11, 16, 65, 112, 141, 340, 341, 342; Bitcoin Optech newsletter series.

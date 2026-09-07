@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Iot Security
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:iot-security", "@type":"Page", "title":"Iot Security", "vc:slug":"iot-security", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:iot-security",
+  "@type": "Page",
+  "title": "Iot Security",
+  "vc:slug": "iot-security",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

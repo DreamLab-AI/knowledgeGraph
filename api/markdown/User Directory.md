@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Directory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A user directory is a centralised repository that stores and organises identity records, attributes and credentials for the principals of a system, supporting authentication and authorisation queries. Common implementations include LDAP directories, Active Directory and cloud identity stores, which identity providers consume to validate and describe users. It is a core component of identity and access management infrastructure.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"}, {"@id": "urn:ngm:class:identity-provider-id-p", "label": "Identity Provider (IdP)"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider-id-p",
+        "label": "Identity Provider (IdP)"
+      }
+    ]
   },
   "quality": 0.72
 }

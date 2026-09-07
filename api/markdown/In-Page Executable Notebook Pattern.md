@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Jupyter like behaviour within a page]]
-# In-Page Executable Notebook Pattern
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,14 +42,26 @@ elevatedFrom:: [[Jupyter like behaviour within a page]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:python", "label": "Python"},
-      {"@id": "urn:ngm:class:script", "label": "Script"}
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:script",
+        "label": "Script"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "quality": 0.35,
@@ -66,26 +72,6 @@ elevatedFrom:: [[Jupyter like behaviour within a page]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:jupyter-like-behaviour-within-a-page:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3a67b6249fbf7b58fb3ed263275af3f1a91636b6e081e18d608b7b4eadd73b6b"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A knowledge-management pattern that embeds executable code cells with shared global state within a page or document, mimicking the interactive notebook paradigm of Jupyter. Code blocks execute in sequence against a common variable scope, enabling data loading, transformation, and display without leaving the note-taking environment.

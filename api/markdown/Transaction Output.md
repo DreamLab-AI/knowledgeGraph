@@ -1,38 +1,116 @@
----
-public: true
----
-
-# Transaction Output
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:transaction-output", "@type":"Page", "title":"Transaction Output", "vc:slug":"transaction-output", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:transaction-output",
+  "@type": "Page",
+  "title": "Transaction Output",
+  "vc:slug": "transaction-output",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:transaction-output",
-  "@type":"Class",
-  "label":"Transaction Output",
-  "definition":"A transaction output is a component of a blockchain transaction that specifies an amount of value and the conditions under which it can later be spent. In UTXO-based systems each output records a value and a locking script that defines who may consume it, and an unspent output becomes the input to a future transaction. Transaction outputs are the fundamental units of ownership and value transfer in such ledgers, and the set of all unspent outputs constitutes the current state of holdings.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:blockchain-transaction","label":"Blockchain Transaction"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:blockchain-transaction","label":"Blockchain Transaction"},{"@id":"urn:ngm:class:transaction","label":"Transaction"}],
-    "hasPart":[{"@id":"urn:ngm:class:script","label":"Script"}],
-    "enables":[{"@id":"urn:ngm:class:unspent-transaction-output","label":"Unspent Transaction Output"}],
-    "uses":[{"@id":"urn:ngm:class:script","label":"Script"},{"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"}],
-    "requires":[{"@id":"urn:ngm:class:bitcoin","label":"Bitcoin"}],
-    "supports":[{"@id":"urn:ngm:class:utxo","label":"UTXO"}],
-    "relatedTo":[{"@id":"urn:ngm:class:unspent-transaction-output","label":"Unspent Transaction Output"},{"@id":"urn:ngm:class:double-spending","label":"Double Spending"},{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}],
-    "implements":[{"@id":"urn:ngm:class:utxo","label":"UTXO"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:bitcoin","label":"Bitcoin"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:transaction","label":"Transaction"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:transaction-output",
+  "@type": "Class",
+  "label": "Transaction Output",
+  "definition": "A transaction output is a component of a blockchain transaction that specifies an amount of value and the conditions under which it can later be spent. In UTXO-based systems each output records a value and a locking script that defines who may consume it, and an unspent output becomes the input to a future transaction. Transaction outputs are the fundamental units of ownership and value transfer in such ledgers, and the set of all unspent outputs constitutes the current state of holdings.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-transaction",
+      "label": "Blockchain Transaction"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:script",
+        "label": "Script"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:unspent-transaction-output",
+        "label": "Unspent Transaction Output"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:script",
+        "label": "Script"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:unspent-transaction-output",
+        "label": "Unspent Transaction Output"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

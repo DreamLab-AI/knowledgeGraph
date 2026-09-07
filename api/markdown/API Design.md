@@ -1,8 +1,3 @@
----
-public: true
----
-
-# API Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

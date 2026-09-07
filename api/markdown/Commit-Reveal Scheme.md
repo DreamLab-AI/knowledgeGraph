@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Commit-Reveal Scheme
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "A commit-reveal scheme is a two-phase cryptographic protocol in which a participant first publishes a binding, hiding commitment to a value (typically a hash of the value plus a nonce) and later reveals the value for verification. The commit phase prevents others from learning or altering the choice, while the reveal phase lets anyone check the value against the earlier commitment. It matters for on-chain voting and auctions because it stops front-running and last-mover advantage by concealing inputs until all parties are bound.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"}
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
     ]
   },
   "quality": 0.72

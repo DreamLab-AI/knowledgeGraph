@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Visual SLAM
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Visual simultaneous localisation and mapping (Visual SLAM) is the process of concurrently estimating a camera's trajectory and reconstructing a map of an unknown environment using image data alone or fused with inertial measurements. It combines feature tracking or direct photometric alignment with pose-graph or bundle-adjustment optimisation and loop closure. Visual SLAM is foundational to AR headsets, drones, and mobile robots that lack external positioning.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}, {"@id": "urn:ngm:class:visual-place-recognition", "label": "Visual Place Recognition"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:visual-place-recognition",
+        "label": "Visual Place Recognition"
+      }
+    ]
   },
   "quality": 0.72
 }

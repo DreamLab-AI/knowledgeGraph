@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Rapidly Exploring Random Tree
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

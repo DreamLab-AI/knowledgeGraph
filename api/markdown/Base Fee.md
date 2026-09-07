@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Base Fee
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,30 +87,78 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:gas", "label": "Gas"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
-      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"}
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"},
-      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"},
-      {"@id": "urn:ngm:class:mev", "label": "MEV"}
+      {
+        "@id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
-      {"@id": "urn:ngm:class:gas-limit", "label": "Gas Limit"},
-      {"@id": "urn:ngm:class:priority-fee", "label": "Priority Fee"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+      {
+        "@id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "@id": "urn:ngm:class:gas-limit",
+        "label": "Gas Limit"
+      },
+      {
+        "@id": "urn:ngm:class:priority-fee",
+        "label": "Priority Fee"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:priority-fee", "label": "Priority Fee"},
-      {"@id": "urn:ngm:class:miner", "label": "Miner"}
+      {
+        "@id": "urn:ngm:class:priority-fee",
+        "label": "Priority Fee"
+      },
+      {
+        "@id": "urn:ngm:class:miner",
+        "label": "Miner"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+      {
+        "@id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
     ]
   },
   "provenance": {
@@ -125,67 +168,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:base-fee:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2964c56d21c498a903a8c79e5fa06ce41c7ff66f96e47b8e73c6313c9b089ec3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   The Base Fee is the algorithmically determined minimum fee per unit of gas that every transaction must pay to be included in an Ethereum block, introduced by EIP-1559. It adjusts automatically each block based on whether the previous block was above or below its gas target, increasing when demand is high and decreasing when low. Unlike miner tips, the base fee is burned rather than paid to validators, creating a deflationary pressure on ETH supply and making gas price prediction more reliable for users.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Newcastle
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -155,46 +150,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:newcastle:1f73a018e9a6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:03cc80ce2d992ab6b2b96a1c42d15579dc651d952501943cb8f6e613eed1855b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Economy]]",
-      "resolved": "urn:visionflow:linked:digital-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Northern Powerhouse]]",
-      "resolved": "urn:visionflow:linked:northern-powerhouse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Manchester]]",
-      "resolved": "urn:visionflow:linked:manchester",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Entity]]",
-      "resolved": "urn:visionflow:linked:entity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

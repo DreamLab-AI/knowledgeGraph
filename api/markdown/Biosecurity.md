@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Biosecurity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:biosecurity",
   "@type": "Class",
   "label": "Biosecurity",
-  "definition": "Biosecurity is the set of policies, practices, and controls aimed at preventing the accidental or deliberate misuse of biological agents, including pathogens, toxins, and biotechnology. It spans laboratory containment, pathogen access controls, dual-use research oversight, and increasingly the governance of AI tools that could lower barriers to engineering dangerous organisms. As a field, it is central to mitigating biological existential and catastrophic risks.",
+  "definition": "Biosecurity is the set of policies, practices, and controls aimed at preventing the accidental or deliberate misuse of biological agents, including pathogens, toxins, and biotechnology. It spans laboratory containment, pathogen access controls, dual-use research oversight, and increasingly the governance of AI tools that [private] lower barriers to engineering dangerous organisms. As a field, it is central to mitigating biological existential and catastrophic risks.",
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [

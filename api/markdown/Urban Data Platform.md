@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Urban Data Platform
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:urban-data-platform", "@type": "Page", "title": "Urban Data Platform", "vc:slug": "urban-data-platform", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:urban-data-platform",
+  "@type": "Page",
+  "title": "Urban Data Platform",
+  "vc:slug": "urban-data-platform",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

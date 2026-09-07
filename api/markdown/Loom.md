@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Loom
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:loom:784a2ddf5d4d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:033dea3f80edb685e06a365b97aea387a87a86dfd9bbd45584f872514190d004"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Screen Recording]]",
-      "resolved": "urn:visionflow:linked:screen-recording",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Video Streaming]]",
-      "resolved": "urn:visionflow:linked:video-streaming",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A video messaging application that lets users record their screen, camera, and microphone to create and share short videos. It is used for asynchronous communication at work.

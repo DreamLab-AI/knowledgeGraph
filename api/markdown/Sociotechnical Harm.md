@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sociotechnical Harm
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Sociotechnical harm is an adverse outcome that emerges from the interaction between a technical system and its social context rather than from a technical fault alone, such as representational harm, allocative discrimination, or erosion of public discourse. These harms are often diffuse, cumulative, and unevenly distributed across affected groups, making them hard to detect with conventional accuracy metrics. Identifying them requires attention to who is affected, how, and through what social mechanisms.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bias-in-large-language-models", "label": "Bias in Large Language Models"},
-      {"@id": "urn:ngm:class:sociotechnical-system", "label": "Sociotechnical System"}
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:sociotechnical-system",
+        "label": "Sociotechnical System"
+      }
     ]
   },
   "quality": 0.72

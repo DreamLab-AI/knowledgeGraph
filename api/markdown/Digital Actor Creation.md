@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Actor Creation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -121,72 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-actor-creation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:15dac667e7f6b23152cc4acc69455f6a901597f749de300815615cd8fe1415ed"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Synthesis]]",
-      "resolved": "urn:visionflow:linked:ai-synthesis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Twins]]",
-      "resolved": "urn:visionflow:linked:digital-twins",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Synthetic Media]]",
-      "resolved": "urn:visionflow:linked:synthetic-media",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Performances]]",
-      "resolved": "urn:visionflow:linked:virtual-performances",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Modelling]]",
-      "resolved": "urn:visionflow:owl:class:3-d-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Human Technology]]",
-      "resolved": "urn:visionflow:owl:class:digital-human-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Capture]]",
-      "resolved": "urn:visionflow:owl:class:motion-capture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications.

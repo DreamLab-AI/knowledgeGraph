@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Metaverse Commerce
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

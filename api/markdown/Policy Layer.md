@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Policy Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,67 +103,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:policy-layer:ef92181cc225",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ebd6da40c4ce054df8bcf0704da3a1c7e7e82cd19fede28f33da1b61a7a263b0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Identity Layer]]",
-      "resolved": "urn:visionflow:linked:identity-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Control Layer]]",
-      "resolved": "urn:visionflow:linked:control-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Governance Layer]]",
-      "resolved": "urn:visionflow:linked:governance-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compliance Layer]]",
-      "resolved": "urn:visionflow:linked:compliance-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Access Control]]",
-      "resolved": "urn:visionflow:linked:access-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Attribute-Based Access Control]]",
-      "resolved": "urn:visionflow:linked:attribute-based-access-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NIST (National Institute of Standards and Technology)]]",
-      "resolved": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Policy Layer is the cross-cutting stratum that encodes machine-readable rules, constraints, and authorisations governing system behaviour. It sits above operational concerns and below the human-facing Governance Layer, translating governance intent into enforceable statements that other layers consult before acting. It contains policy definitions, decision points, and enforcement hooks rather than the data or compute those policies regulate.

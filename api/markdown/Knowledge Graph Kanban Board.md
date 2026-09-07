@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Planning Kanban - currently broken]]
-# Knowledge Graph Kanban Board
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -30,7 +24,7 @@ elevatedFrom:: [[Planning Kanban - currently broken]]
       "vc:label": "Training Material"
     },
     {
-      "@id": "urn:visionflow:owl:class:parents-guide-to-ai",
+      "@id": "urn:visionflow:owl:class:[private]",
       "vc:label": "ParentsGuideToAI"
     },
     {
@@ -77,15 +71,30 @@ elevatedFrom:: [[Planning Kanban - currently broken]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:active-research-projects-registry", "label": "Active Research Projects Registry"},
-      {"@id": "urn:ngm:class:player-two", "label": "Player Two"}
+      {
+        "@id": "urn:ngm:class:active-research-projects-registry",
+        "label": "Active Research Projects Registry"
+      },
+      {
+        "@id": "urn:ngm:class:player-two",
+        "label": "Player Two"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"}
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:decentralised-agent-coordination-initiative", "label": "Decentralised Agent Coordination Initiative"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-agent-coordination-initiative",
+        "label": "Decentralised Agent Coordination Initiative"
+      }
     ]
   },
   "quality": 0.35,
@@ -96,57 +105,6 @@ elevatedFrom:: [[Planning Kanban - currently broken]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:planning-kanban-currently-broken:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4b45bf9bf06bf230599a6798c0e3b02733001f739ae742e6e61eadced69c537d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[KnoWhere]]",
-      "resolved": "urn:visionflow:linked:kno-where",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NLW education discord]]",
-      "resolved": "urn:visionflow:linked:nlw-education-discord",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pete Woodbridge]]",
-      "resolved": "urn:visionflow:linked:pete-woodbridge",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Training Material]]",
-      "resolved": "urn:visionflow:linked:training-material",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ParentsGuideToAI]]",
-      "resolved": "urn:visionflow:owl:class:parents-guide-to-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[PlayerTwo]]",
-      "resolved": "urn:visionflow:owl:class:player-two",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Kanban-style project planning board within a Logseq knowledge graph that aggregates query-driven progress views across active projects. It uses embedded block queries to surface tasks tagged with progress properties, enabling at-a-glance visibility of TODO, DOING, and DONE states across linked project nodes such as PlayerTwo and ParentsGuideToAI.

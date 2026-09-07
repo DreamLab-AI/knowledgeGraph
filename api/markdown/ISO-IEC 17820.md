@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ISO/IEC 17820
----
-
-# ISO-IEC 17820
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,32 +65,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:iso-iec-17820:5a165f8740fe",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b7ee4c824f2d2ab1031cc6bcf8df39e2ff4bf7692dab2e30c280cd2409920c7f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ISO/IEC 17820 is a standard designation attributed to the joint ISO/IEC technical committee. Within this corpus it is cited as a normative reference for motion capture rigs and reality capture systems, but no published standard under this number appears in the public ISO catalogue as of 2026, so the designation should be treated as provisional pending verification.

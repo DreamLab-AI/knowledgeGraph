@@ -1,8 +1,3 @@
----
-public: true
----
-
-# In-Camera VFX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "In-camera visual effects (ICVFX) is a virtual-production technique in which final-pixel visual effects are captured live during photography, typically by displaying real-time rendered 3D environments on large LED volumes behind the actors. Camera tracking drives the rendered background's perspective so that parallax and lighting match the physical camera, producing realistic in-camera composites without later green-screen keying. ICVFX collapses much of post-production into the shoot itself.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
   "relations": {
-    "partOf": [{"@id": "urn:ngm:class:virtual-production-vp", "label": "Virtual Production (VP)"}],
-    "uses": [{"@id": "urn:ngm:class:virtual-production-volume", "label": "Virtual Production Volume"}]
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-production-vp",
+        "label": "Virtual Production (VP)"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      }
+    ]
   },
   "quality": 0.72
 }

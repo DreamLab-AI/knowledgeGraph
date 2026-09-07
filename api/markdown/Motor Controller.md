@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Motor Controller
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A motor controller is an electronic device that regulates the speed, torque, direction, and position of an electric motor by modulating the power delivered to it, typically via pulse-width modulation and closed-loop feedback. In robotics it interprets high-level velocity or position commands and drives motors accordingly, often integrating current sensing and encoder feedback. It is a core actuation component bridging control software and mechanical motion.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"},
-      {"@id": "urn:ngm:class:tc-0003-telepresence-robot", "label": "tc 0003 telepresence robot"}
+      {
+        "@id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      },
+      {
+        "@id": "urn:ngm:class:tc-0003-telepresence-robot",
+        "label": "tc 0003 telepresence robot"
+      }
     ]
   },
   "quality": 0.72

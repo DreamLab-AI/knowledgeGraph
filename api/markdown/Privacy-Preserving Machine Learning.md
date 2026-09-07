@@ -1,36 +1,108 @@
----
-public: true
----
-
-# Privacy-Preserving Machine Learning
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:privacy-preserving-machine-learning", "@type":"Page", "title":"Privacy-Preserving Machine Learning", "vc:slug":"privacy-preserving-machine-learning", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:privacy-preserving-machine-learning",
+  "@type": "Page",
+  "title": "Privacy-Preserving Machine Learning",
+  "vc:slug": "privacy-preserving-machine-learning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:privacy-preserving-machine-learning",
-  "@type":"Class",
-  "label":"Privacy-Preserving Machine Learning",
-  "definition":"Privacy-preserving machine learning is the set of techniques that train, evaluate, and serve machine-learning models while limiting exposure of sensitive training data and model internals. It combines cryptographic protocols, statistical guarantees, and distributed training architectures to bound what an adversary can learn about individual records. The goal is to retain predictive utility while satisfying confidentiality, regulatory, and trust constraints.",
-  "domain":"security",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:privacy-enhancing-technologies","label":"Privacy-Enhancing Technologies"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:privacy-enhancing-technologies","label":"Privacy-Enhancing Technologies"}],
-    "hasPart":[{"@id":"urn:ngm:class:differential-privacy","label":"Differential Privacy"},{"@id":"urn:ngm:class:federated-learning","label":"Federated Learning"}],
-    "uses":[{"@id":"urn:ngm:class:homomorphic-encryption","label":"Homomorphic Encryption"},{"@id":"urn:ngm:class:cryptography","label":"Cryptography"},{"@id":"urn:ngm:class:trusted-execution-environment","label":"Trusted Execution Environment"}],
-    "requires":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}],
-    "enables":[{"@id":"urn:ngm:class:data-privacy","label":"Data Privacy"}],
-    "supports":[{"@id":"urn:ngm:class:edge-computing","label":"Edge Computing"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:security","label":"Security"}],
-    "relatedTo":[{"@id":"urn:ngm:class:privacy","label":"Privacy"},{"@id":"urn:ngm:class:encryption","label":"Encryption"},{"@id":"urn:ngm:class:model-training","label":"Model Training"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-preserving-machine-learning",
+  "@type": "Class",
+  "label": "Privacy-Preserving Machine Learning",
+  "definition": "Privacy-preserving machine learning is the set of techniques that train, evaluate, and serve machine-learning models while limiting exposure of sensitive training data and model internals. It combines cryptographic protocols, statistical guarantees, and distributed training architectures to bound what an adversary can learn about individual records. The goal is to retain predictive utility while satisfying confidentiality, regulatory, and trust constraints.",
+  "domain": "security",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:privacy-enhancing-technologies",
+      "label": "Privacy-Enhancing Technologies"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy-Enhancing Technologies"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

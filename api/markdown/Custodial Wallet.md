@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Custodial Wallet
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:custodial-wallet", "@type":"Page", "title":"Custodial Wallet", "vc:slug":"custodial-wallet", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:custodial-wallet",
+  "@type": "Page",
+  "title": "Custodial Wallet",
+  "vc:slug": "custodial-wallet",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,56 +21,123 @@ public: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet" }
+    {
+      "@id": "urn:ngm:class:digital-wallet",
+      "label": "Digital Wallet"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:account-balance-ledger", "label": "Account Balance Ledger" },
-      { "@id": "urn:ngm:class:omnibus-account", "label": "Omnibus Account" }
+      {
+        "@id": "urn:ngm:class:account-balance-ledger",
+        "label": "Account Balance Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:omnibus-account",
+        "label": "Omnibus Account"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:centralised-exchange", "label": "Centralised Exchange" }
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:hot-wallet", "label": "Hot Wallet" },
-      { "@id": "urn:ngm:class:cold-storage", "label": "Cold Storage" }
+      {
+        "@id": "urn:ngm:class:hot-wallet",
+        "label": "Hot Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:key-management", "label": "Key Management" },
-      { "@id": "urn:ngm:class:trusted-third-party", "label": "Trusted Third Party" }
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-third-party",
+        "label": "Trusted Third Party"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer" }
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:account-recovery", "label": "Account Recovery" },
-      { "@id": "urn:ngm:class:fiat-on-ramp", "label": "Fiat On-Ramp" }
+      {
+        "@id": "urn:ngm:class:account-recovery",
+        "label": "Account Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-on-ramp",
+        "label": "Fiat On-Ramp"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:institutional-custody", "label": "Institutional Custody" },
-      { "@id": "urn:ngm:class:exchange-custody", "label": "Exchange Custody" }
+      {
+        "@id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "@id": "urn:ngm:class:exchange-custody",
+        "label": "Exchange Custody"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:proof-of-reserves", "label": "Proof of Reserves" }
+      {
+        "@id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:non-custodial-wallet", "label": "Non-Custodial Wallet" },
-      { "@id": "urn:ngm:class:self-custody", "label": "Self-Custody" },
-      { "@id": "urn:ngm:class:multi-signature-wallet", "label": "Multi-Signature Wallet" }
+      {
+        "@id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:mpc-wallet", "label": "MPC Wallet" }
+      {
+        "@id": "urn:ngm:class:mpc-wallet",
+        "label": "MPC Wallet"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:counterparty-risk", "label": "Counterparty Risk" },
-      { "@id": "urn:ngm:class:cryptocurrency-custody", "label": "Cryptocurrency Custody" }
+      {
+        "@id": "urn:ngm:class:counterparty-risk",
+        "label": "Counterparty Risk"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-custody",
+        "label": "Cryptocurrency Custody"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:hosted-wallet", "label": "Hosted Wallet" }
+    {
+      "@id": "urn:ngm:class:hosted-wallet",
+      "label": "Hosted Wallet"
+    }
   ],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

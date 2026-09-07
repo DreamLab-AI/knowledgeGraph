@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IEEE Standards Association
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,4 +159,3 @@ public: true
   - IEEE SA standards carry commercial weight because many are incorporated by reference into national regulations and procurement specifications. IEEE 802.11 variants define Wi-Fi across nearly all jurisdictions; IEEE 1149.1 (JTAG) defines boundary-scan testing mandated by military procurement. The association operates both a subscription model for standards access and an open-access programme (IEEE GET) for selected standards, balancing revenue sustainability with broad adoption. Liaison relationships with ISO/IEC JTC 1 and ETSI enable joint publication reducing duplication.
 
   - In 2024–2025, IEEE SA is actively developing standards for AI ethics (IEEE CertifAIEd based on IEEE 7000 series), autonomous vehicles (IEEE 2846 for formal safety requirements), and 6G telecommunications. The P2089 standard addresses age-appropriate design in technology platforms, responding to legislative pressure in multiple jurisdictions. IEEE SA's Global Standards Spotlight programme engages developing-country stakeholders to ensure standards reflect global rather than solely Western-market assumptions, a growing priority as AI and connectivity standards shape opportunities in the Global South.
-

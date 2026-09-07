@@ -1,7 +1,3 @@
----
-public: true
----
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -38,21 +34,54 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
-      {"@id": "urn:ngm:class:light-node", "label": "Light Node"},
-      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
-      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"}
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      },
+      {
+        "@id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "@id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ]
   },
   "quality": 0.8,
@@ -60,3 +89,5 @@ public: true
   "maturity": "established"
 }
 ```
+
+

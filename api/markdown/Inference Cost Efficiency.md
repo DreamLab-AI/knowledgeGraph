@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inference Cost Efficiency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "inference-cost-efficiency",
   "title": "Inference Cost Efficiency",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Bridgebench", "GLM 5.2"],
+  "vc:outboundWikilinks": [
+    "Bridgebench",
+    "GLM 5.2"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:inference", "label": "Inference"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:inference",
+      "label": "Inference"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:inference", "label": "Inference"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - PowerSupply
----
-
-# Power Supply
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,47 +170,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:power-supply:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7debf069170b6cd342dc80a492a5bffdc0087116fd6bcced7511b7aa7455526a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Continuous Operation]]",
-      "resolved": "urn:visionflow:linked:continuous-operation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[System Reliability]]",
-      "resolved": "urn:visionflow:linked:system-reliability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A power supply unit (PSU) is an internal hardware component that converts alternating current (AC) from mains electricity into regulated low-voltage direct current (DC) required by computing equipment's internal components including motherboard, CPU, GPU, and storage devices. In data center contexts, power supply systems include redundant PSUs, uninterruptible power supplies (UPS), and power distribution units (PDUs).

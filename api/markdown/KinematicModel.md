@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Kinematic Model
----
-
-# kinematicmodel
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -41,23 +34,40 @@ aliases:
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:differential-kinematics", "label": "Differential Kinematics"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:differential-kinematics",
+        "label": "Differential Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - A kinematic model is a mathematical abstraction that describes the geometry of a robot's motion by relating joint-space variables (angles and displacements) to the position and orientation of the end-effector in Cartesian space, without accounting for the forces or torques that produce that motion. Forward kinematics maps joint configurations to end-effector poses using homogeneous transformation matrices or Denavit-Hartenberg parameters, whereas inverse kinematics solves the reverse problem of finding joint configurations that achieve a desired pose. Kinematic models are foundational to trajectory generation, motion planning, and simulation in robotic systems.

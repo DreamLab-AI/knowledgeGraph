@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Robotics Perception
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:robotics-perception", "@type":"Page", "title":"Robotics Perception", "vc:slug":"robotics-perception", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:robotics-perception",
+  "@type": "Page",
+  "title": "Robotics Perception",
+  "vc:slug": "robotics-perception",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

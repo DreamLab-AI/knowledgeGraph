@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Autonomous Manipulation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

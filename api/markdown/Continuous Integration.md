@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Continuous Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -318,7 +313,7 @@ public: true
   - GitHub's 2026 Actions security roadmap (published March 2026) introduces structural defences: a workflow-level `dependencies:` section that locks direct and transitive actions to commit SHAs with cryptographic hashes, org-level ruleset execution policies, fine-grained secret scoping, plus infrastructure controls in the Actions Data Stream telemetry and a Layer-7 native egress firewall enforced outside the runner VM.
   - actions/checkout v7 (effective 18 June 2026) blocks fork pull-request checkouts in privileged pull_request_target and workflow_run contexts by default, requiring an explicit allow-unsafe-pr-checkout opt-out, and the change is being backported to all supported major versions.
   - Build provenance and attestation have consolidated as CI standards: GitHub Artifact Attestations (Sigstore-based, keyless OIDC signing) deliver SLSA v1.0 Build Level 2 out of the box and Level 3 with reusable workflows, verification went monotonic in February 2025, and Google Cloud Build now emits SLSA Level 3 provenance natively, with in-toto/cosign/Kyverno enforcing verification at deployment.
-  - New CI security threats emerged around embedded agents: researchers documented the "Comment and Control" prompt-injection attack class in April 2026, showing a single malicious PR comment could exfiltrate secrets such as GITHUB_TOKEN and ANTHROPIC_API_KEY into public logs, prompting defence patterns of sandboxed ephemeral agent containers, read-only-by-default execution, scoped expiring tokens and runner-level monitoring like StepSecurity Harden-Runner.
+  - New CI security threats emerged around embedded agents: researchers documented the "Comment and Control" prompt-injection attack class in April 2026, showing a single malicious PR comment [private] exfiltrate secrets such as GITHUB_TOKEN and ANTHROPIC_API_KEY into public logs, prompting defence patterns of sandboxed ephemeral agent containers, read-only-by-default execution, scoped expiring tokens and runner-level monitoring like StepSecurity Harden-Runner.
   - Adoption and cost remain open challenges: a June 2026 Kaspersky study found over 250,000 potential CI/CD misconfigurations (mostly overly broad permissions and missing version pinning), while early agentic-workflow token benchmarks showed wide variance (roughly 12 million tokens per Codex run versus 600,000 for Claude-powered runs), leaving governance, auditability and economics as the 2026 frontier.
 
 - ### References

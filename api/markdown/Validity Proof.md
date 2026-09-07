@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Validity Proof
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:validity-proof", "@type":"Page", "title":"Validity Proof", "vc:slug":"validity-proof", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:validity-proof",
+  "@type": "Page",
+  "title": "Validity Proof",
+  "vc:slug": "validity-proof",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

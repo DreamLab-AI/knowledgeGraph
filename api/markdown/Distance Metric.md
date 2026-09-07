@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Distance Metric
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -276,7 +270,7 @@ public: true
 
   ## Current Landscape (2026)
 
-  In 2026, distance metrics are implemented at scale through specialised vector database infrastructure. [[FAISS]] (Meta AI), Qdrant, Weaviate, Milvus, and pgvector all support multiple distance metrics natively, with the dominant production choice being cosine similarity (implemented as inner product on L2-normalised embeddings) for dense [[Vector Embedding|vector embeddings]] from transformer encoders. Euclidean distance remains important for structured, normalised tabular data and for k-means clustering within vector database indexing (IVF cluster assignment). The VIBE (Vector Index Benchmark for Embeddings) benchmark, presented in 2025, provides standardised evaluation of recall and latency trade-offs across distance metrics and index configurations, complementing the established ANN-Benchmarks.
+  In 2026, distance metrics are implemented at scale through specialised vector database infrastructure. [[FAISS]] (Meta AI), Qdrant, Weaviate, Milvus, and pgvector all support multiple distance metrics natively, with the dominant production choice being cosine similarity (implemented as inner product on L2-normalised embeddings) for dense [[Vector Embedding|vector embeddings]] from transformer encoders. Euclidean distance remains important for structured, normalised tabular data and for k-means clustering within vector database indexing (IVF cluster assignment). The VIBE (Vector Index Benchmark for Embeddings) benchmark, presented in 2025, provides standardised evaluation of recall and latency trade-offs across distance metrics and [private] configurations, complementing the established ANN-Benchmarks.
 
   Deep metric learning has matured substantially. Contrastive learning objectives (SimCLR, CLIP, E5, BGE) have displaced hand-tuned triplet mining in large-scale settings; these objectives implicitly learn a cosine metric space by training the encoder to place positive pairs close and negative pairs far apart in embedding space. [[Matryoshka Representation Learning]] (Kusupati et al., 2022, widely deployed 2024–2025) produces embeddings where cosine distance is preserved at multiple nested dimensionalities, allowing the effective distance metric to be computed at lower cost by truncating the embedding vector without reindexing.
 
@@ -294,7 +288,7 @@ public: true
 
   UK industry deployment is extensive. Graphcore's IPU architecture provides hardware-accelerated L2 and inner product distance computation for embedding similarity workloads. Faculty AI uses metric learning in production fraud detection systems for UK financial institutions. Deepmind (London) employs learned distance metrics in AlphaFold protein structure retrieval, where cosine and Euclidean distances over structure embedding spaces guide candidate retrieval for drug target identification. NHS AI applications use embedding-based similarity search with cosine and Mahalanobis metrics for patient cohort identification and clinical trial matching, with the NHS AI Lab coordinating deployment standards across trusts.
 
-  In Northern England, the Leeds Institute for Data Analytics uses metric-based clustering for social science and health data, including geospatial Haversine distance for deprivation index mapping. The Alan Turing Institute, headquartered in London with university partners including Manchester and Edinburgh, coordinates UK research on distance metric selection for fairness-aware machine learning — an area where inappropriate metrics can encode and amplify demographic disparities.
+  In Northern England, the Leeds Institute for Data Analytics uses metric-based clustering for social science and health data, including geospatial Haversine distance for deprivation [private] mapping. The Alan Turing Institute, headquartered in London with university partners including Manchester and Edinburgh, coordinates UK research on distance metric selection for fairness-aware machine learning — an area where inappropriate metrics can encode and amplify demographic disparities.
 
   ## Future Directions (2026–2030)
 
@@ -399,7 +393,7 @@ public: true
 
   **[[Locality-Sensitive Hashing]] (LSH):** For L2 and [[Cosine Similarity|cosine metrics]], LSH uses families of random projection hash functions h_r(x) = sign(r · x) (cosine LSH) or h_r,b(x) = ⌊(r · x + b) / w⌋ (L2 LSH) such that nearby points collide in the same hash bucket with probability proportional to their similarity. LSH is sub-linear at query time and supports streaming updates, making it suitable for dynamic corpora. The locality-sensitive property depends on the metric: LSH constructions exist for L2, L1, cosine, Hamming (via bit sampling), and Jaccard (MinHash), but not for all metrics.
 
-  **[[HNSW]] (Hierarchical Navigable Small World):** A graph-based ANN index that constructs a multi-layer proximity graph: higher layers connect distant nodes for fast long-range navigation, lower layers connect local neighbours for precise retrieval. The greedy graph traversal at query time implicitly exploits the metric's triangle inequality by preferring candidates that are closer to the query than the current node. HNSW supports arbitrary symmetric distance functions (not just Euclidean) — it is the primary index structure for [[Cosine Similarity|cosine similarity]] search in production [[Vector Database|vector databases]] (Qdrant, Weaviate, Milvus).
+  **[[HNSW]] (Hierarchical Navigable Small World):** A graph-based ANN [private] that constructs a multi-layer proximity graph: higher layers connect distant nodes for fast long-range navigation, lower layers connect local neighbours for precise retrieval. The greedy graph traversal at query time implicitly exploits the metric's triangle inequality by preferring candidates that are closer to the query than the current node. HNSW supports arbitrary symmetric distance functions (not just Euclidean) — it is the primary [private] structure for [[Cosine Similarity|cosine similarity]] search in production [[Vector Database|vector databases]] (Qdrant, Weaviate, Milvus).
 
   **Inverted File Index (IVF):** Clusters the corpus using k-means (Euclidean distance) into Voronoi cells; at query time, only the nearest `nprobe` clusters are searched. IVF depends on Euclidean distance for both cluster assignment and within-cluster search, making it less suitable for non-Euclidean metrics. Combined with [[Product Quantisation]] (PQ), IVF+PQ enables billion-scale [[Nearest Neighbor Search]] in [[FAISS]] with memory reduced by 8–32× through lossy vector compression. The Euclidean distance is approximated via precomputed codebook lookup tables, enabling fast asymmetric distance computation.
 
@@ -411,7 +405,7 @@ public: true
   - **Stanford Online Products (SOP):** 120,053 product images from eBay; 22,634 classes with roughly 5 images each. Recall@1, @10, @100 are the standard metrics. A challenging benchmark due to fine-grained intra-class variation and large class count.
   - **In-Shop Clothes Retrieval:** 7,982 clothing items with 52,712 images; evaluated on Recall@k and mean Average Precision (mAP) for retrieval of matching clothing items across pose and appearance variation.
   - **DML-Benchmark (2022):** A standardised evaluation suite introduced by Musgrave et al. (2020) applying consistent train/test splits, architecture constraints, and hyperparameter budgets across methods, revealing that many claimed improvements in deep metric learning do not survive controlled comparison — a cautionary result for the field's benchmarking practices.
-  - **ANN-Benchmarks (ann-benchmarks.com):** The reference benchmark for [[Nearest Neighbor Search]] efficiency, measuring recall vs. queries-per-second Pareto frontiers across HNSW, IVF+PQ, ScaNN, LSH, and other index types on standard datasets (SIFT-1M, GIST-1M, Fashion-MNIST, GloVe-25/100/200) under L2 and cosine distance.
+  - **ANN-Benchmarks (ann-benchmarks.com):** The reference benchmark for [[Nearest Neighbor Search]] efficiency, measuring recall vs. queries-per-second Pareto frontiers across HNSW, IVF+PQ, ScaNN, LSH, and other [private] types on standard datasets (SIFT-1M, GIST-1M, Fashion-MNIST, GloVe-25/100/200) under L2 and cosine distance.
   - **BEIR Benchmark:** For text-domain retrieval with cosine similarity, BEIR's 18 datasets cover diverse retrieval tasks; performance is measured by NDCG@10. Cosine similarity over dense [[Vector Embedding|embeddings]] is the standard distance function for BEIR evaluation.
 
   ## Metric Learning in the 2026 Landscape
@@ -420,7 +414,7 @@ public: true
 
   The [[Vector Database]] industry has standardised metric support substantially. Qdrant (as of v1.9, 2025) supports L2 (Euclidean), cosine (dot product on normalised vectors), dot product (unnormalised inner product), and Manhattan (L1) as native distance metrics, with the ability to specify per-collection metrics and mixing metrics across named vector spaces in the same collection. Weaviate similarly supports L2 and cosine natively. Milvus adds Hamming and Jaccard for binary embeddings. pgvector (PostgreSQL extension) supports L2, cosine, and inner product with IVFFLAT and HNSW indexing. The standardisation of metric support across vector databases makes it practical to evaluate multiple metrics for a given task empirically, enabling data-driven metric selection rather than purely theoretically motivated choices.
 
-  Qdrant's benchmarks (2025) show that for typical dense [[Vector Embedding|text embedding]] corpora (OpenAI ada-002, E5-large), cosine similarity and L2 distance produce identical HNSW index recall-latency performance when embeddings are L2-normalised before indexing — confirming the theoretical equivalence on the unit sphere. For unnormalised embeddings (e.g., from models trained without normalisation), cosine slightly outperforms L2 on retrieval quality because it ignores magnitude variation that is an artefact of model calibration rather than semantic content.
+  Qdrant's benchmarks (2025) show that for typical dense [[Vector Embedding|text embedding]] corpora (OpenAI ada-002, E5-large), cosine similarity and L2 distance produce identical HNSW [private] recall-latency performance when embeddings are L2-normalised before indexing — confirming the theoretical equivalence on the unit sphere. For unnormalised embeddings (e.g., from models trained without normalisation), cosine slightly outperforms L2 on retrieval quality because it ignores magnitude variation that is an artefact of model calibration rather than semantic content.
 
   The 2025 Qdrant "awesome-metric-learning" curated list documents the current practical state of metric learning applications, including: face recognition (ArcFace on MS-Celeb and Glint360K), person re-identification (triplet loss with hard mining on Market-1501 and DukeMTMC), vehicle re-identification, medical image retrieval (contrastive learning on CheXpert and NIH-ChestX-ray14), satellite image search (CLIP-style contrastive learning on remote sensing datasets), and code search (CodeBERT with contrastive fine-tuning on CodeSearchNet).
 
@@ -580,15 +574,15 @@ public: true
 
   The following pages in this knowledge graph are directly related to Distance Metric and should be consulted for adjacent concepts:
 
-  - [[Nearest Neighbor Search]] — the primary algorithmic application; distance metric choice determines NNS index type, recall, and latency trade-offs
+  - [[Nearest Neighbor Search]] — the primary algorithmic application; distance metric choice determines NNS [private] type, recall, and latency trade-offs
   - [[Cosine Similarity]] — the most widely deployed distance metric in production AI systems; dominates dense text and multimodal [[Vector Embedding]] retrieval
   - [[Clustering]] — depends fundamentally on distance metric for cluster assignment and within-cluster cohesion measurement; k-means, DBSCAN, and hierarchical clustering are all metric-dependent
   - [[Vector Embedding]] — the representational substrate over which distance metrics are computed; embedding quality and metric choice jointly determine retrieval quality
   - [[Vector Database]] — provides indexed storage and distance-metric-based retrieval over [[Vector Embedding|embeddings]]; supports L2, cosine, and inner product natively in all major implementations
   - [[Anomaly Detection]] — uses Mahalanobis distance and k-NN distance as anomaly scores; distance from class distribution centre is a principled anomaly criterion
   - [[FAISS]] — Meta AI's open-source library providing GPU-accelerated distance computation for L2 and inner product at billion scale; the reference implementation for production distance search
-  - [[HNSW]] — the dominant approximate nearest-neighbour index structure; graph-based search that exploits triangle inequality for efficient metric-space traversal
-  - [[Locality-Sensitive Hashing]] — hash-based ANN index with proven sensitivity to cosine and L2 metrics; exploits metric geometry to probabilistically group nearby points
+  - [[HNSW]] — the dominant approximate nearest-neighbour [private] structure; graph-based search that exploits triangle inequality for efficient metric-space traversal
+  - [[Locality-Sensitive Hashing]] — hash-based ANN [private] with proven sensitivity to cosine and L2 metrics; exploits metric geometry to probabilistically group nearby points
   - [[Representation Learning]] — produces the [[Vector Embedding|embedding spaces]] over which distance metrics are computed; deep metric learning jointly learns representation and metric
   - [[Contrastive Learning]] — the training paradigm for deep metric learning; optimises encoder parameters to produce embeddings where cosine or L2 distance aligns with semantic similarity
   - [[Knowledge Graph Embedding]] — applies distance metrics (TransE L1/L2, RotatE cosine) to score knowledge base triple plausibility; metric choice encodes structural assumptions about the knowledge graph

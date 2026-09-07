@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Heatmap Regression (Keypoint Localisation)
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CBOR
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -144,4 +139,3 @@ public: true
   - CBOR's significance has grown well beyond IoT. The COSE (CBOR Object Signing and Encryption) framework, specified in RFC 8152, provides CBOR-native equivalents of JSON Web Signature (JWS) and JSON Web Encryption (JWE), enabling efficient cryptographic operations on CBOR payloads. The W3C Verifiable Credentials Data Model specifies CBOR-LD as a compact binary Linked Data serialisation for credentials on constrained channels. ISO 18013-5 for mDL, IETF RATS (Remote ATtestation procedureS), and 5G network slicing protocols all depend on CBOR for efficient data exchange in latency- and bandwidth-sensitive paths.
 
   - RFC 8949, published in 2020, superseded RFC 7049 with clarifications, improved deterministic encoding rules (CDE), and a more rigorous treatment of floating-point NaN handling. In 2024-2025, CBOR continues to solidify its position as the binary serialisation layer for decentralised identity ecosystems: OpenID4VCI and ISO-compliant credential wallets on mobile devices universally adopt CBOR for credential storage and presentation. Its role in attestation protocols for trusted computing and hardware security modules further cements its status as a foundational infrastructure primitive.
-

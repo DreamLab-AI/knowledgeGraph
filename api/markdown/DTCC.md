@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DTCC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -66,42 +61,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dtcc:94705f9b7af8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b057c89b0d1cf05d404ad90cc0b826a385d991f0c5241a592474fd6bbffa669a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Traditional Finance]]",
-      "resolved": "urn:visionflow:linked:traditional-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Asset Tokenisation]]",
-      "resolved": "urn:visionflow:linked:asset-tokenisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Infrastructure]]",
-      "resolved": "urn:visionflow:linked:financial-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - DTCC, the Depository Trust and Clearing Corporation, is a United States company that provides clearing, settlement, and recordkeeping services for securities markets.

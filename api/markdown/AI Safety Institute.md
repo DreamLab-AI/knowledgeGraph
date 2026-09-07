@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Safety Institute
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,46 +174,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-safety-institute:04928641530e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ff8d961a9f4ee081d973ccefa3397b539c027c3d6bd2aa73fb50cda1c4e71131"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Alignment]]",
-      "resolved": "urn:visionflow:linked:ai-alignment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Frontier AI]]",
-      "resolved": "urn:visionflow:linked:frontier-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Existential AI Risk]]",
-      "resolved": "urn:visionflow:linked:existential-ai-risk",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Safety]]",
-      "resolved": "urn:visionflow:linked:ai-safety",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - An AI Safety Institute (AISI) is a government-backed research and evaluation body charged with assessing the capabilities and risks of [[Frontier AI]] systems, developing safety testing methodologies, and informing national [[AI Policy]] and international [[AI Governance]] frameworks. The United Kingdom launched the world's first AISI at the [[AI Safety Summit]] held at Bletchley Park in November 2023; the United States, Japan, Canada, Singapore, and the European Union subsequently established counterpart or affiliated bodies. These institutes occupy a unique institutional niche: they operate with regulatory-adjacent authority while maintaining close technical dialogue with [[Large Language Model]] developers, enabling pre-deployment evaluations that independent academic labs lack the access to conduct.
 
@@ -232,7 +187,7 @@ public: true
 
 - ### Key Components
   - #### Capability Evaluation
-    - [[Capability Evaluation]] is the central activity: testing a model's ability to assist with tasks that could cause harm if misused, such as synthesis of biological or chemical agents, cyber-attack planning, or persuasion at scale.
+    - [[Capability Evaluation]] is the central activity: testing a model's ability to assist with tasks that [private] cause harm if misused, such as synthesis of biological or chemical agents, cyber-attack planning, or persuasion at scale.
     - Evaluations use structured [[Red Teaming]] — adversarial prompting by human experts or automated pipelines — to probe for dangerous capabilities that standard benchmarks do not capture.
     - [[Benchmarking]] against agreed thresholds allows consistent comparison across model versions and developers.
   - #### Safety Research

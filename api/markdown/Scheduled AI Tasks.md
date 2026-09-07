@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scheduled AI Tasks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "scheduled-ai-tasks",
   "title": "Scheduled AI Tasks",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Claude Code", "Infrastructure Capacity", "Product Rollout"],
+  "vc:outboundWikilinks": [
+    "Claude Code",
+    "Infrastructure Capacity",
+    "Product Rollout"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agentic-workflow",
+      "label": "Agentic Workflow"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}, {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}, {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

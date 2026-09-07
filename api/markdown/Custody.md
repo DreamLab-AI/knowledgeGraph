@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Custody
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,52 +185,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:custody:21a7f61c15ce",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e78b6d6989ed232289266673d7c22a9fc7339633c3bb92b8dd764406b1534bff"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Private Key]]",
-      "resolved": "urn:visionflow:linked:private-key",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Wallet]]",
-      "resolved": "urn:visionflow:linked:wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Custody]]",
-      "resolved": "urn:visionflow:linked:self-custody",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Institutional Custody]]",
-      "resolved": "urn:visionflow:linked:institutional-custody",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Custody Infrastructure]]",
-      "resolved": "urn:visionflow:linked:custody-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The holding and safekeeping of assets and the keys that control them, defining who has the authority to move funds on behalf of an owner.

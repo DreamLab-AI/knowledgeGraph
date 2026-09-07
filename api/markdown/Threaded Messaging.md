@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Threaded Messaging
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -121,52 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:threaded-messaging:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0b96025270d184284eae2d39d06cadf7e18b3481d72cdeb5f3ddafcc81d331b1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collaboration Tools]]",
-      "resolved": "urn:visionflow:linked:collaboration-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Discord]]",
-      "resolved": "urn:visionflow:linked:discord",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Slack]]",
-      "resolved": "urn:visionflow:linked:slack",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asynchronous Collaboration]]",
-      "resolved": "urn:visionflow:owl:class:asynchronous-collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TelecollaborationDomain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Threaded Messaging is a structured asynchronous communication pattern in which replies are grouped beneath a parent message, forming discrete conversation threads that preserve context and reduce noise in shared channels. By isolating discussions, it enables parallel workstreams within a single collaboration platform while keeping notification volume manageable for participants. Platforms such as Slack and Discord popularised the pattern, which is now foundational to modern digital workplace communication.

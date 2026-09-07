@@ -1,8 +1,3 @@
----
-public: true
----
-
-# InstantID
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,26 @@ public: true
   "definition": "InstantID is a diffusion-model technique for identity-preserving image generation that synthesises new images of a specific person from a single reference photograph, without per-subject fine-tuning. It combines a face encoder with an IdentityNet adapter that injects facial identity and spatial landmarks into a text-to-image diffusion backbone. While powerful for personalised avatars and stylisation, its zero-shot fidelity also raises misuse concerns around impersonation and synthetic media.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}, {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:diffusion-models",
+      "label": "Diffusion Models"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems", "label": "ControlNet and Similar Spatial Conditioning Systems"},
-      {"@id": "urn:ngm:class:deepfakes-and-fraudulent-content", "label": "Deepfakes and fraudulent content"}
+      {
+        "@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
+        "label": "ControlNet and Similar Spatial Conditioning Systems"
+      },
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      }
     ]
   },
   "quality": 0.72

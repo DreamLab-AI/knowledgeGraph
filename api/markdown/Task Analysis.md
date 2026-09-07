@@ -1,55 +1,106 @@
----
-public: true
----
-
-# Task Analysis
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:task-analysis", "@type":"Page", "title":"Task Analysis", "vc:slug":"task-analysis", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:task-analysis",
+  "@type": "Page",
+  "title": "Task Analysis",
+  "vc:slug": "task-analysis",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:task-analysis",
-  "@type":"Class",
-  "label":"Task Analysis",
-  "definition":"Task analysis is the systematic study of how users accomplish goals, decomposing activities into the sequence of actions, decisions, and cognitive operations required to complete them. It produces structured descriptions such as hierarchical task models and workflow maps that inform interface design, error prevention, and training. By making implicit work practices explicit, it grounds design decisions in observed user behaviour rather than assumption.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:interaction-design","label":"Interaction Design"}],
-  "relations":{
-    "requires":[
-      {"@id":"urn:ngm:class:user-research","label":"User Research"},
-      {"@id":"urn:ngm:class:requirements-engineering","label":"Requirements Engineering"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:task-analysis",
+  "@type": "Class",
+  "label": "Task Analysis",
+  "definition": "Task analysis is the systematic study of how users accomplish goals, decomposing activities into the sequence of actions, decisions, and cognitive operations required to complete them. It produces structured descriptions such as hierarchical task models and workflow maps that inform interface design, error prevention, and training. By making implicit work practices explicit, it grounds design decisions in observed user behaviour rather than assumption.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:interaction-design",
+      "label": "Interaction Design"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "@id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:prototyping","label":"Prototyping"},
-      {"@id":"urn:ngm:class:usability-testing","label":"Usability Testing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      },
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:interaction-design","label":"Interaction Design"},
-      {"@id":"urn:ngm:class:information-architecture","label":"Information Architecture"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:usability","label":"Usability"},
-      {"@id":"urn:ngm:class:user-experience","label":"User Experience"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:cognitive-load","label":"Cognitive Load"},
-      {"@id":"urn:ngm:class:user-research","label":"User Research"},
-      {"@id":"urn:ngm:class:usability","label":"Usability"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:requirements-engineering","label":"Requirements Engineering"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

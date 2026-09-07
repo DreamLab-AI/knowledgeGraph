@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Online Safety Act 2023
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

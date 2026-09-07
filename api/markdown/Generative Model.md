@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - GenerativeModel
----
-
-# Generative Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -202,37 +195,6 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:generative-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d39bd703cf035304bea4e9428b76e043409e77d3f3b468138ff3fc484695eded"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Machine learning models that can generate new data samples by learning the underlying distribution of training data, including architectures like GANs, VAEs, diffusion models, and transformers.
 
@@ -257,7 +219,7 @@ aliases:
   - Open challenges as of 2026 include hallucination and factual reliability, the escalating energy and compute cost of training and inference, unresolved copyright and training-data litigation, and evaluation/safety for increasingly agentic systems.
 
 - ### References
-  - 1. OpenAI (2025). Introducing GPT-5. https://openai.com/index/introducing-gpt-5/
+  - 1. OpenAI (2025). Introducing GPT-5. https://openai.com/[private]/introducing-gpt-5/
   - 2. Google DeepMind (2025). Gemini 2.5: our most intelligent AI model. https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/
   - 3. Anthropic (2025). Introducing Claude 4. https://www.anthropic.com/news/claude-4
   - 4. European Commission (2024). AI Act enters into force. https://commission.europa.eu/news/ai-act-enters-force-2024-08-01_en

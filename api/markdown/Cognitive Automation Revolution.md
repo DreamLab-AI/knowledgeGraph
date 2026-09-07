@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[The Cognitive Revolution]]
-# Cognitive Automation Revolution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,16 +42,34 @@ elevatedFrom:: [[The Cognitive Revolution]]
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:workforce-augmentation", "label": "Workforce Augmentation"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:workforce-augmentation",
+        "label": "Workforce Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
     ]
   },
   "provenance": {
@@ -67,26 +79,6 @@ elevatedFrom:: [[The Cognitive Revolution]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:the-cognitive-revolution:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6cc3af3351e85d4e2f1f29c35790c5db96cb5ced8eb9f916fa79a86e34830509"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   The Cognitive Revolution describes the transformative societal shift driven by AI systems automating cognitive and knowledge work at scale, drawing analogy to the Industrial Revolution's mechanisation of physical labour. It encompasses the displacement of routine mental tasks—coding, content creation, data analysis—freeing human effort for higher-order creativity and judgement, whilst raising urgent questions about workforce adaptation and economic equity.

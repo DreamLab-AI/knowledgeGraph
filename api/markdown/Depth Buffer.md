@@ -1,36 +1,104 @@
----
-public: true
----
-
-# Depth Buffer
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:depth-buffer", "@type":"Page", "title":"Depth Buffer", "vc:slug":"depth-buffer", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:depth-buffer",
+  "@type": "Page",
+  "title": "Depth Buffer",
+  "vc:slug": "depth-buffer",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:depth-buffer",
-  "@type":"Class",
-  "label":"Depth Buffer",
-  "definition":"A depth buffer (also called a z-buffer) is a per-pixel array maintained during rasterised rendering that stores the depth of the nearest surface drawn at each screen position. As fragments are generated, their interpolated depth is compared against the stored value, and only fragments closer to the camera overwrite the colour and depth, resolving visibility automatically. The depth buffer is the standard hidden-surface-removal mechanism in real-time graphics pipelines.",
-  "domain":"spatial-computing",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:rendering-pipeline","label":"Rendering Pipeline"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:rendering-pipeline","label":"Rendering Pipeline"},{"@id":"urn:ngm:class:graphics-pipeline","label":"Graphics Pipeline"}],
-    "hasPart":[{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"}],
-    "requires":[{"@id":"urn:ngm:class:rasterization","label":"Rasterization"},{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "uses":[{"@id":"urn:ngm:class:gpu-acceleration","label":"GPU Acceleration"}],
-    "enables":[{"@id":"urn:ngm:class:occlusion-culling","label":"Occlusion Culling"}],
-    "supports":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:ray-tracing","label":"Ray Tracing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"},{"@id":"urn:ngm:class:gpu","label":"GPU"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:depth-buffer",
+  "@type": "Class",
+  "label": "Depth Buffer",
+  "definition": "A depth buffer (also called a z-buffer) is a per-pixel array maintained during rasterised rendering that stores the depth of the nearest surface drawn at each screen position. As fragments are generated, their interpolated depth is compared against the stored value, and only fragments closer to the camera overwrite the colour and depth, resolving visibility automatically. The depth buffer is the standard hidden-surface-removal mechanism in real-time graphics pipelines.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

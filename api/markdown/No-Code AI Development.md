@@ -1,8 +1,3 @@
----
-public: true
----
-
-# No-Code AI Development
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "no-code-ai-development",
   "title": "No-Code AI Development",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Lovable", "Replit"],
+  "vc:outboundWikilinks": [
+    "Lovable",
+    "Replit"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:intelligent-automation", "label": "Intelligent Automation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:intelligent-automation",
+      "label": "Intelligent Automation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:intelligent-automation", "label": "Intelligent Automation"}, {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

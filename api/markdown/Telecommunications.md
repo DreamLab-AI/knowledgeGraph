@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Telecommunications
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,4 +175,3 @@ public: true
   - The telecommunications ecosystem involves equipment vendors (Ericsson, Nokia, Huawei), mobile network operators (MNOs) licensing spectrum from national regulators, infrastructure companies owning tower and fibre assets, and over-the-top service providers that route their traffic across MNO infrastructure. Spectrum policy — determining which frequency bands are allocated to which services and how they are licensed — is a critical governance function conducted through national regulatory bodies and the ITU World Radiocommunication Conference process. Private 5G networks are proliferating in industrial campuses, logistics facilities, and smart ports, operated by enterprises under local area licensing frameworks.
 
   - In 2024–2025, the telecommunications industry is pursuing network AI integration: AI-driven radio resource management optimises spectrum allocation in real time, autonomous network operations (ANO) systems detect and remediate faults before service degradation becomes visible, and large language models are being evaluated as interfaces for network configuration and troubleshooting. Satellite constellations (Starlink, OneWeb, Amazon Kuiper) are extending broadband connectivity to previously unserved regions and providing resilient backhaul for terrestrial networks. 6G standardisation in 3GPP and ITU has commenced, targeting sub-millisecond latency, terahertz spectrum exploration, and integrated sensing-communication waveforms.
-

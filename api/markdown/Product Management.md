@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Product Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Product management is the organisational function responsible for guiding a product through its lifecycle by defining vision, strategy, and roadmap based on user needs, business goals, and market conditions. It coordinates design, engineering, and go-to-market work and prioritises features against constraints. AI tools increasingly assist with research synthesis, prioritisation, and roadmap visualisation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:ai-diagram-tools", "label": "AI Diagram Tools"}
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      }
     ]
   },
   "quality": 0.72

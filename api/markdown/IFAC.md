@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IFAC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "The International Federation of Automatic Control (IFAC) is the world's primary international organisation for the science and engineering of automatic control, founded in 1957 and comprising national member organisations from over fifty countries. IFAC coordinates research, education, and standards activity across all aspects of control theory and its applications, including process control, robotics, mechatronics, aerospace, and intelligent transportation. It convenes the triennial IFAC World Congress and sponsors over forty technical committees covering specialised control domains. IFAC's publications and conference proceedings constitute a core reference body for the global control engineering community.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ieee-control-systems-society", "label": "IEEE Control Systems Society"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
-      {"@id": "urn:ngm:class:safety-plc", "label": "Safety PLC"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
+      {
+        "@id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:safety-plc",
+        "label": "Safety PLC"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-61131-3", "label": "IEC 61131-3"}
+      {
+        "@id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
     ]
   },
   "quality": 0.8

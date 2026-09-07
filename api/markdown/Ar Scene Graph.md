@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ar Scene Graph
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -121,72 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ar-scene-graph:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:023fc23e68bf22213412cf1e0b9b96d5d69526caedc06442d091e17ed167e679"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Scene Reconstruction]]",
-      "resolved": "urn:visionflow:linked:3-d-scene-reconstruction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Context-Aware AR]]",
-      "resolved": "urn:visionflow:linked:context-aware-ar",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Retargetable AR Experiences]]",
-      "resolved": "urn:visionflow:linked:retargetable-ar-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Semantic Scene Understanding]]",
-      "resolved": "urn:visionflow:linked:semantic-scene-understanding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Spatial Relationships]]",
-      "resolved": "urn:visionflow:linked:spatial-relationships",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Object Detection]]",
-      "resolved": "urn:visionflow:owl:class:object-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Data Structure]]",
-      "resolved": "urn:visionflow:owl:class:spatial-data-structure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AR Scene Graph is a hierarchical data structure used in augmented reality to represent and organize spatial relationships between virtual objects, real-world elements, and their transformations, enabling context-aware placement, semantic understanding, and natural interaction between digital content and physical environments.

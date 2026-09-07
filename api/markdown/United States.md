@@ -1,8 +1,3 @@
----
-public: true
----
-
-# United States
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,8 +51,14 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:china", "label": "China"},
-      {"@id": "urn:ngm:class:digital-governance", "label": "Digital Governance"}
+      {
+        "@id": "urn:ngm:class:china",
+        "label": "China"
+      },
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
     ]
   },
   "quality": 0.6,
@@ -68,37 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:united-states:abafa4e09c01",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:27f9fef41636dfeae5a88f0f998c004801b6fd2a5bcf87dfdd3ca39ac4199e57"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[China]]",
-      "resolved": "urn:visionflow:linked:china",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A federal republic in North America and one of the world's largest economies, with a leading role in technology, finance, and research. It comprises fifty states and a federal district.

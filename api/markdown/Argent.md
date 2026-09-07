@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Argent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,47 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:argent:9fdf7113129f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7b31c45d8bc43822eabf45c09b7fe57e5e582175ea819cc53076cc7cfae4ff15"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Account Abstraction]]",
-      "resolved": "urn:visionflow:linked:account-abstraction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:linked:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Wallet]]",
-      "resolved": "urn:visionflow:linked:wallet",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A smart contract wallet for Ethereum and Layer 2 networks that uses account abstraction to provide features such as social recovery, spending limits and gasless transactions.

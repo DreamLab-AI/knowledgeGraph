@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Social Recovery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Social recovery is a wallet security mechanism that lets a user regain control of an account by relying on a set of trusted guardians rather than a single seed phrase. If a signing key is lost, a quorum of designated guardians can authorise a key rotation to a new owner address without ever holding the funds themselves. It mitigates catastrophic key loss while preserving self-custody, and is a flagship use case for smart-contract wallets.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:account-abstraction", "label": "Account Abstraction"},
-      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"}
+      {
+        "@id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      }
     ]
   },
   "quality": 0.72

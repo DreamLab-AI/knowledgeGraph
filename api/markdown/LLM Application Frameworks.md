@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LLM Application Frameworks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,52 +7,190 @@ public: true
   "title": "LLM Application Frameworks",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:ngm:class:agent-harness", "vc:label": "Agent Harness" },
-    { "@id": "urn:ngm:class:agentic-ai", "vc:label": "Agentic AI" },
-    { "@id": "urn:ngm:class:agentic-workflow", "vc:label": "Agentic Workflow" },
-    { "@id": "urn:ngm:class:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks" },
-    { "@id": "urn:ngm:class:agent-development-sdks", "vc:label": "Agent Development SDKs" },
-    { "@id": "urn:ngm:class:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes" },
-    { "@id": "urn:ngm:class:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation" },
-    { "@id": "urn:ngm:class:agentic-rag", "vc:label": "Agentic RAG" },
-    { "@id": "urn:ngm:class:vector-database", "vc:label": "Vector Database" },
-    { "@id": "urn:ngm:class:large-language-models", "vc:label": "Large Language Models" },
-    { "@id": "urn:ngm:class:tool-use", "vc:label": "Tool Use" },
-    { "@id": "urn:ngm:class:function-calling", "vc:label": "Function Calling" },
-    { "@id": "urn:ngm:class:model-context-protocol", "vc:label": "Model Context Protocol" },
-    { "@id": "urn:ngm:class:mcp-server", "vc:label": "MCP Server" },
-    { "@id": "urn:ngm:class:chain-of-thought", "vc:label": "Chain of Thought" },
-    { "@id": "urn:ngm:class:prompt-engineering", "vc:label": "Prompt Engineering" },
-    { "@id": "urn:ngm:class:reasoning", "vc:label": "Reasoning" },
-    { "@id": "urn:ngm:class:tool-call-loop", "vc:label": "Tool Call Loop" },
-    { "@id": "urn:ngm:class:agent-memory", "vc:label": "Agent Memory" },
-    { "@id": "urn:ngm:class:agent-loop", "vc:label": "Agent Loop" },
-    { "@id": "urn:ngm:class:foundation-models", "vc:label": "Foundation Models" },
-    { "@id": "urn:ngm:class:internal-ai-harness", "vc:label": "Internal AI Harness" },
-    { "@id": "urn:ngm:class:external-ai-harness", "vc:label": "External AI Harness" },
-    { "@id": "urn:ngm:class:multi-agent-systems", "vc:label": "Multi-Agent Systems" },
-    { "@id": "urn:ngm:class:orchestration", "vc:label": "Orchestration" },
-    { "@id": "urn:ngm:class:workflow-automation", "vc:label": "Workflow Automation" },
-    { "@id": "urn:ngm:class:autonomous-coding", "vc:label": "Autonomous Coding" },
-    { "@id": "urn:ngm:class:autonomous-agent", "vc:label": "Autonomous Agent" },
-    { "@id": "urn:ngm:class:context-window", "vc:label": "Context Window" },
-    { "@id": "urn:ngm:class:re-act-pattern", "vc:label": "ReAct Pattern" },
-    { "@id": "urn:ngm:class:information-retrieval", "vc:label": "Information Retrieval" },
-    { "@id": "urn:ngm:class:dense-retrieval", "vc:label": "Dense Retrieval" },
-    { "@id": "urn:ngm:class:hybrid-retrieval", "vc:label": "Hybrid Retrieval" },
-    { "@id": "urn:ngm:class:graphrag", "vc:label": "GraphRAG" },
-    { "@id": "urn:ngm:class:ai-safety", "vc:label": "AI Safety" },
-    { "@id": "urn:ngm:class:prompt-injection", "vc:label": "Prompt Injection" },
-    { "@id": "urn:ngm:class:human-in-the-loop", "vc:label": "Human-in-the-Loop" },
-    { "@id": "urn:ngm:class:eu-ai-act", "vc:label": "EU AI Act" },
-    { "@id": "urn:ngm:class:terminal-coding-agents", "vc:label": "Terminal Coding Agents" },
-    { "@id": "urn:ngm:class:api-integration", "vc:label": "API Integration" },
-    { "@id": "urn:ngm:class:swe-bench", "vc:label": "SWE-bench" },
-    { "@id": "urn:ngm:class:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks" },
-    { "@id": "urn:ngm:class:natural-language-processing", "vc:label": "Natural Language Processing" },
-    { "@id": "urn:ngm:class:document-retrieval", "vc:label": "Document Retrieval" },
-    { "@id": "urn:ngm:class:microservices-architecture", "vc:label": "Microservices Architecture" },
-    { "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "vc:label": "ComfyUI Workflows" }
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:ngm:class:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:ngm:class:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+      "vc:label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "@id": "urn:ngm:class:agent-development-sdks",
+      "vc:label": "Agent Development SDKs"
+    },
+    {
+      "@id": "urn:ngm:class:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:ngm:class:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:ngm:class:agentic-rag",
+      "vc:label": "Agentic RAG"
+    },
+    {
+      "@id": "urn:ngm:class:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:ngm:class:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:ngm:class:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:ngm:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:mcp-server",
+      "vc:label": "MCP Server"
+    },
+    {
+      "@id": "urn:ngm:class:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:ngm:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:ngm:class:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:ngm:class:tool-call-loop",
+      "vc:label": "Tool Call Loop"
+    },
+    {
+      "@id": "urn:ngm:class:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:ngm:class:agent-loop",
+      "vc:label": "Agent Loop"
+    },
+    {
+      "@id": "urn:ngm:class:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:ngm:class:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:ngm:class:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:ngm:class:orchestration",
+      "vc:label": "Orchestration"
+    },
+    {
+      "@id": "urn:ngm:class:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:ngm:class:autonomous-coding",
+      "vc:label": "Autonomous Coding"
+    },
+    {
+      "@id": "urn:ngm:class:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:ngm:class:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:ngm:class:re-act-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:ngm:class:information-retrieval",
+      "vc:label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:ngm:class:dense-retrieval",
+      "vc:label": "Dense Retrieval"
+    },
+    {
+      "@id": "urn:ngm:class:hybrid-retrieval",
+      "vc:label": "Hybrid Retrieval"
+    },
+    {
+      "@id": "urn:ngm:class:graphrag",
+      "vc:label": "GraphRAG"
+    },
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:ngm:class:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:ngm:class:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:ngm:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:ngm:class:terminal-coding-agents",
+      "vc:label": "Terminal Coding Agents"
+    },
+    {
+      "@id": "urn:ngm:class:api-integration",
+      "vc:label": "API Integration"
+    },
+    {
+      "@id": "urn:ngm:class:swe-bench",
+      "vc:label": "SWE-bench"
+    },
+    {
+      "@id": "urn:ngm:class:agent-evaluation-benchmarks",
+      "vc:label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:ngm:class:document-retrieval",
+      "vc:label": "Document Retrieval"
+    },
+    {
+      "@id": "urn:ngm:class:microservices-architecture",
+      "vc:label": "Microservices Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+      "vc:label": "ComfyUI Workflows"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -80,35 +213,83 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation" },
-      { "@id": "urn:ngm:class:tool-call-loop", "label": "Tool Call Loop" },
-      { "@id": "urn:ngm:class:agent-memory", "label": "Agent Memory" }
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:tool-call-loop",
+        "label": "Tool Call Loop"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:large-language-models", "label": "Large Language Models" },
-      { "@id": "urn:ngm:class:foundation-models", "label": "Foundation Models" },
-      { "@id": "urn:ngm:class:function-calling", "label": "Function Calling" }
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow" },
-      { "@id": "urn:ngm:class:agentic-rag", "label": "Agentic RAG" },
-      { "@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems" },
-      { "@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding" }
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol" },
-      { "@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern" }
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:agent-development-sdks", "label": "Agent Development SDKs" },
-      { "@id": "urn:ngm:class:multi-agent-orchestration-frameworks", "label": "Multi-Agent Orchestration Frameworks" },
-      { "@id": "urn:ngm:class:agent-execution-sandboxes", "label": "Agent Execution Sandboxes" }
+      {
+        "@id": "urn:ngm:class:agent-development-sdks",
+        "label": "Agent Development SDKs"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:internal-ai-harness", "label": "Internal AI Harness" }
+      {
+        "@id": "urn:ngm:class:internal-ai-harness",
+        "label": "Internal AI Harness"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -116,66 +297,6 @@ public: true
   },
   "vc:termId": "AI-9920",
   "vc:schemaVersion": 2
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:llm-application-frameworks:2026-06-21",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:llm-application-frameworks"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Agent Harness]]", "resolved": "urn:ngm:class:agent-harness", "kind": "ResolvedLink" },
-    { "raw": "[[Agentic AI]]", "resolved": "urn:ngm:class:agentic-ai", "kind": "ResolvedLink" },
-    { "raw": "[[Agentic Workflow]]", "resolved": "urn:ngm:class:agentic-workflow", "kind": "ResolvedLink" },
-    { "raw": "[[Multi-Agent Orchestration Frameworks]]", "resolved": "urn:ngm:class:multi-agent-orchestration-frameworks", "kind": "ResolvedLink" },
-    { "raw": "[[Agent Development SDKs]]", "resolved": "urn:ngm:class:agent-development-sdks", "kind": "ResolvedLink" },
-    { "raw": "[[Agent Execution Sandboxes]]", "resolved": "urn:ngm:class:agent-execution-sandboxes", "kind": "ResolvedLink" },
-    { "raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:ngm:class:retrieval-augmented-generation", "kind": "ResolvedLink" },
-    { "raw": "[[Agentic RAG]]", "resolved": "urn:ngm:class:agentic-rag", "kind": "ResolvedLink" },
-    { "raw": "[[Vector Database]]", "resolved": "urn:ngm:class:vector-database", "kind": "ResolvedLink" },
-    { "raw": "[[Large Language Models]]", "resolved": "urn:ngm:class:large-language-models", "kind": "ResolvedLink" },
-    { "raw": "[[Tool Use]]", "resolved": "urn:ngm:class:tool-use", "kind": "ResolvedLink" },
-    { "raw": "[[Function Calling]]", "resolved": "urn:ngm:class:function-calling", "kind": "ResolvedLink" },
-    { "raw": "[[Model Context Protocol]]", "resolved": "urn:ngm:class:model-context-protocol", "kind": "ResolvedLink" },
-    { "raw": "[[MCP Server]]", "resolved": "urn:ngm:class:mcp-server", "kind": "ResolvedLink" },
-    { "raw": "[[Chain of Thought]]", "resolved": "urn:ngm:class:chain-of-thought", "kind": "ResolvedLink" },
-    { "raw": "[[Prompt Engineering]]", "resolved": "urn:ngm:class:prompt-engineering", "kind": "ResolvedLink" },
-    { "raw": "[[Reasoning]]", "resolved": "urn:ngm:class:reasoning", "kind": "ResolvedLink" },
-    { "raw": "[[Tool Call Loop]]", "resolved": "urn:ngm:class:tool-call-loop", "kind": "StubLink" },
-    { "raw": "[[Agent Memory]]", "resolved": "urn:ngm:class:agent-memory", "kind": "ResolvedLink" },
-    { "raw": "[[Agent Loop]]", "resolved": "urn:ngm:class:agent-loop", "kind": "ResolvedLink" },
-    { "raw": "[[Foundation Models]]", "resolved": "urn:ngm:class:foundation-models", "kind": "ResolvedLink" },
-    { "raw": "[[Internal AI Harness]]", "resolved": "urn:ngm:class:internal-ai-harness", "kind": "ResolvedLink" },
-    { "raw": "[[External AI Harness]]", "resolved": "urn:ngm:class:external-ai-harness", "kind": "ResolvedLink" },
-    { "raw": "[[Multi-Agent Systems]]", "resolved": "urn:ngm:class:multi-agent-systems", "kind": "ResolvedLink" },
-    { "raw": "[[Orchestration]]", "resolved": "urn:ngm:class:orchestration", "kind": "ResolvedLink" },
-    { "raw": "[[Workflow Automation]]", "resolved": "urn:ngm:class:workflow-automation", "kind": "ResolvedLink" },
-    { "raw": "[[Autonomous Coding]]", "resolved": "urn:ngm:class:autonomous-coding", "kind": "ResolvedLink" },
-    { "raw": "[[Autonomous Agent]]", "resolved": "urn:ngm:class:autonomous-agent", "kind": "ResolvedLink" },
-    { "raw": "[[Context Window]]", "resolved": "urn:ngm:class:context-window", "kind": "ResolvedLink" },
-    { "raw": "[[ReAct Pattern]]", "resolved": "urn:ngm:class:re-act-pattern", "kind": "ResolvedLink" },
-    { "raw": "[[Information Retrieval]]", "resolved": "urn:ngm:class:information-retrieval", "kind": "ResolvedLink" },
-    { "raw": "[[Dense Retrieval]]", "resolved": "urn:ngm:class:dense-retrieval", "kind": "ResolvedLink" },
-    { "raw": "[[Hybrid Retrieval]]", "resolved": "urn:ngm:class:hybrid-retrieval", "kind": "ResolvedLink" },
-    { "raw": "[[GraphRAG]]", "resolved": "urn:ngm:class:graphrag", "kind": "ResolvedLink" },
-    { "raw": "[[AI Safety]]", "resolved": "urn:ngm:class:ai-safety", "kind": "ResolvedLink" },
-    { "raw": "[[Prompt Injection]]", "resolved": "urn:ngm:class:prompt-injection", "kind": "ResolvedLink" },
-    { "raw": "[[Human-in-the-Loop]]", "resolved": "urn:ngm:class:human-in-the-loop", "kind": "ResolvedLink" },
-    { "raw": "[[EU AI Act]]", "resolved": "urn:ngm:class:eu-ai-act", "kind": "ResolvedLink" },
-    { "raw": "[[Terminal Coding Agents]]", "resolved": "urn:ngm:class:terminal-coding-agents", "kind": "ResolvedLink" },
-    { "raw": "[[API Integration]]", "resolved": "urn:ngm:class:api-integration", "kind": "StubLink" },
-    { "raw": "[[SWE-bench]]", "resolved": "urn:ngm:class:swe-bench", "kind": "StubLink" },
-    { "raw": "[[Agent Evaluation Benchmarks]]", "resolved": "urn:ngm:class:agent-evaluation-benchmarks", "kind": "ResolvedLink" },
-    { "raw": "[[Natural Language Processing]]", "resolved": "urn:ngm:class:natural-language-processing", "kind": "ResolvedLink" },
-    { "raw": "[[Document Retrieval]]", "resolved": "urn:ngm:class:document-retrieval", "kind": "ResolvedLink" },
-    { "raw": "[[Microservices Architecture]]", "resolved": "urn:ngm:class:microservices-architecture", "kind": "ResolvedLink" }
-  ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
-  "prov:generatedAtTime": { "@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime" }
 }
 ```
 
@@ -300,7 +421,7 @@ public: true
 
   The evolution from LangChain's linear chain abstraction to LangGraph's directed state graph model in 2024 represented the most significant architectural inflection in the framework category. Linear chains — where each step passes its output to the next in a fixed sequence — proved insufficient for [[Agentic Workflow]] patterns that require branching on tool results, looping until a condition is met, parallel sub-task execution, and selective revision of earlier steps. LangGraph addressed this by modelling agent topologies as directed graphs where nodes represent computation steps and edges carry typed state schemas, with conditional edges enabling arbitrary branching logic. This model aligned directly with production requirements for audit trails (graph traversal is intrinsically log-structured), rollback (checkpointing captures graph state at any node), and human approval gates (inserting a human-review node into the graph at any edge). LangGraph reached 34.5 million monthly PyPI downloads by early 2026, becoming the dominant orchestration substrate for Python-based [[Agentic Workflow]] deployments. The LangGraph 1.0 stable release (October 2025, after breaking changes in versions 0.1 through 0.3) and LangGraph Studio v2 (May 2025), with LangSmith integration for production trace debugging, marked its transition from experimental framework to production infrastructure.
 
-  The [[Model Context Protocol]] (MCP, Anthropic, November 2024) reshaped the integration layer of LLM application frameworks as fundamentally as LangChain's original chain abstractions reshaped application composition. By standardising the protocol through which [[Foundation Models]] discover and invoke external tools — functioning as a universal adapter between models and tool implementations — MCP eliminated the per-tool integration overhead that had made large tool catalogues expensive to maintain. LLM application frameworks that implemented MCP could immediately access the growing ecosystem of [[MCP Server]] implementations for web search, databases, file systems, code execution environments, and enterprise APIs, with no per-server custom integration code. LangGraph, Mastra, Agno, Langflow, and n8n all achieved MCP compatibility by mid-2025, with MCP becoming the dominant tool-discovery mechanism for new framework integrations by early 2026.
+  The [[Model Context Protocol]] (MCP, Anthropic, November 2024) reshaped the integration layer of LLM application frameworks as fundamentally as LangChain's original chain abstractions reshaped application composition. By standardising the protocol through which [[Foundation Models]] discover and invoke external tools — functioning as a universal adapter between models and tool implementations — MCP eliminated the per-tool integration overhead that had made large tool catalogues expensive to maintain. LLM application frameworks that implemented MCP [private] immediately access the growing ecosystem of [[MCP Server]] implementations for web search, databases, file systems, code execution environments, and enterprise APIs, with no per-server custom integration code. LangGraph, Mastra, Agno, Langflow, and n8n all achieved MCP compatibility by mid-2025, with MCP becoming the dominant tool-discovery mechanism for new framework integrations by early 2026.
 
   ## Components / Architecture
 
@@ -336,9 +457,9 @@ public: true
 
   **Ingestion** — documents are loaded from sources (file systems, SharePoint, Confluence, email, PDFs, web pages), cleaned (encoding normalisation, header/footer removal, boilerplate stripping), and split into chunks sized for retrieval. Chunk size selection is a critical trade-off: small chunks (128–256 tokens) provide precise retrieval but lose surrounding context; large chunks (1024–2048 tokens) retain context but reduce retrieval precision. The parent-child chunking strategy (LlamaIndex's primary innovation in 2024–2025) stores large "parent" chunks for context and small "child" chunks for retrieval, returning parent chunks when child chunks match — achieving both retrieval precision and contextual completeness. Metadata extraction (document title, author, date, section headers, entity mentions) enables metadata-filtered retrieval that dramatically improves precision for structured document collections.
 
-  **Indexing** — chunk embeddings are generated by a provider embedding model (OpenAI text-embedding-3-large, Cohere embed-v3, local sentence-transformers models) and stored in a [[Vector Database]] (Pinecone, Weaviate, Qdrant, pgvector, Chroma). [[Dense Retrieval]] indices support semantic similarity queries. [[Hybrid Retrieval]] systems combine dense semantic indices with sparse BM25 keyword indices, using Reciprocal Rank Fusion (RRF) to merge results. [[GraphRAG]] systems additionally extract named entities and relations from documents and build a knowledge graph index, enabling multi-hop queries that traverse entity relationships rather than document similarities.
+  **Indexing** — chunk embeddings are generated by a provider embedding model (OpenAI text-embedding-3-large, Cohere embed-v3, local sentence-transformers models) and stored in a [[Vector Database]] (Pinecone, Weaviate, Qdrant, pgvector, Chroma). [[Dense Retrieval]] indices support semantic similarity queries. [[Hybrid Retrieval]] systems combine dense semantic indices with sparse BM25 keyword indices, using Reciprocal Rank Fusion (RRF) to merge results. [[GraphRAG]] systems additionally extract named entities and relations from documents and build a knowledge graph [private], enabling multi-hop queries that traverse entity relationships rather than document similarities.
 
-  **Retrieval** — a user query is embedded and used to retrieve top-k semantically similar chunks from the dense index, top-k keyword matches from the sparse index (in hybrid systems), or a traversal starting set from the knowledge graph (in GraphRAG). Reranking passes the initial retrieval results to a cross-encoder model (Cohere Rerank, ColBERT, or a local reranker) that jointly scores the query-chunk pair, improving precision compared to bi-encoder similarity scores. CRAG (Corrective RAG, Yan et al., 2024) adds a retrieval quality evaluator that scores retrieved chunks against the query and triggers web search via [[Agentic RAG]] when local retrieval is insufficient.
+  **Retrieval** — a user query is embedded and used to retrieve top-k semantically similar chunks from the dense [private], top-k keyword matches from the sparse [private] (in hybrid systems), or a traversal starting set from the knowledge graph (in GraphRAG). Reranking passes the initial retrieval results to a cross-encoder model (Cohere Rerank, ColBERT, or a local reranker) that jointly scores the query-chunk pair, improving precision compared to bi-encoder similarity scores. CRAG (Corrective RAG, Yan et al., 2024) adds a retrieval quality evaluator that scores retrieved chunks against the query and triggers web search via [[Agentic RAG]] when local retrieval is insufficient.
 
   **Generation** — retrieved chunks are injected into the model prompt as context, and the model generates a response grounded in the retrieved content. Citation extraction (identifying which retrieved chunks each claim in the response derives from) enables verifiable, auditable responses. LlamaIndex's citation module and LangChain's document reference tracking implement this. Faithfulness checking (comparing the response against retrieved content to detect hallucinated claims) is implemented by the RAGAS evaluation framework and is increasingly integrated into production frameworks as an inline quality gate.
 
@@ -350,7 +471,7 @@ public: true
 
   **Framework-as-data-layer** — LlamaIndex or a similar retrieval-specialised framework serves as the data access layer for one or more orchestration frameworks. The data layer handles document ingestion, chunking, embedding, [[Vector Database]] indexing, retrieval, and reranking; the orchestration layer (LangGraph, Mastra, Microsoft Agent Framework) handles multi-step reasoning, [[Tool Use]], and state management. The interface between the two layers is a typed retrieval tool: the orchestration framework invokes the retrieval tool with a query and receives a list of ranked, scored documents. This separation of concerns (data management vs agent logic) enables independent evolution of retrieval strategies without affecting agent orchestration logic.
 
-  **Framework-as-MCP-server** — workflow builders (Langflow, n8n) expose their composed workflows as [[MCP Server]] endpoints, making them callable by higher-level orchestration agents. A Langflow workflow that retrieves information from a RAG index and summarises it becomes a callable tool for a LangGraph orchestrator agent. This pattern enables hierarchical composition: high-level strategy agents invoke mid-level tool agents (implemented as workflow MCP servers) that invoke low-level tool calls (API integrations, database queries). The composition hierarchy can be as deep as required without any single framework needing to implement all levels.
+  **Framework-as-MCP-server** — workflow builders (Langflow, n8n) expose their composed workflows as [[MCP Server]] endpoints, making them callable by higher-level orchestration agents. A Langflow workflow that retrieves information from a RAG [private] and summarises it becomes a callable tool for a LangGraph orchestrator agent. This pattern enables hierarchical composition: high-level strategy agents invoke mid-level tool agents (implemented as workflow MCP servers) that invoke low-level tool calls (API integrations, database queries). The composition hierarchy can be as deep as required without any single framework needing to implement all levels.
 
   **Framework-plus-sandbox integration** — [[Agent Execution Sandboxes]] are integrated into framework tool registries through the [[Model Context Protocol]] gateway pattern, enabling the orchestration framework to invoke isolated code execution as a first-class tool alongside other tools (web search, database query, API call). LangGraph provides a native E2B integration module; Mastra integrates with Daytona via MCP; Claude's agent SDK integrates with [[VisionClaw Agentic Container]] sandboxes. This pattern ensures that framework-orchestrated agents can execute AI-generated code safely without the orchestration framework needing to implement sandbox management.
 
@@ -374,13 +495,13 @@ public: true
 
   LLM application framework deployments exhibit systematic failure modes that differ from both raw model inference failures and traditional software failures. Understanding these failure modes is essential for production reliability engineering:
 
-  **Retrieval failures** — the retrieval pipeline fails to surface relevant context for the query, causing the model to generate from prior knowledge or hallucinate. Causes include: query-document embedding space mismatch (the query uses different vocabulary from the documents), chunking that splits key information across chunk boundaries, missing metadata filtering for temporally constrained queries ("what are the current regulations" over a mixed-vintage document corpus), and [[Vector Database]] index staleness (documents updated after last indexing are invisible to retrieval). Mitigation: CRAG-style retrieval quality evaluation with [[Agentic RAG]] fallback to web search; real-time index update triggers on document change events; query rewriting to align vocabulary with document language.
+  **Retrieval failures** — the retrieval pipeline fails to surface relevant context for the query, causing the model to generate from prior knowledge or hallucinate. Causes include: query-document embedding space mismatch (the query uses different vocabulary from the documents), chunking that splits key information across chunk boundaries, missing metadata filtering for temporally constrained queries ("what are the current regulations" over a mixed-vintage document corpus), and [[Vector Database]] [private] staleness (documents updated after last indexing are invisible to retrieval). Mitigation: CRAG-style retrieval quality evaluation with [[Agentic RAG]] fallback to web search; real-time [private] update triggers on document change events; query rewriting to align vocabulary with document language.
 
   **Context window saturation** — the retrieved context, combined with the conversation history and system prompt, exceeds the model's [[Context Window]] limit. Causes include: large chunk sizes, excessive conversation history, multiple retrieval rounds without compression. Mitigation: progressive context compression (summarising older conversation turns); dynamic chunk size selection based on available context budget; priority-ranked context injection (most relevant chunks first, cutting at context limit).
 
   **Tool call failures in agentic RAG** — [[Agentic RAG]] systems that issue multiple retrieval and tool calls may fail mid-pipeline due to API rate limits, tool timeouts, or malformed responses. Each failure point potentially propagates as incorrect assumptions in subsequent steps. Mitigation: tool call retry with exponential back-off; graceful degradation (continuing with partial context rather than aborting the pipeline); explicit uncertainty propagation (marking claims derived from failed retrievals as unverified).
 
-  **[[Prompt Injection]] through retrieved content** — the [[Retrieval-Augmented Generation]] pipeline is particularly vulnerable to [[Prompt Injection]] because it actively injects externally sourced content into the model's prompt. An attacker who can place hostile instructions in a document that the RAG system will index and retrieve (a planted web page, a deliberately modified internal document) can hijack the agent's behaviour via retrieved context injection. LangChain's Hui et al. paper (2024, "Poisoned LangChain") demonstrated systematic exploitation of this vector. Mitigation: input validation of retrieved content before injection; trust tier separation (RAG-retrieved content is lower trust than system prompt and user instruction); semantic analysis of retrieved content for instruction-like patterns before context injection.
+  **[[Prompt Injection]] through retrieved content** — the [[Retrieval-Augmented Generation]] pipeline is particularly vulnerable to [[Prompt Injection]] because it actively injects externally sourced content into the model's prompt. An attacker who can place hostile instructions in a document that the RAG system will [private] and retrieve (a planted web page, a deliberately modified internal document) can hijack the agent's behaviour via retrieved context injection. LangChain's Hui et al. paper (2024, "Poisoned LangChain") demonstrated systematic exploitation of this vector. Mitigation: input validation of retrieved content before injection; trust tier separation (RAG-retrieved content is lower trust than system prompt and user instruction); semantic analysis of retrieved content for instruction-like patterns before context injection.
 
   **Framework version instability** — the LLM application framework ecosystem has been characterised by rapid breaking changes as frameworks evolved from experimental to production maturity. LangGraph had significant breaking changes between versions 0.1 and 0.3 before stabilising at 1.0 in October 2025. Teams that deployed against pre-1.0 versions faced significant migration costs. Mitigation: pin framework versions in production; maintain a test suite that validates framework-version upgrade compatibility before promoting to production; prefer frameworks that have issued formal LTS commitments (Microsoft Agent Framework 1.0 LTS, LangGraph 1.0 with stable API commitment).
 
@@ -388,11 +509,11 @@ public: true
 
   The intellectual foundations of LLM application frameworks draw from software engineering research on component composition and middleware, information retrieval research on text search and semantic similarity, and the emerging agentic AI research literature on reasoning patterns and tool use.
 
-  The earliest academic contribution directly shaping LLM frameworks is the RAG paradigm itself: Lewis et al. "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (NeurIPS 2020) demonstrated that augmenting generative models with retrieved passages from a [[Dense Retrieval]] index improved factual accuracy on knowledge-intensive tasks while enabling knowledge to be updated without fine-tuning. This paper established the retrieval-then-generate pattern that all major frameworks implement as their primary [[Information Retrieval]] integration. Karpukhin et al. "Dense Passage Retrieval for Open-Domain Question Answering" (EMNLP 2020) provided the [[Dense Retrieval]] indexing methodology (bi-encoder dense retrieval with FAISS indexing) that became the standard backend for framework RAG components.
+  The earliest academic contribution directly shaping LLM frameworks is the RAG paradigm itself: Lewis et al. "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" (NeurIPS 2020) demonstrated that augmenting generative models with retrieved passages from a [[Dense Retrieval]] [private] improved factual accuracy on knowledge-intensive tasks while enabling knowledge to be updated without fine-tuning. This paper established the retrieval-then-generate pattern that all major frameworks implement as their primary [[Information Retrieval]] integration. Karpukhin et al. "Dense Passage Retrieval for Open-Domain Question Answering" (EMNLP 2020) provided the [[Dense Retrieval]] indexing methodology (bi-encoder dense retrieval with FAISS indexing) that became the standard backend for framework RAG components.
 
   The agentic reasoning patterns implemented by framework orchestration layers were established by Yao et al. "ReAct: Synergizing Reasoning and Acting in Language Models" (NeurIPS 2022), which demonstrated that interleaving [[Chain of Thought]] reasoning with explicit tool invocations improved both reliability and interpretability of [[Tool Call Loop]] execution. Shinn et al. "Reflexion: Language Agents with Verbal Reinforcement Learning" (NeurIPS 2023) introduced the reflection pattern where agents iteratively improve through verbal self-critique, now implemented as a first-class pattern in LangGraph's cyclic graph support and in multi-agent critique loops in CrewAI and AutoGen.
 
-  Framework-specific academic analysis includes work on LangChain's security vulnerabilities: Hui et al. "Poisoned LangChain: Jailbreak LLMs by LangChain" (2024, arXiv:2406.18122) demonstrated systematic [[Prompt Injection]] attacks through LangChain's document retrieval pipeline, where hostile content injected into retrieved documents could override the agent's system prompt. This research directly motivated LangSmith's input validation features and the framework community's adoption of [[Model Context Protocol]]'s authentication and provenance tracking mechanisms.
+  Framework-specific academic analysis includes work on LangChain's security vulnerabilities: Hui et al. "Poisoned LangChain: Jailbreak LLMs by LangChain" (2024, arXiv:2406.18122) demonstrated systematic [[Prompt Injection]] attacks through LangChain's document retrieval pipeline, where hostile content injected into retrieved documents [private] override the agent's system prompt. This research directly motivated LangSmith's input validation features and the framework community's adoption of [[Model Context Protocol]]'s authentication and provenance tracking mechanisms.
 
   Research on advanced [[Retrieval-Augmented Generation]] has produced several variants that frameworks are integrating: HyDE (Hypothetical Document Embeddings, Gao et al., 2023) generates a hypothetical answer to the query and uses its embedding for retrieval, improving recall for poorly-phrased queries; CRAG (Corrective RAG, Yan et al., 2024) adds a retrieval evaluator that triggers web search when retrieved documents are insufficient; [[GraphRAG]] (Edge et al., Microsoft Research, 2024) builds knowledge graphs from documents and traverses them for multi-hop reasoning tasks. LlamaIndex and LangGraph both implement CRAG as a standard pattern (the LangGraph CRAG tutorial was the most-replicated agentic pattern of 2025).
 
@@ -467,7 +588,7 @@ public: true
   **Chain** — a sequential composition of LLM calls, retrievers, and transformations; LangChain's original core abstraction, now largely superseded by graphs in production use.
   **Graph Node** — a computation unit in LangGraph's directed state graph; reads from and writes to the shared typed state schema.
   **State Schema** — the typed dictionary defining the complete agent state in LangGraph; every node reads from and writes to this schema, making state evolution auditable.
-  **Retriever** — an abstraction over any source of context (vector index, BM25 keyword search, knowledge graph, SQL database) that accepts a query and returns relevant passages.
+  **Retriever** — an abstraction over any source of context (vector [private], BM25 keyword search, knowledge graph, SQL database) that accepts a query and returns relevant passages.
   **[[Tool Call Loop]]** — the iterative reasoning loop: observe → reason → invoke tool → observe result → repeat, implemented by every framework's agent abstraction.
   **LCEL** — LangChain Expression Language; declarative pipeline composition operator (`|`) enabling synchronous, asynchronous, batch, and streaming execution of the same chain definition.
   **Handoff** — in the OpenAI Agents SDK, the mechanism for transferring control between agents while preserving conversational context; analogous to function-calling between specialist sub-agents.

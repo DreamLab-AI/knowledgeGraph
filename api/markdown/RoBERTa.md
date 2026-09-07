@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RoBERTa
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,32 +171,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ro-berta:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:da1d143293bd3581d65d8f77d8d577443fa66a375feee126e308318bb80c8443"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.
 
@@ -300,7 +269,7 @@ public: true
 
   - The model exemplifies a crucial insight in transformer development: that pretraining methodology matters as profoundly as model architecture itself
   - Contrasts with contemporaneous approaches like XLNet (which questioned masked language modelling as an objective) and ALBERT (which prioritised architectural efficiency)
-  - Established that training rigour could unlock considerable headroom for improvement within the pretrained transformer paradigm[1][2]
+  - Established that training rigour [private] unlock considerable headroom for improvement within the pretrained transformer paradigm[1][2]
 
   ## Current Landscape (2025)
 

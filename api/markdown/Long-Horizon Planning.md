@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Long-Horizon Planning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Long-horizon planning is the problem of generating and executing sequences of actions over extended time horizons — spanning hundreds to thousands of steps — to achieve high-level goals that cannot be accomplished through simple reactive policies. It requires maintaining coherent goals, managing intermediate subgoal states, and adapting plans in response to environmental changes and unexpected outcomes.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:task-planning",
+      "label": "Task Planning"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
+      {
+        "@id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:reinforcement-learning-for-robotics", "label": "Reinforcement Learning for Robotics"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - In the era of large language models, long-horizon planning has partially shifted from symbolic or RL-based approaches to LLM-orchestrated decomposition. Frameworks such as Tree-of-Thought, Plan-and-Solve, and Code as Policies use LLMs to generate structured plans, verify intermediate states, and re-plan upon failure. SayPlan and Inner Monologue integrate LLM planners with robotic execution, using language-described observations to guide re-planning. In software engineering contexts, Devin and SWE-Agent demonstrate LLM agents executing multi-day coding tasks spanning hundreds of file edits and test-and-fix cycles.
 
   - By 2025, long-horizon planning remains one of the hardest open problems in AI. Current LLM-based agents exhibit plan drift over extended horizons — accumulating errors that cascade into task failure — and struggle with novel constraint satisfaction. Research directions include neurosymbolic approaches that combine LLM flexibility with symbolic planner guarantees, hierarchical memory architectures that maintain compressed representations of completed plan stages, and multi-agent decomposition that distributes horizon-length across parallel worker agents. Benchmarks such as ALFWorld, WebArena, and OSWorld track progress on long-horizon task completion, with frontier agents achieving 50–75% success on mid-difficulty tasks as of 2024.
-

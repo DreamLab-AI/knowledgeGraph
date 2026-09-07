@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Portability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,19 +75,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:asset-format-standards", "label": "Asset Format Standards"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:asset-format-standards",
+        "label": "Asset Format Standards"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:avatar-portability", "label": "Avatar Portability"},
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"}
+      {
+        "@id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "provenance": {
@@ -102,62 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:portability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:31ef4014be14247fcbb59f7f1df7f0dd4af6da43a774484d3462f0fdc1dac112"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentraland]]",
-      "resolved": "urn:visionflow:linked:decentraland",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[glTF]]",
-      "resolved": "urn:visionflow:linked:gl-tf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NFT]]",
-      "resolved": "urn:visionflow:linked:nft",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ready Player Me]]",
-      "resolved": "urn:visionflow:linked:ready-player-me",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ReadyPlayerMe]]",
-      "resolved": "urn:visionflow:linked:ready-player-me",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[USD]]",
-      "resolved": "urn:visionflow:linked:usd",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats ([[glTF]], [[USD]]), metadata schemas, and blockchain bridges—enabling users to transfer avatars, digital goods, and social connections without vendor lock-in, exemplified by VRM-based cross-platform avatar systems and [[Decentraland]] NFT portability.

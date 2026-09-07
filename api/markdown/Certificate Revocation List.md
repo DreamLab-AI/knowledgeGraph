@@ -1,39 +1,114 @@
----
-public: true
----
-
-# Certificate Revocation List
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:certificate-revocation-list", "@type":"Page", "title":"Certificate Revocation List", "vc:slug":"certificate-revocation-list", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:certificate-revocation-list",
+  "@type": "Page",
+  "title": "Certificate Revocation List",
+  "vc:slug": "certificate-revocation-list",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:certificate-revocation-list",
-  "@type":"Class",
-  "label":"Certificate Revocation List",
-  "definition":"A Certificate Revocation List (CRL) is a digitally signed, periodically published list of digital certificates that a certificate authority has revoked before their scheduled expiry. Each entry records the serial number of a revoked certificate, the revocation date, and an optional reason code, allowing relying parties to reject certificates that are no longer trustworthy. CRLs are a core revocation mechanism of X.509 public key infrastructure, complemented or replaced in many deployments by the Online Certificate Status Protocol.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:revocation-registry","label":"Revocation Registry"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:cryptographic-infrastructure","label":"Public Key Infrastructure"}],
-    "hasPart":[{"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"}],
-    "implements":[{"@id":"urn:ngm:class:rfc-5280","label":"RFC 5280"}],
-    "dependsOn":[{"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}],
-    "requires":[{"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"}],
-    "uses":[{"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"}],
-    "supports":[{"@id":"urn:ngm:class:x-509-certificate","label":"X.509 Certificate"},{"@id":"urn:ngm:class:trust-anchor","label":"Trust Anchor"}],
-    "enables":[{"@id":"urn:ngm:class:digital-certificate","label":"Digital Certificate"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:ietf","label":"IETF"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:ocsp","label":"OCSP"}],
-    "relatedTo":[{"@id":"urn:ngm:class:certificate-transparency","label":"Certificate Transparency"},{"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:certificate-revocation-list",
+  "@type": "Class",
+  "label": "Certificate Revocation List",
+  "definition": "A Certificate Revocation List (CRL) is a digitally signed, periodically published list of digital certificates that a certificate authority has revoked before their scheduled expiry. Each entry records the serial number of a revoked certificate, the revocation date, and an optional reason code, allowing relying parties to reject certificates that are no longer trustworthy. CRLs are a core revocation mechanism of X.509 public key infrastructure, complemented or replaced in many deployments by the Online Certificate Status Protocol.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:revocation-registry",
+      "label": "Revocation Registry"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ocsp",
+        "label": "OCSP"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

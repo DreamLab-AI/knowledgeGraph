@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Social Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,20 +46,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-community-platform", "label": "Virtual Community Platform"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+      {
+        "@id": "urn:ngm:class:virtual-community-platform",
+        "label": "Virtual Community Platform"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"},
-      {"@id": "urn:ngm:class:social-network-graph", "label": "Social Network Graph"}
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "@id": "urn:ngm:class:social-network-graph",
+        "label": "Social Network Graph"
+      }
     ]
   },
   "provenance": {
@@ -74,26 +93,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:social-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:806571c040f358693c3e6eba4fd7edbaed22502a5cb863822bfa447f63a22ea7"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Social Platform is a networked software environment that mediates human connection, identity expression, content sharing, and community formation. It combines identity management, real-time communication, moderation tooling, and reputation mechanisms to sustain persistent social graphs, supporting both synchronous interaction (voice, video) and asynchronous content exchange across devices.

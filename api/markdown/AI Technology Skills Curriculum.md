@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Courses and Training]]
-# AI Technology Skills Curriculum
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,19 +51,40 @@ elevatedFrom:: [[Courses and Training]]
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:ai-development", "label": "AI Development"},
-      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}
+      {
+        "@id": "urn:ngm:class:ai-development",
+        "label": "AI Development"
+      },
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
-      {"@id": "urn:ngm:class:learning-resources", "label": "Learning Resources"}
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:learning-resources",
+        "label": "Learning Resources"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "provenance": {
@@ -79,37 +94,6 @@ elevatedFrom:: [[Courses and Training]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:courses-and-training:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:460ddc29975b00ef4b91206b771920aa2abe017f4a9c97551f4cd538dc47b4e3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Latent Space]]",
-      "resolved": "urn:visionflow:owl:class:latent-space",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Structured educational programmes and skill-development resources covering artificial intelligence, machine learning, blockchain, spatial computing, and related technologies. These include MOOCs, short courses, university programmes, professional certifications, and self-directed learning materials that build practitioner capacity across technical and non-technical audiences.
@@ -140,7 +124,7 @@ elevatedFrom:: [[Courses and Training]]
 		- DeepLearning.AI](https://www.deeplearning.ai/courses/generative-ai-for-everyone/): A course that provides a comprehensive introduction to generative AI.
   - [Generative AI with Large Language Models | Coursera](https://www.coursera.org/learn/generative-ai-with-llms): A Coursera course that focuses on generative AI using large language models.
   - Statistics Resources:
-  - [Statistics course](https://www.youtube.com/watch?v=KbB0FjPg0mw&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&index=1): A YouTube playlist that covers various topics in statistics.
+  - [Statistics course](https://www.youtube.com/watch?v=KbB0FjPg0mw&list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo&[private]=1): A YouTube playlist that covers various topics in statistics.
   - AI and Deep Learning Resources:
   - https://www.manning.com/books/deep-learning-with-python-second-edition?
 		- https://github.com/fchollet/deep-learning-with-python-notebooks

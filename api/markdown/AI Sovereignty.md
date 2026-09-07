@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Sovereignty
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,28 @@ public: true
   "definition": "AI Sovereignty is the capacity of a nation or bloc to develop, control, and govern artificial-intelligence systems and their underlying compute, data, and models without dependence on foreign providers. It motivates domestic investment in chips, data centres, foundation models, and regulation to retain strategic autonomy. The concept frames AI capability as critical national infrastructure subject to security, economic, and geopolitical considerations.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:competition-in-ai", "label": "Competition in AI"},
-      {"@id": "urn:ngm:class:ai-chips", "label": "AI Chips"}
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      }
     ]
   },
   "quality": 0.72
 }
 ```
+
 - ### Definition
   - AI Sovereignty is a state's ability to build and govern AI independently of foreign control. It both enables and is supported by [[Competition in AI]], driving investment in domestic [[AI Chips]], data, and models.
 - ### Content

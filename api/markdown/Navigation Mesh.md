@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Navigation Mesh
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A navigation mesh (navmesh) is a data structure that decomposes the traversable area of a virtual environment into a set of convex polygons over which an agent can move freely. By abstracting walkable space into connected regions, it enables efficient pathfinding without searching a dense uniform grid. Navmeshes are the standard representation for movement and obstacle avoidance in game AI and simulated 3D worlds.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-game-agent", "label": "AI Game Agent"},
-      {"@id": "urn:ngm:class:ai-in-games", "label": "AI in Games"}
+      {
+        "@id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      },
+      {
+        "@id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      }
     ]
   },
   "quality": 0.72

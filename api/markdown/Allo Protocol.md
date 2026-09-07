@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Allo Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:allo-protocol:ff729feee8b9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:879c8a85440f2aa47512aa2883b1cd33d11f749960247a66e7a4336b7e8733be"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Token]]",
-      "resolved": "urn:visionflow:linked:token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web3 Infrastructure]]",
-      "resolved": "urn:visionflow:linked:web-3-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:linked:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://allo.gitcoin.co/]]",
-      "resolved": "urn:visionflow:linked:https-allo-gitcoin-co",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.allo.gitcoin.co/]]",
-      "resolved": "urn:visionflow:linked:https-docs-allo-gitcoin-co",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Allo Protocol is an on-chain framework developed by Gitcoin for allocating capital, supporting funding mechanisms such as quadratic funding and grants.

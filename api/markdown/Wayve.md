@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wayve
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:wayve:1adc12a65fe6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dd353311f7c953478aeedb9a0214524e442bc1c7ac694d797440f0790846f293"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Vehicle]]",
-      "resolved": "urn:visionflow:linked:autonomous-vehicle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Driving]]",
-      "resolved": "urn:visionflow:linked:autonomous-driving",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://wayve.ai]]",
-      "resolved": "urn:visionflow:linked:https-wayve-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://wayve.ai/technology]]",
-      "resolved": "urn:visionflow:linked:https-wayve-ai-technology",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Wayve is a British company developing self-driving technology based on end-to-end machine learning rather than hand-coded rules. It is headquartered in London.

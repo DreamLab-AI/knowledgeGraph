@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Investment Contract Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Investment contract analysis is the legal evaluation of whether a financial arrangement constitutes a security, most commonly by applying the Howey test's criteria of an investment of money in a common enterprise with an expectation of profit derived from others' efforts. In crypto-asset regulation it determines whether a token offering falls under securities law and its attendant registration and disclosure obligations. It is a decisive step in assessing regulatory exposure for digital-asset issuers.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
-      {"@id": "urn:ngm:class:howey-test", "label": "Howey Test"}
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      }
     ]
   },
   "quality": 0.72

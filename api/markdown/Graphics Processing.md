@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Graphics Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,57 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:graphics-processing:6bc755e6ae94",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e498e9acf757d7278b13a8479a06581b95cdc0b64092c3430b61267f66361c72"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GPU]]",
-      "resolved": "urn:visionflow:linked:gpu",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rendering Pipeline]]",
-      "resolved": "urn:visionflow:linked:rendering-pipeline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Rendering]]",
-      "resolved": "urn:visionflow:linked:3-d-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graphics API]]",
-      "resolved": "urn:visionflow:linked:graphics-api",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Domain]]",
-      "resolved": "urn:visionflow:linked:spatial-computing-domain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Graphics processing is the computation that transforms scene descriptions into rendered images, covering geometry transformation, shading, rasterisation and output to a display.

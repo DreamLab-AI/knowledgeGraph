@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Society Regulations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"},
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
-      {"@id": "urn:ngm:class:cross-border-compliance", "label": "Cross Border Compliance"}
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse-governance-and-safeguarding", "label": "Metaverse governance and safeguarding"},
-      {"@id": "urn:ngm:class:virtual-society", "label": "Virtual Society"}
+      {
+        "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+        "label": "Metaverse governance and safeguarding"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-society",
+        "label": "Virtual Society"
+      }
     ]
   },
   "provenance": {
@@ -87,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-society-regulations:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1a20ed9bbd864460886d29a33623bb820e764536a0818058653e8bf1bcc3bffd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Governance]]",
-      "resolved": "urn:visionflow:owl:class:digital-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The legal frameworks, governance structures, and policy mechanisms designed to regulate behavior, protect rights, and ensure safety within metaverse platforms and virtual world environments, encompassing intellectual property, data privacy, content moderation, and cross-jurisdictional enforcement challenges.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Training for Design Practitioners]]
-# AI Literacy Training for Designers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,16 +71,34 @@ elevatedFrom:: [[Training for Design Practitioners]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sme-ai-productivity-toolkit", "label": "SME AI Productivity Toolkit"},
-      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}
+      {
+        "@id": "urn:ngm:class:sme-ai-productivity-toolkit",
+        "label": "SME AI Productivity Toolkit"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"}
+      {
+        "@id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      }
     ]
   },
   "provenance": {
@@ -96,62 +108,6 @@ elevatedFrom:: [[Training for Design Practitioners]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:training-for-design-practitioners:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:918b97c982ea2b2728d9ba3b78b92009c86b29675669358732c7af3ff8417b7e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Instruction-Following Conversational AI System]]",
-      "resolved": "urn:visionflow:owl:class:chat-gpt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SME AI Productivity Toolkit]]",
-      "resolved": "urn:visionflow:owl:class:consumer-tools-for-smes",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gemini Multimodal Language Model]]",
-      "resolved": "urn:visionflow:owl:class:gemini",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:owl:class:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graphing]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Retrieval Augmented Generation - RAG]]",
-      "resolved": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social Media Platform Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:social-media",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers—particularly in landscape, product, and spatial disciplines—with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automation, and AI-assisted rendering workflows for immediate professional application.
@@ -276,7 +232,7 @@ elevatedFrom:: [[Training for Design Practitioners]]
   - co-working engine (not quite sure what that one means)
   - # TODO Vectorworks Plan Visualisation
   - Modern AI can transform 2D Vectorworks plans into client-ready visuals in five key formats.
-		- **Vectorworks AI Visualizer** ([FAQ](https://forum.vectorworks.net/index.php?/articles.html/articles/faqs/ai-visualizer/))
+		- **Vectorworks AI Visualizer** ([FAQ](https://forum.vectorworks.net/[private].php?/articles.html/articles/faqs/ai-visualizer/))
 			- Works inside Vectorworks 2024+, using your active file or view plus a text prompt.
 			- Ideal for quick concept iterations (materials, lighting variations).
 			- Note: not CAD-accurate rendering but excellent for inspirational visuals.
@@ -311,7 +267,7 @@ elevatedFrom:: [[Training for Design Practitioners]]
 		- **Coohom Floor Plan to 3D** ([overview](https://www.coohom.com/article/floor-plan-to-3d-ai))
 			- One-click conversion with auto-furnished interiors; ideal for rapid prototyping and client approvals.
 		- Other services (GetFloorPlan, RoomSketcher) offer similar AI-assisted conversions for sketches or scanned plans.
-  - Start with a simple RAG setup in Logseq or Obsidian linked to your Vectorworks export folder so that every time you update a client plan, your AI system can index it.
+  - Start with a simple RAG setup in Logseq or Obsidian linked to your Vectorworks export folder so that every time you update a client plan, your AI system can [private] it.
   - Use the AI Visualizer for rapid concept boards, then refine chosen options in Veras or Enscape for client review.
   - Incorporate AR with Vectorworks Nomad on site visits—clients love seeing designs overlaid in real space.
   - Keep stylistic consistency by choosing one illustration pipeline (for example, Stable Diffusion plus a ControlNet line-art workflow) and training a small set of prompts or custom LoRAs so that your presentations always look cohesive.

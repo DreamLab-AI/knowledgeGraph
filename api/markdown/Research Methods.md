@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Research Methods
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,32 +85,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:research-methods:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:660424f358df156ead55514244ffae768e143b695746fb1f5233802d2d028fb1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Research Methods are the systematic procedures and techniques used to collect, analyse, and interpret data in order to generate reliable knowledge. They encompass qualitative approaches (interviews, ethnography), quantitative approaches (controlled experiments, statistical analysis), and mixed-methods designs, with evaluation benchmarks and user studies being particularly relevant to AI and spatial computing research.

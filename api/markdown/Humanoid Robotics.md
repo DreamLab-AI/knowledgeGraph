@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Humanoid Robotics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,50 +20,133 @@ public: true
   "definition": "Humanoid robotics is the subfield of robotics concerned with the design, construction, and control of robots that exhibit a human-like morphology, typically including a bipedal lower body and articulated upper limbs. Such robots are engineered to operate in environments built for humans, using the same tools, furniture, and physical interfaces. Key technical challenges include stable bipedal locomotion across uneven terrain, dexterous manipulation of varied objects, real-time perception and planning under uncertainty, and safe physical interaction with humans. Advances in machine learning and actuator technology have accelerated commercial deployments in manufacturing, logistics, and care.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:humanoid-robot",
+      "label": "Humanoid Robot"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bipedal-locomotion", "label": "Bipedal Locomotion"},
-      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"},
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole-Body Control"}
+      {
+        "@id": "urn:ngm:class:bipedal-locomotion",
+        "label": "Bipedal Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:whole-body-control",
+        "label": "Whole-Body Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
-      {"@id": "urn:ngm:class:proprioception", "label": "Proprioception"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:proprioception",
+        "label": "Proprioception"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:assistive-robotics", "label": "Assistive Robotics"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
-      {"@id": "urn:ngm:class:autonomous-manipulation", "label": "Autonomous Manipulation"}
+      {
+        "@id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-manipulation",
+        "label": "Autonomous Manipulation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
-      {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
-      {"@id": "urn:ngm:class:robot-perception", "label": "Robot Perception"},
-      {"@id": "urn:ngm:class:tactile-sensing", "label": "Tactile Sensing"}
+      {
+        "@id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:android-robotics", "label": "Android Robotics"},
-    {"@id": "urn:ngm:class:anthropomorphic-robot", "label": "Anthropomorphic Robot"}
+    {
+      "@id": "urn:ngm:class:android-robotics",
+      "label": "Android Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:anthropomorphic-robot",
+      "label": "Anthropomorphic Robot"
+    }
   ],
   "quality": 0.75,
   "provenance": {

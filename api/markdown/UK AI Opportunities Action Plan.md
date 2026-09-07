@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UK AI Opportunities Action Plan
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The UK AI Opportunities Action Plan is a 2025 UK Government strategy setting out recommendations to accelerate national adoption of artificial intelligence across the public and private sectors. It covers building sovereign compute and data infrastructure, expanding AI skills, establishing AI Growth Zones, and embedding AI in public services to drive productivity and economic growth.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}, {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
+    ]
   },
   "quality": 0.72
 }

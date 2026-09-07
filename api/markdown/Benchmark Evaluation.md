@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Benchmark Evaluation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,48 +7,174 @@ public: true
   "title": "Benchmark Evaluation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:benchmark-dataset", "vc:label": "Benchmark Dataset"},
-    {"@id": "urn:visionflow:linked:evaluation-metric", "vc:label": "Evaluation Metric"},
-    {"@id": "urn:visionflow:linked:evaluation-harness", "vc:label": "Evaluation Harness"},
-    {"@id": "urn:visionflow:linked:performance-benchmarks", "vc:label": "Performance Benchmarks"},
-    {"@id": "urn:visionflow:linked:leaderboard", "vc:label": "Leaderboard"},
-    {"@id": "urn:visionflow:linked:reproducibility", "vc:label": "Reproducibility"},
-    {"@id": "urn:visionflow:linked:benchmarking", "vc:label": "Benchmarking"},
-    {"@id": "urn:visionflow:linked:model-evaluation-results", "vc:label": "Model Evaluation Results"},
-    {"@id": "urn:visionflow:linked:benchmark-standard", "vc:label": "Benchmark Standard"},
-    {"@id": "urn:visionflow:linked:ai-benchmark-epistemological-critique", "vc:label": "AI Benchmark Epistemological Critique"},
-    {"@id": "urn:visionflow:linked:frontier-model-evaluation", "vc:label": "Frontier Model Evaluation"},
-    {"@id": "urn:visionflow:linked:capability-evaluation", "vc:label": "Capability Evaluation"},
-    {"@id": "urn:visionflow:linked:human-evaluation", "vc:label": "Human Evaluation"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:ground-truth-labels", "vc:label": "Ground Truth Labels"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:data-annotation", "vc:label": "Data Annotation"},
-    {"@id": "urn:visionflow:linked:overfitting", "vc:label": "Overfitting"},
-    {"@id": "urn:visionflow:linked:bias", "vc:label": "Bias"},
-    {"@id": "urn:visionflow:linked:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:statistical-hypothesis-testing", "vc:label": "Statistical Hypothesis Testing"},
-    {"@id": "urn:visionflow:linked:cross-validation", "vc:label": "Cross-Validation"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:evaluation-benchmarks-and-leaderboards", "vc:label": "Evaluation benchmarks and leaderboards"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:mlcommons", "vc:label": "MLCommons"},
-    {"@id": "urn:visionflow:linked:beir-benchmark", "vc:label": "BEIR Benchmark"},
-    {"@id": "urn:visionflow:linked:mteb-benchmark", "vc:label": "MTEB Benchmark"},
-    {"@id": "urn:visionflow:linked:heuristic-evaluation", "vc:label": "Heuristic Evaluation"},
-    {"@id": "urn:visionflow:linked:continuous-integration", "vc:label": "Continuous Integration"},
-    {"@id": "urn:visionflow:linked:question-answering", "vc:label": "Question Answering"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:confounding", "vc:label": "Confounding"},
-    {"@id": "urn:visionflow:linked:data-quality", "vc:label": "Data Quality"},
-    {"@id": "urn:visionflow:linked:safety-evaluation", "vc:label": "Safety Evaluation"},
-    {"@id": "urn:visionflow:linked:model-training", "vc:label": "Model Training"},
-    {"@id": "urn:visionflow:linked:red-teaming", "vc:label": "Red Teaming"}
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-dataset",
+      "vc:label": "Benchmark Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-metric",
+      "vc:label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-harness",
+      "vc:label": "Evaluation Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance-benchmarks",
+      "vc:label": "Performance Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:leaderboard",
+      "vc:label": "Leaderboard"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducibility",
+      "vc:label": "Reproducibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmarking",
+      "vc:label": "Benchmarking"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation-results",
+      "vc:label": "Model Evaluation Results"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-standard",
+      "vc:label": "Benchmark Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-benchmark-epistemological-critique",
+      "vc:label": "AI Benchmark Epistemological Critique"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-model-evaluation",
+      "vc:label": "Frontier Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:capability-evaluation",
+      "vc:label": "Capability Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-evaluation",
+      "vc:label": "Human Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:ground-truth-labels",
+      "vc:label": "Ground Truth Labels"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-annotation",
+      "vc:label": "Data Annotation"
+    },
+    {
+      "@id": "urn:visionflow:linked:overfitting",
+      "vc:label": "Overfitting"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias",
+      "vc:label": "Bias"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-hypothesis-testing",
+      "vc:label": "Statistical Hypothesis Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-validation",
+      "vc:label": "Cross-Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-benchmarks-and-leaderboards",
+      "vc:label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlcommons",
+      "vc:label": "MLCommons"
+    },
+    {
+      "@id": "urn:visionflow:linked:beir-benchmark",
+      "vc:label": "BEIR Benchmark"
+    },
+    {
+      "@id": "urn:visionflow:linked:mteb-benchmark",
+      "vc:label": "MTEB Benchmark"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-evaluation",
+      "vc:label": "Heuristic Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-integration",
+      "vc:label": "Continuous Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:confounding",
+      "vc:label": "Confounding"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-quality",
+      "vc:label": "Data Quality"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-evaluation",
+      "vc:label": "Safety Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-training",
+      "vc:label": "Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:red-teaming",
+      "vc:label": "Red Teaming"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -293,7 +414,7 @@ public: true
     ```
 
   - ## About
-    - Benchmark evaluation is the empirical backbone of AI progress tracking. Before the advent of shared [[Benchmark Dataset]] resources and standardised scoring protocols, the machine learning literature was riddled with non-comparable results: each paper reported performance on different data splits, with different preprocessing pipelines, using different metrics, making it practically impossible to determine whether a proposed method was genuinely superior or merely benefiting from more favourable experimental conditions. This lack of comparability was not merely inconvenient — it made it impossible to identify which algorithmic innovations were actually responsible for performance improvements, because any observed difference between systems could be attributed to data selection, preprocessing choices, or evaluation code rather than to the model architecture or training procedure under study. The field-wide shift to shared benchmark evaluation — beginning in earnest with the UCI Repository, accelerating through MNIST and PASCAL VOC shared tasks, and reaching full institutionalisation with ImageNet ILSVRC and then GLUE/SuperGLUE — gave researchers a common frame of reference that transformed [[Machine Learning]] from a loose collection of competing techniques into a cumulative empirical science where progress could be unambiguously identified and credited.
+    - Benchmark evaluation is the empirical backbone of AI progress tracking. Before the advent of shared [[Benchmark Dataset]] resources and standardised scoring protocols, the machine learning literature was riddled with non-comparable results: each paper reported performance on different data splits, with different preprocessing pipelines, using different metrics, making it practically impossible to determine whether a proposed method was genuinely superior or merely benefiting from more favourable experimental conditions. This lack of comparability was not merely inconvenient — it made it impossible to identify which algorithmic innovations were actually responsible for performance improvements, because any observed difference between systems [private] be attributed to data selection, preprocessing choices, or evaluation code rather than to the model architecture or training procedure under study. The field-wide shift to shared benchmark evaluation — beginning in earnest with the UCI Repository, accelerating through MNIST and PASCAL VOC shared tasks, and reaching full institutionalisation with ImageNet ILSVRC and then GLUE/SuperGLUE — gave researchers a common frame of reference that transformed [[Machine Learning]] from a loose collection of competing techniques into a cumulative empirical science where progress [private] be unambiguously identified and credited.
 
     - The mechanism of benchmark evaluation is deceptively simple in specification but requires considerable care in execution. A developer applies their model to a fixed test set drawn from a [[Benchmark Dataset]], records performance according to a prescribed [[Evaluation Metric]] (computed by the benchmark's official scoring code rather than a researcher-defined variant), and submits results to a [[Leaderboard]] that ranks all submissions on a common scale. The test set is held apart from training data; the scoring code and normalisation procedure are provided by the benchmark organisers; the permitted inputs and any few-shot examples are constrained by the benchmark specification. This protocol enables genuine apples-to-apples comparison across systems developed independently with no shared code, data, or training procedure, in different countries, with different computational resources, by teams with very different research methodologies and theoretical commitments. In practice, maintaining these constraints requires active vigilance: benchmark integrity depends on genuinely sequestered test sets (not published online), transparent reporting of training data provenance (to enable contamination analysis), consistent prompt formatting (which the [[Evaluation Harness]] enforces), and resistance to gaming (such as training directly on leaked test examples, cherry-picking evaluation runs, or exploiting structural regularities in the benchmark's answer distribution rather than developing genuine capabilities).
 
@@ -358,7 +479,7 @@ public: true
   - ## Academic Context
     - Benchmark evaluation as a scientific practice has roots in the tradition of competitive evaluation in information retrieval (the TREC tracks at NIST, beginning 1992, which established the sequestered test collection model), natural language processing (MUC named entity recognition shared tasks from 1987, CoNLL shared tasks from 2000), and computer vision (PASCAL VOC, 2005–2012). The formalisation of benchmark practices in [[Machine Learning]] was gradual: the UCI Repository (1998) provided a common resource base but not a common evaluation protocol, leaving experimental comparisons dependent on researcher choices of splits and metrics. ImageNet ILSVRC (2010) was the first large-scale computer vision benchmark with a fully standardised submission protocol, organisationally-maintained leaderboard, and annual competition driving systematic year-on-year progress measurement. The transition from the ILSVRC competition model to the continuous-submission leaderboard model (used by GLUE, SQuAD, and most contemporary NLP benchmarks) democratised access to benchmark evaluation but also loosened the governance constraints that competition deadlines imposed.
     - Key theoretical and methodological contributions to benchmark evaluation methodology include: Papineni et al. (2002) on BLEU as an automatic evaluation metric for machine translation — the first widely-adopted reference metric in NLP that enabled automated benchmark evaluation at scale; Daume III & Marcu (2005) on domain adaptation benchmarks that test transfer across distributions; Bowman et al. (2015) on adversarial natural language inference (SNLI) as a model for large-scale crowdsourced benchmark construction; Rajpurkar et al. (2016, 2018) on SQuAD reading comprehension and the methodological innovation of including unanswerable questions; Wang et al. (2018, 2019) on GLUE and SuperGLUE as multi-task evaluation frameworks that aggregated multiple tasks into a single score and drove significant NLP progress; and Liang et al. (2022) on HELM as a holistic, multi-dimensional evaluation framework that rejected the single-number paradigm in favour of reporting accuracy, efficiency, robustness, fairness, and calibration as separate dimensions. EleutherAI's development of the Language Model Evaluation Harness (Gao et al., 2021) provided the critical software infrastructure that made standardised benchmark evaluation practically accessible to researchers without the resources to implement evaluation pipelines from scratch.
-    - The epistemological critique of benchmark evaluation has been developed through several influential lines of research. Gururangan et al. (NAACL 2018) demonstrated annotation artefacts in NLI benchmarks: models could achieve near-state-of-the-art accuracy using only the hypothesis sentence (ignoring the premise), revealing that the benchmark's scoring metric rewarded exploitation of annotation biases rather than genuine reasoning. Guo et al. (ICML 2017) documented systematic miscalibration in modern neural network evaluation, showing that high accuracy did not imply reliable uncertainty estimation. McCoy et al. (ACL 2019) showed that NLI models that surpassed human performance on GLUE failed on simple diagnostic examples exposing their reliance on syntactic heuristics, demonstrating that benchmark scores can dramatically overestimate the depth and robustness of model capabilities. Bender et al. (FAccT 2021) argued that performance on language benchmarks reflects statistical co-occurrence pattern matching rather than linguistic understanding, challenging the construct validity of NLU benchmarks at a fundamental level. Kiela et al. (NeurIPS 2021) proposed Dynabench — a dynamic human-in-the-loop benchmark construction paradigm where model-fooling adversarial examples are continuously collected to prevent gaming — as a structural response to these critiques. The contamination problem is documented by Golchin & Surdeanu (arXiv 2023), Shi et al. (ICLR 2024) who developed the DETECT method for training data detection, and Deng et al. (2024) who proposed formal contamination-free evaluation methodology.
+    - The epistemological critique of benchmark evaluation has been developed through several influential lines of research. Gururangan et al. (NAACL 2018) demonstrated annotation artefacts in NLI benchmarks: models [private] achieve near-state-of-the-art accuracy using only the hypothesis sentence (ignoring the premise), revealing that the benchmark's scoring metric rewarded exploitation of annotation biases rather than genuine reasoning. Guo et al. (ICML 2017) documented systematic miscalibration in modern neural network evaluation, showing that high accuracy did not imply reliable uncertainty estimation. McCoy et al. (ACL 2019) showed that NLI models that surpassed human performance on GLUE failed on simple diagnostic examples exposing their reliance on syntactic heuristics, demonstrating that benchmark scores can dramatically overestimate the depth and robustness of model capabilities. Bender et al. (FAccT 2021) argued that performance on language benchmarks reflects statistical co-occurrence pattern matching rather than linguistic understanding, challenging the construct validity of NLU benchmarks at a fundamental level. Kiela et al. (NeurIPS 2021) proposed Dynabench — a dynamic human-in-the-loop benchmark construction paradigm where model-fooling adversarial examples are continuously collected to prevent gaming — as a structural response to these critiques. The contamination problem is documented by Golchin & Surdeanu (arXiv 2023), Shi et al. (ICLR 2024) who developed the DETECT method for training data detection, and Deng et al. (2024) who proposed formal contamination-free evaluation methodology.
     - The relationship between benchmark evaluation and progress in [[Supervised Learning]] research has been studied by Recht et al. (2019), who found that reproducibility gaps between reported benchmark scores and scores on a newly collected test set (ImageNet-V2) were larger than expected, suggesting that even carefully designed benchmarks accumulate subtle domain shift over time as models are tuned to their specific statistics. Evaluation methodology improvements proposed in response include: requiring evaluation on multiple held-out test versions; reporting performance distributions rather than point estimates; distinguishing in-distribution from out-of-distribution generalisation; and standardising the statistical tests used to compare systems (Dror et al., 2018; Dodge et al., 2019). The OLMES standard (Polo et al., 2025) represents the most comprehensive attempt to date to codify these improvements into a unified, mandatory evaluation standard for [[Large Language Models]].
 
   - ## Current Landscape (2026)

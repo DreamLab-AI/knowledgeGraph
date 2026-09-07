@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Requirements Engineering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

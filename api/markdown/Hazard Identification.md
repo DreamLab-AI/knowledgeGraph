@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Hazard Identification
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

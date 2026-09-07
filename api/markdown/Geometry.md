@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Geometry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Geometry",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:mathematical-science", "vc:label": "Mathematical Science"},
-    {"@id": "urn:visionflow:linked:computational-geometry", "vc:label": "Computational Geometry"},
-    {"@id": "urn:visionflow:linked:scene-geometry", "vc:label": "Scene Geometry"},
-    {"@id": "urn:visionflow:linked:voronoi-diagram", "vc:label": "Voronoi Diagram"}
+    {
+      "@id": "urn:visionflow:linked:mathematical-science",
+      "vc:label": "Mathematical Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-geometry",
+      "vc:label": "Computational Geometry"
+    },
+    {
+      "@id": "urn:visionflow:linked:scene-geometry",
+      "vc:label": "Scene Geometry"
+    },
+    {
+      "@id": "urn:visionflow:linked:voronoi-diagram",
+      "vc:label": "Voronoi Diagram"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,19 +44,40 @@ public: true
   "definition": "The branch of mathematics concerned with the properties of space and of figures within it — points, lines, curves, surfaces, and solids — and with the notions of distance, angle, area, volume, and transformation that relate them. From Euclid's axiomatic plane geometry through analytic, projective, differential, and computational branches, geometry supplies the formal language in which spatial computing describes the world: coordinate frames and transformations in robotics, projective camera models in computer vision, meshes and parametric surfaces in graphics, and spatial subdivisions such as Voronoi diagrams in computational geometry.",
   "domain": "spatial-computing",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:mathematical-science", "label": "Mathematical Science"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:mathematical-science",
+    "label": "Mathematical Science"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:computational-geometry", "label": "Computational Geometry"},
-      {"@id": "urn:ngm:class:projective-geometry", "label": "Projective Geometry"}
+      {
+        "@id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:projective-geometry",
+        "label": "Projective Geometry"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:scene-geometry", "label": "Scene Geometry"},
-      {"@id": "urn:ngm:class:voronoi-diagram", "label": "Voronoi Diagram"},
-      {"@id": "urn:ngm:class:topology", "label": "Topology"}
+      {
+        "@id": "urn:ngm:class:scene-geometry",
+        "label": "Scene Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:voronoi-diagram",
+        "label": "Voronoi Diagram"
+      },
+      {
+        "@id": "urn:ngm:class:topology",
+        "label": "Topology"
+      }
     ]
   },
   "quality": 0.8,

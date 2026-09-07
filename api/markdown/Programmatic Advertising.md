@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Programmatic Advertising
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -138,4 +133,3 @@ public: true
   - The programmatic ecosystem involves dozens of intermediary layers — verification vendors, brand safety tools, attribution providers, and data brokers — each adding latency and extracting a toll from the transaction. Connected TV and digital out-of-home have emerged as high-growth programmatic channels in 2023–2025, while retail media networks — inventory sold by retailers against their first-party purchase data — represent a structural shift in audience targeting as third-party cookie deprecation progresses. Google's Privacy Sandbox, Apple's App Tracking Transparency, and GDPR enforcement have reshaped audience activation strategies across the industry.
 
   - As of 2024–2025, programmatic spending globally exceeds $600 billion annually, with CTV and in-app video commanding the highest CPMs. Clean room technologies such as Amazon Marketing Cloud and Google Ads Data Hub enable advertisers to analyse campaign performance against publisher first-party data without exposing raw user-level records. Contextual targeting, attention metrics, and incrementality measurement are regaining prominence as cookieless alternatives, while AI-driven creative optimisation increasingly automates the generation and selection of ad variants in real time.
-

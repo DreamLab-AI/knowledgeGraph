@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Maximum Sequence Length
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,36 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:token", "label": "Token"}
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:maximum-sequence-length:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2e23e4687c7fd0cd4606e636f74494ec1ce2c67335febfacf5c9844c2508f3ea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The longest sequence of tokens that a model can process in a single forward pass, constrained by positional encoding scheme and computational resources.

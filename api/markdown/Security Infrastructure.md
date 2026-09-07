@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SecurityInfrastructure
----
-
-# Security Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,25 +20,60 @@ aliases:
   "definition": "Security infrastructure encompasses the integrated set of hardware, software, processes, and policies that protect an organisation's information systems, networks, and data assets from unauthorised access, disruption, and exploitation. It includes perimeter defences, identity and access management systems, cryptographic key management, endpoint protection, monitoring and detection platforms, and incident response capabilities. Effective security infrastructure is layered—applying defence-in-depth principles so that compromise of any single control does not expose the entire system. Modern security infrastructure increasingly adopts zero-trust architectural principles, eliminating implicit trust based on network location and requiring continuous verification of every access request. Security infrastructure must align with regulatory requirements and evolve continuously in response to the changing threat landscape.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:security-framework", "label": "Security Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security-framework",
+      "label": "Security Framework"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Identifier
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,4 +157,3 @@ public: true
   - CIDs enable a powerful set of properties in distributed systems. Content deduplication is automatic: identical data always produces the same CID regardless of origin. Tamper detection is unconditional: any modification to content changes the hash and thus the CID, making inconsistency immediately detectable without trusting the server. Permanent links are achievable when content is pinned by storage providers: a CID published today remains valid and retrievable years later even if the original publisher goes offline. These properties have made CIDs the addressing mechanism of choice for NFT metadata storage, decentralised web applications, and verifiable dataset archiving.
 
   - By 2024–2025, CIDs are embedded in a wide range of Web3 infrastructure. The Ethereum ecosystem uses CIDs in ERC-721 NFT token URIs pointing to IPFS-stored metadata, and ERC-4973 and related standards are deepening on-chain CID verification. The W3C Verifiable Credentials Data Model 2.0 uses IPLD and CIDs for content-addressing credential schemas. Filecoin's storage deals are indexed by CID, and the IPNI (InterPlanetary Network Indexer) provides a scalable lookup service mapping CIDs to providers. Research into CID caching, provider reputation, and content routing at scale is active, as IPFS networks have grown to hundreds of millions of stored CIDs.
-

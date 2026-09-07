@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Specificity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,41 +159,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:specificity:7f02f2e30550",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b3d346ebbbe1dd8f53285b68428bce50a1f13c9cb556eb7cc6fc1a1c0f70a473"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Confusion Matrix]]",
-      "resolved": "urn:visionflow:linked:confusion-matrix",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Precision]]",
-      "resolved": "urn:visionflow:linked:precision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Recall]]",
-      "resolved": "urn:visionflow:linked:recall",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

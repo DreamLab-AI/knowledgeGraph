@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Noise Function
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

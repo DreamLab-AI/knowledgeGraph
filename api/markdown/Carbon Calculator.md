@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Calculator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,72 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:carbon-calculator:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a68df46774c1a872c41e8dbb15680e6f64e548ff93037b4eeb70bc3d6f1d341e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Activity Data]]",
-      "resolved": "urn:visionflow:linked:activity-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Calculation Methodology]]",
-      "resolved": "urn:visionflow:linked:calculation-methodology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Emission Factors]]",
-      "resolved": "urn:visionflow:linked:emission-factors",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Emissions Estimation]]",
-      "resolved": "urn:visionflow:linked:emissions-estimation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Footprint Awareness]]",
-      "resolved": "urn:visionflow:linked:footprint-awareness",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reduction Planning]]",
-      "resolved": "urn:visionflow:linked:reduction-planning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainability Tool]]",
-      "resolved": "urn:visionflow:owl:class:sustainability-tool",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A digital tool or software application that estimates greenhouse gas emissions from activities such as energy consumption, transportation, and production by applying standardized emission factors to user-provided data, enabling individuals and organizations to quantify and understand their carbon footprint.

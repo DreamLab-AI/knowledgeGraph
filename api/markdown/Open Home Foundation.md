@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Home Foundation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "The Open Home Foundation is a non-profit organization that stewards open-source smart-home projects, most notably Home Assistant, to advance privacy, choice, and sustainability in home automation. It holds and governs the intellectual property of these projects, funds development, and protects them from commercial capture. Its mission centers on local-first, user-controlled home technology rather than cloud-dependent proprietary platforms.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:home-assistant", "label": "Home Assistant"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      }
+    ]
   },
   "quality": 0.72
 }

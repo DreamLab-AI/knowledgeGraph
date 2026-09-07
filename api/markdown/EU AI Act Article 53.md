@@ -1,8 +1,3 @@
----
-public: true
----
-
-# EU AI Act Article 53
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

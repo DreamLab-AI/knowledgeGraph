@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Olympus DAO
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Olympus DAO is a decentralised autonomous organisation that pioneered the protocol-owned-liquidity model and the OHM reserve-currency token backed by a treasury of assets. It introduced bonding, where users sell assets to the protocol for discounted tokens, and staking rewards, aiming to build a community-owned treasury rather than relying on rented liquidity. It became a widely studied and forked template in decentralised finance.",
   "domain": "blockchain",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
-      {"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"}
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      }
     ]
   },
   "quality": 0.72

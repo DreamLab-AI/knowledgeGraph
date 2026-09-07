@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Reality-Virtuality Continuum
----
-
-# Reality Virtuality Continuum
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,42 +69,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reality-virtuality-continuum:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:79e120356a5c86174c4a2db4b7513761129e86e03edfc81eafa88806f1f5e13c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross Reality Experiences]]",
-      "resolved": "urn:visionflow:linked:cross-reality-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[XR Framework]]",
-      "resolved": "urn:visionflow:owl:class:xr-framework",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A theoretical framework introduced by Milgram and Kishino in 1994 describing the continuous spectrum between purely physical reality and fully virtual environments, with augmented reality and augmented virtuality as intermediate mixed reality states along this scale.

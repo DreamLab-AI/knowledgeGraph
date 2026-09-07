@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RocksDB
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "RocksDB is an embedded, high-performance key-value store built on a log-structured merge-tree and optimised for fast storage such as SSDs. It provides ordered keys, atomic batch writes, snapshots, and tunable compaction, and is embedded as a library rather than run as a server. It is widely used as the local state backend in databases and blockchain platforms.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hyperledger-indy", "label": "Hyperledger Indy"}, {"@id": "urn:ngm:class:hyperledger-iroha", "label": "Hyperledger Iroha"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-iroha",
+        "label": "Hyperledger Iroha"
+      }
+    ]
   },
   "quality": 0.72
 }

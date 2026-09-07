@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intelligent Tutoring System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "An AI-powered software system that delivers personalised instruction by modelling a learner's knowledge state, selecting appropriate pedagogical strategies, and adapting content difficulty in real time without requiring a human instructor. Intelligent tutoring systems integrate domain knowledge, learner models, and tutoring strategies to provide one-on-one instructional support at scale.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"},
-      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"}
+      {
+        "@id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - Modern ITS platforms integrate [[Natural Language Processing]] to support dialogue tutoring, essay grading, and open-ended problem feedback. Systems such as Khanmigo (Khan Academy, 2023) and ALEKS use LLM backends to generate natural-language explanations while retaining structured learner models. Crowdsourced datasets from millions of student interactions have enabled robust learner model benchmarking through competitions such as the AAAI EDM knowledge tracing challenge. Deployment contexts span K-12 mathematics, medical education, military training, and corporate upskilling.
 
   - As of 2024–2025, the integration of [[Large Language Models]] has accelerated ITS capability, particularly in subjects requiring open-ended reasoning. However, open problems remain around hallucination (LLMs providing confident but incorrect explanations), bias in learner models across demographic groups, and the challenge of maintaining engagement over long learning sessions. Research frontiers include multimodal tutors that interpret student facial expressions and sketch input, federated learning approaches that train learner models without centralising sensitive data, and affective computing to address motivational dimensions of learning.
-

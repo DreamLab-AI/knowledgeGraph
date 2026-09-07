@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Talent Acquisition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-talent-acquisition",
   "title": "AI Talent Acquisition",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Stock Volatility", "DeepSeek R1", "Nvidia Market Cap"],
+  "vc:outboundWikilinks": [
+    "AI Stock Volatility",
+    "DeepSeek R1",
+    "Nvidia Market Cap"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:enterprise-ai",
+      "label": "Enterprise AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"}, {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

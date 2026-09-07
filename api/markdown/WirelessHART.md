@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WirelessHART
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "WirelessHART is an open wireless communication standard for industrial process automation, built on the IEEE 802.15.4 physical layer and using time-synchronised, self-organising mesh networking with channel hopping for reliability. It extends the HART field-device protocol to wireless sensor networks in plants, providing deterministic, secure, low-power monitoring and control. Centrally managed by a network manager, it prioritises robustness against interference in harsh RF environments.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"}, {"@id": "urn:ngm:class:ieee-802-15-4", "label": "IEEE 802.15.4"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      }
+    ]
   },
   "quality": 0.72
 }

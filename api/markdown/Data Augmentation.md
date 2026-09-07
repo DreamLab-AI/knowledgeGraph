@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Augmentation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,7 +165,7 @@ public: true
   "definition": "Data augmentation is a machine learning technique that expands a training dataset by applying label-preserving transformations or synthesising new examples from existing data. Typical methods include geometric and photometric image transforms, noise injection, and generative model sampling such as GAN-produced samples, diffusion-model synthesis, and mixing-based strategies such as Mixup and CutMix. It improves model generalisation and robustness, mitigating overfitting when labelled data is scarce. Modern automated augmentation pipelines such as AutoAugment and RandAugment use reinforcement learning or random search to discover optimal policies, while 2024-2026 diffusion-based approaches such as DiffuseMix enable label-preserving generation of high-fidelity training examples that improve performance on imbalanced and low-resource benchmarks.",
   "domain": "machine-learning",
   "maturity": "established",
-  "quality": 0.90,
+  "quality": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:machine-learning-discipline-technique",
@@ -183,259 +178,158 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:geometric-transformation", "label": "Geometric Transformation"},
-      {"@id": "urn:ngm:class:photometric-transformation", "label": "Photometric Transformation"},
-      {"@id": "urn:ngm:class:noise-injection", "label": "Noise Injection"},
-      {"@id": "urn:ngm:class:mixup", "label": "Mixup Augmentation"},
-      {"@id": "urn:ngm:class:cut-mix", "label": "CutMix"},
-      {"@id": "urn:ngm:class:autoaugment", "label": "AutoAugment"},
-      {"@id": "urn:ngm:class:randaugment", "label": "RandAugment"},
-      {"@id": "urn:ngm:class:feature-space-augmentation", "label": "Feature-Space Augmentation"}
+      {
+        "@id": "urn:ngm:class:geometric-transformation",
+        "label": "Geometric Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:photometric-transformation",
+        "label": "Photometric Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:noise-injection",
+        "label": "Noise Injection"
+      },
+      {
+        "@id": "urn:ngm:class:mixup",
+        "label": "Mixup Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:cut-mix",
+        "label": "CutMix"
+      },
+      {
+        "@id": "urn:ngm:class:autoaugment",
+        "label": "AutoAugment"
+      },
+      {
+        "@id": "urn:ngm:class:randaugment",
+        "label": "RandAugment"
+      },
+      {
+        "@id": "urn:ngm:class:feature-space-augmentation",
+        "label": "Feature-Space Augmentation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
-      {"@id": "urn:ngm:class:training-pipeline", "label": "Training Pipeline"},
-      {"@id": "urn:ngm:class:data-preprocessing", "label": "Data Preprocessing"}
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:training-pipeline",
+        "label": "Training Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-generalisation", "label": "Model Generalisation"},
-      {"@id": "urn:ngm:class:overfitting-prevention", "label": "Overfitting Prevention"},
-      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"},
-      {"@id": "urn:ngm:class:class-imbalance-mitigation", "label": "Class Imbalance Mitigation"}
+      {
+        "@id": "urn:ngm:class:model-generalisation",
+        "label": "Model Generalisation"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting-prevention",
+        "label": "Overfitting Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:class-imbalance-mitigation",
+        "label": "Class Imbalance Mitigation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:synthetic-data-generator", "label": "Synthetic Data Generator"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generator",
+        "label": "Synthetic Data Generator"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:semi-supervised-learning", "label": "Semi-Supervised Learning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
-      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"}
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:dropout", "label": "Dropout"},
-      {"@id": "urn:ngm:class:bias-variance-tradeoff", "label": "Bias-Variance Tradeoff"},
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
-      {"@id": "urn:ngm:class:class-imbalance", "label": "Class Imbalance"}
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "@id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:class-imbalance",
+        "label": "Class Imbalance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:training-data-augmentation", "label": "Training Data Augmentation"}
+    {
+      "@id": "urn:ngm:class:training-data-augmentation",
+      "label": "Training Data Augmentation"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "RelationEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-augmentation:e8f3a921c402",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:data-augmentation"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Machine Learning]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Adversarial Networks]]",
-      "resolved": "urn:visionflow:linked:generative-adversarial-networks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Variational Autoencoder]]",
-      "resolved": "urn:visionflow:linked:variational-autoencoder",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Diffusion Model]]",
-      "resolved": "urn:visionflow:linked:diffusion-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regularisation]]",
-      "resolved": "urn:visionflow:linked:regularisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Overfitting]]",
-      "resolved": "urn:visionflow:linked:overfitting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Supervised Learning]]",
-      "resolved": "urn:visionflow:linked:supervised-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semi-Supervised Learning]]",
-      "resolved": "urn:visionflow:linked:semi-supervised-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Few-Shot Learning]]",
-      "resolved": "urn:visionflow:linked:few-shot-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Networks]]",
-      "resolved": "urn:visionflow:linked:convolutional-neural-networks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer Architecture]]",
-      "resolved": "urn:visionflow:linked:transformer-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Object Detection]]",
-      "resolved": "urn:visionflow:linked:object-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Classification]]",
-      "resolved": "urn:visionflow:linked:image-classification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Pipeline]]",
-      "resolved": "urn:visionflow:linked:training-pipeline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Synthetic Data]]",
-      "resolved": "urn:visionflow:linked:synthetic-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Noise Injection]]",
-      "resolved": "urn:visionflow:linked:noise-injection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Batch Normalisation]]",
-      "resolved": "urn:visionflow:linked:batch-normalisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Dropout]]",
-      "resolved": "urn:visionflow:linked:dropout",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Active Learning]]",
-      "resolved": "urn:visionflow:linked:active-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Supervised Learning]]",
-      "resolved": "urn:visionflow:linked:self-supervised-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Architecture Search]]",
-      "resolved": "urn:visionflow:linked:neural-architecture-search",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:linked:speech-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical Imaging]]",
-      "resolved": "urn:visionflow:linked:medical-imaging",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Class Imbalance]]",
-      "resolved": "urn:visionflow:linked:class-imbalance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Robustness]]",
-      "resolved": "urn:visionflow:linked:model-robustness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Collection]]",
-      "resolved": "urn:visionflow:linked:data-collection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feature Extraction]]",
-      "resolved": "urn:visionflow:linked:feature-extraction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hyperparameter Tuning]]",
-      "resolved": "urn:visionflow:linked:hyperparameter-tuning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bias-Variance Tradeoff]]",
-      "resolved": "urn:visionflow:linked:bias-variance-tradeoff",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:linked:ai-grounded-domain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AlgorithmLayer]]",
-      "resolved": "urn:visionflow:linked:algorithm-layer",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -584,7 +478,7 @@ public: true
     - **Industrial Quality Inspection** — defect images are rare; GAN-based augmentation generates diverse defect morphologies, improving automated visual inspection recall.
     - **[[Object Detection]]** — multi-scale crop, mosaic augmentation (YOLOv5/v8 approach combining four images), copy-paste augmentation all contribute to detection robustness.
   - ## Academic Context
-    - Data augmentation as a systematic technique traces to convolutional network research of the early 2010s. The AlexNet paper (Krizhevsky, Sutskever, and Hinton, 2012) documented random cropping and horizontal flipping as explicit design choices that contributed to generalisation. The subsequent decade produced increasingly sophisticated augmentation taxonomies. The NLP analogue was catalysed by Sennrich et al. (2016), who demonstrated that back-translation — augmenting a low-resource translation corpus by translating target-side monolingual data back into the source language — dramatically improved neural machine translation quality. Zhang et al. (2018) introduced Mixup as a theoretically grounded vicinal risk minimisation approach. The AutoAugment line of work (Cubuk et al., Google Brain, 2019) demonstrated that policy search could discover non-obvious but highly effective augmentation sequences. The mixing literature expanded rapidly with CutMix (Yun et al., NAVER AI Lab, 2019), Puzzlemix (Kim et al., KAIST, 2020), and SaliencyMix (Uddin et al., 2021). The self-supervised learning literature — SimCLR (Chen et al., 2020), MoCo (He et al., 2020), BYOL (Grill et al., 2020), DINO (Caron et al., 2021) — elevated augmentation policy choice to a first-class architectural decision, demonstrating that the augmentation distribution defines what invariances are encoded in representations. The 2025 Springer review "Advances in diffusion models for image data augmentation" surveyed the emerging diffusion-based paradigm comprehensively, while a Virginia Tech comprehensive survey (2026) provided the most current taxonomy of the field.
+    - Data augmentation as a systematic technique traces to convolutional network research of the early 2010s. The AlexNet paper (Krizhevsky, Sutskever, and Hinton, 2012) documented random cropping and horizontal flipping as explicit design choices that contributed to generalisation. The subsequent decade produced increasingly sophisticated augmentation taxonomies. The NLP analogue was catalysed by Sennrich et al. (2016), who demonstrated that back-translation — augmenting a low-resource translation corpus by translating target-side monolingual data back into the source language — dramatically improved neural machine translation quality. Zhang et al. (2018) introduced Mixup as a theoretically grounded vicinal risk minimisation approach. The AutoAugment line of work (Cubuk et al., Google Brain, 2019) demonstrated that policy search [private] discover non-obvious but highly effective augmentation sequences. The mixing literature expanded rapidly with CutMix (Yun et al., NAVER AI Lab, 2019), Puzzlemix (Kim et al., KAIST, 2020), and SaliencyMix (Uddin et al., 2021). The self-supervised learning literature — SimCLR (Chen et al., 2020), MoCo (He et al., 2020), BYOL (Grill et al., 2020), DINO (Caron et al., 2021) — elevated augmentation policy choice to a first-class architectural decision, demonstrating that the augmentation distribution defines what invariances are encoded in representations. The 2025 Springer review "Advances in diffusion models for image data augmentation" surveyed the emerging diffusion-based paradigm comprehensively, while a Virginia Tech comprehensive survey (2026) provided the most current taxonomy of the field.
     - Key institutions include Google Brain (AutoAugment, RandAugment, CutOut, SimCLR), NAVER AI Lab (CutMix), KAIST (Puzzlemix), MIT (manifold mixup), UNIST (2026 robustness framework), and in the UK, the Machine Learning Group at the University of Cambridge (Ghahramani group), the UCL AI Centre, and medical imaging groups at Imperial College London's Department of Computing.
   - ## Current Landscape (2026)
     - By 2026, data augmentation is considered a non-negotiable component of virtually every production deep learning training pipeline. The tooling ecosystem has matured: major frameworks (PyTorch via Torchvision and Albumentations, TensorFlow/Keras, JAX via scenic) provide high-performance, GPU-accelerated augmentation primitives. The Albumentations library (Buslaev et al.) supports over 70 transform types and has become the de facto standard for [[Computer Vision]] augmentation. In the large language model domain, [[Self-Supervised Learning]] at scale has partially displaced the need for explicit text augmentation, but instruction fine-tuning and alignment training still rely heavily on augmented synthetic data pipelines.

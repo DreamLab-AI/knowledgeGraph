@@ -1,36 +1,108 @@
----
-public: true
----
-
-# Multi-Stakeholder Governance
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:multi-stakeholder-governance", "@type":"Page", "title":"Multi-Stakeholder Governance", "vc:slug":"multi-stakeholder-governance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:multi-stakeholder-governance",
+  "@type": "Page",
+  "title": "Multi-Stakeholder Governance",
+  "vc:slug": "multi-stakeholder-governance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:multi-stakeholder-governance",
-  "@type":"Class",
-  "label":"Multi-Stakeholder Governance",
-  "definition":"Multi-stakeholder governance is a model of collective decision-making in which government, private sector, civil society, technical communities, and academia participate jointly and on a relatively equal footing to develop policies, standards, or norms. It emphasises inclusiveness, transparency, and consensus over top-down or purely state-led control, and is the prevailing model for governing shared resources such as the internet. Its legitimacy derives from broad participation rather than hierarchical authority.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:governance-framework","label":"Governance Framework"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:stakeholder-engagement","label":"Stakeholder Engagement"},{"@id":"urn:ngm:class:transparency","label":"Transparency"}],
-    "enables":[{"@id":"urn:ngm:class:accountability","label":"Accountability"},{"@id":"urn:ngm:class:decision-making","label":"Decision Making"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:digital-governance","label":"Digital Governance"}],
-    "supports":[{"@id":"urn:ngm:class:digital-trust","label":"Digital Trust"}],
-    "partOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-    "uses":[{"@id":"urn:ngm:class:decision-making","label":"Decision Making"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:digital-governance","label":"Digital Governance"},{"@id":"urn:ngm:class:transparency","label":"Transparency"},{"@id":"urn:ngm:class:accountability","label":"Accountability"},{"@id":"urn:ngm:class:trust","label":"Trust"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:multi-stakeholder-governance",
+  "@type": "Class",
+  "label": "Multi-Stakeholder Governance",
+  "definition": "Multi-stakeholder governance is a model of collective decision-making in which government, private sector, civil society, technical communities, and academia participate jointly and on a relatively equal footing to develop policies, standards, or norms. It emphasises inclusiveness, transparency, and consensus over top-down or purely state-led control, and is the prevailing model for governing shared resources such as the internet. Its legitimacy derives from broad participation rather than hierarchical authority.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

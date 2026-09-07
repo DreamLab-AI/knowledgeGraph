@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Credential Definition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,17 +20,34 @@ public: true
   "definition": "A credential definition is an on-ledger or registry artefact, published by a credential issuer, that binds a credential schema to the issuer's cryptographic public keys and signing parameters. It specifies the attributes a credential will contain and the cryptographic material verifiers use to validate signatures and zero-knowledge proofs derived from issued credentials. Central to decentralised-identity ecosystems such as those built on AnonCreds, a credential definition lets a holder prove possession of an issuer-signed credential, selectively disclosing only chosen attributes.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:verifiable-credential-standard", "label": "Verifiable Credential Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:verifiable-credential-standard",
+      "label": "Verifiable Credential Standard"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"}
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
     ]
   },
   "quality": 0.8

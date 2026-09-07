@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cybersecurity Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -119,6 +115,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - A cybersecurity framework is a structured set of standards, guidelines and practices that organisations use to identify, protect against, detect, respond to and recover from cyber threats. Frameworks such as the NIST Cybersecurity Framework provide a common taxonomy and maturity model for managing security risk in a repeatable, auditable way. They align technical controls with governance, risk management and regulatory obligations.
   - Related concepts: [[Security Framework]] [[NIST Cybersecurity Framework]] [[Risk Management Framework]] [[Zero Trust Architecture]] [[Compliance Framework]]

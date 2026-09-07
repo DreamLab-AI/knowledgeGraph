@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BlackRock Bitcoin ETF
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "The BlackRock Bitcoin ETF (iShares Bitcoin Trust, ticker IBIT) is a spot Bitcoin exchange-traded fund issued by BlackRock and approved by the US SEC in January 2024. It holds bitcoin in qualified custody and tracks the spot price, giving traditional investors regulated, brokerage-accessible exposure to bitcoin without managing keys. As one of the largest and fastest-growing spot Bitcoin ETFs, it is frequently cited as evidence of institutional adoption.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      }
     ]
   },
   "quality": 0.72

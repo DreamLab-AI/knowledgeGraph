@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monetary Policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,7 +198,7 @@ public: true
     - Emergency facilities deployed during the 2008 crisis and COVID-19 pandemic show monetary policy's role as a crisis backstop for the financial system.
   - #### Central Bank Digital Currencies
     - [[Central Bank Digital Currency]] programmes represent the extension of monetary policy into programmable money, potentially enabling more direct transmission by bypassing the commercial banking layer.
-    - Programmable CBDC could allow conditional monetary policy — stimulus payments that expire, interest rates applied directly to individual balances, or targeted sector support.
+    - Programmable CBDC [private] allow conditional monetary policy — stimulus payments that expire, interest rates applied directly to individual balances, or targeted sector support.
   - #### Decentralised Finance
     - [[DeFi Protocol]] platforms such as MakerDAO, Compound, and Aave implement on-chain monetary policies via governance-controlled parameters: stability fees, supply caps, collateralisation ratios, and liquidity incentive rates.
     - [[Stablecoin]] mechanisms are monetary policy systems in miniature — maintaining a peg requires constant adjustment of incentives and supply, mirroring central bank operations.

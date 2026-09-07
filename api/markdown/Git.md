@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Git
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,62 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:git:9a881b9b9f23",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bc4c82bb0644193966ed59e016fc9ce9b2dd4f191dd4c502c4ec4aedbae17dbf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GitHub]]",
-      "resolved": "urn:visionflow:linked:git-hub",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Development]]",
-      "resolved": "urn:visionflow:linked:software-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Open Source]]",
-      "resolved": "urn:visionflow:linked:open-source",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Software Engineering]]",
-      "resolved": "urn:visionflow:linked:software-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Version Control]]",
-      "resolved": "urn:visionflow:linked:version-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://git-scm.com]]",
-      "resolved": "urn:visionflow:linked:https-git-scm-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://git-scm.com/book]]",
-      "resolved": "urn:visionflow:linked:https-git-scm-com-book",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Git is a distributed version control system that tracks changes to files and coordinates work across multiple contributors. It was created by Linus Torvalds for Linux kernel development.

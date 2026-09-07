@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Video Processing]]
-# Computer Vision Video Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -106,47 +100,6 @@ elevatedFrom:: [[Video Processing]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:video-processing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1fa226bfa2604df9341062676470e0d4b8fc7fdcd281a1efd6f3632b6c92eb8b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Action Recognition]]",
-      "resolved": "urn:visionflow:linked:action-recognition",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Temporal Modeling]]",
-      "resolved": "urn:visionflow:linked:temporal-modeling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Object Detection]]",
-      "resolved": "urn:visionflow:owl:class:object-detection",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Video Processing in AI involves computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques. Core tasks include object detection and tracking, action recognition, video segmentation, temporal modeling, scene understanding, and video generation. Modern approaches leverage 3D convolutional networks, recurrent architectures, transformers for temporal reasoning, and self-supervised learning on large video datasets. Applications span surveillance, autonomous driving, content moderation, sports analytics, medical imaging, and video editing automation.

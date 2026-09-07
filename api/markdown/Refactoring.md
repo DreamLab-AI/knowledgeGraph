@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Refactoring
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

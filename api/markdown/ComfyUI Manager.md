@@ -1,8 +1,3 @@
----
-public: true
----
-
-# comfyui manager
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,64 +7,238 @@ public: true
   "title": "comfyui manager",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:comfy-ui", "vc:label": "ComfyUI"},
-    {"@id": "urn:visionflow:linked:comfy-ui-api-specification", "vc:label": "ComfyUI API Specification"},
-    {"@id": "urn:visionflow:linked:comfy-ui-workflows", "vc:label": "ComfyUI Workflows"},
-    {"@id": "urn:visionflow:linked:comfy-ui-client", "vc:label": "ComfyUI Client"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:stable-diffusion", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:python", "vc:label": "Python"},
-    {"@id": "urn:visionflow:linked:git", "vc:label": "Git"},
-    {"@id": "urn:visionflow:linked:hugging-face", "vc:label": "Hugging Face"},
-    {"@id": "urn:visionflow:linked:hugging-face-hub", "vc:label": "Hugging Face Hub"},
-    {"@id": "urn:visionflow:linked:civit-ai", "vc:label": "CivitAI"},
-    {"@id": "urn:visionflow:linked:control-net", "vc:label": "ControlNet"},
-    {"@id": "urn:visionflow:linked:lo-ra", "vc:label": "LoRA"},
-    {"@id": "urn:visionflow:linked:ip-adapter", "vc:label": "IP-Adapter"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:video-generation", "vc:label": "Video Generation"},
-    {"@id": "urn:visionflow:linked:animate-diff", "vc:label": "AnimateDiff"},
-    {"@id": "urn:visionflow:linked:flux-1", "vc:label": "Flux.1"},
-    {"@id": "urn:visionflow:linked:sdxl", "vc:label": "SDXL"},
-    {"@id": "urn:visionflow:linked:automatic1111-web-ui", "vc:label": "AUTOMATIC1111 Stable Diffusion WebUI"},
-    {"@id": "urn:visionflow:linked:node-based-visual-programming", "vc:label": "Node-Based Programming"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:python-package-management", "vc:label": "Python Package Management"},
-    {"@id": "urn:visionflow:linked:reproducible-ml-pipelines", "vc:label": "Reproducible ML Pipelines"},
-    {"@id": "urn:visionflow:linked:workflow-portability", "vc:label": "Workflow Portability"},
-    {"@id": "urn:visionflow:linked:custom-node-registry", "vc:label": "Custom Node Registry"},
-    {"@id": "urn:visionflow:linked:missing-node-detection", "vc:label": "Missing Node Detection"},
-    {"@id": "urn:visionflow:linked:model-downloader", "vc:label": "Model Downloader"},
-    {"@id": "urn:visionflow:linked:community-extension-ecosystem", "vc:label": "Community Extension Ecosystem"},
-    {"@id": "urn:visionflow:linked:snapshot-management", "vc:label": "Snapshot Management"},
-    {"@id": "urn:visionflow:linked:open-source-software", "vc:label": "Open Source Software"},
-    {"@id": "urn:visionflow:linked:package-manager", "vc:label": "Package Manager"},
-    {"@id": "urn:visionflow:linked:ai-application", "vc:label": "AI Application"},
-    {"@id": "urn:visionflow:linked:model-checkpoint", "vc:label": "Model Checkpoint"},
-    {"@id": "urn:visionflow:linked:vae", "vc:label": "VAE"},
-    {"@id": "urn:visionflow:linked:comfy-node-registry", "vc:label": "Comfy Node Registry"},
-    {"@id": "urn:visionflow:linked:comfy-org-git-hub-organisation", "vc:label": "Comfy-Org GitHub Organisation"},
-    {"@id": "urn:visionflow:linked:ltdrdata-2023-comfy-ui-manager", "vc:label": "ltdrdata 2023 ComfyUI-Manager"},
-    {"@id": "urn:visionflow:linked:openart-workflow-registry", "vc:label": "OpenArt Workflow Registry"},
-    {"@id": "urn:visionflow:linked:civitai-workflow-sharing", "vc:label": "Civitai Workflow Sharing"},
-    {"@id": "urn:visionflow:linked:generative-ai-tooling", "vc:label": "Generative AI Tooling"},
-    {"@id": "urn:visionflow:linked:pip", "vc:label": "pip"},
-    {"@id": "urn:visionflow:linked:uv-package-manager", "vc:label": "uv Package Manager"},
-    {"@id": "urn:visionflow:linked:comfy-cli", "vc:label": "comfy-cli"},
-    {"@id": "urn:visionflow:linked:was-node-suite", "vc:label": "WAS Node Suite"},
-    {"@id": "urn:visionflow:linked:comfy-ui-ipadapter-plus", "vc:label": "ComfyUI-IPAdapter-Plus"},
-    {"@id": "urn:visionflow:linked:animate-diff-evolved", "vc:label": "ComfyUI-AnimateDiff-Evolved"},
-    {"@id": "urn:visionflow:linked:tech-crunch-2026-comfy-ui-500-m-valuation", "vc:label": "TechCrunch 2026 ComfyUI $500M Valuation"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:py-torch", "vc:label": "PyTorch"},
-    {"@id": "urn:visionflow:linked:inpainting", "vc:label": "Inpainting"},
-    {"@id": "urn:visionflow:linked:text-to-image-generation", "vc:label": "Text-to-Image Generation"},
-    {"@id": "urn:visionflow:linked:esrgan-upscaling", "vc:label": "ESRGAN Upscaling"},
-    {"@id": "urn:visionflow:linked:face-restoration", "vc:label": "Face Restoration"},
-    {"@id": "urn:visionflow:linked:image-upscaling", "vc:label": "Image Upscaling"},
-    {"@id": "urn:visionflow:linked:cve-2025-67303", "vc:label": "CVE-2025-67303"},
-    {"@id": "urn:visionflow:linked:content-creation-pipeline", "vc:label": "Content Creation Pipeline"}
+    {
+      "@id": "urn:visionflow:linked:comfy-ui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-ui-api-specification",
+      "vc:label": "ComfyUI API Specification"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-ui-workflows",
+      "vc:label": "ComfyUI Workflows"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-ui-client",
+      "vc:label": "ComfyUI Client"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:python",
+      "vc:label": "Python"
+    },
+    {
+      "@id": "urn:visionflow:linked:git",
+      "vc:label": "Git"
+    },
+    {
+      "@id": "urn:visionflow:linked:hugging-face",
+      "vc:label": "Hugging Face"
+    },
+    {
+      "@id": "urn:visionflow:linked:hugging-face-hub",
+      "vc:label": "Hugging Face Hub"
+    },
+    {
+      "@id": "urn:visionflow:linked:civit-ai",
+      "vc:label": "CivitAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-net",
+      "vc:label": "ControlNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:lo-ra",
+      "vc:label": "LoRA"
+    },
+    {
+      "@id": "urn:visionflow:linked:ip-adapter",
+      "vc:label": "IP-Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-generation",
+      "vc:label": "Video Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:animate-diff",
+      "vc:label": "AnimateDiff"
+    },
+    {
+      "@id": "urn:visionflow:linked:flux-1",
+      "vc:label": "Flux.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:sdxl",
+      "vc:label": "SDXL"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic1111-web-ui",
+      "vc:label": "AUTOMATIC1111 Stable Diffusion WebUI"
+    },
+    {
+      "@id": "urn:visionflow:linked:node-based-visual-programming",
+      "vc:label": "Node-Based Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:python-package-management",
+      "vc:label": "Python Package Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducible-ml-pipelines",
+      "vc:label": "Reproducible ML Pipelines"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-portability",
+      "vc:label": "Workflow Portability"
+    },
+    {
+      "@id": "urn:visionflow:linked:custom-node-registry",
+      "vc:label": "Custom Node Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:missing-node-detection",
+      "vc:label": "Missing Node Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-downloader",
+      "vc:label": "Model Downloader"
+    },
+    {
+      "@id": "urn:visionflow:linked:community-extension-ecosystem",
+      "vc:label": "Community Extension Ecosystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:snapshot-management",
+      "vc:label": "Snapshot Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source-software",
+      "vc:label": "Open Source Software"
+    },
+    {
+      "@id": "urn:visionflow:linked:package-manager",
+      "vc:label": "Package Manager"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-application",
+      "vc:label": "AI Application"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-checkpoint",
+      "vc:label": "Model Checkpoint"
+    },
+    {
+      "@id": "urn:visionflow:linked:vae",
+      "vc:label": "VAE"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-node-registry",
+      "vc:label": "Comfy Node Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-org-git-hub-organisation",
+      "vc:label": "Comfy-Org GitHub Organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ltdrdata-2023-comfy-ui-manager",
+      "vc:label": "ltdrdata 2023 ComfyUI-Manager"
+    },
+    {
+      "@id": "urn:visionflow:linked:openart-workflow-registry",
+      "vc:label": "OpenArt Workflow Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:civitai-workflow-sharing",
+      "vc:label": "Civitai Workflow Sharing"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai-tooling",
+      "vc:label": "Generative AI Tooling"
+    },
+    {
+      "@id": "urn:visionflow:linked:pip",
+      "vc:label": "pip"
+    },
+    {
+      "@id": "urn:visionflow:linked:uv-package-manager",
+      "vc:label": "uv Package Manager"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-cli",
+      "vc:label": "comfy-cli"
+    },
+    {
+      "@id": "urn:visionflow:linked:was-node-suite",
+      "vc:label": "WAS Node Suite"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfy-ui-ipadapter-plus",
+      "vc:label": "ComfyUI-IPAdapter-Plus"
+    },
+    {
+      "@id": "urn:visionflow:linked:animate-diff-evolved",
+      "vc:label": "ComfyUI-AnimateDiff-Evolved"
+    },
+    {
+      "@id": "urn:visionflow:linked:tech-crunch-2026-comfy-ui-500-m-valuation",
+      "vc:label": "TechCrunch 2026 ComfyUI $500M Valuation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:py-torch",
+      "vc:label": "PyTorch"
+    },
+    {
+      "@id": "urn:visionflow:linked:inpainting",
+      "vc:label": "Inpainting"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image-generation",
+      "vc:label": "Text-to-Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:esrgan-upscaling",
+      "vc:label": "ESRGAN Upscaling"
+    },
+    {
+      "@id": "urn:visionflow:linked:face-restoration",
+      "vc:label": "Face Restoration"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-upscaling",
+      "vc:label": "Image Upscaling"
+    },
+    {
+      "@id": "urn:visionflow:linked:cve-2025-67303",
+      "vc:label": "CVE-2025-67303"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-creation-pipeline",
+      "vc:label": "Content Creation Pipeline"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -92,69 +261,186 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-application", "label": "AI Application"},
-    {"@id": "urn:ngm:class:package-manager", "label": "Package Manager"}
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:package-manager",
+      "label": "Package Manager"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:comfy-ui", "label": "ComfyUI"},
-      {"@id": "urn:ngm:class:open-generative-ai-tools", "label": "Generative AI Tooling"}
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:open-generative-ai-tools",
+        "label": "Generative AI Tooling"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:custom-node-registry", "label": "Custom Node Registry"},
-      {"@id": "urn:ngm:class:missing-node-detection", "label": "Missing Node Detection"},
-      {"@id": "urn:ngm:class:model-downloader", "label": "Model Downloader"},
-      {"@id": "urn:ngm:class:snapshot-management", "label": "Snapshot Management"}
+      {
+        "@id": "urn:ngm:class:custom-node-registry",
+        "label": "Custom Node Registry"
+      },
+      {
+        "@id": "urn:ngm:class:missing-node-detection",
+        "label": "Missing Node Detection"
+      },
+      {
+        "@id": "urn:ngm:class:model-downloader",
+        "label": "Model Downloader"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-management",
+        "label": "Snapshot Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:comfy-ui", "label": "ComfyUI"},
-      {"@id": "urn:ngm:class:git", "label": "Git"},
-      {"@id": "urn:ngm:class:python-package-management", "label": "Python Package Management"}
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:python-package-management",
+        "label": "Python Package Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
-      {"@id": "urn:ngm:class:python", "label": "Python"},
-      {"@id": "urn:ngm:class:hugging-face", "label": "Hugging Face"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:py-torch", "label": "PyTorch"}
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:workflow-portability", "label": "Workflow Portability"},
-      {"@id": "urn:ngm:class:reproducible-ml-pipelines", "label": "Reproducible ML Pipelines"},
-      {"@id": "urn:ngm:class:community-extension-ecosystem", "label": "Community Extension Ecosystem"}
+      {
+        "@id": "urn:ngm:class:workflow-portability",
+        "label": "Workflow Portability"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-ml-pipelines",
+        "label": "Reproducible ML Pipelines"
+      },
+      {
+        "@id": "urn:ngm:class:community-extension-ecosystem",
+        "label": "Community Extension Ecosystem"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:lo-ra", "label": "LoRA"},
-      {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"},
-      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
-      {"@id": "urn:ngm:class:image-upscaling", "label": "Image Upscaling"},
-      {"@id": "urn:ngm:class:face-restoration", "label": "Face Restoration"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:image-upscaling",
+        "label": "Image Upscaling"
+      },
+      {
+        "@id": "urn:ngm:class:face-restoration",
+        "label": "Face Restoration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:node-graph-visual-programming-interface", "label": "Node-Based Programming"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:civitai", "label": "CivitAI"},
-      {"@id": "urn:ngm:class:hugging-face-hub", "label": "Hugging Face Hub"}
+      {
+        "@id": "urn:ngm:class:node-graph-visual-programming-interface",
+        "label": "Node-Based Programming"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:civitai",
+        "label": "CivitAI"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:automatic-1111-web-ui", "label": "AUTOMATIC1111 Stable Diffusion WebUI"},
-      {"@id": "urn:ngm:class:pip", "label": "pip"}
+      {
+        "@id": "urn:ngm:class:automatic-1111-web-ui",
+        "label": "AUTOMATIC1111 Stable Diffusion WebUI"
+      },
+      {
+        "@id": "urn:ngm:class:pip",
+        "label": "pip"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"},
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification", "label": "ComfyUI API Specification"},
-      {"@id": "urn:ngm:class:comfy-node-registry", "label": "Comfy Node Registry"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
+        "label": "ComfyUI API Specification"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-node-registry",
+        "label": "Comfy Node Registry"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:comfyui-manager-extension", "label": "ComfyUI Manager Extension"}
+    {
+      "@id": "urn:ngm:class:comfyui-manager-extension",
+      "label": "ComfyUI Manager Extension"
+    }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -163,79 +449,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:comfy-ui-manager:b3f7a91e2d04",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c34cfb980618ad2dc0c96489456c77cd9a858bc36bead2bfc77206e8028e75ae"
-  },
-  "vc:resolutions": [
-    {"raw": "[[ComfyUI]]", "resolved": "urn:visionflow:linked:comfy-ui", "kind": "StubLink"},
-    {"raw": "[[ComfyUI API Specification]]", "resolved": "urn:visionflow:linked:comfy-ui-api-specification", "kind": "StubLink"},
-    {"raw": "[[ComfyUI Workflows]]", "resolved": "urn:visionflow:linked:comfy-ui-workflows", "kind": "StubLink"},
-    {"raw": "[[ComfyUI Client]]", "resolved": "urn:visionflow:linked:comfy-ui-client", "kind": "StubLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "StubLink"},
-    {"raw": "[[Stable Diffusion]]", "resolved": "urn:visionflow:linked:stable-diffusion", "kind": "StubLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "StubLink"},
-    {"raw": "[[Python]]", "resolved": "urn:visionflow:linked:python", "kind": "StubLink"},
-    {"raw": "[[Git]]", "resolved": "urn:visionflow:linked:git", "kind": "StubLink"},
-    {"raw": "[[Hugging Face]]", "resolved": "urn:visionflow:linked:hugging-face", "kind": "StubLink"},
-    {"raw": "[[Hugging Face Hub]]", "resolved": "urn:visionflow:linked:hugging-face-hub", "kind": "StubLink"},
-    {"raw": "[[CivitAI]]", "resolved": "urn:visionflow:linked:civit-ai", "kind": "StubLink"},
-    {"raw": "[[ControlNet]]", "resolved": "urn:visionflow:linked:control-net", "kind": "StubLink"},
-    {"raw": "[[LoRA]]", "resolved": "urn:visionflow:linked:lo-ra", "kind": "StubLink"},
-    {"raw": "[[IP-Adapter]]", "resolved": "urn:visionflow:linked:ip-adapter", "kind": "StubLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:visionflow:linked:image-generation", "kind": "StubLink"},
-    {"raw": "[[Video Generation]]", "resolved": "urn:visionflow:linked:video-generation", "kind": "StubLink"},
-    {"raw": "[[AnimateDiff]]", "resolved": "urn:visionflow:linked:animate-diff", "kind": "StubLink"},
-    {"raw": "[[Flux.1]]", "resolved": "urn:visionflow:linked:flux-1", "kind": "StubLink"},
-    {"raw": "[[SDXL]]", "resolved": "urn:visionflow:linked:sdxl", "kind": "StubLink"},
-    {"raw": "[[AUTOMATIC1111 Stable Diffusion WebUI]]", "resolved": "urn:visionflow:linked:automatic1111-web-ui", "kind": "StubLink"},
-    {"raw": "[[Node-Based Programming]]", "resolved": "urn:visionflow:linked:node-based-visual-programming", "kind": "StubLink"},
-    {"raw": "[[Workflow Automation]]", "resolved": "urn:visionflow:linked:workflow-automation", "kind": "StubLink"},
-    {"raw": "[[Python Package Management]]", "resolved": "urn:visionflow:linked:python-package-management", "kind": "StubLink"},
-    {"raw": "[[Reproducible ML Pipelines]]", "resolved": "urn:visionflow:linked:reproducible-ml-pipelines", "kind": "StubLink"},
-    {"raw": "[[Workflow Portability]]", "resolved": "urn:visionflow:linked:workflow-portability", "kind": "StubLink"},
-    {"raw": "[[Custom Node Registry]]", "resolved": "urn:visionflow:linked:custom-node-registry", "kind": "StubLink"},
-    {"raw": "[[Missing Node Detection]]", "resolved": "urn:visionflow:linked:missing-node-detection", "kind": "StubLink"},
-    {"raw": "[[Model Downloader]]", "resolved": "urn:visionflow:linked:model-downloader", "kind": "StubLink"},
-    {"raw": "[[Community Extension Ecosystem]]", "resolved": "urn:visionflow:linked:community-extension-ecosystem", "kind": "StubLink"},
-    {"raw": "[[Snapshot Management]]", "resolved": "urn:visionflow:linked:snapshot-management", "kind": "StubLink"},
-    {"raw": "[[Open Source Software]]", "resolved": "urn:visionflow:linked:open-source-software", "kind": "StubLink"},
-    {"raw": "[[Package Manager]]", "resolved": "urn:visionflow:linked:package-manager", "kind": "StubLink"},
-    {"raw": "[[AI Application]]", "resolved": "urn:visionflow:linked:ai-application", "kind": "StubLink"},
-    {"raw": "[[Model Checkpoint]]", "resolved": "urn:visionflow:linked:model-checkpoint", "kind": "StubLink"},
-    {"raw": "[[VAE]]", "resolved": "urn:visionflow:linked:vae", "kind": "StubLink"},
-    {"raw": "[[Comfy Node Registry]]", "resolved": "urn:visionflow:linked:comfy-node-registry", "kind": "StubLink"},
-    {"raw": "[[Comfy-Org GitHub Organisation]]", "resolved": "urn:visionflow:linked:comfy-org-git-hub-organisation", "kind": "StubLink"},
-    {"raw": "[[ltdrdata 2023 ComfyUI-Manager]]", "resolved": "urn:visionflow:linked:ltdrdata-2023-comfy-ui-manager", "kind": "StubLink"},
-    {"raw": "[[OpenArt Workflow Registry]]", "resolved": "urn:visionflow:linked:openart-workflow-registry", "kind": "StubLink"},
-    {"raw": "[[Civitai Workflow Sharing]]", "resolved": "urn:visionflow:linked:civitai-workflow-sharing", "kind": "StubLink"},
-    {"raw": "[[Generative AI Tooling]]", "resolved": "urn:visionflow:linked:generative-ai-tooling", "kind": "StubLink"},
-    {"raw": "[[pip]]", "resolved": "urn:visionflow:linked:pip", "kind": "StubLink"},
-    {"raw": "[[uv Package Manager]]", "resolved": "urn:visionflow:linked:uv-package-manager", "kind": "StubLink"},
-    {"raw": "[[comfy-cli]]", "resolved": "urn:visionflow:linked:comfy-cli", "kind": "StubLink"},
-    {"raw": "[[WAS Node Suite]]", "resolved": "urn:visionflow:linked:was-node-suite", "kind": "StubLink"},
-    {"raw": "[[ComfyUI-IPAdapter-Plus]]", "resolved": "urn:visionflow:linked:comfy-ui-ipadapter-plus", "kind": "StubLink"},
-    {"raw": "[[ComfyUI-AnimateDiff-Evolved]]", "resolved": "urn:visionflow:linked:animate-diff-evolved", "kind": "StubLink"},
-    {"raw": "[[TechCrunch 2026 ComfyUI $500M Valuation]]", "resolved": "urn:visionflow:linked:tech-crunch-2026-comfy-ui-500-m-valuation", "kind": "StubLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "StubLink"},
-    {"raw": "[[PyTorch]]", "resolved": "urn:visionflow:linked:py-torch", "kind": "StubLink"},
-    {"raw": "[[Inpainting]]", "resolved": "urn:visionflow:linked:inpainting", "kind": "StubLink"},
-    {"raw": "[[Text-to-Image Generation]]", "resolved": "urn:visionflow:linked:text-to-image-generation", "kind": "StubLink"},
-    {"raw": "[[ESRGAN Upscaling]]", "resolved": "urn:visionflow:linked:esrgan-upscaling", "kind": "StubLink"},
-    {"raw": "[[Face Restoration]]", "resolved": "urn:visionflow:linked:face-restoration", "kind": "StubLink"},
-    {"raw": "[[Image Upscaling]]", "resolved": "urn:visionflow:linked:image-upscaling", "kind": "StubLink"},
-    {"raw": "[[CVE-2025-67303]]", "resolved": "urn:visionflow:linked:cve-2025-67303", "kind": "StubLink"},
-    {"raw": "[[Content Creation Pipeline]]", "resolved": "urn:visionflow:linked:content-creation-pipeline", "kind": "StubLink"}
-  ]
-}
-```
-
 - ### Definition
-  - ComfyUI Manager is a community-developed [[Package Manager]] extension for the [[ComfyUI]] [[Node-Based Programming]] interface that provides an integrated lifecycle management system for discovering, installing, updating, and disabling [[Custom Node Registry|custom nodes]], [[Model Checkpoint|model checkpoints]], [[LoRA]] weight files, [[VAE]] decoders, and [[ControlNet]] preprocessors. Originally authored by Dr.Lt.Data (ltdrdata) and first released in 2023 to address the friction of manual [[Python Package Management|Python dependency management]] for [[Generative AI]] node repositories, the extension operates entirely within the ComfyUI server process, adding a management panel to the browser-based frontend without requiring any external cloud service. It maintains a curated JSON index of community node repositories sourced from GitHub, enabling one-click installation via [[Git]] clone and [[pip]] dependency resolution; performs [[Missing Node Detection]] against imported [[ComfyUI Workflows]] JSON, comparing required `class_type` values against installed node registries to surface a guided install dialogue; provides [[Snapshot Management]] that serialises the complete set of installed nodes and version pins into JSON snapshots enabling deterministic environment recreation; integrates with [[Hugging Face Hub]] and [[CivitAI]] REST APIs for direct model file downloads into the correct [[ComfyUI]] model directories; and manages update polling across all installed repositories to surface new commits. In March 2025 the repository transferred to the [[Comfy-Org GitHub Organisation]] as `Comfy-Org/ComfyUI-Manager`, with Dr.Lt.Data continuing as lead maintainer, and subsequently gained official support for the [[Comfy Node Registry]] at `registry.comfy.org` — a governed, quality-moderated alternative to the ad hoc GitHub-registry model — alongside support for the [[uv Package Manager]] as a faster, more deterministic alternative to [[pip]] for dependency resolution. By 2026 the extension is effectively a mandatory companion install for any practical [[ComfyUI]] deployment, with the [[Community Extension Ecosystem]] it enables spanning hundreds of node packages covering [[Text-to-Image Generation]], [[Video Generation]], [[ControlNet]] conditioning, [[IP-Adapter]] reference injection, [[ESRGAN Upscaling|upscaling]], [[Face Restoration]], [[Inpainting]], and agentic orchestration, making it the de facto index and installer for the entire open-source [[Generative AI Tooling]] ecosystem built on [[Diffusion Model]] inference.
+  - ComfyUI Manager is a community-developed [[Package Manager]] extension for the [[ComfyUI]] [[Node-Based Programming]] interface that provides an integrated lifecycle management system for discovering, installing, updating, and disabling [[Custom Node Registry|custom nodes]], [[Model Checkpoint|model checkpoints]], [[LoRA]] weight files, [[VAE]] decoders, and [[ControlNet]] preprocessors. Originally authored by Dr.Lt.Data (ltdrdata) and first released in 2023 to address the friction of manual [[Python Package Management|Python dependency management]] for [[Generative AI]] node repositories, the extension operates entirely within the ComfyUI server process, adding a management panel to the browser-based frontend without requiring any external cloud service. It maintains a curated JSON [private] of community node repositories sourced from GitHub, enabling one-click installation via [[Git]] clone and [[pip]] dependency resolution; performs [[Missing Node Detection]] against imported [[ComfyUI Workflows]] JSON, comparing required `class_type` values against installed node registries to surface a guided install dialogue; provides [[Snapshot Management]] that serialises the complete set of installed nodes and version pins into JSON snapshots enabling deterministic environment recreation; integrates with [[Hugging Face Hub]] and [[CivitAI]] REST APIs for direct model file downloads into the correct [[ComfyUI]] model directories; and manages update polling across all installed repositories to surface new commits. In March 2025 the repository transferred to the [[Comfy-Org GitHub Organisation]] as `Comfy-Org/ComfyUI-Manager`, with Dr.Lt.Data continuing as lead maintainer, and subsequently gained official support for the [[Comfy Node Registry]] at `registry.comfy.org` — a governed, quality-moderated alternative to the ad hoc GitHub-registry model — alongside support for the [[uv Package Manager]] as a faster, more deterministic alternative to [[pip]] for dependency resolution. By 2026 the extension is effectively a mandatory companion install for any practical [[ComfyUI]] deployment, with the [[Community Extension Ecosystem]] it enables spanning hundreds of node packages covering [[Text-to-Image Generation]], [[Video Generation]], [[ControlNet]] conditioning, [[IP-Adapter]] reference injection, [[ESRGAN Upscaling|upscaling]], [[Face Restoration]], [[Inpainting]], and agentic orchestration, making it the de facto [private] and installer for the entire open-source [[Generative AI Tooling]] ecosystem built on [[Diffusion Model]] inference.
 
 - ### Semantic Classification
   - owl-class:: ai:ComfyUIManager
@@ -358,11 +573,11 @@ public: true
     ```
 
   - ## About
-    The ComfyUI Manager extension is best understood through its role in solving the custom node installation problem that would otherwise have severely constrained the [[ComfyUI]] ecosystem's growth. When [[ComfyUI]] launched in January 2023 it exposed a clean extension mechanism: any [[Python]] module placed in the `custom_nodes/` directory whose `__init__.py` registered entries in `NODE_CLASS_MAPPINGS` would be available as node types in the next server restart. This mechanism made adding new capabilities trivially easy for developers but correspondingly painful for users: each new capability was a separate [[Git]] repository requiring manual clone, a separate Python virtual environment concern requiring manual dependency install, and a separate compatibility matrix to maintain across ComfyUI core updates. Within weeks of ComfyUI's release, the community had published dozens of custom node packages; within months, the count was in the hundreds. The [[AUTOMATIC1111 Stable Diffusion WebUI]] had faced an analogous extension problem and addressed it with a built-in extensions tab backed by a community-maintained index. ComfyUI Manager implemented the same solution for ComfyUI, establishing the registry-clone-pip pattern that became the universal installation method for the next two years.
+    The ComfyUI Manager extension is best understood through its role in solving the custom node installation problem that would otherwise have severely constrained the [[ComfyUI]] ecosystem's growth. When [[ComfyUI]] launched in January 2023 it exposed a clean extension mechanism: any [[Python]] module placed in the `custom_nodes/` directory whose `__init__.py` registered entries in `NODE_CLASS_MAPPINGS` would be available as node types in the next server restart. This mechanism made adding new capabilities trivially easy for developers but correspondingly painful for users: each new capability was a separate [[Git]] repository requiring manual clone, a separate Python virtual environment concern requiring manual dependency install, and a separate compatibility matrix to maintain across ComfyUI core updates. Within weeks of ComfyUI's release, the community had published dozens of custom node packages; within months, the count was in the hundreds. The [[AUTOMATIC1111 Stable Diffusion WebUI]] had faced an analogous extension problem and addressed it with a built-in extensions tab backed by a community-maintained [private]. ComfyUI Manager implemented the same solution for ComfyUI, establishing the registry-clone-pip pattern that became the universal installation method for the next two years.
 
-    ComfyUI Manager fills a critical infrastructure gap that emerged immediately upon the [[ComfyUI]] ecosystem's explosive growth after January 2023. While [[ComfyUI]] itself provided a highly composable, graph-based interface for constructing [[Stable Diffusion]] and broader [[Diffusion Model]] pipelines, the practical value of the platform depended entirely on the availability and correct installation of community-authored custom node packages — each a [[Python]] module registered within ComfyUI's extension loading system. Before the [[ltdrdata 2023 ComfyUI-Manager]] extension existed, users were required to manually clone individual repositories into the `custom_nodes/` directory, resolve [[Python Package Management|Python dependency]] conflicts through the command line, and identify missing nodes in shared [[ComfyUI Workflows]] by manually parsing workflow JSON files to find `class_type` references. ComfyUI Manager automated the entire process: a centralised JSON registry of community packages (maintained in the `ltdrdata/ComfyUI-Manager` GitHub repository and now also at the official [[Comfy Node Registry]] at `registry.comfy.org`) became the catalogue; [[Git]] clone became the installation mechanism; [[pip]] (and later the faster [[uv Package Manager]]) became the dependency resolution engine; and a browser-accessible management panel became the user interface for all of these operations. The result established a community norm for node discovery and made [[ComfyUI Workflows]] genuinely portable: a workflow JSON exported from one machine could be imported on another, and ComfyUI Manager would identify which custom nodes were absent and guide installation of the missing packages.
+    ComfyUI Manager fills a critical infrastructure gap that emerged immediately upon the [[ComfyUI]] ecosystem's explosive growth after January 2023. While [[ComfyUI]] itself provided a highly composable, graph-based interface for constructing [[Stable Diffusion]] and broader [[Diffusion Model]] pipelines, the practical value of the platform depended entirely on the availability and correct installation of community-authored custom node packages — each a [[Python]] module registered within ComfyUI's extension loading system. Before the [[ltdrdata 2023 ComfyUI-Manager]] extension existed, users were required to manually clone individual repositories into the `custom_nodes/` directory, resolve [[Python Package Management|Python dependency]] conflicts through the command line, and identify missing nodes in shared [[ComfyUI Workflows]] by manually parsing workflow JSON files to find `class_type` references. ComfyUI Manager automated the entire process: a centralised JSON registry of community packages (maintained in the `ltdrdata/ComfyUI-Manager` GitHub repository and now also at the official [[Comfy Node Registry]] at `registry.comfy.org`) became the catalogue; [[Git]] clone became the installation mechanism; [[pip]] (and later the faster [[uv Package Manager]]) became the dependency resolution engine; and a browser-accessible management panel became the user interface for all of these operations. The result established a community norm for node discovery and made [[ComfyUI Workflows]] genuinely portable: a workflow JSON exported from one machine [private] be imported on another, and ComfyUI Manager would identify which custom nodes were absent and guide installation of the missing packages.
 
-    The scale of the ecosystem that ComfyUI Manager enabled is significant. By 2025, the custom node registry listed over one thousand packages spanning every conceivable [[Generative AI]] capability: [[ControlNet]] preprocessors for depth, pose, edge, and normal map conditioning; [[LoRA]] loaders and stacking utilities; [[IP-Adapter]] nodes for reference image injection; [[AnimateDiff]] and [[ComfyUI-AnimateDiff-Evolved]] for video generation; upscaling nodes wrapping [[ESRGAN Upscaling|ESRGAN]] and Real-ESRGAN; [[Face Restoration]] nodes wrapping GFPGAN and CodeFormer; LLM API connector nodes for prompt generation via GPT-4 and Claude; 3D mesh generation nodes via TripoSR and Zero123; audio generation nodes via MusicGen; and entire research paper implementations published as ComfyUI custom nodes within days of arXiv release. The registry-clone-pip model lowered the barrier to node publication to the point where a single PhD student's experimental implementation of a new sampling algorithm could be used by thousands of artists the same week. This velocity of community innovation is the primary value ComfyUI Manager delivers, and it explains both why the extension is treated as effectively mandatory and why Comfy-Org formally absorbed it into the [[Comfy-Org GitHub Organisation]] namespace in March 2025.
+    The scale of the ecosystem that ComfyUI Manager enabled is significant. By 2025, the custom node registry listed over one thousand packages spanning every conceivable [[Generative AI]] capability: [[ControlNet]] preprocessors for depth, pose, edge, and normal map conditioning; [[LoRA]] loaders and stacking utilities; [[IP-Adapter]] nodes for reference image injection; [[AnimateDiff]] and [[ComfyUI-AnimateDiff-Evolved]] for video generation; upscaling nodes wrapping [[ESRGAN Upscaling|ESRGAN]] and Real-ESRGAN; [[Face Restoration]] nodes wrapping GFPGAN and CodeFormer; LLM API connector nodes for prompt generation via GPT-4 and Claude; 3D mesh generation nodes via TripoSR and Zero123; audio generation nodes via MusicGen; and entire research paper implementations published as ComfyUI custom nodes within days of arXiv release. The registry-clone-pip model lowered the barrier to node publication to the point where a single PhD student's experimental implementation of a new sampling algorithm [private] be used by thousands of artists the same week. This velocity of community innovation is the primary value ComfyUI Manager delivers, and it explains both why the extension is treated as effectively mandatory and why Comfy-Org formally absorbed it into the [[Comfy-Org GitHub Organisation]] namespace in March 2025.
 
     The extension's architectural position within the [[ComfyUI]] server is significant. It implements as a Python backend module that hooks into ComfyUI's extension loading path — running within the same process and [[Python]] environment as the inference engine — and a JavaScript frontend component that adds a management panel to ComfyUI's Lit-element-based web interface. The registry JSON is fetched from a GitHub-hosted canonical source (now also mirrored at `registry.comfy.org`), enabling community contribution of new package listings via pull request without requiring Manager itself to be updated. Node installation delegates installation entirely to [[Git]] clone plus [[pip]] requirements install, meaning every installed custom node retains its full repository history and can be version-pinned, rolled back, or inspected via standard [[Git]] operations. This architecture kept dependency on ComfyUI Manager itself minimal while leveraging universal developer tooling, which explains both its rapid adoption and its architectural limitations: pip's dependency resolution is not deterministic without lock files, and [[Git]]-based installation means package integrity depends on the upstream repository remaining available and unmodified at the installed commit.
 
@@ -404,7 +619,7 @@ public: true
 
   - ## Use Cases / Major Families
 
-    **Workflow Sharing Communities** — Platforms including [[OpenArt Workflow Registry]], [[Civitai Workflow Sharing]], and community Discord servers distribute [[ComfyUI Workflows]] as JSON files. Without ComfyUI Manager, recipients unable to run shared workflows due to missing custom nodes faced a manual resolution process that could take hours; with Manager's [[Missing Node Detection]], the same resolution takes minutes via the install dialogue. This is the use case that drove initial mass adoption.
+    **Workflow Sharing Communities** — Platforms including [[OpenArt Workflow Registry]], [[Civitai Workflow Sharing]], and community Discord servers distribute [[ComfyUI Workflows]] as JSON files. Without ComfyUI Manager, recipients unable to run shared workflows due to missing custom nodes faced a manual resolution process that [private] take hours; with Manager's [[Missing Node Detection]], the same resolution takes minutes via the install dialogue. This is the use case that drove initial mass adoption.
 
     **ControlNet-Augmented Pipelines** — Users integrating dozens of [[ControlNet]] preprocessor nodes (OpenPose, depth estimation, Canny edge, lineart, normalmap, tile) for structural conditioning of [[Image Generation]] rely on Manager to discover, install, and keep current the associated preprocessor node packages (e.g., `ComfyUI_ControlNet_Aux`) and their model weight files downloaded via the Model Downloader.
 
@@ -424,7 +639,7 @@ public: true
 
     **The GitHub Custom Node List** — the legacy primary registry, maintained in `Comfy-Org/ComfyUI-Manager` as `custom-node-list.json`, a JSON array where each entry has fields: `author` (GitHub username), `title` (display name), `reference` (GitHub repository URL), `files` (list of [[Python]] files registering node classes, used for `class_type` mapping), `install_type` (one of `git-clone`, `copy`, `unzip`, `pip`), `description` (plain text), and `tags` (array of capability strings such as `"image"`, `"video"`, `"controlnet"`, `"sampling"`). A companion file `extension-node-map.json` maps from repository URLs to the `class_type` strings they provide, enabling [[Missing Node Detection]] without cloning the repository. This mapping is updated by the Manager registry pull process and stored locally, decoupling the detection query from network availability.
 
-    **The Comfy Node Registry (CNR)** — the official registry at `registry.comfy.org`, a PyPI-compatible package index where custom node authors publish packages via `comfy-cli publish`. CNR packages include a manifest with metadata, pre-built [[Python Package Management|Python wheels]] for common platforms (eliminating compilation), a `nodes.json` file listing registered `class_type` strings, and optional `models.json` listing model dependencies with download URLs and SHA-256 hashes. CNR packages receive a moderation review for basic code quality and absence of obvious malicious code before acceptance — a weaker but present bar compared to the zero-moderation GitHub list. Integration with [[uv Package Manager|uv]]'s wheel cache makes CNR installs dramatically faster than git-clone-plus-pip-from-source for packages with binary dependencies.
+    **The Comfy Node Registry (CNR)** — the official registry at `registry.comfy.org`, a PyPI-compatible package [private] where custom node authors publish packages via `comfy-cli publish`. CNR packages include a manifest with metadata, pre-built [[Python Package Management|Python wheels]] for common platforms (eliminating compilation), a `nodes.json` file listing registered `class_type` strings, and optional `models.json` listing model dependencies with download URLs and SHA-256 hashes. CNR packages receive a moderation review for basic code quality and absence of obvious malicious code before acceptance — a weaker but present bar compared to the zero-moderation GitHub list. Integration with [[uv Package Manager|uv]]'s wheel cache makes CNR installs dramatically faster than git-clone-plus-pip-from-source for packages with binary dependencies.
 
     The `extension-node-map.json` file is the data structure enabling [[Missing Node Detection]] without network access. During startup, Manager builds an in-memory mapping from `class_type` strings to the providing repository by merging: (a) the locally stored `extension-node-map.json` from the last registry pull, and (b) live scanning of installed `custom_nodes/` Python modules via ComfyUI's `NODE_CLASS_MAPPINGS` dict. When a [[ComfyUI Workflows|workflow JSON]] is imported, the missing-node detector queries this merged mapping for every `class_type` value in the workflow, identifying nodes that are uninstalled (appear in `extension-node-map.json` but not in `NODE_CLASS_MAPPINGS`) and nodes completely unknown to the registry (appear in neither). The latter case — a `class_type` referencing a private or unreleased node — produces a warning rather than an install prompt, informing the user that the node is not in any known registry.
 
@@ -432,7 +647,7 @@ public: true
 
   - ## Relationship to the Broader Package Management Ecosystem
 
-    ComfyUI Manager's design choices become clearer when situated within the broader history of package management for specialised developer ecosystems. The progression from manual dependency installation to community registry to governed certified registry closely parallels the evolution of npm (Node.js), pip (Python), and RubyGems: each began as a community-maintained index of manually published packages, evolved governance tooling as security incidents accumulated, and eventually developed enterprise tiers for compliance-constrained users. ComfyUI Manager is roughly at the stage npm occupied in 2016 — a thriving community registry with a growing security vulnerability catalogue and nascent enterprise governance features, but still primarily serving individual developers rather than corporate software supply chains.
+    ComfyUI Manager's design choices become clearer when situated within the broader history of package management for specialised developer ecosystems. The progression from manual dependency installation to community registry to governed certified registry closely parallels the evolution of npm (Node.js), pip (Python), and RubyGems: each began as a community-maintained [private] of manually published packages, evolved governance tooling as security incidents accumulated, and eventually developed enterprise tiers for compliance-constrained users. ComfyUI Manager is roughly at the stage npm occupied in 2016 — a thriving community registry with a growing security vulnerability catalogue and nascent enterprise governance features, but still primarily serving individual developers rather than corporate software supply chains.
 
     The dependency resolution problem ComfyUI Manager delegates to [[pip]] (or [[uv Package Manager|uv]]) is fundamentally harder for ML packages than for most software ecosystems, because ML packages have unusually complex CUDA/GPU dependency trees. A single custom node might require: a specific version of PyTorch (itself with CUDA version dependencies), a specific version of `xformers` (aligned with the PyTorch CUDA version), `triton` (for kernel compilation), `safetensors`, `transformers`, and potentially `bitsandbytes` (with its own CUDA binary compilation step). These dependency chains interact with the base [[ComfyUI]] PyTorch installation in ways that [[pip]]'s SAT solver often cannot resolve without manual intervention. The [[uv Package Manager|uv]] solver handles these cases better through pre-built binary wheels, but the fundamental challenge — multiple ML packages requiring conflicting CUDA library versions — remains an active area of Python packaging research. Manager's [[Snapshot Management]] feature is a pragmatic workaround: rather than solving the dependency resolution problem completely, it captures a known-good state and enables restoration to that state, sidestepping resolution for the common case of reproducing an existing environment.
 
@@ -450,7 +665,7 @@ public: true
 
     The [[Comfy Node Registry]] (`registry.comfy.org`), launched 2025 in stages, introduced a governed alternative to the ad hoc GitHub registry. Publishers submit packages via `comfy-cli publish` (requiring a `comfy.org` account and package manifest), packages receive moderation review for basic code quality and absence of obvious malicious code, and pre-built wheels eliminate the `pip install` compilation step for common platforms — addressing the most significant friction point for Windows users with complex CUDA dependency trees. As of June 2026, the CNR lists approximately 400 packages (versus the 1000+ in the legacy GitHub custom-node-list.json registry), with the CNR expected to achieve parity by year-end as node developers migrate to the new publication workflow. The CNR's moderation requirement creates a quality floor that the GitHub registry lacks, though it also introduces a publication latency — experimental nodes are still published first on GitHub, with CNR registration following after stabilisation.
 
-    Support for [[uv Package Manager|uv]] as the dependency resolution backend (configurable in Manager settings) reduced install times for large node packages by one to two orders of magnitude compared to [[pip]] on cold caches. The `uv pip` invocation resolves and downloads binary wheels in parallel, whereas pip's sequential resolution and build-from-source fallback could take 5-15 minutes for packages with heavy dependencies like `xformers` or packages requiring CUDA compilation. The `comfy-cli` command-line tool (pip-installable, separate from the Manager browser extension) provides a programmatic interface to Manager's snapshot and installation functionality, enabling shell scripting and CI/CD integration patterns.
+    Support for [[uv Package Manager|uv]] as the dependency resolution backend (configurable in Manager settings) reduced install times for large node packages by one to two orders of magnitude compared to [[pip]] on cold caches. The `uv pip` invocation resolves and downloads binary wheels in parallel, whereas pip's sequential resolution and build-from-source fallback [private] take 5-15 minutes for packages with heavy dependencies like `xformers` or packages requiring CUDA compilation. The `comfy-cli` command-line tool (pip-installable, separate from the Manager browser extension) provides a programmatic interface to Manager's snapshot and installation functionality, enabling shell scripting and CI/CD integration patterns.
 
     The security landscape matured through incident response. [[CVE-2025-67303]] (information disclosure via unprotected data path in Manager prior to v3.38, disclosed January 2026) was patched within days of disclosure, with Comfy-Org issuing a coordinated security advisory — the first formal security advisory for the ComfyUI project. The broader [[ComfyUI]] cryptomining botnet campaign (documented by Censys in May 2025) specifically targeted unpatched ComfyUI-Manager installations as a reconnaissance vector, accelerating adoption of the v3.38 security update across the user base. Comfy-Org's $30M funding round in April 2026 at a $500M post-money valuation ([[TechCrunch 2026 ComfyUI $500M Valuation]]) explicitly included investment in security infrastructure for the [[Comfy Node Registry]] and [[Comfy Cloud]] managed service, with CVE remediation SLAs and package signing roadmap items cited in the funding announcement.
 
@@ -478,7 +693,7 @@ public: true
 
     Fifth, enterprise governance features — per-organisation node registries, audit logs for node installations, CVE-feed integration that automatically flags installed nodes against the [[Comfy Node Registry]]'s vulnerability database, and approved-list enforcement that prevents installation of uncertified nodes in production environments — will be developed for the enterprise customer segment. This positions ComfyUI Manager as an enterprise software asset management tool rather than merely a community convenience extension, analogous to the transition JFrog Artifactory made from a local Maven mirror to an enterprise artifact management platform.
 
-    Sixth, model discovery and management will deepen substantially. The [[Model Downloader]] will gain integration with the [[Comfy Node Registry]]'s model index (currently in development), enabling registry-mediated download of quantised (GGUF, INT8, INT4) and distilled model variants alongside community-contributed fine-tunes, with SHA-256 hash verification as a first-class citizen preventing corrupted or tampered model weights from entering production pipelines. Integration with emerging model provenance standards (e.g., the C2PA coalition's content credentials for AI-generated content) will further distinguish enterprise-certified models from community-contributed models in the download interface, addressing the licensing and attribution requirements that professional studios face when using AI-generated content in commercial productions.
+    Sixth, model discovery and management will deepen substantially. The [[Model Downloader]] will gain integration with the [[Comfy Node Registry]]'s model [private] (currently in development), enabling registry-mediated download of quantised (GGUF, INT8, INT4) and distilled model variants alongside community-contributed fine-tunes, with SHA-256 hash verification as a first-class citizen preventing corrupted or tampered model weights from entering production pipelines. Integration with emerging model provenance standards (e.g., the C2PA coalition's content credentials for AI-generated content) will further distinguish enterprise-certified models from community-contributed models in the download interface, addressing the licensing and attribution requirements that professional studios face when using AI-generated content in commercial productions.
 
     Seventh, the migration of ComfyUI Manager's data store away from the legacy `ComfyUI/user/default/` path (driven by [[CVE-2025-67303]]) will be extended to a formally specified, versioned storage schema that supports multi-user ComfyUI deployments, where different users maintain separate node environments layered over a shared base installation. This multi-user architecture is essential for the Comfy Cloud managed service as it scales beyond individual developer accounts to team and organisation-level deployments.
 
@@ -494,7 +709,7 @@ public: true
     - **git-clone install type** — the default installation method for GitHub-registry custom nodes: Manager executes `git clone <repository_url> custom_nodes/<node_name>`, then runs `pip install -r requirements.txt` (or `pip install -e .` for editable installs). The installed node retains the full [[Git]] repository history, enabling rollback to any prior commit via `git checkout <sha>` and version inspection via `git log`.
     - **pip install type** — an alternative registry entry `install_type` where the node is distributed as a pip package on PyPI rather than as a raw [[Git]] repository; Manager executes `pip install <package_name>` directly. Used for professionally packaged nodes and for [[Comfy Node Registry]] entries that publish pre-built wheels.
     - **NODE_CLASS_MAPPINGS** — the [[Python]] dictionary that [[ComfyUI]]'s extension loading system collects from each custom node's `__init__.py` by calling `NODE_CLASS_MAPPINGS.update(...)` (or by reading the returned value of the module's `__init__.py`). Maps `class_type` strings (the node identifiers in workflow JSON) to Python class objects implementing the node. This dict is the runtime source of truth that [[Missing Node Detection]] compares against.
-    - **extension-node-map.json** — the registry-side index maintained by Manager mapping GitHub repository URLs to the `class_type` strings they register. Populated by the Manager maintainer from periodic scans of the registry. Enables [[Missing Node Detection]] without cloning or importing the repositories being queried.
+    - **extension-node-map.json** — the registry-side [private] maintained by Manager mapping GitHub repository URLs to the `class_type` strings they register. Populated by the Manager maintainer from periodic scans of the registry. Enables [[Missing Node Detection]] without cloning or importing the repositories being queried.
     - **update-all** — a Manager UI action that fetches the latest commits for all installed [[Git]]-type custom nodes, saves a pre-update [[Snapshot Management|snapshot]], and runs `git pull` plus `pip install` for each installed node. The most common cause of ComfyUI environment breakage, as individual node authors do not coordinate release cycles; the pre-update snapshot enables rollback.
     - **alt-install** — Manager's model hash verification feature that detects when a model file exists in the ComfyUI model directories under a different filename from the registry entry's expected filename, preventing redundant multi-gigabyte downloads of already-present model weights.
 
@@ -516,11 +731,11 @@ public: true
 
     **Code execution on install** — custom node installation via [[Git]] clone and [[pip]] install is a fully privileged code execution event. A malicious `requirements.txt` or a malicious `__init__.py` in a custom node repository can execute arbitrary code on the ComfyUI user's machine during installation. Unlike pip packages on PyPI, which receive at least minimal automated malware scanning, GitHub-registry nodes receive no automated scanning before appearing in Manager's install list. The [[Comfy Node Registry]]'s moderation review addresses this for CNR-listed packages but not for GitHub-only packages. Users installing arbitrary nodes from the GitHub registry are implicitly trusting the node author's GitHub account security and code review practices.
 
-    **Dependency confusion attacks** — custom nodes that install Python dependencies with names similar to popular packages (the "dependency confusion" attack vector documented by Alex Birsan in 2021) could introduce malicious packages into a ComfyUI environment if pip's resolution prefers a malicious PyPI package over the intended private package. [[uv Package Manager|uv]]'s explicit `--index-url` configuration and package pinning reduce but do not eliminate this risk. Production environments should maintain pip/uv configuration with `--extra-index-url` ordering that prioritises verified sources.
+    **Dependency confusion attacks** — custom nodes that install Python dependencies with names similar to popular packages (the "dependency confusion" attack vector documented by Alex Birsan in 2021) [private] introduce malicious packages into a ComfyUI environment if pip's resolution prefers a malicious PyPI package over the intended private package. [[uv Package Manager|uv]]'s explicit `--index-url` configuration and package pinning reduce but do not eliminate this risk. Production environments should maintain pip/uv configuration with `--extra-index-url` ordering that prioritises verified sources.
 
     **[[CVE-2025-67303]] post-mortem** — the information disclosure vulnerability affected Manager data files stored in `ComfyUI/user/default/ComfyUI-Manager/`, which was accessible via ComfyUI's unauthenticated web API in ComfyUI versions prior to v0.3.76. The exposed data included Manager's configuration, cached registry entries, and potentially API keys stored in Manager's model download credentials. The fix (Manager v3.38) migrated Manager's data to a path outside the web root; ComfyUI v0.3.76 restricted the paths accessible via the `/user` endpoint. The incident highlighted that Manager's privileged access to the ComfyUI installation — it reads and writes to `custom_nodes/`, `models/`, and configuration files — makes it a high-value attack target that must be kept updated promptly.
 
-    **Model integrity** — model files downloaded via Manager's [[Model Downloader]] from [[Hugging Face Hub]] and [[CivitAI]] are verified by file size (if the registry entry specifies an expected size) but not by cryptographic hash in the current implementation. A compromised CDN or a man-in-the-middle attack could substitute a malicious model file that executes arbitrary code during [[PyTorch]] tensor loading (the `torch.load` vulnerability with `pickle` format, mitigated by the `safetensors` format but not eliminated for legacy `.ckpt` files). The [[Comfy Node Registry]] model manifest format's SHA-256 hash verification — when fully implemented and enforced — will close this gap for CNR-listed models.
+    **Model integrity** — model files downloaded via Manager's [[Model Downloader]] from [[Hugging Face Hub]] and [[CivitAI]] are verified by file size (if the registry entry specifies an expected size) but not by cryptographic hash in the current implementation. A compromised CDN or a man-in-the-middle attack [private] substitute a malicious model file that executes arbitrary code during [[PyTorch]] tensor loading (the `torch.load` vulnerability with `pickle` format, mitigated by the `safetensors` format but not eliminated for legacy `.ckpt` files). The [[Comfy Node Registry]] model manifest format's SHA-256 hash verification — when fully implemented and enforced — will close this gap for CNR-listed models.
 
   - ## Comparison with Alternative Extension Management Approaches
 
@@ -528,7 +743,7 @@ public: true
 
     **Manual [[Git]] clone workflow** — the pre-Manager method: manually `git clone` each custom node repository into `custom_nodes/`, manually run `pip install -r requirements.txt`, manually identify missing nodes from workflow JSON by reading the `class_type` fields and searching GitHub. This approach is transparent and gives maximum control but is prohibitively labour-intensive for environments with more than a handful of custom nodes. Manager automates all of this while preserving the underlying [[Git]]-based model.
 
-    **[[AUTOMATIC1111 Stable Diffusion WebUI]] Extensions** — the analogous system for the [[AUTOMATIC1111 Stable Diffusion WebUI|AUTOMATIC1111]] ecosystem. Similar design: a browser-accessible extension tab, a community-maintained index (the `AUTOMATIC1111/stable-diffusion-webui-extensions` repository on GitHub), [[Git]] clone installation, pip dependency management. The primary differences are that A1111 extensions are harder to transfer between environments (no snapshot export equivalent) and the registry is entirely community-contributed with no [[Comfy Node Registry]]-equivalent moderation tier. ComfyUI Manager's [[Snapshot Management]] capability is a significant advance over the A1111 extension model.
+    **[[AUTOMATIC1111 Stable Diffusion WebUI]] Extensions** — the analogous system for the [[AUTOMATIC1111 Stable Diffusion WebUI|AUTOMATIC1111]] ecosystem. Similar design: a browser-accessible extension tab, a community-maintained [private] (the `AUTOMATIC1111/stable-diffusion-webui-extensions` repository on GitHub), [[Git]] clone installation, pip dependency management. The primary differences are that A1111 extensions are harder to transfer between environments (no snapshot export equivalent) and the registry is entirely community-contributed with no [[Comfy Node Registry]]-equivalent moderation tier. ComfyUI Manager's [[Snapshot Management]] capability is a significant advance over the A1111 extension model.
 
     **Conda environment management** — the ML community standard for Python environment isolation: `conda create -n comfyui python=3.10`, `conda install pytorch torchvision torchaudio`, then git-clone custom nodes. Conda environments provide stronger dependency isolation than Manager's pip-into-the-base-environment model, with full transitive package locking via `conda env export`. The trade-off is that Conda environments require more expertise, cannot be managed from a browser UI, and do not have the custom node discovery / missing-node detection capabilities that Manager provides. Production deployments often layer both: Conda or venv for Python package isolation, ComfyUI Manager for custom node lifecycle management within that isolated environment.
 

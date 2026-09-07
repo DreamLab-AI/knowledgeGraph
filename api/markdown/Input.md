@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Input
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,25 +83,58 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:transaction", "label": "Transaction"}
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
-      {"@id": "urn:ngm:class:output", "label": "Output"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:output",
+        "label": "Output"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:account-model", "label": "Account Model"}
+      {
+        "@id": "urn:ngm:class:account-model",
+        "label": "Account Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"}
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
     ]
   },
   "provenance": {
@@ -116,62 +144,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:input:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d3585822115560999f5df938fae3347a117fac784344f343d21a38b0f75eecf2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DistributedDataStructure]]",
-      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Transaction funding source within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real Time Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

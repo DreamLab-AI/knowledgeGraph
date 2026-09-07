@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Advanced Metering Infrastructure
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:advanced-metering-infrastructure", "@type":"Page", "title":"Advanced Metering Infrastructure", "vc:slug":"advanced-metering-infrastructure", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:advanced-metering-infrastructure",
+  "@type": "Page",
+  "title": "Advanced Metering Infrastructure",
+  "vc:slug": "advanced-metering-infrastructure",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

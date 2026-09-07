@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Semantic Web
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

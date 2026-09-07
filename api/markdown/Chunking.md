@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Chunking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,54 +55,141 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+    {
+      "@id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:document-chunking", "label": "Document Chunking"},
-    {"@id": "urn:ngm:class:text-segmentation", "label": "Text Segmentation"},
-    {"@id": "urn:ngm:class:document-splitting", "label": "Document Splitting"}
+    {
+      "@id": "urn:ngm:class:document-chunking",
+      "label": "Document Chunking"
+    },
+    {
+      "@id": "urn:ngm:class:text-segmentation",
+      "label": "Text Segmentation"
+    },
+    {
+      "@id": "urn:ngm:class:document-splitting",
+      "label": "Document Splitting"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:document-parser", "label": "Document Parser"},
-      {"@id": "urn:ngm:class:tokeniser", "label": "Tokeniser"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:document-parser",
+        "label": "Document Parser"
+      },
+      {
+        "@id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:dense-retrieval", "label": "Dense Retrieval"},
-      {"@id": "urn:ngm:class:hallucination-reduction", "label": "Hallucination Mitigation"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:hallucination-reduction",
+        "label": "Hallucination Mitigation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:chunk-overlap", "label": "Chunk Overlap"},
-      {"@id": "urn:ngm:class:chunk-metadata", "label": "Chunk Metadata"},
-      {"@id": "urn:ngm:class:chunk-boundary", "label": "Chunk Boundary"}
+      {
+        "@id": "urn:ngm:class:chunk-overlap",
+        "label": "Chunk Overlap"
+      },
+      {
+        "@id": "urn:ngm:class:chunk-metadata",
+        "label": "Chunk Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:chunk-boundary",
+        "label": "Chunk Boundary"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipeline"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+      {
+        "@id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipeline"},
-      {"@id": "urn:ngm:class:gpts-and-custom-assistants", "label": "GPTs and Custom Assistants"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
-      {"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:gpts-and-custom-assistants",
+        "label": "GPTs and Custom Assistants"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:full-document-indexing", "label": "Full-Document Indexing"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:full-document-indexing",
+        "label": "Full-Document Indexing"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:sentence-transformers", "label": "Sentence Transformers"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:sentence-transformers",
+        "label": "Sentence Transformers"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"},
-      {"@id": "urn:ngm:class:source-attribution", "label": "Source Attribution"}
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "@id": "urn:ngm:class:source-attribution",
+        "label": "Source Attribution"
+      }
     ]
   },
   "quality": 0.72
@@ -288,14 +370,14 @@ public: true
 
   - ## Chunk Overlap and Boundary Artefacts
     - Overlap is the degree to which successive chunks share tokens at their edges. Without overlap, a sentence or entity straddling a chunk boundary appears in neither chunk in its complete form, causing retrieval failure for queries about that entity. With overlap, the boundary region appears in both adjacent chunks, ensuring that any query phrase matching content near a boundary can retrieve at least one fully-contextualised chunk.
-    - Standard practice: 10-20% overlap (50-100 tokens for 512-token chunks). Too little overlap leaves boundary artefacts; too much overlap increases index size, embedding cost, and the number of redundant chunks retrieved per query, raising context-window cost at generation time.
+    - Standard practice: 10-20% overlap (50-100 tokens for 512-token chunks). Too little overlap leaves boundary artefacts; too much overlap increases [private] size, embedding cost, and the number of redundant chunks retrieved per query, raising context-window cost at generation time.
     - Metadata enrichment at chunk creation time — attaching document title, section heading, page number, document date, and source URL as structured metadata fields alongside the text vector — enables hybrid retrieval combining vector similarity with metadata filtering (e.g., "retrieve only chunks from documents published after 2023 in the compliance domain"). This is a standard practice in production RAG deployments.
 
   - ## The Dual-Granularity Problem
     - A structural tension underlies all chunking design: semantic matching for retrieval requires smaller, precise chunks (100-256 tokens) that produce tight embedding signals; context provision for generation requires larger passages (512-2048 tokens) that give the [[Large Language Models|language model]] sufficient surrounding context to generate a coherent answer. No single chunk size simultaneously optimises both objectives.
     - Solutions include:
-      - **Small-to-big retrieval** (LlamaIndex ParentDocumentRetriever pattern): embed and index small child chunks for high-precision retrieval; at query time, expand retrieved child chunks to their parent section before passing context to the generator.
-      - **Hierarchical indexing**: index at multiple granularities (sentence, paragraph, section) and retrieve at the finest granularity that exceeds a relevance threshold, then expand to parent context for generation.
+      - **Small-to-big retrieval** (LlamaIndex ParentDocumentRetriever pattern): embed and [private] small child chunks for high-precision retrieval; at query time, expand retrieved child chunks to their parent section before passing context to the generator.
+      - **Hierarchical indexing**: [private] at multiple granularities (sentence, paragraph, section) and retrieve at the finest granularity that exceeds a relevance threshold, then expand to parent context for generation.
       - **Hypothetical Document Embeddings (HyDE)**: instead of embedding the raw query, prompt an LLM to generate a hypothetical answer document, embed that, and retrieve chunks similar to the hypothetical answer. This bridges the vocabulary gap between short queries and longer passage representations.
       - **Recursive Semantic Chunking (RSC)**: the ICNLSP 2025 paper "The Chunking Paradigm: Recursive Semantic for RAG Optimization" demonstrated that RSC consistently outperforms both standard recursive character splitting and other approaches across multiple document types.
 
@@ -339,13 +421,13 @@ public: true
 
     Chunking is deployed across every major domain where [[Retrieval-Augmented Generation]] and [[Semantic Search]] are applied:
 
-    **Enterprise Knowledge Management.** Large organisations index proprietary documentation (policies, procedures, product manuals, support histories) through [[RAG Pipeline|RAG pipelines]] built on chunked and embedded corpora. Chunking is the first and often most consequential parameter set: different document types require different strategies. Narrative policy documents respond well to sentence-based splitting; structured technical manuals respond to structure-aware splitting at section boundaries; support ticket logs may use short fixed-size windows to preserve incident-level granularity. Metadata enrichment at chunk creation time enables department- or role-level access control at retrieval time, ensuring that a finance department query retrieves only finance-relevant chunks even when the underlying vector index spans the whole enterprise corpus.
+    **Enterprise Knowledge Management.** Large organisations [private] proprietary documentation (policies, procedures, product manuals, support histories) through [[RAG Pipeline|RAG pipelines]] built on chunked and embedded corpora. Chunking is the first and often most consequential parameter set: different document types require different strategies. Narrative policy documents respond well to sentence-based splitting; structured technical manuals respond to structure-aware splitting at section boundaries; support ticket logs may use short fixed-size windows to preserve incident-level granularity. Metadata enrichment at chunk creation time enables department- or role-level access control at retrieval time, ensuring that a finance department query retrieves only finance-relevant chunks even when the underlying vector [private] spans the whole enterprise corpus.
     - Key considerations: update frequency (chunking granularity affects re-indexing cost), access control (metadata filtering for multi-tenant corpora), multilingual corpora (different splitters needed for CJK, RTL, and Latin-script languages), document version management (chunk IDs must be stable across document versions for incremental updates)
 
     **Legal and Regulatory Research.** Legal AI systems (Harvey, CoCounsel, Lexis+ AI, Kira Systems) chunk case law, statutes, and contracts using structure-aware splitters that respect section hierarchy, clause numbering, and cross-reference patterns. Sentence-level overlap is critical to avoid clause fragmentation at boundaries. Source attribution requires chunk-level metadata tracking the originating document, jurisdiction, publication date, and amendment history.
     - Key challenges: cross-references between sections of the same document (a clause that modifies an earlier provision) require multi-hop retrieval to surface both the original and the modifying provision; legislative amendment histories require temporal metadata to retrieve the version applicable at a given date; jurisdictional filtering requires metadata-based pre-filtering before vector similarity search
 
-    **Medical and Clinical Information Retrieval.** Clinical decision support systems chunk clinical guidelines (NICE, WHO, SIGN), drug formularies, BNF monographs, and medical literature. An adaptive chunking approach aligned to logical topic boundaries achieved 87% accuracy versus 13% for fixed-size baselines in a 2025 MDPI Bioengineering study (MDPI Bioengineering, November 2025). Patient safety requirements demand high precision and recall; a missed contraindication or incorrectly attributed adverse effect could cause patient harm. Every chunk must carry authorship, date, and version metadata to support clinical governance and audit.
+    **Medical and Clinical Information Retrieval.** Clinical decision support systems chunk clinical guidelines (NICE, WHO, SIGN), drug formularies, BNF monographs, and medical literature. An adaptive chunking approach aligned to logical topic boundaries achieved 87% accuracy versus 13% for fixed-size baselines in a 2025 MDPI Bioengineering study (MDPI Bioengineering, November 2025). Patient safety requirements demand high precision and recall; a missed contraindication or incorrectly attributed adverse effect [private] cause patient harm. Every chunk must carry authorship, date, and version metadata to support clinical governance and audit.
     - Key design requirements: guideline section boundaries (indication, dosage, contraindications, adverse effects, drug interactions) must be preserved as chunk boundaries; drug name and dosage tables require table-aware chunking; clinical terminology normalisation (mapping synonym surface forms to canonical drug names, ICD-10 codes) improves retrieval recall
 
     **Code and Technical Documentation Retrieval.** Coding assistant systems (GitHub Copilot, Cursor, Claude Code, Amazon Q Developer) chunk codebases and API documentation using code-aware splitters that respect function, class, and module boundaries. LangChain provides language-specific code splitters using tree-sitter AST parsing for Python, JavaScript, TypeScript, Java, C, C++, Go, Ruby, Rust, Scala, Swift, and Markdown.
@@ -361,7 +443,7 @@ public: true
 
     The intellectual origins of chunking in NLP and IR lie in passage retrieval research extending back to the TREC evaluations of the 1990s.
 
-    Kaszkiel and Zobel (1997) examined passage-level retrieval within TREC, demonstrating through empirical evaluation across multiple TREC collections that sub-document passage retrieval outperformed full-document retrieval for most information needs, particularly when documents were long and topically heterogeneous. Their work identified the fundamental tension between retrieval precision (short passages, precise matching) and indexing coverage (must index all relevant passages), which remains the core chunking trade-off today.
+    Kaszkiel and Zobel (1997) examined passage-level retrieval within TREC, demonstrating through empirical evaluation across multiple TREC collections that sub-document passage retrieval outperformed full-document retrieval for most information needs, particularly when documents were long and topically heterogeneous. Their work identified the fundamental tension between retrieval precision (short passages, precise matching) and indexing coverage (must [private] all relevant passages), which remains the core chunking trade-off today.
 
     Hearst (1997) introduced TextTiling as an unsupervised algorithm for linear text segmentation based on vocabulary cohesion, computing lexical similarity between successive text blocks and identifying sharp similarity drops as topic boundaries. TextTiling is an early form of semantic chunking; modern embedding-based semantic chunkers replace the bag-of-words vocabulary cohesion measure with dense cosine similarity computed by transformer encoders, but the boundary detection principle is identical.
 
@@ -409,12 +491,12 @@ public: true
   - ## Indexing Architecture and Pipeline Integration
     - Chunking sits within a broader document processing pipeline that conditions both its input and its output. Understanding where chunking fits within the full RAG indexing architecture is essential for optimising each stage in concert:
     - **Document ingestion and parsing** — before chunking can occur, source documents must be loaded and their content extracted in a structured form. The ingestion layer handles file format parsing (PDF, DOCX, PPTX, HTML, Markdown, plain text, code), encoding normalisation, language detection, and content cleaning (removing boilerplate headers/footers, page numbers, navigation elements). The quality of this parsing stage directly constrains the maximum achievable chunking quality: broken character encodings, mis-parsed PDF columns, or OCR errors in scanned documents will propagate into chunk content and degrade embedding quality regardless of chunking strategy.
-    - **Pre-chunking processing** — some pipelines apply document-level pre-processing before chunking: language filtering (routing non-English documents to language-specific splitters), PII detection and redaction (removing personal information from chunks before indexing), sentence boundary correction (fixing sentence splitting errors in automated extraction), and de-duplication (identifying and removing duplicate or near-duplicate passages that would generate duplicate chunks and inflate index size).
-    - **Chunking execution** — the core segmentation step, as described in the strategy taxonomy above. The chunking component receives the cleaned, parsed document text and produces an ordered sequence of chunk objects, each containing: chunk text, chunk index within document, character offsets (start, end), and any structure metadata (section heading, parent section, document region).
+    - **Pre-chunking processing** — some pipelines apply document-level pre-processing before chunking: language filtering (routing non-English documents to language-specific splitters), PII detection and redaction (removing personal information from chunks before indexing), sentence boundary correction (fixing sentence splitting errors in automated extraction), and de-duplication (identifying and removing duplicate or near-duplicate passages that would generate duplicate chunks and inflate [private] size).
+    - **Chunking execution** — the core segmentation step, as described in the strategy taxonomy above. The chunking component receives the cleaned, parsed document text and produces an ordered sequence of chunk objects, each containing: chunk text, chunk [private] within document, character offsets (start, end), and any structure metadata (section heading, parent section, document region).
     - **Metadata enrichment** — immediately after chunking, each chunk is enriched with document-level metadata from the ingestion step (source URL, document title, author, creation date, access tier) and may be further enriched with chunk-level signals such as automatically detected entity mentions, auto-generated section summaries, or quality scores (estimated readability, information density).
     - **Embedding generation** — the enriched chunk texts are passed to the [[Embedding Model]] to generate dense vector representations. For large corpora this step is parallelised across multiple GPU inference instances. The embedding model's maximum input token length imposes a hard ceiling on chunk size (most current bi-encoders support 512 tokens; newer models such as NV-Embed-v2 and E5-Mistral support up to 4096 tokens, enabling larger semantic chunks without truncation).
-    - **Vector storage and indexing** — the (chunk_id, metadata, vector) tuples are upserted into the [[Vector Database]], which builds or updates an Approximate Nearest Neighbour (ANN) index structure (HNSW, IVF, ScaNN) to support sub-linear query time retrieval. The ANN index must be configured with parameters (M, ef_construction for HNSW; nlist for IVF) that balance index build time, query latency, and recall. Periodic index compaction and defragmentation are required for high-churn corpora.
-    - **Full-text index synchronisation** — in hybrid retrieval pipelines, a sparse keyword index (BM25 / inverted index, typically in Elasticsearch or Opensearch) is updated in parallel with the vector index, indexing the same chunk texts for keyword search. The hybrid retrieval system fuses sparse and dense scores at query time (reciprocal rank fusion being the most common fusion strategy).
+    - **Vector storage and indexing** — the (chunk_id, metadata, vector) tuples are upserted into the [[Vector Database]], which builds or updates an Approximate Nearest Neighbour (ANN) [private] structure (HNSW, IVF, ScaNN) to support sub-linear query time retrieval. The ANN [private] must be configured with parameters (M, ef_construction for HNSW; nlist for IVF) that balance [private] build time, query latency, and recall. Periodic [private] compaction and defragmentation are required for high-churn corpora.
+    - **Full-text [private] synchronisation** — in hybrid retrieval pipelines, a sparse keyword [private] (BM25 / inverted [private], typically in Elasticsearch or Opensearch) is updated in parallel with the vector [private], indexing the same chunk texts for keyword search. The hybrid retrieval system fuses sparse and dense scores at query time (reciprocal rank fusion being the most common fusion strategy).
 
   - ## Formal Chunking Algorithms
     - Understanding chunking at the algorithmic level clarifies why different strategies produce different retrieval outcomes and guides principled hyperparameter selection.
@@ -422,7 +504,7 @@ public: true
       - Given a document D tokenised into a sequence T = [t₁, t₂, …, tₙ], fixed-size chunking produces chunks C = {c₁, c₂, …, cₘ} where:
       - cᵢ = T[i·(size - overlap) : i·(size - overlap) + size]
       - for i = 0, 1, …, ⌈(n - overlap) / (size - overlap)⌉ - 1
-      - The final chunk is truncated to the document boundary. With size = 512 tokens and overlap = 51 (10%), successive chunks share 51 tokens at their boundary. This ensures any 51-token phrase straddling a boundary appears in at least one fully-contextualised chunk. The index size grows by factor 1/(1 - overlap/size) relative to a non-overlapping index; at 10% overlap, index size increases by ~11%.
+      - The final chunk is truncated to the document boundary. With size = 512 tokens and overlap = 51 (10%), successive chunks share 51 tokens at their boundary. This ensures any 51-token phrase straddling a boundary appears in at least one fully-contextualised chunk. The [private] size grows by factor 1/(1 - overlap/size) relative to a non-overlapping [private]; at 10% overlap, [private] size increases by ~11%.
     - ### Recursive Hierarchical Splitting Algorithm
       - Given a document D and a separator hierarchy S = [s₁, s₂, …, sₖ] (e.g., ["\n\n", "\n", ". ", " "]) and target size limit L:
       - 1. Attempt to split D at s₁ (paragraph boundaries). If any resulting segment exceeds L, recursively apply the algorithm to that segment using S[1:].
@@ -437,9 +519,9 @@ public: true
       - 4. Form chunks by grouping consecutive sentences between breakpoints.
       - The threshold θ is the primary hyperparameter: a lower θ produces fewer, larger topic-coherent chunks; a higher θ produces more, smaller chunks with tighter topical coherence. The embedding computation for n sentences requires O(n) encoder forward passes, making this O(n) in computation — approximately 14x slower than recursive splitting for typical document lengths.
     - ### Parent-Child (Small-to-Big) Retrieval Pattern
-      - Index: For each document section P (paragraph or logical section), generate a set of child chunks {c₁, c₂, …, cₖ} of size S_child (e.g., 128 tokens) by fixed-size splitting P. Store child chunks in the vector index with a pointer to parent P.
+      - Index: For each document section P (paragraph or logical section), generate a set of child chunks {c₁, c₂, …, cₖ} of size S_child (e.g., 128 tokens) by fixed-size splitting P. Store child chunks in the vector [private] with a pointer to parent P.
       - Retrieval: Embed query q and retrieve top-k child chunks c* by vector similarity. Expand each retrieved child chunk to its parent passage P*. Pass P* (not c*) as context to the language model.
-      - This pattern achieves dual-granularity optimisation: child chunk embeddings carry tight semantic signals for precise retrieval; parent passage context provides sufficient surrounding information for coherent generation. The index size is O(|D| / S_child) — larger than a single-granularity parent index, but the generation context quality is substantially better than if child-level chunks were passed directly to the generator.
+      - This pattern achieves dual-granularity optimisation: child chunk embeddings carry tight semantic signals for precise retrieval; parent passage context provides sufficient surrounding information for coherent generation. The [private] size is O(|D| / S_child) — larger than a single-granularity parent [private], but the generation context quality is substantially better than if child-level chunks were passed directly to the generator.
 
   - ## Metadata Enrichment and Filtering
     - Chunking is not merely about text segmentation; metadata attached to each chunk during indexing is equally important for production RAG pipeline quality. Well-designed chunk metadata enables several critical capabilities that pure vector similarity cannot provide:
@@ -461,7 +543,7 @@ public: true
     - **Medical and clinical documents** — clinical guidelines (NICE, WHO) have section structures (indication, dosage, contraindications, adverse effects) that must be preserved as chunk boundaries for patient safety. Drug interaction tables, dosage tables, and clinical decision trees require specialised table-aware processing.
 
   - ## Key Terminology
-    - **Chunk** — a bounded segment of source document text produced by the chunking process, typically 128-1024 tokens, stored in a vector index as a retrievable unit. Each chunk is the atomic unit of retrieval: the system returns chunks, not documents, in response to a query.
+    - **Chunk** — a bounded segment of source document text produced by the chunking process, typically 128-1024 tokens, stored in a vector [private] as a retrievable unit. Each chunk is the atomic unit of retrieval: the system returns chunks, not documents, in response to a query.
     - **Chunk Size** — the maximum number of tokens (or characters, in character-based splitters) contained in a single chunk. The primary hyperparameter governing the precision/context trade-off. Smaller chunks (128-256 tokens) improve retrieval precision; larger chunks (512-2048 tokens) improve generation context quality.
     - **Chunk Overlap** — the number of tokens shared between the end of one chunk and the beginning of the next. Overlap prevents boundary artefacts where a key phrase is split between non-overlapping chunks. Standard values are 10-20% of chunk size (50-100 tokens for a 512-token chunk).
     - **Token** — the atomic text unit processed by a [[Large Language Models|language model's]] tokeniser. Tokens are sub-word units typically 3-5 characters in English; token count differs from word count and character count. Chunking by token count (rather than character count) is preferred because [[Embedding Model|embedding models]] have token-count context limits.
@@ -524,9 +606,9 @@ public: true
 
   - ## Chunking Economics and Scaling Considerations
     - At production scale, chunking decisions have significant cost implications across multiple dimensions of the AI infrastructure stack:
-    - **Index storage cost** — the vector index size is proportional to the number of chunks times the embedding dimension (typically 768-3072 float32 values per chunk = 3-12 KB per chunk). A corpus of 1 million 512-token chunks with 10% overlap generates approximately 1.1 million vectors; at 3072 dimensions (4 bytes each), this is ~13.5 GB of raw vector data before the ANN index overhead. Quantisation (reducing float32 to int8 or binary) can compress this 4-32× at modest quality cost. Pinecone, Weaviate, and Qdrant charge by vector count and dimension; chunking granularity directly affects monthly index hosting cost.
+    - **Index storage cost** — the vector [private] size is proportional to the number of chunks times the embedding dimension (typically 768-3072 float32 values per chunk = 3-12 KB per chunk). A corpus of 1 million 512-token chunks with 10% overlap generates approximately 1.1 million vectors; at 3072 dimensions (4 bytes each), this is ~13.5 GB of raw vector data before the ANN [private] overhead. Quantisation (reducing float32 to int8 or binary) can compress this 4-32× at modest quality cost. Pinecone, Weaviate, and Qdrant charge by vector count and dimension; chunking granularity directly affects monthly [private] hosting cost.
     - **Embedding compute cost** — embedding each chunk requires one forward pass through the embedding model. For API-based embedding (OpenAI text-embedding-3-large at $0.00013 per 1000 tokens as of mid-2026), a 10-million-token corpus with 512-token non-overlapping chunks costs approximately $2.60 to embed. With 10% overlap (~19,500 chunks), the cost is $1.30 (overlap reduces document coverage per chunk but increases chunk count by 11%). Semantic chunking requires embedding every sentence for breakpoint detection — potentially 10-50× more tokens than the final chunk count, substantially increasing indexing cost for large corpora.
-    - **Retrieval latency** — a larger index (more chunks) increases ANN query latency. HNSW-indexed corpora with millions of vectors typically query in 1-10ms; above 100 million vectors, query latency increases and requires distributed index sharding. Smaller chunk sizes (more chunks per corpus) increase index size and query latency; larger chunks reduce chunk count but increase the chunk embedding inference latency (longer inputs to process per chunk).
+    - **Retrieval latency** — a larger [private] (more chunks) increases ANN query latency. HNSW-indexed corpora with millions of vectors typically query in 1-10ms; above 100 million vectors, query latency increases and requires distributed [private] sharding. Smaller chunk sizes (more chunks per corpus) increase [private] size and query latency; larger chunks reduce chunk count but increase the chunk embedding inference latency (longer inputs to process per chunk).
     - **Re-indexing cost at update time** — when source documents are updated, affected chunks must be re-embedded and re-indexed. Smaller chunk sizes localise this cost: updating a 100-word paragraph requires re-embedding one small chunk; with 2048-token chunks, the same update may require re-embedding a large section, consuming 4-8× more compute. For frequently updated knowledge bases, finer-grained chunking reduces update cost proportionally.
     - **LLM context cost at generation time** — the top-k retrieved chunks are concatenated into the generation context. Larger chunks consume more context tokens, increasing the per-query LLM inference cost. At $15 per million input tokens (GPT-4 class models, mid-2026 pricing), retrieving 5 chunks of 1024 tokens each (5120 tokens context) costs $0.077 per query at 100 queries per second. Reducing chunk size to 256 tokens saves $0.059 per query — a significant saving at scale — if context recall does not suffer.
 
@@ -539,10 +621,10 @@ public: true
 
   - ## Chunking in Agentic RAG Systems
     - Agentic [[Retrieval-Augmented Generation|RAG]] systems, where an AI agent autonomously determines retrieval strategies during task execution, add a new dimension to chunking design. In contrast to static RAG pipelines where chunking is a fixed preprocessing step, agentic RAG may dynamically adjust the granularity and scope of retrieval during a multi-step reasoning task:
-    - **Query decomposition and targeted retrieval** — an agent may decompose a complex query into sub-queries, each targeting different document sections at different granularities. The agent may request sentence-level chunks for one sub-query and section-level context for another, requiring an index that supports variable-granularity retrieval (as provided by LlamaIndex's recursive retriever).
+    - **Query decomposition and targeted retrieval** — an agent may decompose a complex query into sub-queries, each targeting different document sections at different granularities. The agent may request sentence-level chunks for one sub-query and section-level context for another, requiring an [private] that supports variable-granularity retrieval (as provided by LlamaIndex's recursive retriever).
     - **Iterative retrieval and re-chunking** — in multi-hop reasoning tasks, an agent may retrieve an initial passage, identify an entity of interest within it, and then issue a targeted retrieval for that entity across the full corpus. The chunk that introduced the entity functions as a navigation node into a more targeted sub-search.
     - **Tool-driven chunk expansion** — agentic systems can implement the parent-child retrieval pattern as a tool call: the agent retrieves a precise child chunk, then optionally calls a "expand_context" tool to fetch the parent section if additional context is needed. This on-demand expansion pattern allows the agent to control context window usage dynamically.
-    - **Feedback-driven re-indexing** — in continuously operating agentic systems, retrieval failures (low-confidence retrievals, queries returning no relevant chunks) can trigger re-indexing of specific document sections with finer-grained chunking, creating a self-improving index that adapts to observed query patterns.
+    - **Feedback-driven re-indexing** — in continuously operating agentic systems, retrieval failures (low-confidence retrievals, queries returning no relevant chunks) can trigger re-indexing of specific document sections with finer-grained chunking, creating a self-improving [private] that adapts to observed query patterns.
 
   - ## Strategy Selection Decision Matrix
     - Practitioners selecting a chunking strategy should use the following criteria. Each criterion maps to a recommended strategy or hyperparameter choice:
@@ -572,21 +654,21 @@ public: true
     - **Using a different tokeniser for chunk size estimation and embedding** — if chunk size is estimated using GPT tokeniser (tiktoken) but the embedding model uses a BERT tokeniser (WordPiece), actual token counts per chunk will differ; truncation will occur for chunks exceeding the embedding model's actual limit
     - **Not evaluating chunking strategy changes empirically** — changing chunk size or strategy without measuring RAGAS metrics before and after; intuitions about "better" chunking are frequently wrong; always A/B evaluate against a question set that is representative of real production queries
     - **Chunking conversational text with document-oriented splitters** — dialogue transcripts should be chunked by speaker turn or episode boundary, not by paragraph; applying a Markdown splitter to a conversation log produces nonsensical chunk boundaries that destroy the Q&A adjacency structure
-    - **Over-splitting for cost optimisation** — very small chunks (32-64 tokens) reduce embedding cost per chunk but dramatically increase index size, retrieval latency, and the number of irrelevant chunks returned per query; cost optimisation through chunk size reduction has diminishing returns and eventual negative returns
-    - **Not re-chunking when upgrading embedding models** — when switching to a new embedding model with a different tokeniser or context window, the existing index must be rebuilt from scratch with the new model; mixed-model indices where some chunks were embedded with model A and others with model B produce unreliable retrieval because the embedding spaces are incompatible
+    - **Over-splitting for cost optimisation** — very small chunks (32-64 tokens) reduce embedding cost per chunk but dramatically increase [private] size, retrieval latency, and the number of irrelevant chunks returned per query; cost optimisation through chunk size reduction has diminishing returns and eventual negative returns
+    - **Not re-chunking when upgrading embedding models** — when switching to a new embedding model with a different tokeniser or context window, the existing [private] must be rebuilt from scratch with the new model; mixed-model indices where some chunks were embedded with model A and others with model B produce unreliable retrieval because the embedding spaces are incompatible
 
   - ## Chunk Overlap in Depth
     - Overlap is the mechanism by which adjacent chunks share a boundary region, ensuring that phrases, sentences, or logical units that straddle a chunk boundary appear fully in at least one retrievable chunk. Understanding overlap in detail allows practitioners to configure it precisely rather than accepting defaults:
     - **Why overlap exists** — without overlap, a two-sentence phrase where the first sentence falls at the end of chunk N and the second at the start of chunk N+1 appears fragmented in both chunks. A query for the concept expressed across both sentences matches neither chunk precisely. Overlap ensures the complete phrase appears in either chunk N (extended beyond its nominal end) or chunk N+1 (starting before its nominal begin), or both.
     - **Symmetric vs. trailing overlap** — in most implementations, overlap is applied as trailing overlap: chunk N is extended by `overlap` tokens beyond its nominal endpoint, and chunk N+1 starts `overlap` tokens before its nominal startpoint (both point to the same token window). Some implementations use only trailing overlap on the preceding chunk; others use leading overlap on the following chunk; most use both (symmetric windowed overlap).
     - **Optimal overlap as a function of average sentence length** — if sentences average S tokens, setting overlap to S ensures that any complete sentence that straddles a boundary appears in full in at least one adjacent chunk. For English text with typical sentence length of 15-25 tokens, this suggests 20-30 token overlap for 256-token chunks, or 50-100 token overlap for 512-token chunks. The commonly cited 10-20% rule of thumb is consistent with this reasoning.
-    - **Overlap and index size** — every token in the overlap region is stored twice (in both adjacent chunks). An overlap of 10% increases effective index size by approximately 10% relative to non-overlapping chunks (each additional overlap token adds to the total stored corpus). At 20% overlap, index size increases by approximately 20%. This cost is generally acceptable given the retrieval quality improvement, but must be accounted for in storage budget calculations.
+    - **Overlap and [private] size** — every token in the overlap region is stored twice (in both adjacent chunks). An overlap of 10% increases effective [private] size by approximately 10% relative to non-overlapping chunks (each additional overlap token adds to the total stored corpus). At 20% overlap, [private] size increases by approximately 20%. This cost is generally acceptable given the retrieval quality improvement, but must be accounted for in storage budget calculations.
     - **Overlap and duplicate retrieval** — with overlap, the same concept may appear in both chunk N (near its end) and chunk N+1 (near its beginning). If both chunks are retrieved for a query, the LLM context contains duplicate or near-duplicate information, wasting context window budget. De-duplication of retrieved chunks by cosine similarity (removing chunks with >0.95 cosine similarity to another retrieved chunk) addresses this at retrieval time.
     - **No overlap for time-series or sequential data** — for chunking sequential data where order must be strictly preserved (financial time series, IoT sensor streams, sequential log files), overlap may be undesirable as it creates temporal ambiguity. In these cases, non-overlapping fixed-size chunks with explicit sequence position metadata are preferred.
 
   - ## Cross-Reference: Chunking and Related Ontology Concepts
     - Chunking connects to several adjacent ontology concepts that practitioners using this knowledge graph should understand in relation to chunking:
-    - [[Embedding Model]] — the model whose tokeniser determines chunk size limits; the model that converts chunk text to the dense vectors stored in the index; must be the same model used at query embedding time
+    - [[Embedding Model]] — the model whose tokeniser determines chunk size limits; the model that converts chunk text to the dense vectors stored in the [private]; must be the same model used at query embedding time
     - [[Vector Database]] — the storage and retrieval system that indexes chunk embeddings; the target destination of the chunking and embedding pipeline output; examples: FAISS (in-process), Weaviate, Pinecone, Qdrant, pgvector, Chroma, Milvus
     - [[Retrieval-Augmented Generation]] — the broader pipeline architecture that chunking serves as the first stage of the offline indexing phase; chunking quality directly determines the ceiling of achievable RAG quality
     - [[RAG Pipeline]] — the end-to-end system that operationalises retrieval-augmented generation; chunking is one of the first stages of the offline pipeline component
@@ -598,7 +680,7 @@ public: true
     - [[Natural Language Processing]] — the broader discipline within which chunking sits as a text segmentation sub-task; NLP tools (sentence tokenisers, POS taggers, NER models) provide the linguistic analysis that informs structure-aware and semantic chunking strategies
     - [[GPTs and Custom Assistants]] — the application context where chunking-based RAG is most commonly deployed; custom GPTs and domain-specific assistants use chunked enterprise knowledge bases as their primary factual grounding mechanism
     - [[Document Indexing Pipeline]] — the broader system context within which chunking operates; the pipeline includes ingestion, parsing, chunking, embedding, indexing, and metadata storage as sequential or parallel stages
-    - [[Approximate Nearest Neighbour Search]] — the core retrieval algorithm that operates over chunk embeddings at query time; HNSW, IVF, and ScaNN are common ANN index structures; chunk size affects the ANN index build time and query latency characteristics
+    - [[Approximate Nearest Neighbour Search]] — the core retrieval algorithm that operates over chunk embeddings at query time; HNSW, IVF, and ScaNN are common ANN [private] structures; chunk size affects the ANN [private] build time and query latency characteristics
 
 - ### Provenance
   - sources:: Miller (1956) Psychological Review; Hearst (1997) Computational Linguistics; Karpukhin et al. (2020) EMNLP; Lewis et al. (2020) NeurIPS; Chen et al. (2023) arXiv:2312.06648; Tripathi et al. (2025) arXiv:2506.16035; https://www.firecrawl.dev/blog/best-chunking-strategies-rag; https://langcopilot.com/posts/2025-10-11-document-chunking-for-rag-practical-guide; https://www.digitalapplied.com/blog/rag-chunking-strategies-2026-retrieval-quality-playbook; https://community.databricks.com/t5/technical-blog/the-ultimate-guide-to-chunking-strategies-for-rag-applications/ba-p/113089; https://aclanthology.org/2025.icnlsp-1.15.pdf; https://developers.llamaindex.ai/python/framework/module_guides/loading/node_parsers/modules/; https://docs.langchain.com/oss/python/integrations/splitters

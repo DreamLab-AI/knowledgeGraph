@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Modular Arithmetic
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:modular-arithmetic:072c8ceffc24",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7c72bf561033ae7e5d2142fa6cf0b4932648686a1532526e9cfde4cd1f52bbbe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Number Theory]]",
-      "resolved": "urn:visionflow:linked:number-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Hash Function]]",
-      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography Domain]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Modular arithmetic performs integer arithmetic that wraps around a fixed modulus, so numbers are treated as equivalent if they differ by a multiple of that modulus.

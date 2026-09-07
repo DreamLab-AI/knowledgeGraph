@@ -1,63 +1,120 @@
----
-public: true
----
-
-# Asyncapi
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:asyncapi", "@type":"Page", "title":"Asyncapi", "vc:slug":"asyncapi", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:asyncapi",
+  "@type": "Page",
+  "title": "Asyncapi",
+  "vc:slug": "asyncapi",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:asyncapi",
-  "@type":"Class",
-  "label":"Asyncapi",
-  "definition":"AsyncAPI is an open specification for describing event-driven and message-based APIs in a machine-readable document, analogous to how OpenAPI describes request-response REST APIs. It defines channels, messages, payloads and the protocols and brokers used to exchange them, enabling documentation, code generation, validation and tooling for asynchronous systems. AsyncAPI standardises contracts for publish-subscribe and streaming architectures.",
-  "domain":"infrastructure",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:api-specification","label":"API Specification"}],
-  "relations":{
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:interoperability-standard","label":"Interoperability Standard"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:asyncapi",
+  "@type": "Class",
+  "label": "Asyncapi",
+  "definition": "AsyncAPI is an open specification for describing event-driven and message-based APIs in a machine-readable document, analogous to how OpenAPI describes request-response REST APIs. It defines channels, messages, payloads and the protocols and brokers used to exchange them, enabling documentation, code generation, validation and tooling for asynchronous systems. AsyncAPI standardises contracts for publish-subscribe and streaming architectures.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:api-specification",
+      "label": "API Specification"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:event-driven-architecture","label":"Event Driven Architecture"},
-      {"@id":"urn:ngm:class:asynchronous-messaging","label":"Asynchronous Messaging"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-messaging",
+        "label": "Asynchronous Messaging"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:openapi","label":"OpenAPI"},
-      {"@id":"urn:ngm:class:rest-api","label":"REST API"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
     ],
-    "describes":[
-      {"@id":"urn:ngm:class:message-broker","label":"Message Broker"}
+    "describes": [
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:json-data-interchange-format-schema","label":"JSON Schema"},
-      {"@id":"urn:ngm:class:schema-validation","label":"Schema Validation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:schema-validation",
+        "label": "Schema Validation"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:streaming-data","label":"Streaming Data"},
-      {"@id":"urn:ngm:class:event-driven-architecture","label":"Event Driven Architecture"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:streaming-data",
+        "label": "Streaming Data"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:message-broker","label":"Message Broker"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:json-data-interchange-format-schema","label":"JSON Schema"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:api-gateway","label":"API Gateway"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:openapi","label":"OpenAPI"},
-      {"@id":"urn:ngm:class:event-driven-architecture","label":"Event Driven Architecture"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

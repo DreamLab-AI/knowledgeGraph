@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Semantic Scene Understanding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Semantic scene understanding is the computer-vision task of parsing a visual environment into labelled, structured representations of objects, surfaces, and their spatial and functional relationships. It goes beyond object detection by assigning meaning to regions, inferring affordances, and building a coherent model of the scene that downstream systems can reason over. It is foundational to spatial computing, where digital content must be anchored to real-world geometry and semantics.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ar-scene-graph", "label": "Ar Scene Graph"}, {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ar-scene-graph",
+        "label": "Ar Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ]
   },
   "quality": 0.72
 }

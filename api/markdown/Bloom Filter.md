@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bloom Filter
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,24 +20,56 @@ public: true
   "definition": "A Bloom Filter is a space-efficient probabilistic data structure that tests whether an element is a member of a set, accepting a controllable false-positive rate while guaranteeing zero false negatives. Invented by Burton Howard Bloom in 1970, the structure uses multiple hash functions to map elements to bit positions within a fixed-size bit array. Membership queries are answered in constant time regardless of set size, making Bloom Filters indispensable in high-throughput systems where exact lookup is prohibitively expensive. They are widely deployed in databases, networking, distributed caches, and blockchain nodes.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-structure", "label": "Data Structure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:distributed-data-structure", "label": "Distributed Data Structure"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-data-structure",
+        "label": "Distributed Data Structure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:hash-collision", "label": "Hash Collision"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:hash-collision",
+        "label": "Hash Collision"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:membership-inference", "label": "Membership Inference"},
-      {"@id": "urn:ngm:class:privacy-filter", "label": "Privacy Filter"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:membership-inference",
+        "label": "Membership Inference"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-filter",
+        "label": "Privacy Filter"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:spatial-data-structure", "label": "Spatial Data Structure"}
+      {
+        "@id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      }
     ]
   },
   "quality": 0.8

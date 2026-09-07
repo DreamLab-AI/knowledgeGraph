@@ -1,57 +1,119 @@
----
-public: true
----
-
-# Data Monetisation
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-monetisation", "@type":"Page", "title":"Data Monetisation", "vc:slug":"data-monetisation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:data-monetisation",
-  "@type":"Class",
-  "label":"Data Monetisation",
-  "definition":"Data monetisation is the practice of generating economic value from data assets, either directly by selling data and data-derived products, or indirectly by using data to improve decisions, products and operations. It spans approaches from licensing raw or aggregated datasets through data marketplaces to embedding analytics in services that command a premium. Responsible data monetisation must be balanced against data privacy, consent and governance obligations, and it raises questions about data ownership and the ethics of treating personal information as a tradeable resource.",
-  "domain":"governance",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:data-governance","label":"Data Governance"}],
-  "relations":{
-    "requires":[
-      {"@id":"urn:ngm:class:data-governance","label":"Data Governance"},
-      {"@id":"urn:ngm:class:data-quality","label":"Data Quality"},
-      {"@id":"urn:ngm:class:consent-management","label":"Consent Management"}
-    ],
-    "uses":[
-      {"@id":"urn:ngm:class:data-marketplace","label":"Data Marketplace"},
-      {"@id":"urn:ngm:class:data-sharing","label":"Data Sharing"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:data-marketplace","label":"Data Marketplace"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:data-sharing","label":"Data Sharing"}
-    ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:data-quality","label":"Data Quality"},
-      {"@id":"urn:ngm:class:metadata-management","label":"Metadata Management"}
-    ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:data-privacy","label":"Data Privacy"},
-      {"@id":"urn:ngm:class:surveillance-capitalism","label":"Surveillance Capitalism"}
-    ],
-    "standardizedBy":[{"@id":"urn:ngm:class:gdpr","label":"GDPR"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:data-protection","label":"Data Protection"},
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"},
-      {"@id":"urn:ngm:class:data-classification","label":"Data Classification"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-monetisation",
+  "@type": "Page",
+  "title": "Data Monetisation",
+  "vc:slug": "data-monetisation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-monetisation",
+  "@type": "Class",
+  "label": "Data Monetisation",
+  "definition": "Data monetisation is the practice of generating economic value from data assets, either directly by selling data and data-derived products, or indirectly by using data to improve decisions, products and operations. It spans approaches from licensing raw or aggregated datasets through data marketplaces to embedding analytics in services that command a premium. Responsible data monetisation must be balanced against data privacy, consent and governance obligations, and it raises questions about data ownership and the ethics of treating personal information as a tradeable resource.",
+  "domain": "governance",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-marketplace",
+        "label": "Data Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:data-sharing",
+        "label": "Data Sharing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-marketplace",
+        "label": "Data Marketplace"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-sharing",
+        "label": "Data Sharing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-classification",
+        "label": "Data Classification"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Data monetisation is the practice of turning data assets into economic value, directly through sale and licensing or indirectly through better decisions and products. It is governed by [[Data Governance]] and must be reconciled with [[Data Privacy]] and [[Consent Management]] obligations.
 - ### Overview

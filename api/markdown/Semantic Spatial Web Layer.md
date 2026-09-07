@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Spatial Web]]
-# Semantic Spatial Web Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,16 +45,34 @@ elevatedFrom:: [[Spatial Web]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:spatial-anchor", "label": "Spatial Anchor"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:web3", "label": "Web3"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ]
   },
   "quality": 0.35,
@@ -71,26 +83,6 @@ elevatedFrom:: [[Spatial Web]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-web:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cb6abc1bbdf211b0294e17fc7b5950f479e9cbfbeda69cf2dcc1a31e6edf49f3"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Spatial Web is a computing paradigm that overlays machine-readable semantic information on physical locations and objects, enabling devices to understand and interact with the real world in context. It combines spatial computing, geospatial data, IoT sensors, and web standards to blur the boundary between physical and digital environments, and is regarded as a foundational layer for persistent augmented reality and metaverse experiences.

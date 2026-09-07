@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HEVC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "HEVC (High Efficiency Video Coding), also known as H.265, is a video compression standard that roughly doubles the data compression ratio of its predecessor H.264 at the same visual quality. It introduces larger, flexible coding tree units and improved prediction and entropy coding to support 4K and 8K video. As a proprietary, patent-encumbered codec it carries licensing obligations that motivate royalty-free alternatives.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:proprietary-video", "label": "Proprietary Video"}
+      {
+        "@id": "urn:ngm:class:proprietary-video",
+        "label": "Proprietary Video"
+      }
     ]
   },
   "quality": 0.72

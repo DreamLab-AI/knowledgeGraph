@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Workflow Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,9 +21,23 @@ public: true
   "vc:plainGloss": "The conductor that runs a multi-step job from start to finish — kicking off each step in order, pausing where it needs to, retrying anything that fails, and remembering where it got to even if the system restarts. It turns a written recipe of steps into something that reliably runs itself.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"}, {"@id": "urn:ngm:class:workflow-orchestration", "label": "Workflow Orchestration"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      }
+    ]
   },
   "quality": 0.72
 }

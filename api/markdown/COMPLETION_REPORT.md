@@ -1,8 +1,3 @@
----
-public: true
----
-
-# COMPLETION_REPORT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,15 +87,30 @@ public: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"}
+      {
+        "@id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "quality": 0.4,
@@ -111,77 +121,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:completion-report:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c97ca8ad4bda8bdd25a8cf22e4838ecdd123a629c2baa1219b8d65ecfdaa3f5b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Deliverables]]",
-      "resolved": "urn:visionflow:linked:deliverables",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
-      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Project]]",
-      "resolved": "urn:visionflow:linked:project",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Project Governance]]",
-      "resolved": "urn:visionflow:linked:project-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Quality Metrics]]",
-      "resolved": "urn:visionflow:linked:quality-metrics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sign-off Records]]",
-      "resolved": "urn:visionflow:linked:sign-off-records",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stakeholder Communication]]",
-      "resolved": "urn:visionflow:linked:stakeholder-communication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C (World Wide Web Consortium)]]",
-      "resolved": "urn:visionflow:linked:w3-c-world-wide-web-consortium",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Work Package]]",
-      "resolved": "urn:visionflow:linked:work-package",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A formal documentation artefact summarising the outcomes, achievements, and validation status of a completed [[Project]] or [[Work Package]]. Completion reports capture [[Deliverables]], [[Quality Metrics]], and [[Sign-off Records]] necessary for [[Project Governance]] and [[Stakeholder Communication]].

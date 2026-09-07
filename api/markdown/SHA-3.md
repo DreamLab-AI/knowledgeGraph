@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SHA-3
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "SHA-3 is a family of cryptographic hash functions standardised by NIST in FIPS 202, based on the Keccak sponge construction rather than the Merkle-Damgaard design of SHA-2. Its sponge structure provides strong resistance to length-extension attacks and offers configurable output lengths and extendable-output functions. It is used as a collision-resistant primitive in digital signatures and integrity verification.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}, {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
+    ]
   },
   "quality": 0.72
 }

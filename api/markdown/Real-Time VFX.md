@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time VFX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Real-time VFX is the generation of visual effects such as particles, fluids, fire, and dynamic simulations rendered live at interactive frame rates rather than pre-baked offline. It leverages GPU compute, particle systems, and procedural techniques to produce reactive effects within a game or virtual-production frame budget. It enables interactive spectacle in games, live events, and metaverse experiences.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:procedural-and-hybrid-4-d", "label": "Procedural and Hybrid 4D"},
-      {"@id": "urn:ngm:class:particle-systems", "label": "Particle Systems"}
+      {
+        "@id": "urn:ngm:class:procedural-and-hybrid-4-d",
+        "label": "Procedural and Hybrid 4D"
+      },
+      {
+        "@id": "urn:ngm:class:particle-systems",
+        "label": "Particle Systems"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bitcoin Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -194,52 +189,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bitcoin-protocol:6bfaaf5ae1a5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2df37b38e45e8b527354446c87ac15d6a12a982e9ff1b32fa669d0ed99e709b8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Consensus Protocol]]",
-      "resolved": "urn:visionflow:linked:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[UTXO]]",
-      "resolved": "urn:visionflow:linked:utxo",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Script]]",
-      "resolved": "urn:visionflow:linked:bitcoin-script",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Block Reward]]",
-      "resolved": "urn:visionflow:linked:block-reward",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The set of rules governing how Bitcoin transactions are formed, validated, and ordered into blocks by proof-of-work consensus.

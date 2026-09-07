@@ -1,8 +1,3 @@
----
-public: true
----
-
-# EU MiCA Regulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,57 +187,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:eu-mi-ca-regulation:f3a5bc05f8be",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d442b18f16de79daa1aab157e10e40758f2728124b2b90f9e5a92f70c13ae5c0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Frameworks]]",
-      "resolved": "urn:visionflow:linked:regulatory-frameworks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Investor Protection]]",
-      "resolved": "urn:visionflow:linked:investor-protection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stablecoin]]",
-      "resolved": "urn:visionflow:linked:stablecoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Crypto Regulation]]",
-      "resolved": "urn:visionflow:linked:crypto-regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023R1114]]",
-      "resolved": "urn:visionflow:linked:https-eur-lex-europa-eu-legal-content-en-txt-uri-celex-3-a-32023-r-1114",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica]]",
-      "resolved": "urn:visionflow:linked:https-www-esma-europa-eu-esmas-activities-digital-finance-and-innovation-markets-crypto-assets-regulation-mica",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The EU Markets in Crypto-Assets Regulation is a European Union framework establishing harmonised rules for crypto-asset issuance, trading and service provision.

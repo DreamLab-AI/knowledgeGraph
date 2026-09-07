@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Channel Factory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "A channel factory is a Bitcoin Lightning Network scaling construction in which multiple participants share a single on-chain funding transaction (a multiparty channel) from which many off-chain payment channels can be opened, closed, and rebalanced without further on-chain transactions. By amortising one on-chain output across many channels, it reduces the on-chain footprint and cost of channel management. It matters because it improves the capital efficiency and scalability of layer-2 payments.",
   "domain": "blockchain",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:lightning-network",
+      "label": "Lightning Network"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ]
   },
   "quality": 0.72

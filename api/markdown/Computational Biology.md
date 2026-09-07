@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computational Biology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -13,54 +8,190 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:bioinformatics", "vc:label": "Bioinformatics"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:data-science", "vc:label": "Data Science"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:scientific-computing", "vc:label": "Scientific Computing"},
-    {"@id": "urn:visionflow:linked:genomics", "vc:label": "Genomics"},
-    {"@id": "urn:visionflow:linked:drug-discovery", "vc:label": "Drug Discovery"},
-    {"@id": "urn:visionflow:linked:protein-structure-prediction", "vc:label": "Protein Structure Prediction"},
-    {"@id": "urn:visionflow:linked:precision-medicine", "vc:label": "Precision Medicine"},
-    {"@id": "urn:visionflow:linked:alphafold", "vc:label": "AlphaFold"},
-    {"@id": "urn:visionflow:linked:systems-biology", "vc:label": "Systems Biology"},
-    {"@id": "urn:visionflow:linked:statistics", "vc:label": "Statistics"},
-    {"@id": "urn:visionflow:linked:big-data", "vc:label": "Big Data"},
-    {"@id": "urn:visionflow:linked:gpu", "vc:label": "GPU"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:high-performance-computing", "vc:label": "High Performance Computing"},
-    {"@id": "urn:visionflow:linked:sequence-alignment", "vc:label": "Sequence Alignment"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:synthetic-biology", "vc:label": "Synthetic Biology"},
-    {"@id": "urn:visionflow:linked:evolutionary-biology", "vc:label": "Evolutionary Biology"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:scientific-machine-learning", "vc:label": "Scientific Machine Learning"},
-    {"@id": "urn:visionflow:linked:differential-equations", "vc:label": "Differential Equations"},
-    {"@id": "urn:visionflow:linked:molecular-dynamics", "vc:label": "Molecular Dynamics"},
-    {"@id": "urn:visionflow:linked:cryo-em", "vc:label": "Cryo-EM"},
-    {"@id": "urn:visionflow:linked:probabilistic-modelling", "vc:label": "Probabilistic Modelling"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:embl-ebi", "vc:label": "EMBL-EBI"},
-    {"@id": "urn:visionflow:linked:wellcome-sanger-institute", "vc:label": "Wellcome Sanger Institute"},
-    {"@id": "urn:visionflow:linked:biology", "vc:label": "Biology"},
-    {"@id": "urn:visionflow:linked:population-genetics", "vc:label": "Population Genetics"},
-    {"@id": "urn:visionflow:linked:proteomics", "vc:label": "Proteomics"},
-    {"@id": "urn:visionflow:linked:transcriptomics", "vc:label": "Transcriptomics"},
-    {"@id": "urn:visionflow:linked:metagenomics", "vc:label": "Metagenomics"},
-    {"@id": "urn:visionflow:linked:phylogenetics", "vc:label": "Phylogenetics"},
-    {"@id": "urn:visionflow:linked:healthcare", "vc:label": "Healthcare"},
-    {"@id": "urn:visionflow:linked:algorithm", "vc:label": "Algorithm"},
-    {"@id": "urn:visionflow:linked:cancer-genomics", "vc:label": "Cancer Genomics"},
-    {"@id": "urn:visionflow:linked:epigenomics", "vc:label": "Epigenomics"},
-    {"@id": "urn:visionflow:linked:structural-biology", "vc:label": "Structural Biology"}
+    {
+      "@id": "urn:visionflow:linked:bioinformatics",
+      "vc:label": "Bioinformatics"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-science",
+      "vc:label": "Data Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:scientific-computing",
+      "vc:label": "Scientific Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:genomics",
+      "vc:label": "Genomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:protein-structure-prediction",
+      "vc:label": "Protein Structure Prediction"
+    },
+    {
+      "@id": "urn:visionflow:linked:precision-medicine",
+      "vc:label": "Precision Medicine"
+    },
+    {
+      "@id": "urn:visionflow:linked:alphafold",
+      "vc:label": "AlphaFold"
+    },
+    {
+      "@id": "urn:visionflow:linked:systems-biology",
+      "vc:label": "Systems Biology"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistics",
+      "vc:label": "Statistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:big-data",
+      "vc:label": "Big Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu",
+      "vc:label": "GPU"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:high-performance-computing",
+      "vc:label": "High Performance Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequence-alignment",
+      "vc:label": "Sequence Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-biology",
+      "vc:label": "Synthetic Biology"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-biology",
+      "vc:label": "Evolutionary Biology"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:scientific-machine-learning",
+      "vc:label": "Scientific Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:differential-equations",
+      "vc:label": "Differential Equations"
+    },
+    {
+      "@id": "urn:visionflow:linked:molecular-dynamics",
+      "vc:label": "Molecular Dynamics"
+    },
+    {
+      "@id": "urn:visionflow:linked:cryo-em",
+      "vc:label": "Cryo-EM"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-modelling",
+      "vc:label": "Probabilistic Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:embl-ebi",
+      "vc:label": "EMBL-EBI"
+    },
+    {
+      "@id": "urn:visionflow:linked:wellcome-sanger-institute",
+      "vc:label": "Wellcome Sanger Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:biology",
+      "vc:label": "Biology"
+    },
+    {
+      "@id": "urn:visionflow:linked:population-genetics",
+      "vc:label": "Population Genetics"
+    },
+    {
+      "@id": "urn:visionflow:linked:proteomics",
+      "vc:label": "Proteomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:transcriptomics",
+      "vc:label": "Transcriptomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:metagenomics",
+      "vc:label": "Metagenomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:phylogenetics",
+      "vc:label": "Phylogenetics"
+    },
+    {
+      "@id": "urn:visionflow:linked:healthcare",
+      "vc:label": "Healthcare"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm",
+      "vc:label": "Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:cancer-genomics",
+      "vc:label": "Cancer Genomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:epigenomics",
+      "vc:label": "Epigenomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:structural-biology",
+      "vc:label": "Structural Biology"
+    }
   ]
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -82,121 +213,150 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bioinformatics", "label": "Bioinformatics"},
-      {"@id": "urn:ngm:class:systems-biology", "label": "Systems Biology"},
-      {"@id": "urn:ngm:class:structural-biology", "label": "Structural Biology"},
-      {"@id": "urn:ngm:class:population-genetics", "label": "Population Genetics"},
-      {"@id": "urn:ngm:class:evolutionary-biology", "label": "Evolutionary Biology"},
-      {"@id": "urn:ngm:class:molecular-dynamics", "label": "Molecular Dynamics"}
+      {
+        "@id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      },
+      {
+        "@id": "urn:ngm:class:systems-biology",
+        "label": "Systems Biology"
+      },
+      {
+        "@id": "urn:ngm:class:structural-biology",
+        "label": "Structural Biology"
+      },
+      {
+        "@id": "urn:ngm:class:population-genetics",
+        "label": "Population Genetics"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-biology",
+        "label": "Evolutionary Biology"
+      },
+      {
+        "@id": "urn:ngm:class:molecular-dynamics",
+        "label": "Molecular Dynamics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bioinformatics", "label": "Bioinformatics"},
-      {"@id": "urn:ngm:class:genomics", "label": "Genomics"},
-      {"@id": "urn:ngm:class:data-science", "label": "Data Science"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:synthetic-biology", "label": "Synthetic Biology"}
+      {
+        "@id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      },
+      {
+        "@id": "urn:ngm:class:genomics",
+        "label": "Genomics"
+      },
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-biology",
+        "label": "Synthetic Biology"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:protein-structure-prediction", "label": "Protein Structure Prediction"},
-      {"@id": "urn:ngm:class:precision-medicine", "label": "Precision Medicine"},
-      {"@id": "urn:ngm:class:healthcare", "label": "Healthcare"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:cancer-genomics", "label": "Cancer Genomics"}
+      {
+        "@id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare",
+        "label": "Healthcare"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:cancer-genomics",
+        "label": "Cancer Genomics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:alphafold", "label": "AlphaFold"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:statistics", "label": "Statistics"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+      {
+        "@id": "urn:ngm:class:alphafold",
+        "label": "AlphaFold"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:big-data", "label": "Big Data"},
-      {"@id": "urn:ngm:class:gpu", "label": "GPU"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"}
+      {
+        "@id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:synthetic-biology", "label": "Synthetic Biology"},
-      {"@id": "urn:ngm:class:precision-medicine", "label": "Precision Medicine"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"}
+      {
+        "@id": "urn:ngm:class:synthetic-biology",
+        "label": "Synthetic Biology"
+      },
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "PhaseEnrichment"
-  }
-}
-```
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computational-biology:e8f2a1b3c9d4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:computational-biology"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Bioinformatics]]", "resolved": "urn:visionflow:linked:bioinformatics", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Data Science]]", "resolved": "urn:visionflow:linked:data-science", "kind": "ResolvedLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Scientific Computing]]", "resolved": "urn:visionflow:linked:scientific-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Genomics]]", "resolved": "urn:visionflow:linked:genomics", "kind": "ResolvedLink"},
-    {"raw": "[[Drug Discovery]]", "resolved": "urn:visionflow:linked:drug-discovery", "kind": "ResolvedLink"},
-    {"raw": "[[Protein Structure Prediction]]", "resolved": "urn:visionflow:linked:protein-structure-prediction", "kind": "ResolvedLink"},
-    {"raw": "[[Precision Medicine]]", "resolved": "urn:visionflow:linked:precision-medicine", "kind": "ResolvedLink"},
-    {"raw": "[[AlphaFold]]", "resolved": "urn:visionflow:linked:alphafold", "kind": "ResolvedLink"},
-    {"raw": "[[Systems Biology]]", "resolved": "urn:visionflow:linked:systems-biology", "kind": "ResolvedLink"},
-    {"raw": "[[Statistics]]", "resolved": "urn:visionflow:linked:statistics", "kind": "ResolvedLink"},
-    {"raw": "[[High Performance Computing]]", "resolved": "urn:visionflow:linked:high-performance-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Sequence Alignment]]", "resolved": "urn:visionflow:linked:sequence-alignment", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Synthetic Biology]]", "resolved": "urn:visionflow:linked:synthetic-biology", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Bayesian Inference]]", "resolved": "urn:visionflow:linked:bayesian-inference", "kind": "ResolvedLink"},
-    {"raw": "[[Molecular Dynamics]]", "resolved": "urn:visionflow:linked:molecular-dynamics", "kind": "ResolvedLink"},
-    {"raw": "[[Cryo-EM]]", "resolved": "urn:visionflow:linked:cryo-em", "kind": "ResolvedLink"},
-    {"raw": "[[EMBL-EBI]]", "resolved": "urn:visionflow:linked:embl-ebi", "kind": "ResolvedLink"},
-    {"raw": "[[Wellcome Sanger Institute]]", "resolved": "urn:visionflow:linked:wellcome-sanger-institute", "kind": "ResolvedLink"},
-    {"raw": "[[Cancer Genomics]]", "resolved": "urn:visionflow:linked:cancer-genomics", "kind": "ResolvedLink"},
-    {"raw": "[[Epigenomics]]", "resolved": "urn:visionflow:linked:epigenomics", "kind": "ResolvedLink"},
-    {"raw": "[[Proteomics]]", "resolved": "urn:visionflow:linked:proteomics", "kind": "ResolvedLink"},
-    {"raw": "[[Transcriptomics]]", "resolved": "urn:visionflow:linked:transcriptomics", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:linked:knowledge-graph", "kind": "ResolvedLink"},
-    {"raw": "[[Population Genetics]]", "resolved": "urn:visionflow:linked:population-genetics", "kind": "ResolvedLink"},
-    {"raw": "[[Phylogenetics]]", "resolved": "urn:visionflow:linked:phylogenetics", "kind": "ResolvedLink"},
-    {"raw": "[[Metagenomics]]", "resolved": "urn:visionflow:linked:metagenomics", "kind": "ResolvedLink"},
-    {"raw": "[[Structural Biology]]", "resolved": "urn:visionflow:linked:structural-biology", "kind": "ResolvedLink"},
-    {"raw": "[[Evolutionary Biology]]", "resolved": "urn:visionflow:linked:evolutionary-biology", "kind": "ResolvedLink"},
-    {"raw": "[[Differential Equations]]", "resolved": "urn:visionflow:linked:differential-equations", "kind": "ResolvedLink"},
-    {"raw": "[[Probabilistic Modelling]]", "resolved": "urn:visionflow:linked:probabilistic-modelling", "kind": "ResolvedLink"},
-    {"raw": "[[Algorithm]]", "resolved": "urn:visionflow:linked:algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Healthcare]]", "resolved": "urn:visionflow:linked:healthcare", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Biology]]", "resolved": "urn:visionflow:linked:biology", "kind": "ResolvedLink"},
-    {"raw": "[[Scientific Machine Learning]]", "resolved": "urn:visionflow:linked:scientific-machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Big Data]]", "resolved": "urn:visionflow:linked:big-data", "kind": "ResolvedLink"},
-    {"raw": "[[GPU]]", "resolved": "urn:visionflow:linked:gpu", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -415,7 +575,7 @@ public: true
     - **[[Probabilistic Modelling]] for Single-Cell Data**: the negative binomial distribution (NB) is the standard model for scRNA-seq count data, accommodating overdispersion not captured by the Poisson model; DESeq2 and edgeR use empirical Bayes shrinkage of NB dispersion estimates across genes. Variational autoencoders (VAE) — the foundation of scVI (Lopez et al., 2018, Nature Methods) — learn a low-dimensional latent representation of the scRNA-seq data distribution, enabling batch-corrected integration of multiple datasets and uncertainty-aware cell clustering. Optimal transport (Wasserstein distance) has been applied to multi-omic data integration (SCOT, Demetci et al.) and trajectory inference (WOT, Schiebinger et al., 2019, Cell), enabling mechanistic analysis of cellular differentiation without relying on RNA velocity assumptions.
     - **Attention Mechanisms in Biological Sequence Modelling**: the core innovation of [[Transformer Architecture]] protein language models is the self-attention mechanism, which computes for each position i a weighted sum of all other positions j, with attention weight proportional to the compatibility of query vector q_i with key vector k_j: Attention(Q,K,V) = softmax(QK^T / sqrt(d_k))V. In protein language models, this allows the model to implicitly learn co-evolutionary constraints between residue pairs — the same information that explicit co-evolution methods (DCA, PseudoLikelihood maximisation) extract through statistical coupling analysis. AlphaFold2's Evoformer goes further by representing both the MSA (row-wise and column-wise attention) and the pair representation (triangle update and triangle attention operations) in a joint, iteratively refined representation that explicitly encodes pairwise distance and orientation constraints before passing them to the structure module.
     - **[[Graph Neural Network]]s for Biological Networks**: protein–protein interaction networks, gene co-expression networks, and metabolic networks are naturally represented as graphs, making [[Graph Neural Network]] architectures appropriate for learning molecular and cellular embeddings. Methods include Graph Convolutional Networks (GCN) for node classification, Graph Attention Networks (GAT) for weighted edge propagation, and message-passing neural networks (MPNN) for molecular property prediction. Open Targets and STRING databases provide large-scale biological [[Knowledge Graph]]s that ground [[Graph Neural Network]] training; [[Reinforcement Learning]] on graph-structured spaces enables de novo molecular design subject to structural constraints.
-    - **Formal Genomic Statistics**: population genetic inference from genomic data relies on classical statistical tools including: the Hardy-Weinberg equilibrium test for detecting genotyping error or selection; Fst (fixation index) for quantifying population differentiation; linkage disequilibrium (LD) patterns for detecting recombination and selection; coalescent-based likelihood methods (PSMC, SMC++) for inferring effective population size history from single genomes; and polygenic score (PRS) calculation as a linear combination of GWAS effect sizes. Bayesian model comparison (via thermodynamic integration or annealed importance sampling) enables formal comparison of competing demographic models without overfitting to the sample.
+    - **Formal Genomic Statistics**: population genetic inference from genomic data relies on classical statistical tools including: the Hardy-Weinberg equilibrium test for detecting genotyping error or selection; Fst (fixation [private]) for quantifying population differentiation; linkage disequilibrium (LD) patterns for detecting recombination and selection; coalescent-based likelihood methods (PSMC, SMC++) for inferring effective population size history from single genomes; and polygenic score (PRS) calculation as a linear combination of GWAS effect sizes. Bayesian model comparison (via thermodynamic integration or annealed importance sampling) enables formal comparison of competing demographic models without overfitting to the sample.
     - **Structural Bioinformatics Metrics**: protein structure quality is assessed by Ramachandran plot validation, MolProbity score, real-space correlation to electron density (for [[Cryo-EM]] maps), and template modelling score (TM-score, ranging 0-1 where >0.5 implies same fold). RMSD (root mean square deviation of Cα positions after superposition) is the standard metric for structural comparison but is sensitive to domain movements; the GDT_TS (global distance test total score) and lDDT (local difference distance test) are more informative for assessing model accuracy relative to experimental structure in CASP competitions.
   - ## Use Cases / Major Families
     - **Protein Structure and Function**
@@ -443,8 +603,8 @@ public: true
     - The intellectual history of computational biology is a story of successive technological discontinuities, each triggering a wave of new [[Algorithm|algorithmic methods]]. The field's formal origins are traced to the mid-twentieth century: Francis Crick and James Watson's 1953 description of the DNA double helix immediately raised the question of how sequence encodes structure and function — a question that was computationally unanswerable with the tools of the time. Margaret Dayhoff's assembly of the first Atlas of Protein Sequence and Structure in 1965, and her derivation of PAM (Point Accepted Mutation) substitution matrices (1968, 1978) from aligned protein families, established the first mathematical framework for measuring [[Evolutionary Biology|evolutionary divergence]] between sequences and for scoring pairwise alignments — founding the discipline of protein sequence analysis. Needleman and Wunsch (1970) provided the first rigorous [[Dynamic Programming]] algorithm for global [[Sequence Alignment]]; Smith and Waterman (1981) extended this to local alignment, enabling detection of conserved domains within otherwise divergent sequences. These algorithms remain in use, implemented in BLAST (Altschul et al., 1990) — which heuristically approximates Smith-Waterman at orders of magnitude greater speed and whose 1997 Nature Genetics paper is among the most cited in the history of [[Biology]].
     - The 1990–2003 Human Genome Project was the defining institutional event of computational biology's maturation as a discipline. The project required the development of [[Genomics|genome assembly algorithms]] (whole-genome shotgun sequencing, Celera Genomics vs. the public consortium), gene prediction methods (ab initio prediction via generalised [[Hidden Markov Model|HMMs]], homology-based annotation), comparative genomics tools (whole-genome alignment methods: MUMmer, BLAST-based chains), and large-scale database infrastructure (GenBank, Ensembl). The simultaneous development of the Affymetrix microarray platform (1994) and cDNA microarray technology (Pat Brown, Stanford, 1995) created the first high-throughput gene expression measurement platforms, generating a wave of statistical methodology for differential expression analysis (SAM, Tusher et al. 2001; limma, Smyth 2004; edgeR, Robinson et al. 2010; DESeq2, Love et al. 2014) that became standard practice in molecular [[Biology]] laboratories worldwide. [[Hidden Markov Model|Hidden Markov models]], developed for speech recognition by Baum et al. in the 1960s and adapted for protein sequences by Krogh et al. (1994), became the dominant framework for protein family modelling (HMMER, Pfam), gene prediction (AUGUSTUS, GENSCAN), and comparative genomics. [[Bayesian Inference|Bayesian networks]] for gene regulatory network inference (Friedman et al., 2000) and expectation-maximisation algorithms for latent-variable models (mixture models for expression clustering) extended the [[Statistics|statistical toolkit]].
     - The second discontinuity was next-generation sequencing (NGS), beginning with the Illumina/Solexa platform (2006) and 454 pyrosequencing (2005), which reduced the cost of sequencing a human genome from $3 billion (Human Genome Project) to $1,000 (achieved 2014, Illumina HiSeq X) and eventually to approximately $100 by 2026. This precipitous cost reduction transformed sequencing from a rare research activity into a routine clinical diagnostic tool, generating data volumes that demanded new algorithmic approaches: short-read assembly (Velvet, SOAPdenovo), short-read alignment (BWA, Bowtie), RNA-seq quantification (Cufflinks, kallisto, STAR), variant calling (GATK HaplotypeCaller, FreeBayes, DeepVariant), and eventually metagenomics and single-cell [[Transcriptomics]]. The introduction of Pacific Biosciences SMRT sequencing (2011) and Oxford Nanopore Technologies long-read sequencing (2014) further expanded the toolkit, enabling haplotype-resolved chromosome-scale genome assembly and direct detection of base modifications without bisulphite conversion. Long-read assemblers (Hifiasm, Verkko) have enabled the sequencing of complete telomere-to-telomere human genomes (T2T Consortium, 2022 — resolving the approximately 8% of the genome inaccessible to short-read sequencing), opening centromeres and segmental duplications to computational analysis for the first time.
-    - The third and current discontinuity is the [[Deep Learning]] revolution, catalysed within computational biology by the 2021 AlphaFold2 result. [[AlphaFold]]2 (Jumper et al., 2021, Nature) achieved a median GDT_TS score of 92.4 on CASP14 targets — effectively matching experimental crystallography accuracy for the first time in the 50-year history of the CASP competition. The model architecture combined multiple sequence alignment-based evolutionary features with an Evoformer [[Transformer Architecture|attention module]] that computed pair-wise residue relationships and a structure module that iteratively refined backbone torsion angles. The subsequent AlphaFold [[Protein Structure Prediction|Protein Structure Database]], jointly released by DeepMind and [[EMBL-EBI]] in 2022, provided predicted structures for the entire UniProt proteome — over 200 million proteins — making structural predictions accessible without computational infrastructure for the first time. [[AlphaFold]]3 (Abramson et al., 2024, Nature) extended this capability to heteromolecular complexes including proteins, DNA, RNA, and small molecules, achieving 76.4% accuracy on protein-ligand docking benchmarks — a 50% improvement over physics-based methods. The architecture was fundamentally reconceived as a [[Generative Adversarial Networks|diffusion process]], iteratively denoising atomic coordinates within a unified probabilistic framework, reflecting the convergence of computational biology with the generative [[Artificial Intelligence]] paradigm. Simultaneously, ESM-2 (Lin et al., 2023, Science) demonstrated that protein language models trained purely on sequence data — without evolutionary information from multiple sequence alignments — could achieve near-AlphaFold2 accuracy via ESMFold, opening a path to ultrafast structural inference using [[Large Language Models|protein language models]]. ESM-3 (Hayes et al., 2024, EvolutionaryScale; Science 2024) scaled to 98 billion parameters and demonstrated generative design of novel functional proteins, including esmGFP — a fluorescent protein with only 58% sequence identity to any known fluorescent protein, representing the equivalent of hundreds of millions of years of divergent evolution from existing proteins. This aligns with the broader [[Foundation Models|biological foundation model]] paradigm: just as [[Large Language Models]] learn general language understanding from text corpora, ESM-3 and related models learn general biological function from evolutionary sequence corpora.
-    - The emerging paradigm of biological foundation models in 2024-2026 has spawned a new generation of tools across every omic scale. Geneformer (Theodoris et al., 2023, Nature) pretrained a transformer on 30 million single-cell transcriptomes to learn gene regulatory network context embeddings, enabling zero-shot prediction of perturbation effects in cardiomyocyte disease models. scGPT (Cui et al., 2024, Nature Methods) demonstrated that a GPT-style autoregressive model pretrained on 33 million single cells could be fine-tuned for cell-type annotation, multi-omic integration, and perturbation response prediction. Evo (2024, Arc Institute) applied a hyena-based architecture (avoiding attention's quadratic scaling) to model the full diversity of prokaryotic genomes at single-nucleotide resolution, enabling prediction of functional consequences of mutations from CRISPR screens without fine-tuning. Nicheformer and related models add spatial context to single-cell representations, capturing cell-cell communication and tissue architecture alongside transcriptional identity. These biological foundation models are directly analogous to [[Large Language Models]] in [[Natural Language Processing]] but operate over DNA, RNA, protein, and chromatin alphabets; they inherit the same pretraining / fine-tuning paradigm and the same emergent capabilities for zero-shot reasoning about functional relationships not present in the training data. Research is concentrated in groups at the Broad Institute (MIT/Harvard), the European Bioinformatics Institute ([[EMBL-EBI]], Hinxton), the [[Wellcome Sanger Institute]], Stanford's Genome Technology Center, the Flatiron Institute Center for Computational Biology (New York), EvolutionaryScale (San Francisco), and the Arc Institute (Palo Alto).
+    - The third and current discontinuity is the [[Deep Learning]] revolution, catalysed within computational biology by the 2021 AlphaFold2 result. [[AlphaFold]]2 (Jumper et al., 2021, Nature) achieved a median GDT_TS score of 92.4 on CASP14 targets — effectively matching experimental crystallography accuracy for the first time in the 50-year history of the CASP competition. The model architecture combined multiple sequence alignment-based evolutionary features with an Evoformer [[Transformer Architecture|attention module]] that computed pair-wise residue relationships and a structure module that iteratively refined backbone torsion angles. The subsequent AlphaFold [[Protein Structure Prediction|Protein Structure Database]], jointly released by DeepMind and [[EMBL-EBI]] in 2022, provided predicted structures for the entire UniProt proteome — over 200 million proteins — making structural predictions accessible without computational infrastructure for the first time. [[AlphaFold]]3 (Abramson et al., 2024, Nature) extended this capability to heteromolecular complexes including proteins, DNA, RNA, and small molecules, achieving 76.4% accuracy on protein-ligand docking benchmarks — a 50% improvement over physics-based methods. The architecture was fundamentally reconceived as a [[Generative Adversarial Networks|diffusion process]], iteratively denoising atomic coordinates within a unified probabilistic framework, reflecting the convergence of computational biology with the generative [[Artificial Intelligence]] paradigm. Simultaneously, ESM-2 (Lin et al., 2023, Science) demonstrated that protein language models trained purely on sequence data — without evolutionary information from multiple sequence alignments — [private] achieve near-AlphaFold2 accuracy via ESMFold, opening a path to ultrafast structural inference using [[Large Language Models|protein language models]]. ESM-3 (Hayes et al., 2024, EvolutionaryScale; Science 2024) scaled to 98 billion parameters and demonstrated generative design of novel functional proteins, including esmGFP — a fluorescent protein with only 58% sequence identity to any known fluorescent protein, representing the equivalent of hundreds of millions of years of divergent evolution from existing proteins. This aligns with the broader [[Foundation Models|biological foundation model]] paradigm: just as [[Large Language Models]] learn general language understanding from text corpora, ESM-3 and related models learn general biological function from evolutionary sequence corpora.
+    - The emerging paradigm of biological foundation models in 2024-2026 has spawned a new generation of tools across every omic scale. Geneformer (Theodoris et al., 2023, Nature) pretrained a transformer on 30 million single-cell transcriptomes to learn gene regulatory network context embeddings, enabling zero-shot prediction of perturbation effects in cardiomyocyte disease models. scGPT (Cui et al., 2024, Nature Methods) demonstrated that a GPT-style autoregressive model pretrained on 33 million single cells [private] be fine-tuned for cell-type annotation, multi-omic integration, and perturbation response prediction. Evo (2024, Arc Institute) applied a hyena-based architecture (avoiding attention's quadratic scaling) to model the full diversity of prokaryotic genomes at single-nucleotide resolution, enabling prediction of functional consequences of mutations from CRISPR screens without fine-tuning. Nicheformer and related models add spatial context to single-cell representations, capturing cell-cell communication and tissue architecture alongside transcriptional identity. These biological foundation models are directly analogous to [[Large Language Models]] in [[Natural Language Processing]] but operate over DNA, RNA, protein, and chromatin alphabets; they inherit the same pretraining / fine-tuning paradigm and the same emergent capabilities for zero-shot reasoning about functional relationships not present in the training data. Research is concentrated in groups at the Broad Institute (MIT/Harvard), the European Bioinformatics Institute ([[EMBL-EBI]], Hinxton), the [[Wellcome Sanger Institute]], Stanford's Genome Technology Center, the Flatiron Institute Center for Computational Biology (New York), EvolutionaryScale (San Francisco), and the Arc Institute (Palo Alto).
   - ## Current Landscape (2026)
     - As of mid-2026, computational biology occupies a pivotal position as the primary conduit through which [[Artificial Intelligence]] enters life-science and clinical practice. Several trends define the current landscape:
     - **AlphaFold3 and beyond**: Released by DeepMind in May 2024, AlphaFold3 uses a diffusion-based architecture to predict the joint structure of protein complexes with DNA, RNA, and small molecules, achieving unprecedented accuracy across molecular interaction types. By 2026, AlphaFold3 is embedded in every major pharmaceutical company's computational [[Drug Discovery]] platform, and several academic groups are developing differentiable extensions of the framework for molecular dynamics and free-energy estimation.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Offset Certificate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -105,72 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:carbon-offset-certificate:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:21c3bc462095579d3e9e1feb7d1093cbfc23ac4dea58c7e0faab3bb7da294833"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Carbon Neutrality]]",
-      "resolved": "urn:visionflow:linked:carbon-neutrality",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Climate Investment]]",
-      "resolved": "urn:visionflow:linked:climate-investment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Emissions Compensation]]",
-      "resolved": "urn:visionflow:linked:emissions-compensation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Project Verification]]",
-      "resolved": "urn:visionflow:linked:project-verification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Registry Issuance]]",
-      "resolved": "urn:visionflow:linked:registry-issuance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Third Party Validation]]",
-      "resolved": "urn:visionflow:linked:third-party-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Environmental Certificate]]",
-      "resolved": "urn:visionflow:owl:class:environmental-certificate",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A verified document representing the reduction or removal of one metric ton of CO2 equivalent emissions, issued by recognized standards bodies after independent validation that confirms the underlying project's additionality, permanence, and measurability.

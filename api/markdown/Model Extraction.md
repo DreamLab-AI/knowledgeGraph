@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Extraction
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -94,47 +89,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-extraction:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a3151f4306d94dcea708b9dc8d8828949dafdc94dd9cd66de6f3f884d0e7a249"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Adversarial Attacks]]",
-      "resolved": "urn:visionflow:owl:class:adversarial-attacks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Membership Inference]]",
-      "resolved": "urn:visionflow:owl:class:membership-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Inversion]]",
-      "resolved": "urn:visionflow:owl:class:model-inversion",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - An attack where adversaries reconstruct a functionally equivalent or similar machine learning model by systematically querying a target model and training a substitute model on the collected input-output pairs, enabling theft of intellectual property, privacy violations, and subsequent attacks.
 
@@ -213,7 +167,7 @@ public: true
   - The arms race between extraction techniques and defences continues to accelerate
   - Standardisation of extraction attack benchmarks and defence evaluation metrics remains incomplete
   - Reproducibility challenges hinder comparative assessment of defence mechanisms
-  - Industry-academia collaboration on realistic threat models could improve practical relevance
+  - Industry-academia collaboration on realistic threat models [private] improve practical relevance
   - Integration of extraction attack defences with broader model security frameworks (adversarial robustness, membership inference resistance)
   - Holistic security postures addressing multiple threat vectors simultaneously remain underdeveloped
   - Trade-offs between model utility, inference latency, and extraction resistance require systematic characterisation

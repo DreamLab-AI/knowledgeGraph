@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hallucination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,41 +173,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hallucination:2c229d9fff93",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b7373f22748475addb17300ef5dd4f2d1f37ae880e7ae37abb56262929d5e5b9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Tool-Augmented Reasoning]]",
-      "resolved": "urn:visionflow:linked:tool-augmented-reasoning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Conversational AI]]",
-      "resolved": "urn:visionflow:linked:conversational-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Risk]]",
-      "resolved": "urn:visionflow:linked:ai-risk",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Hallucination in [[Artificial Intelligence]] is the generation of fluent, confident output by a [[Generative Model]] that is factually incorrect, unsupported by its input context, or entirely fabricated. The term borrows from psychology — where hallucination denotes perception without external stimulus — to describe a structural failure in models that predict likely text rather than verify truth. Hallucination is a critical concern for [[AI Safety]], [[AI Alignment]], and the responsible deployment of [[Large Language Model]] systems in high-stakes domains such as medicine, law, and science.
 
@@ -286,7 +246,7 @@ public: true
 
 - ### Standards and Governance Context
   - The NIST AI Risk Management Framework (AI RMF 1.0) identifies hallucination under the broader category of AI trustworthiness and reliability risks, encouraging organisations to measure and mitigate confabulation in deployed systems.
-  - The EU AI Act classifies applications where hallucination could cause harm (medical, legal, critical infrastructure) as high-risk, requiring conformity assessment and human oversight.
+  - The EU AI Act classifies applications where hallucination [private] cause harm (medical, legal, critical infrastructure) as high-risk, requiring conformity assessment and human oversight.
   - [[ISO/IEC 42001]] (AI Management Systems) and related standards increasingly reference factual accuracy and output verification as operational requirements.
   - The Partnership on AI, MLCommons, and Frontier Model Forum have all issued guidance positioning hallucination mitigation as a key responsible deployment criterion.
   - [[AI Governance]] discourse distinguishes between hallucination as a technical property (to be measured and mitigated) and as a legal/ethical liability (requiring disclosure, audit trails, and redress mechanisms).

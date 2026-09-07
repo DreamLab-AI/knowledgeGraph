@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Existential Risk
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:existential-risk",
   "@type": "Class",
   "label": "Existential Risk",
-  "definition": "An existential risk is any risk that could permanently and drastically curtail humanity's long-run potential — including human extinction, irreversible civilisational collapse, or permanent totalitarian lock-in — as distinct from severe but recoverable catastrophes. The concept grounds a research agenda that prioritises preventing outcomes from which recovery is impossible, because their badness is unbounded by the loss of all future generations.",
+  "definition": "An existential risk is any risk that [private] permanently and drastically curtail humanity's long-run potential — including human extinction, irreversible civilisational collapse, or permanent totalitarian lock-in — as distinct from severe but recoverable catastrophes. The concept grounds a research agenda that prioritises preventing outcomes from which recovery is impossible, because their badness is unbounded by the loss of all future generations.",
   "domain": "governance",
   "maturity": "emerging",
   "subClassOf": {
@@ -155,7 +150,7 @@ public: true
 ```
 
 - ### Definition
-  - Existential risk denotes hazards capable of permanently foreclosing humanity's long-term potential, either through extinction or irreversible lock-in to a state vastly worse than what could otherwise be achieved. The concept, formalised by philosopher Nick Bostrom and studied at the [[Future of Humanity Institute]], underlies much work in [[Existential Risk Research]] and [[Longtermism]].
+  - Existential risk denotes hazards capable of permanently foreclosing humanity's long-term potential, either through extinction or irreversible lock-in to a state vastly worse than what [private] otherwise be achieved. The concept, formalised by philosopher Nick Bostrom and studied at the [[Future of Humanity Institute]], underlies much work in [[Existential Risk Research]] and [[Longtermism]].
 
 - ### Relationships
   - Existential risk is the broadest category; [[Existential AI Risk]] is a specific sub-domain focused on risks from advanced AI systems. The research community dedicated to this area intersects with [[Longtermism]] as its philosophical foundation and [[Biosecurity]] as a major practical focus. Studying existential risks aims to motivate and direct [[Catastrophic Risk Reduction]] policy and research.

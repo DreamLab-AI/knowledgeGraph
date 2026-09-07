@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Acquisition Function
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Acquisition Function",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:ngm:class:bayesian-optimisation", "vc:label": "Bayesian Optimisation"},
-    {"@id": "urn:ngm:class:probabilistic-model", "vc:label": "Probabilistic Model"},
-    {"@id": "urn:ngm:class:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:ngm:class:hyperparameter-tuning", "vc:label": "Hyperparameter Tuning"},
-    {"@id": "urn:ngm:class:neural-architecture-search", "vc:label": "Neural Architecture Search"},
-    {"@id": "urn:ngm:class:hyperparameter", "vc:label": "Hyperparameter"},
-    {"@id": "urn:ngm:class:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:ngm:class:gaussian-process", "vc:label": "Gaussian Process"},
-    {"@id": "urn:ngm:class:surrogate-model", "vc:label": "Surrogate Model"},
-    {"@id": "urn:ngm:class:optimisation-algorithm", "vc:label": "Optimization Algorithm"},
-    {"@id": "urn:ngm:class:expected-improvement", "vc:label": "Expected Improvement"},
-    {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "vc:label": "Exploration-Exploitation Trade-off"},
-    {"@id": "urn:ngm:class:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:ngm:class:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:ngm:class:kernel-function", "vc:label": "Kernel Function"},
-    {"@id": "urn:ngm:class:drug-discovery", "vc:label": "Drug Discovery"},
-    {"@id": "urn:ngm:class:material-science", "vc:label": "Materials Science"},
-    {"@id": "urn:ngm:class:auto-ml", "vc:label": "AutoML"},
-    {"@id": "urn:ngm:class:multi-objective-optimisation", "vc:label": "Multi-Objective Optimisation"},
-    {"@id": "urn:ngm:class:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:ngm:class:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:ngm:class:grid-search", "vc:label": "Grid Search"},
-    {"@id": "urn:ngm:class:random-search", "vc:label": "Random Search"},
-    {"@id": "urn:ngm:class:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:ngm:class:probabilistic-inference", "vc:label": "Probabilistic Inference"},
-    {"@id": "urn:ngm:class:monte-carlo", "vc:label": "Monte Carlo"},
-    {"@id": "urn:ngm:class:experimental-design", "vc:label": "Experimental Design"},
-    {"@id": "urn:ngm:class:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:ngm:class:thompson-sampling", "vc:label": "Thompson Sampling"},
-    {"@id": "urn:ngm:class:upper-confidence-bound", "vc:label": "Upper Confidence Bound"},
-    {"@id": "urn:ngm:class:bandit-algorithm", "vc:label": "Bandit Algorithm"},
-    {"@id": "urn:ngm:class:information-theory", "vc:label": "Information Theory"},
-    {"@id": "urn:ngm:class:regret-minimisation", "vc:label": "Regret Minimisation"},
-    {"@id": "urn:ngm:class:trust-region-method", "vc:label": "Trust Region Method"},
-    {"@id": "urn:ngm:class:black-box-optimisation", "vc:label": "Black-Box Optimisation"},
-    {"@id": "urn:ngm:class:pareto-optimality", "vc:label": "Pareto Optimality"},
-    {"@id": "urn:ngm:class:protein-engineering", "vc:label": "Protein Engineering"},
-    {"@id": "urn:ngm:class:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:ngm:class:deep-kernel-learning", "vc:label": "Deep Kernel Learning"},
-    {"@id": "urn:ngm:class:variance-reduction", "vc:label": "Variance Reduction"}
+    {
+      "@id": "urn:ngm:class:bayesian-optimisation",
+      "vc:label": "Bayesian Optimisation"
+    },
+    {
+      "@id": "urn:ngm:class:probabilistic-model",
+      "vc:label": "Probabilistic Model"
+    },
+    {
+      "@id": "urn:ngm:class:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:ngm:class:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:neural-architecture-search",
+      "vc:label": "Neural Architecture Search"
+    },
+    {
+      "@id": "urn:ngm:class:hyperparameter",
+      "vc:label": "Hyperparameter"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:gaussian-process",
+      "vc:label": "Gaussian Process"
+    },
+    {
+      "@id": "urn:ngm:class:surrogate-model",
+      "vc:label": "Surrogate Model"
+    },
+    {
+      "@id": "urn:ngm:class:optimisation-algorithm",
+      "vc:label": "Optimization Algorithm"
+    },
+    {
+      "@id": "urn:ngm:class:expected-improvement",
+      "vc:label": "Expected Improvement"
+    },
+    {
+      "@id": "urn:ngm:class:exploration-exploitation-tradeoff",
+      "vc:label": "Exploration-Exploitation Trade-off"
+    },
+    {
+      "@id": "urn:ngm:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:ngm:class:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:ngm:class:kernel-function",
+      "vc:label": "Kernel Function"
+    },
+    {
+      "@id": "urn:ngm:class:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:ngm:class:material-science",
+      "vc:label": "Materials Science"
+    },
+    {
+      "@id": "urn:ngm:class:auto-ml",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:ngm:class:multi-objective-optimisation",
+      "vc:label": "Multi-Objective Optimisation"
+    },
+    {
+      "@id": "urn:ngm:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:grid-search",
+      "vc:label": "Grid Search"
+    },
+    {
+      "@id": "urn:ngm:class:random-search",
+      "vc:label": "Random Search"
+    },
+    {
+      "@id": "urn:ngm:class:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:ngm:class:probabilistic-inference",
+      "vc:label": "Probabilistic Inference"
+    },
+    {
+      "@id": "urn:ngm:class:monte-carlo",
+      "vc:label": "Monte Carlo"
+    },
+    {
+      "@id": "urn:ngm:class:experimental-design",
+      "vc:label": "Experimental Design"
+    },
+    {
+      "@id": "urn:ngm:class:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:thompson-sampling",
+      "vc:label": "Thompson Sampling"
+    },
+    {
+      "@id": "urn:ngm:class:upper-confidence-bound",
+      "vc:label": "Upper Confidence Bound"
+    },
+    {
+      "@id": "urn:ngm:class:bandit-algorithm",
+      "vc:label": "Bandit Algorithm"
+    },
+    {
+      "@id": "urn:ngm:class:information-theory",
+      "vc:label": "Information Theory"
+    },
+    {
+      "@id": "urn:ngm:class:regret-minimisation",
+      "vc:label": "Regret Minimisation"
+    },
+    {
+      "@id": "urn:ngm:class:trust-region-method",
+      "vc:label": "Trust Region Method"
+    },
+    {
+      "@id": "urn:ngm:class:black-box-optimisation",
+      "vc:label": "Black-Box Optimisation"
+    },
+    {
+      "@id": "urn:ngm:class:pareto-optimality",
+      "vc:label": "Pareto Optimality"
+    },
+    {
+      "@id": "urn:ngm:class:protein-engineering",
+      "vc:label": "Protein Engineering"
+    },
+    {
+      "@id": "urn:ngm:class:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:ngm:class:deep-kernel-learning",
+      "vc:label": "Deep Kernel Learning"
+    },
+    {
+      "@id": "urn:ngm:class:variance-reduction",
+      "vc:label": "Variance Reduction"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -66,44 +181,124 @@ public: true
   "definition": "An acquisition function is a utility function used in Bayesian optimisation that determines which point in the input space to evaluate next by balancing exploration of uncertain regions against exploitation of known promising areas. It transforms the surrogate model's posterior distribution into a scalar score, guiding the sequential selection of experiments or evaluations. Common forms include Expected Improvement, Upper Confidence Bound, and Probability of Improvement.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation-algorithm",
+      "label": "Optimization Algorithm"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
-      {"@id": "urn:ngm:class:monte-carlo", "label": "Monte Carlo"},
-      {"@id": "urn:ngm:class:kernel-function", "label": "Kernel Function"}
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo",
+        "label": "Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:kernel-function",
+        "label": "Kernel Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
-      {"@id": "urn:ngm:class:multi-objective-optimisation", "label": "Multi-Objective Optimisation"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:experimental-design", "label": "Experimental Design"}
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:surrogate-model", "label": "Surrogate Model"},
-      {"@id": "urn:ngm:class:probabilistic-inference", "label": "Probabilistic Inference"}
+      {
+        "@id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "label": "Exploration-Exploitation Trade-off"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration-Exploitation Trade-off"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:grid-search", "label": "Grid Search"},
-      {"@id": "urn:ngm:class:random-search", "label": "Random Search"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:grid-search",
+        "label": "Grid Search"
+      },
+      {
+        "@id": "urn:ngm:class:random-search",
+        "label": "Random Search"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
-      {"@id": "urn:ngm:class:material-science", "label": "Materials Science"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "@id": "urn:ngm:class:material-science",
+        "label": "Materials Science"
+      }
     ]
   },
   "quality": 0.8,
@@ -112,61 +307,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:acquisition-function:enrichment-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:acquisition-function"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Bayesian Optimisation]]", "resolved": "urn:ngm:class:bayesian-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Probabilistic Model]]", "resolved": "urn:ngm:class:probabilistic-model", "kind": "ResolvedLink"},
-    {"raw": "[[Bayesian Inference]]", "resolved": "urn:ngm:class:bayesian-inference", "kind": "ResolvedLink"},
-    {"raw": "[[Hyperparameter Tuning]]", "resolved": "urn:ngm:class:hyperparameter-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Architecture Search]]", "resolved": "urn:ngm:class:neural-architecture-search", "kind": "ResolvedLink"},
-    {"raw": "[[Hyperparameter]]", "resolved": "urn:ngm:class:hyperparameter", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:ngm:class:machine-learning-discipline", "kind": "ResolvedLink"},
-    {"raw": "[[Gaussian Process]]", "resolved": "urn:ngm:class:gaussian-process", "kind": "ResolvedLink"},
-    {"raw": "[[Surrogate Model]]", "resolved": "urn:ngm:class:surrogate-model", "kind": "ResolvedLink"},
-    {"raw": "[[Optimisation Algorithm]]", "resolved": "urn:ngm:class:optimisation-algorithm", "kind": "ResolvedLink"},
-    {"raw": "[[Expected Improvement]]", "resolved": "urn:ngm:class:expected-improvement", "kind": "StubLink"},
-    {"raw": "[[Exploration-Exploitation Trade-off]]", "resolved": "urn:ngm:class:exploration-exploitation-tradeoff", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:ngm:class:reinforcement-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:ngm:class:active-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Kernel Function]]", "resolved": "urn:ngm:class:kernel-function", "kind": "ResolvedLink"},
-    {"raw": "[[Drug Discovery]]", "resolved": "urn:ngm:class:drug-discovery", "kind": "ResolvedLink"},
-    {"raw": "[[Materials Science]]", "resolved": "urn:ngm:class:material-science", "kind": "ResolvedLink"},
-    {"raw": "[[AutoML]]", "resolved": "urn:ngm:class:auto-ml", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Objective Optimisation]]", "resolved": "urn:ngm:class:multi-objective-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:ngm:class:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:ngm:class:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Grid Search]]", "resolved": "urn:ngm:class:grid-search", "kind": "ResolvedLink"},
-    {"raw": "[[Random Search]]", "resolved": "urn:ngm:class:random-search", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:ngm:class:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Probabilistic Inference]]", "resolved": "urn:ngm:class:probabilistic-inference", "kind": "ResolvedLink"},
-    {"raw": "[[Monte Carlo]]", "resolved": "urn:ngm:class:monte-carlo", "kind": "StubLink"},
-    {"raw": "[[Experimental Design]]", "resolved": "urn:ngm:class:experimental-design", "kind": "ResolvedLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:ngm:class:robotics", "kind": "ResolvedLink"},
-    {"raw": "[[Thompson Sampling]]", "resolved": "urn:ngm:class:thompson-sampling", "kind": "StubLink"},
-    {"raw": "[[Upper Confidence Bound]]", "resolved": "urn:ngm:class:upper-confidence-bound", "kind": "StubLink"},
-    {"raw": "[[Bandit Algorithm]]", "resolved": "urn:ngm:class:bandit-algorithm", "kind": "StubLink"},
-    {"raw": "[[Information Theory]]", "resolved": "urn:ngm:class:information-theory", "kind": "StubLink"},
-    {"raw": "[[Regret Minimisation]]", "resolved": "urn:ngm:class:regret-minimisation", "kind": "StubLink"},
-    {"raw": "[[Trust Region Method]]", "resolved": "urn:ngm:class:trust-region-method", "kind": "StubLink"},
-    {"raw": "[[Black-Box Optimisation]]", "resolved": "urn:ngm:class:black-box-optimisation", "kind": "StubLink"},
-    {"raw": "[[Pareto Optimality]]", "resolved": "urn:ngm:class:pareto-optimality", "kind": "StubLink"},
-    {"raw": "[[Protein Engineering]]", "resolved": "urn:ngm:class:protein-engineering", "kind": "StubLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:ngm:class:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Kernel Learning]]", "resolved": "urn:ngm:class:deep-kernel-learning", "kind": "StubLink"},
-    {"raw": "[[Variance Reduction]]", "resolved": "urn:ngm:class:variance-reduction", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 

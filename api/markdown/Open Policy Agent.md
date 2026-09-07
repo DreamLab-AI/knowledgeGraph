@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Open Policy Agent
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:open-policy-agent", "@type":"Page", "title":"Open Policy Agent", "vc:slug":"open-policy-agent", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:open-policy-agent",
+  "@type": "Page",
+  "title": "Open Policy Agent",
+  "vc:slug": "open-policy-agent",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,42 +21,82 @@ public: true
   "domain": "security",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:policy-engine", "label": "Policy Engine" }
+    {
+      "@id": "urn:ngm:class:policy-engine",
+      "label": "Policy Engine"
+    }
   ],
   "relations": {
     "implements": [
-      { "@id": "urn:ngm:class:policy-as-code", "label": "Policy as Code" },
-      { "@id": "urn:ngm:class:policy-decision-point", "label": "Policy Decision Point" }
+      {
+        "@id": "urn:ngm:class:policy-as-code",
+        "label": "Policy as Code"
+      },
+      {
+        "@id": "urn:ngm:class:policy-decision-point",
+        "label": "Policy Decision Point"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:policy-as-code", "label": "Policy as Code" }
+      {
+        "@id": "urn:ngm:class:security-policy",
+        "label": "Security Policy"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:authorization", "label": "Authorization" },
-      { "@id": "urn:ngm:class:access-control", "label": "Access Control" }
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:attribute-based-access-control", "label": "Attribute-Based Access Control" },
-      { "@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control" }
+      {
+        "@id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:policy-enforcement-point", "label": "Policy Enforcement Point" }
-    ],
-    "uses": [
-      { "@id": "urn:ngm:class:security-policy", "label": "Security Policy" }
+      {
+        "@id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      }
     ],
     "standardizedBy": [
-      { "@id": "urn:ngm:class:open-source", "label": "Open Source" }
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:kubernetes", "label": "Kubernetes" },
-      { "@id": "urn:ngm:class:api-gateway", "label": "API Gateway" },
-      { "@id": "urn:ngm:class:microservices", "label": "Microservices" }
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

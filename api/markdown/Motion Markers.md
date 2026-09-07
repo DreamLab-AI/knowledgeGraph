@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Motion Markers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:motion-markers:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f1bf3fc72b516ee4b96a59c7fdc6d337b7b1ecd491fa7d68c85695c73963627a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Motion Analysis]]",
-      "resolved": "urn:visionflow:linked:3-d-motion-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Capture Technology]]",
-      "resolved": "urn:visionflow:owl:class:motion-capture-technology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Reflective or active tracking points placed on subjects for optical motion capture systems, typically 12-15mm diameter for full-body capture, enabling precise position tracking at frame rates from 120fps to 10,000fps for animation, biomechanics, and performance analysis.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - payment-channel
----
-
-# Payment Channel
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -267,7 +260,7 @@ aliases:
   - **BOLT Specifications (Basis of Lightning Technology)**
     - The Lightning Network is governed by the BOLT specification suite, which defines wire protocol messages, HTLC construction, channel establishment, onion routing, and gossip. BOLT 12 introduces offers (reusable, static payment codes), improving usability over BOLT 11 invoices.
   - **Bitcoin Improvement Proposals**
-    - BIP 141 (SegWit) was a prerequisite for safe payment channels on Bitcoin by eliminating transaction malleability, which could have allowed channel counterparties to invalidate funding transactions. BIP 341/342 (Taproot/Tapscript) further enhance channel privacy and efficiency.
+    - BIP 141 (SegWit) was a prerequisite for safe payment channels on Bitcoin by eliminating transaction malleability, which [private] have allowed channel counterparties to invalidate funding transactions. BIP 341/342 (Taproot/Tapscript) further enhance channel privacy and efficiency.
   - **Ethereum EIP Standards**
     - Ethereum state channels are supported by various EIPs and instantiated in frameworks such as Perun and Connext, adapted to the EVM's native [[Smart Contract]] capabilities.
   - **W3C Payment Request API**

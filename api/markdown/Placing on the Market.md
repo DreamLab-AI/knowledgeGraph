@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Placing on the Market
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,42 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:market-surveillance-authority", "label": "Market Surveillance Authority"},
-      {"@id": "urn:ngm:class:deployer", "label": "Deployer"}
+      {
+        "@id": "urn:ngm:class:market-surveillance-authority",
+        "label": "Market Surveillance Authority"
+      },
+      {
+        "@id": "urn:ngm:class:deployer",
+        "label": "Deployer"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:provider", "label": "Provider"},
-      {"@id": "urn:ngm:class:importer", "label": "Importer"},
-      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"}
+      {
+        "@id": "urn:ngm:class:provider",
+        "label": "Provider"
+      },
+      {
+        "@id": "urn:ngm:class:importer",
+        "label": "Importer"
+      },
+      {
+        "@id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:placing-on-the-market:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3889ff022a7274798faff90ae0aa0aa15e5dfccd35d0d396774658f3630d2da6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The first making available of an AI system or general-purpose AI model on the EU Union market, as defined in EU AI Act Article 3(12). This act triggers the full set of provider obligations under the Act, including risk management, technical documentation, conformity assessment, CE marking, and post-market monitoring, and applies regardless of whether the system is offered for payment or free of charge.

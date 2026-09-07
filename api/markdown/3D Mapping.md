@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Mapping
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

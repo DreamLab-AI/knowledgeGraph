@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[exhibition]]
-# Immersive Technology Exhibition Event
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,15 +47,36 @@ elevatedFrom:: [[exhibition]]
   "qualityScore": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:event-management", "label": "Event Management"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
-      {"@id": "urn:ngm:class:virtual-event", "label": "Virtual Event"},
-      {"@id": "urn:ngm:class:metaverse-core-concepts", "label": "metaverse core concepts"}
+      {
+        "@id": "urn:ngm:class:event-management",
+        "label": "Event Management"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-core-concepts",
+        "label": "metaverse core concepts"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "provenance": {
@@ -71,32 +86,6 @@ elevatedFrom:: [[exhibition]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:exhibition:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b2730532b813c2e8aed77270e03a2cc4fc72d7729b4d5309e5ee294e981bb834"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIX]]",
-      "resolved": "urn:visionflow:linked:aix",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An **Exhibition** is a curated presentation of artefacts, technologies, or artworks staged in a physical, virtual, or hybrid setting. In immersive technology contexts, exhibitions are primary deployment venues for spatial computing demonstrations, AI showcases, and interactive installations — bridging research, commerce, and public engagement. Hybrid and fully virtual formats (e.g., on metaverse platforms) are increasingly common, extending reach beyond physical attendance.

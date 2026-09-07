@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Mixture-of-Experts
-elevatedFrom: "[[Mixture of Experts]]"
----
-
-# Mixture-of-Experts Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,42 +162,6 @@ elevatedFrom: "[[Mixture of Experts]]"
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mixture-of-experts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f338e7b728ce87f1103a67cc5975907d53adacb52bf062da2503ba27ad8a3291"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[research]]",
-      "resolved": "urn:visionflow:linked:research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[natural language processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.

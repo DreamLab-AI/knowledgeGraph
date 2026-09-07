@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Linear Quadratic Regulator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "The Linear Quadratic Regulator (LQR) is an optimal control framework that computes the state-feedback gain matrix minimising a quadratic cost function — a weighted sum of squared state deviations and squared control inputs over a time horizon — for a linear dynamical system, yielding the globally optimal linear feedback law in closed form through the algebraic Riccati equation. LQR provides a principled, tunable controller where the designer specifies performance-energy trade-offs through cost weight matrices Q (penalising state error) and R (penalising control effort), and the solution guarantees both optimality with respect to this cost and closed-loop stability for controllable systems. Despite its linearity assumption, LQR is widely extended to nonlinear systems via linearisation, iterative LQR (iLQR), and as the backbone of linear-quadratic-Gaussian (LQG) control when combined with Kalman filtering.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimal-control",
+      "label": "Optimal Control"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:state-space-control", "label": "State Space Control"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:stability-analysis", "label": "Stability Analysis"}
+      {
+        "@id": "urn:ngm:class:state-space-control",
+        "label": "State Space Control"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:trajectory-tracking", "label": "Trajectory Tracking"},
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"}
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"}
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - LQR's influence extends far beyond linear systems through iterative LQR (iLQR) and differential dynamic programming (DDP), which apply LQR locally along a trajectory of a nonlinear system in a iterative Gauss-Newton fashion to solve nonlinear trajectory optimisation problems. This approach is central to model predictive path integral (MPPI) and to trajectory optimisation for legged robots, manipulators, and aircraft. The LQR framework also underpins the Linear Quadratic Gaussian (LQG) controller, which adds a Kalman filter for state estimation under noisy measurements, and the loop transfer recovery (LTR) design procedure for robust LQG controllers.
 
   - By 2024-2025 LQR remains a core tool in the control systems engineer's repertoire for both classical application domains (spacecraft attitude control, inverted pendulum stabilisation, electric motor drives) and emerging robotics applications (bipedal and quadrupedal locomotion balance control, drone attitude control, robot arm impedance control). Machine learning researchers have drawn on LQR to analyse the optimality and sample complexity of reinforcement learning algorithms, and differentiable LQR layers are being embedded in neural network architectures for model-based RL and physics-informed control policies. The simplicity and guarantees of LQR make it a persistent baseline against which more complex controllers are evaluated.
-

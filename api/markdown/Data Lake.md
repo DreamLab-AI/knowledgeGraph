@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Lake
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,49 +196,6 @@ public: true
   }
 }
 ```
-
-Data lakes differ from traditional data warehouses in that they retain raw, unprocessed data and apply structure only at query time. This schema-on-read approach maximises flexibility for machine learning workloads where feature engineering requirements are not known in advance. Modern data lake architectures (lakehouses) increasingly blend the structure of warehouses with the flexibility of lakes, incorporating transactional metadata layers like Apache Iceberg or Delta Lake.
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-lake:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:61cfdf94f5a1641c0945dd1f1dd06c6d661049907b191d7a7b1ffe6a8cf09b0a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Big Data]]",
-      "resolved": "urn:visionflow:linked:big-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Engineering]]",
-      "resolved": "urn:visionflow:linked:data-engineering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Centralized repository that stores structured and unstructured data at scale in its native format, enabling big data analytics and machine learning workloads.

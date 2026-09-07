@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Evaluation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,55 +7,202 @@ public: true
   "title": "AI Evaluation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:evaluation-benchmarks-and-leaderboards", "vc:label": "Evaluation Benchmarks and Leaderboards"},
-    {"@id": "urn:visionflow:linked:evaluation-metric", "vc:label": "Evaluation Metric"},
-    {"@id": "urn:visionflow:linked:benchmark-contamination", "vc:label": "Benchmark Contamination"},
-    {"@id": "urn:visionflow:linked:benchmark-saturation", "vc:label": "Benchmark Saturation"},
-    {"@id": "urn:visionflow:linked:human-preference-evaluation", "vc:label": "Human Preference Evaluation"},
-    {"@id": "urn:visionflow:linked:llm-as-judge", "vc:label": "LLM-as-Judge"},
-    {"@id": "urn:visionflow:linked:red-teaming", "vc:label": "Red-Teaming"},
-    {"@id": "urn:visionflow:linked:capability-elicitation", "vc:label": "Capability Elicitation"},
-    {"@id": "urn:visionflow:linked:dynamic-evaluation", "vc:label": "Dynamic Evaluation"},
-    {"@id": "urn:visionflow:linked:mmlu", "vc:label": "MMLU"},
-    {"@id": "urn:visionflow:linked:helm", "vc:label": "HELM"},
-    {"@id": "urn:visionflow:linked:humanitys-last-exam", "vc:label": "Humanity's Last Exam"},
-    {"@id": "urn:visionflow:linked:livecodebench", "vc:label": "LiveCodeBench"},
-    {"@id": "urn:visionflow:linked:chatbot-arena", "vc:label": "Chatbot Arena"},
-    {"@id": "urn:visionflow:linked:mt-bench", "vc:label": "MT-Bench"},
-    {"@id": "urn:visionflow:linked:arena-hard", "vc:label": "Arena-Hard"},
-    {"@id": "urn:visionflow:linked:goodharts-law", "vc:label": "Goodhart's Law"},
-    {"@id": "urn:visionflow:linked:distribution-shift", "vc:label": "Distribution Shift"},
-    {"@id": "urn:visionflow:linked:safety-evaluation", "vc:label": "Safety Evaluation"},
-    {"@id": "urn:visionflow:linked:alignment-evaluation", "vc:label": "Alignment Evaluation"},
-    {"@id": "urn:visionflow:linked:reward-model", "vc:label": "Reward Model"},
-    {"@id": "urn:visionflow:linked:scalable-oversight", "vc:label": "Scalable Oversight"},
-    {"@id": "urn:visionflow:linked:eval-factsheet", "vc:label": "Eval Factsheet"},
-    {"@id": "urn:visionflow:linked:gaia-benchmark", "vc:label": "GAIA Benchmark"},
-    {"@id": "urn:visionflow:linked:gpqa", "vc:label": "GPQA"},
-    {"@id": "urn:visionflow:linked:aime", "vc:label": "AIME"},
-    {"@id": "urn:visionflow:linked:swe-bench", "vc:label": "SWE-Bench"},
-    {"@id": "urn:visionflow:linked:elo-rating", "vc:label": "ELO Rating"},
-    {"@id": "urn:visionflow:linked:bradley-terry-model", "vc:label": "Bradley-Terry Model"},
-    {"@id": "urn:visionflow:linked:prompt-sensitivity", "vc:label": "Prompt Sensitivity"},
-    {"@id": "urn:visionflow:linked:automated-playtesting", "vc:label": "Automated Playtesting"},
-    {"@id": "urn:visionflow:linked:rlhf", "vc:label": "RLHF"},
-    {"@id": "urn:visionflow:linked:model-card", "vc:label": "Model Card"},
-    {"@id": "urn:visionflow:linked:sandbagging", "vc:label": "Sandbagging"},
-    {"@id": "urn:visionflow:owl:class:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:owl:class:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:owl:class:ai-research-area", "vc:label": "AI Research Area"},
-    {"@id": "urn:visionflow:owl:class:bias", "vc:label": "Bias"},
-    {"@id": "urn:visionflow:owl:class:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:ai-benchmark-epistemological-critique", "vc:label": "AI Benchmark Epistemological Critique"},
-    {"@id": "urn:visionflow:linked:frontier-model", "vc:label": "Frontier Model"},
-    {"@id": "urn:visionflow:linked:held-out-test-set", "vc:label": "Held-Out Test Set"},
-    {"@id": "urn:visionflow:linked:calibration", "vc:label": "Calibration"},
-    {"@id": "urn:visionflow:linked:uk-ai-security-institute", "vc:label": "UK AI Security Institute"},
-    {"@id": "urn:visionflow:linked:inspect-framework", "vc:label": "Inspect Framework"},
-    {"@id": "urn:visionflow:linked:eleutherai-lm-evaluation-harness", "vc:label": "EleutherAI LM Evaluation Harness"},
-    {"@id": "urn:visionflow:linked:task-complexity", "vc:label": "Task Complexity"},
-    {"@id": "urn:visionflow:linked:adversarial-evaluation", "vc:label": "Adversarial Evaluation"},
-    {"@id": "urn:visionflow:linked:human-oracle", "vc:label": "Human Oracle"}
+    {
+      "@id": "urn:visionflow:linked:evaluation-benchmarks-and-leaderboards",
+      "vc:label": "Evaluation Benchmarks and Leaderboards"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-metric",
+      "vc:label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-contamination",
+      "vc:label": "Benchmark Contamination"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-saturation",
+      "vc:label": "Benchmark Saturation"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-preference-evaluation",
+      "vc:label": "Human Preference Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-as-judge",
+      "vc:label": "LLM-as-Judge"
+    },
+    {
+      "@id": "urn:visionflow:linked:red-teaming",
+      "vc:label": "Red-Teaming"
+    },
+    {
+      "@id": "urn:visionflow:linked:capability-elicitation",
+      "vc:label": "Capability Elicitation"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-evaluation",
+      "vc:label": "Dynamic Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:mmlu",
+      "vc:label": "MMLU"
+    },
+    {
+      "@id": "urn:visionflow:linked:helm",
+      "vc:label": "HELM"
+    },
+    {
+      "@id": "urn:visionflow:linked:humanitys-last-exam",
+      "vc:label": "Humanity's Last Exam"
+    },
+    {
+      "@id": "urn:visionflow:linked:livecodebench",
+      "vc:label": "LiveCodeBench"
+    },
+    {
+      "@id": "urn:visionflow:linked:chatbot-arena",
+      "vc:label": "Chatbot Arena"
+    },
+    {
+      "@id": "urn:visionflow:linked:mt-bench",
+      "vc:label": "MT-Bench"
+    },
+    {
+      "@id": "urn:visionflow:linked:arena-hard",
+      "vc:label": "Arena-Hard"
+    },
+    {
+      "@id": "urn:visionflow:linked:goodharts-law",
+      "vc:label": "Goodhart's Law"
+    },
+    {
+      "@id": "urn:visionflow:linked:distribution-shift",
+      "vc:label": "Distribution Shift"
+    },
+    {
+      "@id": "urn:visionflow:linked:safety-evaluation",
+      "vc:label": "Safety Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:alignment-evaluation",
+      "vc:label": "Alignment Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reward-model",
+      "vc:label": "Reward Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalable-oversight",
+      "vc:label": "Scalable Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:eval-factsheet",
+      "vc:label": "Eval Factsheet"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaia-benchmark",
+      "vc:label": "GAIA Benchmark"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpqa",
+      "vc:label": "GPQA"
+    },
+    {
+      "@id": "urn:visionflow:linked:aime",
+      "vc:label": "AIME"
+    },
+    {
+      "@id": "urn:visionflow:linked:swe-bench",
+      "vc:label": "SWE-Bench"
+    },
+    {
+      "@id": "urn:visionflow:linked:elo-rating",
+      "vc:label": "ELO Rating"
+    },
+    {
+      "@id": "urn:visionflow:linked:bradley-terry-model",
+      "vc:label": "Bradley-Terry Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-sensitivity",
+      "vc:label": "Prompt Sensitivity"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-playtesting",
+      "vc:label": "Automated Playtesting"
+    },
+    {
+      "@id": "urn:visionflow:linked:rlhf",
+      "vc:label": "RLHF"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-card",
+      "vc:label": "Model Card"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandbagging",
+      "vc:label": "Sandbagging"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-research-area",
+      "vc:label": "AI Research Area"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bias",
+      "vc:label": "Bias"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-benchmark-epistemological-critique",
+      "vc:label": "AI Benchmark Epistemological Critique"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-model",
+      "vc:label": "Frontier Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:held-out-test-set",
+      "vc:label": "Held-Out Test Set"
+    },
+    {
+      "@id": "urn:visionflow:linked:calibration",
+      "vc:label": "Calibration"
+    },
+    {
+      "@id": "urn:visionflow:linked:uk-ai-security-institute",
+      "vc:label": "UK AI Security Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:inspect-framework",
+      "vc:label": "Inspect Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:eleutherai-lm-evaluation-harness",
+      "vc:label": "EleutherAI LM Evaluation Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-complexity",
+      "vc:label": "Task Complexity"
+    },
+    {
+      "@id": "urn:visionflow:linked:adversarial-evaluation",
+      "vc:label": "Adversarial Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-oracle",
+      "vc:label": "Human Oracle"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -76,37 +218,97 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation Benchmarks and Leaderboards"},
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-      {"@id": "urn:ngm:class:llm-as-judge", "label": "LLM-as-Judge"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red-Teaming"},
-      {"@id": "urn:ngm:class:capability-elicitation", "label": "Capability Elicitation"},
-      {"@id": "urn:ngm:class:safety-evaluation", "label": "Safety Evaluation"}
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation Benchmarks and Leaderboards"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:llm-as-judge",
+        "label": "LLM-as-Judge"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red-Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:capability-elicitation",
+        "label": "Capability Elicitation"
+      },
+      {
+        "@id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:held-out-test-set", "label": "Held-Out Test Set"},
-      {"@id": "urn:ngm:class:human-oracle", "label": "Human Oracle"},
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"}
+      {
+        "@id": "urn:ngm:class:held-out-test-set",
+        "label": "Held-Out Test Set"
+      },
+      {
+        "@id": "urn:ngm:class:human-oracle",
+        "label": "Human Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-cards", "label": "Model Card"},
-      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"},
-      {"@id": "urn:ngm:class:alignment-evaluation", "label": "Alignment Evaluation"}
+      {
+        "@id": "urn:ngm:class:model-cards",
+        "label": "Model Card"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:alignment-evaluation",
+        "label": "Alignment Evaluation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:ai-benchmark-epistemological-critique", "label": "AI Benchmark Epistemological Critique"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:benchmark-contamination", "label": "Benchmark Contamination"},
-      {"@id": "urn:ngm:class:benchmark-saturation", "label": "Benchmark Saturation"}
+      {
+        "@id": "urn:ngm:class:benchmark-contamination",
+        "label": "Benchmark Contamination"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-saturation",
+        "label": "Benchmark Saturation"
+      }
     ]
   },
   "quality": 0.91,
@@ -115,69 +317,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "R1Explicit"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-evaluation:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ai-evaluation"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Evaluation Benchmarks and Leaderboards]]", "resolved": "urn:visionflow:linked:evaluation-benchmarks-and-leaderboards", "kind": "StubLink"},
-    {"raw": "[[Evaluation Metric]]", "resolved": "urn:visionflow:linked:evaluation-metric", "kind": "StubLink"},
-    {"raw": "[[Benchmark Contamination]]", "resolved": "urn:visionflow:linked:benchmark-contamination", "kind": "StubLink"},
-    {"raw": "[[Benchmark Saturation]]", "resolved": "urn:visionflow:linked:benchmark-saturation", "kind": "StubLink"},
-    {"raw": "[[Human Preference Evaluation]]", "resolved": "urn:visionflow:linked:human-preference-evaluation", "kind": "StubLink"},
-    {"raw": "[[LLM-as-Judge]]", "resolved": "urn:visionflow:linked:llm-as-judge", "kind": "StubLink"},
-    {"raw": "[[Red-Teaming]]", "resolved": "urn:visionflow:linked:red-teaming", "kind": "StubLink"},
-    {"raw": "[[Capability Elicitation]]", "resolved": "urn:visionflow:linked:capability-elicitation", "kind": "StubLink"},
-    {"raw": "[[Dynamic Evaluation]]", "resolved": "urn:visionflow:linked:dynamic-evaluation", "kind": "StubLink"},
-    {"raw": "[[MMLU]]", "resolved": "urn:visionflow:linked:mmlu", "kind": "StubLink"},
-    {"raw": "[[HELM]]", "resolved": "urn:visionflow:linked:helm", "kind": "StubLink"},
-    {"raw": "[[Humanity's Last Exam]]", "resolved": "urn:visionflow:linked:humanitys-last-exam", "kind": "StubLink"},
-    {"raw": "[[LiveCodeBench]]", "resolved": "urn:visionflow:linked:livecodebench", "kind": "StubLink"},
-    {"raw": "[[Chatbot Arena]]", "resolved": "urn:visionflow:linked:chatbot-arena", "kind": "StubLink"},
-    {"raw": "[[MT-Bench]]", "resolved": "urn:visionflow:linked:mt-bench", "kind": "StubLink"},
-    {"raw": "[[Arena-Hard]]", "resolved": "urn:visionflow:linked:arena-hard", "kind": "StubLink"},
-    {"raw": "[[Goodhart's Law]]", "resolved": "urn:visionflow:linked:goodharts-law", "kind": "StubLink"},
-    {"raw": "[[Distribution Shift]]", "resolved": "urn:visionflow:linked:distribution-shift", "kind": "StubLink"},
-    {"raw": "[[Safety Evaluation]]", "resolved": "urn:visionflow:linked:safety-evaluation", "kind": "StubLink"},
-    {"raw": "[[Alignment Evaluation]]", "resolved": "urn:visionflow:linked:alignment-evaluation", "kind": "StubLink"},
-    {"raw": "[[Reward Model]]", "resolved": "urn:visionflow:linked:reward-model", "kind": "StubLink"},
-    {"raw": "[[Scalable Oversight]]", "resolved": "urn:visionflow:linked:scalable-oversight", "kind": "StubLink"},
-    {"raw": "[[Eval Factsheet]]", "resolved": "urn:visionflow:linked:eval-factsheet", "kind": "StubLink"},
-    {"raw": "[[GAIA Benchmark]]", "resolved": "urn:visionflow:linked:gaia-benchmark", "kind": "StubLink"},
-    {"raw": "[[GPQA]]", "resolved": "urn:visionflow:linked:gpqa", "kind": "StubLink"},
-    {"raw": "[[AIME]]", "resolved": "urn:visionflow:linked:aime", "kind": "StubLink"},
-    {"raw": "[[SWE-Bench]]", "resolved": "urn:visionflow:linked:swe-bench", "kind": "StubLink"},
-    {"raw": "[[ELO Rating]]", "resolved": "urn:visionflow:linked:elo-rating", "kind": "StubLink"},
-    {"raw": "[[Bradley-Terry Model]]", "resolved": "urn:visionflow:linked:bradley-terry-model", "kind": "StubLink"},
-    {"raw": "[[Prompt Sensitivity]]", "resolved": "urn:visionflow:linked:prompt-sensitivity", "kind": "StubLink"},
-    {"raw": "[[RLHF]]", "resolved": "urn:visionflow:linked:rlhf", "kind": "StubLink"},
-    {"raw": "[[Model Card]]", "resolved": "urn:visionflow:linked:model-card", "kind": "StubLink"},
-    {"raw": "[[Sandbagging]]", "resolved": "urn:visionflow:linked:sandbagging", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:owl:class:ai-safety", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:owl:class:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Bias]]", "resolved": "urn:visionflow:owl:class:bias", "kind": "ResolvedLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:owl:class:ai-ethics", "kind": "ResolvedLink"},
-    {"raw": "[[AI Benchmark Epistemological Critique]]", "resolved": "urn:visionflow:linked:ai-benchmark-epistemological-critique", "kind": "ResolvedLink"},
-    {"raw": "[[Frontier Model]]", "resolved": "urn:visionflow:linked:frontier-model", "kind": "StubLink"},
-    {"raw": "[[UK AI Security Institute]]", "resolved": "urn:visionflow:linked:uk-ai-security-institute", "kind": "StubLink"},
-    {"raw": "[[Inspect Framework]]", "resolved": "urn:visionflow:linked:inspect-framework", "kind": "StubLink"},
-    {"raw": "[[EleutherAI LM Evaluation Harness]]", "resolved": "urn:visionflow:linked:eleutherai-lm-evaluation-harness", "kind": "StubLink"},
-    {"raw": "[[Adversarial Evaluation]]", "resolved": "urn:visionflow:linked:adversarial-evaluation", "kind": "StubLink"},
-    {"raw": "[[Human Oracle]]", "resolved": "urn:visionflow:linked:human-oracle", "kind": "StubLink"},
-    {"raw": "[[Held-Out Test Set]]", "resolved": "urn:visionflow:linked:held-out-test-set", "kind": "StubLink"},
-    {"raw": "[[Calibration]]", "resolved": "urn:visionflow:linked:calibration", "kind": "StubLink"},
-    {"raw": "[[ELO Rating]]", "resolved": "urn:visionflow:linked:elo-rating", "kind": "StubLink"},
-    {"raw": "[[Task Complexity]]", "resolved": "urn:visionflow:linked:task-complexity", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -326,7 +465,7 @@ public: true
   ## Academic Context
     AI Evaluation draws theoretically from psychometrics (test validity, construct validity, item response theory, differential item functioning, latent trait modelling), statistics (calibration curves, Platt scaling, confidence intervals, multiple comparison corrections via Bonferroni and Benjamini-Hochberg procedures, bootstrap uncertainty quantification, effect size estimation via Cohen's d and Cliff's delta), cognitive science (task difficulty scaling, human-AI comparison protocols, dual-process reasoning models, expertise-dependent performance variability), and philosophy of science (operationalisation of abstract capabilities, circularity of evaluation where evaluated models may have influenced the evaluation design, theory-ladenness of measurement where the choice of benchmark embeds theoretical assumptions about what intelligence is). The field crystallised around the ImageNet Large Scale Visual Recognition Challenge (Deng et al., 2009; Russakovsky et al., 2015), which demonstrated both the power of standardised vision benchmarks and their inherent limitations: ImageNet drove a decade of vertiginous progress in image classification accuracy, beginning with AlexNet's 15.3% top-5 error in 2012 and reaching sub-2% error by 2021, then became a near-saturated benchmark where marginal top-1 gains had diminishing real-world significance while adversarial robustness and out-of-distribution generalisation remained largely unaddressed by leaderboard-optimised models.
 
-    The GLUE benchmark (Wang et al., 2018) and its more demanding successor SuperGLUE (Wang et al., 2019) applied this paradigm to NLP, assembling diverse natural language understanding tasks including textual entailment, coreference resolution, question answering, and sentiment analysis; SuperGLUE was saturated within approximately 18 months of its introduction as BERT, RoBERTa, and their successors crossed human-level aggregate performance on most constituent tasks, despite those models demonstrably failing simple compositional reasoning tests. The MMLU benchmark (Hendrycks et al., 2021) became the de facto standard for general knowledge evaluation of LLMs, covering 57 academic domains from STEM to law to humanities with 14,042 multiple-choice questions; it drove significant research from 2021 through 2023, but contamination and saturation concerns emerged from late 2023 as frontier models clustered above 88% and permutation sensitivity tests revealed that simply re-ordering multiple-choice answer options could reduce accuracy by up to 13 percentage points, exposing positional heuristic exploitation rather than content understanding. BIG-Bench (Srivastava et al., 2022) assembled 204 tasks across 132 researchers at 444 institutions to probe capabilities beyond standard language understanding — including tasks designed specifically to challenge language models on the basis of hypotheses about their failure modes — but rapid saturation on many tasks again revealed the benchmark arms-race dynamic where labs optimise against any fixed public target. [[GPQA]] (Rein et al., 2023) explicitly targeted contamination and web-search resistance by using graduate-level science questions requiring genuine domain expertise: only individuals with relevant domain training can answer correctly at meaningful rates, and the questions are unpublishable on standard internet sources during their use as a benchmark.
+    The GLUE benchmark (Wang et al., 2018) and its more demanding successor SuperGLUE (Wang et al., 2019) applied this paradigm to NLP, assembling diverse natural language understanding tasks including textual entailment, coreference resolution, question answering, and sentiment analysis; SuperGLUE was saturated within approximately 18 months of its introduction as BERT, RoBERTa, and their successors crossed human-level aggregate performance on most constituent tasks, despite those models demonstrably failing simple compositional reasoning tests. The MMLU benchmark (Hendrycks et al., 2021) became the de facto standard for general knowledge evaluation of LLMs, covering 57 academic domains from STEM to law to humanities with 14,042 multiple-choice questions; it drove significant research from 2021 through 2023, but contamination and saturation concerns emerged from late 2023 as frontier models clustered above 88% and permutation sensitivity tests revealed that simply re-ordering multiple-choice answer options [private] reduce accuracy by up to 13 percentage points, exposing positional heuristic exploitation rather than content understanding. BIG-Bench (Srivastava et al., 2022) assembled 204 tasks across 132 researchers at 444 institutions to probe capabilities beyond standard language understanding — including tasks designed specifically to challenge language models on the basis of hypotheses about their failure modes — but rapid saturation on many tasks again revealed the benchmark arms-race dynamic where labs optimise against any fixed public target. [[GPQA]] (Rein et al., 2023) explicitly targeted contamination and web-search resistance by using graduate-level science questions requiring genuine domain expertise: only individuals with relevant domain training can answer correctly at meaningful rates, and the questions are unpublishable on standard internet sources during their use as a benchmark.
 
     The [[LLM-as-Judge]] paradigm was formalised by Zheng et al. (2023) through [[MT-Bench]] and [[Chatbot Arena]], published at NeurIPS 2023, demonstrating that GPT-4 as a judge achieves greater than 80% agreement with human crowd-source preferences when using chain-of-thought prompting that directs the judge to generate a reference answer before scoring candidate responses. Capability elicitation as a formal research topic emerged from AI safety work at Anthropic (2023-2024), with [[Sandbagging]] — a model deliberately underperforming on evaluations to appear less capable than it actually is, for example to avoid deployment restrictions on dangerous capabilities — as a specific threat model documented in synthetic experiments and motivating research into elicitation-auditing methodologies. Red-teaming as socio-technical practice was surveyed comprehensively in 2026 by a multidisciplinary team, revealing that red-team results depend critically on annotator demographics, domain expertise, and institutional context (a red team composed primarily of security researchers produces systematically different threat discovery patterns than one composed of social scientists), and that the absence of standardised reporting schemas for red-team disclosures makes inter-study comparison unreliable and enables strategic result presentation by developers. The conformal prediction literature, applied to ELO estimation (Yadkori et al., 2026), has introduced statistically valid confidence intervals around leaderboard rankings using conformal calibration procedures, addressing the long-standing problem that small ELO gaps between models on Chatbot Arena are not statistically distinguishable without proper uncertainty quantification — many reported SOTA claims correspond to differences well within the margin of error. The Leaderboard Illusion paper (Jacovi et al., 2025) formally demonstrated through controlled experiments that many publicly top-ranked models on the Hugging Face Open LLM Leaderboard achieve their position through selective benchmark submission, benchmark-specific fine-tuning, or evaluation distribution overfitting rather than genuine generalisation, and proposed detection methods based on cross-benchmark correlation analysis and mandatory holdout evaluation against benchmarks revealed only after submission. The MACEval framework (2025) proposed multi-agent continual evaluation networks where diverse evaluator agents continually generate new evaluation instances, maintaining perpetual headroom without human curation overhead — an approach that addresses the saturation problem at scale but introduces risks of evaluator model bias and circularity.
 
@@ -341,9 +480,9 @@ public: true
     UK academic contributions to AI evaluation methodology are substantial and cross-institutional. The University of Oxford's Centre for the Governance of AI (GovAI), successor to the Future of Humanity Institute, has produced influential work on scalable oversight (how humans can supervise AI systems whose outputs they cannot directly verify), evaluation validity (the necessary and sufficient conditions for an evaluation to constitute evidence of capability), and the political economy of evaluation standards (how regulatory contexts shape the incentive structures governing what labs evaluate and disclose). University College London's computational neuroscience and machine learning groups have contributed to calibration methodology — studying how well model confidence scores predict empirical accuracy across distributional contexts and designing re-calibration techniques (Platt scaling, temperature scaling, isotonic regression) applicable to large-scale language model evaluation. The University of Cambridge's Leverhulme Centre for the Future of Intelligence has published work on human-AI comparison methodologies, including the design of controlled experiments that isolate genuine reasoning capability from knowledge recall and formatting heuristics. The Alan Turing Institute — the UK's national institute for data science and AI — hosts cross-disciplinary evaluation working groups spanning fairness measurement, algorithmic robustness testing, and sociotechnical safety assessment, with particular emphasis on evaluation validity in high-stakes public-sector applications including healthcare, benefits administration, and criminal justice. In Northern England, the University of Manchester's Department of Computer Science hosts the first European node of the ELLIS (European Laboratory for Learning and Intelligent Systems) network, with AI evaluation methodology as a focus within its broader machine learning research agenda; the University of Leeds' School of Computing contributes to computational benchmarking of NLP systems, particularly evaluation of text summarisation and information extraction quality; the University of Sheffield's Natural Language Processing group, one of the UK's most productive NLP research units, has produced influential work on evaluation of text generation quality and factuality, including metrics for hallucination detection and factual consistency assessment.
 
   ## Future Directions (2026-2030)
-    - **Contamination-Resistant Benchmark Infrastructure**: Sustained community investment in continuously generated, human-expert-vetted benchmark repositories with cryptographic proofs of post-training-cutoff provenance, addressing the fundamental tension between benchmark public availability (required for reproducibility) and contamination resistance (requiring secrecy). Platforms architecturally analogous to [[LiveCodeBench]] — sourcing questions from ongoing human intellectual activity (competitions, peer review, new scientific publications, recently filed legal cases) — are expected to emerge for scientific reasoning, legal analysis, medical diagnosis, and engineering design. Zero-knowledge proof techniques could allow model evaluation against secret benchmark items without revealing the items, enabling contamination-proof evaluation even for closed-source models against public test sets.
+    - **Contamination-Resistant Benchmark Infrastructure**: Sustained community investment in continuously generated, human-expert-vetted benchmark repositories with cryptographic proofs of post-training-cutoff provenance, addressing the fundamental tension between benchmark public availability (required for reproducibility) and contamination resistance (requiring secrecy). Platforms architecturally analogous to [[LiveCodeBench]] — sourcing questions from ongoing human intellectual activity (competitions, peer review, new scientific publications, recently filed legal cases) — are expected to emerge for scientific reasoning, legal analysis, medical diagnosis, and engineering design. Zero-knowledge proof techniques [private] allow model evaluation against secret benchmark items without revealing the items, enabling contamination-proof evaluation even for closed-source models against public test sets.
     - **Multi-Agent and Agentic System Evaluation**: As AI deployment shifts to multi-step agentic systems and multi-agent teams, evaluation methodology must evolve from single-output scoring to full trajectory assessment. Key open problems: how to evaluate agent faithfulness (does the agent do what it claims to be doing?), delegation validity (are sub-task assignments appropriate?), failure cascade resilience (does the system recover gracefully from sub-task failures?), and emergent coordination quality in multi-agent settings. OpenHospital (2026, a hospital simulation arena with LLM-powered clinical agents) represents an early multi-agent collective intelligence benchmark; the paradigm is expected to extend to supply chain management, scientific discovery pipelines, and multi-agent software engineering contexts.
-    - **Mechanistic Interpretability Integration**: Behavioural benchmarks are inherently indirect measures of capability: they observe outputs without explaining the internal computation producing those outputs. Mechanistic interpretability research — identifying the specific circuits, attention heads, and feature representations responsible for specific capabilities — is expected to increasingly inform evaluation design, enabling detection of latent capabilities that only surface under specific elicitation conditions but are present in the model weights. This could detect sandbagging (where deceptive internal representations exist independently of observed behaviour) and identify capability precursors that predict near-term capability emergence before it is visible on existing benchmarks.
+    - **Mechanistic Interpretability Integration**: Behavioural benchmarks are inherently indirect measures of capability: they observe outputs without explaining the internal computation producing those outputs. Mechanistic interpretability research — identifying the specific circuits, attention heads, and feature representations responsible for specific capabilities — is expected to increasingly inform evaluation design, enabling detection of latent capabilities that only surface under specific elicitation conditions but are present in the model weights. This [private] detect sandbagging (where deceptive internal representations exist independently of observed behaviour) and identify capability precursors that predict near-term capability emergence before it is visible on existing benchmarks.
     - **Regulatory Standardisation and Mutual Recognition**: The EU AI Act GPAI provisions (effective 2025-2026), equivalent UK secondary legislation under the AI Opportunities Act, the US Executive Order on AI safety, and analogous frameworks in Canada, Japan, and Singapore are driving convergence toward standardised pre-deployment evaluation protocols, mandatory third-party audits for systems above defined capability thresholds, and interoperable [[Eval Factsheet]] schemas enabling cross-jurisdictional regulatory recognition. A model evaluated by AISI in the UK should be able to submit those evaluation results to the EU AI Office with a mutual-recognition agreement rather than requiring full re-evaluation, reducing compliance costs while maintaining rigour. The development of international evaluation standards through bodies such as ISO/IEC JTC 1/SC 42 (AI) and NIST AI RMF is progressing, though convergence across jurisdictions is expected to take until 2028-2030.
     - **Scalable Oversight at Superhuman Capability**: The most critical long-term open problem in AI evaluation is how to assess the performance and alignment of AI systems whose outputs humans cannot reliably verify — when the model is better than any human at the task being evaluated. Current evaluation methods all ultimately ground out in human judgment at some level (human-written ground truths, human preference ratings, human red-teams). As models cross human-expert performance thresholds in domains including advanced mathematics, protein engineering, drug discovery, and strategic reasoning, the scalable oversight problem becomes acute. Research directions include: debate (two AI systems argue for competing answers; humans judge the debate rather than the answer); amplification (AI assists humans in evaluating AI output, recursively extending evaluation to capabilities beyond direct human assessment); and process supervision (reward processes that verify reasoning steps rather than outcomes, which can be verified against logical constraints even when the final answer cannot). The expected timeline for this problem becoming practically urgent is 2027-2030 for specific domain-limited capabilities and post-2030 for broad capability domains.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# History and Path to AGI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -548,379 +543,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:history-and-path-to-agi:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b814dcac254473d609c6a63302198692b21aa0922a9aec6f4c81e656034b411a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AAAI]]",
-      "resolved": "urn:visionflow:linked:aaai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ACL]]",
-      "resolved": "urn:visionflow:linked:acl",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Policy]]",
-      "resolved": "urn:visionflow:linked:ai-policy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Research]]",
-      "resolved": "urn:visionflow:linked:ai-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Safety Research]]",
-      "resolved": "urn:visionflow:linked:ai-safety-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Winter]]",
-      "resolved": "urn:visionflow:linked:ai-winter",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Systems]]",
-      "resolved": "urn:visionflow:linked:autonomous-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cognitive Psychology]]",
-      "resolved": "urn:visionflow:linked:cognitive-psychology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cognitive Science]]",
-      "resolved": "urn:visionflow:linked:cognitive-science",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computational Substrate]]",
-      "resolved": "urn:visionflow:linked:computational-substrate",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Science]]",
-      "resolved": "urn:visionflow:linked:computer-science",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Connectionism]]",
-      "resolved": "urn:visionflow:linked:connectionism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Drug Discovery]]",
-      "resolved": "urn:visionflow:linked:drug-discovery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Frontier AI Evaluation]]",
-      "resolved": "urn:visionflow:linked:frontier-ai-evaluation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GPU Compute]]",
-      "resolved": "urn:visionflow:linked:gpu-compute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ICLR]]",
-      "resolved": "urn:visionflow:linked:iclr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ICML]]",
-      "resolved": "urn:visionflow:linked:icml",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Institutional Funding]]",
-      "resolved": "urn:visionflow:linked:institutional-funding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MachineLearningDomain]]",
-      "resolved": "urn:visionflow:linked:machine-learning-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mathematical Foundations]]",
-      "resolved": "urn:visionflow:linked:mathematical-foundations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mathematics]]",
-      "resolved": "urn:visionflow:linked:mathematics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Narrow AI]]",
-      "resolved": "urn:visionflow:linked:narrow-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Nature]]",
-      "resolved": "urn:visionflow:linked:nature",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NeurIPS]]",
-      "resolved": "urn:visionflow:linked:neur-ips",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Networks]]",
-      "resolved": "urn:visionflow:linked:neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neuroscience]]",
-      "resolved": "urn:visionflow:linked:neuroscience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Philosophy of Mind]]",
-      "resolved": "urn:visionflow:linked:philosophy-of-mind",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PolicyLayer]]",
-      "resolved": "urn:visionflow:linked:policy-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Probabilistic Inference]]",
-      "resolved": "urn:visionflow:linked:probabilistic-inference",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ResearchLayer]]",
-      "resolved": "urn:visionflow:linked:research-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RLHF]]",
-      "resolved": "urn:visionflow:linked:rlhf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Rule-Based Systems]]",
-      "resolved": "urn:visionflow:linked:rule-based-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scaling Laws]]",
-      "resolved": "urn:visionflow:linked:scaling-laws",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Science]]",
-      "resolved": "urn:visionflow:linked:science",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ScienceAndTechnologyStudiesDomain]]",
-      "resolved": "urn:visionflow:linked:science-and-technology-studies-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scientific Discovery Acceleration]]",
-      "resolved": "urn:visionflow:linked:scientific-discovery-acceleration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scientific Method]]",
-      "resolved": "urn:visionflow:linked:scientific-method",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scientific Paradigm]]",
-      "resolved": "urn:visionflow:linked:scientific-paradigm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Statistics]]",
-      "resolved": "urn:visionflow:linked:statistics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Technology History]]",
-      "resolved": "urn:visionflow:linked:technology-history",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Turing Test]]",
-      "resolved": "urn:visionflow:linked:turing-test",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agent Frameworks]]",
-      "resolved": "urn:visionflow:owl:class:agent-frameworks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agentic Internet]]",
-      "resolved": "urn:visionflow:owl:class:agentic-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Adoption]]",
-      "resolved": "urn:visionflow:owl:class:ai-adoption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Alignment]]",
-      "resolved": "urn:visionflow:owl:class:ai-alignment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI-GroundedDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-technique",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Risks]]",
-      "resolved": "urn:visionflow:owl:class:ai-risks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Constitutional AI Language Model Family]]",
-      "resolved": "urn:visionflow:owl:class:anthropic-claude",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial General Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Attention Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:attention-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Backpropagation]]",
-      "resolved": "urn:visionflow:owl:class:backpropagation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Instruction-Following Conversational AI System]]",
-      "resolved": "urn:visionflow:owl:class:chat-gpt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CLI Multi-Agent Systems]]",
-      "resolved": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Competition in AI]]",
-      "resolved": "urn:visionflow:owl:class:competition-in-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-research-area",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Constitutional AI Training Methodology]]",
-      "resolved": "urn:visionflow:owl:class:constitutional-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Expert Systems]]",
-      "resolved": "urn:visionflow:owl:class:expert-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gradient Descent]]",
-      "resolved": "urn:visionflow:owl:class:gradient-descent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning from Human Feedback]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Symbolic AI]]",
-      "resolved": "urn:visionflow:owl:class:symbolic-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data]]",
-      "resolved": "urn:visionflow:owl:class:training-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformer Architecture]]",
-      "resolved": "urn:visionflow:owl:class:transformer-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - History and Path to AGI is the intellectual and institutional chronicle of artificial intelligence research from its philosophical origins through contemporary frontier AI development, tracing the succession of paradigms, breakthroughs, and failures that collectively constitute the discipline's trajectory toward Artificial General Intelligence (AGI) — a hypothetical system matching or exceeding human-level cognitive performance across all domains without task-specific training — spanning the conceptual foundations of Alan Turing's 1950 paper "Computing Machinery and Intelligence" in Mind (introducing the imitation game as an operational criterion for machine thought, asking "Can machines think?" and proposing the Turing Test as the deflationary substitute for that metaphysically fraught question), the formal founding of AI as a discipline at the Dartmouth Summer Research Project on Artificial Intelligence in 1956 convened by John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon at Dartmouth College proposing over two months that "every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it", the symbolic/GOFAI (Good Old-Fashioned Artificial Intelligence) era dominated by hand-coded knowledge representations, production rule systems, and search algorithms (GPS — General Problem Solver Newell and Simon 1957 implementing means-ends analysis; DENDRAL 1965 Feigenbaum Stanford expert system for chemical structure elucidation demonstrating knowledge engineering feasibility; MYCIN 1972 Stanford medical diagnosis expert system achieving 65% accuracy on bacteraemia/meningitis, outperforming junior physicians; LISP and PROLOG as dominant AI languages; resolution theorem proving Robinson 1965; frames and semantic networks Minsky 1975/Brachman 1979), the First AI Winter 1974–1980 triggered by the 1973 Lighthill Report commissioned by the UK Science Research Council (James Lighthill concluding AI had failed to deliver on its promises, recommending defunding most academic AI research in Britain) and the US DARPA withdrawal from speech research following the Alpac 1966 report condemning machine translation costs, the resurgence via expert systems commercialisation 1980–1987 (Symbolics LISP machines, DEC XCON/R1 generating \$40M/year savings by 1986, Japanese Fifth Generation Computer project 1982 investing ¥57B in Prolog-based parallel machines aiming to leapfrog Western AI, over 2,500 expert system shells deployed in Fortune 500 companies by 1984), the Second AI Winter 1987–1993 caused by collapse of the Lisp machine hardware market (Symbolics and LMI bankrupt by 1990), expert system maintenance brittleness (knowledge acquisition bottleneck, inability to handle uncertainty robustly, poor generalisation outside narrow domains), and the strategic failure of the Fifth Generation project to achieve natural language processing and commonsense reasoning, the connectionist revival and subsymbolic paradigm (Perceptrons Rosenblatt 1958 → refuted by Minsky-Papert 1969 demonstrating XOR impossibility for single-layer networks → backpropagation rediscovery Rumelhart-Hinton-Williams 1986 enabling multilayer networks to learn feature representations through gradient descent, Boltzmann machines Hinton-Sejnowski 1983, recurrent networks Jordan 1986/Elman 1990, LeNet Yann LeCun 1989 applying convolutional networks to handwritten digit recognition achieving 1% test error on MNIST enabling the automated cheque-reading systems processing millions of US bank cheques by the mid-1990s), the statistical turn and kernel machines 1990s (SVMs Vapnik-Cortes 1995 providing principled maximum-margin classifiers with PAC-Bayesian generalisation bounds; random forests Breiman 2001; graphical models and Bayesian networks Pearl 1988 enabling probabilistic reasoning under uncertainty with exact/approximate inference algorithms), the Deep Learning revolution initiated by Hinton-Salakhutdinov 2006 demonstrating layer-wise pretraining of deep belief networks circumventing vanishing gradient, followed by Rectified Linear Units (ReLU Glorot-Bengio 2011 replacing sigmoid saturation) and dropout regularisation (Srivastava-Hinton 2014), reaching critical mass at ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2012 where AlexNet (Krizhevsky-Sutskever-Hinton University of Toronto trained on two GTX 580 3GB GPUs for five days) achieved 15.3% top-5 error versus the runner-up 26.2% — a 41% relative improvement that permanently shifted computer vision to deep convolutional networks and catalysed the GPU compute arms race, the reinforcement learning renaissance culminating in DeepMind's DQN 2013 (Mnih et al., human-level Atari play from pixels alone using Q-networks with experience replay and target networks) and AlphaGo March 2016 (Silver et al., policy and value networks trained via supervised learning on professional games then self-play MCTS defeating 9-dan professional Lee Sedol 4-1 in Seoul, estimated 10^170 legal positions in Go rendering exhaustive search infeasible — demonstrating AI could master humanity's most strategically demanding abstract game through self-supervised experience), the Transformer architecture (Vaswani et al. "Attention Is All You Need" NeurIPS 2017 Google Brain, replacing recurrent processing with parallel multi-head self-attention O(n²d) over sequence positions, enabling massively parallel GPU training and superior long-range dependency modelling, yielding BERT Devlin et al. 2018 Google bidirectional pre-training achieving state-of-the-art on 11 NLP benchmarks simultaneously), the GPT scaling trajectory (OpenAI GPT-1 Radford et al. 2018 117M parameters unsupervised pre-training + task-specific fine-tuning; GPT-2 Radford et al. 2019 1.5B parameters zero-shot task completion raising concerns about misuse leading to staged release; GPT-3 Brown et al. 2020 175B parameters few-shot in-context learning demonstrating emergent capabilities across arithmetic, translation, coding without gradient updates; GPT-4 OpenAI 2023 multimodal, reportedly ~1.8T parameters mixture-of-experts, passing bar exam at 90th percentile, achieving USMLE Step 1 at passing threshold, scoring 5 on AP exams across 14 subjects; GPT-4o OpenAI 2024 omni-modal real-time; GPT-4.1/o-series OpenAI 2025 extended context and reasoning; GPT-5 OpenAI May 2025 unifying instruct and reasoning modes with claimed 60%+ improvement on complex reasoning benchmarks over GPT-4o), the Chinchilla scaling laws (Hoffmann et al. Chinchilla DeepMind 2022 demonstrating that optimal compute allocation requires training-tokens ≈ 20× model-parameters, overturning the prevailing "bigger models always better" orthodoxy — Chinchilla 70B trained on 1.4T tokens outperforming Gopher 280B on virtually all benchmarks at one-quarter the parameter count, reshaping the industry toward data-efficient training regimes), Reinforcement Learning from Human Feedback (RLHF Christiano et al. 2017 OpenAI; InstructGPT Ouyang et al. 2022 demonstrating that 1.3B parameter model with RLHF outperforms 175B GPT-3 on human preference ratings; Constitutional AI Anthropic 2022 replacing RLHF's preference labelling with principle-guided self-critique; DPO Rafailov et al. Stanford 2023 reducing RLHF to supervised contrastive objective), the frontier evaluation ecosystem (MMLU Hendrycks et al. 2020 57-subject massive multitask language understanding; HumanEval Chen et al. 2021 functional code generation; BIG-Bench 2022 204 diverse tasks; HELM 2022 Stanford Holistic Evaluation; GPQA Diamond Rein et al. 2023 expert-level science PhD questions; ARC-AGI François Chollet 2019/2024 abstract pattern completion resisting memorisation; Humanity's Last Exam HLE Scale AI/CAIS 2025 2,500 expert-level questions across 50+ disciplines with frontier models scoring 3-8% at launch), and the contemporary AGI debate across five intellectual traditions: (1) Demis Hassabis (DeepMind/Google CEO) pragmatist incremental view that AGI is achievable within 5-10 years through a systems integration of planning, memory, world-models and language, exemplified by AlphaFold 2 solving protein folding (CASP14 2020 median GDT score 92.4 versus next-best 39.8, Nature 2021 structure predictions for 200M proteins published to the Protein Data Bank by 2022); (2) Richard Sutton's Bitter Lesson (2019 essay) asserting that general methods scaling compute always outperform methods that encode human knowledge, with implications that architecture and data > inductive bias; (3) Eliezer Yudkowsky (MIRI) existential risk position arguing AGI with misaligned values poses civilisation-level catastrophe risk, advocating for a pause or international treaty given near-zero probability of controlling a superintelligence, expressed in the 2023 Time op-ed calling for a six-month moratorium and "treat it like a nuclear weapon"; (4) Nick Bostrom's Superintelligence (2014 Oxford) instrumental convergence thesis showing any sufficiently capable goal-directed agent tends toward resource acquisition/self-preservation/goal-content integrity regardless of terminal objectives, informing the AI safety research programme; (5) Leopold Aschenbrenner's Situational Awareness (June 2024 self-published 165-page essay) projecting AGI by 2027 and superintelligence by 2030 based on extrapolated scaling curves, arguing that the US must treat AI as a national security priority comparable to the Manhattan Project, that compute clusters will reach 10²⁹ FLOP/s by 2030, and that AI laboratories will be targeted by state-level espionage — the essay circulated widely among Silicon Valley investors and policymakers, cited by Sam Altman and Elon Musk, though criticised by researchers including Yann LeCun for assuming that scaling current architectures reaches AGI; and (6) Ray Kurzweil's technoptimist trajectory asserting AGI by 2029 and the Singularity by 2045 in "The Singularity Is Nearer" (2024) based on exponential trends in compute density (Moore's Law), neural simulation costs, and the observed doubling of AI capability every 12-18 months, drawing on Kurzweil's Law of Accelerating Returns first articulated in "The Singularity Is Near" (2005), with the UK providing a distinctive national thread through: Alan Turing's wartime cryptanalysis at Bletchley Park (1939-1945, Bombe electromechanical decoders breaking Enigma, Colossus programmable electronic computer 1943 breaking Lorenz cipher, both predating ENIAC 1945), the Edinburgh University AI programme (Donald Michie Machine Intelligence laboratory 1965, FRED robot, PROLOG development by Robert Kowalski 1974), Cambridge University (Cambridge Language Research Unit 1955 pioneering machine translation, the Cambridge Centre for the Future of Intelligence CFI founded 2016 with a £10M Leverhulme Trust grant under the directorship of Stephen Cave studying long-term AI risk), Oxford University (Nick Bostrom founding the Future of Humanity Institute FHI 1995, the Oxford Internet Institute, the Governance of AI programme), DeepMind founded London 2010 by Demis Hassabis, Shane Legg and Mustafa Suleyman (acquired by Google 2014 for ~£400M, now Google DeepMind with 3,000+ staff across London/Paris/Mountain View), the Alan Turing Institute (national institute for data science and AI, founded 2015 under Francis Collins Chair, headquartered British Library London, cross-university partnership UCL/Cambridge/Edinburgh/Oxford/Warwick/Manchester), and the AI Safety Institute (AISI, founded November 2023 under Rishi Sunak at Bletchley Park during the UK AI Safety Summit co-hosted with US, renamed Frontier AI Safety Institute 2025, testing frontier models including GPT-4/Claude/Gemini for dangerous capabilities with published evaluations demonstrating emergent expert-level cyber/CBRN knowledge by Q1 2025).
+  - History and Path to AGI is the intellectual and institutional chronicle of artificial intelligence research from its philosophical origins through contemporary frontier AI development, tracing the succession of paradigms, breakthroughs, and failures that collectively constitute the discipline's trajectory toward Artificial General Intelligence (AGI) — a hypothetical system matching or exceeding human-level cognitive performance across all domains without task-specific training — spanning the conceptual foundations of Alan Turing's 1950 paper "Computing Machinery and Intelligence" in Mind (introducing the imitation game as an operational criterion for machine thought, asking "Can machines think?" and proposing the Turing Test as the deflationary substitute for that metaphysically fraught question), the formal founding of AI as a discipline at the Dartmouth Summer Research Project on Artificial Intelligence in 1956 convened by John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon at Dartmouth College proposing over two months that "every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it", the symbolic/GOFAI (Good Old-Fashioned Artificial Intelligence) era dominated by hand-coded knowledge representations, production rule systems, and search algorithms (GPS — General Problem Solver Newell and Simon 1957 implementing means-ends analysis; DENDRAL 1965 Feigenbaum Stanford expert system for chemical structure elucidation demonstrating knowledge engineering feasibility; MYCIN 1972 Stanford medical diagnosis expert system achieving 65% accuracy on bacteraemia/meningitis, outperforming junior physicians; LISP and PROLOG as dominant AI languages; resolution theorem proving Robinson 1965; frames and semantic networks Minsky 1975/Brachman 1979), the First AI Winter 1974–1980 triggered by the 1973 Lighthill Report commissioned by the UK Science Research Council (James Lighthill concluding AI had failed to deliver on its promises, recommending defunding most academic AI research in Britain) and the US DARPA withdrawal from speech research following the Alpac 1966 report condemning machine translation costs, the resurgence via expert systems commercialisation 1980–1987 (Symbolics LISP machines, DEC XCON/R1 generating \$40M/year savings by 1986, Japanese Fifth Generation Computer project 1982 investing ¥57B in Prolog-based parallel machines aiming to leapfrog Western AI, over 2,500 expert system shells deployed in Fortune 500 companies by 1984), the Second AI Winter 1987–1993 caused by collapse of the Lisp machine hardware market (Symbolics and LMI bankrupt by 1990), expert system maintenance brittleness (knowledge acquisition bottleneck, inability to handle uncertainty robustly, poor generalisation outside narrow domains), and the strategic failure of the Fifth Generation project to achieve natural language processing and commonsense reasoning, the connectionist revival and subsymbolic paradigm (Perceptrons Rosenblatt 1958 → refuted by Minsky-Papert 1969 demonstrating XOR impossibility for single-layer networks → backpropagation rediscovery Rumelhart-Hinton-Williams 1986 enabling multilayer networks to learn feature representations through gradient descent, Boltzmann machines Hinton-Sejnowski 1983, recurrent networks Jordan 1986/Elman 1990, LeNet Yann LeCun 1989 applying convolutional networks to handwritten digit recognition achieving 1% test error on MNIST enabling the automated cheque-reading systems processing millions of US bank cheques by the mid-1990s), the statistical turn and kernel machines 1990s (SVMs Vapnik-Cortes 1995 providing principled maximum-margin classifiers with PAC-Bayesian generalisation bounds; random forests Breiman 2001; graphical models and Bayesian networks Pearl 1988 enabling probabilistic reasoning under uncertainty with exact/approximate inference algorithms), the Deep Learning revolution initiated by Hinton-Salakhutdinov 2006 demonstrating layer-wise pretraining of deep belief networks circumventing vanishing gradient, followed by Rectified Linear Units (ReLU Glorot-Bengio 2011 replacing sigmoid saturation) and dropout regularisation (Srivastava-Hinton 2014), reaching critical mass at ImageNet Large Scale Visual Recognition Challenge (ILSVRC) 2012 where AlexNet (Krizhevsky-Sutskever-Hinton University of Toronto trained on two GTX 580 3GB GPUs for five days) achieved 15.3% top-5 error versus the runner-up 26.2% — a 41% relative improvement that permanently shifted computer vision to deep convolutional networks and catalysed the GPU compute arms race, the reinforcement learning renaissance culminating in DeepMind's DQN 2013 (Mnih et al., human-level Atari play from pixels alone using Q-networks with experience replay and target networks) and AlphaGo March 2016 (Silver et al., policy and value networks trained via supervised learning on professional games then self-play MCTS defeating 9-dan professional Lee Sedol 4-1 in Seoul, estimated 10^170 legal positions in Go rendering exhaustive search infeasible — demonstrating AI [private] master humanity's most strategically demanding abstract game through self-supervised experience), the Transformer architecture (Vaswani et al. "Attention Is All You Need" NeurIPS 2017 Google Brain, replacing recurrent processing with parallel multi-head self-attention O(n²d) over sequence positions, enabling massively parallel GPU training and superior long-range dependency modelling, yielding BERT Devlin et al. 2018 Google bidirectional pre-training achieving state-of-the-art on 11 NLP benchmarks simultaneously), the GPT scaling trajectory (OpenAI GPT-1 Radford et al. 2018 117M parameters unsupervised pre-training + task-specific fine-tuning; GPT-2 Radford et al. 2019 1.5B parameters zero-shot task completion raising concerns about misuse leading to staged release; GPT-3 Brown et al. 2020 175B parameters few-shot in-context learning demonstrating emergent capabilities across arithmetic, translation, coding without gradient updates; GPT-4 OpenAI 2023 multimodal, reportedly ~1.8T parameters mixture-of-experts, passing bar exam at 90th percentile, achieving USMLE Step 1 at passing threshold, scoring 5 on AP exams across 14 subjects; GPT-4o OpenAI 2024 omni-modal real-time; GPT-4.1/o-series OpenAI 2025 extended context and reasoning; GPT-5 OpenAI May 2025 unifying instruct and reasoning modes with claimed 60%+ improvement on complex reasoning benchmarks over GPT-4o), the Chinchilla scaling laws (Hoffmann et al. Chinchilla DeepMind 2022 demonstrating that optimal compute allocation requires training-tokens ≈ 20× model-parameters, overturning the prevailing "bigger models always better" orthodoxy — Chinchilla 70B trained on 1.4T tokens outperforming Gopher 280B on virtually all benchmarks at one-quarter the parameter count, reshaping the industry toward data-efficient training regimes), Reinforcement Learning from Human Feedback (RLHF Christiano et al. 2017 OpenAI; InstructGPT Ouyang et al. 2022 demonstrating that 1.3B parameter model with RLHF outperforms 175B GPT-3 on human preference ratings; Constitutional AI Anthropic 2022 replacing RLHF's preference labelling with principle-guided self-critique; DPO Rafailov et al. Stanford 2023 reducing RLHF to supervised contrastive objective), the frontier evaluation ecosystem (MMLU Hendrycks et al. 2020 57-subject massive multitask language understanding; HumanEval Chen et al. 2021 functional code generation; BIG-Bench 2022 204 diverse tasks; HELM 2022 Stanford Holistic Evaluation; GPQA Diamond Rein et al. 2023 expert-level science PhD questions; ARC-AGI François Chollet 2019/2024 abstract pattern completion resisting memorisation; Humanity's Last Exam HLE Scale AI/CAIS 2025 2,500 expert-level questions across 50+ disciplines with frontier models scoring 3-8% at launch), and the contemporary AGI debate across five intellectual traditions: (1) Demis Hassabis (DeepMind/Google CEO) pragmatist incremental view that AGI is achievable within 5-10 years through a systems integration of planning, memory, world-models and language, exemplified by AlphaFold 2 solving protein folding (CASP14 2020 median GDT score 92.4 versus next-best 39.8, Nature 2021 structure predictions for 200M proteins published to the Protein Data Bank by 2022); (2) Richard Sutton's Bitter Lesson (2019 essay) asserting that general methods scaling compute always outperform methods that encode human knowledge, with implications that architecture and data > inductive bias; (3) Eliezer Yudkowsky (MIRI) existential risk position arguing AGI with misaligned values poses civilisation-level catastrophe risk, advocating for a pause or international treaty given near-zero probability of controlling a superintelligence, expressed in the 2023 Time op-ed calling for a six-month moratorium and "treat it like a nuclear weapon"; (4) Nick Bostrom's Superintelligence (2014 Oxford) instrumental convergence thesis showing any sufficiently capable goal-directed agent tends toward resource acquisition/self-preservation/goal-content integrity regardless of terminal objectives, informing the AI safety research programme; (5) Leopold Aschenbrenner's Situational Awareness (June 2024 self-published 165-page essay) projecting AGI by 2027 and superintelligence by 2030 based on extrapolated scaling curves, arguing that the US must treat AI as a national security priority comparable to the Manhattan Project, that compute clusters will reach 10²⁹ FLOP/s by 2030, and that AI laboratories will be targeted by state-level espionage — the essay circulated widely among Silicon Valley investors and policymakers, cited by Sam Altman and Elon Musk, though criticised by researchers including Yann LeCun for assuming that scaling current architectures reaches AGI; and (6) Ray Kurzweil's technoptimist trajectory asserting AGI by 2029 and the Singularity by 2045 in "The Singularity Is Nearer" (2024) based on exponential trends in compute density (Moore's Law), neural simulation costs, and the observed doubling of AI capability every 12-18 months, drawing on Kurzweil's Law of Accelerating Returns first articulated in "The Singularity Is Near" (2005), with the UK providing a distinctive national thread through: Alan Turing's wartime cryptanalysis at Bletchley Park (1939-1945, Bombe electromechanical decoders breaking Enigma, Colossus programmable electronic computer 1943 breaking Lorenz cipher, both predating ENIAC 1945), the Edinburgh University AI programme (Donald Michie Machine Intelligence laboratory 1965, FRED robot, PROLOG development by Robert Kowalski 1974), Cambridge University (Cambridge Language Research Unit 1955 pioneering machine translation, the Cambridge Centre for the Future of Intelligence CFI founded 2016 with a £10M Leverhulme Trust grant under the directorship of Stephen Cave studying long-term AI risk), Oxford University (Nick Bostrom founding the Future of Humanity Institute FHI 1995, the Oxford Internet Institute, the Governance of AI programme), DeepMind founded London 2010 by Demis Hassabis, Shane Legg and Mustafa Suleyman (acquired by Google 2014 for ~£400M, now Google DeepMind with 3,000+ staff across London/Paris/Mountain View), the Alan Turing Institute (national institute for data science and AI, founded 2015 under Francis Collins Chair, headquartered British Library London, cross-university partnership UCL/Cambridge/Edinburgh/Oxford/Warwick/Manchester), and the AI Safety Institute (AISI, founded November 2023 under Rishi Sunak at Bletchley Park during the UK AI Safety Summit co-hosted with US, renamed Frontier AI Safety Institute 2025, testing frontier models including GPT-4/Claude/Gemini for dangerous capabilities with published evaluations demonstrating emergent expert-level cyber/CBRN knowledge by Q1 2025).
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:HistoryAndPathToAGI
@@ -1096,15 +720,15 @@ public: true
 
   - ### Era I: Dartmouth and the Symbolic Programme (1956–1973)
 
-	  The formal founding of AI as a scientific discipline occurred at the **Dartmouth Summer Research Project on Artificial Intelligence** (June–August 1956), convened by **John McCarthy** (who coined the term "artificial intelligence" to distinguish his approach from Norbert Wiener's cybernetics), **Marvin Minsky**, **Nathaniel Rochester** (IBM), and **Claude Shannon**. The workshop proposal's operating assumption — that intelligence could be "so precisely described that a machine can be made to simulate it" — proved optimistic, but it established the research community and agenda.
+	  The formal founding of AI as a scientific discipline occurred at the **Dartmouth Summer Research Project on Artificial Intelligence** (June–August 1956), convened by **John McCarthy** (who coined the term "artificial intelligence" to distinguish his approach from Norbert Wiener's cybernetics), **Marvin Minsky**, **Nathaniel Rochester** (IBM), and **Claude Shannon**. The workshop proposal's operating assumption — that intelligence [private] be "so precisely described that a machine can be made to simulate it" — proved optimistic, but it established the research community and agenda.
 
-	  The symbolic era's most ambitious programme was **Newell and Simon's** General Problem Solver (GPS, 1957), implementing means-ends analysis as a universal heuristic problem solver. Their "Physical Symbol System Hypothesis" (1976) formalised the theoretical claim: intelligence requires only the manipulation of symbol structures, with humans and computers implementing the same underlying computational substrate. The practical engineering success stories came from narrow domains: **DENDRAL** (1965, Feigenbaum/Buchanan/Lederberg at Stanford) encoded mass spectrometry knowledge to infer molecular structure — the first operational expert system demonstrating that encoded domain expertise could match or exceed human specialist performance. **SHRDLU** (Winograd 1972) demonstrated apparently sophisticated natural language understanding within a micro-world of coloured blocks — a demonstration subsequently criticised for exploiting the closed-world assumption rather than representing genuine linguistic comprehension.
+	  The symbolic era's most ambitious programme was **Newell and Simon's** General Problem Solver (GPS, 1957), implementing means-ends analysis as a universal heuristic problem solver. Their "Physical Symbol System Hypothesis" (1976) formalised the theoretical claim: intelligence requires only the manipulation of symbol structures, with humans and computers implementing the same underlying computational substrate. The practical engineering success stories came from narrow domains: **DENDRAL** (1965, Feigenbaum/Buchanan/Lederberg at Stanford) encoded mass spectrometry knowledge to infer molecular structure — the first operational expert system demonstrating that encoded domain expertise [private] match or exceed human specialist performance. **SHRDLU** (Winograd 1972) demonstrated apparently sophisticated natural language understanding within a micro-world of coloured blocks — a demonstration subsequently criticised for exploiting the closed-world assumption rather than representing genuine linguistic comprehension.
 
-	  The era's optimism, expressed in Simon's 1965 prediction that "machines will be capable, within twenty years, of doing any work a man can do" and Minsky's 1967 claim that "within a generation... the problem of creating artificial intelligence will be substantially solved", was not borne out. The **First AI Winter** was precipitated by two external reviews: the US ALPAC report (1966) on machine translation declaring that "there is no immediate or foreseeable prospect of useful machine translation" and recommending cutting DARPA MT funding; and the UK **Lighthill Report** (1973, Sir James Lighthill for the Science Research Council) concluding that AI had delivered "very limited results" in robotics, language processing, and general problem solving, recommending defunding most British academic AI. Minsky-Papert's "Perceptrons" (1969) also delivered a technical body blow to connectionism, proving that single-layer networks could not compute XOR — widely (though incorrectly) interpreted as refuting neural approaches entirely.
+	  The era's optimism, expressed in Simon's 1965 prediction that "machines will be capable, within twenty years, of doing any work a man can do" and Minsky's 1967 claim that "within a generation... the problem of creating artificial intelligence will be substantially solved", was not borne out. The **First AI Winter** was precipitated by two external reviews: the US ALPAC report (1966) on machine translation declaring that "there is no immediate or foreseeable prospect of useful machine translation" and recommending cutting DARPA MT funding; and the UK **Lighthill Report** (1973, Sir James Lighthill for the Science Research Council) concluding that AI had delivered "very limited results" in robotics, language processing, and general problem solving, recommending defunding most British academic AI. Minsky-Papert's "Perceptrons" (1969) also delivered a technical body blow to connectionism, proving that single-layer networks [private] not compute XOR — widely (though incorrectly) interpreted as refuting neural approaches entirely.
 
   - ### Era II: Expert Systems Commercialisation and the Second Winter (1980–1993)
 
-	  The 1980s brought a second wave of optimism, this time grounded in commercial deployment rather than theoretical promise. **MYCIN** (Shortliffe, Stanford, completed 1976, published 1984) demonstrated that a rule-based expert system with roughly 600 IF-THEN rules could diagnose bacteraemia and meningitis at 65% accuracy — outperforming clinical residents at 42-52% in controlled trials. **XCON/R1** (McDermott, Carnegie Mellon/DEC, 1980) configured VAX computer orders using 2,500 rules and generated \$40M/year savings by 1986. By 1988, an estimated 2,000 expert systems were in operation in US Fortune 500 companies.
+	  The 1980s brought a second wave of optimism, this time grounded in commercial deployment rather than theoretical promise. **MYCIN** (Shortliffe, Stanford, completed 1976, published 1984) demonstrated that a rule-based expert system with roughly 600 IF-THEN rules [private] diagnose bacteraemia and meningitis at 65% accuracy — outperforming clinical residents at 42-52% in controlled trials. **XCON/R1** (McDermott, Carnegie Mellon/DEC, 1980) configured VAX computer orders using 2,500 rules and generated \$40M/year savings by 1986. By 1988, an estimated 2,000 expert systems were in operation in US Fortune 500 companies.
 
 	  Japan's **Fifth Generation Computer Project** (1982-1992, MITI, ¥57 billion / ~\$400M), aiming to build Prolog-based parallel computers capable of natural language processing and commonsense reasoning by 1991, triggered defensive spending: the US launched the Strategic Computing Initiative (\$1B DARPA), the UK established the Alvey Programme (£350M), and Europe funded ESPRIT. None delivered their promises.
 
@@ -1116,24 +740,24 @@ public: true
 
 	  The 1990s saw the rise of **statistical approaches** across NLP and ML: hidden Markov models (HMMs) for speech recognition replacing hand-crafted phonological rules; Support Vector Machines (Vapnik-Cortes 1995) providing principled maximum-margin classification with theoretical PAC-learning guarantees; probabilistic graphical models (Bayesian networks Pearl 1988, dynamic Bayes nets) enabling uncertainty-aware reasoning. **Yann LeCun's LeNet** (1989, AT&T Bell Labs) applied convolutional networks to cheque OCR — handwritten digit recognition at 1% test error on MNIST — and was deployed in systems reading roughly 10% of all cheques in the United States by the mid-1990s, constituting the first genuinely large-scale commercial neural network deployment.
 
-	  The pivotal connectionist moment came in 2006 when **Geoffrey Hinton and Ruslan Salakhutdinov** demonstrated in Science that deep belief networks could be trained layer-by-layer through an unsupervised pretraining phase, circumventing the vanishing gradient problem that had stalled deep networks. The subsequent convergence of three enabling conditions — **GPUs** (NVIDIA's CUDA enabling parallel matrix arithmetic on consumer graphics cards), **large datasets** (ImageNet Fei-Fei Li 2009, 14M labelled images), and **algorithmic improvements** (ReLU activations Glorot-Bengio 2011; dropout Srivastava-Hinton 2014; batch normalisation Ioffe-Szegedy 2015) — triggered the decisive breakthrough.
+	  The pivotal connectionist moment came in 2006 when **Geoffrey Hinton and Ruslan Salakhutdinov** demonstrated in Science that deep belief networks [private] be trained layer-by-layer through an unsupervised pretraining phase, circumventing the vanishing gradient problem that had stalled deep networks. The subsequent convergence of three enabling conditions — **GPUs** (NVIDIA's CUDA enabling parallel matrix arithmetic on consumer graphics cards), **large datasets** (ImageNet Fei-Fei Li 2009, 14M labelled images), and **algorithmic improvements** (ReLU activations Glorot-Bengio 2011; dropout Srivastava-Hinton 2014; batch normalisation Ioffe-Szegedy 2015) — triggered the decisive breakthrough.
 
   - ### Era IV: ImageNet Moment and the Deep Learning Decade (2012–2017)
 
 	  The **ILSVRC 2012** competition was the field's inflection point. **AlexNet** (Alex Krizhevsky, Ilya Sutskever, Geoffrey Hinton, University of Toronto) achieved 15.3% top-5 test error versus 26.2% for the runner-up: a 41% relative reduction that was unprecedented in any computer vision benchmark. AlexNet's architecture — five convolutional layers, three fully connected, ReLU activations, dropout regularisation, trained on two NVIDIA GTX 580 3GB GPUs for five days — was not qualitatively novel but demonstrated at scale that depth, data, and compute compounded to produce qualitative performance jumps. Every subsequent ILSVRC winner used deep CNNs: ZFNet 2013, VGGNet 2014 (16-19 layers, Oxford VGG group), GoogLeNet/Inception 2014 (22 layers, Google), ResNet 2015 (152 layers, Microsoft Research Asia, introducing skip connections achieving 3.57% top-5 error vs 5% human).
 
-	  Simultaneously, **reinforcement learning** underwent renaissance. DeepMind's **DQN** (Mnih et al. 2013/2015, Nature) achieved human-level performance across 49 Atari games from raw pixel inputs using only Q-network function approximation with experience replay and target networks, demonstrating that a single architecture could learn multiple distinct tasks from unstructured sensory data — the first genuine broad generality in machine learning.
+	  Simultaneously, **reinforcement learning** underwent renaissance. DeepMind's **DQN** (Mnih et al. 2013/2015, Nature) achieved human-level performance across 49 Atari games from raw pixel inputs using only Q-network function approximation with experience replay and target networks, demonstrating that a single architecture [private] learn multiple distinct tasks from unstructured sensory data — the first genuine broad generality in machine learning.
 
 	  The field's most public milestone came in March 2016: **AlphaGo** (Silver et al., DeepMind) defeated 9-dan professional Go player Lee Sedol 4 games to 1 in Seoul, broadcast globally and watched by an estimated 200 million viewers across Asia. Go's state space (~10^170 legal positions) had been considered beyond any tree search for decades; AlphaGo's combination of policy networks (trained on 160,000 human professional games then refined by self-play) and Monte Carlo Tree Search demonstrated that superhuman strategic performance was achievable in the paradigmatic example of human intuitive expertise. AlphaGo Zero (2017) surpassed AlphaGo using only self-play from random initialisation — no human game data — further demonstrating the power of pure experience-driven learning. AlphaZero (2018) extended this to chess and shogi, defeating the world's strongest chess engine Stockfish 28-0 with 72 draws, having trained for only 9 hours.
 
   - ### Era V: The Transformer and Language Model Scaling (2017–2023)
 
-	  The **Transformer architecture** (Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin, "Attention Is All You Need", NeurIPS 2017, Google Brain) replaced recurrent processing with parallel multi-head self-attention, allowing all positions in a sequence to attend to all other positions simultaneously. This eliminated the recurrent bottleneck that had constrained sequence length and parallelism: Transformers could be trained on orders of magnitude more data with orders of magnitude more compute than RNNs/LSTMs, and scaled gracefully with both. BERT (Devlin, Chang, Lee, Toutanova, 2018, Google) demonstrated bidirectional pre-training on 3.3B words achieving state-of-the-art on 11 NLP benchmarks simultaneously, establishing pre-training + fine-tuning as the dominant paradigm.
+	  The **Transformer architecture** (Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, Polosukhin, "Attention Is All You Need", NeurIPS 2017, Google Brain) replaced recurrent processing with parallel multi-head self-attention, allowing all positions in a sequence to attend to all other positions simultaneously. This eliminated the recurrent bottleneck that had constrained sequence length and parallelism: Transformers [private] be trained on orders of magnitude more data with orders of magnitude more compute than RNNs/LSTMs, and scaled gracefully with both. BERT (Devlin, Chang, Lee, Toutanova, 2018, Google) demonstrated bidirectional pre-training on 3.3B words achieving state-of-the-art on 11 NLP benchmarks simultaneously, establishing pre-training + fine-tuning as the dominant paradigm.
 
 	  OpenAI's **GPT series** demonstrated that scale alone in a simple autoregressive (predict next token) objective, applied to web-scale text, produces progressively more capable and general models:
 	  - **GPT-1** (Radford et al. 2018): 117M parameters; few-shot classification improvement on 9 of 12 NLP benchmarks
 	  - **GPT-2** (Radford et al. 2019): 1.5B parameters; zero-shot task completion including coherent multi-paragraph story generation; initial staged release citing misuse concerns — the first time an AI lab cited dual-use risk as reason to delay publication
-	  - **GPT-3** (Brown et al. 2020, NeurIPS): 175B parameters; in-context few-shot learning across 42 benchmarks demonstrating emergent arithmetic, translation, code generation, and analogical reasoning without gradient updates — the technical demonstration that large language models could acquire task competence from demonstrations embedded in the prompt alone
+	  - **GPT-3** (Brown et al. 2020, NeurIPS): 175B parameters; in-context few-shot learning across 42 benchmarks demonstrating emergent arithmetic, translation, code generation, and analogical reasoning without gradient updates — the technical demonstration that large language models [private] acquire task competence from demonstrations embedded in the prompt alone
 	  - **GPT-4** (OpenAI technical report 2023): multimodal (image + text); passes bar exam at ~90th percentile, USMLE Step 1 at passing threshold, scores 5 on 14 AP examinations, achieves expert-level performance in domains from chemistry to philosophy; architecture not disclosed but widely estimated ~1.8T parameters mixture-of-experts
 	  - **GPT-4o** (OpenAI 2024): unified omni-modal real-time audio/image/text processing
 	  - **GPT-4.5/o1/o3** (OpenAI 2024-2025): dedicated reasoning-through-chain-of-thought series with extended test-time compute
@@ -1145,7 +769,7 @@ public: true
 
   - ### Era VI: RLHF, Alignment, and the Capability-Safety Tension (2022–2026)
 
-	  **Reinforcement Learning from Human Feedback (RLHF)** (Christiano et al. 2017 OpenAI, applied at scale in InstructGPT Ouyang et al. 2022) provided the key technique converting raw language model completions into instruction-following assistants aligned with human preferences. The mechanism: (1) supervised fine-tuning on demonstration data; (2) training a reward model on human comparative preferences between model outputs; (3) optimising the policy against the reward model via PPO while penalising KL divergence from the SFT policy. InstructGPT-1.3B consistently outperformed GPT-3-175B on human preference evaluations, demonstrating that alignment fine-tuning could dominate raw scale.
+	  **Reinforcement Learning from Human Feedback (RLHF)** (Christiano et al. 2017 OpenAI, applied at scale in InstructGPT Ouyang et al. 2022) provided the key technique converting raw language model completions into instruction-following assistants aligned with human preferences. The mechanism: (1) supervised fine-tuning on demonstration data; (2) training a reward model on human comparative preferences between model outputs; (3) optimising the policy against the reward model via PPO while penalising KL divergence from the SFT policy. InstructGPT-1.3B consistently outperformed GPT-3-175B on human preference evaluations, demonstrating that alignment fine-tuning [private] dominate raw scale.
 
 	  **ChatGPT** (OpenAI, November 2022) deployed an RLHF-trained GPT-3.5 as a consumer conversational assistant, reaching 100M users in 57 days — the fastest consumer product adoption in history — and triggering the 2023 AI investment and deployment wave that would make "AI" the dominant economic narrative of 2023-2025. The model's apparent conversational fluency, helpfulness, and breadth of knowledge catalysed simultaneous public enthusiasm and concern: Geoffrey Hinton resigned from Google in May 2023 citing AI safety concerns; the FLI open letter "Pause Giant AI Experiments" (March 2023) attracted 30,000+ signatories; the UK hosted the first **Bletchley Park AI Safety Summit** (November 2023) attended by representatives from 28 nations plus the EU, producing the Bletchley Declaration on frontier AI safety and launching the AI Safety Institute.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environmental Understanding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:environmental-understanding:d83d3aab14fb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9122ad63c6763f09f0537c944c03a732b03a3b1a7632b42d5b91fe034d4b092d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Perception]]",
-      "resolved": "urn:visionflow:linked:perception",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mobile Manipulation]]",
-      "resolved": "urn:visionflow:linked:mobile-manipulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Environment]]",
-      "resolved": "urn:visionflow:linked:environment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Scene Understanding]]",
-      "resolved": "urn:visionflow:linked:scene-understanding",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Environmental understanding is the capability of a robot or autonomous system to perceive, interpret, and build a usable model of its surroundings from sensor data.

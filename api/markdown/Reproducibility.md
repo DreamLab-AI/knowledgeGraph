@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reproducibility
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,46 +159,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reproducibility:16cb8a02338a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:263bb723692d9a87974d158235545a69bda6f5a7a46547b400da9075d976ad00"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Replication]]",
-      "resolved": "urn:visionflow:linked:replication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robustness]]",
-      "resolved": "urn:visionflow:linked:robustness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensitivity]]",
-      "resolved": "urn:visionflow:linked:sensitivity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quality Assurance]]",
-      "resolved": "urn:visionflow:linked:quality-assurance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BitVM
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bit-vm:c3fe1d3cdbbb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c213de2647f5ebea9fcffbc72a8f539ddc071b6132c209cfe2a4370e617c2b3b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Taproot]]",
-      "resolved": "urn:visionflow:linked:taproot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fraud Proof]]",
-      "resolved": "urn:visionflow:linked:fraud-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 2 Scaling]]",
-      "resolved": "urn:visionflow:linked:layer-2-scaling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Script]]",
-      "resolved": "urn:visionflow:linked:bitcoin-script",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://bitvm.org]]",
-      "resolved": "urn:visionflow:linked:https-bitvm-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://github.com/BitVM/BitVM]]",
-      "resolved": "urn:visionflow:linked:https-github-com-bit-vm-bit-vm",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - BitVM is a proposed approach for expressing complex computations that can be verified on Bitcoin without changing its consensus rules. It uses fraud proofs and challenge-response interactions.

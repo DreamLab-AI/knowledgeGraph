@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Hypertext Transfer Protocol
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

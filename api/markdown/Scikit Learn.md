@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scikit Learn
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -147,6 +143,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Scikit-learn is an open-source Python library providing a unified, consistent API for classical machine learning algorithms covering classification, regression, clustering, dimensionality reduction and model selection. Built on NumPy and SciPy, it emphasises clean estimator interfaces, reproducible pipelines and rigorous evaluation tooling rather than deep learning. It is one of the most widely used libraries for non-neural machine learning, data science education and rapid prototyping.
   - Related core concepts: [[Machine Learning]] [[Python]] [[Classification]] [[Regression]] [[Clustering]]

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Ethics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Digital Ethics",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:ethics", "vc:label": "Ethics"},
-    {"@id": "urn:visionflow:linked:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:value-sensitive-design", "vc:label": "Value-Sensitive Design"},
-    {"@id": "urn:visionflow:linked:ieee-7000", "vc:label": "IEEE 7000"}
+    {
+      "@id": "urn:visionflow:linked:ethics",
+      "vc:label": "Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:value-sensitive-design",
+      "vc:label": "Value-Sensitive Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:ieee-7000",
+      "vc:label": "IEEE 7000"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,16 +50,34 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:value-sensitive-design", "label": "Value-Sensitive Design"}
+      {
+        "@id": "urn:ngm:class:value-sensitive-design",
+        "label": "Value-Sensitive Design"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ethical-design-standard", "label": "Ethical Design Standard"},
-      {"@id": "urn:ngm:class:ieee-7000", "label": "IEEE 7000"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:digital-governance", "label": "Digital Governance"}
+      {
+        "@id": "urn:ngm:class:ethical-design-standard",
+        "label": "Ethical Design Standard"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-7000",
+        "label": "IEEE 7000"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
     ]
   },
   "quality": 0.8,

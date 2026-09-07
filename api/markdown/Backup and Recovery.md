@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Backup and Recovery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,4 +167,3 @@ public: true
   - In enterprise environments, backup orchestration platforms such as Veeam, Commvault, and Rubrik provide unified management across on-premises, virtualised, and multi-cloud environments. Cloud-native services including AWS Backup, Azure Backup, and Google Cloud Backup and DR handle backup lifecycle management for cloud-native workloads. Immutable storage targets — using object lock or WORM media — protect backups from ransomware encryption.
 
   - By 2024–2025, backup and recovery has increasingly adopted AI-driven anomaly detection to identify corruption or unexpected data change before backup, improving RPO. Continuous data protection (CDP) approaches that capture every write to a journal have become more accessible. Regulatory requirements under frameworks such as DORA (Digital Operational Resilience Act) in the EU have made documented, tested backup and recovery procedures mandatory for financial institutions.
-

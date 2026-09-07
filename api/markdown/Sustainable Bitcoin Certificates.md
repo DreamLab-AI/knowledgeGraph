@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sustainable Bitcoin Certificates
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Sustainable Bitcoin certificates are tradable attestations that a defined quantity of bitcoin mining was powered by clean or low-carbon energy, allowing holders to claim the environmental attributes of that hashrate. They function analogously to renewable energy certificates, decoupling the green-energy claim from the mined coins so it can be sold to ESG-conscious buyers. The mechanism aims to channel capital toward decarbonising proof-of-work mining.",
   "domain": "blockchain",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sustainable-bitcoin-protocol", "label": "Sustainable Bitcoin Protocol"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}
+      {
+        "@id": "urn:ngm:class:sustainable-bitcoin-protocol",
+        "label": "Sustainable Bitcoin Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
     ]
   },
   "quality": 0.72

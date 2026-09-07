@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Voting System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,37 +57,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:voting-system:e3b96b5292f6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4e62a33e5c8ffbfb692a16325971214712c68589a652f963c17f4a3b246a3e14"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Governance Frameworks]]",
-      "resolved": "urn:visionflow:linked:governance-frameworks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance]]",
-      "resolved": "urn:visionflow:linked:governance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A voting system is a method for collecting and aggregating participants' preferences into a collective decision, used in governance, elections, and on-chain protocols.

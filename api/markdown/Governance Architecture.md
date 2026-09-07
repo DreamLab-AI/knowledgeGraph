@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Governance Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:governance-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:19078920110dbda15b21b5faa1bc6cb08e7c01d1ebbe888ca50b0c4996b619c5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Decentralised Decision Making]]",
-      "resolved": "urn:visionflow:linked:decentralised-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Platform Governance]]",
-      "resolved": "urn:visionflow:owl:class:platform-governance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The structural framework defining decision-making processes, authority distribution, and rule enforcement mechanisms within metaverse platforms, encompassing both centralised corporate governance models and decentralised blockchain-based systems using DAOs and smart contracts for community-driven management.

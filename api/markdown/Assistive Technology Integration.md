@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Assistive Technology Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,53 +7,194 @@ public: true
   "title": "Assistive Technology Integration",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:accessibility", "vc:label": "Accessibility"},
-    {"@id": "urn:visionflow:linked:accessibility-standard", "vc:label": "Accessibility Standard"},
-    {"@id": "urn:visionflow:linked:accessibility-audit-tool", "vc:label": "Accessibility Audit Tool"},
-    {"@id": "urn:visionflow:linked:accessibility-tree", "vc:label": "Accessibility Tree"},
-    {"@id": "urn:visionflow:linked:accessibility-captioning", "vc:label": "Accessibility Captioning"},
-    {"@id": "urn:visionflow:linked:haptic-feedback", "vc:label": "Haptic Feedback"},
-    {"@id": "urn:visionflow:linked:gesture-recognition", "vc:label": "Gesture Recognition"},
-    {"@id": "urn:visionflow:linked:inclusive-design", "vc:label": "Inclusive Design"},
-    {"@id": "urn:visionflow:linked:inclusive-xr-experience", "vc:label": "Inclusive Xr Experience"},
-    {"@id": "urn:visionflow:linked:inclusive-xr-design", "vc:label": "Inclusive Xr Design"},
-    {"@id": "urn:visionflow:linked:inclusive-participation", "vc:label": "Inclusive Participation"},
-    {"@id": "urn:visionflow:linked:accessible-experience", "vc:label": "Accessible Experience"},
-    {"@id": "urn:visionflow:linked:human-computer-interaction", "vc:label": "Human Computer Interaction"},
-    {"@id": "urn:visionflow:linked:universal-design", "vc:label": "Universal Design"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:multimodal-interaction", "vc:label": "Multimodal Interaction"},
-    {"@id": "urn:visionflow:linked:extended-reality", "vc:label": "Extended Reality (XR)"},
-    {"@id": "urn:visionflow:linked:augmented-reality", "vc:label": "Augmented Reality (AR)"},
-    {"@id": "urn:visionflow:linked:neural-xr-interfaces", "vc:label": "Neural XR Interfaces"},
-    {"@id": "urn:visionflow:linked:user-centred-design", "vc:label": "User Centred Design"},
-    {"@id": "urn:visionflow:linked:user-experience", "vc:label": "User Experience"},
-    {"@id": "urn:visionflow:linked:interaction-design", "vc:label": "Interaction Design"},
-    {"@id": "urn:visionflow:linked:participatory-design", "vc:label": "Participatory Design"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:digital-equity", "vc:label": "Digital Equity"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:khronos-openxr", "vc:label": "Khronos OpenXR"},
-    {"@id": "urn:visionflow:linked:openxr", "vc:label": "OpenXR"},
-    {"@id": "urn:visionflow:linked:augmented-connected-workforce", "vc:label": "Augmented Connected Workforce"},
-    {"@id": "urn:visionflow:linked:ethical-ai", "vc:label": "Ethical AI"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:edge-computing", "vc:label": "Edge Computing"},
-    {"@id": "urn:visionflow:linked:cognitive-accessibility", "vc:label": "Cognitive Accessibility"},
-    {"@id": "urn:visionflow:linked:captions", "vc:label": "Captions"},
-    {"@id": "urn:visionflow:linked:audio-description", "vc:label": "Audio Description"},
-    {"@id": "urn:visionflow:linked:alternative-text", "vc:label": "Alternative Text"},
-    {"@id": "urn:visionflow:linked:colour-contrast", "vc:label": "Colour Contrast"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:equitable-access", "vc:label": "Equitable Access"},
-    {"@id": "urn:visionflow:linked:bias-mitigation", "vc:label": "Bias Mitigation"},
-    {"@id": "urn:visionflow:linked:wearable-computing", "vc:label": "Wearable Computing"},
-    {"@id": "urn:visionflow:linked:spatial-computing", "vc:label": "Spatial Computing"},
-    {"@id": "urn:visionflow:linked:real-time-processing", "vc:label": "Real Time Processing"},
-    {"@id": "urn:visionflow:linked:telecollaboration", "vc:label": "Telecollaboration"}
+    {
+      "@id": "urn:visionflow:linked:accessibility",
+      "vc:label": "Accessibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:accessibility-standard",
+      "vc:label": "Accessibility Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:accessibility-audit-tool",
+      "vc:label": "Accessibility Audit Tool"
+    },
+    {
+      "@id": "urn:visionflow:linked:accessibility-tree",
+      "vc:label": "Accessibility Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:accessibility-captioning",
+      "vc:label": "Accessibility Captioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:haptic-feedback",
+      "vc:label": "Haptic Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:gesture-recognition",
+      "vc:label": "Gesture Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:inclusive-design",
+      "vc:label": "Inclusive Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:inclusive-xr-experience",
+      "vc:label": "Inclusive Xr Experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:inclusive-xr-design",
+      "vc:label": "Inclusive Xr Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:inclusive-participation",
+      "vc:label": "Inclusive Participation"
+    },
+    {
+      "@id": "urn:visionflow:linked:accessible-experience",
+      "vc:label": "Accessible Experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:universal-design",
+      "vc:label": "Universal Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-interaction",
+      "vc:label": "Multimodal Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-reality",
+      "vc:label": "Extended Reality (XR)"
+    },
+    {
+      "@id": "urn:visionflow:linked:augmented-reality",
+      "vc:label": "Augmented Reality (AR)"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-xr-interfaces",
+      "vc:label": "Neural XR Interfaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-centred-design",
+      "vc:label": "User Centred Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-experience",
+      "vc:label": "User Experience"
+    },
+    {
+      "@id": "urn:visionflow:linked:interaction-design",
+      "vc:label": "Interaction Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:participatory-design",
+      "vc:label": "Participatory Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-equity",
+      "vc:label": "Digital Equity"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:khronos-openxr",
+      "vc:label": "Khronos OpenXR"
+    },
+    {
+      "@id": "urn:visionflow:linked:openxr",
+      "vc:label": "OpenXR"
+    },
+    {
+      "@id": "urn:visionflow:linked:augmented-connected-workforce",
+      "vc:label": "Augmented Connected Workforce"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethical-ai",
+      "vc:label": "Ethical AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-accessibility",
+      "vc:label": "Cognitive Accessibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:captions",
+      "vc:label": "Captions"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-description",
+      "vc:label": "Audio Description"
+    },
+    {
+      "@id": "urn:visionflow:linked:alternative-text",
+      "vc:label": "Alternative Text"
+    },
+    {
+      "@id": "urn:visionflow:linked:colour-contrast",
+      "vc:label": "Colour Contrast"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:equitable-access",
+      "vc:label": "Equitable Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-mitigation",
+      "vc:label": "Bias Mitigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:wearable-computing",
+      "vc:label": "Wearable Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-processing",
+      "vc:label": "Real Time Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:telecollaboration",
+      "vc:label": "Telecollaboration"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -73,38 +209,106 @@ public: true
   "definition": "Assistive Technology Integration is the practice of embedding tools, software, and hardware designed to support people with disabilities into digital systems, applications, and physical environments so that those individuals can access and interact with technology equitably. It encompasses screen readers, alternative input devices, augmentative communication systems, and adaptive interfaces, requiring compliance with accessibility standards and universal design principles. Effective integration ensures that assistive technologies interoperate seamlessly with underlying platforms rather than operating as bolt-on afterthoughts. The discipline spans hardware-software co-design, API compatibility, and user-centred testing with disabled communities.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:accessibility",
+      "label": "Accessibility"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:universal-design", "label": "Universal Design"},
-      {"@id": "urn:ngm:class:accessibility-standard", "label": "Accessibility Standard"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:digital-equity", "label": "Digital Equity"}
+      {
+        "@id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-equity",
+        "label": "Digital Equity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:accessible-experience", "label": "Accessible Experience"},
-      {"@id": "urn:ngm:class:inclusive-xr-experience", "label": "Inclusive Xr Experience"},
-      {"@id": "urn:ngm:class:equitable-access", "label": "Equitable Access"},
-      {"@id": "urn:ngm:class:inclusive-participation", "label": "Inclusive Participation"}
+      {
+        "@id": "urn:ngm:class:accessible-experience",
+        "label": "Accessible Experience"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-xr-experience",
+        "label": "Inclusive Xr Experience"
+      },
+      {
+        "@id": "urn:ngm:class:equitable-access",
+        "label": "Equitable Access"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-participation",
+        "label": "Inclusive Participation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:gesture-recognition", "label": "Gesture Recognition"},
-      {"@id": "urn:ngm:class:accessibility-audit-tool", "label": "Accessibility Audit Tool"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-audit-tool",
+        "label": "Accessibility Audit Tool"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:accessibility-tree", "label": "Accessibility Tree"},
-      {"@id": "urn:ngm:class:user-centred-design", "label": "User Centred Design"},
-      {"@id": "urn:ngm:class:participatory-design", "label": "Participatory Design"}
+      {
+        "@id": "urn:ngm:class:accessibility-tree",
+        "label": "Accessibility Tree"
+      },
+      {
+        "@id": "urn:ngm:class:user-centred-design",
+        "label": "User Centred Design"
+      },
+      {
+        "@id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:wcag", "label": "WCAG"},
-      {"@id": "urn:ngm:class:aria", "label": "ARIA"}
+      {
+        "@id": "urn:ngm:class:wcag",
+        "label": "WCAG"
+      },
+      {
+        "@id": "urn:ngm:class:aria",
+        "label": "ARIA"
+      }
     ]
   },
   "quality": 0.9,
@@ -113,67 +317,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:assistive-technology-integration:e7c3a1b9f0d2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:assistive-technology-integration"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Accessibility]]", "resolved": "urn:visionflow:linked:accessibility", "kind": "ResolvedLink"},
-    {"raw": "[[Accessibility Standard]]", "resolved": "urn:visionflow:linked:accessibility-standard", "kind": "ResolvedLink"},
-    {"raw": "[[Accessibility Audit Tool]]", "resolved": "urn:visionflow:linked:accessibility-audit-tool", "kind": "ResolvedLink"},
-    {"raw": "[[Accessibility Tree]]", "resolved": "urn:visionflow:linked:accessibility-tree", "kind": "ResolvedLink"},
-    {"raw": "[[Accessibility Captioning]]", "resolved": "urn:visionflow:linked:accessibility-captioning", "kind": "ResolvedLink"},
-    {"raw": "[[Haptic Feedback]]", "resolved": "urn:visionflow:linked:haptic-feedback", "kind": "ResolvedLink"},
-    {"raw": "[[Gesture Recognition]]", "resolved": "urn:visionflow:linked:gesture-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Inclusive Design]]", "resolved": "urn:visionflow:linked:inclusive-design", "kind": "ResolvedLink"},
-    {"raw": "[[Inclusive Xr Experience]]", "resolved": "urn:visionflow:linked:inclusive-xr-experience", "kind": "ResolvedLink"},
-    {"raw": "[[Inclusive Xr Design]]", "resolved": "urn:visionflow:linked:inclusive-xr-design", "kind": "ResolvedLink"},
-    {"raw": "[[Inclusive Participation]]", "resolved": "urn:visionflow:linked:inclusive-participation", "kind": "ResolvedLink"},
-    {"raw": "[[Accessible Experience]]", "resolved": "urn:visionflow:linked:accessible-experience", "kind": "ResolvedLink"},
-    {"raw": "[[Human Computer Interaction]]", "resolved": "urn:visionflow:linked:human-computer-interaction", "kind": "ResolvedLink"},
-    {"raw": "[[Universal Design]]", "resolved": "urn:visionflow:linked:universal-design", "kind": "ResolvedLink"},
-    {"raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:linked:multimodal-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Multimodal Interaction]]", "resolved": "urn:visionflow:linked:multimodal-interaction", "kind": "ResolvedLink"},
-    {"raw": "[[Extended Reality (XR)]]", "resolved": "urn:visionflow:linked:extended-reality", "kind": "ResolvedLink"},
-    {"raw": "[[Augmented Reality (AR)]]", "resolved": "urn:visionflow:linked:augmented-reality", "kind": "ResolvedLink"},
-    {"raw": "[[Neural XR Interfaces]]", "resolved": "urn:visionflow:linked:neural-xr-interfaces", "kind": "ResolvedLink"},
-    {"raw": "[[User Centred Design]]", "resolved": "urn:visionflow:linked:user-centred-design", "kind": "ResolvedLink"},
-    {"raw": "[[User Experience]]", "resolved": "urn:visionflow:linked:user-experience", "kind": "ResolvedLink"},
-    {"raw": "[[Interaction Design]]", "resolved": "urn:visionflow:linked:interaction-design", "kind": "ResolvedLink"},
-    {"raw": "[[Participatory Design]]", "resolved": "urn:visionflow:linked:participatory-design", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "StubLink"},
-    {"raw": "[[Speech Recognition]]", "resolved": "urn:visionflow:linked:speech-recognition", "kind": "StubLink"},
-    {"raw": "[[Digital Equity]]", "resolved": "urn:visionflow:linked:digital-equity", "kind": "StubLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "StubLink"},
-    {"raw": "[[Khronos OpenXR]]", "resolved": "urn:visionflow:linked:khronos-openxr", "kind": "ResolvedLink"},
-    {"raw": "[[OpenXR]]", "resolved": "urn:visionflow:linked:openxr", "kind": "ResolvedLink"},
-    {"raw": "[[Augmented Connected Workforce]]", "resolved": "urn:visionflow:linked:augmented-connected-workforce", "kind": "ResolvedLink"},
-    {"raw": "[[Ethical AI]]", "resolved": "urn:visionflow:linked:ethical-ai", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Edge Computing]]", "resolved": "urn:visionflow:linked:edge-computing", "kind": "StubLink"},
-    {"raw": "[[Captions]]", "resolved": "urn:visionflow:linked:captions", "kind": "ResolvedLink"},
-    {"raw": "[[Audio Description]]", "resolved": "urn:visionflow:linked:audio-description", "kind": "ResolvedLink"},
-    {"raw": "[[Alternative Text]]", "resolved": "urn:visionflow:linked:alternative-text", "kind": "ResolvedLink"},
-    {"raw": "[[Colour Contrast]]", "resolved": "urn:visionflow:linked:colour-contrast", "kind": "ResolvedLink"},
-    {"raw": "[[Equitable Access]]", "resolved": "urn:visionflow:linked:equitable-access", "kind": "ResolvedLink"},
-    {"raw": "[[Bias Mitigation]]", "resolved": "urn:visionflow:linked:bias-mitigation", "kind": "StubLink"},
-    {"raw": "[[Wearable Computing]]", "resolved": "urn:visionflow:linked:wearable-computing", "kind": "StubLink"},
-    {"raw": "[[Spatial Computing]]", "resolved": "urn:visionflow:linked:spatial-computing", "kind": "StubLink"},
-    {"raw": "[[Real Time Processing]]", "resolved": "urn:visionflow:linked:real-time-processing", "kind": "StubLink"},
-    {"raw": "[[Telecollaboration]]", "resolved": "urn:visionflow:linked:telecollaboration", "kind": "ResolvedLink"},
-    {"raw": "[[Cognitive Accessibility]]", "resolved": "urn:visionflow:linked:cognitive-accessibility", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Key Aggregation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -125,6 +121,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Key Aggregation is a cryptographic technique that combines multiple individual public keys into a single aggregate public key, against which a combined signature can be verified as though produced by one signer. It is central to modern multi-signature schemes such as MuSig2, where several parties jointly produce one compact signature indistinguishable from a single-key signature. Key aggregation improves privacy, reduces on-chain footprint and lowers verification cost in distributed signing protocols.
   - Related core concepts: [[Cryptographic Protocol]] [[Multi-Signature]] [[Schnorr Signature]] [[Public-Key Cryptography]] [[Digital Signature]]

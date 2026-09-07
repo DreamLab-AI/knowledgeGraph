@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hyperlane
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hyperlane:d831013ba91d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d6b3efe47cfd41067a9759849196ae092573ff8b66d0c10a2e5b4b718af801b6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Interoperability]]",
-      "resolved": "urn:visionflow:linked:blockchain-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bridge]]",
-      "resolved": "urn:visionflow:linked:bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Bridge]]",
-      "resolved": "urn:visionflow:linked:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://hyperlane.xyz]]",
-      "resolved": "urn:visionflow:linked:https-hyperlane-xyz",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.hyperlane.xyz]]",
-      "resolved": "urn:visionflow:linked:https-docs-hyperlane-xyz",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hyperlane is an interoperability protocol that allows smart contracts on different blockchains to send messages and transfer assets between chains. It supports permissionless deployment to new chains.

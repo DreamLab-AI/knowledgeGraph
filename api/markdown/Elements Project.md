@@ -1,60 +1,118 @@
----
-public: true
----
-
-# Elements Project
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:elements-project", "@type":"Page", "title":"Elements Project", "vc:slug":"elements-project", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:elements-project",
+  "@type": "Page",
+  "title": "Elements Project",
+  "vc:slug": "elements-project",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:elements-project",
-  "@type":"Class",
-  "label":"Elements Project",
-  "definition":"The Elements Project is an open-source blockchain platform, derived from Bitcoin Core, that serves as a testbed and reference implementation for advanced features such as confidential transactions, asset issuance, and federated sidechains. Maintained primarily by Blockstream, it provides the codebase underpinning the Liquid Network and allows developers to experiment with extensions that may later be proposed for Bitcoin itself. It packages cryptographic enhancements like confidential assets and amounts into a deployable, Bitcoin-compatible client.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:open-source-software","label":"Open Source Software"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:blockstream","label":"Blockstream"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:elements-project",
+  "@type": "Class",
+  "label": "Elements Project",
+  "definition": "The Elements Project is an open-source blockchain platform, derived from Bitcoin Core, that serves as a testbed and reference implementation for advanced features such as confidential transactions, asset issuance, and federated sidechains. Maintained primarily by Blockstream, it provides the codebase underpinning the Liquid Network and allows developers to experiment with extensions that may later be proposed for Bitcoin itself. It packages cryptographic enhancements like confidential assets and amounts into a deployable, Bitcoin-compatible client.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:open-source-software",
+      "label": "Open Source Software"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockstream",
+        "label": "Blockstream"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:bitcoin-proof-of-work-protocol-core","label":"Bitcoin Core"},
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:bitcoin-proof-of-work-protocol-core","label":"Bitcoin Core"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
+        "label": "Bitcoin Core"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:confidential-transactions","label":"Confidential Transactions"},
-      {"@id":"urn:ngm:class:sidechain","label":"Sidechain"},
-      {"@id":"urn:ngm:class:segregated-witness","label":"Segregated Witness"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:liquid-network","label":"Liquid Network"},
-      {"@id":"urn:ngm:class:confidential-transactions","label":"Confidential Transactions"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:sidechain","label":"Sidechain"},
-      {"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:blockstream","label":"Blockstream"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:blockstream",
+        "label": "Blockstream"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:bitcoin","label":"Bitcoin"},
-      {"@id":"urn:ngm:class:schnorr-signature","label":"Schnorr Signature"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:liquid-network","label":"Liquid Network"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

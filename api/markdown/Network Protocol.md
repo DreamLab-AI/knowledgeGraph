@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,57 +200,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:network-protocol:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b3e94a63b968823a0f27714b9a90dcb328ceb0a7d96429125efb53f6e6bf6174"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Transmission]]",
-      "resolved": "urn:visionflow:linked:data-transmission",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Network Communication]]",
-      "resolved": "urn:visionflow:linked:network-communication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI_Domain_Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InfrastructureDomain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures. Protocols are organized into layered architectures such as the OSI model (7 layers) and TCP/IP model (4 layers), each layer handling specific aspects of network communication.

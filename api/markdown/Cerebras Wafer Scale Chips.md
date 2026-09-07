@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cerebras Wafer Scale Chips
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "cerebras-wafer-scale-chips",
   "title": "Cerebras Wafer Scale Chips",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Hardware Infrastructure", "GPT-5.3 Codex Spark"],
+  "vc:outboundWikilinks": [
+    "AI Hardware Infrastructure",
+    "GPT-5.3 Codex Spark"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-hardware-infrastructure", "label": "AI Hardware Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-hardware-infrastructure",
+      "label": "AI Hardware Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gpt-53-codex-spark", "label": "GPT-5.3 Codex Spark"}, {"@id": "urn:ngm:class:ai-hardware-infrastructure", "label": "AI Hardware Infrastructure"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpt-53-codex-spark",
+        "label": "GPT-5.3 Codex Spark"
+      },
+      {
+        "@id": "urn:ngm:class:ai-hardware-infrastructure",
+        "label": "AI Hardware Infrastructure"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

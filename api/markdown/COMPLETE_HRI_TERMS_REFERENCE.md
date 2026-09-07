@@ -1,8 +1,3 @@
----
-public: true
----
-
-# COMPLETE_HRI_TERMS_REFERENCE
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,16 +87,34 @@ public: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "quality": 0.4,
@@ -112,77 +125,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:complete-hri-terms-reference:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9e1cd53b67ad0dca5162b4e1c38d231c10796750613a24395186142823f5d5af"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Behavioural Patterns]]",
-      "resolved": "urn:visionflow:linked:behavioural-patterns",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CCPA (California Consumer Privacy Act)]]",
-      "resolved": "urn:visionflow:linked:ccpa-california-consumer-privacy-act",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Communication Protocols]]",
-      "resolved": "urn:visionflow:linked:communication-protocols",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Engagement Modalities]]",
-      "resolved": "urn:visionflow:linked:engagement-modalities",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR (General Data Protection Regulation)]]",
-      "resolved": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
-      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Robot Interaction]]",
-      "resolved": "urn:visionflow:owl:class:human-robot-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A structured terminology reference documenting standardised vocabulary for [[Human Robot Interaction]], encompassing [[Communication Protocols]], [[Behavioural Patterns]], and [[Engagement Modalities]]. This reference enables consistent annotation and semantic understanding of interaction contexts across robotic and autonomous systems.

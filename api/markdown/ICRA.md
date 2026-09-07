@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ICRA
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,42 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:icra:e4aac87637f4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6cf6c99bf345be02d2934500fda6c4f74ecfcb2d800d0792f6a6b2b5fdda8a28"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IROS]]",
-      "resolved": "urn:visionflow:linked:iros",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mobile Manipulation]]",
-      "resolved": "urn:visionflow:linked:mobile-manipulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ICRA, the International Conference on Robotics and Automation, is an annual academic conference organised by the IEEE Robotics and Automation Society.

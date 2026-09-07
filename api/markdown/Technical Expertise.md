@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Technical Expertise
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Technical expertise is the specialised knowledge, skill, and practical judgement required to design, build, or operate within a complex technical domain. It is a prerequisite and a gating factor for advanced work, and its scarcity can both enable progress and act as a barrier to misuse. The level and distribution of expertise materially affects how quickly capabilities such as AI development or biotechnology proliferate.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-development", "label": "AI Development"},
-      {"@id": "urn:ngm:class:bio-terror", "label": "Bio Terror"}
+      {
+        "@id": "urn:ngm:class:ai-development",
+        "label": "AI Development"
+      },
+      {
+        "@id": "urn:ngm:class:bio-terror",
+        "label": "Bio Terror"
+      }
     ]
   },
   "quality": 0.72

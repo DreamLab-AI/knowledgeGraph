@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RDF Store
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rdf-store:ed81b17ab5a8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e6004a3d670df2ab286ec8241473a4f6bf23961fee0eb5693c0ac2a281c48278"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RDF]]",
-      "resolved": "urn:visionflow:linked:rdf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SPARQL]]",
-      "resolved": "urn:visionflow:linked:sparql",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Integration]]",
-      "resolved": "urn:visionflow:linked:data-integration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Linked Data]]",
-      "resolved": "urn:visionflow:linked:linked-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Interoperability]]",
-      "resolved": "urn:visionflow:linked:semantic-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.w3.org/TR/sparql11-query/]]",
-      "resolved": "urn:visionflow:linked:https-www-w-3-org-tr-sparql-11-query",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A database designed to store and query data expressed as Resource Description Framework triples, typically supporting the SPARQL query language. Also called a triplestore, it manages subject-predicate-object statements rather than rows and tables.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ARC-AGI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -171,243 +166,100 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"},
-    {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"}
+    {
+      "@id": "urn:ngm:class:benchmarks",
+      "label": "Benchmarks"
+    },
+    {
+      "@id": "urn:ngm:class:benchmark-standard",
+      "label": "Benchmark Standard"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
-      {"@id": "urn:ngm:class:generalisation", "label": "Generalisation"},
-      {"@id": "urn:ngm:class:benchmark-evaluation", "label": "Benchmark Evaluation"}
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-      {"@id": "urn:ngm:class:benchmark-dataset", "label": "Benchmark Dataset"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:ai-benchmark-epistemological-critique", "label": "AI Benchmark Epistemological Critique"},
-      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neurosymbolic AI"}
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
+      },
+      {
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neurosymbolic AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:arc-agi:9f3b77e2a1d4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:arc-agi"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Programme Synthesis]]",
-      "resolved": "urn:visionflow:linked:programme-synthesis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Domain-Specific Language]]",
-      "resolved": "urn:visionflow:linked:domain-specific-language",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fluid Intelligence]]",
-      "resolved": "urn:visionflow:linked:fluid-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Test-Time Training]]",
-      "resolved": "urn:visionflow:linked:test-time-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Test-Time Compute]]",
-      "resolved": "urn:visionflow:linked:test-time-compute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Inductive Logic Programming]]",
-      "resolved": "urn:visionflow:linked:inductive-logic-programming",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Visual Reasoning]]",
-      "resolved": "urn:visionflow:linked:visual-reasoning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Few-Shot Generalisation]]",
-      "resolved": "urn:visionflow:linked:few-shot-generalisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Core Knowledge Priors]]",
-      "resolved": "urn:visionflow:linked:core-knowledge-priors",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Grid-Based Tasks]]",
-      "resolved": "urn:visionflow:linked:grid-based-tasks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agentic Intelligence]]",
-      "resolved": "urn:visionflow:linked:agentic-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ARC Prize]]",
-      "resolved": "urn:visionflow:linked:arc-prize",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ARC-AGI-2]]",
-      "resolved": "urn:visionflow:linked:arc-agi-2",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ARC-AGI-3]]",
-      "resolved": "urn:visionflow:linked:arc-agi-3",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Evaluation Leaderboard]]",
-      "resolved": "urn:visionflow:linked:evaluation-leaderboard",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reasoning]]",
-      "resolved": "urn:visionflow:owl:class:reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pattern Recognition]]",
-      "resolved": "urn:visionflow:owl:class:pattern-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning-discipline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cognitive Science]]",
-      "resolved": "urn:visionflow:owl:class:cognitive-science",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial General Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Benchmark Standard]]",
-      "resolved": "urn:visionflow:owl:class:benchmark-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Safety Research]]",
-      "resolved": "urn:visionflow:owl:class:ai-safety-research",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Benchmarks]]",
-      "resolved": "urn:visionflow:owl:class:benchmarks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neurosymbolic AI]]",
-      "resolved": "urn:visionflow:owl:class:neurosymbolic-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:owl:class:transfer-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Few-Shot Learning]]",
-      "resolved": "urn:visionflow:owl:class:few-shot-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generalisation]]",
-      "resolved": "urn:visionflow:owl:class:generalisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Evaluation Metric]]",
-      "resolved": "urn:visionflow:owl:class:evaluation-metric",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Benchmark Epistemological Critique]]",
-      "resolved": "urn:visionflow:owl:class:ai-benchmark-epistemological-critique",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Chain-of-Thought Reasoning]]",
-      "resolved": "urn:visionflow:owl:class:chain-of-thought-reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Reasoning]]",
-      "resolved": "urn:visionflow:owl:class:automated-reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Benchmark Evaluation]]",
-      "resolved": "urn:visionflow:owl:class:benchmark-evaluation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Benchmark Dataset]]",
-      "resolved": "urn:visionflow:owl:class:benchmark-dataset",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -508,7 +360,7 @@ public: true
         ObjectSomeValuesFrom(ai:uses ai:InductiveLogicProgramming))
 
   ## About
-    ARC-AGI emerged from a systematic critique of the AI evaluation landscape in 2019. François Chollet observed that prevalent benchmarks — ImageNet, GLUE, SuperGLUE, MMLU — measured task-specific skill rather than general intelligence, because models could reach human or super-human benchmark scores by exploiting statistical regularities in large training corpora that happened to overlap with the test distribution. A model that had memorised Internet text including millions of exam answers would score highly on a reading comprehension benchmark without necessarily demonstrating any capacity to reason about genuinely novel problems. Chollet formalised this critique by appealing to Algorithmic Information Theory: he defined intelligence not as the possession of skill but as the efficiency with which skill can be acquired from experience, relative to priors. The ARC corpus operationalised this by creating tasks whose solutions are not findable in any training corpus (because the tasks are hand-designed novel puzzles), are solvable by any human adult with minimal effort, and require only the four categories of core knowledge priors: objectness and elementary physics, goal-directedness and agentness, natural numbers and arithmetic, and basic geometry.
+    ARC-AGI emerged from a systematic critique of the AI evaluation landscape in 2019. François Chollet observed that prevalent benchmarks — ImageNet, GLUE, SuperGLUE, MMLU — measured task-specific skill rather than general intelligence, because models [private] reach human or super-human benchmark scores by exploiting statistical regularities in large training corpora that happened to overlap with the test distribution. A model that had memorised Internet text including millions of exam answers would score highly on a reading comprehension benchmark without necessarily demonstrating any capacity to reason about genuinely novel problems. Chollet formalised this critique by appealing to Algorithmic Information Theory: he defined intelligence not as the possession of skill but as the efficiency with which skill can be acquired from experience, relative to priors. The ARC corpus operationalised this by creating tasks whose solutions are not findable in any training corpus (because the tasks are hand-designed novel puzzles), are solvable by any human adult with minimal effort, and require only the four categories of core knowledge priors: objectness and elementary physics, goal-directedness and agentness, natural numbers and arithmetic, and basic geometry.
 
     The corpus comprises 400 training tasks (solutions publicly available), 400 evaluation tasks (solutions withheld), and later a hidden private evaluation set used for the [[ARC Prize]] competition. Each task is a small set of 30x30 or smaller coloured grids (10 possible colours, each represented by an integer 0–9) where input grids transform into output grids according to a consistent rule. The solver receives two to five demonstrations and must produce the correct output grid for one to three novel input grids. The evaluation metric is exact match: a response is counted correct only when every pixel of the output grid matches the ground truth, making partial credit impossible. Human performance on the training set approaches 100%; the evaluation set, which includes harder tasks, yields approximately 85% human accuracy, establishing the practical ceiling. Between 2019 and 2023, the frontier AI performance on the evaluation set stagnated between 0% and approximately 30%, underscoring the benchmark's resistance to memorisation-based approaches. The [[AI Benchmark Epistemological Critique]] community noted this as evidence of a genuine generalisation gap rather than mere benchmark difficulty.
 

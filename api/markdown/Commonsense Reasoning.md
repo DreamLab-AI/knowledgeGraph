@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Commonsense Reasoning
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,47 +8,170 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:reasoning", "vc:label": "Reasoning"},
-    {"@id": "urn:visionflow:linked:symbolic-reasoning", "vc:label": "Symbolic Reasoning"},
-    {"@id": "urn:visionflow:linked:knowledge-base", "vc:label": "Knowledge Base"},
-    {"@id": "urn:visionflow:linked:world-model", "vc:label": "World Model"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:inference", "vc:label": "Inference"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:cognitive-architecture", "vc:label": "Cognitive Architecture"},
-    {"@id": "urn:visionflow:linked:automated-reasoning", "vc:label": "Automated Reasoning"},
-    {"@id": "urn:visionflow:linked:natural-language-understanding", "vc:label": "Natural Language Understanding"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:conceptnet", "vc:label": "ConceptNet"},
-    {"@id": "urn:visionflow:linked:neural-symbolic-integration", "vc:label": "Neural-Symbolic Integration"},
-    {"@id": "urn:visionflow:linked:question-answering", "vc:label": "Question Answering"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:hallucination", "vc:label": "Hallucination"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:planning", "vc:label": "Planning"},
-    {"@id": "urn:visionflow:linked:ontology", "vc:label": "Ontology"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:frame-semantics", "vc:label": "Frame Semantics"},
-    {"@id": "urn:visionflow:linked:semantic-network", "vc:label": "Semantic Network"},
-    {"@id": "urn:visionflow:linked:default-logic", "vc:label": "Default Logic"},
-    {"@id": "urn:visionflow:linked:non-monotonic-reasoning", "vc:label": "Non-Monotonic Reasoning"},
-    {"@id": "urn:visionflow:linked:conversational-ai", "vc:label": "Conversational AI"},
-    {"@id": "urn:visionflow:linked:visual-question-answering", "vc:label": "Visual Question Answering"},
-    {"@id": "urn:visionflow:linked:embodied-ai", "vc:label": "Embodied AI"},
-    {"@id": "urn:visionflow:linked:expert-systems", "vc:label": "Expert Systems"},
-    {"@id": "urn:visionflow:linked:grounding", "vc:label": "Grounding"},
-    {"@id": "urn:visionflow:linked:ai-agent", "vc:label": "AI Agent"},
-    {"@id": "urn:visionflow:linked:benchmarking", "vc:label": "Benchmarking"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine Tuning"},
-    {"@id": "urn:visionflow:linked:multi-modal-learning", "vc:label": "Multi-Modal Learning"},
-    {"@id": "urn:visionflow:linked:description-logic", "vc:label": "Description Logic"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain-of-Thought Prompting"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"}
+    {
+      "@id": "urn:visionflow:linked:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:symbolic-reasoning",
+      "vc:label": "Symbolic Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-base",
+      "vc:label": "Knowledge Base"
+    },
+    {
+      "@id": "urn:visionflow:linked:world-model",
+      "vc:label": "World Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference",
+      "vc:label": "Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-architecture",
+      "vc:label": "Cognitive Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-reasoning",
+      "vc:label": "Automated Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-understanding",
+      "vc:label": "Natural Language Understanding"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:conceptnet",
+      "vc:label": "ConceptNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-symbolic-integration",
+      "vc:label": "Neural-Symbolic Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hallucination",
+      "vc:label": "Hallucination"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning",
+      "vc:label": "Planning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ontology",
+      "vc:label": "Ontology"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:frame-semantics",
+      "vc:label": "Frame Semantics"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-network",
+      "vc:label": "Semantic Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:default-logic",
+      "vc:label": "Default Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:non-monotonic-reasoning",
+      "vc:label": "Non-Monotonic Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:conversational-ai",
+      "vc:label": "Conversational AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-question-answering",
+      "vc:label": "Visual Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:linked:embodied-ai",
+      "vc:label": "Embodied AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:expert-systems",
+      "vc:label": "Expert Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:grounding",
+      "vc:label": "Grounding"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent",
+      "vc:label": "AI Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmarking",
+      "vc:label": "Benchmarking"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-modal-learning",
+      "vc:label": "Multi-Modal Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:description-logic",
+      "vc:label": "Description Logic"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain-of-Thought Prompting"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    }
   ]
 }
 ```
@@ -217,71 +334,11 @@ public: true
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:commonsense-reasoning:a7e3b91f2c04",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:commonsense-reasoning"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Reasoning]]", "resolved": "urn:visionflow:linked:reasoning", "kind": "ResolvedLink"},
-    {"raw": "[[Symbolic Reasoning]]", "resolved": "urn:visionflow:linked:symbolic-reasoning", "kind": "StubLink"},
-    {"raw": "[[Knowledge Base]]", "resolved": "urn:visionflow:linked:knowledge-base", "kind": "ResolvedLink"},
-    {"raw": "[[World Model]]", "resolved": "urn:visionflow:linked:world-model", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Inference]]", "resolved": "urn:visionflow:linked:inference", "kind": "StubLink"},
-    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "ResolvedLink"},
-    {"raw": "[[Cognitive Architecture]]", "resolved": "urn:visionflow:linked:cognitive-architecture", "kind": "StubLink"},
-    {"raw": "[[Automated Reasoning]]", "resolved": "urn:visionflow:linked:automated-reasoning", "kind": "StubLink"},
-    {"raw": "[[Natural Language Understanding]]", "resolved": "urn:visionflow:linked:natural-language-understanding", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Knowledge Graph]]", "resolved": "urn:visionflow:linked:knowledge-graph", "kind": "ResolvedLink"},
-    {"raw": "[[ConceptNet]]", "resolved": "urn:visionflow:linked:conceptnet", "kind": "StubLink"},
-    {"raw": "[[Neural-Symbolic Integration]]", "resolved": "urn:visionflow:linked:neural-symbolic-integration", "kind": "ResolvedLink"},
-    {"raw": "[[Question Answering]]", "resolved": "urn:visionflow:linked:question-answering", "kind": "StubLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Hallucination]]", "resolved": "urn:visionflow:linked:hallucination", "kind": "ResolvedLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "ResolvedLink"},
-    {"raw": "[[Planning]]", "resolved": "urn:visionflow:linked:planning", "kind": "StubLink"},
-    {"raw": "[[Ontology]]", "resolved": "urn:visionflow:linked:ontology", "kind": "StubLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Frame Semantics]]", "resolved": "urn:visionflow:linked:frame-semantics", "kind": "StubLink"},
-    {"raw": "[[Semantic Network]]", "resolved": "urn:visionflow:linked:semantic-network", "kind": "StubLink"},
-    {"raw": "[[Default Logic]]", "resolved": "urn:visionflow:linked:default-logic", "kind": "StubLink"},
-    {"raw": "[[Non-Monotonic Reasoning]]", "resolved": "urn:visionflow:linked:non-monotonic-reasoning", "kind": "StubLink"},
-    {"raw": "[[Conversational AI]]", "resolved": "urn:visionflow:linked:conversational-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Visual Question Answering]]", "resolved": "urn:visionflow:linked:visual-question-answering", "kind": "StubLink"},
-    {"raw": "[[Embodied AI]]", "resolved": "urn:visionflow:linked:embodied-ai", "kind": "StubLink"},
-    {"raw": "[[Grounding]]", "resolved": "urn:visionflow:linked:grounding", "kind": "StubLink"},
-    {"raw": "[[AI Agent]]", "resolved": "urn:visionflow:linked:ai-agent", "kind": "ResolvedLink"},
-    {"raw": "[[Chain-of-Thought Prompting]]", "resolved": "urn:visionflow:linked:chain-of-thought", "kind": "StubLink"},
-    {"raw": "[[Multi-Modal Learning]]", "resolved": "urn:visionflow:linked:multi-modal-learning", "kind": "StubLink"},
-    {"raw": "[[Fine Tuning]]", "resolved": "urn:visionflow:linked:fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Expert Systems]]", "resolved": "urn:visionflow:linked:expert-systems", "kind": "ResolvedLink"},
-    {"raw": "[[Description Logic]]", "resolved": "urn:visionflow:linked:description-logic", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

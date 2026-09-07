@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Garbled Circuits
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,42 +20,98 @@ public: true
   "definition": "Garbled Circuits is a cryptographic technique, introduced by Yao in 1986, that enables two-party secure computation by encoding a Boolean circuit such that one party (the garbler) produces an encrypted representation of the circuit and the other party (the evaluator) can compute the output without learning the garbler's private inputs. Each gate of the circuit is replaced by a garbled truth table consisting of four ciphertexts, and the evaluator decrypts exactly one row per gate using wire labels obtained through [[Oblivious Transfer]]. Modern optimisations — including Free XOR, Half Gates, and Three Halves — reduce the communication and computation overhead to practical levels. Garbled circuits are foundational to general-purpose [[Multi-Party Computation]] and form the basis of many practical secure function evaluation protocols.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:oblivious-transfer", "label": "Oblivious Transfer"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+      {
+        "@id": "urn:ngm:class:oblivious-transfer",
+        "label": "Oblivious Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
-      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:oblivious-transfer", "label": "Oblivious Transfer"},
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}
+      {
+        "@id": "urn:ngm:class:oblivious-transfer",
+        "label": "Oblivious Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:secure-data-sharing", "label": "Secure Data Sharing"},
-      {"@id": "urn:ngm:class:privacy-preserving-machine-learning", "label": "Privacy-Preserving Machine Learning"}
+      {
+        "@id": "urn:ngm:class:secure-data-sharing",
+        "label": "Secure Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-key", "label": "Cryptographic Key"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:secure-aggregation", "label": "Secure Aggregation"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:secure-aggregation",
+        "label": "Secure Aggregation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:homomorphic-encryption-for-machine-learning", "label": "Homomorphic Encryption for Machine Learning"}
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption-for-machine-learning",
+        "label": "Homomorphic Encryption for Machine Learning"
+      }
     ]
   },
   "sameAs": [],

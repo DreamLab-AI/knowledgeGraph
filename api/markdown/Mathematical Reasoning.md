@@ -1,8 +1,3 @@
----
-public: true
----
-
-# mathematical reasoning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,7 +152,7 @@ public: true
   - Mathematical reasoning is the capacity to perform rigorous, multi-step inference over mathematical structures — encompassing arithmetic, algebra, geometry, combinatorics, calculus, and formal [[Theorem Proving]]. It requires compositional symbol manipulation, logical deduction, and persistent tracking of intermediate state without resorting to surface-level pattern matching. In [[Artificial Intelligence]] research, mathematical reasoning is treated as a demanding benchmark for general problem-solving because solutions are objectively verifiable and require genuine understanding of structure rather than linguistic plausibility. The discipline connects classical [[Symbolic AI]] traditions (automated deduction, rewrite systems) with contemporary neural approaches such as [[Chain-of-Thought Reasoning]] and [[Neuro-Symbolic AI]].
 
 - ### Overview
-  - Mathematical reasoning has been studied in AI since the 1950s, when programs such as the Logic Theorist and General Problem Solver demonstrated that computers could produce formal proofs. Modern interest has intensified because [[Large Language Models]] exhibit emergent quantitative abilities at scale, yet also make elementary arithmetic errors — revealing a gap between statistical approximation and rigorous deduction.
+  - Mathematical reasoning has been studied in AI since the 1950s, when programs such as the Logic Theorist and General Problem Solver demonstrated that computers [private] produce formal proofs. Modern interest has intensified because [[Large Language Models]] exhibit emergent quantitative abilities at scale, yet also make elementary arithmetic errors — revealing a gap between statistical approximation and rigorous deduction.
   - The field is important for several reasons:
     - It provides clean, checkable ground truth, making it ideal for measuring AI progress.
     - Mathematical competence underpins [[Scientific Reasoning]], engineering simulation, financial modelling, and [[Formal Verification]] of software.

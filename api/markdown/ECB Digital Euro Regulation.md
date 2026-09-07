@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ECB Digital Euro Regulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The ECB Digital Euro Regulation is the legal and regulatory framework governing a potential central bank digital currency issued by the European Central Bank for the euro area. It defines the digital euro's legal-tender status, privacy safeguards, holding limits, and the roles of the Eurosystem and intermediaries in distribution. It establishes the rules under which a retail CBDC would operate alongside cash and commercial bank money.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-euro", "label": "Digital Euro"}, {"@id": "urn:ngm:class:cbdcs", "label": "CBDCs"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-euro",
+        "label": "Digital Euro"
+      },
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ]
   },
   "quality": 0.72
 }

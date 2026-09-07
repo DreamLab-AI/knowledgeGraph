@@ -1,39 +1,122 @@
----
-public: true
----
-
-# Supply Chain Resilience
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:supply-chain-resilience", "@type":"Page", "title":"Supply Chain Resilience", "vc:slug":"supply-chain-resilience", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:supply-chain-resilience",
+  "@type": "Page",
+  "title": "Supply Chain Resilience",
+  "vc:slug": "supply-chain-resilience",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:supply-chain-resilience",
-  "@type":"Class",
-  "label":"Supply Chain Resilience",
-  "definition":"Supply chain resilience is the capacity of a supply network to anticipate, absorb, adapt to, and recover from disruptions while maintaining the continuity of supply at acceptable cost and service levels. It combines visibility into the network, redundancy and flexibility in sourcing and capacity, and the ability to reconfigure flows when shocks occur. Resilience strategies balance efficiency against the buffers and diversification needed to withstand events such as supplier failure, natural disaster, or demand volatility.",
-  "domain":"supply-chain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:supply-chain","label":"Supply Chain"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:supply-chain","label":"Supply Chain"}],
-    "requires":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"},{"@id":"urn:ngm:class:traceability","label":"Traceability"}],
-    "uses":[{"@id":"urn:ngm:class:redundancy","label":"Redundancy"},{"@id":"urn:ngm:class:inventory-management","label":"Inventory Management"}],
-    "dependsOn":[{"@id":"urn:ngm:class:risk-assessment","label":"Risk Assessment"}],
-    "enables":[{"@id":"urn:ngm:class:business-continuity","label":"Business Continuity"}],
-    "supports":[{"@id":"urn:ngm:class:logistics","label":"Logistics"}],
-    "relatedTo":[{"@id":"urn:ngm:class:resilience","label":"Resilience"},{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:business-continuity","label":"Business Continuity"},{"@id":"urn:ngm:class:logistics","label":"Logistics"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:inventory-management","label":"Inventory Management"}],
-    "implements":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "informedBy":[{"@id":"urn:ngm:class:traceability","label":"Traceability"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:supply-chain-resilience",
+  "@type": "Class",
+  "label": "Supply Chain Resilience",
+  "definition": "Supply chain resilience is the capacity of a supply network to anticipate, absorb, adapt to, and recover from disruptions while maintaining the continuity of supply at acceptable cost and service levels. It combines visibility into the network, redundancy and flexibility in sourcing and capacity, and the ability to reconfigure flows when shocks occur. Resilience strategies balance efficiency against the buffers and diversification needed to withstand events such as supplier failure, natural disaster, or demand volatility.",
+  "domain": "supply-chain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:supply-chain",
+      "label": "Supply Chain"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "informedBy": [
+      {
+        "@id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

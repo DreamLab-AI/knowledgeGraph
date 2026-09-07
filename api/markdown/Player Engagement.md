@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Player Engagement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Player engagement is the degree to which a game holds a player's attention, motivation, and continued participation over time. It is measured through behavioural signals such as session length, retention, progression, and emotional investment. Game designers and AI systems optimise engagement to sustain player communities and, in token-based games, to drive economic activity.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:play-to-earn-p2-e", "label": "Play-to-Earn (P2E)"},
-      {"@id": "urn:ngm:class:ai-game-agent", "label": "AI Game Agent"}
+      {
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn (P2E)"
+      },
+      {
+        "@id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      }
     ]
   },
   "quality": 0.72

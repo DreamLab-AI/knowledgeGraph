@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[personal accounts]]
-# Personal Digital Asset Account
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,42 +47,46 @@ elevatedFrom:: [[personal accounts]]
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:corporate-tax-compliance-framework", "label": "Corporate Tax Compliance Framework"},
-      {"@id": "urn:ngm:class:corporate-tax-compliance-framework-treatment-crypto", "label": "Tax Treatment Crypto"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework",
+        "label": "Corporate Tax Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework-treatment-crypto",
+        "label": "Tax Treatment Crypto"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:personal-accounts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c457a6ffa7f308e2b2969450b6a7cd43b2ac0114b0b55a1555eaff8eb22e3b84"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Personal accounts are individually attributed user accounts providing access to digital services, financial platforms, or governmental systems, uniquely bound to a natural person's verified identity. They are the primary locus of credential management, authentication, and access-control enforcement. In the digital asset space, personal accounts span exchange trading accounts, self-custody wallets, and HMRC Self Assessment portals used to declare capital gains from cryptocurrency disposals.

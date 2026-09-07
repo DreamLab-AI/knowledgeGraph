@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Control Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A control interface is the defined boundary through which commands and feedback are exchanged between a controller and a controlled device such as an actuator, end-effector, or robot subsystem. It specifies the signals, protocols, data rates, and timing required for deterministic command of the hardware. A well-defined control interface is what allows higher-level planners and digital twins to actuate physical systems reliably.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:end-effector", "label": "End Effector"}, {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
   },
   "quality": 0.72
 }

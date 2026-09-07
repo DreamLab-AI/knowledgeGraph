@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Augmentation Strategies
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -122,57 +117,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-augmentation-strategies:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5af7d8d1cd72b5878767e526b55e588bd1045a8f51d737f7681270fbe770126e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Apple Machine Learning Research]]",
-      "resolved": "urn:visionflow:linked:apple-machine-learning-research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[arXiv]]",
-      "resolved": "urn:visionflow:linked:ar-xiv",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE/CVF International Conference on Computer Vision]]",
-      "resolved": "urn:visionflow:linked:ieee-cvf-international-conference-on-computer-vision",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Nature]]",
-      "resolved": "urn:visionflow:linked:nature",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Techniques that create modified versions of training examples to increase dataset diversity and model robustness. Data augmentation strategies apply transformations that preserve label semantics whilst introducing variation, improving generalisation and reducing overfitting.

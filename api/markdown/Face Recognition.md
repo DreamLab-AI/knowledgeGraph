@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Face Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,49 +59,136 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:face-detection", "label": "Face Detection"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:face-alignment", "label": "Face Alignment"},
-      {"@id": "urn:ngm:class:embedding-generation", "label": "Embedding Generation"},
-      {"@id": "urn:ngm:class:presentation-attack-detection", "label": "Presentation Attack Detection"}
+      {
+        "@id": "urn:ngm:class:face-detection",
+        "label": "Face Detection"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:face-alignment",
+        "label": "Face Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-generation",
+        "label": "Embedding Generation"
+      },
+      {
+        "@id": "urn:ngm:class:presentation-attack-detection",
+        "label": "Presentation Attack Detection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:metric-learning", "label": "Metric Learning"},
-      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"},
-      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:metric-learning",
+        "label": "Metric Learning"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:digital-identity-verification", "label": "Digital Identity Verification"},
-      {"@id": "urn:ngm:class:surveillance-systems", "label": "Surveillance Systems"},
-      {"@id": "urn:ngm:class:emotion-recognition", "label": "Emotion Recognition"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
+      },
+      {
+        "@id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"},
-      {"@id": "urn:ngm:class:facial-action-coding-system", "label": "Facial Action Coding System"},
-      {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:facial-action-coding-system",
+        "label": "Facial Action Coding System"
+      },
+      {
+        "@id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:arc-face", "label": "ArcFace"},
-      {"@id": "urn:ngm:class:adaface", "label": "AdaFace"}
+      {
+        "@id": "urn:ngm:class:arc-face",
+        "label": "ArcFace"
+      },
+      {
+        "@id": "urn:ngm:class:adaface",
+        "label": "AdaFace"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:annotated-dataset", "label": "Annotated Dataset"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+      {
+        "@id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:iris-recognition", "label": "Iris Recognition"},
-      {"@id": "urn:ngm:class:fingerprint-recognition", "label": "Fingerprint Recognition"}
+      {
+        "@id": "urn:ngm:class:iris-recognition",
+        "label": "Iris Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:fingerprint-recognition",
+        "label": "Fingerprint Recognition"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:facial-action-coding-system", "label": "Facial Action Coding System"},
-      {"@id": "urn:ngm:class:deepfake-detection", "label": "Deepfake Detection"}
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:facial-action-coding-system",
+        "label": "Facial Action Coding System"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
     ]
   },
   "quality": 0.92,
@@ -114,41 +196,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:face-recognition:a55bd5b104d9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8e1f0581ccfe1e05f9749fe4a2136c5f74b6bf3d22c4093db3b04abe8b263c5a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification]]",
-      "resolved": "urn:visionflow:linked:identity-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Biometric Authentication]]",
-      "resolved": "urn:visionflow:linked:biometric-authentication",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

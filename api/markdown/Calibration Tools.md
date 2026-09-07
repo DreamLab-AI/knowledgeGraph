@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Calibration Tools
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -103,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:calibration-tools:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5e22a70ecee044334c527668764814cb7516dc7bfda4356b7f59e4ac9e10e6c3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software and hardware utilities used to align, tune, and verify the accuracy of XR sensors, displays, and tracking systems. Calibration establishes ground-truth references for IMUs, cameras, optical tracking arrays, and display geometry, ensuring that virtual content is correctly registered to the physical world and that tracking data is within acceptable error tolerances.

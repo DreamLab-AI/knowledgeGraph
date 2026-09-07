@@ -1,38 +1,116 @@
----
-public: true
----
-
-# Knowledge Discovery
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:knowledge-discovery", "@type":"Page", "title":"Knowledge Discovery", "vc:slug":"knowledge-discovery", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:knowledge-discovery",
+  "@type": "Page",
+  "title": "Knowledge Discovery",
+  "vc:slug": "knowledge-discovery",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:knowledge-discovery",
-  "@type":"Class",
-  "label":"Knowledge Discovery",
-  "definition":"Knowledge Discovery is the process of identifying valid, novel, useful and understandable patterns in data, transforming raw records into actionable knowledge. It spans data selection, cleaning, transformation, mining and interpretation, and draws on statistics, machine learning, information retrieval and database technology. The discipline is often framed as Knowledge Discovery in Databases (KDD), within which data mining is the specific pattern-extraction step.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:knowledge-management","label":"Knowledge Management"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"},{"@id":"urn:ngm:class:enterprise-search","label":"Enterprise Search"}],
-    "uses":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"},{"@id":"urn:ngm:class:text-mining","label":"Text Mining"},{"@id":"urn:ngm:class:natural-language-processing","label":"Natural Language Processing"}],
-    "hasPart":[{"@id":"urn:ngm:class:information-retrieval","label":"Information Retrieval"}],
-    "requires":[{"@id":"urn:ngm:class:metadata","label":"Metadata"}],
-    "supports":[{"@id":"urn:ngm:class:semantic-search","label":"Semantic Search"},{"@id":"urn:ngm:class:search-engine","label":"Search Engine"}],
-    "dependsOn":[{"@id":"urn:ngm:class:ontology","label":"Ontology"}],
-    "produces":[{"@id":"urn:ngm:class:knowledge-graph","label":"Knowledge Graph"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:information-retrieval","label":"Information Retrieval"}],
-    "relatedTo":[{"@id":"urn:ngm:class:knowledge-management","label":"Knowledge Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:knowledge-graph","label":"Knowledge Graph"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:knowledge-discovery",
+  "@type": "Class",
+  "label": "Knowledge Discovery",
+  "definition": "Knowledge Discovery is the process of identifying valid, novel, useful and understandable patterns in data, transforming raw records into actionable knowledge. It spans data selection, cleaning, transformation, mining and interpretation, and draws on statistics, machine learning, information retrieval and database technology. The discipline is often framed as Knowledge Discovery in Databases (KDD), within which data mining is the specific pattern-extraction step.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:knowledge-management",
+      "label": "Knowledge Management"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:text-mining",
+        "label": "Text Mining"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "produces": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

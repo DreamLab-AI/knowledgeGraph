@@ -1,37 +1,122 @@
----
-public: true
----
-
-# Prometheus
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:prometheus", "@type":"Page", "title":"Prometheus", "vc:slug":"prometheus", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:prometheus",
+  "@type": "Page",
+  "title": "Prometheus",
+  "vc:slug": "prometheus",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:prometheus",
-  "@type":"Class",
-  "label":"Prometheus",
-  "definition":"Prometheus is an open-source monitoring and alerting system that collects time-series metrics by periodically scraping HTTP endpoints exposed by instrumented targets. It stores samples in a local time-series database, queries them with the PromQL language, and evaluates alerting rules whose firing alerts are dispatched through a separate Alertmanager. A graduated Cloud Native Computing Foundation project, it is a de-facto standard for monitoring containerised and cloud-native systems.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:monitoring","label":"Monitoring"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:monitoring","label":"Monitoring"},{"@id":"urn:ngm:class:observability","label":"Observability"}],
-    "hasPart":[{"@id":"urn:ngm:class:telemetry","label":"Telemetry"}],
-    "implements":[{"@id":"urn:ngm:class:monitoring","label":"Monitoring"},{"@id":"urn:ngm:class:observability","label":"Observability"}],
-    "supports":[{"@id":"urn:ngm:class:observability","label":"Observability"},{"@id":"urn:ngm:class:incident-response","label":"Incident Response"}],
-    "uses":[{"@id":"urn:ngm:class:telemetry","label":"Telemetry"},{"@id":"urn:ngm:class:service-discovery","label":"Service Discovery"}],
-    "dependsOn":[{"@id":"urn:ngm:class:telemetry","label":"Telemetry"},{"@id":"urn:ngm:class:service-discovery","label":"Service Discovery"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:cncf","label":"CNCF"},{"@id":"urn:ngm:class:cloud-native-computing-foundation","label":"Cloud Native Computing Foundation"}],
-    "enables":[{"@id":"urn:ngm:class:incident-response","label":"Incident Response"}],
-    "relatedTo":[{"@id":"urn:ngm:class:kubernetes","label":"Kubernetes"},{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:prometheus",
+  "@type": "Class",
+  "label": "Prometheus",
+  "definition": "Prometheus is an open-source monitoring and alerting system that collects time-series metrics by periodically scraping HTTP endpoints exposed by instrumented targets. It stores samples in a local time-series database, queries them with the PromQL language, and evaluates alerting rules whose firing alerts are dispatched through a separate Alertmanager. A graduated Cloud Native Computing Foundation project, it is a de-facto standard for monitoring containerised and cloud-native systems.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:monitoring",
+      "label": "Monitoring"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

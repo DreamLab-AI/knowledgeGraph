@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Omnichain Application
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "An omnichain application is a decentralised application designed to operate across multiple blockchain networks simultaneously, maintaining unified state, liquidity, and user identity without requiring users to bridge assets manually between chains. Unlike multi-chain applications that deploy isolated instances on separate chains, omnichain applications treat all supported networks as a single logical execution environment connected by cross-chain messaging protocols. LayerZero is the most widely adopted infrastructure enabling omnichain application patterns.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:decentralized-application", "label": "Decentralized Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralized-application",
+      "label": "Decentralized Application"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"}
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - Prominent omnichain applications include Stargate Finance (unified cross-chain liquidity), Radiant Capital (omnichain lending), and cross-chain NFT collections that maintain a single canonical ownership ledger. The pattern has also been adopted for governance: DAO votes cast on one chain can trigger treasury operations on another without manual bridging. Major DeFi protocols have begun omnichain migrations to access liquidity across Ethereum, Arbitrum, Optimism, Base, and BNB Chain simultaneously.
 
   - Between 2023 and 2025, omnichain has transitioned from a novel architectural experiment to an industry standard for serious DeFi protocols seeking unified liquidity. LayerZero's V2 release and the emergence of competing messaging protocols (Wormhole, Axelar, Hyperlane) have created a competitive ecosystem with different trust-minimisation trade-offs. Security incidents on bridge protocols have reinforced the preference for message-passing architectures with on-chain verification over custodial bridge designs, accelerating omnichain adoption in institutional DeFi.
-

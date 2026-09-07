@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Concept Art
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,49 +7,178 @@ public: true
   "title": "Concept Art",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:midjourney-text-to-image-service", "vc:label": "Midjourney Text-to-Image Service"},
-    {"@id": "urn:visionflow:linked:proprietary-image-generation", "vc:label": "Proprietary Image Generation"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:text-to-image-generation", "vc:label": "Text-to-Image Generation"},
-    {"@id": "urn:visionflow:linked:stable-diffusion", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:visionflow:linked:film-production", "vc:label": "Film Production"},
-    {"@id": "urn:visionflow:linked:game-asset-generation", "vc:label": "Game Asset Generation"},
-    {"@id": "urn:visionflow:linked:visual-development", "vc:label": "Visual Development"},
-    {"@id": "urn:visionflow:linked:character-design", "vc:label": "Character Design"},
-    {"@id": "urn:visionflow:linked:environment-design", "vc:label": "Environment Design"},
-    {"@id": "urn:visionflow:linked:pre-production", "vc:label": "Pre-Production"},
-    {"@id": "urn:visionflow:linked:art-direction", "vc:label": "Art Direction"},
-    {"@id": "urn:visionflow:linked:colour-palette", "vc:label": "Colour Palette"},
-    {"@id": "urn:visionflow:linked:3d-modeling", "vc:label": "3D Modeling"},
-    {"@id": "urn:visionflow:linked:animation", "vc:label": "Animation"},
-    {"@id": "urn:visionflow:linked:game-engine", "vc:label": "Game Engine"},
-    {"@id": "urn:visionflow:linked:intellectual-property", "vc:label": "Intellectual Property"},
-    {"@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:visionflow:linked:creative-ai", "vc:label": "Creative AI"},
-    {"@id": "urn:visionflow:linked:ai-art", "vc:label": "AI Art"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:film-vfx", "vc:label": "Film VFX"},
-    {"@id": "urn:visionflow:linked:asset-pipeline", "vc:label": "Asset Pipeline"},
-    {"@id": "urn:visionflow:linked:storyboard", "vc:label": "Storyboard"},
-    {"@id": "urn:visionflow:linked:moodboard", "vc:label": "Moodboard"},
-    {"@id": "urn:visionflow:linked:procedural-content-generation", "vc:label": "Procedural Content Generation"},
-    {"@id": "urn:visionflow:linked:synthetic-media", "vc:label": "Synthetic Media"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:style-transfer", "vc:label": "Style Transfer"},
-    {"@id": "urn:visionflow:linked:lora", "vc:label": "LoRA"},
-    {"@id": "urn:visionflow:linked:controlnet", "vc:label": "ControlNet"},
-    {"@id": "urn:visionflow:linked:content-production-workflow", "vc:label": "Content Production Workflow"},
-    {"@id": "urn:visionflow:linked:virtual-production-workflow", "vc:label": "Virtual Production Workflow"},
-    {"@id": "urn:visionflow:linked:ai-application", "vc:label": "AI Application"},
-    {"@id": "urn:visionflow:linked:generative-design", "vc:label": "Generative Design"},
-    {"@id": "urn:visionflow:linked:adobe-firefly", "vc:label": "Adobe Firefly"},
-    {"@id": "urn:visionflow:linked:copyright", "vc:label": "Copyright"},
-    {"@id": "urn:visionflow:linked:creative-media-domain", "vc:label": "Creative Media Domain"},
-    {"@id": "urn:visionflow:linked:visual-narrative", "vc:label": "Visual Narrative"},
-    {"@id": "urn:visionflow:linked:prop-design", "vc:label": "Prop Design"},
-    {"@id": "urn:visionflow:linked:silhouette-design", "vc:label": "Silhouette Design"}
+    {
+      "@id": "urn:visionflow:linked:midjourney-text-to-image-service",
+      "vc:label": "Midjourney Text-to-Image Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:proprietary-image-generation",
+      "vc:label": "Proprietary Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image-generation",
+      "vc:label": "Text-to-Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:film-production",
+      "vc:label": "Film Production"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-asset-generation",
+      "vc:label": "Game Asset Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-development",
+      "vc:label": "Visual Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:character-design",
+      "vc:label": "Character Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:environment-design",
+      "vc:label": "Environment Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:pre-production",
+      "vc:label": "Pre-Production"
+    },
+    {
+      "@id": "urn:visionflow:linked:art-direction",
+      "vc:label": "Art Direction"
+    },
+    {
+      "@id": "urn:visionflow:linked:colour-palette",
+      "vc:label": "Colour Palette"
+    },
+    {
+      "@id": "urn:visionflow:linked:3d-modeling",
+      "vc:label": "3D Modeling"
+    },
+    {
+      "@id": "urn:visionflow:linked:animation",
+      "vc:label": "Animation"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-engine",
+      "vc:label": "Game Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:intellectual-property",
+      "vc:label": "Intellectual Property"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-ai",
+      "vc:label": "Creative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-art",
+      "vc:label": "AI Art"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:film-vfx",
+      "vc:label": "Film VFX"
+    },
+    {
+      "@id": "urn:visionflow:linked:asset-pipeline",
+      "vc:label": "Asset Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:storyboard",
+      "vc:label": "Storyboard"
+    },
+    {
+      "@id": "urn:visionflow:linked:moodboard",
+      "vc:label": "Moodboard"
+    },
+    {
+      "@id": "urn:visionflow:linked:procedural-content-generation",
+      "vc:label": "Procedural Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-media",
+      "vc:label": "Synthetic Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:style-transfer",
+      "vc:label": "Style Transfer"
+    },
+    {
+      "@id": "urn:visionflow:linked:lora",
+      "vc:label": "LoRA"
+    },
+    {
+      "@id": "urn:visionflow:linked:controlnet",
+      "vc:label": "ControlNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-production-workflow",
+      "vc:label": "Content Production Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-production-workflow",
+      "vc:label": "Virtual Production Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-application",
+      "vc:label": "AI Application"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-design",
+      "vc:label": "Generative Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:adobe-firefly",
+      "vc:label": "Adobe Firefly"
+    },
+    {
+      "@id": "urn:visionflow:linked:copyright",
+      "vc:label": "Copyright"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-media-domain",
+      "vc:label": "Creative Media Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:visual-narrative",
+      "vc:label": "Visual Narrative"
+    },
+    {
+      "@id": "urn:visionflow:linked:prop-design",
+      "vc:label": "Prop Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:silhouette-design",
+      "vc:label": "Silhouette Design"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -69,130 +193,189 @@ public: true
   "definition": "Concept art is a discipline of visual development practice in which illustrators, designers, and increasingly AI-assisted workflows produce preliminary visual representations of characters, environments, vehicles, creatures, and props to establish the aesthetic, mood, and functional parameters of an intended creative production before commitment to the labour-intensive downstream stages of 3D modelling, animation, and rendering. It functions as the design language and communication medium between creative direction and production teams across games, film, animation, and extended reality.",
   "domain": "ai",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-application", "label": "AI Application"},
-    {"@id": "urn:ngm:class:visual-development", "label": "Visual Development"}
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:visual-development",
+      "label": "Visual Development"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:character-design", "label": "Character Design"},
-      {"@id": "urn:ngm:class:environment-design", "label": "Environment Design"},
-      {"@id": "urn:ngm:class:prop-design", "label": "Prop Design"},
-      {"@id": "urn:ngm:class:silhouette-design", "label": "Silhouette Design"},
-      {"@id": "urn:ngm:class:colour-palette", "label": "Colour Palette"},
-      {"@id": "urn:ngm:class:moodboard", "label": "Moodboard"},
-      {"@id": "urn:ngm:class:storyboard", "label": "Storyboard"}
+      {
+        "@id": "urn:ngm:class:character-design",
+        "label": "Character Design"
+      },
+      {
+        "@id": "urn:ngm:class:environment-design",
+        "label": "Environment Design"
+      },
+      {
+        "@id": "urn:ngm:class:prop-design",
+        "label": "Prop Design"
+      },
+      {
+        "@id": "urn:ngm:class:silhouette-design",
+        "label": "Silhouette Design"
+      },
+      {
+        "@id": "urn:ngm:class:colour-palette",
+        "label": "Colour Palette"
+      },
+      {
+        "@id": "urn:ngm:class:moodboard",
+        "label": "Moodboard"
+      },
+      {
+        "@id": "urn:ngm:class:storyboard",
+        "label": "Storyboard"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:pre-production", "label": "Pre-Production"},
-      {"@id": "urn:ngm:class:art-direction", "label": "Art Direction"},
-      {"@id": "urn:ngm:class:visual-narrative", "label": "Visual Narrative"}
+      {
+        "@id": "urn:ngm:class:pre-production",
+        "label": "Pre-Production"
+      },
+      {
+        "@id": "urn:ngm:class:art-direction",
+        "label": "Art Direction"
+      },
+      {
+        "@id": "urn:ngm:class:visual-narrative",
+        "label": "Visual Narrative"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
-      {"@id": "urn:ngm:class:animation", "label": "Animation"},
-      {"@id": "urn:ngm:class:asset-pipeline", "label": "Asset Pipeline"},
-      {"@id": "urn:ngm:class:film-production", "label": "Film Production"},
-      {"@id": "urn:ngm:class:game-asset-generation", "label": "Game Asset Generation"},
-      {"@id": "urn:ngm:class:film-vfx", "label": "Film VFX"}
+      {
+        "@id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      },
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "@id": "urn:ngm:class:game-asset-generation",
+        "label": "Game Asset Generation"
+      },
+      {
+        "@id": "urn:ngm:class:film-vfx",
+        "label": "Film VFX"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:text-to-image-generation", "label": "Text-to-Image Generation"},
-      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:midjourney-text-to-image-service", "label": "Midjourney Text-to-Image Service"},
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:adobe-firefly", "label": "Adobe Firefly"},
-      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:lora", "label": "LoRA"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"},
-      {"@id": "urn:ngm:class:generative-design", "label": "Generative Design"},
-      {"@id": "urn:ngm:class:ai-art", "label": "AI Art"},
-      {"@id": "urn:ngm:class:copyright", "label": "Copyright"},
-      {"@id": "urn:ngm:class:virtual-production-workflow", "label": "Virtual Production Workflow"}
+      {
+        "@id": "urn:ngm:class:midjourney-text-to-image-service",
+        "label": "Midjourney Text-to-Image Service"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:adobe-firefly",
+        "label": "Adobe Firefly"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "@id": "urn:ngm:class:ai-art",
+        "label": "AI Art"
+      },
+      {
+        "@id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:intellectual-property", "label": "Intellectual Property"},
-      {"@id": "urn:ngm:class:content-production-workflow", "label": "Content Production Workflow"},
-      {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"}
+      {
+        "@id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
+        "@id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:final-production-art", "label": "Final Production Art"},
-      {"@id": "urn:ngm:class:technical-illustration", "label": "Technical Illustration"}
+      {
+        "@id": "urn:ngm:class:final-production-art",
+        "label": "Final Production Art"
+      },
+      {
+        "@id": "urn:ngm:class:technical-illustration",
+        "label": "Technical Illustration"
+      }
     ]
   },
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:concept-art:2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:concept-art"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Midjourney Text-to-Image Service]]", "resolved": "urn:visionflow:linked:midjourney-text-to-image-service", "kind": "ResolvedLink"},
-    {"raw": "[[Proprietary Image Generation]]", "resolved": "urn:visionflow:linked:proprietary-image-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Image Generation]]", "resolved": "urn:visionflow:linked:text-to-image-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Stable Diffusion]]", "resolved": "urn:visionflow:linked:stable-diffusion", "kind": "ResolvedLink"},
-    {"raw": "[[Film Production]]", "resolved": "urn:visionflow:linked:film-production", "kind": "ResolvedLink"},
-    {"raw": "[[Game Asset Generation]]", "resolved": "urn:visionflow:linked:game-asset-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Visual Development]]", "resolved": "urn:visionflow:linked:visual-development", "kind": "ResolvedLink"},
-    {"raw": "[[Character Design]]", "resolved": "urn:visionflow:linked:character-design", "kind": "ResolvedLink"},
-    {"raw": "[[Environment Design]]", "resolved": "urn:visionflow:linked:environment-design", "kind": "ResolvedLink"},
-    {"raw": "[[Pre-Production]]", "resolved": "urn:visionflow:linked:pre-production", "kind": "ResolvedLink"},
-    {"raw": "[[Art Direction]]", "resolved": "urn:visionflow:linked:art-direction", "kind": "ResolvedLink"},
-    {"raw": "[[Colour Palette]]", "resolved": "urn:visionflow:linked:colour-palette", "kind": "ResolvedLink"},
-    {"raw": "[[3D Modelling]]", "resolved": "urn:visionflow:linked:3d-modeling", "kind": "ResolvedLink"},
-    {"raw": "[[Animation]]", "resolved": "urn:visionflow:linked:animation", "kind": "ResolvedLink"},
-    {"raw": "[[Game Engine]]", "resolved": "urn:visionflow:linked:game-engine", "kind": "ResolvedLink"},
-    {"raw": "[[Intellectual Property]]", "resolved": "urn:visionflow:linked:intellectual-property", "kind": "ResolvedLink"},
-    {"raw": "[[Creative AI]]", "resolved": "urn:visionflow:linked:creative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[AI Art]]", "resolved": "urn:visionflow:linked:ai-art", "kind": "ResolvedLink"},
-    {"raw": "[[Prompt Engineering]]", "resolved": "urn:visionflow:linked:prompt-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:visionflow:linked:image-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Film VFX]]", "resolved": "urn:visionflow:linked:film-vfx", "kind": "ResolvedLink"},
-    {"raw": "[[Asset Pipeline]]", "resolved": "urn:visionflow:linked:asset-pipeline", "kind": "ResolvedLink"},
-    {"raw": "[[Storyboard]]", "resolved": "urn:visionflow:linked:storyboard", "kind": "ResolvedLink"},
-    {"raw": "[[Moodboard]]", "resolved": "urn:visionflow:linked:moodboard", "kind": "ResolvedLink"},
-    {"raw": "[[Procedural Content Generation]]", "resolved": "urn:visionflow:linked:procedural-content-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Synthetic Media]]", "resolved": "urn:visionflow:linked:synthetic-media", "kind": "ResolvedLink"},
-    {"raw": "[[Fine-Tuning]]", "resolved": "urn:visionflow:linked:fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Style Transfer]]", "resolved": "urn:visionflow:linked:style-transfer", "kind": "ResolvedLink"},
-    {"raw": "[[LoRA]]", "resolved": "urn:visionflow:linked:lora", "kind": "ResolvedLink"},
-    {"raw": "[[ControlNet]]", "resolved": "urn:visionflow:linked:controlnet", "kind": "ResolvedLink"},
-    {"raw": "[[Content Production Workflow]]", "resolved": "urn:visionflow:linked:content-production-workflow", "kind": "ResolvedLink"},
-    {"raw": "[[Virtual Production Workflow]]", "resolved": "urn:visionflow:linked:virtual-production-workflow", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Design]]", "resolved": "urn:visionflow:linked:generative-design", "kind": "ResolvedLink"},
-    {"raw": "[[Adobe Firefly]]", "resolved": "urn:visionflow:linked:adobe-firefly", "kind": "ResolvedLink"},
-    {"raw": "[[Copyright]]", "resolved": "urn:visionflow:linked:copyright", "kind": "ResolvedLink"},
-    {"raw": "[[Prop Design]]", "resolved": "urn:visionflow:linked:prop-design", "kind": "ResolvedLink"},
-    {"raw": "[[Silhouette Design]]", "resolved": "urn:visionflow:linked:silhouette-design", "kind": "ResolvedLink"},
-    {"raw": "[[Visual Narrative]]", "resolved": "urn:visionflow:linked:visual-narrative", "kind": "ResolvedLink"},
-    {"raw": "[[Generative Adversarial Network]]", "resolved": "urn:visionflow:linked:generative-adversarial-network", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -342,7 +525,7 @@ public: true
 
   Concept art occupies the earliest, most ambiguous, and arguably most consequential phase of any large-scale creative production. It is the stage at which an abstract brief — "a gothic cyber-city in a flooded future world" or "a warrior whose armour embodies mourning" — is translated into visually specific and communicable form, creating the shared reference language that aligns the diverse specialists who will subsequently realise the vision in [[3D Modelling]], [[Animation]], [[Film VFX]], and interactive real-time systems. Without concept art, downstream production teams operate on divergent mental models, producing costly design conflicts that require expensive revision. With it, a single approved [[Character Design]] turnaround sheet provides a modeller, a rigger, a texture artist, and a lighting director with unambiguous visual intent that constrains interpretation without eliminating the craft contributions each specialist brings to realisation. The financial stakes are significant: in AAA game development, each revision cycle after production commitment (when assets are already partially built) can cost tens of thousands of pounds per character in modelling, rigging, and texture rework — making the upstream investment in thorough concept art a high-leverage economic decision, not merely an aesthetic one.
 
-  The discipline draws on the full history of commercial illustration, industrial design, architecture, and fine art, and is genuinely interdisciplinary in its method. Concept artists must understand perspective, anatomy, material properties, light behaviour, colour theory, and narrative communication — the full toolkit of representational visual art — whilst simultaneously being literate in the technical constraints of their target medium: polygon budgets, texture memory, bone hierarchies for [[Animation]] rigs, shader capabilities, real-time rendering trade-offs, and the expectations of game engines or film compositing pipelines. Key formative practitioners who established the discipline's professional identity include Ralph McQuarrie, whose production paintings defined the visual language of Star Wars (1977) — establishing concept art as a distinct pre-production role separate from storyboarding; Syd Mead, whose industrial design training shaped the aesthetic of Blade Runner (1982) and TRON (1982) with meticulously detailed mechanical designs that could be directly translated to physical props and miniature construction; and H. R. Giger, whose biomechanical paintings became the direct production reference for Alien (1979), demonstrating that concept art could be the primary creative contribution of an external artist to a major film production. In game development, the concept art tradition developed through Blizzard Entertainment (World of Warcraft's high-fantasy style, Diablo's dark gothic palette, StarCraft's science-fantasy aesthetics), Square Enix (Final Fantasy series' distinctive character design language), and Rare (Banjo-Kazooie, Conker's Bad Fur Day), each developing internally distinctive visual vocabularies that became franchised [[Intellectual Property]] anchors sustaining multi-decade sequel programmes.
+  The discipline draws on the full history of commercial illustration, industrial design, architecture, and fine art, and is genuinely interdisciplinary in its method. Concept artists must understand perspective, anatomy, material properties, light behaviour, colour theory, and narrative communication — the full toolkit of representational visual art — whilst simultaneously being literate in the technical constraints of their target medium: polygon budgets, texture memory, bone hierarchies for [[Animation]] rigs, shader capabilities, real-time rendering trade-offs, and the expectations of game engines or film compositing pipelines. Key formative practitioners who established the discipline's professional identity include Ralph McQuarrie, whose production paintings defined the visual language of Star Wars (1977) — establishing concept art as a distinct pre-production role separate from storyboarding; Syd Mead, whose industrial design training shaped the aesthetic of Blade Runner (1982) and TRON (1982) with meticulously detailed mechanical designs that [private] be directly translated to physical props and miniature construction; and H. R. Giger, whose biomechanical paintings became the direct production reference for Alien (1979), demonstrating that concept art [private] be the primary creative contribution of an external artist to a major film production. In game development, the concept art tradition developed through Blizzard Entertainment (World of Warcraft's high-fantasy style, Diablo's dark gothic palette, StarCraft's science-fantasy aesthetics), Square Enix (Final Fantasy series' distinctive character design language), and Rare (Banjo-Kazooie, Conker's Bad Fur Day), each developing internally distinctive visual vocabularies that became franchised [[Intellectual Property]] anchors sustaining multi-decade sequel programmes.
 
   The structural position of concept art within a [[Content Production Workflow]] is as a sequence of design gates: each phase of [[Pre-Production]] (exploratory ideation, directional refinement, director approval, production-readiness sign-off) is mediated by concept art deliverables, and production cannot responsibly proceed past any gate without approved designs. This gate function means concept art directly controls production risk and expenditure commitment. A concept artist who can rapidly explore twenty [[Silhouette Design]] directions in a morning — whether through traditional marker sketching, digital painting, or [[Generative AI]] thumbnail generation — compresses a decision cycle that might otherwise take days, enabling faster creative director alignment and earlier budget commitment. The risk-reduction function is why even studios that have ethical or contractual reservations about AI-generated imagery often incorporate it at the earliest thumbnail stage, where no final deliverable is produced and the creative output is purely exploratory. The subsequent refinement and approved-final-art stages — where the [[Intellectual Property]] that will be trademarked, licensed, and merchandised is actually produced — remain substantially the work of skilled human concept artists, regardless of how much AI-assisted exploration preceded them.
 

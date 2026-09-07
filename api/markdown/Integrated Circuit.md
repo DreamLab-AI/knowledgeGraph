@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Integrated Circuit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,7 +114,7 @@ public: true
 
   ## Definition
 
-  An **integrated circuit** places an entire electronic circuit on one piece of semiconductor. Before its invention, circuits were assembled from discrete components hand-wired together — the "tyranny of numbers" that limited how complex electronics could become. Jack Kilby at Texas Instruments demonstrated the first monolithic circuit in 1958; Robert Noyce at Fairchild independently devised the planar silicon version in 1959 whose photolithographic interconnects made mass production practical. Layering patterned regions of doped [[Semiconductor]], insulating oxide and metal interconnect, a modern IC integrates from a handful to over a hundred billion transistors on dies typically a few hundred square millimetres, packaged with pins or solder balls for mounting on circuit boards.
+  An **integrated circuit** places an entire electronic circuit on one piece of semiconductor. Before its invention, circuits were assembled from discrete components hand-wired together — the "tyranny of numbers" that limited how complex electronics [private] become. Jack Kilby at Texas Instruments demonstrated the first monolithic circuit in 1958; Robert Noyce at Fairchild independently devised the planar silicon version in 1959 whose photolithographic interconnects made mass production practical. Layering patterned regions of doped [[Semiconductor]], insulating oxide and metal interconnect, a modern IC integrates from a handful to over a hundred billion transistors on dies typically a few hundred square millimetres, packaged with pins or solder balls for mounting on circuit boards.
 
   ICs are conventionally classed by function — digital logic (microprocessors, microcontrollers, memory), analogue (amplifiers, regulators, RF), and mixed-signal (data converters, systems-on-chip) — and by design approach: standard commodity parts, [[Field-Programmable Gate Array]] devices configurable after manufacture, and [[ASIC]] designs fixed at fabrication for one application. Complexity has scaled through the eras of SSI, MSI, LSI and VLSI to today's systems-on-chip combining CPU cores, GPUs, neural accelerators, modems and memory controllers on a single die, the substrate of everything from smartphones to the data-centre hardware behind [[CPU Computing]] and [[GPU Computing]].
 

@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Relational Algebra
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:relational-algebra", "@type": "Page", "title": "Relational Algebra", "vc:slug": "relational-algebra", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:relational-algebra",
+  "@type": "Page",
+  "title": "Relational Algebra",
+  "vc:slug": "relational-algebra",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VR Rendering Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:xr-device", "label": "XR Device"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:xr-device",
+        "label": "XR Device"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"},
-      {"@id": "urn:ngm:class:real-time-rendering-pipeline", "label": "Real-Time Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vr-rendering-engine:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d7d8ef0d874fe056981f805578f8f9fee404c5b09783b825ffad6a879261e69c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Game Engine]]",
-      "resolved": "urn:visionflow:owl:class:game-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Specialized real-time graphics software that generates stereoscopic imagery for virtual reality headsets, optimizing frame rates, latency, and visual fidelity while managing the unique requirements of immersive display including foveated rendering, reprojection, and lens distortion correction.

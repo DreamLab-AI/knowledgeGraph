@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Connector Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Connector standards are specifications that define the mechanical form factor, pin assignment, and electrical signalling of the physical interfaces used to join cables and devices. They guarantee interoperability across vendors at the physical layer, covering examples such as USB-C, RJ45, and HDMI. Standardised connectors reduce fragmentation and enable plug-and-play interconnection.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ]
   },
   "quality": 0.72
 }

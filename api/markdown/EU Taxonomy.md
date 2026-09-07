@@ -1,8 +1,3 @@
----
-public: true
----
-
-# EU Taxonomy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The EU Taxonomy is a classification system that defines which economic activities count as environmentally sustainable under European Union law. It sets technical screening criteria across climate and environmental objectives so that investors, companies, and regulators apply a common definition of green activity. The taxonomy underpins sustainable-finance disclosure and ESG reporting by preventing greenwashing through standardised criteria.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:sustainable-finance", "label": "Sustainable Finance"}, {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ]
   },
   "quality": 0.72
 }

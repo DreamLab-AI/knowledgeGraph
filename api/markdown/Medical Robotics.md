@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Medical Robotics
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

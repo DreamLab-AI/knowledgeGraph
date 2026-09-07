@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Question Answering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,67 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:question-answering:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4e888c6d49e226875977fb5732f8037b4113a12dc958da5da74e9c3e367e191e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[scalability]]",
-      "resolved": "urn:visionflow:linked:scalability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[🤖]]",
-      "resolved": "urn:visionflow:linked:untitled",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dialogue System]]",
-      "resolved": "urn:visionflow:owl:class:dialogue-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Retrieval]]",
-      "resolved": "urn:visionflow:owl:class:information-retrieval",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[machine learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI-Augmented Research Tooling Suite]]",
-      "resolved": "urn:visionflow:owl:class:research-tools",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Question Answering (QA) is the NLP task of automatically generating accurate answers to natural language questions posed by users, either by extracting answers from text passages (extractive QA) or generating free-form responses (generative QA). QA systems employ reading comprehension models, retrieval-augmented generation, and knowledge reasoning to power applications including search engines, virtual assistants, and customer support.

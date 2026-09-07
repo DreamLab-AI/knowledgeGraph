@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Breach
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -171,7 +166,7 @@ public: true
   "definition": "A Data Breach is a security incident in which sensitive, protected, or confidential data is accessed, disclosed, copied, transmitted, or destroyed by an unauthorised actor, whether through external attack, insider threat, or accidental exposure. In AI contexts, data breaches can compromise training datasets, model weights, inference outputs, or user interaction logs, triggering GDPR notification obligations (within 72 hours to supervisory authorities), regulatory penalties, and reputational damage. AI systems increase both the attack surface (by aggregating and processing large personal-data collections) and the potential for novel breach vectors such as model-inversion attacks and membership-inference attacks that reconstruct or identify individuals from model outputs without direct database access.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "quality": 0.90,
+  "quality": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -184,50 +179,143 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:external-attack", "label": "External Attack"},
-      {"@id": "urn:ngm:class:insider-threat", "label": "Insider Threat"},
-      {"@id": "urn:ngm:class:accidental-exposure", "label": "Accidental Exposure"},
-      {"@id": "urn:ngm:class:model-inversion", "label": "Model Inversion"},
-      {"@id": "urn:ngm:class:membership-inference", "label": "Membership Inference"},
-      {"@id": "urn:ngm:class:ransomware", "label": "Ransomware"},
-      {"@id": "urn:ngm:class:data-exfiltration", "label": "Data Exfiltration"}
+      {
+        "@id": "urn:ngm:class:external-attack",
+        "label": "External Attack"
+      },
+      {
+        "@id": "urn:ngm:class:insider-threat",
+        "label": "Insider Threat"
+      },
+      {
+        "@id": "urn:ngm:class:accidental-exposure",
+        "label": "Accidental Exposure"
+      },
+      {
+        "@id": "urn:ngm:class:model-inversion",
+        "label": "Model Inversion"
+      },
+      {
+        "@id": "urn:ngm:class:membership-inference",
+        "label": "Membership Inference"
+      },
+      {
+        "@id": "urn:ngm:class:ransomware",
+        "label": "Ransomware"
+      },
+      {
+        "@id": "urn:ngm:class:data-exfiltration",
+        "label": "Data Exfiltration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:membership-inference", "label": "Membership Inference"},
-      {"@id": "urn:ngm:class:model-inversion", "label": "Model Inversion"},
-      {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"},
-      {"@id": "urn:ngm:class:data-poisoning", "label": "Data Poisoning"},
-      {"@id": "urn:ngm:class:model-extraction", "label": "Model Extraction"}
+      {
+        "@id": "urn:ngm:class:membership-inference",
+        "label": "Membership Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-inversion",
+        "label": "Model Inversion"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      },
+      {
+        "@id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
+      },
+      {
+        "@id": "urn:ngm:class:model-extraction",
+        "label": "Model Extraction"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:threat-intelligence", "label": "Threat Intelligence"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:privacy-preserving-data-mining", "label": "Privacy Preserving Data Mining"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-data-mining",
+        "label": "Privacy Preserving Data Mining"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ]
   },
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -235,167 +323,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-breach:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bc5b3977c4e3ee4d02a584046914b118795e23f93739b899984b783a680ddcd5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk]]",
-      "resolved": "urn:visionflow:owl:class:risk",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cybersecurity]]",
-      "resolved": "urn:visionflow:linked:cybersecurity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Membership Inference]]",
-      "resolved": "urn:visionflow:linked:membership-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Inversion]]",
-      "resolved": "urn:visionflow:linked:model-inversion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Protection]]",
-      "resolved": "urn:visionflow:linked:data-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Access Control]]",
-      "resolved": "urn:visionflow:linked:access-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Audit Trail]]",
-      "resolved": "urn:visionflow:linked:audit-trail",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:linked:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Assessment]]",
-      "resolved": "urn:visionflow:linked:risk-assessment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Threat Intelligence]]",
-      "resolved": "urn:visionflow:linked:threat-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Incident Response]]",
-      "resolved": "urn:visionflow:linked:incident-response",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Encryption]]",
-      "resolved": "urn:visionflow:linked:encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Differential Privacy]]",
-      "resolved": "urn:visionflow:linked:differential-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Adversarial Attack]]",
-      "resolved": "urn:visionflow:linked:adversarial-attack",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ransomware]]",
-      "resolved": "urn:visionflow:linked:ransomware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Poisoning]]",
-      "resolved": "urn:visionflow:linked:data-poisoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Extraction]]",
-      "resolved": "urn:visionflow:linked:model-extraction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Federated Learning]]",
-      "resolved": "urn:visionflow:linked:federated-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Zero Trust Architecture]]",
-      "resolved": "urn:visionflow:linked:zero-trust-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Insider Threat]]",
-      "resolved": "urn:visionflow:linked:insider-threat",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vulnerability]]",
-      "resolved": "urn:visionflow:linked:vulnerability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy-Preserving Machine Learning]]",
-      "resolved": "urn:visionflow:linked:privacy-preserving-machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance and Ethics]]",
-      "resolved": "urn:visionflow:linked:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Data Breach is a [[Cybersecurity]] incident in which sensitive, protected, or confidential data is accessed, disclosed, copied, transmitted, altered, or destroyed by an unauthorised actor — whether through deliberate external attack, [[Insider Threat]], or accidental exposure. In [[AI Governance and Ethics]] and [[Machine Learning]] operational contexts, data breaches have acquired additional dimensions beyond the classical database or network intrusion model: AI systems aggregate personal data at unprecedented scale, creating high-value targets, while simultaneously introducing novel attack vectors — [[Membership Inference]] attacks that determine whether an individual's record was present in a training dataset, [[Model Inversion]] attacks that reconstruct sensitive training data from model outputs, [[Model Extraction]] attacks that steal proprietary intellectual property embedded in model weights, and [[Data Poisoning]] attacks that corrupt training data to introduce backdoors or degrade model performance. Under [[GDPR]] and its UK equivalent (UK GDPR retained post-Brexit), organisations must notify their supervisory authority of qualifying breaches within 72 hours of becoming aware, and must communicate to affected data subjects when the breach is likely to result in high risk to their rights and freedoms. The UK's Cyber Security and Resilience Bill (introduced November 2025, Royal Assent expected 2026) further tightens this timeline, requiring initial notification to both the regulator and the NCSC CSIRT within 24 hours. The costs of breaches are substantial: IBM's 2024 Cost of a Data Breach Report placed the global average at $4.88 million, with healthcare sector breaches averaging significantly higher; 77% of businesses reported an AI-related security incident in 2024, and NIST documented a greater than 2,000% increase in AI-specific Common Vulnerabilities and Exposures since 2022. Data breaches thus sit at the intersection of [[Risk]], operational security, legal compliance, and the emerging discipline of AI-specific [[Adversarial Attack]] research, demanding integrated responses spanning [[Risk Management]], [[Incident Response]], [[Encryption]], [[Access Control]], [[Differential Privacy]], and [[Audit Trail]] capabilities.
@@ -536,7 +463,7 @@ public: true
   - ## AI-Specific Breach Mechanisms in Depth
     - **[[Membership Inference]] Attacks** — first formally characterised by Shokri et al. (2017), membership inference exploits the tendency of overfitted models to assign higher confidence to training examples than to non-training examples. An attacker trains shadow models mimicking the target model's behaviour on known datasets, then uses the shadow model's output distributions to build a binary classifier distinguishing member from non-member queries. Differential privacy training (e.g., DP-SGD) is the primary algorithmic mitigation, trading privacy guarantees against accuracy. Under GDPR, establishing that a specific individual's data was in a training set — even without recovering the actual data — can constitute a privacy violation requiring notification.
     - **[[Model Inversion]] Attacks** — exploit gradient or output information to iteratively optimise a synthetic input that maximises the model's predicted probability of a target class, recovering representative training examples. Fredrikson et al. (2015) demonstrated reconstruction of patient facial images from a face recognition model, and recovery of genetic markers from a medical model. Defence strategies include restricting API access, output perturbation, and confidence score truncation.
-    - **[[Model Extraction]]** — Tramèr et al. (2016) demonstrated that a functionally equivalent substitute model could be trained using 20,000 API queries against commercial ML-as-a-service platforms. Subsequent work has reduced required queries substantially via active learning-based strategies. Watermarking and prediction poisoning (intentionally perturbing outputs to degrade extracted model quality) are deployed defences.
+    - **[[Model Extraction]]** — Tramèr et al. (2016) demonstrated that a functionally equivalent substitute model [private] be trained using 20,000 API queries against commercial ML-as-a-service platforms. Subsequent work has reduced required queries substantially via active learning-based strategies. Watermarking and prediction poisoning (intentionally perturbing outputs to degrade extracted model quality) are deployed defences.
     - **[[Data Poisoning]] and Backdoor Attacks** — an attacker who can influence the training data supply chain (common in web-scraped datasets) can insert trigger-response pairs that cause targeted misclassifications at inference time. The ShadowAttack (2021) and BadNet (Gu et al., 2017) frameworks illustrate how minimal perturbations to a small fraction of training examples can establish persistent backdoors invisible to standard evaluation.
     - **Prompt Injection (LLM Era)** — malicious instructions embedded in retrieved documents, tool outputs, or user inputs redirect [[Machine Learning]] model behaviour away from intended purposes. Ranked #1 in OWASP's 2025 Top 10 for LLM Applications. Direct prompt injection targets the model directly; indirect prompt injection embeds instructions in content the model retrieves, enabling automated propagation of attacker intent through multi-agent AI systems.
   - ## Mitigation and Defence Landscape
@@ -553,8 +480,8 @@ public: true
     - **Large Language Models and Conversational AI** — interaction logs from LLM deployments contain highly sensitive personal disclosures; memorisation vulnerabilities (Carlini et al., 2021) mean models can reproduce verbatim training sequences including personal information, constituting a form of involuntary breach.
     - **Academic and Research Data** — university and research institute datasets containing patient cohort data, genomic sequences, or commercially sensitive experimental results require robust data governance to prevent breach; the research exemption under GDPR has defined but non-unlimited scope.
   - ## Academic Context
-    - The formal study of data breaches in the context of machine learning originated with foundational security work on statistical databases in the 1970s (Denning and Schlörer, 1983), but the modern threat landscape was crystallised by the re-identification attacks on AOL search logs (Narayanan and Shmatikoff, 2006) and Netflix prize data (Narayanan and Shmatikoff, 2008), which demonstrated that supposedly anonymised datasets could be reliably de-anonymised by cross-referencing auxiliary information. This work motivated the development of formal [[Differential Privacy]] (Dwork et al., 2006) as a mathematically rigorous alternative to ad hoc anonymisation.
-    - AI-specific breach vectors received systematic attention from 2017 onwards. Shokri et al. (2017) formalised membership inference attacks, demonstrating that model confidence scores leak training set membership information. Fredrikson et al. (2015) demonstrated model inversion in medical settings. Tramèr et al. (2016) demonstrated model extraction against commercial ML APIs. Carlini et al. (2021, 2023) catalogued memorisation in large language models, showing that GPT-2 and larger models could reproduce verbatim training sequences including personal addresses and phone numbers under targeted prompting. The OWASP Foundation codified the evolving threat landscape into the OWASP Top 10 for LLM Applications (2024/2025 edition), with prompt injection consistently at position one. The Hogan Lovells report (2024) provided a practitioner synthesis of model inversion and membership inference risks for legal and compliance audiences. Research groups at the Alan Turing Institute, UCL Information Security Research Group, and the University of Edinburgh's Security and Privacy group have contributed to the UK academic landscape, while industry research at Google DeepMind, Microsoft Research Cambridge, and Arm Research in Cambridge addresses deployment-level mitigations.
+    - The formal study of data breaches in the context of machine learning originated with foundational security work on statistical databases in the 1970s (Denning and Schlörer, 1983), but the modern threat landscape was crystallised by the re-identification attacks on AOL search logs (Narayanan and Shmatikoff, 2006) and Netflix prize data (Narayanan and Shmatikoff, 2008), which demonstrated that supposedly anonymised datasets [private] be reliably de-anonymised by cross-referencing auxiliary information. This work motivated the development of formal [[Differential Privacy]] (Dwork et al., 2006) as a mathematically rigorous alternative to ad hoc anonymisation.
+    - AI-specific breach vectors received systematic attention from 2017 onwards. Shokri et al. (2017) formalised membership inference attacks, demonstrating that model confidence scores leak training set membership information. Fredrikson et al. (2015) demonstrated model inversion in medical settings. Tramèr et al. (2016) demonstrated model extraction against commercial ML APIs. Carlini et al. (2021, 2023) catalogued memorisation in large language models, showing that GPT-2 and larger models [private] reproduce verbatim training sequences including personal addresses and phone numbers under targeted prompting. The OWASP Foundation codified the evolving threat landscape into the OWASP Top 10 for LLM Applications (2024/2025 edition), with prompt injection consistently at position one. The Hogan Lovells report (2024) provided a practitioner synthesis of model inversion and membership inference risks for legal and compliance audiences. Research groups at the Alan Turing Institute, UCL Information Security Research Group, and the University of Edinburgh's Security and Privacy group have contributed to the UK academic landscape, while industry research at Google DeepMind, Microsoft Research Cambridge, and Arm Research in Cambridge addresses deployment-level mitigations.
   - ## Current Landscape (2026)
     - The data breach environment in 2026 is characterised by increasing sophistication of attacks, AI-assisted attack tooling, and an expanding regulatory perimeter. Practical DevSecOps (2026) reports that 77% of businesses experienced an AI-related security incident in 2024, with NIST documenting over a 2,000% increase in AI-specific CVEs since 2022. The average global breach cost fell slightly from $4.88M to $4.44M in 2025 (IBM), driven by faster mean-time-to-detection rather than reduced attack volume. Ransomware remains the dominant breach modality at 44% of incidents, with human element involvement at approximately 60% (Verizon DBIR 2025).
     - In the EU, GDPR fines reached nearly €1.2 billion in 2025, reflecting active enforcement across sectors. The ICO in the UK has pursued enforcement actions against AI companies handling personal data at scale, and the Cyber Security and Resilience Bill (Royal Assent anticipated 2026) represents the most significant update to UK cyber security legislation since the 2018 NIS Regulations. The Bill introduces 24-hour initial breach notification (versus the current 72-hour GDPR window), bringing the UK into closer alignment with EU NIS2 while establishing a distinct UK framework. Penalties of up to £17M or 4% of global turnover for serious failures provide a meaningful deterrent.

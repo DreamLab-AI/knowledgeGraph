@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0034 repeatability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,22 +51,46 @@ public: true
   "quality": 0.7,
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0035-accuracy", "label": "rb 0035 accuracy"}
+      {
+        "@id": "urn:ngm:class:rb-0035-accuracy",
+        "label": "rb 0035 accuracy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:precision", "label": "Precision"},
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"},
-      {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"}
+      {
+        "@id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
-      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"}
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+      {
+        "@id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:rb-0036-resolution", "label": "rb 0036 resolution"}
+      {
+        "@id": "urn:ngm:class:rb-0036-resolution",
+        "label": "rb 0036 resolution"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0034-repeatability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:30c6ffd9b5e7a46aff9c2207efc9763998678677269df0b4ec789ea25f692ccb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Repeatability (RB-0034) is the ISO 9283-defined metric expressing how closely a robot returns to the same commanded position or orientation on repeated attempts under identical conditions. Measured as the radius RP of the sphere that contains 95% of attained positions, it is a direct function of mechanical compliance, backlash, controller resolution, and thermal effects. Repeatability is typically in the range 0.01–0.1 mm for precision industrial arms and is the dominant specification criterion for assembly and welding tasks.

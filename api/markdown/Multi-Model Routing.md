@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Model Routing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "multi-model-routing",
   "title": "Multi-Model Routing",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Model Diversification", "Local AI Deployment"],
+  "vc:outboundWikilinks": [
+    "AI Model Diversification",
+    "Local AI Deployment"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-architecture",
+      "label": "Model Architecture"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:model-capacity", "label": "Model Capacity"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

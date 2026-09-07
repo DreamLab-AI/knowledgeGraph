@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Knowledge Retrieval
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Knowledge retrieval is the process of locating and returning relevant information from a knowledge source in response to a query or information need. It extends classical information retrieval by operating over structured knowledge, semantic representations and contextual relevance rather than keyword matching alone. It is a foundational capability for question answering, retrieval-augmented generation and conversational agents.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:chatbots", "label": "Chatbots"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      }
     ]
   },
   "quality": 0.72

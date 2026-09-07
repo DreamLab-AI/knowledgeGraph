@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Double-Blind Review
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:double-blind-review", "@type":"Page", "title":"Double-Blind Review", "vc:slug":"double-blind-review", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:double-blind-review",
+  "@type": "Page",
+  "title": "Double-Blind Review",
+  "vc:slug": "double-blind-review",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

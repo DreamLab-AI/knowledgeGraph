@@ -1,36 +1,125 @@
----
-public: true
----
-
-# International Financial Architecture
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:international-financial-architecture", "@type":"Page", "title":"International Financial Architecture", "vc:slug":"international-financial-architecture", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:international-financial-architecture",
-  "@type":"Class",
-  "label":"International Financial Architecture",
-  "definition":"The international financial architecture is the framework of institutions, rules, standards, and cooperative arrangements that govern cross-border finance, monetary relations, and the management of global financial stability. It comprises multilateral institutions such as the International Monetary Fund, standard-setting bodies including the Financial Stability Board and the Bank for International Settlements, and the conventions governing exchange rates, capital flows, and crisis resolution. Its purpose is to coordinate macroprudential policy, contain systemic risk, and provide mechanisms for surveillance, liquidity provision, and orderly adjustment across the global financial system.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:financial-system","label":"Financial System"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:financial-system","label":"Financial System"}],
-    "hasPart":[{"@id":"urn:ngm:class:imf","label":"International Monetary Fund"},{"@id":"urn:ngm:class:financial-stability-board","label":"Financial Stability Board"}],
-    "uses":[{"@id":"urn:ngm:class:macroprudential-policy","label":"Macroprudential Policy"},{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-    "enables":[{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}],
-    "supports":[{"@id":"urn:ngm:class:cross-border-payments","label":"Cross-Border Payments"}],
-    "requires":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-    "implements":[{"@id":"urn:ngm:class:macroprudential-policy","label":"Macroprudential Policy"}],
-    "dependsOn":[{"@id":"urn:ngm:class:central-banking","label":"Central Banking"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"},{"@id":"urn:ngm:class:central-bank-digital-currency","label":"Central Bank Digital Currency"}],
-    "relatedTo":[{"@id":"urn:ngm:class:systemic-risk","label":"Systemic Risk"},{"@id":"urn:ngm:class:bank-for-international-settlements","label":"Bank for International Settlements"},{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}]
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:international-financial-architecture",
+  "@type": "Page",
+  "title": "International Financial Architecture",
+  "vc:slug": "international-financial-architecture",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:international-financial-architecture",
+  "@type": "Class",
+  "label": "International Financial Architecture",
+  "definition": "The international financial architecture is the framework of institutions, rules, standards, and cooperative arrangements that govern cross-border finance, monetary relations, and the management of global financial stability. It comprises multilateral institutions such as the International Monetary Fund, standard-setting bodies including the Financial Stability Board and the Bank for International Settlements, and the conventions governing exchange rates, capital flows, and crisis resolution. Its purpose is to coordinate macroprudential policy, contain systemic risk, and provide mechanisms for surveillance, liquidity provision, and orderly adjustment across the global financial system.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-system",
+      "label": "Financial System"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:imf",
+        "label": "International Monetary Fund"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "@id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:global-financial-architecture","label":"Global Financial Architecture"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:global-financial-architecture",
+      "label": "Global Financial Architecture"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

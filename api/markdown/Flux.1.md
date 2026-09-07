@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Flux.1
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

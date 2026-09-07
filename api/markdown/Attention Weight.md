@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Attention Weight
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,64 +7,225 @@ public: true
   "title": "Attention Weight",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:owl:class:telecollaboration", "vc:label": "Telecollaboration"},
-    {"@id": "urn:ngm:class:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:ngm:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:ngm:class:self-attention", "vc:label": "Self Attention"},
-    {"@id": "urn:ngm:class:multi-head-attention", "vc:label": "Multi-Head Attention"},
-    {"@id": "urn:ngm:class:cross-attention", "vc:label": "Cross Attention"},
-    {"@id": "urn:ngm:class:query-key-value", "vc:label": "Query Key Value"},
-    {"@id": "urn:ngm:class:softmax-function", "vc:label": "Softmax Function"},
-    {"@id": "urn:ngm:class:positional-encoding", "vc:label": "Positional Encoding"},
-    {"@id": "urn:ngm:class:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:ngm:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:ngm:class:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:ngm:class:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:ngm:class:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:ngm:class:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:ngm:class:machine-translation", "vc:label": "Machine Translation"},
-    {"@id": "urn:ngm:class:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:ngm:class:embedding", "vc:label": "Embedding"},
-    {"@id": "urn:ngm:class:matrix-multiplication", "vc:label": "Matrix Multiplication"},
-    {"@id": "urn:ngm:class:layer-normalisation", "vc:label": "Layer Normalisation"},
-    {"@id": "urn:ngm:class:feed-forward-network", "vc:label": "Feed Forward Network"},
-    {"@id": "urn:ngm:class:recurrent-neural-network", "vc:label": "Recurrent Neural Network"},
-    {"@id": "urn:ngm:class:long-short-term-memory", "vc:label": "Long Short Term Memory"},
-    {"@id": "urn:ngm:class:bert", "vc:label": "BERT"},
-    {"@id": "urn:ngm:class:gpt", "vc:label": "GPT"},
-    {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:ngm:class:image-captioning", "vc:label": "Image Captioning"},
-    {"@id": "urn:ngm:class:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:ngm:class:sequence-to-sequence-learning", "vc:label": "Sequence-to-Sequence Learning"},
-    {"@id": "urn:ngm:class:state-space-model", "vc:label": "State Space Model"},
-    {"@id": "urn:ngm:class:mixture-of-experts-architecture", "vc:label": "Mixture of Experts"},
-    {"@id": "urn:ngm:class:ai-model-architecture", "vc:label": "AI Model Architecture"},
-    {"@id": "urn:ngm:class:encoder-decoder-architecture", "vc:label": "Encoder Decoder Architecture"},
-    {"@id": "urn:ngm:class:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:ngm:class:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:ngm:class:self-supervised-learning", "vc:label": "Self-Supervised Learning"},
-    {"@id": "urn:ngm:class:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:ngm:class:dropout", "vc:label": "Dropout"},
-    {"@id": "urn:ngm:class:batch-normalisation", "vc:label": "Batch Normalisation"},
-    {"@id": "urn:ngm:class:masked-language-modelling", "vc:label": "Masked Language Modelling"},
-    {"@id": "urn:ngm:class:causal-language-modelling", "vc:label": "Causal Language Modelling"},
-    {"@id": "urn:ngm:class:vision-transformer", "vc:label": "Vision Transformer"},
-    {"@id": "urn:ngm:class:alphafold", "vc:label": "AlphaFold"},
-    {"@id": "urn:ngm:class:automatic-differentiation", "vc:label": "Automatic Differentiation"},
-    {"@id": "urn:ngm:class:gpu-computing", "vc:label": "GPU Computing"},
-    {"@id": "urn:ngm:class:protein-structure-prediction", "vc:label": "Protein Structure Prediction"},
-    {"@id": "urn:ngm:class:ai-agent", "vc:label": "AI Agent"},
-    {"@id": "urn:ngm:class:scaled-dot-product-attention", "vc:label": "Scaled Dot-Product Attention"},
-    {"@id": "urn:ngm:class:nist-ai-rmf", "vc:label": "NIST AI RMF"}
+    {
+      "@id": "urn:visionflow:owl:class:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:telecollaboration",
+      "vc:label": "Telecollaboration"
+    },
+    {
+      "@id": "urn:ngm:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:ngm:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:self-attention",
+      "vc:label": "Self Attention"
+    },
+    {
+      "@id": "urn:ngm:class:multi-head-attention",
+      "vc:label": "Multi-Head Attention"
+    },
+    {
+      "@id": "urn:ngm:class:cross-attention",
+      "vc:label": "Cross Attention"
+    },
+    {
+      "@id": "urn:ngm:class:query-key-value",
+      "vc:label": "Query Key Value"
+    },
+    {
+      "@id": "urn:ngm:class:softmax-function",
+      "vc:label": "Softmax Function"
+    },
+    {
+      "@id": "urn:ngm:class:positional-encoding",
+      "vc:label": "Positional Encoding"
+    },
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:ngm:class:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:ngm:class:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:ngm:class:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:ngm:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:ngm:class:machine-translation",
+      "vc:label": "Machine Translation"
+    },
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:ngm:class:embedding",
+      "vc:label": "Embedding"
+    },
+    {
+      "@id": "urn:ngm:class:matrix-multiplication",
+      "vc:label": "Matrix Multiplication"
+    },
+    {
+      "@id": "urn:ngm:class:layer-normalisation",
+      "vc:label": "Layer Normalisation"
+    },
+    {
+      "@id": "urn:ngm:class:feed-forward-network",
+      "vc:label": "Feed Forward Network"
+    },
+    {
+      "@id": "urn:ngm:class:recurrent-neural-network",
+      "vc:label": "Recurrent Neural Network"
+    },
+    {
+      "@id": "urn:ngm:class:long-short-term-memory",
+      "vc:label": "Long Short Term Memory"
+    },
+    {
+      "@id": "urn:ngm:class:bert",
+      "vc:label": "BERT"
+    },
+    {
+      "@id": "urn:ngm:class:gpt",
+      "vc:label": "GPT"
+    },
+    {
+      "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:ngm:class:image-captioning",
+      "vc:label": "Image Captioning"
+    },
+    {
+      "@id": "urn:ngm:class:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:ngm:class:sequence-to-sequence-learning",
+      "vc:label": "Sequence-to-Sequence Learning"
+    },
+    {
+      "@id": "urn:ngm:class:state-space-model",
+      "vc:label": "State Space Model"
+    },
+    {
+      "@id": "urn:ngm:class:mixture-of-experts-architecture",
+      "vc:label": "Mixture of Experts"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "vc:label": "AI Model Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:encoder-decoder-architecture",
+      "vc:label": "Encoder Decoder Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:ngm:class:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:ngm:class:self-supervised-learning",
+      "vc:label": "Self-Supervised Learning"
+    },
+    {
+      "@id": "urn:ngm:class:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:ngm:class:dropout",
+      "vc:label": "Dropout"
+    },
+    {
+      "@id": "urn:ngm:class:batch-normalisation",
+      "vc:label": "Batch Normalisation"
+    },
+    {
+      "@id": "urn:ngm:class:masked-language-modelling",
+      "vc:label": "Masked Language Modelling"
+    },
+    {
+      "@id": "urn:ngm:class:causal-language-modelling",
+      "vc:label": "Causal Language Modelling"
+    },
+    {
+      "@id": "urn:ngm:class:vision-transformer",
+      "vc:label": "Vision Transformer"
+    },
+    {
+      "@id": "urn:ngm:class:alphafold",
+      "vc:label": "AlphaFold"
+    },
+    {
+      "@id": "urn:ngm:class:automatic-differentiation",
+      "vc:label": "Automatic Differentiation"
+    },
+    {
+      "@id": "urn:ngm:class:gpu-computing",
+      "vc:label": "GPU Computing"
+    },
+    {
+      "@id": "urn:ngm:class:protein-structure-prediction",
+      "vc:label": "Protein Structure Prediction"
+    },
+    {
+      "@id": "urn:ngm:class:ai-agent",
+      "vc:label": "AI Agent"
+    },
+    {
+      "@id": "urn:ngm:class:scaled-dot-product-attention",
+      "vc:label": "Scaled Dot-Product Attention"
+    },
+    {
+      "@id": "urn:ngm:class:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {"vc:key": "legacy-term-id", "vc:value": "AI-0806"},
-    {"vc:key": "preferred-term", "vc:value": "Attention Weight"}
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-0806"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Attention Weight"
+    }
   ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
-  "prov:generatedAtTime": {"@value": "2026-05-18T07:12:05Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-18T07:12:05Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -90,36 +246,90 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:softmax-function", "label": "Softmax Function"},
-      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"}
+      {
+        "@id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      },
+      {
+        "@id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:matrix-multiplication", "label": "Matrix Multiplication"},
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"}
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
-      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ]
   },
   "quality": 0.88,
@@ -128,56 +338,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "OntologyEnrichmentV2"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:attention-weight:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7a4acc9eef31246577bd0585054c055e1afc9ed69a39c0592361ee56e10c75c7"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:owl:class:artificial-intelligence", "kind": "ResolvedLink"},
-    {"raw": "[[Telecollaboration]]", "resolved": "urn:visionflow:owl:class:telecollaboration", "kind": "ResolvedLink"},
-    {"raw": "[[Attention Mechanism]]", "resolved": "urn:ngm:class:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:ngm:class:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Self Attention]]", "resolved": "urn:ngm:class:self-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Head Attention]]", "resolved": "urn:ngm:class:multi-head-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Cross Attention]]", "resolved": "urn:ngm:class:cross-attention", "kind": "ResolvedLink"},
-    {"raw": "[[Query Key Value]]", "resolved": "urn:ngm:class:query-key-value", "kind": "ResolvedLink"},
-    {"raw": "[[Softmax Function]]", "resolved": "urn:ngm:class:softmax-function", "kind": "ResolvedLink"},
-    {"raw": "[[Positional Encoding]]", "resolved": "urn:ngm:class:positional-encoding", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:ngm:class:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:ngm:class:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:ngm:class:explainable-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Backpropagation]]", "resolved": "urn:ngm:class:backpropagation", "kind": "ResolvedLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:ngm:class:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:ngm:class:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Translation]]", "resolved": "urn:ngm:class:machine-translation", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:ngm:class:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Embedding]]", "resolved": "urn:ngm:class:embedding", "kind": "ResolvedLink"},
-    {"raw": "[[Matrix Multiplication]]", "resolved": "urn:ngm:class:matrix-multiplication", "kind": "ResolvedLink"},
-    {"raw": "[[Layer Normalisation]]", "resolved": "urn:ngm:class:layer-normalisation", "kind": "ResolvedLink"},
-    {"raw": "[[Feed Forward Network]]", "resolved": "urn:ngm:class:feed-forward-network", "kind": "ResolvedLink"},
-    {"raw": "[[Recurrent Neural Network]]", "resolved": "urn:ngm:class:recurrent-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Long Short Term Memory]]", "resolved": "urn:ngm:class:long-short-term-memory", "kind": "ResolvedLink"},
-    {"raw": "[[BERT]]", "resolved": "urn:ngm:class:bert", "kind": "ResolvedLink"},
-    {"raw": "[[GPT]]", "resolved": "urn:ngm:class:gpt", "kind": "ResolvedLink"},
-    {"raw": "[[Multimodal AI]]", "resolved": "urn:ngm:class:multimodal-ai-architecture-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Image Captioning]]", "resolved": "urn:ngm:class:image-captioning", "kind": "ResolvedLink"},
-    {"raw": "[[Speech Recognition]]", "resolved": "urn:ngm:class:speech-recognition", "kind": "ResolvedLink"},
-    {"raw": "[[Sequence-to-Sequence Learning]]", "resolved": "urn:ngm:class:sequence-to-sequence-learning", "kind": "ResolvedLink"},
-    {"raw": "[[State Space Model]]", "resolved": "urn:ngm:class:state-space-model", "kind": "ResolvedLink"},
-    {"raw": "[[Mixture of Experts]]", "resolved": "urn:ngm:class:mixture-of-experts-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[AI Model Architecture]]", "resolved": "urn:ngm:class:ai-model-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Encoder Decoder Architecture]]", "resolved": "urn:ngm:class:encoder-decoder-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Graph Neural Network]]", "resolved": "urn:ngm:class:graph-neural-network", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -425,7 +585,7 @@ public: true
 
   **Mechanistic completeness at scale**: The mechanistic interpretability programme has achieved detailed circuit-level understanding of specific behaviours in models up to approximately 7 billion parameters. Extending this methodology to frontier models (100B–1T parameters) remains a major open challenge: the number of potential circuits grows super-exponentially, and current automated circuit discovery methods (edge attribution patching) are computationally expensive relative to model scale. Research priorities include developing scalable superposition decomposition techniques (sparse autoencoders applied to residual stream directions), hierarchical circuit abstractions that summarise macro-behaviour without enumerating every micro-circuit, and formal verification methods that certify properties of attention head function rather than merely observing them empirically.
 
-  **Sparse and adaptive attention**: The field is moving from static sparse patterns (Longformer, BigBird, Sparse Transformer) toward dynamically computed sparsity — systems where the model learns which query-key pairs require full attention based on content, allocating full-precision attention weights only to the most informative interactions. Approaches include learned token routing (routing each key to a subset of queries), content-based recall mechanisms (the model first identifies candidate positions using a fast lookup, then applies full attention only to those), and hierarchical attention with coarse-then-fine selection. These methods could reduce effective attention cost from O(n²) toward O(n log n) or O(n × k) for constant k retrieved positions, enabling practical attention over document-scale contexts of millions of tokens.
+  **Sparse and adaptive attention**: The field is moving from static sparse patterns (Longformer, BigBird, Sparse Transformer) toward dynamically computed sparsity — systems where the model learns which query-key pairs require full attention based on content, allocating full-precision attention weights only to the most informative interactions. Approaches include learned token routing (routing each key to a subset of queries), content-based recall mechanisms (the model first identifies candidate positions using a fast lookup, then applies full attention only to those), and hierarchical attention with coarse-then-fine selection. These methods [private] reduce effective attention cost from O(n²) toward O(n log n) or O(n × k) for constant k retrieved positions, enabling practical attention over document-scale contexts of millions of tokens.
 
   **Structured and relational attention**: Incorporating domain-specific structural inductive biases into attention weight computation — tree-structured attention for parsing, graph-structured attention for knowledge graphs and molecular graphs, temporal-hierarchical attention for time-series and genomic sequences — allows the attention weight matrices to encode relational structure rather than treating all position pairs as equally plausible. Integration with [[Graph Neural Network]] architectures is particularly active: graph transformer models (Graphormer, Kreuzer et al.; GT, Dwivedi et al.) apply attention weights over graph-adjacent nodes, enabling transformer-style [[Self Attention]] to operate over irregularly structured data including protein interaction networks, knowledge graphs, and social network graphs.
 
@@ -463,7 +623,7 @@ public: true
 
   These positions have practical implications for how attention weights are used in production AI systems. Healthcare AI applications (clinical NLP tools used in NHS trusts, for example) often use attention weight visualisations as evidence summaries — showing clinicians which parts of a note the model used when generating a risk score. The evidential validity of these summaries is contested: they may be accurate representations of the model's focus (supporting the attention-as-probe position) or potentially misleading if the underlying computation relies on distributed, superposed representations that the attention matrix does not directly capture (supporting the attention-as-symptom position). UK regulatory guidance on AI explainability (from DSIT and the NHS AI Lab) is beginning to engage with this technical debate, with implications for how AI product documentation must characterise the role of attention weight visualisations in clinical decision support workflows.
 
-  The integration of attention weight analysis with [[Transfer Learning]] and [[Self-Supervised Learning]] pre-training paradigms has created the modern foundation model ecosystem. Models pre-trained via [[Backpropagation]] on massive corpora develop attention weight matrices that encode rich linguistic and world knowledge through the statistics of co-occurrence. [[Retrieval-Augmented Generation]] systems extend this by providing an explicit external memory — retrieved document chunks — that is integrated into the model's context via cross-attention weight allocation, effectively allowing the model to decide how much weight to give each retrieved document passage when generating an answer. The attention weights in RAG systems thus serve a dual function: as information routing within the model's context window and as an implicit document relevance re-ranking that could in principle be inspected to understand why the model drew on certain sources over others.
+  The integration of attention weight analysis with [[Transfer Learning]] and [[Self-Supervised Learning]] pre-training paradigms has created the modern foundation model ecosystem. Models pre-trained via [[Backpropagation]] on massive corpora develop attention weight matrices that encode rich linguistic and world knowledge through the statistics of co-occurrence. [[Retrieval-Augmented Generation]] systems extend this by providing an explicit external memory — retrieved document chunks — that is integrated into the model's context via cross-attention weight allocation, effectively allowing the model to decide how much weight to give each retrieved document passage when generating an answer. The attention weights in RAG systems thus serve a dual function: as information routing within the model's context window and as an implicit document relevance re-ranking that [private] in principle be inspected to understand why the model drew on certain sources over others.
 
   [[Dropout]] regularisation, applied during training, has a subtle but important interaction with attention weight learning: by randomly zeroing out value vectors during training, dropout prevents the model from over-relying on any single attention head's information pathway, encouraging redundant representations across multiple heads that together constitute a more robust overall routing strategy. [[Batch Normalisation]] is not typically applied within transformer attention (replaced by [[Layer Normalisation]] which normalises across features rather than across batch), but the normalisation philosophy — preventing statistical covariate shift that would destabilise attention weight distributions across layers — is critical to the trainability of very deep transformer stacks.
 

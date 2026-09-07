@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automated Market Maker
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,72 +198,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:automated-market-maker:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d4c2e7003781285ca0b242e0cce8d8212aaaa1e32bcb79b58d0c65c2943fa3e9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Liquidity Pools]]",
-      "resolved": "urn:visionflow:linked:liquidity-pools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Permissionless Trading]]",
-      "resolved": "urn:visionflow:linked:permissionless-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pricing Algorithms]]",
-      "resolved": "urn:visionflow:linked:pricing-algorithms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Token Swaps]]",
-      "resolved": "urn:visionflow:linked:token-swaps",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi Protocol]]",
-      "resolved": "urn:visionflow:owl:class:de-fi-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Provision]]",
-      "resolved": "urn:visionflow:owl:class:liquidity-provision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Automated Market Maker (AMM) is a decentralized exchange protocol that uses algorithmic pricing mechanisms and liquidity pools instead of traditional order books, enabling permissionless token swaps where prices adjust automatically based on supply and demand within smart contract-managed reserves.

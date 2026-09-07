@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Technology Transfer
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

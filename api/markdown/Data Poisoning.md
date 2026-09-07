@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Poisoning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -120,16 +115,34 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:data-augmentation-strategies",
+        "label": "Data Augmentation Strategies"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ]
   },
   "provenance": {
@@ -139,107 +152,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-poisoning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eb79e82ce2dd253246564c5ce600ec7139878ea1b6f4edfde5d6f6518b79a801"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ball2020metaverse]]",
-      "resolved": "urn:visionflow:linked:ball2020metaverse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23894:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MITRE ATLAS]]",
-      "resolved": "urn:visionflow:linked:mitre-atlas",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NCSC]]",
-      "resolved": "urn:visionflow:linked:ncsc",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[neural networks]]",
-      "resolved": "urn:visionflow:linked:neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI Risk Management Framework]]",
-      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Wouters2022]]",
-      "resolved": "urn:visionflow:linked:wouters2022",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[computer vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Diffusion Models]]",
-      "resolved": "urn:visionflow:owl:class:diffusion-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fooocus]]",
-      "resolved": "urn:visionflow:owl:class:fooocus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graphing]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-graphing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Latent Space]]",
-      "resolved": "urn:visionflow:owl:class:latent-space",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformers]]",
-      "resolved": "urn:visionflow:owl:class:transformers",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Unreal Engine]]",
-      "resolved": "urn:visionflow:owl:class:unreal-engine",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A training-time adversarial attack where malicious actors inject, modify, or manipulate training data to compromise model integrity, causing targeted misclassifications, backdoor triggers, or general performance degradation.

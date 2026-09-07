@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise AI Spend
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "enterprise-ai-spend",
   "title": "Enterprise AI Spend",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Adoption Metrics", "Ramp Financial Data"],
+  "vc:outboundWikilinks": [
+    "AI Adoption Metrics",
+    "Ramp Financial Data"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data", "label": "Data"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data", "label": "Data"}, {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

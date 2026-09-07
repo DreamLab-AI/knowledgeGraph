@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Deposit Return Scheme
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A deposit return scheme is a circular-economy mechanism in which consumers pay a small refundable deposit on a beverage container at purchase and reclaim it on returning the empty for recycling or reuse. The financial incentive drives high collection rates and clean material streams, reducing litter and supporting closed-loop recycling. It is a recognised instrument of reverse logistics and extended producer responsibility.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:reverse-logistics", "label": "Reverse Logistics"},
-      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"}
+      {
+        "@id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
     ]
   },
   "quality": 0.72

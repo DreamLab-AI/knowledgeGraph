@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Data Structure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,25 +168,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-data-structure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:55bda02bc46d2a6a1dd13f37825e2e80117d8a7feef7d10a4d9f551882cf4dd2"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A Spatial Data Structure is a data organisation scheme that partitions, indexes, or hierarchically organises geometric, geographic, or positional information to enable efficient queries over proximity, containment, intersection, and visibility. These structures are foundational to [[Computational Geometry]], [[Real-Time Rendering]], [[Physics Simulation]], and [[Geographic Information System]] applications, providing sub-linear query complexity compared to brute-force enumeration. Core families include space-partitioning trees such as [[Octree]], [[k-d Tree]], [[BSP Tree]], and [[Quadtree]]; object-hierarchy schemes like the [[Bounding Volume Hierarchy]]; and hash-based approaches such as [[Spatial Hash Grid]] and [[R-Tree]] for database settings.
 
@@ -216,7 +192,7 @@ public: true
   - #### Hash and Grid Structures
     - **[[Spatial Hash Grid]]** — Maps continuous-space coordinates to discrete hash-table cells using a spatial hash function (e.g. Teschner et al. prime-number hash). Provides O(1) average-case insertion and lookup for uniformly distributed data; memory usage is proportional to populated cells only. Widely used in particle simulations, SPH fluid solvers, and broad-phase [[Collision Detection]].
     - **[[R-Tree]]** — Groups spatially proximate objects into minimum bounding rectangles (MBRs) in a balanced tree. The primary structure for [[Spatial Database]] systems (PostGIS, SpatiaLite, Oracle Spatial). Variants include R*-tree (improved insertion heuristics) and R+-tree (non-overlapping rectangles).
-    - **[[Morton Code]] (Z-order curve)** — Maps multi-dimensional coordinates to a 1-D index preserving spatial locality by interleaving coordinate bits. Used to impose a cache-coherent linear order on spatial data for GPU-friendly BVH construction (e.g. LBVH algorithms) and spatial sorting in [[Point Cloud Processing]].
+    - **[[Morton Code]] (Z-order curve)** — Maps multi-dimensional coordinates to a 1-D [private] preserving spatial locality by interleaving coordinate bits. Used to impose a cache-coherent linear order on spatial data for GPU-friendly BVH construction (e.g. LBVH algorithms) and spatial sorting in [[Point Cloud Processing]].
   - #### Dynamic and Hybrid Approaches
     - **Loose/dynamic octrees** — Extend static octrees by relaxing node-boundary constraints, allowing objects to remain in parent nodes until they fit. Reduces costly node transfers for moving objects.
     - **DBVT (Dynamic Bounding Volume Tree)** — Used in the Bullet [[Physics Simulation]] engine; supports efficient incremental re-fitting as objects move, with selective sub-tree rebuilds.

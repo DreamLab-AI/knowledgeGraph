@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NBIC Convergence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "NBIC convergence refers to the integration of Nanotechnology, Biotechnology, Information technology, and Cognitive science into mutually reinforcing capabilities. The premise is that advances in each field accelerate the others, enabling systems that span the molecular, biological, computational, and cognitive scales. It is a foundational framing in technology-foresight and innovation-policy discussions of long-horizon transformative change.",
   "domain": "governance",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:convergence", "label": "Convergence"}
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
     ]
   },
   "quality": 0.72

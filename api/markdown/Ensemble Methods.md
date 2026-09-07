@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ensemble Methods
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,62 +178,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ensemble-methods:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c475e017a595c153ea5c03c3a835ff3190c53d9fa57544d4176f5b5ae3f6e234"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Generalization]]",
-      "resolved": "urn:visionflow:linked:generalization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Gradient Boosting]]",
-      "resolved": "urn:visionflow:linked:gradient-boosting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Combination]]",
-      "resolved": "urn:visionflow:linked:model-combination",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Random Forest]]",
-      "resolved": "urn:visionflow:linked:random-forest",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Ensemble Methods is a concept within the ai domain.

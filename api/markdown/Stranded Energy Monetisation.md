@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stranded Energy Monetisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -158,4 +153,3 @@ public: true
   - From an energy policy perspective, stranded energy monetisation functions as a demand-side mechanism that improves renewable curtailment economics, potentially accelerating investment in grid-scale renewables in areas where transmission buildout is slow. Texas became the most prominent example: after ERCOT opened its market to large industrial loads in 2020, several gigawatts of mining capacity enrolled as dispatchable interruptible loads, curtailing voluntarily during the February 2021 storm and the 2022 summer heat waves in exchange for demand response payments.
 
   - By 2024–2025, stranded energy monetisation has become a recognised category in energy regulatory frameworks. The US Department of Energy published a landscape analysis of Bitcoin mining's grid interactions in 2023, and several FERC proceedings have addressed miner participation in capacity markets. International projects span Iceland's geothermal surplus, Bhutan's hydroelectric excess, and Ethiopian dam overflow. Critics note that not all stranded energy claimed by miners is genuinely curtailed—some operations consume power that would otherwise have served other loads—and verification standards remain nascent. Initiatives like the [[Sustainable Bitcoin Protocol]] are developing attestation frameworks to formally certify stranded and renewable energy claims.
-

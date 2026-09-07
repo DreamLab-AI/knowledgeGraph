@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Paris Agreement Article 6
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Paris Agreement Article 6 is the provision of the 2015 Paris Agreement that establishes mechanisms for countries to cooperate in meeting emissions-reduction targets, including international transfer of mitigation outcomes and a centralized crediting market. It defines accounting rules to prevent double-counting when carbon reductions are traded between parties. Article 6 provides the international legal basis for cross-border carbon markets and corresponding adjustments.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:carbon-credit-tracking", "label": "Carbon Credit Tracking"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SPARQL Endpoint
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,58 +56,74 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:sparql-query-engine", "label": "Sparql Query Engine"},
-      {"@id": "urn:ngm:class:query-processor", "label": "Query Processor"}
+      {
+        "@id": "urn:ngm:class:sparql-query-engine",
+        "label": "Sparql Query Engine"
+      },
+      {
+        "@id": "urn:ngm:class:query-processor",
+        "label": "Query Processor"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"}
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:provenance-ontology-prov-o", "label": "Provenance Ontology (PROV-O)"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-ontology-prov-o",
+        "label": "Provenance Ontology (PROV-O)"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
-      {"@id": "urn:ngm:class:sparql-examples", "label": "SPARQL EXAMPLES"}
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "@id": "urn:ngm:class:sparql-examples",
+        "label": "SPARQL EXAMPLES"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-access-interface", "label": "Data Access Interface"}
+      {
+        "@id": "urn:ngm:class:data-access-interface",
+        "label": "Data Access Interface"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sparql-endpoint:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:daafb2e1e94607dff95762b6f63e6c5cf498c36058f7ed2498a392e07af39956"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Access Interface]]",
-      "resolved": "urn:visionflow:owl:class:data-access-interface",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A sparql endpoint component in the Metaverse domain that required by ProvenanceOntologyProvO.

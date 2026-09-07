@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Functional Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:functional-analysis:7c2bf0df0763",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c44c73fcc5c5bde97174029ab4ad1d22204d241616538400a846b517df045131"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Convex Optimisation]]",
-      "resolved": "urn:visionflow:linked:convex-optimisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Functional analysis is the branch of mathematics studying vector spaces with a notion of limit, such as Banach and Hilbert spaces, and the linear operators acting on them. It underlies much of modern analysis and its applications.

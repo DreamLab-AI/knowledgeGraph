@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Blockchain Node
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:blockchain-node", "@type":"Page", "title":"Blockchain Node", "vc:slug":"blockchain-node", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:blockchain-node",
+  "@type": "Page",
+  "title": "Blockchain Node",
+  "vc:slug": "blockchain-node",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -120,6 +125,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - A blockchain node is a computer running protocol software that maintains a copy of the ledger, validates transactions and blocks, and relays them across the [[Peer-to-Peer Network]]. Nodes collectively enforce the [[Consensus Mechanism]] and provide the [[Decentralisation]] that underpins a [[Distributed Ledger]].
 - ### Overview

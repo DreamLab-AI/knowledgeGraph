@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inference Serving
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,46 +200,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inference-serving:b7a26fd99630",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4f2264cd683228e4854430d164c6b389f0a433a282887119aa5678a502b459d6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Model Inference Engine]]",
-      "resolved": "urn:visionflow:linked:ai-model-inference-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Serving]]",
-      "resolved": "urn:visionflow:linked:model-serving",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Latency]]",
-      "resolved": "urn:visionflow:linked:latency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPU]]",
-      "resolved": "urn:visionflow:linked:gpu",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

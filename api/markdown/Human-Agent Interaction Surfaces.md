@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Interfaces]]
-# Human-Agent Interaction Surfaces
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,19 +75,40 @@ elevatedFrom:: [[Interfaces]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:node-graph-visual-programming-interface", "label": "Node-Graph Visual Programming Interface"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:node-graph-visual-programming-interface",
+        "label": "Node-Graph Visual Programming Interface"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agents", "label": "Agents"},
-      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"}
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
     ]
   },
   "sameAs": [
@@ -104,67 +119,6 @@ elevatedFrom:: [[Interfaces]]
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interfaces:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0de0565568f1477e3004f53a8a8046e5c71ff5b840f66523d3b308d44dcd29ba"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Langflow]]",
-      "resolved": "urn:visionflow:linked:langflow",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware and Edge]]",
-      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human-Agent Interaction Surfaces]]",
-      "resolved": "urn:visionflow:owl:class:interfaces",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node-Graph Visual Programming Interface]]",
-      "resolved": "urn:visionflow:owl:class:node-based-visual-interfaces",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Interfaces is a concept within the ngm domain.

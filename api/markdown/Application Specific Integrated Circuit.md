@@ -1,36 +1,129 @@
----
-public: true
----
-
-# Application Specific Integrated Circuit
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:application-specific-integrated-circuit", "@type":"Page", "title":"Application Specific Integrated Circuit", "vc:slug":"application-specific-integrated-circuit", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:application-specific-integrated-circuit",
+  "@type": "Page",
+  "title": "Application Specific Integrated Circuit",
+  "vc:slug": "application-specific-integrated-circuit",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:application-specific-integrated-circuit",
-  "@type":"Class",
-  "label":"Application Specific Integrated Circuit",
-  "definition":"An application-specific integrated circuit (ASIC) is a chip designed and fabricated to perform a single, fixed function with maximum efficiency rather than to run general-purpose programs. In blockchain, ASICs are built to compute a particular proof-of-work hash function at far higher speed and energy efficiency than general processors, making them dominant in mining for hashes such as SHA-256. Because the silicon is customised for one task, ASICs offer superior performance per watt but cannot be repurposed for other workloads.",
-  "domain":"blockchain",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:mining-hardware","label":"Mining Hardware"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:mining","label":"Mining"}],
-    "uses":[{"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"},{"@id":"urn:ngm:class:sha-256","label":"SHA-256"}],
-    "enables":[{"@id":"urn:ngm:class:proof-of-work","label":"Proof of Work"},{"@id":"urn:ngm:class:mining","label":"Mining"},{"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"}],
-    "requires":[{"@id":"urn:ngm:class:energy-consumption","label":"Energy Consumption"}],
-    "implements":[{"@id":"urn:ngm:class:sha-256","label":"SHA-256"},{"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"}],
-    "supports":[{"@id":"urn:ngm:class:bitcoin","label":"Bitcoin"},{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"},{"@id":"urn:ngm:class:block-reward","label":"Block Reward"}],
-    "relatedTo":[{"@id":"urn:ngm:class:mining-hardware","label":"Mining Hardware"},{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:fpga","label":"FPGA"},{"@id":"urn:ngm:class:gpu","label":"GPU"},{"@id":"urn:ngm:class:field-programmable-gate-array","label":"Field Programmable Gate Array"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:application-specific-integrated-circuit",
+  "@type": "Class",
+  "label": "Application Specific Integrated Circuit",
+  "definition": "An application-specific integrated circuit (ASIC) is a chip designed and fabricated to perform a single, fixed function with maximum efficiency rather than to run general-purpose programs. In blockchain, ASICs are built to compute a particular proof-of-work hash function at far higher speed and energy efficiency than general processors, making them dominant in mining for hashes such as SHA-256. Because the silicon is customised for one task, ASICs offer superior performance per watt but cannot be repurposed for other workloads.",
+  "domain": "blockchain",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mining-hardware",
+      "label": "Mining Hardware"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mining-hardware",
+        "label": "Mining Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field Programmable Gate Array"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:asic","label":"ASIC"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:asic",
+      "label": "ASIC"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

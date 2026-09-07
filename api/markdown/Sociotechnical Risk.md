@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sociotechnical Risk
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -66,42 +61,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sociotechnical-risk:311d126ad500",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7927b8835ffff0d25cb9e814a8723aa4a83e5ab4bd208363203ee6a29645e124"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Existential AI Risk]]",
-      "resolved": "urn:visionflow:linked:existential-ai-risk",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Safety]]",
-      "resolved": "urn:visionflow:linked:ai-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Risk]]",
-      "resolved": "urn:visionflow:linked:ai-risk",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Sociotechnical risk is the potential for harm arising from the interaction between a technical system and the social context in which it is built and used. In AI it covers harms that emerge from people, institutions and technology together rather than from code alone.

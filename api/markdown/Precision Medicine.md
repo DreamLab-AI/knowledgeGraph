@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Precision Medicine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,47 +175,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:precision-medicine:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:32bd93baf91d0fd6cb0f52cea2ac473968231e0d2f7615713b9a3e356005360b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Genomics]]",
-      "resolved": "urn:visionflow:linked:genomics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Drug Discovery AI]]",
-      "resolved": "urn:visionflow:owl:class:drug-discovery-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Medical AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic data, clinical information, lifestyle factors, and environmental data to predict treatment response, identify optimal therapies, and stratify patient populations. AI-driven precision medicine enables personalised diagnosis, prognosis, and therapeutic selection based on multi-omic data integration and predictive modelling.

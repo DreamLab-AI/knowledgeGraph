@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Suggested Reading Order
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,18 +187,42 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:ai-frontier-capability-survey", "label": "AI Frontier Capability Survey"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-frontier-capability-survey",
+        "label": "AI Frontier Capability Survey"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"},
-      {"@id": "urn:ngm:class:convergence", "label": "Convergence"}
+      {
+        "@id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      },
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-artefact-update-cycle", "label": "Knowledge Artefact Update Cycle"},
-      {"@id": "urn:ngm:class:distributed-identity", "label": "Distributed Identity"}
+      {
+        "@id": "urn:ngm:class:knowledge-artefact-update-cycle",
+        "label": "Knowledge Artefact Update Cycle"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      }
     ]
   },
   "provenance": {
@@ -213,207 +232,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:suggested-reading-order:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7501496bb3a2806743240201054a4d81486c216f470b828ba88290db0d918dc4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NFTs]]",
-      "resolved": "urn:visionflow:linked:nfts",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RGB]]",
-      "resolved": "urn:visionflow:linked:rgb",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Adoption of Convergent Technologies]]",
-      "resolved": "urn:visionflow:owl:class:adoption-of-convergent-technologies",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin As Money]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin-as-money",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BTC Layer 3]]",
-      "resolved": "urn:visionflow:owl:class:btc-layer-3",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convergence]]",
-      "resolved": "urn:visionflow:owl:class:convergence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Web]]",
-      "resolved": "urn:visionflow:owl:class:decentralised-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Definitions and frameworks for Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:definitions-and-frameworks-for-metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset Risks]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset-risks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Objects]]",
-      "resolved": "urn:visionflow:owl:class:digital-objects",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Disruption Dynamics]]",
-      "resolved": "urn:visionflow:owl:class:disruption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Identity]]",
-      "resolved": "urn:visionflow:owl:class:distributed-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DreamLab Creative Technology Collective]]",
-      "resolved": "urn:visionflow:owl:class:dreamlab",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:owl:class:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Introduction to me]]",
-      "resolved": "urn:visionflow:owl:class:introduction-to-me",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning and Similar L2]]",
-      "resolved": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Embodiment Harm Taxonomy]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-and-spatial-risks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse and Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Money]]",
-      "resolved": "urn:visionflow:owl:class:money",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NICVE Virtual Reality Research Centre]]",
-      "resolved": "urn:visionflow:owl:class:national-industrial-centre-for-virtual-environments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Nostr protocol]]",
-      "resolved": "urn:visionflow:owl:class:nostr-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Octave Immersive Research Facility]]",
-      "resolved": "urn:visionflow:owl:class:octave-multi-model-laboratory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Open Generative AI tools]]",
-      "resolved": "urn:visionflow:owl:class:open-generative-ai-tools",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Techniques Survey]]",
-      "resolved": "urn:visionflow:owl:class:overview-of-machine-learning-techniques",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Image Generation]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Video]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-video",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Web Linked Data Standard]]",
-      "resolved": "urn:visionflow:owl:class:semantic-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Capability Temporal Horizon Framework]]",
-      "resolved": "urn:visionflow:owl:class:soon-next-later-ai-futurology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Spatial Web Layer]]",
-      "resolved": "urn:visionflow:owl:class:spatial-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Frontier Capability Survey]]",
-      "resolved": "urn:visionflow:owl:class:state-of-the-art-in-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Artefact Update Cycle]]",
-      "resolved": "urn:visionflow:owl:class:update-cycle",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Suggested Reading Order is a curated navigation guide that sequences the principal pages of the NarrativeGoldmine knowledge graph into a coherent pedagogical path. It maps the intended conceptual dependencies — from foundational web technologies through decentralisation, digital assets, spatial computing, and AI — enabling readers to build understanding progressively across the graph's interconnected topic areas.

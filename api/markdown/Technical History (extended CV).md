@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Technical History (extended CV)
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,21 +103,48 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:nicve-virtual-reality-research-centre", "label": "NICVE Virtual Reality Research Centre"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"}
+      {
+        "@id": "urn:ngm:class:nicve-virtual-reality-research-centre",
+        "label": "NICVE Virtual Reality Research Centre"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:knowhere-visitor-attention-system", "label": "KnoWhere Visitor Attention System"},
-      {"@id": "urn:ngm:class:dreamlab-creative-technology-collective", "label": "DreamLab Creative Technology Collective"}
+      {
+        "@id": "urn:ngm:class:knowhere-visitor-attention-system",
+        "label": "KnoWhere Visitor Attention System"
+      },
+      {
+        "@id": "urn:ngm:class:dreamlab-creative-technology-collective",
+        "label": "DreamLab Creative Technology Collective"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proprietary-large-language-models", "label": "Proprietary Large Language Models"},
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}
+      {
+        "@id": "urn:ngm:class:proprietary-large-language-models",
+        "label": "Proprietary Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
-      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Venue-Tethered Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "@id": "urn:ngm:class:venue-tethered-immersive-experience",
+        "label": "Venue-Tethered Immersive Experience"
+      }
     ]
   },
   "provenance": {
@@ -132,102 +154,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:technical-history-extended-cv:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c7cea65026c7b976a00989de158f5e66ac68a348a201473ec4fa0d8364e4839f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Objects]]",
-      "resolved": "urn:visionflow:owl:class:digital-objects",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Open Source Social Immersive Space]]",
-      "resolved": "urn:visionflow:owl:class:flossverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gemini Multimodal Language Model]]",
-      "resolved": "urn:visionflow:owl:class:gemini",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hyper personalisation]]",
-      "resolved": "urn:visionflow:owl:class:hyper-personalisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[KnoWhere Visitor Attention System]]",
-      "resolved": "urn:visionflow:owl:class:knowhere",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Venue-Tethered Immersive Experience]]",
-      "resolved": "urn:visionflow:owl:class:location-based-experience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse and Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mixed Reality]]",
-      "resolved": "urn:visionflow:owl:class:mixed-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NICVE Virtual Reality Research Centre]]",
-      "resolved": "urn:visionflow:owl:class:national-industrial-centre-for-virtual-environments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Coins]]",
-      "resolved": "urn:visionflow:owl:class:stable-coins",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trust and Safety]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Unreal Engine]]",
-      "resolved": "urn:visionflow:owl:class:unreal-engine",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technical History (extended CV) is the knowledge-graph representation of the author's professional research trajectory, spanning 15+ years leading immersive technology laboratories, securing multi-million-pound grant funding, and developing open-source metaverse and AI systems. It contextualises published research, institutional roles, and ongoing projects — including Knowhere, Flossverse, and FutureFleet — within the graph's broader topics of spatial computing, AI, and decentralised systems.
@@ -282,9 +208,9 @@ public: true
 		- We will very likely soon see the beginnings a bifurcation between highly moderated (ethics & safeguarding based AI) vs slightly less capable but more disruptive open solutions. There will be a strong imperative to ensure the responsible use of AI as its influence grows, and this will be patchy. It will require a focus on developing robust ethical frameworks for AI use, and creating ambient educational environments where learning is responsibly facilitated by AI. Many will work around this, and it remains to be seen what effect this will have. It is useful to prepare for divergent outcomes in developed and highly networked nations vs nations which use slower less capable inferencing on local models like [[Gemini Multimodal Language Model]] Nano and similar.
 		- In this phase, AI will become more integrated into our biological lives and our everyday environments.  The best can be extracted from both approaches by taking control of more flexible AI, defining risks and guard rails locally, and internalising the knowledge for the task at hand. It is more expensive, but the only path to differentiation. This is a very strong fit for contained destinations.
 		- During and after this we will see the emergence of fully autonomous agent, where AI will become so advanced and reliable that it can operate without human supervision in various sectors, leading to unprecedented levels of productivity and efficiency. Where companies, institutions, governments, and individuals have taken a choice to develop and foster their own AI capabilities, with their own rules, this boundary layer to the wider agent world will have to be very carefully designed.
-		- Another exciting aspect of this phase is the intersection of AI and Mental Health. AI companions will be capable of understanding human emotions and mental states, providing psychological support and therapeutic interventions. They could assist in managing mental health conditions and improving overall well-being. These personal mental health agents are a critical nexus for data privacy, and again, the boundary layer must be exquisitely managed.
+		- Another exciting aspect of this phase is the intersection of AI and Mental Health. AI companions will be capable of understanding human emotions and mental states, providing psychological support and therapeutic interventions. They [private] assist in managing mental health conditions and improving overall well-being. These personal mental health agents are a critical nexus for data privacy, and again, the boundary layer must be exquisitely managed.
 		- There is an opportunity here for AI systems that are designed to understand, respect, and adapt to a wide range of human experiences, perspectives, and identities, mediating those boundaries as we see a degradation of trust in objective fact in digital society. They may help us to better understand ourselves and each other, breaking down barriers and fostering a more inclusive society wherever people choose to meet. Furthermore, by acknowledging the unique forms of intelligence exhibited by AI, we can redefine what intelligence means in a diverse society. It may be confusing, but it need not be emotionally violent or intrinsically divisive.
-		- I believe that not enough attention is being paid to democratising AI resources, and lowering the marginal cost of education to zero globally, AI will play a pivotal role in reducing socio-economic disparities. This will happen naturally over time, but the incumbent and productive nations have a responsibility not to gatekeep this as they have with other technologies. It's crucial to ensure that AI advancements are distributed equitably and don't reinforce existing social inequities, and indeed failure to do so could lead to globally significant negative outcomes. Supportive AI education should start young and include playful, memorable, learning experiences. AI education engines should foster independence and trust in children by providing private, magical moments of learning and insight. We can already see how multimodal models like Gemini can accomplish this, and we are at the start of the journey. Some of these moments might occur in secret, away from adult supervision, encouraging children to explore, experiment, and learn in their own unique ways. This is a new paradigm and must be carefully and responsibly explored by creatives and experience builders. All children should have the opportunity to grow up with headphones that contain a local AI informational agent, even without connection to the internet. There is very little technical moat to prevent this; the marginal cost of production of an inferencing asic and memory is like to fall to near zero within 3 years.
+		- I believe that not enough attention is being paid to democratising AI resources, and lowering the marginal cost of education to zero globally, AI will play a pivotal role in reducing socio-economic disparities. This will happen naturally over time, but the incumbent and productive nations have a responsibility not to gatekeep this as they have with other technologies. It's crucial to ensure that AI advancements are distributed equitably and don't reinforce existing social inequities, and indeed failure to do so [private] lead to globally significant negative outcomes. Supportive AI education should start young and include playful, memorable, learning experiences. AI education engines should foster independence and trust in children by providing private, magical moments of learning and insight. We can already see how multimodal models like Gemini can accomplish this, and we are at the start of the journey. Some of these moments might occur in secret, away from adult supervision, encouraging children to explore, experiment, and learn in their own unique ways. This is a new paradigm and must be carefully and responsibly explored by creatives and experience builders. All children should have the opportunity to grow up with headphones that contain a local AI informational agent, even without connection to the internet. There is very little technical moat to prevent this; the marginal cost of production of an inferencing asic and memory is like to fall to near zero within 3 years.
 		- The manifestation of AI as a tool to support and celebrate human diversity also has profound implications for our interaction with the environment. As AI systems become more attuned to understanding and adapting to a wide range of human experiences and perspectives, they also have the potential to significantly enhance our relationship with the natural world. This transition from human flourishing to a more sustainable interaction with our environment is the next critical stage in our evolving relationship with AI.
 		- Resilience and collaborative management AI's role in predicting and monitoring envi- ronmental changes, optimizing resource consumption, and enhancing waste management will become widespread, while the carbon footprint of AI technologies will need to be minimized. Additionally, future scenarios include AI's role in Climate Change and Vildlife Conservation. Advanced AI models will help in predicting and mitigating the effects of climate change, assisting in the planning and execution of climate resilience strategies at local and global levels. AI will also play a critical role in wildlife conservation, from monitoring endangered species and their habitats, to predicting and preventing potential threats.
 		- Supporting our place: Later : AI will support human relationships with nature by monitoring and managing our physical health at a micro-level. These systems will provide educational information about our natural environment, helping us make more sustainable choices.
@@ -343,7 +269,7 @@ public: true
 			- **Engagement Example:**
 				- **Initiative:** "KnowWhere"
 				- **Role:** Leading on bid
-				- **Outcome:** I have a cluster of 5 companies involved in bidding to MITIH. They all seem positive about the process so far.
+				- **Outcome:** I have a cluster of 5 companies involved in bidding to [private]. They all seem positive about the process so far.
 				- I am working up another 3 companies for a Creative Catalyst bid.
 		- **Public Engagement**
 			- **Engagement Example:**
@@ -358,7 +284,7 @@ public: true
 		- **Understanding and Aligning with Program Goals**
 			- **Alignment Example:**
 				- Nvidia and AI cafe events this week.
-				- Jon Howard from the BBC was my contact and suggestion for the last MITIH event.
+				- Jon Howard from the BBC was my contact and suggestion for the last [private] event.
   - # Experience
   - # Personal Mission
 		- NVIDIA Omniverse digital twins

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ESG
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,52 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:esg:a43c64178463",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ae64df8f62dd0ee1d0d1805b9c74ff6685fe286f1aa5a6402f19b14b4c9b60cc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sustainability]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Corporate Governance]]",
-      "resolved": "urn:visionflow:linked:corporate-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transparency]]",
-      "resolved": "urn:visionflow:linked:transparency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:linked:accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Audit]]",
-      "resolved": "urn:visionflow:linked:audit",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Environmental, social and governance criteria used to evaluate the sustainability and ethical impact of an organisation's operations and investments.

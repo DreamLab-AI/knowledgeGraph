@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent-Based Modelling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,54 +7,185 @@ public: true
   "title": "Agent-Based Modelling",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:simulation", "vc:label": "Simulation" },
-    { "@id": "urn:visionflow:linked:innovation-diffusion", "vc:label": "Innovation Diffusion" },
-    { "@id": "urn:visionflow:linked:economic-model", "vc:label": "Economic Model" },
-    { "@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems" },
-    { "@id": "urn:visionflow:linked:computational-modelling", "vc:label": "Computational Modelling" },
-    { "@id": "urn:visionflow:linked:complex-adaptive-systems", "vc:label": "Complex Adaptive Systems" },
-    { "@id": "urn:visionflow:linked:emergence", "vc:label": "Emergence" },
-    { "@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent" },
-    { "@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning" },
-    { "@id": "urn:visionflow:linked:cellular-automata", "vc:label": "Cellular Automata" },
-    { "@id": "urn:visionflow:linked:monte-carlo-simulation", "vc:label": "Monte Carlo Simulation" },
-    { "@id": "urn:visionflow:linked:epidemiological-modelling", "vc:label": "Epidemiological Modelling" },
-    { "@id": "urn:visionflow:linked:crowd-simulation", "vc:label": "Crowd Simulation" },
-    { "@id": "urn:visionflow:linked:supply-chain-optimisation", "vc:label": "Supply Chain Optimisation" },
-    { "@id": "urn:visionflow:linked:policy-simulation", "vc:label": "Policy Simulation" },
-    { "@id": "urn:visionflow:linked:system-dynamics", "vc:label": "System Dynamics" },
-    { "@id": "urn:visionflow:linked:swarm-intelligence", "vc:label": "Swarm Intelligence" },
-    { "@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin" },
-    { "@id": "urn:visionflow:linked:game-theory", "vc:label": "Game Theory" },
-    { "@id": "urn:visionflow:linked:network-science", "vc:label": "Network Science" },
-    { "@id": "urn:visionflow:linked:social-simulation", "vc:label": "Social Simulation" },
-    { "@id": "urn:visionflow:linked:stochastic-process", "vc:label": "Stochastic Process" },
-    { "@id": "urn:visionflow:linked:discrete-event-simulation", "vc:label": "Discrete Event Simulation" },
-    { "@id": "urn:visionflow:linked:complex-systems-science", "vc:label": "Complex Systems Science" },
-    { "@id": "urn:visionflow:linked:environment-model", "vc:label": "Environment Model" },
-    { "@id": "urn:visionflow:linked:equation-based-modelling", "vc:label": "Equation-Based Modelling" },
-    { "@id": "urn:visionflow:linked:sensitivity-analysis", "vc:label": "Sensitivity Analysis" },
-    { "@id": "urn:visionflow:linked:multi-agent-reinforcement-learning", "vc:label": "Multi-Agent Reinforcement Learning" },
-    { "@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models" },
-    { "@id": "urn:visionflow:linked:genetic-algorithm", "vc:label": "Genetic Algorithm" },
-    { "@id": "urn:visionflow:linked:urban-computing", "vc:label": "Urban Computing" },
-    { "@id": "urn:visionflow:linked:agent-based-models", "vc:label": "Agent-Based Models" },
-    { "@id": "urn:visionflow:linked:computational-social-science", "vc:label": "Computational Social Science" },
-    { "@id": "urn:visionflow:linked:uncertainty-quantification", "vc:label": "Uncertainty Quantification" },
-    { "@id": "urn:visionflow:linked:scientific-computing", "vc:label": "Scientific Computing" },
-    { "@id": "urn:visionflow:linked:collective-intelligence", "vc:label": "Collective Intelligence" },
-    { "@id": "urn:visionflow:linked:feedback-loop", "vc:label": "Feedback Loop" },
-    { "@id": "urn:visionflow:linked:behavioural-modelling", "vc:label": "Behavioural Modelling" },
-    { "@id": "urn:visionflow:linked:artificial-life", "vc:label": "Artificial Life" },
-    { "@id": "urn:visionflow:linked:parallel-computing", "vc:label": "Parallel Computing" },
-    { "@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning" }
+    {
+      "@id": "urn:visionflow:linked:simulation",
+      "vc:label": "Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:innovation-diffusion",
+      "vc:label": "Innovation Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:economic-model",
+      "vc:label": "Economic Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-modelling",
+      "vc:label": "Computational Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:complex-adaptive-systems",
+      "vc:label": "Complex Adaptive Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergence",
+      "vc:label": "Emergence"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:cellular-automata",
+      "vc:label": "Cellular Automata"
+    },
+    {
+      "@id": "urn:visionflow:linked:monte-carlo-simulation",
+      "vc:label": "Monte Carlo Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:epidemiological-modelling",
+      "vc:label": "Epidemiological Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:crowd-simulation",
+      "vc:label": "Crowd Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-optimisation",
+      "vc:label": "Supply Chain Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-simulation",
+      "vc:label": "Policy Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-dynamics",
+      "vc:label": "System Dynamics"
+    },
+    {
+      "@id": "urn:visionflow:linked:swarm-intelligence",
+      "vc:label": "Swarm Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-theory",
+      "vc:label": "Game Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:network-science",
+      "vc:label": "Network Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-simulation",
+      "vc:label": "Social Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-process",
+      "vc:label": "Stochastic Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:discrete-event-simulation",
+      "vc:label": "Discrete Event Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:complex-systems-science",
+      "vc:label": "Complex Systems Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:environment-model",
+      "vc:label": "Environment Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:equation-based-modelling",
+      "vc:label": "Equation-Based Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensitivity-analysis",
+      "vc:label": "Sensitivity Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-reinforcement-learning",
+      "vc:label": "Multi-Agent Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:genetic-algorithm",
+      "vc:label": "Genetic Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:urban-computing",
+      "vc:label": "Urban Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-based-models",
+      "vc:label": "Agent-Based Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-social-science",
+      "vc:label": "Computational Social Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:uncertainty-quantification",
+      "vc:label": "Uncertainty Quantification"
+    },
+    {
+      "@id": "urn:visionflow:linked:scientific-computing",
+      "vc:label": "Scientific Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:collective-intelligence",
+      "vc:label": "Collective Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:feedback-loop",
+      "vc:label": "Feedback Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:behavioural-modelling",
+      "vc:label": "Behavioural Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-life",
+      "vc:label": "Artificial Life"
+    },
+    {
+      "@id": "urn:visionflow:linked:parallel-computing",
+      "vc:label": "Parallel Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    { "vc:key": "preferred-term", "vc:value": "Agent-Based Modelling" }
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "Agent-Based Modelling"
+    }
   ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:jjohare" },
-  "prov:generatedAtTime": { "@value": "2026-05-29T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:jjohare"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-05-29T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -74,77 +200,215 @@ public: true
   "maturity": "established",
   "qualityScore": 0.87,
   "subClassOf": [
-    { "@id": "urn:ngm:class:simulation", "label": "Simulation" },
-    { "@id": "urn:ngm:class:complexity-science", "label": "Complexity Science" }
+    {
+      "@id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    },
+    {
+      "@id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science"
+    }
   ],
   "sameAs": [
-    { "@id": "urn:ngm:class:agent-based-simulation", "label": "Agent-Based Simulation" },
-    { "@id": "urn:ngm:class:individual-based-modelling", "label": "Individual-Based Modelling" }
+    {
+      "@id": "urn:ngm:class:agent-based-simulation",
+      "label": "Agent-Based Simulation"
+    },
+    {
+      "@id": "urn:ngm:class:individual-based-modelling",
+      "label": "Individual-Based Modelling"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent" },
-      { "@id": "urn:ngm:class:environment-model", "label": "Environment Model" },
-      { "@id": "urn:ngm:class:emergence", "label": "Emergence" },
-      { "@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process" },
-      { "@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop" }
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:environment-model",
+        "label": "Environment Model"
+      },
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:complexity-science", "label": "Complexity Science" },
-      { "@id": "urn:ngm:class:computational-social-science", "label": "Computational Social Science" }
+      {
+        "@id": "urn:ngm:class:complexity-science",
+        "label": "Complexity Science"
+      },
+      {
+        "@id": "urn:ngm:class:computational-social-science",
+        "label": "Computational Social Science"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:simulation", "label": "Simulation" },
-      { "@id": "urn:ngm:class:discrete-event-simulation", "label": "Discrete Event Simulation" },
-      { "@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing" }
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:discrete-event-simulation",
+        "label": "Discrete Event Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:innovation-diffusion", "label": "Innovation Diffusion" },
-      { "@id": "urn:ngm:class:epidemiological-modelling", "label": "Epidemiological Modelling" },
-      { "@id": "urn:ngm:class:crowd-simulation", "label": "Crowd Simulation" },
-      { "@id": "urn:ngm:class:supply-chain-optimisation", "label": "Supply Chain Optimisation" },
-      { "@id": "urn:ngm:class:policy-simulation", "label": "Policy Simulation" },
-      { "@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence" },
-      { "@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification" }
+      {
+        "@id": "urn:ngm:class:innovation-diffusion",
+        "label": "Innovation Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:crowd-simulation",
+        "label": "Crowd Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:policy-simulation",
+        "label": "Policy Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:computational-modelling", "label": "Computational Modelling" },
-      { "@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process" },
-      { "@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioural Modelling" }
+      {
+        "@id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioural Modelling"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:complex-adaptive-systems", "label": "Complex Adaptive Systems" },
-      { "@id": "urn:ngm:class:artificial-life", "label": "Artificial Life" }
+      {
+        "@id": "urn:ngm:class:complex-adaptive-systems",
+        "label": "Complex Adaptive Systems"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-life",
+        "label": "Artificial Life"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning" },
-      { "@id": "urn:ngm:class:cellular-automata", "label": "Cellular Automata" },
-      { "@id": "urn:ngm:class:monte-carlo-simulation", "label": "Monte Carlo Simulation" },
-      { "@id": "urn:ngm:class:genetic-algorithm", "label": "Genetic Algorithm" },
-      { "@id": "urn:ngm:class:sensitivity-analysis", "label": "Sensitivity Analysis" },
-      { "@id": "urn:ngm:class:parallel-computing", "label": "Parallel Computing" }
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cellular-automata",
+        "label": "Cellular Automata"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:economic-model", "label": "Economic Model" },
-      { "@id": "urn:ngm:class:policy-simulation", "label": "Policy Simulation" },
-      { "@id": "urn:ngm:class:social-simulation", "label": "Social Simulation" },
-      { "@id": "urn:ngm:class:urban-computing", "label": "Urban Computing" }
+      {
+        "@id": "urn:ngm:class:economic-model",
+        "label": "Economic Model"
+      },
+      {
+        "@id": "urn:ngm:class:policy-simulation",
+        "label": "Policy Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:social-simulation",
+        "label": "Social Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:urban-computing",
+        "label": "Urban Computing"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:system-dynamics", "label": "System Dynamics" },
-      { "@id": "urn:ngm:class:equation-based-modelling", "label": "Equation-Based Modelling" }
+      {
+        "@id": "urn:ngm:class:system-dynamics",
+        "label": "System Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:equation-based-modelling",
+        "label": "Equation-Based Modelling"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems" },
-      { "@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence" },
-      { "@id": "urn:ngm:class:digital-twin", "label": "Digital Twin" },
-      { "@id": "urn:ngm:class:multi-agent-reinforcement-learning", "label": "Multi-Agent Reinforcement Learning" }
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:game-theory", "label": "Game Theory" },
-      { "@id": "urn:ngm:class:network-science", "label": "Network Science" },
-      { "@id": "urn:ngm:class:large-language-models", "label": "Large Language Models" },
-      { "@id": "urn:ngm:class:machine-learning", "label": "Machine Learning" }
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:network-science",
+        "label": "Network Science"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "quality": 0.87,
@@ -153,62 +417,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agent-based-modelling:65e478a94f98",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9c31a8b7c1310d72810b758ce9008b46d461d79166dcf458ce805467a02176eb"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Simulation]]", "resolved": "urn:visionflow:linked:simulation", "kind": "ResolvedLink" },
-    { "raw": "[[Innovation Diffusion]]", "resolved": "urn:visionflow:linked:innovation-diffusion", "kind": "ResolvedLink" },
-    { "raw": "[[Economic Model]]", "resolved": "urn:visionflow:linked:economic-model", "kind": "ResolvedLink" },
-    { "raw": "[[Multi-Agent Systems]]", "resolved": "urn:visionflow:linked:multi-agent-systems", "kind": "ResolvedLink" },
-    { "raw": "[[Computational Modelling]]", "resolved": "urn:visionflow:linked:computational-modelling", "kind": "ResolvedLink" },
-    { "raw": "[[Complex Adaptive Systems]]", "resolved": "urn:visionflow:linked:complex-adaptive-systems", "kind": "ResolvedLink" },
-    { "raw": "[[Emergence]]", "resolved": "urn:visionflow:linked:emergence", "kind": "ResolvedLink" },
-    { "raw": "[[Autonomous Agent]]", "resolved": "urn:visionflow:linked:autonomous-agent", "kind": "ResolvedLink" },
-    { "raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Cellular Automata]]", "resolved": "urn:visionflow:linked:cellular-automata", "kind": "ResolvedLink" },
-    { "raw": "[[Monte Carlo Simulation]]", "resolved": "urn:visionflow:linked:monte-carlo-simulation", "kind": "ResolvedLink" },
-    { "raw": "[[Epidemiological Modelling]]", "resolved": "urn:visionflow:linked:epidemiological-modelling", "kind": "ResolvedLink" },
-    { "raw": "[[Crowd Simulation]]", "resolved": "urn:visionflow:linked:crowd-simulation", "kind": "ResolvedLink" },
-    { "raw": "[[Supply Chain Optimisation]]", "resolved": "urn:visionflow:linked:supply-chain-optimisation", "kind": "ResolvedLink" },
-    { "raw": "[[Policy Simulation]]", "resolved": "urn:visionflow:linked:policy-simulation", "kind": "ResolvedLink" },
-    { "raw": "[[System Dynamics]]", "resolved": "urn:visionflow:linked:system-dynamics", "kind": "ResolvedLink" },
-    { "raw": "[[Swarm Intelligence]]", "resolved": "urn:visionflow:linked:swarm-intelligence", "kind": "ResolvedLink" },
-    { "raw": "[[Digital Twin]]", "resolved": "urn:visionflow:linked:digital-twin", "kind": "ResolvedLink" },
-    { "raw": "[[Game Theory]]", "resolved": "urn:visionflow:linked:game-theory", "kind": "ResolvedLink" },
-    { "raw": "[[Network Science]]", "resolved": "urn:visionflow:linked:network-science", "kind": "ResolvedLink" },
-    { "raw": "[[Social Simulation]]", "resolved": "urn:visionflow:linked:social-simulation", "kind": "ResolvedLink" },
-    { "raw": "[[Stochastic Process]]", "resolved": "urn:visionflow:linked:stochastic-process", "kind": "ResolvedLink" },
-    { "raw": "[[Discrete Event Simulation]]", "resolved": "urn:visionflow:linked:discrete-event-simulation", "kind": "ResolvedLink" },
-    { "raw": "[[Complex Systems Science]]", "resolved": "urn:visionflow:linked:complex-systems-science", "kind": "ResolvedLink" },
-    { "raw": "[[Environment Model]]", "resolved": "urn:visionflow:linked:environment-model", "kind": "ResolvedLink" },
-    { "raw": "[[Equation-Based Modelling]]", "resolved": "urn:visionflow:linked:equation-based-modelling", "kind": "StubLink" },
-    { "raw": "[[Sensitivity Analysis]]", "resolved": "urn:visionflow:linked:sensitivity-analysis", "kind": "ResolvedLink" },
-    { "raw": "[[Multi-Agent Reinforcement Learning]]", "resolved": "urn:visionflow:linked:multi-agent-reinforcement-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink" },
-    { "raw": "[[Genetic Algorithm]]", "resolved": "urn:visionflow:linked:genetic-algorithm", "kind": "ResolvedLink" },
-    { "raw": "[[Urban Computing]]", "resolved": "urn:visionflow:linked:urban-computing", "kind": "StubLink" },
-    { "raw": "[[Agent-Based Models]]", "resolved": "urn:visionflow:linked:agent-based-models", "kind": "ResolvedLink" },
-    { "raw": "[[Computational Social Science]]", "resolved": "urn:visionflow:linked:computational-social-science", "kind": "StubLink" },
-    { "raw": "[[Uncertainty Quantification]]", "resolved": "urn:visionflow:linked:uncertainty-quantification", "kind": "ResolvedLink" },
-    { "raw": "[[Scientific Computing]]", "resolved": "urn:visionflow:linked:scientific-computing", "kind": "StubLink" },
-    { "raw": "[[Collective Intelligence]]", "resolved": "urn:visionflow:linked:collective-intelligence", "kind": "ResolvedLink" },
-    { "raw": "[[Feedback Loop]]", "resolved": "urn:visionflow:linked:feedback-loop", "kind": "ResolvedLink" },
-    { "raw": "[[Behavioural Modelling]]", "resolved": "urn:visionflow:linked:behavioural-modelling", "kind": "StubLink" },
-    { "raw": "[[Artificial Life]]", "resolved": "urn:visionflow:linked:artificial-life", "kind": "StubLink" },
-    { "raw": "[[Parallel Computing]]", "resolved": "urn:visionflow:linked:parallel-computing", "kind": "ResolvedLink" },
-    { "raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink" }
-  ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:lcr-swarm" },
-  "prov:generatedAtTime": { "@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime" }
 }
 ```
 
@@ -351,7 +559,7 @@ public: true
     - **Output / analysis layer**: Records aggregate statistics (time series of mean wealth, infection prevalence, aggregate employment, spatial correlation functions, cluster sizes), micro-trajectories (per-agent state histories, event logs), and distributional statistics (histograms, Gini coefficients, power-law exponents). Statistical tests compare simulation output distributions to empirical targets. Spatial statistics (Moran's I for spatial autocorrelation, Ripley's K for point process clustering) are applied to spatial ABM outputs. Network statistics (degree distribution, clustering coefficient, path length) characterise interaction topology dynamics. Tools: OpenMOLE (CNRS, open-source) automates [[Sensitivity Analysis]] and optimisation over ABM parameter spaces using distributed computing; SALib (Python) provides Sobol and Morris sensitivity indices; NetLogo's BehaviorSpace performs built-in parameter sweeps.
 
   - ## Use Cases / Major Families
-    - **Epidemiology and public health**: ABMs provide individual-level epidemic simulation where agents represent persons with heterogeneous age, health status, mobility patterns, household structure, and contact networks. They capture dynamics that aggregate ODE compartmental models (SIR, SEIR, SEIRD) cannot: super-spreader effects (heavy-tailed contact degree distribution), household transmission clusters, spatial containment effectiveness, intervention targeting (shielding the elderly, closing schools but not workplaces), and the temporal dynamics of healthcare demand surge. CovidSim (Imperial College London, Neil Ferguson's group, 2020) — an [[Epidemiological Modelling]] ABM built on the group's earlier 2005 influenza model — projected under unmitigated spread approximately 510,000 deaths in Great Britain and 2.2 million in the United States, and showed that household isolation combined with social distancing could reduce peak healthcare demand by over 60 per cent; these projections, published as Imperial Report 9 on 16 March 2020, were directly influential in the UK government's decision to announce a national lockdown on 23 March 2020. The Epiabm framework (Cambridge Engineering, 2022) provides open-source Python and C++ infrastructure for spatially explicit epidemic ABMs at local-authority resolution. Differentiable epidemic ABMs (Chopra et al., 2023) allow gradient-based calibration of transmission parameters against observed case counts, dramatically reducing the time for model fitting compared to [[Monte Carlo Simulation]] grid-search approaches. County-level geo-coded ABMs from the CDC and NIH informed vaccine allocation strategy under heterogeneous coverage scenarios during 2021.
+    - **Epidemiology and public health**: ABMs provide individual-level epidemic simulation where agents represent persons with heterogeneous age, health status, mobility patterns, household structure, and contact networks. They capture dynamics that aggregate ODE compartmental models (SIR, SEIR, SEIRD) cannot: super-spreader effects (heavy-tailed contact degree distribution), household transmission clusters, spatial containment effectiveness, intervention targeting (shielding the elderly, closing schools but not workplaces), and the temporal dynamics of healthcare demand surge. CovidSim (Imperial College London, Neil Ferguson's group, 2020) — an [[Epidemiological Modelling]] ABM built on the group's earlier 2005 influenza model — projected under unmitigated spread approximately 510,000 deaths in Great Britain and 2.2 million in the United States, and showed that household isolation combined with social distancing [private] reduce peak healthcare demand by over 60 per cent; these projections, published as Imperial Report 9 on 16 March 2020, were directly influential in the UK government's decision to announce a national lockdown on 23 March 2020. The Epiabm framework (Cambridge Engineering, 2022) provides open-source Python and C++ infrastructure for spatially explicit epidemic ABMs at local-authority resolution. Differentiable epidemic ABMs (Chopra et al., 2023) allow gradient-based calibration of transmission parameters against observed case counts, dramatically reducing the time for model fitting compared to [[Monte Carlo Simulation]] grid-search approaches. County-level geo-coded ABMs from the CDC and NIH informed vaccine allocation strategy under heterogeneous coverage scenarios during 2021.
     - **Economics and finance**: Agent-based economics challenges the rational expectations, representative-agent assumptions of mainstream macroeconomics (DSGE models) by explicitly modelling heterogeneous firms, households, banks, and regulators with bounded rationality and adaptive strategies. The Santa Fe artificial stock market (LeBaron, Arthur, Palmer, 1999) showed that heterogeneous trader agents — using technical and fundamental analysis, with classifier-system strategy evolution — produce realistic return distributions exhibiting fat tails and volatility clustering, which homogeneous rational-agent models cannot replicate without additional shocks. Eurace (Dawid et al.) and the Banca d'Italia's ABM (Dosi, Fagiolo, Roventini) demonstrate that agent-based macroeconomic models reproduce business cycle statistics, financial fragility, and the effects of fiscal policy more faithfully than calibrated DSGE models. The Bank of England maintains an internal ABM for systemic risk analysis; the OECD has published agent-based macro models as complements to standard econometric tools. [[Supply Chain Optimisation]] ABMs simulate demand variability propagation (the Bullwhip effect), supplier disruption cascades, and inventory rebalancing across multi-tier supply networks. Industry deployments: DHL's Resilience360 uses ABM stress-testing of air-freight networks against weather and geopolitical scenarios, revealing 20 per cent capacity gaps under modelled disruptions; Procter and Gamble's ABM deployment reduced inventory by 25 per cent through demand-volatility simulation; ocean carriers run 5,000 ABM routing scenarios daily integrating weather and geopolitical risk data, achieving 92 per cent delay prediction accuracy. Agentic supply chain [[Digital Twin]] (A-SCDT) architectures, documented in Taylor and Francis (2026), hybridise ABM with AI optimisation for real-time decision support.
     - **Ecology and conservation**: Individual-based ecology (Grimm and Railsback, 2005) models populations as collections of individual organisms with heterogeneous physiology, behaviour, and spatial location — a natural application of ABM to ecological dynamics. Key applications include: predator-prey dynamics at the individual level, where stochastic encounter rates and individual energy budgets produce more realistic population fluctuations than Lotka-Volterra ODEs; species competition and coexistence (competitive exclusion in heterogeneous landscapes); habitat fragmentation and corridor design for conservation planning (dispersal-limited species ABMs inform reserve connectivity policy); fire-climate-vegetation coupled ABMs for ecosystem management; and fisheries stock assessment ABMs that model individual fish growth, mortality, and harvesting to support Total Allowable Catch (TAC) policy under uncertain recruitment. [[Swarm Intelligence]] models (Boids, ant-colony foraging, honeybee decision-making) investigate collective animal behaviour. Bird-flock, fish-school, and insect-swarm ABMs have been validated against high-resolution tracking data from GPS and stereophotogrammetry systems, confirming that three-rule models account for most variance in group shape and dynamics.
     - **Urban planning and mobility**: [[Crowd Simulation]] ABMs model pedestrian flows in complex built environments under normal and emergency conditions. The social force model (Helbing and Molnar, 1995) treats pedestrian movement as the sum of a desired velocity vector, repulsive forces from nearby pedestrians and walls, and attractive forces from goals — producing realistic congestion, arching at bottlenecks, and lane formation in bidirectional flows. Applications include: station, airport, and stadium design optimisation for throughput and safety compliance; train evacuation planning (cross-referencing against EU Directive 2008/164/EC requirements); emergency evacuation scenario planning for high-rise buildings and concerts. [[Urban Computing]] ABMs simulate city-scale transport demand (MATSIM, a Java-based open-source transport simulation with millions of agents, used for Zurich's city transport plan), land-use change (UrbanSim), housing market dynamics, and energy demand response in smart grids. Nick Malleson's group at the University of Leeds develops real-time pedestrian dynamics ABMs fused with anonymised CCTV tracking data and mobile phone GPS traces under the Alan Turing Institute's Urban Analytics programme. GATSim (arXiv:2506.23306, 2025/2026) demonstrates city-scale urban mobility simulation using LLM-driven generative agents as drivers, capturing nuanced origin-destination choice and route adaptation beyond what rule-based models achieve.

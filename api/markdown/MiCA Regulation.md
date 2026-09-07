@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MiCA Regulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,32 +20,82 @@ public: true
   "definition": "The Markets in Crypto-Assets (MiCA) Regulation (EU 2023/1114) is the European Union's comprehensive legislative framework governing the issuance, offering, and trading of crypto-assets, including asset-referenced tokens, e-money tokens, and utility tokens. Adopted in June 2023 and phasing in through December 2024, MiCA establishes authorisation requirements for crypto-asset service providers (CASPs), disclosure obligations analogous to prospectus rules, and prudential standards for stablecoin issuers, creating the world's first complete statutory crypto-asset regime across a major economic bloc.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:european-commission", "label": "European Commission"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:stablecoin-regulation", "label": "Stablecoin Regulation"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
-      {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"},
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"}
+      {
+        "@id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-regulation", "label": "Digital Regulation"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
+      {
+        "@id": "urn:ngm:class:digital-regulation",
+        "label": "Digital Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
     ]
   },
   "quality": 0.8

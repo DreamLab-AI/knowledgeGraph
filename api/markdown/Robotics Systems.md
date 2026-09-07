@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robotics Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,26 +106,68 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:manipulator", "label": "Manipulator"},
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
-      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:robot-sensor", "label": "Robot Sensor"},
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"}
+      {
+        "@id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
   "quality": 0.8,
@@ -141,102 +178,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robotics-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:97d0ffe55f09899e6e5ff51679e983c8fb91cce15d65ed4f20a580416a7c2c3f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Collaborative Robot]]",
-      "resolved": "urn:visionflow:owl:class:collaborative-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[HumanRobotInteraction]]",
-      "resolved": "urn:visionflow:owl:class:human-robot-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Humanoid Robot]]",
-      "resolved": "urn:visionflow:owl:class:humanoid-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Manipulator]]",
-      "resolved": "urn:visionflow:owl:class:manipulator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Technology]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mobile Robot]]",
-      "resolved": "urn:visionflow:owl:class:mobile-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Planning]]",
-      "resolved": "urn:visionflow:owl:class:motion-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Control]]",
-      "resolved": "urn:visionflow:owl:class:robot-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Kinematics]]",
-      "resolved": "urn:visionflow:owl:class:robot-kinematics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Sensor]]",
-      "resolved": "urn:visionflow:owl:class:robot-sensor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics Systems]]",
-      "resolved": "urn:visionflow:owl:class:robotics-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SwarmRobotics]]",
-      "resolved": "urn:visionflow:owl:class:swarm-robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Domain]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The foundational technology domain encompassing autonomous and semi-autonomous mechanical systems, including manipulators, mobile robots, humanoids, and collaborative robots (cobots), along with their control systems, sensors, actuators, kinematics, and the integration of perception, planning, and action for physical world interaction.

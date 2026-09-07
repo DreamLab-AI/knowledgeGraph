@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - MotorDriver
----
-
-# Motor Driver
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,6 +172,6 @@ aliases:
 
   - PWM frequency selection represents a key design trade-off in motor driver circuits. Higher frequencies (20–100 kHz) reduce audible motor noise and improve current ripple characteristics but increase switching losses in the power transistors and electromagnetic interference emissions. Lower frequencies (1–10 kHz) are more efficient but can produce acoustic noise from motor windings vibrating at audible frequencies. Automotive and precision robotics applications typically target ultrasonic PWM frequencies to meet EMC standards and silence requirements.
 
-  - Protection features in motor drivers are critical for system reliability. Over-current protection typically uses current sensing via shunt resistors to detect stall conditions or short circuits, triggering gate shutdown within microseconds to prevent MOSFET destruction. Thermal shutdown prevents permanent damage from sustained high-current operation. Back-EMF clamping uses freewheeling diodes or active recirculation paths to manage the energy stored in motor inductance during switching transients, preventing voltage spikes that could exceed transistor breakdown ratings.
+  - Protection features in motor drivers are critical for system reliability. Over-current protection typically uses current sensing via shunt resistors to detect stall conditions or short circuits, triggering gate shutdown within microseconds to prevent MOSFET destruction. Thermal shutdown prevents permanent damage from sustained high-current operation. Back-EMF clamping uses freewheeling diodes or active recirculation paths to manage the energy stored in motor inductance during switching transients, preventing voltage spikes that [private] exceed transistor breakdown ratings.
 
   - In robotics, motor driver selection directly affects system performance and integration complexity. Brushless motor drivers for servo axes require high-resolution position feedback integration (encoder interfaces), support for field-oriented control (FOC) algorithms that maximise torque efficiency, and bus communication interfaces such as CAN or EtherCAT for multi-axis coordination. The transition from discrete motor driver designs to highly integrated single-chip solutions has dramatically reduced the engineering barrier for building multi-axis robotic systems.

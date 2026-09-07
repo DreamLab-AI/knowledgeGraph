@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Security Policy
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,40 +20,96 @@ public: true
   "definition": "A security policy is a formalised set of rules, principles, and procedures that govern how an organisation protects its information assets, systems, and personnel. It defines acceptable use, access control objectives, incident response obligations, and compliance requirements. Security policies serve as the authoritative reference for all subordinate security controls, technical configurations, and procedural guidelines within an enterprise.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:access-control-policy", "label": "Access Control Policy"},
-      {"@id": "urn:ngm:class:incident-response-plan", "label": "Incident Response Plan"},
-      {"@id": "urn:ngm:class:acceptable-use-policy", "label": "Acceptable Use Policy"}
+      {
+        "@id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response-plan",
+        "label": "Incident Response Plan"
+      },
+      {
+        "@id": "urn:ngm:class:acceptable-use-policy",
+        "label": "Acceptable Use Policy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:threat-model", "label": "Threat Model"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+      {
+        "@id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cyber-resilience", "label": "Cyber Resilience"}
+      {
+        "@id": "urn:ngm:class:cyber-resilience",
+        "label": "Cyber Resilience"
+      }
     ]
   },
   "quality": 0.62,

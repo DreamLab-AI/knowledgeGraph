@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reinforcement Learning for Robotics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,4 +177,3 @@ public: true
   - The ecosystem includes robot-specific RL libraries (Robosuite, dm-control, IsaacGym), hardware platforms ranging from collaborative arms (Franka, UR series) to legged systems (Spot, ANYmal, Unitree), and cloud-based training infrastructure enabling massively parallel simulation. Human demonstration data, collected via teleoperation or kinesthetic teaching, seeds [[Imitation Learning]] pipelines that dramatically reduce the exploration burden before RL fine-tuning.
 
   - In 2024–2025, robot foundation models trained on diverse manipulation datasets (Open X-Embodiment, DROID) are being fine-tuned via RL for specific tasks, enabling rapid skill acquisition with minimal environment interaction. Diffusion-based policies and flow-matching approaches have challenged classical actor-critic architectures for dexterous tasks, while [[Legged Locomotion]] controllers trained entirely in simulation are routinely deployed on quadruped and bipedal platforms in industrial inspection, logistics, and disaster response applications. Reinforcement learning from human feedback is being explored as a mechanism for robots to refine behaviour based on natural language corrections.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Security Scanning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "security-scanning",
   "title": "Security Scanning",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Open Claw", "VirusTotal"],
+  "vc:outboundWikilinks": [
+    "Open Claw",
+    "VirusTotal"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "security",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"}, {"@id": "urn:ngm:class:intrusion-detection", "label": "Intrusion Detection"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

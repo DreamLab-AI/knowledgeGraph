@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Open Source Sustainability
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

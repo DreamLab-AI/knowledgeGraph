@@ -1,8 +1,3 @@
----
-public: true
----
-
-# The Bitter Lesson
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,13 @@ public: true
   "vc:slug": "the-bitter-lesson",
   "title": "The Bitter Lesson",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Bitter Lesson", "Bloomberg GPT", "Compute-Heavy AI", "Domain-Specific LLMs", "Rich Sutton"],
+  "vc:outboundWikilinks": [
+    "Bitter Lesson",
+    "Bloomberg GPT",
+    "Compute-Heavy AI",
+    "Domain-Specific LLMs",
+    "Rich Sutton"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +27,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:open-source", "label": "Open Source"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

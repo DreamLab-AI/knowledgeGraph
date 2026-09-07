@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sign Language Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Sign language recognition is the computer-vision and sequence-modelling task of translating the manual and non-manual gestures of a signed language into text or speech. It must model hand shape, motion trajectory, facial expression, and grammatical structure that differs fundamentally from spoken languages. It is an accessibility-focused application that builds on robust hand tracking and temporal recognition.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"}, {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ]
   },
   "quality": 0.72
 }

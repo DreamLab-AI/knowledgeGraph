@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Scanning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,4 +167,3 @@ public: true
   - Applications of 3D scanning span heritage preservation (scanning of artefacts and monuments before restoration or replication), film and games production (body and face scanning for digital doubles), construction and BIM (as-built capture for project verification), automotive and aerospace quality control, and medical imaging (orthopaedic implant fitting and surgical planning). The scan-to-BIM workflow, which converts point-cloud data into parametric building information models, has become a standard practice in architecture and facilities management.
 
   - In 2024–2025, smartphone-class depth sensing (using LiDAR on iPhone and iPad Pro, and structured-light face scanners) has democratised basic 3D scanning. Gaussian splatting and NeRF-based reconstruction tools allow high-quality captures from video sequences without dedicated scanning hardware. AI-driven hole-filling and noise-reduction are incorporated into standard post-processing tools. Integration between scanning platforms and digital-twin management software is maturing, and real-time collaborative scanning workflows are enabling distributed capture projects.
-

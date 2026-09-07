@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Retraining
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -118,7 +113,7 @@ public: true
   **Trigger mechanisms**:
   - **Scheduled** — fixed cadence; simple and predictable, but wastes compute when nothing has changed and lags when change is abrupt.
   - **Performance-triggered** — retrain when live accuracy, precision, or business KPIs fall below a threshold; requires timely ground-truth labels, which many domains lack.
-  - **Drift-triggered** — retrain when statistical distance measures (population stability index, KL divergence, Kolmogorov–Smirnov tests) on inputs or predictions exceed limits; usable even when labels arrive late.
+  - **Drift-triggered** — retrain when statistical distance measures (population stability [private], KL divergence, Kolmogorov–Smirnov tests) on inputs or predictions exceed limits; usable even when labels arrive late.
 
   **Engineering considerations**: retraining pipelines must guarantee reproducibility (versioned data snapshots, pinned dependencies, tracked hyperparameters), guard against training–serving skew, and validate candidates against holdout and champion–challenger comparisons before promotion. Model versioning and rollback paths are essential, since a retrained model can regress on subpopulations even while improving in aggregate. Care is also needed to avoid feedback loops where the model's own outputs contaminate its future training data, and to respect data-retention and consent constraints when refreshing training sets.
 

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Open-Source Intelligence
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

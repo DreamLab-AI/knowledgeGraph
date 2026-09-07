@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Bioinformatics
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:bioinformatics", "@type":"Page", "title":"Bioinformatics", "vc:slug":"bioinformatics", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:bioinformatics",
+  "@type": "Page",
+  "title": "Bioinformatics",
+  "vc:slug": "bioinformatics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,46 +21,95 @@ public: true
   "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:computational-biology", "label": "Computational Biology" }
+    {
+      "@id": "urn:ngm:class:computational-biology",
+      "label": "Computational Biology"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:sequence-alignment", "label": "Sequence Alignment" },
-      { "@id": "urn:ngm:class:genomics", "label": "Genomics" }
+      {
+        "@id": "urn:ngm:class:sequence-alignment",
+        "label": "Sequence Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:genomics",
+        "label": "Genomics"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:machine-learning", "label": "Machine Learning" },
-      { "@id": "urn:ngm:class:statistics", "label": "Statistics" },
-      { "@id": "urn:ngm:class:data-science", "label": "Data Science" }
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:dna-sequencing", "label": "DNA Sequencing" },
-      { "@id": "urn:ngm:class:proteomics", "label": "Proteomics" }
+      {
+        "@id": "urn:ngm:class:dna-sequencing",
+        "label": "DNA Sequencing"
+      },
+      {
+        "@id": "urn:ngm:class:proteomics",
+        "label": "Proteomics"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery" },
-      { "@id": "urn:ngm:class:protein-structure-prediction", "label": "Protein Structure Prediction" }
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:systems-biology", "label": "Systems Biology" }
+      {
+        "@id": "urn:ngm:class:systems-biology",
+        "label": "Systems Biology"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:alphafold", "label": "AlphaFold" },
-      { "@id": "urn:ngm:class:computational-biology", "label": "Computational Biology" }
+      {
+        "@id": "urn:ngm:class:alphafold",
+        "label": "AlphaFold"
+      },
+      {
+        "@id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:machine-learning", "label": "Machine Learning" },
-      { "@id": "urn:ngm:class:biology", "label": "Biology" }
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:biology",
+        "label": "Biology"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
 - ### Definition
-  - Bioinformatics is an established interdisciplinary scientific discipline and sub-field of [[Computational Biology]] that designs and deploys computational methods, software pipelines, and analytical frameworks to acquire, store, process, and interpret biological data at scale. Originating in the early 1970s with the first computational sequence databases and the Needleman-Wunsch global sequence alignment algorithm (1970), the field has grown to encompass the full scope of molecular life-science data, ranging from raw sequencing reads and three-dimensional atomic coordinates to mass-spectrometry proteomes, single-cell transcriptomes, and spatial omics images. Bioinformatics combines algorithmic theory from [[Computer Science]], probabilistic inference and regression from [[Statistics]], pattern recognition from [[Machine Learning]], and domain knowledge from molecular [[Biology]] to solve problems that could not be addressed by any of these disciplines alone. Core tasks include [[Sequence Alignment]] and assembly (reconstructing contiguous genome sequences from short sequencing fragments), [[Genomics]] annotation (assigning biological function to genomic loci), [[Protein Structure Prediction]] (inferring the three-dimensional fold from amino-acid sequence), gene expression analysis (quantifying transcriptomic activity via RNA-seq and [[Deep Learning]] foundation models), and biological network inference (mapping the topology of gene regulatory, protein-protein interaction, and metabolic networks to support [[Systems Biology]] modelling). The clinical translation arm of the field, often called clinical bioinformatics, processes patient-level variant call data to support [[Precision Medicine]], rare-disease diagnosis, and cancer genomics workflows. High-throughput instruments — next-generation DNA sequencers, mass spectrometers, cryo-electron microscopes, and high-content imaging platforms — generate datasets measured in terabytes per experiment, making the computational layer indispensable and driving demand for GPU-accelerated pipelines, cloud-native workflow managers such as Nextflow and Snakemake, and containerised tool distribution. Recent integration of large language models and protein foundation models (ESMFold, Evo, Geneformer) has opened new capabilities in zero-shot functional prediction and de novo biomolecular design, positioning bioinformatics at the frontier of AI-driven scientific discovery and accelerating [[Drug Discovery]] through structure-based virtual screening at proteome scale.
+  - Bioinformatics is an established interdisciplinary scientific discipline and sub-field of [[Computational Biology]] that designs and deploys computational methods, software pipelines, and analytical frameworks to acquire, store, process, and interpret biological data at scale. Originating in the early 1970s with the first computational sequence databases and the Needleman-Wunsch global sequence alignment algorithm (1970), the field has grown to encompass the full scope of molecular life-science data, ranging from raw sequencing reads and three-dimensional atomic coordinates to mass-spectrometry proteomes, single-cell transcriptomes, and spatial omics images. Bioinformatics combines algorithmic theory from [[Computer Science]], probabilistic inference and regression from [[Statistics]], pattern recognition from [[Machine Learning]], and domain knowledge from molecular [[Biology]] to solve problems that [private] not be addressed by any of these disciplines alone. Core tasks include [[Sequence Alignment]] and assembly (reconstructing contiguous genome sequences from short sequencing fragments), [[Genomics]] annotation (assigning biological function to genomic loci), [[Protein Structure Prediction]] (inferring the three-dimensional fold from amino-acid sequence), gene expression analysis (quantifying transcriptomic activity via RNA-seq and [[Deep Learning]] foundation models), and biological network inference (mapping the topology of gene regulatory, protein-protein interaction, and metabolic networks to support [[Systems Biology]] modelling). The clinical translation arm of the field, often called clinical bioinformatics, processes patient-level variant call data to support [[Precision Medicine]], rare-disease diagnosis, and cancer genomics workflows. High-throughput instruments — next-generation DNA sequencers, mass spectrometers, cryo-electron microscopes, and high-content imaging platforms — generate datasets measured in terabytes per experiment, making the computational layer indispensable and driving demand for GPU-accelerated pipelines, cloud-native workflow managers such as Nextflow and Snakemake, and containerised tool distribution. Recent integration of large language models and protein foundation models (ESMFold, Evo, Geneformer) has opened new capabilities in zero-shot functional prediction and de novo biomolecular design, positioning bioinformatics at the frontier of AI-driven scientific discovery and accelerating [[Drug Discovery]] through structure-based virtual screening at proteome scale.
 
 - ### Semantic Classification
   - owl-class:: computational-biology:Bioinformatics
@@ -182,7 +235,7 @@ public: true
 
   ## About
   - **Origins (1970s)**: Bioinformatics emerged in the early 1970s when Margaret Dayhoff and colleagues at the National Biomedical Research Foundation created the first protein sequence databases — notably the Atlas of Protein Sequence and Structure — and developed the concept of the PAM (Point Accepted Mutation) scoring matrices for sequence comparison.
-  - **Foundational paradigm**: Dayhoff's insight that evolutionary distance between sequences could be quantified computationally established the foundational paradigm of comparative genomics: similarity in sequence implies similarity in structure and function, allowing experimentally characterised proteins to serve as proxies for uncharacterised homologues.
+  - **Foundational paradigm**: Dayhoff's insight that evolutionary distance between sequences [private] be quantified computationally established the foundational paradigm of comparative genomics: similarity in sequence implies similarity in structure and function, allowing experimentally characterised proteins to serve as proxies for uncharacterised homologues.
   - **Dynamic programming alignment (1970-1981)**: The dynamic programming formulations of Needleman-Wunsch (1970) and Smith-Waterman (1981) provided mathematically optimal algorithms for global and local pairwise sequence alignment respectively, establishing the theoretical basis for all subsequent alignment work.
   - **BLAST (1990)**: When Altschul, Gish, Miller, Myers, and Lipman published BLAST (Basic Local Alignment Search Tool) in 1990, they reduced the computational complexity of homology search from the O(nm) of dynamic programming to near-linear time by exploiting the observation that biologically meaningful alignments contain short exact word matches (seeds) that can be located rapidly before extending into gapped alignments. BLAST became one of the most cited scientific papers of the twentieth century, with over 100,000 citations, and remains the most widely deployed bioinformatics tool in routine use today.
   - **Institutional infrastructure (1990s)**: NCBI (USA) and EMBL-EBI (Hinxton, UK) assumed curatorial responsibility for GenBank, the European Nucleotide Archive, the Protein Data Bank (PDB), and Swiss-Prot (now UniProt) — the backbone of global bioinformatics data infrastructure.
@@ -435,7 +488,7 @@ public: true
   ## Key Terminology Glossary (Extended)
 
   - **Assembly graph**: A data structure (De Bruijn graph or overlap graph) in which nodes represent k-mers or reads and edges represent sequence overlaps, used to reconstruct genome sequences from short sequencing fragments.
-  - **BAM**: Binary Alignment Map; the compressed binary encoding of the SAM (Sequence Alignment Map) format, the standard file format for storing read alignments to a reference genome. Indexed with samtools index (.bai/.csi files) to enable random access to arbitrary genomic regions.
+  - **BAM**: Binary Alignment Map; the compressed binary encoding of the SAM (Sequence Alignment Map) format, the standard file format for storing read alignments to a reference genome. Indexed with samtools [private] (.bai/.csi files) to enable random access to arbitrary genomic regions.
   - **BUSCO**: Benchmarking Universal Single-Copy Orthologs; a method for evaluating genome and transcriptome assembly completeness by testing for the presence of conserved single-copy genes expected to be present in the given lineage.
   - **ClinVar**: A freely accessible, public archive of human variants and their interpreted pathogenicity, maintained by NCBI. Variants are classified as pathogenic, likely pathogenic, benign, likely benign, or uncertain significance (VUS), with evidence submitted by clinical laboratories worldwide.
   - **Differential expression analysis**: Statistical comparison of gene expression levels between two or more conditions using RNA-seq count data; negative-binomial generalised linear models with regularised dispersion estimation (DESeq2, edgeR) identify genes significantly up- or down-regulated after multiple-testing correction (Benjamini-Hochberg FDR).

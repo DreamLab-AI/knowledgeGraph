@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Information Retrieval
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -171,31 +166,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:information-retrieval:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:24b0ca57068c6d211a0340e85ad7636e44bec857eefd505b23f52b2e987518fb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Information Retrieval (IR) is the science and engineering discipline concerned with representing, storing, organising, and providing efficient access to documents, passages, or structured records so that a user's information need can be satisfied in response to a query. It sits at the intersection of [[Natural Language Processing]], [[Machine Learning]], and database systems, encompassing classical statistical models such as TF-IDF and BM25 as well as modern neural approaches using [[Transformer]] encoders and [[Vector Database]] nearest-neighbour search. IR is the foundational subsystem powering [[Search Engine]] technology, [[Retrieval-Augmented Generation]] pipelines, and [[Question Answering]] systems, and has reached maturity as a field through decades of [[Evaluation Metrics]] research, standard benchmarks (TREC, BEIR), and large-scale production deployments.
 
@@ -211,7 +181,7 @@ public: true
   - The rise of [[Large Language Model]] technology has made IR indispensable: RAG architectures place an IR system upstream of a generative model so that generated text can be grounded in retrieved factual passages, reducing hallucination.
 
 - ### Key Components
-  - **[[Document Indexing]]** — pre-processing pipeline that tokenises, normalises (lowercasing, stemming, lemmatisation), and constructs index structures from a document corpus.
+  - **[[Document Indexing]]** — pre-processing pipeline that tokenises, normalises (lowercasing, stemming, lemmatisation), and constructs [private] structures from a document corpus.
   - **[[Inverted Index]]** — the canonical data structure for sparse retrieval: maps each term to a posting list of (document-id, term-frequency) pairs, enabling fast union/intersection of term sets.
   - **[[Query Processing]]** — parsing and transforming a raw user query into an executable retrieval specification; includes spell correction, query expansion, synonym injection, and intent classification.
   - **[[Relevance Ranking]]** — scoring and ordering retrieved candidates. Classical: BM25 (probabilistic term frequency saturation + IDF weighting). Neural: cross-encoder re-rankers that jointly encode query and document via a [[Transformer]] for fine-grained relevance estimation.

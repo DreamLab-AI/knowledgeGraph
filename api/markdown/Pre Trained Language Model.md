@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Pre Trained Language Model
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:pre-trained-language-model", "@type":"Page", "title":"Pre Trained Language Model", "vc:slug":"pre-trained-language-model", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:pre-trained-language-model",
+  "@type": "Page",
+  "title": "Pre Trained Language Model",
+  "vc:slug": "pre-trained-language-model",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - BC-0479-regulatory-compliance
-  - RegulatoryCompliance
----
-
-# Regulatory Compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -122,22 +114,58 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"}
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
     ]
   },
   "quality": 0.8,
@@ -148,107 +176,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:regulatory-compliance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8965f5c762974b4bba8d4b30e329a8923c5b3817f1006c340bde90274531ee3d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Governance Principle]]",
-      "resolved": "urn:visionflow:linked:ai-governance-principle",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Algorithmic Impact Assessment]]",
-      "resolved": "urn:visionflow:linked:algorithmic-impact-assessment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Conformity Assessment]]",
-      "resolved": "urn:visionflow:linked:conformity-assessment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU AI Act Compliance]]",
-      "resolved": "urn:visionflow:linked:eu-ai-act-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR Compliance]]",
-      "resolved": "urn:visionflow:linked:gdpr-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human Oversight Requirement]]",
-      "resolved": "urn:visionflow:linked:human-oversight-requirement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE 7000 Model Process]]",
-      "resolved": "urn:visionflow:linked:ieee-7000-model-process",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI Risk Management Framework]]",
-      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sector-Specific Compliance]]",
-      "resolved": "urn:visionflow:linked:sector-specific-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transparency Obligation]]",
-      "resolved": "urn:visionflow:linked:transparency-obligation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Audit Trail]]",
-      "resolved": "urn:visionflow:owl:class:audit-trail",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Regulatory Compliance in AI contexts refers to the adherence to legal requirements, statutory obligations, and regulatory standards governing the development, deployment, and operation of artificial intelligence systems within specific jurisdictions or sectors. As AI systems increasingly influence consequential decisions and autonomous operations, governments and regulatory bodies worldwide have established frameworks requiring organizations to demonstrate compliance with requirements addressing transparency, fairness, privacy, safety, and accountability. Regulatory compliance for AI encompasses horizontal regulations applying across sectors (such as GDPR for data protection, EU AI Act for high-risk AI systems), vertical sector-specific requirements (such as medical device regulations for healthcare AI, financial services regulations for algorithmic trading), and emerging AI-specific frameworks establishing risk-based obligations. Compliance requires organizations to implement governance structures, conduct impact assessments, maintain documentation and audit trails, provide transparency to users, establish human oversight mechanisms, and demonstrate ongoing monitoring for regulatory adherence. The regulatory landscape exhibits significant geographic variation with the EU establishing comprehensive AI-specific regulations, the US pursuing sector-specific approaches, and other jurisdictions developing diverse frameworks, creating compliance challenges for organizations operating globally.

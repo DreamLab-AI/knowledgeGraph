@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Message Authentication Code
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -166,4 +161,3 @@ public: true
   - In the TLS 1.3 handshake, MACs are subsumed within Authenticated Encryption with Associated Data (AEAD) constructions — AES-GCM and ChaCha20-Poly1305 — that simultaneously encrypt and authenticate in a single pass, eliminating the "MAC-then-encrypt vs encrypt-then-MAC" ordering vulnerabilities that plagued earlier protocol versions. IPsec's Encapsulating Security Payload (ESP) and Authentication Header (AH) use HMAC-SHA256 or AES-GMAC as integrity algorithms. Message-level MACs also protect API authentication tokens (HMAC-based CSRF tokens, AWS Signature Version 4 request signing).
 
   - By 2024–2025, MAC algorithms are considered cryptographically sound when constructed from SHA-2, SHA-3, or AES primitives with appropriate key lengths. Post-quantum considerations affect [[Digital Signature]] schemes more acutely than MACs, since MACs rely on symmetric primitives that offer quadratic Grover speedup resistance — doubling key length (e.g., 256-bit keys) restores security margins. Research attention focuses on lightweight MAC designs (GIFT-COFB, Ascon-MAC) for constrained IoT devices under NIST lightweight cryptography standardisation, and on decentralised MAC schemes for threshold-authenticated distributed systems.
-

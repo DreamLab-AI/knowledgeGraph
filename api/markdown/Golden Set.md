@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Golden Set
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Golden Set",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:test-dataset", "vc:label": "TestDataset" },
-    { "@id": "urn:visionflow:linked:ground-truth", "vc:label": "GroundTruth" },
-    { "@id": "urn:visionflow:linked:evaluation-harness", "vc:label": "EvaluationHarness" },
-    { "@id": "urn:visionflow:linked:llm-evaluation", "vc:label": "LLMEvaluation" }
+    {
+      "@id": "urn:visionflow:linked:test-dataset",
+      "vc:label": "TestDataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:ground-truth",
+      "vc:label": "GroundTruth"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-harness",
+      "vc:label": "EvaluationHarness"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-evaluation",
+      "vc:label": "LLMEvaluation"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,17 +44,32 @@ public: true
   "definition": "A small, carefully curated and human-verified collection of input-output examples that serves as the authoritative reference against which a model, prompt, agent, or pipeline is repeatedly evaluated. Each item pairs a representative input with an expected or ideal output, and the set is deliberately kept stable across versions so that regression can be measured, quality can be tracked over time, and changes can be accepted or rejected on the basis of a consistent benchmark rather than anecdote.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": { "@id": "urn:ngm:class:test-dataset", "label": "Test Dataset" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:test-dataset",
+    "label": "Test Dataset"
+  },
   "relations": {
     "uses": [
-      { "@id": "urn:ngm:class:ground-truth", "label": "Ground Truth" }
+      {
+        "@id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:evaluation-harness", "label": "Evaluation Harness" }
+      {
+        "@id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:llm-evaluation", "label": "LLM Evaluation" },
-      { "@id": "urn:ngm:class:benchmarking", "label": "Benchmarking" }
+      {
+        "@id": "urn:ngm:class:llm-evaluation",
+        "label": "LLM Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      }
     ]
   },
   "quality": 0.75,

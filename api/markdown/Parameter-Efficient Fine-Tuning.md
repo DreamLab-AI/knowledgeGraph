@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Parameter-Efficient Fine-Tuning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -213,57 +208,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:parameter-efficient-fine-tuning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2e32a2b482d418a5aaf18b41183afdaef99087e313913c1d290c8e6367210cad"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Adapter Modules]]",
-      "resolved": "urn:visionflow:owl:class:adapter-modules",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Full Fine Tuning]]",
-      "resolved": "urn:visionflow:owl:class:full-fine-tuning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LoRA]]",
-      "resolved": "urn:visionflow:owl:class:lo-ra",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Prompt Tuning]]",
-      "resolved": "urn:visionflow:owl:class:prompt-tuning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Training techniques that update only a small subset of model parameters during fine-tuning, reducing computational and memory requirements whilst maintaining comparable performance to full fine-tuning. PEFT methods enable adaptation of large models with limited resources.

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Crowd Simulation
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:crowd-simulation", "@type": "Page", "title": "Crowd Simulation", "vc:slug": "crowd-simulation", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:crowd-simulation",
+  "@type": "Page",
+  "title": "Crowd Simulation",
+  "vc:slug": "crowd-simulation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

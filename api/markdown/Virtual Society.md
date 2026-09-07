@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Society
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -59,23 +54,56 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtual-currency", "label": "Virtual Currency"},
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:community-standards", "label": "Community Standards"}
+      {
+        "@id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:community-standards",
+        "label": "Community Standards"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-world-platform", "label": "Virtual World Platform"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
-      {"@id": "urn:ngm:class:cross-metaverse-commerce", "label": "Cross Metaverse Commerce"}
+      {
+        "@id": "urn:ngm:class:virtual-world-platform",
+        "label": "Virtual World Platform"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-metaverse-commerce",
+        "label": "Cross Metaverse Commerce"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-commerce", "label": "Digital Commerce"}
+      {
+        "@id": "urn:ngm:class:digital-commerce",
+        "label": "Digital Commerce"
+      }
     ]
   },
   "quality": 0.8,
@@ -86,32 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-society:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6e403c0775309efdf6ef25cfb6810c52207cdf344b78da25db87a518e7108054"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Social Structure]]",
-      "resolved": "urn:visionflow:linked:social-structure",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A virtual society component in the Metaverse domain that enables VirtualWorld.

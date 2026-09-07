@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0035 accuracy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,23 +55,50 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"}
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0034-repeatability", "label": "rb 0034 repeatability"},
-      {"@id": "urn:ngm:class:rb-0036-resolution", "label": "rb 0036 resolution"}
+      {
+        "@id": "urn:ngm:class:rb-0034-repeatability",
+        "label": "rb 0034 repeatability"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0036-resolution",
+        "label": "rb 0036 resolution"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
-      {"@id": "urn:ngm:class:rb-0029-inverse-kinematics", "label": "rb 0029 inverse kinematics"},
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"},
-      {"@id": "urn:ngm:class:precision", "label": "Precision"}
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0029-inverse-kinematics",
+        "label": "rb 0029 inverse kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:precision",
+        "label": "Precision"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+      {
+        "@id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0048-pid-controller", "label": "rb 0048 pid controller"}
+      {
+        "@id": "urn:ngm:class:rb-0048-pid-controller",
+        "label": "rb 0048 pid controller"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0035-accuracy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2ee848e11adaed0543815fecd7fa319ea5cda66c70f1be5d5e2b38e842845ed8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Accuracy** - Difference between commanded and actual position

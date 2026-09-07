@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Training Data Distribution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "Training data distribution refers to the statistical properties and compositional characteristics of the dataset used to train a machine learning model, including the relative frequencies of classes, the coverage of input feature space, the presence of rare or tail events, and the demographic or domain balance of examples. The training data distribution determines what patterns a model can learn, what it will generalise from, and where it will fail: a model trained on a distribution that differs from the deployment distribution will exhibit degraded performance due to covariate shift or prior probability shift. Deliberate control of training data distribution — through curation, resampling, augmentation, and synthetic data generation — is a primary lever for improving model robustness, fairness, and safety.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:training-data", "label": "Training Data"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:training-data",
+      "label": "Training Data"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"},
-      {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
-      {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
-      {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"}
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation-strategies",
+        "label": "Data Augmentation Strategies"
+      },
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +88,3 @@ public: true
   - The significance of training data distribution extends beyond accuracy to safety, fairness, and reliability. A model trained predominantly on data from one geographic region may fail on users from other regions; a medical imaging model trained on hospital-grade equipment may underperform on data from community clinics with different imaging equipment. Distributional mismatch between training and deployment — covariate shift — is one of the most common causes of production ML system degradation. Addressing this requires either collecting more representative training data, applying domain adaptation techniques, or using continual learning to update model parameters as the deployment distribution evolves.
 
   - By 2024–2025, the scale of training data for foundation models has brought new dimensions to training data distribution concerns. Web-scale pre-training datasets are substantially over-indexed on English text from specific cultural contexts, high-income countries, and certain historical periods. Researchers are developing dataset composition techniques — careful source weighting, quality filtering, and deliberate inclusion of under-represented domains — to improve the distributional properties of foundation model training corpora. Data cards and dataset nutrition labels are emerging as standards for documenting training data distribution, enabling downstream users to assess whether a model's training distribution is appropriate for their deployment context.
-

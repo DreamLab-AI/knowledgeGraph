@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Semantic Reasoning Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:semantic-reasoning-engine:0e38e2f02edd",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0f5a507c5a48bd60945f8ec42bde0b730adae0d311e2517bb3fbe748951061f2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Description Logic]]",
-      "resolved": "urn:visionflow:linked:description-logic",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OWL 2 Web Ontology Language]]",
-      "resolved": "urn:visionflow:linked:owl-2-web-ontology-language",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reasoning]]",
-      "resolved": "urn:visionflow:linked:reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inference Engine]]",
-      "resolved": "urn:visionflow:linked:inference-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.w3.org/TR/owl2-primer/]]",
-      "resolved": "urn:visionflow:linked:https-www-w-3-org-tr-owl-2-primer",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software that derives logically implied facts and checks consistency over a knowledge base expressed in a formal language such as OWL or RDF Schema. It applies inference rules of the underlying logic to make implicit information explicit.

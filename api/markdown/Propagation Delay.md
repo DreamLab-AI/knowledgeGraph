@@ -1,57 +1,110 @@
----
-public: true
----
-
-# Propagation Delay
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:propagation-delay", "@type":"Page", "title":"Propagation Delay", "vc:slug":"propagation-delay", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:propagation-delay",
+  "@type": "Page",
+  "title": "Propagation Delay",
+  "vc:slug": "propagation-delay",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:propagation-delay",
-  "@type":"Class",
-  "label":"Propagation Delay",
-  "definition":"Propagation delay is the time a signal takes to travel from sender to receiver across a transmission medium, determined by the physical distance divided by the signal's propagation speed. Bounded by the speed of light and reduced in copper or fibre by the medium's refractive properties, it sets a hard floor on network latency that no amount of bandwidth can remove. Propagation delay is one of several additive components of end-to-end latency, alongside transmission, queuing, and processing delays.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:network-latency","label":"Network Latency"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:network-latency","label":"Network Latency"}],
-    "hasPart":[
-      {"@id":"urn:ngm:class:latency","label":"Latency"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:propagation-delay",
+  "@type": "Class",
+  "label": "Propagation Delay",
+  "definition": "Propagation delay is the time a signal takes to travel from sender to receiver across a transmission medium, determined by the physical distance divided by the signal's propagation speed. Bounded by the speed of light and reduced in copper or fibre by the medium's refractive properties, it sets a hard floor on network latency that no amount of bandwidth can remove. Propagation delay is one of several additive components of end-to-end latency, alongside transmission, queuing, and processing delays.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-latency",
+      "label": "Network Latency"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:network-topology","label":"Network Topology"},
-      {"@id":"urn:ngm:class:packet-switching","label":"Packet Switching"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:network-topology","label":"Network Topology"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:round-trip-time","label":"Round Trip Time"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:low-latency","label":"Low Latency"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:round-trip-time",
+        "label": "Round Trip Time"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:transmission-delay","label":"Transmission Delay"},
-      {"@id":"urn:ngm:class:jitter","label":"Jitter"},
-      {"@id":"urn:ngm:class:bandwidth","label":"Bandwidth"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:transmission-delay","label":"Transmission Delay"},
-      {"@id":"urn:ngm:class:bandwidth","label":"Bandwidth"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transmission-delay",
+        "label": "Transmission Delay"
+      },
+      {
+        "@id": "urn:ngm:class:jitter",
+        "label": "Jitter"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:transmission-delay",
+        "label": "Transmission Delay"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -64,7 +117,7 @@ public: true
 - For interactive and real-time systems, propagation delay dominates the latency budget over long distances, making placement and routing decisive design factors.
 - ### Mechanisms
 - Distance dependence: delay scales linearly with path length.
-- Medium speed: copper and fibre propagate slower than light in vacuum due to refractive index.
+- Medium speed: copper and fibre propagate slower than light in vacuum due to refractive [private].
 - Routing path: actual geographic and topological path, not straight-line distance, sets the value.
 - Additive composition: propagation combines with transmission, queuing, and processing delays.
 - ### Applications

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Communication Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "A communication interface is a defined boundary — hardware, software, or logical — through which two or more distinct systems, components, or agents exchange data, commands, or signals according to agreed protocols and encodings. It abstracts the internal implementation details of each participant, exposing only the contract necessary for interoperability, and may operate synchronously or asynchronously across local buses, networks, or inter-process mechanisms. Communication interfaces are fundamental to modular system design, enabling independent development, testing, and replacement of components without disrupting the broader system.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
-      {"@id": "urn:ngm:class:data-access-interface", "label": "Data Access Interface"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:data-access-interface",
+        "label": "Data Access Interface"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"}
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"}
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
     ]
   },
   "quality": 0.8

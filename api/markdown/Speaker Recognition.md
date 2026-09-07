@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Speaker Recognition
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,43 +20,102 @@ public: true
   "definition": "The automated identification or verification of a person's identity based on characteristics of their voice derived from acoustic speech signals. Speaker recognition encompasses two sub-tasks: speaker verification (confirming a claimed identity) and speaker identification (determining who among a set of known speakers produced a given utterance). Systems extract speaker-discriminative features such as MFCCs, i-vectors, or x-vectors from audio, then compare these against enrolled speaker models using distance metrics or neural classifiers. It is distinct from speech recognition, which transcribes words rather than identifies speakers.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:voice-activity-detection", "label": "Voice Activity Detection"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"},
-      {"@id": "urn:ngm:class:voice-assistant", "label": "Voice Assistant"},
-      {"@id": "urn:ngm:class:speaker-diarisation", "label": "Speaker Diarisation"}
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"},
-      {"@id": "urn:ngm:class:voice-activity-detection", "label": "Voice Activity Detection"}
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "@id": "urn:ngm:class:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:speaker-embedding", "label": "Speaker Embedding"},
-      {"@id": "urn:ngm:class:speaker-model", "label": "Speaker Model"}
+      {
+        "@id": "urn:ngm:class:speaker-embedding",
+        "label": "Speaker Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-model",
+        "label": "Speaker Model"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:personalisation", "label": "Personalisation"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:speech-processing", "label": "Speech Processing"}
+      {
+        "@id": "urn:ngm:class:speech-processing",
+        "label": "Speech Processing"
+      }
     ]
   },
   "quality": 0.62,

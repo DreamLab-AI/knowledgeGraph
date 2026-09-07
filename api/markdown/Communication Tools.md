@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Communication Tools
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Software applications and platforms that enable individuals and teams to exchange information, coordinate activities, and maintain shared context across synchronous and asynchronous channels. They span messaging, video conferencing, email, collaborative documents, and emerging immersive communication modalities, forming the operational backbone of distributed work.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:collaborative-systems-modality-technology", "label": "Collaborative Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:collaborative-systems-modality-technology",
+      "label": "Collaborative Technology"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:communication-infrastructure", "label": "Communication Infrastructure"},
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"}
+      {
+        "@id": "urn:ngm:class:communication-infrastructure",
+        "label": "Communication Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-team-collaboration", "label": "Distributed Team Collaboration"},
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"}
+      {
+        "@id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
-      {"@id": "urn:ngm:class:virtual-workspace", "label": "Virtual Workspace"}
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-workspace",
+        "label": "Virtual Workspace"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Data models are the collected structural specifications that define how information is represented, related and constrained within a system or framework. In digital-twin and layered service architectures they describe the shape of state, telemetry and interactions exchanged between components. Well-defined data models are a prerequisite for interoperability, validation and consistent behaviour across service layers.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin-framework", "label": "Digital Twin Framework"},
-      {"@id": "urn:ngm:class:service-layer", "label": "Service Layer"}
+      {
+        "@id": "urn:ngm:class:digital-twin-framework",
+        "label": "Digital Twin Framework"
+      },
+      {
+        "@id": "urn:ngm:class:service-layer",
+        "label": "Service Layer"
+      }
     ]
   },
   "quality": 0.72

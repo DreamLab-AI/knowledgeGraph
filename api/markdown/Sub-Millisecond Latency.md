@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sub-Millisecond Latency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,22 +55,52 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
-      {"@id": "urn:ngm:class:transaction-processing", "label": "Transaction Processing"}
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
-      {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "@id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:probabilistic-finality", "label": "Probabilistic Finality"}
+      {
+        "@id": "urn:ngm:class:probabilistic-finality",
+        "label": "Probabilistic Finality"
+      }
     ]
   },
   "provenance": {
@@ -85,32 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sub-millisecond-latency:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9322e3c76548fa78fa07f97b18419f3f42c772194331546ac63778d0c006fc2b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Sub-Millisecond Latency is a network performance characteristic in which end-to-end transaction confirmation or consensus completion occurs in under one millisecond. It depends on highly optimised peer-to-peer propagation, deterministic finality mechanisms, and minimal block time, distinguishing high-performance chains from conventional systems with multi-second confirmation times.

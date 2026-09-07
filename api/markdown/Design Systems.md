@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Design Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A design system is a single source of truth that combines reusable UI components, design tokens, patterns, and documentation governing how a product looks and behaves. It unifies designers and engineers around a shared component library and usage guidelines, ensuring consistency and accelerating delivery across teams and platforms. It encompasses both the visual language and the coded implementation that enforces it.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ]
   },
   "quality": 0.72

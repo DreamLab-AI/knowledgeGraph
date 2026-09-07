@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Traditional Corporation
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:traditional-corporation", "@type": "Page", "title": "Traditional Corporation", "vc:slug": "traditional-corporation", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:traditional-corporation",
+  "@type": "Page",
+  "title": "Traditional Corporation",
+  "vc:slug": "traditional-corporation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

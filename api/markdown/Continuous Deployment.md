@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Continuous Deployment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

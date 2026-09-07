@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LyCORIS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,30 @@ public: true
   "definition": "LyCORIS (Lora beYond Conventional methods, Other Rank adaptation Implementations for Stable diffusion) is an open-source library implementing a family of parameter-efficient fine-tuning methods for diffusion and other models that extend beyond standard low-rank adaptation. It includes techniques such as LoHa (Hadamard-product decomposition), LoKr (Kronecker-product decomposition), and full or convolutional adaptations, giving practitioners a richer set of expressiveness-versus-size trade-offs. LyCORIS is widely used in the image-generation community to train compact, shareable model adapters.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:low-rank-adaptation", "label": "Low-Rank Adaptation"}
+      {
+        "@id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Adaptation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ]
   },
   "quality": 0.8

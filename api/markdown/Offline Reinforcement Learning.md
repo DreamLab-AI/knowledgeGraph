@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Offline Reinforcement Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,52 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:offline-reinforcement-learning:e72191f6c473",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a2ae3e20ab4b3456efe9e0b8b56bc10a8a9717b13374833781a9ec7f952217e1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Markov Decision Process]]",
-      "resolved": "urn:visionflow:linked:markov-decision-process",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Learning from Demonstration]]",
-      "resolved": "urn:visionflow:linked:learning-from-demonstration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Imitation Learning]]",
-      "resolved": "urn:visionflow:linked:imitation-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reward Function]]",
-      "resolved": "urn:visionflow:linked:reward-function",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Offline reinforcement learning trains a policy from a fixed dataset of previously collected experience without further interaction with the environment. It avoids online exploration, which makes it suitable where data collection is costly or unsafe.

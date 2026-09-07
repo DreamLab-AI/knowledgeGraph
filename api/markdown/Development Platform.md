@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Development Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-fabrication", "label": "Digital Fabrication"},
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+      {
+        "@id": "urn:ngm:class:digital-fabrication",
+        "label": "Digital Fabrication"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
     ]
   },
   "provenance": {
@@ -82,37 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:development-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f6e3b6cb3c19c3251324fa1b6e459c24c4c8e631a2c01d8bb151a2754b29c779"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Development Platform is an integrated suite of tools, APIs, runtimes, and infrastructure services enabling engineers and creators to build, test, and deploy applications. In spatial computing contexts, development platforms supply SDKs for XR hardware, scene-graph editors, physics engines, and asset pipelines supporting OpenXR and USD. They abstract hardware heterogeneity and supply governance tooling for collaborative development.

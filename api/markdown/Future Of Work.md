@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Future Of Work
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

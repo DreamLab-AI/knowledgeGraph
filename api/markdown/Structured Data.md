@@ -1,38 +1,132 @@
----
-public: true
----
-
-# Structured Data
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:structured-data", "@type":"Page", "title":"Structured Data", "vc:slug":"structured-data", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:structured-data",
+  "@type": "Page",
+  "title": "Structured Data",
+  "vc:slug": "structured-data",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:structured-data",
-  "@type":"Class",
-  "label":"Structured Data",
-  "definition":"Structured data is information organised according to a predefined schema or model so that its meaning and relationships are explicit and machine-readable. By conforming to fixed fields, types, and constraints, it can be reliably queried, validated, exchanged, and reasoned over, in contrast to unstructured text or media. On the web it commonly takes the form of annotations such as Schema.org markup that let machines interpret page content.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-model","label":"Data Model"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:data-model","label":"Data Model"}],
-    "hasPart":[{"@id":"urn:ngm:class:metadata","label":"Metadata"},{"@id":"urn:ngm:class:schema-org","label":"Schema.org"}],
-    "uses":[{"@id":"urn:ngm:class:data-format","label":"Data Format"},{"@id":"urn:ngm:class:metadata","label":"Metadata"},{"@id":"urn:ngm:class:schema-org","label":"Schema.org"}],
-    "enables":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"},{"@id":"urn:ngm:class:data-validation","label":"Data Validation"},{"@id":"urn:ngm:class:search-engine","label":"Search Engine"}],
-    "supports":[{"@id":"urn:ngm:class:knowledge-graph","label":"Knowledge Graph"},{"@id":"urn:ngm:class:linked-data","label":"Linked Data"}],
-    "requires":[{"@id":"urn:ngm:class:data-format","label":"Data Format"}],
-    "implements":[{"@id":"urn:ngm:class:data-model","label":"Data Model"}],
-    "relatedTo":[{"@id":"urn:ngm:class:rdf","label":"RDF"},{"@id":"urn:ngm:class:semantic-web","label":"Semantic Web"},{"@id":"urn:ngm:class:ontology","label":"Ontology"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:rdf-xml","label":"Rdf Xml"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:graph-database","label":"Graph Database"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:structured-data",
+  "@type": "Class",
+  "label": "Structured Data",
+  "definition": "Structured data is information organised according to a predefined schema or model so that its meaning and relationships are explicit and machine-readable. By conforming to fixed fields, types, and constraints, it can be reliably queried, validated, exchanged, and reasoned over, in contrast to unstructured text or media. On the web it commonly takes the form of annotations such as Schema.org markup that let machines interpret page content.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-model",
+      "label": "Data Model"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rdf-xml",
+        "label": "Rdf Xml"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

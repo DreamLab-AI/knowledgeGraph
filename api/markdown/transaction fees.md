@@ -1,8 +1,3 @@
----
-public: true
----
-
-# transaction fees
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transaction-fees:5a36e0e53640",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1c370b9935c962576a5b24a7d722a66de560eee0ba37c20f728cfdefccdaa376"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Network]]",
-      "resolved": "urn:visionflow:linked:bitcoin-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Validation]]",
-      "resolved": "urn:visionflow:linked:transaction-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitcoin Mining]]",
-      "resolved": "urn:visionflow:linked:bitcoin-mining",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction]]",
-      "resolved": "urn:visionflow:linked:transaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://developer.bitcoin.org/devguide/transactions.html]]",
-      "resolved": "urn:visionflow:linked:https-developer-bitcoin-org-devguide-transactions-html",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.bitcoin.it/wiki/Transaction_fees]]",
-      "resolved": "urn:visionflow:linked:https-en-bitcoin-it-wiki-transaction-fees",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Transaction fees are amounts paid by users to have their transactions included in a blockchain block. They compensate miners or validators and help prioritise transactions when capacity is limited.

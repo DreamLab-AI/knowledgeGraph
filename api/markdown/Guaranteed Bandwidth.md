@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Guaranteed Bandwidth
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,23 +52,56 @@ public: true
   "qualityScore": 0.75,
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:network-quality-metric", "label": "Network Quality Metric"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {
+        "@id": "urn:ngm:class:network-quality-metric",
+        "label": "Network Quality Metric"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"}
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "@id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
-      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +111,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:guaranteed-bandwidth:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5348fce672aff886d058732500f31bdf43456e6458465911ce12a9553a8bc1aa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Quality Metric]]",
-      "resolved": "urn:visionflow:owl:class:network-quality-metric",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A guaranteed bandwidth component in the Metaverse domain that enables gNetworkSlice.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Stereo Rectification
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

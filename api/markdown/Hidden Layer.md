@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hidden Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A hidden layer is an intermediate layer of neurons in a neural network situated between the input and output layers, whose activations are not directly observed. Each hidden layer applies a learned linear transformation followed by a non-linear activation, building increasingly abstract feature representations. Stacking multiple hidden layers is what gives deep networks their representational power.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed Forward Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed Forward Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ]
   },
   "quality": 0.72

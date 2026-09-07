@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Regulatory Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:regulatory-layer:f3938af36125",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:621368990a7668dc96f680d85a969d2cec03a13eb98aa01a4545691b6e0c09b2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Compliance Layer]]",
-      "resolved": "urn:visionflow:linked:compliance-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Institutional Layer]]",
-      "resolved": "urn:visionflow:linked:institutional-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Governance Layer]]",
-      "resolved": "urn:visionflow:linked:governance-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Regulation]]",
-      "resolved": "urn:visionflow:linked:financial-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Protection Law]]",
-      "resolved": "urn:visionflow:linked:data-protection-law",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Regulatory Layer is the cross-cutting stratum that represents jurisdiction-specific legal requirements and the authorities that impose them. It sits above the Compliance Layer, supplying the obligations that compliance verifies, and informs governance and institutional structures. It contains regulations, licensing regimes, reporting duties, and the mapping of activities to applicable rules.

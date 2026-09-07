@@ -1,15 +1,10 @@
----
-public: true
----
-
-# TERM INDEX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:page:7fdfd46cc2b2d62bb0417cbd6c4fabb273bb0c8fe64ab592521595232c2401e4",
   "@type": "Page",
   "vc:slug": "term-index",
-  "title": "TERM INDEX",
+  "title": "TERM [private]",
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
@@ -41,7 +36,7 @@ public: true
     },
     {
       "vc:key": "preferred-term",
-      "vc:value": "TERM INDEX"
+      "vc:value": "TERM [private]"
     }
   ],
   "prov:wasAttributedTo": {
@@ -59,7 +54,7 @@ public: true
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@id": "urn:ngm:class:term-index",
   "@type": "Class",
-  "label": "TERM INDEX",
+  "label": "TERM [private]",
   "definition": "A Term Index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and knowledge-graph integration, serving both user-facing navigation and machine-readable specifications supporting automated reasoning and SPARQL query optimisation.",
   "domain": "spatial-computing",
   "maturity": "emerging",
@@ -72,17 +67,38 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "provenance": {
@@ -93,54 +109,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:term-index:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7fdfd46cc2b2d62bb0417cbd6c4fabb273bb0c8fe64ab592521595232c2401e4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[KnowledgeGraphIntegration|knowledge graph integration]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph-integration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OWLOntology|OWL ontology]]",
-      "resolved": "urn:visionflow:linked:owlontology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RoboticsOntology|robotics ontology term index]]",
-      "resolved": "urn:visionflow:linked:robotics-ontology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SPARQLQuery|SPARQL query]]",
-      "resolved": "urn:visionflow:linked:sparqlquery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - A Term Index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices like the [[RoboticsOntology|robotics ontology term index]] organisation provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and [[KnowledgeGraphIntegration|knowledge graph integration]]. These catalogues serve as both user-facing navigation aids and machine-readable specifications supporting automated reasoning, [[OWLOntology|OWL ontology]] validation, and [[SPARQLQuery|SPARQL query]] optimisation.
+  - A Term Index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices like the [[RoboticsOntology|robotics ontology term [private]]] organisation provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and [[KnowledgeGraphIntegration|knowledge graph integration]]. These catalogues serve as both user-facing navigation aids and machine-readable specifications supporting automated reasoning, [[OWLOntology|OWL ontology]] validation, and [[SPARQLQuery|SPARQL query]] optimisation.
 - ### Semantic Classification
   - owl-class:: spatial-computing:TERMINDEX
   - owl-role:: Concept
@@ -154,7 +124,7 @@ public: true
 
   ## Academic Context
   - Brief contextual overview
-  - The term "index" in the context of the metaverse ecosystem refers to a structured aggregation of assets, protocols, or tokens that represent the performance or composition of a specific sector within the broader metaverse landscape
+  - The term "[private]" in the context of the metaverse ecosystem refers to a structured aggregation of assets, protocols, or tokens that represent the performance or composition of a specific sector within the broader metaverse landscape
   - Indexes serve as benchmarks for investment, research, and market analysis, enabling stakeholders to track trends and diversify exposure across multiple platforms or technologies
   - The concept draws from traditional financial indices but is adapted for digital and decentralised environments, often leveraging blockchain technology for transparency and automation
   - Key developments and current state
@@ -187,14 +157,14 @@ public: true
   - Studies are also investigating the social and economic implications of decentralised indices, including issues of governance, transparency, and user engagement
   ## UK Context
   - British contributions and implementations
-  - UK universities and research institutions are at the forefront of metaverse index research, contributing to the development of new methodologies and frameworks
+  - UK universities and research institutions are at the forefront of metaverse [private] research, contributing to the development of new methodologies and frameworks
   - British fintech companies are actively involved in the creation and management of metaverse indices, often collaborating with international partners
   - North England innovation hubs (if relevant)
   - Cities like Manchester, Leeds, Newcastle, and Sheffield are home to vibrant innovation ecosystems, with startups and research groups focusing on the intersection of finance, technology, and the metaverse
   - These hubs often host hackathons, workshops, and conferences that bring together experts from academia, industry, and government to advance the field
   - Regional case studies
   - The University of Manchester's Digital Innovation Lab has conducted several studies on the use of metaverse indices in financial education and research
-  - Leeds-based fintech firm Metaverse Analytics has developed a proprietary index for tracking the performance of virtual world assets, with a focus on user engagement and market trends
+  - Leeds-based fintech firm Metaverse Analytics has developed a proprietary [private] for tracking the performance of virtual world assets, with a focus on user engagement and market trends
   ## Future Directions
   - Emerging trends and developments
   - The integration of metaverse indices with other digital assets, such as NFTs and DeFi protocols, is expected to drive further innovation and adoption

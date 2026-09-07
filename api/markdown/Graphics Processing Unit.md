@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Graphics Processing Unit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -208,57 +203,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:graphics-processing-unit:cd32ce41402f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d45a13badeccfa8bf32573d851909294ecf720cabaf94d4390e324886eb9f1ba"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Shader]]",
-      "resolved": "urn:visionflow:linked:shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compute Shader]]",
-      "resolved": "urn:visionflow:linked:compute-shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPU]]",
-      "resolved": "urn:visionflow:linked:gpu",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenGL]]",
-      "resolved": "urn:visionflow:linked:open-gl",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Graphics Processing]]",
-      "resolved": "urn:visionflow:linked:graphics-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Graphics Processing Unit is a parallel processor designed to accelerate the rendering of images and other data-parallel workloads through many concurrent execution units.

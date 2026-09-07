@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reference Frames
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A reference frame is a coordinate system, anchored to a chosen origin and orientation, against which positions, velocities, and orientations are measured. In robotics each link, sensor, and the world itself has its own frame, and motion is described by transformations between them. Correct frame definitions are essential for sensor fusion, kinematics, and consistent spatial reasoning.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:coordinate-transformation", "label": "Coordinate Transformation"},
-      {"@id": "urn:ngm:class:kinematics-model", "label": "Kinematics Model"}
+      {
+        "@id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics-model",
+        "label": "Kinematics Model"
+      }
     ]
   },
   "quality": 0.72

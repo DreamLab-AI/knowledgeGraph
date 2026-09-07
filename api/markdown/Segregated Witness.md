@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Segregated Witness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -117,7 +112,7 @@ public: true
   - It depends on the network's [[Consensus Mechanism]] for activation and laid the groundwork for the [[Lightning Network]].
 
 - ### Overview
-  - Before SegWit, a transaction's signatures were part of the data hashed to produce its transaction identifier. Because signatures could be altered without changing their validity, the identifier was malleable, complicating any protocol that referenced unconfirmed transactions — including payment channels.
+  - Before SegWit, a transaction's signatures were part of the data hashed to produce its transaction identifier. Because signatures [private] be altered without changing their validity, the identifier was malleable, complicating any protocol that referenced unconfirmed transactions — including payment channels.
   - SegWit separates the witness data so that the transaction identifier is computed only from the non-witness portion. This makes identifiers stable, eliminating malleability and unblocking second-layer designs. The witness is still committed to the block, via a dedicated commitment, so security is preserved.
   - SegWit also introduced block weight, a new accounting unit that discounts witness data. This raised the effective number of transactions a block can hold without a contentious hard fork to the nominal block-size limit, making it a soft fork that older nodes still accept.
 

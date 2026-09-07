@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Industry Consolidation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-industry-consolidation",
   "title": "AI Industry Consolidation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Cursor Acquisition", "Strategic AI Investment"],
+  "vc:outboundWikilinks": [
+    "Cursor Acquisition",
+    "Strategic AI Investment"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:competition-in-ai", "label": "Competition in AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:competition-in-ai", "label": "Competition in AI"}, {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Distributed Sensing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -28,7 +23,7 @@ public: true
   "@id": "urn:ngm:class:distributed-sensing",
   "@type": "Class",
   "label": "Distributed Sensing",
-  "definition": "Distributed sensing is the collection and fusion of environmental information from multiple spatially separated sensing agents, such as the robots in a multi-robot system or swarm, rather than from a single centralised sensor. It exploits the combined spatial coverage and redundancy of many sensors to build a more complete, robust picture of the environment than any single agent could obtain alone. Distributed sensing is central to swarm robotics applications such as environmental monitoring, search and rescue, and cooperative mapping.",
+  "definition": "Distributed sensing is the collection and fusion of environmental information from multiple spatially separated sensing agents, such as the robots in a multi-robot system or swarm, rather than from a single centralised sensor. It exploits the combined spatial coverage and redundancy of many sensors to build a more complete, robust picture of the environment than any single agent [private] obtain alone. Distributed sensing is central to swarm robotics applications such as environmental monitoring, search and rescue, and cooperative mapping.",
   "domain": "robotics",
   "maturity": "emerging",
   "qualityScore": 0.5,
@@ -47,4 +42,4 @@ public: true
 ```
 
 - ### Definition
-  - Distributed sensing is the collection and fusion of environmental information from multiple spatially separated sensing agents, such as the robots in a multi-robot system or swarm, rather than from a single centralised sensor. It exploits the combined spatial coverage and redundancy of many sensors to build a more complete, robust picture of the environment than any single agent could obtain alone. Distributed sensing is central to swarm robotics applications such as environmental monitoring, search and rescue, and cooperative mapping.
+  - Distributed sensing is the collection and fusion of environmental information from multiple spatially separated sensing agents, such as the robots in a multi-robot system or swarm, rather than from a single centralised sensor. It exploits the combined spatial coverage and redundancy of many sensors to build a more complete, robust picture of the environment than any single agent [private] obtain alone. Distributed sensing is central to swarm robotics applications such as environmental monitoring, search and rescue, and cooperative mapping.

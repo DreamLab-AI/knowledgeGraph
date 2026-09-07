@@ -1,8 +1,3 @@
----
-public: true
----
-
-# JSON Serialisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "JSON serialisation is the process of encoding in-memory data structures into JavaScript Object Notation text and decoding that text back into structured values. It provides a human-readable, language-independent representation for objects, arrays, numbers, strings and booleans. JSON serialisation is the default interchange format for web APIs, configuration files and message-passing between heterogeneous systems.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"},
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"}
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
     ]
   },
   "quality": 0.72

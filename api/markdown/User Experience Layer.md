@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Experience Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:user-experience-layer:734cbaf86b96",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0f4b344b016b0b733d3705a32add86bae2e92f73c318aec5f03df2e936ae2092"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Presentation Layer]]",
-      "resolved": "urn:visionflow:linked:presentation-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social Layer]]",
-      "resolved": "urn:visionflow:linked:social-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Usability]]",
-      "resolved": "urn:visionflow:linked:usability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accessibility]]",
-      "resolved": "urn:visionflow:linked:accessibility",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The User Experience Layer is the topmost human-facing stratum concerned with how effective, accessible, and satisfying interaction with a system is. It sits above the Presentation Layer that renders the interface and has no technical layer above it. It contains interaction design, usability criteria, accessibility requirements, and user research findings.

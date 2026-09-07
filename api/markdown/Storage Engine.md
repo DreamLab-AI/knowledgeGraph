@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Storage Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -117,6 +113,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - A storage engine is the component of a database system responsible for how data is physically laid out, written, indexed and retrieved on durable media. It implements the on-disk data structures, transaction and concurrency control, write-ahead logging and recovery that guarantee durability and consistency. Different engines, such as B-tree and log-structured merge-tree designs, optimise for different read, write and space trade-offs.
   - Related concepts: [[Data Persistence]] [[Database System]] [[Write-Ahead Logging]] [[ACID Properties]] [[Relational Database]]

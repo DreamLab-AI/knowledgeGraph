@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Query Optimiser
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -23,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:query-optimiser",
   "@type": "Class",
   "label": "Query Optimiser",
-  "definition": "A query optimiser is the component of a database management system that transforms a declarative query into an efficient physical execution plan. It enumerates candidate plans, estimates their cost using statistics about data distribution and access paths, and selects the plan expected to minimise resource usage. Cost-based optimisers rely on cardinality estimation and index awareness, while rule-based optimisers apply heuristic transformations.",
+  "definition": "A query optimiser is the component of a database management system that transforms a declarative query into an efficient physical execution plan. It enumerates candidate plans, estimates their cost using statistics about data distribution and access paths, and selects the plan expected to minimise resource usage. Cost-based optimisers rely on cardinality estimation and [private] awareness, while rule-based optimisers apply heuristic transformations.",
   "domain": "data",
   "maturity": "established",
   "subClassOf": [
@@ -120,7 +114,7 @@ public: true
 ```
 
 - ### Definition
-  - A query optimiser is the component of a database management system that transforms a declarative query into an efficient physical execution plan. It enumerates candidate plans, estimates their cost using statistics about data distribution and access paths, and selects the plan expected to minimise resource usage. Cost-based optimisers rely on cardinality estimation and index awareness, while rule-based optimisers apply heuristic transformations.
+  - A query optimiser is the component of a database management system that transforms a declarative query into an efficient physical execution plan. It enumerates candidate plans, estimates their cost using statistics about data distribution and access paths, and selects the plan expected to minimise resource usage. Cost-based optimisers rely on cardinality estimation and [private] awareness, while rule-based optimisers apply heuristic transformations.
   - [[Database Management System]] [[SQL]] [[Indexing]] [[Performance Optimization]]
 - ### Overview
   - The optimiser sits between the parser and the execution engine, turning a logical query tree into a chosen physical plan.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LoRaWAN
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "LoRaWAN is a media-access-control protocol and network architecture for low-power wide-area networks, built on the LoRa physical layer's chirp spread-spectrum modulation. It connects battery-powered devices to gateways over distances of several kilometres at low data rates, with end-to-end encryption and adaptive data-rate management. LoRaWAN is widely used for long-range, low-throughput IoT telemetry such as cold-chain and environmental monitoring.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"}, {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ]
   },
   "quality": 0.72
 }

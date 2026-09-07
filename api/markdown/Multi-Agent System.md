@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - MultiAgentSystem
----
-
-# Multi-Agent System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,7 +186,7 @@ aliases:
 ```
 
 - ### Definition
-  - A [[Multi-Agent System]] (MAS) is a distributed computational architecture in which multiple [[Autonomous Agent]] entities — each with local perception, internal state, and independent decision-making — interact within a shared [[Agent Environment]] to accomplish individual or collective goals. Coordination arises from [[Inter-Agent Communication]], [[Stigmergy]], or market mechanisms such as the [[Contract Net Protocol]], without any agent requiring global knowledge. The aggregate behaviour of the agent population typically exhibits [[Emergence|emergent]] properties that transcend what any individual agent could achieve, placing MAS at the intersection of [[Distributed Artificial Intelligence]], [[Game Theory]], and [[Complex Systems]].
+  - A [[Multi-Agent System]] (MAS) is a distributed computational architecture in which multiple [[Autonomous Agent]] entities — each with local perception, internal state, and independent decision-making — interact within a shared [[Agent Environment]] to accomplish individual or collective goals. Coordination arises from [[Inter-Agent Communication]], [[Stigmergy]], or market mechanisms such as the [[Contract Net Protocol]], without any agent requiring global knowledge. The aggregate behaviour of the agent population typically exhibits [[Emergence|emergent]] properties that transcend what any individual agent [private] achieve, placing MAS at the intersection of [[Distributed Artificial Intelligence]], [[Game Theory]], and [[Complex Systems]].
 
 - ### Overview
   - Multi-agent systems formalise the insight that intelligence can be distributed across populations of simpler components rather than concentrated in a monolithic controller. Each agent in a MAS operates autonomously: it perceives its local environment, reasons over its observations, selects actions according to a policy, and communicates with peers. The system-level behaviour emerges from this local interaction.

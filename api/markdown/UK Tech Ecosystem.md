@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UK Tech Ecosystem
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,67 +178,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:uk-tech-ecosystem:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:148e1c1559cfd5043698dd0e599525ae0fe22d7d53956ba6d491e12a1940ccef"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Innovation]]",
-      "resolved": "urn:visionflow:linked:innovation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Economic Development]]",
-      "resolved": "urn:visionflow:linked:economic-development",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Innovation]]",
-      "resolved": "urn:visionflow:linked:innovation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tech Entrepreneurship]]",
-      "resolved": "urn:visionflow:linked:tech-entrepreneurship",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Technology]]",
-      "resolved": "urn:visionflow:linked:technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Technology Industry]]",
-      "resolved": "urn:visionflow:linked:technology-industry",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Development]]",
-      "resolved": "urn:visionflow:owl:class:ai-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The United Kingdom's technology industry landscape, ranked as Europe's leading tech ecosystem with a combined market valuation of $1.2 trillion and over 17,000 VC-backed startups. The UK is the third largest AI market globally (after US and China), valued at $92 billion in 2024, with 185+ unicorns, 3,700+ AI companies employing 60,000+ people, and $16.2 billion VC raised in 2024. Key hubs include London (1,603 AI startups, 14 unicorns) and Cambridge (world's most intensive science cluster, $222bn valuation). Despite startup creation strengths, the ecosystem faces challenges retaining scale-ups, with 43% of founders considering US relocation.

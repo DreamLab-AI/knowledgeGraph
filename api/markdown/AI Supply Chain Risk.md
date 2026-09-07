@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Supply Chain Risk
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-supply-chain-risk",
   "title": "AI Supply Chain Risk",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Anthropic Government Deployment", "US Government AI Policy"],
+  "vc:outboundWikilinks": [
+    "Anthropic Government Deployment",
+    "US Government AI Policy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}, {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}, {"@id": "urn:ngm:class:responsible-scaling-policy", "label": "Responsible Scaling Policy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

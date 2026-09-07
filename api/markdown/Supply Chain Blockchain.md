@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Supply Chain Blockchain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -199,37 +194,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:supply-chain-blockchain:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4de1962d9b3801669d62d451fc90bc2ddac7e2266d695d0e229fba6ccaa00f1e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Product Traceability]]",
-      "resolved": "urn:visionflow:linked:product-traceability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Supply chain blockchain refers to the application of distributed ledger technology to track, trace, and verify the provenance of goods as they move through supply chain networks from raw materials to end consumers. Blockchain provides an immutable, shared record of transactions enabling real-time visibility, authentication of origin, quality verification, and automated compliance through smart contracts, addressing challenges of counterfeiting, fraud, and supply chain opacity.

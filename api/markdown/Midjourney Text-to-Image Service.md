@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Midjourney]]
-# Midjourney Text-to-Image Service
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -175,62 +169,6 @@ elevatedFrom:: [[Midjourney]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:midjourney:d931372ba7f8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:161e0e9f7e48d90a0fb86e6a376f2e9e47377dfbecb7491de8a736d96e7a8f25"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Diffusion Model]]",
-      "resolved": "urn:visionflow:linked:diffusion-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text-to-Image Generation]]",
-      "resolved": "urn:visionflow:linked:text-to-image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Concept Art]]",
-      "resolved": "urn:visionflow:linked:concept-art",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Synthetic Media]]",
-      "resolved": "urn:visionflow:linked:synthetic-media",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:linked:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:linked:stable-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Creative Media Domain]]",
-      "resolved": "urn:visionflow:linked:ai-application",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Midjourney is a proprietary generative artificial intelligence service that produces images from natural-language text prompts. It is operated by an independent research lab of the same name and is accessed primarily through a Discord bot interface and, later, a dedicated web application. The system is known for a distinctive aesthetic and for iterating rapidly through successive model versions that improve coherence, resolution and prompt adherence.

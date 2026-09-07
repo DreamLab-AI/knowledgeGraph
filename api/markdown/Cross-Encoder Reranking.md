@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Encoder Reranking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,34 +7,118 @@ public: true
   "title": "Cross-Encoder Reranking",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:information-retrieval", "vc:label": "Information Retrieval"},
-    {"@id": "urn:visionflow:owl:class:semantic-search", "vc:label": "Semantic Search"},
-    {"@id": "urn:visionflow:owl:class:embedding-model", "vc:label": "Embedding Model"},
-    {"@id": "urn:visionflow:owl:class:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:owl:class:rag-pipeline", "vc:label": "RAG Pipeline"},
-    {"@id": "urn:visionflow:owl:class:transformer", "vc:label": "Transformer"},
-    {"@id": "urn:visionflow:owl:class:bert", "vc:label": "BERT"},
-    {"@id": "urn:visionflow:owl:class:bm25", "vc:label": "BM25"},
-    {"@id": "urn:visionflow:owl:class:dense-retrieval", "vc:label": "Dense Retrieval"},
-    {"@id": "urn:visionflow:owl:class:hybrid-retrieval", "vc:label": "Hybrid Retrieval"},
-    {"@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:owl:class:question-answering", "vc:label": "Question Answering"},
-    {"@id": "urn:visionflow:owl:class:document-retrieval", "vc:label": "Document Retrieval"},
-    {"@id": "urn:visionflow:owl:class:knowledge-distillation", "vc:label": "Knowledge Distillation"},
-    {"@id": "urn:visionflow:owl:class:cosine-similarity", "vc:label": "Cosine Similarity"},
-    {"@id": "urn:visionflow:owl:class:self-attention", "vc:label": "Self-Attention"},
-    {"@id": "urn:visionflow:owl:class:approximate-nearest-neighbour-search", "vc:label": "Approximate Nearest Neighbour Search"},
-    {"@id": "urn:visionflow:owl:class:dense-passage-retrieval", "vc:label": "Dense Passage Retrieval"},
-    {"@id": "urn:visionflow:owl:class:enterprise-search", "vc:label": "Enterprise Search"},
-    {"@id": "urn:visionflow:owl:class:neural-information-retrieval", "vc:label": "Neural Information Retrieval"},
-    {"@id": "urn:visionflow:owl:class:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:owl:class:colbert", "vc:label": "ColBERT"},
-    {"@id": "urn:visionflow:owl:class:reciprocal-rank-fusion", "vc:label": "Reciprocal Rank Fusion"},
-    {"@id": "urn:visionflow:owl:class:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:owl:class:contrastive-learning", "vc:label": "Contrastive Learning"},
-    {"@id": "urn:visionflow:owl:class:vector-database", "vc:label": "Vector Database"},
-    {"@id": "urn:visionflow:owl:class:knowledge-retrieval", "vc:label": "Knowledge Retrieval"},
-    {"@id": "urn:visionflow:owl:class:agentic-rag", "vc:label": "Agentic RAG"}
+    {
+      "@id": "urn:visionflow:owl:class:information-retrieval",
+      "vc:label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:semantic-search",
+      "vc:label": "Semantic Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:embedding-model",
+      "vc:label": "Embedding Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rag-pipeline",
+      "vc:label": "RAG Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer",
+      "vc:label": "Transformer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bert",
+      "vc:label": "BERT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:bm25",
+      "vc:label": "BM25"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dense-retrieval",
+      "vc:label": "Dense Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:hybrid-retrieval",
+      "vc:label": "Hybrid Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:document-retrieval",
+      "vc:label": "Document Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cosine-similarity",
+      "vc:label": "Cosine Similarity"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-attention",
+      "vc:label": "Self-Attention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:approximate-nearest-neighbour-search",
+      "vc:label": "Approximate Nearest Neighbour Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dense-passage-retrieval",
+      "vc:label": "Dense Passage Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:enterprise-search",
+      "vc:label": "Enterprise Search"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-information-retrieval",
+      "vc:label": "Neural Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:colbert",
+      "vc:label": "ColBERT"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reciprocal-rank-fusion",
+      "vc:label": "Reciprocal Rank Fusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:contrastive-learning",
+      "vc:label": "Contrastive Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:knowledge-retrieval",
+      "vc:label": "Knowledge Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agentic-rag",
+      "vc:label": "Agentic RAG"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -62,55 +141,145 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer Model"},
-      {"@id": "urn:ngm:class:hybrid-retrieval", "label": "First-Stage Retrieval"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer Model"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-retrieval",
+        "label": "First-Stage Retrieval"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:bert", "label": "BERT"},
-      {"@id": "urn:ngm:class:self-attention", "label": "Self-Attention"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self-Attention"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:document-retrieval", "label": "Document Retrieval"},
-      {"@id": "urn:ngm:class:knowledge-retrieval", "label": "Knowledge Retrieval"},
-      {"@id": "urn:ngm:class:agentic-rag", "label": "Agentic RAG"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipeline"},
-      {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"},
-      {"@id": "urn:ngm:class:neural-information-retrieval", "label": "Neural Information Retrieval"}
+      {
+        "@id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "@id": "urn:ngm:class:neural-information-retrieval",
+        "label": "Neural Information Retrieval"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cosine-similarity", "label": "Cosine Similarity"},
-      {"@id": "urn:ngm:class:bi-encoder", "label": "Bi-Encoder"},
-      {"@id": "urn:ngm:class:bm25", "label": "BM25"},
-      {"@id": "urn:ngm:class:colbert", "label": "ColBERT"}
+      {
+        "@id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "@id": "urn:ngm:class:bi-encoder",
+        "label": "Bi-Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "@id": "urn:ngm:class:colbert",
+        "label": "ColBERT"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:nearest-neighbor-search", "label": "Approximate Nearest Neighbour Search"},
-      {"@id": "urn:ngm:class:gpu-inference", "label": "GPU Inference"},
-      {"@id": "urn:ngm:class:dense-retrieval", "label": "Dense Retrieval"},
-      {"@id": "urn:ngm:class:dense-passage-retrieval", "label": "Dense Passage Retrieval"}
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-inference",
+        "label": "GPU Inference"
+      },
+      {
+        "@id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:dense-passage-retrieval",
+        "label": "Dense Passage Retrieval"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:reciprocal-rank-fusion", "label": "Reciprocal Rank Fusion"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:reciprocal-rank-fusion",
+        "label": "Reciprocal Rank Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:reranking", "label": "Reranking"},
-    {"@id": "urn:ngm:class:retrieve-and-rerank", "label": "Retrieve-and-Rerank"}
+    {
+      "@id": "urn:ngm:class:reranking",
+      "label": "Reranking"
+    },
+    {
+      "@id": "urn:ngm:class:retrieve-and-rerank",
+      "label": "Retrieve-and-Rerank"
+    }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -230,7 +399,7 @@ public: true
   ```
 
   ## About
-  Cross-encoder reranking is the practice of applying a transformer model that jointly processes a query and a candidate document as a single input to produce a fine-grained relevance score, which is then used to reorder the short-list of candidates returned by a faster first-stage retriever. The paradigm resolves a fundamental tension in large-scale [[Information Retrieval]]: the need to search across millions of documents in milliseconds precludes exhaustive pair-wise scoring by an accurate but expensive model, so a two-stage architecture is used. The first stage — typically [[Dense Retrieval]] with [[Approximate Nearest Neighbour Search]] over pre-computed [[Embedding Model]] vectors, or sparse [[BM25]] retrieval over an inverted index, or [[Hybrid Retrieval]] combining both — rapidly reduces the candidate set to hundreds of documents. The cross-encoder then scores each candidate against the query with full cross-attention, producing a re-ranked list whose precision typically exceeds the first-stage ranking by five to fifteen NDCG@10 points on established benchmarks including BEIR and the TREC Deep Learning Track.
+  Cross-encoder reranking is the practice of applying a transformer model that jointly processes a query and a candidate document as a single input to produce a fine-grained relevance score, which is then used to reorder the short-list of candidates returned by a faster first-stage retriever. The paradigm resolves a fundamental tension in large-scale [[Information Retrieval]]: the need to search across millions of documents in milliseconds precludes exhaustive pair-wise scoring by an accurate but expensive model, so a two-stage architecture is used. The first stage — typically [[Dense Retrieval]] with [[Approximate Nearest Neighbour Search]] over pre-computed [[Embedding Model]] vectors, or sparse [[BM25]] retrieval over an inverted [private], or [[Hybrid Retrieval]] combining both — rapidly reduces the candidate set to hundreds of documents. The cross-encoder then scores each candidate against the query with full cross-attention, producing a re-ranked list whose precision typically exceeds the first-stage ranking by five to fifteen NDCG@10 points on established benchmarks including BEIR and the TREC Deep Learning Track.
 
   The theoretical basis for the cross-encoder's superiority lies in the expressiveness of full bidirectional [[Self-Attention]]. In a bi-encoder, the query representation is fixed at query time and compared to pre-computed document representations via dot-product [[Cosine Similarity]]; the document representation cannot be conditioned on the specific query. A cross-encoder, by contrast, applies [[Attention Mechanism]] across the joint token sequence at every layer, allowing the query tokens to dynamically influence how document tokens are weighted and vice versa. This cross-attention captures query-dependent document salience, enabling the model to identify whether a document addresses the specific aspect of a topic implied by the query, rather than simply whether it is topically related. The [[BERT]] architecture — pre-trained with masked language modelling and next-sentence prediction, then fine-tuned with a relevance head on labelled query-passage pairs — was established as the canonical cross-encoder backbone by Nogueira and Cho's 2019 "Passage Re-ranking with BERT" paper, which achieved a 27% relative improvement in MRR@10 on MS MARCO over prior state of the art.
 
@@ -449,15 +618,15 @@ public: true
   The cross-encoder reranking paradigm must be understood in relation to the full spectrum of neural information retrieval architectures. Each approach makes different trade-offs between offline/online computation, accuracy, and infrastructure requirements:
 
   **Inverted Index + BM25 (Classical IR)**
-  - Offline: Build inverted index from term frequencies; O(N × L) space
-  - Online: Score query terms against inverted index; O(|query| × k) FLOPs where k is average document frequency
+  - Offline: Build inverted [private] from term frequencies; O(N × L) space
+  - Online: Score query terms against inverted [private]; O(|query| × k) FLOPs where k is average document frequency
   - Strengths: Exact term matching; no GPU required; perfect recall for exact-match queries; highly interpretable scores
   - Weaknesses: Cannot handle synonyms, paraphrases, or conceptual queries without keyword overlap; no cross-attention between query and document
   - NDCG@10 on MS MARCO Passage: ~31; BEIR average: ~43
 
   **Bi-Encoder + [[Approximate Nearest Neighbour Search]] (Dense Retrieval)**
-  - Offline: Encode all documents once with a fine-tuned transformer; store in vector index (HNSW, IVF-PQ); O(N × d) space
-  - Online: Encode query; ANN lookup in vector index; O(log N × d) FLOPs
+  - Offline: Encode all documents once with a fine-tuned transformer; store in vector [private] (HNSW, IVF-PQ); O(N × d) space
+  - Online: Encode query; ANN lookup in vector [private]; O(log N × d) FLOPs
   - Strengths: Captures semantic similarity beyond keyword overlap; fast online inference; scales to billions of documents with product quantisation
   - Weaknesses: Document representation is independent of query; cannot capture fine-grained query-conditional relevance; requires GPU for encoding
   - NDCG@10 on MS MARCO Passage: ~40-45; BEIR average: ~45-48
@@ -466,7 +635,7 @@ public: true
   - Offline: Encode all document tokens with ColBERT; store token embeddings (with optional compression); O(N × L × d) space
   - Online: Encode query tokens; compute MaxSim between query and document token embeddings via ANN lookup; O(|query| × k × d) FLOPs
   - Strengths: Token-level cross-attention without full cross-encoder cost; 100-1000× faster than cross-encoder at inference; near cross-encoder accuracy
-  - Weaknesses: Large index size (50–150 GB for 8.8M MS MARCO passages at full precision); specialised infrastructure; limited to text
+  - Weaknesses: Large [private] size (50–150 GB for 8.8M MS MARCO passages at full precision); specialised infrastructure; limited to text
   - NDCG@10 on MS MARCO Passage: ~68-71; BEIR average: ~50-52
 
   **Cross-Encoder Reranking (Full Cross-Attention)**

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Satellite Monitoring
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Satellite monitoring is the use of orbital remote-sensing platforms to observe and measure conditions on the Earth's surface over time. In sustainability and supply-chain contexts it supports verification of deforestation, land use, emissions plumes, and facility activity using multispectral, radar, and thermal imagery. The resulting geospatial data feeds carbon accounting, compliance, and ethical-sourcing assessments.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
-      {"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"}
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
     ]
   },
   "quality": 0.72

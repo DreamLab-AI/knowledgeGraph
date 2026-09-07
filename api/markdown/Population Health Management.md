@@ -1,40 +1,116 @@
----
-public: true
----
-
-# Population Health Management
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:population-health-management", "@type":"Page", "title":"Population Health Management", "vc:slug":"population-health-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:population-health-management",
+  "@type": "Page",
+  "title": "Population Health Management",
+  "vc:slug": "population-health-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:population-health-management",
-  "@type":"Class",
-  "label":"Population Health Management",
-  "definition":"Population health management is a data-driven approach to improving the health outcomes of a defined group of people by aggregating clinical and social data, stratifying members by risk, and coordinating targeted interventions across the care continuum. It shifts focus from treating individual encounters toward proactively managing the health of whole populations, often under value-based payment models. It relies on electronic health records, analytics and care-coordination workflows to identify needs and direct resources where they yield the greatest benefit.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:healthcare-technology","label":"Healthcare Technology"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:healthcare-technology","label":"Healthcare Technology"}],
-    "hasPart":[{"@id":"urn:ngm:class:electronic-health-record","label":"Electronic Health Record"}],
-    "requires":[{"@id":"urn:ngm:class:electronic-health-record","label":"Electronic Health Record"}],
-    "enables":[{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"}],
-    "uses":[{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data","label":"Data"}],
-    "supports":[{"@id":"urn:ngm:class:healthcare-technology","label":"Healthcare Technology"}],
-    "implements":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"},{"@id":"urn:ngm:class:electronic-health-record","label":"Electronic Health Record"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:electronic-health-record","label":"Electronic Health Record"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:healthcare-technology","label":"Healthcare Technology"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:population-health-management",
+  "@type": "Class",
+  "label": "Population Health Management",
+  "definition": "Population health management is a data-driven approach to improving the health outcomes of a defined group of people by aggregating clinical and social data, stratifying members by risk, and coordinating targeted interventions across the care continuum. It shifts focus from treating individual encounters toward proactively managing the health of whole populations, often under value-based payment models. It relies on electronic health records, analytics and care-coordination workflows to identify needs and direct resources where they yield the greatest benefit.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:healthcare-technology",
+      "label": "Healthcare Technology"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

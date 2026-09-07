@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cryptocurrency Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -111,52 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cryptocurrency-storage:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fc145c0d51ef90aa9d7e2fac91c941e2100fccd8c6de5f8c2132be59c3217721"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BIP32]]",
-      "resolved": "urn:visionflow:linked:bip32",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BIP39]]",
-      "resolved": "urn:visionflow:linked:bip39",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BIP44]]",
-      "resolved": "urn:visionflow:linked:bip44",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST Post-Quantum Cryptography]]",
-      "resolved": "urn:visionflow:linked:nist-post-quantum-cryptography",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - CryptocurrencyStorage is a concept within the ngm domain.

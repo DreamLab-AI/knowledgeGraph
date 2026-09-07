@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pipeline Parallelism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,52 +171,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pipeline-parallelism:983c92228fe6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:208b7ea10a72c6ee6eea8a8e1e4e3f81a7f6e9cfc66fe787a5aa004283811f82"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Parallel Computing]]",
-      "resolved": "urn:visionflow:linked:parallel-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPU Architecture]]",
-      "resolved": "urn:visionflow:linked:gpu-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graphics Pipeline]]",
-      "resolved": "urn:visionflow:linked:graphics-pipeline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Computing]]",
-      "resolved": "urn:visionflow:linked:distributed-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Pipeline parallelism splits a computation into ordered stages assigned to different processing units, so that distinct items occupy different stages at once and throughput rises once the pipeline is filled.

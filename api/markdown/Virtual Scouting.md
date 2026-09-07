@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Scouting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:virtual-camera", "label": "Virtual Camera"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-camera",
+        "label": "Virtual Camera"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-production-workflow", "label": "Virtual Production Workflow"},
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"}
+      {
+        "@id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:pre-production", "label": "Pre Production"}
+      {
+        "@id": "urn:ngm:class:pre-production",
+        "label": "Pre Production"
+      }
     ]
   },
   "provenance": {
@@ -87,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-scouting:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6a58d0661bbdb9729bd73dbb2da427a93777b2494f01404e1fed32ec87167a1d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pre-Production]]",
-      "resolved": "urn:visionflow:owl:class:pre-production",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of exploring and evaluating potential filming locations or virtual production environments using digital tools, VR headsets, 360-degree cameras, and game engines, enabling filmmakers to navigate through locations remotely, compose shots, set up scene blocking, and make creative decisions without physical travel.

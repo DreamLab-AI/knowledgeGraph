@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[cypherpunk]]
-# Cryptographic Privacy Activist
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,45 +47,52 @@ elevatedFrom:: [[cypherpunk]]
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"}
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cypherpunk:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7e5b152ccc48870ecf9d26552a06bc34a850179ff429618e08950e1ec70475e0"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A cypherpunk is an activist who uses and promotes strong cryptography and privacy-enhancing tools as instruments of individual freedom and resistance to surveillance. The movement, originating in the early 1990s around the Cypherpunks mailing list, produced technologies foundational to the modern internet: anonymous remailers, digital cash schemes, and much of the conceptual architecture underpinning Bitcoin, Tor, and decentralised identity systems.
@@ -108,7 +109,7 @@ elevatedFrom:: [[cypherpunk]]
   - # A Cypherpunk's Manifesto
   - [A Cypherpunk's Manifesto (activism.net)](https://www.activism.net/cypherpunk/manifesto.html) by [Eric Hughes](ftp://soda.berkeley.edu/pub/cypherpunks/people/hughes.html)
   - Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know. Privacy is the power to selectively reveal oneself to the world.
-  - If two parties have some sort of dealings, then each has a memory of their interaction. Each party can speak about their own memory of this; how could anyone prevent it? One could pass laws against it, but the freedom of speech, even more than privacy, is fundamental to an open society; we seek not to restrict any speech at all. If many parties speak together in the same forum, each can speak to all the others and aggregate together knowledge about individuals and other parties. The power of electronic communications has enabled such group speech, and it will not go away merely because we might want it to.
+  - If two parties have some sort of dealings, then each has a memory of their interaction. Each party can speak about their own memory of this; how [private] anyone prevent it? One [private] pass laws against it, but the freedom of speech, even more than privacy, is fundamental to an open society; we seek not to restrict any speech at all. If many parties speak together in the same forum, each can speak to all the others and aggregate together knowledge about individuals and other parties. The power of electronic communications has enabled such group speech, and it will not go away merely because we might want it to.
   - Since we desire privacy, we must ensure that each party to a transaction have knowledge only of that which is directly necessary for that transaction. Since any information can be spoken of, we must ensure that we reveal as little as possible. In most cases personal identity is not salient. When I purchase a magazine at a store and hand cash to the clerk, there is no need to know who I am. When I ask my electronic mail provider to send and receive messages, my provider need not know to whom I am speaking or what I am saying or what others are saying to me; my provider only need know how to get the message there and how much I owe them in fees. When my identity is revealed by the underlying mechanism of the transaction, I have no privacy. I cannot here selectively reveal myself; I must *always* reveal myself.
   - Therefore, privacy in an open society requires anonymous transaction systems. Until now, cash has been the primary such system. An anonymous transaction system is not a secret transaction system. An anonymous system empowers individuals to reveal their identity when desired and only when desired; this is the essence of privacy.
   - Privacy in an open society also requires cryptography. If I say something, I want it heard only by those for whom I intend it. If the content of my speech is available to the world, I have no privacy. To encrypt is to indicate the desire for privacy, and to encrypt with weak cryptography is to indicate not too much desire for privacy. Furthermore, to reveal one's identity with assurance when the default is anonymity requires the cryptographic signature.

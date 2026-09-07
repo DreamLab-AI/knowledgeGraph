@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computational Complexity Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,7 +206,7 @@ public: true
   "definition": "The mathematical study of the resources — principally time and memory (space) — required to solve computational problems, and the classification of problems according to their inherent difficulty into complexity classes such as P, NP, PSPACE, BPP, and EXPTIME. It establishes which problems are tractable (solvable efficiently in polynomial time) and which are intractable, and investigates the relationships between complexity classes, most famously the unresolved P vs NP question.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:theoretical-computer-science",
@@ -224,57 +219,168 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:circuit-complexity", "label": "Circuit Complexity"},
-      {"@id": "urn:ngm:class:proof-complexity", "label": "Proof Complexity"},
-      {"@id": "urn:ngm:class:parameterised-complexity", "label": "Parameterised Complexity"},
-      {"@id": "urn:ngm:class:fine-grained-complexity", "label": "Fine-Grained Complexity"},
-      {"@id": "urn:ngm:class:counting-complexity", "label": "Counting Complexity"},
-      {"@id": "urn:ngm:class:interactive-proofs", "label": "Interactive Proofs"},
-      {"@id": "urn:ngm:class:derandomisation", "label": "Derandomisation"},
-      {"@id": "urn:ngm:class:approximation-algorithms", "label": "Approximation Algorithms"}
+      {
+        "@id": "urn:ngm:class:circuit-complexity",
+        "label": "Circuit Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:proof-complexity",
+        "label": "Proof Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:parameterised-complexity",
+        "label": "Parameterised Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:fine-grained-complexity",
+        "label": "Fine-Grained Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:counting-complexity",
+        "label": "Counting Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-proofs",
+        "label": "Interactive Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:derandomisation",
+        "label": "Derandomisation"
+      },
+      {
+        "@id": "urn:ngm:class:approximation-algorithms",
+        "label": "Approximation Algorithms"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
-      {"@id": "urn:ngm:class:set-theory", "label": "Set Theory"},
-      {"@id": "urn:ngm:class:turing-machine", "label": "Turing Machine"},
-      {"@id": "urn:ngm:class:formal-language", "label": "Formal Language"},
-      {"@id": "urn:ngm:class:mathematical-logic", "label": "Mathematical Logic"},
-      {"@id": "urn:ngm:class:automata-theory", "label": "Automata Theory"}
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "@id": "urn:ngm:class:turing-machine",
+        "label": "Turing Machine"
+      },
+      {
+        "@id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "@id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"},
-      {"@id": "urn:ngm:class:cryptographic-hardness-assumption", "label": "Cryptographic Hardness Assumption"},
-      {"@id": "urn:ngm:class:sat-solving", "label": "SAT Solving"},
-      {"@id": "urn:ngm:class:approximation-algorithms", "label": "Approximation Algorithms"},
-      {"@id": "urn:ngm:class:computational-learning-theory", "label": "Computational Learning Theory"}
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hardness-assumption",
+        "label": "Cryptographic Hardness Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:sat-solving",
+        "label": "SAT Solving"
+      },
+      {
+        "@id": "urn:ngm:class:approximation-algorithms",
+        "label": "Approximation Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:computational-learning-theory",
+        "label": "Computational Learning Theory"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:computability-theory", "label": "Computability Theory"},
-      {"@id": "urn:ngm:class:mathematical-logic", "label": "Mathematical Logic"},
-      {"@id": "urn:ngm:class:set-theory", "label": "Set Theory"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:computability-theory",
+        "label": "Computability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "@id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:computability-theory", "label": "Computability Theory"}
+      {
+        "@id": "urn:ngm:class:computability-theory",
+        "label": "Computability Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology Reasoning"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"},
-      {"@id": "urn:ngm:class:theoretical-computer-science", "label": "Theoretical Computer Science"},
-      {"@id": "urn:ngm:class:coding-theory", "label": "Coding Theory"},
-      {"@id": "urn:ngm:class:constraint-satisfaction", "label": "Constraint Satisfaction"}
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:theoretical-computer-science",
+        "label": "Theoretical Computer Science"
+      },
+      {
+        "@id": "urn:ngm:class:coding-theory",
+        "label": "Coding Theory"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:quantum-information", "label": "Quantum Information"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-information",
+        "label": "Quantum Information"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
@@ -283,7 +389,7 @@ public: true
       "label": "Complexity Theory"
     }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
@@ -291,247 +397,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computational-complexity-theory:f577b6728246",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:04d825c3edc368bf9aa45d8ec7583293647695143e950379402e9269f079b285"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Algorithm]]",
-      "resolved": "urn:visionflow:linked:algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Set Theory]]",
-      "resolved": "urn:visionflow:linked:set-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quantum Computing]]",
-      "resolved": "urn:visionflow:linked:quantum-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Theory]]",
-      "resolved": "urn:visionflow:linked:information-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computability Theory]]",
-      "resolved": "urn:visionflow:linked:computability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mathematical Logic]]",
-      "resolved": "urn:visionflow:linked:mathematical-logic",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Formal Language]]",
-      "resolved": "urn:visionflow:linked:formal-language",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Turing Machine]]",
-      "resolved": "urn:visionflow:linked:turing-machine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automated Reasoning]]",
-      "resolved": "urn:visionflow:linked:automated-reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SAT Solving]]",
-      "resolved": "urn:visionflow:linked:sat-solving",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Description Logic]]",
-      "resolved": "urn:visionflow:linked:description-logic",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Approximation Algorithms]]",
-      "resolved": "urn:visionflow:linked:approximation-algorithms",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Randomised Algorithms]]",
-      "resolved": "urn:visionflow:linked:randomised-algorithms",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quantum Information]]",
-      "resolved": "urn:visionflow:linked:quantum-information",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Interactive Proofs]]",
-      "resolved": "urn:visionflow:linked:interactive-proofs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Circuit Complexity]]",
-      "resolved": "urn:visionflow:linked:circuit-complexity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ontology Reasoning]]",
-      "resolved": "urn:visionflow:linked:ontology-reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Formal Verification]]",
-      "resolved": "urn:visionflow:linked:formal-verification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof Complexity]]",
-      "resolved": "urn:visionflow:linked:proof-complexity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Parameterised Complexity]]",
-      "resolved": "urn:visionflow:linked:parameterised-complexity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fine-Grained Complexity]]",
-      "resolved": "urn:visionflow:linked:fine-grained-complexity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Derandomisation]]",
-      "resolved": "urn:visionflow:linked:derandomisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Counting Complexity]]",
-      "resolved": "urn:visionflow:linked:counting-complexity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Constraint Satisfaction]]",
-      "resolved": "urn:visionflow:linked:constraint-satisfaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Boolean Satisfiability]]",
-      "resolved": "urn:visionflow:linked:boolean-satisfiability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graph Algorithm]]",
-      "resolved": "urn:visionflow:linked:graph-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graph Isomorphism]]",
-      "resolved": "urn:visionflow:linked:graph-isomorphism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automata Theory]]",
-      "resolved": "urn:visionflow:linked:automata-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Coding Theory]]",
-      "resolved": "urn:visionflow:linked:coding-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computational Learning Theory]]",
-      "resolved": "urn:visionflow:linked:computational-learning-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Hardness Assumption]]",
-      "resolved": "urn:visionflow:linked:cryptographic-hardness-assumption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ontology]]",
-      "resolved": "urn:visionflow:linked:ontology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Structure]]",
-      "resolved": "urn:visionflow:linked:data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Theoretical Computer Science]]",
-      "resolved": "urn:visionflow:linked:theoretical-computer-science",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Optimisation]]",
-      "resolved": "urn:visionflow:linked:optimisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quantum Computation Paradigm]]",
-      "resolved": "urn:visionflow:linked:quantum-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Computational complexity theory is the branch of [[Theoretical Computer Science]] and [[Mathematical Logic]] that studies the resources — principally computation time and memory space — required to solve computational problems, and classifies problems according to their inherent difficulty. Where [[Computability Theory]] asks which problems can be solved at all (in principle, by any [[Turing Machine]] with unbounded resources), computational complexity theory asks how efficiently solvable problems can actually be solved when resources are bounded by realistic polynomial or super-polynomial functions of input size. The discipline is built upon formal computation models, especially the deterministic and non-deterministic [[Turing Machine]] and the Boolean [[Circuit Complexity]] model, together with the language-theoretic framework of [[Formal Language]] theory and the combinatorial machinery of [[Set Theory]] and [[Mathematical Logic]]. The central object of study is the complexity class: a collection of decision problems (or function problems) sharing a common resource bound. The most fundamental classes are P (solvable in polynomial time by a deterministic [[Turing Machine]]), NP (problems whose solutions can be verified in polynomial time by a deterministic [[Turing Machine]], or equivalently solved in polynomial time by a non-deterministic [[Turing Machine]]), and PSPACE (solvable in polynomial space). The relationships between these classes constitute the deepest open questions in mathematics: the P vs NP problem, identified as one of the Clay Mathematics Institute's seven Millennium Prize Problems (prize value $1,000,000 USD), asks whether every problem whose solution is efficiently checkable can also be efficiently solved, and remains unresolved as of 2026. Beyond P and NP, complexity theory maps an extensive hierarchy of classes — co-NP, BPP ([[Randomised Algorithms]] with two-sided error), the polynomial hierarchy PH, #P (counting problems), IP ([[Interactive Proofs]], proven equal to PSPACE by Shamir in 1992), MA, AM, PSPACE, EXP, NEXP, and quantum classes BQP and QMA — linked by a web of inclusions, separations, and oracle relativisation results. Complexity theory is not merely theoretical: it underpins modern [[Cryptography]] through [[Cryptographic Hardness Assumption]]s (the security of RSA, Diffie–Hellman, and lattice-based cryptography all reduce to the assumed hardness of integer factorisation, discrete logarithm, or short vector problems, which are conjectured NP-hard or harder); informs the design of [[Approximation Algorithms]] for NP-hard [[Optimisation]] problems; determines the tractability boundaries of [[Automated Reasoning]] and [[Ontology Reasoning]] in [[Description Logic]]; and sets the learnability limits of [[Machine Learning]] via the framework of [[Computational Learning Theory]] (PAC learning). The theory is also the lens through which [[Quantum Computing]] is understood: BQP (bounded-error quantum polynomial time) is believed to be strictly larger than P but not to contain NP, with Shor's factoring algorithm providing the clearest known separation between quantum and classical polynomial-time computation. Complexity theory's reach extends into every corner of computer science: [[Data Structure]] lower bounds (from cell-probe models and [[Fine-Grained Complexity]]), [[Algorithm]] design (inapproximability guides when to use [[Approximation Algorithms]] versus exact methods), [[Formal Verification]] (model checking and theorem proving have complexity-determined tractability boundaries), [[Knowledge Representation]] and [[Ontology Reasoning]] (Description Logic complexity governs practical OWL reasoner design), [[Graph Algorithm]]s (spanning tree is in P, graph isomorphism is in quasi-polynomial time since 2015, Hamiltonian cycle is NP-complete), and the nascent science of [[Artificial Intelligence]] alignment and formal safety verification where proof-complexity-hardness of verifying neural network behaviour constrains what can be certified efficiently. The field thus occupies a unique position as both an autonomous mathematical discipline with deep connections to [[Proof Complexity]], [[Coding Theory]], [[Information Theory]], and [[Algebraic Geometry]], and a foundational layer underlying the entire edifice of practical computation.
@@ -716,7 +581,7 @@ public: true
     - **P vs NP in 2025**: The annual computational complexity blog "Year in Review" (Fortnow, 2025) noted an intensification of P vs NP proof attempts; a December 2025 Mathematics journal paper approached the question via time-relative description complexity and epistemic barriers, arguing that even if polynomial-time algorithms for NP-complete problems exist, their minimal descriptions may have very high Kolmogorov complexity, making them practically undiscoverable. The Clay Mathematics Institute hosted a 2025 April workshop "P vs NP and Complexity Lower Bounds" bringing together leading researchers.
     - **[[Quantum Computing]] and complexity**: As IBM's Heron processor (133 qubits, 2024) and Fujitsu/RIKEN's 256-qubit superconducting computer (April 2025) push qubit counts, the complexity-theoretic question of what advantage quantum computation provides over classical computation is increasingly urgent. Google's Willow processor demonstrated exponential error suppression as qubit arrays grow, realising the "below threshold" regime for surface-code error correction — a prerequisite for running Shor's algorithm on cryptographically relevant instances.
     - **Complexity and [[Machine Learning]]**: The question of when [[Deep Learning]] optimisation is computationally tractable or hard is receiving formal complexity-theoretic treatment: results in 2024 established NP-hardness for learning one hidden layer [[Neural Network]]s under worst-case input distributions, while characterising efficiently learnable regimes. The interface between [[Computational Learning Theory]] and [[Deep Learning]] practice remains one of the most active and practically consequential areas of research.
-    - **[[Ontology Reasoning]] and knowledge tractability**: Oxford's 2025–2026 Computational Complexity course and Cambridge's Complexity Theory curriculum both now include [[Description Logic]] tractability as a significant topic, reflecting the practical importance of complexity-theoretic analysis for [[Ontology]] design in large-scale [[Knowledge Graph]] deployment. The Warwick Algebraic Complexity, Geometry, and Representations workshop (2024–2025) brought together researchers in GCT and arithmetic complexity, formalising connections between moment polytope computation and permanent-determinant separation that could advance the VP vs VNP problem — the algebraic analogue of P vs NP over fields. The [[Parameterised Complexity]] community, centred at TU Wien (Szeider), Utrecht (Bodlaender), and Warsaw (Pilipczuk), continued active work on kernelisation — determining when NP-hard problems have polynomial kernels parameterised by structural parameters such as treewidth, feedback vertex set size, and modular width — with applications to fixed-parameter tractable [[Algorithm]] design for bioinformatics, network analysis, and [[Knowledge Graph]] query evaluation.
+    - **[[Ontology Reasoning]] and knowledge tractability**: Oxford's 2025–2026 Computational Complexity course and Cambridge's Complexity Theory curriculum both now include [[Description Logic]] tractability as a significant topic, reflecting the practical importance of complexity-theoretic analysis for [[Ontology]] design in large-scale [[Knowledge Graph]] deployment. The Warwick Algebraic Complexity, Geometry, and Representations workshop (2024–2025) brought together researchers in GCT and arithmetic complexity, formalising connections between moment polytope computation and permanent-determinant separation that [private] advance the VP vs VNP problem — the algebraic analogue of P vs NP over fields. The [[Parameterised Complexity]] community, centred at TU Wien (Szeider), Utrecht (Bodlaender), and Warsaw (Pilipczuk), continued active work on kernelisation — determining when NP-hard problems have polynomial kernels parameterised by structural parameters such as treewidth, feedback vertex set size, and modular width — with applications to fixed-parameter tractable [[Algorithm]] design for bioinformatics, network analysis, and [[Knowledge Graph]] query evaluation.
     - **Ryan Williams's breakthroughs in space complexity and pseudorandomness (2025)**: Williams's 2025 results on pseudorandomness and constructive Ramsey theory, cited by Fortnow as a highlight of the year, advanced the programme connecting derandomisation with [[Circuit Complexity]] lower bounds. These results build on Williams's foundational ACC^0 lower bound (2010) that showed NEXP ⊄ ACC^0, still one of the few unconditional circuit lower bounds proved in decades, and establish new connections between the pseudorandomness needed for [[Derandomisation]] and the explicit constructions needed for combinatorics.
   - ## UK Context
     - The United Kingdom has strong institutional presence in computational complexity research. The Cambridge Department of Computer Science and Technology offers a dedicated Complexity Theory course (2024–25 and 2025–26) covering NP-completeness, space complexity classes, hierarchy theorems, [[Randomised Algorithms]], quantum complexity, and [[Interactive Proofs]]; the annual Cambridge Algorithms and Complexity Workshop (CACW, first held April 2024) brings together UK and international speakers on [[Theoretical Computer Science]] topics including the Nisan-Ronen conjecture and FPRAS [[Approximation Algorithms]]. Oxford's Department of Computer Science similarly offers computational complexity in both undergraduate and graduate curricula; Elias Koutsoupias (Oxford) has presented at the CACW on algorithmic game theory and complexity. The Quantum Cambridge-Oxford-Warwick Colloquium (QCOW), inaugurated at Oxford in December 2025, focuses specifically on quantum low-depth complexity, bringing together researchers from all three institutions to advance the intersection of quantum algorithms and classical [[Circuit Complexity]] lower bounds.

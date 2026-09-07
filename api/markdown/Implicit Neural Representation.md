@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Implicit Neural Representation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,39 +20,96 @@ public: true
   "definition": "An Implicit Neural Representation (INR) is a method of encoding continuous signals—such as 3D shapes, scenes, or images—as the weights of a neural network rather than as discrete grids or meshes. The network acts as a function that maps spatial or temporal coordinates to signal values, enabling theoretically infinite resolution. INRs are widely used in novel-view synthesis, shape reconstruction, and physics simulation.",
   "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}, {"@id": "urn:ngm:class:ai-model-architecture", "label": "AI Model Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
-      {"@id": "urn:ngm:class:signed-distance-function", "label": "Signed Distance Function"}
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:signed-distance-function",
+        "label": "Signed Distance Function"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:coordinate-based-network", "label": "Coordinate-Based Network"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-based-network",
+        "label": "Coordinate-Based Network"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:novel-view-synthesis", "label": "Novel View Synthesis"},
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"}
+      {
+        "@id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:multilayer-perceptron", "label": "Multilayer Perceptron"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:multilayer-perceptron",
+        "label": "Multilayer Perceptron"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:voxel-grid", "label": "Voxel Grid"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+      {
+        "@id": "urn:ngm:class:voxel-grid",
+        "label": "Voxel Grid"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      }
     ],
     "relatedTo_2": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ]
   },
   "quality": 0.62,

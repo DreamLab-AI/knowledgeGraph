@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Bayes Theorem
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -14,44 +8,158 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:probability-theory", "vc:label": "Probability Theory"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:statistical-inference", "vc:label": "Statistical Inference"},
-    {"@id": "urn:visionflow:linked:probabilistic-model", "vc:label": "Probabilistic Model"},
-    {"@id": "urn:visionflow:linked:prior-distribution", "vc:label": "Prior Distribution"},
-    {"@id": "urn:visionflow:linked:posterior-distribution", "vc:label": "Posterior Distribution"},
-    {"@id": "urn:visionflow:linked:likelihood-function", "vc:label": "Likelihood Function"},
-    {"@id": "urn:visionflow:linked:conditional-probability", "vc:label": "Conditional Probability"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:naive-bayes-classifier", "vc:label": "Naive Bayes Classifier"},
-    {"@id": "urn:visionflow:linked:bayesian-network", "vc:label": "Bayesian Network"},
-    {"@id": "urn:visionflow:linked:gaussian-process", "vc:label": "Gaussian Process"},
-    {"@id": "urn:visionflow:linked:markov-chain-monte-carlo", "vc:label": "Markov Chain Monte Carlo"},
-    {"@id": "urn:visionflow:linked:variational-inference", "vc:label": "Variational Inference"},
-    {"@id": "urn:visionflow:linked:uncertainty-quantification", "vc:label": "Uncertainty Quantification"},
-    {"@id": "urn:visionflow:linked:decision-theory", "vc:label": "Decision Theory"},
-    {"@id": "urn:visionflow:linked:bayesian-decision-theory", "vc:label": "Bayesian Decision Theory"},
-    {"@id": "urn:visionflow:linked:bayesian-optimisation", "vc:label": "Bayesian Optimisation"},
-    {"@id": "urn:visionflow:linked:bayesian-deep-learning", "vc:label": "Bayesian Deep Learning"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:spam-filtering", "vc:label": "Spam Filtering"},
-    {"@id": "urn:visionflow:linked:medical-diagnosis", "vc:label": "Medical Diagnosis"},
-    {"@id": "urn:visionflow:linked:sensor-fusion", "vc:label": "Sensor Fusion"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:model-selection", "vc:label": "Model Selection"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:frequentist-statistics", "vc:label": "Frequentist Statistics"},
-    {"@id": "urn:visionflow:linked:maximum-likelihood-estimation", "vc:label": "Maximum Likelihood Estimation"},
-    {"@id": "urn:visionflow:linked:expectation-maximisation", "vc:label": "Expectation Maximisation"},
-    {"@id": "urn:visionflow:linked:conjugate-prior", "vc:label": "Conjugate Prior"},
-    {"@id": "urn:visionflow:linked:marginal-likelihood", "vc:label": "Marginal Likelihood"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
-    {"@id": "urn:visionflow:linked:reasoning", "vc:label": "Reasoning"},
-    {"@id": "urn:visionflow:linked:inference", "vc:label": "Inference"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:probabilistic-reasoning-layer", "vc:label": "ProbabilisticReasoningLayer"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:probability-theory",
+      "vc:label": "Probability Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-inference",
+      "vc:label": "Statistical Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-model",
+      "vc:label": "Probabilistic Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:prior-distribution",
+      "vc:label": "Prior Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:posterior-distribution",
+      "vc:label": "Posterior Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:likelihood-function",
+      "vc:label": "Likelihood Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:conditional-probability",
+      "vc:label": "Conditional Probability"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:naive-bayes-classifier",
+      "vc:label": "Naive Bayes Classifier"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-network",
+      "vc:label": "Bayesian Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-process",
+      "vc:label": "Gaussian Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:markov-chain-monte-carlo",
+      "vc:label": "Markov Chain Monte Carlo"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-inference",
+      "vc:label": "Variational Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:uncertainty-quantification",
+      "vc:label": "Uncertainty Quantification"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-theory",
+      "vc:label": "Decision Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-decision-theory",
+      "vc:label": "Bayesian Decision Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-optimisation",
+      "vc:label": "Bayesian Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-deep-learning",
+      "vc:label": "Bayesian Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:spam-filtering",
+      "vc:label": "Spam Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-diagnosis",
+      "vc:label": "Medical Diagnosis"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensor-fusion",
+      "vc:label": "Sensor Fusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-selection",
+      "vc:label": "Model Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:frequentist-statistics",
+      "vc:label": "Frequentist Statistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:maximum-likelihood-estimation",
+      "vc:label": "Maximum Likelihood Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:expectation-maximisation",
+      "vc:label": "Expectation Maximisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:conjugate-prior",
+      "vc:label": "Conjugate Prior"
+    },
+    {
+      "@id": "urn:visionflow:linked:marginal-likelihood",
+      "vc:label": "Marginal Likelihood"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-representation",
+      "vc:label": "Knowledge Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference",
+      "vc:label": "Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-reasoning-layer",
+      "vc:label": "ProbabilisticReasoningLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ]
 }
 ```
@@ -73,58 +181,160 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"}
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:statistical-inference", "label": "Statistical Inference"},
-      {"@id": "urn:ngm:class:naive-bayes-classifier", "label": "Naive Bayes Classifier"},
-      {"@id": "urn:ngm:class:bayesian-network", "label": "Bayesian Network"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
-      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"},
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "@id": "urn:ngm:class:naive-bayes-classifier",
+        "label": "Naive Bayes Classifier"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-network",
+        "label": "Bayesian Network"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:prior-distribution", "label": "Prior Distribution"},
-      {"@id": "urn:ngm:class:likelihood-function", "label": "Likelihood Function"},
-      {"@id": "urn:ngm:class:posterior-distribution", "label": "Posterior Distribution"},
-      {"@id": "urn:ngm:class:marginal-likelihood", "label": "Marginal Likelihood"}
+      {
+        "@id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:likelihood-function",
+        "label": "Likelihood Function"
+      },
+      {
+        "@id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:marginal-likelihood",
+        "label": "Marginal Likelihood"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
-      {"@id": "urn:ngm:class:conditional-probability", "label": "Conditional Probability"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:conditional-probability",
+        "label": "Conditional Probability"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:decision-theory", "label": "Decision Theory"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:conjugate-prior", "label": "Conjugate Prior"}
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:conjugate-prior",
+        "label": "Conjugate Prior"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:statistical-inference", "label": "Statistical Inference"},
-      {"@id": "urn:ngm:class:maximum-likelihood-estimation", "label": "Maximum Likelihood Estimation"},
-      {"@id": "urn:ngm:class:expectation-maximisation", "label": "Expectation Maximisation"},
-      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
-      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      },
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:frequentist-statistics", "label": "Frequentist Statistics"},
-      {"@id": "urn:ngm:class:maximum-likelihood-estimation", "label": "Maximum Likelihood Estimation"}
+      {
+        "@id": "urn:ngm:class:frequentist-statistics",
+        "label": "Frequentist Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:bayesian-deep-learning", "label": "Bayesian Deep Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "quality": 0.62,
@@ -275,12 +485,12 @@ public: true
     - Edinburgh's Bayes Centre (opened 2018) houses the University of Edinburgh's data science and AI research community, bringing together probabilistic machine learning (Iain Murray, Chris Williams), computational statistics (Michael Gutmann, likelihood-free inference), Bayesian optimisation (Michael Osborne relocated to Oxford), and applied Bayesian methods across informatics and the natural sciences. The centre has direct industry connections through partnerships with Standard Life Aberdeen, Baillie Gifford, and Scottish technology companies, with Bayesian time-series and portfolio optimisation as prominent applied themes. Manchester's Department of Mathematics and the Alliance Manchester Business School apply Bayesian time-series (including Bayesian vector autoregression for macroeconomic forecasting and Bayesian structural equation models for demand forecasting) and decision analysis to manufacturing and supply-chain analytics — directly relevant to Northern England's industrial heritage in aerospace (BAE Systems Samlesbury and Warton, Rolls-Royce Derby), energy (Sellafield nuclear decommissioning, North Sea offshore wind), textiles, and advanced manufacturing. The University of Sheffield's ACSE applies Gaussian-process-based Bayesian methods to industrial control, structural health monitoring, and materials characterisation — enabling non-destructive testing uncertainty quantification directly applicable to safety-critical Northern English manufacturing.
     - Imperial College London's Statistics Section (part of Mathematics) and the MRC Centre for Environment and Health apply Bayesian hierarchical models to epidemiology (spatial modelling of COVID-19 mortality, air pollution health effects) and environmental statistics. The MRC Biostatistics Unit at Cambridge integrates Bayesian adaptive trial designs into UK clinical research and NHS technology assessment through NICE's Evidence Review Group. The Wellcome Sanger Institute (Cambridge) uses Bayesian phylogenetic models and Bayesian clustering for large-scale genomics — placing probabilistic reasoning at the heart of the UK's genomics mission (100,000 Genomes Project, UK Biobank).
   - ## Future Directions (2026–2030)
-    - **Scalable Posterior Inference for Foundation Models**: The core challenge is computing meaningful posterior distributions over the billions of parameters in modern foundation models. Full MCMC over LLM parameters is computationally infeasible at current scales; the frontier involves functional BNNs targeting the predictive distribution rather than weight space (estimating P(y_new|x_new, D) without ever explicitly computing the posterior over weights), subspace variational inference operating in a low-rank subspace of parameter space identified via singular value decomposition of the Hessian, and Bayesian model averaging over discrete model configurations (architectures, prompts, fine-tuning runs) rather than continuous parameter posteriors. These approaches are expected to mature by 2027–2028 and could enable genuinely calibrated LLMs that know what they do not know — transforming AI assistants from confident fact-retrieval systems to honest epistemic agents.
-    - **Causal Bayesian Networks and LLM Integration**: Hybrid systems will increasingly use LLMs to elicit structural assumptions for Bayesian networks — generating causal DAG proposals from natural-language problem descriptions — while Bayes' theorem enforces quantitative consistency across the graph. The LLM provides qualitative causal structure; the Bayesian network provides quantitative probability propagation; Bayes' theorem at each node enforces coherence. This convergence could yield AI systems capable of both flexible natural-language reasoning and rigorous probabilistic inference, addressing the brittleness of pure neural approaches to systematic compositional reasoning. Active research (BIRD, 2024; Hua et al., 2025) demonstrates proof-of-concept; production systems are anticipated in high-stakes domains (medical diagnosis, legal reasoning, financial risk) by 2028.
+    - **Scalable Posterior Inference for Foundation Models**: The core challenge is computing meaningful posterior distributions over the billions of parameters in modern foundation models. Full MCMC over LLM parameters is computationally infeasible at current scales; the frontier involves functional BNNs targeting the predictive distribution rather than weight space (estimating P(y_new|x_new, D) without ever explicitly computing the posterior over weights), subspace variational inference operating in a low-rank subspace of parameter space identified via singular value decomposition of the Hessian, and Bayesian model averaging over discrete model configurations (architectures, prompts, fine-tuning runs) rather than continuous parameter posteriors. These approaches are expected to mature by 2027–2028 and [private] enable genuinely calibrated LLMs that know what they do not know — transforming AI assistants from confident fact-retrieval systems to honest epistemic agents.
+    - **Causal Bayesian Networks and LLM Integration**: Hybrid systems will increasingly use LLMs to elicit structural assumptions for Bayesian networks — generating causal DAG proposals from natural-language problem descriptions — while Bayes' theorem enforces quantitative consistency across the graph. The LLM provides qualitative causal structure; the Bayesian network provides quantitative probability propagation; Bayes' theorem at each node enforces coherence. This convergence [private] yield AI systems capable of both flexible natural-language reasoning and rigorous probabilistic inference, addressing the brittleness of pure neural approaches to systematic compositional reasoning. Active research (BIRD, 2024; Hua et al., 2025) demonstrates proof-of-concept; production systems are anticipated in high-stakes domains (medical diagnosis, legal reasoning, financial risk) by 2028.
     - **Federated Bayesian Learning**: Applying Bayes' theorem to aggregating private posteriors across distributed datasets without centralising raw data is a critical challenge for GDPR-compliant AI in healthcare, finance, and telecommunications. Federated variational inference — computing local evidence lower bounds at each site, then aggregating variational parameters via secure multi-party computation — enables approximate Bayesian inference across hospital consortia without any patient-level data leaving the originating institution. Differentially private MCMC and federated particle filters extend this to non-parametric settings. UK initiatives including NHS Federated Data Platform (FDP) and Health Data Research Alliance are expected to integrate Bayesian federated methods by 2027–2028.
     - **Bayesian AI Safety and Alignment**: The alignment community increasingly recognises that Bayesian posterior predictives avoid over-confident predictions, making them inherently safer than point-estimate neural systems. Bayesian world-models — as proposed in the "Scientist AI" concept (2025) — maintain explicit uncertainty over world states and report it honestly rather than committing to a single confident prediction. RLHF with Bayesian reward modelling places a posterior distribution over reward functions learned from human feedback, enabling corrigible agents that are uncertain about human preferences and defer to human oversight in proportion to that uncertainty. These ideas are expected to become mainstream in AI safety research by 2027, driven by the increasing deployment of agentic AI systems in high-stakes environments.
     - **Quantum Bayesian Inference**: Quantum computing offers potential speedups for certain posterior integration problems via quantum amplitude estimation, which can quadratically accelerate Monte Carlo integration. IBM, IonQ, and Quantinuum are exploring quantum enhanced MCMC for marginal likelihood computation — a bottleneck in Bayesian model selection — and quantum variational circuits as efficient parametric approximating families for high-dimensional posteriors. Commercial quantum advantage for Bayesian model comparison is unlikely before 2028–2030 but is an active research frontier.
-    - **Real-Time Bayesian Edge Inference**: Embedded Bayesian filters are proliferating in IoT, autonomous vehicles, and wearable medical devices. Efficient Kalman filter implementations on microcontrollers (ARM Cortex-M, RISC-V) support GPS tracking, IMU integration, and vibration-based structural health monitoring at milliwatt power levels. Neuromorphic implementations of particle filters on Intel Loihi and IBM NorthPole chips could extend real-time non-parametric Bayesian state estimation to resource-constrained settings including cardiac monitoring patches, agricultural sensor networks, and planetary rover exploration where communication bandwidth and power are severely limited.
+    - **Real-Time Bayesian Edge Inference**: Embedded Bayesian filters are proliferating in IoT, autonomous vehicles, and wearable medical devices. Efficient Kalman filter implementations on microcontrollers (ARM Cortex-M, RISC-V) support GPS tracking, IMU integration, and vibration-based structural health monitoring at milliwatt power levels. Neuromorphic implementations of particle filters on Intel Loihi and IBM NorthPole chips [private] extend real-time non-parametric Bayesian state estimation to resource-constrained settings including cardiac monitoring patches, agricultural sensor networks, and planetary rover exploration where communication bandwidth and power are severely limited.
     - **Approximate Bayesian Computation (ABC) for Simulation-Based Science**: ABC methods use Bayes' theorem with an implicit likelihood — replacing the intractable P(D|θ) with a comparison of simulated and observed data summary statistics — enabling Bayesian inference for complex physical and biological simulations where no closed-form likelihood exists. Applications in climate modelling, particle physics, epidemiological agent-based models, and evolutionary biology are expected to expand dramatically as simulation costs decrease and likelihood-free inference becomes more efficient through neural network-based density estimators (neural posterior estimation, NPE; Cranmer, Brehmer, Louppe, 2020).
   - ## Key Terminology Glossary
     - **Prior probability P(H)**: The probability assigned to hypothesis H before any new evidence is considered. Encodes existing knowledge or beliefs and is the starting point for Bayesian updating. Can be uninformative (maximally ignorant) or strongly informative (encoding domain expertise). In sequential learning, the prior at each new step is the posterior from the previous step.

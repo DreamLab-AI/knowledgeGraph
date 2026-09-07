@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - LinkedData
----
-
-# linked data
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

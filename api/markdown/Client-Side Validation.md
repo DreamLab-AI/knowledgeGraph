@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - client-side-validation
----
-
-# Client-Side Validation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -154,4 +147,3 @@ aliases:
   - In web contexts, [[JSON Schema]] validation libraries (Ajv, Yup, Zod) have standardised client-side validation logic in JavaScript ecosystems. TypeScript's type system provides compile-time contract validation. In blockchain contexts, RGB's client-side approach offers significant privacy advantages — asset quantities, contract state, and ownership history are never broadcast to the network — and scalability, since the global blockchain only sees single-output Bitcoin transactions with opaque commitments.
 
   - By 2024–2025, RGB v0.10 and v0.11 are in active development, bringing a revised Schema system, AluVM virtual machine for contract logic, and Lightning Network integration. The client-side validation paradigm has influenced designs of other Bitcoin-native smart contract systems, including Taproot Assets (formerly Taro) by Lightning Labs. In web development, server-side validation frameworks increasingly auto-generate client-side rules from shared schemas, unifying the two paradigms under single-source-of-truth data contracts using [[JSON Schema]] and [[Open API Specification]].
-

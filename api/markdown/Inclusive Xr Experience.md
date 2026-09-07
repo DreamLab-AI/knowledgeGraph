@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inclusive Xr Experience
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,47 +80,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inclusive-xr-experience:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6ddb3e795caa919a74c2af88bb56b0beb459c2c10d6cfaf7e442079afe900ff9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Equitable Metaverse Access]]",
-      "resolved": "urn:visionflow:linked:equitable-metaverse-access",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accessible Experience]]",
-      "resolved": "urn:visionflow:owl:class:accessible-experience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Extended reality applications and environments designed to provide equitable, accessible experiences for users of all abilities, incorporating assistive technologies, alternative interaction modalities, and adaptive features that ensure meaningful participation in VR, AR, and metaverse spaces.

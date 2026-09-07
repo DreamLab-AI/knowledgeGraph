@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BlackRock BUIDL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -78,42 +73,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:black-rock-buidl:219d9d12e979",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2c76fb7ef06e97f39313541a9ca88e1cd3bfa5e246211d5299c93a628f84e99e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Tokenisation]]",
-      "resolved": "urn:visionflow:linked:asset-tokenisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Text Tokenisation]]",
-      "resolved": "urn:visionflow:linked:tokenisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Institutional Adoption]]",
-      "resolved": "urn:visionflow:linked:institutional-adoption",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - BlackRock BUIDL is a tokenised money market fund issued by BlackRock on public blockchains that invests in cash, US Treasury bills, and repurchase agreements.

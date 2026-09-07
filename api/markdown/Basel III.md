@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Basel III
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -188,57 +183,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:basel-iii:928ed0f74f45",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e17a24fd67b6d22271987d702f99fc4a03cc70b81eb5b12b8335543d0d2c7e9c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Frameworks]]",
-      "resolved": "urn:visionflow:linked:regulatory-frameworks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Financial Stability]]",
-      "resolved": "urn:visionflow:linked:financial-stability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:linked:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Regulation]]",
-      "resolved": "urn:visionflow:linked:financial-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.bis.org/bcbs/basel3.htm]]",
-      "resolved": "urn:visionflow:linked:https-www-bis-org-bcbs-basel-3-htm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.bis.org/bcbs/]]",
-      "resolved": "urn:visionflow:linked:https-www-bis-org-bcbs",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Basel III is an international set of banking regulatory standards on capital adequacy, borrowing limits and liquidity developed by the Basel Committee on Banking Supervision.

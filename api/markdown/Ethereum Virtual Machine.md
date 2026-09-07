@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ethereum Virtual Machine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,46 +171,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ethereum-virtual-machine:875442a21c00",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:91cf97b859c05a1a1522e6cdaa051f0564bf8b26581f2bbf1b95a0604f2e4480"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:smart-contract-platform",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contracts]]",
-      "resolved": "urn:visionflow:linked:ethereum-smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gas]]",
-      "resolved": "urn:visionflow:linked:gas",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Machine]]",
-      "resolved": "urn:visionflow:linked:virtual-machine",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

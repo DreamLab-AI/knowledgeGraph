@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Provider
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -112,18 +107,42 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"},
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-operator", "label": "AI Operator"},
-      {"@id": "urn:ngm:class:ai-user", "label": "AI User"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:ai-operator",
+        "label": "AI Operator"
+      },
+      {
+        "@id": "urn:ngm:class:ai-user",
+        "label": "AI User"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ]
   },
   "quality": 0.5,
@@ -134,102 +153,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-provider:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:64ad0361acaa893d86a3ea0ff688394cf341a61013e243278d42bb22db5ae202"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Conformity Assessment]]",
-      "resolved": "urn:visionflow:linked:conformity-assessment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI Risk Management Framework]]",
-      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:owl:class:accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Audit]]",
-      "resolved": "urn:visionflow:owl:class:ai-audit",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Development]]",
-      "resolved": "urn:visionflow:owl:class:ai-development",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Impact Assessment]]",
-      "resolved": "urn:visionflow:owl:class:ai-impact-assessment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Lifecycle]]",
-      "resolved": "urn:visionflow:owl:class:ai-lifecycle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Operator]]",
-      "resolved": "urn:visionflow:owl:class:ai-operator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI User]]",
-      "resolved": "urn:visionflow:owl:class:ai-user",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An individual, organisation, or legal entity that develops, produces, or supplies an artificial intelligence system, including responsibility for design decisions, training processes, system capabilities, documentation, and compliance with applicable requirements, and who either places the AI system on the market under their own name or trademark, substantially modifies an existing system, or makes the system available for use, thereby assuming primary accountability for the system's characteristics, performance, and conformity with regulatory obligations.

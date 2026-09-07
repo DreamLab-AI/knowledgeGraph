@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Content Addressed Storage
----
-
-# Content-Addressed Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Semantic Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A semantic network is a knowledge-representation structure that models concepts as nodes and their relationships as labelled edges. It captures meaning through typed links such as is-a and part-of, supporting inference, inheritance, and associative retrieval. It is a long-standing formalism underlying ontologies, knowledge graphs, and cognitive models of memory.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ]
   },
   "quality": 0.72

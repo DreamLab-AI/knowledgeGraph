@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sustainability Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A sustainability framework is a structured set of principles, metrics, and reporting standards used to measure and manage the environmental, social, and governance impact of an organisation or system. It defines what to measure, how to compute indicators such as carbon footprint, and how to disclose results so that performance can be compared and audited. Frameworks like GHG Protocol and emerging crypto-specific schemes provide the methodological backbone for sustainability claims.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:environmental-impact-metric", "label": "Environmental Impact Metric"},
-      {"@id": "urn:ngm:class:carbon-credit-token", "label": "Carbon Credit Token"}
+      {
+        "@id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ML Experiment Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

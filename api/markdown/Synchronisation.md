@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Synchronisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Synchronisation is the coordination of multiple processes, devices, or data replicas so that they reach a consistent state or act in a precise temporal relationship. In computing it covers concurrency primitives like locks and barriers; in distributed and robotic systems it covers clock alignment and coordinated motion. Accurate synchronisation is essential wherever independent components must agree on order, timing, or shared state.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:delta-robot", "label": "Delta Robot"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:delta-robot",
+        "label": "Delta Robot"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ]
   },
   "quality": 0.72

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - MathematicalFoundations
----
-
-# Mathematical Foundations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,22 +20,54 @@ aliases:
   "definition": "Mathematical Foundations refers to the collection of core mathematical disciplines — including linear algebra, calculus, probability theory, discrete mathematics, and number theory — that underpin the formal reasoning required across computer science, cryptography, artificial intelligence, and engineering. These disciplines provide the rigorous axiomatic structures and analytical tools upon which algorithms, proofs, models, and systems are built. Mastery of mathematical foundations is considered prerequisite knowledge for deep work in machine learning, cryptographic protocol design, and distributed systems. They bridge pure abstract reasoning with applied computational practice.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:mathematical-science", "label": "Mathematical Science"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
-      {"@id": "urn:ngm:class:mathematical-hard-problems", "label": "Mathematical Hard Problems"},
-      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computation Paradigm"}
+      {
+        "@id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ]
   },
   "quality": 0.8

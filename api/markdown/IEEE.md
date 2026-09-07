@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - IEEE (Institute of Electrical and Electronics Engineers)
----
-
-# IEEE
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

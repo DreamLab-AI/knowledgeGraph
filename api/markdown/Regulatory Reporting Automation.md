@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Regulatory Reporting Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Regulatory reporting automation is the use of software, and increasingly smart contracts, to generate and submit mandated regulatory reports directly from source transaction data without manual compilation. On enterprise and consortium blockchains, shared ledgers let supervisors receive standardised, near-real-time disclosures. Automating reporting reduces error, lowers compliance cost, and shortens the lag between activity and oversight.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"},
-      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"}
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      }
     ]
   },
   "quality": 0.72

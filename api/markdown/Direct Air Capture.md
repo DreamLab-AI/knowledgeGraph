@@ -1,38 +1,120 @@
----
-public: true
----
-
-# Direct Air Capture
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:direct-air-capture", "@type":"Page", "title":"Direct Air Capture", "vc:slug":"direct-air-capture", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:direct-air-capture",
+  "@type": "Page",
+  "title": "Direct Air Capture",
+  "vc:slug": "direct-air-capture",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:direct-air-capture",
-  "@type":"Class",
-  "label":"Direct Air Capture",
-  "definition":"Direct Air Capture (DAC) is a class of carbon-dioxide-removal technologies that chemically extract CO2 directly from ambient air, rather than from a concentrated flue-gas stream. Captured CO2 is then either permanently stored underground or used as a feedstock, producing measurable negative emissions. DAC is energy-intensive because atmospheric CO2 is highly dilute, so its viability depends on low-carbon energy and durable storage or carbon-market incentives.",
-  "domain":"governance",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:climate-policy","label":"Climate Policy"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:net-zero","label":"Net Zero"}],
-    "requires":[{"@id":"urn:ngm:class:renewable-energy","label":"Renewable Energy"}],
-    "enables":[{"@id":"urn:ngm:class:carbon-offsetting","label":"Carbon Offsetting"}],
-    "dependsOn":[{"@id":"urn:ngm:class:renewable-energy","label":"Renewable Energy"},{"@id":"urn:ngm:class:carbon-pricing","label":"Carbon Pricing"}],
-    "supports":[{"@id":"urn:ngm:class:net-zero","label":"Net Zero"},{"@id":"urn:ngm:class:climate-policy","label":"Climate Policy"}],
-    "uses":[{"@id":"urn:ngm:class:carbon-sequestration","label":"Carbon Sequestration"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:esg","label":"ESG"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:carbon-offsetting","label":"Carbon Offsetting"},{"@id":"urn:ngm:class:emissions-trading-scheme","label":"Emissions Trading Scheme"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:carbon-pricing","label":"Carbon Pricing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:emissions-trading-scheme","label":"Emissions Trading Scheme"},{"@id":"urn:ngm:class:sustainability","label":"Sustainability"},{"@id":"urn:ngm:class:esg","label":"ESG"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:direct-air-capture",
+  "@type": "Class",
+  "label": "Direct Air Capture",
+  "definition": "Direct Air Capture (DAC) is a class of carbon-dioxide-removal technologies that chemically extract CO2 directly from ambient air, rather than from a concentrated flue-gas stream. Captured CO2 is then either permanently stored underground or used as a feedstock, producing measurable negative emissions. DAC is energy-intensive because atmospheric CO2 is highly dilute, so its viability depends on low-carbon energy and durable storage or carbon-market incentives.",
+  "domain": "governance",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:climate-policy",
+      "label": "Climate Policy"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-pricing",
+        "label": "Carbon Pricing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "@id": "urn:ngm:class:climate-policy",
+        "label": "Climate Policy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:carbon-sequestration",
+        "label": "Carbon Sequestration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "@id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:carbon-pricing",
+        "label": "Carbon Pricing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

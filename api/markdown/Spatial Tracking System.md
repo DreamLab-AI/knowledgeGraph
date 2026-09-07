@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Tracking System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-tracking-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9c3b6b426c76b847b0c7f30e3b7a5a8c03d52d426e160a3ce0e0dc76597bdd66"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Precise Spatial Positioning]]",
-      "resolved": "urn:visionflow:linked:precise-spatial-positioning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Tracking]]",
-      "resolved": "urn:visionflow:owl:class:motion-tracking",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technology for determining the six-degrees-of-freedom (6DOF) position and orientation of devices, controllers, or body parts in three-dimensional space, using visual-inertial SLAM, stereo cameras, and IMU sensors for precise real-time tracking in VR, AR, and mixed reality applications.

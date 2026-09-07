@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BLIP-2 Captioner
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,34 +7,118 @@ public: true
   "title": "BLIP-2 Captioner",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:owl:class:multimodal-ai-architecture", "vc:label": "Multimodal AI Architecture"},
-    {"@id": "urn:visionflow:owl:class:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:owl:class:vision-transformer", "vc:label": "Vision Transformer"},
-    {"@id": "urn:visionflow:owl:class:clip-encoder", "vc:label": "CLIP Encoder"},
-    {"@id": "urn:visionflow:owl:class:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:owl:class:fine-tuning", "vc:label": "Fine Tuning"},
-    {"@id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning", "vc:label": "Parameter-Efficient Fine-Tuning"},
-    {"@id": "urn:visionflow:owl:class:kohya-dreambooth-and-similar", "vc:label": "KOHYA Dreambooth and similar"},
-    {"@id": "urn:visionflow:owl:class:image-captioning", "vc:label": "Image Captioning"},
-    {"@id": "urn:visionflow:owl:class:visual-question-answering", "vc:label": "Visual Question Answering"},
-    {"@id": "urn:visionflow:owl:class:contrastive-learning", "vc:label": "Contrastive Learning"},
-    {"@id": "urn:visionflow:owl:class:lora-fine-tuning", "vc:label": "LoRA Fine-Tuning"},
-    {"@id": "urn:visionflow:owl:class:stable-diffusion", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:visionflow:owl:class:clip", "vc:label": "CLIP"},
-    {"@id": "urn:visionflow:owl:class:lora-dora-etc", "vc:label": "LoRA DoRA etc"},
-    {"@id": "urn:visionflow:owl:class:multimodal-learning", "vc:label": "Multimodal Learning"},
-    {"@id": "urn:visionflow:owl:class:zero-shot-learning", "vc:label": "Zero-Shot Learning"},
-    {"@id": "urn:visionflow:owl:class:causal-language-modelling", "vc:label": "Causal Language Modelling"},
-    {"@id": "urn:visionflow:owl:class:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:owl:class:full-fine-tuning", "vc:label": "Full Fine Tuning"},
-    {"@id": "urn:visionflow:owl:class:diffusion-models", "vc:label": "Diffusion Models"},
-    {"@id": "urn:visionflow:owl:class:diffusion-transformer", "vc:label": "Diffusion Transformer"},
-    {"@id": "urn:visionflow:owl:class:multimodal-reasoning", "vc:label": "Multimodal Reasoning"},
-    {"@id": "urn:visionflow:owl:class:gemini-multimodal-language-model", "vc:label": "Gemini Multimodal Language Model"},
-    {"@id": "urn:visionflow:owl:class:multimodal-understanding", "vc:label": "Multimodal Understanding"},
-    {"@id": "urn:visionflow:owl:class:cross-modal-retrieval", "vc:label": "Cross Modal Retrieval"}
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-ai-architecture",
+      "vc:label": "Multimodal AI Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:vision-transformer",
+      "vc:label": "Vision Transformer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:clip-encoder",
+      "vc:label": "CLIP Encoder"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:fine-tuning",
+      "vc:label": "Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+      "vc:label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:kohya-dreambooth-and-similar",
+      "vc:label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:image-captioning",
+      "vc:label": "Image Captioning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:visual-question-answering",
+      "vc:label": "Visual Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:contrastive-learning",
+      "vc:label": "Contrastive Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lora-fine-tuning",
+      "vc:label": "LoRA Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:clip",
+      "vc:label": "CLIP"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:lora-dora-etc",
+      "vc:label": "LoRA DoRA etc"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-learning",
+      "vc:label": "Multimodal Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:zero-shot-learning",
+      "vc:label": "Zero-Shot Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:causal-language-modelling",
+      "vc:label": "Causal Language Modelling"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:full-fine-tuning",
+      "vc:label": "Full Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-models",
+      "vc:label": "Diffusion Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:diffusion-transformer",
+      "vc:label": "Diffusion Transformer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-reasoning",
+      "vc:label": "Multimodal Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:gemini-multimodal-language-model",
+      "vc:label": "Gemini Multimodal Language Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multimodal-understanding",
+      "vc:label": "Multimodal Understanding"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cross-modal-retrieval",
+      "vc:label": "Cross Modal Retrieval"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -55,55 +134,163 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-    {"@id": "urn:ngm:class:multimodal-ai-architecture", "label": "Multimodal AI Architecture"}
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "@id": "urn:ngm:class:multimodal-ai-architecture",
+      "label": "Multimodal AI Architecture"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:q-former", "label": "Q-Former"},
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:linear-projection-layer", "label": "Linear Projection Layer"},
-      {"@id": "urn:ngm:class:learnable-query-tokens", "label": "Learnable Query Tokens"},
-      {"@id": "urn:ngm:class:image-text-contrastive-loss", "label": "Image-Text Contrastive Loss"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:q-former",
+        "label": "Q-Former"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:linear-projection-layer",
+        "label": "Linear Projection Layer"
+      },
+      {
+        "@id": "urn:ngm:class:learnable-query-tokens",
+        "label": "Learnable Query Tokens"
+      },
+      {
+        "@id": "urn:ngm:class:image-text-contrastive-loss",
+        "label": "Image-Text Contrastive Loss"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-captioning", "label": "Image Captioning"},
-      {"@id": "urn:ngm:class:visual-question-answering", "label": "Visual Question Answering"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero-Shot Learning"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-reasoning", "label": "Multimodal Reasoning"},
-      {"@id": "urn:ngm:class:cross-modal-retrieval", "label": "Cross Modal Retrieval"}
+      {
+        "@id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "@id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-reasoning",
+        "label": "Multimodal Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:cross-modal-retrieval",
+        "label": "Cross Modal Retrieval"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:clip-encoder", "label": "CLIP Encoder"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
-      {"@id": "urn:ngm:class:causal-language-modelling", "label": "Causal Language Modelling"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:causal-language-modelling",
+        "label": "Causal Language Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:frozen-image-encoder", "label": "Frozen Image Encoder"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:image-text-paired-corpus", "label": "Image-Text Paired Corpus"}
+      {
+        "@id": "urn:ngm:class:frozen-image-encoder",
+        "label": "Frozen Image Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:image-text-paired-corpus",
+        "label": "Image-Text Paired Corpus"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "KOHYA Dreambooth and similar"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:lo-ra-fine-tuning", "label": "LoRA Fine-Tuning"},
-      {"@id": "urn:ngm:class:instruct-blip", "label": "InstructBLIP"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-understanding", "label": "Multimodal Understanding"},
-      {"@id": "urn:ngm:class:gemini-multimodal-language-model", "label": "Gemini Multimodal Language Model"}
+      {
+        "@id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "KOHYA Dreambooth and similar"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:instruct-blip",
+        "label": "InstructBLIP"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-understanding",
+        "label": "Multimodal Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
+        "label": "Gemini Multimodal Language Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:flamingo", "label": "Flamingo"},
-      {"@id": "urn:ngm:class:minigpt-4", "label": "MiniGPT-4"},
-      {"@id": "urn:ngm:class:llava", "label": "LLaVA"},
-      {"@id": "urn:ngm:class:full-fine-tuning", "label": "Full Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:flamingo",
+        "label": "Flamingo"
+      },
+      {
+        "@id": "urn:ngm:class:minigpt-4",
+        "label": "MiniGPT-4"
+      },
+      {
+        "@id": "urn:ngm:class:llava",
+        "label": "LLaVA"
+      },
+      {
+        "@id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine Tuning"
+      }
     ]
   },
   "quality": 0.93
@@ -259,7 +446,7 @@ public: true
     - **Visual Question Answering (VQA)**: BLIP-2 achieves 65.0% zero-shot VQAv2 accuracy using OPT 6.7B and higher still with FlanT5 XXL. By prepending a natural-language question to the visual prompt tokens (e.g., "Question: What colour is the car? Answer:"), the frozen LLM generates a constrained short-form answer conditioned on the visual representation. This mechanism enables document intelligence applications (answering questions about scanned form fields), product inspection (counting defects in manufacturing images), accessibility tools (describing images for visually impaired users), and educational platforms (generating quiz questions from diagram images).
     - **Medical Image Captioning (MedBLIP)**: Domain-specific fine-tuning of the Q-Former against clinical imaging datasets produces medically accurate radiology report generation. The 2025 MedBLIP paper (arXiv:2505.14726) demonstrates Q-Former adaptation on chest X-ray (CXR) and CT imaging, leveraging the frozen ViT's general visual features while teaching the Q-Former to extract clinically relevant features — lesion boundaries, tissue density distributions, anatomical landmarks — mapped onto medical vocabulary by a frozen clinical language model. The University of Cambridge group's polymer-solvent captioning work (PMC12126306, 2025) similarly adapts BLIP-2 to materials science microscopy, using BLIP-2 to generate structured textual descriptions of microstructural features visible in electron microscopy images.
     - **Multimodal Dialogue and InstructBLIP**: InstructBLIP (Dai et al., NeurIPS 2023) extends BLIP-2 with large-scale instruction tuning across 26 public datasets, enabling the Q-Former to attend to image features conditionally based on natural language instructions. The instruction-aware Q-Former learns to extract task-specific visual information — composition for captioning, object identity for VQA, spatial relationships for referring expression comprehension — making the same frozen ViT+LLM stack serve diverse downstream tasks without per-task fine-tuning. This architecture powers visual chatbots that can engage in open-ended visual dialogue, generating multi-sentence explanations, comparisons, and narratives about images.
-    - **Cross-Modal Product Retrieval**: A 2024 study (arXiv:2402.08532) demonstrated that BLIP-2-generated captions of product images substantially improve e-commerce search retrieval precision — by encoding visual attributes such as colour, shape, material, and style into searchable text strings, BLIP-2 bridges the gap between visual product appearance and keyword-based [[Information Retrieval]] indexes. This hybrid visual-lexical retrieval pattern — generate captions with BLIP-2, index captions with BM25 or dense embedding models, retrieve by text query — provides a computationally efficient alternative to runtime visual embedding computation for large-scale catalogue search.
+    - **Cross-Modal Product Retrieval**: A 2024 study (arXiv:2402.08532) demonstrated that BLIP-2-generated captions of product images substantially improve e-commerce search retrieval precision — by encoding visual attributes such as colour, shape, material, and style into searchable text strings, BLIP-2 bridges the gap between visual product appearance and keyword-based [[Information Retrieval]] indexes. This hybrid visual-lexical retrieval pattern — generate captions with BLIP-2, [private] captions with BM25 or dense embedding models, retrieve by text query — provides a computationally efficient alternative to runtime visual embedding computation for large-scale catalogue search.
     - **BLIP-Diffusion Subject-Driven Generation**: Salesforce subsequently released BLIP-Diffusion (2023), which repurposes the BLIP-2 Q-Former as a subject representation encoder for [[Diffusion Models]]. Rather than generating captions, the Q-Former extracts a subject embedding from a reference image that is used to condition the diffusion model's cross-attention layers. This enables subject-driven text-to-image synthesis — generating new scenes featuring a specific person, object, or style extracted from a reference photograph — without per-subject fine-tuning, demonstrating the architectural flexibility of the Q-Former beyond pure captioning.
     - **Scientific Instrument Captioning**: Multiple 2024-2025 studies demonstrate BLIP-2 adaptation for specialist scientific imaging: spectroscopy peak identification, satellite imagery land-cover description, histopathology slide characterisation, and particle physics collision event visualisation. The common pattern is Q-Former fine-tuning on domain-paired data (image, structured text annotation) while keeping the ViT and LLM frozen, leveraging the ViT's general visual feature extraction and the LLM's language generation whilst adapting only the intermediate representation to the specialist domain.
 
@@ -443,7 +630,7 @@ public: true
 
     **Edge Deployment**: For applications requiring offline or privacy-preserving captioning (on-device accessibility, local content indexing), BLIP-2 can be quantised to INT4 or INT8 using BitsAndBytes or GGUF quantisation and deployed on edge hardware. The blip2-opt-2.7b model quantised to INT4 requires approximately 2.5GB of storage and can run on devices with 4GB GPU memory (consumer laptops with discrete GPUs, NVIDIA Jetson Orin) at 3-8 images per second. The frozen ViT encoder benefits less from quantisation (already compact) than the LLM backbone, so mixed-precision approaches (FP16 ViT, INT4 LLM) achieve the best quality/size trade-off.
 
-    **Multi-Modal Search Index Construction**: A hybrid deployment pattern combines BLIP-2 captioning with embedding generation to build a multimodal search index. For each image: (1) BLIP-2 generates a text caption; (2) a text embedding model (e.g., sentence-transformers/all-mpnet-base-v2) encodes the caption to a dense vector; (3) both the caption text (for BM25 sparse retrieval) and the caption embedding (for dense [[Semantic Search]]) are indexed in a hybrid search engine such as Elasticsearch or Weaviate. At query time, a natural language text query is matched against both the BM25 sparse index of captions and the dense vector index of caption embeddings via [[Hybrid Retrieval]], enabling flexible image retrieval by text description without requiring runtime visual feature computation.
+    **Multi-Modal Search Index Construction**: A hybrid deployment pattern combines BLIP-2 captioning with embedding generation to build a multimodal search [private]. For each image: (1) BLIP-2 generates a text caption; (2) a text embedding model (e.g., sentence-transformers/all-mpnet-base-v2) encodes the caption to a dense vector; (3) both the caption text (for BM25 sparse retrieval) and the caption embedding (for dense [[Semantic Search]]) are indexed in a hybrid search engine such as Elasticsearch or Weaviate. At query time, a natural language text query is matched against both the BM25 sparse [private] of captions and the dense vector [private] of caption embeddings via [[Hybrid Retrieval]], enabling flexible image retrieval by text description without requiring runtime visual feature computation.
 
 - ### Provenance
   - sources:: https://arxiv.org/pdf/2301.12597, https://dl.acm.org/doi/10.5555/3618408.3619222, https://huggingface.co/blog/blip-2, https://www.salesforce.com/blog/blip-2/, https://www.emergentmind.com/topics/blip-2, https://www.companieshistory.com/blip-2-statistics/, https://arxiv.org/pdf/2404.01322, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12126306/, https://arxiv.org/html/2301.12597

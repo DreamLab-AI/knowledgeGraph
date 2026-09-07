@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Acceleration Structure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,23 +21,47 @@ public: true
   "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:spatial-index", "label": "Spatial Index"}
+    {
+      "@id": "urn:ngm:class:spatial-index",
+      "label": "Spatial Index"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bounding-volume-hierarchy", "label": "Bounding Volume Hierarchy"},
-      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"}
+      {
+        "@id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
     ]
   },
   "quality": 0.8

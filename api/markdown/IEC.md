@@ -1,9 +1,3 @@
----
-public: true
----
-
-# IEC
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

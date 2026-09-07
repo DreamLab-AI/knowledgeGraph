@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Global Trade
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Global Trade",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:international-trade", "vc:label": "International Trade"},
-    {"@id": "urn:visionflow:linked:supply-chain", "vc:label": "Supply Chain"},
-    {"@id": "urn:visionflow:linked:logistics", "vc:label": "Logistics"},
-    {"@id": "urn:visionflow:linked:iso", "vc:label": "ISO"},
-    {"@id": "urn:visionflow:linked:economic-growth", "vc:label": "Economic Growth"}
+    {
+      "@id": "urn:visionflow:linked:international-trade",
+      "vc:label": "International Trade"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain",
+      "vc:label": "Supply Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:logistics",
+      "vc:label": "Logistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso",
+      "vc:label": "ISO"
+    },
+    {
+      "@id": "urn:visionflow:linked:economic-growth",
+      "vc:label": "Economic Growth"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -39,12 +54,24 @@ public: true
   },
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:iso", "label": "ISO"}
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:logistics", "label": "Logistics"},
-      {"@id": "urn:ngm:class:economic-growth", "label": "Economic Growth"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
     ]
   },
   "quality": 0.8,

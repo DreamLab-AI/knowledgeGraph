@@ -1,8 +1,3 @@
----
-public: true
----
-
-# XBRL
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "XBRL (eXtensible Business Reporting Language) is an open XML-based standard for tagging and exchanging business and financial reporting data in a machine-readable form. It uses taxonomies of defined concepts to attach semantic meaning, units, and context to each reported fact, enabling automated validation, comparison, and analysis. It matters because regulators worldwide mandate it for filings, making financial disclosures consistently structured and computable.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ]
   },
   "quality": 0.72
 }

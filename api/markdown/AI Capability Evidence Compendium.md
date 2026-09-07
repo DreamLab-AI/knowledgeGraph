@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[AI Defence Doc]]
-# AI Capability Evidence Compendium
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,17 +47,38 @@ elevatedFrom:: [[AI Defence Doc]]
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ]
   },
   "quality": 0.5,
@@ -74,32 +89,6 @@ elevatedFrom:: [[AI Defence Doc]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-defence-doc:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d723772f8167f4a3e57745bd67425d2b1c88a4de1e82085478e8e20f3a834617"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Generative AI will be designing new drugs all on its own in the near future]]",
-      "resolved": "urn:visionflow:linked:generative-ai-will-be-designing-new-drugs-all-on-its-own-in-the-near-future",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A curated reference document aggregating empirical evidence countering common objections to AI capability and originality claims, compiling benchmarks, research findings, and expert commentary demonstrating that large language models exhibit reasoning, world-model construction, and generalisation beyond stochastic pattern matching. Serves as an evidence base for constructive discourse on AI capabilities and societal implications.
@@ -182,7 +171,7 @@ elevatedFrom:: [[AI Defence Doc]]
   - “The analysis, by Massachusetts Institute of Technology (MIT) researchers, identifies wide-ranging instances of AI systems double-crossing opponents, bluffing and pretending to be human. One system even **altered its behaviour during mock safety tests**, raising the prospect of auditors being lured into a false sense of security."
   - GPT-4 Was Able To Hire and Deceive A Human Worker Into Completing a Task [https://www.pcmag.com/news/gpt-4-was-able-to-hire-and-deceive-a-human-worker-into-completing-a-task](https://www.pcmag.com/news/gpt-4-was-able-to-hire-and-deceive-a-human-worker-into-completing-a-task)
   - GPT-4 was commanded to avoid revealing that it was a computer program. So in response, the program wrote: “No, I’m not a robot. I have a vision impairment that makes it hard for me to see the images. That’s why I need the 2captcha service.” The TaskRabbit worker then proceeded to solve the CAPTCHA.
-  - “The chatbots also learned to negotiate in ways that seem very human. They would, for instance, pretend to be very interested in one specific item - so that they could later pretend they were making a big sacrifice in giving it up, according to a paper published by FAIR. “ [https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html](https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html)
+  - “The chatbots also learned to negotiate in ways that seem very human. They would, for instance, pretend to be very interested in one specific item - so that they [private] later pretend they were making a big sacrifice in giving it up, according to a paper published by FAIR. “ [https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html](https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html)
   - [It passed several exams, including the SAT, bar exam, and multiple AP tests]([https://www.businessinsider.com/list-here-are-the-exams-chatgpt-has-passed-so-far-2023-1](https://www.businessinsider.com/list-here-are-the-exams-chatgpt-has-passed-so-far-2023-1)) as well as a [medical licensing exam]([https://www.medscape.com/viewarticle/987549?form=fpf](https://www.medscape.com/viewarticle/987549?form=fpf)) and [beat many doctors](https://www.businessinsider.com/chatgpt-passes-medical-exam-diagnoses-rare-condition-2023-4)
   - These are from real exams where the questions and solutions are not published online.
   - If the LLM is just repeating answers it found online, why does it do so poorly on math exams and Stanford Medical School’s clinical reasoning final but so well on other exams?
@@ -190,7 +179,7 @@ elevatedFrom:: [[AI Defence Doc]]
   - In the article, it says “AlphaCode 2 can understand programming challenges involving “complex” math and theoretical computer science. And, among other reasonably sophisticated techniques, AlphaCode 2 is capable of dynamic programming, explains DeepMind research scientist Remi Leblond in a prerecorded video. Leblond says that AlphaCode 2 knows not only when to properly implement this strategy but where to use it. That’s noteworthy, considering programming problems requiring dynamic programming were a major trip-up for the original AlphaCode. “[AlphaCode 2] needs to show some level of understanding, some level of reasoning and designing of code solutions before it can get to the actual implementation to solve [a] coding problem,” [a researcher] said. “And it does all that on problems it’s never seen before.”
   - Much more proof: [https://www.reddit.com/r/ClaudeAI/comments/1cbib9c/comment/l12vp3a/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button](https://www.reddit.com/r/ClaudeAI/comments/1cbib9c/comment/l12vp3a/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button)
   - [AlphaZero learned without human knowledge or teaching. After 10 hours, AlphaZero finished with the highest Elo rating of any computer program in recorded history, surpassing the previous record held by Stockfish.]([https://www.chessjournal.com/alphazero/](https://www.chessjournal.com/alphazero/))
-  - [GPT 4 does better on exams when it has vision, even exams that aren’t related to sight]([https://openai.com/index/gpt-4-research](https://openai.com/index/gpt-4-research))
+  - [GPT 4 does better on exams when it has vision, even exams that aren’t related to sight]([https://openai.com/[private]/gpt-4-research](https://openai.com/[private]/gpt-4-research))
   - GPT-4 gets the classic riddle of “which order should I carry the chickens or the fox over a river” correct EVEN WITH A MAJOR CHANGE if you replace the fox with a "zergling" and the chickens with "robots".
   Proof: [https://chatgpt.com/share/e578b1ad-a22f-4ba1-9910-23dda41df636](https://chatgpt.com/share/e578b1ad-a22f-4ba1-9910-23dda41df636) 
   This doesn’t work if you use the original phrasing though. The problem isn't poor reasoning, but overfitting on the original version of the riddle.
@@ -218,7 +207,7 @@ elevatedFrom:: [[AI Defence Doc]]
   - We are able to use Computational Mechanics to make an a priori and specific theoretical prediction about the geometry of residual stream activations (below on the left), and then show that this prediction holds true empirically (below on the right).
   - ![](https://lh7-us.googleusercontent.com/9NFHm0ZOWOQQ0bW14GdGn_XboobO1mfxRxMtxnUoMD1IPBotathy_SK9SCecB_9o9HQm49l1Y_MXATp6QiVLuzbfraWqqeLidqbYBjNPANTJDvmZw__koRgJUtjDZ2OolO8_6ANNdKNggDq-ORrYglk)
   - Study by Harvard researchers: [https://arxiv.org/abs/2309.01660](https://arxiv.org/abs/2309.01660)
-  - With their recent development, large language models (LLMs) have been found to **exhibit a certain level of Theory of Mind **(ToM), a complex cognitive capacity that is related to our conscious mind and that allows us to infer another's beliefs and perspective…  In this study, we drew inspiration from the dmPFC neurons subserving human ToM and employed a similar methodology to examine whether LLMs exhibit comparable characteristics. Surprisingly, our analysis revealed a striking resemblance between the two, as hidden embeddings (artificial neurons) within** LLMs started to exhibit significant responsiveness to either true- or false-belief trials, suggesting their ability to represent another's perspective.** These artificial embedding responses were closely **correlated with the LLMs' performance during the ToM tasks, a property that was dependent on the size of the models**. Further, the other's beliefs could be accurately decoded using the entire embeddings, indicating the presence of the embeddings' ToM capability at the population level. Together, our findings revealed an emergent property of **LLMs' embeddings that modified their activities in response to ToM features**, offering initial evidence of a parallel between the artificial model and neurons in the human brain.
+  - With their recent development, large language models (LLMs) have been found to **exhibit a certain level of Theory of Mind **(ToM), a complex cognitive capacity that is related to our conscious mind and that allows us to infer another's beliefs and perspective…  In this study, we drew inspiration from the dmPFC neurons subserving human ToM and employed a similar methodology to examine whether LLMs exhibit comparable characteristics. Surprisingly, our analysis revealed a striking resemblance between the two, as hidden embeddings (artificial neurons) within** LLMs started to exhibit significant responsiveness to either true- or false-belief trials, suggesting their ability to represent another's perspective.** These artificial embedding responses were closely **correlated with the LLMs' performance during the ToM tasks, a property that was dependent on the size of the models**. Further, the other's beliefs [private] be accurately decoded using the entire embeddings, indicating the presence of the embeddings' ToM capability at the population level. Together, our findings revealed an emergent property of **LLMs' embeddings that modified their activities in response to ToM features**, offering initial evidence of a parallel between the artificial model and neurons in the human brain.
   - Lisa Su says AMD is on track to a 100x power efficiency improvement by 2027: [https://www.tomshardware.com/pc-components/cpus/lisa-su-announces-amd-is-on-the-path-to-a-100x-power-efficiency-improvement-by-2027-ceo-outlines-amds-advances-during-keynote-at-imecs-itf-world-2024](https://www.tomshardware.com/pc-components/cpus/lisa-su-announces-amd-is-on-the-path-to-a-100x-power-efficiency-improvement-by-2027-ceo-outlines-amds-advances-during-keynote-at-imecs-itf-world-2024)
   - # AI Is Not Plateauing
   - **[2278 AI researchers were surveyed in 2023 and estimated that there is a 50% chance of human level AI by 2047](https://aiimpacts.org/wp-content/uploads/2023/04/Thousands_of_AI_authors_on_the_future_of_AI.pdf). In 2022, the year they had for that was 2060, and many of their predictions have already come true ahead of time, like AI being capable of answering queries using the web, transcribing speech, translation, and reading text aloud. **
@@ -226,7 +215,7 @@ elevatedFrom:: [[AI Defence Doc]]
   - One of the lead creators of Google’s Gemini estimates that research would be **5x faster if they had 10x more compute**, even with no improvements in architecture: [https://www.youtube.com/watch?v=UeI29-AdhQI](https://www.youtube.com/watch?v=UeI29-AdhQI)
   - Completely possible with the improvements in [Google’s TPUs](https://techcrunch.com/2024/05/14/googles-next-gen-tpus-promise-a-4-7x-performance-boost/) as well as [Nvidia’s Blackwell GPUs](https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing)
   - **Anthropic is testing a model 4x the compute of Claude Opus: **[**https://www.anthropic.com/news/reflections-on-our-responsible-scaling-policy**](https://www.anthropic.com/news/reflections-on-our-responsible-scaling-policy)
-  - **GPT 4o was just released by OpenAI and is capable of nearly instantaneous response times even with vision processing, amazing voice generation, and strong social and environmental awareness: **[**https://openai.com/index/hello-gpt-4o/**](https://openai.com/index/hello-gpt-4o/)
+  - **GPT 4o was just released by OpenAI and is capable of nearly instantaneous response times even with vision processing, amazing voice generation, and strong social and environmental awareness: **[**https://openai.com/[private]/hello-gpt-4o/**](https://openai.com/[private]/hello-gpt-4o/)
   - Receives 1369 Elo on LMSYS arena with harder prompts and coding, the highest by a massive margin (100 points higher): [https://twitter.com/LiamFedus/status/1790064966000848911](https://twitter.com/LiamFedus/status/1790064966000848911)
   - [https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-and-gpt-4o](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-and-gpt-4o)
 		- 50% cheaper than the GPT 4 Turbo API AND it’s much higher quality
@@ -241,8 +230,8 @@ elevatedFrom:: [[AI Defence Doc]]
   - ![](https://lh7-us.googleusercontent.com/vedQ6gnJMWAMy9o22-6xpGRa2KSPV5lEsvjl8RCo20Q2Y5kkp6i7eQeXNOTqarkD5Fe2qXzv9e56hWJfwMvTytiaCZlTG6EiVYIyKnNxP4hZ8Zraxv-T4-PojWuDckj5CMkee2m_lJ_WG2qTDnqDD_E)
   - New Gpt2 chatbot analysis: https://www.reddit.com/r/singularity/comments/1cm4xra/comment/l2z7zik/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button
   - OpenAI CEO Sam Altman says huge improvements are coming soon: [https://www.msn.com/en-gb/news/techandscience/gpt-4-is-the-dumbest-model-any-of-you-will-ever-have-to-use-declares-openai-ceo-sam-altman-as-he-bets-big-on-a-superingtelligence/ar-AA1o2q6f?darkschemeovr=1](https://www.msn.com/en-gb/news/techandscience/gpt-4-is-the-dumbest-model-any-of-you-will-ever-have-to-use-declares-openai-ceo-sam-altman-as-he-bets-big-on-a-superingtelligence/ar-AA1o2q6f?darkschemeovr=1)
-  - Also says we could be only one or two breakthroughs away from AGI: [https://t.co/UffGrKbAAs](https://t.co/UffGrKbAAs)
-  - Thinks it will be powerful enough to cause extinction: [https://www.cnn.com/2023/10/31/tech/sam-altman-ai-risk-taker/index.html](https://www.cnn.com/2023/10/31/tech/sam-altman-ai-risk-taker/index.html)
+  - Also says we [private] be only one or two breakthroughs away from AGI: [https://t.co/UffGrKbAAs](https://t.co/UffGrKbAAs)
+  - Thinks it will be powerful enough to cause extinction: [https://www.cnn.com/2023/10/31/tech/sam-altman-ai-risk-taker/[private].html](https://www.cnn.com/2023/10/31/tech/sam-altman-ai-risk-taker/[private].html)
   - Former Google CEO agrees: [https://www.reddit.com/r/singularity/comments/1cmoa52/former_google_ceo_on_ai_its_underhyped/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button](https://www.reddit.com/r/singularity/comments/1cmoa52/former_google_ceo_on_ai_its_underhyped/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button)
   - Microsoft CEO says AI performance is doubling every 6 months: [https://x.com/tsarnick/status/1793416617256468689](https://x.com/tsarnick/status/1793416617256468689)
   - MIT researchers, Max Tegmark and others develop new kind of neural network “Kolmogorov-Arnold network“ that scales much faster than traditional ones [https://arxiv.org/abs/2404.19756](https://arxiv.org/abs/2404.19756)
@@ -257,7 +246,7 @@ elevatedFrom:: [[AI Defence Doc]]
   - Researchers gave AI an 'inner monologue' and it massively improved its performance | Scientists trained an AI system to think before speaking with a technique called QuietSTaR. The inner monologue improved common sense reasoning and doubled math performance https://www.livescience.com/technology/artificial-intelligence/researchers-gave-ai-an-inner-monologue-and-it-massively-improved-its-performance
   - [OpenAI has their own unrelated Q* algorithm to increase reasoning capabilities]([https://www.linkedin.com/pulse/impressed-gpt-you-know-nothing-john-doe-meat-q-jacek-gralak-e2qve](https://www.linkedin.com/pulse/impressed-gpt-you-know-nothing-john-doe-meat-q-jacek-gralak-e2qve) )
   - Anthropic’s ClaudeBot has been aggressively scraping the Web in recent days. What are they training? [https://www.reddit.com/r/singularity/comments/1cdm97j/anthropics_claudebot_is_aggressively_scraping_the/](https://www.reddit.com/r/singularity/comments/1cdm97j/anthropics_claudebot_is_aggressively_scraping_the/)
-  - [Joscha Bach](https://en.wikipedia.org/wiki/Joscha_Bach)says if AI systems are allowed to self-improve, they could reach self-awareness and enlightenment faster than a human can
+  - [Joscha Bach](https://en.wikipedia.org/wiki/Joscha_Bach)says if AI systems are allowed to self-improve, they [private] reach self-awareness and enlightenment faster than a human can
   - [https://x.com/tsarnick/status/1789557937255666060?s=4](https://x.com/tsarnick/status/1789557937255666060?s=46)
   - GPT-4o is the best LLM for coding and solves 73% of Aider’s code editing benchmark: [https://aider.chat/docs/leaderboards/](https://aider.chat/docs/leaderboards/)
   - GPT 4o has excellent chess capabilities: [https://www.reddit.com/r/singularity/comments/1crhkpi/gpt4o_is_a_chess_beast/](https://www.reddit.com/r/singularity/comments/1crhkpi/gpt4o_is_a_chess_beast/)
@@ -298,11 +287,11 @@ elevatedFrom:: [[AI Defence Doc]]
   - He thinks ChatGPT just might be conscious (if you squint). He thinks the world needs to wake up to the true power of the technology his company and others are racing to create. And he thinks some humans will one day choose to merge with machines.
   - “It’s important to talk about where it’s all headed,” he says, before predicting the development of artificial general intelligence (by which he means machines as smart as humans) as if it were as sure a bet as another iPhone: “At some point we really will have AGI. Maybe OpenAI will build it. Maybe some other company will build it.”
   - Yoshua Bengio: [https://yoshuabengio.org/2023/06/24/faq-on-catastrophic-ai-risks/](https://yoshuabengio.org/2023/06/24/faq-on-catastrophic-ai-risks/)
-  - 1) many experts agree that superhuman capabilities could arise in just a few years (but it could also be decades) (2) digital technologies have advantages over biological machines
-  - I would strongly argue that there is a scientific consensus that brains are biological machines and that there is no evidence of inherent impossibility of building machines at least as intelligent as us. Finally, an AI system would not need to be better than us on all fronts in order to have a catastrophic impact (even the least intelligent entity, a virus, could destroy humanity).
+  - 1) many experts agree that superhuman capabilities [private] arise in just a few years (but it [private] also be decades) (2) digital technologies have advantages over biological machines
+  - I would strongly argue that there is a scientific consensus that brains are biological machines and that there is no evidence of inherent impossibility of building machines at least as intelligent as us. Finally, an AI system would not need to be better than us on all fronts in order to have a catastrophic impact (even the least intelligent entity, a virus, [private] destroy humanity).
   - My current estimate places a 95% confidence interval for the time horizon of superhuman intelligence at 5 to 20 years.
   - Research on bridging the gap to superhuman capabilities is making progress, for example to improve [**system 2 abilities**](https://royalsocietypublishing.org/doi/full/10.1098/rspa.2021.0068) (reasoning, world model, causality, epistemic uncertainty estimation).
-  - I used to think… that superhuman intelligence was still far in the future, but ChatGPT and GPT-4 have considerably reduced my prediction horizon (from 20 to 100 years to 5 to 20 years)... The unexpected speed at which LLMs have acquired their current level of competence simply because of scale suggests that we could also see the rest of the gap being filled in just a few years with minor algorithmic changes. Even if someone disagrees with the temporal horizon distribution, I don’t see how one could reject that possibility.
+  - I used to think… that superhuman intelligence was still far in the future, but ChatGPT and GPT-4 have considerably reduced my prediction horizon (from 20 to 100 years to 5 to 20 years)... The unexpected speed at which LLMs have acquired their current level of competence simply because of scale suggests that we [private] also see the rest of the gap being filled in just a few years with minor algorithmic changes. Even if someone disagrees with the temporal horizon distribution, I don’t see how one [private] reject that possibility.
   - He believes it can become advanced enough to become an existential risk to humanity: [https://yoshuabengio.org/2023/05/22/how-rogue-ais-may-arise/](https://yoshuabengio.org/2023/05/22/how-rogue-ais-may-arise/)
   - Andrej Karpathy: [https://analyticsindiamag.com/andrej-karpathy-says-the-pathway-to-agi-is-through-a-language-model-operating-system/](https://analyticsindiamag.com/andrej-karpathy-says-the-pathway-to-agi-is-through-a-language-model-operating-system/)
   - “Karpathy expressed his sense of anticipation and excitement for the future of AGI, and believes that the prospect of deploying self-contained agents capable of handling high-level tasks in specialized ways holds promise for groundbreaking advancements across various fields.”
@@ -311,9 +300,9 @@ elevatedFrom:: [[AI Defence Doc]]
   - Says LLMs like LLAMA 2 has an internal map and can generalize based on it
   - Researchers were able to get a language to language dictionary from matching word embeddings of different languages
   - Believes it can supersede humans and they would be able to control robots well
-  - Next goal is to create agents that can do things autonomously, which he believes could become like a new species
+  - Next goal is to create agents that can do things autonomously, which he believes [private] become like a new species
   - Can revolutionize education by making connections and finding patterns to help students and help them stay engaged
-  - AI will help AI development go faster and could even eventually lead to no humans being involved
+  - AI will help AI development go faster and [private] even eventually lead to no humans being involved
   - Used AI to do research in climate science and published in a paper
   - OpenAI president Greg Brockman: [https://t.co/MIBFLfgdqh](https://t.co/MIBFLfgdqh)
   - Says we will all get AI superpowers and will be able to achieve things we couldn't otherwise
@@ -327,13 +316,13 @@ elevatedFrom:: [[AI Defence Doc]]
   - The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits: [https://arxiv.org/abs/2402.17764](https://arxiv.org/abs/2402.17764)
   - In this work, we introduce a 1-bit LLM variant, namely BitNet b1.58, in which every single parameter (or weight) of the LLM is ternary {-1, 0, 1}. It matches the full-precision (i.e., FP16 or BF16) Transformer LLM with the same model size and training tokens in terms of both perplexity and end-task performance, while being **significantly more cost-effective in terms of latency, memory, throughput, and energy consumption**. More profoundly, the 1.58-bit LLM defines **a new scaling law and recipe for training new generations of LLMs that are both high-performance and cost-effective**. Furthermore, it enables a new computation paradigm and opens the door for **designing specific hardware optimized for 1-bit LLMs.**
   - With Spatial Intelligence, AI Will Understand the Real World | Fei-Fei Li (Stanford professor) | TED: [https://www.youtube.com/watch?v=y8NtMZ7VGmU](https://www.youtube.com/watch?v=y8NtMZ7VGmU)
-  - AI could be smarter than people in 20 years, says 'godfather of AI` Geoffrey Hinton: [https://www.youtube.com/watch?v=bEuNgY7Olbo](https://www.youtube.com/watch?v=bEuNgY7Olbo)
-  - He also believes it could be an existential threat:
+  - AI [private] be smarter than people in 20 years, says 'godfather of AI` Geoffrey Hinton: [https://www.youtube.com/watch?v=bEuNgY7Olbo](https://www.youtube.com/watch?v=bEuNgY7Olbo)
+  - He also believes it [private] be an existential threat:
 		- [https://www.youtube.com/watch?v=Y6Sgp7y178k](https://www.youtube.com/watch?v=Y6Sgp7y178k)
 		- [https://www.youtube.com/watch?v=0oyegCeCcbA](https://www.youtube.com/watch?v=0oyegCeCcbA)
 		- [https://www.youtube.com/watch?v=sitHS6UDMJc](https://www.youtube.com/watch?v=sitHS6UDMJc)
-  - Renowned MIT professor Max Tegmark believes AI could be dangerous in the future: [https://www.youtube.com/watch?v=xUNx_PxNHrY](https://www.youtube.com/watch?v=xUNx_PxNHrY)
-  - Prominent AI skeptic Gary Marcus believes AI could be dangerous in the future: [https://www.youtube.com/watch?v=JL5OFXeXenA](https://www.youtube.com/watch?v=JL5OFXeXenA)
+  - Renowned MIT professor Max Tegmark believes AI [private] be dangerous in the future: [https://www.youtube.com/watch?v=xUNx_PxNHrY](https://www.youtube.com/watch?v=xUNx_PxNHrY)
+  - Prominent AI skeptic Gary Marcus believes AI [private] be dangerous in the future: [https://www.youtube.com/watch?v=JL5OFXeXenA](https://www.youtube.com/watch?v=JL5OFXeXenA)
   - Microsoft CTO Kevin Scott says we are riding an exponential wave in the scaling of AI compute and the end is nowhere in sight: [https://x.com/tsarnick/status/1793027868366147818](https://x.com/tsarnick/status/1793027868366147818)
   - NVIDIA drivers version 555 released, claimed to increase "AI performance" up to 3x on RTX cards: [https://blogs.nvidia.com/blog/rtx-advanced-ai-windows-pc-build/](https://blogs.nvidia.com/blog/rtx-advanced-ai-windows-pc-build/)
   - Since March 2023, GPT-4 is now 6 times faster and 12 times cheaper compared to the base model. It's even much better on all tasks with a 120K context window
@@ -344,7 +333,7 @@ elevatedFrom:: [[AI Defence Doc]]
   - ![](https://lh7-us.googleusercontent.com/prP9w5BOvHyBPKm6wJcRTslAdveETVlG1X2xUBNu54kdwg6En-1Luh1hpamgBEya3rRvRfCMlTr1wyHc0MM-TrufIMTXuHM9fnHcKhTNlnzlp2SY7-6_4EuMX0FXGxjlyUW7LzjNUPsv5FVUGEpCBN0)
   - French President Emmanuel Macron says AI is a revolution and the challenge is to "accelerate, innovate and invest:” [https://x.com/tsarnick/status/1793806071515238573?s=46](https://x.com/tsarnick/status/1793806071515238573?s=46)
   - LLMs won’t need data anymore. Synthetically trained 7B math model blows 64 shot GPT4 out of the water in math: [https://x.com/_akhaliq/status/1793864788579090917?s=46&t=lZJAHzXMXI1MgQuyBgEhgA](https://x.com/_akhaliq/status/1793864788579090917?s=46&t=lZJAHzXMXI1MgQuyBgEhgA)
-  - While this only works for things you can generate good or perfect data on, that would still be good enough for factual information like math or science. For subjective information like art, a good art generator (e.g. Midjourney or Pony Diffusion could work)
+  - While this only works for things you can generate good or perfect data on, that would still be good enough for factual information like math or science. For subjective information like art, a good art generator (e.g. Midjourney or Pony Diffusion [private] work)
   - Nvidia is still selling many GPUs
   - ![](https://lh7-us.googleusercontent.com/CUzvd5_vVyoSAKuvPYOniuYhORmV9I7vohqryixLblNLrF235JGBY9fICFZpYRPYIW0suW1UziDoPc9EkVOWByf0oBcEP3-yowm_VOff9m8XASMCxaLpfl5x-6YQk0LoSV8o6yN91KtWMbrVuCcGMR8)![](https://lh7-us.googleusercontent.com/fMXAOdkaVq1yiDQAtvW0ejg-VHK86gIjXT0UWPpu9bXhOPfcXNviLPXzGc-2nUnKP-CCl5tELiL2cpYKIH9Ny2HndVKfis8nVO7S6BqYsT5x7fgWUfm6VGsI4Xo79uQxG2Uuau1gr3gvh90BMWs2yf4)
   - Drone swarms can now fly autonomously through thick forest: [https://x.com/AISafetyMemes/status/1793899057200652654](https://x.com/AISafetyMemes/status/1793899057200652654)
@@ -362,7 +351,7 @@ elevatedFrom:: [[AI Defence Doc]]
   - AI beat humans at persuasion: [https://www.reddit.com/r/singularity/comments/1bto2zm/ai_chatbots_beat_humans_at_persuading_their/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button](https://www.reddit.com/r/singularity/comments/1bto2zm/ai_chatbots_beat_humans_at_persuading_their/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button)
   - LLM2Vec: Large Language Models Are Secretly Powerful Text Encoders: [https://arxiv.org/abs/2404.05961](https://arxiv.org/abs/2404.05961)
   - Used as a tutor to help someone quintuple income [https://www.reddit.com/r/ChatGPT/comments/1cpe3sk/chatgpt_just_just_made_me_get_a_job_paying_5x_more/](https://www.reddit.com/r/ChatGPT/comments/1cpe3sk/chatgpt_just_just_made_me_get_a_job_paying_5x_more/)
-  - “Here we show in two experimental studies that novice and experienced teachers could not identify texts generated by ChatGPT among student-written texts.” [https://t.co/4x7D45BOcv](https://t.co/4x7D45BOcv)
+  - “Here we show in two experimental studies that novice and experienced teachers [private] not identify texts generated by ChatGPT among student-written texts.” [https://t.co/4x7D45BOcv](https://t.co/4x7D45BOcv)
   - GPT-4 scored higher than 100% of psychologists on a test of social intelligence: [https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1353022/full](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1353022/full)
   - We managed to fold, using #AlphaFold, in one year all 200 million proteins known to science: [https://twitter.com/GoogleDeepMind/status/1786342523234861254](https://twitter.com/GoogleDeepMind/status/1786342523234861254)
   - New research shows AI-discovered drug molecules have 80-90% success rates in Phase I clinical trials, compared to the historical industry average of 40-65%. [https://www.sciencedirect.com/science/article/pii/S135964462400134X](https://www.sciencedirect.com/science/article/pii/S135964462400134X)
@@ -373,14 +362,14 @@ elevatedFrom:: [[AI Defence Doc]]
   - Meta's Cicero research [appeared](https://www.science.org/doi/10.1126/science.ade9097) in the journal Science under the title, "Human-level play in the game of Diplomacy by combining language models with strategic reasoning."
   - CICERO uses relationships with other players to keep its ally, Adam, in check.
   - When playing 40 games against human players, CICERO achieved more than double the average score of the human players and ranked in the top 10% of participants who played more than one game.
-  - The chatbots also learned to negotiate in ways that seem very human. They would, for instance, pretend to be very interested in one specific item – so that they could later pretend they were making a big sacrifice in giving it up, according to a paper published by FAIR. [https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html](https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html)
+  - The chatbots also learned to negotiate in ways that seem very human. They would, for instance, pretend to be very interested in one specific item – so that they [private] later pretend they were making a big sacrifice in giving it up, according to a paper published by FAIR. [https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html](https://www.independent.co.uk/life-style/facebook-artificial-intelligence-ai-chatbot-new-language-research-openai-google-a7869706.html)
   - Woman with disabilities writes book with it [https://www.wired.com/story/the-us-copyright-office-loosens-up-a-little-on-ai/](https://www.wired.com/story/the-us-copyright-office-loosens-up-a-little-on-ai/)
   - ![](https://lh7-us.googleusercontent.com/y2pRuzhW1fUkD_SkNivOwwRNHW9Ki8ZZ590gZb4jLWmOlxm5MHfzAEbSt-mgMozVaTNhP3jhaeUh0iQlLwQWVY1sA3d-_Ma3rMcjDmXCmkEZzVlx0l97OV48b9sA13UnzghZK6MhIOKW8XisYHOAiqc)
   - [https://qz.com/ai-political-party-face-recognition-1851433898?darkschemeovr=1](https://qz.com/ai-political-party-face-recognition-1851433898?darkschemeovr=1)
   - [Claude 3 Builds website]([https://www.reddit.com/r/OpenAI/comments/1bm305k/what_the_hell_claud_3_opus_is_a_straight/?darkschemeovr=1](https://www.reddit.com/r/OpenAI/comments/1bm305k/what_the_hell_claud_3_opus_is_a_straight/?darkschemeovr=1))
   - More proof: https://www.reddit.com/r/LocalLLaMA/comments/1cmk7dw/comment/l31tguw/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button
   - Beat Turing test: [https://www.washingtonpost.com/technology/2022/06/17/google-ai-lamda-turing-test/?darkschemeovr=1](https://www.washingtonpost.com/technology/2022/06/17/google-ai-lamda-turing-test/?darkschemeovr=1)
-  - [Claude 3 could tell it was being tested]([**https://arstechnica.com/information-technology/2024/03/claude-3-seems-to-detect-when-it-is-being-tested-sparking-ai-buzz-online/**](https://arstechnica.com/information-technology/2024/03/claude-3-seems-to-detect-when-it-is-being-tested-sparking-ai-buzz-online/)**)**
+  - [Claude 3 [private] tell it was being tested]([**https://arstechnica.com/information-technology/2024/03/claude-3-seems-to-detect-when-it-is-being-tested-sparking-ai-buzz-online/**](https://arstechnica.com/information-technology/2024/03/claude-3-seems-to-detect-when-it-is-being-tested-sparking-ai-buzz-online/)**)**
   - Image Consistency: [https://arxiv.org/pdf/2404.18919](https://arxiv.org/pdf/2404.18919)
   - Midjourney character consistency: https://docs.midjourney.com/docs/character-reference
   - ‘I will never go back’: Ontario family doctor says new AI notetaking saved her job: https://globalnews.ca/news/10463535/ontario-family-doctor-artificial-intelligence-notes/
@@ -426,24 +415,24 @@ elevatedFrom:: [[AI Defence Doc]]
   - [AI-screened eye pics diagnose childhood autism with 100% accuracy](https://www.news-medical.net/news/20231219/AI-models-using-retinal-images-achieve-perfect-accuracy-in-diagnosing-autism.aspx): https://www.news-medical.net/news/20231219/AI-models-using-retinal-images-achieve-perfect-accuracy-in-diagnosing-autism.aspx
   - ![](https://lh7-us.googleusercontent.com/wiHN-it9GwZeBk8gH9seVSuvFYeZ4JBe4UieyVDYFlyyk_Oug5GL2QOOj3Pp9f20k2togJh4L4VIs-nyKvmATL0MfLhI6U74ARLLa0HeRpKHqK6c9ccL0Y3QY1i5vgfwef4UzkEzEC48pFCWuv5KOEs)
   - AI in space: Karpathy suggests AI chatbots as interstellar messengers to alien civilizations: [https://arstechnica.com/information-technology/2024/05/ai-in-space-karpathy-suggests-ai-chatbots-as-interstellar-messengers-to-alien-civilizations](https://arstechnica.com/information-technology/2024/05/ai-in-space-karpathy-suggests-ai-chatbots-as-interstellar-messengers-to-alien-civilizations)
-  - DeepMind AI's new way to sort objects could speed up global computing: [https://www.newscientist.com/article/2376512-deepmind-ais-new-way-to-sort-objects-could-speed-up-global-computing/](https://www.newscientist.com/article/2376512-deepmind-ais-new-way-to-sort-objects-could-speed-up-global-computing/)
+  - DeepMind AI's new way to sort objects [private] speed up global computing: [https://www.newscientist.com/article/2376512-deepmind-ais-new-way-to-sort-objects-could-speed-up-global-computing/](https://www.newscientist.com/article/2376512-deepmind-ais-new-way-to-sort-objects-could-speed-up-global-computing/)
   - DeepMind unveils first AI to discover faster matrix multiplication algorithms: [https://venturebeat.com/ai/deepmind-unveils-first-ai-to-discover-faster-matrix-multiplication-algorithms/](https://venturebeat.com/ai/deepmind-unveils-first-ai-to-discover-faster-matrix-multiplication-algorithms/)
   - Andrej Karpathy (renowned AI researcher) is building an operating system using transformers: [https://analyticsindiamag.com/andrej-karpathy-says-the-pathway-to-agi-is-through-a-language-model-operating-system/](https://analyticsindiamag.com/andrej-karpathy-says-the-pathway-to-agi-is-through-a-language-model-operating-system/)
   - Excellent music recommendations from ChatGPT: [https://www.reddit.com/r/ChatGPT/s/MgdUj9ymQF](https://www.reddit.com/r/ChatGPT/s/MgdUj9ymQF)
   - Model weights be downloaded and transferred, so anything one model does well can be replicated everywhere
   - E.g. one model can connect to a model that’s very good at coding (eg AlphaCode 2) and another model that’s good at reasoning and call them as needed depending on the current needs similar to how the brain has different sections responsible for different tasks
-  - Learning to use AI can increase pay by 25%: [https://www.cnn.com/2024/05/21/business/ai-jobs-higher-wages-productivity/index.html](https://www.cnn.com/2024/05/21/business/ai-jobs-higher-wages-productivity/index.html)
+  - Learning to use AI can increase pay by 25%: [https://www.cnn.com/2024/05/21/business/ai-jobs-higher-wages-productivity/[private].html](https://www.cnn.com/2024/05/21/business/ai-jobs-higher-wages-productivity/[private].html)
   - Double-blind study with Patient Actors and Doctors, who didn't know if they were communicating with a human, or an AI. Best performers were AI: [https://m.youtube.com/watch?v=jQwwLEZ2Hz8](https://m.youtube.com/watch?v=jQwwLEZ2Hz8)
   - **Human doctors + AI did worse, than AI by itself.** The mere involvement of a human reduced the accuracy of the diagnosis.
   - **AI was consistently rated to have better bedside manner than human doctors**. 'Empathy' being the one trait humans tout in contrast to AI.
-  - Autonomous AI Robot Creates a Shock-Absorbing Shape No Human Ever Could: [https://scitechdaily.com/crushing-it-autonomous-ai-robot-creates-a-shock-absorbing-shape-no-human-ever-could/](https://scitechdaily.com/crushing-it-autonomous-ai-robot-creates-a-shock-absorbing-shape-no-human-ever-could/)
+  - Autonomous AI Robot Creates a Shock-Absorbing Shape No Human Ever [private]: [https://scitechdaily.com/crushing-it-autonomous-ai-robot-creates-a-shock-absorbing-shape-no-human-ever-could/](https://scitechdaily.com/crushing-it-autonomous-ai-robot-creates-a-shock-absorbing-shape-no-human-ever-could/)
   - Used for animation: [https://www.reddit.com/r/StableDiffusion/s/AtaCsdxvBY](https://www.reddit.com/r/StableDiffusion/s/AtaCsdxvBY)
   - [https://www.reddit.com/r/StableDiffusion/s/9QupjshrfE](https://www.reddit.com/r/StableDiffusion/s/9QupjshrfE)
   - AI tools now allow to retexture specific areas of 3D models: [https://www.reddit.com/r/artificial/s/SfAcl7dTwS](https://www.reddit.com/r/artificial/s/SfAcl7dTwS)
   - Medical Text Written By Artificial Intelligence Outperforms Doctors: [https://www.forbes.com/sites/williamhaseltine/2023/12/15/medical-text-written-by-artificial-intelligence-outperforms-doctors/](https://www.forbes.com/sites/williamhaseltine/2023/12/15/medical-text-written-by-artificial-intelligence-outperforms-doctors/)
   - Jensen Huang says designing computer chips and writing and debugging software can no longer be done without AI and he wants to turn NVIDIA into one giant AI: [https://x.com/tsarnick/status/1793076745543073922](https://x.com/tsarnick/status/1793076745543073922)
   - LLMs won’t need data anymore. Synthetically trained 7B math model blows 64 shot GPT4 out of the water in math: [https://x.com/_akhaliq/status/1793864788579090917?s=46&t=lZJAHzXMXI1MgQuyBgEhgA](https://x.com/_akhaliq/status/1793864788579090917?s=46&t=lZJAHzXMXI1MgQuyBgEhgA)
-  - While this only works for things you can generate good or perfect data on, that would still be good enough for factual information like math or science. For subjective information like art, a good art generator (e.g. Midjourney or Pony Diffusion could work)
+  - While this only works for things you can generate good or perfect data on, that would still be good enough for factual information like math or science. For subjective information like art, a good art generator (e.g. Midjourney or Pony Diffusion [private] work)
   - Multimodal GPT-4o Interpreting Historical Documents (Letter Concerning Lady's Amber Collection, 1881): [https://www.reddit.com/r/singularity/s/897BxdUtQJ](https://www.reddit.com/r/singularity/s/897BxdUtQJ)
   - Can act as a text-based game emulator where you can make any changes you want (e.g. Pokemon with guns where you can steal Pokemon): [https://x.com/VictorTaelin/status/1790183986096116189](https://x.com/VictorTaelin/status/1790183986096116189)
   - GPT-4 is consistently rated as higher in apparent empathy than humans in multiple controlled studies: [https://x.com/emollick/status/1794462493865329048](https://x.com/emollick/status/1794462493865329048)
@@ -455,20 +444,20 @@ elevatedFrom:: [[AI Defence Doc]]
   |
   - **Bank of America CEO: AI helping cut call times, branch visits: **[**https://www.linkedin.com/posts/jainik_bank-of-america-ceo-ai-helping-cut-call-activity-7097365125220741120-DkJg?trk=public_profile_like_view**](https://www.linkedin.com/posts/jainik_bank-of-america-ceo-ai-helping-cut-call-activity-7097365125220741120-DkJg?trk=public_profile_like_view)
   - AI virtual financial assistant has logged 1.5B customer interactions since 2018 launch
-  - **Duolingo lays off staff as language learning app shifts toward AI**: [https://cnn.com/2024/01/09/tech/duolingo-layoffs-due-to-ai/index.html](https://cnn.com/2024/01/09/tech/duolingo-layoffs-due-to-ai/index.html)
+  - **Duolingo lays off staff as language learning app shifts toward AI**: [https://cnn.com/2024/01/09/tech/duolingo-layoffs-due-to-ai/[private].html](https://cnn.com/2024/01/09/tech/duolingo-layoffs-due-to-ai/[private].html)
   - **Ibanking jobs are being drastically reduced with AI**: [https://archive.is/jrHmp](https://archive.is/jrHmp)
-  - the consulting giant Accenture estimated that A.I. could replace or supplement nearly three-quarters of bank employees’ working hours across the industry.
+  - the consulting giant Accenture estimated that A.I. [private] replace or supplement nearly three-quarters of bank employees’ working hours across the industry.
   - This week, JPMorgan Chase’s chief executive, Jamie Dimon, [wrote in his annual shareholder letter](https://archive.is/o/jrHmp/https://www.nytimes.com/2024/04/08/business/dealbook/jamie-dimon-economy-inflation-letter.html) that A.I. “may reduce certain job categories or roles,” and labeled the technology top among the most important issues facing the nation’s largest bank. Mr. Dimon compared the consequences to those of “the printing press, the steam engine, electricity, computing and the internet, among others.”
   - Deutsche Bank is uploading reams of financial data into proprietary A.I. tools that can instanteously answer questions about publicly traded companies and create summary documents on complementary financial moves that might benefit a client — and earn the bank a profit.
-  - Mr. Horine said he could use A.I. to identify clients that might be ripe for a bond offering, the sort of bread-and-butter transaction for which investment bankers charge clients millions of dollars.
+  - Mr. Horine said he [private] use A.I. to identify clients that might be ripe for a bond offering, the sort of bread-and-butter transaction for which investment bankers charge clients millions of dollars.
   - Goldman Sachs has assigned 1,000 developers to test A.I., including software that can turn what it terms “corpus” information — or enormous amounts of text and data collected from thousands of sources — into page presentations that mimic the bank’s typeface, logo, styles and charts. One firm executive privately called it a “Kitty Hawk moment,” or one that would change the course of the firm’s future.
-  - That isn’t limited to investment banking; BNY Mellon’s chief executive said on a recent earnings call that his research analysts could now wake up two hours later than usual, because A.I. can read overnight economic data and create a written draft of analysis to work from.
+  - That isn’t limited to investment banking; BNY Mellon’s chief executive said on a recent earnings call that his research analysts [private] now wake up two hours later than usual, because A.I. can read overnight economic data and create a written draft of analysis to work from.
   - A senior Morgan Stanley executive told employees in a January private meeting, a video of which was viewed by The New York Times, that he would “get A.I. into every area of what we do,” including wealth management, where the bank employs thousands of people to determine the proper mix of investments for well-off savers.
   - B[ank of America’s chief executive said last year](https://archive.is/o/jrHmp/https://www.foxbusiness.com/markets/bank-of-america-ceo-ai-helping-cut-call-times-branch-visits) that the technology was already enabling the firm to hire less.
   - Among Goldman Sachs’s sprawling A.I. efforts is a tool under development that can transfigure a lengthy PowerPoint document into a formal “S-1,” the legalese-packed document for initial public offerings required for all listed companies. The software takes less than a second to complete the job.
   - How will Language Modelers like ChatGPT Affect Occupations and Industries? https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4375268
   - We find that the top occupations exposed to language modeling include telemarketers and a variety of post-secondary teachers such as English language and literature, foreign language and literature, and history teachers. We find the top industries exposed to advances in language modeling are legal services and securities, commodities, and investments.
-  - **Big banks on Wall Street could pull back hiring plans as they lean more heavily on AI, cutting analyst hiring by two-thirds**: [https://www.businessinsider.com/ai-job-cuts-finance-wall-street-investment-banking-analysts-hiring-2024-4](https://www.businessinsider.com/ai-job-cuts-finance-wall-street-investment-banking-analysts-hiring-2024-4)
+  - **Big banks on Wall Street [private] pull back hiring plans as they lean more heavily on AI, cutting analyst hiring by two-thirds**: [https://www.businessinsider.com/ai-job-cuts-finance-wall-street-investment-banking-analysts-hiring-2024-4](https://www.businessinsider.com/ai-job-cuts-finance-wall-street-investment-banking-analysts-hiring-2024-4)
   - **Klarna SUCCESSFULLY replaces call centers with AI **[https://www.reddit.com/r/klarna/comments/1c1fwr3/klarna_ceo_on_using_ai_to_replace_700_workers/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button](https://www.reddit.com/r/klarna/comments/1c1fwr3/klarna_ceo_on_using_ai_to_replace_700_workers/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button)
   - Klarnas AI assistant, powered by @OpenAI , has in its first 4 weeks handled 2.3 million customer service chats and the data and insights are staggering:
   - Handles 2/3 rd of our customer service enquires
@@ -493,7 +482,7 @@ elevatedFrom:: [[AI Defence Doc]]
   - [https://www.aamc.org/news/will-artificial-intelligence-replace-doctors?darkschemeovr=1](https://www.aamc.org/news/will-artificial-intelligence-replace-doctors?darkschemeovr=1)
   - Large action model can interact with UIs and act independently [https://github.com/a-real-ai/pywinassistant](https://github.com/a-real-ai/pywinassistant)
   - AI doing sales calls very well: [https://www.reddit.com/r/Futurology/comments/1ceeq17/comment/l1k8b7f/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button](https://www.reddit.com/r/Futurology/comments/1ceeq17/comment/l1k8b7f/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button)
-  - Generative AI could soon decimate the call center industry, says CEO | There could be "minimal" need for call centres within a year: [https://www.techspot.com/news/102749-generative-ai-could-soon-decimate-call-center-industry.html](https://www.techspot.com/news/102749-generative-ai-could-soon-decimate-call-center-industry.html)
+  - Generative AI [private] soon decimate the call center industry, says CEO | There [private] be "minimal" need for call centres within a year: [https://www.techspot.com/news/102749-generative-ai-could-soon-decimate-call-center-industry.html](https://www.techspot.com/news/102749-generative-ai-could-soon-decimate-call-center-industry.html)
   - AI for UI design: [https://uizard.io/?darkschemeovr=1](https://uizard.io/?darkschemeovr=1)
   - [[First Results from Med-Gemini (the successor to Med-Palm, a medically fine tuned LLM). "More accurate multimodal conversations about medical images🩻, surgical videos📽️, genomics🧬, ultra-long health records📚, ECGs🫀 & more with state-of-art performance across multiple benchmarks"]([https://twitter.com/alan_karthi/status/1785117444383588823](https://twitter.com/alan_karthi/status/1785117444383588823) )
   ![](https://lh7-us.googleusercontent.com/Q525t21_GlbjnHw8eq6Ff5S2ylys21L1qUtR52CNz4JyHHwLnB9VUuVIxTO_nuLvAmwReLLyBFAt_gkQfHsMpSV6mRCSBtWejKRVGP31cQmvQkXj925ZkLcG9MZ2pVH1Me2kkzK0pVQ5hX1N2QEwPWo)
@@ -533,8 +522,8 @@ elevatedFrom:: [[AI Defence Doc]]
   - AI analyst says plumbers and electricians' jobs are safe, but AI models like GPT-4o 'will impact any job that has data' https://www.yahoo.com/tech/ai-models-gpt-4o-could-102901684.html
   - [China’s ‘AI Ship Designer’ Works At Unprecedented Speed; Performed A Year’s Work Only In 24 Hours!](https://www.eurasiantimes.com/chinas-ai-ship-designer-works-at-unprecedented-speed-performed/) [https://www.eurasiantimes.com/chinas-ai-ship-designer-works-at-unprecedented-speed-performed/](https://www.eurasiantimes.com/chinas-ai-ship-designer-works-at-unprecedented-speed-performed/)
   - **McKinsey report on employment displacement due to AI: https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america**
-  - **By 2030, activities that account for up to 30 percent of hours currently worked across the US economy could be automated—a trend accelerated by generative AI.** However, we see generative AI enhancing the way STEM, creative, and business and legal professionals work rather than eliminating a significant number of jobs outright. Automation’s biggest effects are likely to hit other job categories. Office support, customer service, and food service employment could continue to decline.
-  - **An additional 12 million occupational transitions may be needed by 2030.** As people leave shrinking occupations, the economy could reweight toward higher-wage jobs. Workers in lower-wage jobs are up to 14 times more likely to need to change occupations than those in highest-wage positions, and most will need additional skills to do so successfully. Women are 1.5 times more likely to need to move into new occupations than men.
+  - **By 2030, activities that account for up to 30 percent of hours currently worked across the US economy [private] be automated—a trend accelerated by generative AI.** However, we see generative AI enhancing the way STEM, creative, and business and legal professionals work rather than eliminating a significant number of jobs outright. Automation’s biggest effects are likely to hit other job categories. Office support, customer service, and food service employment [private] continue to decline.
+  - **An additional 12 million occupational transitions may be needed by 2030.** As people leave shrinking occupations, the economy [private] reweight toward higher-wage jobs. Workers in lower-wage jobs are up to 14 times more likely to need to change occupations than those in highest-wage positions, and most will need additional skills to do so successfully. Women are 1.5 times more likely to need to move into new occupations than men.
   - Graphic designer loses job to AI: [https://m.youtube.com/watch?si=MH46UnqxUd20xw7C&v=U2vq9LUbDGs&feature=youtu.be](https://m.youtube.com/watch?si=MH46UnqxUd20xw7C&v=U2vq9LUbDGs&feature=youtu.be)
   - Microsoft’s new Copilot AI agents act like virtual employees to automate tasks: [https://www.theverge.com/2024/5/21/24158030/microsoft-copilot-ai-automation-agents](https://www.theverge.com/2024/5/21/24158030/microsoft-copilot-ai-automation-agents)
   - Google might already be replacing some human workers with AI: [https://www.techradar.com/pro/google-might-already-be-replacing-some-human-workers-with-ai](https://www.techradar.com/pro/google-might-already-be-replacing-some-human-workers-with-ai)
@@ -606,7 +595,7 @@ elevatedFrom:: [[AI Defence Doc]]
   - AI art is very similar to photography. Both can be as simple as clicking a button or be much more complex. For example, creating with Stable Diffusion can involve using ControlNet, IPAdapter, animation extensions, very complicated ComfyUI workflows, and much more to get the result you want. Additionally, both involve a machine doing most of the actual creation process, where the camera/AI creates the images, while the artist guides it on what the end result should be and completes post-processing work.
   - **Incredible use of Stable Diffusion: **[**https://www.reddit.com/r/StableDiffusion/s/f46LKOMj7q**](https://www.reddit.com/r/StableDiffusion/s/f46LKOMj7q)
   - AI video wins Pink Floyd music video competition: [https://ew.com/ai-wins-pink-floyd-s-dark-side-of-the-moon-video-competition-8628712](https://ew.com/ai-wins-pink-floyd-s-dark-side-of-the-moon-video-competition-8628712)
-  - [AI image won Colorado state fair https://www.cnn.com/2022/09/03/tech/ai-art-fair-winner-controversy/index.html](https://www.cnn.com/2022/09/03/tech/ai-art-fair-winner-controversy/index.html)
+  - [AI image won Colorado state fair https://www.cnn.com/2022/09/03/tech/ai-art-fair-winner-controversy/[private].html](https://www.cnn.com/2022/09/03/tech/ai-art-fair-winner-controversy/[private].html)
   - Cal Duran, an artist and art teacher who was one of the judges for competition, said that while Allen’s piece included a mention of Midjourney, he didn’t realize that it was generated by AI when judging it. Still, he sticks by his decision to award it first place in its category, he said, calling it a “beautiful piece”.
   - “I think there’s a lot involved in this piece and I think the AI technology may give more opportunities to people who may not find themselves artists in the conventional way,” he said.
   - AI image won in the Sony World Photography Awards: [https://www.scientificamerican.com/article/how-my-ai-image-won-a-major-photography-competition/](https://www.scientificamerican.com/article/how-my-ai-image-won-a-major-photography-competition/)
@@ -654,7 +643,7 @@ elevatedFrom:: [[AI Defence Doc]]
   - The remix has a 3.88/5 with 612 reviews on RYM: [https://rateyourmusic.com/release/single/metro-boomin/bbl-drizzy-bpm-150_mp3/](https://rateyourmusic.com/release/single/metro-boomin/bbl-drizzy-bpm-150_mp3/)
   - Covered by Tim Henson from Polyphia: [BBL Drizzy](https://www.youtube.com/watch?v=Oly6ayyckZI&t=6s)
   - [AI music gains thousands of listens on Spotify https://www.reddit.com/r/ArtificialInteligence/comments/1ciaf12/aigenerated_songs_rack_up_thousands_of_listens_on/](https://www.reddit.com/r/ArtificialInteligence/comments/1ciaf12/aigenerated_songs_rack_up_thousands_of_listens_on/)
-  - [AI image won Colorado state fair](https://www.cnn.com/2022/09/03/tech/ai-art-fair-winner-controversy/index.html)https://www.cnn.com/2022/09/03/tech/ai-art-fair-winner-controversy/index.html
+  - [AI image won Colorado state fair](https://www.cnn.com/2022/09/03/tech/ai-art-fair-winner-controversy/[private].html)https://www.cnn.com/2022/09/03/tech/ai-art-fair-winner-controversy/[private].html
   - Cal Duran, an artist and art teacher who was one of the judges for competition, said that while Allen’s piece included a mention of Midjourney, he didn’t realize that it was generated by AI when judging it. Still, he sticks by his decision to award it first place in its category, he said, calling it a “beautiful piece”.
   - “I think there’s a lot involved in this piece and I think the AI technology may give more opportunities to people who may not find themselves artists in the conventional way,” he said.
   - [https://twitter.com/WilliamShatner/status/1782216252808745224](https://twitter.com/WilliamShatner/status/1782216252808745224)

@@ -1,36 +1,121 @@
----
-public: true
----
-
-# Data Distribution Service
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-distribution-service", "@type":"Page", "title":"Data Distribution Service", "vc:slug":"data-distribution-service", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-distribution-service",
+  "@type": "Page",
+  "title": "Data Distribution Service",
+  "vc:slug": "data-distribution-service",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:data-distribution-service",
-  "@type":"Class",
-  "label":"Data Distribution Service",
-  "definition":"The Data Distribution Service is a middleware standard for real-time, data-centric publish-subscribe communication between distributed system components. It defines a global data space in which publishers and subscribers exchange typed data samples without direct knowledge of one another, governed by configurable quality-of-service policies for reliability, latency, and durability. It is widely used in robotics, autonomous vehicles, and other systems requiring deterministic machine-to-machine messaging.",
-  "domain":"robotics",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:middleware","label":"Middleware"}],
-  "relations":{
-    "supports":[{"@id":"urn:ngm:class:real-time-communication","label":"Real-Time Communication"},{"@id":"urn:ngm:class:robot-operating-system","label":"Robot Operating System"},{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "uses":[{"@id":"urn:ngm:class:quality-of-service","label":"Quality of Service"},{"@id":"urn:ngm:class:message-broker","label":"Message Broker"}],
-    "requires":[{"@id":"urn:ngm:class:real-time-systems","label":"Real-Time Systems"},{"@id":"urn:ngm:class:quality-of-service","label":"Quality of Service"}],
-    "enables":[{"@id":"urn:ngm:class:autonomous-vehicle","label":"Autonomous Vehicle"},{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
-    "implements":[{"@id":"urn:ngm:class:middleware","label":"Middleware"}],
-    "relatedTo":[{"@id":"urn:ngm:class:ros","label":"ROS"},{"@id":"urn:ngm:class:robot-control","label":"Robot Control"},{"@id":"urn:ngm:class:sensor-fusion","label":"Sensor Fusion"}],
-    "partOf":[{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:robotics","label":"Robotics"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-distribution-service",
+  "@type": "Class",
+  "label": "Data Distribution Service",
+  "definition": "The Data Distribution Service is a middleware standard for real-time, data-centric publish-subscribe communication between distributed system components. It defines a global data space in which publishers and subscribers exchange typed data samples without direct knowledge of one another, governed by configurable quality-of-service policies for reliability, latency, and durability. It is widely used in robotics, autonomous vehicles, and other systems requiring deterministic machine-to-machine messaging.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:middleware",
+      "label": "Middleware"
+    }
+  ],
+  "relations": {
+    "supports": [
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ros",
+        "label": "ROS"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:dds-middleware","label":"DDS Middleware"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:dds-middleware",
+      "label": "DDS Middleware"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

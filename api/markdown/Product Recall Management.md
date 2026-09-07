@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Product Recall Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,20 +155,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
-      {"@id": "urn:ngm:class:food-safety-blockchain", "label": "Food Safety Blockchain"}
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:food-safety-blockchain",
+        "label": "Food Safety Blockchain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ]
   },
   "quality": 0.4,
@@ -184,162 +203,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:product-recall-management:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5bbbc580423079f25fb297b4bdeb9ea5027badf2004c1225889a342e72f62559"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Automotive Safety]]",
-      "resolved": "urn:visionflow:linked:automotive-safety",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0188-self-sovereign-identity]]",
-      "resolved": "urn:visionflow:linked:bc-0188-self-sovereign-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0202-zero-knowledge-proofs]]",
-      "resolved": "urn:visionflow:linked:bc-0202-zero-knowledge-proofs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0319-micropayments]]",
-      "resolved": "urn:visionflow:linked:bc-0319-micropayments",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0440-blockchain-interoperability]]",
-      "resolved": "urn:visionflow:linked:bc-0440-blockchain-interoperability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0441-supply-chain-traceability]]",
-      "resolved": "urn:visionflow:linked:bc-0441-supply-chain-traceability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0442-certification-and-compliance]]",
-      "resolved": "urn:visionflow:linked:bc-0442-certification-and-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0445-conflict-mineral-tracking]]",
-      "resolved": "urn:visionflow:linked:bc-0445-conflict-mineral-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0446-food-traceability]]",
-      "resolved": "urn:visionflow:linked:bc-0446-food-traceability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0447-pharmaceutical-traceability]]",
-      "resolved": "urn:visionflow:linked:bc-0447-pharmaceutical-traceability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0448-luxury-goods-authentication]]",
-      "resolved": "urn:visionflow:linked:bc-0448-luxury-goods-authentication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0449-timber-and-forest-products]]",
-      "resolved": "urn:visionflow:linked:bc-0449-timber-and-forest-products",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0453-ethical-sourcing]]",
-      "resolved": "urn:visionflow:linked:bc-0453-ethical-sourcing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0454-waste-management]]",
-      "resolved": "urn:visionflow:linked:bc-0454-waste-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Carrefour]]",
-      "resolved": "urn:visionflow:linked:carrefour",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DSCSA]]",
-      "resolved": "urn:visionflow:linked:dscsa",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FDA Regulations]]",
-      "resolved": "urn:visionflow:linked:fda-regulations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Food Safety]]",
-      "resolved": "urn:visionflow:linked:food-safety",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FSMA Section 204]]",
-      "resolved": "urn:visionflow:linked:fsma-section-204",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MediLedger]]",
-      "resolved": "urn:visionflow:linked:medi-ledger",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pharmaceutical Safety]]",
-      "resolved": "urn:visionflow:linked:pharmaceutical-safety",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Product Liability]]",
-      "resolved": "urn:visionflow:linked:product-liability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Quality Management]]",
-      "resolved": "urn:visionflow:linked:quality-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Supply Chain Risk Management]]",
-      "resolved": "urn:visionflow:linked:supply-chain-risk-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Walmart]]",
-      "resolved": "urn:visionflow:linked:walmart",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consumer Protection]]",
-      "resolved": "urn:visionflow:owl:class:consumer-protection",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70-85% whilst accelerating contamination source identification from days to seconds, deployed at scale by [[Walmart]] (6 days → 2.2 seconds mango tracing), [[Carrefour]], [[MediLedger]], and automotive consortia for food safety, pharmaceuticals, and vehicle component recalls.

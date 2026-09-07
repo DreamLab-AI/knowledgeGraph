@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Risk Based Regulation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,44 +20,106 @@ public: true
   "definition": "Risk-Based Regulation is a regulatory methodology that calibrates the intensity of oversight, compliance requirements, and enforcement action to the assessed level of risk posed by regulated entities or activities. Rather than applying uniform rules to all actors, risk-based approaches tier obligations by factors such as likelihood of harm, severity of potential impact, and the capacity of regulated parties to manage risk. It is the foundational approach of the EU AI Act, financial services regulation, and many modern safety frameworks.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:policy", "label": "Policy"},
-      {"@id": "urn:ngm:class:proportionality-principle", "label": "Proportionality Principle"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "@id": "urn:ngm:class:proportionality-principle",
+        "label": "Proportionality Principle"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-automation", "label": "Compliance Automation"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:innovation-policy", "label": "Innovation Policy"}
+      {
+        "@id": "urn:ngm:class:compliance-automation",
+        "label": "Compliance Automation"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:innovation-policy",
+        "label": "Innovation Policy"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:risk-classification", "label": "Risk Classification"},
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"}
+      {
+        "@id": "urn:ngm:class:risk-classification",
+        "label": "Risk Classification"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:impact-assessment", "label": "Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:prescriptive-regulation", "label": "Prescriptive Regulation"},
-      {"@id": "urn:ngm:class:principles-based-regulation", "label": "Principles-Based Regulation"}
+      {
+        "@id": "urn:ngm:class:prescriptive-regulation",
+        "label": "Prescriptive Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:principles-based-regulation",
+        "label": "Principles-Based Regulation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-31000", "label": "ISO 31000"}
+      {
+        "@id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ]
   },
   "quality": 0.62,

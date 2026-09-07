@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Fundamental Rights Impact Assessment
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -134,7 +128,7 @@ public: true
 - It bridges to the [[Data Protection Impact Assessment]] while widening scope beyond privacy.
 - It requires [[Risk Assessment]] and [[Stakeholder Engagement]].
 - ### Overview
-- The assessment examines how a system or policy could affect rights such as dignity, equality, privacy, and expression.
+- The assessment examines how a system or policy [private] affect rights such as dignity, equality, privacy, and expression.
 - It is performed before deployment and revisited as context changes, documenting affected groups and potential harms.
 - It defines mitigations, oversight arrangements, and monitoring to manage residual risk.
 - It has become a recognised governance step for high-risk AI systems.

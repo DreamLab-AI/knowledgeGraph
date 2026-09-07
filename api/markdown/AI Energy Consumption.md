@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Energy Consumption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-energy-consumption",
   "title": "AI Energy Consumption",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Human vs. Machine Intelligence", "Sam Altman"],
+  "vc:outboundWikilinks": [
+    "Human vs. Machine Intelligence",
+    "Sam Altman"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:energy-consumption", "label": "Energy Consumption"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:energy-consumption",
+      "label": "Energy Consumption"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:energy-consumption", "label": "Energy Consumption"}, {"@id": "urn:ngm:class:ai-model", "label": "AI Model"}, {"@id": "urn:ngm:class:model-training", "label": "Model Training"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

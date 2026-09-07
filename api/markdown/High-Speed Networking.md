@@ -1,11 +1,14 @@
----
-public: true
----
-
-# High-Speed Networking
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:high-speed-networking", "@type": "Page", "title": "High-Speed Networking", "vc:slug": "high-speed-networking", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:high-speed-networking",
+  "@type": "Page",
+  "title": "High-Speed Networking",
+  "vc:slug": "high-speed-networking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

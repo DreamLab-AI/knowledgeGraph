@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monitoring Dashboard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,42 +184,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:monitoring-dashboard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6f318ab576601f68becf3ec3735ed47e157b3966ae2edd910795a6f84bef1fb2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Operational Intelligence]]",
-      "resolved": "urn:visionflow:linked:operational-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Visualisation]]",
-      "resolved": "urn:visionflow:owl:class:data-visualisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Visual interfaces that aggregate and display real-time metrics, logs, and traces from systems and applications, enabling observability, performance tracking, incident detection, and data-driven decision making through unified visualisation platforms.

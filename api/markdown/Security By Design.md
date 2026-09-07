@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Security By Design
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

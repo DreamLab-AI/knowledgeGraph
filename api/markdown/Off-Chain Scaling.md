@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Off-Chain Scaling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Off-chain scaling is a class of blockchain scalability techniques that move transaction execution and state off the main chain while retaining its security as a settlement and dispute-resolution layer. By processing many interactions outside the base layer and committing only summaries or final balances on-chain, it greatly increases throughput and lowers fees. Examples include payment and state channels and various layer-2 constructions.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"},
-      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"}
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
     ]
   },
   "quality": 0.72

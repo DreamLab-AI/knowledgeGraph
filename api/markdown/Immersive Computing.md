@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersive Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,4 +180,3 @@ public: true
   - Immersive computing systems integrate multiple subsystems: display hardware (LCD/OLED panels with high refresh rates, micro-OLED for passthrough AR), six-DoF inside-out tracking using SLAM algorithms on embedded cameras, real-time physics and rendering engines (Unity, Unreal, WebXR), spatial audio for positional sound cues, and increasingly haptic controllers or gloves for tactile feedback. Latency below 20 ms (motion-to-photon) is required to prevent motion sickness, demanding tight co-design between GPU, display, and tracking pipeline.
   - Applications span training simulations (surgical, military, industrial), architectural and product visualisation, remote collaboration (virtual meeting rooms), immersive entertainment and gaming, education, and therapeutic uses (exposure therapy for phobias, pain management). Enterprise adoption has accelerated in manufacturing (digital twin overlays on assembly lines), logistics (AR pick-and-pack), and field maintenance (remote expert guidance via AR overlay). The economic opportunity is projected at hundreds of billions of dollars by 2030.
   - In 2024-2025 Apple Vision Pro (launched February 2024) redefined the high end of the market with its passthrough mixed-reality paradigm and eye-hand-voice input, shifting industry discourse toward spatial OS design. Meta's Quest 3 and Quest Pro expanded affordable mixed-reality access. Generative AI integration — producing real-time 3D content, adaptive avatars, and AI-driven NPCs — is emerging as a core capability differentiator. OpenXR standardisation through the Khronos Group is consolidating cross-platform API fragmentation.
-

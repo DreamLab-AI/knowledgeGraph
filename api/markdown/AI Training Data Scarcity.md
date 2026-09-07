@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Training Data Scarcity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-training-data-scarcity",
   "title": "AI Training Data Scarcity",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Training Data", "Data Scarcity", "Knowledge Repository"],
+  "vc:outboundWikilinks": [
+    "AI Training Data",
+    "Data Scarcity",
+    "Knowledge Repository"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data", "label": "Data"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-quality", "label": "Data Quality"}, {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

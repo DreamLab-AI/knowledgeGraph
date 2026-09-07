@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-157-predictive-tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,52 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-157-predictive-tracking:2d45e765d348",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bcb869cfd8b9c0062b96f71f16798bb98ba21d5a8176c52afbd73ff1b8719c72"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Kalman Filter]]",
-      "resolved": "urn:visionflow:linked:kalman-filter",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:linked:sensor-fusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Low Latency]]",
-      "resolved": "urn:visionflow:linked:low-latency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inertial Measurement Unit]]",
-      "resolved": "urn:visionflow:linked:inertial-measurement-unit",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:linked:telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Predictive tracking is the estimation of a user's future head or body pose from recent motion so that rendering can be aligned to where the user will be, reducing perceived latency.

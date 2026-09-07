@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scope Definition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Scope definition is the act of establishing the precise boundaries, entities, and conditions to which an assessment, consent, or measurement applies. In governance and consent systems it specifies which permissions, data, or activities are covered, while in environmental assessment it delineates the system boundary for impact accounting. Clear scope is a prerequisite for auditable and comparable results.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:user-consent-token", "label": "User Consent Token"},
-      {"@id": "urn:ngm:class:blockchain-environmental-impact-assessment", "label": "Blockchain Environmental Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:user-consent-token",
+        "label": "User Consent Token"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-environmental-impact-assessment",
+        "label": "Blockchain Environmental Impact Assessment"
+      }
     ]
   },
   "quality": 0.72

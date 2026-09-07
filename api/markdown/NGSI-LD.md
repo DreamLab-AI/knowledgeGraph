@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NGSI-LD
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,42 +75,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ngsi-ld:e4882ea1eef2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:848bea5bfac9304a89a4c5c6bd4f11984a6e368a9b052e85ac489107b9deac20"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Linked Data]]",
-      "resolved": "urn:visionflow:linked:linked-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Aggregation]]",
-      "resolved": "urn:visionflow:linked:data-aggregation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Internet of Things]]",
-      "resolved": "urn:visionflow:linked:internet-of-things",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - NGSI-LD is an ETSI standard information model and API for representing context information as linked data using entities, properties and relationships. It is widely used in smart city and Internet of Things platforms.

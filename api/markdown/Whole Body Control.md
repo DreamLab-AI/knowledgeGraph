@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Whole-Body Control
----
-
-# whole body control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -41,23 +34,40 @@ aliases:
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:system-identification", "label": "System Identification"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
+      {
+        "@id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
-      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"}
+      {
+        "@id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Whole Body Control (WBC) is a control framework for legged and humanoid robots that simultaneously optimises motion tasks, contact forces, and balance constraints across all degrees of freedom by solving a hierarchical quadratic programme or weighted task-space objective at each control cycle. By treating locomotion, manipulation, and postural balance as a unified optimisation problem, WBC avoids the sub-optimality of treating these objectives separately. It typically relies on a rigid-body dynamics model and is often combined with model predictive control or reinforcement learning policies for online adaptation to uneven terrain and external disturbances.

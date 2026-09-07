@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Sales Quotas
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-sales-quotas",
   "title": "AI Sales Quotas",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Azure Foundry", "Microsoft Azure"],
+  "vc:outboundWikilinks": [
+    "Azure Foundry",
+    "Microsoft Azure"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:microsoft", "label": "Microsoft"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:microsoft",
+      "label": "Microsoft"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:azure", "label": "Azure"}, {"@id": "urn:ngm:class:microsoft", "label": "Microsoft"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:azure",
+        "label": "Azure"
+      },
+      {
+        "@id": "urn:ngm:class:microsoft",
+        "label": "Microsoft"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

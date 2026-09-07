@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Zigbee2MQTT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Zigbee2MQTT is an open-source bridge that connects Zigbee smart-home devices to MQTT, allowing them to be controlled independently of any proprietary vendor hub or cloud. Using an inexpensive Zigbee coordinator radio, it translates device messages into MQTT topics with a large database of supported devices. It matters as a vendor-neutral, locally controlled integration path for Zigbee hardware into platforms like Home Assistant.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:home-assistant", "label": "Home Assistant"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      }
+    ]
   },
   "quality": 0.72
 }

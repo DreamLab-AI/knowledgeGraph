@@ -1,37 +1,118 @@
----
-public: true
----
-
-# Text Classification
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:text-classification", "@type":"Page", "title":"Text Classification", "vc:slug":"text-classification", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:text-classification",
+  "@type": "Page",
+  "title": "Text Classification",
+  "vc:slug": "text-classification",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:text-classification",
-  "@type":"Class",
-  "label":"Text Classification",
-  "definition":"Text classification is the supervised natural-language-processing task of assigning one or more predefined categorical labels to a span of text such as a document, sentence, or query. It maps variable-length text inputs to a fixed label space using learned representations and a decision function. Common formulations include binary, multi-class, and multi-label classification over topics, sentiment, intent, or content policy categories.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:natural-language-processing","label":"Natural Language Processing"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:natural-language-processing","label":"Natural Language Processing"}],
-    "hasPart":[{"@id":"urn:ngm:class:tokenization","label":"Tokenisation"},{"@id":"urn:ngm:class:feature-engineering","label":"Feature Engineering"}],
-    "requires":[{"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"},{"@id":"urn:ngm:class:model-training","label":"Model Training"}],
-    "uses":[{"@id":"urn:ngm:class:transformer-architecture","label":"Transformer Architecture"},{"@id":"urn:ngm:class:neural-network","label":"Neural Network"}],
-    "enables":[{"@id":"urn:ngm:class:sentiment-analysis","label":"Sentiment Analysis"},{"@id":"urn:ngm:class:content-moderation","label":"Content Moderation"}],
-    "implements":[{"@id":"urn:ngm:class:classification","label":"Classification"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:named-entity-recognition","label":"Named Entity Recognition"}],
-    "relatedTo":[{"@id":"urn:ngm:class:information-retrieval","label":"Information Retrieval"},{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"},{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "supports":[{"@id":"urn:ngm:class:foundation-model","label":"Foundation Model"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:text-classification",
+  "@type": "Class",
+  "label": "Text Classification",
+  "definition": "Text classification is the supervised natural-language-processing task of assigning one or more predefined categorical labels to a span of text such as a document, sentence, or query. It maps variable-length text inputs to a fixed label space using learned representations and a decision function. Common formulations include binary, multi-class, and multi-label classification over topics, sentiment, intent, or content policy categories.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

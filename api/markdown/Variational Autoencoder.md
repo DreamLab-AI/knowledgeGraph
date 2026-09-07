@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Variational Autoencoder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,52 +173,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:variational-autoencoder:594c43ad7dee",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3fb76ec1edb17091aa0e04cb340282c2bb7ba6e935007bc4084d4bbd6c4e8d92"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Variational Inference]]",
-      "resolved": "urn:visionflow:linked:variational-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Backpropagation]]",
-      "resolved": "urn:visionflow:linked:backpropagation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:linked:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Model]]",
-      "resolved": "urn:visionflow:linked:generative-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autoencoder]]",
-      "resolved": "urn:visionflow:linked:autoencoder",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A generative model that pairs an encoder mapping inputs to a probability distribution over a latent space with a decoder that reconstructs inputs, trained to maximise a variational lower bound on the data likelihood.

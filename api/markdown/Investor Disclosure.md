@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Investor Disclosure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Investor disclosure is the regulated obligation to provide investors with material, accurate, and timely information about an investment's risks, financials, and governance so they can make informed decisions. It underpins securities regulation by reducing information asymmetry between issuers and the market. In digital-asset and sustainability contexts it increasingly extends to environmental impact and tokenomics, including emissions and energy-use reporting.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
-      {"@id": "urn:ngm:class:blockchain-environmental-impact-assessment", "label": "Blockchain Environmental Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-environmental-impact-assessment",
+        "label": "Blockchain Environmental Impact Assessment"
+      }
     ]
   },
   "quality": 0.72

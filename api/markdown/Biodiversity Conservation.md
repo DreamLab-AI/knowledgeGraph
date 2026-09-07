@@ -1,38 +1,112 @@
----
-public: true
----
-
-# Biodiversity Conservation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:biodiversity-conservation", "@type":"Page", "title":"Biodiversity Conservation", "vc:slug":"biodiversity-conservation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:biodiversity-conservation",
+  "@type": "Page",
+  "title": "Biodiversity Conservation",
+  "vc:slug": "biodiversity-conservation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:biodiversity-conservation",
-  "@type":"Class",
-  "label":"Biodiversity Conservation",
-  "definition":"Biodiversity conservation is the protection, restoration and sustainable management of the variety of life on Earth — genes, species, habitats and ecosystems — to maintain ecological function and resilience. It combines protected areas, species recovery, habitat restoration, sustainable use and policy instruments, increasingly informed by monitoring data and remote sensing. As a pillar of environmental sustainability, it is closely linked to climate change mitigation, ecosystem services and emerging biodiversity finance markets.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:environmental-sustainability","label":"Environmental Sustainability"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:environmental-sustainability","label":"Environmental Sustainability"}],
-    "uses":[{"@id":"urn:ngm:class:environmental-monitoring","label":"Environmental Monitoring"}],
-    "enables":[{"@id":"urn:ngm:class:climate-change-mitigation","label":"Climate Change Mitigation"}],
-    "supports":[{"@id":"urn:ngm:class:environmental-sustainability","label":"Environmental Sustainability"},{"@id":"urn:ngm:class:esg","label":"ESG"}],
-    "requires":[{"@id":"urn:ngm:class:environmental-monitoring","label":"Environmental Monitoring"}],
-    "dependsOn":[{"@id":"urn:ngm:class:climate-change-mitigation","label":"Climate Change Mitigation"}],
-    "implements":[{"@id":"urn:ngm:class:environmental-sustainability","label":"Environmental Sustainability"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:carbon-credits","label":"Carbon Credits"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:carbon-offset","label":"Carbon Offset"}],
-    "relatedTo":[{"@id":"urn:ngm:class:esg","label":"ESG"},{"@id":"urn:ngm:class:climate-finance","label":"Climate Finance"},{"@id":"urn:ngm:class:environmental-monitoring","label":"Environmental Monitoring"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:biodiversity-conservation",
+  "@type": "Class",
+  "label": "Biodiversity Conservation",
+  "definition": "Biodiversity conservation is the protection, restoration and sustainable management of the variety of life on Earth — genes, species, habitats and ecosystems — to maintain ecological function and resilience. It combines protected areas, species recovery, habitat restoration, sustainable use and policy instruments, increasingly informed by monitoring data and remote sensing. As a pillar of environmental sustainability, it is closely linked to climate change mitigation, ecosystem services and emerging biodiversity finance markets.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:environmental-sustainability",
+      "label": "Environmental Sustainability"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "@id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

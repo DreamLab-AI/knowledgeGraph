@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ROS2
----
-
-# ros 2
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,7 +173,6 @@ aliases:
   }
 }
 ```
-
 
 - ### Definition
   - ROS 2 (Robot Operating System 2) is an open-source robotics middleware framework developed by Open Robotics that provides a standardised publish-subscribe communication layer built on the DDS (Data Distribution Service) standard, along with a comprehensive ecosystem of drivers, libraries, and tools for sensor integration, motion planning, simulation, and hardware abstraction. ROS 2 supersedes ROS 1 with support for real-time execution, multi-robot systems, production-grade security via DDS-Security, and native Windows and macOS compatibility. It has become the de facto standard software framework for research and increasingly for commercial robotic platforms.

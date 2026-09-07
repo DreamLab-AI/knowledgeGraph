@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Security Operations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Security operations is the ongoing practice of monitoring, detecting, investigating, and responding to security threats across an organisation's systems. Centred on a security operations centre, it integrates log collection, SIEM correlation, alert triage, threat intelligence, and incident response. Its goal is to reduce dwell time and limit the impact of attacks through continuous vigilance.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
     ]
   },
   "quality": 0.72

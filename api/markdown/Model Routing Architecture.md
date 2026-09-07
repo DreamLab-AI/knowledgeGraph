@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Routing Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "model-routing-architecture",
   "title": "Model Routing Architecture",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Harvey AI", "Inference Optimization"],
+  "vc:outboundWikilinks": [
+    "Harvey AI",
+    "Inference Optimization"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-architecture",
+      "label": "Model Architecture"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}, {"@id": "urn:ngm:class:inference", "label": "Inference"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

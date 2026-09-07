@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Unified Hardware Access
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,23 +55,50 @@ public: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:hardware-abstraction", "label": "Hardware Abstraction"}
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:xr-device", "label": "XR Device"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+      {
+        "@id": "urn:ngm:class:xr-device",
+        "label": "XR Device"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:xr-runtime-environment", "label": "XR Runtime Environment"}
+      {
+        "@id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:unified-hardware-access:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cacd57ff9cba45aa8e2b10b40358d68d943eb09523704d7e1b77eb447db01705"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware Abstraction]]",
-      "resolved": "urn:visionflow:owl:class:hardware-abstraction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A standardized abstraction layer that provides consistent interfaces for accessing diverse XR hardware devices, including VR headsets, AR glasses, haptic controllers, and tracking systems, enabling cross-platform application development.

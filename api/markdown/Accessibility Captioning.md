@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Accessibility Captioning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,21 +21,39 @@ public: true
   "domain": "standards",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"}
+    {
+      "@id": "urn:ngm:class:inclusive-design",
+      "label": "Inclusive Design"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:assistive-technology-integration", "label": "Assistive Technology Integration"}
+      {
+        "@id": "urn:ngm:class:assistive-technology-integration",
+        "label": "Assistive Technology Integration"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:wcag-2-2", "label": "WCAG 2.2"}
+      {
+        "@id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG 2.2"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ]
   },
   "quality": 0.8

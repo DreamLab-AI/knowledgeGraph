@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Mapping
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,26 +173,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-mapping:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4ddcbe4de6a8c9a89bbc7bade1fbead10341f8c434acdb29e1f794590c417665"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of constructing and continuously updating three-dimensional representations of physical environments using sensor data—including depth cameras, LiDAR, and IMU—enabling AR/VR systems to understand surroundings for occlusion, collision, content placement, and navigation. Core algorithms include SLAM variants that fuse visual features with inertial measurements to produce dense mesh or voxel representations in real time.

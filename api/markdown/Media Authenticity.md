@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Media Authenticity
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:media-authenticity", "@type":"Page", "title":"Media Authenticity", "vc:slug":"media-authenticity", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:media-authenticity",
+  "@type": "Page",
+  "title": "Media Authenticity",
+  "vc:slug": "media-authenticity",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

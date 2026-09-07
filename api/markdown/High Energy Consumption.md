@@ -1,8 +1,3 @@
----
-public: true
----
-
-# High Energy Consumption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,24 +55,60 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:computational-resources", "label": "Computational Resources"},
-      {"@id": "urn:ngm:class:mining", "label": "Mining"}
+      {
+        "@id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:mining-reward", "label": "Mining Reward"}
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:mining-reward",
+        "label": "Mining Reward"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:low-energy-consumption", "label": "Low Energy Consumption"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:proof-of-stake-sustainability", "label": "Proof Of Stake Sustainability"}
+      {
+        "@id": "urn:ngm:class:low-energy-consumption",
+        "label": "Low Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake-sustainability",
+        "label": "Proof Of Stake Sustainability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
-      {"@id": "urn:ngm:class:environmental-impact-metric", "label": "Environmental Impact Metric"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
     ]
   },
   "provenance": {
@@ -87,32 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:high-energy-consumption:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8f9216190e0887928da3e7fe7ee8015cada74b6c6ba2082067b24072137ca004"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   High Energy Consumption characterises Proof-of-Work blockchain networks that secure the ledger through computationally intensive mining, requiring significant and ongoing electricity expenditure proportional to network hash rate. This property creates environmental concerns, drives carbon footprint assessments, and motivates regulatory scrutiny of PoW chains, contrasting sharply with the energy profile of stake-based consensus alternatives.

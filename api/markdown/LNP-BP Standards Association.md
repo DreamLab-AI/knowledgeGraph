@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LNP-BP Standards Association
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The LNP-BP Standards Association is a non-profit body that develops and maintains specifications for Bitcoin and Lightning Network protocols, most notably the RGB smart-contract system and client-side validation. It curates the LNPBP specification series covering layer-2 and layer-3 constructs that extend Bitcoin without altering its base consensus. The association coordinates the engineers and researchers building these client-side-validated protocols.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"}, {"@id": "urn:ngm:class:btc-layer-3", "label": "BTC Layer 3"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      },
+      {
+        "@id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Linear Programming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

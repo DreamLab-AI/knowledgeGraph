@@ -1,8 +1,3 @@
----
-public: true
----
-
-# End-to-End Encryption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,4 +173,3 @@ public: true
   - Enterprise E2EE presents different challenges from consumer messaging. Organisations require searchable encrypted data, compliance archiving, multi-device key synchronisation, and key escrow for regulatory purposes—all of which conflict with naive E2EE implementations. Approaches including client-side key management services, homomorphic search tokens, and hardware security module-backed enterprise key management attempt to balance employee privacy with organisational oversight. Encrypted collaboration platforms (ProtonMail, Tutanota, Tresorit) have built E2EE-first architectures that constrain feature sets in exchange for stronger privacy guarantees.
 
   - In 2024-2025, E2EE is at the centre of policy debates in the EU (Chat Control regulation proposal), UK (Online Safety Act), and Australia, where governments seek lawful access mechanisms that security researchers argue are technically incompatible with E2EE without undermining it for all users. Post-quantum E2EE is actively standardised: NIST's PQC standards (CRYSTALS-Kyber/ML-KEM for key encapsulation, CRYSTALS-Dilithium/ML-DSA for signatures) are being integrated into Signal Protocol and TLS 1.3 via hybrid key exchange schemes to prepare for the quantum threat to current elliptic curve key agreement.
-

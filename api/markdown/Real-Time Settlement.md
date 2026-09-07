@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time Settlement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Real-time settlement is the immediate, final transfer of value between parties at the moment of transaction, eliminating the delay and counterparty risk of deferred net settlement cycles. In payments and securities it collapses the gap between trade and final exchange of funds. Distributed ledgers and central bank digital currencies enable atomic, near-instant settlement around the clock.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"},
-      {"@id": "urn:ngm:class:cbdcs", "label": "CBDCs"}
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
     ]
   },
   "quality": 0.72

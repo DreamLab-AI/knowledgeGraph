@@ -1,37 +1,114 @@
----
-public: true
----
-
-# Intrusion Detection System
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:intrusion-detection-system", "@type":"Page", "title":"Intrusion Detection System", "vc:slug":"intrusion-detection-system", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:intrusion-detection-system",
+  "@type": "Page",
+  "title": "Intrusion Detection System",
+  "vc:slug": "intrusion-detection-system",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:intrusion-detection-system",
-  "@type":"Class",
-  "label":"Intrusion Detection System",
-  "definition":"An intrusion detection system (IDS) monitors network traffic or host activity to identify malicious behaviour, policy violations, and signs of compromise, raising alerts for investigation. It detects threats using signature matching against known attack patterns, anomaly detection against established baselines, or a hybrid of both. An IDS is a detective control that complements preventive measures; when it can also block traffic it becomes an intrusion prevention system.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:threat-detection","label":"Threat Detection"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"}],
-    "uses":[{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"},{"@id":"urn:ngm:class:threat-intelligence","label":"Threat Intelligence"}],
-    "enables":[{"@id":"urn:ngm:class:incident-response","label":"Incident Response"},{"@id":"urn:ngm:class:threat-detection","label":"Threat Detection"}],
-    "requires":[{"@id":"urn:ngm:class:network-security","label":"Network Security"}],
-    "supports":[{"@id":"urn:ngm:class:siem","label":"SIEM"},{"@id":"urn:ngm:class:vulnerability-management","label":"Vulnerability Management"}],
-    "partOf":[{"@id":"urn:ngm:class:security","label":"Security"}],
-    "dependsOn":[{"@id":"urn:ngm:class:network-security","label":"Network Security"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:penetration-testing","label":"Penetration Testing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:siem","label":"SIEM"},{"@id":"urn:ngm:class:threat-intelligence","label":"Threat Intelligence"},{"@id":"urn:ngm:class:access-control","label":"Access Control"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:intrusion-detection-system",
+  "@type": "Class",
+  "label": "Intrusion Detection System",
+  "definition": "An intrusion detection system (IDS) monitors network traffic or host activity to identify malicious behaviour, policy violations, and signs of compromise, raising alerts for investigation. It detects threats using signature matching against known attack patterns, anomaly detection against established baselines, or a hybrid of both. An IDS is a detective control that complements preventive measures; when it can also block traffic it becomes an intrusion prevention system.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:threat-detection",
+      "label": "Threat Detection"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

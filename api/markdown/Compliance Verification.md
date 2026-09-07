@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Compliance Verification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,37 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:compliance-verification:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6f5e1b4d8df64aae2c011fc0d7fec0327e2b3a0a457107d39497c0acdffb8eea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[KYC/AML Requirements]]",
-      "resolved": "urn:visionflow:linked:kyc-aml-requirements",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and transaction monitoring obligations. Blockchain-based compliance systems leverage immutable ledgers, smart contracts, and AI-driven analytics to maintain tamper-proof records and detect suspicious activities in real-time.

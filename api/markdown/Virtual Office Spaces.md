@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-301-virtual-office-spaces
----
-
-# Virtual Office Spaces
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,26 +80,62 @@ aliases:
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
-      {"@id": "urn:ngm:class:presence", "label": "Presence"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
     ]
   },
   "provenance": {
@@ -116,67 +145,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-office-spaces:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5cdea061f6584c6c3693467f5042a8af59e731d4fe610cda767c816f37dd4c4c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[TELE-002-telecollaboration]]",
-      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-020-virtual-reality-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-026-microsoft-mesh]]",
-      "resolved": "urn:visionflow:linked:tele-026-microsoft-mesh",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-027-spatial-platform]]",
-      "resolved": "urn:visionflow:linked:tele-027-spatial-platform",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-028-horizon-workrooms]]",
-      "resolved": "urn:visionflow:linked:tele-028-horizon-workrooms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-300-digital-twin-collaboration]]",
-      "resolved": "urn:visionflow:linked:tele-300-digital-twin-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-302-shared-whiteboards]]",
-      "resolved": "urn:visionflow:linked:tele-302-shared-whiteboards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Environment]]",
-      "resolved": "urn:visionflow:owl:class:virtual-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "Persistent virtual reality or metaverse environments designed as professional workspaces where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate 3D office layouts, replicating physical office spatial dynamics whilst enabling global remote participation through immersive telepresence platforms."

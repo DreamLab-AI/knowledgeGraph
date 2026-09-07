@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Land Economics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,16 +75,34 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-labor", "label": "Virtual Labor"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {
+        "@id": "urn:ngm:class:virtual-labor",
+        "label": "Virtual Labor"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ]
   },
   "quality": 0.5,
@@ -100,57 +113,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:land-economics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4f84eb40ff1d358dd9bdcdf000486ac649f471fbf91c1b41655a10808319a1b6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Non-Fungible Token]]",
-      "resolved": "urn:visionflow:linked:non-fungible-token",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Ownership]]",
-      "resolved": "urn:visionflow:owl:class:digital-ownership",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Labor]]",
-      "resolved": "urn:visionflow:owl:class:virtual-labor",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Land Economics is the economic framework governing virtual land ownership, valuation, development, and transaction within metaverse environments, characterised by artificial scarcity, spatial positioning premiums, and speculative markets. It encompasses primary sales, secondary peer-to-peer trading, rental systems, platform taxation models, and zoning policies that together determine how virtual parcels accumulate and lose value.

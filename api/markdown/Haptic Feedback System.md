@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Haptic Feedback System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,58 @@ public: true
   "definition": "A Haptic Feedback System is a hardware-software assembly that generates controlled tactile and kinaesthetic sensations in response to digital events, using actuator arrays (vibrotactile motors, piezoelectric patches, pneumatic bladders, or shape-memory alloys), real-time rendering engines, and closed-loop sensorimotor control loops to simulate textures, resistances, impacts, and spatial forces for users of VR/AR headsets, surgical simulators, teleoperation systems, and mobile devices. The system comprises transducers that convert electrical signals into mechanical motion, driver electronics that modulate waveform parameters (frequency, amplitude, duration), rendering middleware that maps virtual-world physics to actuator commands, and perceptual models calibrated to human mechanoreceptor response characteristics.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:haptic-feedback",
+      "label": "Haptic Feedback"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:haptics", "label": "Haptics"},
-      {"@id": "urn:ngm:class:force-feedback", "label": "Force Feedback"},
-      {"@id": "urn:ngm:class:haptic-feedback-telepresence", "label": "Haptic Feedback Telepresence"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "@id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:tactile-sensor", "label": "Tactile Sensor"},
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
     ]
   },
   "quality": 0.8
@@ -62,4 +92,3 @@ public: true
   - The significance of haptic feedback systems lies in the closure of the sensorimotor loop in remote and virtual interaction. Studies consistently show that haptic feedback reduces task completion time and error rates in surgical simulation, micro-assembly, and robotic surgery by 20-40%. In consumer VR, haptic gloves and vests enable presence — the sensation of physical embodiment — at levels unachievable with visual-only displays. For accessibility, haptic interfaces provide non-visual information channels for blind users navigating spatial interfaces. For industrial teleoperation (nuclear decommissioning, deep-sea manipulation, field robotics), haptic force feedback allows operators to detect contact forces and material properties that cameras cannot convey.
 
   - By 2024-2025, haptic feedback systems are entering mainstream consumer hardware. Meta Quest Touch Pro controllers, PlayStation 5 DualSense adaptive triggers, and Apple Vision Pro's micro-actuator array have established tactile feedback as a differentiating feature in consumer XR. The emerging frontier is full-body haptic suits for metaverse presence and AI-assisted haptic content creation — where AI models generate haptic effect libraries from audio-visual input. Challenges remain in wireless latency (haptic feedback requires <1ms round-trip to avoid uncanny sensations), miniaturisation of grounded force-feedback devices, and standardised haptic content formats analogous to audio codecs.
-

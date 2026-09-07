@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Parallel Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,57 +186,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:parallel-computing:6c779db92381",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:46c5ce9e6087f946d54b8008538a8617059526f2f955a250cc434132e2f41bea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GPU Architecture]]",
-      "resolved": "urn:visionflow:linked:gpu-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pipeline Parallelism]]",
-      "resolved": "urn:visionflow:linked:pipeline-parallelism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CUDA]]",
-      "resolved": "urn:visionflow:linked:cuda",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPU Computing]]",
-      "resolved": "urn:visionflow:linked:gpu-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Computing]]",
-      "resolved": "urn:visionflow:linked:distributed-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Parallel computing executes many operations simultaneously across multiple processing units to reduce wall-clock time for workloads that can be decomposed into independent or loosely coupled parts.

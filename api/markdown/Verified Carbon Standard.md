@@ -1,39 +1,122 @@
----
-public: true
----
-
-# Verified Carbon Standard
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:verified-carbon-standard", "@type":"Page", "title":"Verified Carbon Standard", "vc:slug":"verified-carbon-standard", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:verified-carbon-standard",
+  "@type": "Page",
+  "title": "Verified Carbon Standard",
+  "vc:slug": "verified-carbon-standard",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:verified-carbon-standard",
-  "@type":"Class",
-  "label":"Verified Carbon Standard",
-  "definition":"The Verified Carbon Standard (VCS) is the most widely used voluntary greenhouse-gas crediting programme, administered by the non-profit Verra. It defines methodologies, validation and verification requirements, and a registry under which emission-reduction and removal projects can issue tradable Verified Carbon Units. By certifying that claimed reductions are real, additional, measurable and permanent, VCS provides the integrity framework that underpins much of the voluntary carbon market.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:carbon-markets","label":"Carbon Markets"}],
-  "relations":{
-    "standardizedBy":[{"@id":"urn:ngm:class:standards-organization","label":"Standards Organization"}],
-    "enables":[{"@id":"urn:ngm:class:carbon-credits","label":"Carbon Credits"},{"@id":"urn:ngm:class:carbon-offset","label":"Carbon Offset"}],
-    "supports":[{"@id":"urn:ngm:class:carbon-markets","label":"Carbon Markets"},{"@id":"urn:ngm:class:climate-finance","label":"Climate Finance"}],
-    "uses":[{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}],
-    "requires":[{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}],
-    "implements":[{"@id":"urn:ngm:class:carbon-markets","label":"Carbon Markets"}],
-    "partOf":[{"@id":"urn:ngm:class:carbon-markets","label":"Carbon Markets"}],
-    "dependsOn":[{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:climate-change-mitigation","label":"Climate Change Mitigation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:carbon-offset","label":"Carbon Offset"}],
-    "relatedTo":[{"@id":"urn:ngm:class:carbon-credits","label":"Carbon Credits"},{"@id":"urn:ngm:class:climate-finance","label":"Climate Finance"},{"@id":"urn:ngm:class:esg","label":"ESG"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:verified-carbon-standard",
+  "@type": "Class",
+  "label": "Verified Carbon Standard",
+  "definition": "The Verified Carbon Standard (VCS) is the most widely used voluntary greenhouse-gas crediting programme, administered by the non-profit Verra. It defines methodologies, validation and verification requirements, and a registry under which emission-reduction and removal projects can issue tradable Verified Carbon Units. By certifying that claimed reductions are real, additional, measurable and permanent, VCS provides the integrity framework that underpins much of the voluntary carbon market.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:carbon-markets",
+      "label": "Carbon Markets"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      },
+      {
+        "@id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

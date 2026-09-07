@@ -1,56 +1,110 @@
----
-public: true
----
-
-# Pull Request
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:pull-request", "@type":"Page", "title":"Pull Request", "vc:slug":"pull-request", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:pull-request",
+  "@type": "Page",
+  "title": "Pull Request",
+  "vc:slug": "pull-request",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:pull-request",
-  "@type":"Class",
-  "label":"Pull Request",
-  "definition":"A pull request is a proposal to merge a set of changes from one branch into another, packaged so that collaborators can review, discuss, and verify the work before it is integrated. It bundles a diff, a description, and a thread of review comments, and typically triggers automated checks that must pass before merge. Pull requests are the central unit of collaboration in distributed version control workflows, making change proposals visible, reviewable, and auditable.",
-  "domain":"distributed-collaboration",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:code-review","label":"Code Review"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:commit","label":"Commit"},
-      {"@id":"urn:ngm:class:peer-review","label":"Peer Review"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pull-request",
+  "@type": "Class",
+  "label": "Pull Request",
+  "definition": "A pull request is a proposal to merge a set of changes from one branch into another, packaged so that collaborators can review, discuss, and verify the work before it is integrated. It bundles a diff, a description, and a thread of review comments, and typically triggers automated checks that must pass before merge. Pull requests are the central unit of collaboration in distributed version control workflows, making change proposals visible, reviewable, and auditable.",
+  "domain": "distributed-collaboration",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:code-review",
+      "label": "Code Review"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:commit",
+        "label": "Commit"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:version-control","label":"Version Control"},
-      {"@id":"urn:ngm:class:git","label":"Git"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"},
-      {"@id":"urn:ngm:class:code-review","label":"Code Review"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:collaboration","label":"Collaboration"},
-      {"@id":"urn:ngm:class:quality-assurance","label":"Quality Assurance"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:workflow-automation","label":"Workflow Automation"},
-      {"@id":"urn:ngm:class:audit","label":"Audit"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:software-development","label":"Software Development"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:git","label":"Git"},
-      {"@id":"urn:ngm:class:continuous-integration","label":"Continuous Integration"},
-      {"@id":"urn:ngm:class:peer-review","label":"Peer Review"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

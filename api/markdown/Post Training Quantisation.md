@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Post Training Quantisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -125,6 +121,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Post-training quantisation (PTQ) converts a trained full-precision neural network to a lower-precision representation, typically 8-bit integers, without re-running the original training loop. A small calibration dataset is used to estimate the dynamic range of activations so that scale and zero-point parameters can be chosen. PTQ trades a small, usually recoverable, drop in accuracy for substantial reductions in model size and inference cost.
   - Related concepts: [[Quantisation]] [[Neural Network Quantisation]] [[Calibration]] [[Model Compression]] [[On-Device Inference]]

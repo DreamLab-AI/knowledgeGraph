@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intelligent NPC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,35 +55,86 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interactive-storytelling", "label": "Interactive Storytelling"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:npc-interaction", "label": "NPC Interaction"}
+      {
+        "@id": "urn:ngm:class:interactive-storytelling",
+        "label": "Interactive Storytelling"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:npc-interaction",
+        "label": "NPC Interaction"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:pathfinding-algorithm", "label": "Pathfinding Algorithm"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:pathfinding-algorithm",
+        "label": "Pathfinding Algorithm"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
-      {"@id": "urn:ngm:class:behavioral-learning", "label": "Behavioral Learning"}
+      {
+        "@id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-learning",
+        "label": "Behavioral Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:character-model", "label": "Character Model"},
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"},
-      {"@id": "urn:ngm:class:game-mechanics", "label": "Game Mechanics"}
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:game-mechanics",
+        "label": "Game Mechanics"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ]
   },
   "provenance": {
@@ -98,37 +144,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:intelligent-npc:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5b677df3f4bbc69956d169f04c90318ec1af5d91e53e8ad09f4a2600eb766a26"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Humans]]",
-      "resolved": "urn:visionflow:owl:class:digital-humans",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   An Intelligent NPC (Non-Player Character) is a virtual agent in a game, simulation, or metaverse environment whose behaviour is driven by AI systems — typically combining perception, reasoning, planning, and natural-language interaction — rather than purely scripted or rule-based finite state machines. Modern intelligent NPCs leverage large language models for open-ended dialogue, reinforcement learning for adaptive combat and movement, and behavioural AI architectures (behaviour trees, goal-oriented action planning) to produce emergent, contextually appropriate responses to player actions and environmental stimuli. They form the interactive population of persistent virtual worlds and are central to immersive narrative experiences.

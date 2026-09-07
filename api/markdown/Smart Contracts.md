@@ -1,13 +1,3 @@
----
-public: true
-aliases:
-  - BC-0013-smart-contracts
-  - BC-0142-smart-contract
-  - SmartContracts
-  - smart-contracts
----
-
-# Smart Contracts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -224,72 +214,6 @@ aliases:
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:smart-contracts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8a8d4d3b9bad3b0bb1284782384f1acd98017a1a51175374b1aae766ac01675d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptographic Hash Function]]",
-      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralized Application]]",
-      "resolved": "urn:visionflow:linked:decentralized-application",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Automated Market Maker]]",
-      "resolved": "urn:visionflow:owl:class:automated-market-maker",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Finance (DeFi)]]",
-      "resolved": "urn:visionflow:owl:class:decentralized-finance-de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:owl:class:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Computing]]",
-      "resolved": "urn:visionflow:owl:class:distributed-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:owl:class:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tokenization]]",
-      "resolved": "urn:visionflow:owl:class:tokenization",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Self-executing programs stored on a blockchain that automatically enforce and execute the terms of an agreement when predetermined conditions are met, eliminating the need for intermediaries and enabling trustless, transparent, and immutable transaction automation. Smart contracts encode business logic in deterministic code that runs identically across all network nodes, ensuring consensus on execution outcomes.

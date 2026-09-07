@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Zoom Meetings
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,15 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:virtual-meeting", "label": "Virtual Meeting"},
-      {"@id": "urn:ngm:class:screen-sharing", "label": "Screen Sharing"}
+      {
+        "@id": "urn:ngm:class:virtual-meeting",
+        "label": "Virtual Meeting"
+      },
+      {
+        "@id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-background", "label": "Virtual Background"}
+      {
+        "@id": "urn:ngm:class:virtual-background",
+        "label": "Virtual Background"
+      }
     ]
   },
   "quality": 0.7

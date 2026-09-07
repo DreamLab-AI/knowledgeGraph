@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Safety Red Lines
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-safety-red-lines",
   "title": "AI Safety Red Lines",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Autonomous Weapons", "Domestic Surveillance"],
+  "vc:outboundWikilinks": [
+    "Autonomous Weapons",
+    "Domestic Surveillance"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety-research",
+      "label": "AI Safety Research"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:responsible-scaling-policy", "label": "Responsible Scaling Policy"}, {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

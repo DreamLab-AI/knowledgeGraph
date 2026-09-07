@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quaternion Math
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,17 +46,38 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:animation-technique", "label": "Animation Technique"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:animation-technique",
+        "label": "Animation Technique"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}
+      {
+        "@id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:vr-rendering-engine", "label": "VR Rendering Engine"},
-      {"@id": "urn:ngm:class:xr-hardware", "label": "XR Hardware"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:vr-rendering-engine",
+        "label": "VR Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
     ]
   },
   "provenance": {
@@ -71,26 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:quaternion-math:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:10365f15cfb10f09476ed3a082a7a2d71ba9b67ec5b027d0404df9982fe34f6c"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Quaternion Math is the application of Hamilton's four-dimensional number system (q = w + xi + yj + zk) to represent and interpolate 3D rotations in spatial computing. Quaternions avoid gimbal lock inherent to Euler angles, enable smooth SLERP interpolation, and are computationally efficient for composing rotations in real-time rendering engines, robotics kinematics, and XR head-tracking pipelines.

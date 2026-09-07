@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Recommendation Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,7 +168,7 @@ public: true
 - ### Relationships
   - [[Recommendation Systems]] depend on [[Embedding Model]] representations to capture latent relationships between users and items in shared vector spaces, enabling efficient nearest-neighbour retrieval at scale. [[Recommendation Engine]] infrastructure translates offline-trained models into online serving pipelines, while [[Machine Learning Pipeline]] tooling manages feature engineering, training, evaluation, and deployment. [[Deep Learning]] architectures—particularly [[Graph Neural Network]] models that capture social and item-graph structure—have displaced earlier matrix factorisation methods. The systems enable [[Predictive Personalization]] and [[Hyper personalisation]] experiences but raise governance concerns about engagement maximisation that drives harmful content amplification.
 - ### Content
-  - Recommendation systems address the fundamental information overload problem: as the number of available items—films, products, songs, articles—grows into the millions or billions, users cannot discover relevant content through manual browsing alone. Early collaborative filtering systems such as Amazon's item-to-item CF (2003) demonstrated that purchase co-occurrence patterns could predict complementary purchases with commercially useful accuracy. Netflix's $1 million prize competition (2006–2009) accelerated academic research, producing matrix factorisation and ensemble methods that became industry standard approaches for the following decade.
+  - Recommendation systems address the fundamental information overload problem: as the number of available items—films, products, songs, articles—grows into the millions or billions, users cannot discover relevant content through manual browsing alone. Early collaborative filtering systems such as Amazon's item-to-item CF (2003) demonstrated that purchase co-occurrence patterns [private] predict complementary purchases with commercially useful accuracy. Netflix's $1 million prize competition (2006–2009) accelerated academic research, producing matrix factorisation and ensemble methods that became industry standard approaches for the following decade.
 
   - Modern recommendation systems have evolved significantly beyond matrix factorisation. The dominant architecture is the two-tower or dual-encoder model: separate neural networks encode users and items into a shared embedding space, enabling efficient approximate nearest-neighbour retrieval from candidate pools of hundreds of millions of items in milliseconds. These retrieval models are typically followed by a ranking stage—a more expensive neural network that scores a shortlist of candidates using richer features—before final business-rule filtering (deduplication, content policy enforcement, inventory availability). This three-stage retrieve-rank-rerank pipeline is the standard architecture at YouTube, TikTok, and similar large-scale platforms.
 

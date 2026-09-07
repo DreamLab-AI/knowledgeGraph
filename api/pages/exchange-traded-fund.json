@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:exchange-traded-fund",
   "domain": "blockchain",
-  "definition": "An exchange-traded fund (ETF) is a pooled investment vehicle whose shares trade on a stock exchange throughout the day at market prices. It typically tracks an index, asset, or basket of assets and uses a create-redeem mechanism with authorised participants to keep its price close to net asset value. ETFs combine the diversification of funds with the intraday liquidity and accessibility of listed securities.",
+  "definition": "An exchange-traded fund (ETF) is a pooled investment vehicle whose shares trade on a stock exchange throughout the day at market prices. It typically tracks an [private], asset, or basket of assets and uses a create-redeem mechanism with authorised participants to keep its price close to net asset value. ETFs combine the diversification of funds with the intraday liquidity and accessibility of listed securities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-asset",

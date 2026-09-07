@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tool Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A tool registry is a catalogue that stores the definitions, schemas, permissions, and metadata of the external tools and functions an AI agent can invoke. It enables agents to discover, validate, and route calls to available capabilities at runtime, providing a governed and extensible interface between language models and the systems they act upon.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"}, {"@id": "urn:ngm:class:agentic-internet", "label": "Agentic Internet"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Asset Custody
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

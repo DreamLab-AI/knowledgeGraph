@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CFTC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cftc:be0d3024d4d2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:615c48fcd216c2581574337850d2b53eaac6e7e056f78424c99a754125a8f775"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Financial Regulation]]",
-      "resolved": "urn:visionflow:linked:financial-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consumer Protection]]",
-      "resolved": "urn:visionflow:linked:consumer-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Stability]]",
-      "resolved": "urn:visionflow:linked:financial-stability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Securities Regulation]]",
-      "resolved": "urn:visionflow:linked:securities-regulation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Commodity Futures Trading Commission, an independent agency of the United States government that regulates the derivatives markets, including futures, swaps and certain options.

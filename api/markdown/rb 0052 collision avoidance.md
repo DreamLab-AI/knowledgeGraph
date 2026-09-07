@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0052 collision avoidance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -44,7 +39,7 @@ public: true
   "@id": "urn:ngm:class:rb-0052-collision-avoidance",
   "@type": "Class",
   "label": "rb 0052 collision avoidance",
-  "definition": "Collision avoidance in robotics is the capability of a robot system to detect and react to obstacles — including other robots, infrastructure, and human operators — so as to prevent physical contact that could cause damage or injury. It encompasses both reactive techniques (e.g. potential field methods, velocity obstacles) and proactive planning approaches that embed free-space constraints into the trajectory from the outset. It is a prerequisite for safe autonomous navigation and collaborative operation.",
+  "definition": "Collision avoidance in robotics is the capability of a robot system to detect and react to obstacles — including other robots, infrastructure, and human operators — so as to prevent physical contact that [private] cause damage or injury. It encompasses both reactive techniques (e.g. potential field methods, velocity obstacles) and proactive planning approaches that embed free-space constraints into the trajectory from the outset. It is a prerequisite for safe autonomous navigation and collaborative operation.",
   "domain": "robotics",
   "maturity": "emerging",
   "subClassOf": [
@@ -60,20 +55,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"},
-      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"}
+      {
+        "@id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0103-collaborative-operation", "label": "rb 0103 collaborative operation"}
+      {
+        "@id": "urn:ngm:class:rb-0103-collaborative-operation",
+        "label": "rb 0103 collaborative operation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"}
+      {
+        "@id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0095-safety-zone", "label": "rb 0095 safety zone"},
-      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
-      {"@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring", "label": "rb 0105 speed and separation monitoring"}
+      {
+        "@id": "urn:ngm:class:rb-0095-safety-zone",
+        "label": "rb 0095 safety zone"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "rb 0105 speed and separation monitoring"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0052-collision-avoidance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:52ca013a90c85fdca7226af898db0d5fd2158eb8055581dbad06f356506ea874"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Collision avoidance in robotics encompasses the algorithms and hardware that allow a robot to detect obstacles — including humans, other robots, fixtures, and unforeseen objects — and modify its motion so as to prevent physically harmful contact. Reactive approaches compute avoidance actions in real time from sensor readings; deliberate approaches embed free-space constraints into the trajectory optimisation during the planning phase. In human-robot collaborative environments collision avoidance is a critical safety function that complements and enables speed and separation monitoring.

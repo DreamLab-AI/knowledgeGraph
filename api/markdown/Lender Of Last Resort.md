@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Lender Of Last Resort
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Data Modelling
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,45 +20,104 @@ public: true
   "definition": "Data modelling is the process of defining the structure, relationships, constraints, and semantics of data to be stored, processed, or exchanged in an information system. It produces formal artefacts — conceptual, logical, and physical models — that guide database design, API contracts, and data integration. Effective data modelling ensures data consistency, reduces redundancy, and aligns technical storage structures with the business domain concepts they represent.",
   "domain": "data",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},
-      {"@id": "urn:ngm:class:statistical-analysis", "label": "Statistical Analysis"}
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:tensor-computation", "label": "Tensor Computation"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-computation",
+        "label": "Tensor Computation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"}
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},
-      {"@id": "urn:ngm:class:statistical-analysis", "label": "Statistical Analysis"}
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:python-programming-language", "label": "Python Programming Language"},
-      {"@id": "urn:ngm:class:fourier-transform", "label": "Fourier Transform"}
+      {
+        "@id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      },
+      {
+        "@id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:personal-data", "label": "Personal Data"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:euclidean-distance", "label": "Euclidean Distance"}
+      {
+        "@id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      }
     ]
   },
   "quality": 0.62,

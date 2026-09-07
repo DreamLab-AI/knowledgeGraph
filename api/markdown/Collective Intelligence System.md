@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collective Intelligence System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,7 +182,7 @@ public: true
       }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
@@ -196,138 +191,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:collective-intelligence-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:11eef309133009a5ff77033b25bf34289b4e1f3ab2939fcdf2e213a383b822de"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collaborative AI Platform]]",
-      "resolved": "urn:visionflow:linked:collaborative-ai-platform",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Collaborative Decision-Making]]",
-      "resolved": "urn:visionflow:linked:collaborative-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Synchronization]]",
-      "resolved": "urn:visionflow:linked:data-synchronization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed Decision Network]]",
-      "resolved": "urn:visionflow:linked:distributed-decision-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Emergent Pattern Detector]]",
-      "resolved": "urn:visionflow:linked:emergent-pattern-detector",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Emergent Problem-Solving]]",
-      "resolved": "urn:visionflow:linked:emergent-problem-solving",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human-AI Interface]]",
-      "resolved": "urn:visionflow:linked:human-ai-interface",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Aggregation Module]]",
-      "resolved": "urn:visionflow:linked:knowledge-aggregation-module",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Multi-Agent System]]",
-      "resolved": "urn:visionflow:linked:multi-agent-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD AI Collective Intelligence 2025]]",
-      "resolved": "urn:visionflow:linked:oecd-ai-collective-intelligence-2025",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Swarm Coordination Engine]]",
-      "resolved": "urn:visionflow:linked:swarm-coordination-engine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Swarm Intelligence]]",
-      "resolved": "urn:visionflow:linked:swarm-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Collective Learning]]",
-      "resolved": "urn:visionflow:owl:class:collective-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Communication Protocol]]",
-      "resolved": "urn:visionflow:owl:class:communication-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-research-area",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Computing]]",
-      "resolved": "urn:visionflow:owl:class:distributed-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MiddlewareLayer]]",
-      "resolved": "urn:visionflow:owl:class:middleware-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:network-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Shared Knowledge Base]]",
-      "resolved": "urn:visionflow:owl:class:shared-knowledge-base",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
-  - A Collective Intelligence System (CIS) is an integrated sociotechnical architecture that combines the cognitive capacities of multiple humans, autonomous software agents, and AI models within a shared computational substrate to generate decisions, solutions, and knowledge outputs that surpass what any individual participant could produce in isolation. Unlike simple aggregation or majority-vote mechanisms, a CIS harnesses [[Emergent Problem-Solving]] — the appearance of higher-order capabilities arising from structured interaction patterns among components — by coupling a [[Swarm Coordination Engine]] with [[Distributed Decision Network]] infrastructure, a [[Knowledge Aggregation Module]], and [[Human-AI Interface]] layers that maintain bidirectional information flow between biological and artificial participants. The system maintains a [[Shared Knowledge Base]] updated through [[Data Synchronization]] protocols, ensuring that each participant's local reasoning is grounded in a globally consistent representation of the problem state. [[Consensus Mechanism]] algorithms arbitrate between conflicting agent outputs and prevent premature convergence, while an [[Emergent Pattern Detector]] continuously monitors aggregate signals for unexpected higher-order regularities. Theoretical foundations draw from James Surowiecki's analysis of crowd wisdom (diversity, independence, decentralisation, and aggregation as preconditions for collective accuracy), Thomas Malone and Anita Woolley's empirical identification of a collective intelligence factor (c-factor) analogous to general intelligence in groups, and Pierre Lévy's philosophical treatment of collective knowledge as a distributed cognitive phenomenon. Contemporary CIS implementations fuse these sociological insights with [[Multi-Agent System]] engineering, federated [[Machine Learning Discipline]] for privacy-preserving knowledge fusion, and [[Swarm Intelligence]] algorithms inspired by ant colonies, bird flocking, and fish schooling. In practice, a CIS spans cloud middleware, edge computing nodes, mobile interfaces, and organisational workflows, making [[MiddlewareLayer]] infrastructure and robust [[Network Infrastructure]] prerequisites for deployment at scale. The architecture is distinguished from simple crowd-sourcing platforms (which aggregate without synthesis) and from centralised AI systems (which lack population-level knowledge diversity) by its commitment to maintaining emergent properties through decentralised participation while providing enough coordination to prevent incoherence. As of 2026, Gartner has documented a 1,445% surge in enterprise multi-agent system inquiries from Q1 2024 to Q2 2025, indicating CIS has crossed from research prototype to core production infrastructure, with the [[Agent Communication Language]] and emerging Model Context Protocol (MCP) standards enabling interoperability across heterogeneous agent populations in deployed commercial collective systems.
+  - A Collective Intelligence System (CIS) is an integrated sociotechnical architecture that combines the cognitive capacities of multiple humans, autonomous software agents, and AI models within a shared computational substrate to generate decisions, solutions, and knowledge outputs that surpass what any individual participant [private] produce in isolation. Unlike simple aggregation or majority-vote mechanisms, a CIS harnesses [[Emergent Problem-Solving]] — the appearance of higher-order capabilities arising from structured interaction patterns among components — by coupling a [[Swarm Coordination Engine]] with [[Distributed Decision Network]] infrastructure, a [[Knowledge Aggregation Module]], and [[Human-AI Interface]] layers that maintain bidirectional information flow between biological and artificial participants. The system maintains a [[Shared Knowledge Base]] updated through [[Data Synchronization]] protocols, ensuring that each participant's local reasoning is grounded in a globally consistent representation of the problem state. [[Consensus Mechanism]] algorithms arbitrate between conflicting agent outputs and prevent premature convergence, while an [[Emergent Pattern Detector]] continuously monitors aggregate signals for unexpected higher-order regularities. Theoretical foundations draw from James Surowiecki's analysis of crowd wisdom (diversity, independence, decentralisation, and aggregation as preconditions for collective accuracy), Thomas Malone and Anita Woolley's empirical identification of a collective intelligence factor (c-factor) analogous to general intelligence in groups, and Pierre Lévy's philosophical treatment of collective knowledge as a distributed cognitive phenomenon. Contemporary CIS implementations fuse these sociological insights with [[Multi-Agent System]] engineering, federated [[Machine Learning Discipline]] for privacy-preserving knowledge fusion, and [[Swarm Intelligence]] algorithms inspired by ant colonies, bird flocking, and fish schooling. In practice, a CIS spans cloud middleware, edge computing nodes, mobile interfaces, and organisational workflows, making [[MiddlewareLayer]] infrastructure and robust [[Network Infrastructure]] prerequisites for deployment at scale. The architecture is distinguished from simple crowd-sourcing platforms (which aggregate without synthesis) and from centralised AI systems (which lack population-level knowledge diversity) by its commitment to maintaining emergent properties through decentralised participation while providing enough coordination to prevent incoherence. As of 2026, Gartner has documented a 1,445% surge in enterprise multi-agent system inquiries from Q1 2024 to Q2 2025, indicating CIS has crossed from research prototype to core production infrastructure, with the [[Agent Communication Language]] and emerging Model Context Protocol (MCP) standards enabling interoperability across heterogeneous agent populations in deployed commercial collective systems.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:CollectiveIntelligenceSystem
@@ -429,7 +294,7 @@ public: true
         ObjectSomeValuesFrom(ai:contrastsWith ai:MonolithicAgent))
 
   ## About
-  - A Collective Intelligence System is an engineered sociotechnical framework designed to elicit, combine, and refine the cognitive contributions of heterogeneous populations — comprising humans, autonomous software agents, and AI models — in order to produce emergent problem-solving capability beyond what any single participant or centralised system could achieve. The concept integrates insights from complexity science ([[Emergence]], self-organisation), social science ([[Wisdom of Crowds]], group epistemics), and computer science ([[Distributed Computing]], [[Multi-Agent System]] coordination, [[Machine Learning Discipline]]) into a unified operational architecture. The key distinguishing property is that a CIS does not merely aggregate outputs: it actively structures interaction to generate higher-order intelligence properties that are not present in any individual component — a qualitative leap enabled by [[Stigmergy]]-mediated feedback loops, [[Consensus Mechanism]] protocols, and iterative refinement processes analogous to scientific peer review applied at machine speed.
+  - A Collective Intelligence System is an engineered sociotechnical framework designed to elicit, combine, and refine the cognitive contributions of heterogeneous populations — comprising humans, autonomous software agents, and AI models — in order to produce emergent problem-solving capability beyond what any single participant or centralised system [private] achieve. The concept integrates insights from complexity science ([[Emergence]], self-organisation), social science ([[Wisdom of Crowds]], group epistemics), and computer science ([[Distributed Computing]], [[Multi-Agent System]] coordination, [[Machine Learning Discipline]]) into a unified operational architecture. The key distinguishing property is that a CIS does not merely aggregate outputs: it actively structures interaction to generate higher-order intelligence properties that are not present in any individual component — a qualitative leap enabled by [[Stigmergy]]-mediated feedback loops, [[Consensus Mechanism]] protocols, and iterative refinement processes analogous to scientific peer review applied at machine speed.
   - The intellectual lineage of collective intelligence as a formal discipline begins with Francis Galton's 1907 observation that the median estimate of an ox-weighing crowd was more accurate than any individual judge, later formalised by Surowiecki (2004) as the "wisdom of crowds" with four preconditions: diversity of opinion, independence of judgement, decentralisation of knowledge, and an aggregation mechanism that distils private information into a collective decision. Malone and colleagues at MIT (2010) extended this empirically, demonstrating that group performance across cognitively diverse tasks is predicted by a collective intelligence factor (c-factor) that correlates with social sensitivity, conversational turn-taking equality, and proportion of female members — but not with mean individual IQ. Pierre Lévy's philosophical treatment (1997) positioned collective intelligence as a fundamentally new form of human civilisation enabled by networked computation, treating it not as a property of special genius but as a ubiquitous potential latent in any sufficiently interconnected and diverse population. The computational instantiation of these ideas draws from Dorigo's [[Ant Colony Optimisation]] (1992), Kennedy and Eberhart's particle swarm optimisation (1995), and Reynolds' boids flocking simulation (1987), all of which demonstrated that simple local rules applied by many interacting agents generate sophisticated global behaviour — a mechanism now understood as [[Stigmergy]]-mediated [[Emergent Problem-Solving]].
   - Modern CIS architectures are distinguished by their integration of AI model layers — [[Large Language Model]]s, multi-modal transformers, [[Bayesian Inference]] engines — as active participants in the collective process, not merely as passive tools called by human orchestrators. The EU Horizon HACID project (2022–2025) demonstrated this hybrid approach in clinical and climate adaptation decision contexts, showing that structured human-AI collectives outperform either humans or AI in isolation on complex open-ended problems. The 2024 Mixture-of-Agents (MoA) architecture (Wang et al., 2024) formalised this pattern computationally, showing that layered multi-LLM collectives achieve state-of-the-art performance on standard benchmarks by allowing models in one layer to critique and refine outputs from the previous layer — a computational analogue of social deliberation. The Society of HiveMind paper (Tang et al., 2025) further extended this to multi-agent foundation model swarms with optimised topology, identifying scaling laws for collective LLM performance as agent count and structural diversity increase, directly paralleling the sociological scaling laws discovered by Woolley et al. for human groups. A parallel work on rigorous science of collective AI systems (Boucher et al., 2026; arXiv:2602.05289) called for the transition from blind trial-and-error in LLM-based MAS design to systematic empirical methodology, marking the field's maturation from engineering craft to empirical science.
 

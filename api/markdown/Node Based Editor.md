@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Node Based Editor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,19 +46,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"},
-      {"@id": "urn:ngm:class:world-building", "label": "World Building"}
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
     ]
   },
   "provenance": {
@@ -73,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:node-based-editor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c1b421f4a68765c3ecab6cdbb09b745cc342787b41f9c19f26892c1e65392407"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A visual authoring tool that represents computational logic, material properties, or content workflows as directed graphs of interconnected nodes and edges, enabling non-linear dataflow programming. Node-based editors are widely used in game engines, VFX pipelines, and spatial computing tools for shader authoring, procedural geometry generation, and real-time behaviour scripting.

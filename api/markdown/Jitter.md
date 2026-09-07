@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Jitter
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Jitter",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:network-performance-metrics", "vc:label": "Network Performance Metrics"},
-    {"@id": "urn:visionflow:linked:latency", "vc:label": "Latency"},
-    {"@id": "urn:visionflow:linked:propagation-delay", "vc:label": "Propagation Delay"},
-    {"@id": "urn:visionflow:linked:quality-of-service", "vc:label": "Quality Of Service"},
-    {"@id": "urn:visionflow:linked:real-time-communication", "vc:label": "Real-Time Communication"}
+    {
+      "@id": "urn:visionflow:linked:network-performance-metrics",
+      "vc:label": "Network Performance Metrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:latency",
+      "vc:label": "Latency"
+    },
+    {
+      "@id": "urn:visionflow:linked:propagation-delay",
+      "vc:label": "Propagation Delay"
+    },
+    {
+      "@id": "urn:visionflow:linked:quality-of-service",
+      "vc:label": "Quality Of Service"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-communication",
+      "vc:label": "Real-Time Communication"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -39,12 +54,24 @@ public: true
   },
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:propagation-delay", "label": "Propagation Delay"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality of Service"},
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"}
+      {
+        "@id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
     ]
   },
   "quality": 0.8,

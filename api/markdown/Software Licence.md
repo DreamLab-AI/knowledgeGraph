@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Software Licence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,10 +20,18 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:intellectual-property", "label": "Intellectual Property"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      }
+    ]
   },
   "quality": 0.7
 }

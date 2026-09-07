@@ -1,38 +1,119 @@
----
-public: true
----
-
-# Building Information Modelling
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:building-information-modelling", "@type":"Page", "title":"Building Information Modelling", "vc:slug":"building-information-modelling", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:building-information-modelling",
-  "@type":"Class",
-  "label":"Building Information Modelling",
-  "definition":"Building Information Modelling (BIM) is a collaborative process for creating and managing a shared digital representation of the physical and functional characteristics of a built asset across its lifecycle. A BIM model is an object-oriented, parametric 3D database in which geometry is enriched with semantic data such as materials, costs, schedules and performance properties. It supports coordinated design, clash detection, quantity take-off and facility management by allowing architects, engineers and contractors to work against a single federated source of truth. BIM underpins the convergence of construction practice with digital twin and spatial computing technologies.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"},{"@id":"urn:ngm:class:digital-twin","label":"Digital Twin"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:digital-twin","label":"Digital Twin"}],
-    "hasPart":[{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"}],
-    "requires":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "enables":[{"@id":"urn:ngm:class:digital-twin-technology","label":"Digital Twin Technology"}],
-    "uses":[{"@id":"urn:ngm:class:photogrammetry","label":"Photogrammetry"},{"@id":"urn:ngm:class:lidar","label":"LiDAR"}],
-    "supports":[{"@id":"urn:ngm:class:digital-twin","label":"Digital Twin"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:geographic-information-system","label":"Geographic Information System"}],
-    "relatedTo":[{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"},{"@id":"urn:ngm:class:photogrammetry","label":"Photogrammetry"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}],
-    "dependsOn":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:building-information-modelling",
+  "@type": "Page",
+  "title": "Building Information Modelling",
+  "vc:slug": "building-information-modelling",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:building-information-modelling",
+  "@type": "Class",
+  "label": "Building Information Modelling",
+  "definition": "Building Information Modelling (BIM) is a collaborative process for creating and managing a shared digital representation of the physical and functional characteristics of a built asset across its lifecycle. A BIM model is an object-oriented, parametric 3D database in which geometry is enriched with semantic data such as materials, costs, schedules and performance properties. It supports coordinated design, clash detection, quantity take-off and facility management by allowing architects, engineers and contractors to work against a single federated source of truth. BIM underpins the convergence of construction practice with digital twin and spatial computing technologies.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-twin-technology",
+        "label": "Digital Twin Technology"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Building Information Modelling (BIM) is a collaborative process for producing and governing a shared digital model of a built asset. It draws on [[Spatial Computing]], [[Digital Twin]], [[Photogrammetry]], [[LiDAR]] and [[Geographic Information System]] to enrich 3D geometry with semantic data.
 - ### Overview

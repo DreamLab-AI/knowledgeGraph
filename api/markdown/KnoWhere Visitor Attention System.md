@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Knowhere]]
-# KnoWhere Visitor Attention System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,20 +71,44 @@ elevatedFrom:: [[Knowhere]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:segmentation-and-identification", "label": "Segmentation and Identification"}
+      {
+        "@id": "urn:ngm:class:segmentation-and-identification",
+        "label": "Segmentation and Identification"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ]
   },
   "quality": 0.5,
@@ -101,57 +119,6 @@ elevatedFrom:: [[Knowhere]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:knowhere:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4b753959193e5d913fea2fdd6dda1bf8a4dee295526f42d332f1cdedc363d1b4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Head Gaze]]",
-      "resolved": "urn:visionflow:linked:head-gaze",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[KnoWhere]]",
-      "resolved": "urn:visionflow:linked:kno-where",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Face Swap]]",
-      "resolved": "urn:visionflow:owl:class:face-swap",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA Omniverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Domain Expert Contact Index]]",
-      "resolved": "urn:visionflow:owl:class:people",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Segmentation and Identification]]",
-      "resolved": "urn:visionflow:owl:class:segmentation-and-identification",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - KnoWhere is an AI-driven visitor attention-tracking system for museums and immersive experience spaces, using computer vision and machine vision cameras to capture gaze vectors, emotion signals, and spatial attention metrics in real time without wearables. It enables hyper-personalised narrative adaptation and provides curators with actionable behavioural analytics whilst preserving visitor privacy through anonymised data processing.

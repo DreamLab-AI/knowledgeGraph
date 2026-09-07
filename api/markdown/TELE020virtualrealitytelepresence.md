@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE020virtualrealitytelepresence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,17 +46,38 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tele-050-neuralrenderingtelepresence", "label": "TELE 050 neuralrenderingtelepresence"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:tele-050-neuralrenderingtelepresence",
+        "label": "TELE 050 neuralrenderingtelepresence"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ]
   },
   "provenance": {
@@ -71,26 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele020virtualrealitytelepresence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f32cffd052e0da813c09f8b15b69a3201fc58caa59c6b3d6edf690974c715fba"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Virtual Reality Telepresence (TELE020) combines immersive head-mounted display technology with real-time communication infrastructure to create a compelling shared sense of presence among geographically distributed participants. Key technical components include stereoscopic rendering, head-related transfer function spatial audio, full-body motion tracking for avatar animation, and bandwidth-adaptive network transport; modern platforms extend to eye tracking, facial capture, haptic feedback, and mixed-reality blending of physical and virtual participants.

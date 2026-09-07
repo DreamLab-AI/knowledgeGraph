@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pick and Place
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Pick and place is a canonical robotic manipulation task in which a manipulator grasps an object at a source location and deposits it at a target location. It chains perception to localise the object, motion planning to reach and grasp it, and controlled placement, often repeated at high speed in structured settings. It is the foundational operation of industrial automation in assembly, packaging, and sorting.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:manipulation", "label": "Manipulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:position-control", "label": "PositionControl"}, {"@id": "urn:ngm:class:cylindrical-robot", "label": "Cylindrical Robot"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      },
+      {
+        "@id": "urn:ngm:class:cylindrical-robot",
+        "label": "Cylindrical Robot"
+      }
+    ]
   },
   "quality": 0.72
 }

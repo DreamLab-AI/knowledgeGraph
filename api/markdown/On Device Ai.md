@@ -1,11 +1,16 @@
----
-public: true
----
-
-# On Device Ai
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:on-device-ai", "@type":"Page", "title":"On Device Ai", "vc:slug":"on-device-ai", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:on-device-ai",
+  "@type": "Page",
+  "title": "On Device Ai",
+  "vc:slug": "on-device-ai",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -114,6 +119,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - On-device AI runs machine-learning [[Inference]] locally on phones, wearables and sensors instead of in the cloud. As a form of [[Edge AI]] within [[Edge Computing]], it trades remote scale for low [[Latency]], offline operation and stronger [[Data Privacy]].
 - ### Overview

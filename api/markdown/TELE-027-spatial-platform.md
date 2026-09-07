@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-027-spatial-platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-027-spatial-platform:42d44f9f2c51",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:694d25f73a9d7736c65961605de6348d7d4e3d7fded1dae7d7da5018bd309302"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar System]]",
-      "resolved": "urn:visionflow:linked:avatar-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Remote Collaboration]]",
-      "resolved": "urn:visionflow:linked:remote-collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:linked:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:linked:telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Spatial is a collaboration platform that hosts virtual rooms where participants meet as avatars to share documents, 3D models and media for meetings, events and presentations.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - NeuralMachineTranslation
----
-
-# Neural Machine Translation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,21 +20,50 @@ aliases:
   "definition": "Neural Machine Translation (NMT) is an approach to automated language translation in which end-to-end neural networks — typically based on encoder-decoder architectures with attention mechanisms — learn to map source-language sequences directly to target-language sequences from parallel corpora. Unlike earlier statistical phrase-based methods, NMT systems capture long-range dependencies and global sentence context, producing more fluent and contextually accurate translations. The Transformer architecture has become the dominant NMT paradigm since its introduction in 2017.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:language-translation", "label": "Language Translation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:language-translation",
+      "label": "Language Translation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-language-translation", "label": "Real-Time Language Translation"},
-      {"@id": "urn:ngm:class:real-time-translation", "label": "Real-time Translation"}
+      {
+        "@id": "urn:ngm:class:real-time-language-translation",
+        "label": "Real-Time Language Translation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-translation",
+        "label": "Real-time Translation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:language-model", "label": "Language Model"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
     ]
   },
   "quality": 0.8
@@ -59,7 +81,6 @@ aliases:
 
   - An NMT system processes input as a tokenised sequence, encodes it into a dense contextual representation via stacked Transformer encoder blocks, then autoregressively decodes the target language token by token. Cross-attention between encoder outputs and decoder states allows the model to focus on relevant source positions at each decoding step. Training requires large parallel corpora (sentence-aligned text in source and target languages) and is optimised with cross-entropy loss, often supplemented by back-translation to exploit monolingual data. Quality is evaluated using BLEU, chrF, and COMET scores.
 
-  - NMT is significant because it has made translation quality approximately human-parity for high-resource language pairs (English-German, English-French) and has enabled previously inaccessible services across thousands of language pairs. It underpins real-time subtitling, international e-commerce, multilingual customer support, and diplomatic communication. The shift to massively multilingual models (covering 100+ languages in a single model) has democratised translation for low-resource languages that could never attract dedicated statistical pipelines.
+  - NMT is significant because it has made translation quality approximately human-parity for high-resource language pairs (English-German, English-French) and has enabled previously inaccessible services across thousands of language pairs. It underpins real-time subtitling, international e-commerce, multilingual customer support, and diplomatic communication. The shift to massively multilingual models (covering 100+ languages in a single model) has democratised translation for low-resource languages that [private] never attract dedicated statistical pipelines.
 
   - In 2024-2025, large language models such as GPT-4 and Gemini have subsumed NMT as a capability, translating via instruction prompting and often matching or exceeding dedicated NMT systems on general text. Document-level translation, preserving discourse coherence across paragraphs, remains an active research challenge. Specialised NMT systems continue to dominate in domains requiring strict latency and predictable output (real-time speech translation, legal document translation), while multimodal translation (images, speech, video) is an emerging frontier.
-

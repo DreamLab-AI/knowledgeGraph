@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Request-Response Pattern
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:request-response-pattern", "@type":"Page", "title":"Request-Response Pattern", "vc:slug":"request-response-pattern", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:request-response-pattern",
+  "@type": "Page",
+  "title": "Request-Response Pattern",
+  "vc:slug": "request-response-pattern",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

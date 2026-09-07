@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hardware Acceleration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,42 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hardware-acceleration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1b50d4c8c9f4753b80de9b14b86bbbe8ef2e637a8d902b1a0474490f1600dd6e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Real-Time VR Performance]]",
-      "resolved": "urn:visionflow:linked:real-time-vr-performance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computing Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:computing-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The use of specialised hardware components, particularly GPUs and dedicated processors, to offload computationally intensive rendering, physics simulation, and AI workloads from the CPU, enabling real-time performance essential for immersive VR/AR metaverse experiences.

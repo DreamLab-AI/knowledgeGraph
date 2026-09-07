@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Namespace Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Namespace management is the discipline of allocating, resolving, and governing the prefixes and base IRIs that disambiguate identifiers in a data or knowledge system. It ensures that terms drawn from different vocabularies do not collide and that abbreviated CURIE-style names resolve consistently to canonical IRIs. Effective namespace management is foundational for interoperable metadata, ontology reuse, and stable linked-data references.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-metadata-registry", "label": "Semantic Metadata Registry"},
-      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"}
+      {
+        "@id": "urn:ngm:class:semantic-metadata-registry",
+        "label": "Semantic Metadata Registry"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
     ]
   },
   "quality": 0.72

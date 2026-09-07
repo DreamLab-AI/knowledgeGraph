@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,7 +195,7 @@ public: true
     - [[Graph Embedding]] methods (Node2Vec, DeepWalk, LINE) produce low-dimensional vector representations without end-to-end learning, supporting downstream [[Recommendation System]]s and search.
   - #### Link Prediction
     - [[Link Prediction]] infers missing or future edges from existing topology and node features.
-    - Heuristic approaches: common neighbours, Jaccard coefficient, Adamic-Adar index.
+    - Heuristic approaches: common neighbours, Jaccard coefficient, Adamic-Adar [private].
     - Embedding-based: DistMult, TransE, ComplEx for knowledge graph completion.
     - GNN-based: SEAL uses subgraph extraction around candidate pairs; GRAIL leverages relational context.
   - #### Dynamic and Temporal Analysis

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stakeholder Engagement in AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -72,24 +67,60 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
-      {"@id": "urn:ngm:class:ethical-review-process", "label": "Ethical Review Process"},
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"}
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-review-process",
+        "label": "Ethical Review Process"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:participation-framework", "label": "Participation Framework"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:participation-framework",
+        "label": "Participation Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ]
   },
   "provenance": {
@@ -99,52 +130,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:stakeholder-engagement-in-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f64ee1ed6013e24e7333b70f20955158fd62a2e5391c52acd50426a96a27ce13"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO 26000]]",
-      "resolved": "urn:visionflow:linked:iso-26000",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD AI Principles]]",
-      "resolved": "urn:visionflow:linked:oecd-ai-principles",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Stakeholder Engagement in AI is a participatory process that systematically identifies, involves, and incorporates perspectives from individuals, groups, and communities affected by or having legitimate interests in AI systems, ensuring inclusive design, accountable deployment, and responsive governance. This engagement encompasses diverse stakeholders including end users, affected communities, subject matter experts, civil society organizations, regulators, and internal organizational stakeholders, soliciting input through various methods to inform AI system design, risk assessment, and governance decisions. Engagement methods span the participation spectrum from information provision (transparency reports, public documentation), consultation (surveys, focus groups, public comment periods), collaboration (co-design workshops, participatory research), and empowerment (community oversight boards, contestation mechanisms). Effective stakeholder engagement identifies power asymmetries and barriers to participation, ensuring meaningful inclusion of marginalized and vulnerable groups, uses accessible communication avoiding technical jargon, provides adequate time and resources for informed participation, demonstrates responsiveness by showing how input influenced decisions, and maintains ongoing dialogue rather than one-time consultation. Benefits include surfacing ethical concerns and unintended consequences, incorporating domain expertise and lived experience, building public trust and legitimacy, identifying fairness issues across diverse populations, and strengthening accountability through external oversight. Implementation aligns with participatory design methodologies, human rights due diligence processes, and requirements in frameworks including the EU AI Act Article 29 (codes of conduct involving stakeholders), OECD AI Principle 2.3 (stakeholder engagement), and ISO 26000 guidance on stakeholder engagement.

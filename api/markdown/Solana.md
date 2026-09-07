@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Solana
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -163,7 +158,7 @@ public: true
 - ### Definition
   - [[Solana]] is a high-performance layer-1 [[Smart Contract Platform]] that achieves sub-second finality and sustained high [[Blockchain Scalability]] through a suite of interlocking innovations: [[Proof of History]] as a cryptographic clock, the [[Sealevel]] parallel execution runtime, [[Gulf Stream]] mempool-less forwarding, [[Tower BFT]] as its Byzantine-fault-tolerant [[Consensus Mechanism]], and the [[Turbine]] block-propagation protocol. Native programs are written in [[Rust Programming Language]] and compiled to Berkeley Packet Filter (BPF) bytecode, enabling near-metal execution speeds. The network's native token, SOL, is used for transaction fees, staking, and governance participation, situating Solana firmly within the broader [[Web3]] and [[Decentralised Finance]] landscape.
 - ### Overview
-  - Solana was conceived by Anatoly Yakovenko, whose background in distributed systems at Qualcomm led to the insight that imposing a shared, trustless notion of time onto a decentralised ledger could dramatically reduce validator coordination overhead. The [[Proof of History]] whitepaper (2017) articulated this as a pre-consensus ordering mechanism, with the project bootstrapped through the Solana Foundation and a series of fundraising rounds culminating in mainnet-beta launch in March 2020.
+  - Solana was conceived by Anatoly Yakovenko, whose background in distributed systems at Qualcomm led to the insight that imposing a shared, trustless notion of time onto a decentralised ledger [private] dramatically reduce validator coordination overhead. The [[Proof of History]] whitepaper (2017) articulated this as a pre-consensus ordering mechanism, with the project bootstrapped through the Solana Foundation and a series of fundraising rounds culminating in mainnet-beta launch in March 2020.
   - The network targets a different design trade-off than sharded or rollup-centric blockchains: rather than spreading load across many chains, Solana pursues maximum single-chain throughput through hardware-scale vertical optimisation — exploiting modern CPUs with many cores, SSDs, and high-bandwidth networking. The result is a single global state machine capable of processing a large volume of transactions per second, preserving composability across the entire application layer without cross-shard or cross-rollup communication latency.
   - SOL staking underpins network security via delegated [[Proof of Stake]]: token holders delegate stake to [[Validator Node]] operators, who must maintain sufficient uptime and hardware quality to earn rewards. The leader schedule (the sequence in which validators produce blocks) is determined deterministically from the stake distribution, giving large stakeholders predictable block-production opportunities.
   - Solana's ecosystem hosts an expanding set of [[Decentralised Finance]] protocols, [[NFT Marketplace]] platforms, payments applications, and developer tooling. Firedancer, a second independent validator client developed by Jump Crypto, represents a significant maturity milestone: a client implementation diversity milestone analogous to the role Prysm/Lighthouse diversity plays in Ethereum's robustness.

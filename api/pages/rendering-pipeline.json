@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:rendering-pipeline",
   "domain": "spatial-computing",
-  "definition": "The Rendering Pipeline is the ordered computational sequence by which a GPU transforms three-dimensional scene representations \u2014 vertex buffers, index buffers, textures, uniform data, and acceleration structures \u2014 into a two-dimensional raster image suitable for display or further processing.",
+  "definition": "The Rendering Pipeline is the ordered computational sequence by which a GPU transforms three-dimensional scene representations \u2014 vertex buffers, [private] buffers, textures, uniform data, and acceleration structures \u2014 into a two-dimensional raster image suitable for display or further processing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-display-and-rendering",

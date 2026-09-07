@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Industrial Symbiosis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Industrial symbiosis is a collaborative approach within industrial ecology in which geographically proximate companies exchange materials, energy, water, and by-products to achieve collective environmental and economic benefits that are unattainable individually. By treating the waste or surplus of one facility as a resource input for another, industrial symbiosis operationalises circular economy principles at an industrial park or regional scale.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:circular-economy",
+      "label": "Circular Economy"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:material-flow-analysis", "label": "Material Flow Analysis"},
-      {"@id": "urn:ngm:class:life-cycle-assessment", "label": "Life Cycle Assessment"}
+      {
+        "@id": "urn:ngm:class:material-flow-analysis",
+        "label": "Material Flow Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:resource-efficiency", "label": "Resource Efficiency"},
-      {"@id": "urn:ngm:class:waste-management", "label": "Waste Management"}
+      {
+        "@id": "urn:ngm:class:resource-efficiency",
+        "label": "Resource Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:waste-management",
+        "label": "Waste Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
-      {"@id": "urn:ngm:class:e-waste", "label": "E-Waste"}
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:e-waste",
+        "label": "E-Waste"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - Environmental benefits include reduced landfill burden, lower virgin resource extraction, decreased greenhouse gas emissions, and water recycling. Economic benefits include avoided disposal costs, reduced input costs, and revenue from sold by-products. Quantitative assessment uses material and energy flow analysis to model symbiosis networks, and life cycle assessment to attribute environmental credits and burdens. The discipline intersects with urban metabolism studies and eco-industrial park planning policy.
 
   - Current trends in 2024-2025 include the application of AI-powered matchmaking platforms to identify industrial symbiosis opportunities across large industrial datasets, and integration with digital product passport frameworks under the EU's Ecodesign Regulation. Extended producer responsibility legislation is driving sectors including electronics and packaging towards mandated symbiosis-compatible by-product recovery. Industrial symbiosis frameworks are also being applied to data centre waste heat recovery, connecting compute infrastructure to district heating networks.
-

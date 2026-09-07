@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Human vs AI]]
-# Human-AI Capability Complementarity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,16 +42,34 @@ elevatedFrom:: [[Human vs AI]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:autonomous-ai-agents", "label": "Autonomous AI Agents"},
-      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"}
+      {
+        "@id": "urn:ngm:class:autonomous-ai-agents",
+        "label": "Autonomous AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ]
   },
   "provenance": {
@@ -67,26 +79,6 @@ elevatedFrom:: [[Human vs AI]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:human-vs-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b78e664389d864d99bb49089302e3747ebbbe308b6be43b2cc005a88e5330399"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The contested domain examining comparative capabilities, limitations, and complementarities between human cognition and artificial intelligence systems, encompassing debates about autonomy, agency, creativity, and the appropriate division of decision-making authority between people and machines.

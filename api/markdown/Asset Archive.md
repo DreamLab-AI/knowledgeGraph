@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Archive
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,72 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:asset-archive:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0a1168147885d160e28843a3e0bf1386ae1c6c8e5fe16ad4e212bdac7ee6ff86"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Preservation]]",
-      "resolved": "urn:visionflow:linked:asset-preservation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Content Reuse]]",
-      "resolved": "urn:visionflow:linked:content-reuse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Standardized Formats]]",
-      "resolved": "urn:visionflow:linked:standardized-formats",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Platform Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:cross-platform-interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Repository]]",
-      "resolved": "urn:visionflow:owl:class:digital-repository",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metadata Management]]",
-      "resolved": "urn:visionflow:owl:class:metadata-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Storage Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:storage-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across metaverse platforms.

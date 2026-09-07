@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Graphics Library
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -99,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:graphics-library:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:258fc69fc61c82ec1b8de395de5956f995abe6cab22ea8477f00ee41bf9b89e6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A software library that provides a standardised API for issuing draw calls, managing GPU resources, and configuring the graphics pipeline, abstracting hardware differences from application code. Canonical graphics libraries—OpenGL, Vulkan, Metal, DirectX, WebGL—enable portable, high-performance 2D and 3D rendering across diverse hardware platforms and are foundational to real-time spatial computing applications.

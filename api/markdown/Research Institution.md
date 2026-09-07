@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Research Institution
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:research-institution", "@type":"Page", "title":"Research Institution", "vc:slug":"research-institution", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:research-institution",
+  "@type": "Page",
+  "title": "Research Institution",
+  "vc:slug": "research-institution",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -124,7 +127,7 @@ public: true
 - ### Key aspects
 - Mission orientation: every institution articulates a research mandate that prioritises certain questions, disciplines and timescales.
 - Human capital: the recruitment, training and retention of researchers is the institution's most decisive asset.
-- Infrastructure: shared instrumentation, compute clusters, laboratories and data repositories enable work that individuals could not undertake alone.
+- Infrastructure: shared instrumentation, compute clusters, laboratories and data repositories enable work that individuals [private] not undertake alone.
 - Governance: ethics boards, integrity offices and review committees safeguard the credibility of outputs.
 - Dissemination: publication, conference participation and open-data practices convert internal findings into public knowledge.
 - Funding strategy: diversified income streams reduce dependence on any single sponsor and stabilise long-horizon programmes.

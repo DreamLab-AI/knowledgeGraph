@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tooling Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tooling-layer:dda699c282d1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:37a9c5f63639b15c13632dee0a01a443ce81426e06b4034b37b311e3baddd79d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Runtime Layer]]",
-      "resolved": "urn:visionflow:linked:runtime-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Operational Layer]]",
-      "resolved": "urn:visionflow:linked:operational-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Research Layer]]",
-      "resolved": "urn:visionflow:linked:research-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Continuous Integration]]",
-      "resolved": "urn:visionflow:linked:continuous-integration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Observability]]",
-      "resolved": "urn:visionflow:linked:observability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Tooling Layer is the cross-cutting stratum that provides the development, deployment, and observability instruments used to build and operate the rest of the system. It sits beside the production strata rather than within the runtime data path and supports operational and research work. It contains build systems, debuggers, monitors, and automation utilities.

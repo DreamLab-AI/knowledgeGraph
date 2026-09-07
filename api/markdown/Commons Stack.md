@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Commons Stack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:commons-stack:b25a422283f8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:68774d58f998b39ccee534c81545de833ba131abd06d36c6a5ce560a4b9036b0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Tokenomics]]",
-      "resolved": "urn:visionflow:linked:tokenomics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quadratic Funding]]",
-      "resolved": "urn:visionflow:linked:quadratic-funding",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Autonomous Organization]]",
-      "resolved": "urn:visionflow:linked:decentralized-autonomous-organization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Public Goods Funding]]",
-      "resolved": "urn:visionflow:linked:public-goods-funding",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Commons Stack is an initiative providing tools and economic models for funding and governing public goods through token-based communities. It draws on mechanisms such as bonding curves and continuous funding.

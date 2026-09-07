@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Disruption]]
-# Technology Disruption Dynamics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,16 +51,34 @@ elevatedFrom:: [[Disruption]]
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:disruptive-technology", "label": "Disruptive Technology"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:disruptive-technology",
+        "label": "Disruptive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:decentralised-agentic-infrastructure-stack", "label": "Decentralised Agentic Infrastructure Stack"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-agentic-infrastructure-stack",
+        "label": "Decentralised Agentic Infrastructure Stack"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ]
   },
   "provenance": {
@@ -76,37 +88,6 @@ elevatedFrom:: [[Disruption]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:disruption:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4785a095469023ab97b78d2ce074732f68095498c4372e84965d58c435329329"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Disruption describes the process by which emerging technologies, platforms, or economic models radically displace incumbent systems by offering superior capability, lower cost, or fundamentally new value propositions. In the context of AI, blockchain, and spatial computing, disruption manifests as wholesale replacement of legacy industries—finance, knowledge work, supply chain, governance—rather than incremental improvement.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Operational Efficiency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Operational Efficiency is the capability of an organization or system to deliver outputs while minimizing wasted resources such as time, cost, energy, and labor. It is achieved through process optimization, automation, and measurement of input-to-output ratios across workflows. In industrial and digital contexts it is a primary target of automation and transformation initiatives that seek higher throughput and lower unit cost.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"}
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
     ]
   },
   "quality": 0.72

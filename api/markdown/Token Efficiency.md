@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Token Efficiency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "token-efficiency",
   "title": "Token Efficiency",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Model Selection", "Total Cost of Ownership"],
+  "vc:outboundWikilinks": [
+    "AI Model Selection",
+    "Total Cost of Ownership"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-economics", "label": "AI Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-economics",
+      "label": "AI Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cost-effectiveness", "label": "Cost-Effectiveness"}, {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cost-effectiveness",
+        "label": "Cost-Effectiveness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

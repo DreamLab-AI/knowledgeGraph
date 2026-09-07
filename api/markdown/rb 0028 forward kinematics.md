@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0028 forward kinematics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,48 @@ public: true
   "quality": 0.7,
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0029-inverse-kinematics", "label": "rb 0029 inverse kinematics"}
+      {
+        "@id": "urn:ngm:class:rb-0029-inverse-kinematics",
+        "label": "rb 0029 inverse kinematics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
-      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"},
-      {"@id": "urn:ngm:class:rb-0031-singularity", "label": "rb 0031 singularity"},
-      {"@id": "urn:ngm:class:rb-0024-workspace", "label": "rb 0024 workspace"}
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0031-singularity",
+        "label": "rb 0031 singularity"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0024-workspace",
+        "label": "rb 0024 workspace"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"},
-      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"}
+      {
+        "@id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"},
-      {"@id": "urn:ngm:class:rb-0052-collision-avoidance", "label": "rb 0052 collision avoidance"}
+      {
+        "@id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0052-collision-avoidance",
+        "label": "rb 0052 collision avoidance"
+      }
     ]
   },
   "provenance": {
@@ -84,32 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0028-forward-kinematics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2b48a0033d19fe8187c9164d2efc3613c760f294a39031e52238b7375122a226"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Forward Kinematics** (RB-0028) computes the Cartesian pose (position and orientation) of a robot's end effector from a given set of joint angles using a chain of homogeneous transformation matrices. FK is deterministic and unique (one joint configuration yields exactly one end-effector pose), in contrast to inverse kinematics which may have multiple or no solutions.

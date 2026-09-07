@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Analytics Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A blockchain analytics platform is software that ingests, clusters, and analyses on-chain transaction data to trace fund flows, attribute addresses to entities, and assess risk. Platforms such as Chainalysis and Elliptic apply heuristics, machine learning, and labelled datasets to support anti-money-laundering, sanctions screening, and investigations. They are central tooling for exchange compliance teams, regulators, and law-enforcement agencies.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-analysis", "label": "Blockchain Analysis"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}
+      {
+        "@id": "urn:ngm:class:blockchain-analysis",
+        "label": "Blockchain Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
     ]
   },
   "quality": 0.72

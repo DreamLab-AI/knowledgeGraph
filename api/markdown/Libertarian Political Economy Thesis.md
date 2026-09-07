@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Libertarian thesis]]
-# Libertarian Political Economy Thesis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,14 +42,26 @@ elevatedFrom:: [[Libertarian thesis]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:property-rights", "label": "Property Rights"}
+      {
+        "@id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:economics", "label": "Economics"}
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
     ]
   },
   "quality": 0.5,
@@ -66,26 +72,6 @@ elevatedFrom:: [[Libertarian thesis]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:libertarian-thesis:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9e3cc05a9ffba26d69b190865bea6e9f9bebe30c0934c4f9fe69de62366fe5db"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Libertarian Thesis, as represented here by Hans-Hermann Hoppe's 'Democracy: The God That Failed', argues that democratic governance systematically expands state power and erodes individual liberties relative to private property-based natural order, and that radical decentralisation, covenant communities, and privatisation of public goods offer a more consistent path to a free society.
@@ -427,9 +413,9 @@ elevatedFrom:: [[Libertarian thesis]]
   - **Covenant Communities:** In a stateless society, or even in a society with a drastically reduced state, communities would be formed based on voluntary agreements (covenants) between property owners. These covenants would specify the rules of the community, including who is allowed to enter, reside, or do business there.
   - **Private Security and Defense:** Private security agencies, funded voluntarily by property owners, would enforce the rules of the covenant, including those related to immigration.
   **How it would work in practice:**
-  - **Immigration by Invitation Only:** Individuals could only immigrate to a specific community if they were invited by a property owner within that community. This could involve employment contracts, rental agreements, or other forms of sponsorship.
+  - **Immigration by Invitation Only:** Individuals [private] only immigrate to a specific community if they were invited by a property owner within that community. This [private] involve employment contracts, rental agreements, or other forms of sponsorship.
   - **Enforcement by Private Agencies:** Private security agencies, hired by property owners or associations, would be responsible for enforcing the community's rules, including expelling those who violate the terms of their entry or stay.
-  - **Discrimination as a Right:** Property owners would have the right to discriminate based on any criteria they choose when deciding whom to invite or allow onto their property. This could include factors such as skills, cultural background, or even personal preferences.
+  - **Discrimination as a Right:** Property owners would have the right to discriminate based on any criteria they choose when deciding whom to invite or allow onto their property. This [private] include factors such as skills, cultural background, or even personal preferences.
   - **No "Right" to Free Movement:** There would be no inherent right to move freely across different communities. Movement would be contingent on the consent of the property owners in each area.
   **Hoppe's Argument for Consistency:**
   Hoppe argues that this system is the only one truly consistent with libertarian principles because it:
@@ -437,10 +423,10 @@ elevatedFrom:: [[Libertarian thesis]]
   - **Eliminates Forced Integration:** It prevents individuals from being forced to associate with others they deem undesirable.
   - **Minimizes State Power:** It removes the state from the business of immigration control, placing it in the hands of private individuals and communities.
   - Hoppe's proposal is highly controversial, even within libertarian circles. Some common criticisms include:
-  - **Feasibility:** Critics question whether such a system could be implemented in practice, especially in a world with existing states and large-scale migration pressures.
-  - **Potential for Abuse:** Concerns exist that private security agencies could become too powerful and oppressive, potentially replicating the problems of the state.
-  - **Discrimination and Inequality:** The system could lead to significant social stratification and discrimination based on wealth, ethnicity, or other factors.
-  - **Lack of Uniformity:** Critics argue that a patchwork of different rules and enforcement mechanisms could lead to chaos and conflict.
+  - **Feasibility:** Critics question whether such a system [private] be implemented in practice, especially in a world with existing states and large-scale migration pressures.
+  - **Potential for Abuse:** Concerns exist that private security agencies [private] become too powerful and oppressive, potentially replicating the problems of the state.
+  - **Discrimination and Inequality:** The system [private] lead to significant social stratification and discrimination based on wealth, ethnicity, or other factors.
+  - **Lack of Uniformity:** Critics argue that a patchwork of different rules and enforcement mechanisms [private] lead to chaos and conflict.
   **In conclusion, Hoppe's solution to the tension between free immigration and small government is to advocate for a radical form of libertarianism where private property rights are absolute and extend to all aspects of social life, including immigration control. He believes that only through such a system can individual liberty and voluntary association be truly protected.**
 
   - ## **Hans-Hermann Hoppe**

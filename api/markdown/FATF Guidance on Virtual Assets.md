@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FATF Guidance on Virtual Assets
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The FATF Guidance on Virtual Assets is the Financial Action Task Force's risk-based interpretation of how its anti-money-laundering standards apply to virtual assets and virtual-asset service providers (VASPs). It defines key terms, requires VASP licensing or registration and supervision, and introduces the 'travel rule' obliging the transfer of originator and beneficiary information with transactions. The guidance shapes how exchanges, custodians, and DeFi arrangements are regulated worldwide.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:cbdcs", "label": "CBDCs"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
     ]
   },
   "quality": 0.72

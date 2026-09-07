@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safety Integrity Level
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Safety Integrity Level (SIL) is a discrete measure of the risk-reduction provided by a safety function, defined by the IEC 61508 family of standards on four levels (SIL 1 to SIL 4). Each level corresponds to a target probability of dangerous failure on demand or per hour. SIL is used to specify, design, and verify that safety-related control systems achieve a tolerable level of risk.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:robot-standard", "label": "Robot Standard"},
-      {"@id": "urn:ngm:class:safety-function", "label": "Safety Function"}
+      {
+        "@id": "urn:ngm:class:robot-standard",
+        "label": "Robot Standard"
+      },
+      {
+        "@id": "urn:ngm:class:safety-function",
+        "label": "Safety Function"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Residual Connection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -97,32 +92,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:residual-connection:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:955bc4e223dba0e1eed40a82d971f978d33963bc5b466c75e25efed05bc5ff4e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A neural network connection that adds the input of a layer directly to its output, forming a skip connection that enables stable gradient flow during backpropagation in very deep architectures. Residual connections mitigate the vanishing gradient problem and allow networks of hundreds of layers to be trained effectively, forming a foundational component of ResNet and Transformer architectures.
 
@@ -153,7 +122,7 @@ public: true
 					- Click the Add button to open up the VPN type drop-down.
 					- Select OpenVPN from the list.
 					- Fill out the necessary information on the OpenVPN tab
-  - We look forward to seeing you at the ComfyUI for Fashion and Brands event! If you have any questions or concerns, please don't hesitate to reach out to the event organisers.
+  - We look forward to seeing you at the [private] event! If you have any questions or concerns, please don't hesitate to reach out to the event organisers.
   - Remember to bring your laptop and a passion for fashion, innovation, and AI-driven creation. Let's push the boundaries of generative AI together!
   - [www.eventbrite.co.uk/e/comfy-ui-for-fashion-and-brands-tickets-894342842517](http://www.eventbrite.co.uk/e/comfy-ui-for-fashion-and-brands-tickets-894342842517)
 
@@ -168,7 +137,7 @@ public: true
 					- Click the Add button to open up the VPN type drop-down.
 					- Select OpenVPN from the list.
 					- Fill out the necessary information on the OpenVPN tab
-  - We look forward to seeing you at the ComfyUI for Fashion and Brands event! If you have any questions or concerns, please don't hesitate to reach out to the event organisers.
+  - We look forward to seeing you at the [private] event! If you have any questions or concerns, please don't hesitate to reach out to the event organisers.
   - Remember to bring your laptop and a passion for fashion, innovation, and AI-driven creation. Let's push the boundaries of generative AI together!
   - [www.eventbrite.co.uk/e/comfy-ui-for-fashion-and-brands-tickets-894342842517](http://www.eventbrite.co.uk/e/comfy-ui-for-fashion-and-brands-tickets-894342842517)
 
@@ -193,7 +162,7 @@ public: true
 					- Click the Add button to open up the VPN type drop-down.
 					- Select OpenVPN from the list.
 					- Fill out the necessary information on the OpenVPN tab
-  - We look forward to seeing you at the ComfyUI for Fashion and Brands event! If you have any questions or concerns, please don't hesitate to reach out to the event organisers.
+  - We look forward to seeing you at the [private] event! If you have any questions or concerns, please don't hesitate to reach out to the event organisers.
   - Remember to bring your laptop and a passion for fashion, innovation, and AI-driven creation. Let's push the boundaries of generative AI together!
   - [www.eventbrite.co.uk/e/comfy-ui-for-fashion-and-brands-tickets-894342842517](http://www.eventbrite.co.uk/e/comfy-ui-for-fashion-and-brands-tickets-894342842517)
 

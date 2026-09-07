@@ -1,37 +1,120 @@
----
-public: true
----
-
-# Crowdsourcing
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:crowdsourcing", "@type":"Page", "title":"Crowdsourcing", "vc:slug":"crowdsourcing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:crowdsourcing",
+  "@type": "Page",
+  "title": "Crowdsourcing",
+  "vc:slug": "crowdsourcing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:crowdsourcing",
-  "@type":"Class",
-  "label":"Crowdsourcing",
-  "definition":"Crowdsourcing is the practice of obtaining contributions, labour or judgements from a large distributed group of people, typically through an open call mediated by an online platform. In machine learning it is widely used to collect, label and validate training data by decomposing work into microtasks distributed across many contributors. Effective crowdsourcing combines incentive design with quality-control mechanisms to aggregate noisy individual inputs into reliable results.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-collection","label":"Data Collection"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:data-collection","label":"Data Collection"}],
-    "hasPart":[{"@id":"urn:ngm:class:incentive-mechanism","label":"Incentive Mechanism"},{"@id":"urn:ngm:class:quality-control","label":"Quality Control"}],
-    "uses":[{"@id":"urn:ngm:class:human-in-the-loop","label":"Human-in-the-Loop"},{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-    "enables":[{"@id":"urn:ngm:class:training","label":"Training"},{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}],
-    "requires":[{"@id":"urn:ngm:class:quality-control","label":"Quality Control"},{"@id":"urn:ngm:class:reputation-system","label":"Reputation System"}],
-    "supports":[{"@id":"urn:ngm:class:data-collection","label":"Data Collection"}],
-    "dependsOn":[{"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:collective-intelligence","label":"Collective Intelligence"}],
-    "relatedTo":[{"@id":"urn:ngm:class:incentive-mechanism","label":"Incentive Mechanism"},{"@id":"urn:ngm:class:reputation-system","label":"Reputation System"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:crowdsourcing",
+  "@type": "Class",
+  "label": "Crowdsourcing",
+  "definition": "Crowdsourcing is the practice of obtaining contributions, labour or judgements from a large distributed group of people, typically through an open call mediated by an online platform. In machine learning it is widely used to collect, label and validate training data by decomposing work into microtasks distributed across many contributors. Effective crowdsourcing combines incentive design with quality-control mechanisms to aggregate noisy individual inputs into reliable results.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-collection",
+      "label": "Data Collection"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

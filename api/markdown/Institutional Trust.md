@@ -1,57 +1,112 @@
----
-public: true
----
-
-# Institutional Trust
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:institutional-trust", "@type":"Page", "title":"Institutional Trust", "vc:slug":"institutional-trust", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:institutional-trust",
+  "@type": "Page",
+  "title": "Institutional Trust",
+  "vc:slug": "institutional-trust",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:institutional-trust",
-  "@type":"Class",
-  "label":"Institutional Trust",
-  "definition":"Institutional trust is the confidence that individuals and organisations place in formal institutions, such as central banks, regulators, courts, and clearing infrastructures, to act competently, fairly, and predictably in accordance with their stated mandates. Unlike interpersonal trust, it is impersonal and systemic: it rests on transparency, accountability, the rule of law, and a credible track record rather than personal acquaintance. Institutional trust underpins the functioning of fiat currency, financial markets, and governance, and its erosion is a primary driver of demand for trust-minimising alternatives such as blockchain systems.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:trust","label":"Trust"}],
-  "relations":{
-    "dependsOn":[
-      {"@id":"urn:ngm:class:transparency","label":"Transparency"},
-      {"@id":"urn:ngm:class:accountability","label":"Accountability"},
-      {"@id":"urn:ngm:class:legitimacy","label":"Legitimacy"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:institutional-trust",
+  "@type": "Class",
+  "label": "Institutional Trust",
+  "definition": "Institutional trust is the confidence that individuals and organisations place in formal institutions, such as central banks, regulators, courts, and clearing infrastructures, to act competently, fairly, and predictably in accordance with their stated mandates. Unlike interpersonal trust, it is impersonal and systemic: it rests on transparency, accountability, the rule of law, and a credible track record rather than personal acquaintance. Institutional trust underpins the functioning of fiat currency, financial markets, and governance, and its erosion is a primary driver of demand for trust-minimising alternatives such as blockchain systems.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:trust",
+      "label": "Trust"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:governance","label":"Governance"},
-      {"@id":"urn:ngm:class:reputation","label":"Reputation"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:reputation",
+        "label": "Reputation"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:fiat-currency","label":"Fiat Currency"},
-      {"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:central-bank","label":"Central Bank"},
-      {"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:social-capital","label":"Social Capital"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:social-capital",
+        "label": "Social Capital"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:regulation","label":"Regulation"},
-      {"@id":"urn:ngm:class:risk-management","label":"Risk Management"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:blockchain","label":"Blockchain"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:cryptoasset-regulation","label":"Cryptoasset Regulation"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptoasset-regulation",
+        "label": "Cryptoasset Regulation"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

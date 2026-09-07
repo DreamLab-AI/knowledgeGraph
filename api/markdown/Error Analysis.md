@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Error Analysis
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:error-analysis", "@type": "Page", "title": "Error Analysis", "vc:slug": "error-analysis", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:error-analysis",
+  "@type": "Page",
+  "title": "Error Analysis",
+  "vc:slug": "error-analysis",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

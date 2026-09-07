@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mounting Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A mounting interface is the standardised mechanical feature set, such as bolt patterns, flanges, and alignment pins, that defines how one component is rigidly attached to another in a mechanical or robotic assembly. It ensures repeatable positioning, load transfer, and interchangeability of links, end-effectors, sensors, and payloads. Standardised interfaces (e.g. ISO tool flanges) enable modular, reconfigurable robots.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"},
-      {"@id": "urn:ngm:class:robot-link", "label": "RobotLink"}
+      {
+        "@id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      },
+      {
+        "@id": "urn:ngm:class:robot-link",
+        "label": "RobotLink"
+      }
     ]
   },
   "quality": 0.72

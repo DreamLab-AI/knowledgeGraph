@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Machine-to-Machine Payments
----
-
-# Machine to Machine Payments
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,23 +20,52 @@ aliases:
   "definition": "Machine to Machine Payments (M2M Payments) refers to automated financial transactions initiated and settled between autonomous devices, software agents, or AI systems without direct human involvement in each individual transaction. These payments enable IoT devices, autonomous vehicles, robots, and AI agents to pay for resources, services, or data on a per-use or streaming basis, forming the economic layer of the machine economy. M2M payments typically require programmable money, low transaction fees, high throughput, and reliable settlement guarantees, properties that have driven interest in blockchain-based payment channels, stablecoins, and central bank digital currencies as settlement rails.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-payment-system", "label": "Digital Payment System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-payment-system",
+      "label": "Digital Payment System"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:micropayments", "label": "Micropayments"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agentic-finance", "label": "Agentic Finance"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:agentic-internet", "label": "Agentic Internet"}
+      {
+        "@id": "urn:ngm:class:agentic-finance",
+        "label": "Agentic Finance"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-payments", "label": "Digital Payments"}
+      {
+        "@id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      }
     ]
   },
   "quality": 0.8

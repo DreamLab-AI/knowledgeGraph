@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Poverty Reduction
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,42 +20,104 @@ public: true
   "definition": "Poverty Reduction encompasses the policies, programmes, and structural changes aimed at decreasing the proportion of individuals living below nationally or internationally defined poverty thresholds, improving access to essential goods, services, and economic opportunities. Approaches span conditional cash transfer schemes, microfinance, labour market reforms, progressive taxation, and targeted public service delivery. It is central to the United Nations Sustainable Development Goals (SDGs), most directly SDG-1 (No Poverty) and SDG-10 (Reduced Inequalities). Successful poverty reduction typically requires complementary progress in health, education, infrastructure, and governance quality.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainable-development",
+      "label": "Sustainable Development"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"},
-      {"@id": "urn:ngm:class:sustainable-development-goals", "label": "Sustainable Development Goals"},
-      {"@id": "urn:ngm:class:economic-growth", "label": "Economic Growth"}
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      },
+      {
+        "@id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"},
-      {"@id": "urn:ngm:class:economic-participation", "label": "Economic Participation"},
-      {"@id": "urn:ngm:class:economic-exchange", "label": "Economic Exchange"}
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:economic-participation",
+        "label": "Economic Participation"
+      },
+      {
+        "@id": "urn:ngm:class:economic-exchange",
+        "label": "Economic Exchange"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:economic-governance", "label": "Economic Governance"},
-      {"@id": "urn:ngm:class:economic-model", "label": "Economic Model"}
+      {
+        "@id": "urn:ngm:class:economic-governance",
+        "label": "Economic Governance"
+      },
+      {
+        "@id": "urn:ngm:class:economic-model",
+        "label": "Economic Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:microeconomics", "label": "Microeconomics"},
-      {"@id": "urn:ngm:class:macroeconomics", "label": "Macroeconomics"},
-      {"@id": "urn:ngm:class:institutional-economics", "label": "Institutional Economics"},
-      {"@id": "urn:ngm:class:economics", "label": "Economics"}
+      {
+        "@id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      },
+      {
+        "@id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-economics",
+        "label": "Institutional Economics"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"},
-      {"@id": "urn:ngm:class:policy", "label": "Policy"}
+      {
+        "@id": "urn:ngm:class:economic-mechanism",
+        "label": "Economic Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:economic-layer", "label": "Economic Layer"},
-      {"@id": "urn:ngm:class:economic-parameters", "label": "Economic Parameters"}
+      {
+        "@id": "urn:ngm:class:economic-layer",
+        "label": "Economic Layer"
+      },
+      {
+        "@id": "urn:ngm:class:economic-parameters",
+        "label": "Economic Parameters"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
-      {"@id": "urn:ngm:class:social-impact", "label": "Social Impact"}
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:social-impact",
+        "label": "Social Impact"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:economic-security", "label": "Economic Security"}
+      {
+        "@id": "urn:ngm:class:economic-security",
+        "label": "Economic Security"
+      }
     ]
   },
   "sameAs": [],

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Working Group
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

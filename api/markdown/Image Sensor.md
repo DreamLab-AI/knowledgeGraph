@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Image Sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "An image sensor is a solid-state device that converts incident light into electrical signals to capture a digital image, typically implemented as a CMOS or CCD array of photodetector pixels. Each pixel accumulates charge proportional to received photons, which is read out, digitised, and assembled into a frame. Image sensors are the core capture element in cameras and many computer-vision and tracking systems.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
   "relations": {
-    "partOf": [{"@id": "urn:ngm:class:camera", "label": "Camera"}],
-    "enables": [{"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}]
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ]
   },
   "quality": 0.72
 }

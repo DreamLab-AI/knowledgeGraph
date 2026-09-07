@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DDS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dds:f79fe6c5dd8b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f7455094980915c998293ffacc8485d9cdec7393cefbc3f76e8a48f323617c93"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Protocol]]",
-      "resolved": "urn:visionflow:linked:network-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Operating System]]",
-      "resolved": "urn:visionflow:linked:robot-operating-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Middleware]]",
-      "resolved": "urn:visionflow:linked:middleware",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - DDS, the Data Distribution Service, is an Object Management Group standard for a publish-subscribe middleware that distributes real-time data between distributed system components.

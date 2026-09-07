@@ -1,12 +1,3 @@
----
-public: true
-aliases:
-  - Single-Use Seal
-  - Single-Use Seals
-  - Single Use Seal
----
-
-# Single Use Seals
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

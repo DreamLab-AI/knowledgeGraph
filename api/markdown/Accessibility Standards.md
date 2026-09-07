@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - AccessibilityStandards
----
-
-# Accessibility Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,67 +182,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:accessibility-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:98ed5585fea6e2c105139f6b22f065d291a581c1d27282b74455e67c279aa880"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Assistive Technology Integration]]",
-      "resolved": "urn:visionflow:linked:assistive-technology-integration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Design Standards]]",
-      "resolved": "urn:visionflow:linked:design-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Inclusive Virtual Experiences]]",
-      "resolved": "urn:visionflow:linked:inclusive-virtual-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Multi-Modal Interfaces]]",
-      "resolved": "urn:visionflow:linked:multi-modal-interfaces",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Universal Design]]",
-      "resolved": "urn:visionflow:linked:universal-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C]]",
-      "resolved": "urn:visionflow:linked:w3-c",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, and neurological impairments.

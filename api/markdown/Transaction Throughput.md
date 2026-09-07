@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Transaction Throughput
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Text-to-Video Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Text-to-video generation is a generative-AI task in which a model synthesises a coherent video clip directly from a natural-language description. It extends text-to-image diffusion and transformer methods with temporal modelling so that motion, object permanence, and scene consistency hold across frames. The field advanced rapidly with large latent-diffusion and spatiotemporal-transformer models capable of producing seconds of high-fidelity footage from a prompt.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-video", "label": "AI Video"},
-      {"@id": "urn:ngm:class:proprietary-ai-video", "label": "Proprietary AI Video"}
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "@id": "urn:ngm:class:proprietary-ai-video",
+        "label": "Proprietary AI Video"
+      }
     ]
   },
   "quality": 0.72

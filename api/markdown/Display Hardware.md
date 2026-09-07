@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Display Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -215,72 +210,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:display-hardware:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3f26e20e0d1b799f0fcba34531d43a4c659ee4f34ebc8c83bb5a40d4dd000a7b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Display Technology]]",
-      "resolved": "urn:visionflow:linked:display-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Graphics Processing]]",
-      "resolved": "urn:visionflow:linked:graphics-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Immersive Visualization]]",
-      "resolved": "urn:visionflow:linked:immersive-visualization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Optical Systems]]",
-      "resolved": "urn:visionflow:linked:optical-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hardware]]",
-      "resolved": "urn:visionflow:owl:class:hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mixed Reality]]",
-      "resolved": "urn:visionflow:owl:class:mixed-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The physical devices and display technologies that render visual content for virtual, augmented, and mixed reality experiences, including VR headsets, AR glasses, and related optical systems that create immersive visual interfaces for metaverse applications.

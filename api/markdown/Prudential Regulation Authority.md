@@ -1,37 +1,107 @@
----
-public: true
----
-
-# Prudential Regulation Authority
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:prudential-regulation-authority", "@type":"Page", "title":"Prudential Regulation Authority", "vc:slug":"prudential-regulation-authority", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:prudential-regulation-authority",
+  "@type": "Page",
+  "title": "Prudential Regulation Authority",
+  "vc:slug": "prudential-regulation-authority",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:prudential-regulation-authority",
-  "@type":"Class",
-  "label":"Prudential Regulation Authority",
-  "definition":"The Prudential Regulation Authority (PRA) is the United Kingdom regulator responsible for the prudential supervision of banks, building societies, credit unions, insurers and major investment firms. Operating as part of the Bank of England, it sets capital, liquidity and governance standards to promote the safety and soundness of individual firms and to protect insurance policyholders. The PRA shares the UK's twin-peaks regulatory model with the conduct-focused Financial Conduct Authority.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:bank-of-england","label":"Bank of England"}],
-    "hasPart":[{"@id":"urn:ngm:class:prudential-regulation","label":"Prudential Regulation"},{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "implements":[{"@id":"urn:ngm:class:basel-iii","label":"Basel III"}],
-    "enables":[{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}],
-    "requires":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "dependsOn":[{"@id":"urn:ngm:class:central-bank","label":"Central Bank"}],
-    "supports":[{"@id":"urn:ngm:class:systemic-risk","label":"Systemic Risk"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:financial-conduct-authority","label":"Financial Conduct Authority"}],
-    "relatedTo":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"},{"@id":"urn:ngm:class:finance","label":"Finance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:prudential-regulation-authority",
+  "@type": "Class",
+  "label": "Prudential Regulation Authority",
+  "definition": "The Prudential Regulation Authority (PRA) is the United Kingdom regulator responsible for the prudential supervision of banks, building societies, credit unions, insurers and major investment firms. Operating as part of the Bank of England, it sets capital, liquidity and governance standards to promote the safety and soundness of individual firms and to protect insurance policyholders. The PRA shares the UK's twin-peaks regulatory model with the conduct-focused Financial Conduct Authority.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:prudential-regulation","label":"Prudential Regulation"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:prudential-regulation",
+      "label": "Prudential Regulation"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

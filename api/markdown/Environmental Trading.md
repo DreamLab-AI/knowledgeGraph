@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environmental Trading
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,32 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:environmental-trading:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3f704a9c84958539cb91c842ddb580ee05859ac80a71cbce56bfd8c8337d83e5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Environmental Trading encompasses market-based mechanisms for buying and selling environmental assets such as carbon credits, renewable energy certificates, and biodiversity offsets. These mechanisms use blockchain-backed registries and smart contracts to provide transparent, auditable records of environmental value transfers, enabling organisations to meet sustainability obligations through market participation.

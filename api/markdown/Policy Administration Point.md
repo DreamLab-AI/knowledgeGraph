@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Policy Administration Point
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,39 +20,86 @@ public: true
   "definition": "A Policy Administration Point (PAP) is the component within an attribute-based or policy-based access control architecture responsible for authoring, storing, and distributing access control policies to Policy Decision Points. The PAP provides the administrative interface through which security administrators define rules governing which subjects may access which resources under what conditions. It is distinct from policy enforcement and evaluation components, focusing solely on policy lifecycle management.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:access-control", "label": "Access Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:policy-information-point", "label": "Policy Information Point"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:policy-information-point",
+        "label": "Policy Information Point"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:biometric-data", "label": "Biometric Data"}
+      {
+        "@id": "urn:ngm:class:biometric-data",
+        "label": "Biometric Data"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:personal-data", "label": "Personal Data"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:session-key", "label": "Session Key"}
+      {
+        "@id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ]
   },
   "quality": 0.62,

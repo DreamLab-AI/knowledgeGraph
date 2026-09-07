@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TELE-102-codec-avatars
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tele-102-codec-avatars:f1187c0cd5e1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:986ed80805be2d2c5013912d9f7c408ffb3ba031cfc8f4b9f364c564a3bbccd4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Neural Rendering]]",
-      "resolved": "urn:visionflow:linked:neural-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Volumetric Capture]]",
-      "resolved": "urn:visionflow:linked:volumetric-capture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:linked:telepresence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Avatar System]]",
-      "resolved": "urn:visionflow:linked:avatar-system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Codec Avatars are a research effort by Meta to produce photorealistic, real-time avatars of people that are learned from capture data and driven by sensors to reproduce expression and appearance.

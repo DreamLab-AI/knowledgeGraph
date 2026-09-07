@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Securities Exchange Act 1934
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The Securities Exchange Act of 1934 is the US federal law that governs secondary trading of securities and created the Securities and Exchange Commission. It establishes registration, disclosure, and anti-fraud requirements for exchanges, brokers, and listed companies. It is a foundational reference for determining how digital assets and investment products are regulated in the United States.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:howey-test", "label": "Howey Test"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf", "label": "Bitcoin ETF"}
+      {
+        "@id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
+        "label": "Bitcoin ETF"
+      }
     ]
   },
   "quality": 0.72

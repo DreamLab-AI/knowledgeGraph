@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Supervisor-Worker Pattern
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,35 @@ public: true
   "title": "Supervisor-Worker Pattern",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:ai-agent-coordination", "vc:label": "AIAgentCoordination" },
-    { "@id": "urn:visionflow:linked:task-delegation", "vc:label": "TaskDelegation" },
-    { "@id": "urn:visionflow:linked:orchestration", "vc:label": "Orchestration" },
-    { "@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "MultiAgentSystem" },
-    { "@id": "urn:visionflow:linked:subagent", "vc:label": "Subagent" }
+    {
+      "@id": "urn:visionflow:linked:ai-agent-coordination",
+      "vc:label": "AIAgentCoordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-delegation",
+      "vc:label": "TaskDelegation"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration",
+      "vc:label": "Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "MultiAgentSystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:subagent",
+      "vc:label": "Subagent"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -33,12 +48,35 @@ public: true
   "definition": "The supervisor-worker pattern is a multi-agent coordination architecture in which a single supervisor agent decomposes a goal, delegates the resulting subtasks to a set of worker agents, and integrates their returned results into a coherent whole, without the workers communicating directly with one another. The supervisor owns planning, routing, verification, and error handling; the workers own execution of their assigned subtask. Centralising control this way makes the system's behaviour easy to reason about and to recover, at the cost of the supervisor becoming a throughput bottleneck and single point of failure.",
   "domain": "distributed-collaboration",
   "maturity": "emerging",
-  "subClassOf": { "@id": "urn:ngm:class:ai-agent-coordination", "label": "AI Agent Coordination" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-agent-coordination",
+    "label": "AI Agent Coordination"
+  },
   "relations": {
-    "uses": [ { "@id": "urn:ngm:class:task-delegation", "label": "Task Delegation" } ],
-    "requires": [ { "@id": "urn:ngm:class:orchestration", "label": "Orchestration" } ],
-    "partOf": [ { "@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System" } ],
-    "relatedTo": [ { "@id": "urn:ngm:class:subagent", "label": "Subagent" } ]
+    "uses": [
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:subagent",
+        "label": "Subagent"
+      }
+    ]
   },
   "quality": 0.75,
   "provenance": {

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Deanonymisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -103,7 +98,7 @@ public: true
 
   ## Definition
 
-  **Deanonymisation** is the reversal of anonymisation: the deliberate re-identification of people inside datasets that were released, published, or shared on the assumption that individuals could not be picked out. It is the adversarial counterpart to the protective transformation, and treating the two as the same concept obscures the fact that they pull in opposite directions — one severs the link between records and real identities, the other reconstructs it.
+  **Deanonymisation** is the reversal of anonymisation: the deliberate re-identification of people inside datasets that were released, published, or shared on the assumption that individuals [private] not be picked out. It is the adversarial counterpart to the protective transformation, and treating the two as the same concept obscures the fact that they pull in opposite directions — one severs the link between records and real identities, the other reconstructs it.
 
   The technique typically exploits the persistence of information after direct identifiers are stripped. Quasi-identifiers — combinations of attributes that are individually common but jointly rare — often suffice to isolate a single person, especially when the target dataset can be linked against an auxiliary source that includes both those attributes and a name. Behavioural traces such as mobility patterns, purchase histories, or writing style act as fingerprints that survive naive de-identification.
 

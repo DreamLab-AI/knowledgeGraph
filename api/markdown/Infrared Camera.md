@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Infrared Camera
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:infrared-camera:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2a610ae94dd2ced6e799527bb9e6c3e7221d3bc5b55a081658c19faa5f165329"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Tracking]]",
-      "resolved": "urn:visionflow:owl:class:motion-tracking",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tracking Hardware]]",
-      "resolved": "urn:visionflow:owl:class:tracking-hardware",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Imaging devices that capture infrared light wavelengths for VR/AR tracking applications, enabling position tracking, eye tracking, hand gesture recognition, and movement detection in immersive environments through dedicated IR-sensitive sensors and algorithms.

@@ -1,37 +1,112 @@
----
-public: true
----
-
-# Hateoas
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:hateoas", "@type":"Page", "title":"Hateoas", "vc:slug":"hateoas", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:hateoas",
+  "@type": "Page",
+  "title": "Hateoas",
+  "vc:slug": "hateoas",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:hateoas",
-  "@type":"Class",
-  "label":"Hateoas",
-  "definition":"HATEOAS, hypermedia as the engine of application state, is the REST constraint requiring that a client interact with an application entirely through hypermedia links and controls supplied dynamically by the server in its responses. Rather than hard-coding endpoint structures, the client discovers available actions and transitions at runtime by following links the server provides, mirroring how a browser navigates the web. This constraint decouples clients from fixed URI schemes and is the distinguishing feature of a fully RESTful, self-describing API.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:rest","label":"REST"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:rest","label":"REST"}],
-    "implements":[{"@id":"urn:ngm:class:rest","label":"REST"}],
-    "hasPart":[{"@id":"urn:ngm:class:http","label":"HTTP"}],
-    "uses":[{"@id":"urn:ngm:class:http","label":"HTTP"}],
-    "requires":[{"@id":"urn:ngm:class:client-server-architecture","label":"Client-Server Architecture"}],
-    "supports":[{"@id":"urn:ngm:class:api-design","label":"API Design"},{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "enables":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "dependsOn":[{"@id":"urn:ngm:class:web-standards","label":"Web Standards"}],
-    "relatedTo":[{"@id":"urn:ngm:class:api-design","label":"API Design"},{"@id":"urn:ngm:class:web-standards","label":"Web Standards"},{"@id":"urn:ngm:class:http","label":"HTTP"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:client-server-architecture","label":"Client-Server Architecture"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hateoas",
+  "@type": "Class",
+  "label": "Hateoas",
+  "definition": "HATEOAS, hypermedia as the engine of application state, is the REST constraint requiring that a client interact with an application entirely through hypermedia links and controls supplied dynamically by the server in its responses. Rather than hard-coding endpoint structures, the client discovers available actions and transitions at runtime by following links the server provides, mirroring how a browser navigates the web. This constraint decouples clients from fixed URI schemes and is the distinguishing feature of a fully RESTful, self-describing API.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rest",
+      "label": "REST"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "@id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      },
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

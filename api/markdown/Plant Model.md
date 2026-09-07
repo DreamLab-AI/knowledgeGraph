@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Plant Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "A plant model is a mathematical representation of the dynamic system being controlled, mapping control inputs and disturbances to the system's state and outputs over time. Usually expressed as differential equations, transfer functions, or state-space form, it captures how the plant responds so a controller can be designed and tuned against it. Accurate plant models are central to control theory and to model-based control synthesis and simulation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      }
+    ]
   },
   "quality": 0.72
 }

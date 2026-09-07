@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Web Scraping
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Web scraping is the automated extraction of structured data from websites by programmatically fetching HTML documents and parsing their content to capture specific fields, tables, or text. It encompasses tools ranging from simple HTTP request libraries to headless browser automation frameworks capable of executing JavaScript and interacting with dynamic single-page applications. Web scraping is widely used to construct training datasets for machine learning models, to aggregate pricing and market intelligence, and to archive public information. Its practice intersects with legal questions around terms of service compliance, copyright, and personal data protection under GDPR and equivalent regulations.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-pipeline",
+      "label": "Data Pipeline"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-scrapers", "label": "AI Scrapers"},
-      {"@id": "urn:ngm:class:browser-automation", "label": "Browser Automation"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:data-processing", "label": "Data Processing"}
+      {
+        "@id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "@id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"},
-      {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"}
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      },
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      }
     ]
   },
   "quality": 0.8

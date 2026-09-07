@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mathematical Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,10 +20,18 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ]
   },
   "quality": 0.7
 }

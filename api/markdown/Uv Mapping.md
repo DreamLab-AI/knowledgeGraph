@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Uv Mapping
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:uv-mapping", "@type":"Page", "title":"Uv Mapping", "vc:slug":"uv-mapping", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:uv-mapping",
+  "@type": "Page",
+  "title": "Uv Mapping",
+  "vc:slug": "uv-mapping",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

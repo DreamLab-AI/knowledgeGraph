@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Apple]]
-# Apple Inc Technology Corporation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

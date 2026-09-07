@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenTelemetry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -152,4 +147,3 @@ public: true
   - Adoption is driven by the observability tax of complex microservice architectures: distributed traces link spans across service boundaries, enabling root-cause analysis of latency and errors without access to individual service logs. Metrics pipelines replace per-service monitoring agent proliferation. The framework is instrumented into major runtimes (Node.js, Python, Java, Go, .NET) and cloud platforms, with automatic instrumentation agents requiring zero code changes for common frameworks like Express, Spring, and Django.
 
   - By 2024-2025, OpenTelemetry is effectively the industry standard instrumentation layer for cloud-native software, with AWS, Google Cloud, and Azure all offering native OTLP ingestion. The AI/ML observability use case has emerged as a growth area: OTel instrumentation for LLM inference pipelines captures token latency, cost, and quality signals. The GenAI semantic conventions working group is standardising how model calls, embeddings, and agent traces are represented, bridging software observability into AI system monitoring.
-

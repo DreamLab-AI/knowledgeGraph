@@ -1,64 +1,134 @@
----
-public: true
----
-
-# Open Banking
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:open-banking", "@type":"Page", "title":"Open Banking", "vc:slug":"open-banking", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:open-banking",
+  "@type": "Page",
+  "title": "Open Banking",
+  "vc:slug": "open-banking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:open-banking",
-  "@type":"Class",
-  "label":"Open Banking",
-  "definition":"Open Banking is a regulatory and technical framework that allows authorised third-party providers to access customer banking data and initiate payments through secure application programming interfaces, subject to explicit customer consent. It shifts control of financial data from incumbent banks to the account holder, who may grant fine-grained, revocable permissions. The model underpins regulated data sharing regimes such as the EU's PSD2 and the UK's Open Banking Standard, fostering competition and new financial products.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:financial-services","label":"Financial Services"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:consent-management","label":"Consent Management"},
-      {"@id":"urn:ngm:class:api-gateway","label":"API Gateway"},
-      {"@id":"urn:ngm:class:payment-processing","label":"Payment Processing"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:open-banking",
+  "@type": "Class",
+  "label": "Open Banking",
+  "definition": "Open Banking is a regulatory and technical framework that allows authorised third-party providers to access customer banking data and initiate payments through secure application programming interfaces, subject to explicit customer consent. It shifts control of financial data from incumbent banks to the account holder, who may grant fine-grained, revocable permissions. The model underpins regulated data sharing regimes such as the EU's PSD2 and the UK's Open Banking Standard, fostering competition and new financial products.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:financial-system","label":"Financial System"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"},
-      {"@id":"urn:ngm:class:digital-identity","label":"Digital Identity"},
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:fintech","label":"FinTech"},
-      {"@id":"urn:ngm:class:financial-inclusion","label":"Financial Inclusion"},
-      {"@id":"urn:ngm:class:data-sharing","label":"Data Sharing"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fintech",
+        "label": "FinTech"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:data-sharing",
+        "label": "Data Sharing"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:oauth","label":"OAuth"},
-      {"@id":"urn:ngm:class:rest-api","label":"REST API"},
-      {"@id":"urn:ngm:class:api-standard","label":"API Standard"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:interoperability","label":"Interoperability"},
-      {"@id":"urn:ngm:class:data-privacy","label":"Data Privacy"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:decentralised-finance","label":"Decentralised Finance"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:gdpr","label":"GDPR"},
-      {"@id":"urn:ngm:class:banking","label":"Banking"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:banking",
+        "label": "Banking"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

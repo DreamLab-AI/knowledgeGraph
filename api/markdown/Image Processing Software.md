@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Image Processing Software
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:image-processing-software:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bfe2ec6f900ab71626792a6862a66419344ba7ed732729402ee65ecbbb7dd0b2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Visual Metaverse Interaction]]",
-      "resolved": "urn:visionflow:linked:visual-metaverse-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision System]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software systems that acquire, process, analyse, and visualise digital images for metaverse applications, employing computer vision algorithms for user tracking, environment creation, gesture recognition, 3D reconstruction, and real-time visual enhancement in virtual and augmented reality environments.

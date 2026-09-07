@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralised Application
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

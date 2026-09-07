@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - low-latency
----
-
-# Low Latency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

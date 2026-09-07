@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Web of Trust
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

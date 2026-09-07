@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ecosystem Connectivity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Ecosystem Connectivity is the degree to which distinct platforms, services, and participants in a technology ecosystem can discover, interoperate with, and exchange value across one another. It depends on shared standards, compatible interfaces, and gateways that link otherwise siloed systems. High connectivity amplifies network effects and lowers switching and integration costs across the ecosystem.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:network-effects", "label": "Network Effects"}, {"@id": "urn:ngm:class:compatibility-process", "label": "Compatibility Process"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-effects",
+        "label": "Network Effects"
+      },
+      {
+        "@id": "urn:ngm:class:compatibility-process",
+        "label": "Compatibility Process"
+      }
+    ]
   },
   "quality": 0.72
 }

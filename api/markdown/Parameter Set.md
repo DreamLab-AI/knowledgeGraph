@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Parameter Set
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:parameter-set:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c3f3f36a5961fb8b8bcd99e8055fd44e4cbc545ece09b1ce96029b3dfdf51994"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Reproducibility]]",
-      "resolved": "urn:visionflow:linked:reproducibility",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Configuration]]",
-      "resolved": "urn:visionflow:owl:class:configuration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A collection of configurable values that define the behavior, appearance, or operation of a system, algorithm, or model, allowing users to store, recall, and modify settings to achieve different outputs or modes of operation.

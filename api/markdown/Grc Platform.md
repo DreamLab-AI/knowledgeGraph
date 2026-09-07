@@ -1,52 +1,104 @@
----
-public: true
----
-
-# Grc Platform
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:grc-platform", "@type":"Page", "title":"Grc Platform", "vc:slug":"grc-platform", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:grc-platform",
+  "@type": "Page",
+  "title": "Grc Platform",
+  "vc:slug": "grc-platform",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:grc-platform",
-  "@type":"Class",
-  "label":"Grc Platform",
-  "definition":"A GRC platform is an integrated software system that unifies governance, risk management and compliance activities across an organisation. It maintains a common library of controls, policies and risks, maps them to regulatory frameworks, and automates assessment, evidence collection and reporting. By consolidating these functions it gives leadership a consistent view of risk posture and control effectiveness while reducing duplicated manual effort.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:governance-framework","label":"Governance Framework"}],
-  "relations":{
-    "implements":[
-      {"@id":"urn:ngm:class:compliance-control","label":"Compliance Control"},
-      {"@id":"urn:ngm:class:compliance-automation","label":"Compliance Automation"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:grc-platform",
+  "@type": "Class",
+  "label": "Grc Platform",
+  "definition": "A GRC platform is an integrated software system that unifies governance, risk management and compliance activities across an organisation. It maintains a common library of controls, policies and risks, maps them to regulatory frameworks, and automates assessment, evidence collection and reporting. By consolidating these functions it gives leadership a consistent view of risk posture and control effectiveness while reducing duplicated manual effort.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-automation",
+        "label": "Compliance Automation"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:risk-assessment","label":"Risk Assessment"},
-      {"@id":"urn:ngm:class:audit-logging","label":"Audit Logging"},
-      {"@id":"urn:ngm:class:policy-as-code","label":"Policy As Code"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:policy-as-code",
+        "label": "Policy As Code"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"},
-      {"@id":"urn:ngm:class:risk-management","label":"Risk Management"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:continuous-monitoring","label":"Continuous Monitoring"},
-      {"@id":"urn:ngm:class:audit-management","label":"Audit Management"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:continuous-monitoring",
+        "label": "Continuous Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:audit-management",
+        "label": "Audit Management"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:control-framework","label":"Control Framework"},
-      {"@id":"urn:ngm:class:policy-management","label":"Policy Management"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:control-framework",
+        "label": "Control Framework"
+      },
+      {
+        "@id": "urn:ngm:class:policy-management",
+        "label": "Policy Management"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:governance-risk-compliance","label":"Governance Risk Compliance"},
-      {"@id":"urn:ngm:class:enterprise-risk-management","label":"Enterprise Risk Management"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:governance-risk-compliance",
+        "label": "Governance Risk Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

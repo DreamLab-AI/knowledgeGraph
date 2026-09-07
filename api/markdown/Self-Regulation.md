@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Self-Regulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,52 +187,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:self-regulation:41b9b2d380d2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3b45ad8dc3dad2f71eb599da81599753f9dfe79836148792ce3b38412273a7c7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:linked:accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Compliance]]",
-      "resolved": "urn:visionflow:linked:compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transparency]]",
-      "resolved": "urn:visionflow:linked:transparency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Framework]]",
-      "resolved": "urn:visionflow:linked:regulatory-framework",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Framework]]",
-      "resolved": "urn:visionflow:linked:governance-framework",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An arrangement in which an industry or professional community sets and enforces its own rules of conduct, typically through codes of practice and member oversight rather than direct state legislation.

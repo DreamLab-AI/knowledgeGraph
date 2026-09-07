@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Human on the Loop
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Human-Robot Collaboration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,57 +199,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:human-robot-collaboration:57529096697d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:14737f64c9b7a3e32641e77319bcdb4de7c0353031a8a1b39df5e467857a16ac"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Human Robot Interaction]]",
-      "resolved": "urn:visionflow:linked:human-robot-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:linked:sensor-fusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Collaborative Robot]]",
-      "resolved": "urn:visionflow:linked:collaborative-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Assistive Robotics]]",
-      "resolved": "urn:visionflow:linked:assistive-robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Exoskeleton]]",
-      "resolved": "urn:visionflow:linked:exoskeleton",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics Domain]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Human-robot collaboration is the design and operation of robots that work alongside people in a shared workspace, coordinating tasks safely through sensing, control and interaction.

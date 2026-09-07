@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Model Development
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,48 +7,174 @@ public: true
   "title": "AI Model Development",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:ai-model", "vc:label": "AI Model"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:compute-resources", "vc:label": "Compute Resources"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:ai-inference", "vc:label": "AI Inference"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine Tuning"},
-    {"@id": "urn:visionflow:linked:ai-risk-assessment", "vc:label": "AI Risk Assessment"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:hyperparameter-optimisation", "vc:label": "Hyperparameter Optimisation"},
-    {"@id": "urn:visionflow:linked:model-architecture", "vc:label": "AI Model Architecture"},
-    {"@id": "urn:visionflow:linked:ai-model-card", "vc:label": "AI Model Card"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:model-deployment", "vc:label": "Model Deployment"},
-    {"@id": "urn:visionflow:linked:quantisation", "vc:label": "Quantisation"},
-    {"@id": "urn:visionflow:linked:distributed-training", "vc:label": "Distributed Training"},
-    {"@id": "urn:visionflow:linked:experiment-tracking", "vc:label": "Experiment Tracking"},
-    {"@id": "urn:visionflow:linked:model-registry", "vc:label": "Model Registry"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:data-versioning", "vc:label": "Data Versioning"},
-    {"@id": "urn:visionflow:linked:ai-system", "vc:label": "AI System"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:benchmark-dataset", "vc:label": "Benchmark Dataset"},
-    {"@id": "urn:visionflow:linked:adversarial-training", "vc:label": "Adversarial Training"},
-    {"@id": "urn:visionflow:linked:lora-fine-tuning", "vc:label": "LoRA Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:frontier-model-training", "vc:label": "Frontier Model Training"},
-    {"@id": "urn:visionflow:linked:ai-deployment", "vc:label": "AI Deployment"},
-    {"@id": "urn:visionflow:linked:model-weights", "vc:label": "Model Weights"},
-    {"@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"}
+    {
+      "@id": "urn:visionflow:linked:ai-model",
+      "vc:label": "AI Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:compute-resources",
+      "vc:label": "Compute Resources"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-inference",
+      "vc:label": "AI Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-risk-assessment",
+      "vc:label": "AI Risk Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-optimisation",
+      "vc:label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-architecture",
+      "vc:label": "AI Model Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-model-card",
+      "vc:label": "AI Model Card"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-deployment",
+      "vc:label": "Model Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantisation",
+      "vc:label": "Quantisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-training",
+      "vc:label": "Distributed Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:experiment-tracking",
+      "vc:label": "Experiment Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-registry",
+      "vc:label": "Model Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-versioning",
+      "vc:label": "Data Versioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-system",
+      "vc:label": "AI System"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-dataset",
+      "vc:label": "Benchmark Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:adversarial-training",
+      "vc:label": "Adversarial Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:lora-fine-tuning",
+      "vc:label": "LoRA Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-model-training",
+      "vc:label": "Frontier Model Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-deployment",
+      "vc:label": "AI Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-weights",
+      "vc:label": "Model Weights"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-acceleration",
+      "vc:label": "GPU Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularisation",
+      "vc:label": "Regularisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -68,34 +189,90 @@ public: true
   "definition": "The end-to-end engineering discipline of designing, training, evaluating, and deploying machine learning models, encompassing dataset curation, architecture selection, optimisation, and lifecycle management. It integrates software engineering, statistical modelling, and domain expertise to produce AI systems capable of performing specified tasks at scale. The discipline spans research prototyping through production deployment and ongoing maintenance.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-system", "label": "AI System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-system",
+      "label": "AI System"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"}
+      {
+        "@id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-model", "label": "AI Model"},
-      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"},
-      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
-      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"},
-      {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"}
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-risk-assessment", "label": "AI Risk Assessment"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "quality": 0.92,
@@ -104,61 +281,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "OntologyEnrichmentTier1"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-model-development:20260620",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:ai-model-development"},
-  "vc:resolutions": [
-    {"raw": "[[AI Model]]", "resolved": "urn:visionflow:linked:ai-model", "kind": "ResolvedLink"},
-    {"raw": "[[Data Pipeline]]", "resolved": "urn:visionflow:linked:data-pipeline", "kind": "ResolvedLink"},
-    {"raw": "[[Compute Resources]]", "resolved": "urn:visionflow:linked:compute-resources", "kind": "ResolvedLink"},
-    {"raw": "[[Model Evaluation]]", "resolved": "urn:visionflow:linked:model-evaluation", "kind": "ResolvedLink"},
-    {"raw": "[[AI Inference]]", "resolved": "urn:visionflow:linked:ai-inference", "kind": "ResolvedLink"},
-    {"raw": "[[Fine Tuning]]", "resolved": "urn:visionflow:linked:fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[AI Risk Assessment]]", "resolved": "urn:visionflow:linked:ai-risk-assessment", "kind": "ResolvedLink"},
-    {"raw": "[[MLOps]]", "resolved": "urn:visionflow:linked:mlops", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "StubLink"},
-    {"raw": "[[Training Data]]", "resolved": "urn:visionflow:linked:training-data", "kind": "StubLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Hyperparameter Optimisation]]", "resolved": "urn:visionflow:linked:hyperparameter-optimisation", "kind": "StubLink"},
-    {"raw": "[[AI Model Architecture]]", "resolved": "urn:visionflow:linked:model-architecture", "kind": "StubLink"},
-    {"raw": "[[AI Model Card]]", "resolved": "urn:visionflow:linked:ai-model-card", "kind": "ResolvedLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "StubLink"},
-    {"raw": "[[Model Deployment]]", "resolved": "urn:visionflow:linked:model-deployment", "kind": "ResolvedLink"},
-    {"raw": "[[Quantisation]]", "resolved": "urn:visionflow:linked:quantisation", "kind": "StubLink"},
-    {"raw": "[[Distributed Training]]", "resolved": "urn:visionflow:linked:distributed-training", "kind": "StubLink"},
-    {"raw": "[[Experiment Tracking]]", "resolved": "urn:visionflow:linked:experiment-tracking", "kind": "StubLink"},
-    {"raw": "[[Model Registry]]", "resolved": "urn:visionflow:linked:model-registry", "kind": "StubLink"},
-    {"raw": "[[Feature Engineering]]", "resolved": "urn:visionflow:linked:feature-engineering", "kind": "StubLink"},
-    {"raw": "[[Backpropagation]]", "resolved": "urn:visionflow:linked:backpropagation", "kind": "StubLink"},
-    {"raw": "[[LoRA Fine-Tuning]]", "resolved": "urn:visionflow:linked:lora-fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Frontier Model Training]]", "resolved": "urn:visionflow:linked:frontier-model-training", "kind": "ResolvedLink"},
-    {"raw": "[[GPU Acceleration]]", "resolved": "urn:visionflow:linked:gpu-acceleration", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "StubLink"},
-    {"raw": "[[Regularisation]]", "resolved": "urn:visionflow:linked:regularisation", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Benchmark Dataset]]", "resolved": "urn:visionflow:linked:benchmark-dataset", "kind": "ResolvedLink"},
-    {"raw": "[[Adversarial Training]]", "resolved": "urn:visionflow:linked:adversarial-training", "kind": "ResolvedLink"},
-    {"raw": "[[Data Versioning]]", "resolved": "urn:visionflow:linked:data-versioning", "kind": "StubLink"},
-    {"raw": "[[Model Weights]]", "resolved": "urn:visionflow:linked:model-weights", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink"},
-    {"raw": "[[AI System]]", "resolved": "urn:visionflow:linked:ai-system", "kind": "StubLink"},
-    {"raw": "[[AI Deployment]]", "resolved": "urn:visionflow:linked:ai-deployment", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -306,7 +428,7 @@ public: true
 
     - **Compression and Deployment Preparation**: [[Quantisation]] reduces [[Model Weights]] precision from BF16 (2 bytes/parameter) to INT8 (1 byte), INT4 (0.5 bytes), FP8, or FP4 — cutting GPU memory requirements by 2–4× and improving inference throughput by increasing arithmetic intensity on quantised tensor cores. Post-training quantisation (PTQ) methods including GPTQ (layer-wise reconstruction minimisation, 3–4 bits with <1% accuracy loss on MMLU), AWQ (activation-aware weight quantisation, scales channels to reduce quantisation error on outlier-sensitive activations), and SmoothQuant (migrates quantisation difficulty from activations to weights) are standard tools. Knowledge distillation produces smaller student models that mimic the output distribution of larger teacher models: the Phi-3-mini (3.8B parameters) achieves performance competitive with Llama 3 8B on academic benchmarks by training on high-quality, teacher-generated synthetic data at curriculum scale. Compiled model formats (ONNX for cross-platform interchange, TensorRT engines for NVIDIA GPU, CoreML packages for Apple Silicon, ExecuTorch bundles for mobile) package the computation graph for optimised execution in production [[AI Inference]] runtimes. [[Model Deployment]] via [[Model Registry]] (MLflow Model Registry, Hugging Face Hub, custom internal registries) with immutable versioned artefacts, semantic versioning, stage gating (staging → production promotion), and rollback capability.
 
-    - **Monitoring and Continuous Retraining**: Production inference monitoring tracks data drift (statistical divergence between training and live input distributions, measured via KL divergence, Maximum Mean Discrepancy, or population stability index on feature distributions), concept drift (the underlying input-output relationship has changed, detected via model performance degradation on labelled holdout samples), and business metric degradation (conversion rate, task completion rate, user satisfaction). Tools including Evidently AI, Arize AI, Fiddler AI, and Seldon Monitor provide drift detection, model performance dashboards, and alert routing. Automated retraining pipelines (MLOps Level 2 per Google's MLOps maturity model) trigger new training runs when monitoring alerts fire — either full re-training from updated data or continual learning with replay buffers — closing the feedback loop and sustaining model performance over time without manual intervention. Shadow deployment (new model version receives a copy of production traffic but responses are not returned to users) enables safe comparison before promotion.
+    - **Monitoring and Continuous Retraining**: Production inference monitoring tracks data drift (statistical divergence between training and live input distributions, measured via KL divergence, Maximum Mean Discrepancy, or population stability [private] on feature distributions), concept drift (the underlying input-output relationship has changed, detected via model performance degradation on labelled holdout samples), and business metric degradation (conversion rate, task completion rate, user satisfaction). Tools including Evidently AI, Arize AI, Fiddler AI, and Seldon Monitor provide drift detection, model performance dashboards, and alert routing. Automated retraining pipelines (MLOps Level 2 per Google's MLOps maturity model) trigger new training runs when monitoring alerts fire — either full re-training from updated data or continual learning with replay buffers — closing the feedback loop and sustaining model performance over time without manual intervention. Shadow deployment (new model version receives a copy of production traffic but responses are not returned to users) enables safe comparison before promotion.
 
   ## Evaluation and Quality Assurance
     Evaluation is the systematic process of measuring an [[AI Model]]'s performance across the dimensions that matter for its intended use. Three evaluation paradigms coexist in 2026 AI Model Development practice. Automated metric evaluation uses standardised [[Benchmark Dataset]]s and task-specific metrics (accuracy, F1, BLEU, pass@k for code) to provide reproducible, cost-efficient capability assessment at scale. Human evaluation uses trained raters or crowd-sourced labellers to assess dimensions that automated metrics miss: coherence, factual accuracy, helpfulness, safety, and stylistic quality. LLM-as-judge evaluation uses a capable language model (GPT-4o, Claude 3.5, or Gemini 2.0 Ultra) to score responses on user-defined rubrics, offering a cost-efficient approximation of human judgement with quantifiable correlation (Spearman ρ ≈ 0.8–0.9 with human rater agreement on standard benchmarks). Model [[AI Risk Assessment]] — identifying and mitigating potential harms before deployment — encompasses bias auditing (demographic parity, equalised odds across protected attributes), robustness evaluation under adversarial inputs, privacy leakage testing (membership inference attacks, training data extraction), and capability elicitation for dangerous capabilities (CBRN uplift, cyber-offence, manipulation). The UK's AI Safety Institute conducts cross-frontier evaluations under standardised protocols published in the Seoul AI Safety Summit (2024) and Paris Summit (2025) evaluation frameworks.
@@ -320,7 +442,7 @@ public: true
     - **Edge and On-Device Model Development**: Designing compact models (1B–8B parameters) optimised for deployment on consumer hardware via progressive knowledge distillation, [[Quantisation]]-aware training, and neural architecture search. Exemplars: Phi-3-mini (Microsoft), Gemma 2 2B (Google), Llama 3.2 1B/3B (Meta).
 
   ## Academic Context
-    AI Model Development as a formal discipline emerged from the confluence of machine learning theory (Vapnik's structural risk minimisation, 1974; PAC learning, Valiant 1984), neural network research (McCulloch-Pitts neuron, 1943; Perceptron, Rosenblatt 1958; Rumelhart et al. 1986 on [[Backpropagation]]; LeCun et al. 1989 on convolutional networks; Hochreiter and Schmidhuber 1997 on LSTM), and software engineering as applied to ML systems (Sculley et al. 2015, "Hidden Technical Debt in Machine Learning Systems" — a landmark NeurIPS paper identifying the production engineering challenges of ML deployment including pipeline jungles, undeclared consumers, and data dependency debt). The field crystallised into a named discipline in the early 2010s following the deep learning resurgence triggered by Krizhevsky et al.'s AlexNet (2012), which demonstrated that large convolutional [[Neural Network]]s trained on GPUs with ReLU activations and dropout regularisation could dramatically outperform hand-engineered feature pipelines on ImageNet. Key theoretical contributions include Goodfellow et al.'s GAN framework (2014), Kingma and Welling's VAE (2013), and Vaswani et al.'s Transformer (2017) which replaced RNNs as the dominant architecture for [[Natural Language Processing]] and, by 2020, for [[Computer Vision]] (ViT — Vision Transformer, Dosovitskiy et al. 2020) and beyond. Kaplan et al.'s scaling laws (OpenAI, 2020) established that cross-entropy loss scales predictably as a power law with model size (N), training tokens (D), and total compute (C = 6ND), enabling systematic [[Frontier Model Training]] roadmaps and triggering a race to scale. Hoffmann et al.'s Chinchilla laws (DeepMind, 2022) corrected the scaling recipe, demonstrating that GPT-3 class models were trained on insufficient data relative to their parameter count — optimal compute-efficient training requires C ≈ 20·N·6 = 120N FLOPs, i.e., approximately 20 tokens per parameter — and that a 70B model trained on 1.4T tokens (Chinchilla) outperforms a 280B model trained on 300B tokens with the same compute budget. Hu et al.'s LoRA paper (2021) opened practical [[LoRA Fine-Tuning]] for large models with constrained resources, enabling adaptation of 65B-parameter models on a single GPU by training rank-4 delta matrices of ~0.01% of total parameter count. Ouyang et al.'s InstructGPT paper (2022) systematised [[Reinforcement Learning from Human Feedback]] as the alignment methodology for chat-oriented LLMs. Rafailov et al.'s DPO (2023) derived a closed-form preference optimisation loss equivalent to PPO-based RLHF, simplifying alignment. Brown et al. (2020) demonstrated few-shot in-context learning in GPT-3 (175B), establishing that capability transfer without gradient updates is possible at sufficient scale. Anthropic's Constitutional AI (Bai et al. 2022) and DeepSeek-AI's GRPO-based reasoning training (2025) represent the current frontier of alignment methodology research.
+    AI Model Development as a formal discipline emerged from the confluence of machine learning theory (Vapnik's structural risk minimisation, 1974; PAC learning, Valiant 1984), neural network research (McCulloch-Pitts neuron, 1943; Perceptron, Rosenblatt 1958; Rumelhart et al. 1986 on [[Backpropagation]]; LeCun et al. 1989 on convolutional networks; Hochreiter and Schmidhuber 1997 on LSTM), and software engineering as applied to ML systems (Sculley et al. 2015, "Hidden Technical Debt in Machine Learning Systems" — a landmark NeurIPS paper identifying the production engineering challenges of ML deployment including pipeline jungles, undeclared consumers, and data dependency debt). The field crystallised into a named discipline in the early 2010s following the deep learning resurgence triggered by Krizhevsky et al.'s AlexNet (2012), which demonstrated that large convolutional [[Neural Network]]s trained on GPUs with ReLU activations and dropout regularisation [private] dramatically outperform hand-engineered feature pipelines on ImageNet. Key theoretical contributions include Goodfellow et al.'s GAN framework (2014), Kingma and Welling's VAE (2013), and Vaswani et al.'s Transformer (2017) which replaced RNNs as the dominant architecture for [[Natural Language Processing]] and, by 2020, for [[Computer Vision]] (ViT — Vision Transformer, Dosovitskiy et al. 2020) and beyond. Kaplan et al.'s scaling laws (OpenAI, 2020) established that cross-entropy loss scales predictably as a power law with model size (N), training tokens (D), and total compute (C = 6ND), enabling systematic [[Frontier Model Training]] roadmaps and triggering a race to scale. Hoffmann et al.'s Chinchilla laws (DeepMind, 2022) corrected the scaling recipe, demonstrating that GPT-3 class models were trained on insufficient data relative to their parameter count — optimal compute-efficient training requires C ≈ 20·N·6 = 120N FLOPs, i.e., approximately 20 tokens per parameter — and that a 70B model trained on 1.4T tokens (Chinchilla) outperforms a 280B model trained on 300B tokens with the same compute budget. Hu et al.'s LoRA paper (2021) opened practical [[LoRA Fine-Tuning]] for large models with constrained resources, enabling adaptation of 65B-parameter models on a single GPU by training rank-4 delta matrices of ~0.01% of total parameter count. Ouyang et al.'s InstructGPT paper (2022) systematised [[Reinforcement Learning from Human Feedback]] as the alignment methodology for chat-oriented LLMs. Rafailov et al.'s DPO (2023) derived a closed-form preference optimisation loss equivalent to PPO-based RLHF, simplifying alignment. Brown et al. (2020) demonstrated few-shot in-context learning in GPT-3 (175B), establishing that capability transfer without gradient updates is possible at sufficient scale. Anthropic's Constitutional AI (Bai et al. 2022) and DeepSeek-AI's GRPO-based reasoning training (2025) represent the current frontier of alignment methodology research.
 
   ## MLOps Maturity and Toolchain
     MLOps — the operational discipline applying DevOps principles to the ML lifecycle — has itself matured into a distinct specialisation with recognised maturity levels, a rich toolchain ecosystem, and increasing regulatory relevance. Google's MLOps maturity model defines three levels: Level 0 (manual, no CI/CD, models deployed as one-off scripts — the state of most early enterprise ML projects), Level 1 (automated training pipelines, continuous training on new data, but manual deployment triggers), and Level 2 (end-to-end CI/CD pipeline automation covering data, training, evaluation, and deployment — triggered by data changes, code commits, or monitoring alerts). As of 2026, KDnuggets surveys indicate that fewer than 20% of enterprise ML teams have reached Level 2, with the majority at Level 0 or transitioning to Level 1.

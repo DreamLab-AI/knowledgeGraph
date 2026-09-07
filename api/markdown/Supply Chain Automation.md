@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Supply Chain Automation
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:supply-chain-automation", "@type": "Page", "title": "Supply Chain Automation", "vc:slug": "supply-chain-automation", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:supply-chain-automation",
+  "@type": "Page",
+  "title": "Supply Chain Automation",
+  "vc:slug": "supply-chain-automation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

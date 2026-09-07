@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Advertising and Marketing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Advertising and marketing is the combined domain of commercial practices concerned with identifying customer needs, developing products and services to meet them, communicating value propositions to target audiences through paid and unpaid channels, and building lasting brand relationships. Marketing encompasses the strategic disciplines of market research, product development, pricing, distribution, and communications, while advertising is the paid communications subset of the marketing mix. Together they constitute the primary commercial mechanism by which organisations acquire customers and generate revenue in market economies.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-marketing", "label": "Digital Marketing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-marketing",
+      "label": "Digital Marketing"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:behavioural-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"}
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:advertising", "label": "Advertising"},
-      {"@id": "urn:ngm:class:programmatic-advertising", "label": "Programmatic Advertising"}
+      {
+        "@id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:customer-experience", "label": "Customer Experience"},
-      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}
+      {
+        "@id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - The advertising and marketing ecosystem involves brands, agencies (creative, media, digital), consultancies, technology vendors, publishers, and data brokers. Agency models are under pressure from in-housing by brands seeking data control and speed, from consulting firm expansion into creative services, and from AI tools that automate content generation, media planning, and performance optimisation. The global advertising market reached approximately $900 billion in 2024, with digital channels accounting for over 70% of spend.
 
   - As of 2024–2025, generative AI is transforming both the creative production and strategic planning functions of marketing. Large-scale personalised content generation, dynamic creative optimisation, and AI-powered attribution modelling are entering mainstream practice. Concurrently, the marketing function faces existential questions about audience attention fragmentation, ad-blocking adoption, privacy regulation tightening, and the trust deficit created by pervasive data collection. The emergence of AI-mediated discovery (AI search assistants, LLM-powered recommendations) is challenging traditional search and social advertising models, as consumers increasingly discover products through AI conversation rather than keyword search or social feed browsing.
-

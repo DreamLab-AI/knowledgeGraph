@@ -1,36 +1,129 @@
----
-public: true
----
-
-# Digital Asset Governance
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:digital-asset-governance", "@type":"Page", "title":"Digital Asset Governance", "vc:slug":"digital-asset-governance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:digital-asset-governance",
-  "@type":"Class",
-  "label":"Digital Asset Governance",
-  "definition":"Digital asset governance is the set of rules, processes, and authority structures by which tokenised assets and the protocols managing them are controlled, upgraded, and held accountable across their lifecycle. It spans on-chain governance via governance tokens and DAOs, custody and key-management policy, token-standard conformance, and alignment with external regulatory and compliance regimes. By defining who may change parameters, mint or burn supply, and adjudicate disputes, it determines the legitimacy, security, and resilience of digital-asset systems.",
-  "domain":"blockchain",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:decentralized-governance","label":"Decentralized Governance"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:asset-management","label":"Asset Management"}],
-    "hasPart":[{"@id":"urn:ngm:class:governance-token","label":"Governance Token"},{"@id":"urn:ngm:class:custody","label":"Custody"}],
-    "uses":[{"@id":"urn:ngm:class:on-chain-governance","label":"On-Chain Governance"},{"@id":"urn:ngm:class:dao","label":"DAO"}],
-    "requires":[{"@id":"urn:ngm:class:token-standard","label":"Token Standard"},{"@id":"urn:ngm:class:compliance","label":"Compliance"}],
-    "implements":[{"@id":"urn:ngm:class:token-governance","label":"Token Governance"}],
-    "enables":[{"@id":"urn:ngm:class:asset-tokenisation","label":"Asset Tokenization"}],
-    "supports":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "dependsOn":[{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"},{"@id":"urn:ngm:class:tokenization","label":"Tokenization"}],
-    "relatedTo":[{"@id":"urn:ngm:class:digital-asset","label":"Digital Asset"},{"@id":"urn:ngm:class:crypto-asset","label":"Crypto Asset"},{"@id":"urn:ngm:class:nft","label":"NFT"}]
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:digital-asset-governance",
+  "@type": "Page",
+  "title": "Digital Asset Governance",
+  "vc:slug": "digital-asset-governance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-asset-governance",
+  "@type": "Class",
+  "label": "Digital Asset Governance",
+  "definition": "Digital asset governance is the set of rules, processes, and authority structures by which tokenised assets and the protocols managing them are controlled, upgraded, and held accountable across their lifecycle. It spans on-chain governance via governance tokens and DAOs, custody and key-management policy, token-standard conformance, and alignment with external regulatory and compliance regimes. By defining who may change parameters, mint or burn supply, and adjudicate disputes, it determines the legitimacy, security, and resilience of digital-asset systems.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralized-governance",
+      "label": "Decentralized Governance"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:token-governance",
+        "label": "Token Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenization"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-asset",
+        "label": "Crypto Asset"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:tokenized-asset-governance","label":"Tokenised Asset Governance"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:tokenized-asset-governance",
+      "label": "Tokenised Asset Governance"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

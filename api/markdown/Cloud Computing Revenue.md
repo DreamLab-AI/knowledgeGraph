@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cloud Computing Revenue
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,9 @@ public: true
   "vc:slug": "cloud-computing-revenue",
   "title": "Cloud Computing Revenue",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AWS Financial Performance"],
+  "vc:outboundWikilinks": [
+    "AWS Financial Performance"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +23,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:hyperscale-cloud", "label": "Hyperscale Cloud"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hyperscale-cloud",
+      "label": "Hyperscale Cloud"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hyperscale-cloud", "label": "Hyperscale Cloud"}, {"@id": "urn:ngm:class:aws-financial-performance", "label": "AWS Financial Performance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hyperscale-cloud",
+        "label": "Hyperscale Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:aws-financial-performance",
+        "label": "AWS Financial Performance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

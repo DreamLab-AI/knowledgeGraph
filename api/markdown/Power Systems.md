@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Power Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Power Systems refers to the interconnected infrastructure of electrical generation, transmission, distribution, and consumption that constitutes a modern electricity network, together with the engineering discipline that analyses, designs, and controls this infrastructure. Key concerns include power flow analysis, voltage stability, frequency regulation, fault analysis, and the integration of variable renewable generation sources into grid operations. Power systems engineering underpins all modern industrial economies and is undergoing significant transformation as decarbonisation mandates, distributed energy resources, and digital control systems reshape traditional architectures. The discipline employs optimisation, control theory, and increasingly machine learning for real-time grid management.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:energy-and-power",
+      "label": "Energy and Power"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"},
-      {"@id": "urn:ngm:class:renewable-energy", "label": "Renewable Energy"},
-      {"@id": "urn:ngm:class:energy-management", "label": "Energy Management"}
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:battery-management-system", "label": "Battery Management System"}
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:battery-management-system",
+        "label": "Battery Management System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"},
-      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"},
-      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
     ]
   },
   "quality": 0.8

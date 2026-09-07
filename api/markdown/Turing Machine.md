@@ -1,40 +1,116 @@
----
-public: true
----
-
-# Turing Machine
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:turing-machine", "@type":"Page", "title":"Turing Machine", "vc:slug":"turing-machine", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:turing-machine",
+  "@type": "Page",
+  "title": "Turing Machine",
+  "vc:slug": "turing-machine",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:turing-machine",
-  "@type":"Class",
-  "label":"Turing Machine",
-  "definition":"A Turing machine is an abstract model of computation consisting of an infinite tape, a read-write head, a finite set of states and a transition function that, given the current state and the symbol under the head, prescribes a symbol to write, a direction to move and a next state. Introduced by Alan Turing, it formalises the notion of an effective procedure and serves as the canonical definition of what is computable. The Church-Turing thesis holds that any function computable by any reasonable mechanism is computable by a Turing machine.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:automata-theory","label":"Automata Theory"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:automata-theory","label":"Automata Theory"}],
-    "hasPart":[{"@id":"urn:ngm:class:finite-state-machine","label":"Finite State Machine"}],
-    "requires":[{"@id":"urn:ngm:class:algorithm","label":"Algorithm"}],
-    "enables":[{"@id":"urn:ngm:class:algorithm","label":"Algorithm"}],
-    "uses":[{"@id":"urn:ngm:class:finite-state-machine","label":"Finite State Machine"}],
-    "dependsOn":[{"@id":"urn:ngm:class:automata-theory","label":"Automata Theory"}],
-    "supports":[{"@id":"urn:ngm:class:algorithm","label":"Algorithm"}],
-    "implements":[{"@id":"urn:ngm:class:algorithm","label":"Algorithm"}],
-    "relatedTo":[{"@id":"urn:ngm:class:finite-state-machine","label":"Finite State Machine"},{"@id":"urn:ngm:class:state-machine","label":"State Machine"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:finite-state-machine","label":"Finite State Machine"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:automata-theory","label":"Automata Theory"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:turing-machine",
+  "@type": "Class",
+  "label": "Turing Machine",
+  "definition": "A Turing machine is an abstract model of computation consisting of an infinite tape, a read-write head, a finite set of states and a transition function that, given the current state and the symbol under the head, prescribes a symbol to write, a direction to move and a next state. Introduced by Alan Turing, it formalises the notion of an effective procedure and serves as the canonical definition of what is computable. The Church-Turing thesis holds that any function computable by any reasonable mechanism is computable by a Turing machine.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:automata-theory",
+      "label": "Automata Theory"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

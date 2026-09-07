@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MCP Client
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "An MCP client is the component within an AI host application that establishes and maintains a connection to one or more Model Context Protocol servers. It negotiates capabilities, forwards tool, resource, and prompt requests from the language model, and relays results back into the model's context. Each client maintains a one-to-one session with a server, mediating the model's access to external systems.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}, {"@id": "urn:ngm:class:mcp-server", "label": "MCP Server"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-server",
+        "label": "MCP Server"
+      }
+    ]
   },
   "quality": 0.72
 }

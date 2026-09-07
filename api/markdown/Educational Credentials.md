@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Educational Credentials
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Educational Credentials are formal attestations of learning achievement, such as diplomas, degrees, certificates, and micro-credentials, issued by an educational authority. When expressed as verifiable credentials they can be cryptographically signed and held by the learner, allowing tamper-evident, privacy-preserving verification without contacting the issuer. They are a primary use case for decentralised, self-sovereign identity systems.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}, {"@id": "urn:ngm:class:distributed-identity", "label": "Distributed Identity"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      }
+    ]
   },
   "quality": 0.72
 }

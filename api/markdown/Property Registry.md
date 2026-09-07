@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Property Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,20 +79,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:asset-registry", "label": "Asset Registry"},
-      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenization"}
+      {
+        "@id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenization"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ]
   },
   "quality": 0.5,
@@ -108,62 +127,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:property-registry:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0e9a051a9a5905419468e8a8806d4f598863f95f11b2db01034bbcb0bdc8848a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BC-0142-smart-contract]]",
-      "resolved": "urn:visionflow:linked:bc-0142-smart-contract",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0432-consortium-blockchain]]",
-      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0456-self-sovereign-identity]]",
-      "resolved": "urn:visionflow:linked:bc-0456-self-sovereign-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0457-decentralized-identifiers]]",
-      "resolved": "urn:visionflow:linked:bc-0457-decentralized-identifiers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0458-verifiable-credentials]]",
-      "resolved": "urn:visionflow:linked:bc-0458-verifiable-credentials",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0493-real-estate-tokenization]]",
-      "resolved": "urn:visionflow:linked:bc-0493-real-estate-tokenization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blockchain-based land title recording systems employing immutable distributed ledgers, cryptographic signatures, and timestamp verification to create tamper-proof property ownership records, reduce fraud, accelerate transaction processing from 30-90 days to 72 hours, and enable transparent title verification whilst addressing the global challenge where 70% of the world's population lacks access to formal land registration.

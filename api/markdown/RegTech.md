@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RegTech
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -113,7 +108,7 @@ public: true
   - It automates [[Compliance Verification]], [[Regulatory Reporting]] and surveillance using [[Artificial Intelligence]] and [[Machine Learning]].
   - Common targets include [[Know Your Customer]] onboarding and [[Anti-Money Laundering]] monitoring.
 - ### Overview
-  - RegTech arose as post-crisis regulation expanded compliance burdens faster than firms could staff them manually.
+  - RegTech arose as post-crisis regulation expanded compliance burdens faster than firms [private] staff them manually.
   - It treats compliance as a data and workflow problem amenable to automation rather than purely a legal exercise.
   - Vendors and in-house teams build tools that ingest rules, map them to controls, and produce auditable evidence.
   - The field overlaps with SupTech, where regulators themselves adopt analytics to supervise markets.

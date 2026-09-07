@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pathfinding Algorithm
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,23 +58,56 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:dijkstra-algorithm", "label": "Dijkstra Algorithm"},
-      {"@id": "urn:ngm:class:graph-search", "label": "Graph Search"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"}
+      {
+        "@id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:graph-algorithms", "label": "Graph Algorithms"},
-      {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"}
+      {
+        "@id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:navigation", "label": "Navigation"},
-      {"@id": "urn:ngm:class:metaverse-navigation-systems", "label": "Metaverse Navigation Systems"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-navigation-systems",
+        "label": "Metaverse Navigation Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:search-algorithms", "label": "Search Algorithms"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:fast-spatial-queries", "label": "Fast Spatial Queries"}
+      {
+        "@id": "urn:ngm:class:search-algorithms",
+        "label": "Search Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:fast-spatial-queries",
+        "label": "Fast Spatial Queries"
+      }
     ]
   },
   "quality": 0.8,
@@ -90,37 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pathfinding-algorithm:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0572a1ddf7a0e6f7ee6f50133424e02703aecff9549bc5bbb825f55245f57bea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Algorithm]]",
-      "resolved": "urn:visionflow:owl:class:algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Pathfinding Algorithm is a concept within the ai domain.

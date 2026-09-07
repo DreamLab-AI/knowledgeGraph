@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Mathematical Logic
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

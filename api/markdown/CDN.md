@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CDN
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,4 +181,3 @@ public: true
   - The CDN market is dominated by Cloudflare, Akamai, Fastly, AWS CloudFront, and Azure CDN, with Chinese operators including Alibaba Cloud CDN serving Asia-Pacific markets. CDN capabilities have expanded significantly beyond static caching: serverless edge compute platforms (Cloudflare Workers, Fastly Compute) execute JavaScript or WebAssembly at the PoP, enabling personalisation, A/B testing, and authentication without round-trips to origin. Edge streaming delivery for live and on-demand video is a high-value workload, with adaptive bitrate streaming and low-latency HLS/DASH delivery requiring specialised cache warming and manifest manipulation at the edge.
 
   - In 2024–2025, CDNs are integrating AI-driven caching prediction models that prefetch content before it is requested based on user behaviour patterns, and ML-based image optimisation pipelines that select format, resolution, and compression level per user device. Security capabilities have expanded to include bot management using behavioural signals, credential stuffing detection, and API security with schema validation at the edge. Private CDN deployments using enterprise PoP networks — operated by hyperscalers within their global backbone — are displacing public CDN for latency-sensitive enterprise applications, while CDN providers are extending to IoT and industrial edge workloads through their distributed PoP footprint.
-

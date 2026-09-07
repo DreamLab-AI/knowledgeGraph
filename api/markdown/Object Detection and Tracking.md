@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Object Detection and Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,19 +91,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:human-pose-slam-capture-system", "label": "Human Pose SLAM Capture System"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:human-pose-slam-capture-system",
+        "label": "Human Pose SLAM Capture System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
     ]
   },
   "provenance": {
@@ -118,82 +134,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:object-detection-and-tracking:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c2f2826c61434fa89008378a95803d3ffa492ebee7e7391c8751585870410a2c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Video]]",
-      "resolved": "urn:visionflow:owl:class:ai-video",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware and Edge]]",
-      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Pose SLAM Capture System]]",
-      "resolved": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:owl:class:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Object Detection]]",
-      "resolved": "urn:visionflow:owl:class:object-detection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Perception System]]",
-      "resolved": "urn:visionflow:owl:class:perception-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Product Design]]",
-      "resolved": "urn:visionflow:owl:class:product-design",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Segmentation and Identification]]",
-      "resolved": "urn:visionflow:owl:class:segmentation-and-identification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[WebDev and Consumer Tooling]]",
-      "resolved": "urn:visionflow:owl:class:web-dev-and-consumer-tooling",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Object Detection and Tracking combines spatial object localisation with temporal tracking to identify, classify, and follow objects across video frames or sensor streams. This capability is essential for autonomous systems to understand dynamic environments, predict object motion, and make safe navigation decisions. Modern systems employ deep learning detectors (YOLO, Faster R-CNN) combined with tracking algorithms (Kalman filters, SORT, DeepSORT).

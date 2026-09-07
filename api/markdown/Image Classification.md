@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Image Classification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -235,92 +230,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:image-classification:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:68212577c2bb67d4808183bb0e4ee0a6cf3ecb3fc0b3c43867435f56fc268912"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[automation]]",
-      "resolved": "urn:visionflow:linked:automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[documentation]]",
-      "resolved": "urn:visionflow:linked:documentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[optimization]]",
-      "resolved": "urn:visionflow:linked:optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[presentation]]",
-      "resolved": "urn:visionflow:linked:presentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[taleb2012antifragile]]",
-      "resolved": "urn:visionflow:linked:taleb2012antifragile",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[computer vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Network]]",
-      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Sector Landscape Analysis]]",
-      "resolved": "urn:visionflow:owl:class:landscape",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[machine learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Video]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-video",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks.
@@ -580,7 +489,7 @@ public: true
 
   - ## Image Denoising
   - **Method:** This technique allows us to leverage the vast amount of image data available on the web. Imagine having access to millions, even billions of images.
-  - **Process:** Instead of relying on labeled datasets, we intentionally degrade images by adding noise. This could be random pixels, blurring, or other forms of distortion. The AI's task is to learn to reverse this degradation, reconstructing the original, pristine image.
+  - **Process:** Instead of relying on labeled datasets, we intentionally degrade images by adding noise. This [private] be random pixels, blurring, or other forms of distortion. The AI's task is to learn to reverse this degradation, reconstructing the original, pristine image.
   - **Concept:** By learning to remove noise, the AI learns to identify the fundamental features and patterns within an image. It becomes better at distinguishing between real details and random noise. This process is similar to how our own brains filter out distractions to focus on relevant information.
   - **Significance:** This approach opens up a vast new world of possibilities for training AI systems, enabling them to learn from unlabeled image data.
 
@@ -594,7 +503,7 @@ public: true
 
   - ## Image Denoising
   - **Method:** This technique allows us to leverage the vast amount of image data available on the web. Imagine having access to millions, even billions of images.
-  - **Process:** Instead of relying on labeled datasets, we intentionally degrade images by adding noise. This could be random pixels, blurring, or other forms of distortion. The AI's task is to learn to reverse this degradation, reconstructing the original, pristine image.
+  - **Process:** Instead of relying on labeled datasets, we intentionally degrade images by adding noise. This [private] be random pixels, blurring, or other forms of distortion. The AI's task is to learn to reverse this degradation, reconstructing the original, pristine image.
   - **Concept:** By learning to remove noise, the AI learns to identify the fundamental features and patterns within an image. It becomes better at distinguishing between real details and random noise. This process is similar to how our own brains filter out distractions to focus on relevant information.
   - **Significance:** This approach opens up a vast new world of possibilities for training AI systems, enabling them to learn from unlabeled image data.
 

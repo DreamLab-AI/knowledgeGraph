@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fallback
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Fallback",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:fault-tolerance", "vc:label": "FaultTolerance" },
-    { "@id": "urn:visionflow:linked:graceful-degradation", "vc:label": "GracefulDegradation" },
-    { "@id": "urn:visionflow:linked:circuit-breaker", "vc:label": "CircuitBreaker" },
-    { "@id": "urn:visionflow:linked:resilience", "vc:label": "Resilience" }
+    {
+      "@id": "urn:visionflow:linked:fault-tolerance",
+      "vc:label": "FaultTolerance"
+    },
+    {
+      "@id": "urn:visionflow:linked:graceful-degradation",
+      "vc:label": "GracefulDegradation"
+    },
+    {
+      "@id": "urn:visionflow:linked:circuit-breaker",
+      "vc:label": "CircuitBreaker"
+    },
+    {
+      "@id": "urn:visionflow:linked:resilience",
+      "vc:label": "Resilience"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,15 +44,30 @@ public: true
   "definition": "A fault-tolerance strategy in which a system, upon detecting that its primary path has failed, timed out, or returned an unacceptable result, automatically switches to a predefined alternative path that provides reduced but still useful behaviour. In agent orchestration the alternative is typically a cheaper or more reliable model, a cached response, a simpler tool, or a deterministic default, invoked so that the overall workflow degrades gracefully rather than failing outright.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": { "@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:fault-tolerance",
+    "label": "Fault Tolerance"
+  },
   "relations": {
     "enables": [
-      { "@id": "urn:ngm:class:graceful-degradation", "label": "Graceful Degradation" },
-      { "@id": "urn:ngm:class:resilience", "label": "Resilience" }
+      {
+        "@id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:circuit-breaker", "label": "Circuit Breaker" },
-      { "@id": "urn:ngm:class:redundancy", "label": "Redundancy" }
+      {
+        "@id": "urn:ngm:class:circuit-breaker",
+        "label": "Circuit Breaker"
+      },
+      {
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      }
     ]
   },
   "quality": 0.75,

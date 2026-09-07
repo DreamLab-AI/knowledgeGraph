@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Enterprise Blockchain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,37 +206,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:enterprise-blockchain:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:00573957a54e4e19cd614158f51f2e1308464bcfc2cfb12eff290eee77a84240"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Business Process Automation]]",
-      "resolved": "urn:visionflow:linked:business-process-automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Enterprise blockchain refers to permissioned distributed ledger platforms designed specifically for business use cases, providing organisations with controlled access, enhanced privacy, and regulatory compliance capabilities. Unlike public blockchains, enterprise solutions restrict network participation to authenticated entities, enabling secure data sharing, automated business processes through smart contracts, and maintenance of a single source of truth without reliance on central authorities.

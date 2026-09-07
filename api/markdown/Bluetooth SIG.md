@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bluetooth SIG
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,20 +21,41 @@ public: true
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
   ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-standards-association", "label": "IEEE Standards Association"}
+      {
+        "@id": "urn:ngm:class:ieee-standards-association",
+        "label": "IEEE Standards Association"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bluetooth-low-energy", "label": "Bluetooth Low Energy"},
-      {"@id": "urn:ngm:class:bluetooth-le", "label": "Bluetooth LE"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth-le",
+        "label": "Bluetooth LE"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +76,3 @@ public: true
   - The SIG has released major specification milestones: Bluetooth 2.0+EDR (2004, higher throughput), Bluetooth 4.0 (2010, introducing Bluetooth Low Energy), Bluetooth 5.0 (2016, 2× speed / 4× range for BLE), Bluetooth 5.1 (2019, direction finding), Bluetooth 5.2 (2020, LE Audio framework), and Bluetooth 5.4 (2023, periodic advertising with responses). As of 2024, over 5 billion Bluetooth-enabled products ship annually, making Bluetooth the world's highest-volume short-range wireless standard.
 
   - In 2024–2025, the SIG's focus is on Bluetooth 6.0 (channel sounding for centimetre-level ranging), further Auracast broadcast audio rollout in public venues, and Matter interoperability for smart home ecosystems. The SIG is also advancing the Bluetooth Mesh 2.0 specification (subnet bridging, large-network scalability) relevant to building automation and industrial IoT. Cybersecurity hardening of the pairing and encryption protocols remains an active area following academic disclosures of BIAS, BLESA, and other Bluetooth implementation vulnerabilities.
-

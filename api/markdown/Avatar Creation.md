@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Avatar Creation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,67 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:avatar-creation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fac81e459d7ea061ab40718bc5a6c7346334c76edb733de008599921e47b9468"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Modeling Tools]]",
-      "resolved": "urn:visionflow:linked:3-d-modeling-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Generation Systems]]",
-      "resolved": "urn:visionflow:linked:ai-generation-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Customization Interfaces]]",
-      "resolved": "urn:visionflow:linked:customization-interfaces",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Identity Creation]]",
-      "resolved": "urn:visionflow:linked:digital-identity-creation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Persona Management]]",
-      "resolved": "urn:visionflow:linked:digital-persona-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse Participation]]",
-      "resolved": "urn:visionflow:linked:metaverse-participation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Self-Expression]]",
-      "resolved": "urn:visionflow:linked:virtual-self-expression",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Avatar Creation is the process of designing and generating 3D digital representations of users for metaverse environments, encompassing selfie-based AI generation, manual customization tools, full-body scanning, and procedural generation techniques that enable personalized virtual identities.

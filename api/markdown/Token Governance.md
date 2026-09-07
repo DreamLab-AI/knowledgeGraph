@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Token Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

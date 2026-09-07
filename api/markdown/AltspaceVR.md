@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AltspaceVR
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:altspace-vr:904cf3053391",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cdc8633b1e3e328ccb14a674a3d53f12cc14c317bb1b9eec2b9e11c94f56403c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar System]]",
-      "resolved": "urn:visionflow:linked:avatar-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual World]]",
-      "resolved": "urn:visionflow:linked:virtual-world",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Reality]]",
-      "resolved": "urn:visionflow:linked:virtual-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Microsoft Mesh]]",
-      "resolved": "urn:visionflow:linked:microsoft-mesh",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Domain]]",
-      "resolved": "urn:visionflow:linked:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AltspaceVR was a social virtual reality platform offering avatar-based gatherings, events and shared spaces, later acquired by Microsoft and eventually shut down.

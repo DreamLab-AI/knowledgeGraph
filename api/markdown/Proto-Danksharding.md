@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proto-Danksharding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -113,6 +109,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Proto-danksharding is an Ethereum scaling upgrade, specified in EIP-4844, that introduces blob-carrying transactions to provide cheap, temporary data availability for layer-2 rollups. It adds a new transaction type carrying large binary data blobs that are not accessible to the Ethereum Virtual Machine and are pruned after a short retention period, with KZG commitments proving their contents. It is an incremental step towards the full danksharding design.
   - Related concepts: [[Ethereum]] [[Rollup]] [[Data Availability]] [[EIP-4844]]

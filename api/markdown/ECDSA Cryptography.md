@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ECDSA Cryptography
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "ECDSA (Elliptic Curve Digital Signature Algorithm) is a public-key signature scheme that uses the algebra of elliptic curves over finite fields to produce compact, efficient digital signatures. It provides strong security with much smaller keys than RSA, making it the dominant signing algorithm in blockchains such as Bitcoin and Ethereum. ECDSA enables verifiable authorship and integrity of messages and transactions without revealing the private key.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metadata Schema
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -233,67 +228,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metadata-schema:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:52c1729e19ee61425d01c6bde48fc52a9fe72978bddb88b874f7e40ae85da0f1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Discovery]]",
-      "resolved": "urn:visionflow:linked:data-discovery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Standard]]",
-      "resolved": "urn:visionflow:linked:data-standard",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dublin Core]]",
-      "resolved": "urn:visionflow:linked:dublin-core",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FAIR Data Principles]]",
-      "resolved": "urn:visionflow:linked:fair-data-principles",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[JSON-LD]]",
-      "resolved": "urn:visionflow:linked:json-ld",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Schema.org]]",
-      "resolved": "urn:visionflow:linked:schema-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Governance]]",
-      "resolved": "urn:visionflow:owl:class:data-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:data-interoperability",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardized vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.

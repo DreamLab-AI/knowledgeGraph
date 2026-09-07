@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Rights Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,72 +186,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-rights-management:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9697310208a5da0a432d98f0ff69ab9b749bd531c5cb0677097e3ad5a28125f5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Encryption]]",
-      "resolved": "urn:visionflow:linked:encryption",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[License Management]]",
-      "resolved": "urn:visionflow:linked:license-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Piracy Prevention]]",
-      "resolved": "urn:visionflow:linked:piracy-prevention",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Access Control]]",
-      "resolved": "urn:visionflow:owl:class:access-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Content Protection]]",
-      "resolved": "urn:visionflow:owl:class:content-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Royalty Distribution]]",
-      "resolved": "urn:visionflow:owl:class:royalty-distribution",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralised rights enforcement and automated royalty distribution.

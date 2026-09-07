@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transaction Monitoring
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,4 +175,3 @@ public: true
   - The cryptocurrency sector has driven innovation in blockchain transaction monitoring, with specialised vendors (Chainalysis, Elliptic, TRM Labs) analysing on-chain transaction graphs to trace funds across mixer services, DeFi protocols, and cross-chain bridges. The [[FATF Travel Rule]] requires crypto asset service providers to share originator and beneficiary information, driving integration between transaction monitoring and message exchange infrastructure.
 
   - From 2024 onward, large language models are being piloted for SAR narrative drafting, alert triage assistance, and typology generation. Regulatory pressure is intensifying: the EU's AML Authority (AMLA) — established under the 2024 AML Regulation — will directly supervise high-risk institutions and set binding standards for transaction monitoring effectiveness. Consolidated financial intelligence approaches, where FIUs share data across borders under the Egmont Group framework, are expanding to address transnational money laundering networks.
-

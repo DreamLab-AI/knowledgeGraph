@@ -1,38 +1,124 @@
----
-public: true
----
-
-# Polygon Mesh
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:polygon-mesh", "@type":"Page", "title":"Polygon Mesh", "vc:slug":"polygon-mesh", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:polygon-mesh",
+  "@type": "Page",
+  "title": "Polygon Mesh",
+  "vc:slug": "polygon-mesh",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:polygon-mesh",
-  "@type":"Class",
-  "label":"Polygon Mesh",
-  "definition":"A polygon mesh is a collection of vertices, edges, and faces that defines the shape of a polyhedral object in three-dimensional computer graphics. Faces are usually triangles or quadrilaterals whose connectivity describes a surface, and per-vertex attributes such as normals and texture coordinates support shading and texturing. Polygon meshes are the dominant representation for real-time rendering, modelling, and animation.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:computer-graphics","label":"Computer Graphics"}],
-    "hasPart":[{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"},{"@id":"urn:ngm:class:level-of-detail","label":"Level of Detail"}],
-    "requires":[{"@id":"urn:ngm:class:rendering","label":"Rendering"}],
-    "uses":[{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"},{"@id":"urn:ngm:class:rasterization","label":"Rasterization"}],
-    "enables":[{"@id":"urn:ngm:class:rendering","label":"Rendering"},{"@id":"urn:ngm:class:animation","label":"Animation"}],
-    "supports":[{"@id":"urn:ngm:class:gpu-rendering","label":"GPU Rendering"},{"@id":"urn:ngm:class:level-of-detail","label":"Level of Detail"}],
-    "implements":[{"@id":"urn:ngm:class:usd","label":"USD"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:procedural-generation","label":"Procedural Generation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:procedural-generation","label":"Procedural Generation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:skeletal-animation","label":"Skeletal Animation"},{"@id":"urn:ngm:class:gpu-rendering","label":"GPU Rendering"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:polygon-mesh",
+  "@type": "Class",
+  "label": "Polygon Mesh",
+  "definition": "A polygon mesh is a collection of vertices, edges, and faces that defines the shape of a polyhedral object in three-dimensional computer graphics. Faces are usually triangles or quadrilaterals whose connectivity describes a surface, and per-vertex attributes such as normals and texture coordinates support shading and texturing. Polygon meshes are the dominant representation for real-time rendering, modelling, and animation.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:usd",
+        "label": "USD"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

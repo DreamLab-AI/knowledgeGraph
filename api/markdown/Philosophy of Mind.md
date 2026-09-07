@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Philosophy of Mind
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -157,41 +152,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:philosophy-of-mind:ecc0860bc83b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:11664385e2d2259500f5d08bba7700061e2ea8c2f1556986cbb2af324e3880bf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cognitive Science]]",
-      "resolved": "urn:visionflow:linked:cognitive-science",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reasoning]]",
-      "resolved": "urn:visionflow:linked:reasoning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Philosophy of Mind is the branch of [[Philosophy]] that investigates the fundamental nature of [[Consciousness]], mental states, and their relationship to the physical brain and body. It asks what it means for something to think, perceive, and experience, engaging core debates — the mind-body problem, [[Functionalism]], physicalism, and [[Phenomenology]] — that are foundational to both [[Cognitive Science]] and [[Artificial Intelligence]]. The field provides the conceptual scaffolding within which empirical sciences of the mind must ultimately be interpreted, and poses hard limits on computational accounts of cognition through arguments such as the hard problem of consciousness and the Chinese Room.
 
@@ -237,7 +197,7 @@ public: true
     - The Chinese Room and Turing Test arguments set the agenda for what it means for a system (e.g. a large language model) to "understand" language in [[Natural Language Processing]]
     - Philosophy of Mind grounds the distinction between narrow AI (task-specific) and [[Artificial Intelligence|artificial general intelligence]] (AGI)
   - #### AI Ethics and Moral Status
-    - Determining whether an AI system could be a moral patient (deserving of consideration) requires prior answers to what counts as consciousness and sentience — core philosophy of mind questions
+    - Determining whether an AI system [private] be a moral patient (deserving of consideration) requires prior answers to what counts as consciousness and sentience — core philosophy of mind questions
     - [[AI Ethics]] debates on robot rights, AI welfare, and moral responsibility for AI actions all presuppose a philosophy of mind framework
   - #### Cognitive Architectures
     - ACT-R, SOAR, and global workspace architectures are all implementations of philosophically motivated theories of mind; their design reflects commitments to [[Functionalism]], modularity, or [[Embodied Cognition]]

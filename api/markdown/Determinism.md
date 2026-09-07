@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Determinism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "Determinism, in computing and distributed systems, is the property by which a computational process produces identical outputs given identical inputs and initial state, regardless of when, where, or how many times it is executed. Deterministic systems are essential for reproducibility of scientific experiments, predictability of embedded and safety-critical control systems, and correctness of distributed consensus protocols where all participating nodes must reach the same conclusion from the same inputs. In the context of blockchain and smart contracts, determinism is a hard requirement because non-deterministic execution would cause different nodes to compute different state transitions, breaking consensus.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"},
-      {"@id": "urn:ngm:class:random-number-generation", "label": "Random Number Generation"}
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
     ]
   },
   "quality": 0.8

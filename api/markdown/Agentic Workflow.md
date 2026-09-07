@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agentic Workflow
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,51 +7,186 @@ public: true
   "title": "Agentic Workflow",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:ngm:class:agentic-ai", "vc:label": "Agentic AI" },
-    { "@id": "urn:ngm:class:ai-agent-system", "vc:label": "AI Agent System" },
-    { "@id": "urn:ngm:class:tool-use", "vc:label": "Tool Use" },
-    { "@id": "urn:ngm:class:function-calling", "vc:label": "Function Calling" },
-    { "@id": "urn:ngm:class:reasoning", "vc:label": "Reasoning" },
-    { "@id": "urn:ngm:class:chain-of-thought", "vc:label": "Chain of Thought" },
-    { "@id": "urn:ngm:class:prompt-engineering", "vc:label": "Prompt Engineering" },
-    { "@id": "urn:ngm:class:re-act-pattern", "vc:label": "ReAct Pattern" },
-    { "@id": "urn:ngm:class:multi-agent-systems", "vc:label": "Multi-Agent Systems" },
-    { "@id": "urn:ngm:class:agent-frameworks", "vc:label": "Agent Frameworks" },
-    { "@id": "urn:ngm:class:orchestration", "vc:label": "Orchestration" },
-    { "@id": "urn:ngm:class:planning-and-scheduling", "vc:label": "Planning and Scheduling" },
-    { "@id": "urn:ngm:class:robotic-process-automation", "vc:label": "Robotic Process Automation" },
-    { "@id": "urn:ngm:class:task-planning", "vc:label": "Task Planning" },
-    { "@id": "urn:ngm:class:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation" },
-    { "@id": "urn:ngm:class:autonomous-coding", "vc:label": "Autonomous Coding" },
-    { "@id": "urn:ngm:class:ai-research-assistant", "vc:label": "AI Research Assistant" },
-    { "@id": "urn:ngm:class:context-window", "vc:label": "Context Window" },
-    { "@id": "urn:ngm:class:large-language-models", "vc:label": "Large Language Models" },
-    { "@id": "urn:ngm:class:agent-memory", "vc:label": "Agent Memory" },
-    { "@id": "urn:ngm:class:plan-and-execute-pattern", "vc:label": "Plan-and-Execute Pattern" },
-    { "@id": "urn:ngm:class:reflection-pattern", "vc:label": "Reflection Pattern" },
-    { "@id": "urn:ngm:class:tool-call-loop", "vc:label": "Tool Call Loop" },
-    { "@id": "urn:ngm:class:llm-inference", "vc:label": "LLM Inference" },
-    { "@id": "urn:ngm:class:api-integration", "vc:label": "API Integration" },
-    { "@id": "urn:ngm:class:single-turn-inference", "vc:label": "Single-Turn Inference" },
-    { "@id": "urn:ngm:class:traditional-workflow-orchestration", "vc:label": "Traditional Workflow Orchestration" },
-    { "@id": "urn:ngm:class:workflow-automation", "vc:label": "Workflow Automation" },
-    { "@id": "urn:ngm:class:human-in-the-loop", "vc:label": "Human-in-the-Loop" },
-    { "@id": "urn:ngm:class:ai-safety", "vc:label": "AI Safety" },
-    { "@id": "urn:ngm:class:prompt-injection", "vc:label": "Prompt Injection" },
-    { "@id": "urn:ngm:class:vector-database", "vc:label": "Vector Database" },
-    { "@id": "urn:ngm:class:model-context-protocol", "vc:label": "Model Context Protocol" },
-    { "@id": "urn:ngm:class:langgraph", "vc:label": "LangGraph" },
-    { "@id": "urn:ngm:class:crewai", "vc:label": "CrewAI" },
-    { "@id": "urn:ngm:class:autogen", "vc:label": "AutoGen" },
-    { "@id": "urn:ngm:class:foundation-models", "vc:label": "Foundation Models" },
-    { "@id": "urn:ngm:class:agent-loop", "vc:label": "Agent Loop" },
-    { "@id": "urn:ngm:class:autonomous-agent", "vc:label": "Autonomous Agent" },
-    { "@id": "urn:ngm:class:eu-ai-act", "vc:label": "EU AI Act" },
-    { "@id": "urn:ngm:class:nist-ai-rmf", "vc:label": "NIST AI RMF" },
-    { "@id": "urn:ngm:class:ai-alignment", "vc:label": "AI Alignment" },
-    { "@id": "urn:ngm:class:reinforcement-learning", "vc:label": "Reinforcement Learning" },
-    { "@id": "urn:ngm:class:swe-bench", "vc:label": "SWE-bench" },
-    { "@id": "urn:ngm:class:openai-research-organisation-agents-sdk", "vc:label": "OpenAI Agents SDK" }
+    {
+      "@id": "urn:ngm:class:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:ngm:class:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:ngm:class:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:ngm:class:reasoning",
+      "vc:label": "Reasoning"
+    },
+    {
+      "@id": "urn:ngm:class:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:ngm:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:ngm:class:re-act-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:ngm:class:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:ngm:class:orchestration",
+      "vc:label": "Orchestration"
+    },
+    {
+      "@id": "urn:ngm:class:planning-and-scheduling",
+      "vc:label": "Planning and Scheduling"
+    },
+    {
+      "@id": "urn:ngm:class:robotic-process-automation",
+      "vc:label": "Robotic Process Automation"
+    },
+    {
+      "@id": "urn:ngm:class:task-planning",
+      "vc:label": "Task Planning"
+    },
+    {
+      "@id": "urn:ngm:class:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:ngm:class:autonomous-coding",
+      "vc:label": "Autonomous Coding"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-assistant",
+      "vc:label": "AI Research Assistant"
+    },
+    {
+      "@id": "urn:ngm:class:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:ngm:class:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:ngm:class:plan-and-execute-pattern",
+      "vc:label": "Plan-and-Execute Pattern"
+    },
+    {
+      "@id": "urn:ngm:class:reflection-pattern",
+      "vc:label": "Reflection Pattern"
+    },
+    {
+      "@id": "urn:ngm:class:tool-call-loop",
+      "vc:label": "Tool Call Loop"
+    },
+    {
+      "@id": "urn:ngm:class:llm-inference",
+      "vc:label": "LLM Inference"
+    },
+    {
+      "@id": "urn:ngm:class:api-integration",
+      "vc:label": "API Integration"
+    },
+    {
+      "@id": "urn:ngm:class:single-turn-inference",
+      "vc:label": "Single-Turn Inference"
+    },
+    {
+      "@id": "urn:ngm:class:traditional-workflow-orchestration",
+      "vc:label": "Traditional Workflow Orchestration"
+    },
+    {
+      "@id": "urn:ngm:class:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:ngm:class:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:ngm:class:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:ngm:class:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:ngm:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:langgraph",
+      "vc:label": "LangGraph"
+    },
+    {
+      "@id": "urn:ngm:class:crewai",
+      "vc:label": "CrewAI"
+    },
+    {
+      "@id": "urn:ngm:class:autogen",
+      "vc:label": "AutoGen"
+    },
+    {
+      "@id": "urn:ngm:class:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:ngm:class:agent-loop",
+      "vc:label": "Agent Loop"
+    },
+    {
+      "@id": "urn:ngm:class:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:ngm:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:ngm:class:nist-ai-rmf",
+      "vc:label": "NIST AI RMF"
+    },
+    {
+      "@id": "urn:ngm:class:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:ngm:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:ngm:class:swe-bench",
+      "vc:label": "SWE-bench"
+    },
+    {
+      "@id": "urn:ngm:class:openai-research-organisation-agents-sdk",
+      "vc:label": "OpenAI Agents SDK"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -79,53 +209,143 @@ public: true
   ],
   "relations": {
     "uses": [
-      { "@id": "urn:ngm:class:tool-use", "label": "Tool Use" },
-      { "@id": "urn:ngm:class:function-calling", "label": "Function Calling" },
-      { "@id": "urn:ngm:class:reasoning", "label": "Reasoning" },
-      { "@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought" },
-      { "@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering" },
-      { "@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern" }
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI" },
-      { "@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems" },
-      { "@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks" },
-      { "@id": "urn:ngm:class:orchestration", "label": "Orchestration" },
-      { "@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling" },
-      { "@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation" }
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System" },
-      { "@id": "urn:ngm:class:task-planning", "label": "Task Planning" },
-      { "@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation" },
-      { "@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding" }
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:context-window", "label": "Context Window" },
-      { "@id": "urn:ngm:class:large-language-models", "label": "Large Language Models" },
-      { "@id": "urn:ngm:class:agent-memory", "label": "Agent Memory" }
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      }
     ],
     "hasPart": [
-      { "@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan and Execute Pattern" },
-      { "@id": "urn:ngm:class:reflection-pattern", "label": "Reflection Pattern" },
-      { "@id": "urn:ngm:class:tool-call-loop", "label": "Tool Call Loop" }
+      {
+        "@id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan and Execute Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:reflection-pattern",
+        "label": "Reflection Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:tool-call-loop",
+        "label": "Tool Call Loop"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:inference", "label": "LLM Inference" },
-      { "@id": "urn:ngm:class:api-integration", "label": "API Integration" }
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "LLM Inference"
+      },
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:single-turn-inference", "label": "Single-Turn Inference" }
+      {
+        "@id": "urn:ngm:class:single-turn-inference",
+        "label": "Single-Turn Inference"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop" },
-      { "@id": "urn:ngm:class:ai-safety", "label": "AI Safety" },
-      { "@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection" }
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:llm-agent-loop", "label": "LLM Agent Loop" },
-    { "@id": "urn:ngm:class:autonomous-agent-workflow", "label": "Autonomous Agent Workflow" }
+    {
+      "@id": "urn:ngm:class:llm-agent-loop",
+      "label": "LLM Agent Loop"
+    },
+    {
+      "@id": "urn:ngm:class:autonomous-agent-workflow",
+      "label": "Autonomous Agent Workflow"
+    }
   ],
   "quality": 0.91,
   "provenance": {
@@ -136,68 +356,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agentic-workflow:2026-06-20",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:agentic-workflow"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Agentic AI]]", "resolved": "urn:ngm:class:agentic-ai", "kind": "ResolvedLink" },
-    { "raw": "[[AI Agent System]]", "resolved": "urn:ngm:class:ai-agent-system", "kind": "ResolvedLink" },
-    { "raw": "[[Tool Use]]", "resolved": "urn:ngm:class:tool-use", "kind": "ResolvedLink" },
-    { "raw": "[[Function Calling]]", "resolved": "urn:ngm:class:function-calling", "kind": "ResolvedLink" },
-    { "raw": "[[Reasoning]]", "resolved": "urn:ngm:class:reasoning", "kind": "ResolvedLink" },
-    { "raw": "[[Chain of Thought]]", "resolved": "urn:ngm:class:chain-of-thought", "kind": "ResolvedLink" },
-    { "raw": "[[Prompt Engineering]]", "resolved": "urn:ngm:class:prompt-engineering", "kind": "ResolvedLink" },
-    { "raw": "[[ReAct Pattern]]", "resolved": "urn:ngm:class:re-act-pattern", "kind": "ResolvedLink" },
-    { "raw": "[[Multi-Agent Systems]]", "resolved": "urn:ngm:class:multi-agent-systems", "kind": "ResolvedLink" },
-    { "raw": "[[Agent Frameworks]]", "resolved": "urn:ngm:class:agent-frameworks", "kind": "ResolvedLink" },
-    { "raw": "[[Orchestration]]", "resolved": "urn:ngm:class:orchestration", "kind": "ResolvedLink" },
-    { "raw": "[[Planning and Scheduling]]", "resolved": "urn:ngm:class:planning-and-scheduling", "kind": "ResolvedLink" },
-    { "raw": "[[Robotic Process Automation]]", "resolved": "urn:ngm:class:robotic-process-automation", "kind": "ResolvedLink" },
-    { "raw": "[[Task Planning]]", "resolved": "urn:ngm:class:task-planning", "kind": "ResolvedLink" },
-    { "raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:ngm:class:retrieval-augmented-generation", "kind": "ResolvedLink" },
-    { "raw": "[[Autonomous Coding]]", "resolved": "urn:ngm:class:autonomous-coding", "kind": "ResolvedLink" },
-    { "raw": "[[AI Research Assistant]]", "resolved": "urn:ngm:class:ai-research-assistant", "kind": "StubLink" },
-    { "raw": "[[Context Window]]", "resolved": "urn:ngm:class:context-window", "kind": "ResolvedLink" },
-    { "raw": "[[Large Language Models]]", "resolved": "urn:ngm:class:large-language-models", "kind": "ResolvedLink" },
-    { "raw": "[[Agent Memory]]", "resolved": "urn:ngm:class:agent-memory", "kind": "ResolvedLink" },
-    { "raw": "[[Plan-and-Execute Pattern]]", "resolved": "urn:ngm:class:plan-and-execute-pattern", "kind": "StubLink" },
-    { "raw": "[[Reflection Pattern]]", "resolved": "urn:ngm:class:reflection-pattern", "kind": "StubLink" },
-    { "raw": "[[Tool Call Loop]]", "resolved": "urn:ngm:class:tool-call-loop", "kind": "StubLink" },
-    { "raw": "[[LLM Inference]]", "resolved": "urn:ngm:class:llm-inference", "kind": "StubLink" },
-    { "raw": "[[API Integration]]", "resolved": "urn:ngm:class:api-integration", "kind": "StubLink" },
-    { "raw": "[[Single-Turn Inference]]", "resolved": "urn:ngm:class:single-turn-inference", "kind": "StubLink" },
-    { "raw": "[[Traditional Workflow Orchestration]]", "resolved": "urn:ngm:class:traditional-workflow-orchestration", "kind": "StubLink" },
-    { "raw": "[[Workflow Automation]]", "resolved": "urn:ngm:class:workflow-automation", "kind": "ResolvedLink" },
-    { "raw": "[[Human-in-the-Loop]]", "resolved": "urn:ngm:class:human-in-the-loop", "kind": "ResolvedLink" },
-    { "raw": "[[AI Safety]]", "resolved": "urn:ngm:class:ai-safety", "kind": "ResolvedLink" },
-    { "raw": "[[Prompt Injection]]", "resolved": "urn:ngm:class:prompt-injection", "kind": "ResolvedLink" },
-    { "raw": "[[Vector Database]]", "resolved": "urn:ngm:class:vector-database", "kind": "ResolvedLink" },
-    { "raw": "[[Model Context Protocol]]", "resolved": "urn:ngm:class:model-context-protocol", "kind": "ResolvedLink" },
-    { "raw": "[[LangGraph]]", "resolved": "urn:ngm:class:langgraph", "kind": "StubLink" },
-    { "raw": "[[CrewAI]]", "resolved": "urn:ngm:class:crewai", "kind": "StubLink" },
-    { "raw": "[[AutoGen]]", "resolved": "urn:ngm:class:autogen", "kind": "StubLink" },
-    { "raw": "[[Foundation Models]]", "resolved": "urn:ngm:class:foundation-models", "kind": "ResolvedLink" },
-    { "raw": "[[Agent Loop]]", "resolved": "urn:ngm:class:agent-loop", "kind": "ResolvedLink" },
-    { "raw": "[[Autonomous Agent]]", "resolved": "urn:ngm:class:autonomous-agent", "kind": "ResolvedLink" },
-    { "raw": "[[EU AI Act]]", "resolved": "urn:ngm:class:eu-ai-act", "kind": "ResolvedLink" },
-    { "raw": "[[NIST AI RMF]]", "resolved": "urn:ngm:class:nist-ai-rmf", "kind": "ResolvedLink" },
-    { "raw": "[[AI Alignment]]", "resolved": "urn:ngm:class:ai-alignment", "kind": "ResolvedLink" },
-    { "raw": "[[Reinforcement Learning]]", "resolved": "urn:ngm:class:reinforcement-learning", "kind": "ResolvedLink" },
-    { "raw": "[[SWE-bench]]", "resolved": "urn:ngm:class:swe-bench", "kind": "StubLink" },
-    { "raw": "[[OpenAI Agents SDK]]", "resolved": "urn:ngm:class:openai-research-organisation-agents-sdk", "kind": "StubLink" }
-  ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
-  "prov:generatedAtTime": { "@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime" }
-}
-```
-
 - ### Definition
-  - An **agentic workflow** is a structured, iterative, goal-directed execution pattern in which an [[Agentic AI]] system autonomously plans actions, invokes [[Tool Use]] capabilities (web search, code interpreters, file systems, external REST APIs, databases), processes observations from those invocations, and loops through successive [[Reasoning]] cycles until a task goal is satisfied or an explicit stopping criterion is met. Unlike [[Single-Turn Inference]] — where a [[Large Language Models]] responds once to a single prompt — an agentic workflow sustains coherent, adaptive reasoning across many successive inference steps, building an evolving state of knowledge and accomplishment that neither the user nor the model could achieve in a single exchange. The pattern depends on [[Function Calling]] to translate model intentions into structured executable actions, [[Chain of Thought]] reasoning to make the agent's decision rationale explicit and recoverable, [[Agent Memory]] to persist relevant context across steps, and an [[Orchestration]] layer to coordinate sub-task delegation in [[Multi-Agent Systems]] topologies. Agentic workflows are the architectural backbone of production systems such as Klarna's customer-support platform running on [[LangGraph]], [[OpenAI Agents SDK]]-based pipelines now processing tens of millions of requests monthly, [[CrewAI]] role-based crew deployments in enterprise automation, Microsoft's [[AutoGen]] multi-agent conversation frameworks, and Anthropic's Claude agent tooling. The pattern introduces qualitatively new engineering challenges beyond single-turn systems: error compounding across chains of dependent steps, [[Prompt Injection]] attacks embedded in tool outputs from hostile external sources, [[Context Window]] saturation in long-horizon tasks, the difficulty of defining reliable stopping criteria for open-ended goals, and the need for [[Human-in-the-Loop]] escalation mechanisms in high-stakes deployments where irreversible actions — code pushes, database writes, email sends, financial transactions — must be confirmed before execution. The global market for agentic AI systems reached approximately USD 7.84 billion in 2025 and is projected to grow at 46.3% CAGR to reach USD 52.62 billion by 2030, with Gartner projecting that 40% of enterprise applications will incorporate task-specific AI agents by end of 2026, up from under 5% in 2025, evidencing a rapid transition from experimental deployments to production infrastructure across software engineering, research synthesis, enterprise process automation, customer service, and scientific discovery verticals.
+  - An **agentic workflow** is a structured, iterative, goal-directed execution pattern in which an [[Agentic AI]] system autonomously plans actions, invokes [[Tool Use]] capabilities (web search, code interpreters, file systems, external REST APIs, databases), processes observations from those invocations, and loops through successive [[Reasoning]] cycles until a task goal is satisfied or an explicit stopping criterion is met. Unlike [[Single-Turn Inference]] — where a [[Large Language Models]] responds once to a single prompt — an agentic workflow sustains coherent, adaptive reasoning across many successive inference steps, building an evolving state of knowledge and accomplishment that neither the user nor the model [private] achieve in a single exchange. The pattern depends on [[Function Calling]] to translate model intentions into structured executable actions, [[Chain of Thought]] reasoning to make the agent's decision rationale explicit and recoverable, [[Agent Memory]] to persist relevant context across steps, and an [[Orchestration]] layer to coordinate sub-task delegation in [[Multi-Agent Systems]] topologies. Agentic workflows are the architectural backbone of production systems such as Klarna's customer-support platform running on [[LangGraph]], [[OpenAI Agents SDK]]-based pipelines now processing tens of millions of requests monthly, [[CrewAI]] role-based crew deployments in enterprise automation, Microsoft's [[AutoGen]] multi-agent conversation frameworks, and Anthropic's Claude agent tooling. The pattern introduces qualitatively new engineering challenges beyond single-turn systems: error compounding across chains of dependent steps, [[Prompt Injection]] attacks embedded in tool outputs from hostile external sources, [[Context Window]] saturation in long-horizon tasks, the difficulty of defining reliable stopping criteria for open-ended goals, and the need for [[Human-in-the-Loop]] escalation mechanisms in high-stakes deployments where irreversible actions — code pushes, database writes, email sends, financial transactions — must be confirmed before execution. The global market for agentic AI systems reached approximately USD 7.84 billion in 2025 and is projected to grow at 46.3% CAGR to reach USD 52.62 billion by 2030, with Gartner projecting that 40% of enterprise applications will incorporate task-specific AI agents by end of 2026, up from under 5% in 2025, evidencing a rapid transition from experimental deployments to production infrastructure across software engineering, research synthesis, enterprise process automation, customer service, and scientific discovery verticals.
 
 - ### Semantic Classification
   - owl-class:: ai:AgenticWorkflow
@@ -315,7 +475,7 @@ public: true
 
   Agentic workflows represent the operational realisation of [[Agentic AI]]: the specific architectural and engineering pattern through which the agency of an AI system — its capacity to plan, act, and adapt autonomously — is expressed in production software systems. The concept emerged as a practical engineering discipline in 2023–2024, when [[Foundation Models]] such as GPT-4, Claude 3, and Gemini 1.5 achieved sufficient capability in [[Function Calling]], [[Reasoning]], and multi-turn context management to sustain coherent action across dozens or hundreds of successive steps without human intervention at each step. The foundational intellectual contribution was the ReAct prompting method (Yao et al., 2022) — which demonstrated that interleaving [[Chain of Thought]] reasoning with explicit action invocations dramatically improved both the reliability and interpretability of agent behaviour — combined with the infrastructure investments that enabled reliable [[Tool Use]] through structured JSON schemas: OpenAI's function-calling API (June 2023), Anthropic's tool-use interface (2024), and Google's function-calling extensions for Gemini.
 
-  The core claim of an agentic workflow is that a complex task can be decomposed into a sequence (or directed acyclic graph) of smaller actions, each consisting of a tool invocation, an observation, and a decision about the next step, such that the composition of these atomic steps accomplishes an objective that could not be achieved in a single inference call. This claim holds across diverse task families: debugging a multi-file software repository requires reading files, writing code, running tests, observing failures, and revising iteratively; synthesising a literature review requires searching databases, retrieving papers, extracting key claims, synthesising across sources, and validating consistency; resolving a customer service ticket requires querying a CRM, checking order status, applying business rules, drafting a response, and logging the outcome. The unifying structure is the tool-call loop: (1) observe current state; (2) reason about next action; (3) execute action via tool call; (4) observe result; (5) evaluate progress; (6) loop or terminate. The sophistication of the workflow arises from the quality of the model's [[Reasoning]] at each decision point, not from the loop structure itself, which is elementary.
+  The core claim of an agentic workflow is that a complex task can be decomposed into a sequence (or directed acyclic graph) of smaller actions, each consisting of a tool invocation, an observation, and a decision about the next step, such that the composition of these atomic steps accomplishes an objective that [private] not be achieved in a single inference call. This claim holds across diverse task families: debugging a multi-file software repository requires reading files, writing code, running tests, observing failures, and revising iteratively; synthesising a literature review requires searching databases, retrieving papers, extracting key claims, synthesising across sources, and validating consistency; resolving a customer service ticket requires querying a CRM, checking order status, applying business rules, drafting a response, and logging the outcome. The unifying structure is the tool-call loop: (1) observe current state; (2) reason about next action; (3) execute action via tool call; (4) observe result; (5) evaluate progress; (6) loop or terminate. The sophistication of the workflow arises from the quality of the model's [[Reasoning]] at each decision point, not from the loop structure itself, which is elementary.
 
   What distinguishes the 2025–2026 generation of agentic workflows from earlier attempts at AI automation is the combination of scale, reliability, and ecosystem maturity. Production benchmarks on [[SWE-bench]] Verified — a dataset of real GitHub bug reports requiring multi-step repository understanding and code editing — show frontier agents achieving 87.6% task resolution (Claude Opus 4.7, early 2026), up from baselines below 5% for single-turn approaches in 2022. WebArena scores for browser-based multi-step task completion improved from 14.41% in 2023 to over 61% by early 2025. Klarna's publicly reported customer-support deployment on [[LangGraph]] reportedly handles roughly two-thirds of customer inquiries without human agent involvement, representing a direct displacement of hundreds of full-time equivalent support roles and demonstrating that production reliability is achievable at scale. Organisations deploying agentic AI report average projected ROI of 171%, with the most impactful deployments achieving 4–7x improvements in task throughput and 70% cost reductions in targeted process categories.
 
@@ -376,15 +536,15 @@ public: true
 
   The intellectual ancestry of agentic workflows traces to classical AI planning (STRIPS, HTN planning, Nilsson's 1980 "Principles of Artificial Intelligence"), robotic sense-plan-act loops, and the BDI (Belief-Desire-Intention) agent architecture (Rao and Georgeff, 1991). The STRIPS planning formalism (Fikes and Nilsson, 1971) introduced the operator model — actions with preconditions and effects applied to a world state — that underlies modern tool-call loop planning. Hierarchical task network (HTN) planning extended STRIPS to multi-level task decomposition where high-level tasks are recursively broken into primitive operators, directly prefiguring the [[Plan-and-Execute Pattern]]. The BDI model added the cognitive-agent framing — agents maintain Beliefs (world model), Desires (goals), and Intentions (committed action sequences) — that was implemented in practical agent systems (PRS, JACK, Jadex) and remains conceptually alive in modern system prompts that establish an agent's knowledge, goals, and planned approaches.
 
-  The contemporary paradigm is grounded primarily in three transformative papers. Yao et al. "ReAct: Synergizing Reasoning and Acting in Language Models" (NeurIPS 2022) introduced the pattern of interleaving [[Chain of Thought]] reasoning steps with explicit action labels (search, lookup, finish), demonstrating 11-34% absolute improvement over either chain-of-thought or action-only baselines on HotpotQA and FEVER benchmarks and substantially reducing the hallucination rate compared to non-action baselines on knowledge-intensive tasks. Wei et al. "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" (NeurIPS 2022) provided the reasoning foundation that makes the deliberation step within each loop iteration reliable — demonstrating that the emergent multi-step reasoning capability required for agentic planning was unlockable from pre-trained [[Large Language Models]] without task-specific fine-tuning, simply by including worked examples in the prompt. Wang et al. "Voyager: An Open-Ended Embodied Agent with Large Language Models" (2023) demonstrated persistent skill acquisition and reuse in the Minecraft environment, showing that agentic workflows could produce compound learning across episodes — accumulating a library of reusable code-skill programs — rather than merely solving individual task instances in isolation.
+  The contemporary paradigm is grounded primarily in three transformative papers. Yao et al. "ReAct: Synergizing Reasoning and Acting in Language Models" (NeurIPS 2022) introduced the pattern of interleaving [[Chain of Thought]] reasoning steps with explicit action labels (search, lookup, finish), demonstrating 11-34% absolute improvement over either chain-of-thought or action-only baselines on HotpotQA and FEVER benchmarks and substantially reducing the hallucination rate compared to non-action baselines on knowledge-intensive tasks. Wei et al. "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" (NeurIPS 2022) provided the reasoning foundation that makes the deliberation step within each loop iteration reliable — demonstrating that the emergent multi-step reasoning capability required for agentic planning was unlockable from pre-trained [[Large Language Models]] without task-specific fine-tuning, simply by including worked examples in the prompt. Wang et al. "Voyager: An Open-Ended Embodied Agent with Large Language Models" (2023) demonstrated persistent skill acquisition and reuse in the Minecraft environment, showing that agentic workflows [private] produce compound learning across episodes — accumulating a library of reusable code-skill programs — rather than merely solving individual task instances in isolation.
 
-  Schick et al. "Toolformer: Language Models Can Teach Themselves to Use Tools" (NeurIPS 2023) showed that language models could be trained to self-generate API call annotations on their own outputs, learning tool use in a largely self-supervised manner without large labelled datasets of tool-use demonstrations. This established the principle that tool use is not a feature that must be manually engineered but can be learned, and that the boundary between model capability and tool access is permeable and learnable. Gao et al. "PAL: Program-Aided Language Models" (ICML 2023) demonstrated that delegating arithmetic and symbolic reasoning to a code interpreter — rather than attempting these operations in the model's forward pass — dramatically improved accuracy on mathematical reasoning tasks, establishing code execution as a first-class tool use capability and directly prefiguring the code interpreter tools now standard in all major agentic platforms.
+  Schick et al. "Toolformer: Language Models Can Teach Themselves to Use Tools" (NeurIPS 2023) showed that language models [private] be trained to self-generate API call annotations on their own outputs, learning tool use in a largely self-supervised manner without large labelled datasets of tool-use demonstrations. This established the principle that tool use is not a feature that must be manually engineered but can be learned, and that the boundary between model capability and tool access is permeable and learnable. Gao et al. "PAL: Program-Aided Language Models" (ICML 2023) demonstrated that delegating arithmetic and symbolic reasoning to a code interpreter — rather than attempting these operations in the model's forward pass — dramatically improved accuracy on mathematical reasoning tasks, establishing code execution as a first-class tool use capability and directly prefiguring the code interpreter tools now standard in all major agentic platforms.
 
-  Framework development moved rapidly into engineering practice. LangChain (Chase, October 2022) provided the first widely adopted Python framework for chaining [[Large Language Models]] with tool calls, achieving over 90,000 GitHub stars by early 2024. The architecture evolved into LangGraph's stateful graph representation (2024), which proved more suitable for production requirements (explicit state schemas, conditional branching, checkpointing) than LangChain's sequential chain abstraction. Park et al. "Generative Agents: Interactive Simulacra of Human Behavior" (CHI 2023) demonstrated emergent social behaviour in a 25-agent simulation township, evidencing that [[Multi-Agent Systems]] could produce behaviours qualitatively different from single-agent baselines through interaction: emergent social norms, self-organising community events, and information propagation through gossip networks arose without explicit programming. Hong et al. "MetaGPT: Meta Programming for Multi-Agent Collaborative Framework" (ICLR 2024) formalised software engineering workflows as structured role-based agent teams with standardised output interfaces (PRD documents, system designs, API specifications, code, test plans), achieving state-of-the-art performance on software development benchmarks at the time of publication and establishing the role-based multi-agent pattern that [[CrewAI]] subsequently popularised in production settings.
+  Framework development moved rapidly into engineering practice. LangChain (Chase, October 2022) provided the first widely adopted Python framework for chaining [[Large Language Models]] with tool calls, achieving over 90,000 GitHub stars by early 2024. The architecture evolved into LangGraph's stateful graph representation (2024), which proved more suitable for production requirements (explicit state schemas, conditional branching, checkpointing) than LangChain's sequential chain abstraction. Park et al. "Generative Agents: Interactive Simulacra of Human Behavior" (CHI 2023) demonstrated emergent social behaviour in a 25-agent simulation township, evidencing that [[Multi-Agent Systems]] [private] produce behaviours qualitatively different from single-agent baselines through interaction: emergent social norms, self-organising community events, and information propagation through gossip networks arose without explicit programming. Hong et al. "MetaGPT: Meta Programming for Multi-Agent Collaborative Framework" (ICLR 2024) formalised software engineering workflows as structured role-based agent teams with standardised output interfaces (PRD documents, system designs, API specifications, code, test plans), achieving state-of-the-art performance on software development benchmarks at the time of publication and establishing the role-based multi-agent pattern that [[CrewAI]] subsequently popularised in production settings.
 
   Evaluation methodology for agentic systems required new benchmarks beyond single-turn accuracy metrics. SWE-bench (Jimenez et al., 2024) — real GitHub issues requiring multi-file code editing — became the primary measure of autonomous coding capability, with SWE-bench Verified introducing 500 human-validated instances to address quality concerns with the original dataset. WebArena (Zhou et al., 2024) evaluated long-horizon web navigation tasks across four web platforms, capturing realistic enterprise web application interactions. τ-bench (Yao et al., 2024) introduced policy-adherent multi-turn user interaction evaluation in retail and airline domains, capturing the requirement that agents follow complex natural-language business rules while simultaneously completing user requests. GAIA (Mialon et al., 2023) tested general AI assistant capabilities requiring web search, document reading, and multi-step reasoning in combination, with three difficulty levels stratified by number of required reasoning steps and tool types. AgentBench (Liu et al., 2023) provided a comprehensive eight-environment evaluation across coding, browsing, database, and OS interaction tasks, enabling systematic comparison across agent architectures.
 
-  Safety research specific to agentic contexts emerged as a distinct sub-field in 2023–2024. Greshake et al. "Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection" (2023) systematically characterised the [[Prompt Injection]] attack surface in tool-augmented LLM systems, demonstrating that hostile content in tool outputs could hijack agent behaviour at scale, requiring no access to the model or system prompt. Ruan et al. "Identifying the Risks of LM Agents with an LM-Emulated Sandbox" (2024) introduced ToolEmu, using an LM emulator to test agent behaviour under adversarial and edge-case tool outputs, identifying failure modes including goal deviation, unauthorised data exfiltration, and irreversible action execution across 100+ evaluated agentic tasks. Debenedetti et al. "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defences for LLM Agents" (NeurIPS 2024) provided a standardised evaluation environment for [[Prompt Injection]] defences, enabling systematic comparison across defence strategies. Yang et al. "SWE-Agent: Agent-Computer Interfaces Enable Automated Software Engineering" (2024) demonstrated that the design of agent-computer interfaces — the specific set of tools, tool schemas, and interaction conventions available to the agent — dramatically affects performance independently of the underlying model, shifting attention to interface engineering as a first-class agentic system design concern.
+  Safety research specific to agentic contexts emerged as a distinct sub-field in 2023–2024. Greshake et al. "Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection" (2023) systematically characterised the [[Prompt Injection]] attack surface in tool-augmented LLM systems, demonstrating that hostile content in tool outputs [private] hijack agent behaviour at scale, requiring no access to the model or system prompt. Ruan et al. "Identifying the Risks of LM Agents with an LM-Emulated Sandbox" (2024) introduced ToolEmu, using an LM emulator to test agent behaviour under adversarial and edge-case tool outputs, identifying failure modes including goal deviation, unauthorised data exfiltration, and irreversible action execution across 100+ evaluated agentic tasks. Debenedetti et al. "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defences for LLM Agents" (NeurIPS 2024) provided a standardised evaluation environment for [[Prompt Injection]] defences, enabling systematic comparison across defence strategies. Yang et al. "SWE-Agent: Agent-Computer Interfaces Enable Automated Software Engineering" (2024) demonstrated that the design of agent-computer interfaces — the specific set of tools, tool schemas, and interaction conventions available to the agent — dramatically affects performance independently of the underlying model, shifting attention to interface engineering as a first-class agentic system design concern.
 
   ## Current Landscape (2026)
 
@@ -479,7 +639,7 @@ public: true
 
   **Error Compounding and Recovery** — mistakes in early steps may not surface until many steps later, at which point the agent's accumulated context and committed actions may make recovery expensive or impossible. Mitigation strategies include step-level validation (executing a lightweight check-agent on each tool output before proceeding), explicit rollback mechanisms (LangGraph's checkpointing allows rewinding to a prior state), and confidence thresholds that trigger [[Human-in-the-Loop]] escalation when the agent's expressed uncertainty exceeds a defined level. The GAIA benchmark's hardest tasks (Level 3) have completion rates below 40% for frontier agents precisely because they require long dependency chains where early errors cascade without detection.
 
-  **[[Prompt Injection]] Attack Surface** — the surface for hostile content injection in agentic workflows is substantially larger than in single-turn systems because the agent retrieves and processes content from arbitrary external sources: web pages, documents, database records, API responses. Greshake et al. (2023) demonstrated that hostile instructions embedded in web pages retrieved during an agent's research task could hijack the agent to perform unintended actions (exfiltrating conversation history, sending emails to unintended recipients, modifying files). The attack requires no access to the agent's system prompt or model weights — only the ability to place hostile content in a location the agent will retrieve. Defence strategies include semantic input validation (LLM-based filters on tool outputs), sandboxed tool execution (preventing tool outputs from reaching the main prompt directly), instruction hierarchy (rigidly distinguishing user-provided goals from tool-provided observations in the model's attention), and output monitoring (independent agents that review proposed actions before execution).
+  **[[Prompt Injection]] Attack Surface** — the surface for hostile content injection in agentic workflows is substantially larger than in single-turn systems because the agent retrieves and processes content from arbitrary external sources: web pages, documents, database records, API responses. Greshake et al. (2023) demonstrated that hostile instructions embedded in web pages retrieved during an agent's research task [private] hijack the agent to perform unintended actions (exfiltrating conversation history, sending emails to unintended recipients, modifying files). The attack requires no access to the agent's system prompt or model weights — only the ability to place hostile content in a location the agent will retrieve. Defence strategies include semantic input validation (LLM-based filters on tool outputs), sandboxed tool execution (preventing tool outputs from reaching the main prompt directly), instruction hierarchy (rigidly distinguishing user-provided goals from tool-provided observations in the model's attention), and output monitoring (independent agents that review proposed actions before execution).
 
   **[[Context Window]] Management and Saturation** — long-running workflows accumulate tool outputs that progressively consume the [[Context Window]], degrading reasoning quality as the most relevant prior context is pushed out by newer but less important content. Management strategies include: summarisation (periodically compressing accumulated context into a dense summary, discarding raw tool outputs); external [[Agent Memory]] with [[Retrieval-Augmented Generation]] (storing detailed tool outputs in a [[Vector Database]] and retrieving relevant portions as needed); selective context (including only the most recent N steps plus key information extracted by a compression agent); and hierarchical context (maintaining detailed local context per sub-task and only a summary at the orchestration level). The optimal strategy depends on task structure: sequential tasks benefit from summarisation; tasks with long-range dependencies between early and late steps require selective retrieval of earlier details.
 

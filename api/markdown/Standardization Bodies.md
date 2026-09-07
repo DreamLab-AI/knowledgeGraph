@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Standardization Bodies
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:standardization-bodies:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:96adef1d715288d4832933ead250a252bfff94f976a3916eff4e0cf219e5794d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Technology Interoperability]]",
-      "resolved": "urn:visionflow:linked:technology-interoperability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Standards Organization]]",
-      "resolved": "urn:visionflow:owl:class:standards-organization",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Organizations developing technical standards for metaverse technologies, including IEEE (Metaverse Standards Committee), W3C (Immersive Web Working Group), ISO/IEC (3D formats), ITU (telecommunications), and the Metaverse Standards Forum coordinating 1,800 member organizations for interoperability.

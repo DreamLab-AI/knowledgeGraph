@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Small Modular Reactors
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Small modular reactors (SMRs) are nuclear fission reactors with an electrical output typically under 300 MWe whose components are factory-fabricated as standardised modules and assembled on site. Their smaller scale, passive safety features, and modular construction aim to lower capital cost and deployment time relative to gigawatt-scale plants. They are an emerging low-carbon power-infrastructure option, including for energy-intensive data centres.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"}, {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Over The Air Update
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:over-the-air-update", "@type":"Page", "title":"Over The Air Update", "vc:slug":"over-the-air-update", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:over-the-air-update",
+  "@type": "Page",
+  "title": "Over The Air Update",
+  "vc:slug": "over-the-air-update",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

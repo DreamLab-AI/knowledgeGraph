@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Centralized Identity Provider
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:centralized-identity-provider:f9f3910bfa5b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:50f0e22c7abd35972c5bb95249efb516796437c1c6415a88bae5030785ee6a9c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:linked:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Verification System]]",
-      "resolved": "urn:visionflow:linked:identity-verification-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decentralized Identifier]]",
-      "resolved": "urn:visionflow:linked:decentralized-identifier",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Identity Provider]]",
-      "resolved": "urn:visionflow:linked:identity-provider",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An identity service in which a single organisation issues, stores and authenticates user credentials on behalf of relying parties. It contrasts with decentralised identity models where control rests with the user.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Uncertainty
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Uncertainty",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:probability-theory", "vc:label": "Probability Theory"},
-    {"@id": "urn:visionflow:linked:probabilistic-reasoning", "vc:label": "Probabilistic Reasoning"},
-    {"@id": "urn:visionflow:linked:risk", "vc:label": "Risk"},
-    {"@id": "urn:visionflow:linked:uncertainty-quantification", "vc:label": "Uncertainty Quantification"}
+    {
+      "@id": "urn:visionflow:linked:probability-theory",
+      "vc:label": "Probability Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-reasoning",
+      "vc:label": "Probabilistic Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk",
+      "vc:label": "Risk"
+    },
+    {
+      "@id": "urn:visionflow:linked:uncertainty-quantification",
+      "vc:label": "Uncertainty Quantification"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,16 +44,34 @@ public: true
   "definition": "The condition of incomplete or imperfect knowledge about the state of a system, the outcome of a process, or the truth of a proposition, formalised in probability theory as a distribution over possible values rather than a single determinate answer. Uncertainty is conventionally divided into aleatoric uncertainty, arising from irreducible randomness in the world, and epistemic uncertainty, arising from limited data or model inadequacy and reducible in principle by gathering more evidence. Representing, propagating, and acting under uncertainty is central to probabilistic reasoning, robot localisation, risk assessment, and modern machine learning.",
   "domain": "artificial-intelligence",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:probability-theory",
+    "label": "Probability Theory"
+  },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:probabilistic-reasoning", "label": "Probabilistic Reasoning"},
-      {"@id": "urn:ngm:class:risk", "label": "Risk"},
-      {"@id": "urn:ngm:class:entropy", "label": "Entropy"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+      {
+        "@id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:risk",
+        "label": "Risk"
+      },
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"}
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
     ]
   },
   "quality": 0.8,

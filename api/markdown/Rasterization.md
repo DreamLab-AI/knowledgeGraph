@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rasterization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -194,57 +189,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rasterization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ebc51ffefb9a045d44a3077ee3d25ef345b02df92a7bc08d0a4fe7d894546776"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Rendering]]",
-      "resolved": "urn:visionflow:linked:3-d-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Level of Detail]]",
-      "resolved": "urn:visionflow:owl:class:level-of-detail",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pixel Shader]]",
-      "resolved": "urn:visionflow:owl:class:pixel-shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ray Tracing]]",
-      "resolved": "urn:visionflow:owl:class:ray-tracing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vertex Shader]]",
-      "resolved": "urn:visionflow:owl:class:vertex-shader",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The dominant real-time rendering technique that converts 3D geometric primitives — predominantly triangles — into a 2D pixel representation by determining per-pixel coverage, depth, and colour through a GPU-accelerated pipeline of vertex processing, primitive assembly, scan conversion, fragment shading, and output merging. Rasterization trades photorealistic accuracy for deterministic, high-throughput performance suitable for interactive applications.

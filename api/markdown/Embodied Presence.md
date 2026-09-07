@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Embodied Presence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:embodied-presence:650ff774340d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9a9ae91a19fba35d1b540c28f0d7fb35881f81e9c53c2f186b950650f33e9bb6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Avatar]]",
-      "resolved": "urn:visionflow:linked:avatar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual World]]",
-      "resolved": "urn:visionflow:linked:virtual-world",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Embodied AI]]",
-      "resolved": "urn:visionflow:linked:embodied-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:linked:telepresence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Immersion_(virtual_reality)]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-immersion-virtual-reality",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Telepresence]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-telepresence",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Embodied presence is the sense of being physically located within a virtual or remote environment, often through an avatar or robotic proxy. It is studied in virtual reality and telepresence.

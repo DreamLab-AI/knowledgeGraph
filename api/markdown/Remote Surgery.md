@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Remote Surgery
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:remote-surgery", "@type": "Page", "title": "Remote Surgery", "vc:slug": "remote-surgery", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:remote-surgery",
+  "@type": "Page",
+  "title": "Remote Surgery",
+  "vc:slug": "remote-surgery",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

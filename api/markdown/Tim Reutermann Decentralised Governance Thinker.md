@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Tim Reutermann]]
-# Tim Reutermann Decentralised Governance Thinker
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,13 +42,28 @@ elevatedFrom:: [[Tim Reutermann]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-privacy-activist", "label": "Cryptographic Privacy Activist"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {
+        "@id": "urn:ngm:class:cryptographic-privacy-activist",
+        "label": "Cryptographic Privacy Activist"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "provenance": {
@@ -64,26 +73,6 @@ elevatedFrom:: [[Tim Reutermann]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tim-reutermann:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:89bdc6e0521593e355ed99a1e75b36122353aaf541987ffef19fa070b48ba8dc"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Tim Reutermann is a writer and technologist whose work synthesises cypherpunk philosophy, decentralised governance models, and AI-driven economic paradigm shifts. He advocates liquid democracy, universal basic income, and open-source systems as mechanisms for aligning economic incentives with social goods in the face of automation-driven disruption.
@@ -111,7 +100,7 @@ elevatedFrom:: [[Tim Reutermann]]
   - Anarchism and Decentralization: There are undertones of anarchist philosophy in Reutemann's writing, with an emphasis on decentralized systems and mistrust of centralized authorities. He envisions new models of organization and coordination enabled by technologies like blockchains.
   - Cypherpunk Ethos: In the cypherpunk tradition, Reutemann advocates for the use of cryptography and privacy-enhancing technologies to empower individuals and limit the power of governments and corporations. This aligns with his interest in Bitcoin and other decentralized digital assets.
   - Potential of AI: While cautious about malicious applications like AI-powered propaganda, Reutemann sees promise in beneficial uses of AI to solve complex problems. He proposes using AI to combat misinformation and suggests AI will be key to tackling major challenges.
-  - Universal Basic Income and Incentive Alignment: Reutemann views policies like universal basic income (UBI) and carbon taxes & dividends as stepping stones towards aligning economic incentives with social goods. UBI could provide a safety net and bargaining power for individuals in an increasingly automated economy.
+  - Universal Basic Income and Incentive Alignment: Reutemann views policies like universal basic income (UBI) and carbon taxes & dividends as stepping stones towards aligning economic incentives with social goods. UBI [private] provide a safety net and bargaining power for individuals in an increasingly automated economy.
   - Intersection of Economic and Technological Disruption: A common theme is the transformative, disruptive potential from the confluence of economic paradigm shifts and emerging technologies like AI, blockchain, virtual/augmented reality, and more. Reutemann anticipates this combination to upend legacy institutions and ideologies.
   - [Tim Reutemann | LinkedIn](https://www.linkedin.com/in/timschloendorn/)
 

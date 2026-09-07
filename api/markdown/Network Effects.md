@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Effects
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -114,4 +109,3 @@ public: true
   - Network effects underpin some of the most significant strategic outcomes in technology markets, explaining winner-take-most dynamics in search, social media, messaging, and operating systems. For blockchain protocols, network effects explain Bitcoin's resilience against altcoin competition: more miners secure the network, more developers build on it, and more merchants accept it. For AI platforms, data network effects allow incumbent models trained on larger datasets to compound quality advantages. Recognising the onset of network effects is therefore critical for investment timing, platform strategy, and antitrust analysis.
 
   - By 2024–2025, network effects analysis has become central to AI competitive strategy. Large language model providers accumulate data and user feedback loops that function as data network effects, reinforcing capability advantages. Regulators—particularly in the EU Digital Markets Act context—are scrutinising whether network effects in AI data markets constitute barriers to entry that require interoperability mandates. Researchers are also studying negative network effects: platforms that degrade with scale due to congestion, misinformation spread, or adversarial manipulation, complicating the classical Metcalfe framing.
-

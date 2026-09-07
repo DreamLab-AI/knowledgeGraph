@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Preference Aggregation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,41 +20,94 @@ public: true
   "definition": "The process of combining individual preferences, rankings, or utility functions from multiple stakeholders into a collective or social preference ordering for decision-making purposes. Preference aggregation methods range from simple majority voting to sophisticated social choice mechanisms, each making different assumptions about preference structure and interpersonal comparability. Arrow's impossibility theorem establishes fundamental limits on consistent aggregation. The field is central to voting theory, mechanism design, and collaborative governance.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:social-choice-theory", "label": "Social Choice Theory"}
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:collective-decision-making", "label": "Collective Decision-Making"},
-      {"@id": "urn:ngm:class:democratic-governance", "label": "Democratic Governance"}
+      {
+        "@id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:utility-function", "label": "Utility Function"},
-      {"@id": "urn:ngm:class:ranking-algorithm", "label": "Ranking Algorithm"}
+      {
+        "@id": "urn:ngm:class:utility-function",
+        "label": "Utility Function"
+      },
+      {
+        "@id": "urn:ngm:class:ranking-algorithm",
+        "label": "Ranking Algorithm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:policy-formation", "label": "Policy Formation"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:policy-formation",
+        "label": "Policy Formation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:individual-decision-making", "label": "Individual Decision-Making"}
+      {
+        "@id": "urn:ngm:class:individual-decision-making",
+        "label": "Individual Decision-Making"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"}
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "quality": 0.62,

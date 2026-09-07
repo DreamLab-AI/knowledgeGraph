@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proportional Valve
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "A proportional valve is a fluid-power control element that modulates flow rate, pressure, or direction continuously and proportionally in response to an electrical command signal, in contrast to on/off solenoid valves that switch between two discrete states. The valve's spool or poppet position is controlled by a proportional solenoid or voice-coil actuator whose force output is linearly related to the applied current, enabling smooth, variable control of hydraulic or pneumatic systems.",
   "domain": "robotics",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:fluid-power-device", "label": "Fluid Power Device"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:fluid-power-device",
+      "label": "Fluid Power Device"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:servo-valve", "label": "Servo Valve"},
-      {"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"},
-      {"@id": "urn:ngm:class:pneumatic-actuator", "label": "Pneumatic Actuator"}
+      {
+        "@id": "urn:ngm:class:servo-valve",
+        "label": "Servo Valve"
+      },
+      {
+        "@id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
     ]
   },
   "quality": 0.85

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Halving Schedule
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The halving schedule is the predetermined, code-enforced rule in proof-of-work cryptocurrencies that periodically cuts the block subsidy paid to miners by half. In Bitcoin this occurs every 210,000 blocks (roughly four years), progressively reducing new issuance until the 21 million supply cap is reached. It is the core monetary policy mechanism that makes the asset's supply predictable and disinflationary.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview", "label": "Bitcoin Technical Overview"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      }
     ]
   },
   "quality": 0.72

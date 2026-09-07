@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Strong Consistency
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

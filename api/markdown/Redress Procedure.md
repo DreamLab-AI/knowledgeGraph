@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Redress Procedure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -119,25 +114,64 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-rights", "label": "Human Rights"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"},
-      {"@id": "urn:ngm:class:algorithmic-transparency-reports", "label": "Algorithmic Transparency Reports"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency-reports",
+        "label": "Algorithmic Transparency Reports"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -148,107 +182,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:redress-procedure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:41f6a7b2cfbecd3cf65618c4f56c8353cda8ff1e9cfa38b75cddf7e833839238"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Governance Principle]]",
-      "resolved": "urn:visionflow:linked:ai-governance-principle",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Algorithmic Accountability Act]]",
-      "resolved": "urn:visionflow:linked:algorithmic-accountability-act",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Alternative Dispute Resolution]]",
-      "resolved": "urn:visionflow:linked:alternative-dispute-resolution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Complaint Mechanism]]",
-      "resolved": "urn:visionflow:linked:complaint-mechanism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decision Appeal]]",
-      "resolved": "urn:visionflow:linked:decision-appeal",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Explanation Provision]]",
-      "resolved": "urn:visionflow:linked:explanation-provision",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR Article 22]]",
-      "resolved": "urn:visionflow:linked:gdpr-article-22",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human Review Process]]",
-      "resolved": "urn:visionflow:linked:human-review-process",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Judicial Review]]",
-      "resolved": "urn:visionflow:linked:judicial-review",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD AI Principles]]",
-      "resolved": "urn:visionflow:linked:oecd-ai-principles",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ombudsman Service]]",
-      "resolved": "urn:visionflow:linked:ombudsman-service",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Remedy Implementation]]",
-      "resolved": "urn:visionflow:linked:remedy-implementation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Redress Procedure is a formalized mechanism enabling individuals or groups adversely affected by AI system decisions to challenge those decisions, seek explanations, request human review, and obtain remedies including correction, compensation, or policy changes. Redress procedures address a fundamental accountability requirement: when AI systems make consequential decisions affecting employment, credit, housing, criminal justice, or other significant life opportunities, affected individuals must have meaningful avenues to contest erroneous or unfair outcomes. These procedures encompass complaint submission mechanisms (accessible interfaces for lodging grievances), investigation processes (systematic review of contested decisions), human oversight interventions (qualified personnel examining AI outputs and overriding when appropriate), explanation provision (meaningful information about decision factors), and remedy implementation (corrective actions ranging from decision reversal to compensation for damages). Effective redress requires balancing competing concerns: accessibility (procedures must be understandable and available to all affected parties including those with limited technical or legal sophistication), timeliness (redress must occur rapidly enough to prevent irreversible harm), thoroughness (investigations must genuinely examine AI decision-making rather than rubber-stamping outputs), and cost-effectiveness (procedures must scale to handle potentially thousands of challenges without imposing unsustainable burdens).

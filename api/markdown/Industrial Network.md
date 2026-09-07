@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Industrial Network
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:industrial-network", "@type":"Page", "title":"Industrial Network", "vc:slug":"industrial-network", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:industrial-network",
+  "@type": "Page",
+  "title": "Industrial Network",
+  "vc:slug": "industrial-network",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

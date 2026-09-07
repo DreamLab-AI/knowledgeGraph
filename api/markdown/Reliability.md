@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reliability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,47 +176,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reliability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1d22ed8854177e9c909ba4d6fb32a5f57e7c089c34231d1fabd6dc939f480e66"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Monitoring]]",
-      "resolved": "urn:visionflow:linked:monitoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Testing]]",
-      "resolved": "urn:visionflow:linked:testing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Validation (AI-0095)]]",
-      "resolved": "urn:visionflow:linked:validation-ai-0095",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The degree to which an AI system performs its intended function consistently and accurately over time and across repeated operations, producing predictable and dependable results under specified conditions.

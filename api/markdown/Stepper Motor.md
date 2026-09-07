@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stepper Motor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,29 +59,68 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:rotary-encoder", "label": "Rotary Encoder"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-encoder",
+        "label": "Rotary Encoder"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:open-loop-control", "label": "Open-Loop Control"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"},
-      {"@id": "urn:ngm:class:robotics-process", "label": "Robotics Process"}
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-process",
+        "label": "Robotics Process"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:electric-actuator", "label": "Electric Actuator"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:electric-actuator",
+        "label": "Electric Actuator"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
-      {"@id": "urn:ngm:class:dc-servo-motor", "label": "DC Servo Motor"}
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
     ]
   },
   "provenance": {
@@ -96,37 +130,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:stepper-motor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ce2146ff09ae30783fb4a4c7728e9b5b83614222a80b2727e66ce32c94c4c22d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Electric Motor]]",
-      "resolved": "urn:visionflow:owl:class:electric-motor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A stepper motor is an electromechanical actuator that divides a full rotation into a fixed number of discrete angular steps, enabling precise open-loop position control without requiring feedback sensors. By energising coils in a predetermined sequence, the rotor advances one step per electrical pulse, making stepper motors indispensable wherever repeatable, quantifiable positioning is required. Common variants include permanent-magnet, variable-reluctance, and hybrid designs, with step resolutions ranging from 1.8° (200 steps/rev) to sub-degree microstepping configurations.

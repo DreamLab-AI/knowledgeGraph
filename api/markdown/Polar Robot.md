@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Polar Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,26 +58,56 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
-      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "@id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cylindrical-robot", "label": "Cylindrical Robot"},
-      {"@id": "urn:ngm:class:scara-robot", "label": "SCARA Robot"},
-      {"@id": "urn:ngm:class:delta-robot", "label": "Delta Robot"},
-      {"@id": "urn:ngm:class:robot-hardware", "label": "Robot Hardware"}
+      {
+        "@id": "urn:ngm:class:cylindrical-robot",
+        "label": "Cylindrical Robot"
+      },
+      {
+        "@id": "urn:ngm:class:scara-robot",
+        "label": "SCARA Robot"
+      },
+      {
+        "@id": "urn:ngm:class:delta-robot",
+        "label": "Delta Robot"
+      },
+      {
+        "@id": "urn:ngm:class:robot-hardware",
+        "label": "Robot Hardware"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:robot-component", "label": "Robot Component"}
+      {
+        "@id": "urn:ngm:class:robot-component",
+        "label": "Robot Component"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -93,37 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:polar-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c0d9c4dc010b1318224dd758171a193d53ceecec47735d2d7a3bd382905c2328"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Industrial Robot]]",
-      "resolved": "urn:visionflow:owl:class:industrial-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Polar Robot is an industrial robot configuration with a rotary base joint, an elevated rotary shoulder joint, and a linear telescoping arm—producing a spherical working envelope defined in spherical coordinates. This geometry provides a large workspace volume relative to physical footprint and was common in early industrial automation for die casting and forging.

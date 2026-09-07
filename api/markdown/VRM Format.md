@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VRM Format
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"},
-      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"}
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"},
-      {"@id": "urn:ngm:class:avatar-portability", "label": "Avatar Portability"}
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:avatar-standard", "label": "Avatar Standard"},
-      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"}
+      {
+        "@id": "urn:ngm:class:avatar-standard",
+        "label": "Avatar Standard"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ]
   },
   "provenance": {
@@ -83,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vrm-format:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:440c59f2aa36392cfb35a867b95fa83e3d29b98219097cd1553564ad3a581909"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D File Format]]",
-      "resolved": "urn:visionflow:owl:class:3-d-file-format",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An open file format standard for 3D humanoid avatars built on glTF, designed for cross-platform interoperability in VR, AR, and metaverse applications, incorporating standardized rigging, facial expressions, gaze controls, and licensing metadata to enable seamless avatar use across different virtual environments.

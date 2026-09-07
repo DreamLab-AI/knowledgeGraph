@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Elliptic Curve Group
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Voice of Customer
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:voice-of-customer", "@type": "Page", "title": "Voice of Customer", "vc:slug": "voice-of-customer", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:voice-of-customer",
+  "@type": "Page",
+  "title": "Voice of Customer",
+  "vc:slug": "voice-of-customer",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

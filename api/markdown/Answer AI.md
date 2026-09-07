@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Answer AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,36 +7,126 @@ public: true
   "title": "Answer AI",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:fast-ai", "vc:label": "fast.ai"},
-    {"@id": "urn:visionflow:linked:jeremy-howard", "vc:label": "Jeremy Howard"},
-    {"@id": "urn:visionflow:linked:applied-machine-learning", "vc:label": "Applied Machine Learning"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:parameter-efficient-fine-tuning", "vc:label": "Parameter-Efficient Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:lora-fine-tuning", "vc:label": "LoRA Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:open-source-ai", "vc:label": "Open-Source AI"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:distributed-training", "vc:label": "Distributed Training"},
-    {"@id": "urn:visionflow:linked:python-programming-language", "vc:label": "Python Programming Language"},
-    {"@id": "urn:visionflow:linked:machine-learning-framework", "vc:label": "Machine Learning Framework"},
-    {"@id": "urn:visionflow:linked:instruction-tuning", "vc:label": "Instruction Tuning"},
-    {"@id": "urn:visionflow:linked:quantisation", "vc:label": "Quantisation"},
-    {"@id": "urn:visionflow:linked:ai-research", "vc:label": "AI Research"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:education-and-ai", "vc:label": "Education and AI"},
-    {"@id": "urn:visionflow:linked:deep-learning-framework", "vc:label": "Deep Learning Framework"},
-    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:visionflow:linked:language-model", "vc:label": "Language Model"},
-    {"@id": "urn:visionflow:linked:openai-research-organisation", "vc:label": "OpenAI Research Organisation"},
-    {"@id": "urn:visionflow:linked:anthropic", "vc:label": "Anthropic"},
-    {"@id": "urn:visionflow:linked:frontier-ai", "vc:label": "Frontier AI"},
-    {"@id": "urn:visionflow:linked:machine-learning-infrastructure", "vc:label": "Machine Learning Infrastructure"},
-    {"@id": "urn:visionflow:linked:machine-learning-accelerator", "vc:label": "Machine Learning Accelerator"},
-    {"@id": "urn:visionflow:linked:direct-preference-optimisation", "vc:label": "Direct Preference Optimisation"},
-    {"@id": "urn:visionflow:linked:python", "vc:label": "Python"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"}
+    {
+      "@id": "urn:visionflow:linked:fast-ai",
+      "vc:label": "fast.ai"
+    },
+    {
+      "@id": "urn:visionflow:linked:jeremy-howard",
+      "vc:label": "Jeremy Howard"
+    },
+    {
+      "@id": "urn:visionflow:linked:applied-machine-learning",
+      "vc:label": "Applied Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:parameter-efficient-fine-tuning",
+      "vc:label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:lora-fine-tuning",
+      "vc:label": "LoRA Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source-ai",
+      "vc:label": "Open-Source AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-training",
+      "vc:label": "Distributed Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:python-programming-language",
+      "vc:label": "Python Programming Language"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-framework",
+      "vc:label": "Machine Learning Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:instruction-tuning",
+      "vc:label": "Instruction Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:quantisation",
+      "vc:label": "Quantisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research",
+      "vc:label": "AI Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:education-and-ai",
+      "vc:label": "Education and AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning-framework",
+      "vc:label": "Deep Learning Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:language-model",
+      "vc:label": "Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:openai-research-organisation",
+      "vc:label": "OpenAI Research Organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:anthropic",
+      "vc:label": "Anthropic"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-ai",
+      "vc:label": "Frontier AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-infrastructure",
+      "vc:label": "Machine Learning Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-accelerator",
+      "vc:label": "Machine Learning Accelerator"
+    },
+    {
+      "@id": "urn:visionflow:linked:direct-preference-optimisation",
+      "vc:label": "Direct Preference Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:python",
+      "vc:label": "Python"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -57,39 +142,105 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"},
-    {"@id": "urn:ngm:class:applied-machine-learning", "label": "Applied Machine Learning"}
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
+      "@id": "urn:ngm:class:applied-machine-learning",
+      "label": "Applied Machine Learning"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fast-ai", "label": "fast.ai"},
-      {"@id": "urn:ngm:class:fasthtml", "label": "FastHTML"},
-      {"@id": "urn:ngm:class:fsdp-qlora", "label": "FSDP QLoRA"},
-      {"@id": "urn:ngm:class:solveit", "label": "Solveit"}
+      {
+        "@id": "urn:ngm:class:fast-ai",
+        "label": "fast.ai"
+      },
+      {
+        "@id": "urn:ngm:class:fasthtml",
+        "label": "FastHTML"
+      },
+      {
+        "@id": "urn:ngm:class:fsdp-qlora",
+        "label": "FSDP QLoRA"
+      },
+      {
+        "@id": "urn:ngm:class:solveit",
+        "label": "Solveit"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fast-ai", "label": "fast.ai"},
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"}
+      {
+        "@id": "urn:ngm:class:fast-ai",
+        "label": "fast.ai"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:python-programming-language", "label": "Python Programming Language"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:lo-ra-fine-tuning", "label": "LoRA Fine-Tuning"},
-      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:applied-machine-learning", "label": "Applied Machine Learning"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"}
+      {
+        "@id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI Research Organisation"},
-      {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"},
-      {"@id": "urn:ngm:class:frontier-ai", "label": "Frontier AI"}
+      {
+        "@id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI Research Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      }
     ]
   },
   "quality": 0.82,
@@ -97,53 +248,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:answer-ai:a9f34c12e001",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:answer-ai"
-  },
-  "vc:resolutions": [
-    {"raw": "[[fast.ai]]", "resolved": "urn:visionflow:linked:fast-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Applied Machine Learning]]", "resolved": "urn:visionflow:linked:applied-machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "[[Parameter-Efficient Fine-Tuning]]", "resolved": "urn:visionflow:linked:parameter-efficient-fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[LoRA Fine-Tuning]]", "resolved": "urn:visionflow:linked:lora-fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "ResolvedLink"},
-    {"raw": "[[Open-Source AI]]", "resolved": "urn:visionflow:linked:open-source-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Distributed Training]]", "resolved": "urn:visionflow:linked:distributed-training", "kind": "ResolvedLink"},
-    {"raw": "[[Python Programming Language]]", "resolved": "urn:visionflow:linked:python-programming-language", "kind": "ResolvedLink"},
-    {"raw": "[[Quantisation]]", "resolved": "urn:visionflow:linked:quantisation", "kind": "ResolvedLink"},
-    {"raw": "[[Instruction Tuning]]", "resolved": "urn:visionflow:linked:instruction-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Education and AI]]", "resolved": "urn:visionflow:linked:education-and-ai", "kind": "ResolvedLink"},
-    {"raw": "[[OpenAI Research Organisation]]", "resolved": "urn:visionflow:linked:openai-research-organisation", "kind": "ResolvedLink"},
-    {"raw": "[[Anthropic]]", "resolved": "urn:visionflow:linked:anthropic", "kind": "ResolvedLink"},
-    {"raw": "[[Frontier AI]]", "resolved": "urn:visionflow:linked:frontier-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Direct Preference Optimisation]]", "resolved": "urn:visionflow:linked:direct-preference-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Framework]]", "resolved": "urn:visionflow:linked:machine-learning-framework", "kind": "ResolvedLink"},
-    {"raw": "[[Deep Learning Framework]]", "resolved": "urn:visionflow:linked:deep-learning-framework", "kind": "ResolvedLink"},
-    {"raw": "[[Language Model]]", "resolved": "urn:visionflow:linked:language-model", "kind": "ResolvedLink"},
-    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "ResolvedLink"},
-    {"raw": "[[Machine Learning Infrastructure]]", "resolved": "urn:visionflow:linked:machine-learning-infrastructure", "kind": "ResolvedLink"},
-    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -268,11 +372,11 @@ public: true
 
   Answer.AI was founded in December 2023 at a specific moment in the AI development landscape — immediately following the public release of GPT-4 and the explosive growth of large language model adoption — when the gap between frontier model capability and practitioner accessibility had become sharper than at any previous point in the history of deep learning. Frontier models with GPT-4-level capability were available only through commercial APIs at per-token pricing structures that made high-volume domain-specific applications prohibitively expensive; fine-tuning those models was not supported; and open-weight alternatives were only beginning to mature to the point of practical deployment utility. Answer.AI positioned itself to address this gap: to take the research results on efficient fine-tuning (LoRA, QLoRA, FSDP) that were beginning to appear in the academic literature and translate them into accessible, documented, reproducible pipelines for practitioners without ML systems expertise.
 
-  The lab's structure as a "new old kind of R&D lab" — as Howard described it in the founding manifesto — reflects a specific historical analysis. Howard and Ries identified Bell Labs (1925-1984) and Xerox PARC (1970-) as exemplars of a model in which a small group of exceptional researchers, free from the pressure of quarterly commercial targets and publication metrics, could produce technology with transformative practical impact while publishing openly. The key enabling condition for this model, Howard and Ries argued, was sufficient funding independence to operate on a multi-year horizon without product-revenue pressure. Decibel VC's $10 million investment provides this independence for Answer.AI's initial phase, enabling it to release open-source work without requiring a revenue model for each project.
+  The lab's structure as a "new old kind of R&D lab" — as Howard described it in the founding manifesto — reflects a specific historical analysis. Howard and Ries identified Bell Labs (1925-1984) and Xerox PARC (1970-) as exemplars of a model in which a small group of exceptional researchers, free from the pressure of quarterly commercial targets and publication metrics, [private] produce technology with transformative practical impact while publishing openly. The key enabling condition for this model, Howard and Ries argued, was sufficient funding independence to operate on a multi-year horizon without product-revenue pressure. Decibel VC's $10 million investment provides this independence for Answer.AI's initial phase, enabling it to release open-source work without requiring a revenue model for each project.
 
   Answer.AI occupies a distinctive position in the landscape of artificial intelligence organisations. Founded in December 2023, it is neither a frontier capability laboratory developing new [[Foundation Model]]s at enormous computational scale, nor a traditional academic research group constrained by publication timelines. Instead, it is explicitly modelled on what its founders describe as "a new old kind of R&D lab": one that takes existing scientific breakthroughs and systematically develops practical applications and enabling tooling that would otherwise remain confined to the research community. The lab acknowledges historical antecedents including Bell Labs and Xerox PARC, which similarly bridged the gap between foundational scientific results and deployable technology — though Answer.AI operates at a fraction of the scale, relying on a small team of generalists rather than large multidisciplinary divisions.
 
-  Jeremy Howard, the lab's founding chief executive officer, brings a specific intellectual programme to Answer.AI that has evolved across three decades of work at the intersection of machine learning, data science, and software engineering. Howard co-founded [[fast.ai]] in 2016 with Rachel Thomas, building the most widely used practical deep learning course in the world (Practical Deep Learning for Coders) and producing influential [[Transfer Learning]] methods including ULMFiT — the universal language model fine-tuning approach that directly prefigured the now-dominant pattern of pre-training a large [[Language Model]] and then adapting it to specific tasks via fine-tuning. Howard also created nbdev, a literate programming system for [[Python Programming Language]] that enables notebook-based software development with automatic documentation and testing generation. At Kaggle, where Howard served as president and chief scientist, he was a leading competitive data scientist who demonstrated that careful application of existing techniques on scarce hardware could match or outperform approaches requiring vast computational resources — a philosophy that carries directly into Answer.AI's research agenda. Eric Ries, the lab's founding director, contributed the Lean Startup methodology to technology entrepreneurship and created the Long-Term Stock Exchange, a stock exchange designed to reward long-term thinking over short-term quarterly optimisation; at Answer.AI, Ries contributes operational and organisational thinking grounded in building institutions that produce durable value rather than speculative demonstrations.
+  Jeremy Howard, the lab's founding chief executive officer, brings a specific intellectual programme to Answer.AI that has evolved across three decades of work at the intersection of machine learning, data science, and software engineering. Howard co-founded [[fast.ai]] in 2016 with Rachel Thomas, building the most widely used practical deep learning course in the world (Practical Deep Learning for Coders) and producing influential [[Transfer Learning]] methods including ULMFiT — the universal language model fine-tuning approach that directly prefigured the now-dominant pattern of pre-training a large [[Language Model]] and then adapting it to specific tasks via fine-tuning. Howard also created nbdev, a literate programming system for [[Python Programming Language]] that enables notebook-based software development with automatic documentation and testing generation. At Kaggle, where Howard served as president and chief scientist, he was a leading competitive data scientist who demonstrated that careful application of existing techniques on scarce hardware [private] match or outperform approaches requiring vast computational resources — a philosophy that carries directly into Answer.AI's research agenda. Eric Ries, the lab's founding director, contributed the Lean Startup methodology to technology entrepreneurship and created the Long-Term Stock Exchange, a stock exchange designed to reward long-term thinking over short-term quarterly optimisation; at Answer.AI, Ries contributes operational and organisational thinking grounded in building institutions that produce durable value rather than speculative demonstrations.
 
   The lab's technical programme as of 2025–2026 centres on three interconnected problems. First, efficient fine-tuning and adaptation of large models: how to take a 7B, 13B, or 70B parameter pre-trained [[Foundation Model]] and adapt it to a specific domain or task using [[Parameter-Efficient Fine-Tuning]] techniques such as [[LoRA Fine-Tuning]], [[Quantisation]], and Fully Sharded Data Parallel (FSDP) training, achieving results competitive with full fine-tuning while requiring only consumer-grade GPU hardware. The lab released FSDP+QLoRA, a system enabling training of 70B parameter models on dual NVIDIA 4090 GPUs — a capability previously requiring expensive cluster infrastructure, making it accessible to individual researchers and small organisations. Second, web application frameworks optimised for AI-native development: FastHTML, Answer.AI's primary open-source project outside the fine-tuning domain, is a [[Python Programming Language]] web framework designed for building applications in which AI inference is a core component of the interaction model, emphasising minimal code, tight integration with Python's data science ecosystem, and rapid iteration. Third, AI-assisted learning and productivity: the Solveit system, launched in October 2025, provides AI-assisted coding and problem-solving that emphasises learning and skill development rather than simply generating opaque solutions — reflecting Howard's long-standing concern that heavy reliance on AI-generated code without understanding undermines practitioner competence.
 
@@ -346,9 +450,9 @@ public: true
 
   Answer.AI's work sits within the broader academic tradition of applied machine learning accessibility research, but deliberately operates outside conventional academic incentive structures. The lab does not publish primarily to accumulate citation counts or conference acceptances; it publishes to ship usable tools and reproducible recipes. This reflects a longstanding tension in machine learning between benchmark-optimising academic research and practically deployable engineering — a tension that has been present since at least the divergence between connectionist and symbolic AI in the 1980s, and that has been sharpened by the current era's combination of large computational requirements, proprietary infrastructure, and high-velocity benchmark competition.
 
-  Jeremy Howard's academic contributions prior to Answer.AI include ULMFiT (Universal Language Model Fine-Tuning), published with Sebastian Ruder at ACL 2018, which demonstrated that pre-trained language model representations could be fine-tuned effectively for downstream NLP tasks with relatively small labelled datasets — typically 1,000 to 100,000 examples — achieving competitive performance with much larger supervised-only models. This result, published before BERT's widespread adoption, directly prefigured the now-dominant paradigm of pre-training a large [[Language Model]] on massive unlabelled corpora and then fine-tuning it on task-specific data. ULMFiT introduced discriminative fine-tuning (using different learning rates for different layers), gradual unfreezing (fine-tuning layers sequentially rather than all at once), and slanted triangular learning rate schedules — a set of engineering contributions that remain influential in the practical fine-tuning literature. Howard's work with Sylvain Gugger on the fastai v2 library produced the influential paper "Fastai: A layered API for deep learning" (Howard & Gugger, 2020), which articulated a philosophical position on API design for [[Deep Learning Framework]]s: that high-level abstractions should not obscure low-level access, that educational value and research utility should be first-class design criteria, and that notebook-based development should be treated as a first-class software engineering methodology rather than a prototyping-only tool.
+  Jeremy Howard's academic contributions prior to Answer.AI include ULMFiT (Universal Language Model Fine-Tuning), published with Sebastian Ruder at ACL 2018, which demonstrated that pre-trained language model representations [private] be fine-tuned effectively for downstream NLP tasks with relatively small labelled datasets — typically 1,000 to 100,000 examples — achieving competitive performance with much larger supervised-only models. This result, published before BERT's widespread adoption, directly prefigured the now-dominant paradigm of pre-training a large [[Language Model]] on massive unlabelled corpora and then fine-tuning it on task-specific data. ULMFiT introduced discriminative fine-tuning (using different learning rates for different layers), gradual unfreezing (fine-tuning layers sequentially rather than all at once), and slanted triangular learning rate schedules — a set of engineering contributions that remain influential in the practical fine-tuning literature. Howard's work with Sylvain Gugger on the fastai v2 library produced the influential paper "Fastai: A layered API for deep learning" (Howard & Gugger, 2020), which articulated a philosophical position on API design for [[Deep Learning Framework]]s: that high-level abstractions should not obscure low-level access, that educational value and research utility should be first-class design criteria, and that notebook-based development should be treated as a first-class software engineering methodology rather than a prototyping-only tool.
 
-  The technical landscape for Answer.AI's primary fine-tuning work is grounded in several interacting mathematical insights. [[LoRA Fine-Tuning]] (Low-Rank Adaptation, Hu et al., 2022) exploits the observation that the weight update matrices required for task-specific fine-tuning of pre-trained [[Large Language Models]] have intrinsically low rank: rather than updating the full weight matrix W ∈ ℝ^(d×k), LoRA decomposes the update as ΔW = BA where B ∈ ℝ^(d×r) and A ∈ ℝ^(r×k) with r ≪ min(d, k), reducing the number of trainable parameters from d×k to r×(d+k). For a typical 7B-parameter model where d and k are of order 4096, r=8 reduces the adapter parameter count by a factor of approximately 512, enabling fine-tuning on a single consumer GPU that could not fit the full model for gradient computation. [[Quantisation]] (specifically NF4 quantisation in QLoRA, Dettmers et al., 2023) further reduces memory requirements by representing weights in 4-bit floating-point format rather than 16-bit or 32-bit, achieving approximately 4× memory reduction relative to bfloat16 with minimal accuracy degradation, because the quantisation error is absorbed by the LoRA adapters which remain in full precision during training. The combination — quantise the frozen base model weights to 4-bit, train LoRA adapters in 16-bit — reduces the GPU memory required to fine-tune a 70B parameter model from approximately 140 GB (bfloat16) to approximately 18 GB with minimal task performance degradation. Answer.AI's FSDP+QLoRA extends this by using Fully Sharded Data Parallel training to distribute this 18 GB across two consumer GPUs (e.g. dual NVIDIA RTX 4090 cards with 24 GB each), enabling 70B-scale fine-tuning on hardware costing approximately $3,000 — compared to the $50,000+ cloud GPU costs previously required.
+  The technical landscape for Answer.AI's primary fine-tuning work is grounded in several interacting mathematical insights. [[LoRA Fine-Tuning]] (Low-Rank Adaptation, Hu et al., 2022) exploits the observation that the weight update matrices required for task-specific fine-tuning of pre-trained [[Large Language Models]] have intrinsically low rank: rather than updating the full weight matrix W ∈ ℝ^(d×k), LoRA decomposes the update as ΔW = BA where B ∈ ℝ^(d×r) and A ∈ ℝ^(r×k) with r ≪ min(d, k), reducing the number of trainable parameters from d×k to r×(d+k). For a typical 7B-parameter model where d and k are of order 4096, r=8 reduces the adapter parameter count by a factor of approximately 512, enabling fine-tuning on a single consumer GPU that [private] not fit the full model for gradient computation. [[Quantisation]] (specifically NF4 quantisation in QLoRA, Dettmers et al., 2023) further reduces memory requirements by representing weights in 4-bit floating-point format rather than 16-bit or 32-bit, achieving approximately 4× memory reduction relative to bfloat16 with minimal accuracy degradation, because the quantisation error is absorbed by the LoRA adapters which remain in full precision during training. The combination — quantise the frozen base model weights to 4-bit, train LoRA adapters in 16-bit — reduces the GPU memory required to fine-tune a 70B parameter model from approximately 140 GB (bfloat16) to approximately 18 GB with minimal task performance degradation. Answer.AI's FSDP+QLoRA extends this by using Fully Sharded Data Parallel training to distribute this 18 GB across two consumer GPUs (e.g. dual NVIDIA RTX 4090 cards with 24 GB each), enabling 70B-scale fine-tuning on hardware costing approximately $3,000 — compared to the $50,000+ cloud GPU costs previously required.
 
   The FSDP+QLoRA work contributes to a rapidly evolving literature on memory-efficient [[Distributed Training]] that includes ZeRO (Rajbhandari et al., 2020), GradCache, and GaLore (gradient low-rank projection, Zhao et al., 2024). Answer.AI's primary contribution is engineering and accessibility-focused: translating QLoRA from a research result requiring custom CUDA kernels and expert-level environment configuration into a reproducible, documented training pipeline accessible to practitioners with consumer GPU hardware, detailed README documentation, and clear ablation results showing performance on standard benchmarks.
 
@@ -412,7 +516,7 @@ public: true
 
   The technical trajectory of [[Parameter-Efficient Fine-Tuning]] itself suggests several specific directions for Answer.AI's work through 2030: support for multi-adapter composition (combining task-specific LoRA adapters with domain-knowledge adapters at inference time, enabling flexible specialisation without retraining); integration with speculative decoding and inference-time compute scaling (which may partly substitute for fine-tuning as a means of adapting model behaviour to specific domains); and adaptation to emerging hardware paradigms including Apple Silicon, Qualcomm AI accelerators, and AMD GPUs, which are expanding the consumer hardware landscape beyond the NVIDIA GPU ecosystem that current efficient training recipes are optimised for. Answer.AI's track record suggests it will continue to translate these research developments into accessible tooling as they mature.
 
-  Finally, the regulatory environment for AI in both the UK and EU is likely to create new demand for accessible, locally-hosted [[Foundation Model]] fine-tuning as organisations in regulated sectors (healthcare, financial services, legal) determine that sending sensitive data to commercial API providers creates compliance risk under data protection regulations (UK GDPR, EU GDPR) and sector-specific regulations (CQC AI assurance for healthcare, FCA model risk management guidance for financial services). Answer.AI's tooling specifically addresses the privacy-preserving local fine-tuning use case, and regulatory pressure could significantly expand the market for this capability through 2028-2030.
+  Finally, the regulatory environment for AI in both the UK and EU is likely to create new demand for accessible, locally-hosted [[Foundation Model]] fine-tuning as organisations in regulated sectors (healthcare, financial services, legal) determine that sending sensitive data to commercial API providers creates compliance risk under data protection regulations (UK GDPR, EU GDPR) and sector-specific regulations (CQC AI assurance for healthcare, FCA model risk management guidance for financial services). Answer.AI's tooling specifically addresses the privacy-preserving local fine-tuning use case, and regulatory pressure [private] significantly expand the market for this capability through 2028-2030.
 
   ## Organisational Model and Team Structure
 

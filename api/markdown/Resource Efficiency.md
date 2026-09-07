@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Resource Efficiency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Resource efficiency is the practice of producing the same output or value while consuming fewer material, energy, or computational inputs. It encompasses minimising waste, reusing by-products, and optimising processes so that resources deliver maximum useful work. In sustainability and industrial contexts it is a primary lever for reducing cost and environmental footprint.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"}, {"@id": "urn:ngm:class:industrial-symbiosis", "label": "Industrial Symbiosis"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-symbiosis",
+        "label": "Industrial Symbiosis"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scientific Discovery Acceleration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Scientific discovery acceleration is the application of artificial intelligence to compress the cycle of hypothesis generation, experimentation, and analysis across scientific disciplines. It includes AI-driven literature synthesis, simulation surrogates, automated experiment design, and prediction of structures or materials. It is often cited as a transformative potential outcome of advanced and general-purpose AI systems.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
-      {"@id": "urn:ngm:class:history-and-path-to-agi", "label": "History and Path to AGI"}
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:history-and-path-to-agi",
+        "label": "History and Path to AGI"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Applied Machine Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,53 +7,194 @@ public: true
   "title": "Applied Machine Learning",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
-    {"@id": "urn:visionflow:linked:cross-validation", "vc:label": "Cross-Validation"},
-    {"@id": "urn:visionflow:linked:logistics-optimisation", "vc:label": "Logistics Optimisation"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:model-selection", "vc:label": "Model Selection"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:data-preprocessing", "vc:label": "Data Preprocessing"},
-    {"@id": "urn:visionflow:linked:hyperparameter-optimisation", "vc:label": "Hyperparameter Optimisation"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:automl", "vc:label": "AutoML"},
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:unsupervised-learning", "vc:label": "Unsupervised Learning"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:model-deployment", "vc:label": "Model Deployment"},
-    {"@id": "urn:visionflow:linked:bias-variance-tradeoff", "vc:label": "Bias-Variance Tradeoff"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:demand-forecasting", "vc:label": "Demand Forecasting"},
-    {"@id": "urn:visionflow:linked:computer-vision-domain", "vc:label": "Computer Vision Domain"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
-    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
-    {"@id": "urn:visionflow:linked:ensemble-methods", "vc:label": "Ensemble Methods"},
-    {"@id": "urn:visionflow:linked:feature-selection", "vc:label": "Feature Selection"},
-    {"@id": "urn:visionflow:linked:random-forest", "vc:label": "Random Forest"},
-    {"@id": "urn:visionflow:linked:gradient-boosting", "vc:label": "Gradient Boosting"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:fairness-in-machine-learning", "vc:label": "Fairness in Machine Learning"},
-    {"@id": "urn:visionflow:linked:data-augmentation", "vc:label": "Data Augmentation"},
-    {"@id": "urn:visionflow:linked:bayesian-optimisation", "vc:label": "Bayesian Optimisation"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:performance-metrics", "vc:label": "Performance Metrics"},
-    {"@id": "urn:visionflow:linked:concept-drift", "vc:label": "Concept Drift"},
-    {"@id": "urn:visionflow:linked:imbalanced-learning", "vc:label": "Imbalanced Learning"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:mathematical-foundations", "vc:label": "Mathematical Foundations"},
-    {"@id": "urn:visionflow:linked:applied-mathematics", "vc:label": "Applied Mathematics"},
-    {"@id": "urn:visionflow:linked:adversarial-machine-learning", "vc:label": "Adversarial Machine Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:anomaly-detection", "vc:label": "Anomaly Detection"},
-    {"@id": "urn:visionflow:linked:time-series-analysis", "vc:label": "Time Series Analysis"},
-    {"@id": "urn:visionflow:linked:recommendation-system", "vc:label": "Recommendation System"},
-    {"@id": "urn:visionflow:linked:feature-store", "vc:label": "Feature Store"},
-    {"@id": "urn:visionflow:linked:model-compression", "vc:label": "Model Compression"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"}
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-validation",
+      "vc:label": "Cross-Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:logistics-optimisation",
+      "vc:label": "Logistics Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-selection",
+      "vc:label": "Model Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-preprocessing",
+      "vc:label": "Data Preprocessing"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-optimisation",
+      "vc:label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:automl",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:unsupervised-learning",
+      "vc:label": "Unsupervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-deployment",
+      "vc:label": "Model Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-variance-tradeoff",
+      "vc:label": "Bias-Variance Tradeoff"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:demand-forecasting",
+      "vc:label": "Demand Forecasting"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision-domain",
+      "vc:label": "Computer Vision Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularisation",
+      "vc:label": "Regularisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ensemble-methods",
+      "vc:label": "Ensemble Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-selection",
+      "vc:label": "Feature Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:random-forest",
+      "vc:label": "Random Forest"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-boosting",
+      "vc:label": "Gradient Boosting"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness-in-machine-learning",
+      "vc:label": "Fairness in Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-augmentation",
+      "vc:label": "Data Augmentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-optimisation",
+      "vc:label": "Bayesian Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:performance-metrics",
+      "vc:label": "Performance Metrics"
+    },
+    {
+      "@id": "urn:visionflow:linked:concept-drift",
+      "vc:label": "Concept Drift"
+    },
+    {
+      "@id": "urn:visionflow:linked:imbalanced-learning",
+      "vc:label": "Imbalanced Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:mathematical-foundations",
+      "vc:label": "Mathematical Foundations"
+    },
+    {
+      "@id": "urn:visionflow:linked:applied-mathematics",
+      "vc:label": "Applied Mathematics"
+    },
+    {
+      "@id": "urn:visionflow:linked:adversarial-machine-learning",
+      "vc:label": "Adversarial Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-series-analysis",
+      "vc:label": "Time Series Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-system",
+      "vc:label": "Recommendation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-store",
+      "vc:label": "Feature Store"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-compression",
+      "vc:label": "Model Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -74,41 +210,113 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"},
-      {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:data-preprocessing", "label": "Data Preprocessing"},
-      {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"}
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:mathematical-foundations", "label": "Mathematical Foundations"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"}
+      {
+        "@id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimisation"},
-      {"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"}
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:fairness-in-machine-learning", "label": "Fairness in Machine Learning"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness in Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:applied-mathematics", "label": "Applied Mathematics"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:bias-variance-tradeoff", "label": "Bias-Variance Tradeoff"}
+      {
+        "@id": "urn:ngm:class:applied-mathematics",
+        "label": "Applied Mathematics"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      }
     ]
   },
   "quality": 0.92,
@@ -117,68 +325,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "EnrichmentTier1"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:applied-machine-learning:2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:applied-machine-learning"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "ResolvedLink"},
-    {"raw": "[[Cross-Validation]]", "resolved": "urn:visionflow:linked:cross-validation", "kind": "ResolvedLink"},
-    {"raw": "[[Logistics Optimisation]]", "resolved": "urn:visionflow:linked:logistics-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Feature Engineering]]", "resolved": "urn:visionflow:linked:feature-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Model Selection]]", "resolved": "urn:visionflow:linked:model-selection", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Data Preprocessing]]", "resolved": "urn:visionflow:linked:data-preprocessing", "kind": "StubLink"},
-    {"raw": "[[Hyperparameter Optimisation]]", "resolved": "urn:visionflow:linked:hyperparameter-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Model Evaluation]]", "resolved": "urn:visionflow:linked:model-evaluation", "kind": "StubLink"},
-    {"raw": "[[MLOps]]", "resolved": "urn:visionflow:linked:mlops", "kind": "StubLink"},
-    {"raw": "[[Data Pipeline]]", "resolved": "urn:visionflow:linked:data-pipeline", "kind": "StubLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "StubLink"},
-    {"raw": "[[AutoML]]", "resolved": "urn:visionflow:linked:automl", "kind": "StubLink"},
-    {"raw": "[[Supervised Learning]]", "resolved": "urn:visionflow:linked:supervised-learning", "kind": "StubLink"},
-    {"raw": "[[Unsupervised Learning]]", "resolved": "urn:visionflow:linked:unsupervised-learning", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Model Deployment]]", "resolved": "urn:visionflow:linked:model-deployment", "kind": "StubLink"},
-    {"raw": "[[Bias-Variance Tradeoff]]", "resolved": "urn:visionflow:linked:bias-variance-tradeoff", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Demand Forecasting]]", "resolved": "urn:visionflow:linked:demand-forecasting", "kind": "StubLink"},
-    {"raw": "[[Computer Vision Domain]]", "resolved": "urn:visionflow:linked:computer-vision-domain", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
-    {"raw": "[[Regularisation]]", "resolved": "urn:visionflow:linked:regularisation", "kind": "StubLink"},
-    {"raw": "[[Ensemble Methods]]", "resolved": "urn:visionflow:linked:ensemble-methods", "kind": "StubLink"},
-    {"raw": "[[Feature Selection]]", "resolved": "urn:visionflow:linked:feature-selection", "kind": "ResolvedLink"},
-    {"raw": "[[Random Forest]]", "resolved": "urn:visionflow:linked:random-forest", "kind": "StubLink"},
-    {"raw": "[[Gradient Boosting]]", "resolved": "urn:visionflow:linked:gradient-boosting", "kind": "StubLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Fairness in Machine Learning]]", "resolved": "urn:visionflow:linked:fairness-in-machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Data Augmentation]]", "resolved": "urn:visionflow:linked:data-augmentation", "kind": "StubLink"},
-    {"raw": "[[Bayesian Optimisation]]", "resolved": "urn:visionflow:linked:bayesian-optimisation", "kind": "ResolvedLink"},
-    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "StubLink"},
-    {"raw": "[[Performance Metrics]]", "resolved": "urn:visionflow:linked:performance-metrics", "kind": "StubLink"},
-    {"raw": "[[Concept Drift]]", "resolved": "urn:visionflow:linked:concept-drift", "kind": "StubLink"},
-    {"raw": "[[Imbalanced Learning]]", "resolved": "urn:visionflow:linked:imbalanced-learning", "kind": "StubLink"},
-    {"raw": "[[Federated Learning]]", "resolved": "urn:visionflow:linked:federated-learning", "kind": "StubLink"},
-    {"raw": "[[Mathematical Foundations]]", "resolved": "urn:visionflow:linked:mathematical-foundations", "kind": "ResolvedLink"},
-    {"raw": "[[Applied Mathematics]]", "resolved": "urn:visionflow:linked:applied-mathematics", "kind": "ResolvedLink"},
-    {"raw": "[[Adversarial Machine Learning]]", "resolved": "urn:visionflow:linked:adversarial-machine-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "StubLink"},
-    {"raw": "[[Anomaly Detection]]", "resolved": "urn:visionflow:linked:anomaly-detection", "kind": "StubLink"},
-    {"raw": "[[Time Series Analysis]]", "resolved": "urn:visionflow:linked:time-series-analysis", "kind": "StubLink"},
-    {"raw": "[[Recommendation System]]", "resolved": "urn:visionflow:linked:recommendation-system", "kind": "StubLink"},
-    {"raw": "[[Feature Store]]", "resolved": "urn:visionflow:linked:feature-store", "kind": "ResolvedLink"},
-    {"raw": "[[Model Compression]]", "resolved": "urn:visionflow:linked:model-compression", "kind": "StubLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:visionflow:linked:active-learning", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -347,7 +493,7 @@ public: true
 
   Applied ML sits at the intersection of statistical learning theory and software engineering, drawing on a rich intellectual heritage while generating its own distinctive research agenda oriented toward empirical methodology and deployment science.
 
-  The theoretical underpinnings — PAC learning, VC dimension, Rademacher complexity, bias-variance decomposition — originate in the work of Valiant (1984), Vapnik & Chervonenkis (1971), and Bartlett & Mendelson (2002). Methodological classics include Breiman's Random Forests (2001), Friedman's Gradient Boosting (2001), Tibshirani's LASSO (1996), and Hochreiter & Schmidhuber's LSTM (1997). Landmark empirical results include the AlexNet ImageNet breakthrough (Krizhevsky et al. 2012), which demonstrated that GPU-trained [[Convolutional Neural Network]]s could dramatically outperform hand-engineered feature pipelines on large-scale image classification, and the transformer architecture (Vaswani et al. 2017) that enabled modern large-scale [[Transfer Learning]] across NLP, vision, and multimodal tasks.
+  The theoretical underpinnings — PAC learning, VC dimension, Rademacher complexity, bias-variance decomposition — originate in the work of Valiant (1984), Vapnik & Chervonenkis (1971), and Bartlett & Mendelson (2002). Methodological classics include Breiman's Random Forests (2001), Friedman's Gradient Boosting (2001), Tibshirani's LASSO (1996), and Hochreiter & Schmidhuber's LSTM (1997). Landmark empirical results include the AlexNet ImageNet breakthrough (Krizhevsky et al. 2012), which demonstrated that GPU-trained [[Convolutional Neural Network]]s [private] dramatically outperform hand-engineered feature pipelines on large-scale image classification, and the transformer architecture (Vaswani et al. 2017) that enabled modern large-scale [[Transfer Learning]] across NLP, vision, and multimodal tasks.
 
   Applied ML research has its own distinct conference culture emphasising empirical rigour and reproducibility. The academic conference landscape centres on NeurIPS, ICML, ICLR, and KDD for algorithms; ACM SIGKDD and IEEE ICDM for data mining applications; and practitioner-oriented venues such as MLSys (systems for ML), ACM RecSys (recommendation), and the Machine Learning and Systems workshop series for production deployment contexts. Journals including JMLR, Machine Learning (Springer), IEEE TPAMI, and Data Mining and Knowledge Discovery publish the foundational empirical research that practitioners eventually operationalise. The NeurIPS 2023 Datasets and Benchmarks track, dedicated exclusively to dataset and evaluation methodology papers, reflects growing recognition that data quality and evaluation protocol are as consequential as algorithmic innovation.
 
@@ -466,6 +612,6 @@ public: true
   28. Gartner (2025). AI and Machine Learning Production Deployment Report. Gartner Research. Industry data on 85% project failure rate and 40% sustained-value statistic.
 
 - ### Provenance
-  - sources:: https://machinelearningjobs.co.uk/career-advice/new-machine-learning-employers-to-watch-in-2026-uk-and-global-companies-driving-ml-innovation, https://retailtechinnovationhub.com/home/2025/10/3/how-do-enterprises-in-the-uk-implement-mlops-successfully, https://advanceonline.cam.ac.uk/blog/machine-learning-trend-analysis, https://hatchworks.com/blog/gen-ai/mlops-what-you-need-to-know/, https://dl.acm.org/doi/10.1016/j.infsof.2025.107733, https://www.imperial.ac.uk/study/courses/postgraduate-taught/applied-machine-learning/, https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/machine-learning-msc, https://ojs.bonviewpress.com/index.php/JCCE/article/view/720, https://personal.eur.nl/frasincar/papers/KBS2025a/kbs2025a.pdf, https://www.idsai.manchester.ac.uk/research/methodologies/machine-learning/
+  - sources:: https://machinelearningjobs.co.uk/career-advice/new-machine-learning-employers-to-watch-in-2026-uk-and-global-companies-driving-ml-innovation, https://retailtechinnovationhub.com/home/2025/10/3/how-do-enterprises-in-the-uk-implement-mlops-successfully, https://advanceonline.cam.ac.uk/blog/machine-learning-trend-analysis, https://hatchworks.com/blog/gen-ai/mlops-what-you-need-to-know/, https://dl.acm.org/doi/10.1016/j.infsof.2025.107733, https://www.imperial.ac.uk/study/courses/postgraduate-taught/applied-machine-learning/, https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/machine-learning-msc, https://ojs.bonviewpress.com/[private].php/JCCE/article/view/720, https://personal.eur.nl/frasincar/papers/KBS2025a/kbs2025a.pdf, https://www.idsai.manchester.ac.uk/research/methodologies/machine-learning/
   - migration-date:: 2026-06-20T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Root Mean Square Error
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,19 +91,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"}
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:mean-absolute-error", "label": "Mean Absolute Error"}
+      {
+        "@id": "urn:ngm:class:mean-absolute-error",
+        "label": "Mean Absolute Error"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:training", "label": "Training"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
     ]
   },
   "provenance": {
@@ -118,82 +134,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:root-mean-square-error:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bee8ff422a3e378e607e13c048f51c14b7f6903574a12d8e49a33da9f892d2b6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bias-Variance Trade-off]]",
-      "resolved": "urn:visionflow:linked:bias-variance-trade-off",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Error Analysis]]",
-      "resolved": "urn:visionflow:linked:error-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mean Squared Error]]",
-      "resolved": "urn:visionflow:linked:mean-squared-error",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Evaluation]]",
-      "resolved": "urn:visionflow:linked:model-evaluation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Outlier]]",
-      "resolved": "urn:visionflow:linked:outlier",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regression]]",
-      "resolved": "urn:visionflow:linked:regression",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RMSLE]]",
-      "resolved": "urn:visionflow:linked:rmsle",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Standard Deviation]]",
-      "resolved": "urn:visionflow:linked:standard-deviation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mean Absolute Error]]",
-      "resolved": "urn:visionflow:owl:class:mean-absolute-error",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Performance]]",
-      "resolved": "urn:visionflow:owl:class:model-performance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A regression performance metric representing the square root of the average squared differences between predicted and actual values, calculated by taking the mean of squared prediction errors and then applying the square root, providing a measure of prediction accuracy in the same units as the target variable whilst giving disproportionate weight to larger errors, making it particularly sensitive to outliers and appropriate when large prediction errors are significantly more problematic than small errors.

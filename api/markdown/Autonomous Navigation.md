@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - AutonomousNavigation
----
-
-# Autonomous Navigation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,52 +204,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:autonomous-navigation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2207aa41242e30089f50cfb69d8f406c2a3fe36f5f9d3ad05bf693c7a41ee52d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Localisation]]",
-      "resolved": "urn:visionflow:linked:localisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Path Planning]]",
-      "resolved": "urn:visionflow:owl:class:path-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SLAM]]",
-      "resolved": "urn:visionflow:owl:class:slam",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control. Autonomous navigation systems employ SLAM, sensor fusion, and AI-based decision-making to operate in unknown or dynamic environments.

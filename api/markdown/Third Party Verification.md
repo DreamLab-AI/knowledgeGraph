@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Third Party Verification
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Large-Scale Pretraining
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:large-scale-pretraining", "@type":"Page", "title":"Large-Scale Pretraining", "vc:slug":"large-scale-pretraining", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:large-scale-pretraining",
+  "@type": "Page",
+  "title": "Large-Scale Pretraining",
+  "vc:slug": "large-scale-pretraining",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

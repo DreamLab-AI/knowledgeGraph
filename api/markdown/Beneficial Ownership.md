@@ -1,38 +1,112 @@
----
-public: true
----
-
-# Beneficial Ownership
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:beneficial-ownership", "@type":"Page", "title":"Beneficial Ownership", "vc:slug":"beneficial-ownership", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:beneficial-ownership",
+  "@type": "Page",
+  "title": "Beneficial Ownership",
+  "vc:slug": "beneficial-ownership",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:beneficial-ownership",
-  "@type":"Class",
-  "label":"Beneficial Ownership",
-  "definition":"Beneficial ownership identifies the natural persons who ultimately own or control a legal entity or arrangement, or on whose behalf a transaction is conducted, regardless of the formal legal title. It distinguishes the real human beneficiaries from nominee shareholders, trustees and layered corporate structures. Establishing beneficial ownership is a core obligation in anti-financial-crime regimes, enabling regulators and institutions to pierce opaque structures and attribute responsibility.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:corporate-governance","label":"Corporate Governance"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"},{"@id":"urn:ngm:class:know-your-customer","label":"Know Your Customer"}],
-    "dependsOn":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "hasPart":[{"@id":"urn:ngm:class:sanctions-screening","label":"Sanctions Screening"}],
-    "supports":[{"@id":"urn:ngm:class:anti-money-laundering","label":"Anti Money Laundering"}],
-    "enables":[{"@id":"urn:ngm:class:financial-inclusion","label":"Financial Inclusion"}],
-    "implements":[{"@id":"urn:ngm:class:corporate-governance","label":"Corporate Governance"}],
-    "partOf":[{"@id":"urn:ngm:class:know-your-customer","label":"Know Your Customer"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:transaction-privacy","label":"Transaction Privacy"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:identity-management","label":"Identity Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:financial-services","label":"Financial Services"},{"@id":"urn:ngm:class:financial-system","label":"Financial System"},{"@id":"urn:ngm:class:digital-identity","label":"Digital Identity"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:beneficial-ownership",
+  "@type": "Class",
+  "label": "Beneficial Ownership",
+  "definition": "Beneficial ownership identifies the natural persons who ultimately own or control a legal entity or arrangement, or on whose behalf a transaction is conducted, regardless of the formal legal title. It distinguishes the real human beneficiaries from nominee shareholders, trustees and layered corporate structures. Establishing beneficial ownership is a core obligation in anti-financial-crime regimes, enabling regulators and institutions to pierce opaque structures and attribute responsibility.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti Money Laundering"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:transaction-privacy",
+        "label": "Transaction Privacy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

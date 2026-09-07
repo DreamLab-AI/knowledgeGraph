@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Management System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A data management system is software that stores, organises, secures and provides controlled access to data throughout its lifecycle. It encompasses capabilities for ingestion, modelling, querying, integrity enforcement and governance, with database management systems and graph databases as common specialisations. It is the foundational platform on which metadata standards and downstream applications depend.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"}
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
     ]
   },
   "quality": 0.72

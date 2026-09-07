@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CQRS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Command Query Responsibility Segregation (CQRS) is a software architecture pattern that separates the model used to update state (commands) from the model used to read state (queries). By using distinct write and read paths, systems can independently optimise, scale, and secure each side, often pairing the write model with event sourcing. It is commonly applied in high-throughput, complex-domain systems where read and write workloads diverge.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-layer", "label": "Data Layer"}, {"@id": "urn:ngm:class:crdt", "label": "CRDT"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# cross-chain governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

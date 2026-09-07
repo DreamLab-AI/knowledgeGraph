@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Journal of Machine Learning Research
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The Journal of Machine Learning Research (JMLR) is a peer-reviewed, open-access scientific journal publishing original research in all areas of machine learning. Founded in 2000, it is among the most influential venues in the field and freely disseminates articles without author or reader fees. JMLR also publishes software and benchmark contributions that establish methodological standards for the community.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:learning-algorithm", "label": "Learning Algorithm"}
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:learning-algorithm",
+        "label": "Learning Algorithm"
+      }
     ]
   },
   "quality": 0.72

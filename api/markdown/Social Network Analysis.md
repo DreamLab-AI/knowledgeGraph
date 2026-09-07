@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Social Network Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

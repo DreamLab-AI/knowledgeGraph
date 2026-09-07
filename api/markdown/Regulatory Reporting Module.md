@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Regulatory Reporting Module
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A regulatory reporting module is a self-contained software component that collects, formats, and dispatches the disclosures an entity owes to its regulators. It encapsulates jurisdiction-specific schemas, validation rules, and submission channels so they can be reused across systems. As a discrete subsystem it plugs into compliance-monitoring and tax-compliance pipelines to produce audit-ready outputs.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:digital-tax-compliance-node", "label": "Digital Tax Compliance Node"}
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:digital-tax-compliance-node",
+        "label": "Digital Tax Compliance Node"
+      }
     ]
   },
   "quality": 0.72

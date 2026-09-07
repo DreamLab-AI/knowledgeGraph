@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cultural Preservation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Cultural preservation is the systematic safeguarding, documentation and transmission of tangible and intangible cultural heritage so that it survives for future generations. In digital contexts it involves capturing artefacts as durable metadata-rich records, archiving collective memory, and ensuring long-term accessibility against media decay and format obsolescence. It matters as a governance concern for who controls heritage data and how it remains discoverable.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:artifact-metadata", "label": "Artifact Metadata"},
-      {"@id": "urn:ngm:class:collective-memory-archive", "label": "Collective Memory Archive"}
+      {
+        "@id": "urn:ngm:class:artifact-metadata",
+        "label": "Artifact Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:collective-memory-archive",
+        "label": "Collective Memory Archive"
+      }
     ]
   },
   "quality": 0.72

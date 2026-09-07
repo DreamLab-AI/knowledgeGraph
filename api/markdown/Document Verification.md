@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Document Verification
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:document-verification", "@type":"Page", "title":"Document Verification", "vc:slug":"document-verification", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:document-verification",
+  "@type": "Page",
+  "title": "Document Verification",
+  "vc:slug": "document-verification",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -89,6 +94,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - [[Document Verification]] confirms that an identity document is authentic and belongs to its presenter. It is a core step of [[Know Your Customer]] and [[Onboarding]], supporting [[Compliance]] and [[Anti-Money Laundering]] obligations through checks that increasingly use [[Machine Learning]].
 - ### Overview

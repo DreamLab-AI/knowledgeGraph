@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Forensics Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -125,77 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-forensics-framework:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7e14fb388d8e13e9e44fceb2eba86b0fc247cef1b8922db85e72b48142e57762"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Chain of Custody]]",
-      "resolved": "urn:visionflow:linked:chain-of-custody",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Integrity]]",
-      "resolved": "urn:visionflow:linked:data-integrity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Evidence Collection]]",
-      "resolved": "urn:visionflow:linked:evidence-collection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Forensic Tools]]",
-      "resolved": "urn:visionflow:linked:forensic-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Incident Investigation]]",
-      "resolved": "urn:visionflow:linked:incident-investigation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Legal Documentation]]",
-      "resolved": "urn:visionflow:linked:legal-documentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST Framework]]",
-      "resolved": "urn:visionflow:linked:nist-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cybersecurity]]",
-      "resolved": "urn:visionflow:owl:class:cybersecurity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A structured methodology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts.

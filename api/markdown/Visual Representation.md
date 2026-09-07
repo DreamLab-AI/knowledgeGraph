@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Visual Representation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A visual representation is a learned encoding of image or video content into a feature vector or embedding that captures semantic and structural properties useful for downstream tasks. Such representations, produced by convolutional or transformer-based encoders, support classification, retrieval, detection, and multimodal alignment. The quality of a visual representation determines transferability and sample efficiency across vision applications.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:vision-language-model", "label": "Vision Language Model"}, {"@id": "urn:ngm:class:reality-capture-system", "label": "Reality Capture System"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vision-language-model",
+        "label": "Vision Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:reality-capture-system",
+        "label": "Reality Capture System"
+      }
+    ]
   },
   "quality": 0.72
 }

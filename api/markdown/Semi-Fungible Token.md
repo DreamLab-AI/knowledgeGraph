@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Semi-Fungible Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,20 +58,50 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:erc1155-standard", "label": "ERC1155 Standard"}
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:erc1155-standard",
+        "label": "ERC1155 Standard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"},
-      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"},
-      {"@id": "urn:ngm:class:security-token", "label": "Security Token"},
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      },
+      {
+        "@id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
-      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"}
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      }
     ]
   },
   "quality": 0.8,
@@ -87,37 +112,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:semi-fungible-token:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:086b878064d5da2d21a69c8a90dfd39f5098ab75e20d7bfc23d75a703db0f1a8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Token]]",
-      "resolved": "urn:visionflow:owl:class:token",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.

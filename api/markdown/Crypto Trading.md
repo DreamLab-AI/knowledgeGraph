@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Crypto Trading
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Crypto trading is the buying and selling of cryptocurrencies and digital assets for profit, conducted on centralised exchanges, decentralised exchanges, and over-the-counter desks. It spans spot, margin, derivatives, and algorithmic strategies, with prices driven by liquidity, sentiment, and on-chain activity. It is a primary use case and liquidity source for the broader crypto-asset market.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:kraken", "label": "Kraken"}, {"@id": "urn:ngm:class:tether", "label": "Tether"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:kraken",
+        "label": "Kraken"
+      },
+      {
+        "@id": "urn:ngm:class:tether",
+        "label": "Tether"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Swarm Intelligence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,52 +167,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:swarm-intelligence:cd956acf960d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:809468c60386881965c790340a6ead7b8f7761409bac036c53d0d0d75f6448c9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Swarm Robotics]]",
-      "resolved": "urn:visionflow:linked:swarm-robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Robot Systems]]",
-      "resolved": "urn:visionflow:linked:multi-robot-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Swarm Control]]",
-      "resolved": "urn:visionflow:linked:decentralized-swarm-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Systems Domain]]",
-      "resolved": "urn:visionflow:linked:robo-navigation-and-planning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Swarm intelligence is the collective behaviour that emerges from many simple agents following local rules and interactions, producing coordinated global behaviour without central control.

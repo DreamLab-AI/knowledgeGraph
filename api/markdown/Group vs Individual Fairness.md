@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Group vs Individual Fairness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,30 +71,72 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
-      {"@id": "urn:ngm:class:fairness-constraints", "label": "Fairness Constraints"}
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-constraints",
+        "label": "Fairness Constraints"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"},
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"}
+      {
+        "@id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:fairness-oecd", "label": "Fairness (OECD)"},
-      {"@id": "urn:ngm:class:disparate-impact", "label": "Disparate Impact"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"}
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-oecd",
+        "label": "Fairness (OECD)"
+      },
+      {
+        "@id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Technology Access Equity"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"}
+      {
+        "@id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ]
   },
   "provenance": {
@@ -109,52 +146,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:group-vs-individual-fairness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f7894d96e93c7725e6a95045aa27aa41a63a4f6d72475bf1a9ca46778e89e083"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Barocas et al. (2019)]]",
-      "resolved": "urn:visionflow:linked:barocas-et-al-2019",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dwork et al. (2012)]]",
-      "resolved": "urn:visionflow:linked:dwork-et-al-2012",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hardt et al. (2016)]]",
-      "resolved": "urn:visionflow:linked:hardt-et-al-2016",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Group vs Individual Fairness denotes two competing paradigms for defining and enforcing algorithmic fairness: group fairness requires statistical parity of outcomes or error rates across protected demographic cohorts, while individual fairness requires that similar individuals receive similar predictions regardless of group membership. The two paradigms are formally incompatible in general — satisfying demographic parity does not guarantee individual fairness and vice versa — representing a fundamental tension in fair machine learning that practitioners must resolve through context-specific policy choices. This distinction shapes the selection of fairness metrics, audit methodologies, and bias mitigation interventions in AI system design.

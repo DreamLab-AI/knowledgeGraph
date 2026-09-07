@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interpretable AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,19 +79,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:model-transparency", "label": "Model Transparency"},
-      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"}
+      {
+        "@id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ]
   },
   "provenance": {
@@ -106,67 +122,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interpretable-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:445e5d30f9531fcbf05b6a974053617e49730df113dd0fd8461cab44a0439e48"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Black Box Model]]",
-      "resolved": "urn:visionflow:linked:black-box-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decision Tree Approximation]]",
-      "resolved": "urn:visionflow:linked:decision-tree-approximation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:owl:class:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Intrinsic Interpretability]]",
-      "resolved": "urn:visionflow:owl:class:intrinsic-interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Interpretability]]",
-      "resolved": "urn:visionflow:owl:class:model-interpretability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Transparency]]",
-      "resolved": "urn:visionflow:owl:class:model-transparency",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Machine learning models and systems whose internal decision-making processes are inherently transparent and understandable to humans without requiring additional post-hoc explanation techniques. Interpretable AI prioritises transparency by design—via linear models, decision trees, or rule-based systems—distinguishing it from explainable AI approaches that retrofit explanations onto opaque models.

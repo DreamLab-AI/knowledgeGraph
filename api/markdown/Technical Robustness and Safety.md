@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Technical Robustness and Safety
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,26 +71,62 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {
+        "@id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:data-poisoning", "label": "Data Poisoning"}
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ]
   },
   "provenance": {
@@ -105,52 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:technical-robustness-and-safety:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cb76e75faabd10424cbab73c1c86adcfe64a8f8f63c0eaba9e671493f5ee0845"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[EU AI Act Article 15]]",
-      "resolved": "urn:visionflow:linked:eu-ai-act-article-15",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EU HLEG AI]]",
-      "resolved": "urn:visionflow:linked:eu-hleg-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI RMF]]",
-      "resolved": "urn:visionflow:linked:nist-ai-rmf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technical Robustness and Safety is a trustworthiness dimension ensuring AI systems perform reliably under varied conditions, resist adversarial attacks, implement fallback mechanisms for graceful degradation, and maintain safety throughout their operational lifecycle. This dimension encompasses four core components: resilience to attack (protecting against adversarial examples designed to cause misclassification, data poisoning attempts to corrupt training data, model extraction attacks stealing intellectual property, and implementing comprehensive cybersecurity measures), fallback plan and safety mechanisms (providing fallback procedures when primary systems fail, enabling graceful degradation rather than catastrophic failure, implementing emergency stop capabilities for immediate deactivation, and establishing safe default behaviors), accuracy and reliability (meeting appropriate accuracy thresholds relative to deployment context, demonstrating reproducibility of results across trials, quantifying and communicating uncertainty in predictions, and handling distribution shift when deployment data differs from training data), and general safety (conducting comprehensive risk assessments identifying potential hazards, implementing proportionate safety controls, maintaining continuous safety monitoring detecting performance degradation or anomalies, and establishing incident response procedures). The EU AI Act Article 15 mandates high-risk systems achieve appropriate accuracy levels with quantitative performance metrics validated through independent testing, demonstrate robustness to perturbations and adversarial inputs, and implement cybersecurity protections against data poisoning, model evasion, and confidentiality attacks. The 2024-2025 period witnessed technical robustness transition from voluntary best practice to regulatory requirement, with red teaming emerging as the dominant safety evaluation methodology involving external experts simulating realistic attack scenarios to identify vulnerabilities before deployment, and regulatory enforcement creating existential compliance pressures with penalties reaching EUR 15 million or 3% of global annual turnover for violations.

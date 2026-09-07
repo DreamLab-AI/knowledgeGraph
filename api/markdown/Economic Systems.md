@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Economic Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,32 +85,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:economic-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eea30aea3b130a7496d33fcfcac71fed8cd9337d910e74a412a05e3bd1751002"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Economic Systems are the structured sets of rules, institutions, and mechanisms that govern the production, distribution, and consumption of goods, value, and digital assets within a platform or environment. In spatial computing and Web3 contexts, economic systems encompass tokenomics, smart-contract-enforced incentive structures, and decentralised exchange mechanisms.

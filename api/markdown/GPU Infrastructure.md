@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GPU Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "gpu-infrastructure",
   "title": "GPU Infrastructure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Colossus Cluster", "xAI"],
+  "vc:outboundWikilinks": [
+    "Colossus Cluster",
+    "xAI"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}, {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}, {"@id": "urn:ngm:class:model-training", "label": "Model Training"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

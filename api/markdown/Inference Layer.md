@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inference Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inference-layer:90b6862346ce",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:718b5caad35483acb13912850d283291d81cc426b839378ec3c716da212eb08d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Model Layer]]",
-      "resolved": "urn:visionflow:linked:model-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Middleware Layer]]",
-      "resolved": "urn:visionflow:linked:middleware-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Serving]]",
-      "resolved": "urn:visionflow:linked:model-serving",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Quantisation]]",
-      "resolved": "urn:visionflow:linked:quantisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Inference Layer is the stratum that executes trained models to produce predictions from new inputs. In the canonical stack it sits above the Model Layer and below the Middleware Layer, turning static artefacts into a live serving capability. It contains serving runtimes, batching and caching logic, and the request handling that delivers predictions.

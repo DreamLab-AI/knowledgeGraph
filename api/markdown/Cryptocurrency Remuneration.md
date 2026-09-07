@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-253-cryptocurrency-remuneration
----
-
-# Cryptocurrency Remuneration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -75,75 +68,82 @@ aliases:
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"},
-      {"@id": "urn:ngm:class:distributed-work", "label": "Distributed Work"},
-      {"@id": "urn:ngm:class:micropayments", "label": "Micropayments"},
-      {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"}
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      },
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:corporate-tax-compliance-framework-treatment-crypto", "label": "Tax Treatment Crypto"}
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework-treatment-crypto",
+        "label": "Tax Treatment Crypto"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:blockchain-collaboration", "label": "Blockchain Collaboration"},
-      {"@id": "urn:ngm:class:smart-contract-coordination", "label": "Smart Contract Coordination"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-collaboration",
+        "label": "Blockchain Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-coordination",
+        "label": "Smart Contract Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cryptocurrency-remuneration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dd8a70f88cf8730d27dfcd96e583bb336c10e90a7c35eca998ec43b30e20709a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[TELE-002-telecollaboration]]",
-      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-250-blockchain-collaboration]]",
-      "resolved": "urn:visionflow:linked:tele-250-blockchain-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-251-smart-contract-coordination]]",
-      "resolved": "urn:visionflow:linked:tele-251-smart-contract-coordination",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:owl:class:cryptocurrency",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "The payment of remote workers, freelancers, or distributed team members in cryptocurrency (Bitcoin, Ethereum, stablecoins) rather than traditional fiat currency, enabling borderless, instant, low-fee transactions that bypass traditional banking systems whilst providing financial inclusion for unbanked populations and facilitating blockchain-based collaboration."

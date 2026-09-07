@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ConvergenceConcept
----
-
-# Convergence Concept
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,21 +63,42 @@ aliases:
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cross-domain-bridge", "label": "Cross Domain Bridge"}
+      {
+        "@id": "urn:ngm:class:cross-domain-bridge",
+        "label": "Cross Domain Bridge"
+      }
     ]
   },
   "provenance": {
@@ -94,47 +108,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:convergence-concept:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:47373e74fbde4bb6dfd44c50a9748f21b52689d5b6b426c497440f206da2b1a4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ACM Queue]]",
-      "resolved": "urn:visionflow:linked:acm-queue",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE Future Networks]]",
-      "resolved": "urn:visionflow:linked:ieee-future-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[XR Association]]",
-      "resolved": "urn:visionflow:linked:xr-association",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ConvergenceConcept is a concept within the ngm domain.

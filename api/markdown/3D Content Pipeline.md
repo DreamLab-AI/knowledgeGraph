@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Content Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,26 +167,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-d-content-pipeline:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dad791bf39d34ebb57c7fa88dad839248db97d55a4048bb1b7b5281afeb82227"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The comprehensive workflows, tools, and methodologies for creating, processing, optimising, and delivering three-dimensional assets for metaverse and spatial computing applications. A 3D content pipeline spans concept art, geometry modelling, UV mapping, PBR texturing, rigging, LOD generation, and platform-specific optimisation, integrating DCC tools, game engines, version control, and CI/CD systems to support distributed teams and continuous asset delivery.

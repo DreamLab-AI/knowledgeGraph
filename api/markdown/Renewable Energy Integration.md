@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Renewable Energy Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Renewable energy integration is the practice of powering computational or industrial loads with solar, wind, hydro, and other low-carbon sources, often using flexible demand to absorb intermittent or otherwise curtailed generation. In blockchain it refers to siting mining near renewable supply to lower emissions and monetise stranded energy. Effective integration reduces carbon intensity and can improve grid economics.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"},
-      {"@id": "urn:ngm:class:carbon-neutral-blockchain", "label": "Carbon Neutral Blockchain"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Partial Synchrony
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -110,6 +106,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Partial synchrony is a timing model for distributed systems that sits between the fully synchronous model, where message delays are bounded and known, and the fully asynchronous model, where delays are unbounded. In the partially synchronous model there exists an unknown bound on message delay that eventually holds after some unknown global stabilisation time (GST), or alternatively a known bound that holds only after GST. This model is the theoretical foundation for practical Byzantine fault-tolerant consensus protocols, allowing them to circumvent the FLP impossibility result by guaranteeing safety always and liveness once the network behaves synchronously.
   - [[Consensus Protocol]] [[Consensus Mechanism]] [[Gossip Protocol]] [[Byzantine Fault Tolerance]] [[Blockchain Consensus]]

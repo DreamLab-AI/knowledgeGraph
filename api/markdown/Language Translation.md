@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Language Translation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -95,32 +90,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:language-translation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:162bb937c74890a379898d4589e830dbf526dd4aaae36cdb0775426f3ac4ad77"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Language translation is the automated or human-assisted conversion of text or speech from a source language into a target language whilst preserving semantic meaning, tone, and cultural context. Modern neural machine translation systems, built on transformer architectures and large language models, enable real-time multilingual communication across distributed collaboration platforms and metaverse environments.

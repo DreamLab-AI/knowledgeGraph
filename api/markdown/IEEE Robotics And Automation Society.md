@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IEEE Robotics And Automation Society
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "The IEEE Robotics and Automation Society (IEEE RAS) is the preeminent international professional and technical society dedicated to advancing the theory, design, practice, and application of robotics, automation, and related technologies. Founded in 1984 as a successor to the IEEE Robotics and Automation Council, it serves a global membership of engineers, researchers, and practitioners through flagship conferences including ICRA and IROS, peer-reviewed publications such as the IEEE Transactions on Robotics, and technical committee activities that coordinate standards development and community building across the full breadth of robotics disciplines.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:robotics-systems", "label": "Robotics Systems"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robotics", "label": "Collaborative Robotics"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
+        "label": "Collaborative Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ieee-control-systems-society", "label": "IEEE Control Systems Society"},
-      {"@id": "urn:ngm:class:robotics-core-concepts", "label": "RoboticsCoreConcepts"},
-      {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"}
+      {
+        "@id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-core-concepts",
+        "label": "RoboticsCoreConcepts"
+      },
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:humanoid-robotics", "label": "Humanoid Robotics"},
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
-      {"@id": "urn:ngm:class:surgical-robotics", "label": "Surgical Robotics"}
+      {
+        "@id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +88,3 @@ public: true
   - The society's technical committees — over 30 active groups covering topics from agricultural robotics to aerial robotics, robot learning, and robot ethics — coordinate research community activities, organise competitions such as the DARPA Robotics Challenge follow-on events, and feed into standards activities through IEEE's standards association. IEEE standards developed with RAS involvement include IEEE 1872 (ontologies for robotics and automation), providing a common vocabulary for robot component interoperability, and contributions to IEC/ISO standards for collaborative robot safety (ISO 10218 and ISO/TS 15066).
 
   - In 2024-2025, IEEE RAS has increasingly engaged with the convergence of large-scale AI foundation models and physical robotics — a development the community terms "embodied intelligence" or "foundation models for robotics." ICRA 2024 and IROS 2024 saw record submissions on topics including robot learning from human demonstrations, multi-modal perception-action models, and sim-to-real transfer for generalised manipulation. The society has also intensified its attention to ethical dimensions of robotics deployment: autonomous weapons, care robots for vulnerable populations, and the labour market impacts of industrial automation are recurring themes in both technical committees and plenary addresses. RAS continues to serve as the convening institution that shapes research priorities and professional norms for a field whose societal impact is accelerating rapidly.
-

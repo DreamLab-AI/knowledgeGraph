@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TaxonomicFramework
----
-
-# Taxonomic Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,19 +51,40 @@ aliases:
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"},
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+      {
+        "@id": "urn:ngm:class:robo-robot-type",
+        "label": "Robot Type"
+      },
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:structural-member", "label": "Structural Member"},
-      {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"}
+      {
+        "@id": "urn:ngm:class:structural-member",
+        "label": "Structural Member"
+      },
+      {
+        "@id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +94,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:taxonomic-framework:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b4242ac4ab3fa592136be305f82e49404ffd76f2027244ac0d2e969f5c1ba2e8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Taxonomic Framework is a principled hierarchical classification system that organises concepts within a domain into superclass-subclass relationships, enabling consistent identification, comparison, and retrieval of entities. In the robotics ontology it structures robot types, actuators, sensors, and control strategies into a formal class hierarchy that supports OWL reasoning, SPARQL queries, and interoperability across ontologies.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# dYdX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,62 +199,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:d-yd-x:aa360eebe94e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d3658c1b6e5681ce5101d87ed1ef25353bf19ec7bc8793c4761d747167fe39b5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Order Book]]",
-      "resolved": "urn:visionflow:linked:order-book",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Perpetual Futures]]",
-      "resolved": "urn:visionflow:linked:perpetual-futures",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Leveraged Trading]]",
-      "resolved": "urn:visionflow:linked:leveraged-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GMX]]",
-      "resolved": "urn:visionflow:linked:gmx",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cosmos]]",
-      "resolved": "urn:visionflow:linked:cosmos",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Finance Domain]]",
-      "resolved": "urn:visionflow:linked:decentralised-finance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - dYdX is a decentralised exchange focused on perpetual-futures trading, allowing users to take leveraged long and short positions on cryptocurrencies. Earlier versions operated on Ethereum using a layer-two scaling solution with an off-chain order book and on-chain settlement, while a later version migrated to a purpose-built application-specific blockchain in the Cosmos ecosystem. It combines the order-book trading experience of centralised venues with non-custodial settlement.

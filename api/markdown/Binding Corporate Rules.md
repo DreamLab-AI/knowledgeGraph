@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Binding Corporate Rules
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,44 @@ public: true
   "definition": "Binding Corporate Rules (BCRs) are an intra-group data transfer mechanism approved by EU data protection authorities that allow multinational corporate groups to transfer personal data from the European Economic Area to group entities in third countries lacking an EU adequacy decision, provided the group adopts and enforces a comprehensive, legally binding internal data protection code. BCRs are assessed and approved by a lead supervisory authority under the GDPR framework.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cross-border-data-transfer-rule", "label": "Cross-Border Data Transfer Rule"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:data-governance-framework", "label": "Data Governance Framework"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance-framework",
+        "label": "Data Governance Framework"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:standard-contractual-clauses", "label": "Standard Contractual Clauses"}
+      {
+        "@id": "urn:ngm:class:standard-contractual-clauses",
+        "label": "Standard Contractual Clauses"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +78,3 @@ public: true
   - In practice, BCRs are used by major technology, financial services, and manufacturing multinationals including Google, IBM, Philips, and General Electric. They are managed by internal data protection functions in coordination with group legal and compliance teams, requiring ongoing maintenance as group structure, processing activities, and applicable law evolve. The EDPB maintains a public register of approved BCRs and published updated referential documents for both controllers and processors in 2022 to align with GDPR requirements.
 
   - By 2024–2025 BCRs face renewed scrutiny in light of the Schrems II judgment (2020), which invalidated the Privacy Shield and reinforced the obligation to assess third-country law for surveillance risks even where BCRs are in place. The EDPB's guidance requires BCR holders to conduct transfer impact assessments for transfers to countries whose national security laws may override BCR commitments. The EU-US Data Privacy Framework (2023) has partially eased this burden for US transfers, but BCRs remain central to transfers to countries without adequacy decisions such as India and Brazil.
-

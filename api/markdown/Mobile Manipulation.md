@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mobile Manipulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,46 +182,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mobile-manipulation:18cc8b0112e7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5b71fd351624f65ef012536729f721eb5437500843f585ac8002cd5ebfd7c7de"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Manipulator]]",
-      "resolved": "urn:visionflow:linked:manipulator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mobile Robot]]",
-      "resolved": "urn:visionflow:linked:mobile-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Joint Configuration]]",
-      "resolved": "urn:visionflow:linked:joint-configuration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Manipulation]]",
-      "resolved": "urn:visionflow:linked:manipulation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Soulbound Tokens
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:soulbound-tokens:6e850ea913be",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ecec0d8203bef3920d491f3f6d4da82a25567536f7290a3cf4374381d1568a2c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Token Standard]]",
-      "resolved": "urn:visionflow:linked:token-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sybil Resistance]]",
-      "resolved": "urn:visionflow:linked:sybil-resistance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verifiable Credentials]]",
-      "resolved": "urn:visionflow:linked:verifiable-credentials",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Non-Fungible Token]]",
-      "resolved": "urn:visionflow:linked:non-fungible-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity]]",
-      "resolved": "urn:visionflow:linked:identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Identity]]",
-      "resolved": "urn:visionflow:linked:decentralized-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4105763]]",
-      "resolved": "urn:visionflow:linked:https-papers-ssrn-com-sol-3-papers-cfm-abstract-id-4105763",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Non-transferable tokens bound to a single account that represent credentials, affiliations or reputation rather than tradable value. Because they cannot be sold or moved, they encode persistent attributes of an identity.

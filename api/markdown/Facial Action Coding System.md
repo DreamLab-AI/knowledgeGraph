@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Facial Action Coding System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,15 +7,42 @@ public: true
   "title": "Facial Action Coding System",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:emotion-recognition", "vc:label": "Emotion Recognition"},
-    {"@id": "urn:visionflow:linked:affective-computing", "vc:label": "Affective Computing"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:face-recognition", "vc:label": "Face Recognition"},
-    {"@id": "urn:visionflow:linked:empathetic-ai", "vc:label": "Empathetic AI"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:action-recognition", "vc:label": "Action Recognition"},
-    {"@id": "urn:visionflow:linked:human-computer-interaction", "vc:label": "Human-Computer Interaction"}
+    {
+      "@id": "urn:visionflow:linked:emotion-recognition",
+      "vc:label": "Emotion Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:affective-computing",
+      "vc:label": "Affective Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:face-recognition",
+      "vc:label": "Face Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:empathetic-ai",
+      "vc:label": "Empathetic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:action-recognition",
+      "vc:label": "Action Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -37,57 +59,159 @@ public: true
   "maturity": "established",
   "qualityScore": 0.92,
   "subClassOf": [
-    {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"},
-    {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    {
+      "@id": "urn:ngm:class:affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:action-unit", "label": "Action Unit"},
-      {"@id": "urn:ngm:class:au-intensity-coding", "label": "AU Intensity Coding"},
-      {"@id": "urn:ngm:class:au-occurrence-detection", "label": "AU Occurrence Detection"},
-      {"@id": "urn:ngm:class:facial-landmark-detection", "label": "Facial Landmark Detection"},
-      {"@id": "urn:ngm:class:facs-annotated-dataset", "label": "FACS Annotated Dataset"}
+      {
+        "@id": "urn:ngm:class:action-unit",
+        "label": "Action Unit"
+      },
+      {
+        "@id": "urn:ngm:class:au-intensity-coding",
+        "label": "AU Intensity Coding"
+      },
+      {
+        "@id": "urn:ngm:class:au-occurrence-detection",
+        "label": "AU Occurrence Detection"
+      },
+      {
+        "@id": "urn:ngm:class:facial-landmark-detection",
+        "label": "Facial Landmark Detection"
+      },
+      {
+        "@id": "urn:ngm:class:facs-annotated-dataset",
+        "label": "FACS Annotated Dataset"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:face-recognition", "label": "Face Recognition"},
-      {"@id": "urn:ngm:class:facial-landmark-detection", "label": "Facial Landmark Detection"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:annotated-dataset", "label": "Annotated Dataset"}
+      {
+        "@id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:facial-landmark-detection",
+        "label": "Facial Landmark Detection"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:emotion-recognition", "label": "Emotion Recognition"},
-      {"@id": "urn:ngm:class:empathetic-ai", "label": "Empathetic AI"},
-      {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"},
-      {"@id": "urn:ngm:class:pain-assessment", "label": "Pain Assessment"},
-      {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"},
-      {"@id": "urn:ngm:class:mental-health-monitoring", "label": "Mental Health Monitoring"}
+      {
+        "@id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:empathetic-ai",
+        "label": "Empathetic AI"
+      },
+      {
+        "@id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "@id": "urn:ngm:class:pain-assessment",
+        "label": "Pain Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "@id": "urn:ngm:class:mental-health-monitoring",
+        "label": "Mental Health Monitoring"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
-      {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"},
-      {"@id": "urn:ngm:class:driver-monitoring-system", "label": "Driver Monitoring System"},
-      {"@id": "urn:ngm:class:intelligent-tutoring-system", "label": "Intelligent Tutoring System"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:driver-monitoring-system",
+        "label": "Driver Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:action-recognition", "label": "Action Recognition"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:action-recognition",
+        "label": "Action Recognition"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:face-recognition", "label": "Face Recognition"},
-      {"@id": "urn:ngm:class:annotated-dataset", "label": "Annotated Dataset"}
+      {
+        "@id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:emotion-recognition", "label": "Emotion Recognition"},
-      {"@id": "urn:ngm:class:empathetic-ai", "label": "Empathetic AI"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"}
+      {
+        "@id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:empathetic-ai",
+        "label": "Empathetic AI"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:categorical-emotion-model", "label": "Categorical Emotion Model"},
-      {"@id": "urn:ngm:class:dimensional-emotion-model", "label": "Dimensional Emotion Model"}
+      {
+        "@id": "urn:ngm:class:categorical-emotion-model",
+        "label": "Categorical Emotion Model"
+      },
+      {
+        "@id": "urn:ngm:class:dimensional-emotion-model",
+        "label": "Dimensional Emotion Model"
+      }
     ]
   },
   "quality": 0.92,

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Sam Hammond]]
-# Sam Hammond AI Policy Economist
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,12 +6,7 @@ elevatedFrom:: [[Sam Hammond]]
   "vc:slug": "sam-hammond-ai-policy-economist",
   "title": "Sam Hammond AI Policy Economist",
   "vc:public": true,
-  "vc:outboundWikilinks": [
-    {
-      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "vc:label": "Social contract and jobs"
-    }
-  ],
+  "vc:outboundWikilinks": [],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
     {
@@ -53,15 +42,30 @@ elevatedFrom:: [[Sam Hammond]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-capability-temporal-horizon-framework", "label": "AI Capability Temporal Horizon Framework"},
-      {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"},
-      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"}
+      {
+        "@id": "urn:ngm:class:ai-capability-temporal-horizon-framework",
+        "label": "AI Capability Temporal Horizon Framework"
+      },
+      {
+        "@id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"}
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
     ]
   },
   "quality": 0.7,
@@ -72,32 +76,6 @@ elevatedFrom:: [[Sam Hammond]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sam-hammond:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d612f8a37ba73170578641297f0f66d77c3d08102142a2068c5b42fd9d8fd548"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Employment Social Contract Under Automation]]",
-      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Sam Hammond is a senior economist and policy analyst specialising in the intersection of transformative technology and governance, known for work at the Foundation for American Innovation. His analysis explores AI-driven economic disruption, techno-feudalism, the co-evolution of state institutions with autonomous systems, and the geopolitical implications of superintelligence, offering a libertarian-leaning but empirically grounded perspective on long-horizon AI futures.
@@ -129,11 +107,11 @@ elevatedFrom:: [[Sam Hammond]]
 	 - **Implications for Democracy:** Discusses the challenges this scenario poses to democratic norms and individual freedoms, with a focus on the trade-offs between security and liberty.
 	 - **Fragmented Society:** Describes a future where societal fragmentation occurs due to the rise of powerful AI platforms that take over traditional state roles. Envisions a world where loyalty shifts from states to platform-centric communities.
 	 - **Private Governance:** Explores the potential trajectory of AI leading to a future where traditional state functions are increasingly replaced or supplemented by private, AI-driven platforms. This rise of corporate entities or conglomerates that provide governance, security, and social services, side-lining traditional state functions and leading to a complex web of interdependencies and power dynamics. This shift in societal organisation resembles medieval structures, and he terms it 'techno-feudalism'. I had been calling this the fracturing of society in my writing, but I might start to adopt this phase.
-	 - **Implications for Society:** Discusses how the decentralization of authority and the rise of powerful private entities could shape societal norms, governance, and daily life, leading to a redefinition of citizenship, rights, and [[Employment Social Contract Under Automation]]. He identifies Uber as a social credit system which we blithely accept. Over time this trends to separation like that seen in the insurance markets, where "all the 1 star Uber drivers drive the 1 star passenger", but writ large across society. This is also "gated communities" and the micro-states defended by AI as posited by authors like Neal Stephenson in Diamond Age.
-	 - **Adversarial Renaissance:** This might well be dystopian, but equally it could be a renaissance moment, with national governments losing their hegemonic control to exascale compute powered conglomerates, city states, micro countries etc. This is for sure more adversarial, but not **necessarily** bad. This is a libertarian viewpoint, but also perhaps a classic liberal one.
+	 - **Implications for Society:** Discusses how the decentralization of authority and the rise of powerful private entities [private] shape societal norms, governance, and daily life, leading to a redefinition of citizenship, rights, and [[Employment Social Contract Under Automation]]. He identifies Uber as a social credit system which we blithely accept. Over time this trends to separation like that seen in the insurance markets, where "all the 1 star Uber drivers drive the 1 star passenger", but writ large across society. This is also "gated communities" and the micro-states defended by AI as posited by authors like Neal Stephenson in Diamond Age.
+	 - **Adversarial Renaissance:** This might well be dystopian, but equally it [private] be a renaissance moment, with national governments losing their hegemonic control to exascale compute powered conglomerates, city states, micro countries etc. This is for sure more adversarial, but not **necessarily** bad. This is a libertarian viewpoint, but also perhaps a classic liberal one.
 	 - **Co-evolution of State and AI:** Envisions a scenario where AI and state structures co-evolve, balancing the benefits of technological advancements with the need for governance and societal stability.
 	 - **Navigating Challenges:** Discusses the potential paths to achieving this balance, including regulatory frameworks, ethical AI development, and international cooperation to manage the impacts of AI on global stability and human welfare.
-	 - **Hypothetical Breakthroughs:** Details scenarios where AI breakthroughs, akin to everyone having x-ray style glasses, could radically challenge existing norms around privacy, security, and human interaction.
+	 - **Hypothetical Breakthroughs:** Details scenarios where AI breakthroughs, akin to everyone having x-ray style glasses, [private] radically challenge existing norms around privacy, security, and human interaction.
 	 - **Radical Transparency Challenges:** Discusses the implications of such breakthroughs on societal norms, legal frameworks, and individual behaviors, stressing the need for society to anticipate and adapt to these transformative changes.
 	 - **Cultural Evolution:** Explores how societies might culturally evolve to accommodate the pervasive and invasive nature of AI, including shifts in social norms, ethics, and values.
 	 - **Mitigation and Adaptation:** Discusses strategies for mitigating the negative impacts of AI and ways in which individuals, organizations, and governments might adapt to a rapidly changing technological landscape.
@@ -146,7 +124,7 @@ elevatedFrom:: [[Sam Hammond]]
 	 - **Complex Model Access:** Discusses how individuals and organizations might pull complex AI models on demand for various tasks, radically transforming work, creativity, and leisure.
 	 - **Enhancing Human Capabilities:** Details how AI has the potential to significantly enhance human intellectual and physical capabilities, leading to new forms of creativity, problem-solving, and productivity.
 	 - **Freedom Expansion:** Discusses the potential for AI to expand human freedoms by alleviating burdensome tasks, enhancing decision-making, and creating new opportunities for personal and societal growth.
-	 - **Surveillance Capabilities:** Explores the risks of AI-enhanced surveillance, detailing how pervasive monitoring could lead to oppressive societal structures and a significant loss of privacy and autonomy.
+	 - **Surveillance Capabilities:** Explores the risks of AI-enhanced surveillance, detailing how pervasive monitoring [private] lead to oppressive societal structures and a significant loss of privacy and autonomy.
 	 - **Privacy Invasions:** Details the ways in which AI's ability to analyze and interpret personal data can lead to invasions of privacy, emphasizing the need for robust legal protections and ethical constraints.
 	 - **AI as a Disruptive Force:** Discusses how AI, like historical technological advancements, has the potential to be a disruptive force, reshaping societal structures, power dynamics, and individual lives.
 	 - **Historical Analogies:** Draws parallels between AI's potential impacts and historical events like the English Civil War, emphasizing the transformative role of technology in societal upheaval.

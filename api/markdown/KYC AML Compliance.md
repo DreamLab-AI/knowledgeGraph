@@ -1,8 +1,3 @@
----
-public: true
----
-
-# KYC/AML Compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "KYC/AML compliance is the operational implementation of Know Your Customer and Anti-Money Laundering obligations within a product or platform, embedding identity verification, screening and monitoring into business processes. It encompasses the controls, workflows and audit evidence needed to demonstrate adherence to regulators. In tokenised systems it is increasingly encoded into smart contracts and asset standards.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:enterprise-token-standards", "label": "Enterprise Token Standards"},
-      {"@id": "urn:ngm:class:carbon-credit-tracking", "label": "Carbon Credit Tracking"}
+      {
+        "@id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      }
     ]
   },
   "quality": 0.72

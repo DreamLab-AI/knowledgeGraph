@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Itu R
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:itu-r", "@type":"Page", "title":"Itu R", "vc:slug":"itu-r", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:itu-r",
+  "@type": "Page",
+  "title": "Itu R",
+  "vc:slug": "itu-r",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

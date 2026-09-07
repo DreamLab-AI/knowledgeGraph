@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Presentation Exchange
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,16 +7,39 @@ public: true
   "title": "Presentation Exchange",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:technical-standard", "vc:label": "Technical Standard"},
-    {"@id": "urn:visionflow:linked:decentralized-identity-foundation", "vc:label": "Decentralized Identity Foundation"},
-    {"@id": "urn:visionflow:linked:verifiable-credentials", "vc:label": "Verifiable Credentials"},
-    {"@id": "urn:visionflow:linked:self-sovereign-identity", "vc:label": "Self Sovereign Identity"},
-    {"@id": "urn:visionflow:linked:digital-identity", "vc:label": "Digital Identity"},
-    {"@id": "urn:visionflow:linked:decentralized-identifier", "vc:label": "Decentralized Identifier"}
+    {
+      "@id": "urn:visionflow:linked:technical-standard",
+      "vc:label": "Technical Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-identity-foundation",
+      "vc:label": "Decentralized Identity Foundation"
+    },
+    {
+      "@id": "urn:visionflow:linked:verifiable-credentials",
+      "vc:label": "Verifiable Credentials"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-sovereign-identity",
+      "vc:label": "Self Sovereign Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-identity",
+      "vc:label": "Digital Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralized-identifier",
+      "vc:label": "Decentralized Identifier"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -40,17 +58,32 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:decentralized-identity-foundation", "label": "Decentralized Identity Foundation"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      }
     ]
   },
   "quality": 0.8,

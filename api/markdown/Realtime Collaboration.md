@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Realtime Collaboration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,18 +46,42 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
-      {"@id": "urn:ngm:class:crdt", "label": "CRDT"},
-      {"@id": "urn:ngm:class:multi-user-systems", "label": "Multi User Systems"}
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "@id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi User Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-meeting", "label": "Virtual Meeting"},
-      {"@id": "urn:ngm:class:immersive-workspaces", "label": "Immersive Workspaces"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:virtual-meeting",
+        "label": "Virtual Meeting"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-workspaces",
+        "label": "Immersive Workspaces"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"},
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"}
+      {
+        "@id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
     ]
   },
   "provenance": {
@@ -72,26 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:realtime-collaboration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:287a600710f4c1299eb1b2f6a8db2317a25852189886ee3fa6a5bb0ca8d91aef"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Realtime Collaboration is the capability for multiple distributed users to co-create, co-edit, and synchronise shared digital artefacts with sub-second latency, such that all participants observe consistent state simultaneously. It requires low-latency networking, conflict-resolution mechanisms such as CRDTs or operational transforms, and state-synchronisation protocols to reconcile concurrent edits without data loss.

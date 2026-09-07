@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Cross-Border Identity
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:cross-border-identity", "@type":"Page", "title":"Cross-Border Identity", "vc:slug":"cross-border-identity", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:cross-border-identity",
+  "@type": "Page",
+  "title": "Cross-Border Identity",
+  "vc:slug": "cross-border-identity",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

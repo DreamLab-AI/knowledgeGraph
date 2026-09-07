@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Usability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -209,46 +204,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:usability:b33edbd4fa31",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7f2ced3ef671a5f0db505a5b9ffde3515f80b66688546e8fcb25ba8e7ac7d028"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[HRI]]",
-      "resolved": "urn:visionflow:linked:hri",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[User Experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.nngroup.com/articles/usability-101-introduction-to-usability/]]",
-      "resolved": "urn:visionflow:linked:https-www-nngroup-com-articles-usability-101-introduction-to-usability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.iso.org/standard/77520.html]]",
-      "resolved": "urn:visionflow:linked:https-www-iso-org-standard-77520-html",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

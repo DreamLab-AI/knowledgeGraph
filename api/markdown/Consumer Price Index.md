@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Consumer Price Index
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -23,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:consumer-price-index",
   "@type": "Class",
   "label": "Consumer Price Index",
-  "definition": "The Consumer Price Index (CPI) is a statistical measure that tracks the average change over time in the prices paid by households for a representative basket of consumer goods and services. It is the principal indicator used to quantify inflation, adjust wages and benefits, and inform monetary policy. The index is computed by weighting price observations according to typical household expenditure patterns and rebasing them against a reference period.",
+  "definition": "The Consumer Price Index (CPI) is a statistical measure that tracks the average change over time in the prices paid by households for a representative basket of consumer goods and services. It is the principal indicator used to quantify inflation, adjust wages and benefits, and inform monetary policy. The [private] is computed by weighting price observations according to typical household expenditure patterns and rebasing them against a reference period.",
   "domain": "finance",
   "maturity": "established",
   "subClassOf": [
@@ -123,7 +117,7 @@ public: true
 ```
 
 - ### Definition
-  - The Consumer Price Index (CPI) is a statistical measure that tracks the average change over time in the prices paid by households for a representative basket of consumer goods and services. It is the principal indicator used to quantify inflation, adjust wages and benefits, and inform monetary policy. The index is computed by weighting price observations according to typical household expenditure patterns and rebasing them against a reference period.
+  - The Consumer Price Index (CPI) is a statistical measure that tracks the average change over time in the prices paid by households for a representative basket of consumer goods and services. It is the principal indicator used to quantify inflation, adjust wages and benefits, and inform monetary policy. The [private] is computed by weighting price observations according to typical household expenditure patterns and rebasing them against a reference period.
   - Related: [[Inflation]] [[Macroeconomics]] [[Statistics]] [[Monetary Policy]]
 - ### Overview
   - CPI is constructed from periodic price surveys across retail outlets and service providers, with each item weighted by its share of household spending. National statistics agencies publish CPI on a regular cadence, and the headline figure is widely reported as the rate of inflation.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[AI privacy at the 2024 Olympics]]
-# AI Surveillance Deployment Case Study
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,18 +51,42 @@ elevatedFrom:: [[AI privacy at the 2024 Olympics]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:object-detection-and-tracking", "label": "Object Detection and Tracking"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection-and-tracking",
+        "label": "Object Detection and Tracking"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ]
   },
   "quality": 0.5,
@@ -79,37 +97,6 @@ elevatedFrom:: [[AI privacy at the 2024 Olympics]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-privacy-at-the-2024-olympics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:85bf315228efb901f35d0148cc0d48bab0eae44d1e7e22c3e966540a248c8149"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GDPR (General Data Protection Regulation)]]",
-      "resolved": "urn:visionflow:linked:gdpr-general-data-protection-regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cryptography",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A case study examining AI-based surveillance at the Paris 2024 Olympic Games: real-time video analytics, geolocation tracking, behavioural pattern analysis, and predictive event detection deployed by Viet, Orange Business, Chaps Vision, and Windex. French legislative modifications expanded surveillance powers, raising significant GDPR compliance questions regarding continuous monitoring, data retention, algorithmic bias, and the post-event normalisation of pervasive AI surveillance infrastructure.
@@ -137,7 +124,7 @@ elevatedFrom:: [[AI privacy at the 2024 Olympics]]
 				- **Continuous Monitoring:** These AI systems enable continuous, round-the-clock monitoring of individuals, capturing detailed data on their movements and behaviours. This level of surveillance is unprecedented and poses significant risks to personal privacy.
 				- **Behavioural Analysis:** AI can track and analyse patterns in individuals' movements and behaviours, potentially revealing sensitive information about their personal lives. This capability raises ethical questions about the extent of surveillance that is acceptable in a democratic society.
 				- The data collected during the Olympics is utilised to train AI systems, leading to potential advancements in technology. However, this practice raises several concerns:
-				- **Control and Usage:** There are significant worries about who controls the collected data and how it is used. The lack of clear guidelines and oversight means that data could be misused or exploited for purposes beyond security.
+				- **Control and Usage:** There are significant worries about who controls the collected data and how it is used. The lack of clear guidelines and oversight means that data [private] be misused or exploited for purposes beyond security.
 				- **Commercial Interests:** The involvement of private companies in data collection raises concerns about the commercialisation of personal information. These companies may use the data to develop and market new technologies, potentially infringing on individuals' privacy.
 				- Transparency is a critical issue in the deployment of AI surveillance technologies:
 				- **Lack of Public Awareness:** There is a general lack of transparency regarding how data is collected, analysed, and used by both the government and private companies. This opacity makes it difficult for the public to understand the full implications of the surveillance systems.
@@ -153,7 +140,7 @@ elevatedFrom:: [[AI privacy at the 2024 Olympics]]
 				- **Classified Provisional Decree:** A confidential decree has been issued, allowing for more extensive electronic surveillance. This includes data gathering, wiretapping, and the monitoring of communications such as text messages and emails.
 				- The surveillance measures implemented for the Olympics are likely to have lasting effects:
 		- **Extended Surveillance Period:** The legal changes and surveillance measures extend beyond the Olympics, potentially normalising pervasive monitoring practices.
-		- **Implications for Privacy:** The normalisation of these surveillance practices could lead to ongoing privacy infringements and the erosion of civil liberties. There is a concern that once such extensive surveillance is established, it will be difficult to revert to pre-Olympics levels of privacy protection.
+		- **Implications for Privacy:** The normalisation of these surveillance practices [private] lead to ongoing privacy infringements and the erosion of civil liberties. There is a concern that once such extensive surveillance is established, it will be difficult to revert to pre-Olympics levels of privacy protection.
 
   - ## Companies Involved
 		- ### Viet

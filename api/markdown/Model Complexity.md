@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Model Complexity
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:model-complexity", "@type": "Page", "title": "Model Complexity", "vc:slug": "model-complexity", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:model-complexity",
+  "@type": "Page",
+  "title": "Model Complexity",
+  "vc:slug": "model-complexity",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

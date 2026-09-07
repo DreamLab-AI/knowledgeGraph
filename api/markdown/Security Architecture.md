@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - SecurityArchitecture
----
-
-# Security Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -213,42 +206,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:security-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:03e3a2429285a46f8856e2de1b37e4cdc0e33e91b45e5468dc45883f657cba6b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Secure Systems]]",
-      "resolved": "urn:visionflow:linked:secure-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Architecture]]",
-      "resolved": "urn:visionflow:owl:class:system-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A comprehensive framework defining security controls, policies, and technologies protecting metaverse infrastructure, user data, and digital assets through defence-in-depth strategies including authentication, encryption, access control, and threat monitoring.

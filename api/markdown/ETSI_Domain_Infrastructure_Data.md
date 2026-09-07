@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Infrastructure_Data
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:storage-layer", "label": "Storage Layer"},
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:storage-layer",
+        "label": "Storage Layer"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology-dlt", "label": "Distributed Ledger Technology (DLT)"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology-dlt",
+        "label": "Distributed Ledger Technology (DLT)"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-domain-infrastructure", "label": "ETSI_Domain_Infrastructure"},
-      {"@id": "urn:ngm:class:etsi-domain-data-management", "label": "ETSI Domain: Data Management"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-infrastructure",
+        "label": "ETSI_Domain_Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-data-management",
+        "label": "ETSI Domain: Data Management"
+      }
     ]
   },
   "provenance": {
@@ -87,42 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-infrastructure-data:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:867bd0e1376c6065925e22faf1d37b9326efe676112e0924a22c90e86657c60c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NGSI-LD]]",
-      "resolved": "urn:visionflow:linked:ngsi-ld",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Storage Layer]]",
-      "resolved": "urn:visionflow:owl:class:storage-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The foundational ETSI technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards. Infrastructure data coordination operates via Trustworthy Data Spaces architecture (ETSI GR PDL 034), International Data Spaces framework, and [[NGSI-LD]] APIs enabling context-aware data exchange with Policy Enforcement Points and Federated Catalogs, supported by F5G standards (ETSI GR F5G 019) providing low-latency backbone connectivity and multi-access edge computing use cases (ETSI GR MEC 043), addressing data sovereignty, security, and real-to-virtual integration challenges across distributed networks.

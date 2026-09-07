@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Audio Parameters
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,67 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:audio-parameters:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:69ddb7ee97e3944de48e6cc910ed428ad78c4654534c66ad4a50464372736ab4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Audio Configuration]]",
-      "resolved": "urn:visionflow:linked:audio-configuration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Audio Engine]]",
-      "resolved": "urn:visionflow:linked:audio-engine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Environmental Modeling]]",
-      "resolved": "urn:visionflow:linked:environmental-modeling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[HRTF Data]]",
-      "resolved": "urn:visionflow:linked:hrtf-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Immersive Audio]]",
-      "resolved": "urn:visionflow:linked:immersive-audio",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Spatial Sound Rendering]]",
-      "resolved": "urn:visionflow:linked:spatial-sound-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:owl:class:telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Audio Parameters are the configurable settings and properties defining spatial audio behavior in virtual environments, including source position, direction, attenuation, room acoustics, HRTF profiles, and rendering parameters that enable realistic 3D sound experiences in VR, AR, and metaverse applications.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Deterministic Finality
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,77 +198,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:deterministic-finality:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4029e41e0316ad36e4be0f2365158a9d716082905f1e1b0a1474ccf5de8c080b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Absolute Transaction Guarantee]]",
-      "resolved": "urn:visionflow:linked:absolute-transaction-guarantee",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Validator]]",
-      "resolved": "urn:visionflow:linked:validator",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Validator Set]]",
-      "resolved": "urn:visionflow:linked:validator-set",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Byzantine Fault Tolerance]]",
-      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Probabilistic Finality]]",
-      "resolved": "urn:visionflow:owl:class:probabilistic-finality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Finality]]",
-      "resolved": "urn:visionflow:owl:class:transaction-finality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted. Requires supermajority validator agreement (typically 2/3+) and delivers instant certainty without probabilistic confirmation waiting.

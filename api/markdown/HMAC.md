@@ -1,47 +1,122 @@
----
-public: true
----
-
-# HMAC
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:hmac", "@type":"Page", "title":"HMAC", "vc:slug":"hmac", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:hmac",
+  "@type": "Page",
+  "title": "HMAC",
+  "vc:slug": "hmac",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:hmac",
-  "@type":"Class",
-  "label":"HMAC",
-  "definition":"HMAC (hash-based message authentication code) is a construction that combines a cryptographic hash function with a secret key to produce a fixed-length tag verifying both the integrity and the authenticity of a message. It applies the underlying hash twice with key-derived inner and outer padding, providing security that does not depend on the hash being collision-resistant in the same way a plain hash would. HMAC is widely used to authenticate API requests, tokens, and protocol messages.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-    "uses":[{"@id":"urn:ngm:class:sha-256","label":"SHA-256"}],
-    "requires":[{"@id":"urn:ngm:class:sha-256","label":"SHA-256"}],
-    "dependsOn":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "enables":[{"@id":"urn:ngm:class:security","label":"Security"}],
-    "supports":[
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"},
-      {"@id":"urn:ngm:class:tls","label":"TLS"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hmac",
+  "@type": "Class",
+  "label": "HMAC",
+  "definition": "HMAC (hash-based message authentication code) is a construction that combines a cryptographic hash function with a secret key to produce a fixed-length tag verifying both the integrity and the authenticity of a message. It applies the underlying hash twice with key-derived inner and outer padding, providing security that does not depend on the hash being collision-resistant in the same way a plain hash would. HMAC is widely used to authenticate API requests, tokens, and protocol messages.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
-    "hasPart":[{"@id":"urn:ngm:class:sha-256","label":"SHA-256"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:token","label":"Token"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:authorization","label":"Authorization"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"},
-      {"@id":"urn:ngm:class:sha-256","label":"SHA-256"},
-      {"@id":"urn:ngm:class:tls","label":"TLS"},
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

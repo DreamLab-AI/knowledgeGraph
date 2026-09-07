@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Canaan
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:canaan:4cb37c619b60",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d5408aa1843d5a796fc3e5188ea126c2aa1dcc66c63fbe146dbc995ce2c49ef7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Mining]]",
-      "resolved": "urn:visionflow:linked:bitcoin-mining",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Validation]]",
-      "resolved": "urn:visionflow:linked:transaction-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hardware]]",
-      "resolved": "urn:visionflow:linked:hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ASIC]]",
-      "resolved": "urn:visionflow:linked:asic",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.canaan.io]]",
-      "resolved": "urn:visionflow:linked:https-www-canaan-io",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.canaan.io/products]]",
-      "resolved": "urn:visionflow:linked:https-www-canaan-io-products",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Canaan is a Chinese company that designs and produces Bitcoin mining hardware under the Avalon brand. It is a publicly listed manufacturer of ASIC machines.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Payment Gateway
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -165,7 +160,7 @@ public: true
 - ### Definition
   - A Payment Gateway is the secure intermediary infrastructure that authorises and routes transactions between merchants and financial networks, forming the core of [[Digital Payment System]] ecosystems and increasingly enabling [[Micropayment]] and cryptocurrency settlement alongside traditional card rails.
 - ### Relationships
-  - Payment gateways depend on [[API Gateway]] infrastructure to expose developer-facing integration surfaces and connect to acquiring banks and card networks. [[Encryption]] is integral to PCI DSS compliance, securing card data in transit and at rest. [[Digital Wallet]] providers represent both partners and competitors to traditional payment gateways, particularly in mobile commerce. [[Fraud Detection]] capabilities are now a core differentiator among gateway providers. Emerging protocols such as [[x402 and l402 payment protocols]] represent the HTTP-native payment layer that could route AI agent micropayments through gateway infrastructure.
+  - Payment gateways depend on [[API Gateway]] infrastructure to expose developer-facing integration surfaces and connect to acquiring banks and card networks. [[Encryption]] is integral to PCI DSS compliance, securing card data in transit and at rest. [[Digital Wallet]] providers represent both partners and competitors to traditional payment gateways, particularly in mobile commerce. [[Fraud Detection]] capabilities are now a core differentiator among gateway providers. Emerging protocols such as [[x402 and l402 payment protocols]] represent the HTTP-native payment layer that [private] route AI agent micropayments through gateway infrastructure.
 - ### Content
   - Payment gateways emerged in the late 1990s as internet commerce required a secure mechanism to accept card payments without the merchant directly handling card numbers. Early gateways like Authorize.Net and Verisign Payment Services provided hosted payment forms and settlement services. The introduction of the Payment Card Industry Data Security Standard (PCI DSS) in 2004 formalised the security obligations of any entity handling cardholder data, cementing the gateway as a compliance-isolation layer between merchants and raw payment credentials.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Agent Reinforcement Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

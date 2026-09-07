@@ -1,55 +1,110 @@
----
-public: true
----
-
-# Hardware Root of Trust
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:hardware-root-of-trust", "@type":"Page", "title":"Hardware Root of Trust", "vc:slug":"hardware-root-of-trust", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:hardware-root-of-trust",
+  "@type": "Page",
+  "title": "Hardware Root of Trust",
+  "vc:slug": "hardware-root-of-trust",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:hardware-root-of-trust",
-  "@type":"Class",
-  "label":"Hardware Root of Trust",
-  "definition":"A Hardware Root of Trust (HRoT) is an immutable, hardware-anchored set of functions and keys that a system inherently trusts and from which all higher-level security properties are derived. Implemented in silicon or a dedicated security chip, it provides the foundation for secure boot, measured boot, attestation and key protection by establishing a starting point that cannot be modified by software. Because every subsequent trust decision chains back to it, the integrity of the HRoT determines the trustworthiness of the entire platform.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:security","label":"Security"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:trusted-execution-environment","label":"Trusted Execution Environment"},
-      {"@id":"urn:ngm:class:trusted-platform-module","label":"Trusted Platform Module"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hardware-root-of-trust",
+  "@type": "Class",
+  "label": "Hardware Root of Trust",
+  "definition": "A Hardware Root of Trust (HRoT) is an immutable, hardware-anchored set of functions and keys that a system inherently trusts and from which all higher-level security properties are derived. Implemented in silicon or a dedicated security chip, it provides the foundation for secure boot, measured boot, attestation and key protection by establishing a starting point that cannot be modified by software. Because every subsequent trust decision chains back to it, the integrity of the HRoT determines the trustworthiness of the entire platform.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"},
-      {"@id":"urn:ngm:class:firmware","label":"Firmware"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:key-management","label":"Key Management"},
-      {"@id":"urn:ngm:class:hardware-security-module","label":"Hardware Security Module"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"},
-      {"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:encryption","label":"Encryption"},
-      {"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:zero-trust-architecture","label":"Zero Trust Architecture"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:secure-enclave","label":"Secure Enclave"},
-      {"@id":"urn:ngm:class:secure-element","label":"Secure Element"},
-      {"@id":"urn:ngm:class:side-channel-attack","label":"Side-Channel Attack"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:secure-element",
+        "label": "Secure Element"
+      },
+      {
+        "@id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

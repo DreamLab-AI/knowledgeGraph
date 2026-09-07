@@ -1,8 +1,3 @@
----
-public: true
----
-
-# High Risk AI System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,52 +85,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:high-risk-ai-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:96bb0de4e8cccc607abb77e96fe5f36cf1ff91b9c8a5e150aef66fb8a42271bb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Conformity Assessment (AI-0103)]]",
-      "resolved": "urn:visionflow:linked:conformity-assessment-ai-0103",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human Oversight (AI-0041)]]",
-      "resolved": "urn:visionflow:linked:human-oversight-ai-0041",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[user experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Introduction to me]]",
-      "resolved": "urn:visionflow:owl:class:introduction-to-me",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - An AI system classified as presenting significant risk to health, safety, fundamental rights, or other critical interests based on its intended purpose, deployment context, and potential for substantial adverse impact, subject to stringent regulatory requirements under the EU AI Act and similar frameworks.
 
@@ -159,7 +108,7 @@ public: true
 
   - Key developments and current state
   - The EU AI Act, formally adopted in 2024, establishes a four-tier risk classification: unacceptable, high, limited, and minimal risk
-  - High-risk AI systems are those that, by their intended purpose or deployment context, could cause significant harm to individuals or society if they fail or are misused
+  - High-risk AI systems are those that, by their intended purpose or deployment context, [private] cause significant harm to individuals or society if they fail or are misused
   - The Act’s definitions and requirements are now widely referenced in academic and policy discussions, with ongoing research into the practical implications of risk classification
 
   - Academic foundations

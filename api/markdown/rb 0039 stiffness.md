@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0039 stiffness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,48 +56,46 @@ public: true
   },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
-      {"@id": "urn:ngm:class:compliance-control", "label": "Compliance Control"},
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:inertia", "label": "Inertia"},
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"}
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:inertia",
+        "label": "Inertia"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"}
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0027-robot-link", "label": "rb 0027 robot link"}
+      {
+        "@id": "urn:ngm:class:rb-0027-robot-link",
+        "label": "rb 0027 robot link"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0039-stiffness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b6c4a71fb251881ff911b1fe158c992cbaf3e8510cbcbd94214ad9eeafc44c30"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ### Primary Definition

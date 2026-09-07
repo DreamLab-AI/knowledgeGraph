@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Two-Tier Distribution Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The two-tier distribution model is the architecture commonly proposed for central bank digital currencies in which the central bank issues the digital currency but commercial banks and licensed intermediaries handle distribution, wallets, and customer service. This preserves the central bank's monetary authority while leveraging existing financial institutions for onboarding, compliance, and the user-facing layer.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cbdc-frameworks", "label": "CBDC Frameworks"}, {"@id": "urn:ngm:class:cbdcs", "label": "CBDCs"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ]
   },
   "quality": 0.72
 }

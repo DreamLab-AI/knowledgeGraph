@@ -1,55 +1,106 @@
----
-public: true
----
-
-# Financial Modelling
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:financial-modelling", "@type":"Page", "title":"Financial Modelling", "vc:slug":"financial-modelling", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:financial-modelling",
+  "@type": "Page",
+  "title": "Financial Modelling",
+  "vc:slug": "financial-modelling",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:financial-modelling",
-  "@type":"Class",
-  "label":"Financial Modelling",
-  "definition":"Financial modelling is the practice of constructing abstract, quantitative representations of an organisation's financial performance, typically as interlinked spreadsheets or programmatic models that project future cash flows, valuations and outcomes under varying assumptions. Models combine historical data, accounting logic and forward-looking drivers to support decision-making, investment analysis and risk assessment. Common forms include three-statement models, discounted cash-flow valuations and scenario-based projections.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:quantitative-finance","label":"Quantitative Finance"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:statistics","label":"Statistics"},
-      {"@id":"urn:ngm:class:monte-carlo-simulation","label":"Monte Carlo Simulation"},
-      {"@id":"urn:ngm:class:sensitivity-analysis","label":"Sensitivity Analysis"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:financial-modelling",
+  "@type": "Class",
+  "label": "Financial Modelling",
+  "definition": "Financial modelling is the practice of constructing abstract, quantitative representations of an organisation's financial performance, typically as interlinked spreadsheets or programmatic models that project future cash flows, valuations and outcomes under varying assumptions. Models combine historical data, accounting logic and forward-looking drivers to support decision-making, investment analysis and risk assessment. Common forms include three-statement models, discounted cash-flow valuations and scenario-based projections.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:quantitative-finance",
+      "label": "Quantitative Finance"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:decision-making","label":"Decision Making"},
-      {"@id":"urn:ngm:class:risk-management","label":"Risk Management"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:data","label":"Data"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:scenario-analysis","label":"Scenario Analysis"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scenario-analysis",
+        "label": "Scenario Analysis"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:quantitative-finance","label":"Quantitative Finance"},
-      {"@id":"urn:ngm:class:finance","label":"Finance"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:quantitative-finance",
+        "label": "Quantitative Finance"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:monte-carlo-simulation","label":"Monte Carlo Simulation"},
-      {"@id":"urn:ngm:class:risk-management","label":"Risk Management"},
-      {"@id":"urn:ngm:class:statistics","label":"Statistics"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:statistics","label":"Statistics"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,39 +1,131 @@
----
-public: true
----
-
-# Security Information and Event Management
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:security-information-and-event-management", "@type":"Page", "title":"Security Information and Event Management", "vc:slug":"security-information-and-event-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:security-information-and-event-management",
+  "@type": "Page",
+  "title": "Security Information and Event Management",
+  "vc:slug": "security-information-and-event-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:security-information-and-event-management",
-  "@type":"Class",
-  "label":"Security Information and Event Management",
-  "definition":"Security Information and Event Management (SIEM) is a security discipline and platform category that aggregates, normalises and correlates log and event data from across an estate to detect, investigate and respond to threats. It combines real-time monitoring and alerting with longer-term storage for forensics and compliance reporting. SIEM is the analytical core of most security operations, turning raw telemetry into actionable detections.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:network-security","label":"Network Security"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:threat-detection","label":"Threat Detection"},{"@id":"urn:ngm:class:audit-logging","label":"Audit Logging"}],
-    "partOf":[{"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}],
-    "requires":[{"@id":"urn:ngm:class:observability","label":"Observability"}],
-    "enables":[{"@id":"urn:ngm:class:incident-response","label":"Incident Response"},{"@id":"urn:ngm:class:threat-detection","label":"Threat Detection"}],
-    "dependsOn":[{"@id":"urn:ngm:class:audit-logging","label":"Audit Logging"}],
-    "uses":[{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"},{"@id":"urn:ngm:class:threat-intelligence","label":"Threat Intelligence"}],
-    "supports":[{"@id":"urn:ngm:class:compliance-monitoring","label":"Compliance Monitoring"},{"@id":"urn:ngm:class:incident-response","label":"Incident Response"}],
-    "implements":[{"@id":"urn:ngm:class:threat-detection","label":"Threat Detection"}],
-    "relatedTo":[{"@id":"urn:ngm:class:vulnerability-management","label":"Vulnerability Management"},{"@id":"urn:ngm:class:data-loss-prevention","label":"Data Loss Prevention"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:observability","label":"Observability"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:security-information-and-event-management",
+  "@type": "Class",
+  "label": "Security Information and Event Management",
+  "definition": "Security Information and Event Management (SIEM) is a security discipline and platform category that aggregates, normalises and correlates log and event data from across an estate to detect, investigate and respond to threats. It combines real-time monitoring and alerting with longer-term storage for forensics and compliance reporting. SIEM is the analytical core of most security operations, turning raw telemetry into actionable detections.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-loss-prevention",
+        "label": "Data Loss Prevention"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:siem","label":"SIEM"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:siem",
+      "label": "SIEM"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

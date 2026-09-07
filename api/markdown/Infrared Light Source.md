@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Infrared Light Source
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:infrared-light-source:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:130773aa1a85b926eaeaa93cf51cc4b93e0f149d01f5489ae4f91621a9613166"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Foveated Rendering]]",
-      "resolved": "urn:visionflow:linked:foveated-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tracking Hardware]]",
-      "resolved": "urn:visionflow:owl:class:tracking-hardware",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Emission devices providing infrared wavelength light for VR/AR tracking applications, encompassing LEDs, illuminators, and integrated headset components that enable eye tracking, position detection, and hand gesture recognition in extended reality systems.

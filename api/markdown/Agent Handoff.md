@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Handoff
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Agent Handoff",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "MultiAgentOrchestration" },
-    { "@id": "urn:visionflow:linked:task-delegation", "vc:label": "TaskDelegation" },
-    { "@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "MultiAgentSystem" },
-    { "@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "AgenticWorkflow" }
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "MultiAgentOrchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-delegation",
+      "vc:label": "TaskDelegation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "MultiAgentSystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "AgenticWorkflow"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,19 +44,34 @@ public: true
   "definition": "The orchestration primitive by which one agent transfers control of a conversation or task to another agent, passing along the accumulated context, goal, and constraints so the receiving agent can continue the work with its own specialised tools and instructions. A handoff reassigns responsibility rather than merely requesting a result: control does not automatically return to the sender, and the receiver becomes the active locus of decision-making, which is what distinguishes handoff-based routing from a simple tool call or a blocking sub-task.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": { "@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:multi-agent-orchestration",
+    "label": "Multi-Agent Orchestration"
+  },
   "relations": {
     "requires": [
-      { "@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System" }
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:task-delegation", "label": "Task Delegation" }
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow" }
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:llm-orchestration", "label": "LLM Orchestration" }
+      {
+        "@id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      }
     ]
   },
   "quality": 0.75,

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hyperledger Aries
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Hyperledger Aries is an open-source toolkit providing the infrastructure for peer-to-peer interactions, secure messaging, and the exchange of verifiable credentials between decentralised identity agents. It implements DIDComm messaging and credential protocols, sitting above the ledger layer so that agents can issue, hold, and verify credentials independently of any specific blockchain. Aries is commonly paired with Hyperledger Indy as its verifiable-data registry.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hyperledger-indy", "label": "Hyperledger Indy"}],
-    "dependsOn": [{"@id": "urn:ngm:class:hyperledger-indy", "label": "Hyperledger Indy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      }
+    ]
   },
   "quality": 0.72
 }

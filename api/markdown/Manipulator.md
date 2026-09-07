@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - RB-0003-manipulator
----
-
-# Manipulator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -214,41 +207,6 @@ aliases:
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:manipulator:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:671b17c97b1858242b383b45416e1efb47beb39dfe2cce1e4487f2a0ac2c369f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO 8373:2021]]",
-      "resolved": "urn:visionflow:linked:iso-8373-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robot (RB-0001)]]",
-      "resolved": "urn:visionflow:linked:robot-rb-0001",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

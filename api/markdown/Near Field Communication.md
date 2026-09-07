@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Near-Field Communication
----
-
-# Near Field Communication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,20 +20,46 @@ aliases:
   "definition": "Near Field Communication (NFC) is a short-range wireless communication technology operating at 13.56 MHz that enables contactless data exchange between devices within approximately 4 centimetres. Based on inductive coupling and derived from RFID standards, NFC supports three operating modes: card emulation (device acts as a smart card), reader/writer (device reads or writes NFC tags), and peer-to-peer (two active devices exchange data). It underpins contactless payments, identity verification, and rapid device pairing.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:digital-payments", "label": "Digital Payments"},
-      {"@id": "urn:ngm:class:access-control-system", "label": "Access Control System"},
-      {"@id": "urn:ngm:class:digital-payment-system", "label": "Digital Payment System"}
+      {
+        "@id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:communication-interface", "label": "Communication Interface"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:communication-interface",
+        "label": "Communication Interface"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +80,3 @@ aliases:
   - NFC is commercially significant in contactless payments, public transport ticketing (Oyster, Suica), electronic identity documents, and access control systems. The global contactless payment market exceeded 60 billion transactions annually by 2023. Beyond payments, NFC tags embedded in physical products enable anti-counterfeiting provenance chains, smart packaging that links to product information pages, and industrial asset tracking. Healthcare applications include patient identification wristbands and medication verification workflows.
 
   - In 2024-2025, NFC is being extended into digital credential contexts: ISO 18013-5 mobile driving licences use NFC for in-person identity verification. The NFC Forum released its 2.0 specification adding improved multi-device scenarios and enhanced security handshake requirements. Integration with ultra-wideband (UWB) for precise spatial positioning alongside NFC for authentication is emerging in automotive digital key use cases (CCC Digital Key 3.0), and Apple's opening of the iOS NFC secure element to third-party apps in the EU is reshaping the competitive landscape for mobile payments.
-

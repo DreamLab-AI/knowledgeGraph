@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Business Process Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:business-process-automation:04ee58e3b67e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bb6e0b1b4bbf2c793f56cc7fa05fd001d4d793ff0f319c3bd70b92b0127365ae"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Workflow Automation]]",
-      "resolved": "urn:visionflow:linked:workflow-automation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Automation]]",
-      "resolved": "urn:visionflow:linked:automation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotic Process Automation]]",
-      "resolved": "urn:visionflow:linked:robotic-process-automation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Process Automation]]",
-      "resolved": "urn:visionflow:linked:process-automation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The use of technology to automate complex, multi-step business processes beyond individual tasks, integrating systems and people to streamline operations. It targets end-to-end workflows rather than isolated actions.

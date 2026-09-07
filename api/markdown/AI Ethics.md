@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Ethics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -199,52 +194,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-ethics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9227e0fd20cb7bf7b8d12f3d173cde36de7060878ae4bb775727afd6926bd1e8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Algorithmic Fairness]]",
-      "resolved": "urn:visionflow:linked:algorithmic-fairness",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainable AI]]",
-      "resolved": "urn:visionflow:owl:class:explainable-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Responsible AI]]",
-      "resolved": "urn:visionflow:owl:class:responsible-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI Ethics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems. This interdisciplinary field examines issues of fairness, accountability, transparency, privacy, bias mitigation, algorithmic justice, and the societal impact of AI technologies. AI ethics frameworks consider questions of autonomy, consent, human rights, environmental sustainability, and long-term existential risks associated with advanced AI. Practical implementations include ethical AI guidelines, impact assessments, and regulatory compliance mechanisms.

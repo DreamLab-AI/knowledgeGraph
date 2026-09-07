@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI_Domain_Human_Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,19 +99,40 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:etsi-domain-human-interface-ux", "label": "ETSI_Domain_Human_Interface___UX"},
-      {"@id": "urn:ngm:class:accessibility-standards", "label": "Accessibility Standards"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-human-interface-ux",
+        "label": "ETSI_Domain_Human_Interface___UX"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-interface", "label": "Immersive Interface"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:immersive-interface",
+        "label": "Immersive Interface"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsidomain-classification", "label": "ETSIDomainClassification"}
+      {
+        "@id": "urn:ngm:class:etsidomain-classification",
+        "label": "ETSIDomainClassification"
+      }
     ]
   },
   "provenance": {
@@ -126,92 +142,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-human-interface:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ab8512059894af301ec1cd9b11503cfb191ed651626f13af9ff09150d03f8f3b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ETSI]]",
-      "resolved": "urn:visionflow:linked:etsi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR ARF 007]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-arf-007",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR ARF 010]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-arf-010",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR MEC 032]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InclusiveDesign]]",
-      "resolved": "urn:visionflow:linked:inclusive-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InteractionDesign]]",
-      "resolved": "urn:visionflow:linked:interaction-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 9241]]",
-      "resolved": "urn:visionflow:linked:iso-9241",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC JTC 1/SC 24]]",
-      "resolved": "urn:visionflow:linked:iso-iec-jtc-1-sc-24",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UserExperience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AccessibilityStandards]]",
-      "resolved": "urn:visionflow:owl:class:accessibility-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualEnvironment|virtual environments]]",
-      "resolved": "urn:visionflow:owl:class:virtual-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An [[ETSI]] governance domain addressing user interaction design, accessibility, and human-computer interfaces within [[VirtualEnvironment|virtual environments]]. This domain encompasses [[UserExperience]], [[AccessibilityStandards]], [[InteractionDesign]], and [[InclusiveDesign]] to ensure metaverse platforms prioritise usable, accessible experiences for diverse user populations.

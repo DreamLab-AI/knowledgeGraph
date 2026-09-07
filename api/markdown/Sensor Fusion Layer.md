@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sensor Fusion Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sensor-fusion-layer:9936f28b0e0d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:002538022d22b25aa97a09bcc639a49c4cd50ea305763e543c772c1f3a15b741"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware Layer]]",
-      "resolved": "urn:visionflow:linked:hardware-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Perception Layer]]",
-      "resolved": "urn:visionflow:linked:perception-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Kalman Filter]]",
-      "resolved": "urn:visionflow:linked:kalman-filter",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bayesian Inference]]",
-      "resolved": "urn:visionflow:linked:bayesian-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Sensor Fusion Layer is the stratum that combines data from multiple sensors into a single, more reliable estimate of state. It sits above the Hardware sensing devices and below the Perception Layer that interprets the fused result. It contains alignment, filtering, and fusion algorithms together with uncertainty models.

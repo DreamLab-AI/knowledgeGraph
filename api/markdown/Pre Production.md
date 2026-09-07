@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Pre-Production
----
-
-# Pre Production
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -95,32 +88,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pre-production:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:39141aa6c5fcccc9d5a5ceb7397b3068416ba1068792d39a5a3d3f8ff6e341e1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Pre-production is the planning and preparation phase of a creative or software project that occurs before active content creation or development commences. It encompasses conceptual design, narrative structuring, technical specification, asset planning, and prototyping activities that reduce risk and align stakeholder expectations in film, game, and metaverse content pipelines.

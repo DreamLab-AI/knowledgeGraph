@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - OnionRouting
-  - onion-routing
----
-
-# Onion Routing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

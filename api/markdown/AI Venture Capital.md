@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Venture Capital
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-venture-capital",
   "title": "AI Venture Capital",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Chinese AI Industry", "DeepSeek"],
+  "vc:outboundWikilinks": [
+    "Chinese AI Industry",
+    "DeepSeek"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-economics", "label": "AI Economics"}, {"@id": "urn:ngm:class:frontier-ai-valuation", "label": "Frontier AI Valuation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-economics",
+        "label": "AI Economics"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai-valuation",
+        "label": "Frontier AI Valuation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

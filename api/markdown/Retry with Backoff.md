@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Retry with Backoff
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Retry with Backoff",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:fallback", "vc:label": "Fallback" },
-    { "@id": "urn:visionflow:linked:rollback", "vc:label": "Rollback" },
-    { "@id": "urn:visionflow:linked:guardrail", "vc:label": "Guardrail" },
-    { "@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "AgenticWorkflow" }
+    {
+      "@id": "urn:visionflow:linked:fallback",
+      "vc:label": "Fallback"
+    },
+    {
+      "@id": "urn:visionflow:linked:rollback",
+      "vc:label": "Rollback"
+    },
+    {
+      "@id": "urn:visionflow:linked:guardrail",
+      "vc:label": "Guardrail"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "AgenticWorkflow"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-09T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-09T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,14 +44,26 @@ public: true
   "definition": "A resilience strategy for handling transient failures in which a failed operation is attempted again after a deliberately growing delay, rather than immediately or at a fixed interval. Each successive retry waits longer — commonly the delay doubles — so that a system experiencing a temporary fault or overload is given increasing time to recover and is not hammered by a tight loop of identical requests. Randomised jitter is usually added to the delay so that many clients failing at once do not synchronise their retries into repeated coordinated bursts, and a cap on attempts or total elapsed time prevents the strategy from waiting forever on a failure that is not in fact transient.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": { "@id": "urn:ngm:class:fallback", "label": "Fallback" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:fallback",
+    "label": "Fallback"
+  },
   "relations": {
     "enables": [
-      { "@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow" }
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:rollback", "label": "Rollback" },
-      { "@id": "urn:ngm:class:guardrail", "label": "Guardrail" }
+      {
+        "@id": "urn:ngm:class:rollback",
+        "label": "Rollback"
+      },
+      {
+        "@id": "urn:ngm:class:guardrail",
+        "label": "Guardrail"
+      }
     ]
   },
   "quality": 0.75,

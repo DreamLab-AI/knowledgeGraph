@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Graph Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -129,6 +125,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Graph optimisation is the set of compiler transformations applied to a model's computation graph to reduce latency, memory footprint and energy use without altering the model's semantics. Typical passes include operator fusion, constant folding, dead-node elimination, layout reordering and kernel selection. It is performed by inference runtimes and ahead-of-time compilers as a precursor to deployment on a target accelerator.
   - Related concepts: [[Computation Graph]] [[Compiler]] [[ONNX Runtime]] [[TensorRT]] [[Model Optimisation and Performance]]

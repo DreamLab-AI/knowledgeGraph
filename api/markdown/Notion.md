@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Notion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

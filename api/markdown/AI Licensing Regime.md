@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Licensing Regime
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-licensing-regime",
   "title": "AI Licensing Regime",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Mythos", "US Government AI Policy"],
+  "vc:outboundWikilinks": [
+    "Mythos",
+    "US Government AI Policy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-policy",
+      "label": "AI Policy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}, {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}, {"@id": "urn:ngm:class:open-source-licence", "label": "Open Source Licence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

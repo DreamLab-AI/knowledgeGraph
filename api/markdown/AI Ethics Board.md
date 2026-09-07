@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Ethics Board
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,34 +75,88 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:governance-structure", "label": "Governance Structure"},
-      {"@id": "urn:ngm:class:stakeholder", "label": "Stakeholder"}
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:governance-structure",
+        "label": "Governance Structure"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder",
+        "label": "Stakeholder"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:ai-ethics-checklist", "label": "AI Ethics Checklist"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics-checklist",
+        "label": "AI Ethics Checklist"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:ai-governance-principle", "label": "Ai Governance Principle"},
-      {"@id": "urn:ngm:class:responsible-ai-principles", "label": "Responsible AI Principles"},
-      {"@id": "urn:ngm:class:governance-board", "label": "Governance Board"},
-      {"@id": "urn:ngm:class:stakeholder-engagement-in-ai", "label": "Stakeholder Engagement in AI"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-principle",
+        "label": "Ai Governance Principle"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      },
+      {
+        "@id": "urn:ngm:class:governance-board",
+        "label": "Governance Board"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement-in-ai",
+        "label": "Stakeholder Engagement in AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:fairness-constraints", "label": "Fairness Constraints"}
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-constraints",
+        "label": "Fairness Constraints"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ethical-ai", "label": "Ethical AI"},
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}
+      {
+        "@id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
     ]
   },
   "provenance": {
@@ -117,57 +166,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-ethics-board:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:662132f30a866ee427fd48bac446488f1ad5e047c17f79efb64675beccfd5dcd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[EU HLEG AI]]",
-      "resolved": "urn:visionflow:linked:eu-hleg-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE P7000]]",
-      "resolved": "urn:visionflow:linked:ieee-p7000",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI Ethics Board is a multidisciplinary oversight committee comprising technical experts, ethicists, legal professionals, domain specialists, and stakeholder representatives, responsible for conducting ethical reviews of AI systems, providing guidance on ethical dilemmas, and exercising veto authority over AI deployments that violate ethical principles or organizational values. This governance body evaluates proposed AI systems against ethical frameworks, assesses potential harms and benefits, reviews fairness and bias implications, examines privacy and data protection compliance, and ensures alignment with responsible AI principles. The board operates through structured ethical review processes including proposal submission and screening, expert deliberation and assessment, stakeholder consultation and impact evaluation, ethical decision-making with documented rationale, and ongoing monitoring of deployed systems. Authority and scope typically include power to approve, conditionally approve with modifications, defer for additional information, or reject AI projects, mandate ethical impact assessments and fairness audits, require mitigation measures for identified risks, and escalate significant ethical concerns to executive leadership. Effective boards maintain independence from AI development teams to avoid conflicts of interest, possess diverse expertise spanning technical, ethical, legal, and social dimensions, engage affected communities in deliberations, and report to senior governance structures. Implementation follows models from research ethics committees and institutional review boards, adapted for AI-specific challenges as recommended by the EU High-Level Expert Group on AI and IEEE P7000 series standards.

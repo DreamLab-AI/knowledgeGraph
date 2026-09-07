@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Camera Tracking System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,20 +21,41 @@ public: true
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:camera-tracking", "label": "Camera Tracking"}
+    {
+      "@id": "urn:ngm:class:camera-tracking",
+      "label": "Camera Tracking"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:camera-intrinsics", "label": "Camera Intrinsics"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-anchoring", "label": "Spatial Anchoring"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:camera-parameters", "label": "Camera Parameters"}
+      {
+        "@id": "urn:ngm:class:camera-parameters",
+        "label": "Camera Parameters"
+      }
     ]
   },
   "quality": 0.8

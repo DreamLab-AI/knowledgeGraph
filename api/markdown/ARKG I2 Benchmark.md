@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ARKG I2 Benchmark
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "arkg-i2-benchmark",
   "title": "ARKG I2 Benchmark",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Deep Think", "Opus 4.6"],
+  "vc:outboundWikilinks": [
+    "Deep Think",
+    "Opus 4.6"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-performance",
+      "label": "Model Performance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}, {"@id": "urn:ngm:class:deep-think", "label": "Deep Think"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:deep-think",
+        "label": "Deep Think"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

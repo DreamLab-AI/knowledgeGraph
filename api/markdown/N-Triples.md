@@ -1,8 +1,3 @@
----
-public: true
----
-
-# N-Triples
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "N-Triples is a line-based, plain-text serialization format for RDF in which each line encodes a single subject-predicate-object triple terminated by a period. It is deliberately minimal and unambiguous, using full IRIs rather than prefixes, which makes it easy to parse, stream, and compare line by line. The format is a W3C standard and serves as a canonical interchange and testing representation for RDF graphs.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:turtle", "label": "Turtle"},
-      {"@id": "urn:ngm:class:solid", "label": "Solid"}
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid"
+      }
     ]
   },
   "quality": 0.72

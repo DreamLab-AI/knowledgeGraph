@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Footprint Indicator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -127,77 +122,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:carbon-footprint-indicator:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:66d4319c92e712ea34aad39b648edc4c287c52d75d9a132cf8d01c60aeeed83c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Benchmarking]]",
-      "resolved": "urn:visionflow:linked:benchmarking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Emissions Data]]",
-      "resolved": "urn:visionflow:linked:emissions-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Environmental KPI]]",
-      "resolved": "urn:visionflow:linked:environmental-kpi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Measurement Methodology]]",
-      "resolved": "urn:visionflow:linked:measurement-methodology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Performance Monitoring]]",
-      "resolved": "urn:visionflow:linked:performance-monitoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reporting Framework]]",
-      "resolved": "urn:visionflow:linked:reporting-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Target Tracking]]",
-      "resolved": "urn:visionflow:linked:target-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A quantitative environmental performance metric that measures and tracks an organization's greenhouse gas emissions in CO2 equivalent units, serving as a key sustainability KPI for monitoring progress toward emission reduction targets and enabling comparative analysis across operations.

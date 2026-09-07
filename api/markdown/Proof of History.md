@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Proof-of-History
----
-
-# Proof of History
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,20 +58,44 @@ aliases:
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:proof-based-consensus", "label": "Proof-Based Consensus"}
+      {
+        "@id": "urn:ngm:class:proof-based-consensus",
+        "label": "Proof-Based Consensus"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
     ]
   },
   "quality": 0.8,
@@ -89,39 +106,6 @@ aliases:
   }
 }
 ```
-
-Proof of History was introduced by Anatoly Yakovenko as the ordering layer underpinning Solana. By encoding time directly into the ledger as a verifiable sequence of hashes, PoH decouples transaction ordering from leader voting, allowing each validator to independently verify the timeline without waiting for network-wide agreement before processing. It is used in combination with Tower BFT (a PoS variant) rather than as a standalone consensus mechanism.
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:proof-of-history:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e12d1287c45fb678de872ac1c08c52206c8acdebb6a171894877156c9c4f6547"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof-Based Consensus]]",
-      "resolved": "urn:visionflow:owl:class:proof-based-consensus",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A cryptographic mechanism that timestamps transactions to establish a historical record, enabling validators to process transactions in parallel for high throughput. Creates verifiable passage of time between events without requiring nodes to trust each other.

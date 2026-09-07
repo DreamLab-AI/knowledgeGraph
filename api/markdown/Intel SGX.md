@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intel SGX
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -220,62 +215,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:intel-sgx:2265acc71767",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:28895d99406aaa0f7a7a5baf190590c1d9d9ea86ff50026757a8fb46f9eeba5c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Intel]]",
-      "resolved": "urn:visionflow:linked:intel",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Information Security]]",
-      "resolved": "urn:visionflow:linked:information-security",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Encryption]]",
-      "resolved": "urn:visionflow:linked:encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware]]",
-      "resolved": "urn:visionflow:linked:hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trusted Execution Environment]]",
-      "resolved": "urn:visionflow:linked:trusted-execution-environment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.intel.com/content/www/us/en/developer/tools/software-guard-extensions/overview.html]]",
-      "resolved": "urn:visionflow:linked:https-www-intel-com-content-www-us-en-developer-tools-software-guard-extensions-overview-html",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Software_Guard_Extensions]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-software-guard-extensions",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Intel SGX is a set of processor instructions that create isolated memory regions called enclaves, protecting code and data from other software on the same system.

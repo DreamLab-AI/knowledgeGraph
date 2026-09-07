@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Financial Instruments
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,31 +180,12 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:financial-instruments:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ac571f0cdda20a43470e152e4960840da9aa300b2db93506e1860c0c73ad3a87"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Financial instruments are contractual agreements or documents that create, convey, or extinguish financial claims between counterparties, spanning [[Equity Securities]], [[Debt Securities]], [[Derivatives]], [[Foreign Exchange]], and hybrid structures. They form the fundamental building blocks of [[Capital Markets]], enabling the transfer of capital, risk, and ownership across time and space. In the digital era, [[Tokenization]] and [[Decentralised Finance]] extend classical instrument types onto programmable [[Blockchain]] rails, governed by [[Smart Contracts]] rather than solely by legal paper contracts. The definition under [[International Accounting Standards]] (IAS 32) anchors the concept in contractual rights giving rise to financial assets in one entity and financial liabilities or equity instruments in another.
 
 - ### Overview
   - Financial instruments are the foundational contracts through which modern economies allocate capital and manage risk. By representing entitlements to future cash flows or ownership stakes, they allow savers to deploy surplus capital to borrowers and investors, and allow risk-takers to hedge or speculate on price movements across asset classes.
-  - The taxonomy of instruments spans a spectrum from simple [[Debt Securities]] (bonds, bills, notes) that promise fixed or floating coupon payments and principal repayment, to complex [[Derivatives]] (options, futures, swaps) whose value is derived from an underlying asset price, rate, or index.
+  - The taxonomy of instruments spans a spectrum from simple [[Debt Securities]] (bonds, bills, notes) that promise fixed or floating coupon payments and principal repayment, to complex [[Derivatives]] (options, futures, swaps) whose value is derived from an underlying asset price, rate, or [private].
   - [[Equity Securities]] (ordinary and preference shares) convey residual ownership rights in a company, entitling holders to dividends and capital gains. [[Foreign Exchange]] instruments enable currency conversion and cross-border payments underpinning global trade.
   - [[Structured Products]] bundle underlying instruments into tranched exposures, redistributing cash flow waterfall priority to meet different investor risk-return appetites.
   - Markets for financial instruments range from organised exchanges with central [[Clearing and Settlement]] counterparties to bilateral over-the-counter (OTC) markets relying on ISDA Master Agreements for [[Risk Management]].
@@ -218,7 +194,7 @@ public: true
   - #### Primary Categories
     - [[Equity Securities]] — shares representing ownership and residual claims on corporate earnings and assets
     - [[Debt Securities]] — bonds, commercial paper, and notes representing creditor claims with fixed or floating coupon schedules
-    - [[Derivatives]] — futures, options, swaps, and forwards whose value derives from an underlying reference (price, rate, index, or credit event)
+    - [[Derivatives]] — futures, options, swaps, and forwards whose value derives from an underlying reference (price, rate, [private], or credit event)
     - [[Foreign Exchange]] instruments — spot and forward contracts, currency swaps, and cross-currency basis swaps enabling FX risk transfer
     - [[Structured Products]] — collateralised debt obligations (CDOs), mortgage-backed securities (MBS), and principal-protected notes assembling underlying instruments into bespoke risk profiles
   - #### On-Chain Instrument Extensions

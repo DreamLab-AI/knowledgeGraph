@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ETSI Domain AI Governance
----
-
-# ETSI Domain AI + Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,71 +100,6 @@ aliases:
       "label": "AI Governance and Ethics"
     }
   ]
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-ai-governance:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:63876bec8579e23f367a455eba5cb9b70c6a16f500c43f0adbbbe012ba3b64ad"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Ethics Classification]]",
-      "resolved": "urn:visionflow:linked:ai-ethics-classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI Domain Taxonomy]]",
-      "resolved": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GS MEC]]",
-      "resolved": "urn:visionflow:linked:etsi-gs-mec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Explainability Categorization]]",
-      "resolved": "urn:visionflow:linked:explainability-categorization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ApplicationLayer]]",
-      "resolved": "urn:visionflow:owl:class:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ComputationAndIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-research-area",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ETSI Domain AI]]",
-      "resolved": "urn:visionflow:owl:class:etsi-domain-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TrustAndGovernanceDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
 }
 ```
 
@@ -392,7 +320,7 @@ aliases:
     Article 14 requires that high-risk AI systems are designed and developed with human oversight measures that: (a) enable the individuals responsible to fully understand the AI system's capacities and limitations; (b) enable detection and addressing of anomalies, dysfunctions, and unexpected performance; (c) enable authorised personnel to override, interrupt, or suspend the AI system's operation. Implementation patterns include: role-based oversight assignment (accountability matrices), human review thresholds (rules triggering mandatory human examination of AI decisions above a confidence or impact threshold), audit sampling (random sampling of AI decisions for human review to detect systematic errors), and escalation protocols (defined procedures for human response when AI signals uncertainty or detects exceptional cases). Override capability must be technically implemented, not merely procedurally described.
 
     **Phase 6 — Post-market Surveillance and Incident Reporting (Article 72)**
-    Providers of high-risk AI systems must establish a post-market surveillance system proportionate to risk level. Requirements include: (a) continuous collection of data from deployed systems on performance, unintended incidents, and accuracy drift; (b) periodic post-market surveillance reports submitted to market surveillance authorities; (c) serious incident reporting within 15 days of becoming aware of an AI system causing death, serious harm, or unexpected significant deviation from intended purpose; (d) near-miss reporting for incidents that could have caused harm; (e) corrective action procedures with documentation and re-conformity assessment where changes affect original conformity basis.
+    Providers of high-risk AI systems must establish a post-market surveillance system proportionate to risk level. Requirements include: (a) continuous collection of data from deployed systems on performance, unintended incidents, and accuracy drift; (b) periodic post-market surveillance reports submitted to market surveillance authorities; (c) serious incident reporting within 15 days of becoming aware of an AI system causing death, serious harm, or unexpected significant deviation from intended purpose; (d) near-miss reporting for incidents that [private] have caused harm; (e) corrective action procedures with documentation and re-conformity assessment where changes affect original conformity basis.
 
   ## Governance Metrics and Assessment Criteria
     The operationalisation of ETSI Domain AI + Governance obligations requires concrete metrics for each governance dimension. The following assessment framework synthesises requirements from ETSI TS 104 224, EU AI Act Implementing Regulations, and ISO/IEC TR 24027:

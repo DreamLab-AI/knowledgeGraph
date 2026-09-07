@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross-Platform Content
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Cross-platform content is digital media and 3D assets authored once and made usable across multiple platforms, engines, or devices through standardised formats and conversion pipelines. It depends on format parsers and content pipelines that normalise assets to each target's runtime requirements. It enables creators to reach diverse metaverse environments without bespoke re-authoring.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:format-parser", "label": "Format Parser"}, {"@id": "urn:ngm:class:metaverse-content-pipeline", "label": "Metaverse Content Pipeline"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:format-parser",
+        "label": "Format Parser"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
+    ]
   },
   "quality": 0.72
 }

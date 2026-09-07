@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multihash
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -135,7 +130,7 @@ public: true
   - Multihash is a core primitive in the IPFS Multiformat suite, directly enabling [[Content-Addressed Storage]] by embedding algorithm identity into each [[Content Addressing]] identifier. It composes with [[Merkle Tree]] structures to form Content Identifiers (CIDs) and relies on [[Binary Encoding]] (varint prefixes) to remain compact. The format strengthens [[Cryptographic Verification]] by making hash algorithm upgrades backwards-compatible.
 
 - ### Content
-  - Multihash was designed by Juan Benet and the Protocol Labs team circa 2015 as part of the broader Multiformats initiative. The motivation was a concrete engineering problem: IPFS needed a content-addressing scheme that could outlive any single hash algorithm. Prior systems hard-coded SHA-256 into their identifier format, meaning a collision vulnerability or algorithm deprecation would require a breaking protocol change. By prepending a two-varint header (function code, digest length), Multihash decouples algorithm choice from identifier structure.
+  - Multihash was designed by Juan Benet and the Protocol Labs team circa 2015 as part of the broader Multiformats initiative. The motivation was a concrete engineering problem: IPFS needed a content-addressing scheme that [private] outlive any single hash algorithm. Prior systems hard-coded SHA-256 into their identifier format, meaning a collision vulnerability or algorithm deprecation would require a breaking protocol change. By prepending a two-varint header (function code, digest length), Multihash decouples algorithm choice from identifier structure.
 
   - A Multihash value is constructed by taking a raw hash digest and prepending the varint-encoded function code from the Multihash table (e.g., 0x12 for SHA2-256, 0x1b for KECCAK-256, 0x1e for BLAKE3) followed by the varint-encoded byte length of the digest. The result is a self-contained binary blob that any compliant parser can decompose without a lookup table or configuration file. Multihash values are typically further encoded in Base58btc or Base32 to produce human-readable CIDs.
 

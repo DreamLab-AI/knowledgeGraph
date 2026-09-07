@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fan-Out
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Fan-Out",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:design-pattern", "vc:label": "DesignPattern" },
-    { "@id": "urn:visionflow:linked:task-delegation", "vc:label": "TaskDelegation" },
-    { "@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "MultiAgentOrchestration" },
-    { "@id": "urn:visionflow:linked:distributed-computing", "vc:label": "DistributedComputing" }
+    {
+      "@id": "urn:visionflow:linked:design-pattern",
+      "vc:label": "DesignPattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-delegation",
+      "vc:label": "TaskDelegation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "MultiAgentOrchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-computing",
+      "vc:label": "DistributedComputing"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,17 +44,32 @@ public: true
   "definition": "A concurrency and orchestration pattern in which a single request or task is split into many independent sub-tasks that are dispatched simultaneously to multiple workers, agents, or services, then optionally recombined by a downstream fan-in step. Fan-out trades higher aggregate resource consumption for reduced wall-clock latency and throughput, and is the structural basis for parallel sub-agent execution, scatter-gather search, and map-style batch processing in agent systems.",
   "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": { "@id": "urn:ngm:class:design-pattern", "label": "Design Pattern" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:design-pattern",
+    "label": "Design Pattern"
+  },
   "relations": {
     "uses": [
-      { "@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing" }
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration" }
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:task-delegation", "label": "Task Delegation" },
-      { "@id": "urn:ngm:class:data-parallelism", "label": "Data Parallelism" }
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      },
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
     ]
   },
   "quality": 0.75,

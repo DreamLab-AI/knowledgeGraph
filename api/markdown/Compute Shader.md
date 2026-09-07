@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Compute Shader
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,67 +188,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:compute-shader:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aa1e048dd7360a1ab169eb8d8100babc9bb8ce66df2b190ea50c941955bc72f1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GPGPU]]",
-      "resolved": "urn:visionflow:linked:gpgpu",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Parallel Computing]]",
-      "resolved": "urn:visionflow:linked:parallel-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[thread_position_in_grid]]",
-      "resolved": "urn:visionflow:linked:thread-position-in-grid",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physics Simulation]]",
-      "resolved": "urn:visionflow:owl:class:physics-simulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pixel Shader]]",
-      "resolved": "urn:visionflow:owl:class:pixel-shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vertex Shader]]",
-      "resolved": "urn:visionflow:owl:class:vertex-shader",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Compute Shader is a programmable GPU kernel that executes arbitrary parallel computations outside the traditional graphics rendering pipeline, enabling general-purpose GPU (GPGPU) workloads such as physics simulation, procedural generation, image post-processing, and data-parallel algorithms within real-time 3D and metaverse applications.

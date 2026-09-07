@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Agent Coordination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,51 +7,186 @@ public: true
   "title": "AI Agent Coordination",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:decentralised-coordination", "vc:label": "Decentralised Coordination"},
-    {"@id": "urn:visionflow:linked:rgb-and-client-side-validation", "vc:label": "RGB and Client-Side Validation"},
-    {"@id": "urn:visionflow:linked:ai-agent-system", "vc:label": "AI Agent System"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:task-allocation", "vc:label": "Task Allocation"},
-    {"@id": "urn:visionflow:linked:consensus-mechanism", "vc:label": "Consensus Mechanism"},
-    {"@id": "urn:visionflow:linked:communication-protocol", "vc:label": "Communication Protocol"},
-    {"@id": "urn:visionflow:linked:contract-net-protocol", "vc:label": "Contract Net Protocol"},
-    {"@id": "urn:visionflow:linked:blackboard-system", "vc:label": "Blackboard System"},
-    {"@id": "urn:visionflow:linked:message-passing", "vc:label": "Message Passing"},
-    {"@id": "urn:visionflow:linked:role-assignment", "vc:label": "Role Assignment"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:agent-to-agent-protocol", "vc:label": "Agent-to-Agent Protocol"},
-    {"@id": "urn:visionflow:linked:swarm-intelligence", "vc:label": "Swarm Intelligence"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:autonomous-ai-agents", "vc:label": "Autonomous AI Agents"},
-    {"@id": "urn:visionflow:linked:planning-algorithm", "vc:label": "Planning Algorithm"},
-    {"@id": "urn:visionflow:linked:negotiation-protocol", "vc:label": "Negotiation Protocol"},
-    {"@id": "urn:visionflow:linked:leader-election", "vc:label": "Leader Election"},
-    {"@id": "urn:visionflow:linked:task-auction", "vc:label": "Task Auction"},
-    {"@id": "urn:visionflow:linked:byzantine-fault-tolerance", "vc:label": "Byzantine Fault Tolerance"},
-    {"@id": "urn:visionflow:linked:fipa", "vc:label": "FIPA"},
-    {"@id": "urn:visionflow:linked:game-theory", "vc:label": "Game Theory"},
-    {"@id": "urn:visionflow:linked:mechanism-design", "vc:label": "Mechanism Design"},
-    {"@id": "urn:visionflow:linked:distributed-constraint-optimisation", "vc:label": "Distributed Constraint Optimisation"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:human-oversight", "vc:label": "Human Oversight"},
-    {"@id": "urn:visionflow:linked:ai-accountability", "vc:label": "AI Accountability"},
-    {"@id": "urn:visionflow:linked:trust-management", "vc:label": "Trust Management"},
-    {"@id": "urn:visionflow:linked:orchestration-pattern", "vc:label": "Orchestration Pattern"},
-    {"@id": "urn:visionflow:linked:lang-graph", "vc:label": "LangGraph"},
-    {"@id": "urn:visionflow:linked:crew-ai", "vc:label": "CrewAI"},
-    {"@id": "urn:visionflow:linked:auto-gen", "vc:label": "AutoGen"},
-    {"@id": "urn:visionflow:linked:emergent-behaviour", "vc:label": "Emergent Behaviour"},
-    {"@id": "urn:visionflow:linked:interoperability", "vc:label": "Interoperability"},
-    {"@id": "urn:visionflow:linked:load-balancing", "vc:label": "Load Balancing"},
-    {"@id": "urn:visionflow:linked:knowledge-sharing", "vc:label": "Knowledge Sharing"},
-    {"@id": "urn:visionflow:linked:deadlock-prevention", "vc:label": "Deadlock Prevention"},
-    {"@id": "urn:visionflow:owl:class:smart-contract", "vc:label": "Smart Contract"},
-    {"@id": "urn:visionflow:linked:dao-governance", "vc:label": "DAO Governance"},
-    {"@id": "urn:visionflow:linked:agentic-system", "vc:label": "Agentic System"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"}
+    {
+      "@id": "urn:visionflow:linked:decentralised-coordination",
+      "vc:label": "Decentralised Coordination"
+    },
+    {
+      "@id": "urn:visionflow:linked:rgb-and-client-side-validation",
+      "vc:label": "RGB and Client-Side Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-allocation",
+      "vc:label": "Task Allocation"
+    },
+    {
+      "@id": "urn:visionflow:linked:consensus-mechanism",
+      "vc:label": "Consensus Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:communication-protocol",
+      "vc:label": "Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:contract-net-protocol",
+      "vc:label": "Contract Net Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:blackboard-system",
+      "vc:label": "Blackboard System"
+    },
+    {
+      "@id": "urn:visionflow:linked:message-passing",
+      "vc:label": "Message Passing"
+    },
+    {
+      "@id": "urn:visionflow:linked:role-assignment",
+      "vc:label": "Role Assignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-to-agent-protocol",
+      "vc:label": "Agent-to-Agent Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:swarm-intelligence",
+      "vc:label": "Swarm Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-ai-agents",
+      "vc:label": "Autonomous AI Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-algorithm",
+      "vc:label": "Planning Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:negotiation-protocol",
+      "vc:label": "Negotiation Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:leader-election",
+      "vc:label": "Leader Election"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-auction",
+      "vc:label": "Task Auction"
+    },
+    {
+      "@id": "urn:visionflow:linked:byzantine-fault-tolerance",
+      "vc:label": "Byzantine Fault Tolerance"
+    },
+    {
+      "@id": "urn:visionflow:linked:fipa",
+      "vc:label": "FIPA"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-theory",
+      "vc:label": "Game Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:mechanism-design",
+      "vc:label": "Mechanism Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-constraint-optimisation",
+      "vc:label": "Distributed Constraint Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-accountability",
+      "vc:label": "AI Accountability"
+    },
+    {
+      "@id": "urn:visionflow:linked:trust-management",
+      "vc:label": "Trust Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration-pattern",
+      "vc:label": "Orchestration Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-graph",
+      "vc:label": "LangGraph"
+    },
+    {
+      "@id": "urn:visionflow:linked:crew-ai",
+      "vc:label": "CrewAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:auto-gen",
+      "vc:label": "AutoGen"
+    },
+    {
+      "@id": "urn:visionflow:linked:emergent-behaviour",
+      "vc:label": "Emergent Behaviour"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:load-balancing",
+      "vc:label": "Load Balancing"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-sharing",
+      "vc:label": "Knowledge Sharing"
+    },
+    {
+      "@id": "urn:visionflow:linked:deadlock-prevention",
+      "vc:label": "Deadlock Prevention"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:smart-contract",
+      "vc:label": "Smart Contract"
+    },
+    {
+      "@id": "urn:visionflow:linked:dao-governance",
+      "vc:label": "DAO Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-system",
+      "vc:label": "Agentic System"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -71,57 +201,164 @@ public: true
   "definition": "AI Agent Coordination is the set of mechanisms by which multiple autonomous AI agents align their actions, share state, allocate tasks, and resolve conflicts to achieve goals that exceed any single agent's capability. It covers communication protocols, role assignment, consensus, and negotiation, and may be centralized through an orchestrator or fully decentralized. Effective coordination is essential for multi-agent systems operating over shared resources or distributed ledgers.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:task-allocation", "label": "Task Allocation"},
-      {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"},
-      {"@id": "urn:ngm:class:blackboard-system", "label": "Blackboard System"},
-      {"@id": "urn:ngm:class:role-assignment", "label": "Role Assignment"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:negotiation-protocol", "label": "Negotiation Protocol"},
-      {"@id": "urn:ngm:class:leader-election", "label": "Leader Election"}
+      {
+        "@id": "urn:ngm:class:task-allocation",
+        "label": "Task Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blackboard-system",
+        "label": "Blackboard System"
+      },
+      {
+        "@id": "urn:ngm:class:role-assignment",
+        "label": "Role Assignment"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:negotiation-protocol",
+        "label": "Negotiation Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:trust-management", "label": "Trust Management"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:trust-management",
+        "label": "Trust Management"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:emergent-behavior", "label": "Emergent Behaviour"},
-      {"@id": "urn:ngm:class:autonomous-ai-agents", "label": "Autonomous AI Agents"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
-      {"@id": "urn:ngm:class:knowledge-sharing", "label": "Knowledge Sharing"},
-      {"@id": "urn:ngm:class:agentic-system", "label": "Agentic System"}
+      {
+        "@id": "urn:ngm:class:emergent-behavior",
+        "label": "Emergent Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-ai-agents",
+        "label": "Autonomous AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-system",
+        "label": "Agentic System"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:distributed-constraint-optimisation", "label": "Distributed Constraint Optimisation"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:agent-to-agent-protocol", "label": "Agent-to-Agent Protocol"}
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-constraint-optimisation",
+        "label": "Distributed Constraint Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      }
     ],
     "depends-on": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:planning-algorithm", "label": "Planning Algorithm"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:planning-algorithm",
+        "label": "Planning Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-accountability", "label": "AI Accountability"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralised-coordination", "label": "Decentralised Coordination"},
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client-Side Validation"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:deadlock-prevention", "label": "Deadlock Prevention"}
+      {
+        "@id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client-Side Validation"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:deadlock-prevention",
+        "label": "Deadlock Prevention"
+      }
     ],
     "contrasts-with": [
-      {"@id": "urn:ngm:class:agent-orchestrator", "label": "Agent Orchestrator"}
+      {
+        "@id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      }
     ]
   },
   "quality": 0.85,
@@ -130,64 +367,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "OntologyEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-agent-coordination:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:ai-agent-coordination"},
-  "vc:resolutions": [
-    {"raw": "[[Decentralised Coordination]]", "resolved": "urn:visionflow:linked:decentralised-coordination", "kind": "StubLink"},
-    {"raw": "[[RGB and Client-Side Validation]]", "resolved": "urn:visionflow:linked:rgb-and-client-side-validation", "kind": "StubLink"},
-    {"raw": "[[AI Agent System]]", "resolved": "urn:visionflow:linked:ai-agent-system", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent System]]", "resolved": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
-    {"raw": "[[Agent Orchestrator]]", "resolved": "urn:visionflow:linked:agent-orchestrator", "kind": "StubLink"},
-    {"raw": "[[Task Allocation]]", "resolved": "urn:visionflow:linked:task-allocation", "kind": "StubLink"},
-    {"raw": "[[Consensus Mechanism]]", "resolved": "urn:visionflow:linked:consensus-mechanism", "kind": "StubLink"},
-    {"raw": "[[Communication Protocol]]", "resolved": "urn:visionflow:linked:communication-protocol", "kind": "StubLink"},
-    {"raw": "[[Contract Net Protocol]]", "resolved": "urn:visionflow:linked:contract-net-protocol", "kind": "StubLink"},
-    {"raw": "[[Blackboard System]]", "resolved": "urn:visionflow:linked:blackboard-system", "kind": "StubLink"},
-    {"raw": "[[Message Passing]]", "resolved": "urn:visionflow:linked:message-passing", "kind": "StubLink"},
-    {"raw": "[[Role Assignment]]", "resolved": "urn:visionflow:linked:role-assignment", "kind": "StubLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
-    {"raw": "[[Agent-to-Agent Protocol]]", "resolved": "urn:visionflow:linked:agent-to-agent-protocol", "kind": "StubLink"},
-    {"raw": "[[Swarm Intelligence]]", "resolved": "urn:visionflow:linked:swarm-intelligence", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Autonomous AI Agents]]", "resolved": "urn:visionflow:linked:autonomous-ai-agents", "kind": "StubLink"},
-    {"raw": "[[Planning Algorithm]]", "resolved": "urn:visionflow:linked:planning-algorithm", "kind": "StubLink"},
-    {"raw": "[[Negotiation Protocol]]", "resolved": "urn:visionflow:linked:negotiation-protocol", "kind": "StubLink"},
-    {"raw": "[[Leader Election]]", "resolved": "urn:visionflow:linked:leader-election", "kind": "StubLink"},
-    {"raw": "[[Task Auction]]", "resolved": "urn:visionflow:linked:task-auction", "kind": "StubLink"},
-    {"raw": "[[Byzantine Fault Tolerance]]", "resolved": "urn:visionflow:linked:byzantine-fault-tolerance", "kind": "StubLink"},
-    {"raw": "[[FIPA]]", "resolved": "urn:visionflow:linked:fipa", "kind": "StubLink"},
-    {"raw": "[[Game Theory]]", "resolved": "urn:visionflow:linked:game-theory", "kind": "StubLink"},
-    {"raw": "[[Mechanism Design]]", "resolved": "urn:visionflow:linked:mechanism-design", "kind": "StubLink"},
-    {"raw": "[[Distributed Constraint Optimisation]]", "resolved": "urn:visionflow:linked:distributed-constraint-optimisation", "kind": "StubLink"},
-    {"raw": "[[Tool Use]]", "resolved": "urn:visionflow:linked:tool-use", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[Human Oversight]]", "resolved": "urn:visionflow:linked:human-oversight", "kind": "StubLink"},
-    {"raw": "[[AI Accountability]]", "resolved": "urn:visionflow:linked:ai-accountability", "kind": "StubLink"},
-    {"raw": "[[Trust Management]]", "resolved": "urn:visionflow:linked:trust-management", "kind": "StubLink"},
-    {"raw": "[[Orchestration Pattern]]", "resolved": "urn:visionflow:linked:orchestration-pattern", "kind": "StubLink"},
-    {"raw": "[[LangGraph]]", "resolved": "urn:visionflow:linked:lang-graph", "kind": "StubLink"},
-    {"raw": "[[CrewAI]]", "resolved": "urn:visionflow:linked:crew-ai", "kind": "StubLink"},
-    {"raw": "[[AutoGen]]", "resolved": "urn:visionflow:linked:auto-gen", "kind": "StubLink"},
-    {"raw": "[[Emergent Behaviour]]", "resolved": "urn:visionflow:linked:emergent-behaviour", "kind": "StubLink"},
-    {"raw": "[[Interoperability]]", "resolved": "urn:visionflow:linked:interoperability", "kind": "StubLink"},
-    {"raw": "[[Load Balancing]]", "resolved": "urn:visionflow:linked:load-balancing", "kind": "StubLink"},
-    {"raw": "[[Knowledge Sharing]]", "resolved": "urn:visionflow:linked:knowledge-sharing", "kind": "StubLink"},
-    {"raw": "[[Deadlock Prevention]]", "resolved": "urn:visionflow:linked:deadlock-prevention", "kind": "StubLink"},
-    {"raw": "[[Smart Contract]]", "resolved": "urn:visionflow:owl:class:smart-contract", "kind": "ResolvedLink"},
-    {"raw": "[[DAO Governance]]", "resolved": "urn:visionflow:linked:dao-governance", "kind": "StubLink"},
-    {"raw": "[[Agentic System]]", "resolved": "urn:visionflow:linked:agentic-system", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -358,7 +537,7 @@ public: true
 
   Northern English industrial applications are significant. The Advanced Manufacturing Research Centre (AMRC) in Sheffield uses multi-agent coordination for flexible manufacturing cell control, coordinating autonomous robot agents with supply chain information agents and quality control agents. The University of Leeds has developed multi-agent systems for traffic coordination in smart city contexts, with pilots in Leeds City Region's Connected Corridor initiative. Manchester's National Robotarium node at the University of Manchester investigates coordination in collaborative robotic systems for healthcare and logistics. The STFC Hartree Centre in Warrington is developing agent coordination frameworks for high-performance scientific computing, where coordination between simulation agents, data analysis agents, and visualisation agents enables automated scientific workflows.
 
-  UK financial services represent a major deployment domain: algorithmic trading coordination systems, fraud detection agent networks, and AML (anti-money laundering) multi-agent surveillance systems are operational at major UK banks. The FCA's Innovation Lab (Project Innovate) has reviewed multi-agent financial applications for regulatory compliance, with particular focus on coordination failure modes that could amplify market instability—a lesson from the 2010 Flash Crash, where algorithmic coordination produced emergent market dysfunction at millisecond timescales.
+  UK financial services represent a major deployment domain: algorithmic trading coordination systems, fraud detection agent networks, and AML (anti-money laundering) multi-agent surveillance systems are operational at major UK banks. The FCA's Innovation Lab (Project Innovate) has reviewed multi-agent financial applications for regulatory compliance, with particular focus on coordination failure modes that [private] amplify market instability—a lesson from the 2010 Flash Crash, where algorithmic coordination produced emergent market dysfunction at millisecond timescales.
 
   ## Future Directions (2026–2030)
 

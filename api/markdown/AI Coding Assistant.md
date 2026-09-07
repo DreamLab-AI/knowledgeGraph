@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Coding Assistant
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-coding-assistant",
   "title": "AI Coding Assistant",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Developer Productivity", "Internal Adoption Metrics"],
+  "vc:outboundWikilinks": [
+    "Developer Productivity",
+    "Internal Adoption Metrics"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpt",
+      "label": "GPT"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}, {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"}, {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

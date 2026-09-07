@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Citi Token Services
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:citi-token-services:b703f3b37e75",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a4a8d83836cf520f3b9f9905ed4a2d7280ec51e5c747abbd0a1dae824666e973"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Permissioned Blockchain]]",
-      "resolved": "urn:visionflow:linked:permissioned-blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tokenization]]",
-      "resolved": "urn:visionflow:linked:tokenization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment Channel]]",
-      "resolved": "urn:visionflow:linked:payment-channel",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger Technology]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trade Finance]]",
-      "resolved": "urn:visionflow:linked:trade-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.citigroup.com/global/news]]",
-      "resolved": "urn:visionflow:linked:https-www-citigroup-com-global-news",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A service from Citi that issues tokenised representations of institutional client deposits on a permissioned blockchain to support faster cash management and trade transactions. It operates within the bank's regulated infrastructure rather than on a public network.

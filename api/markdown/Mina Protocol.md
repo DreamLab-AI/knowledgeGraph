@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mina Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mina-protocol:347f2936e40b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:08bde32a050a2c0573025a7eb0916de97e2243ebc07fbf81a2b6e677910cc8a1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web3 Infrastructure]]",
-      "resolved": "urn:visionflow:linked:web-3-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger Technology]]",
-      "resolved": "urn:visionflow:linked:distributed-ledger-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://minaprotocol.com/]]",
-      "resolved": "urn:visionflow:linked:https-minaprotocol-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.minaprotocol.com/]]",
-      "resolved": "urn:visionflow:linked:https-docs-minaprotocol-com",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Mina Protocol is a blockchain that maintains a constant-size proof of its state using recursive zero-knowledge proofs, keeping the chain compact.

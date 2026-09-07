@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0056 impedance control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0057-admittance-control", "label": "rb 0057 admittance control"},
-      {"@id": "urn:ngm:class:rb-0053-force-control", "label": "rb 0053 force control"},
-      {"@id": "urn:ngm:class:rb-0038-compliance", "label": "rb 0038 compliance"}
+      {
+        "@id": "urn:ngm:class:rb-0057-admittance-control",
+        "label": "rb 0057 admittance control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0053-force-control",
+        "label": "rb 0053 force control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0038-compliance",
+        "label": "rb 0038 compliance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"},
-      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"}
+      {
+        "@id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0007-collaborative-robot", "label": "rb 0007 collaborative robot"},
-      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"}
+      {
+        "@id": "urn:ngm:class:rb-0007-collaborative-robot",
+        "label": "rb 0007 collaborative robot"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"}
+      {
+        "@id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0056-impedance-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c27f9229ee51e65f5c572d95987eecddd0a7ea80ffdea98fc48e108d048b7979"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Impedance Control** (RB-0056) regulates the force-motion relationship at a robot's end effector by imposing a desired mechanical impedance (virtual mass, damping, stiffness). This allows compliant interaction with humans and uncertain environments without requiring an explicit force setpoint, making it foundational to safe collaborative operation.

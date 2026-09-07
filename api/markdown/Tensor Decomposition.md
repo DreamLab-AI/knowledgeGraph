@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Tensor Decomposition
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:tensor-decomposition", "@type": "Page", "title": "Tensor Decomposition", "vc:slug": "tensor-decomposition", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:tensor-decomposition",
+  "@type": "Page",
+  "title": "Tensor Decomposition",
+  "vc:slug": "tensor-decomposition",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

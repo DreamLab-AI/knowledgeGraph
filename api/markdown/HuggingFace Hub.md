@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Hugging Face Hub
----
-
-# huggingface hub
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -41,23 +34,40 @@ aliases:
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:hugging-face-diffusers", "label": "Hugging Face Diffusers"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Hugging Face Hub is a centralised, version-controlled platform for hosting, discovering, and sharing machine learning models, datasets, and interactive Spaces under a collaborative open-source ecosystem. It provides Git-LFS-backed repositories for large artefact storage, model cards for documentation and responsible AI metadata, and a Python SDK (huggingface_hub) for programmatic access. The Hub functions as the de-facto registry for open-weight foundation models, transformer checkpoints, and diffusion model pipelines, serving millions of downloads daily across research and production workflows.

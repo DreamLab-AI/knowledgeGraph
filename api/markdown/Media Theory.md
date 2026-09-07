@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Media Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,16 +51,34 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:media-richness-theory", "label": "Media Richness Theory"},
-      {"@id": "urn:ngm:class:social-presence-theory", "label": "Social Presence Theory"},
-      {"@id": "urn:ngm:class:communication-theory", "label": "Communication Theory"}
+      {
+        "@id": "urn:ngm:class:media-richness-theory",
+        "label": "Media Richness Theory"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence-theory",
+        "label": "Social Presence Theory"
+      },
+      {
+        "@id": "urn:ngm:class:communication-theory",
+        "label": "Communication Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ]
   },
   "provenance": {
@@ -75,32 +88,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:media-theory:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:52a5afe62f585aef3eef61f0a641331c226d99dfa13b54ce3d0e996dc6d1c04d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An interdisciplinary field examining how communication media shape human perception, social interaction, and cultural meaning, encompassing frameworks such as media richness theory, social presence theory, and Marshall McLuhan's medium-as-message thesis. Media theory informs the design of telecollaboration and immersive systems by analysing how channel properties affect communication fidelity and presence.

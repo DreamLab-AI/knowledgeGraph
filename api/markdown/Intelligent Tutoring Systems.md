@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Intelligent Tutoring Systems
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:intelligent-tutoring-systems", "@type":"Page", "title":"Intelligent Tutoring Systems", "vc:slug":"intelligent-tutoring-systems", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:intelligent-tutoring-systems",
+  "@type": "Page",
+  "title": "Intelligent Tutoring Systems",
+  "vc:slug": "intelligent-tutoring-systems",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

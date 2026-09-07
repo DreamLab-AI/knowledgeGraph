@@ -1,39 +1,122 @@
----
-public: true
----
-
-# Interest Rate Policy
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:interest-rate-policy", "@type":"Page", "title":"Interest Rate Policy", "vc:slug":"interest-rate-policy", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:interest-rate-policy",
+  "@type": "Page",
+  "title": "Interest Rate Policy",
+  "vc:slug": "interest-rate-policy",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:interest-rate-policy",
-  "@type":"Class",
-  "label":"Interest Rate Policy",
-  "definition":"Interest rate policy is the use of a central bank's control over short-term policy interest rates to steer borrowing costs, credit demand and inflation. By raising or lowering its target rate, the central bank influences money-market rates, lending, investment and consumption throughout the economy. It is the primary monetary-policy instrument in most modern economies, transmitted through the financial system to output and prices.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}],
-  "relations":{
-    "relatedTo":[{"@id":"urn:ngm:class:inflation-targeting","label":"Inflation Targeting"},{"@id":"urn:ngm:class:quantitative-easing","label":"Quantitative Easing"},{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}],
-    "uses":[{"@id":"urn:ngm:class:open-market-operations","label":"Open Market Operations"}],
-    "hasPart":[{"@id":"urn:ngm:class:interest-rate","label":"Interest Rate"}],
-    "partOf":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}],
-    "implements":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}],
-    "dependsOn":[{"@id":"urn:ngm:class:central-banking","label":"Central Banking"}],
-    "enables":[{"@id":"urn:ngm:class:inflation-targeting","label":"Inflation Targeting"}],
-    "supports":[{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "requires":[{"@id":"urn:ngm:class:central-banking","label":"Central Banking"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:reserve-requirements","label":"Reserve Requirements"},{"@id":"urn:ngm:class:quantitative-easing","label":"Quantitative Easing"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:interest-rate-policy",
+  "@type": "Class",
+  "label": "Interest Rate Policy",
+  "definition": "Interest rate policy is the use of a central bank's control over short-term policy interest rates to steer borrowing costs, credit demand and inflation. By raising or lowering its target rate, the central bank influences money-market rates, lending, investment and consumption throughout the economy. It is the primary monetary-policy instrument in most modern economies, transmitted through the financial system to output and prices.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:reserve-requirements",
+        "label": "Reserve Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

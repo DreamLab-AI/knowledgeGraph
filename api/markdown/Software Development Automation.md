@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Software Development Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Software development automation is the use of tooling and AI agents to perform engineering tasks such as code generation, test writing, refactoring, dependency updates, and pull-request creation with minimal human intervention. Modern systems combine large language models with execution environments and version-control integrations to act on a codebase rather than merely suggest text. It aims to compress development cycles while keeping humans in the loop for review and intent.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:agents", "label": "Agents"},
-      {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"}
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
     ]
   },
   "quality": 0.72

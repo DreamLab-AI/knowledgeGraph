@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Markov Chain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -154,52 +149,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:markov-chain:cdd2c67bed6a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7cac2662e4d8b98e15be1be604992fc663a547671773127930421aef685cd467"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Markov Chain Monte Carlo]]",
-      "resolved": "urn:visionflow:linked:markov-chain-monte-carlo",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Markov Decision Process]]",
-      "resolved": "urn:visionflow:linked:markov-decision-process",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dynamical Systems Theory]]",
-      "resolved": "urn:visionflow:linked:dynamical-systems-theory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stochastic Process]]",
-      "resolved": "urn:visionflow:linked:stochastic-process",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A stochastic process in which the probability of each future state depends only on the current state and not on the sequence of preceding states.

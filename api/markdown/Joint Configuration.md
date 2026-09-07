@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Joint Configuration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:joint-configuration:d3c78ed98717",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:42f4757160a6ea99da58930aebd977bdb784212388f4124100febb9d8f5b4332"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Forward Kinematics]]",
-      "resolved": "urn:visionflow:linked:forward-kinematics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mobile Manipulation]]",
-      "resolved": "urn:visionflow:linked:mobile-manipulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Manipulator]]",
-      "resolved": "urn:visionflow:linked:manipulator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Kinematics]]",
-      "resolved": "urn:visionflow:linked:kinematics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Joint configuration is the complete set of joint positions of a robot manipulator that together determine the pose of its links and end effector.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Phishing Resistant Authentication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -106,6 +102,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Phishing-resistant authentication is a class of authentication methods designed so that credentials cannot be captured and replayed by an attacker who tricks a user into interacting with a fraudulent site or relay. It achieves this primarily through public-key cryptography combined with origin binding, so that a credential is cryptographically tied to the legitimate service's domain and will not authenticate to an impostor. FIDO2/WebAuthn passkeys and hardware security keys are the canonical implementations, replacing shared secrets such as passwords and one-time codes that remain vulnerable to interception.
   - [[Authentication]] [[Public Key Cryptography]] [[Multi-Factor Authentication]] [[FIDO2]] [[Digital Signature]]

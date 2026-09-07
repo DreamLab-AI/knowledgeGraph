@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Social Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:social-layer:a33a11c81f4a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:802994d0f091df83d01cb43946c706b52a7f72e465232a3695b55e1094e66157"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Institutional Layer]]",
-      "resolved": "urn:visionflow:linked:institutional-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Layer]]",
-      "resolved": "urn:visionflow:linked:governance-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social Capital]]",
-      "resolved": "urn:visionflow:linked:social-capital",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Network Effect]]",
-      "resolved": "urn:visionflow:linked:network-effect",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Social Layer is the cross-cutting stratum that represents the human relationships, norms, and communities that surround and use a system. It sits above the institutional structures that formalise it and informs governance and application design. It contains community norms, reputation, communication channels, and the informal conventions that shape behaviour.

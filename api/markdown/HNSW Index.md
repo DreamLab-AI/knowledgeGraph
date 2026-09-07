@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HNSW Index
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -22,14 +17,25 @@ public: true
   "@id": "urn:ngm:class:hnsw-index",
   "@type": "Class",
   "label": "HNSW Index",
-  "definition": "An HNSW (Hierarchical Navigable Small World) index is a graph-based data structure for approximate nearest-neighbour search over high-dimensional vectors. It builds a multi-layer proximity graph where greedy traversal from a sparse top layer down to a dense base layer locates close vectors in logarithmic time. HNSW is the standard index backing vector databases and semantic search at scale.",
+  "definition": "An HNSW (Hierarchical Navigable Small World) [private] is a graph-based data structure for approximate nearest-neighbour search over high-dimensional vectors. It builds a multi-layer proximity graph where greedy traversal from a sparse top layer down to a dense base layer locates close vectors in logarithmic time. HNSW is the standard [private] backing vector databases and semantic search at scale.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
     ]
   },
   "quality": 0.72
@@ -37,6 +43,6 @@ public: true
 ```
 
 - ### Definition
-  - An HNSW index is a hierarchical proximity-graph structure for fast approximate nearest-neighbour lookup; it is implemented by [[Semantic Search]] systems and embedded in vector [[Storage Infrastructure]].
+  - An HNSW [private] is a hierarchical proximity-graph structure for fast approximate nearest-neighbour lookup; it is implemented by [[Semantic Search]] systems and embedded in vector [[Storage Infrastructure]].
 - ### Content
-  - The index trades exactness for speed, tuning recall via parameters such as the connectivity M and the search beam ef. Its logarithmic query complexity and incremental insertion make it well suited to embedding retrieval for RAG, recommendation, and similarity search over millions to billions of vectors.
+  - The [private] trades exactness for speed, tuning recall via parameters such as the connectivity M and the search beam ef. Its logarithmic query complexity and incremental insertion make it well suited to embedding retrieval for RAG, recommendation, and similarity search over millions to billions of vectors.

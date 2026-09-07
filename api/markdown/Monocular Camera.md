@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monocular Camera
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,31 +55,76 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:camera-parameters", "label": "Camera Parameters"}
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:camera-parameters",
+        "label": "Camera Parameters"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"}
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:camera", "label": "Camera"}
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
     ]
   },
   "provenance": {
@@ -94,37 +134,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:monocular-camera:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8c26380c8cef880a1505e8bda7a4b220cf3a3ee2f48c203247cf537b329e12b2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Camera]]",
-      "resolved": "urn:visionflow:owl:class:camera",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Monocular Camera is a single-lens imaging sensor that captures 2D intensity or colour frames from a single viewpoint, serving as a primary perceptual modality in robotics, autonomous vehicles, and computer vision systems. Unlike stereo or depth cameras, it lacks intrinsic depth measurement capability, requiring computational techniques such as structure-from-motion, visual odometry, or learned depth estimation to recover 3D scene geometry.

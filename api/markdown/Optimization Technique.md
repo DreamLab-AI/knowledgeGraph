@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Optimization Technique
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,16 +46,34 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:metaverse-infrastructure", "label": "Metaverse Infrastructure"}
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:optimization-algorithms", "label": "Optimization Algorithms"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {
+        "@id": "urn:ngm:class:optimization-algorithms",
+        "label": "Optimization Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
     ]
   },
   "provenance": {
@@ -70,26 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:optimization-technique:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f03794cb0d3d4e8bc59d0fb1c7acaf7b4d41b578b05338ee83c93c66c7348eb1"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A systematic method applied to improve computational performance, memory efficiency, or rendering throughput in metaverse and spatial computing infrastructure. Optimisation techniques span algorithmic improvements (level-of-detail, culling, compression), hardware utilisation strategies (GPU parallelism, cache coherence), and software-level approaches (batching, shader optimisation) that collectively reduce latency and resource consumption.

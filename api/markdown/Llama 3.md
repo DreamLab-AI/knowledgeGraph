@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Llama 3
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,4 +175,3 @@ public: true
   - Llama 3's significance extends beyond its benchmark performance. The open-weight release strategy fundamentally reshapes the AI model market by providing a free, commercially usable alternative to proprietary APIs that any organisation can run on its own infrastructure. This eliminates data-sharing concerns for sensitive enterprise deployments, enables offline inference without API dependency, and permits full model customisation through fine-tuning. The 8B parameter variant runs efficiently on a single consumer GPU (RTX 3090/4090), making capable LLM inference accessible to individual researchers and developers without cloud API costs.
 
   - In 2024-2025, the Llama 3 ecosystem expanded substantially. Meta released Llama 3.1 (July 2024) with 128K context window support across all sizes and the 405B model. Llama 3.2 (September 2024) introduced multimodal variants (11B and 90B vision models) and small, on-device models (1B and 3B) designed for mobile and edge inference. Llama 3.3 (December 2024) delivered a 70B instruction model with performance approaching the 405B model through improved post-training techniques. The ecosystem of Llama 3 fine-tunes — covering code generation, medical reasoning, multilingual instruction following, and function-calling — numbers in the thousands on the Hugging Face Hub.
-

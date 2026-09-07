@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ethical Design Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -93,32 +88,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ethical-design-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:00ecd3ea842ab96f9c3054711d00223cb665147b54f441115eaa5008b6b8e21c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Ethical Design Standard is a codified set of principles and requirements that guides the design of digital products, immersive environments and AI systems so that they respect user autonomy, privacy, accessibility and wellbeing. Such standards translate ethical values into verifiable design criteria, supporting audit, certification and regulatory compliance in spatial computing.

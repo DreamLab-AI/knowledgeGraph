@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Merkle DAG
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -181,4 +176,3 @@ public: true
   - In a Merkle DAG, each node stores a payload and a list of typed links to child nodes, each link containing the child's content identifier (CID). A node's own CID is computed by hashing its payload together with its children's CIDs, making the entire reachable subgraph cryptographically committed. Adding or modifying any descendant produces a different root CID, providing structural integrity without a trusted third party. Deduplication is automatic: identical subgraphs share the same CID across the entire network.
   - Merkle DAGs are foundational to content-addressed storage systems used in decentralised infrastructure. IPFS uses IPLD Merkle DAGs to store and retrieve files, web pages, and databases in a peer-to-peer network where content is routed by CID rather than location. Blockchains such as Ethereum use Merkle Patricia Tries (a Merkle DAG variant) to efficiently prove state membership. Version control systems, reproducible build systems, and distributed package managers all exploit the structural deduplication and tamper-evidence properties.
   - As of 2024–2025, IPLD v2 has standardised codec support (DAG-CBOR, DAG-JSON, DAG-PB) enabling interoperability between IPFS, Filecoin, and other Web3 storage layers. CIDv1 with SHA2-256 is the dominant content identifier format. Research into authenticated data structures is expanding Merkle DAG applications to verifiable computation, zkVM state proofs, and cross-chain state verification, with projects such as Ceramic Network using Merkle DAGs for decentralised data streams.
-

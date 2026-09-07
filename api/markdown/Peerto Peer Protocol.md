@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Peerto Peer Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -89,32 +84,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:peerto-peer-protocol:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fd99fe66be8838acb57fcd5a4526cc3c64bbaff6b941c0bebd9a921521d4a205"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A peer-to-peer protocol defines the rules by which nodes in a decentralised network discover one another, exchange messages and share data directly, without central intermediaries. In blockchain systems such protocols underpin peer discovery, transaction relay and block propagation, providing the communication layer over which consensus is reached.

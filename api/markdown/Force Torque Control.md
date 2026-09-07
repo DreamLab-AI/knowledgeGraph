@@ -1,39 +1,118 @@
----
-public: true
----
-
-# Force Torque Control
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:force-torque-control", "@type":"Page", "title":"Force Torque Control", "vc:slug":"force-torque-control", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:force-torque-control",
+  "@type": "Page",
+  "title": "Force Torque Control",
+  "vc:slug": "force-torque-control",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:force-torque-control",
-  "@type":"Class",
-  "label":"Force Torque Control",
-  "definition":"Force-torque control is a robot control strategy that regulates the contact forces and moments a manipulator exerts on its environment, rather than commanding position alone. It uses force-torque sensing, typically at the wrist or in the joints, within a feedback loop so that the robot can maintain a desired contact force or yield compliantly to external loads. This is essential for tasks involving physical contact, such as assembly, polishing, and safe interaction with people.",
-  "domain":"robotics",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:force-control","label":"Force Control"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:robot-manipulation","label":"Robot Manipulation"}],
-    "hasPart":[{"@id":"urn:ngm:class:feedback-control","label":"Feedback Control"}],
-    "requires":[{"@id":"urn:ngm:class:actuators","label":"Actuators"}],
-    "uses":[{"@id":"urn:ngm:class:feedback-control","label":"Feedback Control"},{"@id":"urn:ngm:class:end-effector","label":"End-Effector"}],
-    "dependsOn":[{"@id":"urn:ngm:class:motion-control","label":"Motion Control"}],
-    "implements":[{"@id":"urn:ngm:class:impedance-control","label":"Impedance Control"}],
-    "supports":[{"@id":"urn:ngm:class:manipulation","label":"Manipulation"}],
-    "partOf":[{"@id":"urn:ngm:class:robot-control","label":"Robot Control"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:admittance-control","label":"Admittance Control"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:haptics","label":"Haptics"}],
-    "relatedTo":[{"@id":"urn:ngm:class:robotic-arm","label":"Robotic Arm"},{"@id":"urn:ngm:class:compliance-control","label":"Compliance Control"},{"@id":"urn:ngm:class:impedance-control","label":"Impedance Control"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:force-torque-control",
+  "@type": "Class",
+  "label": "Force Torque Control",
+  "definition": "Force-torque control is a robot control strategy that regulates the contact forces and moments a manipulator exerts on its environment, rather than commanding position alone. It uses force-torque sensing, typically at the wrist or in the joints, within a feedback loop so that the robot can maintain a desired contact force or yield compliantly to external loads. This is essential for tasks involving physical contact, such as assembly, polishing, and safe interaction with people.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:force-control",
+      "label": "Force Control"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End-Effector"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

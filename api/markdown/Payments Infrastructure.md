@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Payments Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Payments infrastructure is the aggregate of networks, rails, processors, and settlement systems that move value between parties. It spans card schemes, interbank transfer rails, clearing houses, and blockchain-based settlement layers that enable assets such as stablecoins to circulate. As a backbone system it determines the speed, cost, reach, and finality of monetary transactions.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:stable-coins", "label": "Stable Coins"}, {"@id": "urn:ngm:class:payment-processor", "label": "Payment Processor"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:stable-coins",
+        "label": "Stable Coins"
+      },
+      {
+        "@id": "urn:ngm:class:payment-processor",
+        "label": "Payment Processor"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Testing Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,32 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:testing-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b46b24470cf10ca3ed97697f675fa2492f47f0df2bf337a9ae398b898c1a7e77"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The ensemble of tools, environments, frameworks, and automated pipelines used to validate software correctness, performance, and reliability across development and deployment stages. Testing infrastructure encompasses unit, integration, and end-to-end test runners, continuous integration services, containerised test environments, and monitoring dashboards that together ensure software meets quality standards before release.

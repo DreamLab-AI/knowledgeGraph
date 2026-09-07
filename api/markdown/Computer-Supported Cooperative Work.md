@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Computer-Supported Cooperative Work
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:computer-supported-cooperative-work", "@type":"Page", "title":"Computer-Supported Cooperative Work", "vc:slug":"computer-supported-cooperative-work", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:computer-supported-cooperative-work",
+  "@type": "Page",
+  "title": "Computer-Supported Cooperative Work",
+  "vc:slug": "computer-supported-cooperative-work",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

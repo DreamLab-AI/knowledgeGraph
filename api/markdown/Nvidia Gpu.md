@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Nvidia Gpu
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:nvidia-gpu", "@type":"Page", "title":"Nvidia Gpu", "vc:slug":"nvidia-gpu", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:nvidia-gpu",
+  "@type": "Page",
+  "title": "Nvidia Gpu",
+  "vc:slug": "nvidia-gpu",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

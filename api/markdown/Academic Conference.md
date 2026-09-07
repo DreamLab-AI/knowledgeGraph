@@ -1,47 +1,159 @@
----
-public: true
----
-
-# Academic Conference
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:academic-conference", "@type":"Page", "title":"Academic Conference", "vc:slug":"academic-conference", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[
-  {"@id":"urn:visionflow:linked:scientific-research","vc:label":"Scientific Research"},
-  {"@id":"urn:visionflow:linked:academia","vc:label":"Academia"},
-  {"@id":"urn:visionflow:linked:peer-review","vc:label":"Peer Review"},
-  {"@id":"urn:visionflow:linked:publication","vc:label":"Publication"},
-  {"@id":"urn:visionflow:linked:neur-ips","vc:label":"NeurIPS"},
-  {"@id":"urn:visionflow:linked:icml","vc:label":"ICML"},
-  {"@id":"urn:visionflow:linked:cvpr","vc:label":"CVPR"},
-  {"@id":"urn:visionflow:linked:iclr","vc:label":"ICLR"},
-  {"@id":"urn:visionflow:linked:knowledge-sharing","vc:label":"Knowledge Sharing"},
-  {"@id":"urn:visionflow:linked:collaboration","vc:label":"Collaboration"},
-  {"@id":"urn:visionflow:linked:artificial-intelligence-research","vc:label":"Artificial Intelligence Research"},
-  {"@id":"urn:visionflow:linked:deep-learning","vc:label":"Deep Learning"},
-  {"@id":"urn:visionflow:linked:machine-learning","vc:label":"Machine Learning"},
-  {"@id":"urn:visionflow:linked:open-science","vc:label":"Open Science"},
-  {"@id":"urn:visionflow:linked:research-dissemination","vc:label":"Research Dissemination"},
-  {"@id":"urn:visionflow:linked:reproducibility","vc:label":"Reproducibility"},
-  {"@id":"urn:visionflow:linked:programme-committee","vc:label":"Programme Committee"},
-  {"@id":"urn:visionflow:linked:workshop","vc:label":"Workshop"},
-  {"@id":"urn:visionflow:linked:poster-session","vc:label":"Poster Session"},
-  {"@id":"urn:visionflow:linked:arxiv","vc:label":"arXiv"},
-  {"@id":"urn:visionflow:linked:open-review","vc:label":"OpenReview"},
-  {"@id":"urn:visionflow:linked:proceedings","vc:label":"Proceedings"},
-  {"@id":"urn:visionflow:linked:double-blind-review","vc:label":"Double-Blind Review"},
-  {"@id":"urn:visionflow:linked:benchmark-standard","vc:label":"Benchmark Standard"},
-  {"@id":"urn:visionflow:linked:ai-safety-research","vc:label":"AI Safety Research"},
-  {"@id":"urn:visionflow:linked:ai-ethics","vc:label":"AI Ethics"},
-  {"@id":"urn:visionflow:linked:generative-ai","vc:label":"Generative AI"},
-  {"@id":"urn:visionflow:linked:reinforcement-learning","vc:label":"Reinforcement Learning"},
-  {"@id":"urn:visionflow:linked:natural-language-processing","vc:label":"Natural Language Processing"},
-  {"@id":"urn:visionflow:linked:computer-vision","vc:label":"Computer Vision"},
-  {"@id":"urn:visionflow:linked:large-language-models","vc:label":"Large Language Models"},
-  {"@id":"urn:visionflow:linked:aaai","vc:label":"AAAI"},
-  {"@id":"urn:visionflow:linked:ijcai","vc:label":"IJCAI"},
-  {"@id":"urn:visionflow:linked:iccv","vc:label":"ICCV"},
-  {"@id":"urn:visionflow:linked:scientific-method","vc:label":"Scientific Method"},
-  {"@id":"urn:visionflow:linked:knowledge-graph","vc:label":"Knowledge Graph"}
-] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:academic-conference",
+  "@type": "Page",
+  "title": "Academic Conference",
+  "vc:slug": "academic-conference",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:scientific-research",
+      "vc:label": "Scientific Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:academia",
+      "vc:label": "Academia"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-review",
+      "vc:label": "Peer Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:publication",
+      "vc:label": "Publication"
+    },
+    {
+      "@id": "urn:visionflow:linked:neur-ips",
+      "vc:label": "NeurIPS"
+    },
+    {
+      "@id": "urn:visionflow:linked:icml",
+      "vc:label": "ICML"
+    },
+    {
+      "@id": "urn:visionflow:linked:cvpr",
+      "vc:label": "CVPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:iclr",
+      "vc:label": "ICLR"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-sharing",
+      "vc:label": "Knowledge Sharing"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaboration",
+      "vc:label": "Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence-research",
+      "vc:label": "Artificial Intelligence Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-science",
+      "vc:label": "Open Science"
+    },
+    {
+      "@id": "urn:visionflow:linked:research-dissemination",
+      "vc:label": "Research Dissemination"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducibility",
+      "vc:label": "Reproducibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:programme-committee",
+      "vc:label": "Programme Committee"
+    },
+    {
+      "@id": "urn:visionflow:linked:workshop",
+      "vc:label": "Workshop"
+    },
+    {
+      "@id": "urn:visionflow:linked:poster-session",
+      "vc:label": "Poster Session"
+    },
+    {
+      "@id": "urn:visionflow:linked:arxiv",
+      "vc:label": "arXiv"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-review",
+      "vc:label": "OpenReview"
+    },
+    {
+      "@id": "urn:visionflow:linked:proceedings",
+      "vc:label": "Proceedings"
+    },
+    {
+      "@id": "urn:visionflow:linked:double-blind-review",
+      "vc:label": "Double-Blind Review"
+    },
+    {
+      "@id": "urn:visionflow:linked:benchmark-standard",
+      "vc:label": "Benchmark Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety-research",
+      "vc:label": "AI Safety Research"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:aaai",
+      "vc:label": "AAAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:ijcai",
+      "vc:label": "IJCAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:iccv",
+      "vc:label": "ICCV"
+    },
+    {
+      "@id": "urn:visionflow:linked:scientific-method",
+      "vc:label": "Scientific Method"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    }
+  ]
+}
 ```
 
 ```json-ld
@@ -364,7 +476,7 @@ public: true
     Co-located [[Workshop]] events run alongside the main programme, offering more informal venues for emerging research directions and affinity-group gatherings.
 
     The structural distinctiveness of CS and AI conferences compared with other sciences derives from historical contingency.
-    In the 1980s and 1990s, as the field developed rapidly, conferences adopted journal-quality [[Peer Review]] and open-access [[Proceedings]] to provide the fast dissemination that the bi-annual journal cycle could not support.
+    In the 1980s and 1990s, as the field developed rapidly, conferences adopted journal-quality [[Peer Review]] and open-access [[Proceedings]] to provide the fast dissemination that the bi-annual journal cycle [private] not support.
     This choice embedded conferences as career-determinative publication venues: [[NeurIPS]], [[ICML]], [[CVPR]], and [[ICLR]] acceptance rates and paper counts directly influence tenure decisions, grant awards, research group rankings, and national AI strategy assessments.
     The consequence is an extreme concentration of scholarly attention and community validation in a small number of events.
     A researcher's professional standing in [[Deep Learning]] is substantially determined by acceptance at these four venues.

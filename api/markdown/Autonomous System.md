@@ -10,7 +10,6 @@
   "vc:outboundWikilinks": []
 }
 ```
-alias:: Autonomous Systems
 
 ```json-ld
 {

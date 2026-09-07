@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ZK-STARKs
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -102,37 +97,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:zk-starks:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:81bc2435eea663b8b335ddea6d101e23c7a28a085e5e70118aa6a7229d25205e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Zero Knowledge Proof]]",
-      "resolved": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes, making it ideal for blockchain Layer 2 scaling solutions.

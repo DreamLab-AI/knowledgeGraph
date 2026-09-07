@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Payment Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -323,7 +318,7 @@ public: true
   - 3. Chargeflow (2026). Cross Border Payments Trends 2026: What's Changing and Why. https://www.chargeflow.io/blog/cross-border-payments-trends
   - 4. Yahoo Finance (2026). Visa Puts Stablecoins Into Its Cross-Border Payout Rail via Visa Direct. https://finance.yahoo.com/markets/crypto/articles/visa-puts-stablecoins-cross-border-222304577.html
   - 5. IMF (2026). Stablecoins and the Future of Payments: Evidence from Financial Markets (WP/2026/052). https://www.imf.org/-/media/files/publications/wp/2026/english/wpiea2026052-source-pdf.pdf
-  - 6. Federal Reserve Bank of Chicago (2026). Could Instant Payments or Stablecoins Be the Answer to 24/7 Settlement? Chicago Fed Letter No. 519. https://www.chicagofed.org/publications/chicago-fed-letter/2026/519
+  - 6. Federal Reserve Bank of Chicago (2026). [private] Instant Payments or Stablecoins Be the Answer to 24/7 Settlement? Chicago Fed Letter No. 519. https://www.chicagofed.org/publications/chicago-fed-letter/2026/519
 
 - ### Provenance
   - sources:: BIS CPMI Red Book on Payment Systems; SWIFT GPI public documentation; Lightning Network BOLT specifications; EU PSD2 and MiCA legislative texts; Federal Reserve FedNow service documentation; ISO 20022 standard documentation.

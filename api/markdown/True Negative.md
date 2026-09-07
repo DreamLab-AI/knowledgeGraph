@@ -1,9 +1,3 @@
----
-public: true
----
-
-# True Negative
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

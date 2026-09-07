@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metrics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -125,6 +121,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Metrics are numeric, time-series measurements that quantify the state and behaviour of systems, services and infrastructure over time. As one of the three pillars of observability alongside logs and traces, they are typically aggregated counters, gauges and histograms scraped or pushed at regular intervals. Metrics enable efficient trend analysis, alerting and capacity planning at scale because they compress system behaviour into compact, queryable numeric series.
   - Related core concepts: [[Observability]] [[Telemetry]] [[Monitoring]] [[Alerting]] [[Performance Monitoring]]

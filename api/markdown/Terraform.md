@@ -1,36 +1,108 @@
----
-public: true
----
-
-# Terraform
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:terraform", "@type":"Page", "title":"Terraform", "vc:slug":"terraform", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:terraform",
+  "@type": "Page",
+  "title": "Terraform",
+  "vc:slug": "terraform",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:terraform",
-  "@type":"Class",
-  "label":"Terraform",
-  "definition":"Terraform is an open-source infrastructure-as-code tool that lets engineers define cloud and on-premises resources in declarative configuration files and provision them through a consistent execution workflow. It maintains a state file that records the real-world mapping of declared resources, computes a plan describing the changes needed to reach the desired state, and applies those changes idempotently. Terraform supports many providers through a plugin model, enabling multi-cloud and hybrid provisioning from a single configuration language.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure-as-code","label":"Infrastructure as Code"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:devops","label":"DevOps"}],
-    "implements":[{"@id":"urn:ngm:class:infrastructure-as-code","label":"Infrastructure as Code"},{"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"}],
-    "enables":[{"@id":"urn:ngm:class:automation","label":"Automation"},{"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"}],
-    "uses":[{"@id":"urn:ngm:class:version-control","label":"Version Control"}],
-    "supports":[{"@id":"urn:ngm:class:cloud-infrastructure","label":"Cloud Infrastructure"},{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"},{"@id":"urn:ngm:class:kubernetes","label":"Kubernetes"}],
-    "relatedTo":[{"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"},{"@id":"urn:ngm:class:data-centre","label":"Data Center"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:configuration-management","label":"Configuration Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:terraform",
+  "@type": "Class",
+  "label": "Terraform",
+  "definition": "Terraform is an open-source infrastructure-as-code tool that lets engineers define cloud and on-premises resources in declarative configuration files and provision them through a consistent execution workflow. It maintains a state file that records the real-world mapping of declared resources, computes a plan describing the changes needed to reach the desired state, and applies those changes idempotently. Terraform supports many providers through a plugin model, enabling multi-cloud and hybrid provisioning from a single configuration language.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure-as-code",
+      "label": "Infrastructure as Code"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Center"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

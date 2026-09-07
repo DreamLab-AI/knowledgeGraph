@@ -1,36 +1,104 @@
----
-public: true
----
-
-# Trade Execution
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:trade-execution", "@type":"Page", "title":"Trade Execution", "vc:slug":"trade-execution", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:trade-execution",
+  "@type": "Page",
+  "title": "Trade Execution",
+  "vc:slug": "trade-execution",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:trade-execution",
-  "@type":"Class",
-  "label":"Trade Execution",
-  "definition":"Trade execution is the process of converting an investment decision into a completed transaction in a market, encompassing how, when, and where an order is routed and filled. It seeks the best achievable outcome for the trader by managing factors such as price, speed, market impact, and slippage against the order book. Execution quality is a core determinant of realised returns and is governed by best-execution obligations in many jurisdictions.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:market-microstructure","label":"Market Microstructure"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:liquidity","label":"Liquidity"},{"@id":"urn:ngm:class:settlement","label":"Settlement"}],
-    "uses":[{"@id":"urn:ngm:class:order-book","label":"Order Book"},{"@id":"urn:ngm:class:market-maker","label":"Market Maker"}],
-    "requires":[{"@id":"urn:ngm:class:latency","label":"Latency"}],
-    "dependsOn":[{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:high-frequency-trading","label":"High-Frequency Trading"}],
-    "supports":[{"@id":"urn:ngm:class:clearing","label":"Clearing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:slippage","label":"Slippage"},{"@id":"urn:ngm:class:payment-system","label":"Payment System"},{"@id":"urn:ngm:class:finance","label":"Finance"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trade-execution",
+  "@type": "Class",
+  "label": "Trade Execution",
+  "definition": "Trade execution is the process of converting an investment decision into a completed transaction in a market, encompassing how, when, and where an order is routed and filled. It seeks the best achievable outcome for the trader by managing factors such as price, speed, market impact, and slippage against the order book. Execution quality is a core determinant of realised returns and is governed by best-execution obligations in many jurisdictions.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:market-microstructure",
+      "label": "Market Microstructure"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "@id": "urn:ngm:class:market-maker",
+        "label": "Market Maker"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:clearing",
+        "label": "Clearing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Euler Angles
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:euler-angles", "@type":"Page", "title":"Euler Angles", "vc:slug":"euler-angles", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:euler-angles",
+  "@type": "Page",
+  "title": "Euler Angles",
+  "vc:slug": "euler-angles",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

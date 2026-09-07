@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Inequality
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-inequality",
   "title": "AI Inequality",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Matt Bean", "Power Concentration"],
+  "vc:outboundWikilinks": [
+    "Matt Bean",
+    "Power Concentration"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-law-and-privacy",
+      "label": "AI Governance Law and Privacy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-governance-law-and-privacy", "label": "AI Governance Law and Privacy"}, {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance-law-and-privacy",
+        "label": "AI Governance Law and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

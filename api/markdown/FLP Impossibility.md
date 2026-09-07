@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FLP Impossibility
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -142,41 +137,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:flp-impossibility:9184045acf38",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:23ee7a6b291bf5709f4fbc9dfd549f726606ec45a53dff58e31f980b5569985a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Distributed Consensus]]",
-      "resolved": "urn:visionflow:linked:distributed-consensus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Algorithm]]",
-      "resolved": "urn:visionflow:linked:consensus-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fault Tolerance]]",
-      "resolved": "urn:visionflow:linked:fault-tolerance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - The FLP Impossibility result, formally proved by Fischer, Lynch, and Paterson in their 1985 ACM JACM paper, establishes that no deterministic algorithm can guarantee [[Distributed Consensus]] in a fully [[Asynchronous Network]] where at least one process may experience a [[Crash Fault]]. The proof constructs an adversarial scenario exploiting the fact that a slow process is indistinguishable from a failed one, leading to a permanent bivalent configuration in which the protocol cannot safely decide. This impossibility does not apply in practice when systems use [[Partial Synchrony]], [[Timeout]] mechanisms, or [[Randomised Consensus]], all of which escape the theorem's assumptions. Together with the [[CAP Theorem]], FLP forms the bedrock theoretical constraint framework guiding the design of [[Fault Tolerant]] distributed systems.
 
@@ -184,7 +144,7 @@ public: true
   - The result was named after Michael J. Fischer, Nancy Lynch, and Michael S. Paterson and published in the Journal of the ACM in 1985. It won the Dijkstra Prize in 2001 for its profound and lasting influence on distributed computing.
   - **Why it matters**: before FLP, practitioners hoped to build a deterministic, always-terminating consensus protocol resilient to any crash. FLP proved this impossible, forcing the field to articulate precisely which assumption to relax and spawning an entire discipline of principled [[Consensus Algorithm]] design.
   - **What the theorem says precisely**: in an asynchronous message-passing system with at least one process subject to crash failure, there is no deterministic protocol that guarantees both *safety* (no two processes decide differently) and *liveness* (every run eventually terminates with a decision).
-  - **Key intuition**: the adversary delays messages just long enough that every protocol step which would resolve the ambiguity can be deferred indefinitely. The system is left in a state called a *bivalent configuration* — one that could still legally go either way — so a legitimate decision is never forced.
+  - **Key intuition**: the adversary delays messages just long enough that every protocol step which would resolve the ambiguity can be deferred indefinitely. The system is left in a state called a *bivalent configuration* — one that [private] still legally go either way — so a legitimate decision is never forced.
 
 - ### Key Mechanisms
   - #### Valence and Bivalence

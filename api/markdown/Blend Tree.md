@@ -1,36 +1,114 @@
----
-public: true
----
-
-# Blend Tree
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:blend-tree", "@type":"Page", "title":"Blend Tree", "vc:slug":"blend-tree", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:blend-tree",
+  "@type": "Page",
+  "title": "Blend Tree",
+  "vc:slug": "blend-tree",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:blend-tree",
-  "@type":"Class",
-  "label":"Blend Tree",
-  "definition":"A blend tree is a structure within an animation system that smoothly blends multiple animation clips according to one or more continuous parameters, producing a single output pose. It is commonly used for locomotion, where clips such as idle, walk and run are interpolated by speed and direction to avoid abrupt transitions. Blend trees are typically composed within an animation controller alongside state machines that govern when each tree is active.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:animation","label":"Animation"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:animation-controller","label":"Animation Controller"}],
-    "hasPart":[{"@id":"urn:ngm:class:keyframe-animation","label":"Keyframe Animation"}],
-    "uses":[{"@id":"urn:ngm:class:skeletal-animation","label":"Skeletal Animation"},{"@id":"urn:ngm:class:keyframe-animation","label":"Keyframe Animation"}],
-    "requires":[{"@id":"urn:ngm:class:animation-controller","label":"Animation Controller"}],
-    "enables":[{"@id":"urn:ngm:class:locomotion","label":"Locomotion"},{"@id":"urn:ngm:class:procedural-animation","label":"Procedural Animation"}],
-    "supports":[{"@id":"urn:ngm:class:character-animation","label":"Character Animation"}],
-    "dependsOn":[{"@id":"urn:ngm:class:game-engine","label":"Game Engine"}],
-    "implements":[{"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"}],
-    "relatedTo":[{"@id":"urn:ngm:class:motion-capture","label":"Motion Capture"},{"@id":"urn:ngm:class:inverse-kinematics","label":"Inverse Kinematics"},{"@id":"urn:ngm:class:unity","label":"Unity"},{"@id":"urn:ngm:class:unreal-engine","label":"Unreal Engine"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blend-tree",
+  "@type": "Class",
+  "label": "Blend Tree",
+  "definition": "A blend tree is a structure within an animation system that smoothly blends multiple animation clips according to one or more continuous parameters, producing a single output pose. It is commonly used for locomotion, where clips such as idle, walk and run are interpolated by speed and direction to avoid abrupt transitions. Blend trees are typically composed within an animation controller alongside state machines that govern when each tree is active.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:animation",
+      "label": "Animation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:animation-controller",
+        "label": "Animation Controller"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:animation-controller",
+        "label": "Animation Controller"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:locomotion",
+        "label": "Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:unity",
+        "label": "Unity"
+      },
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

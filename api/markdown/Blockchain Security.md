@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Blockchain-Security
----
-
-# Blockchain Security
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -205,7 +198,7 @@ aliases:
   - #### Cryptographic Foundations
     - [[Cryptographic Protocol]] integrity underpins all blockchain security guarantees. Hash functions (SHA-256, Keccak-256), digital signature schemes (ECDSA, EdDSA), and Merkle tree constructions must be implemented correctly and remain computationally hard to invert.
     - [[Cryptographic Key Management]] — secure generation, storage, and rotation of private keys — is the most common point of failure for end users. Hardware security modules (HSMs) and hardware wallets mitigate key theft.
-    - [[Post-Quantum Cryptography]] migration is an emerging concern: sufficiently powerful quantum computers could break ECDSA signatures, threatening all UTXO-based chains. NIST post-quantum standards (lattice-based schemes such as ML-DSA/Dilithium) are candidates for future blockchain signature schemes.
+    - [[Post-Quantum Cryptography]] migration is an emerging concern: sufficiently powerful quantum computers [private] break ECDSA signatures, threatening all UTXO-based chains. NIST post-quantum standards (lattice-based schemes such as ML-DSA/Dilithium) are candidates for future blockchain signature schemes.
     - [[Zero-Knowledge Proof]] systems (zk-SNARKs, zk-STARKs) are used both as a scaling mechanism (validity proofs in zk-rollups) and as a privacy-preserving security tool, enabling transaction validation without revealing transaction data.
   - #### Economic Security
     - [[Miner Extractable Value]] (MEV) — the profit miners/validators can extract by reordering transactions — represents a systemic risk to transaction fairness and can incentivise chain reorganisations.

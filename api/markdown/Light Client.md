@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Light Client
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,67 +196,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:light-client:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aa685ca4d1f6699e6d02731053abd6f3b0a094adf955c0b5be311db8d4cf910e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Interoperability Protocol]]",
-      "resolved": "urn:visionflow:linked:interoperability-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SPV (Simplified Payment Verification)]]",
-      "resolved": "urn:visionflow:linked:spv-simplified-payment-verification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[State Proof]]",
-      "resolved": "urn:visionflow:linked:state-proof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cross-Chain Bridge]]",
-      "resolved": "urn:visionflow:owl:class:cross-chain-bridge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Full Node]]",
-      "resolved": "urn:visionflow:owl:class:full-node",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Merkle Tree]]",
-      "resolved": "urn:visionflow:owl:class:merkle-tree",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Relayer]]",
-      "resolved": "urn:visionflow:owl:class:relayer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Resource-efficient blockchain client that validates block headers and uses cryptographic proofs (Merkle proofs, state proofs) to verify transaction inclusion without downloading full blockchain state. Light clients enable trustless interaction from mobile devices, browsers, and IoT systems while requiring only megabytes of storage versus gigabytes for full nodes.

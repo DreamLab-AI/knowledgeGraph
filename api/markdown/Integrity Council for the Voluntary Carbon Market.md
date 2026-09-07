@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Integrity Council for the Voluntary Carbon Market
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:integrity-council-for-the-voluntary-carbon-market:9c817385835f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b2f30ab5d91edba23125a806671b595a9f316663525bc84c97c95dcb92a70a3f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Voluntary Carbon Market]]",
-      "resolved": "urn:visionflow:linked:voluntary-carbon-market",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Credits]]",
-      "resolved": "urn:visionflow:linked:carbon-credits",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transparency]]",
-      "resolved": "urn:visionflow:linked:transparency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Offsetting]]",
-      "resolved": "urn:visionflow:linked:carbon-offsetting",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An independent governance body that sets and maintains quality standards for credits traded in the voluntary carbon market.

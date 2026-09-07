@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BEIR Benchmark
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,46 +72,136 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:bm25", "label": "BM25"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:ndcg-metric", "label": "nDCG@10"},
-      {"@id": "urn:ngm:class:recall-metric", "label": "Recall@100"},
-      {"@id": "urn:ngm:class:faiss", "label": "FAISS"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:ndcg-metric",
+        "label": "nDCG@10"
+      },
+      {
+        "@id": "urn:ngm:class:recall-metric",
+        "label": "Recall@100"
+      },
+      {
+        "@id": "urn:ngm:class:faiss",
+        "label": "FAISS"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:dense-passage-retrieval", "label": "Dense Passage Retrieval"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:zero-shot-generalisation", "label": "Zero-Shot Generalisation"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:dense-passage-retrieval",
+        "label": "Dense Passage Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-shot-generalisation",
+        "label": "Zero-Shot Generalisation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:ms-marco", "label": "MS MARCO"},
-      {"@id": "urn:ngm:class:trec-covid", "label": "TREC-COVID"},
-      {"@id": "urn:ngm:class:nfcorpus", "label": "NFCorpus"},
-      {"@id": "urn:ngm:class:fiqa", "label": "FiQA-2018"},
-      {"@id": "urn:ngm:class:arguana", "label": "ArguAna"},
-      {"@id": "urn:ngm:class:scifact", "label": "SciFact"},
-      {"@id": "urn:ngm:class:hotpotqa", "label": "HotpotQA"}
+      {
+        "@id": "urn:ngm:class:ms-marco",
+        "label": "MS MARCO"
+      },
+      {
+        "@id": "urn:ngm:class:trec-covid",
+        "label": "TREC-COVID"
+      },
+      {
+        "@id": "urn:ngm:class:nfcorpus",
+        "label": "NFCorpus"
+      },
+      {
+        "@id": "urn:ngm:class:fiqa",
+        "label": "FiQA-2018"
+      },
+      {
+        "@id": "urn:ngm:class:arguana",
+        "label": "ArguAna"
+      },
+      {
+        "@id": "urn:ngm:class:scifact",
+        "label": "SciFact"
+      },
+      {
+        "@id": "urn:ngm:class:hotpotqa",
+        "label": "HotpotQA"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:hybrid-search", "label": "Hybrid Search"},
-      {"@id": "urn:ngm:class:cross-encoder-reranking", "label": "Cross-Encoder Reranking"},
-      {"@id": "urn:ngm:class:mteb-benchmark", "label": "MTEB Benchmark"},
-      {"@id": "urn:ngm:class:colbert", "label": "ColBERT"},
-      {"@id": "urn:ngm:class:splade", "label": "SPLADE"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}
+      {
+        "@id": "urn:ngm:class:hybrid-search",
+        "label": "Hybrid Search"
+      },
+      {
+        "@id": "urn:ngm:class:cross-encoder-reranking",
+        "label": "Cross-Encoder Reranking"
+      },
+      {
+        "@id": "urn:ngm:class:mteb-benchmark",
+        "label": "MTEB Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:colbert",
+        "label": "ColBERT"
+      },
+      {
+        "@id": "urn:ngm:class:splade",
+        "label": "SPLADE"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
     ],
     "implementedBy": [
-      {"@id": "urn:ngm:class:bge-model", "label": "BGE"},
-      {"@id": "urn:ngm:class:e5-model", "label": "E5"},
-      {"@id": "urn:ngm:class:voyage-ai", "label": "Voyage AI"},
-      {"@id": "urn:ngm:class:cohere-embed", "label": "Cohere Embed"}
+      {
+        "@id": "urn:ngm:class:bge-model",
+        "label": "BGE"
+      },
+      {
+        "@id": "urn:ngm:class:e5-model",
+        "label": "E5"
+      },
+      {
+        "@id": "urn:ngm:class:voyage-ai",
+        "label": "Voyage AI"
+      },
+      {
+        "@id": "urn:ngm:class:cohere-embed",
+        "label": "Cohere Embed"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ms-marco-benchmark", "label": "MS MARCO Benchmark"},
-      {"@id": "urn:ngm:class:glue-benchmark", "label": "GLUE Benchmark"},
-      {"@id": "urn:ngm:class:squad", "label": "SQuAD"}
+      {
+        "@id": "urn:ngm:class:ms-marco-benchmark",
+        "label": "MS MARCO Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:glue-benchmark",
+        "label": "GLUE Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:squad",
+        "label": "SQuAD"
+      }
     ]
   },
   "quality": 0.92,
@@ -249,15 +334,15 @@ public: true
       ObjectSomeValuesFrom(ai:supports ai:DomainAdaptationResearch))
     ```
   - ## About
-    - BEIR (Benchmarking Information Retrieval) arose from a practical crisis in the neural retrieval community. By 2020-2021, the release of Dense Passage Retrieval (DPR; Karpukhin et al. 2020) and related dense neural encoders had demonstrated that transformer-based bi-encoders could substantially outperform classical BM25 on standard benchmarks such as MS MARCO and Natural Questions. However, practitioners and researchers noted that these models, trained exclusively on MS MARCO's web question-answering data, performed poorly or inconsistently when applied to out-of-domain corpora — medical literature, legal documents, scientific papers, or debate arguments. The generalisation gap was real but lacked a systematic, publicly reproducible measurement framework. Thakur et al. (2021) — Nandan Thakur, Nils Reimers, Andreas Rücklé, Abhishek Srivastava, and Iryna Gurevych, based at the UKP Lab at TU Darmstadt and the sentence-transformers ecosystem — addressed this by assembling eighteen existing retrieval-oriented datasets into a unified evaluation suite with a consistent preprocessing pipeline, the open-source `beir` Python library, and standardised metrics.
+    - BEIR (Benchmarking Information Retrieval) arose from a practical crisis in the neural retrieval community. By 2020-2021, the release of Dense Passage Retrieval (DPR; Karpukhin et al. 2020) and related dense neural encoders had demonstrated that transformer-based bi-encoders [private] substantially outperform classical BM25 on standard benchmarks such as MS MARCO and Natural Questions. However, practitioners and researchers noted that these models, trained exclusively on MS MARCO's web question-answering data, performed poorly or inconsistently when applied to out-of-domain corpora — medical literature, legal documents, scientific papers, or debate arguments. The generalisation gap was real but lacked a systematic, publicly reproducible measurement framework. Thakur et al. (2021) — Nandan Thakur, Nils Reimers, Andreas Rücklé, Abhishek Srivastava, and Iryna Gurevych, based at the UKP Lab at TU Darmstadt and the sentence-transformers ecosystem — addressed this by assembling eighteen existing retrieval-oriented datasets into a unified evaluation suite with a consistent preprocessing pipeline, the open-source `beir` Python library, and standardised metrics.
     - The name "heterogeneous benchmark" reflects the deliberate diversity of BEIR's constituent tasks. Unlike MS MARCO, which comprises web search queries answered by short passages from Bing results, BEIR spans nine distinct retrieval task types: fact verification (FEVER, Climate-FEVER, SciFact), question answering (Natural Questions, HotpotQA, FiQA, MSMARCO), duplicate question finding (Quora Question Pairs), biomedical retrieval (NFCorpus, TREC-COVID), argument retrieval (ArguAna, Touche-2020), entity retrieval (DBPedia), citation prediction (SCIDOCS), tweet retrieval (Signal-1M), and news retrieval (TREC-NEWS). Corpus sizes range from around 5,000 documents (SciFact) to 21 million passages (MS MARCO full corpus), and query counts range from 50 to 10,000, creating varying challenges for both corpus indexing and query understanding. The diversity ensures that no single retrieval strategy dominates across all tasks, making BEIR a genuine stress test for generalisation rather than overfitting to one retrieval paradigm.
-    - A seminal finding from the original BEIR paper was that BM25 — despite being a decades-old lexical matching algorithm with no neural components — remained competitive with or outperformed many dense retrieval models on out-of-domain BEIR datasets, particularly those with specialised vocabularies (NFCorpus for nutrition science, TREC-COVID for biomedical literature). This was a significant challenge to the prevailing narrative that neural dense retrieval was categorically superior, and motivated substantial follow-on research into models that could combine the lexical precision of sparse retrieval with the semantic flexibility of dense retrieval.
+    - A seminal finding from the original BEIR paper was that BM25 — despite being a decades-old lexical matching algorithm with no neural components — remained competitive with or outperformed many dense retrieval models on out-of-domain BEIR datasets, particularly those with specialised vocabularies (NFCorpus for nutrition science, TREC-COVID for biomedical literature). This was a significant challenge to the prevailing narrative that neural dense retrieval was categorically superior, and motivated substantial follow-on research into models that [private] combine the lexical precision of sparse retrieval with the semantic flexibility of dense retrieval.
   - ## Components and Architecture
     - **Dataset Collection Pipeline** — the `beir` Python library (open-sourced at github.com/beir-cellar/beir) provides consistent preprocessing: each dataset is delivered as a JSON-lines corpus file, a query file, and a query-relevant-passage mapping (qrels) in TREC format. All datasets use a standard split into test queries for evaluation.
     - **Retrieval Systems Evaluated** — the benchmark was originally evaluated on: (1) sparse lexical models: BM25 (Elasticsearch/Pyserini), DocT5Query (expanded BM25); (2) dense bi-encoder models: DPR, ANCE, TAS-B, SBERT variants; (3) late-interaction models: ColBERT; (4) cross-encoder re-rankers; (5) learned sparse models: SPLADE, uniCOIL.
     - **Evaluation Metrics** — nDCG@10 is the primary metric; it rewards models that place the most relevant documents highest, weighted by a log discount factor for rank position. Recall@100 measures how many of all relevant documents appear in the top 100 results, assessing whether the first-stage retrieval provides sufficient coverage for a re-ranking stage. MRR@10 (mean reciprocal rank) is sometimes reported for question-answering subtasks.
     - **[[nDCG@10]] Computation** — for a ranked list of 10 retrieved documents with relevance grades rᵢ: nDCG@10 = DCG@10 / IDCG@10 where DCG@10 = ∑ᵢ₌₁¹⁰ (2^rᵢ - 1) / log₂(i+1) and IDCG@10 is the DCG of the ideal ranking.
-    - **Indexing Infrastructure** — FAISS (Facebook AI Similarity Search) is the standard approximate nearest-neighbour index for dense retrieval experiments; BM25 experiments use Elasticsearch or the Pyserini/Lucene-based retrieval toolkit.
+    - **Indexing Infrastructure** — FAISS (Facebook AI Similarity Search) is the standard approximate nearest-neighbour [private] for dense retrieval experiments; BM25 experiments use Elasticsearch or the Pyserini/Lucene-based retrieval toolkit.
     - **The Eighteen Datasets** — grouped by task type:
       - *Question Answering*: MS MARCO Dev, Natural Questions, HotpotQA, FiQA-2018
       - *Fact Verification*: FEVER, Climate-FEVER, SciFact
@@ -287,7 +372,7 @@ public: true
     - Community-contributed extensions beyond BEIR include: BEIR-NL (Dutch BEIR, 14 datasets, 2025 ACL-BUCC), BEIR-PL (Polish BEIR), M-BEIR (multilingual multimodal retrieval including image-text pairs, Wei et al. 2024), and LMEB (Long-horizon Memory Embedding Benchmark, 2025) for evaluating embeddings over long document collections.
   - ## Academic Context
     - BEIR was introduced by Nandan Thakur, Nils Reimers, Andreas Rücklé, Abhishek Srivastava, and Iryna Gurevych (UKP Lab, TU Darmstadt) at NeurIPS 2021 Datasets and Benchmarks Track. Nils Reimers subsequently joined Hugging Face, where sentence-transformers and BEIR became central to the open-source embedding ecosystem. The paper "Resources for Brewing BEIR: Reproducible Reference Models and an Official Leaderboard" (2023) formalised the BEIR leaderboard infrastructure and provided canonical baseline models.
-    - Key theoretical contributions surrounding BEIR address the generalisation challenge. Formal et al. (2021, 2022) at NAVER Labs Paris introduced SPLADE, showing that learning sparse representations via masked language modelling could yield better out-of-domain transfer than dense retrievers. Santhanam et al. (Stanford) introduced ColBERT v2 with compressed multi-vector representations that achieved strong BEIR performance. Wang et al. (Microsoft Research) introduced E5 (Embeddings from Bidirectional Encoder Representations), demonstrating that fine-tuning with diverse web data and text-matching tasks substantially improves BEIR generalisation. The instruction-tuned embedding paradigm (INSTRUCTOR, Su et al. 2023; E5-Mistral, Wang et al. 2024) further advances zero-shot transfer by conditioning the encoder on a natural-language description of the retrieval task.
+    - Key theoretical contributions surrounding BEIR address the generalisation challenge. Formal et al. (2021, 2022) at NAVER Labs Paris introduced SPLADE, showing that learning sparse representations via masked language modelling [private] yield better out-of-domain transfer than dense retrievers. Santhanam et al. (Stanford) introduced ColBERT v2 with compressed multi-vector representations that achieved strong BEIR performance. Wang et al. (Microsoft Research) introduced E5 (Embeddings from Bidirectional Encoder Representations), demonstrating that fine-tuning with diverse web data and text-matching tasks substantially improves BEIR generalisation. The instruction-tuned embedding paradigm (INSTRUCTOR, Su et al. 2023; E5-Mistral, Wang et al. 2024) further advances zero-shot transfer by conditioning the encoder on a natural-language description of the retrieval task.
     - The "generalisation versus specialisation" tension exposed by BEIR has generated rich theoretical debate. Sur et al. (2022) showed that dense models learn query-document matching functions that are highly dataset-specific, explaining poor transfer; Thakur et al. responded with BEIR-AugSPLADE and data augmentation strategies. The discovery that BM25 was competitive on out-of-domain tasks led to renewed interest in hybrid retrieval — combining BM25's exact-match lexical precision with dense semantic embeddings — a strategy now universally adopted in production RAG systems via Reciprocal Rank Fusion (RRF) or learned fusion weights.
     - SIGIR (ACM Special Interest Group on Information Retrieval) and ECIR (European Conference on Information Retrieval) are the primary publication venues for BEIR-related systems research, with substantial overlap with ACL/EMNLP/NAACL for neural retrieval papers. The TREC (Text REtrieval Conference) track at NIST has independently developed complementary evaluation frameworks for biomedical and news retrieval that contributed datasets to BEIR.
   - ## Current Landscape (2026)
@@ -474,13 +559,13 @@ public: true
     - Scientific and medical retrieval represent two of the most consequential applications of [[Information Retrieval]] systems, and BEIR includes four specialised datasets targeting these domains: TREC-COVID, NFCorpus, SciFact, and SCIDOCS. The consistent finding across these four datasets is that models pre-trained on general web text or MS MARCO question-answering fail to transfer well to specialised scientific vocabulary, making scientific information retrieval a persistent benchmark stress test that motivates domain adaptation research.
     - **Biomedical retrieval** presents unique challenges because: (1) terminology is highly specialised (disease mechanisms, drug names, gene symbols, anatomical terminology); (2) queries from clinicians, researchers, and patients differ significantly in vocabulary and specificity; (3) relevance often requires expert knowledge to judge correctly. TREC-COVID illustrates these challenges: a query for "COVID-19 and cardiovascular complications" requires a retrieval model to understand that "SARS-CoV-2 myocarditis" is relevant even though the query terms do not literally appear. Domain-adapted biomedical models such as BioLinkBERT, PubMedBERT, and SapBERT substantially improve over general-purpose dense retrievers on TREC-COVID and NFCorpus, validating the need for domain-specific embedding models in clinical settings.
     - Clinical and NHS applications in the UK context illustrate why BEIR generalisation matters at a societal level. NHS Digital's evidence synthesis teams use systematic search over MEDLINE, EMBASE, and NICE evidence bases to support clinical guideline development (NICE guidance). BEIR-validated retrieval models are increasingly used to automate parts of this systematic search process, where the cost of false negatives (missing a relevant study) is potentially harm to patients. The heterogeneous nature of BEIR's biomedical datasets provides a reasonable proxy for evaluating retrieval across different clinical question types (diagnostic, therapeutic, epidemiological).
-    - Academic literature search — the task of finding prior work relevant to a research question — is directly evaluated by SCIDOCS (citation prediction as retrieval proxy). The CORD-19 dataset underlying TREC-COVID was assembled in 48 hours in March 2020 from multiple publisher APIs as an emergency response to the COVID-19 pandemic; its integration into BEIR enabled timely evaluation of whether IR models could assist researchers navigating a rapidly growing literature. By 2022, models fine-tuned on CORD-19 citation data significantly improved upon general-purpose retrievers on TREC-COVID, demonstrating the effectiveness of in-domain adaptation even with limited supervision.
+    - Academic literature search — the task of finding prior work relevant to a research question — is directly evaluated by SCIDOCS (citation prediction as retrieval proxy). The CORD-19 dataset underlying TREC-COVID was assembled in 48 hours in March 2020 from multiple publisher APIs as an emergency response to the COVID-19 pandemic; its integration into BEIR enabled timely evaluation of whether IR models [private] assist researchers navigating a rapidly growing literature. By 2022, models fine-tuned on CORD-19 citation data significantly improved upon general-purpose retrievers on TREC-COVID, demonstrating the effectiveness of in-domain adaptation even with limited supervision.
     - Legal document retrieval represents another high-stakes application of zero-shot [[Information Retrieval]], though BEIR's original eighteen datasets do not include a dedicated legal corpus. BEIRLegal (proposed but not official) and COLIEE (Competition on Legal Information Extraction/Entailment) extend the BEIR evaluation philosophy to case law and statute retrieval. The BEIR methodology — testing on held-out domains — is directly applicable to legal retrieval where the training domain (web text, Wikipedia) differs substantially from the evaluation domain (judicial opinions, legislative texts).
   - ## Technical Implementation Details
     - Running BEIR evaluations requires attention to several technical details that significantly affect reported scores. Understanding these details is essential for fair comparison between systems.
     - **Document chunking** — BEIR datasets provide corpus documents at varying granularities. MS MARCO provides passages already chunked at ~100 tokens; TREC-COVID provides full paper abstracts (~200 tokens); NFCorpus provides variable-length documents. Dense bi-encoders trained on 512-token sequences need documents pre-truncated at that limit; full documents from longer datasets are typically truncated, potentially losing relevant content in later portions. Long-context embedding models (Jina-Embeddings-v3 at 8192 tokens, SFR-Embedding-Mistral, various Voyage models) improve on this by embedding full documents without truncation.
     - **Batch inference** — encoding millions of documents requires efficient batching. GPU memory limits batch sizes (typically 32-512 passages per batch depending on passage length and model size); larger models require smaller batches or gradient checkpointing during encoding. The `beir` library handles this automatically but practitioners running large models on multi-GPU setups may need to adjust batch sizes, use data parallelism across GPUs, or shard the corpus across devices.
-    - **Index building** — the `beir` evaluation pipeline builds a FAISS flat index (exact nearest-neighbour search) for reproducibility. FAISS flat search is O(n) per query (brute force over all corpus vectors), which is feasible for BEIR's largest corpora (~21M passages for MS MARCO Dev) on modern GPUs but may take 30-60 minutes. Production systems use FAISS HNSW or IVF-PQ approximate indices that achieve sub-millisecond query latency at the cost of small recall losses (typically <1% nDCG@10 loss versus exact search).
+    - **Index building** — the `beir` evaluation pipeline builds a FAISS flat [private] (exact nearest-neighbour search) for reproducibility. FAISS flat search is O(n) per query (brute force over all corpus vectors), which is feasible for BEIR's largest corpora (~21M passages for MS MARCO Dev) on modern GPUs but may take 30-60 minutes. Production systems use FAISS HNSW or IVF-PQ approximate indices that achieve sub-millisecond query latency at the cost of small recall losses (typically <1% nDCG@10 loss versus exact search).
     - **BM25 implementation** — the `beir` library originally used Elasticsearch for BM25 baselines; the "Brewing BEIR" paper (2023) standardised on Pyserini/Anserini (Lucene-based) for reproducibility. BM25 parameter choices (k1, b) affect scores: the BEIR defaults (k1=0.9, b=0.4 for SPLADE; k1=1.2, b=0.75 for standard BM25) follow Pyserini defaults optimised over web retrieval. Dataset-specific BM25 parameter tuning can improve individual dataset scores but reduces comparability across datasets.
     - **Relevance threshold** — BEIR datasets use varying relevance threshold conventions. Binary datasets (SciFact, ArguAna) treat all judged-relevant documents as grade 1 and unjudged as grade 0. Multi-grade datasets (TREC-COVID uses 0/1/2 grades; FEVER uses 0/1/2/3 grades) compute nDCG using exponential relevance (2^grade - 1). When comparing systems across BEIR papers, it is essential to verify that the same relevance thresholding is applied.
     - **Negative document handling** — BEIR evaluates only on judged documents (those with explicit relevance labels). Unjudged documents are treated as irrelevant, which can underestimate true model performance for models that retrieve genuinely relevant unjudged documents. This "pooling bias" is a known limitation of BEIR and other TREC-style benchmarks; it is mitigated by deep pooling in the original TREC tracks but is unavoidable in BEIR's re-use of datasets with limited pools.
@@ -545,7 +630,7 @@ public: true
     - **[[ColBERT]]** — Contextualized Late Interaction over BERT; a multi-vector retrieval model in which each token of the query attends to the token most similar across all document tokens (MaxSim); balances the efficiency of bi-encoders with the expressiveness of cross-encoders.
     - **Contrastive Learning** — the training paradigm used for embedding models: a positive query-document pair is pushed together in embedding space while negative pairs are pushed apart; hard negatives (retrieved by BM25 but not relevant) improve training quality.
     - **[[Cross-Encoder Reranking]]** — a re-ranking model that takes a query-document pair as joint input to a [[Transformer]], producing a single relevance score; expensive at scale but produces more accurate relevance scores than bi-encoders; used as a second stage after first-stage retrieval in production pipelines.
-    - **[[Dense Passage Retrieval]]** (DPR) — the original Facebook/Meta dense bi-encoder retrieval model (Karpukhin et al. 2020); trained on Natural Questions with in-batch negatives; the model that proved dense retrieval could outperform BM25 on in-domain QA, motivating BEIR's cross-domain evaluation.
+    - **[[Dense Passage Retrieval]]** (DPR) — the original Facebook/Meta dense bi-encoder retrieval model (Karpukhin et al. 2020); trained on Natural Questions with in-batch negatives; the model that proved dense retrieval [private] outperform BM25 on in-domain QA, motivating BEIR's cross-domain evaluation.
     - **FAISS** — Facebook AI Similarity Search; an open-source library for efficient similarity search over dense vector collections; provides flat (exact), IVF (inverted file, approximate), and HNSW (hierarchical navigable small world graph) indices; the standard indexing backend for BEIR dense retrieval experiments.
     - **[[Hybrid Search]]** — a retrieval strategy that combines sparse (BM25/SPLADE) and dense (bi-encoder) retrieval scores; typically fused via Reciprocal Rank Fusion (RRF) or learned score weighting; consistently achieves better BEIR scores than either approach alone.
     - **[[Information Retrieval]]** — the discipline of representing, storing, and providing access to documents so that user information needs expressed as queries can be satisfied; BEIR is the primary zero-shot evaluation benchmark for modern neural IR.

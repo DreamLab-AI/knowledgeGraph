@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stochastic Processes
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,67 +195,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:stochastic-processes:1d9b9b6fded5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:be850f3dbe31f8843b8bbb1733823e70640124919552e997080148df25b5a5d1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Markov Chain]]",
-      "resolved": "urn:visionflow:linked:markov-chain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Brownian Motion]]",
-      "resolved": "urn:visionflow:linked:brownian-motion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Measure Theory]]",
-      "resolved": "urn:visionflow:linked:measure-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quantitative Finance]]",
-      "resolved": "urn:visionflow:linked:quantitative-finance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Time Series Analysis]]",
-      "resolved": "urn:visionflow:linked:time-series-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A stochastic process is a collection of random variables indexed by time or another parameter, used to model systems that evolve with randomness. Examples include random walks, Markov chains, Poisson processes and Brownian motion, each characterised by how its future behaviour depends on its present and past states. Stochastic processes are foundational in probability theory and are applied across physics, biology, queueing theory and quantitative finance.

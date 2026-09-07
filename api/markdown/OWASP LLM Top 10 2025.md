@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OWASP LLM Top 10 2025
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The OWASP LLM Top 10 2025 is the updated edition of OWASP's ranked list of the most critical security risks for applications built on large language models. It catalogs threats such as prompt injection, sensitive information disclosure, supply-chain vulnerabilities, excessive agency, and improper output handling, with guidance on mitigation. The list is a widely referenced baseline for securing LLM and agentic AI systems.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:agents", "label": "Agents"},
-      {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"}
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
     ]
   },
   "quality": 0.72

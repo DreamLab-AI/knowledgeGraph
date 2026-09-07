@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hardware Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Hardware Design",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:systems-engineering", "vc:label": "Systems Engineering"},
-    {"@id": "urn:visionflow:linked:hardware-description-language", "vc:label": "Hardware Description Language"},
-    {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"},
-    {"@id": "urn:visionflow:linked:semiconductor", "vc:label": "Semiconductor"}
+    {
+      "@id": "urn:visionflow:linked:systems-engineering",
+      "vc:label": "Systems Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-description-language",
+      "vc:label": "Hardware Description Language"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-verification",
+      "vc:label": "Formal Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:semiconductor",
+      "vc:label": "Semiconductor"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,19 +50,40 @@ public: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:hardware-description-language", "label": "Hardware Description Language"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:hardware-description-language",
+        "label": "Hardware Description Language"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:system-on-chip", "label": "System-on-Chip"},
-      {"@id": "urn:ngm:class:fpga", "label": "FPGA"}
+      {
+        "@id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      },
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semiconductor", "label": "Semiconductor"},
-      {"@id": "urn:ngm:class:jedec", "label": "JEDEC"}
+      {
+        "@id": "urn:ngm:class:semiconductor",
+        "label": "Semiconductor"
+      },
+      {
+        "@id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "quality": 0.8,

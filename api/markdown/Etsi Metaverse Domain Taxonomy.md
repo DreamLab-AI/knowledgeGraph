@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Etsi Metaverse Domain Taxonomy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -79,37 +74,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-metaverse-domain-taxonomy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:18b645ab184f32fcd1de7bdeaf02eec324fa841e05cad4363412feafb9292cef"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Standards Interoperability]]",
-      "resolved": "urn:visionflow:linked:standards-interoperability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Taxonomy]]",
-      "resolved": "urn:visionflow:linked:taxonomy",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A hierarchical classification system developed by ETSI organising metaverse concepts, technologies, and services into structured categories, enabling consistent terminology, clear domain boundaries, and interoperable standards development across the telecommunications and immersive technology industries.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Permissionless Lending
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Permissionless lending is the provision of on-chain credit through open protocols that anyone may access without identity gating or intermediary approval. Lenders deposit assets into smart-contract liquidity pools and borrowers draw against over-collateralised positions, with interest rates set algorithmically by utilisation. It is a foundational DeFi primitive that replaces credit underwriting with collateralisation and code-enforced liquidation.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}, {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ]
   },
   "quality": 0.72
 }

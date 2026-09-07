@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Figma
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Figma is a browser-based collaborative interface-design and prototyping platform that lets multiple designers work simultaneously on the same files in real time. It provides vector editing, component and design-system management, interactive prototyping, and developer hand-off, all stored in the cloud for seamless multiplayer collaboration. Figma has become a standard tool for UI/UX design and cross-functional product teams.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
-      {"@id": "urn:ngm:class:fig-jam", "label": "FigJam"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "@id": "urn:ngm:class:fig-jam",
+        "label": "FigJam"
+      }
     ]
   },
   "quality": 0.72

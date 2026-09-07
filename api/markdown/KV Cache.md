@@ -1,8 +1,3 @@
----
-public: true
----
-
-# KV Cache
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,4 +169,3 @@ public: true
   - The significance of KV cache engineering for practical LLM deployment is enormous. A naive implementation serving 100 concurrent users with 8K-token contexts requires the same memory as a second model instantiation. PagedAttention and similar systems typically increase GPU utilisation from 20-40% (under naive memory management) to 60-80%, reducing inference cost proportionately. For long-document applications — legal analysis, code review of large repositories, RAG over book-length documents — KV cache efficiency determines whether the application is economically viable at all. Anthropic's prompt caching feature (2024) demonstrated that sharing KV cache for identical prefixes can reduce costs by up to 90% for applications with stable system prompts.
 
   - By 2024-2025, KV cache management has become a distinct systems engineering sub-field. Disaggregated serving (separating prefill and decode phases across different GPU pools) exploits the different compute-bandwidth profiles of each phase. Cascade inference pipelines use small KV caches on-chip and larger KV caches on CPU DRAM or SSDs for ultra-long contexts (10M+ tokens). Multi-query attention (MQA) and grouped-query attention (GQA) reduce KV cache size by sharing key/value heads across multiple query heads with minimal accuracy loss. Research into linear attention and state-space models (Mamba, RWKV) aims to replace the quadratically-growing KV cache with fixed-size recurrent state, though at the cost of full attention expressivity.
-

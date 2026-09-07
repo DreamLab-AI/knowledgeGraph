@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Trustworthiness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -217,72 +212,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-trustworthiness:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:85fb2266473c3cdf13f2f211c80bf22905a384f5a25fbea9241fd95165aa0f3d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Assurance (AI-0102)]]",
-      "resolved": "urn:visionflow:linked:ai-assurance-ai-0102",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Governance Framework (AI-0035)]]",
-      "resolved": "urn:visionflow:linked:governance-framework-ai-0035",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE P7009]]",
-      "resolved": "urn:visionflow:linked:ieee-p7009",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Responsible AI (AI-0033)]]",
-      "resolved": "urn:visionflow:linked:responsible-ai-ai-0033",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Risk Management (AI-0062)]]",
-      "resolved": "urn:visionflow:linked:risk-management-ai-0062",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The degree to which an AI system demonstrates characteristics that warrant confidence and reliance, encompassing transparency, explainability, fairness, accountability, robustness, reliability, safety, security, and privacy throughout its lifecycle.

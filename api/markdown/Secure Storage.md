@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Secure Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Secure storage is the persistence of data with protections for confidentiality, integrity, and controlled access throughout its lifecycle. It combines encryption at rest, access control, tamper-evidence, and key management, sometimes anchored in hardware security modules or trusted execution environments. It is essential where stored records must remain trustworthy, such as audit trails and chains of custody.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-evidence-chain-of-custody", "label": "Digital Evidence Chain of Custody"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:digital-evidence-chain-of-custody",
+        "label": "Digital Evidence Chain of Custody"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ]
   },
   "quality": 0.72

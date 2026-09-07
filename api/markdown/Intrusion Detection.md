@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Intrusion Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

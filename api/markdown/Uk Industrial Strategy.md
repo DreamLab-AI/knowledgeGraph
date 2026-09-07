@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Uk Industrial Strategy
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

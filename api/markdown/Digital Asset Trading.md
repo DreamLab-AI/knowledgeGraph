@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Asset Trading
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,72 +206,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-asset-trading:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:925cd02c0fd0cad0a646b68e66d739f628a80d13c8911a9996ed464de60848ac"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Exchange Platform]]",
-      "resolved": "urn:visionflow:linked:exchange-platform",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Market Making]]",
-      "resolved": "urn:visionflow:linked:market-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Order Matching]]",
-      "resolved": "urn:visionflow:linked:order-matching",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Settlement Systems]]",
-      "resolved": "urn:visionflow:linked:settlement-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Trading]]",
-      "resolved": "urn:visionflow:owl:class:financial-trading",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Provision]]",
-      "resolved": "urn:visionflow:owl:class:liquidity-provision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Price Discovery]]",
-      "resolved": "urn:visionflow:owl:class:price-discovery",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.

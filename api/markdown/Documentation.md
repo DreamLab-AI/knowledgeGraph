@@ -1,37 +1,114 @@
----
-public: true
----
-
-# Documentation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:documentation", "@type":"Page", "title":"Documentation", "vc:slug":"documentation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:documentation",
+  "@type": "Page",
+  "title": "Documentation",
+  "vc:slug": "documentation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:documentation",
-  "@type":"Class",
-  "label":"Documentation",
-  "definition":"Documentation is the structured body of written, diagrammatic, or interactive material that describes the purpose, design, behaviour, and use of a system, dataset, process, or software artefact. It serves as the primary medium through which knowledge about an artefact is transferred between its creators and its users, maintainers, and auditors. Effective documentation spans reference material, conceptual explanations, tutorials, and procedural guides, and is increasingly treated as a versioned, testable component of the artefact itself rather than an afterthought.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data","label":"Data"}],
-  "relations":{
-    "supports":[{"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"},{"@id":"urn:ngm:class:knowledge-management","label":"Knowledge Management"}],
-    "requires":[{"@id":"urn:ngm:class:version-control","label":"Version Control"},{"@id":"urn:ngm:class:metadata","label":"Metadata"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data","label":"Data"}],
-    "enables":[{"@id":"urn:ngm:class:maintainability","label":"Maintainability"}],
-    "uses":[{"@id":"urn:ngm:class:markdown","label":"Markdown"},{"@id":"urn:ngm:class:static-site-generation","label":"Static Site Generation"}],
-    "hasPart":[{"@id":"urn:ngm:class:api-reference","label":"API Reference"},{"@id":"urn:ngm:class:tutorial","label":"Tutorial"}],
-    "relatedTo":[{"@id":"urn:ngm:class:technical-writing","label":"Technical Writing"},{"@id":"urn:ngm:class:reproducible-research","label":"Reproducible Research"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:tribal-knowledge","label":"Tribal Knowledge"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:documentation",
+  "@type": "Class",
+  "label": "Documentation",
+  "definition": "Documentation is the structured body of written, diagrammatic, or interactive material that describes the purpose, design, behaviour, and use of a system, dataset, process, or software artefact. It serves as the primary medium through which knowledge about an artefact is transferred between its creators and its users, maintainers, and auditors. Effective documentation spans reference material, conceptual explanations, tutorials, and procedural guides, and is increasingly treated as a versioned, testable component of the artefact itself rather than an afterthought.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
+  "relations": {
+    "supports": [
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:maintainability",
+        "label": "Maintainability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:markdown",
+        "label": "Markdown"
+      },
+      {
+        "@id": "urn:ngm:class:static-site-generation",
+        "label": "Static Site Generation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:api-reference",
+        "label": "API Reference"
+      },
+      {
+        "@id": "urn:ngm:class:tutorial",
+        "label": "Tutorial"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:technical-writing",
+        "label": "Technical Writing"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:tribal-knowledge",
+        "label": "Tribal Knowledge"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

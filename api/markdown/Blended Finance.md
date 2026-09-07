@@ -1,37 +1,122 @@
----
-public: true
----
-
-# Blended Finance
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:blended-finance", "@type":"Page", "title":"Blended Finance", "vc:slug":"blended-finance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:blended-finance",
+  "@type": "Page",
+  "title": "Blended Finance",
+  "vc:slug": "blended-finance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:blended-finance",
-  "@type":"Class",
-  "label":"Blended Finance",
-  "definition":"Blended finance is the strategic use of concessional public or philanthropic capital to mobilise additional private investment toward development and sustainability goals. By absorbing early-stage or disproportionate risk, the concessional tranche improves the risk-adjusted return of a project enough to attract commercial investors who would not otherwise participate. It is widely applied to fund infrastructure, climate, and social projects in markets perceived as too risky for purely commercial capital.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:finance","label":"Finance"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"},{"@id":"urn:ngm:class:capital-allocation","label":"Capital Allocation"}],
-    "enables":[{"@id":"urn:ngm:class:impact-investing","label":"Impact Investing"},{"@id":"urn:ngm:class:sustainable-development","label":"Sustainable Development"},{"@id":"urn:ngm:class:social-impact","label":"Social Impact"}],
-    "supports":[{"@id":"urn:ngm:class:green-finance","label":"Green Finance"},{"@id":"urn:ngm:class:sustainable-development","label":"Sustainable Development"}],
-    "uses":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"},{"@id":"urn:ngm:class:capital-allocation","label":"Capital Allocation"}],
-    "requires":[{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:impact-investing","label":"Impact Investing"},{"@id":"urn:ngm:class:esg","label":"ESG"},{"@id":"urn:ngm:class:interest-rate","label":"Interest Rate"}],
-    "implements":[{"@id":"urn:ngm:class:capital-allocation","label":"Capital Allocation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:impact-investing","label":"Impact Investing"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:green-finance","label":"Green Finance"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blended-finance",
+  "@type": "Class",
+  "label": "Blended Finance",
+  "definition": "Blended finance is the strategic use of concessional public or philanthropic capital to mobilise additional private investment toward development and sustainability goals. By absorbing early-stage or disproportionate risk, the concessional tranche improves the risk-adjusted return of a project enough to attract commercial investors who would not otherwise participate. It is widely applied to fund infrastructure, climate, and social projects in markets perceived as too risky for purely commercial capital.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:finance",
+      "label": "Finance"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "@id": "urn:ngm:class:social-impact",
+        "label": "Social Impact"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      },
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

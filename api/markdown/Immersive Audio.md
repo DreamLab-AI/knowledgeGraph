@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersive Audio
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Immersive audio refers to audio reproduction and processing technologies that create a convincing three-dimensional sound field, enveloping the listener in a spatially accurate sonic environment. It encompasses object-based audio formats, binaural rendering, ambisonics, and head-related transfer function (HRTF) personalisation, enabling the perception of sounds positioned above, below, and around the listener rather than confined to a flat stereo plane.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:audio-technology", "label": "Audio Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:audio-technology",
+      "label": "Audio Technology"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:binaural-rendering", "label": "Binaural Rendering"},
-      {"@id": "urn:ngm:class:audio-processing", "label": "Audio Processing"}
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:binaural-rendering",
+        "label": "Binaural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
-      {"@id": "urn:ngm:class:immersive-experience-pipeline", "label": "Immersive Experience Pipeline"}
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience-pipeline",
+        "label": "Immersive Experience Pipeline"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:audio-engine", "label": "Audio Engine"},
-      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialization"}
+      {
+        "@id": "urn:ngm:class:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "@id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - The ecosystem has expanded substantially through streaming platforms (Apple Music Spatial Audio with Dolby Atmos, Amazon Music HD), gaming engines (Unreal Engine's MetaSounds, Unity's HDRP audio), and XR platforms (Meta Quest spatial audio, Apple Vision Pro's Personalized Spatial Audio). Professional audio tools such as Aalto, SPAT Revolution, and the Dolby Atmos Production Suite allow content creators to author immersive mixes. The MPEG-H standard underpins broadcast applications, enabling personalised loudness and dialogue enhancement alongside spatial rendering for television.
 
   - In 2024–2025 immersive audio development is driven by neural audio synthesis and AI-driven HRTF personalisation, which uses machine learning to estimate individual head-related transfer functions from photographs or brief acoustic measurements rather than requiring expensive anechoic chamber sessions. Real-time AI rendering allows dynamic acoustic simulation in open-world games and XR environments, modelling reflections, occlusion, and material properties. The Apple Vision Pro's Personalized Spatial Audio feature — building HRTF profiles from user scans — is a landmark consumer deployment demonstrating the mainstream viability of personalised three-dimensional audio.
-

@@ -1,55 +1,100 @@
----
-public: true
----
-
-# Privilege Escalation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:privilege-escalation", "@type":"Page", "title":"Privilege Escalation", "vc:slug":"privilege-escalation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:privilege-escalation",
+  "@type": "Page",
+  "title": "Privilege Escalation",
+  "vc:slug": "privilege-escalation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:privilege-escalation",
-  "@type":"Class",
-  "label":"Privilege Escalation",
-  "definition":"Privilege escalation is the act of gaining rights beyond those originally granted, allowing an attacker or process to perform actions reserved for higher-trust principals. Vertical escalation moves from a lower to a higher privilege level, while horizontal escalation moves laterally to another principal at the same level. It is a pivotal phase in attack chains, typically exploiting misconfiguration, flawed access control or software vulnerabilities.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:security","label":"Security"}],
-  "relations":{
-    "exploits":[
-      {"@id":"urn:ngm:class:vulnerability","label":"Vulnerability"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privilege-escalation",
+  "@type": "Class",
+  "label": "Privilege Escalation",
+  "definition": "Privilege escalation is the act of gaining rights beyond those originally granted, allowing an attacker or process to perform actions reserved for higher-trust principals. Vertical escalation moves from a lower to a higher privilege level, while horizontal escalation moves laterally to another principal at the same level. It is a pivotal phase in attack chains, typically exploiting misconfiguration, flawed access control or software vulnerabilities.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "relations": {
+    "exploits": [
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:penetration-testing","label":"Penetration Testing"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:least-privilege","label":"Least Privilege"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      }
     ],
-    "mitigatedBy":[
-      {"@id":"urn:ngm:class:access-control","label":"Access Control"},
-      {"@id":"urn:ngm:class:least-privilege","label":"Least Privilege"}
+    "mitigatedBy": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:vulnerability","label":"Vulnerability"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
-    "detectedBy":[
-      {"@id":"urn:ngm:class:audit-logging","label":"Audit Logging"}
+    "detectedBy": [
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:authorization","label":"Authorization"},
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"},
-      {"@id":"urn:ngm:class:observability","label":"Observability"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

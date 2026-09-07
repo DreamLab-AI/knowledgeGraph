@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Mixed-Precision Training
----
-
-# Mixed Precision Training
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -171,32 +164,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mixed-precision-training:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f2482ac8b8371bfeb225a40f7cd34f7d68b9947e2995639a46642ddaa4f08678"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A training technique that uses lower precision (FP16) for most computations whilst maintaining higher precision (FP32) for critical operations, reducing memory usage and increasing training speed without sacrificing model quality. Mixed precision training leverages modern GPU tensor cores for significant speedups.
@@ -380,7 +347,7 @@ aliases:
     URL: https://www.pgupta.info/blog/2025/07/mixed-precision-mp/  
     - A detailed technical overview including recent advances such as FP8 usage.
   - NVIDIA Corporation. (2025). "Train With Mixed Precision." *NVIDIA Developer Documentation*.  
-    URL: https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/index.html  
+    URL: https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/[private].html  
     - Authoritative guide on practical implementation and hardware acceleration.
   - Ongoing research directions:
   - Exploration of FP8 and other ultra-low precision formats for training.
@@ -420,7 +387,7 @@ aliases:
 
   1. Micikevicius, P., Narang, S., Alben, J., et al. (2018). Mixed Precision Training. *International Conference on Learning Representations (ICLR)*. Available at: https://arxiv.org/abs/1710.03740  
   2. Gupta, P. (2025). Understanding Mixed-Precision Training. Available at: https://www.pgupta.info/blog/2025/07/mixed-precision-mp/  
-  3. NVIDIA Corporation. (2025). Train With Mixed Precision. Available at: https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/index.html  
+  3. NVIDIA Corporation. (2025). Train With Mixed Precision. Available at: https://docs.nvidia.com/deeplearning/performance/mixed-precision-training/[private].html  
   4. TechTarget. (2025). Mixed-precision training in AI: Everything you need to know. Available at: https://www.techtarget.com/searchenterpriseai/tip/Mixed-precision-training-in-AI-Everything-you-need-to-know  
   5. Theodo Data & AI. (2025). Understanding Tensorflow Mixed Precision. Available at: https://data-ai.theodo.com/en/technical-blog/understanding-tensorflow-mixed-precision
 

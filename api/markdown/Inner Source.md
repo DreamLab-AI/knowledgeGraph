@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Inner Source
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:inner-source", "@type":"Page", "title":"Inner Source", "vc:slug":"inner-source", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:inner-source",
+  "@type": "Page",
+  "title": "Inner Source",
+  "vc:slug": "inner-source",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

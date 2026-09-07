@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Accountability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,45 +7,162 @@ public: true
   "title": "AI Accountability",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:owl:class:responsible-ai", "vc:label": "Responsible AI"},
-    {"@id": "urn:visionflow:owl:class:explainability", "vc:label": "Explainability"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:owl:class:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:owl:class:ai-ethics", "vc:label": "AI Ethics"},
-    {"@id": "urn:visionflow:linked:audit-trail", "vc:label": "Audit Trail"},
-    {"@id": "urn:visionflow:linked:human-oversight", "vc:label": "Human Oversight"},
-    {"@id": "urn:visionflow:linked:regulatory-compliance", "vc:label": "Regulatory Compliance"},
-    {"@id": "urn:visionflow:linked:eu-ai-act-regulatory-instrument", "vc:label": "EU AI Act Regulatory Instrument"},
-    {"@id": "urn:visionflow:linked:algorithmic-accountability", "vc:label": "Algorithmic Accountability"},
-    {"@id": "urn:visionflow:linked:ai-trustworthiness", "vc:label": "AI Trustworthiness"},
-    {"@id": "urn:visionflow:linked:iso-iec-jtc-1-sc-42", "vc:label": "ISO/IEC JTC 1/SC 42"},
-    {"@id": "urn:visionflow:linked:nist-ai-rmf", "vc:label": "NIST AI Risk Management Framework"},
-    {"@id": "urn:visionflow:linked:model-card", "vc:label": "Model Card"},
-    {"@id": "urn:visionflow:linked:algorithmic-auditing", "vc:label": "Algorithmic Auditing"},
-    {"@id": "urn:visionflow:linked:transparency", "vc:label": "Transparency"},
-    {"@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance"},
-    {"@id": "urn:visionflow:linked:ai-impact-assessment", "vc:label": "AI Impact Assessment"},
-    {"@id": "urn:visionflow:linked:bias-mitigation-techniques", "vc:label": "Bias Mitigation"},
-    {"@id": "urn:visionflow:linked:fairness", "vc:label": "Fairness"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:gdpr", "vc:label": "GDPR"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:risk-management", "vc:label": "Risk Management"},
-    {"@id": "urn:visionflow:linked:digital-rights", "vc:label": "Digital Rights"},
-    {"@id": "urn:visionflow:linked:ai-ethics-board", "vc:label": "AI Ethics Board"},
-    {"@id": "urn:visionflow:linked:iso-iec-42001", "vc:label": "ISO/IEC 42001"},
-    {"@id": "urn:visionflow:linked:oecd-ai-principles", "vc:label": "OECD AI Principles"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:post-market-monitoring", "vc:label": "Post-Market Monitoring"},
-    {"@id": "urn:visionflow:linked:conformity-assessment", "vc:label": "Conformity Assessment"},
-    {"@id": "urn:visionflow:linked:liability", "vc:label": "Liability"},
-    {"@id": "urn:visionflow:linked:redress-mechanism", "vc:label": "Redress Mechanism"},
-    {"@id": "urn:visionflow:linked:centre-for-data-ethics-and-innovation", "vc:label": "Centre for Data Ethics and Innovation"},
-    {"@id": "urn:visionflow:linked:information-commissioners-office", "vc:label": "Information Commissioner's Office"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:accountability", "vc:label": "Accountability"}
+    {
+      "@id": "urn:visionflow:owl:class:responsible-ai",
+      "vc:label": "Responsible AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-ethics",
+      "vc:label": "AI Ethics"
+    },
+    {
+      "@id": "urn:visionflow:linked:audit-trail",
+      "vc:label": "Audit Trail"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-oversight",
+      "vc:label": "Human Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act-regulatory-instrument",
+      "vc:label": "EU AI Act Regulatory Instrument"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-accountability",
+      "vc:label": "Algorithmic Accountability"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-trustworthiness",
+      "vc:label": "AI Trustworthiness"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-jtc-1-sc-42",
+      "vc:label": "ISO/IEC JTC 1/SC 42"
+    },
+    {
+      "@id": "urn:visionflow:linked:nist-ai-rmf",
+      "vc:label": "NIST AI Risk Management Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-card",
+      "vc:label": "Model Card"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-auditing",
+      "vc:label": "Algorithmic Auditing"
+    },
+    {
+      "@id": "urn:visionflow:linked:transparency",
+      "vc:label": "Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-impact-assessment",
+      "vc:label": "AI Impact Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-mitigation-techniques",
+      "vc:label": "Bias Mitigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:fairness",
+      "vc:label": "Fairness"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-rights",
+      "vc:label": "Digital Rights"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-ethics-board",
+      "vc:label": "AI Ethics Board"
+    },
+    {
+      "@id": "urn:visionflow:linked:iso-iec-42001",
+      "vc:label": "ISO/IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd-ai-principles",
+      "vc:label": "OECD AI Principles"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:post-market-monitoring",
+      "vc:label": "Post-Market Monitoring"
+    },
+    {
+      "@id": "urn:visionflow:linked:conformity-assessment",
+      "vc:label": "Conformity Assessment"
+    },
+    {
+      "@id": "urn:visionflow:linked:liability",
+      "vc:label": "Liability"
+    },
+    {
+      "@id": "urn:visionflow:linked:redress-mechanism",
+      "vc:label": "Redress Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:centre-for-data-ethics-and-innovation",
+      "vc:label": "Centre for Data Ethics and Innovation"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-commissioners-office",
+      "vc:label": "Information Commissioner's Office"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:accountability",
+      "vc:label": "Accountability"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -65,51 +177,146 @@ public: true
   "definition": "AI Accountability is the set of mechanisms, obligations, and institutional structures that ensure developers, deployers, and operators of AI systems can be held responsible for the outcomes those systems produce. It encompasses technical auditability, legal liability, organisational governance, and redress pathways for harms caused by algorithmic decisions. Accountability frameworks bind technical transparency measures to enforceable consequences, distinguishing it from voluntary explainability efforts. Effective AI accountability requires clear assignment of responsibility across the AI value chain—from data collection through deployment and monitoring.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:accountability", "label": "Accountability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:accountability",
+      "label": "Accountability"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"},
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
-      {"@id": "urn:ngm:class:model-cards", "label": "Model Card"},
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:post-market-monitoring", "label": "Post-Market Monitoring"},
-      {"@id": "urn:ngm:class:redress-mechanism", "label": "Redress Mechanism"}
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:model-cards",
+        "label": "Model Card"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:post-market-monitoring",
+        "label": "Post-Market Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:redress-mechanism",
+        "label": "Redress Mechanism"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI Risk Management Framework"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO/IEC 42001"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:oecd-ai-principles", "label": "OECD AI Principles"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
     ],
     "depends-on": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation"},
-      {"@id": "urn:ngm:class:liability", "label": "Liability"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:liability",
+        "label": "Liability"
+      }
     ]
   },
   "quality": 0.87,
@@ -118,57 +325,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "OntologyEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-accountability:enriched-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:ai-accountability"},
-  "vc:resolutions": [
-    {"raw": "[[Responsible AI]]", "resolved": "urn:visionflow:owl:class:responsible-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Explainability]]", "resolved": "urn:visionflow:owl:class:explainability", "kind": "ResolvedLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:owl:class:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[AI Ethics]]", "resolved": "urn:visionflow:owl:class:ai-ethics", "kind": "ResolvedLink"},
-    {"raw": "[[Audit Trail]]", "resolved": "urn:visionflow:linked:audit-trail", "kind": "StubLink"},
-    {"raw": "[[Human Oversight]]", "resolved": "urn:visionflow:linked:human-oversight", "kind": "StubLink"},
-    {"raw": "[[Regulatory Compliance]]", "resolved": "urn:visionflow:linked:regulatory-compliance", "kind": "StubLink"},
-    {"raw": "[[EU AI Act Regulatory Instrument]]", "resolved": "urn:visionflow:linked:eu-ai-act-regulatory-instrument", "kind": "StubLink"},
-    {"raw": "[[Algorithmic Accountability]]", "resolved": "urn:visionflow:linked:algorithmic-accountability", "kind": "StubLink"},
-    {"raw": "[[AI Trustworthiness]]", "resolved": "urn:visionflow:linked:ai-trustworthiness", "kind": "StubLink"},
-    {"raw": "[[ISO/IEC JTC 1/SC 42]]", "resolved": "urn:visionflow:linked:iso-iec-jtc-1-sc-42", "kind": "StubLink"},
-    {"raw": "[[NIST AI Risk Management Framework]]", "resolved": "urn:visionflow:linked:nist-ai-rmf", "kind": "StubLink"},
-    {"raw": "[[Algorithmic Auditing]]", "resolved": "urn:visionflow:linked:algorithmic-auditing", "kind": "StubLink"},
-    {"raw": "[[Model Card]]", "resolved": "urn:visionflow:linked:model-card", "kind": "StubLink"},
-    {"raw": "[[Transparency]]", "resolved": "urn:visionflow:linked:transparency", "kind": "StubLink"},
-    {"raw": "[[Data Governance]]", "resolved": "urn:visionflow:linked:data-governance", "kind": "StubLink"},
-    {"raw": "[[AI Impact Assessment]]", "resolved": "urn:visionflow:linked:ai-impact-assessment", "kind": "StubLink"},
-    {"raw": "[[Bias Mitigation]]", "resolved": "urn:visionflow:linked:bias-mitigation-techniques", "kind": "StubLink"},
-    {"raw": "[[Fairness]]", "resolved": "urn:visionflow:linked:fairness", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[GDPR]]", "resolved": "urn:visionflow:linked:gdpr", "kind": "StubLink"},
-    {"raw": "[[AI Alignment]]", "resolved": "urn:visionflow:linked:ai-alignment", "kind": "StubLink"},
-    {"raw": "[[Risk Management]]", "resolved": "urn:visionflow:linked:risk-management", "kind": "StubLink"},
-    {"raw": "[[Digital Rights]]", "resolved": "urn:visionflow:linked:digital-rights", "kind": "StubLink"},
-    {"raw": "[[AI Ethics Board]]", "resolved": "urn:visionflow:linked:ai-ethics-board", "kind": "StubLink"},
-    {"raw": "[[ISO/IEC 42001]]", "resolved": "urn:visionflow:linked:iso-iec-42001", "kind": "StubLink"},
-    {"raw": "[[OECD AI Principles]]", "resolved": "urn:visionflow:linked:oecd-ai-principles", "kind": "StubLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "StubLink"},
-    {"raw": "[[Conformity Assessment]]", "resolved": "urn:visionflow:linked:conformity-assessment", "kind": "StubLink"},
-    {"raw": "[[Post-Market Monitoring]]", "resolved": "urn:visionflow:linked:post-market-monitoring", "kind": "StubLink"},
-    {"raw": "[[Liability]]", "resolved": "urn:visionflow:linked:liability", "kind": "StubLink"},
-    {"raw": "[[Redress Mechanism]]", "resolved": "urn:visionflow:linked:redress-mechanism", "kind": "StubLink"},
-    {"raw": "[[Centre for Data Ethics and Innovation]]", "resolved": "urn:visionflow:linked:centre-for-data-ethics-and-innovation", "kind": "StubLink"},
-    {"raw": "[[Information Commissioner's Office]]", "resolved": "urn:visionflow:linked:information-commissioners-office", "kind": "StubLink"},
-    {"raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "StubLink"},
-    {"raw": "[[Accountability]]", "resolved": "urn:visionflow:linked:accountability", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -296,7 +452,7 @@ public: true
 
   ## Academic Context
 
-  The intellectual foundations of AI accountability draw on several distinct scholarly traditions. Administrative law scholarship, particularly the work of Danielle Citron and Frank Pasquale on "technological due process," established that automated decision systems implicate constitutional and administrative law norms of notice, hearing, and reasoned decision-making. Computer science accountability research, exemplified by the ACM FAccT community (founding conference 2018), developed technical methods for fairness auditing, counterfactual explanation, and [[Algorithmic Accountability]] measurement. Policy scholarship, including the Oxford Internet Institute's research programme on algorithmic governance, analysed how accountability principles could be translated into regulatory instruments, culminating in analyses of the GDPR's Article 22 and later the EU AI Act's risk-tier model.
+  The intellectual foundations of AI accountability draw on several distinct scholarly traditions. Administrative law scholarship, particularly the work of Danielle Citron and Frank Pasquale on "technological due process," established that automated decision systems implicate constitutional and administrative law norms of notice, hearing, and reasoned decision-making. Computer science accountability research, exemplified by the ACM FAccT community (founding conference 2018), developed technical methods for fairness auditing, counterfactual explanation, and [[Algorithmic Accountability]] measurement. Policy scholarship, including the Oxford Internet Institute's research programme on algorithmic governance, analysed how accountability principles [private] be translated into regulatory instruments, culminating in analyses of the GDPR's Article 22 and later the EU AI Act's risk-tier model.
 
   Landmark papers include Selbst and Barocas (2018) "Fairness and Abstraction in Sociotechnical Systems" (FAccT) which argued that accountability cannot be achieved through technical fixes alone; Doshi-Velez and Kim (2017) on the taxonomy of interpretability required for accountability; and Raji et al. (2020) "Closing the AI Accountability Gap" which proposed an end-to-end framework for internal AI auditing. The Foundation Model Transparency Index (Bommasani et al., 2023, Stanford CRFM) systematically evaluated upstream accountability of major model providers, revealing significant gaps in documentation and testing disclosure. By 2024–2025, the scholarly focus had shifted to enforcement: how do regulatory institutions actually operationalise accountability obligations in a technical domain where they have limited internal expertise, and what role should third-party auditors and civil society play in filling enforcement gaps?
 

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[mermaid]]
-# Markdown Diagramming As Code Tool
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[mermaid]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:diagrams-as-code", "label": "Diagrams as Code"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:diagrams-as-code",
+        "label": "Diagrams as Code"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ]
   },
   "quality": 0.35,
@@ -67,26 +76,6 @@ elevatedFrom:: [[mermaid]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mermaid:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:090afcf2df196bbb9b54e9310d9e5689b7932847318a813bc5bc568c6f9e2b72"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A JavaScript-based diagramming-as-code tool that renders flowcharts, sequence diagrams, Gantt charts, entity-relationship diagrams, and other diagram types from plain-text markup embedded in Markdown. Mermaid enables version-controllable diagrams without external tooling, integrating natively with GitHub, GitLab, Notion, and Logseq.

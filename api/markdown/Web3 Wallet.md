@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Web3 Wallet
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:web3-wallet", "@type":"Page", "title":"Web3 Wallet", "vc:slug":"web3-wallet", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:web3-wallet",
+  "@type": "Page",
+  "title": "Web3 Wallet",
+  "vc:slug": "web3-wallet",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

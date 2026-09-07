@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ReAct Pattern
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "ReAct (Reasoning and Acting) is a prompting and agent-control pattern in which a language model interleaves explicit reasoning traces with action steps such as tool calls, observing the results before reasoning again. This loop lets the model decompose tasks, gather information, and self-correct rather than answering in a single pass. It is a foundational design for tool-using LLM agents.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
     ]
   },
   "quality": 0.72

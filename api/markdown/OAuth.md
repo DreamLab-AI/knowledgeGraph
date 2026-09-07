@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OAuth
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -198,52 +193,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:oauth:6e306c515177",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6c0a812752460d31d26bf4a338913faa7416f5b993ae6fd525ea1dbd4223456e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Authorisation]]",
-      "resolved": "urn:visionflow:linked:authorisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Access Control]]",
-      "resolved": "urn:visionflow:linked:access-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Single Sign-On]]",
-      "resolved": "urn:visionflow:linked:single-sign-on",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OAuth 2.0]]",
-      "resolved": "urn:visionflow:linked:oauth-2-0",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Provider]]",
-      "resolved": "urn:visionflow:linked:identity-provider",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An open standard for delegated authorisation that allows a user to grant a third-party application limited access to resources without sharing their credentials.

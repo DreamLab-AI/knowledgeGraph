@@ -1,37 +1,118 @@
----
-public: true
----
-
-# Exploratory Data Analysis
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:exploratory-data-analysis", "@type":"Page", "title":"Exploratory Data Analysis", "vc:slug":"exploratory-data-analysis", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:exploratory-data-analysis",
+  "@type": "Page",
+  "title": "Exploratory Data Analysis",
+  "vc:slug": "exploratory-data-analysis",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:exploratory-data-analysis",
-  "@type":"Class",
-  "label":"Exploratory Data Analysis",
-  "definition":"Exploratory data analysis (EDA) is the practice of summarising, visualising, and interrogating a dataset to understand its structure, distributions, relationships, and anomalies before formal modelling. Introduced as a discipline by John Tukey, it emphasises graphical methods and descriptive statistics to generate hypotheses rather than confirm them. EDA is an early, iterative phase of the data-science workflow that informs data cleaning, feature engineering, and model selection.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-analysis","label":"Data Analysis"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:data-science","label":"Data Science"}],
-    "requires":[{"@id":"urn:ngm:class:data-preprocessing","label":"Data Preprocessing"},{"@id":"urn:ngm:class:data-cleaning","label":"Data Cleaning"}],
-    "enables":[{"@id":"urn:ngm:class:feature-engineering","label":"Feature Engineering"},{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"}],
-    "uses":[{"@id":"urn:ngm:class:data-visualisation","label":"Data Visualisation"},{"@id":"urn:ngm:class:dimensionality-reduction","label":"Dimensionality Reduction"}],
-    "supports":[{"@id":"urn:ngm:class:unsupervised-learning","label":"Unsupervised Learning"},{"@id":"urn:ngm:class:feature-engineering","label":"Feature Engineering"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data-cleaning","label":"Data Cleaning"}],
-    "relatedTo":[{"@id":"urn:ngm:class:data-visualisation","label":"Data Visualisation"},{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"},{"@id":"urn:ngm:class:data-science","label":"Data Science"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:unsupervised-learning","label":"Unsupervised Learning"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:predictive-analytics","label":"Predictive Analytics"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:exploratory-data-analysis",
+  "@type": "Class",
+  "label": "Exploratory Data Analysis",
+  "definition": "Exploratory data analysis (EDA) is the practice of summarising, visualising, and interrogating a dataset to understand its structure, distributions, relationships, and anomalies before formal modelling. Introduced as a discipline by John Tukey, it emphasises graphical methods and descriptive statistics to generate hypotheses rather than confirm them. EDA is an early, iterative phase of the data-science workflow that informs data cleaning, feature engineering, and model selection.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-analysis",
+      "label": "Data Analysis"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "@id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

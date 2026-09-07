@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Customer Rewards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:customer-rewards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7cf088535ca93ef161913fe37bf56ed23f8f4c58f1cb939f9e39d3d1a939d92a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross-Platform Rewards]]",
-      "resolved": "urn:visionflow:linked:cross-platform-rewards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Customer Retention]]",
-      "resolved": "urn:visionflow:linked:customer-retention",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Token Trading]]",
-      "resolved": "urn:visionflow:linked:token-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Wallet]]",
-      "resolved": "urn:visionflow:owl:class:digital-wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Loyalty Programs]]",
-      "resolved": "urn:visionflow:owl:class:loyalty-programs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective incentive mechanisms.

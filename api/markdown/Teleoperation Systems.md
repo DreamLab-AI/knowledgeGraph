@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-201-teleoperation-systems
----
-
-# Teleoperation Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,23 +70,56 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:haptic-feedback-telepresence", "label": "Haptic Feedback Telepresence"}
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotics-telepresence-bridge", "label": "Robotics-Telepresence Bridge"},
-      {"@id": "urn:ngm:class:robotic-telepresence", "label": "Robotic Telepresence"},
-      {"@id": "urn:ngm:class:haptics", "label": "Haptics"},
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"}
+      {
+        "@id": "urn:ngm:class:robotics-telepresence-bridge",
+        "label": "Robotics-Telepresence Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-telepresence",
+        "label": "Robotic Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:presence", "label": "Presence"},
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"}
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
     ]
   },
   "quality": 0.8,
@@ -104,52 +130,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:teleoperation-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:46a384e3ee6123075016b164280619f03b56f2cf40b5f41ec22e642eaa3bd35b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[da Vinci]]",
-      "resolved": "urn:visionflow:linked:da-vinci",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-200-robotic-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-200-robotic-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-203-haptic-feedback-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotic Telepresence]]",
-      "resolved": "urn:visionflow:owl:class:robotic-telepresence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics-Telepresence Bridge]]",
-      "resolved": "urn:visionflow:owl:class:robotics-telepresence-bridge",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "Robotic control systems enabling human operators to command and manipulate remote robots through intuitive interfaces, transmitting operator intentions to robot actuators whilst providing sensory feedback (visual, auditory, haptic) from the robot to the operator, creating bidirectional human-machine coupling for remote physical interaction."

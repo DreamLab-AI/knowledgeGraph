@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robotics Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -47,18 +42,36 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-component", "label": "Robot Component"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {
+        "@id": "urn:ngm:class:robot-component",
+        "label": "Robot Component"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"}
+      {
+        "@id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      }
     ]
   },
   "quality": 0.35,
@@ -69,26 +82,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robotics-process:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7c6511d447f475b7a61e27cc91134495d497a2610b0b73ef0419e9c53148699a"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Robotics Process encompasses the systematic procedures, methodologies, and workflows for robot development, deployment, operation, and maintenance, spanning requirements engineering, system design, hardware-software integration, verification and validation, commissioning, and lifecycle management. Agile and iterative methods accommodate uncertainty and enable rapid prototyping; simulation-driven approaches using digital twins support virtual commissioning. Compliance with process standards such as ISO 9001 and IEC 61508 is required for safety-critical robotic applications.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Source Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -94,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:open-source-framework:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4af1579740c5e4c41e68981021ea4cac967e57c74f5e10999102332fd5f35060"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A publicly licensed software framework whose source code is freely available for inspection, modification, and redistribution under an approved open-source licence. Open source frameworks provide reusable architectural scaffolding—APIs, libraries, conventions, and tooling—that accelerate development whilst enabling community-driven quality assurance, security auditing, and interoperability across vendor boundaries.

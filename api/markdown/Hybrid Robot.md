@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hybrid Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -97,32 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hybrid-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7a32a284ed5734e13ed5bbf0b395c091e19fe69895dcce8a4987b36b45744088"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A robotic system that combines two or more distinct locomotion or manipulation modalities—such as wheeled and legged movement, or fixed-base and mobile operation—to extend operational range and adaptability across heterogeneous environments. Hybrid robots exploit the efficiency of specialised subsystems whilst maintaining versatility that no single modality can achieve alone.

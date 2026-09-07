@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Docker]]
-# Docker Containerisation Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

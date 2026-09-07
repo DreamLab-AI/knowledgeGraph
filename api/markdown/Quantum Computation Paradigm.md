@@ -1,12 +1,3 @@
----
-public: true
-aliases:
-  - Quantum-Computing
-  - QuantumComputing
-elevatedFrom: "[[Quantum Computing]]"
----
-
-# Quantum Computation Paradigm
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,26 +163,6 @@ elevatedFrom: "[[Quantum Computing]]"
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:quantum-computing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6ce802a318a389ee53b7648eae46617424357dba089d0b039502c65f1b532df1"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A paradigm of computation that exploits quantum-mechanical phenomena—superposition, entanglement, and interference—to perform certain calculations exponentially faster than classical computers. Quantum computing holds particular relevance for cryptography, optimisation, simulation of molecular systems, and potentially accelerating machine learning workloads, though near-term devices remain limited by qubit decoherence and error rates.

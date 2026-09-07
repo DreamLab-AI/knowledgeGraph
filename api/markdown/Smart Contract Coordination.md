@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-251-smart-contract-coordination
----
-
-# Smart Contract Coordination
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,78 +76,60 @@ aliases:
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:cryptocurrency-remuneration", "label": "Cryptocurrency Remuneration"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-remuneration",
+        "label": "Cryptocurrency Remuneration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:blockchain-collaboration", "label": "Blockchain Collaboration"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-collaboration",
+        "label": "Blockchain Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:smart-contract-coordination:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2a4952a718e74f04a4128d99a9caf30608d355a33113e02f7c9e490176a42971"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[TELE-002-telecollaboration]]",
-      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-250-blockchain-collaboration]]",
-      "resolved": "urn:visionflow:linked:tele-250-blockchain-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-252-dao-governance-telecollaboration]]",
-      "resolved": "urn:visionflow:linked:tele-252-dao-governance-telecollaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-253-cryptocurrency-remuneration]]",
-      "resolved": "urn:visionflow:linked:tele-253-cryptocurrency-remuneration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SmartContracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "The use of blockchain smart contracts—self-executing programs stored on distributed ledgers—to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execute deterministically without centralised intermediaries."

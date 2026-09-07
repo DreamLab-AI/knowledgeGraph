@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - PervasiveComputing
----
-
-# Pervasive Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,20 +20,46 @@ aliases:
   "definition": "Pervasive computing — also termed ubiquitous computing — is a paradigm in which computational capability is embedded throughout the physical environment and integrated seamlessly into everyday objects and infrastructure, such that computation becomes a background utility rather than a discrete user activity. Coined by Mark Weiser at Xerox PARC in 1991, the vision encompasses context-aware, networked devices that sense, process, and communicate without explicit user interaction. It is the conceptual precursor to the Internet of Things and ambient intelligence.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:context-aware-computing", "label": "Context Aware Computing"},
-      {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:context-aware-computing",
+        "label": "Context Aware Computing"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-computing-platform",
+        "label": "Wearable Computing Platform"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:context-awareness", "label": "Context Awareness"},
-      {"@id": "urn:ngm:class:sociotechnical-system", "label": "Sociotechnical System"}
+      {
+        "@id": "urn:ngm:class:context-awareness",
+        "label": "Context Awareness"
+      },
+      {
+        "@id": "urn:ngm:class:sociotechnical-system",
+        "label": "Sociotechnical System"
+      }
     ]
   },
   "quality": 0.8
@@ -58,7 +77,6 @@ aliases:
 
   - Technically, pervasive computing rests on miniaturised sensing, low-power wireless networking (Bluetooth Low Energy, Zigbee, 802.15.4), edge processing, and middleware for context aggregation and service discovery. The challenge of resource-constrained [[Embedded Systems]] communicating reliably in heterogeneous environments drove advances in lightweight protocols (MQTT, CoAP), energy harvesting, and autonomous operation. Context awareness — inferring user location, activity, and preference from sensor streams — became a research discipline within pervasive computing laboratories worldwide.
 
-  - The paradigm was operationalised commercially through smart-home ecosystems (Google Home, Amazon Alexa), industrial sensor networks, healthcare wearables, and urban sensor infrastructure. Each wave of miniaturisation and wireless standard (WiFi, LTE, 5G) expanded the range of feasible pervasive deployments. Research themes evolved from basic connectivity to semantic interoperability, privacy-preserving sensing, and collaborative perception, where many devices collectively build a richer environmental model than any individual sensor could achieve.
+  - The paradigm was operationalised commercially through smart-home ecosystems (Google Home, Amazon Alexa), industrial sensor networks, healthcare wearables, and urban sensor infrastructure. Each wave of miniaturisation and wireless standard (WiFi, LTE, 5G) expanded the range of feasible pervasive deployments. Research themes evolved from basic connectivity to semantic interoperability, privacy-preserving sensing, and collaborative perception, where many devices collectively build a richer environmental model than any individual sensor [private] achieve.
 
   - Between 2023 and 2025, pervasive computing has converged with on-device AI, enabling [[Wearable AI]] devices such as the Humane AI Pin and Rabbit R1 to attempt ambient assistance without smartphone dependence. Spatial computing platforms (Apple Vision Pro, Meta Quest) embody pervasive computing principles by blending digital overlays with physical environments continuously. Simultaneously, pervasive sensing in urban and retail environments has intensified regulatory scrutiny under frameworks such as GDPR, with data minimisation and federated learning approaches gaining traction as privacy-preserving alternatives to centralised sensor data aggregation.
-

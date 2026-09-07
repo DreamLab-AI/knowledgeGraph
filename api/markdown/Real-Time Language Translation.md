@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-105-real-time-language-translation
----
-
-# Real-Time Language Translation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -99,67 +92,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:real-time-language-translation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:89b6019e2ede8cbcbffe81d201c413202957c428bd34936c868609280c417ff9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CrossLingualCollaboration]]",
-      "resolved": "urn:visionflow:linked:cross-lingual-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NeuralMachineTranslation]]",
-      "resolved": "urn:visionflow:linked:neural-machine-translation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-002-telecollaboration]]",
-      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-020-virtual-reality-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-106-speech-to-speech-translation]]",
-      "resolved": "urn:visionflow:linked:tele-106-speech-to-speech-translation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-107-ai-meeting-assistants]]",
-      "resolved": "urn:visionflow:linked:tele-107-ai-meeting-assistants",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NaturalLanguageProcessing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "The use of artificial intelligence-powered natural language processing to automatically translate spoken or written communication between languages during live telepresence interactions with sub-second latency, enabling cross-lingual collaboration without human interpreters through neural machine translation, speech recognition, and text-to-speech synthesis."
@@ -319,7 +251,7 @@ aliases:
   ### Ethical Considerations
   - **Privacy**: Voice data sensitive; cloud translation transmits audio to servers
   - **Unemployment**: Human interpreters face job displacement
-  - **Misinformation**: Errors could have serious consequences (medical, legal)
+  - **Misinformation**: Errors [private] have serious consequences (medical, legal)
   - **Dependency**: Over-reliance on AI may reduce language learning motivation
 
   ## UK-Specific Context

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Adoption Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-adoption-platform",
   "title": "AI Adoption Platform",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Enterprise AI Strategy Tool", "Integrated AI Dashboard"],
+  "vc:outboundWikilinks": [
+    "Enterprise AI Strategy Tool",
+    "Integrated AI Dashboard"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise Ai"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:enterprise-ai",
+      "label": "Enterprise Ai"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise Ai"}, {"@id": "urn:ngm:class:ai-maturity-assessment", "label": "AI Maturity Assessment"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise Ai"
+      },
+      {
+        "@id": "urn:ngm:class:ai-maturity-assessment",
+        "label": "AI Maturity Assessment"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

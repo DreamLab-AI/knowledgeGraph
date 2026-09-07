@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Price Stability
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

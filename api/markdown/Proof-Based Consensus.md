@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proof-Based Consensus
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -63,20 +58,56 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"},
-      {"@id": "urn:ngm:class:proof-of-authority", "label": "Proof of Authority"},
-      {"@id": "urn:ngm:class:proof-of-history", "label": "Proof of History"},
-      {"@id": "urn:ngm:class:liquid-proof-of-stake", "label": "Liquid Proof of Stake"},
-      {"@id": "urn:ngm:class:nominated-proof-of-stake", "label": "Nominated Proof of Stake"},
-      {"@id": "urn:ngm:class:pure-proof-of-stake", "label": "Pure Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-history",
+        "label": "Proof of History"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-proof-of-stake",
+        "label": "Liquid Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:nominated-proof-of-stake",
+        "label": "Nominated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:pure-proof-of-stake",
+        "label": "Pure Proof of Stake"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ]
   },
   "quality": 0.8,
@@ -87,39 +118,6 @@ public: true
   }
 }
 ```
-
-Proof-based consensus mechanisms differ from voting-based alternatives (BFT variants) in that participation rights are earned through demonstrable expenditure — either of computation (PoW), staked capital (PoS), or delegated authority. This design makes Sybil attacks economically costly. The trade-off between energy usage, capital requirements, decentralisation, and finality characteristics differs significantly across the family members.
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:proof-based-consensus:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2bd26ee7224f1e047288f46cb79bc09e077d36d69b64c62e5ec020d57f9dbbe2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Consensus mechanisms requiring participants to provide cryptographic or computational proof to validate transactions and create blocks.

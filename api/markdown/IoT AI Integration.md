@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IoT AI Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,32 +55,80 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:io-t-sensors", "label": "Io T Sensors"},
-      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"}
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "Io T Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:edge-ai-for-smart-cities", "label": "Edge AI for Smart Cities"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-for-smart-cities",
+        "label": "Edge AI for Smart Cities"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedded-ai-frameworks", "label": "Embedded AI Frameworks"},
-      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:edge-cloud-collaboration", "label": "Edge-Cloud Collaboration"},
-      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"}
+      {
+        "@id": "urn:ngm:class:edge-cloud-collaboration",
+        "label": "Edge-Cloud Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
     ]
   },
   "provenance": {
@@ -95,37 +138,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:io-t-ai-integration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f7650921f0d815f5f1b0913e90cade6398328346f775a4b8b2290da14c3c787d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - IoT AI Integration synergizes Internet of Things sensor networks with embedded machine learning, enabling intelligent autonomous decision-making directly on IoT devices without requiring centralized cloud processing. IoT devices continuously generate multi-modal sensor data from accelerometers, temperature sensors, light sensors, and microphones; AI models analyze this streaming data locally for anomaly detection, pattern recognition, and real-time control actions. The integration addresses IoT challenges including network latency, bandwidth limitations, power constraints, and privacy concerns by moving inference onto resource-constrained edge devices. IoT sensors typically operate with extreme power budgets (milliwatts), making efficient inference critical for battery-powered deployments. AI models deployed on IoT devices employ quantization and pruning to fit within 128KB-1MB memory constraints while maintaining sufficient accuracy for task-specific applications. Communication protocols like MQTT, CoAP, and LoRaWAN support integration with backend systems while minimizing network traffic through selective event-driven transmission. IoT AI systems handle diverse use cases: smart building occupancy detection, agricultural soil monitoring, predictive maintenance in manufacturing, environmental monitoring, and personal health tracking. The architecture enables edge intelligence that reduces latency from seconds to milliseconds, enables offline operation during connectivity loss, and preserves privacy by processing sensitive data locally. Standards like IEEE 2413-2019 and ETSI TS 103645 guide secure IoT AI deployments. This integration transforms IoT from passive data collection to active intelligent edge systems.

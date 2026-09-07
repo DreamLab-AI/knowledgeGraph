@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Trust Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-platform-identity", "label": "Cross-Platform Identity"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {
+        "@id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"},
-      {"@id": "urn:ngm:class:trust-infrastructure", "label": "Trust Infrastructure"}
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
     ]
   },
   "provenance": {
@@ -87,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:trust-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e07c3b29742627c21d8f3d394bc50aafb7cd2f1b661f56b8193433e015c79a64"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Security Architecture]]",
-      "resolved": "urn:visionflow:owl:class:security-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The structural framework of protocols, technologies, and governance mechanisms that establish, verify, and maintain trust relationships between users, platforms, and services in decentralized digital environments and metaverse ecosystems.

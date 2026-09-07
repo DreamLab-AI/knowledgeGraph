@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Configuration Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -13,46 +8,166 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:software-engineering", "vc:label": "Software Engineering"},
-    {"@id": "urn:visionflow:linked:version-control", "vc:label": "Version Control"},
-    {"@id": "urn:visionflow:linked:change-management", "vc:label": "Change Management"},
-    {"@id": "urn:visionflow:linked:devops", "vc:label": "DevOps"},
-    {"@id": "urn:visionflow:linked:continuous-integration", "vc:label": "Continuous Integration"},
-    {"@id": "urn:visionflow:linked:infrastructure-as-code", "vc:label": "Infrastructure as Code"},
-    {"@id": "urn:visionflow:linked:quality-assurance", "vc:label": "Quality Assurance"},
-    {"@id": "urn:visionflow:linked:audit", "vc:label": "Audit"},
-    {"@id": "urn:visionflow:linked:testing", "vc:label": "Testing"},
-    {"@id": "urn:visionflow:linked:gitops", "vc:label": "GitOps"},
-    {"@id": "urn:visionflow:linked:terraform", "vc:label": "Terraform"},
-    {"@id": "urn:visionflow:linked:ansible", "vc:label": "Ansible"},
-    {"@id": "urn:visionflow:linked:kubernetes", "vc:label": "Kubernetes"},
-    {"@id": "urn:visionflow:linked:continuous-delivery", "vc:label": "Continuous Delivery"},
-    {"@id": "urn:visionflow:linked:continuous-deployment", "vc:label": "Continuous Deployment"},
-    {"@id": "urn:visionflow:linked:mlops", "vc:label": "MLOps"},
-    {"@id": "urn:visionflow:linked:reproducibility", "vc:label": "Reproducibility"},
-    {"@id": "urn:visionflow:linked:immutable-infrastructure", "vc:label": "Immutable Infrastructure"},
-    {"@id": "urn:visionflow:linked:idempotency", "vc:label": "Idempotency"},
-    {"@id": "urn:visionflow:linked:cloud-computing", "vc:label": "Cloud Computing"},
-    {"@id": "urn:visionflow:linked:containerisation", "vc:label": "Containerisation"},
-    {"@id": "urn:visionflow:linked:platform-engineering", "vc:label": "Platform Engineering"},
-    {"@id": "urn:visionflow:linked:site-reliability-engineering", "vc:label": "Site Reliability Engineering"},
-    {"@id": "urn:visionflow:linked:security-scanning", "vc:label": "Security Scanning"},
-    {"@id": "urn:visionflow:linked:compliance", "vc:label": "Compliance"},
-    {"@id": "urn:visionflow:linked:build-automation", "vc:label": "Build Automation"},
-    {"@id": "urn:visionflow:linked:automated-testing", "vc:label": "Automated Testing"},
-    {"@id": "urn:visionflow:linked:incident-response", "vc:label": "Incident Response"},
-    {"@id": "urn:visionflow:linked:observability", "vc:label": "Observability"},
-    {"@id": "urn:visionflow:linked:agile-software-development", "vc:label": "Agile Software Development"},
-    {"@id": "urn:visionflow:linked:data-versioning", "vc:label": "Data Versioning"},
-    {"@id": "urn:visionflow:linked:microservices", "vc:label": "Microservices"},
-    {"@id": "urn:visionflow:linked:cloud-native", "vc:label": "Cloud Native"},
-    {"@id": "urn:visionflow:linked:devsecops", "vc:label": "DevSecOps"},
-    {"@id": "urn:visionflow:linked:docker", "vc:label": "Docker"},
-    {"@id": "urn:visionflow:linked:software-delivery-lifecycle", "vc:label": "Software Delivery Lifecycle"},
-    {"@id": "urn:visionflow:linked:disaster-recovery", "vc:label": "Disaster Recovery"},
-    {"@id": "urn:visionflow:linked:automation", "vc:label": "Automation"},
-    {"@id": "urn:visionflow:linked:policy-as-code", "vc:label": "Policy as Code"},
-    {"@id": "urn:visionflow:linked:open-tofu", "vc:label": "OpenTofu"}
+    {
+      "@id": "urn:visionflow:linked:software-engineering",
+      "vc:label": "Software Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:version-control",
+      "vc:label": "Version Control"
+    },
+    {
+      "@id": "urn:visionflow:linked:change-management",
+      "vc:label": "Change Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:devops",
+      "vc:label": "DevOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-integration",
+      "vc:label": "Continuous Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:infrastructure-as-code",
+      "vc:label": "Infrastructure as Code"
+    },
+    {
+      "@id": "urn:visionflow:linked:quality-assurance",
+      "vc:label": "Quality Assurance"
+    },
+    {
+      "@id": "urn:visionflow:linked:audit",
+      "vc:label": "Audit"
+    },
+    {
+      "@id": "urn:visionflow:linked:testing",
+      "vc:label": "Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:gitops",
+      "vc:label": "GitOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:terraform",
+      "vc:label": "Terraform"
+    },
+    {
+      "@id": "urn:visionflow:linked:ansible",
+      "vc:label": "Ansible"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubernetes",
+      "vc:label": "Kubernetes"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-delivery",
+      "vc:label": "Continuous Delivery"
+    },
+    {
+      "@id": "urn:visionflow:linked:continuous-deployment",
+      "vc:label": "Continuous Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducibility",
+      "vc:label": "Reproducibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:immutable-infrastructure",
+      "vc:label": "Immutable Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:idempotency",
+      "vc:label": "Idempotency"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:containerisation",
+      "vc:label": "Containerisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:platform-engineering",
+      "vc:label": "Platform Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:site-reliability-engineering",
+      "vc:label": "Site Reliability Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:security-scanning",
+      "vc:label": "Security Scanning"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance",
+      "vc:label": "Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:build-automation",
+      "vc:label": "Build Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:automated-testing",
+      "vc:label": "Automated Testing"
+    },
+    {
+      "@id": "urn:visionflow:linked:incident-response",
+      "vc:label": "Incident Response"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability",
+      "vc:label": "Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:agile-software-development",
+      "vc:label": "Agile Software Development"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-versioning",
+      "vc:label": "Data Versioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:microservices",
+      "vc:label": "Microservices"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-native",
+      "vc:label": "Cloud Native"
+    },
+    {
+      "@id": "urn:visionflow:linked:devsecops",
+      "vc:label": "DevSecOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:docker",
+      "vc:label": "Docker"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-delivery-lifecycle",
+      "vc:label": "Software Delivery Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:linked:disaster-recovery",
+      "vc:label": "Disaster Recovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:automation",
+      "vc:label": "Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:policy-as-code",
+      "vc:label": "Policy as Code"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-tofu",
+      "vc:label": "OpenTofu"
+    }
   ]
 }
 ```
@@ -230,65 +345,12 @@ public: true
       }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:configuration-management:b7e3c291df40",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:configuration-management"},
-  "vc:resolutions": [
-    {"raw": "[[Software Engineering]]", "resolved": "urn:ngm:class:software-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Version Control]]", "resolved": "urn:ngm:class:version-control", "kind": "ResolvedLink"},
-    {"raw": "[[Change Management]]", "resolved": "urn:ngm:class:change-management", "kind": "ResolvedLink"},
-    {"raw": "[[DevOps]]", "resolved": "urn:ngm:class:devops", "kind": "ResolvedLink"},
-    {"raw": "[[Continuous Integration]]", "resolved": "urn:ngm:class:continuous-integration", "kind": "ResolvedLink"},
-    {"raw": "[[Infrastructure as Code]]", "resolved": "urn:ngm:class:infrastructure-as-code", "kind": "ResolvedLink"},
-    {"raw": "[[Quality Assurance]]", "resolved": "urn:ngm:class:quality-assurance", "kind": "ResolvedLink"},
-    {"raw": "[[Audit]]", "resolved": "urn:ngm:class:audit", "kind": "ResolvedLink"},
-    {"raw": "[[Testing]]", "resolved": "urn:ngm:class:testing", "kind": "ResolvedLink"},
-    {"raw": "[[GitOps]]", "resolved": "urn:ngm:class:gitops", "kind": "ResolvedLink"},
-    {"raw": "[[Terraform]]", "resolved": "urn:ngm:class:terraform", "kind": "ResolvedLink"},
-    {"raw": "[[Ansible]]", "resolved": "urn:ngm:class:ansible", "kind": "ResolvedLink"},
-    {"raw": "[[Kubernetes]]", "resolved": "urn:ngm:class:kubernetes", "kind": "ResolvedLink"},
-    {"raw": "[[Continuous Delivery]]", "resolved": "urn:ngm:class:continuous-delivery", "kind": "ResolvedLink"},
-    {"raw": "[[Continuous Deployment]]", "resolved": "urn:ngm:class:continuous-deployment", "kind": "ResolvedLink"},
-    {"raw": "[[MLOps]]", "resolved": "urn:ngm:class:mlops", "kind": "ResolvedLink"},
-    {"raw": "[[Reproducibility]]", "resolved": "urn:ngm:class:reproducibility", "kind": "ResolvedLink"},
-    {"raw": "[[Immutable Infrastructure]]", "resolved": "urn:ngm:class:immutable-infrastructure", "kind": "ResolvedLink"},
-    {"raw": "[[Idempotency]]", "resolved": "urn:ngm:class:idempotency", "kind": "ResolvedLink"},
-    {"raw": "[[Cloud Computing]]", "resolved": "urn:ngm:class:cloud-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Containerisation]]", "resolved": "urn:ngm:class:containerisation", "kind": "ResolvedLink"},
-    {"raw": "[[Platform Engineering]]", "resolved": "urn:ngm:class:platform-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Site Reliability Engineering]]", "resolved": "urn:ngm:class:site-reliability-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Security Scanning]]", "resolved": "urn:ngm:class:security-scanning", "kind": "ResolvedLink"},
-    {"raw": "[[Compliance]]", "resolved": "urn:ngm:class:compliance", "kind": "ResolvedLink"},
-    {"raw": "[[Build Automation]]", "resolved": "urn:ngm:class:build-automation", "kind": "ResolvedLink"},
-    {"raw": "[[Automated Testing]]", "resolved": "urn:ngm:class:automated-testing", "kind": "ResolvedLink"},
-    {"raw": "[[Incident Response]]", "resolved": "urn:ngm:class:incident-response", "kind": "ResolvedLink"},
-    {"raw": "[[Observability]]", "resolved": "urn:ngm:class:observability", "kind": "ResolvedLink"},
-    {"raw": "[[Agile Software Development]]", "resolved": "urn:ngm:class:agile-software-development", "kind": "ResolvedLink"},
-    {"raw": "[[Data Versioning]]", "resolved": "urn:ngm:class:data-versioning", "kind": "ResolvedLink"},
-    {"raw": "[[Microservices]]", "resolved": "urn:ngm:class:microservices", "kind": "ResolvedLink"},
-    {"raw": "[[Cloud Native]]", "resolved": "urn:ngm:class:cloud-native", "kind": "ResolvedLink"},
-    {"raw": "[[DevSecOps]]", "resolved": "urn:ngm:class:dev-sec-ops", "kind": "ResolvedLink"},
-    {"raw": "[[Docker]]", "resolved": "urn:ngm:class:docker", "kind": "ResolvedLink"},
-    {"raw": "[[Software Delivery Lifecycle]]", "resolved": "urn:ngm:class:software-delivery-lifecycle", "kind": "ResolvedLink"},
-    {"raw": "[[Disaster Recovery]]", "resolved": "urn:ngm:class:disaster-recovery", "kind": "ResolvedLink"},
-    {"raw": "[[Automation]]", "resolved": "urn:ngm:class:automation", "kind": "ResolvedLink"},
-    {"raw": "[[Policy as Code]]", "resolved": "urn:ngm:class:policy-as-code", "kind": "ResolvedLink"},
-    {"raw": "[[OpenTofu]]", "resolved": "urn:ngm:class:open-tofu", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-21T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -536,7 +598,7 @@ public: true
   ## Future Directions (2026–2030)
 
   - **LLM-native configuration management**: AI assistants will generate, review, and validate configuration definitions with integrated policy checking, dramatically lowering the barrier to IaC adoption for teams without deep platform engineering expertise. Human review will focus on intent and security boundaries rather than syntactic correctness.
-  - **Configuration management for AI systems**: As organisations deploy AI agents and [[Autonomous Systems|autonomous systems]], configuration management must extend to model weights, prompt templates, retrieval index configurations, and agent behaviour policies — domains where existing CM tooling (Git, [[Terraform]]) provides only partial coverage. [[MLOps]] platforms (MLflow, Kubeflow) are adding CM-native features for model versioning and deployment configuration. New tooling categories will emerge to manage [[Large Language Models|LLM]] prompt configurations, [[Retrieval Augmented Generation|RAG index]] definitions, and agent tool definitions as first-class configuration artefacts.
+  - **Configuration management for AI systems**: As organisations deploy AI agents and [[Autonomous Systems|autonomous systems]], configuration management must extend to model weights, prompt templates, retrieval [private] configurations, and agent behaviour policies — domains where existing CM tooling (Git, [[Terraform]]) provides only partial coverage. [[MLOps]] platforms (MLflow, Kubeflow) are adding CM-native features for model versioning and deployment configuration. New tooling categories will emerge to manage [[Large Language Models|LLM]] prompt configurations, [[Retrieval Augmented Generation|RAG [private]]] definitions, and agent tool definitions as first-class configuration artefacts.
   - **Security-first configuration management**: Integration of configuration management with supply chain security frameworks ([[SLSA]], [[SBOM]], [[Sigstore]]) will make cryptographic provenance attestation a standard part of the configuration item lifecycle, countering software [[Supply Chain Security|supply chain attacks]]. The EU Cyber Resilience Act (CRA, passed 2024, applying from 2027) will require SBOM generation and vulnerability management as mandatory CM activities for CE-marked software products in the European market.
   - **Autonomous configuration remediation**: Self-healing infrastructure agents will detect configuration drift and apply remediation automatically without human approval for low-risk changes, reserving human review for high-risk changes. This extends [[GitOps]] reconciliation from infrastructure to application configuration.
   - **Quantum-resistant configuration stores**: As post-quantum cryptography standards (NIST PQC, 2024) are adopted, the hash functions and digital signatures underpinning Git's integrity model will require migration — a configuration management challenge in itself.
@@ -576,7 +638,7 @@ public: true
   - **[[Data Versioning]]**: Dataset snapshots are configuration artefacts. DVC (Data Version Control) integrates with Git to version datasets and model artefacts alongside code, using content-addressing (similar to Git's object model) to store large binaries efficiently in cloud storage while tracking their identity in git.
   - **Experiment configuration management**: Hyperparameter configurations, data preprocessing steps, random seeds, and train/validation/test split definitions are all CIs that must be version-controlled and linked to the model artefact they produced. MLflow, Weights & Biases, and Neptune provide experiment tracking — the ML equivalent of a CM status accounting system.
   - **Model serving configuration**: The configuration of model serving endpoints (memory limits, replica counts, routing weights for A/B tests, canary deployments) is IaC that should be version-controlled and deployed through GitOps pipelines alongside the model artefact itself.
-  - **Prompt and agent configuration**: For systems built on [[Large Language Models]], the prompt templates, retrieval index configurations, agent tool definitions, and safety filter configurations are CIs that determine system behaviour as much as the model weights themselves. Prompt version control is an emerging practice (tools: LangChain, PromptLayer, Langfuse) but lacks the maturity of infrastructure IaC.
+  - **Prompt and agent configuration**: For systems built on [[Large Language Models]], the prompt templates, retrieval [private] configurations, agent tool definitions, and safety filter configurations are CIs that determine system behaviour as much as the model weights themselves. Prompt version control is an emerging practice (tools: LangChain, PromptLayer, Langfuse) but lacks the maturity of infrastructure IaC.
   - **Feature pipeline configuration**: The transformation logic in [[Feature Store]] definitions must be version-controlled and match between training and serving to prevent training-serving skew — one of the most common causes of silent model degradation in production.
 
   The DORA research programme finds that organisations with high-performing [[DevOps]] practices — including strong configuration management — deploy ML models to production significantly faster and with lower rollback rates than low performers, confirming that general-purpose CM tooling creates value in ML contexts as well as conventional software.

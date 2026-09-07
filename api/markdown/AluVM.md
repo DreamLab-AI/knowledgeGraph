@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AluVM
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,38 @@ public: true
   "definition": "A purely functional, register-based virtual machine designed for deterministic execution of smart-contract validation logic within client-side validated Bitcoin protocol layers, notably the RGB Protocol. AluVM operates without mutable global state, using a RISC-like instruction set that guarantees bounded execution time and reproducible results across heterogeneous computing environments. Its architecture is specifically optimised for the constraints of client-side validation, where contract logic must execute identically across all validating parties without access to a shared blockchain state machine.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:virtual-machine",
+      "label": "Virtual Machine"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:rgb-protocol", "label": "RGB Protocol"}
+      {
+        "@id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-script", "label": "Bitcoin Script"},
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"}
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"},
-      {"@id": "urn:ngm:class:layer-2-solutions", "label": "Layer 2 Solutions"}
+      {
+        "@id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      }
     ]
   },
   "quality": 0.8
@@ -57,4 +72,3 @@ public: true
   - AluVM integrates with the broader RGB stack through the Strict Encoding library and the Contractum high-level language, which compiles to AluVM bytecode. Contract developers write business logic in Contractum and target AluVM as the execution backend, analogously to how Solidity targets the EVM. The LNP/BP Standards Association publishes the AluVM specification as an open standard and maintains a reference implementation in Rust.
 
   - By 2024–2025, AluVM is in active use within the RGB v0.11 protocol, which supports issuance of fungible and non-fungible assets on Bitcoin. The virtual machine has been deployed to support [[Taproot Assets]] and related Bitcoin-native asset protocols. Interest from Lightning Network developers in using AluVM for payment channel script extensions has grown, though standardisation work for such integrations remains ongoing. The VM's formal specification has attracted academic interest as a case study in deterministic contract execution for UTXO-based systems.
-

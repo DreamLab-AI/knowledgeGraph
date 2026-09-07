@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Paper Writing]]
-# Scholarly Manuscript Composition Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[Paper Writing]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ]
   },
   "provenance": {
@@ -66,26 +75,6 @@ elevatedFrom:: [[Paper Writing]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:paper-writing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:13bb3b03cf9e4e55ef1e09b30c00368e29ee54fe197f18907c673ed0ca89de83"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The structured process of composing and submitting scholarly manuscripts, including literature review, argument construction, citation management, and formatting to venue-specific standards. In AI-adjacent contexts, paper writing increasingly involves AI-assisted drafting, ontology-grounded claims, and tool-augmented workflows (LaTeX, reference managers, large language models) that must be balanced against academic integrity requirements.
@@ -145,7 +134,7 @@ elevatedFrom:: [[Paper Writing]]
 		  Argumentation and Presentation:
 		  Data-Driven and Example-Rich: Supports arguments with data, case studies, and examples that are relevant and thoughtfully selected. This approach not only strengthens the credibility of the arguments but also makes the theoretical discussions tangible.
 		  Empathetic Engagement: Shows a strong awareness of different perspectives, especially when discussing social issues or community impacts. It involves an empathetic undertone that seeks to respect and understand varied experiences and viewpoints.
-		  Solution-Oriented and Practical: While it critically analyzes problems, it also focuses on proposing and evaluating practical solutions, emphasizing applications that could lead to real-world improvements.
+		  Solution-Oriented and Practical: While it critically analyzes problems, it also focuses on proposing and evaluating practical solutions, emphasizing applications that [private] lead to real-world improvements.
 
 - ### Provenance
   - sources::

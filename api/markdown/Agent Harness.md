@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Harness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,52 +7,190 @@ public: true
   "title": "Agent Harness",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:ai-infrastructure", "vc:label": "AI Infrastructure"},
-    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
-    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
-    {"@id": "urn:visionflow:linked:terminal-coding-agents", "vc:label": "Terminal Coding Agents"},
-    {"@id": "urn:visionflow:linked:ide-coding-agents", "vc:label": "IDE Coding Agents"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "vc:label": "Multi-Agent Orchestration Frameworks"},
-    {"@id": "urn:visionflow:linked:agent-evaluation-benchmarks", "vc:label": "Agent Evaluation Benchmarks"},
-    {"@id": "urn:visionflow:linked:agent-execution-sandboxes", "vc:label": "Agent Execution Sandboxes"},
-    {"@id": "urn:visionflow:linked:harness-configuration-packs", "vc:label": "Harness Configuration Packs"},
-    {"@id": "urn:visionflow:linked:personal-agent-runtimes", "vc:label": "Personal Agent Runtimes"},
-    {"@id": "urn:visionflow:linked:progressive-disclosure-harnesses", "vc:label": "Progressive Disclosure Harnesses"},
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:ai-agent", "vc:label": "AI Agent"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:agent-loop", "vc:label": "Agent Loop"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection"},
-    {"@id": "urn:visionflow:linked:sandboxed-code-execution", "vc:label": "Sandboxed Code Execution"},
-    {"@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:state-persistence", "vc:label": "State Persistence"},
-    {"@id": "urn:visionflow:linked:observability", "vc:label": "Observability"},
-    {"@id": "urn:visionflow:linked:credential-management", "vc:label": "Credential Management"},
-    {"@id": "urn:visionflow:linked:rate-limiting", "vc:label": "Rate Limiting"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:evaluation-harness", "vc:label": "Evaluation Harness"},
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:tool-registry", "vc:label": "Tool Registry"},
-    {"@id": "urn:visionflow:linked:checkpointing", "vc:label": "Checkpointing"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:workflow-orchestration", "vc:label": "Workflow Orchestration"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:chain-of-thought", "vc:label": "Chain of Thought"},
-    {"@id": "urn:visionflow:linked:react-pattern", "vc:label": "ReAct Pattern"},
-    {"@id": "urn:visionflow:linked:agent-development-sdks", "vc:label": "Agent Development SDKs"},
-    {"@id": "urn:visionflow:linked:opentelemetry", "vc:label": "OpenTelemetry"},
-    {"@id": "urn:visionflow:linked:software-engineering-automation", "vc:label": "Software Engineering Automation"},
-    {"@id": "urn:visionflow:linked:eu-ai-act", "vc:label": "EU AI Act"},
-    {"@id": "urn:visionflow:linked:multi-agent-systems", "vc:label": "Multi-Agent Systems"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:compute-layer", "vc:label": "AgentLayer"},
-    {"@id": "urn:visionflow:owl:class:ai-research-area", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:ai-infrastructure",
+      "vc:label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:terminal-coding-agents",
+      "vc:label": "Terminal Coding Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:ide-coding-agents",
+      "vc:label": "IDE Coding Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration-frameworks",
+      "vc:label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-evaluation-benchmarks",
+      "vc:label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-execution-sandboxes",
+      "vc:label": "Agent Execution Sandboxes"
+    },
+    {
+      "@id": "urn:visionflow:linked:harness-configuration-packs",
+      "vc:label": "Harness Configuration Packs"
+    },
+    {
+      "@id": "urn:visionflow:linked:personal-agent-runtimes",
+      "vc:label": "Personal Agent Runtimes"
+    },
+    {
+      "@id": "urn:visionflow:linked:progressive-disclosure-harnesses",
+      "vc:label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent",
+      "vc:label": "AI Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-loop",
+      "vc:label": "Agent Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandboxed-code-execution",
+      "vc:label": "Sandboxed Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-persistence",
+      "vc:label": "State Persistence"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability",
+      "vc:label": "Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-management",
+      "vc:label": "Credential Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:rate-limiting",
+      "vc:label": "Rate Limiting"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-harness",
+      "vc:label": "Evaluation Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-registry",
+      "vc:label": "Tool Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:checkpointing",
+      "vc:label": "Checkpointing"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-orchestration",
+      "vc:label": "Workflow Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:linked:react-pattern",
+      "vc:label": "ReAct Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-development-sdks",
+      "vc:label": "Agent Development SDKs"
+    },
+    {
+      "@id": "urn:visionflow:linked:opentelemetry",
+      "vc:label": "OpenTelemetry"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-engineering-automation",
+      "vc:label": "Software Engineering Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-systems",
+      "vc:label": "Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "AgentLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-research-area",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -81,40 +214,118 @@ public: true
   ],
   "relations": {
     "has-part": [
-      {"@id": "urn:ngm:class:internal-ai-harness", "label": "Internal AI Harness"},
-      {"@id": "urn:ngm:class:external-ai-harness", "label": "External AI Harness"},
-      {"@id": "urn:ngm:class:terminal-coding-agents", "label": "Terminal Coding Agents"},
-      {"@id": "urn:ngm:class:ide-coding-agents", "label": "IDE Coding Agents"},
-      {"@id": "urn:ngm:class:multi-agent-orchestration-frameworks", "label": "Multi-Agent Orchestration Frameworks"},
-      {"@id": "urn:ngm:class:agent-evaluation-benchmarks", "label": "Agent Evaluation Benchmarks"},
-      {"@id": "urn:ngm:class:agent-execution-sandboxes", "label": "Agent Execution Sandboxes"},
-      {"@id": "urn:ngm:class:harness-configuration-packs", "label": "Harness Configuration Packs"},
-      {"@id": "urn:ngm:class:personal-agent-runtimes", "label": "Personal Agent Runtimes"},
-      {"@id": "urn:ngm:class:progressive-disclosure-harnesses", "label": "Progressive Disclosure Harnesses"}
+      {
+        "@id": "urn:ngm:class:internal-ai-harness",
+        "label": "Internal AI Harness"
+      },
+      {
+        "@id": "urn:ngm:class:external-ai-harness",
+        "label": "External AI Harness"
+      },
+      {
+        "@id": "urn:ngm:class:terminal-coding-agents",
+        "label": "Terminal Coding Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ide-coding-agents",
+        "label": "IDE Coding Agents"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agent-evaluation-benchmarks",
+        "label": "Agent Evaluation Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      },
+      {
+        "@id": "urn:ngm:class:harness-configuration-packs",
+        "label": "Harness Configuration Packs"
+      },
+      {
+        "@id": "urn:ngm:class:personal-agent-runtimes",
+        "label": "Personal Agent Runtimes"
+      },
+      {
+        "@id": "urn:ngm:class:progressive-disclosure-harnesses",
+        "label": "Progressive Disclosure Harnesses"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:agent-loop", "label": "Agent Loop"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:workflow-orchestration", "label": "Workflow Orchestration"},
-      {"@id": "urn:ngm:class:software-engineering-automation", "label": "Software Engineering Automation"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering-automation",
+        "label": "Software Engineering Automation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:re-act-pattern", "label": "ReAct Pattern"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"},
-      {"@id": "urn:ngm:class:checkpointing", "label": "Checkpointing"}
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "@id": "urn:ngm:class:checkpointing",
+        "label": "Checkpointing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:terminal-coding-agents", "label": "Terminal Coding Agents"},
-      {"@id": "urn:ngm:class:multi-agent-orchestration-frameworks", "label": "Multi-Agent Orchestration Frameworks"},
-      {"@id": "urn:ngm:class:agent-evaluation-benchmarks", "label": "Agent Evaluation Benchmarks"},
-      {"@id": "urn:ngm:class:agent-runtime", "label": "Agent Runtime"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:terminal-coding-agents",
+        "label": "Terminal Coding Agents"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agent-evaluation-benchmarks",
+        "label": "Agent Evaluation Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ]
   },
   "quality": 0.91,
@@ -122,72 +333,6 @@ public: true
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "FullEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agent-harness:a9f3b2c1d7e4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:agent-harness"
-  },
-  "vc:resolutions": [
-    {"raw": "[[AI Infrastructure]]", "resolved": "urn:visionflow:linked:ai-infrastructure", "kind": "StubLink"},
-    {"raw": "[[Internal AI Harness]]", "resolved": "urn:visionflow:linked:internal-ai-harness", "kind": "ResolvedLink"},
-    {"raw": "[[External AI Harness]]", "resolved": "urn:visionflow:linked:external-ai-harness", "kind": "ResolvedLink"},
-    {"raw": "[[Terminal Coding Agents]]", "resolved": "urn:visionflow:linked:terminal-coding-agents", "kind": "ResolvedLink"},
-    {"raw": "[[IDE Coding Agents]]", "resolved": "urn:visionflow:linked:ide-coding-agents", "kind": "ResolvedLink"},
-    {"raw": "[[Multi-Agent Orchestration Frameworks]]", "resolved": "urn:visionflow:linked:multi-agent-orchestration-frameworks", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Evaluation Benchmarks]]", "resolved": "urn:visionflow:linked:agent-evaluation-benchmarks", "kind": "ResolvedLink"},
-    {"raw": "[[Agent Execution Sandboxes]]", "resolved": "urn:visionflow:linked:agent-execution-sandboxes", "kind": "ResolvedLink"},
-    {"raw": "[[Harness Configuration Packs]]", "resolved": "urn:visionflow:linked:harness-configuration-packs", "kind": "ResolvedLink"},
-    {"raw": "[[Personal Agent Runtimes]]", "resolved": "urn:visionflow:linked:personal-agent-runtimes", "kind": "StubLink"},
-    {"raw": "[[Progressive Disclosure Harnesses]]", "resolved": "urn:visionflow:linked:progressive-disclosure-harnesses", "kind": "StubLink"},
-    {"raw": "[[Agent Runtime]]", "resolved": "urn:visionflow:linked:agent-runtime", "kind": "ResolvedLink"},
-    {"raw": "[[AI Agent]]", "resolved": "urn:visionflow:linked:ai-agent", "kind": "ResolvedLink"},
-    {"raw": "[[Tool Use]]", "resolved": "urn:visionflow:linked:tool-use", "kind": "StubLink"},
-    {"raw": "[[Function Calling]]", "resolved": "urn:visionflow:linked:function-calling", "kind": "StubLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Agent Loop]]", "resolved": "urn:visionflow:linked:agent-loop", "kind": "StubLink"},
-    {"raw": "[[Human-in-the-Loop]]", "resolved": "urn:visionflow:linked:human-in-the-loop", "kind": "StubLink"},
-    {"raw": "[[Prompt Injection]]", "resolved": "urn:visionflow:linked:prompt-injection", "kind": "StubLink"},
-    {"raw": "[[Sandboxed Code Execution]]", "resolved": "urn:visionflow:linked:sandboxed-code-execution", "kind": "StubLink"},
-    {"raw": "[[Agent Memory]]", "resolved": "urn:visionflow:linked:agent-memory", "kind": "StubLink"},
-    {"raw": "[[Context Window]]", "resolved": "urn:visionflow:linked:context-window", "kind": "StubLink"},
-    {"raw": "[[State Persistence]]", "resolved": "urn:visionflow:linked:state-persistence", "kind": "StubLink"},
-    {"raw": "[[Observability]]", "resolved": "urn:visionflow:linked:observability", "kind": "StubLink"},
-    {"raw": "[[Credential Management]]", "resolved": "urn:visionflow:linked:credential-management", "kind": "StubLink"},
-    {"raw": "[[Rate Limiting]]", "resolved": "urn:visionflow:linked:rate-limiting", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[Evaluation Harness]]", "resolved": "urn:visionflow:linked:evaluation-harness", "kind": "StubLink"},
-    {"raw": "[[Agent Orchestrator]]", "resolved": "urn:visionflow:linked:agent-orchestrator", "kind": "StubLink"},
-    {"raw": "[[Tool Registry]]", "resolved": "urn:visionflow:linked:tool-registry", "kind": "StubLink"},
-    {"raw": "[[Checkpointing]]", "resolved": "urn:visionflow:linked:checkpointing", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[Workflow Orchestration]]", "resolved": "urn:visionflow:linked:workflow-orchestration", "kind": "StubLink"},
-    {"raw": "[[Autonomous Agent]]", "resolved": "urn:visionflow:linked:autonomous-agent", "kind": "StubLink"},
-    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "StubLink"},
-    {"raw": "[[Chain of Thought]]", "resolved": "urn:visionflow:linked:chain-of-thought", "kind": "StubLink"},
-    {"raw": "[[ReAct Pattern]]", "resolved": "urn:visionflow:linked:react-pattern", "kind": "StubLink"},
-    {"raw": "[[Agent Development SDKs]]", "resolved": "urn:visionflow:linked:agent-development-sdks", "kind": "StubLink"},
-    {"raw": "[[OpenTelemetry]]", "resolved": "urn:visionflow:linked:opentelemetry", "kind": "StubLink"},
-    {"raw": "[[Software Engineering Automation]]", "resolved": "urn:visionflow:linked:software-engineering-automation", "kind": "StubLink"},
-    {"raw": "[[EU AI Act]]", "resolved": "urn:visionflow:linked:eu-ai-act", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent Systems]]", "resolved": "urn:visionflow:linked:multi-agent-systems", "kind": "StubLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-technique", "kind": "ResolvedLink"},
-    {"raw": "[[AgentLayer]]", "resolved": "urn:visionflow:owl:class:compute-layer", "kind": "ResolvedLink"},
-    {"raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:owl:class:ai-research-area", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-21T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -311,7 +456,7 @@ public: true
     - The agent harness emerged as a distinct engineering concept over the 2024–2026 period, crystallising around the recognition that deploying a capable [[Large Language Models]] into a production workflow is far less than half the engineering problem. The model's reasoning capabilities — however impressive in isolation — are only realised safely and reliably through a surrounding control layer that manages every aspect of the model's interaction with the world: what tools it can invoke, under what permission conditions, with what retry logic on failure, with what approval requirements before actions touch production systems. Adnan Masood's April 2026 O'Reilly piece on agent harness engineering describes the harness as "the AI control plane" — a deliberate analogy to the network control plane that manages data routing decisions rather than forwarding data itself. Just as a control plane determines how data should flow without itself carrying the traffic, the agent harness determines how model outputs should be executed without itself performing the execution. This framing positions harness engineering as a discipline orthogonal to model capability research: a more capable model inside a poorly designed harness will produce less reliable behaviour than a less capable model inside a well-engineered harness with proper approval gates, failure classification, and context management.
     - The historical lineage of harness concepts begins in software testing: a "test harness" is scaffolding that wraps a system under test, providing controlled inputs, capturing outputs, and asserting postconditions without depending on the full production stack. The term migrated into AI evaluation (the [[Evaluation Harness]] concept used in [[Agent Evaluation Benchmarks]] such as HAL and [[Agent Evaluation Benchmarks|inspect_ai]]) and then into production agentic deployment, where "harness" acquired its current meaning of the full control and governance layer around an [[Autonomous Agent]]. This conceptual migration is significant: it frames the harness as a correctness-enforcement mechanism from the outset, not merely convenient plumbing, and establishes harness design as a first-class engineering concern separate from and complementary to model capability development. The [[Agent Runtime]] provides the infrastructure substrate; the Agent Harness provides the behavioural governance layer on top of that substrate.
     - The theoretical basis for the harness concept was articulated in the April 2026 paper "Externalization in LLM Agents: A Unified Review of Memory, Skills, Protocols and Harness Engineering" (arXiv:2604.08224), which frames the harness as the unification layer across four distinct externalisation categories: memory (state externalised across time via [[Agent Memory]] systems), skills (procedural expertise externalised into [[Harness Configuration Packs]] and reusable skill modules accessible to [[Progressive Disclosure Harnesses]]), protocols (interaction structure externalised into message schemas such as [[Model Context Protocol]] and [[Function Calling]] specifications), and governance (safety constraints externalised into approval gates and permission policies that enforce [[AI Safety]] independently of model-generated reasoning). The paper argues that these four externalised components are individually well understood but require the harness to coordinate them into a coherent runtime environment with consistent constraints, [[Observability]] instrumentation, feedback loops, and control points. A companion paper "Code as Agent Harness" (arXiv:2605.18747, May 2026) explores a further externalisation: using code itself — rather than YAML configuration or natural-language system prompts — as the representation of harness logic, enabling statically typed, version-controlled, testable harness behaviour that can be subject to formal analysis and automated test coverage.
-    - The practical engineering of harnesses has converged on several recurring patterns documented by practitioners across productions deployments in 2025–2026. The Plan-Execute-Verify (PEV) loop enforces a three-phase gate architecture: the agent first emits a structured execution plan that the harness surfaces for optional [[Human-in-the-Loop]] review, then executes tools one by one with per-tool approval gates — consulting [[Tool Registry]] permissions at each step — then runs a verification step (automated test suite, linting, model self-critique, or external validator) before finalising and committing results. The Ralph Loop — named for an internal technique at a production SaaS deployment and documented in the O'Reilly harness engineering article — intercepts premature agent exit by detecting when the agent returns a "task complete" signal before required postconditions (e.g., all tests passing, all files committed) are met, re-injecting the original user intent into a clean [[Context Window]] to force continuation without the accumulated reasoning errors of the original run. Progressive disclosure, implemented in [[Progressive Disclosure Harnesses]], stages tool documentation: rather than including all tool specifications in the initial context (which would consume the majority of the [[Context Window]] budget on rarely needed tool specs), the harness maintains a compact high-level index of available capabilities in the permanent context prefix and injects detailed tool specifications just-in-time as the agent's plan indicates imminent use of that tool category. These patterns, formalised in the Microsoft Agent Framework at BUILD 2026 and documented in the O'Reilly harness engineering canon, represent the maturing engineering discipline of harness engineering as a named subdiscipline of [[Agentic AI]] systems design, now recognised as requiring specialist expertise distinct from both model fine-tuning and application development.
+    - The practical engineering of harnesses has converged on several recurring patterns documented by practitioners across productions deployments in 2025–2026. The Plan-Execute-Verify (PEV) loop enforces a three-phase gate architecture: the agent first emits a structured execution plan that the harness surfaces for optional [[Human-in-the-Loop]] review, then executes tools one by one with per-tool approval gates — consulting [[Tool Registry]] permissions at each step — then runs a verification step (automated test suite, linting, model self-critique, or external validator) before finalising and committing results. The Ralph Loop — named for an internal technique at a production SaaS deployment and documented in the O'Reilly harness engineering article — intercepts premature agent exit by detecting when the agent returns a "task complete" signal before required postconditions (e.g., all tests passing, all files committed) are met, re-injecting the original user intent into a clean [[Context Window]] to force continuation without the accumulated reasoning errors of the original run. Progressive disclosure, implemented in [[Progressive Disclosure Harnesses]], stages tool documentation: rather than including all tool specifications in the initial context (which would consume the majority of the [[Context Window]] budget on rarely needed tool specs), the harness maintains a compact high-level [private] of available capabilities in the permanent context prefix and injects detailed tool specifications just-in-time as the agent's plan indicates imminent use of that tool category. These patterns, formalised in the Microsoft Agent Framework at BUILD 2026 and documented in the O'Reilly harness engineering canon, represent the maturing engineering discipline of harness engineering as a named subdiscipline of [[Agentic AI]] systems design, now recognised as requiring specialist expertise distinct from both model fine-tuning and application development.
     - Security is the most pressing unsolved dimension of harness engineering. Because the harness sits at the boundary between the model's text outputs and real-world systems, it is the primary target of [[Prompt Injection]] attacks — ranked the OWASP #1 vulnerability for LLM applications since 2025 — where adversarial content embedded in tool outputs (retrieved web pages, database records, email attachments, parsed documents) attempts to inject instructions that the model will interpret as authoritative commands, potentially bypassing the harness's permission system and causing the agent to take actions outside its authorised scope. Indirect prompt injection through [[Tool Use]] results is particularly dangerous because it requires no direct access to the agent system: an attacker who can influence the content of a web page retrieved by the agent's search tool, or a database record queried by its data access tool, can potentially hijack the agent's subsequent planning decisions without any authenticated access. Production harnesses implement multi-layer defences: output sanitisation (stripping instruction-like patterns from tool results before they enter the model's context), schema enforcement (rejecting tool outputs that do not conform to expected JSON schemas, preventing free-text instructions from masquerading as structured data), signed provenance tracking (cryptographic attestation of tool output origin, enabling the harness to detect if a retrieved document claims to be from a trusted source but was retrieved from an untrusted endpoint), action-level approval gates that remain resistant to override by model-generated justifications for bypassing approval, and anomaly detection on tool-call patterns that flags sessions where call frequencies deviate significantly from baseline — a signature of injection attacks driving excessive tool invocations to exfiltrate data or establish persistence.
   - ## Formal Description
     - The Agent Harness can be characterised as a tuple H = ⟨M, T, G, C, S, O⟩ where M is the [[Large Language Models]] providing language understanding and generation, T is the [[Tool Registry]] of callable functions with their permission specifications, G is the approval gate policy mapping action types to confirmation requirements, C is the [[Context Window]] management policy determining what content is present at each loop iteration, S is the [[State Persistence]] mechanism maintaining execution continuity across steps and infrastructure failures, and O is the [[Observability]] emission specification covering what events generate telemetry spans. The harness loop function f(H, goal) iterates M(context(C, history, memory)) → action; if action ∈ T and G(action) = approved then execute(action) → observation; append(observation, history); repeat until halt(H, history, budget). This abstraction highlights the harness design parameters that are independent of the underlying model M: the tool catalogue T, the gate policy G, the context composition policy C, and the state durability policy S together determine harness behaviour independently of which [[Foundation Model]] sits inside the loop, enabling harness portability across model providers.
@@ -322,8 +467,8 @@ public: true
     - **Approval Gate System** — the configurable permission enforcement layer that intercepts each tool call before execution and evaluates it against a policy matrix of action type × permission level × confirmation requirement. Approval gates operate at four granularities: auto-approve (low-risk read operations that proceed without human intervention), confirm-once (first invocation of a tool type requires approval but subsequent invocations in the same session are auto-approved), confirm-always (every invocation of certain high-risk actions — destructive file operations, network calls to production endpoints, subprocess execution — requires explicit approval), and block (certain action categories are unconditionally prohibited). Well-calibrated approval policies start strict and relax as confidence in specific action categories accumulates through production observation; miscalibrated policies cause either excessive interruption (slower than manual execution) or insufficient safety (one hallucinated API call from a production incident).
       - *Gate calibration* — the consensus 2026 practice from the O'Reilly harness engineering guide: start with aggressive approval requirements across all action categories, run a calibration sprint of 50–100 representative tasks while logging every gate trigger and approval decision, identify action categories where 100% of gate decisions resulted in approval, promote those categories to auto-approve, and repeat the calibration cycle quarterly. This adaptive calibration mirrors the trust-escalation dynamics of human management relationships.
       - *Gate bypass resistance* — production harnesses implement defences against model-generated arguments for bypassing approval gates, as frontier models can sometimes construct plausible-sounding justifications for why a particular action should be exempted from its usual approval requirements. Defences include: gate decisions implemented in the harness runtime code rather than in model-readable system prompts (so the model cannot override them through reasoning), cryptographic signing of approval records to prevent replay attacks, and audit log entries that flag any session where the model's output contained gate-bypass arguments.
-    - **Context Router and [[Progressive Disclosure Harnesses]] Engine** — manages the composition and maintenance of the [[Context Window]] across the [[Agent Loop]]: determines which system prompt sections, tool specifications, [[Agent Memory]] retrievals, prior step summaries, and user-provided documents are included at each loop iteration. Progressive disclosure is the dominant strategy: rather than including all available tool documentation upfront (which would consume the majority of the context budget), the context router injects detailed tool specifications just-in-time based on the agent's current planning phase, maintaining a compact high-level index of available capabilities in the permanent context prefix and expanding individual tool specs into context only when the planning trace indicates imminent use.
-      - *Tier-1 / Tier-2 / Tier-3 context* — the Microsoft Agent Framework's three-tier context model: Tier 1 (~100 tokens per tool) is the index card — name, description, tags — always present. Tier 2 (~5,000 tokens per tool) is the full specification — parameters, examples, error codes, usage guidelines — injected only when the tool is about to be used. Tier 3 is live execution context — recent tool outputs, current file contents, active test results — injected for the current iteration only and discarded when the iteration completes.
+    - **Context Router and [[Progressive Disclosure Harnesses]] Engine** — manages the composition and maintenance of the [[Context Window]] across the [[Agent Loop]]: determines which system prompt sections, tool specifications, [[Agent Memory]] retrievals, prior step summaries, and user-provided documents are included at each loop iteration. Progressive disclosure is the dominant strategy: rather than including all available tool documentation upfront (which would consume the majority of the context budget), the context router injects detailed tool specifications just-in-time based on the agent's current planning phase, maintaining a compact high-level [private] of available capabilities in the permanent context prefix and expanding individual tool specs into context only when the planning trace indicates imminent use.
+      - *Tier-1 / Tier-2 / Tier-3 context* — the Microsoft Agent Framework's three-tier context model: Tier 1 (~100 tokens per tool) is the [private] card — name, description, tags — always present. Tier 2 (~5,000 tokens per tool) is the full specification — parameters, examples, error codes, usage guidelines — injected only when the tool is about to be used. Tier 3 is live execution context — recent tool outputs, current file contents, active test results — injected for the current iteration only and discarded when the iteration completes.
     - **[[Tool Registry]] and Dispatcher** — maintains the catalogue of all tools available to the harness (file read/write, shell execution, web search, code interpreter, database queries, [[Model Context Protocol]] server integrations, sub-agent spawning) with their [[Function Calling]] schemas, permission requirements, [[Rate Limiting]] policies, and timeout configurations. Dispatches validated tool calls to appropriate executors (local process, remote API, [[Agent Execution Sandboxes]]), handles transient failure retry with exponential backoff, enforces concurrent execution limits, and returns structured results. Tool specification quality — precision of parameter descriptions, completeness of example invocations, clarity of output format — has been shown empirically to account for more performance variance than system prompt phrasing.
       - *MCP integration* — harnesses implementing [[Model Context Protocol]] as their tool interface standard can register any MCP-compliant server (web search, database connector, code analysis tool, browser automation, enterprise API wrapper) without framework-specific adapter code. This plug-and-play extensibility has driven rapid adoption of MCP as the canonical tool interface standard in production harnesses, with 40+ major tool providers shipping MCP servers by H1 2026.
     - **Failure Recovery Module** — classifies execution failures into categories and selects the appropriate recovery strategy: transient infrastructure failures (API timeout, [[Rate Limiting|rate limit]] exceeded) trigger exponential backoff retry; deterministic logic failures (malformed tool input, schema validation error) trigger agent re-planning with the error injected as an observation; resource failures (context window overflow, token budget exhausted) trigger context compression or graceful degradation; security failures ([[Prompt Injection]] detected, policy violation attempted) trigger session termination with audit log emission. Without failure classification, uniform retry logic is both expensive and potentially dangerous, amplifying attack costs.
@@ -346,7 +491,7 @@ public: true
     - The HAL (Holistic Agent Leaderboard) paper (arXiv:2510.11977) defines a harness-agnostic evaluation infrastructure that accepts any agent exposing a minimal Python API and orchestrates reproducible, cost-controlled evaluation across diverse benchmark suites, providing a shared harness for cross-agent comparison — essential for separating model capability from harness quality in benchmark results. The ARC-AGI-3 benchmark (arXiv:2603.24621, March 2026) introduces a new harness-based evaluation designed to stress-test frontier agentic intelligence beyond the saturated ARC-AGI-2 tasks. The "Natural-Language Agent Harnesses" paper (arXiv:2603.25723, March 2026) explores harnesses specified entirely in natural language rather than code, enabling non-programmer domain experts to configure agent behaviour — a key accessibility dimension for enterprise adoption.
     - Foundational venues: AAMAS (Autonomous Agents and Multi-Agent Systems), NeurIPS, ICLR, ICML (machine learning systems track); ICSE, FSE (software engineering for coding agent harnesses); USENIX Security (harness security and [[Prompt Injection]] defence). The O'Reilly Radar column on agent harness engineering (2026) is the practitioner reference source. Edinburgh's School of Informatics hosts the annual Agentic AI Safety Workshop where harness governance is a central topic; Imperial College London's Intelligent Systems group has formalised approval gate specification as a constrained optimisation problem over the space of possible agent behaviours, providing the first provably safe harness configurations for specific task domains.
   - ## Current Landscape (2026)
-    - By Q2 2026 the term "agent harness" has entered mainstream enterprise AI vocabulary, with practitioners describing their production systems as "harness-governed agents" rather than simply "AI agents." The Microsoft Agent Framework at BUILD 2026 (June 2026) introduced a first-class Agent Harness abstraction into MAF, with configurable harness parameters including `max_context_window_tokens`, `max_output_tokens`, agent_instructions, skill packs, and lifecycle hooks — representing the first time a major cloud platform vendor formalised the harness as a first-class configuration object distinct from the agent application logic. The MAF harness specification establishes a three-tier skill disclosure model (index card, full specification, live execution context) that codifies the [[Progressive Disclosure Harnesses]] pattern as a vendor-supported framework feature, enabling enterprise developers to build disclosure-optimised harnesses without implementing context management from scratch.
+    - By Q2 2026 the term "agent harness" has entered mainstream enterprise AI vocabulary, with practitioners describing their production systems as "harness-governed agents" rather than simply "AI agents." The Microsoft Agent Framework at BUILD 2026 (June 2026) introduced a first-class Agent Harness abstraction into MAF, with configurable harness parameters including `max_context_window_tokens`, `max_output_tokens`, agent_instructions, skill packs, and lifecycle hooks — representing the first time a major cloud platform vendor formalised the harness as a first-class configuration object distinct from the agent application logic. The MAF harness specification establishes a three-tier skill disclosure model ([private] card, full specification, live execution context) that codifies the [[Progressive Disclosure Harnesses]] pattern as a vendor-supported framework feature, enabling enterprise developers to build disclosure-optimised harnesses without implementing context management from scratch.
     - The [[Model Context Protocol]] (Anthropic, November 2024; donated to Linux Foundation Agentic AI Foundation, December 2025; 97 million monthly SDK downloads by late 2025) has become the de facto standard interface between harnesses and tool servers, enabling plug-and-play tool integration without per-tool adapter code. The A2A (Agent-to-Agent) protocol (Google, April 2025; donated to Linux Foundation, June 2025) complements MCP by standardising the harness interface for inter-agent delegation, so that a harness orchestrating a pool of sub-agents can communicate with those sub-agents regardless of their implementation framework. IBM's Agent Communication Protocol (ACP / BeeAI) addresses a third layer — agent-to-agent capability advertisement — completing the three-protocol stack (MCP for tool access, A2A for agent delegation, ACP for capability discovery) that the Linux Foundation Agentic AI Foundation is working to unify.
     - The [[Internal AI Harness]] / [[External AI Harness]] distinction has become practically important as enterprises choose between tight-coupling (in-process, low-latency, high-throughput) and loose-coupling (out-of-process, API-mediated, isolated, scalable) harness architectures. Financial services firms favour [[Internal AI Harness|internal harnesses]] for latency-sensitive trading and risk applications; enterprise SaaS platforms favour [[External AI Harness|external harnesses]] for multi-tenant isolation and compliance audit trail separation. The boundary between internal and external harnesses is blurring with managed cloud harness offerings ([[AWS Bedrock AgentCore]], [[Google Vertex AI]] Agent Engine, [[Azure AI Studio]] Agent Service) that provide external-harness isolation with sub-100ms dispatch latency through per-agent microVM pools.
     - The security posture of harnesses has become a primary differentiator in enterprise procurement decisions. [[Prompt Injection]] through tool outputs — particularly from web retrieval, email parsing, and document reading tools — is classified as the OWASP #1 vulnerability for LLM applications (2025) and remains an active research and engineering frontier. Production harnesses now implement defence-in-depth: tool-output schema enforcement (rejecting free-text where structured output is expected), signed provenance attestation for retrieved content, instruction-boundary tagging in context composition, and rate-limited action categories with automatic anomaly detection for unusual tool-call patterns. The [[EU AI Act]] (effective August 2024, enforcement from 2025–2026 across application domains) classifies agentic systems in high-risk domains as high-risk AI, mandating [[Human-in-the-Loop]] oversight mechanisms (approval gates), [[Observability|audit logs]], and post-market monitoring — requirements that directly map onto harness engineering primitives and have driven EU-market-focused vendors to make approval gate configuration and audit log emission first-class product features.
@@ -390,7 +535,7 @@ public: true
     - 11. O'Reilly Radar (2026). Agent Harness Engineering. https://www.oreilly.com/radar/agent-harness-engineering/ [Industry reference on harness engineering maturity.]
     - 12. Gupta, A. (2026). 2025 Was Agents. 2026 Is Agent Harnesses. *Medium*. https://aakashgupta.medium.com/2025-was-agents-2026-is-agent-harnesses-heres-why-that-changes-everything-073e9877655e [Industry analysis of the harness-first shift in production AI deployment.]
     - 13. Microsoft (2026). Microsoft Agent Framework at BUILD 2026: Agent Harness, Hosted Agents, CodeAct, and more. *Microsoft Agent Framework Blog*. https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/ [First-class harness object in MAF; CodeAct and skill pack integration.]
-    - 14. OpenAI (2026). Harness Engineering: Leveraging Codex in an Agent-First World. https://openai.com/index/harness-engineering/ [OpenAI's harness engineering patterns for Codex-based agent deployments.]
+    - 14. OpenAI (2026). Harness Engineering: Leveraging Codex in an Agent-First World. https://openai.com/[private]/harness-engineering/ [OpenAI's harness engineering patterns for Codex-based agent deployments.]
     - 15. Augment Code (2026). Harness Engineering for AI Coding Agents: Constraints That Ship Reliable Code. https://www.augmentcode.com/guides/harness-engineering-ai-coding-agents [Coding-specific harness engineering patterns and constraint calibration.]
     - 16. HumanLayer (2026). Skill Issue: Harness Engineering for Coding Agents. https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents [Approval gate design for coding agent harnesses.]
     - 17. MongoDB (2026). The Agent Harness: Why the LLM Is the Smallest Part of Your Agent System. *Medium*. https://medium.com/@MongoDB/the-agent-harness-why-the-llm-is-the-smallest-part-of-your-agent-system-bce68414ccfd [Architecture perspective on harness as the dominant engineering concern over model selection.]
@@ -407,6 +552,6 @@ public: true
     - 28. Albrecht, S.V. & Stone, P. (2018). Autonomous Agents Modelling Other Agents: A Comprehensive Survey and Open Problems. *Artificial Intelligence*, 258, 66–95. [Foundational multi-agent theory underpinning multi-agent harness design.]
 
 - ### Provenance
-  - sources:: https://arxiv.org/abs/2604.08224; https://arxiv.org/abs/2605.12239; https://arxiv.org/html/2605.18747v1; https://arxiv.org/html/2603.05344v1; https://arxiv.org/pdf/2603.25723; https://arxiv.org/pdf/2510.11977; https://www.preprints.org/manuscript/202603.1756; https://aakashgupta.medium.com/2025-was-agents-2026-is-agent-harnesses-heres-why-that-changes-everything-073e9877655e; https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/; https://openai.com/index/harness-engineering/; https://addyosmani.com/blog/agent-harness-engineering/; https://www.oreilly.com/radar/agent-harness-engineering/; https://owasp.org/www-project-top-10-for-large-language-model-applications/; https://modelcontextprotocol.io/; https://google.github.io/A2A/; https://arxiv.org/abs/2505.02077
+  - sources:: https://arxiv.org/abs/2604.08224; https://arxiv.org/abs/2605.12239; https://arxiv.org/html/2605.18747v1; https://arxiv.org/html/2603.05344v1; https://arxiv.org/pdf/2603.25723; https://arxiv.org/pdf/2510.11977; https://www.preprints.org/manuscript/202603.1756; https://aakashgupta.medium.com/2025-was-agents-2026-is-agent-harnesses-heres-why-that-changes-everything-073e9877655e; https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/; https://openai.com/[private]/harness-engineering/; https://addyosmani.com/blog/agent-harness-engineering/; https://www.oreilly.com/radar/agent-harness-engineering/; https://owasp.org/www-project-top-10-for-large-language-model-applications/; https://modelcontextprotocol.io/; https://google.github.io/A2A/; https://arxiv.org/abs/2505.02077
   - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

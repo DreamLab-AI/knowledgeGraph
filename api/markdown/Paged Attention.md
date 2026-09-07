@@ -1,37 +1,114 @@
----
-public: true
----
-
-# Paged Attention
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:paged-attention", "@type":"Page", "title":"Paged Attention", "vc:slug":"paged-attention", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:paged-attention",
+  "@type": "Page",
+  "title": "Paged Attention",
+  "vc:slug": "paged-attention",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:paged-attention",
-  "@type":"Class",
-  "label":"Paged Attention",
-  "definition":"Paged attention is a memory management technique for large language model inference that partitions the key-value cache into fixed-size blocks managed like virtual memory pages. By decoupling logical token positions from physical memory layout it eliminates fragmentation, enables near-zero waste in cache allocation and allows sharing of cached prefixes across requests. Introduced in the vLLM serving system, it substantially increases throughput for high-concurrency inference.",
-  "domain":"artificial-intelligence",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:kv-cache","label":"KV Cache"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:memory-management","label":"Memory Management"},{"@id":"urn:ngm:class:continuous-batching","label":"Continuous Batching"}],
-    "hasPart":[{"@id":"urn:ngm:class:kv-cache","label":"KV Cache"}],
-    "requires":[{"@id":"urn:ngm:class:gpu-memory","label":"GPU Memory"},{"@id":"urn:ngm:class:attention-mechanism","label":"Attention Mechanism"}],
-    "enables":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"},{"@id":"urn:ngm:class:throughput","label":"Throughput"}],
-    "supports":[{"@id":"urn:ngm:class:inference","label":"Inference"},{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}],
-    "dependsOn":[{"@id":"urn:ngm:class:transformer","label":"Transformer"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:flash-attention","label":"Flash Attention"}],
-    "relatedTo":[{"@id":"urn:ngm:class:speculative-decoding","label":"Speculative Decoding"},{"@id":"urn:ngm:class:model-optimisation-and-performance","label":"Model Optimisation and Performance"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:gpu","label":"GPU"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:paged-attention",
+  "@type": "Class",
+  "label": "Paged Attention",
+  "definition": "Paged attention is a memory management technique for large language model inference that partitions the key-value cache into fixed-size blocks managed like virtual memory pages. By decoupling logical token positions from physical memory layout it eliminates fragmentation, enables near-zero waste in cache allocation and allows sharing of cached prefixes across requests. Introduced in the vLLM serving system, it substantially increases throughput for high-concurrency inference.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:kv-cache",
+      "label": "KV Cache"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-memory",
+        "label": "GPU Memory"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

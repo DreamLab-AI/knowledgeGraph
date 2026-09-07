@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Accounts]]
-# UK Company Financial Filing Obligations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,18 +47,36 @@ elevatedFrom:: [[Accounts]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"}
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ]
   },
   "quality": 0.35,
@@ -75,32 +87,6 @@ elevatedFrom:: [[Accounts]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:accounts:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:15b5d94bc41604fca6bea07eabffce1348827c615d8f1b3d00d74deb19d80c63"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Accounts denotes the financial reporting and filing obligations of a limited company under UK law, covering annual accounts preparation, Companies House submission deadlines (9 months from accounting reference date for subsequent years), confirmation statements, and the penalties regime for late filing.

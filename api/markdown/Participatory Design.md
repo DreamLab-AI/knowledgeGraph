@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Participatory Design
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,39 +20,86 @@ public: true
   "definition": "Participatory Design is a design methodology in which end-users, stakeholders, and affected communities are actively involved as co-designers throughout the design process rather than being passive subjects of research. Originating in Scandinavian workplace democracy movements of the 1970s, it prioritises the experiential knowledge of participants and seeks to produce systems that genuinely serve their needs. In digital technology and AI contexts, it is applied to ensure that systems reflect diverse human values and avoid embedding biases of the designer.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:user-research", "label": "User Research"},
-      {"@id": "urn:ngm:class:prototyping", "label": "Prototyping"}
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "@id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:human-centred-design", "label": "Human-Centred Design"}
+      {
+        "@id": "urn:ngm:class:human-centred-design",
+        "label": "Human-Centred Design"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"},
-      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"}
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "@id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:policy", "label": "Policy"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"}
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:expert-driven-design", "label": "Expert-Driven Design"}
+      {
+        "@id": "urn:ngm:class:expert-driven-design",
+        "label": "Expert-Driven Design"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:co-design-workshop", "label": "Co-Design Workshop"}
+      {
+        "@id": "urn:ngm:class:co-design-workshop",
+        "label": "Co-Design Workshop"
+      }
     ]
   },
   "quality": 0.62,

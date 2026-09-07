@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Anxiety
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-anxiety",
   "title": "AI Anxiety",
   "vc:public": true,
-  "vc:outboundWikilinks": ["China AI Adoption", "Job Displacement Fear"],
+  "vc:outboundWikilinks": [
+    "China AI Adoption",
+    "Job Displacement Fear"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-adoption",
+      "label": "AI Adoption"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}, {"@id": "urn:ngm:class:job-displacement", "label": "Job Displacement"}, {"@id": "urn:ngm:class:future-of-work", "label": "Future Of Work"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:job-displacement",
+        "label": "Job Displacement"
+      },
+      {
+        "@id": "urn:ngm:class:future-of-work",
+        "label": "Future Of Work"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

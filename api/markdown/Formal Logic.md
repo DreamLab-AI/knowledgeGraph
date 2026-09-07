@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Formal Logic
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:formal-logic", "@type": "Page", "title": "Formal Logic", "vc:slug": "formal-logic", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:formal-logic",
+  "@type": "Page",
+  "title": "Formal Logic",
+  "vc:slug": "formal-logic",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

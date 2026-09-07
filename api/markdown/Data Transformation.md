@@ -1,38 +1,120 @@
----
-public: true
----
-
-# Data Transformation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-transformation", "@type":"Page", "title":"Data Transformation", "vc:slug":"data-transformation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-transformation",
+  "@type": "Page",
+  "title": "Data Transformation",
+  "vc:slug": "data-transformation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:data-transformation",
-  "@type":"Class",
-  "label":"Data Transformation",
-  "definition":"Data transformation is the process of converting data from one structure, format or representation into another to make it suitable for storage, integration or analysis. It includes cleansing, type conversion, normalisation, aggregation, enrichment, schema mapping and serialisation, and is typically expressed as declarative or programmatic steps within a pipeline. Transformation reconciles heterogeneous sources, enforces quality and conformance rules, and shapes raw inputs into the canonical forms required by downstream systems.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-processing","label":"Data Processing"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"}],
-    "hasPart":[{"@id":"urn:ngm:class:data-cleaning","label":"Data Cleaning"},{"@id":"urn:ngm:class:data-serialization","label":"Data Serialization"}],
-    "uses":[{"@id":"urn:ngm:class:schema","label":"Schema"},{"@id":"urn:ngm:class:data-validation","label":"Data Validation"}],
-    "requires":[{"@id":"urn:ngm:class:data-quality","label":"Data Quality"}],
-    "implements":[{"@id":"urn:ngm:class:etl","label":"ETL"}],
-    "enables":[{"@id":"urn:ngm:class:data-integration","label":"Data Integration"},{"@id":"urn:ngm:class:data-analytics","label":"Data Analytics"}],
-    "supports":[{"@id":"urn:ngm:class:feature-engineering","label":"Feature Engineering"},{"@id":"urn:ngm:class:data-warehouse","label":"Data Warehouse"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data-engineering","label":"Data Engineering"}],
-    "relatedTo":[{"@id":"urn:ngm:class:data-processing","label":"Data Processing"},{"@id":"urn:ngm:class:data-lake","label":"Data Lake"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:data-integration","label":"Data Integration"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-transformation",
+  "@type": "Class",
+  "label": "Data Transformation",
+  "definition": "Data transformation is the process of converting data from one structure, format or representation into another to make it suitable for storage, integration or analysis. It includes cleansing, type conversion, normalisation, aggregation, enrichment, schema mapping and serialisation, and is typically expressed as declarative or programmatic steps within a pipeline. Transformation reconciles heterogeneous sources, enforces quality and conformance rules, and shapes raw inputs into the canonical forms required by downstream systems.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-processing",
+      "label": "Data Processing"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      },
+      {
+        "@id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:etl",
+        "label": "ETL"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

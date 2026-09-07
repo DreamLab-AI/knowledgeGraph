@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Optimal Transport
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

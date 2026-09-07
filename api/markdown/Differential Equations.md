@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Differential Equations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,51 +168,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",
     "inferenceRule": "RelationEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:differential-equations:1936d05719a0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b8d6a57d93db2f9ac55a2d1ba777ac5743e796f90161f531b8e22ed0b1e79809"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Linear Algebra]]",
-      "resolved": "urn:visionflow:linked:linear-algebra",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Numerical Methods]]",
-      "resolved": "urn:visionflow:linked:numerical-methods",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Dynamical Systems Theory]]",
-      "resolved": "urn:visionflow:linked:dynamical-systems-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Complex Systems]]",
-      "resolved": "urn:visionflow:linked:complex-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

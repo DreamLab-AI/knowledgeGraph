@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Pkce
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:pkce", "@type":"Page", "title":"Pkce", "vc:slug":"pkce", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:pkce",
+  "@type": "Page",
+  "title": "Pkce",
+  "vc:slug": "pkce",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Dao Treasury
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:dao-treasury", "@type": "Page", "title": "Dao Treasury", "vc:slug": "dao-treasury", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:dao-treasury",
+  "@type": "Page",
+  "title": "Dao Treasury",
+  "vc:slug": "dao-treasury",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

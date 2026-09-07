@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Geometry Shader
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:geometry-shader", "@type": "Page", "title": "Geometry Shader", "vc:slug": "geometry-shader", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:geometry-shader",
+  "@type": "Page",
+  "title": "Geometry Shader",
+  "vc:slug": "geometry-shader",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

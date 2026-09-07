@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Infrastructure Strategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-infrastructure-strategy",
   "title": "AI Infrastructure Strategy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Elon Musk", "SpaceX", "xAI"],
+  "vc:outboundWikilinks": [
+    "Elon Musk",
+    "SpaceX",
+    "xAI"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}, {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}, {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

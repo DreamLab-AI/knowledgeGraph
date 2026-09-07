@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0093 speed limitation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,48 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring", "label": "rb 0105 speed and separation monitoring"},
-      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"},
-      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
-      {"@id": "urn:ngm:class:rb-0103-collaborative-operation", "label": "rb 0103 collaborative operation"}
+      {
+        "@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "rb 0105 speed and separation monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0103-collaborative-operation",
+        "label": "rb 0103 collaborative operation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"},
-      {"@id": "urn:ngm:class:rb-0055-velocity-control", "label": "rb 0055 velocity control"}
+      {
+        "@id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0055-velocity-control",
+        "label": "rb 0055 velocity control"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"},
-      {"@id": "urn:ngm:class:rb-0087-safety-standard", "label": "rb 0087 safety standard"}
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0087-safety-standard",
+        "label": "rb 0087 safety standard"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0007-collaborative-robot", "label": "rb 0007 collaborative robot"}
+      {
+        "@id": "urn:ngm:class:rb-0007-collaborative-robot",
+        "label": "rb 0007 collaborative robot"
+      }
     ]
   },
   "provenance": {
@@ -84,32 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0093-speed-limitation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8eafca0c47e3cfbab79d054c1ff4fad5d00b73c92e4c63bc15fda6a71a3b998c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Speed Limitation** (RB-0093) is a safety function that caps robot velocity to a safe threshold for collaborative applications, as defined in ISO 10218-2:2025 (which consolidated ISO/TS 15066:2016). It enables human-robot collaboration without physical barriers and works in conjunction with speed-and-separation monitoring and power-and-force limiting to provide layered protective behaviour.

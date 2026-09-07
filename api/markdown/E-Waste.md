@@ -1,8 +1,3 @@
----
-public: true
----
-
-# E-Waste
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -82,52 +77,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:e-waste:f2d09f6b0434",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7f4f2df7d86904893501174b06a5c949d4e110eca34847952da26c8d7d4487e3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sustainability]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware]]",
-      "resolved": "urn:visionflow:linked:hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Circular Economy]]",
-      "resolved": "urn:visionflow:linked:circular-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.unep.org/topics/chemicals-and-pollution-action/pollution-and-health/e-waste]]",
-      "resolved": "urn:visionflow:linked:https-www-unep-org-topics-chemicals-and-pollution-action-pollution-and-health-e-waste",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://globalewaste.org]]",
-      "resolved": "urn:visionflow:linked:https-globalewaste-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - E-waste is discarded electrical and electronic equipment, including devices that have reached the end of their useful life. Managing it involves recycling, recovery, and safe disposal.

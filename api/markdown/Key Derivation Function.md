@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Key Derivation Function
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -215,67 +210,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:key-derivation-function:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8aa9e7f72575a52ad0c9c27280c411f902a406aa0125035e379a773b726566b9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hierarchical Deterministic Wallet]]",
-      "resolved": "urn:visionflow:linked:hierarchical-deterministic-wallet",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mnemonic Phrase]]",
-      "resolved": "urn:visionflow:linked:mnemonic-phrase",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Password Hashing]]",
-      "resolved": "urn:visionflow:linked:password-hashing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asymmetric Encryption]]",
-      "resolved": "urn:visionflow:owl:class:asymmetric-encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:owl:class:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Private Key]]",
-      "resolved": "urn:visionflow:owl:class:private-key",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A cryptographic algorithm that derives one or more secret keys from a master secret using a pseudo-random function, transforming human-readable passwords or seed phrases into cryptographically secure key material while enabling hierarchical key generation and deterministic wallet recovery in blockchain systems.

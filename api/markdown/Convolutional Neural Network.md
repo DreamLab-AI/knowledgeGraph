@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Convolutional Neural Networks
-  - ConvolutionalNeuralNetwork
----
-
-# Convolutional Neural Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -220,67 +212,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:convolutional-neural-network:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:54074fa8a304d6760c316ebb0e79e9aaa530c69d3362e24fb2cd156c30617248"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO/IEC 22989:2022]]",
-      "resolved": "urn:visionflow:linked:iso-iec-22989-2022",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23053:2022]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23053-2022",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23894:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI 100-3]]",
-      "resolved": "urn:visionflow:linked:nist-ai-100-3",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI RMF]]",
-      "resolved": "urn:visionflow:linked:nist-ai-rmf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD AI Principles]]",
-      "resolved": "urn:visionflow:linked:oecd-ai-principles",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Convolutional Neural Network (CNN) is a feed-forward deep learning architecture that applies learned convolutional filters across spatial dimensions of input data, enabling hierarchical feature extraction from images and other grid-structured inputs. Weight sharing and local receptive fields make CNNs highly parameter-efficient for visual recognition tasks including image classification, object detection, and semantic segmentation.

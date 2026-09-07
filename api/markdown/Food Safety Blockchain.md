@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - BC-0443-food-safety-blockchain
----
-
-# Food Safety Blockchain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,24 +167,60 @@ aliases:
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
-      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
-      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+      {
+        "@id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consortium-blockchain", "label": "Consortium Blockchain"}
+      {
+        "@id": "urn:ngm:class:consortium-blockchain",
+        "label": "Consortium Blockchain"
+      }
     ]
   },
   "provenance": {
@@ -201,177 +230,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:food-safety-blockchain:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e1f5c007ac75022ffccec1d2fae12150ffe84585cce8c0c42327df083b570e11"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BC-0013-smart-contracts]]",
-      "resolved": "urn:visionflow:linked:bc-0013-smart-contracts",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0029-permissioned-blockchain]]",
-      "resolved": "urn:visionflow:linked:bc-0029-permissioned-blockchain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0044-supply-chain-management]]",
-      "resolved": "urn:visionflow:linked:bc-0044-supply-chain-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0067-hyperledger-fabric]]",
-      "resolved": "urn:visionflow:linked:bc-0067-hyperledger-fabric",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0214-environmental-sustainability]]",
-      "resolved": "urn:visionflow:linked:bc-0214-environmental-sustainability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0432-consortium-blockchain]]",
-      "resolved": "urn:visionflow:linked:bc-0432-consortium-blockchain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0434-blockchain-as-a-service]]",
-      "resolved": "urn:visionflow:linked:bc-0434-blockchain-as-a-service",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0441-provenance-tracking]]",
-      "resolved": "urn:visionflow:linked:bc-0441-provenance-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0442-pharmaceutical-traceability]]",
-      "resolved": "urn:visionflow:linked:bc-0442-pharmaceutical-traceability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cosmos]]",
-      "resolved": "urn:visionflow:linked:cosmos",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Grass Roots Farmers' Cooperative]]",
-      "resolved": "urn:visionflow:linked:grass-roots-farmers-cooperative",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GS1]]",
-      "resolved": "urn:visionflow:linked:gs1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GS1 Blockchain Working Group]]",
-      "resolved": "urn:visionflow:linked:gs1-blockchain-working-group",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IBM Food Trust]]",
-      "resolved": "urn:visionflow:linked:ibm-food-trust",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Internet of Things]]",
-      "resolved": "urn:visionflow:linked:internet-of-things",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OriginTrail]]",
-      "resolved": "urn:visionflow:linked:origin-trail",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Polkadot]]",
-      "resolved": "urn:visionflow:linked:polkadot",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Provenance]]",
-      "resolved": "urn:visionflow:linked:provenance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ripe.io]]",
-      "resolved": "urn:visionflow:linked:ripe-io",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SafeTraces]]",
-      "resolved": "urn:visionflow:linked:safe-traces",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TE-FOOD]]",
-      "resolved": "urn:visionflow:linked:te-food",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Too Good To Go]]",
-      "resolved": "urn:visionflow:linked:too-good-to-go",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[VeChain]]",
-      "resolved": "urn:visionflow:linked:ve-chain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Winnow]]",
-      "resolved": "urn:visionflow:linked:winnow",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Zest Labs]]",
-      "resolved": "urn:visionflow:linked:zest-labs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:owl:class:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hyperledger Fabric]]",
-      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Blockchain applications addressing critical food safety challenges through immutable farm-to-fork audit trails, enabling rapid contamination source identification (2.2 seconds vs 6+ days traditional trace-back) and surgical recalls that reduce food waste whilst protecting consumers. Major implementations including IBM Food Trust (500+ participants including Walmart, Carrefour, Dole, Nestlé) and VeChain's Walmart China deployment demonstrate transformative impact on the £55 billion annual foodborne illness problem affecting 48 million Americans, with 50-70% reductions in trace-back time and 30% sales increases for blockchain-tracked products through enhanced consumer trust.
@@ -404,7 +262,7 @@ aliases:
 		- **Smart Contract Business Logic**: Food safety smart contracts encode compliance requirements, quality thresholds, and automated responses. Contracts might verify that organic certification remained valid throughout a product's journey, that cold chain temperatures never exceeded specified ranges, that processing occurred at GFSI-certified facilities, and that testing confirmed absence of pathogens including Salmonella, E. coli, and Listeria. When contracts detect non-compliances—temperature excursions, expired certifications, failed quality tests—they automatically trigger alerts, quarantine affected products, and notify relevant stakeholders. Advanced implementations employ machine learning-augmented contracts that identify patterns suggesting quality degradation (for example, borderline temperature readings that individually comply but collectively suggest cold chain stress) and proactively flag products for enhanced inspection before distribution.
   - ### Contamination Response and Recall Management
 		- **Rapid Source Identification**: Traditional contamination investigations require manual trace-back through fragmented records, with each supply chain participant contacted sequentially to identify product sources. This process typically requires 3-7 days for complex supply chains, during which contaminated products remain in distribution whilst safe products from unaffected sources may be recalled precautiously. Blockchain implementations enable near-instantaneous source identification through queries that traverse complete supply chain records in seconds. Walmart's 2.2-second mango trace-back demonstrated this capability, whilst Dole reported reducing trace-back from days to minutes across multiple product categories. This speed enables surgical recalls affecting only products from contaminated sources, reducing recall volumes by 70-85% compared to broad precautionary recalls whilst better protecting consumer safety through faster removal of genuinely problematic products.
-		- **Surgical Recall Execution**: Traditional recalls remove entire product batches or all products within date ranges due to uncertainty about which specific items might be contaminated. Blockchain's unit-level tracking enables surgical recalls targeting specific serial numbers or lot codes from identified contamination sources whilst leaving safe products in distribution. A 2021 leafy greens recall managed through blockchain verification removed approximately 12,000 units from specific farms over a 3-day harvest window, compared to the estimated 80,000-100,000 units that would have been recalled using traditional batch-level tracking across a broader timeframe. This precision reduced recall costs (product destruction, logistics, retailer credits) by approximately £1.8 million for this single incident whilst maintaining food availability for consumers and revenue for unaffected growers. Industry analysts estimate that widespread blockchain adoption could reduce annual food recall costs by £2-3 billion globally through improved precision.
+		- **Surgical Recall Execution**: Traditional recalls remove entire product batches or all products within date ranges due to uncertainty about which specific items might be contaminated. Blockchain's unit-level tracking enables surgical recalls targeting specific serial numbers or lot codes from identified contamination sources whilst leaving safe products in distribution. A 2021 leafy greens recall managed through blockchain verification removed approximately 12,000 units from specific farms over a 3-day harvest window, compared to the estimated 80,000-100,000 units that would have been recalled using traditional batch-level tracking across a broader timeframe. This precision reduced recall costs (product destruction, logistics, retailer credits) by approximately £1.8 million for this single incident whilst maintaining food availability for consumers and revenue for unaffected growers. Industry analysts estimate that widespread blockchain adoption [private] reduce annual food recall costs by £2-3 billion globally through improved precision.
 		- **Consumer Notification and Engagement**: Blockchain traceability enables targeted consumer notification during recalls, with retailers identifying purchasers of specific affected products through loyalty programme integration. This contrasts with traditional broad public notifications that create unnecessary consumer concern and damage category sales beyond recalled products. Several implementations provide smartphone applications where consumers photograph product barcodes to receive real-time recall status, with automatic alerts if purchased products are subsequently recalled. This capability proved particularly valuable during COVID-19 when consumers sought assurance about food safety, with applications showing detailed hygiene protocols and testing results accessed through QR codes on packaging.
   - ### Quality Assurance and Certification Verification
 		- **Organic and Sustainability Certification**: Verifying organic, fair trade, and sustainability certifications represents a significant challenge, with certification fraud estimated at 5-10% of certified products globally. Blockchain implementations link product identifiers to cryptographically verified digital certificates issued by certification bodies including USDA Organic, EU Organic, Fair Trade USA, and Rainforest Alliance. Smart contracts verify that certifications remained valid throughout product journeys and that organic products didn't commingle with conventional products during processing or distribution. [[Ripe.io]] partnered with certification bodies to implement blockchain verification for organic produce, reporting that retail partners increased organic product purchases by 20-25% based on enhanced verification confidence, with premium pricing supported by cryptographic proof rather than paper certificates subject to forgery.

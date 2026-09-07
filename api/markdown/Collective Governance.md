@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - CollectiveGovernance
----
-
-# Collective Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,19 +20,42 @@ aliases:
   "definition": "A system of rules, norms, and decision-making processes through which a group of stakeholders jointly determines how shared resources, organisations, or platforms are managed. It distributes authority among participants rather than concentrating it in a single administrator, seeking legitimacy through inclusive participation and transparent deliberation.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:community-governance", "label": "Community Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:community-governance",
+      "label": "Community Governance"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:collective-action", "label": "Collective Action"},
-      {"@id": "urn:ngm:class:coordination-mechanisms", "label": "Coordination Mechanisms"}
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "@id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:polycentric-governance", "label": "Polycentric Governance"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:polycentric-governance",
+        "label": "Polycentric Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collective-decision-making", "label": "Collective Decision Making"},
-      {"@id": "urn:ngm:class:community-decision-making", "label": "Community Decision Making"}
+      {
+        "@id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:community-decision-making",
+        "label": "Community Decision Making"
+      }
     ]
   },
   "quality": 0.8

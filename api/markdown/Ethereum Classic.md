@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ethereum Classic
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ethereum-classic:f80cc5c027cf",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8219790e10cb95c7fe543ac98f83e2dd58a32160ba26c4d44bbc035d88bad522"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Mining]]",
-      "resolved": "urn:visionflow:linked:mining",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Virtual Machine]]",
-      "resolved": "urn:visionflow:linked:ethereum-virtual-machine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptocurrency]]",
-      "resolved": "urn:visionflow:linked:cryptocurrency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://ethereumclassic.org/]]",
-      "resolved": "urn:visionflow:linked:https-ethereumclassic-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A proof-of-work blockchain that continued the original Ethereum chain after the 2016 DAO hard fork, preserving the unaltered transaction history. It maintains the principle that the ledger should not be reversed by social intervention.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Data Retention Policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-data-retention-policy",
   "title": "AI Data Retention Policy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Enterprise Data Sovereignty", "Trust and Safety Review"],
+  "vc:outboundWikilinks": [
+    "Enterprise Data Sovereignty",
+    "Trust and Safety Review"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:retention-policy", "label": "Retention Policy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:retention-policy",
+      "label": "Retention Policy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}, {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}, {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

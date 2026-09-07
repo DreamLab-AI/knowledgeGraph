@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MicroStrategy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,33 +20,86 @@ public: true
   "definition": "MicroStrategy (rebranded Strategy in 2025) is a Nasdaq-listed business intelligence and analytics software company that became the first publicly traded corporation to adopt Bitcoin as its primary treasury reserve asset, initiating this strategy in August 2020 under executive chairman Michael Saylor. The company has since deployed multiple capital market instruments—including convertible notes, equity offerings, and preferred stock—to continuously acquire Bitcoin, accumulating over 500,000 BTC by early 2025 and creating a leveraged Bitcoin exposure vehicle accessible through public equity markets. MicroStrategy's approach established a corporate treasury model that has been studied and replicated by other public companies seeking Bitcoin exposure.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:enterprise-blockchain", "label": "Enterprise Blockchain"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:enterprise-blockchain",
+      "label": "Enterprise Blockchain"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin Proof-of-Work Protocol"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf", "label": "Bitcoin ETF"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
-      {"@id": "urn:ngm:class:financial-instruments", "label": "Financial Instruments"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
+        "label": "Bitcoin ETF"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin As Money"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"},
-      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      },
+      {
+        "@id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:investment-management", "label": "Investment Management"}
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf", "label": "Bitcoin ETF"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
+        "label": "Bitcoin ETF"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
     ]
   },
   "quality": 0.8
@@ -71,4 +119,4 @@ public: true
 
   - The rebranding to Strategy in early 2025 formalised what the company had long been operationally: a Bitcoin-holding entity that secondarily provides business intelligence software. The software division generates recurring revenue and provides corporate overhead coverage, but Bitcoin holdings—measured in BTC per diluted share—became the primary shareholder value metric. The company introduced the concept of "Bitcoin Yield" as a proprietary KPI tracking the percentage change in BTC per diluted share, signalling that traditional equity metrics were insufficient for evaluating the business.
 
-  - MicroStrategy's model generated substantial replication: over 70 public companies globally had disclosed Bitcoin treasury holdings by mid-2025, many explicitly citing MicroStrategy's framework. Critics highlighted the recursive risk of leveraged Bitcoin acquisition: if Bitcoin prices fall sharply and sustained, the convertible debt obligations could create forced selling pressure, potentially amplifying downside. Proponents counter that the long-duration nature of the debt, combined with equity conversion features, means true insolvency risk requires sustained multi-year Bitcoin price depression below acquisition cost basis—a scenario Saylor and the board have consistently argued is structurally improbable given Bitcoin's fixed supply cap.
+  - MicroStrategy's model generated substantial replication: over 70 public companies globally had disclosed Bitcoin treasury holdings by mid-2025, many explicitly citing MicroStrategy's framework. Critics highlighted the recursive risk of leveraged Bitcoin acquisition: if Bitcoin prices fall sharply and sustained, the convertible debt obligations [private] create forced selling pressure, potentially amplifying downside. Proponents counter that the long-duration nature of the debt, combined with equity conversion features, means true insolvency risk requires sustained multi-year Bitcoin price depression below acquisition cost basis—a scenario Saylor and the board have consistently argued is structurally improbable given Bitcoin's fixed supply cap.

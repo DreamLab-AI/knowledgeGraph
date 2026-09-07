@@ -1,39 +1,123 @@
----
-public: true
----
-
-# Attribute-Based Access Control
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:attribute-based-access-control", "@type":"Page", "title":"Attribute-Based Access Control", "vc:slug":"attribute-based-access-control", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:attribute-based-access-control",
+  "@type": "Page",
+  "title": "Attribute-Based Access Control",
+  "vc:slug": "attribute-based-access-control",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:attribute-based-access-control",
-  "@type":"Class",
-  "label":"Attribute-Based Access Control",
-  "definition":"Attribute-Based Access Control (ABAC) is an authorisation model that grants or denies access by evaluating policies against attributes of the subject, resource, action, and environment rather than against static role assignments. Decisions are computed dynamically from these attributes at request time, enabling fine-grained, context-aware control. ABAC is a cornerstone of zero-trust architectures because it can express rich conditional rules without proliferating roles.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:access-control","label":"Access Control"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:access-control-policy","label":"Access Control Policy"},{"@id":"urn:ngm:class:authorization","label":"Authorization"}],
-    "partOf":[{"@id":"urn:ngm:class:identity-and-access-management","label":"Identity and Access Management"}],
-    "requires":[{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-    "enables":[{"@id":"urn:ngm:class:zero-trust-architecture","label":"Zero Trust Architecture"},{"@id":"urn:ngm:class:data-minimisation","label":"Data Minimisation"}],
-    "dependsOn":[{"@id":"urn:ngm:class:identity-and-access-management","label":"Identity and Access Management"}],
-    "implements":[{"@id":"urn:ngm:class:authorization","label":"Authorization"}],
-    "uses":[{"@id":"urn:ngm:class:access-control-policy","label":"Access Control Policy"}],
-    "supports":[{"@id":"urn:ngm:class:compliance-monitoring","label":"Compliance Monitoring"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:role-based-access-control","label":"Role-Based Access Control"}],
-    "relatedTo":[{"@id":"urn:ngm:class:audit-logging","label":"Audit Logging"},{"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:zero-trust-architecture","label":"Zero Trust Architecture"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:attribute-based-access-control",
+  "@type": "Class",
+  "label": "Attribute-Based Access Control",
+  "definition": "Attribute-Based Access Control (ABAC) is an authorisation model that grants or denies access by evaluating policies against attributes of the subject, resource, action, and environment rather than against static role assignments. Decisions are computed dynamically from these attributes at request time, enabling fine-grained, context-aware control. ABAC is a cornerstone of zero-trust architectures because it can express rich conditional rules without proliferating roles.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      },
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:access-control","label":"Access Control"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Safety Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-safety-assessment",
   "title": "AI Safety Assessment",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Mythos Capabilities", "NSA Red Teaming"],
+  "vc:outboundWikilinks": [
+    "Mythos Capabilities",
+    "NSA Red Teaming"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "security",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-policy",
+      "label": "AI Policy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}, {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}, {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

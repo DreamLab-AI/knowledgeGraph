@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:query-optimiser",
   "domain": "data",
-  "definition": "A query optimiser is the component of a database management system that transforms a declarative query into an efficient physical execution plan. It enumerates candidate plans, estimates their cost using statistics about data distribution and access paths, and selects the plan expected to minimise resource usage. Cost-based optimisers rely on cardinality estimation and index awareness, while rule-based optimisers apply heuristic transformations.",
+  "definition": "A query optimiser is the component of a database management system that transforms a declarative query into an efficient physical execution plan. It enumerates candidate plans, estimates their cost using statistics about data distribution and access paths, and selects the plan expected to minimise resource usage. Cost-based optimisers rely on cardinality estimation and [private] awareness, while rule-based optimisers apply heuristic transformations.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:query-engine",

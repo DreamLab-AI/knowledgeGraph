@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adversarial Attack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,42 +165,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adversarial-attack:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:10ff4637da4920d9608471aa8739a69e657121255a6ca9e8e7fe164bcfde910e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO/IEC TR 24029-1:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-tr-24029-1-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A deliberate attempt to manipulate an AI system by crafting malicious inputs or exploiting vulnerabilities to cause misclassification, extract confidential information, degrade performance, or subvert the system's intended behavior.
 
@@ -236,7 +195,7 @@ public: true
   - The field has matured from theoretical curiosity to a practical concern, with real-world implications for security, privacy, and reliability
 
   - Academic foundations
-  - The seminal work by Szegedy et al. (2013) introduced the concept of adversarial examples, demonstrating that small perturbations could fool deep neural networks
+  - The seminal work by Szegedy et al. (2013) introduced the concept of adversarial examples, demonstrating that small perturbations [private] fool deep neural networks
   - Subsequent research has explored various attack and defense strategies, leading to a rich body of literature on adversarial machine learning
 
   ## Current Landscape (2025)

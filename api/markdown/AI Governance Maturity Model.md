@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Governance Maturity Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -90,59 +85,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-governance-maturity-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6a9eb31c87949c08d1562189f8a3d42e3a8fe36bae6aa046c328e477dc07ba85"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CMMI Institute]]",
-      "resolved": "urn:visionflow:linked:cmmi-institute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 21827]]",
-      "resolved": "urn:visionflow:linked:iso-21827",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Singapore Model AI Governance Framework]]",
-      "resolved": "urn:visionflow:linked:singapore-model-ai-governance-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - An AI Governance Maturity Model is a structured assessment framework that defines progressive, ordinal maturity levels for an organisation's AI governance capabilities across multiple functional dimensions, providing a calibrated measurement instrument by which organisations can evaluate their current governance state, identify specific capability gaps, benchmark their practices against sector peers, and generate prioritised improvement roadmaps toward trustworthy and compliant AI deployment at scale. Methodologically, AI governance maturity models inherit the architecture of the Capability Maturity Model Integration ([[CMMI Institute]]) and the [[ISO 21827]] Systems Security Engineering CMM, adapting the five-level ordinal progression — (1) Initial/Ad Hoc, (2) Repeatable/Managed, (3) Defined, (4) Quantitatively Managed, and (5) Optimising — to the distinctive dimensions of AI governance practice. At Level 1, governance is absent or entirely reactive: individual teams apply informal judgements about AI risk without standardisation, documentation is sparse, and compliance is incidental. At Level 2, basic controls exist and are repeatable within projects but are not institutionally standardised; risk assessments are performed inconsistently, and governance artefacts vary in quality. Level 3 marks the transition to organisation-wide standardised processes: a documented [[AI Governance Framework]] is in force, model development follows a defined [[AI Ethics Checklist]] and [[AI Risk Assessment]] procedure, [[Human Oversight]] roles are formally assigned, and an [[AI Ethics Board]] with cross-functional membership exists. Level 4 introduces quantitative management: governance metrics are systematically collected (incident rates, assessment coverage percentages, bias audit pass rates, time-to-remediation), enabling data-driven governance decisions and external benchmarking. Level 5, the optimising stage, is characterised by continuous improvement loops fed by measurement feedback, proactive regulatory anticipation, and contribution to industry best-practice standards. Assessment methodology spans self-assessment questionnaires calibrated to each maturity level, documentary evidence review (policy artefacts, model cards, audit logs, training records), structured interviews with governance role-holders, and optional third-party external validation producing stamped maturity certificates — a pathway institutionalised by ISACA's CMMI AI add-on and the [[Responsible AI]] Institute's certification scheme. Maturity dimensions assessed typically include governance structure and leadership (executive commitment, board-level AI oversight, organisational role clarity), risk management (identification, assessment, treatment, monitoring), ethical practice (principles adoption, ethics review cadence, [[Fairness]] auditing), technical controls (documentation standards, testing protocols, deployment monitoring), [[Regulatory Compliance]] and audit (conformance mapping, evidence collection, audit readiness), [[Stakeholder Engagement]] (consultation processes, transparency reporting, grievance mechanisms), and continuous improvement (lessons-learned integration, metric-driven iteration). The [[Singapore Model AI Governance Framework]] maturity assessment and Databricks' enterprise AI governance maturity matrix represent prominent published instantiations, while the 2024 healthcare-specific HAIRA (Healthcare AI Governance Readiness Assessment) extends the model to clinical deployment contexts. A 2024 Gartner survey found that fewer than half of large organisations could demonstrate measurable governance advancement despite 80% claiming active oversight programmes — a "governance theatre" gap that maturity models, by demanding evidence over assertion, are specifically designed to close.
+  - An AI Governance Maturity Model is a structured assessment framework that defines progressive, ordinal maturity levels for an organisation's AI governance capabilities across multiple functional dimensions, providing a calibrated measurement instrument by which organisations can evaluate their current governance state, identify specific capability gaps, benchmark their practices against sector peers, and generate prioritised improvement roadmaps toward trustworthy and compliant AI deployment at scale. Methodologically, AI governance maturity models inherit the architecture of the Capability Maturity Model Integration ([[CMMI Institute]]) and the [[ISO 21827]] Systems Security Engineering CMM, adapting the five-level ordinal progression — (1) Initial/Ad Hoc, (2) Repeatable/Managed, (3) Defined, (4) Quantitatively Managed, and (5) Optimising — to the distinctive dimensions of AI governance practice. At Level 1, governance is absent or entirely reactive: individual teams apply informal judgements about AI risk without standardisation, documentation is sparse, and compliance is incidental. At Level 2, basic controls exist and are repeatable within projects but are not institutionally standardised; risk assessments are performed inconsistently, and governance artefacts vary in quality. Level 3 marks the transition to organisation-wide standardised processes: a documented [[AI Governance Framework]] is in force, model development follows a defined [[AI Ethics Checklist]] and [[AI Risk Assessment]] procedure, [[Human Oversight]] roles are formally assigned, and an [[AI Ethics Board]] with cross-functional membership exists. Level 4 introduces quantitative management: governance metrics are systematically collected (incident rates, assessment coverage percentages, bias audit pass rates, time-to-remediation), enabling data-driven governance decisions and external benchmarking. Level 5, the optimising stage, is characterised by continuous improvement loops fed by measurement feedback, proactive regulatory anticipation, and contribution to industry best-practice standards. Assessment methodology spans self-assessment questionnaires calibrated to each maturity level, documentary evidence review (policy artefacts, model cards, audit logs, training records), structured interviews with governance role-holders, and optional third-party external validation producing stamped maturity certificates — a pathway institutionalised by ISACA's CMMI AI add-on and the [[Responsible AI]] Institute's certification scheme. Maturity dimensions assessed typically include governance structure and leadership (executive commitment, board-level AI oversight, organisational role clarity), risk management (identification, assessment, treatment, monitoring), ethical practice (principles adoption, ethics review cadence, [[Fairness]] auditing), technical controls (documentation standards, testing protocols, deployment monitoring), [[Regulatory Compliance]] and audit (conformance mapping, evidence collection, audit readiness), [[Stakeholder Engagement]] (consultation processes, transparency reporting, grievance mechanisms), and continuous improvement (lessons-learned integration, metric-driven iteration). The [[Singapore Model AI Governance Framework]] maturity assessment and Databricks' enterprise AI governance maturity matrix represent prominent published instantiations, while the 2024 healthcare-specific HAIRA (Healthcare AI Governance Readiness Assessment) extends the model to clinical deployment contexts. A 2024 Gartner survey found that fewer than half of large organisations [private] demonstrate measurable governance advancement despite 80% claiming active oversight programmes — a "governance theatre" gap that maturity models, by demanding evidence over assertion, are specifically designed to close.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:AIGovernanceMaturityModel
@@ -573,7 +517,7 @@ public: true
 
   The ISACA CMMI AI add-on (2025) has provided the first industry-standard appraisal methodology specifically for AI governance maturity, enabling organisations to receive externally verified maturity ratings from accredited appraisers. The Responsible AI Institute's certification programme, AI Verify (Singapore's IMDA), and the BSI's Kitemark for AI governance are competing attestation schemes serving organisations seeking third-party validation at varying levels of rigour. The Databricks AI Governance Maturity Model has become a widely referenced enterprise framework, particularly in data-intensive sectors (finance, healthcare, retail), due to its integration with the Unity Catalog data governance platform.
 
-  A 2024 Gartner survey finding — that 80% of large enterprises claimed active AI governance programmes but fewer than half could demonstrate measurable advancement — underscores the ongoing challenge of governance maturity assessment. The survey found that self-assessed maturity scores averaged 1.2 levels above externally validated scores, suggesting systematic optimism bias that formal maturity assessment corrects.
+  A 2024 Gartner survey finding — that 80% of large enterprises claimed active AI governance programmes but fewer than half [private] demonstrate measurable advancement — underscores the ongoing challenge of governance maturity assessment. The survey found that self-assessed maturity scores averaged 1.2 levels above externally validated scores, suggesting systematic optimism bias that formal maturity assessment corrects.
 
   ## UK Context
 

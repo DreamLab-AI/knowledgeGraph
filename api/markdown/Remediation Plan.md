@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Remediation Plan
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A remediation plan is a structured set of corrective actions, owners, and deadlines drawn up to address identified non-conformities, risks, or harms discovered through audit or monitoring. It links each finding to a specific fix and tracks progress to closure. In compliance and ethical-sourcing contexts it is the mechanism that turns a violation into demonstrable improvement.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"},
-      {"@id": "urn:ngm:class:compliance-control", "label": "Compliance Control"}
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      }
     ]
   },
   "quality": 0.72

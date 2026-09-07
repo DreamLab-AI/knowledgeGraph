@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Player Coach
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "player-coach",
   "title": "Player Coach",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Directly Responsible Individual", "Middle Management"],
+  "vc:outboundWikilinks": [
+    "Directly Responsible Individual",
+    "Middle Management"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,7 +24,12 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": []
   },

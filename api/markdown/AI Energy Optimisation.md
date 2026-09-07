@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Energy Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -305,197 +300,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-energy-optimisation:62267576960d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:712518f397e886760fc6d69a083eddf926917d82b7bd72a6de1fdfbcfe147321"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware Acceleration]]",
-      "resolved": "urn:visionflow:linked:hardware-acceleration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Distillation]]",
-      "resolved": "urn:visionflow:linked:knowledge-distillation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge AI]]",
-      "resolved": "urn:visionflow:linked:edge-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:linked:edge-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:linked:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Pruning]]",
-      "resolved": "urn:visionflow:linked:model-pruning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Quantisation]]",
-      "resolved": "urn:visionflow:linked:neural-network-quantisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Architecture Search]]",
-      "resolved": "urn:visionflow:linked:neural-architecture-search",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GPU Computing]]",
-      "resolved": "urn:visionflow:linked:gpu-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Carbon-Aware Computing]]",
-      "resolved": "urn:visionflow:linked:carbon-aware-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mixed Precision Training]]",
-      "resolved": "urn:visionflow:linked:mixed-precision-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:linked:ai-governance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Large Language Model]]",
-      "resolved": "urn:visionflow:linked:large-language-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[High-Performance Computing]]",
-      "resolved": "urn:visionflow:linked:high-performance-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Centre]]",
-      "resolved": "urn:visionflow:linked:data-centre",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Renewable Energy]]",
-      "resolved": "urn:visionflow:linked:renewable-energy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Environmental Sustainability]]",
-      "resolved": "urn:visionflow:linked:environmental-sustainability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Federated Learning]]",
-      "resolved": "urn:visionflow:linked:federated-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Efficient Transformers]]",
-      "resolved": "urn:visionflow:linked:efficient-transformers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sparse Attention]]",
-      "resolved": "urn:visionflow:linked:sparse-attention",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Gradient Checkpointing]]",
-      "resolved": "urn:visionflow:linked:gradient-checkpointing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Power Usage Effectiveness]]",
-      "resolved": "urn:visionflow:linked:power-usage-effectiveness",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neuromorphic Computing]]",
-      "resolved": "urn:visionflow:linked:neuromorphic-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[On-Device Inference]]",
-      "resolved": "urn:visionflow:linked:on-device-inference",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Compression]]",
-      "resolved": "urn:visionflow:linked:model-compression",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Green AI]]",
-      "resolved": "urn:visionflow:linked:green-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Ethics Checklist]]",
-      "resolved": "urn:visionflow:linked:ai-ethics-checklist",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Workload Scheduling]]",
-      "resolved": "urn:visionflow:linked:workload-scheduling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Flash Attention]]",
-      "resolved": "urn:visionflow:linked:flash-attention",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Speculative Decoding]]",
-      "resolved": "urn:visionflow:linked:speculative-decoding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Parameter-Efficient Fine-Tuning]]",
-      "resolved": "urn:visionflow:linked:parameter-efficient-fine-tuning",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - AI Energy Optimisation is the discipline encompassing the full lifecycle of techniques and engineering practices that reduce the electrical energy and associated carbon emissions produced by the training, fine-tuning, and inference of [[Artificial Intelligence]] systems, while preserving task performance within operationally acceptable bounds. Operating across multiple levels of the AI stack — from mathematical representation of model weights, through hardware selection and batching strategy, to [[Data Centre]] infrastructure and geographic workload placement — the field draws on [[Model Compression]] methods such as [[Model Quantisation]], [[Model Pruning]], and [[Knowledge Distillation]]; [[Neural Architecture Search]] processes that produce computationally frugal topologies; operator-level optimisations including [[Flash Attention]] and [[Speculative Decoding]]; and systems-level mechanisms such as [[Mixed Precision Training]], [[Gradient Checkpointing]], and [[Carbon-Aware Computing]] schedulers. The IEA's April 2025 "Energy and AI" World Energy Outlook special report estimated global data-centre electricity consumption at 485 TWh in 2025, projected to reach 945 TWh by 2030 — a near-doubling driven substantially by AI workloads — making systematic reduction of per-query and per-training-run energy the most tractable pathway to containing AI's aggregate environmental footprint. Training a single large [[Large Language Model]] at the scale of GPT-3 (175B parameters) consumes upwards of 1,200 MWh, sufficient to power approximately 120 UK homes for a year, while the cumulative inference cost for widely-deployed models dwarfs training costs over the model's lifetime. Accordingly, AI Energy Optimisation intersects directly with [[AI Governance]], [[Regulatory Compliance]], [[Environmental Sustainability]], and [[Renewable Energy]] procurement strategies, and is increasingly referenced in institutional sustainability reporting obligations emerging under the EU AI Act, the UK AI Safety framework, and emerging ISO/IEC standards. The discipline forms a necessary complement to capability research, ensuring that advances in [[Deep Learning]] architectures are matched by proportionate advances in computational efficiency.
 
@@ -603,7 +407,7 @@ public: true
 
   ## About
 
-  AI Energy Optimisation — referred to interchangeably as [[Green AI]] or Efficient AI in the research literature — addresses one of the most pressing systemic challenges in contemporary computing: the rapidly escalating electricity demand associated with training, fine-tuning, and deploying [[Artificial Intelligence]] systems at scale. According to the International Energy Agency's April 2025 "Energy and AI" World Energy Outlook Special Report, AI-focused [[Data Centre]] capacity more than tripled in the eighteen months to early 2026, and the largest technology company capital expenditure exceeded USD 400 billion in 2025 alone, expected to jump a further 75% in 2026. The electricity consumed by data centres surged 50% in 2025, making AI infrastructure one of the fastest-growing contributors to global electricity demand. Without structured optimisation at every layer of the AI stack, the aggregate carbon footprint of AI could reach 32.6–79.7 million tonnes of CO₂ annually by 2030 — comparable in scale to the aviation industry's total annual emissions.
+  AI Energy Optimisation — referred to interchangeably as [[Green AI]] or Efficient AI in the research literature — addresses one of the most pressing systemic challenges in contemporary computing: the rapidly escalating electricity demand associated with training, fine-tuning, and deploying [[Artificial Intelligence]] systems at scale. According to the International Energy Agency's April 2025 "Energy and AI" World Energy Outlook Special Report, AI-focused [[Data Centre]] capacity more than tripled in the eighteen months to early 2026, and the largest technology company capital expenditure exceeded USD 400 billion in 2025 alone, expected to jump a further 75% in 2026. The electricity consumed by data centres surged 50% in 2025, making AI infrastructure one of the fastest-growing contributors to global electricity demand. Without structured optimisation at every layer of the AI stack, the aggregate carbon footprint of AI [private] reach 32.6–79.7 million tonnes of CO₂ annually by 2030 — comparable in scale to the aviation industry's total annual emissions.
 
   The urgency of AI energy optimisation stems from a structural asymmetry in the AI development landscape: model capability scales roughly with the cube root of compute (Kaplan et al., 2020; Hoffmann et al., 2022), but the energy and carbon consequences of unconstrained scaling are linear or super-linear with parameter count and training token budget. This means that the most direct path to improved AI capabilities — simply training larger models on more data using more powerful compute — is also the most ecologically expensive. The field of AI energy optimisation seeks to decouple these two trajectories, identifying techniques that deliver capability improvements without proportional energy cost increases. In practical terms, the goal is to shift the performance-per-watt frontier: to obtain the same or better task performance at lower absolute energy expenditure, whether during the training phase that produces the model weights, the fine-tuning phase that adapts them to specific tasks, or the inference phase that executes the model millions or billions of times in production.
 
@@ -703,7 +507,7 @@ public: true
 
   **Mixture-of-Experts (MoE) at Scale and Routing Efficiency:** Sparse MoE architectures — in which a gating network routes each input token to a subset of "expert" sub-networks (typically 2 out of 8, or 2 out of 64) — decouple model capacity from inference cost. Mistral AI's Mixtral 8x7B model activates only 13B parameters per forward pass despite having 47B total parameters, achieving performance comparable to 70B dense models at 70B inference cost. Google's Switch Transformer demonstrated linear scaling of model capacity with constant FLOPs per token. Active research frontiers include improving routing efficiency (minimising expert load imbalance that wastes allocated compute), extending MoE to [[Federated Learning]] settings, and enabling dynamic expert sets that grow as domain knowledge is added without retraining the routing network. The energy implications are significant: routing 95% of tokens to 2 of 64 experts means that 94% of parameters are never accessed for any given forward pass, enabling very large model capacity with inference energy comparable to a much smaller dense model.
 
-  **State-Space Models and Architectural Alternatives to Transformers:** Mamba (Gu & Dao, 2023) and related structured state-space models (S4, H3) offer O(n) sequence processing versus Transformer's O(n²) attention, which has direct energy implications for long-context tasks: at sequence length 8,192 tokens, a Mamba-class model processes the sequence in approximately 1/64th the FLOPs of a standard attention Transformer. Hybrid architectures interleaving SSM and attention layers (Jamba, Zamba) are being explored to capture the complementary strengths of both: attention's associative retrieval capability and SSMs' efficient long-range state tracking. These architectural innovations, if they mature to match Transformer performance on all benchmark dimensions, could reduce long-context inference energy by 1–2 orders of magnitude, with particular relevance to document processing, code analysis, and genomics applications.
+  **State-Space Models and Architectural Alternatives to Transformers:** Mamba (Gu & Dao, 2023) and related structured state-space models (S4, H3) offer O(n) sequence processing versus Transformer's O(n²) attention, which has direct energy implications for long-context tasks: at sequence length 8,192 tokens, a Mamba-class model processes the sequence in approximately 1/64th the FLOPs of a standard attention Transformer. Hybrid architectures interleaving SSM and attention layers (Jamba, Zamba) are being explored to capture the complementary strengths of both: attention's associative retrieval capability and SSMs' efficient long-range state tracking. These architectural innovations, if they mature to match Transformer performance on all benchmark dimensions, [private] reduce long-context inference energy by 1–2 orders of magnitude, with particular relevance to document processing, code analysis, and genomics applications.
 
   **Carbon-Aware Training Scheduling and Climate-Aligned AI Infrastructure:** Real-time carbon intensity APIs — including Electricity Maps (global coverage), National Grid ESO Carbon Intensity API (GB grid), and ENTSO-E Transparency Platform (EU) — are being integrated directly into distributed training orchestration frameworks. Hugging Face Accelerate (version 0.24+) includes a carbon intensity callback; PyTorch Lightning has introduced a CarbonCallback plugin; Microsoft's Azure training service supports carbon-aware region selection. The theoretical maximum benefit of temporal workload shifting (scheduling all flexible training compute to occur only during periods of 100% renewable generation) is estimated at 50–80% carbon reduction on the GB grid without hardware changes. Geographic shifting (routing to the lowest-carbon available data centre region) provides a further 2–3x benefit where multi-region infrastructure is available.
 

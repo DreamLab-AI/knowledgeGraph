@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Delivery Planning]]
-# Technology Programme Delivery Planning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,18 +51,36 @@ elevatedFrom:: [[Delivery Planning]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:digital-platform", "label": "Digital Platform"},
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+      {
+        "@id": "urn:ngm:class:digital-platform",
+        "label": "Digital Platform"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:development-platform", "label": "Development Platform"}
+      {
+        "@id": "urn:ngm:class:development-platform",
+        "label": "Development Platform"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"}
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
     ]
   },
   "provenance": {
@@ -78,37 +90,6 @@ elevatedFrom:: [[Delivery Planning]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:delivery-planning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:46125fb0e8a4843763c734a7e45dc7f5da9828d69f159cfd069b788e4787b1cf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Delivery Planning is a concept within the ngm domain.

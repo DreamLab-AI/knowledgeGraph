@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Apache Flink
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -94,6 +90,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Apache Flink is an open-source distributed engine for stateful computations over unbounded and bounded data streams. It provides a unified runtime that treats batch processing as a special case of streaming, with event-time semantics, sophisticated windowing, and exactly-once state consistency backed by distributed snapshots. Flink is widely used for low-latency, high-throughput stream processing in real-time analytics, event-driven applications, and continuous data pipelines.
   - [[Stream Processing]] [[Data Pipeline]] [[Distributed Computing]] [[Real-Time Analytics]]

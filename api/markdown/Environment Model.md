@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environment Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,4 +181,3 @@ public: true
   - Neural environment models represent the frontier: Neural Radiance Fields (NeRF) and its successors (3D Gaussian Splatting) learn continuous, differentiable scene representations from posed image collections, enabling photorealistic novel-view synthesis and gradient-based planning in learned scene geometry. Foundation models for spatial understanding (SpatialVLM, 3D-LLM) combine vision-language pretraining with 3D representations to enable open-vocabulary querying of environment models. Embodied AI research uses environment models as the interface between perception and language-guided task execution in simulation platforms such as Habitat, iGibson, and Omniverse.
 
   - In 2024-2025, environment modelling for autonomous vehicles has matured into production-scale systems combining HD maps, real-time LiDAR/camera fusion, and occupancy prediction neural networks to produce dynamic 4D environment representations. For humanoid robots, the challenge is building and maintaining accurate environment models in real time as the robot moves through complex, dynamic domestic or industrial spaces. Active neural mapping approaches, where the robot directs its attention to reduce mapping uncertainty in task-relevant regions, are an active research direction. Lifelong mapping—maintaining consistent environment models across days and months in changing environments—remains a major open problem.
-

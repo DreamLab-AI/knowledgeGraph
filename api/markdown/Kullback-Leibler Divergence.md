@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Kullback-Leibler Divergence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -121,6 +117,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - The Kullback-Leibler (KL) divergence is a measure from information theory that quantifies how much one probability distribution differs from a second, reference distribution, expressed as the expected excess number of bits required to encode samples from the first using a code optimised for the second. It is non-negative, equal to zero only when the two distributions are identical, and is asymmetric, so it is a divergence rather than a true metric. KL divergence is central to machine learning, appearing in cross-entropy loss, variational inference, the evidence lower bound of variational autoencoders, and regularisation of policy updates in reinforcement learning.
   - Related core concepts: [[Information Theory]] [[Entropy]] [[Variational Autoencoder]] [[Machine Learning]]

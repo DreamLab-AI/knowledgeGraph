@@ -1,38 +1,129 @@
----
-public: true
----
-
-# Embedding Space
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:embedding-space", "@type":"Page", "title":"Embedding Space", "vc:slug":"embedding-space", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:embedding-space",
+  "@type": "Page",
+  "title": "Embedding Space",
+  "vc:slug": "embedding-space",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:embedding-space",
-  "@type":"Class",
-  "label":"Embedding Space",
-  "definition":"An embedding space is a continuous vector space into which discrete or high-dimensional objects — such as words, images, or graph nodes — are mapped so that geometric relationships encode semantic similarity. Learned by models during representation learning, the space arranges related items close together and supports operations like nearest-neighbour search and analogy via vector arithmetic. It is the substrate underlying semantic search, retrieval, and many downstream machine-learning tasks.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:representation-learning","label":"Representation Learning"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:representation-learning","label":"Representation Learning"}],
-    "uses":[{"@id":"urn:ngm:class:embedding","label":"Embedding"},{"@id":"urn:ngm:class:cosine-similarity","label":"Cosine Similarity"}],
-    "dependsOn":[{"@id":"urn:ngm:class:embedding","label":"Embedding"},{"@id":"urn:ngm:class:training-data","label":"Training Data"}],
-    "requires":[{"@id":"urn:ngm:class:dimensionality-reduction","label":"Dimensionality Reduction"}],
-    "enables":[{"@id":"urn:ngm:class:semantic-search","label":"Semantic Search"},{"@id":"urn:ngm:class:clustering","label":"Clustering"}],
-    "supports":[{"@id":"urn:ngm:class:vector-database","label":"Vector Database"}],
-    "implements":[{"@id":"urn:ngm:class:latent-space","label":"Latent Space"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:word-embedding","label":"Word Embedding"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:latent-space","label":"Latent Space"}],
-    "relatedTo":[{"@id":"urn:ngm:class:vector-embedding","label":"Vector Embedding"},{"@id":"urn:ngm:class:knowledge-graph-embedding","label":"Knowledge Graph Embedding"},{"@id":"urn:ngm:class:transfer-learning","label":"Transfer Learning"},{"@id":"urn:ngm:class:deep-neural-network","label":"Deep Neural Network"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:embedding-space",
+  "@type": "Class",
+  "label": "Embedding Space",
+  "definition": "An embedding space is a continuous vector space into which discrete or high-dimensional objects — such as words, images, or graph nodes — are mapped so that geometric relationships encode semantic similarity. Learned by models during representation learning, the space arranges related items close together and supports operations like nearest-neighbour search and analogy via vector arithmetic. It is the substrate underlying semantic search, retrieval, and many downstream machine-learning tasks.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:latent-space","label":"Latent Space"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:latent-space",
+      "label": "Latent Space"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

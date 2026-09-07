@@ -1,8 +1,3 @@
----
-public: true
----
-
-# STRIPS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -91,32 +86,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:strips:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7f0f0914868763ca46487e48f2dcb90bac3751175c0d4536a8e0b91c4aff52d5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-representation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - STRIPS (Stanford Research Institute Problem Solver) is a classical automated planning formalism that represents world states as conjunctions of propositions and defines actions via precondition, add-list, and delete-list operators. It introduced the core abstraction underlying modern planning languages such as PDDL and remains foundational to symbolic AI planning.

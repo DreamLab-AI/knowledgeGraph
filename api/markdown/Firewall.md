@@ -1,62 +1,126 @@
----
-public: true
----
-
-# Firewall
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:firewall", "@type":"Page", "title":"Firewall", "vc:slug":"firewall", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:firewall",
+  "@type": "Page",
+  "title": "Firewall",
+  "vc:slug": "firewall",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:firewall",
-  "@type":"Class",
-  "label":"Firewall",
-  "definition":"A firewall is a network security control that monitors and filters incoming and outgoing traffic according to a defined rule set, allowing or blocking packets and connections to enforce a security boundary. Firewalls range from stateless packet filters to stateful inspection devices and next-generation appliances that perform deep packet inspection and application awareness. They are a foundational component for segmenting trusted and untrusted networks.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:network-security","label":"Network Security"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:access-control","label":"Access Control"},
-      {"@id":"urn:ngm:class:network-segmentation","label":"Network Segmentation"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:firewall",
+  "@type": "Class",
+  "label": "Firewall",
+  "definition": "A firewall is a network security control that monitors and filters incoming and outgoing traffic according to a defined rule set, allowing or blocking packets and connections to enforce a security boundary. Firewalls range from stateless packet filters to stateful inspection devices and next-generation appliances that perform deep packet inspection and application awareness. They are a foundational component for segmenting trusted and untrusted networks.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:network-segmentation",
+        "label": "Network Segmentation"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:network-security","label":"Network Security"},
-      {"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:access-control","label":"Access Control"},
-      {"@id":"urn:ngm:class:tcp-ip","label":"TCP/IP"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:network-segmentation","label":"Network Segmentation"},
-      {"@id":"urn:ngm:class:network-security","label":"Network Security"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:network-segmentation",
+        "label": "Network Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:access-control","label":"Access Control"},
-      {"@id":"urn:ngm:class:tcp-ip","label":"TCP/IP"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:intrusion-detection-system","label":"Intrusion Detection System"},
-      {"@id":"urn:ngm:class:vpn","label":"VPN"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      },
+      {
+        "@id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:intrusion-detection-system","label":"Intrusion Detection System"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:web-application-firewall","label":"Web Application Firewall"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:web-application-firewall",
+        "label": "Web Application Firewall"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:network-security","label":"Network Security"},
-      {"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"},
-      {"@id":"urn:ngm:class:vpn","label":"VPN"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

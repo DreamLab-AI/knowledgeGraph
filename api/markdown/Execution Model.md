@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Execution Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,45 @@ public: true
   "definition": "An execution model is the abstract specification of how a computing system interprets, schedules, and carries out instructions or computations, defining the rules governing ordering, concurrency, memory access, and resource allocation. It forms the semantic foundation atop which programming languages, runtimes, and hardware platforms are designed, ensuring consistent and predictable behaviour across implementations.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:programming-paradigm", "label": "Programming Paradigm"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:programming-paradigm",
+      "label": "Programming Paradigm"
+    }
+  ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"}],
-    "uses": [{"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"}, {"@id": "urn:ngm:class:compiler", "label": "Compiler"}],
-    "relatedTo": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}, {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}],
-    "supports": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}]
+    "enables": [
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -50,4 +78,3 @@ public: true
   - In contemporary ecosystems, execution models are a critical design axis for language runtimes (V8's event loop, the JVM's bytecode interpreter, CPython's GIL), cloud functions (serverless invocation semantics), and hardware accelerators. The choice of execution model governs achievable throughput, latency predictability, and safety guarantees available to application developers.
 
   - As of 2024–2025, execution models are under renewed scrutiny with the rise of AI accelerators, heterogeneous edge compute, and WebAssembly System Interface (WASI) standardisation. Formal verification of execution model properties is an active research area, and new models for neuromorphic and quantum hardware are being proposed, expanding the conceptual vocabulary beyond classical sequential or parallel paradigms.
-

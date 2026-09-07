@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Function Schemas
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Function schemas are structured, machine-readable declarations that describe the name, parameters, and types of tools or functions that a large language model may call. Typically expressed as JSON Schema, they let a model select an appropriate tool and emit validly structured arguments. Function schemas are the contract that enables reliable tool use and agentic workflows.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agents", "label": "Agents"}, {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
+    ]
   },
   "quality": 0.72
 }

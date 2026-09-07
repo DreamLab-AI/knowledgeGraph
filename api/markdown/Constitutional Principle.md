@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Constitutional Principle
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,26 +59,62 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"}
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:human-agency-and-oversight", "label": "Human Agency and Oversight"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:human-agency-and-oversight",
+        "label": "Human Agency and Oversight"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance-principle", "label": "Ai Governance Principle"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+      {
+        "@id": "urn:ngm:class:ai-governance-principle",
+        "label": "Ai Governance Principle"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
     ]
   },
   "provenance": {
@@ -93,42 +124,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:constitutional-principle:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6feb36bcf14271baf70bbb9554c3e5aeb17a710ca822fea96a58aa8ee2d2f6f6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Constitutional Principle in AI alignment is a natural-language rule or norm—derived from human rights frameworks, professional codes, or organisational policies—that is embedded into an AI system's training or inference process to constrain its behaviour across diverse contexts. Constitutional AI, introduced by Anthropic, uses a curated list of such principles as a self-critique scaffold during reinforcement learning from AI feedback (RLAIF), enabling large language models to evaluate and revise their own outputs against explicit normative standards without requiring a human rater for every example. Constitutional Principles serve as the value-bearing component of this approach, operationalising abstract ethical commitments into verifiable behavioural constraints.

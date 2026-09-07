@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OSI Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,36 +168,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:osi-model:e8a014d39865",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8da2566e2828d0def182cc39ec33981a62f02cce08fdf8c110bfa315898c2ae4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Architecture]]",
-      "resolved": "urn:visionflow:linked:network-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[REST API]]",
-      "resolved": "urn:visionflow:linked:rest-api",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

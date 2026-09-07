@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ouroboros Consensus
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,29 +59,74 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:epoch", "label": "Epoch"},
-      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+      {
+        "@id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      },
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:probabilistic-finality", "label": "Probabilistic Finality"},
-      {"@id": "urn:ngm:class:blockchain-sustainability", "label": "Blockchain Sustainability"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {
+        "@id": "urn:ngm:class:probabilistic-finality",
+        "label": "Probabilistic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"},
-      {"@id": "urn:ngm:class:nominated-proof-of-stake", "label": "Nominated Proof of Stake"},
-      {"@id": "urn:ngm:class:liquid-proof-of-stake", "label": "Liquid Proof of Stake"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:nominated-proof-of-stake",
+        "label": "Nominated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-proof-of-stake",
+        "label": "Liquid Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ]
   },
   "provenance": {
@@ -96,37 +136,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ouroboros-consensus:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b79d6cfca1a9e6bf402aa9b1a7c1fa3a3737991ecbd30d426305871c539bb51c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-stake",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Ouroboros is a provably secure proof-of-stake consensus protocol developed for the Cardano blockchain, the first PoS protocol to be formally verified with cryptographic security proofs equivalent to those of proof-of-work systems. It divides blockchain time into epochs and slots, using a verifiable random function to elect slot leaders from among stake pools proportionally to their delegated stake, enabling secure, energy-efficient block production without trusted setup.

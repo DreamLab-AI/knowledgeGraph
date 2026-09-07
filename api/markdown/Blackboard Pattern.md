@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blackboard Pattern
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Blackboard Pattern",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "MultiAgentOrchestration" },
-    { "@id": "urn:visionflow:linked:memory-bank", "vc:label": "MemoryBank" },
-    { "@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "MultiAgentSystem" },
-    { "@id": "urn:visionflow:linked:supervisor-worker-pattern", "vc:label": "SupervisorWorkerPattern" }
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "MultiAgentOrchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:memory-bank",
+      "vc:label": "MemoryBank"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "MultiAgentSystem"
+    },
+    {
+      "@id": "urn:visionflow:linked:supervisor-worker-pattern",
+      "vc:label": "SupervisorWorkerPattern"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-09T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-09T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,17 +44,32 @@ public: true
   "definition": "A coordination architecture in which multiple specialised agents collaborate not by messaging each other directly but by reading from and writing to a shared, structured workspace — the blackboard. Each agent watches the blackboard for a state it can act on, contributes its partial result back to the shared space, and lets other agents build on that contribution in turn, so a solution accretes incrementally through many opportunistic updates rather than through a fixed pipeline. The pattern decouples the collaborators from one another: an agent needs to understand only the blackboard's contents, not the identity, order, or availability of its peers.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": { "@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:multi-agent-orchestration",
+    "label": "Multi-Agent Orchestration"
+  },
   "relations": {
     "requires": [
-      { "@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System" }
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:memory-bank", "label": "Memory Bank" }
+      {
+        "@id": "urn:ngm:class:memory-bank",
+        "label": "Memory Bank"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:supervisor-worker-pattern", "label": "Supervisor-Worker Pattern" },
-      { "@id": "urn:ngm:class:task-delegation", "label": "Task Delegation" }
+      {
+        "@id": "urn:ngm:class:supervisor-worker-pattern",
+        "label": "Supervisor-Worker Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
     ]
   },
   "quality": 0.75,
@@ -81,7 +108,7 @@ public: true
 
   ## Control
 
-  A pure free-for-all can stall or thrash, so most blackboard systems add a control component that decides which eligible agent should act next when several could. This controller ranks candidate contributions, arbitrates conflicts, and recognises when the solution on the board is complete. The design therefore balances two forces: the openness that lets any agent contribute whenever it can, and the coordination needed to keep that openness from degenerating into redundant or contradictory work.
+  A pure free-for-all can stall or thrash, so most blackboard systems add a control component that decides which eligible agent should act next when several [private]. This controller ranks candidate contributions, arbitrates conflicts, and recognises when the solution on the board is complete. The design therefore balances two forces: the openness that lets any agent contribute whenever it can, and the coordination needed to keep that openness from degenerating into redundant or contradictory work.
 
   ## Relationship to Neighbouring Patterns
 

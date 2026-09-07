@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Plan and Execute
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Plan and execute is an agentic reasoning strategy in which an LLM-based agent first generates a multi-step plan for a task and then carries out each step, optionally re-planning when steps fail or new information appears. Separating planning from execution improves coherence on long-horizon tasks compared with purely reactive, single-step prompting. It is a common control pattern for autonomous and computer-use agents.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"}, {"@id": "urn:ngm:class:agents", "label": "Agents"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Voice Over Ip
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,43 +20,102 @@ public: true
   "definition": "Voice over IP (VoIP) is a family of technologies that digitise, compress, and transmit voice communications as packetised data over Internet Protocol networks rather than through dedicated circuit-switched telephony infrastructure. Audio is sampled, encoded using codecs such as G.711, G.729, or Opus, packetised, and transported using the Real-time Transport Protocol (RTP) over UDP, with session management handled by signalling protocols such as SIP or H.323. VoIP enables cost reduction, feature richness, and integration with unified communications platforms, but introduces quality-of-service sensitivities to packet loss, jitter, and latency. Encryption via SRTP and TLS/DTLS provides confidentiality and integrity for enterprise and consumer deployments.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:real-time-communication",
+      "label": "Real-Time Communication"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"},
-      {"@id": "urn:ngm:class:real-time-collaboration", "label": "Real Time Collaboration"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real Time Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-messaging", "label": "Real Time Messaging"},
-      {"@id": "urn:ngm:class:real-time-systems", "label": "Real Time Systems"},
-      {"@id": "urn:ngm:class:communication-protocols", "label": "Communication Protocols"}
+      {
+        "@id": "urn:ngm:class:real-time-messaging",
+        "label": "Real Time Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-systems",
+        "label": "Real Time Systems"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocols",
+        "label": "Communication Protocols"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:io-t-infrastructure", "label": "IoT Infrastructure"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time", "label": "Real Time"},
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"},
-      {"@id": "urn:ngm:class:secure-channel", "label": "Secure Channel"}
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "@id": "urn:ngm:class:secure-channel",
+        "label": "Secure Channel"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"}
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:real-time-collaborative-editing", "label": "Real-Time Collaborative Editing"}
+      {
+        "@id": "urn:ngm:class:real-time-collaborative-editing",
+        "label": "Real-Time Collaborative Editing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"}
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      }
     ]
   },
   "sameAs": [],

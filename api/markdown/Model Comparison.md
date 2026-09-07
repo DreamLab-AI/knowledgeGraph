@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Comparison
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -166,4 +161,3 @@ public: true
   - Model comparison is significant because it drives both research and procurement decisions. Foundation model providers publish comparison tables to market capabilities; enterprises use structured comparison to select vendor APIs; regulators increasingly require evidence of comparative safety assessments under frameworks such as the EU AI Act. The discipline also exposes systemic weaknesses: benchmark saturation, contamination of pre-training data with test splits, and differential performance across demographic subgroups are recurring findings that reshape how models are trained and deployed.
 
   - In 2024–2025, the field is navigating benchmark contamination at scale, as large language models trained on internet-scale data may have implicitly absorbed evaluation corpora. New evaluation paradigms — dynamic benchmarks, LLM-as-judge scoring, and agent-task evaluations — are being developed to resist contamination and measure capabilities that static multiple-choice tests cannot capture. Holistic comparison frameworks such as HELM and BIG-bench Hard continue to evolve, emphasising robustness, calibration, and fairness alongside raw accuracy.
-

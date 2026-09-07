@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Policy Information Point
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,40 +20,90 @@ public: true
   "definition": "A Policy Information Point (PIP) is the component in a policy-based access control architecture that retrieves and supplies attribute values needed by a Policy Decision Point to evaluate access requests against policies. The PIP acts as an attribute authority, querying identity stores, databases, and external services to resolve subject attributes, resource properties, and environmental conditions at decision time. It decouples the decision logic from the data sources that inform it.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:access-control", "label": "Access Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:policy-administration-point", "label": "Policy Administration Point"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:policy-administration-point",
+        "label": "Policy Administration Point"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:biometric-data", "label": "Biometric Data"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-data",
+        "label": "Biometric Data"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:personal-data", "label": "Personal Data"},
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}
+      {
+        "@id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:session-management", "label": "Session Management"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:session-key", "label": "Session Key"}
+      {
+        "@id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:session-key", "label": "Session Key"}
+      {
+        "@id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      }
     ]
   },
   "quality": 0.62,

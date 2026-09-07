@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Government AI Modernization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "government-ai-modernization",
   "title": "Government AI Modernization",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Organizational Structure", "Amazon", "Peter DeSantis"],
+  "vc:outboundWikilinks": [
+    "AI Organizational Structure",
+    "Amazon",
+    "Peter DeSantis"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-policy",
+      "label": "AI Policy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}, {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}, {"@id": "urn:ngm:class:federal-modernization", "label": "Federal Modernization"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:federal-modernization",
+        "label": "Federal Modernization"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

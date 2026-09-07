@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Hardware Ecosystem
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-hardware-ecosystem",
   "title": "AI Hardware Ecosystem",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Apple AI Strategy", "Foundation Model Competition"],
+  "vc:outboundWikilinks": [
+    "Apple AI Strategy",
+    "Foundation Model Competition"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-hardware",
+      "label": "AI Hardware"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"}, {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}, {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0072 encoder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rotary-encoder", "label": "Rotary Encoder"}
+      {
+        "@id": "urn:ngm:class:rotary-encoder",
+        "label": "Rotary Encoder"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"},
-      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"},
-      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"}
+      {
+        "@id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0034-repeatability", "label": "rb 0034 repeatability"},
-      {"@id": "urn:ngm:class:rb-0035-accuracy", "label": "rb 0035 accuracy"},
-      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"}
+      {
+        "@id": "urn:ngm:class:rb-0034-repeatability",
+        "label": "rb 0034 repeatability"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0035-accuracy",
+        "label": "rb 0035 accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"}
+      {
+        "@id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      }
     ]
   },
   "provenance": {
@@ -87,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0072-encoder:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d821e7fd520a3580f6384c0e0d808ce5c0c6ce014adf6b9ce7c2c76d458fc563"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Encoder** (RB-0072) is a proprioceptive sensor converting joint position or shaft rotation into digital feedback signals for closed-loop robot control. Absolute encoders are preferred in safety-critical systems (e.g. cobots) because they retain position knowledge across power cycles, directly supporting speed limitation and position control safety functions.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "agent-management",
   "title": "Agent Management",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Upskilling", "Knowledge Work Primitive"],
+  "vc:outboundWikilinks": [
+    "AI Upskilling",
+    "Knowledge Work Primitive"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}, {"@id": "urn:ngm:class:knowledge-work-primitive", "label": "Knowledge Work Primitive"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-work-primitive",
+        "label": "Knowledge Work Primitive"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

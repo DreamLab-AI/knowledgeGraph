@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Communication Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,30 @@ public: true
   "definition": "A communication network is an interconnected collection of nodes and links that transports information between endpoints according to shared protocols. Networks are characterised by their topology, switching method, transmission media, and the protocol stack that governs addressing, routing, and error control. They span scales from local wireless links to global packet-switched internetworks, and they provide the substrate on which distributed systems, decentralised ledgers, and immersive media depend. Performance is described by metrics including bandwidth, latency, jitter, and reliability.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:communication-infrastructure", "label": "Communication Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:communication-infrastructure",
+      "label": "Communication Infrastructure"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:transport-layer", "label": "Transport Layer"}
+      {
+        "@id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-performance-metrics", "label": "Network Performance Metrics"}
+      {
+        "@id": "urn:ngm:class:network-performance-metrics",
+        "label": "Network Performance Metrics"
+      }
     ]
   },
   "quality": 0.76

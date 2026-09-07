@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wearable Computing Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,18 +59,36 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:xr-headset", "label": "XR Headset"},
-      {"@id": "urn:ngm:class:wearable-device-integration", "label": "Wearable Device Integration"}
+      {
+        "@id": "urn:ngm:class:xr-headset",
+        "label": "XR Headset"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-device-integration",
+        "label": "Wearable Device Integration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "quality": 0.5,
@@ -86,37 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:wearable-computing-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8f0dfe1eaeb99706904743c35a8986fa34f08412f473e21fe7cd02e7f3a8b4b9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computing Platform]]",
-      "resolved": "urn:visionflow:owl:class:computing-platform",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hardware and software ecosystems for body-worn computing devices including smartwatches, smart glasses, fitness trackers, and XR headsets, providing operating systems, development frameworks, and connectivity infrastructure for continuous personal computing and metaverse interaction.

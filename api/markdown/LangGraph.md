@@ -1,8 +1,3 @@
----
-public: true
----
-
-# LangGraph
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,57 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lang-graph:9ec28353afe8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bcd185b3299b94a4291e5cd547410d626d0bbb8bc3a63903fabe0237b749b633"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Language Model]]",
-      "resolved": "urn:visionflow:linked:language-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[State Machine]]",
-      "resolved": "urn:visionflow:linked:state-machine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Agent Coordination]]",
-      "resolved": "urn:visionflow:linked:multi-agent-coordination",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agentic Workflow]]",
-      "resolved": "urn:visionflow:linked:agentic-workflow",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agent]]",
-      "resolved": "urn:visionflow:linked:ai-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tool Use]]",
-      "resolved": "urn:visionflow:linked:tool-use",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - LangGraph is a library for building stateful, multi-step language model applications by representing control flow as a graph. It is part of the LangChain ecosystem and supports cyclic agent workflows.

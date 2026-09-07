@@ -1,55 +1,108 @@
----
-public: true
----
-
-# Sigstore
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:sigstore", "@type":"Page", "title":"Sigstore", "vc:slug":"sigstore", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:sigstore",
+  "@type": "Page",
+  "title": "Sigstore",
+  "vc:slug": "sigstore",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:sigstore",
-  "@type":"Class",
-  "label":"Sigstore",
-  "definition":"Sigstore is an open-source project and set of services for signing, verifying, and proving the provenance of software artefacts using short-lived keys and a public transparency log. It removes the burden of long-term key management by issuing ephemeral signing certificates bound to OpenID Connect identities, recording signatures in an append-only log (Rekor) for auditability. Sigstore underpins software supply-chain security through tools such as Cosign for container and artefact signing.",
-  "domain":"security",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:supply-chain-security","label":"Supply Chain Security"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:supply-chain-security","label":"Supply Chain Security"}],
-    "uses":[
-      {"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"},
-      {"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"},
-      {"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:sigstore",
+  "@type": "Class",
+  "label": "Sigstore",
+  "definition": "Sigstore is an open-source project and set of services for signing, verifying, and proving the provenance of software artefacts using short-lived keys and a public transparency log. It removes the burden of long-term key management by issuing ephemeral signing certificates bound to OpenID Connect identities, recording signatures in an append-only log (Rekor) for auditability. Sigstore underpins software supply-chain security through tools such as Cosign for container and artefact signing.",
+  "domain": "security",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:supply-chain-security",
+      "label": "Supply Chain Security"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:code-signing","label":"Code Signing"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:software-supply-chain","label":"Software Supply Chain"},
-      {"@id":"urn:ngm:class:content-provenance","label":"Content Provenance"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:supply-chain-security","label":"Supply Chain Security"},
-      {"@id":"urn:ngm:class:software-supply-chain","label":"Software Supply Chain"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:ecdsa","label":"ECDSA"},
-      {"@id":"urn:ngm:class:cryptographic-signature","label":"Cryptographic Signature"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "@id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:security","label":"Security"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

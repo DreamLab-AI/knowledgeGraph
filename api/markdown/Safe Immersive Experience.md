@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safe Immersive Experience
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:safe-immersive-experience:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f7fa50fefa75e38d13b3d5b39953338267e478b96b184235698df402ca861af5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Responsible XR Design]]",
-      "resolved": "urn:visionflow:linked:responsible-xr-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[User Safety]]",
-      "resolved": "urn:visionflow:owl:class:user-safety",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Design principles and technical safeguards that protect users from physical harm, psychological distress, and privacy violations in virtual and augmented reality environments through content moderation, comfort settings, and safety boundaries.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Annotation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,57 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-annotation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f8900b62e736c3a6e983d4d86be49baf149dec397f489cb7fcb248a54c168d23"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cohen's Kappa]]",
-      "resolved": "urn:visionflow:linked:cohen-s-kappa",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[HIPAA]]",
-      "resolved": "urn:visionflow:linked:hipaa",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Snorkel]]",
-      "resolved": "urn:visionflow:linked:snorkel",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machine Learning Pipeline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning-pipeline",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data]]",
-      "resolved": "urn:visionflow:owl:class:training-data",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Data Annotation is a concept within the ai domain.

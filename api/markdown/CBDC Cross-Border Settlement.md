@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CBDC Cross-Border Settlement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -93,57 +88,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cbdc-cross-border-settlement:b704ed54f033",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fb4cfb97fb977cedbb79dfb8606cd31d9e653191f7a39a8bf6b4246466e2f56f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Settlement]]",
-      "resolved": "urn:visionflow:linked:settlement",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment System]]",
-      "resolved": "urn:visionflow:linked:payment-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Pound]]",
-      "resolved": "urn:visionflow:linked:digital-pound",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Central Bank Digital Currency]]",
-      "resolved": "urn:visionflow:linked:central-bank-digital-currency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.bis.org/about/bisih/topics/cbdc.htm]]",
-      "resolved": "urn:visionflow:linked:https-www-bis-org-about-bisih-topics-cbdc-htm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.bis.org/publ/othp59.htm]]",
-      "resolved": "urn:visionflow:linked:https-www-bis-org-publ-othp-59-htm",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - CBDC cross-border settlement refers to the use of central bank digital currencies to settle payments between parties in different jurisdictions. It aims to reduce cost and delay in international transfers.
 
@@ -159,7 +103,7 @@ public: true
 
 - ### Content
   - Cross-border settlement using central bank digital currencies involves connecting the digital currency systems of different countries so that value can move directly between them. Several central bank projects have tested interoperability arrangements and shared platforms.
-  - Proponents argue that such settlement could shorten transaction chains that currently pass through correspondent banks. Design questions include foreign exchange handling, legal frameworks, and how to maintain monetary control across jurisdictions.
+  - Proponents argue that such settlement [private] shorten transaction chains that currently pass through correspondent banks. Design questions include foreign exchange handling, legal frameworks, and how to maintain monetary control across jurisdictions.
 
 - ### Provenance
   - sources:: [[https://www.bis.org/about/bisih/topics/cbdc.htm]], [[https://www.bis.org/publ/othp59.htm]]

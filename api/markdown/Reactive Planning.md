@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reactive Planning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,7 +108,7 @@ public: true
 
   ## Definition
 
-  **Reactive planning** is a family of agent-control techniques in which behaviour is computed moment-to-moment from the current world state, rather than derived from a complete symbolic plan produced before execution begins. Where [[Classical Planning]] searches offline for a sequence of actions guaranteed to reach a goal from a known initial state, a reactive planner maintains a mapping — explicit or compiled — from situations to actions, and re-evaluates that mapping on every control cycle. The approach emerged in the late 1980s from criticism of deliberative robotics, most influentially Rodney Brooks's [[Subsumption Architecture]], which showed that layered condition-action behaviours could produce robust navigation with no world model at all.
+  **Reactive planning** is a family of agent-control techniques in which behaviour is computed moment-to-moment from the current world state, rather than derived from a complete symbolic plan produced before execution begins. Where [[Classical Planning]] searches offline for a sequence of actions guaranteed to reach a goal from a known initial state, a reactive planner maintains a mapping — explicit or compiled — from situations to actions, and re-evaluates that mapping on every control cycle. The approach emerged in the late 1980s from criticism of deliberative robotics, most influentially Rodney Brooks's [[Subsumption Architecture]], which showed that layered condition-action behaviours [private] produce robust navigation with no world model at all.
 
   The defining trade-off is responsiveness versus foresight. Reactive planners tolerate sensor noise, exogenous change, and plan-invalidating surprises because they never commit to a stale plan; the cost is that purely reactive systems can be short-sighted, cycling or stalling on problems that require multi-step lookahead. Modern practice therefore favours hybrid architectures: a deliberative layer produces goals or coarse plans whilst a reactive layer — often a [[Behaviour Tree]], teleo-reactive programme, or finite-state controller — handles execution, recovery, and safety within tight real-time budgets.
 

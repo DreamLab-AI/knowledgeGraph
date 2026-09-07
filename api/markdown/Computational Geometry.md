@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Computational Geometry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,62 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:computational-geometry:3670b8a34f3b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1cec7ba8f5bcd43d51b5bf57cbe440ee7bc576f4f95bc7571cb3ebeb6b08c51d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Structure]]",
-      "resolved": "urn:visionflow:linked:data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Engine]]",
-      "resolved": "urn:visionflow:linked:3-d-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pathfinding]]",
-      "resolved": "urn:visionflow:linked:pathfinding",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computational Geometry]]",
-      "resolved": "urn:visionflow:linked:computational-geometry",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Algorithm]]",
-      "resolved": "urn:visionflow:linked:algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Computational_geometry]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-computational-geometry",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.cgal.org]]",
-      "resolved": "urn:visionflow:linked:https-www-cgal-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Computational geometry is the study of algorithms for solving geometric problems, such as finding convex hulls, intersections, and nearest points. It supports graphics, robotics, and geographic systems.

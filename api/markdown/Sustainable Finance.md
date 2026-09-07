@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sustainable Finance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,4 +165,3 @@ public: true
   - Climate risk integration is a core component: physical risks (sea-level rise, extreme weather) and transition risks (carbon pricing, stranded assets) must be incorporated into financial models and stress tests. The TCFD (Task Force on Climate-related Financial Disclosures) framework, widely adopted voluntarily and increasingly mandated, structures this disclosure. Central banks via the NGFS (Network for Greening the Financial System) develop climate stress-testing methodologies for financial stability supervision.
 
   - In 2024-2025, sustainable finance faces the dual challenge of greenwashing litigation — regulators in the EU and US are taking enforcement action against misleading ESG claims — and the ongoing development of interoperable global standards. The ISSB (International Sustainability Standards Board) published IFRS S1 and S2 in 2023, providing a global baseline for sustainability disclosure. The integration of AI for ESG data aggregation, controversy detection, and portfolio alignment scoring is accelerating. The tokenisation of green bonds and carbon credits on blockchain platforms is also an active frontier.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Demand Response
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,55 +20,147 @@ public: true
   "definition": "Demand response is the deliberate modification of electricity consumption patterns by end users in response to signals from grid operators, energy markets, or automated control systems, with the aim of balancing supply and demand in real time. It enables consumers—from large industrial facilities to domestic smart appliances—to reduce or shift load during peak periods or grid stress events in exchange for financial incentives or reduced tariffs. Demand response programmes are a cornerstone of smart grid operation, deferring or avoiding costly investment in peak generation capacity. Increasingly, AI-driven automation and IoT sensor networks enable fine-grained, real-time demand response at residential scale without requiring manual intervention from end users.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-grid",
+      "label": "Smart Grid"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"},
-      {"@id": "urn:ngm:class:power-management", "label": "Power Management"},
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:virtual-power-plant", "label": "Virtual Power Plant"},
-      {"@id": "urn:ngm:class:electricity-market", "label": "Electricity Market"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
-      {"@id": "urn:ngm:class:peak-load-management", "label": "Peak Load Management"}
+      {
+        "@id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-power-plant",
+        "label": "Virtual Power Plant"
+      },
+      {
+        "@id": "urn:ngm:class:electricity-market",
+        "label": "Electricity Market"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:peak-load-management",
+        "label": "Peak Load Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:power-efficient-ai", "label": "Power-Efficient AI"},
-      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:grid-stability", "label": "Grid Stability"},
-      {"@id": "urn:ngm:class:vehicle-to-grid", "label": "Vehicle to Grid"}
+      {
+        "@id": "urn:ngm:class:power-efficient-ai",
+        "label": "Power-Efficient AI"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:grid-stability",
+        "label": "Grid Stability"
+      },
+      {
+        "@id": "urn:ngm:class:vehicle-to-grid",
+        "label": "Vehicle to Grid"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:real-time-pricing", "label": "Real-Time Pricing"},
-      {"@id": "urn:ngm:class:advanced-metering-infrastructure", "label": "Advanced Metering Infrastructure"}
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-pricing",
+        "label": "Real-Time Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:advanced-metering-infrastructure",
+        "label": "Advanced Metering Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-to-machine-payments", "label": "Machine to Machine Payments"},
-      {"@id": "urn:ngm:class:renewable-energy-integration", "label": "Renewable Energy Integration"},
-      {"@id": "urn:ngm:class:carbon-emissions-reduction", "label": "Carbon Emissions Reduction"}
+      {
+        "@id": "urn:ngm:class:machine-to-machine-payments",
+        "label": "Machine to Machine Payments"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-integration",
+        "label": "Renewable Energy Integration"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-emissions-reduction",
+        "label": "Carbon Emissions Reduction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:smart-meter", "label": "Smart Meter"},
-      {"@id": "urn:ngm:class:grid-communication-protocol", "label": "Grid Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:smart-meter",
+        "label": "Smart Meter"
+      },
+      {
+        "@id": "urn:ngm:class:grid-communication-protocol",
+        "label": "Grid Communication Protocol"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"},
-      {"@id": "urn:ngm:class:energy-aggregator", "label": "Energy Aggregator"}
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "@id": "urn:ngm:class:energy-aggregator",
+        "label": "Energy Aggregator"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:peaking-power-plant", "label": "Peaking Power Plant"}
+      {
+        "@id": "urn:ngm:class:peaking-power-plant",
+        "label": "Peaking Power Plant"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:demand-side-management", "label": "Demand Side Management"},
-    {"@id": "urn:ngm:class:demand-side-response", "label": "Demand Side Response"}
+    {
+      "@id": "urn:ngm:class:demand-side-management",
+      "label": "Demand Side Management"
+    },
+    {
+      "@id": "urn:ngm:class:demand-side-response",
+      "label": "Demand Side Response"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Virtualization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +118,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-virtualization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:60fcab24a0a9cf23da9d9d031cfb50c701c6e7d9062c370a3ecf4ab3985d69e5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Connectors]]",
-      "resolved": "urn:visionflow:linked:data-connectors",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Federation]]",
-      "resolved": "urn:visionflow:linked:data-federation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Query Engine]]",
-      "resolved": "urn:visionflow:linked:query-engine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Data Access]]",
-      "resolved": "urn:visionflow:linked:real-time-data-access",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Unified Data View]]",
-      "resolved": "urn:visionflow:linked:unified-data-view",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Integration]]",
-      "resolved": "urn:visionflow:owl:class:data-integration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metadata Management]]",
-      "resolved": "urn:visionflow:owl:class:metadata-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A data integration approach that creates a virtual abstraction layer enabling users and applications to access, query, and integrate data from multiple disparate sources as a single unified system without physically moving or replicating the underlying data, supporting real-time access and reducing data management complexity.

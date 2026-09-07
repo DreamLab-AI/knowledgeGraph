@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lido
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,52 +187,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lido:fa4f1b2d3559",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:00a69ae37337ef2aafb5a6a584976cd38a5b701d501bff8de0799830ce89bbad"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Validator Node]]",
-      "resolved": "urn:visionflow:linked:validator-node",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Liquidity Provision]]",
-      "resolved": "urn:visionflow:linked:liquidity-provision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lido DAO]]",
-      "resolved": "urn:visionflow:linked:lido-dao",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Liquid Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:liquid-proof-of-stake",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A liquid staking protocol that stakes users' assets with network validators and issues a transferable token representing the staked position and its accruing rewards.

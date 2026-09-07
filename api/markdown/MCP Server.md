@@ -1,8 +1,3 @@
----
-public: true
----
-
-# MCP Server
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "An MCP server is a program that exposes tools, resources, and prompts to AI applications through the Model Context Protocol. It advertises its capabilities during connection negotiation and executes requests forwarded by an MCP client, returning structured results for the model to consume. Servers encapsulate access to external systems such as databases, APIs, file systems, and developer tooling.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}, {"@id": "urn:ngm:class:mcp-client", "label": "MCP Client"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-client",
+        "label": "MCP Client"
+      }
+    ]
   },
   "quality": 0.72
 }

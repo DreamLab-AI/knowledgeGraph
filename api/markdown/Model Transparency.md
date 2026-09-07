@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Transparency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,42 +186,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-transparency:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cf53124527754f85da5d92a4092d3c58f6986e8066f7260ef21462fd0604ab12"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Trustworthy AI Systems]]",
-      "resolved": "urn:visionflow:linked:trustworthy-ai-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Ethics]]",
-      "resolved": "urn:visionflow:owl:class:ai-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The capability to understand, explain, and interpret the decision-making processes within AI and machine learning models, encompassing explainability, interpretability, and accountability requirements essential for responsible AI deployment.

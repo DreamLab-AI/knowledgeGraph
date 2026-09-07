@@ -1,56 +1,191 @@
----
-public: true
----
-
-# Container
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:container", "@type":"Page", "title":"Container", "vc:slug":"container", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[
-  {"@id":"urn:visionflow:linked:containerization","vc:label":"Containerization"},
-  {"@id":"urn:visionflow:linked:control-groups","vc:label":"Control Groups"},
-  {"@id":"urn:visionflow:linked:namespaces","vc:label":"Namespaces"},
-  {"@id":"urn:visionflow:linked:resource-isolation","vc:label":"Resource Isolation"},
-  {"@id":"urn:visionflow:linked:microservices","vc:label":"Microservices"},
-  {"@id":"urn:visionflow:linked:model-deployment","vc:label":"Model Deployment"},
-  {"@id":"urn:visionflow:linked:mlops","vc:label":"MLOps"},
-  {"@id":"urn:visionflow:linked:ci-cd","vc:label":"CI/CD"},
-  {"@id":"urn:visionflow:linked:orchestration","vc:label":"Orchestration"},
-  {"@id":"urn:visionflow:linked:cloud-infrastructure","vc:label":"Cloud Infrastructure"},
-  {"@id":"urn:visionflow:linked:kubernetes","vc:label":"Kubernetes"},
-  {"@id":"urn:visionflow:linked:devops","vc:label":"DevOps"},
-  {"@id":"urn:visionflow:linked:serverless","vc:label":"Serverless"},
-  {"@id":"urn:visionflow:linked:virtualization","vc:label":"Virtualization"},
-  {"@id":"urn:visionflow:linked:deployment-artifact","vc:label":"Deployment Artifact"},
-  {"@id":"urn:visionflow:linked:docker-containerisation-platform","vc:label":"Docker Containerisation Platform"},
-  {"@id":"urn:visionflow:linked:container-image","vc:label":"Container Image"},
-  {"@id":"urn:visionflow:linked:container-registry","vc:label":"Container Registry"},
-  {"@id":"urn:visionflow:linked:container-runtime","vc:label":"Container Runtime"},
-  {"@id":"urn:visionflow:linked:open-container-initiative","vc:label":"Open Container Initiative"},
-  {"@id":"urn:visionflow:linked:linux-kernel","vc:label":"Linux Kernel"},
-  {"@id":"urn:visionflow:linked:cloud-native","vc:label":"Cloud Native"},
-  {"@id":"urn:visionflow:linked:microservices-architecture","vc:label":"Microservices Architecture"},
-  {"@id":"urn:visionflow:linked:service-mesh","vc:label":"Service Mesh"},
-  {"@id":"urn:visionflow:linked:gpu-computing","vc:label":"GPU Computing"},
-  {"@id":"urn:visionflow:linked:edge-computing","vc:label":"Edge Computing"},
-  {"@id":"urn:visionflow:linked:webassembly","vc:label":"WebAssembly"},
-  {"@id":"urn:visionflow:linked:immutable-infrastructure","vc:label":"Immutable Infrastructure"},
-  {"@id":"urn:visionflow:linked:gitops","vc:label":"GitOps"},
-  {"@id":"urn:visionflow:linked:distributed-system","vc:label":"Distributed System"},
-  {"@id":"urn:visionflow:linked:container-security","vc:label":"Container Security"},
-  {"@id":"urn:visionflow:linked:software-supply-chain","vc:label":"Software Supply Chain"},
-  {"@id":"urn:visionflow:linked:platform-engineering","vc:label":"Platform Engineering"},
-  {"@id":"urn:visionflow:linked:infrastructure-as-code","vc:label":"Infrastructure as Code"},
-  {"@id":"urn:visionflow:linked:ebpf","vc:label":"eBPF"},
-  {"@id":"urn:visionflow:linked:scalability","vc:label":"Scalability"},
-  {"@id":"urn:visionflow:linked:fault-tolerance","vc:label":"Fault Tolerance"},
-  {"@id":"urn:visionflow:linked:high-availability","vc:label":"High Availability"},
-  {"@id":"urn:visionflow:linked:reproducibility","vc:label":"Reproducibility"},
-  {"@id":"urn:visionflow:linked:cloud-native-computing-foundation","vc:label":"Cloud Native Computing Foundation"},
-  {"@id":"urn:visionflow:linked:vllm","vc:label":"vLLM"},
-  {"@id":"urn:visionflow:linked:kubeflow","vc:label":"Kubeflow"},
-  {"@id":"urn:visionflow:linked:containerd","vc:label":"containerd"},
-  {"@id":"urn:visionflow:linked:cri-o","vc:label":"CRI-O"}
-] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:container",
+  "@type": "Page",
+  "title": "Container",
+  "vc:slug": "container",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": [
+    {
+      "@id": "urn:visionflow:linked:containerization",
+      "vc:label": "Containerization"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-groups",
+      "vc:label": "Control Groups"
+    },
+    {
+      "@id": "urn:visionflow:linked:namespaces",
+      "vc:label": "Namespaces"
+    },
+    {
+      "@id": "urn:visionflow:linked:resource-isolation",
+      "vc:label": "Resource Isolation"
+    },
+    {
+      "@id": "urn:visionflow:linked:microservices",
+      "vc:label": "Microservices"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-deployment",
+      "vc:label": "Model Deployment"
+    },
+    {
+      "@id": "urn:visionflow:linked:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:ci-cd",
+      "vc:label": "CI/CD"
+    },
+    {
+      "@id": "urn:visionflow:linked:orchestration",
+      "vc:label": "Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-infrastructure",
+      "vc:label": "Cloud Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubernetes",
+      "vc:label": "Kubernetes"
+    },
+    {
+      "@id": "urn:visionflow:linked:devops",
+      "vc:label": "DevOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:serverless",
+      "vc:label": "Serverless"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtualization",
+      "vc:label": "Virtualization"
+    },
+    {
+      "@id": "urn:visionflow:linked:deployment-artifact",
+      "vc:label": "Deployment Artifact"
+    },
+    {
+      "@id": "urn:visionflow:linked:docker-containerisation-platform",
+      "vc:label": "Docker Containerisation Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:container-image",
+      "vc:label": "Container Image"
+    },
+    {
+      "@id": "urn:visionflow:linked:container-registry",
+      "vc:label": "Container Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:container-runtime",
+      "vc:label": "Container Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-container-initiative",
+      "vc:label": "Open Container Initiative"
+    },
+    {
+      "@id": "urn:visionflow:linked:linux-kernel",
+      "vc:label": "Linux Kernel"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-native",
+      "vc:label": "Cloud Native"
+    },
+    {
+      "@id": "urn:visionflow:linked:microservices-architecture",
+      "vc:label": "Microservices Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:service-mesh",
+      "vc:label": "Service Mesh"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-computing",
+      "vc:label": "GPU Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-computing",
+      "vc:label": "Edge Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:webassembly",
+      "vc:label": "WebAssembly"
+    },
+    {
+      "@id": "urn:visionflow:linked:immutable-infrastructure",
+      "vc:label": "Immutable Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:gitops",
+      "vc:label": "GitOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-system",
+      "vc:label": "Distributed System"
+    },
+    {
+      "@id": "urn:visionflow:linked:container-security",
+      "vc:label": "Container Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-supply-chain",
+      "vc:label": "Software Supply Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:platform-engineering",
+      "vc:label": "Platform Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:infrastructure-as-code",
+      "vc:label": "Infrastructure as Code"
+    },
+    {
+      "@id": "urn:visionflow:linked:ebpf",
+      "vc:label": "eBPF"
+    },
+    {
+      "@id": "urn:visionflow:linked:scalability",
+      "vc:label": "Scalability"
+    },
+    {
+      "@id": "urn:visionflow:linked:fault-tolerance",
+      "vc:label": "Fault Tolerance"
+    },
+    {
+      "@id": "urn:visionflow:linked:high-availability",
+      "vc:label": "High Availability"
+    },
+    {
+      "@id": "urn:visionflow:linked:reproducibility",
+      "vc:label": "Reproducibility"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-native-computing-foundation",
+      "vc:label": "Cloud Native Computing Foundation"
+    },
+    {
+      "@id": "urn:visionflow:linked:vllm",
+      "vc:label": "vLLM"
+    },
+    {
+      "@id": "urn:visionflow:linked:kubeflow",
+      "vc:label": "Kubeflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:containerd",
+      "vc:label": "containerd"
+    },
+    {
+      "@id": "urn:visionflow:linked:cri-o",
+      "vc:label": "CRI-O"
+    }
+  ]
+}
 ```
 
 ```json-ld
@@ -260,63 +395,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:container:8a2b91c4d3e5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:container"},
-  "vc:resolutions": [
-    {"raw": "[[Containerization]]", "resolved": "urn:visionflow:linked:containerization", "kind": "ResolvedLink"},
-    {"raw": "[[Control Groups]]", "resolved": "urn:visionflow:linked:control-groups", "kind": "ResolvedLink"},
-    {"raw": "[[Namespaces]]", "resolved": "urn:visionflow:linked:namespaces", "kind": "ResolvedLink"},
-    {"raw": "[[Resource Isolation]]", "resolved": "urn:visionflow:linked:resource-isolation", "kind": "ResolvedLink"},
-    {"raw": "[[Microservices]]", "resolved": "urn:visionflow:linked:microservices", "kind": "ResolvedLink"},
-    {"raw": "[[Model Deployment]]", "resolved": "urn:visionflow:linked:model-deployment", "kind": "ResolvedLink"},
-    {"raw": "[[MLOps]]", "resolved": "urn:visionflow:linked:mlops", "kind": "ResolvedLink"},
-    {"raw": "[[CI/CD]]", "resolved": "urn:visionflow:linked:ci-cd", "kind": "ResolvedLink"},
-    {"raw": "[[Orchestration]]", "resolved": "urn:visionflow:linked:orchestration", "kind": "ResolvedLink"},
-    {"raw": "[[Cloud Infrastructure]]", "resolved": "urn:visionflow:linked:cloud-infrastructure", "kind": "ResolvedLink"},
-    {"raw": "[[Kubernetes]]", "resolved": "urn:visionflow:linked:kubernetes", "kind": "ResolvedLink"},
-    {"raw": "[[DevOps]]", "resolved": "urn:visionflow:linked:devops", "kind": "ResolvedLink"},
-    {"raw": "[[Serverless]]", "resolved": "urn:visionflow:linked:serverless", "kind": "ResolvedLink"},
-    {"raw": "[[Virtualization]]", "resolved": "urn:visionflow:linked:virtualization", "kind": "ResolvedLink"},
-    {"raw": "[[Deployment Artifact]]", "resolved": "urn:visionflow:linked:deployment-artifact", "kind": "ResolvedLink"},
-    {"raw": "[[Docker Containerisation Platform]]", "resolved": "urn:visionflow:linked:docker-containerisation-platform", "kind": "ResolvedLink"},
-    {"raw": "[[Container Image]]", "resolved": "urn:visionflow:linked:container-image", "kind": "ResolvedLink"},
-    {"raw": "[[Container Registry]]", "resolved": "urn:visionflow:linked:container-registry", "kind": "ResolvedLink"},
-    {"raw": "[[Container Runtime]]", "resolved": "urn:visionflow:linked:container-runtime", "kind": "ResolvedLink"},
-    {"raw": "[[Open Container Initiative]]", "resolved": "urn:visionflow:linked:open-container-initiative", "kind": "ResolvedLink"},
-    {"raw": "[[Linux Kernel]]", "resolved": "urn:visionflow:linked:linux-kernel", "kind": "ResolvedLink"},
-    {"raw": "[[Cloud Native]]", "resolved": "urn:visionflow:linked:cloud-native", "kind": "ResolvedLink"},
-    {"raw": "[[Microservices Architecture]]", "resolved": "urn:visionflow:linked:microservices-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Service Mesh]]", "resolved": "urn:visionflow:linked:service-mesh", "kind": "ResolvedLink"},
-    {"raw": "[[GPU Computing]]", "resolved": "urn:visionflow:linked:gpu-computing", "kind": "ResolvedLink"},
-    {"raw": "[[Edge Computing]]", "resolved": "urn:visionflow:linked:edge-computing", "kind": "ResolvedLink"},
-    {"raw": "[[WebAssembly]]", "resolved": "urn:visionflow:linked:webassembly", "kind": "ResolvedLink"},
-    {"raw": "[[Immutable Infrastructure]]", "resolved": "urn:visionflow:linked:immutable-infrastructure", "kind": "ResolvedLink"},
-    {"raw": "[[GitOps]]", "resolved": "urn:visionflow:linked:gitops", "kind": "ResolvedLink"},
-    {"raw": "[[Distributed System]]", "resolved": "urn:visionflow:linked:distributed-system", "kind": "ResolvedLink"},
-    {"raw": "[[Container Security]]", "resolved": "urn:visionflow:linked:container-security", "kind": "ResolvedLink"},
-    {"raw": "[[Software Supply Chain]]", "resolved": "urn:visionflow:linked:software-supply-chain", "kind": "ResolvedLink"},
-    {"raw": "[[Platform Engineering]]", "resolved": "urn:visionflow:linked:platform-engineering", "kind": "ResolvedLink"},
-    {"raw": "[[Infrastructure as Code]]", "resolved": "urn:visionflow:linked:infrastructure-as-code", "kind": "ResolvedLink"},
-    {"raw": "[[eBPF]]", "resolved": "urn:visionflow:linked:ebpf", "kind": "ResolvedLink"},
-    {"raw": "[[Scalability]]", "resolved": "urn:visionflow:linked:scalability", "kind": "ResolvedLink"},
-    {"raw": "[[Fault Tolerance]]", "resolved": "urn:visionflow:linked:fault-tolerance", "kind": "ResolvedLink"},
-    {"raw": "[[High Availability]]", "resolved": "urn:visionflow:linked:high-availability", "kind": "ResolvedLink"},
-    {"raw": "[[Reproducibility]]", "resolved": "urn:visionflow:linked:reproducibility", "kind": "ResolvedLink"},
-    {"raw": "[[Cloud Native Computing Foundation]]", "resolved": "urn:visionflow:linked:cloud-native-computing-foundation", "kind": "ResolvedLink"},
-    {"raw": "[[vLLM]]", "resolved": "urn:visionflow:linked:vllm", "kind": "ResolvedLink"},
-    {"raw": "[[Kubeflow]]", "resolved": "urn:visionflow:linked:kubeflow", "kind": "ResolvedLink"},
-    {"raw": "[[containerd]]", "resolved": "urn:visionflow:linked:containerd", "kind": "ResolvedLink"},
-    {"raw": "[[CRI-O]]", "resolved": "urn:visionflow:linked:cri-o", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
-}
-```
-
 - ### Definition
   - A **Container** is a lightweight, portable, and isolated runtime package that bundles an application binary together with all its runtime dependencies — shared libraries, configuration files, environment variables, and supporting tools — into a single [[Deployment Artifact]] that executes consistently across heterogeneous computing environments. Unlike [[Virtualization|virtual machines]] that emulate complete hardware stacks and run a full guest operating system per workload, containers exploit [[Linux Kernel]] primitives — specifically [[Namespaces]] for isolation of process identifiers, network interfaces, mount points, inter-process communication, and user IDs, and [[Control Groups]] (cgroups) for enforcement of resource limits on CPU, memory, I/O, and network bandwidth — to provide process-level isolation while sharing a single host kernel. This architectural choice results in start times measured in milliseconds rather than seconds, memory overhead measured in megabytes rather than gigabytes, and density ratios of tens to hundreds of containers per host rather than the handful feasible with full [[Virtualization]]. The [[Open Container Initiative]] (OCI), established in 2015 under the Linux Foundation, standardised the container image format (OCI Image Specification) and runtime behaviour (OCI Runtime Specification, v1.3.0 released November 2025) so that images built with any conformant toolchain run correctly on any conformant runtime — [[containerd]], [[CRI-O]], and the runc low-level runtime being the dominant implementations. Containers are built from [[Container Image|images]], which are layered, content-addressable, immutable filesystem snapshots; layers from base images are cached and shared across containers, dramatically reducing storage and transfer costs while preserving [[Reproducibility]]. [[Container Registry|Container registries]] (Docker Hub, GitHub Container Registry, Amazon ECR, Google Artifact Registry) serve as distribution infrastructure for versioned images. At production scale, containers are managed by container [[Orchestration]] platforms, predominantly [[Kubernetes]], which schedules containers across node clusters, provides service discovery, load balancing, health checking, rolling update strategies, and horizontal pod autoscaling. The container model is foundational to [[Cloud Native]] application design and is the standard deployment unit for [[Microservices Architecture]], [[MLOps]] inference serving, and [[CI/CD]] automation pipelines, having achieved 92% adoption among IT professionals by 2026 according to Docker's annual survey.
 
@@ -445,7 +523,7 @@ public: true
     ```
     The formal ontology for [[Container]] captures both the structural composition (image layers, runtime, registry) and the operational affordances (isolation, portability, scalability) as first-class OWL object property restrictions. The `reducesTo` family encodes the key insight that a container, at its irreducible computational level, is a [[Linux Kernel]] process operating within a bounded set of namespace scopes and cgroup resource constraints — the OCI Image and runtime specifications being the contractual layer that abstracts these kernel primitives for the application developer. The `contrastsWith` family formalises the substitutability boundary: [[Virtualization]] (VMs) and containers share the goal of workload isolation but differ on the isolation mechanism (hypervisor vs. shared kernel), resource overhead, start latency, and kernel privilege model; [[WebAssembly]] modules and containers share the goal of portable, sandboxed execution but differ on the security model (capability-based vs. namespace-based), POSIX surface coverage, and ecosystem maturity; [[Serverless]] and containers share the goal of elastic scaling but differ on state persistence, cold-start latency, and operational control granularity. The `standardisedBy` axioms link the class to the governance bodies responsible for its specification evolution, enabling automated reasoning over standards compliance and audit obligations in regulated deployment contexts.
   - ## About
-    - Containers represent a convergence of decades of Unix process isolation research into a practical, developer-friendly packaging and execution model. The conceptual lineage runs from chroot jails (1979, BSD Unix), through FreeBSD jails (2000), Solaris Zones (2004), OpenVZ/Linux VServer (2001–2005), and Google's internal Borg system, to the pivotal moment in March 2013 when Solomon Hykes demonstrated [[Docker Containerisation Platform]] at PyCon US. Docker's innovation was not inventing container isolation — the [[Linux Kernel]] [[Namespaces]] and [[Control Groups]] primitives had existed since 2007–2013 — but rather encapsulating them behind a coherent image format, a layer-caching build system (Dockerfile), a public registry (Docker Hub), and a developer-friendly CLI. This combination ignited the container revolution: within two years Docker had tens of millions of image pulls per day and had reshaped cloud application architecture entirely. Before Docker, deploying an application reliably across development, staging, and production environments required painstaking manual synchronisation of library versions, system configurations, and service dependencies — a problem so endemic that "works on my machine" was a standard deflection between development and operations teams. Docker's layered image format — each Dockerfile instruction producing an immutable, cached, content-addressable filesystem layer — made the entire dependency graph of an application deterministic, portable, and auditable in a single artifact that could be pushed to a registry and pulled anywhere.
+    - Containers represent a convergence of decades of Unix process isolation research into a practical, developer-friendly packaging and execution model. The conceptual lineage runs from chroot jails (1979, BSD Unix), through FreeBSD jails (2000), Solaris Zones (2004), OpenVZ/Linux VServer (2001–2005), and Google's internal Borg system, to the pivotal moment in March 2013 when Solomon Hykes demonstrated [[Docker Containerisation Platform]] at PyCon US. Docker's innovation was not inventing container isolation — the [[Linux Kernel]] [[Namespaces]] and [[Control Groups]] primitives had existed since 2007–2013 — but rather encapsulating them behind a coherent image format, a layer-caching build system (Dockerfile), a public registry (Docker Hub), and a developer-friendly CLI. This combination ignited the container revolution: within two years Docker had tens of millions of image pulls per day and had reshaped cloud application architecture entirely. Before Docker, deploying an application reliably across development, staging, and production environments required painstaking manual synchronisation of library versions, system configurations, and service dependencies — a problem so endemic that "works on my machine" was a standard deflection between development and operations teams. Docker's layered image format — each Dockerfile instruction producing an immutable, cached, content-addressable filesystem layer — made the entire dependency graph of an application deterministic, portable, and auditable in a single artifact that [private] be pushed to a registry and pulled anywhere.
 
     - The technical architecture of the container model rests on two distinct [[Linux Kernel]] subsystems that were developed independently over more than a decade before Docker unified them. [[Namespaces]], introduced incrementally from Linux 2.4.19 (mount namespaces, 2002) through Linux 3.8 (user namespaces, 2013), provide isolation of specific global system resources by creating per-process views: the pid namespace gives each container its own process tree rooted at PID 1; the net namespace provides an independent network stack with private IP address space, routing tables, and socket files; the mnt namespace creates an independent filesystem mount hierarchy; the ipc namespace isolates System V IPC objects and POSIX message queues; the uts namespace allows each container to have its own hostname and domain name; and the user namespace maps container UIDs/GIDs to host UIDs/GIDs, enabling rootless containers where container processes appear as root inside the namespace but map to unprivileged host UIDs. [[Control Groups]] (cgroups), introduced in Linux 2.6.24 (2008) by Rohit Seth and Paul Menage, provide hierarchical resource accounting and enforcement: cpu cgroup enforces CPU shares and CFS scheduler quotas; memory cgroup enforces memory limits, swap limits, and triggers OOM-kill when a container exceeds its budget; blkio cgroup throttles block I/O bandwidth and IOPS per container; net_cls and net_prio cgroups tag and prioritise network traffic. The cgroups v2 unified hierarchy (Linux 5.2, 2019) replaced the fragmented v1 model with a single, coherent resource tree that is now the default on all major distributions and is required by the OCI Runtime Specification for consistent behaviour.
 

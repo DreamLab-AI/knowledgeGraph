@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cryptographic Key
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -222,62 +217,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cryptographic-key:b00a39e87803",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b894413392657ae5acc21d62b8c291bb544fbdfd1f6590857efe3bf95ae1f340"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Encryption]]",
-      "resolved": "urn:visionflow:linked:encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:linked:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Public Key Infrastructure]]",
-      "resolved": "urn:visionflow:linked:public-key-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Private Key]]",
-      "resolved": "urn:visionflow:linked:private-key",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Key Management]]",
-      "resolved": "urn:visionflow:linked:key-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://csrc.nist.gov/glossary/term/cryptographic_key]]",
-      "resolved": "urn:visionflow:linked:https-csrc-nist-gov-glossary-term-cryptographic-key",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A piece of secret or public information that parameterises a cryptographic algorithm, determining how data is encrypted, decrypted or signed. Keys are the inputs that make cryptographic operations specific and reversible only to authorised parties.

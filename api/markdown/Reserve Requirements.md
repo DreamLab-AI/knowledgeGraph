@@ -1,39 +1,122 @@
----
-public: true
----
-
-# Reserve Requirements
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:reserve-requirements", "@type":"Page", "title":"Reserve Requirements", "vc:slug":"reserve-requirements", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:reserve-requirements",
+  "@type": "Page",
+  "title": "Reserve Requirements",
+  "vc:slug": "reserve-requirements",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:reserve-requirements",
-  "@type":"Class",
-  "label":"Reserve Requirements",
-  "definition":"Reserve requirements are central-bank rules obliging commercial banks to hold a minimum fraction of their deposit liabilities as reserves, either as vault cash or as balances at the central bank. By constraining the proportion of deposits banks may lend, they influence credit creation, money supply and bank liquidity. They are a classic monetary-policy instrument, though many modern central banks now rely more on interest-rate tools.",
-  "domain":"finance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:fractional-reserve-banking","label":"Fractional Reserve Banking"}],
-    "partOf":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}],
-    "uses":[{"@id":"urn:ngm:class:central-banking","label":"Central Banking"}],
-    "enables":[{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"}],
-    "supports":[{"@id":"urn:ngm:class:financial-stability","label":"Financial Stability"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "dependsOn":[{"@id":"urn:ngm:class:central-banking","label":"Central Banking"}],
-    "requires":[{"@id":"urn:ngm:class:banking-regulation","label":"Banking Regulation"}],
-    "implements":[{"@id":"urn:ngm:class:monetary-policy","label":"Monetary Policy"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:open-market-operations","label":"Open Market Operations"},{"@id":"urn:ngm:class:interest-rate-policy","label":"Interest Rate Policy"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:basel-iii","label":"Basel III"}],
-    "relatedTo":[{"@id":"urn:ngm:class:liquidity","label":"Liquidity"},{"@id":"urn:ngm:class:quantitative-easing","label":"Quantitative Easing"},{"@id":"urn:ngm:class:fractional-reserve-banking","label":"Fractional Reserve Banking"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:reserve-requirements",
+  "@type": "Class",
+  "label": "Reserve Requirements",
+  "definition": "Reserve requirements are central-bank rules obliging commercial banks to hold a minimum fraction of their deposit liabilities as reserves, either as vault cash or as balances at the central bank. By constraining the proportion of deposits banks may lend, they influence credit creation, money supply and bank liquidity. They are a classic monetary-policy instrument, though many modern central banks now rely more on interest-rate tools.",
+  "domain": "finance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fractional-reserve-banking",
+        "label": "Fractional Reserve Banking"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:banking-regulation",
+        "label": "Banking Regulation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate-policy",
+        "label": "Interest Rate Policy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "@id": "urn:ngm:class:fractional-reserve-banking",
+        "label": "Fractional Reserve Banking"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

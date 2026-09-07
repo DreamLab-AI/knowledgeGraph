@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Video Encoding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,52 @@ public: true
   "definition": "Video encoding is the process of compressing raw or lightly-compressed video frames into a deliverable bitstream using a video codec, encompassing decisions about encoding parameters (resolution, frame rate, bitrate mode, keyframe interval, codec profile and level), rate control algorithms, and hardware or software encoder selection to balance output quality, file size, and encoding speed for a given delivery target.",
   "domain": "metaverse",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:video-codec", "label": "Video Codec"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:video-codec",
+      "label": "Video Codec"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:computer-vision-video-analysis", "label": "Computer Vision Video Analysis"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-video-analysis",
+        "label": "Computer Vision Video Analysis"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cdn", "label": "CDN"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
-      {"@id": "urn:ngm:class:bandwidth-optimization", "label": "Bandwidth Optimization"}
+      {
+        "@id": "urn:ngm:class:cdn",
+        "label": "CDN"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decoder", "label": "Decoder"},
-      {"@id": "urn:ngm:class:content-creation-pipeline", "label": "Content Creation Pipeline"}
+      {
+        "@id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"}
+      {
+        "@id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      }
     ]
   },
   "quality": 0.8
@@ -62,4 +86,3 @@ public: true
   - Live video encoding for broadcast, streaming, and conferencing imposes strict latency constraints that preclude many quality-optimising search passes used in VOD encoding. Low-latency live encoders (x264 ultrafast preset, NVENC, Intel Quick Sync) sacrifice coding efficiency for speed, whilst hardware encoders in cameras (Sony, Blackmagic, AJA) provide broadcast-quality H.264 or HEVC at sub-frame latency. WebRTC video conferencing uses VP8 and VP9 (or AV1 in newer clients) with aggressive rate adaptation to handle network variability.
 
   - By 2024–2025, AV1 encoding has become mainstream for VOD at major platforms. SVT-AV1 (Intel's scalable encoder) and ab-av1 tooling enable practical AV1 encoding on consumer hardware. NVIDIA's ADA Lovelace and later GPU generations include AV1 hardware encoders, dramatically reducing cost. AI-based pre-processing — super-resolution upscaling, noise reduction, content-aware scene analysis — is being integrated into encoding pipelines to improve quality at fixed bitrate, with providers offering neural enhancement as a premium encoding tier.
-

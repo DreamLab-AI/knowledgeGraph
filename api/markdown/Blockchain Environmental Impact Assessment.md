@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Environmental Impact Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -223,157 +218,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:blockchain-environmental-impact-assessment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1d996f1366c0426554501b4d5b5e04674fe6bf61925193ec091257e49f1a850d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Energy Optimisation]]",
-      "resolved": "urn:visionflow:linked:ai-energy-optimisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitcoin Mining Council]]",
-      "resolved": "urn:visionflow:linked:bitcoin-mining-council",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cambridge Centre for Alternative Finance (CCAF)]]",
-      "resolved": "urn:visionflow:linked:cambridge-centre-for-alternative-finance-ccaf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CarbonEmissionsCalculation]]",
-      "resolved": "urn:visionflow:linked:carbon-emissions-calculation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DataCenterMetrics]]",
-      "resolved": "urn:visionflow:linked:data-center-metrics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EnergyConsumptionMeasurement]]",
-      "resolved": "urn:visionflow:linked:energy-consumption-measurement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EnergyMix]]",
-      "resolved": "urn:visionflow:linked:energy-mix",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EnvironmentalDomain]]",
-      "resolved": "urn:visionflow:linked:infra-legal-and-regulatory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ethereum Foundation]]",
-      "resolved": "urn:visionflow:linked:ethereum-foundation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EWasteAnalysis]]",
-      "resolved": "urn:visionflow:linked:ewaste-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[HardwareInventory]]",
-      "resolved": "urn:visionflow:linked:hardware-inventory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[International Energy Agency (IEA)]]",
-      "resolved": "urn:visionflow:linked:international-energy-agency-iea",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InvestorDisclosure]]",
-      "resolved": "urn:visionflow:linked:investor-disclosure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 14040 Life Cycle Assessment]]",
-      "resolved": "urn:visionflow:linked:iso-14040-life-cycle-assessment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[LifeCycleAssessment]]",
-      "resolved": "urn:visionflow:linked:life-cycle-assessment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ScopeDefinition]]",
-      "resolved": "urn:visionflow:linked:scope-definition",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SustainabilityMetric]]",
-      "resolved": "urn:visionflow:linked:sustainability-metric",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SustainabilityReporting]]",
-      "resolved": "urn:visionflow:linked:sustainability-reporting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[WaterUsageTracking]]",
-      "resolved": "urn:visionflow:linked:water-usage-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainGovernance]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CarbonAccounting]]",
-      "resolved": "urn:visionflow:owl:class:carbon-accounting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConsensusAlgorithm]]",
-      "resolved": "urn:visionflow:owl:class:consensus-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EnvironmentalAssessment]]",
-      "resolved": "urn:visionflow:owl:class:environmental-assessment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NetworkHashRate]]",
-      "resolved": "urn:visionflow:owl:class:network-hash-rate",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RegulatoryCompliance]]",
-      "resolved": "urn:visionflow:owl:class:regulatory-compliance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A systematic evaluation methodology for measuring, analyzing, and reporting the environmental consequences of blockchain network operations, encompassing energy consumption measurement (electricity usage per transaction, annual network consumption), carbon emissions calculation (CO₂e from electricity generation mix), e-waste generation (hardware lifecycle and disposal), water consumption (data center cooling), and broader ecological impacts, with standardized frameworks including Life Cycle Assessment (ISO 14040/14044), Cambridge Centre for Alternative Finance methodologies, and blockchain-specific metrics for comparing consensus mechanisms (Proof-of-Work vs Proof-of-Stake environmental profiles).
@@ -605,11 +449,11 @@ public: true
 
   ### Research Priorities and Open Questions
 
-  **Dynamic Life Cycle Assessment**: Traditional LCA assumes static systems, but blockchain energy consumption fluctuates hourly with hash rate, difficulty adjustments, and hardware deployments. Real-time LCA integrating IoT sensor networks and smart contracts could enable **adaptive governance**: automatically throttle transaction fees during fossil-heavy grid hours, incentivize Layer 2 routing during renewable surplus.
+  **Dynamic Life Cycle Assessment**: Traditional LCA assumes static systems, but blockchain energy consumption fluctuates hourly with hash rate, difficulty adjustments, and hardware deployments. Real-time LCA integrating IoT sensor networks and smart contracts [private] enable **adaptive governance**: automatically throttle transaction fees during fossil-heavy grid hours, incentivize Layer 2 routing during renewable surplus.
 
   **Consensus Mechanism Innovation**: Beyond PoW/PoS dichotomy, novel consensus explores energy-minimization: **Proof-of-Storage** (Filecoin, Arweave) leverages existing data storage rather than purposeless hashing, **Proof-of-History** (Solana) uses verifiable delay functions reducing validator coordination overhead. Environmental assessments must evaluate trade-offs: lower energy consumption versus centralization risks, security assumptions, attack resilience.
 
-  **Circular Economy for Mining Hardware**: ASIC e-waste grows 15-20%/year as efficiency improvements accelerate obsolescence. **Modular ASIC designs** enabling chip-level upgrades (replace hashing cores, retain power supplies/cooling) could extend lifecycles 5-10 years. **ASIC repurposing** for AI inference (tensor operations similar to SHA-256) or scientific computing could create secondary markets, though cryptographic specificity limits applicability.
+  **Circular Economy for Mining Hardware**: ASIC e-waste grows 15-20%/year as efficiency improvements accelerate obsolescence. **Modular ASIC designs** enabling chip-level upgrades (replace hashing cores, retain power supplies/cooling) [private] extend lifecycles 5-10 years. **ASIC repurposing** for AI inference (tensor operations similar to SHA-256) or scientific computing [private] create secondary markets, though cryptographic specificity limits applicability.
 
   **Carbon Accounting Standards**: Scope 1/2/3 categorization unclear for blockchain: mining operations (Scope 1/2) versus transaction usage (Scope 3)? Companies purchasing NFTs or using DeFi protocols—should they report proportional network emissions (unfeasible for decentralized networks) or transaction-based allocation (misleading given security derives from blocks, not transactions)? GHG Protocol guidance pending (2025-2026).
 

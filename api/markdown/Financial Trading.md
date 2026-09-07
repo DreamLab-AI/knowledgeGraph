@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Financial Trading
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralized-exchange-dex", "label": "Decentralized Exchange (DEX)"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange-dex",
+        "label": "Decentralized Exchange (DEX)"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:marketplace", "label": "Marketplace"}
+      {
+        "@id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:transaction-standard", "label": "Transaction Standard"}
+      {
+        "@id": "urn:ngm:class:transaction-standard",
+        "label": "Transaction Standard"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:financial-trading:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:315a700b43294425f0b93767ff076ef051a5bce80cc69ee17d83a4f2d7e88b38"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The exchange of financial instruments—including equities, derivatives, cryptocurrencies, and digital assets—within regulated or decentralised markets. In the metaverse and spatial computing context, financial trading encompasses algorithmic and AI-driven trading of virtual assets, NFTs, and tokenised real-world assets through smart-contract-enabled marketplaces and decentralised exchanges.

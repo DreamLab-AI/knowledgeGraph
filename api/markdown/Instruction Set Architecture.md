@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Instruction Set Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -133,6 +129,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - An Instruction Set Architecture (ISA) is the abstract contract between hardware and software that defines the instructions a processor can execute, its registers, data types, addressing modes and memory model. It is the stable interface that allows compilers and operating systems to target a processor family without knowing its microarchitectural implementation. Examples include x86, ARM and the open RISC-V ISA, each balancing complexity, power efficiency and ecosystem support.
   - Related core concepts: [[CPU]] [[Compiler]] [[Operating System]] [[Virtual Machine]] [[Parallel Computing]]

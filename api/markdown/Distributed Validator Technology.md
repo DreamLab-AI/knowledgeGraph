@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Distributed Validator Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

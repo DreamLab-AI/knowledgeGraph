@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0048 pid controller
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"},
-      {"@id": "urn:ngm:class:rb-0063-sliding-mode-control", "label": "rb 0063 sliding mode control"},
-      {"@id": "urn:ngm:class:rb-0060-optimal-control", "label": "rb 0060 optimal control"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+      {
+        "@id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0063-sliding-mode-control",
+        "label": "rb 0063 sliding mode control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0060-optimal-control",
+        "label": "rb 0060 optimal control"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"},
-      {"@id": "urn:ngm:class:rb-0055-velocity-control", "label": "rb 0055 velocity control"}
+      {
+        "@id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0055-velocity-control",
+        "label": "rb 0055 velocity control"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0062-model-predictive-control", "label": "rb 0062 model predictive control"}
+      {
+        "@id": "urn:ngm:class:rb-0062-model-predictive-control",
+        "label": "rb 0062 model predictive control"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"}
+      {
+        "@id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0048-pid-controller:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:acac8db9ba783687757c24a087803bbfabe53494e557e8636d38be21d17cc5fd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A PID controller computes a control output as the weighted sum of proportional, integral, and derivative terms applied to the error between the desired setpoint and measured process variable. The proportional gain Kp determines the response to current error; the integral gain Ki eliminates steady-state offset; and the derivative gain Kd damps oscillations. Tuning methods range from empirical approaches (Ziegler-Nichols) to model-based techniques. In robot joint control, individual PID loops are typically run at 1–10 kHz for each degree of freedom.

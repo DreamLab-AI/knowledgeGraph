@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Externally Owned Account
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,40 +20,90 @@ public: true
   "definition": "An Externally Owned Account (EOA) is a type of Ethereum account controlled by a private key held outside the blockchain — typically by an end user via a wallet — as opposed to a contract account controlled by smart contract code. EOAs can initiate transactions, sign messages, and hold ether and tokens; they have no associated code. Every Ethereum transaction must originate from an EOA, making them the fundamental actor type in the Ethereum account model.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-wallet", "label": "Blockchain Wallet"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-wallet",
+      "label": "Blockchain Wallet"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain-identity", "label": "Blockchain Identity"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:off-chain-governance", "label": "Off Chain Governance"},
-      {"@id": "urn:ngm:class:finance", "label": "Finance"}
+      {
+        "@id": "urn:ngm:class:off-chain-governance",
+        "label": "Off Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:session-key", "label": "Session Key"},
-      {"@id": "urn:ngm:class:blockchain-identity", "label": "Blockchain Identity"}
+      {
+        "@id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-wallet", "label": "Blockchain Wallet"}
+      {
+        "@id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ]
   },
   "quality": 0.62,

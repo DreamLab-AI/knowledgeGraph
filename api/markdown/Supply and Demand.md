@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Supply and Demand
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Supply and Demand",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:economics", "vc:label": "Economics"},
-    {"@id": "urn:visionflow:linked:microeconomics", "vc:label": "Microeconomics"},
-    {"@id": "urn:visionflow:linked:price-discovery", "vc:label": "Price Discovery"},
-    {"@id": "urn:visionflow:linked:exchange-rate", "vc:label": "Exchange Rate"}
+    {
+      "@id": "urn:visionflow:linked:economics",
+      "vc:label": "Economics"
+    },
+    {
+      "@id": "urn:visionflow:linked:microeconomics",
+      "vc:label": "Microeconomics"
+    },
+    {
+      "@id": "urn:visionflow:linked:price-discovery",
+      "vc:label": "Price Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:exchange-rate",
+      "vc:label": "Exchange Rate"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,14 +50,26 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:microeconomics", "label": "Microeconomics"}
+      {
+        "@id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:price-discovery", "label": "Price Discovery"}
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:exchange-rate", "label": "Exchange Rate"},
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
+      {
+        "@id": "urn:ngm:class:exchange-rate",
+        "label": "Exchange Rate"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
     ]
   },
   "quality": 0.8,

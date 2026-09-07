@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Resilience
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,32 +167,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:resilience:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9c777ed59faf6babc91f58d1c7fb6edace508e08fb686177a45e23e7bcbc9a99"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The capacity of a system, network, or organisation to anticipate, withstand, recover from, and adapt to adverse conditions, attacks, or failures whilst maintaining essential functions. In distributed and blockchain contexts, resilience is achieved through decentralisation, redundancy, byzantine fault tolerance, and adaptive response mechanisms.

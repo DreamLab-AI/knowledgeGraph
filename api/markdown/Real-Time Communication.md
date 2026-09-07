@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time Communication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -201,46 +196,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:real-time-communication:2c2eed253ca8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:82fd72376ee7577dedef8f39d2770f137ae2d54601c4ce5fd1df00d4d455d720"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[WebRTC]]",
-      "resolved": "urn:visionflow:linked:web-rtc",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Video Compression]]",
-      "resolved": "urn:visionflow:linked:video-compression",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Wireless Connectivity]]",
-      "resolved": "urn:visionflow:linked:wireless-connectivity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Communication Protocol]]",
-      "resolved": "urn:visionflow:linked:communication-protocol",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Real-time communication (RTC) is the exchange of audio, video, and arbitrary data between endpoints with latency low enough to support interactive, synchronous engagement. Unlike [[Asynchronous Messaging]], RTC requires continuous, bidirectional media flows where perceptible delay — typically any end-to-end path above 150 ms — degrades the conversational experience. Modern RTC encompasses browser-native peer-to-peer sessions via [[WebRTC]], carrier-grade telephony built on [[Session Initiation Protocol]] and [[Real-Time Transport Protocol]], and low-latency data channels used in collaborative tools, cloud gaming, and distributed control systems. Quality of service is governed by [[Congestion Control]], [[Forward Error Correction]], jitter buffering, and adaptive bitrate strategies that respond to fluctuating [[Network Latency]] and packet loss.
 
@@ -331,7 +286,7 @@ public: true
   - 2. Cloudflare (2025). MoQ: Refactoring the Internet's real-time media stack (first production MoQ relay network across 330+ cities). https://blog.cloudflare.com/moq/
   - 3. Digital Samba (2026). Media over QUIC (MoQ) Explained — Streaming Guide 2026. https://www.digitalsamba.com/blog/media-over-quic-explained
   - 4. Fora Soft (2026). Media over QUIC: 2026 Architecture & Migration Guide (WebTransport Baseline, draft-18, production deployments). https://www.forasoft.com/blog/article/moq-application-development-architecture
-  - 5. OpenAI (2025). Introducing gpt-realtime and Realtime API updates — general availability with SIP and WebRTC. https://openai.com/index/introducing-gpt-realtime/
+  - 5. OpenAI (2025). Introducing gpt-realtime and Realtime API updates — general availability with SIP and WebRTC. https://openai.com/[private]/introducing-gpt-realtime/
   - 6. Fora Soft (2026). Best Technologies for Video Streaming Apps 2026 — WHIP (RFC 9725), AV1 adoption, MoQ production pilots. https://www.forasoft.com/blog/article/best-technologies-video-streaming-app-2024
 
 - ### Provenance

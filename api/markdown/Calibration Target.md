@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Calibration Target
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -223,67 +218,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:calibration-target:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c3f34c826744c596be63019f2ac87bbb6e0e487cd2c093220c32107ce762c71c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Camera Calibration]]",
-      "resolved": "urn:visionflow:linked:camera-calibration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Color Accuracy]]",
-      "resolved": "urn:visionflow:linked:color-accuracy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Flatness Control]]",
-      "resolved": "urn:visionflow:linked:flatness-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Lens Distortion Correction]]",
-      "resolved": "urn:visionflow:linked:lens-distortion-correction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Pattern Definition]]",
-      "resolved": "urn:visionflow:linked:pattern-definition",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Precision Manufacturing]]",
-      "resolved": "urn:visionflow:linked:precision-manufacturing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reference Standard]]",
-      "resolved": "urn:visionflow:owl:class:reference-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A physical or displayed reference pattern with precisely known geometric, photometric, or colorimetric properties used to determine camera intrinsic and extrinsic parameters, enabling accurate lens distortion correction, spatial measurement, and color reproduction in imaging systems.

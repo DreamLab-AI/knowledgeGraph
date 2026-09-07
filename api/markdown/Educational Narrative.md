@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Educational Narrative
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:educational-narrative:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:023adf4150ba9f4d7171f92459466fd9c95e0fc9a6443b3eb331a9af1d62530a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Personalised Learning]]",
-      "resolved": "urn:visionflow:linked:personalised-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Immersive Learning]]",
-      "resolved": "urn:visionflow:owl:class:immersive-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.

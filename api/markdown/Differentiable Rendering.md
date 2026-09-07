@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DifferentiableRendering
----
-
-# differentiable rendering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -267,7 +260,7 @@ aliases:
 
   Differentiable rendering resolves this by replacing or wrapping the offending discontinuities with gradient-compatible alternatives. The four major strategies — soft approximation, stochastic estimation, implicit neural reformulation, and primitive splatting — span a spectrum from near-exact physical simulation (Mitsuba 3 with edge sampling) to highly approximate but trainable neural surrogates ([[Neural Radiance Field]], [[Gaussian Splatting]]). Each strategy unlocks a different part of the scene-understanding and scene-generation landscape. Together they have catalysed a decade of breakthroughs in [[Computer Vision]], [[Augmented Reality]], robotics, and generative 3D content creation that was previously impossible without large amounts of ground-truth 3D annotation.
 
-  The historical trajectory of differentiable rendering begins with OpenDR (Loper and Black, 2014), the first general-purpose differentiable renderer for fitting 3D models to images, followed by Neural Mesh Renderer (Kato et al. 2018, CVPR), which introduced a soft rasterisation approximation enabling gradient-based mesh reconstruction. SoftRas (Liu et al. 2019, ICCV) refined the soft edge model and provided analytic gradients for all geometric parameters. DIB-R (Chen et al. 2019) extended this to support texture and lighting, and NVDiffRast (Laine et al. 2020, NeurIPS) demonstrated that carefully engineered CUDA kernels could make near-exact rasterisation gradients available at production performance. The differentiable path-tracing direction culminated in Mitsuba 3 (Jakob et al. 2022, SIGGRAPH), which implemented adjoint-based gradient computation through complete light-transport simulation including global illumination, soft shadows, subsurface scattering, and participating media. Meanwhile, the neural reformulation direction exploded with [[Neural Radiance Field]] (Mildenhall et al. 2020, ECCV) and its hundreds of successors, and then with [[Gaussian Splatting]] (Kerbl et al. 2023, SIGGRAPH), which returned to explicit scene representations but with a fully differentiable rasterisation pipeline for gradient flow.
+  The historical trajectory of differentiable rendering begins with OpenDR (Loper and Black, 2014), the first general-purpose differentiable renderer for fitting 3D models to images, followed by Neural Mesh Renderer (Kato et al. 2018, CVPR), which introduced a soft rasterisation approximation enabling gradient-based mesh reconstruction. SoftRas (Liu et al. 2019, ICCV) refined the soft edge model and provided analytic gradients for all geometric parameters. DIB-R (Chen et al. 2019) extended this to support texture and lighting, and NVDiffRast (Laine et al. 2020, NeurIPS) demonstrated that carefully engineered CUDA kernels [private] make near-exact rasterisation gradients available at production performance. The differentiable path-tracing direction culminated in Mitsuba 3 (Jakob et al. 2022, SIGGRAPH), which implemented adjoint-based gradient computation through complete light-transport simulation including global illumination, soft shadows, subsurface scattering, and participating media. Meanwhile, the neural reformulation direction exploded with [[Neural Radiance Field]] (Mildenhall et al. 2020, ECCV) and its hundreds of successors, and then with [[Gaussian Splatting]] (Kerbl et al. 2023, SIGGRAPH), which returned to explicit scene representations but with a fully differentiable rasterisation pipeline for gradient flow.
 
   ## Key Mechanisms
 

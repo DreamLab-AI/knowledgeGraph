@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agentic Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "agentic-architecture",
   "title": "Agentic Architecture",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Continuous Learning", "Modular AI"],
+  "vc:outboundWikilinks": [
+    "Continuous Learning",
+    "Modular AI"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-architecture",
+      "label": "Model Architecture"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}, {"@id": "urn:ngm:class:modular-ai", "label": "Modular AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:modular-ai",
+        "label": "Modular AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

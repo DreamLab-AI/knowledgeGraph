@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Audio Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,48 +7,174 @@ public: true
   "title": "Audio Processing",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:digital-signal-processing", "vc:label": "Digital Signal Processing"},
-    {"@id": "urn:visionflow:linked:signal-processing", "vc:label": "Signal Processing"},
-    {"@id": "urn:visionflow:linked:fourier-analysis", "vc:label": "Fourier Analysis"},
-    {"@id": "urn:visionflow:linked:fast-fourier-transform", "vc:label": "Fast Fourier Transform"},
-    {"@id": "urn:visionflow:linked:nyquist-shannon-sampling-theorem", "vc:label": "Nyquist-Shannon Sampling Theorem"},
-    {"@id": "urn:visionflow:linked:audio-codec", "vc:label": "Audio Codec"},
-    {"@id": "urn:visionflow:linked:noise-cancellation", "vc:label": "Noise Cancellation"},
-    {"@id": "urn:visionflow:linked:audio-feature-extraction", "vc:label": "Audio Feature Extraction"},
-    {"@id": "urn:visionflow:linked:analogue-to-digital-conversion", "vc:label": "Analogue-to-Digital Conversion"},
-    {"@id": "urn:visionflow:linked:spectrogram", "vc:label": "Spectrogram"},
-    {"@id": "urn:visionflow:linked:psychoacoustics", "vc:label": "Psychoacoustics"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:text-to-speech", "vc:label": "Text-to-Speech"},
-    {"@id": "urn:visionflow:linked:music-generation", "vc:label": "Music Generation"},
-    {"@id": "urn:visionflow:linked:voice-activity-detection", "vc:label": "Voice Activity Detection"},
-    {"@id": "urn:visionflow:linked:spatial-audio-system", "vc:label": "Spatial Audio System"},
-    {"@id": "urn:visionflow:linked:immersive-audio-system", "vc:label": "Immersive Audio System"},
-    {"@id": "urn:visionflow:linked:audio-spatialisation", "vc:label": "Audio Spatialisation"},
-    {"@id": "urn:visionflow:linked:spatial-audio", "vc:label": "Spatial Audio"},
-    {"@id": "urn:visionflow:linked:extended-reality", "vc:label": "Extended Reality"},
-    {"@id": "urn:visionflow:linked:music-information-retrieval", "vc:label": "Music Information Retrieval"},
-    {"@id": "urn:visionflow:linked:multimedia-processing", "vc:label": "Multimedia Processing"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:human-computer-interaction", "vc:label": "Human-Computer Interaction"},
-    {"@id": "urn:visionflow:linked:telecommunications", "vc:label": "Telecommunications"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:audio-parameters", "vc:label": "Audio Parameters"},
-    {"@id": "urn:visionflow:linked:mpeg-h-audio", "vc:label": "MPEG-H Audio"},
-    {"@id": "urn:visionflow:linked:opus-codec", "vc:label": "Opus Codec"},
-    {"@id": "urn:visionflow:linked:image-processing", "vc:label": "Image Processing"},
-    {"@id": "urn:visionflow:linked:analogue-signal-processing", "vc:label": "Analogue Signal Processing"},
-    {"@id": "urn:visionflow:linked:audio-processing-system", "vc:label": "Audio Processing System"},
-    {"@id": "urn:visionflow:linked:audio-generation", "vc:label": "Audio Generation"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:source-separation", "vc:label": "Source Separation"},
-    {"@id": "urn:visionflow:linked:residual-vector-quantisation", "vc:label": "Residual Vector Quantisation"},
-    {"@id": "urn:visionflow:linked:waveform", "vc:label": "Waveform"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"}
+    {
+      "@id": "urn:visionflow:linked:digital-signal-processing",
+      "vc:label": "Digital Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:signal-processing",
+      "vc:label": "Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:fourier-analysis",
+      "vc:label": "Fourier Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:fast-fourier-transform",
+      "vc:label": "Fast Fourier Transform"
+    },
+    {
+      "@id": "urn:visionflow:linked:nyquist-shannon-sampling-theorem",
+      "vc:label": "Nyquist-Shannon Sampling Theorem"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-codec",
+      "vc:label": "Audio Codec"
+    },
+    {
+      "@id": "urn:visionflow:linked:noise-cancellation",
+      "vc:label": "Noise Cancellation"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-feature-extraction",
+      "vc:label": "Audio Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:analogue-to-digital-conversion",
+      "vc:label": "Analogue-to-Digital Conversion"
+    },
+    {
+      "@id": "urn:visionflow:linked:spectrogram",
+      "vc:label": "Spectrogram"
+    },
+    {
+      "@id": "urn:visionflow:linked:psychoacoustics",
+      "vc:label": "Psychoacoustics"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-speech",
+      "vc:label": "Text-to-Speech"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-generation",
+      "vc:label": "Music Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:voice-activity-detection",
+      "vc:label": "Voice Activity Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-audio-system",
+      "vc:label": "Spatial Audio System"
+    },
+    {
+      "@id": "urn:visionflow:linked:immersive-audio-system",
+      "vc:label": "Immersive Audio System"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-spatialisation",
+      "vc:label": "Audio Spatialisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-audio",
+      "vc:label": "Spatial Audio"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-reality",
+      "vc:label": "Extended Reality"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-information-retrieval",
+      "vc:label": "Music Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimedia-processing",
+      "vc:label": "Multimedia Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:telecommunications",
+      "vc:label": "Telecommunications"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-parameters",
+      "vc:label": "Audio Parameters"
+    },
+    {
+      "@id": "urn:visionflow:linked:mpeg-h-audio",
+      "vc:label": "MPEG-H Audio"
+    },
+    {
+      "@id": "urn:visionflow:linked:opus-codec",
+      "vc:label": "Opus Codec"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-processing",
+      "vc:label": "Image Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:analogue-signal-processing",
+      "vc:label": "Analogue Signal Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-processing-system",
+      "vc:label": "Audio Processing System"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-generation",
+      "vc:label": "Audio Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:source-separation",
+      "vc:label": "Source Separation"
+    },
+    {
+      "@id": "urn:visionflow:linked:residual-vector-quantisation",
+      "vc:label": "Residual Vector Quantisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:waveform",
+      "vc:label": "Waveform"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -234,58 +355,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:visionflow:page:audio-processing:link-resolutions",
-  "@type": "LinkResolutionsAnnotation",
-  "resolutions": [
-    {"raw": "Digital Signal Processing", "@id": "urn:visionflow:linked:digital-signal-processing", "kind": "ResolvedLink"},
-    {"raw": "Signal Processing", "@id": "urn:visionflow:linked:signal-processing", "kind": "ResolvedLink"},
-    {"raw": "Fourier Analysis", "@id": "urn:visionflow:linked:fourier-analysis", "kind": "ResolvedLink"},
-    {"raw": "Fast Fourier Transform", "@id": "urn:visionflow:linked:fast-fourier-transform", "kind": "ResolvedLink"},
-    {"raw": "Nyquist-Shannon Sampling Theorem", "@id": "urn:visionflow:linked:nyquist-shannon-sampling-theorem", "kind": "StubLink"},
-    {"raw": "Audio Codec", "@id": "urn:visionflow:linked:audio-codec", "kind": "ResolvedLink"},
-    {"raw": "Noise Cancellation", "@id": "urn:visionflow:linked:noise-cancellation", "kind": "ResolvedLink"},
-    {"raw": "Audio Feature Extraction", "@id": "urn:visionflow:linked:audio-feature-extraction", "kind": "ResolvedLink"},
-    {"raw": "Analogue-to-Digital Conversion", "@id": "urn:visionflow:linked:analogue-to-digital-conversion", "kind": "StubLink"},
-    {"raw": "Spectrogram", "@id": "urn:visionflow:linked:spectrogram", "kind": "ResolvedLink"},
-    {"raw": "Psychoacoustics", "@id": "urn:visionflow:linked:psychoacoustics", "kind": "StubLink"},
-    {"raw": "Speech Recognition", "@id": "urn:visionflow:linked:speech-recognition", "kind": "ResolvedLink"},
-    {"raw": "Text-to-Speech", "@id": "urn:visionflow:linked:text-to-speech", "kind": "ResolvedLink"},
-    {"raw": "Music Generation", "@id": "urn:visionflow:linked:music-generation", "kind": "ResolvedLink"},
-    {"raw": "Voice Activity Detection", "@id": "urn:visionflow:linked:voice-activity-detection", "kind": "StubLink"},
-    {"raw": "Spatial Audio System", "@id": "urn:visionflow:linked:spatial-audio-system", "kind": "StubLink"},
-    {"raw": "Immersive Audio System", "@id": "urn:visionflow:linked:immersive-audio-system", "kind": "StubLink"},
-    {"raw": "Audio Spatialisation", "@id": "urn:visionflow:linked:audio-spatialisation", "kind": "StubLink"},
-    {"raw": "Spatial Audio", "@id": "urn:visionflow:linked:spatial-audio", "kind": "ResolvedLink"},
-    {"raw": "Extended Reality", "@id": "urn:visionflow:linked:extended-reality", "kind": "ResolvedLink"},
-    {"raw": "Music Information Retrieval", "@id": "urn:visionflow:linked:music-information-retrieval", "kind": "ResolvedLink"},
-    {"raw": "Multimedia Processing", "@id": "urn:visionflow:linked:multimedia-processing", "kind": "StubLink"},
-    {"raw": "Natural Language Processing", "@id": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "Human-Computer Interaction", "@id": "urn:visionflow:linked:human-computer-interaction", "kind": "ResolvedLink"},
-    {"raw": "Telecommunications", "@id": "urn:visionflow:linked:telecommunications", "kind": "StubLink"},
-    {"raw": "Convolutional Neural Network", "@id": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "Transformer Architecture", "@id": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "Audio Parameters", "@id": "urn:visionflow:linked:audio-parameters", "kind": "StubLink"},
-    {"raw": "MPEG-H Audio", "@id": "urn:visionflow:linked:mpeg-h-audio", "kind": "StubLink"},
-    {"raw": "Opus Codec", "@id": "urn:visionflow:linked:opus-codec", "kind": "ResolvedLink"},
-    {"raw": "Image Processing", "@id": "urn:visionflow:linked:image-processing", "kind": "ResolvedLink"},
-    {"raw": "Analogue Signal Processing", "@id": "urn:visionflow:linked:analogue-signal-processing", "kind": "StubLink"},
-    {"raw": "Audio Processing System", "@id": "urn:visionflow:linked:audio-processing-system", "kind": "StubLink"},
-    {"raw": "Audio Generation", "@id": "urn:visionflow:linked:audio-generation", "kind": "ResolvedLink"},
-    {"raw": "Machine Learning", "@id": "urn:visionflow:linked:machine-learning", "kind": "ResolvedLink"},
-    {"raw": "Deep Learning", "@id": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "Neural Network", "@id": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "Source Separation", "@id": "urn:visionflow:linked:source-separation", "kind": "StubLink"},
-    {"raw": "Residual Vector Quantisation", "@id": "urn:visionflow:linked:residual-vector-quantisation", "kind": "StubLink"},
-    {"raw": "Waveform", "@id": "urn:visionflow:linked:waveform", "kind": "StubLink"},
-    {"raw": "Diffusion Model", "@id": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "Attention Mechanism", "@id": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"}
-  ]
 }
 ```
 
@@ -531,7 +600,7 @@ public: true
 
   - ## Mathematical Foundations of Key Operations
     - **Convolution and Linear Filtering**: In discrete time, convolution y[n] = (x * h)[n] = Σₖ x[k]h[n-k] implements any linear time-invariant (LTI) filter. FIR filters have h[n] of finite length M; IIR filters have infinite-length impulse responses implemented via difference equations y[n] = Σᵢ bᵢx[n-i] - Σⱼ aⱼy[n-j]. Frequency-domain convolution (multiply spectra, IFFT) is O(N log N) versus O(N²) for time-domain convolution, making overlap-add FFT convolution essential for long reverb impulse responses (>256 samples).
-    - **Short-Time Fourier Transform**: STFT(m, k) = Σₙ x[n] w[n - mH] e^{-j2πkn/N} for hop size H, window w, DFT size N, frame index m, frequency bin k. The modulus |STFT(m,k)| is the [[Spectrogram]] magnitude; arg(STFT(m,k)) is the instantaneous phase. Phase vocoder algorithms manipulate STFT magnitude and phase independently for pitch shifting and time-stretching without the artefacts of naive resampling.
+    - **Short-Time Fourier Transform**: STFT(m, k) = Σₙ x[n] w[n - mH] e^{-j2πkn/N} for hop size H, window w, DFT size N, frame [private] m, frequency bin k. The modulus |STFT(m,k)| is the [[Spectrogram]] magnitude; arg(STFT(m,k)) is the instantaneous phase. Phase vocoder algorithms manipulate STFT magnitude and phase independently for pitch shifting and time-stretching without the artefacts of naive resampling.
     - **Adaptive Filtering (LMS)**: The Least Mean Squares adaptive filter minimises E[e²[n]] where e[n] = d[n] - yᵀ[n]w[n], updating weights w[n+1] = w[n] + 2μe[n]x[n] for reference signal x[n], desired signal d[n], and step-size μ. Convergence requires μ < 1/(λₘₐₓ × N) where λₘₐₓ is the maximum eigenvalue of the input covariance matrix. The Normalised LMS (NLMS) algorithm divides by ||x[n]||² to stabilise convergence across signal level variations.
     - **Non-Negative Matrix Factorisation**: NMF decomposes a non-negative spectrogram matrix V ≈ WH where W (basis spectra, F×K) and H (activation matrix, K×T) are constrained to be non-negative. The KL-divergence cost function (appropriate for Poisson-distributed spectrogram magnitudes) is minimised via multiplicative update rules. NMF is used in music source separation (each column of W represents an instrument's spectral template; rows of H encode when it plays), audio inpainting, and audio compression artefact reduction.
 

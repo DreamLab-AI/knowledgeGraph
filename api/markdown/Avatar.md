@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Avatar
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -217,72 +212,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:avatar:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:53ad95c3c89aaacea76e1b303729877048febad65bd8f70a919c3dafec8e6389"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ACM + Web3D HAnim]]",
-      "resolved": "urn:visionflow:linked:acm-web3-d-hanim",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Animation Rig]]",
-      "resolved": "urn:visionflow:linked:animation-rig",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Embodiment]]",
-      "resolved": "urn:visionflow:linked:user-embodiment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UserExperienceLayer]]",
-      "resolved": "urn:visionflow:linked:user-experience-layer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Visual Mesh]]",
-      "resolved": "urn:visionflow:linked:visual-mesh",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Rendering Engine]]",
-      "resolved": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[InteractionDomain]]",
-      "resolved": "urn:visionflow:owl:class:sc-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Social Presence]]",
-      "resolved": "urn:visionflow:owl:class:social-presence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital representation of a person or agent used to interact within a virtual environment.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0036 resolution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,42 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0035-accuracy", "label": "rb 0035 accuracy"},
-      {"@id": "urn:ngm:class:rb-0034-repeatability", "label": "rb 0034 repeatability"},
-      {"@id": "urn:ngm:class:rb-0023-degrees-of-freedom", "label": "rb 0023 degrees of freedom"},
-      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"}
+      {
+        "@id": "urn:ngm:class:rb-0035-accuracy",
+        "label": "rb 0035 accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0034-repeatability",
+        "label": "rb 0034 repeatability"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "rb 0023 degrees of freedom"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0040-backlash", "label": "rb 0040 backlash"},
-      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"}
+      {
+        "@id": "urn:ngm:class:rb-0040-backlash",
+        "label": "rb 0040 backlash"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"},
-      {"@id": "urn:ngm:class:rb-0032-manipulability", "label": "rb 0032 manipulability"}
+      {
+        "@id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0032-manipulability",
+        "label": "rb 0032 manipulability"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0036-resolution:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ec01c12da3af923557af163b0267d04535571fba804a1ce32ac416846cf80ddc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ### Primary Definition

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metaverse Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -215,42 +210,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:777c046d839ec59d85eb7612200e5d2fa6cd8d1a3aa6ff38bcfdb79763da1b91"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Virtual World Operation]]",
-      "resolved": "urn:visionflow:linked:virtual-world-operation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Architecture]]",
-      "resolved": "urn:visionflow:owl:class:system-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The layered technical framework defining metaverse infrastructure, encompassing network connectivity, computing resources, spatial computing, creator tools, interaction protocols, and economic systems that enable persistent virtual worlds.

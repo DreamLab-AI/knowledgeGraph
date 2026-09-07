@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lindy Effect
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The Lindy Effect is a heuristic stating that the future life expectancy of a non-perishable thing, such as a technology or idea, is proportional to its current age, so the longer it has survived the longer it is expected to persist. Popularised by Nassim Taleb, it implies robustness accrues through demonstrated longevity. In crypto discourse it is invoked to argue that Bitcoin's continued survival strengthens its credibility as a store of value.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}, {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin Proof-of-Work Protocol"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Proof-of-Work Protocol"
+      }
+    ]
   },
   "quality": 0.72
 }

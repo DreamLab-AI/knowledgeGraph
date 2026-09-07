@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Confidential Computing Consortium
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Laplace Transform
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dynamic Pricing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Dynamic Pricing is a strategy in which the price of a good or service is adjusted in real time based on demand, supply, competitor prices, inventory, and customer signals. It is typically driven by machine-learning models that forecast willingness to pay and optimise revenue or other objectives. Common in e-commerce, ride-hailing, travel, and logistics, it relies on continuous data feeds and automated decisioning.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"}, {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      }
+    ]
   },
   "quality": 0.72
 }
@@ -158,7 +167,7 @@ public: true
 
   **Historical Origins: Airline Yield Management**
 
-  The practice originated in the airline industry, where American Airlines and other carriers introduced computer reservation systems—American's SABRE (Semi-Automated Business Research Environment, 1964) being the most influential—that enabled systematic pricing of seat inventory by booking class, advance purchase window, and day of week. Robert Crandall, President of American Airlines, coined the term "yield management" in 1985 and formalised the practice of adjusting ticket prices continuously based on seat inventory, booking velocity, and demand forecasts, achieving reported annual revenue gains of hundreds of millions of dollars for American alone. The deregulation of the US airline industry (Airline Deregulation Act, 1978) eliminated regulated pricing and created the competitive pressure that made yield management a survival capability rather than an optional enhancement. UK carriers including British Caledonian and British Airways adopted similar systems through the 1980s and 1990s, with easyJet and Ryanair later demonstrating that low-cost carriers could achieve even more aggressive dynamic pricing by selling every seat at a unique price with no pre-specified booking classes.
+  The practice originated in the airline industry, where American Airlines and other carriers introduced computer reservation systems—American's SABRE (Semi-Automated Business Research Environment, 1964) being the most influential—that enabled systematic pricing of seat inventory by booking class, advance purchase window, and day of week. Robert Crandall, President of American Airlines, coined the term "yield management" in 1985 and formalised the practice of adjusting ticket prices continuously based on seat inventory, booking velocity, and demand forecasts, achieving reported annual revenue gains of hundreds of millions of dollars for American alone. The deregulation of the US airline industry (Airline Deregulation Act, 1978) eliminated regulated pricing and created the competitive pressure that made yield management a survival capability rather than an optional enhancement. UK carriers including British Caledonian and British Airways adopted similar systems through the 1980s and 1990s, with easyJet and Ryanair later demonstrating that low-cost carriers [private] achieve even more aggressive dynamic pricing by selling every seat at a unique price with no pre-specified booking classes.
 
   The theoretical foundation for airline yield management was developed by Belobaba (1987) with the Expected Marginal Seat Revenue (EMSR) model, Williamson (1992) with bid-price control methods, and Talluri and van Ryzin's comprehensive treatment (2004) that remains the standard reference. The core insight is that a perishable resource (an airline seat on a specific departure flight) has zero value after the departure date, so the optimal strategy is to sell at a price that maximises expected revenue given the remaining inventory and forecast demand, even if that means leaving some seats empty.
 
@@ -256,7 +265,7 @@ public: true
   - Market simulation and agent-based models: simulate the pricing ecosystem with heterogeneous consumer agents and competing firm agents to evaluate pricing strategies before deployment
 
   **Causal and Counterfactual Methods**
-  - **Price endogeneity correction**: OLS regression of quantity on price is biased because price and demand are jointly determined (firms raise prices when they expect high demand). Instrumental variables (e.g., competitor cost shocks, historical pricing index) or control function approaches correct this bias.
+  - **Price endogeneity correction**: OLS regression of quantity on price is biased because price and demand are jointly determined (firms raise prices when they expect high demand). Instrumental variables (e.g., competitor cost shocks, historical pricing [private]) or control function approaches correct this bias.
   - **Double Machine Learning (Chernozhukov et al., 2018)**: uses cross-fitting and residual-on-residual regression to estimate heterogeneous treatment effects of price changes on demand while controlling for high-dimensional confounders; increasingly used for heterogeneous price elasticity estimation across customer segments.
   - **Synthetic Control and Difference-in-Differences**: estimate the causal effect of a price change on demand using control markets or products unaffected by the intervention as counterfactual. Standard method for evaluating natural experiments in pricing.
   - **Predict-then-Optimise (Smart Predict-then-Optimize, Elmachtoub and Grigas, 2022)**: trains demand models with a task loss—the regret from suboptimal pricing decisions—rather than a generic prediction loss, directly optimising decision quality rather than forecast accuracy.

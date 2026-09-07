@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Participant Protection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:participant-protection:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ef67f5d1f92de366cb14d26976372b83b05ecc72fdc5e23f7db35f37b66bf785"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Trust in Digital Platforms]]",
-      "resolved": "urn:visionflow:linked:trust-in-digital-platforms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Safety]]",
-      "resolved": "urn:visionflow:owl:class:digital-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Policies, technologies, and practices designed to safeguard users' privacy, data, and safety on digital platforms, encompassing regulatory compliance, privacy-enhancing technologies, and platform safety features that protect against data misuse, harassment, and harmful content.

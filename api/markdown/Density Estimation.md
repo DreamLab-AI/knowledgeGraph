@@ -1,56 +1,114 @@
----
-public: true
----
-
-# Density Estimation
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:density-estimation", "@type":"Page", "title":"Density Estimation", "vc:slug":"density-estimation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:density-estimation",
+  "@type": "Page",
+  "title": "Density Estimation",
+  "vc:slug": "density-estimation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:density-estimation",
-  "@type":"Class",
-  "label":"Density Estimation",
-  "definition":"Density estimation is the statistical problem of inferring the underlying probability density function of a random variable from a finite set of observed samples. Parametric approaches assume a fixed functional form whose parameters are fitted by maximum likelihood, while non-parametric approaches such as kernel density estimation and histograms make minimal distributional assumptions. Modern deep density estimation uses normalizing flows, autoregressive models, and variational methods to model complex high-dimensional distributions, making it foundational to generative modelling, anomaly detection, and unsupervised learning.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:statistics","label":"Statistics"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:kernel-density-estimation","label":"Kernel Density Estimation"},
-      {"@id":"urn:ngm:class:maximum-likelihood-estimation","label":"Maximum Likelihood Estimation"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:density-estimation",
+  "@type": "Class",
+  "label": "Density Estimation",
+  "definition": "Density estimation is the statistical problem of inferring the underlying probability density function of a random variable from a finite set of observed samples. Parametric approaches assume a fixed functional form whose parameters are fitted by maximum likelihood, while non-parametric approaches such as kernel density estimation and histograms make minimal distributional assumptions. Modern deep density estimation uses normalizing flows, autoregressive models, and variational methods to model complex high-dimensional distributions, making it foundational to generative modelling, anomaly detection, and unsupervised learning.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:statistics",
+      "label": "Statistics"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:kernel-density-estimation",
+        "label": "Kernel Density Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:unsupervised-learning","label":"Unsupervised Learning"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"},
-      {"@id":"urn:ngm:class:sampling","label":"Sampling"},
-      {"@id":"urn:ngm:class:maximum-likelihood-estimation","label":"Maximum Likelihood Estimation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:generative-model","label":"Generative Model"},
-      {"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"},
-      {"@id":"urn:ngm:class:outlier-detection","label":"Outlier Detection"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:outlier-detection",
+        "label": "Outlier Detection"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:gaussian-mixture-model","label":"Gaussian Mixture Model"},
-      {"@id":"urn:ngm:class:normalising-flow","label":"Normalizing Flow"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
+      },
+      {
+        "@id": "urn:ngm:class:normalising-flow",
+        "label": "Normalizing Flow"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:variational-autoencoder","label":"Variational Autoencoder"},
-      {"@id":"urn:ngm:class:information-theory","label":"Information Theory"},
-      {"@id":"urn:ngm:class:entropy","label":"Entropy"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

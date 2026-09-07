@@ -1,8 +1,3 @@
----
-public: true
----
-
-# RDF Triple Store
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "An RDF triple store is a purpose-built database for storing and querying data as subject-predicate-object triples following the Resource Description Framework model. It supports the SPARQL query language and often provides reasoning over ontologies to infer implicit facts. Triple stores are the backbone of semantic-web, knowledge-graph, and linked-data applications.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:metaverse-ontology-schema", "label": "Metaverse Ontology Schema"}
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-ontology-schema",
+        "label": "Metaverse Ontology Schema"
+      }
     ]
   },
   "quality": 0.72
@@ -39,4 +45,4 @@ public: true
 - ### Definition
   - An RDF triple store persists data as subject-predicate-object triples queryable via SPARQL. It is a specialised form of [[Graph Database]] and is required to host a [[Metaverse Ontology Schema]].
 - ### Content
-  - Triple stores index triples (and named-graph quads) for efficient pattern matching and support OWL/RDFS entailment to derive inferred statements. They differ from property-graph databases by adhering to W3C semantic-web standards, enabling federation across linked-data sources and standards-based interoperability of ontologies.
+  - Triple stores [private] triples (and named-graph quads) for efficient pattern matching and support OWL/RDFS entailment to derive inferred statements. They differ from property-graph databases by adhering to W3C semantic-web standards, enabling federation across linked-data sources and standards-based interoperability of ontologies.

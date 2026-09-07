@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Joint Encoder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A joint encoder is a sensor mounted at a robot joint that measures angular or linear position, and often velocity, of that joint. It provides the proprioceptive feedback required for closed-loop position and motion control of articulated mechanisms. Encoders may be optical, magnetic or capacitive and are typically classed as incremental or absolute.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:proprioceptive-sensor", "label": "Proprioceptive Sensor"}
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:proprioceptive-sensor",
+        "label": "Proprioceptive Sensor"
+      }
     ]
   },
   "quality": 0.72

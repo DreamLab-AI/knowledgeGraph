@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Python to build RAG data page]]
-# Pyodide RAG Corpus Builder Script
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,20 +47,44 @@ elevatedFrom:: [[Python to build RAG data page]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ]
   },
   "provenance": {
@@ -76,32 +94,6 @@ elevatedFrom:: [[Python to build RAG data page]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:python-to-build-rag-data-page:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dbba1a523482c5ed81672cd11187503b0acb5a29f7b2225a1b4e6dae4051da11"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[...]]",
-      "resolved": "urn:visionflow:linked:untitled",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Python to build RAG data page is a Logseq Pyodide script that enumerates all pages with the `public:: true` property, loads their block content, applies text-cleaning routines, and appends the cleaned content to a FULLRAG page. This serves as the consolidated corpus for local Retrieval-Augmented Generation pipelines, enabling semantic search over the public knowledge graph without external data transfer.
@@ -173,13 +165,13 @@ elevatedFrom:: [[Python to build RAG data page]]
 	      for public_page_name in public_pages:
 	          content = load_page_content(public_page_name)
 	          if not content:
-	              js.logseq.api.show_msg(f"Could not load content from {public_page_name}.", {'timeout': 5000})
+	              js.logseq.api.show_msg(f"[private] not load content from {public_page_name}.", {'timeout': 5000})
 	              continue
 	          cleaned_content = clean_text(content)
 	          if ensure_fullrag_page_exists():
 	              append_to_fullrag(f"# {public_page_name}\n\n{cleaned_content}\n\n")
 	          else:
-	              return "Could not ensure FULLRAG page exists."
+	              return "[private] not ensure FULLRAG page exists."
 	      return "Processed and added content from all public pages to FULLRAG."
 	  def main():
 	      result = process_all_public_pages()

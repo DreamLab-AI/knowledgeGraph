@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Change of Variables
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decision Tree
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -13,40 +8,142 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:classification", "vc:label": "Classification"},
-    {"@id": "urn:visionflow:linked:regression", "vc:label": "Regression"},
-    {"@id": "urn:visionflow:linked:ensemble-methods", "vc:label": "Ensemble Methods"},
-    {"@id": "urn:visionflow:linked:interpretability", "vc:label": "Interpretability"},
-    {"@id": "urn:visionflow:linked:explainability", "vc:label": "Explainability"},
-    {"@id": "urn:visionflow:linked:random-forest", "vc:label": "Random Forest"},
-    {"@id": "urn:visionflow:linked:gradient-boosted-trees", "vc:label": "Gradient Boosted Trees"},
-    {"@id": "urn:visionflow:linked:overfitting", "vc:label": "Overfitting"},
-    {"@id": "urn:visionflow:linked:pruning", "vc:label": "Pruning"},
-    {"@id": "urn:visionflow:linked:bias-variance-tradeoff", "vc:label": "Bias-Variance Tradeoff"},
-    {"@id": "urn:visionflow:linked:feature-importance", "vc:label": "Feature Importance"},
-    {"@id": "urn:visionflow:linked:gini-coefficient", "vc:label": "Gini Coefficient"},
-    {"@id": "urn:visionflow:linked:information-gain", "vc:label": "Information Gain"},
-    {"@id": "urn:visionflow:linked:decision-transparency", "vc:label": "Decision Transparency"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:evaluation-metric", "vc:label": "Evaluation Metric"},
-    {"@id": "urn:visionflow:linked:cross-validation", "vc:label": "Cross Validation"},
-    {"@id": "urn:visionflow:linked:bagging", "vc:label": "Bagging"},
-    {"@id": "urn:visionflow:linked:boosting", "vc:label": "Boosting"},
-    {"@id": "urn:visionflow:linked:hyperparameter-tuning", "vc:label": "Hyperparameter Tuning"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:confusion-matrix", "vc:label": "Confusion Matrix"},
-    {"@id": "urn:visionflow:linked:support-vector-machine", "vc:label": "Support Vector Machine"},
-    {"@id": "urn:visionflow:linked:logistic-regression", "vc:label": "Logistic Regression"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:k-nearest-neighbours", "vc:label": "K-Nearest Neighbours"},
-    {"@id": "urn:visionflow:linked:shap", "vc:label": "SHAP"},
-    {"@id": "urn:visionflow:linked:post-hoc-explanation", "vc:label": "Post Hoc Explanation"},
-    {"@id": "urn:visionflow:linked:regulatory-compliance", "vc:label": "Regulatory Compliance"},
-    {"@id": "urn:visionflow:linked:ai-fairness", "vc:label": "AI Fairness"}
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:classification",
+      "vc:label": "Classification"
+    },
+    {
+      "@id": "urn:visionflow:linked:regression",
+      "vc:label": "Regression"
+    },
+    {
+      "@id": "urn:visionflow:linked:ensemble-methods",
+      "vc:label": "Ensemble Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:interpretability",
+      "vc:label": "Interpretability"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:random-forest",
+      "vc:label": "Random Forest"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-boosted-trees",
+      "vc:label": "Gradient Boosted Trees"
+    },
+    {
+      "@id": "urn:visionflow:linked:overfitting",
+      "vc:label": "Overfitting"
+    },
+    {
+      "@id": "urn:visionflow:linked:pruning",
+      "vc:label": "Pruning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-variance-tradeoff",
+      "vc:label": "Bias-Variance Tradeoff"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-importance",
+      "vc:label": "Feature Importance"
+    },
+    {
+      "@id": "urn:visionflow:linked:gini-coefficient",
+      "vc:label": "Gini Coefficient"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-gain",
+      "vc:label": "Information Gain"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-transparency",
+      "vc:label": "Decision Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:evaluation-metric",
+      "vc:label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-validation",
+      "vc:label": "Cross Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:bagging",
+      "vc:label": "Bagging"
+    },
+    {
+      "@id": "urn:visionflow:linked:boosting",
+      "vc:label": "Boosting"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:confusion-matrix",
+      "vc:label": "Confusion Matrix"
+    },
+    {
+      "@id": "urn:visionflow:linked:support-vector-machine",
+      "vc:label": "Support Vector Machine"
+    },
+    {
+      "@id": "urn:visionflow:linked:logistic-regression",
+      "vc:label": "Logistic Regression"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:k-nearest-neighbours",
+      "vc:label": "K-Nearest Neighbours"
+    },
+    {
+      "@id": "urn:visionflow:linked:shap",
+      "vc:label": "SHAP"
+    },
+    {
+      "@id": "urn:visionflow:linked:post-hoc-explanation",
+      "vc:label": "Post Hoc Explanation"
+    },
+    {
+      "@id": "urn:visionflow:linked:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-fairness",
+      "vc:label": "AI Fairness"
+    }
   ]
 }
 ```

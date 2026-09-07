@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Multi Party Computation
----
-
-# Multi-Party Computation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,4 +163,3 @@ aliases:
   - Deployed applications include privacy-preserving statistics in healthcare (Boston Women's Workforce Council salary study), threshold key management for digital asset custody (Fireblocks, Zengo), private set intersection for contact discovery (Signal, Apple Private Relay), and GDPR-compliant data collaboration between competing firms. The integration of MPC with federated learning produces models without exposing individual training records.
 
   - By 2024-2025, MPC has moved from niche academic deployments to mainstream fintech and cloud services: AWS, Google, and Azure offer managed MPC primitives. Lattice-based post-quantum MPC is an active research frontier. The convergence of MPC with zero-knowledge proofs in systems like zkSNARKs is enabling verifiable MPC where not only privacy but also correctness of computation can be publicly proven.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Investment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,75 +7,269 @@ public: true
   "title": "AI Investment",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:ai-chips", "vc:label": "AI Chips"},
-    {"@id": "urn:visionflow:linked:ai-cooperation", "vc:label": "AI Cooperation"},
-    {"@id": "urn:visionflow:linked:ai-policy", "vc:label": "AI Policy"},
-    {"@id": "urn:visionflow:linked:ai-regulation", "vc:label": "AI Regulation"},
-    {"@id": "urn:visionflow:linked:ai-research-talent", "vc:label": "AI Research Talent"},
-    {"@id": "urn:visionflow:linked:ai-sovereignty", "vc:label": "AI Sovereignty"},
-    {"@id": "urn:visionflow:linked:ai-startups", "vc:label": "AI Startups"},
-    {"@id": "urn:visionflow:linked:alan-turing-institute", "vc:label": "Alan Turing Institute"},
-    {"@id": "urn:visionflow:linked:anthropic", "vc:label": "Anthropic"},
-    {"@id": "urn:visionflow:linked:antitrust-oversight", "vc:label": "Antitrust Oversight"},
-    {"@id": "urn:visionflow:linked:capital-markets", "vc:label": "Capital Markets"},
-    {"@id": "urn:visionflow:linked:cloud-infrastructure", "vc:label": "Cloud Infrastructure"},
-    {"@id": "urn:visionflow:linked:compute-access", "vc:label": "Compute Access"},
-    {"@id": "urn:visionflow:linked:compute-governance", "vc:label": "Compute Governance"},
-    {"@id": "urn:visionflow:linked:corporate-capital-expenditure", "vc:label": "Corporate Capital Expenditure"},
-    {"@id": "urn:visionflow:linked:data-centre-infrastructure", "vc:label": "Data Centre Infrastructure"},
-    {"@id": "urn:visionflow:linked:deepseek", "vc:label": "DeepSeek"},
-    {"@id": "urn:visionflow:linked:economic-competitiveness", "vc:label": "Economic Competitiveness"},
-    {"@id": "urn:visionflow:linked:enterprise-ai-adoption", "vc:label": "Enterprise AI Adoption"},
-    {"@id": "urn:visionflow:linked:export-controls", "vc:label": "Export Controls"},
-    {"@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models"},
-    {"@id": "urn:visionflow:linked:frontier-models", "vc:label": "Frontier Models"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:geopolitics", "vc:label": "Geopolitics"},
-    {"@id": "urn:visionflow:linked:gpu-supply-chain", "vc:label": "GPU Supply Chain"},
-    {"@id": "urn:visionflow:linked:hyperscaler", "vc:label": "Hyperscaler"},
-    {"@id": "urn:visionflow:linked:industrial-strategy", "vc:label": "Industrial Strategy"},
-    {"@id": "urn:visionflow:linked:inference-optimisation", "vc:label": "Inference Optimisation"},
-    {"@id": "urn:visionflow:linked:innovation-ecosystems", "vc:label": "Innovation Ecosystems"},
-    {"@id": "urn:visionflow:linked:isambard-ai", "vc:label": "Isambard-AI"},
-    {"@id": "urn:visionflow:linked:market-concentration", "vc:label": "Market Concentration"},
-    {"@id": "urn:visionflow:linked:mega-round-financing", "vc:label": "Mega-Round Financing"},
-    {"@id": "urn:visionflow:linked:meta-ai", "vc:label": "Meta AI"},
-    {"@id": "urn:visionflow:linked:national-ai-strategies", "vc:label": "National AI Strategies"},
-    {"@id": "urn:visionflow:linked:openai", "vc:label": "OpenAI Research Organisation"},
-    {"@id": "urn:visionflow:linked:open-source-ai", "vc:label": "Open Source AI"},
-    {"@id": "urn:visionflow:linked:productivity-gains", "vc:label": "Productivity Gains"},
-    {"@id": "urn:visionflow:linked:public-research-grants", "vc:label": "Public Research Grants"},
-    {"@id": "urn:visionflow:linked:return-on-investment", "vc:label": "Return on Investment"},
-    {"@id": "urn:visionflow:linked:semiconductor-industry", "vc:label": "Semiconductor Industry"},
-    {"@id": "urn:visionflow:linked:sovereign-wealth-fund", "vc:label": "Sovereign Wealth Fund"},
-    {"@id": "urn:visionflow:linked:talent-concentration", "vc:label": "Talent Concentration"},
-    {"@id": "urn:visionflow:linked:technology-race", "vc:label": "Technology Race"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:uk-ai-sector", "vc:label": "UK AI Sector"},
-    {"@id": "urn:visionflow:linked:venture-capital", "vc:label": "Venture Capital"},
-    {"@id": "urn:visionflow:linked:xai", "vc:label": "xAI"},
-    {"@id": "urn:visionflow:owl:class:ai-technique", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:owl:class:cloud-infrastructure", "vc:label": "Cloud Infrastructure"},
-    {"@id": "urn:visionflow:owl:class:competition-in-ai", "vc:label": "Competition in AI"},
-    {"@id": "urn:visionflow:owl:class:economics", "vc:label": "Economics"},
-    {"@id": "urn:visionflow:owl:class:eu-ai-act", "vc:label": "EU AI Act Regulatory Instrument"},
-    {"@id": "urn:visionflow:owl:class:foundation-models", "vc:label": "Large-Scale Pretrained Foundation Model"},
-    {"@id": "urn:visionflow:owl:class:google-deep-mind", "vc:label": "Google DeepMind"},
-    {"@id": "urn:visionflow:owl:class:open-ai", "vc:label": "OpenAI Research Organisation"},
-    {"@id": "urn:visionflow:owl:class:risk-management", "vc:label": "Risk Management"},
-    {"@id": "urn:visionflow:owl:class:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:industrial-organization-domain", "vc:label": "IndustrialOrganizationDomain"},
-    {"@id": "urn:visionflow:linked:market-layer", "vc:label": "MarketLayer"},
-    {"@id": "urn:visionflow:linked:institutional-layer", "vc:label": "InstitutionalLayer"}
+    {
+      "@id": "urn:visionflow:linked:ai-chips",
+      "vc:label": "AI Chips"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-cooperation",
+      "vc:label": "AI Cooperation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-policy",
+      "vc:label": "AI Policy"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-regulation",
+      "vc:label": "AI Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-research-talent",
+      "vc:label": "AI Research Talent"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-sovereignty",
+      "vc:label": "AI Sovereignty"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-startups",
+      "vc:label": "AI Startups"
+    },
+    {
+      "@id": "urn:visionflow:linked:alan-turing-institute",
+      "vc:label": "Alan Turing Institute"
+    },
+    {
+      "@id": "urn:visionflow:linked:anthropic",
+      "vc:label": "Anthropic"
+    },
+    {
+      "@id": "urn:visionflow:linked:antitrust-oversight",
+      "vc:label": "Antitrust Oversight"
+    },
+    {
+      "@id": "urn:visionflow:linked:capital-markets",
+      "vc:label": "Capital Markets"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-infrastructure",
+      "vc:label": "Cloud Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:compute-access",
+      "vc:label": "Compute Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:compute-governance",
+      "vc:label": "Compute Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:corporate-capital-expenditure",
+      "vc:label": "Corporate Capital Expenditure"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-centre-infrastructure",
+      "vc:label": "Data Centre Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:deepseek",
+      "vc:label": "DeepSeek"
+    },
+    {
+      "@id": "urn:visionflow:linked:economic-competitiveness",
+      "vc:label": "Economic Competitiveness"
+    },
+    {
+      "@id": "urn:visionflow:linked:enterprise-ai-adoption",
+      "vc:label": "Enterprise AI Adoption"
+    },
+    {
+      "@id": "urn:visionflow:linked:export-controls",
+      "vc:label": "Export Controls"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:frontier-models",
+      "vc:label": "Frontier Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:geopolitics",
+      "vc:label": "Geopolitics"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-supply-chain",
+      "vc:label": "GPU Supply Chain"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperscaler",
+      "vc:label": "Hyperscaler"
+    },
+    {
+      "@id": "urn:visionflow:linked:industrial-strategy",
+      "vc:label": "Industrial Strategy"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-optimisation",
+      "vc:label": "Inference Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:innovation-ecosystems",
+      "vc:label": "Innovation Ecosystems"
+    },
+    {
+      "@id": "urn:visionflow:linked:isambard-ai",
+      "vc:label": "Isambard-AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-concentration",
+      "vc:label": "Market Concentration"
+    },
+    {
+      "@id": "urn:visionflow:linked:mega-round-financing",
+      "vc:label": "Mega-Round Financing"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-ai",
+      "vc:label": "Meta AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:national-ai-strategies",
+      "vc:label": "National AI Strategies"
+    },
+    {
+      "@id": "urn:visionflow:linked:openai",
+      "vc:label": "OpenAI Research Organisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source-ai",
+      "vc:label": "Open Source AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:productivity-gains",
+      "vc:label": "Productivity Gains"
+    },
+    {
+      "@id": "urn:visionflow:linked:public-research-grants",
+      "vc:label": "Public Research Grants"
+    },
+    {
+      "@id": "urn:visionflow:linked:return-on-investment",
+      "vc:label": "Return on Investment"
+    },
+    {
+      "@id": "urn:visionflow:linked:semiconductor-industry",
+      "vc:label": "Semiconductor Industry"
+    },
+    {
+      "@id": "urn:visionflow:linked:sovereign-wealth-fund",
+      "vc:label": "Sovereign Wealth Fund"
+    },
+    {
+      "@id": "urn:visionflow:linked:talent-concentration",
+      "vc:label": "Talent Concentration"
+    },
+    {
+      "@id": "urn:visionflow:linked:technology-race",
+      "vc:label": "Technology Race"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:uk-ai-sector",
+      "vc:label": "UK AI Sector"
+    },
+    {
+      "@id": "urn:visionflow:linked:venture-capital",
+      "vc:label": "Venture Capital"
+    },
+    {
+      "@id": "urn:visionflow:linked:xai",
+      "vc:label": "xAI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-technique",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
+      "vc:label": "Cloud Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:competition-in-ai",
+      "vc:label": "Competition in AI"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:economics",
+      "vc:label": "Economics"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act Regulatory Instrument"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:foundation-models",
+      "vc:label": "Large-Scale Pretrained Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:google-deep-mind",
+      "vc:label": "Google DeepMind"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:open-ai",
+      "vc:label": "OpenAI Research Organisation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:risk-management",
+      "vc:label": "Risk Management"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:industrial-organization-domain",
+      "vc:label": "IndustrialOrganizationDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:market-layer",
+      "vc:label": "MarketLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:institutional-layer",
+      "vc:label": "InstitutionalLayer"
+    }
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {"vc:key": "legacy-term-id", "vc:value": "AI-2001"},
-    {"vc:key": "preferred-term", "vc:value": "AI Investment"}
+    {
+      "vc:key": "legacy-term-id",
+      "vc:value": "AI-2001"
+    },
+    {
+      "vc:key": "preferred-term",
+      "vc:value": "AI Investment"
+    }
   ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-20T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -94,52 +283,145 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:economics", "label": "Economics"},
-    {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"}
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    },
+    {
+      "@id": "urn:ngm:class:capital-markets",
+      "label": "Capital Markets"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"},
-      {"@id": "urn:ngm:class:corporate-capital-expenditure", "label": "Corporate Capital Expenditure"},
-      {"@id": "urn:ngm:class:sovereign-wealth-fund", "label": "Sovereign Wealth Fund"},
-      {"@id": "urn:ngm:class:public-research-grants", "label": "Public Research Grants"},
-      {"@id": "urn:ngm:class:mega-round-financing", "label": "Mega-Round Financing"}
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-capital-expenditure",
+        "label": "Corporate Capital Expenditure"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-wealth-fund",
+        "label": "Sovereign Wealth Fund"
+      },
+      {
+        "@id": "urn:ngm:class:public-research-grants",
+        "label": "Public Research Grants"
+      },
+      {
+        "@id": "urn:ngm:class:mega-round-financing",
+        "label": "Mega-Round Financing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-chips", "label": "AI Chips"},
-      {"@id": "urn:ngm:class:gpu-supply-chain", "label": "GPU Supply Chain"},
-      {"@id": "urn:ngm:class:ai-research-talent", "label": "AI Research Talent"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-supply-chain",
+        "label": "GPU Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:ai-research-talent",
+        "label": "AI Research Talent"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:frontier-models", "label": "Frontier Models"},
-      {"@id": "urn:ngm:class:economic-competitiveness", "label": "Economic Competitiveness"},
-      {"@id": "urn:ngm:class:ai-sovereignty", "label": "AI Sovereignty"},
-      {"@id": "urn:ngm:class:innovation-ecosystems", "label": "Innovation Ecosystems"},
-      {"@id": "urn:ngm:class:enterprise-ai-adoption", "label": "Enterprise AI Adoption"}
+      {
+        "@id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "@id": "urn:ngm:class:economic-competitiveness",
+        "label": "Economic Competitiveness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-sovereignty",
+        "label": "AI Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:innovation-ecosystems",
+        "label": "Innovation Ecosystems"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ai-adoption",
+        "label": "Enterprise AI Adoption"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:national-ai-strategies", "label": "National AI Strategies"},
-      {"@id": "urn:ngm:class:industrial-strategy", "label": "Industrial Strategy"},
-      {"@id": "urn:ngm:class:export-controls", "label": "Export Controls"}
+      {
+        "@id": "urn:ngm:class:national-ai-strategies",
+        "label": "National AI Strategies"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-strategy",
+        "label": "Industrial Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:export-controls",
+        "label": "Export Controls"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:semiconductor-industry", "label": "Semiconductor Industry"},
-      {"@id": "urn:ngm:class:geopolitics", "label": "Geopolitics"},
-      {"@id": "urn:ngm:class:regulatory-frameworks", "label": "Regulatory Frameworks"}
+      {
+        "@id": "urn:ngm:class:semiconductor-industry",
+        "label": "Semiconductor Industry"
+      },
+      {
+        "@id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:competition-in-ai", "label": "Competition in AI"},
-      {"@id": "urn:ngm:class:ai-chips", "label": "AI Chips"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open Source AI"},
-      {"@id": "urn:ngm:class:talent-concentration", "label": "Talent Concentration"},
-      {"@id": "urn:ngm:class:market-concentration", "label": "Market Concentration"}
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:talent-concentration",
+        "label": "Talent Concentration"
+      },
+      {
+        "@id": "urn:ngm:class:market-concentration",
+        "label": "Market Concentration"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"},
-      {"@id": "urn:ngm:class:ai-research-talent", "label": "AI Research Talent"},
-      {"@id": "urn:ngm:class:compute-access", "label": "Compute Access"}
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-research-talent",
+        "label": "AI Research Talent"
+      },
+      {
+        "@id": "urn:ngm:class:compute-access",
+        "label": "Compute Access"
+      }
     ]
   },
   "quality": 0.88,
@@ -148,77 +430,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "R1Explicit"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-investment:enrichment-2026",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {"@id": "urn:visionflow:page:ai-investment"},
-  "vc:resolutions": [
-    {"raw": "[[AI Chips]]", "resolved": "urn:visionflow:linked:ai-chips", "kind": "StubLink"},
-    {"raw": "[[AI Cooperation]]", "resolved": "urn:visionflow:linked:ai-cooperation", "kind": "StubLink"},
-    {"raw": "[[AI Policy]]", "resolved": "urn:visionflow:linked:ai-policy", "kind": "StubLink"},
-    {"raw": "[[AI Regulation]]", "resolved": "urn:visionflow:linked:ai-regulation", "kind": "StubLink"},
-    {"raw": "[[AI Research Talent]]", "resolved": "urn:visionflow:linked:ai-research-talent", "kind": "StubLink"},
-    {"raw": "[[AI Sovereignty]]", "resolved": "urn:visionflow:linked:ai-sovereignty", "kind": "StubLink"},
-    {"raw": "[[AI Startups]]", "resolved": "urn:visionflow:linked:ai-startups", "kind": "StubLink"},
-    {"raw": "[[Alan Turing Institute]]", "resolved": "urn:visionflow:linked:alan-turing-institute", "kind": "StubLink"},
-    {"raw": "[[Anthropic]]", "resolved": "urn:visionflow:linked:anthropic", "kind": "StubLink"},
-    {"raw": "[[Antitrust Oversight]]", "resolved": "urn:visionflow:linked:antitrust-oversight", "kind": "StubLink"},
-    {"raw": "[[Capital Markets]]", "resolved": "urn:visionflow:linked:capital-markets", "kind": "StubLink"},
-    {"raw": "[[Cloud Infrastructure]]", "resolved": "urn:visionflow:linked:cloud-infrastructure", "kind": "StubLink"},
-    {"raw": "[[Compute Access]]", "resolved": "urn:visionflow:linked:compute-access", "kind": "StubLink"},
-    {"raw": "[[Compute Governance]]", "resolved": "urn:visionflow:linked:compute-governance", "kind": "StubLink"},
-    {"raw": "[[Corporate Capital Expenditure]]", "resolved": "urn:visionflow:linked:corporate-capital-expenditure", "kind": "StubLink"},
-    {"raw": "[[Data Centre Infrastructure]]", "resolved": "urn:visionflow:linked:data-centre-infrastructure", "kind": "StubLink"},
-    {"raw": "[[DeepSeek]]", "resolved": "urn:visionflow:linked:deepseek", "kind": "StubLink"},
-    {"raw": "[[Economic Competitiveness]]", "resolved": "urn:visionflow:linked:economic-competitiveness", "kind": "StubLink"},
-    {"raw": "[[Enterprise AI Adoption]]", "resolved": "urn:visionflow:linked:enterprise-ai-adoption", "kind": "StubLink"},
-    {"raw": "[[Export Controls]]", "resolved": "urn:visionflow:linked:export-controls", "kind": "StubLink"},
-    {"raw": "[[Foundation Models]]", "resolved": "urn:visionflow:linked:foundation-models", "kind": "StubLink"},
-    {"raw": "[[Frontier Models]]", "resolved": "urn:visionflow:linked:frontier-models", "kind": "StubLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "StubLink"},
-    {"raw": "[[Geopolitics]]", "resolved": "urn:visionflow:linked:geopolitics", "kind": "StubLink"},
-    {"raw": "[[GPU Supply Chain]]", "resolved": "urn:visionflow:linked:gpu-supply-chain", "kind": "StubLink"},
-    {"raw": "[[Hyperscaler]]", "resolved": "urn:visionflow:linked:hyperscaler", "kind": "StubLink"},
-    {"raw": "[[Industrial Strategy]]", "resolved": "urn:visionflow:linked:industrial-strategy", "kind": "StubLink"},
-    {"raw": "[[Inference Optimisation]]", "resolved": "urn:visionflow:linked:inference-optimisation", "kind": "StubLink"},
-    {"raw": "[[Innovation Ecosystems]]", "resolved": "urn:visionflow:linked:innovation-ecosystems", "kind": "StubLink"},
-    {"raw": "[[Isambard-AI]]", "resolved": "urn:visionflow:linked:isambard-ai", "kind": "StubLink"},
-    {"raw": "[[Market Concentration]]", "resolved": "urn:visionflow:linked:market-concentration", "kind": "StubLink"},
-    {"raw": "[[Mega-Round Financing]]", "resolved": "urn:visionflow:linked:mega-round-financing", "kind": "StubLink"},
-    {"raw": "[[Meta AI]]", "resolved": "urn:visionflow:linked:meta-ai", "kind": "StubLink"},
-    {"raw": "[[National AI Strategies]]", "resolved": "urn:visionflow:linked:national-ai-strategies", "kind": "StubLink"},
-    {"raw": "[[Open Source AI]]", "resolved": "urn:visionflow:linked:open-source-ai", "kind": "StubLink"},
-    {"raw": "[[Productivity Gains]]", "resolved": "urn:visionflow:linked:productivity-gains", "kind": "StubLink"},
-    {"raw": "[[Public Research Grants]]", "resolved": "urn:visionflow:linked:public-research-grants", "kind": "StubLink"},
-    {"raw": "[[Return on Investment]]", "resolved": "urn:visionflow:linked:return-on-investment", "kind": "StubLink"},
-    {"raw": "[[Semiconductor Industry]]", "resolved": "urn:visionflow:linked:semiconductor-industry", "kind": "StubLink"},
-    {"raw": "[[Sovereign Wealth Fund]]", "resolved": "urn:visionflow:linked:sovereign-wealth-fund", "kind": "StubLink"},
-    {"raw": "[[Talent Concentration]]", "resolved": "urn:visionflow:linked:talent-concentration", "kind": "StubLink"},
-    {"raw": "[[Technology Race]]", "resolved": "urn:visionflow:linked:technology-race", "kind": "StubLink"},
-    {"raw": "[[Training Data]]", "resolved": "urn:visionflow:linked:training-data", "kind": "StubLink"},
-    {"raw": "[[UK AI Sector]]", "resolved": "urn:visionflow:linked:uk-ai-sector", "kind": "StubLink"},
-    {"raw": "[[Venture Capital]]", "resolved": "urn:visionflow:linked:venture-capital", "kind": "StubLink"},
-    {"raw": "[[xAI]]", "resolved": "urn:visionflow:linked:xai", "kind": "StubLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-technique", "kind": "ResolvedLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:owl:class:ai-governance", "kind": "ResolvedLink"},
-    {"raw": "[[Competition in AI]]", "resolved": "urn:visionflow:owl:class:competition-in-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Economics]]", "resolved": "urn:visionflow:owl:class:economics", "kind": "ResolvedLink"},
-    {"raw": "[[EU AI Act Regulatory Instrument]]", "resolved": "urn:visionflow:owl:class:eu-ai-act", "kind": "ResolvedLink"},
-    {"raw": "[[Google DeepMind]]", "resolved": "urn:visionflow:owl:class:google-deep-mind", "kind": "ResolvedLink"},
-    {"raw": "[[Large-Scale Pretrained Foundation Model]]", "resolved": "urn:visionflow:owl:class:foundation-models", "kind": "ResolvedLink"},
-    {"raw": "[[OpenAI Research Organisation]]", "resolved": "urn:visionflow:owl:class:open-ai", "kind": "ResolvedLink"},
-    {"raw": "[[Risk Management]]", "resolved": "urn:visionflow:owl:class:risk-management", "kind": "ResolvedLink"},
-    {"raw": "[[IndustrialOrganizationDomain]]", "resolved": "urn:visionflow:linked:industrial-organization-domain", "kind": "StubLink"},
-    {"raw": "[[MarketLayer]]", "resolved": "urn:visionflow:linked:market-layer", "kind": "StubLink"},
-    {"raw": "[[InstitutionalLayer]]", "resolved": "urn:visionflow:linked:institutional-layer", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -537,7 +748,7 @@ public: true
 
   - **Regulatory Investment Friction**: [[EU AI Act Regulatory Instrument|EU AI Act]] compliance costs (estimated USD 8–15 million per high-risk system for initial implementation) are already redirecting European AI startups toward low-risk applications. As AI regulation matures globally — UK AI Security Institute assessments, US state-level AI bills, potential federal frameworks — compliance infrastructure will itself become an investment category, and regulatory uncertainty will increase risk premiums in AI-heavy portfolios.
 
-  - **AI-Biotech Convergence as the Next Investment Wave**: AlphaFold (2020, 2024) demonstrated that AI can solve problems in structural biology that conventional scientific methods could not resolve in decades. The investment implication is the emergence of AI-native drug discovery companies (Isomorphic Labs, Recursion Pharmaceuticals, Insilico Medicine, Absci) commanding biotech-scale valuations alongside AI-tech multiple expansion. Estimates suggest AI could compress drug discovery timelines from 12 years to 4–6 years and reduce clinical failure rates by 30–40% through better target identification — creating a USD 50 billion+ annual value creation opportunity in pharmaceutical R&D productivity alone. This convergence zone attracts investment from both AI-specialist funds and traditional life-sciences investors, creating cross-domain capital allocation dynamics not present in pure-software AI investment.
+  - **AI-Biotech Convergence as the Next Investment Wave**: AlphaFold (2020, 2024) demonstrated that AI can solve problems in structural biology that conventional scientific methods [private] not resolve in decades. The investment implication is the emergence of AI-native drug discovery companies (Isomorphic Labs, Recursion Pharmaceuticals, Insilico Medicine, Absci) commanding biotech-scale valuations alongside AI-tech multiple expansion. Estimates suggest AI [private] compress drug discovery timelines from 12 years to 4–6 years and reduce clinical failure rates by 30–40% through better target identification — creating a USD 50 billion+ annual value creation opportunity in pharmaceutical R&D productivity alone. This convergence zone attracts investment from both AI-specialist funds and traditional life-sciences investors, creating cross-domain capital allocation dynamics not present in pure-software AI investment.
 
   - **Agentic AI Infrastructure as the Next Capex Cycle**: The shift from language model inference (single API call, millisecond response) to agentic AI execution (multi-step task completion over minutes to hours, with tool use, memory, and web access) changes the compute infrastructure requirements substantially. Agentic workloads require persistent state management, multi-turn conversation storage, tool call execution infrastructure, human-in-the-loop checkpointing, and output verification — none of which were primary considerations in the 2023–2025 inference infrastructure build-out. Investors projecting 2026–2030 infrastructure demand are pricing agentic AI as the successor workload to conversational AI inference, driving a new investment cycle in low-latency memory systems, agent orchestration platforms, and sandboxed execution environments.
 

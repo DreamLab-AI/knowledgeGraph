@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Hardware Security
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -84,47 +79,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:hardware-security:4f89fcd6f13d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ca6389299ac09a9a6ed38761feb76f032d9d668c68f1b617fcc7ea169912c026"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Hardware]]",
-      "resolved": "urn:visionflow:linked:computer-hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trusted Execution Environment]]",
-      "resolved": "urn:visionflow:linked:trusted-execution-environment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware Security Module]]",
-      "resolved": "urn:visionflow:linked:hardware-security-module",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Hardware security protects systems by building trust and isolation into physical components, using features such as secure enclaves, key storage and tamper resistance to defend against attacks software alone cannot stop.

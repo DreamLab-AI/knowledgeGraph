@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Linear Projection
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:linear-projection", "@type":"Page", "title":"Linear Projection", "vc:slug":"linear-projection", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:linear-projection",
+  "@type": "Page",
+  "title": "Linear Projection",
+  "vc:slug": "linear-projection",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

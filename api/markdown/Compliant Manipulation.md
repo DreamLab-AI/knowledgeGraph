@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Compliant Manipulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,41 @@ public: true
   "definition": "Compliant Manipulation is a branch of robotic manipulation in which the robot's end-effector or structural members intentionally yield to contact forces, using passive mechanical compliance or active force control to safely interact with uncertain, fragile, or human-occupied environments. Unlike rigid position-controlled manipulation, compliant manipulation regulates interaction forces as a first-class control objective.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robot-manipulation",
+      "label": "Robot Manipulation"
+    }
+  ],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:force-control", "label": "Force Control"}],
-    "requires": [{"@id": "urn:ngm:class:actuator", "label": "Actuator"}],
-    "enables": [{"@id": "urn:ngm:class:robotic-grasping", "label": "Robotic Grasping"}],
-    "relatedTo": [{"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}, {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"}]
+    "uses": [
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:robotic-grasping",
+        "label": "Robotic Grasping"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ]
   },
   "quality": 0.8
 }

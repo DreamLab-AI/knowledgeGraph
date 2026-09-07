@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Presentation%3A Conclusion]]
-# Presentation Concluding Synthesis Slide
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,12 +42,24 @@ elevatedFrom:: [[Presentation%3A Conclusion]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:active-research-projects-registry", "label": "Active Research Projects Registry"}
+      {
+        "@id": "urn:ngm:class:active-research-projects-registry",
+        "label": "Active Research Projects Registry"
+      }
     ]
   },
   "quality": 0.35,
@@ -64,26 +70,6 @@ elevatedFrom:: [[Presentation%3A Conclusion]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:presentation-3-a-conclusion:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:de96e003015f3f55d9b488e6571cdd581889e9452a365111003b66fe0fe2b4e5"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The concluding slide deck section of a presentation on generative AI and its societal significance. It synthesises key points about AI's role in society, addresses audience takeaways, and acknowledges contributors, serving as the closing narrative arc for a structured public or academic AI presentation.

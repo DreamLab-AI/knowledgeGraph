@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bitstring-status-list",
   "domain": "governance",
-  "definition": "Bitstring Status List is a W3C specification for expressing the revocation or suspension status of Verifiable Credentials through a compressed, publicly-hosted bitstring in which each credential is assigned a position index; setting that bit to 1 indicates revocation without disclosing which specific credential holder triggered the change. The mechanism is privacy-preserving because verifiers observe only a large compressed list, not individual credential identifiers. It supersedes the earlier Credential Status List 2021 specification and is designed to be bandwidth-efficient and herd-privacy-compatible.",
+  "definition": "Bitstring Status List is a W3C specification for expressing the revocation or suspension status of Verifiable Credentials through a compressed, publicly-hosted bitstring in which each credential is assigned a position [private]; setting that bit to 1 indicates revocation without disclosing which specific credential holder triggered the change. The mechanism is privacy-preserving because verifiers observe only a large compressed list, not individual credential identifiers. It supersedes the earlier Credential Status List 2021 specification and is designed to be bandwidth-efficient and herd-privacy-compatible.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:revocation-mechanism",

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Cross-Chain Asset Transfer
----
-
-# Cross Chain Asset Transfer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,53 +20,145 @@ aliases:
   "definition": "Cross-chain asset transfer is the cryptographic and protocol-level process of moving digital assets — cryptocurrencies, fungible tokens, or non-fungible tokens — from one blockchain network to a distinct, independent blockchain network while preserving the asset's economic properties and enforcing integrity guarantees across the transfer. Because independent blockchains maintain no shared global state, protocols must ensure that an asset locked or burned on the source chain is atomically minted or released on the destination chain, preventing double-spend and maintaining supply conservation. Implementations range from hash time-locked contracts (HTLCs) and lock-and-mint bridge contracts overseen by validator committees to native inter-blockchain communication protocols (IBC) and zero-knowledge proof-based verification bridges that eliminate trusted attestors entirely.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cross-chain-interoperability",
+      "label": "Cross-Chain Interoperability"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
-      {"@id": "urn:ngm:class:light-client", "label": "Light Client"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"},
-      {"@id": "urn:ngm:class:cross-chain-liquidity", "label": "Cross-Chain Liquidity"},
-      {"@id": "urn:ngm:class:multi-chain-ecosystem", "label": "Multi-Chain Ecosystem"},
-      {"@id": "urn:ngm:class:wrapped-token", "label": "Wrapped Token"}
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-liquidity",
+        "label": "Cross-Chain Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:multi-chain-ecosystem",
+        "label": "Multi-Chain Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:validator-network", "label": "Validator Network"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:validator-network",
+        "label": "Validator Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
-      {"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"},
-      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:rollup", "label": "Rollup"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-exchange", "label": "Centralised Exchange"},
-      {"@id": "urn:ngm:class:wrapped-token", "label": "Wrapped Token"}
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:cosmos-ibc", "label": "Cosmos IBC"},
-      {"@id": "urn:ngm:class:polkadot-xcm", "label": "Polkadot XCM"}
+      {
+        "@id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "@id": "urn:ngm:class:polkadot-xcm",
+        "label": "Polkadot XCM"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:digital-asset-regulation", "label": "Digital Asset Regulation"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-regulation",
+        "label": "Digital Asset Regulation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cross-chain-token-transfer", "label": "Cross-Chain Token Transfer"},
-    {"@id": "urn:ngm:class:inter-blockchain-asset-transfer", "label": "Inter-Blockchain Asset Transfer"}
+    {
+      "@id": "urn:ngm:class:cross-chain-token-transfer",
+      "label": "Cross-Chain Token Transfer"
+    },
+    {
+      "@id": "urn:ngm:class:inter-blockchain-asset-transfer",
+      "label": "Inter-Blockchain Asset Transfer"
+    }
   ],
   "quality": 0.74,
   "provenance": {

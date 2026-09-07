@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Mandate
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,13 @@ public: true
   "vc:slug": "ai-mandate",
   "title": "AI Mandate",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Mandates", "Accenture", "Corporate HR Policy", "Corporate Policy Trend", "Workplace Technology"],
+  "vc:outboundWikilinks": [
+    "AI Mandates",
+    "Accenture",
+    "Corporate HR Policy",
+    "Corporate Policy Trend",
+    "Workplace Technology"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +27,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence"}, {"@id": "urn:ngm:class:ai-adoption-metrics", "label": "AI Adoption Metrics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption-metrics",
+        "label": "AI Adoption Metrics"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

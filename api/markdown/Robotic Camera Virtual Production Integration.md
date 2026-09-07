@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[VP robotics project]]
-# Robotic Camera Virtual Production Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,16 +42,34 @@ elevatedFrom:: [[VP robotics project]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
-      {"@id": "urn:ngm:class:virtual-set-design", "label": "Virtual Set Design"}
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-set-design",
+        "label": "Virtual Set Design"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:robotics-control", "label": "Robotics Control"}
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
     ]
   },
   "provenance": {
@@ -67,26 +79,6 @@ elevatedFrom:: [[VP robotics project]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:vp-robotics-project:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7ca35cb5451bcd106c87af3da0670326e1e54a41d32a6ebeef888a3384f6188b"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The **VP Robotics Project** (VisionFlow) is a feasibility study investigating the integration of robotic camera control with machine learning and virtual production workflows. It inverts conventional pre-visualisation pipelines by deriving scene-driven camera motion from AI-generated content, combining open-source robotics software with parallax-plates-as-a-service delivery for the film and television industry.
@@ -118,11 +110,11 @@ elevatedFrom:: [[VP robotics project]]
 		- Key features include the use of open-source AI and a simpler interface for non-artists to create 3D environments.
 		- The project will build upon the open-source Flossverse telecollaboration stack.
 		- Aligns with the competition's focus on integrating machine learning in video production.
-		- Assessor Feedback: Generally considered in scope, but involvement of a video production company could strengthen alignment.
+		- Assessor Feedback: Generally considered in scope, but involvement of a video production company [private] strengthen alignment.
 		- The project addresses the reluctance in the film industry to adopt AI and ML technologies due to tight margins and complexity.
 		- VisionFlow introduces "parallax plates as a service", integrating robotics with ML-based video generation.
 		- Key benefits include increased productivity in pre-visualization and improved collaboration.
-		- Assessor Feedback: Positive recognition of the project's potential to improve productivity in video content production. However, a closer association with a video production company could enhance the application's relevance and impact.
+		- Assessor Feedback: Positive recognition of the project's potential to improve productivity in video content production. However, a closer association with a video production company [private] enhance the application's relevance and impact.
 		- VisionFlow will integrate AI-generated video with robotics for innovative virtual production.
 		- Plans to develop new tele-collaboration technologies for virtual production.
 		- Focus on disrupting traditional workflows with more efficient solutions.

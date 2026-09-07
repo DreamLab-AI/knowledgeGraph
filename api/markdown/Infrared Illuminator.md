@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Infrared Illuminator
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:infrared-illuminator:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b280446456eca6be1ce52efdd88503608173fd401c6b5d43ccc0963addea690f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Dark Environment VR]]",
-      "resolved": "urn:visionflow:linked:dark-environment-vr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Tracking Hardware]]",
-      "resolved": "urn:visionflow:owl:class:tracking-hardware",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Light-emitting devices that project infrared wavelengths to enable VR/AR tracking sensors to function in low-light or dark environments, enhancing hand tracking accuracy, controller detection, and spatial awareness for immersive experiences.

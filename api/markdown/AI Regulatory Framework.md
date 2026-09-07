@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Regulatory Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-regulatory-framework",
   "title": "AI Regulatory Framework",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Data Center Infrastructure", "Grid Reliability", "White House AI Policy"],
+  "vc:outboundWikilinks": [
+    "Data Center Infrastructure",
+    "Grid Reliability",
+    "White House AI Policy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}, {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

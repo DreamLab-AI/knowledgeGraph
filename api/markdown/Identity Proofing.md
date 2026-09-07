@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Identity Proofing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Identity proofing is the process of collecting and validating evidence to establish that a claimed identity corresponds to a real, unique person before issuing credentials or granting access. It typically combines document verification, biometric checks, and authoritative-source confirmation, graded by assurance levels such as those defined in NIST SP 800-63A. Identity proofing precedes authentication and is foundational to trustworthy onboarding.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
   "relations": {
-    "partOf": [{"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}],
-    "relatedTo": [{"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}]
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ]
   },
   "quality": 0.72
 }

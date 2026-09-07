@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Packet Switching
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:packet-switching", "@type": "Page", "title": "Packet Switching", "vc:slug": "packet-switching", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:packet-switching",
+  "@type": "Page",
+  "title": "Packet Switching",
+  "vc:slug": "packet-switching",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

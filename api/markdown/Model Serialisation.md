@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Model Serialisation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -159,7 +153,7 @@ public: true
   - **Format trade-offs** — pickle/PT are convenient but unsafe; ONNX is portable but may not capture all operations; SafeTensors is safe and fast but weights-only.
   - **Architecture serialisation** — storing the model architecture alongside weights (e.g., `model.save()` in Keras) versus storing weights separately from a code-defined architecture.
   - **Quantisation compatibility** — quantised models require formats that can represent reduced-precision tensors (INT8, FP8); GGUF serves this niche for LLM inference.
-  - **Sharding** — models exceeding single-file size limits (e.g., HuggingFace `pytorch_model.bin.index.json`) use index files to map tensor names to shards.
+  - **Sharding** — models exceeding single-file size limits (e.g., HuggingFace `pytorch_model.bin.[private].json`) use [private] files to map tensor names to shards.
 
 - ### Applications
   - Saving training checkpoints during long runs to enable resumption after hardware failure.

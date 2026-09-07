@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Supply Chain Transparency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

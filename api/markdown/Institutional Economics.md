@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Institutional Economics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,46 +180,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:institutional-economics:3477eea09ca4",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d39a1671f3189454d6ce766a7da5194ce796a20f45042309b2c998f0077f636f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Economics]]",
-      "resolved": "urn:visionflow:linked:economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Property Rights]]",
-      "resolved": "urn:visionflow:linked:property-rights",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Behavioural Economics]]",
-      "resolved": "urn:visionflow:linked:behavioural-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Game Theory]]",
-      "resolved": "urn:visionflow:linked:game-theory",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

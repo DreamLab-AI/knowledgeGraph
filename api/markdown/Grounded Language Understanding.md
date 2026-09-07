@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Grounded Language Understanding
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:grounded-language-understanding", "@type": "Page", "title": "Grounded Language Understanding", "vc:slug": "grounded-language-understanding", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:grounded-language-understanding",
+  "@type": "Page",
+  "title": "Grounded Language Understanding",
+  "vc:slug": "grounded-language-understanding",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

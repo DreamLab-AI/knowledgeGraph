@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ai Art Categorization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,67 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-art-categorization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ef780b752d67f74465ef12d421fddaa4b287ee2a78a75cefc359299687bcf24f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Art Classification]]",
-      "resolved": "urn:visionflow:linked:art-classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Art Curation]]",
-      "resolved": "urn:visionflow:linked:art-curation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Art Historical Knowledge]]",
-      "resolved": "urn:visionflow:linked:art-historical-knowledge",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Authenticity Detection]]",
-      "resolved": "urn:visionflow:linked:authenticity-detection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Style Analysis]]",
-      "resolved": "urn:visionflow:linked:style-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI Art Categorization encompasses taxonomies, classification systems, and machine learning methods for organizing, labeling, and evaluating AI-generated and AI-assisted artworks based on creation methodology, style, medium, aesthetic properties, and the degree of autonomous system involvement in the creative process.

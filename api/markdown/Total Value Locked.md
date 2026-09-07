@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Total Value Locked
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

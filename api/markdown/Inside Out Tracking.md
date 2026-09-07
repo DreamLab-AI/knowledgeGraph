@@ -1,38 +1,116 @@
----
-public: true
----
-
-# Inside Out Tracking
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:inside-out-tracking", "@type":"Page", "title":"Inside Out Tracking", "vc:slug":"inside-out-tracking", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:inside-out-tracking",
+  "@type": "Page",
+  "title": "Inside Out Tracking",
+  "vc:slug": "inside-out-tracking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:inside-out-tracking",
-  "@type":"Class",
-  "label":"Inside Out Tracking",
-  "definition":"Inside-out tracking is a positional-tracking method in which cameras and sensors mounted on a head-mounted display observe the surrounding environment to determine the device's own pose in space. It requires no external base stations, computing six-degrees-of-freedom position and orientation from features detected in the scene. The approach underpins standalone virtual and mixed reality headsets by enabling self-contained spatial tracking.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:positional-tracking","label":"Positional Tracking"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"},{"@id":"urn:ngm:class:slam","label":"SLAM"}],
-    "hasPart":[{"@id":"urn:ngm:class:camera","label":"Camera"},{"@id":"urn:ngm:class:visual-inertial-odometry","label":"Visual-Inertial Odometry"}],
-    "requires":[{"@id":"urn:ngm:class:sensor-fusion","label":"Sensor Fusion"},{"@id":"urn:ngm:class:six-degrees-of-freedom","label":"Six Degrees of Freedom"}],
-    "enables":[{"@id":"urn:ngm:class:virtual-reality","label":"Virtual Reality"},{"@id":"urn:ngm:class:mixed-reality","label":"Mixed Reality"}],
-    "implements":[{"@id":"urn:ngm:class:motion-tracking","label":"Motion Tracking"}],
-    "dependsOn":[{"@id":"urn:ngm:class:head-mounted-display","label":"Head-Mounted Display"}],
-    "supports":[{"@id":"urn:ngm:class:spatial-mapping","label":"Spatial Mapping"}],
-    "partOf":[{"@id":"urn:ngm:class:tracking-system","label":"Tracking System"}],
-    "relatedTo":[{"@id":"urn:ngm:class:augmented-reality","label":"Augmented Reality"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:inside-out-tracking",
+  "@type": "Class",
+  "label": "Inside Out Tracking",
+  "definition": "Inside-out tracking is a positional-tracking method in which cameras and sensors mounted on a head-mounted display observe the surrounding environment to determine the device's own pose in space. It requires no external base stations, computing six-degrees-of-freedom position and orientation from features detected in the scene. The approach underpins standalone virtual and mixed reality headsets by enabling self-contained spatial tracking.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:positional-tracking",
+      "label": "Positional Tracking"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "@id": "urn:ngm:class:visual-inertial-odometry",
+        "label": "Visual-Inertial Odometry"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:six-degrees-of-freedom",
+        "label": "Six Degrees of Freedom"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

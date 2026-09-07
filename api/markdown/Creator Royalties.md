@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Creator Royalties
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -170,41 +165,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:creator-royalties:9a73ee9da0d7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c0dd42fc1db55e7919e470c7cbc721260f9b30e62eaf883f14b866e0d26afc43"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NFT]]",
-      "resolved": "urn:visionflow:linked:nft",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Creator Royalties]]",
-      "resolved": "urn:visionflow:linked:creator-royalties",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Creator royalties are automatic, programmable payments made to the original creator of a [[Digital Asset]] — most prominently an [[NFT]] — each time that asset changes hands on a [[Secondary Market]]. Unlike traditional [[Intellectual Property]] regimes where resale income does not flow back to the creator, royalties encoded in a [[Smart Contract]] (or enforced via marketplace policy) allow artists, musicians, game developers, and other digital creators to receive a percentage of every subsequent sale price. The mechanism underpins sustainable [[Creator Economy]] models on [[Blockchain]] networks but faces persistent tension between on-chain enforcement and marketplace discretion.
 
@@ -272,7 +232,7 @@ public: true
   - #### Regulatory Overlap
     - In some jurisdictions, resale royalty rights for physical art already exist in law (e.g., Artist's Resale Right / droit de suite under EU Directive 2001/84/EC).
     - NFT creator royalties are the digital analogue but lack equivalent legislative backing in most markets, making enforcement entirely market- or protocol-dependent.
-    - [[Web3]] legal scholars debate whether on-chain royalty obligations could one day be recognised as enforceable [[Smart Legal Contract]] provisions.
+    - [[Web3]] legal scholars debate whether on-chain royalty obligations [private] one day be recognised as enforceable [[Smart Legal Contract]] provisions.
 
 - ### Challenges and Limitations
   - **Enforcement fragility**: without protocol-level coercion, creators depend on marketplace goodwill, which erodes under competitive pressure from zero-royalty venues.

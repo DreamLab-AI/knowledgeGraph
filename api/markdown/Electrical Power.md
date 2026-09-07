@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Electrical Power
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Electrical Power is the rate at which electrical energy is transferred or consumed by a system, measured in watts. It is the fundamental resource that drives compute infrastructure, robotic actuators, sensors, and communications equipment. The availability, capacity, and efficiency of electrical power are primary constraints on data-centre scale and on the autonomy of mobile and robotic systems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}, {"@id": "urn:ngm:class:electric-actuator", "label": "Electric Actuator"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:electric-actuator",
+        "label": "Electric Actuator"
+      }
+    ]
   },
   "quality": 0.72
 }

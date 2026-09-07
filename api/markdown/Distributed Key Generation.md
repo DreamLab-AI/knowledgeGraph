@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Distributed Key Generation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

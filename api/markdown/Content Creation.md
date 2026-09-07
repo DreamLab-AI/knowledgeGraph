@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Content Creation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Content Creation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:creative-ai", "vc:label": "Creative AI"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:natural-language-generation", "vc:label": "Natural Language Generation"},
-    {"@id": "urn:visionflow:linked:text-to-image-model", "vc:label": "Text-to-Image Model"},
-    {"@id": "urn:visionflow:linked:synthetic-media", "vc:label": "Synthetic Media"},
-    {"@id": "urn:visionflow:linked:creator-economy", "vc:label": "Creator Economy"},
-    {"@id": "urn:visionflow:linked:digital-asset-management", "vc:label": "Digital Asset Management"},
-    {"@id": "urn:visionflow:linked:content-moderation", "vc:label": "Content Moderation"},
-    {"@id": "urn:visionflow:linked:digital-marketing", "vc:label": "Digital Marketing"},
-    {"@id": "urn:visionflow:linked:content-strategy", "vc:label": "Content Strategy"},
-    {"@id": "urn:visionflow:linked:content-discovery", "vc:label": "Content Discovery"},
-    {"@id": "urn:visionflow:linked:editorial-workflow", "vc:label": "Editorial Workflow"},
-    {"@id": "urn:visionflow:linked:brand-identity", "vc:label": "Brand Identity"},
-    {"@id": "urn:visionflow:linked:audience-engagement", "vc:label": "Audience Engagement"},
-    {"@id": "urn:visionflow:linked:search-engine-optimisation", "vc:label": "Search Engine Optimisation"},
-    {"@id": "urn:visionflow:linked:cloud-computing", "vc:label": "Cloud Computing"},
-    {"@id": "urn:visionflow:linked:content-delivery-network", "vc:label": "Content Delivery Network"},
-    {"@id": "urn:visionflow:linked:knowledge-management", "vc:label": "Knowledge Management"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:social-media-platform-infrastructure", "vc:label": "Social Media Platform Infrastructure"},
-    {"@id": "urn:visionflow:linked:content-curation", "vc:label": "Content Curation"},
-    {"@id": "urn:visionflow:linked:user-generated-content", "vc:label": "User-Generated Content"},
-    {"@id": "urn:visionflow:linked:media-production", "vc:label": "Media Production"},
-    {"@id": "urn:visionflow:linked:nft", "vc:label": "NFT"},
-    {"@id": "urn:visionflow:linked:spatial-content", "vc:label": "Spatial Content"},
-    {"@id": "urn:visionflow:linked:data-storytelling", "vc:label": "Data Storytelling"},
-    {"@id": "urn:visionflow:linked:digital-content-creation", "vc:label": "Digital Content Creation"},
-    {"@id": "urn:visionflow:linked:etsi-domain-creative-media", "vc:label": "ETSI Domain: Creative Media"},
-    {"@id": "urn:visionflow:linked:creative-tools", "vc:label": "Creative Tools"},
-    {"@id": "urn:visionflow:linked:recommendation-systems", "vc:label": "Recommendation Systems"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:digital-content", "vc:label": "Digital Content"},
-    {"@id": "urn:visionflow:linked:algorithmic-accountability", "vc:label": "Algorithmic Accountability"},
-    {"@id": "urn:visionflow:linked:generative-content", "vc:label": "Generative Content"},
-    {"@id": "urn:visionflow:linked:audio-generation", "vc:label": "Audio Generation"}
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-ai",
+      "vc:label": "Creative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-generation",
+      "vc:label": "Natural Language Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image-model",
+      "vc:label": "Text-to-Image Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-media",
+      "vc:label": "Synthetic Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:creator-economy",
+      "vc:label": "Creator Economy"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-asset-management",
+      "vc:label": "Digital Asset Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-moderation",
+      "vc:label": "Content Moderation"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-marketing",
+      "vc:label": "Digital Marketing"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-strategy",
+      "vc:label": "Content Strategy"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-discovery",
+      "vc:label": "Content Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:editorial-workflow",
+      "vc:label": "Editorial Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:brand-identity",
+      "vc:label": "Brand Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:audience-engagement",
+      "vc:label": "Audience Engagement"
+    },
+    {
+      "@id": "urn:visionflow:linked:search-engine-optimisation",
+      "vc:label": "Search Engine Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-delivery-network",
+      "vc:label": "Content Delivery Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-management",
+      "vc:label": "Knowledge Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-media-platform-infrastructure",
+      "vc:label": "Social Media Platform Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-curation",
+      "vc:label": "Content Curation"
+    },
+    {
+      "@id": "urn:visionflow:linked:user-generated-content",
+      "vc:label": "User-Generated Content"
+    },
+    {
+      "@id": "urn:visionflow:linked:media-production",
+      "vc:label": "Media Production"
+    },
+    {
+      "@id": "urn:visionflow:linked:nft",
+      "vc:label": "NFT"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-content",
+      "vc:label": "Spatial Content"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-storytelling",
+      "vc:label": "Data Storytelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-content-creation",
+      "vc:label": "Digital Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:etsi-domain-creative-media",
+      "vc:label": "ETSI Domain: Creative Media"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-tools",
+      "vc:label": "Creative Tools"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-systems",
+      "vc:label": "Recommendation Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-content",
+      "vc:label": "Digital Content"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithmic-accountability",
+      "vc:label": "Algorithmic Accountability"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-content",
+      "vc:label": "Generative Content"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-generation",
+      "vc:label": "Audio Generation"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -74,112 +189,164 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"},
-      {"@id": "urn:ngm:class:creative-tools", "label": "Creative Tools"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:natural-language-generation", "label": "Natural Language Generation"},
-      {"@id": "urn:ngm:class:text-to-image-model", "label": "Text-to-Image Model"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "@id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image-model",
+        "label": "Text-to-Image Model"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
-      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media Platform Infrastructure"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
-      {"@id": "urn:ngm:class:digital-marketing", "label": "Digital Marketing"},
-      {"@id": "urn:ngm:class:audience-engagement", "label": "Audience Engagement"}
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:social-media-platform-infrastructure",
+        "label": "Social Media Platform Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:audience-engagement",
+        "label": "Audience Engagement"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"},
-      {"@id": "urn:ngm:class:editorial-workflow", "label": "Editorial Workflow"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:editorial-workflow",
+        "label": "Editorial Workflow"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:brand-identity", "label": "Brand Identity"},
-      {"@id": "urn:ngm:class:search-engine-optimisation", "label": "Search Engine Optimisation"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:brand-identity",
+        "label": "Brand Identity"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:content-curation", "label": "Content Curation"},
-      {"@id": "urn:ngm:class:user-generated-content", "label": "User-Generated Content"}
+      {
+        "@id": "urn:ngm:class:content-curation",
+        "label": "Content Curation"
+      },
+      {
+        "@id": "urn:ngm:class:user-generated-content",
+        "label": "User-Generated Content"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
-      {"@id": "urn:ngm:class:generative-content", "label": "Generative Content"},
-      {"@id": "urn:ngm:class:etsi-domain-creative-media", "label": "ETSI Domain: Creative Media"},
-      {"@id": "urn:ngm:class:media-production", "label": "Media Production"},
-      {"@id": "urn:ngm:class:content-strategy", "label": "Content Strategy"},
-      {"@id": "urn:ngm:class:content-discovery", "label": "Content Discovery"},
-      {"@id": "urn:ngm:class:recommendation-systems", "label": "Recommendation Systems"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-creative-media",
+        "label": "ETSI Domain: Creative Media"
+      },
+      {
+        "@id": "urn:ngm:class:media-production",
+        "label": "Media Production"
+      },
+      {
+        "@id": "urn:ngm:class:content-strategy",
+        "label": "Content Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
-    {"@id": "urn:ngm:class:media-production", "label": "Media Production"}
+    {
+      "@id": "urn:ngm:class:digital-content-creation",
+      "label": "Digital Content Creation"
+    },
+    {
+      "@id": "urn:ngm:class:media-production",
+      "label": "Media Production"
+    }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:annotation:content-creation:link-resolutions",
-  "@type": "LinkResolutionsAnnotation",
-  "resolutions": [
-    {"wikilink": "Generative AI", "@id": "urn:ngm:class:generative-ai", "status": "resolved"},
-    {"wikilink": "Creative AI", "@id": "urn:ngm:class:creative-ai", "status": "resolved"},
-    {"wikilink": "Large Language Model", "@id": "urn:ngm:class:large-language-model", "status": "resolved"},
-    {"wikilink": "Natural Language Generation", "@id": "urn:ngm:class:natural-language-generation", "status": "resolved"},
-    {"wikilink": "Text-to-Image Model", "@id": "urn:ngm:class:text-to-image-model", "status": "resolved"},
-    {"wikilink": "Synthetic Media", "@id": "urn:ngm:class:synthetic-media", "status": "resolved"},
-    {"wikilink": "Creator Economy", "@id": "urn:ngm:class:creator-economy", "status": "resolved"},
-    {"wikilink": "Digital Asset Management", "@id": "urn:ngm:class:digital-asset-management", "status": "resolved"},
-    {"wikilink": "Content Moderation", "@id": "urn:ngm:class:content-moderation", "status": "resolved"},
-    {"wikilink": "Digital Marketing", "@id": "urn:ngm:class:digital-marketing", "status": "resolved"},
-    {"wikilink": "Content Strategy", "@id": "urn:ngm:class:content-strategy", "status": "resolved"},
-    {"wikilink": "Content Discovery", "@id": "urn:ngm:class:content-discovery", "status": "resolved"},
-    {"wikilink": "Editorial Workflow", "@id": "urn:ngm:class:editorial-workflow", "status": "resolved"},
-    {"wikilink": "Brand Identity", "@id": "urn:ngm:class:brand-identity", "status": "resolved"},
-    {"wikilink": "Audience Engagement", "@id": "urn:ngm:class:audience-engagement", "status": "resolved"},
-    {"wikilink": "Search Engine Optimisation", "@id": "urn:ngm:class:search-engine-optimisation", "status": "resolved"},
-    {"wikilink": "Cloud Computing", "@id": "urn:ngm:class:cloud-computing", "status": "resolved"},
-    {"wikilink": "Content Delivery Network", "@id": "urn:ngm:class:content-delivery-network", "status": "resolved"},
-    {"wikilink": "Knowledge Management", "@id": "urn:ngm:class:knowledge-management", "status": "resolved"},
-    {"wikilink": "Diffusion Model", "@id": "urn:ngm:class:diffusion-model", "status": "resolved"},
-    {"wikilink": "Multimodal AI", "@id": "urn:ngm:class:multimodal-ai-architecture-ai", "status": "resolved"},
-    {"wikilink": "Agentic AI", "@id": "urn:ngm:class:agentic-ai", "status": "resolved"},
-    {"wikilink": "Social Media Platform Infrastructure", "@id": "urn:ngm:class:social-media-platform-infrastructure", "status": "resolved"},
-    {"wikilink": "Content Curation", "@id": "urn:ngm:class:content-curation", "status": "resolved"},
-    {"wikilink": "User-Generated Content", "@id": "urn:ngm:class:user-generated-content", "status": "resolved"},
-    {"wikilink": "Media Production", "@id": "urn:ngm:class:media-production", "status": "resolved"},
-    {"wikilink": "NFT", "@id": "urn:ngm:class:nft", "status": "resolved"},
-    {"wikilink": "Spatial Content", "@id": "urn:ngm:class:spatial-content", "status": "resolved"},
-    {"wikilink": "Data Storytelling", "@id": "urn:ngm:class:data-storytelling", "status": "resolved"},
-    {"wikilink": "Digital Content Creation", "@id": "urn:ngm:class:digital-content-creation", "status": "resolved"},
-    {"wikilink": "ETSI Domain: Creative Media", "@id": "urn:ngm:class:etsi-domain-creative-media", "status": "resolved"},
-    {"wikilink": "Recommendation Systems", "@id": "urn:ngm:class:recommendation-systems", "status": "resolved"},
-    {"wikilink": "Deep Learning", "@id": "urn:ngm:class:deep-learning", "status": "resolved"},
-    {"wikilink": "Transformer Architecture", "@id": "urn:ngm:class:transformer-architecture", "status": "resolved"},
-    {"wikilink": "Natural Language Processing", "@id": "urn:ngm:class:natural-language-processing", "status": "resolved"},
-    {"wikilink": "Digital Content", "@id": "urn:ngm:class:digital-content", "status": "resolved"},
-    {"wikilink": "Algorithmic Accountability", "@id": "urn:ngm:class:algorithmic-accountability", "status": "resolved"},
-    {"wikilink": "Generative Content", "@id": "urn:ngm:class:generative-content", "status": "resolved"},
-    {"wikilink": "Audio Generation", "@id": "urn:ngm:class:audio-generation", "status": "resolved"},
-    {"wikilink": "Creative Tools", "@id": "urn:ngm:class:creative-tools", "status": "resolved"}
-  ]
 }
 ```
 

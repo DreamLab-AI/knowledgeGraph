@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Revision List]]
-# Practitioner Learning Roadmap Backlog
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[Revision List]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python PyTorch Deep Learning Stack"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "Python PyTorch Deep Learning Stack"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ]
   },
   "quality": 0.5,
@@ -67,26 +76,6 @@ elevatedFrom:: [[Revision List]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:revision-list:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1ff6a8d0b338c665b522d00fba65e7d604d02402937852192bcab61c8fe8b50b"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Revision List is a curated, task-tracked syllabus of technologies, frameworks, and concepts that a practitioner aims to learn or revisit, typically structured as a prioritised backlog with completion states. In a data science and AI context, such a list spans programming languages, ML frameworks, cloud platforms, DevOps tooling, and conceptual foundations such as deep learning, NLP, and reinforcement learning. It functions as a personal knowledge-gap audit and learning roadmap.

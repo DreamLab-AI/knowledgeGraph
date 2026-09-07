@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - PresenceDetection
----
-
-# Presence Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,26 +80,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:presence-detection:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d2c7f73339a232985942a2b42964cc34c23600e4c66787a6c6bd2d7f32943535"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Presence Detection is the real-time determination of whether a user, avatar, or entity is active and spatially located within a digital environment. It combines sensor fusion, computer vision, and network signalling to maintain accurate availability states, enabling responsive social interactions, attention-aware interfaces, and adaptive content delivery in spatial computing systems.

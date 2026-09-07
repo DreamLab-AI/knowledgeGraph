@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gnosis Safe
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,62 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gnosis-safe:06433cf4c172",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:046877ac47542e340c646e76d414f03f31339dd55e45e80a9389d33107b4f892"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multisignature Wallet]]",
-      "resolved": "urn:visionflow:linked:multisignature-wallet",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Treasury Management]]",
-      "resolved": "urn:visionflow:linked:treasury-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Snapshot]]",
-      "resolved": "urn:visionflow:linked:snapshot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Autonomous Organisation]]",
-      "resolved": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Gnosis Safe, later rebranded as Safe, is a smart-contract wallet for Ethereum and compatible networks that requires multiple signatures to authorise transactions. Rather than relying on a single private key, it enforces a configurable threshold, such as three of five owners, before funds move or contract calls execute. It is widely used by decentralised autonomous organisations, projects and individuals to manage treasuries and reduce the risk of a single compromised key.

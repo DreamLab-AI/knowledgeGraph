@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Expert Parallelism
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:expert-parallelism", "@type":"Page", "title":"Expert Parallelism", "vc:slug":"expert-parallelism", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:expert-parallelism",
+  "@type": "Page",
+  "title": "Expert Parallelism",
+  "vc:slug": "expert-parallelism",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,42 +21,88 @@ public: true
   "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": [
-    { "@id": "urn:ngm:class:model-parallelism", "label": "Model Parallelism" }
+    {
+      "@id": "urn:ngm:class:model-parallelism",
+      "label": "Model Parallelism"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:routing-network", "label": "Routing Network" },
-      { "@id": "urn:ngm:class:all-to-all-communication", "label": "All-to-All Communication" }
+      {
+        "@id": "urn:ngm:class:routing-network",
+        "label": "Routing Network"
+      },
+      {
+        "@id": "urn:ngm:class:all-to-all-communication",
+        "label": "All-to-All Communication"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:distributed-training", "label": "Distributed Training" }
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture of Experts" }
+      {
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture of Experts"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:sparse-activation", "label": "Sparse Activation" },
-      { "@id": "urn:ngm:class:collective-communication", "label": "Collective Communication" }
+      {
+        "@id": "urn:ngm:class:sparse-activation",
+        "label": "Sparse Activation"
+      },
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster" },
-      { "@id": "urn:ngm:class:load-balancing", "label": "Load Balancing" }
+      {
+        "@id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:tensor-parallelism", "label": "Tensor Parallelism" },
-      { "@id": "urn:ngm:class:data-parallelism", "label": "Data Parallelism" }
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:pipeline-parallelism", "label": "Pipeline Parallelism" },
-      { "@id": "urn:ngm:class:model-parallelism", "label": "Model Parallelism" }
+      {
+        "@id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:distributed-training", "label": "Distributed Training" }
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 
@@ -154,9 +204,9 @@ public: true
 
   ## About
 
-  Expert parallelism emerged from the intersection of two previously independent research threads: the [[Mixture of Experts]] paradigm for conditional computation in neural networks (Jacobs et al., 1991; Jordan & Jacobs, 1994) and the large-scale [[Distributed Training]] infrastructure developed for dense transformer models from 2018 onwards. The foundational insight enabling expert parallelism at scale was provided by Shazeer et al. (2017) in their seminal paper "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer," which demonstrated that a gating mechanism selecting a sparse top-k subset of experts per token could be integrated into recurrent neural network stacks and trained stably via [[Backpropagation]] when combined with an auxiliary load-balancing loss. This paper identified the core tension that defines expert parallelism to this day: routing tokens sparsely across experts achieves the parameter-efficiency goal, but it creates a load-balancing problem in which the popularity distribution of experts under the learned gating function can be highly non-uniform, causing compute imbalance and degraded training stability.
+  Expert parallelism emerged from the intersection of two previously independent research threads: the [[Mixture of Experts]] paradigm for conditional computation in neural networks (Jacobs et al., 1991; Jordan & Jacobs, 1994) and the large-scale [[Distributed Training]] infrastructure developed for dense transformer models from 2018 onwards. The foundational insight enabling expert parallelism at scale was provided by Shazeer et al. (2017) in their seminal paper "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer," which demonstrated that a gating mechanism selecting a sparse top-k subset of experts per token [private] be integrated into recurrent neural network stacks and trained stably via [[Backpropagation]] when combined with an auxiliary load-balancing loss. This paper identified the core tension that defines expert parallelism to this day: routing tokens sparsely across experts achieves the parameter-efficiency goal, but it creates a load-balancing problem in which the popularity distribution of experts under the learned gating function can be highly non-uniform, causing compute imbalance and degraded training stability.
 
-  The transition from single-machine [[Mixture of Experts]] to expert parallelism across distributed accelerators was driven by the scale of modern language model pre-training. GShard (Lepikhin et al., Google, 2020) was the first system to demonstrate expert parallelism at scale, training a 600-billion-parameter MoE Transformer for neural machine translation on 2,048 TPU v4 cores. GShard introduced the capacity factor — a hyperparameter limiting how many tokens any single expert can process in one batch, with excess tokens dropped or passed through residual connections — and random secondary routing (in the top-2 configuration, the primary expert is always the argmax of the gating scores, but the secondary expert is sampled with probability proportional to its score rather than chosen deterministically) to soften routing imbalance. Switch Transformer (Fedus et al., Google, 2021) simplified the gating to top-1 routing and demonstrated that even a single-expert routing strategy could achieve stable training with strong performance, scaling to a 1.6-trillion-parameter model across 2,048 TPU cores and establishing expert parallelism as a mainstream distributed training strategy rather than a research curiosity.
+  The transition from single-machine [[Mixture of Experts]] to expert parallelism across distributed accelerators was driven by the scale of modern language model pre-training. GShard (Lepikhin et al., Google, 2020) was the first system to demonstrate expert parallelism at scale, training a 600-billion-parameter MoE Transformer for neural machine translation on 2,048 TPU v4 cores. GShard introduced the capacity factor — a hyperparameter limiting how many tokens any single expert can process in one batch, with excess tokens dropped or passed through residual connections — and random secondary routing (in the top-2 configuration, the primary expert is always the argmax of the gating scores, but the secondary expert is sampled with probability proportional to its score rather than chosen deterministically) to soften routing imbalance. Switch Transformer (Fedus et al., Google, 2021) simplified the gating to top-1 routing and demonstrated that even a single-expert routing strategy [private] achieve stable training with strong performance, scaling to a 1.6-trillion-parameter model across 2,048 TPU cores and establishing expert parallelism as a mainstream distributed training strategy rather than a research curiosity.
 
   The defining characteristic of expert parallelism — that communication volume grows with expert count rather than with model depth — makes it qualitatively different from [[Tensor Parallelism]] and [[Pipeline Parallelism]]. In tensor parallelism, the communication per layer is fixed at two all-reduce operations regardless of model width. In expert parallelism, the all-to-all communication volume per MoE layer scales with the number of activated tokens times the expert hidden dimension, and the collective involves all-to-all routing that is fundamentally irregular and load-dependent in a way that all-reduce is not. The irregular, token-count-dependent nature of the all-to-all collective makes it significantly harder to overlap with computation than the structured all-reduce of data parallelism, and it creates performance sensitivity to routing imbalance that standard parallelism strategies do not share.
 
@@ -216,11 +266,11 @@ public: true
 
   The intellectual lineage of expert parallelism traces through three distinct research traditions. The [[Mixture of Experts]] paradigm originates with Jacobs, Jordan, Nowlan & Hinton (1991), who introduced the ensemble learning idea of multiple specialised sub-networks with a soft-gating combination mechanism. Jordan & Jacobs (1994) formalised this as a hierarchical mixture of experts (HME) with a tree-structured gating network, providing a generative model interpretation via the Expectation-Maximisation algorithm. These early models were small-scale supervised learning architectures without any connection to distributed computing or language modelling at scale.
 
-  The connection to large neural networks and conditional computation was articulated theoretically by Bengio et al. (2015) in "Conditional Computation in Neural Networks for Faster Models," which argued that sparse conditional computation could enable the training of much larger networks without proportionally increasing inference cost — the core efficiency argument that underpins expert parallelism. Shazeer et al. (2017) operationalised this for RNNs at token level, and demonstrated that with a noisy top-k routing mechanism and auxiliary load-balancing loss, MoE layers could be stably trained and outperformed dense baselines at equivalent parameter budget. This paper introduced the key training engineering elements — noisy top-k, capacity factor, auxiliary loss — that remain standard in 2026 implementations.
+  The connection to large neural networks and conditional computation was articulated theoretically by Bengio et al. (2015) in "Conditional Computation in Neural Networks for Faster Models," which argued that sparse conditional computation [private] enable the training of much larger networks without proportionally increasing inference cost — the core efficiency argument that underpins expert parallelism. Shazeer et al. (2017) operationalised this for RNNs at token level, and demonstrated that with a noisy top-k routing mechanism and auxiliary load-balancing loss, MoE layers [private] be stably trained and outperformed dense baselines at equivalent parameter budget. This paper introduced the key training engineering elements — noisy top-k, capacity factor, auxiliary loss — that remain standard in 2026 implementations.
 
-  The distributed systems aspect of expert parallelism was pioneered by GShard (Lepikhin et al., Google Brain, 2020), which demonstrated for the first time that all-to-all token routing across thousands of TPU cores could be implemented efficiently using XLA's automatic sharding and the GShard API. The Switch Transformer (Fedus et al., 2021) brought expert parallelism to the transformer architecture and demonstrated its benefits in a language modelling context, establishing top-1 routing as a viable simplification of the top-k approach. GLaM (Du et al., Google, NeurIPS 2021) trained a 1.2-trillion-parameter MoE language model and demonstrated improved sample efficiency relative to GPT-3 at equivalent training compute budget.
+  The distributed systems aspect of expert parallelism was pioneered by GShard (Lepikhin et al., Google Brain, 2020), which demonstrated for the first time that all-to-all token routing across thousands of TPU cores [private] be implemented efficiently using XLA's automatic sharding and the GShard API. The Switch Transformer (Fedus et al., 2021) brought expert parallelism to the transformer architecture and demonstrated its benefits in a language modelling context, establishing top-1 routing as a viable simplification of the top-k approach. GLaM (Du et al., Google, NeurIPS 2021) trained a 1.2-trillion-parameter MoE language model and demonstrated improved sample efficiency relative to GPT-3 at equivalent training compute budget.
 
-  The 2022–2024 period saw rapid industrialisation of expert parallelism. ST-MoE (Zoph et al., 2022) provided a systematic study of MoE training stability and the router z-loss for controlling gating confidence. Mixtral 8×7B (Mistral AI, 2024) was the first openly released frontier MoE LLM, demonstrating that top-2 routing with 8 experts could match or exceed Llama 2 70B at 2× lower active parameter count per token. DeepSeek-MoE (DeepSeek AI, 2024) pushed expert count to 64 fine-grained experts per layer, and DeepSeek-V3 (2024) to 256, demonstrating that very large expert populations with fine-grained routing could achieve state-of-the-art language model quality. Megatron-Core's Scalable MoE Training paper (2026) provides the most comprehensive publicly available treatment of production expert parallelism engineering, covering FP8 training support, hierarchical EP, and throughput benchmarking on GB200 NVL72.
+  The 2022–2024 period saw rapid industrialisation of expert parallelism. ST-MoE (Zoph et al., 2022) provided a systematic study of MoE training stability and the router z-loss for controlling gating confidence. Mixtral 8×7B (Mistral AI, 2024) was the first openly released frontier MoE LLM, demonstrating that top-2 routing with 8 experts [private] match or exceed Llama 2 70B at 2× lower active parameter count per token. DeepSeek-MoE (DeepSeek AI, 2024) pushed expert count to 64 fine-grained experts per layer, and DeepSeek-V3 (2024) to 256, demonstrating that very large expert populations with fine-grained routing [private] achieve state-of-the-art language model quality. Megatron-Core's Scalable MoE Training paper (2026) provides the most comprehensive publicly available treatment of production expert parallelism engineering, covering FP8 training support, hierarchical EP, and throughput benchmarking on GB200 NVL72.
 
   Key research groups include Google Brain / DeepMind (GShard, Switch Transformer, GLaM, ExpertChoice), Microsoft Research and NVIDIA (Megatron-Core, DeepSpeed-MoE), Mistral AI (Mixtral 8×7B, Mistral Large 3), and DeepSeek AI (DeepSeek-MoE, DeepSeek-V2, DeepSeek-V3). Academic groups at Carnegie Mellon University, MIT, the University of Edinburgh, and UCL contribute to MoE theory, routing algorithm design, and load-balancing research.
 
@@ -244,9 +294,9 @@ public: true
 
   ## Future Directions (2026–2030)
 
-  Several research and engineering directions will shape expert parallelism over the next four years. Adaptive expert population sizing — dynamically allocating GPUs to expert groups based on observed routing patterns during training — is an emerging research direction that could improve hardware utilisation over static expert assignment. Multi-granularity expert hierarchies (experts at different scales within the same model, from very coarse domain-level routing to fine-grained sub-token routing) may provide better performance than uniform expert size distributions.
+  Several research and engineering directions will shape expert parallelism over the next four years. Adaptive expert population sizing — dynamically allocating GPUs to expert groups based on observed routing patterns during training — is an emerging research direction that [private] improve hardware utilisation over static expert assignment. Multi-granularity expert hierarchies (experts at different scales within the same model, from very coarse domain-level routing to fine-grained sub-token routing) may provide better performance than uniform expert size distributions.
 
-  Expert parallelism and [[Federated Learning]] convergence is an emerging application: MoE models could enable privacy-preserving learning where different organisations contribute to expert populations without sharing raw data, with routing learning to direct queries towards appropriate institutional expertise. Expert pruning and knowledge distillation from large sparse MoE models to smaller dense models is an active research area, with methods such as MC-SMoE (2023) demonstrating that merged dense models can recover much of the MoE quality.
+  Expert parallelism and [[Federated Learning]] convergence is an emerging application: MoE models [private] enable privacy-preserving learning where different organisations contribute to expert populations without sharing raw data, with routing learning to direct queries towards appropriate institutional expertise. Expert pruning and knowledge distillation from large sparse MoE models to smaller dense models is an active research area, with methods such as MC-SMoE (2023) demonstrating that merged dense models can recover much of the MoE quality.
 
   Hardware evolution will continue to reshape expert parallelism trade-offs. Wafer-scale architectures (Cerebras WSE-3) reduce the all-to-all communication penalty for expert routing by placing experts within a single on-chip interconnect fabric. Optical interconnects for GPU clusters, expected in commercial deployments by 2028–2030, may reduce the bandwidth disparity between intra-node NVLink and inter-node InfiniBand, making large inter-node expert parallelism degrees more practical. Structured sparsity (2:4 sparsity native to NVIDIA Hopper and Blackwell) combined with expert sparsity opens the possibility of doubly-sparse models that exploit both per-expert activation sparsity and within-expert weight sparsity.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quantum AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,21 +52,54 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:quantum-computation-paradigm", "label": "Quantum Computation Paradigm"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"}
+      {
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:quantum-network-node", "label": "Quantum Network Node"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-network-node",
+        "label": "Quantum Network Node"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +109,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:quantum-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:610aee895823bdb547aeb4da2fcd447d6bf833d2973e058e7b7a61ede9051024"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Quantum AI is a research area at the intersection of quantum computing and artificial intelligence, applying quantum mechanical phenomena — superposition, entanglement, and interference — to accelerate or qualitatively improve machine learning algorithms, combinatorial optimisation, and probabilistic inference.

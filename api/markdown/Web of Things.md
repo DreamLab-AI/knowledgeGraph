@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Web of Things
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

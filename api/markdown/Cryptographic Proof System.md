@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cryptographic Proof System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "A cryptographic proof system is a formal protocol allowing one party (a prover) to convince another party (a verifier) of the truth of a statement without revealing any information beyond the validity of that statement. These systems provide mathematical guarantees of soundness, completeness, and, in zero-knowledge variants, zero information leakage.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:zk-snarks", "label": "ZK-SNARKs"},
-      {"@id": "urn:ngm:class:zk-starks", "label": "ZK-STARKs"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      },
+      {
+        "@id": "urn:ngm:class:zk-starks",
+        "label": "ZK-STARKs"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cryptographic-proofs", "label": "Cryptographic Proofs"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - The ecosystem of proof systems spans general-purpose proving frameworks (Groth16, PLONK, Halo2, STARK), domain-specific compilers (Circom, Cairo, Noir), and virtual machine targets (zkEVM, RISC Zero). These tools allow developers to write high-level constraint programs that compile to circuits verifiable on-chain, enabling confidential computations, private transactions, and verifiable off-chain execution.
 
   - In 2024-2025, proof system performance has advanced dramatically: hardware acceleration via GPUs and FPGAs, recursive proof composition enabling proof aggregation at scale, and folding schemes (Nova, SuperNova) are enabling zkRollups to achieve throughputs approaching centralised systems. The field is converging on standardised proof formats and hardware-friendly hash functions such as Poseidon, making cryptographic proof systems a cornerstone of trustless computation infrastructure.
-

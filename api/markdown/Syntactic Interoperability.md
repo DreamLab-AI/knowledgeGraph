@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Syntactic Interoperability
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

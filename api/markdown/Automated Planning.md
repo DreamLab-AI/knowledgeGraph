@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automated Planning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,42 +188,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:automated-planning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:daa9d05954005c86cdf630549096652bd9aff459c8eb09aee4ed817b23d1b5e2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Autonomous Systems]]",
-      "resolved": "urn:visionflow:linked:autonomous-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Planning and Scheduling]]",
-      "resolved": "urn:visionflow:owl:class:planning-and-scheduling",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Automated Planning is a concept within the ai domain.

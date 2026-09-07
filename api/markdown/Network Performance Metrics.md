@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Performance Metrics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Network Performance Metrics are quantitative measures used to characterise the operational quality of a communication network, encompassing latency, throughput, packet loss rate, jitter, and availability. These metrics are collected continuously from network devices, links, and endpoints to support quality-of-service enforcement, capacity planning, fault detection, and SLA compliance verification. They underpin all layers of network management from physical links to application-level experience.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:quality-of-service",
+      "label": "Quality Of Service"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
-      {"@id": "urn:ngm:class:internet-infrastructure", "label": "Internet Infrastructure"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
-      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"}
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"}
+      {
+        "@id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# oracle network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -209,7 +204,7 @@ public: true
     - Nodes form a **peer-to-peer network** off-chain, elect a leader, exchange signed observations, and produce a single signed aggregated report. Only one on-chain transaction is required per round, making OCR significantly more scalable than on-chain aggregation of individual node reports.
     - OCR is the architecture used by Chainlink v2+ and several competing networks, enabling hundreds of data feeds to operate cost-effectively.
   - #### Verifiable Random Function (VRF)
-    - Some oracle networks extend beyond data feeds to provide **provably fair randomness** via [[Verifiable Random Function]] cryptography. The node generates a random number and a cryptographic proof that the output was generated correctly from a seed the node could not have predicted. This serves blockchain gaming, [[NFT]] minting lotteries, and randomised protocol mechanics.
+    - Some oracle networks extend beyond data feeds to provide **provably fair randomness** via [[Verifiable Random Function]] cryptography. The node generates a random number and a cryptographic proof that the output was generated correctly from a seed the node [private] not have predicted. This serves blockchain gaming, [[NFT]] minting lotteries, and randomised protocol mechanics.
   - #### Cross-Chain Interoperability
     - Modern oracle networks are expanding into [[Cross-Chain Interoperability]] by providing **cross-chain messaging protocols** (e.g. CCIP — Cross-Chain Interoperability Protocol) that relay arbitrary messages and token transfers between heterogeneous blockchains under the same economic security model as their data feeds.
   - #### Proof of Reserve

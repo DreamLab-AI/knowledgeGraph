@@ -1,8 +1,3 @@
----
-public: true
----
-
-# data discovery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,22 +34,36 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:metadata-registry", "label": "Metadata Registry"},
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"}
+      {
+        "@id": "urn:ngm:class:metadata-registry",
+        "label": "Metadata Registry"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Data Discovery is the iterative process of locating, profiling, cataloguing, and contextualising data assets distributed across an organisation's storage systems, databases, data lakes, SaaS applications, and streaming pipelines to make them findable, understandable, and trustworthy for analytics, governance, and compliance purposes. It encompasses automated metadata extraction, schema inference, data profiling (statistical characterisation), lineage tracing (upstream/downstream dependencies), and classification (sensitivity tagging). Data Discovery is foundational to implementing Data Governance frameworks and enabling self-service analytics in data mesh and data fabric architectures.

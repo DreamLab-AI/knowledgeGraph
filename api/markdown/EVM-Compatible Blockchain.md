@@ -1,9 +1,3 @@
----
-public: true
----
-
-# EVM-Compatible Blockchain
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

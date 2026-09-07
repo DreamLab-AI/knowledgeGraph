@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transaction Finality
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -219,67 +214,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transaction-finality:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:57741e66a6801c61652d68fcc0d990c4dfa0eb4fe46c1b298ad3d0c00633baf5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Settlement]]",
-      "resolved": "urn:visionflow:linked:settlement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transaction Confirmation Time]]",
-      "resolved": "urn:visionflow:linked:transaction-confirmation-time",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deterministic Finality]]",
-      "resolved": "urn:visionflow:owl:class:deterministic-finality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Probabilistic Finality]]",
-      "resolved": "urn:visionflow:owl:class:probabilistic-finality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction]]",
-      "resolved": "urn:visionflow:owl:class:transaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Confirmation]]",
-      "resolved": "urn:visionflow:owl:class:transaction-confirmation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The point at which a blockchain transaction becomes irreversible and cannot be altered or removed, providing settlement certainty for participants. Finality types include probabilistic (increasing confidence with confirmations), deterministic (explicit protocol guarantee), and economic (cost to revert exceeds benefit).

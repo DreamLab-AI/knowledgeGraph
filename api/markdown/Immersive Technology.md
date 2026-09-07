@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ImmersiveTechnology
----
-
-# Immersive Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,42 +204,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:immersive-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:af3b215e40b16c25b0e3bc4a88bdf65d6160e267f4dcaed4db5506da3453e564"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Technology]]",
-      "resolved": "urn:visionflow:owl:class:digital-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-platform",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The collective technologies comprising virtual reality (VR), augmented reality (AR), mixed reality (MR), and extended reality (XR) that create digital experiences blending physical and virtual environments, enabling user presence and interaction within computer-generated or enhanced spaces.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dynamics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Dynamics is the branch of mechanics that studies the forces and torques that cause motion and the resulting accelerations of bodies. In robotics it provides the equations of motion that relate joint forces to accelerations, essential for force control, simulation, and model-based control. It contrasts with kinematics, which describes motion without reference to the forces that produce it.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}, {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
+    ]
   },
   "quality": 0.72
 }

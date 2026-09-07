@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Stable Diffusion]]
-# Stable Diffusion Image Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,32 +20,86 @@ elevatedFrom:: [[Stable Diffusion]]
   "definition": "Stable Diffusion is an open-source latent diffusion model developed by Stability AI in collaboration with CompVis and Runway, released in 2022, capable of generating high-quality images from text prompts. It operates in a compressed latent space rather than pixel space, dramatically reducing computational requirements compared to earlier diffusion models. The model supports text-to-image, image-to-image, and inpainting tasks, and has become the foundation for a large ecosystem of fine-tuned variants and extension tools.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}, {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:ngm:class:text-to-image",
+      "label": "Text-to-Image"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"}
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"},
-      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"}
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"}
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
     ]
   },
   "quality": 0.8

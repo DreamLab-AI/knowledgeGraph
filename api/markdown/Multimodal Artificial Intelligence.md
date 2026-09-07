@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multimodal Artificial Intelligence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Key Pair
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

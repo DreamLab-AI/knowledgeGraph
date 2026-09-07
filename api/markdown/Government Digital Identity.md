@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Government Digital Identity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Government digital identity is a state-issued or state-recognised electronic identity that citizens and residents use to prove who they are when accessing public and private services online. It provides identity proofing and authentication backed by authoritative government records, often within a national trust framework. It increasingly draws on verifiable credentials and decentralised identity standards to give users portable, privacy-preserving credentials.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}, {"@id": "urn:ngm:class:hyperledger-indy", "label": "Hyperledger Indy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      }
+    ]
   },
   "quality": 0.72
 }

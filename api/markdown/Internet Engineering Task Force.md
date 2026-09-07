@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Internet Engineering Task Force
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

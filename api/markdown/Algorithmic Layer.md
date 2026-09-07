@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Algorithmic Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:algorithmic-layer:dbcb8e633814",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:195d4aff20a15f9f88e691e03dee8385981967de05f44b45e5aef431cfa410a5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Compute Layer]]",
-      "resolved": "urn:visionflow:linked:compute-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Architecture Layer]]",
-      "resolved": "urn:visionflow:linked:model-architecture-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Model Layer]]",
-      "resolved": "urn:visionflow:linked:model-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computational Complexity Theory]]",
-      "resolved": "urn:visionflow:linked:computational-complexity-theory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Structure]]",
-      "resolved": "urn:visionflow:linked:data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Algorithmic Layer is the stratum that holds the step-by-step procedures a system uses to transform inputs into outputs. In the canonical stack it corresponds to the Algorithm Layer, sitting above the Compute Layer and below the Model strata that compose its primitives. It contains algorithms, data structures, and their complexity characteristics.

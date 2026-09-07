@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Rate Limiting
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

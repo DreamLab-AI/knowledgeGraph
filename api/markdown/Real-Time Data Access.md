@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time Data Access
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

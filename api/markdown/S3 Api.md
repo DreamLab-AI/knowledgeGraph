@@ -1,9 +1,3 @@
----
-public: true
----
-
-# S3 Api
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

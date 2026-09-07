@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Safety Assurance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Safety assurance is the systematic process of building and demonstrating justified confidence that a system will operate safely throughout its lifecycle. It draws on hazard analysis, structured safety cases, verification evidence, and continuous monitoring to argue that residual risk is acceptable. For autonomous and industrial systems it provides the evidentiary basis for deployment and regulatory acceptance.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}, {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      }
+    ]
   },
   "quality": 0.72
 }

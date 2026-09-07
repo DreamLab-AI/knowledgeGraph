@@ -1,13 +1,3 @@
----
-public: true
-aliases:
-  - "did:nostr"
-  - DID Nostr
-  - nostr-did
-  - DID-Nostr
----
-
-# did:nostr
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GPU Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,57 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gpu-architecture:4e412d7bf84f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:04e5e9772ead33c39f649092435a27196fc11ede08854d847237e4685b0c385e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Memory Hierarchy]]",
-      "resolved": "urn:visionflow:linked:memory-hierarchy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Parallel Computing]]",
-      "resolved": "urn:visionflow:linked:parallel-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPU Computing]]",
-      "resolved": "urn:visionflow:linked:gpu-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graphics Pipeline]]",
-      "resolved": "urn:visionflow:linked:graphics-pipeline",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Hardware]]",
-      "resolved": "urn:visionflow:linked:computer-hardware",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - GPU architecture describes the design of graphics processing units as massively parallel processors built around many simple cores, wide memory interfaces and hardware for graphics-specific tasks.

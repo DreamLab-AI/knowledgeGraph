@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Multi Agent RAG scrapbook]]
-# Multi-Agent RAG Architecture Compendium
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -99,42 +93,6 @@ elevatedFrom:: [[Multi Agent RAG scrapbook]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:multi-agent-rag-scrapbook:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2c328d9baea19ddffd1a18a8791f67f6d8c6f3cb2c3b644268f2cf92d0efc3ea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[David Tully]]",
-      "resolved": "urn:visionflow:linked:david-tully",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MUST]]",
-      "resolved": "urn:visionflow:linked:must",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Domain Expert Contact Index]]",
-      "resolved": "urn:visionflow:owl:class:people",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A research and literature collection exploring architectures in which multiple specialised AI agents collaborate through retrieval-augmented generation pipelines, combining knowledge graphs, ontologies, and constrained large language models to model complex social and environmental contexts in immersive environments. Covers formal ontology design, multi-modal data ingestion, and ethical deployment constraints.

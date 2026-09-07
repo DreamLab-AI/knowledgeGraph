@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cradle-to-Cradle Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Cradle-to-Cradle design is a sustainability framework in which products are conceived so that all materials become safe nutrients for biological or technical cycles, eliminating the concept of waste. It emphasises material health, reuse, renewable energy, and closed-loop recovery rather than the linear take-make-dispose model. It is a foundational design philosophy within the circular economy.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      }
+    ]
   },
   "quality": 0.72
 }

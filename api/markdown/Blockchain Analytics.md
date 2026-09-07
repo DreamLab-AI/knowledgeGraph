@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Blockchain Analytics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,30 +20,80 @@ public: true
   "definition": "Blockchain Analytics is the application of data-science, graph-analysis, and heuristic-clustering techniques to the publicly visible transaction records of distributed ledgers, with the aim of tracing fund flows, identifying entities, detecting illicit activity, and producing compliance intelligence for regulators and financial institutions. It encompasses on-chain transaction monitoring, address clustering, cross-chain tracing, DeFi flow analysis, and risk-scoring of wallets and counterparties. Leading commercial providers include Chainalysis, Elliptic, and TRM Labs, whose tooling has become integral to AML compliance programmes worldwide.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-analytics",
+      "label": "Data Analytics"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
-      {"@id": "urn:ngm:class:fatf-travel-rule", "label": "FATF Travel Rule"}
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:mi-ca-regulation", "label": "MiCA Regulation"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      }
     ]
   },
   "quality": 0.8

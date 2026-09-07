@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Situational Awareness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:situational-awareness:a381d0482489",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e4f4564525fe4330bcb8da7dea4cb796ad387a8c202aaccd075bac535796544e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Agent]]",
-      "resolved": "urn:visionflow:linked:autonomous-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Agent System]]",
-      "resolved": "urn:visionflow:linked:multi-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:linked:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics Domain]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Situational awareness is an agent's perception of relevant elements in its environment, comprehension of their meaning and projection of their near-future state, supporting timely decisions.

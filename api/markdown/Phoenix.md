@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Phoenix
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:phoenix:03a8f0dd8edb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4fe25c8675d860c69cbac7102a60267e5e662b6074a676b62d262265fc3a2a9e"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Lightning]]",
-      "resolved": "urn:visionflow:linked:lightning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BOLT12]]",
-      "resolved": "urn:visionflow:linked:bolt-12",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Lightning Service Provider]]",
-      "resolved": "urn:visionflow:linked:lightning-service-provider",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Wallet]]",
-      "resolved": "urn:visionflow:linked:wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://phoenix.acinq.co]]",
-      "resolved": "urn:visionflow:linked:https-phoenix-acinq-co",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://github.com/ACINQ/phoenix]]",
-      "resolved": "urn:visionflow:linked:https-github-com-acinq-phoenix",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Phoenix is a self-custodial Bitcoin Lightning wallet developed by ACINQ that manages channels automatically on behalf of the user. It is available as a mobile application.

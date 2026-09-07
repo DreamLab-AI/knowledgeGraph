@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tamper Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Tamper detection is the set of technical mechanisms and protocols that identify whether a digital asset, data record, physical device, or communication has been unauthorisedly modified since its creation or last verified state. In the digital domain it employs cryptographic hash functions, digital signatures, Merkle proofs, and content-addressed storage to generate verifiable commitments that reveal any change to the protected content. Applied to media authenticity, hardware integrity, and data provenance, tamper detection is a foundational component of trust architectures for critical systems, supply chains, digital forensics, and content authenticity verification.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-integrity",
+      "label": "Data Integrity"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-authentication", "label": "Content Authentication"},
-      {"@id": "urn:ngm:class:provenance-verification", "label": "Provenance Verification"},
-      {"@id": "urn:ngm:class:digital-forensics", "label": "Digital Forensics"}
+      {
+        "@id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:digital-forensics",
+        "label": "Digital Forensics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ]
   },
   "quality": 0.8

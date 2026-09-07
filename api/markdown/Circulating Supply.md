@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Circulating Supply
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,24 +83,60 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:total-supply", "label": "Total Supply"},
-      {"@id": "urn:ngm:class:fixed-supply-token", "label": "Fixed Supply Token"},
-      {"@id": "urn:ngm:class:halving", "label": "Halving"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:market-capitalization", "label": "Market Capitalization"}
+      {
+        "@id": "urn:ngm:class:total-supply",
+        "label": "Total Supply"
+      },
+      {
+        "@id": "urn:ngm:class:fixed-supply-token",
+        "label": "Fixed Supply Token"
+      },
+      {
+        "@id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:market-capitalization",
+        "label": "Market Capitalization"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:emission-schedule", "label": "Emission Schedule"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"}
+      {
+        "@id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:inflationary-token", "label": "Inflationary Token"},
-      {"@id": "urn:ngm:class:deflationary-token", "label": "Deflationary Token"}
+      {
+        "@id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      },
+      {
+        "@id": "urn:ngm:class:deflationary-token",
+        "label": "Deflationary Token"
+      }
     ]
   },
   "provenance": {
@@ -115,62 +146,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:circulating-supply:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a04d893c82db3b923aa7a468ce54a082a782bed6e46083cdf6dd8614bcbd1258"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Circulating Supply is the quantity of a blockchain token that is publicly available and actively tradeable in the market at a given point in time—excluding tokens locked in smart contracts, held in treasury reserves, vested to team members, or burned. It serves as the operative supply figure for computing market capitalisation and price-to-earnings metrics, and changes continuously as new tokens are emitted via block rewards and locked tokens are released according to vesting schedules.

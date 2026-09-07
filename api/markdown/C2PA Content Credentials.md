@@ -1,8 +1,3 @@
----
-public: true
----
-
-# c2pa content credentials
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -208,7 +203,7 @@ public: true
   - **Social Media Verification**: platforms including LinkedIn display the "CR" (Content Credentials) badge on images and videos where a valid manifest is found, allowing users to inspect the provenance chain. Meta and TikTok have announced C2PA integration roadmaps.
   - **Advertising and Brand Safety**: brands use Content Credentials to assert the authenticity of licensed commercial photography and detect unauthorised AI manipulation of brand assets in advertising supply chains.
   - **Legal Evidence**: body-worn camera footage and surveillance video credentialed at capture provides tamper-evidence for courtroom admission, replacing weaker chain-of-custody affidavit approaches.
-  - **Scientific and Medical Imaging**: clinical trial photography and satellite imagery workflows adopt Content Credentials to assert capture conditions and prevent manipulation that could corrupt downstream analysis.
+  - **Scientific and Medical Imaging**: clinical trial photography and satellite imagery workflows adopt Content Credentials to assert capture conditions and prevent manipulation that [private] corrupt downstream analysis.
   - **Gaming and Virtual Production**: game engines and virtual production tools (Unreal Engine) can embed credentials in rendered frames and composite shots to distinguish real-world capture from synthetic render.
 
 - ### Tooling and Ecosystem

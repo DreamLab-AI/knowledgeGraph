@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Chip Geopolitics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-chip-geopolitics",
   "title": "AI Chip Geopolitics",
   "vc:public": true,
-  "vc:outboundWikilinks": ["G42", "US Export Controls"],
+  "vc:outboundWikilinks": [
+    "G42",
+    "US Export Controls"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,31 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:export-controls", "label": "Export Controls"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:export-controls",
+      "label": "Export Controls"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:export-controls", "label": "Export Controls"}, {"@id": "urn:ngm:class:ai-chips", "label": "AI Chips"}, {"@id": "urn:ngm:class:competition-in-ai", "label": "Competition in AI"}, {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:export-controls",
+        "label": "Export Controls"
+      },
+      {
+        "@id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

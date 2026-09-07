@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[social media]]
-# Social Media Platform Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,20 +42,44 @@ elevatedFrom:: [[social media]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"}
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:social-platform", "label": "Social Platform"}
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:social-platform",
+        "label": "Social Platform"
+      }
     ]
   },
   "provenance": {
@@ -71,26 +89,6 @@ elevatedFrom:: [[social media]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:social-media:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3728bb33c7a97ab8be31056eb08b8fdf909597f9514349df3577c892094eab9f"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital platforms and applications that enable users to create, share, and interact with user-generated content within networked communities. Social media platforms combine content distribution infrastructure, algorithmic recommendation, identity and profile management, and real-time communication at scale. They are significant vectors for AI application (content moderation, recommendation, advertising optimisation) and raise governance challenges around bias, privacy, and misinformation.

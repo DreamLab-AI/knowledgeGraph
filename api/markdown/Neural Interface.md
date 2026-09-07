@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Neural Interface
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

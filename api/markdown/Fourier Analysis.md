@@ -1,37 +1,106 @@
----
-public: true
----
-
-# Fourier Analysis
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:fourier-analysis", "@type":"Page", "title":"Fourier Analysis", "vc:slug":"fourier-analysis", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:fourier-analysis",
+  "@type": "Page",
+  "title": "Fourier Analysis",
+  "vc:slug": "fourier-analysis",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:fourier-analysis",
-  "@type":"Class",
-  "label":"Fourier Analysis",
-  "definition":"Fourier analysis is the branch of mathematics that decomposes functions or signals into sums of sinusoidal components, representing them in terms of frequency rather than time or space. Its central tool, the Fourier transform, maps a signal to its spectrum, revealing periodicities and enabling operations such as filtering and convolution to be performed efficiently in the frequency domain. It is foundational to signal processing, communications, and many numerical and learning methods.",
-  "domain":"machine-learning",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}],
-  "relations":{
-    "dependsOn":[{"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"}],
-    "relatedTo":[{"@id":"urn:ngm:class:convolution","label":"Convolution"},{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"},{"@id":"urn:ngm:class:digital-signal-processing","label":"Digital Signal Processing"}],
-    "uses":[{"@id":"urn:ngm:class:fast-fourier-transform","label":"Fast Fourier Transform"}],
-    "enables":[{"@id":"urn:ngm:class:convolution","label":"Convolution"},{"@id":"urn:ngm:class:feature-extraction","label":"Feature Extraction"}],
-    "supports":[{"@id":"urn:ngm:class:digital-signal-processing","label":"Digital Signal Processing"}],
-    "hasPart":[{"@id":"urn:ngm:class:fast-fourier-transform","label":"Fast Fourier Transform"}],
-    "implements":[{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}],
-    "requires":[{"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:feature-extraction","label":"Feature Extraction"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fourier-analysis",
+  "@type": "Class",
+  "label": "Fourier Analysis",
+  "definition": "Fourier analysis is the branch of mathematics that decomposes functions or signals into sums of sinusoidal components, representing them in terms of frequency rather than time or space. Its central tool, the Fourier transform, maps a signal to its spectrum, revealing periodicities and enabling operations such as filtering and convolution to be performed efficiently in the frequency domain. It is foundational to signal processing, communications, and many numerical and learning methods.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

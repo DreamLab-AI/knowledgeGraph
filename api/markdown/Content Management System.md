@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Content Management System
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SaaS Pricing Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "saas-pricing-models",
   "title": "SaaS Pricing Models",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Productivity Multipliers", "Per-Seat Revenue Metrics"],
+  "vc:outboundWikilinks": [
+    "AI Productivity Multipliers",
+    "Per-Seat Revenue Metrics"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:software-as-a-service", "label": "Software As A Service"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-as-a-service",
+      "label": "Software As A Service"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:software-as-a-service", "label": "Software As A Service"}, {"@id": "urn:ngm:class:subscription-model", "label": "Subscription Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:software-as-a-service",
+        "label": "Software As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:subscription-model",
+        "label": "Subscription Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

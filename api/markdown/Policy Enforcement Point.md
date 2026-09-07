@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Policy Enforcement Point
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -191,7 +186,7 @@ public: true
     - Receives the decision (Permit, Deny, Indeterminate, or NotApplicable) and any obligations.
     - Enforces the decision: allows, blocks, or conditionally modifies the request/response.
     - Emits an [[Audit Logging]] record of the enforcement event.
-  - The "fail closed" principle is paramount: if the PEP cannot reach the PDP, it must deny access by default. A PEP that fails open would create a bypass vulnerability that could be exploited by disrupting the PDP.
+  - The "fail closed" principle is paramount: if the PEP cannot reach the PDP, it must deny access by default. A PEP that fails open would create a bypass vulnerability that [private] be exploited by disrupting the PDP.
   - The separation of concerns provided by the PEP–PDP pattern is directly analogous to the separation between a judge (PDP) and a bailiff (PEP) in a legal system — the enforcer need not understand policy reasoning, only act on the outcome.
 - ### Key Components
   - **PEP Core Interceptor** — the interception hook that captures requests before they reach the resource. May be implemented as:

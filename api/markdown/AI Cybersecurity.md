@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Cybersecurity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-cybersecurity",
   "title": "AI Cybersecurity",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Autonomous Agents", "Vulnerability Exploitation"],
+  "vc:outboundWikilinks": [
+    "Autonomous Agents",
+    "Vulnerability Exploitation"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "security",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}, {"@id": "urn:ngm:class:security", "label": "Security"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

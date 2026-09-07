@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Checkpoint
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A model checkpoint is a serialised snapshot of a machine learning model's learned parameters (weights), often including optimiser state, captured at a point during or after training. Checkpoints allow training to resume after interruption, enable model sharing and deployment, and support evaluation of intermediate states. They are typically stored in formats such as safetensors, PyTorch .pt, or framework-native files.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:safetensors", "label": "Safetensors"},
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"}
+      {
+        "@id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+        "label": "ComfyUI Workflows"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Audit Function
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "An organisational capability or dedicated unit responsible for the planning, execution, and reporting of audit activities within or on behalf of an enterprise. The audit function provides independent assurance over risk management, internal controls, and governance processes, acting as a critical third line of defence in enterprise risk frameworks.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:audit", "label": "Audit"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:audit",
+      "label": "Audit"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:audit-mechanism", "label": "Audit Mechanism"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:audit-mechanism",
+        "label": "Audit Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:risk-management-framework", "label": "Risk Management Framework"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management-framework",
+        "label": "Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ]
   },
   "quality": 0.8

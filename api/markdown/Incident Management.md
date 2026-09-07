@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Incident Management
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:incident-management", "@type":"Page", "title":"Incident Management", "vc:slug":"incident-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:incident-management",
+  "@type": "Page",
+  "title": "Incident Management",
+  "vc:slug": "incident-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,41 +21,90 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering" }
+    {
+      "@id": "urn:ngm:class:site-reliability-engineering",
+      "label": "Site Reliability Engineering"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:incident-response", "label": "Incident Response" },
-      { "@id": "urn:ngm:class:post-mortem", "label": "Post-Mortem" },
-      { "@id": "urn:ngm:class:escalation", "label": "Escalation" }
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:post-mortem",
+        "label": "Post-Mortem"
+      },
+      {
+        "@id": "urn:ngm:class:escalation",
+        "label": "Escalation"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:observability", "label": "Observability" },
-      { "@id": "urn:ngm:class:monitoring", "label": "Monitoring" },
-      { "@id": "urn:ngm:class:on-call", "label": "On-Call" }
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:on-call",
+        "label": "On-Call"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:alerting", "label": "Alerting" },
-      { "@id": "urn:ngm:class:runbook", "label": "Runbook" },
-      { "@id": "urn:ngm:class:root-cause-analysis", "label": "Root Cause Analysis" }
+      {
+        "@id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "@id": "urn:ngm:class:runbook",
+        "label": "Runbook"
+      },
+      {
+        "@id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:service-level-objective", "label": "Service Level Objective" }
+      {
+        "@id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:devops", "label": "DevOps" }
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:itil", "label": "ITIL" },
-      { "@id": "urn:ngm:class:chaos-engineering", "label": "Chaos Engineering" }
+      {
+        "@id": "urn:ngm:class:itil",
+        "label": "ITIL"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering" }
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

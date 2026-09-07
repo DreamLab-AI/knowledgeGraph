@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Organizational Structure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "ai-organizational-structure",
   "title": "AI Organizational Structure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Amazon", "Leadership Consolidation", "Peter DeSantis", "Tech Industry Trends"],
+  "vc:outboundWikilinks": [
+    "Amazon",
+    "Leadership Consolidation",
+    "Peter DeSantis",
+    "Tech Industry Trends"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}, {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}, {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automated Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,43 +7,154 @@ public: true
   "title": "Automated Design",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline" },
-    { "@id": "urn:visionflow:linked:algorithm", "vc:label": "Algorithm" },
-    { "@id": "urn:visionflow:linked:simulation", "vc:label": "Simulation" },
-    { "@id": "urn:visionflow:linked:generative-design", "vc:label": "Generative Design" },
-    { "@id": "urn:visionflow:linked:generative-design-tool", "vc:label": "Generative Design Tool" },
-    { "@id": "urn:visionflow:linked:hyperparameter-optimisation", "vc:label": "Hyperparameter Optimisation" },
-    { "@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification" },
-    { "@id": "urn:visionflow:linked:cad-software", "vc:label": "CAD Software" },
-    { "@id": "urn:visionflow:linked:constraint-based-design", "vc:label": "Constraint Based Design" },
-    { "@id": "urn:visionflow:linked:neural-architecture-search", "vc:label": "Neural Architecture Search" },
-    { "@id": "urn:visionflow:linked:topology-optimisation", "vc:label": "Topology Optimisation" },
-    { "@id": "urn:visionflow:linked:electronic-design-automation", "vc:label": "Electronic Design Automation" },
-    { "@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning" },
-    { "@id": "urn:visionflow:linked:evolutionary-algorithm", "vc:label": "Evolutionary Algorithm" },
-    { "@id": "urn:visionflow:linked:deep-generative-model", "vc:label": "Deep Generative Model" },
-    { "@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model" },
-    { "@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models" },
-    { "@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin" },
-    { "@id": "urn:visionflow:linked:smart-manufacturing", "vc:label": "Smart Manufacturing" },
-    { "@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation" },
-    { "@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network" },
-    { "@id": "urn:visionflow:linked:physics-simulation", "vc:label": "Physics Simulation" },
-    { "@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI" },
-    { "@id": "urn:visionflow:linked:foundation-models", "vc:label": "Foundation Models" },
-    { "@id": "urn:visionflow:linked:parametric-design-methodology", "vc:label": "Parametric Design Methodology" },
-    { "@id": "urn:visionflow:linked:automl", "vc:label": "AutoML" },
-    { "@id": "urn:visionflow:linked:additive-manufacturing", "vc:label": "Additive Manufacturing" },
-    { "@id": "urn:visionflow:linked:intellectual-property", "vc:label": "Intellectual Property" },
-    { "@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety" },
-    { "@id": "urn:visionflow:linked:surrogate-model", "vc:label": "Surrogate Model" },
-    { "@id": "urn:visionflow:linked:multi-objective-optimisation", "vc:label": "Multi-Objective Optimisation" },
-    { "@id": "urn:visionflow:linked:hardware-description-language", "vc:label": "Hardware Description Language" },
-    { "@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent" },
-    { "@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning" },
-    { "@id": "urn:visionflow:linked:explainability", "vc:label": "Explainability" },
-    { "@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop" },
-    { "@id": "urn:visionflow:linked:parametric-modeling", "vc:label": "Parametric Modeling" }
+    {
+      "@id": "urn:visionflow:linked:machine-learning-discipline",
+      "vc:label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm",
+      "vc:label": "Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation",
+      "vc:label": "Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-design",
+      "vc:label": "Generative Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-design-tool",
+      "vc:label": "Generative Design Tool"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-optimisation",
+      "vc:label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-verification",
+      "vc:label": "Formal Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:cad-software",
+      "vc:label": "CAD Software"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-based-design",
+      "vc:label": "Constraint Based Design"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-architecture-search",
+      "vc:label": "Neural Architecture Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:topology-optimisation",
+      "vc:label": "Topology Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:electronic-design-automation",
+      "vc:label": "Electronic Design Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-algorithm",
+      "vc:label": "Evolutionary Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-generative-model",
+      "vc:label": "Deep Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-manufacturing",
+      "vc:label": "Smart Manufacturing"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation",
+      "vc:label": "Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:physics-simulation",
+      "vc:label": "Physics Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-models",
+      "vc:label": "Foundation Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:parametric-design-methodology",
+      "vc:label": "Parametric Design Methodology"
+    },
+    {
+      "@id": "urn:visionflow:linked:automl",
+      "vc:label": "AutoML"
+    },
+    {
+      "@id": "urn:visionflow:linked:additive-manufacturing",
+      "vc:label": "Additive Manufacturing"
+    },
+    {
+      "@id": "urn:visionflow:linked:intellectual-property",
+      "vc:label": "Intellectual Property"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:surrogate-model",
+      "vc:label": "Surrogate Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-objective-optimisation",
+      "vc:label": "Multi-Objective Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hardware-description-language",
+      "vc:label": "Hardware Description Language"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-descent",
+      "vc:label": "Gradient Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:parametric-modeling",
+      "vc:label": "Parametric Modeling"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -64,45 +170,123 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:generative-design", "label": "Generative Design" },
-    { "@id": "urn:ngm:class:optimisation", "label": "Optimisation" }
+    {
+      "@id": "urn:ngm:class:generative-design",
+      "label": "Generative Design"
+    },
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search" },
-      { "@id": "urn:ngm:class:topology-optimisation", "label": "Topology Optimisation" },
-      { "@id": "urn:ngm:class:electronic-design-automation", "label": "Electronic Design Automation" },
-      { "@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation" }
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:topology-optimisation",
+        "label": "Topology Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-design-automation",
+        "label": "Electronic Design Automation"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline" },
-      { "@id": "urn:ngm:class:algorithm", "label": "Algorithm" },
-      { "@id": "urn:ngm:class:simulation", "label": "Simulation" },
-      { "@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm" },
-      { "@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model" },
-      { "@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network" },
-      { "@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning" },
-      { "@id": "urn:ngm:class:surrogate-model", "label": "Surrogate Model" }
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool" },
-      { "@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing" },
-      { "@id": "urn:ngm:class:digital-twin", "label": "Digital Twin" },
-      { "@id": "urn:ngm:class:auto-ml", "label": "AutoML" }
+      {
+        "@id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:formal-verification", "label": "Formal Verification" },
-      { "@id": "urn:ngm:class:cad-software", "label": "CAD Software" },
-      { "@id": "urn:ngm:class:constraint-based-design", "label": "Constraint Based Design" },
-      { "@id": "urn:ngm:class:additive-manufacturing", "label": "Additive Manufacturing" },
-      { "@id": "urn:ngm:class:intellectual-property", "label": "Intellectual Property" }
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:cad-software",
+        "label": "CAD Software"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-based-design",
+        "label": "Constraint Based Design"
+      },
+      {
+        "@id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation" },
-      { "@id": "urn:ngm:class:multi-objective-optimisation", "label": "Multi-Objective Optimisation" }
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:parametric-design-methodology", "label": "Parametric Design Methodology" }
+      {
+        "@id": "urn:ngm:class:parametric-design-methodology",
+        "label": "Parametric Design Methodology"
+      }
     ]
   },
   "quality": 0.88,
@@ -113,59 +297,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:automated-design:2026-06-20",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:automated-design"
-  },
-  "vc:resolutions": [
-    { "raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "ResolvedLink" },
-    { "raw": "[[Algorithm]]", "resolved": "urn:visionflow:linked:algorithm", "kind": "ResolvedLink" },
-    { "raw": "[[Simulation]]", "resolved": "urn:visionflow:linked:simulation", "kind": "ResolvedLink" },
-    { "raw": "[[Generative Design]]", "resolved": "urn:visionflow:linked:generative-design", "kind": "ResolvedLink" },
-    { "raw": "[[Generative Design Tool]]", "resolved": "urn:visionflow:linked:generative-design-tool", "kind": "StubLink" },
-    { "raw": "[[Hyperparameter Optimisation]]", "resolved": "urn:visionflow:linked:hyperparameter-optimisation", "kind": "StubLink" },
-    { "raw": "[[Formal Verification]]", "resolved": "urn:visionflow:linked:formal-verification", "kind": "StubLink" },
-    { "raw": "[[CAD Software]]", "resolved": "urn:visionflow:linked:cad-software", "kind": "StubLink" },
-    { "raw": "[[Constraint Based Design]]", "resolved": "urn:visionflow:linked:constraint-based-design", "kind": "StubLink" },
-    { "raw": "[[Neural Architecture Search]]", "resolved": "urn:visionflow:linked:neural-architecture-search", "kind": "StubLink" },
-    { "raw": "[[Topology Optimisation]]", "resolved": "urn:visionflow:linked:topology-optimisation", "kind": "StubLink" },
-    { "raw": "[[Electronic Design Automation]]", "resolved": "urn:visionflow:linked:electronic-design-automation", "kind": "StubLink" },
-    { "raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Evolutionary Algorithm]]", "resolved": "urn:visionflow:linked:evolutionary-algorithm", "kind": "StubLink" },
-    { "raw": "[[Deep Generative Model]]", "resolved": "urn:visionflow:linked:deep-generative-model", "kind": "ResolvedLink" },
-    { "raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink" },
-    { "raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink" },
-    { "raw": "[[Digital Twin]]", "resolved": "urn:visionflow:linked:digital-twin", "kind": "ResolvedLink" },
-    { "raw": "[[Smart Manufacturing]]", "resolved": "urn:visionflow:linked:smart-manufacturing", "kind": "StubLink" },
-    { "raw": "[[Optimisation]]", "resolved": "urn:visionflow:linked:optimisation", "kind": "StubLink" },
-    { "raw": "[[Graph Neural Network]]", "resolved": "urn:visionflow:linked:graph-neural-network", "kind": "ResolvedLink" },
-    { "raw": "[[Physics Simulation]]", "resolved": "urn:visionflow:linked:physics-simulation", "kind": "StubLink" },
-    { "raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "ResolvedLink" },
-    { "raw": "[[Foundation Models]]", "resolved": "urn:visionflow:linked:foundation-models", "kind": "ResolvedLink" },
-    { "raw": "[[Parametric Design Methodology]]", "resolved": "urn:visionflow:linked:parametric-design-methodology", "kind": "StubLink" },
-    { "raw": "[[AutoML]]", "resolved": "urn:visionflow:linked:automl", "kind": "StubLink" },
-    { "raw": "[[Additive Manufacturing]]", "resolved": "urn:visionflow:linked:additive-manufacturing", "kind": "StubLink" },
-    { "raw": "[[Intellectual Property]]", "resolved": "urn:visionflow:linked:intellectual-property", "kind": "StubLink" },
-    { "raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "ResolvedLink" },
-    { "raw": "[[Surrogate Model]]", "resolved": "urn:visionflow:linked:surrogate-model", "kind": "StubLink" },
-    { "raw": "[[Multi-Objective Optimisation]]", "resolved": "urn:visionflow:linked:multi-objective-optimisation", "kind": "StubLink" },
-    { "raw": "[[Hardware Description Language]]", "resolved": "urn:visionflow:linked:hardware-description-language", "kind": "StubLink" },
-    { "raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink" },
-    { "raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink" },
-    { "raw": "[[Explainability]]", "resolved": "urn:visionflow:linked:explainability", "kind": "ResolvedLink" },
-    { "raw": "[[Human-in-the-Loop]]", "resolved": "urn:visionflow:linked:human-in-the-loop", "kind": "ResolvedLink" },
-    { "raw": "[[Parametric Modeling]]", "resolved": "urn:visionflow:linked:parametric-modeling", "kind": "StubLink" }
-  ],
-  "prov:wasAttributedTo": { "@id": "did:nostr:enrichment-swarm" },
-  "prov:generatedAtTime": { "@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime" }
-}
-```
-
 
 - ### Definition
   - [[Automated Design]] encompasses computational approaches that accept design objectives, constraints, and performance metrics as inputs and produce optimised design artefacts without step-by-step human direction. The field spans [[Electronic Design Automation]] (EDA) for integrated circuits, [[Generative Design Tool]] products for structural engineering, [[Topology Optimisation]] for aerospace and automotive components, [[Neural Architecture Search]] (NAS) for [[Machine Learning Discipline]] model topologies, and [[Large Language Models]]-assisted [[Hardware Description Language]] generation for digital logic. The common unifying thread is algorithmic traversal of a design space guided by evaluation functions representing physical, functional, economic, or aesthetic criteria. Candidate designs are generated — by gradient-based methods, [[Evolutionary Algorithm]]s, [[Reinforcement Learning]], [[Deep Generative Model]]s, or combinations thereof — evaluated against the objective function, and used to update the search strategy, iterating until convergence criteria are met or computational budget is exhausted. [[Simulation]] provides physics-based feasibility evaluation for structural, thermal, and electromagnetic performance; [[Surrogate Model]]s accelerate this by learning to predict simulation outputs from design parameters at a fraction of the computational cost of full simulation. [[Formal Verification]] validates the logical correctness of automatically generated designs in digital logic and safety-critical software contexts where functional correctness must be guaranteed rather than sampled. [[CAD Software]] platforms serve as both input environments (encoding design constraints in parametric models) and output environments (rendering, manufacturing-readiness checking, and documentation of generated designs). [[Constraint Based Design]] defines the feasibility boundary within which the optimisation operates — preserving mounting interfaces, clearances, material limits, and manufacturing process constraints. The convergence of AI-assisted design space exploration, high-fidelity [[Physics Simulation]], and [[Digital Twin]] infrastructure is in 2025–2026 compressing product development cycles across semiconductor, aerospace, consumer electronics, and construction sectors whilst raising novel questions about design liability, [[Intellectual Property]] ownership, and the appropriate role of [[Human-in-the-Loop]] oversight in algorithmically generated engineering artefacts.
@@ -274,7 +405,7 @@ public: true
 
   ## About
 
-  Automated Design has roots reaching to the earliest days of digital computing. In the 1960s and 1970s, IBM and Bell Labs developed programs to automatically place and route transistors on integrated circuit layouts, driven by the rapidly increasing component counts that made manual placement impractical. By the 1980s, [[Electronic Design Automation]] vendors — most notably Cadence Design Systems (founded 1988) and Synopsys (founded 1986) — had constructed commercial tool suites covering logic synthesis, static timing analysis, placement and routing, and design-rule checking, enabling the semiconductor industry to scale from thousands to billions of transistors per die. These EDA tools represent the first industrially deployed automated design systems at scale, and the semiconductor industry's dependence on them remains total in 2026: no modern chip could be designed, verified, or manufactured without automated design tools at every stage of the development flow.
+  Automated Design has roots reaching to the earliest days of digital computing. In the 1960s and 1970s, IBM and Bell Labs developed programs to automatically place and route transistors on integrated circuit layouts, driven by the rapidly increasing component counts that made manual placement impractical. By the 1980s, [[Electronic Design Automation]] vendors — most notably Cadence Design Systems (founded 1988) and Synopsys (founded 1986) — had constructed commercial tool suites covering logic synthesis, static timing analysis, placement and routing, and design-rule checking, enabling the semiconductor industry to scale from thousands to billions of transistors per die. These EDA tools represent the first industrially deployed automated design systems at scale, and the semiconductor industry's dependence on them remains total in 2026: no modern chip [private] be designed, verified, or manufactured without automated design tools at every stage of the development flow.
 
   The structural mathematics underlying physical automated design emerged in parallel with EDA. Structural [[Topology Optimisation]], pioneered by Bendsøe and Kikuchi in 1988 through the Solid Isotropic Material with Penalisation (SIMP) method, provided a mathematically rigorous framework for redistributing material density within a finite-element design domain to minimise compliance (maximise stiffness) subject to volume constraints. SIMP iteratively solves the finite-element structural analysis equations, computes sensitivity gradients of the objective with respect to each element's material density, and applies [[Gradient Descent]] updates to move material toward regions where it contributes most to structural performance and away from regions where it contributes least. The process produces characteristic biomorphic lattice structures — forms that look organic because they have been optimised for the same physical laws that shaped biological structures through evolution. Early industrial SIMP applications appeared in aerospace: Airbus brackets, Boeing seat track fittings, and helicopter rotor hub components produced through topology-optimised designs and [[Additive Manufacturing]] achieved 30–70% mass reductions relative to conventional designs, directly translating to fuel and operational cost savings over the aircraft's lifetime.
 
@@ -331,7 +462,7 @@ public: true
 
   The structural optimisation community traces its lineage to the SIMP method of Bendsøe and Kikuchi (1988), the level-set method (Osher and Sethian, 1988), and the homogenisation approach (Bendsøe and Kikuchi, 1988). Sigmund and Maute's 2013 review "Topology Optimization Approaches" remains the canonical reference for the field, surveying density-based, level-set, and phase-field methods alongside their respective strengths and limitations. Andreassen et al.'s "Efficient Topology Optimization in MATLAB Using 88 Lines of Code" (2011) provided an accessible educational reference that has made topology optimisation widely available to researchers without specialist optimisation expertise.
 
-  Neural Architecture Search was founded by Zoph and Le's "Neural Architecture Search with Reinforcement Learning" (ICLR 2017), which demonstrated that [[Reinforcement Learning]] could discover competitive CNN architectures on CIFAR-10 despite requiring enormous compute (800 GPUs, 4 weeks). The field's efficiency trajectory was defined by subsequent work: Real et al. "Regularised Evolution for Image Classifier Architecture Search" (AAAI 2019) applied evolutionary strategies to NAS on ImageNet; Liu et al. "DARTS: Differentiable Architecture Search" (ICLR 2019) introduced continuous relaxation of architecture choices enabling [[Gradient Descent]]-based search; Cai et al. "Once-for-All: Train One Network and Specialise it for Efficient Deployment" (ICLR 2020) enabled architecture search at deployment time by training a single supernet from which device-specific sub-networks are extracted. The NAS survey by Elsken, Metzen, and Hutter (JMLR 2019) provides the canonical taxonomy of search strategies, search spaces, and performance estimation strategies.
+  Neural Architecture Search was founded by Zoph and Le's "Neural Architecture Search with Reinforcement Learning" (ICLR 2017), which demonstrated that [[Reinforcement Learning]] [private] discover competitive CNN architectures on CIFAR-10 despite requiring enormous compute (800 GPUs, 4 weeks). The field's efficiency trajectory was defined by subsequent work: Real et al. "Regularised Evolution for Image Classifier Architecture Search" (AAAI 2019) applied evolutionary strategies to NAS on ImageNet; Liu et al. "DARTS: Differentiable Architecture Search" (ICLR 2019) introduced continuous relaxation of architecture choices enabling [[Gradient Descent]]-based search; Cai et al. "Once-for-All: Train One Network and Specialise it for Efficient Deployment" (ICLR 2020) enabled architecture search at deployment time by training a single supernet from which device-specific sub-networks are extracted. The NAS survey by Elsken, Metzen, and Hutter (JMLR 2019) provides the canonical taxonomy of search strategies, search spaces, and performance estimation strategies.
 
   The LLM-for-EDA research community organised around the LLM4EDA survey (Zhong et al., arXiv:2401.12224, 2024) and the NSF Workshop on AI for Electronic Design Automation (arXiv:2601.14541, 2025), which identified seven key research challenges: natural language to RTL generation, simulation-driven design feedback, timing-aware floor-planning, multi-tool orchestration, safety and verification integration, IP protection for LLM-generated designs, and cross-domain transfer. The iDSE paper (arXiv:2505.22086, 2025) demonstrates LLM-navigated design space exploration in High-Level Synthesis, with agents iterating over pragma configurations guided by LLM reasoning about HLS compiler feedback.
 

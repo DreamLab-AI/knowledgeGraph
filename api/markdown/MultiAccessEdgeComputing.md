@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Multi-access Edge Computing
----
-
-# MultiAccessEdgeComputing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,20 +20,46 @@ aliases:
   "definition": "Multi-Access Edge Computing (MEC) is an ETSI-standardised architecture that places cloud-like compute and storage resources at the radio access network edge, enabling low-latency application hosting within milliseconds of end-user devices. It decouples latency-sensitive processing from centralised cloud data centres by co-locating compute with base stations and other network nodes.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
-      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"}
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:edge-orchestration", "label": "Edge Orchestration"},
-      {"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"}
+      {
+        "@id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fog-computing", "label": "Fog Computing"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {
+        "@id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
     ]
   },
   "quality": 0.8

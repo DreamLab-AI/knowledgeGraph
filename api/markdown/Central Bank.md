@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Central Bank
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,9 +172,9 @@ public: true
   - Central bank balance sheets expanded dramatically after the Global Financial Crisis (2008) and again during the COVID-19 pandemic, raising novel questions about exit strategies and the boundary between monetary and fiscal policy.
 
 - ### Applications and Use Cases
-  - **Inflation Management** — targeting a consumer price index (CPI) inflation rate (commonly 2%) by adjusting the policy rate and communication.
+  - **Inflation Management** — targeting a consumer price [private] (CPI) inflation rate (commonly 2%) by adjusting the policy rate and communication.
   - **Crisis Management** — acting as backstop lender during bank runs, sovereign debt crises, and liquidity freezes (e.g. the 2008 crisis, the 2020 market disruption).
-  - **Currency Stabilisation** — foreign exchange intervention to prevent disorderly depreciation or appreciation that could destabilise trade and domestic prices.
+  - **Currency Stabilisation** — foreign exchange intervention to prevent disorderly depreciation or appreciation that [private] destabilise trade and domestic prices.
   - **Payment Infrastructure** — operating real-time gross settlement systems (e.g. Fedwire in the US, CHAPS in the UK, TARGET2 in the eurozone) that underpin the [[Payment System]].
   - **CBDC Research and Pilot Issuance** — projects such as the digital euro, the digital yuan (e-CNY), the Bahamas Sand Dollar, and the Bank of England's digital pound investigation, all exploring how [[Central Bank Digital Currency]] can coexist with cash and private money.
   - **Macro-Prudential Oversight** — setting counter-cyclical capital buffers, loan-to-value limits, and systemic risk surcharges to prevent credit bubbles.

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - multi-task learning
----
-
-# Multi Task Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -97,37 +90,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:multi-task-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eb8855e8499e01a17f6dfe78342498c68f826f13d83aae53a4838c2a3500ed04"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multimodal]]",
-      "resolved": "urn:visionflow:owl:class:multimodal",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A machine learning paradigm where a model is trained simultaneously on multiple related tasks, sharing representations across tasks to improve generalization and efficiency. Multi-task learning leverages task relatedness to learn better features than training on each task independently.

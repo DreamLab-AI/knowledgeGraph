@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Celestia
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,4 +155,3 @@ public: true
   - Rollup teams building on Celestia publish their transaction data as blobs — namespaced data segments — to Celestia's block space. The rollup's sequencer orders transactions, but data availability is guaranteed by Celestia rather than the rollup itself. This reduces the security trust assumption: users need only verify that data is available (a statistical guarantee from DAS) rather than trusting the sequencer's honesty. Sovereign rollups on Celestia define their own settlement rules, enabling customisable state machine logic. Rollup-as-a-service platforms (Caldera, Conduit, AltLayer) have integrated Celestia as a data availability backend, making deployment of modular rollups accessible to application developers.
 
   - By 2025, Celestia has processed significant volumes of blob data from dozens of rollups including Manta Pacific, Dymension RollApps, and various OP Stack and Arbitrum Orbit deployments. Throughput capacity has grown with protocol upgrades increasing block size limits. The modular thesis has been validated by Ethereum's own EIP-4844 (proto-danksharding), which introduced blob transactions on Ethereum to reduce rollup data costs — directly inspired by Celestia's design. Competing data availability layers (EigenDA backed by EigenLayer, Avail by Polygon co-founder) have entered production, making the DA layer a competitive, commoditising infrastructure segment. Celestia continues to push the research frontier with full danksharding designs and SNARK-based validity proofs for data availability.
-

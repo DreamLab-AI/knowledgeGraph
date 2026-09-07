@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[krita]]
-# Open Source Digital Painting Application
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -49,16 +43,40 @@ elevatedFrom:: [[krita]]
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-art-application", "label": "Digital Art Application"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:creative-tools", "label": "Creative Tools"}
+      {
+        "@id": "urn:ngm:class:digital-art-application",
+        "label": "Digital Art Application"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client", "label": "ComfyUI Client"},
-      {"@id": "urn:ngm:class:python", "label": "Python"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client",
+        "label": "ComfyUI Client"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
     ]
   },
   "provenance": {
@@ -68,26 +86,6 @@ elevatedFrom:: [[krita]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:krita:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:80e60f690c1929a507fde3652f01187cfcb54f6c7897213975a66ec35da1ba41"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Krita** is an open-source raster graphics and digital painting application designed for professional illustrators, concept artists, and visual effects artists. Its plugin ecosystem includes krita-ai-diffusion, which provides an AI image-generation panel powered by a ComfyUI backend. Users can perform inpainting, outpainting, and image-to-image synthesis directly on canvas layers without leaving the application.

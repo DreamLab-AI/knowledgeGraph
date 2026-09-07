@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Facial Animation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

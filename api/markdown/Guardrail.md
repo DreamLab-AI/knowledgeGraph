@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Guardrail
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Guardrail",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:ai-safety", "vc:label": "AISafety" },
-    { "@id": "urn:visionflow:linked:content-moderation", "vc:label": "ContentModeration" },
-    { "@id": "urn:visionflow:linked:constrained-decoding", "vc:label": "ConstrainedDecoding" },
-    { "@id": "urn:visionflow:linked:constitutional-ai", "vc:label": "ConstitutionalAI" }
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AISafety"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-moderation",
+      "vc:label": "ContentModeration"
+    },
+    {
+      "@id": "urn:visionflow:linked:constrained-decoding",
+      "vc:label": "ConstrainedDecoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:constitutional-ai",
+      "vc:label": "ConstitutionalAI"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": { "@id": "did:nostr:ontology-mesh" },
-  "prov:generatedAtTime": { "@value": "2026-08-07T00:00:00Z", "@type": "xsd:dateTime" }
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-07T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,17 +44,32 @@ public: true
   "definition": "A programmable safety control placed around a language model or agent that inspects, constrains, or rewrites inputs and outputs to keep behaviour within a defined policy envelope. Guardrails operate at runtime as input filters, output validators, topic and PII detectors, schema or format enforcers, and tool-permission gates; they block, redact, or re-prompt when a violation is detected, providing an enforcement layer that is independent of, and complementary to, the alignment baked into the model itself.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": { "@id": "urn:ngm:class:ai-safety", "label": "AI Safety" },
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-safety",
+    "label": "AI Safety"
+  },
   "relations": {
     "uses": [
-      { "@id": "urn:ngm:class:content-moderation", "label": "Content Moderation" },
-      { "@id": "urn:ngm:class:constrained-decoding", "label": "Constrained Decoding" }
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:ai-safety", "label": "AI Safety" }
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI" }
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
     ]
   },
   "quality": 0.75,

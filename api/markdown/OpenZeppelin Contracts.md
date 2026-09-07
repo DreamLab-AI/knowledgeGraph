@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenZeppelin Contracts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "OpenZeppelin Contracts is a widely used open-source library of secure, audited, and reusable smart-contract components for Ethereum and EVM-compatible chains. It provides standard implementations of token interfaces such as ERC-20, ERC-721, and ERC-1155, along with access control, upgradeability, and security utilities. The library is a de facto baseline for safe smart-contract development, reducing the risk of common vulnerabilities.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao-tooling", "label": "DAO Tooling"},
-      {"@id": "urn:ngm:class:nft-minting", "label": "NFT Minting"}
+      {
+        "@id": "urn:ngm:class:dao-tooling",
+        "label": "DAO Tooling"
+      },
+      {
+        "@id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
     ]
   },
   "quality": 0.72

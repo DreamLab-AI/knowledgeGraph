@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Community Decision Making
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "The processes by which a defined community of stakeholders collectively identifies issues, deliberates alternatives, and reaches binding or advisory decisions about matters affecting shared resources, norms, or direction. It encompasses participatory design, public consultation, deliberative democracy mechanisms, and digital governance platforms that translate community preferences into actionable outcomes.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:collective-decision-making", "label": "Collective Decision Making"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:collective-decision-making",
+      "label": "Collective Decision Making"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:coordination-mechanisms", "label": "Coordination Mechanisms"},
-      {"@id": "urn:ngm:class:communication-tools", "label": "Communication Tools"}
+      {
+        "@id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:communication-tools",
+        "label": "Communication Tools"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
-      {"@id": "urn:ngm:class:collective-governance", "label": "Collective Governance"}
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:collective-governance",
+        "label": "Collective Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:conviction-voting", "label": "Conviction Voting"},
-      {"@id": "urn:ngm:class:collective-action", "label": "Collective Action"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
     ]
   },
   "quality": 0.8

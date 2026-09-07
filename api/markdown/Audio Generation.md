@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Audio Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -13,44 +8,158 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:generative-model", "vc:label": "Generative Model"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:latent-diffusion", "vc:label": "Latent Diffusion"},
-    {"@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:visionflow:linked:autoregressive-model", "vc:label": "Autoregressive Model"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:text-to-speech", "vc:label": "Text-to-Speech"},
-    {"@id": "urn:visionflow:linked:speech-synthesis", "vc:label": "Speech Synthesis"},
-    {"@id": "urn:visionflow:linked:voice-cloning", "vc:label": "Voice Cloning"},
-    {"@id": "urn:visionflow:linked:music-generation", "vc:label": "Music Generation"},
-    {"@id": "urn:visionflow:linked:audio-processing", "vc:label": "Audio Processing"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:neural-vocoder", "vc:label": "Neural Vocoder"},
-    {"@id": "urn:visionflow:linked:spectrogram", "vc:label": "Spectrogram"},
-    {"@id": "urn:visionflow:linked:audio-codec", "vc:label": "Audio Codec"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:extended-reality", "vc:label": "Extended Reality"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:linked:flow-matching", "vc:label": "Flow Matching"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:audio-feature-extraction", "vc:label": "Audio Feature Extraction"},
-    {"@id": "urn:visionflow:linked:psychoacoustics", "vc:label": "Psychoacoustics"},
-    {"@id": "urn:visionflow:linked:spatial-audio", "vc:label": "Spatial Audio"},
-    {"@id": "urn:visionflow:linked:music-information-retrieval", "vc:label": "Music Information Retrieval"},
-    {"@id": "urn:visionflow:linked:residual-vector-quantisation", "vc:label": "Residual Vector Quantisation"},
-    {"@id": "urn:visionflow:linked:score-based-generative-model", "vc:label": "Score-Based Generative Model"},
-    {"@id": "urn:visionflow:linked:ethical-ai", "vc:label": "Ethical AI"},
-    {"@id": "urn:visionflow:linked:intellectual-property", "vc:label": "Intellectual Property"},
-    {"@id": "urn:visionflow:linked:watermarking", "vc:label": "Watermarking"},
-    {"@id": "urn:visionflow:linked:real-time-inference", "vc:label": "Real-Time Inference"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"}
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion",
+      "vc:label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoregressive-model",
+      "vc:label": "Autoregressive Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-speech",
+      "vc:label": "Text-to-Speech"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-synthesis",
+      "vc:label": "Speech Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:voice-cloning",
+      "vc:label": "Voice Cloning"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-generation",
+      "vc:label": "Music Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-processing",
+      "vc:label": "Audio Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-vocoder",
+      "vc:label": "Neural Vocoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:spectrogram",
+      "vc:label": "Spectrogram"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-codec",
+      "vc:label": "Audio Codec"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-reality",
+      "vc:label": "Extended Reality"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:flow-matching",
+      "vc:label": "Flow Matching"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:audio-feature-extraction",
+      "vc:label": "Audio Feature Extraction"
+    },
+    {
+      "@id": "urn:visionflow:linked:psychoacoustics",
+      "vc:label": "Psychoacoustics"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-audio",
+      "vc:label": "Spatial Audio"
+    },
+    {
+      "@id": "urn:visionflow:linked:music-information-retrieval",
+      "vc:label": "Music Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:residual-vector-quantisation",
+      "vc:label": "Residual Vector Quantisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:score-based-generative-model",
+      "vc:label": "Score-Based Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:ethical-ai",
+      "vc:label": "Ethical AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:intellectual-property",
+      "vc:label": "Intellectual Property"
+    },
+    {
+      "@id": "urn:visionflow:linked:watermarking",
+      "vc:label": "Watermarking"
+    },
+    {
+      "@id": "urn:visionflow:linked:real-time-inference",
+      "vc:label": "Real-Time Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    }
   ]
 }
 ```
@@ -190,54 +299,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:visionflow:page:audio-generation:link-resolutions",
-  "@type": "LinkResolutionsAnnotation",
-  "resolutions": [
-    {"raw": "Generative AI", "@id": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "Generative Model", "@id": "urn:visionflow:linked:generative-model", "kind": "ResolvedLink"},
-    {"raw": "Diffusion Model", "@id": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "Latent Diffusion", "@id": "urn:visionflow:linked:latent-diffusion", "kind": "ResolvedLink"},
-    {"raw": "Generative Adversarial Network", "@id": "urn:visionflow:linked:generative-adversarial-network", "kind": "ResolvedLink"},
-    {"raw": "Autoregressive Model", "@id": "urn:visionflow:linked:autoregressive-model", "kind": "ResolvedLink"},
-    {"raw": "Neural Network", "@id": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "Deep Learning", "@id": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "Text-to-Speech", "@id": "urn:visionflow:linked:text-to-speech", "kind": "ResolvedLink"},
-    {"raw": "Speech Synthesis", "@id": "urn:visionflow:linked:speech-synthesis", "kind": "ResolvedLink"},
-    {"raw": "Voice Cloning", "@id": "urn:visionflow:linked:voice-cloning", "kind": "ResolvedLink"},
-    {"raw": "Music Generation", "@id": "urn:visionflow:linked:music-generation", "kind": "ResolvedLink"},
-    {"raw": "Audio Processing", "@id": "urn:visionflow:linked:audio-processing", "kind": "ResolvedLink"},
-    {"raw": "Transformer Architecture", "@id": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "Attention Mechanism", "@id": "urn:visionflow:linked:attention-mechanism", "kind": "ResolvedLink"},
-    {"raw": "Neural Vocoder", "@id": "urn:visionflow:linked:neural-vocoder", "kind": "StubLink"},
-    {"raw": "Spectrogram", "@id": "urn:visionflow:linked:spectrogram", "kind": "ResolvedLink"},
-    {"raw": "Audio Codec", "@id": "urn:visionflow:linked:audio-codec", "kind": "ResolvedLink"},
-    {"raw": "Natural Language Processing", "@id": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink"},
-    {"raw": "Large Language Models", "@id": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "Multimodal AI", "@id": "urn:visionflow:linked:multimodal-ai", "kind": "ResolvedLink"},
-    {"raw": "Extended Reality", "@id": "urn:visionflow:linked:extended-reality", "kind": "ResolvedLink"},
-    {"raw": "Speech Recognition", "@id": "urn:visionflow:linked:speech-recognition", "kind": "ResolvedLink"},
-    {"raw": "Convolutional Neural Network", "@id": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "Variational Autoencoder", "@id": "urn:visionflow:linked:variational-autoencoder", "kind": "StubLink"},
-    {"raw": "Flow Matching", "@id": "urn:visionflow:linked:flow-matching", "kind": "StubLink"},
-    {"raw": "Reinforcement Learning from Human Feedback", "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"},
-    {"raw": "Audio Feature Extraction", "@id": "urn:visionflow:linked:audio-feature-extraction", "kind": "ResolvedLink"},
-    {"raw": "Psychoacoustics", "@id": "urn:visionflow:linked:psychoacoustics", "kind": "StubLink"},
-    {"raw": "Spatial Audio", "@id": "urn:visionflow:linked:spatial-audio", "kind": "ResolvedLink"},
-    {"raw": "Music Information Retrieval", "@id": "urn:visionflow:linked:music-information-retrieval", "kind": "ResolvedLink"},
-    {"raw": "Residual Vector Quantisation", "@id": "urn:visionflow:linked:residual-vector-quantisation", "kind": "StubLink"},
-    {"raw": "Score-Based Generative Model", "@id": "urn:visionflow:linked:score-based-generative-model", "kind": "StubLink"},
-    {"raw": "Ethical AI", "@id": "urn:visionflow:linked:ethical-ai", "kind": "ResolvedLink"},
-    {"raw": "Intellectual Property", "@id": "urn:visionflow:linked:intellectual-property", "kind": "StubLink"},
-    {"raw": "Watermarking", "@id": "urn:visionflow:linked:watermarking", "kind": "StubLink"},
-    {"raw": "Real-Time Inference", "@id": "urn:visionflow:linked:real-time-inference", "kind": "StubLink"},
-    {"raw": "GPU Compute", "@id": "urn:visionflow:linked:gpu-compute", "kind": "ResolvedLink"}
-  ]
 }
 ```
 
@@ -425,7 +486,7 @@ public: true
     - The [[Ethical AI]] implications extend to workforce displacement: AI music generation platforms directly compete with session musicians, voiceover artists, foley recordists, and sound designers. Labour organisations including the Screen Actors Guild (SAG-AFTRA) and the British Equity union have negotiated AI voice use provisions into collective agreements as of 2024-2025, requiring consent and compensation for AI training on members' voice recordings.
 
   - ## Academic Context
-    - The theoretical foundations of audio generation trace to source-filter models of speech production (Fant, 1960), hidden Markov model (HMM) based synthesis systems (HTS, 2000s), and statistical parametric speech synthesis. The deep-learning era was initiated by WaveNet (van den Oord et al., 2016, DeepMind), which demonstrated that a convolutional autoregressive model could match human naturalness for the first time. The score-based generative model framework (Song & Ermon, 2020, 2021) provided the theoretical foundation for diffusion-based audio models, formalising the reverse stochastic differential equation that underpins AudioLDM and Stable Audio. CLAP (Contrastive Language-Audio Pre-training, Wu et al., 2023) extended the CLIP paradigm to audio, providing the text-audio embedding space used as conditioning in most current systems. The codec language model paradigm was crystallised by VALL-E (Wang et al., Microsoft, 2023), which demonstrated that a GPT-style model over EnCodec tokens could zero-shot clone any voice from 3 seconds of reference audio.
+    - The theoretical foundations of audio generation trace to source-filter models of speech production (Fant, 1960), hidden Markov model (HMM) based synthesis systems (HTS, 2000s), and statistical parametric speech synthesis. The deep-learning era was initiated by WaveNet (van den Oord et al., 2016, DeepMind), which demonstrated that a convolutional autoregressive model [private] match human naturalness for the first time. The score-based generative model framework (Song & Ermon, 2020, 2021) provided the theoretical foundation for diffusion-based audio models, formalising the reverse stochastic differential equation that underpins AudioLDM and Stable Audio. CLAP (Contrastive Language-Audio Pre-training, Wu et al., 2023) extended the CLIP paradigm to audio, providing the text-audio embedding space used as conditioning in most current systems. The codec language model paradigm was crystallised by VALL-E (Wang et al., Microsoft, 2023), which demonstrated that a GPT-style model over EnCodec tokens [private] zero-shot clone any voice from 3 seconds of reference audio.
     - Key research venues are ICASSP (IEEE International Conference on Acoustics, Speech, and Signal Processing), Interspeech, ISMIR (International Society for Music Information Retrieval), NeurIPS, ICLR, and IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP). The DCASE (Detection and Classification of Acoustic Scenes and Events) challenge community maintains annual evaluations of audio captioning and generation. Key industrial research groups include Meta AI (AudioCraft, EnCodec, AudioBox, AudioSeal), Google DeepMind (WaveNet, Voicebox-adjacent work, SynthID), Microsoft Research (VALL-E, VoiceCraft-Dub), Stability AI (Stable Audio), and ElevenLabs (proprietary production TTS). Academic groups at Stanford CCRMA (Centre for Computer Research in Music and Acoustics), Carnegie Mellon University, Edinburgh CSTR, and Queen Mary C4DM provide fundamental research underpinning commercial systems.
 
   - ## Computational Infrastructure and Deployment Constraints

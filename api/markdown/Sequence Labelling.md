@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Sequence Labelling
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

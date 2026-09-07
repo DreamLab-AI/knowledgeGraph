@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Real-Time Signal Processing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

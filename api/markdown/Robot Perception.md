@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robot Perception
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -202,62 +197,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robot-perception:53a64988608e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:111ebb0b0150791f58e4da71b5e7af0bd0d297687fa9d8d3cf0587e984d489f0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sensors]]",
-      "resolved": "urn:visionflow:linked:sensors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:linked:sensor-fusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SLAM]]",
-      "resolved": "urn:visionflow:linked:slam",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Machine_perception]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-machine-perception",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.ros.org/]]",
-      "resolved": "urn:visionflow:linked:https-www-ros-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Robot perception is the process by which a robot interprets sensor data to build an understanding of its environment and state.

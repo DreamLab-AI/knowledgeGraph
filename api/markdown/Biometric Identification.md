@@ -1,61 +1,118 @@
----
-public: true
----
-
-# Biometric Identification
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:biometric-identification", "@type":"Page", "title":"Biometric Identification", "vc:slug":"biometric-identification", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:biometric-identification",
+  "@type": "Page",
+  "title": "Biometric Identification",
+  "vc:slug": "biometric-identification",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:biometric-identification",
-  "@type":"Class",
-  "label":"Biometric Identification",
-  "definition":"Biometric identification is the recognition of an individual by measuring and matching distinctive physiological or behavioural characteristics, such as fingerprints, facial geometry, iris patterns, voice or gait. It captures a sample, extracts a feature template and compares it against enrolled templates to verify a claimed identity (one-to-one) or identify an unknown subject (one-to-many). It underpins access control, border management and device authentication, and raises significant privacy considerations.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:facial-recognition","label":"Facial Recognition"},
-      {"@id":"urn:ngm:class:fingerprint-recognition","label":"Fingerprint Recognition"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:biometric-identification",
+  "@type": "Class",
+  "label": "Biometric Identification",
+  "definition": "Biometric identification is the recognition of an individual by measuring and matching distinctive physiological or behavioural characteristics, such as fingerprints, facial geometry, iris patterns, voice or gait. It captures a sample, extracts a feature template and compares it against enrolled templates to verify a claimed identity (one-to-one) or identify an unknown subject (one-to-many). It underpins access control, border management and device authentication, and raises significant privacy considerations.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-verification",
+      "label": "Identity Verification"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:fingerprint-recognition",
+        "label": "Fingerprint Recognition"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"},
-      {"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:privacy-preserving","label":"Privacy Preserving"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:privacy-preserving",
+        "label": "Privacy Preserving"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"},
-      {"@id":"urn:ngm:class:liveness-detection","label":"Liveness Detection"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:liveness-detection","label":"Liveness Detection"},
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:iris-recognition","label":"Iris Recognition"},
-      {"@id":"urn:ngm:class:facial-recognition","label":"Facial Recognition"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:iris-recognition",
+        "label": "Iris Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:neural-network","label":"Neural Network"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:privacy-preserving","label":"Privacy Preserving"},
-      {"@id":"urn:ngm:class:liveness-detection","label":"Liveness Detection"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:privacy-preserving",
+        "label": "Privacy Preserving"
+      },
+      {
+        "@id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

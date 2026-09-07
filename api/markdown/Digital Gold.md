@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Gold
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Digital Gold is a conceptual and investment category that characterises a cryptocurrency—most commonly Bitcoin—as a bearer instrument that performs the monetary functions traditionally attributed to gold: a scarce, durable, fungible, portable, and divisible store of value that preserves purchasing power across time and political regimes without dependence on any issuing authority. The analogy rests on Bitcoin's algorithmically enforced supply cap of 21 million coins, its proof-of-work scarcity mechanism, and its censorship resistance, which proponents argue replicate or improve upon gold's monetary properties in a digital-native form. The digital gold thesis underpins institutional Bitcoin investment strategies and shapes regulatory and macroeconomic discourse about the role of cryptographic assets in global monetary systems.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard", "label": "Bitcoin Standard"},
-      {"@id": "urn:ngm:class:sound-money", "label": "Sound Money"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin As Money"},
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "@id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf", "label": "Bitcoin ETF"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
+        "label": "Bitcoin ETF"
+      }
     ]
   },
   "quality": 0.8
@@ -52,7 +73,7 @@ public: true
   - [[Digital Gold]] sits within the [[Cryptocurrency]] class but is distinguished from general [[Digital Currency]] by its explicit non-utility monetary framing: it does not aspire to function as a medium of everyday exchange but as a long-duration [[Sound Money]] store of value. It is philosophically grounded in the [[Bitcoin Standard]] argument and [[Bitcoin As Money]] literature, and contrasts sharply with [[Central Bank Digital Currency]] which represents state-issued programmable money. The [[Monetary Policy]] implications are central to its appeal—because supply is fixed rather than discretionary, it is argued to be immune to the inflationary debasement that state currencies undergo. The [[Bitcoin ETF]] approval cycle (US spot ETF approved January 2024) translated the digital gold thesis into mainstream financial instruments accessible via traditional brokerage accounts.
 
 - ### Content
-  - The term "digital gold" was applied to Bitcoin as early as 2010–2011 by online forum participants who observed that Bitcoin's proof-of-work mining resembled gold mining: increasing computational expenditure as the resource became scarcer, with a fixed asymptotic supply. Hal Finney, one of the first Bitcoin recipients, wrote in 2009 that Bitcoin could "back currency" in a vision strikingly similar to a gold-exchange standard. The phrase gained mainstream circulation through financial media coverage of the 2013 and 2017 bull markets, and was formally adopted by institutional investors including Fidelity and MicroStrategy in their 2020-2021 treasury allocation rationale documents.
+  - The term "digital gold" was applied to Bitcoin as early as 2010–2011 by online forum participants who observed that Bitcoin's proof-of-work mining resembled gold mining: increasing computational expenditure as the resource became scarcer, with a fixed asymptotic supply. Hal Finney, one of the first Bitcoin recipients, wrote in 2009 that Bitcoin [private] "back currency" in a vision strikingly similar to a gold-exchange standard. The phrase gained mainstream circulation through financial media coverage of the 2013 and 2017 bull markets, and was formally adopted by institutional investors including Fidelity and MicroStrategy in their 2020-2021 treasury allocation rationale documents.
 
   - The monetary properties attributed to Bitcoin in the digital gold framing are: scarcity (capped at 21 million coins with a deterministic issuance schedule halving every 210,000 blocks); divisibility (each bitcoin divisible to 100 million satoshis, far exceeding gold's practical divisibility); portability (any amount transferable across the internet within minutes); durability (the ledger is replicated across tens of thousands of nodes with no single point of failure); and fungibility (each unit of account is equivalent, though chain analysis has created practical distinctions that challenge this property). Proponents argue the digital form improves on physical gold's portability and divisibility while maintaining comparable scarcity guarantees.
 

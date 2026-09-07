@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Semantic Parsing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

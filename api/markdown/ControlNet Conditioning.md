@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ControlNet Conditioning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,58 +7,214 @@ public: true
   "title": "ControlNet Conditioning",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:stable-diffusion", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:visionflow:linked:latent-diffusion", "vc:label": "Latent Diffusion"},
-    {"@id": "urn:visionflow:linked:u-net", "vc:label": "U-Net"},
-    {"@id": "urn:visionflow:linked:zero-convolution", "vc:label": "Zero Convolution"},
-    {"@id": "urn:visionflow:linked:classifier-free-guidance", "vc:label": "Classifier-Free Guidance"},
-    {"@id": "urn:visionflow:linked:controlnet", "vc:label": "ControlNet"},
-    {"@id": "urn:visionflow:linked:control-net-and-similar-spatial-conditioning-systems", "vc:label": "ControlNet and Similar Spatial Conditioning Systems"},
-    {"@id": "urn:visionflow:linked:spatial-conditioning", "vc:label": "Spatial Conditioning"},
-    {"@id": "urn:visionflow:linked:conditioning-signal", "vc:label": "Conditioning Signal"},
-    {"@id": "urn:visionflow:linked:edge-detection", "vc:label": "Edge Detection"},
-    {"@id": "urn:visionflow:linked:canny-edge-detection", "vc:label": "Canny Edge Detection"},
-    {"@id": "urn:visionflow:linked:depth-estimation", "vc:label": "Depth Estimation"},
-    {"@id": "urn:visionflow:linked:pose-estimation", "vc:label": "Pose Estimation"},
-    {"@id": "urn:visionflow:linked:semantic-segmentation", "vc:label": "Semantic Segmentation"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:text-to-image", "vc:label": "Text-to-Image"},
-    {"@id": "urn:visionflow:linked:conditional-image-generation", "vc:label": "Conditional Image Generation"},
-    {"@id": "urn:visionflow:linked:generative-model", "vc:label": "Generative Model"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:adapter-tuning", "vc:label": "Adapter Tuning"},
-    {"@id": "urn:visionflow:linked:lora", "vc:label": "LoRA"},
-    {"@id": "urn:visionflow:linked:ip-adapter", "vc:label": "IP-Adapter"},
-    {"@id": "urn:visionflow:linked:textual-inversion", "vc:label": "Textual Inversion"},
-    {"@id": "urn:visionflow:linked:t2i-adapter", "vc:label": "T2I-Adapter"},
-    {"@id": "urn:visionflow:linked:comfyui-workflows", "vc:label": "ComfyUI Workflows"},
-    {"@id": "urn:visionflow:linked:node-based-diffusion-pipeline-interface", "vc:label": "Node-Based Diffusion Pipeline Interface"},
-    {"@id": "urn:visionflow:linked:fooocus", "vc:label": "Fooocus"},
-    {"@id": "urn:visionflow:linked:automatic1111", "vc:label": "Automatic1111"},
-    {"@id": "urn:visionflow:linked:hugging-face-diffusers", "vc:label": "Hugging Face Diffusers"},
-    {"@id": "urn:visionflow:linked:openpose", "vc:label": "OpenPose"},
-    {"@id": "urn:visionflow:linked:dwpose", "vc:label": "DWPose"},
-    {"@id": "urn:visionflow:linked:midas-depth-estimation", "vc:label": "MiDaS Depth Estimation"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:neural-network-architecture", "vc:label": "Neural Network Architecture"},
-    {"@id": "urn:visionflow:linked:backpropagation", "vc:label": "Backpropagation"},
-    {"@id": "urn:visionflow:linked:image-synthesis", "vc:label": "Conditional Image Synthesis"},
-    {"@id": "urn:visionflow:linked:video-generation", "vc:label": "Video Generation"},
-    {"@id": "urn:visionflow:linked:animatediff", "vc:label": "AnimateDiff"},
-    {"@id": "urn:visionflow:linked:inpainting", "vc:label": "Inpainting"},
-    {"@id": "urn:visionflow:linked:image-to-image", "vc:label": "Image-to-Image"},
-    {"@id": "urn:visionflow:linked:flux-1", "vc:label": "Flux.1"},
-    {"@id": "urn:visionflow:linked:sdxl", "vc:label": "SDXL"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:controlnet-plus-plus", "vc:label": "ControlNet++"},
-    {"@id": "urn:visionflow:linked:controlnet-xs", "vc:label": "ControlNet-XS"},
-    {"@id": "urn:visionflow:linked:skip-connection-injection", "vc:label": "Skip Connection Injection"},
-    {"@id": "urn:visionflow:linked:architectural-visualisation", "vc:label": "Architectural Visualisation"},
-    {"@id": "urn:visionflow:linked:pose-guided-image-generation", "vc:label": "Pose-Guided Image Generation"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"}
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion",
+      "vc:label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:u-net",
+      "vc:label": "U-Net"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-convolution",
+      "vc:label": "Zero Convolution"
+    },
+    {
+      "@id": "urn:visionflow:linked:classifier-free-guidance",
+      "vc:label": "Classifier-Free Guidance"
+    },
+    {
+      "@id": "urn:visionflow:linked:controlnet",
+      "vc:label": "ControlNet"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-net-and-similar-spatial-conditioning-systems",
+      "vc:label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-conditioning",
+      "vc:label": "Spatial Conditioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:conditioning-signal",
+      "vc:label": "Conditioning Signal"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-detection",
+      "vc:label": "Edge Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:canny-edge-detection",
+      "vc:label": "Canny Edge Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:depth-estimation",
+      "vc:label": "Depth Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:pose-estimation",
+      "vc:label": "Pose Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-segmentation",
+      "vc:label": "Semantic Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:visionflow:linked:conditional-image-generation",
+      "vc:label": "Conditional Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:adapter-tuning",
+      "vc:label": "Adapter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:lora",
+      "vc:label": "LoRA"
+    },
+    {
+      "@id": "urn:visionflow:linked:ip-adapter",
+      "vc:label": "IP-Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:textual-inversion",
+      "vc:label": "Textual Inversion"
+    },
+    {
+      "@id": "urn:visionflow:linked:t2i-adapter",
+      "vc:label": "T2I-Adapter"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfyui-workflows",
+      "vc:label": "ComfyUI Workflows"
+    },
+    {
+      "@id": "urn:visionflow:linked:node-based-diffusion-pipeline-interface",
+      "vc:label": "Node-Based Diffusion Pipeline Interface"
+    },
+    {
+      "@id": "urn:visionflow:linked:fooocus",
+      "vc:label": "Fooocus"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic1111",
+      "vc:label": "Automatic1111"
+    },
+    {
+      "@id": "urn:visionflow:linked:hugging-face-diffusers",
+      "vc:label": "Hugging Face Diffusers"
+    },
+    {
+      "@id": "urn:visionflow:linked:openpose",
+      "vc:label": "OpenPose"
+    },
+    {
+      "@id": "urn:visionflow:linked:dwpose",
+      "vc:label": "DWPose"
+    },
+    {
+      "@id": "urn:visionflow:linked:midas-depth-estimation",
+      "vc:label": "MiDaS Depth Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network-architecture",
+      "vc:label": "Neural Network Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:backpropagation",
+      "vc:label": "Backpropagation"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-synthesis",
+      "vc:label": "Conditional Image Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-generation",
+      "vc:label": "Video Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:animatediff",
+      "vc:label": "AnimateDiff"
+    },
+    {
+      "@id": "urn:visionflow:linked:inpainting",
+      "vc:label": "Inpainting"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-to-image",
+      "vc:label": "Image-to-Image"
+    },
+    {
+      "@id": "urn:visionflow:linked:flux-1",
+      "vc:label": "Flux.1"
+    },
+    {
+      "@id": "urn:visionflow:linked:sdxl",
+      "vc:label": "SDXL"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:controlnet-plus-plus",
+      "vc:label": "ControlNet++"
+    },
+    {
+      "@id": "urn:visionflow:linked:controlnet-xs",
+      "vc:label": "ControlNet-XS"
+    },
+    {
+      "@id": "urn:visionflow:linked:skip-connection-injection",
+      "vc:label": "Skip Connection Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:architectural-visualisation",
+      "vc:label": "Architectural Visualisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:pose-guided-image-generation",
+      "vc:label": "Pose-Guided Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -79,148 +230,233 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-    {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"},
-    {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+    {
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:zero-convolution", "label": "Zero Convolution"},
-      {"@id": "urn:ngm:class:u-net-encoder-copy", "label": "Trainable Encoder Copy"},
-      {"@id": "urn:ngm:class:conditioning-signal", "label": "Conditioning Signal"},
-      {"@id": "urn:ngm:class:skip-connection-injection", "label": "Skip Connection Injection"}
+      {
+        "@id": "urn:ngm:class:zero-convolution",
+        "label": "Zero Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:u-net-encoder-copy",
+        "label": "Trainable Encoder Copy"
+      },
+      {
+        "@id": "urn:ngm:class:conditioning-signal",
+        "label": "Conditioning Signal"
+      },
+      {
+        "@id": "urn:ngm:class:skip-connection-injection",
+        "label": "Skip Connection Injection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Pretrained Diffusion Model"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data Pairs"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Pretrained Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data Pairs"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:conditional-image-generation", "label": "Conditional Image Generation"},
-      {"@id": "urn:ngm:class:pose-guided-image-generation", "label": "Pose-Guided Image Generation"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:conditional-image-generation",
+        "label": "Conditional Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:pose-guided-image-generation",
+        "label": "Pose-Guided Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:adapter-tuning", "label": "Adapter Fine-tuning"},
-      {"@id": "urn:ngm:class:spatial-conditioning", "label": "Spatial Conditioning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:adapter-tuning",
+        "label": "Adapter Fine-tuning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-conditioning",
+        "label": "Spatial Conditioning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:u-net", "label": "U-Net"},
-      {"@id": "urn:ngm:class:zero-convolution", "label": "Zero Convolution"},
-      {"@id": "urn:ngm:class:classifier-free-guidance", "label": "Classifier-Free Guidance"},
-      {"@id": "urn:ngm:class:open-pose", "label": "OpenPose"},
-      {"@id": "urn:ngm:class:dwpose", "label": "DWPose"},
-      {"@id": "urn:ngm:class:midas", "label": "MiDaS Depth Estimation"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "@id": "urn:ngm:class:zero-convolution",
+        "label": "Zero Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:open-pose",
+        "label": "OpenPose"
+      },
+      {
+        "@id": "urn:ngm:class:dwpose",
+        "label": "DWPose"
+      },
+      {
+        "@id": "urn:ngm:class:midas",
+        "label": "MiDaS Depth Estimation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:lora", "label": "LoRA"},
-      {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"},
-      {"@id": "urn:ngm:class:textual-inversion", "label": "Textual Inversion"},
-      {"@id": "urn:ngm:class:t2i-adapter", "label": "T2I-Adapter"}
+      {
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:textual-inversion",
+        "label": "Textual Inversion"
+      },
+      {
+        "@id": "urn:ngm:class:t2i-adapter",
+        "label": "T2I-Adapter"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems", "label": "ControlNet and Similar Spatial Conditioning Systems"},
-      {"@id": "urn:ngm:class:edge-detection", "label": "Edge Detection"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:animatediff", "label": "AnimateDiff"},
-      {"@id": "urn:ngm:class:flux-1", "label": "Flux.1"},
-      {"@id": "urn:ngm:class:controlnet-plus-plus", "label": "ControlNet++"},
-      {"@id": "urn:ngm:class:controlnet-xs", "label": "ControlNet-XS"}
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
+        "label": "ControlNet and Similar Spatial Conditioning Systems"
+      },
+      {
+        "@id": "urn:ngm:class:edge-detection",
+        "label": "Edge Detection"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:animatediff",
+        "label": "AnimateDiff"
+      },
+      {
+        "@id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "@id": "urn:ngm:class:controlnet-plus-plus",
+        "label": "ControlNet++"
+      },
+      {
+        "@id": "urn:ngm:class:controlnet-xs",
+        "label": "ControlNet-XS"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"},
-      {"@id": "urn:ngm:class:automatic1111", "label": "Automatic1111"},
-      {"@id": "urn:ngm:class:architectural-visualisation", "label": "Architectural Visualisation"},
-      {"@id": "urn:ngm:class:image-to-image", "label": "Image-to-Image"},
-      {"@id": "urn:ngm:class:fooocus", "label": "Fooocus"}
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:automatic1111",
+        "label": "Automatic1111"
+      },
+      {
+        "@id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:image-to-image",
+        "label": "Image-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:fooocus",
+        "label": "Fooocus"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
-    {"@id": "urn:ngm:class:spatial-conditioning-mechanism", "label": "Spatial Conditioning Mechanism"}
+    {
+      "@id": "urn:ngm:class:control-net",
+      "label": "ControlNet"
+    },
+    {
+      "@id": "urn:ngm:class:spatial-conditioning-mechanism",
+      "label": "Spatial Conditioning Mechanism"
+    }
   ],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "EnrichmentEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:control-net-conditioning:b7d3e2f1a9c8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:control-net-conditioning"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[Stable Diffusion]]", "resolved": "urn:visionflow:linked:stable-diffusion", "kind": "ResolvedLink"},
-    {"raw": "[[Latent Diffusion]]", "resolved": "urn:visionflow:linked:latent-diffusion", "kind": "ResolvedLink"},
-    {"raw": "[[U-Net]]", "resolved": "urn:visionflow:linked:u-net", "kind": "ResolvedLink"},
-    {"raw": "[[Zero Convolution]]", "resolved": "urn:visionflow:linked:zero-convolution", "kind": "ResolvedLink"},
-    {"raw": "[[Classifier-Free Guidance]]", "resolved": "urn:visionflow:linked:classifier-free-guidance", "kind": "ResolvedLink"},
-    {"raw": "[[ControlNet]]", "resolved": "urn:visionflow:linked:controlnet", "kind": "ResolvedLink"},
-    {"raw": "[[ControlNet and Similar Spatial Conditioning Systems]]", "resolved": "urn:visionflow:linked:control-net-and-similar-spatial-conditioning-systems", "kind": "ResolvedLink"},
-    {"raw": "[[Spatial Conditioning]]", "resolved": "urn:visionflow:linked:spatial-conditioning", "kind": "StubLink"},
-    {"raw": "[[Conditioning Signal]]", "resolved": "urn:visionflow:linked:conditioning-signal", "kind": "StubLink"},
-    {"raw": "[[Edge Detection]]", "resolved": "urn:visionflow:linked:edge-detection", "kind": "ResolvedLink"},
-    {"raw": "[[Canny Edge Detection]]", "resolved": "urn:visionflow:linked:canny-edge-detection", "kind": "StubLink"},
-    {"raw": "[[Depth Estimation]]", "resolved": "urn:visionflow:linked:depth-estimation", "kind": "ResolvedLink"},
-    {"raw": "[[Pose Estimation]]", "resolved": "urn:visionflow:linked:pose-estimation", "kind": "ResolvedLink"},
-    {"raw": "[[Semantic Segmentation]]", "resolved": "urn:visionflow:linked:semantic-segmentation", "kind": "ResolvedLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:visionflow:linked:image-generation", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-Image]]", "resolved": "urn:visionflow:linked:text-to-image", "kind": "ResolvedLink"},
-    {"raw": "[[Conditional Image Generation]]", "resolved": "urn:visionflow:linked:conditional-image-generation", "kind": "StubLink"},
-    {"raw": "[[Generative Model]]", "resolved": "urn:visionflow:linked:generative-model", "kind": "ResolvedLink"},
-    {"raw": "[[Fine-Tuning]]", "resolved": "urn:visionflow:linked:fine-tuning", "kind": "ResolvedLink"},
-    {"raw": "[[Transfer Learning]]", "resolved": "urn:visionflow:linked:transfer-learning", "kind": "ResolvedLink"},
-    {"raw": "[[Adapter Tuning]]", "resolved": "urn:visionflow:linked:adapter-tuning", "kind": "StubLink"},
-    {"raw": "[[LoRA]]", "resolved": "urn:visionflow:linked:lora", "kind": "ResolvedLink"},
-    {"raw": "[[IP-Adapter]]", "resolved": "urn:visionflow:linked:ip-adapter", "kind": "ResolvedLink"},
-    {"raw": "[[Textual Inversion]]", "resolved": "urn:visionflow:linked:textual-inversion", "kind": "ResolvedLink"},
-    {"raw": "[[T2I-Adapter]]", "resolved": "urn:visionflow:linked:t2i-adapter", "kind": "StubLink"},
-    {"raw": "[[ComfyUI Workflows]]", "resolved": "urn:visionflow:linked:comfyui-workflows", "kind": "ResolvedLink"},
-    {"raw": "[[Node-Based Diffusion Pipeline Interface]]", "resolved": "urn:visionflow:linked:node-based-diffusion-pipeline-interface", "kind": "ResolvedLink"},
-    {"raw": "[[Fooocus]]", "resolved": "urn:visionflow:linked:fooocus", "kind": "ResolvedLink"},
-    {"raw": "[[Automatic1111]]", "resolved": "urn:visionflow:linked:automatic1111", "kind": "ResolvedLink"},
-    {"raw": "[[Hugging Face Diffusers]]", "resolved": "urn:visionflow:linked:hugging-face-diffusers", "kind": "StubLink"},
-    {"raw": "[[OpenPose]]", "resolved": "urn:visionflow:linked:openpose", "kind": "ResolvedLink"},
-    {"raw": "[[DWPose]]", "resolved": "urn:visionflow:linked:dwpose", "kind": "StubLink"},
-    {"raw": "[[MiDaS Depth Estimation]]", "resolved": "urn:visionflow:linked:midas-depth-estimation", "kind": "StubLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink"},
-    {"raw": "[[Neural Network Architecture]]", "resolved": "urn:visionflow:linked:neural-network-architecture", "kind": "ResolvedLink"},
-    {"raw": "[[Backpropagation]]", "resolved": "urn:visionflow:linked:backpropagation", "kind": "ResolvedLink"},
-    {"raw": "[[Conditional Image Synthesis]]", "resolved": "urn:visionflow:linked:image-synthesis", "kind": "StubLink"},
-    {"raw": "[[Video Generation]]", "resolved": "urn:visionflow:linked:video-generation", "kind": "ResolvedLink"},
-    {"raw": "[[AnimateDiff]]", "resolved": "urn:visionflow:linked:animatediff", "kind": "StubLink"},
-    {"raw": "[[Inpainting]]", "resolved": "urn:visionflow:linked:inpainting", "kind": "ResolvedLink"},
-    {"raw": "[[Image-to-Image]]", "resolved": "urn:visionflow:linked:image-to-image", "kind": "ResolvedLink"},
-    {"raw": "[[Flux.1]]", "resolved": "urn:visionflow:linked:flux-1", "kind": "ResolvedLink"},
-    {"raw": "[[SDXL]]", "resolved": "urn:visionflow:linked:sdxl", "kind": "StubLink"},
-    {"raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "[[ControlNet++]]", "resolved": "urn:visionflow:linked:controlnet-plus-plus", "kind": "StubLink"},
-    {"raw": "[[ControlNet-XS]]", "resolved": "urn:visionflow:linked:controlnet-xs", "kind": "StubLink"},
-    {"raw": "[[Skip Connection Injection]]", "resolved": "urn:visionflow:linked:skip-connection-injection", "kind": "StubLink"},
-    {"raw": "[[Architectural Visualisation]]", "resolved": "urn:visionflow:linked:architectural-visualisation", "kind": "ResolvedLink"},
-    {"raw": "[[Pose-Guided Image Generation]]", "resolved": "urn:visionflow:linked:pose-guided-image-generation", "kind": "StubLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "StubLink"}
-  ]
 }
 ```
 
@@ -355,7 +591,7 @@ public: true
       ```
 
   - ## About
-    - ControlNet Conditioning addresses a fundamental limitation of text-to-image [[Diffusion Model]]s: text prompts are semantically expressive but spatially imprecise. When a [[Generative AI]] system is asked to produce "a woman walking down a cobbled street in autumn light," no amount of prompt engineering reliably controls the exact body pose, depth layering, structural composition, or limb configuration of the result. ControlNet conditioning introduces a second, structured input — a spatial [[Conditioning Signal]] derived from [[Computer Vision]] preprocessing tools — that constrains the generative process at the pixel level. The conditioning signal could be a [[Canny Edge Detection]] binary edge map, a monocular [[Depth Estimation]] heat map (from MiDaS or ZoeDepth), a 2D skeleton keypoint diagram from [[Pose Estimation]] tools such as [[OpenPose]] or [[DWPose]], a [[Semantic Segmentation]] class mask, a surface normal map, a soft-edge HED map, a user-drawn scribble, or a binary [[Inpainting]] mask — each modality trained separately on paired (conditioning image, target image) datasets. The core innovation enabling this is the [[Zero Convolution]] bridge: rather than inserting the conditioning branch's activations directly into the frozen model (which would inject random noise at initialisation and destroy the pretrained distribution), the zero-initialised 1×1 convolutions begin by contributing exactly zero to every decoder layer. As [[Backpropagation]] drives training on the conditioning pairs, the zero-convolution weights diverge from zero in a controlled gradient-driven manner, smoothly coupling spatial information into generation without any discontinuous disruption to the base model's learned distribution. This property of graceful coupling distinguishes ControlNet from earlier approaches and explains its remarkable compatibility with diverse checkpoint variants fine-tuned from the same base model.
+    - ControlNet Conditioning addresses a fundamental limitation of text-to-image [[Diffusion Model]]s: text prompts are semantically expressive but spatially imprecise. When a [[Generative AI]] system is asked to produce "a woman walking down a cobbled street in autumn light," no amount of prompt engineering reliably controls the exact body pose, depth layering, structural composition, or limb configuration of the result. ControlNet conditioning introduces a second, structured input — a spatial [[Conditioning Signal]] derived from [[Computer Vision]] preprocessing tools — that constrains the generative process at the pixel level. The conditioning signal [private] be a [[Canny Edge Detection]] binary edge map, a monocular [[Depth Estimation]] heat map (from MiDaS or ZoeDepth), a 2D skeleton keypoint diagram from [[Pose Estimation]] tools such as [[OpenPose]] or [[DWPose]], a [[Semantic Segmentation]] class mask, a surface normal map, a soft-edge HED map, a user-drawn scribble, or a binary [[Inpainting]] mask — each modality trained separately on paired (conditioning image, target image) datasets. The core innovation enabling this is the [[Zero Convolution]] bridge: rather than inserting the conditioning branch's activations directly into the frozen model (which would inject random noise at initialisation and destroy the pretrained distribution), the zero-initialised 1×1 convolutions begin by contributing exactly zero to every decoder layer. As [[Backpropagation]] drives training on the conditioning pairs, the zero-convolution weights diverge from zero in a controlled gradient-driven manner, smoothly coupling spatial information into generation without any discontinuous disruption to the base model's learned distribution. This property of graceful coupling distinguishes ControlNet from earlier approaches and explains its remarkable compatibility with diverse checkpoint variants fine-tuned from the same base model.
 
     - The mathematical elegance of the [[Zero Convolution]] initialisation derives from its exact guarantee: at training step zero, the forward pass through any zero-convolution bridge is identically zero regardless of the input, so the conditioning branch contributes exactly nothing to the frozen decoder's skip connections. The decoder therefore sees exactly the same inputs it would see in the absence of any ControlNet conditioning, and produces exactly the same output as the unmodified [[Stable Diffusion]] base model. This means the first training step begins from a point of zero catastrophic forgetting, with the training loss gradient immediately driving the zero-convolution weights toward values that encode spatially meaningful conditioning information. The zero initialisation also provides an implicit regularisation effect: because the gradient of the loss with respect to a zero-convolution weight at resolution level l is proportional to the activation of the trainable encoder at that level, only resolution levels where the trainable encoder produces informative spatial features generate non-zero weight updates. Resolutions where the conditioning signal has no meaningful information (e.g., for a coarse sketch at high spatial frequency) produce near-zero gradients and near-zero weight updates, automatically concentrating the adapter's capacity at the resolution levels where the conditioning signal is most informative.
 
@@ -513,7 +749,7 @@ public: true
   - ## Cross-Domain Applications
     - **Scientific visualisation**: ControlNet conditioning on data visualisation outputs (heat maps, contour plots, simulation volume renders) enables stylistically polished scientific illustration from raw data structures. Applications in astrophysics (conditioning on spectral maps), climate science (conditioning on temperature/CO2 concentration maps), and genomics (conditioning on genome sequence coverage tracks) produce visually coherent scientific imagery while preserving data spatial accuracy.
     - **Forensics and document analysis**: Edge and structure ControlNets can assist partial document reconstruction — conditioning on visible structural fragments of a damaged document to generate plausible reconstructions of obscured content. This is an emerging research application in digital forensics and archival science; ethical concerns about AI-generated document reconstructions are actively debated in the UK legal community.
-    - **Cultural heritage and archaeology**: LiDAR depth scans of heritage buildings and archaeological sites serve as conditioning inputs for historical reconstruction visualisations, producing imagery of how degraded or fragmentary structures may have originally appeared. The UK's Historic England and Scottish Heritage bodies have piloted AI-assisted heritage visualisation workflows that could integrate ControlNet conditioning.
+    - **Cultural heritage and archaeology**: LiDAR depth scans of heritage buildings and archaeological sites serve as conditioning inputs for historical reconstruction visualisations, producing imagery of how degraded or fragmentary structures may have originally appeared. The UK's Historic England and Scottish Heritage bodies have piloted AI-assisted heritage visualisation workflows that [private] integrate ControlNet conditioning.
     - **Abstract art generation**: User-drawn abstract colour fields or compositional guides serve as ControlNet conditioning signals for abstract art generation, enabling controlled colour palette and compositional structure without precise structural constraints. Research on abstract art interpretation with ControlNet (arXiv:2408.13287) demonstrated that abstract visual representations effectively condition diffusion generation when the base model has sufficient semantic prior knowledge.
     - **Autonomous vehicle [[Synthetic Data]]**: ControlNet conditioning on programmatic [[Semantic Segmentation]] maps from 3D simulation environments generates photorealistic training images for autonomous vehicle perception models, with precisely labelled semantic boundaries aligned between conditioning maps and generated images. Multiple autonomous vehicle companies (Waymo, Zoox, European competitors) have reported diffusion-based conditioning for annotated data generation as of 2025.
     - **Industrial inspection training data**: Conditioning on depth maps or segmentation maps from robotic inspection simulation generates [[Synthetic Data]] of manufacturing defects, surface anomalies, and assembly errors for training vision-based quality control systems, where real paired data is expensive to collect and annotate. The AMRC at Sheffield and Northern English manufacturing research centres have piloted this approach.

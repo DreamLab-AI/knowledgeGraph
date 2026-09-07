@@ -1,58 +1,112 @@
----
-public: true
----
-
-# Casper Ffg
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:casper-ffg", "@type":"Page", "title":"Casper Ffg", "vc:slug":"casper-ffg", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:casper-ffg",
+  "@type": "Page",
+  "title": "Casper Ffg",
+  "vc:slug": "casper-ffg",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:casper-ffg",
-  "@type":"Class",
-  "label":"Casper Ffg",
-  "definition":"Casper FFG (the Friendly Finality Gadget) is a proof-of-stake finality mechanism that overlays a checkpoint-based voting protocol on an underlying block proposal chain. Validators stake deposits and vote in two rounds to justify and then finalise checkpoints, after which reverting them would require destroying at least one third of the total stake. It introduces economic finality with slashing penalties for equivocation, providing strong accountability without requiring a full consensus overhaul.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:finality-gadget","label":"Finality Gadget"}],
-  "relations":{
-    "implements":[
-      {"@id":"urn:ngm:class:finality","label":"Finality"},
-      {"@id":"urn:ngm:class:proof-of-stake","label":"Proof of Stake"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:casper-ffg",
+  "@type": "Class",
+  "label": "Casper Ffg",
+  "definition": "Casper FFG (the Friendly Finality Gadget) is a proof-of-stake finality mechanism that overlays a checkpoint-based voting protocol on an underlying block proposal chain. Validators stake deposits and vote in two rounds to justify and then finalise checkpoints, after which reverting them would require destroying at least one third of the total stake. It introduces economic finality with slashing penalties for equivocation, providing strong accountability without requiring a full consensus overhaul.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:finality-gadget",
+      "label": "Finality Gadget"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:validator","label":"Validator"},
-      {"@id":"urn:ngm:class:staking","label":"Staking"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:slashing","label":"Slashing"},
-      {"@id":"urn:ngm:class:validator-set","label":"Validator Set"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:blockchain-security","label":"Blockchain Security"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:ethereum","label":"Ethereum"},
-      {"@id":"urn:ngm:class:pos-consensus","label":"Proof-of-Stake Consensus"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:pos-consensus",
+        "label": "Proof-of-Stake Consensus"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:byzantine-fault-tolerance","label":"Byzantine Fault Tolerance"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:finality","label":"Finality"},
-      {"@id":"urn:ngm:class:ethereum","label":"Ethereum"},
-      {"@id":"urn:ngm:class:slashing","label":"Slashing"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

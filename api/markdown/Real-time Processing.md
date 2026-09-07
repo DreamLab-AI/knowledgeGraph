@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-time Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -227,77 +222,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:real-time-processing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5aa46440031c85c27ad0d52f31cd478533c4db9f7852ab5be73428766afe2cf2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Anomaly Detection]]",
-      "resolved": "urn:visionflow:linked:anomaly-detection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Vehicles]]",
-      "resolved": "urn:visionflow:linked:autonomous-vehicles",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Stream Processing]]",
-      "resolved": "urn:visionflow:linked:stream-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Batch Processing]]",
-      "resolved": "urn:visionflow:owl:class:batch-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Processing]]",
-      "resolved": "urn:visionflow:owl:class:data-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:owl:class:edge-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Event-Driven Architecture]]",
-      "resolved": "urn:visionflow:owl:class:event-driven-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Predictive Maintenance]]",
-      "resolved": "urn:visionflow:owl:class:predictive-maintenance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Real-time Processing is a computational model where data is processed immediately upon arrival or generation, with minimal latency between input and output. Systems respond to events within strict time constraints (typically milliseconds to seconds), enabling immediate decision-making through continuous stream-oriented processing rather than batch operations.

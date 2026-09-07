@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FATF 40 Recommendations
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The FATF 40 Recommendations are the international standards on combating money laundering, terrorist financing, and proliferation financing issued by the Financial Action Task Force. They define a comprehensive framework covering customer due diligence, beneficial-ownership transparency, suspicious-transaction reporting, supervision, and international cooperation. National regimes implement them to achieve compliance assessed through FATF mutual evaluations.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ]
   },
   "quality": 0.72

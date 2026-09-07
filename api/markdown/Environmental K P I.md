@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Environmental K P I
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,17 +51,32 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:environmental-certificate", "label": "Environmental Certificate"}
+      {
+        "@id": "urn:ngm:class:environmental-certificate",
+        "label": "Environmental Certificate"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:carbon-credit-token", "label": "Carbon Credit Token"},
-      {"@id": "urn:ngm:class:blockchain-sustainability", "label": "Blockchain Sustainability"}
+      {
+        "@id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"}
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
     ]
   },
   "provenance": {
@@ -76,32 +86,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:environmental-k-p-i:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3571ef3520d3dcea85f8b6e116945957ea6667b1dc87fe9b720043fc139c16dc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Quantitative metrics used to measure, monitor, and report the environmental impact of digital platforms, metaverse infrastructure, and spatial computing systems. Environmental KPIs encompass energy consumption per user session, carbon emissions per compute hour, water usage effectiveness, and percentage of renewable energy sourced, providing governance bodies with evidence for sustainability compliance.

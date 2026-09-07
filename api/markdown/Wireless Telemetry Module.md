@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wireless Telemetry Module
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A wireless telemetry module is an embedded hardware subsystem that acquires sensor measurements and transmits them over a radio link to a remote receiver without a wired connection. It combines signal conditioning, analogue-to-digital conversion, a microcontroller, and a low-power radio, and is used where wired tethering is impractical, such as implanted devices or remote field sensors. Power efficiency, antenna design, and link reliability are its central engineering constraints.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:brain-computer-interfaces", "label": "Brain Computer Interfaces"}, {"@id": "urn:ngm:class:environmental-monitoring", "label": "Environmental Monitoring"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      }
+    ]
   },
   "quality": 0.72
 }

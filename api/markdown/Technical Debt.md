@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Technical Debt
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:technical-debt", "@type": "Page", "title": "Technical Debt", "vc:slug": "technical-debt", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:technical-debt",
+  "@type": "Page",
+  "title": "Technical Debt",
+  "vc:slug": "technical-debt",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Vision Processing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Vision processing is the computational transformation of raw image and video data into structured representations and decisions, spanning low-level operations such as filtering and feature extraction through high-level recognition and interpretation. It is the algorithmic core of computer-vision systems and specialised applications such as medical imaging. Efficient vision processing increasingly runs on dedicated accelerators to meet real-time demands.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:medical-imaging-ai", "label": "Medical Imaging AI"}, {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ]
   },
   "quality": 0.72
 }

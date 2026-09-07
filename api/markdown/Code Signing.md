@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Code Signing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -164,4 +159,3 @@ public: true
   - Enterprise software supply chains typically require code signing at multiple stages: source code commits (GPG/SSH-signed Git commits), build artefacts (signed JARs, signed npm packages, signed Python wheels), container images (Cosign or Notary), and Helm charts. The SLSA framework (now at SLSA v1.0) defines provenance levels from L1 (scripted build) to L3 (verified, non-falsifiable build) where L2+ requires signed provenance attestations. Tools such as in-toto (attestation framework), SPDX (software bill of materials), and CycloneDX integrate with code signing to provide comprehensive artefact provenance.
 
   - By 2024–2025, code signing has become a regulatory expectation in sectors subject to the EU Cyber Resilience Act, US Executive Order 14028 on Improving the Nation's Cybersecurity, and CISA guidance on software supply chain security. Sigstore has achieved broad adoption with over 1 million container image signatures and integration into major package registries (npm, PyPI, Maven Central, crates.io). The convergence of software bills of materials, [[Provenance Tracking]], and code signing is creating an end-to-end [[Supply Chain Traceability]] capability for software that mirrors what physical supply chains have achieved through barcode and RFID traceability systems.
-

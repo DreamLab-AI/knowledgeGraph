@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Search Index
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -78,42 +73,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:search-index:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d8f5155d74e0bb57e1fa9978e5f5bf6aed52fb07de26a955b1290c82d76216ab"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Fast Query Response]]",
-      "resolved": "urn:visionflow:linked:fast-query-response",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Structure]]",
-      "resolved": "urn:visionflow:owl:class:data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A data structure that maps terms, embeddings, or attributes to document locations, enabling rapid retrieval of relevant content from large metaverse asset catalogues through inverted indexes, vector indexes, or hybrid approaches.
 
@@ -129,11 +88,11 @@ public: true
 - ### Content
 
   - #### Index Types
-		- Inverted index for text search
-		- Vector index for semantic similarity
+		- Inverted [private] for text search
+		- Vector [private] for semantic similarity
 		- B-tree for range queries
-		- Geospatial index for location search
-		- Graph index for relationship traversal
+		- Geospatial [private] for location search
+		- Graph [private] for relationship traversal
   - #### Technologies
 		- Apache Lucene indexing library
 		- HNSW for approximate nearest neighbour

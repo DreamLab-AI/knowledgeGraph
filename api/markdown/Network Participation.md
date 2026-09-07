@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Participation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Network participation is the act of an entity contributing resources or actions to a decentralised network in exchange for the right to influence and benefit from it. In blockchain systems this includes running nodes, validating or proposing blocks, providing liquidity, or voting, typically backed by staked capital or computational work. Participation rules and incentives determine the network's security, decentralisation, and reward distribution.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-entity", "label": "Blockchain Entity"},
-      {"@id": "urn:ngm:class:reward-distribution", "label": "Reward Distribution"}
+      {
+        "@id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      },
+      {
+        "@id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      }
     ]
   },
   "quality": 0.72

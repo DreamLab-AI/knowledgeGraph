@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proximity Detection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -51,19 +46,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
-      {"@id": "urn:ngm:class:presence-detection", "label": "Presence Detection"}
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:presence-detection",
+        "label": "Presence Detection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"}
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
     ]
   },
   "provenance": {
@@ -73,26 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:proximity-detection:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f8925b1fcfa6b1d1670dc0d1877ae5c8e05c151548e6ba5eedb5bfc4b8ad0560"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Proximity Detection is the computational process of determining the spatial distance and relative position between entities—users, objects, or agents—within a virtual or physical environment in real time. It underpins collision avoidance, interaction triggering, and context-sensitive content delivery. Implementations range from bounding-volume overlap tests and signed-distance fields in 3D engines to sensor-fusion pipelines combining lidar, ultrasound, and camera inputs.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Regulatory Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:regulatory-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e3197ae973580dfdd9121d59a5f13012506e8feba5fc403ca73079b52ca8635d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[User Protection]]",
-      "resolved": "urn:visionflow:linked:user-protection",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Compliance Framework]]",
-      "resolved": "urn:visionflow:owl:class:compliance-framework",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Legal and compliance frameworks governing metaverse and extended reality platforms, including data protection (GDPR), artificial intelligence (EU AI Act), digital services (DSA), and accessibility requirements that ensure user rights protection in immersive environments.

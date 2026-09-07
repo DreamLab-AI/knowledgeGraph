@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Cross-Platform Digital Twins
----
-
-# Cross Platform Digital Twins
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -127,72 +120,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cross-platform-digital-twins:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8402e0777b104d5870eb954f7d4e08c868af652e85e119fb24c4f4cebe895a04"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[API Integration]]",
-      "resolved": "urn:visionflow:linked:api-integration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Collaborative Simulation]]",
-      "resolved": "urn:visionflow:linked:collaborative-simulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interoperability Standards]]",
-      "resolved": "urn:visionflow:linked:interoperability-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Multi-Vendor Ecosystems]]",
-      "resolved": "urn:visionflow:linked:multi-vendor-ecosystems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Integration]]",
-      "resolved": "urn:visionflow:owl:class:data-integration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin Technology]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Universal Scene Description]]",
-      "resolved": "urn:visionflow:owl:class:universal-scene-description",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible systems.

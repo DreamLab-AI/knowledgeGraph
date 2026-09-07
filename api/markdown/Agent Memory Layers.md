@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Memory Layers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,57 +7,210 @@ public: true
   "title": "Agent Memory Layers",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory"},
-    {"@id": "urn:visionflow:linked:agent-harness", "vc:label": "Agent Harness"},
-    {"@id": "urn:visionflow:linked:personal-agent-runtimes", "vc:label": "Personal Agent Runtimes"},
-    {"@id": "urn:visionflow:linked:progressive-disclosure-harnesses", "vc:label": "Progressive Disclosure Harnesses"},
-    {"@id": "urn:visionflow:linked:vector-database", "vc:label": "Vector Database"},
-    {"@id": "urn:visionflow:linked:embeddings", "vc:label": "Embeddings"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:episodic-memory", "vc:label": "Episodic Memory"},
-    {"@id": "urn:visionflow:linked:semantic-memory", "vc:label": "Semantic Memory"},
-    {"@id": "urn:visionflow:linked:procedural-memory", "vc:label": "Procedural Memory"},
-    {"@id": "urn:visionflow:linked:working-memory", "vc:label": "Working Memory"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:cognitive-architecture", "vc:label": "Cognitive Architecture"},
-    {"@id": "urn:visionflow:linked:agent-loop", "vc:label": "Agent Loop"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:personalisation", "vc:label": "Personalisation"},
-    {"@id": "urn:visionflow:linked:consolidation", "vc:label": "Consolidation"},
-    {"@id": "urn:visionflow:linked:continual-learning", "vc:label": "Continual Learning"},
-    {"@id": "urn:visionflow:linked:pgvector", "vc:label": "pgvector"},
-    {"@id": "urn:visionflow:linked:weaviate", "vc:label": "Weaviate"},
-    {"@id": "urn:visionflow:linked:pinecone", "vc:label": "Pinecone"},
-    {"@id": "urn:visionflow:linked:privacy", "vc:label": "Privacy"},
-    {"@id": "urn:visionflow:linked:gdpr", "vc:label": "GDPR"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:task-automation", "vc:label": "Task Automation"},
-    {"@id": "urn:visionflow:linked:information-retrieval", "vc:label": "Information Retrieval"},
-    {"@id": "urn:visionflow:linked:ai-infrastructure", "vc:label": "AI Infrastructure"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:agent-identity", "vc:label": "Agent Identity"},
-    {"@id": "urn:visionflow:linked:temporal-reasoning", "vc:label": "Temporal Reasoning"},
-    {"@id": "urn:visionflow:linked:forgetting", "vc:label": "Forgetting"},
-    {"@id": "urn:visionflow:linked:hallucination", "vc:label": "Hallucination"},
-    {"@id": "urn:visionflow:linked:provenance", "vc:label": "Provenance"},
-    {"@id": "urn:visionflow:linked:agentic-rag", "vc:label": "Agentic RAG"},
-    {"@id": "urn:visionflow:linked:internal-ai-harness", "vc:label": "Internal AI Harness"},
-    {"@id": "urn:visionflow:linked:external-ai-harness", "vc:label": "External AI Harness"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:coala", "vc:label": "CoALA"},
-    {"@id": "urn:visionflow:linked:reflexion-pattern", "vc:label": "Reflexion Pattern"},
-    {"@id": "urn:visionflow:linked:planning-and-scheduling", "vc:label": "Planning and Scheduling"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
-    {"@id": "urn:visionflow:linked:in-context-learning", "vc:label": "In-Context Learning"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:self-reflection", "vc:label": "Self-Reflection"},
-    {"@id": "urn:visionflow:linked:compression", "vc:label": "Compression"},
-    {"@id": "urn:visionflow:linked:act-r", "vc:label": "ACT-R"},
-    {"@id": "urn:visionflow:linked:harness-configuration-packs", "vc:label": "Harness Configuration Packs"}
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-harness",
+      "vc:label": "Agent Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:personal-agent-runtimes",
+      "vc:label": "Personal Agent Runtimes"
+    },
+    {
+      "@id": "urn:visionflow:linked:progressive-disclosure-harnesses",
+      "vc:label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:embeddings",
+      "vc:label": "Embeddings"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:episodic-memory",
+      "vc:label": "Episodic Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-memory",
+      "vc:label": "Semantic Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:procedural-memory",
+      "vc:label": "Procedural Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:working-memory",
+      "vc:label": "Working Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:cognitive-architecture",
+      "vc:label": "Cognitive Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-loop",
+      "vc:label": "Agent Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalisation",
+      "vc:label": "Personalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:consolidation",
+      "vc:label": "Consolidation"
+    },
+    {
+      "@id": "urn:visionflow:linked:continual-learning",
+      "vc:label": "Continual Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:pgvector",
+      "vc:label": "pgvector"
+    },
+    {
+      "@id": "urn:visionflow:linked:weaviate",
+      "vc:label": "Weaviate"
+    },
+    {
+      "@id": "urn:visionflow:linked:pinecone",
+      "vc:label": "Pinecone"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy",
+      "vc:label": "Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:gdpr",
+      "vc:label": "GDPR"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-automation",
+      "vc:label": "Task Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:information-retrieval",
+      "vc:label": "Information Retrieval"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-infrastructure",
+      "vc:label": "AI Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-identity",
+      "vc:label": "Agent Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal-reasoning",
+      "vc:label": "Temporal Reasoning"
+    },
+    {
+      "@id": "urn:visionflow:linked:forgetting",
+      "vc:label": "Forgetting"
+    },
+    {
+      "@id": "urn:visionflow:linked:hallucination",
+      "vc:label": "Hallucination"
+    },
+    {
+      "@id": "urn:visionflow:linked:provenance",
+      "vc:label": "Provenance"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-rag",
+      "vc:label": "Agentic RAG"
+    },
+    {
+      "@id": "urn:visionflow:linked:internal-ai-harness",
+      "vc:label": "Internal AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:external-ai-harness",
+      "vc:label": "External AI Harness"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:coala",
+      "vc:label": "CoALA"
+    },
+    {
+      "@id": "urn:visionflow:linked:reflexion-pattern",
+      "vc:label": "Reflexion Pattern"
+    },
+    {
+      "@id": "urn:visionflow:linked:planning-and-scheduling",
+      "vc:label": "Planning and Scheduling"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:foundation-model",
+      "vc:label": "Foundation Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:in-context-learning",
+      "vc:label": "In-Context Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-reflection",
+      "vc:label": "Self-Reflection"
+    },
+    {
+      "@id": "urn:visionflow:linked:compression",
+      "vc:label": "Compression"
+    },
+    {
+      "@id": "urn:visionflow:linked:act-r",
+      "vc:label": "ACT-R"
+    },
+    {
+      "@id": "urn:visionflow:linked:harness-configuration-packs",
+      "vc:label": "Harness Configuration Packs"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -77,50 +225,83 @@ public: true
   "definition": "Persistent memory systems for AI agents providing contextual recall across sessions through vector retrieval, automatic summarisation, and state management — includes Mem0, letta, claude-mem, and agentlog.",
   "domain": "ai",
   "maturity": "emerging",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
-      {
-            "@id": "urn:ngm:class:agent-harness",
-            "label": "Agent Harness"
-      }
-],
+    {
+      "@id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    }
+  ],
   "relations": {
-      "requires": [
-            {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-            {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"},
-            {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-            {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
-      ],
-      "enables": [
-            {"@id": "urn:ngm:class:personalisation", "label": "Personalisation"},
-            {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-            {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"}
-      ],
-      "hasPart": [
-            {"@id": "urn:ngm:class:episodic-memory", "label": "Episodic Memory"},
-            {"@id": "urn:ngm:class:semantic-memory", "label": "Semantic Memory"},
-            {"@id": "urn:ngm:class:procedural-memory", "label": "Procedural Memory"},
-            {"@id": "urn:ngm:class:working-memory", "label": "Working Memory"}
-      ],
-      "relatedTo": [
-            {
-                  "@id": "urn:ngm:class:personal-agent-runtimes",
-                  "label": "Personal Agent Runtimes"
-            },
-            {
-                  "@id": "urn:ngm:class:progressive-disclosure-harnesses",
-                  "label": "Progressive Disclosure Harnesses"
-            },
-            {
-                  "@id": "urn:ngm:class:agent-memory",
-                  "label": "Agent Memory"
-            },
-            {
-                  "@id": "urn:ngm:class:agentic-rag",
-                  "label": "Agentic RAG"
-            }
-      ]
-},
+    "requires": [
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:episodic-memory",
+        "label": "Episodic Memory"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-memory",
+        "label": "Semantic Memory"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-memory",
+        "label": "Procedural Memory"
+      },
+      {
+        "@id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:personal-agent-runtimes",
+        "label": "Personal Agent Runtimes"
+      },
+      {
+        "@id": "urn:ngm:class:progressive-disclosure-harnesses",
+        "label": "Progressive Disclosure Harnesses"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      }
+    ]
+  },
   "vc:termId": "AI-9915",
   "vc:schemaVersion": 2,
   "provenance": {
@@ -262,7 +443,7 @@ public: true
       - The active [[Context Window]] of the [[Foundation Model]] — holding the current system prompt, task description, recent tool outputs, retrieved memory fragments, and chain-of-thought scratchpad. Bounded by model context length (128K tokens for most production models as of 2026; up to 2M for Gemini 1.5 Ultra, but long contexts incur quadratic attention cost and suffer lost-in-the-middle retrieval failure). Fully ephemeral: ceases at session end unless explicitly serialised. The [[Agent Loop]] must actively manage [[Working Memory]] — deciding what to retain, what to evict, and what to retrieve from deeper tiers to fill the window optimally.
       - In Letta's model, [[Working Memory]] is explicitly structured into named blocks (persona, human, system) that the agent reads and modifies directly via function calls — making memory management an explicit first-class agent action rather than an implicit harness operation.
     - **[[Episodic Memory]] Layer — Event Log Store**
-      - Time-ordered log of what the agent experienced: user messages, tool call inputs and outputs, intermediate reasoning steps, decisions, and outcomes. Storage substrate: dense vector [[Embeddings]] (OpenAI text-embedding-3-large, Cohere embed-v3, or MiniLM-L6-v2 at 384 dimensions) in a [[Vector Database]] ([[Pinecone]], [[pgvector]], [[Weaviate]], Qdrant, Chroma). Retrieval: approximate nearest-neighbour similarity search (HNSW or IVF index) with optional recency weighting and importance scoring.
+      - Time-ordered log of what the agent experienced: user messages, tool call inputs and outputs, intermediate reasoning steps, decisions, and outcomes. Storage substrate: dense vector [[Embeddings]] (OpenAI text-embedding-3-large, Cohere embed-v3, or MiniLM-L6-v2 at 384 dimensions) in a [[Vector Database]] ([[Pinecone]], [[pgvector]], [[Weaviate]], Qdrant, Chroma). Retrieval: approximate nearest-neighbour similarity search (HNSW or IVF [private]) with optional recency weighting and importance scoring.
       - Mem0's Episodic Memory API stores events with timestamps and retrieves via hybrid vector plus graph search. The [[Reflexion Pattern]] uses episodic recall as verbal self-reflection stored for future task performance improvement (20-30% gains, Shinn et al. 2023).
       - Key operational concern: episodes accumulate without bound. [[Consolidation]] pipelines must periodically compress, deduplicate, and summarise older episodes to control storage cost and retrieval signal-to-noise ratio.
     - **[[Semantic Memory]] Layer — Knowledge Entity Store**
@@ -327,7 +508,7 @@ public: true
     - **Context Stuffing** — The naive approach of including all potentially relevant history in the [[Context Window]] on every call, without selective retrieval — expensive in tokens, degrades with scale.
     - **Virtual Context Management** — Letta's model of explicitly managing memory tier allocation within the agent's own function calls, analogous to OS virtual memory paging.
     - **Graphiti** — Zep's temporal [[Knowledge Graph]] engine providing validity-window-aware entity updates for time-anchored [[Semantic Memory]] retrieval.
-    - **HNSW** — Hierarchical Navigable Small World graph — the default approximate nearest-neighbour index structure used in Qdrant, [[Weaviate]], and [[Pinecone]] for [[Episodic Memory]] similarity search.
+    - **HNSW** — Hierarchical Navigable Small World graph — the default approximate nearest-neighbour [private] structure used in Qdrant, [[Weaviate]], and [[Pinecone]] for [[Episodic Memory]] similarity search.
     - **[[CoALA]]** — Cognitive Architectures for Language Agents (Sumers et al. 2024) — the canonical taxonomy for agent memory tiers adopted as the de facto standard.
     - **[[ACT-R]]** — Adaptive Control of Thought-Rational — Anderson's (1983) cognitive architecture providing the [[Procedural Memory]] concept that maps to agent skill templates.
 

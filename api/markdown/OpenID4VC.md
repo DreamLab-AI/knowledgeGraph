@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenID4VC
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "OpenID for Verifiable Credentials (OpenID4VC) is a family of OpenID Foundation specifications that extend OAuth 2.0 and OpenID Connect to issue and present verifiable credentials. It comprises OpenID4VCI for credential issuance and OpenID4VP for presentation, enabling interoperable digital wallets to obtain and selectively disclose cryptographically signed claims. The protocols bridge mainstream identity infrastructure with decentralized identity models such as DIDs.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
     ]
   },
   "quality": 0.72

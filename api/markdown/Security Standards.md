@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Security Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Security standards are published specifications that define requirements, controls, and best practices for protecting information systems. They span management frameworks such as ISO/IEC 27001, control catalogues such as NIST SP 800-53, and authentication standards. They provide a common basis for designing, assessing, and certifying the security posture of organisations and products.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"},
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"}
+      {
+        "@id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
     ]
   },
   "quality": 0.72

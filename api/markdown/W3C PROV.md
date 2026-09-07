@@ -1,8 +1,3 @@
----
-public: true
----
-
-# W3C PROV
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "W3C PROV is a family of W3C Recommendations that define a domain-agnostic data model and serialisations for representing provenance, the records of entities, activities, and agents involved in producing or influencing a piece of data. Centred on the PROV-DM data model and PROV-O OWL ontology, it enables interoperable description of how artefacts came to be, supporting trust, reproducibility, and auditing. It is widely used in scientific workflows, data catalogues, and metadata management systems.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}, {"@id": "urn:ngm:class:data-management", "label": "Data Management"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Replication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -207,72 +202,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-replication:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:397395b0be9aa725e66d0db0c7e51646dcfe35af6af7c524d76afb521e7abbf9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Consistency Guarantees]]",
-      "resolved": "urn:visionflow:linked:consistency-guarantees",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Availability]]",
-      "resolved": "urn:visionflow:linked:data-availability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Storage Systems]]",
-      "resolved": "urn:visionflow:linked:storage-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Algorithm]]",
-      "resolved": "urn:visionflow:owl:class:consensus-algorithm",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:owl:class:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fault Tolerance]]",
-      "resolved": "urn:visionflow:owl:class:fault-tolerance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:network-infrastructure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized networks.

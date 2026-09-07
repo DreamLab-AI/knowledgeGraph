@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - CloudComputing
----
-
-# Cloud Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -202,7 +195,7 @@ aliases:
   - Cloud computing is the on-demand delivery of computing resources — including [[Virtualisation|virtual]] servers, [[Object Storage]], databases, [[Network Infrastructure]], analytics, and AI accelerators — over the internet, via provider-managed [[Data Centre|data centres]]. It abstracts physical hardware into programmable APIs governed by pay-per-use economics, enabling [[Distributed Systems]] at global scale without capital investment in owned infrastructure. The paradigm underpins [[AI Infrastructure]], [[MLOps]], and modern [[DevOps]] by providing elastic capacity that scales from zero to hyperscale in seconds.
 
 - ### Overview
-  - Cloud computing emerged from the insight that large-scale data centre operators (initially Amazon, then Microsoft and Google) could expose spare capacity as rentable compute units via standardised web APIs. The NIST SP 800-145 definition codified five essential characteristics: on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service.
+  - Cloud computing emerged from the insight that large-scale data centre operators (initially Amazon, then Microsoft and Google) [private] expose spare capacity as rentable compute units via standardised web APIs. The NIST SP 800-145 definition codified five essential characteristics: on-demand self-service, broad network access, resource pooling, rapid elasticity, and measured service.
   - **Why it matters**: it democratises access to supercomputing-class infrastructure, allowing a startup to train a large neural network or serve millions of API requests with the same infrastructure primitives available to the world's largest enterprises — billed only for active usage.
   - **How it works**: physical resources in geographically distributed [[Data Centre|data centres]] are partitioned via [[Virtualisation]] and [[Containerisation]] into isolated tenant environments. A global control plane (the cloud provider's management layer) handles provisioning, billing, identity, and observability, exposing these through REST/gRPC APIs, CLIs, and infrastructure-as-code tooling.
 

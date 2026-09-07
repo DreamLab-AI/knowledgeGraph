@@ -1,54 +1,102 @@
----
-public: true
----
-
-# Real Time Messaging
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:real-time-messaging", "@type":"Page", "title":"Real Time Messaging", "vc:slug":"real-time-messaging", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:real-time-messaging",
+  "@type": "Page",
+  "title": "Real Time Messaging",
+  "vc:slug": "real-time-messaging",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:real-time-messaging",
-  "@type":"Class",
-  "label":"Real Time Messaging",
-  "definition":"Real-time messaging is the exchange of messages between participants with sub-second latency, so that communication feels instantaneous and conversational. It relies on persistent, bidirectional transport such as WebSockets and on patterns like publish-subscribe to fan out events to many recipients. Real-time messaging underpins chat, presence, notifications and live collaboration across distributed systems.",
-  "domain":"distributed-collaboration",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:real-time-communication","label":"Real-Time Communication"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:web-socket","label":"WebSocket"},
-      {"@id":"urn:ngm:class:message-queue","label":"Message Queue"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-time-messaging",
+  "@type": "Class",
+  "label": "Real Time Messaging",
+  "definition": "Real-time messaging is the exchange of messages between participants with sub-second latency, so that communication feels instantaneous and conversational. It relies on persistent, bidirectional transport such as WebSockets and on patterns like publish-subscribe to fan out events to many recipients. Real-time messaging underpins chat, presence, notifications and live collaboration across distributed systems.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:real-time-communication",
+      "label": "Real-Time Communication"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:instant-messaging","label":"Instant Messaging"},
-      {"@id":"urn:ngm:class:event-streaming","label":"Event Streaming"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:instant-messaging",
+        "label": "Instant Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:presence-awareness","label":"Presence Awareness"},
-      {"@id":"urn:ngm:class:notification-system","label":"Notification System"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:presence-awareness",
+        "label": "Presence Awareness"
+      },
+      {
+        "@id": "urn:ngm:class:notification-system",
+        "label": "Notification System"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:event-driven-architecture","label":"Event-Driven Architecture"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:slack","label":"Slack"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:slack",
+        "label": "Slack"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:event-streaming","label":"Event Streaming"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:real-time-communication","label":"Real-Time Communication"},
-      {"@id":"urn:ngm:class:message-queue","label":"Message Queue"},
-      {"@id":"urn:ngm:class:notification-system","label":"Notification System"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:notification-system",
+        "label": "Notification System"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

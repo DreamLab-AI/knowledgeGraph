@@ -1,38 +1,112 @@
----
-public: true
----
-
-# Gradient Aggregation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:gradient-aggregation", "@type":"Page", "title":"Gradient Aggregation", "vc:slug":"gradient-aggregation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:gradient-aggregation",
+  "@type": "Page",
+  "title": "Gradient Aggregation",
+  "vc:slug": "gradient-aggregation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:gradient-aggregation",
-  "@type":"Class",
-  "label":"Gradient Aggregation",
-  "definition":"Gradient aggregation is the step in distributed machine learning where gradients computed independently on different workers or data shards are combined into a single update for the shared model. Typically realised by summing or averaging local gradients, it lets parallel workers train a consistent global model despite operating on disjoint data. The aggregation strategy and its communication pattern strongly influence training throughput, convergence and, in federated settings, privacy.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:distributed-training","label":"Distributed Training"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:all-reduce","label":"All Reduce"},{"@id":"urn:ngm:class:collective-communication","label":"Collective Communication"}],
-    "implements":[{"@id":"urn:ngm:class:data-parallelism","label":"Data Parallelism"}],
-    "uses":[{"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"},{"@id":"urn:ngm:class:stochastic-gradient-descent","label":"Stochastic Gradient Descent"}],
-    "enables":[{"@id":"urn:ngm:class:federated-learning","label":"Federated Learning"}],
-    "requires":[{"@id":"urn:ngm:class:collective-communication","label":"Collective Communication"}],
-    "supports":[{"@id":"urn:ngm:class:distributed-training","label":"Distributed Training"}],
-    "dependsOn":[{"@id":"urn:ngm:class:parameter-server","label":"Parameter Server"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:model-parallelism","label":"Model Parallelism"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:gradient-compression","label":"Gradient Compression"}],
-    "relatedTo":[{"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"},{"@id":"urn:ngm:class:data-parallelism","label":"Data Parallelism"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gradient-aggregation",
+  "@type": "Class",
+  "label": "Gradient Aggregation",
+  "definition": "Gradient aggregation is the step in distributed machine learning where gradients computed independently on different workers or data shards are combined into a single update for the shared model. Typically realised by summing or averaging local gradients, it lets parallel workers train a consistent global model despite operating on disjoint data. The aggregation strategy and its communication pattern strongly influence training throughput, convergence and, in federated settings, privacy.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:all-reduce",
+        "label": "All Reduce"
+      },
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:parameter-server",
+        "label": "Parameter Server"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:gradient-compression",
+        "label": "Gradient Compression"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

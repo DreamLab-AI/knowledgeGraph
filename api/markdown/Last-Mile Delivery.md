@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Last-Mile Delivery
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Last-mile delivery is the final stage of a logistics chain in which goods move from a transport hub or distribution centre to the end recipient. It is typically the most expensive, time-sensitive and operationally complex segment because of fragmented destinations and traffic constraints. It is a primary target for automation through delivery robots, drones and route-optimisation systems.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimization"},
-      {"@id": "urn:ngm:class:ground-robot", "label": "Ground Robot"}
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      }
     ]
   },
   "quality": 0.72

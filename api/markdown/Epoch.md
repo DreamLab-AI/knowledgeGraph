@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Epoch
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,42 +172,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:epoch:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8f195cc179ead2f0b6eb6e175ba58ac9fe8164e11eab8842c53773e27945f73d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - In machine learning, an **Epoch** is one complete pass through the entire training dataset, during which model parameters are updated after each constituent batch. The number of epochs is a primary training hyperparameter: too few yield underfitting, whilst too many risk overfitting—a trade-off managed by techniques such as early stopping and learning-rate scheduling. More broadly, an epoch denotes a fixed reference point or interval in time, as used in astronomical coordinate systems (e.g., J2000.0) and geological stratigraphy.

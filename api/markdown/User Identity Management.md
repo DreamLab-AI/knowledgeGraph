@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Identity Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "User identity management is the set of processes and systems that create, maintain, authenticate and deprovision the digital identities of users across a platform's lifecycle. It governs how users register, prove who they are, manage profiles and link accounts, and is foundational to access control and personalised experiences. In collaborative and metaverse platforms it also coordinates presence, avatars and cross-session continuity.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:platform-layer", "label": "Platform Layer"}, {"@id": "urn:ngm:class:breakout-room", "label": "Breakout Room"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:platform-layer",
+        "label": "Platform Layer"
+      },
+      {
+        "@id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      }
+    ]
   },
   "quality": 0.72
 }

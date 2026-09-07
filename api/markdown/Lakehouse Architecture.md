@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lakehouse Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Lakehouse architecture is a data management pattern that combines the low-cost, open storage of a data lake with the transactional reliability and performance of a data warehouse. It layers ACID transactions, schema enforcement and indexing over inexpensive object storage using open table formats such as Delta Lake, Apache Iceberg or Hudi. This unifies analytics, business intelligence and machine learning on a single copy of data.",
   "domain": "data",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"}
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
     ]
   },
   "quality": 0.72

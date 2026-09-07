@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Chinese AI Ecosystem
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "chinese-ai-ecosystem",
   "title": "Chinese AI Ecosystem",
   "vc:public": true,
-  "vc:outboundWikilinks": ["DeepSeek V4", "Huawei Chips"],
+  "vc:outboundWikilinks": [
+    "DeepSeek V4",
+    "Huawei Chips"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-ecosystem", "label": "AI Ecosystem"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-ecosystem",
+      "label": "AI Ecosystem"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-ecosystem", "label": "AI Ecosystem"}, {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}, {"@id": "urn:ngm:class:sovereign-ai", "label": "Sovereign AI"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-ecosystem",
+        "label": "AI Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-ai",
+        "label": "Sovereign AI"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

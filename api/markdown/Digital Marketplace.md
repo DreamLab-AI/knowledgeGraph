@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Marketplace
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -127,72 +122,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-marketplace:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9bb62210defb05ebc38d5b2cf277289cb733a738b996347ee26de572d7430e9d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Wallets]]",
-      "resolved": "urn:visionflow:linked:digital-wallets",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NFT Trading]]",
-      "resolved": "urn:visionflow:linked:nft-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Asset Exchange]]",
-      "resolved": "urn:visionflow:linked:virtual-asset-exchange",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Creator Economy]]",
-      "resolved": "urn:visionflow:owl:class:creator-economy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[E-Commerce]]",
-      "resolved": "urn:visionflow:owl:class:e-commerce",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A virtual platform enabling the discovery, purchase, sale, and exchange of digital assets, NFTs, virtual goods, and services within metaverse environments, utilising blockchain technology for transparent transactions, ownership verification, and decentralised commerce.

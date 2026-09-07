@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dynamic Character Animation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,47 +80,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dynamic-character-animation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b35f2098ca1a89a0012a7e5bf5e26c2dbc8bf3dbc141cf25133bdc2f32dce358"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Animation]]",
-      "resolved": "urn:visionflow:linked:3-d-animation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Immersive Experiences]]",
-      "resolved": "urn:visionflow:owl:class:immersive-experiences",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Real-time procedural animation techniques that enable 3D avatars and characters to move, express, and respond dynamically to user input and environmental stimuli in metaverse environments, utilising motion capture, rigging systems, and AI-driven motion synthesis.

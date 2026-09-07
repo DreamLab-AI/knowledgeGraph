@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Graph Classification
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:graph-classification", "@type":"Page", "title":"Graph Classification", "vc:slug":"graph-classification", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:graph-classification",
+  "@type": "Page",
+  "title": "Graph Classification",
+  "vc:slug": "graph-classification",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pattern Recognition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -195,47 +190,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pattern-recognition:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e2db02173f6427fb26711a948f13ab9c939f06659d07e3f2edabbada2e58c469"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Classification]]",
-      "resolved": "urn:visionflow:linked:classification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Feature Extraction]]",
-      "resolved": "urn:visionflow:owl:class:feature-extraction",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms. This encompasses supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), and feature extraction techniques. Applications span computer vision (object recognition, face detection), speech recognition, biometric identification, medical diagnosis, and anomaly detection. Modern approaches leverage deep learning for end-to-end feature learning, replacing hand-crafted features with learned representations from raw data.

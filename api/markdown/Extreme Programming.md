@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Extreme Programming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Extreme Programming (XP) is an agile software-development methodology that emphasises short iterations, continuous feedback, and engineering discipline to deliver high-quality software responsive to changing requirements. Its core practices include test-driven development, pair programming, continuous integration, collective code ownership, and frequent small releases. XP treats good practices to an 'extreme' degree, for example applying continuous code review through constant pairing.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:remote-pair-programming", "label": "Remote Pair Programming"},
-      {"@id": "urn:ngm:class:software-development", "label": "Software Development"}
+      {
+        "@id": "urn:ngm:class:remote-pair-programming",
+        "label": "Remote Pair Programming"
+      },
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
     ]
   },
   "quality": 0.72

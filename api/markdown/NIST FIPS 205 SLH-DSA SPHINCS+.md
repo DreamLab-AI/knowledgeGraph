@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NIST FIPS 205 SLH-DSA SPHINCS+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nist-fips-205-slh-dsa-sphincs:271cae672009",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:50b4df0da6aa362c1f3ff9642b97d3dbec6743b9b8dc8e0186c381e9a3e86c18"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NIST]]",
-      "resolved": "urn:visionflow:linked:nist",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A NIST Federal Information Processing Standard specifying the Stateless Hash-Based Digital Signature Algorithm (SLH-DSA), derived from the SPHINCS+ scheme. It provides hash-based signatures designed to resist quantum attacks.

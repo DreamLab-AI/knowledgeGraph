@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Geographic Distribution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Geographic distribution is the placement of computing resources, data, or services across physically separate locations and regions. In distributed systems it reduces latency for global users, improves fault tolerance against regional outages, and helps satisfy data-residency requirements. It introduces trade-offs around consistency, replication, and inter-region network costs.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:distributed-architecture", "label": "Distributed Architecture"}, {"@id": "urn:ngm:class:geospatial-data", "label": "Geospatial Data"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Client-Server Architecture
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

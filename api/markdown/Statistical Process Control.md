@@ -1,37 +1,126 @@
----
-public: true
----
-
-# Statistical Process Control
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:statistical-process-control", "@type":"Page", "title":"Statistical Process Control", "vc:slug":"statistical-process-control", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:statistical-process-control",
+  "@type": "Page",
+  "title": "Statistical Process Control",
+  "vc:slug": "statistical-process-control",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:statistical-process-control",
-  "@type":"Class",
-  "label":"Statistical Process Control",
-  "definition":"Statistical Process Control (SPC) is a quality-control methodology that applies statistical methods to monitor and control a manufacturing or service process. By tracking process variation over time against statistically derived control limits, SPC distinguishes ordinary common-cause variation from assignable special-cause variation, enabling operators to intervene only when a process is genuinely out of control. It underpins continuous improvement and defect prevention in industrial production.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:quality-control","label":"Quality Control"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:quality-control","label":"Quality Control"}],
-    "hasPart":[{"@id":"urn:ngm:class:statistics","label":"Statistics"},{"@id":"urn:ngm:class:monitoring","label":"Monitoring"}],
-    "uses":[{"@id":"urn:ngm:class:statistics","label":"Statistics"},{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"},{"@id":"urn:ngm:class:data-validation","label":"Data Validation"}],
-    "enables":[{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"},{"@id":"urn:ngm:class:industrial-inspection","label":"Industrial Inspection"}],
-    "supports":[{"@id":"urn:ngm:class:industrial-automation","label":"Industrial Automation"},{"@id":"urn:ngm:class:process-control","label":"Process Control"}],
-    "requires":[{"@id":"urn:ngm:class:sensor","label":"Sensor"},{"@id":"urn:ngm:class:monitoring","label":"Monitoring"}],
-    "relatedTo":[{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"},{"@id":"urn:ngm:class:automation","label":"Automation"},{"@id":"urn:ngm:class:regulation","label":"Regulation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:statistical-process-control",
+  "@type": "Class",
+  "label": "Statistical Process Control",
+  "definition": "Statistical Process Control (SPC) is a quality-control methodology that applies statistical methods to monitor and control a manufacturing or service process. By tracking process variation over time against statistically derived control limits, SPC distinguishes ordinary common-cause variation from assignable special-cause variation, enabling operators to intervene only when a process is genuinely out of control. It underpins continuous improvement and defect prevention in industrial production.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:quality-control",
+      "label": "Quality Control"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-inspection",
+        "label": "Industrial Inspection"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "@id": "urn:ngm:class:process-control",
+        "label": "Process Control"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Network Partition
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

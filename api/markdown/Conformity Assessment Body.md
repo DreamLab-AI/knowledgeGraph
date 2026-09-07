@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Conformity Assessment Body
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A conformity assessment body is an accredited organisation authorised to evaluate whether products, processes, or services meet specified standards or regulatory requirements. It performs testing, inspection, and certification activities and issues the formal attestations that allow goods to be placed on a market. Such bodies are themselves accredited by national accreditation authorities to ensure impartiality and competence.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:robot-standard", "label": "Robot Standard"}, {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robot-standard",
+        "label": "Robot Standard"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ]
   },
   "quality": 0.72
 }

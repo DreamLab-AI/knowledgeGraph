@@ -1,8 +1,3 @@
----
-public: true
----
-
-# STARK
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:stark:7e7d8c699ee5",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b91b0592750df57d277457dcd5b1e84845ce636bcb99c96b60ba2210af4f080f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Zero-Knowledge Proof]]",
-      "resolved": "urn:visionflow:linked:zero-knowledge-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verifiable Computation]]",
-      "resolved": "urn:visionflow:linked:verifiable-computation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Hash Function]]",
-      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptography Domain]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A STARK is a scalable transparent argument of knowledge, a cryptographic proof system that lets a verifier check a computation was performed correctly without a trusted setup and with proof verification far cheaper than re-execution.

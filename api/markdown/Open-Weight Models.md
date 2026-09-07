@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open-Weight Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "open-weight-models",
   "title": "Open-Weight Models",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Frontier AI Gap", "Open Router"],
+  "vc:outboundWikilinks": [
+    "Frontier AI Gap",
+    "Open Router"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpt",
+      "label": "GPT"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}, {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

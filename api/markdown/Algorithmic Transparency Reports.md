@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Algorithmic Transparency Reports
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -79,29 +74,74 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:stakeholder", "label": "Stakeholder"}
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder",
+        "label": "Stakeholder"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:redress-procedure", "label": "Redress Procedure"},
-      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:redress-procedure",
+        "label": "Redress Procedure"
+      },
+      {
+        "@id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -112,57 +152,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:algorithmic-transparency-reports:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:50b88bbf648387a74637cee56f61f40fd1964da41e1b6baeda4d5ca0430fec76"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Now Institute]]",
-      "resolved": "urn:visionflow:linked:ai-now-institute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Platform-to-Business Regulation]]",
-      "resolved": "urn:visionflow:linked:platform-to-business-regulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:owl:class:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Algorithmic Transparency Reports (ATRs) are periodic, structured public or regulatory disclosures produced by operators of [[Automated Decision System]]s, [[Machine Learning Model]]s, [[Recommendation System]]s, and [[Content Moderation System]]s to document system characteristics, performance, governance, accountability mechanisms, and societal impacts in a form accessible to regulators, affected communities, civil society organisations, academic researchers, and the general public. As a formal governance instrument, an Algorithmic Transparency Report operationalises the principle of [[Algorithmic Transparency]] at the organisation level — translating the broad commitment to transparency into a canonical set of disclosure artefacts that can be scrutinised by external parties and used as evidence for [[Regulatory Compliance]] verification. A fully formed ATR addresses eight canonical content areas: (1) system description — the AI system's purpose, functional scope, deployment scale, decision types supported, and populations affected, enabling readers to assess system significance without technical expertise; (2) performance metrics — accuracy, precision, recall, AUC, F1, or other task-appropriate metrics, reported both in aggregate and disaggregated by protected characteristics (ethnicity, sex, age, disability, socioeconomic status, geographic region) to expose differential performance that aggregate metrics conceal; (3) fairness and bias analysis — statistical disparate impact assessments using canonical fairness metrics (demographic parity difference, equal opportunity difference, calibration error by group), documented bias mitigation measures, and evidence of ongoing bias monitoring frequency and findings; (4) governance and oversight — named responsible parties, AI ethics board or review committee membership and remit, [[Audit Mechanism]] schedule and scope, and [[Human Oversight]] provisions specifying what decisions are subject to human review; (5) data practices — [[Data Provenance]] covering data sources, collection methodology, demographic coverage, consent and licensing records, retention schedules, and any [[Disclosure Requirements]] associated with GDPR or national data protection law; (6) explainability provisions — description of how decisions are communicated to affected parties, contestation and redress mechanisms, [[Decision Logging]] policies, and the degree to which [[Explainable AI]] methods are used to generate per-decision explanations; (7) incidents and remediation — documented system failures, bias incidents, or harms identified during the reporting period with severity classification, affected population sizes where known, root cause analyses, and corrective actions implemented; and (8) stakeholder engagement — consultation processes used in system design or governance review, feedback mechanisms available to affected communities, and organisational responses to concerns raised. Publication cadence typically follows annual or semi-annual schedules, mandated quarterly for very large online platforms under the EU Digital Services Act (DSA) from 2024. Content is calibrated to balance genuine transparency objectives against legitimate proprietary-information protection and adversarial-exploitation risks: highly detailed model architecture disclosures or decision-threshold values may enable gaming of [[Recommendation System]]s or [[Content Moderation System]]s, a tension that regulators address through tiered access regimes — public summary plus confidential regulator-access annex. ATRs build on corporate social responsibility reporting traditions (GRI standards, EU CSRD non-financial disclosures) and government transparency reporting norms (Freedom of Information publication schemes), adapted specifically for the algorithmic accountability context. The legal instruments anchoring ATR requirements include: [[EU AI Act Regulatory Instrument]] Articles 13 and 50 (user-facing transparency), DSA Articles 24 and 42 (very large platform transparency reports), the UK Algorithmic Transparency Recording Standard (ATRS, mandatory for central government from 2025), and [[Platform-to-Business Regulation]] Article 5 (ranking transparency). Voluntary ATR frameworks promoted by the [[AI Now Institute]], Partnership on AI, and Access Now's Transparency Reporting Index provide reference templates for organisations operating beyond mandatory requirements, building [[Stakeholder Trust]] and enabling independent [[Algorithmic Auditing]] of system behaviour across the reporting period.
@@ -292,7 +281,7 @@ public: true
 
   ## Use Cases / Major Families
 
-  **Platform DSA Transparency Reports**: The Digital Services Act created the largest mandatory ATR ecosystem globally. Meta's DSA Transparency Report (H1 2025) covered content moderation across Facebook and Instagram, reporting 5.6 billion automated content moderation actions (98% generated by automated systems), a 92.2% appeals overturn rate for removed content, and detailed breakdowns of advertising targeting categories used. Google's VLOSE biannual report (Q1–Q2 2025) covered Search, Maps, Shopping, and YouTube, with separate sections for each service's algorithmic recommendation system parameters and moderation volumes by EU member state and content category. TikTok, X, and LinkedIn published equivalent reports to the DSA Transparency Database. The European Centre for Algorithmic Transparency (ECAT), operating within the Joint Research Centre since April 2023, performs independent technical evaluation of VLOP algorithmic systems drawing on confidential platform data supplemented by published transparency reports, providing regulatory assurance beyond what public disclosure alone could achieve.
+  **Platform DSA Transparency Reports**: The Digital Services Act created the largest mandatory ATR ecosystem globally. Meta's DSA Transparency Report (H1 2025) covered content moderation across Facebook and Instagram, reporting 5.6 billion automated content moderation actions (98% generated by automated systems), a 92.2% appeals overturn rate for removed content, and detailed breakdowns of advertising targeting categories used. Google's VLOSE biannual report (Q1–Q2 2025) covered Search, Maps, Shopping, and YouTube, with separate sections for each service's algorithmic recommendation system parameters and moderation volumes by EU member state and content category. TikTok, X, and LinkedIn published equivalent reports to the DSA Transparency Database. The European Centre for Algorithmic Transparency (ECAT), operating within the Joint Research Centre since April 2023, performs independent technical evaluation of VLOP algorithmic systems drawing on confidential platform data supplemented by published transparency reports, providing regulatory assurance beyond what public disclosure alone [private] achieve.
 
   **UK Government ATRS Records**: The 59 ATRS records published by mid-2025 cover a diverse range of government algorithmic tools including: the Home Office's visa processing decision-support system (one of the most scrutinised early records, subject to civil society FOI analysis by the Open Rights Group); HMRC's compliance risk assessment tools; DWP's Universal Credit fraud and error detection models; NHS England's referral prioritisation tools; and Transport for London's road network optimisation algorithms. Each ATRS record follows the standardised template, enabling the first cross-government comparison of algorithmic tool governance quality. The OECD's 2025 state-of-the-art report drew on ATRS records to compare UK government algorithmic disclosure with analogous registers in France, Canada, Spain, and the Netherlands.
 

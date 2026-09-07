@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Invertible Neural Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

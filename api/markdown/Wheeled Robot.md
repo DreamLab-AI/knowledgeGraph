@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wheeled Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,15 +50,30 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
-      {"@id": "urn:ngm:class:navigation", "label": "Navigation"}
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ]
   },
   "quality": 0.35,
@@ -74,32 +84,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:wheeled-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dcc2cb865f7ed49c845141a63219a18c8f63afc7c16bb87051540683ea8680d0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Wheeled Robot is a mobile robot platform that uses wheels as its primary locomotion mechanism. Wheeled robots offer high energy efficiency and speed on flat terrain, making them dominant in warehouse automation, last-mile delivery, and research platforms. Differential drive, omnidirectional, and car-like Ackermann steering configurations each present distinct kinematic constraints that influence navigation algorithm design.

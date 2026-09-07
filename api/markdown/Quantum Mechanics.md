@@ -1,56 +1,113 @@
----
-public: true
----
-
-# Quantum Mechanics
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:quantum-mechanics", "@type":"Page", "title":"Quantum Mechanics", "vc:slug":"quantum-mechanics", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:quantum-mechanics",
-  "@type":"Class",
-  "label":"Quantum Mechanics",
-  "definition":"Quantum mechanics is the physical theory describing matter and energy at atomic and subatomic scales, where observable quantities are discrete and systems are represented by state vectors in a complex Hilbert space evolving under unitary dynamics. Core principles such as superposition, entanglement, measurement collapse and the uncertainty relation depart sharply from classical intuition. It provides the foundational substrate for quantum computing, quantum cryptography and the engineering of qubit-based information systems.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:quantum-computation-paradigm","label":"Quantum Computation Paradigm"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:qubit","label":"Qubit"},
-      {"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"}
-    ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"},
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"}
-    ],
-    "requires":[
-      {"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"},
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:quantum-computation-paradigm","label":"Quantum Computation Paradigm"},
-      {"@id":"urn:ngm:class:quantum-cryptography","label":"Quantum Cryptography"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:qubit","label":"Qubit"},
-      {"@id":"urn:ngm:class:quantum-gate","label":"Quantum Gate"}
-    ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:post-quantum-cryptography","label":"Post-Quantum Cryptography"},
-      {"@id":"urn:ngm:class:quantum-error-correction","label":"Quantum Error Correction"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:qubit","label":"Qubit"},
-      {"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:quantum-mechanics",
+  "@type": "Page",
+  "title": "Quantum Mechanics",
+  "vc:slug": "quantum-mechanics",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:quantum-mechanics",
+  "@type": "Class",
+  "label": "Quantum Mechanics",
+  "definition": "Quantum mechanics is the physical theory describing matter and energy at atomic and subatomic scales, where observable quantities are discrete and systems are represented by state vectors in a complex Hilbert space evolving under unitary dynamics. Core principles such as superposition, entanglement, measurement collapse and the uncertainty relation depart sharply from classical intuition. It provides the foundational substrate for quantum computing, quantum cryptography and the engineering of qubit-based information systems.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-cryptography",
+        "label": "Quantum Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-gate",
+        "label": "Quantum Gate"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-error-correction",
+        "label": "Quantum Error Correction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Quantum mechanics is the physical theory of matter and energy at atomic scales, representing systems as state vectors in a complex Hilbert space and relying on [[Linear Algebra]] and [[Probability Distribution]] to predict measurement outcomes. Its principles of superposition and entanglement underpin the [[Qubit]].
 - ### Overview

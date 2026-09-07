@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gold Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -160,53 +155,13 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gold-standard:3574a97c9e60",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a90bca620cd68e88b6b6b03b9e4be111a5fcbcc51be911b1aff0d254fdc1ff60"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Monetary Policy]]",
-      "resolved": "urn:visionflow:linked:monetary-policy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Money]]",
-      "resolved": "urn:visionflow:linked:money",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Central Bank]]",
-      "resolved": "urn:visionflow:linked:central-bank",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Inflation]]",
-      "resolved": "urn:visionflow:linked:inflation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - The Gold Standard is a [[Monetary System]] in which a currency's value is legally fixed to and redeemable in a defined quantity of gold, tying [[Money]] creation directly to holdings of physical gold. It operated as a self-regulating international mechanism through the [[Specie Flow Mechanism]], wherein trade imbalances caused gold movements between countries that automatically corrected [[Balance of Payments]] deficits and surpluses without active intervention by a [[Central Bank]]. Most of the industrialised world operated under classical gold-standard rules from roughly 1870 to 1914, with later variants including the gold exchange standard of the 1920s and the [[Bretton Woods System]] of dollar-gold convertibility (1944–1971).
 
 - ### Overview
   - The gold standard emerged as the dominant international monetary arrangement during the nineteenth century, initially in Britain (which had operated a de facto gold standard since 1717 under Isaac Newton as Master of the Mint) and spreading to most major economies after Germany adopted it following the Franco-Prussian War indemnity of 1871.
   - Its defining feature is the fixed legal parity between a unit of currency and a specified weight of gold. Because each participating country defines its currency in terms of gold, bilateral exchange rates between those currencies are effectively fixed — a property that greatly facilitated [[International Trade]] and cross-border capital flows during the era of classical globalisation.
-  - The system imposed automatic discipline on [[Monetary Policy]]: governments and central banks could not expand the [[Money]] supply beyond their gold reserves without risking convertibility crises. This constraint produced long-run [[Price Stability]] but limited the ability of authorities to respond to recessions, bank panics, or external shocks.
+  - The system imposed automatic discipline on [[Monetary Policy]]: governments and central banks [private] not expand the [[Money]] supply beyond their gold reserves without risking convertibility crises. This constraint produced long-run [[Price Stability]] but limited the ability of authorities to respond to recessions, bank panics, or external shocks.
   - The gold standard is now studied primarily as a historical institution and a reference point for debates about rules-based versus discretionary monetary policy, [[Currency Peg]] regimes, and the design of sound money systems.
 
 - ### Key Mechanisms

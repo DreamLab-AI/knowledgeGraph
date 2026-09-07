@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Slashing Condition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A slashing condition is a rule in a proof-of-stake protocol that defines provable validator misbehaviour, such as double-signing or equivocation, and triggers the forfeiture of part of the offender's staked collateral. It makes attacks economically costly by penalising actions that threaten consensus safety, aligning validator incentives with honest participation. It is a core economic-security primitive of staking-based consensus.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:sustainable-consensus", "label": "Sustainable Consensus"}, {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sustainable-consensus",
+        "label": "Sustainable Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Workflow Automation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-workflow-automation",
   "title": "AI Workflow Automation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Enterprise UX Challenges", "Product-Market Fit"],
+  "vc:outboundWikilinks": [
+    "Enterprise UX Challenges",
+    "Product-Market Fit"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agents",
+      "label": "AI Agents"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"}, {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

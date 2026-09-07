@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reference Implementation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

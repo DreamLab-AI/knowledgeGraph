@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSIDomainClassification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,17 +59,38 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:etsi-domain-infrastructure", "label": "ETSI_Domain_Infrastructure"},
-      {"@id": "urn:ngm:class:etsi-domain-identity-and-trust", "label": "ETSI Domain Identity and Trust"},
-      {"@id": "urn:ngm:class:etsi-domain-security-and-privacy", "label": "ETSI Domain Security and Privacy"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-infrastructure",
+        "label": "ETSI_Domain_Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-identity-and-trust",
+        "label": "ETSI Domain Identity and Trust"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-security-and-privacy",
+        "label": "ETSI Domain Security and Privacy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy", "label": "Etsi Metaverse Domain Taxonomy"},
-      {"@id": "urn:ngm:class:metaverse-ontology", "label": "Metaverse Ontology"}
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "Etsi Metaverse Domain Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-metaverse-domain-model", "label": "Etsi Metaverse Domain Model"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-model",
+        "label": "Etsi Metaverse Domain Model"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "provenance": {
@@ -84,42 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsidomain-classification:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:69fcf50e6ae4ec5e1921fc0fc6d6c44e7c749773fdeb56cca730e7bbfc35c2e5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[European Telecommunications Standards Institute]]",
-      "resolved": "urn:visionflow:linked:european-telecommunications-standards-institute",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A taxonomy and classification scheme from the [[European Telecommunications Standards Institute]] categorising technology domains, standards, and governance areas to enable systematic organisation and cross-domain coordination. This classification enables discovery, standards alignment, and regulatory mapping across disparate technical and governance contexts.

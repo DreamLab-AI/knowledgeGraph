@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DICOM
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -13,41 +8,146 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:interoperability-standard", "vc:label": "Interoperability Standard"},
-    {"@id": "urn:visionflow:linked:medical-imaging", "vc:label": "Medical Imaging"},
-    {"@id": "urn:visionflow:linked:medical-imaging-ai", "vc:label": "Medical Imaging AI"},
-    {"@id": "urn:visionflow:linked:healthcare-ai", "vc:label": "Healthcare AI"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:data-protection", "vc:label": "Data Protection"},
-    {"@id": "urn:visionflow:linked:interoperability-framework", "vc:label": "Interoperability Framework"},
-    {"@id": "urn:visionflow:linked:hl7-fhir", "vc:label": "HL7 FHIR"},
-    {"@id": "urn:visionflow:linked:digital-health", "vc:label": "Digital Health"},
-    {"@id": "urn:visionflow:linked:electronic-health-record", "vc:label": "Electronic Health Record"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:federated-learning", "vc:label": "Federated Learning"},
-    {"@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:standards-body", "vc:label": "Standards Body"},
-    {"@id": "urn:visionflow:linked:interoperability", "vc:label": "Interoperability"},
-    {"@id": "urn:visionflow:linked:rest-api", "vc:label": "REST API"},
-    {"@id": "urn:visionflow:linked:clinical-decision-support", "vc:label": "Clinical Decision Support"},
-    {"@id": "urn:visionflow:linked:privacy", "vc:label": "Privacy"},
-    {"@id": "urn:visionflow:linked:security", "vc:label": "Security"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:image-segmentation", "vc:label": "Image Segmentation"},
-    {"@id": "urn:visionflow:linked:annotation", "vc:label": "Annotation"},
-    {"@id": "urn:visionflow:linked:dataset", "vc:label": "Dataset"},
-    {"@id": "urn:visionflow:linked:drug-discovery", "vc:label": "Drug Discovery"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:semantic-interoperability", "vc:label": "Semantic Interoperability"},
-    {"@id": "urn:visionflow:linked:telehealth", "vc:label": "Telehealth"},
-    {"@id": "urn:visionflow:linked:picture-archiving-and-communication-system", "vc:label": "Picture Archiving and Communication System"},
-    {"@id": "urn:visionflow:linked:snomed-ct", "vc:label": "SNOMED CT"},
-    {"@id": "urn:visionflow:linked:transfer-syntax", "vc:label": "Transfer Syntax"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:application-layer", "vc:label": "ApplicationLayer"}
+    {
+      "@id": "urn:visionflow:linked:interoperability-standard",
+      "vc:label": "Interoperability Standard"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-imaging",
+      "vc:label": "Medical Imaging"
+    },
+    {
+      "@id": "urn:visionflow:linked:medical-imaging-ai",
+      "vc:label": "Medical Imaging AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:healthcare-ai",
+      "vc:label": "Healthcare AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-protection",
+      "vc:label": "Data Protection"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability-framework",
+      "vc:label": "Interoperability Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:hl7-fhir",
+      "vc:label": "HL7 FHIR"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-health",
+      "vc:label": "Digital Health"
+    },
+    {
+      "@id": "urn:visionflow:linked:electronic-health-record",
+      "vc:label": "Electronic Health Record"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:federated-learning",
+      "vc:label": "Federated Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:standards-body",
+      "vc:label": "Standards Body"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:rest-api",
+      "vc:label": "REST API"
+    },
+    {
+      "@id": "urn:visionflow:linked:clinical-decision-support",
+      "vc:label": "Clinical Decision Support"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy",
+      "vc:label": "Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:security",
+      "vc:label": "Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-segmentation",
+      "vc:label": "Image Segmentation"
+    },
+    {
+      "@id": "urn:visionflow:linked:annotation",
+      "vc:label": "Annotation"
+    },
+    {
+      "@id": "urn:visionflow:linked:dataset",
+      "vc:label": "Dataset"
+    },
+    {
+      "@id": "urn:visionflow:linked:drug-discovery",
+      "vc:label": "Drug Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-interoperability",
+      "vc:label": "Semantic Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:telehealth",
+      "vc:label": "Telehealth"
+    },
+    {
+      "@id": "urn:visionflow:linked:picture-archiving-and-communication-system",
+      "vc:label": "Picture Archiving and Communication System"
+    },
+    {
+      "@id": "urn:visionflow:linked:snomed-ct",
+      "vc:label": "SNOMED CT"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-syntax",
+      "vc:label": "Transfer Syntax"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:application-layer",
+      "vc:label": "ApplicationLayer"
+    }
   ]
 }
 ```
@@ -69,46 +169,115 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"},
-      {"@id": "urn:ngm:class:medical-imaging-ai", "label": "Medical Imaging AI"},
-      {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"},
-      {"@id": "urn:ngm:class:telehealth", "label": "Telehealth"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:telehealth",
+        "label": "Telehealth"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"},
-      {"@id": "urn:ngm:class:electronic-health-record", "label": "Electronic Health Record"},
-      {"@id": "urn:ngm:class:interoperability-framework", "label": "Interoperability Framework"}
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:digital-health", "label": "Digital Health"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",

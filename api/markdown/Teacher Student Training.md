@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Teacher Student Training
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,19 +59,40 @@ public: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
-      {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"}
+      {
+        "@id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation-for-edge",
+        "label": "Knowledge Distillation for Edge"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:teacher-student-training:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5a4db087da25c2a8c81ca4e9481bf4ea842598728bd41115c8a417da36e93553"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Teacher-Student Training is a machine learning paradigm in which a larger, higher-capacity teacher model supervises the training of a smaller student model, transferring knowledge through soft probability distributions (dark knowledge), intermediate feature representations, or attention maps rather than hard labels alone. The approach underpins knowledge distillation for model compression and is widely used to deploy efficient models on edge hardware without sacrificing task performance.

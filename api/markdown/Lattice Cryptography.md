@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lattice Cryptography
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lattice-cryptography:d69342319e97",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aa3b89d99eb20787ea6dc807a4b04a62264ff135c3dc277845ed292df7c859a8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptography]]",
-      "resolved": "urn:visionflow:linked:cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Encryption]]",
-      "resolved": "urn:visionflow:linked:encryption",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Signature]]",
-      "resolved": "urn:visionflow:linked:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Primitive]]",
-      "resolved": "urn:visionflow:linked:cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quantum Computation Paradigm]]",
-      "resolved": "urn:visionflow:linked:quantum-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Post-Quantum Cryptography]]",
-      "resolved": "urn:visionflow:linked:post-quantum-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://csrc.nist.gov/projects/post-quantum-cryptography]]",
-      "resolved": "urn:visionflow:linked:https-csrc-nist-gov-projects-post-quantum-cryptography",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A family of cryptographic constructions whose security rests on the hardness of computational problems over high-dimensional lattices, such as learning with errors. These problems are believed to resist attacks by quantum computers.

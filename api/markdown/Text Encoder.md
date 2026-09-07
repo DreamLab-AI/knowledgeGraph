@@ -1,8 +1,3 @@
----
-public: true
----
-
-# text encoder
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,24 +34,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:tokeniser", "label": "Tokeniser"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
-      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - A text encoder is a neural network component that maps raw text—after tokenisation—into dense, contextualised vector representations that capture semantic, syntactic, and relational information for use in downstream tasks. Transformer-based encoders such as BERT, RoBERTa, and ALBERT produce bidirectional contextual embeddings via masked language model pre-training, whilst CLIP's text tower produces contrastively aligned embeddings shared with a visual encoder. In generative image and video pipelines, the text encoder translates natural language prompts into conditioning vectors that guide the diffusion denoising process via cross-attention.

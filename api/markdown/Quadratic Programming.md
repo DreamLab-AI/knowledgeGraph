@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Quadratic Programming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Quadratic programming (QP) is a class of mathematical optimisation problems in which a quadratic objective function is minimised subject to linear equality and inequality constraints. It is a convex optimisation problem when the quadratic term is positive semidefinite, admitting efficient and globally optimal solvers. QP is foundational to model-based control, trajectory optimisation, and constrained robotic motion generation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:model-based-control", "label": "Model Based Control"}
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:model-based-control",
+        "label": "Model Based Control"
+      }
     ]
   },
   "quality": 0.72

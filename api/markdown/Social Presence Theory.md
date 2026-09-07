@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-003-social-presence-theory
----
-
-# Social Presence Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,77 +106,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:social-presence-theory:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:00ed14d4080896336bce6123a0bb81ed17b13f7ef28b61993a4f041afe9bc1ba"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NonverbalCommunication]]",
-      "resolved": "urn:visionflow:linked:nonverbal-communication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-002-telecollaboration]]",
-      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-004-media-richness-theory]]",
-      "resolved": "urn:visionflow:linked:tele-004-media-richness-theory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-006-presence]]",
-      "resolved": "urn:visionflow:linked:tele-006-presence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-020-virtual-reality-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-100-ai-avatars]]",
-      "resolved": "urn:visionflow:linked:tele-100-ai-avatars",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-110-spatial-audio-processing]]",
-      "resolved": "urn:visionflow:linked:tele-110-spatial-audio-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-115-gaze-tracking]]",
-      "resolved": "urn:visionflow:linked:tele-115-gaze-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CommunicationTheory]]",
-      "resolved": "urn:visionflow:owl:class:communication-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TELE-001-telepresence]]",
-      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "A theoretical framework explaining how communication media vary in their capacity to convey social cues (facial expressions, vocal intonation, body language, interpersonal warmth), thereby influencing the degree to which communicators perceive each other as psychologically present, real, and engaged in interpersonal exchange."

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Employment Effects
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-employment-effects",
   "title": "AI Employment Effects",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Econometric Analysis", "Entry-Level Labor Market"],
+  "vc:outboundWikilinks": [
+    "Econometric Analysis",
+    "Entry-Level Labor Market"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-economy",
+      "label": "Digital Economy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:enterprise-ai-adoption", "label": "Enterprise AI Adoption"}, {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:enterprise-ai-adoption",
+        "label": "Enterprise AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

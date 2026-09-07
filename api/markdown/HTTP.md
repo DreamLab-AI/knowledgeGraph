@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HTTP
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -198,52 +193,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:http:e0603c499aae",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:863f56516448fcb5392faaf6e769fcc8fe564fbd3eca3b6807dafcd5bdfdf09c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Transport Layer]]",
-      "resolved": "urn:visionflow:linked:transport-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[API]]",
-      "resolved": "urn:visionflow:linked:api",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Network Protocol]]",
-      "resolved": "urn:visionflow:linked:network-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Communication Protocols]]",
-      "resolved": "urn:visionflow:linked:communication-protocols",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Hypertext Transfer Protocol, a stateless application-layer protocol for transferring hypertext and other resources between clients and servers that underpins the World Wide Web.

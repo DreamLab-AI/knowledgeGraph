@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,16 +55,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-access-interface", "label": "Data Access Interface"},
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+      {
+        "@id": "urn:ngm:class:data-access-interface",
+        "label": "Data Access Interface"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
     ]
   },
   "provenance": {
@@ -79,37 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:data-registry:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1db8920716c2fed990810796788a92470391fcf43d0e1e1851ac171eebacbd93"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Data Registry is a centralised or federated catalogue that maintains authoritative records of data assets, their schemas, provenance, ownership, and access policies. In digital and metaverse infrastructure, registries track digital assets, avatar identities, and ontological terms, enabling discovery, governance, and interoperability. Blockchain-anchored registries provide tamper-evident provenance and decentralised control.

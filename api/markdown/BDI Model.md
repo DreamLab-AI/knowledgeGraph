@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BDI Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,19 +91,40 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:goal", "label": "Goal"},
-      {"@id": "urn:ngm:class:agent", "label": "Agent"}
+      {
+        "@id": "urn:ngm:class:goal",
+        "label": "Goal"
+      },
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomy-level", "label": "Autonomy Level"},
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+      {
+        "@id": "urn:ngm:class:autonomy-level",
+        "label": "Autonomy Level"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:objective", "label": "Objective"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
+      {
+        "@id": "urn:ngm:class:objective",
+        "label": "Objective"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      }
     ]
   },
   "quality": 0.5,
@@ -119,87 +135,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bdi-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:688b95e38b68274929b8664c2ad9a2cba60f24d24e6450ecff846215cd6b7de6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Agent Architecture]]",
-      "resolved": "urn:visionflow:linked:agent-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Deliberative Architecture]]",
-      "resolved": "urn:visionflow:linked:deliberative-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hybrid Architecture]]",
-      "resolved": "urn:visionflow:linked:hybrid-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Multi-Agent System]]",
-      "resolved": "urn:visionflow:linked:multi-agent-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Plan]]",
-      "resolved": "urn:visionflow:linked:plan",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Practical Reasoning]]",
-      "resolved": "urn:visionflow:linked:practical-reasoning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reactive Architecture]]",
-      "resolved": "urn:visionflow:linked:reactive-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Subsumption Architecture]]",
-      "resolved": "urn:visionflow:linked:subsumption-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agent]]",
-      "resolved": "urn:visionflow:owl:class:agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomy Level]]",
-      "resolved": "urn:visionflow:owl:class:autonomy-level",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Goal]]",
-      "resolved": "urn:visionflow:owl:class:goal",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A deliberative agent architecture grounded in Bratman's theory of practical reasoning, structuring agent cognition around Beliefs (world knowledge), Desires (motivational goals), and Intentions (committed plans), with a reasoning cycle covering belief revision, deliberation, means-end reasoning, and intention reconsideration.
@@ -493,7 +428,7 @@ public: true
         self.plans[plan.goal_pattern] = plan
 
     def get_applicable_plans(self, goal, beliefs):
-        """Find plans that could achieve goal given beliefs"""
+        """Find plans that [private] achieve goal given beliefs"""
         applicable = []
         for plan in self.plans.values():
             if plan.matches_goal(goal) and plan.preconditions_met(beliefs):

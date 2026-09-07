@@ -1,0 +1,29 @@
+/* Frozen /notes export compatibility, 2026-09-07. Keep full dates accessible.
+   The archived Logseq application is preserved, not rebuilt by this override. */
+@media (max-width: 480px) {
+  td.created-at, td.updated-at,
+  td.created-at > span, td.updated-at > span {
+    white-space: normal !important;
+    overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 480px) {
+  .cp__all_pages-content {
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+@media (max-width: 480px) {
+  #head.cp__header > .l,
+  #head.cp__header > .r {
+    min-width: 0;
+  }
+}
+@media (max-width: 480px) {
+  /* Desktop drag handle extends beyond the mobile viewport; the header's
+     sidebar toggle remains the supported mobile control. */
+  .resizer {
+    display: none;
+  }
+}

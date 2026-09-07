@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Learning Rate
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:learning-rate", "@type":"Page", "title":"Learning Rate", "vc:slug":"learning-rate", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:learning-rate",
+  "@type": "Page",
+  "title": "Learning Rate",
+  "vc:slug": "learning-rate",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Smart Building
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,44 +20,112 @@ public: true
   "definition": "A Smart Building is a facility that integrates networked sensors, actuators, control systems, and analytical software to automatically optimise energy consumption, occupant comfort, security, and operational efficiency in real time. Building systems — HVAC, lighting, access control, fire detection, lifts, and power distribution — are connected through a building management system (BMS) and increasingly exposed through open protocols such as BACnet, Modbus, MQTT, and OPC-UA to enable data-driven control strategies. Machine learning models analyse sensor streams to predict occupancy, detect anomalies, and schedule maintenance proactively. Smart buildings are fundamental nodes in [[Smart City]] infrastructure, integrating with district energy grids, electric vehicle charging, and urban mobility platforms.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:building-automation", "label": "Building Automation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:building-automation",
+      "label": "Building Automation"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
-      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"},
-      {"@id": "urn:ngm:class:smart-home", "label": "Smart Home"}
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "@id": "urn:ngm:class:smart-home",
+        "label": "Smart Home"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-city-infrastructure", "label": "Smart City Infrastructure"},
-      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"},
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"}
+      {
+        "@id": "urn:ngm:class:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:iot-sensor", "label": "IoT Sensor"},
-      {"@id": "urn:ngm:class:building-automation", "label": "Building Automation"},
-      {"@id": "urn:ngm:class:io-t-infrastructure", "label": "IoT Infrastructure"}
+      {
+        "@id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:building-automation",
+        "label": "Building Automation"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
-      {"@id": "urn:ngm:class:building-information-modelling", "label": "Building Information Modelling"}
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:building-information-modelling",
+        "label": "Building Information Modelling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "Iot Sensor Network"},
-      {"@id": "urn:ngm:class:iot-device", "label": "IoT Device"},
-      {"@id": "urn:ngm:class:real-time-analytics", "label": "Real-Time Analytics"}
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "Iot Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:io-t-integration", "label": "IoT Integration"},
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"}
+      {
+        "@id": "urn:ngm:class:io-t-integration",
+        "label": "IoT Integration"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:smart-home-automation", "label": "Smart Home Automation"},
-      {"@id": "urn:ngm:class:io-t", "label": "IoT"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
+      {
+        "@id": "urn:ngm:class:smart-home-automation",
+        "label": "Smart Home Automation"
+      },
+      {
+        "@id": "urn:ngm:class:io-t",
+        "label": "IoT"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:iot-security", "label": "Iot Security"},
-      {"@id": "urn:ngm:class:real-time-data-processing", "label": "Real-Time Data Processing"}
+      {
+        "@id": "urn:ngm:class:iot-security",
+        "label": "Iot Security"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-processing",
+        "label": "Real-Time Data Processing"
+      }
     ]
   },
   "sameAs": [],
@@ -91,7 +153,7 @@ public: true
   - **Control layer**: [[Building Automation]] systems executing set-point adjustments based on real-time and forecast data.
   - **Analytics layer**: machine learning models predicting occupancy patterns, detecting equipment faults, and scheduling maintenance.
   - **Integration layer**: [[IoT Integration]] with district grids, EV charging, and city-level dashboards.
-  - **Security**: [[Iot Security]] controls protect building systems from cyber intrusion that could affect physical safety.
+  - **Security**: [[Iot Security]] controls protect building systems from cyber intrusion that [private] affect physical safety.
 
 - ### Mechanisms
   - [[Iot Sensor Network]] feeds telemetry to an edge or cloud analytics platform; [[Real-Time Data Processing]] pipelines generate control signals.

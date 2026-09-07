@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Measure Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,67 +177,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:measure-theory:a3a4ae4c5df0",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:85195ede1aabda49f6638eaf47e2a84f8ad4e8c42dd4509d95f25d67342043c4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Lebesgue Integral]]",
-      "resolved": "urn:visionflow:linked:lebesgue-integral",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sigma-Algebra]]",
-      "resolved": "urn:visionflow:linked:sigma-algebra",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Set Theory]]",
-      "resolved": "urn:visionflow:linked:set-theory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real Analysis]]",
-      "resolved": "urn:visionflow:linked:real-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Probability Theory]]",
-      "resolved": "urn:visionflow:linked:probability-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stochastic Processes]]",
-      "resolved": "urn:visionflow:linked:stochastic-processes",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Functional Analysis]]",
-      "resolved": "urn:visionflow:linked:functional-analysis",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Measure Theory is the branch of mathematical analysis that studies measures, which assign a consistent notion of size, length, area, volume or probability to subsets of a space. It provides the rigorous foundation for the Lebesgue integral, which generalises the Riemann integral and handles a wider class of functions and limiting operations. It is the formal basis of modern probability theory, where a probability is a measure of total mass one.

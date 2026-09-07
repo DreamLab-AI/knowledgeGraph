@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Symmetric Cryptography
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Excalidraw
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Excalidraw is an open-source, browser-based collaborative whiteboard and diagramming application characterised by its distinctive hand-drawn visual aesthetic, which renders all shapes, lines, and text in a sketchy style designed to encourage low-fidelity ideation rather than polished production diagrams. The tool stores diagrams in a human-readable JSON format and supports real-time multiplayer collaboration, end-to-end encrypted sharing, and an extensive library of reusable shapes, making it widely used for software architecture sketching, workshop facilitation, and technical communication.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+      "label": "Collaborative Whiteboard"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:diagrams-as-code", "label": "Diagrams as Code"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:diagrams-as-code",
+        "label": "Diagrams as Code"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:shared-whiteboards", "label": "Shared Whiteboards"},
-      {"@id": "urn:ngm:class:ai-diagram-tools", "label": "AI Diagram Tools"}
+      {
+        "@id": "urn:ngm:class:shared-whiteboards",
+        "label": "Shared Whiteboards"
+      },
+      {
+        "@id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:human-computer-interface", "label": "Human Computer Interface"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interface",
+        "label": "Human Computer Interface"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - Excalidraw has found particularly strong adoption in software engineering and DevOps communities as a lightweight alternative to heavyweight diagramming tools like Visio or Lucidchart for architecture sketches, system design interview preparation, and RFC-style technical discussions. Its embeddability — as a React component published to npm — enabled integration into platforms including Notion, Obsidian (via a popular plugin), Linear, and dozens of other productivity tools. The Excalidraw+ commercial offering provides persistent cloud storage, private sharing, and team management on top of the open-source engine, providing the sustainability model for continued open-source development.
 
   - In 2024-2025, Excalidraw extended its AI integration capabilities significantly, adding features that allow users to describe a diagram in natural language and receive a generated sketch, or to upload an image and have it converted to editable Excalidraw elements. Integration with large language model APIs enables automatic diagram enrichment, layout suggestions, and export to structured formats such as Mermaid or BPMN. The tool has also become a popular surface for AI agent demonstrations — autonomous agents that sketch out plans, architectures, and workflows in real time as they reason — making Excalidraw an unexpected but fitting interface for human-AI co-creation.
-

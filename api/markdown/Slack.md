@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Slack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,4 +157,3 @@ public: true
   - Slack's commercial significance lies in replacing email for internal team communication, capturing institutional memory in searchable channels, and becoming the command centre for DevOps and engineering workflows. Integration with GitHub, PagerDuty, Datadog, and Jira means that deployments, incidents, and pull request reviews surface directly in relevant channels, reducing context-switching. The freemium model with searchable message history limited to 90 days on the free tier drives conversion to paid plans as organisations accumulate institutional knowledge they need to retrieve. By 2023, Slack had approximately 32 million daily active users and was central to the operations of the majority of Fortune 500 technology companies.
 
   - Following the Salesforce acquisition in 2021, Slack has been positioned as the conversational layer of the Salesforce Customer 360 platform, with deep integrations into Sales Cloud, Service Cloud, and Tableau. Slack Canvas (a persistent structured document surface) and Slack Lists (lightweight project tracking) were introduced to reduce dependency on Notion and Asana. By 2025, AI features including summarisation of channel catch-ups, smart notifications, and an AI-powered search assistant ("Slack AI") have been rolled out to paid plans, positioning Slack to compete with Microsoft Copilot for Teams. The competitive dynamics between Slack and Microsoft Teams remain the defining market tension in enterprise collaboration.
-

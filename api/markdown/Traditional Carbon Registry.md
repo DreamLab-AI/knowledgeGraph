@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Traditional Carbon Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:traditional-carbon-registry:a397cf792611",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:657aa2b2bcb448f6d1fb5feb633ff1bee7a3507430fc314061848d675dfc1611"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Carbon Registry]]",
-      "resolved": "urn:visionflow:linked:carbon-registry",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Regulatory Compliance]]",
-      "resolved": "urn:visionflow:linked:regulatory-compliance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verra VCS Standard]]",
-      "resolved": "urn:visionflow:linked:verra-vcs-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainability Domain]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Markets]]",
-      "resolved": "urn:visionflow:linked:carbon-markets",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A traditional carbon registry is a centralised database that records the issuance, ownership, transfer and retirement of carbon credits to prevent double counting in carbon markets.

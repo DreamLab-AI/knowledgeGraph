@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Disruptive Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -129,22 +124,52 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}
+      {
+        "@id": "urn:ngm:class:infra-computing-and-cloud",
+        "label": "Computing and Cloud"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:technology-disruption-dynamics", "label": "Technology Disruption Dynamics"},
-      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:technology-disruption-dynamics",
+        "label": "Technology Disruption Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:technology-stack", "label": "Technology Stack"}
+      {
+        "@id": "urn:ngm:class:technology-stack",
+        "label": "Technology Stack"
+      }
     ]
   },
   "provenance": {
@@ -154,122 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:disruptive-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a2b959248362ed922f17ac195093530022c5b6c99c17fbc03d87c289c797069c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Affordability]]",
-      "resolved": "urn:visionflow:linked:affordability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ChristensenTheory]]",
-      "resolved": "urn:visionflow:linked:christensen-theory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DigitalPhotography]]",
-      "resolved": "urn:visionflow:linked:digital-photography",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DisruptiveInnovation]]",
-      "resolved": "urn:visionflow:linked:disruptive-innovation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ElectricVehicles]]",
-      "resolved": "urn:visionflow:linked:electric-vehicles",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InnovationDomain]]",
-      "resolved": "urn:visionflow:linked:innovation-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InnovatorsDislemma]]",
-      "resolved": "urn:visionflow:linked:innovators-dislemma",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InnovatorsSolution]]",
-      "resolved": "urn:visionflow:linked:innovators-solution",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MarketCreation]]",
-      "resolved": "urn:visionflow:linked:market-creation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ParadigmShift]]",
-      "resolved": "urn:visionflow:linked:paradigm-shift",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PersonalComputer]]",
-      "resolved": "urn:visionflow:linked:personal-computer",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Scalability]]",
-      "resolved": "urn:visionflow:linked:scalability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Simplicity]]",
-      "resolved": "urn:visionflow:linked:simplicity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Smartphones]]",
-      "resolved": "urn:visionflow:linked:smartphones",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[StreamingServices]]",
-      "resolved": "urn:visionflow:linked:streaming-services",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SustainingTechnology]]",
-      "resolved": "urn:visionflow:linked:sustaining-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ValueNetwork]]",
-      "resolved": "urn:visionflow:linked:value-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accessibility]]",
-      "resolved": "urn:visionflow:owl:class:accessibility",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Disruptive Technology refers to innovations that create new markets and value networks by initially targeting simple applications at the bottom of the market with more accessible and affordable solutions, then relentlessly moving upmarket to eventually displace established market-leading firms, products, and alliances. Unlike sustaining technologies that make incremental improvements, disruptive technologies enable business models that fundamentally shift market paradigms.

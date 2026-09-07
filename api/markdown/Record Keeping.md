@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Record Keeping
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Record keeping is the systematic retention of transaction, customer, and decision records so that activities can be reconstructed and verified by auditors or regulators. In financial compliance it mandates preserving identity documentation, transaction details, and risk assessments for prescribed periods. Robust record keeping is a precondition for meeting anti-money-laundering and travel-rule obligations.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:travel-rule", "label": "Travel Rule"}
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
     ]
   },
   "quality": 0.72

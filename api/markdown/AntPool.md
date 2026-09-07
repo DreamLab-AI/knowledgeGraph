@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AntPool
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ant-pool:b3234059426b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:846d0f9085f75b5cee3dbd865e94b90b1b7e04bec0e8e1fbae21c7acd6097c1f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Mining]]",
-      "resolved": "urn:visionflow:linked:bitcoin-mining",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction Validation]]",
-      "resolved": "urn:visionflow:linked:transaction-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitmain]]",
-      "resolved": "urn:visionflow:linked:bitmain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mining Pool]]",
-      "resolved": "urn:visionflow:linked:mining-pool",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.antpool.com]]",
-      "resolved": "urn:visionflow:linked:https-www-antpool-com",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.antpool.com/help]]",
-      "resolved": "urn:visionflow:linked:https-www-antpool-com-help",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AntPool is a Bitcoin mining pool operated in association with Bitmain. It is one of the larger pools by share of network hash rate.

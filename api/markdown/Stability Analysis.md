@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - StabilityAnalysis
----
-
-# Stability Analysis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,22 +20,54 @@ aliases:
   "definition": "Stability analysis is the systematic mathematical investigation of whether a dynamical system — physical, computational, financial, or ecological — will remain bounded, return to equilibrium, or diverge when subjected to perturbations from an operating point. Classical techniques include Lyapunov stability theory, eigenvalue analysis of linearised systems, Bode and Nyquist frequency-domain methods, and Floquet theory for periodic systems. In AI, stability analysis extends to training dynamics, gradient flow, and the behaviour of neural networks under input distribution shifts.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"}
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:robotic-control", "label": "Robotic Control"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"}
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-control",
+        "label": "Robotic Control"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:training-instability", "label": "Training Instability"},
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:training-instability",
+        "label": "Training Instability"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +88,3 @@ aliases:
   - Stability analysis is significant because unstable systems can fail catastrophically: aircraft control surfaces oscillate, power grids cascade-fail, robotic arms damage equipment or people, chemical reactors run away. In financial markets, stability analysis of interconnected institutions forms part of macro-prudential regulation (stress testing, network contagion modelling). In AI training, understanding loss landscape geometry and gradient flow stability is essential for training large models reliably — batch normalisation, residual connections, and adaptive learning rate methods are all motivated by stability considerations.
 
   - Contemporary applications in 2024-2025 include stability verification of deep reinforcement learning policies for safety-critical robotics (using Lyapunov neural networks — learned Lyapunov functions parameterised as neural networks), stability of large language model fine-tuning (controlling catastrophic forgetting and gradient variance), power-grid stability under renewable intermittency (real-time eigenvalue tracking for small-signal stability), and network-theoretic stability analysis of financial systems under stress. Formal verification tools are beginning to provide provable stability certificates for neural network controllers, bridging the gap between classical control theory and learned systems.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Documentation As Code
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Documentation as Code is a software-engineering practice in which technical documentation is authored in plain-text markup, stored in version control alongside source code, and built and published through the same automated pipelines used for software. It applies developer workflows such as pull requests, code review, linting, and continuous integration to documentation. The approach keeps docs synchronised with code and improves consistency, traceability, and collaboration.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development", "label": "Software Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:diagrams-as-code", "label": "Diagrams as Code"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:diagrams-as-code",
+        "label": "Diagrams as Code"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Unique Identifier
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

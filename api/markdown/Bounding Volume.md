@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bounding Volume
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,24 +21,51 @@ public: true
   "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:spatial-data-structure", "label": "Spatial Data Structure"}
+    {
+      "@id": "urn:ngm:class:spatial-data-structure",
+      "label": "Spatial Data Structure"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bounding-volume-hierarchy", "label": "Bounding Volume Hierarchy"}
+      {
+        "@id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:frustum-culling", "label": "Frustum Culling"},
-      {"@id": "urn:ngm:class:occlusion-culling", "label": "Occlusion Culling"}
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-index", "label": "Spatial Index"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+      {
+        "@id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
     ]
   },
   "quality": 0.8
@@ -64,4 +86,3 @@ public: true
   - Game engines (Unreal Engine, Unity, Godot), physics middleware (Havok, PhysX, Bullet), and ray-tracing APIs (DirectX Raytracing, Vulkan RT) all expose bounding volume primitives as first-class concepts. Artists and level designers typically work with simplified collision meshes (boxes, capsules, convex decompositions) that the engine wraps in bounding volumes automatically. Level-of-detail systems [[Level of Detail]] use bounding volumes to compute projected screen area, deciding which mesh resolution to render at a given camera distance.
 
   - In 2024–2025, hardware-accelerated BVH construction and traversal are central to real-time ray tracing in games and professional rendering, with DLSS 3.5 (NVIDIA) and FSR 4 (AMD) upscalers relying on accurate motion vectors derived from per-object AABB tracking. Machine-learning-based BVH construction (neural BVH builders, 2023–2024) is an active research area, promising higher-quality hierarchies than greedy surface-area heuristic builders at reduced build time. Extended reality (XR) applications use bounding volumes for hand-mesh collision with virtual objects, and LiDAR-based autonomous vehicle pipelines use 3D bounding boxes as the primary object representation output from detection networks.
-

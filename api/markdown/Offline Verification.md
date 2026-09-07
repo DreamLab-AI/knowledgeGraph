@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Offline Verification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Offline verification is the ability to cryptographically validate a credential or claim without requiring a live connection to the issuer or a central server. The verifier checks digital signatures against the issuer's public key and any revocation data already held, confirming authenticity and integrity locally. It is a defining property of decentralised identity, enabling trust in low-connectivity or privacy-sensitive settings.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ]
   },
   "quality": 0.72

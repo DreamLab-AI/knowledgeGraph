@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - IdentityManagement
----
-
-# Identity Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -199,37 +192,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:identity-management:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:792464b1dee07addabad7582c27b11dc5c10703725a5c4e63fe701a9c063970b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Sovereign Identity]]",
-      "resolved": "urn:visionflow:owl:class:self-sovereign-identity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Identity management in blockchain contexts refers to the systems and protocols enabling individuals and organisations to create, control, and verify digital identities without reliance on centralised authorities. Decentralised identity (DID) architectures leverage blockchain technology to provide self-sovereign identity capabilities, where users maintain control over their personal data through cryptographic keys, verifiable credentials, and distributed ledger storage.

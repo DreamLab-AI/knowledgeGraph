@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Psychological Phenomenon
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -55,18 +50,42 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:proteus-effect", "label": "Proteus Effect"},
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:vr-psychology", "label": "VR Psychology"}
+      {
+        "@id": "urn:ngm:class:proteus-effect",
+        "label": "Proteus Effect"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:vr-psychology",
+        "label": "VR Psychology"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:emotional-immersion", "label": "Emotional Immersion"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-immersion",
+        "label": "Emotional Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"}
+      {
+        "@id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      }
     ]
   },
   "provenance": {
@@ -76,26 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:psychological-phenomenon:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6f92eba96474d65891129f09513871dd93385e162d0059e43ecc4e197d2b396c"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Psychological Phenomenon, in the context of spatial computing, denotes any observable, reproducible effect on cognition, emotion, or behaviour arising from interaction with immersive virtual environments. Established examples include the Proteus Effect (avatar-driven behavioural conformity), simulator sickness (sensorimotor conflict), flow states, social presence, and embodiment illusions. Understanding these phenomena is foundational to ethical metaverse design and therapeutic XR applications.

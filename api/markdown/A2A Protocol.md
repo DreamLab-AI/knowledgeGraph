@@ -1,8 +1,3 @@
----
-public: true
----
-
-# A2A Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,72 +7,270 @@ public: true
   "title": "A2A Protocol",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-to-agent-protocol", "vc:label": "Agent-to-Agent Protocol"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:multi-agent-orchestration", "vc:label": "Multi-Agent Orchestration"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:inter-agent-communication", "vc:label": "Inter-Agent Communication"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
-    {"@id": "urn:visionflow:linked:service-discovery", "vc:label": "Service Discovery"},
-    {"@id": "urn:visionflow:linked:json-ld", "vc:label": "JSON-LD"},
-    {"@id": "urn:visionflow:linked:http-protocol", "vc:label": "HTTP Protocol"},
-    {"@id": "urn:visionflow:linked:json-rpc-2-0", "vc:label": "JSON-RPC 2.0"},
-    {"@id": "urn:visionflow:linked:server-sent-events", "vc:label": "Server-Sent Events"},
-    {"@id": "urn:visionflow:linked:oauth-2-0", "vc:label": "OAuth 2.0"},
-    {"@id": "urn:visionflow:linked:mutual-tls", "vc:label": "Mutual TLS"},
-    {"@id": "urn:visionflow:linked:json-schema", "vc:label": "JSON Schema"},
-    {"@id": "urn:visionflow:linked:decentralised-identifier", "vc:label": "Decentralised Identifier"},
-    {"@id": "urn:visionflow:linked:autonomous-agent", "vc:label": "Autonomous Agent"},
-    {"@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model"},
-    {"@id": "urn:visionflow:linked:task-delegation", "vc:label": "Task Delegation"},
-    {"@id": "urn:visionflow:linked:agent-identity", "vc:label": "Agent Identity"},
-    {"@id": "urn:visionflow:linked:capability-negotiation", "vc:label": "Capability Negotiation"},
-    {"@id": "urn:visionflow:linked:microservices-architecture", "vc:label": "Microservices Architecture"},
-    {"@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:distributed-systems", "vc:label": "Distributed Systems"},
-    {"@id": "urn:visionflow:linked:message-passing", "vc:label": "Message Passing"},
-    {"@id": "urn:visionflow:linked:agent-card", "vc:label": "Agent Card"},
-    {"@id": "urn:visionflow:linked:protocol-buffers", "vc:label": "Protocol Buffers"},
-    {"@id": "urn:visionflow:linked:grpc", "vc:label": "gRPC"},
-    {"@id": "urn:visionflow:linked:linux-foundation", "vc:label": "Linux Foundation"},
-    {"@id": "urn:visionflow:linked:agent-development-kit", "vc:label": "Agent Development Kit"},
-    {"@id": "urn:visionflow:linked:langchain-agent-framework", "vc:label": "LangChain Agent Framework"},
-    {"@id": "urn:visionflow:linked:crewai", "vc:label": "CrewAI"},
-    {"@id": "urn:visionflow:linked:fipa-acl", "vc:label": "FIPA-ACL"},
-    {"@id": "urn:visionflow:linked:web-of-things", "vc:label": "Web of Things"},
-    {"@id": "urn:visionflow:linked:api-gateway", "vc:label": "API Gateway"},
-    {"@id": "urn:visionflow:linked:task-lifecycle", "vc:label": "Task Lifecycle"},
-    {"@id": "urn:visionflow:linked:enterprise-ai", "vc:label": "Enterprise AI"},
-    {"@id": "urn:visionflow:linked:agent-marketplace", "vc:label": "Agent Marketplace"},
-    {"@id": "urn:visionflow:linked:supply-chain-automation", "vc:label": "Supply Chain Automation"},
-    {"@id": "urn:visionflow:linked:rate-limiting", "vc:label": "Rate Limiting"},
-    {"@id": "urn:visionflow:linked:zero-trust-security", "vc:label": "Zero-Trust Security"},
-    {"@id": "urn:visionflow:linked:agent2agent-protocol-google-2025", "vc:label": "Agent2Agent Protocol (Google 2025)"},
-    {"@id": "urn:visionflow:linked:open-agent-network", "vc:label": "Open Agent Network"},
-    {"@id": "urn:visionflow:linked:semantic-web", "vc:label": "Semantic Web"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
-    {"@id": "urn:visionflow:linked:cost-attribution", "vc:label": "Cost Attribution"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:protocol-layer", "vc:label": "Protocol Layer"},
-    {"@id": "urn:visionflow:linked:ai-domain", "vc:label": "AI Domain"},
-    {"@id": "urn:visionflow:linked:agent-layer", "vc:label": "AgentLayer"},
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:credential-management", "vc:label": "Credential Management"},
-    {"@id": "urn:visionflow:linked:streaming-api", "vc:label": "Streaming API"},
-    {"@id": "urn:visionflow:linked:task-planner", "vc:label": "Task Planner"},
-    {"@id": "urn:visionflow:linked:remote-procedure-call", "vc:label": "Remote Procedure Call"},
-    {"@id": "urn:visionflow:linked:contract-net-protocol", "vc:label": "Contract Net Protocol"},
-    {"@id": "urn:visionflow:linked:peer-to-peer-network", "vc:label": "Peer-to-Peer Network"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:open-source", "vc:label": "Open Source"},
-    {"@id": "urn:visionflow:linked:api-integration", "vc:label": "API Integration"},
-    {"@id": "urn:visionflow:linked:vertex-ai", "vc:label": "Vertex AI"}
+    {
+      "@id": "urn:visionflow:linked:agent-to-agent-protocol",
+      "vc:label": "Agent-to-Agent Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-orchestration",
+      "vc:label": "Multi-Agent Orchestration"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:inter-agent-communication",
+      "vc:label": "Inter-Agent Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol",
+      "vc:label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:service-discovery",
+      "vc:label": "Service Discovery"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-ld",
+      "vc:label": "JSON-LD"
+    },
+    {
+      "@id": "urn:visionflow:linked:http-protocol",
+      "vc:label": "HTTP Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-rpc-2-0",
+      "vc:label": "JSON-RPC 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:server-sent-events",
+      "vc:label": "Server-Sent Events"
+    },
+    {
+      "@id": "urn:visionflow:linked:oauth-2-0",
+      "vc:label": "OAuth 2.0"
+    },
+    {
+      "@id": "urn:visionflow:linked:mutual-tls",
+      "vc:label": "Mutual TLS"
+    },
+    {
+      "@id": "urn:visionflow:linked:json-schema",
+      "vc:label": "JSON Schema"
+    },
+    {
+      "@id": "urn:visionflow:linked:decentralised-identifier",
+      "vc:label": "Decentralised Identifier"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-agent",
+      "vc:label": "Autonomous Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-delegation",
+      "vc:label": "Task Delegation"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-identity",
+      "vc:label": "Agent Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:capability-negotiation",
+      "vc:label": "Capability Negotiation"
+    },
+    {
+      "@id": "urn:visionflow:linked:microservices-architecture",
+      "vc:label": "Microservices Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-systems",
+      "vc:label": "Distributed Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:message-passing",
+      "vc:label": "Message Passing"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-card",
+      "vc:label": "Agent Card"
+    },
+    {
+      "@id": "urn:visionflow:linked:protocol-buffers",
+      "vc:label": "Protocol Buffers"
+    },
+    {
+      "@id": "urn:visionflow:linked:grpc",
+      "vc:label": "gRPC"
+    },
+    {
+      "@id": "urn:visionflow:linked:linux-foundation",
+      "vc:label": "Linux Foundation"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-development-kit",
+      "vc:label": "Agent Development Kit"
+    },
+    {
+      "@id": "urn:visionflow:linked:langchain-agent-framework",
+      "vc:label": "LangChain Agent Framework"
+    },
+    {
+      "@id": "urn:visionflow:linked:crewai",
+      "vc:label": "CrewAI"
+    },
+    {
+      "@id": "urn:visionflow:linked:fipa-acl",
+      "vc:label": "FIPA-ACL"
+    },
+    {
+      "@id": "urn:visionflow:linked:web-of-things",
+      "vc:label": "Web of Things"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-gateway",
+      "vc:label": "API Gateway"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-lifecycle",
+      "vc:label": "Task Lifecycle"
+    },
+    {
+      "@id": "urn:visionflow:linked:enterprise-ai",
+      "vc:label": "Enterprise AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-marketplace",
+      "vc:label": "Agent Marketplace"
+    },
+    {
+      "@id": "urn:visionflow:linked:supply-chain-automation",
+      "vc:label": "Supply Chain Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:rate-limiting",
+      "vc:label": "Rate Limiting"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-trust-security",
+      "vc:label": "Zero-Trust Security"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent2agent-protocol-google-2025",
+      "vc:label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-agent-network",
+      "vc:label": "Open Agent Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:semantic-web",
+      "vc:label": "Semantic Web"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-attribution",
+      "vc:label": "Cost Attribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:protocol-layer",
+      "vc:label": "Protocol Layer"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-domain",
+      "vc:label": "AI Domain"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-layer",
+      "vc:label": "AgentLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-management",
+      "vc:label": "Credential Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:streaming-api",
+      "vc:label": "Streaming API"
+    },
+    {
+      "@id": "urn:visionflow:linked:task-planner",
+      "vc:label": "Task Planner"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-procedure-call",
+      "vc:label": "Remote Procedure Call"
+    },
+    {
+      "@id": "urn:visionflow:linked:contract-net-protocol",
+      "vc:label": "Contract Net Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-to-peer-network",
+      "vc:label": "Peer-to-Peer Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source",
+      "vc:label": "Open Source"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-integration",
+      "vc:label": "API Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:vertex-ai",
+      "vc:label": "Vertex AI"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -93,59 +286,167 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"},
-    {"@id": "urn:ngm:class:agent-to-agent-protocol", "label": "Agent-to-Agent Protocol"}
+    {
+      "@id": "urn:ngm:class:agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:agent-card", "label": "Agent Card"},
-      {"@id": "urn:ngm:class:task-lifecycle", "label": "Task Lifecycle"},
-      {"@id": "urn:ngm:class:capability-negotiation", "label": "Capability Negotiation"},
-      {"@id": "urn:ngm:class:streaming-api", "label": "Streaming API"}
+      {
+        "@id": "urn:ngm:class:agent-card",
+        "label": "Agent Card"
+      },
+      {
+        "@id": "urn:ngm:class:task-lifecycle",
+        "label": "Task Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:capability-negotiation",
+        "label": "Capability Negotiation"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-api",
+        "label": "Streaming API"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0", "label": "JSON-RPC 2.0"},
-      {"@id": "urn:ngm:class:server-sent-events", "label": "Server-Sent Events"},
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
+        "label": "JSON-RPC 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:inter-agent-communication", "label": "Inter-Agent Communication"},
-      {"@id": "urn:ngm:class:task-delegation", "label": "Task Delegation"},
-      {"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"},
-      {"@id": "urn:ngm:class:agent-marketplace", "label": "Agent Marketplace"}
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      },
+      {
+        "@id": "urn:ngm:class:agent-marketplace",
+        "label": "Agent Marketplace"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:fipa-acl", "label": "FIPA-ACL"},
-      {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"},
-      {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"}
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA-ACL"
+      },
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:protocol-buffer", "label": "Protocol Buffers"}
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffers"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:web-of-things", "label": "Web of Things"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:web-of-things",
+        "label": "Web of Things"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ]
   },
   "quality": 0.88,
@@ -154,86 +455,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:a2-a-protocol:20260620",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a2-a-protocol"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Agent-to-Agent Protocol]]", "resolved": "urn:visionflow:linked:agent-to-agent-protocol", "kind": "StubLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent System]]", "resolved": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent Orchestration]]", "resolved": "urn:visionflow:linked:multi-agent-orchestration", "kind": "StubLink"},
-    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "StubLink"},
-    {"raw": "[[Inter-Agent Communication]]", "resolved": "urn:visionflow:linked:inter-agent-communication", "kind": "StubLink"},
-    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[Function Calling]]", "resolved": "urn:visionflow:linked:function-calling", "kind": "StubLink"},
-    {"raw": "[[Agent Communication Protocol]]", "resolved": "urn:visionflow:linked:agent-communication-protocol", "kind": "StubLink"},
-    {"raw": "[[Service Discovery]]", "resolved": "urn:visionflow:linked:service-discovery", "kind": "StubLink"},
-    {"raw": "[[JSON-LD]]", "resolved": "urn:visionflow:linked:json-ld", "kind": "StubLink"},
-    {"raw": "[[HTTP Protocol]]", "resolved": "urn:visionflow:linked:http-protocol", "kind": "StubLink"},
-    {"raw": "[[JSON-RPC 2.0]]", "resolved": "urn:visionflow:linked:json-rpc-2-0", "kind": "StubLink"},
-    {"raw": "[[Server-Sent Events]]", "resolved": "urn:visionflow:linked:server-sent-events", "kind": "StubLink"},
-    {"raw": "[[OAuth 2.0]]", "resolved": "urn:visionflow:linked:oauth-2-0", "kind": "StubLink"},
-    {"raw": "[[Mutual TLS]]", "resolved": "urn:visionflow:linked:mutual-tls", "kind": "StubLink"},
-    {"raw": "[[JSON Schema]]", "resolved": "urn:visionflow:linked:json-schema", "kind": "StubLink"},
-    {"raw": "[[Decentralised Identifier]]", "resolved": "urn:visionflow:linked:decentralised-identifier", "kind": "StubLink"},
-    {"raw": "[[Autonomous Agent]]", "resolved": "urn:visionflow:linked:autonomous-agent", "kind": "StubLink"},
-    {"raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "StubLink"},
-    {"raw": "[[Task Delegation]]", "resolved": "urn:visionflow:linked:task-delegation", "kind": "StubLink"},
-    {"raw": "[[Agent Identity]]", "resolved": "urn:visionflow:linked:agent-identity", "kind": "StubLink"},
-    {"raw": "[[Capability Negotiation]]", "resolved": "urn:visionflow:linked:capability-negotiation", "kind": "StubLink"},
-    {"raw": "[[Microservices Architecture]]", "resolved": "urn:visionflow:linked:microservices-architecture", "kind": "StubLink"},
-    {"raw": "[[Prompt Injection]]", "resolved": "urn:visionflow:linked:prompt-injection", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[Distributed Systems]]", "resolved": "urn:visionflow:linked:distributed-systems", "kind": "StubLink"},
-    {"raw": "[[Message Passing]]", "resolved": "urn:visionflow:linked:message-passing", "kind": "StubLink"},
-    {"raw": "[[Agent Card]]", "resolved": "urn:visionflow:linked:agent-card", "kind": "StubLink"},
-    {"raw": "[[Protocol Buffers]]", "resolved": "urn:visionflow:linked:protocol-buffers", "kind": "StubLink"},
-    {"raw": "[[gRPC]]", "resolved": "urn:visionflow:linked:grpc", "kind": "StubLink"},
-    {"raw": "[[Linux Foundation]]", "resolved": "urn:visionflow:linked:linux-foundation", "kind": "StubLink"},
-    {"raw": "[[Agent Development Kit]]", "resolved": "urn:visionflow:linked:agent-development-kit", "kind": "StubLink"},
-    {"raw": "[[LangChain Agent Framework]]", "resolved": "urn:visionflow:linked:langchain-agent-framework", "kind": "StubLink"},
-    {"raw": "[[CrewAI]]", "resolved": "urn:visionflow:linked:crewai", "kind": "StubLink"},
-    {"raw": "[[FIPA-ACL]]", "resolved": "urn:visionflow:linked:fipa-acl", "kind": "StubLink"},
-    {"raw": "[[Web of Things]]", "resolved": "urn:visionflow:linked:web-of-things", "kind": "StubLink"},
-    {"raw": "[[API Gateway]]", "resolved": "urn:visionflow:linked:api-gateway", "kind": "StubLink"},
-    {"raw": "[[Task Lifecycle]]", "resolved": "urn:visionflow:linked:task-lifecycle", "kind": "StubLink"},
-    {"raw": "[[Enterprise AI]]", "resolved": "urn:visionflow:linked:enterprise-ai", "kind": "StubLink"},
-    {"raw": "[[Agent Marketplace]]", "resolved": "urn:visionflow:linked:agent-marketplace", "kind": "StubLink"},
-    {"raw": "[[Supply Chain Automation]]", "resolved": "urn:visionflow:linked:supply-chain-automation", "kind": "StubLink"},
-    {"raw": "[[Rate Limiting]]", "resolved": "urn:visionflow:linked:rate-limiting", "kind": "StubLink"},
-    {"raw": "[[Zero-Trust Security]]", "resolved": "urn:visionflow:linked:zero-trust-security", "kind": "StubLink"},
-    {"raw": "[[Agent2Agent Protocol (Google 2025)]]", "resolved": "urn:visionflow:linked:agent2agent-protocol-google-2025", "kind": "StubLink"},
-    {"raw": "[[Open Agent Network]]", "resolved": "urn:visionflow:linked:open-agent-network", "kind": "StubLink"},
-    {"raw": "[[Semantic Web]]", "resolved": "urn:visionflow:linked:semantic-web", "kind": "StubLink"},
-    {"raw": "[[Workflow Automation]]", "resolved": "urn:visionflow:linked:workflow-automation", "kind": "StubLink"},
-    {"raw": "[[Cost Attribution]]", "resolved": "urn:visionflow:linked:cost-attribution", "kind": "StubLink"},
-    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "StubLink"},
-    {"raw": "[[Agent Orchestrator]]", "resolved": "urn:visionflow:linked:agent-orchestrator", "kind": "StubLink"},
-    {"raw": "[[Credential Management]]", "resolved": "urn:visionflow:linked:credential-management", "kind": "StubLink"},
-    {"raw": "[[Streaming API]]", "resolved": "urn:visionflow:linked:streaming-api", "kind": "StubLink"},
-    {"raw": "[[Task Planner]]", "resolved": "urn:visionflow:linked:task-planner", "kind": "StubLink"},
-    {"raw": "[[Remote Procedure Call]]", "resolved": "urn:visionflow:linked:remote-procedure-call", "kind": "StubLink"},
-    {"raw": "[[Contract Net Protocol]]", "resolved": "urn:visionflow:linked:contract-net-protocol", "kind": "StubLink"},
-    {"raw": "[[Peer-to-Peer Network]]", "resolved": "urn:visionflow:linked:peer-to-peer-network", "kind": "StubLink"},
-    {"raw": "[[Digital Twin]]", "resolved": "urn:visionflow:linked:digital-twin", "kind": "StubLink"},
-    {"raw": "[[Human-in-the-Loop]]", "resolved": "urn:visionflow:linked:human-in-the-loop", "kind": "StubLink"},
-    {"raw": "[[Open Source]]", "resolved": "urn:visionflow:linked:open-source", "kind": "StubLink"},
-    {"raw": "[[API Integration]]", "resolved": "urn:visionflow:linked:api-integration", "kind": "StubLink"},
-    {"raw": "[[Vertex AI]]", "resolved": "urn:visionflow:linked:vertex-ai", "kind": "StubLink"},
-    {"raw": "[[AI Domain]]", "resolved": "urn:visionflow:linked:ai-domain", "kind": "StubLink"},
-    {"raw": "[[AgentLayer]]", "resolved": "urn:visionflow:linked:agent-layer", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cross Domain Bridge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -76,16 +71,34 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
-      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"}
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
     ]
   },
   "provenance": {
@@ -95,57 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cross-domain-bridge:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4ba643dbe185b863492c9690cf7badb5fac0b0fc9ddee61bb0322110421be6ea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE P2874]]",
-      "resolved": "urn:visionflow:linked:ieee-p2874",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IETF OAUTH]]",
-      "resolved": "urn:visionflow:linked:ietf-oauth",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OMG]]",
-      "resolved": "urn:visionflow:linked:omg",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C Federated Identity Working Group]]",
-      "resolved": "urn:visionflow:linked:w3-c-federated-identity-working-group",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenXR]]",
-      "resolved": "urn:visionflow:owl:class:open-xr",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - CrossDomainBridge is a concept within the ngm domain.

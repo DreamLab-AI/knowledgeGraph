@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Discreet Log Contracts
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,57 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:discreet-log-contracts:0f31b9218df3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7203fec543eebb721a2c779617d5f95887812b8051f245da0af9b602556a8f58"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Schnorr Signature]]",
-      "resolved": "urn:visionflow:linked:schnorr-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Proof]]",
-      "resolved": "urn:visionflow:linked:cryptographic-proof",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Atomic Swap]]",
-      "resolved": "urn:visionflow:linked:atomic-swap",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bitcoin Script]]",
-      "resolved": "urn:visionflow:linked:bitcoin-script",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A scheme for executing conditional Bitcoin payments based on signed outcomes from external oracles, where the contract logic stays off-chain and only the settled transaction is broadcast.

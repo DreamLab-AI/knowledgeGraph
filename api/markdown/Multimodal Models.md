@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multimodal Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,46 +167,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:multimodal-models:a35917d361e2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e49ba7ecf25403e4ff7fed01bf70015ea4b6239d03f7bdc2543088d8f7b6e00a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:linked:transformer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Text-to-Image]]",
-      "resolved": "urn:visionflow:linked:text-to-image",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large-Scale Pretrained Foundation Model]]",
-      "resolved": "urn:visionflow:linked:foundation-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multimodal AI]]",
-      "resolved": "urn:visionflow:linked:multimodal-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

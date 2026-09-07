@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Super-resolution
----
-
-# Super Resolution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -73,18 +66,36 @@ aliases:
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"}
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
     ]
   },
   "quality": 0.5,
@@ -95,52 +106,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:super-resolution:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6973dbd27cf347a0033bbfea67956ec15a659714231b75918bc6f29179d7d0f3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[computer vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Network]]",
-      "resolved": "urn:visionflow:owl:class:convolutional-neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Image Generation]]",
-      "resolved": "urn:visionflow:owl:class:image-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Super-Resolution is the process of enhancing the resolution and quality of low-resolution images by predicting and synthesising high-frequency details using deep learning models. Single image super-resolution (SISR) networks (SRCNN, ESRGAN, Real-ESRGAN) reconstruct plausible high-resolution images from degraded inputs, enabling applications in medical imaging enhancement, satellite imagery analysis, and consumer photo enhancement.
@@ -174,16 +139,16 @@ aliases:
   - The method's reliance on signed distance functions (SDFs) allows for direct use in rendering pipelines and other geometric processing tasks.
 		- <iframe src="https://research.nvidia.com/labs/toronto-ai/LATTE3D/" style="width: 100%; height: 600px"></iframe>
   - ### Existential Threat
-		- A superintelligent AI, in pursuing its programmed goals, could develop destructive methods that have unforeseen and devastating consequences for humanity.
+		- A superintelligent AI, in pursuing its programmed goals, [private] develop destructive methods that have unforeseen and devastating consequences for humanity.
   - [Safe Superintelligence Inc.](https://ssi.inc/)
   - ## Timelines and Projections
-  - The timeline for the arrival of ASI is uncertain, with some experts predicting it could happen in less than a decade, while others believe it is much further off.
+  - The timeline for the arrival of ASI is uncertain, with some experts predicting it [private] happen in less than a decade, while others believe it is much further off.
   - [Microsoft president says no chance of super-intelligent AI soon](https://www.reuters.com/technology/microsoft-president-says-no-chance-superintelligent-ai-soon-2023-11-30/)
-  - [Nick Bostrom: superintelligence could happen in timelines as short as a year](https://twitter.com/tsarnick/status/1784378045069217960)
+  - [Nick Bostrom: superintelligence [private] happen in timelines as short as a year](https://twitter.com/tsarnick/status/1784378045069217960)
   - ## Timelines and Projections
-  - The timeline for the arrival of ASI is uncertain, with some experts predicting it could happen in less than a decade, while others believe it is much further off.
+  - The timeline for the arrival of ASI is uncertain, with some experts predicting it [private] happen in less than a decade, while others believe it is much further off.
   - [Microsoft president says no chance of super-intelligent AI soon](https://www.reuters.com/technology/microsoft-president-says-no-chance-superintelligent-ai-soon-2023-11-30/)
-  - [Nick Bostrom: superintelligence could happen in timelines as short as a year](https://twitter.com/tsarnick/status/1784378045069217960)
+  - [Nick Bostrom: superintelligence [private] happen in timelines as short as a year](https://twitter.com/tsarnick/status/1784378045069217960)
   ## Core Characteristics
   - **Resolution Enhancement**: Upscaling to higher spatial resolution
   - **Detail Synthesis**: Generation of plausible high-frequency content

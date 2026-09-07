@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Neural Network Training
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Neural network training is the process of iteratively adjusting a model's weights to minimise a loss function over a dataset, typically using gradient descent with backpropagation. Each step computes the gradient of the loss with respect to parameters and updates them via an optimiser, repeating across many batches and epochs. Training quality depends on data, objective design, regularisation, and substantial parallel compute.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:training-hardware", "label": "Training Hardware"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:training-hardware",
+        "label": "Training Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ]
   },
   "quality": 0.72

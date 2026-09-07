@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Realtime Communication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -187,25 +182,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:realtime-communication:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:80de40cc7920d626a33acc85c8bae6bc3a4e15d9ff01b12869a36bc2c177e44a"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Realtime communication denotes the class of systems, protocols, and architectures that deliver synchronous, low-latency exchange of audio, video, text, and arbitrary data between participants such that end-to-end delay remains below perceptual thresholds. It is distinguished from [[Asynchronous Messaging]] by the continuous, session-bound nature of media flows, and from batch data transfer by its strict latency constraints. The field encompasses foundational technologies including [[WebRTC]], [[Session Initiation Protocol]], [[WebSocket]], and [[XMPP]], as well as higher-order constructs such as [[Telepresence]] and [[Immersive Communication]]. Its infrastructure underpins everything from consumer video calls to surgical telerobotics and social [[Virtual Worlds]].
 
@@ -303,7 +279,7 @@ public: true
   - 1. Cloudflare (2025). MoQ: Refactoring the Internet's real-time media stack. https://blog.cloudflare.com/moq/
   - 2. IETF moq Working Group / Nandakumar, Vasiliev, Swett, Frindell (2025). Media over QUIC Transport (draft-ietf-moq-transport-13). https://datatracker.ietf.org/doc/draft-ietf-moq-transport/13/
   - 3. Fora Soft (2026). Media over QUIC (MoQ) In Depth: The 2026 Turning Point. https://www.forasoft.com/learn/video-streaming/articles-streaming/media-over-quic-moq
-  - 4. OpenAI (2025). Introducing gpt-realtime and Realtime API updates for production voice agents. https://openai.com/index/introducing-gpt-realtime/
+  - 4. OpenAI (2025). Introducing gpt-realtime and Realtime API updates for production voice agents. https://openai.com/[private]/introducing-gpt-realtime/
   - 5. GSMA (2025). RCS Encryption: A Leap Towards Secure and Interoperable Messaging. https://www.gsma.com/newsroom/article/rcs-encryption-a-leap-towards-secure-and-interoperable-messaging/
   - 6. Infosecurity Magazine (2026). Apple Rolls Out E2EE for RCS Across iPhone and Android. https://www.infosecurity-magazine.com/news/apple-google-rcs-end-to-end/
 

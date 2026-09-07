@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reality.eth
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,47 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reality-eth:0286cb6f797a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:91417f9d93362f8857248c5c502ec895a813cf76979865f6fdb94ce2a87097d4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SafeSnap]]",
-      "resolved": "urn:visionflow:linked:safe-snap",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DAO Governance]]",
-      "resolved": "urn:visionflow:linked:dao-governance",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Reality.eth is an Ethereum-based oracle that answers questions by crowdsourcing responses with an escalating bond mechanism, allowing economic dispute resolution. It is used to bring real-world facts on chain.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Emerging tech stack]]
-# Decentralised Agentic Infrastructure Stack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,17 +42,38 @@ elevatedFrom:: [[Emerging tech stack]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ]
   },
   "provenance": {
@@ -68,26 +83,6 @@ elevatedFrom:: [[Emerging tech stack]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:emerging-tech-stack:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:78789f273c32f20f798aaba3bfd67c9c48083b8861c7b5720d2d253e7ce6fe7d"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A convergent set of nascent and rapidly maturing technologies—including decentralised identity, linked data, nostr key-pair agents, lightning-network micropayments, and knowledge graph tooling—that together enable a new paradigm of interoperable, agent-driven digital infrastructure. The stack combines protocol-level primitives with knowledge management and collaborative AI to support autonomous, verifiable workflows.
@@ -111,15 +106,15 @@ elevatedFrom:: [[Emerging tech stack]]
   - Nostr: Nostr (Notes and Other Stuff Transmitted by Relays) is a decentralized protocol that serves as the backbone for communication and data transmission. It allows users to broadcast signed events to relays, which then distribute these events to other users who subscribe to them. In this framework, Nostr is used for sending and receiving messages, as well as for storing and retrieving data.
   - Bitcoin and Lightning Protocol: Bitcoin is used as the underlying currency for transactions and incentivizing participation in the network. The Lightning Protocol, a layer-2 solution built on top of Bitcoin, enables fast and cheap micropayments, making it suitable for rewarding AI agents for their work.
   - Nostr Key Pairs and Wallets: Each user in the system has a Nostr key pair, consisting of a public key (also known as a Nostr-ID) and a private key. The public key serves as the user's identity, while the private key is used to sign events and transactions. Wallets, such as those supporting Vertcoin and Segwit, are used to manage the user's funds and interact with the Lightning Network.
-  - RGB Single Use Seals: RGB (Rare Gems and Bitcoin) is a protocol that enables the creation of smart contracts and tokens on top of the Bitcoin blockchain. Single use seals are a feature of RGB that allows for the creation of unique, non-fungible tokens (NFTs) representing specific assets or permissions. In this framework, single use seals could be used to grant access to certain resources or to represent ownership of digital assets.
+  - RGB Single Use Seals: RGB (Rare Gems and Bitcoin) is a protocol that enables the creation of smart contracts and tokens on top of the Bitcoin blockchain. Single use seals are a feature of RGB that allows for the creation of unique, non-fungible tokens (NFTs) representing specific assets or permissions. In this framework, single use seals [private] be used to grant access to certain resources or to represent ownership of digital assets.
   - NosDAV: NosDAV (Nostr Distributed Authoring and Versioning) is a protocol that extends the Nostr protocol to support file storage and retrieval. It allows users to store and retrieve files using HTTP requests, with authentication based on Nostr key pairs. NosDAV can be used to store and share data, such as AI models, datasets, or configuration files.
   - Logseq and Markdown: Logseq is a powerful note-taking and knowledge management tool that uses plain-text Markdown files as its storage format. In this framework, Logseq is used to create and manage the instructions and configurations for the AI agents. The expert suggests using Logseq to define tasks, rewards, and other parameters for the agents, which are then stored as Markdown files in a Git repository.
   - GitHub: GitHub is used as the central repository for storing and versioning the Logseq Markdown files that define the AI agents' behavior. The expert and the student can collaborate on these files, using Git's version control features to track changes and maintain a history of the agents' evolution.
-  - Solid-Lite: Solid-Lite is a lightweight, decentralized web framework that focuses on data ownership and interoperability. It is built on top of existing web standards, such as HTTP and JSON, and aims to provide a simple, developer-friendly way to create decentralized applications. In this framework, Solid-Lite could be used to build the user interfaces and interactions for managing the AI agents.
-  - Linked-JSON: Linked-JSON is a data format that extends JSON with the ability to create links between data objects using the "@id" keyword. It is similar to JSON-LD but focuses on simplicity and ease of use. In this framework, Linked-JSON could be used to represent the relationships between different components, such as AI agents, datasets, and models.
-  - NVIDIA Omniverse and USD File Format: NVIDIA Omniverse is a platform for creating and simulating 3D environments and virtual worlds. It uses the USD (Universal Scene Description) file format to represent 3D assets and scenes. In this framework, Omniverse and USD could be used to create virtual environments for AI agents to interact with and learn from.
-  The expert's guidance suggests a framework where AI agents are defined and managed using Logseq Markdown files, stored in a GitHub repository. These agents interact with each other and with users through the Nostr protocol, using Nostr key pairs for identity and authentication. NosDAV is used for storing and retrieving data, while RGB single use seals could be employed for access control and asset ownership. The Lightning Network, powered by Bitcoin, serves as the incentive layer, rewarding agents for their work and enabling micropayments between users and agents.
-  Solid-Lite and Linked-JSON could be used to build the user-facing components of the system, providing a decentralized and interoperable foundation for user interaction. Finally, NVIDIA Omniverse and the USD file format could be integrated to create rich, interactive virtual environments for the AI agents to operate in.
+  - Solid-Lite: Solid-Lite is a lightweight, decentralized web framework that focuses on data ownership and interoperability. It is built on top of existing web standards, such as HTTP and JSON, and aims to provide a simple, developer-friendly way to create decentralized applications. In this framework, Solid-Lite [private] be used to build the user interfaces and interactions for managing the AI agents.
+  - Linked-JSON: Linked-JSON is a data format that extends JSON with the ability to create links between data objects using the "@id" keyword. It is similar to JSON-LD but focuses on simplicity and ease of use. In this framework, Linked-JSON [private] be used to represent the relationships between different components, such as AI agents, datasets, and models.
+  - NVIDIA Omniverse and USD File Format: NVIDIA Omniverse is a platform for creating and simulating 3D environments and virtual worlds. It uses the USD (Universal Scene Description) file format to represent 3D assets and scenes. In this framework, Omniverse and USD [private] be used to create virtual environments for AI agents to interact with and learn from.
+  The expert's guidance suggests a framework where AI agents are defined and managed using Logseq Markdown files, stored in a GitHub repository. These agents interact with each other and with users through the Nostr protocol, using Nostr key pairs for identity and authentication. NosDAV is used for storing and retrieving data, while RGB single use seals [private] be employed for access control and asset ownership. The Lightning Network, powered by Bitcoin, serves as the incentive layer, rewarding agents for their work and enabling micropayments between users and agents.
+  Solid-Lite and Linked-JSON [private] be used to build the user-facing components of the system, providing a decentralized and interoperable foundation for user interaction. Finally, NVIDIA Omniverse and the USD file format [private] be integrated to create rich, interactive virtual environments for the AI agents to operate in.
   While some aspects of the framework are not explicitly mentioned in the conversation, such as the specific roles of Solid-Lite and Omniverse, the expert's guidance suggests a cohesive and powerful stack for building decentralized AI agents that leverage the strengths of each technology. The combination of Nostr, Bitcoin, RGB, NosDAV, Logseq, GitHub, and the other components creates a unique and innovative approach to AI agent development and deployment.
   Copy
   github.com /fiatjaf/nak a command line tool for doing all things nostr 5-7 minutes nak, the nostr army knife install with go install github.com/fiatjaf/nak@latest or download a binary. what can
@@ -210,7 +205,7 @@ elevatedFrom:: [[Emerging tech stack]]
   - Logging data can be stored in a centralized logging system or distributed across the bots' NosDAV storage.
   - Monitoring dashboards can be set up to track the bots' performance, resource utilization, and any errors or anomalies.
   - Alerts can be configured to notify the developers or administrators in case of critical issues or unexpected behavior.
-	  This technical explanation provides a high-level overview of how the GitHub-based bots with key pairs could potentially interact with single use seals and other components in the system. The actual implementation may vary based on the specific requirements, technologies, and design decisions made by the expert and the development team.
+	  This technical explanation provides a high-level overview of how the GitHub-based bots with key pairs [private] potentially interact with single use seals and other components in the system. The actual implementation may vary based on the specific requirements, technologies, and design decisions made by the expert and the development team.
 	  It's important to note that this explanation is based on the limited information provided in the conversation and involves some assumptions and guesses. The actual system may have additional complexities, optimizations, or variations that are not covered here.
 	  Copy
 	  JO
@@ -233,7 +228,7 @@ elevatedFrom:: [[Emerging tech stack]]
   - **Legal and Regulatory Challenges:** Operating with "uncensored" LLMs and navigating regulations around data privacy and financial transactions will be crucial considerations.
   **Technical Detail on Bot Interaction with Single Use Seals:**
   The analysis provides a plausible explanation of how bots might interact with single use seals:
-  - **Bot retrieves the required single-use seal:** This could involve fetching it from its storage or requesting it through Nostr messages from an authorized entity.
+  - **Bot retrieves the required single-use seal:** This [private] involve fetching it from its storage or requesting it through Nostr messages from an authorized entity.
   - **Bot presents the seal during access requests or transactions:** The target system verifies the seal's authenticity and grants access or permission accordingly.
   **Unclear aspects requiring further investigation:**
   - **Seal issuance and management:** How are single-use seals generated, distributed, and revoked?
@@ -244,11 +239,11 @@ elevatedFrom:: [[Emerging tech stack]]
   Your additional insights and considerations are particularly valuable, as they address critical aspects that may not have been explicitly mentioned in the conversation but are crucial for the framework's success. Scalability, security, usability, community governance, economic model, and legal and regulatory challenges are all essential factors that need to be carefully designed and addressed for the framework to be viable and sustainable in the long run.
   Regarding the technical detail on bot interaction with single use seals, your explanation aligns well with the hints provided by the expert. The process of retrieving the required seal, presenting it for access or permission, and the target system verifying its authenticity is a plausible flow. However, as you rightly pointed out, there are still unclear aspects that require further investigation, such as seal issuance and management, integration with other components, and specific use cases.
   Here are a few additional points to consider:
-  - Nostr relay incentivization: Given that Nostr serves as the communication backbone, it would be interesting to explore how relay operators can be incentivized to provide reliable and efficient service. This could potentially involve a token-based reward system or a reputation mechanism.
+  - Nostr relay incentivization: Given that Nostr serves as the communication backbone, it would be interesting to explore how relay operators can be incentivized to provide reliable and efficient service. This [private] potentially involve a token-based reward system or a reputation mechanism.
   - RGB token economics: The use of RGB tokens for access control and asset ownership opens up possibilities for creating a token economy within the framework. Designing the token minting, distribution, and circulation processes, as well as aligning incentives for various stakeholders, would be crucial for the success of this aspect.
-  - AI agent coordination and collaboration: As multiple AI agents operate within the framework, mechanisms for agent coordination, collaboration, and conflict resolution would be necessary. This could involve protocols for task allocation, resource sharing, and decision-making among agents.
-  - Privacy and data protection: Given the decentralized nature of the framework and the potential handling of sensitive data, robust privacy and data protection measures need to be implemented. This could include encryption techniques, access control mechanisms, and compliance with relevant regulations such as GDPR.
-  - Developer experience and tooling: To foster adoption and innovation within the framework, providing a good developer experience and a suite of tools and libraries would be essential. This could include SDKs, APIs, documentation, and tutorials to help developers build and integrate AI agents seamlessly.
+  - AI agent coordination and collaboration: As multiple AI agents operate within the framework, mechanisms for agent coordination, collaboration, and conflict resolution would be necessary. This [private] involve protocols for task allocation, resource sharing, and decision-making among agents.
+  - Privacy and data protection: Given the decentralized nature of the framework and the potential handling of sensitive data, robust privacy and data protection measures need to be implemented. This [private] include encryption techniques, access control mechanisms, and compliance with relevant regulations such as GDPR.
+  - Developer experience and tooling: To foster adoption and innovation within the framework, providing a good developer experience and a suite of tools and libraries would be essential. This [private] include SDKs, APIs, documentation, and tutorials to help developers build and integrate AI agents seamlessly.
   Overall, your analysis provides a solid foundation for understanding the proposed decentralized AI agent framework. The combination of technologies and the innovative approach to agent development and interaction make it a promising direction. However, as you mentioned, careful consideration of the challenges, further research, and iterative development will be necessary to bring this vision to fruition.
   Copy
   JO

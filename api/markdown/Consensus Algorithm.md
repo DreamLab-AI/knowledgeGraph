@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ConsensusAlgorithm
----
-
-# Consensus Algorithm
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -175,53 +168,137 @@ aliases:
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:practical-byzantine-fault-tolerance", "label": "Practical Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
-      {"@id": "urn:ngm:class:trustless-coordination", "label": "Trustless Coordination"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-coordination",
+        "label": "Trustless Coordination"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:distributed-consensus", "label": "Distributed Consensus"}
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"}
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"},
-      {"@id": "urn:ngm:class:two-phase-commit", "label": "Two-Phase Commit"}
+      {
+        "@id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:sharding", "label": "Sharding"}
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:distributed-consensus-protocol", "label": "Distributed Consensus Protocol"},
-    {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+    {
+      "@id": "urn:ngm:class:distributed-consensus-protocol",
+      "label": "Distributed Consensus Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
   ],
   "quality": 0.72,
   "provenance": {
@@ -231,182 +308,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:consensus-algorithm:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2419eecdb3d8d15e7c613fc1cdf0cb060a9c58ca9874aa7467bef168dcc406a4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[achievesFinality]]",
-      "resolved": "urn:visionflow:linked:achieves-finality",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Consensus Algorithms]]",
-      "resolved": "urn:visionflow:linked:consensus-algorithms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Consensus Mechanisms]]",
-      "resolved": "urn:visionflow:linked:consensus-mechanisms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Integrity]]",
-      "resolved": "urn:visionflow:linked:data-integrity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DistributedConsensus]]",
-      "resolved": "urn:visionflow:linked:distributed-consensus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dt:coordinates]]",
-      "resolved": "urn:visionflow:linked:dt-coordinates",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dt:governs]]",
-      "resolved": "urn:visionflow:linked:dt-governs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dt:secures]]",
-      "resolved": "urn:visionflow:linked:dt-secures",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dt:synchronizes]]",
-      "resolved": "urn:visionflow:linked:dt-synchronizes",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dt:validates]]",
-      "resolved": "urn:visionflow:linked:dt-validates",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[implementedBy]]",
-      "resolved": "urn:visionflow:linked:implemented-by",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 2382:2025]]",
-      "resolved": "urn:visionflow:linked:iso-iec-2382-2025",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metaverse Standards Forum]]",
-      "resolved": "urn:visionflow:linked:metaverse-standards-forum",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MultiAgentSystem]]",
-      "resolved": "urn:visionflow:linked:multi-agent-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Network Security]]",
-      "resolved": "urn:visionflow:linked:network-security",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NetworkSecurity]]",
-      "resolved": "urn:visionflow:linked:network-security",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[requiresValidators]]",
-      "resolved": "urn:visionflow:linked:requires-validators",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[toleratesFaults]]",
-      "resolved": "urn:visionflow:linked:tolerates-faults",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Trustless Coordination]]",
-      "resolved": "urn:visionflow:linked:trustless-coordination",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ValidatorNetwork]]",
-      "resolved": "urn:visionflow:linked:validator-network",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Network]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Byzantine Fault Tolerance]]",
-      "resolved": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DAO]]",
-      "resolved": "urn:visionflow:owl:class:dao",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalAsset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalTwin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[FaultTolerance]]",
-      "resolved": "urn:visionflow:owl:class:fault-tolerance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Stake]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ProofOfStake]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Work]]",
-      "resolved": "urn:visionflow:owl:class:proof-of-work",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualWorld]]",
-      "resolved": "urn:visionflow:owl:class:virtual-world",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Distributed computational protocol ensuring all participants in a [[Blockchain Network]] agree on the canonical transaction history and current state without centralised authority. [[Consensus Mechanisms]] including [[Proof of Work]], [[Proof of Stake]], and [[Byzantine Fault Tolerance]] enable [[Trustless Coordination]].

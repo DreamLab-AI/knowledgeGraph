@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Product Liability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,47 +173,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:product-liability:e319673c070e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a98ed02b3cf211adb0e258fb65d01d457246ee30fe9f601070ae794f10d8eec1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Consumer Protection]]",
-      "resolved": "urn:visionflow:linked:consumer-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:linked:accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Safety]]",
-      "resolved": "urn:visionflow:linked:safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:linked:risk-management",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The area of law concerning the responsibility of producers and sellers for harm caused by defective or unsafe products placed on the market.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Warehouse Robotics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Warehouse robotics is the application of autonomous mobile robots, robotic arms, and coordinated fleets to automate storage, picking, sorting, and transport tasks within fulfilment and distribution centres. Systems integrate navigation, perception, fleet orchestration, and warehouse management software to move goods and people efficiently. It is one of the most commercially mature robotics domains, driven by e-commerce throughput and labour demands.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:topological-map", "label": "Topological Map"}, {"@id": "urn:ngm:class:robotics-platform", "label": "Robotics Platform"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-platform",
+        "label": "Robotics Platform"
+      }
+    ]
   },
   "quality": 0.72
 }

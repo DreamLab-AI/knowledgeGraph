@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DAO Governance for Telecollaboration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,52 +80,6 @@ public: true
   ]
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:dao-governance-for-telecollaboration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:601026636424285135ef0af847fb27c0332a2dbad63ddeb324e085d1eba97e82"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain Technology]]",
-      "resolved": "urn:visionflow:linked:blockchain-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DecentralisedAutonomousOrganisation]]",
-      "resolved": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-002-telecollaboration]]",
-      "resolved": "urn:visionflow:linked:tele-002-telecollaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-250-blockchain-collaboration]]",
-      "resolved": "urn:visionflow:linked:tele-250-blockchain-collaboration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-251-smart-contract-coordination]]",
-      "resolved": "urn:visionflow:linked:tele-251-smart-contract-coordination",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "The application of decentralised autonomous organisation (DAO) governance mechanisms—token-weighted voting, proposal systems, treasury management—to coordinate geographically distributed teams through on-chain decision-making, enabling democratic, transparent collaboration without centralised management or hierarchical authority structures."

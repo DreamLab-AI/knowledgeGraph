@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Indoor Navigation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:indoor-navigation", "@type":"Page", "title":"Indoor Navigation", "vc:slug":"indoor-navigation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:indoor-navigation",
+  "@type": "Page",
+  "title": "Indoor Navigation",
+  "vc:slug": "indoor-navigation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Securities Act 1933
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

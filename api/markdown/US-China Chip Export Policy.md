@@ -1,8 +1,3 @@
----
-public: true
----
-
-# US-China Chip Export Policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "us-china-chip-export-policy",
   "title": "US-China Chip Export Policy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Market Reaction", "Nvidia Stock"],
+  "vc:outboundWikilinks": [
+    "Market Reaction",
+    "Nvidia Stock"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}, {"@id": "urn:ngm:class:semiconductor", "label": "Semiconductor"}, {"@id": "urn:ngm:class:china", "label": "China"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:semiconductor",
+        "label": "Semiconductor"
+      },
+      {
+        "@id": "urn:ngm:class:china",
+        "label": "China"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

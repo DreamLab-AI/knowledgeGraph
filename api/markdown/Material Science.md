@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Material Science
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -161,46 +156,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:material-science:9f00a8da9ee3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8d18884b0d52bac36c9459e56e11e9e5fde8a42ba7e6f1bc412abeedbd0ef3eb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Material System]]",
-      "resolved": "urn:visionflow:linked:material-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Quantum Computation Paradigm]]",
-      "resolved": "urn:visionflow:linked:quantum-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Simulation]]",
-      "resolved": "urn:visionflow:linked:simulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

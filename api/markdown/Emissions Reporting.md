@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Emissions Reporting
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:emissions-reporting", "@type": "Page", "title": "Emissions Reporting", "vc:slug": "emissions-reporting", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:emissions-reporting",
+  "@type": "Page",
+  "title": "Emissions Reporting",
+  "vc:slug": "emissions-reporting",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

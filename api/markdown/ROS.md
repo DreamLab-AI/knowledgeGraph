@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ROS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -186,57 +181,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ros:1040113abe1b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5c72627069ddb8db52f4aaad25a4cc5b9afe45da4a221dd6f88ad3be7f60c221"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DDS Middleware]]",
-      "resolved": "urn:visionflow:linked:dds-middleware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Middleware]]",
-      "resolved": "urn:visionflow:linked:middleware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Navigation]]",
-      "resolved": "urn:visionflow:linked:autonomous-navigation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:linked:sensor-fusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[micro-ROS]]",
-      "resolved": "urn:visionflow:linked:micro-ros",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robot Operating System]]",
-      "resolved": "urn:visionflow:linked:robot-operating-system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ROS (Robot Operating System) is an open-source middleware framework providing communication, tooling and libraries for building robot software from reusable, distributed components.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Random Variable
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,16 +7,39 @@ public: true
   "title": "Random Variable",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:probability-theory", "vc:label": "Probability Theory"},
-    {"@id": "urn:visionflow:linked:probability-distribution", "vc:label": "Probability Distribution"},
-    {"@id": "urn:visionflow:linked:covariance-matrix", "vc:label": "Covariance Matrix"},
-    {"@id": "urn:visionflow:linked:entropy", "vc:label": "Entropy"},
-    {"@id": "urn:visionflow:linked:statistics", "vc:label": "Statistics"},
-    {"@id": "urn:visionflow:linked:stochastic-process", "vc:label": "Stochastic Process"}
+    {
+      "@id": "urn:visionflow:linked:probability-theory",
+      "vc:label": "Probability Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:probability-distribution",
+      "vc:label": "Probability Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:covariance-matrix",
+      "vc:label": "Covariance Matrix"
+    },
+    {
+      "@id": "urn:visionflow:linked:entropy",
+      "vc:label": "Entropy"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistics",
+      "vc:label": "Statistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-process",
+      "vc:label": "Stochastic Process"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -40,15 +58,30 @@ public: true
   },
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"}
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:covariance-matrix", "label": "Covariance Matrix"},
-      {"@id": "urn:ngm:class:entropy", "label": "Entropy"}
+      {
+        "@id": "urn:ngm:class:covariance-matrix",
+        "label": "Covariance Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:statistics", "label": "Statistics"},
-      {"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"}
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
     ]
   },
   "quality": 0.8,

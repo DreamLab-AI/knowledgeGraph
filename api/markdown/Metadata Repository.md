@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metadata Repository
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metadata-repository:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4231e34ac84fff71c727c72439ab83c4e8fefe0395c0b8e2d358269ddc10cf32"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Discovery]]",
-      "resolved": "urn:visionflow:linked:data-discovery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Management]]",
-      "resolved": "urn:visionflow:owl:class:data-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Storage systems that centralise metadata from diverse data sources, providing unified access to technical, business, and operational metadata for data discovery, cataloguing, lineage tracking, and governance across enterprise environments.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Audit Readiness
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,28 @@ public: true
   "definition": "Audit Readiness is the state in which an organization maintains the evidence, controls, documentation, and traceability needed to pass a compliance or security audit at any time with minimal preparation. It involves continuously capturing logs, change records, policy attestations, and control-effectiveness proof mapped to specific regulatory or standards requirements. Sustained readiness shifts auditing from a disruptive periodic scramble to an ongoing, verifiable posture.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ]
   },
   "quality": 0.72
 }
 ```
+
 - ### Definition
   - Audit Readiness is the continuous capability to demonstrate compliance on demand through maintained evidence and controls. It is an enabling outcome of the [[Compliance Domain]] and the [[Regulatory Compliance Domain]], reducing audit cost and risk.
 - ### Content

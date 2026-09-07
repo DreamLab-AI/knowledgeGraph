@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Web Access Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Web Access Control (WAC) is a decentralised authorisation system for web resources that uses RDF-based access control lists to specify which agents may read, write, append, or control linked-data resources identified by URIs. It is a core mechanism in the Solid ecosystem, letting individuals govern access to their personal data pods using WebID-based identity. WAC decouples authorisation from any central server, aligning with self-sovereign data principles.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:solid", "label": "Solid"}, {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
   },
   "quality": 0.72
 }

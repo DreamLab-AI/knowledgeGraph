@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "AI System",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:owl:class:ai-model", "vc:label": "AI Model" },
-    { "@id": "urn:visionflow:owl:class:ai-inference", "vc:label": "AI Inference" },
-    { "@id": "urn:visionflow:owl:class:data-pipeline", "vc:label": "Data Pipeline" },
-    { "@id": "urn:visionflow:owl:class:inference-runtime", "vc:label": "Inference Runtime" },
-    { "@id": "urn:visionflow:owl:class:compute-infrastructure", "vc:label": "Compute Infrastructure" },
-    { "@id": "urn:visionflow:owl:class:training-data", "vc:label": "Training Data" },
-    { "@id": "urn:visionflow:owl:class:mlops", "vc:label": "MLOps" },
-    { "@id": "urn:visionflow:owl:class:data-governance", "vc:label": "Data Governance" },
-    { "@id": "urn:visionflow:owl:class:model-serving", "vc:label": "Model Serving" },
-    { "@id": "urn:visionflow:owl:class:ai-governance", "vc:label": "AI Governance" },
-    { "@id": "urn:visionflow:owl:class:explainability", "vc:label": "Explainability" },
-    { "@id": "urn:visionflow:owl:class:ai-risk-assessment", "vc:label": "AI Risk Assessment" },
-    { "@id": "urn:visionflow:owl:class:autonomous-decision-making", "vc:label": "Autonomous Decision-Making" },
-    { "@id": "urn:visionflow:owl:class:intelligent-automation", "vc:label": "Intelligent Automation" },
-    { "@id": "urn:visionflow:owl:class:edge-ai-system", "vc:label": "Edge AI System" },
-    { "@id": "urn:visionflow:owl:class:multi-agent-system", "vc:label": "Multi-Agent System" },
-    { "@id": "urn:visionflow:owl:class:ai-system-eu-definition", "vc:label": "AI System (EU Definition)" },
-    { "@id": "urn:visionflow:owl:class:rule-based-systems", "vc:label": "Rule-Based System" },
-    { "@id": "urn:visionflow:owl:class:regulatory-compliance", "vc:label": "Regulatory Compliance" },
-    { "@id": "urn:visionflow:owl:class:digital-infrastructure", "vc:label": "Digital Infrastructure" },
-    { "@id": "urn:visionflow:owl:class:iso-iec-42001", "vc:label": "ISO IEC 42001" },
-    { "@id": "urn:visionflow:owl:class:eu-ai-act", "vc:label": "EU AI Act" },
-    { "@id": "urn:visionflow:owl:class:learning-algorithm", "vc:label": "Machine Learning Algorithm" },
-    { "@id": "urn:visionflow:owl:class:sociotechnical-system", "vc:label": "Sociotechnical System" },
-    { "@id": "urn:visionflow:owl:class:deep-learning", "vc:label": "Deep Learning" },
-    { "@id": "urn:visionflow:owl:class:large-language-model", "vc:label": "Large Language Model" },
-    { "@id": "urn:visionflow:owl:class:ai-safety", "vc:label": "AI Safety" },
-    { "@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture" },
-    { "@id": "urn:visionflow:owl:class:neural-network", "vc:label": "Neural Network" },
-    { "@id": "urn:visionflow:owl:class:monitoring", "vc:label": "Monitoring Instrumentation" },
-    { "@id": "urn:visionflow:owl:class:model-evaluation", "vc:label": "Model Evaluation" },
-    { "@id": "urn:visionflow:owl:class:reinforcement-learning", "vc:label": "Reinforcement Learning" },
-    { "@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing" },
-    { "@id": "urn:visionflow:owl:class:computer-vision", "vc:label": "Computer Vision" },
-    { "@id": "urn:visionflow:owl:class:api-gateway", "vc:label": "API Gateway" },
-    { "@id": "urn:visionflow:owl:class:cloud-computing", "vc:label": "Cloud Computing" },
-    { "@id": "urn:visionflow:owl:class:agentic-ai", "vc:label": "Agentic AI" },
-    { "@id": "urn:visionflow:linked:llmops", "vc:label": "LLMOps" },
-    { "@id": "urn:visionflow:linked:model-registry", "vc:label": "Model Registry" },
-    { "@id": "urn:visionflow:linked:compound-ai-system", "vc:label": "Compound AI System" }
+    {
+      "@id": "urn:visionflow:owl:class:ai-model",
+      "vc:label": "AI Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-inference",
+      "vc:label": "AI Inference"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:inference-runtime",
+      "vc:label": "Inference Runtime"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-infrastructure",
+      "vc:label": "Compute Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:mlops",
+      "vc:label": "MLOps"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-serving",
+      "vc:label": "Model Serving"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:explainability",
+      "vc:label": "Explainability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-risk-assessment",
+      "vc:label": "AI Risk Assessment"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:autonomous-decision-making",
+      "vc:label": "Autonomous Decision-Making"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:intelligent-automation",
+      "vc:label": "Intelligent Automation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:edge-ai-system",
+      "vc:label": "Edge AI System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-system-eu-definition",
+      "vc:label": "AI System (EU Definition)"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:rule-based-systems",
+      "vc:label": "Rule-Based System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:regulatory-compliance",
+      "vc:label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:digital-infrastructure",
+      "vc:label": "Digital Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:iso-iec-42001",
+      "vc:label": "ISO IEC 42001"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:eu-ai-act",
+      "vc:label": "EU AI Act"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:learning-algorithm",
+      "vc:label": "Machine Learning Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:sociotechnical-system",
+      "vc:label": "Sociotechnical System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-model",
+      "vc:label": "Large Language Model"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:monitoring",
+      "vc:label": "Monitoring Instrumentation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:api-gateway",
+      "vc:label": "API Gateway"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:llmops",
+      "vc:label": "LLMOps"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-registry",
+      "vc:label": "Model Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:compound-ai-system",
+      "vc:label": "Compound AI System"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -72,54 +187,135 @@ public: true
   },
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:ai-model", "label": "AI Model" },
-      { "@id": "urn:ngm:class:ai-inference", "label": "AI Inference" },
-      { "@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline" },
-      { "@id": "urn:ngm:class:inference-runtime", "label": "Inference Runtime" },
-      { "@id": "urn:ngm:class:monitoring", "label": "Monitoring Instrumentation" }
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:inference-runtime",
+        "label": "Inference Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring Instrumentation"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure" },
-      { "@id": "urn:ngm:class:training-data", "label": "Training Data" },
-      { "@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework" }
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:ai-risk-assessment", "label": "AI Risk Assessment" },
-      { "@id": "urn:ngm:class:autonomous-decision-making", "label": "Autonomous Decision-Making" },
-      { "@id": "urn:ngm:class:intelligent-automation", "label": "Intelligent Automation" }
+      {
+        "@id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:mlops", "label": "MLOps" },
-      { "@id": "urn:ngm:class:data-governance", "label": "Data Governance" },
-      { "@id": "urn:ngm:class:model-serving", "label": "Model Serving" }
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:learning-algorithm", "label": "Machine Learning Algorithm" }
+      {
+        "@id": "urn:ngm:class:learning-algorithm",
+        "label": "Machine Learning Algorithm"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:ai-governance", "label": "AI Governance" },
-      { "@id": "urn:ngm:class:explainability", "label": "Explainability" }
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ],
     "standardizedBy": [
-      { "@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001" },
-      { "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act" }
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based System" }
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:ai-system-eu-definition", "label": "AI System (EU Definition)" },
-      { "@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System" },
-      { "@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System" }
+      {
+        "@id": "urn:ngm:class:ai-system-eu-definition",
+        "label": "AI System (EU Definition)"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure" },
-      { "@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance" }
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:ai-application", "label": "AI Application" },
-    { "@id": "urn:ngm:class:intelligent-system", "label": "Intelligent System" }
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:intelligent-system",
+      "label": "Intelligent System"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
@@ -292,7 +488,7 @@ public: true
 
   Standards bodies formalised the system perspective progressively. ISO/IEC JTC 1/SC 42 has been developing AI-specific vocabulary (ISO/IEC 22989:2022, "Artificial Intelligence: Concepts and Terminology"), reference architectures (ISO/IEC 42010 family), and management system standards ([[ISO IEC 42001]]:2023, the first international AI Management System standard, modelled on the ISO 9001 / ISO 27001 pattern) that treat the AI system as the primary unit of governance, accountability, and risk assessment. The [[EU AI Act]] (Regulation 2024/1689), entering full force progressively from February 2025 to August 2026, adopts an explicit system-level definition: "machine-based systems designed to operate with varying levels of autonomy and that may exhibit adaptiveness after deployment, and that, for explicit or implicit objectives, infer, from the input they receive, how to generate outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments." This definition deliberately excludes traditional software that executes pre-defined deterministic rules, but includes any system where outputs are inferred from data rather than determined by explicit programming — a category that now encompasses virtually all modern machine learning deployments. The EU AI Act's risk tiering — prohibited, high-risk, limited-risk, minimal-risk — applies at the system level, requiring deployers of high-risk AI systems to maintain conformity documentation, implement risk management systems, conduct post-market monitoring, and provide human oversight mechanisms for every AI system in the designated high-risk categories (biometric identification, critical infrastructure, education, employment, essential services, law enforcement, migration, and administration of justice).
 
-  Technically, an AI system comprises the following conceptually distinct layers: (1) a data ingestion and preprocessing layer handling feature engineering, normalisation, entity resolution, and versioning; (2) an [[AI Model]] or ensemble of models encoding learned representations — [[Transformer Architecture]] models for language and multimodal tasks, convolutional [[Neural Network]] architectures for vision, gradient-boosted trees for tabular data; (3) an [[AI Inference]] and [[Inference Runtime]] layer handling batching, quantisation, caching, and latency management; (4) an integration layer connecting the AI components to upstream data sources and downstream application surfaces via [[API Gateway]] endpoints, message queues, and streaming data buses; (5) a [[Monitoring Instrumentation]] layer tracking data drift (population stability index, KL divergence from reference distribution), prediction distribution shifts, latency percentiles (p50/p95/p99), throughput, and error rates; and (6) a feedback and model refresh loop enabling continual learning or periodic retraining with human-labelled corrections. The complexity of orchestrating these components across heterogeneous [[Cloud Computing]] and edge environments gave rise to specialised [[MLOps]] tooling — platform products from Databricks (MLflow, Unity Catalog), Google (Vertex AI, Vertex Model Registry), AWS (SageMaker, SageMaker Pipelines), and Microsoft (Azure ML, Prompt Flow) — that automate experiment tracking, model versioning, deployment pipelines, A/B testing frameworks, shadow deployment for risk-free validation, and monitoring dashboards. In 2025–2026, [[LLMOps]] emerged as a specialised extension of [[MLOps]] addressing the unique operational characteristics of [[Large Language Model]]-based systems: prompt versioning and regression testing (prompt mutations can change model behaviour unpredictably), token cost budgeting across model tiers, hallucination monitoring via automated factual consistency evaluation, safety guardrail integration at the gateway layer, and multi-model routing that dynamically selects the most cost-effective model capable of handling each incoming request.
+  Technically, an AI system comprises the following conceptually distinct layers: (1) a data ingestion and preprocessing layer handling feature engineering, normalisation, entity resolution, and versioning; (2) an [[AI Model]] or ensemble of models encoding learned representations — [[Transformer Architecture]] models for language and multimodal tasks, convolutional [[Neural Network]] architectures for vision, gradient-boosted trees for tabular data; (3) an [[AI Inference]] and [[Inference Runtime]] layer handling batching, quantisation, caching, and latency management; (4) an integration layer connecting the AI components to upstream data sources and downstream application surfaces via [[API Gateway]] endpoints, message queues, and streaming data buses; (5) a [[Monitoring Instrumentation]] layer tracking data drift (population stability [private], KL divergence from reference distribution), prediction distribution shifts, latency percentiles (p50/p95/p99), throughput, and error rates; and (6) a feedback and model refresh loop enabling continual learning or periodic retraining with human-labelled corrections. The complexity of orchestrating these components across heterogeneous [[Cloud Computing]] and edge environments gave rise to specialised [[MLOps]] tooling — platform products from Databricks (MLflow, Unity Catalog), Google (Vertex AI, Vertex Model Registry), AWS (SageMaker, SageMaker Pipelines), and Microsoft (Azure ML, Prompt Flow) — that automate experiment tracking, model versioning, deployment pipelines, A/B testing frameworks, shadow deployment for risk-free validation, and monitoring dashboards. In 2025–2026, [[LLMOps]] emerged as a specialised extension of [[MLOps]] addressing the unique operational characteristics of [[Large Language Model]]-based systems: prompt versioning and regression testing (prompt mutations can change model behaviour unpredictably), token cost budgeting across model tiers, hallucination monitoring via automated factual consistency evaluation, safety guardrail integration at the gateway layer, and multi-model routing that dynamically selects the most cost-effective model capable of handling each incoming request.
 
   The distinction between an AI system and an [[AI Model]] is regulatorily and practically significant. An [[AI Model]] is the trained artefact — the set of learned parameters that maps inputs to outputs. An AI system embeds the model within all the infrastructure, processes, and human roles required for that model to function in a deployment context. The same model (e.g., a language model checkpoint) might form the core of very different AI systems depending on how it is wrapped: a customer service AI system might include a guardrail layer that filters harmful outputs, a retrieval-augmented generation (RAG) system that grounds the model in current product documentation, a session management layer that maintains conversation history, an escalation mechanism that routes to human agents for high-stakes decisions, and a logging layer that captures every interaction for audit and improvement purposes. Under the EU AI Act and [[ISO IEC 42001]], the deployer of the AI system — not merely the developer of the [[AI Model]] — bears responsibility for conformity obligations, reflecting the recognition that system-level design choices fundamentally shape the risk profile of the final deployed application.
 
@@ -322,7 +518,7 @@ public: true
 
   **[[MLOps]] and [[LLMOps]] layer:** Continuous integration and deployment (CI/CD) pipelines for model artefacts, A/B testing frameworks, shadow deployment for risk-free pre-production validation, canary releases for controlled rollout, and automated rollback on drift detection. LLMOps extends MLOps with LLM-specific concerns: prompt management, evaluation harnesses, token cost tracking, latency-cost optimisation, and safety guardrail integration.
 
-  **Monitoring and [[Model Evaluation]] infrastructure:** Real-time dashboards tracking data drift (KL divergence, population stability index), concept drift (prediction distribution), system performance (latency p50/p99, throughput, error rate), and business KPI alignment. [[AI Risk Assessment]] integrates monitoring outputs with risk scoring to trigger human review when anomalies exceed thresholds.
+  **Monitoring and [[Model Evaluation]] infrastructure:** Real-time dashboards tracking data drift (KL divergence, population stability [private]), concept drift (prediction distribution), system performance (latency p50/p99, throughput, error rate), and business KPI alignment. [[AI Risk Assessment]] integrates monitoring outputs with risk scoring to trigger human review when anomalies exceed thresholds.
 
   ## Use Cases / Major Families
 

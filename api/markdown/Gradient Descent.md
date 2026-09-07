@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gradient Descent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,32 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gradient-descent:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:508a83e6dd2f96b98a48acc8914ea51fdb0b8ff6af6f7aed309937f0bbe0334d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Gradient Descent is an iterative first-order optimisation algorithm that minimises a differentiable loss function by repeatedly updating model parameters in the direction of the negative gradient. It is the foundational optimisation strategy for training machine learning models, with variants including batch, stochastic, and mini-batch gradient descent, as well as adaptive-rate methods such as Adam and RMSProp.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Machine Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

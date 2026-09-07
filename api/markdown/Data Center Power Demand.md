@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Center Power Demand
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "data-center-power-demand",
   "title": "Data Center Power Demand",
   "vc:public": true,
-  "vc:outboundWikilinks": ["ERCOT Grid Capacity", "Energy Infrastructure Backlog"],
+  "vc:outboundWikilinks": [
+    "ERCOT Grid Capacity",
+    "Energy Infrastructure Backlog"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-inference-infrastructure", "label": "AI Inference Infrastructure"}, {"@id": "urn:ngm:class:energy-infrastructure-backlog", "label": "Energy Infrastructure Backlog"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:energy-infrastructure-backlog",
+        "label": "Energy Infrastructure Backlog"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

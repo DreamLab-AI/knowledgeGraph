@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DLT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Distributed Ledger Technology (DLT) is a class of systems in which transaction records are replicated, shared, and synchronised across multiple nodes without a single central authority. Blockchains are one form of DLT, but the term also covers directed-acyclic-graph and other non-chained ledger structures. DLT underpins many digital-asset and central-bank-digital-currency designs because it provides tamper-evidence, auditability, and resilience.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-data-structure", "label": "Distributed Data Structure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cbdcs", "label": "CBDCs"}, {"@id": "urn:ngm:class:cbdc-frameworks", "label": "CBDC Frameworks"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      }
+    ]
   },
   "quality": 0.72
 }

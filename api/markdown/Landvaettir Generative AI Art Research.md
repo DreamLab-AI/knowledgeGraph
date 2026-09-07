@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Landvættir]]
-# Landvaettir Generative AI Art Research
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,12 +47,24 @@ elevatedFrom:: [[Landvættir]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:technology-sector-landscape-analysis", "label": "Technology Sector Landscape Analysis"}
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:technology-sector-landscape-analysis",
+        "label": "Technology Sector Landscape Analysis"
+      }
     ]
   },
   "quality": 0.5,
@@ -69,32 +75,6 @@ elevatedFrom:: [[Landvættir]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:landv-ttir:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:059fbd52b577e134507b5407080bc343848b4f2b09fbfc306589099c2df57ca7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Domain Expert Contact Index]]",
-      "resolved": "urn:visionflow:owl:class:people",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Landvættir is a practice-based art research project and portfolio documenting the bootstrapping era of Generative AI and AGI through digital landscapes, virtual worlds, and AI-generated imagery. Drawing on Scenism, Romanticism, and environmental psychology, it explores how AI systems trained on cultural visual heritage may dream or hallucinate the virtual landscapes that seeded their intelligence.

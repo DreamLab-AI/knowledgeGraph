@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IoT Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "IoT Platform",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:cloud-computing", "vc:label": "Cloud Computing"},
-    {"@id": "urn:visionflow:linked:internet-of-things", "vc:label": "Internet of Things"},
-    {"@id": "urn:visionflow:linked:mqtt", "vc:label": "MQTT"},
-    {"@id": "urn:visionflow:linked:smart-home-automation", "vc:label": "Smart Home Automation"}
+    {
+      "@id": "urn:visionflow:linked:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:internet-of-things",
+      "vc:label": "Internet of Things"
+    },
+    {
+      "@id": "urn:visionflow:linked:mqtt",
+      "vc:label": "MQTT"
+    },
+    {
+      "@id": "urn:visionflow:linked:smart-home-automation",
+      "vc:label": "Smart Home Automation"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,22 +50,46 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:telemetry", "label": "Telemetry"}
+      {
+        "@id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-home-automation", "label": "Smart Home Automation"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:smart-home-automation",
+        "label": "Smart Home Automation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ]
   },
   "quality": 0.8,

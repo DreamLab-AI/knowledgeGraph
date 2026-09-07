@@ -1,8 +1,3 @@
----
-public: true
----
-
-# differentiable architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,23 +34,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Differentiable Architecture refers to a neural network design paradigm, most prominently realised in Differentiable Architecture Search (DARTS), in which discrete structural choices — such as which operation to place at each edge of a candidate graph or how to connect layers — are relaxed to continuous mixture weights over a predefined set of operations. This relaxation renders the architecture selection problem differentiable, allowing the architecture parameters to be optimised jointly with network weights via gradient descent on a validation loss. Once optimised, the continuous mixture is discretised to yield a final architecture, dramatically reducing the computational cost of neural architecture search compared to evolutionary or reinforcement learning methods.

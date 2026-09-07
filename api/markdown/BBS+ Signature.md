@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BBS+ Signature
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "BBS+ Signature is a pairing-based digital signature scheme that signs a vector of messages simultaneously and supports the generation of zero-knowledge proofs that reveal only a chosen subset of those messages — a property known as selective disclosure — without revealing the full signed message set or enabling linkage of multiple presentations to the same credential. It is a cornerstone primitive for privacy-preserving verifiable credentials.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-signature",
+      "label": "Cryptographic Signature"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:privacy-preserving-identity", "label": "Privacy-Preserving Identity"}
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-identity",
+        "label": "Privacy-Preserving Identity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bls-signature", "label": "BLS Signature"},
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
+      {
+        "@id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - The primary application domain is self-sovereign identity (SSI): credentials issued by governments, universities, or employers can be selectively presented to verifiers with only the required attributes revealed. For example, a driving licence credential might disclose the "over 18" flag for age verification without revealing name, address, or exact date of birth. This is a major advance over simple credential presentation where the full document is shared.
 
   - By 2024–2025, BBS+ Signature has been incorporated into the W3C Verifiable Credentials Data Model via the BBS cryptosuite specification, the EU EUDI Wallet architecture (as an optional cryptographic suite), and commercial SSI platforms including Hyperledger AnonCreds v2. IETF draft RFC specification work continues, with interoperability testing events identifying edge cases in multi-message proof generation. Post-quantum variants of BBS+ are under active research, given that pairing-based schemes are vulnerable to future quantum attacks.
-

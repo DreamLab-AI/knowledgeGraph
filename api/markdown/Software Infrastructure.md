@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Software Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,16 +51,34 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:serverless-architecture", "label": "Serverless Architecture"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
     ]
   },
   "quality": 0.7,
@@ -76,32 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:software-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2f181e4507bbcd2ed8738b505304c44b7866d59fb83afc10056eb64a720b2813"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software Infrastructure comprises the foundational software layers — including operating systems, middleware, APIs, frameworks, and runtime environments — that underpin applications and services without being directly user-facing. It provides the shared services, communication channels, and execution contexts on which higher-level metaverse, AI, and distributed-systems applications are built, analogous to the role that physical infrastructure plays for built environments.

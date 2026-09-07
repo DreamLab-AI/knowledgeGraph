@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Resolver
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,16 +7,39 @@ public: true
   "title": "Resolver",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:middleware", "vc:label": "Middleware"},
-    {"@id": "urn:visionflow:linked:gs1-digital-link", "vc:label": "Gs1 Digital Link"},
-    {"@id": "urn:visionflow:linked:proprioceptive-sensor", "vc:label": "Proprioceptive Sensor"},
-    {"@id": "urn:visionflow:linked:domain-name-system", "vc:label": "Domain Name System"},
-    {"@id": "urn:visionflow:linked:interoperability", "vc:label": "Interoperability"},
-    {"@id": "urn:visionflow:linked:rotary-encoder", "vc:label": "Rotary Encoder"}
+    {
+      "@id": "urn:visionflow:linked:middleware",
+      "vc:label": "Middleware"
+    },
+    {
+      "@id": "urn:visionflow:linked:gs1-digital-link",
+      "vc:label": "Gs1 Digital Link"
+    },
+    {
+      "@id": "urn:visionflow:linked:proprioceptive-sensor",
+      "vc:label": "Proprioceptive Sensor"
+    },
+    {
+      "@id": "urn:visionflow:linked:domain-name-system",
+      "vc:label": "Domain Name System"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:rotary-encoder",
+      "vc:label": "Rotary Encoder"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -40,18 +58,36 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:gs1-digital-link", "label": "Gs1 Digital Link"},
-      {"@id": "urn:ngm:class:proprioceptive-sensor", "label": "Proprioceptive Sensor"}
+      {
+        "@id": "urn:ngm:class:gs1-digital-link",
+        "label": "Gs1 Digital Link"
+      },
+      {
+        "@id": "urn:ngm:class:proprioceptive-sensor",
+        "label": "Proprioceptive Sensor"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:unique-identifier", "label": "Unique Identifier"}
+      {
+        "@id": "urn:ngm:class:unique-identifier",
+        "label": "Unique Identifier"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:domain-name-system", "label": "Domain Name System"},
-      {"@id": "urn:ngm:class:rotary-encoder", "label": "Rotary Encoder"}
+      {
+        "@id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-encoder",
+        "label": "Rotary Encoder"
+      }
     ]
   },
   "quality": 0.8,

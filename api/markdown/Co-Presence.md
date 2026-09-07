@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Co-Presence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -5,7 +5,7 @@
 
 <https://narrativegoldmine.com/ontology/inferred> a owl:Ontology ;
     rdfs:label "NarrativeGoldmine Inferred Axioms"@en ;
-    vc:generatedAt "2026-09-06T17:51:15.249218+00:00"^^xsd:dateTime ;
+    vc:generatedAt "2026-09-07T11:55:42.223102+00:00"^^xsd:dateTime ;
     vc:inferenceMethod "transitive-subclass-closure" .
 
 <urn:ngm:class:1-hive> rdfs:subClassOf <urn:ngm:class:bc-governance-and-regulation>,
@@ -1720,8 +1720,6 @@
         <urn:ngm:class:infrastructure>,
         <urn:ngm:class:systems-engineering> .
 
-<urn:ngm:class:api-integration-health-dashboard> rdfs:subClassOf <urn:ngm:class:infrastructure> .
-
 <urn:ngm:class:api-key-authentication> rdfs:subClassOf <urn:ngm:class:identity-and-access-management>,
         <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
@@ -2348,8 +2346,6 @@
 
 <urn:ngm:class:automated-compliance> rdfs:subClassOf <urn:ngm:class:ai-governance-and-ethics>,
         <urn:ngm:class:artificial-intelligence> .
-
-<urn:ngm:class:automated-daily-podcast-pipeline> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:automated-decision-making> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
@@ -3579,8 +3575,6 @@
         <urn:ngm:class:layer-2-scaling>,
         <urn:ngm:class:payment-channel-network> .
 
-<urn:ngm:class:book-to-be-processed> rdfs:subClassOf <urn:ngm:class:infrastructure> .
-
 <urn:ngm:class:boosting> rdfs:subClassOf <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:machine-learning> .
 
@@ -4604,8 +4598,6 @@
 
 <urn:ngm:class:cloth-simulation> rdfs:subClassOf <urn:ngm:class:sc-platform-and-environment>,
         <urn:ngm:class:spatial-computing> .
-
-<urn:ngm:class:cloud-api-provisioning-process> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:cloud-computing-revenue> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
@@ -5961,8 +5953,6 @@
 <urn:ngm:class:credential-format-standard> rdfs:subClassOf <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:credential-gated-presentation-system> rdfs:subClassOf <urn:ngm:class:infrastructure> .
-
 <urn:ngm:class:credential-issuance> rdfs:subClassOf <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
 
@@ -6297,8 +6287,6 @@
 <urn:ngm:class:cultural-provenance-record> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
 <urn:ngm:class:curated-research-link-repository> rdfs:subClassOf <urn:ngm:class:infrastructure> .
-
-<urn:ngm:class:curated-research-paper-bibliography> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:current-sensor> rdfs:subClassOf <urn:ngm:class:robotics> .
 
@@ -11484,8 +11472,6 @@
 <urn:ngm:class:high-speed-networking> rdfs:subClassOf <urn:ngm:class:infra-network-and-comms>,
         <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:higher-education-hr-policy-rag-system> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
-
 <urn:ngm:class:hipaa> rdfs:subClassOf <urn:ngm:class:data-protection>,
         <urn:ngm:class:sc-governance-and-safety>,
         <urn:ngm:class:security-architecture>,
@@ -13706,8 +13692,6 @@
 <urn:ngm:class:kubernetes> rdfs:subClassOf <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:kubernetes-persistent-storage-virtualisation> rdfs:subClassOf <urn:ngm:class:infrastructure> .
-
 <urn:ngm:class:kullback-leibler-divergence> rdfs:subClassOf <urn:ngm:class:ai-research-area>,
         <urn:ngm:class:ai-technique>,
         <urn:ngm:class:applied-mathematics>,
@@ -14120,8 +14104,6 @@
         <urn:ngm:class:identity>,
         <urn:ngm:class:infra-security-and-identity>,
         <urn:ngm:class:infrastructure> .
-
-<urn:ngm:class:leopold-aschenbrenner-situational-awareness> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:level-of-detail> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
 
@@ -16855,8 +16837,6 @@
         <urn:ngm:class:infra-computing-and-cloud>,
         <urn:ngm:class:infrastructure> .
 
-<urn:ngm:class:node-based-diffusion-pipeline-interface-for-fashion-and-brands> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
-
 <urn:ngm:class:node-based-diffusion-pipeline-interface-manager> rdfs:subClassOf <urn:ngm:class:artificial-intelligence>,
         <urn:ngm:class:infra-software-engineering>,
         <urn:ngm:class:infrastructure>,
@@ -17979,8 +17959,6 @@
         <urn:ngm:class:blockchain> .
 
 <urn:ngm:class:parental-controls> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
-
-<urn:ngm:class:parents-guide-to-ai> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:paris-agreement> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
@@ -22120,10 +22098,6 @@
         <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:self-driving-car> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
-
-<urn:ngm:class:self-hosted-ai-server-infrastructure> rdfs:subClassOf <urn:ngm:class:infrastructure> .
-
-<urn:ngm:class:self-hosted-email-infrastructure-stack> rdfs:subClassOf <urn:ngm:class:infrastructure> .
 
 <urn:ngm:class:self-improvement> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
@@ -26392,8 +26366,6 @@
 <urn:ngm:class:virtual-society-regulations> rdfs:subClassOf <urn:ngm:class:artificial-intelligence> .
 
 <urn:ngm:class:virtual-stage> rdfs:subClassOf <urn:ngm:class:spatial-computing> .
-
-<urn:ngm:class:virtual-stand-up> rdfs:subClassOf <urn:ngm:class:distributed-collaboration> .
 
 <urn:ngm:class:virtual-theater> rdfs:subClassOf <urn:ngm:class:sc-content-and-assets>,
         <urn:ngm:class:spatial-computing> .

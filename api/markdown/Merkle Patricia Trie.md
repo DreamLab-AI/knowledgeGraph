@@ -1,38 +1,120 @@
----
-public: true
----
-
-# Merkle Patricia Trie
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:merkle-patricia-trie", "@type":"Page", "title":"Merkle Patricia Trie", "vc:slug":"merkle-patricia-trie", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:merkle-patricia-trie",
+  "@type": "Page",
+  "title": "Merkle Patricia Trie",
+  "vc:slug": "merkle-patricia-trie",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:merkle-patricia-trie",
-  "@type":"Class",
-  "label":"Merkle Patricia Trie",
-  "definition":"A Merkle Patricia Trie is a cryptographically authenticated key-value data structure that combines a Patricia (radix) trie for compact prefix-keyed storage with Merkle hashing for tamper-evident integrity. Each node is referenced by the hash of its contents, so a single root hash commits to the entire dataset and any change propagates to the root. It is the data structure Ethereum uses to store account state, transactions, and receipts, enabling compact Merkle proofs of inclusion.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:merkle-tree","label":"Merkle Tree"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"},{"@id":"urn:ngm:class:merkle-proof","label":"Merkle Proof"}],
-    "dependsOn":[{"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"}],
-    "requires":[{"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"}],
-    "uses":[{"@id":"urn:ngm:class:data-structure","label":"Data Structure"},{"@id":"urn:ngm:class:persistence","label":"Persistence"}],
-    "implements":[{"@id":"urn:ngm:class:account-model","label":"Account Model"}],
-    "enables":[{"@id":"urn:ngm:class:merkle-proof","label":"Merkle Proof"},{"@id":"urn:ngm:class:verification","label":"Verification"}],
-    "supports":[{"@id":"urn:ngm:class:ethereum","label":"Ethereum"},{"@id":"urn:ngm:class:evm","label":"EVM"}],
-    "partOf":[{"@id":"urn:ngm:class:ethereum","label":"Ethereum"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:merkle-dag","label":"Merkle DAG"}],
-    "relatedTo":[{"@id":"urn:ngm:class:nonce","label":"Nonce"},{"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:merkle-patricia-trie",
+  "@type": "Class",
+  "label": "Merkle Patricia Trie",
+  "definition": "A Merkle Patricia Trie is a cryptographically authenticated key-value data structure that combines a Patricia (radix) trie for compact prefix-keyed storage with Merkle hashing for tamper-evident integrity. Each node is referenced by the hash of its contents, so a single root hash commits to the entire dataset and any change propagates to the root. It is the data structure Ethereum uses to store account state, transactions, and receipts, enabling compact Merkle proofs of inclusion.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:merkle-tree",
+      "label": "Merkle Tree"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:persistence",
+        "label": "Persistence"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:account-model",
+        "label": "Account Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "@id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

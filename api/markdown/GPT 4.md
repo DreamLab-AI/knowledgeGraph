@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GPT 4
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,52 +179,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gpt-4:1b1ae7069716",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c2d1c26e9b97b83132df03d9bb5b02d125f9d22e2d025bbc2caa05062caadd5a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Transformer]]",
-      "resolved": "urn:visionflow:linked:transformer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenAI Research Organisation]]",
-      "resolved": "urn:visionflow:linked:open-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[In-Context Learning]]",
-      "resolved": "urn:visionflow:linked:in-context-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multimodal AI]]",
-      "resolved": "urn:visionflow:linked:multimodal-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:linked:large-language-models",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A large multimodal language model released by OpenAI in 2023, capable of accepting text and image inputs and producing text outputs, and a successor to the GPT-3.5 series.

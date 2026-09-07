@@ -1,8 +1,3 @@
----
-public: true
----
-
-# HTTP Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,4 +177,3 @@ public: true
   - The HTTP semantics — methods, status codes, headers, and content negotiation — underpin the REST (Representational State Transfer) architectural style formulated by Roy Fielding in his 2000 doctoral dissertation. REST maps CRUD operations to HTTP methods (GET for read, POST for create, PUT/PATCH for update, DELETE for delete), using URI paths to identify resources and status codes (200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found, 500 Internal Server Error) to convey operation outcomes. The design of HTTP as a stateless protocol — where each request carries all information needed to process it without relying on server-side session state — was a deliberate architectural choice enabling horizontal scaling of web servers, since any server instance can handle any request.
 
   - In 2024-2025, HTTP continues to evolve in response to emerging requirements. The HTTP working group at the IETF has standardised extensions for structured headers, early hints (103 status code for preloading), priority signals, and secondary certificate authentication. The Model Context Protocol (MCP) used by AI agent systems employs HTTP as its transport, as do most LLM API endpoints. HTTP/3 adoption has reached approximately 30% of web traffic as of 2024. The protocol's stateless design creates challenges for stateful AI applications requiring persistent context, addressed through techniques such as session tokens in headers, WebSocket upgrades for streaming, and server-sent events (SSE) for unidirectional push from servers — the latter being the primary transport for streaming LLM token generation.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IMU Sensors
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "An inertial measurement unit (IMU) is a sensor package that measures a body's specific force and angular rate, typically combining a three-axis accelerometer and a three-axis gyroscope, often with a magnetometer. By integrating these measurements it estimates orientation, velocity, and relative motion without external references. IMUs are central to motion tracking, navigation, and stabilisation in robotics, XR, and aerospace.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sensor", "label": "Sensor"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
+    }
+  ],
   "relations": {
-    "partOf": [{"@id": "urn:ngm:class:motion-capture-rig", "label": "Motion Capture Rig"}],
-    "relatedTo": [{"@id": "urn:ngm:class:lens-and-camera-calibration", "label": "Lens and Camera Calibration"}]
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:motion-capture-rig",
+        "label": "Motion Capture Rig"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:lens-and-camera-calibration",
+        "label": "Lens and Camera Calibration"
+      }
+    ]
   },
   "quality": 0.72
 }

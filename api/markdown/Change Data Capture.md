@@ -1,57 +1,112 @@
----
-public: true
----
-
-# Change Data Capture
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:change-data-capture", "@type":"Page", "title":"Change Data Capture", "vc:slug":"change-data-capture", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:change-data-capture",
+  "@type": "Page",
+  "title": "Change Data Capture",
+  "vc:slug": "change-data-capture",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:change-data-capture",
-  "@type":"Class",
-  "label":"Change Data Capture",
-  "definition":"Change data capture is a set of techniques for identifying and propagating row-level changes — inserts, updates, and deletes — from a source database to downstream systems in near real time. The most robust approach reads the database transaction log, turning committed mutations into an ordered stream of change events without burdening the source with polling. It underpins data replication, event streaming, and incremental data integration, keeping analytical stores, caches, and microservices consistent with operational systems.",
-  "domain":"data",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:data-integration","label":"Data Integration"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:data-integration","label":"Data Integration"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:change-data-capture",
+  "@type": "Class",
+  "label": "Change Data Capture",
+  "definition": "Change data capture is a set of techniques for identifying and propagating row-level changes — inserts, updates, and deletes — from a source database to downstream systems in near real time. The most robust approach reads the database transaction log, turning committed mutations into an ordered stream of change events without burdening the source with polling. It underpins data replication, event streaming, and incremental data integration, keeping analytical stores, caches, and microservices consistent with operational systems.",
+  "domain": "data",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-integration",
+      "label": "Data Integration"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:event-streaming","label":"Event Streaming"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:database","label":"Database"},
-      {"@id":"urn:ngm:class:event-streaming","label":"Event Streaming"},
-      {"@id":"urn:ngm:class:apache-kafka","label":"Apache Kafka"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:database",
+        "label": "Database"
+      },
+      {
+        "@id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:data-replication","label":"Data Replication"},
-      {"@id":"urn:ngm:class:stream-processing","label":"Stream Processing"},
-      {"@id":"urn:ngm:class:event-sourcing","label":"Event Sourcing"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"},
-      {"@id":"urn:ngm:class:microservices","label":"Microservices"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:database","label":"Database"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:database",
+        "label": "Database"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:data-warehouse","label":"Data Warehouse"},
-      {"@id":"urn:ngm:class:data-lake","label":"Data Lake"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:stream-processing","label":"Stream Processing"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

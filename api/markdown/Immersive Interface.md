@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ImmersiveInterface
----
-
-# Immersive Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +76,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:immersive-interface:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b4e73b6916284387dadb8e9a0b89a82b0c65d39c9e91e33ea1d61e35d7f0b127"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Natural VR Interaction]]",
-      "resolved": "urn:visionflow:linked:natural-vr-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Human-Computer Interface]]",
-      "resolved": "urn:visionflow:owl:class:human-computer-interface",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - User interaction systems for VR, AR, and metaverse applications encompassing spatial user interfaces, haptic feedback devices, gesture recognition, voice control, and multimodal input methods that enable natural, intuitive engagement with virtual environments.

@@ -1,55 +1,106 @@
----
-public: true
----
-
-# Itil
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:itil", "@type":"Page", "title":"Itil", "vc:slug":"itil", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:itil",
+  "@type": "Page",
+  "title": "Itil",
+  "vc:slug": "itil",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:itil",
-  "@type":"Class",
-  "label":"Itil",
-  "definition":"ITIL (Information Technology Infrastructure Library) is a widely adopted framework of best practices for IT service management, describing how to plan, deliver, operate and continually improve technology services aligned to business value. It organises practices around a service value system spanning strategy, design, transition, operation and improvement, including disciplines such as incident, problem and change management. ITIL provides a common vocabulary and process structure for IT operations and governance.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:governance-framework","label":"Governance Framework"}],
-  "relations":{
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:standards-organization","label":"Standards Organization"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:itil",
+  "@type": "Class",
+  "label": "Itil",
+  "definition": "ITIL (Information Technology Infrastructure Library) is a widely adopted framework of best practices for IT service management, describing how to plan, deliver, operate and continually improve technology services aligned to business value. It organises practices around a service value system spanning strategy, design, transition, operation and improvement, including disciplines such as incident, problem and change management. ITIL provides a common vocabulary and process structure for IT operations and governance.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:devops","label":"DevOps"},
-      {"@id":"urn:ngm:class:site-reliability-engineering","label":"Site Reliability Engineering"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:incident-management","label":"Incident Management"},
-      {"@id":"urn:ngm:class:change-management","label":"Change Management"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      },
+      {
+        "@id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:governance","label":"Governance"},
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:monitoring","label":"Monitoring"},
-      {"@id":"urn:ngm:class:observability","label":"Observability"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:compliance","label":"Compliance"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:devops","label":"DevOps"},
-      {"@id":"urn:ngm:class:risk-management","label":"Risk Management"},
-      {"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

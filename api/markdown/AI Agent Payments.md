@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Agent Payments
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,20 +21,41 @@ public: true
   "domain": "finance",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:agentic-finance", "label": "Agentic Finance"}
+    {
+      "@id": "urn:ngm:class:agentic-finance",
+      "label": "Agentic Finance"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:micropayments", "label": "Micropayments"},
-      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-internet", "label": "Agentic Internet"},
-      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"}
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ]
   },
   "quality": 0.8

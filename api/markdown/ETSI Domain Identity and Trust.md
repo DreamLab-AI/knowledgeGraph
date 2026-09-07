@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ETSI Domain Identity and Trust
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,20 +99,44 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:did-nostr-identity", "label": "DID Nostr Identity"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-identity-framework", "label": "Digital Identity Framework"},
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}
+      {
+        "@id": "urn:ngm:class:digital-identity-framework",
+        "label": "Digital Identity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-domain-security-and-privacy", "label": "ETSI Domain Security and Privacy"}
+      {
+        "@id": "urn:ngm:class:etsi-domain-security-and-privacy",
+        "label": "ETSI Domain Security and Privacy"
+      }
     ]
   },
   "provenance": {
@@ -127,92 +146,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-identity-and-trust:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:83eb4634ac30dc414d01000d07cc8af5c27dc5a4fa1de1a2877a6ce148c49920"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BiometricAuthentication]]",
-      "resolved": "urn:visionflow:linked:biometric-authentication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DecentralisedIdentity]]",
-      "resolved": "urn:visionflow:linked:decentralised-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[eIDAS]]",
-      "resolved": "urn:visionflow:linked:e-idas",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI]]",
-      "resolved": "urn:visionflow:linked:etsi",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ETSI GR MEC 032]]",
-      "resolved": "urn:visionflow:linked:etsi-gr-mec-032",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 24760]]",
-      "resolved": "urn:visionflow:linked:iso-iec-24760",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C DID Core]]",
-      "resolved": "urn:visionflow:linked:w3-c-did-core",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ZeroTrustArchitecture]]",
-      "resolved": "urn:visionflow:linked:zero-trust-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DID Nostr Identity]]",
-      "resolved": "urn:visionflow:owl:class:did-nostr-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalIdentity]]",
-      "resolved": "urn:visionflow:owl:class:digital-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VerifiableCredentials]]",
-      "resolved": "urn:visionflow:owl:class:verifiable-credentials",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[VirtualEnvironment|virtual environments]]",
-      "resolved": "urn:visionflow:owl:class:virtual-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An [[ETSI]] governance domain establishing identity management, authentication, and trust infrastructure for [[VirtualEnvironment|virtual environments]]. This domain integrates [[DigitalIdentity]], [[VerifiableCredentials]], [[ZeroTrustArchitecture]], [[BiometricAuthentication]], and [[DecentralisedIdentity]] to enable secure, privacy-respecting identity assurance across distributed metaverse platforms.

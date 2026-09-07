@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Clarity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -52,7 +47,7 @@ public: true
   "@id": "urn:ngm:class:clarity",
   "@type": "Class",
   "label": "Clarity",
-  "definition": "Clarity is a decidable smart contract language designed so that contract behaviour can be analysed before execution, with no compilation step and explicit handling of conditions that could otherwise fail silently.",
+  "definition": "Clarity is a decidable smart contract language designed so that contract behaviour can be analysed before execution, with no compilation step and explicit handling of conditions that [private] otherwise fail silently.",
   "domain": "metaverse",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -85,49 +80,8 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:clarity:261b152862d1",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2a0cb15fb9431f9f3c074eff284bf7041af0aa4980f7001405a14a5161ad43a0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:linked:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Verifiable Computation]]",
-      "resolved": "urn:visionflow:linked:verifiable-computation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
-  - Clarity is a decidable smart contract language designed so that contract behaviour can be analysed before execution, with no compilation step and explicit handling of conditions that could otherwise fail silently.
+  - Clarity is a decidable smart contract language designed so that contract behaviour can be analysed before execution, with no compilation step and explicit handling of conditions that [private] otherwise fail silently.
 
 - ### Semantic Classification
   - owl-class:: metaverse:Clarity

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Toucan Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:toucan-protocol:c2abe9b754a2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e2ffc1ce69dd6b412b7d9675eb18d709e2aa1bb34a595d882a1a0736eadacca1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Credits]]",
-      "resolved": "urn:visionflow:linked:carbon-credits",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Voluntary Carbon Market]]",
-      "resolved": "urn:visionflow:linked:voluntary-carbon-market",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Accounting]]",
-      "resolved": "urn:visionflow:linked:carbon-accounting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Markets]]",
-      "resolved": "urn:visionflow:linked:carbon-markets",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A blockchain protocol that brings voluntary carbon market credits on-chain as tokens, intended to make carbon offsets tradeable and composable within decentralised finance.

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Ca Browser Forum
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:ca-browser-forum", "@type":"Page", "title":"Ca Browser Forum", "vc:slug":"ca-browser-forum", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:ca-browser-forum",
+  "@type": "Page",
+  "title": "Ca Browser Forum",
+  "vc:slug": "ca-browser-forum",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,42 +20,104 @@ public: true
   "definition": "The CA/Browser Forum (CA/B Forum) is a voluntary industry consortium of Certification Authorities (CAs), web browser vendors, and other relying parties that collaboratively develops and enforces minimum standards for the issuance and management of X.509 digital certificates used in TLS/HTTPS, code signing, and S/MIME email. Its Baseline Requirements documents define mandatory technical and procedural controls that CAs must meet to remain trusted by member browsers such as Chrome, Firefox, Safari, and Edge. Compliance is a prerequisite for inclusion in browser root stores, giving the Forum significant de facto regulatory power over internet PKI.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:security", "label": "Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
     "governs": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:web-security", "label": "Web Security"},
-      {"@id": "urn:ngm:class:https", "label": "HTTPS"},
-      {"@id": "urn:ngm:class:code-signing", "label": "Code Signing"}
+      {
+        "@id": "urn:ngm:class:web-security",
+        "label": "Web Security"
+      },
+      {
+        "@id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:root-store", "label": "Root Store"},
-      {"@id": "urn:ngm:class:x509", "label": "X.509"},
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"},
-      {"@id": "urn:ngm:class:extended-validation", "label": "Extended Validation"}
+      {
+        "@id": "urn:ngm:class:root-store",
+        "label": "Root Store"
+      },
+      {
+        "@id": "urn:ngm:class:x509",
+        "label": "X.509"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:extended-validation",
+        "label": "Extended Validation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:audit-compliance", "label": "Audit Compliance"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:audit-compliance",
+        "label": "Audit Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:internet-security", "label": "Internet Security"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:internet-security",
+        "label": "Internet Security"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:w3-c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ]
   },
   "quality": 0.62,

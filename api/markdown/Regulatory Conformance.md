@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Regulatory Conformance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Regulatory conformance is the demonstrable state of an organisation's systems and processes meeting the legal and regulatory requirements applicable to its domain. It is evidenced through controls, documentation, and audits that map obligations to operational practice. For AI and data systems, conformance increasingly covers risk classification, transparency, and accountability mandates.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
     ]
   },
   "quality": 0.72

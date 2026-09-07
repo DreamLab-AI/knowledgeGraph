@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0094 power and force limiting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,52 +60,56 @@ public: true
   },
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"},
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"}
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop", "label": "rb 0091 safety rated monitored stop"},
-      {"@id": "urn:ngm:class:rb-0092-protective-stop", "label": "rb 0092 protective stop"},
-      {"@id": "urn:ngm:class:rb-0093-speed-limitation", "label": "rb 0093 speed limitation"},
-      {"@id": "urn:ngm:class:rb-0089-risk-assessment", "label": "rb 0089 risk assessment"},
-      {"@id": "urn:ngm:class:cobot-safety-levels", "label": "Cobot Safety Levels"}
+      {
+        "@id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
+        "label": "rb 0091 safety rated monitored stop"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0092-protective-stop",
+        "label": "rb 0092 protective stop"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0093-speed-limitation",
+        "label": "rb 0093 speed limitation"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0089-risk-assessment",
+        "label": "rb 0089 risk assessment"
+      },
+      {
+        "@id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"}
+      {
+        "@id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:rb-0057-admittance-control", "label": "rb 0057 admittance control"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0057-admittance-control",
+        "label": "rb 0057 admittance control"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0094-power-and-force-limiting:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:71da7af2cb5490646fcab9e5df266884af4308c157f2fbbcd9d463f75cc2e4f0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Power and Force Limiting** (PFL) is a collaborative application safety mode in which the robot's mechanical power, force, and momentum are continuously constrained so that any contact with a human remains below biomechanical injury thresholds. It is now defined in ISO 10218-2:2025, which superseded and consolidated ISO/TS 15066:2016. Unlike speed-and-separation monitoring, PFL allows direct physical contact by ensuring that contact forces can never exceed prescribed quasi-static and transient limits.

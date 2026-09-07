@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gradle
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Gradle is an open-source build-automation tool that uses a directed acyclic graph of tasks to compile, test, and package software, primarily for JVM languages such as Java, Kotlin, and Groovy. Its build scripts are written as a domain-specific language in Groovy or Kotlin, and it supports incremental builds, dependency management, and a build cache for speed. It is widely used in enterprise and Android development, including blockchain platforms built on the JVM.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:r3-corda", "label": "R3 Corda"}, {"@id": "urn:ngm:class:kotlin", "label": "Kotlin"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      },
+      {
+        "@id": "urn:ngm:class:kotlin",
+        "label": "Kotlin"
+      }
+    ]
   },
   "quality": 0.72
 }

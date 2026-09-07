@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Laser Scanner
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -94,32 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:laser-scanner:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d4eed809e1057cdce52030f9016fa0d1596780aa7b589debd583eb1560945574"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Laser Scanner** - A sensor that emits laser pulses and measures the time-of-flight or phase-shift of the returned signal to compute precise distance measurements across a scene, generating dense point clouds. In robotics and spatial computing, laser scanners serve as primary perception instruments for environment mapping, obstacle detection, and the construction of digital twins via LiDAR-based SLAM pipelines.

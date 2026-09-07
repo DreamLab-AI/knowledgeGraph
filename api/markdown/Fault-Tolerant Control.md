@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Fault-Tolerant Control
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

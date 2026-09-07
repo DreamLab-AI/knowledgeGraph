@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Merkle-Damgard Construction
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

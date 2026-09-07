@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Agent Tool Selection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-agent-tool-selection",
   "title": "AI Agent Tool Selection",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Software Commoditization", "Vendor-Customer Dynamics"],
+  "vc:outboundWikilinks": [
+    "Software Commoditization",
+    "Vendor-Customer Dynamics"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent",
+      "label": "AI Agent"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}, {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Persistent Memory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Persistent Memory (PMEM) is a class of byte-addressable, non-volatile storage technology that occupies the memory bus and exposes its capacity directly to processor load/store instructions, combining the persistence of storage media with latency approaching that of DRAM. It sits in a new tier of the memory hierarchy between volatile DRAM and block-accessed SSDs, enabling applications to retain state across power cycles without the overhead of traditional I/O system calls.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-persistence", "label": "Data Persistence"},
-      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
     ]
   },
   "quality": 0.8

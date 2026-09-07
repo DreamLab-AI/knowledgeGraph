@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Remote Communication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,17 +51,38 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:distributed-work", "label": "Distributed Work"},
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
     ]
   },
   "provenance": {
@@ -76,32 +92,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:remote-communication:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:27eeddef6a8f9289971fc00f299c72200e35dfb9eaa1c5c85b2c860eaed96f19"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Remote Communication encompasses the protocols, platforms, and practices that enable synchronous and asynchronous exchange of information between geographically distributed participants. It spans text, voice, video, and immersive modalities, and underpins distributed work, telecollaboration, and telepresence systems by abstracting physical distance through networked infrastructure.

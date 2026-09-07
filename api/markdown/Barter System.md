@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Barter System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -121,67 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:barter-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fab869ae6ba641adae4927e9c59a8f9ba7b4b8ea891b481a452572c9979c155c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Exchange]]",
-      "resolved": "urn:visionflow:linked:asset-exchange",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Matching Algorithm]]",
-      "resolved": "urn:visionflow:linked:matching-algorithm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Peer-to-Peer Trading]]",
-      "resolved": "urn:visionflow:linked:peer-to-peer-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Trust Mechanism]]",
-      "resolved": "urn:visionflow:linked:trust-mechanism",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Exchange Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:exchange-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contracts]]",
-      "resolved": "urn:visionflow:owl:class:smart-contracts",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A decentralized exchange mechanism enabling peer-to-peer trading of goods, services, or digital assets without monetary intermediaries, enhanced in digital contexts through blockchain-based matching algorithms and smart contracts that solve the traditional "double coincidence of wants" problem.

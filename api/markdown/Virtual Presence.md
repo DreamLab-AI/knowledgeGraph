@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Presence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -66,7 +61,10 @@ public: true
   },
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"}
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
     ],
     "requires": [
       {
@@ -107,37 +105,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-presence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c8b0a9d349becd1d6bb23e28bdeb6ef4827518a9fb34436618ddb07ac481bfd0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telepresence]]",
-      "resolved": "urn:visionflow:owl:class:telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The psychological experience of being there within a virtual place or situation, encompassing spatial presence (sense of location), social presence (connection with others), and self-presence (embodiment in virtual form), achieved through telepresence technologies and immersive environments.

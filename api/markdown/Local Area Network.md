@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Local Area Network
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,47 +20,122 @@ public: true
   "definition": "A local area network (LAN) is a communications network that interconnects devices within a limited geographic area such as a building, campus, or data centre floor, typically under a single administrative domain. LANs provide high-bandwidth, low-latency connectivity enabling resource sharing, collaborative computing, and access to shared infrastructure services. Modern LANs are predominantly implemented using Ethernet (IEEE 802.3) and Wi-Fi (IEEE 802.11) technologies, with switching and VLAN segmentation providing logical isolation.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}, {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:networking-infrastructure",
+      "label": "Networking Infrastructure"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:wide-area-network", "label": "Wide Area Network"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:wide-area-network",
+        "label": "Wide Area Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:resource-sharing", "label": "Resource Sharing"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:network-attached-storage", "label": "Network Attached Storage"}
+      {
+        "@id": "urn:ngm:class:resource-sharing",
+        "label": "Resource Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:network-attached-storage",
+        "label": "Network Attached Storage"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:wide-area-network", "label": "Wide Area Network"},
-      {"@id": "urn:ngm:class:internet", "label": "Internet"}
+      {
+        "@id": "urn:ngm:class:wide-area-network",
+        "label": "Wide Area Network"
+      },
+      {
+        "@id": "urn:ngm:class:internet",
+        "label": "Internet"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:network-switch", "label": "Network Switch"},
-      {"@id": "urn:ngm:class:wireless-access-point", "label": "Wireless Access Point"},
-      {"@id": "urn:ngm:class:network-router", "label": "Network Router"}
+      {
+        "@id": "urn:ngm:class:network-switch",
+        "label": "Network Switch"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-access-point",
+        "label": "Wireless Access Point"
+      },
+      {
+        "@id": "urn:ngm:class:network-router",
+        "label": "Network Router"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ethernet", "label": "Ethernet"},
-      {"@id": "urn:ngm:class:wi-fi", "label": "Wi-Fi"},
-      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"}
+      {
+        "@id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "@id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      },
+      {
+        "@id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-802-x", "label": "IEEE 802"}
+      {
+        "@id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-local-area-network", "label": "Virtual Local Area Network"},
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+      {
+        "@id": "urn:ngm:class:virtual-local-area-network",
+        "label": "Virtual Local Area Network"
+      },
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:wide-area-network", "label": "Wide Area Network"},
-      {"@id": "urn:ngm:class:metropolitan-area-network", "label": "Metropolitan Area Network"}
+      {
+        "@id": "urn:ngm:class:wide-area-network",
+        "label": "Wide Area Network"
+      },
+      {
+        "@id": "urn:ngm:class:metropolitan-area-network",
+        "label": "Metropolitan Area Network"
+      }
     ]
   },
   "quality": 0.62,

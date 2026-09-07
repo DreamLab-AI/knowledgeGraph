@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Algorithmic Capture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,28 @@ public: true
   "definition": "Algorithmic Capture describes the process by which recommendation and ranking algorithms come to dominate the flow of attention, shaping what content people see and produce until human discretion is largely supplanted. By optimizing for engagement, these systems can homogenize discourse, amplify synthetic or low-quality content, and entrench platform control over information ecosystems. It is a central mechanism in narratives about the decline and automation of the open internet.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:death-of-the-internet", "label": "Death of the Internet"},
-      {"@id": "urn:ngm:class:algorithmic-governance", "label": "Algorithmic Governance"}
+      {
+        "@id": "urn:ngm:class:death-of-the-internet",
+        "label": "Death of the Internet"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-governance",
+        "label": "Algorithmic Governance"
+      }
     ]
   },
   "quality": 0.72
 }
 ```
+
 - ### Definition
   - Algorithmic Capture is the takeover of attention and content flows by engagement-optimizing algorithms. It is a constituent mechanism of the [[Death of the Internet]] thesis and a form of [[Algorithmic Governance]] over discourse.
 - ### Content

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Lies Damn Lies and Statistics]]
-# AI Benchmark Epistemological Critique
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,12 +47,24 @@ elevatedFrom:: [[Lies Damn Lies and Statistics]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:bias", "label": "Bias"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "quality": 0.35,
@@ -69,32 +75,6 @@ elevatedFrom:: [[Lies Damn Lies and Statistics]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lies-damn-lies-and-statistics:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8d16e80cd0ecc86305f6a785b914ff9329859f551841e26a9f48793a3394ca69"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A critical epistemological lens applied to AI benchmark claims, model capability assessments, and statistical presentations that may mislead through selective metrics, dataset contamination, cherry-picked results, or hallucination. The page collects resources and reasoning for evaluating AI performance claims with rigour, highlighting how large language models can generate plausible but false outputs that resemble statistical truth.

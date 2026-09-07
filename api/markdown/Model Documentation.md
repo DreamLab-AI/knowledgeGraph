@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Documentation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Model documentation is the structured recording of a machine learning model's intended use, training data, performance, limitations, and ethical considerations, typically through artefacts such as model cards and datasheets. It supports transparency, accountability, and informed deployment decisions for downstream users and regulators. It is increasingly required by AI governance frameworks and procurement standards.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:algorithmic-transparency-index", "label": "Algorithmic Transparency Index"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      }
     ]
   },
   "quality": 0.72

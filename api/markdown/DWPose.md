@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DWPose
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,49 +7,178 @@ public: true
   "title": "DWPose",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:pose-estimation", "vc:label": "Pose Estimation"},
-    {"@id": "urn:visionflow:linked:control-net-and-similar-spatial-conditioning-systems", "vc:label": "ControlNet and Similar Spatial Conditioning Systems"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:openpose", "vc:label": "OpenPose"},
-    {"@id": "urn:visionflow:linked:rtmpose", "vc:label": "RTMPose"},
-    {"@id": "urn:visionflow:linked:mmpose", "vc:label": "MMPose"},
-    {"@id": "urn:visionflow:linked:knowledge-distillation", "vc:label": "Knowledge Distillation"},
-    {"@id": "urn:visionflow:linked:coco-wholebody", "vc:label": "COCO WholeBody"},
-    {"@id": "urn:visionflow:linked:stable-diffusion", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:video-generation", "vc:label": "Video Generation"},
-    {"@id": "urn:visionflow:linked:human-body-model", "vc:label": "Human Body Model"},
-    {"@id": "urn:visionflow:linked:keypoint-detection", "vc:label": "Keypoint Detection"},
-    {"@id": "urn:visionflow:linked:skeleton-map", "vc:label": "Skeleton Map"},
-    {"@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:character-animation", "vc:label": "Character Animation"},
-    {"@id": "urn:visionflow:linked:gesture-recognition", "vc:label": "Gesture Recognition"},
-    {"@id": "urn:visionflow:linked:digital-human-technology", "vc:label": "Digital Human Technology"},
-    {"@id": "urn:visionflow:linked:controlnet-conditioning", "vc:label": "ControlNet Conditioning"},
-    {"@id": "urn:visionflow:linked:animate-diff", "vc:label": "AnimateDiff"},
-    {"@id": "urn:visionflow:linked:animate-anyone", "vc:label": "AnimateAnyone"},
-    {"@id": "urn:visionflow:linked:comfyui", "vc:label": "ComfyUI"},
-    {"@id": "urn:visionflow:linked:automatic1111", "vc:label": "Automatic1111"},
-    {"@id": "urn:visionflow:linked:onnx", "vc:label": "ONNX"},
-    {"@id": "urn:visionflow:linked:vitpose", "vc:label": "ViTPose"},
-    {"@id": "urn:visionflow:linked:mediapipe", "vc:label": "MediaPipe"},
-    {"@id": "urn:visionflow:linked:action-recognition", "vc:label": "Action Recognition"},
-    {"@id": "urn:visionflow:linked:augmented-reality", "vc:label": "Augmented Reality"},
-    {"@id": "urn:visionflow:linked:sports-analytics", "vc:label": "Sports Analytics"},
-    {"@id": "urn:visionflow:linked:motion-capture", "vc:label": "Motion Capture"},
-    {"@id": "urn:visionflow:linked:diffusion-transformer", "vc:label": "Diffusion Transformer"},
-    {"@id": "urn:visionflow:linked:sdpose", "vc:label": "SDPose"},
-    {"@id": "urn:visionflow:linked:ai-perception-domain", "vc:label": "AIPerceptionDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:hugging-face-hub", "vc:label": "Hugging Face Hub"},
-    {"@id": "urn:visionflow:linked:depth-estimation", "vc:label": "Depth Estimation"},
-    {"@id": "urn:visionflow:linked:edge-detection", "vc:label": "Edge Detection"},
-    {"@id": "urn:visionflow:linked:smpl", "vc:label": "SMPL"},
-    {"@id": "urn:visionflow:owl:class:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:owl:class:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:application-layer", "vc:label": "ApplicationLayer"}
+    {
+      "@id": "urn:visionflow:linked:pose-estimation",
+      "vc:label": "Pose Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:control-net-and-similar-spatial-conditioning-systems",
+      "vc:label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:openpose",
+      "vc:label": "OpenPose"
+    },
+    {
+      "@id": "urn:visionflow:linked:rtmpose",
+      "vc:label": "RTMPose"
+    },
+    {
+      "@id": "urn:visionflow:linked:mmpose",
+      "vc:label": "MMPose"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-distillation",
+      "vc:label": "Knowledge Distillation"
+    },
+    {
+      "@id": "urn:visionflow:linked:coco-wholebody",
+      "vc:label": "COCO WholeBody"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-diffusion",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-generation",
+      "vc:label": "Video Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-body-model",
+      "vc:label": "Human Body Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:keypoint-detection",
+      "vc:label": "Keypoint Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:skeleton-map",
+      "vc:label": "Skeleton Map"
+    },
+    {
+      "@id": "urn:visionflow:linked:convolutional-neural-network",
+      "vc:label": "Convolutional Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:character-animation",
+      "vc:label": "Character Animation"
+    },
+    {
+      "@id": "urn:visionflow:linked:gesture-recognition",
+      "vc:label": "Gesture Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-human-technology",
+      "vc:label": "Digital Human Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:controlnet-conditioning",
+      "vc:label": "ControlNet Conditioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:animate-diff",
+      "vc:label": "AnimateDiff"
+    },
+    {
+      "@id": "urn:visionflow:linked:animate-anyone",
+      "vc:label": "AnimateAnyone"
+    },
+    {
+      "@id": "urn:visionflow:linked:comfyui",
+      "vc:label": "ComfyUI"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic1111",
+      "vc:label": "Automatic1111"
+    },
+    {
+      "@id": "urn:visionflow:linked:onnx",
+      "vc:label": "ONNX"
+    },
+    {
+      "@id": "urn:visionflow:linked:vitpose",
+      "vc:label": "ViTPose"
+    },
+    {
+      "@id": "urn:visionflow:linked:mediapipe",
+      "vc:label": "MediaPipe"
+    },
+    {
+      "@id": "urn:visionflow:linked:action-recognition",
+      "vc:label": "Action Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:augmented-reality",
+      "vc:label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:visionflow:linked:sports-analytics",
+      "vc:label": "Sports Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:motion-capture",
+      "vc:label": "Motion Capture"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-transformer",
+      "vc:label": "Diffusion Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:sdpose",
+      "vc:label": "SDPose"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-perception-domain",
+      "vc:label": "AIPerceptionDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:hugging-face-hub",
+      "vc:label": "Hugging Face Hub"
+    },
+    {
+      "@id": "urn:visionflow:linked:depth-estimation",
+      "vc:label": "Depth Estimation"
+    },
+    {
+      "@id": "urn:visionflow:linked:edge-detection",
+      "vc:label": "Edge Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:smpl",
+      "vc:label": "SMPL"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:application-layer",
+      "vc:label": "ApplicationLayer"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -70,53 +194,146 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-    {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "@id": "urn:ngm:class:pose-estimation",
+      "label": "Pose Estimation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:keypoint-detection", "label": "Keypoint Detection"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:skeleton-map", "label": "Skeleton Map"},
-      {"@id": "urn:ngm:class:human-body-model", "label": "Human Body Model"}
+      {
+        "@id": "urn:ngm:class:keypoint-detection",
+        "label": "Keypoint Detection"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:skeleton-map",
+        "label": "Skeleton Map"
+      },
+      {
+        "@id": "urn:ngm:class:human-body-model",
+        "label": "Human Body Model"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rtmpose", "label": "RTMPose"},
-      {"@id": "urn:ngm:class:mmpose", "label": "MMPose"},
-      {"@id": "urn:ngm:class:coco-wholebody", "label": "COCO WholeBody"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {
+        "@id": "urn:ngm:class:rtmpose",
+        "label": "RTMPose"
+      },
+      {
+        "@id": "urn:ngm:class:mmpose",
+        "label": "MMPose"
+      },
+      {
+        "@id": "urn:ngm:class:coco-wholebody",
+        "label": "COCO WholeBody"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems", "label": "ControlNet and Similar Spatial Conditioning Systems"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:character-animation", "label": "Character Animation"},
-      {"@id": "urn:ngm:class:gesture-recognition", "label": "Gesture Recognition"},
-      {"@id": "urn:ngm:class:action-recognition", "label": "Action Recognition"}
+      {
+        "@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
+        "label": "ControlNet and Similar Spatial Conditioning Systems"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:action-recognition",
+        "label": "Action Recognition"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:onnx", "label": "ONNX"},
-      {"@id": "urn:ngm:class:mmpose", "label": "MMPose"},
-      {"@id": "urn:ngm:class:coco-wholebody", "label": "COCO WholeBody"},
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"}
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "@id": "urn:ngm:class:mmpose",
+        "label": "MMPose"
+      },
+      {
+        "@id": "urn:ngm:class:coco-wholebody",
+        "label": "COCO WholeBody"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Image Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-pose", "label": "OpenPose"},
-      {"@id": "urn:ngm:class:vitpose", "label": "ViTPose"},
-      {"@id": "urn:ngm:class:mediapipe", "label": "MediaPipe"},
-      {"@id": "urn:ngm:class:sdpose", "label": "SDPose"},
-      {"@id": "urn:ngm:class:rtmpose", "label": "RTMPose"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:digital-human-technology", "label": "Digital Human Technology"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:open-pose",
+        "label": "OpenPose"
+      },
+      {
+        "@id": "urn:ngm:class:vitpose",
+        "label": "ViTPose"
+      },
+      {
+        "@id": "urn:ngm:class:mediapipe",
+        "label": "MediaPipe"
+      },
+      {
+        "@id": "urn:ngm:class:sdpose",
+        "label": "SDPose"
+      },
+      {
+        "@id": "urn:ngm:class:rtmpose",
+        "label": "RTMPose"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:digital-human-technology",
+        "label": "Digital Human Technology"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",

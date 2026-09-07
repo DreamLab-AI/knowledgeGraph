@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Model Competition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-model-competition",
   "title": "AI Model Competition",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Gemini 3", "Large Language Model Performance"],
+  "vc:outboundWikilinks": [
+    "Gemini 3",
+    "Large Language Model Performance"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}, {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}, {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

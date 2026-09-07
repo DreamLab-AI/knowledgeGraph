@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Sensor Housing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A sensor housing is the mechanical enclosure that protects a sensing element from environmental hazards such as moisture, dust, vibration, and electromagnetic interference while maintaining its measurement window. It defines mounting geometry, ingress protection rating, thermal management, and the optical or acoustic path to the sensed medium. It is a structural component of robotic and exteroceptive sensing assemblies.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:exteroceptive-sensor", "label": "Exteroceptive Sensor"}, {"@id": "urn:ngm:class:mechanical-component", "label": "Mechanical Component"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:exteroceptive-sensor",
+        "label": "Exteroceptive Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:mechanical-component",
+        "label": "Mechanical Component"
+      }
+    ]
   },
   "quality": 0.72
 }

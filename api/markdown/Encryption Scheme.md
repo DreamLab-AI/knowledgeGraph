@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Encryption Scheme
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "An Encryption Scheme is a cryptographic construction comprising key-generation, encryption, and decryption algorithms that together transform plaintext into ciphertext and back under a key. Schemes are categorised as symmetric (shared key, e.g. AES) or asymmetric (public/private key, e.g. RSA, ECC), and are evaluated by their security definitions such as semantic security. They are the building blocks of confidentiality in cryptographic protocols.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}, {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
   },
   "quality": 0.72
 }

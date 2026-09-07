@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Source AI Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "open-source-ai-models",
   "title": "Open Source AI Models",
   "vc:public": true,
-  "vc:outboundWikilinks": ["China AI Policy", "Open Claude"],
+  "vc:outboundWikilinks": [
+    "China AI Policy",
+    "Open Claude"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}, {"@id": "urn:ngm:class:open-claude", "label": "Open Claude"}, {"@id": "urn:ngm:class:meta-llama-model-family", "label": "Meta Llama Model Family"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:open-claude",
+        "label": "Open Claude"
+      },
+      {
+        "@id": "urn:ngm:class:meta-llama-model-family",
+        "label": "Meta Llama Model Family"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",
@@ -39,6 +55,6 @@ public: true
 ```
 
 - ### Overview
-  - **[Industry analysis]** Stanford Professor Grant Webster suggested that the rise of Open Claude could be a flashpoint for China's AI industry, potentially triggering a government rethink of the downsides of widely available open models due to privacy and security concerns. *(Source: Grant Webster, via AI Daily Brief, 2026-08-24)*
+  - **[Industry analysis]** Stanford Professor Grant Webster suggested that the rise of Open Claude [private] be a flashpoint for China's AI industry, potentially triggering a government rethink of the downsides of widely available open models due to privacy and security concerns. *(Source: Grant Webster, via AI Daily Brief, 2026-08-24)*
 - ### Relationships
 - ### Provenance

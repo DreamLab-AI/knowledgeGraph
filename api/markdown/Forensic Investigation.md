@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Forensic Investigation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,12 +20,49 @@ public: true
   "definition": "Forensic investigation is the systematic collection, preservation, examination, and analysis of evidence — digital, physical, or financial — using scientifically validated methods that maintain legal admissibility and chain of custody, with the purpose of reconstructing events, attributing responsibility, and supporting judicial or regulatory proceedings. In digital contexts it encompasses disk imaging, memory acquisition, network traffic analysis, and log correlation.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-forensics", "label": "Digital Forensics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-forensics",
+      "label": "Digital Forensics"
+    }
+  ],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:chain-of-custody", "label": "Chain of Custody"}, {"@id": "urn:ngm:class:evidence-collection", "label": "Evidence Collection"}],
-    "enables": [{"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}, {"@id": "urn:ngm:class:compliance", "label": "Compliance"}],
-    "relatedTo": [{"@id": "urn:ngm:class:digital-forensics-framework", "label": "Digital Forensics Framework"}, {"@id": "urn:ngm:class:digital-evidence-chain-of-custody", "label": "Digital Evidence Chain of Custody"}],
-    "supports": [{"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"}]
+    "uses": [
+      {
+        "@id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-collection",
+        "label": "Evidence Collection"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-forensics-framework",
+        "label": "Digital Forensics Framework"
+      },
+      {
+        "@id": "urn:ngm:class:digital-evidence-chain-of-custody",
+        "label": "Digital Evidence Chain of Custody"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -50,4 +82,3 @@ public: true
   - Enterprise forensic investigations increasingly involve cloud storage, SaaS logs, and ephemeral container workloads, challenging traditional disk-centric methodologies. Cloud providers offer legal hold and preservation order APIs, but log retention windows, jurisdictional data residency, and multi-tenancy complicate acquisition. Threat intelligence platforms integrate forensic indicators of compromise (IOCs) across organisational boundaries, enabling shared post-incident understanding without exposing sensitive case details.
 
   - In 2024–2025, AI-assisted triage tools are shortening investigation timelines by automatically clustering similar artefacts, surfacing anomalies in large log datasets, and generating draft report narratives. Simultaneously, adversarial anti-forensics techniques — log wiping, living-off-the-land attacks using native OS tools, and encrypted ephemeral channels — are raising the skill threshold for successful attribution. Regulatory mandates under NIS2 (EU) and the SEC's cybersecurity disclosure rules are driving investment in forensic readiness programmes across critical infrastructure sectors.
-

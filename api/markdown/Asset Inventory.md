@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Inventory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -119,6 +115,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Asset Inventory is the systematic, continuously maintained catalogue of all hardware, software, data stores, network devices and cloud resources within an organisation's environment. It establishes the authoritative record of what must be protected, forming the foundation for vulnerability management, configuration control and incident response. An accurate inventory enables defenders to scope attack surfaces, prioritise patching and detect unauthorised or rogue assets.
   - Related core concepts: [[Vulnerability Management]] [[Configuration Management]] [[Incident Response]] [[Threat Model]] [[Cybersecurity]]

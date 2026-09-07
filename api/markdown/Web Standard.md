@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Web Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -169,25 +164,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:web-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5ae547043e6fa56d394f48be32ef345f79ad63c5c9aefc67d3a9b2bb525de5db"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - A **Web Standard** is a normative technical specification, produced by recognised bodies such as the [[W3C]], [[WHATWG]], [[IETF]], or [[ECMA International]], that defines how [[HTML]], [[CSS]], [[JavaScript]], and associated [[Web API]]s must behave across all conformant [[Browser Engine]]s. Standards exist on a maturity ladder—from early Editor's Draft through Working Draft, Candidate Recommendation, and ultimately W3C Recommendation or WHATWG Living Standard—ensuring that implementations from different vendors remain interoperable. The defining characteristic of a Web Standard is its royalty-free, openly accessible nature, which underpins the [[Open Web Platform]] and distinguishes it from [[Proprietary Technology]].
 
@@ -297,6 +273,6 @@ public: true
     - The [[Interoperability]] of Web Standards is enforced through the web-platform-tests (WPT) project, a shared test suite run continuously by browser vendors.
 
 - ### Provenance
-  - sources:: W3C Process Document; WHATWG Living Standards; IETF RFC index; ECMA-262 specification; MDN Web Docs; Khronos WebGL/WebGPU registry
+  - sources:: W3C Process Document; WHATWG Living Standards; IETF RFC [private]; ECMA-262 specification; MDN Web Docs; Khronos WebGL/WebGPU registry
   - updated:: 2026-06-13
   - migration-date:: 2026-04-26T00:00:00Z

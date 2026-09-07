@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Frontier AI Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "frontier-ai-governance",
   "title": "Frontier AI Governance",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Safety Discourse", "Institutional Preparedness"],
+  "vc:outboundWikilinks": [
+    "AI Safety Discourse",
+    "Institutional Preparedness"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}, {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}, {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bias-Variance Tradeoff
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -13,43 +8,154 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:supervised-learning", "vc:label": "Supervised Learning"},
-    {"@id": "urn:visionflow:linked:overfitting", "vc:label": "Overfitting"},
-    {"@id": "urn:visionflow:linked:underfitting", "vc:label": "Underfitting"},
-    {"@id": "urn:visionflow:linked:model-complexity", "vc:label": "Model Complexity"},
-    {"@id": "urn:visionflow:linked:regularization", "vc:label": "Regularization"},
-    {"@id": "urn:visionflow:linked:cross-validation", "vc:label": "Cross-Validation"},
-    {"@id": "urn:visionflow:linked:ensemble-methods", "vc:label": "Ensemble Methods"},
-    {"@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation"},
-    {"@id": "urn:visionflow:linked:hyperparameter-tuning", "vc:label": "Hyperparameter Tuning"},
-    {"@id": "urn:visionflow:linked:statistical-learning-theory", "vc:label": "Statistical Learning Theory"},
-    {"@id": "urn:visionflow:linked:random-forest", "vc:label": "Random Forest"},
-    {"@id": "urn:visionflow:linked:gradient-boosting", "vc:label": "Gradient Boosting"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:double-descent", "vc:label": "Double Descent"},
-    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
-    {"@id": "urn:visionflow:linked:generalisation-error", "vc:label": "Generalisation Error"},
-    {"@id": "urn:visionflow:linked:model-selection", "vc:label": "Model Selection"},
-    {"@id": "urn:visionflow:linked:learning-curve", "vc:label": "Learning Curve"},
-    {"@id": "urn:visionflow:linked:bagging", "vc:label": "Bagging"},
-    {"@id": "urn:visionflow:linked:boosting", "vc:label": "Boosting"},
-    {"@id": "urn:visionflow:linked:dropout", "vc:label": "Dropout"},
-    {"@id": "urn:visionflow:linked:l1-regularization", "vc:label": "L1 Regularization"},
-    {"@id": "urn:visionflow:linked:l2-regularization", "vc:label": "L2 Regularization"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data"},
-    {"@id": "urn:visionflow:linked:decision-tree", "vc:label": "Decision Tree"},
-    {"@id": "urn:visionflow:linked:kernel-methods", "vc:label": "Kernel Methods"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:feature-selection", "vc:label": "Feature Selection"},
-    {"@id": "urn:visionflow:linked:dimensionality-reduction", "vc:label": "Dimensionality Reduction"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:vc-dimension", "vc:label": "VC Dimension"},
-    {"@id": "urn:visionflow:linked:pac-learning", "vc:label": "PAC Learning"},
-    {"@id": "urn:visionflow:linked:early-stopping", "vc:label": "Early Stopping"},
-    {"@id": "urn:visionflow:linked:interpolation-threshold", "vc:label": "Interpolation Threshold"},
-    {"@id": "urn:visionflow:linked:ml-grounded-domain", "vc:label": "MachineLearningDomain"},
-    {"@id": "urn:visionflow:linked:conceptual-layer", "vc:label": "ConceptualLayer"}
+    {
+      "@id": "urn:visionflow:linked:supervised-learning",
+      "vc:label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:overfitting",
+      "vc:label": "Overfitting"
+    },
+    {
+      "@id": "urn:visionflow:linked:underfitting",
+      "vc:label": "Underfitting"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-complexity",
+      "vc:label": "Model Complexity"
+    },
+    {
+      "@id": "urn:visionflow:linked:regularization",
+      "vc:label": "Regularization"
+    },
+    {
+      "@id": "urn:visionflow:linked:cross-validation",
+      "vc:label": "Cross-Validation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ensemble-methods",
+      "vc:label": "Ensemble Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-evaluation",
+      "vc:label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:visionflow:linked:hyperparameter-tuning",
+      "vc:label": "Hyperparameter Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistical-learning-theory",
+      "vc:label": "Statistical Learning Theory"
+    },
+    {
+      "@id": "urn:visionflow:linked:random-forest",
+      "vc:label": "Random Forest"
+    },
+    {
+      "@id": "urn:visionflow:linked:gradient-boosting",
+      "vc:label": "Gradient Boosting"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:double-descent",
+      "vc:label": "Double Descent"
+    },
+    {
+      "@id": "urn:visionflow:linked:loss-function",
+      "vc:label": "Loss Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:generalisation-error",
+      "vc:label": "Generalisation Error"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-selection",
+      "vc:label": "Model Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-curve",
+      "vc:label": "Learning Curve"
+    },
+    {
+      "@id": "urn:visionflow:linked:bagging",
+      "vc:label": "Bagging"
+    },
+    {
+      "@id": "urn:visionflow:linked:boosting",
+      "vc:label": "Boosting"
+    },
+    {
+      "@id": "urn:visionflow:linked:dropout",
+      "vc:label": "Dropout"
+    },
+    {
+      "@id": "urn:visionflow:linked:l1-regularization",
+      "vc:label": "L1 Regularization"
+    },
+    {
+      "@id": "urn:visionflow:linked:l2-regularization",
+      "vc:label": "L2 Regularization"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:decision-tree",
+      "vc:label": "Decision Tree"
+    },
+    {
+      "@id": "urn:visionflow:linked:kernel-methods",
+      "vc:label": "Kernel Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-selection",
+      "vc:label": "Feature Selection"
+    },
+    {
+      "@id": "urn:visionflow:linked:dimensionality-reduction",
+      "vc:label": "Dimensionality Reduction"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:vc-dimension",
+      "vc:label": "VC Dimension"
+    },
+    {
+      "@id": "urn:visionflow:linked:pac-learning",
+      "vc:label": "PAC Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:early-stopping",
+      "vc:label": "Early Stopping"
+    },
+    {
+      "@id": "urn:visionflow:linked:interpolation-threshold",
+      "vc:label": "Interpolation Threshold"
+    },
+    {
+      "@id": "urn:visionflow:linked:ml-grounded-domain",
+      "vc:label": "MachineLearningDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:conceptual-layer",
+      "vc:label": "ConceptualLayer"
+    }
   ]
 }
 ```

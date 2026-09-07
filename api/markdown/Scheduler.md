@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Scheduler
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:scheduler", "@type": "Page", "title": "Scheduler", "vc:slug": "scheduler", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:scheduler",
+  "@type": "Page",
+  "title": "Scheduler",
+  "vc:slug": "scheduler",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

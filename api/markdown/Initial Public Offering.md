@@ -1,39 +1,114 @@
----
-public: true
----
-
-# Initial Public Offering
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:initial-public-offering", "@type":"Page", "title":"Initial Public Offering", "vc:slug":"initial-public-offering", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:initial-public-offering",
+  "@type": "Page",
+  "title": "Initial Public Offering",
+  "vc:slug": "initial-public-offering",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:initial-public-offering",
-  "@type":"Class",
-  "label":"Initial Public Offering",
-  "definition":"An initial public offering (IPO) is the process by which a privately held company first sells its shares to the public on a regulated stock exchange, transitioning into a publicly traded entity. It is intermediated by investment banks that underwrite the issue, set a price range, and allocate shares to institutional and retail investors under securities regulation. In blockchain discourse the IPO serves as the regulated, equity-based reference point against which token-based fundraising mechanisms are contrasted.",
-  "domain":"blockchain",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:capital-markets","label":"Capital Markets"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:capital-markets","label":"Capital Markets"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:initial-coin-offering","label":"Initial Coin Offering"},{"@id":"urn:ngm:class:security-token-offering","label":"Security Token Offering"}],
-    "requires":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "relatedTo":[{"@id":"urn:ngm:class:venture-capital","label":"Venture Capital"},{"@id":"urn:ngm:class:crowdfunding","label":"Crowdfunding"}],
-    "dependsOn":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "enables":[{"@id":"urn:ngm:class:capital-markets","label":"Capital Markets"}],
-    "supports":[{"@id":"urn:ngm:class:venture-capital","label":"Venture Capital"}],
-    "uses":[{"@id":"urn:ngm:class:capital-markets","label":"Capital Markets"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:security-token-offering","label":"Security Token Offering"}],
-    "implements":[{"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"}],
-    "precedes":[{"@id":"urn:ngm:class:venture-capital","label":"Venture Capital"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:initial-public-offering",
+  "@type": "Class",
+  "label": "Initial Public Offering",
+  "definition": "An initial public offering (IPO) is the process by which a privately held company first sells its shares to the public on a regulated stock exchange, transitioning into a publicly traded entity. It is intermediated by investment banks that underwrite the issue, set a price range, and allocate shares to institutional and retail investors under securities regulation. In blockchain discourse the IPO serves as the regulated, equity-based reference point against which token-based fundraising mechanisms are contrasted.",
+  "domain": "blockchain",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:capital-markets",
+      "label": "Capital Markets"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "@id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "precedes": [
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

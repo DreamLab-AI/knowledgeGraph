@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ConceptualHierarchy
----
-
-# Conceptual Hierarchy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,16 +51,34 @@ aliases:
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"}
+      {
+        "@id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
     ]
   },
   "quality": 0.35,
@@ -78,37 +89,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:conceptual-hierarchy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:326226d737da2081e5cff55ed514c366ac54f74a44c105e3180aea9c65549749"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE RAS Ontology]]",
-      "resolved": "urn:visionflow:linked:ieee-ras-ontology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE/RSJ IROS]]",
-      "resolved": "urn:visionflow:linked:ieee-rsj-iros",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Conceptual Hierarchy is a structured taxonomic organisation of domain concepts into subsumption (is-a) and composition (part-of) relationships, enabling systematic knowledge representation, inheritance of properties, and semantic interoperability across robotic and autonomous systems. It supports automated reasoning, modular system design, and classification of new entities within standardised ontological frameworks.

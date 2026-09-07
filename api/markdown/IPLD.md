@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IPLD
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,38 @@ public: true
   "definition": "IPLD (InterPlanetary Linked Data) is a data model and set of specifications for building content-addressed, hash-linked data structures that interoperate across distributed systems. It defines how to represent linked data as directed acyclic graphs whose edges are content identifiers (CIDs), allowing any hash-linked structure — Git commits, blockchain blocks, IPFS files — to be traversed through a common addressing scheme. IPLD provides the data layer beneath IPFS and Filecoin, decoupling the logical structure of data from the protocol used to store or transport it.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:content-addressing",
+      "label": "Content Addressing"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:merkle-dag", "label": "Merkle DAG"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"}
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ]
   },
   "quality": 0.8

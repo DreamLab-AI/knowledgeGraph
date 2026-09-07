@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WCAG 2.2
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,20 +21,41 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:accessibility-standard", "label": "Accessibility Standard"}
+    {
+      "@id": "urn:ngm:class:accessibility-standard",
+      "label": "Accessibility Standard"
+    }
   ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:standards-conformance", "label": "Standards Conformance"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:standards-conformance",
+        "label": "Standards Conformance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:accessibility-audit-tool", "label": "Accessibility Audit Tool"},
-      {"@id": "urn:ngm:class:user-interface-standard", "label": "User Interface Standard"},
-      {"@id": "urn:ngm:class:accessibility-standards", "label": "Accessibility Standards"}
+      {
+        "@id": "urn:ngm:class:accessibility-audit-tool",
+        "label": "Accessibility Audit Tool"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface-standard",
+        "label": "User Interface Standard"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      }
     ]
   },
   "quality": 0.8

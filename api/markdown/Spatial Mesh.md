@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Mesh
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-mesh:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6ae410d414628592c62dbf681819f342cd2d84109d6b24d102045446fd8ba434"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AR Occlusion]]",
-      "resolved": "urn:visionflow:linked:ar-occlusion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Reconstruction]]",
-      "resolved": "urn:visionflow:owl:class:3-d-reconstruction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A three-dimensional geometric representation of real-world environments created through spatial mapping, where surfaces are reconstructed as interconnected polygonal meshes to enable accurate placement and occlusion of virtual objects in augmented reality applications.

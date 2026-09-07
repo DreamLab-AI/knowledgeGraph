@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Channel Coding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Channel coding is the branch of coding theory that adds controlled redundancy to transmitted data so that errors introduced by a noisy communication channel can be detected and corrected at the receiver. Techniques include block codes, convolutional codes, turbo codes, and LDPC codes, with forward error correction being its dominant application. It matters because it lets systems approach the Shannon channel capacity, trading bandwidth for reliability in wireless, storage, and deep-space links.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:forward-error-correction", "label": "Forward Error Correction"},
-      {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"}
+      {
+        "@id": "urn:ngm:class:forward-error-correction",
+        "label": "Forward Error Correction"
+      },
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
     ]
   },
   "quality": 0.72

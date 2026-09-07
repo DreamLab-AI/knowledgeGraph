@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Multilayer Perceptron
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:multilayer-perceptron", "@type": "Page", "title": "Multilayer Perceptron", "vc:slug": "multilayer-perceptron", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:multilayer-perceptron",
+  "@type": "Page",
+  "title": "Multilayer Perceptron",
+  "vc:slug": "multilayer-perceptron",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

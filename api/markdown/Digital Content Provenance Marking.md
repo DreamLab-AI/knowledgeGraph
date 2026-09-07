@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Watermarks]]
-# Digital Content Provenance Marking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,16 +42,34 @@ elevatedFrom:: [[Watermarks]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:transparency-oecd", "label": "Transparency (OECD)"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-oecd",
+        "label": "Transparency (OECD)"
+      }
     ]
   },
   "quality": 0.35,
@@ -68,26 +80,6 @@ elevatedFrom:: [[Watermarks]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:watermarks:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bb3b078f249d70a4efa5b90f63b5f35cc856f30d54719fb45b3985f86f651512"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Techniques for embedding imperceptible or visible signals into digital content—text, images, audio, or AI-generated outputs—to assert provenance, ownership, or authenticity. AI watermarking approaches include statistical token-distribution biasing for large language models and frequency-domain embedding for images, enabling detection of machine-generated content and supporting intellectual property protection and content provenance verification.

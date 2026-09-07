@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Asset Tracking
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

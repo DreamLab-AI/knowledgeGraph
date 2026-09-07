@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BIP-340 Schnorr Keypair
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

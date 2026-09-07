@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Boosting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -80,18 +75,36 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ]
   },
   "provenance": {
@@ -101,57 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:boosting:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e397cc85219a2e938825e87abb0da3aa7322aba01b7b4771484490256b5167f2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CatBoost]]",
-      "resolved": "urn:visionflow:linked:cat-boost",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[LightGBM]]",
-      "resolved": "urn:visionflow:linked:light-gbm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[XGBoost]]",
-      "resolved": "urn:visionflow:linked:xgboost",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accuracy]]",
-      "resolved": "urn:visionflow:owl:class:accuracy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bias]]",
-      "resolved": "urn:visionflow:owl:class:bias",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ensemble Methods]]",
-      "resolved": "urn:visionflow:owl:class:ensemble-methods",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A sequential ensemble learning technique that combines multiple weak learners into a strong predictor by iteratively training each new model to correct the errors of its predecessors. Instance weights are adjusted after each round so that misclassified examples receive more attention; the final prediction is a weighted vote across all weak learners. Key algorithms include AdaBoost, Gradient Boosting, XGBoost, LightGBM, and CatBoost.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Market Efficiency
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Market efficiency is the degree to which asset prices fully and rapidly reflect all available information, leaving no systematic opportunity for risk-adjusted excess returns. The efficient-market hypothesis frames it in weak, semi-strong, and strong forms according to the information set incorporated. Higher efficiency implies accurate price signals, lower transaction costs, and effective capital allocation.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:price-discovery", "label": "Price Discovery"}, {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ]
   },
   "quality": 0.72
 }

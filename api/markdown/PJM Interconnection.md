@@ -1,8 +1,3 @@
----
-public: true
----
-
-# PJM Interconnection
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "pjm-interconnection",
   "title": "PJM Interconnection",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Energy Infrastructure", "Energy Policy", "Grid Demand Forecast", "Wholesale Power Auction"],
+  "vc:outboundWikilinks": [
+    "Energy Infrastructure",
+    "Energy Policy",
+    "Grid Demand Forecast",
+    "Wholesale Power Auction"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:energy-infrastructure", "label": "Energy Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:energy-infrastructure",
+      "label": "Energy Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:energy-infrastructure", "label": "Energy Infrastructure"}, {"@id": "urn:ngm:class:networking", "label": "Networking"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:energy-infrastructure",
+        "label": "Energy Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

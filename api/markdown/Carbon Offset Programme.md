@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Offset Programme
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,21 +21,45 @@ public: true
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:carbon-offset-trading", "label": "Carbon Offset Trading"}
+    {
+      "@id": "urn:ngm:class:carbon-offset-trading",
+      "label": "Carbon Offset Trading"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
-      {"@id": "urn:ngm:class:carbon-registry", "label": "Carbon Registry"},
-      {"@id": "urn:ngm:class:carbon-offset-certificate", "label": "Carbon Offset Certificate"}
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset-certificate",
+        "label": "Carbon Offset Certificate"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:carbon-neutrality", "label": "Carbon Neutrality"},
-      {"@id": "urn:ngm:class:voluntary-carbon-market", "label": "Voluntary Carbon Market"}
+      {
+        "@id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "@id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:environmental-certificate", "label": "Environmental Certificate"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}
+      {
+        "@id": "urn:ngm:class:environmental-certificate",
+        "label": "Environmental Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
     ]
   },
   "quality": 0.8

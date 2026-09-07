@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Burn-and-Mint Bridge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,45 @@ public: true
   "definition": "A Burn-and-Mint Bridge is a cross-chain asset transfer mechanism in which tokens are irreversibly destroyed (burned) on the source blockchain and an equivalent quantity of canonical tokens is newly created (minted) on the destination blockchain, ensuring that the total circulating supply across chains remains constant. This contrasts with lock-and-mint approaches by eliminating custodial reserves, instead relying on protocol-level guarantees and verifiable burn proofs to authorise minting on the receiving chain.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
   "relations": {
-    "contrastsWith": [{"@id": "urn:ngm:class:lock-and-mint-bridge", "label": "Lock-and-Mint Bridge"}],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:lock-and-mint-bridge",
+        "label": "Lock-and-Mint Bridge"
+      }
+    ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"}
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
     ],
-    "relatedTo": [{"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -56,4 +78,3 @@ public: true
   - The most prominent production deployment of burn-and-mint is Circle's CCTP, which enables USDC to move natively between Ethereum, Arbitrum, Base, Optimism, Avalanche, and other EVM chains without wrapped token representations. This eliminates liquidity fragmentation caused by wrapped variants (e.g., USDC.e versus native USDC) and removes the need for liquidity provider incentives that lock-and-swap bridges require. The Cosmos IBC protocol's token transfer module also employs an equivalent mechanism: tokens are escrowed on IBC-connected chains only when bridging to non-IBC chains, and burned/minted when bridging between IBC-native chains.
 
   - In 2024–2025, burn-and-mint has become the preferred design for canonical token bridges operated by issuers themselves (stablecoins, governance tokens with controlled supply). The main limitation is that the issuer must control minting authority on each destination chain, making it unsuitable for permissionless bridging of arbitrary third-party assets. Research into decentralised minting authority using threshold cryptography and zero-knowledge proof attestations aims to extend the model to trustless settings, potentially enabling fully decentralised burn-and-mint bridges without reliance on a privileged minter role.
-

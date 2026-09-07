@@ -1,9 +1,3 @@
----
-public: true
----
-
-# One Hot Encoding
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

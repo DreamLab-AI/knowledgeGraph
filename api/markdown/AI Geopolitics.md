@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Geopolitics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "ai-geopolitics",
   "title": "AI Geopolitics",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Regulatory Strategy", "Tiered Model Access", "US Intelligence Advantage", "US-China AI Competition"],
+  "vc:outboundWikilinks": [
+    "Regulatory Strategy",
+    "Tiered Model Access",
+    "US Intelligence Advantage",
+    "US-China AI Competition"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-policy",
+      "label": "AI Policy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}, {"@id": "urn:ngm:class:china", "label": "China"}, {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:china",
+        "label": "China"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

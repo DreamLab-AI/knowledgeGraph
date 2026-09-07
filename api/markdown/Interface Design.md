@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interface Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -110,6 +106,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Interface design is the discipline of defining the boundaries, contracts, and points of interaction between components, systems, or between a system and its users. In software it encompasses both human-facing user interface design and machine-facing application programming interface design, focusing on clarity, consistency, and ease of correct use. Good interface design minimises coupling, communicates intent, and shapes how reliably and pleasantly the parts of a system can be combined or operated.
   - [[Infrastructure]] [[Interaction Design]] [[Prototyping]] [[Figma]] [[API Design]]

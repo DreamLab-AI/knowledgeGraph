@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Virtual-Physical Collision
----
-
-# Virtual Physical Collision
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -109,37 +102,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-physical-collision:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:26ac264334ea6ea4763b1969d6efe634217930b49cafa71eed4e24bbc547c70b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Physics Simulation]]",
-      "resolved": "urn:visionflow:owl:class:physics-simulation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The detection and simulation of contact between virtual objects and real-world elements in mixed reality environments, enabling realistic interactions, haptic feedback, and safety boundaries that prevent users from colliding with physical obstacles while immersed in virtual experiences.

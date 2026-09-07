@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TLS 1.3
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -165,4 +160,3 @@ public: true
   - The TLS 1.3 handshake requires only one round-trip (1-RTT) for a new connection and zero round-trips (0-RTT) for resumed sessions using pre-shared keys, halving or eliminating handshake latency relative to TLS 1.2. The handshake exclusively uses Diffie-Hellman key exchange (ECDHE with X25519, P-256, or FFDHE groups), eliminating static RSA key exchange and guaranteeing perfect forward secrecy. Supported cipher suites are restricted to three AEAD algorithms: AES-128-GCM, AES-256-GCM, and ChaCha20-Poly1305. Session tickets replace session IDs for resumption, and downgrade protection is built into the ServerHello random field.
   - TLS 1.3 is the security foundation for essentially all authenticated internet traffic: HTTPS, email (STARTTLS/SMTPS), LDAPS, database connections, and API calls. Its 0-RTT mode directly inspired QUIC's design, making TLS 1.3 integral to HTTP/3. The protocol's removal of obsolete cryptography has substantially reduced the attack surface for passive decryption and active downgrade attacks, and its mandatory forward secrecy means recorded traffic cannot be decrypted even if long-term keys are later compromised.
   - As of 2024–2025, TLS 1.3 accounts for over 90% of HTTPS connections observed by Cloudflare and Google, with TLS 1.2 persisting mainly for legacy enterprise systems. Post-quantum cryptography integration is the active frontier: IETF and NIST are standardising hybrid key exchange (X25519Kyber768, ML-KEM) for TLS 1.3 to maintain forward secrecy against future quantum adversaries. Several browsers and CDNs already ship experimental post-quantum TLS 1.3 support. RFC 8446bis (TLS 1.3 errata consolidation) is in progress, and TLS 1.3 is also the handshake layer for QUIC/HTTP3 deployments now covering over 30% of web traffic.
-

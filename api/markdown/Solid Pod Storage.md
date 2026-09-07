@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Solid Pod Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -112,67 +107,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:solid-pod-storage:4ad3b6ae36c8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b1fe400cee96fc094bd6277b3960b967e730ea39d3e3ef51ab29734c531e638b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Linked Data]]",
-      "resolved": "urn:visionflow:linked:linked-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RDF]]",
-      "resolved": "urn:visionflow:linked:rdf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[WebID]]",
-      "resolved": "urn:visionflow:linked:web-id",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Sovereignty]]",
-      "resolved": "urn:visionflow:linked:data-sovereignty",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Identity]]",
-      "resolved": "urn:visionflow:linked:decentralised-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Web Linked Data Standard]]",
-      "resolved": "urn:visionflow:linked:semantic-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self-Sovereign Identity]]",
-      "resolved": "urn:visionflow:linked:self-sovereign-identity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Distributed Systems Domain]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Solid Pod Storage refers to the personal online data stores used in the Solid project, a web specification initiated by Tim Berners-Lee for decentralising data ownership. A Pod is a user-controlled storage space that holds data as linked-data resources, with access governed by the user rather than the applications that consume it. Applications authenticate against a Pod and read or write data only with the owner's permission, separating data from the services built on top of it.

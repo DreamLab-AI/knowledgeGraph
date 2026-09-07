@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - OccupancyGrid
----
-
-# Occupancy Grid
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

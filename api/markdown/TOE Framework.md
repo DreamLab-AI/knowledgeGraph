@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TOE Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "The Technology-Organization-Environment (TOE) framework is an organisational-level theory explaining how a firm's technological context, organisational characteristics, and external environment jointly shape the adoption and assimilation of technological innovations. It is widely applied in information-systems research to model the determinants of enterprise uptake of emerging technologies such as AI and cloud computing.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
+    ]
   },
   "quality": 0.72
 }

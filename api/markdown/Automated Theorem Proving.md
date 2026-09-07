@@ -1,37 +1,110 @@
----
-public: true
----
-
-# Automated Theorem Proving
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:automated-theorem-proving", "@type":"Page", "title":"Automated Theorem Proving", "vc:slug":"automated-theorem-proving", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:automated-theorem-proving",
+  "@type": "Page",
+  "title": "Automated Theorem Proving",
+  "vc:slug": "automated-theorem-proving",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:automated-theorem-proving",
-  "@type":"Class",
-  "label":"Automated Theorem Proving",
-  "definition":"Automated theorem proving is the subfield of automated reasoning concerned with constructing formal proofs of mathematical or logical statements by machine. Given a set of axioms and a conjecture expressed in a formal logic, an automated theorem prover searches for a derivation that establishes the conjecture as a consequence of the axioms. Techniques span resolution, tableaux, term rewriting and decision procedures, and underpin formal verification, mathematics and AI reasoning.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:automated-reasoning","label":"Automated Reasoning"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:formal-verification","label":"Formal Verification"},{"@id":"urn:ngm:class:theorem-proving","label":"Theorem Proving"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:formal-verification","label":"Formal Verification"},{"@id":"urn:ngm:class:symbolic-ai","label":"Symbolic AI"}],
-    "partOf":[{"@id":"urn:ngm:class:automated-reasoning","label":"Automated Reasoning"}],
-    "uses":[{"@id":"urn:ngm:class:constraint-satisfaction","label":"Constraint Satisfaction"}],
-    "implements":[{"@id":"urn:ngm:class:theorem-proving","label":"Theorem Proving"}],
-    "requires":[{"@id":"urn:ngm:class:automated-reasoning","label":"Automated Reasoning"}],
-    "supports":[{"@id":"urn:ngm:class:formal-verification","label":"Formal Verification"}],
-    "relatedTo":[{"@id":"urn:ngm:class:symbolic-ai","label":"Symbolic AI"},{"@id":"urn:ngm:class:constraint-satisfaction","label":"Constraint Satisfaction"},{"@id":"urn:ngm:class:theorem-proving","label":"Theorem Proving"}],
-    "dependsOn":[{"@id":"urn:ngm:class:automated-reasoning","label":"Automated Reasoning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:automated-theorem-proving",
+  "@type": "Class",
+  "label": "Automated Theorem Proving",
+  "definition": "Automated theorem proving is the subfield of automated reasoning concerned with constructing formal proofs of mathematical or logical statements by machine. Given a set of axioms and a conjecture expressed in a formal logic, an automated theorem prover searches for a derivation that establishes the conjecture as a consequence of the axioms. Techniques span resolution, tableaux, term rewriting and decision procedures, and underpin formal verification, mathematics and AI reasoning.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:automated-reasoning",
+      "label": "Automated Reasoning"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "@id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

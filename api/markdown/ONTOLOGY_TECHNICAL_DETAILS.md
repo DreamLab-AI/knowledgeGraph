@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ONTOLOGY_TECHNICAL_DETAILS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -152,19 +147,40 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:data-structure", "label": "Data Structure"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:record-keeping-system", "label": "Record Keeping System"}
+      {
+        "@id": "urn:ngm:class:record-keeping-system",
+        "label": "Record Keeping System"
+      }
     ]
   },
   "provenance": {
@@ -174,157 +190,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ontology-technical-details:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fb65e711bc7dc77ba82c534c3e239964fb3323a6825e632846e14de443cc2808"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BC-0426-hyperledger-fabric]]",
-      "resolved": "urn:visionflow:linked:bc-0426-hyperledger-fabric",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0427-hyperledger-besu]]",
-      "resolved": "urn:visionflow:linked:bc-0427-hyperledger-besu",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0428-enterprise-blockchain-architecture]]",
-      "resolved": "urn:visionflow:linked:bc-0428-enterprise-blockchain-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0429-permissioned-blockchain]]",
-      "resolved": "urn:visionflow:linked:bc-0429-permissioned-blockchain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BC-0430-private-channels]]",
-      "resolved": "urn:visionflow:linked:bc-0430-private-channels",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[...]]",
-      "resolved": "urn:visionflow:linked:untitled",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Block]]",
-      "resolved": "urn:visionflow:owl:class:block",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic System]]",
-      "resolved": "urn:visionflow:owl:class:cryptographic-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Structure]]",
-      "resolved": "urn:visionflow:owl:class:data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Data Structure]]",
-      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DistributedDataStructure]]",
-      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Ledger]]",
-      "resolved": "urn:visionflow:owl:class:distributed-ledger",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Protocol]]",
-      "resolved": "urn:visionflow:owl:class:distributed-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed System]]",
-      "resolved": "urn:visionflow:owl:class:distributed-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Enterprise Blockchain Architecture]]",
-      "resolved": "urn:visionflow:owl:class:enterprise-blockchain-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hyperledger Besu]]",
-      "resolved": "urn:visionflow:owl:class:hyperledger-besu",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hyperledger Fabric]]",
-      "resolved": "urn:visionflow:owl:class:hyperledger-fabric",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mathematical Science]]",
-      "resolved": "urn:visionflow:owl:class:mathematical-science",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node]]",
-      "resolved": "urn:visionflow:owl:class:node",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Peer-to-Peer Network]]",
-      "resolved": "urn:visionflow:owl:class:peer-to-peer-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Permissioned Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:permissioned-blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Private Channels]]",
-      "resolved": "urn:visionflow:owl:class:private-channels",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Record-Keeping System]]",
-      "resolved": "urn:visionflow:owl:class:record-keeping-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transaction]]",
-      "resolved": "urn:visionflow:owl:class:transaction",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A meta-documentation node cataloguing the technical structure, bidirectional link patterns, missing parent audits, and inheritance statistics of the NarrativeGoldmine ontology graph. It serves as a diagnostic reference for ontology engineers, documenting cross-domain isolation rules, broken reference inventories, and recommended file structures for parent concept pages.

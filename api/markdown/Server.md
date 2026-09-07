@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Server
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,17 +7,43 @@ public: true
   "title": "Server",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:hardware", "vc:label": "Hardware"},
-    {"@id": "urn:visionflow:linked:data-centre", "vc:label": "Data Centre"},
-    {"@id": "urn:visionflow:linked:computing-infrastructure", "vc:label": "Computing Infrastructure"},
-    {"@id": "urn:visionflow:linked:power-supply", "vc:label": "Power Supply"},
-    {"@id": "urn:visionflow:linked:operating-system", "vc:label": "Operating System"},
-    {"@id": "urn:visionflow:linked:cloud-computing", "vc:label": "Cloud Computing"},
-    {"@id": "urn:visionflow:linked:networking", "vc:label": "Networking"}
+    {
+      "@id": "urn:visionflow:linked:hardware",
+      "vc:label": "Hardware"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-centre",
+      "vc:label": "Data Centre"
+    },
+    {
+      "@id": "urn:visionflow:linked:computing-infrastructure",
+      "vc:label": "Computing Infrastructure"
+    },
+    {
+      "@id": "urn:visionflow:linked:power-supply",
+      "vc:label": "Power Supply"
+    },
+    {
+      "@id": "urn:visionflow:linked:operating-system",
+      "vc:label": "Operating System"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-computing",
+      "vc:label": "Cloud Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:networking",
+      "vc:label": "Networking"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -41,20 +62,38 @@ public: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
-      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:power-supply", "label": "Power Supply"}
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"}
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:networking", "label": "Networking"}
+      {
+        "@id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
     ]
   },
   "quality": 0.8,

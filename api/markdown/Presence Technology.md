@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Presence Technology
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

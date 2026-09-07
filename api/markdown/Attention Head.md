@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Attention Head
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -105,42 +100,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:attention-head:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dcdbd328098edee2d2d33fbf810420849406a1c9ce00a5645a2e6c93541ce4b5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Head Gaze]]",
-      "resolved": "urn:visionflow:linked:head-gaze",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - One of multiple parallel attention mechanisms in multi-head attention, each potentially learning different types of relationships and patterns in the input sequence.
 
@@ -162,8 +121,8 @@ public: true
   - One of multiple parallel attention mechanisms in multi-head attention, each potentially learning different types of relationships and patterns in the input sequence.
 
 		- ### Initialize Project File
-			- Inside this folder, create a file named `index.html`.
-			- Open `index.html` in your preferred code editor.
+			- Inside this folder, create a file named `[private].html`.
+			- Open `[private].html` in your preferred code editor.
 			- Set up a basic HTML skeleton with the `<html>`, `<head>`, and `<body>` tags.
 
 		- #### **From non-verbal communication**
@@ -176,8 +135,8 @@ public: true
   - Exceptional space awareness.
 
 		- ### Initialize Project File
-			- Inside this folder, create a file named `index.html`.
-			- Open `index.html` in your preferred code editor.
+			- Inside this folder, create a file named `[private].html`.
+			- Open `[private].html` in your preferred code editor.
 			- Set up a basic HTML skeleton with the `<html>`, `<head>`, and `<body>` tags.
 
 		- #### **From non-verbal communication**
@@ -191,8 +150,8 @@ public: true
 
   - ## Prerequisites
 		- Before beginning, ensure you have:
-			- Inside this folder, create a file named `index.html`.
-			- Open `index.html` in your preferred code editor.
+			- Inside this folder, create a file named `[private].html`.
+			- Open `[private].html` in your preferred code editor.
 			- Set up a basic HTML skeleton with the `<html>`, `<head>`, and `<body>` tags.
 
 		- #### **From non-verbal communication**
@@ -206,8 +165,8 @@ public: true
 
   - ## Prerequisites
 		- Before beginning, ensure you have:
-			- Inside this folder, create a file named `index.html`.
-			- Open `index.html` in your preferred code editor.
+			- Inside this folder, create a file named `[private].html`.
+			- Open `[private].html` in your preferred code editor.
 			- Set up a basic HTML skeleton with the `<html>`, `<head>`, and `<body>` tags.
 
 		- #### **From non-verbal communication**
@@ -253,7 +212,7 @@ public: true
   (5)
 
   Data: How much data exists? How representative is it of what we’re
-  trying to model? Are there issues in how it is collected which could
+  trying to model? Are there issues in how it is collected which [private]
   impact the model? Is it likely to contain any missing values? Adoptance
   from users/customers Will it be easy to get people to use the AI in
   their business?

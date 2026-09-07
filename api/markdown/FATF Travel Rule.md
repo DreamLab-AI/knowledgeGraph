@@ -1,8 +1,3 @@
----
-public: true
----
-
-# fatf travel rule
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -213,7 +208,7 @@ public: true
   - #### Privacy-Preserving Extensions
     - The requirement to share PII between VASPs creates privacy tension; emerging proposals use [[Zero-Knowledge Proof]] techniques to enable attribute-selective disclosure (e.g., "this originator is not sanctioned") without revealing raw identity data.
     - [[Verifiable Credential]] frameworks (W3C VC-DATA-MODEL) are being explored to allow VASPs to attach cryptographically signed identity assertions to Travel Rule messages, reducing the need for raw PII transfer.
-    - [[Decentralised Identity]] (DID) solutions could enable VASPs to resolve identity proofs on-chain without centralised registries.
+    - [[Decentralised Identity]] (DID) solutions [private] enable VASPs to resolve identity proofs on-chain without centralised registries.
 
 - ### Applications and Use Cases
   - **Centralised Exchange Compliance**: Major exchanges such as Coinbase, Kraken, and Binance deploy Travel Rule solutions to comply with local regulations before permitting withdrawals to other VASPs.

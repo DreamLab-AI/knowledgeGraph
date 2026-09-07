@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Generator Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,4 +175,3 @@ public: true
   - Generator networks enabled a generation of creative AI applications: deepfakes (video face-swapping), style transfer between artistic styles, image inpainting and super-resolution, data augmentation for training other neural networks, and novel drug molecule generation. The text-to-image revolution of 2021-2023 — DALL-E, Stable Diffusion, Midjourney — migrated from GAN generators to diffusion-based denoising networks, which proved more training-stable and controllable for text-conditioned synthesis. Nevertheless, GAN generators remain competitive for video synthesis, 3D-aware generation, and real-time applications where diffusion's iterative inference is prohibitively slow.
 
   - By 2024-2025 generator networks are embedded in production creative tools across film visual effects, game asset generation, advertising, and fashion design. The distinction between generator networks (adversarial) and decoder networks (VAE) and denoising networks (diffusion) has become a design choice made relative to application requirements rather than a fundamental categorical boundary. Research frontiers include flow-matching generators for single-step synthesis, consistency models, and 4D (video + 3D) generators for immersive content creation at cinematographic quality in real time.
-

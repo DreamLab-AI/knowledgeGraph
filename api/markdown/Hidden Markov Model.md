@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Hidden Markov Model
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

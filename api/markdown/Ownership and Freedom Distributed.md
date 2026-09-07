@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ownership and Freedom Distributed
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,17 +59,38 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ownership-freedom-distributed", "label": "Ownership Freedom distributed"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"}
+      {
+        "@id": "urn:ngm:class:ownership-freedom-distributed",
+        "label": "Ownership Freedom distributed"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
     ]
   },
   "provenance": {
@@ -84,37 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ownership-and-freedom-distributed:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5987477f020d846b0e8446140396eb3dbc8e50cc6070dff9f3f13518f013e320"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaverse 101]]",
-      "resolved": "urn:visionflow:linked:metaverse-101",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The principle of distributing control and governance of digital assets or data across multiple participants rather than concentrating authority in a single entity. This encompasses decentralised identity, cryptographic ownership proofs, peer-to-peer governance mechanisms, and user-controlled data portability as foundational guarantees for sovereignty in metaverse and Web3 ecosystems.

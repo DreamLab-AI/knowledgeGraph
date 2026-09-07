@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Just-In-Time Compilation
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:just-in-time-compilation", "@type": "Page", "title": "Just-In-Time Compilation", "vc:slug": "just-in-time-compilation", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:just-in-time-compilation",
+  "@type": "Page",
+  "title": "Just-In-Time Compilation",
+  "vc:slug": "just-in-time-compilation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

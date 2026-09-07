@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersive Gaming
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:immersive-gaming:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:017394f0d26e93a21fb8ab35dbf94870ed99a9c5b70f6f43bd50ca1f63f1ca80"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[VR Gaming Experience]]",
-      "resolved": "urn:visionflow:linked:vr-gaming-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Gaming]]",
-      "resolved": "urn:visionflow:owl:class:digital-gaming",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Video gaming experiences enhanced through VR, AR, and metaverse technologies that place players within interactive 3D environments, enabling physical interaction, spatial awareness, and presence-based gameplay through advanced headsets, motion tracking, and haptic feedback systems.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Participation Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:participation-framework:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:89b9f88672b82e8d08f295e22edcf220360711bfcf0ebdb17761bd76792991c8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Inclusive Decision Making]]",
-      "resolved": "urn:visionflow:linked:inclusive-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Governance Framework]]",
-      "resolved": "urn:visionflow:owl:class:governance-framework",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A structured approach to designing stakeholder engagement processes that establish goals, principles, methods, and mechanisms for involving citizens, communities, or users in decision-making, governance, and collaborative activities.

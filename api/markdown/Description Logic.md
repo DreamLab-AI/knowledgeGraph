@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Description Logic
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -155,51 +150,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",
     "inferenceRule": "RelationEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:description-logic:ee5a2040e616",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:37ef9af6ddbf60246830b0e0feac5406c6d37b48b999548290a3512f4c525c86"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Set Theory]]",
-      "resolved": "urn:visionflow:linked:set-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OWL]]",
-      "resolved": "urn:visionflow:linked:owl",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Web Linked Data Standard]]",
-      "resolved": "urn:visionflow:linked:semantic-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ontology]]",
-      "resolved": "urn:visionflow:linked:ontology",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -426,7 +376,7 @@ public: true
 
     **Neurosymbolic integration**: The most dynamic application area in 2025–2026 is using DL reasoners as guardrails and validators for generative AI systems. The 2025 City University London / Alan Turing Institute publication "On the Potential of Logic and Reasoning in Neurosymbolic Systems Using OWL-Based Knowledge Graphs" (Journals of Artificial Intelligence Research, 2025) demonstrates that OWL DL reasoning can improve LLM output consistency and factual accuracy in enterprise knowledge graph retrieval settings. Enterprise agentic AI architectures increasingly route LLM-generated JSON-LD assertions through an OWL reasoner before committing them to the knowledge base.
 
-    **Formally verified reasoners**: The VEL project (2024–2025), using the Isabelle/HOL proof assistant, produced the first formally verified OWL 2 EL reasoner — a significant advance for safety-critical deployments in healthcare and legal contexts where reasoner bugs could have serious downstream consequences.
+    **Formally verified reasoners**: The VEL project (2024–2025), using the Isabelle/HOL proof assistant, produced the first formally verified OWL 2 EL reasoner — a significant advance for safety-critical deployments in healthcare and legal contexts where reasoner bugs [private] have serious downstream consequences.
 
     **LLM-DL benchmarking**: The DL-ReasonSuite benchmark (February 2026) revealed that leading LLMs remain unreliable at DL reasoning tasks, particularly complex subsumption inference chains and OWL syntax generation. This motivates hybrid architectures in which LLMs handle natural language understanding while DL reasoners handle formal inference — a division of cognitive labour that exploits the complementary strengths of both paradigms.
 

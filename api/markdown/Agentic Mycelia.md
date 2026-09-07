@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Agentic Mycelium
-  - AgenticMycelia
----
-
-# Agentic Mycelia
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -15,15 +7,42 @@ aliases:
   "title": "Agentic Mycelia",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    { "@id": "urn:visionflow:linked:scene-agent", "vc:label": "Scene Agent" },
-    { "@id": "urn:visionflow:linked:transfer-agent", "vc:label": "Transfer Agent" },
-    { "@id": "urn:visionflow:linked:onboarding-agent", "vc:label": "Onboarding Agent" },
-    { "@id": "urn:visionflow:linked:jurisdictional-agent", "vc:label": "Jurisdictional Agent" },
-    { "@id": "urn:visionflow:linked:living-contract", "vc:label": "Living Contract" },
-    { "@id": "urn:visionflow:owl:class:metaverse-architecture", "vc:label": "Metaverse Architecture" },
-    { "@id": "urn:visionflow:owl:class:interoperability", "vc:label": "Interoperability" },
-    { "@id": "urn:visionflow:owl:class:self-sovereign-identity", "vc:label": "Self-Sovereign Identity" },
-    { "@id": "urn:visionflow:linked:adaptable-governance", "vc:label": "Adaptable Governance" }
+    {
+      "@id": "urn:visionflow:linked:scene-agent",
+      "vc:label": "Scene Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-agent",
+      "vc:label": "Transfer Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:onboarding-agent",
+      "vc:label": "Onboarding Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:jurisdictional-agent",
+      "vc:label": "Jurisdictional Agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:living-contract",
+      "vc:label": "Living Contract"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:metaverse-architecture",
+      "vc:label": "Metaverse Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
+      "vc:label": "Self-Sovereign Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptable-governance",
+      "vc:label": "Adaptable Governance"
+    }
   ],
   "vc:schemaVersion": 2,
   "prov:wasAttributedTo": {
@@ -54,18 +73,42 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:scene-agent", "label": "Scene Agent" },
-      { "@id": "urn:ngm:class:transfer-agent", "label": "Transfer Agent" },
-      { "@id": "urn:ngm:class:onboarding-agent", "label": "Onboarding Agent" },
-      { "@id": "urn:ngm:class:jurisdictional-agent", "label": "Jurisdictional Agent" }
+      {
+        "@id": "urn:ngm:class:scene-agent",
+        "label": "Scene Agent"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-agent",
+        "label": "Transfer Agent"
+      },
+      {
+        "@id": "urn:ngm:class:onboarding-agent",
+        "label": "Onboarding Agent"
+      },
+      {
+        "@id": "urn:ngm:class:jurisdictional-agent",
+        "label": "Jurisdictional Agent"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:interoperability", "label": "Interoperability" },
-      { "@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity" },
-      { "@id": "urn:ngm:class:adaptable-governance", "label": "Adaptable Governance" }
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:adaptable-governance",
+        "label": "Adaptable Governance"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:living-contract", "label": "Living Contract" }
+      {
+        "@id": "urn:ngm:class:living-contract",
+        "label": "Living Contract"
+      }
     ]
   },
   "provenance": {

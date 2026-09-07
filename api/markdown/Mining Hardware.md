@@ -1,39 +1,134 @@
----
-public: true
----
-
-# Mining Hardware
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:mining-hardware", "@type":"Page", "title":"Mining Hardware", "vc:slug":"mining-hardware", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:mining-hardware",
+  "@type": "Page",
+  "title": "Mining Hardware",
+  "vc:slug": "mining-hardware",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:mining-hardware",
-  "@type":"Class",
-  "label":"Mining Hardware",
-  "definition":"Mining hardware is the specialised computing equipment used to perform the cryptographic work that secures proof-of-work blockchains, racing to find valid block hashes in exchange for block rewards. It has progressed from general-purpose CPUs and GPUs to dedicated application-specific integrated circuits (ASICs) optimised for a single hashing algorithm. The efficiency and concentration of this hardware shape network security, energy consumption, and mining centralisation.",
-  "domain":"blockchain",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:cryptocurrency-mining","label":"Cryptocurrency Mining"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:cryptocurrency-mining","label":"Cryptocurrency Mining"},{"@id":"urn:ngm:class:proof-of-work","label":"Proof Of Work"}],
-    "hasPart":[{"@id":"urn:ngm:class:asic","label":"ASIC"},{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "uses":[{"@id":"urn:ngm:class:asic","label":"ASIC"},{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "enables":[{"@id":"urn:ngm:class:proof-of-work","label":"Proof Of Work"},{"@id":"urn:ngm:class:hash-rate","label":"Hash Rate"}],
-    "requires":[{"@id":"urn:ngm:class:energy-consumption","label":"Energy Consumption"}],
-    "dependsOn":[{"@id":"urn:ngm:class:energy-consumption","label":"Energy Consumption"},{"@id":"urn:ngm:class:mining-difficulty","label":"Mining Difficulty"}],
-    "supports":[{"@id":"urn:ngm:class:mining-pool","label":"Mining Pool"},{"@id":"urn:ngm:class:block-reward","label":"Block Reward"}],
-    "implements":[{"@id":"urn:ngm:class:proof-of-work","label":"Proof Of Work"}],
-    "relatedTo":[{"@id":"urn:ngm:class:hash-rate","label":"Hash Rate"},{"@id":"urn:ngm:class:double-spending","label":"Double Spending"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:proof-of-stake","label":"Proof Of Stake"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:mining-hardware",
+  "@type": "Class",
+  "label": "Mining Hardware",
+  "definition": "Mining hardware is the specialised computing equipment used to perform the cryptographic work that secures proof-of-work blockchains, racing to find valid block hashes in exchange for block rewards. It has progressed from general-purpose CPUs and GPUs to dedicated application-specific integrated circuits (ASICs) optimised for a single hashing algorithm. The efficiency and concentration of this hardware shape network security, energy consumption, and mining centralisation.",
+  "domain": "blockchain",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptocurrency-mining",
+      "label": "Cryptocurrency Mining"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency-mining",
+        "label": "Cryptocurrency Mining"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:hash-rate",
+        "label": "Hash Rate"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:mining-difficulty",
+        "label": "Mining Difficulty"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hash-rate",
+        "label": "Hash Rate"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

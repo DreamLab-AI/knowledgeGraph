@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Context
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-context",
   "title": "AI Context",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Deputization", "Model Capability"],
+  "vc:outboundWikilinks": [
+    "AI Deputization",
+    "Model Capability"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}, {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}, {"@id": "urn:ngm:class:ai-model", "label": "AI Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

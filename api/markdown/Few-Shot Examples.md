@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Few-Shot Examples
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Few-shot examples are a small set of input-output demonstrations placed within a language model's prompt to illustrate the desired task, format, or reasoning pattern. By conditioning on these in-context examples, the model can perform the task without weight updates, leveraging in-context learning. The number, quality, ordering, and representativeness of the examples strongly influence output accuracy and consistency.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:context-engineering", "label": "Context Engineering"},
-      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few-Shot Prompting"}
+      {
+        "@id": "urn:ngm:class:context-engineering",
+        "label": "Context Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      }
     ]
   },
   "quality": 0.72

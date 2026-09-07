@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Digitization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,18 +20,43 @@ public: true
   "definition": "Asset Digitization is the process of converting physical objects, spaces, documents, or analogue media into discrete digital representations suitable for storage, transmission, and computational use. It encompasses acquisition technologies such as scanning, photogrammetry, and LiDAR, as well as the post-processing steps that clean, structure, and format the resulting data for target applications.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:reality-capture", "label": "Reality Capture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:reality-capture",
+      "label": "Reality Capture"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:lidar-scanning", "label": "Lidar Scanning"},
-      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:cultural-heritage-preservation", "label": "Cultural Heritage Preservation"}
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      }
     ],
-    "relatedTo": [{"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -56,4 +76,3 @@ public: true
   - Commercial applications span forensic reconstruction, retail product visualisation (IKEA, Amazon 3D), construction as-built documentation, film and VFX (digital doubles for actors and sets), video games (scanning for photorealistic environment assets), and heritage conservation. Institutions including the British Museum, Smithsonian, and CERN have published open-access digitised collections via platforms such as Sketchfab and their own repositories. Medical imaging (CT, MRI) represents a parallel specialised branch of asset digitization applied to anatomical data.
 
   - By 2024–2025, neural scene representations — Neural Radiance Fields (NeRF) and 3D Gaussian Splatting — are displacing classical mesh pipelines for high-fidelity digitization because they preserve material appearance under novel viewpoints without explicit geometry reconstruction. Mobile and drone capture workflows have commoditised site scanning for architecture and urban planning. Challenges remain around occlusion, dark or reflective surfaces, and the computational cost of processing large outdoor scenes, but cloud-based processing platforms are steadily democratising access.
-

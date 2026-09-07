@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Identity Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -89,32 +84,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:identity-systems:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1f809e67fa99348ba7ab7f186712ff35a2c610a158b3e4dffefe49cb8f146f05"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Identity Systems are the technical and organisational frameworks that establish, manage, verify, and revoke digital identities for users, devices, and services. They encompass authentication mechanisms, credential issuance, public-key infrastructure, and decentralised identity models (self-sovereign identity, DIDs) that enable secure, interoperable identification across platforms and jurisdictions.

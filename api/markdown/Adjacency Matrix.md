@@ -1,62 +1,116 @@
----
-public: true
----
-
-# Adjacency Matrix
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:adjacency-matrix", "@type":"Page", "title":"Adjacency Matrix", "vc:slug":"adjacency-matrix", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:adjacency-matrix",
+  "@type": "Page",
+  "title": "Adjacency Matrix",
+  "vc:slug": "adjacency-matrix",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:adjacency-matrix",
-  "@type":"Class",
-  "label":"Adjacency Matrix",
-  "definition":"An adjacency matrix is a square matrix representation of a graph in which the entry at row i and column j records whether, or how strongly, vertex i is connected to vertex j. For a graph of n vertices it is an n-by-n matrix, symmetric for undirected graphs and potentially weighted to encode edge costs. It is a foundational data structure for graph algorithms, spectral analysis and graph neural networks.",
-  "domain":"data",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:graph-representation","label":"Graph Representation"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:matrix","label":"Matrix"},
-      {"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:adjacency-matrix",
+  "@type": "Class",
+  "label": "Adjacency Matrix",
+  "definition": "An adjacency matrix is a square matrix representation of a graph in which the entry at row i and column j records whether, or how strongly, vertex i is connected to vertex j. For a graph of n vertices it is an n-by-n matrix, symmetric for undirected graphs and potentially weighted to encode edge costs. It is a foundational data structure for graph algorithms, spectral analysis and graph neural networks.",
+  "domain": "data",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:graph-representation",
+      "label": "Graph Representation"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:matrix",
+        "label": "Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:graph-theory","label":"Graph Theory"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:network-analysis","label":"Network Analysis"},
-      {"@id":"urn:ngm:class:graph-neural-network","label":"Graph Neural Network"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:pagerank","label":"PageRank"},
-      {"@id":"urn:ngm:class:shortest-path","label":"Shortest Path"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
+      },
+      {
+        "@id": "urn:ngm:class:shortest-path",
+        "label": "Shortest Path"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:graph-representation","label":"Graph Representation"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:graph-representation",
+        "label": "Graph Representation"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:graph-theory","label":"Graph Theory"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:sparse-matrix","label":"Sparse Matrix"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:sparse-matrix",
+        "label": "Sparse Matrix"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:linear-algebra","label":"Linear Algebra"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:graph-neural-network","label":"Graph Neural Network"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:sparse-matrix","label":"Sparse Matrix"},
-      {"@id":"urn:ngm:class:network-analysis","label":"Network Analysis"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sparse-matrix",
+        "label": "Sparse Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Multi Agent Systems
----
-
-# multi-agent systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

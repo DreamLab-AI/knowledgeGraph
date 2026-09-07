@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transaction Parameter
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gas-limit", "label": "Gas Limit"},
-      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
-      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"}
+      {
+        "@id": "urn:ngm:class:gas-limit",
+        "label": "Gas Limit"
+      },
+      {
+        "@id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gas-optimization", "label": "Gas Optimization"},
-      {"@id": "urn:ngm:class:mev", "label": "MEV"}
+      {
+        "@id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:layer2", "label": "Layer2"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:layer2",
+        "label": "Layer2"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transaction-parameter:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:baf0faccf6d955c9c996dbd0858dfd6c2a21dc19a922400c4be4f4e6a7441595"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain Transaction]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-transaction",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Configuration values that define the execution characteristics of a blockchain transaction, including gas limit, gas price, nonce, and other parameters that determine transaction priority, cost, and computational resources allocated.

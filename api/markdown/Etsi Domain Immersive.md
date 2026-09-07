@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Etsi Domain Immersive
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -103,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:etsi-domain-immersive:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:733f6157fffd812f58493fb16cf608d07e3535adfaba61c9b9426e38f6b776f4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ETSI Standards]]",
-      "resolved": "urn:visionflow:linked:etsi-standards",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The ETSI (European Telecommunications Standards Institute) technical domain addressing standardisation of immersive technologies including virtual reality, augmented reality, and mixed reality systems, encompassing network requirements, quality of experience metrics, and interoperability specifications for XR applications.

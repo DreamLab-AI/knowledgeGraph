@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Open Container Initiative
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

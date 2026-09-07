@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TLS Encryption
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,4 +179,3 @@ public: true
   - TLS encryption is deployed on virtually every HTTPS web connection, SMTP/IMAP email relay, MQTT IoT broker, gRPC API, database connection, and VPN tunnel. Let's Encrypt, launched in 2016, automated certificate issuance for the web, driving HTTPS deployment from around 40% to over 95% of web traffic within eight years. Certificate Transparency logs provide public auditability of certificate issuance, enabling detection of mis-issuance and domain hijacking.
 
   - As of 2024-2025, post-quantum TLS is the foremost standards challenge. NIST's FIPS 203 (ML-KEM/Kyber) is being integrated into TLS as a hybrid key exchange alongside ECDHE, with experimental deployments in Chrome and Cloudflare active from 2023. QUIC (RFC 9000), the UDP-based transport underlying HTTP/3, embeds TLS 1.3 natively into the transport layer, eliminating the head-of-line blocking of TCP-based TLS. Encrypted Client Hello (ECH) is a proposed extension to hide server identity from on-path observers even when SNI-based virtual hosting is used, addressing a persistent metadata leakage concern in current deployments.
-

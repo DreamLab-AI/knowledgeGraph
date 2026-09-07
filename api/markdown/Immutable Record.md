@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immutable Record
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "An immutable record is a data entry that, once written, cannot be altered or deleted without cryptographic or consensus-based detection of tampering. Immutability is enforced through hash chaining, Merkle trees, distributed ledger consensus mechanisms, or append-only data structures, making immutable records foundational to audit trails, provenance tracking, and trustworthy data archiving.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:blockchain-ledger", "label": "Blockchain Ledger"}
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:audit-log", "label": "Audit Log"},
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:trusted-timestamping", "label": "Trusted Timestamping"}
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-timestamping",
+        "label": "Trusted Timestamping"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - Immutable records underpin a wide range of applications: blockchain transaction ledgers (Bitcoin, Ethereum) provide definitive settlement history; supply chain provenance systems record custody transfers without repudiation; healthcare record systems use immutable audit trails to satisfy regulatory requirements; certificate transparency logs operated by browser vendors ensure TLS certificate issuance cannot be silently falsified. Enterprise deployments on permissioned ledgers (Hyperledger Fabric, Hyperledger Besu) apply the same principles within controlled membership networks, often combining cryptographic immutability with legal frameworks.
 
   - In 2024–2025 immutable records have become central to AI governance, particularly for model provenance — recording which training datasets, parameters, and fine-tuning steps produced a given model. Regulatory frameworks in the EU (AI Act) and proposed US legislation increasingly require immutable audit trails for high-risk AI systems. Simultaneously, content provenance standards (C2PA) embed cryptographic attestations into media files to record their creation and editing history as immutable chains of signed claims, directly addressing the problem of AI-generated content authenticity.
-

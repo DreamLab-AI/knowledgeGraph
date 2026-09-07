@@ -1,9 +1,3 @@
----
-public: true
----
-
-# W3C Recommendation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

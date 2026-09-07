@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Embedded System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -129,6 +125,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - An embedded system is a dedicated computing system designed to perform specific functions within a larger mechanical or electrical system, typically under real-time constraints. It combines a microcontroller or microprocessor with firmware and tightly coupled hardware such as sensors and actuators, often operating with limited memory, power, and processing resources. Embedded systems are ubiquitous in consumer devices, vehicles, industrial equipment, and robotics.
   - Related concepts: [[Microcontroller]] [[Firmware]] [[Real-Time System]] [[Robot Control]]

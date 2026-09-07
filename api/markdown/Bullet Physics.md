@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bullet Physics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Bullet Physics is an open-source, real-time physics simulation library that provides collision detection, rigid body dynamics, and soft body simulation for use in games, robotics, visual effects, and scientific computing. Originally developed by Erwin Coumans, it implements discrete and continuous collision detection alongside a constraint solver, enabling physically plausible interactions between complex 3D geometries at interactive frame rates.",
   "domain": "spatial-computing",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:physics-engine",
+      "label": "Physics Engine"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"},
-      {"@id": "urn:ngm:class:soft-body-dynamics", "label": "Soft Body Dynamics"},
-      {"@id": "urn:ngm:class:fluid-simulation", "label": "Fluid Simulation"}
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:soft-body-dynamics",
+        "label": "Soft Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:constraint-solver", "label": "Constraint Solver"}
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - In the robotics and AI community, PyBullet (the Python binding of Bullet 3) has become one of the dominant simulation backends for reinforcement learning research. OpenAI Gym, Google's dm_control, and various robot manipulation benchmarks rely on Bullet for physical environment simulation. This trajectory reflects a broader shift from entertainment-focused physics engines to scientific simulation infrastructure. Bullet also integrates with Blender via its Game Engine (deprecated but influential) and NVIDIA's Isaac Sim uses Bullet-compatible interfaces for ground-truth data generation.
 
   - By 2024–2025, Bullet Physics coexists with GPU-accelerated physics engines such as NVIDIA PhysX and Warp, which offer superior throughput for massively parallel simulation required by modern reinforcement learning. However, Bullet retains a strong position due to its zero-cost licensing, excellent CPU-side determinism, and deep integration in open robotics toolchains (ROS, Gazebo, PyBullet). Active development continues on Bullet 3, with GPU broadphase extensions and improved soft-body solvers. Its open-source nature and MIT-compatible licence ensure continued use in academic and applied research contexts.
-

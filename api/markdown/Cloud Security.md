@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cloud Security
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

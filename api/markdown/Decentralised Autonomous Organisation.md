@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DecentralisedAutonomousOrganisation
----
-
-# decentralised autonomous organisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

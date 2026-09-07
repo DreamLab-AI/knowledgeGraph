@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Signal Processing Unit
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A signal processing unit is the hardware or firmware block that filters, transforms, and extracts features from raw sensor or transducer signals, often using DSP cores, FFTs, and digital filtering. In haptic and biosensing devices it converts captured analogue or digital streams into actionable control signals or feature vectors in real time. It is a core processing component of interactive sensing interfaces.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:haptics", "label": "Haptics"}, {"@id": "urn:ngm:class:biosensing-interface", "label": "Biosensing Interface"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "@id": "urn:ngm:class:biosensing-interface",
+        "label": "Biosensing Interface"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Verification Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A verification process is the structured procedure by which claims or records are independently checked against evidence and methodology before being accepted as valid. In carbon markets it confirms that emission reductions or removals are real, additional, measurable and permanent prior to credit issuance and registry entry. Verification provides the assurance and integrity on which accounting and trading systems depend.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"}, {"@id": "urn:ngm:class:carbon-registry", "label": "Carbon Registry"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      }
+    ]
   },
   "quality": 0.72
 }

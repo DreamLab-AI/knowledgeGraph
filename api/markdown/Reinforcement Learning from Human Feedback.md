@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reinforcement Learning from Human Feedback
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,32 +178,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reinforcement-learning-from-human-feedback:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f89bdfe5f489e938cf9e6fe3c3118e5d58a35d12f961171af6a82fe2e72a4ca8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A technique for aligning language models with human preferences by training a reward model from human rankings of outputs and using reinforcement learning (typically PPO) to optimise the policy towards maximising predicted human preference. RLHF enables models to learn complex alignment objectives difficult to specify explicitly.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wi-Fi
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,57 +199,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:wi-fi:f1ea8dbd316e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9ba0d1a085ae9880becd566963054b3c29eabfd023d07fa93358a613f34295b6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Internet of Things]]",
-      "resolved": "urn:visionflow:linked:internet-of-things",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Communication]]",
-      "resolved": "urn:visionflow:linked:network-communication",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Communication Protocol]]",
-      "resolved": "urn:visionflow:linked:communication-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Network Protocol]]",
-      "resolved": "urn:visionflow:linked:network-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.wi-fi.org]]",
-      "resolved": "urn:visionflow:linked:https-www-wi-fi-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://standards.ieee.org/ieee/802.11/]]",
-      "resolved": "urn:visionflow:linked:https-standards-ieee-org-ieee-802-11",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Wi-Fi is a family of wireless networking technologies based on the IEEE 802.11 standards that allow devices to connect to a local area network and the internet. It is managed by the Wi-Fi Alliance.

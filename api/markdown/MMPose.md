@@ -1,11 +1,14 @@
----
-public: true
----
-
-# MMPose
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:mmpose", "@type":"Page", "title":"MMPose", "vc:slug":"mmpose", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:mmpose",
+  "@type": "Page",
+  "title": "MMPose",
+  "vc:slug": "mmpose",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Process Reward Model
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

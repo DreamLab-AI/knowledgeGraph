@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Adaptive Bitrate Streaming
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

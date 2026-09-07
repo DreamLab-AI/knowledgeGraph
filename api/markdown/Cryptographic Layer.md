@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cryptographic Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cryptographic-layer:a25ae75d7143",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a3586453f8314d1a41622ec7c183ef0e550e7daf44a6f97f0a4e3c002d281895"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware Layer]]",
-      "resolved": "urn:visionflow:linked:hardware-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Layer]]",
-      "resolved": "urn:visionflow:linked:identity-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Layer]]",
-      "resolved": "urn:visionflow:linked:consensus-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Public Key Cryptography]]",
-      "resolved": "urn:visionflow:linked:public-key-cryptography",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hash Function]]",
-      "resolved": "urn:visionflow:linked:hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NIST (National Institute of Standards and Technology)]]",
-      "resolved": "urn:visionflow:linked:nist-national-institute-of-standards-and-technology",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Cryptographic Layer is the stratum that provides confidentiality, integrity, and authenticity primitives to the layers above. It sits above the Hardware Layer, which supplies entropy and acceleration, and below identity, consensus, and security strata that depend on its guarantees. It contains ciphers, hash functions, signature schemes, and key management.

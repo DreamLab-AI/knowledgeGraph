@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Monetary Sovereignty
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,42 +174,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:monetary-sovereignty:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:659e3478d30efcf9663bec53844964d6a917f550b4cae67a3fd965d5e01cd684"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[National Financial Control]]",
-      "resolved": "urn:visionflow:linked:national-financial-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Economic Governance]]",
-      "resolved": "urn:visionflow:owl:class:economic-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A nation's authority to control its monetary policy, currency issuance, and financial systems, increasingly challenged by digital currencies and defended through initiatives like Central Bank Digital Currencies (CBDCs) that assert state control over the evolving digital economy.

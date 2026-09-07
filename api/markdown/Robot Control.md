@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robot Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -267,23 +262,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
-      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"},
-      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      }
     ]
   },
   "quality": 0.8,
@@ -294,297 +328,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robot-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1eb4a99a80ff425f8769ade5493c234788cecb0c4409177116de1aeaf13a9462"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[actuation]]",
-      "resolved": "urn:visionflow:linked:actuation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Actuation Systems]]",
-      "resolved": "urn:visionflow:linked:actuation-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Adaptive Control Algorithms]]",
-      "resolved": "urn:visionflow:linked:adaptive-control-algorithms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Systems]]",
-      "resolved": "urn:visionflow:linked:autonomous-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[behavior trees]]",
-      "resolved": "urn:visionflow:linked:behavior-trees",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Control Algorithms]]",
-      "resolved": "urn:visionflow:linked:control-algorithms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[control algorithms]]",
-      "resolved": "urn:visionflow:linked:control-algorithms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Networks]]",
-      "resolved": "urn:visionflow:linked:convolutional-neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decision Making]]",
-      "resolved": "urn:visionflow:linked:decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEC 61508]]",
-      "resolved": "urn:visionflow:linked:iec-61508",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE 1872]]",
-      "resolved": "urn:visionflow:linked:ieee-1872",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 10218]]",
-      "resolved": "urn:visionflow:linked:iso-10218",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 13849]]",
-      "resolved": "urn:visionflow:linked:iso-13849",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 8373]]",
-      "resolved": "urn:visionflow:linked:iso-8373",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Machine Vision]]",
-      "resolved": "urn:visionflow:linked:machine-vision",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Model Predictive Control]]",
-      "resolved": "urn:visionflow:linked:model-predictive-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[model predictive control]]",
-      "resolved": "urn:visionflow:linked:model-predictive-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Multi-Agent Robotics]]",
-      "resolved": "urn:visionflow:linked:multi-agent-robotics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[neural control]]",
-      "resolved": "urn:visionflow:linked:neural-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Control Methods]]",
-      "resolved": "urn:visionflow:linked:neural-control-methods",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Jacobian Fields]]",
-      "resolved": "urn:visionflow:linked:neural-jacobian-fields",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[path optimization]]",
-      "resolved": "urn:visionflow:linked:path-optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Perception Systems]]",
-      "resolved": "urn:visionflow:linked:perception-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PID control]]",
-      "resolved": "urn:visionflow:linked:pid-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[pneumatic actuators]]",
-      "resolved": "urn:visionflow:linked:pneumatic-actuators",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[proprioception]]",
-      "resolved": "urn:visionflow:linked:proprioception",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[robotic systems]]",
-      "resolved": "urn:visionflow:linked:robotic-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ROS 2]]",
-      "resolved": "urn:visionflow:linked:ros-2",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[servo motors]]",
-      "resolved": "urn:visionflow:linked:servo-motors",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Swarm Control]]",
-      "resolved": "urn:visionflow:linked:swarm-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Swarm Intelligence]]",
-      "resolved": "urn:visionflow:linked:swarm-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[tactile sensing]]",
-      "resolved": "urn:visionflow:linked:tactile-sensing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transfer Learning]]",
-      "resolved": "urn:visionflow:linked:transfer-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vision-based control]]",
-      "resolved": "urn:visionflow:linked:vision-based-control",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vision-Based Control Systems]]",
-      "resolved": "urn:visionflow:linked:vision-based-control-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[adaptive control]]",
-      "resolved": "urn:visionflow:owl:class:adaptive-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[collision avoidance]]",
-      "resolved": "urn:visionflow:owl:class:collision-avoidance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Control Theory]]",
-      "resolved": "urn:visionflow:owl:class:control-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin Technology]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[LIDAR]]",
-      "resolved": "urn:visionflow:owl:class:lidar",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Motion Planning]]",
-      "resolved": "urn:visionflow:owl:class:motion-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[motion planning]]",
-      "resolved": "urn:visionflow:owl:class:motion-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[optimal control]]",
-      "resolved": "urn:visionflow:owl:class:optimal-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[reinforcement learning]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robust Control]]",
-      "resolved": "urn:visionflow:owl:class:robust-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:owl:class:sensor-fusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[sensor fusion]]",
-      "resolved": "urn:visionflow:owl:class:sensor-fusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[soft robotics]]",
-      "resolved": "urn:visionflow:owl:class:soft-robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[trajectory generation]]",
-      "resolved": "urn:visionflow:owl:class:trajectory-generation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Robot Control - The systems, algorithms, and methodologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation

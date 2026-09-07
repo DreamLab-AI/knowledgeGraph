@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spatial Audio System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-audio-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:017495bcfb64eb742fa06bc1c7c3f6a3168a2e60a23e8fc83a030ce6f85946f4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Immersive Sound Experience]]",
-      "resolved": "urn:visionflow:linked:immersive-sound-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Immersive Audio Technology]]",
-      "resolved": "urn:visionflow:owl:class:immersive-audio-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An integrated audio technology framework creating three-dimensional soundscapes for VR, AR, and metaverse applications by simulating sound direction, distance, and environmental acoustics, enabling realistic audio experiences that respond dynamically to user movement and head orientation.

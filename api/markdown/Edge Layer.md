@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Edge Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:edge-layer:b5e645327716",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:55e1bc311739948193db1bcea6c8bcf4ef45b4db49e3b3fdeafa3606c5d506cb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Network Layer]]",
-      "resolved": "urn:visionflow:linked:network-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware Layer]]",
-      "resolved": "urn:visionflow:linked:hardware-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing Layer]]",
-      "resolved": "urn:visionflow:linked:edge-computing-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Content Delivery Network]]",
-      "resolved": "urn:visionflow:linked:content-delivery-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Internet of Things]]",
-      "resolved": "urn:visionflow:linked:internet-of-things",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Edge Layer is the cross-cutting stratum at the periphery of a system, where it meets external devices, users, and data sources. It sits above local hardware and network resources and below the application workloads it serves close to origin. It contains edge gateways, local caches, and the boundary logic that mediates between core and periphery.

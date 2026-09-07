@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Common Sense Reasoning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -182,7 +177,7 @@ public: true
   "definition": "The capacity of an AI system to draw inferences that humans consider obvious from general background knowledge about the physical world, social norms, causality, and everyday object behaviour — without explicit instruction. It encompasses naive physics, naive psychology, temporal reasoning, spatial reasoning, and social cognition grounded in embodied human experience, and is tested against benchmarks including CommonsenseQA, HellaSwag, WinoGrande, and PIQA.",
   "domain": "ai",
   "maturity": "emerging",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:natural-language-understanding",
@@ -195,272 +190,147 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:grounding", "label": "Grounding"},
-      {"@id": "urn:ngm:class:world-model", "label": "World Model"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:grounding",
+        "label": "Grounding"
+      },
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:naive-physics", "label": "Naive Physics"},
-      {"@id": "urn:ngm:class:theory-of-mind", "label": "Theory of Mind"},
-      {"@id": "urn:ngm:class:causal-reasoning", "label": "Causal Reasoning"},
-      {"@id": "urn:ngm:class:temporal-reasoning", "label": "Temporal Reasoning"},
-      {"@id": "urn:ngm:class:spatial-reasoning", "label": "Spatial Reasoning"}
+      {
+        "@id": "urn:ngm:class:naive-physics",
+        "label": "Naive Physics"
+      },
+      {
+        "@id": "urn:ngm:class:theory-of-mind",
+        "label": "Theory of Mind"
+      },
+      {
+        "@id": "urn:ngm:class:causal-reasoning",
+        "label": "Causal Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-reasoning",
+        "label": "Temporal Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-reasoning",
+        "label": "Spatial Reasoning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:hallucination", "label": "Hallucination"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:hallucination",
+        "label": "Hallucination"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"},
-      {"@id": "urn:ngm:class:formal-reasoning", "label": "Formal Reasoning"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:formal-reasoning",
+        "label": "Formal Reasoning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neurosymbolic AI"},
-      {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain-of-Thought Prompting"}
+      {
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neurosymbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought Prompting"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "EnrichmentWave6"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:common-sense-reasoning:e7f931b4c20a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:common-sense-reasoning"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Natural Language Understanding]]",
-      "resolved": "urn:visionflow:linked:natural-language-understanding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agents]]",
-      "resolved": "urn:visionflow:linked:ai-agents",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Alignment]]",
-      "resolved": "urn:visionflow:linked:ai-alignment",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Collective Intelligence]]",
-      "resolved": "urn:visionflow:linked:collective-intelligence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:linked:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Symbolic AI]]",
-      "resolved": "urn:visionflow:linked:symbolic-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neurosymbolic AI]]",
-      "resolved": "urn:visionflow:linked:neurosymbolic-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reasoning]]",
-      "resolved": "urn:visionflow:linked:reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Embodied AI]]",
-      "resolved": "urn:visionflow:linked:embodied-ai",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Question Answering]]",
-      "resolved": "urn:visionflow:linked:question-answering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Causal Reasoning]]",
-      "resolved": "urn:visionflow:linked:causal-reasoning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Temporal Reasoning]]",
-      "resolved": "urn:visionflow:linked:temporal-reasoning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Spatial Reasoning]]",
-      "resolved": "urn:visionflow:linked:spatial-reasoning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RLHF]]",
-      "resolved": "urn:visionflow:linked:rlhf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hallucination]]",
-      "resolved": "urn:visionflow:linked:hallucination",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ConceptNet]]",
-      "resolved": "urn:visionflow:linked:concept-net",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[WordNet]]",
-      "resolved": "urn:visionflow:linked:word-net",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Transformer Architecture]]",
-      "resolved": "urn:visionflow:linked:transformer-architecture",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Grounding]]",
-      "resolved": "urn:visionflow:linked:grounding",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Evaluation Benchmarks]]",
-      "resolved": "urn:visionflow:linked:evaluation-benchmarks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Few-Shot Learning]]",
-      "resolved": "urn:visionflow:linked:few-shot-learning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Chain-of-Thought Prompting]]",
-      "resolved": "urn:visionflow:linked:chain-of-thought",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[World Model]]",
-      "resolved": "urn:visionflow:linked:world-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Theory of Mind]]",
-      "resolved": "urn:visionflow:linked:theory-of-mind",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Naive Physics]]",
-      "resolved": "urn:visionflow:linked:naive-physics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Foundation Models]]",
-      "resolved": "urn:visionflow:linked:foundation-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPT-4]]",
-      "resolved": "urn:visionflow:linked:gpt-4",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Constitutional AI]]",
-      "resolved": "urn:visionflow:linked:constitutional-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Safety]]",
-      "resolved": "urn:visionflow:linked:ai-safety",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Logic Programming]]",
-      "resolved": "urn:visionflow:linked:logic-programming",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CommonsenseQA]]",
-      "resolved": "urn:visionflow:linked:commonsense-qa",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[WinoGrande]]",
-      "resolved": "urn:visionflow:linked:winogrande",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[HellaSwag]]",
-      "resolved": "urn:visionflow:linked:hellaswag",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:enrichment-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -576,9 +446,9 @@ public: true
         ObjectSomeValuesFrom(ai:reducesTo ai:ContextSensitiveInference))
   ## About
 
-    Common sense reasoning occupies a peculiar position in AI research: it is simultaneously among the most natural capabilities for humans and among the most elusive for machines. The distinction between what AI systems can do and what they cannot do is perhaps nowhere sharper than here: a system that can win at chess against world champions or generate professional-quality text may simultaneously fail to recognise that you cannot dry yourself with a wet towel, that pulling a tablecloth out from under plates is likely to cause them to fall, or that a person who says "could you pass the salt?" is making a request rather than enquiring about your capability. These failures are not peripheral edge cases — they reflect a fundamental gap between statistical language competence and the embodied, causal, and social knowledge that underlies human intelligence. This gap has consequences for every AI application that involves real-world interaction: medical AI that cannot infer contraindications from clinical context; robotic systems that cannot plan around physical constraints; legal AI that cannot infer the spirit of instructions from their letter; autonomous vehicles that cannot predict jaywalking behaviour from social context. Common sense reasoning is therefore not a research curiosity but a prerequisite for safe and beneficial general AI.
+    Common sense reasoning occupies a peculiar position in AI research: it is simultaneously among the most natural capabilities for humans and among the most elusive for machines. The distinction between what AI systems can do and what they cannot do is perhaps nowhere sharper than here: a system that can win at chess against world champions or generate professional-quality text may simultaneously fail to recognise that you cannot dry yourself with a wet towel, that pulling a tablecloth out from under plates is likely to cause them to fall, or that a person who says "[private] you pass the salt?" is making a request rather than enquiring about your capability. These failures are not peripheral edge cases — they reflect a fundamental gap between statistical language competence and the embodied, causal, and social knowledge that underlies human intelligence. This gap has consequences for every AI application that involves real-world interaction: medical AI that cannot infer contraindications from clinical context; robotic systems that cannot plan around physical constraints; legal AI that cannot infer the spirit of instructions from their letter; autonomous vehicles that cannot predict jaywalking behaviour from social context. Common sense reasoning is therefore not a research curiosity but a prerequisite for safe and beneficial general AI.
 
-    The challenge was articulated as early as 1958 by John McCarthy, who described the need for programs with "common sense" that could derive conclusions from large bodies of background knowledge without explicit programming. McCarthy's 1959 paper "Programs with Common Sense" — presented at the Teddington Conference on the Mechanisation of Thought Processes and notable as one of the first papers to use the term "common sense" in relation to machine intelligence — proposed the Advice Taker, a hypothetical system that could accept new axioms from a user and derive new conclusions from them, including common-sense facts about the world. McCarthy and Hayes (1969) subsequently formalised the frame problem — the challenge of representing, in a formal system, which facts remain unchanged when an action is performed — which has remained a central theoretical obstacle for knowledge-based common-sense systems for over fifty years.
+    The challenge was articulated as early as 1958 by John McCarthy, who described the need for programs with "common sense" that [private] derive conclusions from large bodies of background knowledge without explicit programming. McCarthy's 1959 paper "Programs with Common Sense" — presented at the Teddington Conference on the Mechanisation of Thought Processes and notable as one of the first papers to use the term "common sense" in relation to machine intelligence — proposed the Advice Taker, a hypothetical system that [private] accept new axioms from a user and derive new conclusions from them, including common-sense facts about the world. McCarthy and Hayes (1969) subsequently formalised the frame problem — the challenge of representing, in a formal system, which facts remain unchanged when an action is performed — which has remained a central theoretical obstacle for knowledge-based common-sense systems for over fifty years.
 
     The Cyc project (Douglas Lenat, 1984–2023) operationalised the common-sense challenge as the systematic hand-coding of millions of commonsense facts and inference rules into a formal ontology in first-order predicate logic. Beginning at MCC (Microelectronics and Computer Technology Corporation) in July 1984 and subsequently spun out as Cycorp in 1995, Cyc accumulated over 600,000 concepts and several million assertions over four decades of effort. By the time of Lenat's death in August 2023, Cyc had grown to 25 million rules, 1.5 million concepts, and over a thousand specialised inference engines. OpenCyc, released in 2002, offered a lightweight public subset. The project demonstrated both the feasibility of large-scale common-sense knowledge engineering and its staggering labour cost, and was criticised by machine-learning researchers including Pedro Domingos as a "catastrophic failure" due to its inability to evolve autonomously from new data. Lenat himself, in his final paper, argued that Cyc and large language models should be viewed as complementary rather than competing: LLMs are fluent and broad but often inconsistent, while Cyc's conclusions are always supported by auditable reasoning chains.
 

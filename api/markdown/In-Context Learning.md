@@ -1,8 +1,3 @@
----
-public: true
----
-
-# In-Context Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -150,7 +145,7 @@ public: true
   - [[In-Context Learning]] (ICL) is the capability of a [[Large Language Model]] to perform a novel task at inference time purely by conditioning on labelled input-output demonstrations embedded within the [[Prompt Engineering]] prompt, with no gradient updates to the model's parameters. The model implicitly infers task structure from the provided examples via the [[Attention Mechanism]], applying that structure to unseen queries. This distinguishes ICL from [[Fine-Tuning]] and [[Supervised Learning]], which require dedicated training passes. ICL is an [[Emergent Capabilities|emergent capability]] that scales with model size and pre-training diversity, and is theoretically modelled as implicit Bayesian inference over latent task hypotheses consistent with the demonstration set.
 
 - ### Overview
-  - ICL was prominently identified in the GPT-3 paper (Brown et al., 2020), where a 175-billion-parameter model demonstrated competitive NLP benchmark performance using only a handful of in-prompt examples — with frozen weights throughout. The observation was significant because it showed that task adaptation could occur entirely within the [[Context Window]] of a [[Transformer Architecture]], mediated by attention over the given examples, not by any weight modification.
+  - ICL was prominently identified in the GPT-3 paper (Brown et al., 2020), where a 175-billion-parameter model demonstrated competitive NLP benchmark performance using only a handful of in-prompt examples — with frozen weights throughout. The observation was significant because it showed that task adaptation [private] occur entirely within the [[Context Window]] of a [[Transformer Architecture]], mediated by attention over the given examples, not by any weight modification.
   - The practical importance of ICL lies in its ability to eliminate or drastically reduce costly task-specific fine-tuning pipelines. Practitioners can deploy a single [[Foundation Model]] across dozens of specialised tasks by reformatting task instructions and demonstrations as prompt text, without retraining, dataset curation at scale, or GPU infrastructure for gradient descent.
   - ICL performance depends on several orthogonal factors: the number of demonstrations supplied (one-shot, few-shot, many-shot), the quality and diversity of selected examples, the formatting of input-output pairs, and the order in which demonstrations appear in the prompt. These sensitivities reflect the model's reliance on surface-level statistical patterns as much as genuine task understanding.
   - As context windows grew from thousands to millions of tokens (e.g. Gemini 1.5 Pro, GPT-4 Turbo), the regime shifted to many-shot ICL, where hundreds of examples fit in a single prompt. At sufficient example counts, ICL performance has been shown to approach or match [[Parameter-Efficient Fine-Tuning]] on classification and reasoning benchmarks.

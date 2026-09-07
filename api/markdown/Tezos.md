@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Tezos
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,46 +180,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:tezos:afefb91b3856",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e1b182a2295cb100a7062fdb4c02c3e236315a89ec72ab2b6906268b8e644238"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Liquid Proof of Stake]]",
-      "resolved": "urn:visionflow:linked:liquid-proof-of-stake",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Protocol]]",
-      "resolved": "urn:visionflow:linked:consensus-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 1]]",
-      "resolved": "urn:visionflow:linked:layer-1",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

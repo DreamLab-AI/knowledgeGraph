@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Latency-Aware Edge AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -59,25 +54,58 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:edge-ai-accelerators", "label": "Edge AI Accelerators"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerators",
+        "label": "Edge AI Accelerators"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ]
   },
   "qualityScore": 0.8,
@@ -88,37 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:latency-aware-edge-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cce16d201a2438a013de241102a0a032905d9cd14d71502851e9118b483dd81f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Latency-Aware Edge AI systems dynamically adapt machine learning inference strategies to meet strict response time requirements while optimizing accuracy and resource consumption. These systems continuously monitor network conditions, device load, and inference deadlines, selecting optimal inference strategies from a portfolio of options. Dynamic model selection automatically chooses different neural network architectures (fast shallow networks versus accurate deep networks) based on available time budget; 50ms deadline might use lightweight EfficientNet-B0 while 500ms deadline allows ResNet-50. Adaptive offloading intelligently routes inference between edge and cloud: simple queries execute locally within milliseconds, complex requests offload to cloud when network latency allows before deadline expiration. Cascading inference employs early-exit networks that provide predictions at intermediate layers, reducing latency when initial predictions carry sufficient confidence. Adaptive batching accumulates multiple inference requests into batches for efficient processing when time permits; streaming requests process individually for minimal latency. Latency prediction models estimate execution time for different model-hardware combinations, enabling runtime scheduling decisions. Quality-of-Service awareness trades inference accuracy against latency; 99.9% deadline-meeting rates prioritize latency over marginal accuracy improvements. Systems maintain P99 latency under 50ms, jitter under 2ms, and 60+ FPS throughput for real-time video processing. Applications include video analytics requiring <33ms response for 30 FPS processing, autonomous vehicle perception handling 100ms deadlines for safety-critical decisions, and mobile augmented reality maintaining 16.7ms frames. Scheduling algorithms employ priority queues and fair scheduling preventing high-priority queries from starvation. Latency-aware systems represent the maturation of edge computing, moving beyond best-effort inference toward predictable real-time performance meeting application demands.

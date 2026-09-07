@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agent-layer:2b937fc62a2a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:75a71973b8d80bbea8bb2f936f0db78abb5fca4d465259c3231d24a7f2102a5f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Inference Layer]]",
-      "resolved": "urn:visionflow:linked:inference-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Control Layer]]",
-      "resolved": "urn:visionflow:linked:control-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Coordination Layer]]",
-      "resolved": "urn:visionflow:linked:coordination-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Agent]]",
-      "resolved": "urn:visionflow:linked:autonomous-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Agent Layer is the stratum that hosts autonomous entities capable of perceiving, deciding, and acting toward goals. It sits above control and inference strata that supply its capabilities and below coordination and application strata that direct collectives of agents. It contains agent policies, goal representations, memory, and decision loops.

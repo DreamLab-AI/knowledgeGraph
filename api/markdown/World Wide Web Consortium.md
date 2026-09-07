@@ -1,11 +1,16 @@
----
-public: true
----
-
-# World Wide Web Consortium
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:world-wide-web-consortium", "@type":"Page", "title":"World Wide Web Consortium", "vc:slug":"world-wide-web-consortium", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:world-wide-web-consortium",
+  "@type": "Page",
+  "title": "World Wide Web Consortium",
+  "vc:slug": "world-wide-web-consortium",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

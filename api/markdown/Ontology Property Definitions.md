@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ontology Property Definitions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -75,21 +70,54 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ontology-structure", "label": "Ontology Structure"},
-      {"@id": "urn:ngm:class:ontology-definition", "label": "Ontology Definition"}
+      {
+        "@id": "urn:ngm:class:ontology-structure",
+        "label": "Ontology Structure"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-definition",
+        "label": "Ontology Definition"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"},
-      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"},
-      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
+      },
+      {
+        "@id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "quality": 0.8,
@@ -100,57 +128,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ontology-property-definitions:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f6fe138c6319439543c1f2fe8422c3cba1b11b8f2689391509f1e074ad9e11f2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Dublin Core Metadata Initiative]]",
-      "resolved": "urn:visionflow:linked:dublin-core-metadata-initiative",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OntologyDomain]]",
-      "resolved": "urn:visionflow:linked:ontology-domain",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OWL 2 Web Ontology Language]]",
-      "resolved": "urn:visionflow:linked:owl-2-web-ontology-language",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Comprehensive definitions of object properties and datatype properties used throughout the Disruptive Technology Ontology, establishing formal semantic relationships between concepts across AI, blockchain, robotics, and metaverse domains. Properties define typed relationships with explicit domains, ranges, inverse relationships, and logical characteristics enabling automated reasoning and knowledge graph traversal.

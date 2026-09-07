@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Neuromorphic Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,29 +51,74 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:neuromorphic-chip", "label": "Neuromorphic Chip"},
-      {"@id": "urn:ngm:class:neuromorphic-chips", "label": "Neuromorphic Chips"}
+      {
+        "@id": "urn:ngm:class:neuromorphic-chip",
+        "label": "Neuromorphic Chip"
+      },
+      {
+        "@id": "urn:ngm:class:neuromorphic-chips",
+        "label": "Neuromorphic Chips"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
-      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+      {
+        "@id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"}
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
     ]
   },
   "provenance": {
@@ -88,32 +128,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:neuromorphic-computing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5ac736067adf7eae0df421caf0a5ef241359f37031de0c88417b15fe15bfed4f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - [Generated from Gartner emerging tech analysis]
@@ -171,11 +185,11 @@ public: true
 
   **Strategic Potential**
 
-  Neuromorphic computing represents a structural change in how artificial intelligence operates at the edge, moving computation away from centralised data centres.[4] Experts predict neuromorphic processors could circumvent limitations imposed by Moore's Law, offering a pathway to more sustainable and efficient AI deployment.[5]
+  Neuromorphic computing represents a structural change in how artificial intelligence operates at the edge, moving computation away from centralised data centres.[4] Experts predict neuromorphic processors [private] circumvent limitations imposed by Moore's Law, offering a pathway to more sustainable and efficient AI deployment.[5]
 
   **Artificial General Intelligence (AGI) Development**
 
-  Research efforts are increasingly motivated by the pursuit of artificial general intelligence—AI systems that understand and learn like humans. By replicating the human brain and nervous system architecture, neuromorphic systems could theoretically produce artificial cognition with capabilities matching biological intelligence, potentially providing insights into consciousness itself.[5]
+  Research efforts are increasingly motivated by the pursuit of artificial general intelligence—AI systems that understand and learn like humans. By replicating the human brain and nervous system architecture, neuromorphic systems [private] theoretically produce artificial cognition with capabilities matching biological intelligence, potentially providing insights into consciousness itself.[5]
 
   **Deployment Scenarios**
 

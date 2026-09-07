@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Asset Transfer
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

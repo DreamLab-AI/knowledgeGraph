@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0026 robot joint
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,48 @@ public: true
   "quality": 0.7,
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"},
-      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}
+      {
+        "@id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      },
+      {
+        "@id": "urn:ngm:class:robot-actuator",
+        "label": "Robot Actuator"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:rb-0027-robot-link", "label": "rb 0027 robot link"}
+      {
+        "@id": "urn:ngm:class:rb-0027-robot-link",
+        "label": "rb 0027 robot link"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0040-backlash", "label": "rb 0040 backlash"},
-      {"@id": "urn:ngm:class:rb-0041-inertia", "label": "rb 0041 inertia"},
-      {"@id": "urn:ngm:class:rb-0038-compliance", "label": "rb 0038 compliance"},
-      {"@id": "urn:ngm:class:rb-0039-stiffness", "label": "rb 0039 stiffness"}
+      {
+        "@id": "urn:ngm:class:rb-0040-backlash",
+        "label": "rb 0040 backlash"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0041-inertia",
+        "label": "rb 0041 inertia"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0038-compliance",
+        "label": "rb 0038 compliance"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0039-stiffness",
+        "label": "rb 0039 stiffness"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
-      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"}
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      }
     ]
   },
   "provenance": {
@@ -84,32 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0026-robot-joint:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8d93237da892c88899720aae860c063774418e6af4accaeba546eb98516a81ca"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A **Robot Joint** is a mechanical articulation connecting two adjacent robot links, permitting one or more degrees of relative motion. Revolute (rotational) joints are the most common in industrial manipulators; prismatic (translational) joints appear in Cartesian and SCARA configurations. Joint dynamic properties — inertia, backlash, stiffness, and compliance — directly determine control bandwidth, positioning repeatability, and safe interaction forces during human-robot collaboration.

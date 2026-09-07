@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Cultural Heritage Preservation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

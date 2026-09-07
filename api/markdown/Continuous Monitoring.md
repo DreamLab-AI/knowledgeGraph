@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Continuous Monitoring
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,41 +20,100 @@ public: true
   "definition": "An ongoing, automated process of collecting, analysing, and reporting metrics, logs, and events from systems, processes, or environments in near-real time to detect anomalies, ensure compliance, and support rapid response. Continuous monitoring operationalises oversight by replacing periodic audits with persistent telemetry streams fed into dashboards, alert rules, and automated remediation workflows. It is fundamental to DevSecOps, regulatory compliance programmes, and risk management frameworks that require timely evidence of control effectiveness.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:telemetry", "label": "Telemetry"},
-      {"@id": "urn:ngm:class:alerting", "label": "Alerting"},
-      {"@id": "urn:ngm:class:log-management", "label": "Log Management"},
-      {"@id": "urn:ngm:class:metrics-collection", "label": "Metrics Collection"}
+      {
+        "@id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "@id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "@id": "urn:ngm:class:log-management",
+        "label": "Log Management"
+      },
+      {
+        "@id": "urn:ngm:class:metrics-collection",
+        "label": "Metrics Collection"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:security-operations", "label": "Security Operations"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:security-operations",
+        "label": "Security Operations"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:security-information-and-event-management", "label": "Security Information and Event Management"},
-      {"@id": "urn:ngm:class:dev-sec-ops", "label": "DevSecOps"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "@id": "urn:ngm:class:dev-sec-ops",
+        "label": "DevSecOps"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:periodic-audit", "label": "Periodic Audit"}
+      {
+        "@id": "urn:ngm:class:periodic-audit",
+        "label": "Periodic Audit"
+      }
     ]
   },
   "quality": 0.62,

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Agentic Mycelia]]
-# Multi-Layer Agentic Governance Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -89,20 +83,44 @@ elevatedFrom:: [[Agentic Mycelia]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:metaverse-ontology", "label": "Metaverse Ontology"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ]
   },
   "provenance": {
@@ -112,72 +130,6 @@ elevatedFrom:: [[Agentic Mycelia]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agentic-mycelia:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0c0a5620caaa7038443d04ce1ad86e1f6db25d9a740ed53efe7067edf560625a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Chain of Thought]]",
-      "resolved": "urn:visionflow:linked:chain-of-thought",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Constitutional AI Language Model Family]]",
-      "resolved": "urn:visionflow:owl:class:anthropic-claude",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Diagrams as Code]]",
-      "resolved": "urn:visionflow:owl:class:diagrams-as-code",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gemini Multimodal Language Model]]",
-      "resolved": "urn:visionflow:owl:class:gemini",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Google AI Technology Corporation]]",
-      "resolved": "urn:visionflow:owl:class:google",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Ontology]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-ontology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Prompt Engineering]]",
-      "resolved": "urn:visionflow:owl:class:prompt-engineering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Agentic Mycelia is a concept within the ngm domain.

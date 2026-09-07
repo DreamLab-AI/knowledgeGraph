@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NVIDIA Isaac Sim
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,57 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nvidia-isaac-sim:7e368a84455b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:637bb23a06a6365f40d6c181d3791f9da9b4a64bfbe1dbab0be42ec14d22b734"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Physics Simulation Engine]]",
-      "resolved": "urn:visionflow:linked:physics-simulation-engine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robot Control]]",
-      "resolved": "urn:visionflow:linked:robot-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Synthetic Data]]",
-      "resolved": "urn:visionflow:linked:synthetic-data",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Simulation Environment]]",
-      "resolved": "urn:visionflow:linked:simulation-environment",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://developer.nvidia.com/isaac/sim]]",
-      "resolved": "urn:visionflow:linked:https-developer-nvidia-com-isaac-sim",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.isaacsim.omniverse.nvidia.com]]",
-      "resolved": "urn:visionflow:linked:https-docs-isaacsim-omniverse-nvidia-com",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - NVIDIA Isaac Sim is a robotics simulation application built on the Omniverse platform for designing, testing, and training robots in virtual environments. It is developed by NVIDIA.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OWL 2 Web Ontology Language
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -108,67 +103,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:owl-2-web-ontology-language:f1d25bb06632",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:117ceeda5eba0d7048971204b5db359f90f79294c2cb87e667665d8d57f08f47"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Description Logic]]",
-      "resolved": "urn:visionflow:linked:description-logic",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RDF]]",
-      "resolved": "urn:visionflow:linked:rdf",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Reasoning Engine]]",
-      "resolved": "urn:visionflow:linked:semantic-reasoning-engine",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Reasoning]]",
-      "resolved": "urn:visionflow:linked:reasoning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Ontology]]",
-      "resolved": "urn:visionflow:linked:ontology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Representation]]",
-      "resolved": "urn:visionflow:linked:knowledge-representation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OWL]]",
-      "resolved": "urn:visionflow:linked:owl",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.w3.org/TR/owl2-overview/]]",
-      "resolved": "urn:visionflow:linked:https-www-w-3-org-tr-owl-2-overview",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A World Wide Web Consortium standard for representing ontologies on the web, providing formal semantics based on description logic for classes, properties and individuals. It extends earlier web ontology work with richer modelling features and defined reasoning profiles.

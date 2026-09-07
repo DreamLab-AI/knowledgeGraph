@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Asset Creation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -109,7 +104,7 @@ public: true
 
   **3D asset creation** is the branch of asset creation concerned specifically with spatial content: the meshes, materials, rigs, and animations that populate games, films, XR experiences, simulations, and digital twins. The 3D qualification matters—unlike audio, code, or flat imagery, a 3D asset must satisfy geometric and runtime constraints simultaneously. It needs clean topology for deformation, sensible UV layouts for [[Texture Mapping]], physically based materials that respond correctly to lighting, and polygon budgets and levels of detail matched to its target platform, whether that is a film render farm or a standalone VR headset.
 
-  The traditional pipeline runs from concept art through blocking, high-resolution sculpting, retopology, UV unwrapping, texturing and material authoring, rigging, and animation, using [[3D Modelling]] packages such as Blender, Maya, ZBrush, and Substance. Alongside manual authorship sit capture-based routes—photogrammetry, LiDAR scanning, and Gaussian splatting reconstruct real objects and places—and [[Procedural Generation]], where rule-based tools like Houdini synthesise terrain, buildings, and foliage at scales no team could hand-model.
+  The traditional pipeline runs from concept art through blocking, high-resolution sculpting, retopology, UV unwrapping, texturing and material authoring, rigging, and animation, using [[3D Modelling]] packages such as Blender, Maya, ZBrush, and Substance. Alongside manual authorship sit capture-based routes—photogrammetry, LiDAR scanning, and Gaussian splatting reconstruct real objects and places—and [[Procedural Generation]], where rule-based tools like Houdini synthesise terrain, buildings, and foliage at scales no team [private] hand-model.
 
   Generative AI is the newest entrant: text-to-3D and image-to-3D systems (built on diffusion models, score distillation, and large reconstruction models) now produce textured meshes in seconds. Their output typically still needs remeshing and material clean-up before production use, so the practical effect so far has been to compress ideation and previsualisation rather than replace the pipeline. The output in every route is a [[Digital Asset]] that must be versioned, licensed, and optimised for its destination engine.
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ASIC Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,15 +20,39 @@ public: true
   "definition": "Application-Specific Integrated Circuits (ASICs) are custom silicon chips designed and manufactured to perform a fixed, narrowly defined computational task with maximum efficiency. Unlike general-purpose processors, ASIC hardware sacrifices programmability for dramatically superior performance-per-watt ratios in its target workload, making it the dominant substrate for high-throughput, power-sensitive deployments.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-hardware", "label": "Computer Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-hardware",
+      "label": "Computer Hardware"
+    }
+  ],
   "relations": {
-    "contrastsWith": [{"@id": "urn:ngm:class:fpga", "label": "FPGA"}],
-    "enables": [
-      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"},
-      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      }
     ],
-    "relatedTo": [{"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}]
+    "enables": [
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ]
   },
   "quality": 0.8
 }
@@ -53,4 +72,3 @@ public: true
   - The cryptocurrency mining ecosystem validated ASIC economics at scale: SHA-256 mining ASICs deliver terahashes-per-second at millijoules per hash, outperforming GPU clusters by orders of magnitude. AI infrastructure followed with Google's Tensor Processing Units, Cerebras Wafer-Scale Engine, and Groq Language Processing Units — each a custom ASIC targeting transformer inference or training. Networking vendors such as Broadcom and Marvell produce switch ASICs handling 800 Gbps+ per chip, displacing programmable NPUs in high-volume deployments.
 
   - As of 2024–2025, the AI ASIC market is undergoing rapid fragmentation, with hyperscalers (Google, Amazon, Microsoft, Meta) all fielding proprietary silicon to reduce dependence on Nvidia GPUs. Edge inference ASICs are proliferating in automotive, robotics, and IoT devices, driven by power envelopes below 5 W. Chiplet integration via advanced packaging (CoWoS, FOVEROS) allows mixing ASIC dies with DRAM and I/O chiplets, partially recovering flexibility without sacrificing per-die efficiency.
-

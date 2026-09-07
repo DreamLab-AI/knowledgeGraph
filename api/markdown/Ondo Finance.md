@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ondo Finance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -78,42 +73,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ondo-finance:8b23abe4d6a8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0fa2d92f3ca77738deaba6a256bbe876918e7bf74f3b0d8724144125b30ddf62"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Tokenisation]]",
-      "resolved": "urn:visionflow:linked:asset-tokenisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Text Tokenisation]]",
-      "resolved": "urn:visionflow:linked:tokenisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Institutional Adoption]]",
-      "resolved": "urn:visionflow:linked:institutional-adoption",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Ondo Finance is a company that issues tokenised versions of traditional financial products, including funds holding US Treasury securities, on public blockchains.

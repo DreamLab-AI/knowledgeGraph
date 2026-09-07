@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Collective Decision-Making
----
-
-# Collective Decision Making
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Anonymous Credential
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:anonymous-credential", "@type":"Page", "title":"Anonymous Credential", "vc:slug":"anonymous-credential", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:anonymous-credential",
+  "@type": "Page",
+  "title": "Anonymous Credential",
+  "vc:slug": "anonymous-credential",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

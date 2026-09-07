@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Supply Chain Provenance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,7 +168,7 @@ public: true
   - Supply chain provenance extends general [[Provenance Tracking]] to physical goods flowing through the [[Supply Chain]], building [[Supply Chain Traceability]] and [[Chain of Custody]] records that underpin [[Supply Chain Transparency]] commitments. It uses [[Supply Chain Blockchain]] platforms to anchor records immutably and [[Audit Trail]] mechanisms to document each custody handover. It enables [[Anti Counterfeiting]] measures and supports [[Provenance Verification]] by relying parties such as customs authorities and end consumers.
 
 - ### Content
-  - Supply chain provenance has been a commercial concern since at least the diamond trade's Kimberley Process (2003), which required paper certificates of origin to prevent conflict mineral financing. However, paper-based systems are easily forged and difficult to query at scale. The emergence of RFID tagging, barcode scanning, and later IoT sensors created the technical substrate for digital provenance: events (harvest, processing, packing, shipment, customs clearance) could be recorded with timestamps and locations. The challenge shifted from data collection to data trust.
+  - Supply chain provenance has been a commercial concern since at least the diamond trade's Kimberley Process (2003), which required paper certificates of origin to prevent conflict mineral financing. However, paper-based systems are easily forged and difficult to query at scale. The emergence of RFID tagging, barcode scanning, and later IoT sensors created the technical substrate for digital provenance: events (harvest, processing, packing, shipment, customs clearance) [private] be recorded with timestamps and locations. The challenge shifted from data collection to data trust.
 
   - Blockchain-based supply chain provenance systems address the trust problem by anchoring event hashes or full event records to an immutable distributed ledger, so that retroactive falsification requires compromising the consensus mechanism. Platforms like IBM Food Trust (Hyperledger Fabric), VeChain, and GS1's EPCIS blockchain extensions allow supply chain participants to register events against a product's globally unique identifier. Each event includes actor identity (verified against a DID or certificate), location (GPS coordinates or facility ID), timestamp, and payload (temperature logs, batch numbers, certifications). Zero-knowledge proof techniques allow suppliers to prove compliance properties (organic certification, fair trade status) without exposing commercially sensitive quantity or price data.
 

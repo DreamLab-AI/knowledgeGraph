@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Security
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -254,92 +249,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:security:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bc28b3d2b09714f9c4eec75ad00d5de17a1eb0117eec82ed51b09860dbecb330"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[apostolaki2016hijacking; @apostolaki2017hijacking; @johnson2014game; @stinner2022proof]]",
-      "resolved": "urn:visionflow:linked:apostolaki2016hijacking-apostolaki2017hijacking-johnson2014game-stinner2022proof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dymydiuk2020rubicon]]",
-      "resolved": "urn:visionflow:linked:dymydiuk2020rubicon",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Eurodollar]]",
-      "resolved": "urn:visionflow:linked:eurodollar",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Constitutional AI Language Model Family]]",
-      "resolved": "urn:visionflow:owl:class:anthropic-claude",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CBDCs]]",
-      "resolved": "urn:visionflow:owl:class:cbdcs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cyber Security and Cryptography]]",
-      "resolved": "urn:visionflow:owl:class:cyber-security-and-cryptography",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Identity]]",
-      "resolved": "urn:visionflow:owl:class:distributed-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gaussian Splatting]]",
-      "resolved": "urn:visionflow:owl:class:gaussian-splatting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware and Edge]]",
-      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[machine learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle.
 - ### Semantic Classification
@@ -414,7 +323,7 @@ public: true
 			- But now the tough questions. Is it a good idea? And is it as secure as what Apple does today? And most importantly:
 			- I admit that as I learned about this feature, it made me kind of sad. The thought that was going through my head was: this is going to be too much of a temptation. Once you can "safely" outsource tasks to the cloud, why bother doing them locally. Outsource everything!
 			- As best I can tell, Apple does not have explicit plans to announce when your data is going off-device for to Private Compute. You won't opt into this, you won't necessarily even be told it's happening. It will just happen. Magically. I don't love that part.
-			- Finally, there are so many invisible sharp edges that could exist in a system like this. Hardware flaws. Issues with the cryptographic attestation framework. Clever software exploits. Many of these will be hard for security researchers to detect. That worries me too. 18/
+			- Finally, there are so many invisible sharp edges that [private] exist in a system like this. Hardware flaws. Issues with the cryptographic attestation framework. Clever software exploits. Many of these will be hard for security researchers to detect. That worries me too. 18/
 			- Wrapping up on a more positive note: it's worth keeping in mind that sometimes the perfect is the enemy of the really good.
 			- In practice the alternative to on-device is: ship private data to OpenAI or someplace sketchier, where who knows what might happen to it.
 			- And of course, keep in mind that super-spies aren't your biggest adversary. For many people your biggest adversary is the company who sold you your device/software. This PCC system represents a real commitment by Apple not to "peek" at your data. That's a big deal.
@@ -423,7 +332,7 @@ public: true
   - Biding their time waiting for local inferencing that leverages strong legacy media buy in might be a great play. Only the cost to their mind share of talent might be an issue.
   - Apple are innovating in core ML research to support large language models.
   - They are developing new techniques for data management between flash memory and DRAM, crucial for running larger models on devices with limited memory.
-  - The research also reveals significant speed improvements, with 4-5 times faster processing on CPUs and 20-25 times on GPUs for models up to twice the size of the available DRAM. These advancements could lead to a wider adoption of these technologies,
+  - The research also reveals significant speed improvements, with 4-5 times faster processing on CPUs and 20-25 times on GPUs for models up to twice the size of the available DRAM. These advancements [private] lead to a wider adoption of these technologies,
   - [Paper page
 		- LLM in a flash: Efficient Large Language Model Inference with Limited Memory (huggingface.co)](https://huggingface.co/papers/2312.11514) [[Hardware and Edge]]
   - [Apple wants AI to run directly on its hardware instead of in the cloud | Ars Technica](https://arstechnica.com/apple/2023/12/apple-wants-ai-to-run-directly-on-its-hardware-instead-of-in-the-cloud/) [[Hardware and Edge]]
@@ -489,7 +398,7 @@ public: true
 			- American-Made Electronics Allow Access via Radio Frequencies
 				- **Verdict:** Partly True. The Cottonmouth-I and SURLYSPAWN projects, as mentioned in the Snowden leaks, involve the use of radio frequency (RF) signals to remotely access devices. However, these were designed for specific targeted surveillance operations rather than mass surveillance. It's true that many modern electronic devices emit RF signals or can be accessed through their wireless capabilities, but this does not inherently mean that all American-made electronics are compromised for remote access by the NSA or FBI without further context.
 			- Backdoored Random Number Generators
-				- **Verdict:** Partly True. The Dual Elliptic Curve Deterministic Random Bit Generator (Dual EC DRBG) algorithm, developed by NIST and NSA, has been criticized for its potential to contain a backdoor that could allow the NSA to break RSA encryption. However, it's important to note that while the algorithm's vulnerabilities have been identified and it has been subsequently withdrawn from use, there's no conclusive evidence that the NSA actively exploited this backdoor to break RSA encryption on a widespread scale.
+				- **Verdict:** Partly True. The Dual Elliptic Curve Deterministic Random Bit Generator (Dual EC DRBG) algorithm, developed by NIST and NSA, has been criticized for its potential to contain a backdoor that [private] allow the NSA to break RSA encryption. However, it's important to note that while the algorithm's vulnerabilities have been identified and it has been subsequently withdrawn from use, there's no conclusive evidence that the NSA actively exploited this backdoor to break RSA encryption on a widespread scale.
 			- NSA Backdoors in CPUs
 				- **Verdict:** Partly True. The claim refers to Intel ME (Management Engine) and AMD PSP (Platform Security Processor), which are both hardware-based security features integrated into modern CPUs. While these technologies can operate independently of the main system, there's no conclusive evidence that they were implemented at the NSA's request or are being used by the NSA specifically for mass surveillance. Their primary purpose is enterprise-level management and security rather than clandestine operations.
 			- FBI Distributes Undetectable Malware
@@ -500,7 +409,7 @@ public: true
 	  "we kill people based on metadata"
 	  ```
   - during a debate in 2014 at John Hopkins University. Hayden admitted that the U.S. government uses metadata, which refers to data about communications like phone records (numbers called, time, duration) rather than the actual content, as a basis for killing people in drone strikes against terrorist suspects abroad. Reports based on Snowden leaks alleged the NSA used metadata analysis to track potential targets for lethal drone operations.
-  - OpenAI [has appointed](https://openai.com/index/openai-announces-leadership-transition/) Retired U.S. Army General Paul M. Nakasone to its Board of Directors and the Board's Safety and Security Committee. General Nakasone is a leading expert in cybersecurity, having previously served as the Director of the National Security Agency (NSA) and Commander of U.S. Cyber Command (USCYBERCOM).
+  - OpenAI [has appointed](https://openai.com/[private]/openai-announces-leadership-transition/) Retired U.S. Army General Paul M. Nakasone to its Board of Directors and the Board's Safety and Security Committee. General Nakasone is a leading expert in cybersecurity, having previously served as the Director of the National Security Agency (NSA) and Commander of U.S. Cyber Command (USCYBERCOM).
 		- [(1) Edward Snowden on X: "They've gone full mask-off: 𝐝𝐨 𝐧𝐨𝐭 𝐞𝐯𝐞𝐫 trust @OpenAI or its products (ChatGPT etc). There is only one reason for appointing an @NSAGov Director to your board. This is a willful, calculated betrayal of the rights of every person on Earth. You have been warned." / X (twitter.com)](https://twitter.com/Snowden/status/1801610725229498403)
 		- {{twitter https://twitter.com/Snowden/status/1801610725229498403}}
   - <iframe src="https://www.eff.org/deeplinks/2024/04/us-senate-and-biden-administration-shamefully-renew-and-expand-fisa-section-702-0" style="width: 100%; height: 600px"></iframe>
@@ -590,17 +499,17 @@ public: true
   - #### 4.12.9 AI, Integrity, and Accessibility
   - and its underlying power
   - [Lesswrong AI section](https://www.lesswrong.com/tag/ai)
-  - [Goldman Sachs Predicts 300 Million Jobs Will Be Lost Or Degraded By Artificial Intelligence: Goldman Sachs maintains that if generative AI lives up to its hype, the workforce in the United States and Europe will be upended. The bank estimates 300 million jobs could be lost or diminished due to this fast-growing technology.](https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/?sh=3af7314e782b)
+  - [Goldman Sachs Predicts 300 Million Jobs Will Be Lost Or Degraded By Artificial Intelligence: Goldman Sachs maintains that if generative AI lives up to its hype, the workforce in the United States and Europe will be upended. The bank estimates 300 million jobs [private] be lost or diminished due to this fast-growing technology.](https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/?sh=3af7314e782b)
 	  Gartner's hype cycle 2022 features Web3, distributed identity, NFTs, and Metaverse and can be seen in Figure 1.6.
   - [Silvergate Purchases Blockchain libre](https://ir.silvergate.com/news/news-details/2022/Silvergate-Purchases-Blockchain-Payment-Network-Assets-from-Diem/default.aspx)
   - [Online safety bill heather articles](https://webdevlaw.uk/2022/11/21/a-quick-hypothetical-situation-or-your-crash-introduction-to-the-real-world/)
   - #### 4.12.7 Uncontrolled AGI Creation
-  On the other hand, some suggest that capitalist competition could result in the creation of AGI that cannot be controlled. Dr. Jeffrey Hinton, a vocal advocate of this view, argues that AI's potential to disrupt business models could drive companies to recklessly pursue advancements in AI to stay competitive. This could lead to increased state power as people become more reliant on the state in an AI-dominated economy, potentially resulting in increased authoritarianism.
+  On the other hand, some suggest that capitalist competition [private] result in the creation of AGI that cannot be controlled. Dr. Jeffrey Hinton, a vocal advocate of this view, argues that AI's potential to disrupt business models [private] drive companies to recklessly pursue advancements in AI to stay competitive. This [private] lead to increased state power as people become more reliant on the state in an AI-dominated economy, potentially resulting in increased authoritarianism.
   - #### 4.12.9 AI, Integrity, and Accessibility
   - and its underlying power
   - must be accessible to everyone to mitigate the risks of misuse and ensure fair benefits distribution.
   - #### 4.12.8 AI Promoting Freedom
-  However, AI could also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI could also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
+  However, AI [private] also promote freedom in several ways. For instance, AI tools like Altana have been used to identify goods made using forced labor, helping companies make informed supply chain decisions. AI [private] also serve as a new interface for disseminating information, such as a chatbot that aids detainees in requesting legal assistance.
   - #### 4.12.6 AI and Central Planning
   Another concern is the fear that AI will make centrally planned economies seem viable, where past attempts failed due to the lack of data. This idea was discussed in a conversation between Peter Thiel and Reed Hoffman hosted by Neil Ferguson at Stanford in 2018. Thiel posited that AI appears to favor centralization, an aspect that supports the principles of central planning.
   - ### Preventing Errors in Security Content Updates

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inflation Hedging
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Inflation hedging is an investment strategy that protects the real value of capital against the erosion of purchasing power caused by rising consumer prices. It allocates wealth to assets whose nominal value tends to rise with or outpace inflation, such as commodities, real estate, inflation-linked bonds, and scarce stores of value. Both gold and Bitcoin are frequently cited as inflation hedges because their supply is constrained relative to fiat currency issuance.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
-      {"@id": "urn:ngm:class:gold", "label": "Gold"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "@id": "urn:ngm:class:gold",
+        "label": "Gold"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Technical Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,62 +206,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:technical-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cca2d24cc90cb0baac76b07bbf5f213d51af9c362e7782ad73b171f59869098f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Best Practices]]",
-      "resolved": "urn:visionflow:linked:best-practices",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Core Technology]]",
-      "resolved": "urn:visionflow:linked:core-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Specification]]",
-      "resolved": "urn:visionflow:linked:specification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Technical Requirements]]",
-      "resolved": "urn:visionflow:linked:technical-requirements",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interoperability]]",
-      "resolved": "urn:visionflow:owl:class:interoperability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Quality Assurance]]",
-      "resolved": "urn:visionflow:owl:class:quality-assurance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Safety]]",
-      "resolved": "urn:visionflow:owl:class:safety",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A technical standard is a formal document that establishes uniform engineering or technical criteria, methods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended. Standards are developed through consensus-based processes by authoritative bodies and provide the foundation for quality control, innovation, and global trade in technology systems.

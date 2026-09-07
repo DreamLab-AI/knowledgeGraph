@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Consent Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A consent registry is a system of record that stores, versions, and serves the consent decisions data subjects have granted or withdrawn for processing their personal data. It provides an auditable, queryable source of truth that data controllers and processors consult before performing a processing activity. It is a central component of privacy-compliance and consent-management architectures.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}, {"@id": "urn:ngm:class:user-consent-token", "label": "User Consent Token"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:user-consent-token",
+        "label": "User Consent Token"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Access Token
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:access-token", "@type":"Page", "title":"Access Token", "vc:slug":"access-token", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:access-token",
+  "@type": "Page",
+  "title": "Access Token",
+  "vc:slug": "access-token",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

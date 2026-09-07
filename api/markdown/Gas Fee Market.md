@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gas Fee Market
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -66,7 +61,10 @@ public: true
   },
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"}
+      {
+        "@id": "urn:ngm:class:sc-platform-and-environment",
+        "label": "Platform and Environment"
+      }
     ],
     "requires": [
       {
@@ -101,37 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gas-fee-market:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:01aa7df4db1f62dfc6a4969b05ae2ef438de315a17ccfbcdb83f6758fe25bc12"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain Economics]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-economics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The economic mechanism governing blockchain transaction costs, where users bid with gas fees to prioritise transaction processing, creating a market-based system essential for metaverse operations including NFT trades, smart contract execution, and virtual asset transfers.

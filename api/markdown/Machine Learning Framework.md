@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Machine Learning Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,42 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:machine-learning-framework:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a4a65e213aaa09900b211096fc7856bede3e17467412f9e7a04b2e59b36f5c25"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Model Development]]",
-      "resolved": "urn:visionflow:linked:ai-model-development",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Development Tools]]",
-      "resolved": "urn:visionflow:owl:class:ai-development-tools",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.

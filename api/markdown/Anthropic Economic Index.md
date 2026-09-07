@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Anthropic Economic Index
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "anthropic-economic-index",
   "title": "Anthropic Economic Index",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Productivity Gains", "Task Time Savings"],
+  "vc:outboundWikilinks": [
+    "AI Productivity Gains",
+    "Task Time Savings"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:anthropic", "label": "Anthropic"}, {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

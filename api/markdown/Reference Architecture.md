@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reference Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -203,42 +198,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:reference-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fa2811a86652e94aa758f8d1cf9409f7613def1625f8f5bb73a26b146b26d486"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Scalable Systems]]",
-      "resolved": "urn:visionflow:linked:scalable-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Software Architecture]]",
-      "resolved": "urn:visionflow:owl:class:software-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A standardized architectural template that provides proven structural frameworks and design patterns for building scalable, resilient enterprise applications, establishing shared vocabulary and best practices across development teams.

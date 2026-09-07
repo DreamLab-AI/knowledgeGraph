@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Freedom Of Expression
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:freedom-of-expression", "@type": "Page", "title": "Freedom Of Expression", "vc:slug": "freedom-of-expression", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:freedom-of-expression",
+  "@type": "Page",
+  "title": "Freedom Of Expression",
+  "vc:slug": "freedom-of-expression",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

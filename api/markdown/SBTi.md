@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SBTi
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The Science Based Targets initiative (SBTi) is a body that defines and validates corporate greenhouse-gas reduction targets against climate science, specifically the goal of limiting warming to 1.5C. It publishes sector-specific methodologies and independently certifies that company targets are consistent with the Paris Agreement. SBTi validation has become a widely referenced benchmark in ESG reporting.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:science-based-targets", "label": "Science Based Targets"}
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      }
     ]
   },
   "quality": 0.72

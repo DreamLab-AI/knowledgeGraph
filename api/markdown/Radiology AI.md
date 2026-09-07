@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Radiology AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -105,47 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:radiology-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:63b42a56676e08723d3fef6d0ee243bacfd99ad6caf8cdb6df0fdbfeebda08e3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[DICOM]]",
-      "resolved": "urn:visionflow:linked:dicom",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Medical Imaging AI]]",
-      "resolved": "urn:visionflow:owl:class:medical-imaging-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Pathology AI]]",
-      "resolved": "urn:visionflow:owl:class:pathology-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Radiology AI refers to artificial intelligence systems specifically designed for the interpretation and analysis of radiological imaging modalities including X-ray, computed tomography (CT), magnetic resonance imaging (MRI), and ultrasound. These systems automate detection, classification, and quantification tasks whilst integrating with PACS workflows and providing radiologist-level diagnostic performance validated through clinical trials.

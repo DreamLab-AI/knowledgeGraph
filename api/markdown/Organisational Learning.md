@@ -1,36 +1,111 @@
----
-public: true
----
-
-# Organisational Learning
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:organisational-learning", "@type":"Page", "title":"Organisational Learning", "vc:slug":"organisational-learning", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:organisational-learning",
-  "@type":"Class",
-  "label":"Organisational Learning",
-  "definition":"Organisational learning is the process by which a group, team or enterprise creates, retains and transfers knowledge to improve its collective performance over time. It encompasses how experience is encoded into routines, how lessons from success and failure are shared, and how the organisation adapts its mental models and practices in response. As a discipline it bridges knowledge management, continuous improvement and organisational culture.",
-  "domain":"distributed-collaboration",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:knowledge-management","label":"Knowledge Management"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:knowledge-management","label":"Knowledge Management"}],
-    "enables":[{"@id":"urn:ngm:class:continuous-improvement","label":"Continuous Improvement"},{"@id":"urn:ngm:class:knowledge-transfer","label":"Knowledge Transfer"}],
-    "supports":[{"@id":"urn:ngm:class:collaboration","label":"Collaboration"},{"@id":"urn:ngm:class:knowledge-sharing","label":"Knowledge Sharing"}],
-    "implements":[{"@id":"urn:ngm:class:feedback-loop","label":"Feedback Loop"}],
-    "uses":[{"@id":"urn:ngm:class:knowledge-base","label":"Knowledge Base"}],
-    "dependsOn":[{"@id":"urn:ngm:class:knowledge-sharing","label":"Knowledge Sharing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:incident-reporting","label":"Incident Reporting"},{"@id":"urn:ngm:class:training","label":"Training"},{"@id":"urn:ngm:class:knowledge-management","label":"Knowledge Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:continuous-improvement","label":"Continuous Improvement"},{"@id":"urn:ngm:class:feedback-loop","label":"Feedback Loop"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:organisational-learning",
+  "@type": "Page",
+  "title": "Organisational Learning",
+  "vc:slug": "organisational-learning",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:organisational-learning",
+  "@type": "Class",
+  "label": "Organisational Learning",
+  "definition": "Organisational learning is the process by which a group, team or enterprise creates, retains and transfers knowledge to improve its collective performance over time. It encompasses how experience is encoded into routines, how lessons from success and failure are shared, and how the organisation adapts its mental models and practices in response. As a discipline it bridges knowledge management, continuous improvement and organisational culture.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:knowledge-management",
+      "label": "Knowledge Management"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:continuous-improvement",
+        "label": "Continuous Improvement"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:incident-reporting",
+        "label": "Incident Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:continuous-improvement",
+        "label": "Continuous Improvement"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Organisational learning is how a group creates, retains and transfers knowledge to improve collective performance over time. It is a discipline within [[Knowledge Management]] that enables [[Continuous Improvement]] and [[Knowledge Transfer]], depending on healthy [[Knowledge Sharing]] and structured [[Feedback Loop]] practices.
 - ### Overview

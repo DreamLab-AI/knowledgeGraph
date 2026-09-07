@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Creator Compensation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Creator compensation refers to the economic mechanisms by which content creators are paid for their work, including royalties, revenue sharing, tipping, and tokenised ownership rights. In blockchain contexts it is often automated through smart contracts that distribute proceeds on primary sale and secondary resale. It is central to sustainable creator economies and to debates over fair value capture on digital platforms.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:creator-royalty-token", "label": "Creator Royalty Token"}, {"@id": "urn:ngm:class:royalty-mechanism", "label": "Royalty Mechanism"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-mechanism",
+        "label": "Royalty Mechanism"
+      }
+    ]
   },
   "quality": 0.72
 }

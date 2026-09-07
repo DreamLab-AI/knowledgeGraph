@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Net Neutrality
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

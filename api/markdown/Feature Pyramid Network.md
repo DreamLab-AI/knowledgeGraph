@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Feature Pyramid Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A Feature Pyramid Network (FPN) is a convolutional neural-network architecture that builds a multi-scale feature hierarchy with strong semantics at all levels by combining a bottom-up pathway with a top-down pathway and lateral connections. This design lets detectors and segmenters recognise objects across a wide range of sizes using features that are simultaneously high-resolution and semantically rich. FPN is a standard backbone component in modern object-detection and instance-segmentation pipelines.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:segmentation-and-identification", "label": "Segmentation and Identification"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"}
+      {
+        "@id": "urn:ngm:class:segmentation-and-identification",
+        "label": "Segmentation and Identification"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
     ]
   },
   "quality": 0.72

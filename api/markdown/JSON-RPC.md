@@ -1,8 +1,3 @@
----
-public: true
----
-
-# json-rpc
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,7 +199,7 @@ public: true
     - `jsonrpc`: `"2.0"`.
     - `result`: present on success — the procedure return value (any JSON type).
     - `error`: present on failure — an object `{code, message, data?}` where `code` is a signed integer (pre-defined system codes: -32700 Parse Error, -32600 Invalid Request, -32601 Method Not Found, -32602 Invalid Params, -32603 Internal Error).
-    - `id`: echoes the request `id`; `null` if the request could not be parsed.
+    - `id`: echoes the request `id`; `null` if the request [private] not be parsed.
   - **Notification**
     - A Request Object with no `id`. The server processes it but MUST send no response. Used for push events in bidirectional transports like [[WebSocket]].
   - **Batch Request**

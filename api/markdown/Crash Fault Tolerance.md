@@ -1,64 +1,128 @@
----
-public: true
----
-
-# Crash Fault Tolerance
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:crash-fault-tolerance", "@type":"Page", "title":"Crash Fault Tolerance", "vc:slug":"crash-fault-tolerance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:crash-fault-tolerance",
+  "@type": "Page",
+  "title": "Crash Fault Tolerance",
+  "vc:slug": "crash-fault-tolerance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:crash-fault-tolerance",
-  "@type":"Class",
-  "label":"Crash Fault Tolerance",
-  "definition":"Crash fault tolerance is the property of a distributed system that continues to operate correctly despite nodes failing by stopping, that is, by halting and ceasing to send messages. It assumes the crash-stop or crash-recovery failure model, in which faulty processes do not behave maliciously or send incorrect information. Protocols such as Paxos and Raft achieve it through replication and consensus over a quorum of non-faulty nodes.",
-  "domain":"distributed-systems",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"},
-      {"@id":"urn:ngm:class:distributed-consensus","label":"Distributed Consensus"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:crash-fault-tolerance",
+  "@type": "Class",
+  "label": "Crash Fault Tolerance",
+  "definition": "Crash fault tolerance is the property of a distributed system that continues to operate correctly despite nodes failing by stopping, that is, by halting and ceasing to send messages. It assumes the crash-stop or crash-recovery failure model, in which faulty processes do not behave maliciously or send incorrect information. Protocols such as Paxos and Raft achieve it through replication and consensus over a quorum of non-faulty nodes.",
+  "domain": "distributed-systems",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:quorum","label":"Quorum"},
-      {"@id":"urn:ngm:class:replication","label":"Replication"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:high-availability","label":"High Availability"},
-      {"@id":"urn:ngm:class:state-machine-replication","label":"State Machine Replication"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:consensus-protocol","label":"Consensus Protocol"},
-      {"@id":"urn:ngm:class:leader-election","label":"Leader Election"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:paxos","label":"Paxos"},
-      {"@id":"urn:ngm:class:raft","label":"Raft"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "@id": "urn:ngm:class:raft",
+        "label": "Raft"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:replication","label":"Replication"},
-      {"@id":"urn:ngm:class:leader-election","label":"Leader Election"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:state-machine-replication","label":"State Machine Replication"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:byzantine-fault-tolerance","label":"Byzantine Fault Tolerance"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:distributed-consensus","label":"Distributed Consensus"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:quorum","label":"Quorum"},
-      {"@id":"urn:ngm:class:consensus-protocol","label":"Consensus Protocol"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

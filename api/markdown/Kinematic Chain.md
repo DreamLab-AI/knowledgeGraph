@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - KinematicChain
----
-
-# Kinematic Chain
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,23 +20,58 @@ aliases:
   "definition": "A kinematic chain is an assembly of rigid bodies (links) connected by joints that constrain their relative motion, forming the structural and mathematical basis for analysing and controlling the motion of mechanisms and robots. Open kinematic chains (serial manipulators) have one free end and exhibit simple forward kinematics but complex inverse kinematics; closed kinematic chains (parallel manipulators) have all links connected in loops, offering higher stiffness and load capacity. The Denavit-Hartenberg convention provides the canonical parameterisation for representing joint geometry and computing transformations along the chain, underpinning all modern robot programming and simulation systems.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:kinematics", "label": "Kinematics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:kinematics",
+      "label": "Kinematics"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:kinematic-element", "label": "Kinematic Element"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:kinematic-element",
+        "label": "Kinematic Element"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"}
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:manipulator-arm", "label": "Manipulator Arm"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:differential-kinematics", "label": "Differential Kinematics"}
+      {
+        "@id": "urn:ngm:class:manipulator-arm",
+        "label": "Manipulator Arm"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:differential-kinematics",
+        "label": "Differential Kinematics"
+      }
     ]
   },
   "quality": 0.8

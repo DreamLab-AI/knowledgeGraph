@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inclusive Growth
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,19 +55,40 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"},
-      {"@id": "urn:ngm:class:well-being", "label": "Well Being"}
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "@id": "urn:ngm:class:well-being",
+        "label": "Well Being"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:harmful-bias", "label": "Harmful Bias"}
+      {
+        "@id": "urn:ngm:class:harmful-bias",
+        "label": "Harmful Bias"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +98,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:inclusive-growth:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b1bbae439f956036e5510a5fe856e1ed6f58b334d8e15cb1aacf533c6ffc4d14"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable development and well-being.
@@ -135,16 +125,16 @@ public: true
 
   - ## Critical Analysis
 		- **Anecdotal Evidence and Generalisation:**
-			- The report is based on Ramp's customer data, which may not represent the broader market. Growth figures could be skewed by a few large companies or early adopters, making the data less generalisable.
+			- The report is based on Ramp's customer data, which may not represent the broader market. Growth figures [private] be skewed by a few large companies or early adopters, making the data less generalisable.
 			- The focus on rapidly growing vendors like Anthropic might overshadow the fact that many AI tools are still in experimental or early adoption stages.
 		- **Superficial Engagement vs. Deep Integration:**
 			- Increased spending may reflect experimentation rather than deep, sustainable integration of AI tools. Companies often try new tools without committing long-term.
 			- Retention rates might indicate vendor lock-in rather than genuine satisfaction, as switching costs can deter companies from exploring better options.
 		- **Economic and Market Dynamics:**
 			- Spending increases may be driven by economic pressures to boost productivity without increasing headcount, rather than a belief in AI's transformative potential.
-			- The surge in AI spending could be driven by hype, with companies adopting AI tools to keep up with competitors, regardless of their actual value.
+			- The surge in AI spending [private] be driven by hype, with companies adopting AI tools to keep up with competitors, regardless of their actual value.
 		- **Sustainability of Growth:**
-			- Rapid growth rates may not be sustainable. As the market matures, AI spending could slow as companies standardise on a few tools or find that efficiency gains do not meet expectations.
+			- Rapid growth rates may not be sustainable. As the market matures, AI spending [private] slow as companies standardise on a few tools or find that efficiency gains do not meet expectations.
 
   - ## Economic Perspectives and Growth Theory
 
@@ -157,10 +147,10 @@ public: true
 				- AI can also help to solve complex social and environmental problems, such as climate change and disease prevention, improving quality of life for all. AI-powered technologies such as precision agriculture and personalized medicine have the potential to address global challenges and improve human well-being (Vinuesa et al., 2020).
 				- With the right policies and investments in education and retraining, the workforce can adapt to the new demands of an AI-driven economy. Acemoglu and Restrepo (2018) emphasize the importance of investing in human capital and promoting the creation of new tasks that complement AI technologies.
 				- The benefits of AI, such as increased leisure time and reduced costs of goods and services, can be widely shared if there is a concerted effort to promote inclusive growth and equitable distribution of wealth. Korinek and Stiglitz (2017) propose policies such as progressive taxation and universal basic income to ensure that the gains from AI are broadly shared.
-				- Economist David Autor from MIT presents a compelling counterargument. In his article "[AI Could Actually Help Rebuild The Middle Class,](https://www.noemamag.com/how-ai-could-help-rebuild-the-middle-class/)". Autor posits that AI has the potential to democratise expertise and create new opportunities for workers without advanced degrees, ultimately leading to greater equity and a stronger middle class.
+				- Economist David Autor from MIT presents a compelling counterargument. In his article "[AI [private] Actually Help Rebuild The Middle Class,](https://www.noemamag.com/how-ai-could-help-rebuild-the-middle-class/)". Autor posits that AI has the potential to democratise expertise and create new opportunities for workers without advanced degrees, ultimately leading to greater equity and a stronger middle class.
 					- Autor argues that unlike past automation technologies, AI can learn from unstructured data and tacit knowledge, enabling it to augment human capabilities in complex decision-making domains. By providing real-time guidance and guardrails, AI can expand access to expertise and allow people with less formal training to perform higher-skilled work.
 					  Central to Autor's thesis is the concept of "a worker of one"
-		- in a free society, every individual owns their own labor, creating an intrinsic force for greater equality when human expertise is valuable. AI could generate a variety of new middle-class jobs, counteracting the tendency for returns to accrue primarily to capital owners.
+		- in a free society, every individual owns their own labor, creating an intrinsic force for greater equality when human expertise is valuable. AI [private] generate a variety of new middle-class jobs, counteracting the tendency for returns to accrue primarily to capital owners.
 			- However, realizing these benefits will require proactive efforts to steer AI development in a direction that benefits workers. This includes investing in AI tools for education and healthcare, reforming institutions to ensure productivity gains flow to workers, and countering resistance from professional guilds.
 			  Autor emphasizes that the goal is not to render human expertise obsolete, but rather to extend its reach and efficacy. He draws an analogy to YouTube tutorials
 		- while an untrained amateur cannot safely replace a circuit breaker by watching a video, an electrician can use that same video to expand their skills and take on new tasks. Similarly, AI will be most effective when building upon a foundation of human knowledge.
@@ -177,16 +167,16 @@ public: true
 
   - ## Critical Analysis
 		- **Anecdotal Evidence and Generalisation:**
-			- The report is based on Ramp's customer data, which may not represent the broader market. Growth figures could be skewed by a few large companies or early adopters, making the data less generalisable.
+			- The report is based on Ramp's customer data, which may not represent the broader market. Growth figures [private] be skewed by a few large companies or early adopters, making the data less generalisable.
 			- The focus on rapidly growing vendors like Anthropic might overshadow the fact that many AI tools are still in experimental or early adoption stages.
 		- **Superficial Engagement vs. Deep Integration:**
 			- Increased spending may reflect experimentation rather than deep, sustainable integration of AI tools. Companies often try new tools without committing long-term.
 			- Retention rates might indicate vendor lock-in rather than genuine satisfaction, as switching costs can deter companies from exploring better options.
 		- **Economic and Market Dynamics:**
 			- Spending increases may be driven by economic pressures to boost productivity without increasing headcount, rather than a belief in AI's transformative potential.
-			- The surge in AI spending could be driven by hype, with companies adopting AI tools to keep up with competitors, regardless of their actual value.
+			- The surge in AI spending [private] be driven by hype, with companies adopting AI tools to keep up with competitors, regardless of their actual value.
 		- **Sustainability of Growth:**
-			- Rapid growth rates may not be sustainable. As the market matures, AI spending could slow as companies standardise on a few tools or find that efficiency gains do not meet expectations.
+			- Rapid growth rates may not be sustainable. As the market matures, AI spending [private] slow as companies standardise on a few tools or find that efficiency gains do not meet expectations.
 
   - ## Economic Perspectives and Growth Theory
 
@@ -199,10 +189,10 @@ public: true
 				- AI can also help to solve complex social and environmental problems, such as climate change and disease prevention, improving quality of life for all. AI-powered technologies such as precision agriculture and personalized medicine have the potential to address global challenges and improve human well-being (Vinuesa et al., 2020).
 				- With the right policies and investments in education and retraining, the workforce can adapt to the new demands of an AI-driven economy. Acemoglu and Restrepo (2018) emphasize the importance of investing in human capital and promoting the creation of new tasks that complement AI technologies.
 				- The benefits of AI, such as increased leisure time and reduced costs of goods and services, can be widely shared if there is a concerted effort to promote inclusive growth and equitable distribution of wealth. Korinek and Stiglitz (2017) propose policies such as progressive taxation and universal basic income to ensure that the gains from AI are broadly shared.
-				- Economist David Autor from MIT presents a compelling counterargument. In his article "[AI Could Actually Help Rebuild The Middle Class,](https://www.noemamag.com/how-ai-could-help-rebuild-the-middle-class/)". Autor posits that AI has the potential to democratise expertise and create new opportunities for workers without advanced degrees, ultimately leading to greater equity and a stronger middle class.
+				- Economist David Autor from MIT presents a compelling counterargument. In his article "[AI [private] Actually Help Rebuild The Middle Class,](https://www.noemamag.com/how-ai-could-help-rebuild-the-middle-class/)". Autor posits that AI has the potential to democratise expertise and create new opportunities for workers without advanced degrees, ultimately leading to greater equity and a stronger middle class.
 					- Autor argues that unlike past automation technologies, AI can learn from unstructured data and tacit knowledge, enabling it to augment human capabilities in complex decision-making domains. By providing real-time guidance and guardrails, AI can expand access to expertise and allow people with less formal training to perform higher-skilled work.
 					  Central to Autor's thesis is the concept of "a worker of one"
-		- in a free society, every individual owns their own labor, creating an intrinsic force for greater equality when human expertise is valuable. AI could generate a variety of new middle-class jobs, counteracting the tendency for returns to accrue primarily to capital owners.
+		- in a free society, every individual owns their own labor, creating an intrinsic force for greater equality when human expertise is valuable. AI [private] generate a variety of new middle-class jobs, counteracting the tendency for returns to accrue primarily to capital owners.
 			- However, realizing these benefits will require proactive efforts to steer AI development in a direction that benefits workers. This includes investing in AI tools for education and healthcare, reforming institutions to ensure productivity gains flow to workers, and countering resistance from professional guilds.
 			  Autor emphasizes that the goal is not to render human expertise obsolete, but rather to extend its reach and efficacy. He draws an analogy to YouTube tutorials
 		- while an untrained amateur cannot safely replace a circuit breaker by watching a video, an electrician can use that same video to expand their skills and take on new tasks. Similarly, AI will be most effective when building upon a foundation of human knowledge.

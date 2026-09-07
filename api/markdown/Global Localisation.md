@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Global Localisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Global localisation is the problem of estimating a robot's pose within a known map without any prior knowledge of its starting position, often called the kidnapped-robot problem. Unlike pose tracking, it must resolve ambiguity across the entire map, typically by maintaining and refining multiple pose hypotheses from sensor observations. It is fundamental to robot navigation, autonomous vehicles, and recovery from localisation failures.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gps", "label": "Gps"}, {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "Gps"
+      },
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
+    ]
   },
   "quality": 0.72
 }

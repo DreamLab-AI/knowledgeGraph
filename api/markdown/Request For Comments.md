@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Request For Comments
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

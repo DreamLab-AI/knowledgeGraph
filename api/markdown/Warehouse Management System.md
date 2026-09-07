@@ -1,36 +1,125 @@
----
-public: true
----
-
-# Warehouse Management System
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:warehouse-management-system", "@type":"Page", "title":"Warehouse Management System", "vc:slug":"warehouse-management-system", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:warehouse-management-system",
-  "@type":"Class",
-  "label":"Warehouse Management System",
-  "definition":"A warehouse management system (WMS) is the software platform that orchestrates and optimises the day-to-day operations of a warehouse or distribution centre, controlling receiving, putaway, storage location, inventory tracking, order picking, packing, and despatch. It maintains a real-time digital model of stock and locations, directs labour and equipment via task assignment, and integrates with enterprise resource planning, transport, and automation layers. As the control plane for intralogistics, the WMS underpins inventory accuracy, fulfilment throughput, and coordination with robotic warehouse automation.",
-  "domain":"robotics",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:inventory-management","label":"Inventory Management"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:supply-chain-management","label":"Supply Chain Management"}],
-    "hasPart":[{"@id":"urn:ngm:class:inventory-management","label":"Inventory Management"}],
-    "uses":[{"@id":"urn:ngm:class:barcode","label":"Barcode"},{"@id":"urn:ngm:class:rfid","label":"RFID"}],
-    "requires":[{"@id":"urn:ngm:class:enterprise-resource-planning","label":"Enterprise Resource Planning"}],
-    "enables":[{"@id":"urn:ngm:class:warehouse-automation","label":"Warehouse Automation"},{"@id":"urn:ngm:class:logistics-management","label":"Logistics Management"}],
-    "supports":[{"@id":"urn:ngm:class:demand-forecasting","label":"Demand Forecasting"}],
-    "dependsOn":[{"@id":"urn:ngm:class:enterprise-resource-planning","label":"Enterprise Resource Planning"}],
-    "implements":[{"@id":"urn:ngm:class:inventory-management","label":"Inventory Management"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:warehouse-automation","label":"Warehouse Automation"},{"@id":"urn:ngm:class:fleet-management","label":"Robot Fleet Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:logistics","label":"Logistics"},{"@id":"urn:ngm:class:supply-chain-management","label":"Supply Chain Management"},{"@id":"urn:ngm:class:demand-forecasting","label":"Demand Forecasting"}]
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:warehouse-management-system",
+  "@type": "Page",
+  "title": "Warehouse Management System",
+  "vc:slug": "warehouse-management-system",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:warehouse-management-system",
+  "@type": "Class",
+  "label": "Warehouse Management System",
+  "definition": "A warehouse management system (WMS) is the software platform that orchestrates and optimises the day-to-day operations of a warehouse or distribution centre, controlling receiving, putaway, storage location, inventory tracking, order picking, packing, and despatch. It maintains a real-time digital model of stock and locations, directs labour and equipment via task assignment, and integrates with enterprise resource planning, transport, and automation layers. As the control plane for intralogistics, the WMS underpins inventory accuracy, fulfilment throughput, and coordination with robotic warehouse automation.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:inventory-management",
+      "label": "Inventory Management"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "@id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-management",
+        "label": "Logistics Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Robot Fleet Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:wms","label":"WMS"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:wms",
+      "label": "WMS"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

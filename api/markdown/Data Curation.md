@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Data Curation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:data-curation", "@type":"Page", "title":"Data Curation", "vc:slug":"data-curation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:data-curation",
+  "@type": "Page",
+  "title": "Data Curation",
+  "vc:slug": "data-curation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

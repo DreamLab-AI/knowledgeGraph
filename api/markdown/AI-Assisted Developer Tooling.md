@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Coding support]]
-# AI-Assisted Developer Tooling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,19 +79,40 @@ elevatedFrom:: [[Coding support]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:practitioner-workflow-optimisation-heuristics", "label": "Practitioner Workflow Optimisation Heuristics"},
-      {"@id": "urn:ngm:class:gpt-engineer", "label": "GPT Engineer"}
+      {
+        "@id": "urn:ngm:class:practitioner-workflow-optimisation-heuristics",
+        "label": "Practitioner Workflow Optimisation Heuristics"
+      },
+      {
+        "@id": "urn:ngm:class:gpt-engineer",
+        "label": "GPT Engineer"
+      }
     ]
   },
   "quality": 0.5,
@@ -108,67 +123,6 @@ elevatedFrom:: [[Coding support]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:coding-support:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9a231e91e3b0a8e0186f12fe868ef044321379f8474c93610375d07935d064c2"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Training Modules]]",
-      "resolved": "urn:visionflow:linked:training-modules",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Vercel]]",
-      "resolved": "urn:visionflow:linked:vercel",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Agent Frameworks]]",
-      "resolved": "urn:visionflow:owl:class:agent-frameworks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Instruction-Following Conversational AI System]]",
-      "resolved": "urn:visionflow:owl:class:chat-gpt",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPT Engineer]]",
-      "resolved": "urn:visionflow:owl:class:gpt-engineer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Microsoft Copilot]]",
-      "resolved": "urn:visionflow:owl:class:microsoft-copilot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Practitioner Workflow Optimisation Heuristics]]",
-      "resolved": "urn:visionflow:owl:class:tips-and-tricks",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Coding Support encompasses AI-assisted tools, IDE integrations, and agent frameworks that augment software developers with capabilities including inline completion, code generation, automated refactoring, debugging assistance, and test generation. Tools range from general-purpose LLM-backed assistants to domain-specific coding agents operating on full codebases.
@@ -333,7 +287,7 @@ elevatedFrom:: [[Coding support]]
   - Effective use of AI tools requires developing specialized skills around prompting, understanding system capabilities and limitations, and framing problems appropriately. Different AI systems have strengths in different domains.
   - Software development will transition towards more hybrid human-AI teams, with less focus on writing code line-by-line. AI can provide significant productivity gains by automating rote tasks.
   - There are open questions around whether to expose functionality through general chatbot interfaces vs company-specific products. There are strategic and technical considerations favouring bespoke solutions.
-  - Open source software tends to improve quickly over time and should not be underestimated. However, regulations could potentially suppress open source AI progress.
+  - Open source software tends to improve quickly over time and should not be underestimated. However, regulations [private] potentially suppress open source AI progress.
   - [gptengineer.app](https://gptengineer.app/) is a commercial offering built on [[GPT Engineer]]
   - [Understand a codebase in github with GPT](https://useadrenaline.com/app)
   - [Sourcegraph | Code AI platform](https://sourcegraph.com/)

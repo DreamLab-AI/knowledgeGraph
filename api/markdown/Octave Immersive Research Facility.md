@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Octave Multi Model Laboratory]]
-# Octave Immersive Research Facility
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -61,18 +55,42 @@ elevatedFrom:: [[Octave Multi Model Laboratory]]
   "qualityScore": 0.7,
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"},
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ]
   },
   "provenance": {
@@ -82,42 +100,6 @@ elevatedFrom:: [[Octave Multi Model Laboratory]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:octave-multi-model-laboratory:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:26a350a4a1d8ce7e689527fde96b7d734669fe70d4b328ada23a669aeb310b24"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware and Edge]]",
-      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NICVE Virtual Reality Research Centre]]",
-      "resolved": "urn:visionflow:owl:class:national-industrial-centre-for-virtual-environments",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Gaze Contingent Telepresence Display]]",
-      "resolved": "urn:visionflow:owl:class:telethrone",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A world-class multi-modal immersive research facility at the University of Salford housing advanced display topologies, high-performance compute, and distributed systems for mixed reality, generative AI, and human-scale VR experimentation. The lab supported over 25 years of research including world firsts in collaborative mixed reality, brain scanning in phobia treatment, real-time human reconstruction from cameras, and telepresence, and served hundreds of SMEs through ERDF-funded programmes.

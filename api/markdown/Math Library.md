@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Math Library
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,23 +51,56 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:coordinate-system", "label": "Coordinate System"},
-      {"@id": "urn:ngm:class:quaternion-math", "label": "Quaternion Math"}
+      {
+        "@id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      },
+      {
+        "@id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion Math"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:fluid-simulation", "label": "Fluid Simulation"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:graphics-library", "label": "Graphics Library"},
-      {"@id": "urn:ngm:class:noise-function-library", "label": "Noise Function Library"},
-      {"@id": "urn:ngm:class:spatial-coordinates", "label": "Spatial Coordinates"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:graphics-library",
+        "label": "Graphics Library"
+      },
+      {
+        "@id": "urn:ngm:class:noise-function-library",
+        "label": "Noise Function Library"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-coordinates",
+        "label": "Spatial Coordinates"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:software-library", "label": "Software Library"}
+      {
+        "@id": "urn:ngm:class:software-library",
+        "label": "Software Library"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:math-library:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d499d89721389c320ab0d3087710b33741224addbe182a9046a9d95884dec8db"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Software Library]]",
-      "resolved": "urn:visionflow:owl:class:software-library",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A math library component in the Metaverse domain that required by PhysicsEngine.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Homeostasis
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,19 +21,37 @@ public: true
   "domain": "ai",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:cybernetics", "label": "Cybernetics"}
+    {
+      "@id": "urn:ngm:class:cybernetics",
+      "label": "Cybernetics"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:systems-theory", "label": "Systems Theory"},
-      {"@id": "urn:ngm:class:emergence", "label": "Emergence"}
+      {
+        "@id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      },
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:complex-systems", "label": "Complex Systems"}
+      {
+        "@id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
     ]
   },
   "quality": 0.8

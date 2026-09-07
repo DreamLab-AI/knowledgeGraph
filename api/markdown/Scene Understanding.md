@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scene Understanding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -195,57 +190,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:scene-understanding:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:23e8c6a7809c228cada34b05c2293c8a782ff93cce5b1cb4f2ce60e9e200fd27"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[KnoWhere Visitor Attention System]]",
-      "resolved": "urn:visionflow:owl:class:knowhere",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Perception System]]",
-      "resolved": "urn:visionflow:owl:class:perception-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Segmentation]]",
-      "resolved": "urn:visionflow:owl:class:semantic-segmentation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[software engineering]]",
-      "resolved": "urn:visionflow:owl:class:software-engineering",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Scene Understanding is the high-level semantic interpretation of visual and sensor data to comprehend the structure, context, objects, relationships, and dynamics of an environment. For autonomous systems, scene understanding involves recognising road types, lane configurations, traffic situations, pedestrian intentions, and environmental conditions to enable contextually appropriate decision-making beyond simple object detection.

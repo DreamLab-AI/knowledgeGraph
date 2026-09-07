@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ISO/IEC JTC 1/SC 27
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "ISO/IEC JTC 1/SC 27 is the joint ISO and IEC subcommittee responsible for developing international standards on information security, cybersecurity and privacy protection. Its remit includes the ISO/IEC 27000 family of information security management standards, cryptographic techniques, security evaluation criteria and identity management. It is the principal global body coordinating consensus standards in the security and privacy domain.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"},
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
     ]
   },
   "quality": 0.72

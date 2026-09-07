@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-200-robotic-telepresence
----
-
-# Robotic Telepresence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,72 +100,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robotic-telepresence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5c4f4e8971a195851da6bc741a038424a739e6ebe9d01c59a24f3be6480298e7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RemoteOfficeAttendance]]",
-      "resolved": "urn:visionflow:linked:remote-office-attendance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-020-virtual-reality-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-150-webrtc]]",
-      "resolved": "urn:visionflow:linked:tele-150-webrtc",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-201-teleoperation-systems]]",
-      "resolved": "urn:visionflow:linked:tele-201-teleoperation-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-202-remote-manipulation]]",
-      "resolved": "urn:visionflow:linked:tele-202-remote-manipulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-203-haptic-feedback-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AutonomousNavigation]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-navigation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[HumanRobotInteraction]]",
-      "resolved": "urn:visionflow:owl:class:human-robot-interaction",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TELE-001-telepresence]]",
-      "resolved": "urn:visionflow:owl:class:tele-001-telepresence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "The projection of human presence into remote physical locations through mobile robotic platforms equipped with cameras, displays, microphones, and speakers, enabling remote operators to navigate environments, interact with people, and manipulate objects as if physically present, bridging virtual and physical collaboration modalities."

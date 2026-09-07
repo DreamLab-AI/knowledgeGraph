@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Broadcasting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Broadcasting",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:telecommunications", "vc:label": "Telecommunications"},
-    {"@id": "urn:visionflow:linked:spectrum-allocation", "vc:label": "Spectrum Allocation"},
-    {"@id": "urn:visionflow:linked:satellite-communication", "vc:label": "Satellite Communication"},
-    {"@id": "urn:visionflow:linked:numpy", "vc:label": "NumPy"}
+    {
+      "@id": "urn:visionflow:linked:telecommunications",
+      "vc:label": "Telecommunications"
+    },
+    {
+      "@id": "urn:visionflow:linked:spectrum-allocation",
+      "vc:label": "Spectrum Allocation"
+    },
+    {
+      "@id": "urn:visionflow:linked:satellite-communication",
+      "vc:label": "Satellite Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:numpy",
+      "vc:label": "NumPy"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -32,17 +44,32 @@ public: true
   "definition": "The one-to-many distribution of a signal or message from a single source to all receivers within reach, in contrast to unicast (one-to-one) and multicast (one-to-selected-group) delivery. In telecommunications it denotes terrestrial and satellite radio and television transmission over allocated spectrum, and by extension the broadcast primitives of computer networks, where a frame or packet is addressed to every node on a segment. The same word names a distinct but analogous mechanism in array computing, where NumPy-style broadcasting stretches arrays of differing shapes to a common shape so that element-wise operations apply one value across many without copying data.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:telecommunications",
+    "label": "Telecommunications"
+  },
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:spectrum-allocation", "label": "Spectrum Allocation"}
+      {
+        "@id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:wireless-communication", "label": "Wireless Communication"}
+      {
+        "@id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:satellite-communication", "label": "Satellite Communication"},
-      {"@id": "urn:ngm:class:numpy", "label": "NumPy"}
+      {
+        "@id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      },
+      {
+        "@id": "urn:ngm:class:numpy",
+        "label": "NumPy"
+      }
     ]
   },
   "quality": 0.8,

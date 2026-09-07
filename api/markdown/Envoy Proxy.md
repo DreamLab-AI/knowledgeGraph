@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Envoy Proxy
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

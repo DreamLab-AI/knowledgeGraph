@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Offsetting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,46 +173,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:carbon-offsetting:be2e7251b518",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:43d71c4215928b032f8bf7dc8854b6a5df3f10e9bfa5986c35052268e2717dcb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Carbon Accounting]]",
-      "resolved": "urn:visionflow:linked:carbon-accounting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sustainability]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Credits]]",
-      "resolved": "urn:visionflow:linked:carbon-credits",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Voluntary Carbon Market]]",
-      "resolved": "urn:visionflow:linked:voluntary-carbon-market",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

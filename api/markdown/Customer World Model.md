@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Customer World Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "customer-world-model",
   "title": "Customer World Model",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Financial Transaction Data", "Proprietary Data"],
+  "vc:outboundWikilinks": [
+    "Financial Transaction Data",
+    "Proprietary Data"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:world-model", "label": "World Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:world-model",
+      "label": "World Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:world-model", "label": "World Model"}, {"@id": "urn:ngm:class:data", "label": "Data"}, {"@id": "urn:ngm:class:metadata", "label": "Metadata"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      },
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

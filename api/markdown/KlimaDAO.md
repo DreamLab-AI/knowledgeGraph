@@ -1,8 +1,3 @@
----
-public: true
----
-
-# KlimaDAO
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -86,52 +81,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:klima-dao:962c917ab88a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ef6df39f895cf6f900559056df88711a2694c8939753cec8b1066d69012a9440"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Carbon Credit Token]]",
-      "resolved": "urn:visionflow:linked:carbon-credit-token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Treasury Management]]",
-      "resolved": "urn:visionflow:linked:treasury-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Voluntary Carbon Market]]",
-      "resolved": "urn:visionflow:linked:voluntary-carbon-market",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Carbon Markets]]",
-      "resolved": "urn:visionflow:linked:carbon-markets",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Autonomous Organisation]]",
-      "resolved": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A decentralised organisation that acquires and holds tokenised carbon credits in its treasury, issuing a token backed by those credits to channel capital toward carbon retirement.

@@ -1,59 +1,120 @@
----
-public: true
----
-
-# Remote Procedure Call
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:remote-procedure-call", "@type":"Page", "title":"Remote Procedure Call", "vc:slug":"remote-procedure-call", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:remote-procedure-call",
+  "@type": "Page",
+  "title": "Remote Procedure Call",
+  "vc:slug": "remote-procedure-call",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:remote-procedure-call",
-  "@type":"Class",
-  "label":"Remote Procedure Call",
-  "definition":"A remote procedure call (RPC) is a communication paradigm in which a program invokes a procedure that executes on a different address space, typically another machine on a network, as if it were a local call. The runtime marshals arguments, transmits them over a transport, executes the procedure remotely, and returns the result, hiding the underlying network mechanics from the caller. RPC underpins distributed systems and service-to-service communication, with modern frameworks adding streaming, code generation, and efficient binary serialisation.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"},
-      {"@id":"urn:ngm:class:networking","label":"Networking"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:remote-procedure-call",
+  "@type": "Class",
+  "label": "Remote Procedure Call",
+  "definition": "A remote procedure call (RPC) is a communication paradigm in which a program invokes a procedure that executes on a different address space, typically another machine on a network, as if it were a local call. The runtime marshals arguments, transmits them over a transport, executes the procedure remotely, and returns the result, hiding the underlying network mechanics from the caller. RPC underpins distributed systems and service-to-service communication, with modern frameworks adding streaming, code generation, and efficient binary serialisation.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:protocol","label":"Protocol"},
-      {"@id":"urn:ngm:class:service-discovery","label":"Service Discovery"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:synchronous-communication","label":"Synchronous Communication"},
-      {"@id":"urn:ngm:class:message-passing","label":"Message Passing Protocol"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing Protocol"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:microservices","label":"Microservices"},
-      {"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:http","label":"HTTP"},
-      {"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:api-design","label":"API Design"},
-      {"@id":"urn:ngm:class:service-mesh","label":"Service Mesh"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:asynchronous-communication","label":"Asynchronous Communication"},
-      {"@id":"urn:ngm:class:rest-api","label":"REST API"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:distributed-protocol","label":"Distributed Protocol"},
-      {"@id":"urn:ngm:class:api","label":"API"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

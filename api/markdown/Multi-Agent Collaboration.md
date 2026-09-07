@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Multi-Agent Collaboration
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:multi-agent-collaboration", "@type": "Page", "title": "Multi-Agent Collaboration", "vc:slug": "multi-agent-collaboration", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:multi-agent-collaboration",
+  "@type": "Page",
+  "title": "Multi-Agent Collaboration",
+  "vc:slug": "multi-agent-collaboration",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Demand Elasticity Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,15 @@ public: true
   "vc:slug": "ai-demand-elasticity-framework",
   "title": "AI Demand Elasticity Framework",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Access Elasticity", "Demand Elasticity", "Economic Impact of AI", "Labor Supply", "Lump of Labor Fallacy", "Personalization Elasticity", "Price Elasticity"],
+  "vc:outboundWikilinks": [
+    "Access Elasticity",
+    "Demand Elasticity",
+    "Economic Impact of AI",
+    "Labor Supply",
+    "Lump of Labor Fallacy",
+    "Personalization Elasticity",
+    "Price Elasticity"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +29,31 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:economic-impact-of-ai", "label": "Economic Impact of AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-impact-of-ai",
+      "label": "Economic Impact of AI"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:demand-elasticity", "label": "Demand Elasticity"}, {"@id": "urn:ngm:class:price-elasticity", "label": "Price Elasticity"}, {"@id": "urn:ngm:class:personalization-elasticity", "label": "Personalization Elasticity"}, {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:demand-elasticity",
+        "label": "Demand Elasticity"
+      },
+      {
+        "@id": "urn:ngm:class:price-elasticity",
+        "label": "Price Elasticity"
+      },
+      {
+        "@id": "urn:ngm:class:personalization-elasticity",
+        "label": "Personalization Elasticity"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

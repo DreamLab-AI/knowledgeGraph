@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Cross-Metaverse Commerce
----
-
-# Cross Metaverse Commerce
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -123,72 +116,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:cross-metaverse-commerce:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b0af7583b57e4bf6c513f7c9e09eb63bf6f8a5a98da69151e7dd84708d3657a8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Asset Portability]]",
-      "resolved": "urn:visionflow:linked:asset-portability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cross-Platform Trading]]",
-      "resolved": "urn:visionflow:linked:cross-platform-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interoperability Standards]]",
-      "resolved": "urn:visionflow:linked:interoperability-standards",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Market Integration]]",
-      "resolved": "urn:visionflow:linked:virtual-market-integration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Wallet]]",
-      "resolved": "urn:visionflow:owl:class:digital-wallet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Economy]]",
-      "resolved": "urn:visionflow:owl:class:virtual-economy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Economic activities and transactions that span multiple metaverse platforms and virtual worlds, enabled by interoperability standards, blockchain-based digital assets, and unified digital identity systems that allow users to buy, sell, trade, and transfer value seamlessly across different virtual environments.

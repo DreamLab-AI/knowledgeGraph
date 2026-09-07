@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Neural Audio Enhancement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Neural audio enhancement is the use of deep learning models to improve the perceptual quality of recorded audio by removing noise, reverberation, and artefacts or by restoring lost detail. Models are trained on paired clean and degraded audio to learn a mapping that suppresses unwanted components while preserving the target signal. It is widely applied to speech in podcasting, conferencing, and media post-production.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:automated-podcasting", "label": "Automated Podcasting"}
+      {
+        "@id": "urn:ngm:class:automated-podcasting",
+        "label": "Automated Podcasting"
+      }
     ]
   },
   "quality": 0.72

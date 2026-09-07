@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GameFi
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:game-fi:033672a60d00",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a30a35454da8523562010408fd0691444270dbe7b890781c035ef3684317be32"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Token]]",
-      "resolved": "urn:visionflow:linked:token",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Smart Contract]]",
-      "resolved": "urn:visionflow:linked:smart-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[gaming]]",
-      "resolved": "urn:visionflow:linked:gaming",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NFT]]",
-      "resolved": "urn:visionflow:linked:nft",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Play-to-earn]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-play-to-earn",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://ethereum.org/en/gaming/]]",
-      "resolved": "urn:visionflow:linked:https-ethereum-org-en-gaming",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - GameFi refers to the combination of gaming with decentralised finance, where players can earn cryptocurrency or tokenised assets through gameplay. It overlaps with blockchain gaming and play-to-earn models.

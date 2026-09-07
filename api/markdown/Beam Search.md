@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Beam Search
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Beam Search",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:search-algorithm", "vc:label": "Search Algorithm"},
-    {"@id": "urn:visionflow:linked:greedy-decoding", "vc:label": "Greedy Decoding"},
-    {"@id": "urn:visionflow:linked:machine-translation", "vc:label": "Machine Translation"},
-    {"@id": "urn:visionflow:linked:text-generation", "vc:label": "Text Generation"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:encoder-decoder-architecture", "vc:label": "Encoder Decoder Architecture"},
-    {"@id": "urn:visionflow:linked:sequence-to-sequence-learning", "vc:label": "Sequence-to-Sequence Learning"},
-    {"@id": "urn:visionflow:linked:language-model", "vc:label": "Language Model"},
-    {"@id": "urn:visionflow:linked:heuristic-methods", "vc:label": "Heuristic Methods"},
-    {"@id": "urn:visionflow:linked:probability-distribution", "vc:label": "Probability Distribution"},
-    {"@id": "urn:visionflow:linked:sequence-model", "vc:label": "Sequence Model"},
-    {"@id": "urn:visionflow:linked:nucleus-sampling", "vc:label": "Nucleus Sampling"},
-    {"@id": "urn:visionflow:linked:monte-carlo-tree-search", "vc:label": "Monte Carlo Tree Search"},
-    {"@id": "urn:visionflow:linked:breadth-first-search", "vc:label": "Breadth-First Search"},
-    {"@id": "urn:visionflow:linked:beam-search-decoding", "vc:label": "Beam Search Decoding"},
-    {"@id": "urn:visionflow:linked:constrained-decoding", "vc:label": "Constrained Decoding"},
-    {"@id": "urn:visionflow:linked:speculative-decoding", "vc:label": "Speculative Decoding"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:text-summarisation", "vc:label": "Text Summarisation"},
-    {"@id": "urn:visionflow:linked:autoregressive-model", "vc:label": "Autoregressive Model"},
-    {"@id": "urn:visionflow:linked:length-normalisation", "vc:label": "Length Normalisation"},
-    {"@id": "urn:visionflow:linked:log-probability", "vc:label": "Log-Probability"},
-    {"@id": "urn:visionflow:linked:diverse-beam-search", "vc:label": "Diverse Beam Search"},
-    {"@id": "urn:visionflow:linked:exposure-bias", "vc:label": "Exposure Bias"},
-    {"@id": "urn:visionflow:linked:natural-language-generation", "vc:label": "Natural Language Generation"},
-    {"@id": "urn:visionflow:linked:code-generation", "vc:label": "Code Generation"},
-    {"@id": "urn:visionflow:linked:question-answering", "vc:label": "Question Answering"},
-    {"@id": "urn:visionflow:linked:image-captioning", "vc:label": "Image Captioning"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"},
-    {"@id": "urn:visionflow:linked:process-reward-model", "vc:label": "Process Reward Model"},
-    {"@id": "urn:visionflow:linked:viterbi-algorithm", "vc:label": "Viterbi Algorithm"},
-    {"@id": "urn:visionflow:linked:dynamic-programming", "vc:label": "Dynamic Programming"},
-    {"@id": "urn:visionflow:linked:inference-time-compute", "vc:label": "Inference-Time Compute"},
-    {"@id": "urn:visionflow:linked:open-ended-generation", "vc:label": "Open-Ended Generation"}
+    {
+      "@id": "urn:visionflow:linked:search-algorithm",
+      "vc:label": "Search Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:greedy-decoding",
+      "vc:label": "Greedy Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-translation",
+      "vc:label": "Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-generation",
+      "vc:label": "Text Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:encoder-decoder-architecture",
+      "vc:label": "Encoder Decoder Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequence-to-sequence-learning",
+      "vc:label": "Sequence-to-Sequence Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:language-model",
+      "vc:label": "Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:heuristic-methods",
+      "vc:label": "Heuristic Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:probability-distribution",
+      "vc:label": "Probability Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequence-model",
+      "vc:label": "Sequence Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:nucleus-sampling",
+      "vc:label": "Nucleus Sampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:monte-carlo-tree-search",
+      "vc:label": "Monte Carlo Tree Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:breadth-first-search",
+      "vc:label": "Breadth-First Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:beam-search-decoding",
+      "vc:label": "Beam Search Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:constrained-decoding",
+      "vc:label": "Constrained Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:speculative-decoding",
+      "vc:label": "Speculative Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-summarisation",
+      "vc:label": "Text Summarisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoregressive-model",
+      "vc:label": "Autoregressive Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:length-normalisation",
+      "vc:label": "Length Normalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:log-probability",
+      "vc:label": "Log-Probability"
+    },
+    {
+      "@id": "urn:visionflow:linked:diverse-beam-search",
+      "vc:label": "Diverse Beam Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:exposure-bias",
+      "vc:label": "Exposure Bias"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-generation",
+      "vc:label": "Natural Language Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-captioning",
+      "vc:label": "Image Captioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-reward-model",
+      "vc:label": "Process Reward Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:viterbi-algorithm",
+      "vc:label": "Viterbi Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:dynamic-programming",
+      "vc:label": "Dynamic Programming"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-time-compute",
+      "vc:label": "Inference-Time Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-ended-generation",
+      "vc:label": "Open-Ended Generation"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -74,56 +189,164 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:sequence-to-sequence-learning", "label": "Sequence-to-Sequence Learning"},
-      {"@id": "urn:ngm:class:text-summarisation", "label": "Text Summarisation"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:image-captioning", "label": "Image Captioning"},
-      {"@id": "urn:ngm:class:natural-language-generation", "label": "Natural Language Generation"}
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:sequence-to-sequence-learning",
+        "label": "Sequence-to-Sequence Learning"
+      },
+      {
+        "@id": "urn:ngm:class:text-summarisation",
+        "label": "Text Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"},
-      {"@id": "urn:ngm:class:log-probability", "label": "Log-Probability"},
-      {"@id": "urn:ngm:class:length-normalisation", "label": "Length Normalisation"}
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:log-probability",
+        "label": "Log-Probability"
+      },
+      {
+        "@id": "urn:ngm:class:length-normalisation",
+        "label": "Length Normalisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"},
-      {"@id": "urn:ngm:class:sequence-model", "label": "Sequence Model"},
-      {"@id": "urn:ngm:class:autoregressive-model", "label": "Autoregressive Model"}
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:sequence-model",
+        "label": "Sequence Model"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:length-normalisation", "label": "Length Normalisation"},
-      {"@id": "urn:ngm:class:diverse-beam-search", "label": "Diverse Beam Search"},
-      {"@id": "urn:ngm:class:constrained-decoding", "label": "Constrained Decoding"}
+      {
+        "@id": "urn:ngm:class:length-normalisation",
+        "label": "Length Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:diverse-beam-search",
+        "label": "Diverse Beam Search"
+      },
+      {
+        "@id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:greedy-decoding", "label": "Greedy Decoding"},
-      {"@id": "urn:ngm:class:nucleus-sampling", "label": "Nucleus Sampling"},
-      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"}
+      {
+        "@id": "urn:ngm:class:greedy-decoding",
+        "label": "Greedy Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:nucleus-sampling",
+        "label": "Nucleus Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:search-algorithm", "label": "Best-First Search"},
-      {"@id": "urn:ngm:class:breadth-first-search", "label": "Breadth-First Search"},
-      {"@id": "urn:ngm:class:dynamic-programming", "label": "Dynamic Programming"}
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Best-First Search"
+      },
+      {
+        "@id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:beam-search-decoding", "label": "Beam Search Decoding"},
-      {"@id": "urn:ngm:class:constrained-decoding", "label": "Constrained Decoding"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"},
-      {"@id": "urn:ngm:class:viterbi-algorithm", "label": "Viterbi Algorithm"},
-      {"@id": "urn:ngm:class:exposure-bias", "label": "Exposure Bias"},
-      {"@id": "urn:ngm:class:inference-time-compute", "label": "Inference-Time Compute"},
-      {"@id": "urn:ngm:class:process-reward-model", "label": "Process Reward Model"}
+      {
+        "@id": "urn:ngm:class:beam-search-decoding",
+        "label": "Beam Search Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:viterbi-algorithm",
+        "label": "Viterbi Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:exposure-bias",
+        "label": "Exposure Bias"
+      },
+      {
+        "@id": "urn:ngm:class:inference-time-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "@id": "urn:ngm:class:process-reward-model",
+        "label": "Process Reward Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
@@ -482,7 +705,7 @@ public: true
   As multilingual models (NLLB-200, BLOOM, mT5) scale to hundreds of languages, ensuring beam search does not produce off-target translations (outputs in wrong language) at low-resource language pairs becomes critical. [[Language Model]]-informed beam search (LiBS, ACL 2024) and language ID integration are active areas, expected to become standard components of multilingual translation decoders by 2027–2028.
 
   **Quantum-Inspired Beam Search**
-  Theoretical work on quantum-inspired combinatorial optimisation suggests that quantum annealing or QAOA (Quantum Approximate Optimisation Algorithm) could improve beam search by exploring superpositions of hypotheses. This remains highly speculative in 2026 but is included in roadmaps for 2028–2030 research.
+  Theoretical work on quantum-inspired combinatorial optimisation suggests that quantum annealing or QAOA (Quantum Approximate Optimisation Algorithm) [private] improve beam search by exploring superpositions of hypotheses. This remains highly speculative in 2026 but is included in roadmaps for 2028–2030 research.
 
   **Adaptive Beam Width and Green AI**
   Research (arXiv 2502.11723, 2025) demonstrates that beam search consumes 2–5× more GPU energy than greedy decoding due to k-fold parallel hypothesis maintenance. Adaptive beam width — dynamically adjusting k based on the entropy of the model's distribution at each step (wide beam when distribution is flat/uncertain, narrow beam when peaked/confident) — reduces average energy consumption by 30–50% with negligible quality loss. This adaptive approach is expected to become a standard inference efficiency feature in next-generation serving frameworks (vLLM, SGLang, TGI) by 2027–2028, enabling green deployment of beam search decoding in large-scale production systems.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Incident Investigation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Incident investigation is the structured process of determining the root cause, scope, and impact of a security or operational incident by collecting and analysing evidence. In a cybersecurity context it follows the breach lifecycle—identification, containment, evidence preservation, forensic analysis, and lessons learned—to understand how an incident occurred and to prevent recurrence. It relies heavily on audit trails and digital-forensics methods to reconstruct events.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}],
-    "relatedTo": [{"@id": "urn:ngm:class:digital-forensics-framework", "label": "Digital Forensics Framework"}]
+    "uses": [
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-forensics-framework",
+        "label": "Digital Forensics Framework"
+      }
+    ]
   },
   "quality": 0.72
 }

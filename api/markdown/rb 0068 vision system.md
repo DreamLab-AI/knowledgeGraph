@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0068 vision system
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,22 +59,52 @@ public: true
   "quality": 0.7,
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rb-0077-depth-camera", "label": "rb 0077 depth camera"},
-      {"@id": "urn:ngm:class:rb-0066-robot-sensor", "label": "rb 0066 robot sensor"}
+      {
+        "@id": "urn:ngm:class:rb-0077-depth-camera",
+        "label": "rb 0077 depth camera"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0066-robot-sensor",
+        "label": "rb 0066 robot sensor"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0065-visual-servoing", "label": "rb 0065 visual servoing"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:rb-0065-visual-servoing",
+        "label": "rb 0065 visual servoing"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"},
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+      {
+        "@id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      },
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
     ]
   },
   "provenance": {
@@ -89,42 +114,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0068-vision-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:2e2d8560bd18b033e4240e57ff873c96a9b83f669e35b981cbff810ec79e40d7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Aoki2003]]",
-      "resolved": "urn:visionflow:linked:aoki2003",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Hyper personalisation]]",
-      "resolved": "urn:visionflow:owl:class:hyper-personalisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A robotic vision system is an integrated sensor subsystem that captures and processes visual data — using cameras, depth sensors, or LiDAR — to provide a robot with spatial awareness, object recognition, and scene understanding capabilities. Vision systems underpin tasks including visual servoing, part inspection, SLAM-based localisation, and human-robot interaction, and conform to ISO 8373:2021 perception-system definitions.

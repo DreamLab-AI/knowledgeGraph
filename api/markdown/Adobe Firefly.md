@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adobe Firefly
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Adobe Firefly",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:adobe-creative-cloud", "vc:label": "Adobe Creative Cloud"},
-    {"@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI"},
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:text-to-image", "vc:label": "Text-to-Image"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:image-editing", "vc:label": "Image Editing"},
-    {"@id": "urn:visionflow:linked:video-generation", "vc:label": "AI Video Generation"},
-    {"@id": "urn:visionflow:linked:content-credentials", "vc:label": "Content Credentials"},
-    {"@id": "urn:visionflow:linked:c2pa", "vc:label": "C2PA"},
-    {"@id": "urn:visionflow:linked:digital-content-provenance-marking", "vc:label": "Digital Content Provenance Marking"},
-    {"@id": "urn:visionflow:linked:stable-diffusion-image-model", "vc:label": "Stable Diffusion"},
-    {"@id": "urn:visionflow:linked:midjourney-text-to-image-service", "vc:label": "Midjourney"},
-    {"@id": "urn:visionflow:linked:creative-ai", "vc:label": "Creative AI"},
-    {"@id": "urn:visionflow:linked:creative-tools", "vc:label": "Creative Tools"},
-    {"@id": "urn:visionflow:linked:generative-ai-api", "vc:label": "Generative AI API"},
-    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Creative Workflow Automation"},
-    {"@id": "urn:visionflow:linked:content-licensing", "vc:label": "Content Licensing"},
-    {"@id": "urn:visionflow:linked:training-data", "vc:label": "Licensed Training Data"},
-    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
-    {"@id": "urn:visionflow:linked:enterprise-ai", "vc:label": "Enterprise AI"},
-    {"@id": "urn:visionflow:linked:latent-diffusion", "vc:label": "Latent Diffusion"},
-    {"@id": "urn:visionflow:linked:vector-graphics", "vc:label": "Vector Graphics"},
-    {"@id": "urn:visionflow:linked:brand-management", "vc:label": "Brand Asset Management"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:fine-tuning", "vc:label": "Fine-Tuning"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:intellectual-property", "vc:label": "Intellectual Property"},
-    {"@id": "urn:visionflow:linked:creative-industries", "vc:label": "Creative Industries"},
-    {"@id": "urn:visionflow:linked:generative-fill", "vc:label": "Generative Fill"},
-    {"@id": "urn:visionflow:linked:text-effects", "vc:label": "Text Effects Generation"},
-    {"@id": "urn:visionflow:linked:substance-3d", "vc:label": "Substance 3D"},
-    {"@id": "urn:visionflow:linked:ai-regulation", "vc:label": "AI Regulation"},
-    {"@id": "urn:visionflow:linked:cloud-platform", "vc:label": "Cloud Platform"},
-    {"@id": "urn:visionflow:linked:content-moderation", "vc:label": "Content Moderation"},
-    {"@id": "urn:visionflow:linked:content-creation", "vc:label": "Content Creation"},
-    {"@id": "urn:visionflow:linked:open-source-ai", "vc:label": "Open Source AI"}
+    {
+      "@id": "urn:visionflow:linked:adobe-creative-cloud",
+      "vc:label": "Adobe Creative Cloud"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai",
+      "vc:label": "Generative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-image",
+      "vc:label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-editing",
+      "vc:label": "Image Editing"
+    },
+    {
+      "@id": "urn:visionflow:linked:video-generation",
+      "vc:label": "AI Video Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-credentials",
+      "vc:label": "Content Credentials"
+    },
+    {
+      "@id": "urn:visionflow:linked:c2pa",
+      "vc:label": "C2PA"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-content-provenance-marking",
+      "vc:label": "Digital Content Provenance Marking"
+    },
+    {
+      "@id": "urn:visionflow:linked:stable-diffusion-image-model",
+      "vc:label": "Stable Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:midjourney-text-to-image-service",
+      "vc:label": "Midjourney"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-ai",
+      "vc:label": "Creative AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-tools",
+      "vc:label": "Creative Tools"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-ai-api",
+      "vc:label": "Generative AI API"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-automation",
+      "vc:label": "Creative Workflow Automation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-licensing",
+      "vc:label": "Content Licensing"
+    },
+    {
+      "@id": "urn:visionflow:linked:training-data",
+      "vc:label": "Licensed Training Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-governance",
+      "vc:label": "AI Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:enterprise-ai",
+      "vc:label": "Enterprise AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion",
+      "vc:label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-graphics",
+      "vc:label": "Vector Graphics"
+    },
+    {
+      "@id": "urn:visionflow:linked:brand-management",
+      "vc:label": "Brand Asset Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:fine-tuning",
+      "vc:label": "Fine-Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:intellectual-property",
+      "vc:label": "Intellectual Property"
+    },
+    {
+      "@id": "urn:visionflow:linked:creative-industries",
+      "vc:label": "Creative Industries"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-fill",
+      "vc:label": "Generative Fill"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-effects",
+      "vc:label": "Text Effects Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:substance-3d",
+      "vc:label": "Substance 3D"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-regulation",
+      "vc:label": "AI Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cloud-platform",
+      "vc:label": "Cloud Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-moderation",
+      "vc:label": "Content Moderation"
+    },
+    {
+      "@id": "urn:visionflow:linked:content-creation",
+      "vc:label": "Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-source-ai",
+      "vc:label": "Open Source AI"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -244,55 +359,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:annotation:adobe-firefly-link-resolutions",
-  "@type": "LinkResolutionsAnnotation",
-  "resolutions": [
-    {"raw": "Adobe Creative Cloud", "@id": "urn:visionflow:linked:adobe-creative-cloud", "kind": "ResolvedLink"},
-    {"raw": "Generative AI", "@id": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink"},
-    {"raw": "Diffusion Model", "@id": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "Text-to-Image", "@id": "urn:visionflow:linked:text-to-image", "kind": "StubLink"},
-    {"raw": "Transformer Architecture", "@id": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
-    {"raw": "Image Generation", "@id": "urn:visionflow:linked:image-generation", "kind": "StubLink"},
-    {"raw": "Image Editing", "@id": "urn:visionflow:linked:image-editing", "kind": "StubLink"},
-    {"raw": "AI Video Generation", "@id": "urn:visionflow:linked:video-generation", "kind": "StubLink"},
-    {"raw": "Content Credentials", "@id": "urn:visionflow:linked:content-credentials", "kind": "StubLink"},
-    {"raw": "C2PA", "@id": "urn:visionflow:linked:c2pa", "kind": "StubLink"},
-    {"raw": "Digital Content Provenance Marking", "@id": "urn:visionflow:linked:digital-content-provenance-marking", "kind": "ResolvedLink"},
-    {"raw": "Stable Diffusion", "@id": "urn:visionflow:linked:stable-diffusion-image-model", "kind": "ResolvedLink"},
-    {"raw": "Midjourney", "@id": "urn:visionflow:linked:midjourney-text-to-image-service", "kind": "ResolvedLink"},
-    {"raw": "Creative AI", "@id": "urn:visionflow:linked:creative-ai", "kind": "ResolvedLink"},
-    {"raw": "Creative Tools", "@id": "urn:visionflow:linked:creative-tools", "kind": "ResolvedLink"},
-    {"raw": "Generative AI API", "@id": "urn:visionflow:linked:generative-ai-api", "kind": "StubLink"},
-    {"raw": "Creative Workflow Automation", "@id": "urn:visionflow:linked:workflow-automation", "kind": "StubLink"},
-    {"raw": "Content Licensing", "@id": "urn:visionflow:linked:content-licensing", "kind": "StubLink"},
-    {"raw": "Licensed Training Data", "@id": "urn:visionflow:linked:training-data", "kind": "StubLink"},
-    {"raw": "AI Governance", "@id": "urn:visionflow:linked:ai-governance", "kind": "StubLink"},
-    {"raw": "Enterprise AI", "@id": "urn:visionflow:linked:enterprise-ai", "kind": "StubLink"},
-    {"raw": "Latent Diffusion", "@id": "urn:visionflow:linked:latent-diffusion", "kind": "StubLink"},
-    {"raw": "Vector Graphics", "@id": "urn:visionflow:linked:vector-graphics", "kind": "StubLink"},
-    {"raw": "Brand Asset Management", "@id": "urn:visionflow:linked:brand-management", "kind": "StubLink"},
-    {"raw": "Multimodal AI", "@id": "urn:visionflow:linked:multimodal-ai", "kind": "ResolvedLink"},
-    {"raw": "Computer Vision", "@id": "urn:visionflow:linked:computer-vision", "kind": "ResolvedLink"},
-    {"raw": "Deep Learning", "@id": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
-    {"raw": "Neural Network", "@id": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
-    {"raw": "Fine-Tuning", "@id": "urn:visionflow:linked:fine-tuning", "kind": "StubLink"},
-    {"raw": "Large Language Models", "@id": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
-    {"raw": "Intellectual Property", "@id": "urn:visionflow:linked:intellectual-property", "kind": "StubLink"},
-    {"raw": "Creative Industries", "@id": "urn:visionflow:linked:creative-industries", "kind": "ResolvedLink"},
-    {"raw": "Generative Fill", "@id": "urn:visionflow:linked:generative-fill", "kind": "StubLink"},
-    {"raw": "Text Effects Generation", "@id": "urn:visionflow:linked:text-effects", "kind": "StubLink"},
-    {"raw": "Substance 3D", "@id": "urn:visionflow:linked:substance-3d", "kind": "StubLink"},
-    {"raw": "AI Regulation", "@id": "urn:visionflow:linked:ai-regulation", "kind": "StubLink"},
-    {"raw": "Cloud Platform", "@id": "urn:visionflow:linked:cloud-platform", "kind": "StubLink"},
-    {"raw": "Content Creation", "@id": "urn:visionflow:linked:content-creation", "kind": "StubLink"},
-    {"raw": "Open Source AI", "@id": "urn:visionflow:linked:open-source-ai", "kind": "StubLink"}
-  ]
-}
-```
-
 - ### Definition
   - Adobe Firefly is a suite of proprietary [[Generative AI]] models developed by Adobe Inc. and tightly embedded within the [[Adobe Creative Cloud]] platform, providing professional-grade [[Text-to-Image]] generation, outpainting, inpainting (marketed as [[Generative Fill]]), text-effect generation, vector artwork recolouring, and — from 2024 onward — AI [[AI Video Generation]] via the dedicated Firefly Video Model. The foundational architectural choice that distinguishes Firefly from competing systems such as [[Stable Diffusion]] and [[Midjourney]] is its training corpus: Firefly models are trained exclusively on Adobe Stock's library of over 300 million licensed images, openly licensed works under Creative Commons or similar licences, and public-domain material with expired copyright. This deliberate restriction enables Adobe to offer contractual intellectual property indemnification to enterprise subscribers — up to USD 10,000 per asset under Creative Cloud VIP plans and up to USD 3 million per asset under ETLA enterprise agreements — a benefit no purely web-scraped model can offer. The underlying architecture combines [[Diffusion Model]] techniques, specifically [[Latent Diffusion]] processes, with [[Transformer Architecture]] cross-attention conditioning, enabling fine-grained natural-language prompt control over photorealism, style references, colour palettes, and compositional elements. Outputs generated via Firefly are automatically tagged with [[Digital Content Provenance Marking]] metadata through the [[C2PA]] Content Credentials standard, cryptographically attesting AI involvement. Across successive model generations — Firefly Image 1 (2023), Image 2 (2023), Image 3 (2024), Image 4 (2025), and Image 5 (2026) — Adobe has progressively improved photorealism, native resolution (Image 5 generates native 4 megapixel outputs without upscaling), human anatomy accuracy, and prompt adherence. Firefly Services, the enterprise-facing API layer launched in 2024, extends access beyond Creative Cloud applications and supports [[Fine-Tuning]] of brand-specific Custom Models trained on a customer's proprietary image assets. The platform serves as Adobe's strategic foundation for integrating [[Creative AI]] into its dominant position within the global [[Creative Industries]], competing with both [[Open Source AI]] image generators and dedicated AI-native creative tools.
 
@@ -476,7 +542,7 @@ public: true
     - **Multimodal generation**: Firefly's expansion into unified [[Multimodal AI]] generation — where text, image, video, audio, and 3D outputs are generated from a single conditioning signal — is expected to converge with Firefly AI Assistant agentic workflows, enabling fully automated content production pipelines.
     - **Provenance ecosystem maturity**: C2PA adoption is expected to reach critical mass across major publishing and broadcasting distribution platforms by 2027–2028, driven by EU AI Act enforcement and equivalent legislation in other jurisdictions. Firefly's early, mandatory Content Credentials implementation positions it as the reference standard for compliant AI content.
     - **On-device and hybrid deployment**: Privacy-preserving on-device Firefly inference for mobile (Creative Cloud mobile applications) is expected to emerge by 2027, reducing latency and addressing privacy concerns for enterprise customers processing confidential brand assets.
-    - **Synthetic training data feedback loops**: The ability for Custom Model outputs to contribute back to personalised model improvement — subject to licensing controls — could enable self-improving brand models that evolve with campaign feedback.
+    - **Synthetic training data feedback loops**: The ability for Custom Model outputs to contribute back to personalised model improvement — subject to licensing controls — [private] enable self-improving brand models that evolve with campaign feedback.
     - **AR/XR integration**: Adobe's [[Substance 3D]] toolchain integration with extended reality platforms positions Firefly-powered texture and asset generation as an input to spatial computing content production for Apple Vision Pro, Meta Quest, and successor platforms.
 
   ## Creative Community Reception and Cultural Dynamics
@@ -562,7 +628,7 @@ public: true
 
     The cryptographic assurance relies on X.509 certificates issued through the C2PA Trust List, a registry of trusted content signers maintained by the C2PA organisation. Adobe's Content Credentials are signed with Adobe's certificate, whose root trust chain is anchored in the C2PA Trust List. When a platform (YouTube, Instagram, Pinterest) or a verification tool (the C2PA Content Credential Verify tool, or camera.contentauthenticity.org) inspects a claimed Content Credential, it validates the cryptographic signature against the Trust List to confirm authenticity, checks the manifest hash against the current content to detect post-signing modification, and decodes the assertions to display provenance information to the viewer or user.
 
-    The practical limitations of this system are important to understand for accurate characterisation. Content Credentials can be stripped from assets: a screenshot of an AI-generated image, or an export in a format that does not preserve embedded metadata, loses the credential. The C2PA standard addresses this through a "Soft Binding" mechanism that stores a perceptual hash fingerprint in the manifest alongside the cryptographic hash, enabling the credential to be re-associated with an image even after some metadata-stripping transformations, but this binding degrades under substantial image editing. Furthermore, C2PA verifies what tool claimed to generate the content, not whether that claim is true: a malicious actor could plausibly create a fake C2PA manifest claiming an AI-generated image was photographically captured. The Trust List gating makes this harder but not impossible. These limitations are acknowledged in the C2PA technical specification and in the Content Authenticity Initiative's public communications, where the system is positioned as "provenance transparency where it exists" rather than "deepfake detection."
+    The practical limitations of this system are important to understand for accurate characterisation. Content Credentials can be stripped from assets: a screenshot of an AI-generated image, or an export in a format that does not preserve embedded metadata, loses the credential. The C2PA standard addresses this through a "Soft Binding" mechanism that stores a perceptual hash fingerprint in the manifest alongside the cryptographic hash, enabling the credential to be re-associated with an image even after some metadata-stripping transformations, but this binding degrades under substantial image editing. Furthermore, C2PA verifies what tool claimed to generate the content, not whether that claim is true: a malicious actor [private] plausibly create a fake C2PA manifest claiming an AI-generated image was photographically captured. The Trust List gating makes this harder but not impossible. These limitations are acknowledged in the C2PA technical specification and in the Content Authenticity Initiative's public communications, where the system is positioned as "provenance transparency where it exists" rather than "deepfake detection."
 
     Platform adoption has been the critical enabler of C2PA's practical value. A Content Credential embedded in a file has no effect if no viewing platform reads and displays it. The Content Authenticity Initiative reported 1,000+ member organisations as of its 2024 milestone announcement, including major camera manufacturers (Canon, Nikon, Sony, Leica) who have committed to embedding Content Credentials in physical camera hardware to provide authenticated provenance for photographs from point of capture. Instagram, Facebook, YouTube, and Pinterest reading C2PA metadata to apply AI labels means that Firefly-generated content uploaded to these platforms triggers automated AI disclosure — a significant practical effect that Adobe has actively sought. The EU AI Act's Article 52 transparency requirements for AI-generated content, activating through 2025–2026, create a regulatory demand for exactly the disclosure mechanism that C2PA provides, accelerating platform adoption under compliance pressure.
 

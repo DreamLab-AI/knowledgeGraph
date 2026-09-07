@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Tax Policy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-tax-policy",
   "title": "AI Tax Policy",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Automation Tax", "Capital vs Labor Economy"],
+  "vc:outboundWikilinks": [
+    "Automation Tax",
+    "Capital vs Labor Economy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-policy",
+      "label": "AI Policy"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}, {"@id": "urn:ngm:class:policy", "label": "Policy"}, {"@id": "urn:ngm:class:ai-labor-market-impact", "label": "AI Labor Market Impact"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-labor-market-impact",
+        "label": "AI Labor Market Impact"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

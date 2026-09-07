@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Funding (active and available)]]
-# Active R&D Funding Opportunities Register
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,16 +51,34 @@ elevatedFrom:: [[Funding (active and available)]]
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:resource-management", "label": "Resource Management"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ]
   },
   "provenance": {
@@ -76,32 +88,6 @@ elevatedFrom:: [[Funding (active and available)]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:funding-active-and-available:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:17e19198290af530c5036c549a8935e62e963684deae466e64a0e553bc84b316"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MUST]]",
-      "resolved": "urn:visionflow:linked:must",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A curated register of active and accessible funding opportunities for immersive technology, AI, and creative industries R&D, encompassing Innovate UK grants, UKRI programmes, ARIA challenges, Web3 venture capital, and academic grant schemes. The register tracks application status, eligibility constraints, match-funding requirements, and strategic alignment to accelerate project funding decisions.
@@ -143,7 +129,7 @@ elevatedFrom:: [[Funding (active and available)]]
 		- [ChatGPT
 		- Structured exploration
 		- main daily driver (openai.com)](https://chat.openai.com/g/g-QjexzLwl7-structured-exploration-main-daily-driver/c/43c2aa80-a317-40b2-b842-283611fceb62)
-		- [MITIH Project Grant Application.docx](assets/MITIH_Project_Grant_Application_1706695237566_0.docx)
+		- [[private] Project Grant Application.docx](assets/MITIH_Project_Grant_Application_1706695237566_0.docx)
 		- [MITIH_ Risk Register .docx](assets/MITIH_Risk_Register_1706695247428_0.docx)
 		- [IUK Official
 		- Claim Validation Guidance.docx](assets/IUK_Official_-_Claim_Validation_Guidance_1706695268541_0.docx)
@@ -193,7 +179,7 @@ elevatedFrom:: [[Funding (active and available)]]
   ## AI Upskilling
   - ## Creative catalyst
   - ## XRStories
-  - ### MITIH
+  - ### [private]
 		- #### Inputs
 		- #### Outputs
 		- ### Things to sort

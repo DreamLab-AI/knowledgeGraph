@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Templates]]
-# Reusable Content Template Scaffolds
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,15 +42,30 @@ elevatedFrom:: [[Templates]]
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:documentation-generation", "label": "Documentation Generation"}
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      }
     ]
   },
   "provenance": {
@@ -66,26 +75,6 @@ elevatedFrom:: [[Templates]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:templates:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ace24cd426e0e5dd4c0aecb21704a8dc77f058f17b8ca3c9c1e81899be2e9d58"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Templates are reusable structural scaffolds in software engineering and knowledge management that define a fixed format or pattern into which variable content is inserted. They reduce repetition, enforce consistency, and accelerate authoring across code generation, documentation, and prompt engineering workflows.

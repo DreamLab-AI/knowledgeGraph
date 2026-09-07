@@ -1,56 +1,114 @@
----
-public: true
----
-
-# Genetic Algorithm
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:genetic-algorithm", "@type":"Page", "title":"Genetic Algorithm", "vc:slug":"genetic-algorithm", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:genetic-algorithm",
+  "@type": "Page",
+  "title": "Genetic Algorithm",
+  "vc:slug": "genetic-algorithm",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:genetic-algorithm",
-  "@type":"Class",
-  "label":"Genetic Algorithm",
-  "definition":"A genetic algorithm is a population-based metaheuristic for optimisation and search inspired by Darwinian natural selection, in which candidate solutions are encoded as chromosomes and evolved across generations through selection, crossover, and mutation. A fitness function ranks individuals so that fitter solutions are preferentially recombined, gradually steering the population towards high-quality regions of the search space without requiring gradient information. Genetic algorithms are well suited to combinatorial, non-convex, and black-box problems where the objective is rugged, discontinuous, or expensive to differentiate.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:evolutionary-algorithm","label":"Evolutionary Algorithm"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:crossover","label":"Crossover"},
-      {"@id":"urn:ngm:class:mutation","label":"Mutation"},
-      {"@id":"urn:ngm:class:selection","label":"Selection"},
-      {"@id":"urn:ngm:class:fitness-function","label":"Fitness Function"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:genetic-algorithm",
+  "@type": "Class",
+  "label": "Genetic Algorithm",
+  "definition": "A genetic algorithm is a population-based metaheuristic for optimisation and search inspired by Darwinian natural selection, in which candidate solutions are encoded as chromosomes and evolved across generations through selection, crossover, and mutation. A fitness function ranks individuals so that fitter solutions are preferentially recombined, gradually steering the population towards high-quality regions of the search space without requiring gradient information. Genetic algorithms are well suited to combinatorial, non-convex, and black-box problems where the objective is rugged, discontinuous, or expensive to differentiate.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:evolutionary-algorithm",
+      "label": "Evolutionary Algorithm"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:crossover",
+        "label": "Crossover"
+      },
+      {
+        "@id": "urn:ngm:class:mutation",
+        "label": "Mutation"
+      },
+      {
+        "@id": "urn:ngm:class:selection",
+        "label": "Selection"
+      },
+      {
+        "@id": "urn:ngm:class:fitness-function",
+        "label": "Fitness Function"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:evolutionary-algorithm","label":"Evolutionary Algorithm"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:search-algorithm","label":"Search Algorithm"},
-      {"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimisation Algorithm"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:population","label":"Population"},
-      {"@id":"urn:ngm:class:fitness-function","label":"Fitness Function"},
-      {"@id":"urn:ngm:class:sampling","label":"Sampling"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:population",
+        "label": "Population"
+      },
+      {
+        "@id": "urn:ngm:class:fitness-function",
+        "label": "Fitness Function"
+      },
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:hyperparameter-optimisation","label":"Hyperparameter Optimisation"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:swarm-intelligence","label":"Swarm Intelligence"},
-      {"@id":"urn:ngm:class:simulated-annealing","label":"Simulated Annealing"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"},
-      {"@id":"urn:ngm:class:simulated-annealing","label":"Simulated Annealing"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

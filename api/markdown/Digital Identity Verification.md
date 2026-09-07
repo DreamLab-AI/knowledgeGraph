@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Identity Verification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

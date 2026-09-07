@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Energy Attribute Certificates
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Energy Attribute Certificates (EACs) are tradable instruments that each represent proof that one megawatt-hour of electricity was generated from a specific source, typically renewable. They decouple the environmental attributes of energy from the underlying physical electricity, allowing those attributes to be sold, retired, or tracked independently. In blockchain contexts they are increasingly tokenised to provide auditable, fraud-resistant accounting of clean-energy consumption and to offset network energy use.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:green-blockchain-initiatives", "label": "Green Blockchain Initiatives"}, {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:green-blockchain-initiatives",
+        "label": "Green Blockchain Initiatives"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# DSCSA Compliance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "DSCSA Compliance refers to meeting the requirements of the U.S. Drug Supply Chain Security Act, which mandates electronic, interoperable tracing of prescription drugs at the unit (package) level throughout the supply chain. It requires serialisation, product identifiers, transaction history exchange, and verification of suspect or illegitimate product. Full enforcement of unit-level traceability obligates manufacturers, distributors, and dispensers to maintain auditable end-to-end records.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:pharmaceutical-supply-chain", "label": "Pharmaceutical Supply Chain"}, {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:pharmaceutical-supply-chain",
+        "label": "Pharmaceutical Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,37 +1,123 @@
----
-public: true
----
-
-# HL7 FHIR
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:hl7-fhir", "@type":"Page", "title":"HL7 FHIR", "vc:slug":"hl7-fhir", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:hl7-fhir",
+  "@type": "Page",
+  "title": "HL7 FHIR",
+  "vc:slug": "hl7-fhir",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:hl7-fhir",
-  "@type":"Class",
-  "label":"HL7 FHIR",
-  "definition":"HL7 FHIR (Fast Healthcare Interoperability Resources) is a standard developed by Health Level Seven International for the electronic exchange of healthcare information. It models clinical and administrative data as modular Resources accessed through a RESTful API using JSON or XML representations, combining a defined data model with web-native interaction. It has become the dominant modern standard for healthcare interoperability, enabling exchange between electronic health records, apps and analytics systems.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-  "relations":{
-    "standardizedBy":[{"@id":"urn:ngm:class:semantic-interoperability","label":"Semantic Interoperability"}],
-    "enables":[{"@id":"urn:ngm:class:semantic-interoperability","label":"Semantic Interoperability"},{"@id":"urn:ngm:class:data-exchange","label":"Data Exchange"},{"@id":"urn:ngm:class:healthcare-technology","label":"Healthcare Technology"}],
-    "uses":[{"@id":"urn:ngm:class:rest-api","label":"REST API"},{"@id":"urn:ngm:class:xml","label":"XML"}],
-    "requires":[{"@id":"urn:ngm:class:rest-api","label":"REST API"}],
-    "implements":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "dependsOn":[{"@id":"urn:ngm:class:interoperability","label":"Interoperability"}],
-    "supports":[{"@id":"urn:ngm:class:healthcare-records","label":"Healthcare Records"},{"@id":"urn:ngm:class:electronic-health-record","label":"Electronic Health Record"}],
-    "relatedTo":[{"@id":"urn:ngm:class:healthcare-technology","label":"Healthcare Technology"},{"@id":"urn:ngm:class:semantic-interoperability","label":"Semantic Interoperability"},{"@id":"urn:ngm:class:healthcare-records","label":"Healthcare Records"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:rest-api","label":"REST API"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hl7-fhir",
+  "@type": "Class",
+  "label": "HL7 FHIR",
+  "definition": "HL7 FHIR (Fast Healthcare Interoperability Resources) is a standard developed by Health Level Seven International for the electronic exchange of healthcare information. It models clinical and administrative data as modular Resources accessed through a RESTful API using JSON or XML representations, combining a defined data model with web-native interaction. It has become the dominant modern standard for healthcare interoperability, enabling exchange between electronic health records, apps and analytics systems.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:interoperability",
+      "label": "Interoperability"
+    }
+  ],
+  "relations": {
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-exchange",
+        "label": "Data Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:fast-healthcare-interoperability-resources","label":"Fast Healthcare Interoperability Resources"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:fast-healthcare-interoperability-resources",
+      "label": "Fast Healthcare Interoperability Resources"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

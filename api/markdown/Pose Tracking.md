@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pose Tracking
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Pose tracking is the continuous estimation of the position and orientation (6-DoF pose) of a device, user, or body over time. In spatial computing it underpins head, hand, and controller tracking for AR and VR, fusing camera, IMU, and depth data at low latency. Accurate, drift-free pose tracking is essential for stable, comfortable immersive experiences.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:ar-display-device", "label": "Ar Display Device"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ar-display-device",
+        "label": "Ar Display Device"
+      }
     ]
   },
   "quality": 0.72

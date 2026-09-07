@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0031 singularity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -65,56 +60,52 @@ public: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"},
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"}
+      {
+        "@id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0023-degrees-of-freedom", "label": "rb 0023 degrees of freedom"},
-      {"@id": "urn:ngm:class:rb-0032-manipulability", "label": "rb 0032 manipulability"},
-      {"@id": "urn:ngm:class:robot-singularity", "label": "Robot Singularity"},
-      {"@id": "urn:ngm:class:rb-0024-workspace", "label": "rb 0024 workspace"}
+      {
+        "@id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "rb 0023 degrees of freedom"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0032-manipulability",
+        "label": "rb 0032 manipulability"
+      },
+      {
+        "@id": "urn:ngm:class:robot-singularity",
+        "label": "Robot Singularity"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0024-workspace",
+        "label": "rb 0024 workspace"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0029-inverse-kinematics", "label": "rb 0029 inverse kinematics"},
-      {"@id": "urn:ngm:class:differential-kinematics", "label": "Differential Kinematics"}
+      {
+        "@id": "urn:ngm:class:rb-0029-inverse-kinematics",
+        "label": "rb 0029 inverse kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:differential-kinematics",
+        "label": "Differential Kinematics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0037-dexterity", "label": "rb 0037 dexterity"}
+      {
+        "@id": "urn:ngm:class:rb-0037-dexterity",
+        "label": "rb 0037 dexterity"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0031-singularity:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8cbaabc0e141534f79adfb6eef6ded8f8b09fa497151fe24f9b41282175f1257"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Singularity]]",
-      "resolved": "urn:visionflow:owl:class:singularity",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A kinematic singularity occurs when a robot manipulator reaches a configuration in which its Jacobian matrix becomes rank-deficient. At this point the robot loses the ability to produce end-effector motion in one or more Cartesian directions, regardless of how fast the joints move. Common singularity types in six-axis arms include boundary singularities (arm fully extended or retracted), shoulder singularities (wrist centre on the shoulder axis), and wrist singularities (two wrist axes collinear).

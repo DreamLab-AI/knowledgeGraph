@@ -1,8 +1,3 @@
----
-public: true
----
-
-# World Trade Organization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "World Trade Organization",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:governance", "vc:label": "Governance"},
-    {"@id": "urn:visionflow:linked:international-trade", "vc:label": "International Trade"},
-    {"@id": "urn:visionflow:linked:imf", "vc:label": "IMF"},
-    {"@id": "urn:visionflow:linked:oecd", "vc:label": "OECD"}
+    {
+      "@id": "urn:visionflow:linked:governance",
+      "vc:label": "Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:international-trade",
+      "vc:label": "International Trade"
+    },
+    {
+      "@id": "urn:visionflow:linked:imf",
+      "vc:label": "IMF"
+    },
+    {
+      "@id": "urn:visionflow:linked:oecd",
+      "vc:label": "OECD"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,13 +50,22 @@ public: true
   },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:international-trade", "label": "International Trade"}
+      {
+        "@id": "urn:ngm:class:international-trade",
+        "label": "International Trade"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:imf", "label": "IMF"}
+      {
+        "@id": "urn:ngm:class:imf",
+        "label": "IMF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:oecd", "label": "OECD"}
+      {
+        "@id": "urn:ngm:class:oecd",
+        "label": "OECD"
+      }
     ]
   },
   "quality": 0.8,

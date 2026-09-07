@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Reciprocal Rank Fusion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Reciprocal Rank Fusion (RRF) is a rank-aggregation method that combines multiple ranked result lists by summing the reciprocal of each document's rank across lists, weighted by a small smoothing constant. It requires no score calibration between systems, making it ideal for merging lexical and vector retrieval results in hybrid search. Its robustness and parameter simplicity have made it a default fusion technique in modern retrieval pipelines.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:ai-search", "label": "AI Search"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      }
     ]
   },
   "quality": 0.72

@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Mutual TLS
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:mutual-tls", "@type":"Page", "title":"Mutual TLS", "vc:slug":"mutual-tls", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:mutual-tls",
+  "@type": "Page",
+  "title": "Mutual TLS",
+  "vc:slug": "mutual-tls",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

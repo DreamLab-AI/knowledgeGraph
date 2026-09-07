@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Inference Compute
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Inference compute is the computational capacity consumed when a trained machine-learning model generates outputs from inputs, as distinct from the compute used during training. For large language models it scales with model size, context length, and the number of generated tokens, and increasingly with test-time reasoning techniques that spend more compute per query to improve answers. It is a primary cost and latency driver for deployed AI systems and agents.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:agents", "label": "Agents"},
-      {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"}
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Beam Search Decoding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,42 +7,150 @@ public: true
   "title": "Beam Search Decoding",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:beam-search", "vc:label": "Beam Search"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:encoder-decoder-architecture", "vc:label": "Encoder Decoder Architecture"},
-    {"@id": "urn:visionflow:linked:machine-translation", "vc:label": "Machine Translation"},
-    {"@id": "urn:visionflow:linked:text-generation", "vc:label": "Text Generation"},
-    {"@id": "urn:visionflow:linked:sampling", "vc:label": "Sampling"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:attention-mechanism", "vc:label": "Attention Mechanism"},
-    {"@id": "urn:visionflow:linked:autoregressive-model", "vc:label": "Autoregressive Model"},
-    {"@id": "urn:visionflow:linked:greedy-decoding", "vc:label": "Greedy Decoding"},
-    {"@id": "urn:visionflow:linked:nucleus-sampling", "vc:label": "Nucleus Sampling"},
-    {"@id": "urn:visionflow:linked:text-summarisation", "vc:label": "Text Summarisation"},
-    {"@id": "urn:visionflow:linked:code-generation", "vc:label": "Code Generation"},
-    {"@id": "urn:visionflow:linked:sequence-to-sequence-learning", "vc:label": "Sequence-to-Sequence Learning"},
-    {"@id": "urn:visionflow:linked:speculative-decoding", "vc:label": "Speculative Decoding"},
-    {"@id": "urn:visionflow:linked:constrained-decoding", "vc:label": "Constrained Decoding"},
-    {"@id": "urn:visionflow:linked:language-model", "vc:label": "Language Model"},
-    {"@id": "urn:visionflow:linked:natural-language-generation", "vc:label": "Natural Language Generation"},
-    {"@id": "urn:visionflow:linked:log-probability", "vc:label": "Log-Probability"},
-    {"@id": "urn:visionflow:linked:length-normalisation", "vc:label": "Length Normalisation"},
-    {"@id": "urn:visionflow:linked:inference-time-compute", "vc:label": "Inference-Time Compute"},
-    {"@id": "urn:visionflow:linked:process-reward-model", "vc:label": "Process Reward Model"},
-    {"@id": "urn:visionflow:linked:kv-cache", "vc:label": "KV-Cache"},
-    {"@id": "urn:visionflow:linked:speech-recognition", "vc:label": "Speech Recognition"},
-    {"@id": "urn:visionflow:linked:coverage-penalty", "vc:label": "Coverage Penalty"},
-    {"@id": "urn:visionflow:linked:diverse-beam-search", "vc:label": "Diverse Beam Search"},
-    {"@id": "urn:visionflow:linked:exposure-bias", "vc:label": "Exposure Bias"},
-    {"@id": "urn:visionflow:linked:image-captioning", "vc:label": "Image Captioning"},
-    {"@id": "urn:visionflow:linked:question-answering", "vc:label": "Question Answering"},
-    {"@id": "urn:visionflow:linked:probability-distribution", "vc:label": "Probability Distribution"},
-    {"@id": "urn:visionflow:linked:vocabulary", "vc:label": "Vocabulary"},
-    {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:beam-search",
+      "vc:label": "Beam Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:encoder-decoder-architecture",
+      "vc:label": "Encoder Decoder Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-translation",
+      "vc:label": "Machine Translation"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-generation",
+      "vc:label": "Text Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:sampling",
+      "vc:label": "Sampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:attention-mechanism",
+      "vc:label": "Attention Mechanism"
+    },
+    {
+      "@id": "urn:visionflow:linked:autoregressive-model",
+      "vc:label": "Autoregressive Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:greedy-decoding",
+      "vc:label": "Greedy Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:nucleus-sampling",
+      "vc:label": "Nucleus Sampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-summarisation",
+      "vc:label": "Text Summarisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:sequence-to-sequence-learning",
+      "vc:label": "Sequence-to-Sequence Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:speculative-decoding",
+      "vc:label": "Speculative Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:constrained-decoding",
+      "vc:label": "Constrained Decoding"
+    },
+    {
+      "@id": "urn:visionflow:linked:language-model",
+      "vc:label": "Language Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-generation",
+      "vc:label": "Natural Language Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:log-probability",
+      "vc:label": "Log-Probability"
+    },
+    {
+      "@id": "urn:visionflow:linked:length-normalisation",
+      "vc:label": "Length Normalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:inference-time-compute",
+      "vc:label": "Inference-Time Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-reward-model",
+      "vc:label": "Process Reward Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:kv-cache",
+      "vc:label": "KV-Cache"
+    },
+    {
+      "@id": "urn:visionflow:linked:speech-recognition",
+      "vc:label": "Speech Recognition"
+    },
+    {
+      "@id": "urn:visionflow:linked:coverage-penalty",
+      "vc:label": "Coverage Penalty"
+    },
+    {
+      "@id": "urn:visionflow:linked:diverse-beam-search",
+      "vc:label": "Diverse Beam Search"
+    },
+    {
+      "@id": "urn:visionflow:linked:exposure-bias",
+      "vc:label": "Exposure Bias"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-captioning",
+      "vc:label": "Image Captioning"
+    },
+    {
+      "@id": "urn:visionflow:linked:question-answering",
+      "vc:label": "Question Answering"
+    },
+    {
+      "@id": "urn:visionflow:linked:probability-distribution",
+      "vc:label": "Probability Distribution"
+    },
+    {
+      "@id": "urn:visionflow:linked:vocabulary",
+      "vc:label": "Vocabulary"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-verification",
+      "vc:label": "Formal Verification"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -62,56 +165,166 @@ public: true
   "definition": "Beam search decoding is the application of the beam search algorithm specifically to the inference phase of neural sequence-to-sequence and autoregressive language models, where token-by-token predictions are generated by retaining the k highest-scoring partial sequences at each step. It serves as the primary decoding strategy for tasks requiring high-fidelity, deterministic outputs such as translation, summarisation, and structured text generation.",
   "domain": "ai",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:beam-search", "label": "Beam Search"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:beam-search",
+      "label": "Beam Search"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:kv-cache", "label": "KV-Cache"},
-      {"@id": "urn:ngm:class:log-probability", "label": "Log-Probability"},
-      {"@id": "urn:ngm:class:length-normalisation", "label": "Length Normalisation"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV-Cache"
+      },
+      {
+        "@id": "urn:ngm:class:log-probability",
+        "label": "Log-Probability"
+      },
+      {
+        "@id": "urn:ngm:class:length-normalisation",
+        "label": "Length Normalisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:text-summarisation", "label": "Text Summarisation"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:natural-language-generation", "label": "Natural Language Generation"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:image-captioning", "label": "Image Captioning"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-summarisation",
+        "label": "Text Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:autoregressive-model", "label": "Autoregressive Model"},
-      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"},
-      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"}
+      {
+        "@id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      },
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:length-normalisation", "label": "Length Normalisation"},
-      {"@id": "urn:ngm:class:coverage-penalty", "label": "Coverage Penalty"},
-      {"@id": "urn:ngm:class:diverse-beam-search", "label": "Diverse Beam Search"},
-      {"@id": "urn:ngm:class:constrained-decoding", "label": "Constrained Decoding"}
+      {
+        "@id": "urn:ngm:class:length-normalisation",
+        "label": "Length Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:coverage-penalty",
+        "label": "Coverage Penalty"
+      },
+      {
+        "@id": "urn:ngm:class:diverse-beam-search",
+        "label": "Diverse Beam Search"
+      },
+      {
+        "@id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:greedy-decoding", "label": "Greedy Decoding"},
-      {"@id": "urn:ngm:class:nucleus-sampling", "label": "Nucleus Sampling"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"},
-      {"@id": "urn:ngm:class:sampling", "label": "Sampling"}
+      {
+        "@id": "urn:ngm:class:greedy-decoding",
+        "label": "Greedy Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:nucleus-sampling",
+        "label": "Nucleus Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sampling", "label": "Sampling"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:exposure-bias", "label": "Exposure Bias"},
-      {"@id": "urn:ngm:class:inference-time-compute", "label": "Inference-Time Compute"},
-      {"@id": "urn:ngm:class:process-reward-model", "label": "Process Reward Model"},
-      {"@id": "urn:ngm:class:constrained-decoding", "label": "Constrained Decoding"}
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:exposure-bias",
+        "label": "Exposure Bias"
+      },
+      {
+        "@id": "urn:ngm:class:inference-time-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "@id": "urn:ngm:class:process-reward-model",
+        "label": "Process Reward Model"
+      },
+      {
+        "@id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:beam-search", "label": "Beam Search"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ]
   },
   "quality": 0.95,
@@ -244,7 +457,7 @@ public: true
 
   **Beam Search Decoding** is the specific application of the [[Beam Search]] algorithm to the inference (generation) phase of neural [[Natural Language Processing]] models, covering every modern architecture from LSTM-based [[Sequence-to-Sequence Learning]] networks to [[Transformer Architecture]]-based [[Large Language Models]]. It is the procedure that converts a trained neural model — which produces probability distributions over token [[Vocabulary]] — into a concrete output text sequence. The distinction between [[Beam Search]] (the general algorithmic principle) and beam search decoding (its realisation in neural NLP inference) is architecturally significant: the latter must handle neural-network-specific engineering concerns including [[KV-Cache]] memory management across k simultaneous beams, batched GPU computation of vocabulary-wide softmax distributions, and integration with model-specific stopping criteria, constraints, and postprocessing pipelines.
 
-  The technique emerged as a practical necessity when the first neural machine translation models were deployed at scale circa 2014–2016. Prior statistical MT systems had already used beam search over phrase tables and word alignments; the neural era preserved the algorithm but shifted its domain from discrete phrase lattices to continuous log-probability scoring over a fixed [[Vocabulary]] at each autoregressive step. Sutskever, Vinyals, and Le's 2014 NIPS paper established beam search decoding as the standard for LSTM-based [[Encoder Decoder Architecture]] models. Bahdanau's [[Attention Mechanism]] (2015) made beam search decoding substantially more effective by providing richer source conditioning signals — the decoder could attend selectively to different source positions for each hypothesis independently, enabling more accurate scoring of beam extensions. The [[Transformer Architecture]] (Vaswani et al. 2017) further improved beam search decoding quality through multi-head self-attention and positional encodings, and Google's GNMT (Wu et al. 2016) codified the production recipe: beam width 4–8, length normalisation, coverage penalty.
+  The technique emerged as a practical necessity when the first neural machine translation models were deployed at scale circa 2014–2016. Prior statistical MT systems had already used beam search over phrase tables and word alignments; the neural era preserved the algorithm but shifted its domain from discrete phrase lattices to continuous log-probability scoring over a fixed [[Vocabulary]] at each autoregressive step. Sutskever, Vinyals, and Le's 2014 NIPS paper established beam search decoding as the standard for LSTM-based [[Encoder Decoder Architecture]] models. Bahdanau's [[Attention Mechanism]] (2015) made beam search decoding substantially more effective by providing richer source conditioning signals — the decoder [private] attend selectively to different source positions for each hypothesis independently, enabling more accurate scoring of beam extensions. The [[Transformer Architecture]] (Vaswani et al. 2017) further improved beam search decoding quality through multi-head self-attention and positional encodings, and Google's GNMT (Wu et al. 2016) codified the production recipe: beam width 4–8, length normalisation, coverage penalty.
 
   In the context of [[Large Language Models]] — decoder-only autoregressive architectures such as GPT-4, Llama 3, Claude 3, Gemini, and similar — beam search decoding operates identically in principle but faces greater engineering pressures: the models are orders of magnitude larger, [[KV-Cache]] per hypothesis occupies gigabytes of GPU memory, and the vocabulary may span 100,000+ tokens. These pressures have driven innovation in batched and trie-based beam search implementations that centralise shared prefix computations across beams, dramatically reducing redundant computation. The Hugging Face Transformers `generate()` API, the most widely used LLM inference interface in 2026, exposes beam search decoding parameters (`num_beams`, `length_penalty`, `no_repeat_ngram_size`, `forced_eos_token_id`, `constraints`) that abstract over the underlying model architecture.
 

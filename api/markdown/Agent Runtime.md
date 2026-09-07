@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Runtime
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,72 +7,270 @@ public: true
   "title": "Agent Runtime",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:agent-runtime", "vc:label": "Agent Runtime"},
-    {"@id": "urn:visionflow:linked:ai-agent-system", "vc:label": "AI Agent System"},
-    {"@id": "urn:visionflow:linked:agent-orchestrator", "vc:label": "Agent Orchestrator"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:autonomous-task-execution", "vc:label": "Autonomous Task Execution"},
-    {"@id": "urn:visionflow:linked:execution-model", "vc:label": "Execution Model"},
-    {"@id": "urn:visionflow:linked:inter-agent-communication", "vc:label": "Inter-Agent Communication"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:agent-memory", "vc:label": "Agent Memory"},
-    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
-    {"@id": "urn:visionflow:linked:vector-database", "vc:label": "Vector Database"},
-    {"@id": "urn:visionflow:linked:durable-execution", "vc:label": "Durable Execution"},
-    {"@id": "urn:visionflow:linked:human-in-the-loop", "vc:label": "Human-in-the-Loop"},
-    {"@id": "urn:visionflow:linked:lang-graph", "vc:label": "LangGraph"},
-    {"@id": "urn:visionflow:linked:autogen", "vc:label": "AutoGen"},
-    {"@id": "urn:visionflow:linked:lang-chain", "vc:label": "LangChain"},
-    {"@id": "urn:visionflow:linked:temporal", "vc:label": "Temporal"},
-    {"@id": "urn:visionflow:linked:aws-bedrock-agentcore", "vc:label": "AWS Bedrock AgentCore"},
-    {"@id": "urn:visionflow:linked:google-vertex-ai", "vc:label": "Google Vertex AI"},
-    {"@id": "urn:visionflow:linked:azure-ai-studio", "vc:label": "Azure AI Studio"},
-    {"@id": "urn:visionflow:linked:process-isolation", "vc:label": "Process Isolation"},
-    {"@id": "urn:visionflow:linked:webassembly", "vc:label": "WebAssembly"},
-    {"@id": "urn:visionflow:linked:container-isolation", "vc:label": "Container Isolation"},
-    {"@id": "urn:visionflow:linked:micro-vm", "vc:label": "MicroVM"},
-    {"@id": "urn:visionflow:linked:sandboxed-code-execution", "vc:label": "Sandboxed Code Execution"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:rate-limiting", "vc:label": "Rate Limiting"},
-    {"@id": "urn:visionflow:linked:credential-management", "vc:label": "Credential Management"},
-    {"@id": "urn:visionflow:linked:observability", "vc:label": "Observability"},
-    {"@id": "urn:visionflow:linked:langsmith", "vc:label": "LangSmith"},
-    {"@id": "urn:visionflow:linked:arize-phoenix", "vc:label": "Arize Phoenix"},
-    {"@id": "urn:visionflow:linked:opentelemetry", "vc:label": "OpenTelemetry"},
-    {"@id": "urn:visionflow:linked:streaming-response", "vc:label": "Streaming Response"},
-    {"@id": "urn:visionflow:linked:cost-tracking", "vc:label": "Cost Tracking"},
-    {"@id": "urn:visionflow:linked:multi-tenancy", "vc:label": "Multi-Tenancy"},
-    {"@id": "urn:visionflow:linked:ros-robotic-operating-system", "vc:label": "ROS (Robotic Operating System)"},
-    {"@id": "urn:visionflow:linked:dapr-agents", "vc:label": "Dapr Agents"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:prompt-injection", "vc:label": "Prompt Injection"},
-    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
-    {"@id": "urn:visionflow:linked:agent-frameworks", "vc:label": "Agent Frameworks"},
-    {"@id": "urn:visionflow:linked:agent-communication-protocol", "vc:label": "Agent Communication Protocol"},
-    {"@id": "urn:visionflow:linked:tool-registry", "vc:label": "Tool Registry"},
-    {"@id": "urn:visionflow:linked:checkpointing", "vc:label": "Checkpointing"},
-    {"@id": "urn:visionflow:linked:state-persistence", "vc:label": "State Persistence"},
-    {"@id": "urn:visionflow:linked:session-management", "vc:label": "Session Management"},
-    {"@id": "urn:visionflow:linked:api-integration", "vc:label": "API Integration"},
-    {"@id": "urn:visionflow:linked:code-execution", "vc:label": "Code Execution"},
-    {"@id": "urn:visionflow:linked:file-system-access", "vc:label": "File System Access"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:agent-identity", "vc:label": "Agent Identity"},
-    {"@id": "urn:visionflow:linked:authentication-system", "vc:label": "Authentication System"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:workflow-engine", "vc:label": "Workflow Engine"},
-    {"@id": "urn:visionflow:linked:firecracker", "vc:label": "Firecracker"},
-    {"@id": "urn:visionflow:linked:gvisor", "vc:label": "gVisor"},
-    {"@id": "urn:visionflow:linked:open-telemetry-gen-ai", "vc:label": "OpenTelemetry GenAI Spec"},
-    {"@id": "urn:visionflow:linked:llama-index", "vc:label": "LlamaIndex"},
-    {"@id": "urn:visionflow:linked:agent-layer", "vc:label": "AgentLayer"},
-    {"@id": "urn:visionflow:linked:intelligent-system", "vc:label": "Intelligent System"},
-    {"@id": "urn:visionflow:owl:class:ai-agent-system", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:owl:class:compute-layer", "vc:label": "AgentLayer"},
-    {"@id": "urn:visionflow:owl:class:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing"}
+    {
+      "@id": "urn:visionflow:linked:agent-runtime",
+      "vc:label": "Agent Runtime"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-agent-system",
+      "vc:label": "AI Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-orchestrator",
+      "vc:label": "Agent Orchestrator"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-task-execution",
+      "vc:label": "Autonomous Task Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:execution-model",
+      "vc:label": "Execution Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:inter-agent-communication",
+      "vc:label": "Inter-Agent Communication"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-memory",
+      "vc:label": "Agent Memory"
+    },
+    {
+      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "vc:label": "Retrieval-Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:vector-database",
+      "vc:label": "Vector Database"
+    },
+    {
+      "@id": "urn:visionflow:linked:durable-execution",
+      "vc:label": "Durable Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-in-the-loop",
+      "vc:label": "Human-in-the-Loop"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-graph",
+      "vc:label": "LangGraph"
+    },
+    {
+      "@id": "urn:visionflow:linked:autogen",
+      "vc:label": "AutoGen"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain",
+      "vc:label": "LangChain"
+    },
+    {
+      "@id": "urn:visionflow:linked:temporal",
+      "vc:label": "Temporal"
+    },
+    {
+      "@id": "urn:visionflow:linked:aws-bedrock-agentcore",
+      "vc:label": "AWS Bedrock AgentCore"
+    },
+    {
+      "@id": "urn:visionflow:linked:google-vertex-ai",
+      "vc:label": "Google Vertex AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:azure-ai-studio",
+      "vc:label": "Azure AI Studio"
+    },
+    {
+      "@id": "urn:visionflow:linked:process-isolation",
+      "vc:label": "Process Isolation"
+    },
+    {
+      "@id": "urn:visionflow:linked:webassembly",
+      "vc:label": "WebAssembly"
+    },
+    {
+      "@id": "urn:visionflow:linked:container-isolation",
+      "vc:label": "Container Isolation"
+    },
+    {
+      "@id": "urn:visionflow:linked:micro-vm",
+      "vc:label": "MicroVM"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandboxed-code-execution",
+      "vc:label": "Sandboxed Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:rate-limiting",
+      "vc:label": "Rate Limiting"
+    },
+    {
+      "@id": "urn:visionflow:linked:credential-management",
+      "vc:label": "Credential Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability",
+      "vc:label": "Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:langsmith",
+      "vc:label": "LangSmith"
+    },
+    {
+      "@id": "urn:visionflow:linked:arize-phoenix",
+      "vc:label": "Arize Phoenix"
+    },
+    {
+      "@id": "urn:visionflow:linked:opentelemetry",
+      "vc:label": "OpenTelemetry"
+    },
+    {
+      "@id": "urn:visionflow:linked:streaming-response",
+      "vc:label": "Streaming Response"
+    },
+    {
+      "@id": "urn:visionflow:linked:cost-tracking",
+      "vc:label": "Cost Tracking"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-tenancy",
+      "vc:label": "Multi-Tenancy"
+    },
+    {
+      "@id": "urn:visionflow:linked:ros-robotic-operating-system",
+      "vc:label": "ROS (Robotic Operating System)"
+    },
+    {
+      "@id": "urn:visionflow:linked:dapr-agents",
+      "vc:label": "Dapr Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-injection",
+      "vc:label": "Prompt Injection"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-safety",
+      "vc:label": "AI Safety"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-frameworks",
+      "vc:label": "Agent Frameworks"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-communication-protocol",
+      "vc:label": "Agent Communication Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-registry",
+      "vc:label": "Tool Registry"
+    },
+    {
+      "@id": "urn:visionflow:linked:checkpointing",
+      "vc:label": "Checkpointing"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-persistence",
+      "vc:label": "State Persistence"
+    },
+    {
+      "@id": "urn:visionflow:linked:session-management",
+      "vc:label": "Session Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:api-integration",
+      "vc:label": "API Integration"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-execution",
+      "vc:label": "Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:file-system-access",
+      "vc:label": "File System Access"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-identity",
+      "vc:label": "Agent Identity"
+    },
+    {
+      "@id": "urn:visionflow:linked:authentication-system",
+      "vc:label": "Authentication System"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:workflow-engine",
+      "vc:label": "Workflow Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:firecracker",
+      "vc:label": "Firecracker"
+    },
+    {
+      "@id": "urn:visionflow:linked:gvisor",
+      "vc:label": "gVisor"
+    },
+    {
+      "@id": "urn:visionflow:linked:open-telemetry-gen-ai",
+      "vc:label": "OpenTelemetry GenAI Spec"
+    },
+    {
+      "@id": "urn:visionflow:linked:llama-index",
+      "vc:label": "LlamaIndex"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-layer",
+      "vc:label": "AgentLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:intelligent-system",
+      "vc:label": "Intelligent System"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:ai-agent-system",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:compute-layer",
+      "vc:label": "AgentLayer"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -93,61 +286,169 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
-    {"@id": "urn:ngm:class:intelligent-system", "label": "Intelligent System"}
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "@id": "urn:ngm:class:intelligent-system",
+      "label": "Intelligent System"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:tool-registry", "label": "Tool Registry"},
-      {"@id": "urn:ngm:class:state-persistence", "label": "State Persistence"},
-      {"@id": "urn:ngm:class:session-management", "label": "Session Management"},
-      {"@id": "urn:ngm:class:process-isolation", "label": "Process Isolation"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:credential-management", "label": "Credential Management"}
+      {
+        "@id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "@id": "urn:ngm:class:state-persistence",
+        "label": "State Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "@id": "urn:ngm:class:process-isolation",
+        "label": "Process Isolation"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:credential-management",
+        "label": "Credential Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:agent-orchestrator", "label": "Agent Orchestrator"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
+      {
+        "@id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:open-telemetry", "label": "OpenTelemetry"}
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"},
-      {"@id": "urn:ngm:class:durable-execution", "label": "Durable Execution"},
-      {"@id": "urn:ngm:class:multi-tenancy", "label": "Multi-Tenancy"},
-      {"@id": "urn:ngm:class:sandboxed-code-execution", "label": "Sandboxed Code Execution"}
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:durable-execution",
+        "label": "Durable Execution"
+      },
+      {
+        "@id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxed-code-execution",
+        "label": "Sandboxed Code Execution"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:agent-memory", "label": "Agent Memory"},
-      {"@id": "urn:ngm:class:authentication-system", "label": "Authentication System"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-system",
+        "label": "Authentication System"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:execution-model", "label": "Execution Model"},
-      {"@id": "urn:ngm:class:checkpointing", "label": "Checkpointing"},
-      {"@id": "urn:ngm:class:rate-limiting", "label": "Rate Limiting"}
+      {
+        "@id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      },
+      {
+        "@id": "urn:ngm:class:checkpointing",
+        "label": "Checkpointing"
+      },
+      {
+        "@id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      }
     ],
     "depends-on": [
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"}
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:execution-model", "label": "Execution Model"},
-      {"@id": "urn:ngm:class:workflow-engine", "label": "Workflow Engine"},
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"},
-      {"@id": "urn:ngm:class:ros-robotic-operating-system", "label": "ROS (Robotic Operating System)"}
+      {
+        "@id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Engine"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ros-robotic-operating-system",
+        "label": "ROS (Robotic Operating System)"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:workflow-engine", "label": "Classical Workflow Engine"},
-      {"@id": "urn:ngm:class:serverless-function", "label": "Serverless Function"}
+      {
+        "@id": "urn:ngm:class:workflow-engine",
+        "label": "Classical Workflow Engine"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-function",
+        "label": "Serverless Function"
+      }
     ]
   },
   "quality": 0.91,
@@ -156,80 +457,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agent-runtime:b7e3d1c5a8f2",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:agent-runtime"
-  },
-  "vc:resolutions": [
-    {"raw": "[[AI Agent System]]", "resolved": "urn:visionflow:linked:ai-agent-system", "kind": "StubLink"},
-    {"raw": "[[Agent Orchestrator]]", "resolved": "urn:visionflow:linked:agent-orchestrator", "kind": "StubLink"},
-    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "StubLink"},
-    {"raw": "[[Tool Use]]", "resolved": "urn:visionflow:linked:tool-use", "kind": "StubLink"},
-    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:owl:class:model-context-protocol", "kind": "ResolvedLink"},
-    {"raw": "[[Autonomous Task Execution]]", "resolved": "urn:visionflow:linked:autonomous-task-execution", "kind": "StubLink"},
-    {"raw": "[[Execution Model]]", "resolved": "urn:visionflow:linked:execution-model", "kind": "StubLink"},
-    {"raw": "[[Inter-Agent Communication]]", "resolved": "urn:visionflow:linked:inter-agent-communication", "kind": "StubLink"},
-    {"raw": "[[Context Window]]", "resolved": "urn:visionflow:linked:context-window", "kind": "StubLink"},
-    {"raw": "[[Agent Memory]]", "resolved": "urn:visionflow:linked:agent-memory", "kind": "StubLink"},
-    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "StubLink"},
-    {"raw": "[[Vector Database]]", "resolved": "urn:visionflow:linked:vector-database", "kind": "StubLink"},
-    {"raw": "[[Durable Execution]]", "resolved": "urn:visionflow:linked:durable-execution", "kind": "StubLink"},
-    {"raw": "[[Human-in-the-Loop]]", "resolved": "urn:visionflow:linked:human-in-the-loop", "kind": "StubLink"},
-    {"raw": "[[LangGraph]]", "resolved": "urn:visionflow:linked:lang-graph", "kind": "StubLink"},
-    {"raw": "[[AutoGen]]", "resolved": "urn:visionflow:linked:autogen", "kind": "StubLink"},
-    {"raw": "[[LangChain]]", "resolved": "urn:visionflow:linked:lang-chain", "kind": "StubLink"},
-    {"raw": "[[Temporal]]", "resolved": "urn:visionflow:linked:temporal", "kind": "StubLink"},
-    {"raw": "[[AWS Bedrock AgentCore]]", "resolved": "urn:visionflow:linked:aws-bedrock-agentcore", "kind": "StubLink"},
-    {"raw": "[[Google Vertex AI]]", "resolved": "urn:visionflow:linked:google-vertex-ai", "kind": "StubLink"},
-    {"raw": "[[Azure AI Studio]]", "resolved": "urn:visionflow:linked:azure-ai-studio", "kind": "StubLink"},
-    {"raw": "[[Process Isolation]]", "resolved": "urn:visionflow:linked:process-isolation", "kind": "StubLink"},
-    {"raw": "[[WebAssembly]]", "resolved": "urn:visionflow:linked:webassembly", "kind": "StubLink"},
-    {"raw": "[[Container Isolation]]", "resolved": "urn:visionflow:linked:container-isolation", "kind": "StubLink"},
-    {"raw": "[[MicroVM]]", "resolved": "urn:visionflow:linked:micro-vm", "kind": "StubLink"},
-    {"raw": "[[Sandboxed Code Execution]]", "resolved": "urn:visionflow:linked:sandboxed-code-execution", "kind": "StubLink"},
-    {"raw": "[[Function Calling]]", "resolved": "urn:visionflow:linked:function-calling", "kind": "StubLink"},
-    {"raw": "[[Rate Limiting]]", "resolved": "urn:visionflow:linked:rate-limiting", "kind": "StubLink"},
-    {"raw": "[[Credential Management]]", "resolved": "urn:visionflow:linked:credential-management", "kind": "StubLink"},
-    {"raw": "[[Observability]]", "resolved": "urn:visionflow:linked:observability", "kind": "StubLink"},
-    {"raw": "[[LangSmith]]", "resolved": "urn:visionflow:linked:langsmith", "kind": "StubLink"},
-    {"raw": "[[Arize Phoenix]]", "resolved": "urn:visionflow:linked:arize-phoenix", "kind": "StubLink"},
-    {"raw": "[[OpenTelemetry]]", "resolved": "urn:visionflow:linked:opentelemetry", "kind": "StubLink"},
-    {"raw": "[[Streaming Response]]", "resolved": "urn:visionflow:linked:streaming-response", "kind": "StubLink"},
-    {"raw": "[[Cost Tracking]]", "resolved": "urn:visionflow:linked:cost-tracking", "kind": "StubLink"},
-    {"raw": "[[Multi-Tenancy]]", "resolved": "urn:visionflow:linked:multi-tenancy", "kind": "StubLink"},
-    {"raw": "[[ROS (Robotic Operating System)]]", "resolved": "urn:visionflow:linked:ros-robotic-operating-system", "kind": "StubLink"},
-    {"raw": "[[Dapr Agents]]", "resolved": "urn:visionflow:linked:dapr-agents", "kind": "StubLink"},
-    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "StubLink"},
-    {"raw": "[[Prompt Injection]]", "resolved": "urn:visionflow:linked:prompt-injection", "kind": "StubLink"},
-    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "StubLink"},
-    {"raw": "[[Agent Frameworks]]", "resolved": "urn:visionflow:linked:agent-frameworks", "kind": "StubLink"},
-    {"raw": "[[Agent Communication Protocol]]", "resolved": "urn:visionflow:linked:agent-communication-protocol", "kind": "StubLink"},
-    {"raw": "[[Tool Registry]]", "resolved": "urn:visionflow:linked:tool-registry", "kind": "StubLink"},
-    {"raw": "[[Checkpointing]]", "resolved": "urn:visionflow:linked:checkpointing", "kind": "StubLink"},
-    {"raw": "[[State Persistence]]", "resolved": "urn:visionflow:linked:state-persistence", "kind": "StubLink"},
-    {"raw": "[[Session Management]]", "resolved": "urn:visionflow:linked:session-management", "kind": "StubLink"},
-    {"raw": "[[API Integration]]", "resolved": "urn:visionflow:linked:api-integration", "kind": "StubLink"},
-    {"raw": "[[Code Execution]]", "resolved": "urn:visionflow:linked:code-execution", "kind": "StubLink"},
-    {"raw": "[[File System Access]]", "resolved": "urn:visionflow:linked:file-system-access", "kind": "StubLink"},
-    {"raw": "[[Agent Identity]]", "resolved": "urn:visionflow:linked:agent-identity", "kind": "StubLink"},
-    {"raw": "[[Authentication System]]", "resolved": "urn:visionflow:linked:authentication-system", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent System]]", "resolved": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
-    {"raw": "[[Workflow Engine]]", "resolved": "urn:visionflow:linked:workflow-engine", "kind": "StubLink"},
-    {"raw": "[[Firecracker]]", "resolved": "urn:visionflow:linked:firecracker", "kind": "StubLink"},
-    {"raw": "[[gVisor]]", "resolved": "urn:visionflow:linked:gvisor", "kind": "StubLink"},
-    {"raw": "[[LlamaIndex]]", "resolved": "urn:visionflow:linked:llama-index", "kind": "StubLink"},
-    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-agent-system", "kind": "ResolvedLink"},
-    {"raw": "[[AgentLayer]]", "resolved": "urn:visionflow:owl:class:compute-layer", "kind": "ResolvedLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:owl:class:natural-language-processing", "kind": "ResolvedLink"}
-  ]
 }
 ```
 
@@ -331,7 +558,7 @@ public: true
 
     The abstraction layering of an agent runtime mirrors that of a general-purpose operating system almost exactly. The OS provides: process isolation (each application runs in its own virtual address space), inter-process communication (pipes, sockets, signals), file system abstraction (a unified namespace over diverse storage devices), credential and permission enforcement (file permissions, capabilities, SELinux), and system call interface (a stable ABI that applications use to request OS services). An agent runtime provides: agent session isolation (each agent invocation runs in an isolated execution context), [[Inter-Agent Communication]] channels (message buses, event streams), tool abstraction (a unified [[Tool Registry]] over diverse external services), credential and permission enforcement ([[Credential Management]], least-privilege access control), and a standardised tool invocation interface — today predominantly [[Model Context Protocol]] — that agents use to request runtime services. The parallel is structural, not merely metaphorical.
 
-    The genealogy of agent runtimes spans three research traditions. Robotic middleware — most influentially [[ROS (Robotic Operating System)]], originating at Stanford and Willow Garage in 2007 — established the pattern of a common process management and inter-process communication substrate for heterogeneous software components forming a robot's behaviour system. ROS's publish-subscribe topics, service calls, and parameter server concepts are directly analogous to the event buses, tool call dispatch, and configuration management that LLM agent runtimes provide. The key insight from ROS was that the communication substrate should be application-framework-agnostic: individual robot components written in different programming languages could interoperate through standardised message types, a principle that [[Model Context Protocol]] has reinstituted for LLM agent tool integration. Workflow engines — Apache Airflow (2014), Luigi, Prefect — addressed the stateful, fault-tolerant execution problem for long-running data pipelines, developing the concepts of [[Checkpointing]] and [[Durable Execution]] that agent runtimes now require. The key contribution of workflow engines was the directed acyclic graph execution model with per-task retry and failure isolation, which agent runtimes have adapted to agent-step granularity. Early LLM agent frameworks from 2022–2023 — [[LangChain]], [[LlamaIndex]] — provided the first purpose-built agent runtimes for LLM-based agents, offering [[Tool Registry]] abstractions, basic memory modules, and [[Function Calling]] wrappers, though these were initially thin and lacked the production-grade isolation, observability, and durability that enterprise deployments require. The gaps between these early frameworks and production requirements drove the development of purpose-built production runtimes: [[AWS Bedrock AgentCore]], [[LangGraph]] v1.0, [[Temporal]]-based agent execution, and the [[Dapr Agents]] distributed runtime.
+    The genealogy of agent runtimes spans three research traditions. Robotic middleware — most influentially [[ROS (Robotic Operating System)]], originating at Stanford and Willow Garage in 2007 — established the pattern of a common process management and inter-process communication substrate for heterogeneous software components forming a robot's behaviour system. ROS's publish-subscribe topics, service calls, and parameter server concepts are directly analogous to the event buses, tool call dispatch, and configuration management that LLM agent runtimes provide. The key insight from ROS was that the communication substrate should be application-framework-agnostic: individual robot components written in different programming languages [private] interoperate through standardised message types, a principle that [[Model Context Protocol]] has reinstituted for LLM agent tool integration. Workflow engines — Apache Airflow (2014), Luigi, Prefect — addressed the stateful, fault-tolerant execution problem for long-running data pipelines, developing the concepts of [[Checkpointing]] and [[Durable Execution]] that agent runtimes now require. The key contribution of workflow engines was the directed acyclic graph execution model with per-task retry and failure isolation, which agent runtimes have adapted to agent-step granularity. Early LLM agent frameworks from 2022–2023 — [[LangChain]], [[LlamaIndex]] — provided the first purpose-built agent runtimes for LLM-based agents, offering [[Tool Registry]] abstractions, basic memory modules, and [[Function Calling]] wrappers, though these were initially thin and lacked the production-grade isolation, observability, and durability that enterprise deployments require. The gaps between these early frameworks and production requirements drove the development of purpose-built production runtimes: [[AWS Bedrock AgentCore]], [[LangGraph]] v1.0, [[Temporal]]-based agent execution, and the [[Dapr Agents]] distributed runtime.
 
     A production-grade agent runtime must address seven distinct technical requirements. Context management: [[Large Language Models]] have finite [[Context Window]] limits (even with 200k token windows, long-running agentic tasks accumulate enough tool output to saturate the context); the runtime must implement sliding-window summarisation, selective context retrieval via [[Retrieval-Augmented Generation]] from [[Vector Database]] stores, and episodic memory compaction to keep the agent's working context focused and within model limits over long-horizon tasks. Stateful execution: agents handling tasks that span minutes to hours — or that pause for [[Human-in-the-Loop]] approvals — require [[State Persistence]] that survives process restarts; the runtime implements [[Checkpointing]] at execution boundaries, storing agent state (conversation history, tool call results, intermediate outputs, current plan) in durable storage so that execution can resume from the last successful checkpoint after any failure. Tool-call sandboxing: when agents generate and execute code (in Python, shell, or other languages), the runtime must provide [[Sandboxed Code Execution]] using kernel-level isolation ([[gVisor]], [[Firecracker]] [[MicroVM]]) or [[WebAssembly]]-based sandboxes to prevent agent-generated code from accessing unauthorised system resources, exfiltrating data, or mounting [[Prompt Injection]] attacks through crafted tool outputs. Multi-tenancy: enterprise platforms host thousands of concurrent agent sessions for different users and workflows; the runtime enforces strict [[Process Isolation]] between tenants, preventing cross-tenant data leakage and ensuring fair resource allocation under variable load. Credential management: agents make [[API Integration]] calls to external services on behalf of users; the runtime manages [[Credential Management]] — storing and rotating API keys, OAuth tokens, and certificates — and enforces least-privilege access to ensure agents can only access the services their task requires. Cost tracking: LLM inference and external API calls generate per-token and per-call costs; the runtime provides per-agent [[Cost Tracking]] so that platform operators can enforce budget limits, implement chargeback, and optimise model selection for cost efficiency. Observability: debugging multi-step agent execution requires traces of every LLM call, tool invocation, and [[Inter-Agent Communication]] message; the runtime emits structured [[OpenTelemetry]]-compatible spans that observability platforms ([[LangSmith]], [[Arize Phoenix]], Langfuse) consume to provide trace visualisation, latency analysis, and error attribution.
 

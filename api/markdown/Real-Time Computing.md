@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time Computing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,46 +173,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:real-time-computing:43f1b2a3965d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a3d1aaa8a17ac05a5dfcdc1d70ba80ae47be20b47ef68a747a64b5bbc8a7d087"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Real-Time Operating System]]",
-      "resolved": "urn:visionflow:linked:real-time-operating-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Embedded Systems]]",
-      "resolved": "urn:visionflow:linked:embedded-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Latency]]",
-      "resolved": "urn:visionflow:linked:latency",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

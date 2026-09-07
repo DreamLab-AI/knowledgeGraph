@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Network Interface Card
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "A network interface card (NIC) is the hardware component that connects a computing device to a network and implements the physical and data-link layer functions for sending and receiving frames. It encodes outgoing data onto the transmission medium, decodes incoming signals, and carries a unique MAC address for link-layer addressing. Modern NICs often offload checksum, segmentation, and encryption work from the CPU.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-component", "label": "Network Component"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-component",
+      "label": "Network Component"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"}
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
     ]
   },
   "quality": 0.72

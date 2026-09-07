@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Life Science AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "life-science-ai",
   "title": "Life Science AI",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Domain Expertise", "GPT-5.1 Pro"],
+  "vc:outboundWikilinks": [
+    "Domain Expertise",
+    "GPT-5.1 Pro"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpt",
+      "label": "GPT"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}, {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}, {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

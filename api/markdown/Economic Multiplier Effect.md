@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Economic Multiplier Effect
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "economic-multiplier-effect",
   "title": "Economic Multiplier Effect",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Labor Market Dynamics", "Service Economy"],
+  "vc:outboundWikilinks": [
+    "Labor Market Dynamics",
+    "Service Economy"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:macroeconomics", "label": "Macroeconomics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:macroeconomics",
+      "label": "Macroeconomics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:macroeconomics", "label": "Macroeconomics"}, {"@id": "urn:ngm:class:economic-growth", "label": "Economic Growth"}, {"@id": "urn:ngm:class:market-design", "label": "Market Design"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "@id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "@id": "urn:ngm:class:market-design",
+        "label": "Market Design"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

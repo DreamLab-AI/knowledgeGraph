@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Training Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,13 @@ public: true
   "vc:slug": "ai-training-infrastructure",
   "title": "AI Training Infrastructure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Compute Scaling", "Colossus Supercomputer", "GPT Image 2.0", "H100 GPU", "OpenAI Training Infrastructure"],
+  "vc:outboundWikilinks": [
+    "AI Compute Scaling",
+    "Colossus Supercomputer",
+    "GPT Image 2.0",
+    "H100 GPU",
+    "OpenAI Training Infrastructure"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +27,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"}, {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

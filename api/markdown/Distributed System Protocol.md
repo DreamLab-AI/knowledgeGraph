@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Distributed System Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,80 +51,136 @@ public: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
-      {"@id": "urn:ngm:class:leader-election", "label": "Leader Election"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"}
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-system", "label": "Centralised System"},
-      {"@id": "urn:ngm:class:client-server-architecture", "label": "Client-Server Architecture"}
+      {
+        "@id": "urn:ngm:class:centralised-system",
+        "label": "Centralised System"
+      },
+      {
+        "@id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"},
-      {"@id": "urn:ngm:class:paxos", "label": "Paxos"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:inter-blockchain-communication", "label": "Inter-Blockchain Communication"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:inter-blockchain-communication",
+        "label": "Inter-Blockchain Communication"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-    {"@id": "urn:ngm:class:distributed-protocol", "label": "Distributed Protocol"}
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:distributed-protocol",
+      "label": "Distributed Protocol"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:distributed-system-protocol:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e7a2b38506766f3667cd7c00b7adcf16ba19c223245f460113c70a81167457d3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -260,7 +311,7 @@ public: true
   - 2. Nanotech Insight (2026). Consensus Algorithms in Distributed Systems: Engineering Guide 2026. https://nanotechinsight.com/post/distributed-systems-consensus-algorithms-engineering-guide-2026
   - 3. Decentralized Thoughts (2025). What's DAG got to do with it? https://decentralizedthoughts.github.io/2025-08-08-DAGs/
   - 4. Arun, B. et al. (2025). Shoal++: High Throughput DAG BFT Can Be Fast! arXiv:2405.20488v2. https://arxiv.org/pdf/2405.20488.pdf
-  - 5. Ding, J. & Qin, Y. (2026). Raft and Beyond: Practical Consensus Mechanisms for Geo-Distributed Data Systems. Computer Life 14(1). http://computer-life.org/index.php/ojs/article/view/37
+  - 5. Ding, J. & Qin, Y. (2026). Raft and Beyond: Practical Consensus Mechanisms for Geo-Distributed Data Systems. Computer Life 14(1). http://computer-life.org/[private].php/ojs/article/view/37
 
 - ### Provenance
   - sources:: Lamport (1978) "Time, Clocks, and the Ordering of Events in a Distributed System", CACM. Oki & Liskov (1988) "Viewstamped Replication". Fischer, Lynch & Paterson (1985) "Impossibility of Distributed Consensus with One Faulty Process". Ongaro & Ousterhout (2014) "In Search of an Understandable Consensus Algorithm (Raft)". Castro & Liskov (1999) "Practical Byzantine Fault Tolerance". Nakamoto (2008) "Bitcoin: A Peer-to-Peer Electronic Cash System".

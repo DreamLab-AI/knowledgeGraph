@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Crypto Regulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -227,57 +222,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:crypto-regulation:dae4129cef62",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7c98d5fb8e2845aaf32cf8e2cec5d9216d6985d449ae42a61e9cfa3186c69d76"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Regulatory Frameworks]]",
-      "resolved": "urn:visionflow:linked:regulatory-frameworks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Investor Protection]]",
-      "resolved": "urn:visionflow:linked:investor-protection",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Anti-Money Laundering]]",
-      "resolved": "urn:visionflow:linked:anti-money-laundering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Financial Regulation]]",
-      "resolved": "urn:visionflow:linked:financial-regulation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.esma.europa.eu/esmas-activities/digital-finance-and-innovation/markets-crypto-assets-regulation-mica]]",
-      "resolved": "urn:visionflow:linked:https-www-esma-europa-eu-esmas-activities-digital-finance-and-innovation-markets-crypto-assets-regulation-mica",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://www.fsb.org/work-of-the-fsb/financial-innovation-and-structural-change/crypto-assets-and-global-stablecoins/]]",
-      "resolved": "urn:visionflow:linked:https-www-fsb-org-work-of-the-fsb-financial-innovation-and-structural-change-crypto-assets-and-global-stablecoins",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Crypto regulation is the body of laws and supervisory rules governing the issuance, trading, custody and use of crypto-assets.
 
@@ -308,7 +252,7 @@ public: true
   - 1. Latham & Watkins (2026). US Crypto Policy Tracker: Legislative Developments. https://www.lw.com/en/us-crypto-policy-tracker/legislative-developments
   - 2. US Congress (2025). S.1582 - GENIUS Act, 119th Congress (Public Law 119-27). https://www.congress.gov/bill/119th-congress/senate-bill/1582
   - 3. Chapman and Cutler LLP (2025). Mid-Summer Developments in Crypto Legislation and Regulatory Guidance. https://www.chapman.com/publication-mid-summer-developments-in-crypto-legislation-and-regulatory-guidance
-  - 4. Columbia Science and Technology Law Review (2026). The CLARITY Crisis: Why Crypto Regulation Is Stuck in the Senate. https://journals.library.columbia.edu/index.php/stlr/blog/view/771
+  - 4. Columbia Science and Technology Law Review (2026). The CLARITY Crisis: Why Crypto Regulation Is Stuck in the Senate. https://journals.library.columbia.edu/[private].php/stlr/blog/view/771
   - 5. Cryptoeconomics (2026). European Union — MiCA jurisdiction profile. https://cryptoeconomics.com/jurisdictions/european-union/
   - 6. Financial Conduct Authority (2026). A new regime for cryptoasset regulation. https://www.fca.org.uk/firms/new-regime-cryptoasset-regulation
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metadata Standards
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,42 +172,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metadata-standards:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e17856a629eedf80b89587f854bb6c16079a0513628011a3ae235d402010e095"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cross-System Data Exchange]]",
-      "resolved": "urn:visionflow:linked:cross-system-data-exchange",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Data Standards]]",
-      "resolved": "urn:visionflow:owl:class:data-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Established frameworks and specifications such as Dublin Core, IPTC, and XMP that define how descriptive information about digital assets should be structured, enabling interoperability, discoverability, and consistent management across systems.

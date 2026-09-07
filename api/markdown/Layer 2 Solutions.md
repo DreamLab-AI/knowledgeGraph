@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Layer-2 Solutions
----
-
-# Layer 2 Solutions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,4 +173,3 @@ aliases:
   - The ecosystem matured rapidly between 2021 and 2024, with Arbitrum and Optimism processing hundreds of millions of dollars in daily transaction volume. EIP-4844 (Proto-Danksharding), implemented on Ethereum in March 2024, introduced blob-carrying transactions that reduced data availability costs for rollups by approximately 10–100× — a pivotal moment making layer 2 transactions economically viable for micropayments and gaming. Application-specific rollups ("app-chains") such as those built on the OP Stack or ZK Stack allow projects to deploy sovereign chains with custom execution environments whilst inheriting Ethereum settlement security.
 
   - In 2024–2025 layer 2 development is converging on two themes: ZK proof system maturation and cross-chain interoperability. ZK proof generation times have fallen from minutes to seconds with hardware acceleration and optimised proving systems, making real-time ZK transaction confirmation feasible. Shared sequencer networks and canonical bridge standards aim to improve composability across the fragmented layer 2 landscape. Regulators are beginning to scrutinise layer 2 architectures for compliance, particularly around sequencer centralisation and the traceability of [[Blockchain Transaction|transactions]] for [[Anti-Money Laundering|AML]] purposes.
-

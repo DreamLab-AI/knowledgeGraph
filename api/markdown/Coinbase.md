@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Coinbase
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -193,47 +188,12 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:coinbase:f80f21938e52",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:dea5fd255c1c5814283904e976f177caaf0c58b32ac07aaed76d264ab3d8ff77"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Binance]]",
-      "resolved": "urn:visionflow:linked:binance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Optimism]]",
-      "resolved": "urn:visionflow:linked:optimism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Asset Domain]]",
-      "resolved": "urn:visionflow:linked:digital-asset",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Coinbase is a publicly traded [[Centralised Exchange]] and [[Digital Asset Custody]] company headquartered in San Francisco, California, founded in 2012 by Brian Armstrong and Fred Ehrsam. It provides a regulated marketplace for buying, selling, and holding [[Cryptocurrency]] assets, alongside institutional-grade custody, staking, lending, and payment services. The company completed a direct listing on the Nasdaq in April 2021, establishing a landmark for the integration of the [[Digital Asset Domain]] with traditional public capital markets. Coinbase has since expanded into [[Blockchain]] infrastructure by developing the [[Base Network]], a [[Layer-2 Scaling]] chain built on the [[OP Stack]], and by offering developer APIs enabling [[Decentralised Finance]] applications.
 
 - ### Overview
   - Coinbase occupies a unique position in the global cryptocurrency industry as a regulated, publicly listed exchange primarily focused on the United States market. Unlike offshore competitors, it has pursued regulatory compliance as a core strategic differentiator — seeking licences in multiple jurisdictions, engaging with the SEC and CFTC, and maintaining strict [[Know Your Customer]] and anti-money-laundering controls.
-  - Its 2021 direct listing on Nasdaq (ticker: COIN) was a pivotal moment for the industry, signalling that crypto infrastructure could meet the disclosure requirements of a major stock exchange, and bringing the sector into mainstream institutional view.
+  - Its 2021 direct listing on Nasdaq (ticker: COIN) was a pivotal moment for the industry, signalling that crypto infrastructure [private] meet the disclosure requirements of a major stock exchange, and bringing the sector into mainstream institutional view.
   - Coinbase's product surface covers three broad pillars:
     - **Retail consumer**: exchange, [[Blockchain Wallet]], staking rewards, NFT marketplace access.
     - **Institutional**: prime brokerage, [[Digital Asset Custody]], over-the-counter trading via Coinbase Prime, and asset management.

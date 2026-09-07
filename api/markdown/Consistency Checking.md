@@ -1,53 +1,108 @@
----
-public: true
----
-
-# Consistency Checking
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:consistency-checking", "@type":"Page", "title":"Consistency Checking", "vc:slug":"consistency-checking", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:consistency-checking",
+  "@type": "Page",
+  "title": "Consistency Checking",
+  "vc:slug": "consistency-checking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:consistency-checking",
-  "@type":"Class",
-  "label":"Consistency Checking",
-  "definition":"Consistency checking is the process of verifying that a set of statements, data items or constraints contains no contradictions and that all derivable conclusions remain mutually compatible. In knowledge representation it confirms that an ontology or knowledge base admits at least one model, while in data systems it confirms that records satisfy declared integrity rules. The technique underpins trust in automated reasoning by rejecting configurations that would license arbitrary or unsound inferences.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:verification","label":"Verification"}],
-  "relations":{
-    "enables":[
-      {"@id":"urn:ngm:class:reasoning","label":"Reasoning"},
-      {"@id":"urn:ngm:class:inference","label":"Inference"},
-      {"@id":"urn:ngm:class:data-integrity","label":"Data Integrity"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:consistency-checking",
+  "@type": "Class",
+  "label": "Consistency Checking",
+  "definition": "Consistency checking is the process of verifying that a set of statements, data items or constraints contains no contradictions and that all derivable conclusions remain mutually compatible. In knowledge representation it confirms that an ontology or knowledge base admits at least one model, while in data systems it confirms that records satisfy declared integrity rules. The technique underpins trust in automated reasoning by rejecting configurations that would license arbitrary or unsound inferences.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:verification",
+      "label": "Verification"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:constraint-satisfaction","label":"Constraint Satisfaction"},
-      {"@id":"urn:ngm:class:theorem-proving","label":"Theorem Proving"},
-      {"@id":"urn:ngm:class:inference-engine","label":"Inference Engine"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "@id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:knowledge-representation","label":"Knowledge Representation"},
-      {"@id":"urn:ngm:class:formal-verification","label":"Formal Verification"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:data-validation","label":"Data Validation"},
-      {"@id":"urn:ngm:class:quality-assurance","label":"Quality Assurance"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
-    "appliesTo":[
-      {"@id":"urn:ngm:class:ontology","label":"Ontology"},
-      {"@id":"urn:ngm:class:knowledge-base","label":"Knowledge Base"}
+    "appliesTo": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:semantic-web","label":"Semantic Web"},
-      {"@id":"urn:ngm:class:schema-validation","label":"Schema Validation"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:schema-validation",
+        "label": "Schema Validation"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

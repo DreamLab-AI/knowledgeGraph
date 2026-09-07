@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Factory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,20 +59,44 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:digital-twin-technology", "label": "Digital Twin Technology"},
-      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"}
+      {
+        "@id": "urn:ngm:class:digital-twin-technology",
+        "label": "Digital Twin Technology"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:digital-twin-infrastructure", "label": "Digital Twin Infrastructure"}
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-infrastructure",
+        "label": "Digital Twin Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-training", "label": "Virtual Training"},
-      {"@id": "urn:ngm:class:digital-twin-collaboration", "label": "Digital Twin Collaboration"}
+      {
+        "@id": "urn:ngm:class:virtual-training",
+        "label": "Virtual Training"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-collaboration",
+        "label": "Digital Twin Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-replica", "label": "Virtual Replica"},
-      {"@id": "urn:ngm:class:cross-platform-digital-twins", "label": "Cross Platform Digital Twins"}
+      {
+        "@id": "urn:ngm:class:virtual-replica",
+        "label": "Virtual Replica"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-digital-twins",
+        "label": "Cross Platform Digital Twins"
+      }
     ]
   },
   "provenance": {
@@ -87,37 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-factory:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e23aa4ef06842a9141edbacaf2b528836620075279e8f665e5c11f608a05ee0b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A physically accurate digital twin representation of a manufacturing facility that enables modeling, simulation, analysis, and optimization of production processes, resources, and operations without requiring physical prototypes or pilot plants.

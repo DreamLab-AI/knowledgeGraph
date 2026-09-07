@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[National Industrial Centre for Virtual Environments]]
-# NICVE Virtual Reality Research Centre
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -52,19 +46,40 @@ elevatedFrom:: [[National Industrial Centre for Virtual Environments]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
-      {"@id": "urn:ngm:class:multi-user-systems", "label": "Multi User Systems"}
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi User Systems"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ]
   },
   "provenance": {
@@ -74,26 +89,6 @@ elevatedFrom:: [[National Industrial Centre for Virtual Environments]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:national-industrial-centre-for-virtual-environments:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:de79604daa429e64f4fd4d07e7e293ec88f59c81de448f0dfda240790b65cd40"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A UK academic research centre active from the late 1990s through to the early 2020s, based at the University of Salford, that advanced industrial applications of virtual reality including CAVE systems, immersive workbenches, and telepresence. NICVE succeeded the National Advanced Robotics Research Centre and produced foundational work in multi-user virtual environments, real-time rendering on SGI hardware, and later human-scale mixed reality telecollaboration. The centre evolved through multiple directors and phases before being disbanded in the early 2020s as institutional interest waned.

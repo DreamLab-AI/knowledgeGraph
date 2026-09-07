@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ICO AI Guidance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The ICO AI Guidance is the body of guidance issued by the UK Information Commissioner's Office on applying data-protection law to artificial-intelligence systems. It covers lawful basis, fairness, transparency, automated decision-making, and the trade-offs between accuracy and privacy when processing personal data in AI. The guidance helps organisations demonstrate accountability and conduct data-protection impact assessments for AI deployments.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-search", "label": "AI Search"}, {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      }
+    ]
   },
   "quality": 0.72
 }

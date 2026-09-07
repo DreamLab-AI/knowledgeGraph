@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robot Manipulation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -272,7 +267,7 @@ public: true
   - Tomas Lozano-Pérez's configuration-space framework (1983) formalised collision-free motion planning, enabling systematic trajectory generation.
   - Kenneth Salisbury's work on dexterous robotic hands at MIT in the 1980s established the theoretical foundations for multi-finger [[Grasp Planning]] and [[Impedance Control]].
   - The 2003–2007 DARPA Urban Challenge and 2012 DARPA Robotics Challenge stimulated whole-body manipulation research in disaster response.
-  - Deep learning for manipulation (Levine et al., 2016; Mahler et al. Dex-Net, 2017) demonstrated that end-to-end visuomotor policies could be learned at scale.
+  - Deep learning for manipulation (Levine et al., 2016; Mahler et al. Dex-Net, 2017) demonstrated that end-to-end visuomotor policies [private] be learned at scale.
   - The 2023–2025 wave of manipulation foundation models (RT-2, OpenVLA, Octo, pi0) marks the current frontier, converging robotics with large-scale pre-training paradigms from language and vision.
 
 - ### Provenance

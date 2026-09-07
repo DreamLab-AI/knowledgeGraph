@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - TELE-052-neural-radiance-fields
----
-
-# Neural Radiance Fields
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -79,26 +72,68 @@ aliases:
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:ray-marching", "label": "Ray Marching"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ray-marching",
+        "label": "Ray Marching"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
-      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"},
-      {"@id": "urn:ngm:class:scene-capture-and-reconstruction", "label": "Scene Capture and Reconstruction"},
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"}
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      },
+      {
+        "@id": "urn:ngm:class:scene-capture-and-reconstruction",
+        "label": "Scene Capture and Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:real-time-rendering-pipeline", "label": "Real-Time Rendering Pipeline"},
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      }
     ]
   },
   "provenance": {
@@ -108,57 +143,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:neural-radiance-fields:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:68581bde4d84b7ae0528c81545e76cd654186f19d14a037a200b8523fdb132a5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[TELE-020-virtual-reality-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-050-neural-rendering-telepresence]]",
-      "resolved": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-051-3d-gaussian-splatting]]",
-      "resolved": "urn:visionflow:linked:tele-051-3d-gaussian-splatting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-053-volumetric-video-conferencing]]",
-      "resolved": "urn:visionflow:linked:tele-053-volumetric-video-conferencing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TELE-060-instant-ngp]]",
-      "resolved": "urn:visionflow:linked:tele-060-instant-ngp",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering Pipeline]]",
-      "resolved": "urn:visionflow:owl:class:real-time-rendering-pipeline",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - "A neural rendering technique representing 3D scenes as continuous volumetric functions encoded by multilayer perceptrons, mapping 5D coordinates (3D position + 2D viewing direction) to colour and density, enabling photorealistic novel view synthesis from sparse input photographs through volumetric ray marching and gradient-based optimisation."

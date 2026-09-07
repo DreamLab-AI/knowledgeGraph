@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Random Forest
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

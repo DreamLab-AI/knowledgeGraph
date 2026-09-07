@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Real-Time Digital Twin Synchronization
----
-
-# Real Time Digital Twin Synchronization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -79,42 +72,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:real-time-digital-twin-synchronization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6666aa90712324f1fd85de31e66ed4906b86f2e854879bc2b5c02f3679a43d3a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Virtual Real Interaction]]",
-      "resolved": "urn:visionflow:linked:virtual-real-interaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Twin Technology]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The continuous bidirectional data exchange between physical industrial assets and their virtual replicas in the industrial metaverse, enabling real-time monitoring, predictive maintenance, and scenario testing through IoT sensor integration and cloud-based rendering.

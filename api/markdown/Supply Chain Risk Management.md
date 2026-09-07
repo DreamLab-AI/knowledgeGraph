@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Supply Chain Risk Management
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:supply-chain-risk-management", "@type":"Page", "title":"Supply Chain Risk Management", "vc:slug":"supply-chain-risk-management", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:supply-chain-risk-management",
+  "@type": "Page",
+  "title": "Supply Chain Risk Management",
+  "vc:slug": "supply-chain-risk-management",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,47 +21,102 @@ public: true
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [
-    { "@id": "urn:ngm:class:risk-management-framework", "label": "Risk Management Framework" }
+    {
+      "@id": "urn:ngm:class:risk-management-framework",
+      "label": "Risk Management Framework"
+    }
   ],
   "relations": {
     "partOf": [
-      { "@id": "urn:ngm:class:risk-management-framework", "label": "Risk Management Framework" }
+      {
+        "@id": "urn:ngm:class:risk-management-framework",
+        "label": "Risk Management Framework"
+      }
     ],
     "hasPart": [
-      { "@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment" },
-      { "@id": "urn:ngm:class:risk-mitigation", "label": "Risk Mitigation" }
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment" },
-      { "@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling" }
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:software-bill-of-materials", "label": "Software Bill of Materials" },
-      { "@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management" }
+      {
+        "@id": "urn:ngm:class:software-bill-of-materials",
+        "label": "Software Bill of Materials"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:supply-chain-security", "label": "Supply Chain Security" },
-      { "@id": "urn:ngm:class:resilience", "label": "Resilience" },
-      { "@id": "urn:ngm:class:business-continuity", "label": "Business Continuity" }
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:operational-risk", "label": "Operational Risk" },
-      { "@id": "urn:ngm:class:procurement", "label": "Procurement" }
+      {
+        "@id": "urn:ngm:class:operational-risk",
+        "label": "Operational Risk"
+      },
+      {
+        "@id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      }
     ],
     "standardizedBy": [
-      { "@id": "urn:ngm:class:nist", "label": "NIST" },
-      { "@id": "urn:ngm:class:nist-csf", "label": "NIST CSF" }
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:nist-csf",
+        "label": "NIST CSF"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity" }
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:supply-chain", "label": "Supply Chain" }
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
     ]
   },
   "sameAs": [],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

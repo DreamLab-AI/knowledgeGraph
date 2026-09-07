@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Parameter Modulation System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -77,42 +72,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:parameter-modulation-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3c83cb93313a850532965b59dc0bd0fed5a1aff2e0753e42477d26b80a3c0119"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Dynamic Sound Design]]",
-      "resolved": "urn:visionflow:linked:dynamic-sound-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Audio System]]",
-      "resolved": "urn:visionflow:owl:class:audio-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A signal processing architecture that uses modulator signals to dynamically control carrier signal parameters like pitch, amplitude, and timbre over time, enabling expressive sound synthesis and complex audio effects through techniques such as FM, AM, and envelope modulation.

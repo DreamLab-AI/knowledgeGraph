@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Miro
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Miro is a cloud-based collaborative whiteboard platform that provides an infinite canvas for distributed teams to brainstorm, diagram, map workflows, and run workshops in real time. It offers sticky notes, templates, frameworks, and integrations with tools such as Jira, Slack, and design suites. It is widely adopted for product discovery, agile ceremonies, and remote facilitation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      }
     ]
   },
   "quality": 0.72

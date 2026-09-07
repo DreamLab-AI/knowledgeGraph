@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Client-Side Validation Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Client-side validation theory is the conceptual framework in which the validity of state transitions is verified by the affected parties themselves rather than by every node of a global consensus layer, with the blockchain used only to commit to and order single-use seals. Data and proofs are kept off-chain and shared peer-to-peer, so the base chain provides ordering and double-spend prevention without learning transaction contents. It matters because it underpins scalable, private smart-contract systems such as RGB that inherit Bitcoin's security without bloating its chain.",
   "domain": "blockchain",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"}
+      {
+        "@id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      }
     ]
   },
   "quality": 0.72

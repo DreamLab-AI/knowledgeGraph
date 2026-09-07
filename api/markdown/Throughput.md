@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Throughput
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:throughput", "@type":"Page", "title":"Throughput", "vc:slug":"throughput", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:throughput",
+  "@type": "Page",
+  "title": "Throughput",
+  "vc:slug": "throughput",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

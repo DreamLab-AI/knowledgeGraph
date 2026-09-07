@@ -1,56 +1,108 @@
----
-public: true
----
-
-# Uri Scheme
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:uri-scheme", "@type":"Page", "title":"Uri Scheme", "vc:slug":"uri-scheme", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:uri-scheme",
+  "@type": "Page",
+  "title": "Uri Scheme",
+  "vc:slug": "uri-scheme",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:uri-scheme",
-  "@type":"Class",
-  "label":"Uri Scheme",
-  "definition":"A URI scheme is the leading component of a Uniform Resource Identifier that names the namespace, protocol, or resolution mechanism by which the remainder of the identifier is to be interpreted, appearing before the colon delimiter (for example http, https, mailto, did, urn, or ipfs). Schemes are registered with IANA under provisional or permanent status and define the syntax and semantics of the scheme-specific part. Custom and decentralised schemes such as did: and ipfs: extend the URI model to identity and content-addressed systems, making the scheme a foundational element of how distributed resources are addressed and trusted.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:protocol","label":"Protocol"}],
-  "relations":{
-    "partOf":[
-      {"@id":"urn:ngm:class:decentralised-identifiers","label":"Decentralised Identifiers"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:uri-scheme",
+  "@type": "Class",
+  "label": "Uri Scheme",
+  "definition": "A URI scheme is the leading component of a Uniform Resource Identifier that names the namespace, protocol, or resolution mechanism by which the remainder of the identifier is to be interpreted, appearing before the colon delimiter (for example http, https, mailto, did, urn, or ipfs). Schemes are registered with IANA under provisional or permanent status and define the syntax and semantics of the scheme-specific part. Custom and decentralised schemes such as did: and ipfs: extend the URI model to identity and content-addressed systems, making the scheme a foundational element of how distributed resources are addressed and trusted.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:protocol",
+      "label": "Protocol"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:naming-scheme","label":"Naming Scheme"},
-      {"@id":"urn:ngm:class:protocol","label":"Protocol"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:naming-scheme",
+        "label": "Naming Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:identifier","label":"Identifier"},
-      {"@id":"urn:ngm:class:standards","label":"Standards"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:identifier",
+        "label": "Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:decentralised-identifiers","label":"Decentralised Identifiers"},
-      {"@id":"urn:ngm:class:verifiable-credentials","label":"Verifiable Credentials"},
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:did","label":"DID"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:did",
+        "label": "DID"
+      }
     ],
-    "standardizedBy":[
-      {"@id":"urn:ngm:class:standards","label":"Standards"}
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:web","label":"Web"},
-      {"@id":"urn:ngm:class:naming-scheme","label":"Naming Scheme"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:web",
+        "label": "Web"
+      },
+      {
+        "@id": "urn:ngm:class:naming-scheme",
+        "label": "Naming Scheme"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:decentralised-identifiers","label":"Decentralised Identifiers"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

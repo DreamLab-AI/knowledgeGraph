@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Chainlink Oracles
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Chainlink Oracles are decentralised oracle networks operated by the Chainlink protocol that securely fetch, validate, and deliver off-chain data to on-chain smart contracts. They aggregate inputs from multiple independent node operators using cryptographic proofs and reputation systems to ensure tamper-resistant data feeds. Widely deployed for price feeds, verifiable randomness, and cross-chain communication, they form critical infrastructure for decentralised finance and Web3 applications.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:oracle-network",
+      "label": "Oracle Network"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:verifiable-random-function", "label": "Verifiable Random Function"}
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:chainlink", "label": "Chainlink"},
-      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"},
-      {"@id": "urn:ngm:class:chainlink-ccip", "label": "Chainlink CCIP"}
+      {
+        "@id": "urn:ngm:class:chainlink",
+        "label": "Chainlink"
+      },
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:chainlink-ccip",
+        "label": "Chainlink CCIP"
+      }
     ]
   },
   "quality": 0.8

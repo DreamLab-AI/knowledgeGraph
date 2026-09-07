@@ -1,38 +1,132 @@
----
-public: true
----
-
-# Human-AI Collaboration
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:human-ai-collaboration", "@type":"Page", "title":"Human-AI Collaboration", "vc:slug":"human-ai-collaboration", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:human-ai-collaboration",
+  "@type": "Page",
+  "title": "Human-AI Collaboration",
+  "vc:slug": "human-ai-collaboration",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:human-ai-collaboration",
-  "@type":"Class",
-  "label":"Human-AI Collaboration",
-  "definition":"Human-AI collaboration is the design of systems and workflows in which people and artificial-intelligence agents work jointly, combining human judgement and oversight with machine speed and scale. It encompasses interaction patterns, division of labour, and trust mechanisms that keep humans meaningfully in or on the loop. Effective collaboration improves decision quality and accountability while harnessing AI as an augmenting rather than replacing force.",
-  "domain":"artificial-intelligence",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"},{"@id":"urn:ngm:class:ai-application","label":"AI Application"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:human-in-the-loop","label":"Human-in-the-Loop"},{"@id":"urn:ngm:class:human-oversight","label":"Human Oversight"}],
-    "requires":[{"@id":"urn:ngm:class:explainable-ai","label":"Explainable AI"},{"@id":"urn:ngm:class:trustworthy-ai","label":"Trustworthy AI"}],
-    "enables":[{"@id":"urn:ngm:class:decision-support","label":"Decision Support"},{"@id":"urn:ngm:class:collaboration","label":"Collaboration"}],
-    "dependsOn":[{"@id":"urn:ngm:class:human-in-the-loop","label":"Human-in-the-Loop"}],
-    "uses":[{"@id":"urn:ngm:class:conversational-ai","label":"Conversational AI"},{"@id":"urn:ngm:class:generative-ai","label":"Generative AI"}],
-    "supports":[{"@id":"urn:ngm:class:human-oversight","label":"Human Oversight"},{"@id":"urn:ngm:class:decision-support","label":"Decision Support"}],
-    "implements":[{"@id":"urn:ngm:class:ai-alignment","label":"AI Alignment"}],
-    "relatedTo":[{"@id":"urn:ngm:class:chatbot","label":"Chatbot"},{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"},{"@id":"urn:ngm:class:prompt-engineering","label":"Prompt Engineering"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:foundation-model","label":"Foundation Model"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:reinforcement-learning-from-human-feedback","label":"Reinforcement Learning from Human Feedback"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-ai-collaboration",
+  "@type": "Class",
+  "label": "Human-AI Collaboration",
+  "definition": "Human-AI collaboration is the design of systems and workflows in which people and artificial-intelligence agents work jointly, combining human judgement and oversight with machine speed and scale. It encompasses interaction patterns, division of labour, and trust mechanisms that keep humans meaningfully in or on the loop. Effective collaboration improves decision quality and accountability while harnessing AI as an augmenting rather than replacing force.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

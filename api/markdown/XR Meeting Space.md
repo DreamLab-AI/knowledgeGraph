@@ -1,8 +1,3 @@
----
-public: true
----
-
-# XR Meeting Space
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,21 +59,48 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:virtual-reality-platform", "label": "Virtual Reality Platform"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:virtual-reality-platform",
+        "label": "Virtual Reality Platform"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:haptics", "label": "Haptics"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-work", "label": "Distributed Work"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:distributed-work",
+        "label": "Distributed Work"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:metaverse-application", "label": "Metaverse Application"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-application",
+        "label": "Metaverse Application"
+      }
     ]
   },
   "provenance": {
@@ -88,37 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:xr-meeting-space:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9008da8242ef488ef3806f0b253382b3dc6722755448e9117c05ba875a46d9c8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Collaboration]]",
-      "resolved": "urn:visionflow:owl:class:virtual-collaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Virtual collaboration environments accessed through extended reality devices that enable remote participants to interact as avatars or volumetric representations in shared 3D spaces, supporting meetings, presentations, design reviews, and team collaboration with spatial audio and gesture-based communication.

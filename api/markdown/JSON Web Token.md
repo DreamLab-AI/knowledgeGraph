@@ -1,8 +1,3 @@
----
-public: true
----
-
-# JSON Web Token
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,4 +175,3 @@ public: true
   - JWTs have become the de facto session credential format for microservices, single-page applications, and mobile API clients because they eliminate the session state synchronisation problem across horizontally scaled service instances. An API gateway or individual microservice can verify a JWT locally using a cached public key (retrieved from the issuer's JWKS endpoint), making authorisation decisions without database lookups. This statelessness comes at the cost of revocability: a signed JWT remains valid until its "exp" claim is reached, so revoking a compromised token requires either short expiry windows or a token revocation list that reintroduces server-side state.
 
   - In 2024-2025, JWT security practices have matured in response to documented attack classes: algorithm confusion attacks (exploiting "none" algorithm or RS256/HS256 confusion), claim injection via loose validation libraries, and excessively long expiry windows. Best practices now specify: rejecting unverified headers for algorithm selection, pinning expected algorithms in verifier configuration, enforcing short access token lifetimes (5-15 minutes) with refresh token rotation, and using audience ("aud") validation to prevent token misuse across services. [[SD-JWT]] is gaining traction in digital identity wallet implementations (EU eIDAS 2.0, mDL specifications) as a privacy-preserving extension that allows holders to selectively disclose individual claims from a signed credential without revealing the full token payload.
-

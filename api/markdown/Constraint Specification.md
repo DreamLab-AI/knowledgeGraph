@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Constraint Specification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A constraint specification is a formal statement of the limits and conditions a control system or plan must satisfy, such as joint limits, actuator bounds, obstacle avoidance, and safety envelopes. It is supplied to control and optimisation algorithms so that generated commands remain feasible and safe. Precise constraint specification is essential for model-based and optimisation-based control design.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}, {"@id": "urn:ngm:class:model-based-control", "label": "Model Based Control"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:model-based-control",
+        "label": "Model Based Control"
+      }
+    ]
   },
   "quality": 0.72
 }

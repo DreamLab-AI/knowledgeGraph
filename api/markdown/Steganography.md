@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Steganography
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -101,6 +97,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - Steganography is the practice of concealing the existence of a message by embedding it within an innocuous carrier such as an image, audio file or text, so that only the intended recipient is aware that hidden information is present. Unlike encryption, which scrambles content but leaves it visibly protected, steganography aims to make the very presence of communication undetectable. The two techniques are complementary and are often combined for layered confidentiality.
   - Related concepts: [[Cryptography]] [[Encryption]] [[Obfuscation]] [[Digital Watermarking]] [[Privacy]]

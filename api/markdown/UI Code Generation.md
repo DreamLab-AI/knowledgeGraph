@@ -1,8 +1,3 @@
----
-public: true
----
-
-# UI Code Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ui-code-generation",
   "title": "UI Code Generation",
   "vc:public": true,
-  "vc:outboundWikilinks": ["GPT Image 2.0", "OpenAI Codex"],
+  "vc:outboundWikilinks": [
+    "GPT Image 2.0",
+    "OpenAI Codex"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:code-generation", "label": "Code Generation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:code-generation",
+      "label": "Code Generation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:code-generation", "label": "Code Generation"}, {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"}, {"@id": "urn:ngm:class:openai-codex", "label": "OpenAI Codex"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:openai-codex",
+        "label": "OpenAI Codex"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

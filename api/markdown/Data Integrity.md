@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - DataIntegrity
----
-
-# data integrity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

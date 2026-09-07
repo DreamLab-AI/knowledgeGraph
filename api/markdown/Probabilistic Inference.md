@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Probabilistic Inference
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -202,52 +197,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:probabilistic-inference:1a41415ce788",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1495dc21c9a42028bacdf88d79ccf994bb85f2cf328d1b8c17c08c3ee5122fe3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Probabilistic Model]]",
-      "resolved": "urn:visionflow:linked:probabilistic-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Bayesian Inference]]",
-      "resolved": "urn:visionflow:linked:bayesian-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Uncertainty Quantification]]",
-      "resolved": "urn:visionflow:linked:uncertainty-quantification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Variational Inference]]",
-      "resolved": "urn:visionflow:linked:variational-inference",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Markov Chain Monte Carlo]]",
-      "resolved": "urn:visionflow:linked:markov-chain-monte-carlo",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Probabilistic inference is the computation of the probability of unknown quantities given observed evidence within a probabilistic model. It produces posterior distributions used for prediction and decision making under uncertainty.

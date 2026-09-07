@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Model Width
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,18 +91,36 @@ public: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:model-depth", "label": "Model Depth"}
+      {
+        "@id": "urn:ngm:class:model-depth",
+        "label": "Model Depth"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:parameter-count", "label": "Parameter Count"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mixture-of-experts-architecture", "label": "Mixture-of-Experts Architecture"}
+      {
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture-of-Experts Architecture"
+      }
     ]
   },
   "provenance": {
@@ -117,82 +130,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-width:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:27e0e7165c5d8cf3ff0a07f210bd58a68f20e3d6333f5a8d7edcb3d958dbd513"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[presentation]]",
-      "resolved": "urn:visionflow:linked:presentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D and 4D]]",
-      "resolved": "urn:visionflow:owl:class:3-d-and-4-d",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Face Swap]]",
-      "resolved": "urn:visionflow:owl:class:face-swap",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fashion]]",
-      "resolved": "urn:visionflow:owl:class:fashion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA Omniverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Domain Expert Contact Index]]",
-      "resolved": "urn:visionflow:owl:class:people",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Segmentation and Identification]]",
-      "resolved": "urn:visionflow:owl:class:segmentation-and-identification",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transformers]]",
-      "resolved": "urn:visionflow:owl:class:transformers",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The dimensionality of representations within each layer, typically referring to the hidden dimension (d_model), determining the capacity of the model to encode information at each layer.

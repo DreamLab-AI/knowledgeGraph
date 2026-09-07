@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Remote Assistance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,56 @@ public: true
   "definition": "Remote assistance is a service modality in which an expert or system provides real-time guidance, intervention, or control to a person or machine at a physically separate location, mediated by communication and rendering technology. It spans technical IT support via screen-sharing, clinical guidance through telestration overlays on AR headsets, and safety-critical interventions in teleoperated robotics. Effective remote assistance requires low-latency bidirectional communication, shared situational awareness, and appropriate interaction modalities for the task domain.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"}, {"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence (Distributed Collaboration)"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:remote-collaboration",
+      "label": "Remote Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence (Distributed Collaboration)"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-connected-workforce", "label": "Augmented Connected Workforce"},
-      {"@id": "urn:ngm:class:remote-work", "label": "Remote Work"}
+      {
+        "@id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
+      },
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:remote-communication", "label": "Remote Communication"}
+      {
+        "@id": "urn:ngm:class:remote-communication",
+        "label": "Remote Communication"
+      }
     ]
   },
   "quality": 0.8
@@ -59,6 +87,6 @@ public: true
 
   - Modern remote assistance architectures layer multiple modalities: WebRTC or proprietary SRTP streams carry low-latency video between devices; annotation engines allow remote experts to draw markers, arrows, or 3D overlays that appear in the local view; AI vision modules can automatically identify components and surface repair manuals. In AR-based industrial remote assistance (platforms like TeamViewer Frontline, Scope AR, PTC Vuforia Chalk), a field technician wearing a HoloLens or RealWear headset transmits a first-person video feed to a remote expert who draws telestration overlays directly onto the technician's field of view, hands-free.
 
-  - Remote assistance is economically significant across verticals: aerospace maintenance programmes have cut first-time fix rates by 20-30% using AR-guided remote assistance; healthcare systems deploy it for specialist consultation in rural hospitals; utilities companies use it for substation inspection guidance. The COVID-19 pandemic accelerated adoption by demonstrating that many site visits could be avoided, with downstream benefits in travel cost, carbon footprint, and mean time to repair.
+  - Remote assistance is economically significant across verticals: aerospace maintenance programmes have cut first-time fix rates by 20-30% using AR-guided remote assistance; healthcare systems deploy it for specialist consultation in rural hospitals; utilities companies use it for substation inspection guidance. The COVID-19 pandemic accelerated adoption by demonstrating that many site visits [private] be avoided, with downstream benefits in travel cost, carbon footprint, and mean time to repair.
 
   - In 2024-2025, AI is being integrated into remote assistance workflows as an always-available first-responder: large vision-language models can analyse a technician's camera feed, recognise fault conditions, and provide step-by-step repair guidance before a human expert joins. Apple Vision Pro's spatial computing capabilities open new remote assistance interaction paradigms for prosumer and enterprise markets. Latency improvements in 5G mmWave networks are enabling remote assistance for safety-critical scenarios — surgical guidance, nuclear plant inspection — where sub-50ms round-trip latency is a hard requirement.

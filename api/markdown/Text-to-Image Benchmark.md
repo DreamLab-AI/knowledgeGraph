@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Text-to-Image Benchmark
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "text-to-image-benchmark",
   "title": "Text-to-Image Benchmark",
   "vc:public": true,
-  "vc:outboundWikilinks": ["GPT Image 2.0", "LM Arena"],
+  "vc:outboundWikilinks": [
+    "GPT Image 2.0",
+    "LM Arena"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:text-to-image",
+      "label": "Text-to-Image"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}, {"@id": "urn:ngm:class:lm-arena", "label": "LM Arena"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:lm-arena",
+        "label": "LM Arena"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

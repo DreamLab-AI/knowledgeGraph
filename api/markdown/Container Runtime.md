@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Container Runtime
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

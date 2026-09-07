@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IEEE 802.11
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ieee-802-11:931ade04f72e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:838c5a2b3b3dd1d704f7cb58fe17f78eef6787e0ac634e76a5c6a83a9f2df0e6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE]]",
-      "resolved": "urn:visionflow:linked:ieee",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - IEEE 802.11 specifies the medium access control and physical layer protocols for wireless local area networks, commonly known as Wi-Fi.

@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[lognet]]
-# Distributed Logseq Knowledge Network
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,18 +42,42 @@ elevatedFrom:: [[lognet]]
   "quality": 0.7,
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:dr-o-hare-writing-for-log-seq", "label": "Dr O'Hare Writing for LogSeq"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:dr-o-hare-writing-for-log-seq",
+        "label": "Dr O'Hare Writing for LogSeq"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:digital-ontology-repository", "label": "Digital Ontology Repository"}
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ontology-repository",
+        "label": "Digital Ontology Repository"
+      }
     ]
   },
   "provenance": {
@@ -69,26 +87,6 @@ elevatedFrom:: [[lognet]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lognet:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f11b39f22536a656e33ae8a7644e74f4ccf41d2e6f22823e22072f831bac0648"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - LogNet is the network-layer infrastructure that binds Logseq knowledge graph pages into a coherent, queryable semantic web. It resolves wikilink references between pages, exposes structured ontology blocks (v2 json-ld) to downstream pipelines, and provides a distributed publishing mechanism so that annotated pages can be surfaced in graph visualisers, ontology browsers, and API consumers.

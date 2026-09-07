@@ -1,8 +1,3 @@
----
-public: true
----
-
-# North England Innovation Corridor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -184,42 +179,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:north-england-innovation-corridor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:42eac200c7346dcfb483c768b830cb893547ccbbb6db2dbc77fb265a64e21d16"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Northern Powerhouse]]",
-      "resolved": "urn:visionflow:linked:northern-powerhouse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[North England Innovation Corridor]]",
-      "resolved": "urn:visionflow:owl:class:north-england-innovation-corridor",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[UK Tech Ecosystem]]",
-      "resolved": "urn:visionflow:owl:class:uk-tech-ecosystem",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   The collaborative technology and innovation ecosystem spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle that constitutes the Northern Powerhouse. The corridor links research universities, NHS trusts, advanced manufacturing, and digital startups through coordinated investment and regional development frameworks.
 
@@ -246,7 +205,7 @@ public: true
 
   **Multi-City Collaboration Model**
 
-  Rather than a single corridor, the strategy links major Northern cities including Leeds, Bradford, Sheffield, and Doncaster through coordinated economic development[5]. The vision emphasises that "linking up the great cities of the North could achieve far more than the sum of their parts in economic terms"[3].
+  Rather than a single corridor, the strategy links major Northern cities including Leeds, Bradford, Sheffield, and Doncaster through coordinated economic development[5]. The vision emphasises that "linking up the great cities of the North [private] achieve far more than the sum of their parts in economic terms"[3].
 
   **Investment and Support Infrastructure**
 
@@ -254,7 +213,7 @@ public: true
 
   **Projected Economic Impact**
 
-  Under a transformational scenario, the North could generate 1.5 million new jobs by 2050, with GVA projected to be £97 billion higher than under a "business as usual" trajectory[2].
+  Under a transformational scenario, the North [private] generate 1.5 million new jobs by 2050, with GVA projected to be £97 billion higher than under a "business as usual" trajectory[2].
 
   If you're seeking information about specific innovation hubs, technology clusters, or particular cities within the Northern Powerhouse, I'd be happy to provide more targeted information with additional search results focused on those areas.
 

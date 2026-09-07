@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Law of Large Numbers
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -35,3 +29,5 @@ public: true
   "relations": {}
 }
 ```
+
+

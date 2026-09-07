@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Internet Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,47 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:internet-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:901a33af0084836fe9b3f7f90145ec7b00980131136eb85db0fb9ef441c738dc"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[5G Networks]]",
-      "resolved": "urn:visionflow:linked:5-g-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cloud Computing]]",
-      "resolved": "urn:visionflow:owl:class:cloud-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:owl:class:distributed-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Edge Computing]]",
-      "resolved": "urn:visionflow:owl:class:edge-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Internet Infrastructure for AI encompasses the networking protocols, distributed systems, edge computing platforms, and content delivery networks that enable large-scale deployment and operation of AI services. This includes cloud-native architectures, serverless computing for inference, 5G/6G networks for low-latency AI, edge-cloud continuum for distributed intelligence, and specialized AI hardware deployed at network edges. Modern AI infrastructure leverages containerization (Docker, Kubernetes), service meshes, and API gateways to provide scalable, reliable, and globally distributed AI applications with real-time responsiveness.

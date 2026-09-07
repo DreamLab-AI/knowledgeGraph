@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Power-Efficient AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,26 +55,68 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:npu", "label": "NPU"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
-      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"}
+      {
+        "@id": "urn:ngm:class:npu",
+        "label": "NPU"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "@id": "urn:ngm:class:model-pruning-for-edge-deployment",
+        "label": "Model Pruning for Edge Deployment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
-      {"@id": "urn:ngm:class:embedded-ai-frameworks", "label": "Embedded AI Frameworks"},
-      {"@id": "urn:ngm:class:federated-edge-learning", "label": "Federated Edge Learning"}
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:federated-edge-learning",
+        "label": "Federated Edge Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-energy-scarcity", "label": "AI Energy Scarcity"},
-      {"@id": "urn:ngm:class:sustainable-technology", "label": "Sustainable Technology"},
-      {"@id": "urn:ngm:class:io-t-sensors", "label": "Io T Sensors"},
-      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"}
+      {
+        "@id": "urn:ngm:class:ai-energy-scarcity",
+        "label": "AI Energy Scarcity"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-technology",
+        "label": "Sustainable Technology"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "Io T Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      }
     ]
   },
   "provenance": {
@@ -89,37 +126,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:power-efficient-ai:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a52d52edb73796285246c0650b0db1dd7a9ab9011f334ff2514997669bbd6968"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Power-Efficient AI optimizes machine learning systems to minimize energy consumption during inference and training, critical for battery-powered edge devices, IoT sensors, and mobile platforms requiring extended deployment lifetimes. Power-efficient designs target both computational energy (processor operations consuming 50-80% of power budget) and memory access energy (data movement between caches and main memory consuming 20-40%), recognizing that modern systems dissipate more energy moving data than computing. Techniques include dynamic voltage and frequency scaling (DVFS) that adjust processor frequency based on inference demands, power gating that completely deactivates unused hardware components, and event-driven inference that only activates computation when sensor data indicates significant events. Energy efficiency measured in TOPS/Watt (tera-operations per watt) quantifies inference throughput per unit power. Model-level optimizations employ low-precision arithmetic (INT8, FP16 instead of FP32), reducing both computation and memory energy. Hardware accelerators like specialized AI chips achieve 10-50x energy efficiency versus general-purpose processors through reduced datapath widths and specialized operations. Battery-powered IoT systems achieving month-to-year deployment lifetimes require sub-10mW average power budgets, feasible only through extreme energy optimization. Applications include medical wearables, autonomous drones, environmental sensors, and wildlife tracking tags. Energy harvesting systems combining low-power inference with solar or kinetic energy enable perpetual operation. Power-efficient AI is fundamental to sustainable computing, enabling intelligent systems in remote locations without frequent battery replacement or maintenance.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scalability Solutions
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -177,46 +172,11 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:scalability-solutions:6ffcc443308f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d245da5f874873b9cef870092fd7c34125f3f2a860bd96955af45dec7f5895ce"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 2 Scaling]]",
-      "resolved": "urn:visionflow:linked:layer-2-scaling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sharding]]",
-      "resolved": "urn:visionflow:linked:sharding",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - Scalability solutions are a family of techniques, architectures, and protocols that increase the throughput, reduce latency, and lower transaction costs of [[Distributed Systems]]—in particular [[Blockchain]] networks—without sacrificing security or decentralisation. They address the fundamental tension articulated in the [[Blockchain Trilemma]]: that it is difficult to simultaneously achieve scalability, security, and decentralisation. Approaches range from on-chain restructuring (such as [[Sharding]] and improved [[Consensus Mechanism]] design) to off-chain or [[Layer 2 Scaling]] constructs (such as [[Rollups]], [[State Channels]], and [[Sidechains]]) that defer heavy computation or data storage away from the base layer while inheriting its security guarantees.
 
 - ### Overview
-  - Early public blockchains such as [[Bitcoin]] and [[Ethereum]] demonstrated that decentralised, permissionless ledgers could work but exposed a critical limitation: base-layer throughput measured in tens of transactions per second compared unfavourably with centralised payment networks capable of tens of thousands.
+  - Early public blockchains such as [[Bitcoin]] and [[Ethereum]] demonstrated that decentralised, permissionless ledgers [private] work but exposed a critical limitation: base-layer throughput measured in tens of transactions per second compared unfavourably with centralised payment networks capable of tens of thousands.
   - The root cause is structural: every full node must validate every transaction, so the cost of global consensus scales linearly with the number of validators, setting an upper bound on throughput that cannot be relieved simply by increasing block size without raising hardware requirements and thereby centralising the network.
   - Scalability solutions decompose this bottleneck along several axes:
     - **Vertical scaling** — more powerful base-layer consensus (e.g. BFT-class algorithms, [[Proof of Stake]] replacing [[Proof of Work]]).

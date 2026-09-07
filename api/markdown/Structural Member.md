@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - StructuralMember
----
-
-# Structural Member
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -58,18 +51,36 @@ aliases:
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}
+      {
+        "@id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomic-framework", "label": "Taxonomic Framework"},
-      {"@id": "urn:ngm:class:robo-robot-type", "label": "Robot Type"}
+      {
+        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomic-framework",
+        "label": "Taxonomic Framework"
+      },
+      {
+        "@id": "urn:ngm:class:robo-robot-type",
+        "label": "Robot Type"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"},
-      {"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"}
+      {
+        "@id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"}
+      {
+        "@id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      }
     ]
   },
   "provenance": {
@@ -79,32 +90,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:structural-member:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9377279cabafa2dfbe458c25c152dc90b8ab0d8446b6e57fee6b4b1c3b15b1e5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Structural Member is a discrete load-bearing component of a robotic system's physical frame, such as a link, beam, bracket, or chassis element, that transmits forces and torques between joints or actuators. Structural members define the kinematic chain of a robot and their geometric and material properties directly constrain workspace, payload, and dynamic performance.

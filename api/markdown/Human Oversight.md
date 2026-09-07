@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Human Oversight
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -240,92 +235,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:human-oversight:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:45dad03a51013e526f1180abc617ed3f5b06e2a514c9b2d8ff71ef085dde2aea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Automation Bias]]",
-      "resolved": "urn:visionflow:linked:automation-bias",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[continuous improvement]]",
-      "resolved": "urn:visionflow:linked:continuous-improvement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[error correction]]",
-      "resolved": "urn:visionflow:linked:error-correction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accountability]]",
-      "resolved": "urn:visionflow:owl:class:accountability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Audit]]",
-      "resolved": "urn:visionflow:owl:class:ai-audit",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Operator]]",
-      "resolved": "urn:visionflow:owl:class:ai-operator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainability]]",
-      "resolved": "urn:visionflow:owl:class:explainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human in the Loop]]",
-      "resolved": "urn:visionflow:owl:class:human-in-the-loop",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Responsible AI]]",
-      "resolved": "urn:visionflow:owl:class:responsible-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Risk Management]]",
-      "resolved": "urn:visionflow:owl:class:risk-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transparency]]",
-      "resolved": "urn:visionflow:owl:class:transparency",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human values, ethical principles, legal requirements, and intended purposes, with particular emphasis on preventing, detecting, and correcting harmful or inappropriate AI behaviours through informed human decision-making authority.
 
@@ -342,7 +251,7 @@ public: true
 
 			- ### Data Utilisation
 				- The data collected during the Olympics is utilised to train AI systems, leading to potential advancements in technology. However, this practice raises several concerns:
-				- **Control and Usage:** There are significant worries about who controls the collected data and how it is used. The lack of clear guidelines and oversight means that data could be misused or exploited for purposes beyond security.
+				- **Control and Usage:** There are significant worries about who controls the collected data and how it is used. The lack of clear guidelines and oversight means that data [private] be misused or exploited for purposes beyond security.
 				- **Commercial Interests:** The involvement of private companies in data collection raises concerns about the commercialisation of personal information. These companies may use the data to develop and market new technologies, potentially infringing on individuals' privacy.
 
 		- ### Maintaining Control and Observability
@@ -364,7 +273,7 @@ public: true
   - ##### Integration of ’good’ actor AI entities
 		- Gratitude practice should be encouraged between AI actors to foster
 		  trust and wellbeing in human observers. “It’s nice to be nice” should be
-		  incentivised between all parties”. This could include tipping and trust
+		  incentivised between all parties”. This [private] include tipping and trust
 		  nudging through the social rating system. Great AI behaviour would
 		  result in economically powerful entities.
 
@@ -399,7 +308,7 @@ public: true
 
 			- ### Data Utilisation
 				- The data collected during the Olympics is utilised to train AI systems, leading to potential advancements in technology. However, this practice raises several concerns:
-				- **Control and Usage:** There are significant worries about who controls the collected data and how it is used. The lack of clear guidelines and oversight means that data could be misused or exploited for purposes beyond security.
+				- **Control and Usage:** There are significant worries about who controls the collected data and how it is used. The lack of clear guidelines and oversight means that data [private] be misused or exploited for purposes beyond security.
 				- **Commercial Interests:** The involvement of private companies in data collection raises concerns about the commercialisation of personal information. These companies may use the data to develop and market new technologies, potentially infringing on individuals' privacy.
 
 		- ### Maintaining Control and Observability
@@ -421,7 +330,7 @@ public: true
   - ##### Integration of ’good’ actor AI entities
 		- Gratitude practice should be encouraged between AI actors to foster
 		  trust and wellbeing in human observers. “It’s nice to be nice” should be
-		  incentivised between all parties”. This could include tipping and trust
+		  incentivised between all parties”. This [private] include tipping and trust
 		  nudging through the social rating system. Great AI behaviour would
 		  result in economically powerful entities.
 
@@ -494,7 +403,7 @@ public: true
 				- Hybrid approaches combining multiple methods
 
   - # Convergence
-  - The intersection of AI, XR, and open, decentralized networks represents a powerful convergence of technologies that could reshape the fabric of our social and economic lives. By leveraging the unique strengths of each domain
+  - The intersection of AI, XR, and open, decentralized networks represents a powerful convergence of technologies that [private] reshape the fabric of our social and economic lives. By leveraging the unique strengths of each domain
 		- the immersive power of XR, the intelligence and adaptability of AI, and the openness and composability of decentralized protocols
 		- we can create a more vibrant, dynamic, and equitable digital future. However, realizing this potential will require careful design, collaboration, and governance to ensure that these technologies develop in a way that promotes human agency, privacy, and flourishing.
   - AI and XR are deeply intertwined and mutually reinforcing technologies

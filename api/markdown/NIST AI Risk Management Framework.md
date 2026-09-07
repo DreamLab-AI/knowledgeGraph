@@ -1,8 +1,3 @@
----
-public: true
----
-
-# NIST AI Risk Management Framework
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,36 +192,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nist-ai-risk-management-framework:fa2eb0d9bed6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:990fc9415832112b020217eed731bb846cc66213ca36698d622b9dc3c7017a8f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NIST]]",
-      "resolved": "urn:visionflow:linked:nist",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - The **NIST AI Risk Management Framework** (AI RMF 1.0) is a voluntary guidance document published by the [[National Institute of Standards and Technology]] in January 2023 that provides organisations with a structured, use-case-agnostic approach to managing risks arising from [[Artificial Intelligence]] systems across their full lifecycle. It integrates considerations of [[AI Safety]], [[AI Fairness]], [[AI Transparency]], [[Algorithmic Accountability]], reliability, and [[Privacy-Preserving AI]] into a coherent four-function model—GOVERN, MAP, MEASURE, and MANAGE—enabling teams to contextualise and respond to AI risk in a manner consistent with existing enterprise [[Risk Management]] practices. The framework is designed for interoperability with sector-specific regulations such as the [[EU AI Act]] and with technical standards such as [[ISO/IEC 42001]], positioning it as a flexible baseline rather than a prescriptive compliance mandate.
 
@@ -240,7 +205,7 @@ public: true
 - ### Key Components
   - #### Four Core Functions
     - **GOVERN** — Establishes the organisational policies, culture, roles, and accountability structures needed to embed [[AI Risk Assessment]] into enterprise decision-making. Includes assigning roles for [[Stakeholder Engagement]], defining risk tolerance, and setting incident-response expectations.
-    - **MAP** — Identifies and categorises AI risks in context: who is affected, what harms could arise, what is the intended use, and where in the [[AI Lifecycle Management]] chain risks emerge. Supports structured risk identification before deployment.
+    - **MAP** — Identifies and categorises AI risks in context: who is affected, what harms [private] arise, what is the intended use, and where in the [[AI Lifecycle Management]] chain risks emerge. Supports structured risk identification before deployment.
     - **MEASURE** — Defines quantitative and qualitative methods for analysing, assessing, and tracking identified risks, including technical evaluation of [[Explainable AI]] outputs, performance across demographic subgroups for [[AI Fairness]], and ongoing [[AI Incident Reporting]] processes.
     - **MANAGE** — Prioritises and treats identified risks through controls, mitigations, residual-risk acceptance, and response planning. Ensures that risk decisions are documented and revisited as systems evolve or operating contexts change.
   - #### AI RMF Playbook

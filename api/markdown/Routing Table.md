@@ -1,40 +1,116 @@
----
-public: true
----
-
-# Routing Table
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:routing-table", "@type":"Page", "title":"Routing Table", "vc:slug":"routing-table", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:routing-table",
+  "@type": "Page",
+  "title": "Routing Table",
+  "vc:slug": "routing-table",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:routing-table",
-  "@type":"Class",
-  "label":"Routing Table",
-  "definition":"A routing table is a data structure, held in a router, switch or networked host, that stores the mappings between destination network addresses and the next hop or outgoing interface used to forward packets toward them. Each entry typically records a destination prefix, a next-hop address, an interface, and a metric or administrative cost used to select among competing routes. Routing tables are populated by static configuration and by dynamic routing protocols, and are consulted on every forwarding decision.",
-  "domain":"blockchain",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:data-structure","label":"Data Structure"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "hasPart":[{"@id":"urn:ngm:class:ip-address","label":"IP Address"}],
-    "requires":[{"@id":"urn:ngm:class:routing-protocol","label":"Routing Protocol"}],
-    "enables":[{"@id":"urn:ngm:class:peer-to-peer-network","label":"Peer-to-Peer Network"}],
-    "uses":[{"@id":"urn:ngm:class:routing-protocol","label":"Routing Protocol"}],
-    "dependsOn":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "supports":[{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
-    "implements":[{"@id":"urn:ngm:class:routing-protocol","label":"Routing Protocol"}],
-    "relatedTo":[{"@id":"urn:ngm:class:kademlia-dht","label":"Kademlia DHT"},{"@id":"urn:ngm:class:distributed-hash-table","label":"Distributed Hash Table"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:payment-routing","label":"Payment Routing"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:peer-to-peer-network","label":"Peer-to-Peer Network"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:routing-table",
+  "@type": "Class",
+  "label": "Routing Table",
+  "definition": "A routing table is a data structure, held in a router, switch or networked host, that stores the mappings between destination network addresses and the next hop or outgoing interface used to forward packets toward them. Each entry typically records a destination prefix, a next-hop address, an interface, and a metric or administrative cost used to select among competing routes. Routing tables are populated by static configuration and by dynamic routing protocols, and are consulted on every forwarding decision.",
+  "domain": "blockchain",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ip-address",
+        "label": "IP Address"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

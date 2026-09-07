@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Antenna Array
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,16 +20,28 @@ public: true
   "definition": "An Antenna Array is a set of multiple antenna elements arranged and phased together so that their combined radiation pattern can be electronically steered and shaped. By controlling the relative phase and amplitude of each element, the array forms directional beams, increases gain, and supports spatial multiplexing in techniques such as MIMO and beamforming. Arrays are foundational to modern wireless radio, 5G, radar, and precise satellite positioning receivers.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:wireless-radio", "label": "Wireless Radio"},
-      {"@id": "urn:ngm:class:gps", "label": "Gps"}
+      {
+        "@id": "urn:ngm:class:wireless-radio",
+        "label": "Wireless Radio"
+      },
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "Gps"
+      }
     ]
   },
   "quality": 0.72
 }
 ```
+
 - ### Definition
   - An Antenna Array combines multiple phased elements to steer and shape radio beams electronically. It is core to [[Wireless Radio]] systems and improves the multipath rejection and accuracy of [[GPS]] receivers.
 - ### Content

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -202,46 +197,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:117419dfa915d7e1851df02640e5ab9e93fa372662b543b5987ef040a3aaee24"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO 8373:2021]]",
-      "resolved": "urn:visionflow:linked:iso-8373-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MechatronicSystem]]",
-      "resolved": "urn:visionflow:linked:mechatronic-system",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AutonomousAgent]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Adversarial Testing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,47 +178,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:adversarial-testing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:1f851c9c5aad2700b2790d2078588034da283435197f518af40f34ebabd62eab"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[NIST]]",
-      "resolved": "urn:visionflow:linked:nist",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.
 
@@ -267,8 +221,8 @@ public: true
 				- This direct communication loop would facilitate rapid iterations, as changes can be implemented and reviewed in real-time or near-real-time.
 			- **4. Automated Testing and Validation:**
 				- The system would incorporate sophisticated automated testing mechanisms.
-				- As soon as the bytecode is generated or modified, a series of automated tests could run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
-				- Product owners could also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
+				- As soon as the bytecode is generated or modified, a series of automated tests [private] run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
+				- Product owners [private] also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
 
   - ## AI in [[Education and AI]]
 		- I think the Rabbit is something I would buy for kids?! (lol, that didn't work out)
@@ -279,8 +233,8 @@ public: true
 				- This direct communication loop would facilitate rapid iterations, as changes can be implemented and reviewed in real-time or near-real-time.
 			- **4. Automated Testing and Validation:**
 				- The system would incorporate sophisticated automated testing mechanisms.
-				- As soon as the bytecode is generated or modified, a series of automated tests could run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
-				- Product owners could also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
+				- As soon as the bytecode is generated or modified, a series of automated tests [private] run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
+				- Product owners [private] also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
 
   - ## Key use cases
 
@@ -334,7 +288,7 @@ public: true
 
   - Industry adoption and implementations
   - Financial institutions now report adversarial attacks as a significant threat vector against fraud detection systems[2]
-  - Healthcare organisations face particular concerns regarding manipulated medical imagery that could precipitate misdiagnosis[2]
+  - Healthcare organisations face particular concerns regarding manipulated medical imagery that [private] precipitate misdiagnosis[2]
   - Generative AI deployment in customer-facing applications has accelerated adversarial testing adoption, particularly in support systems where off-script behaviour poses reputational risk[3]
   - Google's machine learning guidance framework formalises adversarial testing workflows for generative AI evaluation[6]
 

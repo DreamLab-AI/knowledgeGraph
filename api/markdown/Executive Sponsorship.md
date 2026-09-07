@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Executive Sponsorship
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Executive sponsorship is the active, visible backing of a major initiative by a senior leader who secures funding, removes organisational obstacles, and aligns the effort with strategy. It is widely identified as a critical success factor in technology adoption and transformation programmes because it confers authority, accountability, and resource commitment. Without credible executive sponsorship, large-scale initiatives commonly stall amid competing priorities.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}, {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      }
+    ]
   },
   "quality": 0.72
 }

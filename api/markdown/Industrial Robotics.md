@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Industrial Robotics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -216,57 +211,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:industrial-robotics:5e5a7c87db7c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:42846248f184215f82ec192cdd6afc41fa2f60e8bfd95ca27d147c705ff9bd0a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Actuators]]",
-      "resolved": "urn:visionflow:linked:actuators",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Collaborative Robots]]",
-      "resolved": "urn:visionflow:linked:collaborative-robots",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Control Theory]]",
-      "resolved": "urn:visionflow:linked:control-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:linked:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://ifr.org/]]",
-      "resolved": "urn:visionflow:linked:https-ifr-org",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Industrial_robot]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-industrial-robot",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Industrial robotics is the application of programmable robots to manufacturing tasks such as assembly, welding, handling and inspection.

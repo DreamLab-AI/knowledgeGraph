@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Node Js
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

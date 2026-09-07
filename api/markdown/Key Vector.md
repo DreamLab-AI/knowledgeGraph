@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Key Vector
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,26 +51,62 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:query-vector", "label": "Query Vector"},
-      {"@id": "urn:ngm:class:value-vector", "label": "Value Vector"},
-      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"},
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
+      {
+        "@id": "urn:ngm:class:query-vector",
+        "label": "Query Vector"
+      },
+      {
+        "@id": "urn:ngm:class:value-vector",
+        "label": "Value Vector"
+      },
+      {
+        "@id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      },
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
     ]
   },
   "provenance": {
@@ -85,32 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:key-vector:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5ca3048e87b3827e894cbdbf229e810570c8a4093d51f468762a3389b81afd82"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Key Vector is a concept within the ai domain.

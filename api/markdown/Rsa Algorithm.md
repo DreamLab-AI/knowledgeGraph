@@ -1,39 +1,122 @@
----
-public: true
----
-
-# Rsa Algorithm
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:rsa-algorithm", "@type":"Page", "title":"Rsa Algorithm", "vc:slug":"rsa-algorithm", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:rsa-algorithm",
+  "@type": "Page",
+  "title": "Rsa Algorithm",
+  "vc:slug": "rsa-algorithm",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:rsa-algorithm",
-  "@type":"Class",
-  "label":"Rsa Algorithm",
-  "definition":"The RSA algorithm is a public-key cryptosystem whose security rests on the practical difficulty of factoring the product of two large prime numbers. A public key derived from this product encrypts data or verifies signatures, while the corresponding private key, recoverable only with knowledge of the prime factors, decrypts or signs. RSA was among the first practical asymmetric schemes and remains widely used for key exchange, digital signatures, and certificate-based authentication.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:public-key-cryptography","label":"Public-Key Cryptography"}],
-    "implements":[{"@id":"urn:ngm:class:asymmetric-encryption","label":"Asymmetric Encryption"}],
-    "uses":[{"@id":"urn:ngm:class:one-way-function","label":"One Way Function"},{"@id":"urn:ngm:class:modular-arithmetic","label":"Modular Arithmetic"}],
-    "dependsOn":[{"@id":"urn:ngm:class:trapdoor-function","label":"Trapdoor Function"},{"@id":"urn:ngm:class:one-way-function","label":"One Way Function"}],
-    "requires":[{"@id":"urn:ngm:class:key-pair","label":"Key Pair"}],
-    "enables":[{"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"},{"@id":"urn:ngm:class:key-exchange","label":"Key Exchange"}],
-    "supports":[{"@id":"urn:ngm:class:ssl-tls","label":"SSL/TLS"}],
-    "relatedTo":[{"@id":"urn:ngm:class:public-key","label":"Public Key"},{"@id":"urn:ngm:class:private-key","label":"Private Key"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:symmetric-encryption","label":"Symmetric Encryption"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:cryptographic-algorithm","label":"Cryptographic Algorithm"}],
-    "hasPart":[{"@id":"urn:ngm:class:key-pair","label":"Key Pair"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rsa-algorithm",
+  "@type": "Class",
+  "label": "Rsa Algorithm",
+  "definition": "The RSA algorithm is a public-key cryptosystem whose security rests on the practical difficulty of factoring the product of two large prime numbers. A public key derived from this product encrypts data or verifies signatures, while the corresponding private key, recoverable only with knowledge of the prime factors, decrypts or signs. RSA was among the first practical asymmetric schemes and remains widely used for key exchange, digital signatures, and certificate-based authentication.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:public-key-cryptography",
+      "label": "Public-Key Cryptography"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:one-way-function",
+        "label": "One Way Function"
+      },
+      {
+        "@id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:trapdoor-function",
+        "label": "Trapdoor Function"
+      },
+      {
+        "@id": "urn:ngm:class:one-way-function",
+        "label": "One Way Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:key-pair",
+        "label": "Key Pair"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ssl-tls",
+        "label": "SSL/TLS"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cryptographic-algorithm",
+        "label": "Cryptographic Algorithm"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:key-pair",
+        "label": "Key Pair"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

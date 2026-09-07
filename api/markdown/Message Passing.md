@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Message Passing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

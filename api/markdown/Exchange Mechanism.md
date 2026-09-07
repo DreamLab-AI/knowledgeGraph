@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Exchange Mechanism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -94,32 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:exchange-mechanism:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7cdd6d8032a34d6123c69ec0585356084062ebb3b3274c89d40c4e4ab4aa9534"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Exchange Mechanism is a protocol or technical construct that governs the transfer of digital assets, tokens, or value between parties within a virtual economy or cross-platform environment. Exchange mechanisms specify the rules for matching buyers and sellers, executing atomic swaps, handling liquidity, and settling transactions, forming the economic infrastructure of metaverse marketplaces.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Error Signal
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "An error signal is the quantity in a feedback control system representing the instantaneous difference between the reference setpoint and the actual measured output. It is the driving input to the controller, which acts to reduce it toward zero. The error signal's magnitude, rate of change, and accumulated value are processed by proportional, derivative, and integral control terms respectively.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:derivative-control", "label": "Derivative Control"}, {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:derivative-control",
+        "label": "Derivative Control"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ]
   },
   "quality": 0.72
 }

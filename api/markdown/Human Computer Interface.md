@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Human-Computer Interface
----
-
-# Human Computer Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -105,32 +98,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:human-computer-interface:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:947ca5e4bc6def01e7924ce2bdde15f8e6f9148809fe91932c44ddb05f019a68"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The set of hardware and software components through which a human user perceives, commands, and receives feedback from a computing system. In spatial computing, human computer interfaces extend beyond screens and keyboards to include gesture input, voice commands, gaze control, haptic feedback, and brain-computer interfaces, fundamentally shaping how users navigate and manipulate virtual environments.

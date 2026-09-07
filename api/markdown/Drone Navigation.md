@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Drone Navigation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:drone-navigation:8145e5b603ff",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:464fad7894c7f20ccb38c69552b82708d97297e069c66156ff54119025b879f7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Inertial Measurement Unit]]",
-      "resolved": "urn:visionflow:linked:inertial-measurement-unit",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Path Planning]]",
-      "resolved": "urn:visionflow:linked:path-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mapping]]",
-      "resolved": "urn:visionflow:linked:mapping",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SLAM]]",
-      "resolved": "urn:visionflow:linked:slam",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Mobile Robotics]]",
-      "resolved": "urn:visionflow:linked:mobile-robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Unmanned_aerial_vehicle]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-unmanned-aerial-vehicle",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://ardupilot.org/]]",
-      "resolved": "urn:visionflow:linked:https-ardupilot-org",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Drone navigation is the set of methods by which unmanned aerial vehicles determine position, plan routes and control flight to reach objectives.

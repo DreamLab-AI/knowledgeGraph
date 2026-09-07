@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - FeatureEngineering
----
-
-# Feature Engineering
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -190,42 +183,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:feature-engineering:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ea372f6aa6a236baf429b18f4443669f3f7c5db597c2436e59ccda71568c41b5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data Preprocessing]]",
-      "resolved": "urn:visionflow:linked:data-preprocessing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of using domain knowledge and statistical transformations to construct, select, and encode input variables from raw data so that they better represent the underlying predictive signal for machine learning models. Techniques include polynomial expansion, normalisation, temporal feature extraction, embedding of categorical variables, and dimensionality reduction via PCA or autoencoders.

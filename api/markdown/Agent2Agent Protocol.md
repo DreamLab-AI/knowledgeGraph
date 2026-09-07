@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent2Agent Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,24 +21,51 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+    {
+      "@id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:agent-event-stream", "label": "Agent Event Stream"},
-      {"@id": "urn:ngm:class:server-sent-events", "label": "Server-Sent Events"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"}
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
     ]
   },
   "quality": 0.8

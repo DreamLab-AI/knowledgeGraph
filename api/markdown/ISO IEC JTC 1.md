@@ -1,8 +1,3 @@
----
-public: true
----
-
-# ISO/IEC JTC 1
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "ISO/IEC JTC 1 is the Joint Technical Committee established by the International Organization for Standardization and the International Electrotechnical Commission to develop standards in information technology. Its subcommittees produce standards across areas such as coding, data management, AI, cloud computing, IoT, and multimedia. It is the principal international body coordinating IT standardisation that enables cross-domain convergence and interoperability.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:convergence", "label": "Convergence"},
-      {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"}
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
     ]
   },
   "quality": 0.72

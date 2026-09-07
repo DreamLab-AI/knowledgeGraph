@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Surface Marine Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,25 +55,58 @@ public: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:underwater-robot", "label": "Underwater Robot"},
-      {"@id": "urn:ngm:class:aerial-robot", "label": "Aerial Robot"}
+      {
+        "@id": "urn:ngm:class:underwater-robot",
+        "label": "Underwater Robot"
+      },
+      {
+        "@id": "urn:ngm:class:aerial-robot",
+        "label": "Aerial Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:inspection-robot", "label": "Inspection Robot"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:remotely-operated-vehicle-rov", "label": "Remotely Operated Vehicle (ROV)"}
+      {
+        "@id": "urn:ngm:class:inspection-robot",
+        "label": "Inspection Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:remotely-operated-vehicle-rov",
+        "label": "Remotely Operated Vehicle (ROV)"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:navigation-system", "label": "Navigation System"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:navigation-system",
+        "label": "Navigation System"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "provenance": {
@@ -88,37 +116,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:surface-marine-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:55633b09b538ad9d0901a719ae773fee3c988ebf5e2f905eb08a47696536720c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Marine Robot]]",
-      "resolved": "urn:visionflow:owl:class:marine-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Surface Marine Robot (Unmanned Surface Vehicle, USV) is an autonomous or remotely operated robotic platform that operates on the surface of bodies of water, performing tasks such as hydrographic survey, environmental monitoring, maritime patrol, and search-and-rescue support without requiring an onboard crew.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Technology Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:technology-ecosystem", "label": "Technology Ecosystem"},
-      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"}
+      {
+        "@id": "urn:ngm:class:technology-ecosystem",
+        "label": "Technology Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"},
-      {"@id": "urn:ngm:class:technical-architecture-framework", "label": "Technical Architecture Framework"}
+      {
+        "@id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:technical-architecture-framework",
+        "label": "Technical Architecture Framework"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:technology-infrastructure:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:de951be9e13bef316bdf34274cccb41dd8fac55325326dbcad2a120121abdeb6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Technology Infrastructure encompasses the foundational hardware, networking, cloud services, and software platforms upon which higher-level applications and services are built. In the metaverse and spatial-computing domains it includes compute clusters, edge nodes, low-latency networking, content delivery networks, and the operating standards and APIs that enable interoperable, scalable, and resilient digital environments.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0066 robot sensor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,21 +51,48 @@ public: true
   "quality": 0.7,
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"},
-      {"@id": "urn:ngm:class:rb-0068-vision-system", "label": "rb 0068 vision system"},
-      {"@id": "urn:ngm:class:rb-0069-lidar", "label": "rb 0069 lidar"},
-      {"@id": "urn:ngm:class:rb-0072-encoder", "label": "rb 0072 encoder"},
-      {"@id": "urn:ngm:class:rb-0073-imu", "label": "rb 0073 imu"}
+      {
+        "@id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0068-vision-system",
+        "label": "rb 0068 vision system"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0069-lidar",
+        "label": "rb 0069 lidar"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0072-encoder",
+        "label": "rb 0072 encoder"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0073-imu",
+        "label": "rb 0073 imu"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0052-collision-avoidance", "label": "rb 0052 collision avoidance"},
-      {"@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring", "label": "rb 0105 speed and separation monitoring"}
+      {
+        "@id": "urn:ngm:class:rb-0052-collision-avoidance",
+        "label": "rb 0052 collision avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+        "label": "rb 0105 speed and separation monitoring"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0066-robot-sensor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:863d972f169a0229677acf8c72e176802f95610bdea2bbb3857317fe337c529b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A robot sensor is any transducer or measurement device that provides a robot system with information about its own internal state or the state of the external environment. Proprioceptive sensors (encoders, IMUs, force/torque sensors) measure the robot's own configuration and dynamics; exteroceptive sensors (vision systems, LiDAR, radar, proximity sensors, depth cameras) measure the surrounding environment. Together they feed the perception pipeline that underpins safe autonomous behaviour, closed-loop control, and human-robot interaction.

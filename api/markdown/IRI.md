@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IRI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -107,6 +103,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - An Internationalised Resource Identifier (IRI) is a compact string that uniquely identifies an abstract or physical resource, generalising the Uniform Resource Identifier (URI) to permit characters from the full Unicode repertoire rather than only ASCII. IRIs are the foundational naming mechanism of the Semantic Web: every node and predicate in an RDF graph is named by an IRI, allowing data published by independent parties to refer unambiguously to the same entity. An IRI may be mapped to an equivalent URI through percent-encoding, preserving compatibility with legacy web infrastructure.
   - Related core concepts: [[Linked Data]] [[RDF]] [[Knowledge Graph]] [[Ontology]]

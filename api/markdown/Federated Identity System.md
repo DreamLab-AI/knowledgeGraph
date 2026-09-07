@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Federated Identity System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A federated identity system enables a user's digital identity and authentication to be recognised across multiple independent organisations or domains without each maintaining separate credentials. It relies on trust relationships between identity providers and relying parties, exchanging assertions via protocols such as SAML, OpenID Connect, and OAuth. Federation underpins single sign-on, cross-organisation access, and trust-framework governance.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:federated-credential-exchange", "label": "Federated Credential Exchange"},
-      {"@id": "urn:ngm:class:trust-framework-policy", "label": "Trust Framework Policy"}
+      {
+        "@id": "urn:ngm:class:federated-credential-exchange",
+        "label": "Federated Credential Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework-policy",
+        "label": "Trust Framework Policy"
+      }
     ]
   },
   "quality": 0.72

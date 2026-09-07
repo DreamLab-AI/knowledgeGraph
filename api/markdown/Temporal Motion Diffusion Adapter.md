@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[AnimateDiff]]
-# Temporal Motion Diffusion Adapter
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,32 +20,82 @@ elevatedFrom:: [[AnimateDiff]]
   "definition": "AnimateDiff is an open-source framework that inserts lightweight motion-module adapters into pre-trained text-to-image diffusion models to generate temporally consistent animated sequences without retraining the base image model. Developed by researchers at CUHK and ByteDance and released in 2023, it enables personalised diffusion model checkpoints to produce video clips by learning motion priors from video data in a plug-and-play manner. AnimateDiff integrates natively with the Stable Diffusion ecosystem, including ControlNet conditioning and LoRA fine-tuning.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:video-generation",
+      "label": "Video Generation"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:animation-technique", "label": "Animation Technique"},
-      {"@id": "urn:ngm:class:image-to-image-translation", "label": "Image to Image Translation"}
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:animation-technique",
+        "label": "Animation Technique"
+      },
+      {
+        "@id": "urn:ngm:class:image-to-image-translation",
+        "label": "Image to Image Translation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"},
-      {"@id": "urn:ngm:class:computer-vision-video-analysis", "label": "Computer Vision Video Analysis"}
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Image Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-video-analysis",
+        "label": "Computer Vision Video Analysis"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:motion-capture-technology", "label": "Motion Capture Technology"}
+      {
+        "@id": "urn:ngm:class:motion-capture-technology",
+        "label": "Motion Capture Technology"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Database Management System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A database management system (DBMS) is software that defines, stores, retrieves, secures and manages structured data while enforcing integrity, concurrency and durability. It mediates all access to the underlying database through a query interface and transaction manager, supporting models such as relational, document, key-value and graph. It is the foundational platform for persistent data services including ontology repositories and taxonomy registries.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-ontology-repository", "label": "Digital Ontology Repository"},
-      {"@id": "urn:ngm:class:digital-taxonomy-registry", "label": "Digital Taxonomy Registry"}
+      {
+        "@id": "urn:ngm:class:digital-ontology-repository",
+        "label": "Digital Ontology Repository"
+      },
+      {
+        "@id": "urn:ngm:class:digital-taxonomy-registry",
+        "label": "Digital Taxonomy Registry"
+      }
     ]
   },
   "quality": 0.72

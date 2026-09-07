@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Neuro Symbolic Ai
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

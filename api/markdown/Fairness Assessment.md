@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fairness Assessment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Fairness assessment is the systematic evaluation of whether an AI or machine-learning system produces equitable outcomes across protected groups and individuals. It quantifies disparities using metrics such as demographic parity, equalised odds, and predictive parity, often computed from confusion-matrix statistics segmented by subgroup. The results inform mitigation, auditing, and governance decisions about model deployment.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "quality": 0.72

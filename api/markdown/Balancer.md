@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Balancer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -141,7 +136,7 @@ public: true
 ```
 
 - ### Definition
-  - Balancer is a programmable [[Automated Market Maker]] protocol that allows [[Liquidity Pool]]s to contain up to eight assets in arbitrary proportions. This generalisation of the standard 50/50 AMM model means a pool can be configured as 80% ETH / 20% BAL — passively rebalancing when traders arbitrage the pool back toward target weights, effectively providing portfolio management services to liquidity providers. Balancer pools thus act as both on-chain index funds and decentralised exchange venues.
+  - Balancer is a programmable [[Automated Market Maker]] protocol that allows [[Liquidity Pool]]s to contain up to eight assets in arbitrary proportions. This generalisation of the standard 50/50 AMM model means a pool can be configured as 80% ETH / 20% BAL — passively rebalancing when traders arbitrage the pool back toward target weights, effectively providing portfolio management services to liquidity providers. Balancer pools thus act as both on-chain [private] funds and decentralised exchange venues.
 
 - ### Relationships
   - Balancer extends the [[Automated Market Maker]] concept to multi-asset and custom-weight pools, enabling richer [[Asset Liquidity]] provision than binary pools. It relies on [[EVM]] smart contracts and [[Liquidity Pool]] mechanics inherited from Uniswap-like designs. The BAL [[Governance Token]] gives holders control over protocol parameters including pool whitelisting and fee configuration. Liquidity providers receive [[LP Token]]s representing their pool share. [[Concentrated Liquidity]] features, introduced in Balancer v2, allow capital efficiency improvements similar to Uniswap v3.
@@ -154,4 +149,3 @@ public: true
   - Balancer's ecosystem is notable for its composability — Boosted Pools allow idle liquidity to earn yield on Aave or Euler whilst still being available for trades, creating capital efficiency that simple AMMs cannot achieve. Protocols such as Aura Finance build veBAL meta-governance layers on top of Balancer's vote-escrowed token model, mirroring the Curve Wars dynamic and routing BAL emissions toward strategic pools.
 
   - Through 2024–2025, Balancer v3 introduced a simplified vault-with-hooks model to make custom pool logic more accessible to developers. The protocol expanded to multiple EVM chains including Polygon, Arbitrum, Optimism, and Gnosis Chain. Competition from concentrated liquidity AMMs pushed Balancer to focus on its differentiated value: composable stable pools powering liquid staking token (LST) pairs and on-chain portfolio management primitives that single-asset AMMs cannot replicate.
-

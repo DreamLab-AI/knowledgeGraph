@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Marketplace Integration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:marketplace-integration:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bb364f226f91a4508541197e4ba9bbf0bfc9e0130e1b7a340e52b6871610a529"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaverse Commerce]]",
-      "resolved": "urn:visionflow:linked:metaverse-commerce",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Commerce]]",
-      "resolved": "urn:visionflow:owl:class:digital-commerce",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Systems and APIs that connect metaverse platforms with NFT marketplaces, e-commerce platforms, and digital asset trading systems, enabling seamless buying, selling, and trading of virtual goods, real estate, and collectibles.

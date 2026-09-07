@@ -1,8 +1,3 @@
----
-public: true
----
-
-# User Trust
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "User trust is the confidence individuals place in a system to handle their data, decisions and interactions reliably, securely and in their interests. It is built through transparency, predictable behaviour, privacy safeguards and demonstrable accountability, and is a key outcome of privacy and data-protection practices. Eroded trust undermines adoption, while sustained trust is a competitive and ethical asset.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:privacy-impact-assessment-pia", "label": "Privacy Impact Assessment (PIA)"}, {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment-pia",
+        "label": "Privacy Impact Assessment (PIA)"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
   },
   "quality": 0.72
 }

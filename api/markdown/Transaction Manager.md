@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transaction Manager
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A transaction manager is a software component that coordinates the atomic execution of operations against a database or distributed system, enforcing the ACID properties of atomicity, consistency, isolation, and durability. It governs commit and rollback, manages concurrency control and locking, and in distributed settings orchestrates multi-resource protocols such as two-phase commit.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:graph-database", "label": "Graph Database"}, {"@id": "urn:ngm:class:data-layer", "label": "Data Layer"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lightning Network Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,57 +91,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:lightning-network-layer:4211474ebf3e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:83e5641986490e79833612a4001441b421c944bc8f462c03bafc32193fdd898f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Settlement Layer]]",
-      "resolved": "urn:visionflow:linked:settlement-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Content Layer]]",
-      "resolved": "urn:visionflow:linked:content-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment Channel]]",
-      "resolved": "urn:visionflow:linked:payment-channel",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hash Time-Locked Contract]]",
-      "resolved": "urn:visionflow:linked:hash-time-locked-contract",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Lightning Network Layer is a second-layer stratum that enables fast, low-cost payments off the base settlement ledger through bidirectional payment channels. It sits above the Settlement Layer, on which it anchors and finally settles, and below the application and content strata that use instant payments. It contains payment channels, routing, and channel-state management.

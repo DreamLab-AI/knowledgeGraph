@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pseudonymity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,7 +43,7 @@ public: true
   "@id": "urn:ngm:class:pseudonymity",
   "@type": "Class",
   "label": "Pseudonymity",
-  "definition": "Pseudonymity is the property of operating under a persistent, stable identifier that is not directly linked to a participant's real-world legal identity, enabling consistent reputation and accountability without exposing personal information. Unlike full anonymity — where individual actions cannot be attributed to any consistent actor — pseudonymity preserves linkability across interactions under the chosen identifier while severing the mapping to biological or legal selfhood. The pseudonymous identifier may be a username, cryptographic public key, or blockchain address; its strength depends on the isolation of contextual signals that could enable de-anonymisation. Pseudonymity is foundational to privacy-preserving communication, decentralised identity systems, and selective-disclosure credential architectures.",
+  "definition": "Pseudonymity is the property of operating under a persistent, stable identifier that is not directly linked to a participant's real-world legal identity, enabling consistent reputation and accountability without exposing personal information. Unlike full anonymity — where individual actions cannot be attributed to any consistent actor — pseudonymity preserves linkability across interactions under the chosen identifier while severing the mapping to biological or legal selfhood. The pseudonymous identifier may be a username, cryptographic public key, or blockchain address; its strength depends on the isolation of contextual signals that [private] enable de-anonymisation. Pseudonymity is foundational to privacy-preserving communication, decentralised identity systems, and selective-disclosure credential architectures.",
   "domain": "security",
   "maturity": "established",
   "quality": 0.73,
@@ -170,41 +165,6 @@ public: true
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pseudonymity:b9fa8619d0b8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d9758e6bff1e527de849b67b8c2c8e39827d222ea5905f4e972ed613cea040a0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ring Signature]]",
-      "resolved": "urn:visionflow:linked:ring-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralized Identifier]]",
-      "resolved": "urn:visionflow:linked:decentralized-identifier",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Privacy]]",
-      "resolved": "urn:visionflow:linked:privacy",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

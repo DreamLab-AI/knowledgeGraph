@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3D Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,52 +7,190 @@ public: true
   "title": "3D Generation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model"},
-    {"@id": "urn:visionflow:linked:ne-rf", "vc:label": "NeRF"},
-    {"@id": "urn:visionflow:linked:gaussian-splatting", "vc:label": "Gaussian Splatting"},
-    {"@id": "urn:visionflow:linked:text-to-3-d", "vc:label": "Text-to-3D"},
-    {"@id": "urn:visionflow:linked:neural-3-d-generation", "vc:label": "Neural 3D Generation"},
-    {"@id": "urn:visionflow:linked:3-d-reconstruction", "vc:label": "3D Reconstruction"},
-    {"@id": "urn:visionflow:linked:3-d-content-creation", "vc:label": "3D Content Creation"},
-    {"@id": "urn:visionflow:linked:digital-twin-generation", "vc:label": "Digital Twin Generation"},
-    {"@id": "urn:visionflow:linked:game-asset-generation", "vc:label": "Game Asset Generation"},
-    {"@id": "urn:visionflow:linked:score-distillation-sampling", "vc:label": "Score Distillation Sampling"},
-    {"@id": "urn:visionflow:linked:generative-model", "vc:label": "Generative Model"},
-    {"@id": "urn:visionflow:linked:computer-vision", "vc:label": "Computer Vision"},
-    {"@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI"},
-    {"@id": "urn:visionflow:linked:image-generation", "vc:label": "Image Generation"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network"},
-    {"@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder"},
-    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:linked:implicit-neural-representation", "vc:label": "Implicit Neural Representation"},
-    {"@id": "urn:visionflow:linked:point-cloud", "vc:label": "Point Cloud"},
-    {"@id": "urn:visionflow:linked:mesh-generation", "vc:label": "Mesh Generation"},
-    {"@id": "urn:visionflow:linked:novel-view-synthesis", "vc:label": "Novel View Synthesis"},
-    {"@id": "urn:visionflow:linked:spatial-computing", "vc:label": "Spatial Computing"},
-    {"@id": "urn:visionflow:linked:extended-reality", "vc:label": "Extended Reality"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:autonomous-navigation", "vc:label": "Autonomous Navigation"},
-    {"@id": "urn:visionflow:linked:robotics", "vc:label": "Robotics"},
-    {"@id": "urn:visionflow:linked:gpu-compute", "vc:label": "GPU Compute"},
-    {"@id": "urn:visionflow:linked:latent-diffusion-model", "vc:label": "Latent Diffusion Model"},
-    {"@id": "urn:visionflow:linked:clip", "vc:label": "CLIP"},
-    {"@id": "urn:visionflow:linked:objaverse", "vc:label": "Objaverse"},
-    {"@id": "urn:visionflow:linked:instant-ngp", "vc:label": "Instant-NGP"},
-    {"@id": "urn:visionflow:linked:triplane", "vc:label": "Triplane"},
-    {"@id": "urn:visionflow:linked:signed-distance-function", "vc:label": "Signed Distance Function"},
-    {"@id": "urn:visionflow:linked:occupancy-network", "vc:label": "Occupancy Network"},
-    {"@id": "urn:visionflow:linked:texture-synthesis", "vc:label": "Texture Synthesis"},
-    {"@id": "urn:visionflow:linked:scene-generation", "vc:label": "Scene Generation"},
-    {"@id": "urn:visionflow:linked:3-d-content-generation", "vc:label": "3D Content Generation"},
-    {"@id": "urn:visionflow:linked:differentiable-rendering", "vc:label": "Differentiable Rendering"},
-    {"@id": "urn:visionflow:linked:u-net", "vc:label": "U-Net"},
-    {"@id": "urn:visionflow:linked:vision-transformer", "vc:label": "Vision Transformer"},
-    {"@id": "urn:visionflow:linked:e-commerce", "vc:label": "E-Commerce"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:application-layer", "vc:label": "ApplicationLayer"},
-    {"@id": "urn:visionflow:linked:computation-and-intelligence-domain", "vc:label": "ComputationAndIntelligenceDomain"}
+    {
+      "@id": "urn:visionflow:linked:diffusion-model",
+      "vc:label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:ne-rf",
+      "vc:label": "NeRF"
+    },
+    {
+      "@id": "urn:visionflow:linked:gaussian-splatting",
+      "vc:label": "Gaussian Splatting"
+    },
+    {
+      "@id": "urn:visionflow:linked:text-to-3-d",
+      "vc:label": "Text-to-3D"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-3-d-generation",
+      "vc:label": "Neural 3D Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:3-d-reconstruction",
+      "vc:label": "3D Reconstruction"
+    },
+    {
+      "@id": "urn:visionflow:linked:3-d-content-creation",
+      "vc:label": "3D Content Creation"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin-generation",
+      "vc:label": "Digital Twin Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:game-asset-generation",
+      "vc:label": "Game Asset Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:score-distillation-sampling",
+      "vc:label": "Score Distillation Sampling"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-model",
+      "vc:label": "Generative Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:computer-vision",
+      "vc:label": "Computer Vision"
+    },
+    {
+      "@id": "urn:visionflow:linked:multimodal-ai",
+      "vc:label": "Multimodal AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:image-generation",
+      "vc:label": "Image Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:generative-adversarial-network",
+      "vc:label": "Generative Adversarial Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:variational-autoencoder",
+      "vc:label": "Variational Autoencoder"
+    },
+    {
+      "@id": "urn:visionflow:linked:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:implicit-neural-representation",
+      "vc:label": "Implicit Neural Representation"
+    },
+    {
+      "@id": "urn:visionflow:linked:point-cloud",
+      "vc:label": "Point Cloud"
+    },
+    {
+      "@id": "urn:visionflow:linked:mesh-generation",
+      "vc:label": "Mesh Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:novel-view-synthesis",
+      "vc:label": "Novel View Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:spatial-computing",
+      "vc:label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:extended-reality",
+      "vc:label": "Extended Reality"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:autonomous-navigation",
+      "vc:label": "Autonomous Navigation"
+    },
+    {
+      "@id": "urn:visionflow:linked:robotics",
+      "vc:label": "Robotics"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-compute",
+      "vc:label": "GPU Compute"
+    },
+    {
+      "@id": "urn:visionflow:linked:latent-diffusion-model",
+      "vc:label": "Latent Diffusion Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:clip",
+      "vc:label": "CLIP"
+    },
+    {
+      "@id": "urn:visionflow:linked:objaverse",
+      "vc:label": "Objaverse"
+    },
+    {
+      "@id": "urn:visionflow:linked:instant-ngp",
+      "vc:label": "Instant-NGP"
+    },
+    {
+      "@id": "urn:visionflow:linked:triplane",
+      "vc:label": "Triplane"
+    },
+    {
+      "@id": "urn:visionflow:linked:signed-distance-function",
+      "vc:label": "Signed Distance Function"
+    },
+    {
+      "@id": "urn:visionflow:linked:occupancy-network",
+      "vc:label": "Occupancy Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:texture-synthesis",
+      "vc:label": "Texture Synthesis"
+    },
+    {
+      "@id": "urn:visionflow:linked:scene-generation",
+      "vc:label": "Scene Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:3-d-content-generation",
+      "vc:label": "3D Content Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:differentiable-rendering",
+      "vc:label": "Differentiable Rendering"
+    },
+    {
+      "@id": "urn:visionflow:linked:u-net",
+      "vc:label": "U-Net"
+    },
+    {
+      "@id": "urn:visionflow:linked:vision-transformer",
+      "vc:label": "Vision Transformer"
+    },
+    {
+      "@id": "urn:visionflow:linked:e-commerce",
+      "vc:label": "E-Commerce"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:computation-and-intelligence-domain",
+      "vc:label": "ComputationAndIntelligenceDomain"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -73,44 +206,125 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
-    {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-    {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    {
+      "@id": "urn:ngm:class:3-d-content-generation",
+      "label": "3D Content Generation"
+    },
+    {
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:ne-rf", "label": "NeRF"},
-      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"},
-      {"@id": "urn:ngm:class:score-distillation-sampling", "label": "Score Distillation Sampling"},
-      {"@id": "urn:ngm:class:implicit-neural-representation", "label": "Implicit Neural Representation"},
-      {"@id": "urn:ngm:class:triplane", "label": "Triplane"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:score-distillation-sampling",
+        "label": "Score Distillation Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:implicit-neural-representation",
+        "label": "Implicit Neural Representation"
+      },
+      {
+        "@id": "urn:ngm:class:triplane",
+        "label": "Triplane"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-content-creation", "label": "3D Content Creation"},
-      {"@id": "urn:ngm:class:digital-twin-generation", "label": "Digital Twin Generation"},
-      {"@id": "urn:ngm:class:game-asset-generation", "label": "Game Asset Generation"},
-      {"@id": "urn:ngm:class:scene-generation", "label": "Scene Generation"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:3-d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-generation",
+        "label": "Digital Twin Generation"
+      },
+      {
+        "@id": "urn:ngm:class:game-asset-generation",
+        "label": "Game Asset Generation"
+      },
+      {
+        "@id": "urn:ngm:class:scene-generation",
+        "label": "Scene Generation"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:objaverse", "label": "Objaverse"},
-      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:objaverse",
+        "label": "Objaverse"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:text-to-3-d", "label": "Text-to-3D"},
-      {"@id": "urn:ngm:class:neural-3-d-generation", "label": "Neural 3D Generation"},
-      {"@id": "urn:ngm:class:novel-view-synthesis", "label": "Novel View Synthesis"},
-      {"@id": "urn:ngm:class:mesh-generation", "label": "Mesh Generation"}
+      {
+        "@id": "urn:ngm:class:text-to-3-d",
+        "label": "Text-to-3D"
+      },
+      {
+        "@id": "urn:ngm:class:neural-3-d-generation",
+        "label": "Neural 3D Generation"
+      },
+      {
+        "@id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-generation",
+        "label": "Mesh Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "quality": 0.88,
@@ -119,67 +333,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "OntologyEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:3-d-generation:a1b2c3d4e5f6",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3-d-generation"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink"},
-    {"raw": "[[NeRF]]", "resolved": "urn:visionflow:linked:ne-rf", "kind": "StubLink"},
-    {"raw": "[[Gaussian Splatting]]", "resolved": "urn:visionflow:linked:gaussian-splatting", "kind": "ResolvedLink"},
-    {"raw": "[[Text-to-3D]]", "resolved": "urn:visionflow:linked:text-to-3-d", "kind": "StubLink"},
-    {"raw": "[[Neural 3D Generation]]", "resolved": "urn:visionflow:linked:neural-3-d-generation", "kind": "ResolvedLink"},
-    {"raw": "[[3D Reconstruction]]", "resolved": "urn:visionflow:linked:3-d-reconstruction", "kind": "StubLink"},
-    {"raw": "[[3D Content Creation]]", "resolved": "urn:visionflow:linked:3-d-content-creation", "kind": "StubLink"},
-    {"raw": "[[Digital Twin Generation]]", "resolved": "urn:visionflow:linked:digital-twin-generation", "kind": "StubLink"},
-    {"raw": "[[Game Asset Generation]]", "resolved": "urn:visionflow:linked:game-asset-generation", "kind": "StubLink"},
-    {"raw": "[[Score Distillation Sampling]]", "resolved": "urn:visionflow:linked:score-distillation-sampling", "kind": "StubLink"},
-    {"raw": "[[Generative Model]]", "resolved": "urn:visionflow:linked:generative-model", "kind": "StubLink"},
-    {"raw": "[[Computer Vision]]", "resolved": "urn:visionflow:linked:computer-vision", "kind": "StubLink"},
-    {"raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:linked:multimodal-ai", "kind": "StubLink"},
-    {"raw": "[[Image Generation]]", "resolved": "urn:visionflow:linked:image-generation", "kind": "StubLink"},
-    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "StubLink"},
-    {"raw": "[[Generative Adversarial Network]]", "resolved": "urn:visionflow:linked:generative-adversarial-network", "kind": "StubLink"},
-    {"raw": "[[Variational Autoencoder]]", "resolved": "urn:visionflow:linked:variational-autoencoder", "kind": "StubLink"},
-    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "StubLink"},
-    {"raw": "[[Implicit Neural Representation]]", "resolved": "urn:visionflow:linked:implicit-neural-representation", "kind": "StubLink"},
-    {"raw": "[[Point Cloud]]", "resolved": "urn:visionflow:linked:point-cloud", "kind": "StubLink"},
-    {"raw": "[[Mesh Generation]]", "resolved": "urn:visionflow:linked:mesh-generation", "kind": "StubLink"},
-    {"raw": "[[Novel View Synthesis]]", "resolved": "urn:visionflow:linked:novel-view-synthesis", "kind": "StubLink"},
-    {"raw": "[[Spatial Computing]]", "resolved": "urn:visionflow:linked:spatial-computing", "kind": "StubLink"},
-    {"raw": "[[Extended Reality]]", "resolved": "urn:visionflow:linked:extended-reality", "kind": "StubLink"},
-    {"raw": "[[Digital Twin]]", "resolved": "urn:visionflow:linked:digital-twin", "kind": "StubLink"},
-    {"raw": "[[Autonomous Navigation]]", "resolved": "urn:visionflow:linked:autonomous-navigation", "kind": "StubLink"},
-    {"raw": "[[Robotics]]", "resolved": "urn:visionflow:linked:robotics", "kind": "StubLink"},
-    {"raw": "[[GPU Compute]]", "resolved": "urn:visionflow:linked:gpu-compute", "kind": "StubLink"},
-    {"raw": "[[Latent Diffusion Model]]", "resolved": "urn:visionflow:linked:latent-diffusion-model", "kind": "StubLink"},
-    {"raw": "[[CLIP]]", "resolved": "urn:visionflow:linked:clip", "kind": "StubLink"},
-    {"raw": "[[Objaverse]]", "resolved": "urn:visionflow:linked:objaverse", "kind": "StubLink"},
-    {"raw": "[[Instant-NGP]]", "resolved": "urn:visionflow:linked:instant-ngp", "kind": "StubLink"},
-    {"raw": "[[Triplane]]", "resolved": "urn:visionflow:linked:triplane", "kind": "StubLink"},
-    {"raw": "[[Signed Distance Function]]", "resolved": "urn:visionflow:linked:signed-distance-function", "kind": "StubLink"},
-    {"raw": "[[Occupancy Network]]", "resolved": "urn:visionflow:linked:occupancy-network", "kind": "StubLink"},
-    {"raw": "[[Texture Synthesis]]", "resolved": "urn:visionflow:linked:texture-synthesis", "kind": "StubLink"},
-    {"raw": "[[Scene Generation]]", "resolved": "urn:visionflow:linked:scene-generation", "kind": "StubLink"},
-    {"raw": "[[3D Content Generation]]", "resolved": "urn:visionflow:linked:3-d-content-generation", "kind": "StubLink"},
-    {"raw": "[[Differentiable Rendering]]", "resolved": "urn:visionflow:linked:differentiable-rendering", "kind": "ResolvedLink"},
-    {"raw": "[[U-Net]]", "resolved": "urn:visionflow:linked:u-net", "kind": "StubLink"},
-    {"raw": "[[Vision Transformer]]", "resolved": "urn:visionflow:linked:vision-transformer", "kind": "StubLink"},
-    {"raw": "[[E-Commerce]]", "resolved": "urn:visionflow:linked:e-commerce", "kind": "StubLink"},
-    {"raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:linked:ai-grounded-domain", "kind": "ResolvedLink"},
-    {"raw": "[[AlgorithmLayer]]", "resolved": "urn:visionflow:linked:algorithm-layer", "kind": "ResolvedLink"},
-    {"raw": "[[ApplicationLayer]]", "resolved": "urn:visionflow:linked:application-layer", "kind": "ResolvedLink"},
-    {"raw": "[[ComputationAndIntelligenceDomain]]", "resolved": "urn:visionflow:linked:computation-and-intelligence-domain", "kind": "ResolvedLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -517,7 +670,7 @@ public: true
   - Meta Quest 4 (2026 expected): Onboard neural processing enabling real-time Gaussian splat capture and lightweight generation for spatial computing authoring.
 
   **Physics-Consistent and Simulation-Ready Generation**
-  A key gap in 2026 is that generated 3D assets are visually plausible but physically inconsistent — objects can float, interpenetrate, or have mass distributions that make them fall over. Research directions: (1) physics simulation loss during generation (differentiable rigid-body simulation); (2) structural-integrity constraints (ensuring generated furniture, architecture, and vehicles could physically support their stated loads); (3) material property prediction alongside geometry (density, elasticity, friction coefficient) to enable physics simulation.
+  A key gap in 2026 is that generated 3D assets are visually plausible but physically inconsistent — objects can float, interpenetrate, or have mass distributions that make them fall over. Research directions: (1) physics simulation loss during generation (differentiable rigid-body simulation); (2) structural-integrity constraints (ensuring generated furniture, architecture, and vehicles [private] physically support their stated loads); (3) material property prediction alongside geometry (density, elasticity, friction coefficient) to enable physics simulation.
 
   **Agentic 3D Content Pipelines**
   The long-term vision (2027–2030) is LLM-orchestrated multi-step agentic pipelines that treat 3D generation as one tool among many. An agent might decompose "a medieval village square" into: select a cobblestone texture from a texture library; generate a fountain object via text-to-3D; generate surrounding buildings with OpenAI Point-E and refine with TRELLIS; generate market stalls and wooden carts; assemble all assets in Blender via a Python API; validate physical plausibility with a simulation pass; and iterate based on user feedback. This represents a shift from "model that generates 3D" to "system that manages 3D content production".

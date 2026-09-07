@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Testing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Testing is the software-engineering practice of verifying that a system behaves as specified and detecting defects by executing it against defined inputs and checking the outputs. It spans levels from unit and integration to system and acceptance testing, and styles from manual to fully automated. Systematic testing is a primary mechanism for establishing software reliability and guarding against regressions.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:reliability", "label": "Reliability"},
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ]
   },
   "quality": 0.72

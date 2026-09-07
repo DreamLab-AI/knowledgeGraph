@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ArtificialIntelligence
----
-
-# Artificial Intelligence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,10 +106,6 @@ aliases:
     {
       "@id": "urn:visionflow:owl:class:comfy-ui",
       "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comparison-of-gpt4-and-gemini-ultra",
-      "vc:label": "Comparison of GPT4 and Gemini Ultra"
     },
     {
       "@id": "urn:visionflow:owl:class:computer-vision",
@@ -320,272 +309,6 @@ aliases:
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:artificial-intelligence:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3c39ae8344fb75921186d771ec88b63db9bfb69134be41db6e430cc138503fcb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Autonomous Systems]]",
-      "resolved": "urn:visionflow:linked:autonomous-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computational Infrastructure]]",
-      "resolved": "urn:visionflow:linked:computational-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Decision Support]]",
-      "resolved": "urn:visionflow:linked:decision-support",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[design thinking]]",
-      "resolved": "urn:visionflow:linked:design-thinking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Intelligent Automation]]",
-      "resolved": "urn:visionflow:linked:intelligent-automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 22989:2022]]",
-      "resolved": "urn:visionflow:linked:iso-iec-22989-2022",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23053:2022]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23053-2022",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23894:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23894-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 42001:2023]]",
-      "resolved": "urn:visionflow:linked:iso-iec-42001-2023",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Mark Zuckerberg]]",
-      "resolved": "urn:visionflow:linked:mark-zuckerberg",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Networks]]",
-      "resolved": "urn:visionflow:linked:neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI RMF]]",
-      "resolved": "urn:visionflow:linked:nist-ai-rmf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OECD]]",
-      "resolved": "urn:visionflow:linked:oecd",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[oecd]]",
-      "resolved": "urn:visionflow:linked:oecd",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Personalisation]]",
-      "resolved": "urn:visionflow:linked:personalisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[user experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Risks]]",
-      "resolved": "urn:visionflow:owl:class:ai-risks",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Video]]",
-      "resolved": "urn:visionflow:owl:class:ai-video",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial General Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[artificial intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
-      "resolved": "urn:visionflow:owl:class:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Comparison of GPT4 and Gemini Ultra]]",
-      "resolved": "urn:visionflow:owl:class:comparison-of-gpt4-and-gemini-ultra",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[computer vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[deep learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:owl:class:generative-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware and Edge]]",
-      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Leopold Aschenbrenner Situational Awareness]]",
-      "resolved": "urn:visionflow:owl:class:leopold-aschenbrenner",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[machine learning]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:owl:class:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Predictive Analytics]]",
-      "resolved": "urn:visionflow:owl:class:predictive-analytics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:owl:class:reinforcement-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Singularity]]",
-      "resolved": "urn:visionflow:owl:class:singularity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stable Diffusion Image Model]]",
-      "resolved": "urn:visionflow:owl:class:stable-diffusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Training Data]]",
-      "resolved": "urn:visionflow:owl:class:training-data",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - ### Primary Definition
 
@@ -648,25 +371,25 @@ aliases:
 
   - # Artificial Intelligence
   - The development of [[Artificial General Intelligence]] (AGI) and Artificial Superintelligence (ASI) is highly controversial and debated. Experts disagree on the likelihood, timeline, and implications of these advanced AI systems
-  - AGI/ASI may not have human-like emotions, desires, or anthropomorphised traits that we imagine. Its cognition and intentions could be entirely alien and incomprehensible to us
+  - AGI/ASI may not have human-like emotions, desires, or anthropomorphised traits that we imagine. Its cognition and intentions [private] be entirely alien and incomprehensible to us
   - It's unclear whether an AGI/ASI would be sympathetic and protective of humanity as an "ancestor" species, or view us as irrelevant and expendable. Both scenarios are conceivable
-  - China's model of a more closed, centralized, state-controlled technology ecosystem could potentially be applied to AGI development. This could allow for more rapid, coordinated, and sandboxed AGI research compared to a fragmented global effort
+  - China's model of a more closed, centralized, state-controlled technology ecosystem [private] potentially be applied to AGI development. This [private] allow for more rapid, coordinated, and sandboxed AGI research compared to a fragmented global effort
   - In the near-term, AI presents major risks around privacy, surveillance, manipulation, and control at the hands of corporations and governments. Regulation is needed to curtail abuses of the technology.
-  - AI-generated content is rapidly proliferating online and has the potential to flood the digital landscape, displacing human-created art/music/writin. This could lead to cultural homogenisation and stagnation, or more likely a fracturing of common purpose.
-  - If AI renders broad swaths of human labour obsolete, we could face severe economic disruption and inequality if social policies (e.g. universal basic income) are not in place to ensure a humane transition
-  - If not properly controlled and aligned, an advanced AGI/ASI could pose an existential catastrophic risk to humanity. A super-intelligent AI may pursue goals misaligned with human interests and wellbeing
+  - AI-generated content is rapidly proliferating online and has the potential to flood the digital landscape, displacing human-created art/music/writin. This [private] lead to cultural homogenisation and stagnation, or more likely a fracturing of common purpose.
+  - If AI renders broad swaths of human labour obsolete, we [private] face severe economic disruption and inequality if social policies (e.g. universal basic income) are not in place to ensure a humane transition
+  - If not properly controlled and aligned, an advanced AGI/ASI [private] pose an existential catastrophic risk to humanity. A super-intelligent AI may pursue goals misaligned with human interests and wellbeing
   - The companies and countries that develop AGI/ASI first will have an unprecedented concentration of power and competitive advantage. A unipolar AGI scenario is dangerous if the technology is not developed carefully in a globally collaborative manner
   - AI will give humans "superpowers" by acting as an always-available intelligent assistant deeply integrated into XR interfaces. AI will allow us to instantly access knowledge and skills beyond our own abilities
-  - In the long-term, (post-[[Singularity]] future?), super-intelligent AI could potentially solve major human challenges like scarcity, leading to an abundant "techno-utopian" society. There is a possibility that ASI treats humanity with compassion
+  - In the long-term, (post-[[Singularity]] future?), super-intelligent AI [private] potentially solve major human challenges like scarcity, leading to an abundant "techno-utopian" society. There is a possibility that ASI treats humanity with compassion
   - AI is a critical catalyst and requirement for the growth and advancement of XR. AI enables key XR functionalities like environment scanning, voice/eye/hand tracking, and increasingly photorealistic avatar creation
   - Synthetic training data generated by AI may eventually surpass real-world data in terms of producing high-quality AI models
-  - AI could greatly enhance education by enabling personalized one-on-one tutoring and adapting to each student's learning style and pace
+  - AI [private] greatly enhance education by enabling personalized one-on-one tutoring and adapting to each student's learning style and pace
 
   - ### Energy Consumption and Climate Impact of AI search
 		- The rapid adoption in internet search has significant [implications for energy consumption](https://www.theverge.com/2023/10/10/23911059/ai-climate-impact-google-openai-chatgpt-energy) and climate change, and excluding much of the world from viable knowledge discovery.
 		- [Artificial Intelligence Impact on the Environment: Hidden Ecological Costs and Ethical-Legal Issues | Zhuk | Journal of Digital Technologies and Law (lawjournal.digital)](https://www.lawjournal.digital/jour/article/view/303?locale=en_US)
 		- **Data Centers and Energy Use**
-			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner Situational Awareness]] . The International Energy Agency (IEA) reported that global data center electricity demand grew 17% in 2025, with AI-focused facilities surging 50%, and now projects consumption will double by 2030 (with AI-linked demand tripling over the same period). These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
+			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[[private]]] . The International Energy Agency (IEA) reported that global data center electricity demand grew 17% in 2025, with AI-focused facilities surging 50%, and now projects consumption will double by 2030 (with AI-linked demand tripling over the same period). These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
 			- Training a single AI model can emit up to 626,000 pounds of carbon dioxide equivalent, nearly five times the lifetime emissions of the average American car.
 			- The carbon footprint of GenAI models is exacerbated by their [energy-intensive nature](https://www.technologyreview.com/2023/12/01/1084189/making-an-image-with-generative-ai-uses-as-much-energy-as-charging-your-phone/) and the need for frequent hardware replacements, which contribute to electronic waste.
 			- [The new AI Google search is incredibly wasteful](https://www.scientificamerican.com/article/what-do-googles-ai-answers-cost-the-environment/)
@@ -687,7 +410,7 @@ aliases:
 		- You’re going to see devices launch in early 2024 with a number of [[Proprietary Large Language Models]] use cases. It has the potential to create a new upgrade cycle on smartphones. And what we want is that eventually you’re going to say, you know, “I’ve been keeping my phone for the past four years . . . Now I need to buy a new phone because I really want this gen AI capability
 		- VR and AI
 			- We are seeing gen AI coming into VR. We see an incredible potential for augmented reality and mixed reality glasses, especially as you use audio and large language models as an interface. We have been very bullish about spatial computing being the new computing platform, and we see a lot of promising developments coming: we see what Meta is doing, we see what is happening on the Android ecosystem with Google and Samsung. We are just at the beginning.
-			- Bloomberg reports Sam Altman is in talks to raise money for a ‘global’ network of fabricators building hardware for AI. Sam Altman's plan to establish a global network of AI chip factories could revolutionize the tech industry, reducing dependence on existing semiconductor giants and ensuring a steady supply of AI advancements.
+			- Bloomberg reports Sam Altman is in talks to raise money for a ‘global’ network of fabricators building hardware for AI. Sam Altman's plan to establish a global network of AI chip factories [private] revolutionize the tech industry, reducing dependence on existing semiconductor giants and ensuring a steady supply of AI advancements.
 			- [The Groq LPU™ Inference Engine - Groq](https://wow.groq.com/lpu-inference-engine/) Asic
 			- [Chat with RTX Now Free to Download | NVIDIA Blog](https://blogs.nvidia.com/blog/chat-with-rtx-available-now/)
 		- [AMD Instinct™ MI300 Series Accelerators](https://www.amd.com/en/products/accelerators/instinct/mi300.html)
@@ -806,12 +529,12 @@ aliases:
 
   - # Artificial Intelligence
   - The development of [[Artificial General Intelligence]] (AGI) and Artificial Superintelligence (ASI) is highly controversial and debated. Experts disagree on the likelihood, timeline, and implications of these advanced AI systems
-  - AGI/ASI may not have human-like emotions, desires, or anthropomorphised traits that we imagine. Its cognition and intentions could be entirely alien and incomprehensible to us
+  - AGI/ASI may not have human-like emotions, desires, or anthropomorphised traits that we imagine. Its cognition and intentions [private] be entirely alien and incomprehensible to us
   - It's unclear whether an AGI/ASI would be sympathetic and protective of humanity as an "ancestor" species, or view us as irrelevant and expendable. Both scenarios are conceivable
-  - China's model of a more closed, centralized, state-controlled technology ecosystem could potentially be applied to AGI development. This could allow for more rapid, coordinated, and sandboxed AGI research compared to a fragmented global effort
+  - China's model of a more closed, centralized, state-controlled technology ecosystem [private] potentially be applied to AGI development. This [private] allow for more rapid, coordinated, and sandboxed AGI research compared to a fragmented global effort
   - In the near-term, AI presents major risks around privacy, surveillance, manipulation, and control at the hands of corporations and governments. Regulation is needed to curtail abuses of the technology.
   - XR has the potential to greatly enhance fields like medicine, education, and industrial design by providing rich spatial computing interfaces.
-  - The lack of compelling content and experiences has been a limiting factor for XR adoption. However, AI-generated assets could help solve this content bottleneck and enable the rapid creation of photorealistic virtual worlds
+  - The lack of compelling content and experiences has been a limiting factor for XR adoption. However, AI-generated assets [private] help solve this content bottleneck and enable the rapid creation of photorealistic virtual worlds
   - Privacy and security remain ongoing concerns in XR ecosystems, as they capture even more biometric and behavioral data than traditional computing interfaces
   - VR in particular still faces physiological challenges around multi-sensory immersion (e.g. locomotion) that will need to be solved before the technology can go fully mainstream
 
@@ -819,7 +542,7 @@ aliases:
 		- The rapid adoption in internet search has significant [implications for energy consumption](https://www.theverge.com/2023/10/10/23911059/ai-climate-impact-google-openai-chatgpt-energy) and climate change, and excluding much of the world from viable knowledge discovery.
 		- [Artificial Intelligence Impact on the Environment: Hidden Ecological Costs and Ethical-Legal Issues | Zhuk | Journal of Digital Technologies and Law (lawjournal.digital)](https://www.lawjournal.digital/jour/article/view/303?locale=en_US)
 		- **Data Centers and Energy Use**
-			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner Situational Awareness]] . The International Energy Agency (IEA) reported that global data center electricity demand grew 17% in 2025, with AI-focused facilities surging 50%, and now projects consumption will double by 2030 (with AI-linked demand tripling over the same period). These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
+			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[[private]]] . The International Energy Agency (IEA) reported that global data center electricity demand grew 17% in 2025, with AI-focused facilities surging 50%, and now projects consumption will double by 2030 (with AI-linked demand tripling over the same period). These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
 			- Training a single AI model can emit up to 626,000 pounds of carbon dioxide equivalent, nearly five times the lifetime emissions of the average American car.
 			- The carbon footprint of GenAI models is exacerbated by their [energy-intensive nature](https://www.technologyreview.com/2023/12/01/1084189/making-an-image-with-generative-ai-uses-as-much-energy-as-charging-your-phone/) and the need for frequent hardware replacements, which contribute to electronic waste.
 			- [The new AI Google search is incredibly wasteful](https://www.scientificamerican.com/article/what-do-googles-ai-answers-cost-the-environment/)
@@ -900,7 +623,7 @@ aliases:
   - ### Future Plans
 		- **AGI and Agents:** OpenAI pursued agentic AI systems through 2025-2026 but has not announced AGI achievement as of mid-2026; CEO Sam Altman has projected AI research automation capabilities emerging by 2027-2028.
 		- **Hardware:** The acquisition of [io](https://www.bleepingcomputer.com/news/technology/jony-ives-ai-hardware-startup-reportedly-in-talks-with-openai/) suggests a move into AI hardware.
-  - [[Comparison of GPT4 and Gemini Ultra]]
+  - [[[private]]]
   - [Inflection](https://inflection.ai/)
   - Pi is the best of the "conversational AI" interfaces.
   - Waymo
@@ -929,7 +652,7 @@ aliases:
 		- The rapid adoption in internet search has significant [implications for energy consumption](https://www.theverge.com/2023/10/10/23911059/ai-climate-impact-google-openai-chatgpt-energy) and climate change, and excluding much of the world from viable knowledge discovery.
 		- [Artificial Intelligence Impact on the Environment: Hidden Ecological Costs and Ethical-Legal Issues | Zhuk | Journal of Digital Technologies and Law (lawjournal.digital)](https://www.lawjournal.digital/jour/article/view/303?locale=en_US)
 		- **Data Centers and Energy Use**
-			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[Leopold Aschenbrenner Situational Awareness]] . The International Energy Agency (IEA) reported that global data center electricity demand grew 17% in 2025, with AI-focused facilities surging 50%, and now projects consumption will double by 2030 (with AI-linked demand tripling over the same period). These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
+			- GenAI relies on massive data centers, which consume [substantial amounts of energy](https://mit-genai.pubpub.org/pub/8ulgrckc/release/2). Talk is now shifting to gigawatt datacentres [[[private]]] . The International Energy Agency (IEA) reported that global data center electricity demand grew 17% in 2025, with AI-focused facilities surging 50%, and now projects consumption will double by 2030 (with AI-linked demand tripling over the same period). These data centers are primarily powered by fossil fuels, [contributing significantly to greenhouse gas emissions](https://e360.yale.edu/features/artificial-intelligence-climate-energy-emissions).
 			- Training a single AI model can emit up to 626,000 pounds of carbon dioxide equivalent, nearly five times the lifetime emissions of the average American car.
 			- **Cost and Accessibility Barriers**:
 				- The high energy costs associated with GENAI data centers are passed on to users, making these services less accessible to those in lower-income regions or with limited internet infrastructure.
@@ -957,7 +680,7 @@ aliases:
 
   - #### 4.12.13 Open-source AI and Global Politics
   - [Lesswrong AI section](https://www.lesswrong.com/tag/ai)
-  - [Goldman Sachs Predicts 300 Million Jobs Will Be Lost Or Degraded By Artificial Intelligence: Goldman Sachs maintains that if generative AI lives up to its hype, the workforce in the United States and Europe will be upended. The bank estimates 300 million jobs could be lost or diminished due to this fast-growing technology.](https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/?sh=3af7314e782b)
+  - [Goldman Sachs Predicts 300 Million Jobs Will Be Lost Or Degraded By Artificial Intelligence: Goldman Sachs maintains that if generative AI lives up to its hype, the workforce in the United States and Europe will be upended. The bank estimates 300 million jobs [private] be lost or diminished due to this fast-growing technology.](https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/?sh=3af7314e782b)
   - [Medium listing approachs](https://blog.medium.com/how-were-approaching-ai-generated-writing-on-medium-16ee8cb3bc89)
   - [Drives us mad, Guardian](https://www.theguardian.com/technology/2023/mar/23/tech-guru-jaron-lanier-the-danger-isnt-that-ai-destroys-us-its-that-it-drives-us-insane)
   - [Chatbots must disclose sources or face ban](https://www.artisana.ai/articles/eus-ai-act-stricter-rules-for-chatbots-on-the-horizon)
@@ -968,7 +691,7 @@ aliases:
 	  Gartner’s hype cycle 2022 features Web3, distributed identity, NFTs, and Metaverse and can be seen in Figure 1.6.
 		- Regulation refrains from covering decentralized finance or non-fungible tokens
   - [WEF risks report links](https://sociable.co/government-and-policy/wef-global-risks-report-cyber-pandemic-erosion-trust-social-cohesion/)
-  - The text discusses the potential implications of Generative Pre-trained Transformer (GPT) models on the U.S. labor market. It uses a new rubric to assess occupations based on their correspondence with GPT capabilities, incorporating both human expertise and classifications from GPT-4. The findings indicate that approximately 80% of the U.S. workforce could have at least 10% of their work tasks affected by the introduction of GPTs, while around 19% of workers may see at least 50% of their tasks impacted. The influence spans all wage levels, with higher-income jobs potentially facing greater exposure. Notably, the impact is not limited to industries with higher recent productivity growth. The text concludes that Generative Pre-trained Transformers exhibit characteristics of general-purpose technologies (GPTs), suggesting that these models could have notable economic, social, and policy implications.
+  - The text discusses the potential implications of Generative Pre-trained Transformer (GPT) models on the U.S. labor market. It uses a new rubric to assess occupations based on their correspondence with GPT capabilities, incorporating both human expertise and classifications from GPT-4. The findings indicate that approximately 80% of the U.S. workforce [private] have at least 10% of their work tasks affected by the introduction of GPTs, while around 19% of workers may see at least 50% of their tasks impacted. The influence spans all wage levels, with higher-income jobs potentially facing greater exposure. Notably, the impact is not limited to industries with higher recent productivity growth. The text concludes that Generative Pre-trained Transformers exhibit characteristics of general-purpose technologies (GPTs), suggesting that these models [private] have notable economic, social, and policy implications.
   - [Silvergate Purchases Blockchain libre](https://ir.silvergate.com/news/news-details/2022/Silvergate-Purchases-Blockchain-Payment-Network-Assets-from-Diem/default.aspx)
   - [Online safety bill heather articles](https://webdevlaw.uk/2022/11/21/a-quick-hypothetical-situation-or-your-crash-introduction-to-the-real-world/)
   - [Social Media Is Changing, And Paid Accounts Are The Response](https://www.bigtechnology.com/p/social-media-is-changing-and-paid)

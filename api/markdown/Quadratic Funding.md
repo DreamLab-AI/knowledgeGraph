@@ -1,8 +1,3 @@
----
-public: true
----
-
-# quadratic funding
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Software Bill of Materials
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:software-bill-of-materials", "@type":"Page", "title":"Software Bill of Materials", "vc:slug":"software-bill-of-materials", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:software-bill-of-materials",
+  "@type": "Page",
+  "title": "Software Bill of Materials",
+  "vc:slug": "software-bill-of-materials",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

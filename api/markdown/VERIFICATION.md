@@ -1,8 +1,3 @@
----
-public: true
----
-
-# VERIFICATION
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -96,16 +91,34 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:standards-validation", "label": "Standards Validation"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:standards-validation",
+        "label": "Standards Validation"
+      }
     ]
   },
   "provenance": {
@@ -115,82 +128,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:verification:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a28e12a031bdfd549b346c04149be895b495e93b9719f19fbfc9b9f76d5b16d9"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BlockchainConsensus|consensus mechanisms]]",
-      "resolved": "urn:visionflow:linked:blockchain-consensus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CryptographicProofs|cryptographic verification]]",
-      "resolved": "urn:visionflow:linked:cryptographic-proofs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DigitalAssetAuthenticity|digital asset provenance]]",
-      "resolved": "urn:visionflow:linked:digital-asset-authenticity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaversePlatforms|metaverse]]",
-      "resolved": "urn:visionflow:linked:metaverse-platforms",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OntologyValidation|ontology schema conformance]]",
-      "resolved": "urn:visionflow:linked:ontology-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RuleBaseValidation|rule-based validation]]",
-      "resolved": "urn:visionflow:linked:rule-base-validation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SmartContractAudit|smart contract correctness]]",
-      "resolved": "urn:visionflow:linked:smart-contract-audit",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[TransactionVerification|transaction authenticity]]",
-      "resolved": "urn:visionflow:linked:transaction-verification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UserAcceptanceTesting|user acceptance testing]]",
-      "resolved": "urn:visionflow:linked:user-acceptance-testing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DigitalSignature|digital signatures]]",
-      "resolved": "urn:visionflow:owl:class:digital-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Verification in knowledge systems is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through [[CryptographicProofs|cryptographic verification]], [[RuleBaseValidation|rule-based validation]], and [[UserAcceptanceTesting|user acceptance testing]]. Within [[MetaversePlatforms|metaverse]] and blockchain contexts, verification encompasses [[TransactionVerification|transaction authenticity]], [[SmartContractAudit|smart contract correctness]], [[OntologyValidation|ontology schema conformance]], and [[DigitalAssetAuthenticity|digital asset provenance]] through [[BlockchainConsensus|consensus mechanisms]] or [[DigitalSignature|digital signatures]]. Comprehensive verification frameworks establish trust between stakeholders, prevent fraud, and enable secure interaction in decentralised systems lacking centralised authorities.

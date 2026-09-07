@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Distributed Teamwork
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

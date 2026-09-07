@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Compute Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,11 @@ public: true
   "vc:slug": "ai-compute-infrastructure",
   "title": "AI Compute Infrastructure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Colossus 1 Data Center", "Nvidia H100 GPUs", "SpaceX"],
+  "vc:outboundWikilinks": [
+    "Colossus 1 Data Center",
+    "Nvidia H100 GPUs",
+    "SpaceX"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +25,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}, {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

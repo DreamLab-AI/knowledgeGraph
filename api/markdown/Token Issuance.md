@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Token Issuance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

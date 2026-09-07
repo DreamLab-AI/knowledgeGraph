@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ArchitecturalLayer
----
-
-# Architectural Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,21 +20,50 @@ aliases:
   "definition": "An architectural layer is a discrete horizontal stratum within a layered software or system architecture, responsible for a cohesive set of concerns and communicating only with adjacent layers through well-defined interfaces. Layered decomposition is a fundamental pattern in software architecture that promotes separation of concerns, replaceability of individual layers, and independent evolution of distinct system capabilities. Classic examples include the OSI network model's seven layers, the three-tier application architecture (presentation, logic, data), and the cloud-native separation of infrastructure, platform, and application layers.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:technology-infrastructure-domain-layer", "label": "Infrastructure Layer"},
-      {"@id": "urn:ngm:class:network-layer", "label": "Network Layer"},
-      {"@id": "urn:ngm:class:service-layer", "label": "Service Layer"},
-      {"@id": "urn:ngm:class:application-layer", "label": "Application Layer"}
+      {
+        "@id": "urn:ngm:class:technology-infrastructure-domain-layer",
+        "label": "Infrastructure Layer"
+      },
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:service-layer",
+        "label": "Service Layer"
+      },
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:hardware-abstraction", "label": "Hardware Abstraction"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"},
-      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"}
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
     ]
   },
   "quality": 0.8

@@ -1,38 +1,108 @@
----
-public: true
----
-
-# Normal Map
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:normal-map", "@type":"Page", "title":"Normal Map", "vc:slug":"normal-map", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:normal-map",
+  "@type": "Page",
+  "title": "Normal Map",
+  "vc:slug": "normal-map",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:normal-map",
-  "@type":"Class",
-  "label":"Normal Map",
-  "definition":"A normal map is a texture that encodes per-texel surface normal directions, typically storing the X, Y, and Z components of a normal vector in the red, green, and blue channels. It allows a low-polygon mesh to react to lighting as if it had the fine geometric detail of a much denser surface, by perturbing the shading normal without changing the underlying geometry. Normal maps are a foundational technique in real-time and physically based rendering for adding visual detail efficiently.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:physically-based-rendering","label":"Physically Based Rendering"}],
-    "uses":[{"@id":"urn:ngm:class:shader","label":"Shader"}],
-    "enables":[{"@id":"urn:ngm:class:physically-based-rendering","label":"Physically Based Rendering"}],
-    "requires":[{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-    "dependsOn":[{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"}],
-    "implements":[{"@id":"urn:ngm:class:rendering-technique","label":"Rendering Technique"}],
-    "supports":[{"@id":"urn:ngm:class:polygon-mesh","label":"Polygon Mesh"}],
-    "hasPart":[{"@id":"urn:ngm:class:texture-mapping","label":"Texture Mapping"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:shader","label":"Shader"}],
-    "relatedTo":[{"@id":"urn:ngm:class:rendering-technique","label":"Rendering Technique"},{"@id":"urn:ngm:class:gpu","label":"GPU"},{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:normal-map",
+  "@type": "Class",
+  "label": "Normal Map",
+  "definition": "A normal map is a texture that encodes per-texel surface normal directions, typically storing the X, Y, and Z components of a normal vector in the red, green, and blue channels. It allows a low-polygon mesh to react to lighting as if it had the fine geometric detail of a much denser surface, by perturbing the shading normal without changing the underlying geometry. Normal maps are a foundational technique in real-time and physically based rendering for adding visual detail efficiently.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:texture-mapping",
+      "label": "Texture Mapping"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

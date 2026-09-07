@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Atomic Settlement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,7 +191,7 @@ public: true
   - **[[Digital Signature]]** — authentication primitive ensuring that both parties have authorised the exchange before the atomic execution is triggered, preventing unauthorised fund movement within the settlement contract.
 
 - ### Applications and Use Cases
-  - **[[Decentralized Exchange]] (DEX)** — automated market makers and order-book DEXes depend on atomic settlement to prevent front-running exploits that exploit the gap between trade commitment and execution. Without atomicity, a malicious actor could observe a pending trade and insert a competing transaction.
+  - **[[Decentralized Exchange]] (DEX)** — automated market makers and order-book DEXes depend on atomic settlement to prevent front-running exploits that exploit the gap between trade commitment and execution. Without atomicity, a malicious actor [private] observe a pending trade and insert a competing transaction.
   - **[[Atomic Swap]]** — the direct peer-to-peer application: two parties exchange tokens on different blockchains without a centralised exchange, using HTLCs to guarantee that both transfers complete or neither does.
   - **[[Securities Settlement]]** — post-trade infrastructure for equities, bonds, and derivatives. Blockchain-based atomic settlement enables T+0 (same-day) or even intraday settlement, reducing systemic exposure and margin requirements compared to T+2 cycles.
   - **[[Tokenised Securities]]** — when securities are represented as blockchain tokens, atomic settlement allows simultaneous transfer of ownership token and payment token in a single transaction, implementing [[Delivery-versus-Payment]] natively without a CSD or CCP.
@@ -252,7 +247,7 @@ public: true
   - **Legal finality** — technical atomicity does not automatically constitute legal finality in all jurisdictions. Some legal systems require additional steps (registration, novation) before on-chain settlement is recognised as transfer of legal title.
 
 - ### Historical Context
-  - Atomic settlement traces its conceptual origin to the [[ACID Properties]] formalised in database theory during the 1970s, specifically the atomicity guarantee articulated by Jim Gray and Andreas Reuter. When applied to financial markets, it addresses the classical settlement risk problem — the possibility that one party delivers while the other defaults — that historically necessitated [[Central Counterparty]] clearinghouses and custodians. The concept entered distributed systems practice via [[Atomic Broadcast]] and [[Two-Phase Commit]] protocols, before migrating to blockchain networks where [[Smart Contract]] execution could enforce it without a trusted intermediary. The 2015–2016 emergence of [[Hash Time-Locked Contract]]s on Bitcoin and Lightning Network demonstrated cross-chain atomicity at scale. By 2020–2025, the model had moved from DeFi experimentation into regulated post-trade infrastructure pilots across multiple jurisdictions.
+  - Atomic settlement traces its conceptual origin to the [[ACID Properties]] formalised in database theory during the 1970s, specifically the atomicity guarantee articulated by Jim Gray and Andreas Reuter. When applied to financial markets, it addresses the classical settlement risk problem — the possibility that one party delivers while the other defaults — that historically necessitated [[Central Counterparty]] clearinghouses and custodians. The concept entered distributed systems practice via [[Atomic Broadcast]] and [[Two-Phase Commit]] protocols, before migrating to blockchain networks where [[Smart Contract]] execution [private] enforce it without a trusted intermediary. The 2015–2016 emergence of [[Hash Time-Locked Contract]]s on Bitcoin and Lightning Network demonstrated cross-chain atomicity at scale. By 2020–2025, the model had moved from DeFi experimentation into regulated post-trade infrastructure pilots across multiple jurisdictions.
 
 - ### Current Landscape (2026)
   - The European Central Bank moved from experiment to build: on 20 February 2025 the Governing Council approved a two-track plan — Pontes, a short-term interoperability link between DLT platforms and TARGET Services (pilot scheduled for Q3 2026, with tokenised wholesale CBDC to be provided from autumn 2026), and Appia, a longer-term integrated ledger — operationalising all-or-none DvP/PvP atomicity in central bank money.

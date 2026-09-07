@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Bradley Terry Model
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -504,7 +498,7 @@ public: true
 
   **Multi-dimensional preference models**: Decomposing preference into multiple latent dimensions (helpfulness, harmlessness, honesty) rather than a single scalar, allowing preference-conditional alignment. Constitutional AI and RLAIF gesture at this; fully multi-dimensional BT generalisations using matrix-valued strengths are in early development.
 
-  **Active comparison selection**: Using optimal experimental design to select the most informative pairs for human annotation, reducing annotation cost while maintaining BT estimator quality. Active learning methods for BT — choosing pairs with maximum Fisher information or maximum uncertainty — could reduce required annotations by an order of magnitude. Critical for scaling expensive LLM annotation pipelines.
+  **Active comparison selection**: Using optimal experimental design to select the most informative pairs for human annotation, reducing annotation cost while maintaining BT estimator quality. Active learning methods for BT — choosing pairs with maximum Fisher information or maximum uncertainty — [private] reduce required annotations by an order of magnitude. Critical for scaling expensive LLM annotation pipelines.
 
   **Online and streaming BT**: Updating estimates in real time as comparisons arrive at scale (Chatbot Arena use case), using stochastic gradient ascent, online EM, and Kalman-filter-based dynamic BT. Real-time leaderboard maintenance for 200+ models processing 50,000+ votes per day demands online methods that maintain convergence guarantees.
 

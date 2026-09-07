@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Technology Acceptance Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "The Technology Acceptance Model (TAM) is an information-systems theory, introduced by Fred Davis, that predicts user adoption of a technology from two key beliefs: perceived usefulness and perceived ease of use. These beliefs shape attitudes and behavioural intention, which in turn drive actual usage. TAM is one of the most widely applied frameworks for explaining and forecasting the uptake of new technologies.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"},
-      {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}
+      {
+        "@id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
     ]
   },
   "quality": 0.72

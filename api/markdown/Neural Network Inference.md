@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Neural Network Inference
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

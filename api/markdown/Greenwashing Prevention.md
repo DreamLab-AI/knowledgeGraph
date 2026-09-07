@@ -1,54 +1,108 @@
----
-public: true
----
-
-# Greenwashing Prevention
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:greenwashing-prevention", "@type":"Page", "title":"Greenwashing Prevention", "vc:slug":"greenwashing-prevention", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:greenwashing-prevention",
+  "@type": "Page",
+  "title": "Greenwashing Prevention",
+  "vc:slug": "greenwashing-prevention",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:greenwashing-prevention",
-  "@type":"Class",
-  "label":"Greenwashing Prevention",
-  "definition":"Greenwashing Prevention is the set of practices, controls and verification mechanisms that ensure environmental and sustainability claims are substantiated by auditable evidence rather than misleading marketing. In blockchain contexts it leverages tamper-evident records, on-chain provenance and independent attestation to make carbon and ESG claims falsifiable and traceable. It addresses the risk that organisations overstate climate benefits without verifiable backing.",
-  "domain":"blockchain",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:sustainability","label":"Sustainability"}],
-  "relations":{
-    "requires":[
-      {"@id":"urn:ngm:class:verification","label":"Verification"},
-      {"@id":"urn:ngm:class:provenance-tracking","label":"Provenance Tracking"},
-      {"@id":"urn:ngm:class:audit-trail","label":"Audit Trail"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:greenwashing-prevention",
+  "@type": "Class",
+  "label": "Greenwashing Prevention",
+  "definition": "Greenwashing Prevention is the set of practices, controls and verification mechanisms that ensure environmental and sustainability claims are substantiated by auditable evidence rather than misleading marketing. In blockchain contexts it leverages tamper-evident records, on-chain provenance and independent attestation to make carbon and ESG claims falsifiable and traceable. It addresses the risk that organisations overstate climate benefits without verifiable backing.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:verification",
+        "label": "Verification"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:supply-chain-transparency","label":"Supply Chain Transparency"},
-      {"@id":"urn:ngm:class:esg-reporting","label":"ESG Reporting"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:green-finance","label":"Green Finance"},
-      {"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:carbon-registry","label":"Carbon Registry"},
-      {"@id":"urn:ngm:class:proof-of-reserve","label":"Proof of Reserve"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:greenwashing","label":"Greenwashing"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:sustainability-reporting","label":"Sustainability Reporting"},
-      {"@id":"urn:ngm:class:carbon-credits","label":"Carbon Credits"},
-      {"@id":"urn:ngm:class:regulatory-compliance","label":"Regulatory Compliance"},
-      {"@id":"urn:ngm:class:transparency","label":"Transparency"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

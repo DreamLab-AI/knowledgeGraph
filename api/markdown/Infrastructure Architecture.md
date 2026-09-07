@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - InfrastructureArchitecture
----
-
-# Infrastructure Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -85,42 +78,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:infrastructure-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5182ac97b479a67ab1986001277a2bc912765df0016fe8c8ebd97ec4f8c9587f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:metaverse-platform",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Architecture]]",
-      "resolved": "urn:visionflow:owl:class:technical-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The foundational technical framework supporting metaverse platforms, comprising cloud computing, edge networks, distributed systems, and computing power networks that enable scalable, low-latency delivery of immersive virtual experiences.

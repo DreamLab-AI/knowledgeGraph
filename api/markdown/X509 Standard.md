@@ -1,40 +1,116 @@
----
-public: true
----
-
-# X509 Standard
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:x509-standard", "@type":"Page", "title":"X509 Standard", "vc:slug":"x509-standard", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:x509-standard",
+  "@type": "Page",
+  "title": "X509 Standard",
+  "vc:slug": "x509-standard",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:x509-standard",
-  "@type":"Class",
-  "label":"X509 Standard",
-  "definition":"The X.509 standard defines the format of public-key certificates that bind a public key to an identity, together with the structures for certificate paths and revocation lists used in public-key infrastructure. An X.509 certificate carries fields such as subject, issuer, validity period, public key and extensions, and is signed by a certificate authority so that relying parties can verify it by tracing a chain to a trusted root. It is the foundational certificate format underlying TLS, secure email and many authentication systems.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:digital-certificate","label":"Digital Certificate"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:trust-infrastructure","label":"Trust Infrastructure"}],
-    "hasPart":[{"@id":"urn:ngm:class:digital-certificate","label":"Digital Certificate"}],
-    "requires":[{"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}],
-    "enables":[{"@id":"urn:ngm:class:tls","label":"TLS"}],
-    "uses":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "dependsOn":[{"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"}],
-    "supports":[{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-    "implements":[{"@id":"urn:ngm:class:cryptographic-protocol","label":"Cryptographic Protocol"}],
-    "relatedTo":[{"@id":"urn:ngm:class:tls","label":"TLS"},{"@id":"urn:ngm:class:trust-infrastructure","label":"Trust Infrastructure"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:x509-standard",
+  "@type": "Class",
+  "label": "X509 Standard",
+  "definition": "The X.509 standard defines the format of public-key certificates that bind a public key to an identity, together with the structures for certificate paths and revocation lists used in public-key infrastructure. An X.509 certificate carries fields such as subject, issuer, validity period, public key and extensions, and is signed by a certificate authority so that relying parties can verify it by tracing a chain to a trusted root. It is the foundational certificate format underlying TLS, secure email and many authentication systems.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-certificate",
+      "label": "Digital Certificate"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

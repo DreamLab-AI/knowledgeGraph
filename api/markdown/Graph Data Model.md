@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Graph Data Model
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:graph-data-model", "@type":"Page", "title":"Graph Data Model", "vc:slug":"graph-data-model", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:graph-data-model",
+  "@type": "Page",
+  "title": "Graph Data Model",
+  "vc:slug": "graph-data-model",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

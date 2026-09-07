@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Peer To Peer Payment
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:peer-to-peer-payment", "@type":"Page", "title":"Peer To Peer Payment", "vc:slug":"peer-to-peer-payment", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:peer-to-peer-payment",
+  "@type": "Page",
+  "title": "Peer To Peer Payment",
+  "vc:slug": "peer-to-peer-payment",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0023 degrees of freedom
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,42 @@ public: true
   "quality": 0.7,
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
-      {"@id": "urn:ngm:class:rb-0024-workspace", "label": "rb 0024 workspace"},
-      {"@id": "urn:ngm:class:rb-0037-dexterity", "label": "rb 0037 dexterity"},
-      {"@id": "urn:ngm:class:rb-0031-singularity", "label": "rb 0031 singularity"}
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0024-workspace",
+        "label": "rb 0024 workspace"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0037-dexterity",
+        "label": "rb 0037 dexterity"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0031-singularity",
+        "label": "rb 0031 singularity"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:rb-0026-robot-joint", "label": "rb 0026 robot joint"}
+      {
+        "@id": "urn:ngm:class:rb-0026-robot-joint",
+        "label": "rb 0026 robot joint"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0028-forward-kinematics", "label": "rb 0028 forward kinematics"},
-      {"@id": "urn:ngm:class:rb-0029-inverse-kinematics", "label": "rb 0029 inverse kinematics"},
-      {"@id": "urn:ngm:class:rb-0036-resolution", "label": "rb 0036 resolution"}
+      {
+        "@id": "urn:ngm:class:rb-0028-forward-kinematics",
+        "label": "rb 0028 forward kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0029-inverse-kinematics",
+        "label": "rb 0029 inverse kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0036-resolution",
+        "label": "rb 0036 resolution"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0023-degrees-of-freedom:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4d070ecdd94c26204303ac19fdebbd3c27ad1c74ac98f2742b556e7023b249a7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - ### Primary Definition

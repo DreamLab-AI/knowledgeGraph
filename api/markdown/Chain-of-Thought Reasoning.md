@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Chain of Thought Reasoning
----
-
-# chain-of-thought reasoning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -472,7 +465,7 @@ aliases:
 
     The ReAct framework (Yao et al. 2022) pioneered the interleaving of reasoning (CoT traces) with action (tool calls): the model generates a reasoning step explaining its current understanding and intended next action, then takes the action (web search, code execution, API call), observes the result, and generates another reasoning step incorporating the new information. This Reasoning + Acting loop allows the model to adapt its plan based on environmental feedback, enabling it to complete tasks that would fail with a single-shot answer.
 
-    Reflexion (Shinn et al. 2023) extends ReAct with an additional self-reflection step: after completing a task (successfully or unsuccessfully), the model generates a verbal reflection on what went wrong or could be improved, storing this in a memory buffer for the next attempt. This creates a form of trial-and-error learning at inference time, where the CoT reasoning trace serves as the medium for error analysis and planning improvement.
+    Reflexion (Shinn et al. 2023) extends ReAct with an additional self-reflection step: after completing a task (successfully or unsuccessfully), the model generates a verbal reflection on what went wrong or [private] be improved, storing this in a memory buffer for the next attempt. This creates a form of trial-and-error learning at inference time, where the CoT reasoning trace serves as the medium for error analysis and planning improvement.
 
     Multi-agent CoT frameworks distribute reasoning across multiple specialised agents. In Society of Mind–style architectures (Park et al. 2023 "Generative Agents"), multiple LLM agents maintain memory streams and reason about their social context, plans, and observations using CoT traces. Coordination between agents is mediated by shared memory or structured communication protocols, with each agent's CoT trace providing the basis for its actions and responses. Frameworks such as AutoGen (Wu et al. 2023) and CrewAI enable orchestrated multi-agent workflows where specialist agents (coder, reviewer, tester, planner) each contribute CoT reasoning to a shared task.
 
@@ -548,9 +541,9 @@ aliases:
     From a [[Backpropagation]] and [[Gradient Descent]] perspective, training models to produce CoT — whether via supervised fine-tuning on curated reasoning traces or via RLHF/RLAIF process reward models — adjusts attention head weights to reliably route intermediate results into subsequent layer computations. The training signal backpropagates through the token sequence, jointly optimising both the quality of intermediate steps and their contribution to the final answer. This connects CoT training to classical debates in [[Deep Learning]] about whether gradients can effectively propagate supervision signals across long token sequences — a challenge mitigated by the relatively short dependency paths within a single reasoning step.
 
   - ## Relationship to Alignment and Safety
-    Chain-of-Thought Reasoning occupies a special position in [[AI Alignment]] discussions because it makes model reasoning inspectable in a way that standard forward passes do not. If the stated reasoning steps in a CoT response faithfully reflect the model's internal computation — the "faithful CoT" property studied by Turpin et al. (2023) and Lanham et al. (2023) — then CoT traces become a window into model decision-making that could support human oversight.
+    Chain-of-Thought Reasoning occupies a special position in [[AI Alignment]] discussions because it makes model reasoning inspectable in a way that standard forward passes do not. If the stated reasoning steps in a CoT response faithfully reflect the model's internal computation — the "faithful CoT" property studied by Turpin et al. (2023) and Lanham et al. (2023) — then CoT traces become a window into model decision-making that [private] support human oversight.
 
-    However, research has established that CoT faithfulness is not guaranteed. Models can produce plausible-sounding reasoning steps that are post-hoc rationalisations of conclusions reached by other means — for example, when the reasoning trace is perturbed or when the model is presented with biased prompt framing (Turpin et al. 2023 showed that models systematically shift their stated reasoning when exemplars are labelled incorrectly, even when the final answer should be unaffected). This unfaithful CoT poses challenges for alignment: a model that can generate convincing-looking reasoning without that reasoning being causally linked to its conclusions could potentially deceive human oversight.
+    However, research has established that CoT faithfulness is not guaranteed. Models can produce plausible-sounding reasoning steps that are post-hoc rationalisations of conclusions reached by other means — for example, when the reasoning trace is perturbed or when the model is presented with biased prompt framing (Turpin et al. 2023 showed that models systematically shift their stated reasoning when exemplars are labelled incorrectly, even when the final answer should be unaffected). This unfaithful CoT poses challenges for alignment: a model that can generate convincing-looking reasoning without that reasoning being causally linked to its conclusions [private] potentially deceive human oversight.
 
     The EU AI Act (effective 2025–2026) and related UK AI safety frameworks place significant emphasis on transparency and explainability for high-risk AI systems. CoT-style reasoning traces are the most direct mechanism available for making neural network decision processes legible, but the faithful CoT problem means their reliability as oversight mechanisms cannot be assumed without verification. [[Process Reward Models]] trained on step-level correctness provide one mechanism for incentivising genuinely sound intermediate reasoning, and Anthropic's Constitutional AI research connects CoT to broader alignment methodology by using generated reasoning to evaluate adherence to value specifications. The intersection of CoT, faithfulness, and AI safety is one of the most active research areas in the field as of 2026.
 

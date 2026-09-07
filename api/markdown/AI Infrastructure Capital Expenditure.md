@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Infrastructure Capital Expenditure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-infrastructure-capital-expenditure",
   "title": "AI Infrastructure Capital Expenditure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Amazon OpenAI Investment", "OpenAI Valuation"],
+  "vc:outboundWikilinks": [
+    "Amazon OpenAI Investment",
+    "OpenAI Valuation"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"}, {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}, {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# agentic finance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -69,7 +64,6 @@ public: true
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Infrastructure enabling autonomous AI agents to hold cryptographic wallets, provision compute resources, negotiate contracts, and transact with other agents or humans without intermediaries. AgentFi bridges decentralised finance protocols with agentic AI systems, creating machine-to-machine economic coordination layers.

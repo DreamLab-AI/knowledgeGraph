@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:systemic-risk-management",
   "domain": "finance",
-  "definition": "Systemic risk management is the set of practices, institutions and policy tools aimed at identifying, monitoring and mitigating risks that could destabilise an entire financial system rather than a single firm. It combines macroprudential regulation, stress testing, capital and liquidity buffers, and resolution regimes to limit contagion across interconnected institutions and markets. Coordinated by bodies such as the Financial Stability Board and central banks, it seeks to preserve financial stability and prevent crises from cascading through the economy.",
+  "definition": "Systemic risk management is the set of practices, institutions and policy tools aimed at identifying, monitoring and mitigating risks that [private] destabilise an entire financial system rather than a single firm. It combines macroprudential regulation, stress testing, capital and liquidity buffers, and resolution regimes to limit contagion across interconnected institutions and markets. Coordinated by bodies such as the Financial Stability Board and central banks, it seeks to preserve financial stability and prevent crises from cascading through the economy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-stability",

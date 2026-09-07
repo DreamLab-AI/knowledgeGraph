@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stochastic Gradient Descent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,32 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:stochastic-gradient-descent:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6c615d415c5421ab00f2e31a68964fddbf4756973ae6d721dee9c77a319d5c09"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Stochastic Gradient Descent (SGD) is an iterative optimisation algorithm that updates model parameters by computing gradients from randomly sampled mini-batches rather than the full training dataset, trading gradient accuracy for computational efficiency and the ability to escape shallow local minima. SGD and its adaptive variants (Adam, RMSprop, AdaGrad) are the primary training algorithms for deep neural networks across vision, language, and reinforcement learning domains.

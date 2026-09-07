@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ZeroKnowledge
----
-
-# Zero Knowledge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -178,17 +171,38 @@ aliases:
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:zero-knowledge-machine-learning", "label": "Zero-Knowledge Machine Learning"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-machine-learning",
+        "label": "Zero-Knowledge Machine Learning"
+      }
     ]
   },
   "quality": 0.4,
@@ -199,177 +213,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:zero-knowledge:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bdc5c68a686432571d0663d8231cea0314e8227eb6093c1732b203667d299e6f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIModel]]",
-      "resolved": "urn:visionflow:linked:aimodel",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CryptographicProof]]",
-      "resolved": "urn:visionflow:linked:cryptographic-proof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dt:enables]]",
-      "resolved": "urn:visionflow:linked:dt-enables",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dt:protects]]",
-      "resolved": "urn:visionflow:linked:dt-protects",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dt:secures]]",
-      "resolved": "urn:visionflow:linked:dt-secures",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dt:validates]]",
-      "resolved": "urn:visionflow:linked:dt-validates",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dt:verifies]]",
-      "resolved": "urn:visionflow:linked:dt-verifies",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[InteractiveProtocol|interactive protocols]]",
-      "resolved": "urn:visionflow:linked:interactive-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIZKProof|non-interactive proofs]]",
-      "resolved": "urn:visionflow:linked:nizkproof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[preservesPrivacy]]",
-      "resolved": "urn:visionflow:linked:preserves-privacy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PrivacyCoin|confidential transactions]]",
-      "resolved": "urn:visionflow:linked:privacy-coin",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PrivacyPreserving]]",
-      "resolved": "urn:visionflow:linked:privacy-preserving",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PrivacyProtocol]]",
-      "resolved": "urn:visionflow:linked:privacy-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PrivateTransaction]]",
-      "resolved": "urn:visionflow:linked:private-transaction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[provesStatement]]",
-      "resolved": "urn:visionflow:linked:proves-statement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ScalableRollup]]",
-      "resolved": "urn:visionflow:linked:scalable-rollup",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SelectiveDisclosure|selective disclosure]]",
-      "resolved": "urn:visionflow:linked:selective-disclosure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[usedIn]]",
-      "resolved": "urn:visionflow:linked:used-in",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[UserData]]",
-      "resolved": "urn:visionflow:linked:user-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[VerifiableComputation|verifiable computation]]",
-      "resolved": "urn:visionflow:linked:verifiable-computation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[verifiedBy]]",
-      "resolved": "urn:visionflow:linked:verified-by",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[zkSNARK]]",
-      "resolved": "urn:visionflow:linked:zk-snark",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[zkSNARK|zk-SNARKs]]",
-      "resolved": "urn:visionflow:linked:zk-snark",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[zkSTARK]]",
-      "resolved": "urn:visionflow:linked:zk-stark",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[zkSTARK|zk-STARKs]]",
-      "resolved": "urn:visionflow:linked:zk-stark",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ZKProofSystems|ZK proof systems]]",
-      "resolved": "urn:visionflow:linked:zkproof-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ZKRollup|zkRollups]]",
-      "resolved": "urn:visionflow:linked:zkrollup",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainScalability|blockchain scalability]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-scalability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalIdentity]]",
-      "resolved": "urn:visionflow:owl:class:digital-identity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through [[InteractiveProtocol|interactive protocols]] or [[NIZKProof|non-interactive proofs]]. [[ZKProofSystems|ZK proof systems]] like [[zkSNARK|zk-SNARKs]] and [[zkSTARK|zk-STARKs]] enable privacy-preserving authentication, [[PrivacyCoin|confidential transactions]], and [[ZKRollup|zkRollups]] that compress on-chain computation whilst maintaining verifiable correctness, critical for balancing transparency requirements against user privacy. Practical applications span [[BlockchainScalability|blockchain scalability]], [[VerifiableComputation|verifiable computation]], and [[SelectiveDisclosure|selective disclosure]] systems enabling users to prove attributes (age, creditworthiness, citizenship) without revealing underlying personal data.

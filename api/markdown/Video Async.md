@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Video Async
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -73,22 +68,52 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:screen-sharing", "label": "Screen Sharing"},
-      {"@id": "urn:ngm:class:asynchronous-video", "label": "Asynchronous Video"}
+      {
+        "@id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-video",
+        "label": "Asynchronous Video"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:knowledge-sharing", "label": "Knowledge Sharing"},
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
-      {"@id": "urn:ngm:class:synchronous-collaboration", "label": "Synchronous Collaboration"}
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"},
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:digital-workplace-platform", "label": "Digital Workplace Platform"}
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      }
     ]
   },
   "provenance": {
@@ -98,47 +123,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:video-async:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7a738e5607ca235ad6e98117c7ffa4e3cb5a34720af620cbc06d844bc5606782"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collaboration Tools]]",
-      "resolved": "urn:visionflow:linked:collaboration-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Loom]]",
-      "resolved": "urn:visionflow:linked:loom",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Asynchronous Collaboration]]",
-      "resolved": "urn:visionflow:owl:class:asynchronous-collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TelecollaborationDomain]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.

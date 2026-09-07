@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transformer Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -200,47 +195,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transformer-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e367e71cff672fd76c84f07b76dd4fb1ab8cff2c88b66a027432f216fc8ffa1a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Stacker News]]",
-      "resolved": "urn:visionflow:linked:stacker-news",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Web]]",
-      "resolved": "urn:visionflow:owl:class:decentralised-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning and Similar L2]]",
-      "resolved": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.
 
@@ -300,7 +254,7 @@ public: true
 		- **Real-world Implications**: Potential to improve a wide range of applications in natural language processing, bioinformatics, and other areas where sequence data is prevalent.
 		- **Takeaways**: Mamba architecture improves upon structured state space models (SSMs) by adding selectivity and hardware-aware algorithms, achieving linear-time modeling with high-quality performance across several modalities.
 		- **Practical Implications**: Provides a more efficient alternative to Transformers, especially beneficial for long sequence data.
-		- **Potential Impact**: Could influence future developments in sequence modeling and foundational models across various domains.
+		- **Potential Impact**: [private] influence future developments in sequence modeling and foundational models across various domains.
 		- **Abstract in a nutshell**: Mamba is a novel architecture for sequence modeling that enhances structured state space models (SSMs) with selective mechanisms and hardware-aware algorithms, achieving superior performance and efficiency.
 		- **Gap/Need**: Traditional Transformer models have significant computational inefficiency, especially for long sequences. Mamba addresses this by incorporating a selection mechanism and hardware-aware computation in SSMs.
 		- **Innovation**: Introduces a selection mechanism in SSMs, allowing input-dependent parameterization and a simplified architecture without attention or MLP blocks, enabling linear-time computation with maintained or enhanced performance.
@@ -349,7 +303,7 @@ public: true
 		- **Real-world Implications**: Potential to improve a wide range of applications in natural language processing, bioinformatics, and other areas where sequence data is prevalent.
 		- **Takeaways**: Mamba architecture improves upon structured state space models (SSMs) by adding selectivity and hardware-aware algorithms, achieving linear-time modeling with high-quality performance across several modalities.
 		- **Practical Implications**: Provides a more efficient alternative to Transformers, especially beneficial for long sequence data.
-		- **Potential Impact**: Could influence future developments in sequence modeling and foundational models across various domains.
+		- **Potential Impact**: [private] influence future developments in sequence modeling and foundational models across various domains.
 		- **Abstract in a nutshell**: Mamba is a novel architecture for sequence modeling that enhances structured state space models (SSMs) with selective mechanisms and hardware-aware algorithms, achieving superior performance and efficiency.
 		- **Gap/Need**: Traditional Transformer models have significant computational inefficiency, especially for long sequences. Mamba addresses this by incorporating a selection mechanism and hardware-aware computation in SSMs.
 		- **Innovation**: Introduces a selection mechanism in SSMs, allowing input-dependent parameterization and a simplified architecture without attention or MLP blocks, enabling linear-time computation with maintained or enhanced performance.
@@ -406,7 +360,7 @@ public: true
 		- Potential challenges:
 			- Eventual "rotting" of internal states with extreme context lengths
 			- Need for state regularization or "pruning" to maintain performance
-		- Implications for biology: Foundation models could revolutionize drug discovery and biological research
+		- Implications for biology: Foundation models [private] revolutionize drug discovery and biological research
 					- Combine multi-spectrum sensor data:
 						- Use techniques like MambaMorph to align and merge data from different sensors
 						- Generate deformation fields to spatially align images from various sources
@@ -495,7 +449,7 @@ public: true
 
   ## Technical Context
 
-  The transformer architecture revolutionised natural language processing by demonstrating that attention mechanisms alone, without recurrence or convolutions, could achieve superior performance on sequence-to-sequence tasks whilst enabling efficient parallel computation.
+  The transformer architecture revolutionised natural language processing by demonstrating that attention mechanisms alone, without recurrence or convolutions, [private] achieve superior performance on sequence-to-sequence tasks whilst enabling efficient parallel computation.
 
   ## Ontological Relationships
 
@@ -526,7 +480,7 @@ public: true
 
   ## Technical Context
 
-  The transformer architecture revolutionised natural language processing by demonstrating that attention mechanisms alone, without recurrence or convolutions, could achieve superior performance on sequence-to-sequence tasks whilst enabling efficient parallel computation.
+  The transformer architecture revolutionised natural language processing by demonstrating that attention mechanisms alone, without recurrence or convolutions, [private] achieve superior performance on sequence-to-sequence tasks whilst enabling efficient parallel computation.
 
   ## Ontological Relationships
 

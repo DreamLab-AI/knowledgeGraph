@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Point Time-Locked Contracts
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:point-time-locked-contracts", "@type": "Page", "title": "Point Time-Locked Contracts", "vc:slug": "point-time-locked-contracts", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:point-time-locked-contracts",
+  "@type": "Page",
+  "title": "Point Time-Locked Contracts",
+  "vc:slug": "point-time-locked-contracts",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# continuous improvement
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,23 +20,52 @@ public: true
   "definition": "Continuous improvement is an iterative organisational and engineering philosophy in which processes, products, and systems are systematically and incrementally refined over time through structured cycles of measurement, analysis, experimentation, and implementation, rather than through large-scale periodic overhauls. Rooted in Japanese manufacturing philosophy (kaizen), it was formalised in quality management frameworks including the Plan-Do-Check-Act cycle, ISO 9001, and Lean methodologies, and has since been adopted throughout software engineering via DevOps, agile retrospectives, and MLOps pipelines. The practice relies on feedback loops that surface inefficiencies, defects, or opportunities close to their point of origin, enabling rapid corrective action and cumulative quality gains.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-development-process",
+      "label": "Software Development Process"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"},
-      {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"},
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"}
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:software-development", "label": "Software Development"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"}
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      }
     ]
   },
   "quality": 0.8

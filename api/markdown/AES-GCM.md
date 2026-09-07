@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AES-GCM
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,20 +21,41 @@ public: true
   "domain": "security",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"}
+    {
+      "@id": "urn:ngm:class:symmetric-encryption",
+      "label": "Symmetric Encryption"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
-      {"@id": "urn:ngm:class:message-authentication-code", "label": "Message Authentication Code"}
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
     ]
   },
   "quality": 0.8

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Group Formation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,57 +7,210 @@ public: true
   "title": "AI Group Formation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:breakout-room", "vc:label": "Breakout Room"},
-    {"@id": "urn:visionflow:linked:educational-technology", "vc:label": "Educational Technology"},
-    {"@id": "urn:visionflow:linked:clustering", "vc:label": "Clustering"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:unsupervised-learning", "vc:label": "Unsupervised Learning"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:multi-agent-system", "vc:label": "Multi-Agent System"},
-    {"@id": "urn:visionflow:linked:collaborative-learning", "vc:label": "Collaborative Learning"},
-    {"@id": "urn:visionflow:linked:team-formation", "vc:label": "Team Formation"},
-    {"@id": "urn:visionflow:linked:participant-profiling", "vc:label": "Participant Profiling"},
-    {"@id": "urn:visionflow:linked:cooperative-learning", "vc:label": "Cooperative Learning"},
-    {"@id": "urn:visionflow:linked:learning-management-system", "vc:label": "Learning Management System"},
-    {"@id": "urn:visionflow:linked:learning-analytics", "vc:label": "Learning Analytics"},
-    {"@id": "urn:visionflow:linked:constraint-satisfaction", "vc:label": "Constraint Satisfaction"},
-    {"@id": "urn:visionflow:linked:genetic-algorithm", "vc:label": "Genetic Algorithm"},
-    {"@id": "urn:visionflow:linked:k-means-clustering", "vc:label": "K-Means Clustering"},
-    {"@id": "urn:visionflow:linked:embedding", "vc:label": "Embedding"},
-    {"@id": "urn:visionflow:linked:recommender-system", "vc:label": "Recommender System"},
-    {"@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:linked:diversity-optimisation", "vc:label": "Diversity Optimisation"},
-    {"@id": "urn:visionflow:linked:skill-matching", "vc:label": "Skill Matching"},
-    {"@id": "urn:visionflow:linked:social-network-analysis", "vc:label": "Social Network Analysis"},
-    {"@id": "urn:visionflow:linked:videoconferencing-platform", "vc:label": "Videoconferencing Platform"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:peer-learning", "vc:label": "Peer Learning"},
-    {"@id": "urn:visionflow:linked:team-communication-platform", "vc:label": "Team Communication Platform"},
-    {"@id": "urn:visionflow:linked:meeting-ai-assistant", "vc:label": "Meeting AI Assistant"},
-    {"@id": "urn:visionflow:linked:corporate-training", "vc:label": "Corporate Training"},
-    {"@id": "urn:visionflow:linked:remote-education", "vc:label": "Remote Education"},
-    {"@id": "urn:visionflow:linked:participation-equity", "vc:label": "Participation Equity"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:combinatorial-optimisation", "vc:label": "Combinatorial Optimisation"},
-    {"@id": "urn:visionflow:linked:multi-objective-optimisation", "vc:label": "Multi-Objective Optimisation"},
-    {"@id": "urn:visionflow:linked:adaptive-learning", "vc:label": "Adaptive Learning"},
-    {"@id": "urn:visionflow:linked:human-computer-interaction", "vc:label": "Human-Computer Interaction"},
-    {"@id": "urn:visionflow:linked:manual-room-assignment", "vc:label": "Manual Room Assignment"},
-    {"@id": "urn:visionflow:linked:personalised-learning", "vc:label": "Personalised Learning"},
-    {"@id": "urn:visionflow:linked:automatic-grouping", "vc:label": "Automatic Grouping"},
-    {"@id": "urn:visionflow:linked:ai-application", "vc:label": "AI Application"},
-    {"@id": "urn:visionflow:linked:conference-facilitation", "vc:label": "Conference Facilitation"},
-    {"@id": "urn:visionflow:linked:distributed-team-collaboration", "vc:label": "Distributed Team Collaboration"},
-    {"@id": "urn:visionflow:linked:graph-analytics", "vc:label": "Graph Analytics"},
-    {"@id": "urn:visionflow:linked:community-detection", "vc:label": "Community Detection"},
-    {"@id": "urn:visionflow:linked:distance-metric", "vc:label": "Distance Metric"},
-    {"@id": "urn:visionflow:linked:group-facilitation-tools", "vc:label": "Group Facilitation Tools"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:virtual-workshop", "vc:label": "Virtual Workshop"},
-    {"@id": "urn:visionflow:linked:scaled-workshop-facilitation", "vc:label": "Scaled Workshop Facilitation"},
-    {"@id": "urn:visionflow:linked:problem-based-learning", "vc:label": "Problem-Based Learning"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:collaborative-whiteboard", "vc:label": "Collaborative Whiteboard"}
+    {
+      "@id": "urn:visionflow:linked:breakout-room",
+      "vc:label": "Breakout Room"
+    },
+    {
+      "@id": "urn:visionflow:linked:educational-technology",
+      "vc:label": "Educational Technology"
+    },
+    {
+      "@id": "urn:visionflow:linked:clustering",
+      "vc:label": "Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:unsupervised-learning",
+      "vc:label": "Unsupervised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-agent-system",
+      "vc:label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaborative-learning",
+      "vc:label": "Collaborative Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:team-formation",
+      "vc:label": "Team Formation"
+    },
+    {
+      "@id": "urn:visionflow:linked:participant-profiling",
+      "vc:label": "Participant Profiling"
+    },
+    {
+      "@id": "urn:visionflow:linked:cooperative-learning",
+      "vc:label": "Cooperative Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-management-system",
+      "vc:label": "Learning Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-analytics",
+      "vc:label": "Learning Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:constraint-satisfaction",
+      "vc:label": "Constraint Satisfaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:genetic-algorithm",
+      "vc:label": "Genetic Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:k-means-clustering",
+      "vc:label": "K-Means Clustering"
+    },
+    {
+      "@id": "urn:visionflow:linked:embedding",
+      "vc:label": "Embedding"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommender-system",
+      "vc:label": "Recommender System"
+    },
+    {
+      "@id": "urn:visionflow:linked:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:diversity-optimisation",
+      "vc:label": "Diversity Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:skill-matching",
+      "vc:label": "Skill Matching"
+    },
+    {
+      "@id": "urn:visionflow:linked:social-network-analysis",
+      "vc:label": "Social Network Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:videoconferencing-platform",
+      "vc:label": "Videoconferencing Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:peer-learning",
+      "vc:label": "Peer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:team-communication-platform",
+      "vc:label": "Team Communication Platform"
+    },
+    {
+      "@id": "urn:visionflow:linked:meeting-ai-assistant",
+      "vc:label": "Meeting AI Assistant"
+    },
+    {
+      "@id": "urn:visionflow:linked:corporate-training",
+      "vc:label": "Corporate Training"
+    },
+    {
+      "@id": "urn:visionflow:linked:remote-education",
+      "vc:label": "Remote Education"
+    },
+    {
+      "@id": "urn:visionflow:linked:participation-equity",
+      "vc:label": "Participation Equity"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:combinatorial-optimisation",
+      "vc:label": "Combinatorial Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:multi-objective-optimisation",
+      "vc:label": "Multi-Objective Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:adaptive-learning",
+      "vc:label": "Adaptive Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:human-computer-interaction",
+      "vc:label": "Human-Computer Interaction"
+    },
+    {
+      "@id": "urn:visionflow:linked:manual-room-assignment",
+      "vc:label": "Manual Room Assignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalised-learning",
+      "vc:label": "Personalised Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:automatic-grouping",
+      "vc:label": "Automatic Grouping"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-application",
+      "vc:label": "AI Application"
+    },
+    {
+      "@id": "urn:visionflow:linked:conference-facilitation",
+      "vc:label": "Conference Facilitation"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-team-collaboration",
+      "vc:label": "Distributed Team Collaboration"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-analytics",
+      "vc:label": "Graph Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:community-detection",
+      "vc:label": "Community Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:distance-metric",
+      "vc:label": "Distance Metric"
+    },
+    {
+      "@id": "urn:visionflow:linked:group-facilitation-tools",
+      "vc:label": "Group Facilitation Tools"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:virtual-workshop",
+      "vc:label": "Virtual Workshop"
+    },
+    {
+      "@id": "urn:visionflow:linked:scaled-workshop-facilitation",
+      "vc:label": "Scaled Workshop Facilitation"
+    },
+    {
+      "@id": "urn:visionflow:linked:problem-based-learning",
+      "vc:label": "Problem-Based Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaborative-whiteboard",
+      "vc:label": "Collaborative Whiteboard"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -78,54 +226,147 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-application", "label": "AI Application"},
-    {"@id": "urn:ngm:class:combinatorial-optimisation", "label": "Combinatorial Optimisation"}
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:participant-profiling", "label": "Participant Profiling"},
-      {"@id": "urn:ngm:class:constraint-satisfaction", "label": "Constraint Satisfaction"},
-      {"@id": "urn:ngm:class:diversity-optimisation", "label": "Diversity Optimisation"},
-      {"@id": "urn:ngm:class:skill-matching", "label": "Skill Matching"}
+      {
+        "@id": "urn:ngm:class:participant-profiling",
+        "label": "Participant Profiling"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "@id": "urn:ngm:class:diversity-optimisation",
+        "label": "Diversity Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:skill-matching",
+        "label": "Skill Matching"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:distance-metric", "label": "Distance Metric"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
-      {"@id": "urn:ngm:class:participation-equity", "label": "Participation Equity"},
-      {"@id": "urn:ngm:class:breakout-room", "label": "Breakout Room"},
-      {"@id": "urn:ngm:class:personalised-learning", "label": "Personalised Learning"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:participation-equity",
+        "label": "Participation Equity"
+      },
+      {
+        "@id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      },
+      {
+        "@id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:clustering", "label": "Clustering"},
-      {"@id": "urn:ngm:class:genetic-algorithm", "label": "Genetic Algorithm"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:recommender-system", "label": "Recommender System"}
+      {
+        "@id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "@id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:recommender-system",
+        "label": "Recommender System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:educational-technology", "label": "Educational Technology"},
-      {"@id": "urn:ngm:class:corporate-training", "label": "Corporate Training"},
-      {"@id": "urn:ngm:class:remote-education", "label": "Remote Education"},
-      {"@id": "urn:ngm:class:conference-facilitation", "label": "Conference Facilitation"}
+      {
+        "@id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-training",
+        "label": "Corporate Training"
+      },
+      {
+        "@id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "@id": "urn:ngm:class:conference-facilitation",
+        "label": "Conference Facilitation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:learning-analytics", "label": "Learning Analytics"},
-      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"}
+      {
+        "@id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:manual-room-assignment", "label": "Manual Room Assignment"},
-      {"@id": "urn:ngm:class:automatic-grouping", "label": "Automatic Grouping (random)"}
+      {
+        "@id": "urn:ngm:class:manual-room-assignment",
+        "label": "Manual Room Assignment"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-grouping",
+        "label": "Automatic Grouping (random)"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-network-analysis", "label": "Social Network Analysis"},
-      {"@id": "urn:ngm:class:multi-objective-optimisation", "label": "Multi-Objective Optimisation"},
-      {"@id": "urn:ngm:class:community-detection", "label": "Community Detection"},
-      {"@id": "urn:ngm:class:graph-analytics", "label": "Graph Analytics"}
+      {
+        "@id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "@id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      }
     ]
   },
   "quality": 0.87,
@@ -134,72 +375,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-group-formation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ai-group-formation"
-  },
-  "vc:resolutions": [
-    {"raw": "[[Breakout Room]]", "resolved": "urn:visionflow:linked:breakout-room", "kind": "StubLink"},
-    {"raw": "[[Educational Technology]]", "resolved": "urn:visionflow:linked:educational-technology", "kind": "StubLink"},
-    {"raw": "[[Clustering]]", "resolved": "urn:visionflow:linked:clustering", "kind": "StubLink"},
-    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "StubLink"},
-    {"raw": "[[Unsupervised Learning]]", "resolved": "urn:visionflow:linked:unsupervised-learning", "kind": "StubLink"},
-    {"raw": "[[Machine Learning]]", "resolved": "urn:visionflow:linked:machine-learning", "kind": "StubLink"},
-    {"raw": "[[Multi-Agent System]]", "resolved": "urn:visionflow:linked:multi-agent-system", "kind": "StubLink"},
-    {"raw": "[[Collaborative Learning]]", "resolved": "urn:visionflow:linked:collaborative-learning", "kind": "StubLink"},
-    {"raw": "[[Team Formation]]", "resolved": "urn:visionflow:linked:team-formation", "kind": "StubLink"},
-    {"raw": "[[Participant Profiling]]", "resolved": "urn:visionflow:linked:participant-profiling", "kind": "StubLink"},
-    {"raw": "[[Cooperative Learning]]", "resolved": "urn:visionflow:linked:cooperative-learning", "kind": "StubLink"},
-    {"raw": "[[Learning Management System]]", "resolved": "urn:visionflow:linked:learning-management-system", "kind": "StubLink"},
-    {"raw": "[[Learning Analytics]]", "resolved": "urn:visionflow:linked:learning-analytics", "kind": "StubLink"},
-    {"raw": "[[Constraint Satisfaction]]", "resolved": "urn:visionflow:linked:constraint-satisfaction", "kind": "StubLink"},
-    {"raw": "[[Genetic Algorithm]]", "resolved": "urn:visionflow:linked:genetic-algorithm", "kind": "StubLink"},
-    {"raw": "[[K-Means Clustering]]", "resolved": "urn:visionflow:linked:k-means-clustering", "kind": "StubLink"},
-    {"raw": "[[Embedding]]", "resolved": "urn:visionflow:linked:embedding", "kind": "StubLink"},
-    {"raw": "[[Recommender System]]", "resolved": "urn:visionflow:linked:recommender-system", "kind": "StubLink"},
-    {"raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "StubLink"},
-    {"raw": "[[Diversity Optimisation]]", "resolved": "urn:visionflow:linked:diversity-optimisation", "kind": "StubLink"},
-    {"raw": "[[Skill Matching]]", "resolved": "urn:visionflow:linked:skill-matching", "kind": "StubLink"},
-    {"raw": "[[Social Network Analysis]]", "resolved": "urn:visionflow:linked:social-network-analysis", "kind": "StubLink"},
-    {"raw": "[[Videoconferencing Platform]]", "resolved": "urn:visionflow:linked:videoconferencing-platform", "kind": "StubLink"},
-    {"raw": "[[Active Learning]]", "resolved": "urn:visionflow:linked:active-learning", "kind": "StubLink"},
-    {"raw": "[[Peer Learning]]", "resolved": "urn:visionflow:linked:peer-learning", "kind": "StubLink"},
-    {"raw": "[[Team Communication Platform]]", "resolved": "urn:visionflow:linked:team-communication-platform", "kind": "StubLink"},
-    {"raw": "[[Meeting AI Assistant]]", "resolved": "urn:visionflow:linked:meeting-ai-assistant", "kind": "StubLink"},
-    {"raw": "[[Corporate Training]]", "resolved": "urn:visionflow:linked:corporate-training", "kind": "StubLink"},
-    {"raw": "[[Remote Education]]", "resolved": "urn:visionflow:linked:remote-education", "kind": "StubLink"},
-    {"raw": "[[Participation Equity]]", "resolved": "urn:visionflow:linked:participation-equity", "kind": "StubLink"},
-    {"raw": "[[Feature Engineering]]", "resolved": "urn:visionflow:linked:feature-engineering", "kind": "StubLink"},
-    {"raw": "[[Combinatorial Optimisation]]", "resolved": "urn:visionflow:linked:combinatorial-optimisation", "kind": "StubLink"},
-    {"raw": "[[Multi-Objective Optimisation]]", "resolved": "urn:visionflow:linked:multi-objective-optimisation", "kind": "StubLink"},
-    {"raw": "[[Adaptive Learning]]", "resolved": "urn:visionflow:linked:adaptive-learning", "kind": "StubLink"},
-    {"raw": "[[Human-Computer Interaction]]", "resolved": "urn:visionflow:linked:human-computer-interaction", "kind": "StubLink"},
-    {"raw": "[[Manual Room Assignment]]", "resolved": "urn:visionflow:linked:manual-room-assignment", "kind": "StubLink"},
-    {"raw": "[[Personalised Learning]]", "resolved": "urn:visionflow:linked:personalised-learning", "kind": "StubLink"},
-    {"raw": "[[Automatic Grouping]]", "resolved": "urn:visionflow:linked:automatic-grouping", "kind": "StubLink"},
-    {"raw": "[[AI Application]]", "resolved": "urn:visionflow:linked:ai-application", "kind": "StubLink"},
-    {"raw": "[[Conference Facilitation]]", "resolved": "urn:visionflow:linked:conference-facilitation", "kind": "StubLink"},
-    {"raw": "[[Distributed Team Collaboration]]", "resolved": "urn:visionflow:linked:distributed-team-collaboration", "kind": "StubLink"},
-    {"raw": "[[Graph Analytics]]", "resolved": "urn:visionflow:linked:graph-analytics", "kind": "StubLink"},
-    {"raw": "[[Community Detection]]", "resolved": "urn:visionflow:linked:community-detection", "kind": "StubLink"},
-    {"raw": "[[Distance Metric]]", "resolved": "urn:visionflow:linked:distance-metric", "kind": "StubLink"},
-    {"raw": "[[Group Facilitation Tools]]", "resolved": "urn:visionflow:linked:group-facilitation-tools", "kind": "StubLink"},
-    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:linked:artificial-intelligence", "kind": "StubLink"},
-    {"raw": "[[Virtual Workshop]]", "resolved": "urn:visionflow:linked:virtual-workshop", "kind": "StubLink"},
-    {"raw": "[[Scaled Workshop Facilitation]]", "resolved": "urn:visionflow:linked:scaled-workshop-facilitation", "kind": "StubLink"},
-    {"raw": "[[Problem-Based Learning]]", "resolved": "urn:visionflow:linked:problem-based-learning", "kind": "StubLink"},
-    {"raw": "[[Data Pipeline]]", "resolved": "urn:visionflow:linked:data-pipeline", "kind": "StubLink"},
-    {"raw": "[[Collaborative Whiteboard]]", "resolved": "urn:visionflow:linked:collaborative-whiteboard", "kind": "StubLink"}
-  ],
-  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
-  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -327,7 +502,7 @@ public: true
     - **[[Feature Engineering]] Layer** — transforms heterogeneous raw attributes into a unified numerical representation suitable for optimisation. Categorical features (department, role) are one-hot encoded or embedded; ordinal features (skill levels, grades) are normalised; textual profiles are encoded via sentence transformer models into dense embedding vectors; graph-structured interaction histories are encoded via graph neural network embeddings capturing position in the social network.
     - **Constraint Engine** — enforces hard constraints that must be satisfied regardless of objective score. Common constraints: group size bounds (min 3, max 6 participants); exclusion pairs (participants who should not be grouped, e.g. competing firms in a pre-competitive workshop); inclusion requirements (participants who must be in the same group, e.g. a co-presenter pair); language constraints (all members must share at least one common language); role quota constraints (each group must contain at most one manager, at least one technical specialist).
     - **Optimisation Solver** — the algorithmic engine that searches the assignment space. Algorithm choice depends on the problem scale and objective complexity: (a) [[K-Means Clustering]] over participant embeddings for large-scale simple objectives where approximate solutions are acceptable; (b) [[Genetic Algorithm]] (including mixed GA variants from Pozos-Parra et al. 2024) for multi-constraint problems where evolutionary search explores diverse solution spaces; (c) Integer Linear Programming (ILP) via CPLEX or Gurobi for small groups (N < 100) where exact optima are tractable; (d) [[Reinforcement Learning]] policy gradient methods for online adaptive formation where group composition must be revised dynamically based on observed interaction outcomes; (e) Contextual bandit approaches for real-time feedback incorporation where facilitator ratings of previous formations inform the next formation.
-    - **Diversity Measurement Module** — computes the quality of a proposed group composition against the active objectives. Metrics include Gini coefficient of expertise scores within groups (lower = more balanced), mean pairwise cosine distance in embedding space (higher = more diverse), homophily index from [[Social Network Analysis]] (lower = cross-clique mixing), and demographic diversity indices (Shannon entropy over categorical attributes).
+    - **Diversity Measurement Module** — computes the quality of a proposed group composition against the active objectives. Metrics include Gini coefficient of expertise scores within groups (lower = more balanced), mean pairwise cosine distance in embedding space (higher = more diverse), homophily [private] from [[Social Network Analysis]] (lower = cross-clique mixing), and demographic diversity indices (Shannon entropy over categorical attributes).
     - **Assignment Interface** — presents the computed assignments to the facilitator for review, adjustment, and confirmation before dispatch. Modern interfaces explain AI recommendations (showing the rationale: "Room 3 balances three different expertise levels and includes two languages"), allow drag-and-drop overrides, and log facilitator modifications for feedback learning.
 
   ## Use Cases / Major Families
@@ -365,7 +540,7 @@ public: true
 
     **Clustering-based approaches** apply [[Unsupervised Learning]] algorithms — primarily [[K-Means Clustering]] and its variants — to the participant embedding space, then post-process cluster assignments to meet size and constraint requirements. The appeal is simplicity, speed (O(N·K·I) for K-means, where I is iteration count, typically < 50), and availability in standard ML libraries (scikit-learn, FAISS for large-scale nearest-neighbour variants). The limitation is that standard K-means optimises within-cluster similarity (homogeneous groups) rather than within-group heterogeneity (which cooperative learning theory prescribes) — requiring supplementary steps to break homogeneous clusters into heterogeneous groups by selectively reassigning members across clusters. The two-phase K-means / heterogeneous swap approach (Reis et al. 2021) first runs K-means to identify skill clusters, then applies a greedy assignment algorithm to assign one member from each cluster to each group — achieving heterogeneity without the computational cost of full combinatorial optimisation. This approach scales to N=10,000+ participants and is the algorithm most commonly used in commercial LMS formation plugins.
 
-    **[[Genetic Algorithm]]-based approaches** represent the most thoroughly validated algorithm family for educational group formation. A genetic algorithm for formation represents each possible group assignment as a chromosome (a vector of length N where each element is a group index), initialises a population of candidate solutions (typically 50–200 chromosomes), and evolves the population using crossover (combining parts of two parent assignments) and mutation (randomly reassigning individual participants to different groups) operators, evaluating each candidate against the objective function and preferentially retaining better-fitness solutions across generations. The mixed GA approach of Pozos-Parra et al. (2024) extends this by representing both homogeneous and heterogeneous sub-objectives as separate components of the fitness function, with a weight parameter controlling the balance — allowing facilitators to tune the diversity-vs-similarity trade-off without changing the algorithm. Genetic algorithms typically converge to near-optimal solutions within 100–500 generations (seconds to minutes for N < 500) and can handle arbitrary constraint types by adding penalty terms to the fitness function for constraint violations. Their limitation is lack of optimality guarantees and the computational overhead that makes them impractical for N > 2,000 without parallel implementation.
+    **[[Genetic Algorithm]]-based approaches** represent the most thoroughly validated algorithm family for educational group formation. A genetic algorithm for formation represents each possible group assignment as a chromosome (a vector of length N where each element is a group [private]), initialises a population of candidate solutions (typically 50–200 chromosomes), and evolves the population using crossover (combining parts of two parent assignments) and mutation (randomly reassigning individual participants to different groups) operators, evaluating each candidate against the objective function and preferentially retaining better-fitness solutions across generations. The mixed GA approach of Pozos-Parra et al. (2024) extends this by representing both homogeneous and heterogeneous sub-objectives as separate components of the fitness function, with a weight parameter controlling the balance — allowing facilitators to tune the diversity-vs-similarity trade-off without changing the algorithm. Genetic algorithms typically converge to near-optimal solutions within 100–500 generations (seconds to minutes for N < 500) and can handle arbitrary constraint types by adding penalty terms to the fitness function for constraint violations. Their limitation is lack of optimality guarantees and the computational overhead that makes them impractical for N > 2,000 without parallel implementation.
 
     **[[Reinforcement Learning]]-based approaches** treat formation as a sequential decision problem where the algorithm observes participant attributes, selects a group assignment, observes the outcome (participation equity, task completion, learning gain), and updates its policy to improve future formations. The RL framing is uniquely suited to multi-session contexts where the same participant pool is formed repeatedly across a course or programme, and where the outcome signal (student learning gains measured by assessment performance) is delayed by days or weeks relative to the formation decision. Policy gradient methods (REINFORCE, PPO) learn a formation policy π(assignment | participant_features) that maps participant feature vectors to group assignments by maximising expected downstream outcome. The 12% improvement of RL-GP over pure GA (arXiv 2304.04022) on person-job matching team formation benchmarks demonstrates the value of learned formation policies in contexts with sufficient historical data. The challenge is cold-start: RL formation systems require significant outcome history (typically 10–50 formation events with observed outcomes) before learned policies outperform heuristic baselines, making them unsuitable for one-off events but valuable for recurring formation contexts such as semester-long courses or regular training programmes.
 

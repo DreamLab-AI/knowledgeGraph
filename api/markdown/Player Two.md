@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - PlayerTwo
----
-
-# Player Two
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,19 +63,40 @@ aliases:
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:player-two-platform-implementation", "label": "Player Two Platform Implementation"}
+      {
+        "@id": "urn:ngm:class:player-two-platform-implementation",
+        "label": "Player Two Platform Implementation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ai-video", "label": "AI Video"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:player-tracking", "label": "Player Tracking"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:player-tracking",
+        "label": "Player Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ]
   },
   "quality": 0.5,
@@ -93,47 +107,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:player-two:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b5f3c3997d3d61dfbf815da8315a6e4f7fcd817f1a68a66a4b3e6b797ecc4eea"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Neocadia]]",
-      "resolved": "urn:visionflow:linked:neocadia",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[AI Video]]",
-      "resolved": "urn:visionflow:owl:class:ai-video",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Node-Based Diffusion Pipeline Interface]]",
-      "resolved": "urn:visionflow:owl:class:comfy-ui",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Player Two Platform Implementation]]",
-      "resolved": "urn:visionflow:owl:class:player-two-code",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Player Two is a decentralised AI-character and collaborative storytelling platform combining Nostr-relay messaging, BIP85 key derivation, and generative AI workflows. It enables trustless group interactions with AI-driven waifu characters, token-gated access, and a robot project with on-device edge compute for the ED3N distributed network.

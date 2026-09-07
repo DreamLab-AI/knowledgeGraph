@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Edge AI System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,78 +63,86 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neural-network-quantisation", "label": "Neural Network Quantisation"},
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
-      {"@id": "urn:ngm:class:real-time-inference-at-edge", "label": "Real-Time Inference at Edge"}
+      {
+        "@id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Neural Network Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"},
-      {"@id": "urn:ngm:class:on-device-learning", "label": "On-Device Learning"}
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-learning",
+        "label": "On-Device Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedded-ai-frameworks", "label": "Embedded AI Frameworks"},
-      {"@id": "urn:ngm:class:federated-edge-learning", "label": "Federated Edge Learning"}
+      {
+        "@id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:federated-edge-learning",
+        "label": "Federated Edge Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:edge-computing-architecture", "label": "Edge Computing Architecture"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
+      {
+        "@id": "urn:ngm:class:edge-computing-architecture",
+        "label": "Edge Computing Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:edge-cloud-collaboration", "label": "Edge-Cloud Collaboration"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:edge-cloud-collaboration",
+        "label": "Edge-Cloud Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ]
   },
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:edge-ai-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:224f6918ad7037ce02a1ca266b65ecdee97f684c0f4f17389cf2d1090b694a12"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```

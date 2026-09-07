@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Renewable Energy Certificates
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,152 +191,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:renewable-energy-certificates:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:02e21880f0e92b8fcf72879da229d9ec17fbdd3936013dbb38a5b329bd31f021"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CarbonCredit]]",
-      "resolved": "urn:visionflow:linked:carbon-credit",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CarbonMarkets]]",
-      "resolved": "urn:visionflow:linked:carbon-markets",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Center for Resource Solutions]]",
-      "resolved": "urn:visionflow:linked:center-for-resource-solutions",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CertificateMetadata]]",
-      "resolved": "urn:visionflow:linked:certificate-metadata",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EnergySector]]",
-      "resolved": "urn:visionflow:linked:energy-sector",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[EnvironmentalCommodity]]",
-      "resolved": "urn:visionflow:linked:environmental-commodity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[European Energy Certificate System (EECS)]]",
-      "resolved": "urn:visionflow:linked:european-energy-certificate-system-eecs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GenerationData]]",
-      "resolved": "urn:visionflow:linked:generation-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Green-e Energy]]",
-      "resolved": "urn:visionflow:linked:green-e-energy",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEA Renewable Energy Markets]]",
-      "resolved": "urn:visionflow:linked:iea-renewable-energy-markets",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[International REC Standard (I-REC)]]",
-      "resolved": "urn:visionflow:linked:international-rec-standard-i-rec",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MeteringData]]",
-      "resolved": "urn:visionflow:linked:metering-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[OwnershipRecord]]",
-      "resolved": "urn:visionflow:linked:ownership-record",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PeerToPeerEnergyTrading]]",
-      "resolved": "urn:visionflow:linked:peer-to-peer-energy-trading",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RegistryInfrastructure]]",
-      "resolved": "urn:visionflow:linked:registry-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RenewableEnergyGeneration]]",
-      "resolved": "urn:visionflow:linked:renewable-energy-generation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RenewableEnergyTracking]]",
-      "resolved": "urn:visionflow:linked:renewable-energy-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RetirementProof]]",
-      "resolved": "urn:visionflow:linked:retirement-proof",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SustainabilityDomain]]",
-      "resolved": "urn:visionflow:linked:sustainability",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SustainabilityInstrument]]",
-      "resolved": "urn:visionflow:linked:sustainability-instrument",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SustainabilityReporting]]",
-      "resolved": "urn:visionflow:linked:sustainability-reporting",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CarbonAccounting]]",
-      "resolved": "urn:visionflow:owl:class:carbon-accounting",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DigitalAsset]]",
-      "resolved": "urn:visionflow:owl:class:digital-asset",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Digital or blockchain-tokenized instruments that certify the generation of one megawatt-hour (MWh) of electricity from renewable energy sources, providing transparent, immutable proof of renewable energy consumption for carbon accounting, sustainability reporting, and regulatory compliance, with blockchain implementations enabling automated tracking, fractional ownership, peer-to-peer trading, and integration with smart contracts for renewable energy procurement, grid management, and carbon offset markets.
 
@@ -502,28 +351,28 @@ public: true
 
   The UK government's **Net Zero Strategy** (2021) and **British Energy Security Strategy** (2022) emphasize digital transformation of energy systems. The **Smart Systems and Flexibility Plan** (2021) mandates half-hourly settlement for all business meters (2026) and domestic meters (2027-2028), creating infrastructure conducive to blockchain's granular tracking. However, **no UK-specific REC tokenization standards** exist; the market relies on **Renewable Energy Guarantees of Origin (REGOs)** administered by Ofgem, a centralised database system.
 
-  **Regulatory conservatism** has slowed blockchain adoption. Ofgem's 2024 consultation on **digitalization of energy markets** acknowledged blockchain's potential but highlighted concerns over **data privacy** (GDPR compliance for transaction transparency), **consumer protection** (unregulated peer-to-peer trading), and **grid stability** (rapid settlement impacting balancing mechanisms). Advocates argue the **Electricity System Operator** (National Grid ESO, transitioning to **NESO** in 2024) could mandate blockchain for **Contracts for Difference (CfD)** auctions, ensuring additionality verification for the **60 GW** renewable pipeline (2025-2035).
+  **Regulatory conservatism** has slowed blockchain adoption. Ofgem's 2024 consultation on **digitalization of energy markets** acknowledged blockchain's potential but highlighted concerns over **data privacy** (GDPR compliance for transaction transparency), **consumer protection** (unregulated peer-to-peer trading), and **grid stability** (rapid settlement impacting balancing mechanisms). Advocates argue the **Electricity System Operator** (National Grid ESO, transitioning to **NESO** in 2024) [private] mandate blockchain for **Contracts for Difference (CfD)** auctions, ensuring additionality verification for the **60 GW** renewable pipeline (2025-2035).
 
   #### Future Directions
-  The blockchain REC market is poised for significant expansion, driven by corporate net-zero commitments (over 4,000 companies with Science Based Targets as of 2025), regulatory mandates for granular carbon accounting (EU CSRD, California SB 253 climate disclosure), and technological maturation of Layer 2 scaling solutions. **McKinsey estimates** blockchain could manage **50% of global REC transactions** by 2030, representing **$40-50 billion annual market** with **500 TWh** of renewable generation tracked on-chain.
+  The blockchain REC market is poised for significant expansion, driven by corporate net-zero commitments (over 4,000 companies with Science Based Targets as of 2025), regulatory mandates for granular carbon accounting (EU CSRD, California SB 253 climate disclosure), and technological maturation of Layer 2 scaling solutions. **McKinsey estimates** blockchain [private] manage **50% of global REC transactions** by 2030, representing **$40-50 billion annual market** with **500 TWh** of renewable generation tracked on-chain.
 
   **24/7 Carbon-Free Energy** (CFE) will become the dominant corporate procurement model, replacing annual REC matching. Google, Microsoft, and Amazon have committed to 24/7 CFE across all operations by 2030, requiring hourly or sub-hourly generation-consumption matching. Blockchain platforms with **IoT integration** (smart meters triggering smart contracts) and **real-time grid carbon intensity data** (WattTime, ElectricityMap APIs via Chainlink oracles) will capture this premium market segment, commanding **20-30% price premiums** over traditional RECs due to additionality assurance.
 
-  **Fractional ownership** and **retail accessibility** will democratize renewable energy investment. Current REC markets exclude small consumers due to 1 MWh minimum certificate sizes (~£2-£5 wholesale value). Blockchain tokenization enables **kilowatt-hour fractions** tradable on decentralized exchanges, allowing households to purchase RECs matching actual consumption (typical UK household: 2,700 kWh/year = 2.7 certificates). **Robo-advisory platforms** (analogous to Wealthsimple, Robinhood for finance) could automate REC portfolio management for carbon-conscious consumers.
+  **Fractional ownership** and **retail accessibility** will democratize renewable energy investment. Current REC markets exclude small consumers due to 1 MWh minimum certificate sizes (~£2-£5 wholesale value). Blockchain tokenization enables **kilowatt-hour fractions** tradable on decentralized exchanges, allowing households to purchase RECs matching actual consumption (typical UK household: 2,700 kWh/year = 2.7 certificates). **Robo-advisory platforms** (analogous to Wealthsimple, Robinhood for finance) [private] automate REC portfolio management for carbon-conscious consumers.
 
-  **DeFi integration** will unlock liquidity and financial innovation. **REC-backed stablecoins** (e.g., 1 token = 1 MWh renewable energy, redeemable or retirable) could serve as **carbon currency** for corporate supply chains demanding verifiable green procurement. **Liquidity pools** on Uniswap or Curve Finance enable continuous trading without order book inefficiencies. **Futures and options contracts** on REC tokens allow renewable developers to hedge revenue risk, unlocking **project finance** for marginal projects. However, **regulatory classification** (commodity, security, or utility token) remains unresolved, creating jurisdictional uncertainty.
+  **DeFi integration** will unlock liquidity and financial innovation. **REC-backed stablecoins** (e.g., 1 token = 1 MWh renewable energy, redeemable or retirable) [private] serve as **carbon currency** for corporate supply chains demanding verifiable green procurement. **Liquidity pools** on Uniswap or Curve Finance enable continuous trading without order book inefficiencies. **Futures and options contracts** on REC tokens allow renewable developers to hedge revenue risk, unlocking **project finance** for marginal projects. However, **regulatory classification** (commodity, security, or utility token) remains unresolved, creating jurisdictional uncertainty.
 
-  **Interoperability standards** are critical to prevent fragmented markets. The **Energy Web Chain's EW Origin** standard provides hourly granular certificates with rich metadata (energy source, location, emissions factor), but lacks universal adoption. The proposed **ERC-7092** (Energy Attribute Certificates token standard) aims to unify Ethereum-based REC platforms with standardized interfaces for issuance, trading, and retirement. **Cross-chain bridges** (Polkadot, Cosmos IBC) could connect Energy Web Chain, Polygon, and enterprise blockchains (Hyperledger Fabric) for seamless REC transfers across ecosystems.
+  **Interoperability standards** are critical to prevent fragmented markets. The **Energy Web Chain's EW Origin** standard provides hourly granular certificates with rich metadata (energy source, location, emissions factor), but lacks universal adoption. The proposed **ERC-7092** (Energy Attribute Certificates token standard) aims to unify Ethereum-based REC platforms with standardized interfaces for issuance, trading, and retirement. **Cross-chain bridges** (Polkadot, Cosmos IBC) [private] connect Energy Web Chain, Polygon, and enterprise blockchains (Hyperledger Fabric) for seamless REC transfers across ecosystems.
 
   ### Challenges and Open Research Questions
 
-  **Additionality verification** remains contentious. Critics argue RECs fail to ensure renewable generation is "additional" (wouldn't occur without certificate revenue), especially for mature projects with sunk capital costs. **Blockchain transparency** could enable **dynamic additionality scoring** based on real-time grid carbon intensity: certificates issued only when renewable generation displaces fossil fuels receive higher ratings. However, this requires sophisticated **counterfactual analysis** (machine learning models predicting grid dispatch without renewable injection) prone to uncertainty and manipulation.
+  **Additionality verification** remains contentious. Critics argue RECs fail to ensure renewable generation is "additional" (wouldn't occur without certificate revenue), especially for mature projects with sunk capital costs. **Blockchain transparency** [private] enable **dynamic additionality scoring** based on real-time grid carbon intensity: certificates issued only when renewable generation displaces fossil fuels receive higher ratings. However, this requires sophisticated **counterfactual analysis** (machine learning models predicting grid dispatch without renewable injection) prone to uncertainty and manipulation.
 
   **Energy consumption of blockchain itself** creates paradoxical sustainability concerns. Ethereum's transition to Proof-of-Stake (2022) reduced energy consumption by **99.95%**, but **Bitcoin's Proof-of-Work** (~140 TWh/year) undermines credibility if blockchain platforms rely on energy-intensive base layers. **Layer 2 solutions** (Arbitrum, Optimism) and **purpose-built chains** (Energy Web Chain's Proof-of-Authority consuming <0.01 TWh/year) mitigate this, but public perception lags technical reality. **Carbon-negative blockchains** (Algorand, Celo offsetting network emissions) may become prerequisites for energy sector adoption.
 
   **Regulatory fragmentation** across jurisdictions threatens interoperability. The EU's **Guarantees of Origin** (GO) system operates under Directive 2018/2001, whilst the U.S. lacks federal REC standards (state-level RPS programs with incompatible tracking). **International REC Standard (I-REC)** provides global framework for emerging markets (60+ countries), but blockchain platforms must navigate heterogeneous compliance regimes. **Regulatory sandboxes** (Ofgem UK, FINMA Switzerland, MAS Singapore) enable experimentation, but path to full legal recognition remains uncertain.
 
-  **Cybersecurity and oracle reliability** pose existential risks. Blockchain immutability magnifies consequences of erroneous data: fraudulent meter readings or compromised oracles could issue unbacked certificates permanently recorded on-chain. **Chainlink's Decentralized Oracle Networks** provide tamper-resistant data feeds (17+ independent node operators for WattTime grid carbon intensity), but oracle attacks remain theoretical threat vectors. **Zero-knowledge proofs** could enable privacy-preserving REC transfers (corporate buyers concealing procurement strategies) whilst maintaining auditability, but implementation complexity hinders adoption.
+  **Cybersecurity and oracle reliability** pose existential risks. Blockchain immutability magnifies consequences of erroneous data: fraudulent meter readings or compromised oracles [private] issue unbacked certificates permanently recorded on-chain. **Chainlink's Decentralized Oracle Networks** provide tamper-resistant data feeds (17+ independent node operators for WattTime grid carbon intensity), but oracle attacks remain theoretical threat vectors. **Zero-knowledge proofs** [private] enable privacy-preserving REC transfers (corporate buyers concealing procurement strategies) whilst maintaining auditability, but implementation complexity hinders adoption.
 
   #### Research & Literature
   **Foundational Economic Theory:**

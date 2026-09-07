@@ -1,8 +1,3 @@
----
-public: true
----
-
-# micro-ROS
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,57 +167,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:micro-ros:480d8a5b699d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:636053e4cb56ec85eeff9e0f816096f3bf81fb42ad98435da8dadcf7cd998aec"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Embedded Systems]]",
-      "resolved": "urn:visionflow:linked:embedded-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Operating System]]",
-      "resolved": "urn:visionflow:linked:real-time-operating-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Control]]",
-      "resolved": "urn:visionflow:linked:real-time-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ROS]]",
-      "resolved": "urn:visionflow:linked:ros",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DDS Middleware]]",
-      "resolved": "urn:visionflow:linked:dds-middleware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robot Operating System]]",
-      "resolved": "urn:visionflow:linked:robot-operating-system",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - micro-ROS is a framework that brings the ROS 2 programming model and communication to resource-constrained microcontrollers, allowing embedded devices to participate as first-class nodes in a ROS graph.

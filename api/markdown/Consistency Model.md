@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Consistency Model
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

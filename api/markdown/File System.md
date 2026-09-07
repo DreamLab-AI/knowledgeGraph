@@ -1,8 +1,3 @@
----
-public: true
----
-
-# File System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -156,4 +151,3 @@ public: true
   - The file system is a critical infrastructure component whose design choices cascade through entire software stacks. AI training pipelines, for instance, depend heavily on file system throughput to feed GPU clusters — Lustre and GPFS (IBM Spectrum Scale) are specifically optimised for the large sequential reads that characterise training data ingestion. In container environments, overlay file systems (OverlayFS) enable copy-on-write layering of container images, reducing per-container storage footprint while maintaining isolation. File system performance characteristics (random vs. sequential IOPS, metadata operation latency) directly govern the performance envelope of databases, object stores, and analytics workloads running above them.
 
   - In 2024-2025, file system development is shaped by three vectors. First, persistent memory (CXL-attached DRAM and Optane successors) demands file systems with sub-microsecond path overhead, driving interest in NOVA and related PMEM-optimised designs. Second, the proliferation of AI workloads has intensified demand for parallel file systems with POSIX compatibility and multi-hundred-gigabyte-per-second aggregate bandwidth, leading hyperscalers to develop bespoke distributed file systems. Third, content-addressed and verifiable storage — exemplified by [[IPFS]] and blockchain-anchored provenance systems — challenges the traditional path-based naming model with hash-based addressing that enables global deduplication and tamper-evidence.
-

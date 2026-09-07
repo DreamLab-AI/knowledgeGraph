@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Interoperability Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -83,42 +78,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:interoperability-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4d6f8383238f8fd426c507ed0ea5e7c317dd58b1bf0c021764db3dcc94f7face"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Unified Metaverse]]",
-      "resolved": "urn:visionflow:linked:unified-metaverse",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Architecture]]",
-      "resolved": "urn:visionflow:owl:class:technical-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Structural frameworks and technical designs enabling seamless communication and data exchange between disparate metaverse platforms, virtual worlds, and XR devices through standardised protocols, APIs, and data formats.

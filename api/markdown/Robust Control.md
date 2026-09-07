@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Robust Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,22 +51,46 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"}
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"}
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
-      {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"}
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:robust-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3928ba10ff9cc9926ba8599e6dd7a8d45331b29c888321505b92c4964eb340b7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ControlAlgorithms]]",
-      "resolved": "urn:visionflow:linked:control-algorithms",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Robust Control is a branch of control theory that designs controllers guaranteeing stable and acceptable performance across a bounded set of model uncertainties and disturbances. It formalises worst-case design requirements through H-infinity and H2 optimisation frameworks, ensuring actuated systems remain within specification even when plant parameters deviate from nominal values.

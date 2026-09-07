@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IEEE P2048
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -70,37 +65,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ieee-p-2048:c052ffbfe069",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:80d591ef523a8bc20a463e9aaeac8572793e9751dd794f3cbc9a7d0adf7e7e49"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE]]",
-      "resolved": "urn:visionflow:linked:ieee",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:linked:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - IEEE P2048 is the draft project covering the IEEE 2048 series of standards on virtual reality and augmented reality.

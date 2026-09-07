@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Nav2
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -159,4 +154,3 @@ public: true
   - The stack comprises several composable server nodes: the Planner Server (runs global path planning algorithms such as NavFn, Smac Planner, or ThetaStar), the Controller Server (runs local trajectory tracking such as DWB or MPPI), the Costmap2D servers (2D occupancy representations with pluggable layers for obstacles, inflation, and semantics), the Smoother Server, and the BT Navigator which drives the whole lifecycle using behaviour trees. All servers communicate via ROS 2 actions and services and expose standardised lifecycle transitions so system integrators can manage them atomically.
   - Nav2 matters because it provides a vendor-neutral, community-maintained navigation baseline used across research, logistics, and consumer robotics platforms. Commercial deployments include autonomous ground vehicles in warehouses, hospital service robots, and last-mile delivery prototypes. The plugin architecture means teams can swap planners or controllers without modifying the rest of the stack, dramatically reducing integration overhead when experimenting with MPPI or learned controllers.
   - In 2024–2025, Nav2 has reached a mature release cadence aligned with ROS 2 Rolling and Jazzy Jalisco, introducing coverage navigation primitives, improved MPPI controller performance with GPU-assisted sampling, and integration hooks for 3D voxel costmaps derived from depth cameras and LiDAR. The project's roadmap includes first-class support for dynamic obstacle prediction from learned perception models and simplified integration with the Nav2 Simple Commander Python API, which has become the de facto onboarding interface for new robot developers.
-

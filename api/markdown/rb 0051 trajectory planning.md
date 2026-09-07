@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0051 trajectory planning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,42 @@ public: true
   "qualityScore": 0.7,
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"},
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
-      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"}
+      {
+        "@id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0044-velocity", "label": "rb 0044 velocity"},
-      {"@id": "urn:ngm:class:rb-0045-acceleration", "label": "rb 0045 acceleration"},
-      {"@id": "urn:ngm:class:rb-0052-collision-avoidance", "label": "rb 0052 collision avoidance"}
+      {
+        "@id": "urn:ngm:class:rb-0044-velocity",
+        "label": "rb 0044 velocity"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0045-acceleration",
+        "label": "rb 0045 acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0052-collision-avoidance",
+        "label": "rb 0052 collision avoidance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rb-0048-pid-controller", "label": "rb 0048 pid controller"},
-      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"}
+      {
+        "@id": "urn:ngm:class:rb-0048-pid-controller",
+        "label": "rb 0048 pid controller"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
     ]
   },
   "provenance": {
@@ -81,32 +100,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0051-trajectory-planning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c66305c015ce39ef7d97d12791a9f0bd394ee5357f96c87290d4fb67a587bb2a"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - **Trajectory Planning** computes a time-parametrised path specifying position, velocity, and acceleration profiles so that a robot moves smoothly from start to goal while respecting joint limits and dynamic constraints. It extends path planning by assigning timing to waypoints — commonly via polynomial or spline interpolation — enabling jerk-limited, real-time executable motions. Collision-free trajectory generation and optimal-control formulations (e.g., minimum-time, minimum-jerk) are active research areas.

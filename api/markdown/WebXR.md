@@ -1,8 +1,3 @@
----
-public: true
----
-
-# WebXR
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -192,57 +187,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:web-xr:9306dd966a93",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a844c060bc2489535bfcf5b599def4a5389fe2497879144e3a353fd49e4fabb5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Web Standard]]",
-      "resolved": "urn:visionflow:linked:web-standard",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Graphics API]]",
-      "resolved": "urn:visionflow:linked:graphics-api",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Reality]]",
-      "resolved": "urn:visionflow:linked:virtual-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:linked:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:linked:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Domain]]",
-      "resolved": "urn:visionflow:linked:spatial-computing-domain",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - WebXR is a web standard and API that lets browsers access virtual and augmented reality devices, providing pose tracking, input and rendering hooks for immersive experiences delivered over the web.

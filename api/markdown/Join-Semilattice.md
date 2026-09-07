@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Join-Semilattice
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "A join-semilattice is a partially ordered set in which every pair of elements has a least upper bound (join), making the join operation associative, commutative and idempotent. These algebraic properties guarantee that repeated or reordered merges converge to a unique value. The structure is the mathematical foundation for state-based conflict-free replicated data types.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-data-structure", "label": "Distributed Data Structure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:crdt", "label": "CRDT"}
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
     ]
   },
   "quality": 0.72

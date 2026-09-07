@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Proportional Control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -64,28 +59,64 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:control-algorithm", "label": "Control Algorithm"}
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
-      {"@id": "urn:ngm:class:closed-loop-control", "label": "Closed-Loop Control"}
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "@id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"},
-      {"@id": "urn:ngm:class:velocity-control", "label": "VelocityControl"}
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:position-control",
+        "label": "PositionControl"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-control",
+        "label": "VelocityControl"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:derivative-control", "label": "Derivative Control"},
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"}
+      {
+        "@id": "urn:ngm:class:derivative-control",
+        "label": "Derivative Control"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      }
     ]
   },
   "provenance": {
@@ -95,37 +126,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:proportional-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9686491391056aefc8952b1080a34c19c825e84b45126748f47372ca4bc996fd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Feedback Control]]",
-      "resolved": "urn:visionflow:owl:class:feedback-control",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Proportional Control is a feedback control strategy in which the corrective output applied to an actuator is directly proportional to the current error—the difference between the desired setpoint and the measured process variable. It is the foundational component of PID controllers, providing immediate, scaled response to deviations but typically leaving a steady-state offset that requires integral or derivative terms to eliminate.

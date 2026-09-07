@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Destination Marketing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -125,72 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:destination-marketing:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0bd8f84f5ce1112c50826407fa2c53632e47d7ac1bd71896d2a8bf937115c5a8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Content Creation]]",
-      "resolved": "urn:visionflow:linked:3-d-content-creation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Immersive Advertising]]",
-      "resolved": "urn:visionflow:linked:immersive-advertising",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Location Promotion]]",
-      "resolved": "urn:visionflow:linked:location-promotion",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[VR Experiences]]",
-      "resolved": "urn:visionflow:linked:vr-experiences",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Marketing]]",
-      "resolved": "urn:visionflow:owl:class:digital-marketing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Tourism]]",
-      "resolved": "urn:visionflow:owl:class:virtual-tourism",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The strategic promotion of physical or virtual locations using immersive technologies, AR/VR experiences, and digital twin representations to attract visitors, investors, and residents by showcasing destinations through interactive 3D visualizations and metaverse presence.

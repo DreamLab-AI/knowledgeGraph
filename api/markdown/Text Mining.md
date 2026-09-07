@@ -1,39 +1,118 @@
----
-public: true
----
-
-# Text Mining
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:text-mining", "@type":"Page", "title":"Text Mining", "vc:slug":"text-mining", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:text-mining",
+  "@type": "Page",
+  "title": "Text Mining",
+  "vc:slug": "text-mining",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:text-mining",
-  "@type":"Class",
-  "label":"Text Mining",
-  "definition":"Text mining is the automated discovery of useful patterns, structure and knowledge from large collections of unstructured natural-language text. It combines natural-language processing, information retrieval and data-mining techniques to transform documents into structured representations amenable to analysis. Applications span extracting entities and relations, classifying and clustering documents, and surfacing trends across corpora too large to read manually.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:natural-language-processing","label":"Natural Language Processing"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:natural-language-processing","label":"Natural Language Processing"},{"@id":"urn:ngm:class:information-retrieval","label":"Information Retrieval"}],
-    "hasPart":[{"@id":"urn:ngm:class:information-extraction","label":"Information Extraction"},{"@id":"urn:ngm:class:named-entity-recognition","label":"Named Entity Recognition"}],
-    "supports":[{"@id":"urn:ngm:class:sentiment-analysis","label":"Sentiment Analysis"}],
-    "enables":[{"@id":"urn:ngm:class:coreference-resolution","label":"Coreference Resolution"}],
-    "implements":[{"@id":"urn:ngm:class:data-mining","label":"Data Mining"}],
-    "partOf":[{"@id":"urn:ngm:class:data-mining","label":"Data Mining"}],
-    "requires":[{"@id":"urn:ngm:class:tokenization","label":"Tokenization"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:information-retrieval","label":"Information Retrieval"}],
-    "dependsOn":[{"@id":"urn:ngm:class:natural-language-understanding","label":"Natural Language Understanding"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:information-extraction","label":"Information Extraction"}],
-    "relatedTo":[{"@id":"urn:ngm:class:sentiment-analysis","label":"Sentiment Analysis"},{"@id":"urn:ngm:class:named-entity-recognition","label":"Named Entity Recognition"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:text-mining",
+  "@type": "Class",
+  "label": "Text Mining",
+  "definition": "Text mining is the automated discovery of useful patterns, structure and knowledge from large collections of unstructured natural-language text. It combines natural-language processing, information retrieval and data-mining techniques to transform documents into structured representations amenable to analysis. Applications span extracting entities and relations, classifying and clustering documents, and surfacing trends across corpora too large to read manually.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

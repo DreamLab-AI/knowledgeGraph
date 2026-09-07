@@ -192,10 +192,6 @@
       "label": "ComfyUI"
     },
     {
-      "slug": "comparison-of-gpt4-and-gemini-ultra",
-      "label": "Comparison of GPT4 and Gemini Ultra"
-    },
-    {
       "slug": "computer-vision",
       "label": "Computer Vision"
     },
@@ -916,10 +912,6 @@
     {
       "slug": "legal-research",
       "label": "Legal Research"
-    },
-    {
-      "slug": "leopold-aschenbrenner-situational-awareness",
-      "label": "leopold-aschenbrenner-situational-awareness"
     },
     {
       "slug": "lightning-and-similar-l2",

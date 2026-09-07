@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Cinema
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Digital cinema is the production, distribution, and theatrical projection of motion pictures using digital files rather than photochemical film. It is governed by the DCI specification, which defines the Digital Cinema Package (DCP) format, JPEG 2000 image compression, encryption, and colour standards for cinema-grade exhibition. It enables consistent high-resolution playback, secure content delivery, and the broader shift to file-based proprietary video pipelines.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-content-and-assets", "label": "Content and Assets"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:proprietary-video", "label": "Proprietary Video"}
+      {
+        "@id": "urn:ngm:class:proprietary-video",
+        "label": "Proprietary Video"
+      }
     ]
   },
   "quality": 0.72

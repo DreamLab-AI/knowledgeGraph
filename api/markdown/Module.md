@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Module
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,32 +55,74 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:interface", "label": "Interface"},
-      {"@id": "urn:ngm:class:configuration", "label": "Configuration"}
+      {
+        "@id": "urn:ngm:class:interface",
+        "label": "Interface"
+      },
+      {
+        "@id": "urn:ngm:class:configuration",
+        "label": "Configuration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:component", "label": "Component"},
-      {"@id": "urn:ngm:class:interface", "label": "Interface"}
+      {
+        "@id": "urn:ngm:class:component",
+        "label": "Component"
+      },
+      {
+        "@id": "urn:ngm:class:interface",
+        "label": "Interface"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:architecture", "label": "Architecture"},
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:architecture",
+        "label": "Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:adapter-modules", "label": "Adapter Modules"},
-      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:software-library", "label": "Software Library"}
+      {
+        "@id": "urn:ngm:class:adapter-modules",
+        "label": "Adapter Modules"
+      },
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:software-library",
+        "label": "Software Library"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:service-layer", "label": "Service Layer"}
+      {
+        "@id": "urn:ngm:class:service-layer",
+        "label": "Service Layer"
+      }
     ]
   },
   "provenance": {
@@ -95,37 +132,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:module:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:82a38c428fea6fbb5fd2e0a602738592388b49975a7a92cfe4ada600f7d84cac"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Component]]",
-      "resolved": "urn:visionflow:owl:class:component",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A Module is a self-contained, reusable unit of software or system design that encapsulates a discrete set of related functions, data structures, or responsibilities behind a well-defined interface, enabling independent development, testing, deployment, and composition within larger systems. Modules promote separation of concerns, reduce coupling between system components, and support both horizontal reuse across different systems and vertical composition within a single system architecture. In AI contexts, a module may refer to a functional unit within a model architecture (e.g., an attention module, an adapter module) or a deployable component in an AI pipeline.

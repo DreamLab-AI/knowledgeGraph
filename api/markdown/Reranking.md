@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Reranking
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:reranking", "@type":"Page", "title":"Reranking", "vc:slug":"reranking", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:reranking",
+  "@type": "Page",
+  "title": "Reranking",
+  "vc:slug": "reranking",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -14,7 +17,7 @@ public: true
   "@id": "urn:ngm:class:reranking",
   "@type": "Class",
   "label": "Reranking",
-  "definition": "Reranking is a second-stage retrieval step in which an initial, computationally cheap set of candidate documents or passages is reordered by a more expensive, higher-precision model that scores each candidate's relevance to the query more accurately. It is a standard component of retrieval-augmented generation and search pipelines, where a fast retriever (such as a bi-encoder or lexical index) first narrows a large corpus down to a manageable candidate set, and a cross-encoder or learned ranker then refines the ordering. Reranking improves precision at the cost of additional latency, so candidate set sizes are tuned to balance quality and speed.",
+  "definition": "Reranking is a second-stage retrieval step in which an initial, computationally cheap set of candidate documents or passages is reordered by a more expensive, higher-precision model that scores each candidate's relevance to the query more accurately. It is a standard component of retrieval-augmented generation and search pipelines, where a fast retriever (such as a bi-encoder or lexical [private]) first narrows a large corpus down to a manageable candidate set, and a cross-encoder or learned ranker then refines the ordering. Reranking improves precision at the cost of additional latency, so candidate set sizes are tuned to balance quality and speed.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
@@ -52,7 +55,7 @@ public: true
 ```
 
 - ### Definition
-	- Reranking is a second-stage retrieval step in which an initial, computationally cheap set of candidate documents or passages is reordered by a more expensive, higher-precision model that scores each candidate's relevance to the query more accurately. It is a standard component of retrieval-augmented generation and search pipelines, where a fast retriever (such as a bi-encoder or lexical index) first narrows a large corpus down to a manageable candidate set, and a cross-encoder or learned ranker then refines the ordering. Reranking improves precision at the cost of additional latency, so candidate set sizes are tuned to balance quality and speed.
+	- Reranking is a second-stage retrieval step in which an initial, computationally cheap set of candidate documents or passages is reordered by a more expensive, higher-precision model that scores each candidate's relevance to the query more accurately. It is a standard component of retrieval-augmented generation and search pipelines, where a fast retriever (such as a bi-encoder or lexical [private]) first narrows a large corpus down to a manageable candidate set, and a cross-encoder or learned ranker then refines the ordering. Reranking improves precision at the cost of additional latency, so candidate set sizes are tuned to balance quality and speed.
 - ### Relationships
 	- partOf:: [[Information Retrieval]]
 	- relatedTo:: [[Agentic RAG]]

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Nakamoto 2008 Bitcoin Whitepaper
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -196,62 +191,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nakamoto-2008-bitcoin-whitepaper:dc3b7c2dbad3",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:57e697b0eac44ab6eb15c2bbd2fd63b4b820c921f76f22417ca6a09cbeb761be"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Bitcoin Proof-of-Work Protocol]]",
-      "resolved": "urn:visionflow:linked:bitcoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proof of Work]]",
-      "resolved": "urn:visionflow:linked:proof-of-work",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Domain]]",
-      "resolved": "urn:visionflow:linked:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[UTXO]]",
-      "resolved": "urn:visionflow:linked:utxo",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptographic Hash Function]]",
-      "resolved": "urn:visionflow:linked:cryptographic-hash-function",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Nakamoto 2008, Bitcoin: A Peer-to-Peer Electronic Cash System]]",
-      "resolved": "urn:visionflow:linked:nakamoto-2008-bitcoin-a-peer-to-peer-electronic-cash-system",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Nakamoto 2008 Bitcoin Whitepaper, titled Bitcoin: A Peer-to-Peer Electronic Cash System, is the founding document of Bitcoin, published in October 2008 under the pseudonym Satoshi Nakamoto. It describes a system for electronic payments that allows two parties to transact directly without a trusted intermediary, solving the double-spending problem through a proof-of-work timestamp server. The paper introduces a public chain of blocks secured by computational work, where the longest valid chain represents the agreed transaction history. It established the conceptual basis for cryptocurrencies and decentralised consensus.

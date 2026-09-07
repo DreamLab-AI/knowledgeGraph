@@ -1,38 +1,115 @@
----
-public: true
----
-
-# Roblox
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:roblox", "@type":"Page", "title":"Roblox", "vc:slug":"roblox", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:roblox",
-  "@type":"Class",
-  "label":"Roblox",
-  "definition":"Roblox is an online platform and storefront that lets users create, publish and play user-generated 3D experiences. It combines a game engine, an authoring environment and a social and economic layer, with creators building experiences that other users can enter as customisable avatars. An in-platform virtual currency underpins a creator economy in which developers monetise their experiences. Roblox is frequently cited as a consumer-scale realisation of metaverse concepts, blending gaming, social interaction and user-generated content.",
-  "domain":"metaverse",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:metaverse-platform","label":"Metaverse Platform"}],
-  "relations":{
-    "contrastsWith":[{"@id":"urn:ngm:class:the-sandbox","label":"The Sandbox"}],
-    "supports":[{"@id":"urn:ngm:class:creator-economy","label":"Creator Economy"},{"@id":"urn:ngm:class:avatar","label":"Avatar"}],
-    "hasPart":[{"@id":"urn:ngm:class:game-engine","label":"Game Engine"}],
-    "enables":[{"@id":"urn:ngm:class:virtual-economy","label":"Virtual Economy"}],
-    "uses":[{"@id":"urn:ngm:class:game-engine","label":"Game Engine"}],
-    "partOf":[{"@id":"urn:ngm:class:metaverse","label":"Metaverse"}],
-    "requires":[{"@id":"urn:ngm:class:game-development","label":"Game Development"}],
-    "implements":[{"@id":"urn:ngm:class:virtual-world","label":"Virtual World"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:social-platform","label":"Social Platform"}],
-    "relatedTo":[{"@id":"urn:ngm:class:virtual-world","label":"Virtual World"},{"@id":"urn:ngm:class:gaming","label":"Gaming"},{"@id":"urn:ngm:class:metaverse-platform","label":"Metaverse Platform"}]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:roblox",
+  "@type": "Page",
+  "title": "Roblox",
+  "vc:slug": "roblox",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:roblox",
+  "@type": "Class",
+  "label": "Roblox",
+  "definition": "Roblox is an online platform and storefront that lets users create, publish and play user-generated 3D experiences. It combines a game engine, an authoring environment and a social and economic layer, with creators building experiences that other users can enter as customisable avatars. An in-platform virtual currency underpins a creator economy in which developers monetise their experiences. Roblox is frequently cited as a consumer-scale realisation of metaverse concepts, blending gaming, social interaction and user-generated content.",
+  "domain": "metaverse",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:metaverse-platform",
+      "label": "Metaverse Platform"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:the-sandbox",
+        "label": "The Sandbox"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:social-platform",
+        "label": "Social Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:gaming",
+        "label": "Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - Roblox is an online platform for creating, publishing and playing user-generated 3D experiences. It is a [[Metaverse Platform]] that bundles a [[Game Engine]], a [[Virtual World]] and a [[Creator Economy]], and players enter experiences as a customisable [[Avatar]].
 - ### Overview

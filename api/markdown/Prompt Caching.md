@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Prompt Caching
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:prompt-caching", "@type": "Page", "title": "Prompt Caching", "vc:slug": "prompt-caching", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:prompt-caching",
+  "@type": "Page",
+  "title": "Prompt Caching",
+  "vc:slug": "prompt-caching",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

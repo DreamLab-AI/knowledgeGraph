@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Spatial AI Associate]]
-# Spatial AI Assistant Agent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,19 +42,40 @@ elevatedFrom:: [[Spatial AI Associate]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:spatial-ai", "label": "Spatial AI"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:sensor-technology", "label": "Sensor Technology"}
+      {
+        "@id": "urn:ngm:class:spatial-ai",
+        "label": "Spatial AI"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-technology",
+        "label": "Sensor Technology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:scene-management", "label": "Scene Management"}
+      {
+        "@id": "urn:ngm:class:scene-management",
+        "label": "Scene Management"
+      }
     ]
   },
   "quality": 0.7,
@@ -71,26 +86,6 @@ elevatedFrom:: [[Spatial AI Associate]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:spatial-ai-associate:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:83175b8c4f59a8f1fa08e660c9642916b2dd9b3921cad7878449adb6744e3ad5"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Spatial AI Associate is an AI-powered assistant role or software agent embedded within spatial computing and extended reality environments, responsible for contextual scene understanding, user intent interpretation, and proactive spatial guidance. It combines computer vision, SLAM-derived spatial maps, and large language model reasoning to deliver situated, location-aware assistance within physical or mixed-reality spaces.

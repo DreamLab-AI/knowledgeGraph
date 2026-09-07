@@ -1,8 +1,3 @@
----
-public: true
----
-
-# EigenLayer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "EigenLayer is an Ethereum-based restaking protocol that allows ETH stakers to extend their cryptoeconomic security — the stake already deposited to validate the Ethereum consensus layer — to additional decentralised services called Actively Validated Services (AVS). By opting into EigenLayer smart contracts, stakers grant the protocol the right to apply slashing conditions from multiple AVS operators simultaneously, enabling new protocols such as data availability layers, bridges, oracles, and sequencers to bootstrap economic security without deploying their own native token staking systems. EigenLayer fundamentally reuses and resells Ethereum's security budget.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:de-fi-protocol", "label": "De Fi Protocol"},
-      {"@id": "urn:ngm:class:decentralized-application", "label": "Decentralized Application"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"}
+      {
+        "@id": "urn:ngm:class:de-fi-protocol",
+        "label": "De Fi Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
-      {"@id": "urn:ngm:class:validator-economics", "label": "Validator Economics"},
-      {"@id": "urn:ngm:class:liquid-proof-of-stake", "label": "Liquid Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:validator-economics",
+        "label": "Validator Economics"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-proof-of-stake",
+        "label": "Liquid Proof of Stake"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +88,3 @@ public: true
   - EigenLayer's strategic significance lies in radically lowering the trust bootstrapping cost for new cryptoeconomic protocols. Before EigenLayer, launching a novel decentralised service required either accepting significant trust assumptions (committee-based with small stake) or years of token distribution to build a credible validator set. EigenLayer compresses this to days: an AVS operator can integrate EigenLayer contracts and immediately access operators already securing billions in restaked ETH. This accelerated the launch of EigenDA (data availability), AltLayer (restaking-based rollup sequencers), and Lagrange (ZK coprocessors) as AVS in 2024.
 
   - In 2024-2025, EigenLayer mainnet launched its restaking contracts, accumulating over $15B in restaked ETH at peak, making it one of the largest DeFi protocols by total value locked. However, the period also surfaced structural concerns: concentration of restaking among a small number of operators, correlated slashing risk across AVS, and the as-yet-untested nature of AVS slashing enforcement. The EIGEN token launched in 2024 to provide a universal slashing and forking mechanism for AVS that cannot be secured by ETH slashing alone. Academic and industry debate continues on whether restaking creates hidden systemic risk to Ethereum's base-layer finality guarantees.
-

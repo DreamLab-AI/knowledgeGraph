@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Computational Modelling
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -14,50 +8,182 @@ public: true
   "vc:public": true,
   "vc:schemaVersion": 2,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:mathematical-optimisation", "vc:label": "Mathematical Optimisation"},
-    {"@id": "urn:visionflow:linked:simulation", "vc:label": "Simulation"},
-    {"@id": "urn:visionflow:linked:differential-equations", "vc:label": "Differential Equations"},
-    {"@id": "urn:visionflow:linked:numerical-methods", "vc:label": "Numerical Methods"},
-    {"@id": "urn:visionflow:linked:finite-element-analysis", "vc:label": "Finite Element Analysis"},
-    {"@id": "urn:visionflow:linked:agent-based-modelling", "vc:label": "Agent-Based Modelling"},
-    {"@id": "urn:visionflow:linked:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
-    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
-    {"@id": "urn:visionflow:linked:climate-modelling", "vc:label": "Climate Modelling"},
-    {"@id": "urn:visionflow:linked:computational-biology", "vc:label": "Computational Biology"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:bayesian-inference", "vc:label": "Bayesian Inference"},
-    {"@id": "urn:visionflow:linked:monte-carlo-simulation", "vc:label": "Monte Carlo Simulation"},
-    {"@id": "urn:visionflow:linked:high-performance-computing", "vc:label": "High-Performance Computing"},
-    {"@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration"},
-    {"@id": "urn:visionflow:linked:physics-informed-neural-network", "vc:label": "Physics-Informed Neural Network"},
-    {"@id": "urn:visionflow:linked:surrogate-model", "vc:label": "Surrogate Model"},
-    {"@id": "urn:visionflow:linked:sensitivity-analysis", "vc:label": "Sensitivity Analysis"},
-    {"@id": "urn:visionflow:linked:uncertainty-quantification", "vc:label": "Uncertainty Quantification"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:linked:system-dynamics", "vc:label": "System Dynamics"},
-    {"@id": "urn:visionflow:linked:molecular-dynamics", "vc:label": "Molecular Dynamics"},
-    {"@id": "urn:visionflow:linked:computational-fluid-dynamics", "vc:label": "Computational Fluid Dynamics"},
-    {"@id": "urn:visionflow:linked:graph-neural-network", "vc:label": "Graph Neural Network"},
-    {"@id": "urn:visionflow:linked:scientific-machine-learning", "vc:label": "Scientific Machine Learning"},
-    {"@id": "urn:visionflow:linked:probabilistic-modelling", "vc:label": "Probabilistic Modelling"},
-    {"@id": "urn:visionflow:linked:data-assimilation", "vc:label": "Data Assimilation"},
-    {"@id": "urn:visionflow:linked:cellular-automata", "vc:label": "Cellular Automata"},
-    {"@id": "urn:visionflow:linked:stochastic-process", "vc:label": "Stochastic Process"},
-    {"@id": "urn:visionflow:linked:complex-systems", "vc:label": "Complex Systems"},
-    {"@id": "urn:visionflow:linked:operator-learning", "vc:label": "Operator Learning"},
-    {"@id": "urn:visionflow:linked:protein-structure-prediction", "vc:label": "Protein Structure Prediction"},
-    {"@id": "urn:visionflow:linked:epidemiological-modelling", "vc:label": "Epidemiological Modelling"},
-    {"@id": "urn:visionflow:linked:fluid-simulation", "vc:label": "Fluid Simulation"},
-    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
-    {"@id": "urn:visionflow:linked:transfer-learning", "vc:label": "Transfer Learning"},
-    {"@id": "urn:visionflow:linked:artificial-intelligence", "vc:label": "Artificial Intelligence"},
-    {"@id": "urn:visionflow:linked:statistics", "vc:label": "Statistics"},
-    {"@id": "urn:visionflow:linked:linear-algebra", "vc:label": "Linear Algebra"},
-    {"@id": "urn:visionflow:linked:systems-biology", "vc:label": "Systems Biology"},
-    {"@id": "urn:visionflow:linked:collaborative-simulation", "vc:label": "Collaborative Simulation"},
-    {"@id": "urn:visionflow:linked:time-series-forecasting", "vc:label": "Time Series Forecasting"},
-    {"@id": "urn:visionflow:linked:discretisation", "vc:label": "Discretisation"}
+    {
+      "@id": "urn:visionflow:linked:mathematical-optimisation",
+      "vc:label": "Mathematical Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:simulation",
+      "vc:label": "Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:differential-equations",
+      "vc:label": "Differential Equations"
+    },
+    {
+      "@id": "urn:visionflow:linked:numerical-methods",
+      "vc:label": "Numerical Methods"
+    },
+    {
+      "@id": "urn:visionflow:linked:finite-element-analysis",
+      "vc:label": "Finite Element Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:agent-based-modelling",
+      "vc:label": "Agent-Based Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:deep-learning",
+      "vc:label": "Deep Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:neural-network",
+      "vc:label": "Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:climate-modelling",
+      "vc:label": "Climate Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-biology",
+      "vc:label": "Computational Biology"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-inference",
+      "vc:label": "Bayesian Inference"
+    },
+    {
+      "@id": "urn:visionflow:linked:monte-carlo-simulation",
+      "vc:label": "Monte Carlo Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:high-performance-computing",
+      "vc:label": "High-Performance Computing"
+    },
+    {
+      "@id": "urn:visionflow:linked:gpu-acceleration",
+      "vc:label": "GPU Acceleration"
+    },
+    {
+      "@id": "urn:visionflow:linked:physics-informed-neural-network",
+      "vc:label": "Physics-Informed Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:surrogate-model",
+      "vc:label": "Surrogate Model"
+    },
+    {
+      "@id": "urn:visionflow:linked:sensitivity-analysis",
+      "vc:label": "Sensitivity Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:uncertainty-quantification",
+      "vc:label": "Uncertainty Quantification"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:system-dynamics",
+      "vc:label": "System Dynamics"
+    },
+    {
+      "@id": "urn:visionflow:linked:molecular-dynamics",
+      "vc:label": "Molecular Dynamics"
+    },
+    {
+      "@id": "urn:visionflow:linked:computational-fluid-dynamics",
+      "vc:label": "Computational Fluid Dynamics"
+    },
+    {
+      "@id": "urn:visionflow:linked:graph-neural-network",
+      "vc:label": "Graph Neural Network"
+    },
+    {
+      "@id": "urn:visionflow:linked:scientific-machine-learning",
+      "vc:label": "Scientific Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:probabilistic-modelling",
+      "vc:label": "Probabilistic Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-assimilation",
+      "vc:label": "Data Assimilation"
+    },
+    {
+      "@id": "urn:visionflow:linked:cellular-automata",
+      "vc:label": "Cellular Automata"
+    },
+    {
+      "@id": "urn:visionflow:linked:stochastic-process",
+      "vc:label": "Stochastic Process"
+    },
+    {
+      "@id": "urn:visionflow:linked:complex-systems",
+      "vc:label": "Complex Systems"
+    },
+    {
+      "@id": "urn:visionflow:linked:operator-learning",
+      "vc:label": "Operator Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:protein-structure-prediction",
+      "vc:label": "Protein Structure Prediction"
+    },
+    {
+      "@id": "urn:visionflow:linked:epidemiological-modelling",
+      "vc:label": "Epidemiological Modelling"
+    },
+    {
+      "@id": "urn:visionflow:linked:fluid-simulation",
+      "vc:label": "Fluid Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:optimisation",
+      "vc:label": "Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:transfer-learning",
+      "vc:label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:artificial-intelligence",
+      "vc:label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:visionflow:linked:statistics",
+      "vc:label": "Statistics"
+    },
+    {
+      "@id": "urn:visionflow:linked:linear-algebra",
+      "vc:label": "Linear Algebra"
+    },
+    {
+      "@id": "urn:visionflow:linked:systems-biology",
+      "vc:label": "Systems Biology"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaborative-simulation",
+      "vc:label": "Collaborative Simulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-series-forecasting",
+      "vc:label": "Time Series Forecasting"
+    },
+    {
+      "@id": "urn:visionflow:linked:discretisation",
+      "vc:label": "Discretisation"
+    }
   ]
 }
 ```
@@ -72,102 +198,113 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:mathematical-optimisation", "label": "Mathematical Optimisation"},
-      {"@id": "urn:ngm:class:scientific-machine-learning", "label": "Scientific Machine Learning"},
-      {"@id": "urn:ngm:class:probabilistic-modelling", "label": "Probabilistic Modelling"}
+      {
+        "@id": "urn:ngm:class:mathematical-optimisation",
+        "label": "Mathematical Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-machine-learning",
+        "label": "Scientific Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-modelling",
+        "label": "Probabilistic Modelling"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"},
-      {"@id": "urn:ngm:class:finite-element-analysis", "label": "Finite Element Analysis"},
-      {"@id": "urn:ngm:class:agent-based-modelling", "label": "Agent-Based Modelling"},
-      {"@id": "urn:ngm:class:monte-carlo-simulation", "label": "Monte Carlo Simulation"},
-      {"@id": "urn:ngm:class:sensitivity-analysis", "label": "Sensitivity Analysis"}
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:differential-equations", "label": "Differential Equations"},
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:statistics", "label": "Statistics"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
+      {
+        "@id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:climate-modelling", "label": "Climate Modelling"},
-      {"@id": "urn:ngm:class:epidemiological-modelling", "label": "Epidemiological Modelling"},
-      {"@id": "urn:ngm:class:protein-structure-prediction", "label": "Protein Structure Prediction"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:surrogate-model", "label": "Surrogate Model"},
-      {"@id": "urn:ngm:class:physics-informed-neural-network", "label": "Physics-Informed Neural Network"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      },
+      {
+        "@id": "urn:ngm:class:physics-informed-neural-network",
+        "label": "Physics-Informed Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "OntologyEnrichment"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:annotation:computational-modelling:link-resolutions",
-  "@type": "LinkResolutionsAnnotation",
-  "forClass": "urn:ngm:class:computational-modelling",
-  "resolutions": [
-    {"wikilink": "Mathematical Optimisation", "@id": "urn:ngm:class:mathematical-optimisation"},
-    {"wikilink": "Simulation", "@id": "urn:ngm:class:simulation"},
-    {"wikilink": "Differential Equations", "@id": "urn:ngm:class:differential-equations"},
-    {"wikilink": "Numerical Methods", "@id": "urn:ngm:class:numerical-methods"},
-    {"wikilink": "Finite Element Analysis", "@id": "urn:ngm:class:finite-element-analysis"},
-    {"wikilink": "Agent-Based Modelling", "@id": "urn:ngm:class:agent-based-modelling"},
-    {"wikilink": "Machine Learning", "@id": "urn:ngm:class:machine-learning"},
-    {"wikilink": "Deep Learning", "@id": "urn:ngm:class:deep-learning"},
-    {"wikilink": "Neural Network", "@id": "urn:ngm:class:neural-network"},
-    {"wikilink": "Climate Modelling", "@id": "urn:ngm:class:climate-modelling"},
-    {"wikilink": "Computational Biology", "@id": "urn:ngm:class:computational-biology"},
-    {"wikilink": "Digital Twin", "@id": "urn:ngm:class:digital-twin"},
-    {"wikilink": "Bayesian Inference", "@id": "urn:ngm:class:bayesian-inference"},
-    {"wikilink": "Monte Carlo Simulation", "@id": "urn:ngm:class:monte-carlo-simulation"},
-    {"wikilink": "High-Performance Computing", "@id": "urn:ngm:class:high-performance-computing"},
-    {"wikilink": "GPU Acceleration", "@id": "urn:ngm:class:gpu-acceleration"},
-    {"wikilink": "Physics-Informed Neural Network", "@id": "urn:ngm:class:physics-informed-neural-network"},
-    {"wikilink": "Surrogate Model", "@id": "urn:ngm:class:surrogate-model"},
-    {"wikilink": "Sensitivity Analysis", "@id": "urn:ngm:class:sensitivity-analysis"},
-    {"wikilink": "Uncertainty Quantification", "@id": "urn:ngm:class:uncertainty-quantification"},
-    {"wikilink": "Reinforcement Learning", "@id": "urn:ngm:class:reinforcement-learning"},
-    {"wikilink": "System Dynamics", "@id": "urn:ngm:class:system-dynamics"},
-    {"wikilink": "Molecular Dynamics", "@id": "urn:ngm:class:molecular-dynamics"},
-    {"wikilink": "Computational Fluid Dynamics", "@id": "urn:ngm:class:computational-fluid-dynamics"},
-    {"wikilink": "Graph Neural Network", "@id": "urn:ngm:class:graph-neural-network"},
-    {"wikilink": "Scientific Machine Learning", "@id": "urn:ngm:class:scientific-machine-learning"},
-    {"wikilink": "Probabilistic Modelling", "@id": "urn:ngm:class:probabilistic-modelling"},
-    {"wikilink": "Data Assimilation", "@id": "urn:ngm:class:data-assimilation"},
-    {"wikilink": "Cellular Automata", "@id": "urn:ngm:class:cellular-automata"},
-    {"wikilink": "Stochastic Process", "@id": "urn:ngm:class:stochastic-process"},
-    {"wikilink": "Complex Systems", "@id": "urn:ngm:class:complex-systems"},
-    {"wikilink": "Operator Learning", "@id": "urn:ngm:class:operator-learning"},
-    {"wikilink": "Protein Structure Prediction", "@id": "urn:ngm:class:protein-structure-prediction"},
-    {"wikilink": "Epidemiological Modelling", "@id": "urn:ngm:class:epidemiological-modelling"},
-    {"wikilink": "Fluid Simulation", "@id": "urn:ngm:class:fluid-simulation"},
-    {"wikilink": "Optimisation", "@id": "urn:ngm:class:optimisation"},
-    {"wikilink": "Transfer Learning", "@id": "urn:ngm:class:transfer-learning"},
-    {"wikilink": "Artificial Intelligence", "@id": "urn:ngm:class:artificial-intelligence"},
-    {"wikilink": "Statistics", "@id": "urn:ngm:class:statistics"},
-    {"wikilink": "Linear Algebra", "@id": "urn:ngm:class:linear-algebra"},
-    {"wikilink": "Systems Biology", "@id": "urn:ngm:class:systems-biology"},
-    {"wikilink": "Collaborative Simulation", "@id": "urn:ngm:class:collaborative-simulation"},
-    {"wikilink": "Time Series Forecasting", "@id": "urn:ngm:class:time-series-forecasting"},
-    {"wikilink": "Discretisation", "@id": "urn:ngm:class:discretisation"}
-  ]
 }
 ```
 
@@ -402,7 +539,7 @@ public: true
     - **MCMC** — Markov Chain [[Monte Carlo Simulation]]; a class of iterative stochastic algorithms (Metropolis-Hastings, Gibbs sampling, Hamiltonian Monte Carlo, No-U-Turn Sampler) for sampling from probability distributions, used in [[Bayesian Inference]] for posterior parameter estimation in Computational Models
     - **PDE** — Partial [[Differential Equations]]; mathematical equations relating a function's partial derivatives with respect to multiple independent variables (space, time); describe heat conduction (diffusion equation), fluid flow (Navier-Stokes), wave propagation (wave equation), electrostatics (Laplace/Poisson); the fundamental mathematical language of continuum Computational Modelling
     - **PINN** — [[Physics-Informed Neural Network]]; a [[Neural Network]] trained to satisfy PDE constraints as additional soft loss penalties alongside data fitting; meshless, differentiable, and capable of solving PDEs in complex geometries without generating a discretisation mesh; particularly useful for inverse problems (inferring PDE parameters from sparse measurements)
-    - **Sobol index** — global [[Sensitivity Analysis]] measure quantifying the fraction of output variance attributable to each input variable or to interactions between variables; first-order Sobol indices measure individual contributions; total-order Sobol indices capture all interactions; computation typically requires [[Monte Carlo Simulation]] or polynomial chaos expansion
+    - **Sobol [private]** — global [[Sensitivity Analysis]] measure quantifying the fraction of output variance attributable to each input variable or to interactions between variables; first-order Sobol indices measure individual contributions; total-order Sobol indices capture all interactions; computation typically requires [[Monte Carlo Simulation]] or polynomial chaos expansion
     - **Digital Thread** — a continuous, bidirectional data linkage across a product's complete lifecycle from requirements and design through manufacturing, testing, operation, and decommissioning; enabled by [[Digital Twin]] and Computational Model integration into product lifecycle management (PLM) platforms; the technological backbone of model-based systems engineering
     - **CFD** — [[Computational Fluid Dynamics]]; numerical solution of the Navier-Stokes equations for viscous fluid flow via finite volume, finite difference, or finite element methods; methods range from laminar direct numerical simulation (DNS) resolving all turbulent scales through Reynolds-Averaged Navier-Stokes (RANS) with closure models to Large Eddy Simulation (LES); used in aerodynamics, meteorology, biomedical [[Fluid Simulation]], marine engineering
     - **ODE** — Ordinary [[Differential Equations]]; [[Differential Equations]] in a single independent variable (typically time); describe lumped-parameter dynamical systems; solved with Runge-Kutta, Adams-Bashforth, or implicit BDF methods; widely used in [[Epidemiological Modelling]] (SIR), [[System Dynamics]], chemical kinetics, and ecological modelling
@@ -419,7 +556,7 @@ public: true
     - **Model interoperability and reproducibility** — Computational Models are frequently developed in monolithic, institution-specific codebases that cannot be easily shared, reproduced, or combined. FAIR principles for scientific data (Findable, Accessible, Interoperable, Reusable) are being extended to Computational Models via the FAIR4RS (FAIR for Research Software) initiative. [[Scientific Machine Learning]] models in particular suffer from poor reproducibility due to stochastic training, hyperparameter sensitivity, and framework version dependencies. The SMRS unified surrogate modelling standard (2025) directly addresses this challenge.
     - **Calibration and identifiability in high-dimensional parameter spaces** — Many Computational Models have tens to thousands of parameters that cannot all be uniquely determined from available observational data — the parameter identification or structural identifiability problem. [[Bayesian Inference]] via MCMC is theoretically principled but computationally intractable for models with more than ~100 parameters. Amortised inference (normalising flows, variational autoencoders trained on simulation data) offers a scalable alternative. Profile likelihood and [[Sensitivity Analysis]] methods can identify practically non-identifiable parameter combinations.
     - **Uncertainty quantification at scale** — Propagating uncertainty through high-dimensional Computational Models (climate, [[Computational Fluid Dynamics]], multi-scale materials) using Monte Carlo is prohibitively expensive. Polynomial chaos expansion (PCE) is efficient for low-dimensional uncertainty but scales exponentially with dimension. Active subspace methods and dimension reduction are essential for [[Uncertainty Quantification]] in high-dimensional problems. The COSSAN software and OpenTURNS Python library provide open-source [[Uncertainty Quantification]] workflows.
-    - **Physics-AI interface formalism** — Embedding physical knowledge into [[Machine Learning]] remains an art rather than a science. How to choose which physical constraints to enforce (hard vs. soft), which scales to model with physics vs. data, and how to propagate uncertainty across the physics-AI boundary are open questions. The Materials Modelling Ontology (MMO) and the Virtual Physiological Human (VPH) ontology provide formal frameworks for representing multi-scale model coupling that could guide [[Physics-Informed Neural Network]] architecture design.
+    - **Physics-AI interface formalism** — Embedding physical knowledge into [[Machine Learning]] remains an art rather than a science. How to choose which physical constraints to enforce (hard vs. soft), which scales to model with physics vs. data, and how to propagate uncertainty across the physics-AI boundary are open questions. The Materials Modelling Ontology (MMO) and the Virtual Physiological Human (VPH) ontology provide formal frameworks for representing multi-scale model coupling that [private] guide [[Physics-Informed Neural Network]] architecture design.
     - **Temporal stability of neural [[Surrogate Model]]s** — Neural [[Surrogate Model]]s often exhibit temporal instability when rolled out autoregressively over many time steps — small per-step errors accumulate, causing trajectory divergence. Error correction schemes (physical constraint projection, adaptive ensemble correction, model-guided rollout via [[Data Assimilation]]) are active research topics. GraphCast uses a learned noise-injection scheme during training to improve long-term stability; ICON-A2O uses ocean-atmosphere coupling to constrain drift.
     - **Multi-fidelity and multi-model fusion** — Real Computational Modelling workflows combine high-fidelity models (expensive, accurate) with low-fidelity models (cheap, approximate). Multi-fidelity methods (co-kriging, multi-level Monte Carlo, model bridging) systematically exploit the correlation between fidelity levels to obtain accurate statistics at the cost of the low-fidelity model. The MLMC (Multi-Level Monte Carlo) framework provides rigorous convergence theory; software implementations include MLMC.jl and UQpy.
     - **Software engineering and long-term maintainability** — Scientific Computational Models in Fortran, C++, or legacy Python often have poor test coverage, opaque coupling interfaces, and fragile dependency chains. Modern software engineering practices — continuous integration, unit testing via method of manufactured solutions, containerisation with Docker/Singularity, semantic versioning — are being adopted in community model development. The Climate and Forecast (CF) conventions and the Modular Ocean Model (MOM6) represent exemplars of well-engineered open-source Computational Models.

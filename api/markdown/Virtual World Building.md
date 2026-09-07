@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual World Building
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,23 +55,50 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-world-platform", "label": "Virtual World Platform"},
-      {"@id": "urn:ngm:class:virtual-environment-creation", "label": "Virtual Environment Creation"},
-      {"@id": "urn:ngm:class:virtual-destination", "label": "Virtual Destination"}
+      {
+        "@id": "urn:ngm:class:virtual-world-platform",
+        "label": "Virtual World Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment-creation",
+        "label": "Virtual Environment Creation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-destination",
+        "label": "Virtual Destination"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modeling"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-world-creation", "label": "Virtual World Creation"}
+      {
+        "@id": "urn:ngm:class:virtual-world-creation",
+        "label": "Virtual World Creation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:3-d-design", "label": "3D Design"}
+      {
+        "@id": "urn:ngm:class:3-d-design",
+        "label": "3D Design"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-world-building:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:caff895e1b4e5a67179144fae616e7fe17f065a9ee02d082d85705128f406ae0"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Design]]",
-      "resolved": "urn:visionflow:linked:3-d-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code platforms to professional game engines, enabling the construction of immersive digital spaces with customizable assets, terrain, and interactive elements.

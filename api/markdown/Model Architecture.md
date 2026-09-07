@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - ModelArchitecture
----
-
-# Model Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -211,42 +204,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:model-architecture:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bdfb4a1e3f0483739b674b54a822e16ccca8725e85ebf0de9bf0fb198318c3fe"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Model Development]]",
-      "resolved": "urn:visionflow:linked:ai-model-development",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[System Architecture]]",
-      "resolved": "urn:visionflow:owl:class:system-architecture",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The structural design and configuration of neural networks and machine learning systems, encompassing layer arrangements, activation functions, and connection patterns that determine how models process information and learn from data.

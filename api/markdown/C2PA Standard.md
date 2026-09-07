@@ -1,8 +1,3 @@
----
-public: true
----
-
-# C2PA Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -125,77 +120,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:c2-pa-standard:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6226eda5aac6476d3ed5d08a3732716f62f3e781283ec9da0dd1ba075c7a5e80"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Authenticity Certification]]",
-      "resolved": "urn:visionflow:linked:authenticity-certification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Content Provenance]]",
-      "resolved": "urn:visionflow:linked:content-provenance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cryptographic Signing]]",
-      "resolved": "urn:visionflow:linked:cryptographic-signing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO (International Organization for Standardization)]]",
-      "resolved": "urn:visionflow:linked:iso-international-organization-for-standardization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Media Verification]]",
-      "resolved": "urn:visionflow:linked:media-verification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Metadata Framework]]",
-      "resolved": "urn:visionflow:linked:metadata-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Trust Model]]",
-      "resolved": "urn:visionflow:linked:trust-model",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C (World Wide Web Consortium)]]",
-      "resolved": "urn:visionflow:linked:w3-c-world-wide-web-consortium",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technical Standard]]",
-      "resolved": "urn:visionflow:owl:class:technical-standard",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.

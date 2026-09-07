@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - NIST (National Institute of Standards and Technology)
----
-
-# NIST
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

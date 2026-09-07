@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Physical Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:physical-hardware:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ed18e54bd18a4fca19443e61f5012396b3d0633a4d3e71afe6dec682bdf2d7f4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware]]",
-      "resolved": "urn:visionflow:owl:class:hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Immersive Experiences]]",
-      "resolved": "urn:visionflow:owl:class:immersive-experiences",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The tangible computing devices and peripherals required for metaverse and XR experiences, including VR headsets, AR glasses, haptic devices, motion controllers, and supporting infrastructure like GPUs and networking equipment.

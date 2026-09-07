@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Value Alignment
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -238,107 +233,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:value-alignment:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9dd61bda067fba3f549292aa0e581e145347bce714571a553ce593ec63235b91"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[barsky1987fisher]]",
-      "resolved": "urn:visionflow:linked:barsky1987fisher",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bhatia2021]]",
-      "resolved": "urn:visionflow:linked:bhatia2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[borio2017fx]]",
-      "resolved": "urn:visionflow:linked:borio2017fx",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[cagan1958demand]]",
-      "resolved": "urn:visionflow:linked:cagan1958demand",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[davies2010history]]",
-      "resolved": "urn:visionflow:linked:davies2010history",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[hall2009inflation]]",
-      "resolved": "urn:visionflow:linked:hall2009inflation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[homer1996history]]",
-      "resolved": "urn:visionflow:linked:homer1996history",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[maurel2012keynesian]]",
-      "resolved": "urn:visionflow:linked:maurel2012keynesian",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ponzi2021alden]]",
-      "resolved": "urn:visionflow:linked:ponzi2021alden",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[selgin1996defense]]",
-      "resolved": "urn:visionflow:linked:selgin1996defense",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[stroukal2018can]]",
-      "resolved": "urn:visionflow:linked:stroukal2018can",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[szabo2002shelling]]",
-      "resolved": "urn:visionflow:linked:szabo2002shelling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[white1914fiat]]",
-      "resolved": "urn:visionflow:linked:white1914fiat",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Bitcoin As Money]]",
-      "resolved": "urn:visionflow:owl:class:bitcoin-as-money",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Money]]",
-      "resolved": "urn:visionflow:owl:class:money",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The challenge and process of ensuring AI systems pursue objectives that align with human values, even as those systems become more capable and autonomous. Value alignment addresses both technical and philosophical questions about encoding human preferences into AI behaviour.
 
@@ -418,13 +312,13 @@ public: true
 
   - #### Saving with it
 		- The Bitcoin community believes that [Bitcoin is the ultimate money](https://svetski.medium.com/why-bitcoin-not-shitcoin-6cc826f4fa52),a [‘store ofvalue’](https://www.coindesk.com/business/2022/01/07/jpmorgan-sees-more-crypto-adoption-in-2022-debates-bitcoins-status-as-store-of-value/),chance to [separate money fromstate](https://www.forbes.com/sites/leeorshimron/2020/06/30/bitcoin-is-the-separation-of-money-and-state/?sh=49294a8356db),increase [equality ofopportunity](https://www.washingtonpost.com/national/locked-out-of-traditional-financial-industry-more-people-of-color-are-turning-to-cryptocurrency/2021/12/01/a21df3fa-37fe-11ec-9bc4-86107e7b0ab1_story.html)and [ubiquity ofaccess](https://iai.tv/articles/the-rich-get-richer-the-poor-get-bitcoin-auid-1766),while others view it as [‘ratpoison’](https://www.cnbc.com/2021/06/22/a-third-of-investors-think-bitcoin-is-rat-poison-jpmorgan-survey-says.html),or a [fraudulent Ponzi scheme](https://jacobinmag.com/2022/01/cryptocurrency-scam-blockchain-bitcoin-economy-decentralization).[[ponzi2021alden]]A notable exclusion from the negative rhetoric is Fidelity, the global investment manager, who have always been positive and have [recentlysaid](https://www.fidelitydigitalassets.com/articles/bitcoin-first?sf253214177=1):it“Bitcoin is best understood as a monetary good, and one of the primary investment theses for bitcoin is as the store of value asset in an increasingly digital world.”
-		- The following paraphrases Eric Yakes, author of [‘The 7thProperty’](https://yakes.io/book/). Again, this is an Austrian economics perspective, and like much economic theory the underlying premise [iscontested](https://medium.datadriveninvestor.com/do-you-understand-the-austrian-vs-keynesian-economic-debate-2f4b152c6a6b)[[maurel2012keynesian]]:it“Paper became money because it was superior to gold in terms of divisibility and portability BUT it lacked scarcity. People reasoned that we could benefit from the greater divisibility/portability of paper money as long as it was redeemable in a form of money that was scarce. This is when money needed to be “backed” by something.  Since we changed money to paper money that wasn’t scarce, it needed to be backed by something that was. Since the repeal of the gold standard, politicians have retarded the meaning of the word because our money is no longer backed by something scarce.  So, what is bitcoin backed by? Nothing.  Sound money, like gold, isn’t “backed”. Only money that lacks inherent monetary properties must be backed by another money that maintains those properties. The idea that our base layer money needs to be backed by something is thinking from the era of paper money. Bitcoin does not require backing, it has inherent monetary properties superior to any other form of money that has ever existed.”
-		- The 2022 ARK Big Ideas report again provides some useful market insight. They posit that demand for the money features of Bitcoin could drive the price of the capped supply tokens to around 1M pounds per Bitcoin as inFigure<a href="#fig:BitcoinShareOfMoney" data-reference-type="ref" data-reference="fig:BitcoinShareOfMoney">4.5</a>.Take this with the usual pinch of salt, as Ark have been performing notably badly lately with their predictions.
+		- The following paraphrases Eric Yakes, author of [‘The 7thProperty’](https://yakes.io/book/). Again, this is an Austrian economics perspective, and like much economic theory the underlying premise [iscontested](https://medium.datadriveninvestor.com/do-you-understand-the-austrian-vs-keynesian-economic-debate-2f4b152c6a6b)[[maurel2012keynesian]]:it“Paper became money because it was superior to gold in terms of divisibility and portability BUT it lacked scarcity. People reasoned that we [private] benefit from the greater divisibility/portability of paper money as long as it was redeemable in a form of money that was scarce. This is when money needed to be “backed” by something.  Since we changed money to paper money that wasn’t scarce, it needed to be backed by something that was. Since the repeal of the gold standard, politicians have retarded the meaning of the word because our money is no longer backed by something scarce.  So, what is bitcoin backed by? Nothing.  Sound money, like gold, isn’t “backed”. Only money that lacks inherent monetary properties must be backed by another money that maintains those properties. The idea that our base layer money needs to be backed by something is thinking from the era of paper money. Bitcoin does not require backing, it has inherent monetary properties superior to any other form of money that has ever existed.”
+		- The 2022 ARK Big Ideas report again provides some useful market insight. They posit that demand for the money features of Bitcoin [private] drive the price of the capped supply tokens to around 1M pounds per Bitcoin as inFigure<a href="#fig:BitcoinShareOfMoney" data-reference-type="ref" data-reference="fig:BitcoinShareOfMoney">4.5</a>.Take this with the usual pinch of salt, as Ark have been performing notably badly lately with their predictions.
 		- ![](./assets/2d8ba8fa2b6d41395e8ef074ee3664d4a29df00e.jpg)
 		- Potential market exposure to Bitcoin as a money
 		- Perhaps more than any of these takes, it is worth considering the current public perception of the technology as a money and store of value. This [twitterthread](https://twitter.com/saquon/status/1480738426236375041) from professional sportsman Saquon Barkley, to his half million followers on the platform, captures the mood. He is one of a handful of athletes now being [paid directly](https://www.buybitcoinworldwide.com/athletes/) in Bitcoin.
 		- it“I want my career earnings to last generations. The average NFL career is 3 years and inflation is real. Saving and preserving money over time is hard, no matter who you are. In today’s world: How do we save? This is why I believe in bitcoin. Almost all professional athletes make the majority of their career earnings in their 20s. With a lack of education, inaccessible tools, and inflation, a sad yet common reality is many enter bankruptcy later on. We can do better. We need to improve financial literacy. Bitcoin is a proven, safe, global, and open system that allows anyone to save money. It is the most accessible asset we’ve ever seen.”
-		- This ubiquity of access is what probably most distinguishes Bitcoin. Previously it could be argued that only the most wealthy could access the ‘means’ to store their labour without loss of value over time(through inflation). To be clear, inflation is an important part of the money system, somewhat within the control of the central banks, and approximate to taxation. It applies equally to all holders of the moneys upply. Asserting that money should be replaced by a ‘hard asset’ such as Bitcoin, in the place of the more controllable utility of money, is likely both a fantasy, and wrong minded. This conflation of money and property is a confusion caused by Bitcoin’s proximity to money, and it’s‘ money like’ network, and is extremely commonplace.
+		- This ubiquity of access is what probably most distinguishes Bitcoin. Previously it [private] be argued that only the most wealthy [private] access the ‘means’ to store their labour without loss of value over time(through inflation). To be clear, inflation is an important part of the money system, somewhat within the control of the central banks, and approximate to taxation. It applies equally to all holders of the moneys upply. Asserting that money should be replaced by a ‘hard asset’ such as Bitcoin, in the place of the more controllable utility of money, is likely both a fantasy, and wrong minded. This conflation of money and property is a confusion caused by Bitcoin’s proximity to money, and it’s‘ money like’ network, and is extremely commonplace.
 		- These narrative takes are all rooted in the popular idea that Bitcoin isa ‘hedge against inflation’; an increasingly fragile take, as the price plummets with global markets. The Bitcoin community seems somewhat confused about the nature of money, which is predictable because we can see in these sections that money is pretty confusing. Money is the fluid, elastic,[[cagan1958demand]] and thin ‘working credit’ layer on top of historical human production, which provides transaction convenience, and tools for credit. Value is effectively swapped in and out of this layer through the actions of central banks, controlling inflation into acceptable margins. Simplistically this is done through manipulation of interest rates (the easiness of credit), quantitative easing (buying of assets) and quantitative tightening (selling of assets). To give a quick high level view of central bank activity we can use the PESTLE framework:
 			- Political:
 				- Government policies and regulations can impact central banks by influencing monetary policies.
@@ -447,7 +341,7 @@ public: true
 		- Fiat money is primarily it not a long term store of value, as Austrian economists perhaps believe it should be. This function is left to assets. The Austrian thesis of ‘hard money’ (which cannot be ‘debased’ by government action) seems somewhat naïve when one considers that credit exists anywhere in the world (ie, the creation of paper money through loans) then this would be used to buy up a hard money asset in the long run, causing a scarcity crisis. This is what happened to gold in the middle of the last century.
 		- Fundamentally, Bitcoin isn’t money (in the traditional sense) because it’s not an IOU, which money certainly is. It’s a bearer instrument, novel asset class, with money like properties, as identified above. As said again and again it functions most like a ‘property’ which can be invested in by anyone, with all the attendant risks of that property class to the holder. Lyn Alden says it sits [somewhere between](https://www.lynalden.com/what-is-money/) a saving tool, and an investment, acting as “programmable commodity money”.
 		- [Andrew M. Bailey](https://andrewmbailey.com/) says it“in an ideal worldwhere governments honour the rights of citizens, they don’t spy, they don’t prohibit transactions, they manage a sound money supply, and they make sound decisions, the value of bitcoin is very low; we’re just notin an ideal world”
-		- Another potentially important differentiating affordance is censorship resistance. There’s really nothing else like it for that one feature. With that said Bitcoin is only a viable ‘money like thing’ when viewed in the layers described in this book, [and elsewhere](https://giacomozucco.com/layers-before-bitcoin)[[Bhatia2021]].The base chain layer is an apex secure store of value. Whatever layer 2ultimately emerges is the transactional layer which could replace day today cash money, while the hypothetical layer 3 might be useful for complex financial mechanisms and contracts operating automatically, and also provides the opportunity for using the security model of the chain to support other digital assets, including government currencies through stable coins. All these things have a natural home in borderless social spaces.
+		- Another potentially important differentiating affordance is censorship resistance. There’s really nothing else like it for that one feature. With that said Bitcoin is only a viable ‘money like thing’ when viewed in the layers described in this book, [and elsewhere](https://giacomozucco.com/layers-before-bitcoin)[[Bhatia2021]].The base chain layer is an apex secure store of value. Whatever layer 2ultimately emerges is the transactional layer which [private] replace day today cash money, while the hypothetical layer 3 might be useful for complex financial mechanisms and contracts operating automatically, and also provides the opportunity for using the security model of the chain to support other digital assets, including government currencies through stable coins. All these things have a natural home in borderless social spaces.
 
   - ### Bitcoin's Role
   - **Store of Value**: Despite recent falls against the U.S. dollar, Bitcoin has maintained better value against the peso.
@@ -496,7 +390,7 @@ public: true
   - Crypto firms must be licensed by the EU and comply with money laundering and terrorism finance safeguards to serve EU customers
   - Concerns about weakened privacy due to reporting standards in the name of customer safety and national security
   - Binance CEO supports MiCA, calling it a pragmatic solution
-  - EU’s MiCA could become a global template for international companies
+  - EU’s MiCA [private] become a global template for international companies
   - UK, now outside the EU, is setting similar stablecoin and crypto asset service rules
   - Germany is bringing forward legislation allowing the ‘tokenisation’ oflegacy instruments such as stocks, though it’s far from clear what thevalue of this would be, except perhaps lowering risk for custodians. Itseems that this EU position has prompted the UK government to seize thepotential competitive advantage offered, and there will be more on thislater. Japan meanwhile has gone so far as to [make anannouncement](https://cointelegraph.com/news/japanese-prime-minister-says-gov-t-investment-in-digital-transformation-will-include-metaverse-nfts)about supporting the technologies at a national level.
   - It’s a complex evolving narrative, and clearly contradictions arecommon. Right now there seems little appeal for stepping into Web3. Intothe confusion, this book advances a narrow take, and toolset, whichmight extract some value from the technologies, while maintaining a lowbarrier to entry.
@@ -516,7 +410,7 @@ public: true
 					- Virtual worlds are a huge application for NFTs, and this seems like it would be a natural fit for our collaborative mixed reality application. In reality the $2B of sold so far is mostly ‘allocations’ in nascent ecosystems, being sold as highly speculative assets, without even a metaverse to use. The majority of that amount is the hyped ‘Otherland’ plots sold under the Bored Apes brand.
 					- “Full stack” luxury brands. [Nic Carter describes](https://medium.com/@nic__carter/redeem-and-retain-nfts-are-the-future-of-luxury-goods-760f00dbce23) a mating of physical and virtual luxury goods. His is a useful article on the future direction, and he has also [provided a primer on NFTs](https://medium.com/@nic__carter/why-nfts-are-hard-to-explain-48f0ab0a35bf). There are many such examples already, such as [Tiffanys ‘NFTiff’
 				- cryptopunks](https://nft.tiffany.com/faq/) collaboration which will automatically generate royalties for Tiffanys and parent company Louis Vitton in perpetuity. Such products prove provenance, create new aftermarket opportunities, and unlock metaverse applications.
-				- It is completely reasonable to assert that these use cases could be accomplished without the use of NFT technology, and is part of the hype bubble.
+				- It is completely reasonable to assert that these use cases [private] be accomplished without the use of NFT technology, and is part of the hype bubble.
 				- Twitter user Cantino.Eth offers an exhaustive roundup of what they think future uses might be. It’s a [thread full of industry insider jargon](https://twitter.com/chriscantino/status/1542930648750608387)) but it’s indicative of a shift in focus from speculation to ‘building’ asthe market conditions change.
 				- {{twitter https://twitter.com/chriscantino/status/1542930648750608387)}}
 				- Some of the more interesting (less arcane)use cases identified in the thread are summarised very briefly below,again with comments as to how this might pertain to our metaverse applications.
@@ -612,13 +506,13 @@ public: true
 
   - #### Saving with it
 		- The Bitcoin community believes that [Bitcoin is the ultimate money](https://svetski.medium.com/why-bitcoin-not-shitcoin-6cc826f4fa52),a [‘store ofvalue’](https://www.coindesk.com/business/2022/01/07/jpmorgan-sees-more-crypto-adoption-in-2022-debates-bitcoins-status-as-store-of-value/),chance to [separate money fromstate](https://www.forbes.com/sites/leeorshimron/2020/06/30/bitcoin-is-the-separation-of-money-and-state/?sh=49294a8356db),increase [equality ofopportunity](https://www.washingtonpost.com/national/locked-out-of-traditional-financial-industry-more-people-of-color-are-turning-to-cryptocurrency/2021/12/01/a21df3fa-37fe-11ec-9bc4-86107e7b0ab1_story.html)and [ubiquity ofaccess](https://iai.tv/articles/the-rich-get-richer-the-poor-get-bitcoin-auid-1766),while others view it as [‘ratpoison’](https://www.cnbc.com/2021/06/22/a-third-of-investors-think-bitcoin-is-rat-poison-jpmorgan-survey-says.html),or a [fraudulent Ponzi scheme](https://jacobinmag.com/2022/01/cryptocurrency-scam-blockchain-bitcoin-economy-decentralization).[[ponzi2021alden]]A notable exclusion from the negative rhetoric is Fidelity, the global investment manager, who have always been positive and have [recentlysaid](https://www.fidelitydigitalassets.com/articles/bitcoin-first?sf253214177=1):it“Bitcoin is best understood as a monetary good, and one of the primary investment theses for bitcoin is as the store of value asset in an increasingly digital world.”
-		- The following paraphrases Eric Yakes, author of [‘The 7thProperty’](https://yakes.io/book/). Again, this is an Austrian economics perspective, and like much economic theory the underlying premise [iscontested](https://medium.datadriveninvestor.com/do-you-understand-the-austrian-vs-keynesian-economic-debate-2f4b152c6a6b)[[maurel2012keynesian]]:it“Paper became money because it was superior to gold in terms of divisibility and portability BUT it lacked scarcity. People reasoned that we could benefit from the greater divisibility/portability of paper money as long as it was redeemable in a form of money that was scarce. This is when money needed to be “backed” by something.  Since we changed money to paper money that wasn’t scarce, it needed to be backed by something that was. Since the repeal of the gold standard, politicians have retarded the meaning of the word because our money is no longer backed by something scarce.  So, what is bitcoin backed by? Nothing.  Sound money, like gold, isn’t “backed”. Only money that lacks inherent monetary properties must be backed by another money that maintains those properties. The idea that our base layer money needs to be backed by something is thinking from the era of paper money. Bitcoin does not require backing, it has inherent monetary properties superior to any other form of money that has ever existed.”
-		- The 2022 ARK Big Ideas report again provides some useful market insight. They posit that demand for the money features of Bitcoin could drive the price of the capped supply tokens to around 1M pounds per Bitcoin as inFigure<a href="#fig:BitcoinShareOfMoney" data-reference-type="ref" data-reference="fig:BitcoinShareOfMoney">4.5</a>.Take this with the usual pinch of salt, as Ark have been performing notably badly lately with their predictions.
+		- The following paraphrases Eric Yakes, author of [‘The 7thProperty’](https://yakes.io/book/). Again, this is an Austrian economics perspective, and like much economic theory the underlying premise [iscontested](https://medium.datadriveninvestor.com/do-you-understand-the-austrian-vs-keynesian-economic-debate-2f4b152c6a6b)[[maurel2012keynesian]]:it“Paper became money because it was superior to gold in terms of divisibility and portability BUT it lacked scarcity. People reasoned that we [private] benefit from the greater divisibility/portability of paper money as long as it was redeemable in a form of money that was scarce. This is when money needed to be “backed” by something.  Since we changed money to paper money that wasn’t scarce, it needed to be backed by something that was. Since the repeal of the gold standard, politicians have retarded the meaning of the word because our money is no longer backed by something scarce.  So, what is bitcoin backed by? Nothing.  Sound money, like gold, isn’t “backed”. Only money that lacks inherent monetary properties must be backed by another money that maintains those properties. The idea that our base layer money needs to be backed by something is thinking from the era of paper money. Bitcoin does not require backing, it has inherent monetary properties superior to any other form of money that has ever existed.”
+		- The 2022 ARK Big Ideas report again provides some useful market insight. They posit that demand for the money features of Bitcoin [private] drive the price of the capped supply tokens to around 1M pounds per Bitcoin as inFigure<a href="#fig:BitcoinShareOfMoney" data-reference-type="ref" data-reference="fig:BitcoinShareOfMoney">4.5</a>.Take this with the usual pinch of salt, as Ark have been performing notably badly lately with their predictions.
 		- ![](./assets/2d8ba8fa2b6d41395e8ef074ee3664d4a29df00e.jpg)
 		- Potential market exposure to Bitcoin as a money
 		- Perhaps more than any of these takes, it is worth considering the current public perception of the technology as a money and store of value. This [twitterthread](https://twitter.com/saquon/status/1480738426236375041) from professional sportsman Saquon Barkley, to his half million followers on the platform, captures the mood. He is one of a handful of athletes now being [paid directly](https://www.buybitcoinworldwide.com/athletes/) in Bitcoin.
 		- it“I want my career earnings to last generations. The average NFL career is 3 years and inflation is real. Saving and preserving money over time is hard, no matter who you are. In today’s world: How do we save? This is why I believe in bitcoin. Almost all professional athletes make the majority of their career earnings in their 20s. With a lack of education, inaccessible tools, and inflation, a sad yet common reality is many enter bankruptcy later on. We can do better. We need to improve financial literacy. Bitcoin is a proven, safe, global, and open system that allows anyone to save money. It is the most accessible asset we’ve ever seen.”
-		- This ubiquity of access is what probably most distinguishes Bitcoin. Previously it could be argued that only the most wealthy could access the ‘means’ to store their labour without loss of value over time(through inflation). To be clear, inflation is an important part of the money system, somewhat within the control of the central banks, and approximate to taxation. It applies equally to all holders of the moneys upply. Asserting that money should be replaced by a ‘hard asset’ such as Bitcoin, in the place of the more controllable utility of money, is likely both a fantasy, and wrong minded. This conflation of money and property is a confusion caused by Bitcoin’s proximity to money, and it’s‘ money like’ network, and is extremely commonplace.
+		- This ubiquity of access is what probably most distinguishes Bitcoin. Previously it [private] be argued that only the most wealthy [private] access the ‘means’ to store their labour without loss of value over time(through inflation). To be clear, inflation is an important part of the money system, somewhat within the control of the central banks, and approximate to taxation. It applies equally to all holders of the moneys upply. Asserting that money should be replaced by a ‘hard asset’ such as Bitcoin, in the place of the more controllable utility of money, is likely both a fantasy, and wrong minded. This conflation of money and property is a confusion caused by Bitcoin’s proximity to money, and it’s‘ money like’ network, and is extremely commonplace.
 		- These narrative takes are all rooted in the popular idea that Bitcoin isa ‘hedge against inflation’; an increasingly fragile take, as the price plummets with global markets. The Bitcoin community seems somewhat confused about the nature of money, which is predictable because we can see in these sections that money is pretty confusing. Money is the fluid, elastic,[[cagan1958demand]] and thin ‘working credit’ layer on top of historical human production, which provides transaction convenience, and tools for credit. Value is effectively swapped in and out of this layer through the actions of central banks, controlling inflation into acceptable margins. Simplistically this is done through manipulation of interest rates (the easiness of credit), quantitative easing (buying of assets) and quantitative tightening (selling of assets). To give a quick high level view of central bank activity we can use the PESTLE framework:
 			- Political:
 				- Government policies and regulations can impact central banks by influencing monetary policies.
@@ -641,7 +535,7 @@ public: true
 		- Fiat money is primarily it not a long term store of value, as Austrian economists perhaps believe it should be. This function is left to assets. The Austrian thesis of ‘hard money’ (which cannot be ‘debased’ by government action) seems somewhat naïve when one considers that credit exists anywhere in the world (ie, the creation of paper money through loans) then this would be used to buy up a hard money asset in the long run, causing a scarcity crisis. This is what happened to gold in the middle of the last century.
 		- Fundamentally, Bitcoin isn’t money (in the traditional sense) because it’s not an IOU, which money certainly is. It’s a bearer instrument, novel asset class, with money like properties, as identified above. As said again and again it functions most like a ‘property’ which can be invested in by anyone, with all the attendant risks of that property class to the holder. Lyn Alden says it sits [somewhere between](https://www.lynalden.com/what-is-money/) a saving tool, and an investment, acting as “programmable commodity money”.
 		- [Andrew M. Bailey](https://andrewmbailey.com/) says it“in an ideal worldwhere governments honour the rights of citizens, they don’t spy, they don’t prohibit transactions, they manage a sound money supply, and they make sound decisions, the value of bitcoin is very low; we’re just notin an ideal world”
-		- Another potentially important differentiating affordance is censorship resistance. There’s really nothing else like it for that one feature. With that said Bitcoin is only a viable ‘money like thing’ when viewed in the layers described in this book, [and elsewhere](https://giacomozucco.com/layers-before-bitcoin)[[Bhatia2021]].The base chain layer is an apex secure store of value. Whatever layer 2ultimately emerges is the transactional layer which could replace day today cash money, while the hypothetical layer 3 might be useful for complex financial mechanisms and contracts operating automatically, and also provides the opportunity for using the security model of the chain to support other digital assets, including government currencies through stable coins. All these things have a natural home in borderless social spaces.
+		- Another potentially important differentiating affordance is censorship resistance. There’s really nothing else like it for that one feature. With that said Bitcoin is only a viable ‘money like thing’ when viewed in the layers described in this book, [and elsewhere](https://giacomozucco.com/layers-before-bitcoin)[[Bhatia2021]].The base chain layer is an apex secure store of value. Whatever layer 2ultimately emerges is the transactional layer which [private] replace day today cash money, while the hypothetical layer 3 might be useful for complex financial mechanisms and contracts operating automatically, and also provides the opportunity for using the security model of the chain to support other digital assets, including government currencies through stable coins. All these things have a natural home in borderless social spaces.
 
   - ### Bitcoin's Role
   - **Store of Value**: Despite recent falls against the U.S. dollar, Bitcoin has maintained better value against the peso.
@@ -690,7 +584,7 @@ public: true
   - Crypto firms must be licensed by the EU and comply with money laundering and terrorism finance safeguards to serve EU customers
   - Concerns about weakened privacy due to reporting standards in the name of customer safety and national security
   - Binance CEO supports MiCA, calling it a pragmatic solution
-  - EU’s MiCA could become a global template for international companies
+  - EU’s MiCA [private] become a global template for international companies
   - UK, now outside the EU, is setting similar stablecoin and crypto asset service rules
   - Germany is bringing forward legislation allowing the ‘tokenisation’ oflegacy instruments such as stocks, though it’s far from clear what thevalue of this would be, except perhaps lowering risk for custodians. Itseems that this EU position has prompted the UK government to seize thepotential competitive advantage offered, and there will be more on thislater. Japan meanwhile has gone so far as to [make anannouncement](https://cointelegraph.com/news/japanese-prime-minister-says-gov-t-investment-in-digital-transformation-will-include-metaverse-nfts)about supporting the technologies at a national level.
   - It’s a complex evolving narrative, and clearly contradictions arecommon. Right now there seems little appeal for stepping into Web3. Intothe confusion, this book advances a narrow take, and toolset, whichmight extract some value from the technologies, while maintaining a lowbarrier to entry.
@@ -710,7 +604,7 @@ public: true
 					- Virtual worlds are a huge application for NFTs, and this seems like it would be a natural fit for our collaborative mixed reality application. In reality the $2B of sold so far is mostly ‘allocations’ in nascent ecosystems, being sold as highly speculative assets, without even a metaverse to use. The majority of that amount is the hyped ‘Otherland’ plots sold under the Bored Apes brand.
 					- “Full stack” luxury brands. [Nic Carter describes](https://medium.com/@nic__carter/redeem-and-retain-nfts-are-the-future-of-luxury-goods-760f00dbce23) a mating of physical and virtual luxury goods. His is a useful article on the future direction, and he has also [provided a primer on NFTs](https://medium.com/@nic__carter/why-nfts-are-hard-to-explain-48f0ab0a35bf). There are many such examples already, such as [Tiffanys ‘NFTiff’
 				- cryptopunks](https://nft.tiffany.com/faq/) collaboration which will automatically generate royalties for Tiffanys and parent company Louis Vitton in perpetuity. Such products prove provenance, create new aftermarket opportunities, and unlock metaverse applications.
-				- It is completely reasonable to assert that these use cases could be accomplished without the use of NFT technology, and is part of the hype bubble.
+				- It is completely reasonable to assert that these use cases [private] be accomplished without the use of NFT technology, and is part of the hype bubble.
 				- Twitter user Cantino.Eth offers an exhaustive roundup of what they think future uses might be. It’s a [thread full of industry insider jargon](https://twitter.com/chriscantino/status/1542930648750608387)) but it’s indicative of a shift in focus from speculation to ‘building’ asthe market conditions change.
 				- {{twitter https://twitter.com/chriscantino/status/1542930648750608387)}}
 				- Some of the more interesting (less arcane)use cases identified in the thread are summarised very briefly below,again with comments as to how this might pertain to our metaverse applications.
@@ -789,7 +683,7 @@ public: true
 		- Tech Companies' Role: Big tech firms initially claimed 100% renewable energy while relying heavily on fossil fuels, leading to credibility issues and increased demand for stable power sources.
 		- Offshore Wind vs. Nuclear: Offshore wind projects are generally more expensive (£140-£260 per megawatt hour) and do not provide the guaranteed power delivery that nuclear can, especially critical for large data centres.
 		- Reliability of Power Supply: Nuclear energy offers a more reliable power source compared to intermittent renewable sources, particularly for meeting peak demand.
-		- The successful restart of Three Mile Island could pave the way for new nuclear projects, leveraging existing sites and infrastructure.
+		- The successful restart of Three Mile Island [private] pave the way for new nuclear projects, leveraging existing sites and infrastructure.
   - The growth in AI seems to be shifting the narrative and reducing criticism around Bitcoin mining's energy use. As people realize AI's value, they accept that the energy use is justified, similar to Bitcoin.
   - Major banks like Morgan Stanley are now writing serious research reports on how Bitcoin miners are positioned to support AI's growth by providing much-needed power capacity. This validates the industry's maturity.
   - Time to accessing power is becoming the key constraint and source of value as demand for AI computing capacity far outstrips supply. Bitcoin miners with existing power access have a major advantage.
@@ -814,7 +708,7 @@ public: true
   The recent hype cycle ignored the legacy definitions described above and instead focusing almost exclusively on Ethereum based peer-to-peer projects. It can be seen that the description is somewhat in the eye of the beholder.
   It's possible to frame this Ethereum Web3 as a hugely complex and inefficient digital rights management system (DRM). DRM is something that users of the internet are increasingly familiar and comfortable with. It's somewhat debatable whether decentralising this is worthwhile. The thesis of the developers of the technology seems to be that without it, control of 'value' will accrete over time, to one or more hegemonic controlling entities. It's a strong argument, but there is a [substantial counter argument](https://moxie.org/2022/01/07/web3-first-impressions.html) emerging that users just don't want this stuff. The nervousness of legislators in the USA to the attempt by Facebook/Meta to enter this peer-to-peer value transmission space is telling in terms of the perception of who is driving Web3.
     Establish a clear vision to foster decentralized digital     infrastructure     Embrace multi-stakeholder approaches to governance and regulation     Create targeted, risk-calibrated oversight regimes for different     web3 activities     Foster innovation with composability, open source code, and the     power of open communities     Broaden access to the economic benefits of the innovation economy     Unlock the potential of DAOs     Deploy web3 to further sustainability goals     Embrace the role of well-regulated stablecoins in financial     inclusion and innovation     Collaborate with other nations to harmonize standards and regulatory     frameworks     Provide clear, fair tax rules for the reporting of digital assets,     and leverage technical solutions for tax compliance
-  This list seems targeted toward the coming regulatory landscape, and could be considered at odds with the original tenants of an organically emergent, decentralised internet. Indeed principles such as 'furthering sustainability goals' seem downright incongruous. The community they claim to wish to support here are openly critical of these major institutional players and their motives, with even more pointed criticisms [coming from outside of the Web3](https://www.profgalloway.com/web3/). This book and lab steer well clear of these companies and their applications.
+  This list seems targeted toward the coming regulatory landscape, and [private] be considered at odds with the original tenants of an organically emergent, decentralised internet. Indeed principles such as 'furthering sustainability goals' seem downright incongruous. The community they claim to wish to support here are openly critical of these major institutional players and their motives, with even more pointed criticisms [coming from outside of the Web3](https://www.profgalloway.com/web3/). This book and lab steer well clear of these companies and their applications.
   Dante Disparte, chief strategy officer of 'Circle' venture capital, said in testimony to a US senate hearing; that Web 1 was 'read', Web 2 was 'read write', and that Web 3 will 'read write own'. The important takeaway here is not so much this oft quoted elevator pitch for Web3, but the fact that legislative bodies now consider this technology a force which they need to be aware of and [potentially contend with](https://a16z.com/2021/12/17/prediction-for-the-new-year-a-web3-midterm/).
   It's a complex evolving narrative, and clearly contradictions are common. Right now there seems little appeal for stepping into Web3. Into the confusion, this book advances a narrow take, and toolset, which might extract some value from the technologies, while maintaining a low barrier to entry.
   It might be that the future of Web3 comes in the guise of integrated suites such as the proposed [Impervious web browser](https://newsletter.impervious.ai/impervious-browser-functionality-overview/). They say that "without centralized intermediaries" it features:
@@ -825,14 +719,14 @@ public: true
   - Ethereum faces a unique dilemma, often overshadowed by its technological capabilities. Unlike Bitcoin (BTC), which has solidified its role as a stable and reliable store of value, Ethereum’s value proposition is more complex and, ultimately, paradoxical. The following points elaborate on this conundrum:
 		- **Lack of Monetary Certainty:** Ethereum’s mutable supply schedule and governance model introduce a level of uncertainty not found in Bitcoin.
 		- **Scalability Trap:** Attempts to scale the platform and lower fees would, counterintuitively, reduce Ethereum’s intrinsic value by decreasing its future cash flows.
-  - This presents a catch-22 situation where Ethereum’s value is fundamentally limited by its own economic model. If the asset’s value drops significantly, it could undermine the security of the entire platform, making it less reliable for settling large transactions.
-  - In the long run, this creates a feedback loop that could, theoretically, push Ethereum’s value towards zero. This issue casts a shadow over Ethereum’s long-term viability, presenting a challenge that goes beyond mere technical scalability.
+  - This presents a catch-22 situation where Ethereum’s value is fundamentally limited by its own economic model. If the asset’s value drops significantly, it [private] undermine the security of the entire platform, making it less reliable for settling large transactions.
+  - In the long run, this creates a feedback loop that [private], theoretically, push Ethereum’s value towards zero. This issue casts a shadow over Ethereum’s long-term viability, presenting a challenge that goes beyond mere technical scalability.
 
   - ##### 2.3.1 Emerging consensus
   The recent hype cycle ignored the legacy definitions described above and instead focusing almost exclusively on Ethereum based peer-to-peer projects. It can be seen that the description is somewhat in the eye of the beholder.
   It's possible to frame this Ethereum Web3 as a hugely complex and inefficient digital rights management system (DRM). DRM is something that users of the internet are increasingly familiar and comfortable with. It's somewhat debatable whether decentralising this is worthwhile. The thesis of the developers of the technology seems to be that without it, control of 'value' will accrete over time, to one or more hegemonic controlling entities. It's a strong argument, but there is a [substantial counter argument](https://moxie.org/2022/01/07/web3-first-impressions.html) emerging that users just don't want this stuff. The nervousness of legislators in the USA to the attempt by Facebook/Meta to enter this peer-to-peer value transmission space is telling in terms of the perception of who is driving Web3.
     Establish a clear vision to foster decentralized digital     infrastructure     Embrace multi-stakeholder approaches to governance and regulation     Create targeted, risk-calibrated oversight regimes for different     web3 activities     Foster innovation with composability, open source code, and the     power of open communities     Broaden access to the economic benefits of the innovation economy     Unlock the potential of DAOs     Deploy web3 to further sustainability goals     Embrace the role of well-regulated stablecoins in financial     inclusion and innovation     Collaborate with other nations to harmonize standards and regulatory     frameworks     Provide clear, fair tax rules for the reporting of digital assets,     and leverage technical solutions for tax compliance
-  This list seems targeted toward the coming regulatory landscape, and could be considered at odds with the original tenants of an organically emergent, decentralised internet. Indeed principles such as 'furthering sustainability goals' seem downright incongruous. The community they claim to wish to support here are openly critical of these major institutional players and their motives, with even more pointed criticisms [coming from outside of the Web3](https://www.profgalloway.com/web3/). This book and lab steer well clear of these companies and their applications.
+  This list seems targeted toward the coming regulatory landscape, and [private] be considered at odds with the original tenants of an organically emergent, decentralised internet. Indeed principles such as 'furthering sustainability goals' seem downright incongruous. The community they claim to wish to support here are openly critical of these major institutional players and their motives, with even more pointed criticisms [coming from outside of the Web3](https://www.profgalloway.com/web3/). This book and lab steer well clear of these companies and their applications.
   Dante Disparte, chief strategy officer of 'Circle' venture capital, said in testimony to a US senate hearing; that Web 1 was 'read', Web 2 was 'read write', and that Web 3 will 'read write own'. The important takeaway here is not so much this oft quoted elevator pitch for Web3, but the fact that legislative bodies now consider this technology a force which they need to be aware of and [potentially contend with](https://a16z.com/2021/12/17/prediction-for-the-new-year-a-web3-midterm/).
   It's a complex evolving narrative, and clearly contradictions are common. Right now there seems little appeal for stepping into Web3. Into the confusion, this book advances a narrow take, and toolset, which might extract some value from the technologies, while maintaining a low barrier to entry.
 
@@ -849,7 +743,7 @@ public: true
 		- Potential market exposure to Bitcoin as a money
 		- Perhaps more than any of these takes, it is worth considering the current public perception of the technology as a money and store of value. This [twitterthread](https://twitter.com/saquon/status/1480738426236375041) from professional sportsman Saquon Barkley, to his half million followers on the platform, captures the mood. He is one of a handful of athletes now being [paid directly](https://www.buybitcoinworldwide.com/athletes/) in Bitcoin.
 		- it“I want my career earnings to last generations. The average NFL career is 3 years and inflation is real. Saving and preserving money over time is hard, no matter who you are. In today’s world: How do we save? This is why I believe in bitcoin. Almost all professional athletes make the majority of their career earnings in their 20s. With a lack of education, inaccessible tools, and inflation, a sad yet common reality is many enter bankruptcy later on. We can do better. We need to improve financial literacy. Bitcoin is a proven, safe, global, and open system that allows anyone to save money. It is the most accessible asset we’ve ever seen.”
-		- This ubiquity of access is what probably most distinguishes Bitcoin. Previously it could be argued that only the most wealthy could access the ‘means’ to store their labour without loss of value over time(through inflation). To be clear, inflation is an important part of the money system, somewhat within the control of the central banks, and approximate to taxation. It applies equally to all holders of the moneys upply. Asserting that money should be replaced by a ‘hard asset’ such as Bitcoin, in the place of the more controllable utility of money, is likely both a fantasy, and wrong minded. This conflation of money and property is a confusion caused by Bitcoin’s proximity to money, and it’s‘ money like’ network, and is extremely commonplace.
+		- This ubiquity of access is what probably most distinguishes Bitcoin. Previously it [private] be argued that only the most wealthy [private] access the ‘means’ to store their labour without loss of value over time(through inflation). To be clear, inflation is an important part of the money system, somewhat within the control of the central banks, and approximate to taxation. It applies equally to all holders of the moneys upply. Asserting that money should be replaced by a ‘hard asset’ such as Bitcoin, in the place of the more controllable utility of money, is likely both a fantasy, and wrong minded. This conflation of money and property is a confusion caused by Bitcoin’s proximity to money, and it’s‘ money like’ network, and is extremely commonplace.
 		- These narrative takes are all rooted in the popular idea that Bitcoin isa ‘hedge against inflation’; an increasingly fragile take, as the price plummets with global markets. The Bitcoin community seems somewhat confused about the nature of money, which is predictable because we can see in these sections that money is pretty confusing. Money is the fluid, elastic,[[cagan1958demand]] and thin ‘working credit’ layer on top of historical human production, which provides transaction convenience, and tools for credit. Value is effectively swapped in and out of this layer through the actions of central banks, controlling inflation into acceptable margins. Simplistically this is done through manipulation of interest rates (the easiness of credit), quantitative easing (buying of assets) and quantitative tightening (selling of assets). To give a quick high level view of central bank activity we can use the PESTLE framework:
 			- Political:
 				- Government policies and regulations can impact central banks by influencing monetary policies.

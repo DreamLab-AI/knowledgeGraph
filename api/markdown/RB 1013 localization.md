@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - RB-1013-localization
----
-
-# RB 1013 localization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -57,16 +50,34 @@ aliases:
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:localisation", "label": "Localization"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ]
   },
   "quality": 0.35,
@@ -77,32 +88,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-1013-localization:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:bc395d3d6a26821a7b36c0913acb30d0b726f55540c2bd649cc8f2ea9f06c55d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:owl:class:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - RB 1013 localization is a robotics navigation concept addressing the problem of a mobile robot determining its pose within a known or partially known environment. It encompasses probabilistic state estimation techniques such as particle filters, extended Kalman filters, and scan-matching algorithms applied to sensor data from LiDAR, wheel odometry, and IMUs to produce continuous pose estimates suitable for autonomous navigation.

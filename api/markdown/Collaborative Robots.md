@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collaborative Robots
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -94,57 +89,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:collaborative-robots:0e60ccbd3217",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c9ef3cc643fad069192124aee5b1affdc894716ab9cfff5535bc6d8a6f2c2b51"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Sensors]]",
-      "resolved": "urn:visionflow:linked:sensors",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Actuators]]",
-      "resolved": "urn:visionflow:linked:actuators",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Control Theory]]",
-      "resolved": "urn:visionflow:linked:control-theory",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Industrial Robotics]]",
-      "resolved": "urn:visionflow:linked:industrial-robotics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.iso.org/standard/62996.html]]",
-      "resolved": "urn:visionflow:linked:https-www-iso-org-standard-62996-html",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Cobot]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-cobot",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Collaborative robots, or cobots, are robots designed to work safely alongside humans within a shared workspace.

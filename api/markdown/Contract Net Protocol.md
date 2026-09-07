@@ -1,44 +1,122 @@
----
-public: true
----
-
-# Contract Net Protocol
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:contract-net-protocol", "@type":"Page", "title":"Contract Net Protocol", "vc:slug":"contract-net-protocol", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:contract-net-protocol",
+  "@type": "Page",
+  "title": "Contract Net Protocol",
+  "vc:slug": "contract-net-protocol",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:contract-net-protocol",
-  "@type":"Class",
-  "label":"Contract Net Protocol",
-  "definition":"The Contract Net Protocol is a task-sharing interaction pattern for multi-agent systems in which a manager agent announces a task, soliciting bids from potential contractor agents, evaluates the responses, and awards the task to the most suitable bidder. It decomposes distributed problem solving into the phases of announcement, bidding, awarding, and result reporting, treating the agent population as a market for negotiating the allocation of work. The protocol provides a decentralised mechanism for dynamic task allocation without a fixed assignment table.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"},{"@id":"urn:ngm:class:multi-agent-system","label":"Multi-Agent System"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-    "uses":[{"@id":"urn:ngm:class:agent","label":"Agent"}],
-    "requires":[{"@id":"urn:ngm:class:agent","label":"Agent"}],
-    "hasPart":[{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-    "enables":[{"@id":"urn:ngm:class:automation","label":"Automation"}],
-    "supports":[{"@id":"urn:ngm:class:decentralization","label":"Decentralization"}],
-    "dependsOn":[{"@id":"urn:ngm:class:agent","label":"Agent"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"},
-      {"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"},
-      {"@id":"urn:ngm:class:automation","label":"Automation"},
-      {"@id":"urn:ngm:class:decentralization","label":"Decentralization"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:contract-net-protocol",
+  "@type": "Class",
+  "label": "Contract Net Protocol",
+  "definition": "The Contract Net Protocol is a task-sharing interaction pattern for multi-agent systems in which a manager agent announces a task, soliciting bids from potential contractor agents, evaluates the responses, and awards the task to the most suitable bidder. It decomposes distributed problem solving into the phases of announcement, bidding, awarding, and result reporting, treating the agent population as a market for negotiating the allocation of work. The protocol provides a decentralised mechanism for dynamic task allocation without a fixed assignment table.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-system",
+      "label": "Multi-Agent System"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

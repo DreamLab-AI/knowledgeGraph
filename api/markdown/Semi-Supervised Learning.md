@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Semi-Supervised Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -78,37 +73,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:semi-supervised-learning:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f9b045e980ce49944f0781f6b1e091c69571a28d60dc254357ac0a642d455c48"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Data-Efficient Learning]]",
-      "resolved": "urn:visionflow:owl:class:data-efficient-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:owl:class:machine-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Semi-Supervised Learning is a concept within the ai domain.
 
@@ -123,7 +87,7 @@ public: true
 - ### Content
 
   ### Definition
-  Semi-supervised learning is a machine learning paradigm that combines small amounts of labeled data with large amounts of unlabeled data during training. It addresses the practical challenge that labeling data is expensive and time-consuming, while unlabeled data is abundant, by leveraging the structure and patterns in unlabeled data to improve model performance beyond what labeled data alone could achieve.
+  Semi-supervised learning is a machine learning paradigm that combines small amounts of labeled data with large amounts of unlabeled data during training. It addresses the practical challenge that labeling data is expensive and time-consuming, while unlabeled data is abundant, by leveraging the structure and patterns in unlabeled data to improve model performance beyond what labeled data alone [private] achieve.
 
   ### Core Assumptions
   **Smoothness Assumption:**

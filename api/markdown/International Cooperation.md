@@ -1,60 +1,124 @@
----
-public: true
----
-
-# International Cooperation
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:international-cooperation", "@type":"Page", "title":"International Cooperation", "vc:slug":"international-cooperation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:international-cooperation",
+  "@type": "Page",
+  "title": "International Cooperation",
+  "vc:slug": "international-cooperation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:international-cooperation",
-  "@type":"Class",
-  "label":"International Cooperation",
-  "definition":"International cooperation is the coordinated action of states, multilateral bodies and other actors to address shared challenges that no single jurisdiction can resolve alone. In technology governance it covers harmonised regulation, mutual recognition of standards, cross-border data arrangements and joint oversight of frontier capabilities. It relies on negotiated agreements, trust between parties and interoperable rules that align otherwise divergent national regimes.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:internet-governance","label":"Internet Governance"}],
-  "relations":{
-    "requires":[
-      {"@id":"urn:ngm:class:trust","label":"Trust"},
-      {"@id":"urn:ngm:class:interoperability","label":"Interoperability"},
-      {"@id":"urn:ngm:class:standards-body","label":"Standards Body"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:international-cooperation",
+  "@type": "Class",
+  "label": "International Cooperation",
+  "definition": "International cooperation is the coordinated action of states, multilateral bodies and other actors to address shared challenges that no single jurisdiction can resolve alone. In technology governance it covers harmonised regulation, mutual recognition of standards, cross-border data arrangements and joint oversight of frontier capabilities. It relies on negotiated agreements, trust between parties and interoperable rules that align otherwise divergent national regimes.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:internet-governance",
+      "label": "Internet Governance"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:regulation","label":"Regulation"},
-      {"@id":"urn:ngm:class:policy","label":"Policy"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:cross-border-data-transfer","label":"Cross-Border Data Transfer"},
-      {"@id":"urn:ngm:class:compute-governance","label":"Compute Governance"},
-      {"@id":"urn:ngm:class:ai-governance","label":"AI Governance"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:interoperability","label":"Interoperability"},
-      {"@id":"urn:ngm:class:cross-border-data-transfer","label":"Cross-Border Data Transfer"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:standards-body","label":"Standards Body"},
-      {"@id":"urn:ngm:class:policy","label":"Policy"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:data-sovereignty","label":"Data Sovereignty"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:governance","label":"Governance"},
-      {"@id":"urn:ngm:class:ai-governance","label":"AI Governance"},
-      {"@id":"urn:ngm:class:regulation","label":"Regulation"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:compute-governance","label":"Compute Governance"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

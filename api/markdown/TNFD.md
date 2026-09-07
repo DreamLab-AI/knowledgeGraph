@@ -1,8 +1,3 @@
----
-public: true
----
-
-# TNFD
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "The Taskforce on Nature-related Financial Disclosures (TNFD) is a global framework that guides organisations in assessing, reporting, and acting on nature- and biodiversity-related risks, dependencies, and impacts. Modelled on the climate-focused TCFD, it provides recommended disclosures structured around governance, strategy, risk management, and metrics so that capital can be redirected toward nature-positive outcomes.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ]
   },
   "quality": 0.72
 }

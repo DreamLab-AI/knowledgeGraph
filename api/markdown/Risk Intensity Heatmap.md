@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[heatmap]]
-# Risk Intensity Heatmap
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,43 +47,50 @@ elevatedFrom:: [[heatmap]]
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+      {
+        "@id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:visualization-layer", "label": "Visualization Layer"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:visualization-layer",
+        "label": "Visualization Layer"
+      }
     ]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:heatmap:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0d6e0b190399ae2e7283b092ca002aec75df4de41f77c334d49fe3aafd006bdd"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   A **heatmap** is a two-dimensional data visualisation in which cell colour encodes a quantitative value, enabling rapid comparison of magnitudes across two categorical axes. In the AI risk domain, heatmaps plot risk categories (Security Risks, Algorithmic Bias, Job Automation, AI Ethics, etc.) against metrics (Urgency, Impact, Severity) to produce a composite risk landscape. The Vega-Lite rendering embedded in this page uses a "blues" colour scheme with a domain of 40–100 and manually ranked severity scores per category.

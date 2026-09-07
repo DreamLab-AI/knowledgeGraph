@@ -1,53 +1,108 @@
----
-public: true
----
-
-# Security Monitoring
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:security-monitoring", "@type":"Page", "title":"Security Monitoring", "vc:slug":"security-monitoring", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:security-monitoring",
+  "@type": "Page",
+  "title": "Security Monitoring",
+  "vc:slug": "security-monitoring",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:security-monitoring",
-  "@type":"Class",
-  "label":"Security Monitoring",
-  "definition":"Security monitoring is the continuous collection, correlation and analysis of telemetry from systems, networks and applications to detect indicators of compromise and policy violations. It feeds detection rules, baselines and analytics that surface suspicious behaviour for investigation and response. As a discipline it spans log aggregation, intrusion detection, threat intelligence enrichment and alerting, and is a core function of a security operations centre.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:threat-detection","label":"Threat Detection"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:siem","label":"SIEM"},
-      {"@id":"urn:ngm:class:logging","label":"Logging"},
-      {"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:security-monitoring",
+  "@type": "Class",
+  "label": "Security Monitoring",
+  "definition": "Security monitoring is the continuous collection, correlation and analysis of telemetry from systems, networks and applications to detect indicators of compromise and policy violations. It feeds detection rules, baselines and analytics that surface suspicious behaviour for investigation and response. As a discipline it spans log aggregation, intrusion detection, threat intelligence enrichment and alerting, and is a core function of a security operations centre.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:threat-detection",
+      "label": "Threat Detection"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "@id": "urn:ngm:class:logging",
+        "label": "Logging"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:observability","label":"Observability"},
-      {"@id":"urn:ngm:class:metrics-collection","label":"Metrics Collection"},
-      {"@id":"urn:ngm:class:audit-logging","label":"Audit Logging"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:metrics-collection",
+        "label": "Metrics Collection"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:incident-response","label":"Incident Response"},
-      {"@id":"urn:ngm:class:threat-detection","label":"Threat Detection"},
-      {"@id":"urn:ngm:class:vulnerability-management","label":"Vulnerability Management"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:security-operations-centre","label":"Security Operations Centre"},
-      {"@id":"urn:ngm:class:threat-intelligence","label":"Threat Intelligence"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:security-operations-centre",
+        "label": "Security Operations Centre"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:intrusion-detection","label":"Intrusion Detection"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:alerting","label":"Alerting"},
-      {"@id":"urn:ngm:class:defense-in-depth","label":"Defense In Depth"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "@id": "urn:ngm:class:defense-in-depth",
+        "label": "Defense In Depth"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

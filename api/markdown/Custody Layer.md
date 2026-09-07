@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Custody Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -104,62 +99,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:custody-layer:59f00dd3cd7d",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5af2eeb12c0d58fb6091a9aa0385c90b5577d1c58d280d8b142d4a3298b5c476"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptographic Layer]]",
-      "resolved": "urn:visionflow:linked:cryptographic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Identity Layer]]",
-      "resolved": "urn:visionflow:linked:identity-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Settlement Layer]]",
-      "resolved": "urn:visionflow:linked:settlement-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Application Layer]]",
-      "resolved": "urn:visionflow:linked:application-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Signature]]",
-      "resolved": "urn:visionflow:linked:multi-signature",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Key Management]]",
-      "resolved": "urn:visionflow:linked:key-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[owl:Thing]]",
-      "resolved": "urn:visionflow:linked:owl-thing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The Custody Layer is the stratum that governs the safekeeping and authorised control of assets and the keys that command them. It sits above the Cryptographic and Identity strata it depends on and below the settlement and application activity that moves assets. It contains key storage, signing policies, and the authorisation rules for asset control.

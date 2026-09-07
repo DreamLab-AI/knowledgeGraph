@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Centralised Finance
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

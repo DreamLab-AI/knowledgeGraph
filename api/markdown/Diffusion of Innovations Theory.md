@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Diffusion of Innovations Theory
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Diffusion of Innovations Theory, formulated by Everett Rogers, explains how, why, and at what rate new ideas and technologies spread through a social system over time. It segments adopters into innovators, early adopters, early majority, late majority, and laggards, and identifies perceived attributes such as relative advantage, compatibility, and trialability that govern uptake. It provides the analytical lens for understanding and forecasting technology adoption curves.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:adoption-of-convergent-technologies", "label": "Adoption of Convergent Technologies"},
-      {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}
+      {
+        "@id": "urn:ngm:class:adoption-of-convergent-technologies",
+        "label": "Adoption of Convergent Technologies"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
     ]
   },
   "quality": 0.72

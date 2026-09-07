@@ -1,59 +1,114 @@
----
-public: true
----
-
-# Pseudorandom Function
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:pseudorandom-function", "@type":"Page", "title":"Pseudorandom Function", "vc:slug":"pseudorandom-function", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:pseudorandom-function",
+  "@type": "Page",
+  "title": "Pseudorandom Function",
+  "vc:slug": "pseudorandom-function",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:pseudorandom-function",
-  "@type":"Class",
-  "label":"Pseudorandom Function",
-  "definition":"A pseudorandom function (PRF) is a keyed family of functions whose outputs are computationally indistinguishable from those of a truly random function to any adversary lacking the key. PRFs are a foundational primitive in modern cryptography, providing the security guarantee that underlies message authentication codes, key derivation, and many symmetric protocols. Given the same key and input a PRF is deterministic, yet without the key its outputs reveal no exploitable structure. Closely related is the pseudorandom permutation, which adds invertibility and models block ciphers.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:security","label":"Security"}],
-  "relations":{
-    "enables":[
-      {"@id":"urn:ngm:class:message-authentication-code","label":"Message Authentication Code"},
-      {"@id":"urn:ngm:class:key-derivation-function","label":"Key Derivation Function"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pseudorandom-function",
+  "@type": "Class",
+  "label": "Pseudorandom Function",
+  "definition": "A pseudorandom function (PRF) is a keyed family of functions whose outputs are computationally indistinguishable from those of a truly random function to any adversary lacking the key. PRFs are a foundational primitive in modern cryptography, providing the security guarantee that underlies message authentication codes, key derivation, and many symmetric protocols. Given the same key and input a PRF is deterministic, yet without the key its outputs reveal no exploitable structure. Closely related is the pseudorandom permutation, which adds invertibility and models block ciphers.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:hmac","label":"HMAC"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"},
-      {"@id":"urn:ngm:class:random-number-generation","label":"Random Number Generation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:symmetric-encryption","label":"Symmetric Encryption"},
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:entropy","label":"Entropy"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:security","label":"Security"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"},
-      {"@id":"urn:ngm:class:symmetric-encryption","label":"Symmetric Encryption"},
-      {"@id":"urn:ngm:class:zero-knowledge-proof","label":"Zero-Knowledge Proof"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:key-derivation-function","label":"Key Derivation Function"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# CRM Systems
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "CRM systems are software platforms that centralise the management of an organisation's interactions with current and prospective customers across sales, marketing, and service. They store contact records, track pipelines and tickets, automate outreach, and increasingly embed AI for summarisation and recommendation. They are core operational systems for revenue and customer-experience teams.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:crm", "label": "CRM"}, {"@id": "urn:ngm:class:meeting-ai-assistant", "label": "Meeting AI Assistant"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:crm",
+        "label": "CRM"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      }
+    ]
   },
   "quality": 0.72
 }

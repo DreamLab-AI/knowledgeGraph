@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Infrastructure As A Service
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:infrastructure-as-a-service", "@type":"Page", "title":"Infrastructure As A Service", "vc:slug":"infrastructure-as-a-service", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:infrastructure-as-a-service",
+  "@type": "Page",
+  "title": "Infrastructure As A Service",
+  "vc:slug": "infrastructure-as-a-service",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
@@ -17,42 +20,104 @@ public: true
   "definition": "Infrastructure as a Service (IaaS) is a cloud computing service model in which a provider delivers virtualised computing resources — including virtual machines, storage, networking, and bare-metal servers — over the internet on a pay-per-use basis, while the customer manages the operating system, middleware, and applications. IaaS abstracts away physical hardware procurement and data centre operations, enabling organisations to provision and de-provision compute capacity elastically. Major IaaS providers include Amazon Web Services (EC2/S3), Microsoft Azure (Virtual Machines), and Google Cloud Platform (Compute Engine).",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"},
-      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"},
-      {"@id": "urn:ngm:class:virtual-networking", "label": "Virtual Networking"}
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-networking",
+        "label": "Virtual Networking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:scalability", "label": "Scalability"},
-      {"@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:platform-as-a-service", "label": "Platform As A Service"},
-      {"@id": "urn:ngm:class:software-as-a-service", "label": "Software As A Service"},
-      {"@id": "urn:ngm:class:on-premises", "label": "On-Premises"}
+      {
+        "@id": "urn:ngm:class:platform-as-a-service",
+        "label": "Platform As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:software-as-a-service",
+        "label": "Software As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:on-premises",
+        "label": "On-Premises"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualisation"},
-      {"@id": "urn:ngm:class:hypervisor", "label": "Hypervisor"},
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"}
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "@id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"}
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:multi-cloud", "label": "Multi-Cloud"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:multi-cloud",
+        "label": "Multi-Cloud"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:api", "label": "API"},
-      {"@id": "urn:ngm:class:automation", "label": "Automation"}
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
     ]
   },
   "quality": 0.62,

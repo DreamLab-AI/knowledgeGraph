@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Open Protocol",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:protocol", "vc:label": "Protocol"},
-    {"@id": "urn:visionflow:linked:interoperability", "vc:label": "Interoperability"},
-    {"@id": "urn:visionflow:linked:nostr", "vc:label": "Nostr"},
-    {"@id": "urn:visionflow:linked:farcaster", "vc:label": "Farcaster"}
+    {
+      "@id": "urn:visionflow:linked:protocol",
+      "vc:label": "Protocol"
+    },
+    {
+      "@id": "urn:visionflow:linked:interoperability",
+      "vc:label": "Interoperability"
+    },
+    {
+      "@id": "urn:visionflow:linked:nostr",
+      "vc:label": "Nostr"
+    },
+    {
+      "@id": "urn:visionflow:linked:farcaster",
+      "vc:label": "Farcaster"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,16 +50,34 @@ public: true
   },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nostr", "label": "Nostr"},
-      {"@id": "urn:ngm:class:farcaster", "label": "Farcaster"},
-      {"@id": "urn:ngm:class:decentralisation", "label": "Decentralisation"}
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "@id": "urn:ngm:class:farcaster",
+        "label": "Farcaster"
+      },
+      {
+        "@id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      }
     ]
   },
   "quality": 0.8,

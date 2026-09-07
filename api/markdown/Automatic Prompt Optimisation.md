@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Automatic Prompt Optimisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,51 +7,186 @@ public: true
   "title": "Automatic Prompt Optimisation",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:algorithm-layer", "vc:label": "AlgorithmLayer"},
-    {"@id": "urn:visionflow:linked:application-layer", "vc:label": "ApplicationLayer"},
-    {"@id": "urn:visionflow:linked:ai-grounded-domain", "vc:label": "AI-GroundedDomain"},
-    {"@id": "urn:visionflow:linked:nlp-domain", "vc:label": "NLPDomain"},
-    {"@id": "urn:visionflow:owl:class:prompt-engineering", "vc:label": "Prompt Engineering"},
-    {"@id": "urn:visionflow:owl:class:large-language-models", "vc:label": "Large Language Models"},
-    {"@id": "urn:visionflow:owl:class:in-context-learning", "vc:label": "In-Context Learning"},
-    {"@id": "urn:visionflow:owl:class:few-shot-prompting", "vc:label": "Few-Shot Prompting"},
-    {"@id": "urn:visionflow:owl:class:chain-of-thought", "vc:label": "Chain of Thought"},
-    {"@id": "urn:visionflow:owl:class:dspy", "vc:label": "DSPy"},
-    {"@id": "urn:visionflow:owl:class:reinforcement-learning", "vc:label": "Reinforcement Learning"},
-    {"@id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards", "vc:label": "Evaluation Benchmarks and Leaderboards"},
-    {"@id": "urn:visionflow:owl:class:retrieval-augmented-generation", "vc:label": "Retrieval Augmented Generation"},
-    {"@id": "urn:visionflow:owl:class:agents", "vc:label": "Agents"},
-    {"@id": "urn:visionflow:owl:class:natural-language-processing", "vc:label": "Natural Language Processing"},
-    {"@id": "urn:visionflow:owl:class:machine-learning", "vc:label": "Machine Learning"},
-    {"@id": "urn:visionflow:owl:class:transformer-architecture", "vc:label": "Transformer Architecture"},
-    {"@id": "urn:visionflow:owl:class:training-and-fine-tuning", "vc:label": "Training and Fine Tuning"},
-    {"@id": "urn:visionflow:owl:class:instruction-following", "vc:label": "Instruction Following"},
-    {"@id": "urn:visionflow:owl:class:model-optimisation-and-performance", "vc:label": "Model Optimisation and Performance"},
-    {"@id": "urn:visionflow:linked:zhou-et-al-2022-ape", "vc:label": "Zhou et al. 2022 APE"},
-    {"@id": "urn:visionflow:linked:khattab-et-al-2024-dspy", "vc:label": "Khattab et al. 2024 DSPy"},
-    {"@id": "urn:visionflow:linked:yang-et-al-2024-opro", "vc:label": "Yang et al. 2024 OPRO"},
-    {"@id": "urn:visionflow:linked:fernando-et-al-2023-prompt-breeder", "vc:label": "Fernando et al. 2023 PromptBreeder"},
-    {"@id": "urn:visionflow:linked:pryzant-et-al-2023-protegi", "vc:label": "Pryzant et al. 2023 ProTeGi"},
-    {"@id": "urn:visionflow:linked:yuksekgonul-et-al-2024-textgrad", "vc:label": "Yuksekgonul et al. 2024 TextGrad"},
-    {"@id": "urn:visionflow:linked:soft-prompt-tuning", "vc:label": "Soft Prompt Tuning"},
-    {"@id": "urn:visionflow:linked:prefix-tuning", "vc:label": "Prefix Tuning"},
-    {"@id": "urn:visionflow:linked:active-learning", "vc:label": "Active Learning"},
-    {"@id": "urn:visionflow:linked:bayesian-optimisation", "vc:label": "Bayesian Optimisation"},
-    {"@id": "urn:visionflow:linked:evolutionary-algorithms", "vc:label": "Evolutionary Algorithms"},
-    {"@id": "urn:visionflow:linked:meta-learning", "vc:label": "Meta-Learning"},
-    {"@id": "urn:visionflow:linked:zero-shot-prompting", "vc:label": "Zero-Shot Prompting"},
-    {"@id": "urn:visionflow:linked:self-consistency", "vc:label": "Self-Consistency"},
-    {"@id": "urn:visionflow:linked:tree-of-thoughts", "vc:label": "Tree of Thoughts"},
-    {"@id": "urn:visionflow:linked:re-act", "vc:label": "ReAct"},
-    {"@id": "urn:visionflow:linked:code-generation", "vc:label": "Code Generation"},
-    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
-    {"@id": "urn:visionflow:linked:structured-output", "vc:label": "Structured Output"},
-    {"@id": "urn:visionflow:linked:lang-chain", "vc:label": "LangChain"},
-    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
-    {"@id": "urn:visionflow:linked:context-window", "vc:label": "Context Window"},
-    {"@id": "urn:visionflow:linked:hallucination", "vc:label": "Hallucination"},
-    {"@id": "urn:visionflow:linked:bias-in-large-language-models", "vc:label": "Bias in Large Language Models"},
-    {"@id": "urn:visionflow:linked:reasoning", "vc:label": "Reasoning"}
+    {
+      "@id": "urn:visionflow:linked:algorithm-layer",
+      "vc:label": "AlgorithmLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:application-layer",
+      "vc:label": "ApplicationLayer"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-grounded-domain",
+      "vc:label": "AI-GroundedDomain"
+    },
+    {
+      "@id": "urn:visionflow:linked:nlp-domain",
+      "vc:label": "NLPDomain"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:prompt-engineering",
+      "vc:label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:large-language-models",
+      "vc:label": "Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:in-context-learning",
+      "vc:label": "In-Context Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:few-shot-prompting",
+      "vc:label": "Few-Shot Prompting"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:chain-of-thought",
+      "vc:label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:dspy",
+      "vc:label": "DSPy"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:reinforcement-learning",
+      "vc:label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
+      "vc:label": "Evaluation Benchmarks and Leaderboards"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation",
+      "vc:label": "Retrieval Augmented Generation"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:agents",
+      "vc:label": "Agents"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:natural-language-processing",
+      "vc:label": "Natural Language Processing"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:machine-learning",
+      "vc:label": "Machine Learning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:transformer-architecture",
+      "vc:label": "Transformer Architecture"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:training-and-fine-tuning",
+      "vc:label": "Training and Fine Tuning"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:instruction-following",
+      "vc:label": "Instruction Following"
+    },
+    {
+      "@id": "urn:visionflow:owl:class:model-optimisation-and-performance",
+      "vc:label": "Model Optimisation and Performance"
+    },
+    {
+      "@id": "urn:visionflow:linked:zhou-et-al-2022-ape",
+      "vc:label": "Zhou et al. 2022 APE"
+    },
+    {
+      "@id": "urn:visionflow:linked:khattab-et-al-2024-dspy",
+      "vc:label": "Khattab et al. 2024 DSPy"
+    },
+    {
+      "@id": "urn:visionflow:linked:yang-et-al-2024-opro",
+      "vc:label": "Yang et al. 2024 OPRO"
+    },
+    {
+      "@id": "urn:visionflow:linked:fernando-et-al-2023-prompt-breeder",
+      "vc:label": "Fernando et al. 2023 PromptBreeder"
+    },
+    {
+      "@id": "urn:visionflow:linked:pryzant-et-al-2023-protegi",
+      "vc:label": "Pryzant et al. 2023 ProTeGi"
+    },
+    {
+      "@id": "urn:visionflow:linked:yuksekgonul-et-al-2024-textgrad",
+      "vc:label": "Yuksekgonul et al. 2024 TextGrad"
+    },
+    {
+      "@id": "urn:visionflow:linked:soft-prompt-tuning",
+      "vc:label": "Soft Prompt Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:prefix-tuning",
+      "vc:label": "Prefix Tuning"
+    },
+    {
+      "@id": "urn:visionflow:linked:active-learning",
+      "vc:label": "Active Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:bayesian-optimisation",
+      "vc:label": "Bayesian Optimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:evolutionary-algorithms",
+      "vc:label": "Evolutionary Algorithms"
+    },
+    {
+      "@id": "urn:visionflow:linked:meta-learning",
+      "vc:label": "Meta-Learning"
+    },
+    {
+      "@id": "urn:visionflow:linked:zero-shot-prompting",
+      "vc:label": "Zero-Shot Prompting"
+    },
+    {
+      "@id": "urn:visionflow:linked:self-consistency",
+      "vc:label": "Self-Consistency"
+    },
+    {
+      "@id": "urn:visionflow:linked:tree-of-thoughts",
+      "vc:label": "Tree of Thoughts"
+    },
+    {
+      "@id": "urn:visionflow:linked:re-act",
+      "vc:label": "ReAct"
+    },
+    {
+      "@id": "urn:visionflow:linked:code-generation",
+      "vc:label": "Code Generation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-alignment",
+      "vc:label": "AI Alignment"
+    },
+    {
+      "@id": "urn:visionflow:linked:structured-output",
+      "vc:label": "Structured Output"
+    },
+    {
+      "@id": "urn:visionflow:linked:lang-chain",
+      "vc:label": "LangChain"
+    },
+    {
+      "@id": "urn:visionflow:linked:tool-use",
+      "vc:label": "Tool Use"
+    },
+    {
+      "@id": "urn:visionflow:linked:context-window",
+      "vc:label": "Context Window"
+    },
+    {
+      "@id": "urn:visionflow:linked:hallucination",
+      "vc:label": "Hallucination"
+    },
+    {
+      "@id": "urn:visionflow:linked:bias-in-large-language-models",
+      "vc:label": "Bias in Large Language Models"
+    },
+    {
+      "@id": "urn:visionflow:linked:reasoning",
+      "vc:label": "Reasoning"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -72,50 +202,143 @@ public: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"},
-    {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-    {"@id": "urn:ngm:class:model-optimisation-and-performance", "label": "Model Optimisation and Performance"}
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "@id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "@id": "urn:ngm:class:model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ape", "label": "Automatic Prompt Engineering"},
-      {"@id": "urn:ngm:class:dspy", "label": "DSPy"},
-      {"@id": "urn:ngm:class:opro", "label": "OPRO"},
-      {"@id": "urn:ngm:class:protegi", "label": "ProTeGi"},
-      {"@id": "urn:ngm:class:textgrad", "label": "TextGrad"},
-      {"@id": "urn:ngm:class:prompt-breeder", "label": "PromptBreeder"},
-      {"@id": "urn:ngm:class:soft-prompt-tuning", "label": "Soft Prompt Tuning"},
-      {"@id": "urn:ngm:class:prefix-tuning", "label": "Prefix Tuning"}
+      {
+        "@id": "urn:ngm:class:ape",
+        "label": "Automatic Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:dspy",
+        "label": "DSPy"
+      },
+      {
+        "@id": "urn:ngm:class:opro",
+        "label": "OPRO"
+      },
+      {
+        "@id": "urn:ngm:class:protegi",
+        "label": "ProTeGi"
+      },
+      {
+        "@id": "urn:ngm:class:textgrad",
+        "label": "TextGrad"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-breeder",
+        "label": "PromptBreeder"
+      },
+      {
+        "@id": "urn:ngm:class:soft-prompt-tuning",
+        "label": "Soft Prompt Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation Benchmarks"},
-      {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
-      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agents", "label": "Agents"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval Augmented Generation"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:structured-output", "label": "Structured Output"}
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithms"},
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
-      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few-Shot Prompting"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:training-and-fine-tuning", "label": "Training and Fine Tuning"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:hallucination", "label": "Hallucination"},
-      {"@id": "urn:ngm:class:bias-in-large-language-models", "label": "Bias in Large Language Models"}
+      {
+        "@id": "urn:ngm:class:training-and-fine-tuning",
+        "label": "Training and Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:hallucination",
+        "label": "Hallucination"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      }
     ]
   },
   "quality": 0.87,
@@ -310,7 +533,7 @@ public: true
 
   ## Academic Context
 
-  The intellectual lineage of APO connects to classical black-box optimisation, [[Active Learning]], and [[Meta-Learning]]. The connection to [[Reinforcement Learning]] is structural: the scoring function acts as a reward signal, the candidate proposer is an implicit policy, and the iterative search mirrors policy gradient optimisation over a discrete action space (the vocabulary of the LLM). In the RL framework, the state is the current prompt text, the action is the next token appended or substituted, and the reward is the downstream task performance. This framing suggests policy gradient methods such as REINFORCE could be applied directly to optimise discrete prompts, and several papers (2023–2025) have explored this connection, though the sparse reward signal (only available after full prompt evaluation on the dev set) makes sample efficiency poor relative to LLM-guided search.
+  The intellectual lineage of APO connects to classical black-box optimisation, [[Active Learning]], and [[Meta-Learning]]. The connection to [[Reinforcement Learning]] is structural: the scoring function acts as a reward signal, the candidate proposer is an implicit policy, and the iterative search mirrors policy gradient optimisation over a discrete action space (the vocabulary of the LLM). In the RL framework, the state is the current prompt text, the action is the next token appended or substituted, and the reward is the downstream task performance. This framing suggests policy gradient methods such as REINFORCE [private] be applied directly to optimise discrete prompts, and several papers (2023–2025) have explored this connection, though the sparse reward signal (only available after full prompt evaluation on the dev set) makes sample efficiency poor relative to LLM-guided search.
 
   The connection to [[Meta-Learning]] is even tighter: APO is learning-to-prompt, an instance of learning the learning algorithm — specifically, how to specify a task to a general-purpose neural network via its input interface. Under the MAML (Model-Agnostic Meta-Learning) analogy, the outer loop learns the prompt and the inner loop is the LLM's in-context adaptation to that prompt. Unlike MAML, the "inner loop" (LLM inference) is not differentiable via the standard chain rule, necessitating the approximate gradient techniques (ProTeGi critiques, TextGrad pseudo-gradients, DSPy bootstrapping) that characterise APO. The deep connection to [[In-Context Learning]] theory is equally important: Min et al. (2022) showed that the labels in few-shot demonstrations matter less than their format and domain — meaning APO's optimisation of instruction format and demonstration selection is targeting the variables that matter most for in-context generalisation.
 

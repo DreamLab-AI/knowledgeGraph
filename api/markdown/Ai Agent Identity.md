@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Ai Agent Identity
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

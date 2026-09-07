@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agent Ecosystem
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "agent-ecosystem",
   "title": "Agent Ecosystem",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Integrated AI Strategy System", "Themed AI Agents"],
+  "vc:outboundWikilinks": [
+    "Integrated AI Strategy System",
+    "Themed AI Agents"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:agents", "label": "Agents"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agents",
+      "label": "Agents"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:agents", "label": "Agents"}, {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

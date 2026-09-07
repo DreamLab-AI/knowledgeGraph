@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Content Overlay
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -115,72 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-content-overlay:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:a7e15b7bb3d5d4c9fa7c3323bcfde3f1367827a42ff550ee1157bc4f699b291f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Camera Systems]]",
-      "resolved": "urn:visionflow:linked:camera-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Information Display]]",
-      "resolved": "urn:visionflow:linked:information-display",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Interactive Guidance]]",
-      "resolved": "urn:visionflow:linked:interactive-guidance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Input]]",
-      "resolved": "urn:visionflow:linked:sensor-input",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SLAM Technology]]",
-      "resolved": "urn:visionflow:linked:slam-technology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Spatial Annotation]]",
-      "resolved": "urn:visionflow:linked:spatial-annotation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Augmented Reality]]",
-      "resolved": "urn:visionflow:owl:class:augmented-reality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Display Hardware]]",
-      "resolved": "urn:visionflow:owl:class:display-hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The real-time integration and superimposition of digital information, graphics, 3D models, and interactive elements onto a user's view of the physical world through augmented reality displays, achieving a blended experience that enriches perception of reality.

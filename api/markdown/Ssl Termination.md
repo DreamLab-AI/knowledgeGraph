@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Ssl Termination
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:ssl-termination", "@type":"Page", "title":"Ssl Termination", "vc:slug":"ssl-termination", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:ssl-termination",
+  "@type": "Page",
+  "title": "Ssl Termination",
+  "vc:slug": "ssl-termination",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -102,6 +107,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - SSL termination decrypts inbound [[Transport Layer Security]] traffic at a [[Reverse Proxy]] or [[Load Balancer]] edge, offloading [[Cryptography]] from backends and centralising certificate management. It is the entry point that enables [[HTTPS]] while simplifying [[Network Security]] administration.
 - ### Overview

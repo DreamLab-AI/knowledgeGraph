@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - VotingMechanism
----
-
-# voting mechanism
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

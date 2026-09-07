@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0053 force control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,17 +55,38 @@ public: true
   "quality": 0.7,
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rb-0067-force-torque-sensor", "label": "rb 0067 force torque sensor"},
-      {"@id": "urn:ngm:class:rb-0047-feedback-control", "label": "rb 0047 feedback control"}
+      {
+        "@id": "urn:ngm:class:rb-0067-force-torque-sensor",
+        "label": "rb 0067 force torque sensor"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0047-feedback-control",
+        "label": "rb 0047 feedback control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"},
-      {"@id": "urn:ngm:class:rb-0057-admittance-control", "label": "rb 0057 admittance control"},
-      {"@id": "urn:ngm:class:rb-0038-compliance", "label": "rb 0038 compliance"},
-      {"@id": "urn:ngm:class:rb-0094-power-and-force-limiting", "label": "rb 0094 power and force limiting"}
+      {
+        "@id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0057-admittance-control",
+        "label": "rb 0057 admittance control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0038-compliance",
+        "label": "rb 0038 compliance"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
+        "label": "rb 0094 power and force limiting"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0054-position-control", "label": "rb 0054 position control"}
+      {
+        "@id": "urn:ngm:class:rb-0054-position-control",
+        "label": "rb 0054 position control"
+      }
     ]
   },
   "provenance": {
@@ -80,32 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0053-force-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c4341fd22fdf05c75002007772dfc944d34bdd49582193414a062c7080c46c4f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Force control is a robot control paradigm that regulates the contact force between the end-effector and the environment rather than tracking a pure position trajectory. By reading a force-torque sensor in real time, the controller can adapt the robot's motion to maintain a desired interaction force, making it suitable for tasks where the geometry of the environment is uncertain or deformable — such as polishing, grinding, assembly insertion, and collaborative handover. The three principal architectures are hybrid position/force control, impedance control, and admittance control.

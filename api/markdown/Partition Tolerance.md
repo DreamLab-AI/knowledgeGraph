@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Partition Tolerance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,7 +108,7 @@ public: true
 
   ## Current Landscape
 
-  - Jepsen continues to find partition-related safety failures in current systems: its analysis of NATS 2.12.1 (December 2025) showed the JetStream subsystem could lose acknowledged messages or enter persistent split-brain when node failures combined with network partitions, worsened by an fsync-once-every-two-minutes default.
+  - Jepsen continues to find partition-related safety failures in current systems: its analysis of NATS 2.12.1 (December 2025) showed the JetStream subsystem [private] lose acknowledged messages or enter persistent split-brain when node failures combined with network partitions, worsened by an fsync-once-every-two-minutes default.
   - The March 2026 MariaDB Galera Cluster analysis (versions 12.1.2–12.2.2) found committed transactions lost under process crashes and network partitions, and that the cluster fails to meet its claimed isolation level even without faults.
   - The pattern is consistent across the corpus: divergence and data loss during partitions typically trace to weak durability defaults (delayed fsync) interacting with the partition, not to the consensus core itself — reinforcing that partition tolerance is an end-to-end property spanning replication and disk-flush policy.
   - Amazon RDS for PostgreSQL (April 2025, v17.4) was found to exhibit Long Fork at "Repeatable Read", illustrating that even managed, mature engines expose partition- and concurrency-related anomalies under Jepsen's Elle checker.

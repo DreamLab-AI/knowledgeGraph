@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metaverse Venue
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -74,42 +69,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-venue:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c411e63e6a07316ab62d5e909bb56a30e850574003eb09981484096df22b90e5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Global Virtual Gatherings]]",
-      "resolved": "urn:visionflow:linked:global-virtual-gatherings",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Environment]]",
-      "resolved": "urn:visionflow:owl:class:virtual-environment",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Virtual 3D spaces within metaverse platforms designed to host events, conferences, exhibitions, and social gatherings, enabling global participation through customisable avatars and interactive environments that transcend physical location constraints.

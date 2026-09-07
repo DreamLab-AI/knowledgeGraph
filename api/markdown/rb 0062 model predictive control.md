@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0062 model predictive control
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,21 +55,48 @@ public: true
   "quality": 0.7,
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0022-robot-dynamics", "label": "rb 0022 robot dynamics"},
-      {"@id": "urn:ngm:class:rb-0051-trajectory-planning", "label": "rb 0051 trajectory planning"}
+      {
+        "@id": "urn:ngm:class:rb-0022-robot-dynamics",
+        "label": "rb 0022 robot dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0051-trajectory-planning",
+        "label": "rb 0051 trajectory planning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0048-pid-controller", "label": "rb 0048 pid controller"},
-      {"@id": "urn:ngm:class:rb-0063-sliding-mode-control", "label": "rb 0063 sliding mode control"}
+      {
+        "@id": "urn:ngm:class:rb-0048-pid-controller",
+        "label": "rb 0048 pid controller"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0063-sliding-mode-control",
+        "label": "rb 0063 sliding mode control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0060-optimal-control", "label": "rb 0060 optimal control"},
-      {"@id": "urn:ngm:class:rb-0061-nonlinear-control", "label": "rb 0061 nonlinear control"},
-      {"@id": "urn:ngm:class:state-space-control", "label": "State Space Control"}
+      {
+        "@id": "urn:ngm:class:rb-0060-optimal-control",
+        "label": "rb 0060 optimal control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0061-nonlinear-control",
+        "label": "rb 0061 nonlinear control"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-control",
+        "label": "State Space Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"},
-      {"@id": "urn:ngm:class:rb-0056-impedance-control", "label": "rb 0056 impedance control"}
+      {
+        "@id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0056-impedance-control",
+        "label": "rb 0056 impedance control"
+      }
     ]
   },
   "provenance": {
@@ -84,32 +106,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0062-model-predictive-control:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7efedaed93deeab1b920fcc394afaa95af832b26dc945710fa3d16308192f561"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Model Predictive Control is an online optimisation-based control method where a dynamic model is integrated forward in time to predict the effect of candidate control actions. The controller selects the action that minimises a cost (e.g., tracking error, energy) while satisfying hard constraints on joint torques, velocities, and collision-free workspace boundaries. The receding-horizon mechanism makes MPC inherently adaptive to disturbances without re-tuning.

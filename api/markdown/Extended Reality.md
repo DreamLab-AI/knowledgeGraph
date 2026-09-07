@@ -10,7 +10,6 @@
   "vc:outboundWikilinks": []
 }
 ```
-alias:: ExtendedReality
 
 ```json-ld
 {

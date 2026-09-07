@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Arbitrum DAO
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "Arbitrum DAO is the decentralised autonomous organisation that governs the Arbitrum One and Arbitrum Nova Layer 2 blockchain networks, operating through the ARB governance token launched by Offchain Labs in March 2023. Token holders propose and vote on protocol upgrades, treasury allocations, and parameter changes via on-chain governance contracts, making Arbitrum DAO one of the largest DAOs by treasury value in the Ethereum ecosystem. Governance decisions are executed through a Security Council with emergency intervention powers and a broader Arbitrum Improvement Proposal (AIP) process for standard changes.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:dao", "label": "DAO"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dao",
+      "label": "DAO"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      }
     ]
   },
   "quality": 0.8

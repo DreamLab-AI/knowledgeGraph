@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[Node based visual interfaces]]
-# Node-Graph Visual Programming Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -48,20 +42,38 @@ elevatedFrom:: [[Node based visual interfaces]]
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"}
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:user-interface-architecture", "label": "User Interface Architecture"}
+      {
+        "@id": "urn:ngm:class:user-interface-architecture",
+        "label": "User Interface Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
     ]
   },
   "provenance": {
@@ -71,26 +83,6 @@ elevatedFrom:: [[Node based visual interfaces]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:node-based-visual-interfaces:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:00b9271e1108bc6fbe5199c2eaf417d5ba5e12e01753c06882794e1f8b896557"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A paradigm of graphical programming in which computational logic is authored by connecting discrete functional nodes via edges rather than writing textual code. Node-based interfaces lower the barrier to complex workflow construction, making them prevalent in AI pipeline tools (e.g., ComfyUI, Flowise), creative software (shader editors, compositing), and knowledge-graph visualisation environments.

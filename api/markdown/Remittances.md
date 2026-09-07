@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Remittances
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Remittances are cross-border transfers of money, typically sent by migrant workers to family in their home country, representing a major global flow of funds to developing economies. Traditional rails impose high fees and slow settlement, which cryptocurrencies and the Lightning Network aim to reduce. As a use case, remittances anchor much of the argument for Bitcoin and stablecoins as practical money.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-services", "label": "Financial Services"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin As Money"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      }
     ]
   },
   "quality": 0.72

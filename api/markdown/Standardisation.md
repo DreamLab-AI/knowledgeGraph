@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Standardisation
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:standardisation", "@type":"Page", "title":"Standardisation", "vc:slug":"standardisation", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:standardisation",
+  "@type": "Page",
+  "title": "Standardisation",
+  "vc:slug": "standardisation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Distributor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,17 +55,38 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:provider", "label": "Provider"},
-      {"@id": "urn:ngm:class:importer", "label": "Importer"},
-      {"@id": "urn:ngm:class:deployer", "label": "Deployer"},
-      {"@id": "urn:ngm:class:market-surveillance-authority", "label": "Market Surveillance Authority"}
+      {
+        "@id": "urn:ngm:class:provider",
+        "label": "Provider"
+      },
+      {
+        "@id": "urn:ngm:class:importer",
+        "label": "Importer"
+      },
+      {
+        "@id": "urn:ngm:class:deployer",
+        "label": "Deployer"
+      },
+      {
+        "@id": "urn:ngm:class:market-surveillance-authority",
+        "label": "Market Surveillance Authority"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ]
   },
   "provenance": {
@@ -80,37 +96,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:distributor:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9fdecd24764ba6beef546cdb58d16e3f65ca91dcfb0042586260476afc930966"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market.

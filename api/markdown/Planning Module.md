@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Planning Module
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,20 +21,46 @@ public: true
   "vc:plainGloss": "The part of an AI agent that works out the plan: it takes your goal and breaks it into an ordered list of steps the agent will then carry out. It is the think-before-you-act stage that decides what to do and in what order.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-system-component", "label": "AI System Component"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-system-component",
+      "label": "AI System Component"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:autonomous-behavior", "label": "Autonomous Behavior"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-behavior",
+        "label": "Autonomous Behavior"
+      }
     ]
   },
   "quality": 0.8
@@ -63,4 +84,3 @@ public: true
   - The integration of large language models as planning backends represents a paradigm shift begun around 2022. LLM-based planners (SayCan, ReAct, Voyager) use natural language as the planning representation, enabling rapid generalisation to new task domains without hand-crafted PDDL descriptions. Multi-agent systems decompose planning across specialised sub-agents — one for task decomposition, one for tool selection, one for execution monitoring — creating hierarchical planning architectures that mirror classical HTN structures whilst leveraging neural priors.
 
   - Between 2023 and 2025, the planning module has become a central design focus in the exploding ecosystem of LLM agent frameworks (LangChain, AutoGen, OpenAI Assistants). Structured output generation, tool-use APIs, and function-calling capabilities have standardised how LLM planners interface with external tools and data sources. Reliability challenges — particularly hallucinated plans and poor recovery from failures — have driven research into verification-augmented planning, where formal checkers validate LLM-generated plans against symbolic constraints before execution. Hybrid neuro-symbolic planning architectures are emerging as the dominant approach for safety-critical robotic deployments.
-

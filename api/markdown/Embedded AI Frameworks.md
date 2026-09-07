@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Embedded AI Frameworks
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -67,26 +62,68 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:tiny-ml", "label": "TinyML"},
-      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
-      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"}
+      {
+        "@id": "urn:ngm:class:tiny-ml",
+        "label": "TinyML"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "@id": "urn:ngm:class:model-pruning-for-edge-deployment",
+        "label": "Model Pruning for Edge Deployment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
-      {"@id": "urn:ngm:class:real-time-inference-at-edge", "label": "Real-Time Inference at Edge"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:latency-aware-edge-ai", "label": "Latency-Aware Edge AI"}
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:latency-aware-edge-ai",
+        "label": "Latency-Aware Edge AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ]
   },
   "quality": 0.8,
@@ -94,46 +131,6 @@ public: true
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:embedded-ai-frameworks:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:63a21da8434fccf69feed030def62d05d90c54afa5418a6c4114bc4a150189fa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AIEthicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:ai-governance-and-ethics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
   }
 }
 ```
@@ -245,7 +242,7 @@ public: true
     The frameworks in this category are unified by three defining constraints that set them apart from general-purpose ML frameworks: (1) **memory constraint** — available RAM ranges from 16 KB (extreme MCU class) to 16 GB (high-end embedded SoC), versus the terabytes available in cloud ML environments; (2) **compute constraint** — processors range from single-core MCUs at 64 MHz to mobile SoCs at 3 GHz with 45-TOPS NPUs, versus GPU clusters with petaFLOPS throughput; (3) **power constraint** — total power budget ranges from microwatts (energy-harvesting sensors) to 10 watts (embedded AI servers), versus kilowatts for cloud GPU nodes. These three constraints together define the design space within which Embedded AI Frameworks must operate and optimise. The ability to run meaningful [[AI Inference|neural inference]] within these constraints — and to do so reliably, deterministically, and at low cost — is the core engineering achievement of the frameworks in this category.
 
   ## About
-    Embedded AI Frameworks address a fundamental asymmetry in the [[Machine Learning|machine learning]] deployment lifecycle: models are trained in resource-abundant environments — large GPU clusters, terabytes of training data, hours to days of compute time — but must ultimately run on devices where total available RAM may be measured in kilobytes, clock frequencies in tens of MHz, and power budgets in milliwatts. This asymmetry was not a serious constraint during the early era of ML applications, which were predominantly cloud-hosted and served over network APIs. The emergence of [[IoT AI Integration|Internet of Things]] sensing infrastructure, [[Autonomous Robot|autonomous robotic systems]], consumer [[Edge AI|edge devices]], and industrial embedded platforms from the 2016–2020 period created acute demand for inference runtimes that could operate entirely locally — eliminating network round-trips, preserving user data privacy, and enabling applications in connectivity-denied environments such as industrial floors, underground mines, agricultural fields, and mobile medical devices.
+    Embedded AI Frameworks address a fundamental asymmetry in the [[Machine Learning|machine learning]] deployment lifecycle: models are trained in resource-abundant environments — large GPU clusters, terabytes of training data, hours to days of compute time — but must ultimately run on devices where total available RAM may be measured in kilobytes, clock frequencies in tens of MHz, and power budgets in milliwatts. This asymmetry was not a serious constraint during the early era of ML applications, which were predominantly cloud-hosted and served over network APIs. The emergence of [[IoT AI Integration|Internet of Things]] sensing infrastructure, [[Autonomous Robot|autonomous robotic systems]], consumer [[Edge AI|edge devices]], and industrial embedded platforms from the 2016–2020 period created acute demand for inference runtimes that [private] operate entirely locally — eliminating network round-trips, preserving user data privacy, and enabling applications in connectivity-denied environments such as industrial floors, underground mines, agricultural fields, and mobile medical devices.
 
     The conceptual ancestor of embedded AI frameworks is the embedded signal-processing tradition dating to the 1980s, where fixed-point arithmetic, lookup tables, and hand-optimised assembly kernels were the standard approach for running digital filters on microcontrollers. [[Deep Learning|Deep learning]] placed new demands on embedded compute: neural network inference requires repeated matrix-vector multiplications across large tensors, a class of operation fundamentally different from the scalar or vector DSP operations that prior embedded systems optimised for. The breakthrough enabling the first generation of practical embedded neural inference was [[Quantisation|quantisation]] — the replacement of 32-bit floating-point weights and activations with 8-bit integers. INT8 inference achieves near-identical accuracy to FP32 for most convolutional and recurrent architectures while reducing weight memory by 4x and enabling use of integer multiply-accumulate units that are 2-3x more energy-efficient than floating-point units of equivalent throughput.
 
@@ -363,7 +360,7 @@ public: true
     The EdgeMark benchmarking system (2025) provides an automated, reproducible evaluation framework comparing TFLite Micro, ONNX Runtime, microTVM, and Edge Impulse across these dimensions on a standardised suite of models (MobileNetV2, ResNet-8, keyword spotting DS-CNN, time-series anomaly detection LSTM) on multiple hardware targets (STM32, ESP32-S3, nRF52840, Arduino Nano 33).
 
   ## Academic Context
-    The foundational paper for quantised neural network inference on embedded hardware is "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference" (Jacob et al., 2018), which introduced the affine quantisation scheme used in [[TensorFlow Lite|TFLite]]. "MCUNet: Tiny Deep Learning on IoT Devices" (Lin et al., NeurIPS 2020) demonstrated that [[Neural Network Architecture|neural architecture search]] co-designed with an inference framework (TinyNAS + TinyEngine) could achieve ResNet-level accuracy on ImageNet sub-tasks within 320 KB of RAM. The [[TensorFlow Lite]] Micro paper (David et al., MLSys 2021) formalised the design principles of interpreter-based microcontroller inference. "MobileNetV2" (Sandler et al., CVPR 2018) and "EfficientNet" (Tan & Le, ICML 2019) established the neural architecture families most amenable to quantisation and pruning for embedded deployment.
+    The foundational paper for quantised neural network inference on embedded hardware is "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference" (Jacob et al., 2018), which introduced the affine quantisation scheme used in [[TensorFlow Lite|TFLite]]. "MCUNet: Tiny Deep Learning on IoT Devices" (Lin et al., NeurIPS 2020) demonstrated that [[Neural Network Architecture|neural architecture search]] co-designed with an inference framework (TinyNAS + TinyEngine) [private] achieve ResNet-level accuracy on ImageNet sub-tasks within 320 KB of RAM. The [[TensorFlow Lite]] Micro paper (David et al., MLSys 2021) formalised the design principles of interpreter-based microcontroller inference. "MobileNetV2" (Sandler et al., CVPR 2018) and "EfficientNet" (Tan & Le, ICML 2019) established the neural architecture families most amenable to quantisation and pruning for embedded deployment.
 
     Research on automated framework benchmarking is advancing: "EdgeMark: An Automation and Benchmarking System for Embedded Artificial Intelligence Tools" (2025) provides a systematic comparison methodology across TFLite Micro, ONNX Runtime, microTVM, and Edge Impulse. "Accelerating Deep Learning Inference: A Comparative Analysis of Modern Acceleration Frameworks" (Electronics, 2025) evaluates ExecuTorch, LiteRT, ONNX Runtime, TensorRT, and llama.cpp on latency, RAM, and throughput across diverse targets. The MDpi Electronics review "Embedded Artificial Intelligence: A Comprehensive Literature Review" (2025) maps the full ecosystem from hardware to software to application domains. Neural network quantisation for microcontrollers received systematic survey treatment in "Neural Network Quantization for Microcontrollers: A Comprehensive Survey of Methods, Platforms, and Applications" (arXiv 2025).
 

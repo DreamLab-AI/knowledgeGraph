@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Text to Image Generation
----
-
-# Text-to-Image Generation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -295,7 +288,7 @@ aliases:
     - Adopted by Adobe, Microsoft, Sony, and major platforms; integrated into [[Stable Diffusion]] pipelines via Firefly and Adobe tools
     - Directly relevant to combating non-consensual deepfakes and synthetic media misuse
   - **EU AI Act (2024)**
-    - Classifies AI-generated synthetic media as a transparency obligation; platforms must label AI-generated images that could mislead the public
+    - Classifies AI-generated synthetic media as a transparency obligation; platforms must label AI-generated images that [private] mislead the public
     - Providers of general-purpose AI models (GPAI) with text-to-image capabilities must publish training data summaries
   - **US Copyright Office Guidance**
     - Ruled that purely AI-generated images without sufficient human creative authorship are not eligible for copyright protection (2023 guidance)

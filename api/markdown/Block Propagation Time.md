@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Block Propagation Time
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,26 +87,62 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"}
+      {
+        "@id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ]
   },
   "provenance": {
@@ -121,67 +152,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:block-propagation-time:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:07d4ff46745f065668dcd386eb629a42622663947259f121860d34cbf84913c4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[AI Energy Optimisation]]",
-      "resolved": "urn:visionflow:linked:ai-energy-optimisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[CryptographicDomain]]",
-      "resolved": "urn:visionflow:owl:class:bc-cryptographic-primitive",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NetworkComponent]]",
-      "resolved": "urn:visionflow:owl:class:network-component",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[SecurityLayer]]",
-      "resolved": "urn:visionflow:owl:class:security-layer",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   Block Propagation Time is the latency metric measuring how long it takes for a newly mined or validated block to be disseminated to all (or a target percentage of) nodes in a blockchain peer-to-peer network. It is a critical determinant of blockchain security and throughput: long propagation times increase the probability of temporary forks (stale/orphan blocks), waste miner effort, and reduce effective network throughput.
@@ -213,7 +183,7 @@ public: true
 
   ### Content
 
-  Empirical measurements of Bitcoin block propagation using the Bitcoin Monitor project showed that in 2015, median propagation to 50% of nodes took approximately 1 second, but propagation to 90% of nodes took 6–8 seconds — a significant window during which competing blocks could be found. The FIBRE (Fast Internet Bitcoin Relay Engine) network addressed this by pre-announcing block headers and using compact block encoding (BIP 152), reducing propagation latency by 95% for well-connected nodes.
+  Empirical measurements of Bitcoin block propagation using the Bitcoin Monitor project showed that in 2015, median propagation to 50% of nodes took approximately 1 second, but propagation to 90% of nodes took 6–8 seconds — a significant window during which competing blocks [private] be found. The FIBRE (Fast Internet Bitcoin Relay Engine) network addressed this by pre-announcing block headers and using compact block encoding (BIP 152), reducing propagation latency by 95% for well-connected nodes.
 
   Ethereum's design response to propagation latency was the uncle/ommer mechanism: blocks that arrive slightly late but are valid are included in the canonical chain as uncles, earning a partial reward and contributing to chain security. This mitigates the waste of proof-of-work effort in high-latency conditions but does not eliminate the underlying latency problem. Research on scalable blockchain protocols including GHOST (Greedy Heaviest Observed Subtree) and its successors incorporates propagation time directly into fork-choice logic, weighting chain selection by subtree weight rather than longest chain to improve security under high-latency conditions.
 

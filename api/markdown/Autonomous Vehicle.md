@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - Autonomous Vehicles
----
-
-# Autonomous Vehicle
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -53,10 +46,6 @@ aliases:
     {
       "@id": "urn:visionflow:owl:class:sensor-fusion",
       "vc:label": "Sensor Fusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "vc:label": "Social contract and jobs"
     },
     {
       "@id": "urn:visionflow:owl:class:some-legacy-linked-json",
@@ -231,87 +220,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:autonomous-vehicle:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ac07d2d76c49d24b79950a99dcb14134a98ecb1a0a5e38c9d6f6574e9584b189"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO 21448]]",
-      "resolved": "urn:visionflow:linked:iso-21448",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO 26262]]",
-      "resolved": "urn:visionflow:linked:iso-26262",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ADAS]]",
-      "resolved": "urn:visionflow:owl:class:adas",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Autonomous Robot]]",
-      "resolved": "urn:visionflow:owl:class:autonomous-robot",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Path Planning]]",
-      "resolved": "urn:visionflow:owl:class:path-planning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Perception System]]",
-      "resolved": "urn:visionflow:owl:class:perception-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Self Driving Car]]",
-      "resolved": "urn:visionflow:owl:class:self-driving-car",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Sensor Fusion]]",
-      "resolved": "urn:visionflow:owl:class:sensor-fusion",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Employment Social Contract Under Automation]]",
-      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Entity Schema Archive]]",
-      "resolved": "urn:visionflow:owl:class:some-legacy-linked-json",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making. Autonomous vehicles integrate sensor fusion, computer vision, deep learning, and control algorithms to achieve SAE automation levels ranging from Level 1 (driver assistance) to Level 5 (full automation).

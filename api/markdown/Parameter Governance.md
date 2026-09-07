@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Parameter Governance
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:parameter-governance", "@type":"Page", "title":"Parameter Governance", "vc:slug":"parameter-governance", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:parameter-governance",
+  "@type": "Page",
+  "title": "Parameter Governance",
+  "vc:slug": "parameter-governance",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

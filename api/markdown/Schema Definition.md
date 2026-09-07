@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Schema Definition
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -176,4 +171,3 @@ public: true
   - In knowledge graph engineering, the schema — also called a TBox (Terminological Box) in description logic terminology — defines the vocabulary and structural rules governing the ABox (Assertional Box) of individual facts. Expressive schema languages such as OWL 2 DL support reasoning services: classification (computing the implicit subsumption hierarchy), consistency checking (detecting contradictory axioms), and instance retrieval (finding all individuals satisfying a complex class expression). These reasoning capabilities distinguish knowledge graphs from plain databases and enable automatic knowledge discovery.
 
   - Schema governance — versioning, deprecation, compatibility rules — is an operationally critical concern in any distributed data system. Backwards-compatible schema evolution (adding optional fields, broadening type ranges) allows rolling upgrades; breaking changes (removing fields, tightening constraints) require coordinated migration. Schema registries (Confluent Schema Registry, AWS Glue Schema Registry) enforce compatibility policies on schema updates and provide a centralised catalogue for data consumers to discover and validate message shapes at runtime.
-

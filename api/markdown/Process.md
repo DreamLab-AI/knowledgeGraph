@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Process
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -99,52 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:process:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aad336bdabc6f9c11ca9bc6ed93dca8380707617015bd8d11e83226b5ebf9be7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Automation]]",
-      "resolved": "urn:visionflow:linked:automation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Business Process Management]]",
-      "resolved": "urn:visionflow:linked:business-process-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Systems Theory]]",
-      "resolved": "urn:visionflow:linked:systems-theory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Temporal Entity]]",
-      "resolved": "urn:visionflow:linked:temporal-entity",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Orchestration]]",
-      "resolved": "urn:visionflow:owl:class:orchestration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A coordinated sequence of activities, state changes, and events that transforms inputs into outputs to achieve a specific goal or outcome. Processes represent structured temporal progressions involving multiple agents, systems, or components working in coordination, with defined control flow, duration, and observable states.

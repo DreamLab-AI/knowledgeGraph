@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - GenerativeDesign
----
-
-# Generative Design
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,21 +20,50 @@ aliases:
   "definition": "Generative Design is a computational design methodology in which algorithms autonomously explore a defined design space—bounded by performance constraints, manufacturing requirements, and material properties—to generate and evaluate large numbers of design candidates, surfacing options that meet objectives a human designer specifies but did not hand-craft. Implemented through topology optimisation, evolutionary algorithms, and increasingly through deep generative models, it produces geometrically complex structures—often resembling organic forms—that achieve material efficiency or performance targets unattainable through conventional manual design. The output is typically a ranked set of design alternatives that engineers evaluate and refine.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:parametric-design-methodology-modeling", "label": "Parametric Modeling"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:parametric-design-methodology-modeling",
+      "label": "Parametric Modeling"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"},
-      {"@id": "urn:ngm:class:parametric-design-methodology", "label": "Parametric Design Methodology"},
-      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimization Algorithm"}
+      {
+        "@id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      },
+      {
+        "@id": "urn:ngm:class:parametric-design-methodology",
+        "label": "Parametric Design Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "quality": 0.8

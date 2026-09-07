@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Bridge Contract
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,22 +21,49 @@ public: true
   "domain": "blockchain",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:wrapped-token", "label": "Wrapped Token"}
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:relayer", "label": "Relayer"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"}
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
     ]
   },
   "quality": 0.8
@@ -62,4 +84,3 @@ public: true
   - Bridge contracts have been the most catastrophic attack vectors in blockchain history. The Ronin bridge hack (March 2022, $625 M) exploited a compromised multi-sig; the Wormhole hack (February 2022, $320 M) exploited a signature verification bug; Nomad (August 2022, $190 M) suffered a flawed initialisation allowing arbitrary message spoofing. These incidents drove the industry toward ZK-based bridges and formalised auditing standards from firms such as Trail of Bits, Zellic, and OpenZeppelin, as well as on-chain circuit breakers that pause bridges if abnormal outflows are detected.
 
   - In 2024–2025, the bridge landscape is consolidating around a few major interoperability protocols: LayerZero v2, Axelar, Hyperlane, and Chainlink CCIP. ZK-based bridges for Ethereum L2s (Polygon zkEVM bridge, zkSync Era native bridge, Starknet bridge) have matured to production use, with proof generation times falling to seconds. The Ethereum EIP-7683 cross-chain intent standard aims to abstract bridge routing from end users, allowing intent-based protocols to find the cheapest and safest bridge path automatically. Regulatory attention is increasing, with FATF guidance noting that bridge contracts can obscure fund flows in ways relevant to anti-money-laundering compliance.
-

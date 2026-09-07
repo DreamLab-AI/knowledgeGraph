@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Creative Expression
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Creative expression is the human activity of producing original artistic, narrative, or aesthetic artefacts to communicate ideas, emotions, or identity. In virtual and open-world environments it manifests as user-generated content, world-building, avatar customisation, and emergent play. It is a primary driver of engagement and value in persistent metaverse spaces.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-interaction", "label": "Interaction Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"}, {"@id": "urn:ngm:class:open-world", "label": "Open World"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:open-world",
+        "label": "Open World"
+      }
+    ]
   },
   "quality": 0.72
 }

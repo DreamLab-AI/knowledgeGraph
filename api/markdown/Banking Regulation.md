@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Banking Regulation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -26,10 +20,18 @@ public: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
   ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:electronic-signature", "label": "Electronic Signature"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:electronic-signature",
+        "label": "Electronic Signature"
+      }
+    ]
   },
   "quality": 0.7
 }

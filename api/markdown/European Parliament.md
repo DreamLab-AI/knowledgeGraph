@@ -1,8 +1,3 @@
----
-public: true
----
-
-# European Parliament
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "The European Parliament is the directly elected legislative body of the European Union, sharing law-making and budgetary authority with the Council of the EU. It debates, amends, and adopts EU legislation across domains including financial regulation, data protection, AI, and digital-currency policy. As a co-legislator it is a primary source of the binding rules that shape technology governance across member states.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:compliance-control", "label": "Compliance Control"}, {"@id": "urn:ngm:class:digital-euro", "label": "Digital Euro"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-euro",
+        "label": "Digital Euro"
+      }
+    ]
   },
   "quality": 0.72
 }

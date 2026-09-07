@@ -1,58 +1,109 @@
----
-public: true
----
-
-# Stateless Architecture
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:stateless-architecture", "@type":"Page", "title":"Stateless Architecture", "vc:slug":"stateless-architecture", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:stateless-architecture",
-  "@type":"Class",
-  "label":"Stateless Architecture",
-  "definition":"Stateless architecture is a design approach in which each request carries all the information needed to process it, and the serving component retains no client session state between requests. By externalising state to caches, databases, or tokens, stateless services can be freely replicated, replaced, and load-balanced, which simplifies horizontal scaling and fault recovery at the cost of pushing state management to dedicated stores.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cloud-native","label":"Cloud Native"}],
-  "relations":{
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:microservices","label":"Microservices"}
-    ],
-    "requires":[
-      {"@id":"urn:ngm:class:load-balancing","label":"Load Balancing"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:scalability","label":"Scalability"},
-      {"@id":"urn:ngm:class:load-balancing","label":"Load Balancing"}
-    ],
-    "uses":[
-      {"@id":"urn:ngm:class:rest-api","label":"REST API"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:container-orchestration","label":"Container Orchestration"},
-      {"@id":"urn:ngm:class:microservices","label":"Microservices"}
-    ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:scalability","label":"Scalability"}
-    ],
-    "partOf":[
-      {"@id":"urn:ngm:class:cloud-native","label":"Cloud Native"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:kubernetes","label":"Kubernetes"},
-      {"@id":"urn:ngm:class:containerisation","label":"Containerisation"}
-    ],
-    "implements":[
-      {"@id":"urn:ngm:class:rest-api","label":"REST API"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:stateless-architecture",
+  "@type": "Page",
+  "title": "Stateless Architecture",
+  "vc:slug": "stateless-architecture",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:stateless-architecture",
+  "@type": "Class",
+  "label": "Stateless Architecture",
+  "definition": "Stateless architecture is a design approach in which each request carries all the information needed to process it, and the serving component retains no client session state between requests. By externalising state to caches, databases, or tokens, stateless services can be freely replicated, replaced, and load-balanced, which simplifies horizontal scaling and fault recovery at the cost of pushing state management to dedicated stores.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cloud-native",
+      "label": "Cloud Native"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - [[Stateless Architecture]] is a design where each request carries everything needed to serve it and the component keeps no session state. It enables [[Scalability]] and [[Load Balancing]], commonly over a [[REST API]], and is a hallmark of [[Cloud Native]] systems.
 - ### Overview

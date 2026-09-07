@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Learning Management System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -165,42 +160,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:learning-management-system:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ba31f0b4148ebe1356d74151a7d824a01f0e6a7eb99bfdaad4f3614b685980f7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[VR Training Delivery]]",
-      "resolved": "urn:visionflow:linked:vr-training-delivery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Educational Technology]]",
-      "resolved": "urn:visionflow:owl:class:educational-technology",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Software platforms that deliver, track, and manage educational content and training programmes, increasingly integrating with VR, AR, and metaverse technologies through SCORM, xAPI, and LTI standards to enable immersive learning experiences.

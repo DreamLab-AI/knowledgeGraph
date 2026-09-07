@@ -1,59 +1,116 @@
----
-public: true
----
-
-# Auto-Scaling
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:auto-scaling", "@type":"Page", "title":"Auto-Scaling", "vc:slug":"auto-scaling", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:auto-scaling",
+  "@type": "Page",
+  "title": "Auto-Scaling",
+  "vc:slug": "auto-scaling",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:auto-scaling",
-  "@type":"Class",
-  "label":"Auto-Scaling",
-  "definition":"Auto-scaling is the automated adjustment of computing capacity in response to observed demand, adding or removing resources to maintain performance and control cost. It uses metrics, policies and controllers to scale horizontally by changing instance counts or vertically by resizing instances. Auto-scaling is foundational to elastic cloud infrastructure, balancing responsiveness against efficiency without manual intervention.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:scalability","label":"Scalability"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:monitoring","label":"Monitoring"},
-      {"@id":"urn:ngm:class:resource-allocation","label":"Resource Allocation"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:auto-scaling",
+  "@type": "Class",
+  "label": "Auto-Scaling",
+  "definition": "Auto-scaling is the automated adjustment of computing capacity in response to observed demand, adding or removing resources to maintain performance and control cost. It uses metrics, policies and controllers to scale horizontally by changing instance counts or vertically by resizing instances. Auto-scaling is foundational to elastic cloud infrastructure, balancing responsiveness against efficiency without manual intervention.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:scalability",
+      "label": "Scalability"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:observability","label":"Observability"},
-      {"@id":"urn:ngm:class:capacity-planning","label":"Capacity Planning"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:high-availability","label":"High Availability"},
-      {"@id":"urn:ngm:class:fault-tolerance","label":"Fault Tolerance"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:load-balancing","label":"Load Balancing"},
-      {"@id":"urn:ngm:class:monitoring","label":"Monitoring"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:microservices","label":"Microservices"},
-      {"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:resource-management","label":"Resource Management"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      }
     ],
-    "implementedBy":[
-      {"@id":"urn:ngm:class:kubernetes","label":"Kubernetes"},
-      {"@id":"urn:ngm:class:container-orchestration","label":"Container Orchestration"}
+    "implementedBy": [
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:orchestration","label":"Orchestration"},
-      {"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

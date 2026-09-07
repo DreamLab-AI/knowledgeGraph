@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Ofcom
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -162,4 +157,3 @@ public: true
   - The Online Safety Act 2023 significantly expanded Ofcom's remit, designating it the principal regulator for online platforms in the UK. The Act requires Ofcom to publish Codes of Practice covering illegal content (child sexual abuse material, terrorism, fraud) and content harmful to children, conduct Technology Notices compelling platforms to use accredited technology to detect CSAM, and impose fines of up to 10% of global annual turnover for non-compliance. Category 1 services (the largest platforms) face additional transparency and accountability obligations. This regulatory expansion positions Ofcom as one of the most powerful internet regulators globally.
 
   - By 2025, Ofcom had issued its Phase 1 illegal content codes and was mid-way through consultations on the children's safety codes. Platforms were submitting their first round of risk assessments under the new framework, and Ofcom had begun deploying specialist technical staff to assess platforms' safety systems. The regulator also oversees the UK's response to the EU AI Act (for AI systems within broadcasting and communications), participates in international regulatory fora including the Global Online Safety Regulators Network, and is shaping norms for AI-generated content labelling in broadcast media.
-

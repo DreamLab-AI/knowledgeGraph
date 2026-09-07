@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Public Wealth Fund
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "public-wealth-fund",
   "title": "Public Wealth Fund",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Sentiment", "AI Wealth Distribution", "OpenAI Policy", "Political Psychology"],
+  "vc:outboundWikilinks": [
+    "AI Sentiment",
+    "AI Wealth Distribution",
+    "OpenAI Policy",
+    "Political Psychology"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:policy", "label": "Policy"}, {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}, {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Apache Parquet
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:apache-parquet", "@type": "Page", "title": "Apache Parquet", "vc:slug": "apache-parquet", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:apache-parquet",
+  "@type": "Page",
+  "title": "Apache Parquet",
+  "vc:slug": "apache-parquet",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",

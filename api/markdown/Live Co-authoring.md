@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Live Co-authoring
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -25,15 +20,27 @@ public: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:shared-cursors", "label": "Shared Cursors"},
-      {"@id": "urn:ngm:class:document-comments", "label": "Document Comments"}
+      {
+        "@id": "urn:ngm:class:shared-cursors",
+        "label": "Shared Cursors"
+      },
+      {
+        "@id": "urn:ngm:class:document-comments",
+        "label": "Document Comments"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:version-history", "label": "Version History"}
+      {
+        "@id": "urn:ngm:class:version-history",
+        "label": "Version History"
+      }
     ]
   },
   "quality": 0.7

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metaverse Application Platform
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-application-platform:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:275fd4c32716925a3a0f6c74eec0405601f1ba43a826053c5fced7c68dff6215"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Metaverse Content Creation]]",
-      "resolved": "urn:visionflow:linked:metaverse-content-creation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Development Platform]]",
-      "resolved": "urn:visionflow:owl:class:development-platform",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Development environments and SDKs built on engines like Unity and Unreal that provide tools, APIs, and frameworks for creating immersive 3D applications, virtual worlds, and blockchain-integrated experiences for the metaverse.

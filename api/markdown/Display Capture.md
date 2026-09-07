@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Display Capture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Display capture is the acquisition of the live pixel contents of a screen, window, or application surface as a video stream for recording or transmission. On the web it is exposed through the Screen Capture API's getDisplayMedia method, which prompts the user to choose a surface and returns a media stream subject to permission. It is the foundational capability behind screen recording and real-time screen sharing.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:screen-recording", "label": "Screen Recording"},
-      {"@id": "urn:ngm:class:screen-sharing", "label": "Screen Sharing"}
+      {
+        "@id": "urn:ngm:class:screen-recording",
+        "label": "Screen Recording"
+      },
+      {
+        "@id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
     ]
   },
   "quality": 0.72

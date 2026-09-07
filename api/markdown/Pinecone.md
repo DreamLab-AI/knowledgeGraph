@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Pinecone
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -93,52 +88,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:pinecone:e2fde0483fc8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:9dafe0fa6384c2b0e6bdf6ac15503d39f0679ab3ed26d68d35f7cc074bd61990"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Embeddings]]",
-      "resolved": "urn:visionflow:linked:embeddings",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vector Search]]",
-      "resolved": "urn:visionflow:linked:vector-search",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Retrieval-Augmented Generation]]",
-      "resolved": "urn:visionflow:linked:retrieval-augmented-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Search]]",
-      "resolved": "urn:visionflow:linked:semantic-search",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Vector Database]]",
-      "resolved": "urn:visionflow:linked:vector-database",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - A managed cloud vector database service that stores embeddings and provides scalable approximate nearest neighbour similarity search for machine learning applications.
 
@@ -154,7 +103,7 @@ public: true
 
 - ### Content
   - Pinecone is a fully managed vector database delivered as a cloud service. Developers upsert embeddings produced by machine learning models and query the service for the most similar vectors, with the platform handling indexing, scaling and infrastructure.
-  - It supports metadata filtering and high-throughput similarity search, and is commonly used to power semantic search and retrieval-augmented generation, where relevant context is fetched from a vector index to ground a language model's responses.
+  - It supports metadata filtering and high-throughput similarity search, and is commonly used to power semantic search and retrieval-augmented generation, where relevant context is fetched from a vector [private] to ground a language model's responses.
 
 - ### Provenance
   - sources::

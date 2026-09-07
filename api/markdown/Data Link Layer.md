@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Data Link Layer
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

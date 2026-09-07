@@ -1,11 +1,16 @@
----
-public: true
----
-
-# SQL
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:sql", "@type":"Page", "title":"SQL", "vc:slug":"sql", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:sql",
+  "@type": "Page",
+  "title": "SQL",
+  "vc:slug": "sql",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,57 +21,127 @@ public: true
   "domain": "data",
   "maturity": "mature",
   "subClassOf": [
-    { "@id": "urn:ngm:class:database-system", "label": "Database System" }
+    {
+      "@id": "urn:ngm:class:database-system",
+      "label": "Database System"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:data-definition-language", "label": "Data Definition Language" },
-      { "@id": "urn:ngm:class:data-manipulation-language", "label": "Data Manipulation Language" },
-      { "@id": "urn:ngm:class:query-optimiser", "label": "Query Optimiser" }
+      {
+        "@id": "urn:ngm:class:data-definition-language",
+        "label": "Data Definition Language"
+      },
+      {
+        "@id": "urn:ngm:class:data-manipulation-language",
+        "label": "Data Manipulation Language"
+      },
+      {
+        "@id": "urn:ngm:class:query-optimiser",
+        "label": "Query Optimiser"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:relational-database", "label": "Relational Database" }
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:relational-algebra", "label": "Relational Algebra" },
-      { "@id": "urn:ngm:class:declarative-query", "label": "Declarative Query" }
+      {
+        "@id": "urn:ngm:class:relational-algebra",
+        "label": "Relational Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:declarative-query",
+        "label": "Declarative Query"
+      }
     ],
     "standardizedBy": [
-      { "@id": "urn:ngm:class:iso-iec-9075", "label": "ISO/IEC 9075" },
-      { "@id": "urn:ngm:class:ansi", "label": "ANSI" }
+      {
+        "@id": "urn:ngm:class:iso-iec-9075",
+        "label": "ISO/IEC 9075"
+      },
+      {
+        "@id": "urn:ngm:class:ansi",
+        "label": "ANSI"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:data-analytics", "label": "Data Analytics" },
-      { "@id": "urn:ngm:class:transaction-processing", "label": "Transaction Processing" }
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:indexing", "label": "Indexing" },
-      { "@id": "urn:ngm:class:acid-transactions", "label": "ACID Transactions" }
+      {
+        "@id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      },
+      {
+        "@id": "urn:ngm:class:acid-transactions",
+        "label": "ACID Transactions"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence" },
-      { "@id": "urn:ngm:class:data-warehouse", "label": "Data Warehouse" }
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:schema", "label": "Database Schema" }
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Database Schema"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:nosql", "label": "NoSQL" },
-      { "@id": "urn:ngm:class:graph-query-language", "label": "Graph Query Language" }
+      {
+        "@id": "urn:ngm:class:nosql",
+        "label": "NoSQL"
+      },
+      {
+        "@id": "urn:ngm:class:graph-query-language",
+        "label": "Graph Query Language"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:object-relational-mapping", "label": "Object-Relational Mapping" }
+      {
+        "@id": "urn:ngm:class:object-relational-mapping",
+        "label": "Object-Relational Mapping"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:data-management", "label": "Data Management" },
-      { "@id": "urn:ngm:class:stored-procedure", "label": "Stored Procedure" }
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:stored-procedure",
+        "label": "Stored Procedure"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:structured-query-language", "label": "Structured Query Language" }
+    {
+      "@id": "urn:ngm:class:structured-query-language",
+      "label": "Structured Query Language"
+    }
   ],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

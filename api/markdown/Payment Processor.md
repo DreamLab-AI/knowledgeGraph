@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Payment Processor
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A payment processor is a service that handles the transaction lifecycle between a merchant, the customer's payment instrument, and the settlement networks. It authorises, captures, clears, and settles funds while applying fraud checks, currency conversion, and compliance controls. Processors are foundational components of digital payment infrastructure, abstracting card networks, bank rails, and blockchain settlement behind a single integration.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:payment-infrastructure", "label": "Payment Infrastructure"}, {"@id": "urn:ngm:class:digital-payments", "label": "Digital Payments"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      }
+    ]
   },
   "quality": 0.72
 }

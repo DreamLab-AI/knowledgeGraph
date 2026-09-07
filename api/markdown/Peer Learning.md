@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Peer Learning
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,52 +87,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:peer-learning:30386a18795f",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cd2fff140744ce9c7b2876f1154e5025592eadef49d86d98c05916ded07a6756"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Collaborative Learning]]",
-      "resolved": "urn:visionflow:linked:collaborative-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Agent Coordination]]",
-      "resolved": "urn:visionflow:linked:multi-agent-coordination",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Sharing]]",
-      "resolved": "urn:visionflow:linked:knowledge-sharing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multi-Agent Systems]]",
-      "resolved": "urn:visionflow:linked:multi-agent-systems",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Reinforcement Learning]]",
-      "resolved": "urn:visionflow:linked:reinforcement-learning",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Peer learning refers to settings where multiple agents improve by exchanging information or imitating each other rather than relying on a central teacher. In multi-agent systems it covers cooperative protocols for sharing experience.

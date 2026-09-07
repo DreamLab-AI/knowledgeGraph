@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Redundancy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Redundancy is the deliberate duplication of components, data, or pathways in a system so that the failure of any single element does not cause overall failure. It is a foundational technique for fault tolerance, implemented through replicas, standby nodes, mirrored storage, and multiple network routes. By eliminating single points of failure, redundancy raises availability at the cost of additional resources.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:reliability-engineering", "label": "Reliability Engineering"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Privacy
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -143,10 +138,6 @@ public: true
     {
       "@id": "urn:visionflow:owl:class:semantic-web",
       "vc:label": "Semantic Web"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "vc:label": "Social contract and jobs"
     },
     {
       "@id": "urn:visionflow:owl:class:spatial-computing",
@@ -331,222 +322,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:privacy:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0f797ad762ced659eb5678e862e41de21e947a8c053e11e5d3d0353ef56ec913"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[back2002hashcash]]",
-      "resolved": "urn:visionflow:linked:back2002hashcash",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[bayer2023artificial]]",
-      "resolved": "urn:visionflow:linked:bayer2023artificial",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[burnham1983rise; @chaum1985security]]",
-      "resolved": "urn:visionflow:linked:burnham1983rise-chaum1985security",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[callas1998openpgp]]",
-      "resolved": "urn:visionflow:linked:callas1998openpgp",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dai1998b]]",
-      "resolved": "urn:visionflow:linked:dai1998b",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[dwork1992pricing; @jakobsson1999proofs]]",
-      "resolved": "urn:visionflow:linked:dwork1992pricing-jakobsson1999proofs",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Goldenfein Mann 2024]]",
-      "resolved": "urn:visionflow:linked:goldenfein-mann-2024",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[harari2014sapiens]]",
-      "resolved": "urn:visionflow:linked:harari2014sapiens",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[lavoie1990prefatory]]",
-      "resolved": "urn:visionflow:linked:lavoie1990prefatory",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Nakamoto2008]]",
-      "resolved": "urn:visionflow:linked:nakamoto2008",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Nostr]]",
-      "resolved": "urn:visionflow:linked:nostr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[o2021god]]",
-      "resolved": "urn:visionflow:linked:o2021god",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[rosenbergmanipulation]]",
-      "resolved": "urn:visionflow:linked:rosenbergmanipulation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[salinCosts; @cypherPunkMailList]]",
-      "resolved": "urn:visionflow:linked:salin-costs-cypher-punk-mail-list",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[swartz2008guerilla]]",
-      "resolved": "urn:visionflow:linked:swartz2008guerilla",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[szabo1997formalizing]]",
-      "resolved": "urn:visionflow:linked:szabo1997formalizing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Cyber Security and Military]]",
-      "resolved": "urn:visionflow:owl:class:cyber-security-and-military",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Cryptographic Privacy Activist]]",
-      "resolved": "urn:visionflow:owl:class:cypherpunk",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Decentralised Web]]",
-      "resolved": "urn:visionflow:owl:class:decentralised-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Society Surveillance]]",
-      "resolved": "urn:visionflow:owl:class:digital-society-surveillance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Technology Access Equity]]",
-      "resolved": "urn:visionflow:owl:class:equity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Global Inequality]]",
-      "resolved": "urn:visionflow:owl:class:global-inequality",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hyper personalisation]]",
-      "resolved": "urn:visionflow:owl:class:hyper-personalisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Infrastructure]]",
-      "resolved": "urn:visionflow:owl:class:infrastructure",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning Network]]",
-      "resolved": "urn:visionflow:owl:class:lightning-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Money]]",
-      "resolved": "urn:visionflow:owl:class:money",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Governance Law and Privacy]]",
-      "resolved": "urn:visionflow:owl:class:politics-law-privacy",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Proprietary Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Web Linked Data Standard]]",
-      "resolved": "urn:visionflow:owl:class:semantic-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Employment Social Contract Under Automation]]",
-      "resolved": "urn:visionflow:owl:class:social-contract-and-jobs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Spatial Computing Paradigm]]",
-      "resolved": "urn:visionflow:owl:class:spatial-computing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Semantic Spatial Web Layer]]",
-      "resolved": "urn:visionflow:owl:class:spatial-web",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Trust and Safety]]",
-      "resolved": "urn:visionflow:owl:class:trust-and-safety",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Knowledge Artefact Update Cycle]]",
-      "resolved": "urn:visionflow:owl:class:update-cycle",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Virtual Reality]]",
-      "resolved": "urn:visionflow:owl:class:virtual-reality",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.
@@ -735,11 +510,11 @@ public: true
   - Bystander privacy is a major concern with always-on AR glasses and headsets. People may have their data captured without consent just by being in the presence of someone wearing XR devices
   - XR and AI are highly complementary and will help address each other's limitations. AI will make the metaverse possible, while the metaverse will provide an outlet for human creativity and self-actualization in a post-labor world
   - XR has the potential to greatly enhance fields like medicine, education, and industrial design by providing rich spatial computing interfaces.
-  - The lack of compelling content and experiences has been a limiting factor for XR adoption. However, AI-generated assets could help solve this content bottleneck and enable the rapid creation of photorealistic virtual worlds
+  - The lack of compelling content and experiences has been a limiting factor for XR adoption. However, AI-generated assets [private] help solve this content bottleneck and enable the rapid creation of photorealistic virtual worlds
   - Privacy and security remain ongoing concerns in XR ecosystems, as they capture even more biometric and behavioral data than traditional computing interfaces
   - VR in particular still faces physiological challenges around multi-sensory immersion (e.g. locomotion) that will need to be solved before the technology can go fully mainstream
   - # Convergence
-  - The intersection of AI, XR, and open, decentralized networks represents a powerful convergence of technologies that could reshape the fabric of our social and economic lives. By leveraging the unique strengths of each domain
+  - The intersection of AI, XR, and open, decentralized networks represents a powerful convergence of technologies that [private] reshape the fabric of our social and economic lives. By leveraging the unique strengths of each domain
 		- the immersive power of XR, the intelligence and adaptability of AI, and the openness and composability of decentralized protocols
 		- we can create a more vibrant, dynamic, and equitable digital future. However, realizing this potential will require careful design, collaboration, and governance to ensure that these technologies develop in a way that promotes human agency, privacy, and flourishing.
   - AI and XR are deeply intertwined and mutually reinforcing technologies
@@ -815,7 +590,7 @@ public: true
 		- A 2018 study by Comparitech found that the average person in the UK is captured on CCTV cameras over 300 times per day.
 		- According to a report by the American Civil Liberties Union (ACLU), the FBI has access to over 640 million photographs for facial recognition searches, including driver’s license and passport photos.
 		- The U.S. government’s use of surveillance technologies, such as drones and mass data collection, has been a subject of ongoing controversy and debate.
-		- Some experts warn that the increasing use of surveillance technologies by governments and private companies could lead to the erosion of privacy rights and the creation of a *surveillance state."
+		- Some experts warn that the increasing use of surveillance technologies by governments and private companies [private] lead to the erosion of privacy rights and the creation of a *surveillance state."
 		- In the USA senate hearing following the collapse of FTX Rep. Jesus Garcia described bitcoin and crypto as an industry that operates outside of the law and relies on hype, implying that the communities that have adopted bitcoin are ill-informed and vulnerable.
 		- Bitcoin has been adopted by a variety of communities worldwide, particularly in countries such as Vietnam, the Philippines, Ukraine, India, Pakistan, Brazil, Thailand, Russia, and China.
 		- There is an outsized level of adoption among Black Americans in the United States. This trend is not a result of targeted advertising by companies such as FTX, but rather a response to a legacy financial system that has limited individuals’ potential.
@@ -832,11 +607,11 @@ public: true
 		- Funding from Big Tech raises questions about potential conflicts of interest for DRCSOs and whether they truly represent the public interest as opposed to aligning with industry agendas.
 		- The authors argue Big Tech philanthropy allows economic power to translate into political and cultural capital, enabling the firms to continue profiting from problematic data practices while avoiding meaningful regulation.
 		- Much of the following text is paraphrased from the work of Guy Turner of‘The Coin Bureau’, and Lawyer and academic Eden Moglen, and needs more work because of it’s critical importance to the book. [[Knowledge Artefact Update Cycle]]
-			- The adoption of printing by Europeans in the 15th century led to concerns around access to printed material. The right to read and the right to publish were central subjects in the struggle for freedom of thought for most of the last half millennium. The basic concern was forthe right to read in private and to think, speak, and act based on a free and uncensored will. The primary antagonist for freedom of thought at the beginning of this struggle was the universal Catholic Church, an institution aimed at controlling thought in the European world through weekly surveillance of individuals, censorship of all reading material,and the ability to predict and punish unorthodox thought. In early modern Europe, the tools available for thought control were limited, but they were effective. For hundreds of years, the struggle centred around the book as a mass-manufactured article in Western culture, and whether individuals could print, possess, traffic, read, or teach from books without the permission or control of an entity empowered to punish thought. By the end of the 17th century, censorship of written material in Europe began to break down in waves throughout the European world,and the book became an article of subversive commerce, undermining the control of thought.
+			- The adoption of printing by Europeans in the 15th century led to concerns around access to printed material. The right to read and the right to publish were central subjects in the struggle for freedom of thought for most of the last half millennium. The basic concern was forthe right to read in private and to think, speak, and act based on a free and uncensored will. The primary antagonist for freedom of thought at the beginning of this struggle was the universal Catholic Church, an institution aimed at controlling thought in the European world through weekly surveillance of individuals, censorship of all reading material,and the ability to predict and punish unorthodox thought. In early modern Europe, the tools available for thought control were limited, but they were effective. For hundreds of years, the struggle centred around the book as a mass-manufactured article in Western culture, and whether individuals [private] print, possess, traffic, read, or teach from books without the permission or control of an entity empowered to punish thought. By the end of the 17th century, censorship of written material in Europe began to break down in waves throughout the European world,and the book became an article of subversive commerce, undermining the control of thought.
 		- Currently, a new phase in human history is beginning as we are building a single extraneous digital nervous system, that will connect every human mind. Within two generations, every single human being will be connected to this network, in which all thoughts, plans, dreams, and actions will flow as nervous impulses. The fate of freedom of thought and human freedom as a whole will depend upon the organization of thisnetwork. Our current generation is the last in which human brains will be formed without contact with this network, and from now on, every human brain will be formed from early life in direct connection to the network, with input from generative AI/ML systems. This possibly results in humanity becoming a super organism of a sort, where each of us is buta neuron in the brain. Unfortunately, this generation has been raised to be consumers of media, which is now consuming us.
 		- Anonymous reading is being determined against. Efforts discussed throughout this graph to ensure privacy, from Zimmerman and the cypherpunks onward, have been met with resistance from government efforts to monitor and control information flow. The outcome of the organization of this network, and the freedom it allows, is currently being decided by this generation.
 		- It is not solely the ease of surveillance, nor solely the permanence of data, that is concerning, it is the relentless nature of living after the “end of forgetting”. Today’s encrypted traffic, which is used with relative security, will eventually be decrypted as more data becomes available for crypto analysis. This means that security protocols will need to be constantly updated and redone. Furthermore, no information is ever truly lost, and every piece of information can be retained and eventually linked to other information. This is the rationale behind government officials who argue that a robust social graph of the UnitedStates is needed. The primary form of data collection that should be of most concern is media that is used to spy on us, such as books that watch us read them and search boxes that report our searches to unknown parties. There is a lot of discussion about data coming out ofMeta/Facebook, but the true threat is code going in. For the past 15years, enterprise computing has been adding a layer of analytics on topof data warehouses, which is known as business intelligence. This allows for the vast amount of data in a company’s possession to be analysed and used to answer questions the company did not know it had. The real threat of Facebook is the business intelligence layer on top of theFacebook data warehouse, which contains the behaviour of nearly a billion people. Intelligence agencies from around the world want toaccess this layer in order to find specific classes of people, such as potential agents, sources, and individuals that can be influenced or tortured. The goal is to run code within Facebook to extract this information, instead of obtaining data from Facebook, which would be dead data once extracted. Facebook wants to be a media company andcontrol the web, but the reality is the true value of Facebook is the information and behaviour of it’s users, and the ability to mine that data. Distributed internet protocols are important in the context of government overreach into digital society and people’s private livesbecause they provide a level of decentralization and resilience that canhelp protect against censorship and surveillance.
-		- For example, if a government were to attempt to censor or block access to a centralized internet service, it could potentially do so with relative ease. However, if that same service were distributed across anetwork of nodes, it would be much more difficult for the government to effectively censor or block access to it.
+		- For example, if a government were to attempt to censor or block access to a centralized internet service, it [private] potentially do so with relative ease. However, if that same service were distributed across anetwork of nodes, it would be much more difficult for the government to effectively censor or block access to it.
 		- Another advantage of distributed protocols is that they are typically more resilient to attacks or failures. If one node in the network goes offline or is compromised, the others can continue to operate, ensuring that the service remains available. This can be especially important in situations where the internet is being used for critical communication,such as during a natural disaster or political crisis.
 		- In addition to their benefits for censorship resistance and resilience,distributed protocols can also help protect people’s privacy. Because they do not rely on centralized servers or infrastructure, they can bemore difficult for governments or other entities to monitor or track.This can be especially important in countries where government surveillance is prevalent or where individuals may be at risk of persecution for their online activities.
 		- There are a number of distributed protocols that have been developed specifically to address issues of censorship and privacy, and these will be covered in more detail later.
@@ -846,13 +621,13 @@ public: true
 			- The bill is called the “Restricting the Emergence of Security Threats that Risk Information and Communications Technology Act”
 			- It was initially thought to be about banning TikTok due to its connections to the Chinese government and the data it collects on its users.
 			- The RESTRICT Act has very little to do with banning TikTok and instead grants the US Secretary of Commerce significant powers to determine which entities are foreign adversaries and what technology poses a risk to national security.
-			- The bill defines critical infrastructure broadly, which means it could apply to almost anything the government deems necessary. Lobbyists will be allowed to advise the Secretary of Commerce on which products and services should be labeled as foreign adversaries, potentially leading to monopolies.
-			- Fines and jail time for interacting with foreign adversaries or posing a risk to national security could reach up to $1 million, 20 years in prison, and asset seizures.
+			- The bill defines critical infrastructure broadly, which means it [private] apply to almost anything the government deems necessary. Lobbyists will be allowed to advise the Secretary of Commerce on which products and services should be labeled as foreign adversaries, potentially leading to monopolies.
+			- Fines and jail time for interacting with foreign adversaries or posing a risk to national security [private] reach up to $1 million, 20 years in prison, and asset seizures.
 			- The bill aims to crack down on VPNs (Virtual Private Networks), which provide privacy and access to foreign websites.
 			- There is no oversight for the actions taken by the Secretary of Commerce under this act, and neither Congress nor the courts can request information on these decisions.
-		- The European Union (EU) has separated its online censorship efforts into two separate bills: the Digital Markets Act and the Digital Services Act. These bills were introduced in December 2020 and are part of the EU’s Digital Services package, which aims to be completed by 2030. The Digital Services package is the second phase of the EU’s digital agenda, which is being enforced through regulation in the public sector and through ESG investing in the private sector. Both the Digital Markets Act and the Digital Services Act were passed in spring 2022 and went into force in autumn 2022, but will not be enforced until later this year and early next year, depending on the size of the relevant entity. The Digital Markets Act aims to increase the EU’s competitiveness in the tech space by imposing massive fines on "gatekeepers," or companies that maintain monopolies by giving preference to their own products and services. This could open the door to innovation in cryptocurrency in the EU, but also requires gatekeepers to provide detailed data about the individuals and institutions using their products and services to theE U. The Digital Services Act, on the other hand, aims to regulate the content that is available online, including user-generated content. It does this by requiring companies to remove illegal content within one hour of it being reported and by imposing fines for non-compliance. The act also requires companies to implement measures to protect users from illegal content and from "other forms of harm," which is defined broadly and could include a wide range of content. The EU is also in the process of passing the Artificial Intelligence Regulation Act, which will be discussed later this year and is reportedly the first of its kind. All five bills in the EU’s Digital Services package are regulations, meaning they will override the national laws of EU countries. The potential impact on the internet and free expression in the EU is significant, as the Digital Services Act would give the government significant control over online content and restrict the ability of individuals to share their views and perspectives.
-		- In the United States, two significant documents related to online censorship are the Kids Online Safety Act and the Supreme Court caseGonzalez v. Google. The Kids Online Safety Act was introduced inFebruary 2021 and is expected to pass later this year due to bipartisan support. The act requires online services to collect Know Your Customer(KYC) information to ensure that they are not showing harmful content tominors. It also gives the Federal Trade Commission (FTC) the power to decide when children have been made unsafe online and allows parents tosue tech companies if their children have been harmed online. The act has received criticism from both sides of the political spectrum and entities outside of Congress, as it is seen as giving too much power tothe government to regulate online content and could lead to increased censorship by tech companies.
-		- The Supreme Court case Gonzalez v. Google involves the question of whether Google’s algorithmic recommendations supported terrorism and contributed to the 2015 terrorist attacks in Paris. The case has been picked up by the Supreme Court after being passed up by various courts of appeal. It is being heard alongside another case, Twitter v. Tumne, involving the role of Twitter’s algorithms in a terrorist attack in Istanbul. There are two potential outcomes for the case. If the Supreme Court sides with Gonzalez, it could increase the liability of social media companies under Section 230 of the Communications Decency Act, which allows them to moderate content to a limited extent without violating the First Amendment. Alternatively, the Supreme Court could declare Section 230 unconstitutional, which would make online censorship illegal but also hinder the use of algorithms on the internet. The ideal outcome, in theory, would be for the Supreme Court to side with Google and for Congress to change Section 230. However, giving Congress the power to change the law could lead to increased censorship and the potential for abuse of power.
+		- The European Union (EU) has separated its online censorship efforts into two separate bills: the Digital Markets Act and the Digital Services Act. These bills were introduced in December 2020 and are part of the EU’s Digital Services package, which aims to be completed by 2030. The Digital Services package is the second phase of the EU’s digital agenda, which is being enforced through regulation in the public sector and through ESG investing in the private sector. Both the Digital Markets Act and the Digital Services Act were passed in spring 2022 and went into force in autumn 2022, but will not be enforced until later this year and early next year, depending on the size of the relevant entity. The Digital Markets Act aims to increase the EU’s competitiveness in the tech space by imposing massive fines on "gatekeepers," or companies that maintain monopolies by giving preference to their own products and services. This [private] open the door to innovation in cryptocurrency in the EU, but also requires gatekeepers to provide detailed data about the individuals and institutions using their products and services to theE U. The Digital Services Act, on the other hand, aims to regulate the content that is available online, including user-generated content. It does this by requiring companies to remove illegal content within one hour of it being reported and by imposing fines for non-compliance. The act also requires companies to implement measures to protect users from illegal content and from "other forms of harm," which is defined broadly and [private] include a wide range of content. The EU is also in the process of passing the Artificial Intelligence Regulation Act, which will be discussed later this year and is reportedly the first of its kind. All five bills in the EU’s Digital Services package are regulations, meaning they will override the national laws of EU countries. The potential impact on the internet and free expression in the EU is significant, as the Digital Services Act would give the government significant control over online content and restrict the ability of individuals to share their views and perspectives.
+		- In the United States, two significant documents related to online censorship are the Kids Online Safety Act and the Supreme Court caseGonzalez v. Google. The Kids Online Safety Act was introduced inFebruary 2021 and is expected to pass later this year due to bipartisan support. The act requires online services to collect Know Your Customer(KYC) information to ensure that they are not showing harmful content tominors. It also gives the Federal Trade Commission (FTC) the power to decide when children have been made unsafe online and allows parents tosue tech companies if their children have been harmed online. The act has received criticism from both sides of the political spectrum and entities outside of Congress, as it is seen as giving too much power tothe government to regulate online content and [private] lead to increased censorship by tech companies.
+		- The Supreme Court case Gonzalez v. Google involves the question of whether Google’s algorithmic recommendations supported terrorism and contributed to the 2015 terrorist attacks in Paris. The case has been picked up by the Supreme Court after being passed up by various courts of appeal. It is being heard alongside another case, Twitter v. Tumne, involving the role of Twitter’s algorithms in a terrorist attack in Istanbul. There are two potential outcomes for the case. If the Supreme Court sides with Gonzalez, it [private] increase the liability of social media companies under Section 230 of the Communications Decency Act, which allows them to moderate content to a limited extent without violating the First Amendment. Alternatively, the Supreme Court [private] declare Section 230 unconstitutional, which would make online censorship illegal but also hinder the use of algorithms on the internet. The ideal outcome, in theory, would be for the Supreme Court to side with Google and for Congress to change Section 230. However, giving Congress the power to change the law [private] lead to increased censorship and the potential for abuse of power.
 		- In the UK forthcoming legislation will see tech company leaders liablefor [prison sentences](https://www.independent.co.uk/news/uk/politics/bill-mps-iain-duncan-smith-molly-russell-rishi-sunak-b2263353.html) if they fail in their duty to protect minors. This will doubtless lead to both stringent universal requirements for identity proof (KYC), and significantly muted and controlled content on the platforms.
 		- Our research focuses on business to business use cases for distributed technologies, and will provide mechanisms for verifying who is communicating with whom, to avoid falling foul of these swinging global infringements on privacy.
 		- It is the opinion of this book that information should befree[[swartz2008guerilla]]
@@ -1045,28 +820,28 @@ public: true
 		- ##### Key Ideas
 		- 1.  **Leveraging AI and Contextual Data:** The venue will use AI and contextual data to create dynamic narratives and activities tailored to each visitor in real-time. This will revolutionize the resort experience, making it highly personalized and immersive. However, the implementation of AI must be mindful of privacy concerns and be done in a way that respects the data sovereignty of the guests.
 		- 2.  **Tailored Personalization:** Visitors should have the ability to opt into different levels of personalization. Some may want a fully immersive, personalized experience, while others may prefer a more ‘hands off’ experience. This is an important aspect of respecting individual preferences and ensuring that all visitors feel comfortable and catered for.
-		- 3.  **Communication Devices:** Various communication devices could be utilized within the resort to facilitate interactions between visitors and the AI system. These could include badges, wands, glasses, headphones, etc. Each of these devices would contribute to the immersion and thematic consistency of the resort while serving a practical purpose.
-		- 4.  **Biometrics:** The use of biometrics such as gaze tracking and gesture recognition could allow the AI to understand visitor preferences passively. This technology could be incorporated in a non-intrusive way to augment the guest experience without breaching privacy.
-		- 5.  **Data Extraction:** Visitors should have the ability to extract their distilled data or creations, enabling them to continue their vistor experience at home. This could also open up new possibilities for visitors to create and share their own narratives based on their visit experiences. To be clear this should not be the raw data supplied to the venue inferencing engines (which should be destroyed soon after use), but rather a distilled narrative of the inference from the system.
+		- 3.  **Communication Devices:** Various communication devices [private] be utilized within the resort to facilitate interactions between visitors and the AI system. These [private] include badges, wands, glasses, headphones, etc. Each of these devices would contribute to the immersion and thematic consistency of the resort while serving a practical purpose.
+		- 4.  **Biometrics:** The use of biometrics such as gaze tracking and gesture recognition [private] allow the AI to understand visitor preferences passively. This technology [private] be incorporated in a non-intrusive way to augment the guest experience without breaching privacy.
+		- 5.  **Data Extraction:** Visitors should have the ability to extract their distilled data or creations, enabling them to continue their vistor experience at home. This [private] also open up new possibilities for visitors to create and share their own narratives based on their visit experiences. To be clear this should not be the raw data supplied to the venue inferencing engines (which should be destroyed soon after use), but rather a distilled narrative of the inference from the system.
 		- 6.  **Data Privacy:** Data sharing should be underpinned by robust privacy controls to ensure guest data sovereignty. It’s crucial to maintain the trust of the visitors by demonstrating a strong commitment to privacy. This should be externally audited on a regular cadence.
 		- 7.  **Continuous Experience:** The visitor experience should feel continuous before, during, and after the visit. However, it’s important to manage guest expectations and avoid over promising pre-visit AI interactions. Ensuring a smooth transition between these stages will enhance the overall guest experience.
 		- 8.  **Hyper-Personalization:** Hyper-personalization should span the venue. This level of detail will ensure each guest has a unique and highly personalized experience.
 		- 9.  **Adaptive and Immersive Experiences:** The core aim should be to craft continuously adaptive and immersive experiences based on visitor needs and implied preferences. By doing so, the venue can ensure each visitor has a unique, enjoyable, and highly memorable experience, supportive of return visits.
 		- The integration of these concepts will require careful planning and
-		  execution, but the result could be a venue experience like no other, one
+		  execution, but the result [private] be a venue experience like no other, one
 		  that caters to each individual guests and provides an experience that
 		  extends beyond the confines of the experience itself.
 		- ### AI Leviathan
 	 - **State Surveillance and Control:** Explores the potential for states to extend their surveillance capabilities and tighten control over citizens using advanced AI, leading to an Orwellian future where privacy is virtually nonexistent.
 	 - **Implications for Democracy:** Discusses the challenges this scenario poses to democratic norms and individual freedoms, with a focus on the trade-offs between security and liberty.
 		- ### Intelligence Explosion and Societal Shift
-	 - **Hypothetical Breakthroughs:** Details scenarios where AI breakthroughs, akin to everyone having x-ray style glasses, could radically challenge existing norms around privacy, security, and human interaction.
+	 - **Hypothetical Breakthroughs:** Details scenarios where AI breakthroughs, akin to everyone having x-ray style glasses, [private] radically challenge existing norms around privacy, security, and human interaction.
 	 - **Radical Transparency Challenges:** Discusses the implications of such breakthroughs on societal norms, legal frameworks, and individual behaviors, stressing the need for society to anticipate and adapt to these transformative changes.
 		- ### AI as an Informational Tool
 	 - **Increasing Information Resolution:** Describes AI's ability to significantly enhance our understanding of the world, from refactoring legacy code to restoring ancient scrolls, and detecting galaxies in old surveys.
 	 - **Privacy Risks:** Discusses the significant privacy risks posed by AI's ability to turn everyday signals into identifiable data, stressing the need for robust privacy protections and ethical considerations.
 		- ### Oppression Risks
-	 - **Surveillance Capabilities:** Explores the risks of AI-enhanced surveillance, detailing how pervasive monitoring could lead to oppressive societal structures and a significant loss of privacy and autonomy.
+	 - **Surveillance Capabilities:** Explores the risks of AI-enhanced surveillance, detailing how pervasive monitoring [private] lead to oppressive societal structures and a significant loss of privacy and autonomy.
 	 - **Privacy Invasions:** Details the ways in which AI's ability to analyze and interpret personal data can lead to invasions of privacy, emphasizing the need for robust legal protections and ethical constraints.
   - ### 3.  **Verifiable Credentials (VCs)**
   - **Overview**: VCs are a standard for conveying claims about an identity in a way that is cryptographically secure, privacy-respecting, and machine-verifiable.

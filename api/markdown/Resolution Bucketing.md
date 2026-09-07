@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Resolution Bucketing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "Resolution bucketing is a training-data preparation technique for diffusion and other image-generation models that groups training images into a fixed set of aspect-ratio and size buckets rather than forcing every image to a single square resolution. Each batch is drawn from a single bucket so images share dimensions, avoiding distortion from cropping or stretching while preserving GPU batching efficiency. It improves fidelity for non-square data and is a standard step in fine-tuning pipelines such as Kohya-based DreamBooth and LoRA training.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:kohya-dreambooth-and-similar", "label": "KOHYA Dreambooth and similar"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "KOHYA Dreambooth and similar"
+      }
+    ]
   },
   "quality": 0.72
 }

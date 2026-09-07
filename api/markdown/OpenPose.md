@@ -1,8 +1,3 @@
----
-public: true
----
-
-# OpenPose
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "OpenPose is an open-source, real-time multi-person pose estimation library developed at Carnegie Mellon University that simultaneously detects body, hand, face, and foot keypoints from RGB images and video using convolutional neural networks. It employs Part Affinity Fields (PAFs) — a set of 2D vector fields encoding the location and orientation of limb connections — enabling association of detected keypoints into individual skeletons without prior person detection. OpenPose established the part-affinity-field paradigm that underpins many subsequent human pose estimation systems.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:gesture-recognition", "label": "Gesture Recognition"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:virtual-object-pose", "label": "Virtual Object Pose"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-object-pose",
+        "label": "Virtual Object Pose"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - The significance of OpenPose stems from democratising markerless human body tracking for research and application development. It enabled a generation of applications in action recognition, sports analytics, rehabilitation monitoring, dance and choreography analysis, physical therapy assessment, and human-robot collaboration. In AR/VR, OpenPose-derived pose data is used to drive avatar animation without dedicated motion capture suits. Its permissive open-source licence (academic, research use) facilitated widespread adoption and derivative work.
 
   - By 2024-2025, OpenPose has been partially superseded by more efficient top-down systems (HRNet, ViTPose) and by transformer-based models that achieve higher accuracy on standard benchmarks. However, its bottom-up architecture remains valuable in dense crowd scenarios where the number of people is unknown. MediaPipe, Google's production-grade successor framework, draws on similar principles but runs entirely on-device with hardware acceleration. Foundation model approaches are beginning to unify 2D pose, 3D pose, and mesh recovery in single models, pointing toward the next generation of human body understanding.
-

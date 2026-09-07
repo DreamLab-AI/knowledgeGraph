@@ -1,54 +1,102 @@
----
-public: true
----
-
-# Blend Shape
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:blend-shape", "@type":"Page", "title":"Blend Shape", "vc:slug":"blend-shape", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:blend-shape",
+  "@type": "Page",
+  "title": "Blend Shape",
+  "vc:slug": "blend-shape",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:blend-shape",
-  "@type":"Class",
-  "label":"Blend Shape",
-  "definition":"A blend shape, also called a morph target, is a stored deformation of a 3D mesh that is blended with a base shape by a weighted interpolation of vertex positions. By combining multiple blend shapes at varying weights, animators produce smooth transitions between expressions and poses without altering the mesh topology. Blend shapes are central to facial animation, where subtle muscle movements are captured as named targets driven by animation rigs or performance capture.",
-  "domain":"spatial-computing",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:facial-animation","label":"Facial Animation"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blend-shape",
+  "@type": "Class",
+  "label": "Blend Shape",
+  "definition": "A blend shape, also called a morph target, is a stored deformation of a 3D mesh that is blended with a base shape by a weighted interpolation of vertex positions. By combining multiple blend shapes at varying weights, animators produce smooth transitions between expressions and poses without altering the mesh topology. Blend shapes are central to facial animation, where subtle muscle movements are captured as named targets driven by animation rigs or performance capture.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:facial-animation",
+      "label": "Facial Animation"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:animation-rig","label":"Animation Rig"},
-      {"@id":"urn:ngm:class:skeletal-animation","label":"Skeletal Animation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:animation-rig",
+        "label": "Animation Rig"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:facial-animation","label":"Facial Animation"},
-      {"@id":"urn:ngm:class:character-animation","label":"Character Animation"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:facial-animation",
+        "label": "Facial Animation"
+      },
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:avatar","label":"Avatar"},
-      {"@id":"urn:ngm:class:real-time-rendering","label":"Real-Time Rendering"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:animation","label":"Animation"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:skeletal-animation","label":"Skeletal Animation"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:facial-animation","label":"Facial Animation"},
-      {"@id":"urn:ngm:class:character-animation","label":"Character Animation"},
-      {"@id":"urn:ngm:class:avatar","label":"Avatar"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:facial-animation",
+        "label": "Facial Animation"
+      },
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

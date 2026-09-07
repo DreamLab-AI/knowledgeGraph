@@ -1,55 +1,106 @@
----
-public: true
----
-
-# Compiler Optimization
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:compiler-optimization", "@type":"Page", "title":"Compiler Optimization", "vc:slug":"compiler-optimization", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:compiler-optimization",
+  "@type": "Page",
+  "title": "Compiler Optimization",
+  "vc:slug": "compiler-optimization",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:compiler-optimization",
-  "@type":"Class",
-  "label":"Compiler Optimization",
-  "definition":"Compiler optimisation is the set of program transformations a compiler applies to make generated code faster, smaller or more energy-efficient while preserving its observable behaviour. It operates over intermediate representations using analyses such as data-flow and dependence analysis to enable transformations like inlining, loop optimisation and dead-code elimination. Optimisation is central to extracting performance from modern hardware without burdening the programmer.",
-  "domain":"artificial-intelligence",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:compiler","label":"Compiler"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:static-analysis","label":"Static Analysis"},
-      {"@id":"urn:ngm:class:profiling","label":"Profiling"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compiler-optimization",
+  "@type": "Class",
+  "label": "Compiler Optimization",
+  "definition": "Compiler optimisation is the set of program transformations a compiler applies to make generated code faster, smaller or more energy-efficient while preserving its observable behaviour. It operates over intermediate representations using analyses such as data-flow and dependence analysis to enable transformations like inlining, loop optimisation and dead-code elimination. Optimisation is central to extracting performance from modern hardware without burdening the programmer.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:compiler",
+      "label": "Compiler"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:profiling",
+        "label": "Profiling"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:static-analysis","label":"Static Analysis"},
-      {"@id":"urn:ngm:class:bytecode","label":"Bytecode"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:just-in-time-compilation","label":"Just-In-Time Compilation"},
-      {"@id":"urn:ngm:class:profiling","label":"Profiling"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:just-in-time-compilation",
+        "label": "Just-In-Time Compilation"
+      },
+      {
+        "@id": "urn:ngm:class:profiling",
+        "label": "Profiling"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"},
-      {"@id":"urn:ngm:class:optimisation-algorithm","label":"Optimization Algorithm"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimization Algorithm"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:programming-language","label":"Programming Language"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:compiler","label":"Compiler"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"},
-      {"@id":"urn:ngm:class:programming-language","label":"Programming Language"},
-      {"@id":"urn:ngm:class:just-in-time-compilation","label":"Just-In-Time Compilation"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      },
+      {
+        "@id": "urn:ngm:class:just-in-time-compilation",
+        "label": "Just-In-Time Compilation"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

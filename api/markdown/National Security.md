@@ -1,9 +1,3 @@
----
-public: true
----
-
-# National Security
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -26,39 +20,92 @@ public: true
   "definition": "National Security denotes the capacity of a state to protect its citizens, institutions, territorial integrity, and critical interests from foreign and domestic threats spanning military conflict, espionage, terrorism, cyber attack, and economic coercion. It encompasses both hard-power capabilities (armed forces, intelligence agencies, border controls) and soft-power instruments (diplomacy, economic policy, information operations). Modern national security doctrine incorporates cyber resilience, supply-chain integrity, energy security, and AI competitiveness as dimensions of strategic concern. Governance frameworks such as security councils, export-control regimes, and classified classification schemes operationalise national security policy.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:policy", "label": "Policy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:policy",
+      "label": "Policy"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:cybersecurity-policy", "label": "Cybersecurity Policy"},
-      {"@id": "urn:ngm:class:national-ai-strategy", "label": "National Ai Strategy"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      },
+      {
+        "@id": "urn:ngm:class:national-ai-strategy",
+        "label": "National Ai Strategy"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cyber-resilience", "label": "Cyber Resilience"},
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"},
-      {"@id": "urn:ngm:class:cybersecurity-framework", "label": "Cybersecurity Framework"}
+      {
+        "@id": "urn:ngm:class:cyber-resilience",
+        "label": "Cyber Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-framework",
+        "label": "Cybersecurity Framework"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:economic-governance", "label": "Economic Governance"},
-      {"@id": "urn:ngm:class:national-competitiveness", "label": "National Competitiveness"}
+      {
+        "@id": "urn:ngm:class:economic-governance",
+        "label": "Economic Governance"
+      },
+      {
+        "@id": "urn:ngm:class:national-competitiveness",
+        "label": "National Competitiveness"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"},
-      {"@id": "urn:ngm:class:national-competent-authority", "label": "National Competent Authority"}
+      {
+        "@id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "@id": "urn:ngm:class:national-competent-authority",
+        "label": "National Competent Authority"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:policy", "label": "Policy"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cyber-security-and-military", "label": "Cyber Security and Military"},
-      {"@id": "urn:ngm:class:economic-security", "label": "Economic Security"}
+      {
+        "@id": "urn:ngm:class:cyber-security-and-military",
+        "label": "Cyber Security and Military"
+      },
+      {
+        "@id": "urn:ngm:class:economic-security",
+        "label": "Economic Security"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:policy-framework", "label": "Policy Framework"}
+      {
+        "@id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"}
+      {
+        "@id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      }
     ]
   },
   "sameAs": [],

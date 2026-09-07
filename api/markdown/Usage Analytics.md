@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Usage Analytics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Usage analytics is the collection, measurement and interpretation of data describing how users interact with a product, service or platform, including session frequency, feature adoption, retention and engagement patterns. It transforms raw event telemetry into actionable insight for product, design and governance decisions. When applied responsibly it can inform well-being metrics while raising privacy considerations about behavioural tracking.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry & Analytics"}, {"@id": "urn:ngm:class:digital-well-being-index", "label": "Digital Well-Being Index"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry & Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-well-being-index",
+        "label": "Digital Well-Being Index"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transaction Pool
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -87,21 +82,48 @@ public: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:miner", "label": "Miner"},
-      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"}
+      {
+        "@id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
-      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
-      {"@id": "urn:ngm:class:network-synchronization", "label": "Network Synchronization"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"}
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      }
     ]
   },
   "quality": 0.8,
@@ -112,62 +134,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:transaction-pool:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:142e26c735ce337e1a3e8974cf73a0b2dcb30c82d5287188b059676aba3cc870"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DistributedDataStructure]]",
-      "resolved": "urn:visionflow:owl:class:distributed-data-structure",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Pending unconfirmed transactions within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

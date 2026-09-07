@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Data Centers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-data-centers",
   "title": "AI Data Centers",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Financing Structures", "Off-Balance Sheet Vehicles"],
+  "vc:outboundWikilinks": [
+    "Financing Structures",
+    "Off-Balance Sheet Vehicles"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-inference-infrastructure", "label": "AI Inference Infrastructure"}, {"@id": "urn:ngm:class:data-center-power-demand", "label": "Data Center Power Demand"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-center-power-demand",
+        "label": "Data Center Power Demand"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

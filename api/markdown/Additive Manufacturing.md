@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Additive Manufacturing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,44 @@ public: true
   "definition": "Additive manufacturing (AM) is a family of processes that construct three-dimensional objects by depositing, sintering, or photopolymerising material layer by layer from a digital design file, in contrast to subtractive methods that remove material from a solid block. Processes include fused deposition modelling, selective laser sintering, stereolithography, binder jetting, and directed energy deposition, each suited to particular materials and resolution requirements. AM enables on-demand production of complex geometries, personalised products, and distributed manufacturing without the tooling investment of conventional production.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-fabrication", "label": "Digital Fabrication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-fabrication",
+      "label": "Digital Fabrication"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cad-software", "label": "CAD Software"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:cad-software",
+        "label": "CAD Software"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-fabrication", "label": "Digital Fabrication"}
+      {
+        "@id": "urn:ngm:class:digital-fabrication",
+        "label": "Digital Fabrication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin-creation", "label": "Digital Twin Creation"},
-      {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"}
+      {
+        "@id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robotics", "label": "Collaborative Robotics"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
+        "label": "Collaborative Robotics"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +78,3 @@ public: true
   - The application ecosystem spans aerospace (GE Aviation turbine blades, Airbus brackets), medical devices (personalised orthopaedic implants, dental crowns), automotive (Ford, BMW topology-optimised components), consumer electronics, architecture, and food. Distributed manufacturing models use AM to localise production closer to demand, reducing logistics costs and enabling mass customisation. The RepRap movement democratised desktop polymer printing, generating an open-source hardware ecosystem with millions of units deployed globally.
 
   - By 2024–2025, AI-driven topology optimisation and generative design tools (Autodesk Fusion, nTopology) are tightly integrated with AM workflows, automatically producing material-efficient geometries that traditional design methods would not explore. Multi-material and multi-process AM systems are enabling gradient material structures and embedded electronics. Carbon's continuous liquid interface production (CLIP) and HP's Multi Jet Fusion have demonstrated industrial throughput. Sustainability considerations—including powder recyclability, energy consumption, and bio-based material feedstocks—are driving standards development and regulatory scrutiny as AM scales into mainstream manufacturing.
-

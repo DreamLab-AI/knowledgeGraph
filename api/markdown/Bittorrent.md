@@ -1,52 +1,104 @@
----
-public: true
----
-
-# Bittorrent
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:bittorrent", "@type":"Page", "title":"Bittorrent", "vc:slug":"bittorrent", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:bittorrent",
+  "@type": "Page",
+  "title": "Bittorrent",
+  "vc:slug": "bittorrent",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:bittorrent",
-  "@type":"Class",
-  "label":"Bittorrent",
-  "definition":"BitTorrent is a peer-to-peer protocol for distributing files by splitting them into pieces that participants download from and upload to one another rather than from a single server. Each participant who holds the complete file can seed it, while downloaders simultaneously share the pieces they already have, so aggregate capacity grows with demand. The protocol uses content hashing to verify pieces and a tracker or distributed hash table to help peers discover one another.",
-  "domain":"distributed-systems",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:peer-to-peer-network","label":"Peer To Peer Network"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:distributed-hash-table","label":"Distributed Hash Table"},
-      {"@id":"urn:ngm:class:content-addressing","label":"Content Addressing"},
-      {"@id":"urn:ngm:class:overlay-network","label":"Overlay Network"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bittorrent",
+  "@type": "Class",
+  "label": "Bittorrent",
+  "definition": "BitTorrent is a peer-to-peer protocol for distributing files by splitting them into pieces that participants download from and upload to one another rather than from a single server. Each participant who holds the complete file can seed it, while downloaders simultaneously share the pieces they already have, so aggregate capacity grows with demand. The protocol uses content hashing to verify pieces and a tracker or distributed hash table to help peers discover one another.",
+  "domain": "distributed-systems",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:peer-to-peer-network",
+      "label": "Peer To Peer Network"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:file-sharing","label":"File Sharing"},
-      {"@id":"urn:ngm:class:data-distribution","label":"Data Distribution"},
-      {"@id":"urn:ngm:class:distributed-storage","label":"Distributed Storage"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:file-sharing",
+        "label": "File Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:data-distribution",
+        "label": "Data Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:bandwidth","label":"Bandwidth"},
-      {"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:decentralized-storage","label":"Decentralized Storage"},
-      {"@id":"urn:ngm:class:replication","label":"Replication"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:content-delivery-network","label":"Content Delivery Network"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:ipfs","label":"IPFS"},
-      {"@id":"urn:ngm:class:gossip-protocol","label":"Gossip Protocol"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

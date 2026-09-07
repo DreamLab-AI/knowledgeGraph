@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Scene Geometry
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

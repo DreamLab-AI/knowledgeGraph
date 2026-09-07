@@ -1,8 +1,3 @@
----
-public: true
----
-
-# 3GPP
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -154,4 +149,3 @@ public: true
   - 3GPP's working group structure divides responsibility across radio access (RAN groups), service and system aspects (SA groups), and core network and terminals (CT groups). Contributions arrive from hundreds of companies including network equipment vendors (Ericsson, Nokia, Huawei, Samsung), operators (Deutsche Telekom, Verizon, China Mobile), and chipset manufacturers (Qualcomm, MediaTek). The specification process culminates in versioned Technical Specifications (TS) and Technical Reports (TR) that vendors implement in hardware and software.
 
   - In 2024–2025, 3GPP is advancing Release 18 deployment and beginning Release 19 (5G-Advanced phase 2) work, with AI-native air interface components, network energy efficiency mandates, and XR/holographic traffic profiles becoming central themes. Preliminary 6G research is coordinated through Study Items that will feed into a new generation standard targeted for commercial deployment around 2030. The organisation's influence extends into spatial computing, as 5G network capabilities for ultra-low latency and high-bandwidth underpin cloud-rendered XR experiences and real-time digital-twin synchronisation.
-

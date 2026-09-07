@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[multimodal]]
-# Multimodal AI Architecture
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -68,17 +62,38 @@ elevatedFrom:: [[multimodal]]
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
     ]
   },
   "quality": 0.5,
@@ -89,47 +104,6 @@ elevatedFrom:: [[multimodal]]
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:multimodal:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3fda57b31377bd10949cd2e8a47a4cc349f83e42f50ef67a266c85d85f98726b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Apple Inc Technology Corporation]]",
-      "resolved": "urn:visionflow:owl:class:apple",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Large Language Models]]",
-      "resolved": "urn:visionflow:owl:class:large-language-models",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Multimodal]]",
-      "resolved": "urn:visionflow:owl:class:multimodal",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Variational Autoencoders]]",
-      "resolved": "urn:visionflow:owl:class:variational-autoencoders",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Multimodal AI refers to artificial intelligence systems that process, fuse, and generate content across multiple data modalities—including text, images, audio, video, and 3D—within a unified model architecture. Multimodal systems learn cross-modal alignments through joint embedding spaces, enabling capabilities such as image captioning, visual question answering, text-to-image synthesis, and real-time audio-visual understanding that single-modality models cannot achieve.

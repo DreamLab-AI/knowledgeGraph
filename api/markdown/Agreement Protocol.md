@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Agreement Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -116,27 +111,66 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:node", "label": "Node"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ]
   },
   "provenance": {
@@ -146,102 +180,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:agreement-protocol:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f028ba27d2cb2ff9b3b358839aacc08c2663b44960bbfa1711677f95223fbfa1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[BFT Consensus]]",
-      "resolved": "urn:visionflow:linked:bft-consensus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Byzantine Agreement]]",
-      "resolved": "urn:visionflow:linked:byzantine-agreement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Byzantine Agreement Papers]]",
-      "resolved": "urn:visionflow:linked:byzantine-agreement-papers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Crash Fault Tolerant Agreement]]",
-      "resolved": "urn:visionflow:linked:crash-fault-tolerant-agreement",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[FLP Impossibility]]",
-      "resolved": "urn:visionflow:linked:flp-impossibility",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Paxos]]",
-      "resolved": "urn:visionflow:linked:paxos",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Paxos and Raft Consensus]]",
-      "resolved": "urn:visionflow:linked:paxos-and-raft-consensus",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PBFT]]",
-      "resolved": "urn:visionflow:linked:pbft",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[PBFT Algorithm]]",
-      "resolved": "urn:visionflow:linked:pbft-algorithm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[BlockchainDomain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[ConceptualLayer]]",
-      "resolved": "urn:visionflow:owl:class:conceptual-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Consensus Mechanism]]",
-      "resolved": "urn:visionflow:owl:class:consensus-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Protocol]]",
-      "resolved": "urn:visionflow:owl:class:distributed-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Nakamoto Consensus]]",
-      "resolved": "urn:visionflow:owl:class:nakamoto-consensus",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants. Agreement protocols must satisfy safety (all honest nodes agree on the same value), liveness (the protocol eventually terminates), and validity (the agreed value was proposed by some participant), and their design space is constrained by impossibility results such as the FLP theorem and Byzantine Agreement bounds requiring at least 3f+1 nodes to tolerate f Byzantine failures.

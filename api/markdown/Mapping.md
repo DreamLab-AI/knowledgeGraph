@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mapping
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -180,4 +175,3 @@ public: true
   - Mapping is significant across robotics (environment reconstruction), autonomous vehicles (HD map creation), AR/VR (spatial anchor placement), enterprise data integration (ETL schema alignment), and AI interpretability (latent-space topology). In spatial AI systems the quality of the underlying map directly governs the reliability of downstream perception, planning, and decision-making. In knowledge engineering, accurate mapping enables interoperability between heterogeneous data sources.
 
   - Through 2024-2025, neural implicit representations such as NeRF and 3D Gaussian Splatting have begun to supplant classical voxel or point-cloud maps for photorealistic environment modelling. Foundation models are increasingly used to perform zero-shot semantic mapping, annotating reconstructed scenes with open-vocabulary labels. Federated and privacy-preserving mapping protocols are emerging to allow collaborative map-building without centralising raw sensor data, a trend that will intensify as robotics fleets scale.
-

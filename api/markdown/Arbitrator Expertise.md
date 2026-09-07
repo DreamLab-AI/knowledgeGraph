@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Arbitrator Expertise
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -107,72 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:arbitrator-expertise:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:ef2902f7cbc0b491a1e01606c6e29c5aca6d682c845d19b3b02e00121152ec14"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Blockchain Knowledge]]",
-      "resolved": "urn:visionflow:linked:blockchain-knowledge",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fair Outcomes]]",
-      "resolved": "urn:visionflow:linked:fair-outcomes",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Industry Experience]]",
-      "resolved": "urn:visionflow:linked:industry-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Informed Decision Making]]",
-      "resolved": "urn:visionflow:linked:informed-decision-making",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Legal Training]]",
-      "resolved": "urn:visionflow:linked:legal-training",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Professional Qualification]]",
-      "resolved": "urn:visionflow:linked:professional-qualification",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Technical Evidence Evaluation]]",
-      "resolved": "urn:visionflow:linked:technical-evidence-evaluation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Arbitrator Expertise in blockchain and digital asset contexts refers to the specialized technical knowledge, legal background, and industry experience required by neutral decision-makers to understand distributed ledger technology, smart contracts, tokenomics, and crypto-asset classification for informed dispute resolution.

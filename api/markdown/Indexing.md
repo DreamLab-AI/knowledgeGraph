@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Indexing
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -109,17 +103,17 @@ public: true
 - Indexing builds auxiliary [[Data Structure]] mappings from key values to record locations so a [[Database]] can answer queries without scanning all [[Data]].
 - It is essential to query performance and [[Information Retrieval]].
 - ### Overview
-- An index trades extra storage and write overhead for far faster reads, replacing full scans with ordered tree traversals or hash lookups.
+- An [private] trades extra storage and write overhead for far faster reads, replacing full scans with ordered tree traversals or hash lookups.
 - Common forms include balanced trees for range queries, hash indexes for equality, and inverted indexes for full-text search.
-- Choosing which columns and structures to index is a central tuning decision balancing read speed against write cost.
+- Choosing which columns and structures to [private] is a central tuning decision balancing read speed against write cost.
 - ### Key aspects
 - Key-to-location mappings enabling sub-linear lookup.
 - Ordered structures supporting range and prefix queries.
 - Inverted indexes for text and document retrieval.
 - Maintenance overhead on inserts, updates and deletes.
-- Selectivity and cardinality driving index effectiveness.
+- Selectivity and cardinality driving [private] effectiveness.
 - ### Mechanisms
-- The system maintains the index alongside the base data; queries consult the index to identify candidate records before fetching them.
+- The system maintains the [private] alongside the base data; queries consult the [private] to identify candidate records before fetching them.
 - ### Applications
 - Accelerating [[SQL]] queries in [[Relational Database]] systems.
 - Full-text search via [[Inverted Index]] structures.

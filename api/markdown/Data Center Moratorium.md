@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Center Moratorium
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,15 @@ public: true
   "vc:slug": "data-center-moratorium",
   "title": "Data Center Moratorium",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Infrastructure Regulation", "Data Center Moratorium Economics", "Hyperscaler Community Relations", "Infrastructure Externalities", "Local AI Regulation", "New York State", "Regional AI Market"],
+  "vc:outboundWikilinks": [
+    "AI Infrastructure Regulation",
+    "Data Center Moratorium Economics",
+    "Hyperscaler Community Relations",
+    "Infrastructure Externalities",
+    "Local AI Regulation",
+    "New York State",
+    "Regional AI Market"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +29,23 @@ public: true
   "domain": "governance",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}, {"@id": "urn:ngm:class:ai-infrastructure-regulation", "label": "AI Infrastructure Regulation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure-regulation",
+        "label": "AI Infrastructure Regulation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

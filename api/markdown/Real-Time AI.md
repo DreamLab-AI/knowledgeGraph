@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "Real-Time AI refers to the application of artificial intelligence inference within strict latency bounds — typically sub-second to sub-millisecond — required for time-sensitive tasks such as autonomous driving, robotics control, live speech processing, financial trading, and augmented reality. It integrates specialised hardware (NPUs, GPUs, FPGAs), optimised model representations (quantisation, pruning, TensorRT/ONNX), and edge deployment architectures to ensure deterministic response times. The distinction from batch AI lies in the hard or soft real-time constraints that govern system correctness.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:real-time-computation", "label": "Real-Time Computation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:real-time-computation",
+      "label": "Real-Time Computation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:npu", "label": "NPU"}
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:npu",
+        "label": "NPU"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-inference-at-edge", "label": "Real-Time Inference at Edge"},
-      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {
+        "@id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
     ]
   },
   "quality": 0.8
@@ -61,4 +88,3 @@ public: true
   - Real-Time AI is commercially significant across autonomous systems (perception and control loops must execute in <50 ms), industrial automation (robot reflexes require sub-10 ms response), financial trading (signals must be acted on in microseconds), live audio/video AI (echo cancellation, background removal at 10 ms), and AR/VR (the 7-11 ms motion-to-photon budget leaves minimal headroom for AI inference). The convergence of 5G edge compute and on-device NPU proliferation is expanding the envelope of what can be accomplished in real time outside the data centre.
 
   - In 2025, hardware advances have made multi-billion parameter model inference feasible at low latency: Apple M4 chips run 70B-class LLM inference locally; Qualcomm Snapdragon X Elite benchmarks sub-100 ms response for 7B models. Speculative decoding, continuous batching, and flash-attention variants have pushed server-side inference latencies below 200 ms for large models. Edge AI inference chips from Hailo, Kneron, and BrainChip target the sub-5 W embedded tier. The open challenge remains reliable worst-case latency guarantees (jitter) for safety-critical applications, where statistical performance guarantees are insufficient.
-

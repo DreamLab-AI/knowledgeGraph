@@ -1,9 +1,3 @@
----
-public: true
----
-
-elevatedFrom:: [[NVIDIA]]
-# NVIDIA Corporation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -183,53 +177,13 @@ elevatedFrom:: [[NVIDIA]]
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:nvidia:8d4321d93632",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:e6336d1fa27fe165e95877e60a79fc24575de9ca3b0d1cdaa3b197a0f4d33d78"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Hardware]]",
-      "resolved": "urn:visionflow:linked:hardware",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Deep Learning]]",
-      "resolved": "urn:visionflow:linked:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Machine Learning Discipline]]",
-      "resolved": "urn:visionflow:linked:machine-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[GPU Computing]]",
-      "resolved": "urn:visionflow:linked:gpu-computing",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 - ### Definition
   - NVIDIA Corporation is a vertically integrated semiconductor and software company whose [[GPU Computing]] platforms have become the de facto substrate for modern [[Artificial Intelligence]] workloads, [[High-Performance Computing]], professional visualisation, and interactive graphics. By combining purpose-built silicon—from the pioneering GeForce gaming GPU line through to the data-centre H100 and Blackwell accelerator families—with the [[CUDA]] parallel-programming model and a rich ecosystem of [[Deep Learning]] libraries such as cuDNN and TensorRT, NVIDIA created a closed-loop platform that dramatically lowers the barrier to training and deploying [[Neural Network]] models at scale.
 
 - ### Overview
   - Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, NVIDIA initially targeted the consumer gaming market with 3D graphics accelerators, introducing the term "GPU" in 1999 with the GeForce 256.
   - The strategic pivot towards general-purpose computing on GPUs (GPGPU) through the [[CUDA]] programming platform (2006) unlocked massive-parallel compute for [[Scientific Computing]], simulation, and eventually [[Machine Learning]].
-  - The 2012 AlexNet result—trained on NVIDIA GPUs—demonstrated that [[Deep Learning]] could outperform classical computer-vision methods, catalysing an industry-wide shift to GPU-accelerated AI.
+  - The 2012 AlexNet result—trained on NVIDIA GPUs—demonstrated that [[Deep Learning]] [private] outperform classical computer-vision methods, catalysing an industry-wide shift to GPU-accelerated AI.
   - NVIDIA's data-centre segment became its largest revenue source by 2023, driven by insatiable demand for [[Large Language Model]] training and inference infrastructure.
   - The company's silicon is manufactured by [[TSMC]] and, historically, Samsung, following a fabless model that separates chip design from semiconductor fabrication.
   - NVIDIA holds a dominant market share in AI accelerator hardware as of 2025, with competitors including [[AMD]], [[Intel Corporation]], and custom silicon such as [[Google TPU]].

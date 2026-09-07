@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Arcore
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -15,6 +10,7 @@ public: true
   "vc:outboundWikilinks": []
 }
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -111,6 +107,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
   - ARCore is Google's software development kit for building augmented-reality applications on Android and, via web standards, the browser. It provides motion tracking, environmental understanding and light estimation by fusing camera frames with inertial sensors to anchor virtual content in the physical world. ARCore is the principal counterpart to Apple's ARKit in the mobile-AR ecosystem.
   - Related concepts: [[Augmented Reality]] [[Visual SLAM]] [[Spatial Anchors]] [[Depth Estimation]] [[Camera Calibration]]

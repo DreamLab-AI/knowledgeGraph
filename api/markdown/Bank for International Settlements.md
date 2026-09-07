@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Bank for International Settlements
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:bank-for-international-settlements", "@type":"Page", "title":"Bank for International Settlements", "vc:slug":"bank-for-international-settlements", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:bank-for-international-settlements",
+  "@type": "Page",
+  "title": "Bank for International Settlements",
+  "vc:slug": "bank-for-international-settlements",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -16,50 +21,105 @@ public: true
   "domain": "finance",
   "maturity": "mature",
   "subClassOf": [
-    { "@id": "urn:ngm:class:central-bank", "label": "Central Bank" }
+    {
+      "@id": "urn:ngm:class:central-bank",
+      "label": "Central Bank"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:basel-committee-on-banking-supervision", "label": "Basel Committee on Banking Supervision" },
-      { "@id": "urn:ngm:class:bis-innovation-hub", "label": "BIS Innovation Hub" }
+      {
+        "@id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "@id": "urn:ngm:class:bis-innovation-hub",
+        "label": "BIS Innovation Hub"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:international-financial-system", "label": "International Financial System" }
+      {
+        "@id": "urn:ngm:class:international-financial-system",
+        "label": "International Financial System"
+      }
     ],
     "standardizedBy": [
-      { "@id": "urn:ngm:class:basel-accords", "label": "Basel Accords" }
+      {
+        "@id": "urn:ngm:class:basel-accords",
+        "label": "Basel Accords"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:financial-stability", "label": "Financial Stability" },
-      { "@id": "urn:ngm:class:monetary-policy-coordination", "label": "Monetary Policy Coordination" }
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy-coordination",
+        "label": "Monetary Policy Coordination"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments" },
-      { "@id": "urn:ngm:class:central-bank-cooperation", "label": "Central Bank Cooperation" }
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-cooperation",
+        "label": "Central Bank Cooperation"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:banking-regulation", "label": "Banking Regulation" }
+      {
+        "@id": "urn:ngm:class:banking-regulation",
+        "label": "Banking Regulation"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:economic-research", "label": "Economic Research" }
+      {
+        "@id": "urn:ngm:class:economic-research",
+        "label": "Economic Research"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:international-cooperation", "label": "International Cooperation" }
+      {
+        "@id": "urn:ngm:class:international-cooperation",
+        "label": "International Cooperation"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency" }
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:international-monetary-fund", "label": "International Monetary Fund" },
-      { "@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board" },
-      { "@id": "urn:ngm:class:swift", "label": "SWIFT" }
+      {
+        "@id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "@id": "urn:ngm:class:swift",
+        "label": "SWIFT"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:bis", "label": "BIS" }
+    {
+      "@id": "urn:ngm:class:bis",
+      "label": "BIS"
+    }
   ],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

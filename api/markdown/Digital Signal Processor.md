@@ -1,11 +1,14 @@
----
-public: true
----
-
-# Digital Signal Processor
-
 ```json-ld
-{"@context": "https://narrativegoldmine.com/ns/v1", "@id": "urn:visionflow:page:digital-signal-processor", "@type": "Page", "title": "Digital Signal Processor", "vc:slug": "digital-signal-processor", "vc:public": true, "vc:schemaVersion": 2, "vc:outboundWikilinks": []}
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:digital-signal-processor",
+  "@type": "Page",
+  "title": "Digital Signal Processor",
+  "vc:slug": "digital-signal-processor",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

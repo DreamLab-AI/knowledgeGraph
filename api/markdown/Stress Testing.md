@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Stress Testing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

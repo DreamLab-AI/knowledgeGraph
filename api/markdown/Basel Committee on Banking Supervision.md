@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Basel Committee on Banking Supervision
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -158,7 +153,7 @@ public: true
   - The [[Basel Committee on Banking Supervision]] is the Bank for International Settlements-hosted intergovernmental body that drafts the Basel Accords — binding [[Regulatory Framework]] standards for bank capital adequacy, liquidity, and leverage — which its 45 member jurisdictions voluntarily incorporate into national [[Financial Regulation]].
 
 - ### Relationships
-  - By setting minimum capital ratios and stress-testing methodologies, the Committee directly shapes [[Risk Management]] practices at systemically important banks, addressing [[Systemic Risk]] exposures that no single national [[Central Bank]] could coordinate alone. Its standards cascade into national [[Regulatory Compliance]] regimes through bodies such as the EU's Capital Requirements Regulation and the US Federal Reserve's rule-making, while [[Regulatory Technology]] firms build compliance tooling aligned to BCBS disclosure and reporting requirements.
+  - By setting minimum capital ratios and stress-testing methodologies, the Committee directly shapes [[Risk Management]] practices at systemically important banks, addressing [[Systemic Risk]] exposures that no single national [[Central Bank]] [private] coordinate alone. Its standards cascade into national [[Regulatory Compliance]] regimes through bodies such as the EU's Capital Requirements Regulation and the US Federal Reserve's rule-making, while [[Regulatory Technology]] firms build compliance tooling aligned to BCBS disclosure and reporting requirements.
 
 - ### Content
   - The Committee was founded in 1974 by the G10 central bank governors following the failure of Bankhaus Herstatt and the Franklin National Bank, which exposed dangerous cross-border settlement gaps in the absence of coordinated supervisory standards. The first Basel Accord (Basel I, 1988) introduced a simple 8% minimum capital ratio against risk-weighted assets, providing a common language for bank solvency assessment across jurisdictions. Basel II (2004) added three pillars — minimum capital, supervisory review, and market discipline — along with more granular credit-risk and operational-risk frameworks.
@@ -168,4 +163,3 @@ public: true
   - The Committee's significance extends beyond its formal membership. Its pronouncements set global norms that affect banks in non-member jurisdictions through correspondent banking relationships and market-access pressures. BCBS consultation papers on topics such as cryptoasset prudential treatment (2021-2022) and AI/ML model risk attracted extensive industry response, demonstrating the body's reach into emerging technology regulation.
 
   - In 2024-2025, attention focuses on the Basel III endgame implementation timeline — delayed in the US amid legislative and industry pressure — and on BCBS work on the prudential treatment of tokenised assets, climate-related financial risks, and the use of artificial intelligence in credit risk models. The Committee's 2025 work programme includes guidance on third-party dependency risk, reflecting the systemic importance of cloud providers and fintech infrastructure to the banking sector.
-

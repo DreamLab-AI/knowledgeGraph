@@ -1,60 +1,111 @@
----
-public: true
----
-
-# Stack Machine
-```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:stack-machine", "@type":"Page", "title":"Stack Machine", "vc:slug":"stack-machine", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
-```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:stack-machine",
-  "@type":"Class",
-  "label":"Stack Machine",
-  "definition":"A stack machine is an execution model in which operands and intermediate results are held on a last-in-first-out stack rather than in named registers, with instructions implicitly consuming their inputs from the top of the stack and pushing their outputs back onto it. The model yields compact, position-independent bytecode and a simple deterministic evaluator, which is why it underpins many scripting languages and blockchain virtual machines such as Bitcoin Script and the Ethereum Virtual Machine.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:execution-model","label":"Execution Model"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:bytecode","label":"Bytecode"}
-    ],
-    "implements":[
-      {"@id":"urn:ngm:class:execution-model","label":"Execution Model"}
-    ],
-    "enables":[
-      {"@id":"urn:ngm:class:bitcoin-script","label":"Bitcoin Script"},
-      {"@id":"urn:ngm:class:ethereum-smart-contract-platform-virtual-machine","label":"Ethereum Virtual Machine"}
-    ],
-    "partOf":[
-      {"@id":"urn:ngm:class:virtual-machine","label":"Virtual Machine"}
-    ],
-    "supports":[
-      {"@id":"urn:ngm:class:script","label":"Script"}
-    ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:virtual-machine","label":"Virtual Machine"}
-    ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:taproot","label":"Taproot"},
-      {"@id":"urn:ngm:class:bitcoin","label":"Bitcoin"}
-    ],
-    "requires":[
-      {"@id":"urn:ngm:class:bytecode","label":"Bytecode"}
-    ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:virtual-machine","label":"Virtual Machine"}
-    ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:execution-model","label":"Execution Model"}
-    ]
-  },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:stack-machine",
+  "@type": "Page",
+  "title": "Stack Machine",
+  "vc:slug": "stack-machine",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
 }
 ```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:stack-machine",
+  "@type": "Class",
+  "label": "Stack Machine",
+  "definition": "A stack machine is an execution model in which operands and intermediate results are held on a last-in-first-out stack rather than in named registers, with instructions implicitly consuming their inputs from the top of the stack and pushing their outputs back onto it. The model yields compact, position-independent bytecode and a simple deterministic evaluator, which is why it underpins many scripting languages and blockchain virtual machines such as Bitcoin Script and the Ethereum Virtual Machine.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:execution-model",
+      "label": "Execution Model"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:script",
+        "label": "Script"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
 - ### Definition
 - A [[Stack Machine]] is an [[Execution Model]] that evaluates programs using a last-in-first-out operand stack rather than registers. Instructions read their arguments from the top of the stack and push their results back, producing compact [[Bytecode]] that is widely used by [[Bitcoin Script]] and the [[Ethereum Virtual Machine]].
 - ### Overview

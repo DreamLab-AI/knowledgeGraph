@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Software System
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,14 +7,31 @@ public: true
   "title": "Software System",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:system", "vc:label": "System"},
-    {"@id": "urn:visionflow:linked:algorithm", "vc:label": "Algorithm"},
-    {"@id": "urn:visionflow:linked:software-architecture", "vc:label": "Software Architecture"},
-    {"@id": "urn:visionflow:linked:distributed-system", "vc:label": "Distributed System"}
+    {
+      "@id": "urn:visionflow:linked:system",
+      "vc:label": "System"
+    },
+    {
+      "@id": "urn:visionflow:linked:algorithm",
+      "vc:label": "Algorithm"
+    },
+    {
+      "@id": "urn:visionflow:linked:software-architecture",
+      "vc:label": "Software Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:distributed-system",
+      "vc:label": "Distributed System"
+    }
   ],
   "vc:schemaVersion": 2,
-  "prov:wasAttributedTo": {"@id": "did:nostr:ontology-mesh"},
-  "prov:generatedAtTime": {"@value": "2026-08-06T00:00:00Z", "@type": "xsd:dateTime"}
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:ontology-mesh"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-08-06T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -38,15 +50,30 @@ public: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"}
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:backward-compatibility", "label": "Backward Compatibility"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      }
     ]
   },
   "quality": 0.8,

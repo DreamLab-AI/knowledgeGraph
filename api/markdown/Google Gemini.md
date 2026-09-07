@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Google Gemini
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Google Gemini is a family of natively multimodal large language models developed by Google DeepMind, capable of reasoning across text, images, audio, video, and code. Released in tiers (such as Ultra, Pro, Flash, and Nano) it spans data-centre to on-device deployment and powers Google's assistant and developer APIs. It is a leading frontier model used for chat assistants, agents, and integrated productivity tools.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gpts-and-custom-assistants", "label": "GPTs and Custom Assistants"}, {"@id": "urn:ngm:class:agentic-internet", "label": "Agentic Internet"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpts-and-custom-assistants",
+        "label": "GPTs and Custom Assistants"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
+    ]
   },
   "quality": 0.72
 }

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Multi Objective Optimisation
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

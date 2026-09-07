@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Scroll
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:scroll:e16a9d4d1cf9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c31b7db7f1fddbf3791860559e30aadc3b36a34aa15b7eae53a0987fc678c0e4"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Ethereum Smart Contract Platform]]",
-      "resolved": "urn:visionflow:linked:ethereum",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[PLONK]]",
-      "resolved": "urn:visionflow:linked:plonk",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[DeFi]]",
-      "resolved": "urn:visionflow:linked:de-fi",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rollup]]",
-      "resolved": "urn:visionflow:linked:rollup",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Layer 2 Scaling]]",
-      "resolved": "urn:visionflow:linked:layer-2-scaling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://scroll.io]]",
-      "resolved": "urn:visionflow:linked:https-scroll-io",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://docs.scroll.io]]",
-      "resolved": "urn:visionflow:linked:https-docs-scroll-io",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Scroll is an Ethereum layer-two network that uses zero-knowledge rollup technology to scale transactions while remaining compatible with the Ethereum Virtual Machine. It posts validity proofs to Ethereum.

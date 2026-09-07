@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Productivity Gains
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-productivity-gains",
   "title": "AI Productivity Gains",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Anthropic Economic Index", "Task Time Savings"],
+  "vc:outboundWikilinks": [
+    "Anthropic Economic Index",
+    "Task Time Savings"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,27 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:intelligent-automation", "label": "Intelligent Automation"}, {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"}, {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Risk Weighted Assets
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

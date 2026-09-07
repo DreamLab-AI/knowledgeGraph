@@ -1,8 +1,3 @@
----
-public: true
----
-
-# power management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,7 +192,7 @@ public: true
     - Synchronous rectification and soft-switching techniques minimise switching losses
   - **[[Power Distribution Unit]] (PDU)**
     - Routes power from primary supply to subsystem rails with per-rail fusing and over-current protection
-    - Implements sequenced power-on/power-off to avoid inrush current surges that could brown-out sensitive rails
+    - Implements sequenced power-on/power-off to avoid inrush current surges that [private] brown-out sensitive rails
     - Often integrates current and voltage sensing for system-level energy telemetry
   - **Voltage Regulators and Load Switches**
     - Linear regulators (LDO) provide low-noise regulation for analogue and RF subsystems where switching noise is intolerable

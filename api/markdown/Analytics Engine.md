@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Analytics Engine
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,20 +20,46 @@ public: true
   "definition": "A software system or distributed platform that ingests, processes, and analyses large volumes of structured and unstructured data to extract insights, detect patterns, and support decision-making. Analytics engines abstract the complexity of distributed query execution, storage management, and statistical computation behind APIs and query interfaces, enabling analysts and applications to perform exploratory, diagnostic, predictive, and prescriptive analysis at scale. They serve as the computational backbone of business intelligence platforms, ML pipelines, and real-time operational monitoring systems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-analytics",
+      "label": "Data Analytics"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"},
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:emotional-analytics-engine", "label": "Emotional Analytics Engine"},
-      {"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry & Analytics"}
+      {
+        "@id": "urn:ngm:class:emotional-analytics-engine",
+        "label": "Emotional Analytics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry & Analytics"
+      }
     ]
   },
   "quality": 0.8
@@ -59,4 +80,3 @@ public: true
   - The ecosystem has evolved towards unified analytics platforms that consolidate batch, streaming, and ML workloads on a shared engine. Databricks (Spark-based), Google BigQuery, Snowflake, and Amazon Redshift represent the dominant cloud-hosted implementations. Open table formats—Apache Iceberg, Delta Lake, Apache Hudi—decouple storage from engine, enabling multiple analytics engines to query the same dataset concurrently with ACID guarantees.
 
   - By 2024–2025, analytics engines are increasingly embedding ML inference natively—allowing models to be called within SQL queries or streaming pipelines without data export—and integrating with generative AI interfaces that translate natural language questions into analytical queries. The boundary between analytics engines and [[Machine Learning Platform]] systems continues to blur, with major vendors offering unified platforms that span data ingestion, feature engineering, model training, and inference serving within a single governance domain.
-

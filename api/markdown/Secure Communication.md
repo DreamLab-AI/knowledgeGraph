@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Secure Communication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

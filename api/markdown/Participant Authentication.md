@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Participant Authentication
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -95,42 +90,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:participant-authentication:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7ff0e9e52489a87056096086f40a23a716da920c596f5cdda085b061696794eb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Secure Virtual Events]]",
-      "resolved": "urn:visionflow:linked:secure-virtual-events",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Identity Management]]",
-      "resolved": "urn:visionflow:owl:class:identity-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of verifying the identity of users in virtual environments, events, and metaverse platforms through methods including multi-factor authentication, biometrics, blockchain-based identity, and AI-powered verification to prevent impersonation and ensure secure access.

@@ -1,11 +1,16 @@
----
-public: true
----
-
-# Network Congestion
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:network-congestion", "@type":"Page", "title":"Network Congestion", "vc:slug":"network-congestion", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:network-congestion",
+  "@type": "Page",
+  "title": "Network Congestion",
+  "vc:slug": "network-congestion",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
+
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
@@ -106,6 +111,7 @@ public: true
   }
 }
 ```
+
 - ### Definition
 - Network congestion is the state in which demand for capacity exceeds available throughput, queuing transactions and pushing up fees. On a [[Blockchain]] it manifests as a saturated [[Mempool]] and rising [[Gas Fee]] and [[Transaction Fee]] driven by the [[Fee Market]].
 - ### Overview

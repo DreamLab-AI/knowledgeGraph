@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Wireless Connectivity
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -206,47 +201,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:wireless-connectivity:199c0835573c",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b7a51e6da29d50cb3325d50202bc09ca430e3c144fab7555b6c8859b0254a961"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Communication Protocol]]",
-      "resolved": "urn:visionflow:linked:communication-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Communication]]",
-      "resolved": "urn:visionflow:linked:real-time-communication",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Internet of Things]]",
-      "resolved": "urn:visionflow:linked:internet-of-things",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[5G]]",
-      "resolved": "urn:visionflow:linked:5-g",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Wireless connectivity is the transmission of data between devices over radio frequencies without physical cabling. It spans short-range links such as Wi-Fi and Bluetooth and wide-area mobile networks such as 5G.

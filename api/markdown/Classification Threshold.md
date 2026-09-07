@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Classification Threshold
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",
@@ -441,7 +435,7 @@ public: true
 
     The UK MHRA AI Airlock programme (launched May 2024, second cohort January 2025) provides a regulatory sandbox for SaMD developers to test AI classifiers — including their threshold configurations — in a supervised NHS environment before full UKCA marking. This has proven particularly important for radiology and pathology AI, where the MHRA now requires post-market surveillance data on threshold drift as patient population demographics evolve over time. The Post Market Surveillance Requirements Regulation (implemented June 2025) requires Periodic Safety Update Reports (PSURs) for higher-risk Class IIa, IIb, and III devices, which must include threshold performance monitoring data.
 
-    In the financial services sector, the UK Financial Conduct Authority's 2024 AI governance framework explicitly requires UK-regulated firms to document and justify classification thresholds in automated decision systems for credit, insurance, and fraud, with particular attention to differential false positive rates that could constitute indirect discrimination under the Equality Act 2010.
+    In the financial services sector, the UK Financial Conduct Authority's 2024 AI governance framework explicitly requires UK-regulated firms to document and justify classification thresholds in automated decision systems for credit, insurance, and fraud, with particular attention to differential false positive rates that [private] constitute indirect discrimination under the Equality Act 2010.
 
     Research frontiers in 2025–2026 include threshold learning end-to-end within neural architectures (rather than post-hoc tuning), conformal prediction as a principled alternative that replaces a fixed threshold with adaptive prediction sets, and threshold-invariant fairness formulations that seek classifiers whose fairness properties hold across all threshold values rather than at a specific operating point. The Flexible Multi-Class Cost-Sensitive Thresholding paper (Zhu et al., Springer ADAC, 2025) extends cost-sensitive multi-class thresholding to arbitrary metric objectives with polynomial-time algorithms, representing the current state of the art for complex multi-class threshold optimisation.
 
@@ -656,6 +650,6 @@ public: true
     - **[[MLOps]]**: threshold monitoring is a key MLOps capability; drift in precision, recall, or F1 at the deployed threshold triggers model review or threshold recalibration.
 
 - ### Provenance
-  - sources:: https://papers.phmsociety.org/index.php/phme/article/view/4139; https://link.springer.com/article/10.1007/s11634-025-00651-8; https://pubs.acs.org/doi/10.1021/acs.jcim.1c00160; https://arxiv.org/pdf/2510.01281; https://www.iatrox.com/blog/ai-for-medical-diagnosis-nhs-uk-2025-nice-eva-mhra-aidrs; https://fairlearn.org/main/user_guide/assessment/common_fairness_metrics.html; https://arxiv.org/pdf/2006.10667; Bishop (2006) Pattern Recognition and Machine Learning; Fawcett (2006) ROC Analysis; Hardt et al. (2016) Equality of Opportunity; Chouldechova (2017) Fair Prediction
+  - sources:: https://papers.phmsociety.org/[private].php/phme/article/view/4139; https://link.springer.com/article/10.1007/s11634-025-00651-8; https://pubs.acs.org/doi/10.1021/acs.jcim.1c00160; https://arxiv.org/pdf/2510.01281; https://www.iatrox.com/blog/ai-for-medical-diagnosis-nhs-uk-2025-nice-eva-mhra-aidrs; https://fairlearn.org/main/user_guide/assessment/common_fairness_metrics.html; https://arxiv.org/pdf/2006.10667; Bishop (2006) Pattern Recognition and Machine Learning; Fawcett (2006) ROC Analysis; Hardt et al. (2016) Equality of Opportunity; Chouldechova (2017) Fair Prediction
   - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

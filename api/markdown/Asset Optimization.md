@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Optimization
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "Asset Optimization is the systematic process of reducing the computational cost, memory footprint, and bandwidth consumption of digital assets while preserving their perceptual quality and functional correctness for target deployment environments. It applies techniques including polygon reduction, texture compression, audio resampling, and level-of-detail generation to ensure assets perform acceptably on constrained hardware.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"},
-      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"}
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:asset-pipeline", "label": "Asset Pipeline"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - Mobile and XR platforms impose the most stringent constraints, as thermal envelopes and battery life strictly limit sustained GPU and CPU draw. Asset optimization for mobile targets polygon counts under 10,000 per character, textures under 1024×1024, and compressed audio at 64–128 kbps. Streaming games and cloud rendering partially relieve client constraints by moving computation server-side, but introduce network latency and bandwidth requirements that mandate efficient asset streaming formats (Basis Universal, KTX2 for textures; progressive mesh streaming for geometry).
 
   - As of 2024–2025, neural compression methods — including neural texture compression (NVIDIA's NTC) and neural geometry representations (Instant NGP-based streaming) — are entering production toolchains, offering better perceptual quality at lower bitrates than classical formats for certain asset classes. Real-time Nanite and virtual shadowing maps in Unreal Engine 5 have shifted the optimization problem from pre-baked LOD to runtime virtualized geometry, requiring new artist workflows and source-asset management conventions. The proliferation of Apple Vision Pro, Meta Quest 3, and similar XR devices is driving standardisation efforts around OpenXR and glTF extensions for platform-neutral optimization parameters.
-

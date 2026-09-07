@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Fractional Ownership
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -173,7 +168,7 @@ public: true
 ```
 
 - ### Definition
-  - [[Fractional Ownership]] is a form of [[Asset Tokenisation]] in which high-value assets are divided into tradeable shares—often implemented as [[Fractionalized NFT]] tokens or fungible on-chain instruments—enabling multiple parties to hold proportional economic rights in an asset they could not individually afford.
+  - [[Fractional Ownership]] is a form of [[Asset Tokenisation]] in which high-value assets are divided into tradeable shares—often implemented as [[Fractionalized NFT]] tokens or fungible on-chain instruments—enabling multiple parties to hold proportional economic rights in an asset they [private] not individually afford.
 - ### Relationships
   - [[Fractional Ownership]] is a specialisation of [[Asset Tokenisation]] and commonly employs [[NFT]] and [[Fractionalized NFT]] mechanisms alongside [[Enterprise Smart Contracts]] to manage share issuance and distributions. It enables [[Investment Management]] and [[Digital Asset Trading]] activities and integrates into [[Decentralized Finance (DeFi)]] protocols as collateral or yield-bearing instruments. Conceptually it extends [[Digital Ownership]] and [[Digital Property Rights]], and its economic logic mirrors traditional [[Digital Technology Access Equity]] structures.
 - ### Content

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Software Library
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -91,26 +86,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:software-library:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:10c578c8f92081c367854a54efa22058114b718e7e6e058339f25deaab19da8d"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A Software Library is a collection of pre-compiled, reusable code modules that expose stable APIs, encapsulating common functionality such as rendering, physics simulation, networking, or cryptography. Libraries accelerate development by abstracting complexity, reducing defect rates, and enabling interoperability between components within a software stack.

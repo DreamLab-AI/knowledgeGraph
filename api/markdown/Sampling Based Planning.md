@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Sampling Based Planning
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

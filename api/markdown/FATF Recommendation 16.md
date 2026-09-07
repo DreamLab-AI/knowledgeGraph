@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FATF Recommendation 16
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",

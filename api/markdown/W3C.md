@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - W3C (World Wide Web Consortium)
----
-
-# W3C
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -27,36 +20,92 @@ aliases:
   "definition": "The World Wide Web Consortium (W3C) is the principal international standards organisation for the World Wide Web, founded by Tim Berners-Lee in 1994 and operating through a global membership model to develop open, interoperable web standards. W3C produces technical specifications, guidelines, and software that define the core technologies of the web including HTML, CSS, SVG, XML, RDF, and the semantic web stack. Its standards process emphasises consensus, royalty-free licensing, and broad implementability across browsers and platforms.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"},
-      {"@id": "urn:ngm:class:web-standards", "label": "Web Standards"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      },
+      {
+        "@id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:w3-c-did-core", "label": "W3C DID Core"},
-      {"@id": "urn:ngm:class:verifiable-credential-standard", "label": "Verifiable Credential Standard"}
+      {
+        "@id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-standard",
+        "label": "Verifiable Credential Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:web-technology", "label": "Web Technology"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      }
     ]
   },
   "quality": 0.8

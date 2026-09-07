@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Synchronous Communication
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:synchronous-communication", "@type":"Page", "title":"Synchronous Communication", "vc:slug":"synchronous-communication", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:synchronous-communication",
+  "@type": "Page",
+  "title": "Synchronous Communication",
+  "vc:slug": "synchronous-communication",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Regenerative Finance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Regenerative finance (ReFi) is a movement that uses blockchain-based financial primitives to fund and incentivise ecological and social regeneration, such as carbon removal, biodiversity, and public goods. It tokenises natural assets and routes capital through mechanisms like retroactive funding and on-chain carbon markets. ReFi reframes DeFi tooling toward restoring rather than merely extracting value.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:green-blockchain-initiatives", "label": "Green Blockchain Initiatives"},
-      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"}
+      {
+        "@id": "urn:ngm:class:green-blockchain-initiatives",
+        "label": "Green Blockchain Initiatives"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
     ]
   },
   "quality": 0.72

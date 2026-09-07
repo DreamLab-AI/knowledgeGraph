@@ -1,55 +1,110 @@
----
-public: true
----
-
-# Security Operations Centre
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:security-operations-centre", "@type":"Page", "title":"Security Operations Centre", "vc:slug":"security-operations-centre", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:security-operations-centre",
+  "@type": "Page",
+  "title": "Security Operations Centre",
+  "vc:slug": "security-operations-centre",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:security-operations-centre",
-  "@type":"Class",
-  "label":"Security Operations Centre",
-  "definition":"A Security Operations Centre (SOC) is a centralised function, combining people, processes and technology, that continuously monitors, detects, analyses and responds to cybersecurity threats across an organisation. Analysts triage alerts from telemetry sources, investigate incidents, and coordinate containment and remediation, typically aided by SIEM and SOAR platforms. The SOC is the operational hub of an enterprise security programme, providing the situational awareness and response capability needed to limit the impact of attacks.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cybersecurity","label":"Cybersecurity"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:siem","label":"SIEM"},
-      {"@id":"urn:ngm:class:soar","label":"SOAR"},
-      {"@id":"urn:ngm:class:threat-intelligence","label":"Threat Intelligence"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:security-operations-centre",
+  "@type": "Class",
+  "label": "Security Operations Centre",
+  "definition": "A Security Operations Centre (SOC) is a centralised function, combining people, processes and technology, that continuously monitors, detects, analyses and responds to cybersecurity threats across an organisation. Analysts triage alerts from telemetry sources, investigate incidents, and coordinate containment and remediation, typically aided by SIEM and SOAR platforms. The SOC is the operational hub of an enterprise security programme, providing the situational awareness and response capability needed to limit the impact of attacks.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "@id": "urn:ngm:class:soar",
+        "label": "SOAR"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:monitoring","label":"Monitoring"},
-      {"@id":"urn:ngm:class:telemetry","label":"Telemetry"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:incident-response","label":"Incident Response"},
-      {"@id":"urn:ngm:class:threat-detection","label":"Threat Detection"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"},
-      {"@id":"urn:ngm:class:vulnerability-management","label":"Vulnerability Management"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:zero-trust-architecture","label":"Zero Trust Architecture"},
-      {"@id":"urn:ngm:class:observability","label":"Observability"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:security","label":"Security"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:data-breach","label":"Data Breach"},
-      {"@id":"urn:ngm:class:cloud-security","label":"Cloud Security"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

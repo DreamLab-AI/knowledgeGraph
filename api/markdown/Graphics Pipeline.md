@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Graphics Pipeline
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -214,52 +209,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:graphics-pipeline:e56304cd518b",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:5b877fdead7dd767d67f8ce4c1ad18c827e2c1cf82c4b01fc93131e903d3c7ed"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[GPU Architecture]]",
-      "resolved": "urn:visionflow:linked:gpu-architecture",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Real-Time Rendering]]",
-      "resolved": "urn:visionflow:linked:real-time-rendering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Rasterization]]",
-      "resolved": "urn:visionflow:linked:rasterization",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Shader]]",
-      "resolved": "urn:visionflow:linked:shader",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Graphics]]",
-      "resolved": "urn:visionflow:linked:computer-graphics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The graphics pipeline is the ordered sequence of stages that transforms 3D scene description into a 2D image, covering vertex processing, primitive assembly, rasterisation and fragment shading.

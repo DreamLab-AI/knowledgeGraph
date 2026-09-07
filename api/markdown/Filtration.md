@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Filtration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "In probability theory, a filtration is an increasing family of sigma-algebras indexed by time that formally represents the accumulation of information available up to each instant. It models what is knowable at each point as a stochastic process unfolds, with each sigma-algebra containing all events whose outcomes are determined by then. Filtrations are fundamental to defining adapted processes, martingales, and conditional expectations in stochastic analysis and mathematical finance.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
     ]
   },
   "quality": 0.72

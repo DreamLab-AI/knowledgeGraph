@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Brokers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Data brokers are firms that collect, aggregate, enrich and resell personal and behavioural data about individuals, typically without a direct relationship with those individuals. They assemble profiles from public records, online tracking and commercial sources for marketing, scoring and risk uses. They are a focal point of privacy regulation and surveillance concern because their trade can enable pervasive monitoring and profiling.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"}
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      }
     ]
   },
   "quality": 0.72

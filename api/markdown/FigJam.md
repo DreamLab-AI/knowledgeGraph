@@ -1,8 +1,3 @@
----
-public: true
----
-
-# FigJam
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "FigJam is an online collaborative whiteboard application from Figma designed for real-time ideation, brainstorming, diagramming, and workshop facilitation. It provides multi-user infinite canvases with sticky notes, shapes, connectors, stamps, and templates, synchronising edits across participants for distributed teams. FigJam complements Figma's design tooling by focusing on the early, divergent phases of product and design work.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
-      {"@id": "urn:ngm:class:figma", "label": "Figma"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "@id": "urn:ngm:class:figma",
+        "label": "Figma"
+      }
     ]
   },
   "quality": 0.72

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Voice Assistant
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,62 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:voice-assistant:f9c16861e73a",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:fdcd6eab11926d93fae1347f5bfe1d325a30e14f49d1c2b10134421deaa6d812"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Speech Recognition]]",
-      "resolved": "urn:visionflow:linked:speech-recognition",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Natural Language Processing]]",
-      "resolved": "urn:visionflow:linked:natural-language-processing",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[User Experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agent]]",
-      "resolved": "urn:visionflow:linked:ai-agent",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Conversational AI]]",
-      "resolved": "urn:visionflow:linked:conversational-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://en.wikipedia.org/wiki/Virtual_assistant]]",
-      "resolved": "urn:visionflow:linked:https-en-wikipedia-org-wiki-virtual-assistant",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://developer.amazon.com/en-US/alexa]]",
-      "resolved": "urn:visionflow:linked:https-developer-amazon-com-en-us-alexa",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A voice assistant is a software agent that responds to spoken commands and questions using speech recognition and natural language processing. Examples include assistants built into phones and smart speakers.

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Luma AI
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -100,57 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:luma-ai:0a7ff7d63e8e",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:003bf5e09bd6b5de5c8991a474fa210174cc0a1bb8b9d8407a12ef3fd5eb1d60"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Video Generation]]",
-      "resolved": "urn:visionflow:linked:video-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Generation]]",
-      "resolved": "urn:visionflow:linked:3-d-generation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[3D Asset]]",
-      "resolved": "urn:visionflow:linked:3-d-asset",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:linked:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative AI]]",
-      "resolved": "urn:visionflow:linked:generative-ai",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Luma AI is a company developing generative tools for 3D capture and video generation. Its products include neural reconstruction of scenes from photographs and a text-to-video model.

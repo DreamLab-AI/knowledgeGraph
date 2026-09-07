@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Trojan Attack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,18 +51,36 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:backdoor-attack", "label": "Backdoor Attack"},
-      {"@id": "urn:ngm:class:data-poisoning", "label": "Data Poisoning"},
-      {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"}
+      {
+        "@id": "urn:ngm:class:backdoor-attack",
+        "label": "Backdoor Attack"
+      },
+      {
+        "@id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ai-security", "label": "AI Security"}
+      {
+        "@id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      }
     ]
   },
   "provenance": {
@@ -77,32 +90,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:trojan-attack:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:0923bd24644926dcd4d67fbffc1c3aea1a65ba4f09bdeef2eecf2c8904e9b47f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A backdoor attack on AI models, often emphasizing supply chain compromise, where a pre-trained model or training pipeline is maliciously modified to contain hidden triggers that cause specific attacker-defined behaviors when activated, while maintaining normal performance otherwise.

@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - Mobile Robots
-  - MobileRobot
----
-
-# Mobile Robot
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -224,41 +216,6 @@ aliases:
       "vc:value": "Mobile Robot"
     }
   ]
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:mobile-robot:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3b2452c5bd0e7df0a50cdde8d5a71f54cf3ce47c32e8e3d8de113cedafae01e1"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ISO 8373:2021]]",
-      "resolved": "urn:visionflow:linked:iso-8373-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robot (RB-0001)]]",
-      "resolved": "urn:visionflow:linked:robot-rb-0001",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Robotics]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
 }
 ```
 

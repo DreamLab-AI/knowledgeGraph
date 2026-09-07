@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Inference Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-inference-infrastructure",
   "title": "AI Inference Infrastructure",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Nvidia Blackwell", "US Intelligence Community"],
+  "vc:outboundWikilinks": [
+    "Nvidia Blackwell",
+    "US Intelligence Community"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-center-investment", "label": "Data Center Investment"}, {"@id": "urn:ngm:class:ai-factory", "label": "AI Factory"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-center-investment",
+        "label": "Data Center Investment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-factory",
+        "label": "AI Factory"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

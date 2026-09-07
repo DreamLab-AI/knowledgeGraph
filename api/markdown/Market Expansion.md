@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Market Expansion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Market expansion is the growth strategy of extending a product or service into new customer segments, geographies, or use cases to increase the total addressable market. In technology contexts it is often unlocked by removing access barriers such as language, cost, or accessibility limitations. It is a primary commercial outcome of capabilities like real-time translation and inclusive design.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:real-time-translation", "label": "Real-time Translation"}, {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:real-time-translation",
+        "label": "Real-time Translation"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ]
   },
   "quality": 0.72
 }

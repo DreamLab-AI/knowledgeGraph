@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Activity Data
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -12,46 +7,166 @@ public: true
   "title": "Activity Data",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {"@id": "urn:visionflow:linked:data-collection", "vc:label": "Data Collection"},
-    {"@id": "urn:visionflow:linked:tracking-system", "vc:label": "Tracking System"},
-    {"@id": "urn:visionflow:linked:telemetry-and-analytics", "vc:label": "Telemetry & Analytics"},
-    {"@id": "urn:visionflow:linked:analytics-engine", "vc:label": "Analytics Engine"},
-    {"@id": "urn:visionflow:linked:audit-log", "vc:label": "Audit Log"},
-    {"@id": "urn:visionflow:linked:compliance", "vc:label": "Compliance"},
-    {"@id": "urn:visionflow:linked:transparency", "vc:label": "Transparency"},
-    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:visionflow:linked:data-pipeline", "vc:label": "Data Pipeline"},
-    {"@id": "urn:visionflow:linked:stream-processing", "vc:label": "Stream Processing"},
-    {"@id": "urn:visionflow:linked:data-lake", "vc:label": "Data Lake"},
-    {"@id": "urn:visionflow:linked:machine-learning-pipeline", "vc:label": "Machine Learning Pipeline"},
-    {"@id": "urn:visionflow:linked:recommendation-system", "vc:label": "Recommendation System"},
-    {"@id": "urn:visionflow:linked:personalisation", "vc:label": "Personalisation"},
-    {"@id": "urn:visionflow:linked:privacy", "vc:label": "Privacy"},
-    {"@id": "urn:visionflow:linked:general-data-protection-regulation", "vc:label": "General Data Protection Regulation"},
-    {"@id": "urn:visionflow:linked:data-governance", "vc:label": "Data Governance"},
-    {"@id": "urn:visionflow:linked:event-driven-architecture", "vc:label": "Event-Driven Architecture"},
-    {"@id": "urn:visionflow:linked:behavioural-analytics", "vc:label": "Behavioural Analytics"},
-    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
-    {"@id": "urn:visionflow:linked:synthetic-data", "vc:label": "Synthetic Data"},
-    {"@id": "urn:visionflow:linked:fraud-detection", "vc:label": "Fraud Detection"},
-    {"@id": "urn:visionflow:linked:anomaly-detection", "vc:label": "Anomaly Detection"},
-    {"@id": "urn:visionflow:linked:digital-twin", "vc:label": "Digital Twin"},
-    {"@id": "urn:visionflow:linked:learning-management-system", "vc:label": "Learning Management System"},
-    {"@id": "urn:visionflow:linked:xapi", "vc:label": "xAPI"},
-    {"@id": "urn:visionflow:linked:observability", "vc:label": "Observability"},
-    {"@id": "urn:visionflow:linked:opentelemetry", "vc:label": "OpenTelemetry"},
-    {"@id": "urn:visionflow:linked:data-minimisation", "vc:label": "Data Minimisation"},
-    {"@id": "urn:visionflow:linked:purpose-limitation", "vc:label": "Purpose Limitation"},
-    {"@id": "urn:visionflow:linked:ai-audit", "vc:label": "AI Audit"},
-    {"@id": "urn:visionflow:linked:audit-trail", "vc:label": "Audit Trail"},
-    {"@id": "urn:visionflow:linked:feature-engineering", "vc:label": "Feature Engineering"},
-    {"@id": "urn:visionflow:linked:time-series-analysis", "vc:label": "Time-Series Analysis"},
-    {"@id": "urn:visionflow:linked:session-recording", "vc:label": "Session Recording"},
-    {"@id": "urn:visionflow:linked:collaborative-filtering", "vc:label": "Collaborative Filtering"},
-    {"@id": "urn:visionflow:linked:event-sourcing", "vc:label": "Event Sourcing"},
-    {"@id": "urn:visionflow:linked:knowledge-graph", "vc:label": "Knowledge Graph"},
-    {"@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI"},
-    {"@id": "urn:visionflow:linked:differential-privacy", "vc:label": "Differential Privacy"}
+    {
+      "@id": "urn:visionflow:linked:data-collection",
+      "vc:label": "Data Collection"
+    },
+    {
+      "@id": "urn:visionflow:linked:tracking-system",
+      "vc:label": "Tracking System"
+    },
+    {
+      "@id": "urn:visionflow:linked:telemetry-and-analytics",
+      "vc:label": "Telemetry & Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:analytics-engine",
+      "vc:label": "Analytics Engine"
+    },
+    {
+      "@id": "urn:visionflow:linked:audit-log",
+      "vc:label": "Audit Log"
+    },
+    {
+      "@id": "urn:visionflow:linked:compliance",
+      "vc:label": "Compliance"
+    },
+    {
+      "@id": "urn:visionflow:linked:transparency",
+      "vc:label": "Transparency"
+    },
+    {
+      "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback",
+      "vc:label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-pipeline",
+      "vc:label": "Data Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:stream-processing",
+      "vc:label": "Stream Processing"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-lake",
+      "vc:label": "Data Lake"
+    },
+    {
+      "@id": "urn:visionflow:linked:machine-learning-pipeline",
+      "vc:label": "Machine Learning Pipeline"
+    },
+    {
+      "@id": "urn:visionflow:linked:recommendation-system",
+      "vc:label": "Recommendation System"
+    },
+    {
+      "@id": "urn:visionflow:linked:personalisation",
+      "vc:label": "Personalisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:privacy",
+      "vc:label": "Privacy"
+    },
+    {
+      "@id": "urn:visionflow:linked:general-data-protection-regulation",
+      "vc:label": "General Data Protection Regulation"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-governance",
+      "vc:label": "Data Governance"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-driven-architecture",
+      "vc:label": "Event-Driven Architecture"
+    },
+    {
+      "@id": "urn:visionflow:linked:behavioural-analytics",
+      "vc:label": "Behavioural Analytics"
+    },
+    {
+      "@id": "urn:visionflow:linked:agentic-ai",
+      "vc:label": "Agentic AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:synthetic-data",
+      "vc:label": "Synthetic Data"
+    },
+    {
+      "@id": "urn:visionflow:linked:fraud-detection",
+      "vc:label": "Fraud Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:anomaly-detection",
+      "vc:label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:visionflow:linked:digital-twin",
+      "vc:label": "Digital Twin"
+    },
+    {
+      "@id": "urn:visionflow:linked:learning-management-system",
+      "vc:label": "Learning Management System"
+    },
+    {
+      "@id": "urn:visionflow:linked:xapi",
+      "vc:label": "xAPI"
+    },
+    {
+      "@id": "urn:visionflow:linked:observability",
+      "vc:label": "Observability"
+    },
+    {
+      "@id": "urn:visionflow:linked:opentelemetry",
+      "vc:label": "OpenTelemetry"
+    },
+    {
+      "@id": "urn:visionflow:linked:data-minimisation",
+      "vc:label": "Data Minimisation"
+    },
+    {
+      "@id": "urn:visionflow:linked:purpose-limitation",
+      "vc:label": "Purpose Limitation"
+    },
+    {
+      "@id": "urn:visionflow:linked:ai-audit",
+      "vc:label": "AI Audit"
+    },
+    {
+      "@id": "urn:visionflow:linked:audit-trail",
+      "vc:label": "Audit Trail"
+    },
+    {
+      "@id": "urn:visionflow:linked:feature-engineering",
+      "vc:label": "Feature Engineering"
+    },
+    {
+      "@id": "urn:visionflow:linked:time-series-analysis",
+      "vc:label": "Time-Series Analysis"
+    },
+    {
+      "@id": "urn:visionflow:linked:session-recording",
+      "vc:label": "Session Recording"
+    },
+    {
+      "@id": "urn:visionflow:linked:collaborative-filtering",
+      "vc:label": "Collaborative Filtering"
+    },
+    {
+      "@id": "urn:visionflow:linked:event-sourcing",
+      "vc:label": "Event Sourcing"
+    },
+    {
+      "@id": "urn:visionflow:linked:knowledge-graph",
+      "vc:label": "Knowledge Graph"
+    },
+    {
+      "@id": "urn:visionflow:linked:explainable-ai",
+      "vc:label": "Explainable AI"
+    },
+    {
+      "@id": "urn:visionflow:linked:differential-privacy",
+      "vc:label": "Differential Privacy"
+    }
   ],
   "vc:schemaVersion": 2
 }
@@ -67,41 +182,107 @@ public: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"}
+    {
+      "@id": "urn:ngm:class:data-collection",
+      "label": "Data Collection"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:analytics-engine", "label": "Analytics Engine"},
-      {"@id": "urn:ngm:class:audit-log", "label": "Audit Log"},
-      {"@id": "urn:ngm:class:behavioural-analytics", "label": "Behavioural Analytics"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {
+        "@id": "urn:ngm:class:analytics-engine",
+        "label": "Analytics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:tracking-system", "label": "Tracking System"},
-      {"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry & Analytics"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"}
+      {
+        "@id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry & Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:event-record", "label": "Event Record"},
-      {"@id": "urn:ngm:class:clickstream", "label": "Clickstream"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:event-record",
+        "label": "Event Record"
+      },
+      {
+        "@id": "urn:ngm:class:clickstream",
+        "label": "Clickstream"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event-Driven Architecture"},
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"}
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
     ]
   },
   "quality": 0.87,
@@ -110,57 +291,6 @@ public: true
     "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "ontology-augment-v2"
   }
-}
-```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:annotation:activity-data:link-resolutions",
-  "@type": "LinkResolutionsAnnotation",
-  "forClass": "urn:ngm:class:activity-data",
-  "resolutions": [
-    {"raw": "Data Collection", "@id": "urn:visionflow:linked:data-collection", "kind": "ResolvedLink"},
-    {"raw": "Tracking System", "@id": "urn:visionflow:linked:tracking-system", "kind": "ResolvedLink"},
-    {"raw": "Telemetry & Analytics", "@id": "urn:visionflow:linked:telemetry-and-analytics", "kind": "ResolvedLink"},
-    {"raw": "Analytics Engine", "@id": "urn:visionflow:linked:analytics-engine", "kind": "ResolvedLink"},
-    {"raw": "Audit Log", "@id": "urn:visionflow:linked:audit-log", "kind": "ResolvedLink"},
-    {"raw": "Compliance", "@id": "urn:visionflow:linked:compliance", "kind": "ResolvedLink"},
-    {"raw": "Transparency", "@id": "urn:visionflow:linked:transparency", "kind": "ResolvedLink"},
-    {"raw": "Reinforcement Learning from Human Feedback", "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"},
-    {"raw": "Data Pipeline", "@id": "urn:visionflow:linked:data-pipeline", "kind": "ResolvedLink"},
-    {"raw": "Stream Processing", "@id": "urn:visionflow:linked:stream-processing", "kind": "ResolvedLink"},
-    {"raw": "Data Lake", "@id": "urn:visionflow:linked:data-lake", "kind": "ResolvedLink"},
-    {"raw": "Machine Learning Pipeline", "@id": "urn:visionflow:linked:machine-learning-pipeline", "kind": "ResolvedLink"},
-    {"raw": "Recommendation System", "@id": "urn:visionflow:linked:recommendation-system", "kind": "ResolvedLink"},
-    {"raw": "Personalisation", "@id": "urn:visionflow:linked:personalisation", "kind": "StubLink"},
-    {"raw": "Privacy", "@id": "urn:visionflow:linked:privacy", "kind": "ResolvedLink"},
-    {"raw": "General Data Protection Regulation", "@id": "urn:visionflow:linked:general-data-protection-regulation", "kind": "ResolvedLink"},
-    {"raw": "Data Governance", "@id": "urn:visionflow:linked:data-governance", "kind": "ResolvedLink"},
-    {"raw": "Event-Driven Architecture", "@id": "urn:visionflow:linked:event-driven-architecture", "kind": "ResolvedLink"},
-    {"raw": "Behavioural Analytics", "@id": "urn:visionflow:linked:behavioural-analytics", "kind": "StubLink"},
-    {"raw": "Agentic AI", "@id": "urn:visionflow:linked:agentic-ai", "kind": "StubLink"},
-    {"raw": "Synthetic Data", "@id": "urn:visionflow:linked:synthetic-data", "kind": "ResolvedLink"},
-    {"raw": "Fraud Detection", "@id": "urn:visionflow:linked:fraud-detection", "kind": "ResolvedLink"},
-    {"raw": "Anomaly Detection", "@id": "urn:visionflow:linked:anomaly-detection", "kind": "ResolvedLink"},
-    {"raw": "Digital Twin", "@id": "urn:visionflow:linked:digital-twin", "kind": "ResolvedLink"},
-    {"raw": "Learning Management System", "@id": "urn:visionflow:linked:learning-management-system", "kind": "ResolvedLink"},
-    {"raw": "xAPI", "@id": "urn:visionflow:linked:xapi", "kind": "StubLink"},
-    {"raw": "Observability", "@id": "urn:visionflow:linked:observability", "kind": "StubLink"},
-    {"raw": "OpenTelemetry", "@id": "urn:visionflow:linked:opentelemetry", "kind": "StubLink"},
-    {"raw": "Data Minimisation", "@id": "urn:visionflow:linked:data-minimisation", "kind": "StubLink"},
-    {"raw": "Purpose Limitation", "@id": "urn:visionflow:linked:purpose-limitation", "kind": "StubLink"},
-    {"raw": "AI Audit", "@id": "urn:visionflow:linked:ai-audit", "kind": "ResolvedLink"},
-    {"raw": "Audit Trail", "@id": "urn:visionflow:linked:audit-trail", "kind": "ResolvedLink"},
-    {"raw": "Feature Engineering", "@id": "urn:visionflow:linked:feature-engineering", "kind": "ResolvedLink"},
-    {"raw": "Time-Series Analysis", "@id": "urn:visionflow:linked:time-series-analysis", "kind": "ResolvedLink"},
-    {"raw": "Session Recording", "@id": "urn:visionflow:linked:session-recording", "kind": "StubLink"},
-    {"raw": "Collaborative Filtering", "@id": "urn:visionflow:linked:collaborative-filtering", "kind": "StubLink"},
-    {"raw": "Event Sourcing", "@id": "urn:visionflow:linked:event-sourcing", "kind": "StubLink"},
-    {"raw": "Knowledge Graph", "@id": "urn:visionflow:linked:knowledge-graph", "kind": "ResolvedLink"},
-    {"raw": "Explainable AI", "@id": "urn:visionflow:linked:explainable-ai", "kind": "ResolvedLink"},
-    {"raw": "Differential Privacy", "@id": "urn:visionflow:linked:differential-privacy", "kind": "StubLink"}
-  ]
 }
 ```
 
@@ -381,7 +511,7 @@ public: true
     Foundational contributions that define the modern activity data paradigm include:
 
     - Mobasher, Cooley, and Srivastava (2000) pioneered web usage mining—the extraction of user behavioural patterns from web server log activity data—establishing clickstream analysis and its applications to [[Recommendation System]] design and personalisation, a foundational paper in the web intelligence field with over 3,000 citations.
-    - Pavlov and Pennock (2002) formalised the relationship between implicit activity feedback (play counts, purchase histories, dwell time) and [[Collaborative Filtering]], showing that activity signals could substitute for explicit ratings in recommendation models with comparable or superior performance, establishing the theoretical basis for implicit feedback recommendation at companies such as Netflix and Spotify.
+    - Pavlov and Pennock (2002) formalised the relationship between implicit activity feedback (play counts, purchase histories, dwell time) and [[Collaborative Filtering]], showing that activity signals [private] substitute for explicit ratings in recommendation models with comparable or superior performance, establishing the theoretical basis for implicit feedback recommendation at companies such as Netflix and Spotify.
     - Dwork (2006) introduced [[Differential Privacy]] at ICALP, providing the mathematical framework for quantifying and bounding the privacy leakage of statistical queries over sensitive activity datasets. The formal definition—a randomised mechanism M is ε-differentially private if for any two adjacent databases D and D' differing in one record and any output set S, P[M(D) ∈ S] ≤ e^ε P[M(D') ∈ S]—has become the gold standard for privacy-preserving activity data analytics.
     - Agrawal, Imieliński, and Swami (1993) on association rule mining from transactional activity data established the Apriori algorithm and support/confidence metrics that remain standard tools for market basket analysis from activity logs.
     - The xAPI specification (ADLNet, 2013) standardised learning activity data schemas as actor-verb-object triples, enabling cross-platform learning analytics and enabling the JISC-funded UK pilot of system-wide learning analytics across 60+ universities.
@@ -530,7 +660,7 @@ public: true
 
     - *Data subject rights*: Data subjects whose activity data is used in AI training have rights to access, erasure, and objection. Implementing erasure rights for training data—including the right to have one's activity records removed from trained model weights (machine unlearning)—is technically challenging and an active research area.
 
-    - *Data minimisation for training*: Regulators expect that AI developers use the minimum personal data necessary for the training objective; where publicly available synthetic or anonymised data could substitute for personal activity data, its use is expected.
+    - *Data minimisation for training*: Regulators expect that AI developers use the minimum personal data necessary for the training objective; where publicly available synthetic or anonymised data [private] substitute for personal activity data, its use is expected.
 
     **Activity data and the training-serving divide**:
 

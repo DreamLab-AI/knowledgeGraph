@@ -1,50 +1,102 @@
----
-public: true
----
-
-# Legitimacy
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:legitimacy", "@type":"Page", "title":"Legitimacy", "vc:slug":"legitimacy", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:legitimacy",
+  "@type": "Page",
+  "title": "Legitimacy",
+  "vc:slug": "legitimacy",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:legitimacy",
-  "@type":"Class",
-  "label":"Legitimacy",
-  "definition":"Legitimacy is the property of an authority, institution or decision being widely accepted as rightful and worthy of compliance by the people it governs. It rests on perceptions of fairness, due process, representation and shared values rather than on coercion alone, and it can be derived from procedure, performance, tradition or consent. In governance systems, including decentralised and blockchain communities, legitimacy is what makes coordinated action stable and what allows rules to be followed without constant enforcement.",
-  "domain":"governance",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:governance","label":"Governance"}],
-  "relations":{
-    "dependsOn":[
-      {"@id":"urn:ngm:class:trust","label":"Trust"},
-      {"@id":"urn:ngm:class:consensus","label":"Consensus"},
-      {"@id":"urn:ngm:class:transparency","label":"Transparency"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:legitimacy",
+  "@type": "Class",
+  "label": "Legitimacy",
+  "definition": "Legitimacy is the property of an authority, institution or decision being widely accepted as rightful and worthy of compliance by the people it governs. It rests on perceptions of fairness, due process, representation and shared values rather than on coercion alone, and it can be derived from procedure, performance, tradition or consent. In governance systems, including decentralised and blockchain communities, legitimacy is what makes coordinated action stable and what allows rules to be followed without constant enforcement.",
+  "domain": "governance",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:stakeholder-engagement","label":"Stakeholder Engagement"},
-      {"@id":"urn:ngm:class:governance-model","label":"Governance Model"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:accountability","label":"Accountability"},
-      {"@id":"urn:ngm:class:fairness","label":"Fairness"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:community-governance","label":"Community Governance"},
-      {"@id":"urn:ngm:class:decentralised-governance","label":"Decentralised Governance"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:stakeholder-trust","label":"Stakeholder Trust"},
-      {"@id":"urn:ngm:class:transparency","label":"Transparency"},
-      {"@id":"urn:ngm:class:accountability","label":"Accountability"},
-      {"@id":"urn:ngm:class:social-contract","label":"Social Contract"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

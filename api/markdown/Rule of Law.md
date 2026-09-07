@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Rule of Law
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -102,32 +97,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rule-of-law:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:327893e98fdef23dc4614baa940fd72ae5af65f84ca1524134926d09006b53cf"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - The principle that all persons, institutions and entities, including AI systems and their operators, are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated and consistent with international human rights norms.
 
@@ -167,7 +136,7 @@ public: true
 		- February 7th: Fed’s policy statement enters Federal Register as a final rule
 		- Two outstanding applications for National Trust Bank licenses from Anchorage and Paxos likely to be rejected by the OCC
 		- Banking services becoming increasingly difficult for crypto firms, some startups will likely now not make the attempt
-  - The SEC sought to use its tools to control and centralise the ‘ramps’ into and out of digital assets. Under Chair Gensler, the SEC proposed a Safeguarding Rule (early 2023) that would have required registered investment advisors to use qualified custodians for all assets including cryptocurrencies, and that custodians indemnify the full asset value for losses—a provision critics argued could kill the custody business across all asset classes. The proposal drew substantial industry opposition from commentators including Caitlin Long (Custodia Bank), who noted the indemnification requirement could damage custody across all asset classes (not just crypto), and from Sarah Brennan and Republicans on the House Financial Services Committee. **Update (2025):** The Gensler-era Safeguarding Rule was among fourteen rulemakings withdrawn by the SEC in 2025. In September 2025 the SEC Division of Investment Management issued a no-action letter confirming that state-chartered trust companies can serve as qualified custodians for crypto assets, resolving a key point of contention. The U.S. IRS also significantly expanded its tax enforcement capacity during this period. The earlier timeline of bank de-risking from crypto (Silvergate, Signature Bank closures, Binance banking disruptions) remains an accurate historical record of that regulatory moment.
+  - The SEC sought to use its tools to control and centralise the ‘ramps’ into and out of digital assets. Under Chair Gensler, the SEC proposed a Safeguarding Rule (early 2023) that would have required registered investment advisors to use qualified custodians for all assets including cryptocurrencies, and that custodians indemnify the full asset value for losses—a provision critics argued [private] kill the custody business across all asset classes. The proposal drew substantial industry opposition from commentators including Caitlin Long (Custodia Bank), who noted the indemnification requirement [private] damage custody across all asset classes (not just crypto), and from Sarah Brennan and Republicans on the House Financial Services Committee. **Update (2025):** The Gensler-era Safeguarding Rule was among fourteen rulemakings withdrawn by the SEC in 2025. In September 2025 the SEC Division of Investment Management issued a no-action letter confirming that state-chartered trust companies can serve as qualified custodians for crypto assets, resolving a key point of contention. The U.S. IRS also significantly expanded its tax enforcement capacity during this period. The earlier timeline of bank de-risking from crypto (Silvergate, Signature Bank closures, Binance banking disruptions) remains an accurate historical record of that regulatory moment.
 
 
 

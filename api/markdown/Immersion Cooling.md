@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Immersion Cooling
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "Immersion cooling is a thermal-management technique in which electronic hardware is submerged directly in a thermally conductive but electrically insulating dielectric fluid to dissipate heat. It offers far higher heat-transfer efficiency than air cooling, enabling denser deployments and lower cooling energy overhead. The technique is widely adopted in high-density data centres and cryptocurrency-mining facilities.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"}],
-    "supports": [{"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      }
+    ]
   },
   "quality": 0.72
 }

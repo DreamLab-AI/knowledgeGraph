@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Probabilistic Forecasting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Probabilistic forecasting predicts future quantities as full probability distributions rather than single point estimates, quantifying uncertainty in the prediction. Outputs are typically expressed as predictive intervals, quantiles, or samples. It is essential for risk-aware decision-making in domains such as demand planning, energy, and finance where the cost of error is asymmetric.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"}
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      }
     ]
   },
   "quality": 0.72

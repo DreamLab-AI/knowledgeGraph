@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Persistent State
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,26 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:persistent-state:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:910cfd696132febf7677a068c9cf71786b22d0a8c66fa8606fc56dc3ebcac9e3"
-  },
-  "vc:resolutions": [],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The durable retention of application or world state across user sessions, server restarts, and network interruptions, such that virtual environments, user progress, and asset ownership remain consistent over time. In metaverse and multiplayer systems, persistent state is typically achieved through distributed databases, cloud storage synchronisation, or blockchain-based ledgers.

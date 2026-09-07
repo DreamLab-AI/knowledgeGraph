@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Appearance Translation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -113,72 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:appearance-translation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:420fddc1823797c3495ae92d8df00d75efa99e6ba98f43f2773d5748887dd48c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Artistic Stylization]]",
-      "resolved": "urn:visionflow:linked:artistic-stylization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Content Preservation]]",
-      "resolved": "urn:visionflow:linked:content-preservation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Convolutional Neural Networks]]",
-      "resolved": "urn:visionflow:linked:convolutional-neural-networks",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Domain Adaptation]]",
-      "resolved": "urn:visionflow:linked:domain-adaptation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Image Processing]]",
-      "resolved": "urn:visionflow:linked:neural-image-processing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Style Representations]]",
-      "resolved": "urn:visionflow:linked:style-representations",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Visual Content Transformation]]",
-      "resolved": "urn:visionflow:linked:visual-content-transformation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Appearance Translation refers to neural style transfer and image-to-image translation techniques that use deep learning to transform the visual style of images or video while preserving semantic content, enabling artistic stylization, domain adaptation, and visual content transformation across different aesthetic representations.

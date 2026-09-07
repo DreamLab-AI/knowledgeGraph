@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Alethea Agent
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "alethea-agent",
   "title": "Alethea Agent",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Autonomous Proof Generation", "Deep Think"],
+  "vc:outboundWikilinks": [
+    "Autonomous Proof Generation",
+    "Deep Think"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:model", "label": "Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model", "label": "Model"}, {"@id": "urn:ngm:class:deep-think", "label": "Deep Think"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model",
+        "label": "Model"
+      },
+      {
+        "@id": "urn:ngm:class:deep-think",
+        "label": "Deep Think"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

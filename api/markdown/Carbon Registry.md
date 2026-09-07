@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Carbon Registry
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -179,72 +174,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:carbon-registry:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f304b214cd0a5f2e62acb2a479eed8241b3fa2d9861287e48233682236f961d3"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Credit Tracking]]",
-      "resolved": "urn:visionflow:linked:credit-tracking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Database Infrastructure]]",
-      "resolved": "urn:visionflow:linked:database-infrastructure",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Double Counting Prevention]]",
-      "resolved": "urn:visionflow:linked:double-counting-prevention",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Market Transparency]]",
-      "resolved": "urn:visionflow:linked:market-transparency",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Unique Identifiers]]",
-      "resolved": "urn:visionflow:linked:unique-identifiers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Verification Process]]",
-      "resolved": "urn:visionflow:linked:verification-process",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Environmental Registry]]",
-      "resolved": "urn:visionflow:owl:class:environmental-registry",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.

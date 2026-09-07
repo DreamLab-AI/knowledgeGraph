@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Uniswap Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Uniswap Governance is the on-chain and off-chain decision-making system by which UNI token holders collectively control the parameters, treasury, and development direction of the Uniswap decentralised exchange protocol. Governance proposals traverse a structured lifecycle of temperature checks, consensus checks, and on-chain votes executed through the Governor Bravo contract, with a quorum threshold and timelock delay before execution. UNI holders may delegate their voting power to representatives, enabling liquid democracy patterns in protocol management. Uniswap Governance controls protocol fee switches, liquidity mining programs, grant allocations from the UNI treasury, and deployment of the protocol to new networks.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:on-chain-governance",
+      "label": "On-chain Governance"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:uniswap", "label": "Uniswap"}
+      {
+        "@id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:compound-governor-bravo", "label": "Compound Governor Bravo"},
-      {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound Governor Bravo"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:concentrated-liquidity", "label": "Concentrated Liquidity"},
-      {"@id": "urn:ngm:class:decentralized-exchange-dex", "label": "Decentralized Exchange (DEX)"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange-dex",
+        "label": "Decentralized Exchange (DEX)"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
     ]
   },
   "quality": 0.8

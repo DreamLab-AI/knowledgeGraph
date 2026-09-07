@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI User
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -256,18 +251,42 @@ public: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-provider", "label": "AI Provider"},
-      {"@id": "urn:ngm:class:ai-operator", "label": "AI Operator"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:ai-provider",
+        "label": "AI Provider"
+      },
+      {
+        "@id": "urn:ngm:class:ai-operator",
+        "label": "AI Operator"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ]
   },
   "quality": 0.5,
@@ -278,282 +297,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:ai-user:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8e9b5863fec261c4f77a27f05d0317cb733930db4095246f8f44aff60e3e44c7"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[community]]",
-      "resolved": "urn:visionflow:linked:community",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[design thinking]]",
-      "resolved": "urn:visionflow:linked:design-thinking",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[documentation]]",
-      "resolved": "urn:visionflow:linked:documentation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Fairness**: Protection of users from discriminatory treatment\n\t\t  - **User Experience**: Quality of user interaction with AI\n\t\t  - **Accessibility**: Ensuring usability for diverse users\n\t\t  - **Informed Consent**: User agreement based on understanding\n\n  ## Context and Significance\n\n  AI users represent the ultimate stakeholders for whom AI systems are designed and deployed, experiencing both the benefits and risks of AI applications. The user perspective is essential for assessing AI system effectiveness, usability, fairness, and social impact. User needs, capabilities, and contexts significantly influence appropriate AI system design, deployment approaches, and oversight mechanisms.\n\n  The NIST AI Risk Management Framework emphasises the importance of understanding user contexts, capabilities, and expectations when mapping and managing AI risks. User diversity—in technical sophistication, domain expertise, accessibility requirements, cultural backgrounds, and power relationships with AI providers—necessitates user-centred design approaches and inclusive development practices.\n\n  Modern AI systems create increasingly complex user relationships: users may simultaneously benefit from and be constrained by AI, may interact knowingly or unknowingly with AI, may possess varying degrees of choice in AI system use, and may have asymmetric information about AI system functioning. These dynamics raise important questions about informed consent, user autonomy, and power imbalances requiring ethical consideration and governance attention.\n\n  #### References\n  1. European Commission, *Proposal for a Regulation on Artificial Intelligence (AI Act)* (2021)\n\t\t  2. NIST AI 100-1, *Artificial Intelligence Risk Management Framework* (2023)\n\t\t  3. ISO/IEC 25059, *Software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model for AI systems*\n\t\t  4. Shneiderman, B., *Human-Centered AI* (2022)\n\t\t  5. GDPR, Articles 13-15, 22 (data subject rights)\n\n\t\t  ## See Also\n\n\t\t  - [[AI Provider]]",
-      "resolved": "urn:visionflow:linked:fairness-protection-of-users-from-discriminatory-treatment-user-experience-quality-of-user-interaction-with-ai-accessibility-ensuring-usability-for-diverse-users-informed-consent-user-agreement-based-on-understanding-context-and-significance-ai-users-represent-the-ultimate-stakeholders-for-whom-ai-systems-are-designed-and-deployed-experiencing-both-the-benefits-and-risks-of-ai-applications-the-user-perspective-is-essential-for-assessing-ai-system-effectiveness-usability-fairness-and-social-impact-user-needs-capabilities-and-contexts-significantly-influence-appropriate-ai-system-design-deployment-approaches-and-oversight-mechanisms-the-nist-ai-risk-management-framework-emphasises-the-importance-of-understanding-user-contexts-capabilities-and-expectations-when-mapping-and-managing-ai-risks-user-diversity-in-technical-sophistication-domain-expertise-accessibility-requirements-cultural-backgrounds-and-power-relationships-with-ai-providers-necessitates-user-centred-design-approaches-and-inclusive-development-practices-modern-ai-systems-create-increasingly-complex-user-relationships-users-may-simultaneously-benefit-from-and-be-constrained-by-ai-may-interact-knowingly-or-unknowingly-with-ai-may-possess-varying-degrees-of-choice-in-ai-system-use-and-may-have-asymmetric-information-about-ai-system-functioning-these-dynamics-raise-important-questions-about-informed-consent-user-autonomy-and-power-imbalances-requiring-ethical-consideration-and-governance-attention-references-1-european-commission-proposal-for-a-regulation-on-artificial-intelligence-ai-act-2021-2-nist-ai-100-1-artificial-intelligence-risk-management-framework-2023-3-iso-iec-25059-software-engineering-systems-and-software-quality-requirements-and-evaluation-squa-re-quality-model-for-ai-systems-4-shneiderman-b-human-centered-ai-2022-5-gdpr-articles-13-15-22-data-subject-rights-see-also-ai-provider",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GDPR]]",
-      "resolved": "urn:visionflow:linked:gdpr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Informed Consent]]",
-      "resolved": "urn:visionflow:linked:informed-consent",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[innovation]]",
-      "resolved": "urn:visionflow:linked:innovation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[king1966fisher]]",
-      "resolved": "urn:visionflow:linked:king1966fisher",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MIT’s lit on Lightning]]",
-      "resolved": "urn:visionflow:linked:mit-s-lit-on-lightning",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[modeling]]",
-      "resolved": "urn:visionflow:linked:modeling",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MUST]]",
-      "resolved": "urn:visionflow:linked:must",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST AI Risk Management Framework]]",
-      "resolved": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Nostr]]",
-      "resolved": "urn:visionflow:linked:nostr",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[optimization]]",
-      "resolved": "urn:visionflow:linked:optimization",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[organisation]]",
-      "resolved": "urn:visionflow:linked:organisation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[performance]]",
-      "resolved": "urn:visionflow:linked:performance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[research]]",
-      "resolved": "urn:visionflow:linked:research",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[User Experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[user experience]]",
-      "resolved": "urn:visionflow:linked:user-experience",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Accessibility]]",
-      "resolved": "urn:visionflow:owl:class:accessibility",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Agents]]",
-      "resolved": "urn:visionflow:owl:class:agents",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Agent System]]",
-      "resolved": "urn:visionflow:owl:class:ai-agent-system",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Operator]]",
-      "resolved": "urn:visionflow:owl:class:ai-operator",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[AI Video]]",
-      "resolved": "urn:visionflow:owl:class:ai-video",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[android]]",
-      "resolved": "urn:visionflow:owl:class:android",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Apple Inc Technology Corporation]]",
-      "resolved": "urn:visionflow:owl:class:apple",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[apple]]",
-      "resolved": "urn:visionflow:owl:class:apple",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[artificial intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[bias]]",
-      "resolved": "urn:visionflow:owl:class:bias",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[collaboration]]",
-      "resolved": "urn:visionflow:owl:class:collaboration",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Death of the Internet]]",
-      "resolved": "urn:visionflow:owl:class:death-of-the-internet",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[deep learning]]",
-      "resolved": "urn:visionflow:owl:class:deep-learning",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Education and AI]]",
-      "resolved": "urn:visionflow:owl:class:education-and-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EU AI Act Regulatory Instrument]]",
-      "resolved": "urn:visionflow:owl:class:eu-ai-act",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Explainability]]",
-      "resolved": "urn:visionflow:owl:class:explainability",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Fairness]]",
-      "resolved": "urn:visionflow:owl:class:fairness",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Google AI Technology Corporation]]",
-      "resolved": "urn:visionflow:owl:class:google",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hardware and Edge]]",
-      "resolved": "urn:visionflow:owl:class:hardware-and-edge",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Human Oversight]]",
-      "resolved": "urn:visionflow:owl:class:human-oversight",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Human Avatar Representation]]",
-      "resolved": "urn:visionflow:owl:class:humans-avatars-character",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hyper personalisation]]",
-      "resolved": "urn:visionflow:owl:class:hyper-personalisation",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Neural Network Latent Space]]",
-      "resolved": "urn:visionflow:owl:class:latent-space",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Lightning and Similar L2]]",
-      "resolved": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Nostr protocol]]",
-      "resolved": "urn:visionflow:owl:class:nostr-protocol",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[NVIDIA Omniverse Platform]]",
-      "resolved": "urn:visionflow:owl:class:nvidia-omniverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[OpenAI Research Organisation]]",
-      "resolved": "urn:visionflow:owl:class:open-ai",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[software engineering]]",
-      "resolved": "urn:visionflow:owl:class:software-engineering",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Metaverse Entity Schema Archive]]",
-      "resolved": "urn:visionflow:owl:class:some-legacy-linked-json",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Stakeholder]]",
-      "resolved": "urn:visionflow:owl:class:stakeholder",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Transparency]]",
-      "resolved": "urn:visionflow:owl:class:transparency",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - An individual or entity who interacts with, relies upon, or is affected by the outputs, decisions, or recommendations of an artificial intelligence system in order to accomplish tasks, make decisions, obtain services, or achieve objectives, either through direct system interaction or indirect exposure to AI-mediated outcomes, encompassing both active users who consciously engage with AI systems and passive subjects whose data is processed or whose circumstances are influenced by AI operations.
@@ -726,7 +469,7 @@ public: true
 		  1. **Visual Impairments:**
 		    * Magnification tools, font enlargement, and colour inversion are crucial for users with visual impairments.
 		    * Spatial audio and tactile feedback can serve as alternative modalities to convey visual information.
-		    * **Edge Case:** A VR environment where users navigate through auditory cues rather than visual ones could be beneficial for visually impaired users. For instance, using echolocation or 3D audio mapping to provide context in a game or virtual tour. AI could play a role in generating dynamic auditory descriptions of the virtual environment based on the user's movement and interactions.
+		    * **Edge Case:** A VR environment where users navigate through auditory cues rather than visual ones [private] be beneficial for visually impaired users. For instance, using echolocation or 3D audio mapping to provide context in a game or virtual tour. AI [private] play a role in generating dynamic auditory descriptions of the virtual environment based on the user's movement and interactions.
 		  2. **Auditory Impairments:**
 		    * Real-time sign language interpretation and closed captioning are critical for deaf or hard-of-hearing users.
 		    * Open metadata standards are needed to support these features across platforms.
@@ -734,7 +477,7 @@ public: true
 		  3. **Physical Disabilities:**
 		    * VR headsets and controllers must be designed to accommodate users with limited mobility or dexterity.
 		    * Alternative input methods, such as eye-tracking or voice commands, can enhance accessibility for these users.
-		    * **Edge Case:** Consider users with quadriplegia using a VR system that allows full navigation and interaction via eye-tracking combined with voice commands. The system could even include adaptive AI that learns the user's preferences and adjusts the interface accordingly. AI can be employed to develop intuitive and responsive eye-tracking interfaces, enabling users to interact with VR environments in a more natural and efficient way. Another example is [Project Gameface from Google](https://github.com/google/project-gameface), a hands-free virtual mouse that allows users to control a computer's cursor through head movements and facial gestures.
+		    * **Edge Case:** Consider users with quadriplegia using a VR system that allows full navigation and interaction via eye-tracking combined with voice commands. The system [private] even include adaptive AI that learns the user's preferences and adjusts the interface accordingly. AI can be employed to develop intuitive and responsive eye-tracking interfaces, enabling users to interact with VR environments in a more natural and efficient way. Another example is [Project Gameface from Google](https://github.com/google/project-gameface), a hands-free virtual mouse that allows users to control a computer's cursor through head movements and facial gestures.
 		  4. **Cognitive Disabilities:**
 		    * Immersive environments should offer simplified navigation and clear, consistent instructions to support users with cognitive impairments.
 		    * VR and AR applications can be tailored for vocational training or rehabilitation, using accessible interfaces that cater to specific cognitive needs.
@@ -746,7 +489,7 @@ public: true
 		    * **Edge Case:** A mobile banking app might include a high-contrast mode for users with low vision, alongside support for voice-controlled navigation to help users with motor impairments conduct transactions. AI can be integrated to personalize UI elements based on user preferences and needs, such as automatically adjusting font size, colour contrast, and navigation methods.
 		  2. **Content Accessibility:**
 		    * Text content should be simple and easy to understand, particularly for non-native speakers and users with cognitive disabilities. The use of plain language and intuitive icons can greatly enhance usability.
-		    * **Edge Case:** A government website offering vital services could provide text-to-speech functionality, simple language summaries of complex legal documents, and symbols or infographics to assist users with varying levels of literacy. AI can be employed to generate text summaries of complex content, simplify language, and create alternative representations of information, such as visual diagrams or audio descriptions.
+		    * **Edge Case:** A government website offering vital services [private] provide text-to-speech functionality, simple language summaries of complex legal documents, and symbols or infographics to assist users with varying levels of literacy. AI can be employed to generate text summaries of complex content, simplify language, and create alternative representations of information, such as visual diagrams or audio descriptions.
 		  3. **Interactive Elements:**
 		    * Buttons, forms, and other interactive elements must be accessible via multiple input methods, including keyboard, mouse, and voice commands.
 		    * **Edge Case:** Consider a social media platform where users can fully engage through voice commands, allowing those with severe physical disabilities to post, comment, and interact without the need for traditional input devices. AI can enhance the accessibility of interactive elements by enabling users to interact with them using natural language, gestures, or other alternative methods.
@@ -773,7 +516,7 @@ public: true
 		- * **AI and Machine Learning:** AI has the potential to revolutionise accessibility by providing personalised experiences tailored to individual user needs. For example, AI can assist in real-time translation of sign language or generate alternative text descriptions for visual content. Projects like [ChatCaptioner](https://github.com/Vision-CAIR/ChatCaptioner) use a dialogue between two AI models to generate enriched image descriptions, while [Video-LLaMA](https://github.com/DAMO-NLP-SG/Video-LLaMA) empowers large language models to understand both video and audio content. The Visual Geometry Group (VGG) at the University of Oxford has also developed [AutoAD](httpss://www.robots.ox.ac.uk/~vgg/research/autoad/), a system for creating audio descriptions of movies in context.
 		- * **Edge Case:** Consider an AI-driven virtual assistant that not only responds to voice commands but also detects when a user might be struggling and proactively offers assistance, such as simplifying a task or adjusting the user interface for better accessibility. AI can be trained to recognise specific user behaviours, such as frustration or difficulty, and adapt the system to provide more accessible options.
 		- * **Inclusive Immersive Experiences:** As the Metaverse and other immersive environments continue to develop, there will be increasing demand for accessible experiences that cater to a diverse global audience. This includes creating new interaction patterns that are intuitive for all users, regardless of their abilities.
-		- * **Edge Case:** Future immersive environments could use biometric data to dynamically adjust the level of sensory input, reducing stimuli for users prone to sensory overload or enhancing it for those who need more engagement. AI can be used to monitor user physiological responses and adapt the immersive environment to optimize for individual preferences and needs.
+		- * **Edge Case:** Future immersive environments [private] use biometric data to dynamically adjust the level of sensory input, reducing stimuli for users prone to sensory overload or enhancing it for those who need more engagement. AI can be used to monitor user physiological responses and adapt the immersive environment to optimize for individual preferences and needs.
 
 			- #### **Key Components**
 		- **Agents**: Perform tasks, make decisions, and interact with other entities.
@@ -1305,7 +1048,7 @@ public: true
 			- it can easily operate outside of the walled garden of the metaverse, extending the reach of the messages
 		- [Nostr is incredibly promising](https://www.forbes.com/sites/rogerhuang/2022/12/29/nostr-is-the-decentralized-protocol-that-might-replace-elon-musks-twitter/),and integrating these relays in the metaverse servers and clients of theproposed technology stack in this book might allow us globally provableidentity, with privacy by design. It can provide message passing. If allentities in the collaborative mixed reality scenegraphs are also Nostrkey pairs then schema can be applied consistently with the economiclayer using the same key system as Bitcoin. Nostr has just received asubstantial grant from Dorsey. It is core to the design later in thebook. A curated list of projects and libraries is [available ongithub](https://github.com/aljazceru/awesome-nostr).
 		- Luke Childs [says](https://github.com/nostr-protocol/nips/issues/154):
-			- “Nostr makes a good candidate to be used as a very simple DID layer.Having "Login with Nostr" auth on websites solves a lot of problems in avery elegant way, and Nostr’s main use case as a social network protocolmakes it highly suited to be used as your main identity proving key.Compare "Login with Nostr" to similar "Login with Lightning"(LNURL-auth) specs to see some easy and obvious advantages:  Remote signer vs local signer  Login with Lightning requires access to remote keys, login with Nostrrequires access to local keys ideally stored in a browser extension. Dueto the way Lightning works you can only really have one instance. Youneed all your client devices linked to a single Lightning node, thismeans most clients will be connecting to the signer remotely. Now ifyour Lightning node goes down or you lose your connection you also can’tauth with any service. This could cause circular dependencies where youlose the connection to your Lightning node so you can’t auth with theservices you need to access to debug the issue with your Lightning nodelike your hosting provider or VPN account. You could technically solvethis by replicating your LN keys to other client devices only to be usedfor local auth signing but that introduces other risks.  Unique identifier vs identity  A Lightning node is not really an identity but a unique identifier. Itjust tells you the person that auths is the same random person thatauthed last time, it doesn’t tell you who they are. A nostr pubkey is anidentity. It tells you who they are, what their name is, what they looklike, who they know, how you can pay them, how you can message them.  This is much more useful as an identity layer for an application. Theapplication can show their profile picture, username, send secure crossplatform push notifications via NIP-04 encrypted Nostr DMs, etc.  Consistent identity across services  Lightning pubkeys are sensitive private information and can leakconfidential financial information, Nostr pubkeys are safe to share withanyone. LNURL-auth adds extra steps to solve this by creating derivedsubkeys for identities that are unique to each service you auth with.This does not seem ideal, it seems the default case is that an identityis something that you do want to follow you across all your accounts.Nostr based auth behaves more appropriate in this regard. In the rarecase you need to achieve privacy and separation between certain servicesyou can still do that by using use a throwaway Nostr key for thoseservices.  User relationships across services Since authing with Nostr shares areal social identity with the service, they can also see your Nostrsocial graph. This could be useful for connecting you to people youalready know on the new service.  Low cost identity  Ideally identities should be easy to create but hard to build upreputation to limit spam while avoiding excluding people from thenetwork. It’s not clear that it will be cost effective / scalable foreveryone to run their own Lightning node so tying individual identity toa single Lightning node pubkey is problematic. Nostr keys are easy tocreate and hard reputation can be earned via PoW/DNS or building astrong social graph.”
+			- “Nostr makes a good candidate to be used as a very simple DID layer.Having "Login with Nostr" auth on websites solves a lot of problems in avery elegant way, and Nostr’s main use case as a social network protocolmakes it highly suited to be used as your main identity proving key.Compare "Login with Nostr" to similar "Login with Lightning"(LNURL-auth) specs to see some easy and obvious advantages:  Remote signer vs local signer  Login with Lightning requires access to remote keys, login with Nostrrequires access to local keys ideally stored in a browser extension. Dueto the way Lightning works you can only really have one instance. Youneed all your client devices linked to a single Lightning node, thismeans most clients will be connecting to the signer remotely. Now ifyour Lightning node goes down or you lose your connection you also can’tauth with any service. This [private] cause circular dependencies where youlose the connection to your Lightning node so you can’t auth with theservices you need to access to debug the issue with your Lightning nodelike your hosting provider or VPN account. You [private] technically solvethis by replicating your LN keys to other client devices only to be usedfor local auth signing but that introduces other risks.  Unique identifier vs identity  A Lightning node is not really an identity but a unique identifier. Itjust tells you the person that auths is the same random person thatauthed last time, it doesn’t tell you who they are. A nostr pubkey is anidentity. It tells you who they are, what their name is, what they looklike, who they know, how you can pay them, how you can message them.  This is much more useful as an identity layer for an application. Theapplication can show their profile picture, username, send secure crossplatform push notifications via NIP-04 encrypted Nostr DMs, etc.  Consistent identity across services  Lightning pubkeys are sensitive private information and can leakconfidential financial information, Nostr pubkeys are safe to share withanyone. LNURL-auth adds extra steps to solve this by creating derivedsubkeys for identities that are unique to each service you auth with.This does not seem ideal, it seems the default case is that an identityis something that you do want to follow you across all your accounts.Nostr based auth behaves more appropriate in this regard. In the rarecase you need to achieve privacy and separation between certain servicesyou can still do that by using use a throwaway Nostr key for thoseservices.  User relationships across services Since authing with Nostr shares areal social identity with the service, they can also see your Nostrsocial graph. This [private] be useful for connecting you to people youalready know on the new service.  Low cost identity  Ideally identities should be easy to create but hard to build upreputation to limit spam while avoiding excluding people from thenetwork. It’s not clear that it will be cost effective / scalable foreveryone to run their own Lightning node so tying individual identity toa single Lightning node pubkey is problematic. Nostr keys are easy tocreate and hard reputation can be earned via PoW/DNS or building astrong social graph.”
 
   - ### Company Culture
 		- **Growth Focus**: The company culture prioritized growth and user engagement over other factors, such as user safety and value​​.
@@ -1319,7 +1062,7 @@ public: true
 
   - ### Mistakes by Senior Management
 		- **Misaligned Priorities**: There was a fundamental misalignment between short-term growth and long-term integrity and user experience.
-		- **Ignoring Research**: Findings that suggested integrity changes could boost long-term retention were often ignored or downplayed.
+		- **Ignoring Research**: Findings that suggested integrity changes [private] boost long-term retention were often ignored or downplayed.
 		- **Limited Transparency**: Decisions were made with a lack of transparency, both internally and externally.
 
   - ### Hypothetical Better Ways of Building Platforms
@@ -1349,10 +1092,10 @@ public: true
 			- **Versatility**: The wristbands can be used for various applications, from simple object recognition to fully immersive environments[1](https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands).
 			- **Adaptive Learning**: The neural interface continuously improves its understanding of each user's unique movements over time, enhancing the overall experience5
 			- At present, the EMG wristbands can provide basic input commands, such as:
-				- Finger taps (index and middle finger
+				- Finger taps ([private] and middle finger
 				- D-pad-like gestures
 				- Simple hand movements[2](https://mixed-news.com/en/bosworth-on-emg-wristband-as-quest-controller/)
-			- While these inputs are currently limited, Meta's CTO Andrew Bosworth suggests that the technology could evolve to become an increasingly universal interface over time[2](https://mixed-news.com/en/bosworth-on-emg-wristband-as-quest-controller/).
+			- While these inputs are currently limited, Meta's CTO Andrew Bosworth suggests that the technology [private] evolve to become an increasingly universal interface over time[2](https://mixed-news.com/en/bosworth-on-emg-wristband-as-quest-controller/).
 
   - ##### Windows in Spatial Design
 		- - Windows are designed with a new visual language, made of a glass material that provides contrast with the world, awareness of surroundings, and adapts to different lighting conditions.
@@ -1374,7 +1117,7 @@ public: true
 		- Recommendations for moving an immersive app, focusing on avoidingdisorienting fast movements and instead recommending fade out and fadein techniques to keep the user comfortable during motion.
 
 		- ##### Key Moments
-		- Focusing on a “key moment” that provides a unique spatial or immersiveexperience is recommended. This could involve enhancing a moment withdepth and scale or transforming the user’s space to create a unique andmemorable experience.
+		- Focusing on a “key moment” that provides a unique spatial or immersiveexperience is recommended. This [private] involve enhancing a moment withdepth and scale or transforming the user’s space to create a unique andmemorable experience.
   - Lightfield
 		- [Light Field Lab](https://www.lightfieldlab.com/#tech)
   - [Infitec shows holographic projection screens (installation-international.com)](https://www.installation-international.com/ise-daily/infitec-shows-holographic-projection-screens)
@@ -1393,7 +1136,7 @@ public: true
 		- 👉 Galvanic skin response (GSR), which provides an indirect measure of emotional arousal – that is, the strength of an emotional response.
 		- 👉 Blood volume pulse (BVP). This is measured using photoplethysmography and provides information about heart rate (HR) and heart rate variability (HRV).
   - In other words, the aim is to collect a very comprehensive set of neurological and biometric data from the user. Creepy, right?!
-  - It’s unclear to me how you could even record meaningful data from within the ear.
+  - It’s unclear to me how you [private] even record meaningful data from within the ear.
   - If this kind of interface goes ahead it should be
 		- 1. Voluntary. Participants should not be forced or deceived into providing physiological or neurological data. Volunteers at liberty to stop at any time.
 		- 2. Limited. Personal data may only be collected for a specific, explicit and legitimate purpose. This purpose must be clearly stated, and only stored as long as needed to complete that purpose.
@@ -1609,7 +1352,7 @@ public: true
   - ### Frameworks for Decision-Making
 		- [[Agents]] can mitigate psychological friction by automating repetitive micropayment approvals.
 		- For example, they might pre-authorise low-value transactions (e.g., API queries or short IoT data bursts) based on user-defined spending thresholds.
-		- Such automation proves essential in contexts where multiple micro-billings—like generative AI queries at $0.001 each—could overwhelm users if prompted for every purchase.
+		- Such automation proves essential in contexts where multiple micro-billings—like generative AI queries at $0.001 each—[private] overwhelm users if prompted for every purchase.
 
   - ### Trust and Transparency Mechanisms
 		- Balancing autonomous decisions with user control is critical.
@@ -1652,13 +1395,13 @@ public: true
   - Luke Childs says:
 		- “Nostr makes a good candidate to be used as a very simple DID layer. Having "Login with Nostr" auth on websites solves a lot of problems in a very elegant way, and Nostr’s main use case as a social network protocol makes it highly suited to be used as your main identity proving key. Compare "Login with Nostr" to similar "Login with Lightning" (LNURL-auth) specs to see some easy and obvious advantages:
 		  Remote signer vs local signer
-		  Login with Lightning requires access to remote keys, login with Nostr requires access to local keys ideally stored in a browser extension. Due to the way Lightning works you can only really have one instance. You need all your client devices linked to a single Lightning node, this means most clients will be connecting to the signer remotely. Now if your Lightning node goes down or you lose your connection you also can’t auth with any service. This could cause circular dependencies where you lose the connection to your Lightning node so you can’t auth with the services you need to access to debug the issue with your Lightning node like your hosting provider or VPN account. You could technically solve this by replicating your LN keys to other client devices only to be used for local auth signing but that introduces other risks.
+		  Login with Lightning requires access to remote keys, login with Nostr requires access to local keys ideally stored in a browser extension. Due to the way Lightning works you can only really have one instance. You need all your client devices linked to a single Lightning node, this means most clients will be connecting to the signer remotely. Now if your Lightning node goes down or you lose your connection you also can’t auth with any service. This [private] cause circular dependencies where you lose the connection to your Lightning node so you can’t auth with the services you need to access to debug the issue with your Lightning node like your hosting provider or VPN account. You [private] technically solve this by replicating your LN keys to other client devices only to be used for local auth signing but that introduces other risks.
 		  Unique identifier vs identity
 		  A Lightning node is not really an identity but a unique identifier. It just tells you the person that auths is the same random person that authed last time, it doesn’t tell you who they are. A nostr pubkey is an identity. It tells you who they are, what their name is, what they look like, who they know, how you can pay them, how you can message them.
 		  This is much more useful as an identity layer for an application. The application can show their profile picture, username, send secure cross platform push notifications via NIP-04 encrypted Nostr DMs, etc.
 		  Consistent identity across services
 		  Lightning pubkeys are sensitive private information and can leak confidential financial information, Nostr pubkeys are safe to share with anyone. LNURL-auth adds extra steps to solve this by creating derived subkeys for identities that are unique to each service you auth with. This does not seem ideal, it seems the default case is that an identity is something that you do want to follow you across all your accounts. Nostr based auth behaves more appropriate in this regard. In the rare case you need to achieve privacy and separation between certain services you can still do that by using use a throwaway Nostr key for those services.
-		  User relationships across services Since authing with Nostr shares a real social identity with the service, they can also see your Nostr social graph. This could be useful for connecting you to people you already know on the new service.
+		  User relationships across services Since authing with Nostr shares a real social identity with the service, they can also see your Nostr social graph. This [private] be useful for connecting you to people you already know on the new service.
 		  Low cost identity
 		  Ideally identities should be easy to create but hard to build up reputation to limit spam while avoiding excluding people from the network. It’s not clear that it will be cost effective / scalable for everyone to run their own Lightning node so tying individual identity to a single Lightning node pubkey is problematic. Nostr keys are easy to create and hard reputation can be earned via PoW/DNS or building a strong social graph.”
 
@@ -1841,7 +1584,7 @@ public: true
 		- The primary use case emerging for all this incredibly expensive technology (exempting the AGI narrative) is targeted advertising, pairing very specific user data with very specific products. The platform providers are explicitly interested in [[Hyper personalisation]] of [[AI Video]]
 		- In the case of Microsoft, Meta's Llama "open" models and Google's capable "free to use" models this means a *scorched earth* policy where they push AI into all of their apps and ecosystems, ensuring continuity of the user eyeballs that allow them profit. For a while it looked like OpenAI were going to capture so many users that downstream search products built on their system, like Perplexity, would challenge the primacy of the incumbent centralised web providers.
 		- This also increasingly means automation, and robotics efficiency; profit though reduction of human workforce which is tax incentivised in the USA.
-		- At the very least all of these companies are predicted on an advertising business model, and if the soft power of GenAI is used for advertising then it could be pretty dystopian.
+		- At the very least all of these companies are predicted on an advertising business model, and if the soft power of GenAI is used for advertising then it [private] be pretty dystopian.
 		- All the current law pertaining to this is voluntary, to be clear, business isn't going to stop pursuing this plan because they (not China) signed a form.
 		- Post Cambridge Analytica abuse of Social Media there has been NO binding legislation in the half decade after.
 		- Governments are far too slow to respond. This will most likely be engaged with through bottom up labour movements like the screen writers guild strike.
@@ -1858,9 +1601,9 @@ public: true
 			- This will have staggering repercussions for the web as we know it.
 			- This is the old [[Death of the Internet]] conspiracy theory, but happening.
 		- Semantic and natural language programming
-			- In a future where intentional programming user experience (UX) evolves to its next stage, we could envision a scenario where multimodal and language models interface directly with bytecode, driven by semantic instructions from product owners. This approach would represent a significant leap from current programming paradigms, emphasizing a more intuitive, less syntax-heavy interaction with software development.
+			- In a future where intentional programming user experience (UX) evolves to its next stage, we [private] envision a scenario where multimodal and language models interface directly with bytecode, driven by semantic instructions from product owners. This approach would represent a significant leap from current programming paradigms, emphasizing a more intuitive, less syntax-heavy interaction with software development.
 			- **1. Semantic Instruction and Bytecode Manipulation:**
-				- In this future, product owners or non-technical stakeholders could provide instructions in natural language or through other intuitive interfaces.
+				- In this future, product owners or non-technical stakeholders [private] provide instructions in natural language or through other intuitive interfaces.
 				- These instructions would be semantically analyzed by advanced language models, capable of understanding the intent and context of the request.
 				- The language models would then translate these semantic instructions into bytecode – the lowest-level code executed by the computer's processor.
 				- This process bypasses traditional programming languages, allowing for more direct and efficient creation or modification of software functionalities.
@@ -1872,8 +1615,8 @@ public: true
 				- This direct communication loop would facilitate rapid iterations, as changes can be implemented and reviewed in real-time or near-real-time.
 			- **4. Automated Testing and Validation:**
 				- The system would incorporate sophisticated automated testing mechanisms.
-				- As soon as the bytecode is generated or modified, a series of automated tests could run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
-				- Product owners could also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
+				- As soon as the bytecode is generated or modified, a series of automated tests [private] run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
+				- Product owners [private] also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
 
   - ## User Friendly Interfaces
 		- Platforms like [Leonardo.AI](https://leonardo.ai/), [RunDiffusion](https://rundiffusion.com/) and [Automatic1111's WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) provide intuitive and user friendly interfaces for interacting with Stable Diffusion.
@@ -2033,7 +1776,7 @@ public: true
 		  1. **Visual Impairments:**
 		    * Magnification tools, font enlargement, and colour inversion are crucial for users with visual impairments.
 		    * Spatial audio and tactile feedback can serve as alternative modalities to convey visual information.
-		    * **Edge Case:** A VR environment where users navigate through auditory cues rather than visual ones could be beneficial for visually impaired users. For instance, using echolocation or 3D audio mapping to provide context in a game or virtual tour. AI could play a role in generating dynamic auditory descriptions of the virtual environment based on the user's movement and interactions.
+		    * **Edge Case:** A VR environment where users navigate through auditory cues rather than visual ones [private] be beneficial for visually impaired users. For instance, using echolocation or 3D audio mapping to provide context in a game or virtual tour. AI [private] play a role in generating dynamic auditory descriptions of the virtual environment based on the user's movement and interactions.
 		  2. **Auditory Impairments:**
 		    * Real-time sign language interpretation and closed captioning are critical for deaf or hard-of-hearing users.
 		    * Open metadata standards are needed to support these features across platforms.
@@ -2041,7 +1784,7 @@ public: true
 		  3. **Physical Disabilities:**
 		    * VR headsets and controllers must be designed to accommodate users with limited mobility or dexterity.
 		    * Alternative input methods, such as eye-tracking or voice commands, can enhance accessibility for these users.
-		    * **Edge Case:** Consider users with quadriplegia using a VR system that allows full navigation and interaction via eye-tracking combined with voice commands. The system could even include adaptive AI that learns the user's preferences and adjusts the interface accordingly. AI can be employed to develop intuitive and responsive eye-tracking interfaces, enabling users to interact with VR environments in a more natural and efficient way. Another example is [Project Gameface from Google](https://github.com/google/project-gameface), a hands-free virtual mouse that allows users to control a computer's cursor through head movements and facial gestures.
+		    * **Edge Case:** Consider users with quadriplegia using a VR system that allows full navigation and interaction via eye-tracking combined with voice commands. The system [private] even include adaptive AI that learns the user's preferences and adjusts the interface accordingly. AI can be employed to develop intuitive and responsive eye-tracking interfaces, enabling users to interact with VR environments in a more natural and efficient way. Another example is [Project Gameface from Google](https://github.com/google/project-gameface), a hands-free virtual mouse that allows users to control a computer's cursor through head movements and facial gestures.
 		  4. **Cognitive Disabilities:**
 		    * Immersive environments should offer simplified navigation and clear, consistent instructions to support users with cognitive impairments.
 		    * VR and AR applications can be tailored for vocational training or rehabilitation, using accessible interfaces that cater to specific cognitive needs.
@@ -2053,7 +1796,7 @@ public: true
 		    * **Edge Case:** A mobile banking app might include a high-contrast mode for users with low vision, alongside support for voice-controlled navigation to help users with motor impairments conduct transactions. AI can be integrated to personalize UI elements based on user preferences and needs, such as automatically adjusting font size, colour contrast, and navigation methods.
 		  2. **Content Accessibility:**
 		    * Text content should be simple and easy to understand, particularly for non-native speakers and users with cognitive disabilities. The use of plain language and intuitive icons can greatly enhance usability.
-		    * **Edge Case:** A government website offering vital services could provide text-to-speech functionality, simple language summaries of complex legal documents, and symbols or infographics to assist users with varying levels of literacy. AI can be employed to generate text summaries of complex content, simplify language, and create alternative representations of information, such as visual diagrams or audio descriptions.
+		    * **Edge Case:** A government website offering vital services [private] provide text-to-speech functionality, simple language summaries of complex legal documents, and symbols or infographics to assist users with varying levels of literacy. AI can be employed to generate text summaries of complex content, simplify language, and create alternative representations of information, such as visual diagrams or audio descriptions.
 		  3. **Interactive Elements:**
 		    * Buttons, forms, and other interactive elements must be accessible via multiple input methods, including keyboard, mouse, and voice commands.
 		    * **Edge Case:** Consider a social media platform where users can fully engage through voice commands, allowing those with severe physical disabilities to post, comment, and interact without the need for traditional input devices. AI can enhance the accessibility of interactive elements by enabling users to interact with them using natural language, gestures, or other alternative methods.
@@ -2080,7 +1823,7 @@ public: true
 		- * **AI and Machine Learning:** AI has the potential to revolutionise accessibility by providing personalised experiences tailored to individual user needs. For example, AI can assist in real-time translation of sign language or generate alternative text descriptions for visual content. Projects like [ChatCaptioner](https://github.com/Vision-CAIR/ChatCaptioner) use a dialogue between two AI models to generate enriched image descriptions, while [Video-LLaMA](https://github.com/DAMO-NLP-SG/Video-LLaMA) empowers large language models to understand both video and audio content. The Visual Geometry Group (VGG) at the University of Oxford has also developed [AutoAD](httpss://www.robots.ox.ac.uk/~vgg/research/autoad/), a system for creating audio descriptions of movies in context.
 		- * **Edge Case:** Consider an AI-driven virtual assistant that not only responds to voice commands but also detects when a user might be struggling and proactively offers assistance, such as simplifying a task or adjusting the user interface for better accessibility. AI can be trained to recognise specific user behaviours, such as frustration or difficulty, and adapt the system to provide more accessible options.
 		- * **Inclusive Immersive Experiences:** As the Metaverse and other immersive environments continue to develop, there will be increasing demand for accessible experiences that cater to a diverse global audience. This includes creating new interaction patterns that are intuitive for all users, regardless of their abilities.
-		- * **Edge Case:** Future immersive environments could use biometric data to dynamically adjust the level of sensory input, reducing stimuli for users prone to sensory overload or enhancing it for those who need more engagement. AI can be used to monitor user physiological responses and adapt the immersive environment to optimize for individual preferences and needs.
+		- * **Edge Case:** Future immersive environments [private] use biometric data to dynamically adjust the level of sensory input, reducing stimuli for users prone to sensory overload or enhancing it for those who need more engagement. AI can be used to monitor user physiological responses and adapt the immersive environment to optimize for individual preferences and needs.
 
 			- #### **Key Components**
 		- **Agents**: Perform tasks, make decisions, and interact with other entities.
@@ -2612,7 +2355,7 @@ public: true
 			- it can easily operate outside of the walled garden of the metaverse, extending the reach of the messages
 		- [Nostr is incredibly promising](https://www.forbes.com/sites/rogerhuang/2022/12/29/nostr-is-the-decentralized-protocol-that-might-replace-elon-musks-twitter/),and integrating these relays in the metaverse servers and clients of theproposed technology stack in this book might allow us globally provableidentity, with privacy by design. It can provide message passing. If allentities in the collaborative mixed reality scenegraphs are also Nostrkey pairs then schema can be applied consistently with the economiclayer using the same key system as Bitcoin. Nostr has just received asubstantial grant from Dorsey. It is core to the design later in thebook. A curated list of projects and libraries is [available ongithub](https://github.com/aljazceru/awesome-nostr).
 		- Luke Childs [says](https://github.com/nostr-protocol/nips/issues/154):
-			- “Nostr makes a good candidate to be used as a very simple DID layer.Having "Login with Nostr" auth on websites solves a lot of problems in avery elegant way, and Nostr’s main use case as a social network protocolmakes it highly suited to be used as your main identity proving key.Compare "Login with Nostr" to similar "Login with Lightning"(LNURL-auth) specs to see some easy and obvious advantages:  Remote signer vs local signer  Login with Lightning requires access to remote keys, login with Nostrrequires access to local keys ideally stored in a browser extension. Dueto the way Lightning works you can only really have one instance. Youneed all your client devices linked to a single Lightning node, thismeans most clients will be connecting to the signer remotely. Now ifyour Lightning node goes down or you lose your connection you also can’tauth with any service. This could cause circular dependencies where youlose the connection to your Lightning node so you can’t auth with theservices you need to access to debug the issue with your Lightning nodelike your hosting provider or VPN account. You could technically solvethis by replicating your LN keys to other client devices only to be usedfor local auth signing but that introduces other risks.  Unique identifier vs identity  A Lightning node is not really an identity but a unique identifier. Itjust tells you the person that auths is the same random person thatauthed last time, it doesn’t tell you who they are. A nostr pubkey is anidentity. It tells you who they are, what their name is, what they looklike, who they know, how you can pay them, how you can message them.  This is much more useful as an identity layer for an application. Theapplication can show their profile picture, username, send secure crossplatform push notifications via NIP-04 encrypted Nostr DMs, etc.  Consistent identity across services  Lightning pubkeys are sensitive private information and can leakconfidential financial information, Nostr pubkeys are safe to share withanyone. LNURL-auth adds extra steps to solve this by creating derivedsubkeys for identities that are unique to each service you auth with.This does not seem ideal, it seems the default case is that an identityis something that you do want to follow you across all your accounts.Nostr based auth behaves more appropriate in this regard. In the rarecase you need to achieve privacy and separation between certain servicesyou can still do that by using use a throwaway Nostr key for thoseservices.  User relationships across services Since authing with Nostr shares areal social identity with the service, they can also see your Nostrsocial graph. This could be useful for connecting you to people youalready know on the new service.  Low cost identity  Ideally identities should be easy to create but hard to build upreputation to limit spam while avoiding excluding people from thenetwork. It’s not clear that it will be cost effective / scalable foreveryone to run their own Lightning node so tying individual identity toa single Lightning node pubkey is problematic. Nostr keys are easy tocreate and hard reputation can be earned via PoW/DNS or building astrong social graph.”
+			- “Nostr makes a good candidate to be used as a very simple DID layer.Having "Login with Nostr" auth on websites solves a lot of problems in avery elegant way, and Nostr’s main use case as a social network protocolmakes it highly suited to be used as your main identity proving key.Compare "Login with Nostr" to similar "Login with Lightning"(LNURL-auth) specs to see some easy and obvious advantages:  Remote signer vs local signer  Login with Lightning requires access to remote keys, login with Nostrrequires access to local keys ideally stored in a browser extension. Dueto the way Lightning works you can only really have one instance. Youneed all your client devices linked to a single Lightning node, thismeans most clients will be connecting to the signer remotely. Now ifyour Lightning node goes down or you lose your connection you also can’tauth with any service. This [private] cause circular dependencies where youlose the connection to your Lightning node so you can’t auth with theservices you need to access to debug the issue with your Lightning nodelike your hosting provider or VPN account. You [private] technically solvethis by replicating your LN keys to other client devices only to be usedfor local auth signing but that introduces other risks.  Unique identifier vs identity  A Lightning node is not really an identity but a unique identifier. Itjust tells you the person that auths is the same random person thatauthed last time, it doesn’t tell you who they are. A nostr pubkey is anidentity. It tells you who they are, what their name is, what they looklike, who they know, how you can pay them, how you can message them.  This is much more useful as an identity layer for an application. Theapplication can show their profile picture, username, send secure crossplatform push notifications via NIP-04 encrypted Nostr DMs, etc.  Consistent identity across services  Lightning pubkeys are sensitive private information and can leakconfidential financial information, Nostr pubkeys are safe to share withanyone. LNURL-auth adds extra steps to solve this by creating derivedsubkeys for identities that are unique to each service you auth with.This does not seem ideal, it seems the default case is that an identityis something that you do want to follow you across all your accounts.Nostr based auth behaves more appropriate in this regard. In the rarecase you need to achieve privacy and separation between certain servicesyou can still do that by using use a throwaway Nostr key for thoseservices.  User relationships across services Since authing with Nostr shares areal social identity with the service, they can also see your Nostrsocial graph. This [private] be useful for connecting you to people youalready know on the new service.  Low cost identity  Ideally identities should be easy to create but hard to build upreputation to limit spam while avoiding excluding people from thenetwork. It’s not clear that it will be cost effective / scalable foreveryone to run their own Lightning node so tying individual identity toa single Lightning node pubkey is problematic. Nostr keys are easy tocreate and hard reputation can be earned via PoW/DNS or building astrong social graph.”
 
   - ### Company Culture
 		- **Growth Focus**: The company culture prioritized growth and user engagement over other factors, such as user safety and value​​.
@@ -2626,7 +2369,7 @@ public: true
 
   - ### Mistakes by Senior Management
 		- **Misaligned Priorities**: There was a fundamental misalignment between short-term growth and long-term integrity and user experience.
-		- **Ignoring Research**: Findings that suggested integrity changes could boost long-term retention were often ignored or downplayed.
+		- **Ignoring Research**: Findings that suggested integrity changes [private] boost long-term retention were often ignored or downplayed.
 		- **Limited Transparency**: Decisions were made with a lack of transparency, both internally and externally.
 
   - ### Hypothetical Better Ways of Building Platforms
@@ -2656,10 +2399,10 @@ public: true
 			- **Versatility**: The wristbands can be used for various applications, from simple object recognition to fully immersive environments[1](https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands).
 			- **Adaptive Learning**: The neural interface continuously improves its understanding of each user's unique movements over time, enhancing the overall experience5
 			- At present, the EMG wristbands can provide basic input commands, such as:
-				- Finger taps (index and middle finger
+				- Finger taps ([private] and middle finger
 				- D-pad-like gestures
 				- Simple hand movements[2](https://mixed-news.com/en/bosworth-on-emg-wristband-as-quest-controller/)
-			- While these inputs are currently limited, Meta's CTO Andrew Bosworth suggests that the technology could evolve to become an increasingly universal interface over time[2](https://mixed-news.com/en/bosworth-on-emg-wristband-as-quest-controller/).
+			- While these inputs are currently limited, Meta's CTO Andrew Bosworth suggests that the technology [private] evolve to become an increasingly universal interface over time[2](https://mixed-news.com/en/bosworth-on-emg-wristband-as-quest-controller/).
 
   - ##### Windows in Spatial Design
 		- - Windows are designed with a new visual language, made of a glass material that provides contrast with the world, awareness of surroundings, and adapts to different lighting conditions.
@@ -2681,7 +2424,7 @@ public: true
 		- Recommendations for moving an immersive app, focusing on avoidingdisorienting fast movements and instead recommending fade out and fadein techniques to keep the user comfortable during motion.
 
 		- ##### Key Moments
-		- Focusing on a “key moment” that provides a unique spatial or immersiveexperience is recommended. This could involve enhancing a moment withdepth and scale or transforming the user’s space to create a unique andmemorable experience.
+		- Focusing on a “key moment” that provides a unique spatial or immersiveexperience is recommended. This [private] involve enhancing a moment withdepth and scale or transforming the user’s space to create a unique andmemorable experience.
   - Lightfield
 		- [Light Field Lab](https://www.lightfieldlab.com/#tech)
   - [Infitec shows holographic projection screens (installation-international.com)](https://www.installation-international.com/ise-daily/infitec-shows-holographic-projection-screens)
@@ -2700,7 +2443,7 @@ public: true
 		- 👉 Galvanic skin response (GSR), which provides an indirect measure of emotional arousal – that is, the strength of an emotional response.
 		- 👉 Blood volume pulse (BVP). This is measured using photoplethysmography and provides information about heart rate (HR) and heart rate variability (HRV).
   - In other words, the aim is to collect a very comprehensive set of neurological and biometric data from the user. Creepy, right?!
-  - It’s unclear to me how you could even record meaningful data from within the ear.
+  - It’s unclear to me how you [private] even record meaningful data from within the ear.
   - If this kind of interface goes ahead it should be
 		- 1. Voluntary. Participants should not be forced or deceived into providing physiological or neurological data. Volunteers at liberty to stop at any time.
 		- 2. Limited. Personal data may only be collected for a specific, explicit and legitimate purpose. This purpose must be clearly stated, and only stored as long as needed to complete that purpose.
@@ -2916,7 +2659,7 @@ public: true
   - ### Frameworks for Decision-Making
 		- [[Agents]] can mitigate psychological friction by automating repetitive micropayment approvals.
 		- For example, they might pre-authorise low-value transactions (e.g., API queries or short IoT data bursts) based on user-defined spending thresholds.
-		- Such automation proves essential in contexts where multiple micro-billings—like generative AI queries at $0.001 each—could overwhelm users if prompted for every purchase.
+		- Such automation proves essential in contexts where multiple micro-billings—like generative AI queries at $0.001 each—[private] overwhelm users if prompted for every purchase.
 
   - ### Trust and Transparency Mechanisms
 		- Balancing autonomous decisions with user control is critical.
@@ -2959,13 +2702,13 @@ public: true
   - Luke Childs says:
 		- “Nostr makes a good candidate to be used as a very simple DID layer. Having "Login with Nostr" auth on websites solves a lot of problems in a very elegant way, and Nostr’s main use case as a social network protocol makes it highly suited to be used as your main identity proving key. Compare "Login with Nostr" to similar "Login with Lightning" (LNURL-auth) specs to see some easy and obvious advantages:
 		  Remote signer vs local signer
-		  Login with Lightning requires access to remote keys, login with Nostr requires access to local keys ideally stored in a browser extension. Due to the way Lightning works you can only really have one instance. You need all your client devices linked to a single Lightning node, this means most clients will be connecting to the signer remotely. Now if your Lightning node goes down or you lose your connection you also can’t auth with any service. This could cause circular dependencies where you lose the connection to your Lightning node so you can’t auth with the services you need to access to debug the issue with your Lightning node like your hosting provider or VPN account. You could technically solve this by replicating your LN keys to other client devices only to be used for local auth signing but that introduces other risks.
+		  Login with Lightning requires access to remote keys, login with Nostr requires access to local keys ideally stored in a browser extension. Due to the way Lightning works you can only really have one instance. You need all your client devices linked to a single Lightning node, this means most clients will be connecting to the signer remotely. Now if your Lightning node goes down or you lose your connection you also can’t auth with any service. This [private] cause circular dependencies where you lose the connection to your Lightning node so you can’t auth with the services you need to access to debug the issue with your Lightning node like your hosting provider or VPN account. You [private] technically solve this by replicating your LN keys to other client devices only to be used for local auth signing but that introduces other risks.
 		  Unique identifier vs identity
 		  A Lightning node is not really an identity but a unique identifier. It just tells you the person that auths is the same random person that authed last time, it doesn’t tell you who they are. A nostr pubkey is an identity. It tells you who they are, what their name is, what they look like, who they know, how you can pay them, how you can message them.
 		  This is much more useful as an identity layer for an application. The application can show their profile picture, username, send secure cross platform push notifications via NIP-04 encrypted Nostr DMs, etc.
 		  Consistent identity across services
 		  Lightning pubkeys are sensitive private information and can leak confidential financial information, Nostr pubkeys are safe to share with anyone. LNURL-auth adds extra steps to solve this by creating derived subkeys for identities that are unique to each service you auth with. This does not seem ideal, it seems the default case is that an identity is something that you do want to follow you across all your accounts. Nostr based auth behaves more appropriate in this regard. In the rare case you need to achieve privacy and separation between certain services you can still do that by using use a throwaway Nostr key for those services.
-		  User relationships across services Since authing with Nostr shares a real social identity with the service, they can also see your Nostr social graph. This could be useful for connecting you to people you already know on the new service.
+		  User relationships across services Since authing with Nostr shares a real social identity with the service, they can also see your Nostr social graph. This [private] be useful for connecting you to people you already know on the new service.
 		  Low cost identity
 		  Ideally identities should be easy to create but hard to build up reputation to limit spam while avoiding excluding people from the network. It’s not clear that it will be cost effective / scalable for everyone to run their own Lightning node so tying individual identity to a single Lightning node pubkey is problematic. Nostr keys are easy to create and hard reputation can be earned via PoW/DNS or building a strong social graph.”
 
@@ -3148,7 +2891,7 @@ public: true
 		- The primary use case emerging for all this incredibly expensive technology (exempting the AGI narrative) is targeted advertising, pairing very specific user data with very specific products. The platform providers are explicitly interested in [[Hyper personalisation]] of [[AI Video]]
 		- In the case of Microsoft, Meta's Llama "open" models and Google's capable "free to use" models this means a *scorched earth* policy where they push AI into all of their apps and ecosystems, ensuring continuity of the user eyeballs that allow them profit. For a while it looked like OpenAI were going to capture so many users that downstream search products built on their system, like Perplexity, would challenge the primacy of the incumbent centralised web providers.
 		- This also increasingly means automation, and robotics efficiency; profit though reduction of human workforce which is tax incentivised in the USA.
-		- At the very least all of these companies are predicted on an advertising business model, and if the soft power of GenAI is used for advertising then it could be pretty dystopian.
+		- At the very least all of these companies are predicted on an advertising business model, and if the soft power of GenAI is used for advertising then it [private] be pretty dystopian.
 		- All the current law pertaining to this is voluntary, to be clear, business isn't going to stop pursuing this plan because they (not China) signed a form.
 		- Post Cambridge Analytica abuse of Social Media there has been NO binding legislation in the half decade after.
 		- Governments are far too slow to respond. This will most likely be engaged with through bottom up labour movements like the screen writers guild strike.
@@ -3164,9 +2907,9 @@ public: true
 			- This will have staggering repercussions for the web as we know it.
 			- This is the old [[Death of the Internet]] conspiracy theory, but happening.
 		- Semantic and natural language programming
-			- In a future where intentional programming user experience (UX) evolves to its next stage, we could envision a scenario where multimodal and language models interface directly with bytecode, driven by semantic instructions from product owners. This approach would represent a significant leap from current programming paradigms, emphasizing a more intuitive, less syntax-heavy interaction with software development.
+			- In a future where intentional programming user experience (UX) evolves to its next stage, we [private] envision a scenario where multimodal and language models interface directly with bytecode, driven by semantic instructions from product owners. This approach would represent a significant leap from current programming paradigms, emphasizing a more intuitive, less syntax-heavy interaction with software development.
 			- **1. Semantic Instruction and Bytecode Manipulation:**
-				- In this future, product owners or non-technical stakeholders could provide instructions in natural language or through other intuitive interfaces.
+				- In this future, product owners or non-technical stakeholders [private] provide instructions in natural language or through other intuitive interfaces.
 				- These instructions would be semantically analyzed by advanced language models, capable of understanding the intent and context of the request.
 				- The language models would then translate these semantic instructions into bytecode – the lowest-level code executed by the computer's processor.
 				- This process bypasses traditional programming languages, allowing for more direct and efficient creation or modification of software functionalities.
@@ -3178,8 +2921,8 @@ public: true
 				- This direct communication loop would facilitate rapid iterations, as changes can be implemented and reviewed in real-time or near-real-time.
 			- **4. Automated Testing and Validation:**
 				- The system would incorporate sophisticated automated testing mechanisms.
-				- As soon as the bytecode is generated or modified, a series of automated tests could run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
-				- Product owners could also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
+				- As soon as the bytecode is generated or modified, a series of automated tests [private] run to validate the functionality, ensuring that the changes meet the specified requirements and do not introduce bugs or vulnerabilities.
+				- Product owners [private] also perform their own tests on the resultant functionality, using user-friendly testing tools integrated into this system.
 
   - ## User Friendly Interfaces
 		- Platforms like [Leonardo.AI](https://leonardo.ai/), [RunDiffusion](https://rundiffusion.com/) and [Automatic1111's WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) provide intuitive and user friendly interfaces for interacting with Stable Diffusion.
@@ -3255,7 +2998,7 @@ public: true
 				- * **Edge Case:** A user with dyslexia might benefit from using a font designed to reduce letter confusion, such as Dyslexie or OpenDyslexic. Similarly, real-time text-to-speech options can be invaluable for those with severe reading impairments. AI-powered tools, such as text-to-speech generators, can contribute to accessibility by providing more natural and accurate vocalizations.
 				- * **Age-Related Impairments:** As the global population ages, designs must account for declining vision, hearing, and motor skills.
 				- * **Edge Case:** An elderly user with reduced dexterity and vision may require larger touch targets on touchscreen devices and support for voice commands to interact effectively. AI can help by analysing user behaviour and adjusting the interface to optimize for ease of use, such as automatically increasing font sizes or simplifying navigation based on observed patterns.
-		    * **Edge Case:** A VR environment where users navigate through auditory cues rather than visual ones could be beneficial for visually impaired users. For instance, using echolocation or 3D audio mapping to provide context in a game or virtual tour. AI could play a role in generating dynamic auditory descriptions of the virtual environment based on the user's movement and interactions.
+		    * **Edge Case:** A VR environment where users navigate through auditory cues rather than visual ones [private] be beneficial for visually impaired users. For instance, using echolocation or 3D audio mapping to provide context in a game or virtual tour. AI [private] play a role in generating dynamic auditory descriptions of the virtual environment based on the user's movement and interactions.
 		  2. **Auditory Impairments:**
 		    * Real-time sign language interpretation and closed captioning are critical for deaf or hard-of-hearing users.
 		    * Open metadata standards are needed to support these features across platforms.
@@ -3863,7 +3606,7 @@ public: true
 		- 👉 Galvanic skin response (GSR), which provides an indirect measure of emotional arousal – that is, the strength of an emotional response.
 		- 👉 Blood volume pulse (BVP). This is measured using photoplethysmography and provides information about heart rate (HR) and heart rate variability (HRV).
   - In other words, the aim is to collect a very comprehensive set of neurological and biometric data from the user. Creepy, right?!
-  - It’s unclear to me how you could even record meaningful data from within the ear.
+  - It’s unclear to me how you [private] even record meaningful data from within the ear.
   - If this kind of interface goes ahead it should be
 		- 1. Voluntary. Participants should not be forced or deceived into providing physiological or neurological data. Volunteers at liberty to stop at any time.
 		- 2. Limited. Personal data may only be collected for a specific, explicit and legitimate purpose. This purpose must be clearly stated, and only stored as long as needed to complete that purpose.
@@ -3948,7 +3691,7 @@ public: true
 		- 👉 Galvanic skin response (GSR), which provides an indirect measure of emotional arousal – that is, the strength of an emotional response.
 		- 👉 Blood volume pulse (BVP). This is measured using photoplethysmography and provides information about heart rate (HR) and heart rate variability (HRV).
   - In other words, the aim is to collect a very comprehensive set of neurological and biometric data from the user. Creepy, right?!
-  - It’s unclear to me how you could even record meaningful data from within the ear.
+  - It’s unclear to me how you [private] even record meaningful data from within the ear.
   - If this kind of interface goes ahead it should be
 		- 1. Voluntary. Participants should not be forced or deceived into providing physiological or neurological data. Volunteers at liberty to stop at any time.
 		- 2. Limited. Personal data may only be collected for a specific, explicit and legitimate purpose. This purpose must be clearly stated, and only stored as long as needed to complete that purpose.
@@ -3956,7 +3699,7 @@ public: true
   - ### Human Texture Estimation: Bringing Digital Skin to Life
 		- Realistic skin texture is crucial for believable digital humans. This section explores projects and research dedicated to accurately estimating and recreating human skin textures.
 
-		  * [SMPLitex](https://dancasas.github.io/projects/SMPLitex/index.html): A generative model and dataset for estimating 3D human texture from a single image.
+		  * [SMPLitex](https://dancasas.github.io/projects/SMPLitex/[private].html): A generative model and dataset for estimating 3D human texture from a single image.
 			  * [Animating Characters for Free (LinkedIn Post)](https://www.linkedin.com/posts/jacques-alomo_animate-any-character-now-for-free-activity-7177666734957420544-N7v9/?utm_source=share&utm_medium=member_android): A post highlighting methods for animating characters for free.
 			  * [Midjourney Character Reference Feature (Medium Article)](https://degennfts.medium.com/new-midjourney-feature-character-reference-oppenheimer-example-906750d53d3f): An article exploring Midjourney's Character Reference feature.
 			  * [Full-Character Consistency with SDXL (Reddit Post)](https://www.reddit.com/r/StableDiffusion/comments/1azn5lq/an_attempt_at_full-character_consistancy_sdxl/): A discussion on achieving full-character consistency using SDXL.
@@ -3985,7 +3728,7 @@ public: true
 
 		- #### User Behaviour and Adoption
 			- A critical factor in the success of AI-driven search engines will be user adoption. While AI-enhanced search engines promise more accurate and contextually relevant results, there remains scepticism about whether users will transition from well-known traditional search engines like Google. Improvements in AI capabilities must demonstrate a substantial enhancement in user experience to effectively drive this behavioural shift.
-		- "Google no longer rewards scrappy, clever, SEO-savvy operators who know all the right tricks. They reward established brands, search-measurable forms of popularity, and established domains that searchers already know and click. From 1998 – 2018 (or so), one could reasonable start a powerful marketing flywheel with SEO for Google. In 2024, I don’t think that’s realistic, at least, not on the English-language web in competitive sectors."
+		- "Google no longer rewards scrappy, clever, SEO-savvy operators who know all the right tricks. They reward established brands, search-measurable forms of popularity, and established domains that searchers already know and click. From 1998 – 2018 (or so), one [private] reasonable start a powerful marketing flywheel with SEO for Google. In 2024, I don’t think that’s realistic, at least, not on the English-language web in competitive sectors."
   - [Google Search Is Now a Giant Hallucination (gizmodo.com)](https://gizmodo.com/google-search-ai-overview-giant-hallucination-1851499031) [[Death of the Internet]] [[Google AI Technology Corporation]]
   - Bots that persuade bots that persuade bots
 		- https://www.linkedin.com/posts/emollick_two-weird-things-that-are-going-to-happen-activity-7180768944067072000-Gmtq?
@@ -4267,7 +4010,7 @@ public: true
   - [Facebook whistleblower warns Metaverse will repeat ‘all the harms’,Frances Haugen says she is worried about privacy and safety inside Meta’s impending Metaverse. Her accusations of profit before safety are still red hot.](https://cointelegraph.com/news/facebook-whistleblower-warns-metaverse-will-repeat-the-harms)
   - [Virtual production and the future of generative art](https://virtualproducer.io/generative-ai-and-the-future-of-filmmaking/)
   - [Zuckerburg disengages from metaverse](https://www.thestreet.com/technology/mark-zuckerberg-quietly-buries-the-metaverse)
-  - [Metahouse Could be First of Many
+  - [Metahouse [private] be First of Many
   - Los Angeles Business Journal digital twin of a mansion](https://labusinessjournal.com/featured/metahouse-could-be-first-of-many/)
   - [The Future is a Dead Mall
   - Decentraland and the Metaverse: Clickbait Title: I spent three months living in the metaverse and now I'm starvingThe metaverse salespeople have a weird fixation with Animal Crossing, in sp...](https://www.youtube.com/watch?v=EiZhdpLXZ8Q)
@@ -4307,14 +4050,14 @@ public: true
    <https://www.wired.com/story/metaverse-ethics/> Exploring Why the Metaverse Hasn't Taken Off as Expected: The metaverse has quickly turned from a profitable utopia into a cash-guzzling dystopia.The text provides an overview of the Metaverse, a virtual world that has not yet taken off as expected. The text describes the potential reasons for this, including the lack of a clear business model and the difficulty of creating an immersive experience.
    <https://www.bbntimes.com/technology/exploring-why-the-metaverse-hasn-t-taken-off-as-expected> Unfortunately, the requested website (mirror-next-hop.forbes.com) is not accessible and the current session has been terminated with an access denied error (403). Further information can be obtained by contacting the website administrators using the provided reference code (217.138.196.24 2023-06-26T16:51:46.121Z). https://www.forbes.com/sites/charliefink/2023/05/07/this-week-in-xr-after-ai-sucks-the-air-out-of-the-metaverse-it-will-remake-xr/ The Building the Metaverse YouTube channel features a range of videos discussing the use of generative AI and large language models (LLMs) in game development and world-building. One video features a discussion with Kayla Comalli, co-founder and CEO of Lovelace Studios, about their platform Nyric, which generates entire worlds from a text prompt using generative AI technologies like ChatGPT. Other videos on the channel cover topics such as generative art assets for games, AI storytelling and narrative, generative graphics workflow for games, and the use of generative AI in game production. The channel also features discussions with individuals in related fields, such as Edward Saatchi of Fable Studio, who talks about virtual beings and simulated worlds, and Adam B. Levine of Blockade Labs, who discusses Skybox AI and game development. Additionally, there are videos discussing the potential applications of AI in other areas, such as defense and longevity. The channel provides a valuable resource for those interested in learning about the intersection of generative AI and gaming, as well as related topics. https://www.youtube.com/watch?v=fsg83BvsXww The article discusses the potential risks and opportunities of motion tracking data in extended reality (XR) and the metaverse. While this data is often presumed to be innocuous, recent studies have shown that it has the potential to profile and deanonymize XR users, posing a significant threat to security and privacy in the metaverse. The article highlights the need for increased awareness and caution regarding the collection and use of motion data in XR and metaverse experiences. https://arxiv.org/abs/2306.06459 Beauty company Coty has created a metaverse for its 11,000 global employees, using technology from Spatial. The virtual campus is based on 3D tech and tools from Spatial, and aims to develop upskilling and future innovation for Coty brands. The campus includes features such as text and vocal chat forums, screen and filesharing, customisable avatars and location exploration and quest fulfilment, as well as a "phygital" rewards system. Coty and Spatial said the campus was a significant milestone in crafting "new models for scalable gamified experiences". https://drugstorenews.com/coty-enters-metaverse-campus-global-workforce Tencent Cloud has announced its commitment to support the development of the Web3 ecosystem at the first global Web3 summit. The cloud business of Tencent has unveiled a development roadmap for a full suite of blockchain API services and its Tencent Cloud Metaverse-in-a-Box offering. The platform will provide technical support for Web3 and work with industry partners to nurture the Web3 ecosystem. Tencent Cloud plans to promote sustainable growth by offering Web3 builders cloud solutions credits, marketing workshops and publicity opportunities. It has also signed a Memorandum of Understanding with Ankr, a Web3 infrastructure provider, to jointly develop a full suite of blockchain API services. The API services will cover security, storage, identity management, middleware, development tools, and data analytics, among other areas. https://www.tencentcloud.com/dynamic/news-details/100437?lang=en&pg=
    <https://www.tencentcloud.com/dynamic/news-details/100437?lang=en&amp;pg=>
-  - The concept of a "predictive metaverse", an artificial intelligence (AI)-powered advanced form of a virtual world that could predict and anticipate its users' intentions and behaviors, is offering new ways to improve engagement, creativity and personalised learning in [[Education and AI]], according to an article in eSchool News by Roger James Hamilton, Founder and CEO of Genius Group. As virtual reality worlds become increasingly sophisticated and realistic, they are also becoming more intelligent and able to analyse data in real-time to deliver tailored recommendations and feedback to individual users, for example to optimise the virtual marketplace to improve user experience and increase sales. https://www.eschoolnews.com/educational-leadership/2023/04/21/predictive-metaverse-the-future-of-guided-learning/
+  - The concept of a "predictive metaverse", an artificial intelligence (AI)-powered advanced form of a virtual world that [private] predict and anticipate its users' intentions and behaviors, is offering new ways to improve engagement, creativity and personalised learning in [[Education and AI]], according to an article in eSchool News by Roger James Hamilton, Founder and CEO of Genius Group. As virtual reality worlds become increasingly sophisticated and realistic, they are also becoming more intelligent and able to analyse data in real-time to deliver tailored recommendations and feedback to individual users, for example to optimise the virtual marketplace to improve user experience and increase sales. https://www.eschoolnews.com/educational-leadership/2023/04/21/predictive-metaverse-the-future-of-guided-learning/
   - Reddit and its partners use cookies and similar technologies to improve the quality of its website, personalize content and advertising, measure advertising effectiveness, and ensure the proper functionality of its platform. By accepting all cookies, users agree to the use of cookies. However, by rejecting non-essential cookies, Reddit may still use certain cookies to ensure the proper functionality of its platform. Reddit's Cookie Notice and Privacy Policy provide more information about its use of cookies. Recently, Meta, Microsoft, and Disney have reversed their bets on the metaverse. Posts related to this topic on r/CryptoCurrency have been removed by moderators. https://www.reddit.com/r/CryptoCurrency/comments/128hqkw/meta_microsoft_and_disney_are_reversing_their/ Exokit, Adrian's opensource mixed reality toolkit for web <https://github.com/exokitxr/exokit>
   - [[Apple Inc Technology Corporation]] has acquired Mira, a Los Angeles-based startup that creates AR headsets for various companies and the US military. The acquisition, which was confirmed by [[Apple Inc Technology Corporation]], follows the company's launch of its $3,499 mixed reality headset, the Vision Pro. Two former Mira employees said that Jony Ive, [[Apple Inc Technology Corporation]]'s former design chief, was an advisor to the startup at one point. Mira's military contracts include a small agreement with the US Air Force and a $702,351 agreement with the Navy while its contract with Nintendo World provides headsets for the Mario Kart ride at its theme parks in Japan and LA's Universal Studios. It is currently unknown if [[Apple Inc Technology Corporation]] will continue Mira's military contracts. https://www.theverge.com/2023/6/6/23751350/[[apple]]-mira-ar-headset-startup
   - These posts include insights on the development of XR technology, possible applications, and innovations in the field. https://www.linkedin.com/posts/reneschulte_visionpro-ar-vr-activity-7072953336156602369-_2pL?utm_source=share&utm_medium=member_android
   - [This text is a brief description of a position paper published by the OMA3 Portaling and Mapping Working Group (PMWG) on the transformative technology of portals in the metaverse. The position paper provides insights into the potential of a universal portal system to reshape digital interaction for consumers, businesses, and platforms. It highlights the development process, strategic approach, and vision of OMA3 in setting new standards for the Web3 universe. The paper invites readers to comment on it by creating an issue or commenting in the Google Doc. It also encourages individuals to join OMA3 and participate in the Portaling and Mapping Working Group if they would like to contribute to the project. The paper is licensed under a Creative Commons Attribution 4.0 International License.](https://github.com/oma3dao/portal-position-paper)
   - [The Open Metaverse Alliance for Web3 (OMA3) has announced the Inter-World Portaling System (IWPS) project, aimed at creating standards for seamless travel between metaverse platforms. OMA3, based in Zug, Switzerland, is a consortium of top metaverse companies in Web3. The IWPS project will allow users to walk through inter-world portals and travel between metaverse platforms such as Alien Worlds, My Neighbor Alice, and Sandbox. OMA3 believes that IWPS has the potential to enhance accessibility and engagement within the digital realm by bridging disparate metaverse environments. They compare IWPS to the development of transportation technology like railroads and highways in the industrial revolution and the introduction of the HTTP standard in the digital realm, both of which facilitated the free flow of goods, services, and information. OMA3 has released a position paper outlining the importance of IWPS and inviting participation and comments from the Web3 metaverse community. They see the development and standardization of IWPS as the next frontier in the evolution of the metaverse, enabling new levels of connectivity, commerce, and shared experiences.](https://venturebeat.com/games/oma3-offers-way-for-users-to-travel-between-blockchain-gaming-worlds-in-the-metaverse/)
   - [Beatoven.ai is a website that uses advanced AI music generation techniques to create unique, mood-based music for videos and podcasts. Users can start by choosing a genre or style that suits their theme and then make cuts to reflect different moods throughout their content. With a rich selection of 16 moods to choose from, users can easily find the right mood for each cut. Once the desired moods have been selected, users can hit compose and let the AI algorithm generate a unique track for them.   The website is useful for various types of content creators, including agency/production houses, YouTube creators, podcast creators, indie game developers, audiobook producers, and web3 and metaverse companies. It offers a range of benefits, such as packing a punch in videos, creating a signature sound for YouTube channels, making intro and outro sections special for podcasts, designing themes and background music for games, elevating audio books with atmospheric music, and providing background music for metaverse experiences.   Beatoven.ai also allows users to customize the length, genre, mood, and instruments of their tracks. The resulting music is production-ready with industry-standard mixing and mastering.   The licensing terms for the music on Beatoven.ai grant users a perpetual license for usage on their chosen platforms. All copyrights for the music created on the website belong to Beatoven Private Limited.   The website offers a free membership option, allowing users to create and download music for the first 15 minutes of their projects. There is also a premium pricing plan available for unlimited usage.   Overall, Beatoven.ai is a versatile and user-friendly platform that offers customized, royalty-free music for a wide range of content creators.](https://www.beatoven.ai/)
-  - [A predictive metaverse is an advanced virtual world powered by AI and machine learning algorithms. It can predict and anticipate the actions and behaviors of its users, allowing for personalized recommendations, predictions, and feedback. This concept is becoming increasingly appealing to content creators and educators in the field of education, as it can improve engagement and creativity and create personalized learning programs.  In a predictive metaverse, AI algorithms can analyze real-time data to understand the preferences, behaviors, and intentions of users. This information can then be used to optimize the virtual world and improve the user experience. For example, an AI algorithm could predict user behavior in a virtual marketplace, such as what they are likely to buy and when they are likely to buy it. This data can be used to optimize the marketplace and increase sales.  While the term metaverse is often associated with the gaming industry, its potential applications in education are significant. The predictive metaverse can enhance virtual learning by providing personalized guidance and support to students. It can help create immersive learning experiences and improve student engagement and motivation.  As virtual worlds become more sophisticated and realistic, the predictive metaverse holds great promise for the future of guided learning. By harnessing the power of AI and machine learning, educators can create personalized learning experiences that cater to the unique needs and preferences of each student. This technology has the potential to revolutionize education by providing tailored instruction, real-time feedback, and personalized recommendations, ultimately improving student outcomes and overall learning experiences.](https://www.eschoolnews.com/educational-leadership/2023/04/21/predictive-metaverse-the-future-of-guided-learning/)
+  - [A predictive metaverse is an advanced virtual world powered by AI and machine learning algorithms. It can predict and anticipate the actions and behaviors of its users, allowing for personalized recommendations, predictions, and feedback. This concept is becoming increasingly appealing to content creators and educators in the field of education, as it can improve engagement and creativity and create personalized learning programs.  In a predictive metaverse, AI algorithms can analyze real-time data to understand the preferences, behaviors, and intentions of users. This information can then be used to optimize the virtual world and improve the user experience. For example, an AI algorithm [private] predict user behavior in a virtual marketplace, such as what they are likely to buy and when they are likely to buy it. This data can be used to optimize the marketplace and increase sales.  While the term metaverse is often associated with the gaming industry, its potential applications in education are significant. The predictive metaverse can enhance virtual learning by providing personalized guidance and support to students. It can help create immersive learning experiences and improve student engagement and motivation.  As virtual worlds become more sophisticated and realistic, the predictive metaverse holds great promise for the future of guided learning. By harnessing the power of AI and machine learning, educators can create personalized learning experiences that cater to the unique needs and preferences of each student. This technology has the potential to revolutionize education by providing tailored instruction, real-time feedback, and personalized recommendations, ultimately improving student outcomes and overall learning experiences.](https://www.eschoolnews.com/educational-leadership/2023/04/21/predictive-metaverse-the-future-of-guided-learning/)
   - [This text is a Reddit post from the r/CryptoCurrency subreddit. The post mentions that Meta (formerly known as Facebook) as well as Microsoft and Disney are reversing their bets on the metaverse. However, the post has been removed by the subreddit moderators. The comments in the post discuss the current hype around artificial intelligence (AI) and the need for companies to hop on that trend. Some users express their opinions that these companies went about their approach to the metaverse in the wrong way. The post also includes comments about the ownership of a bot that has received a high number of moons (a cryptocurrency earned on the Reddit platform) and speculation on the future of meta platforms like Meta. The post is followed by a list of related crypto news articles from various sources, covering topics such as refunds in crypto scams, acquisitions of Bitcoin, changes in cryptocurrency taxes, and the launch of web3 games by Ubisoft.](https://www.reddit.com/r/CryptoCurrency/comments/128hqkw/meta_microsoft_and_disney_are_reversing_their/)
   - [Tencent Cloud, the cloud business of global tech company Tencent, has announced its commitment to support the development of the Web3 ecosystem. The company unveiled its development roadmap for a full suite of blockchain API services and its Tencent Cloud Metaverse-in-a-Box offerings. It aims to provide a strong technological foundation for Web3 builders and be the digital enabler for the Web3 industry. Tencent Cloud will collaborate with Web3 partners to accelerate the adoption of Web3. The company also signed a Memorandum of Understanding (MoU) with Web3 infrastructure provider Ankr to jointly develop a full suite of blockchain API services. Additionally, Tencent Cloud announced strategic collaborations with Avalanche, Scroll, and Sui, three other Web3 blockchain partners, to build a stronger foundational infrastructure for global builders. The collaboration with Avalanche will explore blockchain solutions for enterprise customers, while the partnership with Scroll aims to scale Ethereum through an open-sourced zk-Rollup. The collaboration with Sui will optimize the on-chain gaming experience. Furthermore, Tencent Cloud introduced Tencent Cloud Metaverse-in-a-Box, a comprehensive solution that integrates infrastructure, products, SDKs, and low-code solutions. The Metaverse-in-a-Box allows businesses to develop metaverse applications rapidly. Tencent Cloud hosted its first global Web3 summit, Tencent Cloud Web3 Build Day, to discuss the latest blockchain landscape and development trends in Web3 games and social networks.](https://www.tencentcloud.com/dynamic/news-details/100437?lang=enandpg=)
   - BrahmGAN is a cutting-edge 3D content creation tool that uses advanced technology such as NeRF, GAN, and Blockchain to create 3D content effortlessly, without requiring technical expertise or complex software. The tool is designed for industries such as eCommerce, XR, and Gaming. BrahmGAN's NeRF solutions for VR Services are capable of creating stunning worlds within days. The company is based in Bengaluru and Singapore. Interested parties can contact them via email at info@brahmgan.com or join their mailing list to stay updated on their latest developments. http://www.brahmGAN.ai
@@ -4371,7 +4114,7 @@ public: true
   - [Who Will Become The VISA of the AI Economy? (ChainCatcher)](https://www.chaincatcher.com/en/article/2161951)
   - [Micropayments 101: A Guide (Stripe)](https://stripe.com/ae/resources/more/micropayments-101-a-guide-to-get-businesses-started)
   - [The Psychology Behind Micropayments (Medium)](https://medium.com/dreamcommerce/the-psychology-behind-micropayments-how-they-match-our-modern-world-4d7aaf47449d)
-  - [Factors Influencing the Adoption of Electronic Payment Cards (IISTE)](https://www.iiste.org/Journals/index.php/RJFA/article/view/19147)
+  - [Factors Influencing the Adoption of Electronic Payment Cards (IISTE)](https://www.iiste.org/Journals/[private].php/RJFA/article/view/19147)
   - [How Behavioural Science Can Unleash Digital Payments Adoption (Simon-Kucher)](https://www.simon-kucher.com/sites/default/files/2019-01/SimonKucher_Report_Payment%20Adoption_Final.pdf)
   - [Ethical Implications and Challenges of AI in Business Operations (ResearchGate)](https://www.researchgate.net/publication/387653122_Ethical_Implications_and_Challenges_of_AI_Implementation_in_Business_Operations)
   - [Ethical Considerations for AI Financial Planning (OneStream)](https://www.onestream.com/blog/ethical-considerations-for-ai-financial-planning/)
@@ -4421,7 +4164,7 @@ public: true
   - it integrates with the torrent network allowing storage and external referencing of arbitrary data
   - it can easily operate outside of the walled garden of the metaverse, extending the reach of the messages
   - [Nostr is incrediblypromising](https://www.forbes.com/sites/rogerhuang/2022/12/29/nostr-is-the-decentralized-protocol-that-might-replace-elon-musks-twitter/),and integrating these relays in the metaverse servers and clients of theproposed technology stack in this book might allow us globally provableidentity, with privacy by design. It can provide message passing. If allentities in the collaborative mixed reality scenegraphs are also Nostrkey pairs then schema can be applied consistently with the economiclayer using the same key system as Bitcoin. Nostr has just received asubstantial grant from Dorsey. It is core to the design later in thebook. A curated list of projects and libraries is [available ongithub](https://github.com/aljazceru/awesome-nostr).
-  - Luke Childs [says](https://github.com/nostr-protocol/nips/issues/154):it“Nostr makes a good candidate to be used as a very simple DID layer.Having "Login with Nostr" auth on websites solves a lot of problems in avery elegant way, and Nostr’s main use case as a social network protocolmakes it highly suited to be used as your main identity proving key.Compare "Login with Nostr" to similar "Login with Lightning"(LNURL-auth) specs to see some easy and obvious advantages:  Remote signer vs local signer  Login with Lightning requires access to remote keys, login with Nostrrequires access to local keys ideally stored in a browser extension. Dueto the way Lightning works you can only really have one instance. Youneed all your client devices linked to a single Lightning node, thismeans most clients will be connecting to the signer remotely. Now ifyour Lightning node goes down or you lose your connection you also can’tauth with any service. This could cause circular dependencies where youlose the connection to your Lightning node so you can’t auth with theservices you need to access to debug the issue with your Lightning nodelike your hosting provider or VPN account. You could technically solvethis by replicating your LN keys to other client devices only to be usedfor local auth signing but that introduces other risks.  Unique identifier vs identity  A Lightning node is not really an identity but a unique identifier. Itjust tells you the person that auths is the same random person thatauthed last time, it doesn’t tell you who they are. A nostr pubkey is anidentity. It tells you who they are, what their name is, what they looklike, who they know, how you can pay them, how you can message them.  This is much more useful as an identity layer for an application. Theapplication can show their profile picture, username, send secure crossplatform push notifications via NIP-04 encrypted Nostr DMs, etc.  Consistent identity across services  Lightning pubkeys are sensitive private information and can leakconfidential financial information, Nostr pubkeys are safe to share withanyone. LNURL-auth adds extra steps to solve this by creating derivedsubkeys for identities that are unique to each service you auth with.This does not seem ideal, it seems the default case is that an identityis something that you do want to follow you across all your accounts.Nostr based auth behaves more appropriate in this regard. In the rarecase you need to achieve privacy and separation between certain servicesyou can still do that by using use a throwaway Nostr key for thoseservices.  User relationships across services Since authing with Nostr shares areal social identity with the service, they can also see your Nostrsocial graph. This could be useful for connecting you to people youalready know on the new service.  Low cost identity  Ideally identities should be easy to create but hard to build upreputation to limit spam while avoiding excluding people from thenetwork. It’s not clear that it will be cost effective / scalable foreveryone to run their own Lightning node so tying individual identity toa single Lightning node pubkey is problematic. Nostr keys are easy tocreate and hard reputation can be earned via PoW/DNS or building astrong social graph.”  Figure<a href="#fig:starhistory" data-reference-type="ref" data-reference="fig:starhistory">5.2</a>shows that the adoption is potentially tremendously fast.
+  - Luke Childs [says](https://github.com/nostr-protocol/nips/issues/154):it“Nostr makes a good candidate to be used as a very simple DID layer.Having "Login with Nostr" auth on websites solves a lot of problems in avery elegant way, and Nostr’s main use case as a social network protocolmakes it highly suited to be used as your main identity proving key.Compare "Login with Nostr" to similar "Login with Lightning"(LNURL-auth) specs to see some easy and obvious advantages:  Remote signer vs local signer  Login with Lightning requires access to remote keys, login with Nostrrequires access to local keys ideally stored in a browser extension. Dueto the way Lightning works you can only really have one instance. Youneed all your client devices linked to a single Lightning node, thismeans most clients will be connecting to the signer remotely. Now ifyour Lightning node goes down or you lose your connection you also can’tauth with any service. This [private] cause circular dependencies where youlose the connection to your Lightning node so you can’t auth with theservices you need to access to debug the issue with your Lightning nodelike your hosting provider or VPN account. You [private] technically solvethis by replicating your LN keys to other client devices only to be usedfor local auth signing but that introduces other risks.  Unique identifier vs identity  A Lightning node is not really an identity but a unique identifier. Itjust tells you the person that auths is the same random person thatauthed last time, it doesn’t tell you who they are. A nostr pubkey is anidentity. It tells you who they are, what their name is, what they looklike, who they know, how you can pay them, how you can message them.  This is much more useful as an identity layer for an application. Theapplication can show their profile picture, username, send secure crossplatform push notifications via NIP-04 encrypted Nostr DMs, etc.  Consistent identity across services  Lightning pubkeys are sensitive private information and can leakconfidential financial information, Nostr pubkeys are safe to share withanyone. LNURL-auth adds extra steps to solve this by creating derivedsubkeys for identities that are unique to each service you auth with.This does not seem ideal, it seems the default case is that an identityis something that you do want to follow you across all your accounts.Nostr based auth behaves more appropriate in this regard. In the rarecase you need to achieve privacy and separation between certain servicesyou can still do that by using use a throwaway Nostr key for thoseservices.  User relationships across services Since authing with Nostr shares areal social identity with the service, they can also see your Nostrsocial graph. This [private] be useful for connecting you to people youalready know on the new service.  Low cost identity  Ideally identities should be easy to create but hard to build upreputation to limit spam while avoiding excluding people from thenetwork. It’s not clear that it will be cost effective / scalable foreveryone to run their own Lightning node so tying individual identity toa single Lightning node pubkey is problematic. Nostr keys are easy tocreate and hard reputation can be earned via PoW/DNS or building astrong social graph.”  Figure<a href="#fig:starhistory" data-reference-type="ref" data-reference="fig:starhistory">5.2</a>shows that the adoption is potentially tremendously fast.
   ![]./assets/431d39316d5fa17f89fa9e1154fa2a267517a245.png
   An illustration of the enthusiasm for Nostr compared to traditional DID based on GitHub ‘stars’.
   - This provides a web interface into the metaverse providing:
@@ -4605,7 +4348,7 @@ public: true
   - [Facebook whistleblower warns Metaverse will repeat ‘all the harms’,Frances Haugen says she is worried about privacy and safety inside Meta’s impending Metaverse. Her accusations of profit before safety are still red hot.](https://cointelegraph.com/news/facebook-whistleblower-warns-metaverse-will-repeat-the-harms)
   - [Virtual production and the future of generative art](https://virtualproducer.io/generative-ai-and-the-future-of-filmmaking/)
   - [Zuckerburg disengages from metaverse](https://www.thestreet.com/technology/mark-zuckerberg-quietly-buries-the-metaverse)
-  - [Metahouse Could be First of Many
+  - [Metahouse [private] be First of Many
   - Los Angeles Business Journal digital twin of a mansion](https://labusinessjournal.com/featured/metahouse-could-be-first-of-many/)
   - [The Future is a Dead Mall
   - Decentraland and the Metaverse: Clickbait Title: I spent three months living in the metaverse and now I'm starvingThe metaverse salespeople have a weird fixation with Animal Crossing, in sp...](https://www.youtube.com/watch?v=EiZhdpLXZ8Q)
@@ -4645,14 +4388,14 @@ public: true
    <https://www.wired.com/story/metaverse-ethics/> Exploring Why the Metaverse Hasn't Taken Off as Expected: The metaverse has quickly turned from a profitable utopia into a cash-guzzling dystopia.The text provides an overview of the Metaverse, a virtual world that has not yet taken off as expected. The text describes the potential reasons for this, including the lack of a clear business model and the difficulty of creating an immersive experience.
    <https://www.bbntimes.com/technology/exploring-why-the-metaverse-hasn-t-taken-off-as-expected> Unfortunately, the requested website (mirror-next-hop.forbes.com) is not accessible and the current session has been terminated with an access denied error (403). Further information can be obtained by contacting the website administrators using the provided reference code (217.138.196.24 2023-06-26T16:51:46.121Z). https://www.forbes.com/sites/charliefink/2023/05/07/this-week-in-xr-after-ai-sucks-the-air-out-of-the-metaverse-it-will-remake-xr/ The Building the Metaverse YouTube channel features a range of videos discussing the use of generative AI and large language models (LLMs) in game development and world-building. One video features a discussion with Kayla Comalli, co-founder and CEO of Lovelace Studios, about their platform Nyric, which generates entire worlds from a text prompt using generative AI technologies like ChatGPT. Other videos on the channel cover topics such as generative art assets for games, AI storytelling and narrative, generative graphics workflow for games, and the use of generative AI in game production. The channel also features discussions with individuals in related fields, such as Edward Saatchi of Fable Studio, who talks about virtual beings and simulated worlds, and Adam B. Levine of Blockade Labs, who discusses Skybox AI and game development. Additionally, there are videos discussing the potential applications of AI in other areas, such as defense and longevity. The channel provides a valuable resource for those interested in learning about the intersection of generative AI and gaming, as well as related topics. https://www.youtube.com/watch?v=fsg83BvsXww The article discusses the potential risks and opportunities of motion tracking data in extended reality (XR) and the metaverse. While this data is often presumed to be innocuous, recent studies have shown that it has the potential to profile and deanonymize XR users, posing a significant threat to security and privacy in the metaverse. The article highlights the need for increased awareness and caution regarding the collection and use of motion data in XR and metaverse experiences. https://arxiv.org/abs/2306.06459 Beauty company Coty has created a metaverse for its 11,000 global employees, using technology from Spatial. The virtual campus is based on 3D tech and tools from Spatial, and aims to develop upskilling and future innovation for Coty brands. The campus includes features such as text and vocal chat forums, screen and filesharing, customisable avatars and location exploration and quest fulfilment, as well as a "phygital" rewards system. Coty and Spatial said the campus was a significant milestone in crafting "new models for scalable gamified experiences". https://drugstorenews.com/coty-enters-metaverse-campus-global-workforce Tencent Cloud has announced its commitment to support the development of the Web3 ecosystem at the first global Web3 summit. The cloud business of Tencent has unveiled a development roadmap for a full suite of blockchain API services and its Tencent Cloud Metaverse-in-a-Box offering. The platform will provide technical support for Web3 and work with industry partners to nurture the Web3 ecosystem. Tencent Cloud plans to promote sustainable growth by offering Web3 builders cloud solutions credits, marketing workshops and publicity opportunities. It has also signed a Memorandum of Understanding with Ankr, a Web3 infrastructure provider, to jointly develop a full suite of blockchain API services. The API services will cover security, storage, identity management, middleware, development tools, and data analytics, among other areas. https://www.tencentcloud.com/dynamic/news-details/100437?lang=en&pg=
    <https://www.tencentcloud.com/dynamic/news-details/100437?lang=en&amp;pg=>
-  - The concept of a "predictive metaverse", an artificial intelligence (AI)-powered advanced form of a virtual world that could predict and anticipate its users' intentions and behaviors, is offering new ways to improve engagement, creativity and personalised learning in [[Education and AI]], according to an article in eSchool News by Roger James Hamilton, Founder and CEO of Genius Group. As virtual reality worlds become increasingly sophisticated and realistic, they are also becoming more intelligent and able to analyse data in real-time to deliver tailored recommendations and feedback to individual users, for example to optimise the virtual marketplace to improve user experience and increase sales. https://www.eschoolnews.com/educational-leadership/2023/04/21/predictive-metaverse-the-future-of-guided-learning/
+  - The concept of a "predictive metaverse", an artificial intelligence (AI)-powered advanced form of a virtual world that [private] predict and anticipate its users' intentions and behaviors, is offering new ways to improve engagement, creativity and personalised learning in [[Education and AI]], according to an article in eSchool News by Roger James Hamilton, Founder and CEO of Genius Group. As virtual reality worlds become increasingly sophisticated and realistic, they are also becoming more intelligent and able to analyse data in real-time to deliver tailored recommendations and feedback to individual users, for example to optimise the virtual marketplace to improve user experience and increase sales. https://www.eschoolnews.com/educational-leadership/2023/04/21/predictive-metaverse-the-future-of-guided-learning/
   - Reddit and its partners use cookies and similar technologies to improve the quality of its website, personalize content and advertising, measure advertising effectiveness, and ensure the proper functionality of its platform. By accepting all cookies, users agree to the use of cookies. However, by rejecting non-essential cookies, Reddit may still use certain cookies to ensure the proper functionality of its platform. Reddit's Cookie Notice and Privacy Policy provide more information about its use of cookies. Recently, Meta, Microsoft, and Disney have reversed their bets on the metaverse. Posts related to this topic on r/CryptoCurrency have been removed by moderators. https://www.reddit.com/r/CryptoCurrency/comments/128hqkw/meta_microsoft_and_disney_are_reversing_their/ Exokit, Adrian's opensource mixed reality toolkit for web <https://github.com/exokitxr/exokit>
   - [[Apple Inc Technology Corporation]] has acquired Mira, a Los Angeles-based startup that creates AR headsets for various companies and the US military. The acquisition, which was confirmed by [[Apple Inc Technology Corporation]], follows the company's launch of its $3,499 mixed reality headset, the Vision Pro. Two former Mira employees said that Jony Ive, [[Apple Inc Technology Corporation]]'s former design chief, was an advisor to the startup at one point. Mira's military contracts include a small agreement with the US Air Force and a $702,351 agreement with the Navy while its contract with Nintendo World provides headsets for the Mario Kart ride at its theme parks in Japan and LA's Universal Studios. It is currently unknown if [[Apple Inc Technology Corporation]] will continue Mira's military contracts. https://www.theverge.com/2023/6/6/23751350/[[apple]]-mira-ar-headset-startup
   - These posts include insights on the development of XR technology, possible applications, and innovations in the field. https://www.linkedin.com/posts/reneschulte_visionpro-ar-vr-activity-7072953336156602369-_2pL?utm_source=share&utm_medium=member_android
   - [This text is a brief description of a position paper published by the OMA3 Portaling and Mapping Working Group (PMWG) on the transformative technology of portals in the metaverse. The position paper provides insights into the potential of a universal portal system to reshape digital interaction for consumers, businesses, and platforms. It highlights the development process, strategic approach, and vision of OMA3 in setting new standards for the Web3 universe. The paper invites readers to comment on it by creating an issue or commenting in the Google Doc. It also encourages individuals to join OMA3 and participate in the Portaling and Mapping Working Group if they would like to contribute to the project. The paper is licensed under a Creative Commons Attribution 4.0 International License.](https://github.com/oma3dao/portal-position-paper)
   - [The Open Metaverse Alliance for Web3 (OMA3) has announced the Inter-World Portaling System (IWPS) project, aimed at creating standards for seamless travel between metaverse platforms. OMA3, based in Zug, Switzerland, is a consortium of top metaverse companies in Web3. The IWPS project will allow users to walk through inter-world portals and travel between metaverse platforms such as Alien Worlds, My Neighbor Alice, and Sandbox. OMA3 believes that IWPS has the potential to enhance accessibility and engagement within the digital realm by bridging disparate metaverse environments. They compare IWPS to the development of transportation technology like railroads and highways in the industrial revolution and the introduction of the HTTP standard in the digital realm, both of which facilitated the free flow of goods, services, and information. OMA3 has released a position paper outlining the importance of IWPS and inviting participation and comments from the Web3 metaverse community. They see the development and standardization of IWPS as the next frontier in the evolution of the metaverse, enabling new levels of connectivity, commerce, and shared experiences.](https://venturebeat.com/games/oma3-offers-way-for-users-to-travel-between-blockchain-gaming-worlds-in-the-metaverse/)
   - [Beatoven.ai is a website that uses advanced AI music generation techniques to create unique, mood-based music for videos and podcasts. Users can start by choosing a genre or style that suits their theme and then make cuts to reflect different moods throughout their content. With a rich selection of 16 moods to choose from, users can easily find the right mood for each cut. Once the desired moods have been selected, users can hit compose and let the AI algorithm generate a unique track for them.   The website is useful for various types of content creators, including agency/production houses, YouTube creators, podcast creators, indie game developers, audiobook producers, and web3 and metaverse companies. It offers a range of benefits, such as packing a punch in videos, creating a signature sound for YouTube channels, making intro and outro sections special for podcasts, designing themes and background music for games, elevating audio books with atmospheric music, and providing background music for metaverse experiences.   Beatoven.ai also allows users to customize the length, genre, mood, and instruments of their tracks. The resulting music is production-ready with industry-standard mixing and mastering.   The licensing terms for the music on Beatoven.ai grant users a perpetual license for usage on their chosen platforms. All copyrights for the music created on the website belong to Beatoven Private Limited.   The website offers a free membership option, allowing users to create and download music for the first 15 minutes of their projects. There is also a premium pricing plan available for unlimited usage.   Overall, Beatoven.ai is a versatile and user-friendly platform that offers customized, royalty-free music for a wide range of content creators.](https://www.beatoven.ai/)
-  - [A predictive metaverse is an advanced virtual world powered by AI and machine learning algorithms. It can predict and anticipate the actions and behaviors of its users, allowing for personalized recommendations, predictions, and feedback. This concept is becoming increasingly appealing to content creators and educators in the field of education, as it can improve engagement and creativity and create personalized learning programs.  In a predictive metaverse, AI algorithms can analyze real-time data to understand the preferences, behaviors, and intentions of users. This information can then be used to optimize the virtual world and improve the user experience. For example, an AI algorithm could predict user behavior in a virtual marketplace, such as what they are likely to buy and when they are likely to buy it. This data can be used to optimize the marketplace and increase sales.  While the term metaverse is often associated with the gaming industry, its potential applications in education are significant. The predictive metaverse can enhance virtual learning by providing personalized guidance and support to students. It can help create immersive learning experiences and improve student engagement and motivation.  As virtual worlds become more sophisticated and realistic, the predictive metaverse holds great promise for the future of guided learning. By harnessing the power of AI and machine learning, educators can create personalized learning experiences that cater to the unique needs and preferences of each student. This technology has the potential to revolutionize education by providing tailored instruction, real-time feedback, and personalized recommendations, ultimately improving student outcomes and overall learning experiences.](https://www.eschoolnews.com/educational-leadership/2023/04/21/predictive-metaverse-the-future-of-guided-learning/)
+  - [A predictive metaverse is an advanced virtual world powered by AI and machine learning algorithms. It can predict and anticipate the actions and behaviors of its users, allowing for personalized recommendations, predictions, and feedback. This concept is becoming increasingly appealing to content creators and educators in the field of education, as it can improve engagement and creativity and create personalized learning programs.  In a predictive metaverse, AI algorithms can analyze real-time data to understand the preferences, behaviors, and intentions of users. This information can then be used to optimize the virtual world and improve the user experience. For example, an AI algorithm [private] predict user behavior in a virtual marketplace, such as what they are likely to buy and when they are likely to buy it. This data can be used to optimize the marketplace and increase sales.  While the term metaverse is often associated with the gaming industry, its potential applications in education are significant. The predictive metaverse can enhance virtual learning by providing personalized guidance and support to students. It can help create immersive learning experiences and improve student engagement and motivation.  As virtual worlds become more sophisticated and realistic, the predictive metaverse holds great promise for the future of guided learning. By harnessing the power of AI and machine learning, educators can create personalized learning experiences that cater to the unique needs and preferences of each student. This technology has the potential to revolutionize education by providing tailored instruction, real-time feedback, and personalized recommendations, ultimately improving student outcomes and overall learning experiences.](https://www.eschoolnews.com/educational-leadership/2023/04/21/predictive-metaverse-the-future-of-guided-learning/)
   - [This text is a Reddit post from the r/CryptoCurrency subreddit. The post mentions that Meta (formerly known as Facebook) as well as Microsoft and Disney are reversing their bets on the metaverse. However, the post has been removed by the subreddit moderators. The comments in the post discuss the current hype around artificial intelligence (AI) and the need for companies to hop on that trend. Some users express their opinions that these companies went about their approach to the metaverse in the wrong way. The post also includes comments about the ownership of a bot that has received a high number of moons (a cryptocurrency earned on the Reddit platform) and speculation on the future of meta platforms like Meta. The post is followed by a list of related crypto news articles from various sources, covering topics such as refunds in crypto scams, acquisitions of Bitcoin, changes in cryptocurrency taxes, and the launch of web3 games by Ubisoft.](https://www.reddit.com/r/CryptoCurrency/comments/128hqkw/meta_microsoft_and_disney_are_reversing_their/)
   - [Tencent Cloud, the cloud business of global tech company Tencent, has announced its commitment to support the development of the Web3 ecosystem. The company unveiled its development roadmap for a full suite of blockchain API services and its Tencent Cloud Metaverse-in-a-Box offerings. It aims to provide a strong technological foundation for Web3 builders and be the digital enabler for the Web3 industry. Tencent Cloud will collaborate with Web3 partners to accelerate the adoption of Web3. The company also signed a Memorandum of Understanding (MoU) with Web3 infrastructure provider Ankr to jointly develop a full suite of blockchain API services. Additionally, Tencent Cloud announced strategic collaborations with Avalanche, Scroll, and Sui, three other Web3 blockchain partners, to build a stronger foundational infrastructure for global builders. The collaboration with Avalanche will explore blockchain solutions for enterprise customers, while the partnership with Scroll aims to scale Ethereum through an open-sourced zk-Rollup. The collaboration with Sui will optimize the on-chain gaming experience. Furthermore, Tencent Cloud introduced Tencent Cloud Metaverse-in-a-Box, a comprehensive solution that integrates infrastructure, products, SDKs, and low-code solutions. The Metaverse-in-a-Box allows businesses to develop metaverse applications rapidly. Tencent Cloud hosted its first global Web3 summit, Tencent Cloud Web3 Build Day, to discuss the latest blockchain landscape and development trends in Web3 games and social networks.](https://www.tencentcloud.com/dynamic/news-details/100437?lang=enandpg=)
   - BrahmGAN is a cutting-edge 3D content creation tool that uses advanced technology such as NeRF, GAN, and Blockchain to create 3D content effortlessly, without requiring technical expertise or complex software. The tool is designed for industries such as eCommerce, XR, and Gaming. BrahmGAN's NeRF solutions for VR Services are capable of creating stunning worlds within days. The company is based in Bengaluru and Singapore. Interested parties can contact them via email at info@brahmgan.com or join their mailing list to stay updated on their latest developments. http://www.brahmGAN.ai
@@ -4709,7 +4452,7 @@ public: true
   - [Who Will Become The VISA of the AI Economy? (ChainCatcher)](https://www.chaincatcher.com/en/article/2161951)
   - [Micropayments 101: A Guide (Stripe)](https://stripe.com/ae/resources/more/micropayments-101-a-guide-to-get-businesses-started)
   - [The Psychology Behind Micropayments (Medium)](https://medium.com/dreamcommerce/the-psychology-behind-micropayments-how-they-match-our-modern-world-4d7aaf47449d)
-  - [Factors Influencing the Adoption of Electronic Payment Cards (IISTE)](https://www.iiste.org/Journals/index.php/RJFA/article/view/19147)
+  - [Factors Influencing the Adoption of Electronic Payment Cards (IISTE)](https://www.iiste.org/Journals/[private].php/RJFA/article/view/19147)
   - [How Behavioural Science Can Unleash Digital Payments Adoption (Simon-Kucher)](https://www.simon-kucher.com/sites/default/files/2019-01/SimonKucher_Report_Payment%20Adoption_Final.pdf)
   - [Ethical Implications and Challenges of AI in Business Operations (ResearchGate)](https://www.researchgate.net/publication/387653122_Ethical_Implications_and_Challenges_of_AI_Implementation_in_Business_Operations)
   - [Ethical Considerations for AI Financial Planning (OneStream)](https://www.onestream.com/blog/ethical-considerations-for-ai-financial-planning/)
@@ -4759,7 +4502,7 @@ public: true
   - it integrates with the torrent network allowing storage and external referencing of arbitrary data
   - it can easily operate outside of the walled garden of the metaverse, extending the reach of the messages
   - [Nostr is incrediblypromising](https://www.forbes.com/sites/rogerhuang/2022/12/29/nostr-is-the-decentralized-protocol-that-might-replace-elon-musks-twitter/),and integrating these relays in the metaverse servers and clients of theproposed technology stack in this book might allow us globally provableidentity, with privacy by design. It can provide message passing. If allentities in the collaborative mixed reality scenegraphs are also Nostrkey pairs then schema can be applied consistently with the economiclayer using the same key system as Bitcoin. Nostr has just received asubstantial grant from Dorsey. It is core to the design later in thebook. A curated list of projects and libraries is [available ongithub](https://github.com/aljazceru/awesome-nostr).
-  - Luke Childs [says](https://github.com/nostr-protocol/nips/issues/154):it“Nostr makes a good candidate to be used as a very simple DID layer.Having "Login with Nostr" auth on websites solves a lot of problems in avery elegant way, and Nostr’s main use case as a social network protocolmakes it highly suited to be used as your main identity proving key.Compare "Login with Nostr" to similar "Login with Lightning"(LNURL-auth) specs to see some easy and obvious advantages:  Remote signer vs local signer  Login with Lightning requires access to remote keys, login with Nostrrequires access to local keys ideally stored in a browser extension. Dueto the way Lightning works you can only really have one instance. Youneed all your client devices linked to a single Lightning node, thismeans most clients will be connecting to the signer remotely. Now ifyour Lightning node goes down or you lose your connection you also can’tauth with any service. This could cause circular dependencies where youlose the connection to your Lightning node so you can’t auth with theservices you need to access to debug the issue with your Lightning nodelike your hosting provider or VPN account. You could technically solvethis by replicating your LN keys to other client devices only to be usedfor local auth signing but that introduces other risks.  Unique identifier vs identity  A Lightning node is not really an identity but a unique identifier. Itjust tells you the person that auths is the same random person thatauthed last time, it doesn’t tell you who they are. A nostr pubkey is anidentity. It tells you who they are, what their name is, what they looklike, who they know, how you can pay them, how you can message them.  This is much more useful as an identity layer for an application. Theapplication can show their profile picture, username, send secure crossplatform push notifications via NIP-04 encrypted Nostr DMs, etc.  Consistent identity across services  Lightning pubkeys are sensitive private information and can leakconfidential financial information, Nostr pubkeys are safe to share withanyone. LNURL-auth adds extra steps to solve this by creating derivedsubkeys for identities that are unique to each service you auth with.This does not seem ideal, it seems the default case is that an identityis something that you do want to follow you across all your accounts.Nostr based auth behaves more appropriate in this regard. In the rarecase you need to achieve privacy and separation between certain servicesyou can still do that by using use a throwaway Nostr key for thoseservices.  User relationships across services Since authing with Nostr shares areal social identity with the service, they can also see your Nostrsocial graph. This could be useful for connecting you to people youalready know on the new service.  Low cost identity  Ideally identities should be easy to create but hard to build upreputation to limit spam while avoiding excluding people from thenetwork. It’s not clear that it will be cost effective / scalable foreveryone to run their own Lightning node so tying individual identity toa single Lightning node pubkey is problematic. Nostr keys are easy tocreate and hard reputation can be earned via PoW/DNS or building astrong social graph.”  Figure<a href="#fig:starhistory" data-reference-type="ref" data-reference="fig:starhistory">5.2</a>shows that the adoption is potentially tremendously fast.
+  - Luke Childs [says](https://github.com/nostr-protocol/nips/issues/154):it“Nostr makes a good candidate to be used as a very simple DID layer.Having "Login with Nostr" auth on websites solves a lot of problems in avery elegant way, and Nostr’s main use case as a social network protocolmakes it highly suited to be used as your main identity proving key.Compare "Login with Nostr" to similar "Login with Lightning"(LNURL-auth) specs to see some easy and obvious advantages:  Remote signer vs local signer  Login with Lightning requires access to remote keys, login with Nostrrequires access to local keys ideally stored in a browser extension. Dueto the way Lightning works you can only really have one instance. Youneed all your client devices linked to a single Lightning node, thismeans most clients will be connecting to the signer remotely. Now ifyour Lightning node goes down or you lose your connection you also can’tauth with any service. This [private] cause circular dependencies where youlose the connection to your Lightning node so you can’t auth with theservices you need to access to debug the issue with your Lightning nodelike your hosting provider or VPN account. You [private] technically solvethis by replicating your LN keys to other client devices only to be usedfor local auth signing but that introduces other risks.  Unique identifier vs identity  A Lightning node is not really an identity but a unique identifier. Itjust tells you the person that auths is the same random person thatauthed last time, it doesn’t tell you who they are. A nostr pubkey is anidentity. It tells you who they are, what their name is, what they looklike, who they know, how you can pay them, how you can message them.  This is much more useful as an identity layer for an application. Theapplication can show their profile picture, username, send secure crossplatform push notifications via NIP-04 encrypted Nostr DMs, etc.  Consistent identity across services  Lightning pubkeys are sensitive private information and can leakconfidential financial information, Nostr pubkeys are safe to share withanyone. LNURL-auth adds extra steps to solve this by creating derivedsubkeys for identities that are unique to each service you auth with.This does not seem ideal, it seems the default case is that an identityis something that you do want to follow you across all your accounts.Nostr based auth behaves more appropriate in this regard. In the rarecase you need to achieve privacy and separation between certain servicesyou can still do that by using use a throwaway Nostr key for thoseservices.  User relationships across services Since authing with Nostr shares areal social identity with the service, they can also see your Nostrsocial graph. This [private] be useful for connecting you to people youalready know on the new service.  Low cost identity  Ideally identities should be easy to create but hard to build upreputation to limit spam while avoiding excluding people from thenetwork. It’s not clear that it will be cost effective / scalable foreveryone to run their own Lightning node so tying individual identity toa single Lightning node pubkey is problematic. Nostr keys are easy tocreate and hard reputation can be earned via PoW/DNS or building astrong social graph.”  Figure<a href="#fig:starhistory" data-reference-type="ref" data-reference="fig:starhistory">5.2</a>shows that the adoption is potentially tremendously fast.
   ![]./assets/431d39316d5fa17f89fa9e1154fa2a267517a245.png
   An illustration of the enthusiasm for Nostr compared to traditional DID based on GitHub ‘stars’.
   - This provides a web interface into the metaverse providing:

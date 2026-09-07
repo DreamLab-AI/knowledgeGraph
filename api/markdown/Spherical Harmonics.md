@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Spherical Harmonics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,15 +20,32 @@ public: true
   "definition": "Spherical harmonics are a complete set of orthogonal basis functions defined on the surface of a sphere, used to represent functions of direction compactly as a weighted sum of coefficients. Analogous to a Fourier series on the sphere, they allow smooth angular functions — such as incoming light or a directional colour — to be approximated with a small number of low-order coefficients. In computer graphics they underpin precomputed radiance transfer, irradiance environment lighting, and, more recently, view-dependent colour in Gaussian splatting and neural rendering.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ]
   },
   "quality": 0.8

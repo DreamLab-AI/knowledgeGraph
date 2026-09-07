@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Aave Governance
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -26,24 +21,51 @@ public: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
+    {
+      "@id": "urn:ngm:class:on-chain-governance",
+      "label": "On-chain Governance"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:collateral-management", "label": "Collateral Management"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:collateral-management",
+        "label": "Collateral Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:aave", "label": "Aave"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:aave",
+        "label": "Aave"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ]
   },
   "quality": 0.8

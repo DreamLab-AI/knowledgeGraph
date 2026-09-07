@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Training Hardware
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -79,37 +74,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:training-hardware:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:d527459d7d41bb6b40116193f804f4d7081be6061313b5f5f2fe8b239463e5de"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[High-Performance Computing]]",
-      "resolved": "urn:visionflow:linked:high-performance-computing",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Neural Network Training]]",
-      "resolved": "urn:visionflow:linked:neural-network-training",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Training Hardware is a concept within the ai domain.

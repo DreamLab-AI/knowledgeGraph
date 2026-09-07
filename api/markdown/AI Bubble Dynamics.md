@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Bubble Dynamics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-bubble-dynamics",
   "title": "AI Bubble Dynamics",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Frontier AI Valuation Risk", "IPO Market Timing"],
+  "vc:outboundWikilinks": [
+    "Frontier AI Valuation Risk",
+    "IPO Market Timing"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-infrastructure-capital-expenditure", "label": "AI Infrastructure Capital Expenditure"}, {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-infrastructure-capital-expenditure",
+        "label": "AI Infrastructure Capital Expenditure"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",
@@ -39,6 +51,6 @@ public: true
 ```
 
 - ### Overview
-  - **[Industry analysis]** OpenAI's urgency to IPO before Anthropic is driven by the risk that if Anthropic's IPO fails, it could pop the AI bubble and force OpenAI to raise capital in a bare market or accept a valuation markdown. *(Source: Host (AI Daily Brief), via AI Daily Brief, 2026-08-24)*
+  - **[Industry analysis]** OpenAI's urgency to IPO before Anthropic is driven by the risk that if Anthropic's IPO fails, it [private] pop the AI bubble and force OpenAI to raise capital in a bare market or accept a valuation markdown. *(Source: Host (AI Daily Brief), via AI Daily Brief, 2026-08-24)*
 - ### Relationships
 - ### Provenance

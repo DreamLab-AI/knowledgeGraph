@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Real-Time Control Loop
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "A real-time control loop is a cyclic sense-compute-actuate process that runs at a fixed, deterministic frequency to regulate a physical or cyber-physical system within strict timing deadlines. Missing a deadline can cause instability or unsafe behaviour, so loops require real-time scheduling and bounded computation. They are the operational core of robotics, motion control, and industrial automation.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-      {"@id": "urn:ngm:class:admittance-control", "label": "Admittance Control"}
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      }
     ]
   },
   "quality": 0.72

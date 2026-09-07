@@ -1,10 +1,14 @@
----
-public: true
----
-
-# Open Source Licence
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:open-source-licence", "@type":"Page", "title":"Open Source Licence", "vc:slug":"open-source-licence", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:open-source-licence",
+  "@type": "Page",
+  "title": "Open Source Licence",
+  "vc:slug": "open-source-licence",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld

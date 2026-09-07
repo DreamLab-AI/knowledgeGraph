@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Multi-Turn Dialogue
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,18 @@ public: true
   "definition": "Multi-turn dialogue is a conversational interaction spanning several exchanges in which a system must maintain context, track state, and resolve references across turns to produce coherent, relevant responses. It contrasts with single-turn question answering by requiring memory of prior utterances and the evolving goal. It is a core capability and evaluation axis for chatbots and conversational AI.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:chatbots", "label": "Chatbots"}
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      }
     ]
   },
   "quality": 0.72

@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - OrchestrationLayer
----
-
-# Orchestration Layer
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -28,20 +21,41 @@ aliases:
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}
+    {
+      "@id": "urn:ngm:class:orchestration",
+      "label": "Orchestration"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:middleware-layer", "label": "Middleware Layer"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration"},
-      {"@id": "urn:ngm:class:llm-orchestration", "label": "LLM Orchestration"}
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:llm-orchestration",
+        "label": "LLM Orchestration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
     ]
   },
   "quality": 0.85

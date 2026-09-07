@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Open Metaverse Interoperability Group
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,19 @@ public: true
   "definition": "The Open Metaverse Interoperability Group (OMI) is a community-driven body that develops open protocols and schemas for moving identity, avatars, and virtual objects between independent virtual worlds. It produces specifications for portable avatars, glTF extensions, and cross-platform identity so that metaverse experiences are not locked into single proprietary platforms. Its work aims to make virtual environments composable and interoperable rather than walled gardens.",
   "domain": "metaverse",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:sc-standards-and-interop", "label": "Standards and Interoperability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:vircadia", "label": "Vircadia"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vircadia",
+        "label": "Vircadia"
+      }
+    ]
   },
   "quality": 0.72
 }

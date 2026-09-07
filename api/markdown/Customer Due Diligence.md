@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Customer Due Diligence
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

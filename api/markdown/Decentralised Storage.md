@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Decentralised Storage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -198,52 +193,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:decentralised-storage:0eb219219bd7",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:4bf538c06a1a77083cd40f80c73f6efe3c6a64fe31c2c84140b9fb0acf5ba8f8"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Cryptographic Hash]]",
-      "resolved": "urn:visionflow:linked:cryptographic-hash",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Provenance]]",
-      "resolved": "urn:visionflow:linked:provenance",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IPFS]]",
-      "resolved": "urn:visionflow:linked:ipfs",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Filecoin]]",
-      "resolved": "urn:visionflow:linked:filecoin",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Distributed Systems]]",
-      "resolved": "urn:visionflow:linked:distributed-systems",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Storage systems that distribute data across many independent nodes rather than a single central provider, often using content addressing and cryptographic verification to ensure integrity and availability.

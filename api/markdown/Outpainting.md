@@ -1,8 +1,3 @@
----
-public: true
----
-
-# outpainting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -39,22 +34,36 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-content", "label": "Generative Content"}
+      {
+        "@id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      }
     ]
   },
   "qualityScore": 0.75,
   "maturity": "emerging"
 }
 ```
-
 
 - ### Definition
   - Outpainting is a generative AI technique that extends an existing image beyond its original canvas boundaries by synthesising new, contextually consistent pixel content in the surrounding regions. A masked version of the source image—padded with blank or noise-filled regions—is fed to a conditioned image generation model (typically a latent diffusion model) which fills the extended area while respecting the style, lighting, and semantic content of the original. Outpainting is widely used in content creation pipelines for widening aspect ratios, reconstructing damaged artwork borders, and generating panoramic background extensions for virtual production and 3D scene authoring.

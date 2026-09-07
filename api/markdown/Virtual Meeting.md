@@ -1,10 +1,3 @@
----
-public: true
-aliases:
-  - VirtualMeeting
----
-
-# Virtual Meeting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -62,17 +55,38 @@ aliases:
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"},
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-workspaces", "label": "Immersive Workspaces"},
-      {"@id": "urn:ngm:class:telecollaboration-and-telepresence", "label": "Telecollaboration and Telepresence"}
+      {
+        "@id": "urn:ngm:class:immersive-workspaces",
+        "label": "Immersive Workspaces"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration-and-telepresence",
+        "label": "Telecollaboration and Telepresence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
-      {"@id": "urn:ngm:class:virtual-event-platform", "label": "Virtual Event Platform"}
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-event-platform",
+        "label": "Virtual Event Platform"
+      }
     ]
   },
   "provenance": {
@@ -82,32 +96,6 @@ aliases:
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-meeting:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:b2e3dc56f974948ed53971fd1cb1224b65cd16f0f7107ff648a00f685e2f842d"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Telecollaboration]]",
-      "resolved": "urn:visionflow:owl:class:telecollaboration",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Virtual Meeting refers to synchronous gatherings of participants using video conferencing, spatial computing, or immersive technologies to collaborate remotely. This encompasses traditional video conferencing platforms, virtual whiteboards, screen sharing capabilities, and emerging 3D virtual meeting spaces.

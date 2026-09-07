@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Metaverse Stack
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -81,42 +76,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:metaverse-stack:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:74d7a3405d9f586fce51ef2a57b46391b6ad351e6da1f2c40c4dfcae2762468c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Virtual World Operation]]",
-      "resolved": "urn:visionflow:linked:virtual-world-operation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Technology Stack]]",
-      "resolved": "urn:visionflow:owl:class:technology-stack",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The comprehensive layered technology framework encompassing hardware, network infrastructure, spatial computing, decentralisation, creator economy, discovery, and experience layers that together enable the creation and operation of persistent virtual world environments.

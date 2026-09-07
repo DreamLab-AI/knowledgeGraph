@@ -1,8 +1,3 @@
----
-public: true
----
-
-# REST
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -204,57 +199,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rest:2e09d5210db8",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:093c0f25e6cde6eae904d9f701e66595ee46f9db57aff86ff5bc81dba38c56d6"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[HTTP]]",
-      "resolved": "urn:visionflow:linked:http",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Payment Protocol]]",
-      "resolved": "urn:visionflow:linked:payment-protocol",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Microservices]]",
-      "resolved": "urn:visionflow:linked:microservices",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Web Standards]]",
-      "resolved": "urn:visionflow:linked:web-standards",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm]]",
-      "resolved": "urn:visionflow:linked:https-www-ics-uci-edu-fielding-pubs-dissertation-rest-arch-style-htm",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[https://developer.mozilla.org/en-US/docs/Glossary/REST]]",
-      "resolved": "urn:visionflow:linked:https-developer-mozilla-org-en-us-docs-glossary-rest",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - REST is an architectural style for distributed systems that uses stateless requests over HTTP and a uniform interface based on resources and standard methods.

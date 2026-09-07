@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI Supply Chain Shortage
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "ai-supply-chain-shortage",
   "title": "AI Supply Chain Shortage",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Hardware Demand", "Micron Earnings"],
+  "vc:outboundWikilinks": [
+    "Hardware Demand",
+    "Micron Earnings"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:open-source", "label": "Open Source"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:open-source",
+      "label": "Open Source"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:open-source", "label": "Open Source"}, {"@id": "urn:ngm:class:software-supply-chain", "label": "Software Supply Chain"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

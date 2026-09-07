@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collaborative Technology
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,18 +55,36 @@ public: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"}
+      {
+        "@id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      }
     ]
   },
   "quality": 0.35,
@@ -82,37 +95,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:collaborative-technology:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:eaf107004db592ab8d7e76b7410f5d4f40e2714055ffb2a0951ec73ec01a024f"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE (Institute of Electrical and Electronics Engineers)]]",
-      "resolved": "urn:visionflow:linked:ieee-institute-of-electrical-and-electronics-engineers",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[IETF (Internet Engineering Task Force)]]",
-      "resolved": "urn:visionflow:linked:ietf-internet-engineering-task-force",
-      "kind": "StubLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Collaborative Technology encompasses the hardware, software, protocols, and infrastructure components that enable distributed teams to work together effectively across time and space. This includes real-time media processing, synchronisation protocols, edge computing for latency reduction, and zero-trust security models forming the technological substrate of telecollaboration.

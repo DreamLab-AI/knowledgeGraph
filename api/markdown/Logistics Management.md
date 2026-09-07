@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Logistics Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Logistics management is the planning, execution, and control of the movement and storage of goods, services, and related information across a supply chain. It coordinates transportation, warehousing, inventory, order fulfilment, and reverse flows to meet demand at minimal cost and time. Effective logistics management directly determines service levels, working-capital efficiency, and resilience.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:reverse-logistics", "label": "Reverse Logistics"}, {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ]
   },
   "quality": 0.72
 }

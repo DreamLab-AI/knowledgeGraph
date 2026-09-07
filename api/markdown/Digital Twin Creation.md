@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Digital Twin Creation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -237,72 +232,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:digital-twin-creation:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:8de398bdef16acd3e7889fccd25a3230bbb7d5b39b063cabfd91c43fdae860fa"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IoT Integration]]",
-      "resolved": "urn:visionflow:linked:io-t-integration",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Lifecycle Management]]",
-      "resolved": "urn:visionflow:linked:lifecycle-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Real-Time Monitoring]]",
-      "resolved": "urn:visionflow:linked:real-time-monitoring",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Sensor Data]]",
-      "resolved": "urn:visionflow:linked:sensor-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Modelling]]",
-      "resolved": "urn:visionflow:owl:class:3-d-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Modeling]]",
-      "resolved": "urn:visionflow:owl:class:digital-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Predictive Analytics]]",
-      "resolved": "urn:visionflow:owl:class:predictive-analytics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The process of developing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous data linkage, enabling simulation, monitoring, and optimisation across the asset's entire lifecycle from design through decommissioning.

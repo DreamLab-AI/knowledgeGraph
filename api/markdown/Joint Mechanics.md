@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Joint Mechanics
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Joint mechanics is the study of the physical behaviour of robotic and mechanical joints, including the forces, torques, friction, compliance and backlash that govern their motion. It models how power is transmitted through bearings, gears and linkages and how non-ideal effects degrade precision. Understanding joint mechanics is essential for accurate dynamic modelling and high-fidelity motion control.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:friction", "label": "Friction"},
-      {"@id": "urn:ngm:class:backlash", "label": "Backlash"}
+      {
+        "@id": "urn:ngm:class:friction",
+        "label": "Friction"
+      },
+      {
+        "@id": "urn:ngm:class:backlash",
+        "label": "Backlash"
+      }
     ]
   },
   "quality": 0.72

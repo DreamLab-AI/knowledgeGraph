@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Transport Protocol
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "A transport protocol is a network-layer specification that governs end-to-end delivery of data between processes, handling concerns such as multiplexing, reliability, ordering, and flow and congestion control. Examples including TCP, UDP, and QUIC sit above the network layer and provide the communication substrate over which higher-level application and agent protocols operate.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:model-control-protocols-like-mcp", "label": "Model Control Protocols like MCP"}, {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols like MCP"
+      },
+      {
+        "@id": "urn:ngm:class:infra-network-and-comms",
+        "label": "Network and Communication"
+      }
+    ]
   },
   "quality": 0.72
 }

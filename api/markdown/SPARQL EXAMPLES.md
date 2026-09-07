@@ -1,8 +1,3 @@
----
-public: true
----
-
-# SPARQL EXAMPLES
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -92,19 +87,40 @@ public: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      }
     ]
   },
   "quality": 0.4,
@@ -115,72 +131,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:sparql-examples:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:458cfd89fd63a74b57923a26b1a6658c1b4b71eb783b1ace6b0218aca02c98ec"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ASKQuery|ASK]]",
-      "resolved": "urn:visionflow:linked:askquery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[CONSTRUCTQuery|CONSTRUCT]]",
-      "resolved": "urn:visionflow:linked:constructquery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[DESCRIBEQuery|DESCRIBE]]",
-      "resolved": "urn:visionflow:linked:describequery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[KnowledgeGraphQuerying|knowledge graph exploration]]",
-      "resolved": "urn:visionflow:linked:knowledge-graph-querying",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[LinkedData|linked data]]",
-      "resolved": "urn:visionflow:linked:linked-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[RDF|Resource Description Framework]]",
-      "resolved": "urn:visionflow:linked:rdf",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[SELECTQuery|SELECT]]",
-      "resolved": "urn:visionflow:linked:selectquery",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[W3C|World Wide Web Consortium]]",
-      "resolved": "urn:visionflow:linked:w3-c",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - SPARQL is a semantic query language and protocol for querying and manipulating data stored in [[RDF|Resource Description Framework]] format, enabling structured queries across linked data and knowledge graphs at massive scale. Standardised by the [[W3C|World Wide Web Consortium]], SPARQL supports diverse query operations including [[SELECTQuery|SELECT]], [[CONSTRUCTQuery|CONSTRUCT]], [[ASKQuery|ASK]], and [[DESCRIBEQuery|DESCRIBE]] to extract, transform, and explore interconnected data from heterogeneous sources. Applications span semantic web research, [[LinkedData|linked data]] integration, and [[KnowledgeGraphQuerying|knowledge graph exploration]] across domains from bioinformatics to cultural heritage and blockchain ontologies.

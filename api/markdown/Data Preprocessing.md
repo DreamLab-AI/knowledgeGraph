@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Preprocessing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,57 @@ public: true
   "vc:slug": "data-preprocessing",
   "title": "Data Preprocessing",
   "vc:public": true,
-  "vc:outboundWikilinks": ["Feature Engineering","Data Cleaning","Normalisation","Standardisation","Missing Value Imputation","Outlier Detection","Categorical Encoding","Dimensionality Reduction","Feature Selection","Data Augmentation","Machine Learning Pipeline","Train-Test Split","Cross-Validation","Batch Normalisation","Transfer Learning","Deep Learning","Neural Network","Convolutional Neural Network","Natural Language Processing","Computer Vision","Time Series Analysis","Scikit-Learn","AutoML","Data Quality","Data Governance","Supervised Learning","Unsupervised Learning","Reinforcement Learning","Overfitting","Regularisation","Tokenisation","Embedding","Principal Component Analysis","Autoencoder","SMOTE","Class Imbalance","Data Leakage","UK GDPR","Differential Privacy","Federated Learning","MLOps","Data Versioning","Feature Store","Data Pipeline","Tabular Data","Multimodal Learning","Data Distribution","Bias Mitigation","Fairness"],
+  "vc:outboundWikilinks": [
+    "Feature Engineering",
+    "Data Cleaning",
+    "Normalisation",
+    "Standardisation",
+    "Missing Value Imputation",
+    "Outlier Detection",
+    "Categorical Encoding",
+    "Dimensionality Reduction",
+    "Feature Selection",
+    "Data Augmentation",
+    "Machine Learning Pipeline",
+    "Train-Test Split",
+    "Cross-Validation",
+    "Batch Normalisation",
+    "Transfer Learning",
+    "Deep Learning",
+    "Neural Network",
+    "Convolutional Neural Network",
+    "Natural Language Processing",
+    "Computer Vision",
+    "Time Series Analysis",
+    "Scikit-Learn",
+    "AutoML",
+    "Data Quality",
+    "Data Governance",
+    "Supervised Learning",
+    "Unsupervised Learning",
+    "Reinforcement Learning",
+    "Overfitting",
+    "Regularisation",
+    "Tokenisation",
+    "Embedding",
+    "Principal Component Analysis",
+    "Autoencoder",
+    "SMOTE",
+    "Class Imbalance",
+    "Data Leakage",
+    "UK GDPR",
+    "Differential Privacy",
+    "Federated Learning",
+    "MLOps",
+    "Data Versioning",
+    "Feature Store",
+    "Data Pipeline",
+    "Tabular Data",
+    "Multimodal Learning",
+    "Data Distribution",
+    "Bias Mitigation",
+    "Fairness"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -25,36 +70,96 @@ public: true
   "definition": "Data preprocessing is the stage of a machine learning workflow that transforms raw data into a clean, consistent form suitable for modelling. It encompasses cleaning, normalisation, encoding, imputation and feature engineering to remove noise and align scales and types. The quality of preprocessing strongly determines downstream model accuracy and is a prerequisite for reliable training.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-technique",
+      "label": "Machine Learning Technique"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-cleaning", "label": "Data Cleaning"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:normalisation", "label": "Normalisation"},
-      {"@id": "urn:ngm:class:missing-value-imputation", "label": "Missing Value Imputation"},
-      {"@id": "urn:ngm:class:outlier-detection", "label": "Outlier Detection"},
-      {"@id": "urn:ngm:class:categorical-encoding", "label": "Categorical Encoding"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:feature-selection", "label": "Feature Selection"}
+      {
+        "@id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:normalisation",
+        "label": "Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:missing-value-imputation",
+        "label": "Missing Value Imputation"
+      },
+      {
+        "@id": "urn:ngm:class:outlier-detection",
+        "label": "Outlier Detection"
+      },
+      {
+        "@id": "urn:ngm:class:categorical-encoding",
+        "label": "Categorical Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-quality", "label": "Data Quality"},
-      {"@id": "urn:ngm:class:train-test-split", "label": "Train-Test Split"}
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:train-test-split",
+        "label": "Train-Test Split"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:model-accuracy", "label": "Model Accuracy"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-accuracy",
+        "label": "Model Accuracy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:data-cleaning", "label": "Data Cleaning"},
-      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      },
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ]
   },
-  "quality": 0.90,
-  "provenance": { "attributedTo": "did:nostr:enrichment-swarm", "generatedAt": "2026-06-21T00:00:00Z", "inferenceRule": "OntologyEnrichment" }
+  "quality": 0.9,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-21T00:00:00Z",
+    "inferenceRule": "OntologyEnrichment"
+  }
 }
 ```
 
@@ -248,7 +353,7 @@ public: true
     - **Financial services and fraud detection**: High-dimensional transaction data requires log-normalisation of monetary amounts (transaction amounts are log-normally distributed; raw values span 6+ orders of magnitude), temporal feature extraction (hour of day, day of week, days since last transaction, rolling 7/30/90-day spend aggregates, velocity features counting transactions in the last hour), one-hot encoding of merchant category codes (448 MCCs in the Visa/Mastercard taxonomy), [[SMOTE]] for severe class imbalance (fraud rates of 0.01–0.1% in card-not-present transactions), and winsorisation of extreme transaction values at the 99.9th percentile to prevent a few large legitimate corporate transactions from distorting scale-sensitive features. The FCA's October 2024 AI LAB initiative supports regulated experimentation with ML preprocessing pipelines in financial contexts, including testing whether preprocessing choices introduce disparate impact across demographic groups.
     - **[[Natural Language Processing]] and [[Large Language Models]]**: Text preprocessing chains for classical NLP include lowercasing, punctuation removal, stemming or lemmatisation, stop-word removal, and TF-IDF or count vectorisation. For modern transformer-based NLP, the preprocessing stack is: raw text → Unicode normalisation (NFC) → subword tokenisation (BPE/WordPiece/SentencePiece) → integer token IDs → padding to fixed length → attention masks → position IDs. For fine-tuning large pre-trained models, this preprocessing is largely handled by the HuggingFace Tokenizer library, which wraps model-specific tokenisers (LlamaTokenizer, GPT2Tokenizer, BertTokenizerFast) and handles batching, padding, and truncation automatically. Preprocessing for multi-lingual models requires language-specific Unicode normalisation, script detection, and handling of right-to-left languages (Arabic, Hebrew) with appropriate padding direction.
     - **[[Computer Vision]] and medical imaging**: For natural images, the canonical preprocessing pipeline is: raw JPEG → decode to uint8 RGB tensor → random resize + crop to 224×224 (training) or centre crop (evaluation) → random horizontal flip (training) → convert to float32 in [0, 1] → normalise by ImageNet channel statistics (subtract mean [0.485, 0.456, 0.406], divide by std [0.229, 0.224, 0.225]). For medical imaging, DICOM files require windowing (mapping the full 12-bit Hounsfield unit range to a clinically relevant display window), resampling to isotropic voxel spacing (CT scans may have anisotropic voxel sizes: 1×1 mm in-plane, 3 mm slice thickness), intensity normalisation relative to tissue-specific reference ranges, and rigid or deformable registration to align scans from different time points. Histopathology whole-slide images (WSIs; 100,000×100,000 pixels at 40× magnification) require tiling into patches, background exclusion, and colour normalisation (Macenko or Reinhard stain normalisation) to mitigate scanner and staining variability across hospitals.
-    - **Sensor and IoT data**: Industrial sensor streams from manufacturing equipment require resampling to uniform frequency (sensor polling intervals vary across device generations), Kalman filter or Savitzky-Golay smoothing for noise reduction, lag feature construction (k = 1, 5, 60 seconds of historical readings), rolling statistics (mean, variance, peak-to-peak amplitude over windows), fast Fourier transform (FFT) features for vibration data (bearing fault detection relies on frequency-domain features at specific harmonic multiples of shaft rotation frequency), and anomaly masking (excluding periods of planned maintenance or known equipment failure from healthy-class training data). Environmental monitoring data (temperature, pressure, air quality index) demands spatial interpolation (kriging, inverse distance weighting) to fill spatial gaps in sensor networks, and seasonal decomposition (STL: Seasonal and Trend decomposition using Loess) to separate trend, seasonal, and residual components before modelling.
+    - **Sensor and IoT data**: Industrial sensor streams from manufacturing equipment require resampling to uniform frequency (sensor polling intervals vary across device generations), Kalman filter or Savitzky-Golay smoothing for noise reduction, lag feature construction (k = 1, 5, 60 seconds of historical readings), rolling statistics (mean, variance, peak-to-peak amplitude over windows), fast Fourier transform (FFT) features for vibration data (bearing fault detection relies on frequency-domain features at specific harmonic multiples of shaft rotation frequency), and anomaly masking (excluding periods of planned maintenance or known equipment failure from healthy-class training data). Environmental monitoring data (temperature, pressure, air quality [private]) demands spatial interpolation (kriging, inverse distance weighting) to fill spatial gaps in sensor networks, and seasonal decomposition (STL: Seasonal and Trend decomposition using Loess) to separate trend, seasonal, and residual components before modelling.
     - **Recommendation systems**: User interaction logs require deduplication (removing duplicate click events from UI refresh bugs), session segmentation (grouping events separated by more than 30 minutes of inactivity into distinct sessions), frequency-based feature encoding (logarithm of item popularity; bucketised user activity quantiles), temporal decay weighting (recent interactions are more predictive of current preferences; exponential decay with half-life of 7 days is common), and negative sampling — the critical preprocessing step for implicit feedback datasets where only positive interactions are observed. For item-based collaborative filtering, preprocessing typically includes computing the user-item interaction matrix, normalising by user activity level (root-mean-square normalisation), and applying item frequency downsampling (analogous to word negative sampling in Word2Vec) to prevent popular items from dominating training. Feature hashing maps sparse categorical user and item features (URLs, product IDs, query terms) to fixed-dimensional feature vectors without maintaining an explicit vocabulary.
 
   - ## Academic Context

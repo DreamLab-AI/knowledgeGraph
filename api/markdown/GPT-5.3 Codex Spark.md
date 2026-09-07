@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GPT-5.3 Codex Spark
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "gpt-5-3-codex-spark",
   "title": "GPT-5.3 Codex Spark",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Hardware Infrastructure", "Cerebras Wafer Scale Chips", "Coding Workflow", "Developer Experience"],
+  "vc:outboundWikilinks": [
+    "AI Hardware Infrastructure",
+    "Cerebras Wafer Scale Chips",
+    "Coding Workflow",
+    "Developer Experience"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,23 @@ public: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:gpt",
+      "label": "GPT"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gpt", "label": "GPT"}, {"@id": "urn:ngm:class:cerebras-wafer-scale-chips", "label": "Cerebras Wafer Scale Chips"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:cerebras-wafer-scale-chips",
+        "label": "Cerebras Wafer Scale Chips"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

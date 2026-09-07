@@ -1,8 +1,3 @@
----
-public: true
----
-
-# AI-Augmented Code Review
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,12 @@ public: true
   "vc:slug": "ai-augmented-code-review",
   "title": "AI-Augmented Code Review",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Code Generation", "Code Review Efficiency", "Developer Productivity", "Pull Request Metrics"],
+  "vc:outboundWikilinks": [
+    "AI Code Generation",
+    "Code Review Efficiency",
+    "Developer Productivity",
+    "Pull Request Metrics"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +26,31 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:code-review", "label": "Code Review"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:code-review",
+      "label": "Code Review"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:code-review", "label": "Code Review"}, {"@id": "urn:ngm:class:pull-request", "label": "Pull Request"}, {"@id": "urn:ngm:class:static-analysis", "label": "Static Analysis"}, {"@id": "urn:ngm:class:ai-code-generation", "label": "AI Code Generation"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:pull-request",
+        "label": "Pull Request"
+      },
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:ai-code-generation",
+        "label": "AI Code Generation"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

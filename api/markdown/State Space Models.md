@@ -1,8 +1,3 @@
----
-public: true
----
-
-# State Space Models
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,52 +83,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:state-space-models:f3208c9413ab",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:6955539d6b14c393ad39c18f5cc03727851864360aeda7b1bdd341de3c5e6d1c"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Neural Network]]",
-      "resolved": "urn:visionflow:linked:neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Generative Models]]",
-      "resolved": "urn:visionflow:linked:generative-models",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Recurrent Neural Network]]",
-      "resolved": "urn:visionflow:linked:recurrent-neural-network",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Attention Mechanisms]]",
-      "resolved": "urn:visionflow:linked:attention-mechanisms",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[State Space Model]]",
-      "resolved": "urn:visionflow:linked:state-space-model",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - State space models are sequence models that maintain a hidden state evolving over time according to linear dynamics, used as an alternative to attention for long sequences. Recent deep learning variants make the dynamics input-dependent to capture context.

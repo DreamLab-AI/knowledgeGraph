@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Provider
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -56,19 +51,40 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deployer", "label": "Deployer"},
-      {"@id": "urn:ngm:class:market-surveillance-authority", "label": "Market Surveillance Authority"},
-      {"@id": "urn:ngm:class:notified-body", "label": "Notified Body"}
+      {
+        "@id": "urn:ngm:class:deployer",
+        "label": "Deployer"
+      },
+      {
+        "@id": "urn:ngm:class:market-surveillance-authority",
+        "label": "Market Surveillance Authority"
+      },
+      {
+        "@id": "urn:ngm:class:notified-body",
+        "label": "Notified Body"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"}
+      {
+        "@id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ]
   },
   "provenance": {
@@ -78,32 +94,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:provider:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cbd60198eaf30389b19124d5150588865648776e15390f3bee262b21f6c21835"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[MetaverseDomain]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A natural or legal person, public authority, agency or other body that develops an AI system or a general-purpose AI model, or that has an AI system or a general-purpose AI model developed, and places it on the market or puts the AI system into service under its own name or trademark, whether for payment or free of charge.

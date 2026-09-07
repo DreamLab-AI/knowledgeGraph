@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Customer Retention
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Customer retention is the set of strategies and mechanisms a business uses to keep existing customers engaged and transacting over time, reducing churn. It commonly relies on loyalty and rewards schemes, personalised omnichannel experiences, and data-driven engagement to maximise customer lifetime value. As an economic mechanism it is typically cheaper than acquisition and central to sustainable revenue.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:omnichannel", "label": "Omnichannel"},
-      {"@id": "urn:ngm:class:customer-rewards", "label": "Customer Rewards"}
+      {
+        "@id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel"
+      },
+      {
+        "@id": "urn:ngm:class:customer-rewards",
+        "label": "Customer Rewards"
+      }
     ]
   },
   "quality": 0.72

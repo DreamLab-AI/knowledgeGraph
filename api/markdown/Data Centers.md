@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Data Centers
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "data-centers",
   "title": "Data Centers",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AGI Milestones", "Sam Altman"],
+  "vc:outboundWikilinks": [
+    "AGI Milestones",
+    "Sam Altman"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "infrastructure",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}, {"@id": "urn:ngm:class:computational-infrastructure", "label": "Computational Infrastructure"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",
@@ -39,6 +51,6 @@ public: true
 ```
 
 - ### Overview
-  - **[Emerging signal]** Sam Altman predicts that the majority of the world's intelligence could be inside data centers by 2028. *(Source: Sam Altman, via AI Daily Brief, 2026-08-24)*
+  - **[Emerging signal]** Sam Altman predicts that the majority of the world's intelligence [private] be inside data centers by 2028. *(Source: Sam Altman, via AI Daily Brief, 2026-08-24)*
 - ### Relationships
 - ### Provenance

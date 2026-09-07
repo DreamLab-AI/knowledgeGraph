@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gauge Voting
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -172,52 +167,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gauge-voting:818f03f994fb",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:825b14a4f3f321798b7e52992fbb7f125f111702bd8cd29e6d88e8016bc59fad"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Curve Finance]]",
-      "resolved": "urn:visionflow:linked:curve-finance",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Votium]]",
-      "resolved": "urn:visionflow:linked:votium",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Hidden Hand]]",
-      "resolved": "urn:visionflow:linked:hidden-hand",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Tokenomics]]",
-      "resolved": "urn:visionflow:linked:tokenomics",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Governance Token]]",
-      "resolved": "urn:visionflow:linked:governance-token",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-29T00:00:00Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Gauge voting is a mechanism in protocols such as Curve where token holders allocate weights to liquidity pools, determining how reward emissions are distributed. Voting power is usually tied to time-locked governance tokens.

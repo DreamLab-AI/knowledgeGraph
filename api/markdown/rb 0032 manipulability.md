@@ -1,8 +1,3 @@
----
-public: true
----
-
-# rb 0032 manipulability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,20 +55,44 @@ public: true
   "quality": 0.7,
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:rb-0030-jacobian-matrix", "label": "rb 0030 jacobian matrix"},
-      {"@id": "urn:ngm:class:rb-0021-robot-kinematics", "label": "rb 0021 robot kinematics"},
-      {"@id": "urn:ngm:class:rb-0023-degrees-of-freedom", "label": "rb 0023 degrees of freedom"}
+      {
+        "@id": "urn:ngm:class:rb-0030-jacobian-matrix",
+        "label": "rb 0030 jacobian matrix"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+        "label": "rb 0021 robot kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "rb 0023 degrees of freedom"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rb-0031-singularity", "label": "rb 0031 singularity"}
+      {
+        "@id": "urn:ngm:class:rb-0031-singularity",
+        "label": "rb 0031 singularity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rb-0037-dexterity", "label": "rb 0037 dexterity"},
-      {"@id": "urn:ngm:class:rb-0024-workspace", "label": "rb 0024 workspace"}
+      {
+        "@id": "urn:ngm:class:rb-0037-dexterity",
+        "label": "rb 0037 dexterity"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0024-workspace",
+        "label": "rb 0024 workspace"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rb-0049-motion-planning", "label": "rb 0049 motion planning"},
-      {"@id": "urn:ngm:class:rb-0029-inverse-kinematics", "label": "rb 0029 inverse kinematics"}
+      {
+        "@id": "urn:ngm:class:rb-0049-motion-planning",
+        "label": "rb 0049 motion planning"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0029-inverse-kinematics",
+        "label": "rb 0029 inverse kinematics"
+      }
     ]
   },
   "provenance": {
@@ -83,32 +102,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:rb-0032-manipulability:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:f674b2fbc4075f853f64ee88ee7f7876475329b6a186a20f41cbdd03d85dd0bd"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[RoboticsDomain]]",
-      "resolved": "urn:visionflow:owl:class:robotics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Manipulability characterises how easily a robot can move its end-effector from a given configuration. It is derived from the Jacobian matrix: the manipulability ellipsoid (axes = singular values of J) visualises the directions of ease or difficulty of motion in task space. Maximising manipulability during path planning results in configurations with good force and velocity isotropy, avoiding near-singular postures that amplify joint efforts and reduce control accuracy.

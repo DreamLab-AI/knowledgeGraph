@@ -1,8 +1,3 @@
----
-public: true
----
-
-# latent diffusion
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -29,7 +24,7 @@ public: true
   "@id": "urn:ngm:class:latent-diffusion",
   "@type": "Class",
   "label": "Latent Diffusion",
-  "definition": "Latent Diffusion Models (LDMs) are a class of generative models that perform the iterative denoising diffusion process within the compressed latent space of a pre-trained variational autoencoder (VAE), rather than directly in high-dimensional pixel space. By encoding images into a compact, semantically rich latent representation, LDMs dramatically reduce training and inference compute whilst preserving perceptual quality, because the VAE absorbs the high-frequency, imperceptual detail that would otherwise burden the diffusion process. Conditioning on text, image, or other modalities is achieved via cross-attention layers inside a U-Net denoising backbone, enabling high-fidelity text-to-image synthesis, image editing, and multimodal generation at practical hardware budgets. Stable Diffusion, the most widely deployed open-source implementation, demonstrated that consumer GPUs could run production-quality image synthesis, catalysing a broad ecosystem of fine-tuning methods and downstream applications.",
+  "definition": "Latent Diffusion Models (LDMs) are a class of generative models that perform the iterative denoising diffusion process within the compressed latent space of a pre-trained variational autoencoder (VAE), rather than directly in high-dimensional pixel space. By encoding images into a compact, semantically rich latent representation, LDMs dramatically reduce training and inference compute whilst preserving perceptual quality, because the VAE absorbs the high-frequency, imperceptual detail that would otherwise burden the diffusion process. Conditioning on text, image, or other modalities is achieved via cross-attention layers inside a U-Net denoising backbone, enabling high-fidelity text-to-image synthesis, image editing, and multimodal generation at practical hardware budgets. Stable Diffusion, the most widely deployed open-source implementation, demonstrated that consumer GPUs [private] run production-quality image synthesis, catalysing a broad ecosystem of fine-tuning methods and downstream applications.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

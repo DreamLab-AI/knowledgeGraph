@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Application Binary Interface
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

@@ -1,11 +1,3 @@
----
-public: true
-aliases:
-  - semanticWeb
-elevatedFrom: "[[Semantic Web]]"
----
-
-# Semantic Web Linked Data Standard
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -202,47 +194,6 @@ elevatedFrom: "[[Semantic Web]]"
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:semantic-web:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:c3a572eee306fd6cf890ca9efafbaa02734fc22acc2e58f487060a41e3e65030"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[Information Extraction]]",
-      "resolved": "urn:visionflow:linked:information-extraction",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Linked Data]]",
-      "resolved": "urn:visionflow:linked:linked-data",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Ontology]]",
-      "resolved": "urn:visionflow:linked:ontology",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Knowledge Graph]]",
-      "resolved": "urn:visionflow:owl:class:knowledge-graph",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Semantic Web extends the World Wide Web with machine-readable metadata, ontologies, and linked data to enable intelligent information discovery, integration, and reasoning. Core technologies include RDF (Resource Description Framework), OWL (Web Ontology Language), SPARQL (query language), and knowledge graphs. AI techniques enhance semantic web systems through entity linking, relation extraction, ontology alignment, and reasoning engines. Applications include semantic search, intelligent assistants, data integration across heterogeneous sources, and automated knowledge discovery.

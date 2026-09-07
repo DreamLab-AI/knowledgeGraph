@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Lock-and-Mint Bridge
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,19 +20,42 @@ public: true
   "definition": "A lock-and-mint bridge is a cross-chain interoperability mechanism that transfers asset value between blockchains by locking the original asset in a custodial smart contract on the source chain and minting an equivalent synthetic (wrapped) representation on the destination chain, with the peg maintained by a network of validators or relayers who attest to the lock event.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:wrapped-token", "label": "Wrapped Token"},
-      {"@id": "urn:ngm:class:bridge-contract", "label": "Bridge Contract"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      },
+      {
+        "@id": "urn:ngm:class:bridge-contract",
+        "label": "Bridge Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"}
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
     ]
   },
   "quality": 0.8
@@ -58,4 +76,3 @@ public: true
   - The security model of lock-and-mint bridges has been repeatedly stress-tested by adversarial incidents. The Ronin bridge hack (March 2022, $625M) compromised validator private keys controlling a 5-of-9 multisig. The Wormhole exploit (February 2022, $325M) exploited a signature verification bug in the Solana contract. The Nomad bridge hack (August 2022, $190M) arose from a misconfiguration that allowed arbitrary message spoofing. These events demonstrated that locked custody pools act as single points of failure and that validator-key management, smart-contract auditing, and economic security (bonded validators) are critical design dimensions.
 
   - By 2024–2025, the bridge security landscape has evolved significantly. Light-client based bridges — where the destination chain verifies source-chain block headers directly, as in IBC (Inter-Blockchain Communication) for Cosmos — eliminate external validator trust by moving verification on-chain. zkBridges use zero-knowledge proofs to attest to source-chain state transitions without trusted intermediaries. Intent-based settlement systems (Across, Connext) replace lock-and-mint with solver liquidity, reducing custodial risk. Regulatory scrutiny of bridges as potential money-transmission infrastructure is increasing, particularly in the context of OFAC sanctions compliance following the Tornado Cash designation.
-

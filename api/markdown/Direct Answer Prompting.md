@@ -1,37 +1,110 @@
----
-public: true
----
-
-# Direct Answer Prompting
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:direct-answer-prompting", "@type":"Page", "title":"Direct Answer Prompting", "vc:slug":"direct-answer-prompting", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:direct-answer-prompting",
+  "@type": "Page",
+  "title": "Direct Answer Prompting",
+  "vc:slug": "direct-answer-prompting",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:direct-answer-prompting",
-  "@type":"Class",
-  "label":"Direct Answer Prompting",
-  "definition":"Direct answer prompting is a prompting strategy in which a large language model is instructed to produce a final answer immediately, without showing intermediate reasoning steps. It contrasts with chain-of-thought approaches by optimising for brevity, latency and cost on tasks where extended reasoning offers little benefit. The technique is used when an answer is expected to be retrievable or shallow, trading interpretability and complex-reasoning accuracy for efficiency.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:prompt-engineering","label":"Prompt Engineering"}],
-  "relations":{
-    "contrastsWith":[{"@id":"urn:ngm:class:chain-of-thought-reasoning","label":"Chain-of-Thought Reasoning"},{"@id":"urn:ngm:class:standard-prompting","label":"Standard Prompting"}],
-    "partOf":[{"@id":"urn:ngm:class:prompt-engineering","label":"Prompt Engineering"}],
-    "uses":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"},{"@id":"urn:ngm:class:prompt-template","label":"Prompt Template"}],
-    "requires":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}],
-    "enables":[{"@id":"urn:ngm:class:in-context-learning","label":"In-Context Learning"}],
-    "supports":[{"@id":"urn:ngm:class:natural-language-processing","label":"Natural Language Processing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:zero-shot-prompting","label":"Zero-Shot Prompting"},{"@id":"urn:ngm:class:few-shot-prompting","label":"Few-Shot Prompting"},{"@id":"urn:ngm:class:prompt-template","label":"Prompt Template"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:in-context-learning","label":"In-Context Learning"}],
-    "dependsOn":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:direct-answer-prompting",
+  "@type": "Class",
+  "label": "Direct Answer Prompting",
+  "definition": "Direct answer prompting is a prompting strategy in which a large language model is instructed to produce a final answer immediately, without showing intermediate reasoning steps. It contrasts with chain-of-thought approaches by optimising for brevity, latency and cost on tasks where extended reasoning offers little benefit. The technique is used when an answer is expected to be retrievable or shallow, trading interpretability and complex-reasoning accuracy for efficiency.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:standard-prompting",
+        "label": "Standard Prompting"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-shot-prompting",
+        "label": "Zero-Shot Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

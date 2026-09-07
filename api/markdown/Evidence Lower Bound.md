@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Evidence Lower Bound
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

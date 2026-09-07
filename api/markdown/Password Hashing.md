@@ -1,61 +1,116 @@
----
-public: true
----
-
-# Password Hashing
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:password-hashing", "@type":"Page", "title":"Password Hashing", "vc:slug":"password-hashing", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:password-hashing",
+  "@type": "Page",
+  "title": "Password Hashing",
+  "vc:slug": "password-hashing",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:password-hashing",
-  "@type":"Class",
-  "label":"Password Hashing",
-  "definition":"Password hashing is the practice of transforming user passwords into fixed-length irreversible digests before storage, so that a breach of the credential store does not directly reveal the underlying secrets. Secure schemes deliberately use slow, memory-hard functions combined with a unique per-user salt to defeat precomputation and brute-force attacks. Established algorithms such as Argon2, scrypt, bcrypt and PBKDF2 expose tunable cost parameters that can be raised as hardware improves. Password hashing is a specialised application of key derivation functions oriented towards verifying human-chosen secrets.",
-  "domain":"security",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:key-derivation-function","label":"Key Derivation Function"}],
-  "relations":{
-    "implements":[
-      {"@id":"urn:ngm:class:key-derivation-function","label":"Key Derivation Function"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:password-hashing",
+  "@type": "Class",
+  "label": "Password Hashing",
+  "definition": "Password hashing is the practice of transforming user passwords into fixed-length irreversible digests before storage, so that a breach of the credential store does not directly reveal the underlying secrets. Secure schemes deliberately use slow, memory-hard functions combined with a unique per-user salt to defeat precomputation and brute-force attacks. Established algorithms such as Argon2, scrypt, bcrypt and PBKDF2 expose tunable cost parameters that can be raised as hardware improves. Password hashing is a specialised application of key derivation functions oriented towards verifying human-chosen secrets.",
+  "domain": "security",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:key-derivation-function",
+      "label": "Key Derivation Function"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"},
-      {"@id":"urn:ngm:class:pseudorandom-function","label":"Pseudorandom Function"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:pseudorandom-function",
+        "label": "Pseudorandom Function"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"},
-      {"@id":"urn:ngm:class:authentication-protocol","label":"Authentication Protocol"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-protocol",
+        "label": "Authentication Protocol"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:entropy","label":"Entropy"},
-      {"@id":"urn:ngm:class:random-number-generation","label":"Random Number Generation"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:cryptographic-hash-function","label":"Cryptographic Hash Function"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:security","label":"Security"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:key-derivation-function","label":"Key Derivation Function"},
-      {"@id":"urn:ngm:class:symmetric-encryption","label":"Symmetric Encryption"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:symmetric-encryption","label":"Symmetric Encryption"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:authentication","label":"Authentication"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

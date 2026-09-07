@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Dispute Resolution
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -174,4 +169,3 @@ public: true
   - The significance of robust dispute resolution in decentralised systems cannot be overstated: without it, smart contracts cannot be trusted for high-value or complex obligations, and the promise of programmable law remains unrealised. Freelancing platforms, insurance protocols, prediction markets, and NFT royalty arrangements all require some mechanism to adjudicate when execution conditions are ambiguous or contested. Industry estimates suggest that 5-15% of commercial smart-contract interactions involve some form of disagreement that cannot be resolved by automated execution alone.
 
   - As of 2024-2025, the field is converging on layered architectures: instant automated resolution for clearly defined rule-based disputes, AI-assisted mediation for moderately complex cases (using LLMs to summarise evidence and suggest settlements), and human arbitration panels as a last resort. UNCITRAL's Technical Notes on ODR (2016) and the EU's ADR Directive provide normative frameworks that blockchain-based systems must increasingly respect to achieve enforceability in traditional courts. Integration with decentralised identity and verifiable credentials is enabling arbitration panels to verify juror qualifications without sacrificing pseudonymity, potentially combining the accountability of traditional arbitration with the censorship-resistance of decentralised systems.
-

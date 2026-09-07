@@ -1,9 +1,3 @@
----
-public: true
----
-
-# Finite Field Arithmetic
-
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v1",

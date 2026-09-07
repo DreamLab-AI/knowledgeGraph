@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Character Model
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -197,72 +192,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:character-model:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:7784458def1b42e0ee3e2e3b5100c6552353a1e04f7c9548fa38b8953db83719"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Modeling Software]]",
-      "resolved": "urn:visionflow:linked:3-d-modeling-software",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Character Animation]]",
-      "resolved": "urn:visionflow:linked:character-animation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Game Characters]]",
-      "resolved": "urn:visionflow:linked:game-characters",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Topology Design]]",
-      "resolved": "urn:visionflow:linked:topology-design",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Virtual Avatars]]",
-      "resolved": "urn:visionflow:linked:virtual-avatars",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Model]]",
-      "resolved": "urn:visionflow:owl:class:3-d-model",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Texture Mapping]]",
-      "resolved": "urn:visionflow:owl:class:texture-mapping",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - A 3D digital representation of a character consisting of a polygonal mesh, textures, and materials, designed with clean topology optimized for animation and real-time rendering, serving as the foundation for rigging, skinning, and character animation workflows.

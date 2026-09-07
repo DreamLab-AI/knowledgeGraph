@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Collateral Management
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,21 +20,50 @@ public: true
   "definition": "Collateral management is the operational and risk management discipline concerned with the posting, valuation, optimisation, and return of financial assets pledged as security against credit exposure in derivatives, securities lending, repo, and cleared transactions, ensuring that counterparty credit risk is adequately mitigated throughout the life of a financial contract. It encompasses collateral eligibility determination, margin call issuance and settlement, collateral transformation, and regulatory compliance with frameworks including EMIR, Dodd-Frank, and Basel III initial margin requirements.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:financial-instruments", "label": "Financial Instruments"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:blockchain-oracle", "label": "Blockchain Oracle"},
-      {"@id": "urn:ngm:class:financial-transactions", "label": "Financial Transactions"}
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:financial-transactions",
+        "label": "Financial Transactions"
+      }
     ]
   },
   "quality": 0.8
@@ -60,4 +84,3 @@ public: true
   - The collateral management ecosystem includes specialised software providers (OpenGamma, CloudMargin, TriOptima), custodian banks operating triparty collateral services (BNY Mellon, JP Morgan, Euroclear), and CCPs (LCH, ICE Clear, CME) that impose standardised margin models including SPAN and ISDA SIMM for initial margin. Triparty collateral management — in which a custodian agent allocates collateral between counterparties according to agreed eligibility schedules — handles the majority of repo and securities lending collateral operationally.
 
   - In 2024–2025, the tokenisation of traditional financial assets on blockchain networks is creating new collateral management architectures: tokenised government bonds from projects including Franklin Templeton OnChain U.S. Government Money Fund and BlackRock BUIDL are being used as collateral in both traditional prime brokerage and DeFi lending protocols. Distributed ledger technology enables atomic delivery-versus-payment settlement, eliminating intraday credit risk in collateral substitutions. Regulators in the UK, EU, and Singapore are developing sandbox frameworks for DLT-based collateral settlement, while the Bank for International Settlements has published guidance on the prudential treatment of tokenised collateral.
-

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Mass Customisation
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,9 +20,23 @@ public: true
   "definition": "Mass customisation is a production strategy that delivers individually tailored goods or services at costs approaching those of mass production. It combines flexible manufacturing, modular design, and digital configuration so customers can specify variants without sacrificing scale economies. Robotics, additive manufacturing, and data-driven personalisation are key enablers across sectors such as fashion and consumer goods.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:fashion", "label": "Fashion"}, {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fashion",
+        "label": "Fashion"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ]
   },
   "quality": 0.72
 }

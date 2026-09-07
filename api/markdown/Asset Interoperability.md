@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Asset Interoperability
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -189,7 +184,7 @@ public: true
   - Asset Interoperability is a specialisation of broader [[Interoperability]] principles applied specifically to digital assets. It intersects heavily with [[Blockchain Interoperability]] when assets are tokenised on-chain, and with [[Avatar Interoperability]] for identity-linked objects in social virtual spaces. Realising it requires shared [[Interoperability Standard]] agreements and depends on stable [[Data Format Standard]] representations; in practice it unlocks [[Digital Asset Ecosystem]] growth and makes [[Blockchain Gaming]] economies portable across titles.
 
 - ### Content
-  - The concept of asset interoperability emerged alongside the proliferation of closed platform ecosystems in gaming and social media during the 2010s, where assets purchased on one platform could not migrate to another. With the rise of blockchain-based ownership and NFT standards such as ERC-721 and ERC-1155, researchers and developers began articulating interoperability as a design goal rather than an incidental feature. Early metaverse discussions between 2019 and 2022 elevated asset portability to a primary architectural requirement, prompting standards efforts from bodies including the Open Metaverse Interoperability Group and Khronos.
+  - The concept of asset interoperability emerged alongside the proliferation of closed platform ecosystems in gaming and social media during the 2010s, where assets purchased on one platform [private] not migrate to another. With the rise of blockchain-based ownership and NFT standards such as ERC-721 and ERC-1155, researchers and developers began articulating interoperability as a design goal rather than an incidental feature. Early metaverse discussions between 2019 and 2022 elevated asset portability to a primary architectural requirement, prompting standards efforts from bodies including the Open Metaverse Interoperability Group and Khronos.
 
   - Asset interoperability operates on two levels. At the syntactic level, assets must share file formats (such as glTF for 3D geometry) and metadata schemas so that a receiving platform can parse and render the asset correctly. At the semantic level, the meaning of asset attributes — rarity, ownership history, usage rights — must be preserved across translation boundaries. Bridge contracts on blockchain networks perform on-chain semantic translation, locking an asset on a source chain and minting a wrapped representation on the destination chain, while off-chain resolvers map proprietary attribute vocabularies to shared ontologies.
 

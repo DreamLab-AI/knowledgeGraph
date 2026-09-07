@@ -1,8 +1,3 @@
----
-public: true
----
-
-# GPT
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -185,32 +180,6 @@ public: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gpt:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:cd03ad624b2b3ae1501f38477b67f718fc36887d4671d384e6a4f90edf73d7bb"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[ArtificialIntelligenceDomain]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
-
 - ### Definition
   - Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction. GPT models learn rich representations through unsupervised pre-training and are subsequently fine-tuned for diverse downstream NLP tasks, demonstrating that scale and the language modelling objective yield powerful transfer learning.
 
@@ -332,7 +301,7 @@ public: true
   - Key academic papers and sources:
   - Vaswani, A., Shazeer, N., Parmar, N., et al. (2017). *Attention Is All You Need*. Advances in Neural Information Processing Systems, 30. [https://doi.org/10.5555/3295222.3295349]
   - Brown, T., Mann, B., Ryder, N., et al. (2020). *Language Models are Few-Shot Learners*. Advances in Neural Information Processing Systems, 33. [https://arxiv.org/abs/2005.14165]
-  - OpenAI (2025). *Introducing GPT-5*. OpenAI Blog. [https://openai.com/index/introducing-gpt-5/]
+  - OpenAI (2025). *Introducing GPT-5*. OpenAI Blog. [https://openai.com/[private]/introducing-gpt-5/]
   - Encord (2025). *GPT-5: A Technical Breakdown*. [https://encord.com/blog/gpt-5-a-technical-breakdown/]
   - Ongoing research directions focus on:
   - Multimodal integration combining text, images, audio, and video.
@@ -371,7 +340,7 @@ public: true
 
   2. Brown, T., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., ... & Amodei, D. (2020). Language Models are Few-Shot Learners. *Advances in Neural Information Processing Systems*, 33, 1877–1901. https://arxiv.org/abs/2005.14165
 
-  3. OpenAI. (2025). Introducing GPT-5. OpenAI Blog. Retrieved November 2025, from https://openai.com/index/introducing-gpt-5/
+  3. OpenAI. (2025). Introducing GPT-5. OpenAI Blog. Retrieved November 2025, from https://openai.com/[private]/introducing-gpt-5/
 
   4. Encord. (2025). GPT-5: A Technical Breakdown. Retrieved November 2025, from https://encord.com/blog/gpt-5-a-technical-breakdown/
 

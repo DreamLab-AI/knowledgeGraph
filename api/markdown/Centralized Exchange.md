@@ -1,35 +1,123 @@
----
-public: true
----
-
-# Centralized Exchange
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:centralized-exchange", "@type":"Page", "title":"Centralized Exchange", "vc:slug":"centralized-exchange", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:centralized-exchange",
+  "@type": "Page",
+  "title": "Centralized Exchange",
+  "vc:slug": "centralized-exchange",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:centralized-exchange",
-  "@type":"Class",
-  "label":"Centralized Exchange",
-  "definition":"A centralized exchange (CEX) is a digital-asset trading venue operated by a single company that custodies user funds, matches orders through an internal order book, and acts as an intermediary for every trade. Users deposit assets into accounts controlled by the operator, who maintains liquidity, settlement, and the matching engine off-chain. CEXs offer high throughput and familiar interfaces but require trust in the operator and typically enforce identity-verification and anti-money-laundering controls.",
-  "domain":"blockchain",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"},{"@id":"urn:ngm:class:bc-defi-and-economics","label":"DeFi and Economics"}],
-  "relations":{
-    "contrastsWith":[{"@id":"urn:ngm:class:decentralized-exchange","label":"Decentralized Exchange"},{"@id":"urn:ngm:class:self-custody","label":"Self-Custody"}],
-    "requires":[{"@id":"urn:ngm:class:order-book","label":"Order Book"},{"@id":"urn:ngm:class:custody","label":"Custody"},{"@id":"urn:ngm:class:know-your-customer","label":"Know Your Customer"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "uses":[{"@id":"urn:ngm:class:custodial-wallet","label":"Custodial Wallet"},{"@id":"urn:ngm:class:aml","label":"AML"}],
-    "supports":[{"@id":"urn:ngm:class:stablecoin","label":"Stablecoin"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "relatedTo":[{"@id":"urn:ngm:class:binance","label":"Binance"},{"@id":"urn:ngm:class:coinbase","label":"Coinbase"},{"@id":"urn:ngm:class:decentralized-finance","label":"Decentralized Finance"}],
-    "dependsOn":[{"@id":"urn:ngm:class:custody","label":"Custody"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:order-book","label":"Order Book"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:centralized-exchange",
+  "@type": "Class",
+  "label": "Centralized Exchange",
+  "definition": "A centralized exchange (CEX) is a digital-asset trading venue operated by a single company that custodies user funds, matches orders through an internal order book, and acts as an intermediary for every trade. Users deposit assets into accounts controlled by the operator, who maintains liquidity, settlement, and the matching engine off-chain. CEXs offer high throughput and familiar interfaces but require trust in the operator and typically enforce identity-verification and anti-money-laundering controls.",
+  "domain": "blockchain",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "@id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:aml",
+        "label": "AML"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:binance",
+        "label": "Binance"
+      },
+      {
+        "@id": "urn:ngm:class:coinbase",
+        "label": "Coinbase"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:centralised-exchange","label":"Centralised Exchange"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:centralised-exchange",
+      "label": "Centralised Exchange"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

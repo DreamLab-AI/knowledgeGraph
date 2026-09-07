@@ -1,8 +1,3 @@
----
-public: true
----
-
-# IBC Specification
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,10 +20,25 @@ public: true
   "definition": "The Inter-Blockchain Communication (IBC) specification is an open protocol standard for authenticated, ordered, and reliable message passing between independent distributed ledgers. Originating in the Cosmos ecosystem, it uses light-client verification and Merkle proofs so that two chains can trustlessly relay packets such as token transfers without a trusted intermediary. IBC underpins much of the modular and cross-chain interoperability landscape.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}],
-    "enables": [{"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ]
   },
   "quality": 0.72
 }

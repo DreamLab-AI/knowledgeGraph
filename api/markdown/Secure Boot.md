@@ -1,50 +1,126 @@
----
-public: true
----
-
-# Secure Boot
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:secure-boot", "@type":"Page", "title":"Secure Boot", "vc:slug":"secure-boot", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:secure-boot",
+  "@type": "Page",
+  "title": "Secure Boot",
+  "vc:slug": "secure-boot",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:secure-boot",
-  "@type":"Class",
-  "label":"Secure Boot",
-  "definition":"Secure Boot is a platform security mechanism that verifies the cryptographic signature of each component loaded during system start-up, allowing only software trusted by an established chain of keys to execute. By validating firmware, bootloaders, and the operating system loader before handing over control, it prevents persistent low-level malware such as bootkits from running. Secure Boot establishes a hardware-anchored chain of trust from power-on through to the operating system.",
-  "domain":"security",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:security","label":"Security"}],
-  "relations":{
-    "dependsOn":[
-      {"@id":"urn:ngm:class:firmware","label":"Firmware"},
-      {"@id":"urn:ngm:class:hardware","label":"Hardware"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:secure-boot",
+  "@type": "Class",
+  "label": "Secure Boot",
+  "definition": "Secure Boot is a platform security mechanism that verifies the cryptographic signature of each component loaded during system start-up, allowing only software trusted by an established chain of keys to execute. By validating firmware, bootloaders, and the operating system loader before handing over control, it prevents persistent low-level malware such as bootkits from running. Secure Boot establishes a hardware-anchored chain of trust from power-on through to the operating system.",
+  "domain": "security",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "@id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
     ],
-    "enables":[{"@id":"urn:ngm:class:security","label":"Security"}],
-    "requires":[
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"},
-      {"@id":"urn:ngm:class:sha-256","label":"SHA-256"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
-    "uses":[{"@id":"urn:ngm:class:cryptography","label":"Cryptography"}],
-    "implements":[{"@id":"urn:ngm:class:authentication","label":"Authentication"}],
-    "supports":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
-    "hasPart":[{"@id":"urn:ngm:class:firmware","label":"Firmware"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:supply-chain","label":"Supply Chain"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:standards","label":"Standards"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:authorization","label":"Authorization"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:security","label":"Security"},
-      {"@id":"urn:ngm:class:firmware","label":"Firmware"},
-      {"@id":"urn:ngm:class:cryptography","label":"Cryptography"},
-      {"@id":"urn:ngm:class:hardware","label":"Hardware"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Usage-Based Pricing
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -11,7 +6,10 @@ public: true
   "vc:slug": "usage-based-pricing",
   "title": "Usage-Based Pricing",
   "vc:public": true,
-  "vc:outboundWikilinks": ["AI Token Billing", "SaaS Business Model"],
+  "vc:outboundWikilinks": [
+    "AI Token Billing",
+    "SaaS Business Model"
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -26,9 +24,23 @@ public: true
   "domain": "economics",
   "maturity": "draft",
   "quality": 0.35,
-  "subClassOf": [{"@id": "urn:ngm:class:saas-business-model", "label": "SaaS Business Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:saas-business-model",
+      "label": "SaaS Business Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:ai-business-model", "label": "AI Business Model"}, {"@id": "urn:ngm:class:inference", "label": "Inference"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-business-model",
+        "label": "AI Business Model"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ]
   },
   "provenance": {
     "source": "podcast-knowledge-ingest",

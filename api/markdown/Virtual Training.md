@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Virtual Training
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -60,23 +55,50 @@ public: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:immersive-technology", "label": "Immersive Technology"}
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"},
-      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"}
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-connected-workforce", "label": "Augmented Connected Workforce"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {
+        "@id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-factory", "label": "Virtual Factory"}
+      {
+        "@id": "urn:ngm:class:virtual-factory",
+        "label": "Virtual Factory"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:workforce-development", "label": "Workforce Development"}
+      {
+        "@id": "urn:ngm:class:workforce-development",
+        "label": "Workforce Development"
+      }
     ]
   },
   "provenance": {
@@ -86,37 +108,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:virtual-training:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3ddb9a17214dbb1ec81d3c2cf67614c77156612637faf468d5e1da2b56167e35"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Workforce Development]]",
-      "resolved": "urn:visionflow:owl:class:workforce-development",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practice skills, experience scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes and faster knowledge retention.

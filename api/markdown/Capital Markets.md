@@ -1,37 +1,114 @@
----
-public: true
----
-
-# Capital Markets
-
 ```json-ld
-{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:capital-markets", "@type":"Page", "title":"Capital Markets", "vc:slug":"capital-markets", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:capital-markets",
+  "@type": "Page",
+  "title": "Capital Markets",
+  "vc:slug": "capital-markets",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
 ```
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:capital-markets",
-  "@type":"Class",
-  "label":"Capital Markets",
-  "definition":"Capital markets are the financial markets in which long-term debt and equity instruments are issued and traded, channelling savings from investors to issuers such as companies and governments. They comprise primary markets, where new securities are issued, and secondary markets, where existing securities trade among investors. They are central to capital formation, price discovery and liquidity, and are increasingly intersecting with tokenisation and blockchain-based settlement.",
-  "domain":"finance",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:traditional-finance","label":"Traditional Finance"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:financial-instruments","label":"Financial Instruments"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "partOf":[{"@id":"urn:ngm:class:traditional-finance","label":"Traditional Finance"}],
-    "enables":[{"@id":"urn:ngm:class:capital-formation","label":"Capital Formation"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],
-    "requires":[{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"},{"@id":"urn:ngm:class:financial-infrastructure","label":"Financial Infrastructure"}],
-    "uses":[{"@id":"urn:ngm:class:financial-instruments","label":"Financial Instruments"}],
-    "dependsOn":[{"@id":"urn:ngm:class:financial-infrastructure","label":"Financial Infrastructure"}],
-    "supports":[{"@id":"urn:ngm:class:institutional-adoption","label":"Institutional Adoption"}],
-    "relatedTo":[{"@id":"urn:ngm:class:financial-instruments","label":"Financial Instruments"},{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"},{"@id":"urn:ngm:class:institutional-adoption","label":"Institutional Adoption"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:financial-infrastructure","label":"Financial Infrastructure"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:capital-markets",
+  "@type": "Class",
+  "label": "Capital Markets",
+  "definition": "Capital markets are the financial markets in which long-term debt and equity instruments are issued and traded, channelling savings from investors to issuers such as companies and governments. They comprise primary markets, where new securities are issued, and secondary markets, where existing securities trade among investors. They are central to capital formation, price discovery and liquidity, and are increasingly intersecting with tokenisation and blockchain-based settlement.",
+  "domain": "finance",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:traditional-finance",
+      "label": "Traditional Finance"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:capital-formation",
+        "label": "Capital Formation"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

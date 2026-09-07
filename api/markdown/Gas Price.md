@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Gas Price
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -88,30 +83,78 @@ public: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"},
-      {"@id": "urn:ngm:class:priority-fee", "label": "Priority Fee"}
+      {
+        "@id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      },
+      {
+        "@id": "urn:ngm:class:priority-fee",
+        "label": "Priority Fee"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gas", "label": "Gas"},
-      {"@id": "urn:ngm:class:gas-limit", "label": "Gas Limit"},
-      {"@id": "urn:ngm:class:transaction", "label": "Transaction"}
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "@id": "urn:ngm:class:gas-limit",
+        "label": "Gas Limit"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"},
-      {"@id": "urn:ngm:class:miner", "label": "Miner"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "@id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
     ]
   },
   "provenance": {
@@ -121,62 +164,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:gas-price:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:3425eaab98b977e46d7a19a817d7d245bf4efdc34b1bfe838d99f27d33bf74c5"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[IEEE 2418.1]]",
-      "resolved": "urn:visionflow:linked:ieee-2418-1",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[ISO/IEC 23257:2021]]",
-      "resolved": "urn:visionflow:linked:iso-iec-23257-2021",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[NIST NISTIR]]",
-      "resolved": "urn:visionflow:linked:nist-nistir",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Blockchain Entity]]",
-      "resolved": "urn:visionflow:owl:class:blockchain-entity",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicLayer]]",
-      "resolved": "urn:visionflow:owl:class:economic-layer",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[EconomicMechanism]]",
-      "resolved": "urn:visionflow:owl:class:economic-mechanism",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[TokenEconomicsDomain]]",
-      "resolved": "urn:visionflow:owl:class:token-economics",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 ### Definition
 

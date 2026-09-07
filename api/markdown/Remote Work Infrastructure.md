@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Remote Work Infrastructure
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,11 +20,22 @@ public: true
   "definition": "Remote work infrastructure is the combined set of networking, collaboration, and presence technologies that let distributed teams work together as if co-located. It includes real-time communication, shared workspaces, presence and status signalling, and adaptive transport that copes with variable connectivity. As workforces decentralise, this infrastructure underpins productivity, security, and a sense of shared presence.",
   "domain": "metaverse",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:presence-indicator", "label": "Presence Indicator"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"}
+      {
+        "@id": "urn:ngm:class:presence-indicator",
+        "label": "Presence Indicator"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
     ]
   },
   "quality": 0.72

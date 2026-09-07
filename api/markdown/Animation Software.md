@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Animation Software
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -215,72 +210,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:animation-software:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:aeb9b9a87d49b2911ee05a7980bf96f8d9b5297f7f2964097cd61e817ebd3c11"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[3D Character Animation]]",
-      "resolved": "urn:visionflow:linked:3-d-character-animation",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Digital Content Creation Tools]]",
-      "resolved": "urn:visionflow:linked:digital-content-creation-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[GPU Rendering]]",
-      "resolved": "urn:visionflow:linked:gpu-rendering",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Motion Graphics]]",
-      "resolved": "urn:visionflow:linked:motion-graphics",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Rigging Systems]]",
-      "resolved": "urn:visionflow:linked:rigging-systems",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Modelling]]",
-      "resolved": "urn:visionflow:owl:class:3-d-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Computer Vision]]",
-      "resolved": "urn:visionflow:owl:class:computer-vision",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Visual Effects]]",
-      "resolved": "urn:visionflow:owl:class:visual-effects",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Animation Software encompasses digital tools and applications for creating computer-generated moving images through 3D modeling, rigging, motion graphics, rendering, and compositing, supporting the complete animation pipeline from asset creation to final output for games, film, and metaverse content.

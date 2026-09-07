@@ -1,8 +1,3 @@
----
-public: true
----
-
-# Display Calibration
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -25,22 +20,54 @@ public: true
   "definition": "Display calibration is the process of measuring and adjusting a display device's photometric and colorimetric characteristics—luminance, white point, gamma or EOTF, and colour gamut—to conform to a defined target standard or ICC colour profile. It employs colorimetric measurement instruments (colorimeters, spectrophotometers) to sample the display output and generates correction data (LUTs or ICC profiles) applied by the operating system or display hardware to compensate for manufacturing variation and age-related drift. Calibration is mandatory in colour-critical workflows including digital cinema (DCI-P3), broadcast (Rec. 709, Rec. 2020), medical imaging, and visual effects production.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:calibration", "label": "Calibration"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:calibration",
+      "label": "Calibration"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:calibration-equipment", "label": "Calibration Equipment"},
-      {"@id": "urn:ngm:class:calibration-standards", "label": "Calibration Standards"},
-      {"@id": "urn:ngm:class:optical-calibration-target", "label": "Optical Calibration Target"},
-      {"@id": "urn:ngm:class:display-metrology", "label": "Display Metrology"}
+      {
+        "@id": "urn:ngm:class:calibration-equipment",
+        "label": "Calibration Equipment"
+      },
+      {
+        "@id": "urn:ngm:class:calibration-standards",
+        "label": "Calibration Standards"
+      },
+      {
+        "@id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      },
+      {
+        "@id": "urn:ngm:class:display-metrology",
+        "label": "Display Metrology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"}
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:display-technology", "label": "Display Technology"},
-      {"@id": "urn:ngm:class:display-hardware", "label": "Display Hardware"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
     ]
   },
   "quality": 0.8

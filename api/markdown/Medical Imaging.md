@@ -1,8 +1,3 @@
----
-public: true
----
-
-# medical imaging
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -209,7 +204,7 @@ public: true
     - Radiotherapy treatment planning: [[Image Segmentation]] of gross tumour volume (GTV) and organs-at-risk (OAR); AI reduces contouring time from hours to minutes
     - Tumour response assessment: RECIST-compliant lesion measurement from serial CT/MRI; AI automates longitudinal tracking
     - [[Radiomics]]: extraction of hundreds of quantitative features from imaging volumes for prognostic biomarker development
-    - [[Digital Pathology]]: HER2 scoring, Ki-67 proliferation index, tumour-infiltrating lymphocyte (TIL) quantification from whole-slide images
+    - [[Digital Pathology]]: HER2 scoring, Ki-67 proliferation [private], tumour-infiltrating lymphocyte (TIL) quantification from whole-slide images
   - **Cardiovascular Imaging**
     - Cardiac MRI: automated left-ventricular ejection fraction and strain analysis
     - Coronary CT angiography (CCTA): AI-derived fractional flow reserve (FFR-CT) for stenosis haemodynamic significance

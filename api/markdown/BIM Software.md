@@ -1,8 +1,3 @@
----
-public: true
----
-
-# BIM Software
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
@@ -115,67 +110,6 @@ public: true
   }
 }
 ```
-
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:annotation:link-resolutions:bim-software:776c802a9fc9",
-  "@type": "vc:LinkResolutionsAnnotation",
-  "vc:appliesTo": {
-    "@id": "urn:visionflow:page:90f40c7247da6563b8448537ac11c48d525d0a6dc1330d9720025fc1bb0f566b"
-  },
-  "vc:resolutions": [
-    {
-      "raw": "[[CAD Capabilities]]",
-      "resolved": "urn:visionflow:linked:cad-capabilities",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Collaboration Tools]]",
-      "resolved": "urn:visionflow:linked:collaboration-tools",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Construction Coordination]]",
-      "resolved": "urn:visionflow:linked:construction-coordination",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Facility Management]]",
-      "resolved": "urn:visionflow:linked:facility-management",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[3D Modelling]]",
-      "resolved": "urn:visionflow:owl:class:3-d-modeling",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Data Management]]",
-      "resolved": "urn:visionflow:owl:class:data-management",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Design Software]]",
-      "resolved": "urn:visionflow:owl:class:design-software",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[metaverse]]",
-      "resolved": "urn:visionflow:owl:class:metaverse",
-      "kind": "ResolvedLink"
-    }
-  ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
-}
-```
-
 
 - ### Definition
   - Specialized applications for Building Information Modeling that enable the generation, management, and collaboration on digital representations of physical and functional characteristics of buildings and infrastructure, supporting the entire asset lifecycle from design through construction to operations.
